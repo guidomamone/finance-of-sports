@@ -1,0 +1,2158 @@
+# River Plate — Memoria Ejercicio Administrativo 2018-2019
+
+Transcripción fiel del PDF `river-pdfs/memoria-2018-2019.pdf` (59 páginas de PDF,
+que contienen 112 páginas impresas en formato "spread" de a dos por página de PDF).
+
+**IMPORTANTE — hallazgo clave:** Este documento es EXCLUSIVAMENTE la Memoria narrativa
+(actividades del Club, resultados deportivos, programas sociales, marca, RR.HH.). NO
+contiene los Estados Contables auditados (Estado de Situación Patrimonial, Estado de
+Recursos y Gastos, notas, anexos, informe de los auditores). No hay una sola cifra de
+pesos, activo/pasivo, ingresos/egresos totales del ejercicio en todo el documento. El
+índice (pág. 3 del PDF) lista únicamente 8 secciones narrativas (01 Fútbol a 08 El mejor
+recurso) más "Autoridades" y "Créditos" — no hay una novena sección de balance. Para
+datos financieros reales de River hace falta otro documento (probablemente uno separado
+de "Estados Contables" / "Balance General", que River no parece publicar unido a esta
+Memoria, a diferencia de Boca que sí junta Memoria y Balance en un solo PDF).
+
+Período cubierto: "MEMORIA EJERCICIO ADMINISTRATIVO 2018-2019" (portada, pág. 1 del PDF).
+El documento no imprime en ningún lado las fechas exactas de inicio/cierre del ejercicio
+(ej. 1° de julio a 30 de junio) — no aparece ese dato en ninguna página relevada.
+
+Estructura (según Índice, pág. 3 del PDF / págs. impresas 2-3):
+- Autoridades — pág. impresa 5 (PDF pág. 4-9)
+- 01 Fútbol — pág. impresa 17 (PDF pág. 10)
+- 02 Deportes Federados — pág. impresa 43 (PDF pág. 23)
+- 03 Nuestra Casa — pág. impresa 51 (PDF pág. 27)
+- 04 Nuestro ADN — pág. impresa 61 (PDF pág. 32)
+- 05 Marca — pág. impresa 69 (PDF pág. 36)
+- 06 Un Club Socialmente Responsable — pág. impresa 87 (PDF pág. 45)
+- 07 Mucho más que Deporte — pág. impresa 97 (PDF pág. 50)
+- 08 El mejor recurso — pág. impresa 107 (PDF pág. 55)
+- Créditos — pág. impresa 108-109 (PDF pág. 57)
+
+Marcadores `--- pág. N ---` a continuación refieren al número de página del ARCHIVO PDF
+(1 a 59), no al número impreso en el documento (que aparece duplicado dentro de cada
+marcador porque cada página de PDF es un spread de dos páginas impresas). Extraído con
+`pdftotext -layout`; las páginas con muy poco texto (dividers de sección, portada,
+índice, créditos) fueron además verificadas visualmente contra la imagen renderizada
+para confirmar que no falta contenido.
+
+---
+
+
+
+
+--- pág. 1 ---
+
+[Página de imagen — contratapa/tapa del cuaderno impreso: a la izquierda, foto nocturna del trofeo de la Copa Libertadores en el campo de juego del Monumental con el escudo de River superpuesto en marca de agua (contratapa); a la derecha, foto del plantel campeón festejando con el trofeo y el cartel "CAMPEÓN 2018", con el texto "MEMORIA / EJERCICIO ADMINISTRATIVO / 2018-2019" (tapa). No hay texto adicional ni cifras.]
+
+
+
+
+
+--- pág. 2 ---
+
+
+MEMORIA
+EJERCICIO
+ADMINISTRATIVO
+2018-2019
+
+
+
+
+                 RIVER PLATE • 2018 / 2019   1
+
+
+
+--- pág. 3 ---
+
+
+                                Í N D I C E / 2018 / 2019
+
+
+
+
+2   RIVER PLATE • 2018 / 2019                               RIVER PLATE • 2018 / 2019   3
+
+
+
+--- pág. 4 ---
+
+
+                                Autoridades
+
+4   RIVER PLATE • 2018 / 2019      RIVER PLATE • 2018 / 2019   5
+
+
+
+--- pág. 5 ---
+
+
+    NOMBRAMIENTO
+    DE STEFANO
+    DI CARLO
+    COMO
+    VICEPRESIDENTE 2°
+    DE RIVER
+
+
+    El jueves 11 de octubre de 2018, en reunión de Comisión Directiva, el        Este apellido tiene una extensa y exitosa trayectoria en la historia de
+    Vocal Titular fue designado para ocupar el lugar de Guillermo Cascio,        River: Ángel, su bisabuelo, fue Prosecretario durante la gestión de
+    quien falleció el 22 de septiembre.                                          Antonio Liberti; mientras que su abuelo Osvaldo (Titi, para el mundo
+                                                                                 River) fue Vicepresidente y a la vez Presidente del Consejo de Fútbol
+    Stefano Di Carlo es miembro de la Comisión Directiva y desde hace            entre 1983 y 1989 y Presidente del Club en ese mismo año.
+    cinco años preside el Departamento de Comunicación, Medios y Digital.
+    Además, desde febrero de 2018 se encuentra a cargo del Área Educativa
+    del Club, desempeñándose como representante legal de los tres niveles
+    del Instituto River Plate y del Centro de Estudios Terciarios River Plate.
+    También es miembro del Consejo Directivo del Instituto Universitario
+    River Plate.
+
+
+
+6      RIVER PLATE • 2018 / 2019                                                                                                                           RIVER PLATE • 2018 / 2019   7
+
+
+
+--- pág. 6 ---
+
+
+     HONORABLE                                                            VOCALES TITULARES             VOCALES SUPLENTES                         COMISIÓN FISCALIZADORA
+
+
+     COMISIÓN                                                             Sr. Luis M. Schvimer
+                                                                          Sr. Fernando D. Guarini
+                                                                                                        Sr. Máximo Sabbag
+                                                                                                        Sr. Juan I. Albistur                     Presidente        Dr. Roberto M. Machtey
+
+
+     DIRECTIVA
+                                                                          Sr. Adrián Varela             Sr. Rodrigo Daskal
+                                                                          Sr. Roberto E. Barrionuevo    Sra. Diana E. Paterno
+                                                                          Sr. Carlos M. Rodríguez       Sr. Gabriel A. Marcilli       Miembros Titulares                Miembros Suplentes
+                                                                          Sr. Valentín Díaz Gilligan    Sr. Juan C. Amabile           Cont. Demian E. Tujsnaider        Sr. Carlos J. Piazza
+                                                                          Cont. Carlos A. Ferreyra      Sr. Juan P. Bersce            Lic. Hernán J. Vázquez            Sr. Luis F. Lauria
+                                                                          Sr. Gustavo M. Balabanian     Dr. Sebastián Pérez Escobar   Lic. Martín A. Laino              Sr. Sebastián A. Gagliardi
+               Presidente                 Lic. Rodolfo R. D’Onofrio       Lic. Eugenio Burzaco          Sra. Marcela M. Mallet        Sr. Juan C. Isi                   Sr. Juan M. Lavignolle
+                                                                          Sr. Mario Argenta             Sr. Pablo D. Coelho           Dr. Favio I. Assad                Sr. Nicolás Fantasía Macchi
+      Vicepresidente 1°                   Sr. Jorge P. Brito              Sr. Ricardo A. Giaccio        Sr. Hernán G. Riso            Sr. Horacio C. Roncagliolo        Sr. Alejandro L. Massip
+                                                                          Lic. Santiago Poblet Videla   Sra. Adriana Oppezzo          Sr. Guillermo M. Maffeo
+      Vicepresidente 2°                   Lic. Stefano Di Carlo (1)       Sr. Gabriel C. Di Girolamo    Sr. Pablo S. Murado           Sr. Daniel R. Belvedere
+                                                                          Sr. Juan P. Flammini                                        Sr. Daniel H. Lisera
+               Secretario                 Dr. Ignacio Villarroel          Sr. Juan I. Napoli
+                                                                          Sr. Luis M. Cejas
+    Secretario de Actas                   Cont. Guillermo C. Imbrogno     Sr. Ricardo J. B. Morato
+
+           Prosecretario                  Lic. Darío C. Santilli
+
+                  Tesorero                Sr. Mariano Taratuty (2)
+
+             Protesorero                  Sr. Ignacio M. Amui
+
+
+
+
+       *   Reemplazo por fallecimiento del Sr. Guillermo A. Cascio (1)
+       *   Reemplazo por renuncia al cargo del Sr. Luis M. Schvimer (2)
+
+
+
+
+8      RIVER PLATE • 2018 / 2019                                                                                                                                        RIVER PLATE • 2018 / 2019     9
+
+
+
+--- pág. 7 ---
+
+
+     HONORABLE ASAMBLEA                                                  REPRESENTANTES TITULARES
+
+
+     DE REPRESENTANTES                                                  N° de Socio   Apellido y Nombre              N° de Socio   Apellido y Nombre                N° de Socio   Apellido y Nombre
+
+
+     DE SOCIOS
+                                                                         2-064567-4   Acevedo, José L.                2-057365-4   Bogochwal, Sergio I.              1-016815-4   Ernitz, Mónica V.
+                                                                         2-098334-1   Acosta, Daniel A.               2-055513-3   Brandariz, Facundo                2-016403-0   Faez, Alberto
+                                                                         2-064957-5   Acuña, Gustavo R.               2-012671-3   Brendani, Carlos A.               2-012414-2   Fernández, Carlos S.
+             Presidente:          2-013836-9   Dr. Andrés G. Ballotta    2-012565-7   Aizemberg, Adrián               2-093631-4   Breque, Carlos D.                 2-028665-1   Fernández Rocha, Guillermo
+                                                                         1-019112-9   Albarracín, María A.            2-010819-1   Bustamante, Osvaldo R.            2-019649-9   Fisrtenfeld, Norman E.
+     Vicepresidente 1°:           2-079288-6   Sr. Pablo E. Palombo      2-131419-3   Ales, Sebastián A.              2-073013-4   Caggiano, Roberto                 2-051644-0   Franchinetti , Amadeo J.
+                                                                         2-036934-9   Alonso, Martín R.               2-115641-8   Calvenese, Pablo E.               2-091771-3   Francos, Guillermo
+     Vicepresidente 2°:           2-089136-1   Sr. Santiago Amui         2-111361-5   Alsina, Mario J.                2-071144-9   Cascio, Gustavo A.                2-065881-2   Gallardo, Luis A.
+                                                                         1-035264-9   Álvarez, María V.               2-017951-5   Castiglioni, Federico R.          2-089976-9   Gallegos, Paulo A.
+             Secretario:          2-017791-3   Sr. Agustín Forchieri     2-080349-8   Álvarez, Ramiro I.              2-017955-3   Castiglioni, Roberto              2-016721-7   Gallino, Gastón E.
+                                                                         2-058410-6   Álvarez, Rodrigo M.             2-077756-6   Castro, Norberto G.               2-106624-9   García, Ramiro S.
+         Prosecretario:           2-023569-1   Sr. Cristián D. Pérez     2-039108-7   Álvarez, Marcelo G.             1-005958-6   Cenoz, María G.                   2-079608-0   García Márquez, Carlos R.
+                                                                         2-129900-9   Álvarez Vacarezza, Hernán H.    1-031633-5   Centurión, Sol Y.                 2-018857-3   García Rago, Sebastián
+                                                                         2-069945-5   Amestoy, Alejandro P.           2-063706-8   Charreau, Christian G.            2-068397-7   Gianella, Carlos D.
+                                                                         2-009993-4   Anile, Alejandro D.             2-044707-0   Cilio, Víctor                     2-050795-6   Goldsmidt, Rubén O.
+                                                                         2-098766-0   Antúnez, Fabián A.              2-010214-8   Colombo, Jorge M.                 2-118741-8   González, Marcelo
+                                                                         2-024837-2   Arfaras, Pablo                  2-030841-2   Commageile, Gabriel               2-068830-7   González, Rodrigo R.
+                                                                         1-015604-1   Argenta, Julieta S.             2-121078-3   Compagno, Cabral                  2-054779-8   González Cean, Alejandro R.
+                                                                         1-035654-0   Arribas, María J.               2-013408-8   Constantino, Néstor M.            2-011560-3   González Colserasa, Luis H.
+                                                                         1-019131-4   Avalis, Carolina G.             2-017550-6   Coronel, Augusto R.               2-010670-8   Guido, Luis M.
+                                                                         2-078880-9   Baldo, Héctor L.                2-029340-4   Corti, Gastón                     2-026015-0   Hadida, Pedro M.
+                                                                         2-022739-5   Baran, Juan P.                  2-077848-2   David, Santiago                   2-063308-0   Holgado, Nelson A.
+                                                                         1-017782-6   Barbaresi, María L.             2-044058-1   De La Fuente Salzmann, Antonio    2-106256-4   Iglesias, Mario I.
+                                                                         2-074566-4   Barco, Nicolás E.               2-065797-2   Díaz, Diego D.                    2-015486-0   Iturbide, Marcelo J.
+                                                                         2-052861-6   Barravecchia, Fernando S.       2-047195-4   Domínguez, Santiago I.            2-012429-8   Kiper, Claudio M.
+                                                                         2-118109-2   Bellante, Leonardo M.           2-047985-7   Dubois, Gustavo A.                2-060123-4   Krom, Christian E.
+                                                                         2-022616-9   Beltrame, Sebastián D.          1-023786-5   Elías, Stella M.                  2-088811-6   Lampa, Jorge A.
+
+
+
+
+10    RIVER PLATE • 2018 / 2019                                                                                                                                                         RIVER PLATE • 2018 / 2019   11
+
+
+
+--- pág. 8 ---
+
+
+                                                                                                                                                REPRESENTANTES SUPLENTES
+            N° de Socio          Apellido y Nombre                            N° de Socio                          Apellido y Nombre
+
+
+              2-062164-3         Ledesma Cascio, Javier F.                       2-032937-4                       Ramos, Martín R.              N° de Socio   Apellido y Nombre            N° de Socio   Apellido y Nombre
+              2-080990-8         Leite, Hugo                                     2-035172-6                       Regina, Emanuel R.
+              2-076663-4         Libere, Enrique J.                              2-054316-9                       Ricatti, Juan P.
+              2-017752-6         Lisera, Daniel G.                               2-010342-0                       Riganti, Osvaldo A.            2-089398-7   Acosta, Mariano J.            2-076521-3   Hartman, Nicolás
+              2-121294-3         Lombardi, Mario C.                              2-012646-5                       Rodríguez, Ricardo             2-041207-8   Affif, Gustavo A.             2-098113-6   Huk, Claudio J.
+              2-014718-7         Ludmer, Ricardo I.                              2-014579-4                       Rodríguez, Héctor R.           2-009019-1   Agazzi, Héctor L.             2-094859-7   Kelly, César P.
+              2-014245-4         Madeira Coelho, Luis F.                         2-017527-2                       Rodríguez, Oscar A.            2-021976-5   Albornoz, Héctor E.           2-015788-3   Kiciuk, Jorge P.
+              2-063179-8         Martínez, Miguel A.                             2-007655-7                       Rodríguez Suarez, Manuel A.    2-011439-0   Appio, Raúl R.                2-036616-2   Kordich, Norberto A.
+              2-021659-5         Martínez, Claudio A.                            2-043887-2                       Rojas Huerta, César            2-076178-5   Bajcic, Pablo E.              2-072353-8   Lago, Gonzalo
+              2-035428-2         Masciandaro, Sebastián A.                       2-014926-0                       Rosato, Horacio M.             2-124165-1   Belenki, Norberto D.          2-015370-4   Latreccino, Gabriel H.
+              2-076593-4         Méndez, Sergio M.                               2-069548-4                       Rossi, Gerardo E.              2-113078-4   Benedit, Diego                2-022211-2   Lavezzari, Gustavo A.
+              1-022301-1         Menini, Karina                                  2-015706-1                       Saban, Alejandro               2-115760-6   Blaiotta, Renato              2-078020-9   Lazarte, Ismael
+              2-014965-7         Merega, Guillermo                               2-048401-5                       Salvatella, Juan D.            1-005328-5   Bonnani, Verónica A.          1-016640-6   León, María L.
+              2-105209-1         Miguens, Martín A.                              2-079417-8                       Salvatierra, Daniel A.         1-019349-7   Brion, Susana                 2-016027-8   Leveque, Roberto M.
+              1-023003-5         Molentino, María J.                             2-012745-1                       Sansone, Marcelo               2-016138-9   Cafaldo, Juan P.              2-017629-9   Locaso, Ricardo
+              2-072024-3         Moreno, Gonzalo J.                              2-047444-1                       Sarquis Amuy, Pablo V.         2-119112-3   Calatafimi, Ezequiel J.       2-090479-1   Loiacono, Osvaldo E.
+              2-076875-5         Moyano, Luis A.                                 2-100224-3                       Scarnatto, Diego J.            2-049220-3   Calvi, Rodolfo F.             2-017802-4   Maffeo, Leonardo A.
+              2-038192-5         Munilla Terzy, Gervasio                         2-021259-3                       Sciolla, Pablo F.              1-017266-7   Canestro, Adriana C.          2-037935-5   Mata, Nicolás A.
+              2-054984-0         Neimerman, Gastón                               2-064236-5                       Serio, José A.                 2-028529-2   Cantero Guiñazu, Rafael E.    2-078311-4   More, Carlos J.
+              2-015968-7         Oliva, Marcelo                                  2-012960-4                       Shebar, Jacobo                 2-086616-7   Cooke, Iván                   2-013452-1   Noguera, Aníbal N.
+              2-012508-2         Olmos, Juan                                     2-019053-0                       Soberón, José A. (2)           2-128783-3   Debans Guido, Matías          2-012270-4   Nowik, David A.
+              2-103908-7         Osambela, Rodrigo M.                            2-043076-0                       Solé, Diego A.                 2-013762-1   Di Muzio, Miguel A.           2-084325-4   Pérez, Daniel
+              2-041898-2         Pan, Sebastián N.                               1-022229-6                       Tamaro, Adriana                2-027570-5   Di Paola, Martín R.           1-018292-1   Pérez Koch, Natalia S.
+              2-018559-8         Pasos, Juan M.                                  2-018326-8                       Tortorelli, Roberto L.         2-032237-3   Di Pino, Facundo              2-092628-3   Piacentini, Sebastián F.
+              2-070771-0         Pisoni, Carlos E.                               2-066507-6                       Tripoli, Emiliano              2-015126-5   Emsani, Patricio              2-108812-8   Potenza, Maximiliano
+              1-030270-7         Plaza, Jésica S.                                2-014968-8                       Trotta, Alfredo R.             2-109840-6   Faez, Jonathan                2-061450-4   Puerta, Sergio E.
+              2-089666-9         Ponce, Miguel C.                                2-030005-2                       Trujillo, Ricardo              2-061585-5   Ferrazzini, Carlos E.         1-012668-8   Rodríguez, Gabriela S.
+              2-092532-9         Priegue, Antonio L.                             2-061895-5                       Veiga, Rubén                   2-047305-1   Ferreyra, Cristián D.         2-052620-9   Sánchez, Juan M.
+              2-042438-3         Provenza, Juan C.                               2-014267-0                       Videla Arias, Oscar D.         2-013974-2   Gamiddo, Carmelo R.           1-020857-5   Saravia, Catalina
+              2-119400-7         Quiroz, Pablo J.                                2-097801-3                       Vigliero, Juan C. (1)          2-106475-5   García, Luciano F.            2-052305-3   Unterman, Matías N.
+              2-073003-3         Rabone Cernuda, Ariel A.                        1-022958-3                       Vitale, Belén                  2-063136-3   Ghiglione, Víctor             2-103145-6   Vera, Gustavo M.
+              2-120523-9         Raffo, Nicolás G.                               2-115402-5                       Zolezzi, Adrián                2-083265-6   Gómez, Agustín P.             1-027021-9   Villar, Verónica P.
+
+                                                             *     Reemplazo por fallecimiento del Dr. Ricardo I. Kennedy (1)
+                                                             **   Reemplazo por renuncia de la Srta. Mariela Varela Zeitler (2)
+
+12   RIVER PLATE • 2018 / 2019                                                                                                                                                                                   RIVER PLATE • 2018 / 2019   13
+
+
+
+--- pág. 9 ---
+
+
+     DEPARTAMENTOS,                                                                                                                                       ÁREA VICEPRESIDENCIA 2da.
+
+
+     COMISIONES Y                                                                                                                                         Departamento Educación
+
+                                                                                                                                                          Departamento Cultural
+                                                                                                                                                                                               Presidente:
+
+                                                                                                                                                                                               Presidente:
+                                                                                                                                                                                                             Gustavo A. Cascio
+
+                                                                                                                                                                                                             Carlos Jara
+
+
+     SUBCOMISIONES                                                                                                                                        Comisión de Integración de Personas Presidente:
+                                                                                                                                                          con Discapacidad
+                                                                                                                                                                                                             Liliana Plandolit
+
+
+                                                                                                                                                          Comisión de Actividades Sociales     Presidente:   Marcela Mallet
+                                                                                                                                                          Dpto. de Escuelas de Fútbol          Presidente:   Ricardo A. Giaccio
+     ÁREA PRESIDENCIA                                                         ÁREA VICEPRESIDENCIA 1ra.                                                   Nacionales e Internacionales
+
+     Consejo de Fútbol Profesional     Presidente:   Rodolfo D’Onofrio        Departamento Reglamento,            Presidente:   Matías Santángelo
+     División Reserva                  Presidente:   Matías Echeverri         Interpretación e Investigación
+                                                                                                                                                          ÁREA SECRETARÍA
+     Departamento de Fútbol Amateur    Presidente:   Fernando Guarini         (Técnico Legal)
+
+     Subcomisión de Fútbol Femenino    Presidente:   María Laura Barbaresi    Comisión de Asuntos Agrupacionales Presidente:    Sebastián Pérez Escobar   Comisión de Filiales                 Presidente:   Juan Carlos Amábile
+
+     Subcomisión de Futsal             Presidente:   Fernando Cáceres         Área Museos, Trofeos e Historia     Presidente:   Rodrigo Daskal            Comisión de Vitalicios               Presidente:   Ricardo Rodríguez
+
+     Subcomisión de Fútbol Interno     Presidente:   Mario Argenta            Comisión de Turismo y Nuevos        Presidente:   Valentín Díaz Gilligan    Departamento Social                  Presidente:   Guillermo Imbrogno
+                                                                              Desarrollos                                                                 Subcomisión Comedores Internos y     Presidente:   José Fernández
+     Departamento de Comunicación,     Presidente:   Renato Blaiotta
+     Medios y Digital                                                         Departamento Planeamiento           Presidente:   Mariano Taratuty          Externos
+
+     Comisión de Marketing             Presidente:   Gustavo Balabanián       Obras y Mantenimiento               Presidente:   Mariano Taratuty          Subcomisión Juegos Sociales          Presidente:   Verónica Villar
+
+     Comisión de Relaciones Públicas   Presidente:   Santiago Poblet Videla   Departamento Físico                 Presidente:   Federico Ferreyra         Subcomisión Fiestas                  Presidente:   Patricio De Francesco
+
+     Comisión de Relaciones            Presidente:   Ramiro Álvarez           Área Fundación Altos Estudios       Presidente:   Federico Aurelio          Comisión de la Mujer                 Presidente:   Diana Paterno
+     Institucionales                                                          River Plate
+     Comisión de Relaciones            Presidente:   Adrián Varela            Departamento Generación de          Presidente:   Mariano Taratuty
+     Internacionales                                                          Proyectos y Emprendimientos                                                 ÁREA TESORERÍA
+     Comisión Coordinadora de          Presidente:   Marcela Mallet           Subcomisión del Hincha              Presidente:   Sacha Huberman
+     Actividades Sociales
+                                                                                                                                                          Departamento Hacienda                Presidente:   Carlos A. Ferreyra
+     Comisión de River Solidario       Presidente:   Martín Cagnola
+                                                                                                                                                          Departamento de Sistemas             Presidente:   Gabriel Di Girolamo
+     Comisión de la Juventud           Presidente:   Santiago David
+                                                                                                                                                          Departamento Registro de Socios y    Presidente:   Gabriel Di Girolamo
+                                                                                                                                                          Cobranzas
+
+
+
+
+14       RIVER PLATE • 2018 / 2019                                                                                                                                                                                                   RIVER PLATE • 2018 / 2019   15
+
+
+
+--- pág. 10 ---
+
+[Divisor de sección — foto de tribuna a página completa con el título "01 Fútbol" superpuesto, sin texto adicional.]
+
+
+                                 01 Fútbol
+
+16   RIVER PLATE • 2018 / 2019         RIVER PLATE • 2018 / 2019   17
+
+
+
+--- pág. 11 ---
+
+
+     PARA LA
+     HISTORIA
+     Si hay una fecha que nunca se borrará de la memoria de los hinchas
+     de River es el 9 de diciembre de 2018. Ese día quedará para siempre
+     guardado como uno de los más gloriosos que cualquier amante del fútbol
+     pudiera vivir. Los riverplatenses tuvieron el lujo y el orgullo de ser parte de
+     una gesta inolvidable, por todos los matices que rodearon a esta final que
+     tuvo una repercusión tremenda en todo el mundo.
+
+
+     El equipo dirigido por Marcelo Gallardo ganó una de las Copa Libertadores
+     más difíciles de la historia: dejó en el camino a dos equipos grandes de
+     Argentina (Racing e Independiente), al último campeón (Gremio) y como
+     si fuera poco, en una final inédita, se enfrentó a Boca Juniors. El partido
+     de ida dio un adelanto de emotividad, porque River estuvo dos veces en
+     desventaja por su condición de visitante y, aún así, logró llegar al empate
+     con un gol histórico sacando del medio. También se empezó a vislumbrar
+     el título con la fenomenal atajada de Franco Armani a Darío Benedetto
+     sobre el final del encuentro.
+
+
+     Debido a los incidentes en la previa del partido de vuelta, la CONMEBOL
+     decidió trasladar la revancha al Santiago Bernabéu de Madrid. A pesar
+     de esa injusticia, los hinchas mostraron una vez más su pasión por el
+     Más Grande y fueron hacia allá en busca de la gloria eterna. La noche
+     madrileña no empezó bien, arrancando con el 0-1 abajo. Pero este River
+     es especialista en revertir situaciones adversas, y así lo hizo con el gol de
+     Lucas Pratto, el primer e inigualable festejo en #ModoOso. Luego, en el
+     tiempo suplementario llegó la maravilla de Juanfer Quintero, que con un
+     zurdazo fulminante puso a River en ventaja a pocos minutos del final. Un
+     final que fue como tenía que ser, la mejor postal de todas: Pity Martínez
+     con una corrida dejó atrás a todo Boca para que el Más Grande toque
+     el cielo con las manos. Más que tocarlo, abrazarlo. River se agigantó en
+     Madrid y todo el mundo fue testigo de una final histórica.
+
+
+
+
+18      RIVER PLATE • 2018 / 2019                                                      RIVER PLATE • 2018 / 2019   19
+
+
+
+--- pág. 12 ---
+
+
+                                                                                                  EL CAMINO
+   Franco Armani; Gonzalo Montiel, Jonatan Maidana, Javier Pinola,
+
+
+
+
+                                                                                                 DE RIVER
+		 Milton Casco; Enzo Pérez, Leonardo Ponzio (C), Ignacio Fernández,
+		 Exequiel Palacios; Gonzalo Martínez y Lucas Pratto.
+                DT: Marcelo Gallardo.
+        Suplentes: Germán Lux, Lucas Martínez Quarta, Camilo Mayada, Bruno Zuculini,
+		 Juan Quintero, Rodrigo Mora y Julián Álvarez.
+ Cambios: Quintero por Ponzio, Mayada por Montiel, Álvarez por Palacios,                                  GRUPO D                            OCTAVOS DE FINAL           CUARTOS DE FINAL    SEMIFINAL                                  FINAL
+		 Zuculini por Fernández.
+                                                                                                                                                        IDA                        IDA         IDA                                       IDA
+                                                                                                             2-2
+   Esteban Andrada; Julio Buffarini, Carlos Izquierdoz, Lisandro Magallán,
+		 Lucas Olaza; Nahitan Nández, Wilmar Barrios, Pablo Pérez (C); Cristian                                          (Mora, Mayada)                       0-0                        0-0        0-1                                        2-2
+		 Pavón, Sebastián Villa y Darío Benedetto.
+                DT: Guillermo Barros Schelotto.
+                                                                                                             0-0                                                                                                                          (Pratto, Izquierdoz e/c)
+        Suplentes: Agustín Rossi, Paolo Goltz, Leonardo Jara, Fernando Gago, Ramón
+                                                                                                                                                      VUELTA                     VUELTA      VUELTA                                   VUELTA
+		 Ábila, Carlos Tevez y Mauro Zárate.
+         Cambios: Ábila por Benedetto, Gago por Pérez, Jara por Villa, Tevez por Buffarini.
+                                                                                                             0-1
+                                                                                                                                                        3-0                        3-1        1-2                                        3-1
+
+                                                                                                                      (Pinola)
+                                                                                                                                    (Pratto, Palacios, Borré)   (Scocco, Quintero, Borré)        (Borré, Martínez)   (Pratto, Quintero, Martínez)
+
+                                                                                                             2-1
+
+                                                                                              (Pratto, Martínez)
+
+
+                                                                                                             0-1
+             Goles: Pratto, Quintero, Martínez (RP); Benedetto (BJ).
+                                                                                                                      (Pratto)
+     Amonestados: Ponzio, Fernández, Maidana, Casco (RP); Pérez, Barrios, Tevez (BJ).
+        Expulsado: Barrios (BJ).
+                                                                                                             0-0
+
+            Árbitro: Andrés Cunha (Uruguay).
+        Asistentes: Nicolás Tarán y Mauricio Espinosa (Uruguay).
+ Cuarto árbitro: Víctor Carrillo (Perú).
+              VAR: Leodán González (Uruguay).
+           AVAR 1: Esteban Ostojich (Uruguay).
+           AVAR 2: Richard Trinidad (Uruguay).
+
+20              RIVER PLATE • 2018 / 2019                                                                                                                                                                            RIVER PLATE • 2018 / 2019                 21
+
+
+
+--- pág. 13 ---
+
+
+     FIESTA MONUMENTAL
+     PARA NO OLVIDAR
+
+
+                                 El campeón de América llegó a Buenos Aires el domingo 23 de diciembre. No bien pisaron suelo argentino, los jugadores
+                                 y el cuerpo técnico se subieron al micro que los esperaba en Ezeiza, especialmente ploteado para la ocasión, para
+                                 emprender el camino hacia el Monumental. Allí los hinchas pudieron, al fin, celebrar este logro eterno con los protagonistas
+                                 y agradecerles la hazaña del 9 de diciembre.
+
+
+                                 Marcelo Gallardo, emocionado, dijo: “Gracias por estar acá. Gracias por sostenernos, por aguantarnos, por alentarnos,
+                                 por todo el amor recibido en todos estos años. Es una gran emoción sentir lo que siento en este momento y compartir
+                                 con todo este grupo de jugadores, que valoro de corazón. Agradecer a todo el cuerpo técnico, auxiliares, a todos los
+                                 que trabajan todo el tiempo para que podamos ser mejores. Agradecerle a la Comisión Directiva y al Presidente, Rodolfo
+                                 D´Onofrio, y a Enzo Francescoli”.
+
+
+
+
+22   RIVER PLATE • 2018 / 2019                                                                                                                                  RIVER PLATE • 2018 / 2019   23
+
+
+
+--- pág. 14 ---
+
+
+                                 “ Hace tres años, cuando ganamos
+                                   la Copa de 2015, parecía mentira,
+                                   pero fue un sueño hecho realidad.
+                                   Me acuerdo de las últimas palabras en
+                                   este mismo estadio y les dije de corazón
+                                   a todos los hinchas que íbamos por más.
+                                   No solamente fuimos por más, sino que
+                                   ganamos la final más soñada del
+                                   mundo y no la vamos a olvidar jamás,
+                                   va a quedar eterna, para siempre en
+                                   nuestros corazones”.
+                                 Marcelo Gallardo
+
+24   RIVER PLATE • 2018 / 2019                                     RIVER PLATE • 2018 / 2019   25
+
+
+
+--- pág. 15 ---
+
+
+     RECOPA
+     EN CASA
+                                 A raíz de haberle ganado la histórica Copa Libertadores a Boca Juniors en Madrid, el equipo de Marcelo Gallardo se ganó un lugar en la final de la CONMEBOL Recopa, en la cual debía
+                                 enfrentar a Athletico Paranaense de Brasil, que fue el campeón de la CONMEBOL Sudamericana. El partido de ida disputado en Curitiba fue derrota por 1-0, pero la serie estaba abierta y todo
+                                 se definiría en el Estadio Monumental.
+
+
+                                 Luego de un primer tiempo sin goles, el desahogo y los festejos llegaron en el complemento. Primero, el gol de Nacho Fernández tras el rebote de un penal, logró el 1-0. Con la serie igualada,
+                                 todo parecía indicar que la final iba a continuar en tiempo suplementario, pero en el descuento, Lucas Pratto definió el 2-0 y un nuevo #ModoOso se adueñó del Estadio Monumental. El 3-0
+                                 definitivo, que le daba una nueva copa internacional a River Plate, llegó por intermedio de Matías Suárez.
+
+
+                                 La casa de los riverplatenses fue testigo de una nueva vuelta olímpica, en una noche perfecta que sirvió como cierre ideal de una temporada que había comenzado en 2018 y dejó la alegría
+                                 más grande de la historia.
+
+
+
+
+26   RIVER PLATE • 2018 / 2019                                                                                                                                                             RIVER PLATE • 2018 / 2019               27
+
+
+
+--- pág. 16 ---
+
+
+     GALLARDO TAMBIÉN                                                           OTRA MARCA SUPERADA
+     HIZO HISTORIA                                                              POR GALLARDO
+     Marcelo Gallardo, quien llegó a River a mediados de 2014, sumó su          El Muñeco se transformó en el director técnico con más partidos dirigidos en River Plate
+     décima vuelta olímpica en el banco del Más Grande: así, se transformó en   por Copa Libertadores.
+     el director técnico más ganador de la historia del Millonario.
+                                                                                Con el encuentro ante Cerro Porteño, Marcelo Gallardo alcanzó los 57 partidos como
+
+     A continuación, los títulos de Gallardo:                                   entrenador de River en Copa Libertadores y superó por uno a Ángel Labruna. El Muñeco se
+                                                                                impuso en 26 ocasiones, empató 23 y tan sólo perdió ocho.
+
+
+                                                                                  ENTRENADOR           PARTIDOS         VICTORIAS         EMPATES         DERROTAS
+                       2014		            Copa Sudamericana
+                                                                                 Marcelo Gallardo          57               25               23                8
+                       2015		            Recopa Sudamericana
+                                                                                 Ángel Labruna             56               27               16                13
+                       2015		            Copa Libertadores
+                                                                                 Ramón Díaz                52               24               16                12
+                       2015		            Copa Suruga Bank
+                                                                                 Daniel Passarella         38               16                9                13
+                       2016		            Recopa Sudamericana
+                                                                                 Leonardo Astrada          24               14                4                6
+                       2016		            Copa Argentina
+                                                                                 Américo Gallego           20               10                4                6
+                       2017		            Copa Argentina
+                                                                                 Renato Cesarini           20               13                3                4
+                       2017		            Supercopa Argentina
+                                                                                 Héctor Veira              13                9                3                1
+                       2018		            Copa Libertadores
+                                                                                 Juan Carlos Lorenzo       11                6                4                1
+                       2019		            Recopa Sudamericana
+                                                                                 Manuel Pellegrini         10                7                0                3
+
+
+
+28      RIVER PLATE • 2018 / 2019                                                                                                           RIVER PLATE • 2018 / 2019      29
+
+
+
+--- pág. 17 ---
+
+
+     EL GRAN GESTO                                                                                                                               ESA MURALLA
+                                 Luego del encuentro frente a Cerro Porteño, por Copa Libertadores, Marcelo Gallardo les pidió a sus
+                                 jugadores que les regalaran sus camisetas a los alcanzapelotas: “La categoría 2003 se entrena para
+                                 pasar pelotas. Es un brazo del equipo. Esto fue un reconocimiento; ellos entregan la pelota como deben
+
+     DEL PLANTEL                 entregarla. Siguen el partido y lo hacen con pasión e ilusión. Me pareció un buen gesto que los jugadores
+                                 que los reconocieran”.                                                                                          INOLVIDABLE
+                                                                                                                                             Jonatan Maidana llegó a River a mediados de 2010. Ese fue el inicio de lo que sería una etapa
+                                                                                                                                             repleta de alegrías, festejos y vueltas olímpicas. El zaguero se ganó rápidamente la titularidad en
+                                                                                                                                             aquel equipo y un par de meses más tarde convertiría su primer gol con la banda: nada menos
+                                                                                                                                             que ante Boca Juniors, en el Monumental, para ganar por 1-0.
+
+
+                                                                                                                                             A fuerza de sacrificio, Maidana se transformó en una pieza fundamental del equipo multicampeón
+                                                                                                                                             de River: el primer logro fue el Torneo Final 2014 y enseguida llegó la Copa Campeonato ante
+                                                                                                                                             San Lorenzo. Ya con Marcelo Gallardo en el banco de suplentes, Jonatan levantó su primer
+                                                                                                                                             título internacional con el Millonario: la Copa Sudamericana 2014.
+
+
+                                                                                                                                             Tras festejar la Recopa Sudamericana en 2015, Maidana tuvo una actuación sobresaliente en
+                                                                                                                                             la Copa Libertadores de ese año, donde marcó un gol trascendental ante Cruzeiro en Brasil,
+                                                                                                                                             logrando el histórico 3-0 que le dio el pase al conjunto de Gallardo a la semifinal. Luego la
+                                                                                                                                             historia es conocida: el 2 levantó su primera Libertadores con el Más Grande.
+
+
+                                                                                                                                             Siguieron pasando los años y los títulos, siempre con Maidana posicionado como uno de
+                                                                                                                                             los hombres fundamentales del plantel. En los últimos años, el defensor se transformó en el
+                                                                                                                                             segundo capitán y, junto con Leonardo Ponzio y Gallardo, alzó la inolvidable Copa Libertadores
+                                                                                                                                             ganada a Boca Juniors en Madrid. Tuvo una merecida ovación en la fiesta del campeón en el
+                                                                                                                                             Monumental, el cierre digno de un guerrero que dejó todo por los colores.
+
+
+                                                                                                                                               PARTIDOS JUGADOS:                               279
+                                                                                                                                               PARTIDOS COMO TITULAR:                          272
+                                                                                                                                               PARTIDOS QUE FUE REEMPLAZADO:                    16
+                                                                                                                                               MINUTOS JUGADOS:                             24.058
+                                                                                                                                               GOLES:                                            8
+                                                                                                                                               TARJETAS AMARILLAS:                              83
+                                                                                                                                               TARJETAS ROJAS:                                   3
+
+
+
+
+30   RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                     RIVER PLATE • 2018 / 2019   31
+
+
+
+--- pág. 18 ---
+
+
+     • El primer gol que anotó en River Plate fue ante Boca Juniors, el 16 de
+        noviembre de 2010, en la victoria 1-0 en el Monumental (Apertura 2010).
+
+
+     • Disputó 279 partidos con la camiseta de River Plate (272 como titular);
+        jugó 24.058 minutos y anotó ocho goles.
+
+
+     • Es uno de los cinco jugadores de River Plate que ganaron la Libertadores
+        en 2015 y en 2018 (junto a Mora, Mayada, Ponzio y Pity Martínez).
+
+
+     • Ganó 12 títulos en River Plate.
+
+     • Sólo sufrió tres expulsiones en River Plate, todas en la Primera División
+        Argentina. Nunca fue expulsado en competiciones CONMEBOL.
+
+
+     • Es el jugador de River Plate que más partidos disputó en las últimas cuatro
+        ediciones de la Libertadores (39); en 2015 lideró ese rubro (14).
+
+
+     • Disputó 3509 minutos para River Plate en las últimas cuatro ediciones de
+        la Libertadores, más que cualquier otro jugador del equipo; en 2015 lideró
+        ese rubro (1260).
+
+
+     • Es el segundo jugador de River Plate que más pases completó en las
+        últimas cuatro ediciones de la Libertadores (1019), detrás de Ponzio (1295).
+
+
+     • Realizó 70 intercepciones en las últimas cuatro ediciones de la Libertadores
+        en River Plate. Sólo Ponzio lo supera (72); en 2015 lideró ese rubro (28).
+
+
+     • Realizó 155 despejes para River Plate en las últimas cuatro ediciones de la
+        Libertadores, más que cualquier otro jugador; lideró el rubro en 2015 (39),
+        2017 (31) y 2018 (75).
+
+
+
+
+32       RIVER PLATE • 2018 / 2019                                                     RIVER PLATE • 2018 / 2019   33
+
+
+
+--- pág. 19 ---
+
+
+     ¡HASTA SIEMPRE,
+                                                                                                       Rodrigo Mora en River (Competiciones oficiales)
+
+
+     URUGUAYO!                                                                                        PARTIDOS JUGADOS:
+                                                                                                      MINUTOS JUGADOS:
+                                                                                                                                              184
+                                                                                                                                           11.289
+                                                                                                      GOLES:                                    41
+                                                                                                      PARTIDOS COMO TITULAR:                  122
+     Rodrigo Mora vivió su noche soñada en el Monumental y tuvo su merecido homenaje en               INGRESÓ DESDE EL BANCO:                   62
+     la casa del Más Grande, en una jornada en la cual no faltaron emociones, ídolos y mucha          FUE REEMPLAZADO:                          57
+     pasión. Después de nueve vueltas olímpicas con la camiseta de River Plate, más de 40             TARJETAS AMARILLAS (nunca fue expulsado): 17
+     goles y un sinfín de alegrías, el uruguayo tuvo el sábado 13 de julio un reconocimiento
+     único en su casa, el mismo escenario que lo vio brillar.
+                                                                                                      GOLES
+     En la previa, los hinchas que se acercaron pudieron disfrutar de música en vivo y murga.         PRIMERA DIVISIÓN:                              27
+     Luego, ya en el campo de juego, Jorge Brito (Vicepresidente 1°), Stefano Di Carlo                COPA LIBERTADORES:                              7
+     (Vicepresidente 2°) e Ignacio Villarroel (Secretario) le entregaron una placa y un cuadro.       COPA SUDAMERICANA:                              7
+     Con el inicio del partido, los goles no tardaron en llegar: en la primera parte, River 2015 se
+     impuso por 5-2, con cuatro goles de Mora y uno de Ariel Ortega.
+                                                                                                      TÍTULOS OFICIALES
+     Antes del comienzo del segundo tiempo, Leonardo Ponzio, en nombre de los jugadores,              COPA LIBERTADORES                 (2015 y 2018)
+     le regaló una camiseta de River autografiada por todos. Mora también recibió una placa y         COPA SUDAMERICANA                          2014
+     una camiseta de Peñarol (equipo del cual también es hincha) por parte de Jorge Barrera           RECOPA SUDAMERICANA               (2015 y 2016)
+     (Presidente del club uruguayo) y del entrenador Gregorio Pérez.                                  COPA SURUGA BANK                           2015
+                                                                                                      SUPERCOPA ARGENTINA                        2017
+     En el segundo tiempo hubo espacio para la emoción, producto del ingreso de Máximo,               COPA ARGENTINA                    (2016 y 2017)
+     hijo de Mora, quien se dio el gusto de festejar dos tantos. Al finalizar el encuentro,
+     Rodrigo habló para todo el Monumental expresando unas sentidas palabras a todos los
+     riverplatenses, seguido de un emotivo video que se proyectó en la pantalla.
+                                                                                                      • Tuvo dos etapas en River Plate: la primera, entre julio de 2012 y diciembre de 2013. La segunda, entre julio de 2014 y diciembre de 2018.
+     Además de los jugadores de la Copa Libertadores 2015 y de la histórica Copa de 2018,
+                                                                                                      • Disputó un total de 184 partidos oficiales con River, siendo titular en 122 de ellos y anotando 41 goles. Rodrigo Mora no recibió ninguna tarjeta roja en su paso por River.
+     participaron exjugadores de River como Enzo Francescoli, Norberto Alonso, Ariel Ortega,
+     Marcelo Gallardo, Fernando Cavenaghi, Cristian Ledesma, Javier Saviola y Marcelo
+                                                                                                      • Entre las distintas competiciones que disputó, su mejor registro de minutos por gol fue en la Copa Sudamericana: marcó 7 goles en 1284 minutos (uno cada 183).
+     Saracchi, entre otros.
+
+                                                                                                      • Con River Plate, Mora consiguió nueve títulos: seis internacionales y tres locales.
+
+
+34    RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                 RIVER PLATE • 2018 / 2019   35
+
+
+
+--- pág. 20 ---
+
+
+       MARCELO GALLARDO Y JUAN QUINTERO,                                                   RIVER, PRESENTE EN LA COPA AMÉRICA                                                                                                        LA PASIÓN TAMBIÉN LLEGÓ
+       ENTRE LOS MEJORES DEL MUNDO                                                                                                                                                                                                   AL MUNDIAL DE CLUBES
+       El entrenador y el mediocampista fueron seleccionados por la FIFA para ir en        En la competencia disputada en Brasil, el Millonario aportó tres futbolistas a la                                                         Luego del inolvidable triunfo sobre Boca Juniors
+       busca de la máxima distinción en la gala The Best, la cual se llevará a cabo        Selección Argentina: Franco Armani, Milton Casco y Matías Suárez. En tanto,                                                               en la final de la Copa Libertadores disputada en
+       el 23 de septiembre en Milán. El Muñeco es uno de los diez candidatos entre         Exequiel Palacios también fue convocado, pero no pudo disputar el certamen                                                                Madrid, River Plate enseguida emprendió viaje
+       los que se elegirá al mejor técnico del mundo, mientras que el colombiano           debido a una lesión.                                                                                                                      hacia Emiratos Árabes Unidos. Allí, los hinchas
+       competirá por el mejor gol gracias al tanto que le marcó a Racing de tiro libre,    El equipo conducido por Lionel Scaloni finalizó en la tercera ubicación, luego                                                            volvieron a decir presente y dieron otra muestra del
+       en febrero de este año en el Estadio Monumental.                                    de vencer a Chile por 2-1.                                                                                                                inigualable amor por los colores. Tras perder en los
+                                                                                                                                                                                                                                     penales frente a Al Ain en semifinal, el Millonario
+                                                                                                                                                                                                                                     venció 4-0 a Kashima Antlers de Japón para
+
+                                                                                          PRETEMPORADAS EN                                                                                                                           subirse al podio.
+
+                                                                                          URUGUAY Y ESTADOS UNIDOS
+                                                                                          Al igual que en cada semestre, el plantel profesional realizó los trabajos
+                                                                                          precompetitivos. En la primera parte de 2019, la delegación pisó suelo
+                                                                                          uruguayo para entrenarse en Solanas, mientras que en junio, el escenario
+       PREMIOS RIVERPLATENSES                                                             elegido fue UCLA, en Estados Unidos.
+                                                                                                                                                                               CUARTA DIVISIÓN: RIVER
+                                                                                          Además, River participó de la Colossus Cup con dos muy buenas
+                                                                                                                                                                               LE GANÓ A BOCA EN LA
+     • A fines de 2018, el diario uruguayo El País realizó, una vez más, la encuesta      presentaciones. Primero, goleó 5-1 a Chivas de Guadalajara (goles de
+                                                                                                                                                                               FINAL Y DIO LA VUELTA
+       para elegir a los jugadores para conformar el mejor equipo del continente          Rafael Borré, Nacho Fernández, Benjamín Rollheiser y 2 de Nicolás De La
+       y River aportó cinco figuras: Franco Armani, Jonatan Maidana, Exequiel             Cruz) y luego se impuso 2-0 al América de México (gritos de Julián Álvarez           El equipo de Gabriel Perrone superó al eterno
+       Palacios, Juan Quintero y Gonzalo Martínez. Además, Marcelo Gallardo               y Cristian Ferreira).                                                                rival en el partido definitorio, en cancha de
+       se quedó con el primer lugar de la categoría de mejor entrenador, con un                                                                                                Argentinos Juniors. Tras el 2-2, venció en la
+       indiscutible porcentaje de más del 85% de los votos; mientras el Pity se                                                                                                definición por penales. El Millonario estuvo dos veces en desventaja y se repuso con goles de
+       adueñó de la estatuilla del mejor jugador.                                                                                                                              Patricio Núñez y de Rodrigo Castillo. En la definición por penales, River se impuso 5-4, con el último
+                                                                                                                                                                               disparo marcado por Alan Marcel Picazzo y desató la euforia de los juveniles “millonarios”.
+                                                                                                                                                                               Los titulares fueron Petrolli, Camargo, Aguirre, T. Gutiérrez, M. Sánchez, P. Núñez, Matlis, Vega, Galván,
+     • El Olimpia de Plata también fue para el Pity Martínez: el 10 de River ganó el
+       tradicional evento que el Círculo de Periodistas Deportivos organiza desde                                                                                              Benítez, Castillo. Ingresaron Picazzo, Belloni y Luque.
+       1954 para distinguir a los mejores atletas de cada disciplina.
+                                                                                                                                                                               El entrenador compartió: “Son sensaciones muy lindas el haber ganado un campeonato. Y más ganárselo
+                                                                                                                                                                               a Boca, con todo lo que viene generándose últimamente. Pero más contento estoy por los chicos, que
+     • En los Premios Superliga de la temporada 2018/2019, River dijo presente:
+       Javier Pinola fue premiado como el mejor defensor. Además, Juan Quintero                                                                                                pudieron obtener este logro que jamás olvidarán. Yo estoy muy satisfecho porque me formé acá como
+       integró el equipo ideal junto con el defensor. Por otro lado, Rodrigo Mora                                                                                              jugador, debuté en la Primera y a esta altura estoy como técnico en el Club que quiero. Y sobre todo
+       recibió una mención a la trayectoria.                                                                                                                                   puedo aportar un poco para que los chicos de Inferiores puedan llegar a Primera División”.
+
+
+
+
+36         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                  RIVER PLATE • 2018 / 2019             37
+
+
+
+--- pág. 21 ---
+
+
+     SUB-17: ARGENTINA, CAMPEONA                                                     EN UN HECHO HISTÓRICO, RIVER PRESENTÓ A SU                                                                   UNA GRAN CAMPAÑA
+     CON PRESENCIA RIVERPLATENSE                                                     PRIMER EQUIPO PROFESIONAL DE FÚTBOL FEMENINO
+     La Selección dirigida por Pablo Aimar se quedó con el Sudamericano que          El miércoles 17 de julio, en el Salón Auditorio del Monumental, el Club dio un paso fundamental              La Primera División de fútbol femenino de River peleó hasta el último partido, pero no logró
+     se disputó en Perú y jugará el Mundial de Brasil. Luego de sortear la fase de   hacia la igualdad en el deporte y presentó a su equipo profesional de fútbol femenino. Durante el            quedarse con el título. De todas maneras, cerró una etapa estupenda y sigue consolidando su
+     grupos, el combinado nacional se adueñó con el primer puesto del hexagonal      evento, que fue moderado por Luciana Rubinska (Directora de la Carrera de Periodismo Deportivo               crecimiento en esta disciplina.
+     final. Cuatro jugadores de River integraron el plantel campeón: Agustín         del Terciario de River), las futbolistas firmaron sus primeros contratos profesionales con la Institución.
+     Gómez, Tomás Lecanda, Santiago Simón y Luciano Vera.                            Cabe destacar que fueron acompañadas por las más de 100 jugadoras de Divisiones Inferiores.                  El partido decisivo se disputó el sábado 11 de mayo en la cancha auxiliar número uno del Estadio
+     En el Grupo B, la Selección finalizó en la tercera ubicación, producto de dos                                                                                                                Monumental, ante UAI Urquiza, que se impuso por 4-0. Ambos equipos llegaron a la última fecha
+     victorias, un empate y una derrota:                                             En el acto estuvieron presentes todas las integrantes del plantel de Primera División y directivos de        con posibilidades: River necesitaba el triunfo, mientras que a la vista le alcanzaba el empate para
+                                                                                     River, encabezados por Jorge Brito (Vicepresidente 1º).                                                      dar la vuelta olímpica.
+           ARGENTINA                      0-3                   URUGUAY
+           ARGENTINA                      2-1                  COLOMBIA
+                                                                                     Jorge Brito dijo: “Es un día histórico para el mundo riverplatense y para todo el mundo del fútbol.
+           ARGENTINA                      2-2                  PARAGUAY
+                                                                                     River tiene una historia muy larga e importante; fue pionero en darle sentido de pertenencia a la mujer.
+           ARGENTINA                      3-0                     BRASIL
+                                                                                     Estamos liderando e iniciando un proyecto de fútbol femenino. Este paso de la profesionalización es          VISITA DE LUJO PARA LAS JUGADORAS
+                                HEXAGONAL FINAL                                      muy importante; le dará competencia y compromiso. Es un gran desafío”.
+           PERÚ                           0-0                 ARGENTINA                                                                                                                           El sábado 16 de marzo, Marcelo Gallardo y Leonardo Ponzio les dieron una sorpresa a las
+           URUGUAY                        0-1                 ARGENTINA              Las jugadoras también tomaron la palabra. Mercedes Pereyra reconoció: “Estoy muy emocionada,                 integrantes de la Primera División: el entrenador y el capitán pasaron por la cancha auxiliar antes
+           CHILE                          0-2                 ARGENTINA              son muchos años acá en el Club. A las más chicas les quiero decir que esto recién empieza y                  del encuentro frente a la UBA, por la sexta fecha del campeonato, y compartieron un momento
+           PARAGUAY                       0-3                 ARGENTINA              que ahora viene lo mejor”. Justina Morcillo manifestó: “Cuando empecé a jugar supe que quería                con ellas. Además, las acompañaron en la salida al campo de juego y posaron para la foto.
+           ECUADOR                        4-1                 ARGENTINA              dedicarme a esto toda mi vida, pero pensé que tendría que irme a hacerlo a otro país. Esto hasta
+                                                                                     hace poco no se imaginaba y hoy es una alegría inmensa”.
+
+
+
+
+38      RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                       RIVER PLATE • 2018 / 2019   39
+
+
+
+--- pág. 22 ---
+
+
+                                                                                                      RIVER, CAMPEÓN DE FÚTBOL SENIOR
+     MUNDIALITO                                                                                       El conjunto millonario se quedó con el título de la Superliga una fecha antes
+
+
+     EN HURLINGHAM
+                                                                                                      del cierre, tras vencer por 3-2 a Independiente. De esta manera, River cerró
+                                                                                                      una gran campaña de la actividad, la cual contó con la participación en varios
+                                                                                                      partidos del Burrito Ortega.
+
+
+
+     Desde el martes 23 y hasta el 30 de julio, cientos de chicos de más de 60 equipos
+     diferentes vivieron días a puro fútbol, aprendizaje y compañerismo en el predio del Club
+     en Hurlingham. Este año, la nueva edición del mundialito de fútbol infantil, organizado por
+     River, contó con competencias en tres categorías diferentes: 2012, 2013 y 2014. Después
+     de una semana de acción, los cuatro mejores equipos de cada categoría fueron premiados
+     y, además, el primero de cada una de ellas se quedó con la Copa Ciudad de Hurlingham.
+
+
+     Durante el último día del torneo, los chicos recibieron la visita de una gloria de River y del
+     fútbol argentino: el Pato Fillol, actual Director del Departamento de Arqueros del área de
+     Fútbol Amateur.
+
+      CATEGORÍA 2012                   CATEGORÍA 2013                    CATEGORÍA 2014
+
+     1ro. LIBERTADOR            1ro. LOMAS DE SAN MARTÍN              1ro. AFUT
+     2do. EL TRÉBOL             2do. 12 OCTUBRE                       2do. ARRICAU
+     3ro. VICTORIA              3ro. EL CEIBO                         3ro. FLECHA DEL PLATA
+     4to. PACHECO SUR           4to. SAN DAMIÁN                       4to. ANSALDI
+
+
+
+
+40    RIVER PLATE • 2018 / 2019                                                                                                                                                        RIVER PLATE • 2018 / 2019   41
+
+
+
+--- pág. 23 ---
+
+[Divisor de sección — foto a página completa con el título "02 Deportes Federados" superpuesto, sin texto adicional.]
+
+
+                                 02 Deportes Federados
+
+42   RIVER PLATE • 2018 / 2019                RIVER PLATE • 2018 / 2019   43
+
+
+
+--- pág. 24 ---
+
+
+                                                                                                 MEDALLAS RIVERPLATENSES
+     ¡CAMPEÓN DEL                                                                                Los deportistas de River dijeron “presente” en los Juegos Panamericanos
+
+
+     METROPOLITANO!                                                                              que se realizaron en Lima, Perú. Entre los galardones más destacados se
+                                                                                                 encuentran las medallas de oro conseguidas por los siguientes atletas:
+                                                                                                 Victoria Sauce y Priscila Jardel (hockey sobre césped); Gastón Fernández,
+                                                                                                 Matías Giraudo y Manuel Balagué (vóley); y el preparador físico Guillermo
+                                                                                                 Cazón (handball). De plata: Horacio Cifuentes (dos medallas en tenis de
+     River escribió otra página dorada en la historia grande del Club: la División de Honor de   mesa) y el entrenador Eduardo Gallardo (handball femenino). En tanto, Elián
+     Caballeros se adjudicó el Torneo Metropolitano 2019, tras vencer 3-2 a Lomas Vóley en       Quintans obtuvo una de bronce (estadígrafo de vóley femenino).
+     el Polideportivo Gorki Grana de Morón. Los parciales fueron 21-25, 25-22, 20-25, 25-23
+     y 15-13.
+
+
+     De esta manera, el Millonario volvió a consagrarse como campeón del Torneo Metropolitano
+     tras 14 años —la última conquista había sido en 2005—. Así, acumula ocho trofeos en este
+     certamen, mientras que sumó su tercer título en la era del entrenador Fernando Borrero,
+     sumada a la Copa Chulo Olmo y la Supercopa Metropolitana, ambas en 2018.
+
+
+
+
+44    RIVER PLATE • 2018 / 2019                                                                                                                                                RIVER PLATE • 2018 / 2019   45
+
+
+
+--- pág. 25 ---
+
+
+     RECONOCIMIENTO A LOS DEPORTISTAS
+     OLÍMPICOS EN EL MONUMENTAL
+                                                                                      OTRA GRAN CAMPAÑA
+                                                                                      DE LAS VIKINGAS
+     Rodolfo D’Onofrio y las autoridades del Club Atlético River Plate homenajearon
+     a los deportistas argentinos que participaron de los Juegos Olímpicos de
+     la Juventud, los cuales tuvieron lugar en Buenos Aires durante el mes de
+     octubre.
+
+
+     En representación del Comité Olímpico Argentino estuvo Gerardo Werthein
+     (Presidente), quien además fue Presidente del Comité Organizador de estos        El equipo de hockey césped logró dos subcampeonatos: llegó a las instancias finales
+     Juegos Olímpicos de la Juventud.                                                 del Metropolitano y del Argentino de Clubes y, aunque no pudo consagrarse, continuó
+                                                                                      figurando en la élite de este deporte.
+     Fueron reconocido Carlos Retegui, Mariano Ronconi, los jugadores Lisandro
+     Zago, Tadeo Marcucci, Facundo Sarto, Ignacio Ibarra, Dante Cittadini, Nicolás
+     Schargorodsky; Gastón Boiman, Mateo Delmastro y Agustina Roth.
+
+
+     La cita internacional tuvo lugar del 6 al 18 de octubre y participaron 4000
+     atletas de 206 países. Por primera vez, compitieron la misma cantidad de
+     mujeres y varones. La delegación argentina ganó un total de 32 medallas: 11
+     doradas, 10 plateadas y 11 de bronce.
+
+
+     Cabe recordar que River Plate fue testigo de la presentación de la antorcha
+     olímpica de los Juegos, en un evento multitudinario que se realizó en el
+     Microestadio.
+
+
+
+
+46      RIVER PLATE • 2018 / 2019                                                                                                                                           RIVER PLATE • 2018 / 2019   47
+
+
+
+--- pág. 26 ---
+
+
+     TORNEO METROPOLITANO                                                     ARGENTINO DE CLUBES                                                                                          CLÍNICA DE HOCKEY EN SAN ANDRÉS DE GILES
+
+     Por tercer año consecutivo, River fue protagonista. Rodolfo D’Onofrio    En esta nueva edición, River no pudo repetir el título de las últimas tres presentaciones, a pesar de        El evento, organizado en conjunto por River, Red Solidaria y Club El Frontón, se llevó a cabo   de Las Vikingas donada por River a beneficio de la Asociación Discapacitados en Acción
+     estuvo presente en la final ante Banco Nación, en Los Polvorines, que    haber mantenido una excelente rendimiento en el certamen. El torneo duró cuatros días y tuvo como            el domingo 24 de marzo. La jornada contó con la presencia de entrenadores profesionales         (ADEA).
+     fue derrota por 1-0. Previamente, Las Vikingas habían finalizado en la   escenario al Jockey Club de Rosario. En el camino a la final, Las Vikingas vencieron a Popeye BC (1-0),      y reconocidas jugadoras de Las Vikingas y Las Leonas, quienes no sólo compartieron
+     primera posición en la tabla general. Luego, en playoff, se impusieron   Murialdo (3-1), Lomas de Rivadavia (2-0), Club Náutico El Quillá (4-1). Luego, en la final, cayeron 4-3 en   actividades vinculadas al perfeccionamiento de técnicas del deporte, sino que también           Asimismo, la jornada permitió recaudar múltiples útiles escolares a partir de las donaciones
+     2-1 a San Fernando para llegar al partido final.                         penales ante Gimnasia y Esgrima de Buenos Aires, luego de igualar 2-2.                                       intercambiaron experiencias y aprendizajes con los participantes.                               realizadas por la comunidad en general y las inscripciones de los participantes procedentes
+                                                                                                                                                                                                                                                                                           de diferentes clubes locales y de la zona (Club Atlético Villa Manchi y Escuela de Hockey
+                                                                                                                                                                                           La conducción integral de la clínica estuvo a cargo de Gonzalo Ifrán, quien además de           Club Social San Martín), que serán distribuidos entre escuelas rurales del Municipio.
+                                                                                                                                                                                           guiar cada actividad deportiva fue el encargado de realizar el sorteo de indumentaria oficial
+
+
+
+
+                                                                                                                                                                                           ENCUENTRO DE CAMPEONES                                                                                        RIVERPLATENSES TERNADOS
+
+                                                                                                                                                                                           River Plate recibió la visita de los nadadores José Meolans (campeón mundial en Moscú 2002)                 • Lucina Von Der Heyde (hockey sobre césped) y Froilán Padilla (fútbol para
+                                                                                                                                                                                           y Eduardo Otero, quienes competían para el Club. La clínica se desarrolló en el natatorio de la               ciegos) fueron ternados en los premios Olimpia.
+                                                                                                                                                                                           Institución y luego en el Salón Auditorio, en donde los atletas de River pudieron aprovechar los            • Carlos Alberto Ruíz Díaz (bochas), Juana Castellaro Morello (hockey sobre césped)
+                                                                                                                                                                                           consejos y enseñanzas que estos dos grandes les brindaron.                                                    y Martín De La Cruz (ajedrez) fueron nominados a los Premios Jorge Newbery.
+
+
+
+
+48      RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                                           RIVER PLATE • 2018 / 2019        49
+
+
+
+--- pág. 27 ---
+
+[Divisor de sección — foto nocturna a página completa con el título "03 Nuestra Casa" superpuesto, sin texto adicional.]
+
+
+                                 03 Nuestra Casa
+
+50   RIVER PLATE • 2018 / 2019           RIVER PLATE • 2018 / 2019   51
+
+
+
+--- pág. 28 ---
+
+
+     UN MONUMENTAL                                                                               UN VESTUARIO ACORDE AL MÁS GRANDE
+
+
+     CADA VEZ MÁS GRANDE
+                                                                                                 En febrero de 2019, River inauguró su vestuario local luego de una gran
+                                                                                                 remodelación: el sector se amplió en un 20% e incorporó área de masajes,
+                                                                                                 lockers individuales, zona de gimnasio y tecnología de punta.
+
+
+                                                                                                 El mítico vestuario “Ángel Labruna” luce mejor que nunca, luego de que el
+     Luego de una serie de obras y remodelaciones a través del Departamento de Infraestructura   Club realizara una importante serie de obras y mejoras en el lugar destinado a
+     del Club, la casa del campeón de América aumentó su capacidad a 70.074 espectadores.        los jugadores del plantel profesional. A su vez, también se remodeló el espacio
+     Anteriormente, la misma era de 66.266 personas.                                             de Marcelo Gallardo, al igual que el sector destinado al cuerpo técnico.
+
+
+     Cabe destacar que la capacidad del Monumental sumó 10.000 nuevas ubicación respecto         Uno de los grandes cambios es la ampliación del vestuario, ganando terreno
+     de 2014, por lo que muchos más riverplatenses prestan su pasión y aliento en cada partido   hacia la pista de atletismo. El sector se amplió un 20% y se realizaron obras
+     que el Millonario juega en casa.                                                            como: cambios de suelos antideslizantes, nuevos pisos en las zonas de
+                                                                                                 gimnasio y entrada en calor, nuevos techos e iluminación LED y también una
+                                                                                                 remodelación completa de duchas, baños, área de masajes y doble jacuzzi
+                                                                                                 frío/calor.
+
+
+                                                                                                 Además, se amplió un 30% el sector de cambiado con la incorporación
+                                                                                                 de nuevos lockers, los cuales cuentan con tecnología, seguridad individual
+                                                                                                 y personalización de los espacios asignados a cada jugador. También se
+                                                                                                 llevaron a cabo trabajos en el sistema de ventilación y aire acondicionado
+                                                                                                 central. En tanto, el vestuario cuenta con sistema de audio y video de última
+                                                                                                 generación, así como pantallas LED de última tecnología.
+
+
+
+
+52    RIVER PLATE • 2018 / 2019                                                                                                                                                    RIVER PLATE • 2018 / 2019   53
+
+
+
+--- pág. 29 ---
+
+
+                                                                                           UN CLUB DE PRIMER NIVEL
+     CONCENTRACIÓN DE FÚTBOL PROFESIONAL
+                                                                                       • Se amplió la capacidad de tribuna Centenario alta, contemplando nuevos baños, posta médica y división
+     Entre las principales novedades se destacan la renovación total de mobiliaria,        para público local/visitante en gradas y escaleras.
+     tanto en el comedor como en el living, el cual ahora cuenta con un proyector
+                                                                                       •   Se demolieron quinchos comedores internos y se ejecutaron nuevos, mejorando las prestaciones.
+     de última generación. En cuanto al espacio destinado para la comida del
+                                                                                       •   Nuevas aulas, oficinas y baños en Instituto Universitario River Plate.
+     plantel, se sumó un sector exclusivo, con una isla para autoservicio. Por otro
+                                                                                       •   Impermeabilización de superficie y juntas en circulación de tribuna Sívori media, protegiendo el IURP, oficinas
+     lado, se llevaron a cabo algunas remodelaciones en las habitaciones.                  de Fútbol Amateur, talleres de cultura y oficinas de administración.
+                                                                                       •   Impermeabilización de sectores de la tribuna Centenario y Belgrano baja, protegiendo las aulas y oficinas del
+     River también finalizó obras en el vestuario local: se agrandó la utilería y se       Instituto River Plate.
+     amplió la sala de kinesiología, con camillas nuevas automáticas. También se
+                                                                                       •   Impermeabilización y pintura de pileta de niños y pileta T.
+     incorporó la oficina de videoanálisis y se remodeló el consultorio médico para
+                                                                                       •   Automatización de tratamiento de agua de pileta olímpica.
+     atender a cuatro jugadores a la vez.
+                                                                                       •   Tendido de cañería para recupero del agua extraída por barrefondo hacia los filtros.
+                                                                                       •   Instalación de luces de emergencia LED en circulaciones, escaleras, baños, postas médicas y
+                                                                                           estacionamiento del Estadio.
+                                                                                       •   Instalación de medidores de energía eléctrica con visualización en tiempo real por PC.
+                                                                                       •   Reemplazo de interruptor correspondiente a la iluminación del Estadio por uno de última tecnología.
+                                                                                       •   Cambio de cerramiento en pista de hockey sobre patines, reemplazando el alambrado con puntas filosas por redes.
+                                                                                       •   Cambio de los vidrios del Instituto River Plate por otros laminados, garantizando la seguridad ante eventuales roturas.
+                                                                                       •   Cambio de la totalidad de las butacas correspondientes al sector Paddock.
+                                                                                       •   Remodelación de salón de estar en sector de Infantiles en Casa River.
+                                                                                       •   Colocación de fondos en bandejas eléctricas en anillo de circulación.
+                                                                                       •   Cambio de artefactos de iluminación hacia tecnología LED, incluyendo indirectas, circulaciones de tribunas,
+                                                                                           escaleras, torres de iluminación en calle interna y en oficinas.
+                                                                                       •   Automatización de la climatización del ambiente de la pileta olímpica mediante la colocación de nuevos termostatos.
+                                                                                       •   Remodelación y ampliación de capacidad del palco visitante.
+                                                                                       •   Demolición, reconstrucción y pintura de pared con peligro de caída en fachada de medicina.
+                                                                                       •   Cambio de luminarias y funcionamiento completo de la cinta de iluminación del campo de juego.
+                                                                                       •   Cambio de cañerías de desagüe cloacal correspondientes al baño superior, ejecución de nuevo cielorraso
+                                                                                           desmontable y colocación de artefactos led en palco de Adidas ubicado en tribuna San Martín.
+                                                                                       •   Reforma y ejecución de nuevo office en palcos, correspondientes a la tribuna Belgrano.
+                                                                                       •   Cambio de cielorraso, colocación de iluminación led y pintura de la oficina de informes.
+                                                                                       •   Ejecución de desagüe pluvial desde rejilla correspondiente a circulación de tribuna alta hasta cámara de calle interna.
+                                                                                       •   Colocación de sensores de movimiento para encendido y apagado de iluminación en acceso, biblioteca y
+                                                                                           sala de informática de Instituto River Plate.
+
+
+
+54     RIVER PLATE • 2018 / 2019                                                                                                                                                                                     RIVER PLATE • 2018 / 2019   55
+
+
+
+--- pág. 30 ---
+
+
+                                                                                                                           AVANCE TECNOLÓGICO EN EL CAMPO DE JUEGO
+         EN RIVER CAMP
+                                                                                                                           Se implementó una solución para que el personal abocado a las tareas en campo de
+                                                                                                                           juego, ya sea de prensa o reporteros gráficos, cuente con conectividad por medio de
+     •   Nuevas tribunas en sector amateur.
+                                                                                                                           una red cableada y una red WiFi exclusiva. La obra consta de dos mini racks móviles,
+     •   Nueva cancha con medidas profesionales (en total, ya son siete las canchas del predio).
+                                                                                                                           conteniendo un switch y un dispositivo WiFi de última generación, exclusivo para los
+     •   Colocación de pararrayos nuevos.
+                                                                                                                           reporteros gráficos. Esta implementación permitirá trabajar de manera más ágil, con una
+     •   Nuevo edificio técnico, compuesto por oficina técnica, oficina de videoanálisis, secretaría técnica, microcine.
+                                                                                                                           mayor velocidad, y subir la información de manera inmediata.
+     •   Nuevo equipamiento de última tecnología en la cocina del plantel profesional.
+     •   Iluminación de la cancha número uno: la misma tendrá 850 lux con equipos LED de última generación.
+
+                                                                                                                           MURAL PARA TODA LA VIDA
+
+                                                                                                                           El sábado 25 de mayo, con motivo del aniversario número 118 de River, se llevó a cabo la
+                                                                                                                           inauguración del mural ubicado sobre Figueroa Alcorta, enfrente de la entrada principal.
+                                                                                                                           La realización fue organizada por el Club junto con Proyecto Persiana. Estuvieron
+                                                                                                                           presentes Rodolfo D’Onofrio (Presidente) y Stefano Di Carlo (Vicepresidente 2º).
+
+
+                                                                                                                           La obra tiene como protagonistas a Marcelo Gallardo, Leonardo Ponzio, Franco Armani,
+                                                                                                                           Juan Quintero, Lucas Pratto, Jonatan Maidana y Gonzalo Matínez. En el centro de ellos
+                                                                                                                           se ubica la histórica Copa Libertadores que River le ganó a Boca Juniors en diciembre
+                                                                                                                           del año pasado en Madrid.
+
+
+
+
+                                                                                                                           “EL ABRAZO”, EN EL MONUMENTAL
+
+                                                                                                                           La obra del prestigioso artista Alejandro Marmo se luce en el mural de la entrada principal
+                                                                                                                           del Club, ubicado sobre Figueroa Alcorta. El acto inaugural contó con la presencia de
+                                                                                                                           Rodolfo D’Onofrio, autoridades del Gobierno de la Ciudad. Además, hubo una gala de
+                                                                                                                           tango a cargo de Paula Robles y Luis Solanas, quienes bailaron “El Abrazo”.
+         EN HURLINGHAM
+                                                                                                                           Esta obra fue donada al Club por el escultor y representa el encuentro en la diversidad,
+                                                                                                                           el respeto y la unión entre distintas culturas. Marmo es reconocido por trabajar con
+     • Nuevos módulos de oficinas: enfermería, utilería, depósito de alimentos, intendencia.
+                                                                                                                           materiales de descarte e integrar en su taller personas en situación de calle, quienes
+     • Nuevos riegos por para los campos de entrenamiento.
+                                                                                                                           se transforman en artesanos a través de la enseñanza de oficios. Cabe mencionar que
+                                                                                                                           el artista, que trabaja sobre tres líneas de obras (política, religiosa y artistas populares),
+                                                                                                                           hoy cuenta con una muestra permanente en los Museos Vaticanos.
+
+
+56           RIVER PLATE • 2018 / 2019                                                                                                                                                                                      RIVER PLATE • 2018 / 2019   57
+
+
+
+--- pág. 31 ---
+
+
+     DISTINCIÓN PARA RIVER CAMP
+                                                                               UN TRABAJO IMPORTANTE                                                                              CAPACITACIONES
+
+
+                                                                               EN SEGURIDAD
+     En diciembre de 2018, en las oficinas de la Superliga en Puerto Madero,                                                                                                      Se capacitó al personal de seguridad interna y a personal de seguridad privada sobre
+     se realizó una entrega de premios que incluyó varias categorías, como                                                                                                        el plan de evacuación para los días de partido. Con estas prácticas, se garantiza que
+     goleador, valla menos vencida, etc. El Club tuvo el orgullo de ganar el                                                                                                      minimicen los riesgos en eventuales situaciones de emergencia durante los eventos
+     premio al mejor campo deportivo de Juveniles por River Camp.                                                                                                                 masivos del Club. Asimismo, se reforzó el conocimiento de las funciones del cuerpo
+                                                                                                                                                                                  de seguridad para las fechas de partidos locales y el servicio diario.
+                                                                               Durante el último período se implementó y se actualizó el Plan Operativo de Seguridad para
+                                                                               los días de partido: este documento contiene los parámetros operativos para garantizar
+                                                                               la seguridad en los eventos futbolísticos, basándose en la normativa vigente del Comité
+                                                                               de Seguridad en el Fútbol del Gobierno de la Ciudad de Buenos Aires, reglamentos de la
+                                                                               CONMEBOL, reglamentos de la AFA y reglamentos de la Superliga Argentina de Fútbol.
+
+
+                                                                               Además, se estandarizó el esquema operativo y de seguridad para el ingreso al Instituto
+                                                                               River, a fin de salvaguardar el normal desarrollo de las actividades de los alumnos, docentes,
+                                                                               autoridades y empleados del Instituto; restringir el acceso de personas y elementos ajenos al
+                                                                               Área Educativa, prevenir e informar anomalías o situaciones atípicas, proteger el patrimonio
+                                                                               educativo y mejorar el proceso de comunicación interna.
+
+
+                                                                               Por otro lado, se implementó un sistema de control para las rondas que realiza el personal         MIRANDO A FUTURO
+                                                                               de Seguridad Interna en el Club mediante una aplicación. La misma facilita el control de
+                                                                               los barridos de seguridad en las tribunas al finalizar los partidos en condición de local y es
+                                                                               extensible a los predios de Ezeiza y Hurlingham.                                                   Se está diseñando un plan de mejora integral en los procedimientos generales de
+                                                                                                                                                                                  seguridad: se va actualizando mediante los procedimientos base de la Gerencia de
+                                                                               Por último, se optimizó el proceso de acreditación durante los días de partido, así como para el   Seguridad y los nuevos desafíos de seguridad a los cuales el Club se ve expuesto.
+                                                                               servicio diario del Club, mediante la creación de nuevos procedimientos y la implementación        Para el diseño de este plan, se cuenta con un diagnostico detallado de cada proceso.
+                                                                               de dos puestos específicos para el personal, proveedores y entidades de Gobierno que
+                                                                               desempeñen funciones los días de partido.
+
+
+
+
+58      RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                         RIVER PLATE • 2018 / 2019   59
+
+
+
+--- pág. 32 ---
+
+[Divisor de sección — foto de bandera de hinchada ("...RACIA SR MZ") a página completa con el título "04 Nuestro ADN" superpuesto, sin texto adicional.]
+
+
+                                 04 Nuestro ADN
+
+60   RIVER PLATE • 2018 / 2019          RIVER PLATE • 2018 / 2019   61
+
+
+
+--- pág. 33 ---
+
+
+     AMOR DE MILLONARIAS                                                                               GRAN TARDE DE SOLIDARIDAD
+                                                                                                                                                                                     ESA PASIÓN
+                                                                                                                                                                                     INIGUALABLE
+                                                                                                       El sábado 18 de mayo se llevó a cabo una nueva edición del Tejetón
+                                                                                                       Solidario, con la colaboración de la organización “Minuto por Vos”.
+     Como es habitual en cada año, River celebró el Día Internacional de la Mujer con un evento        Participaron socios, invitados e integrantes de la organización “Tu
+     en el paddock del Club: más de 100 socias disfrutaron de una noche inolvidable, en la cual        cuadradito abriga”, a fin de tejer solidaridad. En esta oportunidad,
+     se las agasajó con pizza party y el show que brindó Mariano Martínez. Además, hubo bailes,        Juan Carr (Red Solidaria) se sumó a la iniciativa, en la cual se realizaron
+     canciones, sorpresas y sorteos. Cabe destacar la entrada había que canjearla por útiles           cuadrados de 20x20, los cuales se unieron, confeccionándose                   En los momentos más difíciles y más decisivos, en esos en donde hay mucho en
+     escolares, los cuales fueron donados a Fundamind y Manos en Acción.                               frazadas para la gente que se encuentra en situación de calle.                juego, el hincha de River siempre estuvo presente. Así, el Estadio Monumental lució
+                                                                                                                                                                                     sus emblemáticos mosaicos con frases o iniciales en las tribunas durante los partidos
+     Asimismo, River se adhirió una vez más a la iniciativa de que las mujeres alcen su palabra en                                                                                   trascendentales por la Copa Libertadores y, también, para acompañar a los jugadores
+     los estadios de fútbol. En ese sentido, la periodista Soledad Larghi le puso voz al Monumental                                                                                  fuera de casa, como en los Superclásicos frente a Boca Juniors por la Superliga y en la
+     en el partido disputado contra Independiente por la Superliga. En años anteriores, habían
+                                                                                                       ACCIÓN EN EL MES DE LUCHA                                                     final de la Libertadores de 2018. El templo se vistió de fiesta en los cruces ante Racing,
+     participado Camila Iannini (2015), Marcela Baños (2016) y Alejandra Maglietti (2017).
+                                                                                                       CONTRA EL CÁNCER DE MAMA                                                      Independiente y Gremio (Libertadores), Athletico Paranaense (Recopa) y en el homenaje
+                                                                                                                                                                                     a Rodrigo Mora.
+                                                                                                       Por iniciativa de la Organización Mundial de la Salud, el 19 de octubre
+     Por otro lado, el Club participó del debate “Mujeres, Fútbol y Política” realizado en Salta. De
+                                                                                                       fue designado como el Día Internacional de la Lucha contra el Cáncer
+     este intercambio enriquecedor también participaron mujeres árbitras, jugadoras de fútbol y
+     dirigentes de los clubes locales, como Juventud Antoniana, Central Norte y Gimnasia y Tiro.
+                                                                                                       de Mama, con el objetivo de crear conciencia y promover la lucha
+                                                                                                                                                                                     EL COMPROMISO SOCIAL                                                EL DÍA INTERNACIONAL                                          CHARLA SOBRE MACHISMO,
+                                                                                                       contra una de las principales enfermedades que afecta a las mujeres
+                                                                                                                                                                                     COMO BANDERA                                                        DEL HINCHA DE RIVER                                           XENOFOBIA Y RACISMO EN
+                                                                                                       en todo el mundo. En la previa del partido ante Aldosivi, se realizó
+                                                                                                       esta acción en el campo de juego del Monumental para apoyar a la
+                                                                                                                                                                                                                                                                                                                       EL FÚTBOL
+                                                                                                                                                                                     Gracias a las donaciones recibidas en las jornadas                  El sábado 6 de octubre se realizó un importante evento:
+                                                                                                       campaña.                                                                      solidarias y en los festejos, River pudo entregar                   participaron más de 600 socios disfrutaron del encuentro      Hinchas y futbolistas juveniles del Club participaron
+                                                                                                                                                                                     alimentos a merenderos en el partido de Caseros y en                realizado en el sector de quinchos externos del Club          de un encuentro de reflexión acerca del contenido
+                                                                                                                                                                                     José León Suárez (en donde se apadrinó al merendero                 con un almuerzo. Además, hubo regalos para todos los          de las canciones de cancha. El Salón Auditorio fue
+                                                                                                                                                                                     “Los Amigos de Barrio Sarmiento”), así también como                 presentes y sorteos. Los más chicos se divirtieron con        el escenario para la charla “¿Qué cantamos cuando
+                                                                                                                                                                                     la entrega de bancos al merendero de Patria Grande                  juegos inflables. El cierre estuvo a cargo del Centro Murga   cantamos?”, un espacio pensado para cuestionar el
+                                                                                                                                                                                     en Gregorio de Laferrere.                                           al Ritmo de la Banda, un taller realizado por el Club.        machismo, la xenofobia y el racismo presentes en los
+                                                                                                                                                                                                                                                                                                                       cantos de las hinchadas del fútbol argentino.
+                                                                                                                                                                                                                                                                                                                       Los invitados a disertar fueron Ariel Dorfman (Director
+                                                                                                                                                                                                                                                                                                                       de la Fundación Encontrarse en la Diversidad), Javier
+                                                                                                                                                                                                                                                                                                                       Bundio (Doctor en Ciencias Sociales de la UBA, el
+                                                                                                                                                                                                                                                                                                                       IGG y el Conicet) y Gabriela Cenóz (Secretaria de la
+                                                                                                                                                                                                                                                                                                                       Comisión de Fútbol Femenino de River y delegada
+                                                                                                                                                                                                                                                                                                                       del Club en AFA), quienes expusieron sus ideas
+                                                                                                                                                                                                                                                                                                                       ante más de cien personas, entre socios, hinchas y
+                                                                                                                                                                                                                                                                                                                       futbolistas de las categorías juveniles.
+
+
+
+62      RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                           RIVER PLATE • 2018 / 2019            63
+
+
+
+--- pág. 34 ---
+
+
+                                                                                                                                                                                     SEMINARIOS DE
+     RIVER, JUNTO A LOS CLUBES DE BARRIO                                                                                                                                             FORMACIÓN DIRIGENCIAL
+
+     En marzo de 2019, Rodolfo D’Onofrio (Presidente de River), Manuel Sbdar (MATERIABIZ, coautor de “River, La Máquina”) y Federico Saravia (docente de Económicas                  Esta iniciativa tuvo su primera edición en agosto de 2018 y durante el actual período
+     UBA) encabezaron la última clase del Programa de Asistencia y Fortalecimiento de los Clubes de Barrio, un ciclo orientado tanto a brindar herramientas de gestión a las         se continuó detallando con importantes invitados. Allí se trataron las siguientes
+     entidades, como a reposicionar su rol comunitario mediante la inclusión social y la integración colectiva. Asimismo, estuvo presente Juan Carr (Fundador de Red Solidaria)      temáticas: Comisión Directiva, liderazgo, economía en entidades civiles sin fines
+     como invitado especial. Representantes de más de 30 clubes tuvieron la oportunidad de asistir a seis módulos de clases en las cuales distintos especialistas se refirieron      de lucro, fútbol amateur y marketing deportivo. Durante la última jornada, estuvo
+     a las problemáticas que estas entidades sociales y deportivas afrontan en el día a día: “Clubes perdurables”, “Palanca de Procesos”, “Palanca de Activos”, “Habilidades         presente Rodolfo D’Onofrio, quien dio apertura a la charla llamada “Comprometidos
+     Blandas”, “Lo que no se mide no se gestiona” y, en el cierre, una “Jornada de implementación”. A lo largo de todo el ciclo, los representantes de los clubes participantes      con nuestro fútbol: SAF”, donde se abordaron tópicos de carácter institucional, legal,
+     fueron elaborando una serie de proyectos orientados a reducir costos (organización de eventos sociales y culturales en conjunto, asesoramiento legal y contable compartido      económico y comercial que conciernen al fútbol argentino.
+     y organización de pooles de compra, por ejemplo) y generar ingresos (ferias itinerantes y una “Maratón de los Clubes de Barrio”).
+
+
+
+
+     UN NUEVO ENCUENTRO DE LAS AGRUPACIONES DE RIVER
+
+     La cena tuvo lugar en el marco del Día de las Agrupaciones Políticas de River, el cual se conmemora cada 6 de mayo en honor a la fundación del NAR (Núcleo Acción
+     Riverplatense), primera agrupación del Club y del fútbol argentino. Allí se destacó la importancia de la actividad política como herramienta transformadora de la sociedad y
+     del Club. El evento contó con la participación de más de 350 integrantes de las 36 agrupaciones de River Plate, así como también autoridades de la Institución y la destacada   RIVER Y MATERIABIZ ORGANIZARON UN                                                          RIVER PARTICIPÓ EN LA JORNADA
+     presencia del Beto Alonso. La reunión sirvió también para homenajear a la Agrupación Riverplatense Banda Roja, en su 60° aniversario. Stefano Di Carlo, Vicepresidente 2°,      EVENTO SOBRE PYMES PERDURABLES                                                             “HACIA UNA CULTURA PREVENTIVA”
+     hizo entrega de una placa a sus autoridades. El cierre estuvo a cargo de Rodolfo D’Onofrio, quien se dirigió a los presentes reafirmando la importancia de la participación
+     de los socios en el día a día de la gestión. En su discurso, destacó los Seminarios de Formación Dirigencial y arengó por seguir formando a los líderes de manera que se        El evento se llevó a cabo en marzo en La Tour, de Bella Vista, y el mismo fue organizado   Rodolfo D’Onofrio participó del evento que tuvo lugar en octubre en la sede de la
+     garantice seguir escribiendo el buen nombre de River.                                                                                                                           por River Plate, MATERIABIZ y la Municipalidad de San Miguel. Estuvieron presentes         Facultad de Medicina de la Universidad de Buenos Aires. El objetivo de esta jornada
+                                                                                                                                                                                     más de 200 empresarios de pequeñas y medianas empresas, quienes participaron               académica fue promover y asumir la cultura preventiva en los distintos ámbitos de
+                                                                                                                                                                                     de la conferencia “Cómo perdurar con tu pyme”, orientada a brindar herramientas            nuestra realidad, animando a todos los actores a comprometerse con acciones
+                                                                                                                                                                                     para lograr un modelo de negocio y una pyme perdurable.                                    concretas.
+
+
+                                                                                                                                                                                     El encuentro comenzó con las palabras de bienvenida del Intendente de San Miguel,          La máxima autoridad del Club resaltó la importancia de la educación y la “Cultura
+                                                                                                                                                                                     Jaime Méndez, quien agradeció a River y MATERIABIZ por la oportunidad de poder             Preventiva”, ya que las mismas funcionan como motor para el desarrollo de una vida
+                                                                                                                                                                                     trabajar en conjunto con el objetivo de potenciar a todas las pequeñas y medianas          sana. Sobre ello, comentó el gran valor que tienen las más de 50 disciplinas deportivas
+                                                                                                                                                                                     empresas del distrito.                                                                     y culturales que se realizan en el Club a la hora de promover estilos de vida saludables,
+                                                                                                                                                                                                                                                                                ayudando en la prevención y tratamiento de consumos problemáticos.
+                                                                                                                                                                                     Rodolfo D’Onofrio expuso su experiencia en el mundo empresarial, como así
+                                                                                                                                                                                     también en su gestión al frente de River Plate. En compañía de Stefano Di Carlo            Hubo expositores invitados y mesas de presentación sobre prevención de adicciones en
+                                                                                                                                                                                     (Vicepresidente 2° de River) y autoridades municipales, el Presidente contó cómo           la comunidad, en el trabajo, en la educación, en el deporte y sobre justicia terapéutica.
+                                                                                                                                                                                     fueron sus primeros días en la Institución, cuando asumió en 2014.
+
+
+64   RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                           RIVER PLATE • 2018 / 2019          65
+
+
+
+--- pág. 35 ---
+
+
+     COLONIA DE VACACIONES:                                                     LOS MÁS GRANDES DEL MÁS GRANDE                                                                                      OTRO PASO ADELANTE EN TECNOLOGÍA                                                     UN RIVER EN TODOS LADOS
+     UN CIERRE DE LUJO
+     Como cada año, la colonia de vacaciones de River Plate tuvo su fiesta de   En relación a los Socios Vitalicios, se realizaron actividades para grupos de distintas edades. Así, se             Durante este período, River continuó con la tendencia de la virtualización           Las filiales continuaron demostrando su pasión por los colores, sin importar distancias. River también los
+     cierre de enero, un evento que tuvo como marco el Estadio Monumental       continuó con el desarrollo del espacio “Vitalicios Recreativo”, la entrega institucional de diplomas a              del Centro de Atención al Socio, promoviendo el pago de la cuota                     acompañó en diversas actividades, manteniendo un trabajo diario para acercar al Club a todos aquellos
+     y en donde los padres pudieron ver desde la platea Belgrano la             los nuevos socios consagrados en esta categoría; excursiones turísticas a distintos lugares del país                de manera online. Este aspecto creció más del 25% respecto al año                    socios que residen lejos del Monumental.
+     presentación de los diferentes grupos de más de 800 chicos.                y el extranjero, salidas culturales a obras de teatro, ferias, museos y conciertos.                                 pasado, como así también la asociación en línea. De esta manera, los
+                                                                                                                                                                                                    nuevos socios no tienen que acercarse al Monumental para realizar los                Para destacar, se encuentra la acción que se llevó a cabo entre la filial de River en Avellaneda y River
+     Hubo actividades musicales, demostraciones deportivas y un show            Algunos de ellos fueron: Centro Cultural de la Cooperación, Teatro La Casona, Teatro Broadway,                      trámites correspondientes y reciben su credencial en su domicilio.                   Solidario: el merendero “Carita de Ángel” fue el escenario para celebrar el Día del Niño de 2018 con más
+     musical. Jorge Brito (Vicepresidente 1°) dedicó unas palabras al inicio    Show de Tango, Orquesta de Conciertos de San Isidro, excursiones a Termas de Río Hondo, Termas                                                                                                           de 150 chicos que asisten al mismo. En la merienda, recibieron regalos y hubo pelotero y suvenires para
+     del acto y Rodolfo D’Onofrio (Presidente del Club) fue el encargado        de Federación, Piriápolis, Punta del Este, Montevideo, cruceros por las playas de Brasil y Uruguay,                 Además, se realizaron campañas para incrementar la bancarización de los              recordar la magia de este evento.
+     de cerrar el evento. Además, la Copa Libertadores fue una de las           Merlo (San Luis), San Pedro y Vuelta de Obligado.                                                                   socios para mejorar los ratios de cobranzas: en la actualidad, más del 75%
+     principales protagonistas de la jornada.                                                                                                                                                       de las cuotas se cobran a través de algún medio de pago bancarizado.
+                                                                                Además, se realizó una entrega de donaciones en la Basílica de Luján, participación en la Comisión de
+                                                                                Interclubes de Socios Vitalicios (CIVIT), suministro de entradas para la Feria del Libro en La Rural y un acuerdo
+                                                                                con el Museo River para el libre ingreso del socio vitalicio con un acompañante durante los días lunes.             EN DEFENSA DEL SOCIO
+
+                                                                                Además, se llevó a cabo la campaña de vacunación antigripal en 2019. Y, como siempre, en los                        Siempre con el objetivo de defender los derechos estatutarios de los socios,
+                                                                                partidos como local de la Superliga, Copa de la Superliga, Copa Libertadores y Recopa los socios                    brindando asesoría y contención a los afectados, en el último período se
+                                                                                contaron con atención y asesoramiento en su ubicación dentro de los sectores exclusivos.                            recibieron reclamos presenciales de forma escrita, más de 1790 consultas
+                                                                                                                                                                                                    por correo electrónico y aproximadamente 1700 llamados telefónicos.
+
+
+                                                                                                                                                                                                    Entre los principales motivos, se destacan los relacionados al retiro de entradas,
+                                                                                                                                                                                                    cambios de ubicación en las tribunas, cambios de categoría, reimpresión de
+                                                                                                                                                                                                    abonos y carnets y cambios y atlas de débitos para la cuota social.
+
+
+
+                                                                                                                                                                                                    EL FÚTBOL INTERNO DEL MILLONARIO
+                                                                                                                                                                                                    Durante el período 2018/19 se diputaron en las canchas auxiliares con
+                                                                                                                                                                                                    rotundo éxito los torneos de todas las divisiones, convocando a más de
+                                                                                                                                                                                                    1500 socios activos plenos: se dividieron en dos categorías: Libres (16
+                                                                                                                                                                                                    años en adelante) y Senior (mayores de 35 años). En el segundo semestre
+                                                                                                                                                                                                    de 2018 se realizó el Torneo Guillermo Cascio, en memoria a quien fue
+                                                                                                                                                                                                    jugador de la actividad, Secretario y Vicepresidente del Club. En diciembre,
+                                                                                                                                                                                                    los campeones de cada torneo tuvieron su gran premio y se dieron el gusto
+                                                                                                                                                                                                    de jugar en el Estadio Monumental.
+
+
+
+
+66       RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                                                 RIVER PLATE • 2018 / 2019          67
+
+
+
+--- pág. 36 ---
+
+[Divisor de sección — foto a página completa con el título "05 Marca" superpuesto, sin texto adicional.]
+
+
+                                 05 Marca
+
+68   RIVER PLATE • 2018 / 2019     RIVER PLATE • 2018 / 2019   69
+
+
+
+--- pág. 37 ---
+
+
+     EL FLAMANTE                                                                                  HOMENAJE HISTÓRICO
+                                                                                                                                                                             LA MARCA DEL MÁS GRANDE
+     MODELO TITULAR
+                                                                                                  Esta nueva edición de la camiseta alternativa de River está inspirada
+                                                                                                  en la histórica relación que el Millonario mantiene con el Torino de       Siguiendo una estrategia de creación de contenido propio para lograr una mayor visibilidad —manteniendo el cuidado de la Marca del Club— se trató de hacer foco en la
+                                                                                                  Italia. En conmemoración a los 70 años de la #EternaAmicizia, el Más       parte digital y en la búsqueda de nuevos activos. De esta forma se pretende crecer en el área comercial buscando maximizar el patrimonio con el que cuenta la Institución,
+                                                                                                  Grande y Adidas lanzaron este conjunto de juego en el que predomina        sin perjudicar a los actuales patrocinadores. En los últimos cinco años, River pasó de tener seis patrocinadores a 16, incrementando todos los contratos de los previamente
+                                                                                                  el bordó y cuyos detalles se destacan en gris y plata. El estreno fue en   existentes. de esta forma, el área representa el 35% de los ingresos del Club.
+     Inspirada en el primer diseño de Adidas para River realizado en 1982, la nueva camiseta      la pretemporada que el plantel profesional realizó en Estados Unidos.
+     tiene un predominio de blanco y rojo, con tres tiras sobre los hombros y un pixelado en la
+     tradicional banda. El estreno fue en el partido del martes 16 de julio frente a Gimnasia y
+     Esgrima de Mendoza, en San Luis, por la Copa Argentina.
+
+
+     Con este lanzamiento, a su vez, se celebraron los 37 años de unión entre River y Adidas,
+     siendo una de las relaciones más longevas entre una marca y un club a nivel mundial.
+     Además, de la campaña de comunicación de la nueva camiseta participaron también las
+     jugadoras de Primera División de River.
+
+
+
+
+70      RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                          RIVER PLATE • 2018 / 2019       71
+
+
+
+--- pág. 38 ---
+
+
+      Comenzando en agosto de 2019, y por tres años, se firmó       River Plate alcanzó una importante alianza comercial       Por medio de la alianza ya comenzada a través
+      un acuerdo de main sponsor con la línea aérea Turkish         con Assist Card, la compañía líder mundial en asistencia   de la Tarjeta River se extendió el contrato con el
+      Airlines. La aerolínea de bandera turca transporta más        integral al viajero. La misma fue fundada en Suiza, en     banco español. Aunque ya no es más patrocinador
+      de 90 millones de pasajeros y tiene una geolocalización       1972, y es miembro del grupo STARR COMPANIES               del pecho de la camiseta, su confianza al Club se
+      que la hace muy atractiva para seguir por el camino de        desde 2011. El convenio será hasta diciembre de este       prolonga por medio de su ya conocida tarjeta de
+      la internacionalización de la Marca River. La casa matriz,    año y lucirá su nombre como main sponsor en la espalda     afinidad. El acuerdo actual integra un patrocinio
+      ubicada en Estambul, tiene vinculación directa tanto con      de la camiseta de los jugadores (debajo del número).       tradicional para tener presencia de marca, con un
+      Europa como con Asia, siendo un punto estratégico para        A su vez, en otro acontecimiento trascendental, estará     producto comercial que genera ingresos por la
+      la participación en congresos y eventos deportivos. Esta      presente en el pecho de las camisetas del equipo de        venta de tarjetas, al tiempo que otorga beneficios
+      alianza estratégica, que se extenderá hasta julio de 2022,    Primera División de fútbol femenino.                       financieros y descuentos a los tarjetahabientes
+      contempla la publicidad en el pecho de la camiseta, ropa                                                                 (todos hinchas de River). Por medio de campañas
+      de entrenamiento, y experiencias como meet & greet                                                                       de marketing digital se consiguió superar el objetivo
+      con jugadores, visitas al Museo River y tickets para los                                                                 de 2500 ventas puesto por el BBVA, logrando
+      partidos de River en el Estadio Monumental. Turkish                                                                      sobrepasar las 3.200 y generando un bonus
+      Airlines firmó acuerdos globales con los deportistas Lionel                                                              económico para el Club.
+      Messi y Kobe Bryant, con los equipos FC Barcelona y           La empresa japonesa, de la mano de su tan
+      Manchester United, y la EURO 2016, pero éste es su            popular juego PES, se sumó como silver sponsor             En el período actual también se cerraron convenios
+      primer patrocinio como main sponsor de un equipo fuera        con participación digital y con presencia en los           con empresas de diversos rubros, como Hublot,
+      de Turquía, lo que lo convierte en una gran oportunidad       números de la camiseta. Líder en el mercado de los         para la creación de un reloj exclusivo de edición
+      para ambas partes del acuerdo.                                videojuegos desde hace varios años, Konami brinda          limitada. Con Sancor Seguros, empresa que va
+                                                                    innovación y jovialidad al listado de sponsors. Este       a poner su nombre a uno de los tres hospitalities
+                                                                    patrocinio se relaciona con el objetivo de crecer          con los que cuenta el Estadio Monumental.
+                                                                    en el mundo digital y, por eso, se acompaña con            Además, se renovaron acuerdos preexistentes con
+                                                                    acciones del e-player de River, que además de              patrocinadores ya conocidos.
+                                                                    participar en torneos de PES —donde se actualizan
+      La nueva marca en el mercado de combustibles,                 los cambios en el mundo del fútbol, haciéndolo lo
+      propiedad de PAN AMERICAN ENERGY, hace una                    más real posible— recrea grandes goles realizados.
+      apuesta fuerte para lograr visibilidad en el mercado,         El acuerdo también otorga exclusividad de River
+      convirtiéndose en main sponsor del Club Atlético River        Plate en el mundo de los videojuegos, permitiendo
+      Plate. Comenzando en enero de 2019, y por el plazo de         a Konami replicar la indumentaria, los jugadores
+      18 meses, se verá la marca estampada en las mangas            y el Estadio Monumental de la manera más real,
+      de las camisetas del primer equipo. La firma con esta         utilizando la más alta tecnología, para el uso
+      empresa contribuye al crecimiento de la participación         exclusivo de sus jugadores.
+      comercial en los ingresos generados por el área.
+
+
+72   RIVER PLATE • 2018 / 2019                                                                                                                                                         RIVER PLATE • 2018 / 2019   73
+
+
+
+--- pág. 39 ---
+
+
+     UN EQUIPO DE ELITE
+
+     River estuvo a la altura de sus resultados deportivos en redes
+     sociales: con una estrategia de contenidos planificada, se posicionó
+     como el segundo club de fútbol de América con más interacciones
+                                                                                                                                                    El posteo de
+     —luego de Flamengo— en Twitter, Instagram y Facebook.
+                                                                                                                                                    Facebook se
+                                                                                                                                                    ubicó en la quinta
+     También integró el top 15 mundial en la suma de interacciones y fue
+                                                                                                                                                    posición en cantidad
+     uno de los primeros a nivel global en el ratio por seguidores, con
+                                                                                                                                                    de interacciones
+     algunos posteos liderando la tabla.
+                                                                                                                                                    a nivel mundial.
+
+
+
+
+     Pero el Club no sólo se destacó en estadísticas cuantitativas, ya que a través de una comunicación creativa y estratégica, se continuó posicionando como uno de los
+     grandes generadores de contenido de la región.
+
+
+
+
+     CAMPAÑAS                                                                                                                                                              ETERNA AMICIZIA
+
+                                                                                                                                                                           A raíz del 70° aniversario de la tragedia
+     LOS HIJOS DE TUS HIJOS                                                                                                                                                de Superga y de la reconocida relación
+                                                                                                                                                                           que surgió entre River y Torino desde
+     Luego del histórico triunfo en Madrid, el                                                                                                                             aquel entonces, el Club lanzó una
+     Club lanzó su campaña de campeón, que                                                                                                                                 camiseta alternativa en homenaje a
+     consiguió records de interacción con un                                                                                                                               dicha amistad. En conjunto con el
+     mensaje que aún retumba: “Los hijos de                                                                                                                                equipo de Turín y con una campaña
+     tus hijos van a hablar de esta historia”.                                                                                                                             de comunicación elaborada, River
+                                                                                                                                                                           reflotó esta particular historia de
+                                                                                                                                                                           solidaridad que continúa impactando
+                                                                                                                                                                           en una positiva venta de este modelo
+                                                                                                                                                                           de camiseta.
+
+
+
+
+74        RIVER PLATE • 2018 / 2019                                                                                                                                                                                    RIVER PLATE • 2018 / 2019   75
+
+
+
+--- pág. 40 ---
+
+
+     COMUNICACIÓN SEGMENTADA                                                                         RIVER PLATE: MÁS QUE UN NOMBRE                                                  SE PRESENTÓ LA PELÍCULA “RIVER, EL MÁS GRANDE SIEMPRE”
+
+     Con un método cada vez más elaborado, el Club continuó con su proceso de                        Las cuentas de Twitter e Instagram, nombradas “carpoficial”, fueron             El evento se realizó el lunes 29 de abril en el Estadio Monumental
+     comunicación targetizada, enfocado en llegar de manera más eficiente a los diferentes           modificadas a “RiverPlate”. Esto se logró gracias a un trabajo conjunto entre   y contó con la presencia de glorias del Club, directivos, jugadores,
+     públicos específicos. Todos los canales del Club cuentan con una estrategia de                  el equipo de cada red social y una estrategia macro de branding. El fin fue     cuerpo técnico y personalidades de la política y el espectáculo.
+     comunicación particular desde la cual se busca alcanzar cada segmento para acercarle            reforzar y unificar al nombre de “River Plate” como el mayor activo y símbolo
+     la información correspondiente y/o la cartera de productos específica.                          de identidad de marca.                                                          La película fue ideada, guionada y producida por Merlin Media,
+                                                                                                                                                                                     Argentina Sono Film y ND y recorre la inigualable historia de River,
+                                                                                                                                                                                     relatada por sus principales protagonistas e ídolos de todos los
+                                                                                                                                                                                     tiempos.
+     ALL BLACKS, UNA VEZ MÁS EN EL ESTADIO MONUMENTAL
+                                                                                                                                                                                     El Estadio Monumental se vistió de gala para una noche
+     En el marco del encuentro que Los Pumas y All Blacks disputaron en Vélez por el Rugby Championship, los neozelandeses estuvieron en el Estadio Monumental, en donde fueron      especial, que contó con la presencia de figuras históricas del
+     recibidos por los alumnos del Instituto River y la murga del Club. Luego, se entrenaron en las canchas auxiliares. Además, Stefano Di Carlo (Vicepresidente 2º) les obsequió    Club, Comisión Directiva, el plantel profesional y cuerpo técnico.
+     camisetas oficiales de River Plate. En tanto, Steve Hansen (head coach de los All Blacks) hizo entrega de una camiseta autografiada. Luego, Sam Cane (capitán) y Aaron Smith    La pantalla gigante estuvo ubicada en el campo de juego y los
+     conocieron el campo de juego y se sacaron fotos con la camiseta del Más Grande.                                                                                                 hinchas que adquirieron sus localidades se ubicaron en la platea
+                                                                                                                                                                                     San Martín. Allí, presenciaron en exclusiva la presentación de la
+                                                                                                                                                                                     obra.
+
+
+                                                                                                                                                                                     En la película “River, el más grande siempre” se viven los éxitos
+                                                                                                                                                                                     locales, las Libertadores, la Copa Intercontinental y, por supuesto,
+                                                                                                                                                                                     la gran final del 9 de diciembre de 2018 con sus anécdotas, su
+                                                                                                                                                                                     espíritu épico y su dramatismo inolvidable, que quedará para
+                                                                                                                                                                                     siempre en la historia del fútbol mundial.
+
+
+
+
+76        RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                         RIVER PLATE • 2018 / 2019   77
+
+
+
+--- pág. 41 ---
+
+
+                                                                                                                                                                                                     RIVER DIJO PRESENTE EN LAS 500                                            EMOCIÓN EN LA NOCHE DE LOS MUSEOS
+        RIVER, EN LOS HOMENAJES PARA EL TORINO                                                                                                                                                       MILLAS DE INDIANÁPOLIS
+                                                                                                                                                                                                                                                                               Una vez más, el Museo River abrió sus puertas de manera gratuita entre la noche del sábado 10 de
+     Con motivo de cumplirse 70 años de la tragedia de Superga, representantes del Club fueron invitados a Turín por el Museo del Grande Torino y della Leggenda Granata.                            Por primera vez en la historia de esta competencia, que es una de         noviembre y la madrugada del domingo 11. Los hinchas se emocionaron al recorrer la historia del
+                                                                                                                                                                                                     las carreras de autos más importantes del mundo, un club de fútbol        Más Grande y pudieron disfrutar de las diferentes atracciones innovadoras con las que cuenta este
+     El evento constó de diversos actos conmemorativos el 3 y 4 de mayo. Los mismos incluyeron la presentación de un libro, visita institucional al museo y asistencia a la inauguración de          lució su escudo en una carrocería: River dijo presente en el auto de la   espacio. Además, hubo música en vivo y una exposición de cerámicas realizadas en el Club. Allí, se
+     una plaza pública en honor al Grande Torino, ubicada en el pueblo de Bruino, sito a 20 kilómetros de Turín. El viernes 3 se realizó un homenaje en la colina de Superga conjuntamente con       escudería Juncos Racing.                                                  hizo presente Rodolfo D’Onofrio, quien saludó y se fotografió junto a los simpatizantes.
+     los museos de los clubes SL Benfica, AC Fiorentina y Juventus FC. Además, la jornada contó con la presencia del jugador portugués José Bastos, integrante del Benfica, quien estuvo
+     presente en el último partido disputado por el Grande Torino antes de retornar a Turín en 1949.                                                                                                 La presentación se llevó a cabo el jueves 23 de mayo, en el Salón
+                                                                                                                                                                                                     Auditorio del Club, y contó con la presencia de Ricardo Juncos
+     Al día siguiente, representantes del Museo River asistieron a un homenaje en el cementerio de Turín con autoridades del club y del Museo del Grande Torino y della Leggenda Granata.            (creador de Juncos Racing).
+                                                                                                                                                                                                                                                                               EL MUSEO RIVER, POR EUROPA
+     Posteriormente, acudieron a la misa en el Duomo de Turín junto con los integrantes del primer equipo de fútbol del Torino y miles de simpatizantes. Finalmente, se dirigieron con ellos hasta
+     la colina de Superga, donde con la presencia de una multitud, se realizó el tradicional homenaje en el lugar exacto en el que se estrelló el avión que provenía de Lisboa y donde perecieron                                                                              Se realizó una visita al Real Madrid, donde representantes del Club fueron recibidos por Emilio Butragueño
+     todos sus tripulantes.                                                                                                                                                                                                                                                    (Director de Relaciones Institucionales) y Manuel Redondo Sierra (Director del Gabinete de Presidencia)
+                                                                                                                                                                                                                                                                               e intercambiaron experiencias relacionadas a patrimonio histórico, archivo, trofeos y museos. Además,
+     Ello dio origen al posterior viaje del primer equipo de River Plate. El 26 de mayo, todas sus figuras enfrentarían en Turín a un combinado de jugadores italianos a beneficio de las familias                                                                             hicieron entrega de una camiseta oficial violeta (color identificado por el Real Madrid) con el emblemático
+     de los fallecidos; concretando un hecho de solidaridad inédito y único en la historia del fútbol mundial y dando origen a una amistad eterna, cristalizada en 2014 cuando los museos de                                                                                   número 9 que lució Di Stéfano; un banderín oficial y tres revistas “River” de 1958 y 1965, las cuales están
+     ambos clubes se hermanaron formalmente.                                                                                                                                                                                                                                   relacionadas a enfrentamientos amistosos entre las instituciones.
+
+
+                                                                                                                                                                                                                                                                               En el club SL Benfica se realizó la firma de una importante acción: el Club se incorporó a la Asociación
+                                                                                                                                                                                                                                                                               Internacional de Museos Deportivos, ISMA por sus siglas en inglés. El objetivo es establecer una red de
+                                                                                                                                                                                                                                                                               vínculos entre instituciones que cuentan con patrimonio deportivo. River le hizo entrega al Benfica de
+                                                                                                                                                                                                                                                                               una camiseta oficial y un banderín como recuerdo por la visita.
+
+
+                                                                                                                                                                                                                                                                               -River estuvo en la presentación de un libro de Alfredo Di Stéfano en Málaga. La obra se llama “Saeta
+                                                                                                                                                                                                                                                                               Rubia. El River Plate de Alfredo Di Stéfano” y fue escrito por José Ariza Gálvez. Además, el libro cuenta
+                                                                                                                                                                                                                                                                               con el prólogo de Rodolfo D’Onofrio y epílogo de Rodrigo Daskal.
+
+
+                                                                                                                                                                                                                                                                               -Se realizaron visitas protocolares a los museos del FC Barcelona, RCD Espanyol, Málaga CF y Atlético
+                                                                                                                                                                                                                                                                               de Madrid, con el fin de seguir intercambiando experiencias en las áreas de historia y museo.
+
+
+
+
+78            RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                                 RIVER PLATE • 2018 / 2019            79
+
+
+
+--- pág. 42 ---
+
+
+     UNA MUESTRA DEDICADA                                             RECONOCIMIENTO A CALOI                                     EVENTO JUNTO A LA                                 LOS ÍDOLOS, CERCA DE LOS HINCHAS
+     AL GRAN ANGELITO                                                                                                            COLECTIVIDAD HÚNGARA
+     Con motivo de cumplirse el centenario del nacimiento de Ángel    Las autoridades del Museo River recibieron a               Se llevó a cabo la presentación, junto a          En las últimas ediciones de “Conocé a tu ídolos”, los miembros de Somos River se dieron el gusto de ver de cerca e interactuar junto con Gonzalo Martínez, Enzo Pérez y Juan
+     Labruna, ocurrido el 28 de septiembre de 1918, se inauguró       familiares del artista: estuvieron presentes Tomás         la colectividad húngara en el país, de una        Quintero. Los eventos se realizaron en el Museo River y los ganadores de la Comunidad del Más Grande les realizaron preguntas y compartieron un momento inolvidable.
+     en 2018 una muestra en su homenaje en el Museo River.            (hijo), Claudio (hermano), Juan, Julián y Luna.            exposición dedicada a la historia del club
+                                                                      Donaron ejemplares de la Revista River y llevaron          Ferencvaros (Ferencvárosi Torna Club, su
+     El evento contó con la presencia de Rodolfo D’Onofrio, Rodrigo   el isologo original del león de River para que lo          nombre oficial en húngaro). Se realizó en
+     Daskal (Presidente del Área de Museo y Trofeos), familiares de   observen los integrantes del área. Caloi (Carlos           el marco de la designación de la ciudad de
+     Angelito y exjugadores como Omar Labruna (su hijo), Norberto     Loiseau) fue un dibujante e historietista argentino,       Budapest como capital deportiva de Europa en
+     Alonso, Ubaldo Fillol, Héctor López, Reinaldo Merlo, Pedro       quien falleció en mayo de 2012. Reconocido hincha          2019 y de los 90 años de la gira que dicho club
+     González, Oscar Más, Daniel Onega, Fernando Zappia, Héctor       de River, fue el creador del famoso león que supo          realizó por América, la cual incluyó un partido
+     Bargas y Chamaco Rodríguez, quien además es Vocal Titular.       estar en la camiseta que el Millonario utilizó en los      contra River Plate. Se expuso también material
+                                                                      títulos del Campeonato de Primera División 1985/86,        de la época del acervo del Museo River.
+     La muestra consistió en fotografías inéditas y objetos           Copa Libertadores 1986, Copa Intercontinental
+     vinculados al gran ídolo riverplatense.                          1986 y Copa Interamericana 1987.                           Del evento participaron el embajador de Hungría
+                                                                                                                                 en la Argentina, Dr. Csaba Gelényi; el Director
+     Por otro lado, la Legislatura de la Ciudad de Buenos Aires le                                                               del Museo del Ferencvaros, Csaba Tobak; y
+     entregó una placa a D’Onofrio en conmemoración de este                                                                      miembros de la colectividad húngara.
+     centenario, en un evento que se realizó el 28 de septiembre en   OTRA VEZ EN
+     el Museo River. Marcelo Gouman y José Acevedo (Legisladores      MAR DEL PLATA
+     de la Ciudad de Buenos Aires) fueron los encargados de
+                                                                      Luego de un gran éxito en 2016, durante 17 días
+     entregarle esta distinción al Presidente de River.
+                                                                      consecutivos se pudieron apreciar en el Hotel NH
+                                                                      Provincial los más preciados tesoros de la Institución
+                                                                      para que los hinchas de todo el país puedan estar en
+                                                                      contacto con una parte de la historia y gloria del Club.
+
+
+                                                                      Hubo trofeos, camisetas, botines y objetos utilizados
+                                                                      por las glorias de River. Además, los visitantes
+                                                                      tuvieron la oportunidad única de sacarse fotos
+                                                                      con la réplica de la Copa Libertadores obtenida
+                                                                      en Madrid. La exposición contó con más de 30
+                                                                      camisetas históricas, copas, una muestra sobre
+                                                                                                                                                                                   En tanto, a partir del 1° de enero, la plataforma de Somos River se relanzó con un formato más amigable para los usuarios: tanto la parte tecnológica como comercial es manejada por el
+                                                                      Ángel Labruna, videos e imágenes.
+                                                                                                                                                                                   Club. Con el fin de optimizar los datos de los usuarios y tener mayor control de la base, los miembros debieron reempadronarse, verificando su identidad a través del sistema de RENAPER.
+
+
+
+
+80         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                       RIVER PLATE • 2018 / 2019           81
+
+
+
+--- pág. 43 ---
+
+
+     VISITAS AL MONUMENTAL                                                                                            LOS CAMPUS HACEN HISTORIA
+
+
+     Comité Olímpico de China al Monumental                                                                           El primero del año, en Uruguay
+     Una comitiva encabezada por Liu Chengliang, Director del Departamento de Marketing del Comité                    Un grupo de 80 chicas y chicos entre 6 y 17 años participaron el 10 de enero de la cuarta edición del
+     Olímpico de la República Popular China, realizó una visita al Club, recorrió sus instalaciones y la pista        Campus River, la cual se llevó a cabo en el predio de Solanas, donde el plantel profesional realizó la
+     de atletismo del Estadio Monumental. La misma se produjo con el objetivo de conocer las instalaciones            pretemporada. Durante la mañana los distintos grupos, separados por categorías, realizaron trabajos
+     deportivas de River y el trabajo que la Institución lleva adelante con los chicos que inician sus actividades,   tácticos con pelota y luego ejercitaron lo físico con diferentes dinámicas en la arena.
+     tanto en el plano recreativo como en el competitivo. Además, conocieron a Lyu Sunhao, jugador de la
+     Octava División y que vive en Casa River.                                                                        Después del almuerzo, el grupo recibió a Javier Pinola, quien además de compartir su experiencia como
+                                                                                                                      jugador profesional enfocó su charla en la importancia del trabajo en equipo para lograr objetivos (valor
+     Kweichow Moutai                                                                                                  sobre el cual se trabajó durante toda la jornada con los chicos).
+     El Club recibió la visita de la empresa china de licores Kweichow Moutai, la cual está encabezada por
+     Li Baofang, Secretario del Comité del Partido, Presidente y Gerente General. Moutai es un licor a base           Por su parte, Marcelo Pudelka, nutricionista del plantel profesional, también se acercó durante la merienda a conversar
+     de sorgo que se produce en la provincia de Ghizou, al suroeste del país, y es considerado un producto            acerca de la importancia en la alimentación y en la hidratación durante el deporte y en la vida diaria en general.
+     estrella en la cultura china por tratarse de una bebida de lujo, utilizada para agasajar a invitados y/o
+     para cerrar negocios. La marca Moutai es reconocida en el mundo entero, no sólo por este producto,               Rodolfo D´Onofrio, Presidente del Club, compartió un momento con los chicos, quienes le hicieron
+     sino también por ser portadora de la cultura china. Fueron recibidos por Rodolfo D’Onofrio (Presidente)          preguntas generales sobre River.
+     y Jorge Brito (Vicepresidente 1°). Recorrieron el Museo River y luego, en el Paddock del anillo interno,
+     se interiorizaron sobre la vida deportiva e institucional del Club, así como de su área de Marketing. La         Al finalizar las actividades de la tarde, los participantes tuvieron un encuentro con el plantel profesional
+     jornada finalizó con una serie de fotos en el Monumental y se llevaron de recuerdo una camiseta oficial          para cerrar una jornada a puro fútbol y emociones junto a los campeones de América.
+     del Más Grande.
+                                                                                                                      Un Campus River Monumental
+     Visitas de India y China                                                                                         Del lunes 21 al viernes 25 de enero, 125 chicas y chicos de diferentes edades fueron los protagonistas de
+     El equipo completo de hockey 5 de China (medalla de bronce en los JJ. OO. de la Juventud), incluyendo            este nuevo capítulo de formación, aprendizaje y emociones, el cual tuvo lugar en el Estadio. Con el marco
+     cuerpo técnico y preparadores físicos, junto con miembros del Comité Olímpico, conocieron el Monumental.         de fondo de la casa del Más Grande, los participantes trabajaron con un plan de entrenamiento físico y
+     Luego de una reunión protocolar en la cual se les presentó el Club en general, y las posibilidades de            técnico, aplicado a cada categoría. Además, a lo largo de la semana, tuvieron diversas prácticas de fútbol
+     intercambio de conocimiento tanto de fútbol como de otros deportes, fueron a ver un entrenamiento de             y todos los grupos realizaron la visita al Museo River.
+     la escuelita de fútbol Ángel Labruna.
+     Por otro lado, representantes de Reliance Sports se acercaron con la intención de generar un vínculo             Camilo Mayada e Ignacio Scocco se acercaron al Museo para sorprender a los chicos. Los jugadores
+     entre el fútbol argentino y la liga india de fútbol. Reliance Industries se dedica a la energía, pero hace       compartieron un momento de charla, risas y respondieron preguntas sobre su experiencia como
+     cinco años compraron la liga para hacerla crecer y ayudar a la sociedad. Sundar Raman, su CEO, y Jalaj           deportistas profesionales. Además, D’Onofrio compartió un momento con los chicos y charlaron acerca
+     Dani, Director, vinieron acompañados de miembros de Cancillería. Recorrieron el Estadio y se les entregó         de su función como Presidente de River. Para culminar una semana especial, la entrega de diplomas se
+     la camiseta oficial de River.                                                                                    llevó a cabo en la pista de atletismo del Monumental y cada participante fue aplaudido por sus padres
+                                                                                                                      desde la platea San Martin baja.
+
+
+
+
+82         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                            RIVER PLATE • 2018 / 2019   83
+
+
+
+--- pág. 44 ---
+
+
+                                                                                                                                                                                              ESCUELAS RIVER: EL LEGADO DEL CLUB,
+     También en Los Ángeles                                                                                                                                                                   POR EL PAÍS Y EL MUNDO
+     Más de 45 chicas y chicos fueron partícipes de esta actividad que se llevó a cabo durante el sábado 29 y
+     el domingo 30 de junio en la UCLA. En el campus, además de ejercicios físicos y tácticos para aprender
+                                                                                                                                                                                              Se trabajó de manera ardua en la unificación de criterio sobre la metodología
+     a manejar la pelota a través del juego, se trabajó constantemente sobre la importancia de los valores. Los
+                                                                                                                                                                                              de trabajo referente a una planificación acorde a la circunstancia que
+     entrenadores llevaron la práctica adelante indicándoles a los participantes que en River se trabaja con el
+                                                                                                                                                                                              amerita la actividad de Escuelas de Fútbol.
+     respeto, la solidaridad, el esfuerzo y el trabajo en equipo ante todo.
+
+                                                                                                                                                                                              Dicha metodología fue implementada con intervención jurídica de River
+     El campus en Los Ángeles culminó de la mejor manera: con un partido entre cuatro jugadores del plantel
+                                                                                                                                                                                              mediante un manual de metodología, en el cual se plasma toda la
+     profesional (Kevin Sibille, Santiago Sosa, Jorge Carrascal y Robert Rojas) en contra de todos los chicos.
+                                                                                                                                                                                              actividad a desarrollarse por profesionales del deporte, como así también
+                                                                                                                                                                                              los requisitos que deben afrontar cada uno de los establecimientos que
+     Para el cierre de una jornada con mucha emoción para los participantes, todos los jugadores del plantel
+                                                                                                                                                                                              deseen ser parte del proyecto de manera nacional e internacional.
+     profesional y cuerpo técnico se acercaron a saludarlos y compartir un momento con ellos.
+
+
+     Otro Campus Monumental
+     Una vez más, las instalaciones del Club fueron el escenario perfecto para que se llevara adelante el                                                                                       ESCUELAS NACIONALES
+     Campus River durante las vacaciones de invierno. Con el Monumental de fondo, los participantes se
+     entrenaron de lunes a viernes siguiendo un plan armado de acuerdo a la metodología que se utiliza en                                                                                        Escuela Lomas de Zamora.
+     Fútbol Profesional.                                                                                                                                                                         Niños Sin Red (Maschwitz / Benavidez).
+                                                                                                                                                                                                 Escuela Cañuelas (Anexo Flores).
+     Además, los chicos realizaron visitas al Museo y a la cancha y disfrutaron de una gran charla con Hernán                                                                                    Escuela Pilar.
+     Díaz, quien además de contarles su experiencia como jugador del Más Grande respondió todo tipo de                                                                                           Escuela Esteban Echeverría (Canning).
+     preguntas.                                                                                                                                                                                  Escuela Santa Cruz.
+                                                                                                                                                                                                 Escuela Mendoza.
+     Para culminar una semana especial, la entrega de diplomas se llevó a cabo en la pista de atletismo de la
+     cancha y cada participante fue aplaudido por sus padres desde la San Martin baja.
+                                                                                                                                                                                                ESCUELAS INTERNACIONALES
+     Campus River en Xiamen
+     La Escuela Oficial de River Plate organizó con éxito su primer campus de verano en China. Con                                                                                               Escuela Ecuador (Guayaquil).
+     participación de chicos de entre 8 y 17 años, el evento se llevó a cabo en Xiamen, ciudad ubicada en                                                                                        Escuela Colombia (Bogotá).
+     la costa oeste de la República Popular China. Esta Escuela está dentro del plan del Club de llevar su                                                                                       Escuela Bofeng Sports SRL (China).
+     Marca a Asia por medio de la enseñanza deportiva; contó con profesores de fútbol que participaron
+     de la capacitación realizada en el Club Atlético River Plate en junio para llevar a las escuelas oficiales   Campus River en Indiana
+     los valores y las mejores prácticas de la institución. El campus finalizó con la entrega de diplomas a los   En julio de 2019 se realizó un campus en Indianápolis, al cual asistieron
+     participantes y con las ganas de repetir la experiencia por parte de los chicos.                             más de 50 chicas y chicos de todo el estado de Indiana.
+
+
+
+
+84         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                    RIVER PLATE • 2018 / 2019             85
+
+
+
+--- pág. 45 ---
+
+[Divisor de sección — foto a página completa con el título "06 Un Club Socialmente Responsable" superpuesto, sin texto adicional.]
+
+
+                                 06 Un Club Socialmente Responsable
+
+86   RIVER PLATE • 2018 / 2019                             RIVER PLATE • 2018 / 2019   87
+
+
+
+--- pág. 46 ---
+
+
+      UNA JORNADA HISTÓRICA                                                                             LA FUNDACIÓN DEL MÁS GRANDE,                                                        Nuevos Horizontes
+
+      DE SOLIDARIDAD                                                                                    CADA VEZ MÁS GRANDE                                                                 Este programa benefició a los 75 chicos que viven en la Casa River, quienes continuaron trabajando el
+                                                                                                                                                                                            autoconocimiento y la identificación de las distintas emociones en los talleres semanales que compartieron
+                                                                                                                                                                                            con los tutores del programa.
+
+     River Plate acompañó nuevamente a quienes más lo necesitan: el miércoles 3 de julio, el Club       Valores a la cancha
+                                                                                                                                                                                            Se realizó una total remodelación del sector infantil: los cuartos fueron reacondicionados con camas, placares
+     recibió a personas en situación de calle, se sirvió una cena y se acondicionó el gimnasio de       Fundación River inauguró su cancha polideportiva en la localidad bonaerense de
+                                                                                                                                                                                            y ropa de dormir nueva; garantizándoles a los chicos un espacio donde vivir de primer nivel. También, se
+     karate para que pudieran pasar la noche allí. Además, se juntaron donaciones de ropa de            La Matanza. La misma forma parte del complejo construido en el predio Tierra,
+                                                                                                                                                                                            realizó la donación de muebles para una nueva sala de estar, con el fin de seguir mejorando la calidad de
+     abrigo y frazadas. La acción fue realizada en conjunto con Red Solidaria.                          Techo y Trabajo. Dicho predio les da a más de 1500 chicos la oportunidad de
+                                                                                                                                                                                            vida de los infantiles de la pensión.
+                                                                                                        contar con un espacio de calidad para jugar al fútbol, básquet, vóley y handball,
+     Este acto de solidaridad, que trascendió el fútbol y generó una amplia repercusión a               entre otros deportes. Este año ya son siete los establecimientos de Fundación
+                                                                                                                                                                                            Como otra medida del programa, se realizaron salidas culturales y recreativas, donde se les ofreció a los
+     nivel nacional, contó con la presencia de Jorge Brito (Vicepresidente 1°), Stefano Di Carlo        River que transmiten valores y brindan entrenamientos de fútbol para más de
+                                                                                                                                                                                            chicos la posibilidad de vivir nuevas y enriquecedoras experiencias. En ese sentido, usaron la lógica en
+     (Vicepresidente 2°), Ignacio Villarroel (Secretario) y Juan Carr (Red Solidaria), quien expresó:   400 chicos: Lomas de Zamora, Villa de Mayo, Hurlingham, La Matanza, Puerto
+                                                                                                                                                                                            juegos de escape, visitaron Perú Beach, jugaron footgolf, participaron de un taller de arte junto con Omar
+     “Pasaron 242 personas desde ayer al atardecer y 103 durmieron aquí. Hubo muchas familias y         Iguazú, Loma Hermosa y, más reciente, Villa Itatí.
+                                                                                                                                                                                            Panosetti y pasaron el día en Aquafan.
+     unos 50 voluntarios. Al 70% de los que vinieron los conocemos; durante todo el día se siguen
+     recibiendo donaciones”. Y agregó: “Nos llamaron de otras instituciones como Vélez, Platense
+                                                                                                                                                                                            Además, por tercer año consecutivo, se realizó una despedida a aquellos jugadores que no continuarán
+     y Estudiantes de Buenos Aires para tratar de hacer algo similar”.
+                                                                                                                                                                                            desempeñándose en el Club: se les entregaron diplomas de reconocimiento por los años en que vivieron y
+                                                                                                                                                                                            se formaron en River como jugadores de alta competencia y, además, Ignacio Scocco, grabó envió un video
+                                                                                                                                                                                            motivacional para los que continuarán sus carreras en otros clubes.
+
+
+                                                                                                                                                                                            Jóvenes al mundo
+                                                                                                                                                                                            Durante la segunda mitad de 2018 se trabajó en la orientación vocacional y en el acompañamiento de los
+                                                                                                                                                                                            becados que cursaban quinto año, con el objetivo de que continúen sus estudios en un nivel terciario o
+                                                                                                                                                                                            universitario. En lo que respecta a este año, se comenzó con 57 becarios, siete de los cuales egresaron del
+                                                                                                                                                                                            colegio secundario y continúan formándose.
+
+
+                                                                                                                                                                                            Por otra parte, el último fin de semana de octubre de 2018 se llevó adelante la tercera convivencia del
+                                                                                                                                                                                            programa. En esa oportunidad, los chicos viajaron a Chascomús para compartir un fin de semana en Kapawa
+                                                                                                                                                                                            Camp, donde realizaron distintas actividades como palestra, tirolesa, metegol humano y el infaltable fogón.
+                                                                                                                                                                                            Además, se concretaron jornadas innovadoras, que implicaron la articulación con otras instituciones como
+     Un almuerzo que siguió uniendo
+                                                                                                                                                                                            con el Instituto River y el Club Champagnat.
+     Para agasajar a todas las áreas que estuvieron involucradas en esta iniciativa, River y Red
+     Solidaria organizaron un almuerzo que tuvo lugar en el Salón de Honor, del cual participaron
+     Rodolfo D’Onofrio, Stefano Di Carlo, Juan Carr y empleados de los sectores de Seguridad,
+     Infraestructura y River Solidario.
+
+
+
+
+88         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                         RIVER PLATE • 2018 / 2019   89
+
+
+
+--- pág. 47 ---
+
+
+     Sin Fronteras                                                                   5ª CENA SOLIDARIA
+     Se llevaron adelante 14 ediciones durante las cuales se beneficiaron a
+     2100 niños y jóvenes del interior y exterior del país. Fundación River visitó   El 9 de octubre de 2018, bajo el lema #TodosSomosFundaciónRiver, se celebró
+     siete provincias argentinas (Buenos Aires, Córdoba, Mendoza, Salta,             la 5ª Cena Solidaria de Fundación River en el Salón Rojo de La Rural. Fueron 47
+     San Luis, Santa Fe y Tucumán) y tres países de Latinoamérica (Brasil,           empresas las que auspiciaron el evento, con cuya ayuda volvió a romperse el récord
+     Chile y Perú). En total, se entregaron 210 pelotas, 1120 conos altos,           de recaudación, que alcanzó la suma total de $ 23.702.500. Mariano Iúdica aportó su
+     700 pecheras, 28 bolsos para pelotas, 14 escaleras de coordinación, 56          grano de solidaridad al conducir nuevamente el evento, durante el cual se subastaron
+     vallas de salto, 140 pares de guantes de arquero, 1120 conos tortuga,           distintos objetos de alto valor emocional para los hinchas “millonarios”: los botines
+     14 kits de fútbol tenis, 70 silbatos y 14 pizarras para directores técnicos.    del Pity Martínez y Nacho Scocco, las camisetas de Rafael Borré y Juan Quintero y,
+                                                                                     como broche de oro, la réplica de la Supercopa Argentina que River le ganó a Boca
+     Sueños Cumplidos                                                                en marzo de 2018 en Mendoza.
+     El Club recibió 41 visitas de distintas organizaciones sociales, tanto para
+     conocer el Museo River, como para conocer el Estadio Monumental;
+     alcanzando un total de 2567 beneficiarios. Dichas organizaciones
+     provenían de diez provincias argentinas: Buenos Aires, Chaco, Córdoba,
+     Entre Ríos, La Pampa, Mendoza, Neuquén, Salta, Santa Cruz y Santa
+                                                                                                                                                                             GRACIAS A “SIN FRONTERAS” SE RECORRIERON 15.342 KILÓMETROS:
+     Fe. Además, alrededor de 2000 chicos de 27 diferentes instituciones
+     benéficas asistieron a los festejos de #ElMásGr4ndeDeLaHistoria,
+     teniendo la posibilidad de festejar junto a los jugadores y los hinchas la                                                                                              Se visitaron 7 provincias argentinas (Buenos Aires, Córdoba, Mendoza, Salta,
+     obtención de la cuarta Copa Libertadores de América.                                                                                                                    San Luis, Santa Fe y Tucumán) y 3 países de Latinoamérica (Brasil, Chile y Perú).
+
+
+     Escuela de Formadores
+     Durante el 10, 11 y 12 de junio, más de 110 representantes de 55 clubes
+     y escuelitas de 11 provincias de la República Argentina viajaron desde
+     sus lugares de orígen para recibir 72 horas de capacitaciones sobre
+     diferentes temáticas aplicadas al deporte, junto con representantes de
+     la Escuelita Ángel Labruna e Inferiores del Club.
+
+
+     Las mismas comenzaron de la mano de Experiencia Líderes,
+     mediante una charla sobre “Liderazgo y comunicación en el nuevo
+     paradigma de género”. A continuación, se dictó una conferencia sobre
+     Bioneuroemoción para entrenadores y deportistas y, posteriormente,
+     se desarrollaron temáticas aplicadas en el Enric Corbera Institute. Los
+     invitados también recibieron formación sobre sistemas educativos y el                                                                                                   Con los siete programas se logró alcanzar, en el período agosto 2018 / julio 2019,
+     rol del entrenamiento físico.                                                                                                                                           un total de 14.420 beneficiarios.
+
+
+
+
+90          RIVER PLATE • 2018 / 2019                                                                                                                                                                                               RIVER PLATE • 2018 / 2019     91
+
+
+
+--- pág. 48 ---
+
+
+     RIVER PARA TODOS                                                                                                                                                                          FESTEJOS INOLVIDABLES
+     El Club dispone de la infraestructura necesaria para que los socios con discapacidad accedan a “Tu lugar en
+                                                                                                                                                                                               POR EL DÍA DEL NIÑO
+     el Monumental” con su acompañante si correspondiese, mediante la presentación del Certificado Único de
+     Discapacidad. La tarjeta magnética nominada e intransferible para el titular y acompañante, sin cargo, facilita                                                                           En septiembre de 2018, más de 3000 chicos disfrutaron de las
+     el ingreso a todos los partidos en condición de local, incluidos los internacionales. Los socios que utilizan sillas                                                                      actividades que el Club puso a disposición en su día. En la edición
+     de ruedas disponen de un espacio delimitado con prioridad, un sanitario adaptado en la platea Belgrano y libre                                                                            de este año, el encuentro se duplicó en cuanto a cantidad de
+     estacionamiento en un espacio cercano a la puerta de acceso. Con igual procedimiento, aquellos con discapacidad                                                                           atractivos con respecto al anterior, pasando de 18 a 36: inflables,
+     acreditada pueden acceder a la platea Centenario baja.                                                                                                                                    fotografías, pintura facial, carreras de drones y hasta un salón de
+                                                                                                                                                                                               spa ubicado dentro del paddock para cortes de pelo.
+     Gestión de Red River
+     Se lleva adelante un sistema de registro de socios con discapacidad, mediante la presentación voluntaria de la                                                                            El broche de oro fue el ingreso del público al Microestadio para
+     documentación, lo cual se puede realizar a través de diversas vías institucionales. También, se implementa una                                                                            la realización de diferentes sorteos de productos oficiales de
+     base de información referida al tipo de discapacidad prevalente, a fin de relevar las necesidades, demandas,                                                                              River, a fin de que los chicos pudieran llevarse el recuerdo de
+     intereses y posibles adaptaciones específicas que faciliten su participación.                                                                                                             una jornada inolvidable. En el cierre del acto, Rodolfo D’Onofrio
+                                                                                                                                                                                               se dirigió a las familias presentes y destacó el aspecto social y
+     Visitas institucionales adaptadas                                                                                                                                                         deportivo que distingue a River.
+     Se aplica protocolos determinados según los diferentes tipos de discapacidad, los cuales proporcionan
+     orientaciones específicas para cada intervención: apoyos para la adaptación de la información, comunicación,                                                                              Por otro lado, en agosto de 2019, se realizó un nuevo festejo para
+     recorridos ajustados al nivel de participación de cada grupo visitante. De ese modo, se acompañaron 550 jóvenes                                                                           homenajear a los niños: más de 2000 personas dijeron presente
+     y adultos con discapacidad, acompañados por referentes institucionales, concurrentes a instituciones de gestión                                                                           en las instalaciones del Club: el evento contó con la presencia
+     pública o de la sociedad civil.                                                                                                                                                           de D’Onofrio y miembros de la Comisión Directiva: hubo juegos
+                                                                                                                                                                                               inflables, sorteos y más actividades. Además, el cierre estuvo
+     Buenas prácticas inclusivas                                                                                                                                                               a cargo del show de “Superhéroes enredados con princesas”.
+     Como resultado de la evaluación técnica realizada por Asociación Civil ALPI, el Museo River obtuvo el Certificado                                                                         Las donaciones recolectadas a cambio de las entradas serán
+     de Accesibilidad. Dicha certificación consiste en la evaluación de distintos aspectos necesarios para que las                                                                             entregadas a los comedores de Capital Federal y Gran Buenos
+     personas con limitaciones de movilidad puedan acceder al recorrido de forma autónoma e igualitaria.                                                                                       Aires que son apadrinados por River Plate.
+
+     En el marco de la Cumbre Global de Discapacidad Argentina 2019, organizada por el Gobierno de la República Argentina, la Alianza Internacional de Discapacidad y la Red Latinoamericana
+     de Organizaciones no Gubernamentales de Personas con Discapacidad y sus Familias, River adhirió al evento compartiendo con algunas de las delegaciones participantes visitas al
+     Museo River y a las instalaciones del Club.
+
+
+     El equipo argentino de fútbol en silla de ruedas motorizada agasajó al equipo de fútbol en silla de ruedas Deportivo Montevideo. En esta oportunidad se acompañó a los socios del Club
+     con discapacidad para que pudieran participar en las actividades sociales y deportivas desarrolladas en Tecnópolis, sede del evento mundial. River, invitado por el Movimiento Scouts
+     Argentina, expuso su modelo de gestión inclusivo ante líderes del movimiento de todo el país.
+
+
+
+
+92          RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                RIVER PLATE • 2018 / 2019   93
+
+
+
+--- pág. 49 ---
+
+
+     UNA VISITA MUY ESPECIAL
+     Los niños tailandeses que estuvieron 17 días atrapados en una cueva visitaron las instalaciones del Club y jugaron un partido en el Monumental. El evento, que tuvo lugar en octubre de
+     2018, contó con la presencia de Rodolfo D´Onofrio (Presidente de River), Horacio Rodríguez Larreta (Jefe de Gobierno de la Ciudad de Buenos Aires) y Diego Santilli (Vicejefe de Gobierno
+     de la Ciudad de Buenos Aires).
+
+
+     Los niños tailandeses vinieron a Argentina para participar de la ceremonia de apertura de los Juegos Olímpicos de la Juventud. Bajo la mirada del mundo y con la emoción de todos, el
+     Presidente del Comité Olímpico Internacional (COI), Tomas Bach, los presentó como los “jóvenes que demostraron valores y cautivaron al mundo”.
+
+
+     Además del partido disputado con los chicos de la Escuela de Fútbol Ángel Labruna, los pequeños tailandeses recorrieron el Club y visitaron el Museo River.
+
+
+
+
+94          RIVER PLATE • 2018 / 2019                                                                                                                                                            RIVER PLATE • 2018 / 2019   95
+
+
+
+--- pág. 50 ---
+
+[Divisor de sección — foto de aula/estudiantes a página completa con el título "07 Mucho más que Deporte" superpuesto, sin texto adicional.]
+
+
+                                 07 Mucho más que Deporte
+
+96   RIVER PLATE • 2018 / 2019                   RIVER PLATE • 2018 / 2019   97
+
+
+
+--- pág. 51 ---
+
+
+     RIVER FUE SEDE DE UN IMPORTANTE EVENTO DE EDUCACIÓN DIGITAL                                                                                                                                 PROMOCIÓN DE LA EDUCACIÓN SEXUAL INTEGRAL
+     En el marco de una estrategia de alfabetización digital, el presidente de River, Rodolfo D’Onofrio, y el Ministro de Educación, Cultura,                                                    Este proyecto tiene como objetivo general la facilitación y promoción de la implementación de la
+     Ciencia y Tecnología de la Nación, Alejandro Finocchiaro, realizaron una acción en conjunto en el Microestadio del Monumental.                                                              Educación Sexual Integral en el Instituto River en todos sus niveles educativos. Se sustenta en las
+                                                                                                                                                                                                 orientaciones de la Ley Nacional N° 26.150 de Educación Sexual Integral que el Ministerio de Educación
+     La actividad, que también contó con la presencia del embajador de la República de Finlandia, Teemu Turunen, y de la Consejera de Educación y                                                de la Nación desarrolla como parte de su política educativa.  
+     Ciencia de Finlandia, Emilia Ahvenjärvi, tuvo como objetivo la iniciación de los estudiantes del Instituto River en el plan “Aprender Conectados”, el
+     cual contó con espacios de talleres en simultáneo con propuestas de educación digital, programación y robótica. Las actividades, de las cuales                                              Nivel Inicial: presentación de la modalidad de trabajo a las familias de las salas de lactario y un año.
+     participaron 40 alumnos, sirvieron como punto de partida para motivar a los estudiantes en la construcción de saberes para el presente y el futuro.                                         Nivel secundario: los agentes capacitadores de la Cruz Roja Argentina filial Saavedra, animaron
+                                                                                                                                                                                                 talleres sobre salud sexual y reproductiva, género y diversidad.
+
+
+
+     COLEGIUM, UNA PLATAFORMA PARA CRECER Y MEJORAR EL SERVICIO
+     A fin de ofrecer un mejor servicio, se ha implementó el módulo de pagos on-line, disponible dentro de este sistema. Además, se emitieron Boletines de Calificaciones, de informes y otras   EL DEPORTE
+     documentaciones relacionada a la vida institucional y pedagógica de los alumnos. Esto implica una reducción en la cantidad de impresiones en papel y, por lo tanto, un impacto positivo
+     en el cuidado del medioambiente.                                                                                                                                                            COMO BANDERA
+     Con ello, además se busca el completo aprovechamiento de la plataforma, de manera transversal en todos los niveles, para convertirla en el único medio formal de comunicación entre         Respondiendo a una demanda histórica, se
+     la Institución y las familias.                                                                                                                                                              comenzó a dictar fútbol para las alumnas
+                                                                                                                                                                                                 del nivel primario y secundario. Además,
+                                                                                                                                                                                                 el nivel primario regresó luego de cuatro
+
+     LA IMPORTANCIA DEL ÁMBITO DIGITAL                                                                                                                                                           años a las competencias en torneos de
+                                                                                                                                                                                                 fútbol F.I.C.D.A. Y L.I.A., de gimnasia
+                                                                                                                                                                                                 artística (Torneo Club Comunicaciones),
+     A través de sus redes sociales, el Instituto River busca afianzar su                                                                                                                        de natación (Torneo de Escuelita River
+                                                                                                               En el período comprendido entre octubre de 2018 y septiembre de 2019, se          Plate) y de básquet (Kinder Sport). El nivel
+     marca comunicando las actividades enfocadas en la educación integral
+                                                                                                               sumaron 3.115 nuevos seguidores en Instagram, llegando a un total de 4.060.       secundario participó del torneo de fútbol
+     de los alumnos. A su vez, busca reflejar la cantidad de acciones que
+     se realizan y los diferentes abordajes educativos. Para ello, se definió                                                                                                                    F.I.C.D.A., torneo de básquet Kinder Sport
+     una estrategia de contenidos, en la cual se organizan los posteos,                                                                                                                          y torneo Zona Norte de handball. También
+                                                                                                               A su vez, en Facebook, la comunidad creció un 157% en dicho tiempo, alcanzando
+     adecuándolos a las distintas plataformas.                                                                                                                                                   se realizó el torneo interno de natación del
+                                                                                                               los 2.867 “me gusta”.
+                                                                                                                                                                                                 nivel primario, luego de más de 10 años.
+
+
+
+
+98          RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                       RIVER PLATE • 2018 / 2019   99
+
+
+
+--- pág. 52 ---
+
+
+      UNA DESTACADA VISITA                                                                                                                                                               LOS ALUMNOS PARTICIPARON DE UNA MUESTRA EMOTIVA
+      Mercedes Miguel, Secretaria de Innovación y Calidad                                                                                                                                En el marco de la conmemoración por el Día Nacional
+      Educativa del Ministerio de Educación de la Nación, visitó                                                                                                                         de la Memoria por la Verdad y la Justicia, el Instituto
+      el Instituto y se reunió con las directoras y docentes de                                                                                                                          River inauguró la muestra digital “Papelitos” en el
+      todos los niveles de la Institución. La funcionaria destacó                                                                                                                        Museo del Club. Se trató de un trabajo elaborado por
+      el proyecto “La Secundaria del futuro”, denominado                                                                                                                                 Memoria Abierta y el colectivo de periodistas NAN, con
+      “Secundaria 2030”, el cual involucra a todos los niveles                                                                                                                           el apoyo de la Embajada de los Países Bajos, donde se
+      del IRP.                                                                                                                                                                           analiza la dictadura a través del Mundial 78.
+
+
+
+
+      OBRAS PARA UNA MAYOR COMODIDAD                                                                                                                                                     UN RECONOCIMIENTO A FAVOR DEL MEDIOAMBIENTE
+      Se aprobó la renovación de la totalidad de las computadoras de salas de informática y de las                                                                                       El Instituto River está comprometido con la Educación y Gestión Ambiental. Por ello, forma parte del Programa Escuelas
+      oficinas del Instituto y del Terciario. Además, se adquirieron tablets para uso exclusivo del personal                                                                             Verdes del Ministerio de Educación e Innovación del Gobierno de la Ciudad y fue reconocido como escuela que desarrolla
+      docente y de preceptoría, con el fin de tomar asistencias y otros usos de soporte.                                                                                                 estrategias, actividades y experiencias que contribuyen con el desafío de formar individuos eco-responsables.
+                                                                                                                                                                                         Por tal motivo, se recibieron los tres primeros lazos ambientales:
+      Por otro lado, se realizará el reemplazo de equipos de aire acondicionado: de esta forma, se les                                                                                   Lazo Ambiental I - Escuela Comprometida
+      brindará a alumnos y al personal un ambiente más confortable, además de generar una baja en el                                                                                     Lazo Ambiental II - Escuela Abierta
+      consumo eléctrico y una mejora en el cuidado del medioambiente.                                                                                                                    Lazo Ambiental III - Escuela Consolidada
+
+
+
+
+                                                                    LA SOLIDARIDAD TAMBIÉN DIJO PRESENTE                                                                                                                                                 EL EJEMPLO DE GERMÁN LUX
+                                                                    El IRP y la ONG Dale Vida se unieron para promover la donación de sangre. Durante abril, los alumnos de tercer                                                                       El arquero del plantel profesional finalizó sus estudios secundarios en el Instituto River, en donde cursó durante
+                                                                    ciclo de nivel primario y los de nivel secundario recibieron capacitación acerca de la importancia de esta acción.                                                                   su adolescencia cuando vivía en la pensión del Club mientras se formaba como jugador.
+                                                                    En el caso del nivel inicial, fueron capacitadas las docentes.
+                                                                                                                                                                                                                                                         “Estoy contento. No estoy orgulloso de que hayan pasado tantos años, pero es algo importante. Me acuerdo
+                                                                    Este evento culminó con la Jornada de Donación de sangre que tuvo lugar el jueves 23 de mayo en River. Las                                                                           de que en mi casa me decían que había que estudiar y terminar el secundario”, comentó Lux tras rendir sus
+                                                                    familias de los alumnos, el personal del IRP y del Club, así como los socios, respondieron satisfactoriamente a                                                                      últimas materias.
+                                                                    esta primera convocatoria que se reitera anualmente como parte de la cultura institucional.
+
+
+
+
+100         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                      RIVER PLATE • 2018 / 2019          101
+
+
+
+--- pág. 53 ---
+
+
+      ESTUDIÁ CON PASIÓN, ESTUDIÁ EN EL CENTRO                                       IMPLEMENTACIÓN                                                      INSTITUTO UNIVERSITARIO RIVER PLATE
+      DE ESTUDIOS TERCIARIOS RIVER PLATE                                             DE SIGEDU                                                           OBRAS Y REMODELACIONES PARA MEJORAR
+
+      Presentada por Rodolfo D’Onofrio, Luciana Rubinska se sumó a la institución    Se adquirió el sistema SIGEDU, el cual está implementándose         A fines de agosto de 2018 se iniciaron las obras de
+      en el cargo de Directora de la carrera de Periodismo Deportivo para aportar    a modo de experimentación para todos los aspectos                   ampliación y refacción del IURP, desarrollando a
+      y compartir con los alumnos todos los conocimientos que adquirió a lo largo    concernientes a la gestión de alumnos y desarrollo académico        principios de 2019 trabajos de impermeabilización
+      de su trayectoria. A raíz de la gran cantidad de inscriptos, se consiguió la   y administrativo de todas las ofertas educativas que se brindan     de los techos. Actualmente, el IURP cuenta con
+      apertura de una segunda comisión en primer año de Periodismo Deportivo.        desde el IURP.                                                      instalaciones totalmente aptas para la atención a los
+                                                                                                                                                         alumnos, docentes y al público en general, logrando
+      En tanto, se suscribieron importantes acuerdos de pasantías con grandes                                                                            la excelencia en la prestación de los servicios
+      medios de todo el país: Grupo Indalo, Clarín, Olé, TyC Sports, Torneos,                                                                            educativos que se brindan, por lo que se ha recibido el
+      Radio Metro y Mediapro. Además, el Club sumó pasantes a sus filas en el        SE REALIZÓ UN                                                       reconocimiento de las autoridades ministeriales.
+
+
+                                                                                     CONVENIO DE
+      Área de Comunicación, Medios y Digital para la cobertura del polideportivo.
+      En la primera parte de 2019, 14 estudiantes y futuros periodistas contaron                                                                         Entre las más destacadas se encuentran cuatro nuevas
+
+                                                                                     ARTICULACIÓN
+      con la posibilidad de sumar experiencia mediante estos acuerdos.                                                                                   aulas, oficina para el Departamento de Educación y
+                                                                                                                                                         Deporte, oficina compartida para el Departamento
+
+                                                                                     CURRICULAR CON                                                      de Economía y Administración y los Institutos de
+                                                                                                                                                         Comunicación, Extensión Académica e Investigación
+
+      EL TERCIARIO, TAMBIÉN CON EL FOCO EN LO DIGITAL                                ESBA                                                                interdisciplinaria, oficina de atención de alumnos,
+                                                                                                                                                         bedelía y fotocopiado y sala de biblioteca.
+
+
+      Se reactivó el formulario de inscripción al terciario y se generó un           Con Escuelas Superiores de Buenos Aires se formalizó un
+      enlace que permite medir la interacción, la cantidad de clics y los            convenio de equivalencias con los títulos “Tecnicatura Superior
+      canales. Además de las modificaciones permanentes en el sitio web              en Marketing” y “Tecnicatura Superior en Administración de
+      para mejorar la experiencia del usuario, se llevó a cabo el lanzamiento        Empresas”, lo que ampliaría la matriculación de las mismas.
+      de la campaña de inscripciones para 2020 a la carrera de Periodismo
+      Deportivo. Al igual que en el Instituto River, se implementó una               Por otro lado, se formalizó el dictado del Bachillerato a
+      estrategia de contenidos para las distintas redes sociales.                    distancia, complementando así la oferta formativa del Club.
+                                                                                     El mismo es de formato acelerado, con una duración de dos
+                                                                                     años. El objetivo principal es brindar a los deportistas del Club
+                                                                                     la posibilidad de recibirse en un esquema más sencillo, con
+                                                                                     tutorías en las instalaciones del IURP.
+
+
+
+
+102          RIVER PLATE • 2018 / 2019                                                                                                                                                                             RIVER PLATE • 2018 / 2019   103
+
+
+
+--- pág. 54 ---
+
+
+      IMPORTANTES ENCUENTROS PARA ENRIQUECER A LOS ALUMNOS                                                                                                                                    VIVIR DESDE ADENTRO LOS                                                                        PARTICIPACIÓN EN LOS JUEGOS
+      Todos los estudiantes de la carrera de Periodismo Deportivo contaron con la presencia de mujeres de gran trayectoria: Débora D’Amato (América), Soledad Larghi (América), Claudia
+                                                                                                                                                                                              JUEGOS OLÍMPICOS DE LA                                                                         UNIVERSITARIOS NACIONALES
+      Villapún (UNICEF, ex-Olé), Agostina Scalise (Fox Sports), Bárbara Vitantonio (TyC Sports) y Cecilia Bonelli (ESPN). En otra charla, Fernando Cavenaghi respondió las preguntas acerca   JUVENTUD                                                                                       El Instituto Universitario River Plate participó en los Juegos Universitarios Nacionales
+      de su carrera, el fútbol actual y el periodismo.
+                                                                                                                                                                                                                                                                                             que se desarrollaron en la Ciudad Autónoma de Buenos Aires entre el 8 y el 12 de
+                                                                                                                                                                                              Como parte de las prácticas profesionales, los estudiantes de la diplomatura
+      Durante la primera parte de 2019, esta carrera contó con grandes exponentes en varias materias: Alejandro Fabbri tuvo a su cargo Historia del Fútbol en primer año, donde pudo                                                                                                         mayo. Los alumnos participantes habían clasificado previamente en los Juegos
+                                                                                                                                                                                              en Enfermería Deportiva tuvieron la oportunidad de cubrir las guardias en
+      brindarles a los alumnos sus conocimientos. También, estuvieron presentes Guillermo Favale (periodista en C5N y entrenador de boxeo) en las clases de Boxeo y Marina Butrón (ex                                                                                                        Regionales 2018. La competencia se realizó con la participación de las universidades
+                                                                                                                                                                                              los Juegos Olímpicos de la Juventud 2018, Además de ser una excelente
+      voleibolista) en las clases de Vóley.                                                                                                                                                                                                                                                  de todo el país.
+                                                                                                                                                                                              experiencia, las guardias fueron rentadas, lo cual ayudó a muchos de ellos a
+                                                                                                                                                                                              cubrir la finalización de sus estudios.
+
+
+
+                                                                                                                                                                                                                                                                                             CAPACITACIONES, CURSOS Y
+                                                                                                                                                                                                                                                                                             JORNADAS
+                                                                                                                                                                                                                                                                                             El IURP dictó varias capacitaciones en el último período, tales como Diplomatura
+                                                                                                                                                                                                                                                                                             en Enfermería Deportiva, Diplomatura en Coaching Deportivo, Diplomatura en
+                                                                                                                                                                                                                                                                                             Dirección de Fútbol y Diplomatura en Alimentación y Suplementación para el
+                                                                                                                                                                                              CONFERENCIAS ABIERTAS                                                                          Deporte. Además, se alcanzó un convenio con Universidad Fasta para el dictado
+                                                                                                                                                                                                                                                                                             de diplomaturas a distancia. Por otro lado, se encuentran en proceso de desarrollo
+                                                                                                                                                                                              A LA COMUNIDAD                                                                                 las siguientes diplomaturas: Periodismo Deportivo, Psicología del Deporte (a cargo
+                                                                                                                                                                                                                                                                                             del personal de psicología del deporte del Club), Actividad Física y Discapacidad
+                                                                                                                                                                                              El IURP llevó a cabo esta acción, la cual contó con las siguientes exposiciones:               y Coaching Deportivo. Además, se desarrolló un curso de Deporte y Discapacidad
+
+                                                                                                                EL PRIMER LIBRO                                                               - Financiamiento y Gestión de Crisis en Entidades Deportivas. Disertante: Lic. Walter Porta.
+                                                                                                                                                                                                                                                                                             en convenio con la Organización de los Estados Iberoamericanos y el curso
+                                                                                                                                                                                                                                                                                             de Colonia de Vacaciones, el cual está destinado a profesores y alumnos de
+                                                                                                                Y LOS QUE VENDRÁN                                                             - El Deporte y la Pasión, un desafío sin límites. Disertante: Dr. Rodolfo D’Onofrio.
+                                                                                                                                                                                                                                                                                             Educación Física del Departamento Físico de River. Otros puntos a destacar son
+                                                                                                                                                                                                                                                                                             el Simposio Internacional sobre el Futuro del Fútbol Femenino y las Jornadas de
+                                                                                                                                                                                                                                                                                             Emergentología y Deporte.
+                                                                                                                Se editó la obra “La Gestión Aplicada al Deporte”. Estuvo presente en el      - El Marketing Deportivo desde adentro. Disertante: Nicolás Barg.
+                                                                                                                stand de la Editorial Stadium, durante la reciente Feria Internacional del
+                                                                                                                Libro 2019 y se encuentra en exhibición en el Museo River. Además, se         - Marketing Deportivo: El Cerebro del Equipo. Disertante Lic. Adrián Milberg.
+                                                                                                                está trabajando para la edición de dos nuevos libros sobre “Deporte y
+                                                                                                                Discapacidad” y “Deportes Alternativos”.                                      - Enzo Francescoli: De Principe a Manager. Disertante: Enzo Francescoli.
+
+
+
+
+104         RIVER PLATE • 2018 / 2019                                                                                                                                                                                                                                                                                                                 RIVER PLATE • 2018 / 2019         105
+
+
+
+--- pág. 55 ---
+
+[Divisor de sección — foto nocturna (luces) a página completa con el título "08 El mejor recurso" superpuesto, sin texto adicional.]
+
+
+                                  08 El mejor recurso
+
+106   RIVER PLATE • 2018 / 2019              RIVER PLATE • 2018 / 2019   107
+
+
+
+--- pág. 56 ---
+
+
+      EL MEJOR RECURSO
+      River transitó el segundo año del plan estratégico de Recursos Humanos, el cual tiene una duración de tres años. Este plan abarca todas las áreas y acompaña a la gestión de cambio
+      iniciada en 2014. Además, contiene objetivos anuales que apuntan a hacer de River un mejor lugar de trabajo.
+
+      Gestión de cambio                                                                               Más beneficios
+      Durante el último período se continuó consolidando la figura del “referente de recursos         El Club extendió su red de beneficios al empleado: merienda, Club Emergencias, becas en
+      humanos”, quien coordina la totalidad de solicitudes, consultas y reclamos de los               el Área Educativa del Club, días de cumpleaños, 10% de descuento para empleados en
+      sectores asignados, haciendo que para el empleado exista punto de contacto específico           vuelos de cabotaje con Aerolíneas Argentinas; descuentos exclusivos con DirectTV; ofertas
+      para resolver cualquier necesidad.                                                              en McDonald’s y ampliación del alcance en seguros de vida con la opción de aumentar el
+                                                                                                      capital asegurado.
+      A nivel estratégico, se realizaron algunas modificaciones en la estructura del Club que
+      apuntan a continuar el camino de la profesionalización. Por ejemplo, la Gerencia de             Además, se mantuvo la plataforma Ofertona, una web de ofertas para el empleado.
+      Operaciones ahora incluye una Gerencia de Infraestructura que administra a Mantenimiento,       Por último, continuó la carta exclusiva para empleados de River Plate con un 50% de
+      Centros de Entrenamiento y Gerencia de Estadio. Por otro lado, se modificó la estructura de     descuento en hidden bar Hello Doris.
+      la Gerencia de Marca, consolidando a las jefaturas de las subáreas como el área Comercial,
+      Medios y Comunicación y Marketing. También se creó River Internacional. El Departamento         Licencias Superliga, CONMEBOL y AFA
+      Médico tuvo el nombramiento de un jefe para el área de futbol, tanto profesional como           A partir de 2017 se estableció el reglamento de licencias en las distintas organizaciones
+      infanto-juvenil (Pedro Hansing), y se nombró como Director Médico a Humberto Roccaforte.        en las que el Club compite. Esto significa la obtención de un permiso otorgado en
+                                                                                                      base a los requerimientos de las entidades que organizan las competiciones. Para
+      Comunicación, desarrollo y clima laboral                                                        esto, fue relevada información según los criterios jurídicos, administrativos, deportivos,
+      Por otro lado, River continuó aprovechando las vías de comunicación generadas                   financieros y de infraestructura, gracias a lo cual River consiguió las licencias en tiempo
+      anteriormente, tales como el buzón de sugerencias, los correos y las carteleras. A partir       y forma.
+      de 2019, se lanzó una nueva vía de comunicación: una cuenta privada de Instagram
+      que facilita el intercambio entre pares y la comunicación formal e informal. También            Fiesta de fin de año
+      se realizaron comunicaciones especiales por el Día Internacional de la Mujer, Día del           2018 finalizó con una fiesta inolvidable, festejando la Copa Libertadores más importante
+      Trabajador, y otras efemérides.                                                                 de la historia con una convocatoria sin precedentes, con más de 800 invitados presentes.
+                                                                                                      ¡Un éxito difícil de igualar!
+      Capacitaciones
+      Continuando con lo realizado desde 2016, en 2019 se dio continuidad a los talleres de Excel e   Rama por Reunión
+      inglés. El foco siguió puesto en capacitar a los mandos medios del Club, dándole seguimiento    Continuó el trabajo para mejorar la organización del operativo de control de accesos
+      al desarrollo de competencias ya comenzado. En ese sentido, se capacitaron a más de 150         al Estadio para los días de partido. Además, River siguió prestándole mucha atención
+      empleados, llegando a 2186 horas totales de formación. En lo que respecta a capacitaciones      a la inclusión, incorporando jóvenes con capacidades diferentes para que trabajen los
+      específicas para cada área, se desarrollaron cursos en PowerPoint, talleres de negociación,     días en los cuales juega River como local, controlando tickets y realizando las tareas
+      Data Mining, programas en arquitectura y tecnología, gestión de proyectos, etc.                 del control de Estadio.
+
+
+
+
+108         RIVER PLATE • 2018 / 2019                                                                                                                                                               RIVER PLATE • 2018 / 2019   109
+
+
+
+--- pág. 57 ---
+
+
+                                  CRÉDITOS                   /
+                                    COORDINACIÓN EDITORIAL       María Victoria Álvarez
+
+
+
+
+                                                  AUTORÍA        Matías Brodsky
+
+
+
+
+                                            COLABORACIÓN         Lara Gasparini
+
+
+
+
+                                             MAQUETACIÓN         Matías Baretta
+
+
+
+
+                                           DISEÑO GRÁFICO        Lucho Festa
+
+
+
+
+                                               FOTOGRAFÍA        Diego Haliasz
+
+
+
+
+110   RIVER PLATE • 2018 / 2019                                                           RIVER PLATE • 2018 / 2019   111
+
+
+
+--- pág. 58 ---
+
+[Página en blanco con el escudo de River Plate centrado, pequeño, en escala de grises/color — página interna de cierre antes de la contratapa. Sin texto ni cifras.]
+
+
+112   RIVER PLATE • 2018 / 2019
+
+
+
+--- pág. 59 ---
+
+[Página de imagen — repite el spread de tapa/contratapa de la página 1 (trofeo Libertadores a la izquierda, plantel campeón + "MEMORIA EJERCICIO ADMINISTRATIVO 2018-2019" a la derecha), incluido al final del PDF para impresión. Sin texto ni cifras adicionales. Fin del documento.]
+
+
+
