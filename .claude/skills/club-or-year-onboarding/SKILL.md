@@ -84,6 +84,78 @@ Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
   llaman a `yearMetaFor`), nunca acá. Si tocás esta función para sumarle algo, mantené esa
   separación (no le agregues un `toDisplayValue` adentro).
 
+## 2a. Arquitectura de archivos para un club nuevo (Versión 51, YA NO es negociable por sesión)
+
+Hasta la Versión 51, index.html era un solo `<script>` de ~2700 líneas con datos de Boca, cálculo y
+render mezclados, y River/Racing se bajaban siempre aunque el visitante solo mirara Boca. Guido pidió
+una limpieza de arquitectura ANTES de seguir agregando clubes, justamente para que este reparto no
+dependiera de que cada sesión se acuerde de hacerlo bien. Lo que sigue es la estructura VIGENTE desde
+el día uno para cualquier club nuevo, no una limpieza de una sola vez:
+
+- **Datos del club, en su propio `data/<club>-data.js`.** Mismo patrón que ya tienen
+  `data/river-data.js`/`data/racing-data.js` (y, desde la Versión 51, `data/boca-data.js`):
+  `<club>RevenueLinesByYear`, `<club>ExpenseLinesByYear`, `<club>FiscalYearMeta`, `<club>PasesData`,
+  `<club>ResultadosData`, `<club>TitulosData`. NUNCA pegues los datos de un club nuevo inline en el
+  `<script>` de index.html, ni en `js/finanzas-calc.js`/`js/finanzas-render.js` (esos dos archivos
+  son solo funciones, cero datos de un club puntual).
+- **Cálculo separado de render.** Si el club nuevo usa el motor genérico (`revenueLines`/
+  `expenseLines` + `normalizedCategory`, ver sección 2 arriba), probablemente NO necesitás escribir
+  ninguna función nueva: `computeYearGeneric`/`simplifiedReportForGeneric`/`nativeReportFor` (en
+  `js/finanzas-calc.js`) y `renderNativePLTable`/`update*ByGestion/ByAnioGeneric` (en
+  `js/finanzas-render.js`) ya son genéricas por `clubId`. Si de verdad hace falta una función nueva
+  porque el club tiene algo que ningún club anterior tenía (ej. un tipo de card nuevo), preguntate
+  primero si CALCULA algo (va a `finanzas-calc.js`, sin tocar el DOM) o si PINTA algo (va a
+  `finanzas-render.js`), no la agregues suelta en el `<script>` principal de index.html — ese
+  archivo es solo estado compartido (`currentClub`, `currentCurrency`, etc.) y orquestación
+  (`refreshFinanzas`/`refreshAllForClub`/`verifyTieOuts`/event listeners), no lugar para lógica
+  nueva de un club.
+- **Nombres de campo: copiá `normalizedCategory` de `data/category-map.js`, no inventes uno
+  nuevo sin mirar primero.** Ver `club-data-mapping` sección 1 para la tabla de mapeos ya usados.
+  Si agregás una categoría nueva de verdad (no existía en ningún club anterior), sumala a
+  `REVENUE_CATEGORIES`/`EXPENSE_CATEGORIES` y sus `_LABELS` en `category-map.js` EN LA MISMA
+  sesión en la que la usás por primera vez, no lo dejes para después: la Versión 51 encontró y
+  corrigió `player_sales` (usado en `racing-data.js` desde la Versión 15/16, pero nunca sumado a
+  `category-map.js`, que en cambio tenía un `transfer_income_gross` que nadie usaba) — quedó así
+  de desincronizado varias versiones simplemente porque nadie lo agregó en el momento. Si además
+  agregás la categoría a `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (en
+  `js/finanzas-calc.js`), usá el nombre nuevo directo, sin dejar un alias del nombre viejo/temporal
+  que probaste primero.
+- **Lazy-loading: sumar el club a la carga bajo demanda, NUNCA al `<head>` fijo.** El archivo
+  `data/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
+  solo tiene `clubs.js`/`category-map.js`/`boca-data.js`/`js/finanzas-calc.js`/
+  `js/finanzas-render.js`, porque Boca es el club default). En cambio:
+  1. Sumá una entrada a `CLUB_DATA_SCRIPT_SRC` (cerca de `let currentClub = 'boca';`, en
+     index.html): `{ river: 'data/river-data.js', racing: 'data/racing-data.js', <club>:
+     'data/<club>-data.js' }`. Con solo esto, `loadClubData(clubId)` ya sabe inyectar el `<script>`
+     la primera vez que alguien elige ese club en `clubSelect`.
+  2. Sumá una rama al ternario de `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub`
+     (mismo archivo, index.html): `clubId === '<club>' ? <club>PasesData : ...`.
+  3. Sumá un bloque nuevo a `verifyTieOuts()`, gateado igual que los de racing/river:
+     `if(typeof <club>FiscalYearMeta !== 'undefined'){ ...checks.push(...)... }`. Sin este guard,
+     el chequeo tira `ReferenceError` para cualquier visitante que todavía no cargó ese club.
+  4. Si el club nuevo pasa a ser el DEFAULT en vez de Boca (poco probable, pero por si acaso): recién
+     ahí su `data/<club>-data.js` sí va al `<head>` como `<script src>` fijo, sacándolo de
+     `CLUB_DATA_SCRIPT_SRC`, mismo criterio que hoy tiene Boca.
+- **Regla nueva, sumada por el bug real de la Versión 51: nunca armes un objeto `{ river: X, racing:
+  Y, <club>: Z }` de una sola vez para indexarlo después por `clubId`.** Un objeto así evalúa TODAS
+  sus propiedades al crearse — con lazy-loading, eso lee la variable global del club que el
+  visitante NO eligió, que puede no estar cargada todavía, y tira `ReferenceError` (pasó en
+  `drawTrendChartGeneric`/`populateFinanzasSelectors`, con `{ river: riverFiscalYearMeta, racing:
+  racingFiscalYearMeta }`). Usá siempre un ternario (`clubId === 'river' ? riverX : clubId ===
+  'racing' ? racingX : <club>X`) o una función que reciba `clubId` y solo lea el global adentro
+  (como `pasesDataForClub`, punto 2 arriba): las dos formas solo evalúan la rama que efectivamente
+  hace falta, nunca las otras. Si al agregar un club nuevo encontrás un objeto de este tipo en el
+  código (buscá `river:` seguido de `racing:` en la misma línea/bloque), convertilo ANTES de sumarle
+  una tercera rama, no repliques el patrón viejo.
+- **Verificación obligatoria en el navegador, no alcanza con que el código "se vea bien":** con
+  Network abierto, cargar la página de cero y confirmar que `data/<club>-data.js` NO aparece en la
+  lista (solo `clubs.js`/`category-map.js`/`boca-data.js`/los 2 `js/finanzas-*.js`); elegir el club
+  nuevo y confirmar que ahí SÍ aparece un único GET 200; volver a Boca y de nuevo al club nuevo, y
+  confirmar que esta vez NO se vuelve a pedir (debe quedar cacheado en `clubDataLoaded`). Un
+  `window.addEventListener('error', ...)` propio durante ese ciclo (en vez de solo leer la consola
+  acumulada) es más confiable para no dejar pasar un `ReferenceError` real, ver Versión 51 del
+  historial de index.html para el detalle de los 2 bugs que este chequeo habría agarrado.
+
 ## 3. Bug real encontrado en esta sesión, gastosTotal ya viene convertido
 
 Al generalizar `renderFinanzasStatsGeneric(cur, gastosTotal)` para que respete el toggle de moneda,

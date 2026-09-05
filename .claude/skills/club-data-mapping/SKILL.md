@@ -14,15 +14,21 @@ distintos) queden categorizados con criterios diferentes sin querer.
 ## 0. Ubicate primero
 
 - La taxonomía compartida ya existe en `data/category-map.js` (`REVENUE_CATEGORIES`,
-  `EXPENSE_CATEGORIES`). Léela antes de inventar una categoría nueva, probablemente ya está. OJO:
-  ese archivo está desactualizado (to-do pendiente, no bloqueante), le faltan `broadcasting` y
-  `player_sales` en `REVENUE_CATEGORIES`, categorías que Racing ya usa en la práctica (ver tabla de
-  la sección 1 acá abajo, que SÍ está al día). El motor genérico del sitio
-  (`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` en index.html, usado por "Formato
-  simplificado" de River/Racing) tampoco lee `category-map.js` en vivo, tiene su propia lista de
-  buckets hardcodeada. Si actualizás `category-map.js` para que refleje la realidad, recordá
-  sincronizar esos buckets de index.html también (o viceversa) para que no queden dos fuentes de
-  verdad divergentes.
+  `EXPENSE_CATEGORIES`). Léela antes de inventar una categoría nueva, probablemente ya está.
+  REGLA (desde la Versión 51, ya NO es "to-do pendiente"): `category-map.js` tiene que reflejar
+  EXACTAMENTE los `normalizedCategory` que de verdad usan `river-data.js`/`racing-data.js`/el club
+  nuevo que estés cargando, sin excepción y sin dejarlo para después. Se encontró y corrigió en la
+  Versión 51 que `category-map.js` documentaba `transfer_income_gross` (categoría que NINGÚN dato
+  real usaba) mientras que `racing-data.js` usaba `player_sales` desde la Versión 15/16 sin que
+  nadie lo hubiera sumado a `REVENUE_CATEGORIES`/`REVENUE_CATEGORY_LABELS` — quedó desincronizado
+  varias versiones porque "no bloqueaba nada" (el motor genérico igual funcionaba). Cuando agregues
+  o uses una `normalizedCategory` nueva, actualizá `category-map.js` EN LA MISMA sesión, no lo
+  anotes como pendiente. El motor genérico del sitio (`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
+  `_EXPENSE_BUCKETS`, ahora en `js/finanzas-calc.js` desde la Versión 51, antes en index.html)
+  tampoco lee `category-map.js` en vivo, tiene su propia lista de buckets hardcodeada: si tocás uno,
+  sincronizá el otro a mano, para que no queden dos fuentes de verdad divergentes (ver
+  `club-or-year-onboarding` sección 2a para el detalle de dónde vive cada archivo desde la
+  Versión 51).
 - `normalizedCategory` es una clave INTERNA, usada solo por `computeYearGeneric()` /
   `sumCat()` para armar los KPIs de arriba de Finanzas, los gráficos y `wagesToTurnover`. NUNCA se
   muestra al usuario. Lo que el usuario ve es `rawLabel`, tal cual lo escribe el club, no lo
@@ -186,7 +192,7 @@ patrón" para clubes nuevos. Esa recomendación quedó OBSOLETA: a partir de la 
 clubes cargados (Boca, River, Racing) guardan `amountNative` en ARS millones NATIVOS (tal cual el
 balance/presupuesto), con `fiscalYearMeta[year].currency`/`fx` diciendo en qué moneda está y con
 qué tipo de cambio convertir, la conversión pasa siempre al momento de renderizar
-(`yearMetaFor(clubId, year)` + `toDisplayValue`, ver index.html), nunca al cargar el dato. Esto es
+(`yearMetaFor(clubId, year)` + `toDisplayValue`, ambas en `js/finanzas-calc.js` desde la Versión 51), nunca al cargar el dato. Esto es
 lo que habilita el toggle USD/ARS en vivo. Si se agrega un club argentino nuevo (u otro país con
 moneda propia y clubes que declaren su balance en esa moneda), seguí ESTE patrón (ARS/moneda
 nativa + fx en meta), no el viejo de "siempre USD, sin toggle", el toggle USD/ARS + Formato del
@@ -273,7 +279,7 @@ reclasificado, pero no había forma de auditar de qué campo(s) nativo(s) salió
 sin cambiar de toggle y buscar a mano. Guido lo pidió como su forma de controlar el trabajo de
 categorización: cada fila de Formato Simplificado tiene que poder abrirse y mostrar la cuenta.
 
-Implementado por ahora SOLO para Boca (`simplifiedReportForBoca()` en index.html). River/Racing
+Implementado por ahora SOLO para Boca (`simplifiedReportForBoca()`, en `js/finanzas-calc.js` desde la Versión 51). River/Racing
 (`simplifiedReportForGeneric()`/`bucketize()`) siguen con `items:null` en cada bucket, pendiente.
 Cuando se toque ese motor genérico, aplicar el mismo criterio:
 
@@ -307,7 +313,7 @@ Guido pidió explícito: "utiliza para todos los Formato Simplificado el formato
 logica." Esto es la fuente de verdad de ese pedido, para cualquier club nuevo o cambio futuro a
 `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` (el motor de River/Racing).
 
-**Categorías/lógica de referencia, la de Boca (`simplifiedReportForBoca()` en index.html), no la
+**Categorías/lógica de referencia, la de Boca (`simplifiedReportForBoca()`, en `js/finanzas-calc.js`), no la
 que ya tenía el motor genérico:**
 - Ingresos: Cuotas Sociales, Comercial / Sponsors, Estadio (recaudación de partidos + Televisión +
   Premios por competencias, combinados en una sola fila "Estadio (TV y premios incluidos)" cuando
