@@ -468,8 +468,11 @@
   function drawTrendChartGeneric(clubId, computedArr){
     if(typeof Chart === 'undefined') return;
     const ctx = document.getElementById('trendChart').getContext('2d');
-    const fiscalYearMetaByClub = { river: riverFiscalYearMeta, racing: racingFiscalYearMeta };
-    const isReal = year => (fiscalYearMetaByClub[clubId][year] || {}).reportType !== 'placeholder';
+    // Ternario, no un objeto { river: riverFiscalYearMeta, racing: racingFiscalYearMeta } armado de
+    // una: ese objeto evalúa LAS DOS propiedades al crearse, y con lazy-loading (loadClubData en
+    // index.html) el archivo del club que NO se está mirando puede no estar cargado todavía, tira
+    // ReferenceError. El ternario solo evalúa la rama que efectivamente hace falta.
+    const isReal = year => ((clubId === 'river' ? riverFiscalYearMeta[year] : racingFiscalYearMeta[year]) || {}).reportType !== 'placeholder';
     const labels = computedArr.map(c => String(c.year));
     const revenueData = computedArr.map(c => isReal(c.year) ? toDisplayValue(c.revenue, yearMetaFor(clubId, c.year), currentCurrency) : null);
     const expensesData = computedArr.map(c => isReal(c.year) ? Math.abs(toDisplayValue(c.expenses, yearMetaFor(clubId, c.year), currentCurrency)) : null);
@@ -577,8 +580,9 @@
     } else {
       const gestiones = gestionesByClub[clubId];
       gestionSelect.innerHTML = Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
-      const fiscalYearMetaByClub = { river: riverFiscalYearMeta, racing: racingFiscalYearMeta };
-      const meta = fiscalYearMetaByClub[clubId];
+      // Ternario, no un objeto armado de una (ver mismo comentario en drawTrendChartGeneric): con
+      // lazy-loading, el club que no se está mirando puede no estar cargado todavía.
+      const meta = clubId === 'river' ? riverFiscalYearMeta : racingFiscalYearMeta;
       // Object.keys() de un objeto con claves numéricas ("2024","2025"...) las devuelve SIEMPRE en
       // orden ASCENDENTE (son "integer-like keys". JS las reordena así sin importar el orden en el
       // código fuente), por eso salía el ejercicio más viejo primero. Se ordena acá a mano,
@@ -918,7 +922,7 @@
     const gestiones = gestionesByClub[clubId];
     document.getElementById('pasesGestionFilter').innerHTML = '<option value="todas">Todas</option>' +
       Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
-    const data = pasesDataByClub[clubId] || [];
+    const data = pasesDataForClub(clubId) || [];
     const anios = [...new Set(data.map(r => r.anio))].sort((a,b) => b-a);
     document.getElementById('pasesAnioFilter').innerHTML = '<option value="todos">Todos</option>' +
       anios.map(a => `<option value="${a}">${a}</option>`).join('');
@@ -932,7 +936,7 @@
     const anio = document.getElementById('pasesAnioFilter').value;
     const ventana = document.getElementById('pasesVentanaFilter').value;
     const tipo = document.getElementById('pasesTipoFilter').value;
-    const data = pasesDataByClub[currentClub] || [];
+    const data = pasesDataForClub(currentClub) || [];
     const rows = data.filter(r =>
       (gestion === 'todas' || r.gestion === gestion) &&
       (anio === 'todos' || String(r.anio) === anio) &&
@@ -968,7 +972,7 @@
 
   function renderResultados(){
     const key = document.getElementById('resultadosGestionSelect').value;
-    const dataset = resultadosDataByClub[currentClub] || {};
+    const dataset = resultadosDataForClub(currentClub) || {};
     const r = dataset[key];
     if(!r) return;
     document.getElementById('resultadosStats').innerHTML = `
@@ -982,7 +986,7 @@
 
   function renderTitulosTable(){
     const gestiones = gestionesByClub[currentClub];
-    const data = titulosDataByClub[currentClub] || [];
+    const data = titulosDataForClub(currentClub) || [];
     document.querySelector('#resultadosTable tbody').innerHTML = data.map(t => `
       <tr><td>${t.anio}</td><td>${t.competencia}</td><td>${t.resultado}</td><td>${gestiones[t.gestion] ? gestiones[t.gestion].nombre : t.gestion}</td></tr>
     `).join('');
@@ -1012,7 +1016,7 @@
     document.getElementById('compAHead').textContent = ga.nombre;
     document.getElementById('compBHead').textContent = gb.nombre;
     const netSpendA = pasesNetSpend(currentClub, aKey), netSpendB = pasesNetSpend(currentClub, bKey);
-    const resultadosDataset = resultadosDataByClub[currentClub] || {};
+    const resultadosDataset = resultadosDataForClub(currentClub) || {};
     const rA = resultadosDataset[aKey] || {titulosLocales:0, titulosInternacionales:0, mejorResultadoLibertadores:'—'};
     const rB = resultadosDataset[bKey] || {titulosLocales:0, titulosInternacionales:0, mejorResultadoLibertadores:'—'};
     const rows = [

@@ -628,7 +628,7 @@
 
 
   function pasesNetSpend(clubId, gestionKey){
-    const data = pasesDataByClub[clubId] || [];
+    const data = pasesDataForClub(clubId) || [];
     return data.filter(r => r.gestion === gestionKey && r.tipo === 'Jugador').reduce((s,r) => s+r.monto, 0);
   }
 

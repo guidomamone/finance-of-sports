@@ -34,17 +34,20 @@ logo del header, no de la carpeta ni del repo).
 
 ESTADO ACTUAL (al día, después de la Versión 51, última de esta sesión, ver detalle de cada
 versión más abajo)
-- ARQUITECTURA (Versión 51, limpieza pedida por Guido antes de seguir agregando clubes, Pasos 1 y
-  2 de 3, ver detalle completo en el historial de Versión 51 más abajo): el código de Finanzas que
-  vivía todo junto en el `<script>` de este archivo ahora está separado en 3 archivos nuevos —
-  `data/boca-data.js` (datos de Boca, antes inline acá), `js/finanzas-calc.js` (funciones de
-  cálculo puro, sin DOM) y `js/finanzas-render.js` (funciones que arman HTML/gráficos) — cargados
-  como `<script src>` ANTES del script principal. Cero cambio de comportamiento (verificado en el
-  navegador: los 3 clubes, las 2 vistas de Finanzas, los dos toggles, y las 16 verificaciones de
-  `verifyTieOuts()` siguen cerrando igual). Pendiente y NO hecho todavía (Paso 3, esperando que
-  Guido confirme que el sitio anda bien con los Pasos 1-2 antes de arrancarlo): lazy-loading de
-  `data/river-data.js`/`data/racing-data.js` (hoy los 3 clubes se siguen bajando siempre, aunque el
-  visitante solo mire uno).
+- ARQUITECTURA (Versión 51, limpieza pedida por Guido antes de seguir agregando clubes, los 3
+  pasos ya hechos, ver detalle completo en el historial de Versión 51 más abajo): el código de
+  Finanzas que vivía todo junto en el `<script>` de este archivo ahora está separado en 3 archivos
+  nuevos — `data/boca-data.js` (datos de Boca), `js/finanzas-calc.js` (cálculo puro, sin DOM) y
+  `js/finanzas-render.js` (arma HTML/gráficos) — cargados como `<script src>` ANTES del script
+  principal. Además, `data/river-data.js`/`data/racing-data.js` (~17 KB y ~46 KB) YA NO se bajan
+  siempre: se inyectan bajo demanda (`loadClubData(clubId)`, en el `<script>` principal) recién
+  cuando el visitante elige ese club en el selector de arriba a la derecha; Boca sigue siendo el
+  único club que carga siempre (es el default). Cero cambio de comportamiento visible (verificado
+  extensamente en el navegador: los 3 clubes, las 2 vistas de Finanzas, los dos toggles, las 6
+  pestañas, y las 16 verificaciones de `verifyTieOuts()` siguen cerrando igual). Pendiente
+  (esperando que Guido confirme que el sitio anda bien con los 3 pasos hechos): actualizar los
+  skills `club-or-year-onboarding`/`club-data-mapping` con esta arquitectura nueva, para que un
+  club nuevo la siga desde el día uno.
 - REGLA (Versión 50, Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL
   TOTAL" de al lado, difícil de leer): `ejercicioLabel(year, isPresupuesto)` cambió de firma, antes
   el 2do parámetro era un `suffix` de texto libre agregado AL FINAL ("Ejercicio 2026/2027
@@ -2665,8 +2668,8 @@ estaria bueno que pusiera Presupuesto 2026/2027, lo cual ahorra letras y permite
   tabla ahora dice "PRESUPUESTO 2026/2027" en una sola línea, sin invadir "% DEL TOTAL". Cero
   errores de consola.
 ==================================================================================
-VERSIÓN 51: LIMPIEZA DE ARQUITECTURA ANTES DE SEGUIR AGREGANDO CLUBES (PASOS 1-2 DE 3: FIX DE
-CATEGORY-MAP.JS Y SEPARACIÓN CÁLCULO/RENDER; PASO 3, LAZY-LOADING, QUEDA PENDIENTE)
+VERSIÓN 51: LIMPIEZA DE ARQUITECTURA ANTES DE SEGUIR AGREGANDO CLUBES (LOS 3 PASOS: FIX DE
+CATEGORY-MAP.JS, SEPARACIÓN CÁLCULO/RENDER, Y LAZY-LOADING DE RIVER/RACING)
 ==================================================================================
 Guido pidió una auditoría de arquitectura antes de seguir cargando clubes nuevos (sin cambiar nada
 visible), un plan concreto, y recién con su OK, implementarlo en 3 commits de git separados para
@@ -2736,14 +2739,11 @@ archivos resultantes):
 - Lo que quedó en index.html a propósito (no es "cálculo" ni "render", es estado/orquestación):
   `FX_RATE`/`currentCurrency`/`simplifyFormat`/`currentClub` (estado mutable compartido),
   `refreshFinanzas`/`refreshAllForClub` (orquestan, llaman a las funciones movidas en el orden
-  correcto), `verifyTieOuts` (corre las 16 verificaciones), los `pasesDataByClub`/
-  `resultadosDataByClub`/`titulosDataByClub` (glue que combina Boca+River+Racing), y el bloque
-  `INIT`/event listeners.
-- Orden de carga nuevo en el `<head>`: `data/clubs.js` → `data/category-map.js` →
+  correcto), `verifyTieOuts` (corre las verificaciones), y el bloque `INIT`/event listeners.
+- Orden de carga en el `<head>` después de este commit: `data/clubs.js` → `data/category-map.js` →
   `data/river-data.js` → `data/racing-data.js` → `data/boca-data.js` → `js/finanzas-calc.js` →
-  `js/finanzas-render.js` → `<script>` principal. Los 3 archivos nuevos se agregan DESPUÉS de los
-  data files existentes y ANTES del script principal, mismo patrón que ya usaban `river-data.js`/
-  `racing-data.js`.
+  `js/finanzas-render.js` → `<script>` principal (el Commit 3, más abajo, saca River/Racing de
+  acá).
 - Verificado extensamente en el navegador (no solo `verifyTieOuts()`): los 3 clubes, las 2 vistas
   de Finanzas (Año a año / Por gestión), los dos toggles (USD/ARS, Formato del club/simplificado)
   probados juntos y por separado, las pestañas Mercado de Pases/Resultados/Comparar Gestiones/
@@ -2751,12 +2751,64 @@ archivos resultantes):
   cerrando exacto igual que antes del refactor. Cero errores de consola. Los 3 archivos nuevos
   cargan 200 (o 304 en la recarga siguiente), no 404.
 
-Pendiente (Paso 3, lazy-loading por club): todavía NO implementado a propósito. Guido pidió pausar
-acá para revisar el sitio con los Pasos 1-2 ya hechos (los 3 clubes, todas las pestañas, los dos
-toggles) antes de arrancar el Paso 3. Recién después de esa confirmación se actualiza también
-`club-or-year-onboarding`/`club-data-mapping` con la arquitectura nueva (pedido explícito de Guido:
-esperar a que los 3 pasos estén confirmados funcionando, no documentar una arquitectura todavía sin
-probar del todo).
+Guido revisó el sitio con los Pasos 1-2 ya hechos ("veo todo bien") y dio el OK para el Paso 3.
+
+Commit 3 (`perf: lazy-load river/racing data files on club switch`): `data/river-data.js`
+(~17 KB) y `data/racing-data.js` (~46 KB) ya NO están en el `<head>` como `<script src>` fijo, se
+inyectan bajo demanda con una función nueva en index.html, `loadClubData(clubId)` (crea un
+`<script>`, lo agrega a `<head>`, resuelve una Promise en su `onload`), cacheando en
+`clubDataLoaded{}` qué club ya se bajó para no volver a pedir el archivo si el visitante va y
+vuelve entre clubes. El listener de `clubSelect` ahora es async: espera a `loadClubData(newClub)`
+antes de setear `currentClub`/llamar a `refreshAllForClub()`; si la carga falla (red caída), revierte
+el `<select>` al club anterior y avisa con un `alert()`, en vez de dejar la pantalla a medio
+actualizar. Boca sigue siendo el único club que carga siempre (`data/boca-data.js` en el `<head>`,
+sin cambios), es el club default.
+- 2 bugs reales encontrados y corregidos AL PROBAR EN EL NAVEGADOR (no se habrían visto revisando
+  el código a mano ni con `node --check`, que solo valida sintaxis): 3 lugares del código (2 en
+  `finanzas-render.js`: `drawTrendChartGeneric`/`populateFinanzasSelectors`; y los 3 diccionarios
+  `pasesDataByClub`/`resultadosDataByClub`/`titulosDataByClub` que antes vivían en index.html)
+  armaban un objeto `{ river: riverFiscalYearMeta, racing: racingFiscalYearMeta }` (o el
+  equivalente con pasesData/resultadosData/titulosData) para después indexarlo por `clubId`. Un
+  objeto así evalúa SUS DOS propiedades al crearse, así que con lazy-loading tira
+  `ReferenceError: racingFiscalYearMeta is not defined` en cuanto el visitante elige River (el
+  archivo de Racing todavía no se bajó, pero el objeto igual intenta leer esa variable global para
+  poder armar la propiedad `racing:` del objeto, aunque después nunca se use esa rama). Fix: los 2
+  lugares de `finanzas-render.js` pasaron a un ternario (`clubId === 'river' ? riverX : racingX`,
+  que solo evalúa la rama que hace falta); los 3 diccionarios pasaron de `const` armados una sola
+  vez a funciones (`pasesDataForClub(clubId)`/`resultadosDataForClub(clubId)`/
+  `titulosDataForClub(clubId)`, mismo ternario adentro), porque solo una función difiere la lectura
+  del global hasta el momento en que efectivamente se LLAMA (que siempre pasa después de que
+  `loadClubData` ya resolvió). Regla general para el futuro (sumada a `club-or-year-onboarding`):
+  con lazy-loading, cualquier `{ river: X, racing: Y }` armado de una vez es sospechoso, hay que
+  revisar si se puede reemplazar por un ternario o una función.
+- `verifyTieOuts()` ahora acepta un `onlyClub` opcional, con los bloques de checks de Racing/River
+  gateados por `typeof racingFiscalYearMeta !== 'undefined'`/`typeof riverFiscalYearMeta !==
+  'undefined'`: al abrir la página (INIT) solo corren los 3 checks de Boca (único club cargado en
+  ese momento); el listener de `clubSelect` llama a `verifyTieOuts(newClub)` de nuevo apenas
+  `loadClubData` resuelve, así el club recién cargado también se verifica, solo que DIFERIDO al
+  momento en que su dato realmente llega, en vez de perderse la verificación por completo.
+- Alcance deliberado, NO movido en este commit: las cards "Supuestos"/"Presupuesto
+  Financiero"/"Presupuesto de Inversiones" de Racing (`presupuestoSupuestosByClub.racing` y
+  afines, en `js/finanzas-render.js`, agregadas en el Commit 2) siguen cargando siempre, no se
+  movieron a `data/racing-data.js`. Es contenido de card (unos pocos KB de texto), no la data
+  financiera pesada (`revenueLines`/`expenseLines`/`fiscalYearMeta`, que sí son el ~46 KB/~17 KB
+  que efectivamente se estaban bajando de más) — mover esto también habría exigido que
+  `racing-data.js` mute un objeto ya declarado en `finanzas-render.js` (un acoplamiento entre
+  archivos más frágil), por un ahorro chico. Documentado como decisión de alcance, no como deuda
+  silenciosa: si se vuelve un problema real de peso, es un cambio acotado a esos 3 diccionarios.
+- Verificado extensamente en el navegador: carga fresca (Network confirma que `river-data.js`/
+  `racing-data.js` NO se piden hasta elegir ese club), switch racing→river→boca→racing→river con
+  un listener de `window.addEventListener('error', ...)` propio (más confiable que leer la consola
+  acumulada de sesiones de prueba previas) sin ningún error, re-selección del mismo club sin volver
+  a pedir el archivo (confirmado en Network, un solo GET 200 por archivo en toda la sesión), los 3
+  clubes con los 2 toggles y las 6 pestañas, y las verificaciones de `verifyTieOuts()` (Boca +
+  Racing + River) cerrando igual que en los Commits 1-2.
+
+Con los 3 pasos confirmados funcionando, se actualizan a continuación los skills
+`club-or-year-onboarding` y `club-data-mapping` para que esta arquitectura (data file propio del
+club cargado bajo demanda, cálculo separado de render, nombres de campo consistentes con
+`category-map.js`) sea el punto de partida del próximo club, no una limpieza única que se pueda
+perder de vista.
 -->
 
 
@@ -3524,11 +3576,11 @@ probar del todo).
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
 <script src="data/clubs.js"></script>
 <script src="data/category-map.js"></script>
-<script src="data/river-data.js"></script>
-<script src="data/racing-data.js"></script>
 <script src="data/boca-data.js"></script>
 <script src="js/finanzas-calc.js"></script>
 <script src="js/finanzas-render.js"></script>
+<!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
+     (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
   const FX_RATE = 1450; // ARS por USD, placeholder de referencia
   let currentCurrency = 'USD';
@@ -3540,6 +3592,25 @@ probar del todo).
   // resultado operativo, etc.) pero a partir de listas de líneas (revenueLines/expenseLines)
   // en vez de campos fijos, porque cada club tiene una cantidad distinta de rubros reales.
   let currentClub = 'boca';
+
+  // ---------- CARGA BAJO DEMANDA (LAZY LOADING) DE DATOS POR CLUB ----------
+  // Boca es el club default (carga siempre, vía data/boca-data.js en el <head>, igual que antes).
+  // River y Racing (~17 KB y ~46 KB respectivamente) ya NO se bajan en el <head>: se inyectan como
+  // <script> recién cuando el visitante elige ese club en `clubSelect`, así alguien que solo mira
+  // Boca no paga el peso de los otros 2 clubes. `clubDataLoaded` cachea qué ya se bajó, para no
+  // volver a pedir el archivo si el visitante va y vuelve entre clubes en la misma visita.
+  const CLUB_DATA_SCRIPT_SRC = { river: 'data/river-data.js', racing: 'data/racing-data.js' };
+  const clubDataLoaded = { boca: true };
+  function loadClubData(clubId){
+    if(clubDataLoaded[clubId] || !CLUB_DATA_SCRIPT_SRC[clubId]) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = CLUB_DATA_SCRIPT_SRC[clubId];
+      script.onload = () => { clubDataLoaded[clubId] = true; resolve(); };
+      script.onerror = () => reject(new Error('No se pudo cargar ' + CLUB_DATA_SCRIPT_SRC[clubId]));
+      document.head.appendChild(script);
+    });
+  }
 
   function refreshFinanzas(){
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
@@ -3593,8 +3664,19 @@ probar del todo).
   }
 
   document.getElementById('clubSelect').addEventListener('change', (e) => {
-    currentClub = e.target.value;
-    refreshAllForClub();
+    const select = e.target;
+    const newClub = select.value;
+    const previousClub = currentClub;
+    select.disabled = true;
+    loadClubData(newClub).then(() => {
+      currentClub = newClub;
+      refreshAllForClub();
+      verifyTieOuts(newClub);
+    }).catch(err => {
+      console.error(err);
+      select.value = previousClub;
+      alert('No se pudieron cargar los datos de ese club. Probá de nuevo en un momento.');
+    }).finally(() => { select.disabled = false; });
   });
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
@@ -3613,7 +3695,14 @@ probar del todo).
   // Verificación automática: para cada club-ejercicio que tiene un total oficial conocido,
   // chequea que la suma de las líneas cargadas coincida. Corre sola al abrir el sitio y avisa
   // por consola si algo no cierra, para no depender de acordarse de revisarlo a mano.
-  function verifyTieOuts(){
+  // onlyClub (opcional): con lazy-loading, los datos de River/Racing pueden no estar cargados
+  // todavía cuando esta función corre (ver INIT, más abajo, que solo llama a verifyTieOuts() sin
+  // argumento apenas abre la página, con Boca como único club en memoria). Los bloques de
+  // racing/river están gateados por `typeof ... !== 'undefined'` para no tirar ReferenceError si
+  // ese data/*.js todavía no se bajó, y loadClubData() (ver más arriba) vuelve a llamar a esta
+  // misma función con el clubId recién cargado, para no perder la verificación, solo diferirla al
+  // momento en que el dato efectivamente llega.
+  function verifyTieOuts(onlyClub){
     const checks = [
       { club:'boca', year:2027, label:'Revenue', computed: computeYear(2027).revenue, official: 239392.104 },
       // Ejercicio 2025: "Revenue" del sitio excluye ingresos por transferencias de pases (van netos a
@@ -3628,44 +3717,58 @@ probar del todo).
     // "official" de acá abajo también están en ARS millones ahora, usan el número IMPRESO del
     // balance/presupuesto directo (más preciso que el USD redondeado a 3 decimales que se usaba
     // antes, que arrastraba ruido de conversión).
-    const racing2026 = computeYearGeneric('racing', 2026);
-    checks.push({ club:'racing', year:2026, label:'Revenue', computed: racing2026.revenue, official: racingFiscalYearMeta[2026].officialTotalRevenue });
-    checks.push({ club:'racing', year:2026, label:'Expenses', computed: Math.abs(racing2026.expenses), official: Math.abs(racingFiscalYearMeta[2026].officialTotalExpenses) });
-    const racing2027 = computeYearGeneric('racing', 2027);
-    checks.push({ club:'racing', year:2027, label:'Revenue', computed: racing2027.revenue, official: racingFiscalYearMeta[2027].officialTotalRevenue });
-    checks.push({ club:'racing', year:2027, label:'Expenses', computed: Math.abs(racing2027.expenses), official: Math.abs(racingFiscalYearMeta[2027].officialTotalExpenses) });
-    // Racing 2024/2025: officialTotalExpenses incluye Depreciaciones/Previsiones (cargadas como
-    // expenseLines, no como meta), así que el chequeo suma expenses+nonCash, mismo criterio que River 2024.
-    const racing2024 = computeYearGeneric('racing', 2024);
-    checks.push({ club:'racing', year:2024, label:'Revenue', computed: racing2024.revenue, official: racingFiscalYearMeta[2024].officialTotalRevenue });
-    checks.push({ club:'racing', year:2024, label:'Expenses (incl. no-efectivo)', computed: Math.abs(racing2024.expenses) + Math.abs(racing2024.nonCash), official: Math.abs(racingFiscalYearMeta[2024].officialTotalExpenses) });
-    checks.push({ club:'racing', year:2024, label:'Resultado neto (PAT) vs. Déficit del ejercicio', computed: racing2024.pat, official: -6127.619872 });
-    const racing2025 = computeYearGeneric('racing', 2025);
-    checks.push({ club:'racing', year:2025, label:'Revenue', computed: racing2025.revenue, official: racingFiscalYearMeta[2025].officialTotalRevenue });
-    checks.push({ club:'racing', year:2025, label:'Expenses (incl. no-efectivo)', computed: Math.abs(racing2025.expenses) + Math.abs(racing2025.nonCash), official: Math.abs(racingFiscalYearMeta[2025].officialTotalExpenses) });
-    checks.push({ club:'racing', year:2025, label:'Resultado neto (PAT) vs. Déficit del ejercicio', computed: racing2025.pat, official: -178.451821 });
+    if(typeof racingFiscalYearMeta !== 'undefined'){
+      const racing2026 = computeYearGeneric('racing', 2026);
+      checks.push({ club:'racing', year:2026, label:'Revenue', computed: racing2026.revenue, official: racingFiscalYearMeta[2026].officialTotalRevenue });
+      checks.push({ club:'racing', year:2026, label:'Expenses', computed: Math.abs(racing2026.expenses), official: Math.abs(racingFiscalYearMeta[2026].officialTotalExpenses) });
+      const racing2027 = computeYearGeneric('racing', 2027);
+      checks.push({ club:'racing', year:2027, label:'Revenue', computed: racing2027.revenue, official: racingFiscalYearMeta[2027].officialTotalRevenue });
+      checks.push({ club:'racing', year:2027, label:'Expenses', computed: Math.abs(racing2027.expenses), official: Math.abs(racingFiscalYearMeta[2027].officialTotalExpenses) });
+      // Racing 2024/2025: officialTotalExpenses incluye Depreciaciones/Previsiones (cargadas como
+      // expenseLines, no como meta), así que el chequeo suma expenses+nonCash, mismo criterio que River 2024.
+      const racing2024 = computeYearGeneric('racing', 2024);
+      checks.push({ club:'racing', year:2024, label:'Revenue', computed: racing2024.revenue, official: racingFiscalYearMeta[2024].officialTotalRevenue });
+      checks.push({ club:'racing', year:2024, label:'Expenses (incl. no-efectivo)', computed: Math.abs(racing2024.expenses) + Math.abs(racing2024.nonCash), official: Math.abs(racingFiscalYearMeta[2024].officialTotalExpenses) });
+      checks.push({ club:'racing', year:2024, label:'Resultado neto (PAT) vs. Déficit del ejercicio', computed: racing2024.pat, official: -6127.619872 });
+      const racing2025 = computeYearGeneric('racing', 2025);
+      checks.push({ club:'racing', year:2025, label:'Revenue', computed: racing2025.revenue, official: racingFiscalYearMeta[2025].officialTotalRevenue });
+      checks.push({ club:'racing', year:2025, label:'Expenses (incl. no-efectivo)', computed: Math.abs(racing2025.expenses) + Math.abs(racing2025.nonCash), official: Math.abs(racingFiscalYearMeta[2025].officialTotalExpenses) });
+      checks.push({ club:'racing', year:2025, label:'Resultado neto (PAT) vs. Déficit del ejercicio', computed: racing2025.pat, official: -178.451821 });
+    }
     // River 2024: officialTotalExpenses es el Total de Gastos Ordinarios IMPRESO (incluye los 3
     // ítems no-efectivo), así que el chequeo compara contra expenses+nonCash, no contra expenses solo
     // (ver comentario en riverFiscalYearMeta[2024] en data/river-data.js).
-    const river2024 = computeYearGeneric('river', 2024);
-    checks.push({ club:'river', year:2024, label:'Revenue (Total de Recursos)', computed: river2024.revenue, official: riverFiscalYearMeta[2024].officialTotalRevenue });
-    checks.push({ club:'river', year:2024, label:'Expenses (Total de Gastos Ordinarios, incl. no-efectivo)', computed: Math.abs(river2024.expenses) + Math.abs(river2024.nonCash), official: Math.abs(riverFiscalYearMeta[2024].officialTotalExpenses) });
-    checks.push({ club:'river', year:2024, label:'Resultado neto (PAT) vs. Superávit del ejercicio', computed: river2024.pat, official: 58945.518837 });
-    checks.filter(c => c.official !== null).forEach(c => {
+    if(typeof riverFiscalYearMeta !== 'undefined'){
+      const river2024 = computeYearGeneric('river', 2024);
+      checks.push({ club:'river', year:2024, label:'Revenue (Total de Recursos)', computed: river2024.revenue, official: riverFiscalYearMeta[2024].officialTotalRevenue });
+      checks.push({ club:'river', year:2024, label:'Expenses (Total de Gastos Ordinarios, incl. no-efectivo)', computed: Math.abs(river2024.expenses) + Math.abs(river2024.nonCash), official: Math.abs(riverFiscalYearMeta[2024].officialTotalExpenses) });
+      checks.push({ club:'river', year:2024, label:'Resultado neto (PAT) vs. Superávit del ejercicio', computed: river2024.pat, official: 58945.518837 });
+    }
+    checks.filter(c => c.official !== null && (!onlyClub || c.club === onlyClub)).forEach(c => {
       const delta = +(c.computed - c.official).toFixed(3);
       const ok = Math.abs(delta) < 0.01;
       console[ok ? 'log' : 'error'](`[verificación] ${c.club} ${c.year} ${c.label}: calculado ${c.computed} vs. oficial ${c.official} -> ${ok ? 'OK, cierra' : 'NO CIERRA, diferencia de ' + delta}`);
     });
   }
 
-  // ---------- MULTI-CLUB: diccionarios por club para Pases/Resultados/Comparar/Inicio ----------
-  // Boca sigue siendo pasesData/resultadosData/titulosData/gestionesInfo (sin tocar, arriba en
-  // este mismo script). River y Racing viven en sus archivos data/*.js. Estos diccionarios son
-  // solo el "índice" que le permite al resto del código pedir "los datos del club actual" sin
-  // un if/else por cada club.
-  const pasesDataByClub = { boca: pasesData, river: riverPasesData, racing: racingPasesData };
-  const resultadosDataByClub = { boca: resultadosData, river: riverResultadosData, racing: racingResultadosData };
-  const titulosDataByClub = { boca: titulosData, river: riverTitulosData, racing: racingTitulosData };
+  // ---------- MULTI-CLUB: acceso por club para Pases/Resultados/Comparar/Inicio ----------
+  // Boca sigue siendo pasesData/resultadosData/titulosData/gestionesInfo (sin tocar, en
+  // data/boca-data.js). River y Racing viven en sus archivos data/*.js, cargados bajo demanda (ver
+  // loadClubData más abajo) — por eso esto son FUNCIONES, no un objeto armado de una: un const
+  // `{ river: riverPasesData, ... }` evaluaría `riverPasesData` al cargar la página, y como ese
+  // archivo todavía no se bajó en ese momento (solo se carga cuando el usuario elige River/Racing),
+  // tiraría ReferenceError. Una función solo lee `riverPasesData` cuando efectivamente se LLAMA, y
+  // eso pasa siempre después de que loadClubData(clubId) ya resolvió (ver el listener de
+  // `clubSelect` más abajo), momento en el que el archivo ya está cargado.
+  function pasesDataForClub(clubId){
+    return clubId === 'river' ? riverPasesData : clubId === 'racing' ? racingPasesData : pasesData;
+  }
+  function resultadosDataForClub(clubId){
+    return clubId === 'river' ? riverResultadosData : clubId === 'racing' ? racingResultadosData : resultadosData;
+  }
+  function titulosDataForClub(clubId){
+    return clubId === 'river' ? riverTitulosData : clubId === 'racing' ? racingTitulosData : titulosData;
+  }
 
   // ---------- NAVEGACIÓN ----------
   const navButtons = document.querySelectorAll('#mainNav button');
