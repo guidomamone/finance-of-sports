@@ -19,7 +19,7 @@ const REVENUE_CATEGORIES = [
   'broadcasting',             // televisación / derechos de TV
   'competition_bonus',        // premios/bonos por avance de ronda o participación en un torneo (Versión 46, separado de matchday_competition para poder igualar la fila "Premios por competencias" que ya usa Boca)
   'sponsorship_commercial',   // sponsors, merchandising, canjes
-  'transfer_income_gross',    // ventas de jugadores (ingreso bruto)
+  'player_sales',             // ventas de jugadores (ingreso bruto)
   'other_sports',             // básquet, otros deportes
   'youth_football',           // fútbol juvenil / derechos de formación
   'womens_football',          // fútbol femenino
@@ -34,7 +34,7 @@ const REVENUE_CATEGORY_LABELS = {
   broadcasting: 'Televisación / derechos de TV',
   competition_bonus: 'Premios por competencias',
   sponsorship_commercial: 'Comercial / sponsors',
-  transfer_income_gross: 'Ventas de jugadores',
+  player_sales: 'Ventas de jugadores',
   other_sports: 'Otros deportes',
   youth_football: 'Fútbol juvenil',
   womens_football: 'Fútbol femenino',
