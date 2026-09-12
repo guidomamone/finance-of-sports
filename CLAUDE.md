@@ -17,6 +17,28 @@ Guido deja links a documentos oficiales o notas de prensa antes de que se
 carguen al sitio. Si hay algo ahí que el comentario de `index.html` todavía
 no menciona como cargado, es trabajo pendiente.
 
+Si al leer un documento fuente queda una pregunta genuina sin respuesta (algo
+que no se puede inferir con confianza de la fuente ni de los criterios ya
+documentados en los skills), anotala en `dudas-por-club.md` (Versión 81, a
+pedido de Guido: "la idea es hacer reach out a clubes y preguntarles") en vez
+de asumir un criterio o dejarla perdida en un comentario de código — es la
+lista que Guido usa para escribirles directo a los clubes.
+
+**Si la tarea toca datos financieros de un club** (cargar un balance/presupuesto
+nuevo, recategorizar un rubro, tocar el tipo de cambio de un ejercicio, agregar
+un club nuevo): leé ANTES de tocar nada `.claude/skills/club-data-mapping/SKILL.md`
+(cómo mapear el documento del club al esquema del sitio) y
+`.claude/skills/club-or-year-onboarding/SKILL.md` (cómo encarar la sesión y qué
+arquitectura ya existe para reusar). Esto es necesario decirlo explícito acá
+porque `numeros-de-boca` es un repo Git separado anidado dentro de este
+workspace — el descubrimiento automático de skills de Claude Code no llega
+hasta `numeros-de-boca/.claude/skills/`, así que esos dos archivos NO aparecen
+solos en la lista de skills disponibles de una sesión, hay que leerlos a mano
+con el Read tool. Sin este párrafo, una sesión puede categorizar un rubro o
+convertir una moneda contradiciendo un criterio ya decidido, sin enterarse de
+que existía (pasó de verdad, ver "Cómo mantener este skill" al final de cada
+uno de los dos archivos para el criterio de cuándo actualizarlos).
+
 ## Antes de terminar la sesión
 
 Si se hizo algún cambio real al sitio (datos, features, estructura, copy,
@@ -80,11 +102,22 @@ cargar nada al sitio — es transcribir el contenido COMPLETO a un archivo
 dos juntos en `Clubes/Argentina/Boca/`).
 
 Por qué: estos PDFs suelen ser escaneos sin capa de texto (pdftotext no sirve),
-así que leerlos implica renderizar página por página como imágenes con el Read
-tool — caro en tokens. Guido quiere poder iterar sobre CÓMO se muestra un
-número (probar formatos, reclasificaciones, layouts) sin que cada prueba
-implique volver a abrir el PDF de página en página. Con el `.md` ya
-transcripto, esas iteraciones futuras leen texto plano — rápido y barato.
+así que leerlos implica OCR o (si no hay más remedio) renderizar página por
+página como imágenes con el Read tool — caro en tokens. Guido quiere poder
+iterar sobre CÓMO se muestra un número (probar formatos, reclasificaciones,
+layouts) sin que cada prueba implique volver a abrir el PDF de página en
+página. Con el `.md` ya transcripto, esas iteraciones futuras leen texto
+plano — rápido y barato.
+
+Actualizado (Versión 90 de `index.html`, onboarding de Vélez Sarsfield): para
+un PDF escaneado sin capa de texto, antes de recurrir al Read tool sobre
+imágenes, instalar Tesseract (`brew install tesseract tesseract-lang`) y
+generar la transcripción con `pdftoppm -png -r 300` + `tesseract -l spa
+--psm 6` página por página — mucho más barato en tokens, y el OCR de tablas
+numéricas resultó muy confiable en la práctica. Ver
+`.claude/skills/club-data-mapping/SKILL.md` sección 15 para el flujo
+completo (incluye qué hacer con tablas anchas rotadas 90° en el escaneo, y
+cómo verificar los números del OCR fila por fila antes de cargarlos).
 
 Qué transcribir: TODO el documento, página por página, en el mismo orden,
 incluyendo tablas (como tablas Markdown o listas alineadas, lo que se lea
@@ -107,3 +140,48 @@ dar por buena una carga de datos financieros, correr una verificación de
 que los rubros suman el total oficial o de prensa conocido (ver
 `verifyTieOuts()` en `index.html`, y sumarle el chequeo nuevo si agregás un
 club-ejercicio con un total conocido contra qué comparar).
+
+## Gotchas de tooling (aplican a CUALQUIER sesión, no solo onboarding de datos)
+
+Trampas del entorno de testing de este proyecto, no del sitio en sí — se
+mudaron acá (antes vivían dentro de `club-or-year-onboarding/SKILL.md`) porque
+son igual de relevantes para una sesión que solo toca CSS o una función de
+render que para una que carga un balance nuevo, y este archivo (a diferencia
+de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
+
+- **Caché de `<script src="data/....js">` o del propio `index.html` en el
+  navegador de preview**: si después de editar un archivo (`data/*.js` o
+  `index.html`) los números/estilos en pantalla siguen mostrando el valor
+  VIEJO, aunque `curl`/`fetch` al mismo archivo ya muestre el nuevo,
+  sospechá de caché del navegador ANTES de asumir que hay un bug real en el
+  código. `location.reload()`, `Cmd+Shift+R` y hasta parar/re-lanzar
+  `preview_start` en el mismo puerto pueden NO alcanzar. Lo que funcionó:
+  agregar un query string cache-buster a la URL del `navigate()`
+  (`http://localhost:PUERTO/index.html?nocache=<número cualquiera>`), abrir
+  una pestaña nueva (`tabs_create`), o, si eso tampoco alcanza, cambiar el
+  puerto del server en `.claude/launch.json` (nuevo puerto = origen nuevo =
+  caché nueva garantizada) y devolverlo después. Confirmalo ejecutando
+  `Object.keys(algunaConstDeEseArchivo)` o
+  `document.querySelector('style').textContent.includes('tu regla nueva')`
+  con `javascript_tool` ANTES de concluir que el cambio "no funciona".
+- **`computer` screenshot da BLANCO si la página está scrolleada**: en este
+  entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco
+  cada vez que `window.scrollY > 0` en el momento de la captura, no importa
+  cómo se llegó ahí (`window.scrollTo`, `scrollIntoView`, el `scroll_to` del
+  tool `computer`, que sí mueve el scroll de verdad). Con `scrollY === 0`
+  sale bien siempre. La vuelta que funcionó: `resize_window` con un
+  `height` custom bien grande (2500-3000px) para que todo el contenido
+  relevante entre sin scrollear, capturar ahí, y después
+  `resize_window({preset:'desktop'})` para volver al tamaño normal. `zoom`
+  con `region` (crop) tampoco está soportado en este entorno, devuelve la
+  imagen completa igual. Esto es una limitación del TOOLING de esta sesión,
+  no algo que haya que "arreglar" en el sitio.
+- **`grep -oP '.{20}CARACTER.{20}'` (u otro cuantificador de caracteres
+  alrededor de un carácter especial) puede fallar en silencio cerca de
+  acentos**: el cuantificador `.{N}` con `-P` (PCRE) en este entorno no
+  cuenta bien caracteres cuando hay vocales acentuadas cerca (más, línea,
+  categoría, año) del texto en español, así que una línea real puede
+  simplemente no aparecer en el resultado, dando una falsa sensación de "ya
+  no queda ninguna". El chequeo confiable: `grep -n 'CARACTER' archivo` (sin
+  capturar contexto con un cuantificador de caracteres, solo el número de
+  línea) y revisar cada línea completa a mano.

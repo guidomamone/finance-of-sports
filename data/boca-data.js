@@ -27,6 +27,15 @@
   // y 2025, que son reales) no tenemos ese desglose real, así que se reusa lo que ya había
   // (matchday+broadcasting -> Exhibición, commercial -> Comerciales, otherOperatingIncome -> Diversos) sin
   // inventar el resto categoría por categoría.
+  // Versión 81 (pedido de Guido, "quita los años placeholders de Finanzas"): estos 5 ejercicios
+  // (2018/2019/2021/2022/2023) YA NO aparecen en ningún selector/gráfico de Finanzas (ver
+  // `gestionesInfo` más abajo y los arrays hardcodeados en `js/finanzas-render.js`,
+  // `populateFinanzasSelectors`/`updateFinanzasByAnio`) — pero se DEJAN acá en `yearsRaw` sin
+  // tocar, porque `gestionesByClub.boca` (data/clubs.js) todavía referencia estos años para
+  // Mercado de Pases/Resultados/Comparar Gestiones (gestiones "ameal"/"angelici"), que el pedido de
+  // Guido no incluía ("de Finanzas", no de todo el sitio) — borrarlos de acá rompía esas 3
+  // pestañas con un TypeError real (`computeYear(2023)` leyendo `yearsRaw[2023]` inexistente),
+  // encontrado probando en el navegador antes de dar esto por terminado.
   const yearsRaw = {
     2018:{cuotasSociales:0, comerciales:9, exhibicionEspectaculos:16, abonos:0, diversos:0.1, otrosDeportes:0, basketProfesional:0, futbolJuvenil:0, futbolFemenino:0, wages:-14, otherExpenses:-8, exceptionalItems:-0.1, playerAmortisation:-2.5, playerImpairment:-0.1, depreciation:-0.5, otherAmortisation:-0.1, profitOnPlayerSales:5.5, assetSales:0, netInterest:-0.4, tax:-0.1, grossDebt:5.5, cash:1.8, gestion:'angelici'},
     2019:{cuotasSociales:0, comerciales:10, exhibicionEspectaculos:18, abonos:0, diversos:0.1, otrosDeportes:0, basketProfesional:0, futbolJuvenil:0, futbolFemenino:0, wages:-15, otherExpenses:-9, exceptionalItems:-0.1, playerAmortisation:-3.0, playerImpairment:-0.1, depreciation:-0.6, otherAmortisation:-0.1, profitOnPlayerSales:6.0, assetSales:0, netInterest:-0.5, tax:-0.1, grossDebt:6.1, cash:2.0, gestion:'angelici'},
@@ -932,10 +941,14 @@
   };
 
 
+  // Versión 81: ameal/angelici se sacaron de acá (quedaban 100% dentro del rango de años
+  // placeholder que se removió de yearsRaw arriba, "Por gestión" de Finanzas no tenía ningún dato
+  // real que mostrar para ninguna de las 2). OJO: esto es SOLO el selector "Por gestión" de
+  // Finanzas — `gestionesByClub.boca` (data/clubs.js), que alimenta Mercado de Pases/Resultados/
+  // Comparar Gestiones/Inicio, sigue teniendo las 3 gestiones sin tocar, esos otros tabs no
+  // dependen de yearsRaw y el pedido de Guido fue explícito "de Finanzas".
   const gestionesInfo = {
     riquelme:{nombre:'Riquelme (2023-actual)', firstYear:2024, lastYear:2027},
-    ameal:{nombre:'Ameal (2019-2023)', firstYear:2021, lastYear:2023},
-    angelici:{nombre:'Angelici (2015-2019)', firstYear:2018, lastYear:2019},
   };
 
 

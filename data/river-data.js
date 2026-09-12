@@ -179,6 +179,11 @@ const riverFiscalYearMeta = {
   },
 };
 
+// riverPresupuestoOverlayByYear (Versión 57): mismo mecanismo que racingPresupuestoOverlayByYear
+// (ver data/racing-data.js), vacío hoy, para el día que aparezca un ejercicio de River con
+// Presupuesto Y Balance reales cargados a la vez.
+const riverPresupuestoOverlayByYear = {};
+
 // ---------------------------------------------------------------------------
 // Mercado de pases — placeholder, mismo estilo que los movimientos inventados
 // que ya tenía Boca (Jugador A, Jugador B...) desde el primer MVP: esa

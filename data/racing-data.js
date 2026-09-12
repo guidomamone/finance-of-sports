@@ -7,6 +7,9 @@
 // tienen texto extraíble directo (no son escaneos) — se procesaron con
 // pdftotext + Python, sin necesidad del Read tool con imágenes.
 //
+// - Ejercicio 2021 (Ejercicio Nro. 119, irregular de 10 meses, 1°/9/2020 al 30/6/2021, transición
+//   del cierre de agosto a junio) = balance auditado real, sin presupuesto propio en el archivo.
+//   SUPERÁVIT real, chico: $7.012.082 ARS.
 // - Ejercicio 2024 (Ejercicio Nro. 122, 1°/7/2023 al 30/6/2024, última
 //   temporada de Blanco) = balance auditado real. DÉFICIT del ejercicio
 //   real: $(6.127.619.872) ARS — muy distinto del viejo placeholder que
@@ -46,6 +49,9 @@
 // VI, pág. 31) declara $1.196,00 al 30/6/2025 (antes $1.203). La diferencia
 // es chica pero la regla es más fiel a la fuente y evita mezclar el criterio
 // del club con una investigación externa cuando el documento ya lo dice.
+// - 2021 (Ejercicio N° 119, irregular de 10 meses): $95,52 (declarado, Anexo V del balance 2021,
+//   pág. 30), usado sin excepciones en TODO el Anexo (a diferencia del Anexo V de 2020, que tenía
+//   una inconsistencia puntual de 3 líneas en $74,18 vs. $73,98 dominante).
 // - 2024: $909,00 (declarado, Anexo VI del balance 2023-24, pág. 30).
 // - 2025: $1.196,00 (declarado, Anexo VI del balance 2024-25, pág. 31).
 // - 2026 (presupuesto, sin cerrar todavía): $1.438 promedio, que el propio
@@ -193,6 +199,289 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.151, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos colegio', normalizedCategory:'other_income', amountNative:0.673, disclosureLevel:'detailed' },
   ],
+  // Ejercicio N° 110 (1°/11/2011 al 31/10/2012, PRE-Blanco, presidente Gastón Federico Cogorno,
+  // `gestionId:null` mismo criterio que 2009/2010/2011) — `balance2012.pdf`, balance real
+  // (`reportType:'official_balance_sheet'`). A diferencia de 2009-2011 (cargados en USD
+  // ya-convertido), este ejercicio se cargó en ARS NATIVO (`currency:'ARS'`) con el fx que declara
+  // el propio balance en su Anexo de Moneda Extranjera ($4,7260 por U$S, la tasa dominante del lado
+  // Activo — el lado Pasivo usa $4,7660 para "Otros Pasivos", inconsistencia menor ya vista en
+  // otros ejercicios de Racing, ej. 2019/2020). Mismos rubros "Generales/Específicos/Diversos"
+  // (Anexo II) que 2009-2011, sin decisiones nuevas de categorización. Escaneo puro (25 páginas),
+  // transcripto con el Read tool sobre imágenes de página — sin inclinación diagonal, pero los
+  // Anexos II/III y el de Moneda Extranjera estaban en landscape rotado dentro de la página
+  // portrait (`club-data-mapping/SKILL.md` sección 9). Fuente completa:
+  // `Clubes/Argentina/Racing/racing-balance-2012.md`.
+  //
+  // Suma exacta a $184.791.901 (11 líneas ordinarias + "Desafectación de Previsiones/Provisiones"
+  // como `exceptional_items`, $1.000.000) = el total real de Recursos Ordinarios+Extraordinarios
+  // del Anexo II, EXCLUYENDO "Resultados Financieros" (que va a `netInterest` en el meta, no acá,
+  // mismo criterio que 2009-2011). "Condonaciones" ($0) no se cargó como línea propia.
+  2012: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:27.908682 },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:30.610592 },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:7.573676 },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:4.441797 },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:1.158378 },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:16.329828 },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:26.494900 },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:0.992412 },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:64.297016 },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.760321 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:3.224299 },
+    { rawLabel:'Desafectación de Previsiones y Provisiones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:1.000000 },
+  ],
+  // Ejercicio N° 111 (1°/11/2012 al 31/10/2013) — `balance2013.pdf`, balance real
+  // (`reportType:'official_balance_sheet'`). Presidencia INCIERTA para este ejercicio puntual
+  // (ninguna página del balance muestra firma rotulada "Presidente", a diferencia de 2012/2015+) —
+  // `gestionId:null` por inferencia de fecha (Memoria fechada 2/12/2013, probablemente antes de la
+  // elección de Blanco ese mismo diciembre), no confirmado con certeza, ver nota completa en
+  // `Clubes/Argentina/Racing/racing-balance-2013.md`. Mismos rubros "Generales/Específicos/
+  // Diversos" (Anexo II) que 2009-2012, sin decisiones nuevas. fx=5,8720, la tasa dominante que
+  // declara el propio balance en su Anexo de Moneda Extranjera. Escaneo puro (28 páginas, calidad
+  // de escaneo más baja que otros años pero legible), transcripto con el Read tool sobre imágenes
+  // de página — sin inclinación diagonal, pero los Anexos II/III y el de Moneda Extranjera estaban
+  // en landscape rotado dentro de la página portrait (`club-data-mapping/SKILL.md` sección 9).
+  //
+  // Suma exacta a $188.690.953, el "TOTAL DE RECURSOS" impreso — 11 líneas ordinarias, sin
+  // Recursos Extraordinarios este ejercicio (ambas líneas del Anexo II en $0).
+  2013: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:41.980607 },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:32.510718 },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:5.723933 },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:2.039223 },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:0.538175 },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:22.911354 },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:13.504244 },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:1.505573 },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:63.588544 },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.651300 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:3.737282 },
+  ],
+  // Ejercicio N° 112 (1°/11/2013 al 31/8/2014, irregular de 10 meses, gestión Blanco) —
+  // `balance2014.pdf`, balance real. Este es el par del presupuesto 2013/2014
+  // (`presupuesto2013-14.pdf`, cargado antes) — mismo ejercicio (cierra 31/8/2014 en los dos
+  // documentos, aunque el período declarado no coincida exacto: el presupuesto asume 12 meses
+  // desde septiembre, el balance real son 10 meses desde noviembre). `reportType` pasó de
+  // `'official_budget'` a `'official_budget_and_balance'`, mismo mecanismo que 2017/2018 y
+  // 2019/2020 (`club-or-year-onboarding/SKILL.md` sección 11) — el balance es ahora el dato
+  // PRIMARIO, las líneas del presupuesto que ya estaban acá se movieron, sin tocar un solo valor,
+  // a `racingPresupuestoOverlayByYear[2014]` más abajo. fx=8,3070, la tasa dominante que declara
+  // el propio balance en su Anexo de Moneda Extranjera. Escaneo puro (38 páginas), transcripto con
+  // el Read tool sobre imágenes de página — sin inclinación diagonal, pero los Anexos II/III y el
+  // de Moneda Extranjera estaban en landscape rotado dentro de la página portrait
+  // (`club-data-mapping/SKILL.md` sección 9). Fuente completa:
+  // `Clubes/Argentina/Racing/racing-balance-2014.md`.
+  //
+  // Suma exacta a $301.631.868, el "TOTAL DE RECURSOS" impreso — 11 líneas ordinarias +
+  // "Desafectación de Previsiones y Provisiones" (exceptional_items, $1.000.000).
+  2014: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:46.449177 },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:42.021758 },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:7.348189 },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:1.614510 },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:0.868263 },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:23.904721 },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:36.812116 },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:1.522769 },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:136.156527 },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.805942 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:4.127896 },
+    { rawLabel:'Desafectación de Previsiones y Provisiones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:1.000000 },
+  ],
+  // Ejercicio N° 114 (1°/9/2015 al 31/8/2016, gestión Blanco) — `balance2016.pdf`, balance real.
+  // Este es el par del presupuesto 2015/2016 (`presupuesto2015-16.pdf`, cargado antes) — mismo
+  // período exacto. `reportType` pasó de `'official_budget'` a `'official_budget_and_balance'`,
+  // mismo mecanismo que 2014/2018/2020 (`club-or-year-onboarding/SKILL.md` sección 11) — el
+  // balance es ahora el dato PRIMARIO, las líneas del presupuesto que ya estaban acá se movieron,
+  // sin tocar un solo valor, a `racingPresupuestoOverlayByYear[2016]` más abajo. fx=14,83, la tasa
+  // dominante que declara el propio balance en su Anexo V (Moneda Extranjera). Primer ejercicio
+  // con auditoría externa (Estudio Bertora y Asociados S.R.L.) — formato de estados contables
+  // distinto (Notas 1-8 + Anexos I-V), pero Anexo II/III mantienen la misma estructura de
+  // columnas que los ejercicios anteriores. Escaneo puro (36 páginas), transcripto con el Read
+  // tool sobre imágenes de página — sin inclinación diagonal, pero los Anexos II/III/V estaban en
+  // landscape rotado dentro de la página portrait (`club-data-mapping/SKILL.md` sección 9). Fuente
+  // completa: `Clubes/Argentina/Racing/racing-balance-2016.md` — incluye una nota importante sobre
+  // por qué la columna comparativa "31/08/2015" de ESTE documento no coincide con
+  // `racingRevenueLinesByYear[2015]` (reclasificación de exposición por el nuevo auditor externo,
+  // no una corrección del resultado real — NO se tocaron los datos ya cargados de 2015).
+  //
+  // Suma exacta a $611.968.373, el "TOTAL DE RECURSOS" impreso — 11 líneas, sin Recursos
+  // Extraordinarios este ejercicio (a diferencia de 2012/2014, este Anexo II no tiene fila de
+  // Desafectación de Previsiones).
+  2016: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:138.030177 },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:52.802659 },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:89.069294 },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:2.569939 },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:1.520788 },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:43.794391 },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:85.027196 },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:12.372951 },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:175.030692 },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:1.891514 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:9.858772 },
+  ],
+  // Ejercicio N° 113 (1°/9/2014 al 31/8/2015, gestión Blanco) — `balance2015.pdf`, balance real
+  // (`reportType:'official_balance_sheet'`, sin presupuesto propio en el archivo para este mismo
+  // ejercicio — salta de `presupuesto2013-14.pdf` a `presupuesto2015-16.pdf`). Mismos rubros
+  // "Generales/Específicos/Diversos" (Anexo II) que 2009-2012, sin decisiones nuevas. fx=9,20, el
+  // dólar oficial de cierre de agosto de 2015 (tasa dominante del Anexo de Moneda Extranjera para
+  // Caja y Bancos y la mayoría de "Otros Créditos" del período corriente — algunas líneas de
+  // crédito heredadas mantienen tipos de cambio históricos congelados, no representativos del
+  // ejercicio, no se usaron). Escaneo puro (25 páginas), transcripto con el Read tool sobre
+  // imágenes de página — sin inclinación diagonal, pero los Anexos I/II/III y el de Moneda
+  // Extranjera estaban en landscape rotado dentro de la página portrait
+  // (`club-data-mapping/SKILL.md` sección 9). Fuente completa:
+  // `Clubes/Argentina/Racing/racing-balance-2014-15.md`.
+  //
+  // Suma exacta a $430.314.984 (redondeo de $1 contra el "TOTAL DE RECURSOS" impreso,
+  // $430.314.983) — 11 líneas ordinarias, sin Recursos Extraordinarios este ejercicio (ambas
+  // líneas del Anexo II en $0, no se cargaron).
+  2015: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:93.187267 },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:56.648320 },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:56.640384 },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:2.568669 },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:1.457230 },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:40.505380 },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:84.059113 },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:3.448025 },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:83.417474 },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:1.326368 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:7.056754 },
+  ],
+  // Ejercicio N° 115 (1°/9/2016 al 31/8/2017, gestión Blanco) — `balance2017.pdf`, balance real
+  // (`reportType:'official_balance_sheet'`, sin presupuesto propio en el archivo para este mismo
+  // ejercicio — no existe `presupuesto2016-17.pdf`). Segundo ejercicio con auditoría externa
+  // (Estudio Bertora y Asociados S.R.L.). A diferencia de `balance2016.pdf`, este Anexo II NO
+  // incluye "Resultados Financieros" dentro del total de Recursos — el Estado de Recursos y
+  // Gastos los muestra por separado (netInterest). fx=17,21, la tasa dominante que declara el
+  // propio balance en su Anexo V (Moneda Extranjera). Escaneo puro (34 páginas), transcripto con
+  // el Read tool sobre imágenes de página — sin inclinación diagonal, pero los Anexos I/II/III/V
+  // estaban en landscape rotado dentro de la página portrait (`club-data-mapping/SKILL.md`
+  // sección 9). Fuente completa: `Clubes/Argentina/Racing/racing-balance-2017.md` — confirma que
+  // la columna comparativa "31/08/2016" de este documento coincide EXACTO con
+  // `racingRevenueLinesByYear[2016]` ya cargado (a diferencia de la transición 2015→2016, acá no
+  // hubo reclasificación).
+  //
+  // Suma exacta a $804.833.215, el "TOTAL DE RECURSOS" impreso — 11 líneas, ya es el total
+  // completo sin sumar nada más (a diferencia de 2016).
+  2017: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:182.076763 },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:90.438829 },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:38.039780 },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:73.592850 },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:1.422611 },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:63.643015 },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:72.825306 },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:58.202349 },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:206.087866 },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:5.181522 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:13.322324 },
+  ],
+  // Ejercicio 2017/2018 (Ejercicio N° 116, 1°/9/2017 al 31/8/2018, gestión Blanco) — balance real
+  // cargado en la Versión 64 (OCR de `balance2018.pdf`, escaneo de 36 páginas sin inclinación, no
+  // hizo falta deskew), completando el par Presupuesto+Balance de este ejercicio (el presupuesto ya
+  // estaba cargado desde la Versión 63, ver `racingPresupuestoOverlayByYear[2018]` más abajo).
+  // `reportType` pasó de `'official_budget'` a `'official_budget_and_balance'`, mismo mecanismo que
+  // 2019/2020 (`club-or-year-onboarding/SKILL.md` sección 11). Fuente: racing-balance-2018.md, Anexo
+  // II "Recursos ordinarios" (columna TOTAL 2018, pág. 24) — mismos rubros exactos que 2019/2020 y
+  // 2020/2021 (mismo formato de documento), suma exacta a $1.789.819.233, el TOTAL DE RECURSOS
+  // impreso del Estado de recursos y gastos (pág. 5).
+  2018: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:236.433910, disclosureLevel:'detailed' },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:90.532228, disclosureLevel:'detailed' },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:122.099684, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:2.712848, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:1.864879, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:88.125372, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:140.903954, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:109.042661, disclosureLevel:'detailed' },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:970.845312, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:6.711866, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:20.546519, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio 2018/2019 (1°/9/2018 al 31/8/2019, gestión Blanco) — `presupuesto2018-19.pdf`,
+  // PRESUPUESTO-ONLY (sin balance real cargado todavía para este ejercicio en el archivo de Racing,
+  // `balance2018-19.pdf` no existe/no se encontró; `reportType:'official_budget'` simple en
+  // `racingFiscalYearMeta[2019]`, no `official_budget_and_balance`). Escaneo puro (9 páginas, ~1
+  // char/página), transcripto con el Read tool sobre imágenes de página — sin inclinación en
+  // ninguna de las 9 (verificado renderizando cada una a 150 DPI antes de leer el resto), pero las
+  // 2 páginas de tabla (Ingresos/Egresos) están en landscape rotado 90° dentro de la página
+  // portrait, hubo que rotar la imagen 90° (PIL) para leerlas en orientación normal. Mismo formato
+  // de documento y mismos rubros que `racingPresupuestoOverlayByYear[2018]` (presupuesto
+  // 2017/2018, el ejercicio inmediato anterior) — mismo criterio de categorización, sin decisiones
+  // nuevas. fx=40, la premisa macro que el propio documento declara ("Estimamos un TC de $ 40.- por
+  // u$d 1.- en promedio para el período", pág. 2). Fuente completa:
+  // `Clubes/Argentina/Racing/racing-presupuesto-2018-19.md`.
+  //
+  // Suma exacta a $1.616.026.650, el "TOTAL DE INGRESOS DE FDOS" impreso (pese a su etiqueta
+  // confusa "(I)+(II)+(III)": el total NO incluye el Saldo Inicial de Caja (I), solo Ordinarios
+  // (II) + Extraordinarios (III) — mismo comentario ya documentado para
+  // `racingPresupuestoOverlayByYear[2018]`). Filas en $0 del documento (f./g. "Otros Ingresos por
+  // derechos de fútbol"/"Dep. Futbol Prof.", "Cobranzas de Subvenciones a la Explotación", c. "Otros
+  // Ingresos de Gestión por Futbol", y a./b./c./e./f./h. de Ingresos Extraordinarios) no se cargaron
+  // como líneas propias, mismo criterio que el resto del sitio para un valor real en cero.
+  2019: [
+    { rawLabel:'Campeonatos Oficiales SAF/AFA', normalizedCategory:'matchday_competition', amountNative:52.000000 },
+    { rawLabel:'Comp. Oficiales Internacionales', normalizedCategory:'matchday_competition', amountNative:32.670000 },
+    { rawLabel:'Otras Comp. y Partidos Amistosos', normalizedCategory:'matchday_competition', amountNative:3.730000 },
+    { rawLabel:'Derechos de Retransmisión', normalizedCategory:'broadcasting', amountNative:137.154000 },
+    { rawLabel:'Pub. y Esponsorización Futbol', normalizedCategory:'sponsorship_commercial', amountNative:100.000000 },
+    { rawLabel:'Cesión de Jugadores (Transf. / Prést.)', normalizedCategory:'player_sales', amountNative:602.950000 },
+    { rawLabel:'Ingresos por Prop. Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:10.968650 },
+    { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:19.000000 },
+    { rawLabel:'Cobranza de ingresos por Socios y Abonados', normalizedCategory:'member_dues', amountNative:404.494000 },
+    { rawLabel:'Cobranza de Otros Ingresos Ordinarios', normalizedCategory:'other_income', amountNative:85.700000 },
+    { rawLabel:'Cobranza de Rentas Financieras Ordinarias', normalizedCategory:'other_income', amountNative:91.960000 },
+    { rawLabel:'Cobro de Subv., Donaciones y Legados', normalizedCategory:'other_income', amountNative:3.400000 },
+    { rawLabel:'Otros Cobros de Ing. Fros', normalizedCategory:'other_income', amountNative:72.000000 },
+  ],
+  // Ejercicio 2019/2020 (Ejercicio N° 118, 1°/9/2019 al 31/8/2020, gestión Blanco) — cargado en la
+  // Versión 58, primer paso del onboarding masivo del archivo de Racing (ver to-do). amountNative
+  // en ARS MILLONES NATIVOS, mismo criterio que 2024 en adelante. Fuente:
+  // racing-balance-2019-20.md, Anexo II "Recursos ordinarios" (columna "2020", año corriente de ESE
+  // balance, pág. 27) — suma exacta a $2.436.102.976, el TOTAL DE RECURSOS ORDINARIOS impreso del
+  // Estado de recursos y gastos de ese mismo balance. Es el ÚLTIMO ejercicio de Racing con cierre a
+  // agosto (el 18/12/2019 la Asamblea aprobó pasar el cierre a 30 de junio, ver Nota 5 del balance;
+  // el ejercicio siguiente, 2020/2021, es un ejercicio irregular de transición, balance2021.pdf).
+  2020: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:485.007214, disclosureLevel:'detailed' },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:290.569011, disclosureLevel:'detailed' },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:180.471063, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:11.400134, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:4.120262, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:240.140055, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:283.705929, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:367.059521, disclosureLevel:'detailed' },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:509.331575, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:11.957092, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:52.341120, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio 2020/2021 (Ejercicio N° 119, irregular de 10 meses: 1°/9/2020 al 30/6/2021, gestión
+  // Blanco) — ejercicio de transición para pasar el cierre de agosto a junio (ver comentario de
+  // racingRevenueLinesByYear[2020] y racing-balance-2019-20.md, Nota 5). No tiene presupuesto propio
+  // en el archivo de Racing (`balance2021.pdf` es el único documento de este ejercicio), así que
+  // queda como `official_balance_sheet` simple, no `official_budget_and_balance`. Fuente:
+  // racing-balance-2021.md, Anexo II "Recursos ordinarios" (columna "2021", año corriente de ESE
+  // balance, pág. 27) — mismos rubros exactos que 2019/2020 (mismo formato de documento, ver
+  // `club-or-year-onboarding/SKILL.md` sección 9), suma exacta a $3.335.562.848, el TOTAL DE
+  // RECURSOS ORDINARIOS impreso. "Otros Torneos" se carga en $0 (el documento la lista con "-" este
+  // ejercicio, a diferencia de 2020 que sí tuvo monto) — se mantiene la fila por fidelidad a la
+  // fuente, no se omite un rubro real solo porque dio cero este año puntual.
+  2021: [
+    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:444.730770, disclosureLevel:'detailed' },
+    { rawLabel:'Televisación / Televisión AFA', normalizedCategory:'broadcasting', amountNative:294.387257, disclosureLevel:'detailed' },
+    { rawLabel:'Campeonatos Oficiales', normalizedCategory:'matchday_competition', amountNative:579.451092, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Torneos', normalizedCategory:'matchday_competition', amountNative:0, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Alquiler', normalizedCategory:'other_income', amountNative:9.916097, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:281.073459, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Ingresos Diversos', normalizedCategory:'other_income', amountNative:345.913034, disclosureLevel:'detailed' },
+    { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:469.722665, disclosureLevel:'detailed' },
+    { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:855.871189, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:3.561719, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:50.935566, disclosureLevel:'detailed' },
+  ],
   // 2024 en adelante: amountNative en ARS MILLONES NATIVOS (Versión 32 — ver comentario de cabecera).
   // Fuente: racing-balance-2023-24.md, Anexo III "Recursos ordinarios" (columna "2024", año
   // corriente de ESE balance, pág. 27) — suma exacta a $66.367.712.489, el TOTAL DE RECURSOS
@@ -277,51 +566,344 @@ const racingRevenueLinesByYear = {
   ],
 };
 
+// HOMOLOGACIÓN DE GASTOS CON BOCA (Versión 52, pedido explícito de Guido: "homologar egresos en
+// racing a como lo tiene Boca"). Hasta la Versión 51, "Costo transferencia de jugadores" (2009,
+// 2010, 2011, 2024, 2025) y "Pago por adquisición de jugadores" (2026, 2027) estaban en
+// `other_expenses`, así que el bucket "Compra de jugadores" de Formato Simplificado (ver
+// GENERIC_SIMPLIFIED_EXPENSE_BUCKETS en js/finanzas-calc.js: cats:['player_amortisation',
+// 'player_impairment']) daba SIEMPRE $0 para Racing, aunque el club gastó plata real comprando
+// jugadores todos estos años, esa plata estaba escondida dentro de "Otros gastos". Se reetiquetaron
+// esas 7 líneas a `player_amortisation` (no se tocó ningún monto, solo la categoría). Racing no
+// separa amortización de deterioro de pases como sí puede hacer Boca, así que todo entra a
+// `player_amortisation`, que junto con `player_impairment` (sin uso en Racing hoy) arma el mismo
+// bucket.
+//
+// DOS CASOS QUE QUEDAN A PROPÓSITO EN `other_expenses` (consultados a Guido con AskUserQuestion
+// antes de decidir, ver también .claude/skills/club-data-mapping/SKILL.md sección 1 y 10):
+// - "Pago de gastos por compraventa de jugadores" (2026, 2027): son comisiones/intermediación de
+//   la operación, no el costo del pase en sí. Boca no desglosa este tipo de comisión dentro de su
+//   bucket "Compra de jugadores" (que es solo amortización + deterioro de pases), así que meterlo
+//   ahí sería MENOS fiel a cómo Boca arma esa fila, no más homologado. Guido confirmó: dejarlo en
+//   el catch-all.
+// - "Egresos extraordinarios (compra de bienes de uso y mejoras, principalmente)" (2026, 2027): es
+//   CAPEX (plata de caja para comprar activos), un concepto distinto de "Inversiones (amortizaciones
+//   y depreciación)" de Boca, que es un cargo contable NO-CASH. Mezclar CAPEX con D&A rompería la
+//   comparabilidad que busca esta homologación, no la mejoraría. Guido confirmó: dejarlo en el
+//   catch-all.
+//
+// SEGUNDA RONDA DE HOMOLOGACIÓN (Versión 53, pedido explícito de Guido: "las rows tienen que ser
+// siempre iguales entre clubes, aunque alguna tenga un cero" + "no puede ser que otros gastos tenga
+// 64% del total... mirando los rows de Boca, podes crear nuevos y reducir ese 64%"). Se agregaron 3
+// categorías nuevas (`match_organisation_expense`/`youth_other_sports_expense`/
+// `admin_general_expense`, ver data/category-map.js), las mismas 3 filas que Boca ya usa en su
+// Ejercicio 2027 (`otrosGastos2027` en js/finanzas-calc.js: "Organización de partidos"/"Otras
+// secciones deportivas"/"Administración y gastos generales"), y se re-etiquetaron TODAS las líneas
+// de `other_expenses` que tenían un rubro identificable (antes: 100% de "Otros gastos" era
+// `other_expenses` sin distinción), dejando en el catch-all SOLO las 4 líneas ya consultadas con
+// Guido en la Versión 52 (compraventa de jugadores y CAPEX, ver arriba).
+// - `match_organisation_expense`: "Organización de partidos" (2009-2011/2024/2025) y "Pago de
+//   gastos por participación" (2026/2027, costo de participar en competencias: viajes,
+//   concentración). Mismo concepto que "Organización de Espectáculos" de Boca.
+// - `youth_other_sports_expense`: "Actividades deportivas y sociales" (2009-2011/2024/2025), "Pago
+//   de gastos fútbol amateur (activable)" y "Egresos de otras secciones" (2026/2027, incluye
+//   sub-ítems de otras actividades deportivas E instituciones educativas). Mismo concepto que
+//   "Fútbol Juvenil"+"Otros Deportes"+"Basket" de Boca.
+// - `admin_general_expense`: "Televisión AFA"/"Honorarios órgano fiduciario"/"Honorarios y otras
+//   contribuciones"/"Mantenimiento"/"Sellados, multas y gastos bancarios"/"Colegio"/"Sede Villa del
+//   Parque" (2009-2011/2024/2025), "Pago de gastos explotación del estadio"/"Pago de gastos de
+//   comercialización"/"Otros egresos" (2026/2027, incluye sub-ítems de administración/impuestos/
+//   gastos financieros). Mismo concepto que "Administración"+"Gastos Generales"+"Comerciales"+
+//   "Socios"+"Eventuales" de Boca.
+// - CASO CONSULTADO (Guido eligió la 1ra opción vía AskUserQuestion): "Fútbol profesional"
+//   (2009-2011/2024/2025) y "Pago de otros gastos deportivos fútbol profesional" (2026/2027) son
+//   costos NO salariales del plantel profesional (médico, indumentaria, viajes, pretemporada), la
+//   línea más grande de todo el catch-all (hasta ~30% de "Otros gastos" en algunos años). Se
+//   re-etiquetaron a `wages_squad`, NO a una categoría nueva: Boca ya mezcla este mismo tipo de
+//   costo dentro de su propio campo "wages" para el Ejercicio 2027 (ver
+//   `expenseSubBreakdown[2027]['Fútbol Profesional']` en data/boca-data.js: "Gerencia de Fútbol
+//   Profesional" incluye Farmacia/Pretemporada/Vigilancia/Canjes/Indumentaria junto con
+//   Remuneraciones y Primas, y ESE total completo es lo que alimenta `r.wages` para "Salarios y
+//   primas" en `simplifiedReportForBoca()`), así que sumarlo a `wages_squad` en Racing sigue el
+//   mismo criterio que ya usa Boca, no uno inventado para esta sesión. OJO (documentado para no
+//   repetir la investigación): esto es distinto de cómo Boca arma su Ejercicio 2025 (balance
+//   auditado real), donde `wages` es una cifra de remuneraciones MÁS estricta (excluye
+//   médico/indumentaria/viajes, ver comentario de `yearsRaw[2025]` en data/boca-data.js) — los dos
+//   ejercicios reales de Boca NO son 100% consistentes entre sí en este punto específico, y esta
+//   homologación de Racing sigue el criterio del Ejercicio 2027 (la referencia "canónica" que ya usa
+//   el resto de este skill/sitio para el orden y los nombres de fila).
+//
+// Boca 2025 (balance auditado real) NO recibió el mismo desglose de 3 filas en esta sesión: su
+// dato nativo (`nativeFinancialsBoca[2025]`) SÍ tiene detalle, pero varias líneas mezclan sueldos y
+// gastos operativos DENTRO del mismo renglón sin desglose propio (ej. "Estadio" trae "Remuneraciones
+// y cargas sociales" y gastos de mantenimiento juntos) — separar esa mezcla a mano, sin un balance
+// de verificación automatizado como pide CLAUDE.md ("Precisión antes que velocidad"), es un riesgo
+// real de ensuciar un balance auditado real. Un intento de reconstrucción a mano en esta sesión dio
+// una diferencia de ~$4.500 M contra `otherExpenses` (-71.553,845458 M), señal de que faltaba
+// reconciliar algo, así que NO se cargó. Queda como to-do explícito (ver comentario en
+// `js/finanzas-calc.js`, función `simplifiedReportForBoca`, sección `otrosGastosDefault`): Boca 2025
+// muestra las 3 filas nuevas en $0 y el monto completo en "Otros gastos", igual que antes de esta
+// versión, hasta que alguien re-verifique la separación línea por línea contra el balance.
 const racingExpenseLinesByYear = {
   2009: [
     { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-3.746, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-0.592, disclosureLevel:'detailed' },
-    { rawLabel:'Fútbol profesional', normalizedCategory:'other_expenses', amountNative:-6.499, disclosureLevel:'detailed' },
-    { rawLabel:'Organización de partidos', normalizedCategory:'other_expenses', amountNative:-0.995, disclosureLevel:'detailed' },
-    { rawLabel:'Televisión AFA', normalizedCategory:'other_expenses', amountNative:-0.215, disclosureLevel:'detailed' },
-    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'other_expenses', amountNative:-0.632, disclosureLevel:'detailed' },
-    { rawLabel:'Honorarios órgano fiduciario', normalizedCategory:'other_expenses', amountNative:-0.008, disclosureLevel:'detailed' },
-    { rawLabel:'Honorarios y otras contribuciones', normalizedCategory:'other_expenses', amountNative:-0.239, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento', normalizedCategory:'other_expenses', amountNative:-0.318, disclosureLevel:'detailed' },
-    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'other_expenses', amountNative:-0.068, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'other_expenses', amountNative:-0.251, disclosureLevel:'detailed' },
-    { rawLabel:'Sede Villa del Parque', normalizedCategory:'other_expenses', amountNative:-0.491, disclosureLevel:'detailed' },
-    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-1.506, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-6.499, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-0.995, disclosureLevel:'detailed' },
+    { rawLabel:'Televisión AFA', normalizedCategory:'admin_general_expense', amountNative:-0.215, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-0.632, disclosureLevel:'detailed' },
+    { rawLabel:'Honorarios órgano fiduciario', normalizedCategory:'admin_general_expense', amountNative:-0.008, disclosureLevel:'detailed' },
+    { rawLabel:'Honorarios y otras contribuciones', normalizedCategory:'admin_general_expense', amountNative:-0.239, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.318, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.068, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.251, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.491, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-1.506, disclosureLevel:'detailed' },
     { rawLabel:'Amortizaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-0.259, disclosureLevel:'detailed' },
     { rawLabel:'Previsiones / otras amortizaciones (cargos extraordinarios)', normalizedCategory:'other_amortisation', amountNative:-6.316, disclosureLevel:'detailed' },
   ],
   2010: [
     { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-5.545, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-0.684, disclosureLevel:'detailed' },
-    { rawLabel:'Fútbol profesional', normalizedCategory:'other_expenses', amountNative:-6.786, disclosureLevel:'detailed' },
-    { rawLabel:'Organización de partidos', normalizedCategory:'other_expenses', amountNative:-1.191, disclosureLevel:'detailed' },
-    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'other_expenses', amountNative:-1.735, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento', normalizedCategory:'other_expenses', amountNative:-0.41, disclosureLevel:'detailed' },
-    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'other_expenses', amountNative:-0.124, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'other_expenses', amountNative:-0.043, disclosureLevel:'detailed' },
-    { rawLabel:'Sede Villa del Parque', normalizedCategory:'other_expenses', amountNative:-0.13, disclosureLevel:'detailed' },
-    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-0.167, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-6.786, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-1.191, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-1.735, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.41, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.124, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.043, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.13, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-0.167, disclosureLevel:'detailed' },
     { rawLabel:'Amortizaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-0.303, disclosureLevel:'detailed' },
     { rawLabel:'Previsiones / otras amortizaciones (cargos extraordinarios)', normalizedCategory:'other_amortisation', amountNative:-3.128, disclosureLevel:'detailed' },
   ],
   2011: [
     { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-6.939, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-1.117, disclosureLevel:'detailed' },
-    { rawLabel:'Fútbol profesional', normalizedCategory:'other_expenses', amountNative:-7.077, disclosureLevel:'detailed' },
-    { rawLabel:'Organización de partidos', normalizedCategory:'other_expenses', amountNative:-1.128, disclosureLevel:'detailed' },
-    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'other_expenses', amountNative:-2.279, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento', normalizedCategory:'other_expenses', amountNative:-0.255, disclosureLevel:'detailed' },
-    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'other_expenses', amountNative:-0.189, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'other_expenses', amountNative:-0.041, disclosureLevel:'detailed' },
-    { rawLabel:'Sede Villa del Parque', normalizedCategory:'other_expenses', amountNative:-0.185, disclosureLevel:'detailed' },
-    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-0.992, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-7.077, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-1.128, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-2.279, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.255, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.189, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.041, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.185, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-0.992, disclosureLevel:'detailed' },
     { rawLabel:'Amortizaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-0.316, disclosureLevel:'detailed' },
     { rawLabel:'Previsiones / otras amortizaciones (cargos extraordinarios)', normalizedCategory:'other_amortisation', amountNative:-3.954, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio N° 110 (ver comentario completo junto a racingRevenueLinesByYear[2012] más arriba).
+  // Fuente: `Clubes/Argentina/Racing/racing-balance-2012.md`, Anexo III "Detalle de Gastos"
+  // (columna Total al 31/10/2012) + Anexo I "Bienes de Uso" (Amortizaciones del Ejercicio). Los 10
+  // rubros del Anexo III suman exacto $(141.052.157) (SUBTOTAL impreso); con "Cargos
+  // Extraordinarios (Previsiones/Otras Amortizaciones)" ($24.292.381, `other_amortisation`) y
+  // Amortizaciones de Bienes de Uso ($1.442.073, `depreciation`, Anexo I, NO incluidas en el
+  // subtotal de Anexo III) suma $(166.786.611) — ver verifyTieOuts().
+  2012: [
+    { rawLabel:'Sueldos del Personal', normalizedCategory:'wages_squad', amountNative:-34.882106 },
+    { rawLabel:'Cargas Sociales', normalizedCategory:'wages_squad', amountNative:-5.751097 },
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-36.097682 },
+    { rawLabel:'Organización de Partidos', normalizedCategory:'match_organisation_expense', amountNative:-6.173585 },
+    { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-11.285320 },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-1.365491 },
+    { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-1.252515 },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.198060 },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.998536 },
+    { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-43.047765 },
+    { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.442073 },
+    { rawLabel:'Cargos Extraordinarios (Previsiones / Otras Amortizaciones)', normalizedCategory:'other_amortisation', amountNative:-24.292381 },
+  ],
+  // Ejercicio N° 111 (ver comentario completo junto a racingRevenueLinesByYear[2013] más arriba).
+  // Fuente: `Clubes/Argentina/Racing/racing-balance-2013.md`, Anexo III "Detalle de Gastos"
+  // (columna Total al 31/10/2013) + Anexo I "Bienes de Uso" (Amortización del Ejercicio). Los 10
+  // rubros del Anexo III suman exacto $(158.127.700) (redondeo de $1 contra el SUBTOTAL impreso,
+  // $158.127.701); con "Cargos Extraordinarios (Previsiones/Otras Amortizaciones)" ($18.016.124,
+  // `other_amortisation`) y Amortizaciones de Bienes de Uso ($1.486.409, `depreciation`, Anexo I)
+  // suma $(177.630.233) — ver verifyTieOuts(). OJO al releer el PDF original: "Organización de
+  // Partidos"/"Grales. Actividades Deportivas / Soc." tienen sus columnas Generales/Específicos
+  // desalineadas del orden visual de filas (mismo tipo de trampa que las presupuestos 2013-14/
+  // 2015-16, pero acá en un balance) — ver la nota completa en el .md fuente antes de tocar estos
+  // 2 valores.
+  2013: [
+    { rawLabel:'Sueldos del Personal', normalizedCategory:'wages_squad', amountNative:-49.704889 },
+    { rawLabel:'Cargas Sociales', normalizedCategory:'wages_squad', amountNative:-8.046589 },
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-55.534786 },
+    { rawLabel:'Organización de Partidos', normalizedCategory:'match_organisation_expense', amountNative:-6.815239 },
+    { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-13.000589 },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-1.321368 },
+    { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.331475 },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-1.153084 },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1.617500 },
+    { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-20.602181 },
+    { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.486409 },
+    { rawLabel:'Cargos Extraordinarios (Previsiones / Otras Amortizaciones)', normalizedCategory:'other_amortisation', amountNative:-18.016124 },
+  ],
+  // Ejercicio N° 112 (ver comentario completo junto a racingRevenueLinesByYear[2014] más arriba).
+  // Fuente: `Clubes/Argentina/Racing/racing-balance-2014.md`, Anexo III "Detalle de Gastos"
+  // (columna Total al 31/08/2014) + Anexo I "Bienes de Uso" (Amortización del Ejercicio). Los 10
+  // rubros del Anexo III suman exacto $(190.132.485) (SUBTOTAL impreso); con "Cargos
+  // Extraordinarios (Previsiones/Otras Amortizaciones)" ($26.435.662, `other_amortisation`) y
+  // Amortizaciones de Bienes de Uso ($1.578.112, `depreciation`, Anexo I) suma $(218.146.259) —
+  // ver verifyTieOuts().
+  2014: [
+    { rawLabel:'Sueldos del Personal', normalizedCategory:'wages_squad', amountNative:-56.424777 },
+    { rawLabel:'Cargas Sociales', normalizedCategory:'wages_squad', amountNative:-8.983527 },
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-50.750419 },
+    { rawLabel:'Organización de Partidos', normalizedCategory:'match_organisation_expense', amountNative:-13.329071 },
+    { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-17.848486 },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-2.362159 },
+    { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-4.507312 },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.370414 },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1.209085 },
+    { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-34.347235 },
+    { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.578112 },
+    { rawLabel:'Cargos Extraordinarios (Previsiones / Otras Amortizaciones)', normalizedCategory:'other_amortisation', amountNative:-26.435662 },
+  ],
+  // Ejercicio N° 114 (ver comentario completo junto a racingRevenueLinesByYear[2016] más
+  // arriba). Fuente: `Clubes/Argentina/Racing/racing-balance-2016.md`, Anexo III "Detalle de
+  // Gastos" (columna Total al 31/08/2016) + "Depreciación" del Estado de Recursos y Gastos. Los
+  // 10 rubros del Anexo III suman exacto $(353.474.696) (SUBTOTAL impreso); con "Previsiones /
+  // Amortizaciones" ($86.210.139, `other_amortisation`) y Depreciación ($1.968.198,
+  // `depreciation`) suma $(441.653.033) — ver verifyTieOuts().
+  2016: [
+    { rawLabel:'Sueldos del Personal', normalizedCategory:'wages_squad', amountNative:-112.639736 },
+    { rawLabel:'Cargas Sociales', normalizedCategory:'wages_squad', amountNative:-18.694347 },
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-99.361355 },
+    { rawLabel:'Organización de Partidos', normalizedCategory:'match_organisation_expense', amountNative:-30.147936 },
+    { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-49.287058 },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-5.121782 },
+    { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-14.797764 },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-1.077987 },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-2.845248 },
+    { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-19.501483 },
+    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-1.968198 },
+    { rawLabel:'Previsiones / Amortizaciones', normalizedCategory:'other_amortisation', amountNative:-86.210139 },
+  ],
+  // Ejercicio N° 113 (ver comentario completo junto a racingRevenueLinesByYear[2015] más arriba).
+  // Fuente: `Clubes/Argentina/Racing/racing-balance-2014-15.md`, Anexo III "Detalle de Gastos"
+  // (columna Total al 31/08/2015) + Anexo I "Bienes de Uso" (Amortización del Ejercicio). Los 10
+  // rubros del Anexo III suman exacto $(310.039.072) (SUBTOTAL impreso); con "Cargos
+  // Extraordinarios (Previsiones/Otras Amortizaciones)" ($19.931.642, `other_amortisation`) y
+  // Amortizaciones de Bienes de Uso ($1.683.948, `depreciation`, Anexo I) suma $(331.654.662) —
+  // ver verifyTieOuts().
+  2015: [
+    { rawLabel:'Sueldos del Personal', normalizedCategory:'wages_squad', amountNative:-88.805004 },
+    { rawLabel:'Cargas Sociales', normalizedCategory:'wages_squad', amountNative:-14.284452 },
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-72.493181 },
+    { rawLabel:'Organización de Partidos', normalizedCategory:'match_organisation_expense', amountNative:-35.094389 },
+    { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-31.493115 },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-9.084199 },
+    { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-3.326824 },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.547052 },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1.644146 },
+    { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-53.266710 },
+    { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.683948 },
+    { rawLabel:'Cargos Extraordinarios (Previsiones / Otras Amortizaciones)', normalizedCategory:'other_amortisation', amountNative:-19.931642 },
+  ],
+  // Ejercicio N° 115 (ver comentario completo junto a racingRevenueLinesByYear[2017] más arriba).
+  // Fuente: `Clubes/Argentina/Racing/racing-balance-2017.md`, Anexo III "Detalle de Gastos"
+  // (columna Total 2017) + Anexo I "Bienes de Uso" (Depreciación del Ejercicio). Los 10 rubros del
+  // Anexo III suman exacto $(575.933.019) (SUBTOTAL impreso); con "Previsiones/Amortizaciones
+  // intangibles" ($126.386.082, `other_amortisation`) y Depreciación ($6.073.853, `depreciation`,
+  // Anexo I) suma $(708.392.954) — ver verifyTieOuts().
+  2017: [
+    { rawLabel:'Sueldos del Personal', normalizedCategory:'wages_squad', amountNative:-174.356185 },
+    { rawLabel:'Cargas Sociales', normalizedCategory:'wages_squad', amountNative:-24.647352 },
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-139.564544 },
+    { rawLabel:'Organización de Partidos', normalizedCategory:'match_organisation_expense', amountNative:-22.151970 },
+    { rawLabel:'Actividades Deportivas y Sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-67.837036 },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-6.560212 },
+    { rawLabel:'Sellados, Multas y Gastos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-24.037401 },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-1.413230 },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-4.879757 },
+    { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-110.485332 },
+    { rawLabel:'Depreciaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-6.073853 },
+    { rawLabel:'Previsiones / Amortizaciones Intangibles', normalizedCategory:'other_amortisation', amountNative:-126.386082 },
+  ],
+  // Ejercicio 2017/2018 (ver comentario completo junto a racingRevenueLinesByYear[2018] más arriba).
+  // Fuente: racing-balance-2018.md, Anexo III "Detalle de gastos" (columna TOTAL 2018, pág. 25) +
+  // Estado de recursos y gastos (Depreciaciones de bienes de uso, Anexo I, pág. 22-23). Los 10 rubros
+  // de Anexo III suman exacto $1.093.025.917 (TOTAL DE GASTOS impreso, pág. 5); con Previsiones/
+  // Amortizaciones intangibles (`other_amortisation`, parte del propio total de Anexo III,
+  // $249.645.990) y Depreciaciones de bienes de uso (`depreciation`, de Anexo I, $7.775.936, NO
+  // incluidas en el total de Anexo III) suma $1.350.447.843 — ver verifyTieOuts().
+  2018: [
+    { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-238.067884, disclosureLevel:'detailed' },
+    { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-36.475037, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-351.203655, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-98.275268, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-97.925553, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-8.374754, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-32.075059, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-2.570500, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-9.166669, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-218.891538, disclosureLevel:'detailed' },
+    { rawLabel:'Depreciaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-7.775936, disclosureLevel:'detailed' },
+    { rawLabel:'Previsiones / Amortizaciones intangibles', normalizedCategory:'other_amortisation', amountNative:-249.645990, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio 2018/2019 (ver comentario completo junto a racingRevenueLinesByYear[2019] más arriba).
+  // Fuente: `Clubes/Argentina/Racing/racing-presupuesto-2018-19.md`, página 9 (columna "Total del
+  // Período"). Suma exacta a $(1.756.652.573), el "TOTAL DE EGRESOS DE FDOS (IV)+(V)" impreso.
+  // "Pago por compra de Activos Intangibles" (-415.333.333, la compra de jugadores de este
+  // ejercicio) va a `player_amortisation`, mismo criterio que "Pago por adquisición de jugadores"
+  // en 2020 y "Cancelación Efectiva por Compra de Jugadores" en el overlay 2018 — no se excluye
+  // como si fuera puro movimiento de balance. Filas en $0 del documento (d. "Participación en
+  // Otras Comp. y Partidos Amistosos", b. "Subvenciones a Otras Entidades Deportivas", a. "Comisión
+  // Directiva", 3. "Otros Pagos por egresos extraord.", b. "Devolución Aportes al Fondo Social") no
+  // se cargaron como líneas propias, mismo criterio de siempre para un valor real en cero.
+  2019: [
+    { rawLabel:'Gastos de Explotación del Estadio', normalizedCategory:'admin_general_expense', amountNative:-65.450000 },
+    { rawLabel:'Participación en Camp. Oficiales SAF/AFA', normalizedCategory:'match_organisation_expense', amountNative:-46.700000 },
+    { rawLabel:'Part. en Campeonatos Internacionales', normalizedCategory:'match_organisation_expense', amountNative:-25.000000 },
+    { rawLabel:'Remuneraciones Plantel Deportivo (Incluido Cuerpo Técnico)', normalizedCategory:'wages_squad', amountNative:-154.000000 },
+    { rawLabel:'Premios y Primas Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-177.000000 },
+    { rawLabel:'Otros Gastos Dep. Futbol Profesional', normalizedCategory:'wages_squad', amountNative:-296.700000 },
+    { rawLabel:'Gastos Fútbol Amateur', normalizedCategory:'youth_other_sports_expense', amountNative:-66.000000 },
+    { rawLabel:'Pago de Gtos de Otras Secciones Dep.', normalizedCategory:'youth_other_sports_expense', amountNative:-28.600000 },
+    { rawLabel:'Gerencias Operativas', normalizedCategory:'admin_general_expense', amountNative:-27.200000 },
+    { rawLabel:'Departamentos Auxiliares - No Incluidos en (A)', normalizedCategory:'admin_general_expense', amountNative:-22.000000 },
+    { rawLabel:'Gastos Generales de Administración', normalizedCategory:'admin_general_expense', amountNative:-54.000000 },
+    { rawLabel:'Pago de Otros Gastos Ordinarios', normalizedCategory:'other_expenses', amountNative:-108.800000 },
+    { rawLabel:'Pagos de Gastos Financieros', normalizedCategory:'admin_general_expense', amountNative:-2.400000 },
+    { rawLabel:'Pagos por compra de Bienes de Uso', normalizedCategory:'other_expenses', amountNative:-120.500000 },
+    { rawLabel:'Pago por compra de Activos Intangibles', normalizedCategory:'player_amortisation', amountNative:-415.333333 },
+    { rawLabel:'Pagos por Colocaciones Fras.', normalizedCategory:'other_expenses', amountNative:-46.200000 },
+    { rawLabel:'Cancelación Efectiva de Pasivos', normalizedCategory:'other_expenses', amountNative:-100.769240 },
+  ],
+  // Ejercicio 2019/2020 (ver comentario completo junto a racingRevenueLinesByYear[2020] más arriba).
+  // Fuente: racing-balance-2019-20.md, Anexo III "Detalle de gastos" (columna "2020", pág. 28) +
+  // Estado de recursos y gastos (Depreciaciones/Previsiones, pág. 4). Suma exacta a
+  // $(2.100.483.040) de gastos ordinarios; con las dos líneas no-cash de abajo, cierra exacto
+  // ($(2.940.733.186) + netInterest 227.570.638 + revenue 2436.102976 = -277.059572, el RESULTADO
+  // (DÉFICIT) impreso) — ver verifyTieOuts().
+  2020: [
+    { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-611.240429, disclosureLevel:'detailed' },
+    { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-71.370395, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-902.416706, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-62.397662, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-229.174140, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-14.227505, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-29.062797, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-13.310389, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-167.283017, disclosureLevel:'detailed' },
+    { rawLabel:'Depreciaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-105.212746, disclosureLevel:'detailed' },
+    { rawLabel:'Previsiones / Amortizaciones intangibles', normalizedCategory:'other_amortisation', amountNative:-735.037400, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio 2020/2021 (ver comentario completo junto a racingRevenueLinesByYear[2021] más arriba).
+  // Fuente: racing-balance-2021.md, Anexo III "Detalle de gastos" (columna "2021", pág. 28) +
+  // Estado de recursos y gastos (Depreciaciones/Previsiones, pág. 5). Suma exacta a
+  // $(2.348.405.480) de gastos ordinarios; con las dos líneas no-cash de abajo, cierra exacto
+  // ($(3.404.446.864) + netInterest 75.896098 + revenue 3335.562848 = 7.012082, el SUPERÁVIT
+  // impreso) — ver verifyTieOuts().
+  2021: [
+    { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-588.846774, disclosureLevel:'detailed' },
+    { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-90.303914, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-1127.573095, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-77.158339, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-242.195045, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-15.785163, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-39.157337, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-9.539660, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-157.846153, disclosureLevel:'detailed' },
+    { rawLabel:'Depreciaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-152.718471, disclosureLevel:'detailed' },
+    { rawLabel:'Previsiones / Amortizaciones intangibles', normalizedCategory:'other_amortisation', amountNative:-903.322913, disclosureLevel:'detailed' },
   ],
   // Fuente: racing-balance-2023-24.md, Anexo IV "Gastos ordinarios" (columna "2024", año corriente
   // de ESE balance, pág. 28) + Estado de recursos y gastos (Depreciaciones/Previsiones, pág. 3).
@@ -330,12 +912,12 @@ const racingExpenseLinesByYear = {
   2024: [
     { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-8519.25827, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-1698.882389, disclosureLevel:'detailed' },
-    { rawLabel:'Fútbol profesional', normalizedCategory:'other_expenses', amountNative:-24286.994971, disclosureLevel:'detailed' },
-    { rawLabel:'Organización de partidos', normalizedCategory:'other_expenses', amountNative:-2597.482802, disclosureLevel:'detailed' },
-    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'other_expenses', amountNative:-7194.050178, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento', normalizedCategory:'other_expenses', amountNative:-261.225073, disclosureLevel:'detailed' },
-    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'other_expenses', amountNative:-1293.568672, disclosureLevel:'detailed' },
-    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-9995.727378, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-24286.994971, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-2597.482802, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-7194.050178, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-261.225073, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-1293.568672, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-9995.727378, disclosureLevel:'detailed' },
     { rawLabel:'Depreciaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-2488.762976, disclosureLevel:'detailed' },
     { rawLabel:'Previsiones / Amortizaciones intangibles', normalizedCategory:'other_amortisation', amountNative:-20832.011983, disclosureLevel:'detailed' },
   ],
@@ -346,13 +928,13 @@ const racingExpenseLinesByYear = {
   2025: [
     { rawLabel:'Sueldos del personal', normalizedCategory:'wages_squad', amountNative:-15202.077398, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales', normalizedCategory:'wages_squad', amountNative:-3195.300296, disclosureLevel:'detailed' },
-    { rawLabel:'Fútbol profesional', normalizedCategory:'other_expenses', amountNative:-27905.125653, disclosureLevel:'detailed' },
-    { rawLabel:'Organización de partidos', normalizedCategory:'other_expenses', amountNative:-5678.302707, disclosureLevel:'detailed' },
-    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'other_expenses', amountNative:-9290.650219, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento', normalizedCategory:'other_expenses', amountNative:-350.733591, disclosureLevel:'detailed' },
-    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'other_expenses', amountNative:-1695.870575, disclosureLevel:'detailed' },
-    { rawLabel:'Sede Villa del Parque', normalizedCategory:'other_expenses', amountNative:-1376.54867, disclosureLevel:'detailed' },
-    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-2533.458758, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'wages_squad', amountNative:-27905.125653, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de partidos', normalizedCategory:'match_organisation_expense', amountNative:-5678.302707, disclosureLevel:'detailed' },
+    { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-9290.650219, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-350.733591, disclosureLevel:'detailed' },
+    { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-1695.870575, disclosureLevel:'detailed' },
+    { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1376.54867, disclosureLevel:'detailed' },
+    { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-2533.458758, disclosureLevel:'detailed' },
     { rawLabel:'Depreciaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-3152.752679, disclosureLevel:'detailed' },
     { rawLabel:'Previsiones / Amortizaciones intangibles', normalizedCategory:'other_amortisation', amountNative:-20912.793752, disclosureLevel:'detailed' },
   ],
@@ -364,20 +946,20 @@ const racingExpenseLinesByYear = {
     // Versión 38, líneas de primer nivel (antes eran sub-ítems de `lump_football_operations_expense`,
     // lo que dejaba "Salarios del plantel" en $0 en Formato simplificado — mismo bug que el de
     // ingresos, encontrado al revisar el reporte de Guido).
-    { rawLabel:'Pago de gastos explotación del estadio', normalizedCategory:'other_expenses', amountNative:-6290.935116, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de gastos por participación', normalizedCategory:'other_expenses', amountNative:-7653.273667, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos explotación del estadio', normalizedCategory:'admin_general_expense', amountNative:-6290.935116, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos por participación', normalizedCategory:'match_organisation_expense', amountNative:-7653.273667, disclosureLevel:'detailed' },
     { rawLabel:'Pago de remuneraciones plantel profesional', normalizedCategory:'wages_squad', amountNative:-27953.696292, disclosureLevel:'detailed' },
     { rawLabel:'Pago de remuneraciones cuerpo técnico', normalizedCategory:'wages_squad', amountNative:-4743.41219, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de otros gastos deportivos fútbol profesional', normalizedCategory:'other_expenses', amountNative:-10251.057047, disclosureLevel:'detailed' },
-    { rawLabel:'Pago por adquisición de jugadores', normalizedCategory:'other_expenses', amountNative:-19010.56705, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de otros gastos deportivos fútbol profesional', normalizedCategory:'wages_squad', amountNative:-10251.057047, disclosureLevel:'detailed' },
+    { rawLabel:'Pago por adquisición de jugadores', normalizedCategory:'player_amortisation', amountNative:-19010.56705, disclosureLevel:'detailed' },
     { rawLabel:'Pago de gastos por compraventa de jugadores', normalizedCategory:'other_expenses', amountNative:-9719.521189, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'other_expenses', amountNative:-5260.525946, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'other_expenses', amountNative:-7069.748476, disclosureLevel:'detailed' },
-    { rawLabel:'Egresos de otras secciones', normalizedCategory:'other_expenses', amountNative:-4732.977406, disclosureLevel:'detailed', items:[
+    { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'youth_other_sports_expense', amountNative:-5260.525946, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'admin_general_expense', amountNative:-7069.748476, disclosureLevel:'detailed' },
+    { rawLabel:'Egresos de otras secciones', normalizedCategory:'youth_other_sports_expense', amountNative:-4732.977406, disclosureLevel:'detailed', items:[
       ['Pago de remuneraciones otras actividades deportivas', -894.565507], ['Pago de gastos otras actividades deportivas', -572.029391],
       ['Pago de remuneraciones de instituciones educativas', -2743.247721], ['Pago de gastos de instituciones educativas', -523.134788],
     ]},
-    { rawLabel:'Otros egresos', normalizedCategory:'other_expenses', amountNative:-17160.514764, disclosureLevel:'detailed', items:[
+    { rawLabel:'Otros egresos', normalizedCategory:'admin_general_expense', amountNative:-17160.514764, disclosureLevel:'detailed', items:[
       ['Pago de gastos de administración', -12318.896759], ['Pago de otros gastos ordinarios', -436.882116],
       ['Pago de impuestos, tasas y contribuciones', -2427.991586], ['Pago de gastos financieros', -1976.744303],
     ]},
@@ -394,20 +976,20 @@ const racingExpenseLinesByYear = {
   // `verifyTieOuts()` confirmó que cierran exacto contra el TOTAL DE EGRESOS DE FONDOS DEL PERÍODO
   // impreso ($142.071.747.998), sin necesidad de ningún chequeo especial.
   2027: [
-    { rawLabel:'Pago de gastos explotación del estadio', normalizedCategory:'other_expenses', amountNative:-5309.807479, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de gastos por participación', normalizedCategory:'other_expenses', amountNative:-7340.691293, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos explotación del estadio', normalizedCategory:'admin_general_expense', amountNative:-5309.807479, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos por participación', normalizedCategory:'match_organisation_expense', amountNative:-7340.691293, disclosureLevel:'detailed' },
     { rawLabel:'Pago de remuneraciones plantel profesional', normalizedCategory:'wages_squad', amountNative:-28190.431748, disclosureLevel:'detailed' },
     { rawLabel:'Pago de remuneraciones cuerpo técnico', normalizedCategory:'wages_squad', amountNative:-4191.06686, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de otros gastos deportivos fútbol profesional', normalizedCategory:'other_expenses', amountNative:-12923.34615, disclosureLevel:'detailed' },
-    { rawLabel:'Pago por adquisición de jugadores', normalizedCategory:'other_expenses', amountNative:-19318.430324, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de otros gastos deportivos fútbol profesional', normalizedCategory:'wages_squad', amountNative:-12923.34615, disclosureLevel:'detailed' },
+    { rawLabel:'Pago por adquisición de jugadores', normalizedCategory:'player_amortisation', amountNative:-19318.430324, disclosureLevel:'detailed' },
     { rawLabel:'Pago de gastos por compraventa de jugadores', normalizedCategory:'other_expenses', amountNative:-14335.322189, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'other_expenses', amountNative:-5462.113805, disclosureLevel:'detailed' },
-    { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'other_expenses', amountNative:-8478.900817, disclosureLevel:'detailed' },
-    { rawLabel:'Egresos de otras secciones', normalizedCategory:'other_expenses', amountNative:-5981.254752, disclosureLevel:'detailed', items:[
+    { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'youth_other_sports_expense', amountNative:-5462.113805, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'admin_general_expense', amountNative:-8478.900817, disclosureLevel:'detailed' },
+    { rawLabel:'Egresos de otras secciones', normalizedCategory:'youth_other_sports_expense', amountNative:-5981.254752, disclosureLevel:'detailed', items:[
       ['Pago de remuneraciones otras actividades deportivas', -389.374038], ['Pago de gastos otras actividades deportivas', -1970.613103],
       ['Pago de remuneraciones de instituciones educativas', -2789.252081], ['Pago de gastos de instituciones educativas', -832.01553],
     ]},
-    { rawLabel:'Otros egresos', normalizedCategory:'other_expenses', amountNative:-19998.655736, disclosureLevel:'detailed', items:[
+    { rawLabel:'Otros egresos', normalizedCategory:'admin_general_expense', amountNative:-19998.655736, disclosureLevel:'detailed', items:[
       ['Pago de gastos de administración', -15375.16962], ['Pago de otros gastos ordinarios', -519.097351],
       ['Pago de impuestos, tasas y contribuciones', -2157.3], ['Pago de gastos financieros', -1947.088765],
     ]},
@@ -440,6 +1022,193 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     grossDebt:24.395, cash:0.542, profitOnPlayerSales:0, assetSales:0, netInterest:-0.942, tax:0,
+  },
+  // Ejercicio N° 110 (1°/11/2011 al 31/10/2012, ver comentario completo junto a
+  // racingRevenueLinesByYear[2012]). PRE-Blanco (`gestionId:null`, presidente Gastón Federico
+  // Cogorno). A diferencia de 2009-2011 (USD ya-convertido), este ejercicio está en ARS NATIVO
+  // (`currency:'ARS'`) con fx=4,7260, la tasa dominante que declara el propio balance en su Anexo
+  // de Moneda Extranjera (lado Activo — el lado Pasivo usa $4,7660, inconsistencia menor del
+  // propio documento). grossDebt = TOTAL DEL PASIVO (Estado de Situación Patrimonial). cash = Caja
+  // y Bancos (misma página). netInterest = Resultados Financieros Ingresos−Egresos del Estado de
+  // Recursos y Gastos (6.078.346−7.059.282 = −980.936).
+  2012: {
+    currency:'ARS', fx:4.7260,
+    sourceId:'racing-balance-2012',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    grossDebt:115.415132, cash:1.275318, profitOnPlayerSales:0, assetSales:0, netInterest:-0.980936, tax:0,
+    officialTotalRevenue:184.791901, officialTotalExpenses:166.786611,
+  },
+  // Ejercicio N° 111 (1°/11/2012 al 31/10/2013, ver comentario completo junto a
+  // racingRevenueLinesByYear[2013]). Balance real (`reportType:'official_balance_sheet'`).
+  // `gestionId:null` por inferencia de fecha, NO confirmado con certeza (ninguna página de este
+  // balance puntual muestra firma de Presidente) — ver nota completa en
+  // `Clubes/Argentina/Racing/racing-balance-2013.md`. fx=5,8720, la tasa dominante que declara el
+  // propio balance en su Anexo de Moneda Extranjera. grossDebt = TOTAL DEL PASIVO (Estado de
+  // Situación Patrimonial). cash = Caja y Bancos (misma página). netInterest = Resultados
+  // Financieros Ingresos−Egresos del Estado de Recursos y Gastos (12.161.277−11.995.156 =
+  // 166.121).
+  2013: {
+    currency:'ARS', fx:5.8720,
+    sourceId:'racing-balance-2013',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    grossDebt:133.030906, cash:4.180729, profitOnPlayerSales:0, assetSales:0, netInterest:0.166121, tax:0,
+    officialTotalRevenue:188.690953, officialTotalExpenses:177.630233,
+  },
+  // Ejercicio N° 112 (1°/11/2013 al 31/8/2014, irregular de 10 meses, ver comentario completo
+  // junto a racingRevenueLinesByYear[2014]). `reportType:'official_budget_and_balance'`: este
+  // balance convive con `racingPresupuestoOverlayByYear[2014]` (el presupuesto 2013/2014, mismo
+  // ejercicio, movido acá desde los slots principales) — el balance sigue siendo el dato PRIMARIO
+  // (KPIs/Formato Simplificado/verifyTieOuts salen de acá). fx=8,3070, la tasa dominante que
+  // declara el propio balance en su Anexo de Moneda Extranjera. grossDebt = TOTAL DEL PASIVO
+  // (Estado de Situación Patrimonial). cash = Caja y Bancos (misma página). netInterest =
+  // Resultados Financieros Ingresos−Egresos del Estado de Recursos y Gastos
+  // (22.318.464−5.867.338 = 16.451.126).
+  2014: {
+    currency:'ARS', fx:8.3070,
+    sourceId:'racing-balance-2014',
+    reportType:'official_budget_and_balance',
+    gestionId:'blanco',
+    grossDebt:91.442572, cash:4.696944, profitOnPlayerSales:0, assetSales:0, netInterest:16.451126, tax:0,
+    officialTotalRevenue:302.631868, officialTotalExpenses:218.146259,
+  },
+  // Ejercicio N° 114 (1°/9/2015 al 31/8/2016, ver comentario completo junto a
+  // racingRevenueLinesByYear[2016]). `reportType:'official_budget_and_balance'`: este balance
+  // convive con `racingPresupuestoOverlayByYear[2016]` (el presupuesto 2015/2016, mismo ejercicio,
+  // movido acá desde los slots principales) — el balance sigue siendo el dato PRIMARIO. fx=14,83,
+  // la tasa dominante que declara el propio balance en su Anexo V (Moneda Extranjera). grossDebt =
+  // TOTAL DEL PASIVO (Estado de Situación Patrimonial). cash = Caja y Bancos (misma página).
+  // netInterest = Resultados Financieros y por tenencia del Anexo II (4.065.311+19.592.652 =
+  // 23.657.963 — este ejercicio no desglosa un lado "Egresos" financieros separado).
+  2016: {
+    currency:'ARS', fx:14.83,
+    sourceId:'racing-balance-2016',
+    reportType:'official_budget_and_balance',
+    gestionId:'blanco',
+    grossDebt:98.450187, cash:42.030653, profitOnPlayerSales:0, assetSales:0, netInterest:23.657963, tax:0,
+    officialTotalRevenue:611.968373, officialTotalExpenses:441.653033,
+  },
+  // Ejercicio N° 113 (1°/9/2014 al 31/8/2015, ver comentario completo junto a
+  // racingRevenueLinesByYear[2015]). Balance real (`reportType:'official_balance_sheet'`, sin
+  // presupuesto propio en el archivo para este mismo ejercicio). fx=9,20, el dólar oficial de
+  // cierre de agosto de 2015 (tasa dominante del Anexo de Moneda Extranjera). grossDebt = TOTAL
+  // DEL PASIVO (Estado de Situación Patrimonial). cash = Caja y Bancos (misma página). netInterest
+  // = Resultados Financieros Ingresos−Egresos del Estado de Recursos y Gastos
+  // (7.900.977−4.016.785 = 3.884.192).
+  2015: {
+    currency:'ARS', fx:9.20,
+    sourceId:'racing-balance-2014-15',
+    reportType:'official_balance_sheet',
+    gestionId:'blanco',
+    grossDebt:65.098611, cash:7.838386, profitOnPlayerSales:0, assetSales:0, netInterest:3.884192, tax:0,
+    officialTotalRevenue:430.314984, officialTotalExpenses:331.654662,
+  },
+  // Ejercicio N° 115 (1°/9/2016 al 31/8/2017, ver comentario completo junto a
+  // racingRevenueLinesByYear[2017]). Balance real (`reportType:'official_balance_sheet'`, sin
+  // presupuesto propio en el archivo). fx=17,21, la tasa dominante que declara el propio balance
+  // en su Anexo V. grossDebt = TOTAL DEL PASIVO. cash = Caja y Bancos. netInterest = Intereses
+  // financieros + Diferencias de cambio del Estado de Recursos y Gastos (16.091.594+21.628.821 =
+  // 37.720.415).
+  2017: {
+    currency:'ARS', fx:17.21,
+    sourceId:'racing-balance-2017',
+    reportType:'official_balance_sheet',
+    gestionId:'blanco',
+    grossDebt:198.933525, cash:41.104353, profitOnPlayerSales:0, assetSales:0, netInterest:37.720415, tax:0,
+    officialTotalRevenue:804.833215, officialTotalExpenses:708.392954,
+  },
+  // Ejercicio 2017/2018 (Ejercicio N° 116, ver comentario completo junto a
+  // racingRevenueLinesByYear[2018]). fx = 36,65, declarado en el Anexo V "Activos y pasivos en
+  // moneda extranjera" (pág. 27-29 de racing-balance-2018.md), tipo de cambio USD al 31/08/2018,
+  // usado en todo el Anexo salvo una partida puntual de pasivo que declara 36,85 (inconsistencia
+  // menor del propio documento, no investigada más, mismo criterio que la diferencia $73,98/$74,18
+  // ya documentada para el Ejercicio 2019/2020). `reportType:'official_budget_and_balance'`: este
+  // balance convive con `racingPresupuestoOverlayByYear[2018]` (mismo ejercicio, el presupuesto ya
+  // cargado en la Versión 63) — el balance sigue siendo el dato PRIMARIO (KPIs/Formato
+  // Simplificado/verifyTieOuts salen de acá).
+  //
+  // netInterest = 177,149112 = "Intereses financieros" (28,953390) + "Diferencias de cambio"
+  // (148,195722), las 2 líneas que el balance agrupa bajo "Resultados Financieros y por tenencia"
+  // (pág. 5) — se combinan en un solo netInterest, mismo criterio que el resto de los balances de
+  // Racing (que reportan esto como una sola línea "incluyendo el R.E.C.P.A.M."), aunque ESTE
+  // documento puntual las separe en 2 sub-líneas.
+  //
+  // Verificación (Versión 64): revenueLines suma exacto $1.789.819.233 (TOTAL DE RECURSOS impreso).
+  // expenseLines suma exacto $(1.350.447.843) ($1.093.025.917 de Anexo III + $249.645.990 de
+  // Previsiones/Amortizaciones intangibles + $7.775.936 de Depreciaciones de Anexo I). Resultado:
+  // 1.789.819.233 - 1.350.447.843 + 177.149.112 = 616.520.502, exacto contra "RESULTADO FINAL –
+  // Superávit" impreso — ver verifyTieOuts().
+  2018: {
+    currency:'ARS', fx:36.65,
+    sourceId:'racing-balance-2018',
+    reportType:'official_budget_and_balance',
+    gestionId:'blanco',
+    grossDebt:458.940640, cash:405.685775, profitOnPlayerSales:0, assetSales:0, netInterest:177.149112, tax:0,
+    officialTotalRevenue:1789.819233, officialTotalExpenses:1350.447843,
+  },
+  // Ejercicio 2018/2019 (1°/9/2018 al 31/8/2019, ver comentario completo junto a
+  // racingRevenueLinesByYear[2019]). PRESUPUESTO-ONLY, sin balance real cargado todavía para este
+  // ejercicio (`reportType:'official_budget'` simple, no `official_budget_and_balance`) — a
+  // diferencia de 2017/2018 y 2019/2020 (que sí tienen las 2 fuentes), este ejercicio queda con un
+  // solo lado hasta que se cargue (si aparece) el balance auditado real. fx=40, declarado en las
+  // Premisas Macro del propio presupuesto (pág. 2: "Estimamos un TC de $ 40.- por u$d 1.- en
+  // promedio para el período"). Sin balance real, no hay grossDebt/cash/netInterest que declarar
+  // (mismo criterio que 2026/2027, únicos otros `official_budget` simples del sitio): quedan en 0.
+  2019: {
+    currency:'ARS', fx:40,
+    sourceId:'racing-presupuesto-2018-19',
+    reportType:'official_budget',
+    gestionId:'blanco',
+    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
+    officialTotalRevenue:1616.026650, officialTotalExpenses:1756.652573,
+  },
+  // Ejercicio 2019/2020 (Ejercicio N° 118, ver comentario completo junto a racingRevenueLinesByYear
+  // [2020]). fx = 73,98, declarado en el Anexo V "Activos y pasivos en moneda extranjera" (pág. 30
+  // del balance), tipo de cambio USD al 31/08/2020 (regla #1 del skill: usar el que declara el
+  // propio documento). OJO: 3 líneas sueltas de "Otras deudas" (pasivo) en ese mismo Anexo V usan
+  // $74,18 en vez de $73,98, una inconsistencia real del propio documento (¿fecha de registración
+  // distinta?), no se investigó más porque son ~$2M ARS del total, se usó el tipo de cambio
+  // dominante (73,98, usado en absolutamente todo el resto del Anexo).
+  // reportType 'official_budget_and_balance' (Versión 58, primer ejercicio del sitio que lo usa):
+  // este balance real convive con `racingPresupuestoOverlayByYear[2020]` (mismo ejercicio,
+  // 1°/9/2019 al 31/8/2020). El balance sigue siendo el dato PRIMARIO (KPIs/Formato Simplificado/
+  // verifyTieOuts salen de acá, sin cambios); el presupuesto es la columna "Presupuesto" de
+  // comparación en "Estado de resultados" (ver `.claude/skills/club-or-year-onboarding/SKILL.md`
+  // sección 7).
+  2020: {
+    currency:'ARS', fx:73.98,
+    sourceId:'racing-balance-2019-20',
+    reportType:'official_budget_and_balance',
+    gestionId:'blanco',
+    // grossDebt = TOTAL DEL PASIVO (Estado de situación patrimonial, pág. 3, columna 31/08/2020).
+    // cash = Caja y bancos (misma página). netInterest = "Resultados financieros y por tenencia
+    // (incluyendo el RECPAM)" del Estado de recursos y gastos (pág. 4, columna 2020).
+    // assetSales = "Ingresos Terreno Tita Mattiussi" (Nota 10): $0 este ejercicio (fue un ingreso
+    // único del ejercicio ANTERIOR, 2018/2019, todavía no cargado en el sitio), se deja el campo
+    // documentado para cuando se cargue ese ejercicio (columna comparativa del balance: 738,941791
+    // M, pero esa cifra pertenece al año 2019, no se puede usar acá sin re-extraer del balance de
+    // ESE ejercicio, ver skill sección 6.5).
+    grossDebt:715.799969, cash:585.611084, profitOnPlayerSales:0, assetSales:0, netInterest:227.570638, tax:0,
+    officialTotalRevenue:2436.102976, officialTotalExpenses:2940.733186,
+  },
+  // Ejercicio 2020/2021 (Ejercicio N° 119, irregular de 10 meses: 1°/9/2020 al 30/6/2021, gestión
+  // Blanco, ver comentario completo junto a racingRevenueLinesByYear[2021]). fx = 95,52, declarado
+  // en el Anexo V "Activos y pasivos en moneda extranjera" (pág. 30 del balance), tipo de cambio
+  // USD al 30/06/2021, usado de forma consistente en TODO el Anexo (Caja, bancos, divisas en
+  // custodia, créditos por venta de jugadores en USD), sin la inconsistencia puntual que sí tuvo el
+  // Anexo V del ejercicio anterior. `official_balance_sheet` simple (no `official_budget_and_balance`
+  // como 2020): el archivo de Racing no tiene un presupuesto propio de este ejercicio de transición.
+  2021: {
+    currency:'ARS', fx:95.52,
+    sourceId:'racing-balance-2021',
+    reportType:'official_balance_sheet',
+    gestionId:'blanco',
+    // grossDebt = TOTAL DEL PASIVO (Estado de situación patrimonial, pág. 4, columna 30/06/2021).
+    // cash = Caja y bancos (misma página). netInterest = "Resultados Financieros y por tenencia
+    // (Incluyendo el R.E.C.P.A.M.)" del Estado de recursos y gastos (pág. 5, columna 2021).
+    grossDebt:885.305109, cash:1154.224649, profitOnPlayerSales:0, assetSales:0, netInterest:75.896098, tax:0,
+    officialTotalRevenue:3335.562848, officialTotalExpenses:3404.446864,
   },
   2024: {
     currency:'ARS', fx:909,
@@ -486,6 +1255,287 @@ const racingFiscalYearMeta = {
     gestionId:'milito',
     grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:143118.482343, officialTotalExpenses:142071.747998,
+  },
+};
+
+// racingPresupuestoOverlayByYear (Versión 57): para un ejercicio con `reportType:
+// 'official_budget_and_balance'` arriba (el balance real es el dato primario de ese año), acá va
+// el Presupuesto de ESE MISMO ejercicio, usado solo para la columna "Presupuesto" de comparación en
+// "Estado de resultados" (ver `presupuestoOverlayFor()`/`presupuestoOverlayReportFor()` en
+// js/finanzas-calc.js). Formato: mismo shape que racingRevenueLinesByYear/racingExpenseLinesByYear
+// (rawLabel/normalizedCategory/amountNative/items), más su propio currency/fx (puede declarar un
+// tipo de cambio distinto al del balance del mismo ejercicio, ver club-data-mapping SKILL.md
+// sección 5).
+//
+// Ejercicio 2020 (Versión 58): primer overlay real cargado, `presupuesto2019-20.pdf` (mismo
+// ejercicio 1°/9/2019 al 31/8/2020 que el balance real ya cargado en racingRevenueLinesByYear
+// [2020]/racingExpenseLinesByYear[2020]). Es un ESCANEO (8 páginas, ~1 char/página, sin texto
+// nativo), transcripto con el Read tool sobre imágenes de página, corrigiendo primero un desvío
+// diagonal real del escaneo (~0,78°, medido maximizando la nitidez de las líneas horizontales de
+// la grilla con PIL antes de recortar filas) — sin esa corrección, leer una columna angosta (ej. la
+// de "TOTAL PERÍODO", la más a la derecha) hace que el valor de una fila "se lea" desplazado a la
+// fila de arriba o abajo cuanto más lejos está del borde izquierdo, un efecto acumulativo de la
+// inclinación. Encontrado así en esta sesión (y corregido con ayuda de Guido, que confirmó los
+// valores correctos mirando el PDF él mismo): antes de deskewar, la fila "9.- Cobros de otros
+// recursos de gestión por fútbol" parecía mostrar el mismo valor que "B. Ingresos Sociales" de la
+// fila de abajo (634,152 M), cuando el valor real de la fila 9 es 18 M.
+//
+// CASO DE CRITERIO real encontrado en "2.- Cobranzas por participación" (Ingresos, pág. 7): el
+// documento imprime 606,734 M en esa fila, pero sus propios sub-ítems (d+e+f: Competiciones
+// oficiales S.A.F./internacionales/A.F.A.) solo suman 274,780 M. Guido explicó, mirando el PDF,
+// que esa cifra impresa (606,734 M) es un ACUMULADO que además incluye las filas "3.- Cobranzas
+// por venta de abonos" (123,154 M) y "4.- Cobros por retransmisión y derechos de TV" (208,800 M):
+// 274,780 + 123,154 + 208,800 = 606,734 M exacto. Como el sitio carga 3 y 4 como líneas PROPIAS
+// separadas, usar el 606,734 M impreso para "Cobranzas por participación" duplicaría esa plata.
+// Se cargó acá el valor NO acumulado (274,780 M, la suma real de d+e+f), que es el que hace cerrar
+// "A. Ingresos provenientes de fútbol" (2.242,767 M) y el total general contra los subtotales
+// impresos (verificado exacto, ver comentario de verifyTieOuts en index.html).
+//
+// fx = 70 (ARS por USD), la premisa macro que el propio presupuesto declara ("Estimamos un TC de
+// $70.- por u$d1.- en promedio para el período", pág. 2) — distinto del fx que declara el BALANCE
+// real de este mismo ejercicio (73,98, del Anexo V), exactamente el caso que anticipaba el
+// comentario de arriba: el presupuesto puede declarar su propio tipo de cambio, no hay que forzar
+// el mismo que el balance.
+const racingPresupuestoOverlayByYear = {
+  // Ejercicio N° 112 (2013/2014, 1°/11/2013 al 31/8/2014): `presupuesto2013-14.pdf`, cargado
+  // originalmente como el dato PRIMARIO (único documento de este ejercicio en ese momento,
+  // `official_budget` simple). Al cargar `balance2014.pdf` (el balance real del mismo ejercicio,
+  // Ejercicio N° 112, irregular de 10 meses), este pasa a ser el dato primario (ver
+  // `racingRevenueLinesByYear[2014]`/`racingFiscalYearMeta[2014]`,
+  // `reportType:'official_budget_and_balance'`) — estas mismas líneas de presupuesto, sin tocar un
+  // solo valor, se movieron acá como columna de comparación. Mismo criterio de categorización que
+  // tenían en los slots principales, sin cambios, solo cambió DÓNDE viven estos datos en el
+  // archivo.
+  2014: {
+    currency:'ARS', fx:6.00,
+    sourceId:'racing-presupuesto-2013-14',
+    revenueLines: [
+      { rawLabel:'Campeonatos Oficiales AFA', normalizedCategory:'matchday_competition', amountNative:8.810000 },
+      { rawLabel:'Otras Comp. y Partidos Amistosos', normalizedCategory:'matchday_competition', amountNative:2.400000 },
+      { rawLabel:'Derechos de Retransmisión', normalizedCategory:'broadcasting', amountNative:35.200000 },
+      { rawLabel:'Pub. y Esponsorización Futbol', normalizedCategory:'sponsorship_commercial', amountNative:23.166673 },
+      { rawLabel:'Otros Ingresos por alquiler de cancha', normalizedCategory:'other_income', amountNative:0.270000 },
+      { rawLabel:'Cesión de Jugadores (Transf. / Prést.)', normalizedCategory:'player_sales', amountNative:85.802408 },
+      { rawLabel:'Ingresos por Prop. Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:6.125000 },
+      { rawLabel:'Otros Ingresos de Gestión por Futbol', normalizedCategory:'other_income', amountNative:11.790000 },
+      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:2.590000 },
+      { rawLabel:'Ingresos por Socios', normalizedCategory:'member_dues', amountNative:47.300000 },
+      { rawLabel:'Ingresos Varios Sede', normalizedCategory:'other_income', amountNative:4.953750 },
+      { rawLabel:'Ingresos por Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:9.350000 },
+      { rawLabel:'Cobro de Subv., Donaciones y Legados', normalizedCategory:'other_income', amountNative:5.994000 },
+      { rawLabel:'Otros cobros de Ing. Extraordinarios', normalizedCategory:'other_income', amountNative:0.600000 },
+    ],
+    expenseLines: [
+      { rawLabel:'Gastos de Explotación del Estadio', normalizedCategory:'admin_general_expense', amountNative:-2.310000 },
+      { rawLabel:'Participación en Camp. Oficiales AFA', normalizedCategory:'match_organisation_expense', amountNative:-5.353950 },
+      { rawLabel:'Part. en Campeonatos Internacionales', normalizedCategory:'match_organisation_expense', amountNative:-0.226400 },
+      { rawLabel:'Gtos Derechos Televisación', normalizedCategory:'admin_general_expense', amountNative:-0.648000 },
+      { rawLabel:'Remuneraciones Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-22.988878 },
+      { rawLabel:'Primas Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-22.670010 },
+      { rawLabel:'Premios Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-8.748435 },
+      { rawLabel:'Pretemporada', normalizedCategory:'wages_squad', amountNative:-0.990000 },
+      { rawLabel:'Otros Gastos Dep. Futbol Profesional', normalizedCategory:'wages_squad', amountNative:-28.166451 },
+      { rawLabel:'Inversiones en Amateur', normalizedCategory:'youth_other_sports_expense', amountNative:-7.145684 },
+      { rawLabel:'Gastos de Seguridad', normalizedCategory:'admin_general_expense', amountNative:-6.426500 },
+      { rawLabel:'Servicios Médicos', normalizedCategory:'admin_general_expense', amountNative:-1.785000 },
+      { rawLabel:'Pago de Gtos de Otras Secciones Dep.', normalizedCategory:'youth_other_sports_expense', amountNative:-2.091000 },
+      { rawLabel:'Departamentos Auxiliares - Socios', normalizedCategory:'admin_general_expense', amountNative:-0.630000 },
+      { rawLabel:'Departamentos Auxiliares - Imagen / Prensa', normalizedCategory:'admin_general_expense', amountNative:-0.600000 },
+      { rawLabel:'Gastos Generales de Administración', normalizedCategory:'admin_general_expense', amountNative:-6.570000 },
+      { rawLabel:'Pago de Otros Gastos Ordinarios', normalizedCategory:'other_expenses', amountNative:-37.975000 },
+      { rawLabel:'Pago de Moratoria', normalizedCategory:'admin_general_expense', amountNative:-3.600000 },
+      { rawLabel:'Pago de Otros Pasivos', normalizedCategory:'other_expenses', amountNative:-25.655611 },
+      { rawLabel:'Pagos por compra de Bienes de Uso', normalizedCategory:'other_expenses', amountNative:-0.500000 },
+      { rawLabel:'Pago por compra de Inv. Estadio', normalizedCategory:'other_expenses', amountNative:-1.300000 },
+      { rawLabel:'Pagos por Colocaciones Fras.', normalizedCategory:'other_expenses', amountNative:-7.500000 },
+      { rawLabel:'Cancelación Efectiva de Pasivos', normalizedCategory:'other_expenses', amountNative:-28.165654 },
+      { rawLabel:'Cancelación Efva por Cpra de Jug.', normalizedCategory:'player_amortisation', amountNative:-7.500000 },
+    ],
+  },
+  // Ejercicio N° 114 (2015/2016, 1°/9/2015 al 31/8/2016): `presupuesto2015-16.pdf`, cargado
+  // originalmente como el dato PRIMARIO (único documento de este ejercicio en ese momento,
+  // `official_budget` simple). Al cargar `balance2016.pdf` (el balance real del mismo ejercicio),
+  // este pasa a ser el dato primario (ver `racingRevenueLinesByYear[2016]`/
+  // `racingFiscalYearMeta[2016]`, `reportType:'official_budget_and_balance'`) — estas mismas
+  // líneas de presupuesto, sin tocar un solo valor, se movieron acá como columna de comparación.
+  2016: {
+    currency:'ARS', fx:11.80,
+    sourceId:'racing-presupuesto-2015-16',
+    revenueLines: [
+      { rawLabel:'Campeonatos Oficiales AFA', normalizedCategory:'matchday_competition', amountNative:23.045000 },
+      { rawLabel:'Comp. Oficiales Internacionales', normalizedCategory:'matchday_competition', amountNative:40.300000 },
+      { rawLabel:'Otras Comp. y Partidos Amistosos', normalizedCategory:'matchday_competition', amountNative:4.405000 },
+      { rawLabel:'Derechos de Retransmisión', normalizedCategory:'broadcasting', amountNative:59.000000 },
+      { rawLabel:'Pub. y Esponsorización Futbol', normalizedCategory:'sponsorship_commercial', amountNative:45.600000 },
+      { rawLabel:'Otros Ingresos por alquiler de cancha', normalizedCategory:'other_income', amountNative:2.400000 },
+      { rawLabel:'Otros Ingresos Dep. Futbol Prof.', normalizedCategory:'other_income', amountNative:2.480000 },
+      { rawLabel:'Cesión de Jugadores (Transf. / Prést.)', normalizedCategory:'player_sales', amountNative:59.825000 },
+      { rawLabel:'Ingresos por Prop. Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:9.000000 },
+      { rawLabel:'Otros Ingresos de Gestión por Futbol', normalizedCategory:'other_income', amountNative:13.400000 },
+      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:3.700000 },
+      { rawLabel:'Ingresos por Socios', normalizedCategory:'member_dues', amountNative:155.500000 },
+      { rawLabel:'Ingresos Varios Sede', normalizedCategory:'other_income', amountNative:10.400000 },
+      { rawLabel:'Ingresos por Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:26.300000 },
+      { rawLabel:'Cobro de Subv., Donaciones y Legados', normalizedCategory:'other_income', amountNative:8.640000 },
+      { rawLabel:'Otros Cobros de Ing. Fros - Plazo Fijo', normalizedCategory:'other_income', amountNative:1.200000 },
+    ],
+    expenseLines: [
+      { rawLabel:'Gastos de Explotación del Estadio', normalizedCategory:'admin_general_expense', amountNative:-3.450000 },
+      { rawLabel:'Participación en Camp. Oficiales AFA', normalizedCategory:'match_organisation_expense', amountNative:-8.950000 },
+      { rawLabel:'Part. en Campeonatos Internacionales', normalizedCategory:'match_organisation_expense', amountNative:-20.000000 },
+      { rawLabel:'Participación en Otras Comp. y Partidos Amistosos', normalizedCategory:'match_organisation_expense', amountNative:-0.150000 },
+      { rawLabel:'Gtos Derechos Televisación', normalizedCategory:'admin_general_expense', amountNative:-1.200000 },
+      { rawLabel:'Remuneraciones Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-45.100000 },
+      { rawLabel:'Primas Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-54.000000 },
+      { rawLabel:'Premios Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-25.700000 },
+      { rawLabel:'Pretemporada', normalizedCategory:'wages_squad', amountNative:-4.050000 },
+      { rawLabel:'Otros Gastos Dep. Futbol Profesional', normalizedCategory:'wages_squad', amountNative:-14.500000 },
+      { rawLabel:'Inversiones en Amateur', normalizedCategory:'youth_other_sports_expense', amountNative:-19.500000 },
+      { rawLabel:'Gastos de Seguridad', normalizedCategory:'admin_general_expense', amountNative:-9.000000 },
+      { rawLabel:'Servicios Médicos', normalizedCategory:'admin_general_expense', amountNative:-1.800000 },
+      { rawLabel:'Pago de Gtos de Otras Secciones Dep.', normalizedCategory:'youth_other_sports_expense', amountNative:-4.950000 },
+      { rawLabel:'Departamentos Auxiliares - Socios', normalizedCategory:'admin_general_expense', amountNative:-2.880000 },
+      { rawLabel:'Departamentos Auxiliares - Imagen / Prensa', normalizedCategory:'admin_general_expense', amountNative:-1.800000 },
+      { rawLabel:'Gastos Generales de Administración', normalizedCategory:'admin_general_expense', amountNative:-3.360000 },
+      { rawLabel:'Pago de Otros Gastos Ordinarios', normalizedCategory:'other_expenses', amountNative:-139.000000 },
+      { rawLabel:'Pago de Moratoria', normalizedCategory:'admin_general_expense', amountNative:-2.520000 },
+      { rawLabel:'Pago de Otros Pasivos', normalizedCategory:'other_expenses', amountNative:-31.000000 },
+      { rawLabel:'Pagos por compra de Bienes de Uso', normalizedCategory:'other_expenses', amountNative:-0.400000 },
+      { rawLabel:'Pago por compra de Inv. Estadio y Bs Uso', normalizedCategory:'other_expenses', amountNative:-10.000000 },
+      { rawLabel:'Pagos por Colocaciones Fras.', normalizedCategory:'other_expenses', amountNative:-8.400000 },
+      { rawLabel:'Cancelación Efectiva de Pasivos', normalizedCategory:'other_expenses', amountNative:-8.016000 },
+      { rawLabel:'Cancelación Efva por Cpra de Jug.', normalizedCategory:'player_amortisation', amountNative:-52.500000 },
+    ],
+  },
+  // Ejercicio 2017/2018: `presupuesto2017-18.pdf`, cargado originalmente en la Versión 63 como el
+  // dato PRIMARIO (único documento de ese ejercicio en ese momento, `official_budget` simple). En
+  // la Versión 64 se cargó el balance real del mismo ejercicio (`balance2018.pdf`), que pasa a ser
+  // el dato primario (ver `racingRevenueLinesByYear[2018]`/`racingFiscalYearMeta[2018]`,
+  // `reportType:'official_budget_and_balance'`) — estas mismas líneas de presupuesto, sin tocar un
+  // solo valor, se movieron acá como columna de comparación. Ver el comentario completo del
+  // criterio de categorización (por qué "Cancelación Efva por Cpra de Jug." va a
+  // `player_amortisation` en vez de excluirse, por qué los intereses/diferencias de cambio quedan
+  // mezclados en el catch-all en vez de separarse a `netInterest`) en el historial de
+  // `racingRevenueLinesByYear`/`racingExpenseLinesByYear` de versiones anteriores — mismo criterio,
+  // sin cambios, solo cambió DÓNDE viven estos datos en el archivo.
+  2018: {
+    currency:'ARS', fx:20,
+    sourceId:'racing-presupuesto-2017-18',
+    revenueLines: [
+      { rawLabel:'Campeonatos Oficiales AFA', normalizedCategory:'matchday_competition', amountNative:20.0 },
+      { rawLabel:'Competencias Oficiales Internacionales', normalizedCategory:'matchday_competition', amountNative:87.6 },
+      { rawLabel:'Otras Competencias y Partidos Amistosos', normalizedCategory:'matchday_competition', amountNative:2.6 },
+      { rawLabel:'Derechos de Retransmisión', normalizedCategory:'broadcasting', amountNative:78.0 },
+      { rawLabel:'Publicidad y Esponsorización del Fútbol', normalizedCategory:'sponsorship_commercial', amountNative:69.0 },
+      { rawLabel:'Otros Ingresos Deportivos Fútbol Profesional', normalizedCategory:'other_income', amountNative:40.0 },
+      { rawLabel:'Cesión de Jugadores (Transferencias / Préstamos)', normalizedCategory:'player_sales', amountNative:454.66 },
+      { rawLabel:'Ingresos por Propiedad Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:18.0 },
+      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:14.1 },
+      { rawLabel:'Ingresos por Socios', normalizedCategory:'member_dues', amountNative:225.0 },
+      { rawLabel:'Ingresos Varios Sede', normalizedCategory:'other_income', amountNative:30.0 },
+      { rawLabel:'Ingresos por Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:66.0 },
+      { rawLabel:'Cobro de Subvenciones, Donaciones y Legados', normalizedCategory:'other_income', amountNative:2.16 },
+      { rawLabel:'Otros Cobros de Ingresos Financieros - Plazo Fijo', normalizedCategory:'other_income', amountNative:30.0 },
+    ],
+    // Suma exacta a $1.137.120.000 (Ingresos Ordinarios $1.104.960.000 + Extraordinarios
+    // $32.160.000), el "Total de Ingresos de Fdos" impreso pese a su etiqueta confusa "(I)+(II)+(III)".
+    expenseLines: [
+      { rawLabel:'Gastos de Explotación del Estadio', normalizedCategory:'admin_general_expense', amountNative:-18.0 },
+      { rawLabel:'Participación en Campeonatos Oficiales AFA', normalizedCategory:'match_organisation_expense', amountNative:-21.6 },
+      { rawLabel:'Participación en Campeonatos Internacionales', normalizedCategory:'match_organisation_expense', amountNative:-15.4 },
+      { rawLabel:'Gastos Derechos de Televisación', normalizedCategory:'admin_general_expense', amountNative:-6.0 },
+      { rawLabel:'Remuneraciones Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-99.5 },
+      { rawLabel:'Primas Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-91.0 },
+      { rawLabel:'Premios Plantel Deportivo', normalizedCategory:'wages_squad', amountNative:-10.0 },
+      { rawLabel:'Pretemporada', normalizedCategory:'wages_squad', amountNative:-5.0 },
+      { rawLabel:'Otros Gastos Deportivos Fútbol Profesional', normalizedCategory:'wages_squad', amountNative:-48.0 },
+      { rawLabel:'Inversiones en Amateur', normalizedCategory:'youth_other_sports_expense', amountNative:-54.0 },
+      { rawLabel:'Gastos de Seguridad', normalizedCategory:'admin_general_expense', amountNative:-13.2 },
+      { rawLabel:'Servicios Médicos', normalizedCategory:'admin_general_expense', amountNative:-4.224 },
+      { rawLabel:'Pago de Gastos de Otras Secciones Deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-15.9 },
+      { rawLabel:'Departamentos Auxiliares - Socios', normalizedCategory:'admin_general_expense', amountNative:-8.956742 },
+      { rawLabel:'Departamentos Auxiliares - Imagen / Prensa', normalizedCategory:'admin_general_expense', amountNative:-5.01706 },
+      { rawLabel:'Gastos Generales de Administración', normalizedCategory:'admin_general_expense', amountNative:-5.176587 },
+      { rawLabel:'Pago de Otros Gastos Ordinarios', normalizedCategory:'other_expenses', amountNative:-184.0 },
+      { rawLabel:'Pago de Otros Gastos Extraordinarios - Moratoria', normalizedCategory:'other_expenses', amountNative:-5.4 },
+      { rawLabel:'Gastos Financieros de Pago de Otros Pasivos', normalizedCategory:'admin_general_expense', amountNative:-6.0 },
+      { rawLabel:'Pagos por Compra de Bienes de Uso', normalizedCategory:'other_expenses', amountNative:-2.4 },
+      { rawLabel:'Pago por Compra de Inversiones en el Estadio', normalizedCategory:'other_expenses', amountNative:-59.4 },
+      { rawLabel:'Pagos por Colocaciones Financieras', normalizedCategory:'other_expenses', amountNative:-45.15 },
+      { rawLabel:'Cancelación Efectiva de Pasivos', normalizedCategory:'other_expenses', amountNative:-88.0 },
+      { rawLabel:'Cancelación Efectiva por Compra de Jugadores', normalizedCategory:'player_amortisation', amountNative:-314.266654 },
+    ],
+    // Suma exacta a $(1.125.591.043), el "Total de Egresos de Fdos (IV)+(V)" impreso.
+  },
+  2020: {
+    currency:'ARS', fx:70,
+    sourceId:'racing-presupuesto-2019-20',
+    revenueLines: [
+      { rawLabel:'Cobranzas por venta de entradas', normalizedCategory:'matchday_competition', amountNative:156.000000 },
+      { rawLabel:'Cobranzas por participación', normalizedCategory:'competition_bonus', amountNative:274.780000, items:[
+        ['Competiciones oficiales S.A.F.', 19.780000], ['Competiciones oficiales internacionales', 246.500000], ['Competiciones A.F.A., amistosos y otras competiciones', 8.500000],
+      ]},
+      { rawLabel:'Cobranzas por venta de abonos estadio', normalizedCategory:'season_tickets', amountNative:123.154000 },
+      { rawLabel:'Cobros por retransmisión y derechos de TV', normalizedCategory:'broadcasting', amountNative:208.800000 },
+      { rawLabel:'Cobros por marketing y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:320.778000, items:[
+        ['Comercialización y otros', 121.278000], ['Esponsorización', 152.400000], ['Publicidad estática y dinámica', 47.100000],
+      ]},
+      { rawLabel:'Cobros por ventas de jugadores', normalizedCategory:'player_sales', amountNative:1122.345000 },
+      { rawLabel:'Cobros por préstamos de jugadores', normalizedCategory:'player_sales', amountNative:10.950000 },
+      { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:7.960000 },
+      { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:18.000000 },
+      { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:634.152050 },
+      { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_income', amountNative:76.100000, items:[
+        ['Cobranzas de otras actividades deportivas', 29.700000], ['Cobranzas de instituciones educativas', 46.400000],
+      ]},
+      { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:78.600000, items:[
+        ['Cobros de otros recursos ordinarios', 30.600000], ['Cobros de rentas financieras', 48.000000],
+      ]},
+      { rawLabel:'Cobros por venta de inversiones financieras', normalizedCategory:'other_income', amountNative:96.000000 },
+    ],
+    // Suma de las 13 líneas de arriba = 3.127,619050 M = TOTAL INGRESOS DE FONDOS DEL PERÍODO
+    // impreso EXACTO. Corregido en la Versión 60: hasta entonces esta línea (SUBTOTAL INGRESOS
+    // EXTRAORDINARIOS, "Cobros por venta de inversiones financieras") se dejaba afuera a propósito
+    // (mismo criterio que netInterest en el resto del sitio), pero eso generaba una ASIMETRÍA con
+    // expenseLines de abajo, que SÍ incluye su análogo ("Egresos extraordinarios") como línea normal
+    // — el resultado propio del overlay (ingresos - gastos) no cerraba contra el superávit/déficit
+    // presupuestado real. Se cargó como línea normal (`other_income`) para que las 2 columnas usen
+    // el mismo criterio y el Resultado Neto de la columna Presupuesto en "Estado de resultados"
+    // (Versión 60) sea el número real, no un cálculo incompleto.
+    expenseLines: [
+      { rawLabel:'Pago de gastos explotación del estadio', normalizedCategory:'admin_general_expense', amountNative:-73.300000 },
+      { rawLabel:'Pago de gastos por participación', normalizedCategory:'match_organisation_expense', amountNative:-120.700000, items:[
+        ['Competiciones oficiales S.A.F.', -88.200000], ['Competiciones oficiales internacionales', -32.500000],
+      ]},
+      { rawLabel:'Pago de remuneraciones plantel profesional', normalizedCategory:'wages_squad', amountNative:-781.995000, items:[
+        ['Sueldos jugadores profesionales', -208.800000], ['Primas jugadores profesionales', -332.010000],
+        ['Premios jugadores profesionales', -237.500000], ['Otros conceptos jugadores profesionales', -3.685000],
+      ]},
+      { rawLabel:'Pago de remuneraciones cuerpo técnico', normalizedCategory:'wages_squad', amountNative:-145.400000 },
+      { rawLabel:'Pago de otros gastos deportivos fútbol profesional', normalizedCategory:'wages_squad', amountNative:-221.950000 },
+      { rawLabel:'Pago por adquisición de jugadores', normalizedCategory:'player_amortisation', amountNative:-816.620000 },
+      { rawLabel:'Pago de gastos por compraventa de jugadores', normalizedCategory:'other_expenses', amountNative:-95.795000 },
+      { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'youth_other_sports_expense', amountNative:-122.000000 },
+      { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'admin_general_expense', amountNative:-81.082048 },
+      { rawLabel:'Egresos de otras secciones', normalizedCategory:'youth_other_sports_expense', amountNative:-107.500000, items:[
+        ['Pago de remuneraciones otras actividades deportivas', -6.900000], ['Pago de gastos otras actividades deportivas', -53.700000],
+        ['Pago de remuneraciones de instituciones educativas', -38.600000], ['Pago de gastos de instituciones educativas', -8.300000],
+      ]},
+      { rawLabel:'Otros egresos', normalizedCategory:'admin_general_expense', amountNative:-325.900000, items:[
+        ['Pago de gastos de administración', -42.600000], ['Pago de otros gastos ordinarios', -228.000000],
+        ['Pago de impuestos, tasas y contribuciones', -7.300000], ['Pago de gastos financieros', -48.000000],
+      ]},
+      { rawLabel:'Egresos extraordinarios (compra de bienes de uso y mejoras, principalmente)', normalizedCategory:'other_expenses', amountNative:-85.260000 },
+    ],
+    // Suma de las 11 líneas de arriba = -2.977,502048 M = TOTAL DE EGRESOS DE FONDOS DEL PERÍODO
+    // impreso EXACTO (a diferencia de Ingresos, acá no queda ningún resto: Egresos extraordinarios
+    // sí se cargó como línea, ya que es CAPEX/pago de deuda real, no un resultado financiero neto).
+    // "Pago por préstamos de jugadores" (línea 7 del documento) y "Pago de gastos fútbol amateur
+    // (operativo)" (línea 9) dan $0 este ejercicio, no se cargaron como líneas propias (no hay nada
+    // que perder documentando un cero real, pero se listan acá para que quede registrado que existen
+    // en el documento por si un ejercicio futuro las usa con monto real): ambas irían a
+    // `player_amortisation` y `youth_other_sports_expense` respectivamente, mismo criterio que sus
+    // pares "activable"/"adquisición" ya cargadas.
   },
 };
 

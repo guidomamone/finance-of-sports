@@ -21,6 +21,12 @@ index.html, no solo datos). Si estás cargando un balance/presupuesto nuevo, pro
 LOS DOS skills: este para el proceso y la arquitectura, `club-data-mapping` para el detalle de cómo
 mapear cada rubro.
 
+**Si necesitás leer un PDF fuente** (texto nativo vs. escaneo/OCR, deskew de un escaneo torcido, la
+trampa de la "fila acumulada", cómo pedirle a Guido que confirme algo ilegible): eso vive en
+`club-data-mapping/SKILL.md` secciones 8-11 (movido ahí en la Versión 62 — antes estaba repartido
+entre los dos skills sin ningún criterio, ahora todo lo de "cómo leer el documento fuente" está
+junto).
+
 ## 1. Antes de construir: hacer las preguntas, no asumir
 
 Guido pidió explícitamente (sesión de la Versión 32) que antes de "correr" extendiendo una feature
@@ -51,7 +57,34 @@ el tipo de pregunta que vale la pena repetir):
   presupuestos de Racing, que Boca ya muestra como card "Supuestos"), proponelo, pero como
   pregunta u opción, no como algo que ya se construyó sin avisar.
 
+**Lo de arriba es sobre decisiones de ALCANCE/ARQUITECTURA — no aplica al ritmo de carga de
+documentos dentro de un mismo pedido ya aprobado.** Cuando Guido pide onboardear "todos los
+documentos que falten de la carpeta de [club]" (o equivalente: "seguí con el resto del archivo"),
+eso ya es la autorización — cargar un documento, verificar que cierra, pasar al siguiente, SIN
+pausar entre cada uno a preguntar "¿querés que siga con el próximo?". Pedido real de Guido (sesión
+de la Versión 66, después de que una sesión anterior cargó un solo documento y se detuvo a
+resumir): "debería seguir onboardeando para Racing hasta que terminemos de onboardear todos los
+archivos disponibles en la carpeta". Sí vale la pena un mensaje corto de progreso cada tanto (qué
+se cargó, qué falta), pero no una pausa que espere confirmación — esa pausa ya fue una vez motivo
+de queja explícita. Esto es distinto de la sección 11 de `club-data-mapping/SKILL.md` (preguntar
+cuando un número puntual es genuinamente ilegible): esa sí amerita frenar y preguntar, porque ahí
+la duda es sobre EL DATO, no sobre si seguir trabajando.
+
 ## 2. Arquitectura ya generalizada, no reinventar por club
+
+**CORRECCIÓN IMPORTANTE (Versión 82, encontrada al onboardear Vélez Sarsfield, el primer club nuevo
+desde que existe este motor genérico)**: "ya generalizado" acá significaba, en la práctica, "ya
+escrito con un ternario de 2 ramas (`clubId === 'river' ? X : Y`)", NO "genérico para cualquier
+`clubId`". Nadie lo había notado porque nunca se había agregado un 3er club real hasta ahora. Casi
+una decena de funciones (`computeYearGeneric`, `yearMetaFor`, `reportTypeForYear`,
+`allYearsRangeForClub`, `presupuestoOverlayFor` en `js/finanzas-calc.js`; `drawTrendChartGeneric`,
+`populateFinanzasSelectors`, `renderDataQualityBannerForCurrentSelection` en
+`js/finanzas-render.js`; `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` en
+`index.html`) tuvieron que pasar de 2 a 3 ramas antes de que Vélez funcionara. **Si agregás un club
+nuevo al motor genérico, buscá TODAS las ocurrencias de `'river'` Y `'racing'` como string literal en
+`js/finanzas-calc.js`/`js/finanzas-render.js`/`index.html` ANTES de asumir que "ya es genérico" —
+esta lista de 9 funciones puede no ser exhaustiva la próxima vez tampoco, volvé a buscar en vez de
+confiar en esta lista.**
 
 Estas piezas de index.html YA están escritas para funcionar con cualquier club, no solo Boca.
 Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
@@ -84,7 +117,7 @@ Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
   llaman a `yearMetaFor`), nunca acá. Si tocás esta función para sumarle algo, mantené esa
   separación (no le agregues un `toDisplayValue` adentro).
 
-## 2a. Arquitectura de archivos para un club nuevo (Versión 51, YA NO es negociable por sesión)
+## 3. Arquitectura de archivos para un club nuevo (Versión 51, YA NO es negociable por sesión)
 
 Hasta la Versión 51, index.html era un solo `<script>` de ~2700 líneas con datos de Boca, cálculo y
 render mezclados, y River/Racing se bajaban siempre aunque el visitante solo mirara Boca. Guido pidió
@@ -156,7 +189,7 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
   acumulada) es más confiable para no dejar pasar un `ReferenceError` real, ver Versión 51 del
   historial de index.html para el detalle de los 2 bugs que este chequeo habría agarrado.
 
-## 3. Bug real encontrado en esta sesión, gastosTotal ya viene convertido
+## 4. Bug real encontrado en esta sesión, gastosTotal ya viene convertido
 
 Al generalizar `renderFinanzasStatsGeneric(cur, gastosTotal)` para que respete el toggle de moneda,
 se cometió (y se corrigió, gracias a probar en el browser) este error: `gastosTotal` es un
@@ -171,7 +204,7 @@ parámetro de una función que YA hizo el trabajo de armar la tabla (`renderNati
 probablemente ya está en la moneda de display, verificar de dónde sale antes de asumir que hace
 falta convertirlo de nuevo.
 
-## 3b. Bug real: un card/elemento nuevo "solo para el club X" necesita `display:none` en el HTML si X no es el club default
+## 5. Bug real: un card/elemento nuevo "solo para el club X" necesita `display:none` en el HTML si X no es el club default
 
 Encontrado al agregar la card "Supuestos" de Racing (Versión 33): las cards `bocaPresupuestoOficialCard`
 funcionan bien sin `style="display:none"` en el HTML porque Boca ES el club que carga por default
@@ -186,7 +219,7 @@ Regla: cualquier card/elemento nuevo scopeado a un club que no sea el default ne
 `style="display:none"` en el HTML de entrada, no solo depender de la clase CSS + JS de
 `refreshAllForClub()` para el estado inicial.
 
-## 3c. REGLA VIGENTE (Versión 42, reemplaza la regla vieja de este mismo punto): estos 4 cards se
+## 6. REGLA VIGENTE (Versión 42, reemplaza la regla vieja de este mismo punto): estos 4 cards se
 ESCONDEN por completo cuando no hay presupuesto para ese ejercicio, no se muestran con un mensaje
 de "no hay"
 
@@ -225,7 +258,7 @@ diferencia de Boca, que sí nombra cada proyecto); eso se dice explícito en la 
 disimula. "Homologar" sigue siendo la ESTRUCTURA (mismo tipo de card, mismo criterio de cuándo
 mostrarlo), no forzar que todos los clubes tengan la misma cantidad de filas.
 
-## 3d. REGLA (pedida por Guido: "lo detesto"): la fuente NUNCA va adentro de un card individual
+## 7. REGLA (pedida por Guido: "lo detesto"): la fuente NUNCA va adentro de un card individual
 
 Nunca le agregues un párrafo/frase "Fuente: ..." adentro de un card específico (Supuestos,
 Presupuesto Financiero, Presupuesto de Inversiones, Estado de resultados, o cualquier card nuevo
@@ -254,10 +287,10 @@ explícitamente ("detesto que hagas eso"). El fix: se sacó `sourceNote` de los 
 quedaba contenido explicativo real más allá de la cita (ej. la nota de "base de caja" de Racing), se
 renombró a `note` y se le sacó la frase "Fuente: ..." del principio, dejando solo la explicación.
 
-## 4. Verificar en el browser de verdad, no solo revisar los números a mano
+## 8. Verificar en el browser de verdad, no solo revisar los números a mano
 
 La cuenta a mano (verificar que `revenueLines`/`expenseLines` suman el total impreso del documento)
-es necesaria pero NO alcanza, el bug de la sección 3 no se habría encontrado sin abrir el sitio y
+es necesaria pero NO alcanza, el bug de la sección 4 no se habría encontrado sin abrir el sitio y
 tocar el toggle. Después de tocar cualquier función de display/conversión: `preview_start`, cambiar
 de club, tocar los dos toggles (USD/ARS y Formato del club/simplificado), y leer los números en
 pantalla, no solo confiar en que `verifyTieOuts()` (consola) pasa, porque esa función corre en
@@ -276,59 +309,12 @@ ejercicio nuevo, abrí "Formato simplificado" y confirmá que NINGÚN bucket que
 (según lo que viste en el documento) esté en $0, un bucket en $0 sin explicación es la señal de que
 algo quedó enterrado en `items` en vez de promovido a categoría propia.
 
-### Gotcha de testing: caché de `<script src>` en el browser de preview
+Los 3 "gotcha" de tooling que vivían acá (caché del `<script src>` en el navegador de preview,
+screenshot en blanco con la página scrolleada, `grep -oP` fallando cerca de acentos) se mudaron a
+`CLAUDE.md` (sección "Gotchas de tooling", Versión 62): no son específicos de onboarding, aplican a
+cualquier sesión que toque este sitio, y `CLAUDE.md` se lee siempre, a diferencia de este skill.
 
-Si después de editar un archivo `data/*.js` los números en pantalla siguen viendo el valor VIEJO
-(ej. un año que agregaste no aparece en `Object.keys(...)` a pesar de que `curl`/`fetch` al mismo
-archivo sí lo muestra), sospechá de caché del browser para el `<script src="data/....js">`, no de
-un error de código. `location.reload()`, `Cmd+Shift+R` y hasta parar/re-lanzar el mismo
-`preview_start` (mismo puerto) pueden NO alcanzar, la forma que funcionó en esta sesión fue
-cambiar el puerto del server en `.claude/launch.json` (nuevo puerto = nueva URL = caché nueva,
-garantizado), probar, y después devolver el puerto a su valor original. Confirmalo ejecutando
-`Object.keys(algunaConstDeEseArchivo)` con `javascript_tool` ANTES de asumir que hay un bug real en
-los datos, si el conteo de años/claves no coincide con lo que vos escribiste en el archivo, es
-caché, no tu código.
-
-EXTENDIDO (Versión 43): el mismo problema de caché puede afectar al PROPIO `index.html`, no solo a
-los `data/*.js`. Encontrado agregando una regla CSS nueva (`#anioSelect{width:300px;...}`): `curl`
-al servidor la mostraba, pero `document.querySelector('style').textContent` en el navegador NO la
-tenía después de un `navigate()` normal a la misma URL, ni `styleSheets[0].cssRules` la incluía. La
-forma que funcionó, más simple que cambiar de puerto: agregar un query string cache-buster a la
-URL del `navigate()` (`http://localhost:PUERTO/index.html?nocache=<numero cualquiera>`), o abrir
-una pestaña nueva del navegador (`tabs_create`). Confirmalo con
-`document.querySelector('style').textContent.includes('tu regla nueva')` (o el equivalente para JS
-nuevo) ANTES de concluir que un cambio de CSS/JS "no funciona" en el navegador.
-
-### Gotcha de testing: `computer` screenshot da BLANCO si la página está scrolleada
-
-Encontrado al verificar un fix visual (Versión 37, el "$" tapado del gráfico de Finanzas): en este
-entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco cada vez que `window.scrollY
-> 0` en el momento de la captura, no importa cómo se llegó ahí (`window.scrollTo`,
-`scrollIntoView`, ni el `scroll_to` del `computer` tool, que sí mueve el scroll de verdad, confirmado
-leyendo `window.scrollY` después). Con `scrollY === 0` la captura sale bien siempre. La vuelta que
-funcionó: `resize_window` con un `height` custom bien grande (ej. 2500-3000px) para que TODO el
-contenido relevante entre sin necesidad de scrollear, tomar el screenshot ahí (sale correcto), y
-después `resize_window({preset:'desktop'})` para volver al tamaño normal. `zoom` con `region` (crop)
-tampoco está soportado en este entorno ("region crop not yet supported"), devuelve la imagen
-completa igual, así que para inspeccionar un detalle chico conviene el truco del viewport alto en
-vez de tratar de recortar. Esto es una limitación del TOOLING de testing de esta sesión, no algo que
-haya que "arreglar" en el sitio, no confundir una imagen en blanco con "la página no renderiza".
-
-### Gotcha de verificación: `grep -oP '.{20}—.{20}'` (u otro cuantificador de caracteres alrededor
-de un carácter especial) puede fallar en silencio cerca de acentos
-
-Encontrado en la Versión 48, repasando la limpieza de em dashes de versiones anteriores: el patrón
-`grep -noP '.{20}—.{20}'`, usado para listar contexto alrededor de cada em dash restante, no
-siempre cuenta bien 20 caracteres cuando hay varias vocales acentuadas (más, línea, categoría, año)
-cerca del carácter buscado, el cuantificador `.{20}` con `-P` (PCRE) en este entorno no maneja
-consistente el UTF-8 multi-byte. Resultado real: 3 em dashes quedaron sin corregir en las Versiones
-46-47 porque esas líneas específicas (con "más"/"línea" cerca) simplemente no aparecían en el
-resultado del grep, dando una falsa sensación de "ya está todo limpio". El chequeo confiable: `grep
--n 'CARACTER' archivo` (sin capturar contexto con un cuantificador de caracteres, solo el número de
-línea) y revisar cada línea completa a mano, no confiar en un patrón que recorta contexto alrededor
-de texto en español con acentos.
-
-## 5. Onboardear un ejercicio nuevo del MISMO tipo de documento que uno ya cargado
+## 9. Onboardear un ejercicio nuevo del MISMO tipo de documento que uno ya cargado
 
 Cuando el club ya tiene un ejercicio cargado con el mismo formato de documento (ej. Racing ya tenía
 el Presupuesto 2025/26 cargado, y llega el Presupuesto 2026/27 con la MISMA estructura de tabla), el
@@ -353,6 +339,305 @@ camino más rápido y menos propenso a error:
 5. Sumar el año nuevo a `verifyTieOuts()` (Revenue y Expenses contra los totales oficiales impresos)
   , mismo criterio que los años ya cargados de ese club.
 
+## 10. El sufijo entre paréntesis del dropdown "Año": SOLO 4 palabras posibles, nunca una 5ta
+
+REGLA PERMANENTE (Versión 56, pedido explícito de Guido: "en el menu dropdown de Anio, poneme
+siempre entre parentesis si: Presupuesto, Presupuesto y Balance, Placeholder. No salgas de esas
+opciones"; ACTUALIZADA en la Versión 61, ver abajo). El `<select id="anioSelect">` de Finanzas arma
+el label de cada ejercicio con `anioDropdownSuffix(reportType)` (`js/finanzas-calc.js`), que
+devuelve EXACTAMENTE uno de estos 4 resultados, nunca un texto libre inventado para un caso puntual:
+
+| `reportType` | Sufijo en el dropdown |
+|---|---|
+| `official_balance_sheet` | `(Balance)` |
+| `unofficial_mirror` (balance real conseguido en una réplica no oficial, ej. River 2024) | `(Balance)` |
+| `official_budget` | `(Presupuesto)` |
+| `official_budget_and_balance` (ejercicio con LAS DOS fuentes reales cargadas a la vez, ver más abajo) | `(Presupuesto y Balance)` |
+| `pending_official` (ejercicio real que el club todavía no publicó, ver `reportTypeForYear`) | `(Placeholder)` |
+| `placeholder` (números inventados a propósito para probar el diseño) | `(Placeholder)` |
+
+**ACTUALIZADO Versión 61** (pedido explícito de Guido: "agregar Balance como opción, la cual aplica
+para todos los años que tenés sin nada en paréntesis"): antes, `official_balance_sheet`/
+`unofficial_mirror` devolvían `''` (sin paréntesis, la 4ta opción quedaba implícita: "si no dice
+nada, es un balance real, lo normal"). Guido pidió que esa 4ta opción se anuncie explícita como
+cualquier otra, así que el `return ''` por default de `anioDropdownSuffix()` pasó a `return '
+(Balance)'`. Sigue siendo la MISMA regla de fondo (4 palabras posibles, nunca una 5ta inventada para
+un caso puntual), solo cambió qué texto usa el caso default.
+
+**También Versión 61: el `<select>` ya NO lleva el prefijo "Ejercicio " en sus opciones** (pedido de
+Guido: "que no aparezca 'ejercicio 2020/2021' sino '2020/2021'. Ejercicio sino queda muy redundante
+y agota la vista"). `populateFinanzasSelectors()` arma el label como `(year-1)+'/'+year+sufijo`, sin
+prefijo — esto es un cambio DISTINTO del sufijo entre paréntesis de arriba, no lo reemplaza: el
+prefijo "Ejercicio"/"Balance"/"Presupuesto" sigue existiendo en el header de la tabla "Estado de
+resultados" (`ejercicioLabel()`), solo se sacó del propio `<select>`. **Ver sección 14 para el
+mapeo `reportType` → prefijo de `ejercicioLabel()`, que SÍ cambió después de esta versión
+(`official_balance_sheet` pasó a decir "Balance", no "Ejercicio").**
+
+Antes de la Versión 56, cada club/año tenía su propio texto suelto para el sufijo, escrito por quien
+cargó ese ejercicio en su momento: "(presupuestado)", "(esperando datos)", "(estimado)" en distintos
+lugares del código, sin ningún criterio compartido. Si se agrega un club/ejercicio nuevo, o un
+reportType nuevo, el sufijo tiene que salir de `anioDropdownSuffix()`, nunca escribirse a mano en el
+array `years` de `populateFinanzasSelectors()` (`js/finanzas-render.js`) ni en el `<option>` estático
+de `index.html` (ese `<option>` es solo un fallback visual por si el JS tarda en cargar, tiene que
+decir lo mismo que calcularía `anioDropdownSuffix()` + el año sin prefijo, no un texto propio).
+
+**`pending_official` y `placeholder` se ven IGUAL en el dropdown a propósito**: de cara al
+visitante, un ejercicio "real pero todavía no publicado" y uno "inventado para probar el diseño" se
+ven igual (todo en $0, sin fuente real todavía) y no hay una 5ta palabra permitida para separarlos
+en el dropdown. La diferencia SÍ se explica en el banner de calidad de dato (dentro de Finanzas),
+que lee `reportType` directo y sí distingue los dos casos con su propio texto.
+
+**`official_budget_and_balance` no lo usa ningún ejercicio CARGADO todavía** (al escribir esta
+regla, en la Versión 56, se revisó `racingFiscalYearMeta` completo y los 7 ejercicios de Racing
+cargados en ese momento eran cada uno SOLO balance o SOLO presupuesto). CORRECCIÓN de la Versión 57:
+Guido aclaró que el archivo público de Racing SÍ tiene, para varios ejercicios históricos, tanto el
+Presupuesto (aprobado al empezar el año) como el Balance (auditado al cerrarlo) — el archivo de
+`Clubes/Argentina/Racing/` ya tiene los PDFs de ambos para varios años, simplemente ninguno de esos
+pares está onboardeado (transcripto + cargado) todavía. Ver sección 11 para el mecanismo completo
+que se construyó para soportar esto (`racingPresupuestoOverlayByYear`, columna "Balance"/
+"Presupuesto" en Estado de resultados) y el to-do de qué PDFs quedan pendientes.
+
+## 11. Ejercicio con Presupuesto Y Balance reales a la vez: overlay + columna "Balance"
+
+REGLA PERMANENTE (Versión 57, pedido explícito de Guido: "muchos años de racing tienen ambos
+presupuesto y balance, porque racing tiene de todo en la pagina... para cuando un mismo año tenga
+both presupuesto y balance, en estado de resultado agregá una columna que sea Balance").
+
+**Decisión de arquitectura (confirmada con Guido antes de construir, vía `AskUserQuestion`)**:
+- El **Balance real es SIEMPRE el dato primario** de un ejercicio dual: KPIs de arriba de Finanzas,
+  Formato Simplificado, y los checks de `verifyTieOuts()` salen del balance, nunca del overlay de
+  presupuesto. Mismo criterio que ya regía para cualquier ejercicio de balance real (sin sufijo en
+  el dropdown = "lo normal").
+- La columna "Ejercicio Anterior"/Var./Var. % que comparaba el año actual contra OTRO año se sacó
+  del TODO (de los 3 clubes, los 2 modos Año a año/Por gestión) — Guido pensaba que ya no existía,
+  y prefirió sacarla de verdad antes que mantenerla. Esa infraestructura (2da columna + Var./Var. %,
+  `buildNativeSectionHtml`) se REUTILIZÓ para la comparación Presupuesto-vs-Balance del MISMO
+  ejercicio, no se reconstruyó de cero.
+
+**Cómo cargar un ejercicio dual, paso a paso:**
+1. El balance real va en los lugares de siempre: `racing{Revenue,Expense}LinesByYear[year]` +
+   `racingFiscalYearMeta[year]`, con `reportType:'official_budget_and_balance'` (no
+   `'official_balance_sheet'`, ese reportType queda solo para ejercicios que NO tienen presupuesto
+   propio cargado). Seguí `club-data-mapping/SKILL.md` para categorizar sus líneas, igual que
+   cualquier balance.
+2. El presupuesto de ESE MISMO ejercicio va en `racingPresupuestoOverlayByYear[year]` (declarado en
+   `data/racing-data.js`, hoy vacío): `{ revenueLines, expenseLines, currency, fx, sourceId }`,
+   mismo formato `{rawLabel, normalizedCategory, amountNative, items?}` que las líneas normales.
+   `normalizedCategory` en el overlay no participa de ningún cálculo (no hay Formato Simplificado
+   del overlay todavía, ver limitación abajo), pero cargalo igual por consistencia y por si se
+   extiende a futuro.
+3. NO hace falta tocar `js/finanzas-calc.js` ni `js/finanzas-render.js`: `presupuestoOverlayFor()`
+   ya lee `racingPresupuestoOverlayByYear[year]` automáticamente en cuanto tiene una entrada, y
+   `renderNativePLTable()`/`ejercicioLabel()`/`anioDropdownSuffix()` ya reaccionan solos al
+   `reportType:'official_budget_and_balance'`.
+4. Verificar en el navegador (no opcional, mismo criterio de siempre): la columna "Balance" pasa a
+   mostrar el nombre correcto ("Balance AAAA/AAAA"), la columna "Presupuesto" aparece con los montos
+   del overlay convertidos con SU PROPIO `fx` (no el del balance), el dropdown "Año" dice
+   "(Presupuesto y Balance)", y los KPIs de arriba siguen dando los números del BALANCE (no una
+   mezcla ni el overlay).
+
+**RESUELTO en la Versión 59 (Guido, viendo el primer ejercicio real con overlay: "no quedó bien
+racing. porque presupuesto tiene un 0 en todo salvo el total?")**: en "Formato Simplificado", el
+overlay AHORA se agrupa con el mismo `bucketize()`/`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
+`_EXPENSE_BUCKETS` que ya agrupa la columna primaria (`presupuestoOverlayReportFor()` chequea
+`simplifyFormat` y bucketiza en vez de devolver `rawLabel`s crudos siempre). Como las dos columnas
+usan los MISMOS labels de bucket ("Cuotas Sociales", "Compra de jugadores", etc.), el emparejamiento
+por label ahora funciona fila por fila, no solo en el total de sección. `bucketize` se sacó de
+adentro de `simplifiedReportForGeneric()` a una función compartida en `js/finanzas-calc.js` para
+que las dos la puedan usar sin duplicar código.
+
+**LIMITACIÓN QUE SIGUE VIGENTE, solo para "Formato del club"**: ahí el emparejamiento de filas
+sigue siendo por `rawLabel` EXACTO (`buildNativeSectionHtml`/`findPrevVal`), porque en Formato del
+club cada columna muestra las categorías TAL CUAL las reportó su propio documento (esa es la
+gracia del toggle), y el balance y el presupuesto de un mismo ejercicio pueden nombrar lo mismo
+distinto (ej. balance dice "Costo transferencia de jugadores", presupuesto dice "Pago por
+adquisición de jugadores"). Ahí la fila no encuentra su par y muestra "—" en la columna
+Presupuesto, aunque el TOTAL de la sección sí suma bien igual (no depende del matching por fila).
+Esto es intencional, no un bug: forzar que Formato del club use nombres iguales entre los 2
+documentos rompería la premisa de esa vista ("tal cual la fuente").
+
+**Var./Var. % SE SACARON DE LA TABLA DEL TODO en la Versión 59** (Guido, mismo mensaje: "var y
+var% deberian no estar ahi"): ya no existen ni en "Formato del club" ni en "Formato Simplificado",
+para ningún club/ejercicio. La tabla quedó en 4 columnas siempre: Rubro, Actual, % del total, y la
+4ta (Presupuesto/oculta) — ver `buildNativeSectionHtml()`/`syncPLTableColgroup()` en
+`js/finanzas-render.js`.
+
+**Verificación hecha al construir el mecanismo (Versión 57, sin datos reales todavía)**: se probó
+con un overlay sintético inyectado por consola (Racing 2025, 3 líneas inventadas) para confirmar
+que la columna aparece, los montos convierten con el fx propio del overlay, el header dice
+"Balance"/"Presupuesto" correctamente, los KPIs de arriba siguen saliendo del balance real (no del
+overlay) y `verifyTieOuts()` no se ve afectado. Ese overlay de prueba NUNCA se guardó en ningún
+archivo, era solo en memoria del navegador para verificar el mecanismo. La Versión 58 cargó el
+primer ejercicio real (Racing 2020) y la Versión 59 corrigió, con ese dato real puesto a prueba en
+el navegador por Guido, los 2 problemas de arriba (Formato Simplificado en blanco, Var./Var.% de
+más).
+
+## 12. Reglas nuevas de la tabla "Estado de resultados" (Versión 60), para cualquier columna que se agregue a futuro
+
+Tres pedidos de Guido sobre esta tabla en la misma sesión (Racing 2019/2020, revisando el mecanismo
+de overlay de la sección 11) se convirtieron en reglas permanentes, no solo en fixes puntuales:
+
+1. **Los números visibles TIENEN que reconciliar a simple vista.** Guido notó que Ingresos (32.9) -
+   Gastos (39.8) no daba el Resultado Neto mostrado (-3.7) y preguntó, con razón, por qué ningún
+   chequeo lo había detectado — el número final SIEMPRE fue correcto (`verifyTieOuts()` ya lo
+   validaba), lo que estaba mal era que la fila que explica la diferencia (`extraRows`, ej.
+   "Intereses netos") se sumaba al resultado pero no se mostraba en pantalla (una decisión de la
+   Versión 54, para sacar copys redundantes). Fix: `renderNativePLTable()`
+   (`js/finanzas-render.js`) volvió a mostrar las filas de `extraRows` cuando su valor no es cero
+   (si es cero, no se agrega una fila sin sentido). REGLA: ninguna fila que participe en una suma
+   mostrada en pantalla puede quedar oculta — si hace ruido visual para casos comunes, la solución es
+   ocultarla CONDICIONALMENTE (valor no-cero), no ocultarla siempre. **EXCEPCIÓN agregada en la
+   Versión 61, ver sección 13.3: "Intereses netos" específicamente dejó de ser condicional, se
+   muestra siempre, incluso en $0** — esta regla de acá sigue siendo la de fondo para el resto de
+   extraRows (Impuestos, Venta de activos, etc.), no se revirtió en general.
+2. **Ninguna columna de la tabla puede forzar scroll horizontal en el card.** Guido: "desliza las
+   columnas apenas a la izquierda para que no haya que scrollear. esto tambien deberia ser regla."
+   Al agregar una columna nueva a `#finanzasPLTable` (`syncPLTableColgroup()` en
+   `js/finanzas-render.js`, `<colgroup>`/`<thead>` en `index.html`), achicar los anchos de las
+   columnas EXISTENTES en la misma medida que crece el total — nunca asumir que "hay lugar" sin
+   verificar en el navegador con `element.scrollWidth` vs. `element.clientWidth` (tanto de la tabla
+   completa como celda por celda: una columna angosta con `table-layout:fixed` no desborda la tabla,
+   pero SÍ puede hacer que el CONTENIDO de una celda desborde si el texto no entra, lo que igual
+   fuerza scroll — encontrado en esta misma sesión con el header en mayúsculas "PRESUPUESTO" en una
+   columna de 78px). Verificar en al menos 2 anchos de viewport (desktop y `resize_window` a
+   `tablet`), no solo el ancho por default del navegador.
+3. **Ningún valor final debería quedar como "—" cuando hay datos reales para calcularlo.** Guido:
+   "que resultado neto tenga un numero, no me lo dejes incompleto." Si una columna nueva (ej. el
+   overlay de Presupuesto) tiene toda la información para calcular un total/resultado, calcularlo y
+   mostrarlo, no dejar un placeholder solo porque la fila "principal" (Balance) es la que
+   tradicionalmente se resalta — un "—" en un número que SÍ se puede calcular lee como un bug, no
+   como una limitación real.
+
+Al implementar el punto 3 en esta versión salió a la luz una ASIMETRÍA real en los datos del overlay
+de Racing 2020 (`data/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`): `revenueLines`
+excluía a propósito su línea "extraordinaria" (`Cobros por venta de inversiones financieras`, 96 M)
+mientras que `expenseLines` SÍ incluía su análoga (`Egresos extraordinarios`) como línea normal —
+con ese criterio mixto, sumar `ingresos - gastos` del propio overlay no daba el superávit/déficit
+presupuestado real. Se corrigió agregando la línea de ingreso faltante. Moraleja para cualquier
+overlay futuro: las dos columnas (Balance y Presupuesto) tienen que usar el MISMO criterio sobre qué
+cuenta como línea "normal" vs. "extraordinaria/financiera", si no el resultado propio de cada columna
+no es comparable ni reconcilia con su propio total impreso.
+
+## 13. Reglas nuevas de "Estado de resultados" y de los stats de arriba (Versión 61)
+
+Guido, con captura de pantalla de un card ilegible, pidió 4 cosas en el mismo mensaje. Las 3
+primeras son reglas permanentes que valen para cualquier club/año/columna futura, no solo el fix
+puntual de esta sesión:
+
+1. **Un header de tabla que no entra en una línea se parte en el punto elegido a mano, nunca se deja
+   en manos de `overflow-wrap:break-word` solo.** El fix de la Versión 60 evitaba que un header
+   desbordara su celda, pero no controlaba DÓNDE se partía la palabra — "PRESUPUESTO" en una columna
+   angosta terminaba como "PRESUPU"/"ESTO", separando el diptongo "ue" a la mitad. `wrapHeaderLabel()`
+   (`js/finanzas-calc.js`) fuerza el `<br>` a mano: prefijo + año en 2 líneas SIEMPRE (ver regla
+   actualizada en la sección 14: NINGUNA palabra se parte nunca, ni siquiera "Presupuesto" que es más
+   larga que "Balance"/"Ejercicio" — cada palabra se envuelve en un `<span style="white-space:nowrap">`
+   para eso). La columna de overlay ("Presupuesto", `renderNativePLTable()` en
+   `js/finanzas-render.js`) pasó por 3 correcciones seguidas en la misma sesión (sección 14): partida
+   en "Presu"/"puesto" → entera pero sin año → entera CON año ("Presupuesto AAAA/AAAA", el mismo
+   ejercicio que la columna principal, vía `ejercicioLabel(year, 'official_budget')`), que es el
+   estado final — 2 líneas, igual formato que cualquier otra columna con prefijo+año. Si se agrega un
+   header nuevo a esta tabla que tampoco entre en una línea, sumarle su propio caso a
+   `wrapHeaderLabel()` (o a mano en el HTML si es un header estático como "% del total"), nunca
+   confiar en que el wrap automático del browser va a partir la palabra en un lugar legible.
+2. **Todas las columnas numéricas de una tabla comparan mejor con el MISMO ancho fijo**, no un ancho
+   distinto por columna "porque el contenido es más corto" (antes 84px para valores, 54px para "%",
+   alternado). Guido lo pidió explícito ("que todas las columnas tengan el mismo width") after ver
+   que la asimetría de anchos hacía más difícil comparar Actual vs. Presupuesto a simple vista. El
+   ancho elegido (100px en `#finanzasPLTable`) sale de medir en el navegador (un `<span>` de prueba
+   con `getComputedStyle` del `<th>` real) cuál es el texto más ancho que puede aparecer en una sola
+   línea con las reglas de wrap de arriba — no un número elegido a ojo.
+3. **"Intereses netos" (y cualquier fila que exista precisamente para que la cuenta cierre) se
+   muestra SIEMPRE, incluso en $0, para los 3 clubes por igual — no solo condicional a que su valor
+   sea distinto de cero.** Guido: "me molesta que para Racing haya Intereses netos en el card y no
+   para el resto... toca ponerlo para todos, aunque sea 0. Es decir, sumarlo al motor." Esto es una
+   EXCEPCIÓN puntual a la regla de la Versión 60 ("ocultar extraRows en $0 para no generar ruido"),
+   no una reversión de esa regla: el resto de extraRows (Impuestos, Venta de activos, Ganancia por
+   venta de jugadores) siguen ocultas en $0, porque son casos genuinamente raros para la mayoría de
+   los club/ejercicio — mostrarlas siempre volvería a ser el mismo ruido que la Versión 60 ya había
+   evitado. La diferencia con "Intereses netos" es que su AUSENCIA (cuando un club la tiene y otro
+   no) se leía como una inconsistencia entre clubes, no como limpieza visual. Si aparece OTRA fila
+   con ese mismo problema a futuro (existe para reconciliar la cuenta, pero solo se ve para el club
+   que la necesita), mismo criterio: sacarla de la lista condicional del motor
+   (`nativeReportFor`/`simplifiedReportForGeneric`, `js/finanzas-calc.js`) y agregar su label a la
+   excepción del filtro de `renderNativePLTable()` (`js/finanzas-render.js`), no ocultarla ni
+   mostrarla para todas las extraRows por igual.
+
+Relacionado, pero un stat DISTINTO (no de la tabla, de los cards de arriba de Finanzas,
+`#finanzasStats`): Guido notó que Ingresos y Gastos ahí arriba no incluían nunca la plata de
+`extraRows` (siempre fue así, no es un bug nuevo de esta versión), así que alguien mirando solo esos
+2 números y "Resultado neto" podía pensar que el sitio no cierra la cuenta — el ejemplo real fue
+literalmente el mismo de la sección 12.1 (Racing 2019/2020: 32,9 - 39,8 ≠ -3,7). Fix: nuevo stat
+"Int." (entre "Gastos" y "Resultado neto"), alimentado por `extraTotal` — la MISMA suma de
+`extraRows` que ya calculaba `renderNativePLTable()` para llegar al Resultado Neto de la tabla de
+abajo, devuelta ahora también en su objeto de retorno. Si se agrega un stat nuevo a
+`#finanzasStats` a futuro que dependa de un total ya calculado en otro lado, mismo criterio: devolver
+ese total desde la función que ya lo calculó, no volver a sumarlo aparte (recalcularlo aparte es
+cómo aparecieron los bugs de "3 cifras de Ingresos distintas" de la Versión 42).
+
+La 4ta cosa que pidió Guido en el mismo mensaje (sacar el prefijo "Ejercicio " del `<select>` "Año"
+y agregar "(Balance)" como 4ta palabra del sufijo) está documentada en la sección 10, no acá — es
+sobre el dropdown, no sobre la tabla "Estado de resultados".
+
+## 14. Header de "Estado de resultados": prefijo de `ejercicioLabel()` y regla de nunca partir una palabra
+
+Dos pedidos de Guido en la misma sesión (mirando Boca 2026/2027 y 2024/2025), los dos generalizados
+a REGLA PERMANENTE para cualquier club/ejercicio futuro, no solo el caso puntual que los disparó:
+
+1. **`official_balance_sheet` pasa a usar el prefijo "Balance", no "Ejercicio".** Antes,
+   `ejercicioLabel(year, reportType)` (`js/finanzas-calc.js`) solo devolvía "Balance" para
+   `official_budget_and_balance` (el caso dual de la sección 11) y dejaba CUALQUIER otro reportType
+   —incluido un balance real y solo— en el genérico "Ejercicio". Guido, viendo "EJERCICIO 2024/2025"
+   para el balance de Boca (`reportType:'official_balance_sheet'`, un documento real, no un
+   placeholder), pidió "Balance" ahí también. Mapeo actual completo:
+   `official_budget` → "Presupuesto"; `official_budget_and_balance` U `official_balance_sheet` →
+   "Balance"; cualquier otro (`placeholder`, `pending_official`, `unofficial_mirror`) → "Ejercicio"
+   (genérico, sigue significando "no hay un documento oficial confirmado como balance o
+   presupuesto todavía", igual que siempre). Si se agrega un reportType nuevo a futuro, decidir su
+   prefijo con el mismo criterio: si el documento primario de ese ejercicio es un balance real
+   (aunque llegue por una vía no 100% oficial, ver `unofficial_mirror` más abajo), usar "Balance"; si
+   no hay documento real todavía, "Ejercicio".
+   - `unofficial_mirror` (River 2024, balance real conseguido en una réplica no oficial) se dejó
+     afuera A PROPÓSITO de este cambio, sigue diciendo "Ejercicio": es un balance real, pero la
+     salvedad de fuente no oficial vive en su propio banner de calidad de dato (sección 10), no se
+     revisó con Guido si esa salvedad también debería reflejarse en el prefijo de esta tabla — no
+     asumir que aplica el mismo criterio sin confirmarlo primero si aparece el caso.
+2. **Ninguna palabra del header se parte NUNCA, ni siquiera "Presupuesto" — con año al lado o sin
+   él.** Contexto (2 rondas de la misma sesión): 1ra ronda, "Presupuesto 2026/2027" (Boca,
+   `official_budget`) salía en 3 líneas ("Presu"/"puesto"/"2026/2027") porque `wrapHeaderLabel()`
+   partía el prefijo en dos Y le sumaba la línea del año. Fix inicial: el prefijo con año al lado va
+   COMPLETO en su propia línea. Guido, viendo el resultado, encontró la 2da ronda: la columna de
+   overlay ("Presupuesto" SOLA, sin año — Racing 2019/2020, `official_budget_and_balance`) había
+   quedado afuera del fix, seguía en "Presu"/"puesto" partida — "te quedó solamente PRESU-PUESTO,
+   pero el cambio que dije antes aplica también." REGLA (`wrapHeaderLabel()`, `js/finanzas-calc.js`):
+   nunca parte una palabra, la envuelve siempre en `<span style="white-space:nowrap">`, tenga o no un
+   año al lado — sin excepción por longitud de palabra. Motivo técnico del `nowrap`: sin él, el propio
+   `overflow-wrap:break-word` del `<th>` (que sigue haciendo falta como red de seguridad para un
+   texto no previsto acá) parte la palabra sola en un punto feo tipo "PRESUPUES"/"TO", reintroduciendo
+   el problema por la puerta de atrás — el `nowrap` fuerza esa palabra a un renglón único aunque
+   desborde unos pocos px hacia la celda vecina (queda dentro del padding en blanco de esa celda,
+   verificado en el navegador con `getBoundingClientRect()` que no pisa el texto "% del total" de al
+   lado, con Boca/Racing en varios anchos).
+3. **La columna de overlay ("Presupuesto") lleva el año al lado, igual que la columna principal.**
+   3ra ronda, mismo pedido: con la 2da ronda ya corregida, la columna de overlay de Racing 2019/2020
+   quedó en "Presupuesto" ENTERA pero SOLA, sin año — visualmente inconsistente con la columna
+   principal de al lado, que sí dice "Balance 2019/2020". Guido: "solamente dice PRESUPUESTO, agregá
+   el año también, como en el resto de los casos. Es una regla." Fix en `renderNativePLTable()`
+   (`js/finanzas-render.js`): el header de la columna de overlay pasó de armar el string
+   `'Presupuesto'` a mano a reusar `ejercicioLabel(year, 'official_budget')` (`js/finanzas-calc.js`)
+   — el `year` es SIEMPRE el mismo ejercicio que la columna principal (el overlay nunca es de otro
+   año, ver sección 11), así que no hace falta un año distinto, solo formatear "Presupuesto
+   AAAA/AAAA" con el MISMO helper que arma cualquier otro prefijo+año del sitio, en vez de un string
+   suelto. El resultado pasa por `wrapHeaderLabel()` igual que la columna principal, así que hereda
+   la regla del punto 2 sin código nuevo: "Presupuesto"/"AAAA/AAAA", 2 líneas, prefijo entero con
+   `nowrap`.
+
+Verificado en el navegador (no opcional), las 3 rondas: Boca 2026/2027 ("Presupuesto"/"2026/2027",
+2 líneas) y 2024/2025 ("Balance"/"2024/2025"), Racing 2024/2025 ("Balance"/"2024/2025"), Racing
+2026/2027 ("Presupuesto"/"2026/2027", 2 líneas) y los 2 ejercicios duales de Racing —2019/2020 y
+2017/2018— con columna primaria "Balance"/"AAAA/AAAA" + columna overlay "Presupuesto"/"AAAA/AAAA"
+(mismo año en las 2, 2 líneas cada una) — ningún caso invade el texto de la columna "% del total"
+de al lado.
+
 ## Cómo mantener este skill
 
 Igual que `club-data-mapping`: se actualiza SOLO al terminar una sesión de onboarding, sin pedirle
@@ -362,9 +647,13 @@ permiso a Guido, si:
 - Se generalizó una pieza de arquitectura nueva (otra función `xxxFor(clubId, ...)`, otro punto de
   extensión) → sumarla a la sección 2, para que la próxima sesión la encuentre y la reuse en vez de
   reinventarla.
-- Se encontró un bug real de la misma familia que el de la sección 3 (algo que se ve fácil de
+- Se encontró un bug real de la misma familia que el de la sección 4 (algo que se ve fácil de
   generalizar pero tiene un supuesto oculto sobre en qué unidad/moneda/formato ya viene un valor) →
   documentarlo ahí, con el síntoma exacto (para que sea reconocible la próxima vez) y el fix.
-- El patrón de la sección 5 (ejercicio nuevo, mismo formato) no aplicó limpio a un caso nuevo (ej.
+- El patrón de la sección 9 (ejercicio nuevo, mismo formato) no aplicó limpio a un caso nuevo (ej.
   un club que SÍ cambia de formato de un año a otro) → documentar la excepción, no forzar el
   patrón.
+
+Lo que se aprenda sobre CÓMO leer un PDF fuente (trampas de escaneo, filas engañosas, cómo
+consultarle a Guido) va en `club-data-mapping/SKILL.md` secciones 8-11 (movido ahí en la Versión 62,
+ver sección 0 arriba), no acá.

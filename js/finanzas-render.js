@@ -28,6 +28,7 @@
 // ============================================================================
 
   let trendChartInst = null, breakdownChartInst = null;
+  let inicioIngresosChartInst = null, inicioGastosChartInst = null, inicioDeudaChartInst = null;
 
 
   // % de cada porción dibujado ARRIBA de la porción del pie/doughnut (no en la leyenda. Chart.js no
@@ -100,11 +101,11 @@
         const childRowId = parentRowId+'-'+i;
         const childHtml = renderBreakdownRows(subItems, childRowId, depth+1, meta, targetCurrency, sectionTotal);
         return `<tr data-group="${parentRowId}" data-owngroup="${childRowId}" class="pl-breakdown-row pl-clickable" style="display:none;" onclick="toggleRevenueBreakdown('${childRowId}', this)">
-          <td style="padding-left:${indent}px;"><span class="pl-arrow">&#9656;</span>${labelWithGlossary(label)}</td><td>${fmtDisplay(val)}</td>${pctCell}<td></td><td></td><td></td>
+          <td style="padding-left:${indent}px;"><span class="pl-arrow">&#9656;</span>${labelWithGlossary(label)}</td><td>${fmtDisplay(val)}</td>${pctCell}<td></td><td></td>
         </tr>` + childHtml;
       }
       return `<tr data-group="${parentRowId}" class="pl-breakdown-row" style="display:none;">
-        <td style="padding-left:${indent}px;">${labelWithGlossary(label)}</td><td>${fmtDisplay(val)}</td>${pctCell}<td></td><td></td><td></td>
+        <td style="padding-left:${indent}px;">${labelWithGlossary(label)}</td><td>${fmtDisplay(val)}</td>${pctCell}<td></td><td></td>
       </tr>`;
     }).join('');
   }
@@ -113,18 +114,24 @@
   // Pinta una sección (Ingresos o Gastos): encabezado, cada categoría (con acordeón si tiene
   // sub-items), y una fila de total. Devuelve el html y el total ya en la moneda a mostrar, para
   // que el llamador pueda sumar Ingresos + Gastos + extraRows y obtener el resultado final.
+  // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto, dame tambien % del total. O
+  // sea, dos columnas que sean % del total"): cada columna de valor (Actual y Presupuesto) tiene
+  // ahora su PROPIA columna de % al lado, calculada contra el total de ESA columna (no contra el
+  // total de la columna Actual) — 5 celdas por fila en vez de 4: Rubro, Actual, % Actual,
+  // Presupuesto, % Presupuesto.
   function buildNativeSectionHtml(sectionLabel, curList, prevList, meta, prevMeta, targetCurrency, groupPrefix){
     const findPrevVal = (label) => { if(!prevList) return null; const m = prevList.find(x => x.label === label); return m ? m.value : null; };
     // El total tiene que estar calculado ANTES de generar el HTML de cada fila (para poder mostrar
     // el % de cada una contra el total ya cerrado), antes se acumulaba fila por fila en el mismo
     // paso en el que se generaba su HTML, así que ninguna fila conocía el total final todavía.
     const total = curList.reduce((s,c) => s + nativeDisplayVal(c.value, meta, targetCurrency), 0);
+    const totalPrev = prevList ? prevList.reduce((s,c) => s + nativeDisplayVal(c.value, prevMeta, targetCurrency), 0) : null;
     const rowsHtml = curList.map((c, i) => {
       const curVal = nativeDisplayVal(c.value, meta, targetCurrency);
       const prevRaw = findPrevVal(c.label);
       const prevVal = prevRaw !== null ? nativeDisplayVal(prevRaw, prevMeta, targetCurrency) : null;
-      const growth = prevVal !== null ? (curVal - prevVal) : null;
       const pctCell = `<td>${fmtPctOfTotal(curVal, total)}</td>`;
+      const prevPctCell = `<td>${prevVal !== null && totalPrev !== null ? fmtPctOfTotal(prevVal, totalPrev) : '—'}</td>`;
       if(c.items && c.items.length){
         const rowId = groupPrefix+'-'+i;
         const itemsHtml = renderBreakdownRows(c.items, rowId, 0, meta, targetCurrency, total);
@@ -133,8 +140,7 @@
           <td>${fmtDisplay(curVal)}</td>
           ${pctCell}
           <td>${prevVal !== null ? fmtDisplay(prevVal) : '—'}</td>
-          <td>${growth !== null ? fmtDisplay(growth) : '—'}</td>
-          <td>${growth !== null ? fmtPctDisplay(growth, prevVal) : '—'}</td>
+          ${prevPctCell}
         </tr>` + itemsHtml;
       }
       return `<tr>
@@ -142,82 +148,157 @@
         <td>${fmtDisplay(curVal)}</td>
         ${pctCell}
         <td>${prevVal !== null ? fmtDisplay(prevVal) : '—'}</td>
-        <td>${growth !== null ? fmtDisplay(growth) : '—'}</td>
-        <td>${growth !== null ? fmtPctDisplay(growth, prevVal) : '—'}</td>
+        ${prevPctCell}
       </tr>`;
     }).join('');
-    const totalPrev = prevList ? prevList.reduce((s,c) => s + nativeDisplayVal(c.value, prevMeta, targetCurrency), 0) : null;
-    const totalGrowth = totalPrev !== null ? (total - totalPrev) : null;
-    const headHtml = `<tr class="pl-section-head"><td colspan="6">${sectionLabel}</td></tr>`;
+    const headHtml = `<tr class="pl-section-head"><td colspan="5">${sectionLabel}</td></tr>`;
     const totalHtml = `<tr class="pl-bold pl-shade"><td>Total ${sectionLabel}</td><td>${fmtDisplay(total)}</td><td>${fmtPctOfTotal(total, total)}</td>` +
       `<td>${totalPrev !== null ? fmtDisplay(totalPrev) : '—'}</td>` +
-      `<td>${totalGrowth !== null ? fmtDisplay(totalGrowth) : '—'}</td>` +
-      `<td>${totalGrowth !== null ? fmtPctDisplay(totalGrowth, totalPrev) : '—'}</td></tr>`;
-    return { html: headHtml + rowsHtml + totalHtml, total };
+      `<td>${totalPrev !== null ? fmtPctOfTotal(totalPrev, totalPrev) : '—'}</td></tr>`;
+    // totalPrev se devuelve para que renderNativePLTable() pueda armar el Resultado Neto DEL
+    // PRESUPUESTO (Ingresos - Gastos de esa misma columna), no solo el del Balance (Versión 60,
+    // Guido: "que resultado neto tenga un numero, no me lo dejes incompleto").
+    return { html: headHtml + rowsHtml + totalHtml, total, totalPrev };
   }
 
 
-  // Reescribe el <colgroup> de #finanzasPLTable según el modo (Año a año vs. Por gestión). Versión 39.
-  // NECESARIO además de la regla CSS que oculta th/td de las columnas 4-6 en "Año a año"
-  // (`pl-hide-compare`): probado en el navegador con getBoundingClientRect, en dos vueltas,
+  // Reescribe el <colgroup> de #finanzasPLTable según si el ejercicio tiene overlay de Presupuesto
+  // o no (Versión 39, criterio de cuándo llamarla actualizado en la Versión 57: antes era Año a
+  // año vs. Por gestión). NECESARIO además de la regla CSS que oculta th/td de la 4ta columna
+  // cuando no hay overlay (`pl-hide-compare`): probado en el navegador con getBoundingClientRect,
+  // en dos vueltas,
   // 1) un <col> con `display:none` NO libera su ancho fijo en `table-layout:fixed` (Rubro seguía
   //    midiendo lo mismo con o sin esa regla).
-  // 2) SACAR directamente esos <col> del colgroup (dejarlo con solo 3 en vez de 6) TAMPOCO alcanza:
-  //    la fila de encabezado de sección (`buildNativeSectionHtml`, `<td colspan="6">`) sigue
-  //    escribiendo `colspan="6"` sin importar el modo, así que el motor de tablas del navegador sigue
-  //    viendo 6 columnas reales (por esa fila) aunque el colgroup solo describa 3, y como Rubro Y
-  //    las 3 columnas "de más" quedan TODAS sin ancho explícito, el navegador reparte el espacio
-  //    sobrante en partes IGUALES entre las 4 (Rubro se quedó con ~108px de 596, un cuarto del
-  //    espacio libre, en vez de los ~431px que le tocarían solo), confirmado midiendo antes/después.
-  // Fix real: el <colgroup> SIEMPRE tiene que declarar las 6 columnas (para calzar con el colspan=6
-  // de esa fila y con las 6 celdas reales de cada fila de datos), pero las columnas ocultas en "Año a
-  // año" llevan un ancho EXPLÍCITO de 0 (no las sacamos del colgroup, les ponemos width:0), así son
-  // las ÚNICAS con ancho fijo salvo Rubro, que sigue siendo la única columna sin ancho y se lleva
-  // TODO el espacio sobrante ella sola, sin repartirlo con nadie.
-  // Se llama SIEMPRE junto con el classList.add/remove('pl-hide-compare') de #finanzasPLTable (los 4
-  // call sites: updateFinanzasByGestion/ByAnio y sus versiones Generic), si se agrega un call site
-  // nuevo que toque esa clase, hay que sumarle también esta llamada.
+  // 2) SACAR directamente esos <col> del colgroup TAMPOCO alcanza: la fila de encabezado de sección
+  //    (`buildNativeSectionHtml`, `<td colspan="N">`) sigue escribiendo el mismo colspan sin
+  //    importar el modo, así que el motor de tablas del navegador sigue viendo esa cantidad de
+  //    columnas reales (por esa fila) aunque el colgroup describa menos, y como Rubro Y las
+  //    columnas "de más" quedan TODAS sin ancho explícito, el navegador reparte el espacio sobrante
+  //    en partes IGUALES entre todas (confirmado midiendo antes/después).
+  // Fix real: el <colgroup> SIEMPRE tiene que declarar la MISMA cantidad de columnas que el
+  // `colspan` de la fila de encabezado de sección y que las celdas reales de cada fila de datos
+  // (hoy: 4, ver REGLA de la Versión 59 abajo), pero la columna oculta cuando no hay overlay lleva
+  // un ancho EXPLÍCITO de 0 (no se saca del colgroup, se le pone width:0), así es la ÚNICA con
+  // ancho fijo salvo Rubro, que sigue siendo la única columna sin ancho y se lleva TODO el espacio
+  // sobrante ella sola, sin repartirlo con nadie.
+  // Se llama SIEMPRE junto con el classList.toggle('pl-hide-compare') de #finanzasPLTable, ambos
+  // adentro de `renderNativePLTable()` desde la Versión 57 (antes vivían sueltos en cada uno de los
+  // 4 call sites que llamaban a esa función).
+  // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto, dame tambien % del total. O
+  // sea, dos columnas que sean % del total" + "para leer 'presupuesto' de forma entera, tengo que
+  // scrollear a la derecha... desliza las columnas apenas a la izquierda para que no haya que
+  // scrollear. esto tambien deberia ser regla"): quedan 5 columnas (Rubro, Actual, % Actual,
+  // Presupuesto, % Presupuesto), pero los 4 anchos numéricos se angostaron (100/65 → 78/40) respecto
+  // a la Versión 59 para que, sumados, entren en el ancho del card sin scroll horizontal — la 5ta
+  // columna nueva no puede simplemente sumarse con los anchos viejos o se repite el problema. Regla
+  // general para cualquier columna nueva que se agregue a esta tabla en el futuro: el ancho de las
+  // columnas EXISTENTES tiene que angostarse en la misma medida que se agranda el total, nunca
+  // asumir que "hay lugar" sin volver a mirar el ancho real del card en el navegador.
+  // REGLA (Versión 61, pedido explícito de Guido: "lo ideal es que todas las columnas tengan el
+  // mismo width y que permita que se lea bien"): las 4 columnas numéricas comparten el MISMO ancho
+  // (100px, antes alternaban 84/54/84/54 según fuera Actual/Presupuesto o su "% del total"). 100px
+  // sale de medir en el navegador (getComputedStyle + un <span> de prueba con la misma fuente) el
+  // texto más ancho que puede aparecer en una sola línea de header con el wrap a propósito de
+  // `wrapHeaderLabel` (js/finanzas-calc.js): un rango de años tipo "2026/2027" mide ~69px + 24px de
+  // padding del `<th>` (9px 12px) ≈ 93px, "Ejercicio"/"Balance" miden menos. El ancho uniforme +
+  // esos headers partidos a propósito (más "% del<br>total") reemplazan el wrap automático
+  // letra-por-letra que hacía ilegible el header en columnas angostas.
   function syncPLTableColgroup(hideCompare){
     const colgroup = document.querySelector('#finanzasPLTable colgroup');
     colgroup.innerHTML = hideCompare
-      ? '<col><col style="width:100px"><col style="width:65px"><col style="width:0"><col style="width:0"><col style="width:0">'
-      : '<col><col style="width:100px"><col style="width:65px"><col style="width:100px"><col style="width:90px"><col style="width:65px">';
+      ? '<col><col style="width:100px"><col style="width:100px"><col style="width:0"><col style="width:0">'
+      : '<col><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px">';
   }
 
 
-  function renderNativePLTable(clubId, curYear, prevYear, curLabel, prevLabel, containerId){
-    document.getElementById(containerId+'CurLabel').textContent = curLabel;
-    document.getElementById(containerId+'PrevLabel').textContent = prevLabel || '—';
-    const curMeta = yearMetaFor(clubId, curYear);
-    const prevMeta = prevYear ? yearMetaFor(clubId, prevYear) : null;
-    const curReport = nativeReportFor(clubId, curYear);
-    const prevReport = prevYear ? nativeReportFor(clubId, prevYear) : null;
+  // REGLA (Versión 57, pedido explícito de Guido: "no existe la columna de comparación... la
+  // habíamos eliminado hace rato" + "para cuando un mismo año tenga both presupuesto y balance, en
+  // estado de resultado agregá una columna que sea Balance"): esta función YA NO compara el
+  // ejercicio actual contra OTRO año (esa comparación se sacó del todo, de los 3 clubes y los 2
+  // modos). La 2da columna ahora es, exclusivamente, el overlay de Presupuesto de ESE MISMO
+  // ejercicio, cuando existe (`presupuestoOverlayReportFor`, `js/finanzas-calc.js`) — un ejercicio
+  // con `reportType:'official_budget_and_balance'` en `*FiscalYearMeta` (el balance real es el dato
+  // PRIMARIO de siempre: KPIs, Formato Simplificado, verifyTieOuts salen de ahí, no del overlay).
+  // Para el 99% de los ejercicios (sin overlay) la 2da columna directamente no se pinta, igual que
+  // antes se ocultaba en "Año a año" vía `pl-hide-compare`, solo que ahora es SIEMPRE así salvo que
+  // el ejercicio puntual tenga las 2 fuentes, sin importar si se está mirando "Año a año" o "Por
+  // gestión". Ver `.claude/skills/club-or-year-onboarding/SKILL.md` sección 11 para el detalle
+  // completo (incluida la limitación real: el emparejamiento de filas Balance-vs-Presupuesto es por
+  // `rawLabel` exacto, así que un rubro que cambia de nombre entre los dos documentos no muestra
+  // Var./Var. %, mismo comportamiento que ya tenía la comparación año-contra-año vieja).
+  function renderNativePLTable(clubId, year, curLabel, containerId){
+    const curMeta = yearMetaFor(clubId, year);
+    const curReport = nativeReportFor(clubId, year);
+    const overlayReport = presupuestoOverlayReportFor(clubId, year);
+    const overlayMeta = overlayReport ? presupuestoOverlayMetaFor(clubId, year) : null;
 
-    const ing = buildNativeSectionHtml('Ingresos', curReport.ingresos, prevReport ? prevReport.ingresos : null, curMeta, prevMeta, currentCurrency, containerId+'-ing');
-    const gas = buildNativeSectionHtml('Gastos', curReport.gastos, prevReport ? prevReport.gastos : null, curMeta, prevMeta, currentCurrency, containerId+'-gas');
+    // innerHTML (no textContent) + wrapHeaderLabel (js/finanzas-calc.js): fuerza el corte de
+    // línea en un punto elegido a mano (Versión 61, ver comentario de esa función), en vez de
+    // dejar que `overflow-wrap:break-word` parta la palabra letra por letra en columnas angostas.
+    // REGLA (Versión 65, pedido explícito de Guido viendo Racing 2019/2020: "solamente dice
+    // PRESUPUESTO, agregá el año también, como en el resto de los casos. Es una regla"): el header
+    // de la columna de overlay lleva el año, igual que la columna principal — el overlay es SIEMPRE
+    // el presupuesto de ESE MISMO `year` (ver comentario de `presupuestoOverlayReportFor`), nunca de
+    // otro ejercicio, así que reusa `ejercicioLabel(year, 'official_budget')` (`js/finanzas-calc.js`)
+    // para armar "Presupuesto AAAA/AAAA" con el mismo formato que cualquier otro prefijo+año.
+    document.getElementById(containerId+'CurLabel').innerHTML = wrapHeaderLabel(curLabel);
+    document.getElementById(containerId+'PrevLabel').innerHTML = overlayReport ? wrapHeaderLabel(ejercicioLabel(year, 'official_budget')) : '—';
+    document.getElementById(containerId).classList.toggle('pl-hide-compare', !overlayReport);
+    syncPLTableColgroup(!overlayReport);
 
-    // Las filas sueltas (extraRows: intereses, impuestos) y el Resultado final no pertenecen a
-    // Ingresos ni a Gastos, no tienen un "total de sección" propio contra el que calcular un %
-    // que signifique algo, así que esa columna queda en "—" para ellas (a diferencia de las filas
-    // de Ingresos/Gastos, que sí muestran % sobre su propio Total).
-    const extraHtml = (curReport.extraRows||[]).map(e => {
-      const v = nativeDisplayVal(e.value, curMeta, currentCurrency);
-      return `<tr><td>${e.label}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>`;
-    }).join('');
+    const ing = buildNativeSectionHtml('Ingresos', curReport.ingresos, overlayReport ? overlayReport.ingresos : null, curMeta, overlayMeta, currentCurrency, containerId+'-ing');
+    const gas = buildNativeSectionHtml('Gastos', curReport.gastos, overlayReport ? overlayReport.gastos : null, curMeta, overlayMeta, currentCurrency, containerId+'-gas');
+
+    // REGLA (Versión 54, pedido explícito de Guido: "en el card de Estado de resultado de Boca,
+    // ponés 'intereses netos, impuestos' y un copy abajo. quitalo, y quede igual para todos los
+    // clubes, todos los años") — REVERTIDA PARCIALMENTE en la Versión 60: Guido detectó que Racing
+    // 2020 mostraba Ingresos 32,9 / Gastos 39,8 / Resultado neto -3,7 ("no da la cuenta. qué pasa?
+    // por qué esto no saltó en ningún chequeo tuyo? es elemental") — el número final SIEMPRE fue
+    // correcto (-277,059572 ARS M / 73,98 = -3,746 ≈ -3,7, ya validado por verifyTieOuts), lo que
+    // estaba mal era mostrar Ingresos y Gastos sin ningún rastro visible de por qué no suman
+    // Resultado Neto: `extraTotal` (acá, Intereses netos ≈ +3,08 M USD) se sumaba pero nunca se
+    // pintaba. Ahora las filas de extraRows SÍ se muestran de nuevo, pero solo cuando su valor no es
+    // cero (así un club/año sin esta fila — la mayoría — no gana una fila "Intereses netos: 0" sin
+    // sentido). Esto es una única función compartida por los 3 clubes y cualquier año/toggle, así que
+    // el cambio es automáticamente igual para todos, sin nada condicional por club/año.
     const extraTotal = (curReport.extraRows||[]).reduce((s,e) => s + nativeDisplayVal(e.value, curMeta, currentCurrency), 0);
+    // REGLA (Versión 61, pedido explícito de Guido: "toca ponerlo para todos, aunque sea 0"):
+    // "Intereses netos" es la única extraRow que se muestra SIEMPRE, incluso en $0 — las demás
+    // (Impuestos, Venta de activos, Ganancia por venta de jugadores) siguen ocultas en $0 (Versión
+    // 60, evitar ruido para casos raros). El motor (js/finanzas-calc.js) ya arma "Intereses netos"
+    // sin condicional, así que esta excepción solo decide qué se PINTA, no qué se calcula.
+    const extraRowsHtml = (curReport.extraRows||[]).map(e => {
+      const v = nativeDisplayVal(e.value, curMeta, currentCurrency);
+      if(v === 0 && e.label !== 'Intereses netos') return '';
+      return `<tr><td>${e.label}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td></tr>`;
+    }).join('');
 
     const resultado = ing.total + gas.total + extraTotal;
-    const resultRow = `<tr class="pl-bold pl-highlight"><td>${curReport.resultLabel || 'Resultado neto'}</td><td>${fmtDisplay(resultado)}</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>`;
+    // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto... que resultado neto tenga
+    // un numero, no me lo dejes incompleto"): el Resultado Neto de la columna Presupuesto es la
+    // suma directa de sus propias revenueLines/expenseLines (`ing.totalPrev + gas.totalPrev`), SIN
+    // sumarle ningún extraTotal — el overlay no tiene su propio concepto de extraRows separado, sus
+    // líneas "extraordinarias" ya viven adentro de revenueLines/expenseLines como líneas normales
+    // (ver nota en `data/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`, corregida en esta
+    // misma versión para que sea así en las 2 columnas).
+    const resultadoOverlay = overlayReport ? (ing.totalPrev + gas.totalPrev) : null;
+    const resultRow = `<tr class="pl-bold pl-highlight"><td>${curReport.resultLabel || 'Resultado neto'}</td><td>${fmtDisplay(resultado)}</td><td>—</td>` +
+      `<td>${resultadoOverlay !== null ? fmtDisplay(resultadoOverlay) : '—'}</td><td>—</td></tr>`;
 
     document.querySelector('#'+containerId+' tbody').innerHTML =
-      ing.html + '<tr class="pl-spacer"><td colspan="6"></td></tr>' + gas.html + extraHtml +
-      '<tr class="pl-spacer"><td colspan="6"></td></tr>' + resultRow;
+      ing.html + '<tr class="pl-spacer"><td colspan="5"></td></tr>' + gas.html +
+      (extraRowsHtml ? '<tr class="pl-spacer"><td colspan="5"></td></tr>' + extraRowsHtml : '') +
+      '<tr class="pl-spacer"><td colspan="5"></td></tr>' + resultRow;
     // Se devuelven los totales YA en la moneda mostrada para que el stat "Gastos" de arriba de
     // Finanzas use EXACTAMENTE el mismo número que "Total Gastos" acá abajo, antes ese stat salía
     // de cur.expenses (computeYear), que para 2025/2027 (los únicos ejercicios con documento real)
     // es solo wages+otherExpenses, sin amortizaciones/depreciación, así que mostraba un Gastos menor
     // al de la tabla y parecía un descalce con las inversiones. Bug real, reportado por Guido.
-    return { ingresosTotal: ing.total, gastosTotal: gas.total, resultado };
+    // extraTotal (Versión 61): se devuelve para que renderFinanzasStatsFromComputed/Generic puedan
+    // pintar el stat "Int." de arriba con EXACTAMENTE el mismo número que ya se sumó acá abajo para
+    // llegar a "Resultado neto" (Ingresos + Gastos + Int. = Resultado neto, visible en los 2
+    // lugares a la vez).
+    return { ingresosTotal: ing.total, gastosTotal: gas.total, resultado, extraTotal };
   }
 
 
@@ -337,15 +418,29 @@
   // cual sea el toggle. Las diferencias entre "Formato del club" y "Formato simplificado" siguen
   // existiendo (son un criterio de presentación distinto, no un error), pero ya no hay una tercera
   // cifra más arriba que no coincide con ninguna de las dos.
-  function renderFinanzasStatsFromComputed(cur, gastosTotal, ingresosTotal){
+  // extraTotal (opcional, Versión 61: pedido explícito de Guido, "agregar Int en los cards del
+  // inicio [de Finanzas] en los cuales se hace un breve resumen... cualquiera que vea Ingresos y
+  // Egresos y vea que no cuadra con el Resultado neto va a pensar que es poco seria la página"):
+  // Ingresos y Gastos de estos stats NUNCA incluían la fila "Intereses netos" (u otras extraRows)
+  // que sí participan del Resultado neto de abajo, así que Ingresos-Gastos podía no dar el
+  // Resultado neto mostrado, sin que nada en pantalla explicara la diferencia. El stat "Int." (iguala
+  // a `extraTotal` de renderNativePLTable, mismo número que ya se suma en "Estado de resultados")
+  // cierra la cuenta a simple vista: Ingresos + Gastos + Int. = Resultado neto. Si no se pasa
+  // (ningún call site actual), no se agrega el stat, para no romper otro llamador futuro que no lo
+  // tenga disponible.
+  function renderFinanzasStatsFromComputed(cur, gastosTotal, ingresosTotal, extraTotal){
     const meta = yearMeta(cur.year);
     const revenueDisp = ingresosTotal !== undefined ? ingresosTotal : toDisplayValue(cur.revenue, meta, currentCurrency);
     const expensesDisp = gastosTotal !== undefined ? Math.abs(gastosTotal) : Math.abs(toDisplayValue(cur.expenses, meta, currentCurrency));
     const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
     const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
+    const extraStat = extraTotal !== undefined
+      ? `<div class="stat"><div class="label" title="Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto">Int.</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
+      : '';
     document.getElementById('finanzasStats').innerHTML = `
       <div class="stat"><div class="label">Ingresos</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
       <div class="stat"><div class="label">Gastos</div><div class="value">${fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
+      ${extraStat}
       <div class="stat"><div class="label">Resultado neto</div><div class="value ${cur.pat>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
       <div class="stat"><div class="label">Deuda neta</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
     `;
@@ -357,13 +452,9 @@
     const g = gestionesInfo[key];
     const cur = computeYear(g.lastYear);
     const prev = g.firstYear !== g.lastYear ? computeYear(g.firstYear) : null;
-    const plTotals = renderNativePLTable('boca', cur.year, prev ? prev.year : null, cur.yearLabel, prev ? prev.yearLabel : null, 'finanzasPLTable');
-    renderFinanzasStatsFromComputed(cur, plTotals.gastosTotal, plTotals.ingresosTotal);
+    const plTotals = renderNativePLTable('boca', cur.year, cur.yearLabel, 'finanzasPLTable');
+    renderFinanzasStatsFromComputed(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlock(cur, prev, 'finanzasDebtTable');
-    document.getElementById('finanzasUnitNote').textContent = plUnitLabel(currentCurrency);
-    document.getElementById('finanzasFxNote').textContent = g.lastYear === 2027 ? 'El último ejercicio de esta gestión (2026/2027) es el Presupuesto oficial (ver cards más abajo), convertido a USD con el promedio entre el dólar de inicio y cierre: ($1.480 + $1.840) / 2 = $1.660.' : '';
-    document.getElementById('finanzasPLTable').classList.remove('pl-hide-compare');
-    syncPLTableColgroup(false);
     const years = []; for(let y=g.firstYear; y<=g.lastYear; y++){ if(yearsRaw[y]) years.push(y); }
     drawTrendChart(years.map(y => computeYear(y)));
     drawBreakdownChart(cur);
@@ -378,18 +469,15 @@
     const y = parseInt(document.getElementById('anioSelect').value, 10);
     const cur = computeYear(y);
     const prev = yearsRaw[y-1] ? computeYear(y-1) : null;
-    const plTotals = renderNativePLTable('boca', cur.year, prev ? prev.year : null, cur.yearLabel, prev ? prev.yearLabel : null, 'finanzasPLTable');
-    renderFinanzasStatsFromComputed(cur, plTotals.gastosTotal, plTotals.ingresosTotal);
+    const plTotals = renderNativePLTable('boca', cur.year, cur.yearLabel, 'finanzasPLTable');
+    renderFinanzasStatsFromComputed(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlock(cur, prev, 'finanzasDebtTable');
-    document.getElementById('finanzasUnitNote').textContent = plUnitLabel(currentCurrency);
-    // El ejercicio 2027 ya no tiene nota de conversión FX acá (se sacó por pedido de Guido, quedaba
-    // repetida/con demasiado detalle); la aclaración de que la deuda del presupuesto no está
-    // desglosada ahora vive en el card Deuda (finanzasDebtNote / debtDisclosureNote), no acá.
-    document.getElementById('finanzasFxNote').textContent = y === 2025 ? 'Ejercicio 2024/2025 = Memoria y Balance oficial auditado al 30/06/2025 (balance real, no presupuesto). Conversión a USD con el dólar mayorista de CIERRE del ejercicio ($1.203 al 30/06/2025), no un promedio, porque el balance está en moneda homogénea reexpresada a esa fecha puntual. Las categorías son las del balance tal cual (11 de Ingresos, 17 de Gastos), nótese que "Ingresos por transferencias de jugadores" y "Gastos por transferencia de jugadores" van SEPARADOS, como los reporta el club, no como una sola "ganancia neta". "Resultados financieros y por tenencia" agrupa intereses + diferencias de cambio + RECPAM en una sola línea, por elección de presentación propia del club.'
-      : '';
-    document.getElementById('finanzasPLTable').classList.add('pl-hide-compare');
-    syncPLTableColgroup(true);
-    const allYears = [2018,2019,2021,2022,2023,2024,2025,2027];
+    // Versión 81: array explícito de los años que Finanzas muestra (ya NO deriva de
+    // Object.keys(yearsRaw) — yearsRaw sigue teniendo los 5 años placeholder de siempre, ver
+    // comentario en data/boca-data.js, porque Comparar Gestiones/Pases/Resultados todavía los usan;
+    // si este gráfico leyera yearsRaw directo, esos 5 volverían a aparecer acá). Mismo criterio que
+    // gestionesInfo/el <select> de abajo: estos 4 son los únicos años que Finanzas expone.
+    const allYears = [2024,2025,2026,2027];
     drawTrendChart(allYears.map(yy => computeYear(yy)));
     drawBreakdownChart(cur);
     renderSupuestosCard('boca', y);
@@ -440,7 +528,9 @@
   // cur.revenue/expenses/pat/netDebt tal cual (ya USD, hardcodeado), ahora convierte con
   // yearMetaFor(cur.clubId, cur.year) + currentCurrency, mismo patrón que
   // renderFinanzasStatsFromComputed (Boca).
-  function renderFinanzasStatsGeneric(cur, gastosTotal, ingresosTotal){
+  // extraTotal: ver comentario en renderFinanzasStatsFromComputed (Boca), mismo criterio y mismo
+  // stat "Int." acá (Versión 61).
+  function renderFinanzasStatsGeneric(cur, gastosTotal, ingresosTotal, extraTotal){
     const meta = yearMetaFor(cur.clubId, cur.year);
     const revenueDisp = ingresosTotal !== undefined ? ingresosTotal : toDisplayValue(cur.revenue, meta, currentCurrency);
     // gastosTotal (si viene) ya está convertido a currentCurrency por renderNativePLTable/
@@ -450,9 +540,13 @@
     const expensesDisp = gastosTotal !== undefined ? Math.abs(gastosTotal) : Math.abs(toDisplayValue(cur.expenses, meta, currentCurrency));
     const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
     const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
+    const extraStat = extraTotal !== undefined
+      ? `<div class="stat"><div class="label" title="Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto">Int.</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
+      : '';
     document.getElementById('finanzasStats').innerHTML = `
       <div class="stat"><div class="label">Ingresos</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
       <div class="stat"><div class="label">Gastos</div><div class="value">${fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
+      ${extraStat}
       <div class="stat"><div class="label">Resultado neto</div><div class="value ${cur.pat>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
       <div class="stat"><div class="label">Deuda neta</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
     `;
@@ -472,7 +566,7 @@
     // una: ese objeto evalúa LAS DOS propiedades al crearse, y con lazy-loading (loadClubData en
     // index.html) el archivo del club que NO se está mirando puede no estar cargado todavía, tira
     // ReferenceError. El ternario solo evalúa la rama que efectivamente hace falta.
-    const isReal = year => ((clubId === 'river' ? riverFiscalYearMeta[year] : racingFiscalYearMeta[year]) || {}).reportType !== 'placeholder';
+    const isReal = year => reportTypeForYear(clubId, year) !== 'placeholder';
     const labels = computedArr.map(c => String(c.year));
     const revenueData = computedArr.map(c => isReal(c.year) ? toDisplayValue(c.revenue, yearMetaFor(clubId, c.year), currentCurrency) : null);
     const expensesData = computedArr.map(c => isReal(c.year) ? Math.abs(toDisplayValue(c.expenses, yearMetaFor(clubId, c.year), currentCurrency)) : null);
@@ -516,13 +610,9 @@
     if(!g) return;
     const cur = computeYearGeneric(clubId, g.lastYear);
     const prev = g.firstYear !== g.lastYear ? computeYearGeneric(clubId, g.firstYear) : null;
-    const plTotals = renderNativePLTable(clubId, cur.year, prev ? prev.year : null, cur.yearLabel, prev ? prev.yearLabel : null, 'finanzasPLTable');
-    renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal);
+    const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
+    renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, prev, 'finanzasDebtTable');
-    document.getElementById('finanzasUnitNote').textContent = plUnitLabel(currentCurrency);
-    document.getElementById('finanzasFxNote').textContent = currentCurrency === 'USD' ? genericFxNote(clubId, g.lastYear) : '';
-    document.getElementById('finanzasPLTable').classList.remove('pl-hide-compare');
-    syncPLTableColgroup(false);
     const years = []; for(let y=g.firstYear; y<=g.lastYear; y++){ years.push(y); }
     drawTrendChartGeneric(clubId, years.map(y => computeYearGeneric(clubId, y)).filter(c => c.revenueLines.length));
     drawBreakdownChartGeneric(cur);
@@ -536,13 +626,9 @@
   function updateFinanzasByAnioGeneric(clubId){
     const y = parseInt(document.getElementById('anioSelect').value, 10);
     const cur = computeYearGeneric(clubId, y);
-    const plTotals = renderNativePLTable(clubId, cur.year, null, cur.yearLabel, null, 'finanzasPLTable');
-    renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal);
+    const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
+    renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
-    document.getElementById('finanzasUnitNote').textContent = plUnitLabel(currentCurrency);
-    document.getElementById('finanzasFxNote').textContent = currentCurrency === 'USD' ? genericFxNote(clubId, y) : '';
-    document.getElementById('finanzasPLTable').classList.add('pl-hide-compare');
-    syncPLTableColgroup(true);
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);
     renderSupuestosCard(clubId, y);
@@ -562,38 +648,43 @@
     const previousYear = parseInt(anioSelect.value, 10);
     let years;
     if(clubId === 'boca'){
-      gestionSelect.innerHTML = `
-        <option value="riquelme">Riquelme (2023-actual)</option>
-        <option value="ameal">Ameal (2019-2023)</option>
-        <option value="angelici">Angelici (2015-2019)</option>`;
-      years = [
-        {value:2027, label:'Ejercicio 2026/2027 (presupuestado)'},
-        {value:2026, label:'Ejercicio 2025/2026 (esperando datos)'},
-        {value:2025, label:'Ejercicio 2024/2025'},
-        {value:2024, label:'Ejercicio 2023/2024'},
-        {value:2023, label:'Ejercicio 2022/2023'},
-        {value:2022, label:'Ejercicio 2021/2022'},
-        {value:2021, label:'Ejercicio 2020/2021'},
-        {value:2019, label:'Ejercicio 2018/2019'},
-        {value:2018, label:'Ejercicio 2017/2018'},
-      ];
+      // Versión 81: se sacó ameal/angelici de este <select> (quita los años placeholder de
+      // Finanzas, ver gestionesInfo en data/boca-data.js) — SOLO acá, `gestionesByClub.boca`
+      // (data/clubs.js), que alimenta Pases/Resultados/Comparar/Inicio, sigue con las 3 gestiones.
+      gestionSelect.innerHTML = `<option value="riquelme">Riquelme (2023-actual)</option>`;
+      // REGLA (Versión 56): el sufijo entre paréntesis sale de `anioDropdownSuffix(reportTypeForYear(...))`
+      // (js/finanzas-calc.js), no de un texto suelto por año como antes (cada uno redactado
+      // distinto: "presupuestado", "esperando datos"). Ver el comentario de esa función para el
+      // detalle de qué reportType mapea a qué palabra.
+      // REGLA (Versión 61, pedido explícito de Guido: "que no aparezca 'ejercicio 2020/2021' sino
+      // '2020/2021'. Ejercicio sino queda muy redundante y agota la vista"): sin el prefijo
+      // "Ejercicio " que tenían todas las opciones antes, el rango de años solo. El prefijo sigue
+      // vivo en OTRO lugar (el header "Ejercicio/Balance/Presupuesto AAAA/AAAA" de la tabla Estado
+      // de resultados, `ejercicioLabel()`), esto solo afecta el texto del propio `<select>`.
+      // Versión 81: array explícito de los 4 años reales/pending que Finanzas expone para Boca (no
+      // Object.keys(yearsRaw) — ese objeto sigue con los 5 años placeholder de siempre, ver
+      // comentario en data/boca-data.js, así que derivar de ahí los volvería a mostrar acá).
+      years = [2027,2026,2025,2024].map(value => ({
+        value, label:(value-1)+'/'+value+anioDropdownSuffix(reportTypeForYear('boca', value)),
+      }));
     } else {
       const gestiones = gestionesByClub[clubId];
       gestionSelect.innerHTML = Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
       // Ternario, no un objeto armado de una (ver mismo comentario en drawTrendChartGeneric): con
       // lazy-loading, el club que no se está mirando puede no estar cargado todavía.
-      const meta = clubId === 'river' ? riverFiscalYearMeta : racingFiscalYearMeta;
+      const meta = clubId === 'river' ? riverFiscalYearMeta : clubId === 'racing' ? racingFiscalYearMeta : velezFiscalYearMeta;
       // Object.keys() de un objeto con claves numéricas ("2024","2025"...) las devuelve SIEMPRE en
       // orden ASCENDENTE (son "integer-like keys". JS las reordena así sin importar el orden en el
       // código fuente), por eso salía el ejercicio más viejo primero. Se ordena acá a mano,
       // descendente, mismo criterio que la lista de Boca arriba.
-      // OJO: acá el dropdown mantiene a propósito el estilo viejo "Ejercicio AAAA/AAAA
-      // (presupuestado)" (no el "Presupuesto AAAA/AAAA" corto de ejercicioLabel(year, true), que
-      // es solo para el header de la tabla, ver comentario en esa función) para que el dropdown de
-      // River/Racing luzca igual que el de Boca (`#anioSelect` estático + `populateFinanzasSelectors`
-      // más arriba), que también quedó con el estilo largo.
+      // El dropdown de River/Racing luce igual que el de Boca (`#anioSelect` estático +
+      // `populateFinanzasSelectors` más arriba). El sufijo entre paréntesis sale de
+      // `anioDropdownSuffix()` (js/finanzas-calc.js, Versión 56), mismo criterio y mismas 4
+      // palabras posibles que usa Boca arriba. Sin el prefijo "Ejercicio " (Versión 61, ver mismo
+      // comentario en la rama de Boca arriba): antes decía "Ejercicio AAAA/AAAA", ahora solo el
+      // rango de años.
       years = Object.keys(meta).map(Number).sort((a,b) => b - a).map(y => ({
-        value:y, label: 'Ejercicio '+(y-1)+'/'+y+(meta[y].reportType === 'official_budget' ? ' (presupuestado)' : ''),
+        value:y, label: (y-1)+'/'+y+anioDropdownSuffix(meta[y].reportType),
       }));
     }
     anioSelect.innerHTML = years.map(y => `<option value="${y.value}">${y.label}</option>`).join('');
@@ -748,9 +839,16 @@
         : { reportType:'placeholder', sourceId:'boca-placeholder-historico' };
     } else {
       const year = isGestion ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear : parseInt(document.getElementById('anioSelect').value, 10);
-      meta = (currentClub === 'river' ? riverFiscalYearMeta[year] : racingFiscalYearMeta[year]) || {};
+      meta = (currentClub === 'river' ? riverFiscalYearMeta[year] : currentClub === 'racing' ? racingFiscalYearMeta[year] : velezFiscalYearMeta[year]) || {};
     }
-    if(meta.reportType === 'official_budget' || meta.reportType === 'official_balance_sheet'){
+    // REGLA (Versión 58): 'official_budget_and_balance' (ejercicio con las 2 fuentes reales
+    // cargadas a la vez, ver club-or-year-onboarding/SKILL.md sección 11) es tan "real" como
+    // 'official_balance_sheet'/'official_budget' solos, tiene que ocultar el banner igual. Bug
+    // real encontrado al cargar el primer ejercicio con este reportType (Racing 2020): al no estar
+    // en esta lista, caía al default del ternario de abajo ("Dato placeholder, número inventado
+    // para probar el diseño del sitio"), mostrando esa advertencia FALSA para un ejercicio 100%
+    // real (con MÁS fuente que la mayoría, no menos).
+    if(meta.reportType === 'official_budget' || meta.reportType === 'official_balance_sheet' || meta.reportType === 'official_budget_and_balance'){
       banner.style.display = 'none';
       return;
     }
@@ -1051,14 +1149,289 @@
     const gestionKey = currentGestionKey(currentClub);
     const g = gestionesByClub[currentClub][gestionKey];
     const cur = computeYearForClub(currentClub, g.lastYear);
-    const disp = displayFinancialsForClub(currentClub, cur);
+    // NO usa displayFinancialsForClub() acá a propósito — esa función fuerza USD siempre (la usa
+    // "Comparar Gestiones", que por diseño ignora el toggle de moneda, ver su propio comentario en
+    // js/finanzas-calc.js). El toggle de moneda ahora es universal (header, al lado del selector de
+    // club) y también tiene que aplicar a estos 2 stats. "Gasto neto en pases" es la excepción: son
+    // valores de mercado de pases, convencionalmente en USD sea cual sea el ejercicio/club (no
+    // tienen un fx propio de ningún balance/presupuesto para convertir), se muestran siempre en USD.
+    const meta = yearMetaFor(currentClub, cur.year);
+    const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
+    const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
     const netSpend = pasesNetSpend(currentClub, gestionKey);
     const members = memberCountByClub[currentClub];
+    // Los 4 labels entran siempre en una sola línea (evita que un card quede más alto que los
+    // otros 3 y rompa la alineación de la fila) y en español completo — "Net spend histórico"
+    // (mezcla con inglés, reportado por Guido) pasó a "Gasto neto en pases". El detalle que antes
+    // iba en el propio texto (el ejercicio de "Último resultado", "gestión actual" de pases) se
+    // movió a `title` (tooltip nativo al pasar el mouse), no se perdió información, solo se sacó
+    // del texto visible.
     document.getElementById('inicioStats').innerHTML = `
-      <div class="stat"><div class="label">Último resultado (${cur.yearLabel})</div><div class="value ${disp.pat>=0?'pos':'neg'}">${fmtAmount(disp.pat, 'USD')}</div></div>
-      <div class="stat"><div class="label">Deuda neta actual</div><div class="value">${fmtAmountPlain(disp.netDebt, 'USD')}</div></div>
-      <div class="stat"><div class="label">Net spend histórico (gestión actual)</div><div class="value ${netSpend>=0?'pos':'neg'}">${fmtAmount(netSpend, 'USD')}</div></div>
+      <div class="stat"><div class="label" title="Ejercicio ${cur.yearLabel}">Último resultado</div><div class="value ${patDisp>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">Deuda neta actual</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label" title="Gestión actual">Gasto neto en pases</div><div class="value ${netSpend>=0?'pos':'neg'}">${fmtAmount(netSpend, 'USD')}</div></div>
       <div class="stat"><div class="label">Socios activos</div><div class="value">${members ? members.toLocaleString('es-AR') : 'Sin dato'}</div></div>
     `;
+  }
+
+
+  // hex (#rrggbb) -> rgba(...) con el alpha pedido. Sirve para atenuar el color de un bucket/serie
+  // en un año "Presupuesto" sin mantener una 2da paleta de colores en paralelo (mismo color, menos
+  // opacidad) — ver drawInicioStackedChart/drawInicioMetricChart más abajo.
+  function hexToRgba(hex, alpha){
+    const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+
+  // Clic en cualquier barra/segmento de los 3 gráficos de Inicio -> Finanzas, "Año a año", ese
+  // mismo año. Si el año no tiene ningún dato real (reportType placeholder/pending_official, el
+  // mismo criterio que ya lo deja en blanco en el gráfico) no navega: ese año ni siquiera es una
+  // opción real del <select id="anioSelect"> de Finanzas para algunos clubes (ver
+  // populateFinanzasSelectors), y para los que sí tienen la opción (ej. River 2021/2025,
+  // placeholder pero con entrada en riverFiscalYearMeta) mostrar ese "dato" placeholder no tiene
+  // más sentido acá que en el propio gráfico, que también lo deja en blanco.
+  function goToFinanzasYear(clubId, year){
+    if(clubId !== currentClub) return;
+    const rt = reportTypeForYear(clubId, year);
+    if(rt === 'placeholder' || rt === 'pending_official') return;
+    document.querySelector('#mainNav button[data-section="finanzas"]').click();
+    document.getElementById('anioSelect').value = String(year);
+    const anioBtn = document.querySelector('#viewToggle button[data-view="anio"]');
+    // Si ya estaba en "Año a año", el click de arriba no dispara su propio listener (no cambia de
+    // botón activo), así que hay que llamar a refreshFinanzas() a mano para que tome el año nuevo
+    // que se acaba de setear. Si HABÍA que cambiar de "Por gestión" a "Año a año", ese click ya
+    // dispara refreshFinanzas() solo (con el año ya seteado), llamarlo de nuevo sería redundante.
+    if(anioBtn.classList.contains('active')) refreshFinanzas(); else anioBtn.click();
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  // Callback compartido de `onClick` por los 3 gráficos de Inicio: con `interaction:{mode:'index',
+  // intersect:false}` en options, `elements` ya trae un elemento por dataset visible en ese índice
+  // de año (alcanza con mirar el primero para saber a qué año corresponde el click).
+  function inicioChartOnClick(clubId, years){
+    return (evt, elements) => {
+      if(!elements.length) return;
+      goToFinanzasYear(clubId, years[elements[0].index]);
+    };
+  }
+
+  // Título del tooltip compartido: "AAAA/AAAA" (el período, mismo formato que ya usa el resto del
+  // sitio para un ejercicio) o "AAAA/AAAA (Presupuesto)" si ese ejercicio no tiene balance real
+  // todavía (ver yearKindForClub en js/finanzas-calc.js) — así el usuario sabe, con solo pasar el
+  // mouse, si lo que está viendo es un balance auditado o una proyección.
+  function inicioTooltipTitle(years, kinds){
+    return (items) => {
+      const idx = items[0].dataIndex;
+      const periodo = (years[idx]-1)+'/'+years[idx];
+      return kinds[idx] === 'presupuesto' ? `${periodo} (Presupuesto)` : periodo;
+    };
+  }
+
+  // Cada tick del eje X pasa a ser el PERÍODO completo ("2026"/"2027", Chart.js dibuja un array de
+  // strings como 2 líneas) en vez de un solo año suelto — pedido explícito de Guido, mismo criterio
+  // que ya usa el resto del sitio (`(year-1)+'/'+year`, ver populateFinanzasSelectors). 2 líneas en
+  // vez de "2026/2027" en una sola para no ensanchar cada columna del gráfico.
+  function inicioPeriodLabels(years){
+    return years.map(y => [String(y-1), String(y)]);
+  }
+
+  // Plugin compartido por los 3 gráficos de Inicio: sobre cada columna SIN ningún dato real
+  // (yearKindForClub === 'blank', ver `kinds`), un texto vertical (rotado 90°) que dice "No
+  // informado por el club", centrado en esa columna — para que una columna vacía se lea como "no
+  // tenemos el dato" y no como "el club tuvo $0 ese año".
+  function blankColumnLabelsPlugin(kinds){
+    return {
+      id: 'inicioBlankColumn',
+      afterDraw(chart){
+        const {ctx, chartArea, scales} = chart;
+        if(!chartArea) return;
+        const xScale = scales.x;
+        ctx.save();
+        ctx.font = '600 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif';
+        ctx.fillStyle = '#9a9fa8';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        kinds.forEach((k, i) => {
+          if(k !== 'blank') return;
+          const x = xScale.getPixelForTick(i);
+          const yMid = (chartArea.top + chartArea.bottom) / 2;
+          ctx.save();
+          ctx.translate(x, yMid);
+          ctx.rotate(-Math.PI/2);
+          ctx.fillText('No informado por el club', 0, 0);
+          ctx.restore();
+        });
+        ctx.restore();
+      }
+    };
+  }
+
+  // Plugin de los 2 gráficos APILADOS (Ingresos/Gastos): (a) el % que representa cada segmento
+  // sobre el total de ESE año, centrado adentro del segmento (se omite si el segmento da <5% o es
+  // muy chico para que entre el texto, mismo criterio que pctSliceLabelsPlugin del doughnut); (b) el
+  // total del año (suma de todos los buckets), en negrita, arriba de la pila. Lee la geometría real
+  // de cada `BarElement` ya dibujado (`getProps`), no recalcula nada de layout a mano.
+  const stackedValueLabelsPlugin = {
+    id: 'inicioStackedValueLabels',
+    afterDatasetsDraw(chart){
+      const {ctx} = chart;
+      const datasets = chart.data.datasets;
+      if(!datasets.length) return;
+      const n = datasets[0].data.length;
+      ctx.save();
+      for(let i=0; i<n; i++){
+        const values = datasets.map(d => d.data[i]);
+        if(values.every(v => v === null || v === undefined)) continue; // año en blanco
+        const total = values.reduce((s,v) => s + (v||0), 0);
+        let topY = null, xCenter = null;
+        datasets.forEach((d, di) => {
+          const el = chart.getDatasetMeta(di).data[i];
+          const v = values[di];
+          if(!el || !v) return;
+          const {x, y, base} = el.getProps(['x','y','base'], true);
+          xCenter = x;
+          if(topY === null || y < topY) topY = y;
+          const segHeight = base - y;
+          const pct = total ? Math.round((v/total)*100) : 0;
+          if(pct >= 5 && segHeight >= 14){
+            ctx.font = '700 10px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            const label = pct + '%';
+            const midY = (y+base)/2;
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = 'rgba(0,0,0,.45)';
+            ctx.strokeText(label, x, midY);
+            ctx.fillStyle = '#fff';
+            ctx.fillText(label, x, midY);
+          }
+        });
+        if(xCenter !== null && topY !== null){
+          ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'bottom';
+          ctx.fillStyle = '#1a1a1a';
+          ctx.fillText(total.toFixed(1), xCenter, topY - 4);
+        }
+      }
+      ctx.restore();
+    }
+  };
+
+  // Mismo total-arriba-de-la-barra que stackedValueLabelsPlugin, para el gráfico de Deuda (una sola
+  // serie, sin %). `Math.min(y, base)` en vez de asumir signo: una deuda neta negativa (más caja que
+  // deuda) dibuja la barra HACIA ABAJO del cero, así que el "arriba de la barra" real puede ser
+  // cualquiera de los 2 extremos según el signo.
+  const singleBarTotalPlugin = {
+    id: 'inicioSingleBarTotal',
+    afterDatasetsDraw(chart){
+      const {ctx} = chart;
+      const data = chart.data.datasets[0].data;
+      const meta = chart.getDatasetMeta(0);
+      ctx.save();
+      ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      ctx.fillStyle = '#1a1a1a';
+      meta.data.forEach((el, i) => {
+        const v = data[i];
+        if(v === null || v === undefined || !el) return;
+        const {x, y, base} = el.getProps(['x','y','base'], true);
+        ctx.fillText(v.toFixed(1), x, Math.min(y, base) - 4);
+      });
+      ctx.restore();
+    }
+  };
+
+  // Leyenda HTML propia (reemplaza la leyenda nativa de Chart.js) para los 2 gráficos apilados: un
+  // <div> con CSS Grid (mismo `grid-template-columns` en los 2 cards, ver .inicio-legend) para que
+  // las leyendas de Ingresos y Gastos queden alineadas entre sí columna por columna, algo que la
+  // leyenda nativa (flex-wrap centrado, ancho de fila distinto según cuánto texto entre) no garantiza.
+  function renderInicioLegend(containerId, datasets){
+    document.getElementById(containerId).innerHTML = datasets.map(d =>
+      `<span class="inicio-legend-item"><span class="inicio-legend-swatch" style="background:${d.color}"></span>${d.label}</span>`
+    ).join('');
+  }
+
+  // Los 2 gráficos APILADOS de Inicio (Ingresos/Gastos): un dataset de Chart.js por categoría de
+  // "Formato Simplificado" (ver inicioStackedSeriesForClub en js/finanzas-calc.js, YA vienen
+  // ordenados de mayor a menor según el último ejercicio disponible), TODOS los ejercicios del club
+  // en orden cronológico sin saltear ninguno. Los años "Presupuesto" se dibujan con el MISMO color
+  // de cada bucket pero atenuado (alpha .45 vs. 1) en vez de un color aparte, así no se rompe el
+  // mapeo color-bucket de la leyenda; el título del tooltip aclara "(Presupuesto)" en esos años para
+  // que quede clarísimo igual (ver inicioTooltipTitle).
+  function drawInicioStackedChart(canvasId, prevInst, years, kinds, datasets){
+    if(typeof Chart === 'undefined') return prevInst;
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    if(prevInst) prevInst.destroy();
+    const chartDatasets = datasets.map(d => ({
+      label: d.label,
+      data: d.data,
+      backgroundColor: kinds.map(k => hexToRgba(d.color, k === 'presupuesto' ? 0.45 : 1)),
+    }));
+    return new Chart(ctx, {
+      type:'bar',
+      data:{ labels: inicioPeriodLabels(years), datasets: chartDatasets },
+      options:{
+        responsive:true, maintainAspectRatio:false, layout:{padding:{top:34}},
+        interaction:{ mode:'index', intersect:false },
+        scales:{
+          x:{ stacked:true, title:{display:false} },
+          y:{ stacked:true, beginAtZero:true, title:{display:false} },
+        },
+        plugins:{
+          legend:{display:false},
+          tooltip:{ callbacks:{ title: inicioTooltipTitle(years, kinds) } },
+        },
+        onClick: inicioChartOnClick(currentClub, years),
+      },
+      plugins:[blankColumnLabelsPlugin(kinds), stackedValueLabelsPlugin],
+    });
+  }
+
+  // El gráfico de Deuda neta de Inicio: única serie, no apilada (la deuda no se desglosa por
+  // categoría de "Formato Simplificado", ese concepto es solo de Ingresos/Gastos). Mismo criterio
+  // de color atenuado + tooltip "(Presupuesto)" que los 2 gráficos apilados de arriba.
+  function drawInicioMetricChart(canvasId, prevInst, years, kinds, values, label, color){
+    if(typeof Chart === 'undefined') return prevInst;
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    if(prevInst) prevInst.destroy();
+    return new Chart(ctx, {
+      type:'bar',
+      data:{ labels: inicioPeriodLabels(years), datasets:[{
+        label, data: values,
+        backgroundColor: kinds.map(k => hexToRgba(color, k === 'presupuesto' ? 0.45 : 1)),
+      }] },
+      // layout.padding.top: deja lugar para el total arriba de la barra y para el "$" de
+      // .chart-axis-dollar, que no se superpongan con el tick más alto del eje Y.
+      options:{
+        responsive:true, maintainAspectRatio:false, layout:{padding:{top:34}},
+        interaction:{ mode:'index', intersect:false },
+        plugins:{
+          legend:{display:false},
+          tooltip:{ callbacks:{ title: inicioTooltipTitle(years, kinds) } },
+        },
+        scales:{ y:{beginAtZero:true, title:{display:false}}, x:{title:{display:false}} },
+        onClick: inicioChartOnClick(currentClub, years),
+      },
+      plugins:[blankColumnLabelsPlugin(kinds), singleBarTotalPlugin],
+    });
+  }
+
+  // Los 3 cards de evolución de Inicio (Ingresos/Gastos/Deuda neta), TODOS los ejercicios del club
+  // seleccionado en orden cronológico, sin saltear ninguno (en blanco el que no tenga dato real). Se
+  // llama junto con renderInicioStats(): al cargar la página (INIT) y cada vez que se cambia de club
+  // (refreshAllForClub()).
+  function renderInicioCharts(){
+    const ingresosSeries = inicioStackedSeriesForClub(currentClub, INICIO_INGRESOS_BUCKETS, 'ingresos');
+    inicioIngresosChartInst = drawInicioStackedChart('inicioIngresosChart', inicioIngresosChartInst, ingresosSeries.years, ingresosSeries.kinds, ingresosSeries.datasets);
+    renderInicioLegend('inicioIngresosLegend', ingresosSeries.datasets);
+
+    const gastosSeries = inicioStackedSeriesForClub(currentClub, INICIO_GASTOS_BUCKETS, 'gastos');
+    inicioGastosChartInst = drawInicioStackedChart('inicioGastosChart', inicioGastosChartInst, gastosSeries.years, gastosSeries.kinds, gastosSeries.datasets);
+    renderInicioLegend('inicioGastosLegend', gastosSeries.datasets);
+
+    const deudaSeries = inicioDeudaSeriesForClub(currentClub);
+    inicioDeudaChartInst = drawInicioMetricChart('inicioDeudaChart', inicioDeudaChartInst, deudaSeries.years, deudaSeries.kinds, deudaSeries.values, 'Deuda neta', '#6b6b6b');
   }
 

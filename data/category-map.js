@@ -49,6 +49,14 @@ const EXPENSE_CATEGORIES = [
   'depreciation',
   'other_amortisation',
   'exceptional_items',
+  // Versión 53: las 3 categorías de abajo son el equivalente-gasto de la fila "Otros gastos"
+  // desagregada, siguiendo el mismo criterio que ya usa Boca en su Ejercicio 2027 (ver
+  // otrosGastos2027 en js/finanzas-calc.js y GENERIC_SIMPLIFIED_EXPENSE_BUCKETS): reducen cuánto
+  // cae en el catch-all genérico `other_expenses` para un club/año que sí tiene el desglose
+  // disponible en la fuente.
+  'match_organisation_expense',     // costo de organizar partidos/participar en competencias (seguridad, viajes, concentración, AFA, tickets, etc.)
+  'youth_other_sports_expense',     // fútbol juvenil, femenino, otros deportes, básquet, actividades sociales (todo lo que no es el plantel profesional)
+  'admin_general_expense',          // administración, gastos generales, comerciales, impuestos, mantenimiento de sede/estadio (costos NO deportivos)
   'other_expenses',
   'lump_football_operations_expense', // mismo concepto que arriba, para gastos
 ];
@@ -60,6 +68,9 @@ const EXPENSE_CATEGORY_LABELS = {
   depreciation: 'Depreciación',
   other_amortisation: 'Otras amortizaciones',
   exceptional_items: 'Ítems excepcionales',
+  match_organisation_expense: 'Organización de partidos',
+  youth_other_sports_expense: 'Otras secciones deportivas (juvenil, otros deportes, básquet)',
+  admin_general_expense: 'Administración y gastos generales',
   other_expenses: 'Otros gastos',
   lump_football_operations_expense: 'Fútbol profesional (sin desglosar por la fuente)',
 };

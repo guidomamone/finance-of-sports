@@ -1,0 +1,6 @@
+.DS_Store
+
+# Source PDFs stay local only (large scans, not needed to serve the site —
+# the site reads from data/*.js, not from these). Their .md transcriptions
+# ARE tracked, since those are small and reusable across sessions.
+*.pdf

@@ -52,9 +52,75 @@
   // placeholder de Boca) para que el toggle igual funcione, aunque sea con un número aproximado.
   function yearMetaFor(clubId, year){
     if(clubId === 'boca') return yearMeta(year);
-    const table = clubId === 'river' ? riverFiscalYearMeta : racingFiscalYearMeta;
+    const table = clubId === 'river' ? riverFiscalYearMeta : clubId === 'racing' ? racingFiscalYearMeta : velezFiscalYearMeta;
     const m = (table && table[year]) || {};
     return { currency: m.currency || 'USD', fx: (m.fx != null ? m.fx : FX_RATE) };
+  }
+
+
+  // OVERLAY DE PRESUPUESTO (Versión 57, pedido explícito de Guido: "muchos años de racing tienen
+  // ambos presupuesto y balance... para cuando haya un mismo año que tenga both presupuesto y
+  // balance, en estado de resultado agregá una columna que sea Balance"). Ver
+  // `.claude/skills/club-or-year-onboarding/SKILL.md` sección 11 para el criterio completo.
+  //
+  // El balance real de un ejercicio dual sigue siendo el dato PRIMARIO de siempre
+  // (`racing{Revenue,Expense}LinesByYear[year]`/`racingFiscalYearMeta[year]`, con
+  // `reportType:'official_budget_and_balance'`): KPIs, Formato Simplificado y `verifyTieOuts()`
+  // salen de ahí sin ningún cambio. `racingPresupuestoOverlayByYear[year]` (mismo formato que
+  // revenueLines/expenseLines: `{rawLabel, normalizedCategory, amountNative, items}`, más su propio
+  // `currency`/`fx`, que puede ser distinto al del balance del mismo ejercicio) es la fuente
+  // SECUNDARIA, usada ÚNICAMENTE para pintar la columna "Presupuesto" de "Estado de resultados", no
+  // participa de ningún cálculo (KPIs/PAT/Formato Simplificado/verifyTieOuts). Boca no tiene un
+  // archivo de overlay propio hoy (no le hizo falta a este pedido, que es 100% sobre Racing); el
+  // `typeof` de abajo evita un ReferenceError si algún día se llama para Boca sin haber declarado
+  // `bocaPresupuestoOverlayByYear` en ningún lado, mismo patrón defensivo que ya usa el resto del
+  // sitio para lazy-loading (ver Versión 51). River tiene su propio `riverPresupuestoOverlayByYear`
+  // vacío, listo para el día que aparezca un ejercicio dual de ese club.
+  function presupuestoOverlayFor(clubId, year){
+    // Vélez (y cualquier club nuevo sin overlay propio todavía) cae directo a `null`: no tiene
+    // sentido agregar un `velezPresupuestoOverlayByYear` vacío recién al onboardear el primer
+    // ejercicio, ver mismo criterio que ya seguía Boca antes de tener el suyo.
+    const table = clubId === 'racing' ? racingPresupuestoOverlayByYear
+      : clubId === 'river' ? riverPresupuestoOverlayByYear
+      : clubId === 'boca' && typeof bocaPresupuestoOverlayByYear !== 'undefined' ? bocaPresupuestoOverlayByYear
+      : null;
+    return (table && table[year]) || null;
+  }
+
+  // Mismo shape {ingresos, gastos} que arma nativeReportFor() para el motor genérico (rawLabel/
+  // amountNative/items tal cual la fuente), para que buildNativeSectionHtml() pinte el overlay con
+  // el mismo código que ya pinta la columna primaria, sin lógica nueva de render. `null` si el
+  // ejercicio no tiene overlay (el caso normal).
+  // REGLA (Versión 59, bug real reportado por Guido con captura de pantalla: en Formato
+  // Simplificado, la columna "Presupuesto" mostraba "—" en absolutamente todas las filas salvo el
+  // total): cuando `simplifyFormat` está activo, el overlay se agrupa con el MISMO `bucketize()` y
+  // los MISMOS `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` que ya agrupan la columna
+  // primaria (Balance), así los `label` de las dos columnas coinciden EXACTO ("Cuotas Sociales",
+  // "Compra de jugadores", etc.) y `buildNativeSectionHtml()`/`findPrevVal()` los empareja fila
+  // por fila. Antes, el overlay siempre devolvía sus `rawLabel` crudos (los del documento nativo,
+  // ej. "Ingresos sociales"), que nunca coinciden con los buckets de Formato Simplificado, ni con
+  // el propio `rawLabel` de la columna primaria en Formato del club si esta usa otro nombre para
+  // el mismo concepto (ver limitación documentada en club-or-year-onboarding/SKILL.md sección 11).
+  function presupuestoOverlayReportFor(clubId, year){
+    const overlay = presupuestoOverlayFor(clubId, year);
+    if(!overlay) return null;
+    if(simplifyFormat){
+      return {
+        ingresos: bucketize(overlay.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otras secciones deportivas y otros ingresos'),
+        gastos: bucketize(overlay.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos'),
+      };
+    }
+    return {
+      ingresos: overlay.revenueLines.map(l => ({label:l.rawLabel, value:l.amountNative, items:l.items || null})),
+      gastos: overlay.expenseLines.map(l => ({label:l.rawLabel, value:l.amountNative, items:l.items || null})),
+    };
+  }
+
+  // {currency, fx} del overlay, mismo shape que yearMetaFor(), para convertir sus montos a la
+  // moneda que se está mostrando. `null` si no hay overlay.
+  function presupuestoOverlayMetaFor(clubId, year){
+    const overlay = presupuestoOverlayFor(clubId, year);
+    return overlay ? { currency: overlay.currency, fx: overlay.fx } : null;
   }
 
 
@@ -81,8 +147,26 @@
   // AAAA/AAAA", alargando el texto. Ahora, para un presupuesto, se cambia directamente el PREFIJO
   // ("Presupuesto" en vez de "Ejercicio") y no se agrega nada más: "Presupuesto 2026/2027" en vez
   // de "Ejercicio 2026/2027 (presupuestado)", más corto y sin perder el significado.
-  function ejercicioLabel(year, isPresupuesto){
-    return (isPresupuesto ? 'Presupuesto ' : 'Ejercicio ')+(year-1)+'/'+year;
+  //
+  // REGLA (Versión 57): firma cambiada de `(year, isPresupuesto)` a `(year, reportType)`, recibe
+  // el `reportType` directo en vez de un booleano, para poder distinguir un 3er caso:
+  // `official_budget_and_balance` (ejercicio con Presupuesto Y Balance reales cargados a la vez,
+  // ver `presupuestoOverlayFor()`) usa el prefijo "Balance" — el balance real sigue siendo el dato
+  // PRIMARIO de ese ejercicio (KPIs/Formato Simplificado/verifyTieOuts salen de ahí), así que el
+  // header de la columna principal en "Estado de resultados" tiene que decirlo explícito ("Balance
+  // 2017/2018"), no quedar en el "Ejercicio 2017/2018" genérico que sugeriría que no hay una 2da
+  // fuente (Presupuesto) conviviendo al lado en la columna de comparación.
+  // REGLA (pedido explícito de Guido con Boca 2024/2025, generalizada a CUALQUIER club/ejercicio):
+  // `official_balance_sheet` (un balance real, sin presupuesto overlay al lado) también usa el
+  // prefijo "Balance", no el genérico "Ejercicio" — "Ejercicio 2024/2025" no distinguía un balance
+  // auditado real de un placeholder/pending_official, y el balance es justamente el documento más
+  // sólido que puede tener un ejercicio. "Ejercicio" queda solo para lo que de verdad no tiene un
+  // documento oficial cargado (placeholder, pending_official, unofficial_mirror).
+  function ejercicioLabel(year, reportType){
+    const prefix = reportType === 'official_budget' ? 'Presupuesto'
+      : (reportType === 'official_budget_and_balance' || reportType === 'official_balance_sheet') ? 'Balance'
+      : 'Ejercicio';
+    return prefix+' '+(year-1)+'/'+year;
   }
 
   function computeYear(year){
@@ -97,7 +181,7 @@
     const pat = pbt + r.tax;
     const wagesToTurnover = revenue !== 0 ? (-r.wages / revenue) : 0;
     const netDebt = r.grossDebt - r.cash;
-    const yearLabel = year === 2027 ? ejercicioLabel(2027, true) : ejercicioLabel(year);
+    const yearLabel = ejercicioLabel(year, reportTypeForYear('boca', year));
     return Object.assign({}, r, {year, yearLabel, revenue, expenses, ebitda, nonCash, operatingProfit, ebit, pbt, pat, wagesToTurnover, netDebt});
   }
 
@@ -123,10 +207,6 @@
     const pct = (val / total) * 100;
     const rounded = Math.round(pct);
     return rounded < 0 ? `<span class="neg-num">(${Math.abs(rounded)}%)</span>` : rounded+'%';
-  }
-
-  function plUnitLabel(currency){
-    return currency === 'ARS' ? 'Cifras en miles de millones de ARS (estimado, cotización de referencia placeholder)' : 'Cifras en millones de USD (estimado)';
   }
 
   // fmtAmount/fmtAmountPlain esperan un valor YA convertido a la moneda que se va a mostrar. No convierten:
@@ -259,12 +339,28 @@
         items: revenueDetailOrLeaf(year, 'exhibicionEspectaculos', 'Exhibición de Espectáculos Deportivos', r.exhibicionEspectaculos||0)},
     ];
     // "Otros gastos" venía siendo un solo número enorme (todo lo que no es plantel, amortización ni
-    // depreciación). Guido pidió desagregarlo. Para el Ejercicio 2027 el presupuesto SÍ separa
-    // estas categorías reales (ver expenseBreakdown[2027] y presupuesto-26-27.md pág. 9): se
-    // reagrupan en 3 buckets más chicos y legibles en vez de uno solo. El resto de los ejercicios no
-    // tiene ese desglose disponible (yearsRaw solo trae `otherExpenses` como campo único ahí), así
-    // que sigue con la categoría sola de antes. `items` reusa expenseSubBreakdown[2027] por
-    // referencia (mismos datos que ya alimentan "Formato del club" para este ejercicio).
+    // depreciación). Guido pidió desagregarlo, primero solo para el Ejercicio 2027 (único con el
+    // desglose real disponible en ese momento, ver expenseBreakdown[2027]/presupuesto-26-27.md pág.
+    // 9). Estas 3 filas (Organización de partidos / Otras secciones deportivas / Administración y
+    // gastos generales) son ahora, desde la Versión 53, las mismas 3 que usa TAMBIÉN
+    // GENERIC_SIMPLIFIED_EXPENSE_BUCKETS (River/Racing) más abajo en este archivo, para que las
+    // filas de "Formato Simplificado" sean IDÉNTICAS entre los 3 clubes (pedido explícito de Guido:
+    // "las rows tienen que ser siempre iguales entre clubes, aunque alguna tenga un cero").
+    //
+    // REGLA (Versión 53): estas 4 filas (3 nombradas + "Otros gastos" catch-all) se muestran
+    // SIEMPRE, para CUALQUIER año de Boca, no solo 2027. Para el año/ejercicio que SÍ tiene el
+    // desglose real (hoy: solo 2027), las 3 filas nombradas llevan el monto real y "Otros gastos"
+    // da $0 (todo quedó repartido en las 3 de arriba, verificado: -33730.855 + -(7918.490+6769.002+
+    // 6217.767) + -(36332.931+14386.410+3250.608+2393.117+847.000) = r.otherExpenses(2027) exacto,
+    // -111846.180). Para cualquier otro año (Boca 2025 incluido: el balance auditado SÍ tiene detalle
+    // en `nativeFinancialsBoca[2025]`, pero varias de sus líneas mezclan sueldos y gastos operativos
+    // sin desglose propio dentro del mismo renglón — ej. "Estadio" trae "Remuneraciones y cargas
+    // sociales" Y gastos de mantenimiento en la MISMA línea — separar esa mezcla a mano sin un
+    // chequeo automatizado de tie-out es un riesgo real de ensuciar un balance auditado real,
+    // así que no se hizo todavía, queda como to-do explícito), las 3 filas nombradas dan $0 y el
+    // monto real completo (`otherExpenses`+`exceptionalItems`) se muestra en "Otros gastos", igual
+    // que se hacía antes de la Versión 53, solo que ahora conviviendo con las 3 filas en $0 en vez
+    // de estar solas.
     const otrosGastos2027 = [
       {label:'Organización de partidos', value: -33730.855, items:[
         ['Organización de Espectáculos', -33730.855, eb2027['Organización de Espectáculos']||null],
@@ -281,8 +377,12 @@
         ['Socios', -2393.117, eb2027['Socios']||null],
         ['Eventuales', -847.000, null],
       ]},
+      {label:'Otros gastos', value: 0, items: null},
     ];
     const otrosGastosDefault = [
+      {label:'Organización de partidos', value: 0, items: null},
+      {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', value: 0, items: null},
+      {label:'Administración y gastos generales', value: 0, items: null},
       {label:'Otros gastos', value:(r.otherExpenses||0)+(r.exceptionalItems||0), items:[
         ['Otros gastos', r.otherExpenses||0],
         ['Ítems excepcionales', r.exceptionalItems||0],
@@ -356,7 +456,7 @@
   // siempre (recaudación de entradas/tickets), solo se renombra para que las dos vistas usen el
   // mismo vocabulario. Afecta a River Y Racing por igual, comparten esta misma lista (es la gracia
   // de "Formato simplificado": buckets consistentes entre los clubes del motor genérico).
-  // REGLA PERMANENTE (Versión 47, ver .claude/skills/club-data-mapping/SKILL.md sección 10): estos
+  // REGLA PERMANENTE (Versión 47, ver .claude/skills/club-data-mapping/SKILL.md sección 13): estos
   // labels Y ESTE ORDEN tienen que coincidir con los que ya usa Boca en simplifiedReportForBoca()
   // para el mismo concepto (Guido: "la tabla tiene que quedar exactamente igual ordenada
   // tambien. el orden importa"), así "Formato simplificado" se lee igual entre clubes. Orden de
@@ -388,41 +488,69 @@
     {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations'], hideIfZero:true},
   ];
 
+  // REGLA (Versión 53, pedido explícito de Guido: "las rows tienen que ser siempre iguales entre
+  // clubes, aunque alguna tenga un cero" + "no puede ser que otros gastos tenga 64% del total"):
+  // se agregaron las 3 filas nuevas de gastos que ya usa Boca en su Ejercicio 2027
+  // (Organización de partidos / Otras secciones deportivas / Administración y gastos generales, ver
+  // otrosGastos2027 más arriba en este archivo), en el MISMO orden, para que el catch-all "Otros
+  // gastos" de Racing/River deje de absorber plata que en realidad tiene una categoría real
+  // identificable (antes de esto, Racing tenía SOLO 4 filas de gastos, nunca las mismas que Boca
+  // mostraba para 2027, que tenía 7). Mapeo real hecho en `data/racing-data.js` (ver comentario ahí
+  // antes de `racingExpenseLinesByYear`) y documentado en
+  // `.claude/skills/club-data-mapping/SKILL.md` sección 13.
   const GENERIC_SIMPLIFIED_EXPENSE_BUCKETS = [
     {label:'Compra de jugadores', cats:['player_amortisation','player_impairment']},
     {label:'Salarios y primas (plantel y cuerpo técnico)', cats:['wages_squad']},
     {label:'Inversiones (amortizaciones y depreciación)', cats:['depreciation','other_amortisation']},
+    {label:'Organización de partidos', cats:['match_organisation_expense']},
+    {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', cats:['youth_other_sports_expense']},
+    {label:'Administración y gastos generales', cats:['admin_general_expense']},
     {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations_expense'], hideIfZero:true},
   ];
 
+  // ACORDEÓN DE CONTROL (Versión 42, extiende a River/Racing la regla de la Versión 40, ver
+  // club-data-mapping SKILL.md sección 12): cada bucket lleva `items` con las líneas reales
+  // (rawLabel + amountNative, tal cual las reportó la fuente) que se sumaron para llegar a ese
+  // número, anidando el desglose propio de cada línea (`line.items`) cuando existe. No se inventa
+  // ningún dato nuevo: son las mismas revenueLines/expenseLines que ya alimenta "Formato del
+  // club", solo agrupadas distinto.
+  //
+  // Extraída a función compartida en la Versión 59 (antes vivía adentro de
+  // simplifiedReportForGeneric, redeclarada cada llamada): la reusa también
+  // presupuestoOverlayReportFor() para que el overlay de Presupuesto de un ejercicio dual se
+  // agrupe en los MISMOS buckets que el balance, en vez de quedar con sus rawLabel crudos (que no
+  // encontraban match contra las filas de Formato Simplificado, mostrando "—" en casi todas las
+  // filas salvo el total, bug real reportado por Guido).
+  function bucketize(lines, buckets, catchAllLabel){
+    const bucketed = new Set(buckets.flatMap(b => b.cats));
+    const rows = buckets
+      .map(b => {
+        const matches = lines.filter(l => b.cats.includes(l.normalizedCategory));
+        const value = matches.reduce((s,l) => s + l.amountNative, 0);
+        const items = matches.length ? matches.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
+        return { label:b.label, value, items, hideIfZero:b.hideIfZero };
+      })
+      .filter(row => !(row.hideIfZero && row.value === 0));
+    const restLines = lines.filter(l => !bucketed.has(l.normalizedCategory));
+    const rest = restLines.reduce((s,l) => s + l.amountNative, 0);
+    const restItems = restLines.length ? restLines.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
+    rows.push({ label:catchAllLabel, value:rest, items:restItems });
+    return rows;
+  }
+
   function simplifiedReportForGeneric(clubId, year){
     const cur = computeYearGeneric(clubId, year);
-    // ACORDEÓN DE CONTROL (Versión 42, extiende a River/Racing la regla de la Versión 40, ver
-    // club-data-mapping SKILL.md sección 9): cada bucket lleva `items` con las líneas reales
-    // (rawLabel + amountNative, tal cual las reportó la fuente) que se sumaron para llegar a ese
-    // número, anidando el desglose propio de cada línea (`line.items`) cuando existe. No se inventa
-    // ningún dato nuevo: son las mismas revenueLines/expenseLines que ya alimenta "Formato del
-    // club", solo agrupadas distinto.
-    const bucketize = (lines, buckets, catchAllLabel) => {
-      const bucketed = new Set(buckets.flatMap(b => b.cats));
-      const rows = buckets
-        .map(b => {
-          const matches = lines.filter(l => b.cats.includes(l.normalizedCategory));
-          const value = matches.reduce((s,l) => s + l.amountNative, 0);
-          const items = matches.length ? matches.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
-          return { label:b.label, value, items, hideIfZero:b.hideIfZero };
-        })
-        .filter(row => !(row.hideIfZero && row.value === 0));
-      const restLines = lines.filter(l => !bucketed.has(l.normalizedCategory));
-      const rest = restLines.reduce((s,l) => s + l.amountNative, 0);
-      const restItems = restLines.length ? restLines.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
-      rows.push({ label:catchAllLabel, value:rest, items:restItems });
-      return rows;
-    };
+    // REGLA (Versión 61, pedido explícito de Guido: "me molesta que para Racing haya Intereses
+    // netos en el card y no para el resto... toca ponerlo para todos, aunque sea 0. Es decir,
+    // sumarlo al motor"): "Intereses netos" ya NO es condicional a `cur.netInterest` ser distinto
+    // de cero, se suma siempre (con 0 si el club/ejercicio no tiene), para que la fila exista de
+    // forma consistente entre los 3 clubes. El resto de extraRows (venta de jugadores/activos,
+    // impuestos) sigue condicional: son casos genuinamente raros para la mayoría de los
+    // club/ejercicio, mostrarlos siempre sería el mismo ruido que ya se evitó en la Versión 60.
     const extraRows = cur.meta.extraRows ? cur.meta.extraRows.slice() : [
       ...(cur.profitOnPlayerSales ? [{label:'Ganancia por venta de jugadores', value:cur.profitOnPlayerSales}] : []),
       ...(cur.assetSales ? [{label:'Venta de activos', value:cur.assetSales}] : []),
-      ...(cur.netInterest ? [{label:'Intereses netos', value:cur.netInterest}] : []),
+      {label:'Intereses netos', value:cur.netInterest||0},
       ...(cur.tax ? [{label:'Impuestos', value:cur.tax}] : []),
     ];
     return {
@@ -451,7 +579,11 @@
           resultLabel:'Resultado económico',
           ingresos: revKeys.map(([k,label]) => ({label, value:r[k]||0, items:(rb&&rb[k])||null})),
           gastos: expenseBreakdown[2027].expenses.map(it => ({label:it[0], value:it[1], items:(expenseSubBreakdown[2027]&&expenseSubBreakdown[2027][it[0]])||null})),
-          extraRows: [],
+          // "Intereses netos" ya no queda afuera (Versión 61, ver comentario en
+          // simplifiedReportForGeneric): antes este caso especial de Boca 2027 no sumaba ninguna
+          // extraRow, así que el Ejercicio 2027 (el default del sitio) nunca mostraba la fila,
+          // justo el caso que hacía notar la inconsistencia entre clubes.
+          extraRows: [{label:'Intereses netos', value:r.netInterest||0}],
         };
       }
       // Fallback para los ejercicios de Boca sin documento oficial propio (placeholder): se muestran
@@ -488,10 +620,12 @@
     // una sola), se puede definir meta.extraRows:[{label,value}] directo en *FiscalYearMeta y eso
     // reemplaza el armado automático (netInterest sigue alimentando el PAT real para KPIs/gráficos,
     // solo cambia cómo se muestra acá).
+    // "Intereses netos" ya no es condicional, ver mismo comentario en simplifiedReportForGeneric
+    // (Versión 61, pedido explícito de Guido).
     const extraRows = cur.meta.extraRows ? cur.meta.extraRows.slice() : [
       ...(cur.profitOnPlayerSales ? [{label:'Ganancia por venta de jugadores', value:cur.profitOnPlayerSales}] : []),
       ...(cur.assetSales ? [{label:'Venta de activos', value:cur.assetSales}] : []),
-      ...(cur.netInterest ? [{label:'Intereses netos', value:cur.netInterest}] : []),
+      {label:'Intereses netos', value:cur.netInterest||0},
       ...(cur.tax ? [{label:'Impuestos', value:cur.tax}] : []),
     ];
     return {
@@ -532,12 +666,25 @@
 
 
   function computeYearGeneric(clubId, year){
-    const revenueLines = (clubId === 'river' ? riverRevenueLinesByYear[year] : racingRevenueLinesByYear[year]) || [];
-    const expenseLines = (clubId === 'river' ? riverExpenseLinesByYear[year] : racingExpenseLinesByYear[year]) || [];
-    const meta = (clubId === 'river' ? riverFiscalYearMeta[year] : racingFiscalYearMeta[year]) || {};
+    // Versión 82: se sumó la 3ra rama (Vélez) a los 3 ternarios de esta función, primer club nuevo
+    // desde que el motor genérico existe (antes solo river/racing) — ver nota en yearMetaFor.
+    const revenueLines = (clubId === 'river' ? riverRevenueLinesByYear[year] : clubId === 'racing' ? racingRevenueLinesByYear[year] : velezRevenueLinesByYear[year]) || [];
+    const expenseLines = (clubId === 'river' ? riverExpenseLinesByYear[year] : clubId === 'racing' ? racingExpenseLinesByYear[year] : velezExpenseLinesByYear[year]) || [];
+    const meta = (clubId === 'river' ? riverFiscalYearMeta[year] : clubId === 'racing' ? racingFiscalYearMeta[year] : velezFiscalYearMeta[year]) || {};
     const revenue = revenueLines.reduce((s,l) => s + l.amountNative, 0);
     const wages = sumCat(expenseLines, ['wages_squad']);
-    const otherExpenses = sumCat(expenseLines, ['other_expenses','lump_football_operations_expense']);
+    // Versión 53: match_organisation_expense/youth_other_sports_expense/admin_general_expense son
+    // las 3 categorías nuevas que homologan "Otros gastos" de Racing/River con Boca (ver
+    // GENERIC_SIMPLIFIED_EXPENSE_BUCKETS y data/racing-data.js). Son gasto operativo en EFECTIVO,
+    // igual que other_expenses/lump_football_operations_expense (no son no-efectivo como
+    // depreciation/other_amortisation/player_amortisation/player_impairment, que se suman aparte en
+    // `nonCash`), así que tienen que sumar acá también. BUG REAL encontrado al probar en el
+    // navegador tras crear estas 3 categorías: quedaron afuera de este sumCat, así que la plata que
+    // se re-etiquetó fuera de `other_expenses` desapareció de `expenses`/`ebitda`/`pat` (no solo de
+    // verifyTieOuts, de TODO cálculo del sitio: KPI "Gastos", deuda, comparar gestiones), Racing
+    // pasó a mostrar SUPERÁVIT en años que en realidad tuvieron déficit real. Detectado por
+    // verifyTieOuts() dejando de cerrar en Revenue/Expenses Y en PAT para 2024/2025.
+    const otherExpenses = sumCat(expenseLines, ['other_expenses','lump_football_operations_expense','match_organisation_expense','youth_other_sports_expense','admin_general_expense']);
     const expenses = wages + otherExpenses;
     const ebitda = revenue + expenses;
     const exceptionalItems = sumCat(expenseLines, ['exceptional_items']);
@@ -557,19 +704,75 @@
     const wagesToTurnover = revenue !== 0 ? (-wages / revenue) : 0;
     const grossDebt = meta.grossDebt || 0, cash = meta.cash || 0;
     const netDebt = grossDebt - cash;
-    const yearLabel = ejercicioLabel(year, meta.reportType === 'official_budget');
+    const yearLabel = ejercicioLabel(year, meta.reportType);
     return { clubId, year, yearLabel, meta, revenueLines, expenseLines, revenue, wages, otherExpenses, expenses, ebitda, exceptionalItems, playerAmortisation, playerImpairment, depreciation, otherAmortisation, nonCash, operatingProfit, profitOnPlayerSales, assetSales, ebit, netInterest, pbt, tax, pat, wagesToTurnover, grossDebt, cash, netDebt };
   }
 
 
-  // Nota de tipo de cambio para River/Racing (Versión 32, antes no existía, siempre era USD sin
-  // conversión). Solo aparece cuando el ejercicio está en ARS nativo con un fx real (declarado por
-  // el club), los ejercicios que siguen en USD (2009-2011 de Racing, placeholders de River) no
-  // muestran nota, porque no hay conversión real que explicar.
-  function genericFxNote(clubId, year){
-    const meta = yearMetaFor(clubId, year);
-    if(meta.currency !== 'ARS') return '';
-    return `Convertido a USD con $${meta.fx.toLocaleString('es-AR')}, el tipo de cambio que declara el propio documento de este ejercicio (ver pestaña Fuentes).`;
+  // REGLA (Versión 56, pedido explícito de Guido: "en el menu dropdown de Anio, poneme siempre
+  // entre parentesis si: Presupuesto, Presupuesto y Balance, Placeholder. No salgas de esas
+  // opciones"): el `<select>` "Año" usa EXACTAMENTE uno de estos 3 sufijos, nunca otro texto
+  // (quedan afuera "(presupuestado)", "(esperando datos)", "(estimado)", que son las 3 variantes
+  // sueltas que había antes de esta versión, cada una redactada distinto según quién la escribió).
+  // Un ejercicio de balance real (`official_balance_sheet` u `official_budget_and_balance`... si
+  // algún día se carga un ejercicio con las dos fuentes, ver nota abajo) NO lleva sufijo: la
+  // ausencia de paréntesis ES la 4ta opción implícita ("esto es un balance real, lo normal"), no
+  // hace falta anunciarla. `unofficial_mirror` (River 2024, balance real pero conseguido en una
+  // réplica no oficial) tampoco lleva sufijo, por el mismo criterio: sigue siendo un balance real,
+  // la advertencia de fuente no oficial ya vive en su propio banner de calidad de dato, no en el
+  // dropdown. `pending_official` (ejercicio real que el club todavía no publicó, ver
+  // `reportTypeForYear` abajo) se trata como Placeholder acá a propósito: no hay una 4ta palabra
+  // permitida para ese caso, y de cara al visitante ambos se ven igual (todo en $0, sin fuente
+  // real todavía), el detalle de la diferencia sigue explicado en el banner de calidad de dato.
+  //
+  // "(Presupuesto y Balance)" es para un ejercicio que tiene LAS DOS fuentes reales cargadas a la
+  // vez (ej. un presupuesto que ya cerró y además consiguió su balance auditado, sin que se haya
+  // reemplazado un dato por el otro). Al escribir esta regla ningún ejercicio de ningún club usa
+  // este caso todavía (Guido creía que Racing tenía uno, se revisó `racingFiscalYearMeta` entero y
+  // los 7 ejercicios cargados son cada uno SOLO balance o SOLO presupuesto, nunca los dos), así que
+  // hoy esta rama nunca se dispara en la práctica, queda lista para cuando corresponda: usar el
+  // `reportType` `'official_budget_and_balance'` en `*FiscalYearMeta`/`reportTypeForYear('boca', ...)`
+  // el día que se cargue un ejercicio así.
+  // REGLA (Versión 61, pedido explícito de Guido: "agregar Balance como opción, la cual aplica
+  // para todos los años que tenes sin nada en paréntesis"): la 4ta opción, antes implícita ("sin
+  // paréntesis" = balance real, ver comentario arriba), ahora se anuncia explícito como
+  // "(Balance)", mismo criterio de siempre para `official_balance_sheet`/`unofficial_mirror`
+  // (y cualquier otro reportType no listado arriba). Sigue siendo SOLO 4 palabras posibles, nunca
+  // una 5ta inventada para un caso puntual.
+  function anioDropdownSuffix(reportType){
+    if(reportType === 'official_budget') return ' (Presupuesto)';
+    if(reportType === 'official_budget_and_balance') return ' (Presupuesto y Balance)';
+    if(reportType === 'placeholder' || reportType === 'pending_official') return ' (Placeholder)';
+    return ' (Balance)';
+  }
+
+
+  // Parte un texto de header de tabla en líneas (<br>) en puntos elegidos a mano, para que columnas
+  // angostas (Estado de resultados, Versión 61) lean legible en vez de partirse letra por letra con
+  // `overflow-wrap:break-word` (bug real reportado por Guido con captura: "BALANC/E", "PRESUPU/ESTO"
+  // partiendo el diptongo "ue"). REGLA (Versión 65, generalizada explícitamente por Guido a "todos
+  // los años y clubes" — primero para "Presupuesto AAAA/AAAA", después para "Presupuesto" SOLA en
+  // la columna de overlay, mismo criterio en los dos casos, no una excepción para cada uno):
+  // NINGUNA palabra se parte nunca, ni siquiera "Presupuesto" (la única más larga que
+  // "Balance"/"Ejercicio", que antes se partía en "Presu"/"puesto" porque no entraba en el ancho fijo
+  // de 100px de la columna). Cada palabra va envuelta en un `<span style="white-space:nowrap">`, así
+  // el propio `overflow-wrap:break-word` del `<th>` (que sigue haciendo falta como red de seguridad
+  // para un texto no previsto acá) no la parte sola en un punto feo tipo "PRESUPUES"/"TO" o
+  // "PRESUPU"/"ESTO". El `nowrap` fuerza esa línea a un solo renglón aunque desborde unos px hacia
+  // la celda vecina (espacio en blanco de su padding, verificado en pantalla que no pisa el texto
+  // "% del total" ni en "Presupuesto 2026/2027" ni en "Presupuesto" sola). Con espacio en el texto
+  // (ej. "Balance 2019/2020"), el corte de línea sigue siendo en el primer espacio: prefijo entero
+  // en la 1ra línea, el resto en la 2da. Sin espacio (ej. "Presupuesto" sola, columna de overlay),
+  // es una sola línea, ya no 2 — antes de esta versión esa columna medía distinto (2 líneas) que la
+  // columna principal con año (2 líneas también, pero por partir diferente), ahora las dos miden lo
+  // que corresponda a su propio contenido, sin forzar una cantidad de líneas pareja entre columnas.
+  // No es una función de wrap genérica (no busca el "mejor" punto de corte): son los casos reales
+  // que hoy arma esta tabla, agregar uno nuevo si aparece un texto que lo necesite.
+  function wrapHeaderLabel(text){
+    const spaceIdx = text.indexOf(' ');
+    if(spaceIdx === -1) return '<span style="white-space:nowrap">'+text+'</span>';
+    const prefix = text.slice(0, spaceIdx), rest = text.slice(spaceIdx+1);
+    return '<span style="white-space:nowrap">'+prefix+'</span><br>'+rest;
   }
 
 
@@ -591,7 +794,7 @@
       if(year === 2024 || year === 2026) return 'pending_official';
       return 'placeholder';
     }
-    const table = clubId === 'river' ? riverFiscalYearMeta : racingFiscalYearMeta;
+    const table = clubId === 'river' ? riverFiscalYearMeta : clubId === 'racing' ? racingFiscalYearMeta : velezFiscalYearMeta;
     return ((table[year]) || {}).reportType || 'placeholder';
   }
 
@@ -630,5 +833,149 @@
   function pasesNetSpend(clubId, gestionKey){
     const data = pasesDataForClub(clubId) || [];
     return data.filter(r => r.gestion === gestionKey && r.tipo === 'Jugador').reduce((s,r) => s+r.monto, 0);
+  }
+
+
+  // ---------- INICIO: gráficos de evolución (Ingresos/Gastos/Deuda), TODOS los ejercicios del club ----------
+  // A diferencia de gestionesByClub (que solo cubre el rango de UNA gestión) y del `allYears`
+  // hardcodeado que usa updateFinanzasByAnio (Boca) para su propio gráfico de Finanzas, esto cubre
+  // TODO el rango del club de punta a punta: del año más viejo al más nuevo que exista en CUALQUIER
+  // lugar de sus datos (real o placeholder), sin saltear ningún año del medio aunque no haya ninguna
+  // entrada cargada para él (ej. Boca no tiene ninguna clave 2020 en yearsRaw: igual aparece en el
+  // rango, en blanco). Ternario, no un objeto {river:..., racing:...} armado de una sola vez (mismo
+  // motivo que ya documentan drawTrendChartGeneric/yearMetaFor: con lazy-loading, evaluar la rama del
+  // club que el visitante NO eligió puede leer una variable global todavía no cargada).
+  function allYearsRangeForClub(clubId){
+    const keys = clubId === 'boca' ? Object.keys(yearsRaw)
+      : clubId === 'river' ? Object.keys(riverFiscalYearMeta)
+      : clubId === 'racing' ? Object.keys(racingFiscalYearMeta)
+      : Object.keys(velezFiscalYearMeta);
+    const years = keys.map(Number);
+    const min = Math.min(...years), max = Math.max(...years);
+    const range = [];
+    for(let y=min; y<=max; y++) range.push(y);
+    return range;
+  }
+
+  // "blank" (sin documento, placeholder o pending_official: no se dibuja nada ese año), "balance"
+  // (hay balance auditado real de ese ejercicio, exista o no ADEMÁS un presupuesto del mismo año) o
+  // "presupuesto" (solo hay presupuesto, sin balance real todavía). Reusa reportTypeForYear (más
+  // arriba en este archivo), que ya unifica los 3 clubes incluido el caso hardcodeado de Boca — no
+  // se reimplementa ese mapeo acá. Un ejercicio `official_budget_and_balance` (Racing 2017/2018,
+  // 2019/2020, etc.) da 'balance': el balance sigue siendo SIEMPRE el dato primario que lee
+  // computeYearForClub/simplifiedReportForClub (el presupuesto de esos años vive aparte, en
+  // `racingPresupuestoOverlayByYear`, un dato que estas funciones nunca leen), así que estos
+  // gráficos de Inicio automáticamente prefieren Balance por sobre Presupuesto cuando hay los dos,
+  // sin ninguna lógica extra acá.
+  function yearKindForClub(clubId, year){
+    const rt = reportTypeForYear(clubId, year);
+    if(rt === 'placeholder' || rt === 'pending_official') return 'blank';
+    if(rt === 'official_budget') return 'presupuesto';
+    return 'balance';
+  }
+
+  // "Formato simplificado" de cualquier club, misma función que ya usa nativeReportFor() cuando el
+  // toggle está activo — acá se llama SIEMPRE (sin depender del toggle global `simplifyFormat`),
+  // porque los gráficos de Inicio necesitan las categorías homologadas entre clubes (ver
+  // `club-data-mapping/SKILL.md` sección 13), no el desglose "tal cual la fuente".
+  function simplifiedReportForClub(clubId, year){
+    return clubId === 'boca' ? simplifiedReportForBoca(year) : simplifiedReportForGeneric(clubId, year);
+  }
+
+  // Orden y color de cada categoría de "Formato Simplificado" para los gráficos apilados de Inicio.
+  // MISMOS labels que ya arman simplifiedReportForBoca()/GENERIC_SIMPLIFIED_*_BUCKETS (ver esas
+  // definiciones más arriba en este archivo) — no se inventa vocabulario nuevo acá, solo se le suma
+  // un color fijo a cada categoría para que el gráfico apilado sea legible. "Fútbol profesional (sin
+  // desglosar por la fuente)" puede faltar en lo que devuelve simplifiedReportForClub() para un
+  // año/club que no la usa (bucketize la filtra si da $0); acá se le da 0 igual si no aparece, un
+  // bucket ausente y un bucket en $0 son lo mismo en una barra apilada (no aporta ninguna porción).
+  const INICIO_INGRESOS_BUCKETS = [
+    {label:'Cuotas Sociales', color:'#0a2b5c'},
+    {label:'Comercial / Sponsors', color:'#f2b705'},
+    {label:'Estadio: recaudación de partidos', color:'#1b7a3d'},
+    {label:'Televisión', color:'#8a5cf6'},
+    {label:'Premios por competencias', color:'#2b8a99'},
+    {label:'Abonos', color:'#e07b39'},
+    {label:'Venta de Jugadores', color:'#b5372b'},
+    {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
+    {label:'Otras secciones deportivas y otros ingresos', color:'#6b6b6b'},
+  ];
+  const INICIO_GASTOS_BUCKETS = [
+    {label:'Compra de jugadores', color:'#0a2b5c'},
+    {label:'Salarios y primas (plantel y cuerpo técnico)', color:'#f2b705'},
+    {label:'Inversiones (amortizaciones y depreciación)', color:'#1b7a3d'},
+    {label:'Organización de partidos', color:'#8a5cf6'},
+    {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', color:'#2b8a99'},
+    {label:'Administración y gastos generales', color:'#e07b39'},
+    {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
+    {label:'Otros gastos', color:'#6b6b6b'},
+  ];
+
+  // El año más reciente del rango completo (allYearsRangeForClub) que tenga algún dato real cargado
+  // (Balance o Presupuesto, no importa cuál — ver yearKindForClub), o `null` si el club no tiene
+  // ninguno. Sirve para ordenar los gráficos apilados de Inicio "de mayor a menor según el último
+  // año disponible" (pedido explícito de Guido), no según un orden fijo de categorías.
+  function lastAvailableYearForClub(clubId){
+    const years = allYearsRangeForClub(clubId);
+    for(let i=years.length-1; i>=0; i--){
+      if(yearKindForClub(clubId, years[i]) !== 'blank') return years[i];
+    }
+    return null;
+  }
+
+  // Arma un dataset de Chart.js por bucket (Ingresos o Gastos, según `buckets`/`sectionKey`), en
+  // USD, TODOS los ejercicios del club en orden cronológico sin saltos (allYearsRangeForClub). Un
+  // año "blank" (yearKindForClub) deja `null` en TODOS los buckets ese año (Chart.js no dibuja nada
+  // ahí); un año con dato real lleva el valor de cada bucket (0 si esa categoría no aportó nada ese
+  // año), sin importar si el ejercicio es Balance o Presupuesto — la distinción Balance/Presupuesto
+  // se pinta en la capa de render (color atenuado + tooltip), no acá.
+  //
+  // Orden de los buckets (de qué segmento va abajo/arriba de la pila, y en qué orden aparece la
+  // leyenda): NO es el orden fijo de `buckets` (INICIO_INGRESOS_BUCKETS/_GASTOS_BUCKETS), es de
+  // MAYOR a MENOR según el ÚLTIMO ejercicio disponible del club (lastAvailableYearForClub) — mismo
+  // orden para TODOS los años del gráfico (no se reordena año a año), así el segmento más grande
+  // HOY queda siempre abajo de la pila, más fácil de leer. El color de cada categoría sigue fijo
+  // por label (no por posición), para que no cambie de significado entre clubes.
+  function inicioStackedSeriesForClub(clubId, buckets, sectionKey){
+    const years = allYearsRangeForClub(clubId);
+    const kinds = years.map(year => yearKindForClub(clubId, year));
+    const lastYear = lastAvailableYearForClub(clubId);
+    let orderedBuckets = buckets;
+    if(lastYear !== null){
+      const lastRows = simplifiedReportForClub(clubId, lastYear)[sectionKey] || [];
+      const valueForLabel = label => {
+        const row = lastRows.find(r => r.label === label);
+        return row ? Math.abs(row.value) : 0;
+      };
+      orderedBuckets = buckets.slice().sort((a,b) => valueForLabel(b.label) - valueForLabel(a.label));
+    }
+    const datasets = orderedBuckets.map(b => ({ label:b.label, color:b.color, data:[] }));
+    years.forEach((year, i) => {
+      if(kinds[i] === 'blank'){
+        datasets.forEach(d => d.data.push(null));
+        return;
+      }
+      const rows = simplifiedReportForClub(clubId, year)[sectionKey] || [];
+      const meta = yearMetaFor(clubId, year);
+      orderedBuckets.forEach((b, j) => {
+        const row = rows.find(r => r.label === b.label);
+        datasets[j].data.push(Math.abs(toDisplayValue(row ? row.value : 0, meta, currentCurrency)));
+      });
+    });
+    return { years, kinds, datasets };
+  }
+
+  // Serie de Deuda neta (única, no apilada — "Formato simplificado" es un concepto de Ingresos/
+  // Gastos, la deuda no se desglosa por categoría) para el 3er gráfico de Inicio, mismo rango y
+  // mismo criterio de blanco que inicioStackedSeriesForClub.
+  function inicioDeudaSeriesForClub(clubId){
+    const years = allYearsRangeForClub(clubId);
+    const kinds = years.map(year => yearKindForClub(clubId, year));
+    // Nota: NO usa displayFinancialsForClub() a propósito — esa función fuerza USD siempre (la
+    // usa "Comparar Gestiones", que por diseño ignora el toggle de moneda). Acá sí tiene que
+    // respetar `currentCurrency`, el toggle ahora es universal (header, al lado del selector de
+    // club) y aplica también a Inicio.
+    const values = years.map((year, i) => kinds[i] === 'blank' ? null : toDisplayValue(computeYearForClub(clubId, year).netDebt, yearMetaFor(clubId, year), currentCurrency));
+    return { years, kinds, values };
   }
 

@@ -27,7 +27,7 @@ distintos) queden categorizados con criterios diferentes sin querer.
   `_EXPENSE_BUCKETS`, ahora en `js/finanzas-calc.js` desde la Versión 51, antes en index.html)
   tampoco lee `category-map.js` en vivo, tiene su propia lista de buckets hardcodeada: si tocás uno,
   sincronizá el otro a mano, para que no queden dos fuentes de verdad divergentes (ver
-  `club-or-year-onboarding` sección 2a para el detalle de dónde vive cada archivo desde la
+  `club-or-year-onboarding` sección 3 para el detalle de dónde vive cada archivo desde la
   Versión 51).
 - `normalizedCategory` es una clave INTERNA, usada solo por `computeYearGeneric()` /
   `sumCat()` para armar los KPIs de arriba de Finanzas, los gráficos y `wagesToTurnover`. NUNCA se
@@ -56,9 +56,10 @@ práctica, agregá los que falten cuando aparezcan):
 | Cuotas Sociales / Ingresos Sociales | `member_dues` |
 | Televisación, Televisión AFA, derechos de TV | `broadcasting` |
 | Campeonatos Oficiales, Otros Torneos, recaudación de entradas (cuando el club NO separa premios de recaudación) | `matchday_competition` |
-| Cobranzas por participación, premios por avance de ronda/campeonato (SOLO si el documento fuente la reporta como línea propia, separada de la recaudación de entradas: ver regla de la sección 10, agregada Versión 46) | `competition_bonus` |
+| Cobranzas por participación, premios por avance de ronda/campeonato (SOLO si el documento fuente la reporta como línea propia, separada de la recaudación de entradas: ver regla de la sección 13, agregada Versión 46) | `competition_bonus` |
 | Publicidad, sponsors, canjes comerciales | `sponsorship_commercial` |
-| Transferencia de Jugadores (ingreso), Costo Transferencia de Jugadores (gasto) | `player_sales` (si el club NO las netea, van así, ver sección 3) |
+| Transferencia de Jugadores / Cobros por venta de jugadores (ingreso) | `player_sales` (si el club NO las netea, van así, ver sección 3) |
+| Costo Transferencia de Jugadores / Pago por adquisición de jugadores (gasto) | `player_amortisation` (Versión 52, ver detalle abajo: reusa la categoría de "amortización de pases" de Boca como el bucket "Compra de jugadores" aunque Racing no capitaliza/amortiza, expensa el costo completo al momento de la operación; es la aproximación más fiel disponible para que esa plata aparezca en el bucket correcto de Formato Simplificado, en vez de perderse en el catch-all) |
 | Sueldos del Personal, Cargas Sociales, remuneraciones del plantel | `wages_squad` |
 | Amortización/Depreciación de bienes de uso tangibles | `depreciation` |
 | Previsiones, amortizaciones intangibles, cargos extraordinarios de fin de ejercicio | `other_amortisation` |
@@ -270,7 +271,124 @@ texto, necesita el Read tool sobre imágenes de página (mucho más caro en toke
 extraíble" y era cierto solo para 3 de los 24 documentos del archivo, quedó corregido, pero
 volvé a medir en vez de confiar en una nota vieja sin re-verificar contra el archivo real.
 
-## 9. "Formato simplificado": cada fila tiene que ser un acordeón, nunca `items:null`
+## 9. Leer un PDF fuente: texto nativo vs. OCR con el Read tool, y cómo destranquear (deskew) un escaneo torcido
+
+(Movida acá desde `club-or-year-onboarding/SKILL.md` en la Versión 62, junto con las secciones 10 y
+11: son sobre CÓMO leer un documento fuente correctamente, el mismo tema que la sección 8 de arriba,
+no sobre el proceso de la sesión — vivían separadas de esta sección por casualidad de cuándo se
+escribió cada una, no por diseño.)
+
+Antes de abrir un PDF nuevo con el Read tool, probar `pdftotext -layout archivo.pdf -` primero: si
+devuelve texto real (no basura ni vacío), es MUCHO más barato en tokens que renderizar página por
+página como imagen. Si `pdftotext` da vacío o basura, el PDF es un escaneo puro y hay que usar el
+Read tool sobre las páginas como imágenes — ver el registro por documento de qué tipo es cada uno en
+`fuentes-por-club.md` (sección Racing Club, ya tiene el resultado de probar los ~24 documentos del
+archivo oficial de Racing).
+
+**Si el escaneo aparece torcido (inclinado en diagonal)**: leer así arrastra error acumulado hacia
+los bordes de la página — una fila puede leerse como si perteneciera a la fila de arriba o de abajo
+cuanto más lejos está del punto de referencia, y el error crece hacia la columna de totales (el
+borde derecho), justo donde más importa que el número sea exacto. Esto pasó de verdad en la Versión
+58 con `Clubes/Argentina/Racing/presupuesto2019-20.pdf`: se leyó inicialmente la fila "9.- Cobros de
+otros recursos de gestión por fútbol" como 634.152.050 cuando el valor real (confirmado por Guido)
+era 18.000.000 — en realidad se estaba leyendo la fila de ABAJO ("B. Ingresos Sociales") por el
+corrimiento diagonal acumulado.
+
+Receta de corrección (deskew), la que se usó y funcionó:
+1. Renderizar la página a alta resolución: `pdftoppm -r 300 -f N -l N archivo.pdf pagina` (300 DPI,
+   página N).
+2. Con Python/PIL, probar un rango de ángulos de rotación pequeños (ej. -2° a +2° en pasos de
+   0.1°-0.2°) sobre la imagen, y para cada ángulo calcular la VARIANZA de los promedios de brillo por
+   fila de píxeles (`np.array(img.convert('L')).mean(axis=1)`, luego `.var()` de esa serie).
+3. El ángulo que da la varianza MÁS ALTA es el que mejor alinea las líneas horizontales de la grilla
+   del documento (más nítidas = filas mejor separadas = mejor lectura). Para
+   `presupuesto2019-20.pdf` dio ~0.78°.
+4. Rotar la imagen ese ángulo exacto (`img.rotate(angle, expand=True, fillcolor='white')`) y volver a
+   leerla con el Read tool. Con la corrección aplicada, todas las lecturas posteriores coincidieron
+   exacto con lo que confirmó Guido.
+
+Este script se arma una vez por documento torcido (no hay una herramienta ya armada en el repo, es
+un script de Python ad-hoc en el momento) — si un PDF futuro aparece igual de inclinado, repetir esta
+misma receta en vez de intentar leerlo a ojo o pedirle a Guido que lo enderece él.
+
+**Caso DISTINTO, no confundir con el deskew de arriba: una tabla escaneada en landscape "acostada"
+dentro de una página portrait.** Encontrado en `presupuesto2018-19.pdf` (páginas 8-9, las tablas de
+Ingresos/Egresos): la imagen NO está inclinada en diagonal (el deskew de arriba no aplica, un ángulo
+de -2°/+2° no la arregla), está rotada 90° entera — el documento original era una planilla ancha
+(rubros + 12 meses + Total) impresa en horizontal, y el escaneo la guardó como una página vertical
+más. Se lee "técnicamente" sin rotar (el texto no sale espejado ni al revés), pero en un orden RARO:
+la fila "Total"/"Subtotal" de cada bloque aparece ANTES que su propio desglose (columnas del
+documento original leídas como si fueran filas), lo que hace mucho más lento y propenso a error
+mapear cada número a su rubro correcto. Señal de alerta: si una tabla escaneada se lee de arriba
+hacia abajo con el TOTAL primero y el detalle debajo (en vez del orden natural rubro→detalle→total),
+sospechar de esto antes de transcribir a mano en ese orden confuso.
+
+Arreglo (no es deskew, es una rotación de 90° exacta, mucho más simple):
+1. Renderizar la página completa (`pdftoppm -r 300 -f N -l N archivo.pdf pagina`, misma herramienta
+   que el deskew, pero sin necesidad de probar ángulos).
+2. Con Python/PIL, `img.rotate(90, expand=True)` (o `-90`, probar los dos: el que da la tabla más
+   larga que ancha, VS. más ancha que larga, con los rubros leyéndose de arriba hacia abajo en la
+   columna izquierda y los meses como columnas hacia la derecha, es el correcto — si el resultado
+   sale al revés/espejado, es el ángulo contrario).
+3. Leer la imagen rotada con el Read tool: ahora el rubro está a la izquierda, los meses (sep-XX a
+   ago-XX) son columnas hacia la derecha, y "Total del Período" es la última columna — el orden
+   natural de cualquier planilla, mucho más fácil de auditar contra el PDF que la versión sin rotar.
+
+No hace falta combinar esto con el deskew de arriba salvo que la tabla ADEMÁS esté inclinada en
+diagonal (no fue el caso en `presupuesto2018-19.pdf`, pero si aparece, rotar primero 90° y recién
+después medir el ángulo de deskew sobre la imagen ya rotada).
+
+## 10. La "fila acumulada": un subtotal impreso puede incluir OTRAS líneas separadas, no solo sus hijos visuales
+
+Trampa real encontrada en la Versión 58 (`Clubes/Argentina/Racing/racing-presupuesto-2019-20.pdf`,
+fila "2.- Cobranzas por participación"): el documento imprimía 606.734.000 para esa fila, pero sus
+propios sub-ítems visibles (d+e+f, indentados debajo de ella) sumaban solo 274.780.000 — una
+diferencia de 331.954.000 que en un primer momento pareció un error del documento o una duda sobre
+qué número cargar.
+
+La explicación real, que dio Guido: la fila no es un subtotal de sus hijos visuales nomás, es un
+ACUMULADO que TAMBIÉN suma otras 2 líneas que el documento lista por separado más abajo ("3.-
+Cobranzas por abonos estadio" y "4.- Cobros por retransmisión"): 274.780.000 + 123.154.000 +
+208.800.000 = 606.734.000, exacto. Cargar el número acumulado (606.734.000) como si fuera el valor
+propio de esa fila hubiera significado CONTAR DOS VECES los ítems 3 y 4, que ya se cargan como sus
+propias líneas independientes — el criterio correcto fue cargar el valor NO acumulado (274.780.000,
+la suma real de sus propios hijos) para esa fila puntual.
+
+Señal de alerta genérica (no específica a este documento): si una fila con sub-ítems visibles no
+reconcilia contra la suma de esos sub-ítems, Y la diferencia coincide (exacta o casi) con el valor de
+alguna OTRA fila del mismo documento, es señal de que se trata de un acumulado que incluye esa otra
+fila, no un error de transcripción ni un dato a elegir a criterio propio. Antes de cargar cualquier
+fila con esta pinta: sumar sus hijos visibles, compararlo contra el valor impreso de la fila, y si no
+cierra, buscar qué otra(s) fila(s) del documento explican la diferencia antes de asumir nada — y si
+no se encuentra una explicación clara, preguntarle a Guido con la especificidad de la sección 11, no
+elegir un criterio unilateralmente.
+
+## 11. Pedir ayuda a Guido para leer algo ilegible: siempre página + fila + columna exactos
+
+**Esto NO es una pausa preventiva por "el PDF se ve difícil".** Un escaneo denso, muchas páginas,
+una tabla en landscape rotado, una inclinación diagonal — ninguno de esos es motivo para frenar y
+preguntar antes de empezar. El default de este skill es seguir adelante solo: renderizar a más DPI,
+rotar, deskewar (sección 9), cruzar contra los subtotales impresos (sección 6) para confirmar que
+la lectura cierra. Preguntarle a Guido es el ÚLTIMO recurso, para UN número puntual concreto que
+sigue sin poder confirmarse con certeza después de intentar todo lo de arriba (o que no reconcilia
+y ninguna fila del documento explica la diferencia, sección 10) — nunca una pregunta abierta tipo
+"¿podés ayudarme con este PDF, está complicado?" antes de siquiera intentar leerlo.
+
+Lección de la Versión 58: una pregunta genérica sobre una discrepancia de lectura ("no me cierra tal
+cosa, ¿podés revisar?") no es útil — Guido respondió literal *"no entiendo exactamente que querés
+que revise. sé más especifico. que numero, que fila, que pagina en el pdf"*. La pregunta específica
+que sí funcionó fue, literal: "página 7, fila '9.- Cobros de otros recursos de gestión por fútbol',
+columna B (o la que corresponda) — leo 634.152.050, ¿es correcto?", con captura de pantalla de esa
+zona puntual del PDF si hace falta.
+
+REGLA para cualquier sesión futura: cuando algo de un PDF (escaneado o no) no se lee con certeza o no
+reconcilia, la pregunta a Guido SIEMPRE tiene que incluir: (1) el número exacto de página del PDF,
+(2) el nombre exacto de la fila/rubro tal cual está impreso, (3) qué columna (si el documento tiene
+más de una), y (4) el número que se está leyendo (aunque se sospeche que está mal), para que Guido
+pueda confirmar o corregir sin tener que adivinar de qué parte del documento se está hablando. Nunca
+preguntar "¿esto está bien?" sin esas 4 cosas.
+
+## 12. "Formato simplificado": cada fila tiene que ser un acordeón, nunca `items:null`
 
 REGLA (agregada Versión 40 de numeros-de-boca, pedido explícito de Guido: "es mi manera de hacerte
 un control"): a diferencia de "Formato del club" (que siempre mostró el desglose real vía `items`),
@@ -279,9 +397,18 @@ reclasificado, pero no había forma de auditar de qué campo(s) nativo(s) salió
 sin cambiar de toggle y buscar a mano. Guido lo pidió como su forma de controlar el trabajo de
 categorización: cada fila de Formato Simplificado tiene que poder abrirse y mostrar la cuenta.
 
-Implementado por ahora SOLO para Boca (`simplifiedReportForBoca()`, en `js/finanzas-calc.js` desde la Versión 51). River/Racing
-(`simplifiedReportForGeneric()`/`bucketize()`) siguen con `items:null` en cada bucket, pendiente.
-Cuando se toque ese motor genérico, aplicar el mismo criterio:
+**CORRECCIÓN (esta sesión, encontrado auditando el skill contra el código real): esto YA ESTÁ
+implementado también para River/Racing, no está pendiente.** Esta sección decía "implementado por
+ahora SOLO para Boca... River/Racing siguen con `items:null`, pendiente" durante ~20 versiones
+después de que dejó de ser cierto — `bucketize()` (`js/finanzas-calc.js`) arma `items` para cada
+bucket desde la Versión 42 (el comentario del propio código, justo arriba de `bucketize()`, dice
+"ACORDEÓN DE CONTROL (Versión 42, extiende a River/Racing la regla de la Versión 40, ver
+club-data-mapping SKILL.md sección 12)" — un session pasado hizo el trabajo y dejó un puntero de
+vuelta a ESTA sección, pero nadie actualizó la sección en sí). Regla para el futuro: cuando un
+comentario de código diga "ver SKILL.md sección N" para marcar que resolvió algo que esa sección
+tenía como pendiente, ESE es el momento de volver acá y sacar el "pendiente" — no alcanza con que el
+código lo diga, alguien tiene que cerrar el loop en el skill también. El criterio de acordeón que
+sigue abajo ya aplica hoy a los 3 clubes:
 
 - Un bucket que agrupa una sola `normalizedCategory` con una sola línea real: `items` = esa línea
   con su propio desglose (`line.items`) si lo tiene, o una fila `[line.rawLabel, line.amountNative]`
@@ -304,7 +431,7 @@ cierra exacto contra el `value` de la fila padre, no alcanza con que el código 
 pasó (sección 1 de este skill, Versión 38) que un desglose mal armado puede pasar
 `verifyTieOuts()` sin problema y aun así estar mostrando datos incorrectos en pantalla.
 
-## 10. REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato Simplificado" de
+## 13. REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato Simplificado" de
 CUALQUIER club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca, nunca
 un set diseñado por separado para el motor genérico
 
@@ -409,6 +536,208 @@ UNA de estas dos categorías según esa misma pregunta ("¿esto se paga por part
 completa?"), nunca a un label combinado tipo "Entradas / Abonos" que sugiera que la distinción no
 importa.
 
+**HOMOLOGACIÓN DE GASTOS DE RACING, HECHA EN LA VERSIÓN 52 (pedido explícito de Guido: "homologar
+egresos en racing a como lo tiene Boca")**: hasta la Versión 51, esta sección decía que el lado de
+Gastos se había dejado "solo renombrado" (ver párrafo "Decisión de Guido" arriba, todavía vigente
+para el resto del detalle), sin re-categorizar ninguna línea real. Eso cambió en la Versión 52, solo
+para el bucket "Compra de jugadores" (`player_amortisation`/`player_impairment`):
+
+- Reetiquetadas a `player_amortisation` (antes `other_expenses`, ver comentario completo en
+  `data/racing-data.js` justo antes de `racingExpenseLinesByYear`): "Costo transferencia de
+  jugadores" (2009, 2010, 2011, 2024, 2025) y "Pago por adquisición de jugadores" (2026, 2027). Sin
+  esto, "Compra de jugadores" daba $0 para Racing en TODOS los años, aunque el club gastó plata real
+  comprando jugadores, esa plata estaba enterrada en el catch-all "Otros gastos".
+- Dos casos quedaron a propósito SIN re-categorizar, consultados con `AskUserQuestion` antes de
+  decidir (mismo criterio que exige la REGLA NO OPCIONAL de esta sección): "Pago de gastos por
+  compraventa de jugadores" (comisiones/intermediación, 2026/27) y "Egresos extraordinarios (compra
+  de bienes de uso y mejoras, principalmente)" (CAPEX, 2026/27). Guido confirmó dejar los dos en
+  `other_expenses`: el primero porque Boca tampoco separa comisiones de compraventa dentro de su
+  bucket "Compra de jugadores" (que es solo amortización + deterioro de pases), meterlo ahí sería
+  MENOS fiel a Boca, no más homologado; el segundo porque es CAPEX (plata de caja para comprar
+  activos), un concepto distinto de "Inversiones" de Boca (amortización + depreciación, un cargo
+  contable NO-CASH), mezclarlos rompería la comparabilidad en vez de mejorarla.
+- Los buckets "Salarios y primas" e "Inversiones" de Racing ya estaban bien categorizados desde
+  antes de la Versión 52 (`wages_squad`, `depreciation`, `other_amortisation`), no se tocaron.
+- Nota de fondo para cualquier categorización futura de "Compra de jugadores" en un club nuevo:
+  Boca SÍ distingue amortización (cargo contable por capitalizar y depreciar el pase a lo largo del
+  contrato) de deterioro (`playerImpairment`, un cargo por pérdida de valor). Racing no capitaliza,
+  expensa el costo completo de la operación al momento en que ocurre, así que no hay una
+  amortización/deterioro real que separar, todo entra a `player_amortisation` sola. Es una
+  aproximación (mismo espíritu que el resto de este skill: "no siempre hay un mapeo perfecto,
+  documentar la aproximación es mejor que forzar una separación que el dato no tiene").
+
+**SEGUNDA RONDA, VERSIÓN 53 (Guido: "en 'formato simplificado', las rows tienen que ser siempre
+iguales entre clubes, aunque alguna tenga un cero" + "no puede ser que otros gastos tenga 64% del
+total... mirando los rows de Boca, podes crear nuevos y reducir ese 64%")**: la Versión 52 solo
+había resuelto "Compra de jugadores". El resto de "Otros gastos" de Racing seguía siendo, según el
+ejercicio, entre 39% y 64% del total, muy por encima de lo que Boca 2027 (la referencia) muestra en
+su propio catch-all (0%, ver más abajo). Se agregaron 3 categorías nuevas a
+`EXPENSE_CATEGORIES`/`EXPENSE_CATEGORY_LABELS` (`data/category-map.js`), las MISMAS 3 filas que
+Boca ya arma a mano en `otrosGastos2027` (`js/finanzas-calc.js`): `match_organisation_expense`
+("Organización de partidos"), `youth_other_sports_expense` ("Otras secciones deportivas (juvenil,
+otros deportes, básquet)") y `admin_general_expense` ("Administración y gastos generales"). Se
+agregaron como 3 filas nuevas a `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`, en el mismo orden que usa
+Boca, y se re-etiquetaron TODAS las líneas de `data/racing-data.js` que tenían un rubro
+identificable (ver el comentario extenso en ese archivo, justo antes de `racingExpenseLinesByYear`,
+para el mapeo línea por línea completo). Resultado: el catch-all de Racing bajó a 18% (Presupuesto
+2026/27) y 0% (Ejercicio 2024/25, donde SÍ había rubro identificable para el 100% de lo que antes
+era "Otros gastos").
+
+**REGLA PERMANENTE agregada en esta ronda**: las filas de "Formato Simplificado" de Gastos son
+SIEMPRE las mismas 7 (Compra de jugadores / Salarios y primas / Inversiones / Organización de
+partidos / Otras secciones deportivas / Administración y gastos generales / Otros gastos) para
+CUALQUIER club/año, incluido Boca en años que NO tienen el desglose de 3 filas disponible (ej.
+Boca 2025, ver más abajo): esos años muestran las 3 filas nombradas en $0 y el monto real completo
+en "Otros gastos", en vez de directamente no mostrar la fila (la fila en $0 no es "esconder", es
+"no tenemos cómo separar esto todavía", mismo espíritu que otras zonas del sitio que muestran $0
+con una nota quando el dato real no está disponible, ej. `debtDisclosureNote`). Si se agrega un
+bucket nuevo a futuro, tiene que aparecer en LOS DOS motores (`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`
+para River/Racing, y `otrosGastos2027`/`otrosGastosDefault` dentro de `simplifiedReportForBoca()`
+para Boca) para no romper esta paridad de filas.
+
+**CASO CONSULTADO, Guido eligió sumarlo a "Salarios y primas"**: "Fútbol profesional"
+(2009-2011/2024/2025 de Racing) y "Pago de otros gastos deportivos fútbol profesional" (2026/27),
+costos NO salariales del plantel profesional (médico, indumentaria, viajes, pretemporada), la línea
+más grande de todo el catch-all viejo. Se re-etiquetaron a `wages_squad`, no a una categoría nueva,
+porque Boca YA mezcla este mismo tipo de costo dentro de su propio campo `wages` para el Ejercicio
+2027 (`expenseSubBreakdown[2027]['Fútbol Profesional']` en `data/boca-data.js` incluye
+Farmacia/Pretemporada/Vigilancia/Canjes junto con Remuneraciones/Primas, y ESE total completo
+alimenta `r.wages`). OJO, matiz importante para no repetir la investigación: esto es distinto de
+Boca 2025 (balance auditado real), donde `wages` es una cifra de remuneraciones más estricta que SÍ
+excluye esos costos (quedan en `otherExpenses`, ver comentario de `yearsRaw[2025]` en
+`data/boca-data.js`) — los 2 ejercicios reales de Boca no son 100% consistentes entre sí en este
+punto puntual, y esta homologación de Racing sigue el criterio del Ejercicio 2027 por ser la
+referencia canónica que ya usa el resto de este skill para nombres/orden.
+
+**BUG REAL encontrado al implementar esto, corregido en la misma sesión**: `computeYearGeneric()`
+(`js/finanzas-calc.js`) calculaba `otherExpenses` (que alimenta `expenses`/`ebitda`/`pat`, no solo
+"Formato Simplificado") sumando SOLO `['other_expenses','lump_football_operations_expense']`. Al
+crear las 3 categorías nuevas y re-etiquetar líneas hacia ellas, esa plata quedó AFUERA de
+`otherExpenses` (no solo del catch-all visual, del cálculo real), y Racing pasó a mostrar SUPERÁVIT
+en ejercicios que en realidad tuvieron déficit real (`verifyTieOuts()` lo detectó: Revenue seguía
+cerrando pero Expenses y PAT dejaron de cerrar, con diferencias de $11-52 mil millones ARS según el
+año). Fix: `otherExpenses` ahora suma las 3 categorías nuevas también (son gasto operativo en
+EFECTIVO, igual que `other_expenses`, no no-efectivo como `depreciation`/`player_amortisation`).
+REGLA PARA EL FUTURO: cualquier categoría nueva de gasto que se agregue a `EXPENSE_CATEGORIES` tiene
+que sumarse explícitamente O BIEN a `otherExpenses` (si es gasto operativo en efectivo) O BIEN al
+cálculo de `nonCash` (si es no-efectivo) dentro de `computeYearGeneric()` — agregarla solo a
+`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` no alcanza, ese array solo controla CÓMO SE MUESTRA la plata en
+Formato Simplificado, no si esa plata efectivamente CUENTA para `expenses`/`ebitda`/`pat`. Verificar
+siempre con `verifyTieOuts()` en el navegador (no alcanza con `node --check`, que solo valida
+sintaxis) después de agregar una categoría nueva.
+
+**TAMBIÉN encontrado en esta sesión, nada que ver con la categorización pero real**: `read_console_messages`
+del navegador puede devolver una MEZCLA de mensajes de una versión vieja del script (cacheada por el
+navegador) con la nueva, incluso navegando a una URL "fresca" en una tab nueva, si el servidor local
+ya sirvió esa URL antes en la misma sesión del navegador. Señal de alerta: los números de
+`verifyTieOuts()` no cambian nada después de editar código que debería cambiarlos. Se confirmó
+comparando `computeYearGeneric.toString()` en la consola contra el archivo real en disco (server
+`curl`), y se resolvió abriendo un servidor en un PUERTO nuevo (no solo una tab nueva) para forzar un
+origen sin caché.
+
+**Boca 2025 NO recibió el desglose de 3 filas en esta ronda** (queda como to-do explícito): su dato
+nativo (`nativeFinancialsBoca[2025]`) tiene detalle real, pero varias líneas mezclan sueldos y
+gastos operativos DENTRO del mismo renglón sin desglose propio (ej. "Estadio" trae "Remuneraciones y
+cargas sociales" y gastos de mantenimiento juntos en un solo número). Un intento de reconstrucción a
+mano en esta sesión (separar la porción salarial de cada línea mixta) dio una diferencia de ~$4.500
+M ARS contra `otherExpenses` real (-71.553,845458 M), señal de un error de reconciliación no
+resuelto — se descartó por el riesgo de ensuciar un balance auditado real sin un chequeo automatizado
+que lo confirme (ver CLAUDE.md, "Precisión antes que velocidad"). Boca 2025 muestra hoy las 3 filas
+nuevas en $0 y el monto completo en "Otros gastos" (39% del total), igual que cualquier año sin el
+desglose disponible. Si se retoma: hay que reconciliar cada línea mixta de
+`nativeFinancialsBoca[2025].gastos` contra su propia porción ya contada en `yearsRaw[2025].wages`
+(el comentario de `yearsRaw[2025]` en `data/boca-data.js` lista qué anexos entran en `wages`) antes
+de asumir que el resto es 100% no-salarial.
+
+## 14. `grossDebt`: el criterio de qué línea usar es POR CLUB, no universal — y un balance que
+desglosa gastos por sector/departamento se puede (y conviene) separar por columna, no solo por fila
+
+Encontrado onboardeando Vélez Sarsfield (Versión 82, primer club nuevo del motor genérico desde que
+existe). Dos lecciones nuevas, ninguna specific de fútbol, aplican a cualquier club futuro:
+
+**`grossDebt` no tiene un único campo "correcto" a copiar entre balances.** Racing usa el TOTAL DEL
+PASIVO completo (Estado de Situación Patrimonial entero). Boca usa solo la línea "Deudas"
+(corriente+no corriente), EXCLUYENDO "Obligaciones de hacer"/Previsiones. Vélez siguió el criterio de
+Boca (su balance también separa "Deudas" de "Ingresos anticipados"/"Fondos con destino
+específico"/"Previsiones" como líneas de pasivo distintas), no el de Racing. Antes de copiar
+`grossDebt = Total del Pasivo` de un club a otro sin mirar, revisar si el Estado de Situación
+Patrimonial del documento nuevo separa "Deudas" de otras categorías de pasivo — si las separa, usar
+esa línea más angosta (deuda financiera real), no el total completo, mismo criterio de "más fiel a
+lo que el club reporta" que ya rige para todo lo demás en este skill.
+
+**Un balance que desglosa un rubro de gasto por SECTOR/DEPARTAMENTO (no solo por concepto) permite
+separar "Salarios y primas (plantel y cuerpo técnico)" del resto del personal del club, sin
+inventar nada.** El Anexo III de Vélez tiene una tabla con "Remuneraciones al personal"/"Cargas
+sociales" como FILAS y Fútbol Profesional/Amateur/Complejo Polideportivo/Enseñanza/Culturales/Otros
+Deportes como COLUMNAS, con un total por fila y por columna. Racing (y hasta ahora Boca/River) solo
+tienen una cifra por rubro, sin este 2do eje — por eso `wages_squad` en esos clubes ya incluye
+"todo el personal reportado en ese rubro". Cuando el documento SÍ tiene este 2do eje, conviene
+partir la línea en 2: la porción de la columna "Fútbol Profesional" (-> `wages_squad`, comparable de
+verdad entre clubes) y el resto de las columnas sumadas (-> `youth_other_sports_expense`, cubre
+amateur/juvenil/otros deportes Y, si el club no separa más fino, también personal de escuela/cultura
+no deportiva — documentarlo así en el comentario, no forzar una categoría que no existe). Verificar
+siempre que las 2 líneas nuevas sumen EXACTO el total de fila que imprime el documento (mismo
+criterio de la sección 6) antes de dar por buena la separación.
+
+## 15. PDF escaneado sin capa de texto: OCR con Tesseract es mucho más barato que renderizar
+páginas como imágenes con el Read tool — pero verificar fila por fila, no confiar en el OCR crudo
+
+Encontrado cargando Vélez Sarsfield hacia atrás hasta agotar su archivo completo (Versiones 90-93):
+4 de los 11 ejercicios cargados (2023, 2017, 2016, 2015) resultaron ser PDF escaneados sin capa de
+texto (`pdftotext` devuelve vacío o casi vacío, confirmar con `pdffonts`/`pdftotext` ANTES de asumir
+que hay que usar el Read tool sobre imágenes — ver el gotcha viejo de CLAUDE.md, que databa de
+antes de que esta alternativa se probara).
+
+**Flujo que funcionó, mucho más barato en tokens que renderizar página por página con el Read
+tool:**
+1. Instalar Tesseract si no está: `brew install tesseract tesseract-lang` (el segundo paquete trae
+   los idiomas, incluido español — sin él, Tesseract solo reconoce inglés).
+2. Renderizar cada página a imagen: `pdftoppm -png -r 300 archivo.pdf page` (300dpi alcanza para
+   PDF de tamaño A4 normal; si el PDF tiene páginas físicamente más chicas —ej. la mitad de A4—,
+   subir a 450-900dpi para esa página puntual, o el OCR sale con más ruido).
+3. OCRear cada imagen: `tesseract page-NN.png out -l spa --psm 6` (`--psm 6` asume un bloque de
+   texto uniforme, funciona bien para tablas; probar otros valores de `--psm` si una página
+   específica sale mal).
+4. Armar el `.md` de transcripción igual que con `pdftotext` (con separadores `--- pág. N ---`),
+   pero con una nota en el encabezado aclarando que es OCR, no texto nativo, y que los números se
+   verifican aparte antes de cargar — igual de obligatorio transcribir ANTES de extraer datos (ver
+   CLAUDE.md), el OCR no exime de esa regla.
+
+**Tablas anchas (6+ columnas, como el Anexo III de Vélez) muchas veces vienen ROTADAS 90° dentro
+del PDF escaneado** (para que quepan más columnas en el ancho de una hoja). El OCR de esas páginas
+sale ilegible (texto basura, sin estructura) si no se corrige la rotación primero: detectarlo por
+la salida garbled, y antes de re-OCRear, rotar con PIL —
+`Image.open('page-NN.png').rotate(-90, expand=True).save('page-NN-rot.png')` (probar `90` si `-90`
+no alcanza) — y correr Tesseract sobre la imagen ya rotada. Si además la página es de tamaño
+reducido, puede hacer falta subir el DPI del render ANTES de rotar (900dpi en vez de 300-450) para
+que el texto tenga suficiente resolución tras la rotación.
+
+**Verificación: usar la columna "Total <año>" impresa de cada fila, no reconstruir sumando las
+columnas de sector.** El OCR tiene más ruido en las columnas angostas intermedias (dígitos sueltos
+mal leídos, ej. "1.088.197" en vez de "7.088.197") que en la columna ancha de fútbol profesional o
+en el total de fila. El criterio que funcionó: para cada línea de gasto, tomar SOLO la columna
+Fútbol Profesional (para separar `wages_squad`) y la columna Total del año (para todo lo demás) —
+nunca reconstruir un valor sumando las 6 columnas de sector una por una. Después, la SUMA de todas
+las columnas "Total <año>" de un Anexo tiene que cerrar EXACTO contra el total impreso de ese
+Anexo (mismo total que aparece en el Estado de Recursos y Gastos) — si no cierra, hay un dígito mal
+leído en alguna fila, recorrer las filas ajustando hasta que la suma cierre exacto (no alcanza con
+"cada fila individual se ve razonable"). En la práctica: 2016 cerró exacto sin ningún ajuste; 2015 y
+2017 cerraron con una diferencia de $40-50 mil sobre un total de cientos de millones (~0,00001%),
+ruido irrelevante muy por debajo de la tolerancia de `verifyTieOuts()` — aceptable, no hace falta
+perseguir cada peso si la magnitud del error ya es insignificante frente al total.
+
+**Bug real (no de OCR) que este proceso destapó en `verifyTieOuts()` mismo**: el check de
+"Expenses" comparaba `Math.abs(expenses) + Math.abs(nonCash)` contra el oficial. Esa fórmula solo
+es correcta cuando `expenses` y `nonCash` tienen el mismo signo (siempre había pasado, en todo club
+y ejercicio, hasta 2015 de Vélez) — si el crédito de "reclasificación" de un ejercicio (Costo de
+desarrollo de jugadores propios) es MÁS GRANDE que la amortización real de plantel de ese mismo
+ejercicio, `nonCash` neto da positivo, y `Math.abs(a)+Math.abs(b) ≠ Math.abs(a+b)`. La fórmula
+correcta es `Math.abs(expenses + nonCash)` (combinar primero, después el valor absoluto) —
+matemáticamente equivalente a la vieja fórmula en todos los casos donde ya cerraba, así que corregir
+esto en `index.html` no rompió ningún check anterior. Si un ejercicio nuevo no cierra en "Expenses"
+por una diferencia grande y sospechosamente redonda, revisar primero si `nonCash` neto se volvió
+positivo antes de asumir que el dato de carga está mal.
+
 ## Cómo mantener este skill
 
 Este skill se lee UNA VEZ al empezar a mapear un balance/presupuesto nuevo, y se ACTUALIZA al
@@ -421,6 +750,10 @@ terminar esa sesión si:
 - Encontraste un club con una estructura genuinamente distinta a Boca/River/Racing (ej. un club de
   otro país, con otro tipo de moneda o régimen contable) → considerá si necesita su propia sección
   acá o si amerita un skill separado.
+- Se aprendió algo nuevo sobre CÓMO leer un PDF fuente (otra trampa de escaneo, otro tipo de fila
+  engañosa, otra razón real para consultarle a Guido sobre algo ilegible) → va en las secciones 8-11
+  (todo lo de "leer el documento fuente correctamente" vive junto acá desde la Versión 62, no en
+  `club-or-year-onboarding`), con el documento/página exacto donde se encontró.
 
 No hace falta pedirle permiso a Guido para estas actualizaciones menores, es información viva que
 debería quedar al día sola, igual que el comentario de `index.html`.
