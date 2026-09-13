@@ -887,7 +887,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 9) — Expenses ya incluye Amortizaciones. DÉFICIT real: verificado igual a
     // Revenue - Expenses + netInterest = $(36.195.305) ARS.
-    officialTotalRevenue:283.378013, officialTotalExpenses:283.190549,
+    officialTotalRevenue:283.378013, officialTotalExpenses:283.190549, officialPAT:-36.195305,
   },
   // Ejercicio 2017 (N°107): también vía OCR. Anexo III/Gastos Ordinarios cierran con una
   // diferencia de $40 contra el impreso (ruido de OCR irrelevante, ver comentario en
@@ -907,7 +907,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 9) — Expenses ya incluye Amortizaciones. SUPERÁVIT real: verificado igual
     // a Revenue - Expenses + netInterest = $66.227.589 ARS.
-    officialTotalRevenue:360.607477, officialTotalExpenses:386.948224,
+    officialTotalRevenue:360.607477, officialTotalExpenses:386.948224, officialPAT:66.227589,
   },
   2017: {
     currency:'ARS', fx:16.53,
@@ -924,7 +924,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 9) — Expenses ya incluye Amortizaciones. DÉFICIT real: verificado (con
     // ~$40 de ruido de OCR) igual a Revenue - Expenses + netInterest = $(73.534.953) ARS.
-    officialTotalRevenue:425.405393, officialTotalExpenses:490.176531,
+    officialTotalRevenue:425.405393, officialTotalExpenses:490.176531, officialPAT:-73.534953,
   },
   2018: {
     currency:'ARS', fx:28.75,
@@ -943,7 +943,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 8) — Expenses ya incluye Amortizaciones. SUPERÁVIT real: verificado igual
     // a Revenue - Expenses + netInterest = $342.815.648 ARS.
-    officialTotalRevenue:526.713827, officialTotalExpenses:673.975171,
+    officialTotalRevenue:526.713827, officialTotalExpenses:673.975171, officialPAT:342.815648,
   },
   2019: {
     currency:'ARS', fx:42.263,
@@ -959,7 +959,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 8) — Expenses ya incluye Amortizaciones. SUPERÁVIT real: verificado igual
     // a Revenue - Expenses + netInterest = $370.018.627 ARS.
-    officialTotalRevenue:882.811660, officialTotalExpenses:1315.509072,
+    officialTotalRevenue:882.811660, officialTotalExpenses:1315.509072, officialPAT:370.018627,
   },
   2020: {
     currency:'ARS', fx:70.26,
@@ -975,7 +975,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 8) — Expenses ya incluye Amortizaciones. DÉFICIT real: verificado igual a
     // Revenue - Expenses + netInterest = $(145.019.616) ARS.
-    officialTotalRevenue:1375.210181, officialTotalExpenses:2033.468145,
+    officialTotalRevenue:1375.210181, officialTotalExpenses:2033.468145, officialPAT:-145.019616,
   },
   2021: {
     currency:'ARS', fx:95.52,
@@ -991,7 +991,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 8) — Expenses ya incluye Amortizaciones. DÉFICIT real: verificado igual a
     // Revenue - Expenses + netInterest = $(753.625.872) ARS.
-    officialTotalRevenue:2346.353726, officialTotalExpenses:3073.742339,
+    officialTotalRevenue:2346.353726, officialTotalExpenses:3073.742339, officialPAT:-753.625872,
   },
   2022: {
     currency:'ARS', fx:125.03,
@@ -1008,7 +1008,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos (pág. 10) — Expenses ya incluye Amortizaciones. SUPERÁVIT real: verificado
     // igual a Revenue - Expenses + netInterest = +1.216.670.585 ARS.
-    officialTotalRevenue:5313.188570, officialTotalExpenses:5691.705713,
+    officialTotalRevenue:5313.188570, officialTotalExpenses:5691.705713, officialPAT:1216.670585,
   },
   // Ejercicio 2023 (N°113): único cargado vía OCR, no texto nativo. Firmado por el Vicepresidente
   // 1° (Lic. Diego González) en lugar de Rapisarda — Rapisarda se tomó licencia en julio 2023,
@@ -1030,7 +1030,7 @@ const velezFiscalYearMeta = {
     // a Revenue - Expenses + netInterest = $522.234.138 ARS. Verificado con 2 sumas independientes
     // del Anexo III (una desde el detalle línea por línea, otra desde el total de la fila Amateur
     // en $0 neto) — ambas dan exacto $10.413.869.311, el mismo total impreso.
-    officialTotalRevenue:10416.621579, officialTotalExpenses:15747.530442,
+    officialTotalRevenue:10416.621579, officialTotalExpenses:15747.530442, officialPAT:522.234138,
   },
   2024: {
     currency:'ARS', fx:909,
@@ -1050,7 +1050,7 @@ const velezFiscalYearMeta = {
     // impresos (pág. 9) — Expenses ya incluye Amortizaciones. DÉFICIT DEL EJERCICIO real: verificado
     // igual a Revenue - Expenses + netInterest = -1.113.139.098 ARS (vs. Superávit +36.833.752 del
     // ejercicio 2025 recién anterior).
-    officialTotalRevenue:46598.890489, officialTotalExpenses:63116.161701,
+    officialTotalRevenue:46598.890489, officialTotalExpenses:63116.161701, officialPAT:-1113.139098,
   },
   2025: {
     currency:'ARS', fx:1196,
@@ -1072,7 +1072,7 @@ const velezFiscalYearMeta = {
     // officialTotalRevenue/officialTotalExpenses = "RECURSOS ORDINARIOS"/"GASTOS ORDINARIOS" tal
     // cual impresos en el Estado de Recursos y Gastos (pág. 8) — Expenses YA incluye Amortizaciones
     // (que acá se cargaron como expenseLines, no como meta), ver verifyTieOuts.
-    officialTotalRevenue:71931.540135, officialTotalExpenses:83258.279027,
+    officialTotalRevenue:71931.540135, officialTotalExpenses:83258.279027, officialPAT:36.833752,
   },
 };
 
@@ -1088,3 +1088,120 @@ const velezFiscalYearMeta = {
 const velezPasesData = [];
 const velezResultadosData = {};
 const velezTitulosData = [];
+
+// Versión 95: registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js).
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA.velez = {
+  revenueLinesByYear: velezRevenueLinesByYear, expenseLinesByYear: velezExpenseLinesByYear,
+  fiscalYearMeta: velezFiscalYearMeta, pasesData: velezPasesData,
+  resultadosData: velezResultadosData, titulosData: velezTitulosData,
+};
+
+
+Object.assign(sources, {
+  'velez-balance-2024-25': {
+      id:'velez-balance-2024-25', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°115, 1°/7/2024 al 30/6/2025',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (50 páginas, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 15/10/2025, firmado por Luis Fabián Berlanga como Presidente), descargado de la página institucional de balances del club (archivo completo, 2015-2025). Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2025.pdf. Cifras en moneda homogénea (reexpresadas según FACPCE, Nota 1.b). Convertido a USD con $1.196, el tipo de cambio de cierre que el propio balance declara en su Anexo VI (Activos y pasivos en moneda extranjera) para USD al 30/06/2025 — mismo valor que declaró el balance de Racing para la misma fecha de cierre. SUPERÁVIT real del ejercicio: $36.833.752 ARS (mucho más chico que el del ejercicio anterior, que fue déficit de $(1.551.939.880) ARS). "Salarios y primas (plantel y cuerpo técnico)" se separó de "Otras secciones deportivas" usando la columna "FÚTBOL PROFESIONAL" del Anexo III (el club desglosa gastos por sector: fútbol profesional/amateur/complejo polideportivo/enseñanza/culturales/otros deportes), no el total de sector — ver comentario completo en data/velez-data.js.',
+    },
+  'velez-balance-2023-24': {
+      id:'velez-balance-2023-24', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°114, 1°/7/2023 al 30/6/2024',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (48 páginas, texto nativo, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 7/10/2024, firmado por Luis Fabián Berlanga como Presidente), mismo archivo institucional que el Ejercicio 2025. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2024.pdf. Convertido a USD con $909, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2024. DÉFICIT real del ejercicio: $(1.113.139.098) ARS. Mismo criterio de categorización que el Ejercicio 2025 (ver data/velez-data.js): "Primas y premios" se cargó completa en wages_squad (99,94% ya es columna Fútbol Profesional); "Costo de desarrollo de jugadores propios" es un crédito que compensa exacto la columna Amateur del Anexo III (confirmado: esa columna suma $0 neto en el total impreso).',
+    },
+  'velez-balance-2014-15': {
+      id:'velez-balance-2014-15', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°105, 1°/7/2014 al 30/6/2015',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial ESCANEADO, de tamaño de página reducido (178x252pt), sin capa de texto (confirmado con pdffonts/pdftotext) — transcripto vía OCR (Tesseract 5, español, 450-900dpi según la página; algunas tablas anchas rotadas 90° en el escaneo original). Con auditoría de Bertora y Asociados S.R.L. sin salvedades, 28/9/2015, firmado por Raúl H. Gámez como Presidente (su 3ra gestión, 2014-2017 — NO Rapisarda, que asumió recién en noviembre 2017). Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2015.pdf (transcripción en balance-general-2015.md). Convertido a USD con $8,988, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2015 (previo a la devaluación de diciembre 2015). DÉFICIT real del ejercicio: $(36.195.305) ARS. Mismo criterio de categorización que el resto (ver data/velez-data.js); varios valores de columnas intermedias del Anexo III tuvieron ruido de OCR de unos pocos miles de pesos, pero los valores usados (columna Fútbol Profesional y columna Total del año) se verificaron con una suma fila por fila que cierra EXACTO contra el total impreso.',
+    },
+  'velez-balance-2015-16': {
+      id:'velez-balance-2015-16', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°106, 1°/7/2015 al 30/6/2016',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial ESCANEADO, sin capa de texto (confirmado con pdffonts/pdftotext) — transcripto vía OCR (Tesseract 5, español, 450dpi; algunas tablas anchas rotadas 90°). Con auditoría de Bertora y Asociados S.R.L. sin salvedades, 26/9/2016, firmado por Raúl H. Gámez como Presidente (su 3ra gestión, 2014-2017). Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2016.pdf (transcripción en balance-general-2016.md). Convertido a USD con $14,94, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2016. SUPERÁVIT real del ejercicio: $66.227.589 ARS. Mismo criterio de categorización que el resto (ver data/velez-data.js); TODAS las sumas del Anexo II/III/IV cerraron exacto contra los totales impresos, sin ruido de OCR detectado — y la columna comparativa "2015" de este mismo balance confirmó, en forma independiente, cada cifra ya cargada para el Ejercicio 2015.',
+    },
+  'velez-balance-2016-17': {
+      id:'velez-balance-2016-17', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°107, 1°/7/2016 al 30/6/2017',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial ESCANEADO, sin capa de texto (confirmado con pdffonts/pdftotext) — transcripto vía OCR (Tesseract 5, español, 300dpi; algunas tablas anchas rotadas 90° en el escaneo original). Con auditoría de Bertora y Asociados S.R.L. sin salvedades, 25/9/2017, firmado por Raúl H. Gámez como Presidente (su 3ra gestión, 2014-2017). Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2017.pdf (transcripción en balance-general-2017.md). Convertido a USD con $16,53, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2017. DÉFICIT real del ejercicio: $(73.534.953) ARS. Mismo criterio de categorización que el resto (ver data/velez-data.js); casi todas las filas del Anexo III cerraron su checksum interno exacto, el total del Anexo/Gastos Ordinarios tiene una diferencia de $40 (ruido de OCR irrelevante) contra el impreso.',
+    },
+  'velez-balance-2017-18': {
+      id:'velez-balance-2017-18', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°108, 1°/7/2017 al 30/6/2018',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (texto nativo, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 24/9/2018, firmado por Sergio D. Rapisarda como Presidente, su primera gestión), mismo archivo institucional. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2018.pdf. Convertido a USD con $28,75, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2018. SUPERÁVIT real del ejercicio: $342.815.648 ARS. Este ejercicio (cierre 30/6/2018) es el último ANTES de que la FACPCE empezara a considerar a la Argentina economía de alta inflación (desde el 1°/7/2018) — no tiene línea de RECPAM en Resultados financieros, a diferencia de todos los ejercicios posteriores. Mismo criterio de categorización que el resto (ver data/velez-data.js).',
+    },
+  'velez-balance-2018-19': {
+      id:'velez-balance-2018-19', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°109, 1°/7/2018 al 30/6/2019',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (texto nativo, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 16/9/2019, firmado por Sergio D. Rapisarda como Presidente), mismo archivo institucional. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2019.pdf. Convertido a USD con $42,263, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2019. SUPERÁVIT real del ejercicio: $370.018.627 ARS. Mismo criterio de categorización que el resto (ver data/velez-data.js); incluye una línea de crédito por "Regularización valuación plantel profesional de fútbol (Ejercicio 2015)" (mismo tipo de ajuste que aparece también en el Ejercicio 2020) y una línea nueva "Subvención a otras entidades" (donación del club a terceros, monto ínfimo, other_expenses).',
+    },
+  'velez-balance-2019-20': {
+      id:'velez-balance-2019-20', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°110, 1°/7/2019 al 30/6/2020',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (texto nativo, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 13/11/2020, firmado por Sergio D. Rapisarda como Presidente), mismo archivo institucional. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2020.pdf. Convertido a USD con $70,26, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2020. DÉFICIT real del ejercicio: $(145.019.616) ARS. Ejercicio de pandemia (COVID-19): incluye el mismo subsidio estatal "Subsidio A.T.P." que el Ejercicio 2021. Mismo criterio de categorización que el resto (ver data/velez-data.js); incluye una línea de crédito por "Regularización valuación plantel profesional de fútbol (Ejercicio 2015)" que reduce el costo de amortización de este ejercicio en particular.',
+    },
+  'velez-balance-2020-21': {
+      id:'velez-balance-2020-21', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°111, 1°/7/2020 al 30/6/2021',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (texto nativo, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 28/9/2021, firmado por Sergio D. Rapisarda como Presidente), mismo archivo institucional. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2021.pdf. Convertido a USD con $95,52, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2021. DÉFICIT real del ejercicio: $(753.625.872) ARS. Incluye un ingreso extraordinario COVID ("Subsidio A.T.P.", programa estatal de asistencia al trabajo y la producción) categorizado como other_income. Mismo criterio de categorización que 2022/2024/2025 (ver data/velez-data.js).',
+    },
+  'velez-balance-2021-22': {
+      id:'velez-balance-2021-22', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°112, 1°/7/2021 al 30/6/2022',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial (texto nativo, con informe de auditoría de Bertora y Asociados S.R.L. sin salvedades, 30/9/2022, firmado por Sergio D. Rapisarda como Presidente, NO Berlanga — ejercicio anterior a su gestión), mismo archivo institucional. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2022.pdf. Convertido a USD con $125,03, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2022. SUPERÁVIT real del ejercicio: $1.216.670.585 ARS. Mismo criterio de categorización que el resto (ver data/velez-data.js).',
+    },
+  'velez-balance-2022-23': {
+      id:'velez-balance-2022-23', clubId:'velez',
+      title:'Estados Contables (Balance General auditado), Ejercicio N°113, 1°/7/2022 al 30/6/2023',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://velez.com.ar/elclubesdelossocios/memorias-estados-contables',
+      note:'PDF oficial ESCANEADO, sin capa de texto (confirmado con pdffonts/pdftotext) — transcripto vía OCR (Tesseract 5, español, 300dpi; páginas con tablas anchas de 6 columnas rotadas 90° en el escaneo original se re-rotaron antes de correr el OCR para que saliera legible). Con auditoría de Bertora y Asociados S.R.L. sin salvedades, 25/9/2023, firmado por el Vicepresidente 1° (Lic. Diego González) en lugar de Rapisarda — Rapisarda se tomó licencia recién en julio 2023, después del cierre de este ejercicio, así que el ejercicio en sí transcurrió íntegro bajo su presidencia. Copia local en numeros-de-boca/Clubes/Argentina/Velez Sarsfield/balance-general-2023.pdf (transcripción en balance-general-2023.md). Convertido a USD con $256,30, el tipo de cambio de cierre que el propio balance declara en su Anexo VI para USD al 30/06/2023. SUPERÁVIT real del ejercicio: $522.234.138 ARS. Mismo criterio de categorización que el resto (ver data/velez-data.js); los números se verificaron con 2 sumas independientes del Anexo III antes de cargarlos (ambas coinciden exacto con el total impreso), no solo con el OCR crudo.',
+    },
+});
+
+gestionesByClub.velez = {
+    // Confirmado (Versión 83): Fabián Berlanga fue electo presidente el 12/11/2023 (nota oficial
+    // del club, velez.com.ar/club/notas/2023/11/12/220544_fabian-berlanga-presidente), mandato
+    // 2023-2026. `nombre` ya refleja esa fecha real de asunción. firstYear/lastYear siguen siendo
+    // el rango de EJERCICIOS REALES CARGADOS (no la fecha de asunción) — mismo criterio que
+    // "milito"/"blanco" de Racing. Ampliado a 2024 en la Versión 84 (el Ejercicio 114, 1°/7/2023 al
+    // 30/6/2024, cae bajo su gestión — asumió en noviembre 2023, a mitad de ese ejercicio).
+    berlanga: { nombre:'Berlanga (2023-actual)', firstYear:2024, lastYear:2025 },
+    // Confirmado (Versión 85): Sergio Rapisarda asumió por primera vez en noviembre 2017, fue
+    // reelecto en marzo 2021, y se tomó licencia en julio 2023 tras la agresión de barras (dejando
+    // paso, meses después, a la elección de Berlanga en noviembre 2023). Ampliado a 2018 en la
+    // Versión 89 (el Ejercicio 108, 1°/7/2017 al 30/6/2018, también cae dentro de su primera
+    // gestión — asumió en noviembre 2017, a mitad de este ejercicio).
+    // Ampliado a 2023 en la Versión 90 (Ejercicio 113, 1°/7/2022 al 30/6/2023) — el ejercicio
+    // transcurrió íntegro bajo su presidencia aunque el balance esté firmado por el Vicepresidente
+    // (Rapisarda se tomó licencia recién en julio 2023, después del cierre de este ejercicio).
+    rapisarda: { nombre:'Rapisarda (2017-2023)', firstYear:2018, lastYear:2023 },
+    // Confirmado por búsqueda (Versión 91): Raúl H. Gámez fue presidente de Vélez en 3 mandatos no
+    // consecutivos (1996-1999, 2002-2005, 2014-2017); el Ejercicio 2015 (1°/7/2014-30/6/2015) cae
+    // en su 3er mandato, el único cargado hasta ahora bajo su gestión.
+    // Ampliado a 2017 en la Versión 92 (Ejercicio 107, 1°/7/2016 al 30/6/2017, último de su 3ra
+    // gestión antes de que asumiera Rapisarda en noviembre 2017).
+    gamez: { nombre:'Gámez (2014-2017)', firstYear:2015, lastYear:2017 },
+  };
+
+memberCountByClub.velez = 72889;
+

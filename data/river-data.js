@@ -159,7 +159,7 @@ const riverFiscalYearMeta = {
     // a diferencia de cur.expenses que solo suma wages+otherExpenses) — el chequeo en verifyTieOuts
     // compara contra Math.abs(expenses)+Math.abs(nonCash), no contra expenses solo. Todo en ARS
     // millones (Versión 32).
-    officialTotalRevenue:207077.217738, officialTotalExpenses:149674.797729,
+    officialTotalRevenue:207077.217738, officialTotalExpenses:149674.797729, officialPAT:58945.518837,
   },
   2025: {
     currency:'USD', fx:null,
@@ -223,3 +223,39 @@ const riverTitulosData = [
   { anio:2023, competencia:'Trofeo de Campeones 2020 (jugado en feb-2023)', resultado:'Campeón', gestion:'brito' },
   { anio:2023, competencia:'Liga Profesional', resultado:'Campeón', gestion:'brito' },
 ];
+
+// Versión 95: registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, la
+// primera vez que se agrega este registro) — reemplaza los ternarios `clubId === 'river' ? ... :
+// clubId === 'racing' ? ... : ...` que había que extender a mano en finanzas-calc.js/
+// finanzas-render.js/index.html cada vez que se sumaba un club nuevo.
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA.river = {
+  revenueLinesByYear: riverRevenueLinesByYear, expenseLinesByYear: riverExpenseLinesByYear,
+  fiscalYearMeta: riverFiscalYearMeta, pasesData: riverPasesData,
+  resultadosData: riverResultadosData, titulosData: riverTitulosData,
+};
+
+
+Object.assign(sources, {
+  'river-placeholder': {
+      id:'river-placeholder', clubId:'river',
+      title:'Placeholder (números enteramente inventados, sin ninguna fuente todavía)',
+      type:'estimate_placeholder', reliability:'placeholder',
+      note:'Sigue sin fuente real el Ejercicio 2025 (gestión Brito) y el Ejercicio 2021 (última temporada de D\'Onofrio). El Ejercicio 2024 ya no es placeholder, ver river-estados-contables-2023-24. Pendiente: cargar balance o presupuesto oficial para el resto (ver fuentes-por-club.md).',
+    },
+  'river-estados-contables-2023-24': {
+      id:'river-estados-contables-2023-24', clubId:'river',
+      title:'Estados Contables (balance auditado), Ejercicio Económico N°123, 1°/9/2023 al 31/8/2024',
+      type:'unofficial_mirror', reliability:'secondary_mirror',
+      url:'https://turiver.s3.us-west-000.backblazeb2.com/original/4X/1/7/a/17ac4c09709f687d2249c3e21b8e7c5262b78116.pdf',
+      note:'PDF de 67 páginas con informe de auditoría independiente real y sellos de legalización, pero conseguido en una réplica subida por la comunidad tuRiver (turiver.com), NO desde el dominio oficial de River (riverplate.com/cariverplate.com.ar solo exponen la "Memoria" narrativa sin estados contables — ver river-data.js para el detalle de este hallazgo). El contenido en sí tiene toda la apariencia de ser el documento real y auditado; lo que no está confirmado por canal primario es la vía de distribución. Copia local en numeros-de-boca/Clubes/Argentina/River/estados-contables-leads/turiver-estados-contables.pdf. Transcripción completa en Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md. Convertido a USD con $950,50, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo V (Versión 32; antes se usaba $953,50, una cotización externa de Rava Bursátil/BCRA).',
+    },
+});
+
+gestionesByClub.river = {
+    brito:    { nombre:'Brito (2021-actual)',   firstYear:2025, lastYear:2025 },
+    donofrio: { nombre:"D'Onofrio (2013-2021)", firstYear:2021, lastYear:2021 },
+  };
+
+memberCountByClub.river = null;
+

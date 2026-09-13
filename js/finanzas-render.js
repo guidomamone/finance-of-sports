@@ -672,7 +672,7 @@
       gestionSelect.innerHTML = Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
       // Ternario, no un objeto armado de una (ver mismo comentario en drawTrendChartGeneric): con
       // lazy-loading, el club que no se está mirando puede no estar cargado todavía.
-      const meta = clubId === 'river' ? riverFiscalYearMeta : clubId === 'racing' ? racingFiscalYearMeta : velezFiscalYearMeta;
+      const meta = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
       // Object.keys() de un objeto con claves numéricas ("2024","2025"...) las devuelve SIEMPRE en
       // orden ASCENDENTE (son "integer-like keys". JS las reordena así sin importar el orden en el
       // código fuente), por eso salía el ejercicio más viejo primero. Se ordena acá a mano,
@@ -839,7 +839,7 @@
         : { reportType:'placeholder', sourceId:'boca-placeholder-historico' };
     } else {
       const year = isGestion ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear : parseInt(document.getElementById('anioSelect').value, 10);
-      meta = (currentClub === 'river' ? riverFiscalYearMeta[year] : currentClub === 'racing' ? racingFiscalYearMeta[year] : velezFiscalYearMeta[year]) || {};
+      meta = (CLUB_GENERIC_DATA[currentClub].fiscalYearMeta[year]) || {};
     }
     // REGLA (Versión 58): 'official_budget_and_balance' (ejercicio con las 2 fuentes reales
     // cargadas a la vez, ver club-or-year-onboarding/SKILL.md sección 11) es tan "real" como

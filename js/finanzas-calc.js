@@ -52,7 +52,7 @@
   // placeholder de Boca) para que el toggle igual funcione, aunque sea con un número aproximado.
   function yearMetaFor(clubId, year){
     if(clubId === 'boca') return yearMeta(year);
-    const table = clubId === 'river' ? riverFiscalYearMeta : clubId === 'racing' ? racingFiscalYearMeta : velezFiscalYearMeta;
+    const table = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
     const m = (table && table[year]) || {};
     return { currency: m.currency || 'USD', fx: (m.fx != null ? m.fx : FX_RATE) };
   }
@@ -668,9 +668,10 @@
   function computeYearGeneric(clubId, year){
     // Versión 82: se sumó la 3ra rama (Vélez) a los 3 ternarios de esta función, primer club nuevo
     // desde que el motor genérico existe (antes solo river/racing) — ver nota en yearMetaFor.
-    const revenueLines = (clubId === 'river' ? riverRevenueLinesByYear[year] : clubId === 'racing' ? racingRevenueLinesByYear[year] : velezRevenueLinesByYear[year]) || [];
-    const expenseLines = (clubId === 'river' ? riverExpenseLinesByYear[year] : clubId === 'racing' ? racingExpenseLinesByYear[year] : velezExpenseLinesByYear[year]) || [];
-    const meta = (clubId === 'river' ? riverFiscalYearMeta[year] : clubId === 'racing' ? racingFiscalYearMeta[year] : velezFiscalYearMeta[year]) || {};
+    const gd = CLUB_GENERIC_DATA[clubId];
+    const revenueLines = (gd.revenueLinesByYear[year]) || [];
+    const expenseLines = (gd.expenseLinesByYear[year]) || [];
+    const meta = (gd.fiscalYearMeta[year]) || {};
     const revenue = revenueLines.reduce((s,l) => s + l.amountNative, 0);
     const wages = sumCat(expenseLines, ['wages_squad']);
     // Versión 53: match_organisation_expense/youth_other_sports_expense/admin_general_expense son
@@ -794,7 +795,7 @@
       if(year === 2024 || year === 2026) return 'pending_official';
       return 'placeholder';
     }
-    const table = clubId === 'river' ? riverFiscalYearMeta : clubId === 'racing' ? racingFiscalYearMeta : velezFiscalYearMeta;
+    const table = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
     return ((table[year]) || {}).reportType || 'placeholder';
   }
 
@@ -847,9 +848,7 @@
   // club que el visitante NO eligió puede leer una variable global todavía no cargada).
   function allYearsRangeForClub(clubId){
     const keys = clubId === 'boca' ? Object.keys(yearsRaw)
-      : clubId === 'river' ? Object.keys(riverFiscalYearMeta)
-      : clubId === 'racing' ? Object.keys(racingFiscalYearMeta)
-      : Object.keys(velezFiscalYearMeta);
+      : Object.keys(CLUB_GENERIC_DATA[clubId].fiscalYearMeta);
     const years = keys.map(Number);
     const min = Math.min(...years), max = Math.max(...years);
     const range = [];

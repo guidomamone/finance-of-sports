@@ -161,11 +161,42 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
      index.html): `{ river: 'data/river-data.js', racing: 'data/racing-data.js', <club>:
      'data/<club>-data.js' }`. Con solo esto, `loadClubData(clubId)` ya sabe inyectar el `<script>`
      la primera vez que alguien elige ese club en `clubSelect`.
-  2. Sumá una rama al ternario de `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub`
-     (mismo archivo, index.html): `clubId === '<club>' ? <club>PasesData : ...`.
-  3. Sumá un bloque nuevo a `verifyTieOuts()`, gateado igual que los de racing/river:
-     `if(typeof <club>FiscalYearMeta !== 'undefined'){ ...checks.push(...)... }`. Sin este guard,
-     el chequeo tira `ReferenceError` para cualquier visitante que todavía no cargó ese club.
+  1b. Sumá la entrada de identidad del club a `clubs{}` en `data/clubs.js` (`id`/`name`/
+     `displayName`/`country`/`reportingCurrency`/`fiscalYearStart`, copiá el shape de cualquier
+     club ya cargado). `displayName` (Versión 101) es el nombre CORTO que se muestra en el
+     dropdown del header — es OBLIGATORIO, `populateClubSelect()` (index.html) arma el `<option>`
+     de cada club a partir de este campo y ordena alfabéticamente por él; si falta, tira
+     `TypeError` al armar el dropdown para TODOS los clubes, no solo el nuevo. El dropdown en sí ya
+     NO se edita a mano (antes sí, ver comentario de `#clubSelect` en index.html). ÚNICO campo que
+     sigue siendo centralizado en `data/clubs.js` — hace falta ANTES de elegir ningún club (el
+     dropdown se arma al cargar la página), así que no puede autoregistrarse desde un archivo que
+     todavía no se pidió, a diferencia de todo lo del punto 1c.
+  1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` (Versión 101) NO se tocan en
+     `data/clubs.js` — se autoregistran al final de tu propio `data/<club>-data.js`, mismo momento
+     que el registro en `CLUB_GENERIC_DATA` (punto 2 de abajo), copiando el patrón de cualquier
+     club ya cargado como plantilla:
+     ```js
+     Object.assign(sources, { '<club>-fuente-1': {...}, '<club>-fuente-2': {...} });
+     gestionesByClub.<club> = { <gestionId>: { nombre:'...', firstYear:..., lastYear:... } };
+     memberCountByClub.<club> = <número o null>;
+     ```
+     Nunca redeclares estos 3 con `const` (ya existen, declarados una sola vez en `data/clubs.js`
+     con Boca adentro) — solo asignales una propiedad nueva o hacé `Object.assign`. Esto es seguro
+     porque los 3 solo se LEEN para el club actualmente elegido (después de que su propio archivo ya
+     cargó), a diferencia de `clubs{}` (punto 1b), que hace falta para TODOS los clubes desde el
+     arranque.
+  2. `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` (index.html) NO necesitan
+     ningún cambio manual: leen `CLUB_GENERIC_DATA[clubId].pasesData` (etc.) directo, y tu
+     `data/<club>-data.js` ya se autorregistra ahí (`window.CLUB_GENERIC_DATA.<club> = {...}`, ver
+     el final de cualquier archivo de club ya cargado como plantilla) — con eso alcanza.
+  3. `verifyTieOuts()` (Versión 101, refactor de escalabilidad) tampoco necesita ningún cambio
+     manual: itera solo `Object.keys(window.CLUB_GENERIC_DATA)`, así que agregar tu club a ese
+     registro (punto 2) ya alcanza para que se verifique. Lo único que hace falta es que cada año
+     de tu `<club>FiscalYearMeta[year]` tenga `officialTotalRevenue`/`officialTotalExpenses`
+     (ya hacía falta antes, para otras cuentas) y, si el ejercicio tiene un balance auditado real
+     (no un presupuesto puro), también `officialPAT` (el "Superávit/Déficit del ejercicio" impreso)
+     — sin ese 3er campo, ese año simplemente no suma el check de Resultado neto, mismo criterio
+     que un presupuesto sin balance (ver Racing 2019/2026/2027 como ejemplo).
   4. Si el club nuevo pasa a ser el DEFAULT en vez de Boca (poco probable, pero por si acaso): recién
      ahí su `data/<club>-data.js` sí va al `<head>` como `<script src>` fijo, sacándolo de
      `CLUB_DATA_SCRIPT_SRC`, mismo criterio que hoy tiene Boca.
@@ -186,8 +217,8 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
   nuevo y confirmar que ahí SÍ aparece un único GET 200; volver a Boca y de nuevo al club nuevo, y
   confirmar que esta vez NO se vuelve a pedir (debe quedar cacheado en `clubDataLoaded`). Un
   `window.addEventListener('error', ...)` propio durante ese ciclo (en vez de solo leer la consola
-  acumulada) es más confiable para no dejar pasar un `ReferenceError` real, ver Versión 51 del
-  historial de index.html para el detalle de los 2 bugs que este chequeo habría agarrado.
+  acumulada) es más confiable para no dejar pasar un `ReferenceError` real, ver Versión 51 en
+  `Proyecto Boca.md` para el detalle de los 2 bugs que este chequeo habría agarrado.
 
 ## 4. Bug real encontrado en esta sesión, gastosTotal ya viene convertido
 
@@ -336,8 +367,11 @@ camino más rápido y menos propenso a error:
 4. Agregar el año nuevo a `gestionesByClub[club][gestion].lastYear` si corresponde (el ejercicio
    nuevo pasa a ser el más reciente de esa gestión), fácil de olvidar, y sin esto "Por gestión" no
    recoge el año nuevo aunque "Año a año" sí lo muestre.
-5. Sumar el año nuevo a `verifyTieOuts()` (Revenue y Expenses contra los totales oficiales impresos)
-  , mismo criterio que los años ya cargados de ese club.
+5. Agregar `officialTotalRevenue`/`officialTotalExpenses`/`officialPAT` (si hay balance auditado
+   real, no solo presupuesto) al `fiscalYearMeta[year]` del año nuevo, en el propio
+   `data/<club>-data.js` (mismo criterio que los años ya cargados de ese club) — desde la Versión
+   101, `verifyTieOuts()` ya NO se edita a mano: itera sola cualquier año que tenga estos campos,
+   para cualquier club en `CLUB_GENERIC_DATA`.
 
 ## 10. El sufijo entre paréntesis del dropdown "Año": SOLO 4 palabras posibles, nunca una 5ta
 
@@ -637,6 +671,44 @@ Verificado en el navegador (no opcional), las 3 rondas: Boca 2026/2027 ("Presupu
 2017/2018— con columna primaria "Balance"/"AAAA/AAAA" + columna overlay "Presupuesto"/"AAAA/AAAA"
 (mismo año en las 2, 2 líneas cada una) — ningún caso invade el texto de la columna "% del total"
 de al lado.
+
+## 15. REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual
+
+Motivo del pedido: Instituto ACC publicó su Presupuesto 2025 (y sus Premisas) en año calendario
+(ene-25 a dic-25, con columna por mes), pero el sitio entero modela todo en TEMPORADA/ejercicio
+económico (el mismo criterio que ya usa el balance auditado real de ese club, jul-jun) — cargar el
+documento tal cual metería un `year` key que no es comparable con ningún otro del mismo club (un
+"año" que arranca en enero, al lado de ejercicios que arrancan en julio).
+
+**La regla, para cualquier club futuro que publique un presupuesto en año calendario**: nosotros
+mismos reconstruimos la temporada, no lo subimos en año calendario. Si el documento tiene desglose
+MENSUAL (columna por mes, no solo un total anual), se puede partir en 2 mitades de 6 meses y sumar
+cada mitad con la mitad correspondiente de OTRO presupuesto calendario (el del año anterior o el
+siguiente) para reconstruir una temporada completa (ene-jun de un año + jul-dic del año anterior =
+temporada jul-jun). Si el documento NO tiene desglose mensual (solo un total del año calendario
+entero), no hay forma de reconstruir ninguna temporada con un solo documento — hace falta el
+documento del año calendario siguiente/anterior igual, para poder recortar cada uno a su mitad útil
+antes de sumarlos.
+
+**Caso real que disparó la regla, Instituto Presupuesto 2025**: SÍ tiene desglose mensual (12
+columnas, ene-25 a dic-25 — ver `Clubes/Argentina/Instituto/presupuesto-2025.md`), así que en teoría
+se podrían reconstruir 2 mitades de temporada: ene-jun 2025 (2da mitad del Ejercicio 2024/2025) y
+jul-dic 2025 (1ra mitad del Ejercicio 2025/2026). Pero Instituto solo tiene ESTE presupuesto
+descargado — no hay un Presupuesto 2024 (para completar la mitad jul-dic 2024 del Ejercicio
+2024/2025) ni un Presupuesto 2026 (para completar la mitad ene-jun 2026 del Ejercicio 2025/2026) —
+así que NINGUNA de las 2 temporadas queda completa con lo que tenemos hoy. Conclusión (regla
+explícita de Guido: "para el caso en que tengamos solo la mitad de un año y sea irreconstruible,
+mantengamos esa info pero no subamos info incompleta"): **no se cargó nada al sitio** para este
+presupuesto — ni el año calendario tal cual (rompería el modelo de datos), ni una mitad de temporada
+sola (sería un ejercicio incompleto, y el sitio no tiene forma de marcar "esto es solo 6 meses" sin
+que se lea como un ejercicio completo raro). El documento y el hallazgo quedan documentados en
+`fuentes/Argentina/Instituto.md` (ver el índice en `fuentes-por-club.md`) para que si en el futuro aparece el Presupuesto 2024 o
+2026 del mismo club, se pueda completar una de las 2 temporadas y recién ahí cargarla.
+
+**Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la
+última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio
+documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa
+columna es diciembre del MISMO año 2025), no un error de transcripción.
 
 ## Cómo mantener este skill
 

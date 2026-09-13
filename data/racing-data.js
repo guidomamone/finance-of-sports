@@ -1037,7 +1037,7 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     grossDebt:115.415132, cash:1.275318, profitOnPlayerSales:0, assetSales:0, netInterest:-0.980936, tax:0,
-    officialTotalRevenue:184.791901, officialTotalExpenses:166.786611,
+    officialTotalRevenue:184.791901, officialTotalExpenses:166.786611, officialPAT:17.024354,
   },
   // Ejercicio N° 111 (1°/11/2012 al 31/10/2013, ver comentario completo junto a
   // racingRevenueLinesByYear[2013]). Balance real (`reportType:'official_balance_sheet'`).
@@ -1054,7 +1054,7 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     grossDebt:133.030906, cash:4.180729, profitOnPlayerSales:0, assetSales:0, netInterest:0.166121, tax:0,
-    officialTotalRevenue:188.690953, officialTotalExpenses:177.630233,
+    officialTotalRevenue:188.690953, officialTotalExpenses:177.630233, officialPAT:11.226840,
   },
   // Ejercicio N° 112 (1°/11/2013 al 31/8/2014, irregular de 10 meses, ver comentario completo
   // junto a racingRevenueLinesByYear[2014]). `reportType:'official_budget_and_balance'`: este
@@ -1071,7 +1071,7 @@ const racingFiscalYearMeta = {
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
     grossDebt:91.442572, cash:4.696944, profitOnPlayerSales:0, assetSales:0, netInterest:16.451126, tax:0,
-    officialTotalRevenue:302.631868, officialTotalExpenses:218.146259,
+    officialTotalRevenue:302.631868, officialTotalExpenses:218.146259, officialPAT:100.936735,
   },
   // Ejercicio N° 114 (1°/9/2015 al 31/8/2016, ver comentario completo junto a
   // racingRevenueLinesByYear[2016]). `reportType:'official_budget_and_balance'`: este balance
@@ -1087,7 +1087,7 @@ const racingFiscalYearMeta = {
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
     grossDebt:98.450187, cash:42.030653, profitOnPlayerSales:0, assetSales:0, netInterest:23.657963, tax:0,
-    officialTotalRevenue:611.968373, officialTotalExpenses:441.653033,
+    officialTotalRevenue:611.968373, officialTotalExpenses:441.653033, officialPAT:193.973303,
   },
   // Ejercicio N° 113 (1°/9/2014 al 31/8/2015, ver comentario completo junto a
   // racingRevenueLinesByYear[2015]). Balance real (`reportType:'official_balance_sheet'`, sin
@@ -1102,7 +1102,7 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:'blanco',
     grossDebt:65.098611, cash:7.838386, profitOnPlayerSales:0, assetSales:0, netInterest:3.884192, tax:0,
-    officialTotalRevenue:430.314984, officialTotalExpenses:331.654662,
+    officialTotalRevenue:430.314984, officialTotalExpenses:331.654662, officialPAT:102.544513,
   },
   // Ejercicio N° 115 (1°/9/2016 al 31/8/2017, ver comentario completo junto a
   // racingRevenueLinesByYear[2017]). Balance real (`reportType:'official_balance_sheet'`, sin
@@ -1116,7 +1116,7 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:'blanco',
     grossDebt:198.933525, cash:41.104353, profitOnPlayerSales:0, assetSales:0, netInterest:37.720415, tax:0,
-    officialTotalRevenue:804.833215, officialTotalExpenses:708.392954,
+    officialTotalRevenue:804.833215, officialTotalExpenses:708.392954, officialPAT:134.160676,
   },
   // Ejercicio 2017/2018 (Ejercicio N° 116, ver comentario completo junto a
   // racingRevenueLinesByYear[2018]). fx = 36,65, declarado en el Anexo V "Activos y pasivos en
@@ -1145,7 +1145,7 @@ const racingFiscalYearMeta = {
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
     grossDebt:458.940640, cash:405.685775, profitOnPlayerSales:0, assetSales:0, netInterest:177.149112, tax:0,
-    officialTotalRevenue:1789.819233, officialTotalExpenses:1350.447843,
+    officialTotalRevenue:1789.819233, officialTotalExpenses:1350.447843, officialPAT:616.520502,
   },
   // Ejercicio 2018/2019 (1°/9/2018 al 31/8/2019, ver comentario completo junto a
   // racingRevenueLinesByYear[2019]). PRESUPUESTO-ONLY, sin balance real cargado todavía para este
@@ -1190,7 +1190,7 @@ const racingFiscalYearMeta = {
     // M, pero esa cifra pertenece al año 2019, no se puede usar acá sin re-extraer del balance de
     // ESE ejercicio, ver skill sección 6.5).
     grossDebt:715.799969, cash:585.611084, profitOnPlayerSales:0, assetSales:0, netInterest:227.570638, tax:0,
-    officialTotalRevenue:2436.102976, officialTotalExpenses:2940.733186,
+    officialTotalRevenue:2436.102976, officialTotalExpenses:2940.733186, officialPAT:-277.059572,
   },
   // Ejercicio 2020/2021 (Ejercicio N° 119, irregular de 10 meses: 1°/9/2020 al 30/6/2021, gestión
   // Blanco, ver comentario completo junto a racingRevenueLinesByYear[2021]). fx = 95,52, declarado
@@ -1208,7 +1208,7 @@ const racingFiscalYearMeta = {
     // cash = Caja y bancos (misma página). netInterest = "Resultados Financieros y por tenencia
     // (Incluyendo el R.E.C.P.A.M.)" del Estado de recursos y gastos (pág. 5, columna 2021).
     grossDebt:885.305109, cash:1154.224649, profitOnPlayerSales:0, assetSales:0, netInterest:75.896098, tax:0,
-    officialTotalRevenue:3335.562848, officialTotalExpenses:3404.446864,
+    officialTotalRevenue:3335.562848, officialTotalExpenses:3404.446864, officialPAT:7.012082,
   },
   2024: {
     currency:'ARS', fx:909,
@@ -1224,7 +1224,7 @@ const racingFiscalYearMeta = {
     // = Total de Gastos Ordinarios impreso ($55.847.189.733) + Depreciaciones ($2.488.762.976) +
     // Previsiones/Amortizaciones intangibles ($20.832.011.983), porque esas dos últimas se cargaron
     // como líneas de expenseLines (no como meta) — ver verifyTieOuts. Todo en ARS millones (Versión 32).
-    officialTotalRevenue:66367.712489, officialTotalExpenses:79167.964692,
+    officialTotalRevenue:66367.712489, officialTotalExpenses:79167.964692, officialPAT:-6127.619872,
   },
   2025: {
     currency:'ARS', fx:1196,
@@ -1235,7 +1235,7 @@ const racingFiscalYearMeta = {
     // (pág. 2 del balance 2024-25, columna 30/06/2025); netInterest del Estado de recursos y gastos
     // (pág. 3, columna 2025).
     grossDebt:48210.858049, cash:9738.609524, profitOnPlayerSales:0, assetSales:0, netInterest:3715.545468, tax:0,
-    officialTotalRevenue:87399.617009, officialTotalExpenses:91293.614298,
+    officialTotalRevenue:87399.617009, officialTotalExpenses:91293.614298, officialPAT:-178.451821,
   },
   2026: {
     currency:'ARS', fx:1438,
@@ -1570,3 +1570,192 @@ const racingTitulosData = [
   { anio:2024, competencia:'Copa Sudamericana', resultado:'Campeón', gestion:'blanco' },
   { anio:2025, competencia:'Recopa Sudamericana', resultado:'Campeón', gestion:'milito' },
 ];
+
+// Versión 95: registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js).
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA.racing = {
+  revenueLinesByYear: racingRevenueLinesByYear, expenseLinesByYear: racingExpenseLinesByYear,
+  fiscalYearMeta: racingFiscalYearMeta, pasesData: racingPasesData,
+  resultadosData: racingResultadosData, titulosData: racingTitulosData,
+};
+
+
+Object.assign(sources, {
+  'racing-presupuesto-2025-26-prensa': {
+      id:'racing-presupuesto-2025-26-prensa', clubId:'racing',
+      title:'Cobertura de prensa del presupuesto económico-financiero de Racing, julio 2025 a junio 2026',
+      type:'press_coverage_of_assembly', reliability:'secondary_press',
+      url:'https://x.com/Sacostaracing/status/1944855768127431049',
+      note:'Hilo de X con el resumen presentado en asamblea, no el documento oficial del club. Los rubros vienen agrupados de forma más gruesa que los de Boca — por ejemplo "fútbol profesional" junto en vez de separado por TV/matchday/pases. Donde la prensa no desglosaba un monto, se dejó como línea residual "no desglosado" en vez de inventar categorías.',
+    },
+  'racing-placeholder': {
+      id:'racing-placeholder', clubId:'racing',
+      title:'Placeholder (ya no se usa — ver racing-balance-2023-24/2024-25/racing-presupuesto-2025-26)',
+      type:'estimate_placeholder', reliability:'placeholder',
+      note:'Todas las finanzas de Racing que estaban cargadas con esta fuente (Blanco placeholder puro, Milito con dato de prensa) se reemplazaron por documentos oficiales reales en la Versión 15/16. Queda esta entrada solo por si algún dato viejo la sigue referenciando.',
+    },
+  'racing-balance-2009': {
+      id:'racing-balance-2009', clubId:'racing',
+      title:'Estado de Recursos y Gastos (balance auditado), Ejercicio N°107, 1°/11/2008 al 31/10/2009',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2009.pdf',
+      note:'PDF oficial (22 páginas, con texto extraíble nativo) bajado directo de racingclub.com.ar/informes/. Ejercicio anterior a la presidencia de Víctor Blanco (asumió en 2013) — no se identificó con confianza quién presidía el club en este ejercicio específico, ver comentario en data/racing-data.js. El balance en sí documenta que Racing venía de una quiebra (línea "Resultado Extraordinario s/Quiebra"). GANANCIA real del ejercicio de $2.687.137 ARS. Cifras en pesos históricos, SIN reexpresión por inflación (la práctica de moneda homogénea/RT6 llegó recién con la crisis de los 2020) — convertido a USD con el dólar mayorista de cierre estimado en $3,82 al 31/10/2009 (no se encontró la cotización exacta de ese día puntual, se usó la cotización más cercana disponible, ver comentario en racing-data.js). Copia local en numeros-de-boca/Clubes/Argentina/Racing/balance2009.pdf.',
+    },
+  'racing-balance-2010': {
+      id:'racing-balance-2010', clubId:'racing',
+      title:'Estado de Recursos y Gastos (balance auditado), Ejercicio N°108, 1°/11/2009 al 31/10/2010',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2010.pdf',
+      note:'PDF oficial (25 páginas, texto extraíble nativo) bajado directo de racingclub.com.ar/informes/. PÉRDIDA real del ejercicio de $(9.714.118) ARS. Convertido a USD con el dólar mayorista interpolado linealmente entre los valores de apertura ($3,82) y cierre ($4,01) de 2010 publicados por cotizacion-dolar.com.ar (no se encontró la cotización exacta del 31/10/2010) — estimado en $3,98. Copia local en numeros-de-boca/Clubes/Argentina/Racing/balance2010.pdf.',
+    },
+  'racing-balance-2011': {
+      id:'racing-balance-2011', clubId:'racing',
+      title:'Estado de Recursos y Gastos (balance auditado), Ejercicio N°109, 1°/11/2010 al 31/10/2011',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2011.pdf',
+      note:'PDF oficial (23 páginas, texto extraíble nativo) bajado directo de racingclub.com.ar/informes/. GANANCIA real del ejercicio de $267.202 ARS (el propio documento imprime la fila como "RESULTADO FINAL (Pérdida)" pese a ser positiva — verificado por aritmética propia antes de cargar, es un rótulo de plantilla mal actualizado del documento original, no un error de este sitio). Convertido a USD con el dólar mayorista interpolado entre apertura ($4,01) y cierre ($4,32) de 2011 — estimado en $4,27, mismo criterio y misma limitación de fuente que el Ejercicio 2010. Copia local en numeros-de-boca/Clubes/Argentina/Racing/balance2011.pdf.',
+    },
+  'racing-balance-2012': {
+      id:'racing-balance-2012', clubId:'racing',
+      title:'Memoria y Balance (balance auditado), Ejercicio N°110, 1°/11/2011 al 31/10/2012',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2012.pdf',
+      note:'PDF oficial (25 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; los Anexos II/III y el de Moneda Extranjera estaban en landscape rotado dentro de la página portrait, se rotaron para leerlos). Presidente Gastón Federico Cogorno (PRE-Blanco). BENEFICIO real del ejercicio de $17.024.354 ARS. A diferencia de 2009-2011 (cargados en USD ya-convertido con un dólar mayorista investigado externamente), este ejercicio se cargó en ARS NATIVO con $4,7260 por dólar, el tipo de cambio que el propio balance declara en su Anexo de Moneda Extranjera (lado Activo — el lado Pasivo usa $4,7660, inconsistencia menor). Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2012.pdf + racing-balance-2012.md).',
+    },
+  'racing-balance-2013': {
+      id:'racing-balance-2013', clubId:'racing',
+      title:'Memoria y Balance (balance auditado), Ejercicio N°111, 1°/11/2012 al 31/10/2013',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2013.pdf',
+      note:'PDF oficial (28 páginas, 110° aniversario del club), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal, aunque de calidad de escaneo más baja que otros años; los Anexos II/III y el de Moneda Extranjera estaban en landscape rotado dentro de la página portrait, se rotaron para leerlos). BENEFICIO real del ejercicio de $11.226.840 ARS. Presidencia de este ejercicio puntual INCIERTA (ninguna página del balance muestra firma rotulada "Presidente"; cargado como gestionId:null por inferencia de fecha, no confirmado — ver nota en racing-balance-2013.md). Convertido a USD con $5,8720 por dólar, la tasa dominante que declara el propio balance en su Anexo de Moneda Extranjera. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2013.pdf + racing-balance-2013.md).',
+    },
+  'racing-balance-2014': {
+      id:'racing-balance-2014', clubId:'racing',
+      title:'Memoria y Balance (balance auditado), Ejercicio N°112 (irregular de 10 meses), 1°/11/2013 al 31/8/2014',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2014.pdf',
+      note:'PDF oficial (38 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; los Anexos II/III y el de Moneda Extranjera estaban en landscape rotado dentro de la página portrait, se rotaron para leerlos). Ejercicio irregular de 10 meses, de transición del cierre de octubre al de agosto. Presidente Víctor Blanco Rodríguez. BENEFICIO real del ejercicio de $100.936.735 ARS. Mismo ejercicio que `racing-presupuesto-2013-14` (cargado antes como dato primario, ahora columna "Presupuesto" de comparación) — con este balance el ejercicio pasa a `reportType:\'official_budget_and_balance\'`. Convertido a USD con $8,3070 por dólar, la tasa dominante que el propio balance declara en su Anexo de Moneda Extranjera. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2014.pdf + racing-balance-2014.md).',
+    },
+  'racing-presupuesto-2013-14': {
+      id:'racing-presupuesto-2013-14', clubId:'racing',
+      title:'Presupuesto Financiero, Ejercicio 2013/2014 (1°/9/2013 al 31/8/2014)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto2013-14.pdf',
+      note:'PDF oficial (10 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; las 3 páginas de tabla estaban en landscape rotado 90° dentro de la página portrait, se rotaron para leerlas). Primer presupuesto de la gestión Blanco cargado al sitio (firmado por Víctor Blanco Rodríguez como Presidente). Mismo ejercicio que `racing-balance-2014` (el balance real, dato primario desde que se cargó — este presupuesto pasó a ser la columna "Presupuesto" de comparación en "Estado de resultados"). Convertido a USD con $6,00 por dólar, promedio de los 2 puntos que el propio presupuesto declara como premisa ($5,80 al 31/12/13, $6,20 para el semestre siguiente). Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (presupuesto2013-14.pdf + racing-presupuesto-2013-14.md).',
+    },
+  'racing-balance-2014-15': {
+      id:'racing-balance-2014-15', clubId:'racing',
+      title:'Memoria y Balance (balance auditado), Ejercicio N°113, 1°/9/2014 al 31/8/2015',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2015.pdf',
+      note:'PDF oficial (25 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; los Anexos I/II/III y el de Moneda Extranjera estaban en landscape rotado dentro de la página portrait, se rotaron para leerlos). BENEFICIO real del ejercicio de $102.544.513 ARS. Sin presupuesto propio en el archivo para este mismo ejercicio (salta de presupuesto2013-14 a presupuesto2015-16). Convertido a USD con $9,20 por dólar, el dólar oficial de cierre de agosto de 2015, la tasa dominante que declara el propio balance en su Anexo de Moneda Extranjera (algunas líneas de crédito heredadas mantienen tipos de cambio históricos congelados de ejercicios anteriores, no representativos, no se usaron). Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2015.pdf + racing-balance-2014-15.md).',
+    },
+  'racing-balance-2017': {
+      id:'racing-balance-2017', clubId:'racing',
+      title:'Memoria y Balance (balance auditado), Ejercicio N°115, 1°/9/2016 al 31/8/2017',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2017.pdf',
+      note:'PDF oficial (34 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; los Anexos I/II/III/V estaban en landscape rotado dentro de la página portrait, se rotaron para leerlos). Segundo ejercicio con auditoría externa (Estudio Bertora y Asociados S.R.L.). Presidente Víctor Blanco Rodríguez. SUPERÁVIT real del ejercicio de $134.160.676 ARS. Sin presupuesto propio en el archivo (no existe presupuesto2016-17.pdf). La columna comparativa "31/08/2016" de este documento coincide exacto con racing-balance-2016 (a diferencia de la transición 2015→2016, acá no hubo reclasificación del auditor). Convertido a USD con $17,21 por dólar, la tasa dominante que el propio balance declara en su Anexo V. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2017.pdf + racing-balance-2017.md).',
+    },
+  'racing-balance-2016': {
+      id:'racing-balance-2016', clubId:'racing',
+      title:'Memoria y Balance (balance auditado), Ejercicio N°114, 1°/9/2015 al 31/8/2016',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2016.pdf',
+      note:'PDF oficial (36 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; los Anexos II/III/V estaban en landscape rotado dentro de la página portrait, se rotaron para leerlos). Primer ejercicio con auditoría externa (Estudio Bertora y Asociados S.R.L.). Presidente Víctor Blanco Rodríguez. BENEFICIO real del ejercicio de $193.973.303 ARS. Mismo ejercicio que `racing-presupuesto-2015-16` (cargado antes como dato primario, ahora columna "Presupuesto" de comparación) — con este balance el ejercicio pasa a `reportType:\'official_budget_and_balance\'`. OJO: la columna comparativa "31/08/2015" de este documento fue reclasificada por el nuevo auditor (Nota 1.c del propio documento) y NO coincide con `racing-balance-2014-15` — no se tocaron los datos ya cargados de ese ejercicio, ver nota completa en racing-balance-2016.md. Convertido a USD con $14,83 por dólar, la tasa dominante que el propio balance declara en su Anexo V. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2016.pdf + racing-balance-2016.md).',
+    },
+  'racing-presupuesto-2015-16': {
+      id:'racing-presupuesto-2015-16', clubId:'racing',
+      title:'Presupuesto Financiero, Ejercicio 2015/2016 (1°/9/2015 al 31/8/2016)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto2015-16.pdf',
+      note:'PDF oficial (11 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal; las 3 páginas de tabla estaban en landscape rotado 90° dentro de la página portrait, se rotaron para leerlas). Mismo formato que `racing-presupuesto-2013-14`, con premisas macro que ya reflejan la devaluación de diciembre de 2015 (2 tipos de cambio declarados, dólar y euro). Mismo ejercicio que `racing-balance-2016` (el balance real, dato primario desde que se cargó — este presupuesto pasó a ser la columna "Presupuesto" de comparación). Convertido a USD con $11,80 por dólar, promedio de los 2 puntos que el propio presupuesto declara como premisa ($10,10 al 31/12/15, $13,5 para el semestre siguiente). Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (presupuesto2015-16.pdf + racing-presupuesto-2015-16.md).',
+    },
+  'racing-presupuesto-2017-18': {
+      id:'racing-presupuesto-2017-18', clubId:'racing',
+      title:'Presupuesto Financiero, Ejercicio 2017/2018 (1°/9/2017 al 31/8/2018)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto2017-18.pdf',
+      note:'PDF oficial (11 páginas, texto extraíble nativo) del archivo de racingclub.com.ar/informes/. Presupuesto de Recursos y Gastos en base de CAJA (cash-flow mensual, 12 columnas), no el formato acumulado/accrual de los presupuestos 2025-26/2026-27. Mismo ejercicio que `racing-balance-2018` (el balance real, dato primario desde la Versión 64) — este presupuesto es la columna "Presupuesto" de comparación en "Estado de resultados". Convertido a USD con $20 por dólar, el tipo de cambio único que el propio presupuesto declara como premisa ("Premisas Macro"), distinto al $36,65 del balance. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (presupuesto2017-18.pdf + racing-presupuesto-2017-18.md).',
+    },
+  'racing-presupuesto-2018-19': {
+      id:'racing-presupuesto-2018-19', clubId:'racing',
+      title:'Presupuesto Financiero de Recursos y Gastos, Ejercicio 2018/2019 (1°/9/2018 al 31/8/2019)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto2018-19.pdf',
+      note:'PDF oficial (9 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal en ninguna página; las 2 páginas de tabla estaban en landscape rotado 90° dentro de la página portrait, se rotó la imagen para leerlas en orientación normal). Sin balance real cargado todavía para este mismo ejercicio (`reportType:\'official_budget\'` simple) — es un ejercicio PRESUPUESTO-ONLY por ahora, mismo estado en el que estuvo `racing-presupuesto-2017-18` hasta que se cargó su balance. Convertido a USD con $40 por dólar, el tipo de cambio único que el propio presupuesto declara como premisa ("Premisas Macro"). Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (presupuesto2018-19.pdf + racing-presupuesto-2018-19.md).',
+    },
+  'racing-balance-2018': {
+      id:'racing-balance-2018', clubId:'racing',
+      title:'Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°116, 1°/9/2017 al 31/8/2018',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2018.pdf',
+      note:'PDF oficial (36 páginas), ESCANEO puro sin capa de texto, transcripto con el Read tool sobre imágenes de página (sin inclinación diagonal, no hizo falta deskew). SUPERÁVIT real: $616.520.502 ARS. Mismo ejercicio que `racing-presupuesto-2017-18` (cargado antes, en la Versión 63) — con este balance el ejercicio pasa a `reportType:\'official_budget_and_balance\'`. Convertido a USD con $36,65, el tipo de cambio de cierre que el propio balance declara en su Anexo V. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2018.pdf + racing-balance-2018.md).',
+    },
+  'racing-balance-2019-20': {
+      id:'racing-balance-2019-20', clubId:'racing',
+      title:'Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°118, 1°/9/2019 al 31/8/2020',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2019-20.pdf',
+      note:'PDF oficial (33 páginas, texto extraíble nativo) bajado de racingclub.com.ar/informes/. Último ejercicio con cierre a agosto (la Asamblea del 18/12/2019 aprobó pasar el cierre a 30 de junio desde el ejercicio siguiente). Tiene también su propio Presupuesto real cargado como overlay de comparación, ver `racing-presupuesto-2019-20`. Convertido a USD con $73,98, el tipo de cambio de cierre que el propio balance declara en su Anexo V. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2019-20.pdf + racing-balance-2019-20.md).',
+    },
+  'racing-presupuesto-2019-20': {
+      id:'racing-presupuesto-2019-20', clubId:'racing',
+      title:'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2019/2020 (1°/9/2019 al 31/8/2020)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto2019-20.pdf',
+      note:'PDF oficial (8 páginas), a diferencia de la mayoría de los presupuestos de este archivo es un ESCANEO puro (sin texto extraíble), transcripto con el Read tool sobre imágenes de página, corrigiendo primero una inclinación diagonal real del escaneo (~0,78°, ver `.claude/skills/club-data-mapping/SKILL.md` sección 9 para la receta de deskew). Mismo ejercicio que `racing-balance-2019-20` (el balance real, dato primario) — este presupuesto es la columna "Presupuesto" de comparación en "Estado de resultados". Convertido a USD con $70, el tipo de cambio que el propio presupuesto declara como premisa (distinto al $73,98 del balance). Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (presupuesto2019-20.pdf + racing-presupuesto-2019-20.md).',
+    },
+  'racing-balance-2021': {
+      id:'racing-balance-2021', clubId:'racing',
+      title:'Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°119 (irregular de 10 meses), 1°/9/2020 al 30/6/2021',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2021.pdf',
+      note:'PDF oficial (35 páginas, texto extraíble nativo) bajado de racingclub.com.ar/informes/. Ejercicio irregular de 10 meses, de transición del cierre de agosto al de junio (ver `racing-balance-2019-20`). SUPERÁVIT real chico: $7.012.082 ARS. Sin presupuesto propio en el archivo para este mismo ejercicio (`presupuesto2020-21.pdf` no existe). Convertido a USD con $95,52, el tipo de cambio de cierre que el propio balance declara en su Anexo V, usado sin excepciones en todo el anexo. Copia local y transcripción completa en numeros-de-boca/Clubes/Argentina/Racing/ (balance2021.pdf + racing-balance-2021.md).',
+    },
+  'racing-balance-2023-24': {
+      id:'racing-balance-2023-24', clubId:'racing',
+      title:'Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°122, 1°/7/2023 al 30/6/2024',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2024.pdf',
+      note:'PDF oficial (40 páginas, con informe de auditoría de Bertora y Asociados S.R.L., firmado por Víctor Blanco Rodríguez como Presidente), bajado directo de racingclub.com.ar/informes/ — a diferencia de Boca y River, este PDF tiene texto extraíble (no es un escaneo). Última temporada de la gestión Blanco: DÉFICIT real del ejercicio de $(6.127.619.872) ARS. Cifras en moneda homogénea al 30/06/2024 (RT 6). Copia local en numeros-de-boca/Clubes/Argentina/Racing/balance2024.pdf. Convertido a USD con $909, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo VI (Versión 32; antes se usaba $912, una cotización externa).',
+    },
+  'racing-balance-2024-25': {
+      id:'racing-balance-2024-25', clubId:'racing',
+      title:'Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°123, 1°/7/2024 al 30/6/2025',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/balance2025.pdf',
+      note:'PDF oficial (43 páginas, con informe de auditoría de Bertora y Asociados S.R.L., firmado por Diego Alberto Milito como Presidente), bajado directo de racingclub.com.ar/informes/. Primer ejercicio completo de la gestión Milito (asumió 20/12/2024, a mitad de este ejercicio, pero el balance está firmado y presentado bajo su gestión): déficit real del ejercicio de $(178.451.821) ARS, mucho menor al de la gestión anterior. Cifras en moneda homogénea al 30/06/2025 (RT 6). Copia local en numeros-de-boca/Clubes/Argentina/Racing/balance2025.pdf. Convertido a USD con $1.196, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo VI (Versión 32; antes se usaba $1.203, una cotización externa).',
+    },
+  'racing-presupuesto-2025-26': {
+      id:'racing-presupuesto-2025-26', clubId:'racing',
+      title:'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2025/2026 (1°/7/2025 al 30/6/2026)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto-2025-26.pdf',
+      note:'PDF oficial (8 páginas) bajado directo de racingclub.com.ar/informes/ — reemplaza a racing-presupuesto-2025-26-prensa (un hilo de X), ahora con el documento real: un presupuesto financiero mensual (12 columnas, jul-25 a jun-26) mucho más detallado que la cobertura de prensa. Convertido a USD con el tipo de cambio promedio que el propio presupuesto declara como premisa ($1.438), no con un tipo de cambio de cierre (todavía no cerró este ejercicio). Copia local en numeros-de-boca/Clubes/Argentina/Racing/presupuesto2025-26.pdf.',
+    },
+  'racing-presupuesto-2026-27': {
+      id:'racing-presupuesto-2026-27', clubId:'racing',
+      title:'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2026/2027 (1°/7/2026 al 30/6/2027)',
+      type:'official_budget', reliability:'primary',
+      url:'https://www.racingclub.com.ar/informes/presupuesto-2026-27.pdf',
+      note:'PDF oficial (8 páginas, texto nativo) bajado directo de racingclub.com.ar/informes/, mismo formato que racing-presupuesto-2025-26 (presupuesto financiero mensual, 12 columnas jul-26 a jun-27). Transcripción completa en Clubes/Argentina/Racing/presupuesto2026-27.md (Versión 32). Convertido a USD con el promedio de los dos tipos de cambio que el propio presupuesto declara como premisa ($1.505 para julio 2026 y $1.870 para junio 2027) = $1.687,5 — mismo criterio que usa Boca para su Presupuesto 2027.',
+    },
+});
+
+gestionesByClub.racing = {
+    // milito.firstYear=2025 es su primer ejercicio REAL completo (balance auditado, Ejercicio
+    // N°123); lastYear=2027 es el presupuesto vigente (Ejercicio 2026-27, todavía no cerró — el
+    // Ejercicio 2025-26 sí cerró en jun-2026 pero el balance auditado real todavía no se publicó,
+    // ver to-do en index.html; se actualizó de 2026 a 2027 en la Versión 32 al cargar el nuevo
+    // presupuesto).
+    milito: { nombre:'Milito (2024-actual)', firstYear:2025, lastYear:2027 },
+    // blanco.firstYear: mismo criterio siempre, "el ejercicio REAL más antiguo cargado de esta
+    // gestión", no la fecha exacta en que asumió (2013). Pasó de 2024 a 2020 en la Versión 58
+    // (balance2019-20.pdf), de 2020 a 2018 en la Versión 63 (presupuesto2017-18.pdf), y de 2018 a
+    // 2014 en la Versión 67 (presupuesto2013-14.pdf, su primer presupuesto como Presidente).
+    blanco: { nombre:'Blanco (2013-2024)',   firstYear:2014, lastYear:2024 },
+  };
+
+memberCountByClub.racing = 86529;
+

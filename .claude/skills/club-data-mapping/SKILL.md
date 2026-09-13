@@ -282,8 +282,8 @@ Antes de abrir un PDF nuevo con el Read tool, probar `pdftotext -layout archivo.
 devuelve texto real (no basura ni vacío), es MUCHO más barato en tokens que renderizar página por
 página como imagen. Si `pdftotext` da vacío o basura, el PDF es un escaneo puro y hay que usar el
 Read tool sobre las páginas como imágenes — ver el registro por documento de qué tipo es cada uno en
-`fuentes-por-club.md` (sección Racing Club, ya tiene el resultado de probar los ~24 documentos del
-archivo oficial de Racing).
+`fuentes/Argentina/Racing.md` (ver el índice en `fuentes-por-club.md`), ya tiene el resultado de
+probar los ~24 documentos del archivo oficial de Racing.
 
 **Si el escaneo aparece torcido (inclinado en diagonal)**: leer así arrastra error acumulado hacia
 los bordes de la página — una fila puede leerse como si perteneciera a la fila de arriba o de abajo
@@ -481,7 +481,7 @@ de River/Racing:**
   genérico, en vez de una categoría específica, es un trabajo real de re-mapeo, no un cambio
   cosmético de buckets.
 - **Decisión de Guido (Versión 46, presentada con `AskUserQuestion` antes de tocar nada, ver
-  entrada VERSIÓN 46 del historial de index.html para el detalle completo)**: Ingresos de Racing,
+  entrada Versión 46 en `Proyecto Boca.md` para el detalle completo)**: Ingresos de Racing,
   SÍ separar (ya implementado: categoría `competition_bonus` nueva, líneas de
   `data/racing-data.js` re-etiquetadas, bucket "Premios por competencias" agregado a
   `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`). Ingresos de River, dejarlo como está por ahora (no se
@@ -500,7 +500,7 @@ posición que le correspondería si Boca tuviera esa misma fila, no al final por
 
 **Categorías-excepción sin equivalente en Boca (hoy: "Fútbol profesional (sin desglosar por la
 fuente)") llevan `hideIfZero:true`**: Guido pidió sacar esa fila de Racing porque estaba en $0 (ver
-Versión 47 del historial de index.html). Como esa categoría no existe en el vocabulario de Boca,
+Versión 47 en `Proyecto Boca.md`). Como esa categoría no existe en el vocabulario de Boca,
 mostrarla en $0 para un club/año que sí tiene todo bien desglosado (como pasa con Racing desde el
 fix de la Versión 38) era una fila extra que rompía la promesa de "exactamente igual que Boca". La
 regla NO es "esconder cualquier fila en $0" (eso rompería la transparencia de mostrar $0 real
@@ -737,6 +737,71 @@ matemáticamente equivalente a la vieja fórmula en todos los casos donde ya cer
 esto en `index.html` no rompió ningún check anterior. Si un ejercicio nuevo no cierra en "Expenses"
 por una diferencia grande y sospechosamente redonda, revisar primero si `nonCash` neto se volvió
 positivo antes de asumir que el dato de carga está mal.
+
+## 16. REGLA (a pedido de Guido): un presupuesto de CAJA con sección "Extraordinaria" (financiamiento) se carga SOLO en su parte Ordinaria
+
+Encontrado con el Presupuesto 2023-2024 de San Lorenzo (`Clubes/Argentina/San Lorenzo/
+presupuesto-2023-2024.md`): a diferencia de un Estado de Recursos y Gastos devengado (el que usan
+todos los balances auditados ya cargados), este documento es un presupuesto de CAJA mensual con 2
+secciones separadas: "Ordinario" (Ingresos/Egresos de la operación normal del club — sociales,
+copas, TV, sueldos, gastos de estadio, etc.) y "Orígenes y Aplicaciones Extraordinarias" (Ingresos
+Extraordinarios = aportes bancarios/financieros/dirigenciales recibidos; Egresos Extraordinarios =
+cancelación de esos mismos aportes; Propiedades y obras = obras de capital; Compra/Venta Jugadores
+= el DESEMBOLSO de caja del pase, no su amortización contable; Cancelación Deuda = pago de deuda
+vieja).
+
+**Regla: cargar SOLO la sección Ordinaria.** La sección Extraordinaria es financiamiento (deuda
+tomada/pagada) y movimientos de capital/caja, no ingreso o gasto real de la operación del ejercicio
+— cargarla como revenue/expense normal mezclaría financiamiento con operación, e inflaría/desinflaría
+el resultado del club de forma engañosa (ej. "Compra Jugadores" en términos de caja no es lo mismo
+que su amortización en varios ejercicios, que es como el resto del sitio trata los pases). El
+"Resultado Ordinario" impreso por el propio documento (Total Ingresos Ordinarios − Total Egresos
+Ordinarios) es el número que se usa como PAT del ejercicio — NO el "Saldo Final por Período", que
+mezcla la operación con el financiamiento.
+
+Guido, con esta misma sesión: "documentar esta decisión. inclusive anotalo como duda para
+preguntarle la lógica de esto a San Lorenzo. o sea, por qué lo hacen así? parecería que no saben
+devengar" — la pregunta ("¿por qué presupuestan en caja separando ordinario/extraordinario en vez
+de un presupuesto económico devengado, como sí tienen sus propios balances auditados?") quedó
+anotada en `dudas-por-club.md`, sección San Lorenzo.
+
+Si aparece un presupuesto de OTRO club con esta misma estructura (Ordinario + Extraordinario/
+financiamiento en secciones separadas), aplicar el mismo criterio: solo la parte Ordinaria entra al
+sitio.
+
+## 17. Impuestos/Cargas sociales/Moratoria: el mapeo YA ESTÁ establecido, no es caso por caso
+
+Guido preguntó en esta sesión si "Impuestos" se carga alguna vez (pensaba que no), si "Moratoria"
+debería ir a intereses, y confirmó que "Cargas sociales" siempre va como remuneración — respuesta
+completa, con el precedente real ya en el sitio (revisado con grep sobre `data/*.js` antes de
+responder, no de memoria):
+
+- **Impuestos (tasas, impuestos municipales, ART, seguros)** → SIEMPRE `admin_general_expense`. Sí
+  se carga, en casi todos los clubes: Vélez ("Impuestos (sectores)"/"Impuestos (administración)",
+  los 11 ejercicios), San Lorenzo 2013 ("Impuestos y tasas"), Rosario Central ("Impuestos, tasas y
+  contribuciones") — todos a `admin_general_expense`. La idea de que "no lo cargamos para ningún
+  club" era incorrecta, es justo lo contrario: es uno de los mapeos MÁS consistentes del sitio.
+- **Cargas sociales** → NUNCA es su propia categoría. Se pega SIEMPRE a la categoría del sueldo al
+  que corresponde, separando por sector si el documento lo permite: la porción de plantel
+  profesional/cuerpo técnico va a `wages_squad` (junto con "Sueldos y primas" del mismo sector), el
+  resto de sectores (amateur, polideportivo, administración, otros deportes) va a
+  `youth_other_sports_expense` o `admin_general_expense` según a qué sector pertenezca esa porción
+  — mismo patrón en Vélez, Estudiantes LP, Rosario Central, Racing, San Lorenzo. Confirmado correcto.
+- **Moratoria** (plan de pago de deuda impositiva/de facilidades) → el precedente real está DIVIDIDO:
+  Racing la cargó como `admin_general_expense` en 2 ejercicios ("Pago de Moratoria") y como
+  `other_expenses` en un tercero ("Pago de Otros Gastos Extraordinarios - Moratoria", porque en ESE
+  balance el propio documento la agrupaba bajo "Gastos Extraordinarios"). Nunca se cargó como
+  interés (`netInterest`) en ningún club — no hay precedente para eso, y conceptualmente una
+  moratoria impositiva no es interés de deuda financiera, es un plan de pago de tasas/impuestos
+  atrasados. Cuando el documento fuente la separa como línea propia, seguir el criterio de "dónde la
+  agrupa el propio balance" (Extraordinario → `other_expenses`; Ordinario/administración →
+  `admin_general_expense`) en vez de una regla fija.
+- **Caso del Presupuesto 2023-24 de San Lorenzo específicamente**: el documento junta los 3
+  conceptos en UNA sola fila ("Impuestos/Moratoria/Cargas sociales", un solo número por mes/Total,
+  ver Pauta N°18) — no hay forma de separarlos, así que no aplica ninguna de las 3 reglas de arriba
+  por separado. Se cargó la fila entera como una única línea `admin_general_expense` (coherente con
+  que impuestos y moratoria van ahí en la mayoría de los precedentes, y es la única opción posible
+  dado que el documento no discrimina cargas sociales de fútbol vs. resto en esta fila combinada).
 
 ## Cómo mantener este skill
 

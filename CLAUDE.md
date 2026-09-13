@@ -17,6 +17,18 @@ Guido deja links a documentos oficiales o notas de prensa antes de que se
 carguen al sitio. Si hay algo ahí que el comentario de `index.html` todavía
 no menciona como cargado, es trabajo pendiente.
 
+Desde la sesión 2026-09-13, `fuentes-por-club.md` es solo un ÍNDICE (una
+línea por club, agrupado por país, con estado resumido + fecha de último
+chequeo) — dejó de escalar como archivo único a medida que se sumaron
+decenas de clubes. El contenido real de cada club (links, qué se probó, qué
+falta) vive en su propio archivo `fuentes/<País>/<Club>.md`, seguí el link
+del índice para verlo. Un `fuentes/<País>/_notas-generales.md` por país
+junta notas que no son de un club específico (metodología del barrido,
+contexto regulatorio, etc.). Al agregar una fuente nueva para un club: si ya
+tiene archivo en `fuentes/`, editar ESE archivo (y actualizar su línea en el
+índice si cambió el estado/fecha); si es un club nuevo sin archivo todavía,
+crear `fuentes/<País>/<Club>.md` y agregar su línea al índice.
+
 Si al leer un documento fuente queda una pregunta genuina sin respuesta (algo
 que no se puede inferir con confianza de la fuente ni de los criterios ya
 documentados en los skills), anotala en `dudas-por-club.md` (Versión 81, a
@@ -29,15 +41,20 @@ nuevo, recategorizar un rubro, tocar el tipo de cambio de un ejercicio, agregar
 un club nuevo): leé ANTES de tocar nada `.claude/skills/club-data-mapping/SKILL.md`
 (cómo mapear el documento del club al esquema del sitio) y
 `.claude/skills/club-or-year-onboarding/SKILL.md` (cómo encarar la sesión y qué
-arquitectura ya existe para reusar). Esto es necesario decirlo explícito acá
+arquitectura ya existe para reusar). **Si la tarea es BUSCAR/encontrar PDFs de
+un club o país que todavía no tiene nada cargado** (antes de que exista ningún
+documento para mapear): leé `.claude/skills/club-sourcing/SKILL.md` (qué
+regulador o canal público chequear según el país, gotchas de portales
+específicos ya descubiertos). Esto es necesario decirlo explícito acá
 porque `numeros-de-boca` es un repo Git separado anidado dentro de este
 workspace — el descubrimiento automático de skills de Claude Code no llega
-hasta `numeros-de-boca/.claude/skills/`, así que esos dos archivos NO aparecen
+hasta `numeros-de-boca/.claude/skills/`, así que esos archivos NO aparecen
 solos en la lista de skills disponibles de una sesión, hay que leerlos a mano
-con el Read tool. Sin este párrafo, una sesión puede categorizar un rubro o
-convertir una moneda contradiciendo un criterio ya decidido, sin enterarse de
-que existía (pasó de verdad, ver "Cómo mantener este skill" al final de cada
-uno de los dos archivos para el criterio de cuándo actualizarlos).
+con el Read tool. Sin este párrafo, una sesión puede categorizar un rubro,
+convertir una moneda, o repetir una búsqueda ya descartada, contradiciendo un
+criterio ya decidido sin enterarse de que existía (pasó de verdad, ver "Cómo
+mantener este skill" al final de cada archivo para el criterio de cuándo
+actualizarlos).
 
 ## Antes de terminar la sesión
 
@@ -45,22 +62,32 @@ Si se hizo algún cambio real al sitio (datos, features, estructura, copy,
 lo que sea), actualizá el comentario HTML de `index.html` para que siga
 siendo verdad, SIN que Guido tenga que pedirlo explícitamente:
 
-- **ESTADO ACTUAL**: reflejar lo que cambió.
+- **ESTADO ACTUAL**: reflejar lo que cambió (es un snapshot del estado actual,
+  no un log — si algo que decía ahí ya no es cierto, se reemplaza o se borra,
+  no se apila una línea nueva al lado de la vieja).
 - **QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB**: actualizar si se cargó,
   reemplazó o verificó algún dato.
 - **TO-DO LIST**: sacar o tachar lo que ya se resolvió, reordenar si
   cambió la prioridad, agregar lo nuevo que haya quedado pendiente.
-- Agregar una entrada nueva **"VERSIÓN N"** al bloque de historial (el que
-  sigue después del separador `===`), con qué se hizo y por qué — mismo
-  formato que las entradas anteriores (V10, V11, V12...).
 
-No dupliques la to-do list en `Proyecto Boca.md`. Ese archivo es la
-historia narrativa completa, para consulta opcional — la lista oficial de
-próximos pasos vive solo en `index.html`, para que no haya dos listas que
-se puedan desincronizar. Si el cambio es lo bastante grande como para
-merecer contexto narrativo (el "por qué", no solo el "qué"), ahí sí vale
-agregarle una entrada corta a `Proyecto Boca.md` también, en el mismo
-estilo que las versiones anteriores.
+**El historial de versiones YA NO vive en `index.html`** (hasta la Versión
+101 sí, dejó de escalar — ver la nota "HISTORIAL DE VERSIONES" dentro del
+propio comentario de `index.html`). En cambio:
+
+- Agregar SIEMPRE una entrada nueva a `CHANGELOG.md` (misma carpeta): unas
+  pocas líneas (Keep a Changelog style — qué cambió, no por qué), no un
+  párrafo largo. Esto es obligatorio para cualquier cambio real, chico o
+  grande.
+- Agregar además una entrada a `Proyecto Boca.md` SOLO si el cambio amerita
+  contexto narrativo completo (el "por qué", el proceso de investigación, un
+  bug real con su causa raíz) — no todos los cambios lo ameritan, un ajuste
+  chico de UI puede quedar solo en `CHANGELOG.md`. Cuando sí amerita, el
+  mismo número de versión de `CHANGELOG.md` identifica la entrada
+  correspondiente en `Proyecto Boca.md`.
+
+No dupliques la to-do list en `Proyecto Boca.md` ni en `CHANGELOG.md`. La
+lista oficial de próximos pasos vive solo en `index.html`, para que no haya
+dos listas que se puedan desincronizar.
 
 ## Estructura de carpetas de documentos fuente: Clubes/<País>/<Club>/ (PDF y transcripción juntos)
 
@@ -154,16 +181,28 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   `index.html`) los números/estilos en pantalla siguen mostrando el valor
   VIEJO, aunque `curl`/`fetch` al mismo archivo ya muestre el nuevo,
   sospechá de caché del navegador ANTES de asumir que hay un bug real en el
-  código. `location.reload()`, `Cmd+Shift+R` y hasta parar/re-lanzar
-  `preview_start` en el mismo puerto pueden NO alcanzar. Lo que funcionó:
-  agregar un query string cache-buster a la URL del `navigate()`
-  (`http://localhost:PUERTO/index.html?nocache=<número cualquiera>`), abrir
-  una pestaña nueva (`tabs_create`), o, si eso tampoco alcanza, cambiar el
-  puerto del server en `.claude/launch.json` (nuevo puerto = origen nuevo =
-  caché nueva garantizada) y devolverlo después. Confirmalo ejecutando
-  `Object.keys(algunaConstDeEseArchivo)` o
+  código. `location.reload()`, `Cmd+Shift+R`, parar/re-lanzar `preview_start`
+  en el mismo puerto, abrir una pestaña nueva (`tabs_create`), Y cambiar el
+  puerto en `.claude/launch.json` — ESTOS 5 CONFIRMADOS QUE NO ALCANZAN en
+  este entorno (probado dos veces en la Versión 101: el puerto externo que
+  ve el navegador queda igual aunque cambies el puerto interno del server,
+  y la caché persiste incluso en una pestaña recién creada — el caché HTTP
+  de este entorno parece compartirse por origen entre pestañas, no por
+  pestaña). Lo único que funcionó de forma confiable: agregar un query
+  string temporal directo al `<script src="...">` en el HTML (ej.
+  `data/clubs.js?cachebust1`, un valor que nunca se pidió antes, cambia la
+  URL exacta así que el caché no puede tener nada guardado para ella),
+  navegar, confirmar, y DESPUÉS sacar el query string del archivo (no
+  dejarlo pisado — es un truco de verificación, no una convención del
+  proyecto). Confirmalo ejecutando `Object.keys(algunaConstDeEseArchivo)` o
   `document.querySelector('style').textContent.includes('tu regla nueva')`
-  con `javascript_tool` ANTES de concluir que el cambio "no funciona".
+  con `javascript_tool` ANTES de concluir que el cambio "no funciona" — y
+  ANTES de concluir que SÍ funciona, ya que un error viejo puede seguir
+  apareciendo en `read_console_messages` de una pestaña reusada aunque el
+  problema ya esté arreglado (el historial de consola no se limpia solo
+  entre navegaciones); si el error es sospechosamente el mismo que uno ya
+  arreglado, volvé a chequear el estado real en vez de confiar en la lectura
+  de consola.
 - **`computer` screenshot da BLANCO si la página está scrolleada**: en este
   entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco
   cada vez que `window.scrollY > 0` en el momento de la captura, no importa
