@@ -36,25 +36,41 @@ pedido de Guido: "la idea es hacer reach out a clubes y preguntarles") en vez
 de asumir un criterio o dejarla perdida en un comentario de código — es la
 lista que Guido usa para escribirles directo a los clubes.
 
-**Si la tarea toca datos financieros de un club** (cargar un balance/presupuesto
-nuevo, recategorizar un rubro, tocar el tipo de cambio de un ejercicio, agregar
-un club nuevo): leé ANTES de tocar nada `.claude/skills/club-data-mapping/SKILL.md`
-(cómo mapear el documento del club al esquema del sitio) y
-`.claude/skills/club-or-year-onboarding/SKILL.md` (cómo encarar la sesión y qué
-arquitectura ya existe para reusar). **Si la tarea es BUSCAR/encontrar PDFs de
-un club o país que todavía no tiene nada cargado** (antes de que exista ningún
-documento para mapear): leé `.claude/skills/club-sourcing/SKILL.md` (qué
-regulador o canal público chequear según el país, gotchas de portales
-específicos ya descubiertos). Esto es necesario decirlo explícito acá
-porque `finance-of-sports` es un repo Git separado anidado dentro de este
-workspace — el descubrimiento automático de skills de Claude Code no llega
-hasta `finance-of-sports/.claude/skills/`, así que esos archivos NO aparecen
-solos en la lista de skills disponibles de una sesión, hay que leerlos a mano
-con el Read tool. Sin este párrafo, una sesión puede categorizar un rubro,
-convertir una moneda, o repetir una búsqueda ya descartada, contradiciendo un
-criterio ya decidido sin enterarse de que existía (pasó de verdad, ver "Cómo
-mantener este skill" al final de cada archivo para el criterio de cuándo
-actualizarlos).
+Este proyecto tiene 5 skills en `.claude/skills/`. Según la tarea, leerlos es
+OBLIGATORIO, no opcional:
+
+- `start-session-finance-of-sports-project`: el checklist de arranque y de cierre
+  de CUALQUIER sesión acá (qué leer y en qué orden, cómo verificar, qué
+  documentar, la regla de git). **Empezá por este, sea cual sea la tarea.**
+- `club-data-mapping`: **si la tarea toca datos financieros de un club** (cargar
+  un balance/presupuesto nuevo, recategorizar un rubro, tocar el tipo de cambio de
+  un ejercicio, agregar un club nuevo) — cómo mapear el documento del club al
+  esquema del sitio. Antes de tocar nada.
+- `club-or-year-onboarding`: en esa misma tarea — cómo encarar la sesión y qué
+  arquitectura ya existe para reusar, en vez de reinventarla por club.
+- `club-sourcing`: **si la tarea es BUSCAR/encontrar PDFs de un club o país que
+  todavía no tiene nada cargado**, antes de que exista ningún documento para
+  mapear (qué regulador o canal público chequear según el país, gotchas de
+  portales específicos ya descubiertos).
+- `auditoria-finance-of-sports`: si la tarea es una auditoría de rutina del
+  proyecto entero (Versión 123).
+
+CÓMO LLEGAR A ELLOS. Esto depende de dónde se abrió la sesión, y lo que decía acá
+antes dejó de ser cierto (corregido en la Versión 124):
+
+- **Sesión abierta directamente en `finance-of-sports/`**, que es lo normal desde
+  la Versión 120: los 5 aparecen solos en la lista de skills disponibles y se
+  invocan por nombre. NO hace falta abrirlos con el Read tool.
+- **Sesión abierta en la carpeta de arriba (`Website propio/`)**: este es un repo
+  Git separado anidado ahí, y el descubrimiento automático puede no llegar hasta
+  `finance-of-sports/.claude/skills/`. Si no los ves en la lista, leelos a mano
+  con el Read tool.
+
+La obligación de leerlos no cambia en ninguno de los dos casos, y por eso este
+párrafo sigue existiendo: sin él, una sesión puede categorizar un rubro, convertir
+una moneda, o repetir una búsqueda ya descartada, contradiciendo un criterio ya
+decidido sin enterarse de que existía (pasó de verdad, ver "Cómo mantener este
+skill" al final de cada archivo para el criterio de cuándo actualizarlos).
 
 ## Antes de terminar la sesión
 

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<!--
+==================================================================================
+PROTOTIPO — Selector jerárquico (Deporte > Región > País > Liga > Equipo)
+           + bandeja de Comparación (1 vs 1, N clubes, y vs. benchmark)
+
+ESTO NO ES EL SITIO. Es un mock autocontenido para decidir la UX antes de tocar
+`index.html`. No lee `data/clubs.js` ni ningún `data/<club>-data.js`: la taxonomía
+está embebida acá abajo (const TAXONOMY) y LOS NÚMEROS DE LOS GRÁFICOS SON
+INVENTADOS, marcados en pantalla con un banner permanente — a propósito, para no
+producir una captura que parezca dato real de un club real (regla de precisión del
+proyecto).
+
+Lo que SÍ es real acá: los 41 clubes, sus nombres, sus países, y cuántos ejercicios
+reales tiene cargado cada uno (sale de la sección CLUB-INDEX de index.html).
+Lo que NO existe todavía en el proyecto y este prototipo asume: los campos
+`sport`, `region`, `league` y `tier` por club. Ver IMPLEMENTACION-PROMPT.md, en
+esta misma carpeta, para el spec de esa parte.
+
+Para abrirlo: doble click en el archivo, o `python3 -m http.server` en la carpeta.
+==================================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prototipo · Selector + Comparación</title>
+<style>
+  :root{
+    --azul:#0a2b5c; --azul-dark:#071d3f; --oro:#f2b705;
+    --bg:#f7f7f5; --card:#ffffff; --text:#1c1c1c; --muted:#6b6b6b;
+    --border:#e3e3e0; --green:#1b7a3d; --red:#b5372b;
+    --azul-soft:#eef2f9;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+
+  /* ---------------- HEADER ---------------- */
+  header{background:var(--azul);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,.15);}
+  .header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;gap:10px;}
+  .logo{display:flex;align-items:center;gap:7px;font-weight:700;font-size:15px;white-space:nowrap;flex-shrink:0;}
+  .logo .dot{width:10px;height:10px;background:var(--oro);border-radius:50%;}
+  nav{display:flex;gap:0;min-width:0;}
+  nav button{background:none;border:none;color:#dbe3f0;font-size:12px;padding:7px;cursor:pointer;border-radius:6px;font-weight:500;white-space:nowrap;}
+  nav button:hover{background:rgba(255,255,255,.08);color:#fff;}
+  nav button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
+  .header-right{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+
+  /* Botón de club: reemplaza al <select id="clubSelect"> de hoy. Muestra el club
+     activo + su liga, y abre el panel. Ancho fijo para que no salte al cambiar. */
+  .club-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.3);
+            color:#fff;border-radius:8px;padding:5px 9px;cursor:pointer;font:inherit;text-align:left;min-width:190px;}
+  .club-btn:hover{background:rgba(255,255,255,.16);}
+  .club-btn .cb-txt{display:flex;flex-direction:column;line-height:1.15;min-width:0;flex:1;}
+  .club-btn .cb-name{font-size:12.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .club-btn .cb-sub{font-size:10.5px;color:#b9c6dd;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .club-btn .cb-caret{font-size:9px;color:#b9c6dd;}
+  .icon-btn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:7px 10px;cursor:pointer;font-size:13px;line-height:1;}
+  .icon-btn:hover{background:rgba(255,255,255,.1);}
+
+  .crest{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+         font-size:9.5px;font-weight:800;color:#fff;letter-spacing:-.02em;border:1.5px solid rgba(255,255,255,.45);}
+  .crest.sm{width:20px;height:20px;font-size:8px;}
+  .crest.lg{width:34px;height:34px;font-size:11.5px;}
+
+  /* ---------------- BANDEJA DE COMPARACIÓN ---------------- */
+  .tray{background:var(--azul-dark);color:#cfdaec;border-top:1px solid rgba(255,255,255,.08);}
+  .tray-inner{max-width:1280px;margin:0 auto;padding:8px 14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .tray-label{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:#8fa3c4;font-weight:700;margin-right:2px;}
+  .chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+        border-radius:999px;padding:3px 5px 3px 4px;font-size:12px;color:#fff;}
+  .chip.bench{background:rgba(242,183,5,.16);border-color:rgba(242,183,5,.45);}
+  .chip .x{background:none;border:none;color:#9fb0cc;cursor:pointer;font-size:14px;line-height:1;padding:0 3px;}
+  .chip .x:hover{color:#fff;}
+  .chip .chip-name{padding-right:2px;white-space:nowrap;}
+  .chip-add{background:none;border:1px dashed rgba(255,255,255,.3);color:#cfdaec;border-radius:999px;padding:4px 11px;font-size:12px;cursor:pointer;}
+  .chip-add:hover{border-color:var(--oro);color:var(--oro);}
+  .tray-mode{margin-left:auto;display:flex;align-items:center;gap:8px;}
+  .mode-pill{font-size:11px;background:var(--oro);color:var(--azul-dark);font-weight:800;border-radius:999px;padding:3px 9px;text-transform:uppercase;letter-spacing:.04em;}
+  .tray-hint{font-size:11.5px;color:#8fa3c4;}
+
+  /* ---------------- PANEL / MODAL ---------------- */
+  .backdrop{position:fixed;inset:0;background:rgba(7,29,63,.45);backdrop-filter:blur(2px);z-index:80;display:none;}
+  .backdrop.open{display:block;}
+  .panel{position:fixed;z-index:90;top:64px;left:50%;transform:translateX(-50%);width:min(1120px,calc(100vw - 24px));
+         max-height:calc(100vh - 96px);background:var(--card);border:1px solid var(--border);border-radius:12px;
+         box-shadow:0 18px 48px rgba(7,29,63,.3);display:none;flex-direction:column;overflow:hidden;}
+  .panel.open{display:flex;}
+  .panel-search{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--border);}
+  .panel-search input{flex:1;border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:15px;outline:none;}
+  .panel-search input:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(10,43,92,.1);}
+  .kbd{font-size:10.5px;color:var(--muted);border:1px solid var(--border);border-radius:4px;padding:2px 5px;background:#fafaf8;white-space:nowrap;}
+  .panel-close{background:none;border:none;font-size:20px;color:var(--muted);cursor:pointer;line-height:1;padding:2px 4px;}
+
+  .recents{padding:9px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px;flex-wrap:wrap;background:#fbfbf9;}
+  .recents .r-label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;}
+  .r-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);background:#fff;border-radius:999px;
+          padding:3px 9px 3px 4px;font-size:12px;cursor:pointer;color:var(--text);}
+  .r-chip:hover{border-color:var(--azul);background:var(--azul-soft);}
+
+  /* Miller columns */
+  .cols{display:grid;grid-template-columns:126px 162px 172px 200px 1fr;min-height:0;flex:1;overflow:hidden;}
+  .col{border-right:1px solid var(--border);overflow-y:auto;min-height:0;display:flex;flex-direction:column;}
+  .col:last-child{border-right:none;}
+  .col-head{position:sticky;top:0;background:#fbfbf9;border-bottom:1px solid var(--border);padding:7px 10px;
+            font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;z-index:2;}
+  .row{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:none;border:none;font:inherit;
+       padding:8px 10px;cursor:pointer;color:var(--text);border-bottom:1px solid #f2f2ef;}
+  .row:hover{background:var(--azul-soft);}
+  .row.sel{background:var(--azul);color:#fff;}
+  .row.sel .r-meta,.row.sel .r-sub{color:#c3d2ea;}
+  .row.disabled{opacity:.42;cursor:not-allowed;}
+  .row.disabled:hover{background:none;}
+  .r-main{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.25;}
+  .r-name{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .r-sub{display:block;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .r-meta{font-size:10.5px;color:var(--muted);flex-shrink:0;margin-left:6px;font-variant-numeric:tabular-nums;}
+  .r-arrow{font-size:10px;color:#b8b8b3;flex-shrink:0;}
+  .row.sel .r-arrow{color:#fff;}
+  .row.all{background:#fbfbf9;font-style:italic;}
+  .row.all .r-name{font-weight:700;font-style:normal;}
+  .row.all.sel{background:var(--azul);}
+
+  /* Punto de calidad de dato. Diferenciador clave vs. el prototipo de referencia:
+     el selector dice, ANTES de entrar, qué vas a encontrar adentro. */
+  .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .dot.primary{background:var(--green);}
+  .dot.mixed{background:var(--oro);}
+  .dot.placeholder{background:#c4c4bf;}
+  .dot.none{background:transparent;border:1px dashed #c4c4bf;}
+
+  .add-btn{opacity:0;background:none;border:1px solid var(--border);color:var(--muted);border-radius:6px;
+           width:22px;height:22px;font-size:13px;line-height:1;cursor:pointer;flex-shrink:0;}
+  .row:hover .add-btn{opacity:1;}
+  .add-btn:hover{border-color:var(--azul);color:var(--azul);background:#fff;}
+  .add-btn.on{opacity:1;background:var(--oro);border-color:var(--oro);color:var(--azul-dark);font-weight:700;}
+  .row.sel .add-btn{border-color:rgba(255,255,255,.4);color:#fff;}
+
+  .results{overflow-y:auto;flex:1;min-height:0;}
+  .res-group{padding:6px 14px 2px;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;background:#fbfbf9;border-bottom:1px solid var(--border);}
+  .res-row{display:flex;align-items:center;gap:9px;padding:9px 14px;cursor:pointer;border-bottom:1px solid #f2f2ef;}
+  .res-row:hover,.res-row.cursor{background:var(--azul-soft);}
+  .empty{padding:34px 14px;text-align:center;color:var(--muted);font-size:13.5px;}
+
+  .panel-foot{border-top:1px solid var(--border);padding:8px 14px;display:flex;align-items:center;gap:14px;
+              background:#fbfbf9;font-size:11.5px;color:var(--muted);flex-wrap:wrap;}
+  .legend-item{display:inline-flex;align-items:center;gap:5px;}
+  .panel-foot .spacer{flex:1;}
+
+  /* Mobile: una sola columna por vez + breadcrumb */
+  .crumbs{display:none;gap:4px;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);flex-wrap:wrap;background:#fbfbf9;}
+  .crumb{background:none;border:none;font:inherit;font-size:12px;color:var(--azul);cursor:pointer;padding:2px 4px;border-radius:4px;}
+  .crumb:hover{background:var(--azul-soft);}
+  .crumb.cur{color:var(--text);font-weight:700;}
+  .crumb-sep{color:#c4c4bf;font-size:10px;}
+
+  /* ---------------- CONTENIDO DEMO ---------------- */
+  main{max-width:1160px;margin:0 auto;padding:22px 20px 80px;}
+  .mockbar{background:#fff8e1;border:1px solid #e0b400;color:#5c4a00;border-radius:8px;padding:10px 14px;
+           font-size:13px;line-height:1.5;margin-bottom:22px;}
+  h1{font-size:25px;margin:0 0 6px;}
+  .subtitle{color:var(--muted);font-size:14.5px;margin-bottom:20px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:26px;}
+  .card h2{font-size:18px;margin:0 0 4px;}
+  .card .csub{color:var(--muted);font-size:13px;margin:0 0 18px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:26px;}
+  .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;}
+  .stat .label{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .stat .value{font-size:21px;font-weight:700;margin-top:3px;}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;}
+  td.best{color:var(--green);font-weight:700;}
+  .bench-col{background:rgba(242,183,5,.08);}
+
+  /* Ranking de liga (inspirado en el prototipo de referencia, pero con barra
+     apilada real por categoría + cobertura de dato visible) */
+  .rank-row{display:grid;grid-template-columns:150px 1fr 78px;align-items:center;gap:10px;margin-bottom:7px;}
+  .rank-name{display:flex;align-items:center;gap:7px;font-size:12.5px;min-width:0;}
+  .rank-name span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bar{height:22px;border-radius:4px;display:flex;overflow:hidden;background:#f2f2ef;cursor:pointer;}
+  .bar:hover{outline:2px solid var(--azul);outline-offset:1px;}
+  .seg{height:100%;}
+  .rank-val{font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);}
+  .rank-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted);}
+  .rank-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:-1px;}
+  .seg-matchday{background:#0a2b5c;} .seg-tv{background:#2f5f9e;}
+  .seg-sponsor{background:#6d9bd1;} .seg-players{background:#a9c6e6;} .seg-other{background:#d8e4f2;}
+
+  .selbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px;}
+  .selbar .sb-crumb{font-size:13px;color:var(--muted);}
+  .selbar .sb-crumb b{color:var(--text);}
+
+  @media (max-width:900px){
+    .cols{grid-template-columns:1fr;}
+    .col{display:none;border-right:none;}
+    .col.active-pane{display:flex;}
+    .crumbs{display:flex;}
+    .panel{top:8px;max-height:calc(100vh - 16px);}
+    nav{display:none;}
+    .club-btn{min-width:0;}
+    .club-btn .cb-sub{display:none;}
+    .rank-row{grid-template-columns:110px 1fr 62px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><span class="dot"></span>El deporte en Números</div>
+    <nav>
+      <button class="active">Inicio</button><button>Finanzas</button>
+      <button>Comparar</button><button>Fuentes</button><button>Mi Cuenta</button>
+    </nav>
+    <div class="header-right">
+      <!-- Reemplaza al <select id="clubSelect"> de hoy -->
+      <button class="club-btn" id="clubBtn" title="Cambiar club (⌘K)">
+        <span class="crest" id="cbCrest">BOC</span>
+        <span class="cb-txt">
+          <span class="cb-name" id="cbName">Boca Juniors</span>
+          <span class="cb-sub" id="cbSub">Liga Profesional · Argentina</span>
+        </span>
+        <span class="cb-caret">▼</span>
+      </button>
+      <button class="icon-btn" id="compareBtn" title="Comparar con...">⇄</button>
+      <button class="icon-btn" title="Idioma">🌐 ES</button>
+    </div>
+  </div>
+  <!-- Bandeja de comparación: aparece sola cuando hay al menos 1 rival/benchmark -->
+  <div class="tray" id="tray" style="display:none;">
+    <div class="tray-inner">
+      <span class="tray-label">Comparando</span>
+      <div id="trayChips" style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;"></div>
+      <button class="chip-add" id="trayAdd">+ Agregar</button>
+      <div class="tray-mode">
+        <span class="mode-pill" id="modePill">Duelo</span>
+        <span class="tray-hint" id="modeHint"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PANEL SELECTOR ===================== -->
+<div class="backdrop" id="backdrop"></div>
+<div class="panel" id="panel" role="dialog" aria-label="Seleccionar club">
+
+  <div class="panel-search">
+    <input id="q" type="text" placeholder="Buscá un club, una liga o un país…  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)" autocomplete="off">
+    <span class="kbd">esc</span>
+    <button class="panel-close" id="panelClose">×</button>
+  </div>
+
+  <div class="recents" id="recentsWrap">
+    <span class="r-label">Recientes</span>
+    <div id="recents" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+  </div>
+
+  <div class="crumbs" id="crumbs"></div>
+
+  <!-- Modo búsqueda -->
+  <div class="results" id="results" style="display:none;"></div>
+
+  <!-- Modo navegación (Miller columns) -->
+  <div class="cols" id="cols">
+    <div class="col" data-level="0"><div class="col-head">Deporte</div><div class="col-body" id="colSport"></div></div>
+    <div class="col" data-level="1"><div class="col-head">Región</div><div class="col-body" id="colRegion"></div></div>
+    <div class="col" data-level="2"><div class="col-head">País</div><div class="col-body" id="colCountry"></div></div>
+    <div class="col" data-level="3"><div class="col-head">Liga</div><div class="col-body" id="colLeague"></div></div>
+    <div class="col active-pane" data-level="4"><div class="col-head">Equipo</div><div class="col-body" id="colClub"></div></div>
+  </div>
+
+  <div class="panel-foot">
+    <span class="legend-item"><i class="dot primary"></i> Balance oficial</span>
+    <span class="legend-item"><i class="dot mixed"></i> Parcial / mixto</span>
+    <span class="legend-item"><i class="dot placeholder"></i> Placeholder</span>
+    <span class="legend-item"><i class="dot none"></i> Sin datos todavía</span>
+    <span class="spacer"></span>
+    <span><b id="footCount">41</b> clubes con dato real · 6 países · 94 ejercicios</span>
+  </div>
+</div>
+
+<!-- ===================== CONTENIDO DEMO ===================== -->
+<main>
+  <div class="mockbar">
+    <b>Prototipo.</b> Los nombres de clubes, países y la cantidad de ejercicios cargados son reales.
+    <b>Todos los importes y porcentajes de esta página son inventados</b>, están solo para que se vea
+    la forma de la vista. Nada de acá sale de un balance.
+  </div>
+
+  <div class="selbar">
+    <span class="sb-crumb" id="sbCrumb"></span>
+  </div>
+
+  <h1 id="demoTitle">Boca Juniors</h1>
+  <p class="subtitle" id="demoSub">Ejercicio 2024/2025 · balance auditado</p>
+
+  <div class="grid" id="demoStats"></div>
+
+  <!-- Vista que aparece cuando elegís una LIGA entera (no un club) -->
+  <div class="card" id="rankCard" style="display:none;">
+    <h2 id="rankTitle">Ranking de ingresos</h2>
+    <p class="csub" id="rankSub">Composición de ingresos por club. Clickeá una barra para abrir ese club.</p>
+    <div id="rankRows"></div>
+    <div class="rank-legend">
+      <span><i class="seg-matchday"></i>Matchday</span><span><i class="seg-tv"></i>Derechos de TV</span>
+      <span><i class="seg-sponsor"></i>Sponsors</span><span><i class="seg-players"></i>Venta de pases</span>
+      <span><i class="seg-other"></i>Otros</span>
+    </div>
+  </div>
+
+  <!-- Vista de comparación -->
+  <div class="card" id="compareCard" style="display:none;">
+    <h2 id="compareTitle">Comparación</h2>
+    <p class="csub">Mismos indicadores, lado a lado. Los benchmarks (promedio/mediana de liga) se agregan como una columna más.</p>
+    <div style="overflow-x:auto;"><table id="compareTable"></table></div>
+  </div>
+</main>
+
+<script>
+/* ==========================================================================
+   TAXONOMÍA (embebida, solo para el prototipo)
+   En el sitio real esto sale de data/clubs.js + un data/leagues.js nuevo.
+   `q` = calidad del dato: primary | mixed | placeholder
+   `y` = cantidad de ejercicios reales cargados (dato real, sale del CLUB-INDEX)
+   ========================================================================== */
+const SPORTS = [
+  {id:'futbol', name:'Fútbol', icon:'⚽', active:true},
+  {id:'basquet', name:'Básquet', icon:'🏀', active:false},
+  {id:'nfl', name:'Fútbol americano', icon:'🏈', active:false},
+  {id:'f1', name:'Automovilismo', icon:'🏎️', active:false},
+  {id:'tenis', name:'Tenis', icon:'🎾', active:false},
+  {id:'rugby', name:'Rugby', icon:'🏉', active:false},
+];
+const REGIONS = [
+  {id:'sudamerica', name:'Sudamérica'},
+  {id:'europa', name:'Europa'},
+  {id:'asia', name:'Asia'},
+  {id:'norteamerica', name:'Norteamérica'},
+  {id:'africa', name:'África', soon:true},
+  {id:'oceania', name:'Oceanía', soon:true},
+];
+const COUNTRIES = [
+  {id:'AR', name:'Argentina', flag:'🇦🇷', region:'sudamerica'},
+  {id:'BR', name:'Brasil', flag:'🇧🇷', region:'sudamerica'},
+  {id:'CO', name:'Colombia', flag:'🇨🇴', region:'sudamerica'},
+  {id:'CL', name:'Chile', flag:'🇨🇱', region:'sudamerica', soon:true},
+  {id:'UY', name:'Uruguay', flag:'🇺🇾', region:'sudamerica', soon:true},
+  {id:'ES', name:'España', flag:'🇪🇸', region:'europa'},
+  {id:'EN', name:'Inglaterra', flag:'🏴', region:'europa', soon:true},
+  {id:'IT', name:'Italia', flag:'🇮🇹', region:'europa', soon:true},
+  {id:'DE', name:'Alemania', flag:'🇩🇪', region:'europa', soon:true},
+  {id:'JP', name:'Japón', flag:'🇯🇵', region:'asia'},
+  {id:'MX', name:'México', flag:'🇲🇽', region:'norteamerica'},
+  {id:'US', name:'Estados Unidos', flag:'🇺🇸', region:'norteamerica', soon:true},
+];
+const LEAGUES = [
+  {id:'ar-lpf',   name:'Liga Profesional', full:'Liga Profesional de Fútbol', country:'AR', tier:1},
+  {id:'br-serieA',name:'Brasileirão Série A', full:'Campeonato Brasileiro Série A', country:'BR', tier:1},
+  {id:'br-serieB',name:'Brasileirão Série B', full:'Campeonato Brasileiro Série B', country:'BR', tier:2},
+  {id:'co-primeraA',name:'Primera A', full:'Categoría Primera A', country:'CO', tier:1},
+  {id:'es-laliga',name:'LaLiga', full:'LaLiga EA Sports', country:'ES', tier:1},
+  {id:'jp-j1',    name:'J1 League', full:'Meiji Yasuda J1 League', country:'JP', tier:1},
+  {id:'mx-ligamx',name:'Liga MX', full:'Liga MX', country:'MX', tier:1},
+];
+/* 41 clubes reales del sitio. `y` = ejercicios cargados (real). */
+const CLUBS = [
+  // Argentina — 11
+  {id:'argentinosjuniors',n:'Argentinos Juniors',lg:'ar-lpf',y:5, q:'primary', c:'#c8102e'},
+  {id:'boca',             n:'Boca Juniors',      lg:'ar-lpf',y:9, q:'mixed',   c:'#0a2b5c'},
+  {id:'estudianteslp',    n:'Estudiantes LP',    lg:'ar-lpf',y:4, q:'primary', c:'#c8102e'},
+  {id:'independiente',    n:'Independiente',     lg:'ar-lpf',y:1, q:'primary', c:'#c8102e'},
+  {id:'instituto',        n:'Instituto ACC',     lg:'ar-lpf',y:1, q:'primary', c:'#b5121b'},
+  {id:'racing',           n:'Racing Club',       lg:'ar-lpf',y:17,q:'primary', c:'#6cace4'},
+  {id:'river',            n:'River Plate',       lg:'ar-lpf',y:3, q:'mixed',   c:'#c8102e'},
+  {id:'rosariocentral',   n:'Rosario Central',   lg:'ar-lpf',y:1, q:'primary', c:'#0a4c9e'},
+  {id:'sanlorenzo',       n:'San Lorenzo',       lg:'ar-lpf',y:8, q:'primary', c:'#0a2b5c'},
+  {id:'union',            n:'Unión',             lg:'ar-lpf',y:4, q:'primary', c:'#b01c2e'},
+  {id:'velez',            n:'Vélez Sarsfield',   lg:'ar-lpf',y:11,q:'primary', c:'#1f4b99'},
+  // Brasil — 7  (división: VERIFICAR, ver IMPLEMENTACION-PROMPT.md)
+  {id:'botafogo',         n:'Botafogo',          lg:'br-serieA',y:1,q:'primary', c:'#1c1c1c'},
+  {id:'cruzeiro',         n:'Cruzeiro',          lg:'br-serieA',y:1,q:'primary', c:'#1f3f94'},
+  {id:'gremio',           n:'Grêmio',            lg:'br-serieA',y:1,q:'primary', c:'#0d80bf'},
+  {id:'mirassol',         n:'Mirassol',          lg:'br-serieA',y:1,q:'primary', c:'#f2b705'},
+  {id:'atleticogoianiense',n:'Atlético Goianiense',lg:'br-serieB',y:1,q:'primary', c:'#c8102e'},
+  {id:'coritiba',         n:'Coritiba',          lg:'br-serieB',y:1,q:'primary', c:'#1b7a3d'},
+  {id:'ituano',           n:'Ituano',            lg:'br-serieB',y:1,q:'primary', c:'#b01c2e'},
+  // Colombia — 2
+  {id:'envigado',         n:'Envigado FC',       lg:'co-primeraA',y:1,q:'primary', c:'#f2a900'},
+  {id:'oncecaldas',       n:'Once Caldas',       lg:'co-primeraA',y:1,q:'primary', c:'#c8102e'},
+  // España — 10
+  {id:'athleticclub',     n:'Athletic Club',     lg:'es-laliga',y:1,q:'primary', c:'#c8102e'},
+  {id:'atleticomadrid',   n:'Atlético de Madrid',lg:'es-laliga',y:1,q:'primary', c:'#c8102e'},
+  {id:'celtavigo',        n:'Celta de Vigo',     lg:'es-laliga',y:1,q:'primary', c:'#6cace4'},
+  {id:'deportivoalaves',  n:'Deportivo Alavés',  lg:'es-laliga',y:1,q:'primary', c:'#1f4b99'},
+  {id:'fcbarcelona',      n:'FC Barcelona',      lg:'es-laliga',y:1,q:'primary', c:'#7a1f3d'},
+  {id:'realbetis',        n:'Real Betis',        lg:'es-laliga',y:1,q:'primary', c:'#1b7a3d'},
+  {id:'realmadrid',       n:'Real Madrid',       lg:'es-laliga',y:1,q:'primary', c:'#8a8d93'},
+  {id:'sevillafc',        n:'Sevilla FC',        lg:'es-laliga',y:1,q:'primary', c:'#c8102e'},
+  {id:'valenciacf',       n:'Valencia CF',       lg:'es-laliga',y:1,q:'primary', c:'#f2870d'},
+  {id:'villarrealcf',     n:'Villarreal CF',     lg:'es-laliga',y:1,q:'primary', c:'#f2c200'},
+  // Japón — 10
+  {id:'cerezoosaka',      n:'Cerezo Osaka',      lg:'jp-j1',y:1,q:'primary', c:'#c8006b'},
+  {id:'fctokyo',          n:'FC Tokyo',          lg:'jp-j1',y:1,q:'primary', c:'#0a2b5c'},
+  {id:'gambaosaka',       n:'Gamba Osaka',       lg:'jp-j1',y:1,q:'primary', c:'#1f3f94'},
+  {id:'kashimaantlers',   n:'Kashima Antlers',   lg:'jp-j1',y:1,q:'primary', c:'#8a1538'},
+  {id:'kawasakifrontale', n:'Kawasaki Frontale', lg:'jp-j1',y:1,q:'primary', c:'#0d80bf'},
+  {id:'nagoyagrampus',    n:'Nagoya Grampus',    lg:'jp-j1',y:1,q:'primary', c:'#c8102e'},
+  {id:'sanfreccehiroshima',n:'Sanfrecce Hiroshima',lg:'jp-j1',y:1,q:'primary', c:'#7a2b8a'},
+  {id:'urawareddiamonds', n:'Urawa Red Diamonds',lg:'jp-j1',y:1,q:'primary', c:'#c8102e'},
+  {id:'visselkobe',       n:'Vissel Kobe',       lg:'jp-j1',y:1,q:'primary', c:'#7a1f3d'},
+  {id:'yokohamafmarinos', n:'Yokohama F. Marinos',lg:'jp-j1',y:1,q:'primary', c:'#1f4b99'},
+  // México — 1
+  {id:'clubamerica',      n:'Club América',      lg:'mx-ligamx',y:1,q:'mixed', c:'#f2c200'},
+];
+
+/* Clubes "próximamente" (sin datos): dan la sensación de escala real del selector
+   sin mentir — se muestran apagados y no se pueden elegir. */
+const SOON_BY_LEAGUE = {'ar-lpf':19,'br-serieA':16,'br-serieB':18,'co-primeraA':18,'es-laliga':10,'jp-j1':10,'mx-ligamx':17};
+
+/* ---------- índices ---------- */
+const byId    = Object.fromEntries(CLUBS.map(c=>[c.id,c]));
+const leagueById = Object.fromEntries(LEAGUES.map(l=>[l.id,l]));
+const countryById= Object.fromEntries(COUNTRIES.map(c=>[c.id,c]));
+const clubsOfLeague = id => CLUBS.filter(c=>c.lg===id);
+const leaguesOfCountry = id => LEAGUES.filter(l=>l.country===id);
+const countriesOfRegion = id => COUNTRIES.filter(c=>c.region===id);
+const clubsOfCountry = id => CLUBS.filter(c=>leagueById[c.lg].country===id);
+const clubsOfRegion  = id => CLUBS.filter(c=>countryById[leagueById[c.lg].country].region===id);
+const initials = n => n.replace(/[^A-Za-zÀ-ÿ ]/g,'').split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase()||'··';
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+
+/* ---------- estado ---------- */
+const state = {
+  club:'boca',
+  sel:{sport:'futbol', region:'sudamerica', country:'AR', league:'ar-lpf'},
+  scope:null,            // {type:'league'|'country'|'region', id} cuando mirás un conjunto, no un club
+  compare:[],            // [{kind:'club',id} | {kind:'bench',scope:'ar-lpf',stat:'avg'|'median'}]
+  recents:['boca','racing','realmadrid'],
+  pane:4,                // móvil: qué columna se ve
+};
+
+/* ==========================================================================
+   PANEL
+   ========================================================================== */
+const $ = s => document.querySelector(s);
+const panel=$('#panel'), backdrop=$('#backdrop'), qInput=$('#q');
+let addMode=false;       // true cuando el panel se abrió desde "+ Agregar" (elige rival, no club activo)
+
+function openPanel(forCompare){
+  addMode = !!forCompare;
+  panel.classList.add('open'); backdrop.classList.add('open');
+  qInput.value=''; qInput.placeholder = addMode
+    ? 'Agregar a la comparación: club, liga o benchmark…'
+    : 'Buscá un club, una liga o un país…  (ej. "boca", "laliga", "japón")';
+  renderAll(); qInput.focus();
+}
+function closePanel(){ panel.classList.remove('open'); backdrop.classList.remove('open'); addMode=false; }
+$('#clubBtn').onclick = ()=>openPanel(false);
+$('#compareBtn').onclick = ()=>openPanel(true);
+$('#trayAdd').onclick = ()=>openPanel(true);
+$('#panelClose').onclick = closePanel;
+backdrop.onclick = closePanel;
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') closePanel();
+  if((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); openPanel(false); }
+});
+
+/* ---------- fila genérica ---------- */
+function mkRow({crest,crestColor,icon,name,sub,meta,dot,selected,disabled,arrow,addable,added,onClick,onAdd,cls}){
+  const b=document.createElement('button');
+  b.className='row'+(selected?' sel':'')+(disabled?' disabled':'')+(cls?' '+cls:'');
+  if(dot){ const d=document.createElement('i'); d.className='dot '+dot; b.appendChild(d); }
+  if(crest){ const c=document.createElement('span'); c.className='crest sm'; c.style.background=crestColor||'#8a8d93';
+             c.textContent=crest; b.appendChild(c); }
+  else if(icon){ const i=document.createElement('span'); i.style.fontSize='14px'; i.textContent=icon; b.appendChild(i); }
+  const m=document.createElement('span'); m.className='r-main';
+  m.innerHTML='<span class="r-name"></span>'+(sub?'<span class="r-sub"></span>':'');
+  m.querySelector('.r-name').textContent=name;
+  if(sub) m.querySelector('.r-sub').textContent=sub;
+  b.appendChild(m);
+  if(meta){ const s=document.createElement('span'); s.className='r-meta'; s.textContent=meta; b.appendChild(s); }
+  if(addable){
+    const a=document.createElement('button'); a.className='add-btn'+(added?' on':'');
+    a.textContent = added?'✓':'+'; a.title = added?'Quitar de la comparación':'Agregar a la comparación';
+    a.onclick = ev=>{ ev.stopPropagation(); onAdd&&onAdd(); };
+    b.appendChild(a);
+  }
+  if(arrow){ const s=document.createElement('span'); s.className='r-arrow'; s.textContent='›'; b.appendChild(s); }
+  if(!disabled && onClick) b.onclick=onClick;
+  return b;
+}
+const fill=(id,rows)=>{ const el=$('#'+id); el.innerHTML=''; rows.forEach(r=>el.appendChild(r)); };
+
+/* ---------- columnas ---------- */
+function renderCols(){
+  const s=state.sel;
+
+  fill('colSport', SPORTS.map(sp=>mkRow({
+    icon:sp.icon, name:sp.name, meta:sp.active?String(CLUBS.length):'—',
+    selected:s.sport===sp.id, disabled:!sp.active, arrow:sp.active,
+    sub:sp.active?null:'próximamente',
+    onClick:()=>{ s.sport=sp.id; s.region=null; s.country=null; s.league=null; setScope(null); goPane(1); renderAll(); }
+  })));
+
+  fill('colRegion', [
+    mkRow({name:'Todas las regiones', meta:String(CLUBS.length), cls:'all', arrow:true,
+           selected:s.region===null, onClick:()=>{ s.region=null;s.country=null;s.league=null; setScope({type:'all'}); renderAll(); }}),
+    ...REGIONS.map(r=>{
+      const n=clubsOfRegion(r.id).length;
+      return mkRow({name:r.name, meta:n?String(n):'—', selected:s.region===r.id, disabled:!n, arrow:!!n,
+        sub:n?null:'próximamente',
+        onClick:()=>{ s.region=r.id; s.country=null; s.league=null; setScope({type:'region',id:r.id}); goPane(2); renderAll(); }});
+    })]);
+
+  const countries = s.region? countriesOfRegion(s.region) : COUNTRIES;
+  fill('colCountry', [
+    ...(s.region?[mkRow({name:'Toda la región', meta:String(clubsOfRegion(s.region).length), cls:'all', arrow:true,
+        selected:s.country===null, onClick:()=>{ s.country=null;s.league=null; setScope({type:'region',id:s.region}); renderAll(); }})]:[]),
+    ...countries.map(c=>{
+      const n=clubsOfCountry(c.id).length;
+      return mkRow({icon:c.flag, name:c.name, meta:n?String(n):'—', selected:s.country===c.id, disabled:!n, arrow:!!n,
+        sub:n?null:'próximamente',
+        onClick:()=>{ s.country=c.id; s.region=countryById[c.id].region; s.league=null; setScope({type:'country',id:c.id}); goPane(3); renderAll(); }});
+    })]);
+
+  const leagues = s.country? leaguesOfCountry(s.country) : LEAGUES;
+  fill('colLeague', [
+    ...(s.country?[mkRow({name:'Todo el país', meta:String(clubsOfCountry(s.country).length), cls:'all', arrow:true,
+        selected:s.league===null, onClick:()=>{ s.league=null; setScope({type:'country',id:s.country}); renderAll(); }})]:[]),
+    ...leagues.map(l=>{
+      const n=clubsOfLeague(l.id).length;
+      return mkRow({name:l.name, sub:l.tier===1?'1ª división':(l.tier+'ª división'), meta:String(n),
+        selected:s.league===l.id, arrow:true,
+        addable:true, added:hasCmp('bench',l.id),
+        onAdd:()=>toggleBench(l.id),
+        onClick:()=>{ s.league=l.id; s.country=l.country; s.region=countryById[l.country].region;
+                      setScope({type:'league',id:l.id}); goPane(4); renderAll(); }});
+    })]);
+
+  // Columna de equipos: obedece el nivel MÁS profundo elegido
+  let list = s.league? clubsOfLeague(s.league)
+           : s.country? clubsOfCountry(s.country)
+           : s.region ? clubsOfRegion(s.region) : CLUBS.slice();
+  list = list.slice().sort((a,b)=>a.n.localeCompare(b.n,'es',{sensitivity:'base'}));
+  const rows = list.map(c=>mkRow({
+    crest:initials(c.n), crestColor:c.c, name:c.n,
+    sub:(c.y===1?'1 ejercicio':c.y+' ejercicios')+' · '+leagueById[c.lg].name,
+    dot:c.q, selected:!addMode && state.club===c.id,
+    addable:true, added:hasCmp('club',c.id),
+    onAdd:()=>toggleClubCmp(c.id),
+    onClick:()=>{ if(addMode){ toggleClubCmp(c.id); } else { pickClub(c.id); } }
+  }));
+  const soon = s.league? (SOON_BY_LEAGUE[s.league]||0) : 0;
+  if(soon) rows.push(mkRow({name:soon+' clubes más de esta liga', sub:'sin balance cargado todavía', dot:'none', disabled:true}));
+  fill('colClub', rows);
+  renderCrumbs();
+}
+
+/* ---------- breadcrumb (móvil) ---------- */
+function goPane(i){ state.pane=i; document.querySelectorAll('.col').forEach(c=>c.classList.toggle('active-pane', +c.dataset.level===i)); }
+function renderCrumbs(){
+  const s=state.sel, c=$('#crumbs'); c.innerHTML='';
+  const parts=[{lbl:SPORTS.find(x=>x.id===s.sport).name, lvl:0}];
+  if(s.region) parts.push({lbl:REGIONS.find(x=>x.id===s.region).name, lvl:1});
+  if(s.country)parts.push({lbl:countryById[s.country].name, lvl:2});
+  if(s.league) parts.push({lbl:leagueById[s.league].name, lvl:3});
+  parts.push({lbl:'Equipos', lvl:4});
+  parts.forEach((p,i)=>{
+    if(i) { const sep=document.createElement('span'); sep.className='crumb-sep'; sep.textContent='›'; c.appendChild(sep); }
+    const b=document.createElement('button');
+    b.className='crumb'+(p.lvl===state.pane?' cur':''); b.textContent=p.lbl;
+    b.onclick=()=>goPane(p.lvl); c.appendChild(b);
+  });
+}
+
+/* ---------- búsqueda ---------- */
+qInput.addEventListener('input', renderAll);
+function renderSearch(){
+  const term=norm(qInput.value.trim());
+  const res=$('#results'), cols=$('#cols');
+  if(!term){ res.style.display='none'; cols.style.display=''; $('#crumbs').style.display=''; return; }
+  res.style.display=''; cols.style.display='none'; $('#crumbs').style.display='none';
+  res.innerHTML='';
+
+  const clubHits = CLUBS.filter(c=>norm(c.n).includes(term)||norm(c.id).includes(term));
+  const lgHits   = LEAGUES.filter(l=>norm(l.name).includes(term)||norm(l.full).includes(term));
+  const coHits   = COUNTRIES.filter(c=>norm(c.name).includes(term)&&clubsOfCountry(c.id).length);
+
+  const group=t=>{const d=document.createElement('div');d.className='res-group';d.textContent=t;res.appendChild(d);};
+  if(clubHits.length){
+    group('Clubes'); clubHits.slice(0,20).forEach(c=>res.appendChild(mkRow({
+      crest:initials(c.n),crestColor:c.c,name:c.n,dot:c.q,
+      sub:leagueById[c.lg].name+' · '+countryById[leagueById[c.lg].country].name,
+      meta:(c.y===1?'1 ejercicio':c.y+' ejercicios'),
+      addable:true, added:hasCmp('club',c.id), onAdd:()=>toggleClubCmp(c.id),
+      onClick:()=>addMode?toggleClubCmp(c.id):pickClub(c.id)})));
+  }
+  if(lgHits.length){
+    group('Ligas'); lgHits.forEach(l=>res.appendChild(mkRow({
+      name:l.full, sub:countryById[l.country].name, meta:clubsOfLeague(l.id).length+' clubes', arrow:true,
+      addable:true, added:hasCmp('bench',l.id), onAdd:()=>toggleBench(l.id),
+      onClick:()=>{ Object.assign(state.sel,{league:l.id,country:l.country,region:countryById[l.country].region});
+                    setScope({type:'league',id:l.id}); qInput.value=''; goPane(4); renderAll(); }})));
+  }
+  if(coHits.length){
+    group('Países'); coHits.forEach(c=>res.appendChild(mkRow({
+      icon:c.flag, name:c.name, meta:clubsOfCountry(c.id).length+' clubes', arrow:true,
+      onClick:()=>{ Object.assign(state.sel,{country:c.id,region:c.region,league:null});
+                    setScope({type:'country',id:c.id}); qInput.value=''; goPane(3); renderAll(); }})));
+  }
+  if(!clubHits.length && !lgHits.length && !coHits.length){
+    res.innerHTML='<div class="empty">Nada con “'+qInput.value+'”.<br><br>'+
+      'Si es un club que todavía no está cargado, <b>avisanos</b> y lo priorizamos.</div>';
+  }
+}
+
+/* ==========================================================================
+   COMPARACIÓN — un solo modelo para los 3 casos
+   Cada ítem de `state.compare` es un "sujeto comparable": un club, o un
+   benchmark calculado (promedio/mediana de una liga). El modo (duelo /
+   múltiple / contra benchmark) se DEDUCE de la lista, no se elige en un menú.
+   ========================================================================== */
+const MAX_CMP=4;  // + el club activo = 5 columnas
+const hasCmp=(kind,id)=>state.compare.some(x=>x.kind===kind && x.id===id);
+function toggleClubCmp(id){
+  if(id===state.club) return;
+  const i=state.compare.findIndex(x=>x.kind==='club'&&x.id===id);
+  if(i>=0) state.compare.splice(i,1);
+  else { if(state.compare.length>=MAX_CMP) state.compare.shift(); state.compare.push({kind:'club',id}); }
+  renderAll();
+}
+function toggleBench(leagueId){
+  const i=state.compare.findIndex(x=>x.kind==='bench'&&x.id===leagueId);
+  if(i>=0) state.compare.splice(i,1);
+  else { if(state.compare.length>=MAX_CMP) state.compare.shift(); state.compare.push({kind:'bench',id:leagueId,stat:'avg'}); }
+  renderAll();
+}
+const cmpLabel = x => x.kind==='club' ? byId[x.id].n
+                    : (x.stat==='avg'?'Promedio ':'Mediana ')+leagueById[x.id].name;
+
+function renderTray(){
+  const tray=$('#tray');
+  if(!state.compare.length){ tray.style.display='none'; return; }
+  tray.style.display='';
+  const wrap=$('#trayChips'); wrap.innerHTML='';
+
+  // El club activo siempre es la primera columna
+  const act=byId[state.club];
+  const base=document.createElement('span'); base.className='chip';
+  base.innerHTML='<span class="crest sm" style="background:'+act.c+'">'+initials(act.n)+'</span>'+
+                 '<span class="chip-name">'+act.n+'</span>';
+  wrap.appendChild(base);
+
+  state.compare.forEach((x,i)=>{
+    const el=document.createElement('span');
+    el.className='chip'+(x.kind==='bench'?' bench':'');
+    if(x.kind==='club'){
+      const c=byId[x.id];
+      el.innerHTML='<span class="crest sm" style="background:'+c.c+'">'+initials(c.n)+'</span>'+
+                   '<span class="chip-name">'+c.n+'</span>';
+    } else {
+      el.innerHTML='<span style="font-size:12px;padding-left:5px">📊</span><span class="chip-name">'+cmpLabel(x)+'</span>';
+      // click en el chip de benchmark alterna promedio <-> mediana
+      el.title='Click para alternar promedio / mediana';
+      el.style.cursor='pointer';
+      el.onclick=()=>{ x.stat = x.stat==='avg'?'median':'avg'; renderAll(); };
+    }
+    const x_=document.createElement('button'); x_.className='x'; x_.textContent='×';
+    x_.onclick=ev=>{ ev.stopPropagation(); state.compare.splice(i,1); renderAll(); };
+    el.appendChild(x_); wrap.appendChild(el);
+  });
+
+  const nClubs=state.compare.filter(x=>x.kind==='club').length;
+  const nBench=state.compare.filter(x=>x.kind==='bench').length;
+  let mode='Duelo', hint='1 contra 1';
+  if(nClubs>=2){ mode='Múltiple'; hint=(nClubs+1)+' clubes lado a lado'; }
+  if(nBench&&!nClubs){ mode='Benchmark'; hint='club contra su liga'; }
+  if(nBench&&nClubs){ mode='Mixto'; hint=(nClubs+1)+' clubes + '+nBench+' benchmark'+(nBench>1?'s':''); }
+  $('#modePill').textContent=mode; $('#modeHint').textContent=hint;
+}
+
+/* ==========================================================================
+   CONTENIDO DEMO — números 100% inventados, determinísticos por id
+   ========================================================================== */
+function seeded(id, salt){ let h=0; const s=id+salt; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return (h%1000)/1000; }
+function revOf(id){
+  const c=byId[id];
+  const base={'es-laliga':300,'jp-j1':60,'ar-lpf':90,'mx-ligamx':120,'br-serieA':110,'br-serieB':28,'co-primeraA':22}[c.lg]||60;
+  return Math.round(base*(0.35+seeded(id,'rev')*1.5));
+}
+function mixOf(id){
+  const r=[seeded(id,'a'),seeded(id,'b'),seeded(id,'c'),seeded(id,'d'),seeded(id,'e')].map(v=>v+0.25);
+  const t=r.reduce((a,b)=>a+b,0); return r.map(v=>v/t);
+}
+const fmt = v => (v<0?'-$':'$')+Math.abs(v).toLocaleString('es-AR')+'M';
+
+function benchValue(leagueId, stat, fn){
+  const vals=clubsOfLeague(leagueId).map(c=>fn(c.id)).sort((a,b)=>a-b);
+  if(!vals.length) return 0;
+  if(stat==='median') return vals[Math.floor(vals.length/2)];
+  return Math.round(vals.reduce((a,b)=>a+b,0)/vals.length);
+}
+
+function setScope(sc){ state.scope=sc; }
+function pickClub(id){
+  state.club=id; setScope(null);
+  state.recents=[id,...state.recents.filter(r=>r!==id)].slice(0,5);
+  const lg=leagueById[byId[id].lg];
+  Object.assign(state.sel,{league:lg.id,country:lg.country,region:countryById[lg.country].region});
+  closePanel(); renderAll();
+}
+
+function renderDemo(){
+  const c=byId[state.club];
+  const lg=leagueById[c.lg], co=countryById[lg.country];
+  $('#cbCrest').textContent=initials(c.n); $('#cbCrest').style.background=c.c;
+  $('#cbName').textContent=c.n; $('#cbSub').textContent=lg.name+' · '+co.name;
+  // El breadcrumb sigue al SCOPE cuando estás mirando un conjunto, y al club cuando no.
+  const s=state.sel;
+  const bcCountry = s.country? countryById[s.country] : co;
+  const bcRegion  = REGIONS.find(r=>r.id===(s.region||co.region));
+  const bcLeague  = s.league? leagueById[s.league] : lg;
+  const tail = !state.scope ? c.n
+             : state.scope.type==='league'  ? 'todos los clubes'
+             : state.scope.type==='country' ? 'todas las ligas'
+             : state.scope.type==='region'  ? 'todos los países' : 'todo';
+  const parts=['⚽ Fútbol'];
+  if(bcRegion) parts.push(bcRegion.name);
+  if(s.country||!state.scope) parts.push(bcCountry.flag+' '+bcCountry.name);
+  if(s.league||!state.scope) parts.push(bcLeague.name);
+  $('#sbCrumb').innerHTML = parts.join(' › ')+' › <b>'+tail+'</b>';
+
+  const showRank = !!state.scope;
+  const showCmp  = state.compare.length>0;
+
+  // ---- KPIs (inventados) ----
+  const rev=revOf(c.id), exp=Math.round(rev*(0.8+seeded(c.id,'x')*0.45));
+  $('#demoTitle').textContent = showRank ? (state.scope.type==='league'?leagueById[state.scope.id].full
+                                : state.scope.type==='country'?countryById[state.scope.id].name : 'Todos los clubes')
+                              : c.n;
+  $('#demoSub').textContent = showRank
+    ? (state.scope.type==='league'? clubsOfLeague(state.scope.id).length+' clubes con balance cargado'
+      : 'Vista agregada')
+    : 'Ejercicio 2024/2025 · '+(c.q==='primary'?'balance auditado':c.q==='mixed'?'balance + tramos placeholder':'placeholder');
+
+  $('#demoStats').innerHTML = showRank ? '' : [
+    ['Ingresos',fmt(rev)],['Gastos',fmt(exp)],
+    ['Resultado',(rev-exp>=0?'+':'')+fmt(rev-exp)],['Ejercicios cargados',c.y]
+  ].map(([l,v])=>'<div class="stat"><div class="label">'+l+'</div><div class="value">'+v+'</div></div>').join('');
+
+  // ---- ranking de liga ----
+  $('#rankCard').style.display = showRank?'':'none';
+  if(showRank){
+    const list = state.scope.type==='league'? clubsOfLeague(state.scope.id)
+               : state.scope.type==='country'? clubsOfCountry(state.scope.id)
+               : state.scope.type==='region'? clubsOfRegion(state.scope.id) : CLUBS;
+    const sorted=list.slice().sort((a,b)=>revOf(b.id)-revOf(a.id));
+    const max=revOf(sorted[0].id)||1;
+    $('#rankTitle').textContent='Ranking de ingresos operativos';
+    $('#rankSub').textContent='Composición por categoría. Clickeá una barra para abrir ese club, o el + para sumarlo a la comparación.';
+    $('#rankRows').innerHTML='';
+    sorted.forEach(cl=>{
+      const v=revOf(cl.id), mix=mixOf(cl.id);
+      const row=document.createElement('div'); row.className='rank-row';
+      const segs=['seg-matchday','seg-tv','seg-sponsor','seg-players','seg-other']
+        .map((s,i)=>'<div class="seg '+s+'" style="width:'+(mix[i]*100)+'%"></div>').join('');
+      row.innerHTML =
+        '<div class="rank-name"><i class="dot '+cl.q+'"></i><span class="crest sm" style="background:'+cl.c+'">'+initials(cl.n)+'</span><span>'+cl.n+'</span></div>'+
+        '<div class="bar" style="width:'+Math.max(6,(v/max)*100)+'%">'+segs+'</div>'+
+        '<div class="rank-val">'+fmt(v)+'</div>';
+      row.querySelector('.bar').onclick=()=>pickClub(cl.id);
+      $('#rankRows').appendChild(row);
+    });
+  }
+
+  // ---- tabla de comparación ----
+  $('#compareCard').style.display = showCmp?'':'none';
+  if(showCmp){
+    const subjects=[{kind:'club',id:state.club},...state.compare];
+    const METRICS=[
+      ['Ingresos', id=>revOf(id), true],
+      ['Gastos', id=>Math.round(revOf(id)*(0.8+seeded(id,'x')*0.45)), false],
+      ['Resultado', id=>revOf(id)-Math.round(revOf(id)*(0.8+seeded(id,'x')*0.45)), true],
+      ['Masa salarial / Ingresos', id=>Math.round(38+seeded(id,'w')*40), false, '%'],
+      ['Deuda neta', id=>Math.round(revOf(id)*seeded(id,'d')*0.9), false],
+      ['Ingreso por socio', id=>Math.round(200+seeded(id,'s')*900), true, ' USD'],
+    ];
+    let head='<thead><tr><th>Indicador</th>';
+    subjects.forEach(s=>{
+      const isB = s.kind==='bench';
+      head+='<th class="num'+(isB?' bench-col':'')+'">'+ (isB?cmpLabel(s):byId[s.id].n) +'</th>';
+    });
+    head+='</tr></thead>';
+    let body='<tbody>';
+    METRICS.forEach(([label,fn,higherBetter,unit])=>{
+      const vals=subjects.map(s=> s.kind==='club'? fn(s.id) : benchValue(s.id, s.stat, fn));
+      const clubVals=vals.filter((_,i)=>subjects[i].kind==='club');
+      const best = higherBetter===undefined?null : (higherBetter?Math.max(...clubVals):Math.min(...clubVals));
+      body+='<tr><td>'+label+'</td>'+vals.map((v,i)=>{
+        const isB=subjects[i].kind==='bench';
+        const txt = unit? v.toLocaleString('es-AR')+unit : fmt(v);
+        return '<td class="num'+(isB?' bench-col':'')+(!isB&&v===best?' best':'')+'">'+txt+'</td>';
+      }).join('')+'</tr>';
+    });
+    body+='</tbody>';
+    $('#compareTable').innerHTML=head+body;
+  }
+}
+
+/* ---------- recientes ---------- */
+function renderRecents(){
+  const w=$('#recents'); w.innerHTML='';
+  state.recents.forEach(id=>{
+    const c=byId[id]; if(!c) return;
+    const b=document.createElement('button'); b.className='r-chip';
+    b.innerHTML='<span class="crest sm" style="background:'+c.c+'">'+initials(c.n)+'</span>'+c.n;
+    b.onclick=()=>addMode?toggleClubCmp(id):pickClub(id);
+    w.appendChild(b);
+  });
+}
+
+function renderAll(){ renderCols(); renderSearch(); renderRecents(); renderTray(); renderDemo(); }
+renderAll();
+</script>
+</body>
+</html>
