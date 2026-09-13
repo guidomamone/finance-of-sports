@@ -603,3 +603,9 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - Dudas nuevas anotadas en `dudas-por-club.md` (Mirassol): el Patrimônio Líquido del informe no cierra consigo mismo (saldo inicial + superávit = R$ 31.416.601,08, pero imprime R$ 30.267.600,99, R$ 1.149.000,09 sin explicar), por lo que NO se cargó ningún dato patrimonial; más varios errores de redacción del documento (cifras cuya versión en letras no coincide con el número, porcentajes que en realidad son coeficientes).
 - Los 3 clubes usan el mismo PTAX BCB de cierre 31/12/2024 (R$6,1923) que ya usaban Grêmio y Botafogo para esa misma fecha. Ninguno de los 3 documentos declara tipo de cambio propio.
 - Verificado en el navegador: 41 clubes, `verifyTieOuts()`/`checkFxSanity()` sin ninguna falla, 0 errores de consola, Coritiba renderizado y revisado a ojo en Finanzas.
+
+## Versión 117 — El sitio pasa a llamarse "El deporte en Números" en castellano
+
+- Rename de marca pedido por Guido: "Tu club en números" -> "El deporte en Números". Cambia el `<title>`, el logo del header y el asunto del mail del formulario de contacto. Historia completa del nombre: "Boca en Números" (inicio) -> "Tu club en números" (Versión 12) -> "El deporte en Números" (esta).
+- La marca es DISTINTA POR IDIOMA a propósito, y eso queda resuelto como decisión, no como deuda: "El deporte en Números" en castellano, "Finance of Sports" en inglés (clave `site.name` de `data/lang/en.js`), que además es el dominio. Cierra la duda abierta que había dejado la Versión 115.
+- `git remote` local actualizado a `https://github.com/guidomamone/finance-of-sports.git` (Guido ya renombró el repo en GitHub).
