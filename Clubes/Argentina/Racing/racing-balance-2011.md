@@ -2,7 +2,7 @@
 
 **NOTA: transcripción PARCIAL** — mismo criterio y misma limitación que
 `racing-balance-2009.md` (ver esa nota para el detalle). PDF fuente:
-`numeros-de-boca/Clubes/Argentina/Racing/balance2011.pdf` (texto extraíble nativo).
+`finance-of-sports/Clubes/Argentina/Racing/balance2011.pdf` (texto extraíble nativo).
 
 --- ESTADO DE RECURSOS Y GASTOS ---
 

@@ -1,6 +1,6 @@
 // ============================================================================
 // data/envigado-data.js — Envigado Fútbol Club S.A. (Envigado, Colombia).
-// Segundo club colombiano cargado en numeros-de-boca (junto con Once
+// Segundo club colombiano cargado en finance-of-sports (junto con Once
 // Caldas, misma sesión). Ejercicio 2025 = REAL, único ejercicio cargado a
 // propósito: SIIS tiene 10 ejercicios consecutivos (2016-2025) disponibles
 // para este club (ver fuentes/Colombia/Envigado.md), pero el pedido

@@ -34,7 +34,7 @@
 // columna "Cambio vigente al cierre") para convertir sus partidas en USD a pesos. Antes se usaba
 // $953,50 (Rava Bursátil/BCRA, investigado externamente) — se corrigió en la Versión 32 siguiendo
 // la misma regla nueva que Racing (preferir el tipo de cambio que declara el propio documento antes
-// que uno externo, ver numeros-de-boca/.claude/skills/club-data-mapping/SKILL.md sección 5). La
+// que uno externo, ver finance-of-sports/.claude/skills/club-data-mapping/SKILL.md sección 5). La
 // diferencia es chica (~0,3%) pero la fuente primaria es más fiel. El balance también declara tipos
 // de cambio propios para EUR ($1.049,5421) y CHF ($1.122,36) en el mismo Anexo — no se usan acá
 // porque el sitio solo modela una moneda de reporte (ARS) y una de display (USD), no multi-moneda
@@ -248,7 +248,7 @@ Object.assign(sources, {
       title:'Estados Contables (balance auditado), Ejercicio Económico N°123, 1°/9/2023 al 31/8/2024',
       type:'unofficial_mirror', reliability:'secondary_mirror',
       url:'https://turiver.s3.us-west-000.backblazeb2.com/original/4X/1/7/a/17ac4c09709f687d2249c3e21b8e7c5262b78116.pdf',
-      note:'PDF de 67 páginas con informe de auditoría independiente real y sellos de legalización, pero conseguido en una réplica subida por la comunidad tuRiver (turiver.com), NO desde el dominio oficial de River (riverplate.com/cariverplate.com.ar solo exponen la "Memoria" narrativa sin estados contables — ver river-data.js para el detalle de este hallazgo). El contenido en sí tiene toda la apariencia de ser el documento real y auditado; lo que no está confirmado por canal primario es la vía de distribución. Copia local en numeros-de-boca/Clubes/Argentina/River/estados-contables-leads/turiver-estados-contables.pdf. Transcripción completa en Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md. Convertido a USD con $950,50, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo V (Versión 32; antes se usaba $953,50, una cotización externa de Rava Bursátil/BCRA).',
+      note:'PDF de 67 páginas con informe de auditoría independiente real y sellos de legalización, pero conseguido en una réplica subida por la comunidad tuRiver (turiver.com), NO desde el dominio oficial de River (riverplate.com/cariverplate.com.ar solo exponen la "Memoria" narrativa sin estados contables — ver river-data.js para el detalle de este hallazgo). El contenido en sí tiene toda la apariencia de ser el documento real y auditado; lo que no está confirmado por canal primario es la vía de distribución. Copia local en finance-of-sports/Clubes/Argentina/River/estados-contables-leads/turiver-estados-contables.pdf. Transcripción completa en Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md. Convertido a USD con $950,50, el tipo de cambio de cierre que el PROPIO balance declara en su Anexo V (Versión 32; antes se usaba $953,50, una cotización externa de Rava Bursátil/BCRA).',
     },
 });
 

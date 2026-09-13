@@ -7,7 +7,7 @@ transcribieron las secciones de estados contables que efectivamente se usaron pa
 en `data/racing-data.js`. La Memoria de la Comisión Directiva (págs. 3-46 del PDF original, texto
 narrativo) y las Notas a los Estados Contables (págs. 57-65) NO están transcriptas acá — quedan
 pendientes si una sesión futura necesita ese contexto. El PDF fuente está en
-`numeros-de-boca/Clubes/Argentina/Racing/balance2009.pdf` y tiene texto extraíble nativo (no es un
+`finance-of-sports/Clubes/Argentina/Racing/balance2009.pdf` y tiene texto extraíble nativo (no es un
 escaneo), así que reabrirlo con pdftotext es barato si hace falta más detalle.
 
 Fuente: racingclub.com.ar/informes/balance2009.pdf. Moneda: pesos argentinos SIN reexpresar (no

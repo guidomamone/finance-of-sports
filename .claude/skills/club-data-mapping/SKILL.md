@@ -1,12 +1,12 @@
 ---
 name: club-data-mapping
-description: Supuestos y patrones para mapear el balance/presupuesto NATIVO de un club de fútbol (categorías propias del documento, ej. "Generales/Específicos/Diversos" de Racing, o las 5 categorías de River) al esquema compartido del sitio numeros-de-boca (normalizedCategory de data/category-map.js, revenueLines/expenseLines, meta fields). Usar SIEMPRE que se cargue un balance o presupuesto nuevo, de un club ya existente (un ejercicio que faltaba) o de un club completamente nuevo, antes de decidir cómo categorizar cada línea o cómo convertir a USD. El objetivo es no reinventar estos criterios cada vez: si una decisión de esta sesión contradice lo que dice este skill, o aparece un caso que el skill no cubre, actualizar el skill al terminar (ver "Cómo mantener este skill" al final).
+description: Supuestos y patrones para mapear el balance/presupuesto NATIVO de un club de fútbol (categorías propias del documento, ej. "Generales/Específicos/Diversos" de Racing, o las 5 categorías de River) al esquema compartido del sitio finance-of-sports (normalizedCategory de data/category-map.js, revenueLines/expenseLines, meta fields). Usar SIEMPRE que se cargue un balance o presupuesto nuevo, de un club ya existente (un ejercicio que faltaba) o de un club completamente nuevo, antes de decidir cómo categorizar cada línea o cómo convertir a USD. El objetivo es no reinventar estos criterios cada vez: si una decisión de esta sesión contradice lo que dice este skill, o aparece un caso que el skill no cubre, actualizar el skill al terminar (ver "Cómo mantener este skill" al final).
 ---
 
 # Mapeo de formato-club a formato-sitio
 
 Este skill es la memoria de las decisiones de categorización que ya se tomaron al cargar
-balances/presupuestos reales de Boca, River y Racing en `numeros-de-boca`. No es una guía teórica:
+balances/presupuestos reales de Boca, River y Racing en `finance-of-sports`. No es una guía teórica:
 cada regla de acá salió de un caso real, y dice de dónde salió. Leelo ANTES de mapear un documento
 nuevo, te ahorra volver a decidir lo mismo, y evita que dos ejercicios del mismo club (o de clubes
 distintos) queden categorizados con criterios diferentes sin querer.
@@ -151,7 +151,7 @@ subtítulo dentro de una tabla plana, sin fila de total), calculá su `value` co
 ## 5. Conversión a USD: cualquier moneda nativa, no solo ARS (ver data/currency-map.js)
 
 - **Todos los clubes tienen toggle [moneda nativa / USD] en vivo** (desde la Versión 32 de
-  numeros-de-boca para ARS; desde la Versión 103, CUALQUIER moneda — BRL, CLP, COP, PEN, EUR, etc.
+  finance-of-sports para ARS; desde la Versión 103, CUALQUIER moneda — BRL, CLP, COP, PEN, EUR, etc.
   Ver el comentario de cabecera de `data/currency-map.js` para el modelo completo, es lectura
   obligatoria antes de onboardear un club fuera de Argentina): se guardan los montos en la moneda
   NATIVA del documento (`amountNative` de `revenueLines`/`expenseLines`, mismo campo para todos), y
@@ -169,7 +169,7 @@ subtítulo dentro de una tabla plana, sin fila de total), calculá su `value` co
   una moneda de valor nominal grande — agregar la entrada real es preferible a dejar el fallback.
 
 Qué tipo de cambio usar, en orden de preferencia:
-0. **REGLA #1, ANTES que cualquier otra (agregada Versión 32 de numeros-de-boca, sesión de carga
+0. **REGLA #1, ANTES que cualquier otra (agregada Versión 32 de finance-of-sports, sesión de carga
    de Racing): si el propio documento declara SU PROPIO tipo de cambio de cierre, usá ESE, no una
    cotización externa investigada a mano.** Buscá un Anexo tipo "Activos y pasivos en moneda
    extranjera" (Racing: Anexo VI; River: Anexo V), suele tener una columna "Tipo de Cambio" o
@@ -207,7 +207,7 @@ Qué tipo de cambio usar, en orden de preferencia:
 
 ### Guardar amountNative en la moneda nativa del club, no pre-convertido a USD (regla desde la Versión 32)
 
-Hasta la Versión 31 de numeros-de-boca, River y Racing guardaban `amountNative` YA CONVERTIDO a
+Hasta la Versión 31 de finance-of-sports, River y Racing guardaban `amountNative` YA CONVERTIDO a
 USD (sin toggle de moneda), la sección 5 de este skill decía explícitamente "seguí este mismo
 patrón" para clubes nuevos. Esa recomendación quedó OBSOLETA: a partir de la Versión 32, todos los
 clubes cargados guardan `amountNative` en millones de su moneda NATIVA (tal cual el
@@ -435,7 +435,7 @@ preguntar "¿esto está bien?" sin esas 4 cosas.
 
 ## 12. "Formato simplificado": cada fila tiene que ser un acordeón, nunca `items:null`
 
-REGLA (agregada Versión 40 de numeros-de-boca, pedido explícito de Guido: "es mi manera de hacerte
+REGLA (agregada Versión 40 de finance-of-sports, pedido explícito de Guido: "es mi manera de hacerte
 un control"): a diferencia de "Formato del club" (que siempre mostró el desglose real vía `items`),
 "Formato simplificado" arrancó con TODAS sus filas en `items:null`, se veía el número ya
 reclasificado, pero no había forma de auditar de qué campo(s) nativo(s) salió esa reclasificación

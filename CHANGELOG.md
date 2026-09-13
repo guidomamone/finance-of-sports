@@ -1,6 +1,6 @@
 # Changelog
 
-Este archivo es la versión condensada del historial de `numeros-de-boca`, versión
+Este archivo es la versión condensada del historial de `finance-of-sports`, versión
 por versión, desde la Versión 10 (cuando el sitio pasó de ser solo de Boca a
 multi-club) hasta hoy. Son bullets terses de qué cambió, no el porqué completo.
 Para el razonamiento narrativo detrás de cualquier entrada (qué se probó, qué se
@@ -234,7 +234,7 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 
 ## Versión 51 — Limpieza de arquitectura antes de seguir agregando clubes (fix de category-map.js, separación cálculo/render, y lazy-loading de River/Racing)
 
-- Primera vez con control de versiones (git) propio para `numeros-de-boca`.
+- Primera vez con control de versiones (git) propio para el repo (entonces llamado `numeros-de-boca`, renombrado a `finance-of-sports` en 2026-09-13).
 - Fix de nombre de categoría inconsistente (`player_sales`).
 - ~2530 líneas separadas del script principal en 3 archivos nuevos (`data/boca-data.js`, `js/finanzas-calc.js`, `js/finanzas-render.js`), sin cambiar código.
 - River/Racing pasan a lazy-load (ya no se bajan siempre); 2 bugs reales de referencia a variables no definidas encontrados y corregidos en el proceso.
@@ -559,3 +559,12 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - Bug real encontrado al revisar esto: aun con el toggle oculto, `renderInicioStats()` seguía leyendo `gestionesByClub[currentClub][key]` sin guardas — un club onboardeado sin NINGUNA entrada de gestión rompía Inicio (la primera pantalla que ve cualquier visitante), no solo el toggle escondido. Se hizo defensivo en el motor (`currentGestionKey()` y todo lector de `gestionesByClub` en js/finanzas-render.js con `|| {}`, `renderInicioStats()` degrada a "Sin dato"). Ya NO hace falta que un club nuevo agregue una entrada sintética de gestión solo para evitar un crash.
 - `checkFxSanity()` nuevo (`data/currency-map.js`, corre junto a `verifyTieOuts()` al cargar el sitio): compara cada `fx` contra un rango plausible por moneda (`FX_PLAUSIBLE_RANGE`) y avisa por `console.warn` si algo parece invertido o con el orden de magnitud equivocado — habría marcado el bug de fx invertido de España (Versión 111) de inmediato. 0 warnings en los 38 clubes actuales tras ajustar el rango de ARS (el histórico real va de ~$4 a ~$1900 por USD).
 - Regresión completa verificada en el navegador tras los 3 cambios: 38 clubes, 213 checks de `verifyTieOuts()`, 0 mismatches, 0 warnings de `checkFxSanity()`, 0 errores de consola.
+
+## Versión 113 — Dominio propio (financeofsports.com) y rename del proyecto a `finance-of-sports`
+
+- Guido compró **financeofsports.com** y el dominio ya sirve el sitio desde Netlify (verificado: `www.financeofsports.com` → 301 a `financeofsports.com`, `server: Netlify`, devuelve este `index.html`). Resuelve la mitad del to-do 7, que venía abierto desde el principio del proyecto.
+- Carpeta local renombrada `numeros-de-boca/` → `finance-of-sports/`. 58 referencias de PATH (`numeros-de-boca/...`) actualizadas en docs, skills, transcripciones de `Clubes/` y comentarios de cabecera de `data/*.js`; las referencias al NOMBRE viejo se actualizaron también, salvo 3 líneas de historial puro (CHANGELOG Versión ~50, `Proyecto Boca.md`) donde el nombre viejo es el dato correcto y se aclaró entre paréntesis.
+- **`.gitignore` del sitio profesional (`../.gitignore`) actualizado**: la línea `numeros-de-boca/` pasó a `finance-of-sports/`. Esto es lo único que rompía de verdad con el rename — sin esa línea, todo este proyecto se vuelve untracked dentro del repo `guidomamone-website` y se puede commitear/deployar por error al sitio profesional de Guido. Verificado con `git check-ignore -v`.
+- Nada del código del sitio depende del nombre de la carpeta: todos los assets se cargan con paths relativos (`data/*.js`, `js/*.js`) y `loadClubData()` arma el path por convención desde la Versión 112. Verificado que las 6 referencias locales de `<script src>` resuelven a archivos existentes.
+- PENDIENTE, necesita a Guido (un agente no puede): renombrar el repo en GitHub y re-linkear el repo en Netlify. Ver to-do 7 en `index.html` para el paso a paso y el porqué del re-link.
+- Nota de branding abierta: el sitio sigue llamándose "Tu club en números" (castellano) con un dominio en inglés, y el mail de contacto sigue siendo el placeholder `contacto@bocaennumeros.example` (to-do 8), que además referencia un nombre de marca ya abandonado.

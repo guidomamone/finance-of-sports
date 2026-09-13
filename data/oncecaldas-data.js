@@ -1,6 +1,6 @@
 // ============================================================================
 // data/oncecaldas-data.js — Once Caldas S.A. En Reorganización (Manizales,
-// Colombia). Primer club colombiano cargado en numeros-de-boca (junto con
+// Colombia). Primer club colombiano cargado en finance-of-sports (junto con
 // Envigado, misma sesión). Ejercicio 2025 = REAL, único ejercicio cargado a
 // propósito (ver nota de alcance abajo).
 //

@@ -1,6 +1,6 @@
 # Proyecto Boca — historia narrativa completa
 
-Este archivo es la historia narrativa completa de `numeros-de-boca`, versión
+Este archivo es la historia narrativa completa de `finance-of-sports`, versión
 por versión, desde la Versión 10 (cuando el sitio pasó de ser solo de Boca a
 multi-club) hasta hoy. Vive en texto plano, sin necesidad de abrir
 `index.html`, para consulta OPCIONAL: acá está el razonamiento detallado de
@@ -154,7 +154,7 @@ el header siguiera entrando en una sola fila.
 
 - Rename aplicado en 3 lugares: <title>, el logo del header, y el asunto
   del mailto: del formulario de contacto. NO se tocó el nombre de la
-  carpeta (numeros-de-boca/) ni ninguna referencia a "boca" en el código o
+  carpeta (finance-of-sports/) ni ninguna referencia a "boca" en el código o
   en nombres de archivo, ver to-do #6 más arriba, es una decisión
   pendiente, no un olvido.
 - Header: se achicaron paddings, gaps y font-sizes de nav/logo/selector de
@@ -229,7 +229,7 @@ PRESUPUESTO/proyección, tenía datos reales).
   placeholder`, se le agregó la rama `year === 2025 ? official_balance_sheet`
   para que el banner amarillo deje de mostrarse en este ejercicio. Se agregó
   la fuente nueva 'boca-balance-2024-25' en data/clubs.js (reliability:primary).
-- Copia local del PDF guardada en numeros-de-boca/Clubes/Argentina/Boca/Memoria y Balance 2024-25.pdf
+- Copia local del PDF guardada en finance-of-sports/Clubes/Argentina/Boca/Memoria y Balance 2024-25.pdf
   (la carpeta entera está en .gitignore, así que no pesa en git). fuentes-por-club.md
   actualizado para reflejar que ya se cargó.
 - Quedó pendiente (no se tocó esta sesión): el resto de los ejercicios de Boca
@@ -317,7 +317,7 @@ extraído pero sin cargar todavía, para la próxima.
   de River) con reportType nuevo `unofficial_mirror` (banner propio,
   distinto al de "dato de prensa" y al de "placeholder").
 - Los 7 PDFs de "memoria" (2018-19 a 2025) igual quedaron guardados en
-  numeros-de-boca/Clubes/Argentina/River/ por si sirven de contexto narrativo más
+  finance-of-sports/Clubes/Argentina/River/ por si sirven de contexto narrativo más
   adelante, aunque no tienen datos financieros.
 - Categorías reales de River: 5 de Revenue (Fútbol Profesional, Estadio,
   Educación, Deportes y otras actividades, Socios, cada una con sub-ítems
@@ -361,7 +361,7 @@ extraído pero sin cargar todavía, para la próxima.
   distinto del placeholder actual que muestra un superávit inventado para
   la gestión Blanco.
 - Se descargaron y guardaron los ~24 PDFs oficiales completos del archivo
-  de racingclub.com.ar/informes/ (2009 a 2027) en numeros-de-boca/Clubes/Argentina/Racing/,
+  de racingclub.com.ar/informes/ (2009 a 2027) en finance-of-sports/Clubes/Argentina/Racing/,
   a pedido de Guido de tener todo guardado para poder chequear a mano.
 
 
@@ -1454,7 +1454,7 @@ agregan más columnas.
   dejarla sin ancho, porque eso reintroduce el mismo bug (una columna sin ancho fijo vuelve a hacer que
   Rubro, la única otra columna sin ancho, absorba el resto y las columnas numéricas se corran según el
   contenido).
-- Probado en el navegador (server local en `numeros-de-boca/`, no `file://`, para que carguen
+- Probado en el navegador (server local en `finance-of-sports/`, no `file://`, para que carguen
   `data/river-data.js`/`data/racing-data.js`): medido con JS en consola que la columna del ejercicio
   arranca en el mismo píxel exacto (658px sobre una tabla de 1078px) en las 8 combinaciones Boca/Racing
   × Formato del club/Formato simplificado × Año a año/Por gestión. `verifyTieOuts()` sigue pasando
@@ -2058,7 +2058,7 @@ estaria bueno que pusiera Presupuesto 2026/2027, lo cual ahorra letras y permite
 CATEGORY-MAP.JS, SEPARACIÓN CÁLCULO/RENDER, Y LAZY-LOADING DE RIVER/RACING)
 Guido pidió una auditoría de arquitectura antes de seguir cargando clubes nuevos (sin cambiar nada
 visible), un plan concreto, y recién con su OK, implementarlo en 3 commits de git separados para
-tener puntos de vuelta atrás claros. Primera vez que numeros-de-boca tiene control de versiones:
+tener puntos de vuelta atrás claros. Primera vez que el repo (entonces `numeros-de-boca`) tiene control de versiones:
 no tenía `.git` propio (está gitignored en el repo padre "Website propio", ver CLAUDE.md, "proyecto
 separado"), se inicializó un repo nuevo ACÁ ADENTRO con un commit baseline del estado previo a
 esta sesión, y de ahí en adelante los 3 commits pedidos.
@@ -3296,7 +3296,7 @@ Verificado en el navegador: dropdown "Año" dice "2018/2019 (Presupuesto)", head
 "Por gestión" (Blanco) sin errores con el año nuevo dentro del rango, 2 checks nuevos de
 `verifyTieOuts()` cierran exacto, 0 errores de consola.
 
-## Versión 67-75 — ARCHIVO COMPLETO DE RACING CARGADO — TODOS LOS BALANCES Y PRESUPUESTOS DE numeros-de-boca/Clubes/Argentina/Racing/ (Ejercicios 111 a 117)
+## Versión 67-75 — ARCHIVO COMPLETO DE RACING CARGADO — TODOS LOS BALANCES Y PRESUPUESTOS DE finance-of-sports/Clubes/Argentina/Racing/ (Ejercicios 111 a 117)
 
 Guido, después de la Versión 66: "debería seguir onboardeando para Racing hasta que terminemos de
 onboardear todos los archivos disponibles en la carpeta" — sesión larga, sin pausar entre
@@ -5031,7 +5031,7 @@ criterio que ya usaba el sitio para Racing 2009-2011.
 `verifyTieOuts()` pasa los 3 checks (Revenue/Expenses/PAT) para los 4 clubes nuevos, verificado en el
 navegador (no solo en Node) junto con Boca/River/Racing/Vélez para confirmar cero regresiones. El
 entorno de preview de esta sesión tenía un problema propio (el servidor de `preview_start` resolvía
-a un directorio de otra sesión concurrente, sirviendo un `numeros-de-boca` distinto al de este
+a un directorio de otra sesión concurrente, sirviendo un `numeros-de-boca` (nombre de entonces) distinto al de este
 worktree) — se resolvió lanzando un `python3 -m http.server` propio apuntado explícito a este
 worktree y navegando directo a ese puerto, un gotcha de TOOLING de esta sesión, no del sitio.
 

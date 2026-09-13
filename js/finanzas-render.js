@@ -12,7 +12,7 @@
 // que arman el HTML, en vez de separarse en un sub-paso de cálculo puro.
 // Es una decisión deliberada, no un descuido: separar ese cálculo a mano
 // exigía tocar el cuerpo interno de funciones financieras ya verificadas
-// (ver numeros-de-boca/.claude/skills/club-data-mapping/SKILL.md, historial
+// (ver finance-of-sports/.claude/skills/club-data-mapping/SKILL.md, historial
 // real de bugs de doble conversión al generalizar este mismo código de
 // Boca a River/Racing), y el riesgo no se justificaba solo para mover
 // archivos. Si se necesita cálculo puro reusable de estos valores más

@@ -1,4 +1,4 @@
-# numeros-de-boca — instrucciones permanentes
+# finance-of-sports — instrucciones permanentes
 
 Este es un proyecto SEPARADO del sitio profesional de Guido (el resto de
 "Website propio"). No mezclar contenido, código, ni decisiones de deploy
@@ -46,9 +46,9 @@ un club o país que todavía no tiene nada cargado** (antes de que exista ningú
 documento para mapear): leé `.claude/skills/club-sourcing/SKILL.md` (qué
 regulador o canal público chequear según el país, gotchas de portales
 específicos ya descubiertos). Esto es necesario decirlo explícito acá
-porque `numeros-de-boca` es un repo Git separado anidado dentro de este
+porque `finance-of-sports` es un repo Git separado anidado dentro de este
 workspace — el descubrimiento automático de skills de Claude Code no llega
-hasta `numeros-de-boca/.claude/skills/`, así que esos archivos NO aparecen
+hasta `finance-of-sports/.claude/skills/`, así que esos archivos NO aparecen
 solos en la lista de skills disponibles de una sesión, hay que leerlos a mano
 con el Read tool. Sin este párrafo, una sesión puede categorizar un rubro,
 convertir una moneda, o repetir una búsqueda ya descartada, contradiciendo un
@@ -92,7 +92,7 @@ dos listas que se puedan desincronizar.
 ## Estructura de carpetas de documentos fuente: Clubes/<País>/<Club>/ (PDF y transcripción juntos)
 
 Todos los PDFs fuente Y sus transcripciones a Markdown viven JUNTOS, en la
-misma carpeta: `numeros-de-boca/Clubes/<País>/<Club>/` — NO carpetas sueltas
+misma carpeta: `finance-of-sports/Clubes/<País>/<Club>/` — NO carpetas sueltas
 tipo `racing-pdfs/`, `river-pdfs/` al nivel raíz (eso fue un error temprano,
 corregido en la Versión 17), y NO dos árboles paralelos separados para PDFs
 y para transcripciones (eso fue el esquema `PDFs/` + `pdf-extracts/` de la
@@ -109,7 +109,7 @@ convenciones separadas a propósito, una para carpetas (legible para Guido en
 Finder), otra para identificadores internos (consistente con el resto del
 código). Si en el futuro se agrega un club de otro país (ej. Flamengo,
 Brasil), la carpeta nueva es `Clubes/Brasil/Flamengo/` — NUNCA una carpeta
-nueva al nivel raíz de `numeros-de-boca/` por club o por país.
+nueva al nivel raíz de `finance-of-sports/` por club o por país.
 
 Dentro de la carpeta de cada club podés tener subcarpetas propias si hace
 falta separar por tipo o por procedencia del documento (ej.
@@ -123,7 +123,7 @@ proyecto.
 Cuando se descarga o recibe un PDF nuevo para este proyecto (balance, presupuesto,
 lo que sea), lo primero que se hace con él — antes de extraer datos, antes de
 cargar nada al sitio — es transcribir el contenido COMPLETO a un archivo
-`.md`, en LA MISMA carpeta que el PDF: `numeros-de-boca/Clubes/<País>/<Club>/`
+`.md`, en LA MISMA carpeta que el PDF: `finance-of-sports/Clubes/<País>/<Club>/`
 (crear las carpetas si no existen), con el mismo nombre base que el PDF (ej.
 `Memoria y Balance al 30-06-2025.pdf` → `memoria-y-balance-2024-25.md`, los
 dos juntos en `Clubes/Argentina/Boca/`).

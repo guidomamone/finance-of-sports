@@ -1,12 +1,12 @@
 ---
 name: club-or-year-onboarding
-description: Proceso y arquitectura para onboardear un club nuevo o un ejercicio nuevo de un club ya cargado en numeros-de-boca, qué preguntar ANTES de tocar código, qué patrones de UI/arquitectura ya existen y hay que reusar (no reinventar por club), y errores reales ya encontrados al extender una feature pensada para un solo club (Boca) a los demás. Complementa a club-data-mapping (que es sobre CÓMO categorizar rubros/moneda de un documento puntual), este skill es sobre CÓMO encarar la sesión de trabajo en sí: qué confirmar con Guido antes de "correr", y qué ya se aprendió sobre el código del sitio al hacerlo. Usar SIEMPRE al arrancar una sesión de onboarding, y actualizar al terminar (ver "Cómo mantener este skill" al final).
+description: Proceso y arquitectura para onboardear un club nuevo o un ejercicio nuevo de un club ya cargado en finance-of-sports, qué preguntar ANTES de tocar código, qué patrones de UI/arquitectura ya existen y hay que reusar (no reinventar por club), y errores reales ya encontrados al extender una feature pensada para un solo club (Boca) a los demás. Complementa a club-data-mapping (que es sobre CÓMO categorizar rubros/moneda de un documento puntual), este skill es sobre CÓMO encarar la sesión de trabajo en sí: qué confirmar con Guido antes de "correr", y qué ya se aprendió sobre el código del sitio al hacerlo. Usar SIEMPRE al arrancar una sesión de onboarding, y actualizar al terminar (ver "Cómo mantener este skill" al final).
 ---
 
 # Onboarding de club o ejercicio nuevo, proceso y arquitectura
 
 Este skill es la memoria de CÓMO se encaró la sesión de trabajo que llevó los toggles USD/ARS y
-Formato del club/simplificado de Boca a Racing y River (Versión 32 de numeros-de-boca), más el
+Formato del club/simplificado de Boca a Racing y River (Versión 32 de finance-of-sports), más el
 onboarding del presupuesto 2026/27 de Racing en la misma sesión. No es sobre categorización de
 rubros (para eso está `club-data-mapping`), es sobre el PROCESO: qué preguntar antes de construir,
 qué piezas de arquitectura ya existen y hay que reusar, y qué bugs reales ya salieron al extender

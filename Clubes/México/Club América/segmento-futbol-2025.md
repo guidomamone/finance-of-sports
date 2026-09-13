@@ -2,7 +2,7 @@
 
 Transcripción de las páginas relevantes de `reporte-financiero-ollamani-2025-auditado.pdf` (113
 páginas, texto nativo extraído con `pdftotext -layout`, sin necesidad de OCR) para la carga del
-"Segmento de Fútbol" (Club América) en numeros-de-boca. NO es una transcripción completa del
+"Segmento de Fútbol" (Club América) en finance-of-sports. NO es una transcripción completa del
 documento (que en su mayoría es boilerplate consolidado de IFRS común a cualquier emisora
 mexicana, irrelevante para este club puntual) — son las páginas con el dato de Fútbol, el tipo de
 cambio y la deuda consolidada, tal cual pide la sesión de onboarding de Club América. Cifras
@@ -234,7 +234,7 @@ segmento Fútbol (geografía nacional/exportación, no por tipo de ingreso TV/en
 
 ---
 
-## Resumen de cifras cargadas al sitio (numeros-de-boca), Ejercicio 2025
+## Resumen de cifras cargadas al sitio (finance-of-sports), Ejercicio 2025
 
 - `revenueLines`: 1 línea, "Ingresos del Segmento de Fútbol" = $2,795,643 miles = **$2,795.643 M
   MXN** (categoría `lump_football_operations`).

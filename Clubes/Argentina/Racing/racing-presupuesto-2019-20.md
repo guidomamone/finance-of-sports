@@ -256,7 +256,7 @@ partida del flujo de fondos.
 impresa (606.734.000) NO es la suma de sus propios sub-ítems d+e+f (que dan 274.780.000). Es en
 realidad un ACUMULADO que además incluye las filas "3.- Cobranzas por venta de abonos estadio"
 (123.154.000) y "4.- Cobros por retransmisión y derechos de TV" (208.800.000):
-274.780.000 + 123.154.000 + 208.800.000 = 606.734.000 exacto. El sitio numeros-de-boca carga
+274.780.000 + 123.154.000 + 208.800.000 = 606.734.000 exacto. El sitio finance-of-sports carga
 "Cobranzas por participación" con el valor NO acumulado (274.780.000, la suma real de d+e+f), para
 no duplicar la plata de las líneas 3 y 4 (que se cargan aparte, cada una con su propio monto
 íntegro). Ver `data/racing-data.js`, comentario junto a `racingPresupuestoOverlayByYear[2020]`.

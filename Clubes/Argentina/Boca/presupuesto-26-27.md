@@ -1,6 +1,6 @@
 # Presupuesto Económico, Financiero y de Inversiones — Ejercicio N° 123 — Club Atlético Boca Juniors
 
-Transcripción COMPLETA y palabra por palabra del PDF oficial `numeros-de-boca/Clubes/Argentina/Boca/Presupuesto 26-27.pdf`
+Transcripción COMPLETA y palabra por palabra del PDF oficial `finance-of-sports/Clubes/Argentina/Boca/Presupuesto 26-27.pdf`
 (37 páginas, texto nativo extraído con `pdftotext -layout`, no es un escaneo). Ejercicio N° 123,
 1° de julio de 2026 al 30 de junio de 2027. Documento oficial presentado por la gestión de Riquelme.
 

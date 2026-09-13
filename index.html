@@ -9,7 +9,7 @@ CÓMO RETOMAR ESTE PROYECTO. LEÉ SOLO ESTE BLOQUE PARA ARRANCAR
 Este bloque completo (todo el comentario HTML de este archivo, hasta que cierra
 el comentario más abajo) es un resumen autosuficiente y actualizado del estado real del
 proyecto. No hace falta leer nada más para retomar: alcanza con decirle a Claude
-"leé numeros-de-boca/index.html para tener contexto y sigamos con lo que falta".
+"leé finance-of-sports/index.html para tener contexto y sigamos con lo que falta".
 
 Este archivo YA NO acumula historial de versiones (hasta la Versión 101 lo
 hacía, ver nota "HISTORIAL DE VERSIONES" un poco más abajo de por qué se sacó
@@ -34,10 +34,13 @@ con plan gratis (lo que hoy se ve) y un plan pago futuro (analítica avanzada +
 tweets pre-armados, suscripciones vía dLocal Go). Presupuesto casi cero,
 sigue siendo un proyecto hobby de Guido, no gastar en infraestructura que
 no haga falta todavía. Nombre del sitio: "Tu club en números" (antes
-"Boca en Números"; el rename fue solo de branding, el título en <title> y el
-logo del header, no de la carpeta ni del repo).
+"Boca en Números"; ese rename fue solo de branding, el título en <title> y el
+logo del header). DESDE 2026-09-13 el dominio es **financeofsports.com** y la
+carpeta/repo se llama `finance-of-sports` — OJO, el nombre visible del sitio
+todavía está en castellano y NO coincide con el dominio en inglés; queda
+pendiente decidir el branding definitivo (ver TO-DO 7 y 8).
 
-ESTADO ACTUAL (al día, después de la Versión 112, última de esta sesión, ver detalle de cada
+ESTADO ACTUAL (al día, después de la Versión 113, última de esta sesión, ver detalle de cada
 versión más abajo)
 - AJUSTES DE ARQUITECTURA PARA ESCALAR A 1000 CLUBES (Versión 112, pedido explícito de Guido: mirar
   atrás en la sesión y arreglar lo que no escala antes de seguir onboardeando). 3 cambios de código:
@@ -1045,7 +1048,7 @@ versión más abajo)
   real para OTRA cosa). Ver "MODELO DE DATOS" más abajo para el detalle
   técnico de cómo se arma la tabla nativa.
 
-ARCHIVOS DEL PROYECTO (todos en numeros-de-boca/, salvo que se diga otra cosa)
+ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
 - index.html: HTML, CSS, y el <script> principal con toda la lógica de
   render. Desde la Versión 102, TODOS los datos de club (Boca incluida)
   viven en su propio data/<club>-data.js, ninguno inline acá.
@@ -1159,7 +1162,7 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
   Ejercicio 2025 = REAL (Memoria y Balance auditado al 30/06/2025, PDF de
   149 páginas bajado del Drive linkeado en bocajuniors.com.ar/club/presupuesto,
   ver sources['boca-balance-2024-25'] en data/clubs.js; copia local en
-  numeros-de-boca/Clubes/Argentina/Boca/Memoria y Balance 2024-25.pdf, fuera
+  finance-of-sports/Clubes/Argentina/Boca/Memoria y Balance 2024-25.pdf, fuera
   de git por el .gitignore de la carpeta). Ejercicio 2024 sigue en cero a propósito (no
   cargado todavía). Ejercicio 2026 (jul-2025 a jun-2026, el año entre los dos
   ya cargados), investigado en la Versión 32: no hay balance auditado real
@@ -1198,7 +1201,7 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
   cargaron solo en "Año a año", sin asignarles gestión (ver comentario
   extenso en data/racing-data.js). Fuente: archivo público completo de
   racingclub.com.ar/informes/ (~24 PDFs 2009-2027 en
-  numeros-de-boca/Clubes/Argentina/Racing/). ACTUALIZADO Versión 62: además de
+  finance-of-sports/Clubes/Argentina/Racing/). ACTUALIZADO Versión 62: además de
   los 2 ejercicios pre-Blanco de arriba, YA están cargados y son reales
   Ejercicio 2019/2020 (Ejercicio N° 118, balance + su propio Presupuesto del
   mismo ejercicio, `official_budget_and_balance`, Versión 58) y Ejercicio
@@ -1505,11 +1508,31 @@ o directamente retomar en la próxima sesión)
    Go y para gatear el contenido pago, siguiendo la recomendación de
    arquitectura ya charlada (sitio estático + capa mínima de backend, no
    migrar a Next.js todavía).
-7. Definir dominio y decidir si conviene mover esto a un repo de GitHub
-   propio y separado del sitio profesional de Guido antes del primer deploy
-   real a Netlify (ver notas de deploy en Proyecto Boca.md). Evaluar
-   también si conviene renombrar la carpeta `numeros-de-boca` ahora que el
-   sitio ya no es solo de Boca, no es urgente, es cosmético.
+7. RESUELTO PARCIAL (sesión 2026-09-13): Guido compró el dominio
+   **financeofsports.com** y ya está apuntando al sitio de Netlify (verificado:
+   www.financeofsports.com redirige a financeofsports.com y sirve este index.html).
+   La carpeta local y todas las referencias en docs/skills se renombraron de
+   `numeros-de-boca` a `finance-of-sports` en esa misma sesión, y la línea del
+   `.gitignore` del sitio profesional (`../.gitignore`) se actualizó para seguir
+   ignorando la carpeta con el nombre nuevo — OJO, esa línea es la única cosa que
+   rompe de verdad si alguien vuelve a renombrar la carpeta: sin ella, TODO este
+   proyecto se vuelve untracked dentro del repo `guidomamone-website` y se puede
+   commitear/deployar por error al sitio profesional.
+   PENDIENTE de este mismo punto, necesita a Guido (no lo puede hacer un agente):
+   (a) renombrar el repo en GitHub (`guidomamone/numeros-de-boca` →
+       `guidomamone/finance-of-sports`);
+   (b) INMEDIATAMENTE después, re-linkear el repo en Netlify (Site configuration →
+       Build & deploy → Continuous deployment → Link to a different repository).
+       Netlify guarda el repo como `owner/nombre`; al renombrar, ese string queda
+       viejo y los deploys pueden dejar de dispararse o fallar. GitHub sí deja
+       redirects automáticos para git/web, así que el `git remote` viejo sigue
+       funcionando igual, pero conviene actualizarlo:
+       `git remote set-url origin https://github.com/guidomamone/finance-of-sports.git`;
+   (c) verificar que el deploy siguiente efectivamente buildea (cuesta 1 deploy del
+       presupuesto mensual de ~25 del free tier, conviene juntarlo con un push real
+       de contenido, no gastarlo en un no-op).
+   NADA del código del sitio depende del nombre del repo: no hay netlify.toml, no hay
+   CNAME, no hay build step — son archivos estáticos servidos desde la raíz.
 8. Reemplazar el email placeholder del formulario de contacto
    (contacto@bocaennumeros.example) por uno real antes de publicar.
 9. Pasada de mobile/responsive: las tablas largas del presupuesto oficial de

@@ -2,10 +2,14 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "numeros-de-boca",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8965"],
-      "port": 8965
+      "name": "fos-local",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "python3 -m http.server \"$PORT\""
+      ],
+      "port": 8966,
+      "autoPort": true
     }
   ]
 }

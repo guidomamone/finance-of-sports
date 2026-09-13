@@ -3,7 +3,7 @@
 **NOTA: transcripción PARCIAL** — mismo criterio y misma limitación que
 `racing-balance-2009.md` (ver esa nota para el detalle): solo se transcribieron las secciones de
 estados contables usadas para cargar el sitio, no la Memoria narrativa ni las Notas. PDF fuente:
-`numeros-de-boca/Clubes/Argentina/Racing/balance2010.pdf` (texto extraíble nativo).
+`finance-of-sports/Clubes/Argentina/Racing/balance2010.pdf` (texto extraíble nativo).
 
 --- pág. 9 - ESTADO DE RECURSOS Y GASTOS ---
 

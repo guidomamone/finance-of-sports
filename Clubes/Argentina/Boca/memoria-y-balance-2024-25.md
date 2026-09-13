@@ -1,6 +1,6 @@
 # Memoria y Balance al 30/06/2025 — Club Atlético Boca Juniors Asociación Civil
 
-Transcripción de trabajo del PDF oficial `numeros-de-boca/Memoria y Balance 2024-25.pdf`
+Transcripción de trabajo del PDF oficial `finance-of-sports/Memoria y Balance 2024-25.pdf`
 (149 páginas, descargado del Google Drive linkeado en bocajuniors.com.ar/club/presupuesto).
 Ejercicio Económico N°121, 1° de julio de 2024 al 30 de junio de 2025.
 
