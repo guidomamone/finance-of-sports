@@ -122,6 +122,10 @@ DÓNDE ESTÁ CADA COSA (este comentario dejó de ser autosuficiente en la Versi�
 - `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: el checklist de arranque y de cierre de
   CUALQUIER sesión acá. Qué leer y en qué orden, qué NO leer, cómo verificar,
   qué documentar antes de terminar, y la regla de git. Empezá por ahí.
+- `.claude/skills/auditoria-finance-of-sports/SKILL.md` + `auditorias/`: la auditoría de rutina
+  (transversal y periódica, distinta de la verificación de onboarding y de `auditAll()`). El skill
+  es el procedimiento; `auditorias/<fecha>.md` es el reporte de cada corrida, y cada uno diffea
+  contra el anterior para no repetir la misma lista hasta que nadie la lea.
 - `tools/audit.js`: auditoría determinista del proyecto entero (datos, escala,
   código, docs), agrupada en P0/P1/P2/P3. `--json` para la lista completa,
   `--quiet` para usarlo como gate antes de un push. `tools/audit-ignore.json`
@@ -542,8 +546,9 @@ o directamente retomar en la próxima sesión)
     en castellano y "Finance of Sports" en inglés. No hace falta unificarla.
     Candidatos de idioma obvios cuando haya ganas: português (4 clubes de Brasil cargados) y
     japonés (10 clubes de Japón). Cada uno es 1 archivo nuevo + 1 línea en `data/lang/langs.js`.
-20. NUEVO (Versión 122): los 59 hallazgos que dejó la primera corrida de `node tools/audit.js`.
-    Ninguno es P0 ni P1 (los 222 tie-outs cierran), son todos riesgo o limpieza. Por grupo:
+20. NUEVO (Versión 122-123): los 59 hallazgos de la primera auditoría (`node tools/audit.js`).
+    Ninguno es P0 ni P1 (los 222 tie-outs cierran), son todos riesgo o limpieza. El reporte completo,
+    con el eje de juicio de esa corrida, está en `auditorias/2026-09-13.md`. Por grupo:
     (a) 11 balances REALES sin `officialPAT` (los 10 de Japón + Club América): tienen
         officialTotalRevenue/Expenses pero no el resultado del ejercicio, así que ese número no lo
         verifica nadie. Chequear si el documento lo trae impreso y cargarlo.
@@ -563,6 +568,22 @@ o directamente retomar en la próxima sesión)
         enterrados en `other_expenses` (las 11 líneas del ejercicio están todas ahí).
     (g) 5 literales de `clubId` en el código: `isBoca2027` (×3) y el waterfall del presupuesto
         financiero, en `js/finanzas-render.js`. Son las últimas ramas por club que quedan vivas.
+    (h) LO MÁS IMPORTANTE, y es una decisión de Guido, no una corrección mecánica (sale del eje de
+        juicio de `auditorias/2026-09-13.md`): el sitio hoy muestra IGUAL dos cosas distintas — "la
+        fuente reporta cero" y "la fuente no lo desglosa". Un club japonés muestra Televisión = $0
+        con la mitad de sus ingresos en el catch-all, porque el documento de la J.League solo publica
+        3 líneas por club (sponsors, entradas y un bolsón que junta merchandising, distribución de
+        liga, transferencias, academia y femenino; el desglose existe solo a nivel división). Un
+        periodista que compare Gamba Osaka con Real Madrid lee que uno no cobra televisación. Mismo
+        problema, distinto origen, en `river 2024`: sus 8 rubros de gasto están todos en
+        `other_expenses` con etiquetas por SECTOR ("Fútbol profesional" = 78.835 M, el 80% de los
+        gastos, con los sueldos adentro), la misma trampa de "costos por destino, no por naturaleza"
+        ya documentada con Coritiba (club-data-mapping §1, regla de la Versión 38). Las 2 opciones
+        que propone el reporte: usar `lump_football_operations`/`lump_football_operations_expense`
+        (que ya existen y se muestran como "sin desglosar por la fuente") en vez del catch-all
+        genérico, y mostrar "—" en vez de "$0" en los buckets que la fuente no reporta. Para River
+        hay que chequear antes si su balance trae la nota de costos por naturaleza, que sería mejor
+        que el bolsón. NINGUNO de los dos cambios mueve un número: cambian bajo qué fila se muestra.
 
 SI ALGO NO CIERRA (números, totales)
 Antes de tocar nada, correr una verificación aritmética simple (sumar las

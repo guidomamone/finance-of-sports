@@ -82,6 +82,11 @@ escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un n�
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
 Corre en 5 segundos y sale con código 1 si hay P0 o P1. Hoy: 0 P0, 0 P1, 52 P2, 7 P3 (to-do 20).
 
+Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
+el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en
+`.claude/skills/auditoria-finance-of-sports/SKILL.md`. Cadencia sugerida: cada ~5 clubes nuevos,
+antes de un push grande, o cuando algo se sienta raro sin un síntoma concreto que perseguir.
+
 REGLA: cualquier verificación total tiene que pasar por `computeYearGeneric()`, el motor real. NUNCA
 reimplementar la cascada del resultado por afuera — se probó, y una fórmula simplificada tiró 12
 falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetSales` ni `tax`.
