@@ -617,3 +617,11 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - La carga por demanda NO se tocó: verificado que una carga normal sigue teniendo 1 solo club en memoria. El visitante que solo quiere ver Boca sigue sin bajar 41 archivos de datos.
 - Regla nueva documentada en el código: cualquier verificación total tiene que pasar por `computeYearGeneric()`, nunca reimplementar la cascada. Al escribir esto se probó primero un verificador aparte en Node que recalculaba el PAT por su cuenta y tiró 12 FALSOS POSITIVOS, porque el motor real suma cosas que esa fórmula no tenía (nonCash, profitOnPlayerSales, assetSales, tax).
 - Resultado de la primera corrida completa: 41 clubes, 222 checks cierran, 0 que no cierran, 0 warnings de fx, 0 clubes que no cargan.
+
+## Versión 119 — El origen del proyecto entra al repo: `Proyecto Boca.md` deja de estar partido en dos
+
+- Guido notó que había un `Proyecto Boca.md` fuera de la carpeta del proyecto. Al compararlos NO eran duplicados: el de afuera (68 KB, sin tocar desde el 11/9) es el VOLUMEN 0 del proyecto, y tenía material que el de adentro nunca cubrió — el planteo original (Objetivo, quién hace algo parecido, la lista de qué analizar, dónde buscar la información, la recomendación de enfoque), las Versiones 1 a 9 del MVP, las notas de deploy y una to-do list vieja. El de adentro arranca en la Versión 10.
+- Se fusionó: el bloque único se agregó al final de `Proyecto Boca.md` como "VOLUMEN 0 — ORIGEN DEL PROYECTO", textual, sin editar una palabra (incluidas las rutas viejas `numeros-de-boca/`, que se dejaron a propósito: es un documento histórico y corregirlo sería perder el registro de cómo se pensaba el proyecto al principio). También entró la sección del barrido de fuentes de los 27 clubes restantes de Primera División, que tampoco estaba.
+- Las Versiones 10-20 y 81-82 del archivo viejo NO se copiaron: ya están en este archivo, con más detalle.
+- La copia vieja pasó a `_to_delete/` (fuera de git) en vez de borrarse de una. La línea `Proyecto Boca.md` del `.gitignore` del sitio profesional se sacó, ya no hace falta.
+- Efecto real: el origen del proyecto pasa a estar versionado en git por primera vez. Hasta ahora vivía en un archivo suelto e ignorado, a un `rm` de distancia de perderse.

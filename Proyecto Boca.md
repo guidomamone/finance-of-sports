@@ -2,7 +2,9 @@
 
 Este archivo es la historia narrativa completa de `finance-of-sports`, versión
 por versión, desde la Versión 10 (cuando el sitio pasó de ser solo de Boca a
-multi-club) hasta hoy. Vive en texto plano, sin necesidad de abrir
+multi-club) hasta hoy. El planteo original del proyecto y las Versiones 1 a 9
+del MVP están al FINAL del archivo, en el "VOLUMEN 0 — ORIGEN DEL PROYECTO"
+(estaban en un archivo suelto fuera del repo hasta la Versión 119). Vive en texto plano, sin necesidad de abrir
 `index.html`, para consulta OPCIONAL: acá está el razonamiento detallado de
 por qué se tomó cada decisión, qué se probó y descartó, qué bugs reales
 aparecieron y cómo se encontraron.
@@ -5093,3 +5095,295 @@ sesión ya arregló (pasó 3 veces con la generalización de moneda, sesión com
 
 Regresión completa verificada en el navegador después de los 3 cambios de código: 38 clubes, 213
 checks de `verifyTieOuts()`, 0 mismatches, 0 warnings de `checkFxSanity()`, 0 errores de consola.
+
+## Investigación de fuentes de los 27 clubes restantes de Primera División (sin tocar el sitio)
+
+Guido pidió un barrido explícitamente separado de cualquier cambio al sitio: solo buscar, descargar y documentar fuentes financieras oficiales de los 27 clubes de Primera División que todavía no tienen nada cargado (Boca/River/Racing son los únicos con datos reales hoy), sin tocar `index.html` ni `data/`. El objetivo declarado no era cargar nada todavía, sino saber qué pedirle a cada club y a quién, para escribirles directamente pidiendo lo que falta.
+
+Se confirmó primero el roster vigente de 30 equipos para la temporada 2026 (Wikipedia): Godoy Cruz y San Martín de San Juan descendieron a fin de 2025, reemplazados por Gimnasia y Esgrima de Mendoza y Estudiantes de Río Cuarto. Después se lanzaron 5 agentes en paralelo, cada uno con ~5-6 clubes, con la regla de que solo cuenta como fuente un PDF alojado en el dominio oficial del club (o un link que el propio club comparta directo, ej. un Drive embebido en una noticia oficial) — nada de prensa, foros ni PDFs de terceros como si fueran la fuente real, mismo criterio que ya regía para Boca/River/Racing.
+
+Los 5 agentes se quedaron sin cuota de sesión a mitad de tarea (rate limit del plan) y hubo que reanudarlos con `SendMessage` en vez de relanzarlos de cero — cada uno retomó desde el estado real en disco (se verificó qué PDFs ya había cada carpeta antes de reanudar) en lugar de repetir trabajo ya hecho. Terminaron los 5: 65 PDFs reales descargados en `Clubes/Argentina/<Club>/` para 11 de los 27 clubes (Vélez es el hallazgo más grande, con un archivo oficial que cubre casi todos los ejercicios 2015-2025; también salieron bien Argentinos Juniors, San Lorenzo, Unión, Estudiantes LP y Gimnasia y Esgrima LP, entre otros). Los otros 16 clubes no tienen ningún balance/presupuesto público en su dominio oficial — varios lo aprueban en asamblea todos los años según sus propias noticias, pero lo distribuyen solo en papel o detrás de un login de socio, nunca como PDF público.
+
+Una verificación final con `pdfinfo` sobre las 65 descargas encontró una corrupta: el Balance del Ejercicio 114 de Unión se cortaba siempre en exactamente 1.048.576 bytes (1 MB) tanto pidiéndolo directo al dominio oficial (caído en ese momento) como a distintos snapshots de Wayback Machine — se descartó el archivo y quedó documentado como pendiente en vez de dejar un PDF ilegible en la carpeta. Todo el detalle club por club (qué se descargó, qué falta, y el contacto — mail, teléfono, WhatsApp o red social — para pedirlo) quedó en `fuentes-por-club.md`, no acá, siguiendo el mismo criterio de siempre: esa lista vive en un solo lugar para que no se desincronice.
+
+---
+
+# VOLUMEN 0 — ORIGEN DEL PROYECTO (antes de la Versión 10)
+
+Todo lo que sigue en este Volumen 0 estuvo, hasta hoy, en un archivo suelto
+`Proyecto Boca.md` en la carpeta de ARRIBA (el sitio profesional de Guido), fuera
+del repo del proyecto y por lo tanto fuera de git. Se movió acá en la Versión 119
+sin editar una palabra: es el planteo original del proyecto y las Versiones 1 a 9
+del MVP, que la historia narrativa de este archivo (que arranca en la Versión 10)
+nunca había cubierto.
+
+Ojo al leerlo: es de agosto/septiembre de 2026, cuando el sitio era solo de Boca
+y se llamaba así. Las rutas que menciona (`numeros-de-boca/`) ya no existen, y
+varias decisiones de acá fueron reemplazadas después. No se corrigió nada a
+propósito: es un documento histórico, y reescribirlo para que "quede bien" sería
+justamente perder el registro de cómo se pensaba el proyecto al principio.
+
+---
+
+## Objetivo
+
+Sitio para que hinchas de Boca Juniors puedan informarse antes de votar por presidente. Solo datos, sin opinión ni bajada de línea. Análisis profesional, tipo empresa: revenue, gastos, deuda, patrimonio, no solo "cuántos títulos ganó cada uno".
+
+## Quién está haciendo algo similar
+
+No existe un sitio exactamente equivalente (neutral, solo datos, orientado a elección de presidente, con análisis tipo empresa) para Boca ni para otros clubes grandes (Manchester City, Arsenal, Emelec). Lo más cercano:
+
+- **Swiss Ramble** (swissramble.substack.com): el referente. Analiza finanzas de clubes europeos con rigor de equity research, sin bajar línea, dejando que el lector saque conclusiones. Modelo de tono a imitar.
+- **Kieran Maguire / Price of Football**, **Game State**, **The Athletic ("The BookKeeper")**, **Valuball**: cubren ingresos, gastos, deudas, net spend, wages-to-turnover, PSR/FFP. No están pensados como herramienta electoral de socios.
+- **Liebre Capital** (liebrecapital.com.ar) y notas puntuales como "River vs Boca 2025, comparación financiera rubro por rubro" (El Editor Platense): en Argentina ya hay medios comparando finanzas de clubes, pero de forma puntual, no como sitio dedicado a una elección.
+- **Supporters Direct Scotland**, **Football Supporters' Association (UK)**: iniciativas de hinchas con índices de gobernanza y ownership, más lobby que plataforma de datos para votar.
+- **INFUT** (Índice de Transparencia de Clubes de Fútbol, Transparencia Internacional España): mide 17 indicadores contables, de ingresos/gastos y endeudamiento. Promedio de clubes españoles: 44.2/100. Buen antecedente de metodología a adaptar.
+- **bocajuniors.com.ar/club/presupuesto**: el propio club publica presupuesto y balances. Hay cobertura periodística de asambleas (superávits, obras), pero no un sitio independiente y estructurado para comparar candidaturas con datos duros.
+- Emelec y otros clubes ecuatorianos tienen elecciones con cobertura noticiosa (deuda de USD 35.88M expuesta en asamblea 2026), pero no análisis financiero neutral dedicado.
+
+En clubes de socios (Boca, River, Barcelona, Real Madrid, Bayern) la lógica de "analizar como empresa" es especialmente útil porque el "accionista" es el socio que vota. En clubes de propiedad privada o estatal el foco suele ser otro (dueños, fair play financiero).
+
+**Conclusión: el hueco existe.** Nadie está armando algo enfocado puntualmente en dar contexto financiero e institucional antes de que los socios voten.
+
+## Lista extensiva de qué analizar
+
+Tratar al club como una empresa (o asociación civil con actividad empresarial) cuyos "accionistas" son los socios. Separar siempre datos históricos verificables, proyecciones y promesas de campaña. Evitar cualquier relato de "ganó X títulos" como eje central.
+
+### 1. Estados financieros y resultados (el core)
+
+- Ingresos totales y desglose: cuotas sociales/abonos, matchday (entradas + hospitalidad), derechos de TV y premios de competiciones, comercial (sponsors, merchandising, licensing, naming rights), transferencias de jugadores (neto), otros (basket, otros deportes, eventos, alquileres).
+- Gastos: masa salarial del plantel profesional + cuerpo técnico (con cargas sociales y variables), costos de organización de espectáculos, administración, marketing, fútbol juvenil/cantera, otros deportes, amortizaciones, gastos financieros.
+- Resultado operativo vs. resultado neto (superávit/déficit). EBITDA o equivalente aproximado.
+- Evolución año a año (últimos 5 a 8 ejercicios) y vs. presupuesto aprobado.
+
+### 2. Balance y liquidez
+
+- Activo (corriente y no corriente): caja e inversiones, créditos (incluyendo por transferencias a cobrar), valor en libros del plantel vs. valor de mercado estimado, inmuebles (Bombonera, Casa Amarilla, Ezeiza), otros.
+- Pasivo: deudas comerciales, deudas financieras (bancos, préstamos, bonos), deudas con jugadores/agentes, provisiones, deudas tributarias y previsionales.
+- Patrimonio neto y su evolución.
+- Liquidez (current ratio o similar), solvencia, endeudamiento (pasivo/activo, deuda neta).
+- Flujo de fondos si se publica o se puede reconstruir: generación operativa vs. inversión y financiamiento.
+
+### 3. Transferencias y "activo humano"
+
+- Net spend histórico (compras menos ventas) por ventana y acumulado.
+- Amortizaciones de pases vs. plusvalías por ventas.
+- Valor de mercado estimado del plantel (Transfermarkt u otras fuentes) vs. valor en libros.
+- Cláusulas, porcentajes de reventa residuales, jugadores a préstamo.
+- Costo de la cantera vs. ingresos por ventas de formados.
+- Ratio wages/revenue (masa salarial sobre ingresos totales).
+
+### 4. Infraestructura e inversiones de capital
+
+- Capex histórico y proyectado (ampliación de Bombonera, predio, Casa Amarilla, hotel, microestadio, etc.).
+- ROI potencial: mayor capacidad, hospitalidad, eventos no futbolísticos, naming rights.
+- Financiamiento de las obras: caja propia, deuda, sponsors, preventa.
+- Estado real de avance vs. anuncios de campaña.
+
+### 5. Modelo de negocio y diversificación
+
+- Dependencia de cuotas sociales vs. ingresos comerciales y deportivos.
+- Crecimiento de la base societaria (activos, adherentes, interior, exterior) y precio de cuotas vs. inflación.
+- Ocupación de estadio, precios de entradas/abonos, ingresos por hospitalidad/VIP.
+- Contratos de sponsors principales: duración, montos, exclusividades.
+- Otros deportes y actividades sociales: si generan o consumen recursos.
+- Exposición a riesgo cambiario e inflación, especialmente relevante en Argentina.
+
+### 6. Gobernanza y control
+
+- Composición de la Comisión Directiva, comisiones, gerencias profesionales.
+- Transparencia: oportunidad y detalle de publicación de balances, presupuestos, actas y contratos relevantes.
+- Mecanismos de control: Comisión Fiscalizadora, auditorías externas, asambleas.
+- Requisitos estatutarios para candidaturas (antigüedad de socio, garantías patrimoniales) y reglas de reelección.
+- Conflictos de interés, contratos con partes relacionadas, uso de fundaciones o sociedades vinculadas.
+- Cumplimiento de regulaciones (AFA, Conmebol, eventual fair play).
+
+### 7. Desempeño operativo no deportivo pero medible
+
+- Eficiencia administrativa (gastos de administración sobre ingresos).
+- Costo por punto o por partido (aproximaciones).
+- Indicadores de cantera: jugadores promovidos a Primera, minutos jugados, ventas netas.
+- Asistencia promedio, porcentaje de socios que asisten, rotación de abonos.
+- Engagement digital y comercial, si hay datos públicos.
+
+### 8. Comparables y benchmarks
+
+- Vs. River, Racing, Independiente, San Lorenzo: mismos modelos de socios y contexto argentino.
+- Vs. clubes de socios europeos (Barcelona, Real Madrid, Bayern, Athletic) en estructura de ingresos y ratios.
+- Evolución propia vs. inflación, tipo de cambio y crecimiento del fútbol argentino/sudamericano.
+- Deloitte Football Money League y reportes similares como referencia de escala global.
+
+### 9. Riesgos y escenarios
+
+- Sensibilidad a no clasificar a Libertadores o Sudamericana.
+- Riesgo de inflación, devaluación y regulación de precios de cuotas.
+- Concentración de ingresos en pocos sponsors o en la masa societaria.
+- Contingencias legales, laborales o de infraestructura.
+- Capacidad de absorber un ciclo deportivo malo sin descapitalizarse.
+
+### 10. Información electoral específica
+
+- Plataformas de las listas: lo que prometen en números (obras, plantel, cuotas, transparencia).
+- Historial de cumplimiento de promesas de gestiones anteriores, cuando haya datos.
+- Padrón: cantidad de socios habilitados, participación histórica, categorías.
+- Costos de campaña y financiamiento, si se transparenta.
+
+## Dónde encontrar la información
+
+- Oficial: bocajuniors.com.ar (presupuesto, balances, estatuto, asambleas).
+- Actas y documentos de asambleas de representantes.
+- IGJ (Inspección General de Justicia): balances de asociaciones civiles y reglas electorales.
+- AFIP/BCRA/INDEC: datos impositivos, tipo de cambio, inflación para deflactar cifras.
+- Medios especializados argentinos que desglosan números de asambleas (verificar cruzando fuentes): Infobae, El Economista, Doble Amarilla, Líbero.
+- Liebre Capital y notas comparativas similares como fuente secundaria ya procesada.
+- Comparables europeos: Companies House (Inglaterra), registros mercantiles, sitios oficiales de los clubes, Swiss Ramble, Kieran Maguire, Deloitte Money League, reportes de UEFA.
+- Transferencias: Transfermarkt + reportes de clubes + periodismo de investigación.
+
+## Recomendación de enfoque para el sitio
+
+Series temporales, tablas y gráficos claros (ingresos vs. gastos, evolución del patrimonio, net spend, ratios clave). Separar siempre "lo que dice el balance" de "estimaciones de mercado" y de "promesas de campaña". Permitir filtrar por período y comparar gestiones. Incluir siempre fuente y fecha del dato. Evitar cualquier lenguaje valorativo ("buena gestión", "desastre", etc.).
+
+## MVP: primer HTML
+
+Archivo: `numeros-de-boca/index.html`. Navegación probada: Inicio, Finanzas, Mercado de Pases, Resultados, Comparar Gestiones, Fuentes. Adentro de Finanzas hay un toggle "Por gestión" vs. "Año a año", tal como se pensó. Todos los números son placeholder.
+
+## Versión 2 del MVP (iteración con feedback)
+
+Cambios agregados sobre la primera versión:
+
+1. **Mercado de Pases**: ahora tiene filtros combinables por gestión, año, ventana de pases (Verano/Invierno) y tipo (Jugador/DT). Se agregaron movimientos de cuerpo técnico (DTs) como registros propios, sin impacto monetario en esta demo (en la versión final, si se consigue el dato del contrato del DT, se puede sumar como gasto).
+2. **Tab "Resultados"**: nueva sección con títulos, participaciones internacionales, posición promedio y goles a favor/en contra por gestión, más una tabla histórica de títulos por año. Se agregó también un resumen deportivo (títulos, participaciones en Libertadores, posición promedio) dentro de la tabla de Comparar Gestiones, al lado de los indicadores financieros.
+3. **Selector de moneda (USD/ARS)**: arriba a la derecha del header. Convierte todos los montos del sitio usando una cotización de referencia placeholder (1 USD = 1450 ARS, hay que reemplazarla por la real y decidir si se actualiza a mano o vía API). En ARS los montos se expresan en "miles de millones" para mantener números legibles.
+4. **Sección Fuentes**: ahora arranca con "Sobre mí", anónimo, una sola idea: "soy hincha de Boca, nada más", sin relación con listas ni candidaturas.
+5. **Gráficos en Finanzas**: debajo de la tabla de resultados hay dos gráficos (Chart.js vía CDN): barras de ingresos vs. gastos de los últimos ejercicios, y dona con la composición de ingresos (Matchday / Broadcasting / Comercial) del ejercicio seleccionado.
+6. **Formato tipo Swiss Ramble**: la tabla de Finanzas se rehizo como estado de resultados (Matchday, Broadcasting, Comercial, Revenue, Salarios, Expenses, EBITDA, ítems no-cash, Resultado Operativo, ganancia por venta de jugadores, EBIT, intereses, PBT, impuestos, PAT, salarios/ingresos, deuda bruta/caja/deuda neta), con subtotales resaltados, negativos en rojo entre paréntesis, y columnas de variación y variación %, replicando la lógica del ejemplo de @SwissRamble para Chelsea. No se replicaron los íconos de refresh/expandir ni el coloreado condicional fila por fila (verde si ganancia, rojo si pérdida) del original, quedó simplificado a un resaltado neutro. Se puede sumar en una iteración futura.
+7. **Ícono de contacto**: arriba a la derecha, abre un formulario modal (nombre opcional, email opcional, tipo de mensaje, mensaje) que arma un mailto: con lo cargado. El email de destino es un placeholder (`contacto@bocaennumeros.example`), hay que reemplazarlo por un email real antes de publicar.
+
+Nota técnica: los datos de Finanzas ahora están armados como un P&L completo por ejercicio (2018, 2019, 2021 a 2025, con Angelici en 2018-2019, Ameal en 2021-2023 y Riquelme en 2024-2025), calculado con una función a partir de rubros crudos, para que ingresos, EBITDA, resultado operativo, EBIT y resultado neto sean siempre internamente consistentes entre sí.
+
+## Versión 3 del MVP (correcciones)
+
+1. **Se sacó el header de disclaimer** ("Sitio independiente, sin afiliación...") que estaba arriba de todo.
+2. **El toggle USD/ARS ahora vive dentro de la sección Finanzas**, no en el header. Antes era global y afectaba Pases, Comparar e Inicio también, lo cual no correspondía porque esos montos igual siguen en USD. Ahora el resto del sitio siempre muestra USD.
+3. **Transfermarkt**: no lo puedo scrapear directamente. El dominio está bloqueado para el tool de fetch de este entorno (política de la plataforma, no una limitación técnica de acceso a internet en general), y no está permitido esquivar ese bloqueo con otras herramientas. Alternativas: (a) copiás y pegás los datos de la página de pases del club en Transfermarkt y yo los proceso, (b) si conectás la extensión de Chrome puedo navegar páginas en vivo con vos mirando, con tu aprobación en cada sitio, pero igual sería manual página por página, no un scrape masivo automático.
+4. **Resultados Deportivos, corregido**: saqué el card de "goles a favor/en contra" (no lo tenía verificado, era inventado). Reemplacé todos los datos de la sección por títulos realmente ganados en cada gestión, buscados y verificados:
+   - Angelici (2011-2019): 6 títulos locales (Copa Argentina 2012, Campeonato 2015, Copa Argentina 2015, Primera División 2016/17, Primera División 2017/18, Supercopa Argentina 2018), 0 internacionales. Finalista de Libertadores en 2012 y 2018.
+   - Ameal (2019-2023): 6 títulos locales (Superliga 2019/20, Copa de la Liga 2020, Copa Argentina 2019/20, Copa de la Liga 2022, Primera División 2022, Supercopa Argentina 2023), 0 internacionales. Semifinalista de Libertadores en 2020.
+   - Riquelme como presidente (desde el 21/12/2023 hasta agosto de 2026): **0 títulos**. En 2025 Boca fue eliminado en fase preliminar de la Copa Libertadores, la primera vez en 19 participaciones consecutivas. Aclaración importante que quedó en el sitio: los títulos que Riquelme ganó como vicepresidente entre 2019 y 2023 quedan contados en la gestión de Ameal, no en la suya como presidente.
+   - Ojo: estos números salen de cobertura de prensa (Infobae, La Nación, Wikipedia) buscada en agosto de 2026, no de un balance oficial. Hay que cruzarlos con el sitio oficial del club antes de publicar el sitio en serio.
+   - También se corrigió Comparar Gestiones, que antes citaba "participaciones en Libertadores" y "posición promedio" inventadas: ahora compara títulos totales (número real) y mejor resultado en Libertadores (texto, sin inventar promedios de posición en la tabla).
+
+## Versión 4 del MVP: presupuesto oficial 2026/27 incorporado
+
+Guido subió el "Presupuesto Económico, Financiero y de Inversiones" oficial del club para el Ejercicio N° 123 (1° de julio de 2026 al 30 de junio de 2027). A diferencia de todo lo demás en el sitio, esto no es placeholder: es el documento real presentado por la gestión de Riquelme, con desglose exhaustivo por gerencia y departamento.
+
+Se incorporó como una card nueva arriba de todo en la sección Finanzas ("Presupuesto 2026/27 (oficial)"), con acordeones anidados (HTML `<details>/<summary>` nativo, sin JS) siguiendo exactamente la agrupación del documento:
+
+- Premisas de presupuestación (moneda constante abril 2026, tipo de cambio $1.480 a $1.840 por USD, inflación 21%, políticas de ingresos y gastos).
+- Presupuesto Económico (resumen de ingresos y gastos por gran rubro, resultado +$3.402.243.000).
+- Apertura de Ingresos: acordeón por rubro (Cuotas Sociales, Comerciales + Canjes, Exhibición de Espectáculos Deportivos con sub-desgloses por Torneo Oficial/Copa Argentina/Amistosos/Libertadores, Abonos, Diversos, Otros Deportes con Deportes Amateurs/Futsal/Hockey, Basket Profesional, Fútbol Juvenil, Fútbol Femenino).
+- Apertura de Gastos: el bloque más grande, con acordeones anidados en dos niveles siguiendo cada gerencia y departamento del club (Fútbol Profesional, Administración con sus 17 gerencias/departamentos, Organización de Espectáculos, Gastos Generales, Fútbol Juvenil con la activación negativa explicada, Otros Deportes con sus 12 disciplinas, Basket, Otras Amortizaciones, Comerciales, Socios con sus 5 áreas, Eventuales).
+- Presupuesto Financiero (saldo inicial, créditos y deudas del ejercicio anterior, ingresos y gastos por lo percibido, inversiones en obras, saldo al cierre).
+- Presupuesto de Inversiones (Sistemas y Control de Acceso, Estadio con el plan de ampliación, Casa Amarilla con el microestadio, Predio Ezeiza con el hotel de reserva).
+
+Cada acordeón muestra el total del rubro en el propio título, para poder escanear sin abrir todo. Se agregaron stat cards arriba con Total Ingresos, Total Gastos, Resultado Económico y el tipo de cambio de referencia.
+
+Nota técnica: esta sección queda en pesos argentinos, tal como está en el documento oficial, y no está conectada al toggle USD/ARS de la sección Finanzas (ese toggle sigue aplicando solo al P&L histórico placeholder). Si más adelante se quiere convertir este presupuesto a USD, están los tipos de cambio de referencia del propio documento ($1.480 julio 2026, $1.840 junio 2027) para hacerlo a mano o programarlo.
+
+Pendiente: verificar que las tablas rindan bien en mobile (son tablas anchas por la cantidad de conceptos), y decidir si conviene mover este bloque a su propio tab en vez de vivir dentro de Finanzas, dado el volumen de contenido.
+
+Actualización: se movió la card "Presupuesto 2026/27 (oficial)" al fondo de la sección Finanzas, después de los gráficos. El estado de resultados (P&L) con el toggle gestión/año volvió a quedar primero, como estaba antes.
+
+## Versión 5 del MVP: el presupuesto 2026/27 ahora también alimenta el Revenue del estado de resultados
+
+El acordeón de Apertura de Ingresos ya no vive aislado: sus totales quedaron reflejados como un ejercicio real dentro del estado de resultados de Finanzas (Ejercicio 2027, seleccionable en "Año a año" y como último año de la gestión Riquelme en "Por gestión").
+
+Mapeo de las categorías oficiales a las filas del P&L (verificado para que sume exacto contra los totales del documento):
+
+- Cuotas Sociales (84.600.271.000 ARS): se agregó como fila nueva en el Revenue, porque es el mayor rubro de ingresos del club (35% del total) y el modelo simplificado de años anteriores no la tenía separada. Esta fila ahora existe para todos los ejercicios, pero solo tiene valor real en el 2027; en los años placeholder queda en 0.
+- Broadcasting: derechos de TV de Torneo Oficial + Copa Libertadores (19.237.871.000 ARS).
+- Matchday: recaudaciones + premios + amistosos + bonos de la Exhibición de Espectáculos Deportivos, más Abonos (64.487.517.000 ARS).
+- Comercial: total de Ingresos Comerciales + Canjes Comerciales (53.477.864.000 ARS).
+- Otros ingresos operativos: Diversos + Otros Deportes + Basket Profesional + Fútbol Juvenil + Fútbol Femenino (17.588.581.000 ARS).
+
+Para los gastos se hizo el mismo ejercicio con Apertura de Gastos, separando lo que es amortización de plantel (pases) de lo que es sueldo/operación, para que EBITDA y resultado operativo tengan sentido:
+
+- Salarios: Fútbol Profesional sin la Amortización de Plantel (Gerencia de Fútbol Profesional + Fútbol Femenino, 72.632.108.000 ARS). Es una aproximación: ese bloque incluye primas y sueldos pero también algunos gastos operativos menores del área.
+- Amortización de pases: Amortización Plantel dentro de Fútbol Profesional (47.726.249.000 ARS).
+- Depreciación: Otras Amortizaciones (inmuebles, instalaciones, varias) (3.785.324.000 ARS).
+- Otros gastos: todo el resto (Administración, Organización de Espectáculos, Gastos Generales, Fútbol Juvenil, Otros Deportes, Basket, Comerciales, Socios, Eventuales) (111.846.180.000 ARS).
+
+No se incluyó deuda (gross debt / caja) para este ejercicio porque el resumen económico del presupuesto no la desglosa; queda en 0 con una nota aclaratoria visible en el sitio. Tampoco hay intereses ni impuestos por separado (ya están adentro de "Otros gastos"). El resultado que da esta reconstrucción (~$3.420 millones ARS) coincide con el Resultado Económico oficial ($3.402.243.000), lo que confirma que el mapeo no perdió ni duplicó ningún rubro.
+
+**Conversión a USD**: se usó el promedio entre el dólar de inicio y cierre del ejercicio que trae el propio presupuesto: ($1.480 + $1.840) / 2 = $1.660 por USD. Esto es distinto del FX_RATE placeholder (1.450) que usa el resto del sitio para el toggle USD/ARS, porque ese toggle convierte números ya en USD hacia ARS, mientras que acá había que convertir un dato real en ARS hacia USD antes de cargarlo al modelo. Quedó documentado en el propio código y en un aviso que aparece en el sitio cuando se mira el Ejercicio 2027.
+
+**Limitación importante a tener en cuenta**: comparar el Ejercicio 2027 (real, del presupuesto oficial) contra ejercicios anteriores (2018-2025, todos placeholder) mezcla un dato real con datos inventados. Las columnas de variación y variación % que aparecen al comparar van a reflejar esa mezcla, no una comparación real año contra año. Esto se resuelve del todo recién cuando se carguen los balances reales de los ejercicios anteriores (pendiente, ver to-do de conseguir balances oficiales en bocajuniors.com.ar/club/presupuesto).
+
+## Versión 6 del MVP: Revenue del estado de resultados con acordeones, y Ejercicio 2024 en cero
+
+Dos cambios en la sección Finanzas, dentro de la card "Estado de resultados" (P&L):
+
+1. **Las 4 líneas de Revenue son clickeables**: Cuotas Sociales, Matchday, Broadcasting y Comercial. Cada una tiene una flechita: al hacer clic se despliega, debajo de esa fila, el desglose de cómo se compone ese número (por ejemplo, Cuotas Sociales se abre en Socios Activos, Adherente AMBA, Socios Interior, etc.). La fila "Revenue" (el subtotal en negrita) no es clickeable, queda como total fijo.
+   - Para el **Ejercicio 2027** (Presupuesto oficial 2026/27) el desglose es real, sacado del acordeón de Apertura de Ingresos y convertido a USD con el mismo promedio $1.660 que se usó para los totales.
+   - Para cualquier otro ejercicio (todos placeholder), al abrir la fila aparece el aviso "Sin desglose disponible para este ejercicio (dato placeholder, pendiente de cargar)", para dejar en claro que falta cargar el dato real, no que no existe la funcionalidad.
+   - Técnicamente esto se hizo con JS (`toggleRevenueBreakdown`), no con `<details>` nativo, porque el desglose vive dentro de una tabla y `<details>` no es válido como fila de tabla.
+
+2. **Ejercicio 2024 puesto en cero a propósito**: todos los rubros de `yearsRaw[2024]` (matchday, broadcasting, comercial, salarios, deuda, todo) están en 0. La idea es que salte a la vista que ese ejercicio está pendiente de cargar con datos reales, en vez de tener un número placeholder que se pueda confundir con dato real. Esto afecta a "Año a año" (Ejercicio 2024) y a la comparación dentro de la gestión Riquelme si se usa 2024 como año base.
+
+## Versión 7 del MVP: Revenue reestructurado con las 9 categorías oficiales
+
+Guido pidió reemplazar el esquema de Revenue (que hasta la v6 era Cuotas Sociales + Matchday + Broadcasting + Comercial, con Matchday/Broadcasting inventados combinando varias cosas) por la estructura exacta que usa el club en el Presupuesto Económico: Cuotas Sociales, Comerciales, Exhibición de Espectáculos Deportivos, Abonos, Diversos, Otros deportes, Basket Profesional, Futbol Juvenil, Futbol Femenino, sumando a Revenue/Total Ingresos. Instrucción explícita: no gastar tiempo tratando de encajar esto contra el esquema anterior.
+
+Cómo quedó:
+
+- **Ejercicio 2027** (Presupuesto oficial 2026/27): las 9 categorías tienen sus valores reales, convertidos a USD con el mismo promedio $1.660. Cada categoría es clickeable y su desglose real (sacado de Apertura de Ingresos) aparece al abrir. Por ejemplo, "Exhibición de Espectáculos Deportivos" se abre en Torneo Oficial, Copa Libertadores, Giras y Amistosos, Copa Argentina.
+- **Resto de los ejercicios (todos placeholder)**: no se inventó categoría por categoría. Se reusó lo que ya existía: el viejo "commercial" pasó a ser "Comerciales", el viejo "matchday + broadcasting" combinados pasaron a ser "Exhibición de Espectáculos Deportivos" (aproximación, porque conceptualmente ambos son "plata de jugar partidos"), el viejo "otherOperatingIncome" pasó a ser "Diversos". Abonos, Otros deportes, Basket Profesional, Futbol Juvenil y Futbol Femenino quedaron en 0 para esos ejercicios porque no había con qué llenarlos sin inventar. Al abrir esas filas en años placeholder, sigue apareciendo el aviso de "sin desglose disponible, pendiente de cargar".
+- Se sacó la fila separada "Otros ingresos operativos" que existía entre Revenue y Salarios: ese concepto ahora está adentro de Revenue como la categoría "Diversos", así que el Revenue total ya incluye todo lo que antes se sumaba después. El resultado final (EBITDA, resultado operativo, etc.) no cambió en magnitud, solo se reorganizó dónde vive cada número.
+- El gráfico de dona "Composición de ingresos" también se actualizó para mostrar las 9 categorías (agrupando Otros deportes + Basket + Juvenil + Femenino en una sola porción "Otros" para que no quede ilegible).
+
+## Versión 8 del MVP: corrección de fondo, los números del Ejercicio 2027 ahora coinciden exacto con el documento oficial
+
+Guido detectó que ni el total cerraba. La causa raíz: en la v7, los valores del Ejercicio 2027 se guardaban ya convertidos a USD (con redondeo a 2 decimales en cada categoría), y el toggle USD/ARS del sitio los reconvertía a ARS con el tipo de cambio placeholder del resto del sitio ($1.450), que no es el mismo que se usó para convertirlos a USD la primera vez ($1.660). Ida y vuelta con dos tipos de cambio distintos = números que no cierran.
+
+Arreglo de fondo:
+
+- El Ejercicio 2027 ahora se guarda en `yearsRaw` en **ARS millones exactos**, calculados directo como pesos oficiales ÷ 1.000.000, sin ninguna conversión al cargar el dato. Cada categoría de Revenue y cada rubro de gasto es el número literal del documento oficial.
+- Se agregó un concepto de "moneda nativa por ejercicio" (`yearMeta`): los ejercicios placeholder siguen en USD (con el tipo de cambio placeholder $1.450 para pasarlos a ARS, como siempre), pero el Ejercicio 2027 está en ARS con su propio tipo de cambio promedio $1.660 para pasarlo a USD.
+- La conversión a la moneda que el usuario elige ver (`toDisplayValue`) pasa a hacerse en pantalla, en el momento de renderizar, nunca al cargar el dato. Si la moneda nativa del ejercicio coincide con la elegida, no hay conversión: se muestra el número tal cual, así que en ARS el Ejercicio 2027 siempre va a coincidir centavo a centavo con el Presupuesto Económico oficial.
+- Esto también corrigió el desglose de cada categoría al hacer clic (antes también estaba pre-convertido a USD con redondeo; ahora son los montos exactos en ARS del acordeón de Apertura de Ingresos), el gráfico de tendencia, el gráfico de composición, las stat cards de Finanzas, y Comparar Gestiones (que compara la gestión Riquelme, cuyo último ejercicio ahora es el 2027, contra Ameal/Angelici, que siguen en USD placeholder).
+
+Verificación hecha antes de subir el cambio: la suma de las 9 categorías de Revenue da $239.392.104.000 exacto (coincide con TOTAL INGRESOS del documento), y el resultado reconstruido (Revenue - Gastos - Amortizaciones) da $3.402.243.000 exacto (coincide con el Resultado Económico oficial).
+
+## Versión 9 del MVP: alineación del desglose
+
+Los números dentro de cada acordeón de Revenue quedaban muy corridos a la derecha, porque el desglose se armaba como una tabla nueva metida adentro de una sola celda (colspan 5), y esa tabla anidada repartía su propio ancho sin relación con las columnas de la tabla principal. Se cambió para que cada línea del desglose sea una fila más de la misma tabla del estado de resultados (usando `data-group` en vez de un id único, para poder mostrar/ocultar varias filas a la vez), así el navegador calcula el ancho de columnas una sola vez y el número de cada rubro queda exactamente debajo del subtotal.
+
+Alternativas de nombres de navegación consideradas:
+
+1. **Elegida en el MVP**: Inicio / Finanzas / Mercado de Pases / Comparar Gestiones / Fuentes. Separa el análisis financiero general del de pases, que es el tema que más engancha a los hinchas y merece su propia sección.
+2. **Alternativa por audiencia**: Inicio / Números del Club / Plantel y Pases / Gestiones / Metodología. Más informal, "Números del Club" en vez de "Finanzas" baja la barrera de entrada para quien no lee balances.
+3. **Alternativa por tiempo**: Inicio / Año a Año / Por Gestión / Pases / Fuentes. En vez de separar por tema (finanzas vs. pases), separa directamente por cómo se quiere mirar el tiempo, y el filtro de tema queda adentro de cada vista. Más simple de navegar pero mezcla temas distintos en una sola pantalla.
+
+Recomendación: quedarse con la opción 1 para el MVP porque separa claramente "plata del club" de "mercado de pases" (dos preguntas distintas que hace un hincha), y usar el toggle interno para resolver gestión vs. año a año sin multiplicar botones de nav.
+
+## Deploy: notas para no generar conflicto entre los dos sitios
+
+Con repos separados en GitHub, Netlify no genera ningún conflicto entre este sitio y el profesional: cada repo se conecta como un "site" distinto en la cuenta, con su propio build, su propio subdominio `*.netlify.app` y su propio dominio custom si se agrega uno. No hace falta hacer nada especial ahora.
+
+Sí conviene, antes del primer deploy real:
+
+- Crear el repo de este proyecto como repo nuevo y separado (no como carpeta dentro del repo del sitio profesional), para que cada deploy dispare solo sobre su propio sitio.
+- Si en algún momento se quiere un dominio propio tipo bocaennumeros.com, comprarlo aparte y no reusar el dominio del sitio profesional ni sus DNS.
+- Nombrar el site en Netlify con algo distinguible (ej. "numeros-de-boca") para no confundirlo en el dashboard con el sitio profesional.
+- No compartir variables de entorno ni build hooks entre ambos sites, aunque estén en la misma cuenta.
+
+## To-dos para Guido
+
+1. Mirar 2-3 análisis de Swiss Ramble de un club comparable, para ver cómo estructuran visualmente una serie de ingresos/gastos y qué gráficos usan. Sirve como referencia de diseño y de rigor, no para copiar contenido.
+   - [Chelsea Finances 2024/25](https://swissramble.substack.com/p/chelsea-finances-202425)
+   - [Paris Saint-Germain Finances 2024/25](https://swissramble.substack.com/p/paris-saint-germain-finances-202425)
+   - [Club Overviews Premier League 2022/23 (10 años de data)](https://swissramble.substack.com/p/club-overviews-premier-league-202223)
+2. Conseguir los balances oficiales de Boca de los últimos 8 ejercicios (y actas de asamblea si están disponibles), para reemplazar los placeholders del MVP con datos reales.
+   - [Presupuesto y balances oficiales de Boca](https://www.bocajuniors.com.ar/club/presupuesto)
+3. Definir la lista final de 10-15 métricas para el MVP y escribir su definición y unidad de medida, para mantener el sitio consistente y neutral desde el día uno.
+   - Sin link externo. Usar la sección "Lista extensiva de qué analizar" de este mismo documento.
