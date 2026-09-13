@@ -68,6 +68,13 @@ se reescribe, no se acumula.
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
   cada `fx` caiga en un rango plausible para su moneda. Hoy son 222 checks, 0
   mismatches, 0 warnings.
+  COMPLEMENTO, DESDE LA VERSIÓN 122: `node tools/audit.js` audita en Node lo que un
+  total correcto NO delata (ejercicios que no tienen ningún total contra qué
+  compararse, categorías con typo o prestadas de la otra taxonomía, errores de
+  escala, desgloses que no cierran contra su propia fila, catch-all dominante,
+  ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 52 P2,
+  7 P3 (ver to-do 20).
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
   solo pueden revisar lo que está en memoria, así que una carga normal de la
   página audita SOLO Boca (6 de los 222 checks). Para auditar TODO hay que
@@ -115,6 +122,10 @@ DÓNDE ESTÁ CADA COSA (este comentario dejó de ser autosuficiente en la Versi�
 - `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: el checklist de arranque y de cierre de
   CUALQUIER sesión acá. Qué leer y en qué orden, qué NO leer, cómo verificar,
   qué documentar antes de terminar, y la regla de git. Empezá por ahí.
+- `tools/audit.js`: auditoría determinista del proyecto entero (datos, escala,
+  código, docs), agrupada en P0/P1/P2/P3. `--json` para la lista completa,
+  `--quiet` para usarlo como gate antes de un push. `tools/audit-ignore.json`
+  silencia lo YA verificado a mano contra el documento — nunca lo no verificado.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
@@ -531,6 +542,27 @@ o directamente retomar en la próxima sesión)
     en castellano y "Finance of Sports" en inglés. No hace falta unificarla.
     Candidatos de idioma obvios cuando haya ganas: português (4 clubes de Brasil cargados) y
     japonés (10 clubes de Japón). Cada uno es 1 archivo nuevo + 1 línea en `data/lang/langs.js`.
+20. NUEVO (Versión 122): los 59 hallazgos que dejó la primera corrida de `node tools/audit.js`.
+    Ninguno es P0 ni P1 (los 222 tie-outs cierran), son todos riesgo o limpieza. Por grupo:
+    (a) 11 balances REALES sin `officialPAT` (los 10 de Japón + Club América): tienen
+        officialTotalRevenue/Expenses pero no el resultado del ejercicio, así que ese número no lo
+        verifica nadie. Chequear si el documento lo trae impreso y cargarlo.
+    (b) 11 ejercicios con el catch-all de Formato simplificado llevándose >40% del total (casi todos
+        de Japón, del lado de Ingresos, más `river 2024` con 80% del lado de Gastos). La taxonomía
+        no cubre cómo reporta la J.League: o se mapean mejor las líneas, o falta una categoría.
+    (c) 16 líneas con el signo opuesto al de su sección y peso real (deducciones sobre la receita de
+        los clubes brasileños, "Costo de desarrollo de jugadores propios (reclasificación)" de Vélez
+        2015/2016/2017). Probablemente todas correctas: confirmar contra el documento y, recién ahí,
+        silenciarlas en `tools/audit-ignore.json` con el motivo escrito.
+    (d) 5 líneas de INGRESO de Racing (2009, 2010, 2012, 2014) categorizadas como `exceptional_items`,
+        que es una categoría de la taxonomía de GASTOS. Suman bien al total, pero caen al catch-all.
+        Decidir: ¿se agrega una categoría de ingreso extraordinario, o se reubican esas líneas?
+    (e) Racing 2009/2010/2011: ejercicios reales sin ningún total oficial cargado. Son los 3 que se
+        cargaron con el proceso viejo en USD ya convertido (ver to-do 1).
+    (f) `river 2024`: ni una línea en `wages_squad` ni bolsón sin desglosar — los sueldos quedaron
+        enterrados en `other_expenses` (las 11 líneas del ejercicio están todas ahí).
+    (g) 5 literales de `clubId` en el código: `isBoca2027` (×3) y el waterfall del presupuesto
+        financiero, en `js/finanzas-render.js`. Son las últimas ramas por club que quedan vivas.
 
 SI ALGO NO CIERRA (números, totales)
 Antes de tocar nada, correr una verificación aritmética simple (sumar las

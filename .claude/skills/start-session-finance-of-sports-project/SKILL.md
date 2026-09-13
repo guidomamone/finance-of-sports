@@ -75,6 +75,13 @@ Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible
 **Correlo siempre antes de pushear algo que toque datos.** El resultado esperado hoy es 41 clubes,
 222 checks, 0 que no cierran, 0 warnings.
 
+**`node tools/audit.js` es el otro lado de lo mismo** (Versión 122). `auditAll()` verifica que cada
+ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igual: ejercicios sin
+ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
+escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
+grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
+Corre en 5 segundos y sale con código 1 si hay P0 o P1. Hoy: 0 P0, 0 P1, 52 P2, 7 P3 (to-do 20).
+
 REGLA: cualquier verificación total tiene que pasar por `computeYearGeneric()`, el motor real. NUNCA
 reimplementar la cascada del resultado por afuera — se probó, y una fórmula simplificada tiró 12
 falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetSales` ni `tax`.
@@ -116,6 +123,10 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
 
 ## 7. Herramientas del repo
 
+- `node tools/audit.js` — auditoría determinista del proyecto entero, agrupada en P0/P1/P2/P3.
+  `--json` para la lista completa, `--quiet` para usarlo como gate antes de un push.
+  `tools/audit-ignore.json` silencia un hallazgo YA verificado a mano contra el documento, con el
+  motivo escrito — nunca uno sin verificar, que es justo el atajo que este proyecto no se puede dar.
 - `node tools/generate-club-index.js` — regenera, desde los propios `data/<club>-data.js`, la sección
   "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `index.html`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
