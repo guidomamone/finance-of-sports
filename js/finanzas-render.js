@@ -136,7 +136,7 @@
         const rowId = groupPrefix+'-'+i;
         const itemsHtml = renderBreakdownRows(c.items, rowId, 0, meta, targetCurrency, total);
         return `<tr class="pl-clickable" onclick="toggleRevenueBreakdown('${rowId}', this)">
-          <td><span class="pl-arrow">&#9656;</span>${c.label}</td>
+          <td><span class="pl-arrow">&#9656;</span>${tLabel(c.label)}</td>
           <td>${fmtDisplay(curVal)}</td>
           ${pctCell}
           <td>${prevVal !== null ? fmtDisplay(prevVal) : '—'}</td>
@@ -144,7 +144,7 @@
         </tr>` + itemsHtml;
       }
       return `<tr>
-        <td>${c.label}</td>
+        <td>${tLabel(c.label)}</td>
         <td>${fmtDisplay(curVal)}</td>
         ${pctCell}
         <td>${prevVal !== null ? fmtDisplay(prevVal) : '—'}</td>
@@ -246,8 +246,8 @@
     document.getElementById(containerId).classList.toggle('pl-hide-compare', !overlayReport);
     syncPLTableColgroup(!overlayReport);
 
-    const ing = buildNativeSectionHtml('Ingresos', curReport.ingresos, overlayReport ? overlayReport.ingresos : null, curMeta, overlayMeta, currentCurrency, containerId+'-ing');
-    const gas = buildNativeSectionHtml('Gastos', curReport.gastos, overlayReport ? overlayReport.gastos : null, curMeta, overlayMeta, currentCurrency, containerId+'-gas');
+    const ing = buildNativeSectionHtml(t('section.revenue','Ingresos'), curReport.ingresos, overlayReport ? overlayReport.ingresos : null, curMeta, overlayMeta, currentCurrency, containerId+'-ing');
+    const gas = buildNativeSectionHtml(t('section.expenses','Gastos'), curReport.gastos, overlayReport ? overlayReport.gastos : null, curMeta, overlayMeta, currentCurrency, containerId+'-gas');
 
     // REGLA (Versión 54, pedido explícito de Guido: "en el card de Estado de resultado de Boca,
     // ponés 'intereses netos, impuestos' y un copy abajo. quitalo, y quede igual para todos los
@@ -270,7 +270,7 @@
     const extraRowsHtml = (curReport.extraRows||[]).map(e => {
       const v = nativeDisplayVal(e.value, curMeta, currentCurrency);
       if(v === 0 && e.label !== 'Intereses netos') return '';
-      return `<tr><td>${e.label}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td></tr>`;
+      return `<tr><td>${tLabel(e.label)}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td></tr>`;
     }).join('');
 
     const resultado = ing.total + gas.total + extraTotal;
@@ -354,7 +354,7 @@
       const trCls = [r.bold?'pl-bold':'', r.shade?'pl-shade':''].join(' ');
       const curVal = r.curTxt !== undefined ? r.curTxt : fmtDisplay(toDisplayValue(r.cur, curMeta, currentCurrency));
       const prevVal = r.prevTxt !== undefined ? r.prevTxt : (r.prev !== null ? fmtDisplay(toDisplayValue(r.prev, prevMeta, currentCurrency)) : '—');
-      return `<tr class="${trCls}"><td>${r.label}</td><td>${curVal}</td><td>${prevVal}</td></tr>`;
+      return `<tr class="${trCls}"><td>${tLabel(r.label)}</td><td>${curVal}</td><td>${prevVal}</td></tr>`;
     }).join('');
     // Misma regla general que renderDebtBlock (Boca): un año oficial (no placeholder) con
     // Deuda bruta = Caja = 0 es un documento que no desglosa deuda, no una deuda real de cero.
@@ -386,14 +386,14 @@
     const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
     const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
     const extraStat = extraTotal !== undefined
-      ? `<div class="stat"><div class="label" title="Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto">Int.</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
+      ? `<div class="stat"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
       : '';
     document.getElementById('finanzasStats').innerHTML = `
-      <div class="stat"><div class="label">Ingresos</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">Gastos</div><div class="value">${fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('section.revenue','Ingresos')}</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('section.expenses','Gastos')}</div><div class="value">${fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
       ${extraStat}
-      <div class="stat"><div class="label">Resultado neto</div><div class="value ${cur.pat>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">Deuda neta</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('stat.pat','Resultado neto')}</div><div class="value ${cur.pat>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('stat.netdebt.short','Deuda neta')}</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
     `;
   }
 
@@ -716,7 +716,7 @@
     wrap.innerHTML = steps.map(step => {
       const disp = toDisplayValue(step.magnitude, meta, currentCurrency);
       const valCls = step.isResult ? (disp >= 0 ? ' pos' : ' neg') : '';
-      const stepHtml = `<div class="stat waterfall-step${step.isResult ? ' waterfall-result' : ''}"><div class="label">${step.label}</div><div class="value${valCls}">${fmtAmountPlain(disp, currentCurrency)}</div></div>`;
+      const stepHtml = `<div class="stat waterfall-step${step.isResult ? ' waterfall-result' : ''}"><div class="label">${tLabel(step.label)}</div><div class="value${valCls}">${fmtAmountPlain(disp, currentCurrency)}</div></div>`;
       return step.op ? `<div class="waterfall-op">${step.op}</div>${stepHtml}` : stepHtml;
     }).join('');
   }
@@ -979,10 +979,10 @@
     // activos" un poco más abajo, no un caso nuevo inventado para esto.
     if(!g){
       document.getElementById('inicioStats').innerHTML = `
-        <div class="stat"><div class="label">Último resultado</div><div class="value">Sin dato</div></div>
-        <div class="stat"><div class="label">Deuda neta actual</div><div class="value">Sin dato</div></div>
-        <div class="stat"><div class="label">Gasto neto en pases</div><div class="value">Sin dato</div></div>
-        <div class="stat"><div class="label">Socios activos</div><div class="value">Sin dato</div></div>
+        <div class="stat"><div class="label">${t('stat.result','Último resultado')}</div><div class="value">${t('stat.nodata','Sin dato')}</div></div>
+        <div class="stat"><div class="label">${t('stat.netdebt','Deuda neta actual')}</div><div class="value">${t('stat.nodata','Sin dato')}</div></div>
+        <div class="stat"><div class="label">${t('stat.netspend','Gasto neto en pases')}</div><div class="value">${t('stat.nodata','Sin dato')}</div></div>
+        <div class="stat"><div class="label">${t('stat.members','Socios activos')}</div><div class="value">${t('stat.nodata','Sin dato')}</div></div>
       `;
       return;
     }
@@ -1005,13 +1005,28 @@
     // movió a `title` (tooltip nativo al pasar el mouse), no se perdió información, solo se sacó
     // del texto visible.
     document.getElementById('inicioStats').innerHTML = `
-      <div class="stat"><div class="label" title="Ejercicio ${cur.yearLabel}">Último resultado</div><div class="value ${patDisp>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">Deuda neta actual</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label" title="Gestión actual">Gasto neto en pases</div><div class="value ${netSpend>=0?'pos':'neg'}">${fmtAmount(netSpend, 'USD')}</div></div>
-      <div class="stat"><div class="label">Socios activos</div><div class="value">${members ? members.toLocaleString('es-AR') : 'Sin dato'}</div></div>
+      <div class="stat"><div class="label" title="${t('stat.result.tip','Ejercicio')} ${cur.yearLabel}">${t('stat.result','Último resultado')}</div><div class="value ${patDisp>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('stat.netdebt','Deuda neta actual')}</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label" title="${t('stat.netspend.tip','Gestión actual')}">${t('stat.netspend','Gasto neto en pases')}</div><div class="value ${netSpend>=0?'pos':'neg'}">${fmtAmount(netSpend, 'USD')}</div></div>
+      <div class="stat"><div class="label">${t('stat.members','Socios activos')}</div><div class="value">${members ? members.toLocaleString('es-AR') : t('stat.nodata','Sin dato')}</div></div>
     `;
   }
 
+
+  // Atajo de traducción (Versión 115). `I18N` vive en js/i18n.js, que se carga ANTES que este
+  // archivo. Se envuelve igual por las dudas: si i18n.js no cargara, el sitio tiene que seguir
+  // funcionando en castellano en vez de tirar ReferenceError y dejar Inicio en blanco.
+  function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
+
+  // Traduce SOLO las etiquetas que son del sitio (buckets de Formato simplificado y catch-alls,
+  // ver data/site-labels.js). Una etiqueta que no está en ese mapa es un rubro textual del balance
+  // del club (`rawLabel`) y pasa de largo SIN tocar, que es justo lo que queremos: el sitio muestra
+  // cada club tal cual lo reporta. Ojo: esto traduce al DIBUJAR, no cambia `label`, porque el
+  // castellano es la clave con la que matchea findPrevVal()/el overlay de presupuesto.
+  function tLabel(label){
+    const key = (window.SITE_LABEL_KEYS || {})[label];
+    return key ? t(key, label) : label;
+  }
 
   // hex (#rrggbb) -> rgba(...) con el alpha pedido. Sirve para atenuar el color de un bucket/serie
   // en un año "Presupuesto" sin mantener una 2da paleta de colores en paralelo (mismo color, menos
@@ -1106,7 +1121,7 @@
           ctx.save();
           ctx.translate(x, yMid);
           ctx.rotate(-Math.PI/2);
-          ctx.fillText('No informado por el club', 0, 0);
+          ctx.fillText(t('chart.nodata','No informado por el club'), 0, 0);
           ctx.restore();
         });
         ctx.restore();
@@ -1197,7 +1212,7 @@
   // leyenda nativa (flex-wrap centrado, ancho de fila distinto según cuánto texto entre) no garantiza.
   function renderInicioLegend(containerId, datasets){
     document.getElementById(containerId).innerHTML = datasets.map(d =>
-      `<span class="inicio-legend-item"><span class="inicio-legend-swatch" style="background:${d.color}"></span>${d.label}</span>`
+      `<span class="inicio-legend-item"><span class="inicio-legend-swatch" style="background:${d.color}"></span>${tLabel(d.label)}</span>`
     ).join('');
   }
 

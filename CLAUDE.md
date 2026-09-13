@@ -190,13 +190,17 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   ve el navegador queda igual aunque cambies el puerto interno del server,
   y la caché persiste incluso en una pestaña recién creada — el caché HTTP
   de este entorno parece compartirse por origen entre pestañas, no por
-  pestaña). Lo único que funcionó de forma confiable: agregar un query
-  string temporal directo al `<script src="...">` en el HTML (ej.
-  `data/clubs.js?cachebust1`, un valor que nunca se pidió antes, cambia la
-  URL exacta así que el caché no puede tener nada guardado para ella),
-  navegar, confirmar, y DESPUÉS sacar el query string del archivo (no
-  dejarlo pisado — es un truco de verificación, no una convención del
-  proyecto). Confirmalo ejecutando `Object.keys(algunaConstDeEseArchivo)` o
+  pestaña). Lo único que funcionó de forma confiable: cambiar la URL exacta
+  del `<script src="...">` con un query string.
+  **ACTUALIZADO (Versión 115): esto ya NO es un truco temporal, ahora es una
+  convención del proyecto.** Todos los `<script src>` propios llevan
+  `?v=<ASSET_V>`, y `window.ASSET_V` está declarado en un `<script>` inline
+  justo antes de ellos (los 2 cargadores dinámicos, `loadClubData()` e
+  `I18N.load()`, leen la misma constante). Para forzar recarga durante una
+  sesión de desarrollo: subí ASSET_V a un valor que nunca se pidió antes (ej.
+  `115a`), navegá, confirmá, y dejalo en un valor limpio al terminar. Sirve
+  igual en producción: sin esto, un visitante que ya entró antes se puede
+  quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo. Confirmalo ejecutando `Object.keys(algunaConstDeEseArchivo)` o
   `document.querySelector('style').textContent.includes('tu regla nueva')`
   con `javascript_tool` ANTES de concluir que el cambio "no funciona" — y
   ANTES de concluir que SÍ funciona, ya que un error viejo puede seguir

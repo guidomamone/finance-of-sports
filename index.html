@@ -41,7 +41,7 @@ carpeta/repo se llama `finance-of-sports`. OJO, el nombre visible del sitio
 todavía está en castellano y NO coincide con el dominio en inglés; queda
 pendiente decidir el branding definitivo (ver TO-DO 7 y 8).
 
-ESTADO ACTUAL (al día, después de la Versión 114)
+ESTADO ACTUAL (al día, después de la Versión 115)
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `CHANGELOG.md` (resumen por
 versión, 96 versiones) y en `Proyecto Boca.md` (narrativa completa). Este bloque
@@ -76,13 +76,37 @@ se reescribe, no se acumula.
   de moneda nativa/USD, y toggle "Formato del club"/"Formato simplificado" (este
   último es el default). El toggle "Año a año"/"Por gestión" está OCULTO desde la
   Versión 112 (pedido de Guido), código y datos intactos.
+- IDIOMAS: el sitio tiene selector de idioma (globo, arriba a la derecha) desde
+  la Versión 115. Castellano (idioma fuente, ES EL HTML mismo, sin archivo de
+  diccionario) e inglés (`data/lang/en.js`, ~105 claves). Detecta el idioma del
+  navegador en la primera visita y recuerda la elección en localStorage.
+  AGREGAR UN IDIOMA = crear `data/lang/<code>.js` + una línea en
+  `data/lang/langs.js`. Nada más: ni el HTML ni `js/i18n.js` se tocan.
+  Traducido hoy: todo el chrome (nav, títulos, subtítulos, controles, headers de
+  tabla, footer, modal de contacto), los stats de Inicio y Finanzas, y los
+  buckets de "Formato simplificado". NO traducido a propósito: los rubros de
+  "Formato del club", que salen textuales del balance de cada club. NO traducido
+  todavía (pendiente, no es una decisión): el párrafo largo "Calidad de dato por
+  club" de Fuentes, los 3 cards de competencia del presupuesto de Boca, y los
+  avisos por tipo de reporte.
+- CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=` con
+  `window.ASSET_V` (declarado inline justo antes de ellos). SUBIR ESE NÚMERO al
+  cambiar cualquier archivo de `js/` o `data/`, si no un visitante que ya entró
+  antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
 - BRANDING: OJO, hay un desajuste abierto. El sitio se llama "Tu club en números"
-  (castellano) y el dominio es financeofsports.com (inglés); el mail del
-  formulario de contacto sigue siendo el placeholder
+  (castellano) y el dominio es financeofsports.com (inglés). MITIGADO PARCIAL en
+  la Versión 115: en inglés el logo/title dicen "Finance of Sports" (clave
+  `site.name` de `data/lang/en.js`), así que el dominio y la marca coinciden para
+  un visitante en inglés, pero en castellano sigue diciendo "Tu club en números".
+  Falta que Guido decida si la marca definitiva es una, la otra, o las dos según
+  idioma. El mail del formulario de contacto sigue siendo el placeholder
   `contacto@bocaennumeros.example`, que además referencia un nombre de marca ya
   abandonado. Ver to-do 7 y 8.
 
 DÓNDE ESTÁ CADA COSA (este comentario dejó de ser autosuficiente en la Versión 114)
+- `js/i18n.js` + `data/lang/`: el motor de traducción y los diccionarios. Leé
+  el comentario de cabecera de `js/i18n.js` antes de agregar un idioma o de
+  meter un string nuevo en una vista.
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.
@@ -584,6 +608,21 @@ o directamente retomar en la próxima sesión)
     búsqueda, sin explorar en profundidad). También pendiente: investigar `memberCountByClub` y
     `gestionesByClub` (presidentes reales) para los 10 clubes, ninguno investigado esta sesión.
 
+19. NUEVO (Versión 115): terminar la traducción al inglés. El motor y el selector ya están y
+    escalan (ver `js/i18n.js`), lo que falta son claves, no arquitectura:
+    (a) el párrafo largo "Calidad de dato por club" de la pestaña Fuentes (hoy habla casi solo de
+        clubes argentinos, conviene reescribirlo antes de traducirlo, no traducir el texto viejo);
+    (b) los 3 cards de competencia del presupuesto de Boca (Copa Libertadores / Campeonato Liga
+        Profesional / Copa Argentina), que son Boca-2027-only;
+    (c) los avisos por `reportType` (banner de placeholder, "todavía no informado por el club",
+        etc.) y los nombres de gestión de `gestionesByClub`;
+    (d) la tabla de fuentes de la pestaña Fuentes (6 filas, castellano).
+    Aparte, DECISIÓN PENDIENTE DE GUIDO: hoy `site.name` traduce la marca ("Tu club en números" en
+    castellano, "Finance of Sports" en inglés). Hay que decidir si la marca definitiva es una sola
+    para los dos idiomas (y cuál), o si está bien que cambie por idioma. Ver to-do 7 y 8.
+    Candidatos de idioma obvios cuando haya ganas: português (4 clubes de Brasil cargados) y
+    japonés (10 clubes de Japón). Cada uno es 1 archivo nuevo + 1 línea en `data/lang/langs.js`.
+
 SI ALGO NO CIERRA (números, totales)
 Antes de tocar nada, correr una verificación aritmética simple (sumar las
 categorías de Revenue del club/ejercicio en cuestión y comparar contra el
@@ -618,7 +657,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tu club en números | Datos para votar informado</title>
+<title data-i18n="site.title">Tu club en números | Datos para votar informado</title>
 <style>
   :root{
     --azul:#0a2b5c;
@@ -681,6 +720,18 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   .segmented button.active{background:var(--azul);color:#fff;}
   #contactBtn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:7px 11px;cursor:pointer;font-size:15px;line-height:1;}
   #contactBtn:hover{background:rgba(255,255,255,.1);}
+  /* Selector de idioma (Versión 115). Un botón de globo + menú desplegable, NO una
+     tira de botones por idioma: el nav ya se recorta abajo de ~850px (to-do 9), así
+     que el costo de ancho del selector tiene que ser constante, no crecer con cada
+     idioma nuevo que se agregue a `data/lang/langs.js`. */
+  .lang-wrap{position:relative;flex-shrink:0;}
+  #langBtn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:6px 9px;cursor:pointer;font-size:12px;line-height:1;display:flex;align-items:center;gap:5px;font-weight:600;}
+  #langBtn:hover{background:rgba(255,255,255,.1);}
+  #langBtn .lang-globe{font-size:14px;line-height:1;}
+  #langMenu{position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.18);padding:4px;min-width:150px;z-index:60;}
+  #langMenu button{display:block;width:100%;text-align:left;background:none;border:none;padding:8px 10px;font-size:13.5px;color:var(--text);cursor:pointer;border-radius:6px;white-space:nowrap;}
+  #langMenu button:hover{background:#f2f2ef;}
+  #langMenu button.active{background:var(--azul);color:#fff;font-weight:700;}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px;}
   .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;}
   .stat .label{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
@@ -842,18 +893,18 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
 <header>
   <div class="header-inner">
-    <div class="logo"><span class="dot"></span> Tu club en números</div>
+    <div class="logo"><span class="dot"></span> <span data-i18n="site.name">Tu club en números</span></div>
     <nav id="mainNav">
-      <button data-section="inicio" class="active">Inicio</button>
-      <button data-section="finanzas">Finanzas</button>
-      <button data-section="fuentes">Fuentes</button>
-      <button data-section="cuenta">Mi Cuenta</button>
+      <button data-section="inicio" class="active" data-i18n="nav.inicio">Inicio</button>
+      <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>
+      <button data-section="fuentes" data-i18n="nav.fuentes">Fuentes</button>
+      <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
     </nav>
     <div class="header-right">
       <!-- Versión 103: ya no 2 <button> fijos ("USD"/"ARS") — se generan por club en
            populateCurrencyToggle() (ver <script> principal), porque cada club puede tener una
            moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
-      <div class="segmented header-currency-toggle" id="currencyToggleGlobal" title="Moneda: aplica a Inicio y Finanzas"></div>
+      <div class="segmented header-currency-toggle" id="currencyToggleGlobal" data-i18n-title="header.currency" title="Moneda: aplica a Inicio y Finanzas"></div>
       <!-- Versión 101 (refactor de escalabilidad, a pedido de Guido): este <select> arrancaba
            vacío en el HTML — antes tenía un <option> por club tipeado a mano acá mismo, había que
            acordarse de agregar uno nuevo en la posición alfabética correcta cada vez que se sumaba
@@ -861,8 +912,17 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
            populateClubSelect() en el <script> principal: lee `clubs` (data/clubs.js), ordena por
            `displayName` alfabético A→Z, y arma cada <option> — agregar un club nuevo ya no toca
            este HTML en absoluto, alcanza con su entrada en `clubs{}`. -->
-      <select id="clubSelect" title="Elegir club" style="padding:5px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.3);font-size:12px;max-width:104px;"></select>
-      <button id="contactBtn" title="Contacto">&#9993;</button>
+      <select id="clubSelect" data-i18n-title="header.club" title="Elegir club" style="padding:5px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.3);font-size:12px;max-width:104px;"></select>
+      <button id="contactBtn" data-i18n-title="header.contact" title="Contacto">&#9993;</button>
+      <!-- Selector de idioma (Versión 115). El <button> y el menú se llenan en runtime
+           desde `window.LANGS` (data/lang/langs.js), igual que #clubSelect se llena desde
+           `clubs` (data/clubs.js): agregar un idioma NO toca este HTML. -->
+      <div class="lang-wrap">
+        <button id="langBtn" data-i18n-title="header.lang" title="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-globe" aria-hidden="true">&#127760;</span><span id="langBtnLabel">ES</span>
+        </button>
+        <div id="langMenu" role="menu" hidden></div>
+      </div>
     </div>
   </div>
 </header>
@@ -871,32 +931,32 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   <!-- INICIO -->
   <section id="inicio" class="active">
-    <h1>Datos del club</h1>
-    <p class="subtitle">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
+    <h1 data-i18n="inicio.title">Datos del club</h1>
+    <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
     <div class="grid" id="inicioStats"></div>
 
     <div class="card">
-      <h2>Ingresos por año</h2>
+      <h2 data-i18n="inicio.chart.rev">Ingresos por año</h2>
       <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioIngresosChart"></canvas></div>
       <div class="inicio-legend" id="inicioIngresosLegend"></div>
     </div>
 
     <div class="card">
-      <h2>Gastos por año</h2>
+      <h2 data-i18n="inicio.chart.exp">Gastos por año</h2>
       <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioGastosChart"></canvas></div>
       <div class="inicio-legend" id="inicioGastosLegend"></div>
     </div>
 
     <div class="card">
-      <h2>Deuda neta por año</h2>
+      <h2 data-i18n="inicio.chart.debt">Deuda neta por año</h2>
       <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioDeudaChart"></canvas></div>
     </div>
   </section>
 
   <!-- FINANZAS -->
   <section id="finanzas">
-    <h1>Finanzas</h1>
-    <p class="subtitle">Estado de resultados estilo cuenta de pérdidas y ganancias.</p>
+    <h1 data-i18n="finanzas.title">Finanzas</h1>
+    <p class="subtitle" data-i18n="finanzas.sub">Estado de resultados estilo cuenta de pérdidas y ganancias.</p>
 
 
     <div class="controls">
@@ -908,19 +968,19 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
            poder traerlo de vuelta sin reconstruir nada si en el futuro hace falta para los clubes
            argentinos que sí tienen gestión real. -->
       <div class="segmented" id="viewToggle" style="display:none;">
-        <button data-view="anio" class="active">Año a año</button>
-        <button data-view="gestion">Por gestión</button>
+        <button data-view="anio" class="active" data-i18n="finanzas.view.year">Año a año</button>
+        <button data-view="gestion" data-i18n="finanzas.view.board">Por gestión</button>
       </div>
 
       <span id="gestionSelectWrap" style="display:none;">
-        <label>Gestión:</label>
+        <label data-i18n="label.board">Gestión:</label>
         <select id="gestionSelect">
           <option value="riquelme">Riquelme (2023-actual)</option>
         </select>
       </span>
 
       <span id="anioSelectWrap">
-        <label>Año:</label>
+        <label data-i18n="label.year">Año:</label>
         <select id="anioSelect">
           <option value="2027">2026/2027 (Presupuesto)</option>
           <option value="2026">2025/2026 (Placeholder)</option>
@@ -931,8 +991,8 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
       <span id="simplifyToggleWrap">
         <div class="segmented" id="simplifyToggle" title="Formato del club: las categorías tal cual las reportó el club. Formato simplificado: los mismos números, reclasificados a un formato uniforme para poder comparar entre ejercicios (y a futuro, entre clubes).">
-          <button data-simplify="0">Formato del club</button>
-          <button data-simplify="1" class="active">Formato simplificado</button>
+          <button data-simplify="0" data-i18n="finanzas.fmt.club">Formato del club</button>
+          <button data-simplify="1" class="active" data-i18n="finanzas.fmt.simple">Formato simplificado</button>
         </div>
       </span>
     </div>
@@ -942,30 +1002,30 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     <div class="grid" id="finanzasStats"></div>
 
     <div class="card">
-      <h2>Estado de resultados</h2>
-      <p class="subtitle">En ingresos ves cuánta plata entró y en gastos ves cuánta salió del club en este ejercicio, categoría por categoría.</p>
+      <h2 data-i18n="finanzas.pl.title">Estado de resultados</h2>
+      <p class="subtitle" data-i18n="finanzas.pl.sub">En ingresos ves cuánta plata entró y en gastos ves cuánta salió del club en este ejercicio, categoría por categoría.</p>
       <div class="table-scroll">
       <table id="finanzasPLTable">
         <colgroup><col><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup>
-        <thead><tr><th>Rubro</th><th id="finanzasPLTableCurLabel">Actual</th><th>% del<br>total</th><th id="finanzasPLTablePrevLabel">Anterior</th><th>% del<br>total</th></tr></thead>
+        <thead><tr><th data-i18n="th.line">Rubro</th><th id="finanzasPLTableCurLabel">Actual</th><th>% del<br>total</th><th id="finanzasPLTablePrevLabel">Anterior</th><th>% del<br>total</th></tr></thead>
         <tbody></tbody>
       </table>
       </div>
     </div>
 
     <div class="card">
-      <h2>Deuda</h2>
-      <p class="subtitle">Acá ves cuánta plata le debe el club a terceros (deuda bruta), cuánta plata tiene disponible (caja) y la diferencia entre las dos (deuda neta).</p>
+      <h2 data-i18n="finanzas.debt.title">Deuda</h2>
+      <p class="subtitle" data-i18n="finanzas.debt.sub">Acá ves cuánta plata le debe el club a terceros (deuda bruta), cuánta plata tiene disponible (caja) y la diferencia entre las dos (deuda neta).</p>
       <table id="finanzasDebtTable">
-        <thead><tr><th>Indicador</th><th id="finanzasDebtTableCurLabel">Actual</th><th id="finanzasDebtTablePrevLabel">Anterior</th></tr></thead>
+        <thead><tr><th data-i18n="th.indicator">Indicador</th><th id="finanzasDebtTableCurLabel">Actual</th><th id="finanzasDebtTablePrevLabel">Anterior</th></tr></thead>
         <tbody></tbody>
       </table>
       <p class="source-note" id="finanzasDebtNote" style="color:var(--azul);font-weight:600;"></p>
     </div>
 
     <div class="card">
-      <h2>Gráficos</h2>
-      <p class="subtitle">Los mismos números de arriba, pero en gráfico: para ver de un vistazo cómo evolucionaron ingresos y gastos a través de los ejercicios, y de qué rubros vive el club.</p>
+      <h2 data-i18n="finanzas.charts.title">Gráficos</h2>
+      <p class="subtitle" data-i18n="finanzas.charts.sub">Los mismos números de arriba, pero en gráfico: para ver de un vistazo cómo evolucionaron ingresos y gastos a través de los ejercicios, y de qué rubros vive el club.</p>
       <div class="charts-grid">
         <div>
           <div class="chart-caption">Ingresos vs. gastos, últimos ejercicios</div>
@@ -978,14 +1038,14 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       </div>
     </div>
     <div class="card" id="supuestosCard">
-      <h2>Supuestos</h2>
-      <p class="subtitle">Antes de mostrar los números del presupuesto, el club explica bajo qué supuestos los armó: inflación esperada, tipo de cambio, resultados deportivos previstos, etc. Es la letra chica que explica de dónde salen las proyecciones de arriba. Solo aparece para los ejercicios que tienen un presupuesto cargado con este detalle.</p>
+      <h2 data-i18n="budget.assump.title">Supuestos</h2>
+      <p class="subtitle" data-i18n="budget.assump.sub">Antes de mostrar los números del presupuesto, el club explica bajo qué supuestos los armó: inflación esperada, tipo de cambio, resultados deportivos previstos, etc. Es la letra chica que explica de dónde salen las proyecciones de arriba. Solo aparece para los ejercicios que tienen un presupuesto cargado con este detalle.</p>
       <div id="supuestosBody"></div>
     </div>
 
     <div class="card" id="presupuestoFinancieroCard">
-      <h2>Presupuesto Financiero</h2>
-      <p class="subtitle">A diferencia del cuadro "Estado de resultados" de más arriba (que registra todo por lo devengado, cuando corresponde), acá se ve el movimiento real de caja: cuánta plata entra y sale, hasta llegar al Saldo al Cierre. Solo aparece para los ejercicios que tienen un presupuesto financiero cargado.</p>
+      <h2 data-i18n="budget.cash.title">Presupuesto Financiero</h2>
+      <p class="subtitle" data-i18n="budget.cash.sub">A diferencia del cuadro "Estado de resultados" de más arriba (que registra todo por lo devengado, cuando corresponde), acá se ve el movimiento real de caja: cuánta plata entra y sale, hasta llegar al Saldo al Cierre. Solo aparece para los ejercicios que tienen un presupuesto financiero cargado.</p>
 
       <div id="pfBoca2027">
         <div class="waterfall-row" id="presupuestoFinancieroWaterfall"></div>
@@ -1026,8 +1086,8 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     </div>
 
     <div class="card" id="presupuestoInversionesCard">
-      <h2>Presupuesto de Inversiones</h2>
-      <p class="subtitle">El detalle de en qué obras e inversiones de infraestructura piensa gastar el club durante el ejercicio: estadio, sedes, predios, sistemas, etc. Solo aparece para los ejercicios que tienen un presupuesto de inversiones cargado.</p>
+      <h2 data-i18n="budget.capex.title">Presupuesto de Inversiones</h2>
+      <p class="subtitle" data-i18n="budget.capex.sub">El detalle de en qué obras e inversiones de infraestructura piensa gastar el club durante el ejercicio: estadio, sedes, predios, sistemas, etc. Solo aparece para los ejercicios que tienen un presupuesto de inversiones cargado.</p>
 
       <div id="piBoca2027">
       <details class="accordion nested">
@@ -1248,7 +1308,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   <!-- MERCADO DE PASES -->
   <section id="pases">
-    <h1>Mercado de Pases</h1>
+    <h1 data-i18n="pases.title">Mercado de Pases</h1>
     <p class="subtitle">Compras, ventas y movimientos de cuerpo técnico. Filtrá por gestión, año, ventana de pases y tipo.</p>
 
     <div class="controls">
@@ -1287,9 +1347,9 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     <div class="grid" id="pasesStats"></div>
 
     <div class="card">
-      <h2>Movimientos</h2>
+      <h2 data-i18n="pases.table.title">Movimientos</h2>
       <table id="pasesTable">
-        <thead><tr><th>Nombre</th><th>Tipo</th><th>Movimiento</th><th>Monto</th><th>Año</th><th>Ventana</th></tr></thead>
+        <thead><tr><th data-i18n="th.name">Nombre</th><th data-i18n="th.type">Tipo</th><th data-i18n="th.movement">Movimiento</th><th data-i18n="th.amount">Monto</th><th data-i18n="th.year">Año</th><th data-i18n="th.window">Ventana</th></tr></thead>
         <tbody></tbody>
       </table>
       <p class="source-note">Fuente: Transfermarkt + reportes de club (placeholder). Los movimientos de DT no tienen impacto monetario directo en esta demo.</p>
@@ -1298,7 +1358,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   <!-- RESULTADOS DEPORTIVOS -->
   <section id="resultados">
-    <h1>Resultados Deportivos</h1>
+    <h1 data-i18n="resultados.title">Resultados Deportivos</h1>
     <p class="subtitle">Complemento al análisis financiero. Es contexto, no el eje del sitio. Cada título queda contado en la gestión del presidente que estaba en funciones el día que se ganó, no en la de quien empezó el torneo, por eso a veces un título "cruza" el cambio de gestión.</p>
 
     <div class="controls">
@@ -1313,9 +1373,9 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     <div class="grid" id="resultadosStats"></div>
 
     <div class="card">
-      <h2>Títulos y competencias por año</h2>
+      <h2 data-i18n="resultados.table.title">Títulos y competencias por año</h2>
       <table id="resultadosTable">
-        <thead><tr><th>Año</th><th>Competencia</th><th>Resultado</th><th>Gestión</th></tr></thead>
+        <thead><tr><th>Año</th><th data-i18n="th.competition">Competencia</th><th data-i18n="th.result">Resultado</th><th data-i18n="th.board">Gestión</th></tr></thead>
         <tbody></tbody>
       </table>
       <p class="source-note">Solo se listan títulos ganados.</p>
@@ -1325,17 +1385,17 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   <!-- COMPARAR -->
   <section id="comparar">
-    <h1>Comparar Gestiones</h1>
-    <p class="subtitle">Mismos indicadores, financieros y deportivos, lado a lado.</p>
+    <h1 data-i18n="comparar.title">Comparar Gestiones</h1>
+    <p class="subtitle" data-i18n="comparar.sub">Mismos indicadores, financieros y deportivos, lado a lado.</p>
 
     <div class="controls">
-      <label>Gestión A:</label>
+      <label data-i18n="label.boardA">Gestión A:</label>
       <select id="compA">
         <option value="riquelme">Riquelme (2023-actual)</option>
         <option value="ameal">Ameal (2019-2023)</option>
         <option value="angelici">Angelici (2015-2019)</option>
       </select>
-      <label>Gestión B:</label>
+      <label data-i18n="label.boardB">Gestión B:</label>
       <select id="compB">
         <option value="ameal">Ameal (2019-2023)</option>
         <option value="riquelme">Riquelme (2023-actual)</option>
@@ -1354,17 +1414,17 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   <!-- FUENTES -->
   <section id="fuentes">
-    <h1>Fuentes</h1>
+    <h1 data-i18n="fuentes.title">Fuentes</h1>
 
     <div class="card">
-      <h2>Sobre mí</h2>
-      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;">Soy hincha de Boca. Nada más. Este sitio es anónimo a propósito: no representa a ninguna lista, candidatura ni a la dirigencia del club. Lo que importa acá es el dato, no quién lo junta.</p>
+      <h2 data-i18n="fuentes.about.title">Sobre mí</h2>
+      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;" data-i18n="fuentes.about.text">Soy hincha de Boca. Nada más. Este sitio es anónimo a propósito: no representa a ninguna lista, candidatura ni a la dirigencia del club. Lo que importa acá es el dato, no quién lo junta.</p>
     </div>
 
-    <p class="subtitle">Todo dato en este sitio cita su origen y fecha. Estas son las fuentes primarias que se van a usar en la versión final.</p>
+    <p class="subtitle" data-i18n="fuentes.sub">Todo dato en este sitio cita su origen y fecha. Estas son las fuentes primarias que se van a usar en la versión final.</p>
     <div class="card">
       <table>
-        <thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead>
+        <thead><tr><th data-i18n="th.source">Fuente</th><th data-i18n="th.provides">Qué aporta</th></tr></thead>
         <tbody>
           <tr><td>bocajuniors.com.ar/club/presupuesto</td><td>Balances y presupuestos oficiales del club</td></tr>
           <tr><td>Actas de Asamblea de Representantes</td><td>Memoria y balance anual, discusión de socios</td></tr>
@@ -1377,37 +1437,37 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     </div>
 
     <div class="card">
-      <h2>Calidad de dato por club</h2>
+      <h2 data-i18n="fuentes.quality.title">Calidad de dato por club</h2>
       <p style="color:var(--muted);font-size:14.5px;line-height:1.6;">El sitio ahora cubre varios clubes, y cada uno tiene un nivel de dato distinto, se marca con un aviso en cada sección cuando corresponde. <strong>Boca</strong> tiene el Ejercicio 2024/2025 (balance auditado) y 2026/2027 (presupuesto) reales, el resto (2018-2023) sigue siendo placeholder mientras se consiguen los balances históricos del club. <strong>Racing</strong> tiene su archivo público 100% cargado: 13 ejercicios consecutivos 2008/09-2020/21 más 2023/2024 a 2026/2027, todos con datos oficiales reales (varios ejercicios con presupuesto Y balance del mismo año, columna comparativa "Presupuesto"/"Balance"). <strong>River</strong> tiene un solo ejercicio real (2023/2024, balance auditado conseguido en una réplica de la comunidad de hinchas tuRiver, no del dominio oficial — el club solo publica la Memoria narrativa, sin estados contables); el resto sigue siendo placeholder a la espera de que aparezca el documento oficial o otra réplica confiable. <strong>Vélez Sarsfield</strong> tiene su archivo público 100% cargado: los 11 ejercicios consecutivos 2014/15 a 2024/2025, todos con datos oficiales reales (3 de ellos — 2015, 2016 y 2017 — transcriptos por OCR porque el club solo publicó el escaneo, no el PDF con texto). <strong>Instituto Atlético Central Córdoba</strong>, <strong>Rosario Central</strong> e <strong>Independiente</strong> tienen cada uno un ejercicio real (2023/2024, 2022/2023 y 2023/2024 respectivamente, todos balances auditados), con el resto de sus archivos pendiente. <strong>Argentinos Juniors</strong> tiene 5 ejercicios reales consecutivos (2015-2019), pero a nivel agregado (4 categorías, desde una presentación de asamblea comparativa, no un balance completo con Anexos). <strong>Estudiantes de La Plata</strong> tiene 3 ejercicios reales consecutivos (2022-2024) con detalle completo por Anexo. <strong>San Lorenzo</strong> tiene 2 ejercicios reales consecutivos (2013-2014). <strong>Unión</strong> tiene un ejercicio real (2025), el primer club del sitio cargado desde un PDF con páginas nativas y páginas escaneadas mezcladas en el mismo archivo. <strong>Club América</strong> (primer club fuera de Argentina) tiene un ejercicio real (2025), pero con una salvedad importante: el club no publica balance propio, el dato sale de la Nota de Segmentos ("Segmento de Fútbol") de Ollamani, S.A.B. de C.V., la compañía bursátil mexicana que controla al club desde 2024 — ese segmento incluye, además de Club América, el negocio del Estadio Banorte, sin desglose posible entre los dos, y no trae balance patrimonial (deuda/caja) a nivel de segmento, solo ingresos y una utilidad operativa antes de depreciación e impuestos. El toggle USD/ARS y Formato del club/simplificado están disponibles para todos los clubes argentinos, cada ejercicio real usa el tipo de cambio que declara su propio balance/presupuesto, no una cotización externa (Club América usa el toggle análogo MXN/USD). La lista de dónde salió cada fuente vive en <code>fuentes-por-club.md</code>, en la misma carpeta del sitio.</p>
     </div>
   </section>
 
   <!-- MI CUENTA (stub, sin funcionalidad todavía) -->
   <section id="cuenta">
-    <h1>Mi Cuenta</h1>
-    <p class="subtitle">Cuentas y suscripciones, próximamente.</p>
+    <h1 data-i18n="cuenta.title">Mi Cuenta</h1>
+    <p class="subtitle" data-i18n="cuenta.sub">Cuentas y suscripciones, próximamente.</p>
     <div class="card">
-      <h2>Todavía no hay nada acá</h2>
-      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;">La idea es tener un plan gratis (lo que ya ves en el sitio) y un plan pago con analítica avanzada y contenido pensado para periodistas y creadores de contenido, con pagos vía dLocal Go. Todavía no está construido: esta pestaña es un lugar reservado, no un formulario funcional.</p>
+      <h2 data-i18n="cuenta.empty.title">Todavía no hay nada acá</h2>
+      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;" data-i18n="cuenta.empty.text">La idea es tener un plan gratis (lo que ya ves en el sitio) y un plan pago con analítica avanzada y contenido pensado para periodistas y creadores de contenido, con pagos vía dLocal Go. Todavía no está construido: esta pestaña es un lugar reservado, no un formulario funcional.</p>
     </div>
   </section>
 
 </main>
 
 <footer>
-  Este sitio no representa a ninguna lista ni candidatura. Su único objetivo es facilitar el acceso a datos públicos para que cada socio decida su voto.<br>
-  <span style="opacity:.7;">MVP · datos placeholder · versión de prueba</span>
+  <span data-i18n="footer.text">Este sitio no representa a ninguna lista ni candidatura. Su único objetivo es facilitar el acceso a datos públicos para que cada socio decida su voto.</span><br>
+  <span style="opacity:.7;" data-i18n="footer.note">MVP · datos placeholder · versión de prueba</span>
 </footer>
 
 <!-- MODAL DE CONTACTO -->
 <div class="modal-overlay" id="contactModal">
   <div class="modal-box">
-    <h2>Contacto</h2>
-    <p style="color:var(--muted);font-size:13.5px;margin-top:0;">Dudas, sugerencias o datos para mejorar el sitio. Podés dejarlo anónimo.</p>
+    <h2 data-i18n="modal.title">Contacto</h2>
+    <p style="color:var(--muted);font-size:13.5px;margin-top:0;" data-i18n="modal.sub">Dudas, sugerencias o datos para mejorar el sitio. Podés dejarlo anónimo.</p>
     <form id="contactForm">
-      <label>Nombre (opcional)</label>
+      <label data-i18n="modal.name">Nombre (opcional)</label>
       <input type="text" id="cfNombre">
-      <label>Email (opcional)</label>
+      <label data-i18n="modal.email">Email (opcional)</label>
       <input type="email" id="cfEmail">
       <label>Tipo</label>
       <select id="cfTipo">
@@ -1416,23 +1476,33 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
         <option>Dato / corrección</option>
         <option>Otro</option>
       </select>
-      <label>Mensaje</label>
+      <label data-i18n="modal.message">Mensaje</label>
       <textarea id="cfMensaje" rows="4" required></textarea>
       <div class="modal-actions">
-        <button type="button" class="btn-secondary" id="cfCancel">Cancelar</button>
-        <button type="submit" class="btn-primary">Enviar</button>
+        <button type="button" class="btn-secondary" id="cfCancel" data-i18n="modal.cancel">Cancelar</button>
+        <button type="submit" class="btn-primary" data-i18n="modal.send">Enviar</button>
       </div>
     </form>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
-<script src="data/clubs.js"></script>
-<script src="data/category-map.js"></script>
-<script src="data/currency-map.js"></script>
-<script src="data/boca-data.js"></script>
-<script src="js/finanzas-calc.js"></script>
-<script src="js/finanzas-render.js"></script>
+<!-- ASSET_V (Versión 115): versión de los assets propios, para invalidar el cache del
+     navegador cuando se deploya una versión nueva. Sin esto, un visitante que ya entró antes
+     se puede quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo (pasó en
+     desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
+     render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
+     `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
+<script>window.ASSET_V = '115';</script>
+<script src="data/lang/langs.js?v=115"></script>
+<script src="js/i18n.js?v=115"></script>
+<script src="data/clubs.js?v=115"></script>
+<script src="data/category-map.js?v=115"></script>
+<script src="data/site-labels.js?v=115"></script>
+<script src="data/currency-map.js?v=115"></script>
+<script src="data/boca-data.js?v=115"></script>
+<script src="js/finanzas-calc.js?v=115"></script>
+<script src="js/finanzas-render.js?v=115"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1479,7 +1549,11 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   const clubDataLoaded = { boca: true };
   function loadClubData(clubId){
     if(clubDataLoaded[clubId] || !clubs[clubId]) return Promise.resolve();
-    const src = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubId + '-data.js');
+    // `?v=` (Versión 115): mismo ASSET_V que los <script src> estáticos del final del <body>.
+    // Sin esto, un visitante con un data/<club>-data.js viejo cacheado seguiría viendo números
+    // viejos de ese club después de un deploy que los corrigió.
+    const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubId + '-data.js');
+    const src = base + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
     return new Promise((resolve, reject) => {
       const script = document.createElement('script');
       script.src = src;
@@ -1746,6 +1820,67 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   renderResultados();
   renderTitulosTable();
   renderComparar();
+
+  // ==========================================================================
+  // SELECTOR DE IDIOMA (Versión 115)
+  //
+  // El menú se dibuja leyendo `window.LANGS` (data/lang/langs.js), así que sumar
+  // un idioma nuevo NO toca este código ni el HTML: alcanza con la entrada en
+  // LANGS y su `data/lang/<code>.js`. Mismo criterio que `populateClubSelect()`
+  // (Versión 101) y que `loadClubData()` (Versión 112): convención, no un mapa a
+  // mano que alguien se tiene que acordar de actualizar.
+  // ==========================================================================
+  function renderLangMenu(){
+    const menu = document.getElementById('langMenu');
+    menu.innerHTML = Object.keys(window.LANGS).map(code => {
+      const l = window.LANGS[code];
+      const active = (code === I18N.current) ? ' class="active"' : '';
+      return `<button type="button" role="menuitem" data-lang="${code}"${active}>${l.name}</button>`;
+    }).join('');
+    document.getElementById('langBtnLabel').textContent = I18N.current.toUpperCase();
+  }
+
+  function setLangMenuOpen(open){
+    const menu = document.getElementById('langMenu');
+    const btn  = document.getElementById('langBtn');
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  document.getElementById('langBtn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    setLangMenuOpen(document.getElementById('langMenu').hidden);
+  });
+
+  document.getElementById('langMenu').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-lang]');
+    if (!b) return;
+    I18N.setLang(b.dataset.lang);
+    setLangMenuOpen(false);
+  });
+
+  // Cerrar el menú al hacer click afuera o con Escape (si no, queda abierto tapando
+  // el contenido, que es justo lo que pasa con un dropdown hecho a mano sin esto).
+  document.addEventListener('click', () => setLangMenuOpen(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setLangMenuOpen(false); });
+
+  // Todo lo que se genera en JS hay que volver a dibujarlo cuando cambia el idioma:
+  // `I18N.apply()` solo alcanza para lo que está escrito en el HTML con data-i18n.
+  // Si mañana se agrega una vista nueva que genere texto propio, sumarla ACÁ.
+  I18N.onChange(() => {
+    renderLangMenu();
+    populateFinanzasSelectors(currentClub);
+    populateCurrencyToggle(currentClub);
+    refreshFinanzas();
+    renderInicioStats();
+    renderInicioCharts();
+    applyPasesFilters();
+    renderResultados();
+    renderTitulosTable();
+    renderComparar();
+  });
+
+  I18N.init().then(renderLangMenu);
 </script>
 
 </body>
