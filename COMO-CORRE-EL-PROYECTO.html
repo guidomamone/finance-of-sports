@@ -231,7 +231,7 @@
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
-        <tr><td class="mono">skills/start-session</td><td>El checklist de arranque y cierre de cualquier sesión: qué leer y en qué orden, qué NO leer, cómo verificar, qué documentar al terminar y la regla de git. Es por acá que se empieza.</td><td class="num">nuevo</td></tr>
+        <tr><td class="mono">skills/start-session-…-project</td><td>El checklist de arranque y cierre de cualquier sesión: qué leer y en qué orden, qué NO leer, cómo verificar, qué documentar al terminar y la regla de git. Es por acá que se empieza.</td><td class="num">nuevo</td></tr>
         <tr><td class="mono">CLAUDE.md</td><td>Las reglas permanentes del proyecto: dónde va cada PDF, qué skill leer antes de qué tarea, qué preguntarte antes de asumir algo.</td><td class="num">14 KB</td></tr>
         <tr><td class="mono">CONVENCIONES.md</td><td>25 reglas vigentes de datos y de interfaz, varias pedidos explícitos tuyos. Se lee antes de tocar el sitio.</td><td class="num">22 KB</td></tr>
         <tr><td class="mono">ARQUITECTURA.md</td><td>Qué hace cada archivo y cómo funciona el motor. Se lee cuando se toca el motor o se agrega un club.</td><td class="num">8 KB</td></tr>
@@ -264,6 +264,7 @@
   <div class="col">
     <div class="flow-head"><span class="step-no">01</span><h2>Arrancar una sesión</h2></div>
     <p>Una sesión llega en frío: no sabe qué clubes hay ni qué criterios ya se decidieron. Lo que importa no es qué archivos existen, sino <strong>cuáles hay que leer siempre y cuáles sólo si la tarea los toca</strong>.</p>
+    <p>Ese orden dejó de ser algo que hay que recordar: está escrito en el skill <code>start-session-finance-of-sports-project</code>. <strong>Alcanza con invocarlo al abrir la sesión y decir en qué te querés enfocar</strong> — el skill aporta el procedimiento (qué leer y en qué orden, qué NO leer, cómo levantar el sitio, cómo verificar, qué documentar al cerrar, la regla de git) y vos aportás la tarea. El skill se autodescubre siempre que la sesión se abra en <code>finance-of-sports/</code> y no en la carpeta de arriba.</p>
   </div>
 
   <figure>
@@ -411,13 +412,7 @@
   </table></div>
 
   <div class="col">
-    <div class="leak">
-      <h3>Fuga 1 · resuelta hoy: lo mismo escrito cinco veces</h3>
-      <p>El comentario de cabecera de <code>data/&lt;club&gt;-data.js</code> ya explica de dónde salió cada número, qué categoría se le dio, qué tipo de cambio se usó y qué quedó sin cargar. <strong>Las tres filas marcadas "sí" repiten esa misma información en prosa, en otros archivos.</strong></p>
-      <p>Y como el <code>data/&lt;club&gt;-data.js</code> es el único que sí o sí se toca al cargar un club, es el único que no se puede desincronizar. Los otros se desactualizan solos con el tiempo.</p>
-      <p><strong>Resuelto hoy, en parte:</strong> la sección "qué es real por club" dejó de escribirse y pasa a generarse desde los propios datos con <code>node tools/generate-club-index.js</code>. Ya no es un texto paralelo que se desactualiza, es una vista de los datos. El índice contesta QUÉ hay cargado; el archivo del club sigue contestando POR QUÉ, que es lo único que no se puede derivar.</p>
-      <p><strong>Lo que queda:</strong> el conteo del bloque de estado y la línea de <code>fuentes/</code> siguen a mano. Salen con el mismo generador, apuntado a otros dos lugares.</p>
-    </div>
+
   </div>
 </section>
 
@@ -546,34 +541,12 @@
 <section class="fixes">
   <div class="col" style="margin-bottom:22px;">
     <h2 id="riesgos">Riesgos de escala</h2>
-    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Los dos primeros ya están arreglados; los otros siguen abiertos, ordenados por lo que devuelven sobre lo que cuestan.</p>
+    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Están ordenados por lo que devuelven sobre lo que cuestan. Lo que se va arreglando sale de la lista: hoy quedan tres.</p>
+    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (6 de 222 checks; ahora <code>auditAll()</code> corre los 222 a pedido), la sección "qué es real por club" que se escribía a mano (ahora se genera desde los datos), y el <code>if</code> con nombres de club escrito adentro del motor (ahora sale por convención del archivo de cada club).</p>
   </div>
 
-  <div class="fix">
-    <div>
-      <h3>La auditoría sólo veía el club abierto <span style="color:var(--good);font-weight:600;">— arreglado</span></h3>
-      <p><strong>Qué se rompía a escala:</strong> los clubes se cargan por demanda y las verificaciones sólo revisan lo cargado, así que al abrir el sitio corrían 6 de 222 checks. Un dato mal cargado en un club que nadie mira era invisible. Con 1000 clubes, nadie mira ninguno.</p>
-      <p style="margin-top:8px;"><strong>Cómo quedó:</strong> <code>auditAll()</code> fuerza la carga de todos y corre las 222, a pedido con <code>?audit=1</code>. La carga por demanda no se tocó.</p>
-    </div>
-    <div><span class="effort done">hecho</span></div>
-  </div>
 
-  <div class="fix">
-    <div>
-      <h3>"Qué es real por club" se escribía a mano <span style="color:var(--good);font-weight:600;">— arreglado</span></h3>
-      <p><strong>Qué se rompía a escala:</strong> un párrafo por club dentro de <code>index.html</code>, repitiendo lo que el archivo de cada club ya decía. Crecía sin límite, y era la copia que se desactualizaba.</p>
-      <p style="margin-top:8px;"><strong>Cómo quedó:</strong> <code>tools/generate-club-index.js</code> la genera desde los datos. El índice contesta QUÉ hay cargado; el archivo del club contesta POR QUÉ. Onboardear un club pasó de tocar 6 archivos de documentación a 2, y la prosa vieja quedó archivada en <code>QUE-ES-REAL-historico.md</code>.</p>
-    </div>
-    <div><span class="effort done">hecho</span></div>
-  </div>
 
-  <div class="fix">
-    <div>
-      <h3>El motor tiene una lista de clubes escrita a mano</h3>
-      <p><strong>Qué se rompe a escala:</strong> la función que busca el presupuesto de un ejercicio es un <code>if</code> que sólo conoce a Racing y River. Cargar un club con presupuesto <em>y</em> balance del mismo año obliga a editar el motor, cuando debería alcanzar con el archivo del club. Los siete clubes de Brasil ya declaran una tabla que nadie lee. Es el último lugar donde sobrevive el patrón "agregar un club = editar el código", que el resto del proyecto ya eliminó.</p>
-    </div>
-    <div><span class="effort s">sesión corta</span></div>
-  </div>
 
   <div class="fix">
     <div>
@@ -601,7 +574,7 @@
 </section>
 
 <footer>
-  Medido sobre el repo al 13 sep 2026, Versión 120. 41 clubes · 6 países · 222 checks · 83 transcripciones · 208 archivos en <code>fuentes/</code> · 8,6 MB de documentos fuente.<br>
+  Medido sobre el repo al 13 sep 2026, Versión 121. 41 clubes · 6 países · 222 checks · 83 transcripciones · 208 archivos en <code>fuentes/</code> · 8,6 MB de documentos fuente.<br>
   Los números salen de correr el sitio, no de estimarlos: los 222 checks se contaron con <code>auditAll()</code>.<br>
   Este documento vive también en el repo, como <code>COMO-CORRE-EL-PROYECTO.html</code>.
 </footer>
