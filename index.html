@@ -1340,6 +1340,28 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
 
 TO-DO LIST, EN ORDEN DE PRIORIDAD (esto es lo que hay que preguntarle a Guido
 o directamente retomar en la próxima sesión)
+0. PRÓXIMA SESIÓN, PEDIDO EXPLÍCITO DE GUIDO (arrancar acá, en un chat nuevo — este ya venía muy
+   largo): refactor de escalabilidad de DOCUMENTACIÓN a 1000 clubes, el mismo problema que ya se
+   resolvió una vez para `fuentes-por-club.md` (Versión 112 arregló el motor/código; esto es la
+   parte de DOCS que quedó pendiente, identificada en esa misma revisión pero deliberadamente no
+   tocada todavía). Dos frentes, ambos crecen linealmente por club sin límite:
+   (a) La sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de ESTE MISMO comentario (más abajo)
+   ya tiene un párrafo por cada uno de los 38 clubes — a 1000 clubes sería un comentario HTML de
+   varios miles de líneas, inmantenible. Candidato: mismo patrón que `fuentes-por-club.md` (Versión
+   anterior a esta sesión) — un ÍNDICE acá (una línea por club, estado + link) y el detalle real
+   movido a un archivo propio por club (¿`Clubes/<País>/<Club>/README.md`? ¿el propio comentario de
+   cabecera de `data/<club>-data.js`, que YA tiene casi toda esta info duplicada? evaluar si conviene
+   dejar de duplicar y solo linkear al `.js`).
+   (b) `CHANGELOG.md` y `Proyecto Boca.md` crecen un bloque más por versión, sin partición — ya van
+   112 versiones en un sólo archivo cada uno. Evaluar si conviene partir por año o por rango de
+   versiones (ej. `CHANGELOG-2026.md`) antes de que se vuelvan pesados de leer/editar, o si alcanza
+   con esperar a que sea un problema real (a diferencia de (a), que ya predeciblemente será un
+   problema concreto de mantenibilidad con la duplicación por club).
+   Antes de decidir el approach: relean la sección `## Estructura de carpetas de documentos fuente`
+   y el historial del refactor de `fuentes-por-club.md` (buscar "ÍNDICE" en `CLAUDE.md` y en
+   `Proyecto Boca.md`) para no reinventar un criterio ya debatido con Guido, y traer los judgment
+   calls concretos ANTES de tocar archivos (mismo proceso que se usó en la Versión 112: preguntar
+   con opciones claras, no decidir solo).
 1. RACING: resuelto lo esencial (era Blanco/Milito, Versión 16), 3 años
    históricos pre-Blanco (2008/09, 2009/10, 2010/11. Versión 20) y el
    presupuesto 2026/27 (Versión 32). OJO, contra lo que decía esta lista
