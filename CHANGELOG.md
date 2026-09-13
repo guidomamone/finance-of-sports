@@ -609,3 +609,11 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - Rename de marca pedido por Guido: "Tu club en números" -> "El deporte en Números". Cambia el `<title>`, el logo del header y el asunto del mail del formulario de contacto. Historia completa del nombre: "Boca en Números" (inicio) -> "Tu club en números" (Versión 12) -> "El deporte en Números" (esta).
 - La marca es DISTINTA POR IDIOMA a propósito, y eso queda resuelto como decisión, no como deuda: "El deporte en Números" en castellano, "Finance of Sports" en inglés (clave `site.name` de `data/lang/en.js`), que además es el dominio. Cierra la duda abierta que había dejado la Versión 115.
 - `git remote` local actualizado a `https://github.com/guidomamone/finance-of-sports.git` (Guido ya renombró el repo en GitHub).
+
+## Versión 118 — `auditAll()`: la auditoría deja de mirar solo el club que está abierto
+
+- Problema que resuelve: `verifyTieOuts()`/`checkFxSanity()` solo pueden revisar clubes cargados en memoria, y los clubes se cargan por demanda desde la Versión 112. Como el único `data/<club>-data.js` que entra por `<script src>` es el de Boca, una carga normal de la página corría **6 de los 222 checks que existen**. Los otros 216 solo corrían si un visitante elegía justo ese club. Un error de datos en el club N° 37 era invisible hasta que alguien lo miraba a mano.
+- `auditAll()` nuevo: fuerza `loadClubData()` sobre los 41 clubes, corre las 2 verificaciones y devuelve (además de imprimir) un resumen con checks que cierran, checks que no, warnings de fx y clubes que no cargaron. Se dispara con `?audit=1` en la URL o llamándolo desde la consola.
+- La carga por demanda NO se tocó: verificado que una carga normal sigue teniendo 1 solo club en memoria. El visitante que solo quiere ver Boca sigue sin bajar 41 archivos de datos.
+- Regla nueva documentada en el código: cualquier verificación total tiene que pasar por `computeYearGeneric()`, nunca reimplementar la cascada. Al escribir esto se probó primero un verificador aparte en Node que recalculaba el PAT por su cuenta y tiró 12 FALSOS POSITIVOS, porque el motor real suma cosas que esa fórmula no tenía (nonCash, profitOnPlayerSales, assetSales, tax).
+- Resultado de la primera corrida completa: 41 clubes, 222 checks cierran, 0 que no cierran, 0 warnings de fx, 0 clubes que no cargan.
