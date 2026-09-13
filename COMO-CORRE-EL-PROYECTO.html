@@ -1,0 +1,609 @@
+<title>Cómo corre El deporte en Números</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#F4F7F7;
+    --panel:#FFFFFF;
+    --ink:#16262B;
+    --ink-soft:#4A5F65;
+    --ink-faint:#7C9096;
+    --rule:#D2DCDC;
+    --rule-soft:#E4EBEB;
+    --accent:#0F6E6B;
+    --accent-soft:#E2EFEE;
+    --cost:#A8620E;
+    --cost-soft:#F7EADB;
+    --good:#2C6B3F;
+    --good-soft:#E3EFE6;
+    --shadow:0 1px 2px rgba(22,38,43,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0D1618; --panel:#132024; --ink:#E4EDEE; --ink-soft:#A6B9BD;
+      --ink-faint:#71878D; --rule:#28383D; --rule-soft:#1D2C30;
+      --accent:#4FBDB5; --accent-soft:#152F2F; --cost:#E0A055; --cost-soft:#2E2417;
+      --good:#6FBE86; --good-soft:#17281C; --shadow:0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0D1618; --panel:#132024; --ink:#E4EDEE; --ink-soft:#A6B9BD;
+    --ink-faint:#71878D; --rule:#28383D; --rule-soft:#1D2C30;
+    --accent:#4FBDB5; --accent-soft:#152F2F; --cost:#E0A055; --cost-soft:#2E2417;
+    --good:#6FBE86; --good-soft:#17281C; --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:16px; line-height:1.62; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px 96px;}
+  .col{max-width:68ch;}
+  code{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.9em;}
+
+  header.mast{border-bottom:2px solid var(--ink);padding:56px 0 20px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin:0 0 14px;
+  }
+  h1{
+    font-size:clamp(34px,5.2vw,54px);line-height:1.04;letter-spacing:-.022em;
+    font-weight:700;margin:0 0 18px;text-wrap:balance;max-width:18ch;
+  }
+  .standfirst{font-size:18px;color:var(--ink-soft);margin:0;max-width:62ch;}
+
+  .state{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+    border-bottom:1px solid var(--rule);margin-bottom:60px;
+  }
+  .state div{padding:20px 22px 22px 0;border-right:1px solid var(--rule-soft);}
+  .state div:last-child{border-right:none;}
+  .state dt{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 6px;
+  }
+  .state dd{margin:0;font-size:27px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;}
+  .state dd small{font-size:13px;font-weight:400;color:var(--ink-soft);letter-spacing:0;}
+
+  section.flow{margin:0 0 76px;}
+  .flow-head{display:flex;gap:18px;align-items:baseline;margin-bottom:10px;}
+  .step-no{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:13px;font-weight:600;color:var(--accent);
+    border:1px solid var(--accent);border-radius:2px;padding:2px 7px;flex-shrink:0;
+  }
+  h2{font-size:clamp(23px,3vw,30px);line-height:1.18;letter-spacing:-.018em;font-weight:600;margin:0;text-wrap:balance;}
+  .flow p{color:var(--ink-soft);margin:0 0 14px;}
+  .flow p strong{color:var(--ink);font-weight:600;}
+
+  figure{
+    margin:26px 0 20px;background:var(--panel);border:1px solid var(--rule);
+    border-radius:3px;padding:26px 24px 18px;box-shadow:var(--shadow);overflow-x:auto;
+  }
+  figure svg{display:block;max-width:100%;height:auto;min-width:520px;color:var(--ink);}
+  figcaption{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11.5px;line-height:1.55;color:var(--ink-faint);
+    margin-top:18px;padding-top:12px;border-top:1px solid var(--rule-soft);
+  }
+
+  .ledger{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 6px;}
+  .ledger th{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--ink-faint);font-weight:500;text-align:left;
+    padding:0 14px 7px 0;border-bottom:1px solid var(--rule);vertical-align:bottom;
+  }
+  .ledger td{padding:10px 14px 10px 0;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-soft);}
+  .ledger td:first-child{color:var(--ink);font-weight:500;}
+  .ledger td.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12.5px;color:var(--ink);}
+  .ledger td.num{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;
+    text-align:right;white-space:nowrap;color:var(--ink-soft);
+  }
+  .ledger tr:last-child td{border-bottom:none;}
+  .tbl-wrap{overflow-x:auto;}
+
+  .leak{
+    border-left:3px solid var(--cost);background:var(--cost-soft);
+    padding:16px 20px;margin:22px 0 0;border-radius:0 3px 3px 0;
+  }
+  .leak.solved{border-left-color:var(--good);background:var(--good-soft);}
+  .leak h3{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--cost);margin:0 0 7px;font-weight:600;
+  }
+  .leak.solved h3{color:var(--good);}
+  .leak p{margin:0;color:var(--ink);font-size:15px;}
+  .leak p + p{margin-top:9px;}
+
+  .group{margin:0 0 40px;}
+  .group h3{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 4px;font-weight:600;
+  }
+  .group .gnote{color:var(--ink-soft);font-size:14.5px;margin:0 0 12px;max-width:68ch;}
+
+  .fixes{border-top:2px solid var(--ink);padding-top:34px;}
+  .fix{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:22px 0;border-bottom:1px solid var(--rule-soft);}
+  @media (min-width:760px){.fix{grid-template-columns:minmax(0,1fr) 140px;gap:24px;align-items:start;}}
+  .fix h3{font-size:17px;font-weight:600;margin:0 0 5px;letter-spacing:-.01em;}
+  .fix p{margin:0;color:var(--ink-soft);font-size:15px;}
+  .effort{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.05em;
+    padding:4px 9px;border-radius:2px;display:inline-block;white-space:nowrap;
+  }
+  .effort.s{background:var(--good-soft);color:var(--good);}
+  .effort.m{background:var(--accent-soft);color:var(--accent);}
+  .effort.done{background:var(--good-soft);color:var(--good);font-weight:600;}
+
+  .legend{
+    display:flex;flex-wrap:wrap;gap:18px;
+    font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:var(--ink-faint);
+    margin:34px 0 56px;padding:12px 0;
+    border-top:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft);
+  }
+  .legend span{display:flex;align-items:center;gap:7px;}
+  .swatch{width:13px;height:13px;border-radius:2px;flex-shrink:0;}
+
+  footer{
+    margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11.5px;color:var(--ink-faint);line-height:1.7;
+  }
+  a{color:var(--accent);}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Mapa de procesos · finance-of-sports · 13 sep 2026</p>
+  <h1>Cómo corre El deporte en Números</h1>
+  <p class="standfirst">Qué es cada archivo del proyecto, los cuatro procesos que lo mueven, y la lista abierta de lo que puede romperse al escalar de 41 clubes a 1000.</p>
+  <p style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.6;color:var(--ink-soft);margin:22px 0 0;max-width:70ch;border-left:3px solid var(--accent);padding-left:16px;">
+    <strong style="color:var(--ink);">Para quien audite este documento:</strong> la sección que buscás es
+    <a href="#riesgos">RIESGOS DE ESCALA</a>, al final. Es la lista explícita de lo que hoy no escala,
+    con lo ya arreglado y lo que sigue abierto. El objetivo es encontrar los problemas AHORA, con 41
+    clubes, y no cuando sean 1000. Si ves algo que no está en esa lista, eso es exactamente lo que
+    hace falta: la lista está armada desde lo que apareció trabajando, no desde una revisión
+    sistemática del código.
+  </p>
+</header>
+
+<dl class="state">
+  <div><dt>Clubes cargados</dt><dd>41</dd></div>
+  <div><dt>Países</dt><dd>6</dd></div>
+  <div><dt>Checks de datos</dt><dd>222</dd></div>
+  <div><dt>Documentos fuente</dt><dd>83 <small>transcriptos</small></dd></div>
+  <div><dt>Archivos por club</dt><dd>8</dd></div>
+</dl>
+
+<!-- ============ INVENTARIO ============ -->
+<section class="flow">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">00</span><h2>Qué es cada cosa</h2></div>
+    <p>El proyecto tiene cuatro clases de archivo, y confundirlas es lo que hace que parezca más complicado de lo que es. <strong>Código</strong> es el sitio. <strong>Datos</strong> son los números de cada club. <strong>Instrucciones</strong> son las reglas que una sesión de trabajo tiene que respetar. <strong>Registro</strong> es lo que ya pasó: no se lee para trabajar, se consulta cuando hace falta.</p>
+  </div>
+
+  <div class="group">
+    <h3>Código · el sitio en sí</h3>
+    <p class="gnote">Archivos estáticos, sin backend y sin build. Se sirven tal cual desde la raíz.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">index.html</td><td>El HTML, el CSS y el script principal. Arriba de todo lleva un comentario con el estado del proyecto y la to-do list.</td><td class="num">143 KB</td></tr>
+        <tr><td class="mono">js/finanzas-calc.js</td><td>El motor: convierte las líneas de un balance en los totales, los porcentajes y la cascada hasta el resultado neto. Un solo motor para los 41 clubes.</td><td class="num">48 KB</td></tr>
+        <tr><td class="mono">js/finanzas-render.js</td><td>Dibuja: arma las tablas, los gráficos y los números de arriba de cada pestaña.</td><td class="num">91 KB</td></tr>
+        <tr><td class="mono">js/i18n.js</td><td>El selector de idioma. Sumar un idioma es un archivo nuevo, no tocar esto.</td><td class="num">9 KB</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="group">
+    <h3>Datos · los números y su vocabulario</h3>
+    <p class="gnote">Un club es un archivo. El resto son las tablas compartidas que hacen que 41 clubes distintos se puedan comparar entre sí.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">data/&lt;club&gt;-data.js</td><td><strong>El archivo más importante del proyecto.</strong> Uno por club: cada línea del balance, su monto, su categoría, el tipo de cambio, la deuda, la caja, y un comentario largo arriba que explica de dónde salió cada número y qué se decidió al cargarlo.</td><td class="num">41 archivos</td></tr>
+        <tr><td class="mono">data/clubs.js</td><td>La lista de clubes: nombre, país, moneda, si su ejercicio cierra en diciembre o a mitad de año. Agregar un club acá lo hace aparecer solo en el selector.</td><td class="num">15 KB</td></tr>
+        <tr><td class="mono">data/category-map.js</td><td>El vocabulario compartido. Traduce "Cuotas Sociales", "Mensalidades de associados" y "Socios" a una misma categoría interna, que es lo que permite comparar un club argentino con uno brasileño.</td><td class="num">5 KB</td></tr>
+        <tr><td class="mono">data/currency-map.js</td><td>Cómo se muestra cada moneda y qué rango de tipo de cambio es plausible para cada una.</td><td class="num">9 KB</td></tr>
+        <tr><td class="mono">data/site-labels.js</td><td>Qué etiquetas son del sitio y por lo tanto se traducen. Los rubros que salen del balance de un club nunca se traducen.</td><td class="num">3 KB</td></tr>
+        <tr><td class="mono">data/lang/</td><td>El registro de idiomas y el diccionario inglés.</td><td class="num">10 KB</td></tr>
+        <tr><td class="mono">tools/generate-club-index.js</td><td>Genera desde los datos la lista de "qué es real por club" que va en <code>index.html</code>. Se corre al onboardear; <code>--check</code> avisa si quedó desactualizada.</td><td class="num">nuevo</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="group">
+    <h3>Instrucciones · lo que una sesión tiene que respetar</h3>
+    <p class="gnote">Esto es lo que evita que cada sesión vuelva a decidir de cero cosas que ya se decidieron. Los tres skills no se descubren solos porque este repo está anidado dentro de otro: hay que abrirlos a mano.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">skills/start-session</td><td>El checklist de arranque y cierre de cualquier sesión: qué leer y en qué orden, qué NO leer, cómo verificar, qué documentar al terminar y la regla de git. Es por acá que se empieza.</td><td class="num">nuevo</td></tr>
+        <tr><td class="mono">CLAUDE.md</td><td>Las reglas permanentes del proyecto: dónde va cada PDF, qué skill leer antes de qué tarea, qué preguntarte antes de asumir algo.</td><td class="num">14 KB</td></tr>
+        <tr><td class="mono">CONVENCIONES.md</td><td>25 reglas vigentes de datos y de interfaz, varias pedidos explícitos tuyos. Se lee antes de tocar el sitio.</td><td class="num">22 KB</td></tr>
+        <tr><td class="mono">ARQUITECTURA.md</td><td>Qué hace cada archivo y cómo funciona el motor. Se lee cuando se toca el motor o se agrega un club.</td><td class="num">8 KB</td></tr>
+        <tr><td class="mono">skills/club-sourcing</td><td>Cómo BUSCAR el balance de un club que todavía no tiene nada: qué regulador mirar según el país, y qué caminos ya se probaron y no sirven, para no repetirlos.</td><td class="num">33 KB</td></tr>
+        <tr><td class="mono">skills/club-data-mapping</td><td>Cómo LEER un balance y pasarlo al esquema del sitio: qué categoría le toca a cada rubro, qué tipo de cambio usar, cómo verificar antes de cargar.</td><td class="num">73 KB</td></tr>
+        <tr><td class="mono">skills/club-or-year-onboarding</td><td>Cómo ENCARAR la sesión: qué confirmar con vos antes de arrancar y qué partes del sitio ya existen para reusar.</td><td class="num">64 KB</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="group">
+    <h3>Registro · lo que ya pasó</h3>
+    <p class="gnote">Ninguno de estos hace falta para trabajar. Existen para poder contestar "¿por qué está así?" sin adivinar, y para que la próxima sesión no repita una búsqueda que ya falló.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">CHANGELOG.md</td><td>Qué cambió en cada versión, en pocas líneas. Para "¿cuándo se cargó tal cosa?". La diferencia con el de abajo es qué contesta cada uno: éste contesta QUÉ y CUÁNDO, el otro POR QUÉ.</td><td class="num">68 KB</td></tr>
+        <tr><td class="mono">Proyecto Boca.md</td><td><strong>El diario del proyecto.</strong> Versión por versión, el razonamiento completo de cada decisión: qué se probó, qué se descartó y por qué. Sirve para reconstruir el "por qué" de algo viejo, no para trabajar. Son 119 versiones más el "Volumen 0" con el planteo original y las Versiones 1 a 9 del MVP. El nombre quedó de cuando el sitio era solo de Boca.</td><td class="num">447 KB</td></tr>
+        <tr><td class="mono">fuentes-por-club.md<br>+ fuentes/</td><td>Qué se buscó para cada club, qué se encontró y qué no, con la fecha del último chequeo y el motivo exacto de cada intento fallido. Un índice más 208 archivos, uno por club.</td><td class="num">208 archivos</td></tr>
+        <tr><td class="mono">QUE-ES-REAL-historico.md</td><td>La versión escrita a mano de "qué es real por club", congelada el día que esa sección pasó a generarse. No se actualiza más: queda como red de seguridad por si algún dato no estuviera en el archivo de su club.</td><td class="num">16 KB</td></tr>
+        <tr><td class="mono">dudas-por-club.md</td><td>Las preguntas que quedaron abiertas de verdad, para escribirles a los clubes. No es una lista de pendientes: es una lista de cosas que el documento no aclara.</td><td class="num">19 KB</td></tr>
+        <tr><td class="mono">Clubes/</td><td>Los PDF originales de cada club y su transcripción completa a texto, uno al lado del otro. 83 transcripciones, 8,6 MB.</td><td class="num">450 archivos</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- ============ 1 ============ -->
+<section class="flow">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">01</span><h2>Arrancar una sesión</h2></div>
+    <p>Una sesión llega en frío: no sabe qué clubes hay ni qué criterios ya se decidieron. Lo que importa no es qué archivos existen, sino <strong>cuáles hay que leer siempre y cuáles sólo si la tarea los toca</strong>.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 760 290" role="img" aria-label="Una sesión lee 73 KB obligatorios antes de poder actuar; otros 590 KB se consultan sólo si la tarea los toca.">
+      <defs>
+        <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+
+      <rect x="8" y="116" width="112" height="52" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="64" y="138" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">sesión</text>
+      <text x="64" y="154" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">nueva</text>
+
+      <line x1="120" y1="142" x2="188" y2="142" stroke="currentColor" stroke-width="1.5" marker-end="url(#a1)"/>
+
+      <rect x="190" y="42" width="196" height="200" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
+      <text x="288" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="var(--accent)" font-weight="600">SIEMPRE · 73 KB</text>
+
+      <rect x="206" y="60" width="164" height="42" rx="2" fill="var(--accent)" opacity=".12"/>
+      <text x="216" y="78" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">index.html: estado</text>
+      <text x="216" y="94" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">y to-do — 51 KB</text>
+
+      <rect x="206" y="112" width="164" height="26" rx="2" fill="var(--accent)" opacity=".12"/>
+      <text x="216" y="130" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">CONVENCIONES — 22 KB</text>
+
+      <text x="216" y="166" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">qué hay cargado,</text>
+      <text x="216" y="181" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">qué falta, y las 25</text>
+      <text x="216" y="196" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">reglas que rigen.</text>
+      <text x="216" y="222" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--accent)" font-weight="600">→ ya puede trabajar</text>
+
+      <line x1="386" y1="142" x2="452" y2="142" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55" marker-end="url(#a1)"/>
+      <text x="419" y="134" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si toca</text>
+
+      <rect x="454" y="42" width="298" height="200" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55"/>
+      <text x="603" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="currentColor" opacity=".6" font-weight="600">A DEMANDA · 590 KB</text>
+
+      <text x="470" y="66" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">3 skills — 171 KB</text>
+      <text x="470" y="82" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si toca datos de un club</text>
+      <text x="470" y="108" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">ARQUITECTURA — 8 KB</text>
+      <text x="470" y="130" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">fuentes-por-club — 33 KB</text>
+      <text x="470" y="152" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">CHANGELOG — 66 KB</text>
+      <text x="470" y="176" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">Proyecto Boca — 447 KB</text>
+      <text x="470" y="192" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">119 versiones + el origen</text>
+      <text x="470" y="218" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">208 archivos en fuentes/</text>
+    </svg>
+    <figcaption>El bloque sólido es el piso obligatorio de cada sesión: con eso alcanza para trabajar. El punteado se abre sólo cuando la tarea lo pide.</figcaption>
+  </figure>
+
+  <div class="col">
+    <div class="leak solved">
+      <h3>Sobre el tamaño de Proyecto Boca.md</h3>
+      <p>Son 447 KB y crece una entrada por versión, sin partirse nunca. <strong>Eso está bien y no hay que tocarlo.</strong> Un diario que sólo se agrega y se consulta buscando una palabra no cuesta nada por ser largo: nadie lo lee de punta a punta. Lo que sí importa es que esté en el repo, y desde la Versión 119 lo está entero, origen incluido.</p>
+      <p>Si alguna vez se parte, que sea por año y de forma mecánica, no por criterio. La alternativa que usa la industria para historia de decisiones es un archivo por decisión en vez de un diario, pero cambiar a eso ahora significaría desarmar 119 versiones de narrativa continua para ganar poco.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section class="flow">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">02</span><h2>Onboardear un club</h2></div>
+    <p>Es el proceso que más se va a repetir: la meta son ~10 clubes por cada una de 10 regiones, y van 41.</p>
+    <p>El paso 1 es el que menos cuesta y más ahorra: <strong>medir cuánto texto tiene el PDF antes de tocar nada</strong>. Separa un PDF con texto real (barato de leer) de un escaneo (caro: hay que reconocer los caracteres, o leerlo como imagen). Medir los 8 PDFs de Brasil pendientes tardó segundos y confirmó que ninguno es escaneo.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 880 268" role="img" aria-label="Pipeline de onboarding en siete pasos: medir, transcribir, mapear, verificar, cargar, registrar y documentar.">
+      <defs>
+        <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+      <text x="8" y="26" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="currentColor" opacity=".55" font-weight="600">PIPELINE</text>
+
+      <g font-family="IBM Plex Mono, monospace" font-size="11.5">
+        <rect x="8" y="44" width="104" height="58" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <text x="60" y="66" text-anchor="middle" font-weight="600" fill="currentColor">1 medir</text>
+        <text x="60" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">¿tiene texto?</text>
+        <text x="60" y="95" text-anchor="middle" font-size="10.5" fill="var(--accent)">segundos</text>
+
+        <rect x="136" y="44" width="104" height="58" rx="3" fill="var(--cost)" opacity=".12"/>
+        <rect x="136" y="44" width="104" height="58" rx="3" fill="none" stroke="var(--cost)" stroke-width="2"/>
+        <text x="188" y="66" text-anchor="middle" font-weight="600" fill="currentColor">2 transcribir</text>
+        <text x="188" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">PDF → texto</text>
+        <text x="188" y="95" text-anchor="middle" font-size="10.5" fill="var(--cost)">paso más caro</text>
+
+        <rect x="264" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="316" y="66" text-anchor="middle" font-weight="600" fill="currentColor">3 mapear</text>
+        <text x="316" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">rubro →</text>
+        <text x="316" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">categoría</text>
+
+        <rect x="392" y="44" width="104" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+        <text x="444" y="66" text-anchor="middle" font-weight="600" fill="currentColor">4 verificar</text>
+        <text x="444" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">suma vs.</text>
+        <text x="444" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">total impreso</text>
+
+        <rect x="520" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="572" y="66" text-anchor="middle" font-weight="600" fill="currentColor">5 cargar</text>
+        <text x="572" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">data/&lt;club&gt;</text>
+        <text x="572" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">-data.js</text>
+
+        <rect x="648" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="700" y="66" text-anchor="middle" font-weight="600" fill="currentColor">6 registrar</text>
+        <text x="700" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">clubs.js</text>
+        <text x="700" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">1 línea</text>
+
+        <rect x="776" y="44" width="96" height="58" rx="3" fill="var(--good)" opacity=".1"/>
+        <rect x="776" y="44" width="96" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+        <text x="824" y="66" text-anchor="middle" font-weight="600" fill="currentColor">7 documentar</text>
+        <text x="824" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">2 archivos</text>
+        <text x="824" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">+ 1 comando</text>
+      </g>
+
+      <g stroke="currentColor" stroke-width="1.5" marker-end="url(#a2)">
+        <line x1="112" y1="73" x2="132" y2="73"/><line x1="240" y1="73" x2="260" y2="73"/>
+        <line x1="368" y1="73" x2="388" y2="73"/><line x1="496" y1="73" x2="516" y2="73"/>
+        <line x1="624" y1="73" x2="644" y2="73"/><line x1="752" y1="73" x2="772" y2="73"/>
+      </g>
+
+      <path d="M60,102 L60,146 L316,146" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a2)" color="var(--accent)"/>
+      <text x="70" y="140" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--accent)">si es escaneo: reconocer caracteres primero, o dejarlo para después</text>
+
+      <path d="M444,102 L444,190 L188,190" fill="none" stroke="var(--cost)" stroke-width="1.5" marker-end="url(#a2)" color="var(--cost)"/>
+      <text x="200" y="184" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">no cierra → volver al documento, nunca ajustar una línea para que cierre</text>
+
+      <path d="M444,102 L444,232 L836,232" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" opacity=".6" marker-end="url(#a2)"/>
+      <text x="456" y="226" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">se contradice el documento mismo → dudas-por-club.md, y el club se carga parcial o no se carga</text>
+    </svg>
+    <figcaption>Los dos caminos de salida del paso 4 son lo que separa este proyecto de uno que "carga números": si no cierra se vuelve al documento, y si el que se contradice es el club, la contradicción se anota en vez de taparse.</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Cargar un club toca estos archivos. Los tres primeros son inevitables: son los datos. De los cinco de prosa que había, uno pasó a generarse y dos siguen a mano.</p>
+  </div>
+  <div class="tbl-wrap"><table class="ledger">
+    <thead><tr><th>Archivo</th><th>Por qué se toca</th><th class="num">¿Evitable?</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">Clubes/&lt;País&gt;/&lt;Club&gt;/…md</td><td>La transcripción del PDF. Se hace ANTES de extraer un solo número, para que cualquier revisión futura lea texto plano en vez de volver a abrir el PDF.</td><td class="num">no</td></tr>
+      <tr><td class="mono">data/&lt;club&gt;-data.js</td><td>Los datos. Es el archivo que el sitio realmente lee.</td><td class="num">no</td></tr>
+      <tr><td class="mono">data/clubs.js</td><td>Una línea: nombre, país, moneda, mes de cierre. Sin esto el club no aparece en el selector.</td><td class="num">no</td></tr>
+      <tr><td class="mono">index.html → "qué es real"</td><td>Ya NO se escribe: se genera con <code>node tools/generate-club-index.js</code>.</td><td class="num">generado</td></tr>
+      <tr><td class="mono">index.html → estado</td><td>El conteo de clubes y países. Todavía a mano.</td><td class="num">sí</td></tr>
+      <tr><td class="mono">CHANGELOG.md</td><td>La entrada de la versión.</td><td class="num">no</td></tr>
+      <tr><td class="mono">fuentes/&lt;País&gt;/&lt;Club&gt;.md</td><td>Marcar el club como cargado y la fecha del chequeo. Todavía a mano.</td><td class="num">sí</td></tr>
+      <tr><td class="mono">dudas-por-club.md</td><td>Sólo si el documento dejó una pregunta abierta de verdad.</td><td class="num">no</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="col">
+    <div class="leak">
+      <h3>Fuga 1 · resuelta hoy: lo mismo escrito cinco veces</h3>
+      <p>El comentario de cabecera de <code>data/&lt;club&gt;-data.js</code> ya explica de dónde salió cada número, qué categoría se le dio, qué tipo de cambio se usó y qué quedó sin cargar. <strong>Las tres filas marcadas "sí" repiten esa misma información en prosa, en otros archivos.</strong></p>
+      <p>Y como el <code>data/&lt;club&gt;-data.js</code> es el único que sí o sí se toca al cargar un club, es el único que no se puede desincronizar. Los otros se desactualizan solos con el tiempo.</p>
+      <p><strong>Resuelto hoy, en parte:</strong> la sección "qué es real por club" dejó de escribirse y pasa a generarse desde los propios datos con <code>node tools/generate-club-index.js</code>. Ya no es un texto paralelo que se desactualiza, es una vista de los datos. El índice contesta QUÉ hay cargado; el archivo del club sigue contestando POR QUÉ, que es lo único que no se puede derivar.</p>
+      <p><strong>Lo que queda:</strong> el conteo del bloque de estado y la línea de <code>fuentes/</code> siguen a mano. Salen con el mismo generador, apuntado a otros dos lugares.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section class="flow">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">03</span><h2>Auditar lo cargado</h2></div>
+    <p>El sitio trae su propia auditoría. <strong><code>verifyTieOuts()</code></strong> agarra cada ejercicio cargado, suma los rubros que el sitio tiene guardados, y los compara contra el total que ese balance imprime en papel. Si no coinciden, grita. <strong><code>checkFxSanity()</code></strong> revisa que cada tipo de cambio caiga en un rango plausible para su moneda, porque un tipo de cambio dado vuelta multiplica todo por el número equivocado sin que nada se vea roto.</p>
+    <p>Entre los 41 clubes hay <strong>222 de esas comparaciones</strong>, y hoy cierran las 222.</p>
+    <p>El problema era cuándo corrían. Los clubes se bajan recién cuando alguien los elige (eso es lo que hace que el sitio abra rápido), y la auditoría sólo puede revisar lo que está bajado.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 780 258" role="img" aria-label="Al abrir el sitio sólo se audita Boca; auditAll fuerza la carga de los 41 clubes y corre los 222 checks.">
+      <defs>
+        <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+
+      <text x="8" y="24" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="currentColor" opacity=".55" font-weight="600">VISITA NORMAL</text>
+      <rect x="8" y="36" width="150" height="56" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="83" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="currentColor">alguien abre</text>
+      <text x="83" y="74" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="currentColor">el sitio</text>
+
+      <line x1="158" y1="64" x2="212" y2="64" stroke="currentColor" stroke-width="1.5" marker-end="url(#a3)"/>
+
+      <rect x="214" y="36" width="150" height="56" rx="3" fill="var(--good)" opacity=".1"/>
+      <rect x="214" y="36" width="150" height="56" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+      <text x="289" y="57" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor">baja 1 club</text>
+      <text x="289" y="77" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="var(--good)">6 checks ✓</text>
+
+      <line x1="364" y1="64" x2="418" y2="64" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55" marker-end="url(#a3)"/>
+
+      <rect x="420" y="30" width="196" height="68" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".6"/>
+      <text x="518" y="52" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".75">los otros 40 clubes</text>
+      <text x="518" y="70" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".75">sólo bajan si alguien</text>
+      <text x="518" y="86" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".75">los elige a mano</text>
+
+      <line x1="390" y1="112" x2="390" y2="140" stroke="currentColor" stroke-width="1" opacity=".3"/>
+      <line x1="8" y1="126" x2="772" y2="126" stroke="currentColor" stroke-width="1" opacity=".22"/>
+
+      <text x="8" y="162" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="var(--good)" opacity=".9" font-weight="600">AUDITORÍA · ?audit=1</text>
+      <rect x="8" y="174" width="150" height="56" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+      <text x="83" y="196" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="currentColor">auditAll()</text>
+      <text x="83" y="212" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">a pedido</text>
+
+      <line x1="158" y1="202" x2="212" y2="202" stroke="var(--good)" stroke-width="1.5" marker-end="url(#a3)" color="var(--good)"/>
+      <text x="185" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--good)">fuerza</text>
+
+      <rect x="214" y="174" width="402" height="56" rx="3" fill="var(--good)" opacity=".1"/>
+      <rect x="214" y="174" width="402" height="56" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+      <text x="415" y="196" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">baja los 41 clubes y corre las 2 verificaciones</text>
+      <text x="415" y="216" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="var(--good)">222 checks ✓  ·  0 fallan</text>
+
+      <line x1="616" y1="202" x2="666" y2="202" stroke="currentColor" stroke-width="1.5" opacity=".5" marker-end="url(#a3)"/>
+      <text x="674" y="192" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">resumen</text>
+      <text x="674" y="207" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">en consola</text>
+      <text x="674" y="222" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">+ devuelto</text>
+    </svg>
+    <figcaption>Las dos vías conviven: la visita normal sigue bajando un solo club, así que el sitio abre igual de rápido. La auditoría completa se pide aparte, con <code>?audit=1</code> o llamando <code>auditAll()</code> en la consola.</figcaption>
+  </figure>
+
+  <div class="col">
+    <p style="color:var(--ink-soft);margin:22px 0 0;"><strong style="color:var(--ink);">Cómo se usa:</strong> abrí <code>financeofsports.com/?audit=1</code> y mirá la consola, o escribí <code>auditAll()</code> ahí mismo. Conviene correrlo antes de cada publicación que toque datos: es lo único que revisa los clubes que nadie está mirando.</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;">Una trampa que apareció al construirlo y que se va a repetir: el primer intento fue un verificador aparte que recalculaba los totales por su cuenta, y <strong style="color:var(--ink);">marcó 12 errores que no existían</strong> porque su fórmula no contemplaba todo lo que suma el motor real. Quedó como regla en el código: la verificación usa el motor del sitio, nunca una copia.</p>
+</section>
+
+<!-- ============ 4 ============ -->
+<section class="flow">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">04</span><h2>Cuando algo no cierra</h2></div>
+    <p>Hay dos casos que se parecen y se tratan al revés, y confundirlos es la forma más rápida de meter un dato falso en el sitio.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 760 264" role="img" aria-label="Si el error es propio se corrige; si la inconsistencia es del documento se documenta y nunca se ajusta el número.">
+      <defs>
+        <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+
+      <rect x="250" y="12" width="260" height="46" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="380" y="33" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">la suma no da el total impreso</text>
+      <text x="380" y="49" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">¿de quién es el error?</text>
+
+      <path d="M330,58 L330,84 L180,84 L180,106" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#a4)"/>
+      <path d="M430,58 L430,84 L580,84 L580,106" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#a4)"/>
+      <text x="176" y="100" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">mío</text>
+      <text x="586" y="100" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">del club</text>
+
+      <rect x="70" y="108" width="220" height="64" rx="3" fill="var(--good)" opacity=".1"/>
+      <rect x="70" y="108" width="220" height="64" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+      <text x="180" y="131" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">corregir y seguir</text>
+      <text x="180" y="150" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".75">releer la transcripción,</text>
+      <text x="180" y="164" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".75">la escala o el tipo de cambio</text>
+
+      <rect x="470" y="108" width="220" height="64" rx="3" fill="var(--cost)" opacity=".12"/>
+      <rect x="470" y="108" width="220" height="64" rx="3" fill="none" stroke="var(--cost)" stroke-width="2"/>
+      <text x="580" y="131" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">documentar, no ajustar</text>
+      <text x="580" y="150" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".75">dudas-por-club.md +</text>
+      <text x="580" y="164" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".75">comentario en el data file</text>
+
+      <line x1="580" y1="172" x2="580" y2="198" stroke="currentColor" stroke-width="1.5" marker-end="url(#a4)"/>
+      <text x="596" y="192" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">¿bloquea la carga?</text>
+
+      <rect x="392" y="200" width="176" height="46" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="480" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor">sí → no se carga</text>
+      <text x="480" y="236" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">Deportes Tolima</text>
+
+      <rect x="584" y="200" width="176" height="46" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="672" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor">no → carga parcial</text>
+      <text x="672" y="236" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">Mirassol, sin patrimonio</text>
+
+      <path d="M560,172 L480,196" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55" marker-end="url(#a4)"/>
+      <path d="M600,172 L664,196" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55" marker-end="url(#a4)"/>
+    </svg>
+    <figcaption>La rama derecha es la que hay que proteger: cuando el que se contradice es el club, el número impreso se respeta y la contradicción se anota. Coritiba entró así, con los R$ 999 en que dos partes de su propio balance no coinciden.</figcaption>
+  </figure>
+</section>
+
+<div class="legend">
+  <span><span class="swatch" style="background:var(--accent)"></span> paso barato que evita gasto después</span>
+  <span><span class="swatch" style="background:var(--good)"></span> verificado / resuelto</span>
+  <span><span class="swatch" style="background:var(--cost)"></span> donde se concentra el costo</span>
+</div>
+
+<!-- ============ fixes ============ -->
+<section class="fixes">
+  <div class="col" style="margin-bottom:22px;">
+    <h2 id="riesgos">Riesgos de escala</h2>
+    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Los dos primeros ya están arreglados; los otros siguen abiertos, ordenados por lo que devuelven sobre lo que cuestan.</p>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3>La auditoría sólo veía el club abierto <span style="color:var(--good);font-weight:600;">— arreglado</span></h3>
+      <p><strong>Qué se rompía a escala:</strong> los clubes se cargan por demanda y las verificaciones sólo revisan lo cargado, así que al abrir el sitio corrían 6 de 222 checks. Un dato mal cargado en un club que nadie mira era invisible. Con 1000 clubes, nadie mira ninguno.</p>
+      <p style="margin-top:8px;"><strong>Cómo quedó:</strong> <code>auditAll()</code> fuerza la carga de todos y corre las 222, a pedido con <code>?audit=1</code>. La carga por demanda no se tocó.</p>
+    </div>
+    <div><span class="effort done">hecho</span></div>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3>"Qué es real por club" se escribía a mano <span style="color:var(--good);font-weight:600;">— arreglado</span></h3>
+      <p><strong>Qué se rompía a escala:</strong> un párrafo por club dentro de <code>index.html</code>, repitiendo lo que el archivo de cada club ya decía. Crecía sin límite, y era la copia que se desactualizaba.</p>
+      <p style="margin-top:8px;"><strong>Cómo quedó:</strong> <code>tools/generate-club-index.js</code> la genera desde los datos. El índice contesta QUÉ hay cargado; el archivo del club contesta POR QUÉ. Onboardear un club pasó de tocar 6 archivos de documentación a 2, y la prosa vieja quedó archivada en <code>QUE-ES-REAL-historico.md</code>.</p>
+    </div>
+    <div><span class="effort done">hecho</span></div>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3>El motor tiene una lista de clubes escrita a mano</h3>
+      <p><strong>Qué se rompe a escala:</strong> la función que busca el presupuesto de un ejercicio es un <code>if</code> que sólo conoce a Racing y River. Cargar un club con presupuesto <em>y</em> balance del mismo año obliga a editar el motor, cuando debería alcanzar con el archivo del club. Los siete clubes de Brasil ya declaran una tabla que nadie lee. Es el último lugar donde sobrevive el patrón "agregar un club = editar el código", que el resto del proyecto ya eliminó.</p>
+    </div>
+    <div><span class="effort s">sesión corta</span></div>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3>Los tipos de cambio se repiten club por club</h3>
+      <p><strong>Qué se rompe a escala:</strong> el cierre del 31/12/2024 para el real (R$ 6,1923) está escrito a mano en cinco archivos. Si se corrige, hay que acordarse de los cinco, y nada avisa si uno queda distinto. Con 1000 clubes son decenas de copias por cada moneda y fecha. Una tabla por moneda y fecha de cierre lo diría una vez, y el tipo de cambio que declara el propio balance de un club seguiría ganando, como ya manda la regla.</p>
+    </div>
+    <div><span class="effort s">sesión corta</span></div>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3>La línea de estado de <code>fuentes/</code> sigue a mano</h3>
+      <p><strong>Qué se rompe a escala:</strong> quedó como el último resto de la fuga 1. Cada club tiene un archivo en <code>fuentes/&lt;País&gt;/</code> con una línea de estado y una fecha de último chequeo que se escriben a mano al onboardear. Son 208 archivos hoy. El mismo generador que ya emite el índice de clubes puede emitir también esa línea; el contenido real de cada archivo (qué se probó, qué falló, qué ángulo queda) sigue siendo a mano, porque no es derivable de nada.</p>
+    </div>
+    <div><span class="effort m">sesión propia</span></div>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3>La pestaña Fuentes es la misma duplicación, pero visible</h3>
+      <p><strong>Qué se rompe a escala:</strong> es una tabla escrita a mano con seis filas argentinas (IGJ, INDEC, actas de asamblea de Boca) más un párrafo único que nombra club por club. Con 41 clubes de seis países ya no es cierta. Acá el costo no es tiempo sino credibilidad: un sitio cuya promesa es "todo dato cita su origen" muestra una lista de orígenes que no corresponde a sus datos. Se arregla con el mismo generador, apuntado a <code>sources{}</code>.</p>
+    </div>
+    <div><span class="effort m">sesión propia</span></div>
+  </div>
+</section>
+
+<footer>
+  Medido sobre el repo al 13 sep 2026, Versión 120. 41 clubes · 6 países · 222 checks · 83 transcripciones · 208 archivos en <code>fuentes/</code> · 8,6 MB de documentos fuente.<br>
+  Los números salen de correr el sitio, no de estimarlos: los 222 checks se contaron con <code>auditAll()</code>.<br>
+  Este documento vive también en el repo, como <code>COMO-CORRE-EL-PROYECTO.html</code>.
+</footer>
+
+</div>
