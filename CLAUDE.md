@@ -156,9 +156,11 @@ resumen: si se resume o se salta contenido "poco relevante", se pierde
 justamente el dato suelto que capaz hace falta en una sesión futura.
 
 Una vez que el `.md` está armado, se usa ESE archivo (no el PDF) para extraer
-los datos que se vayan a cargar a `yearsRaw`/`nativeFinancialsBoca`/etc., y
-para cualquier experimentación de formato que pida Guido más adelante sobre
-ese mismo documento.
+los datos que se vayan a cargar a `<club>RevenueLinesByYear`/
+`<club>ExpenseLinesByYear`/etc. (ver `data/river-data.js` para el shape, el
+mismo que usan todos los clubes incluida Boca desde la Versión 102), y para
+cualquier experimentación de formato que pida Guido más adelante sobre ese
+mismo documento.
 
 ## Precisión antes que velocidad
 

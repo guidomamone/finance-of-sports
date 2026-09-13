@@ -155,6 +155,71 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   verificar los clubes nuevos de esta sesión — no es de esta sesión, viene de una carga anterior de
   Racing. Queda como to-do de limpieza, no es urgente (no afecta ningún número mostrado).
 
+## Club América (Ollamani, S.A.B.)
+
+- **Dos tipos de cambio de cierre distintos para la MISMA fecha, dentro del MISMO reporte**: el
+  Reporte Financiero BMV 2025 (`Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.pdf`)
+  declara $18.0012 MXN/USD al 31/12/2025 en la sección MD&A (pág. 7, comentario de "Gastos
+  financieros, neto") pero $17.9528 MXN/USD para la MISMA fecha en la Nota a los estados financieros
+  auditados (pág. 104, footnote de la misma partida). Se usó $17.9528 (la cifra de la Nota formal)
+  para `data/clubamerica-data.js`, pero no se encontró una explicación de por qué el mismo documento
+  trae dos cifras — a quién preguntarle: Ollamani Investor Relations (contacto en
+  ollamani.com.mx/reportes-3/, o el propio `ir@ollamani.com.mx` si existe, no confirmado).
+- **¿Vale la pena cargar el Ejercicio 2024 (11 meses) como 2do punto de la serie?**: PDF ya
+  descargado (`reporte-financiero-ollamani-2024-auditado.pdf`), cubre el período inicial de la
+  compañía (1/2/2024 a 31/12/2024, no un año calendario completo por el spin-off de fin de enero
+  2024) — no es una duda para el club, es una decisión de producto para Guido (¿mostrar un ejercicio
+  de 11 meses al lado de uno de 12 sin aclarar la diferencia de longitud confunde más de lo que
+  aporta?).
+
+## Deportes Tolima (hallazgo de esta sesión — NO se cargó al sitio por esto)
+
+- **El resultado neto (utilidad) del Ejercicio 2025 tiene 3 cifras distintas, sin poder reconciliar
+  ninguna con confianza**: (1) la vista SIIS resume "Resultado del ejercicio $359,205 M" (ver
+  `fuentes/Colombia/Deportes Tolima.md`); (2) el propio documento (`estados-financieros-2025.pdf`,
+  Nota 18(3), tabla "RESUMEN ESTADOS DE RESULTADOS AÑO 2011 A 2025 — UTILIDADES NETAS DE LOS
+  EJERCICIOS NIFF") da $914.330.454 PESOS COMPLETOS para 2025 (= $914,330454 M, verificado que esta
+  tabla usa pesos completos y no miles, cruzando la magnitud de varios años contra lo esperable —
+  ej. 2019 daría $5.879.763.018.000 M si fuera miles, un número absurdo); (3) sumando línea por línea
+  las Notas 19 (Ingresos, $49.330,876 M, EXACTO) - 20 (Gastos de Administración, $5.110,640 M) - 21
+  (Gastos de Ventas, $39.666,001 M) + Nota 22 (Ingresos/Gastos no operacionales netos, -$730,592 M) -
+  Nota 23 (Impuesto de renta, $638,668 M) da un resultado de ~$3.184,975 M — un TERCER número,
+  distinto de los otros dos por un orden de magnitud. El documento descargado (`Clubes/Colombia/
+  Deportes Tolima/estados-financieros-2025.pdf`, transcripción completa en
+  `estados-financieros-2025.md` en la misma carpeta) trae solo las NOTAS a los estados financieros
+  (igual que Once Caldas), no el Estado de Resultado Integral primario como tabla aparte, así que no
+  hay forma de confirmar cuál de las 3 cifras es la correcta con lo que se tiene. La Nota 2 del
+  documento explica que el club adoptó el Grupo 1 del DUR 2420 con transición 1-ene-2023 (decisión de
+  enero de 2024) — es posible que la discrepancia venga de ahí (cifras bajo distinto marco técnico
+  según qué tabla se mire), pero no se pudo confirmar. **Pregunta para el club/SIIS**: ¿cuál es el
+  resultado neto oficial del Ejercicio 2025 (año calendario 2025), y por qué la tabla histórica de la
+  Nota 18(3) da una cifra distinta a la que muestra SIIS? Se necesitaría el Estado de Resultado
+  Integral primario (no solo las notas) para resolver esto — re-descargar de SIIS
+  (siis.ia.supersociedades.gov.co, NIT 890700863) buscando si hay otro radicado con la tabla completa.
+- Los ingresos SÍ están confirmados con alta confianza ($49.330,876 M, Nota 19, coincide exacto con
+  la vista SIIS) — si en el futuro se resuelve la duda de arriba, la carga de este club puede
+  retomarse rápido, ya está toda la categorización de ingresos hecha (ver
+  `estados-financieros-2025.md` para el detalle completo de las Notas 19-23).
+
+## Once Caldas (hallazgo de esta sesión, no bloqueó la carga pero queda una pregunta)
+
+- **El PAT (resultado del ejercicio) 2025 está confirmado triple ($9.138,546 M — Nota 2, Informe del
+  Revisor Fiscal, y vista SIIS coinciden), pero no se pudo reconstruir línea por línea desde las
+  Notas 20-27 sin usar un residuo**: sumando Ingresos (Nota 20) - Costo de Ventas (Nota 21) - Gastos
+  de Administración (Nota 22) - Gastos de Ventas (Nota 23) + Ingresos Financieros (Nota 24) + Otros
+  Ingresos (Nota 25) - Gastos Financieros (Nota 26) - Otros Gastos (Nota 27) da un PRETAX de
+  $13.446,121 M, que NO coincide con lo que el propio documento llama "Utilidad contable" en su nota
+  de conciliación fiscal (Nota 15, $9.846,710 M) — una diferencia de ~$3.599 M sin explicación
+  disponible en las notas descargadas (no hay una línea de "ganancia extraordinaria" ni similar,
+  pese a que la compañía sigue en un acuerdo de reestructuración de pasivos desde 2012, lo que
+  sugiere que podría haber un ítem de este tipo no desglosado en el documento). Se cargó el club de
+  todos modos (ver `data/oncecaldas-data.js`, comentario de cabecera) usando el PAT confirmado como
+  ancla y despejando `tax` como residuo (pretax línea por línea menos PAT confirmado), documentado
+  explícito en el código como una aproximación, no un número impreso. **Pregunta para el club/SIIS**:
+  ¿qué explica la diferencia entre la "Utilidad contable" de la Nota 15 ($9.846,710 M) y la suma de
+  Ingresos/Gastos operativos + financieros de las Notas 20-27 (~$13.446,121 M pretax)? Se necesitaría
+  el Estado de Resultado Integral primario (no solo las notas) para confirmar.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

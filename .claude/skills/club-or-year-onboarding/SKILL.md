@@ -96,22 +96,30 @@ Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
   mostrando, llamá a esto, nunca hardcodees `'USD'` ni asumas la moneda de un club.
 - **`toDisplayValue(value, meta, targetCurrency)`**: conversión pura, ya genérica, no toca.
 - **`simplifiedReportForGeneric(clubId, year)`** + `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
-  `_EXPENSE_BUCKETS`: el "Formato simplificado" para cualquier club que use el motor genérico
-  (River/Racing, con `revenueLines`/`expenseLines` + `normalizedCategory`). Agrupa por
-  `normalizedCategory` con un catch-all "Otros". NO hace falta escribir un
-  `simplifiedReportForRiver`/`simplifiedReportForRacing` a mano como si fuera Boca
-  (`simplifiedReportForBoca`, que SÍ es a mano porque Boca no tiene `normalizedCategory` en sus
-  datos). Si un club nuevo necesita una categoría que no está en los buckets, agregala a la lista
-  compartida (afecta a todos los clubes del motor genérico, que es lo que se quiere, buckets
-  consistentes entre clubes es el objetivo de "Formato simplificado").
-- **Toggle USD/ARS y Formato del club/simplificado, visibilidad**: gateada por
-  `clubs[currentClub].country === 'AR'` (`refreshAllForClub()`), no por una lista de ids. Un club
-  nuevo argentino hereda el toggle automáticamente con solo tener sus datos en el formato correcto
-  (ver bullet siguiente), no hace falta tocar `refreshAllForClub()`.
-- **Para que el toggle funcione de verdad, `amountNative` tiene que estar en la moneda NATIVA del
-  club** (ARS, para los 3 clubes argentinos de hoy), no pre-convertido a USD, ver
-  `club-data-mapping` sección "Guardar amountNative en ARS nativo". Este es el cambio de fondo que
-  habilitó todo lo demás en la Versión 32.
+  `_EXPENSE_BUCKETS`: el "Formato simplificado" para CUALQUIER club (todos usan el motor genérico
+  desde la Versión 102, Boca incluida), con `revenueLines`/`expenseLines` + `normalizedCategory`.
+  Agrupa por `normalizedCategory` con un catch-all "Otros". NO hace falta escribir un
+  `simplifiedReportFor<Club>` a mano para ningún club — ese patrón existió para Boca
+  (`simplifiedReportForBoca`) hasta la Versión 102, cuando se borró junto con el resto de su motor
+  Boca-only. Si un club nuevo necesita una categoría que no está en los buckets, agregala a la lista
+  compartida (afecta a todos los clubes por igual, que es lo que se quiere, buckets consistentes
+  entre clubes es el objetivo de "Formato simplificado").
+- **Toggle de moneda [nativa/USD], visibilidad (Versión 103, generalizado desde `clubs[clubId].country
+  === 'AR'`)**: `populateCurrencyToggle(clubId)` en `index.html` arma el toggle dinámicamente a
+  partir de `clubs[clubId].reportingCurrency` — un club nuevo lo hereda automático con solo tener
+  `reportingCurrency` seteado en `data/clubs.js` y sus datos en el formato correcto (ver bullet
+  siguiente), no hace falta tocar `refreshAllForClub()`. Si `reportingCurrency` es `'USD'` (ej.
+  Ecuador, dolarizado), el toggle se esconde entero, no hay nada que togglear. Ver el comentario de
+  cabecera de `data/currency-map.js` para el modelo completo.
+- **"Formato del club"/"Formato simplificado" (`simplifyToggleWrap`), visibilidad**: SIEMPRE visible
+  para cualquier club desde la Versión 103 (antes compartía el gate de país con el toggle de
+  moneda por error — no tiene nada que ver con la moneda, depende solo de que el club tenga
+  `normalizedCategory` en sus líneas, que todos tienen desde que Boca se migró al motor genérico en
+  la Versión 102).
+- **Para que el toggle de moneda funcione de verdad, `amountNative` tiene que estar en la moneda
+  NATIVA del club** (la que declara `reportingCurrency`), no pre-convertido a USD, ver
+  `club-data-mapping` sección 5. Este es el cambio de fondo que habilitó todo lo demás en la Versión
+  32, generalizado a cualquier moneda en la Versión 103.
 - **`computeYearGeneric(clubId, year)`**: agnóstico de moneda a propósito, solo suma lo que hay en
   `amountNative`, sin convertir. La conversión pasa SIEMPRE en la capa de display (funciones que
   llaman a `yearMetaFor`), nunca acá. Si tocás esta función para sumarle algo, mantené esa
@@ -157,10 +165,16 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
   `data/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
   solo tiene `clubs.js`/`category-map.js`/`boca-data.js`/`js/finanzas-calc.js`/
   `js/finanzas-render.js`, porque Boca es el club default). En cambio:
-  1. Sumá una entrada a `CLUB_DATA_SCRIPT_SRC` (cerca de `let currentClub = 'boca';`, en
-     index.html): `{ river: 'data/river-data.js', racing: 'data/racing-data.js', <club>:
-     'data/<club>-data.js' }`. Con solo esto, `loadClubData(clubId)` ya sabe inyectar el `<script>`
-     la primera vez que alguien elige ese club en `clubSelect`.
+  1. NADA que tocar en index.html para esto (Versión 112, reemplaza el mapa `CLUB_DATA_SCRIPT_SRC`
+     que había que editar a mano en cada onboarding — con 1000 clubes de destino, un mapa así se
+     vuelve un artefacto de cientos/miles de líneas y una fuente segura de typos/colisiones entre
+     agentes en paralelo). `loadClubData(clubId)` construye el path directo:
+     `'data/' + clubId + '-data.js'`. Con que tu archivo se llame así (que ya es la convención de
+     TODOS los clubes cargados hasta ahora, sin excepción), alcanza — `loadClubData` ya sabe
+     inyectar el `<script>` la primera vez que alguien elige ese club en `clubSelect`. Si alguna vez
+     un club necesita un nombre de archivo distinto por algún motivo real, agregá una entrada a
+     `CLUB_DATA_SCRIPT_OVERRIDE` (cerca de `loadClubData`, en index.html) en vez de volver al mapa
+     completo.
   1b. Sumá la entrada de identidad del club a `clubs{}` en `data/clubs.js` (`id`/`name`/
      `displayName`/`country`/`reportingCurrency`/`fiscalYearStart`, copiá el shape de cualquier
      club ya cargado). `displayName` (Versión 101) es el nombre CORTO que se muestra en el
@@ -185,6 +199,16 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
      porque los 3 solo se LEEN para el club actualmente elegido (después de que su propio archivo ya
      cargó), a diferencia de `clubs{}` (punto 1b), que hace falta para TODOS los clubes desde el
      arranque.
+
+     `gestionesByClub.<club>` YA NO ES ESTRICTAMENTE NECESARIO agregarlo con contenido real
+     (Versión 112: el toggle "Por gestión" de Finanzas está oculto — Guido, escalando a 1000
+     clubes: "i dont care anymore about the Por Gestión toggle" — y `renderInicioStats()`/
+     `currentGestionKey()` ya degradan solos a "Sin dato" si `gestionesByClub[clubId]` no existe o
+     está vacío, en vez de tirar `TypeError` como pasaba antes de esa versión). Sigue siendo mejor
+     agregar una entrada real cuando SE CONOCE la gestión/presidencia (clubes argentinos con
+     historia conocida), pero para un club nuevo sin esa info confirmada (la mayoría de los clubes
+     fuera de Argentina onboardeados hasta ahora) ya no hace falta inventar una entrada sintética
+     "Gestión actual" solo para evitar un crash — podés dejarlo sin tocar directamente.
   2. `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` (index.html) NO necesitan
      ningún cambio manual: leen `CLUB_GENERIC_DATA[clubId].pasesData` (etc.) directo, y tu
      `data/<club>-data.js` ya se autorregistra ahí (`window.CLUB_GENERIC_DATA.<club> = {...}`, ver
@@ -729,3 +753,30 @@ permiso a Guido, si:
 Lo que se aprenda sobre CÓMO leer un PDF fuente (trampas de escaneo, filas engañosas, cómo
 consultarle a Guido) va en `club-data-mapping/SKILL.md` secciones 8-11 (movido ahí en la Versión 62,
 ver sección 0 arriba), no acá.
+
+## 16. RESUELTO en el motor (Versión 112): `gestionesByClub[clubId]` vacío/inexistente ya no rompe nada
+
+Encontrado originalmente al cargar Once Caldas/Envigado (Versión 110, primeros clubes colombianos,
+sociedades anónimas con Representante Legal en vez de un club asociativo con presidente electo — no
+aplica el concepto de "gestión" en el sentido argentino). El fix de esa versión fue "del lado de los
+datos" (agregar una entrada sintética `{ actual: {...} }` por club) — funcionaba, pero dependía de
+que CADA sesión de onboarding futura se acordara de hacerlo, exactamente el tipo de convención que
+no escala a 1000 clubes.
+
+Versión 112 (Guido, evaluando qué hacía falta arreglar antes de seguir escalando: "either get rid
+of it or hide it" sobre el toggle "Por gestión") lo resolvió de raíz en 2 pasos:
+1. El toggle "Año a año"/"Por gestión" de Finanzas está OCULTO (`#viewToggle`,
+   `style="display:none"` en index.html) — ya no es alcanzable por ningún visitante, mismo criterio
+   que las pestañas Pases/Resultados/Comparar (Versión 56).
+2. Más importante: se encontró que aun con el toggle oculto, `renderInicioStats()` (Inicio, la
+   PRIMERA pantalla que ve cualquier visitante) seguía leyendo `gestionesByClub[currentClub][key]`
+   sin guardas — un club onboardeado sin NINGUNA entrada real rompía Inicio igual. Se hizo
+   defensivo en el motor: `currentGestionKey()` (`js/finanzas-calc.js`) y todo lector de
+   `gestionesByClub[clubId]` en `js/finanzas-render.js` ahora usan `|| {}`, y `renderInicioStats()`
+   degrada a "Sin dato" en los 4 stats si no hay ninguna gestión, en vez de tirar `TypeError`.
+
+**Consecuencia práctica para onboarding futuro**: ya NO hace falta agregar la entrada sintética
+`gestionesByClub.<club> = { actual: {...} }` solo para evitar un crash — podés dejarlo sin tocar. Si
+se conoce la gestión/presidencia real de un club (clubes argentinos con historia confirmada), seguí
+agregándola igual, esa parte del dato sigue siendo válida y útil; lo que cambió es que YA NO ES
+OBLIGATORIO inventar un placeholder solo por robustez técnica.

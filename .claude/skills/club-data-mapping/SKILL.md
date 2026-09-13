@@ -121,11 +121,14 @@ Esto varió entre clubes ya cargados, y es intencional, no es una inconsistencia
   Jugadores" (gasto) como dos líneas ordinarias separadas, sin netear. El sitio las carga IGUAL,
   separadas, no hay una línea "ganancia neta por pases" en el documento, así que inventar un
   neteo sería menos fiel que dejarlas como están.
-- **Boca** (`nativeFinancialsBoca`, no el motor genérico): el balance auditado SÍ reporta 5 líneas
-  brutas de transferencias (altas, bajas, rescisiones, etc.) que el sitio neteo a mano en
-  "Ganancia por venta de jugadores", porque ahí el objetivo era reconstruir la cadena
-  Revenue→EBITDA→EBIT del estilo SwissRamble, y esas 5 líneas brutas no tienen equivalente en esa
-  cadena si se dejan sueltas.
+- **Boca 2025** (`bocaRevenueLinesByYear`/`bocaExpenseLinesByYear`, motor genérico desde la Versión
+  102): el balance auditado reporta las líneas brutas de transferencias/rescisión (ingreso) y sus
+  costos asociados (gasto) como líneas ordinarias de `revenueLines`/`expenseLines`
+  (`normalizedCategory:'player_sales'` para las de ingreso), SIN netear — mismo criterio que Racing,
+  reflejando que la pág. 76 del balance las trata como Recursos/Gastos ordinarios, no aparte. Hasta
+  la Versión 102 el sitio SÍ las neteaba a mano en "Ganancia por venta de jugadores"
+  (`meta.profitOnPlayerSales`), con un comentario que decía que esa era "la convención del resto del
+  sitio" — resultó ser incorrecto (ningún otro club migrado hace ese neteo), se corrigió.
 
 Regla general: mirá primero si el DOCUMENTO FUENTE neteo o no. Si no neteo, no netees vos tampoco,
 replicar la estructura real del club es más importante que uniformar entre clubes (para eso
@@ -145,14 +148,25 @@ Cuando un sub-grupo del documento no tiene un total propio impreso (ej. "Canjes"
 subtítulo dentro de una tabla plana, sin fila de total), calculá su `value` como la suma de sus
 `items`, no lo dejes en 0 ni inventes un número.
 
-## 5. Conversión a USD: depende de si el club tiene toggle de moneda o no
+## 5. Conversión a USD: cualquier moneda nativa, no solo ARS (ver data/currency-map.js)
 
-- **Los 3 clubes cargados (Boca, River, Racing) tienen toggle USD/ARS en vivo** (desde la Versión
-  32 de numeros-de-boca, antes River/Racing no lo tenían, ver más abajo "Guardar amountNative en
-  ARS nativo"): se guardan los montos en ARS nativos (`yearsRaw`/`nativeFinancialsBoca` para Boca;
-  `amountNative` de `revenueLines`/`expenseLines` para River/Racing), y la conversión pasa en el
-  momento de renderizar (`toDisplayValue` + `yearMeta`/`yearMetaFor`). Nunca guardes un valor ya
-  convertido, ni para Boca ni para un club nuevo.
+- **Todos los clubes tienen toggle [moneda nativa / USD] en vivo** (desde la Versión 32 de
+  numeros-de-boca para ARS; desde la Versión 103, CUALQUIER moneda — BRL, CLP, COP, PEN, EUR, etc.
+  Ver el comentario de cabecera de `data/currency-map.js` para el modelo completo, es lectura
+  obligatoria antes de onboardear un club fuera de Argentina): se guardan los montos en la moneda
+  NATIVA del documento (`amountNative` de `revenueLines`/`expenseLines`, mismo campo para todos), y
+  la conversión pasa en el momento de renderizar (`toDisplayValue` + `yearMetaFor`). Nunca guardes un
+  valor ya convertido, para ningún club.
+- **El toggle SIEMPRE es [moneda nativa del club] <-> USD, nunca entre 2 monedas no-USD
+  directamente** (ej. nunca ARS<->BRL en vivo) — USD es el pivote universal, mismo criterio que
+  "Comparar Gestiones" (que siempre muestra USD, sin importar el toggle). No agregues un 3er destino
+  a `toDisplayValue()` sin releer el comentario de cabecera de `data/currency-map.js` primero.
+- **Onboardeando un club con una moneda nueva** (que todavía no tiene entrada en
+  `CURRENCY_META`, `data/currency-map.js`): agregale una entrada (`scale:1` si sus montos leen bien
+  en millones — BRL, PEN, EUR — o `scale:1000` si el valor nominal es tan grande que conviene
+  mostrarlo en "miles de millones" — ARS, CLP, COP). Sin esa entrada, el fallback
+  `DEFAULT_CURRENCY_META` (`scale:1`, unidad "M `<código>`") nunca rompe, pero puede leer raro para
+  una moneda de valor nominal grande — agregar la entrada real es preferible a dejar el fallback.
 
 Qué tipo de cambio usar, en orden de preferencia:
 0. **REGLA #1, ANTES que cualquier otra (agregada Versión 32 de numeros-de-boca, sesión de carga
@@ -168,9 +182,15 @@ Qué tipo de cambio usar, en orden de preferencia:
    declaraba $1.196 al 30/6/2025 (se venía usando $1.203); River balance 2023-24 declaraba $950,50
    al 31/8/2024 (se venía usando $953,50). Diferencias chicas (~0,3-0,6%) pero la fuente primaria
    gana. Si el documento declara varios tipos de cambio por MONEDA (ej. River: USD $950,50, EUR
-   $1.049,54, CHF $1.122,36), usá el de USD, el sitio no modela multi-moneda por partida, solo
-   ARS<->USD. Solo caé a las reglas 1-3 de abajo si el documento NO declara ningún tipo de cambio
-   propio (ej. Racing 2009-2011, de una época sin este tipo de Anexo).
+   $1.049,54, CHF $1.122,36), usá el de USD — el toggle de cualquier club sigue siendo SIEMPRE
+   [moneda nativa <-> USD] (ver sección 5 y `data/currency-map.js`), nunca modela multi-moneda por
+   partida ni un 3er destino directo. Solo caé a las reglas 1-3 de abajo si el documento NO declara ningún tipo de cambio
+   propio (ej. Racing 2009-2011, de una época sin este tipo de Anexo). **IMPORTANTE (reforzado
+   Versión 103, pedido explícito de Guido: "not every usd is exactly the same")**: este `fx` es
+   SIEMPRE el tipo de cambio que ESE documento puntual declaró para ESE cierre puntual — nunca lo
+   reuses para otro ejercicio del mismo club, ni para otro club, ni asumas que es comparable a una
+   cotización de mercado externa. "El USD de Boca 2025" y "el USD de River 2024" son 2 tipos de
+   cambio de cierre distintos, cada uno el que ese documento imprimió.
 1. **Ejercicio cerrado, en "moneda homogénea"/RT6** (reexpresado por inflación a una fecha
    puntual, práctica que se generalizó con la crisis de los 2020): dólar mayorista de **CIERRE**
    del ejercicio, no un promedio. Promediar mezclaría poder adquisitivo de fechas distintas cuando
@@ -185,18 +205,19 @@ Qué tipo de cambio usar, en orden de preferencia:
    puntos (ej. Racing 2026-27: "$1.505 para julio 2026 y $1.870 para junio 2027") en vez de un
    promedio único, promedialos vos (mismo criterio que ya usa Boca 2027: inicio+cierre / 2).
 
-### Guardar amountNative en ARS nativo, no pre-convertido a USD (regla desde la Versión 32)
+### Guardar amountNative en la moneda nativa del club, no pre-convertido a USD (regla desde la Versión 32)
 
 Hasta la Versión 31 de numeros-de-boca, River y Racing guardaban `amountNative` YA CONVERTIDO a
 USD (sin toggle de moneda), la sección 5 de este skill decía explícitamente "seguí este mismo
-patrón" para clubes nuevos. Esa recomendación quedó OBSOLETA: a partir de la Versión 32, los 3
-clubes cargados (Boca, River, Racing) guardan `amountNative` en ARS millones NATIVOS (tal cual el
-balance/presupuesto), con `fiscalYearMeta[year].currency`/`fx` diciendo en qué moneda está y con
-qué tipo de cambio convertir, la conversión pasa siempre al momento de renderizar
-(`yearMetaFor(clubId, year)` + `toDisplayValue`, ambas en `js/finanzas-calc.js` desde la Versión 51), nunca al cargar el dato. Esto es
-lo que habilita el toggle USD/ARS en vivo. Si se agrega un club argentino nuevo (u otro país con
-moneda propia y clubes que declaren su balance en esa moneda), seguí ESTE patrón (ARS/moneda
-nativa + fx en meta), no el viejo de "siempre USD, sin toggle", el toggle USD/ARS + Formato del
+patrón" para clubes nuevos. Esa recomendación quedó OBSOLETA: a partir de la Versión 32, todos los
+clubes cargados guardan `amountNative` en millones de su moneda NATIVA (tal cual el
+balance/presupuesto — ARS, BRL, CLP, COP, PEN, EUR, lo que corresponda), con
+`fiscalYearMeta[year].currency`/`fx` diciendo en qué moneda está y con qué tipo de cambio convertir,
+la conversión pasa siempre al momento de renderizar (`yearMetaFor(clubId, year)` + `toDisplayValue`,
+ambas en `js/finanzas-calc.js`), nunca al cargar el dato. Esto es lo que habilita el toggle
+[nativa/USD] en vivo (ver `data/currency-map.js` desde la Versión 103 para el detalle de cómo se
+muestra cada moneda). Si se agrega un club de un país nuevo, seguí ESTE patrón (moneda nativa + fx
+en meta), no el viejo de "siempre USD, sin toggle", el toggle de moneda + Formato del
 club/simplificado hoy se muestran para cualquier club con `clubs[clubId].country === 'AR'` (ver
 `data/clubs.js`); si el club nuevo no es argentino, evaluar si tiene sentido un toggle análogo a su
 propia moneda antes de forzar el mismo mecanismo.
@@ -208,6 +229,30 @@ bien dejarlo así (`currency:'USD'` con el fx ya usado, documentado) en vez de f
 re-extracción, el toggle igual funciona (reconstruye un ARS aproximado multiplicando de vuelta),
 solo que es una aproximación, no el ARS nativo real. Documentalo en el comentario del año, como se
 hizo con Racing 2009-2011.
+
+### El sentido de `fx` SIEMPRE es "moneda nativa por 1 USD" — nunca al revés
+
+**Error real, encontrado en la sesión de onboarding de España (Versión 111)**: los 10 archivos de
+club guardaron `fx` como "cuántos USD vale 1 EUR" (ej. `1.172`, la cifra que cualquier buscador
+devuelve para "EUR USD exchange rate") — el sentido INVERSO al que espera `toDisplayValue()`
+(`js/finanzas-calc.js`), que siempre asume "unidades de moneda nativa por 1 USD" (mismo sentido que
+ARS, COP, BRL, MXN, JPY: ej. ARS ~1000 por USD, no "0,001 USD por 1 ARS"). Con el sentido invertido,
+el toggle a USD habría mostrado un valor ~37% más alto que el real para los 10 clubes — se encontró
+y corrigió recién al mergear, releyendo cada archivo a mano.
+
+**Por qué es fácil de cometer**: para monedas fuertes (EUR, GBP) la forma "natural" de buscar y
+pensar el tipo de cambio es "1 EUR = X USD" (EUR es la moneda "grande"), lo opuesto a monedas como
+ARS/COP/BRL donde "X moneda local = 1 USD" es la forma obvia. El campo `fx` de este sitio SIEMPRE
+va en el segundo sentido, sin excepción por moneda.
+
+**Chequeo automático (Versión 112)**: `checkFxSanity()` (`data/currency-map.js`, corre junto a
+`verifyTieOuts()` al cargar el sitio) compara cada `fx` contra `FX_PLAUSIBLE_RANGE` (rango
+plausible por moneda, ej. EUR: 0,7-1,15) y tira un `console.warn` si algo parece invertido o con el
+orden de magnitud equivocado. No reemplaza la verificación manual (`verifyTieOuts()` sigue siendo el
+chequeo real de que los TOTALES cierran), pero hubiera marcado el bug de España de inmediato en vez
+de necesitar una relectura completa al mergear. Si onboardeás una moneda nueva sin entrada en
+`FX_PLAUSIBLE_RANGE`, agregala (mismo criterio que `CURRENCY_META`) — un rango ausente simplemente
+no se chequea, no rompe nada.
 
 ### Cuándo la cotización exacta no aparece
 
@@ -438,10 +483,19 @@ un set diseñado por separado para el motor genérico
 El objetivo de "Formato simplificado" es poder comparar clubes entre sí con las MISMAS categorías.
 Guido pidió explícito: "utiliza para todos los Formato Simplificado el formato que tiene Boca y la
 logica." Esto es la fuente de verdad de ese pedido, para cualquier club nuevo o cambio futuro a
-`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` (el motor de River/Racing).
+`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`.
 
-**Categorías/lógica de referencia, la de Boca (`simplifiedReportForBoca()`, en `js/finanzas-calc.js`), no la
-que ya tenía el motor genérico:**
+**ACTUALIZADO Versión 102**: hasta esa versión, Boca tenía su PROPIA función
+`simplifiedReportForBoca()`, hand-coded para reproducir a mano estas mismas categorías/orden (porque
+Boca todavía no tenía `normalizedCategory` en sus datos). Esa función se borró: Boca ahora lee
+`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` en vivo, igual que
+cualquier otro club — ya no hay 2 fuentes de verdad que mantener sincronizadas a mano. El resto de
+esta sección (investigación de la Versión 46, reglas 47-49) sigue siendo la razón histórica de POR
+QUÉ estos buckets tienen los nombres/orden que tienen; leerla igual antes de tocar los buckets.
+
+**Categorías/lógica de referencia (las que ya usaban `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
+`_EXPENSE_BUCKETS`, calcadas en su momento de la función Boca-only que existía hasta la Versión
+101):**
 - Ingresos: Cuotas Sociales, Comercial / Sponsors, Estadio (recaudación de partidos + Televisión +
   Premios por competencias, combinados en una sola fila "Estadio (TV y premios incluidos)" cuando
   el documento fuente no separa esos 3 conceptos, o como 3 filas propias cuando sí los separa),
@@ -586,28 +640,30 @@ era "Otros gastos").
 **REGLA PERMANENTE agregada en esta ronda**: las filas de "Formato Simplificado" de Gastos son
 SIEMPRE las mismas 7 (Compra de jugadores / Salarios y primas / Inversiones / Organización de
 partidos / Otras secciones deportivas / Administración y gastos generales / Otros gastos) para
-CUALQUIER club/año, incluido Boca en años que NO tienen el desglose de 3 filas disponible (ej.
-Boca 2025, ver más abajo): esos años muestran las 3 filas nombradas en $0 y el monto real completo
-en "Otros gastos", en vez de directamente no mostrar la fila (la fila en $0 no es "esconder", es
-"no tenemos cómo separar esto todavía", mismo espíritu que otras zonas del sitio que muestran $0
-con una nota quando el dato real no está disponible, ej. `debtDisclosureNote`). Si se agrega un
-bucket nuevo a futuro, tiene que aparecer en LOS DOS motores (`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`
-para River/Racing, y `otrosGastos2027`/`otrosGastosDefault` dentro de `simplifiedReportForBoca()`
-para Boca) para no romper esta paridad de filas.
+CUALQUIER club/año que NO tenga el desglose de 3 filas disponible: esos años muestran las 3 filas
+nombradas en $0 y el monto real completo en "Otros gastos", en vez de directamente no mostrar la
+fila (la fila en $0 no es "esconder", es "no tenemos cómo separar esto todavía", mismo espíritu que
+otras zonas del sitio que muestran $0 con una nota cuando el dato real no está disponible, ej.
+`debtDisclosureNote`). Desde la Versión 102 (Boca migrada al motor genérico) hay UN SOLO lugar donde
+agregar un bucket nuevo, `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`, usado por todos los clubes por igual
+— ya no hace falta mantener 2 motores en paridad.
 
 **CASO CONSULTADO, Guido eligió sumarlo a "Salarios y primas"**: "Fútbol profesional"
 (2009-2011/2024/2025 de Racing) y "Pago de otros gastos deportivos fútbol profesional" (2026/27),
 costos NO salariales del plantel profesional (médico, indumentaria, viajes, pretemporada), la línea
 más grande de todo el catch-all viejo. Se re-etiquetaron a `wages_squad`, no a una categoría nueva,
-porque Boca YA mezcla este mismo tipo de costo dentro de su propio campo `wages` para el Ejercicio
-2027 (`expenseSubBreakdown[2027]['Fútbol Profesional']` en `data/boca-data.js` incluye
-Farmacia/Pretemporada/Vigilancia/Canjes junto con Remuneraciones/Primas, y ESE total completo
-alimenta `r.wages`). OJO, matiz importante para no repetir la investigación: esto es distinto de
-Boca 2025 (balance auditado real), donde `wages` es una cifra de remuneraciones más estricta que SÍ
-excluye esos costos (quedan en `otherExpenses`, ver comentario de `yearsRaw[2025]` en
-`data/boca-data.js`) — los 2 ejercicios reales de Boca no son 100% consistentes entre sí en este
-punto puntual, y esta homologación de Racing sigue el criterio del Ejercicio 2027 por ser la
-referencia canónica que ya usa el resto de este skill para nombres/orden.
+porque Boca YA mezcla este mismo tipo de costo dentro de su propio total `wages_squad` para el
+Ejercicio 2027 (`bocaExpenseLinesByYear[2027]` en `data/boca-data.js`, línea "Fútbol Profesional —
+Remuneraciones y primas", incluye Farmacia/Pretemporada/Vigilancia/Canjes junto con
+Remuneraciones/Primas dentro de sus propios `items`, y ESE total completo alimenta `wages_squad`).
+OJO, matiz importante para no repetir la investigación: esto es distinto de Boca 2025 (balance
+auditado real, migrado al motor genérico en la Versión 102), donde cada departamento se partió en 2
+líneas (Remuneraciones / Otros gastos operativos) — ahí `wages_squad` SÍ es una cifra de
+remuneraciones estricta que excluye esos costos operativos (quedan en `admin_general_expense`/
+`youth_other_sports_expense`, ver comentario de cabecera de `data/boca-data.js`) — los 2 ejercicios
+reales de Boca no son 100% consistentes entre sí en este punto puntual, y esta homologación de
+Racing sigue el criterio del Ejercicio 2027 por ser la referencia canónica que ya usa el resto de
+este skill para nombres/orden.
 
 **BUG REAL encontrado al implementar esto, corregido en la misma sesión**: `computeYearGeneric()`
 (`js/finanzas-calc.js`) calculaba `otherExpenses` (que alimenta `expenses`/`ebitda`/`pat`, no solo
@@ -635,19 +691,26 @@ comparando `computeYearGeneric.toString()` en la consola contra el archivo real 
 `curl`), y se resolvió abriendo un servidor en un PUERTO nuevo (no solo una tab nueva) para forzar un
 origen sin caché.
 
-**Boca 2025 NO recibió el desglose de 3 filas en esta ronda** (queda como to-do explícito): su dato
-nativo (`nativeFinancialsBoca[2025]`) tiene detalle real, pero varias líneas mezclan sueldos y
-gastos operativos DENTRO del mismo renglón sin desglose propio (ej. "Estadio" trae "Remuneraciones y
-cargas sociales" y gastos de mantenimiento juntos en un solo número). Un intento de reconstrucción a
-mano en esta sesión (separar la porción salarial de cada línea mixta) dio una diferencia de ~$4.500
-M ARS contra `otherExpenses` real (-71.553,845458 M), señal de un error de reconciliación no
-resuelto — se descartó por el riesgo de ensuciar un balance auditado real sin un chequeo automatizado
-que lo confirme (ver CLAUDE.md, "Precisión antes que velocidad"). Boca 2025 muestra hoy las 3 filas
-nuevas en $0 y el monto completo en "Otros gastos" (39% del total), igual que cualquier año sin el
-desglose disponible. Si se retoma: hay que reconciliar cada línea mixta de
-`nativeFinancialsBoca[2025].gastos` contra su propia porción ya contada en `yearsRaw[2025].wages`
-(el comentario de `yearsRaw[2025]` en `data/boca-data.js` lista qué anexos entran en `wages`) antes
-de asumir que el resto es 100% no-salarial.
+**Boca 2025 NO recibió el desglose de 3 filas en esta ronda** (quedó como to-do explícito, RESUELTO
+en la Versión 102): en su momento, un intento de reconstrucción a mano (separar la porción salarial
+de cada línea mixta de `nativeFinancialsBoca[2025].gastos`) dio una diferencia de ~$4.500 M ARS
+contra `otherExpenses` real, señal de un error de reconciliación no resuelto — se descartó por el
+riesgo de ensuciar un balance auditado real sin un chequeo automatizado que lo confirme. La Versión
+102 (migración de Boca al motor genérico) sí lo resolvió, volviendo a los anexos ORIGINALES del
+balance (`Clubes/Argentina/Boca/memoria-y-balance-2024-25.md`, Anexos IX y XI-XVIII) en vez de
+intentar re-derivar la separación desde `nativeFinancialsBoca` (que ya venía sin ese nivel de
+detalle) o desde `yearsRaw[2025].wages` (el total agregado, sin desglose por departamento). Cada
+departamento (Fútbol profesional, Estadio, Educación física, Fútbol juvenil, Básquet, Casa Amarilla,
+Médico, y las 11 gerencias de "Gastos de estructura operativa") tiene su PROPIA línea "Remuneraciones
+y cargas sociales" separada del resto en el `.md` transcripto — sumar esas 9 líneas de sueldo dio
+EXACTO el mismo total ($67.869,732365 M) que el sitio ya usaba, confirmando la reconciliación sin
+inventar ningún número. Ver `data/boca-data.js` (`bocaExpenseLinesByYear[2025]`, cada departamento
+partido en 2 líneas top-level "X — Remuneraciones y cargas sociales" / "X — Otros gastos
+operativos") y el comentario de cabecera de ese archivo para el detalle completo. Lección para el
+próximo caso similar: cuando una estructura "nativa" de display no alcanza para categorizar
+correctamente, la solución no es forzar la categorización sobre esa estructura ni colapsarla a algo
+más genérico — es volver al documento fuente transcripto y buscar el nivel de detalle que sí
+distinga lo que hace falta, antes de asumir que no existe.
 
 ## 14. `grossDebt`: el criterio de qué línea usar es POR CLUB, no universal — y un balance que
 desglosa gastos por sector/departamento se puede (y conviene) separar por columna, no solo por fila

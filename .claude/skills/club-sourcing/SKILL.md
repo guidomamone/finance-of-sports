@@ -97,11 +97,38 @@ Superintendencia de Sociedades.
 - El sitio a veces entra en mantenimiento ("Estamos actualizando SIIS...") por minutos — reintentar
   más tarde, no es un dead-end permanente.
 - Ya confirmado con este método: Millonarios, América de Cali, Atlético Nacional, Independiente
-  Santa Fe, Junior de Barranquilla, Deportivo Cali, Deportivo Pereira. Quedan sin explorar (alta
-  probabilidad de que tengan ficha con el mismo patrón): Barranquilla F.C., Bucaramanga, Envigado,
-  Once Caldas, Tolima, y el resto de los ~35 clubes-sociedad que menciona el informe agregado de
-  Supersociedades (`supersociedades.gov.co/documents/20122/532936/Informe-futbol-pdf.pdf`, útil
-  como cifra de control/lista de candidatos, no da datos por club).
+  Santa Fe, Junior de Barranquilla, Deportivo Cali, Deportivo Pereira, Once Caldas, Deportes Tolima,
+  Envigado (estos 3 últimos, sesión 2026-09-13 — 10 clubes colombianos en total). El NIT de un club
+  nuevo se consigue rápido buscando en Google/WebSearch "[club] S.A. NIT" y cruzando con un
+  directorio empresarial (datacreditoempresas.com.co, empresite, informacolombia.com, la-gar.com)
+  cuando el nombre exacto no aparece en los primeros resultados — no hace falta abrir la Cámara de
+  Comercio. Quedan sin explorar (alta probabilidad de que tengan ficha con el mismo patrón):
+  Barranquilla F.C., Atlético Bucaramanga (NIT candidato 890203822, sin confirmar en SIIS), Águilas
+  Doradas (NIT no encontrado todavía), La Equidad, Alianza Petrolera, Patriotas, Boyacá Chicó, Unión
+  Magdalena, Jaguares de Córdoba, y el resto de los ~35 clubes-sociedad que menciona el informe
+  agregado de Supersociedades
+  (`supersociedades.gov.co/documents/20122/532936/Informe-futbol-pdf.pdf`, útil como cifra de
+  control/lista de candidatos, no da datos por club).
+  - **Envigado es el mejor hallazgo hasta ahora**: SIIS lista 10 ejercicios individuales consecutivos
+    (2016-2025) bajo el mismo NIT — solo se bajó 2025 en la sesión 2026-09-13, queda pendiente bajar
+    la serie completa si se busca el histórico más largo de Colombia.
+  - **Gotcha nuevo confirmado (sesión 2026-09-13): la URL final del PDF
+    (`.../bpmformularios/tmp/<radicado>/<radicado>.PDF`) a veces devuelve 404 en un `curl` directo
+    aunque el navegador la sirva 200 OK.** Dos causas identificadas, arreglar en este orden: (1) el
+    servidor parece necesitar que el navegador visite primero
+    `VisualizarDocumentos.aspx?Radicado=<mismo token>` para "materializar" el archivo temporal —
+    navegar ahí con el browser (aunque sea en blanco, no hace falta ver el visor cargar del todo) y
+    RECIÉN DESPUÉS lanzar el `curl` a la URL `.../tmp/...PDF`; (2) además, mandar un `User-Agent` de
+    navegador real y un header `Referer` apuntando a
+    `.../bpmformularios/subvisor.aspx?Radicado=<token>` (`curl -A "Mozilla/5.0 ..." -e "<subvisor
+    url>"`) — sin esto también puede devolver 404 incluso con el paso (1) hecho. Con ambos pasos,
+    los 9 PDFs de los 3 clubes de esta sesión bajaron bien.
+  - **Gotcha de tooling, no del portal**: en esta sesión el sitio SIIS disparó varios pop-ups a sitios
+    de terceros sin relación (directinfo.ma, orcjamaica.com, servicio.indecopi.gob.pe) al clickear
+    ciertos elementos (ej. "Ver otros documentos adicionales") — parecen anuncios/redirects
+    inyectados en el entorno de testing, no arriesgan el hallazgo: simplemente cerrar la pestaña
+    nueva y volver a seleccionar la pestaña original de SIIS (`tabs_select`), reintentar el click si
+    hizo falta, y seguir. No confundir con un error real del portal.
 
 ## 3. Brasil — el país con mejor cobertura, gracias a la Lei do SAF
 
@@ -150,28 +177,92 @@ Confirmado, 3 ángulos distintos, los 3 bloqueados — **no reintentar con estos
   pública a la AIN, o contactar a un socio real dispuesto a compartir el PDF que le llega por mail —
   no repetir los 3 de arriba.
 
-## 5. Ecuador — Supercias tiene un autocomplete poco confiable
+## 5. Ecuador — ningún club es todavía S.A.D.P./SAD; Supercias no aplica hasta que eso cambie
 
-La Superintendencia de Compañías, Valores y Seguros (supercias.gob.ec) tiene un portal público real
-de "Consulta de Compañías" que en teoría permite llegar a los Estados Financieros de cualquier
-empresa ecuatoriana registrada (incluyendo un club S.A.D.P. como LDU Quito). En la práctica, el
-campo de búsqueda es un autocomplete (PrimeFaces) poco predecible: no devolvió sugerencias ni con el
-nombre completo del club ni con un RUC candidato de baja confianza, y con búsquedas parciales
-devuelve coincidencias de empresas cuyo nombre ni siquiera contiene el término buscado. Antes de
-reintentar, conseguir el RUC EXACTO y verificado del club (no un candidato de una fuente de baja
-confianza) — no hay, hasta ahora, un lookup público de RUC-por-nombre que lo confirme de forma
-confiable.
+**Corrección importante de la sesión 2026-09-13, sobre la primera versión de esta sección (que
+asumía Supercias como la vía correcta "en teoría"): el problema no era solo el autocomplete, era que
+Supercias estructuralmente no regula a estos clubes todavía.** Los clubes profesionales
+ecuatorianos obtienen personería jurídica vía el Ministerio del Deporte (Acuerdo Ministerial), como
+"sociedades civiles sin fines de lucro" — no como "compañías" bajo la Ley de Compañías que sí regula
+Supercias. La figura de S.A.D.P./SAD (Sociedad Anónima Deportiva) es LEGAL desde hace tiempo en
+teoría, pero recién se volvió operativa en la práctica: reforma a la Ley Orgánica del Deporte
+publicada 11-feb-2026, reglamento de la Superintendencia de Compañías emitido 23/24-jun-2026, y a
+agosto de 2026 solo UN club de todo el país (9 de Octubre, categoría inferior) había presentado
+documentación para INICIAR (no completar) el trámite — ningún club grande de Serie A lo completó
+todavía (Barcelona SC lo está "analizando", proceso estimado 12-18 meses). Ver
+`fuentes/Ecuador/_notas-generales.md` para la cronología completa con fuentes de prensa.
+
+**Implicación práctica para sourcing**: mientras un club no complete su conversión a SAD, buscarlo en
+el portal "Consulta de Compañías" de Supercias es un callejón sin salida estructural, no un problema
+de autocomplete — la entidad no está ahí porque no es una "compañía". El autocomplete (PrimeFaces)
+del portal también es poco predecible por su cuenta (no devolvió sugerencias ni con nombre completo
+ni con RUC candidato, y con búsquedas parciales devuelve coincidencias que ni contienen el término
+buscado), pero eso es secundario frente al problema de fondo. Cuando algún club efectivamente
+complete la conversión a SAD (chequear con `"[club] se convierte en sociedad anónima deportiva"` en
+prensa antes de ir directo a Supercias), a partir de ese momento sí pasaría a estar regulado por
+Supercias y este portal volvería a ser relevante.
+
+**Qué SÍ funcionó esta sesión, sin depender de Supercias ni de la figura SAD**: varios clubes
+publican voluntariamente, como sociedad civil, reportes de rendición de cuentas a sus socios en su
+propio sitio oficial — Deportivo Cuenca colgó en agosto de 2026 un "informe presidencial" (dos PDFs
+vía links de Google Drive en una nota de prensa propia) con movimientos bancarios e impuestos
+pagados; LDU Quito tiene una sección `/transparencia/` fija con estados financieros de su club social
+consolidado (aunque mezclado con colegio/country club, ver `fuentes/Ecuador/LDU Quito.md`). Ojo: esto
+es voluntario y poco común — la mayoría de los clubes chequeados esta sesión (Barcelona SC, Emelec,
+Independiente del Valle, Aucas, Delfín SC, Universidad Católica, El Nacional, Macará, Mushuc Runa,
+Técnico Universitario, Orense SC) NO tienen ninguna sección equivalente — pero vale la pena revisar
+el sitio oficial de cada club (menú completo, no solo rutas típicas `/transparencia/`) antes de
+asumir que no existe. Cuidado además con reportes de este tipo: suelen ser de CAJA (ingresos/egresos
+bancarios, pagos de impuestos), no estados contables de DEVENGADO con balance/estado de resultados
+completo — releer `club-data-mapping/SKILL.md` antes de decidir si encajan en el esquema del sitio.
 
 ## 6. Perú, Paraguay, Bolivia, Venezuela — sin metodología país-nivel todavía
 
 Estos 4 países no tuvieron (todavía) un hallazgo de nivel "regulador que aplica a todos los clubes"
 como Chile/Colombia/Brasil — lo encontrado hasta ahora fue caso por caso, ver la ficha de cada club
 en `fuentes/<País>/<Club>.md`:
-- **Perú**: Alianza Lima publica en su propia página de transparencia (sin regulador de por medio);
-  Universitario de Deportes solo tiene un expediente concursal público en INDECOPI (histórico legal,
-  no estados financieros); Sporting Cristal es una S.A. de capital cerrado sin obligación de
-  publicar. Vale explorar en el futuro si la SMV (Superintendencia del Mercado de Valores) tiene
-  algún club registrado como emisor, no se confirmó todavía.
+- **Perú**: barrido de 12 clubes adicionales (sesión 2026-09-13, además de los 3 ya conocidos)
+  confirmó un patrón consistente: la enorme mayoría de los clubes de Liga 1 son **asociaciones
+  civiles sin fines de lucro** (Melgar, Cienciano, Sport Boys, Cusco FC, ADT, Alianza Atlético,
+  Deportivo Municipal, Comerciantes Unidos, Sport Huancayo, Binacional — todos confirmados vía SUNAT/
+  datosperu.org con tipo societario "Asociación"), sin obligación legal de publicar nada. Los pocos
+  que SÍ son sociedades son S.A. o S.A.C. CERRADAS (Sporting Cristal, UCV, Los Chankas), que tampoco
+  tienen obligación de registro ante la SMV (solo aplica a S.A.A. — Sociedad Anónima ABIERTA). Ningún
+  club de los 12 tiene sección de transparencia/estados financieros en su sitio oficial propio (a
+  diferencia de Alianza Lima, que sí publica voluntariamente pese a ser también una entidad sin fines
+  de lucro — es la excepción, no la regla). Conclusión: en Perú, salvo que un club sea S.A.A. y
+  registre valores ante la SMV, **no hay ningún regulador que obligue a publicar** — el único canal
+  viable es la publicación VOLUNTARIA en el sitio propio del club (como Alianza Lima) o un proceso
+  concursal INDECOPI (ver debajo, con matiz importante).
+  - **SMV (Superintendencia del Mercado de Valores, smv.gob.pe/SIMV) — confirmado que SÍ es
+    consultable pero Melgar NO está ahí**: el buscador de "razón social de la empresa" en la portada
+    de smv.gob.pe es de texto libre (no autocomplete, pese al mensaje de validación "Ingrese/
+    Seleccione"). Se buscó "MELGAR" y "FOOT BALL CLUB MELGAR" (el club estuvo cerca de convertirse en
+    S.A.A. hace más de una década según prensa, pero revirtió a asociación en 2019): **0 resultados
+    en ambos casos**, confirmando que nunca se registró como emisor. También existe
+    `Frm_InformacionFinancieraporperiodo` (listado completo de TODOS los emisores que presentaron
+    EEFF en un período dado, con filtros Individual/Consolidada/Todos + Anual/Intermedio) — se
+    recorrió el listado completo de 2023 Anual (276 filas) buscando "MELGAR"/"DEPORTIVO"/"CIENCIANO":
+    ningún club de fútbol apareció. Útil como método de descarte rápido para futuros candidatos
+    peruanos con sospecha de ser S.A.A.
+  - **INDECOPI / IFCO (servicio.indecopi.gob.pe/e-value/pgw_infoXDeudor.seam) — ahora SÍ explorado a
+    fondo para Universitario de Deportes, confirmado DEAD-END para documentos financieros, con
+    gotcha de navegación importante**: la URL carga por defecto en el tab equivocado
+    ("PROCEDIMIENTO ACELERADO DE REFINANCIACIÓN CONCURSAL - PARC", identificable porque su combo de
+    "oficina concursal" solo lista 4 opciones tipo "-PARC"); hay que clickear explícitamente el link
+    "INFORMACIÓN POR DEUDOR" del menú superior (`frmMenu:cmdlnkRecursoSel22`) para que el combo
+    muestre la lista larga real (CCO-INDECOPI, CRP-INDECOPI, etc.). Ahí sí, con el radio "Razón
+    Social" + captcha (imagen de 6 caracteres, capturable con `canvas.drawImage()` +
+    `toDataURL()` vía JS ya que es demasiado chica para leerse en un screenshot normal), la búsqueda
+    funciona y devuelve el expediente. PERO los 3 sub-modales del resultado (seguimientos del
+    expediente, juntas programadas, listado de acreedores) exponen únicamente **historial procesal**
+    (resoluciones con fecha/número/texto de "SE RESUELVE", fechas de convocatoria de asambleas,
+    nombres/montos de acreedores) — nunca un PDF adjunto ni un informe del administrador con balance.
+    A diferencia de Colombia (Supersociedades en reorganización SÍ expone estados financieros
+    completos), el sistema concursal peruano NO es un canal de estados financieros, solo de
+    trazabilidad legal del proceso. FBC Melgar tiene un proceso concursal similar desde 2012 (deuda
+    con SUNAT) pero no se ubicó su expediente exacto esta sesión — de encontrarse, esperar el mismo
+    resultado (dead-end) salvo evidencia en contrario.
 - **Paraguay**: Olimpia/Cerro Porteño/Libertad — sin regulador tipo CMF/Supersociedades identificado,
   sin sección de transparencia financiera en ninguno de los 3 sitios oficiales, dead-end sin lead
   nuevo por ahora.
@@ -179,6 +270,113 @@ en `fuentes/<País>/<Club>.md`:
   todavía — próxima sesión que toque estos países, empezar por buscar si existe un regulador
   societario nacional con portal público (mismo patrón que Colombia/Ecuador) antes de ir club por
   club.
+
+## 7. CONCACAF (Norte/Centroamérica/Caribe) — la región más difícil, un hallazgo real inesperado en México
+
+Barrido inicial de 2026-09-13, 10+ clubes entre México, Costa Rica, Honduras, Panamá, Guatemala,
+Jamaica y MLS (Estados Unidos). Confirma que esta es, hasta ahora, la región más pobre en disclosure
+público de todo el proyecto — con UNA excepción real que vale la pena explotar más en el futuro.
+
+- **México — Club América es, de hecho, un caso "CMF/Supersociedades" oculto**: el 31/01/2024,
+  Grupo Televisa escindió su negocio de fútbol (Club América) + Estadio Azteca (ahora Banorte) +
+  editoriales + juegos de azar en una compañía nueva, **Ollamani, S.A.B.**, que cotiza en la Bolsa
+  Mexicana de Valores (clave `AGUILAS`) y por lo tanto está obligada por la CNBV a publicar Estados
+  Financieros Consolidados auditados bajo IFRS — descargables sin login en `ollamani.com.mx/reportes-3/`
+  (espejados en bmv.com.mx y gob.mx/cnbv). Ollamani reporta bajo IFRS 8 un "Segmento de Fútbol" (Club
+  América + Estadio Banorte) con ingresos y utilidad propios, aunque SIN balance separado por
+  segmento — es fútbol mezclado con ingresos de estadio, no un balance puro del club. Dos ejercicios
+  ya descargados (2024 y 2025) en `Clubes/México/Club América/`, ver `fuentes/México/Club América.md`
+  para el detalle completo y las dudas de mapeo pendientes.
+  - **Implicación para el resto de Liga MX**: el supuesto de partida ("Liga MX = todo privado, sin
+    disclosure") ya no se puede asumir ciegamente — antes de descartar un club nuevo de Liga MX, vale
+    la pena chequear si su grupo controlador tiene ALGUNA otra pata que cotice en BMV/CNBV (ej. FEMSA
+    para Monterrey/Tigres, aunque no confirmado si desglosan fútbol como segmento). Cruz Azul (dueño:
+    una cooperativa cementera, no una S.A.) SÍ tiene auditoría externa confirmada por prensa pero sin
+    disclosure público encontrado — ver `fuentes/México/Cruz Azul.md`.
+- **Costa Rica — mismo patrón que Uruguay, pero con un regulador que ACTIVAMENTE prohíbe publicar**:
+  Alajuelense, Saprissa y Herediano sí producen estados financieros auditados reales (Saprissa
+  confirmado auditado por Grant Thornton), pero la Federación Costarricense de Fútbol (FEDEFUT)
+  exige el documento al Comité de Licencias (Reglamento de Concesión de Licencias, art. 41) Y
+  GARANTIZA CONFIDENCIALIDAD por el mismo reglamento (art. 12) — el regulador deportivo es lo opuesto
+  a un CMF: exige y blinda, no exige y publica. El Registro Nacional de Costa Rica solo certifica
+  personería jurídica, no es un repositorio de balances. Tres ángulos agotados (sitio oficial,
+  prensa, FEDEFUT) — ver `fuentes/Costa Rica/_notas-generales.md` antes de reintentar igual.
+- **Honduras, Panamá, Guatemala — reguladores de valores reales, pero sin ningún club registrado**:
+  los tres países tienen bolsa/superintendencia de valores con padrón público de emisores (BCV/CNBS
+  en Honduras, SMV en Panamá, BVNSA en Guatemala) — se revisó el listado completo de Panamá y
+  Guatemala sin encontrar ningún club de fútbol como emisor (confirmado, no reintentar salvo anuncio
+  específico de emisión). Honduras: el listado no se revisó línea por línea todavía (pendiente).
+  Ninguno de los 5 clubes chequeados (Olimpia, Motagua, Tauro FC, Comunicaciones, Municipal) tiene
+  cobertura de prensa sobre auditorías/asambleas como sí la tiene Costa Rica.
+- **Jamaica — lead sin cerrar, el más prometedor de la región después de México**: la Companies Act
+  2004 jamaiquina exige balance + P&L + dictamen de auditor a TODA compañía (no solo bursátiles), y
+  el Companies Office of Jamaica tiene un portal de búsqueda pública con pedido de "certified
+  documents" pagos. No se pudo confirmar en esta sesión si esos documentos incluyen los estados
+  financieros depositados (vs. solo actos societarios) por una limitación de TOOLING (browser
+  compartido con otra tarea en paralelo, pestañas cerrándose solas) — no un bloqueo real del sitio.
+  Waterhouse FC Limited ya confirmado como entidad registrada candidata. Retomar con browser dedicado
+  o pagando la tarifa en JMD por el documento certificado — ver `fuentes/Jamaica/_notas-generales.md`.
+- **MLS (Estados Unidos/Canadá) — dead-end estructural confirmado, no reintentar**: la liga opera
+  como "single-entity" (Major League Soccer, L.L.C. es dueña centralizada de todos los equipos y
+  contratos) — no existe ni puede existir un balance standalone por club bajo este diseño
+  institucional. Confirmado en SEC EDGAR: cero filings de clubes individuales. Las valuaciones de
+  Forbes/Sportico por club son estimaciones de mercado, NUNCA un estado financiero auditado — no usar
+  como fuente bajo ningún concepto.
+
+## 8. África — primer barrido (sesión 2026-09-13), 0 clubes con PDF real, pero Marruecos abre una
+## pista regulatoria concreta
+
+Primer intento de sourcing fuera de Sudamérica. Se probaron 4 países (Sudáfrica primero, por tener
+la infraestructura de registro corporativo más desarrollada del continente; después Egipto,
+Marruecos y Nigeria) con varios ángulos genuinos cada uno — 0 PDFs reales conseguidos en esta
+sesión, pero cada dead-end quedó documentado a fondo (ver `fuentes/<País>/_notas-generales.md` de
+cada uno) para que una sesión futura no repita el camino. Detalle completo por país abajo; acá solo
+el resumen que importa para decidir por dónde seguir.
+
+- **Sudáfrica — dead-end ESTRUCTURAL (no reintentar sin un dato nuevo)**: los clubes de la PSL están
+  constituidos como "(Pty) Ltd" (private companies), y la Sección 33 de la Companies Act
+  sudafricana EXIME a las private companies de presentar su AFS ante el CIPC (Companies and
+  Intellectual Property Commission) para consulta pública — esa obligación solo aplica a "public
+  companies" (Ltd) y state-owned companies. Confirmado con 5 clubes (Kaizer Chiefs, Orlando Pirates,
+  Mamelodi Sundowns, SuperSport United, Royal AM), ninguno cotiza en JSE/AltX, y ninguna corporación
+  madre (ej. MultiChoice, ex-dueño de SuperSport United) desglosa al club en sus EEFF por ser
+  inmaterial. Mismo patrón que Chile OTODP: la categoría societaria misma bloquea la publicación, no
+  un problema de portal. Único hilo sin cerrar: los manuales PAIA (ley de acceso a la información)
+  que publican los clubes por ley — no se pudo leer su contenido (403), podrían listar los AFS como
+  registro disponible a pedido formal.
+- **Egipto — dead-end estructural, verificado no asumido**: Al Ahly y Zamalek son asociaciones
+  deportivas (no sociedades), sin regulador que les exija publicar. Confirmado explícitamente
+  (Zamalek: la propia vicepresidencia admitió no haber sido transparente ni con sus propios socios
+  sobre la escala real de la deuda) en vez de asumir la opacidad típica de clubes-asociación.
+- **Marruecos — el hallazgo más prometedor de este barrido, un mecanismo real pero bloqueado por
+  pago**: Marruecos viene profesionalizando sus clubes a **SAS (Société Anonyme Sportive)** — Wydad
+  AC y Raja Club Athletic ya tienen la suya. Marruecos SÍ tiene un registro central equivalente al
+  Infogreffe francés (**OMPIC**, vía el portal **directinfo.ma**) donde toda Société Anonyme
+  marroquí deposita su "bilan"/CPC (balance + resultado) ante el greffe del Tribunal de Commerce —
+  la búsqueda de una empresa es gratis, pero DESCARGAR el documento real es un servicio pago que
+  requiere cuenta OMPIC + medio de pago marroquí, algo que un agente no puede completar (no se puede
+  crear cuentas ni ingresar datos de pago). No se llegó a confirmar siquiera si Raja S.A. (SAS
+  constituida en agosto 2025, posiblemente sin su primer ejercicio cerrado todavía) o la SAS del
+  Wydad (más antigua, mejor candidata) tienen ya un bilan depositado para pagar. **Sugerencia
+  concreta para la próxima sesión**: entrar a `directinfo.ma`, usar la búsqueda GRATUITA por nombre
+  ("RAJA CLUB ATHLETIC SOCIETE ANONYME RAJA", "WYDAD ATHLETIC CLUB") para confirmar que existe un
+  bilan depositado ANTES de pagar nada — si Guido está dispuesto a pagar el documento él mismo (el
+  monto parece bajo, a juzgar por los tramos de `charika.ma`, un revendedor privado que confirmó no
+  tener el bilan de Raja disponible ni pago), esta sería la primera fuente 100% oficial de África.
+  Ojo: la prensa financiera marroquí (Médias24 sobre todo) SÍ cubre los "rapport financier" de ambos
+  clubes con cifras reales y detalladas, pero solo los presenta en la Asamblea de socios y nunca
+  adjunta el PDF — mismo patrón exacto que Uruguay, no vale la pena insistir con prensa.
+- **Nigeria — dead-end a nivel de LIGA completa, no club por club**: la NPFL (Nigeria Professional
+  Football League) es mayoritariamente de clubes propiedad de gobiernos estatales, que según prensa
+  nigeriana ni siquiera presentan retorno anual ante la CAC (Corporate Affairs Commission) ni tienen
+  cuentas auditadas — no hay ni la estructura societaria mínima de la que exigir un balance. No vale
+  la pena investigar club por club de la NPFL sin un cambio de política; el ángulo sin explorar es
+  buscar el escaso número de clubes nigerianos de propiedad PRIVADA (ej. ligados a una iglesia o un
+  empresario) en vez de los estatales.
+
+Ningún club africano (de los investigados en ningún país) cotiza en ninguna bolsa continental, y no
+existe ningún club de fútbol africano listado directamente en bolsa (a diferencia de casos europeos
+como Ajax o Borussia Dortmund) — confirmado con una búsqueda específica de este punto.
 
 ## Cómo mantener este skill
 

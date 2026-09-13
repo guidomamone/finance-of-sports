@@ -158,14 +158,14 @@ nada a `data/*.js` todavía (eso queda para una sesión de onboarding futura, si
 ### Brasil
 
 - [Athletico Paranaense](fuentes/Brasil/Athletico Paranaense.md) — 2 ejercicios reales (2024-2025), no es SAF — Último chequeo: 2026-09-12
-- [Atletico Goianiense](fuentes/Brasil/Atletico Goianiense.md) — 1 ejercicio real (2024-2025) — Último chequeo: 2026-09-12
+- [Atletico Goianiense](fuentes/Brasil/Atletico Goianiense.md) — 1 ejercicio real (2024-2025) — **CARGADO al sitio: Ejercicio 2025, columna Consolidado** — Último chequeo: 2026-09-13
 - [Bahia](fuentes/Brasil/Bahia.md) — SAF + associação, 4 ejercicios reales combinados — Último chequeo: 2026-09-12
-- [Botafogo](fuentes/Brasil/Botafogo.md) — 4 ejercicios reales SAF (2022-2025) + associação — Último chequeo: 2026-09-12
+- [Botafogo](fuentes/Brasil/Botafogo.md) — 4 ejercicios reales SAF (2022-2025) + associação — **CARGADO al sitio: Ejercicio 2024 (SAF, columna Controladora)** — Último chequeo: 2026-09-13
 - [Botafogo-SP](fuentes/Brasil/Botafogo-SP.md) — 5 ejercicios reales (2019-2024), no confundir con RJ — Último chequeo: 2026-09-12
 - [Chapecoense](fuentes/Brasil/Chapecoense.md) — 3 ejercicios reales (2016-17, 2020-21), no es SAF — Último chequeo: 2026-09-12
 - [Coritiba](fuentes/Brasil/Coritiba.md) — 2 ejercicios reales (2022-2024) — Último chequeo: 2026-09-12
-- [Cruzeiro](fuentes/Brasil/Cruzeiro.md) — 4 ejercicios reales, serie completa 2022-2025 — Último chequeo: 2026-09-12
-- [Gremio](fuentes/Brasil/Gremio.md) — 1 ejercicio real (2023-2024), no es SAF — Último chequeo: 2026-09-12
+- [Cruzeiro](fuentes/Brasil/Cruzeiro.md) — 4 ejercicios reales, serie completa 2022-2025 — **CARGADO al sitio: Ejercicio 2025 (SAF)** — Último chequeo: 2026-09-13
+- [Gremio](fuentes/Brasil/Gremio.md) — 1 ejercicio real (2023-2024), no es SAF — **CARGADO al sitio: Ejercicio 2024** — Último chequeo: 2026-09-13
 - [Ituano](fuentes/Brasil/Ituano.md) — 1 ejercicio real (2024), no es SAF — Último chequeo: 2026-09-12
 - [Mirassol](fuentes/Brasil/Mirassol.md) — 1 ejercicio real (2024), no es SAF todavía — Último chequeo: 2026-09-12
 - [Vasco da Gama](fuentes/Brasil/Vasco da Gama.md) — 3 ejercicios reales vía mirrors (2022-2024) — Último chequeo: 2026-09-12
@@ -175,24 +175,54 @@ nada a `data/*.js` todavía (eso queda para una sesión de onboarding futura, si
 
 - [America de Cali](fuentes/Colombia/America de Cali.md) — estados financieros 2025 reales, en reorganización — Último chequeo: 2026-09-12
 - [Atletico Nacional](fuentes/Colombia/Atletico Nacional.md) — estados financieros 2025 reales — Último chequeo: 2026-09-12
+- [Deportes Tolima](fuentes/Colombia/Deportes Tolima.md) — estados financieros 2025 reales, SIN CARGAR (3 cifras de resultado neto en conflicto, ver dudas-por-club.md) — Último chequeo: 2026-09-13
 - [Deportivo Cali](fuentes/Colombia/Deportivo Cali.md) — estados financieros 2025 reales, conversión societaria — Último chequeo: 2026-09-12
 - [Deportivo Pereira](fuentes/Colombia/Deportivo Pereira.md) — estados financieros 2025 reales, en reorganización de oficio — Último chequeo: 2026-09-12
+- [Envigado](fuentes/Colombia/Envigado.md) — CARGADO (Ejercicio 2025), 10 ejercicios disponibles en SIIS (2016-2025), solo se cargó 2025 a propósito — Último chequeo: 2026-09-13
 - [Independiente Santa Fe](fuentes/Colombia/Independiente Santa Fe.md) — estados financieros 2025 reales, en reorganización — Último chequeo: 2026-09-12
 - [Junior de Barranquilla](fuentes/Colombia/Junior de Barranquilla.md) — estados financieros 2025 reales — Último chequeo: 2026-09-12
 - [Millonarios](fuentes/Colombia/Millonarios.md) — 3 ejercicios reales (2022-2025) — Último chequeo: 2026-09-12
+- [Once Caldas](fuentes/Colombia/Once Caldas.md) — CARGADO (Ejercicio 2025), en reorganización desde 2012 pero rentable — Último chequeo: 2026-09-13
 - [Notas generales de Colombia](fuentes/Colombia/_notas-generales.md)
 
 ### Perú
 
 - [Alianza Lima](fuentes/Peru/Alianza Lima.md) — 6 ejercicios consecutivos reales (2019-2024) — Último chequeo: 2026-09-12
 - [Sporting Cristal](fuentes/Peru/Sporting Cristal.md) — sin PDF, S.A. cerrada sin obligación de reporte — Último chequeo: 2026-09-12
-- [Universitario de Deportes](fuentes/Peru/Universitario de Deportes.md) — sin PDF, proceso concursal INDECOPI sin explotar — Último chequeo: 2026-09-12
+- [Universitario de Deportes](fuentes/Peru/Universitario de Deportes.md) — sin PDF, proceso concursal INDECOPI confirmado dead-end (solo historial procesal) — Último chequeo: 2026-09-13
+- [FBC Melgar](fuentes/Peru/FBC Melgar.md) — sin PDF, asociación civil + concursal INDECOPI sin expediente ubicado — Último chequeo: 2026-09-13
+- [Cienciano](fuentes/Peru/Cienciano.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Sport Boys](fuentes/Peru/Sport Boys.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Universidad Cesar Vallejo](fuentes/Peru/Universidad Cesar Vallejo.md) — sin PDF, S.A.C. cerrada sin obligación de reporte — Último chequeo: 2026-09-13
+- [Cusco FC](fuentes/Peru/Cusco FC.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [ADT](fuentes/Peru/ADT.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Alianza Atletico](fuentes/Peru/Alianza Atletico.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Deportivo Municipal](fuentes/Peru/Deportivo Municipal.md) — sin PDF, asociación civil, dominio oficial caído/squatted — Último chequeo: 2026-09-13
+- [Comerciantes Unidos](fuentes/Peru/Comerciantes Unidos.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Los Chankas](fuentes/Peru/Los Chankas.md) — sin PDF, única S.A. (cerrada) del barrido, sin obligación de reporte — Último chequeo: 2026-09-13
+- [Sport Huancayo](fuentes/Peru/Sport Huancayo.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Binacional](fuentes/Peru/Binacional.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
 
 ### Ecuador
 
-- [Barcelona SC](fuentes/Ecuador/Barcelona SC.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-12
-- [Emelec](fuentes/Ecuador/Emelec.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-12
-- [LDU Quito](fuentes/Ecuador/LDU Quito.md) — PDF real, pero del club social, no la S.A.D.P. — Último chequeo: 2026-09-12
+Contexto clave (ver `_notas-generales.md`): a la fecha, NINGÚN club ecuatoriano es todavía una
+S.A.D.P./SAD — el reglamento que habilita la conversión recién se emitió en junio de 2026 y ningún
+club grande la completó. Todos los clubes de abajo siguen siendo sociedades civiles sin fines de
+lucro.
+
+- [Barcelona SC](fuentes/Ecuador/Barcelona SC.md) — sin PDFs ni fuente pública identificada; club "analiza" conversión a SAD, sin trámite iniciado — Último chequeo: 2026-09-13
+- [Emelec](fuentes/Ecuador/Emelec.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
+- [LDU Quito](fuentes/Ecuador/LDU Quito.md) — PDF real, pero del club social consolidado (educación + country club), no del fútbol aislado — Último chequeo: 2026-09-13
+- [Independiente del Valle](fuentes/Ecuador/Independiente del Valle.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 403 — Último chequeo: 2026-09-13
+- [Aucas](fuentes/Ecuador/Aucas.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
+- [Delfín SC](fuentes/Ecuador/Delfin SC.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
+- [Universidad Católica](fuentes/Ecuador/Universidad Catolica.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
+- [El Nacional](fuentes/Ecuador/El Nacional.md) — sin PDFs ni fuente pública identificada; sitio no renderizó vía WebFetch — Último chequeo: 2026-09-13
+- [Macará](fuentes/Ecuador/Macara.md) — sin PDFs ni fuente pública identificada; sitio con certificado SSL vencido — Último chequeo: 2026-09-13
+- [Deportivo Cuenca](fuentes/Ecuador/Deportivo Cuenca.md) — PDF real (informe presidencial de caja, no estado contable devengado) — Último chequeo: 2026-09-13
+- [Mushuc Runa](fuentes/Ecuador/Mushuc Runa.md) — sin PDFs ni fuente pública identificada; ojo con la cooperativa financiera homónima, entidad distinta — Último chequeo: 2026-09-13
+- [Técnico Universitario](fuentes/Ecuador/Tecnico Universitario.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 500 — Último chequeo: 2026-09-13
+- [Orense SC](fuentes/Ecuador/Orense SC.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 503 — Último chequeo: 2026-09-13
 - [Notas generales de Ecuador](fuentes/Ecuador/_notas-generales.md)
 
 ### Bolivia
@@ -205,6 +235,122 @@ nada a `data/*.js` todavía (eso queda para una sesión de onboarding futura, si
 
 - [Caracas FC](fuentes/Venezuela/Caracas FC.md) — primer chequeo, sin hits — Último chequeo: 2026-09-12
 - [Deportivo Táchira](fuentes/Venezuela/Deportivo Táchira.md) — primer chequeo, sin hits — Último chequeo: 2026-09-12
+
+### Japón
+
+- [Cerezo Osaka](<fuentes/Japón/Cerezo Osaka.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [FC Tokyo](<fuentes/Japón/FC Tokyo.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Gamba Osaka](<fuentes/Japón/Gamba Osaka.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Kashima Antlers](<fuentes/Japón/Kashima Antlers.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Kawasaki Frontale](<fuentes/Japón/Kawasaki Frontale.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Nagoya Grampus](<fuentes/Japón/Nagoya Grampus.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Sanfrecce Hiroshima](<fuentes/Japón/Sanfrecce Hiroshima.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Urawa Red Diamonds](<fuentes/Japón/Urawa Red Diamonds.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Vissel Kobe](<fuentes/Japón/Vissel Kobe.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Yokohama F. Marinos](<fuentes/Japón/Yokohama F. Marinos.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
+- [Notas generales de Japón](<fuentes/Japón/_notas-generales.md>) — IMPORTANTE: corregido en esta sesión, el desglose por club es más limitado de lo que decía la nota original (ver el archivo)
+
+**Clubes de CONCACAF (Norte/Centroamérica/Caribe):** mismo criterio de sourcing puro que Sudamérica —
+región confirmada como la más difícil del proyecto hasta ahora (MLS single-entity, Liga MX
+mayormente privada, sin tradición de CMF/Supersociedades en Centroamérica), pero con un hallazgo real
+inesperado en México (Club América vía Ollamani, S.A.B., cotizante en BMV). Ver
+`.claude/skills/club-sourcing/SKILL.md` sección 7 para la metodología completa.
+
+### México
+
+- [Club América](<fuentes/México/Club América.md>) — CARGADO al sitio (Ejercicio 2025) vía segmento "Fútbol" de Ollamani S.A.B. (BMV), ver `data/clubamerica-data.js`; Ejercicio 2024 (11 meses, período inicial) descargado pero sin cargar — Último chequeo: 2026-09-13
+- [Cruz Azul](fuentes/México/Cruz Azul.md) — sin PDF, cooperativa auditada sin disclosure público — Último chequeo: 2026-09-13
+- [Notas generales de México](fuentes/México/_notas-generales.md)
+
+### Costa Rica
+
+- [Alajuelense](fuentes/Costa Rica/Alajuelense.md) — sin PDF, informes a socios sin publicar — Último chequeo: 2026-09-13
+- [Saprissa](fuentes/Costa Rica/Saprissa.md) — sin PDF, auditado por Grant Thornton pero no público — Último chequeo: 2026-09-13
+- [Herediano](fuentes/Costa Rica/Herediano.md) — sin PDF ni evidencia de asamblea pública — Último chequeo: 2026-09-13
+- [Notas generales de Costa Rica](fuentes/Costa Rica/_notas-generales.md)
+
+### Honduras
+
+- [Olimpia](fuentes/Honduras/Olimpia.md) — sin PDFs ni hits — Último chequeo: 2026-09-13
+- [Motagua](fuentes/Honduras/Motagua.md) — sin PDFs ni hits — Último chequeo: 2026-09-13
+- [Notas generales de Honduras](fuentes/Honduras/_notas-generales.md)
+
+### Panamá
+
+- [Tauro FC](<fuentes/Panamá/Tauro FC.md>) — sin PDFs, confirmado sin registro en SMV — Último chequeo: 2026-09-13
+- [Notas generales de Panamá](fuentes/Panamá/_notas-generales.md)
+
+### Guatemala
+
+- [Comunicaciones](fuentes/Guatemala/Comunicaciones.md) — sin PDFs, S.A. de dueño único — Último chequeo: 2026-09-13
+- [Municipal](fuentes/Guatemala/Municipal.md) — sin PDFs, estructura societaria sin confirmar — Último chequeo: 2026-09-13
+- [Notas generales de Guatemala](fuentes/Guatemala/_notas-generales.md)
+
+### Jamaica
+
+- [Waterhouse FC](<fuentes/Jamaica/Waterhouse FC.md>) — sin PDF, lead sin cerrar (Companies Act) — Último chequeo: 2026-09-13
+- [Notas generales de Jamaica](fuentes/Jamaica/_notas-generales.md)
+
+### Estados Unidos (MLS)
+
+- [LA Galaxy](<fuentes/Estados Unidos/LA Galaxy.md>) — sin PDF, dead-end estructural (single-entity) — Último chequeo: 2026-09-13
+- [Notas generales de Estados Unidos](<fuentes/Estados Unidos/_notas-generales.md>)
+
+**Clubes de África:** Primer barrido de sourcing en el continente (sesión 2026-09-13), 0 clubes con
+PDF real conseguido pero 4 países investigados a fondo con metodología propia por país — ver
+`.claude/skills/club-sourcing/SKILL.md` sección 7 para el resumen metodológico y por qué Marruecos
+es la pista más prometedora para retomar (mecanismo regulatorio real vía OMPIC, bloqueado solo por
+un pago que un agente no puede completar).
+
+### Sudáfrica
+
+- [Kaizer Chiefs](fuentes/Sudáfrica/Kaizer Chiefs.md) — (Pty) Ltd, exceptuado de presentar AFS ante CIPC — Último chequeo: 2026-09-13
+- [Orlando Pirates](fuentes/Sudáfrica/Orlando Pirates.md) — (Pty) Ltd, mismo dead-end; manual PAIA sin leer (403) — Último chequeo: 2026-09-13
+- [Mamelodi Sundowns](fuentes/Sudáfrica/Mamelodi Sundowns.md) — (Pty) Ltd, mismo dead-end — Último chequeo: 2026-09-13
+- [SuperSport United](fuentes/Sudáfrica/SuperSport United.md) — (Pty) Ltd, ex-MultiChoice, inmaterial en sus EEFF — Último chequeo: 2026-09-13
+- [Royal AM](fuentes/Sudáfrica/Royal AM.md) — (Pty) Ltd, caso judicial SARS sin balance adjunto — Último chequeo: 2026-09-13
+- [Stellenbosch FC](fuentes/Sudáfrica/Stellenbosch FC.md) — no verificado individualmente, mismo techo esperado — Último chequeo: 2026-09-13
+- [Sekhukhune United](fuentes/Sudáfrica/Sekhukhune United.md) — no verificado individualmente, mismo techo esperado — Último chequeo: 2026-09-13
+- [Cape Town City](fuentes/Sudáfrica/Cape Town City.md) — no verificado individualmente, mismo techo esperado — Último chequeo: 2026-09-13
+- [TS Galaxy](fuentes/Sudáfrica/TS Galaxy.md) — no verificado individualmente, mismo techo esperado — Último chequeo: 2026-09-13
+- [Golden Arrows](fuentes/Sudáfrica/Golden Arrows.md) — no verificado individualmente, mismo techo esperado — Último chequeo: 2026-09-13
+- [Notas generales de Sudáfrica](fuentes/Sudáfrica/_notas-generales.md)
+
+### Egipto
+
+- [Al Ahly](fuentes/Egipto/Al Ahly.md) — asociación deportiva, sin regulador que exija publicar — Último chequeo: 2026-09-13
+- [Zamalek](fuentes/Egipto/Zamalek.md) — asociación deportiva, ni transparencia interna confirmada — Último chequeo: 2026-09-13
+- [Notas generales de Egipto](fuentes/Egipto/_notas-generales.md)
+
+### Marruecos
+
+- [Wydad AC](<fuentes/Marruecos/Wydad AC.md>) — SAS real, reporte financiero solo para socios; pista OMPIC sin cerrar — Último chequeo: 2026-09-13
+- [Raja Casablanca](fuentes/Marruecos/Raja Casablanca.md) — SAS con Marsa Maroc al 60%, no consolida; pista OMPIC sin cerrar — Último chequeo: 2026-09-13
+- [Notas generales de Marruecos](fuentes/Marruecos/_notas-generales.md)
+
+### Nigeria
+
+- [Notas generales de Nigeria](fuentes/Nigeria/_notas-generales.md) — dead-end a nivel liga completa (NPFL), clubes mayormente estatales sin registro CAC
+
+### España
+
+**Primer barrido de España (sesión 2026-09-13).** A diferencia de Sudamérica, España no tiene un
+regulador único que centralice balances — cada club S.A.D. publica (o no) por su cuenta. Ver
+`fuentes/España/_notas-generales.md` para los patrones de bloqueo anti-bot encontrados y cómo
+destrabarlos.
+
+- [Real Madrid](<fuentes/España/Real Madrid.md>) — CARGADO (Ejercicio 2024/25), 22 ejercicios reales disponibles en el archivo (2003-2025) — Último chequeo: 2026-09-13
+- [FC Barcelona](<fuentes/España/FC Barcelona.md>) — CARGADO (Ejercicio 2024/25), 22 ejercicios reales disponibles (2003-2025, serie 1978-2003 identificada, sin bajar) — Último chequeo: 2026-09-13
+- [Atlético de Madrid](<fuentes/España/Atlético de Madrid.md>) — CARGADO (Ejercicio 2024/25), 12 ejercicios reales disponibles (2013-2025) — Último chequeo: 2026-09-13
+- [Athletic Club](<fuentes/España/Athletic Club.md>) — CARGADO (Ejercicio 2024/25), 4 ejercicios reales disponibles (2021-2025) — Último chequeo: 2026-09-13
+- [Real Sociedad](<fuentes/España/Real Sociedad.md>) — sin PDFs, cuentas gateadas a accionistas — Último chequeo: 2026-09-13
+- [Sevilla FC](<fuentes/España/Sevilla FC.md>) — CARGADO (Ejercicio 2024/25), 4 ejercicios reales disponibles (2021-2025) + 1 borrador rechazado sin usar — Último chequeo: 2026-09-13
+- [Valencia CF](<fuentes/España/Valencia CF.md>) — CARGADO (Ejercicio 2024/25), 2 ejercicios reales disponibles (2023-2025) — Último chequeo: 2026-09-13
+- [Villarreal CF](<fuentes/España/Villarreal CF.md>) — CARGADO (Ejercicio 2023/24, único ejercicio real disponible en el archivo) — Último chequeo: 2026-09-13
+- [Real Betis](<fuentes/España/Real Betis.md>) — CARGADO (Ejercicio 2024/25), 5 ejercicios reales disponibles (2019-2025, con huecos) — Último chequeo: 2026-09-13
+- [Celta de Vigo](<fuentes/España/Celta de Vigo.md>) — CARGADO (Ejercicio 2024/25 individual), 4 ejercicios reales disponibles (2018-2025, con huecos) — Último chequeo: 2026-09-13
+- [Deportivo Alavés](<fuentes/España/Deportivo Alavés.md>) — CARGADO (Ejercicio 2024/25), 9 ejercicios reales disponibles, serie completa 2016-2025 — Último chequeo: 2026-09-13
+- [Notas generales de España](fuentes/España/_notas-generales.md)
 
 ---
 

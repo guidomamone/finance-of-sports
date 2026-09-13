@@ -37,8 +37,193 @@ no haga falta todavía. Nombre del sitio: "Tu club en números" (antes
 "Boca en Números"; el rename fue solo de branding, el título en <title> y el
 logo del header, no de la carpeta ni del repo).
 
-ESTADO ACTUAL (al día, después de la Versión 101, última de esta sesión, ver detalle de cada
+ESTADO ACTUAL (al día, después de la Versión 112, última de esta sesión, ver detalle de cada
 versión más abajo)
+- AJUSTES DE ARQUITECTURA PARA ESCALAR A 1000 CLUBES (Versión 112, pedido explícito de Guido: mirar
+  atrás en la sesión y arreglar lo que no escala antes de seguir onboardeando). 3 cambios de código:
+  (1) `CLUB_DATA_SCRIPT_SRC` (mapa a mano en index.html, una edición manual por onboarding)
+  reemplazado por convención — `loadClubData(clubId)` arma `data/<clubId>-data.js` directo, sin
+  registro que mantener (`CLUB_DATA_SCRIPT_OVERRIDE`, vacío, para la excepción hipotética). (2)
+  Toggle "Año a año"/"Por gestión" de Finanzas OCULTO (Guido: "no me importa más ese toggle, sacalo
+  o escondelo") — al investigar cómo esconderlo bien se encontró que `renderInicioStats()` (Inicio,
+  la primera pantalla que ve cualquier visitante) rompía igual si un club no tenía ninguna entrada
+  en `gestionesByClub`, toggle escondido o no. Se hizo defensivo en el motor
+  (`currentGestionKey()`/lectores en `js/finanzas-render.js` con `|| {}`, Inicio degrada a "Sin
+  dato") — un club nuevo YA NO necesita agregar una entrada sintética de gestión solo para no
+  crashear. (3) `checkFxSanity()` nuevo (`data/currency-map.js`, corre junto a `verifyTieOuts()`):
+  avisa por consola si el `fx` de un club cae fuera de un rango plausible por moneda — hubiera
+  atrapado de inmediato el bug de fx invertido de España (Versión 111). Regresión completa
+  verificada: 38 clubes, 213 checks de `verifyTieOuts()`, 0 mismatches, 0 warnings, 0 errores de
+  consola. Detalle completo en `Proyecto Boca.md`.
+- PRIMEROS 10 CLUBES ESPAÑOLES ONBOARDEADOS, UN EJERCICIO CADA UNO (Versión 111, sexto país con
+  datos reales; pedido explícito: "dont focus on multiple years of a club, focus on widening
+  clubs"): Real Madrid, FC Barcelona, Atlético de Madrid, Athletic Club, Sevilla FC, Valencia CF,
+  Villarreal CF, Real Betis, Celta de Vigo y Deportivo Alavés, cada uno con el Ejercicio 2024/25
+  (2023/24 para Villarreal, único año real disponible en su archivo) — balance auditado real, texto
+  en `data/<club>-data.js`. `EUR` ya estaba soportado por `CURRENCY_META` desde la Versión 103, así
+  que el toggle de moneda (USD/EUR) funciona para los 10 sin tocar `js/finanzas-calc.js`. Bug real de
+  `fx` encontrado y corregido al mergear: los 10 archivos guardaban `fx` como "USD por 1 EUR" (ej.
+  1,172), el sentido INVERSO al que usa `toDisplayValue()` para el resto de las monedas (todas
+  "moneda nativa por 1 USD") — invertido a 0,8532/0,9337 (EUR por 1 USD) en los 10 archivos, ver
+  comentario de cabecera de `data/realmadrid-data.js`. Los 10 clubes reconcilian EXACTO contra los 3
+  totales impresos de su propio documento (Revenue/Expenses/PAT), verificado con `verifyTieOuts()`
+  (30 checks nuevos, 0 errores) y visualmente en Finanzas. Gotchas reales encontrados: FC Barcelona
+  tiene el texto de sus páginas de balance/PyG deliberadamente ofuscado (ToUnicode reordenado,
+  `pdftotext` da gibberish) — se leyó renderizando esas páginas a imagen; Sevilla/Valencia/
+  Villarreal/Deportivo Alavés son escaneos sin capa de texto (mismo flujo de imagen). Mercado de
+  Pases/Resultados/Títulos vacíos a propósito (alcance de esta sesión fue solo Finanzas). Ver TO-DO
+  para lo que queda: los otros ~9-21 años que cada club tiene disponibles en su propio archivo (a
+  propósito NO cargados esta sesión), Real Sociedad (sin PDFs todavía) y los 5 candidatos nuevos
+  mencionados en `fuentes/España/_notas-generales.md` (Getafe, Mallorca, Deportivo, Ponferradina,
+  Zaragoza).
+- PRIMEROS CLUBES DE COLOMBIA ONBOARDEADOS (Versión 110, quinto país con datos reales): Once Caldas
+  S.A. En Reorganización y Envigado Fútbol Club S.A., Ejercicio 2025 cada uno (vía SIIS/
+  Supersociedades). Envigado reconcilia exacto (el PDF trae el Estado de Resultado Integral primario
+  completo); Once Caldas usa un residuo documentado para `tax` (el PDF descargado solo trae las
+  notas, no el estado primario). fx: TRM oficial de Colombia al 31/12/2025 ($3.757,08 COP/USD),
+  ninguno de los 2 documentos declara su propio tipo de cambio. Deportes Tolima investigado pero NO
+  cargado — 3 cifras de resultado neto en conflicto para el mismo ejercicio, sin poder reconciliar
+  (ver `dudas-por-club.md`). `COP` ya estaba soportado por `CURRENCY_META` desde la Versión 103, así
+  que el toggle de moneda (USD/COP) funciona para estos 2 clubes sin tocar `js/finanzas-calc.js`. A
+  propósito solo se cargó el Ejercicio 2025 de cada club, pese a que Envigado tiene 10 años
+  consecutivos disponibles en SIIS ("widen clubs", no profundizar uno). `gestionesByClub` de estos 2
+  clubes lleva una entrada genérica "Gestión actual" (primer caso real de un club sin ninguna gestión
+  conocida: sociedades anónimas con Representante Legal, no un club asociativo con presidente
+  electo) — encontró y arregló un bug real donde `gestionesByClub[clubId]` vacío rompía el selector
+  "Por gestión". `verifyTieOuts()` verificado en el navegador para los 2 clubes, sin errores de
+  consola. Detalle completo en `Proyecto Boca.md`.
+- PRIMEROS 4 CLUBES DE BRASIL ONBOARDEADOS (Versión 109, cuarto país con datos reales): Grêmio
+  (2024), Botafogo SAF (2024, columna Controladora), Cruzeiro SAF (2025) y Atlético Goianiense
+  (2025, columna Consolidado — la Associação sola quedó chica tras transferir el fútbol profesional
+  a su SAF durante ese año), 1 ejercicio cada uno a propósito ("widen clubs" — quedan 8 clubes de
+  Brasil con PDF ya descargado y sin cargar, ver to-do). Generalizó `ejercicioLabel()`/
+  `populateFinanzasSelectors()`/`inicioTooltipTitle()`/`inicioPeriodLabels()` con
+  `isCalendarYearClub(clubId)` (lee `clubs[clubId].fiscalYearStart`) para que un club de ejercicio
+  calendario (Brasil/México/Japón) muestre "Balance 2024", no un rango de temporada falso tipo
+  "2023/2024" — resuelve el to-do que Club América y Japón habían dejado abierto. De paso encontró
+  un dato incorrecto pero hasta ahora inofensivo: `clubs.river.fiscalYearStart` decía `'01-01'`
+  (corregido a `'09-01'`, el ejercicio real de River). `verifyTieOuts()` pasa para los 4 clubes
+  nuevos, sin regresiones. Detalle completo en `Proyecto Boca.md`.
+- 10 CLUBES DE JAPÓN, J.LEAGUE (Versión 108, tercer país con datos reales): Kashima Antlers, Urawa
+  Red Diamonds, Yokohama F. Marinos, Kawasaki Frontale, Vissel Kobe, Gamba Osaka, Cerezo Osaka, FC
+  Tokyo, Sanfrecce Hiroshima, Nagoya Grampus — Ejercicio 2025, vía el documento de disclosure
+  anual único de la J.League (cubre los ~60 clubes de J1/J2/J3). Hallazgo que corrigió una
+  sobre-estimación del sourcing previo: el documento SOLO da 3 cifras reales por club (Ingreso
+  Total, Sponsor, Gate) — el resto de ingresos y TODOS los costos solo se publican a nivel de
+  división, no por club. `revenueLines` de 3 líneas por club (Sponsor/Gate/Otros residual),
+  reconcilian exacto; `expenseLinesByYear` vacío a propósito (sin costo real por club en esta
+  fuente) — `officialTotalExpenses`/`officialPAT` en `null`, `verifyTieOuts()` solo corre el check
+  de Revenue para estos 10. `JPY` agregado a `CURRENCY_META` (`data/currency-map.js`).
+- CLUB AMÉRICA (MÉXICO), PRIMER CLUB NO ARGENTINO CARGADO CON DATOS REALES (Versión 107): un solo
+  ejercicio, 2025 (año calendario completo), vía el Reporte Financiero BMV de Ollamani, S.A.B. de
+  C.V. — la compañía bursátil (clave AGUILAS) en la que Grupo Televisa escindió su negocio de
+  fútbol + Estadio Azteca/Banorte el 31/01/2024. Club América NO publica balance propio: el dato
+  sale de la Nota de Segmentos IFRS 8 de Ollamani, que reporta un "Segmento de Fútbol" que MEZCLA
+  Club América con el Estadio Banorte (revenue $2,795.643 M MXN, utilidad de segmento $43.911 M
+  MXN, ambos cifras impresas y cruzadas 2 veces contra otra tabla del mismo documento). Documentado
+  explícito, en el rawLabel de la propia línea Y en un comentario extenso de cabecera de
+  `data/clubamerica-data.js`, que esa "utilidad de segmento" NO es un Resultado Neto/PAT real (la
+  propia nota la define como ANTES de D&A y "otros ingresos/gastos, neto") — por eso
+  `officialPAT` queda en `null`, a diferencia de `officialTotalRevenue`/`officialTotalExpenses`
+  (esta última una identidad aritmética exacta, no una cifra impresa con ese nombre). Tampoco hay
+  balance por segmento (solo activos/pasivos TOTALES, no deuda financiera separada de caja), así
+  que `grossDebt`/`cash` quedan en 0/0, con el mismo mecanismo genérico ya existente
+  (`debtDisclosureNote()`) avisando que es "no disponible", no deuda cero real. Se agregó
+  `MXN` a `CURRENCY_META` (`data/currency-map.js`, scale:1, igual que BRL/PEN/EUR — el peso
+  mexicano no necesita "miles de millones" como ARS/CLP/COP). El documento declara DOS tipos de
+  cambio de cierre distintos para el 31/12/2025 ($18.0012 en la sección MD&A vs. $17.9528 en la
+  Nota a los EEFF auditados) — se usó el de la Nota (más autorizado), discrepancia documentada, no
+  promediada ni descartada en silencio. Sin gestión/presidencia tradicional (sociedad bursátil, no
+  asociación civil): se creó una entrada sintética única en `gestionesByClub.clubamerica` para no
+  romper las funciones genéricas que asumen ≥1 gestión por club. Mercado de Pases/Resultados/
+  Títulos quedaron vacíos (alcance de esta carga: solo datos financieros). Transcripción completa
+  en `Clubes/México/Club América/segmento-futbol-2025.md`. `verifyTieOuts()` verificado en el
+  navegador: Revenue y Expenses de Club América cierran exacto (PAT no tiene check, a propósito).
+- PRIMER BARRIDO DE SOURCING EN ESPAÑA, EL MEJOR HALLAZGO DE LA SESIÓN (Versión 106): 10 de 11
+  clubes candidato terminaron con documentos reales (Real Sociedad fue el único dead-end, cuentas
+  gateadas a accionistas). Series largas y sin huecos: Real Madrid y FC Barcelona (22 ejercicios
+  cada uno, 2003-2025), Atlético de Madrid (12 ejercicios, 2013-2025), Deportivo Alavés (9
+  ejercicios, 2016-2025 — la sorpresa de la sesión, mejor cobertura de lo esperado para un club
+  chico). A diferencia de Sudamérica, España no tiene un regulador único (cada club S.A.D. publica
+  por su cuenta); el hallazgo metodológico reusable son los 3 patrones de bloqueo anti-bot
+  encontrados y cómo destrabar cada uno (ver `fuentes/España/_notas-generales.md`). Sourcing puro,
+  nada cargado a `data/*.js` todavía.
+- PRIMER BARRIDO DE SOURCING EN ÁFRICA, 0 PDFS REALES (Versión 105, pedido explícito de buscar
+  clubes africanos desde cero): 4 países investigados a fondo (Sudáfrica, Egipto, Marruecos,
+  Nigeria), ninguno dio un PDF real esta vez, pero los 4 quedaron documentados con el detalle de
+  REGLA 2 (ver `fuentes/<País>/_notas-generales.md` de cada uno y
+  `.claude/skills/club-sourcing/SKILL.md` sección 8). Sudáfrica y Egipto son dead-end ESTRUCTURAL
+  (los clubes de la PSL sudafricana son todos "(Pty) Ltd", categoría que la ley exime de publicar
+  ante el CIPC; Al Ahly/Zamalek son asociaciones sin regulador). Nigeria es dead-end a nivel de
+  LIGA completa (clubes estatales, ni registro CAC). Marruecos es el hallazgo más interesante: sus
+  clubes en transformación a SAS (Wydad, Raja) depositan balances en el registro oficial OMPIC
+  (`directinfo.ma`) — mecanismo real, pero descargar el documento es un servicio pago que un agente
+  no puede completar (no se puede crear cuentas ni ingresar datos de pago); queda documentada la
+  búsqueda exacta a hacer si Guido quiere pagarlo él mismo. Sourcing puro, nada cargado a
+  `data/*.js`.
+- SOURCING ECUADOR, HALLAZGO ESTRUCTURAL: NINGÚN CLUB ES TODAVÍA S.A.D.P./SAD (Versión 104): tarea
+  pedida como "buscar PDFs de S.A.D.P. de 10 clubes ecuatorianos" resultó en un hallazgo más
+  importante que el sourcing en sí: a septiembre de 2026, NINGÚN club ecuatoriano (Barcelona SC,
+  Emelec, LDU Quito, Independiente del Valle, Aucas, Delfín SC, Universidad Católica, El Nacional,
+  Macará, Mushuc Runa, Técnico Universitario, Orense SC) es una S.A.D.P./SAD — todos siguen siendo
+  sociedades civiles sin fines de lucro. La reforma legal que lo habilita recién se publicó
+  11-feb-2026, el reglamento operativo de la Superintendencia de Compañías recién se emitió
+  23/24-jun-2026, y a agosto de 2026 solo 9 de Octubre (categoría inferior) había iniciado el
+  trámite — ningún club grande lo completó. Esto explica por qué el sourcing de Ecuador venía en
+  cero: no es que faltara buscar mejor, es que estructuralmente no existe todavía el tipo de
+  documento buscado. Único hallazgo real de PDF esta sesión: Deportivo Cuenca publicó
+  voluntariamente (ago-2026, nota de prensa propia + Google Drive) un "informe presidencial" con
+  movimientos bancarios (ingresos USD 2,85M/salidas USD 2,78M ene-jun 2026) y pagos SRI/IESS
+  2021-2026 (USD 2,73M acumulados) — es contabilidad de CAJA, no un balance/estado de resultados
+  devengado, así que no encaja directo en el esquema del sitio sin evaluarlo aparte. Los otros 9
+  clubes candidato quedaron en dead-end documentado (sitios sin sección de transparencia, algunos
+  con errores de servidor). Todo esto es sourcing puro — nada cargado a `data/*.js`, ver
+  `fuentes/Ecuador/` y `.claude/skills/club-sourcing/SKILL.md` (sección 5, corregida) para el
+  detalle completo.
+- MONEDA GENERALIZADA A CUALQUIER PAÍS (Versión 103, pedido explícito de Guido, "full native
+  currency toggle for every club", al planear onboardear 90 clubes de 9 países fuera de Argentina):
+  `data/currency-map.js` (nuevo) define `CURRENCY_META` por código ISO ({scale, unitSuffix}) — leer
+  su comentario de cabecera ANTES de tocar moneda, documenta el modelo completo (el toggle de
+  cualquier club es SIEMPRE [nativa <-> USD], nunca 2 monedas no-USD directas; `fx` es SIEMPRE el
+  tipo de cambio que EL DOCUMENTO declaró para ESE cierre puntual, nunca una cotización externa ni
+  reusable entre clubes/ejercicios — "el USD de Boca 2025 no es el USD de River 2024"; y un límite
+  conocido, a propósito no resuelto todavía: un documento puede reportar ALGUNAS líneas ya en USD
+  mientras el resto está en moneda local, el modelo de hoy solo soporta una moneda por EJERCICIO
+  ENTERO, no por línea — documentado como extensión futura, no construido sin un caso real). Antes
+  de esta versión, `toDisplayValue()`/`fmtAmount()` (`js/finanzas-calc.js`) hardcodeaban
+  literalmente 'ARS'/'USD': cualquier otra moneda pasaba SIN CONVERTIR y se etiquetaba "M USD" — un
+  bug silencioso (números mal escalados, unidad incorrecta) que habría afectado al primer club
+  brasileño/chileno/colombiano/peruano/español cargado. El toggle de moneda (`#currencyToggleGlobal`)
+  dejó de ser HTML estático ("USD"/"ARS" fijos): `populateCurrencyToggle(clubId)` lo arma en runtime
+  a partir de `clubs[clubId].reportingCurrency` (ya existía en `data/clubs.js`, pero estaba inerte,
+  nada lo leía). Un club cuyo `reportingCurrency` ya es 'USD' (Ecuador, dolarizado) esconde el toggle
+  entero. De paso: "Formato del club"/"Formato simplificado" (`simplifyToggleWrap`) se desacopló del
+  gate de moneda/país (compartía el mismo `isArgentineClub` por un error de conflación desde la
+  Versión 32) — ahora siempre visible para cualquier club, porque no depende de la moneda.
+- BOCA MIGRADA AL MOTOR GENÉRICO (Versión 102, pedido explícito de Guido: "poné a Boca en el mismo
+  motor que el resto"): yearsRaw/computeYear()/simplifiedReportForBoca()/nativeFinancialsBoca/
+  revenueBreakdown/expenseBreakdown/expenseSubBreakdown se borraron enteros de data/boca-data.js y
+  js/finanzas-calc.js/finanzas-render.js. Boca ahora vive en bocaRevenueLinesByYear/
+  bocaExpenseLinesByYear/bocaFiscalYearMeta (mismo shape que data/river-data.js), registrada en
+  window.CLUB_GENERIC_DATA.boca. 2 decisiones de fondo, explícitamente confirmadas con Guido antes de
+  implementar (ver comentario de cabecera de data/boca-data.js para el detalle completo): (1) el
+  "Revenue" de Boca ahora SÍ incluye ingresos por transferencias de pases (antes se excluían,
+  netos, a profitOnPlayerSales — un comentario viejo decía que esa era "la convención del resto del
+  sitio", lo cual era falso: 8 clubes ya migrados sí suman su venta de jugadores a Revenue). Esto
+  cambió el Revenue 2025 de Boca de $152.899,938548 M a $237.614,566642 M (el Total de Recursos que
+  el propio balance imprime en pág. 76). (2) El desglose de Gastos 2025 (antes por DEPARTAMENTO,
+  vía nativeFinancialsBoca, mezclando sueldos+amortización+opex en una sola línea por área) se
+  reconstruyó volviendo a los anexos originales del balance (Clubes/Argentina/Boca/
+  memoria-y-balance-2024-25.md, Anexos IX/XI-XVIII) para separar la línea "Remuneraciones y cargas
+  sociales" de cada departamento — verificado que las 9 líneas de sueldo así aisladas suman EXACTO
+  el mismo total de sueldos que ya usaba el sitio ($67.869,732365 M), sin inventar ningún número.
+  `finanzasYears`/`finanzasGestiones` (campos nuevos, opcionales, en CLUB_GENERIC_DATA.boca):
+  preservan el recorte de la Versión 81 (Finanzas solo muestra 2024-2027 y la gestión Riquelme;
+  Mercado de Pases/Resultados/Comparar Gestiones siguen viendo los 9 años/3 gestiones completos vía
+  gestionesByClub.boca, sin filtrar). Todos los números re-verificados con un script Node
+  (revenue/expenses/PAT reconcilian exacto contra los 3 checks oficiales de siempre) antes y después
+  de la migración. Ver "MODELO DE DATOS" más abajo (reescrito para esta versión) y Proyecto Boca.md
+  para el detalle completo, incluida la lista de decisiones de diseño consultadas con Guido.
 - SEGUNDA RONDA DE SOURCING SUDAMÉRICA, 3 AGENTES EN PARALELO (Versión 101, Guido: "spend at least
   50% of this season looking for more pdfs for clubs in south america"): profundizó sobre la
   Versión 100. Chile pasó de 11 a **53 PDFs** — Universidad Católica (17 años, 2009-2025 sin
@@ -862,18 +1047,22 @@ versión más abajo)
 
 ARCHIVOS DEL PROYECTO (todos en numeros-de-boca/, salvo que se diga otra cosa)
 - index.html: HTML, CSS, y el <script> principal con toda la lógica de
-  render. Los datos de BOCA siguen viviendo acá adentro (yearsRaw,
-  revenueBreakdown, expenseBreakdown, nativeFinancialsBoca, gestionesInfo,
-  pasesData, resultadosData, titulosData), a propósito no se movieron, para no tocar
-  código ya verificado.
+  render. Desde la Versión 102, TODOS los datos de club (Boca incluida)
+  viven en su propio data/<club>-data.js, ninguno inline acá.
 - data/clubs.js: identidad de cada club (clubs{}), de dónde sale cada
   número con su nivel de confiabilidad (sources{}: primary / secondary_press
   / placeholder), gestiones por club (gestionesByClub{}), socios por club
   (memberCountByClub{}).
 - data/category-map.js: la taxonomía compartida de categorías de
-  ingreso/gasto (REVENUE_CATEGORIES, EXPENSE_CATEGORIES) y el mapeo de las
-  categorías reales de Boca a esa taxonomía (categoryMapByClub.boca), hoy
-  es solo documentación/referencia, Boca no pasa en vivo por este mapeo.
+  ingreso/gasto (REVENUE_CATEGORIES, EXPENSE_CATEGORIES), usada en vivo por
+  TODOS los clubes (Boca incluida desde la Versión 102) vía `normalizedCategory`
+  en cada línea de revenueLines/expenseLines. `categoryMapByClub.boca` (el
+  mapeo campo-viejo -> categoría que se usó como referencia al migrar Boca) es
+  documentación histórica, no se lee en vivo.
+- data/currency-map.js: CURRENCY_META, la tabla de moneda nativa -> {scale,
+  unitSuffix} que generaliza el toggle de moneda a cualquier país (Versión
+  103). Leé el comentario de cabecera antes de onboardear un club con una
+  moneda que no sea ARS/USD/BRL/CLP/COP/PEN/EUR.
 - data/river-data.js, data/racing-data.js: datos de esos dos clubes
   (ingresos/gastos por línea, mercado de pases, resultados deportivos,
   títulos), cada uno con comentarios explicando qué es real y qué es
@@ -909,68 +1098,59 @@ ARCHIVOS DEL PROYECTO (todos en numeros-de-boca/, salvo que se diga otra cosa)
   reabrir el PDF (son escaneos, salen caros en tokens leerlos de nuevo
   página por página).
 
-MODELO DE DATOS: DOS FUENTES DE DATOS, UNA SOLA CAPA DE DISPLAY (free tier)
-- CÁLCULO (sin tocar desde la Versión 14): BOCA sigue con yearsRaw{} (9
-  rubros de Revenue + rubros de gasto + gestion por ejercicio) y
-  computeYear(year); RIVER/RACING con el motor genérico (buscar
-  "MULTI-CLUB" en el <script>): computeYearGeneric(clubId, year), sobre
-  listas de líneas {rawLabel, normalizedCategory, amountNative,
-  disclosureLevel} (revenueLines/expenseLines), porque cada club reporta una
-  cantidad distinta de rubros reales. Estas funciones alimentan los KPIs de
-  arriba de Finanzas, los gráficos, "Comparar Gestiones" y verifyTieOuts(),
-  no se tocaron en la Versión 14, siguen devolviendo revenue/expenses/pat
-  agregados igual que siempre.
-- DISPLAY (nuevo en la Versión 14): la tabla "Estado de resultados" ya NO
-  usa plRows/renderPLTable ni plRowsGeneric/renderPLTableGeneric (esas 4
-  funciones se borraron). Ahora hay una sola función,
-  renderNativePLTable(clubId, curYear, prevYear, curLabel, prevLabel,
-  containerId), que llama a nativeReportFor(clubId, year) para armar
-  {ingresos, gastos, extraRows, resultLabel} con las categorías REALES de
-  ese club/ejercicio (no las 9 de siempre) y las pinta como dos acordeones
-  (Ingresos, Gastos) con subtotal cada uno + filas sueltas + resultado
-  final. Ver "MODELO DE PRODUCTO FREE/PREMIUM" arriba y la Versión 14 más
-  abajo para el porqué. nativeReportFor() tiene 3 ramas:
-  1. nativeFinancialsBoca[year] si existe (hoy: 2025, con las 11 categorías
-     de Ingresos y 17 de Gastos reales del balance auditado, cada una con
-     sus sub-ítems reales donde el documento los desglosa).
-  2. year===2027 (Boca): arma el reporte desde revenueBreakdown[2027] +
-     expenseBreakdown[2027] (los mismos datos reales de siempre, ahora
-     reusados por la función genérica en vez de por plRows).
-  3. Fallback genérico: para los ejercicios de Boca sin documento propio
-     (placeholder) usa los mismos 9 campos de yearsRaw de siempre como
-     "categorías", y el resto de campos (amortización, intereses, etc.)
-     como filas sueltas, ya no fuerza los subtotales EBITDA/EBIT.
-  Para River/Racing, nativeReportFor() lee directo cur.revenueLines /
-  cur.expenseLines (rawLabel tal cual la fuente), el motor genérico ya
-  estaba en el formato correcto para esto, no hizo falta tocarlo.
-  OJO bug ya encontrado y corregido: como "gastos" ahora lista TODAS las
-  expenseLines sin filtrar, no hay que sumarle además cur.nonCash ni
-  cur.exceptionalItems (son sub-sumas de esas mismas líneas por
-  normalizedCategory), pasó con River, que si categoriza líneas propias de
-  amortización/depreciación, y sumaba doble. profitOnPlayerSales/assetSales/
-  netInterest/tax sí vienen de otro lado (fiscalYearMeta) y no se duplican.
-- yearMeta(year) / toDisplayValue(...): SOLO para Boca. Cada ejercicio tiene
-  una "moneda nativa", placeholder en USD (FX_RATE=1450 placeholder), el
-  Ejercicio 2027 en ARS reales con su propio tipo de cambio ($1.660,
-  promedio del propio presupuesto), el Ejercicio 2025 en ARS reales con el
-  tipo de cambio de CIERRE del ejercicio ($1.203, no un promedio, ver
-  comentario en yearMeta() sobre por qué). La conversión a la moneda que se
-  muestra en pantalla pasa SIEMPRE en el momento de renderizar, nunca al
-  cargar el dato. ERROR YA COMETIDO Y CORREGIDO UNA VEZ: no guardar un
-  valor pre-convertido con un tipo de cambio y reconvertirlo después con
-  otro. Si tocás yearsRaw/yearMeta, mantené esa separación.
-- El toggle USD/ARS vive DENTRO de Finanzas y solo aparece para Boca (River
-  y Racing no tienen una cotización propia cargada, así que siempre
-  muestran USD, sin toggle). El botón CTA de Premium (premiumCtaBtn) se
-  SACÓ en la Versión 30, prometía como feature paga algo que el toggle
-  "Formato simplificado" (Versión 29) ya hace gratis; Guido pidió sacarlo
+MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versión 102)
+- CÁLCULO: TODOS los clubes, Boca incluida, pasan por computeYearGeneric(clubId,
+  year) (buscar "MULTI-CLUB" en el <script>), sobre listas de líneas {rawLabel,
+  normalizedCategory, amountNative, disclosureLevel} (revenueLinesByYear/
+  expenseLinesByYear, ver data/<club>-data.js), porque cada club reporta una
+  cantidad distinta de rubros reales. Boca ya NO tiene un yearsRaw{}/computeYear()
+  propio (migración completa: ver comentario de cabecera de data/boca-data.js para
+  el detalle de cómo se reconcilió su balance 2025, que hasta esa migración vivía
+  en DOS estructuras paralelas sin cruzar entre sí). Estas funciones alimentan los
+  KPIs de arriba de Finanzas, los gráficos, "Comparar Gestiones" y verifyTieOuts().
+- DISPLAY: la tabla "Estado de resultados" usa una sola función,
+  renderNativePLTable(clubId, year, curLabel, containerId), que llama a
+  nativeReportFor(clubId, year) para armar {ingresos, gastos, extraRows,
+  resultLabel} con las categorías REALES de ese club/ejercicio (no un set fijo de
+  9) y las pinta como dos acordeones (Ingresos, Gastos) con subtotal cada uno +
+  filas sueltas + resultado final. nativeReportFor() lee directo
+  cur.revenueLines/cur.expenseLines (rawLabel tal cual la fuente), para
+  CUALQUIER club — ya no hay ramas especiales por club. OJO bug ya encontrado y
+  corregido: como "gastos" lista TODAS las expenseLines sin filtrar, no hay que
+  sumarle además cur.nonCash ni cur.exceptionalItems (son sub-sumas de esas
+  mismas líneas por normalizedCategory) — pasó con River, que categoriza líneas
+  propias de amortización/depreciación, y sumaba doble. profitOnPlayerSales/
+  assetSales/netInterest/tax sí vienen de otro lado (fiscalYearMeta) y no se
+  duplican.
+- yearMetaFor(clubId, year) / toDisplayValue(...): para CUALQUIER club. Cada
+  ejercicio tiene una "moneda nativa" declarada en <club>FiscalYearMeta[year]
+  (currency/fx) — placeholder en USD (FX_RATE=1450 placeholder) o ARS reales con
+  el tipo de cambio que el propio documento declara (ej. Boca 2027: $1.660,
+  promedio del propio presupuesto; Boca 2025: $1.203, tipo de cambio de CIERRE
+  del ejercicio, no un promedio, ver comentario en bocaFiscalYearMeta sobre por
+  qué). La conversión a la moneda que se muestra en pantalla pasa SIEMPRE en el
+  momento de renderizar, nunca al cargar el dato. ERROR YA COMETIDO Y CORREGIDO
+  UNA VEZ: no guardar un valor pre-convertido con un tipo de cambio y
+  reconvertirlo después con otro.
+- El toggle de moneda vive DENTRO del header (aplica a Inicio y Finanzas) y muestra
+  [moneda nativa del club / USD] para CUALQUIER club (Versión 103, ver
+  `populateCurrencyToggle()` en el <script> y el comentario de cabecera de
+  `data/currency-map.js` para el modelo completo — `CURRENCY_META` por código ISO,
+  USD siempre como pivote). Un club cuyo `reportingCurrency` ya es 'USD' (ej.
+  Ecuador) no tiene nada que togglear, el toggle se esconde entero para ese caso.
+  "Formato del club"/"Formato simplificado" (`simplifyToggleWrap`) es un toggle
+  DISTINTO, ya desacoplado de la moneda/país (antes compartían el mismo gate por
+  error): siempre visible para cualquier club, porque depende de `normalizedCategory`
+  en las líneas, no de qué moneda reporta el club. El botón CTA de Premium
+  (premiumCtaBtn) se SACÓ en la Versión 30, prometía como feature paga algo que el
+  toggle "Formato simplificado" (Versión 29) ya hace gratis; Guido pidió sacarlo
   en vez de dejarlo diciendo algo falso.
 - Verificación automática: verifyTieOuts() corre sola al cargar el sitio y
-  compara, por consola del navegador, la suma de rubros contra el total
-  oficial conocido de cada club-ejercicio. Hoy chequea Boca 2027 (Revenue),
-  Boca 2025 (Revenue excluyendo transferencias de pases, y Resultado neto
-  vs. el Superávit del ejercicio impreso) y Racing 2026 (Revenue y
-  Expenses). Si agregás un ejercicio con total conocido, sumalo a esta
+  compara, por consola del navegador, la suma de rubros contra el total oficial
+  conocido de cada club-ejercicio. Un solo loop itera `window.CLUB_GENERIC_DATA`
+  leyendo officialTotalRevenue/officialTotalExpenses/officialPAT de cada
+  `fiscalYearMeta[year]` — agregar un club o ejercicio nuevo con total conocido
+  significa sumar esos 3 campos en su propio data/<club>-data.js, no tocar esta
   función.
 
 QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB (esto es lo que más cambia entre
@@ -1105,6 +1285,58 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
   dentro del mismo archivo, transcriptos vía OCR). Único ejercicio cargado,
   con parte del Anexo de Gastos a nivel agregado por limitación del OCR (ver
   `dudas-por-club.md`). Mercado de Pases/Resultados/Títulos = vacíos.
+- BRASIL, 4 clubes nuevos (Versión 109): Grêmio (2024, no es SAF), Botafogo (2024, SAF columna
+  Controladora, déficit real pese al título de Libertadores+Brasileirão ese año, ver comentario de
+  cabecera de `data/botafogo-data.js`), Cruzeiro (2025, SAF), Atlético Goianiense (2025, columna
+  Consolidado). 1 ejercicio cada uno a propósito, ver ESTADO ACTUAL arriba. 8 clubes más de Brasil
+  quedan con PDF descargado y sin cargar (to-do).
+- ONCE CALDAS (club nuevo, Versión 110, primer club colombiano del sitio): Ejercicio 2025 (año
+  calendario, estados financieros auditados reales vía SIIS) = REAL, único ejercicio cargado a
+  propósito. El PDF descargado son las notas a los estados financieros (no el estado primario) — el
+  PAT está confirmado triple dentro del documento, pero `tax` en `fiscalYearMeta` es un residuo
+  documentado (no una línea impresa), ver `dudas-por-club.md`. `gestionesByClub` con una entrada
+  genérica "Gestión actual" (no se conoce/aplica una atribución de presidencia como en los clubes
+  argentinos). Mercado de Pases/Resultados/Títulos = vacíos.
+- ENVIGADO (club nuevo, Versión 110): Ejercicio 2025 (año calendario, estados financieros auditados
+  reales vía SIIS, transcripto por OCR) = REAL, único ejercicio cargado a propósito (SIIS tiene 10
+  ejercicios consecutivos 2016-2025 disponibles para este club, pendiente para una sesión futura). El
+  PDF SÍ trae el Estado de Resultado Integral primario completo — reconciliación exacta, sin ningún
+  residuo. Mismas notas que Once Caldas sobre `gestionesByClub`. Mercado de Pases/Resultados/Títulos
+  = vacíos.
+- DEPORTES TOLIMA: investigado (PDFs descargados, transcripción completa en `Clubes/Colombia/
+  Deportes Tolima/`) pero NO CARGADO — 3 cifras de resultado neto del Ejercicio 2025 en conflicto
+  entre sí (SIIS, la tabla histórica del propio documento, y la suma línea por línea de las notas),
+  sin poder reconciliar con el PDF disponible (solo notas, no el estado primario). Ver
+  `dudas-por-club.md` para el detalle y la pregunta pendiente. Ingresos SÍ confirmados con alta
+  confianza si se retoma.
+- ESPAÑA, 10 CLUBES NUEVOS (Versión 111), un solo ejercicio cada uno, todos REAL (balance auditado):
+  REAL MADRID Ejercicio 2024/25 (consolidado, 22 años disponibles en el archivo 2003-2025, solo se
+  cargó el más reciente a propósito). FC BARCELONA Ejercicio 2024/25 (consolidado, 22 años
+  disponibles 2003-2025). ATLÉTICO DE MADRID Ejercicio 2024/25 (individual, 12 años disponibles
+  2013-2025). ATHLETIC CLUB Ejercicio 2024/25 (individual, 4 años disponibles 2021-2025;
+  amortización cargada entera como depreciation, no player_amortisation, por la política de cantera
+  del club, ver comentario en data/athleticclub-data.js). SEVILLA FC Ejercicio 2024/25 (individual,
+  4 años disponibles 2021-2025; Patrimonio Neto NEGATIVO al cierre, pérdida de EUR 54 M). VALENCIA
+  CF Ejercicio 2024/25 (individual, solo 2 ejercicios reales en el archivo). VILLARREAL CF Ejercicio
+  2023/24 (ÚNICO ejercicio real disponible en el archivo; el documento no desglosa la cifra de
+  negocios por concepto, ni separa amortización de jugadores del resto, ver aproximaciones
+  documentadas en data/villarrealcf-data.js). REAL BETIS Ejercicio 2024/25 (individual, 5 ejercicios
+  con huecos en el archivo). CELTA DE VIGO Ejercicio 2024/25 (individual, elegido sobre el
+  consolidado disponible del mismo año, 4 ejercicios con huecos). DEPORTIVO ALAVÉS Ejercicio 2024/25
+  (individual, 9 años consecutivos disponibles 2016-2025, sin deuda bancaria en el balance). Los 10
+  clubes tienen `gestionesByClub` con una única entrada genérica (no se investigó presidencia real,
+  fuera de alcance de esta sesión) y Mercado de Pases/Resultados/Títulos vacíos. Ver TO-DO para
+  profundizar años o sumar clubes nuevos (Real Sociedad, Getafe, Mallorca, Deportivo, Ponferradina,
+  Zaragoza).
+- JAPÓN, 10 clubes nuevos vía J.League (Versión 108): Ejercicio 2025, solo Revenue real por club
+  (Sponsor/Gate/Otros), sin costos por club disponibles en la fuente — ver ESTADO ACTUAL arriba.
+- CLUB AMÉRICA (México, club nuevo, primer club no argentino, Versión 107): Ejercicio 2025 (año
+  calendario completo) = REAL, pero a nivel de SEGMENTO de negocio de Ollamani, S.A.B. (Revenue +
+  utilidad de segmento, sin balance patrimonial ni desglose de costos por rubro). Revenue mezcla
+  Club América con Estadio Banorte (ver ESTADO ACTUAL arriba y comentario de cabecera de
+  `data/clubamerica-data.js` para el detalle completo). `officialPAT` deliberadamente `null` (la
+  utilidad de segmento no es un PAT comparable). Ejercicio 2024 (11 meses, período inicial de la
+  compañía) NO se cargó a propósito (ver to-do). Mercado de Pases/Resultados/Títulos = vacíos.
 
 TO-DO LIST, EN ORDEN DE PRIORIDAD (esto es lo que hay que preguntarle a Guido
 o directamente retomar en la próxima sesión)
@@ -1267,12 +1499,9 @@ o directamente retomar en la próxima sesión)
     Presupuesto de Inversiones) para aliviar el volumen de contenido, pero
     siguen las 3 al fondo de Finanzas, no en un tab propio, evaluar si
     hace falta ese paso también más adelante.
-11. (Baja prioridad): el CÁLCULO sigue con dos motores (computeYear para
-    Boca, computeYearGeneric para River/Racing), el DISPLAY ya se unificó
-    en la Versión 14 (renderNativePLTable sirve a los 3 clubes), pero
-    computeYear/computeYearGeneric en sí no se tocaron. Evaluar unificarlos
-    también solo si en algún momento la duplicación genera fricción real,
-    no hacerlo por prolijidad sola.
+11. RESUELTO en la Versión 102: el CÁLCULO ya no tiene dos motores — Boca se migró a
+    computeYearGeneric() igual que todos los demás clubes, computeYear()/yearMeta()/
+    simplifiedReportForBoca() se borraron. Ver "MODELO DE DATOS" más abajo y Proyecto Boca.md.
 12. ACTUALIZADO Versión 95 (Guido: "onboard all pdfs we have"): de los 11 clubes con al menos un
     balance/memoria real ya descargado que identificó la investigación de la Versión 75 (ver
     `fuentes-por-club.md`, sección "Otros clubes de Primera División"), TODOS fueron revisados a
@@ -1300,6 +1529,71 @@ o directamente retomar en la próxima sesión)
     Ver `dudas-por-club.md` para las preguntas genuinas que quedaron abiertas de esta sesión
     (atribución de gestión con cambio de presidente a mitad de ejercicio, cotizaciones de USD
     ambiguas, columnas de Anexo no separables por OCR) — no se asumió ningún criterio a ciegas.
+
+13. NUEVO (Versión 104): Ecuador — evaluar si el "informe presidencial" de Deportivo Cuenca (caja:
+    ingresos/egresos bancarios + pagos SRI/IESS, ver `fuentes/Ecuador/Deportivo Cuenca.md`) es
+    cargable al sitio pese a no ser un estado contable devengado (sin balance/estado de resultados
+    completo) — decidir con Guido antes de forzarlo al esquema existente, o anotar la duda en
+    `dudas-por-club.md`. Aparte: re-chequear Ecuador en unos meses, cuando la prensa reporte que
+    algún club de la lista completó su conversión a S.A.D.P./SAD (ver hallazgo de esta sesión: a
+    sept-2026 ninguno lo hizo todavía) — recién ahí tendría sentido buscar en Supercias.
+
+14. NUEVO (Versión 105): sourcing en África, 0 PDFs conseguidos pero una pista concreta sin cerrar
+    en Marruecos. Wydad AC y Raja Club Athletic tienen SAS (sociedad anónima) reales que deberían
+    depositar su bilan (balance) en el registro oficial marroquí OMPIC (`directinfo.ma`) — la
+    búsqueda por nombre es gratis, pero descargar el documento es pago y requiere una cuenta que un
+    agente no puede crear. Si Guido quiere pagarlo él mismo: entrar a `directinfo.ma`, buscar "RAJA
+    CLUB ATHLETIC SOCIETE ANONYME RAJA" y "WYDAD ATHLETIC CLUB", confirmar primero (gratis) si
+    figura un bilan depositado antes de pagar nada — ver `fuentes/Marruecos/_notas-generales.md`
+    para el detalle completo. Sudáfrica, Egipto y Nigeria quedaron como dead-end estructural (ver
+    `.claude/skills/club-sourcing/SKILL.md` sección 8), no vale la pena reintentarlos sin un dato
+    nuevo.
+
+15. NUEVO (Versión 107): Club América/Ollamani — decidir si vale la pena cargar el Ejercicio 2024
+    (período inicial de 11 meses, 1/2/2024 a 31/12/2024, PDF ya descargado en
+    `Clubes/México/Club América/reporte-financiero-ollamani-2024-auditado.pdf`) como 2do punto de
+    la serie histórica, aun sin ser directamente comparable a un año completo. Aparte: preguntarle
+    a Guido (o anotar en `dudas-por-club.md`) si vale la pena escribirle a Ollamani Investor
+    Relations para resolver la discrepancia de tipo de cambio de cierre 31/12/2025 declarada en el
+    mismo reporte ($18.0012 en la sección MD&A vs. $17.9528 en la Nota a los EEFF auditados, ver
+    `data/clubamerica-data.js`). Por último: `fuentes/México/_notas-generales.md` señala que otros
+    grupos matriz de Liga MX que ya cotizan en BMV por otro negocio (FEMSA-Monterrey/Tigres,
+    CEMEX-Tigres) podrían desglosar fútbol como segmento en SUS PROPIOS reportes CNBV, igual que
+    Ollamani — vale la pena chequear antes de asumir que el hallazgo de Club América es único en
+    Liga MX. RESUELTO (al onboardear los primeros clubes de Brasil): `ejercicioLabel(year,
+    reportType, clubId)` ahora recibe un 3er parámetro opcional `clubId`; si `isCalendarYearClub(clubId)`
+    (lee `clubs[clubId].fiscalYearStart === '01-01'`) el label es el año suelto ("Balance 2025"), no
+    el rango de temporada. Aplica automáticamente a Club América, Japón y cualquier club de año
+    calendario futuro con solo declarar `fiscalYearStart:'01-01'` en `data/clubs.js`, sin tocar
+    `js/finanzas-calc.js` de nuevo.
+
+16. NUEVO (Versión 109): Brasil — quedan 8 clubes con PDF YA DESCARGADO en `Clubes/Brasil/` sin
+    cargar todavía (a propósito, prioridad "widen clubs" sobre profundizar los 4 ya cargados):
+    Athletico Paranaense (2 ejercicios, no es SAF), Bahia (SAF + associação, decidir qué entidad
+    usar), Botafogo-SP (5 ejercicios, NO es el Botafogo carioca), Chapecoense (3 ejercicios, no es
+    SAF), Coritiba (2 ejercicios, SAF desde jul-2023), Ituano (1 ejercicio, no es SAF), Mirassol (1
+    ejercicio, no es SAF), Vasco da Gama (2 SAF + 1 associação, recuperado pese a bloqueo
+    Cloudflare del dominio oficial). Para cada uno: 1 solo ejercicio, seguir el patrón de
+    `data/gremio-data.js`/`data/cruzeiro-data.js`. Aparte: Deportes Tolima (Colombia) quedó sin
+    cargar por una discrepancia real de 3 cifras de PAT distintas entre SIIS/el documento/la cuenta
+    propia (ver `dudas-por-club.md`) — no forzar un número hasta resolver cuál es la correcta.
+17. NUEVO (Versión 110): Once Caldas tiene `tax` como residuo documentado (no una línea impresa) por
+    falta del estado primario en el PDF descargado (solo notas) — si en el futuro aparece el Estado
+    de Resultado Integral primario, reemplazar el residuo por el dato real (ver `dudas-por-club.md`).
+    Envigado tiene 9 ejercicios más (2016-2024) disponibles en SIIS sin cargar, a propósito (pedido
+    explícito de ampliar clubes esta sesión, no profundizar uno). El resto del barrido colombiano
+    (América de Cali, Atlético Nacional, Independiente Santa Fe, Junior de Barranquilla, Deportivo
+    Cali, Deportivo Pereira, Millonarios) sigue sin cargar, solo sourcing — ver `fuentes-por-club.md`.
+18. NUEVO (Versión 111): España — los 10 clubes cargados tienen MUCHOS más años disponibles sin
+    cargar todavía en `Clubes/España/<Club>/` (Real Madrid y Barcelona: 22 años cada uno, 2003-2025;
+    Atlético de Madrid: 12 años; Deportivo Alavés: 9 años; Real Betis/Celta de Vigo: con huecos;
+    Villarreal/Valencia solo tienen 1-2 años reales en el archivo actual) — próxima extensión
+    natural es sumar el ejercicio anterior de cada club para habilitar comparación año a año, o
+    seguir sumando clubes nuevos: Real Sociedad (carpeta creada, sin PDFs encontrados todavía) y los
+    5 candidatos de `fuentes/España/_notas-generales.md` (Getafe CF, RCD Mallorca, RC Deportivo, SD
+    Ponferradina, Real Zaragoza, cada uno con página propia de "Ley de Transparencia" confirmada por
+    búsqueda, sin explorar en profundidad). También pendiente: investigar `memberCountByClub` y
+    `gestionesByClub` (presidentes reales) para los 10 clubes, ninguno investigado esta sesión.
 
 SI ALGO NO CIERRA (números, totales)
 Antes de tocar nada, correr una verificación aritmética simple (sumar las
@@ -1567,10 +1861,10 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       <button data-section="cuenta">Mi Cuenta</button>
     </nav>
     <div class="header-right">
-      <div class="segmented header-currency-toggle" id="currencyToggleGlobal" title="Moneda: aplica a Inicio y Finanzas">
-        <button data-currency="USD" class="active">USD</button>
-        <button data-currency="ARS">ARS</button>
-      </div>
+      <!-- Versión 103: ya no 2 <button> fijos ("USD"/"ARS") — se generan por club en
+           populateCurrencyToggle() (ver <script> principal), porque cada club puede tener una
+           moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
+      <div class="segmented header-currency-toggle" id="currencyToggleGlobal" title="Moneda: aplica a Inicio y Finanzas"></div>
       <!-- Versión 101 (refactor de escalabilidad, a pedido de Guido): este <select> arrancaba
            vacío en el HTML — antes tenía un <option> por club tipeado a mano acá mismo, había que
            acordarse de agregar uno nuevo en la posición alfabética correcta cada vez que se sumaba
@@ -1617,7 +1911,14 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
 
     <div class="controls">
-      <div class="segmented" id="viewToggle">
+      <!-- "Por gestión" oculto desde la Versión 112 (pedido de Guido, escalando a 1000 clubes: la
+           mayoría de los clubes nuevos no tienen presidencia/gestión real confirmada, solo una
+           entrada sintética "Gestión actual" — el toggle dejó de aportar valor). Mismo criterio que
+           ya se usa para las pestañas Pases/Resultados/Comparar (Versión 56, "ocultos por ahora"):
+           se esconde la UI, NO se borra gestionesByClub ni el código de cálculo por gestión, para
+           poder traerlo de vuelta sin reconstruir nada si en el futuro hace falta para los clubes
+           argentinos que sí tienen gestión real. -->
+      <div class="segmented" id="viewToggle" style="display:none;">
         <button data-view="anio" class="active">Año a año</button>
         <button data-view="gestion">Por gestión</button>
       </div>
@@ -2088,7 +2389,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
     <div class="card">
       <h2>Calidad de dato por club</h2>
-      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;">El sitio ahora cubre varios clubes, y cada uno tiene un nivel de dato distinto, se marca con un aviso en cada sección cuando corresponde. <strong>Boca</strong> tiene el Ejercicio 2024/2025 (balance auditado) y 2026/2027 (presupuesto) reales, el resto (2018-2023) sigue siendo placeholder mientras se consiguen los balances históricos del club. <strong>Racing</strong> tiene su archivo público 100% cargado: 13 ejercicios consecutivos 2008/09-2020/21 más 2023/2024 a 2026/2027, todos con datos oficiales reales (varios ejercicios con presupuesto Y balance del mismo año, columna comparativa "Presupuesto"/"Balance"). <strong>River</strong> tiene un solo ejercicio real (2023/2024, balance auditado conseguido en una réplica de la comunidad de hinchas tuRiver, no del dominio oficial — el club solo publica la Memoria narrativa, sin estados contables); el resto sigue siendo placeholder a la espera de que aparezca el documento oficial o otra réplica confiable. <strong>Vélez Sarsfield</strong> tiene su archivo público 100% cargado: los 11 ejercicios consecutivos 2014/15 a 2024/2025, todos con datos oficiales reales (3 de ellos — 2015, 2016 y 2017 — transcriptos por OCR porque el club solo publicó el escaneo, no el PDF con texto). <strong>Instituto Atlético Central Córdoba</strong>, <strong>Rosario Central</strong> e <strong>Independiente</strong> tienen cada uno un ejercicio real (2023/2024, 2022/2023 y 2023/2024 respectivamente, todos balances auditados), con el resto de sus archivos pendiente. <strong>Argentinos Juniors</strong> tiene 5 ejercicios reales consecutivos (2015-2019), pero a nivel agregado (4 categorías, desde una presentación de asamblea comparativa, no un balance completo con Anexos). <strong>Estudiantes de La Plata</strong> tiene 3 ejercicios reales consecutivos (2022-2024) con detalle completo por Anexo. <strong>San Lorenzo</strong> tiene 2 ejercicios reales consecutivos (2013-2014). <strong>Unión</strong> tiene un ejercicio real (2025), el primer club del sitio cargado desde un PDF con páginas nativas y páginas escaneadas mezcladas en el mismo archivo. El toggle USD/ARS y Formato del club/simplificado están disponibles para todos los clubes argentinos, cada ejercicio real usa el tipo de cambio que declara su propio balance/presupuesto, no una cotización externa. La lista de dónde salió cada fuente vive en <code>fuentes-por-club.md</code>, en la misma carpeta del sitio.</p>
+      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;">El sitio ahora cubre varios clubes, y cada uno tiene un nivel de dato distinto, se marca con un aviso en cada sección cuando corresponde. <strong>Boca</strong> tiene el Ejercicio 2024/2025 (balance auditado) y 2026/2027 (presupuesto) reales, el resto (2018-2023) sigue siendo placeholder mientras se consiguen los balances históricos del club. <strong>Racing</strong> tiene su archivo público 100% cargado: 13 ejercicios consecutivos 2008/09-2020/21 más 2023/2024 a 2026/2027, todos con datos oficiales reales (varios ejercicios con presupuesto Y balance del mismo año, columna comparativa "Presupuesto"/"Balance"). <strong>River</strong> tiene un solo ejercicio real (2023/2024, balance auditado conseguido en una réplica de la comunidad de hinchas tuRiver, no del dominio oficial — el club solo publica la Memoria narrativa, sin estados contables); el resto sigue siendo placeholder a la espera de que aparezca el documento oficial o otra réplica confiable. <strong>Vélez Sarsfield</strong> tiene su archivo público 100% cargado: los 11 ejercicios consecutivos 2014/15 a 2024/2025, todos con datos oficiales reales (3 de ellos — 2015, 2016 y 2017 — transcriptos por OCR porque el club solo publicó el escaneo, no el PDF con texto). <strong>Instituto Atlético Central Córdoba</strong>, <strong>Rosario Central</strong> e <strong>Independiente</strong> tienen cada uno un ejercicio real (2023/2024, 2022/2023 y 2023/2024 respectivamente, todos balances auditados), con el resto de sus archivos pendiente. <strong>Argentinos Juniors</strong> tiene 5 ejercicios reales consecutivos (2015-2019), pero a nivel agregado (4 categorías, desde una presentación de asamblea comparativa, no un balance completo con Anexos). <strong>Estudiantes de La Plata</strong> tiene 3 ejercicios reales consecutivos (2022-2024) con detalle completo por Anexo. <strong>San Lorenzo</strong> tiene 2 ejercicios reales consecutivos (2013-2014). <strong>Unión</strong> tiene un ejercicio real (2025), el primer club del sitio cargado desde un PDF con páginas nativas y páginas escaneadas mezcladas en el mismo archivo. <strong>Club América</strong> (primer club fuera de Argentina) tiene un ejercicio real (2025), pero con una salvedad importante: el club no publica balance propio, el dato sale de la Nota de Segmentos ("Segmento de Fútbol") de Ollamani, S.A.B. de C.V., la compañía bursátil mexicana que controla al club desde 2024 — ese segmento incluye, además de Club América, el negocio del Estadio Banorte, sin desglose posible entre los dos, y no trae balance patrimonial (deuda/caja) a nivel de segmento, solo ingresos y una utilidad operativa antes de depreciación e impuestos. El toggle USD/ARS y Formato del club/simplificado están disponibles para todos los clubes argentinos, cada ejercicio real usa el tipo de cambio que declara su propio balance/presupuesto, no una cotización externa (Club América usa el toggle análogo MXN/USD). La lista de dónde salió cada fuente vive en <code>fuentes-por-club.md</code>, en la misma carpeta del sitio.</p>
     </div>
   </section>
 
@@ -2139,6 +2440,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
 <script src="data/clubs.js"></script>
 <script src="data/category-map.js"></script>
+<script src="data/currency-map.js"></script>
 <script src="data/boca-data.js"></script>
 <script src="js/finanzas-calc.js"></script>
 <script src="js/finanzas-render.js"></script>
@@ -2171,30 +2473,36 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   // ---------- CARGA BAJO DEMANDA (LAZY LOADING) DE DATOS POR CLUB ----------
   // Boca es el club default (carga siempre, vía data/boca-data.js en el <head>, igual que antes).
-  // River y Racing (~17 KB y ~46 KB respectivamente) ya NO se bajan en el <head>: se inyectan como
-  // <script> recién cuando el visitante elige ese club en `clubSelect`, así alguien que solo mira
-  // Boca no paga el peso de los otros 2 clubes. `clubDataLoaded` cachea qué ya se bajó, para no
-  // volver a pedir el archivo si el visitante va y vuelve entre clubes en la misma visita.
-  const CLUB_DATA_SCRIPT_SRC = { river: 'data/river-data.js', racing: 'data/racing-data.js', velez: 'data/velez-data.js', instituto: 'data/instituto-data.js', rosariocentral: 'data/rosariocentral-data.js', independiente: 'data/independiente-data.js', argentinosjuniors: 'data/argentinosjuniors-data.js', estudianteslp: 'data/estudianteslp-data.js', sanlorenzo: 'data/sanlorenzo-data.js', union: 'data/union-data.js' };
+  // Cualquier otro club se inyecta como <script> recién cuando el visitante lo elige en
+  // `clubSelect`, así alguien que solo mira Boca no paga el peso de los demás. `clubDataLoaded`
+  // cachea qué ya se bajó, para no volver a pedir el archivo si el visitante va y vuelve entre
+  // clubes en la misma visita.
+  //
+  // CONVENCIÓN (Versión 112, reemplaza el mapa CLUB_DATA_SCRIPT_SRC que había que editar a mano en
+  // cada onboarding): el archivo de datos de CUALQUIER club es SIEMPRE `data/<clubId>-data.js` — se
+  // construye el path directo desde `clubId`, no hay ningún registro que mantener. Confirmado que
+  // los ~35 clubes cargados hasta ahora siguen esta convención sin excepción (ver
+  // `.claude/skills/club-or-year-onboarding/SKILL.md` para el recipe completo de onboarding, que ya
+  // asumía este nombre de archivo). Si alguna vez aparece un club real que necesite un nombre de
+  // archivo distinto, agregar una entrada a `CLUB_DATA_SCRIPT_OVERRIDE` (abajo) en vez de volver al
+  // mapa completo — no reintroducir la convención vieja "por las dudas".
+  const CLUB_DATA_SCRIPT_OVERRIDE = {};
   const clubDataLoaded = { boca: true };
   function loadClubData(clubId){
-    if(clubDataLoaded[clubId] || !CLUB_DATA_SCRIPT_SRC[clubId]) return Promise.resolve();
+    if(clubDataLoaded[clubId] || !clubs[clubId]) return Promise.resolve();
+    const src = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubId + '-data.js');
     return new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = CLUB_DATA_SCRIPT_SRC[clubId];
+      script.src = src;
       script.onload = () => { clubDataLoaded[clubId] = true; resolve(); };
-      script.onerror = () => reject(new Error('No se pudo cargar ' + CLUB_DATA_SCRIPT_SRC[clubId]));
+      script.onerror = () => reject(new Error('No se pudo cargar ' + src));
       document.head.appendChild(script);
     });
   }
 
   function refreshFinanzas(){
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    if(currentClub === 'boca'){
-      isGestion ? updateFinanzasByGestion() : updateFinanzasByAnio();
-    } else {
-      isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
-    }
+    isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
     renderPresupuestoFinancieroWaterfall();
     renderClubSourceNote();
@@ -2214,23 +2522,14 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     // contenido real si existe o un mensaje explícito de "no hay" si no, es la regla que pidió
     // Guido, no algo condicional por club. La clase `.bocaPresupuestoOficialCard` ya no tiene
     // ningún elemento en el HTML.
-    // USD/ARS y Formato del club/simplificado (Versión 32): antes solo Boca. Ahora se muestran para
-    // CUALQUIER club argentino (clubs[clubId].country === 'AR', hoy los 3 clubes cargados lo son),
-    // porque los 3 tienen ahora amountNative en ARS nativo + fx propio (ver yearMetaFor). Si en el
-    // futuro se agrega un club de otro país (ej. Flamengo, Brasil, reportingCurrency !== 'ARS'), ese
-    // club sigue sin el toggle, no tiene sentido un toggle USD/BRL con la lógica actual, pensada
-    // para ARS<->USD.
-    const isArgentineClub = clubs[currentClub] && clubs[currentClub].country === 'AR';
-    document.getElementById('currencyToggleGlobal').style.display = isArgentineClub ? '' : 'none';
-    if(!isArgentineClub && currentCurrency !== 'USD'){
-      currentCurrency = 'USD';
-      document.querySelectorAll('#currencyToggleGlobal button').forEach(b => b.classList.toggle('active', b.dataset.currency === 'USD'));
-    }
-    document.getElementById('simplifyToggleWrap').style.display = isArgentineClub ? '' : 'none';
-    if(!isArgentineClub && simplifyFormat){
-      simplifyFormat = false;
-      document.querySelectorAll('#simplifyToggle button').forEach(b => b.classList.toggle('active', b.dataset.simplify === '0'));
-    }
+    // Toggle de moneda (Versión 32: antes solo Boca; Versión 103: nativa/USD para CUALQUIER club,
+    // ver populateCurrencyToggle() y el comentario de cabecera de data/currency-map.js).
+    populateCurrencyToggle(currentClub);
+    // "Formato del club" / "Formato simplificado" (`simplifyToggleWrap`): SIEMPRE visible para
+    // cualquier club (Versión 103 — antes estaba atado al mismo gate `isArgentineClub` que la
+    // moneda, una conflación accidental: este toggle no depende de la moneda ni del país, depende
+    // de si el club tiene `normalizedCategory` en sus líneas, y TODOS los clubes lo tienen desde
+    // que Boca se migró al motor genérico en la Versión 102).
     refreshFinanzas();
     populatePasesSelectors(currentClub);
     applyPasesFilters();
@@ -2294,16 +2593,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   // misma función con el clubId recién cargado, para no perder la verificación, solo diferirla al
   // momento en que el dato efectivamente llega.
   function verifyTieOuts(onlyClub){
-    const checks = [
-      { club:'boca', year:2027, label:'Revenue', computed: computeYear(2027).revenue, official: 239392.104 },
-      // Ejercicio 2025: "Revenue" del sitio excluye ingresos por transferencias de pases (van netos a
-      // profitOnPlayerSales, ver comentario en yearsRaw), así que el oficial contra el que se compara acá
-      // es Total de Recursos (pág. 76) MENOS las 2 líneas de transferencias/rescisión, no el total crudo
-      // del balance ($237.614,566642 M). PAT sí se compara contra el Superávit del ejercicio tal cual está
-      // impreso, porque esa fila no tiene ninguna exclusión.
-      { club:'boca', year:2025, label:'Revenue (excl. transferencias de pases)', computed: computeYear(2025).revenue, official: 152899.938548 },
-      { club:'boca', year:2025, label:'Resultado neto (PAT) vs. Superávit del ejercicio', computed: computeYear(2025).pat, official: 35581.462204 },
-    ];
+    const checks = [];
     // Versión 101 (refactor de escalabilidad, a pedido de Guido): hasta acá, cada club del motor
     // genérico tenía su propio bloque copy-pasteado (un `if(typeof <club>FiscalYearMeta...)` +
     // checks a mano o un mini-mapa `officialPat` + forEach), ~250 líneas en total y creciendo con
@@ -2312,8 +2602,9 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     // data/<club>-data.js, al lado de donde ya vivían los primeros dos campos) — agregar un club o
     // un ejercicio nuevo YA NO requiere tocar esta función, solo agregar esos 3 campos al año
     // correspondiente en el archivo del club. Este loop único reemplaza los ~11 bloques por club que
-    // había antes; itera todo lo que haya en `window.CLUB_GENERIC_DATA` (Boca no está ahí, sigue
-    // siendo un caso aparte arriba, con su propio motor `computeYear`).
+    // había antes; itera todo lo que haya en `window.CLUB_GENERIC_DATA` (Versión 102: Boca también
+    // está ahí, sus 3 checks de siempre — Revenue 2027/2025 y PAT 2025 — salen de este mismo loop
+    // ahora, ver bocaFiscalYearMeta en data/boca-data.js).
     // officialPAT se omite (sin 3er check) en años que son PRESUPUESTO puro sin balance auditado
     // (ej. Racing 2019/2026/2027): no hay un "Superávit/Déficit del ejercicio" real impreso contra
     // qué comparar. Mismo criterio de siempre, ahora expresado como "el campo no está" en vez de
@@ -2344,25 +2635,20 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   }
 
   // ---------- MULTI-CLUB: acceso por club para Pases/Resultados/Comparar/Inicio ----------
-  // Boca sigue siendo pasesData/resultadosData/titulosData/gestionesInfo (sin tocar, en
-  // data/boca-data.js). River y Racing viven en sus archivos data/*.js, cargados bajo demanda (ver
-  // loadClubData más abajo) — por eso esto son FUNCIONES, no un objeto armado de una: un const
-  // `{ river: riverPasesData, ... }` evaluaría `riverPasesData` al cargar la página, y como ese
-  // archivo todavía no se bajó en ese momento (solo se carga cuando el usuario elige River/Racing),
-  // tiraría ReferenceError. Una función solo lee `riverPasesData` cuando efectivamente se LLAMA, y
-  // eso pasa siempre después de que loadClubData(clubId) ya resolvió (ver el listener de
-  // `clubSelect` más abajo), momento en el que el archivo ya está cargado.
-  // Versión 95: usa el registro CLUB_GENERIC_DATA (ver data/instituto-data.js) en vez de la cadena
-  // de ternarios de siempre — un club nuevo del motor genérico ya no necesita tocar esta función.
-  // Boca no se registra ahí (no usa el motor genérico), por eso el fallback explícito.
+  // Todos los clubes (Boca incluida desde la Versión 102) viven en el registro CLUB_GENERIC_DATA (ver
+  // data/instituto-data.js para el comentario original de este registro) — un club nuevo del motor
+  // genérico no necesita tocar estas 3 funciones. River/Racing/etc. se cargan bajo demanda (ver
+  // loadClubData más abajo), pero eso no afecta a estas funciones: solo se llaman después de que
+  // loadClubData(clubId) ya resolvió (ver el listener de `clubSelect` más abajo), momento en el que
+  // CLUB_GENERIC_DATA[clubId] ya existe.
   function pasesDataForClub(clubId){
-    return CLUB_GENERIC_DATA[clubId] ? CLUB_GENERIC_DATA[clubId].pasesData : pasesData;
+    return CLUB_GENERIC_DATA[clubId].pasesData;
   }
   function resultadosDataForClub(clubId){
-    return CLUB_GENERIC_DATA[clubId] ? CLUB_GENERIC_DATA[clubId].resultadosData : resultadosData;
+    return CLUB_GENERIC_DATA[clubId].resultadosData;
   }
   function titulosDataForClub(clubId){
-    return CLUB_GENERIC_DATA[clubId] ? CLUB_GENERIC_DATA[clubId].titulosData : titulosData;
+    return CLUB_GENERIC_DATA[clubId].titulosData;
   }
 
   // ---------- NAVEGACIÓN ----------
@@ -2379,20 +2665,49 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
   // ---------- CURRENCY TOGGLE (universal, header: afecta Inicio Y Finanzas) ----------
   // Antes vivía solo dentro de Finanzas (#currencyToggleFin, adentro de sus controles). Guido pidió
-  // que sea universal, al lado del selector de club, porque Inicio también necesita mostrar ARS.
-  // "Comparar Gestiones" sigue ignorando este toggle a propósito (ver displayFinancialsForClub en
-  // js/finanzas-calc.js, muestra USD siempre, es una vista pensada para comparar clubes/gestiones
-  // entre sí, no se presta a que quede a mitad en ARS de un lado y USD del otro).
-  document.querySelectorAll('#currencyToggleGlobal button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#currencyToggleGlobal button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentCurrency = btn.dataset.currency;
-      refreshFinanzas();
-      renderInicioStats();
-      renderInicioCharts();
-    });
+  // que sea universal, al lado del selector de club, porque Inicio también necesita mostrar la
+  // moneda nativa. "Comparar Gestiones" sigue ignorando este toggle a propósito (ver
+  // displayFinancialsForClub en js/finanzas-calc.js, muestra USD siempre, es una vista pensada para
+  // comparar clubes/gestiones entre sí, no se presta a que quede a mitad en una moneda de un lado y
+  // USD del otro).
+  //
+  // Versión 103 (a pedido de Guido, "full native currency toggle for every club", ver comentario de
+  // cabecera de data/currency-map.js para el modelo completo): los 2 <button> ya NO son HTML
+  // estático (antes literalmente "USD"/"ARS" fijos) — se regeneran por club en
+  // `populateCurrencyToggle()` (llamada desde `refreshAllForClub()`), mismo criterio que
+  // `populateClubSelect()`. Como los botones se regeneran, el listener de click se delega en el
+  // contenedor fijo `#currencyToggleGlobal` (que sí existe siempre en el HTML) en vez de
+  // engancharse a cada <button> individual (que se destruyen y recrean).
+  document.getElementById('currencyToggleGlobal').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-currency]');
+    if(!btn) return;
+    document.querySelectorAll('#currencyToggleGlobal button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCurrency = btn.dataset.currency;
+    refreshFinanzas();
+    renderInicioStats();
+    renderInicioCharts();
   });
+
+  // Arma el toggle [moneda nativa del club / USD] para `clubId`. Un club cuyo `reportingCurrency`
+  // (data/clubs.js) YA ES 'USD' (ej. Ecuador, oficialmente dolarizado) no tiene nada que togglear:
+  // el contenedor entero se esconde, mismo criterio que ya existía para clubes sin cotización propia
+  // antes de esta versión. `currentCurrency` se resetea a USD al cambiar de club SOLO si la moneda
+  // elegida no tiene sentido para el club nuevo (ej. veníamos de ver ARS y el club nuevo es en BRL);
+  // entre 2 clubes de la MISMA moneda nativa (ej. dos clubes argentinos), la elección se conserva.
+  function populateCurrencyToggle(clubId){
+    const wrap = document.getElementById('currencyToggleGlobal');
+    const native = clubs[clubId].reportingCurrency;
+    if(native === 'USD'){
+      wrap.style.display = 'none';
+      currentCurrency = 'USD';
+      return;
+    }
+    wrap.style.display = '';
+    if(currentCurrency !== 'USD' && currentCurrency !== native) currentCurrency = 'USD';
+    wrap.innerHTML = `<button data-currency="USD" class="${currentCurrency === 'USD' ? 'active' : ''}">USD</button>` +
+      `<button data-currency="${native}" class="${currentCurrency === native ? 'active' : ''}">${native}</button>`;
+  }
 
   // ---------- TOGGLE "FORMATO DEL CLUB" / "FORMATO SIMPLIFICADO" (Estado de resultados, solo Boca) ----------
   document.querySelectorAll('#simplifyToggle button').forEach(btn => {
@@ -2434,8 +2749,10 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   // fuera el default. Se llama acá también para que el dropdown sea SIEMPRE el generado por JS,
   // no dependa de que el visitante cambie de club para corregirse solo.
   populateFinanzasSelectors(currentClub);
+  populateCurrencyToggle(currentClub);
   refreshFinanzas();
   verifyTieOuts();
+  checkFxSanity();
   applyPasesFilters();
   renderResultados();
   renderTitulosTable();

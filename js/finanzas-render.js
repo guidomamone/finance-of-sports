@@ -242,7 +242,7 @@
     // otro ejercicio, así que reusa `ejercicioLabel(year, 'official_budget')` (`js/finanzas-calc.js`)
     // para armar "Presupuesto AAAA/AAAA" con el mismo formato que cualquier otro prefijo+año.
     document.getElementById(containerId+'CurLabel').innerHTML = wrapHeaderLabel(curLabel);
-    document.getElementById(containerId+'PrevLabel').innerHTML = overlayReport ? wrapHeaderLabel(ejercicioLabel(year, 'official_budget')) : '—';
+    document.getElementById(containerId+'PrevLabel').innerHTML = overlayReport ? wrapHeaderLabel(ejercicioLabel(year, 'official_budget', clubId)) : '—';
     document.getElementById(containerId).classList.toggle('pl-hide-compare', !overlayReport);
     syncPLTableColgroup(!overlayReport);
 
@@ -330,167 +330,12 @@
   }
 
 
-  function renderDebtBlock(cur, prev, containerId){
-    document.getElementById(containerId+'CurLabel').textContent = cur.yearLabel;
-    document.getElementById(containerId+'PrevLabel').textContent = prev ? prev.yearLabel : '—';
-    const curMeta = yearMeta(cur.year);
-    const prevMeta = prev ? yearMeta(prev.year) : null;
-    const rows = [
-      {label:'Salarios / Ingresos', curTxt:(cur.wagesToTurnover*100).toFixed(0)+'%', prevTxt: prev ? (prev.wagesToTurnover*100).toFixed(0)+'%' : '—'},
-      {label:'Deuda bruta', cur:cur.grossDebt, prev: prev ? prev.grossDebt : null, bold:true},
-      {label:'Caja', cur:cur.cash, prev: prev ? prev.cash : null},
-      {label:'Deuda neta', cur:cur.netDebt, prev: prev ? prev.netDebt : null, bold:true, shade:true},
-    ];
-    document.querySelector('#'+containerId+' tbody').innerHTML = rows.map(r => {
-      const trCls = [r.bold?'pl-bold':'', r.shade?'pl-shade':''].join(' ');
-      const curVal = r.curTxt !== undefined ? r.curTxt : fmtDisplay(toDisplayValue(r.cur, curMeta, currentCurrency));
-      const prevVal = r.prevTxt !== undefined ? r.prevTxt : (r.prev !== null ? fmtDisplay(toDisplayValue(r.prev, prevMeta, currentCurrency)) : '—');
-      return `<tr class="${trCls}"><td>${r.label}</td><td>${curVal}</td><td>${prevVal}</td></tr>`;
-    }).join('');
-    const curUndisclosed = bocaYearIsReal(cur.year) && cur.grossDebt === 0 && cur.cash === 0;
-    const prevUndisclosed = !!prev && bocaYearIsReal(prev.year) && prev.grossDebt === 0 && prev.cash === 0;
-    document.getElementById('finanzasDebtNote').textContent = debtDisclosureNote(curUndisclosed, cur.yearLabel, prevUndisclosed, prev ? prev.yearLabel : '');
-  }
-
-
-  // Los ejercicios placeholder (sin balance/presupuesto oficial cargado) se grafican como `null`,
-  // no como el número inventado. Chart.js deja esa barra vacía en vez de mostrar un dato falso
-  // como si fuera real. Se completa a medida que se cargan balances reales (ver bocaYearIsReal()).
-  function drawTrendChart(computedArr){
-    if(typeof Chart === 'undefined') return;
-    const ctx = document.getElementById('trendChart').getContext('2d');
-    const labels = computedArr.map(c => String(c.year));
-    const revenueData = computedArr.map(c => bocaYearIsReal(c.year) ? toDisplayValue(c.revenue, yearMeta(c.year), currentCurrency) : null);
-    const expensesData = computedArr.map(c => bocaYearIsReal(c.year) ? Math.abs(toDisplayValue(c.expenses, yearMeta(c.year), currentCurrency)) : null);
-    if(trendChartInst) trendChartInst.destroy();
-    trendChartInst = new Chart(ctx, {
-      type:'bar',
-      data:{labels, datasets:[
-        {label:'Ingresos', data:revenueData, backgroundColor:'#0a2b5c'},
-        {label:'Gastos', data:expensesData, backgroundColor:'#b5372b'},
-      ]},
-      // layout.padding.top: deja un margen libre arriba del área de trazado para que el "$" de
-      // .chart-axis-dollar (span de HTML superpuesto, ver CSS) no quede tapado por/tapando la
-      // etiqueta del tick más alto del eje Y, bug real reportado por Guido con captura: sin este
-      // padding, el tick de arriba (ej. "90") se dibuja casi en el mismo pixel donde está
-      // posicionado el "$", y quedan superpuestos/ilegibles los dos.
-      options:{responsive:true, maintainAspectRatio:false, layout:{padding:{top:26}}, plugins:{legend:{position:'bottom'}}, scales:{y:{beginAtZero:true, title:{display:false}}, x:{title:{display:true, text:'Ejercicio'}}}}
-    });
-  }
-
-
-  function drawBreakdownChart(cur){
-    if(typeof Chart === 'undefined') return;
-    const ctx = document.getElementById('breakdownChart').getContext('2d');
-    const meta = yearMeta(cur.year);
-    const otros = (cur.otrosDeportes||0) + (cur.basketProfesional||0) + (cur.futbolJuvenil||0) + (cur.futbolFemenino||0);
-    const raw = [cur.cuotasSociales||0, cur.comerciales||0, cur.exhibicionEspectaculos||0, cur.abonos||0, cur.diversos||0, otros];
-    const vals = raw.map(v => toDisplayValue(v, meta, currentCurrency));
-    if(breakdownChartInst) breakdownChartInst.destroy();
-    breakdownChartInst = new Chart(ctx, {
-      type:'doughnut',
-      data:{labels:['Cuotas Sociales','Comerciales','Exhibición Espect.','Abonos','Diversos','Otros'], datasets:[{data:vals, backgroundColor:['#0a2b5c','#f2b705','#1b7a3d','#8a5cf6','#b5372b','#6b6b6b']}]},
-      // Leyenda a la derecha, en una sola columna: así queda siempre alineada (cada referencia
-      // arranca del mismo borde), a diferencia de 'bottom' que envolvía filas de largo dispar.
-      options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'right', align:'start'}}},
-      plugins:[pctSliceLabelsPlugin]
-    });
-  }
-
-
-  // gastosTotal/ingresosTotal (opcionales): el "Total Gastos"/"Total Ingresos" YA calculados por
-  // renderNativePLTable para este mismo ejercicio, en la moneda que se está mostrando, así estos
-  // stats de arriba usan el mismo número que la tabla de abajo, sea cual sea el toggle activo
-  // (Formato del club/Formato simplificado). Si no se pasan, caen al cálculo viejo (cur.revenue/
-  // cur.expenses) por las dudas.
-  //
-  // BUG REAL corregido acá (Versión 42, reportado por Guido: "ingresos en un lado te suma un
-  // numero y en otro, otro" para Boca 2024/2025): el fix de "Gastos" (usar gastosTotal en vez de
-  // cur.expenses) ya existía desde antes, pero el mismo fix nunca se había aplicado a "Ingresos".
-  // Ese stat seguía usando cur.revenue siempre, que para Boca EXCLUYE ingresos por venta de
-  // jugadores (van netos a profitOnPlayerSales/PAT, no a "revenue", por diseño). Resultado: el
-  // Ejercicio 2025 mostraba 3 números de "Ingresos" distintos, sin explicar por qué difieren: el
-  // stat de arriba (152.899,94 M ARS, sin transferencias), "Formato del club" (237.614,57 M ARS,
-  // transferencias BRUTAS incluidas como líneas propias, tal cual las reporta nativeFinancialsBoca)
-  // y "Formato simplificado" (218.319,23 M ARS, ganancia NETA por venta de jugadores incluida como
-  // fila "Venta de Jugadores"). El stat de arriba ahora usa ingresosTotal (mismo criterio que ya
-  // regía para Gastos), así que SIEMPRE coincide con el total que se ve en la tabla de abajo, sea
-  // cual sea el toggle. Las diferencias entre "Formato del club" y "Formato simplificado" siguen
-  // existiendo (son un criterio de presentación distinto, no un error), pero ya no hay una tercera
-  // cifra más arriba que no coincide con ninguna de las dos.
-  // extraTotal (opcional, Versión 61: pedido explícito de Guido, "agregar Int en los cards del
-  // inicio [de Finanzas] en los cuales se hace un breve resumen... cualquiera que vea Ingresos y
-  // Egresos y vea que no cuadra con el Resultado neto va a pensar que es poco seria la página"):
-  // Ingresos y Gastos de estos stats NUNCA incluían la fila "Intereses netos" (u otras extraRows)
-  // que sí participan del Resultado neto de abajo, así que Ingresos-Gastos podía no dar el
-  // Resultado neto mostrado, sin que nada en pantalla explicara la diferencia. El stat "Int." (iguala
-  // a `extraTotal` de renderNativePLTable, mismo número que ya se suma en "Estado de resultados")
-  // cierra la cuenta a simple vista: Ingresos + Gastos + Int. = Resultado neto. Si no se pasa
-  // (ningún call site actual), no se agrega el stat, para no romper otro llamador futuro que no lo
-  // tenga disponible.
-  function renderFinanzasStatsFromComputed(cur, gastosTotal, ingresosTotal, extraTotal){
-    const meta = yearMeta(cur.year);
-    const revenueDisp = ingresosTotal !== undefined ? ingresosTotal : toDisplayValue(cur.revenue, meta, currentCurrency);
-    const expensesDisp = gastosTotal !== undefined ? Math.abs(gastosTotal) : Math.abs(toDisplayValue(cur.expenses, meta, currentCurrency));
-    const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
-    const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
-    const extraStat = extraTotal !== undefined
-      ? `<div class="stat"><div class="label" title="Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto">Int.</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
-      : '';
-    document.getElementById('finanzasStats').innerHTML = `
-      <div class="stat"><div class="label">Ingresos</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">Gastos</div><div class="value">${fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
-      ${extraStat}
-      <div class="stat"><div class="label">Resultado neto</div><div class="value ${cur.pat>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">Deuda neta</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
-    `;
-  }
-
-
-  function updateFinanzasByGestion(){
-    const key = document.getElementById('gestionSelect').value;
-    const g = gestionesInfo[key];
-    const cur = computeYear(g.lastYear);
-    const prev = g.firstYear !== g.lastYear ? computeYear(g.firstYear) : null;
-    const plTotals = renderNativePLTable('boca', cur.year, cur.yearLabel, 'finanzasPLTable');
-    renderFinanzasStatsFromComputed(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
-    renderDebtBlock(cur, prev, 'finanzasDebtTable');
-    const years = []; for(let y=g.firstYear; y<=g.lastYear; y++){ if(yearsRaw[y]) years.push(y); }
-    drawTrendChart(years.map(y => computeYear(y)));
-    drawBreakdownChart(cur);
-    renderSupuestosCard('boca', g.lastYear);
-    renderPresupuestoFinancieroCard('boca', g.lastYear);
-    renderPresupuestoInversionesCard('boca', g.lastYear);
-    renderTorneosCard('boca', g.lastYear);
-  }
-
-
-  function updateFinanzasByAnio(){
-    const y = parseInt(document.getElementById('anioSelect').value, 10);
-    const cur = computeYear(y);
-    const prev = yearsRaw[y-1] ? computeYear(y-1) : null;
-    const plTotals = renderNativePLTable('boca', cur.year, cur.yearLabel, 'finanzasPLTable');
-    renderFinanzasStatsFromComputed(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
-    renderDebtBlock(cur, prev, 'finanzasDebtTable');
-    // Versión 81: array explícito de los años que Finanzas muestra (ya NO deriva de
-    // Object.keys(yearsRaw) — yearsRaw sigue teniendo los 5 años placeholder de siempre, ver
-    // comentario en data/boca-data.js, porque Comparar Gestiones/Pases/Resultados todavía los usan;
-    // si este gráfico leyera yearsRaw directo, esos 5 volverían a aparecer acá). Mismo criterio que
-    // gestionesInfo/el <select> de abajo: estos 4 son los únicos años que Finanzas expone.
-    const allYears = [2024,2025,2026,2027];
-    drawTrendChart(allYears.map(yy => computeYear(yy)));
-    drawBreakdownChart(cur);
-    renderSupuestosCard('boca', y);
-    renderPresupuestoFinancieroCard('boca', y);
-    renderPresupuestoInversionesCard('boca', y);
-    renderTorneosCard('boca', y);
-  }
-
-
-  // La tabla "tal cual la muestra el club" (renderNativePLTable, más arriba) ya cubre River/Racing
-  // también: nativeReportFor() lee cur.revenueLines/expenseLines directo (rawLabel tal cual la
-  // fuente), así que no hace falta una versión "Generic" separada de plRows/renderPLTable.
-
+  // La tabla "tal cual la muestra el club" (renderNativePLTable, más arriba) ya cubre TODOS los
+  // clubes (Boca incluida desde la Versión 102): nativeReportFor() lee cur.revenueLines/expenseLines
+  // directo (rawLabel tal cual la fuente), así que no hace falta una versión "Generic" separada de
+  // plRows/renderPLTable. Los nombres "...Generic" de las funciones de abajo quedaron del período en
+  // que coexistían con un motor Boca-only propio (ya no existe); no se renombraron para no arrastrar
+  // un cambio cosmético de riesgo innecesario sobre esta migración.
   function renderDebtBlockGeneric(cur, prev, containerId){
     document.getElementById(containerId+'CurLabel').textContent = cur.yearLabel;
     document.getElementById(containerId+'PrevLabel').textContent = prev ? prev.yearLabel : '—';
@@ -513,8 +358,8 @@
     }).join('');
     // Misma regla general que renderDebtBlock (Boca): un año oficial (no placeholder) con
     // Deuda bruta = Caja = 0 es un documento que no desglosa deuda, no una deuda real de cero.
-    const curUndisclosed = cur.meta.reportType !== 'placeholder' && cur.grossDebt === 0 && cur.cash === 0;
-    const prevUndisclosed = !!prev && prev.meta.reportType !== 'placeholder' && prev.grossDebt === 0 && prev.cash === 0;
+    const curUndisclosed = cur.meta.reportType !== 'placeholder' && cur.meta.reportType !== 'pending_official' && cur.grossDebt === 0 && cur.cash === 0;
+    const prevUndisclosed = !!prev && prev.meta.reportType !== 'placeholder' && prev.meta.reportType !== 'pending_official' && prev.grossDebt === 0 && prev.cash === 0;
     document.getElementById('finanzasDebtNote').textContent = debtDisclosureNote(curUndisclosed, cur.yearLabel, prevUndisclosed, prev ? prev.yearLabel : '');
   }
 
@@ -604,7 +449,7 @@
 
 
   function updateFinanzasByGestionGeneric(clubId){
-    const gestiones = gestionesByClub[clubId];
+    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     const key = document.getElementById('gestionSelect').value;
     const g = gestiones[key];
     if(!g) return;
@@ -646,47 +491,35 @@
     // ejercicio puntual no existe para el club nuevo. Sin esto, el <select> siempre volvía a la
     // primera opción (el ejercicio más lejano, si la lista no estaba ordenada, ver más abajo).
     const previousYear = parseInt(anioSelect.value, 10);
-    let years;
-    if(clubId === 'boca'){
-      // Versión 81: se sacó ameal/angelici de este <select> (quita los años placeholder de
-      // Finanzas, ver gestionesInfo en data/boca-data.js) — SOLO acá, `gestionesByClub.boca`
-      // (data/clubs.js), que alimenta Pases/Resultados/Comparar/Inicio, sigue con las 3 gestiones.
-      gestionSelect.innerHTML = `<option value="riquelme">Riquelme (2023-actual)</option>`;
-      // REGLA (Versión 56): el sufijo entre paréntesis sale de `anioDropdownSuffix(reportTypeForYear(...))`
-      // (js/finanzas-calc.js), no de un texto suelto por año como antes (cada uno redactado
-      // distinto: "presupuestado", "esperando datos"). Ver el comentario de esa función para el
-      // detalle de qué reportType mapea a qué palabra.
-      // REGLA (Versión 61, pedido explícito de Guido: "que no aparezca 'ejercicio 2020/2021' sino
-      // '2020/2021'. Ejercicio sino queda muy redundante y agota la vista"): sin el prefijo
-      // "Ejercicio " que tenían todas las opciones antes, el rango de años solo. El prefijo sigue
-      // vivo en OTRO lugar (el header "Ejercicio/Balance/Presupuesto AAAA/AAAA" de la tabla Estado
-      // de resultados, `ejercicioLabel()`), esto solo afecta el texto del propio `<select>`.
-      // Versión 81: array explícito de los 4 años reales/pending que Finanzas expone para Boca (no
-      // Object.keys(yearsRaw) — ese objeto sigue con los 5 años placeholder de siempre, ver
-      // comentario en data/boca-data.js, así que derivar de ahí los volvería a mostrar acá).
-      years = [2027,2026,2025,2024].map(value => ({
-        value, label:(value-1)+'/'+value+anioDropdownSuffix(reportTypeForYear('boca', value)),
-      }));
-    } else {
-      const gestiones = gestionesByClub[clubId];
-      gestionSelect.innerHTML = Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
-      // Ternario, no un objeto armado de una (ver mismo comentario en drawTrendChartGeneric): con
-      // lazy-loading, el club que no se está mirando puede no estar cargado todavía.
-      const meta = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
-      // Object.keys() de un objeto con claves numéricas ("2024","2025"...) las devuelve SIEMPRE en
-      // orden ASCENDENTE (son "integer-like keys". JS las reordena así sin importar el orden en el
-      // código fuente), por eso salía el ejercicio más viejo primero. Se ordena acá a mano,
-      // descendente, mismo criterio que la lista de Boca arriba.
-      // El dropdown de River/Racing luce igual que el de Boca (`#anioSelect` estático +
-      // `populateFinanzasSelectors` más arriba). El sufijo entre paréntesis sale de
-      // `anioDropdownSuffix()` (js/finanzas-calc.js, Versión 56), mismo criterio y mismas 4
-      // palabras posibles que usa Boca arriba. Sin el prefijo "Ejercicio " (Versión 61, ver mismo
-      // comentario en la rama de Boca arriba): antes decía "Ejercicio AAAA/AAAA", ahora solo el
-      // rango de años.
-      years = Object.keys(meta).map(Number).sort((a,b) => b - a).map(y => ({
-        value:y, label: (y-1)+'/'+y+anioDropdownSuffix(meta[y].reportType),
-      }));
-    }
+    // finanzasGestiones/finanzasYears (Versión 102, ver comentario de cabecera en data/boca-data.js):
+    // campos OPCIONALES en CLUB_GENERIC_DATA[clubId], para un club que quiera mostrar en el <select>
+    // de Finanzas menos gestiones/años de los que tiene cargados en gestionesByClub/fiscalYearMeta
+    // (Boca: solo Riquelme y los 4 ejercicios reales/pendientes, ver Versión 81 del historial, "quita
+    // los años placeholder de Finanzas" — Mercado de Pases/Resultados/Comparar Gestiones siguen
+    // usando el set completo, sin filtrar, vía gestionesByClub/fiscalYearMeta directo). Cualquier
+    // club sin estos 2 campos (el resto) muestra TODAS sus gestiones/años, sin cambios.
+    const gd = CLUB_GENERIC_DATA[clubId];
+    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
+    const gestionKeys = gd.finanzasGestiones || Object.keys(gestiones);
+    gestionSelect.innerHTML = gestionKeys.map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
+    // REGLA (Versión 56): el sufijo entre paréntesis sale de `anioDropdownSuffix(reportType)` (mismo
+    // criterio para cualquier club), no de un texto suelto por año (cada uno redactado distinto:
+    // "presupuestado", "esperando datos"). REGLA (Versión 61, pedido explícito de Guido: "que no
+    // aparezca 'ejercicio 2020/2021' sino '2020/2021'. Ejercicio sino queda muy redundante y agota la
+    // vista"): sin el prefijo "Ejercicio " que tenían todas las opciones antes, el rango de años solo.
+    // El prefijo sigue vivo en OTRO lugar (el header "Ejercicio/Balance/Presupuesto AAAA/AAAA" de la
+    // tabla Estado de resultados, `ejercicioLabel()`), esto solo afecta el texto del propio `<select>`.
+    // Object.keys() de un objeto con claves numéricas ("2024","2025"...) las devuelve SIEMPRE en
+    // orden ASCENDENTE (son "integer-like keys", JS las reordena así sin importar el orden en el
+    // código fuente), por eso se ordena acá a mano, descendente.
+    const meta = gd.fiscalYearMeta;
+    const yearKeys = gd.finanzasYears || Object.keys(meta).map(Number);
+    // AGREGADO al onboardear Brasil: `isCalendarYearClub` (js/finanzas-calc.js) evita el rango de
+    // temporada "AAAA-1/AAAA" para un club cuyo ejercicio es el año calendario — mismo criterio que
+    // ejercicioLabel(), ver su comentario para el detalle de por qué el rango sería falso acá.
+    const years = yearKeys.slice().sort((a,b) => b - a).map(y => ({
+      value:y, label: (isCalendarYearClub(clubId) ? String(y) : (y-1)+'/'+y)+anioDropdownSuffix((meta[y]||{}).reportType),
+    }));
     anioSelect.innerHTML = years.map(y => `<option value="${y.value}">${y.label}</option>`).join('');
     if(!isNaN(previousYear) && years.length){
       const exact = years.find(y => y.value === previousYear);
@@ -830,17 +663,8 @@
   function renderDataQualityBannerForCurrentSelection(){
     const banner = document.getElementById('finanzasDataQualityBanner');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    let meta;
-    if(currentClub === 'boca'){
-      const year = isGestion ? gestionesInfo[document.getElementById('gestionSelect').value].lastYear : parseInt(document.getElementById('anioSelect').value, 10);
-      meta = year === 2027 ? { reportType:'official_budget', sourceId:'boca-presupuesto-2026-27' }
-        : year === 2025 ? { reportType:'official_balance_sheet', sourceId:'boca-balance-2024-25' }
-        : (year === 2024 || year === 2026) ? { reportType:'pending_official', sourceId:null }
-        : { reportType:'placeholder', sourceId:'boca-placeholder-historico' };
-    } else {
-      const year = isGestion ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear : parseInt(document.getElementById('anioSelect').value, 10);
-      meta = (CLUB_GENERIC_DATA[currentClub].fiscalYearMeta[year]) || {};
-    }
+    const year = isGestion ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear : parseInt(document.getElementById('anioSelect').value, 10);
+    const meta = (CLUB_GENERIC_DATA[currentClub].fiscalYearMeta[year]) || {};
     // REGLA (Versión 58): 'official_budget_and_balance' (ejercicio con las 2 fuentes reales
     // cargadas a la vez, ver club-or-year-onboarding/SKILL.md sección 11) es tan "real" como
     // 'official_balance_sheet'/'official_budget' solos, tiene que ocultar el banner igual. Bug
@@ -867,9 +691,10 @@
   }
 
 
-  // Cifras del card "Presupuesto Financiero" (Ejercicio 2026/2027), en ARS MILLONES exactos,
-  // mismo criterio que yearsRaw[2027] (Guido pidió que respondan al toggle USD/ARS de Finanzas,
-  // como el resto de los números de Boca). Es solo de presentación: no alimenta ningún cálculo/KPI.
+  // Cifras del card "Presupuesto Financiero" (Ejercicio 2026/2027), en ARS MILLONES exactos, mismo
+  // criterio que bocaRevenueLinesByYear/bocaExpenseLinesByYear[2027] (Guido pidió que respondan al
+  // toggle USD/ARS de Finanzas, como el resto de los números de Boca). Es solo de presentación: no
+  // alimenta ningún cálculo/KPI.
   const presupuestoFinanciero2027 = [
     {label:'Saldo Inicial', op:'', magnitude:6045.520},
     {label:'Créditos a cobrar', op:'+', magnitude:8170.900},
@@ -880,12 +705,11 @@
     {label:'Saldo al Cierre', op:'=', magnitude:5064.882, isResult:true},
   ];
 
-  // renderWaterfallSteps: genérico (Versión 35, antes era renderPresupuestoFinancieroWaterfall(),
-  // hardcodeado a Boca 2027). Pinta una lista de steps {label, op, magnitude, isResult?} adentro de
-  // containerId, convirtiendo cada magnitude con `meta` + currentCurrency. Lo usan tanto Boca 2027
-  // (steps hardcodeados en presupuestoFinanciero2027, meta=yearMeta(2027)) como el Presupuesto
-  // Financiero genérico de Racing (steps armados al vuelo desde presupuestoFinancieroByClub,
-  // meta=yearMetaFor(clubId, year)).
+  // renderWaterfallSteps: genérico (Versión 35). Pinta una lista de steps {label, op, magnitude,
+  // isResult?} adentro de containerId, convirtiendo cada magnitude con `meta` + currentCurrency. Lo
+  // usan tanto Boca 2027 (steps hardcodeados en presupuestoFinanciero2027, meta=yearMetaFor('boca',2027))
+  // como el Presupuesto Financiero genérico de Racing (steps armados al vuelo desde
+  // presupuestoFinancieroByClub, meta=yearMetaFor(clubId, year)).
   function renderWaterfallSteps(containerId, steps, meta){
     const wrap = document.getElementById(containerId);
     if(!wrap) return;
@@ -898,7 +722,7 @@
   }
 
   function renderPresupuestoFinancieroWaterfall(){
-    renderWaterfallSteps('presupuestoFinancieroWaterfall', presupuestoFinanciero2027, yearMeta(2027));
+    renderWaterfallSteps('presupuestoFinancieroWaterfall', presupuestoFinanciero2027, yearMetaFor('boca', 2027));
   }
 
 
@@ -1017,7 +841,7 @@
 
   // ---------- MERCADO DE PASES ----------
   function populatePasesSelectors(clubId){
-    const gestiones = gestionesByClub[clubId];
+    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     document.getElementById('pasesGestionFilter').innerHTML = '<option value="todas">Todas</option>' +
       Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
     const data = pasesDataForClub(clubId) || [];
@@ -1062,7 +886,7 @@
 
   // ---------- RESULTADOS DEPORTIVOS ----------
   function populateResultadosSelector(clubId){
-    const gestiones = gestionesByClub[clubId];
+    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     document.getElementById('resultadosGestionSelect').innerHTML =
       Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
   }
@@ -1083,7 +907,7 @@
 
 
   function renderTitulosTable(){
-    const gestiones = gestionesByClub[currentClub];
+    const gestiones = gestionesByClub[currentClub] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     const data = titulosDataForClub(currentClub) || [];
     document.querySelector('#resultadosTable tbody').innerHTML = data.map(t => `
       <tr><td>${t.anio}</td><td>${t.competencia}</td><td>${t.resultado}</td><td>${gestiones[t.gestion] ? gestiones[t.gestion].nombre : t.gestion}</td></tr>
@@ -1093,7 +917,7 @@
 
   // ---------- COMPARAR ----------
   function populateCompararSelectors(clubId){
-    const gestiones = gestionesByClub[clubId];
+    const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     const keys = Object.keys(gestiones);
     const optsHtml = keys.map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
     document.getElementById('compA').innerHTML = optsHtml;
@@ -1105,7 +929,7 @@
   function renderComparar(){
     const aKey = document.getElementById('compA').value;
     const bKey = document.getElementById('compB').value;
-    const gestiones = gestionesByClub[currentClub];
+    const gestiones = gestionesByClub[currentClub] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     const ga = gestiones[aKey], gb = gestiones[bKey];
     if(!ga || !gb) return;
     const a = computeYearForClub(currentClub, ga.lastYear);
@@ -1147,7 +971,21 @@
   // ---------- INICIO ----------
   function renderInicioStats(){
     const gestionKey = currentGestionKey(currentClub);
-    const g = gestionesByClub[currentClub][gestionKey];
+    const g = (gestionesByClub[currentClub] || {})[gestionKey];
+    // Defensivo (Versión 112): un club sin ninguna gestionesByClub cargada (o con {} vacío) no debe
+    // romper Inicio, la primera pantalla que ve cualquier visitante — antes de esto, un olvido al
+    // onboardear un club nuevo (no agregar NINGUNA entrada a gestionesByClub) tiraba un TypeError acá
+    // mismo. "Sin dato" en los 4 stats es el mismo criterio de degradación que ya usa "Socios
+    // activos" un poco más abajo, no un caso nuevo inventado para esto.
+    if(!g){
+      document.getElementById('inicioStats').innerHTML = `
+        <div class="stat"><div class="label">Último resultado</div><div class="value">Sin dato</div></div>
+        <div class="stat"><div class="label">Deuda neta actual</div><div class="value">Sin dato</div></div>
+        <div class="stat"><div class="label">Gasto neto en pases</div><div class="value">Sin dato</div></div>
+        <div class="stat"><div class="label">Socios activos</div><div class="value">Sin dato</div></div>
+      `;
+      return;
+    }
     const cur = computeYearForClub(currentClub, g.lastYear);
     // NO usa displayFinancialsForClub() acá a propósito — esa función fuerza USD siempre (la usa
     // "Comparar Gestiones", que por diseño ignora el toggle de moneda, ver su propio comentario en
@@ -1219,10 +1057,18 @@
   // sitio para un ejercicio) o "AAAA/AAAA (Presupuesto)" si ese ejercicio no tiene balance real
   // todavía (ver yearKindForClub en js/finanzas-calc.js) — así el usuario sabe, con solo pasar el
   // mouse, si lo que está viendo es un balance auditado o una proyección.
+  // AGREGADO al onboardear Brasil: esta función y `inicioPeriodLabels` de abajo asumían el rango de
+  // temporada "AAAA-1/AAAA" para CUALQUIER club (correcto para los clubes argentinos, todos con
+  // ejercicio jul-jun o sep-ago) — para un club de ejercicio calendario (`isCalendarYearClub`,
+  // js/finanzas-calc.js) eso mostraría un rango de fecha FALSO en el tooltip/eje X de Inicio (ej.
+  // "2023/2024" para un balance que es 1/1/2024-31/12/2024 entero). Leen `currentClub` (global de
+  // index.html) en vez de recibir un `clubId` nuevo porque estas 2 funciones ya se llaman siempre
+  // para el club actualmente elegido (`renderInicioCharts()`, sin parámetro de club) — no hace
+  // falta tocar ningún call site.
   function inicioTooltipTitle(years, kinds){
     return (items) => {
       const idx = items[0].dataIndex;
-      const periodo = (years[idx]-1)+'/'+years[idx];
+      const periodo = isCalendarYearClub(currentClub) ? String(years[idx]) : (years[idx]-1)+'/'+years[idx];
       return kinds[idx] === 'presupuesto' ? `${periodo} (Presupuesto)` : periodo;
     };
   }
@@ -1231,8 +1077,10 @@
   // strings como 2 líneas) en vez de un solo año suelto — pedido explícito de Guido, mismo criterio
   // que ya usa el resto del sitio (`(year-1)+'/'+year`, ver populateFinanzasSelectors). 2 líneas en
   // vez de "2026/2027" en una sola para no ensanchar cada columna del gráfico.
+  // Club calendario: un solo año no necesita 2 líneas, pero se devuelve igual como array de 1
+  // elemento para no romper el contrato de Chart.js (espera siempre un array por tick acá).
   function inicioPeriodLabels(years){
-    return years.map(y => [String(y-1), String(y)]);
+    return years.map(y => isCalendarYearClub(currentClub) ? [String(y)] : [String(y-1), String(y)]);
   }
 
   // Plugin compartido por los 3 gráficos de Inicio: sobre cada columna SIN ningún dato real
