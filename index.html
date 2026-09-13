@@ -41,7 +41,7 @@ carpeta/repo se llama `finance-of-sports`. OJO, el nombre visible del sitio
 todavía está en castellano y NO coincide con el dominio en inglés; queda
 pendiente decidir el branding definitivo (ver TO-DO 7 y 8).
 
-ESTADO ACTUAL (al día, después de la Versión 115)
+ESTADO ACTUAL (al día, después de la Versión 116)
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `CHANGELOG.md` (resumen por
 versión, 96 versiones) y en `Proyecto Boca.md` (narrativa completa). Este bloque
@@ -52,8 +52,8 @@ se reescribe, no se acumula.
   `main` del repo de GitHub. Dominio propio desde 2026-09-13:
   **financeofsports.com** (ver to-do 7: falta renombrar el repo en GitHub y
   re-linkearlo en Netlify, eso lo tiene que hacer Guido).
-- DATOS: 38 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
-  oficial), de 6 países: Argentina 11, Japón 10, España 10, Brasil 4, Colombia 2,
+- DATOS: 41 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+  oficial), de 6 países: Argentina 11, Japón 10, España 10, Brasil 7, Colombia 2,
   México 1. Un solo motor genérico calcula Finanzas para todos (ver
   `ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
   El detalle club por club (qué ejercicio, qué fuente, qué es real y qué no) está
@@ -256,7 +256,16 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
   dentro del mismo archivo, transcriptos vía OCR). Único ejercicio cargado,
   con parte del Anexo de Gastos a nivel agregado por limitación del OCR (ver
   `dudas-por-club.md`). Mercado de Pases/Resultados/Títulos = vacíos.
-- BRASIL, 4 clubes nuevos (Versión 109): Grêmio (2024, no es SAF), Botafogo (2024, SAF columna
+- BRASIL, 3 clubes nuevos (Versión 116), un solo ejercicio cada uno, todos 2024 y todos REAL:
+  Coritiba (SAF desde jul-2023; PREJUÍZO de R$ 139,4 M sobre una receita líquida de R$ 87,0 M y
+  patrimônio líquido NEGATIVO al cierre, el peor ejercicio de cualquier club del sitio; costos
+  cargados desde el desglose por natureza de la Nota 22, no desde las 2 líneas por destino de la
+  DRE, ver data/coritiba-data.js); Ituano (no es SAF; déficit de R$ 7,1 M; DRE desglosada que cierra
+  exacto en sus 4 subtotales); Mirassol (no es SAF; superávit de R$ 4,1 M, pero la fuente es el
+  informe NARRATIVO del auditor, no las demonstrações: 1 sola línea de ingresos y 2 de gastos, el
+  club con menos desglose del sitio junto con los de Japón). Los 3 con Mercado de Pases/Resultados/
+  Títulos vacíos, sin gestión confirmada, y sin memberCount.
+- BRASIL, 4 clubes (Versión 109): Grêmio (2024, no es SAF), Botafogo (2024, SAF columna
   Controladora, déficit real pese al título de Libertadores+Brasileirão ese año, ver comentario de
   cabecera de `data/botafogo-data.js`), Cruzeiro (2025, SAF), Atlético Goianiense (2025, columna
   Consolidado). 1 ejercicio cada uno a propósito, ver ESTADO ACTUAL arriba. 8 clubes más de Brasil
@@ -580,14 +589,25 @@ o directamente retomar en la próxima sesión)
     calendario futuro con solo declarar `fiscalYearStart:'01-01'` en `data/clubs.js`, sin tocar
     `js/finanzas-calc.js` de nuevo.
 
-16. NUEVO (Versión 109): Brasil — quedan 8 clubes con PDF YA DESCARGADO en `Clubes/Brasil/` sin
-    cargar todavía (a propósito, prioridad "widen clubs" sobre profundizar los 4 ya cargados):
-    Athletico Paranaense (2 ejercicios, no es SAF), Bahia (SAF + associação, decidir qué entidad
-    usar), Botafogo-SP (5 ejercicios, NO es el Botafogo carioca), Chapecoense (3 ejercicios, no es
-    SAF), Coritiba (2 ejercicios, SAF desde jul-2023), Ituano (1 ejercicio, no es SAF), Mirassol (1
-    ejercicio, no es SAF), Vasco da Gama (2 SAF + 1 associação, recuperado pese a bloqueo
-    Cloudflare del dominio oficial). Para cada uno: 1 solo ejercicio, seguir el patrón de
-    `data/gremio-data.js`/`data/cruzeiro-data.js`. Aparte: Deportes Tolima (Colombia) quedó sin
+16. ACTUALIZADO (Versión 116): Brasil — de los 8 clubes con PDF ya descargado en `Clubes/Brasil/`
+    que quedaban sin cargar, se cargaron 3 en la Versión 116 (Coritiba, Ituano, Mirassol). QUEDAN 5,
+    todos con PDF ya descargado Y con texto extraíble confirmado (se midió `pdftotext` chars/página
+    para los 8 antes de empezar: ninguno es escaneo, ninguno necesita OCR, así que son todos
+    "fáciles" en el sentido de la Versión 116):
+    - Athletico Paranaense (2 ejercicios: 2024 y 2025, no es SAF, 47 pág., ~2.346 char/pág.)
+    - Bahia (2024 + 2025 de la SAF, más 2020-2021 de la associação — DECIDIR QUÉ ENTIDAD USAR antes
+      de cargar, es el único de los 5 con esa pregunta abierta; 41 pág., ~3.143 char/pág.)
+    - Botafogo-SP (3 PDFs, NO es el Botafogo carioca ya cargado, ojo de no confundirlos; 35 pág.,
+      ~2.101 char/pág.)
+    - Chapecoense (3 ejercicios: 2016, 2017 y 2020-2021, no es SAF; 40 pág., ~2.270 char/pág.)
+    - Vasco da Gama (2 SAF + 1 associação, recuperado pese al bloqueo Cloudflare del dominio
+      oficial; 54 pág., ~2.464 char/pág.)
+    Para cada uno: 1 solo ejercicio, seguir el patrón de `data/coritiba-data.js` (el más completo de
+    Brasil) o `data/gremio-data.js`. OJO con la trampa que apareció en Coritiba: si la DRE presenta
+    los costos del fútbol en 2 líneas por DESTINO ("futebol profissional"/"categorias de base"),
+    NO cargar esas 2, buscar la nota de "custos por natureza" y cargar ESA, o el bucket "Salarios y
+    primas" de Formato Simplificado queda en cero para el club (ver la REGLA de la Versión 38 en
+    club-data-mapping SKILL.md sección 1). Aparte: Deportes Tolima (Colombia) quedó sin
     cargar por una discrepancia real de 3 cifras de PAT distintas entre SIIS/el documento/la cuenta
     propia (ver `dudas-por-club.md`) — no forzar un número hasta resolver cuál es la correcta.
 17. NUEVO (Versión 110): Once Caldas tiene `tax` como residuo documentado (no una línea impresa) por
@@ -1493,16 +1513,16 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '115';</script>
-<script src="data/lang/langs.js?v=115"></script>
-<script src="js/i18n.js?v=115"></script>
-<script src="data/clubs.js?v=115"></script>
-<script src="data/category-map.js?v=115"></script>
-<script src="data/site-labels.js?v=115"></script>
-<script src="data/currency-map.js?v=115"></script>
-<script src="data/boca-data.js?v=115"></script>
-<script src="js/finanzas-calc.js?v=115"></script>
-<script src="js/finanzas-render.js?v=115"></script>
+<script>window.ASSET_V = '116';</script>
+<script src="data/lang/langs.js?v=116"></script>
+<script src="js/i18n.js?v=116"></script>
+<script src="data/clubs.js?v=116"></script>
+<script src="data/category-map.js?v=116"></script>
+<script src="data/site-labels.js?v=116"></script>
+<script src="data/currency-map.js?v=116"></script>
+<script src="data/boca-data.js?v=116"></script>
+<script src="js/finanzas-calc.js?v=116"></script>
+<script src="js/finanzas-render.js?v=116"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

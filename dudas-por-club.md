@@ -220,6 +220,31 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   Ingresos/Gastos operativos + financieros de las Notas 20-27 (~$13.446,121 M pretax)? Se necesitaría
   el Estado de Resultado Integral primario (no solo las notas) para confirmar.
 
+## Mirassol Futebol Clube (hallazgo de esta sesión, no bloqueó la carga del resultado, sí la del patrimonio)
+
+- **El Patrimônio Líquido del informe de auditoría 2024 no cierra consigo mismo.** La sección
+  "1.5.1 Superávits Acumulados" dice saldo inicial de superávits acumulados R$ 27.272.986,96 y
+  superávit del ejercicio R$ 4.143.614,12, lo que sumaría R$ 31.416.601,08; pero el propio párrafo
+  (y la sección 1.5 anterior) imprime saldo final de R$ 30.267.600,99. Diferencia de
+  R$ 1.149.000,09 sin ninguna explicación en el documento (no hay línea de ajuste de ejercicios
+  anteriores, ni de reclasificación). **Pregunta para el club/auditor**: ¿qué movimiento explica esa
+  diferencia, y cuál de los dos saldos finales es el correcto?
+- **Consecuencia práctica**: NO se cargó ningún dato patrimonial de Mirassol al sitio. Las 3 cifras
+  del resultado del ejercicio (receita R$ 59.339.448,33, despesas operacionais R$ 19.090.092,99,
+  superávit R$ 4.143.614,12) sí cierran exacto entre sí y con el porcentaje de custos que el propio
+  documento publica a 14 decimales, así que el ejercicio 2024 se cargó igual, solo sin patrimonio.
+  Ver `data/mirassol-data.js`.
+- **Aparte, el documento tiene varios errores de redacción** que conviene tener en cuenta si alguien
+  vuelve a leerlo: cifras cuya versión en letras no coincide con el número (el PL final
+  R$ 30.267.600,99 está escrito en letras como el saldo inicial; las disponibilidades
+  R$ 11.583.747,40 aparecen escritas como "...setecentos e quarenta e dois reais"), y porcentajes de
+  variación que en realidad son el coeficiente ("um aumento de 1,473791289594634%" para algo que
+  creció ~47%). Ninguno afecta las cifras cargadas, pero bajan la confianza general en el documento.
+- **Sobre la falta de desglose**: el PDF no son las demonstrações contábeis, es el informe narrativo
+  del auditor SOBRE ellas. **Pregunta para el club**: ¿publican en algún lado las demonstrações
+  contábeis completas (DRE y balanço patrimonial como tablas) del ejercicio 2024? Con eso el club
+  pasaría de 1 línea de ingresos a un desglose real.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
