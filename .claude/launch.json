@@ -3,13 +3,16 @@
   "configurations": [
     {
       "name": "fos-local",
-      "runtimeExecutable": "sh",
+      "runtimeExecutable": "python3",
       "runtimeArgs": [
-        "-c",
-        "python3 -m http.server \"$PORT\""
+        "-m",
+        "http.server",
+        "8967",
+        "--directory",
+        "."
       ],
-      "port": 8966,
-      "autoPort": true
+      "port": 8967,
+      "autoPort": false
     }
   ]
 }

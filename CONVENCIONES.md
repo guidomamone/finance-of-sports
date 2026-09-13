@@ -1,0 +1,263 @@
+# Convenciones y gotchas vigentes
+
+Reglas permanentes y trampas ya encontradas que una sesión nueva TIENE que
+respetar. Antes vivían sueltas dentro del bloque "ESTADO ACTUAL" del comentario
+de `index.html`, mezcladas con el historial de versiones: se movieron acá en la
+Versión 114 porque son criterios VIGENTES, no historia: el historial se lee una
+vez y se olvida, esto hay que tenerlo a mano cada vez que se toca el sitio.
+
+Cada bullet conserva la versión en la que se decidió, para poder rastrear el
+porqué completo en `CHANGELOG.md` (resumen) o `Proyecto Boca.md` (narrativa).
+Las que dicen "pedido explícito de Guido" no son negociables sin preguntarle.
+
+Si una decisión nueva contradice algo de acá, actualizá ESTE archivo en la misma
+sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
+
+---
+
+- SEGUNDO EJERCICIO NUEVO DE SAN LORENZO + REGLA DE PRESUPUESTOS EN CAJA (Versión 97, Guido: "quiero
+  onboardear todos los pdf que tengamos"): 2 decisiones de arquitectura documentadas y 1 ejercicio
+  nuevo cargado. (1) Instituto: el Presupuesto 2025 (año calendario, ya transcripto) NO se carga —
+  regla nueva: un presupuesto calendario se reconstruye a temporada combinando 2 documentos
+  calendario consecutivos, y con uno solo no hay forma de completar ninguna temporada, así que se
+  mantiene la info transcripta sin subir nada incompleto (ver `.claude/skills/
+  club-or-year-onboarding/SKILL.md` sección 15). (2) San Lorenzo: Presupuesto 2023/2024 cargado como
+  3er ejercicio del club (antes solo 2013/2014) — la transcripción `.md` original salió mal
+  alineada por un artefacto de `pdftotext -layout` (números de filas anchas cayendo en líneas
+  separadas), así que se re-leyó directo de imágenes renderizadas de la página (300dpi, 3 crops) en
+  vez de confiar en el texto extraído. El documento separa una sección "Ordinaria" de una
+  "Extraordinaria" (financiamiento/capital) — regla nueva: solo se carga la Ordinaria (ver
+  `club-data-mapping/SKILL.md` secciones 16-17), "Resultado Ordinario" es el PAT del ejercicio.
+  Categorización verificada con Guido antes de cargar (ping-pong de preguntas concretas, no
+  asumido). Gestión dividida casi a la mitad entre Tinelli y Moretti — se usó Moretti (a cargo al
+  cierre), duda anotada. `verifyTieOuts()` da 243/243 checks, 0 errores, en los 11 clubes. Detalle completo en `Proyecto Boca.md`.
+- 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN (Versión 96): (1) Boca (club default)
+  aparecía con TODOS los gráficos de Finanzas vacíos en la primera carga de la página, y solo se
+  arreglaba solo después de cambiar de club y volver — causa: `pasesDataForClub`/
+  `resultadosDataForClub`/`titulosDataForClub` (más abajo en el `<script>`) referencian
+  `CLUB_GENERIC_DATA` SIN el prefijo `window.`, y ese objeto global solo se crea DENTRO de cada
+  `data/<club>-data.js` lazy-loaded (Versión 95) — en la carga inicial, antes del primer cambio de
+  club, ningún data-file de club genérico corrió todavía, así que el identificador bare
+  `CLUB_GENERIC_DATA` no estaba declarado en ningún lado y tiraba `ReferenceError` (a diferencia de
+  `window.CLUB_GENERIC_DATA`, que da `undefined` sin explotar) — eso frenaba en seco TODO el resto
+  del bloque INIT synchronous. Fix: `window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};` al
+  principio mismo del `<script>` principal, antes de que corra nada más. (2) REGLA NUEVA a pedido de
+  Guido: el dropdown de clubes del header (`#clubSelect`) va SIEMPRE en orden alfabético
+  ASCENDENTE (A→Z) por nombre visible — se reordenaron las 11 `<option>`, con Boca marcado
+  `selected` explícito (no es la primera opción alfabética — esa es Argentinos Juniors—, pero
+  sigue siendo el club default de la app). `verifyTieOuts()` sigue dando 240/240 checks, 0 errores,
+  en los 11 clubes. Detalle completo en `Proyecto Boca.md`.
+- REGLA (Versión 50, Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL
+  TOTAL" de al lado, difícil de leer): `ejercicioLabel(year, isPresupuesto)` cambió de firma, antes
+  el 2do parámetro era un `suffix` de texto libre agregado AL FINAL ("Ejercicio 2026/2027
+  (presupuestado)"), ahora es un booleano que cambia el PREFIJO ("Presupuesto 2026/2027" en vez de
+  "Ejercicio 2026/2027 (presupuestado)"), más corto. Esto es SOLO para el header de la tabla
+  "Estado de resultados" (`finanzasPLTableCurLabel`/`finanzasDebtTableCurLabel`) y el stat "Último
+  resultado" de Inicio, que usan `cur.yearLabel`. El dropdown "Año" (dato distinto, arrays propios
+  en `populateFinanzasSelectors`, tanto para Boca como para River/Racing) sigue mostrando el
+  estilo largo "Ejercicio AAAA/AAAA (presupuestado)" a propósito, no tiene el problema de espacio
+  de la tabla y así el dropdown se ve igual en los 3 clubes.
+- REGLA PERMANENTE (Versión 49, pedido explícito de Guido): "Estadio" y "Abonos" en Formato
+  Simplificado son 2 conceptos DISTINTOS de venta de acceso al estadio, no un mismo concepto
+  repartido en 2 filas. "Estadio: recaudación de partidos" = entradas que el club vende PARTIDO POR
+  PARTIDO (Boca: `r.exhibicionEspectaculos`; River/Racing: categoría `matchday_competition`).
+  "Abonos" (ahora sin la palabra "Entradas" adelante, la tenía antes y generaba la confusión de que
+  había entradas repartidas entre las 2 filas) = abonos/season tickets pagados por adelantado para
+  TODA la temporada (Boca: `r.abonos`; River/Racing: categoría `season_tickets`). Renombrado en
+  `simplifiedReportForBoca()` y `GENERIC_SIMPLIFIED_REVENUE_BUCKETS` (mismo valor, solo cambió el
+  label). Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
+  `Proyecto Boca.md`.
+- REGLA REFORZADA (Versión 48, Guido: "urnifica, tienen que ser exactamente iguales los nombres"):
+  no alcanza con nombres PARECIDOS entre Boca y el motor genérico, tienen que ser IDÉNTICOS
+  carácter por carácter. Bug real encontrado y corregido: Boca usa el label `'Televisión'` (fila
+  del Ejercicio 2027), el motor genérico tenía `'Televisión / Derechos de TV'` para la misma
+  categoría (`broadcasting`), corregido a `'Televisión'` exacto. Antes de dar por buena una
+  homologación de labels, comparar carácter por carácter contra `simplifiedReportForBoca()`, no de
+  memoria/aproximado.
+- REGLA PERMANENTE (Versión 47, extiende la regla de la Versión 46, pedido explícito de Guido: "la
+  tabla tiene que quedar exactamente igual ordenada tambien. el orden importa"): el ORDEN de
+  `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (River/Racing) tiene que calzar con el
+  orden real de `simplifiedReportForBoca()`, no solo los nombres. Orden de Ingresos: Cuotas
+  Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Abonos, Venta de Jugadores,
+  catch-all (label "Abonos" a secas desde la Versión 49, ver bullet más abajo, antes decía
+  "Entradas / Abonos"). También: cualquier bucket que NO tenga equivalente en Boca (hoy: "Fútbol profesional
+  (sin desglosar por la fuente)", solo existe para Racing/River porque a veces el dato no
+  desglosa más) lleva `hideIfZero:true` en su definición, no se pinta la fila si ese club/año no
+  tiene ninguna línea ahí adentro (Guido lo pidió viendo esa fila en $0 para Racing). Un bucket
+  NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas) se sigue mostrando igual que en Boca,
+  la regla `hideIfZero` es solo para categorías-excepción sin equivalente Boca. Ver
+  `.claude/skills/club-data-mapping/SKILL.md` sección 13 y `Proyecto Boca.md`.
+- REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato simplificado" de CUALQUIER
+  club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca
+  (`simplifiedReportForBoca()`), no un set separado diseñado para el motor genérico. Si el dato
+  fuente de un club no permite categorizar así, consultar a Guido antes de decidir cómo resolverlo,
+  nunca improvisar. Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
+  `Proyecto Boca.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
+  `AskUserQuestion` antes de tocar nada, y ya están resueltas: Racing separó "Estadio: recaudación
+  de partidos" de un bucket nuevo "Premios por competencias" (el dato fuente ya los distinguía);
+  River se dejó como estaba (su dato no permite separarlo hoy); Gastos se dejó con la
+  categorización que ya tenía, solo renombrada para que coincida con el vocabulario de Boca (Compra
+  de jugadores / Salarios y primas / Inversiones / Otros gastos).
+- REGLA (Versión 44, mismo pedido que la Versión 43 pero para "Gestión"): el
+  `<select id="gestionSelect">` también tiene ancho fijo por CSS
+  (`#gestionSelect{width:200px;max-width:100%;}`, justo después de `#anioSelect{...}`), mismo
+  criterio y mismo motivo que el de "Año" (ver bullet de la Versión 43 más abajo). 200px alcanza
+  para la gestión más larga de los 3 clubes ("Riquelme (2023-actual)", Boca, ~188px medido en el
+  navegador).
+- REGLA (Versión 43, bug real de UX reportado por Guido): el `<select id="anioSelect">` ("Año" de
+  Finanzas) tiene ancho fijo por CSS (`#anioSelect{width:300px;max-width:100%;}`, justo después de
+  la regla genérica `select{...}`). Antes no tenía ancho propio, así que un `<select>` nativo se
+  achica o agranda según el texto de la OPCIÓN seleccionada (no la más larga de la lista), y el
+  box cambiaba de tamaño cada vez que cambiabas de club o de ejercicio dentro del mismo club, un
+  detalle molesto que Guido notó. 300px alcanza para la etiqueta más larga de los 3 clubes
+  ("Ejercicio 2025/2026 (esperando datos)", Boca, ~282.5px medido en el navegador con el ancho
+  incluida la flecha nativa). REGLA PARA EL FUTURO: si se agrega un club/año con una etiqueta más
+  larga que esa, medir de nuevo en el navegador (`selectEl.getBoundingClientRect().width` con esa
+  opción seleccionada) antes de asumir que 300px sigue alcanzando, no agrandar el número a ojo.
+- REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): no usar el carácter
+  em dash (—, U+2014) en ningún texto nuevo de este archivo, ni en comentarios ni en copy visible
+  para el usuario. Usar punto y arrancar oración nueva, coma, dos puntos o paréntesis según
+  corresponda. La ÚNICA excepción es el carácter "—" usado como símbolo de "sin dato"/"no aplica"
+  en celdas de tabla (`fmtPctDisplay`/`fmtPctOfTotal`/varios `td` de
+  `buildNativeSectionHtml`/`renderNativePLTable`/etc.): ese uso no es puntuación de una oración, es
+  un símbolo de tabla, y se mantiene igual que siempre. Toda la prosa del archivo (este comentario
+  incluido) y
+  los 2 skills de `.claude/skills/` se limpiaron de em dashes en esta sesión.
+- REGLA VIGENTE (Versión 42, reemplaza la regla de las Versiones 34-35/41, ver bullet más abajo):
+  los cards "Supuestos", "Presupuesto Financiero", "Presupuesto de Inversiones" e "Ingresos y
+  Egresos por Torneo" ahora se ESCONDEN por completo cuando el club/ejercicio seleccionado no tiene
+  presupuesto cargado, en vez de mostrar un mensaje de "no hay". Pedido explícito de Guido al ver
+  los 4 cards vacíos para Boca 2024/2025 (que tiene balance, no presupuesto). La función
+  `noDataMsg()` se borró (ya no la llama nadie). Detalle completo en
+  `.claude/skills/club-or-year-onboarding/SKILL.md` sección 6.
+- REGLA PARA EL FUTURO (Versión 40, pedido explícito de Guido: "es mi manera de hacerte un
+  control"): toda fila de "Formato simplificado" tiene que llevar `items` con el desglose real de
+  qué campo(s) nativo(s) se sumaron para llegar a ese número, nunca `items:null`. Implementado para
+  Boca en la Versión 40 y para River/Racing en la Versión 42 (ver bullet más arriba), así que hoy
+  ya cubre a los 3 clubes.
+- REGLA (Versión 39, bug real de layout + una regresión propia corregida en la misma sesión):
+  `#finanzasPLTable` (card "Estado de resultados") tiene `table-layout:fixed` + un `<colgroup>` de 6
+  `<col>`. Rubro es la única sin ancho fijo (se lleva el resto), las 5 numéricas tienen ancho fijo en
+  píxeles. Antes de esto no tenía `table-layout:fixed`, así que el ancho de Rubro (y por lo tanto dónde
+  arrancaban las columnas numéricas) se recalculaba solo según el rubro más largo de cada
+  club/formato, y la columna del ejercicio terminaba en un % de ancho distinto según fuera Boca,
+  Racing, Formato del club o Formato simplificado. La función `syncPLTableColgroup(hideCompare)`
+  (justo antes de `renderNativePLTable` en el JS) reescribe ese `<colgroup>` cada vez que cambia el
+  modo Año a año/Por gestión, en Año a año las columnas 4-6 quedan con ancho EXPLÍCITO `0` (no
+  sacadas del colgroup: sacarlas rompe el reparto de espacio porque la fila de encabezado de sección
+  sigue con `colspan="6"`, ver detalle en `Proyecto Boca.md`) para que Rubro siga siendo la única columna sin
+  ancho y se lleve TODO el espacio sobrante, así la tabla usa el 100% del ancho del card en los dos
+  modos, sin la franja muerta que salió en un intento intermedio. Si se agrega una columna numérica
+  nueva a esta tabla, TIENE que sumarse a los dos ramales de `syncPLTableColgroup` con su propio ancho
+  fijo, dejarla sin ancho reintroduce el bug original. La tabla está envuelta en
+  `<div class="table-scroll">` (`overflow-x:auto`, `min-width` distinto por modo: 600px en Por gestión,
+  320px en Año a año) para que en mobile scrollee en vez de aplastar Rubro. Detalle completo, con las
+  dos vueltas de debugging, en `Proyecto Boca.md`.
+- REGLA (Versión 38, corrige un bug real de categorización): antes de meter algo adentro de
+  `items` (sub-ítems de desglose de un revenueLine/expenseLine), confirmar que esos sub-ítems NO
+  tengan cada uno su propia categoría real distinta, si la tienen, van como líneas de PRIMER
+  NIVEL con su propio `normalizedCategory`, no adentro de `items` de una línea `lump_football_
+  operations(_expense)`. `items` nunca lo mira `sumCat()`/`computeYearGeneric()`, así que cualquier
+  cálculo por categoría (incluido "Formato simplificado") ignora lo que quede ahí adentro. Bug real:
+  Racing 2026/2027 tenía Televisión/Comercial/Venta de jugadores/Salarios del plantel en $0 en
+  "Formato simplificado" porque esa plata estaba enterrada en `items` de una línea mal categorizada
+  como bolsón sin desglosar, cuando el documento SÍ la desglosaba. Ver
+  `.claude/skills/club-data-mapping/SKILL.md` sección 1 (regla completa) y
+  `.claude/skills/club-or-year-onboarding/SKILL.md` sección 8 (cómo detectarlo probando en el
+  navegador: mirar CADA bucket de "Formato simplificado", no solo el total).
+- REGLA (Versión 37, bug visual): el "$" del eje Y del gráfico de barras (card Gráficos) no
+  colisiona más con el tick más alto, ver `layout:{padding:{top:26}}` en `drawTrendChart`/
+  `drawTrendChartGeneric`.
+- REGLA (Versión 36, pedida por Guido: "detesto que hagas eso"): la cita de fuente ("Fuente: ...")
+  NUNCA va adentro de un card individual (Supuestos, Presupuesto Financiero, Presupuesto de
+  Inversiones, ni ningún card nuevo). Va en `#finanzasDataQualityBanner` (por ejercicio),
+  `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la pestaña Fuentes, nunca
+  repetida card por card. Ver `.claude/skills/club-or-year-onboarding/SKILL.md`, sección 7.
+- REGLA (Versiones 34-35, pedida por Guido, no es opcional, "homologar lo que se pueda
+  homologar"): los 3 cards de presupuesto oficial de Finanzas: "Supuestos"
+  (`#supuestosCard`/`renderSupuestosCard`), "Presupuesto Financiero"
+  (`#presupuestoFinancieroCard`/`renderPresupuestoFinancieroCard`) y "Presupuesto de
+  Inversiones" (`#presupuestoInversionesCard`/`renderPresupuestoInversionesCard`), son
+  genéricos (un solo card cada uno, ya no uno por club) y SIEMPRE están presentes, para
+  cualquier club/ejercicio seleccionado. Si ese ejercicio puntual tiene el dato (hoy: Boca
+  2027 para los 3; Racing 2026 y 2027 para los 3 también, con menos desglose que Boca en
+  Inversiones), lo muestra; si no (balances auditados, placeholders), dice explícito por qué
+  no hay (función compartida `noDataMsg()`), en vez de esconder el card. Los 3 se repintan
+  juntos cada vez que cambia club/año/gestión, los datos viven en
+  `presupuestoSupuestosByClub`/`presupuestoFinancieroByClub`/`presupuestoInversionesByClub`,
+  todos indexados por `[clubId][year]`. Al onboardear un presupuesto nuevo, sumarle su entrada
+  a los que correspondan es lo único que hace falta (ver
+  `.claude/skills/club-or-year-onboarding/SKILL.md`, sección 6, para el detalle de la regla).
+  El contenido de Boca 2027 para Presupuesto Financiero/Inversiones sigue siendo HTML estático
+  sin tocar (envuelto en `#pfBoca2027`/`#piBoca2027`, mostrado/escondido con display, no por
+  clase CSS), no se reescribió a datos+plantilla por el riesgo de tocar contenido ya
+  verificado y muy anidado (los 4 acordeones de obras de Inversiones).
+- OJO REGLA REFORZADA (bug real, Versión 30): NUNCA cargar datos al sitio
+  extrayendo un PDF directo, sin pasar antes por una transcripción completa
+  a Markdown (CLAUDE.md ya lo decía, pero se saltó una vez con el
+  presupuesto 2026/27 y se perdió detalle real. Guido lo notó comparando
+  contra el PDF). Un "resumen para ahorrar tokens" en el momento de
+  transcribir casi siempre implica volver a hacerlo dos veces cuando falta
+  algo. Verificar SIEMPRE si existe el .md en `Clubes/<País>/<Club>/` antes
+  de asumir que un dato no está desglosado en la fuente.
+- OJO Ejercicio 2027 tiene categorías EXTRA en el Formato simplificado que
+  los demás ejercicios no tienen (Televisión/Premios por competencias en
+  Ingresos; Organización de partidos/Otras secciones deportivas/
+  Administración y gastos generales en vez de un solo "Otros gastos"),
+  es a propósito (Versión 30/31): ese es el único ejercicio con el
+  desglose fino disponible (ver presupuesto-26-27.md), así que se usa donde
+  hay dato real en vez de forzar una categoría vacía o aproximada en todos
+  los ejercicios por igual. Si se carga un balance nuevo con este mismo
+  nivel de detalle (ej. el resto de los años de Boca, to-do #2), evaluar si
+  amerita el mismo tratamiento especial dentro de `simplifiedReportForBoca()`.
+- OJO clase `bocaPresupuestoOficialCard`: pese al nombre, NO es "solo para
+  `<div class="card">`", es el marcador genérico de "esto es Boca-only,
+  ocultalo con otro club" que usa `refreshAllForClub()`. Cualquier elemento
+  nuevo (card, `<p>`, lo que sea) que solo aplique a Boca necesita esta
+  clase, si no queda visible con cualquier club (bug real, Versión 27, pasó
+  con una nota de fuente suelta que no estaba dentro de ningún card).
+- OJO `Object.keys()` sobre un objeto con claves que parecen enteros
+  (riverFiscalYearMeta, racingFiscalYearMeta: "2024","2025"...): JS SIEMPRE
+  las reordena ascendente al iterarlas, sin importar el orden del código
+  fuente, no asumir que el orden de escritura se respeta (bug real,
+  Versión 26). `populateFinanzasSelectors()` ya ordena a mano
+  (`.sort((a,b)=>b-a)`) para que el selector de Año quede descendente, y
+  preserva el ejercicio seleccionado (o el más cercano) al cambiar de club,
+  cualquier `<select>` nuevo que liste ejercicios de estos objetos debe
+  seguir el mismo criterio, no confiar en el orden de iteración.
+- OJO texto fijo dibujado a mano en un <canvas> de Chart.js: el "$" del eje Y
+  del gráfico de barras se dibujaba con `ctx.fillText` (Versión 22) para
+  esquivar la rotación automática del título nativo, pero salía con el glyph
+  roto (reportado por Guido, Versión 25), no se pudo diagnosticar la causa
+  exacta (Chart.js no carga en el navegador de este entorno, ver más abajo).
+  Reemplazado por un `<span>` de HTML normal superpuesto con
+  `position:absolute` sobre `.chart-wrap`, mucho más simple y sin el riesgo
+  de fuente/transform del canvas. Si hace falta texto FIJO (no dependiente de
+  la geometría del gráfico) sobre un chart de nuevo, preferir esta vía
+  (HTML+CSS) en vez de dibujarlo a mano en el canvas. El % de cada porción
+  del pie/doughnut (`pctSliceLabelsPlugin`) SÍ sigue en canvas porque su
+  posición es dinámica (depende del ángulo de cada porción), no tiene
+  alternativa en HTML simple.
+- OJO alineación en `<summary>` de acordeón (`details.accordion>summary`): usa
+  `display:flex;justify-content:space-between`, pero el `::after` (+/−) cuenta
+  como un 3er hijo flex, con solo 2 <span> (label + monto) el monto NO queda
+  pegado al borde derecho, space-between lo reparte entre los 3 (bug real,
+  Versión 24). Si se agrega un `<summary>` nuevo con label+monto, darle al
+  monto `flex:0 0 <ancho fijo>;text-align:right` (ver
+  `details.accordion.nested>summary>span:last-child`), no confiar en
+  space-between solo.
+- OJO stats de arriba de Finanzas: el stat "Gastos" (`#finanzasStats`) SIEMPRE
+  tiene que salir de `plTotals.gastosTotal` (lo que devuelve
+  `renderNativePLTable()`, mismo número que "Total Gastos" de la tabla), NUNCA
+  de `cur.expenses` directo, `cur.expenses` (computeYear) es solo
+  wages+otherExpenses, sin amortizaciones, y quedó desalineado con la tabla
+  hasta la Versión 23 (bug real, no un tema de Inversiones/Obras como se
+  sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
+  del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
+  el stat con su total), no recalcular aparte.
+- OJO Chart.js: el script tag pinea la versión exacta de cdnjs
+  (`https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js`).
+  La Versión 22 corrigió un 404 real acá (la versión vieja, 4.4.4, nunca
+  existió en cdnjs), si en el futuro se sube de versión, verificar SIEMPRE
+  con `curl -I` contra la URL exacta antes de pinear un número de versión
+  nuevo, no asumirlo.
