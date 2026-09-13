@@ -234,6 +234,7 @@ window.CLUB_GENERIC_DATA.clubamerica = {
   revenueLinesByYear: clubamericaRevenueLinesByYear, expenseLinesByYear: clubamericaExpenseLinesByYear,
   fiscalYearMeta: clubamericaFiscalYearMeta, pasesData: clubamericaPasesData,
   resultadosData: clubamericaResultadosData, titulosData: clubamericaTitulosData,
+  presupuestoOverlayByYear: clubamericaPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

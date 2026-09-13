@@ -186,6 +186,7 @@ window.CLUB_GENERIC_DATA.botafogo = {
   revenueLinesByYear: botafogoRevenueLinesByYear, expenseLinesByYear: botafogoExpenseLinesByYear,
   fiscalYearMeta: botafogoFiscalYearMeta, pasesData: botafogoPasesData,
   resultadosData: botafogoResultadosData, titulosData: botafogoTitulosData,
+  presupuestoOverlayByYear: botafogoPresupuestoOverlayByYear,
 };
 
 

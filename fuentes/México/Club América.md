@@ -50,7 +50,7 @@
   `bmv.com.mx/es/emisoras/informacionfinanciera/AGUILAS-36159-CGEN_CAPIT` (BMV) y `gob.mx/cnbv` (CNBV).
 - Último chequeo: 2026-09-13.
 
-## CARGADO al sitio (sesión de onboarding, ver Versión 107 en CHANGELOG.md/Proyecto Boca.md)
+## CARGADO al sitio (sesión de onboarding, ver Versión 107 en CHANGELOG.md/finance-of-sports-project.md)
 
 El Ejercicio 2025 (año calendario completo, 1/1/2025-31/12/2025) ya está cargado en
 `data/clubamerica-data.js`, vía la Nota de Segmentos IFRS 8 del `reporte-financiero-ollamani-2025-auditado.pdf`
@@ -59,7 +59,7 @@ Decisiones de mapeo (segment bundling con Estadio Banorte, `officialPAT` deliber
 porque la "utilidad de segmento" impresa NO es un PAT comparable, `grossDebt`/`cash` en 0/0 por
 ausencia de balance a nivel de segmento, discrepancia de tipo de cambio dentro del propio
 documento) documentadas en el comentario de cabecera de `data/clubamerica-data.js` y en el registro
-narrativo completo de `Proyecto Boca.md` (Versión 107).
+narrativo completo de `finance-of-sports-project.md` (Versión 107).
 
 El Ejercicio 2024 (`reporte-financiero-ollamani-2024-auditado.pdf`, período inicial de 11 meses,
 1/2/2024-31/12/2024) sigue SIN cargar a propósito — no es un año calendario completo, y esta sesión

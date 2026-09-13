@@ -44,6 +44,7 @@ window.CLUB_GENERIC_DATA.kawasakifrontale = {
   revenueLinesByYear: kawasakifrontaleRevenueLinesByYear, expenseLinesByYear: kawasakifrontaleExpenseLinesByYear,
   fiscalYearMeta: kawasakifrontaleFiscalYearMeta, pasesData: kawasakifrontalePasesData,
   resultadosData: kawasakifrontaleResultadosData, titulosData: kawasakifrontaleTitulosData,
+  presupuestoOverlayByYear: kawasakifrontalePresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

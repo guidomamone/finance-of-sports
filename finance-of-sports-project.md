@@ -1,4 +1,8 @@
-# Proyecto Boca — historia narrativa completa
+# finance-of-sports — historia narrativa completa del proyecto
+
+(Este archivo se llamó `Proyecto Boca.md` hasta la Versión 121. El nombre venía
+de cuando el sitio era solo de Boca Juniors; hoy el proyecto cubre 41 clubes de
+6 países, así que el archivo pasó a llamarse como el proyecto.)
 
 Este archivo es la historia narrativa completa de `finance-of-sports`, versión
 por versión, desde la Versión 10 (cuando el sitio pasó de ser solo de Boca a
@@ -5111,7 +5115,7 @@ Una verificación final con `pdfinfo` sobre las 65 descargas encontró una corru
 # VOLUMEN 0 — ORIGEN DEL PROYECTO (antes de la Versión 10)
 
 Todo lo que sigue en este Volumen 0 estuvo, hasta hoy, en un archivo suelto
-`Proyecto Boca.md` en la carpeta de ARRIBA (el sitio profesional de Guido), fuera
+`finance-of-sports-project.md` en la carpeta de ARRIBA (el sitio profesional de Guido), fuera
 del repo del proyecto y por lo tanto fuera de git. Se movió acá en la Versión 119
 sin editar una palabra: es el planteo original del proyecto y las Versiones 1 a 9
 del MVP, que la historia narrativa de este archivo (que arranca en la Versión 10)

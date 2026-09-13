@@ -162,6 +162,7 @@ window.CLUB_GENERIC_DATA.envigado = {
   revenueLinesByYear: envigadoRevenueLinesByYear, expenseLinesByYear: envigadoExpenseLinesByYear,
   fiscalYearMeta: envigadoFiscalYearMeta, pasesData: envigadoPasesData,
   resultadosData: envigadoResultadosData, titulosData: envigadoTitulosData,
+  presupuestoOverlayByYear: envigadoPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

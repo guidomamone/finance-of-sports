@@ -42,7 +42,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   el índice antes de asumir que no hay fuentes nuevas para un club.
 - CHANGELOG.md: resumen corto (unas pocas líneas) de qué cambió en cada
   versión. Empezar acá para "¿cuándo se cargó/cambió tal cosa?".
-- Proyecto Boca.md (misma carpeta que este HTML): historia narrativa
+- finance-of-sports-project.md (misma carpeta que este HTML): historia narrativa
   completa versión por versión, desde el MVP original de Boca — el "por
   qué" detrás de cualquier entrada de CHANGELOG.md que lo amerite.
   Lectura opcional para contexto profundo, no necesaria para retomar.

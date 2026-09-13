@@ -178,6 +178,7 @@ window.CLUB_GENERIC_DATA.coritiba = {
   revenueLinesByYear: coritibaRevenueLinesByYear, expenseLinesByYear: coritibaExpenseLinesByYear,
   fiscalYearMeta: coritibaFiscalYearMeta, pasesData: coritibaPasesData,
   resultadosData: coritibaResultadosData, titulosData: coritibaTitulosData,
+  presupuestoOverlayByYear: coritibaPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

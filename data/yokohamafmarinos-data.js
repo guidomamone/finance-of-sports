@@ -43,6 +43,7 @@ window.CLUB_GENERIC_DATA.yokohamafmarinos = {
   revenueLinesByYear: yokohamafmarinosRevenueLinesByYear, expenseLinesByYear: yokohamafmarinosExpenseLinesByYear,
   fiscalYearMeta: yokohamafmarinosFiscalYearMeta, pasesData: yokohamafmarinosPasesData,
   resultadosData: yokohamafmarinosResultadosData, titulosData: yokohamafmarinosTitulosData,
+  presupuestoOverlayByYear: yokohamafmarinosPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

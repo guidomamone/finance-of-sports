@@ -44,6 +44,7 @@ window.CLUB_GENERIC_DATA.sanfreccehiroshima = {
   revenueLinesByYear: sanfreccehiroshimaRevenueLinesByYear, expenseLinesByYear: sanfreccehiroshimaExpenseLinesByYear,
   fiscalYearMeta: sanfreccehiroshimaFiscalYearMeta, pasesData: sanfreccehiroshimaPasesData,
   resultadosData: sanfreccehiroshimaResultadosData, titulosData: sanfreccehiroshimaTitulosData,
+  presupuestoOverlayByYear: sanfreccehiroshimaPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

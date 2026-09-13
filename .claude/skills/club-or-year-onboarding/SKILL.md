@@ -242,7 +242,7 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
   confirmar que esta vez NO se vuelve a pedir (debe quedar cacheado en `clubDataLoaded`). Un
   `window.addEventListener('error', ...)` propio durante ese ciclo (en vez de solo leer la consola
   acumulada) es más confiable para no dejar pasar un `ReferenceError` real, ver Versión 51 en
-  `Proyecto Boca.md` para el detalle de los 2 bugs que este chequeo habría agarrado.
+  `finance-of-sports-project.md` para el detalle de los 2 bugs que este chequeo habría agarrado.
 
 ## 4. Bug real encontrado en esta sesión, gastosTotal ya viene convertido
 

@@ -43,6 +43,7 @@ window.CLUB_GENERIC_DATA.visselkobe = {
   revenueLinesByYear: visselkobeRevenueLinesByYear, expenseLinesByYear: visselkobeExpenseLinesByYear,
   fiscalYearMeta: visselkobeFiscalYearMeta, pasesData: visselkobePasesData,
   resultadosData: visselkobeResultadosData, titulosData: visselkobeTitulosData,
+  presupuestoOverlayByYear: visselkobePresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

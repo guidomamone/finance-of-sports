@@ -39,7 +39,7 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
   ocurrido a la fecha de esta sesión); SÍ hay un presupuesto aprobado en
   asamblea del 5/6/2025 con cifras de prensa (~$171.000 M ARS ingresos /
   ~$168.000 M egresos, superávit proyectado ~USD 2 M) pero sin PDF oficial
-  encontrado, Detalle completo en `Proyecto Boca.md`. DECIDIDO en la Versión 40
+  encontrado, Detalle completo en `finance-of-sports-project.md`. DECIDIDO en la Versión 40
   (Guido contestó la pregunta abierta del to-do): NO cargar la cifra de prensa
   como `press_estimate`, se agregó el Ejercicio 2026 al selector en cero,
   con `reportType:'pending_official'` ("todavía no informado por el club",
@@ -54,7 +54,7 @@ sesiones, revisar fuentes-por-club.md por si Guido ya subió algo nuevo)
   ejercicio completo de Milito, balance auditado real, déficit de
   $(178.451.821) ARS), Ejercicio 2025/2026 (Presupuesto Financiero de
   Ingresos y Egresos oficial) y, desde la Versión 32, Ejercicio 2026/2027
-  (presupuesto oficial nuevo, ver detalle en `Proyecto Boca.md`). Desde la
+  (presupuesto oficial nuevo, ver detalle en `finance-of-sports-project.md`). Desde la
   Versión 32 estos 4 ejercicios tienen `amountNative` en ARS nativo (no
   USD ya-convertido) con el tipo de cambio que declara cada documento
   (Racing 2024/2025 corregidos de $912/$1.203 investigados a $909/$1.196

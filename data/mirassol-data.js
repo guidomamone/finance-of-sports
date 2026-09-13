@@ -107,6 +107,7 @@ window.CLUB_GENERIC_DATA.mirassol = {
   revenueLinesByYear: mirassolRevenueLinesByYear, expenseLinesByYear: mirassolExpenseLinesByYear,
   fiscalYearMeta: mirassolFiscalYearMeta, pasesData: mirassolPasesData,
   resultadosData: mirassolResultadosData, titulosData: mirassolTitulosData,
+  presupuestoOverlayByYear: mirassolPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

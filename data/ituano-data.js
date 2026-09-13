@@ -146,6 +146,7 @@ window.CLUB_GENERIC_DATA.ituano = {
   revenueLinesByYear: ituanoRevenueLinesByYear, expenseLinesByYear: ituanoExpenseLinesByYear,
   fiscalYearMeta: ituanoFiscalYearMeta, pasesData: ituanoPasesData,
   resultadosData: ituanoResultadosData, titulosData: ituanoTitulosData,
+  presupuestoOverlayByYear: ituanoPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

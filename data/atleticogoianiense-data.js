@@ -144,6 +144,7 @@ window.CLUB_GENERIC_DATA.atleticogoianiense = {
   revenueLinesByYear: atleticogoianienseRevenueLinesByYear, expenseLinesByYear: atleticogoianienseExpenseLinesByYear,
   fiscalYearMeta: atleticogoianienseFiscalYearMeta, pasesData: atleticogoianiensePasesData,
   resultadosData: atleticogoianienseResultadosData, titulosData: atleticogoianienseTitulosData,
+  presupuestoOverlayByYear: atleticogoianiensePresupuestoOverlayByYear,
 };
 
 

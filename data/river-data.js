@@ -188,7 +188,7 @@ const riverPresupuestoOverlayByYear = {};
 // Mercado de pases — placeholder, mismo estilo que los movimientos inventados
 // que ya tenía Boca (Jugador A, Jugador B...) desde el primer MVP: esa
 // sección nunca tuvo datos reales para ningún club todavía (pendiente
-// Transfermarkt, ver Proyecto Boca.md).
+// Transfermarkt, ver finance-of-sports-project.md).
 // ---------------------------------------------------------------------------
 const riverPasesData = [
   { gestion:'brito', anio:2024, ventana:'Verano', tipo:'Jugador', nombre:'Jugador R1 (placeholder)', movimiento:'Venta', monto:16.0 },
@@ -233,6 +233,7 @@ window.CLUB_GENERIC_DATA.river = {
   revenueLinesByYear: riverRevenueLinesByYear, expenseLinesByYear: riverExpenseLinesByYear,
   fiscalYearMeta: riverFiscalYearMeta, pasesData: riverPasesData,
   resultadosData: riverResultadosData, titulosData: riverTitulosData,
+  presupuestoOverlayByYear: riverPresupuestoOverlayByYear,
 };
 
 

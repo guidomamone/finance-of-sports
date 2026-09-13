@@ -18,7 +18,7 @@ Este archivo YA NO acumula historial de versiones: mantiene solo el estado
 ACTUAL. El historial vive en 2 archivos, en la misma carpeta que este HTML:
 - `CHANGELOG.md`: resumen corto de qué cambió en cada versión (unas pocas
   líneas cada una). Para "¿cuándo se cargó/cambió tal cosa?".
-- `Proyecto Boca.md`: la historia narrativa completa, versión por versión, con
+- `finance-of-sports-project.md`: la historia narrativa completa, versión por versión, con
   el razonamiento detallado de cada decisión. Para el "por qué" completo de
   algo viejo. Nunca hace falta para retomar el proyecto, es consulta opcional.
 
@@ -42,10 +42,10 @@ en Números" (Versión 117, pedido de Guido). Cada rename fue solo de branding: 
 dominio es **financeofsports.com** y la carpeta/repo se llama
 `finance-of-sports`.
 
-ESTADO ACTUAL (al día, después de la Versión 120)
+ESTADO ACTUAL (al día, después de la Versión 121)
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `CHANGELOG.md` (resumen por
-versión, 96 versiones) y en `Proyecto Boca.md` (narrativa completa). Este bloque
+versión, 96 versiones) y en `finance-of-sports-project.md` (narrativa completa). Este bloque
 se reescribe, no se acumula.
 
 - SITIO: estático puro (HTML + CSS + JS, Chart.js por CDN), sin backend, sin
@@ -112,7 +112,7 @@ DÓNDE ESTÁ CADA COSA (este comentario dejó de ser autosuficiente en la Versi�
 - `js/i18n.js` + `data/lang/`: el motor de traducción y los diccionarios. Leé
   el comentario de cabecera de `js/i18n.js` antes de agregar un idioma o de
   meter un string nuevo en una vista.
-- `.claude/skills/start-session/SKILL.md`: el checklist de arranque y de cierre de
+- `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: el checklist de arranque y de cierre de
   CUALQUIER sesión acá. Qué leer y en qué orden, qué NO leer, cómo verificar,
   qué documentar antes de terminar, y la regla de git. Empezá por ahí.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
@@ -124,7 +124,7 @@ DÓNDE ESTÁ CADA COSA (este comentario dejó de ser autosuficiente en la Versi�
 - `ARQUITECTURA.md`: qué hace cada archivo del proyecto y cómo funciona el motor
   genérico de Finanzas. Leelo cuando toques el motor o agregues un club.
 - `CHANGELOG.md`: qué cambió en cada versión, condensado.
-- `Proyecto Boca.md`: la narrativa completa, con el razonamiento de cada
+- `finance-of-sports-project.md`: la narrativa completa, con el razonamiento de cada
   decisión. Solo hace falta para entender el "por qué" de algo viejo.
 - `CLAUDE.md`: instrucciones permanentes del proyecto (dónde guardar PDFs, qué
   skill leer antes de qué tarea, qué preguntarle a Guido antes de asumir).
@@ -222,14 +222,14 @@ o directamente retomar en la próxima sesión)
    movido a un archivo propio por club (¿`Clubes/<País>/<Club>/README.md`? ¿el propio comentario de
    cabecera de `data/<club>-data.js`, que YA tiene casi toda esta info duplicada? evaluar si conviene
    dejar de duplicar y solo linkear al `.js`).
-   (b) `CHANGELOG.md` y `Proyecto Boca.md` crecen un bloque más por versión, sin partición — ya van
+   (b) `CHANGELOG.md` y `finance-of-sports-project.md` crecen un bloque más por versión, sin partición — ya van
    112 versiones en un sólo archivo cada uno. Evaluar si conviene partir por año o por rango de
    versiones (ej. `CHANGELOG-2026.md`) antes de que se vuelvan pesados de leer/editar, o si alcanza
    con esperar a que sea un problema real (a diferencia de (a), que ya predeciblemente será un
    problema concreto de mantenibilidad con la duplicación por club).
    Antes de decidir el approach: relean la sección `## Estructura de carpetas de documentos fuente`
    y el historial del refactor de `fuentes-por-club.md` (buscar "ÍNDICE" en `CLAUDE.md` y en
-   `Proyecto Boca.md`) para no reinventar un criterio ya debatido con Guido, y traer los judgment
+   `finance-of-sports-project.md`) para no reinventar un criterio ya debatido con Guido, y traer los judgment
    calls concretos ANTES de tocar archivos (mismo proceso que se usó en la Versión 112: preguntar
    con opciones claras, no decidir solo).
 1. RACING: resuelto lo esencial (era Blanco/Milito, Versión 16), 3 años
@@ -315,11 +315,11 @@ o directamente retomar en la próxima sesión)
    RESUELTO en las Versiones 67-75: se cargó TODO el resto del archivo — 2
    presupuestos (2013-14, 2015-16) y 6 balances (2012 a 2017), completando
    los Ejercicios N° 111 a 115. 2013/2014 y 2015/2016 pasaron a
-   "Presupuesto y Balance" al cargarse su balance real. Detalle completo en `Proyecto Boca.md`. ARCHIVO DE RACING 100% CARGADO —
+   "Presupuesto y Balance" al cargarse su balance real. Detalle completo en `finance-of-sports-project.md`. ARCHIVO DE RACING 100% CARGADO —
    no queda ningún balance/presupuesto pendiente en
    `Clubes/Argentina/Racing/` (quedan 3 PDFs "Informe de Gestión", que son
    reportes narrativos sin Anexos financieros, fuera del alcance de esta
-   lista — ver nota en `Proyecto Boca.md` (sección "Versión 67-75") si se quiere extraer contenido
+   lista — ver nota en `finance-of-sports-project.md` (sección "Versión 67-75") si se quiere extraer contenido
    narrativo de esos a futuro).
    RIVER: resuelto en la Versión 15 el Ejercicio 2024 (ver más abajo en
    este mismo bloque, "QUÉ ES REAL"). Quedan pendientes el resto de los
@@ -346,7 +346,7 @@ o directamente retomar en la próxima sesión)
    presupuesto aprobado en asamblea del 5/6/2025 con cifras DE PRENSA (no
    PDF oficial): ~$171.000 M ARS ingresos / ~$168.000 M egresos, superávit
    proyectado ~USD 2 M (fuente: bocajuniors.com.ar/noticias/aprobado +
-   varias notas de prensa, ver detalle completo en `Proyecto Boca.md`).
+   varias notas de prensa, ver detalle completo en `finance-of-sports-project.md`).
    RESUELTO en la Versión 40: Guido eligió dejarlo en cero (`reportType:
    'pending_official'`) en vez de cargar la cifra de prensa como
    `press_estimate`, el Ejercicio 2026 ya está en el selector "Año a año",
@@ -366,7 +366,7 @@ o directamente retomar en la próxima sesión)
    trabajo real con Transfermarkt (recordar: el dominio transfermarkt.* está
    bloqueado para fetch automático en este entorno, la vía es pegar los
    datos a mano o navegar con la extensión de Chrome con aprobación en cada
-   paso, ver Proyecto Boca.md v3 para el detalle de esta limitación).
+   paso, ver finance-of-sports-project.md v3 para el detalle de esta limitación).
 5. Definir el corte free/paid: qué queda gratis y qué es contenido pago,
    antes de poder construir Mi Cuenta de verdad (ver to-do #3, están ligados).
 6. Construir el paywall real: cuentas + suscripciones (Supabase para
@@ -413,7 +413,7 @@ o directamente retomar en la próxima sesión)
     hace falta ese paso también más adelante.
 11. RESUELTO en la Versión 102: el CÁLCULO ya no tiene dos motores — Boca se migró a
     computeYearGeneric() igual que todos los demás clubes, computeYear()/yearMeta()/
-    simplifiedReportForBoca() se borraron. Ver `ARQUITECTURA.md` y Proyecto Boca.md.
+    simplifiedReportForBoca() se borraron. Ver `ARQUITECTURA.md` y finance-of-sports-project.md.
 12. ACTUALIZADO Versión 95 (Guido: "onboard all pdfs we have"): de los 11 clubes con al menos un
     balance/memoria real ya descargado que identificó la investigación de la Versión 75 (ver
     `fuentes-por-club.md`, sección "Otros clubes de Primera División"), TODOS fueron revisados a
@@ -549,12 +549,12 @@ para que este comentario no siga creciendo sin límite en cada sesión:
 - `CHANGELOG.md` (misma carpeta): resumen corto de qué cambió en cada
   versión, unas pocas líneas por versión, sin el razonamiento completo.
   Empezá acá si buscás "¿cuándo se cargó tal cosa?".
-- `Proyecto Boca.md` (misma carpeta): la historia narrativa completa,
+- `finance-of-sports-project.md` (misma carpeta): la historia narrativa completa,
   versión por versión, con el razonamiento detallado de cada decisión. Solo
   hace falta para entender el "por qué" completo de algo viejo, no para
   retomar el proyecto.
 Para agregar una versión nueva: una entrada corta en `CHANGELOG.md` siempre;
-una entrada en `Proyecto Boca.md` solo si el cambio amerita contexto
+una entrada en `finance-of-sports-project.md` solo si el cambio amerita contexto
 narrativo (ver criterio en `CLAUDE.md`). Este archivo (`index.html`) ya NO
 acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
@@ -817,7 +817,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       <!-- Versión 101 (refactor de escalabilidad, a pedido de Guido): este <select> arrancaba
            vacío en el HTML — antes tenía un <option> por club tipeado a mano acá mismo, había que
            acordarse de agregar uno nuevo en la posición alfabética correcta cada vez que se sumaba
-           un club (ya causó un bug real, ver Proyecto Boca.md). Ahora se genera en runtime, ver
+           un club (ya causó un bug real, ver finance-of-sports-project.md). Ahora se genera en runtime, ver
            populateClubSelect() en el <script> principal: lee `clubs` (data/clubs.js), ordena por
            `displayName` alfabético A→Z, y arma cada <option> — agregar un club nuevo ya no toca
            este HTML en absoluto, alcanza con su entrada en `clubs{}`. -->
@@ -1402,16 +1402,16 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '120';</script>
-<script src="data/lang/langs.js?v=120"></script>
-<script src="js/i18n.js?v=120"></script>
-<script src="data/clubs.js?v=120"></script>
-<script src="data/category-map.js?v=120"></script>
-<script src="data/site-labels.js?v=120"></script>
-<script src="data/currency-map.js?v=120"></script>
-<script src="data/boca-data.js?v=120"></script>
-<script src="js/finanzas-calc.js?v=120"></script>
-<script src="js/finanzas-render.js?v=120"></script>
+<script>window.ASSET_V = '121';</script>
+<script src="data/lang/langs.js?v=121"></script>
+<script src="js/i18n.js?v=121"></script>
+<script src="data/clubs.js?v=121"></script>
+<script src="data/category-map.js?v=121"></script>
+<script src="data/site-labels.js?v=121"></script>
+<script src="data/currency-map.js?v=121"></script>
+<script src="data/boca-data.js?v=121"></script>
+<script src="js/finanzas-calc.js?v=121"></script>
+<script src="js/finanzas-render.js?v=121"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

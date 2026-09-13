@@ -171,6 +171,7 @@ window.CLUB_GENERIC_DATA.oncecaldas = {
   revenueLinesByYear: oncecaldasRevenueLinesByYear, expenseLinesByYear: oncecaldasExpenseLinesByYear,
   fiscalYearMeta: oncecaldasFiscalYearMeta, pasesData: oncecaldasPasesData,
   resultadosData: oncecaldasResultadosData, titulosData: oncecaldasTitulosData,
+  presupuestoOverlayByYear: oncecaldasPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

@@ -47,6 +47,7 @@ window.CLUB_GENERIC_DATA.urawareddiamonds = {
   revenueLinesByYear: urawareddiamondsRevenueLinesByYear, expenseLinesByYear: urawareddiamondsExpenseLinesByYear,
   fiscalYearMeta: urawareddiamondsFiscalYearMeta, pasesData: urawareddiamondsPasesData,
   resultadosData: urawareddiamondsResultadosData, titulosData: urawareddiamondsTitulosData,
+  presupuestoOverlayByYear: urawareddiamondsPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

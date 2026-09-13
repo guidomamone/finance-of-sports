@@ -43,6 +43,7 @@ window.CLUB_GENERIC_DATA.cerezoosaka = {
   revenueLinesByYear: cerezoosakaRevenueLinesByYear, expenseLinesByYear: cerezoosakaExpenseLinesByYear,
   fiscalYearMeta: cerezoosakaFiscalYearMeta, pasesData: cerezoosakaPasesData,
   resultadosData: cerezoosakaResultadosData, titulosData: cerezoosakaTitulosData,
+  presupuestoOverlayByYear: cerezoosakaPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

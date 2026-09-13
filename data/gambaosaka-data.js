@@ -43,6 +43,7 @@ window.CLUB_GENERIC_DATA.gambaosaka = {
   revenueLinesByYear: gambaosakaRevenueLinesByYear, expenseLinesByYear: gambaosakaExpenseLinesByYear,
   fiscalYearMeta: gambaosakaFiscalYearMeta, pasesData: gambaosakaPasesData,
   resultadosData: gambaosakaResultadosData, titulosData: gambaosakaTitulosData,
+  presupuestoOverlayByYear: gambaosakaPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

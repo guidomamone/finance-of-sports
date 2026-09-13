@@ -7,7 +7,7 @@ Versión 114 porque son criterios VIGENTES, no historia: el historial se lee una
 vez y se olvida, esto hay que tenerlo a mano cada vez que se toca el sitio.
 
 Cada bullet conserva la versión en la que se decidió, para poder rastrear el
-porqué completo en `CHANGELOG.md` (resumen) o `Proyecto Boca.md` (narrativa).
+porqué completo en `CHANGELOG.md` (resumen) o `finance-of-sports-project.md` (narrativa).
 Las que dicen "pedido explícito de Guido" no son negociables sin preguntarle.
 
 Si una decisión nueva contradice algo de acá, actualizá ESTE archivo en la misma
@@ -30,7 +30,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   `club-data-mapping/SKILL.md` secciones 16-17), "Resultado Ordinario" es el PAT del ejercicio.
   Categorización verificada con Guido antes de cargar (ping-pong de preguntas concretas, no
   asumido). Gestión dividida casi a la mitad entre Tinelli y Moretti — se usó Moretti (a cargo al
-  cierre), duda anotada. `verifyTieOuts()` da 243/243 checks, 0 errores, en los 11 clubes. Detalle completo en `Proyecto Boca.md`.
+  cierre), duda anotada. `verifyTieOuts()` da 243/243 checks, 0 errores, en los 11 clubes. Detalle completo en `finance-of-sports-project.md`.
 - 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN (Versión 96): (1) Boca (club default)
   aparecía con TODOS los gráficos de Finanzas vacíos en la primera carga de la página, y solo se
   arreglaba solo después de cambiar de club y volver — causa: `pasesDataForClub`/
@@ -46,7 +46,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   ASCENDENTE (A→Z) por nombre visible — se reordenaron las 11 `<option>`, con Boca marcado
   `selected` explícito (no es la primera opción alfabética — esa es Argentinos Juniors—, pero
   sigue siendo el club default de la app). `verifyTieOuts()` sigue dando 240/240 checks, 0 errores,
-  en los 11 clubes. Detalle completo en `Proyecto Boca.md`.
+  en los 11 clubes. Detalle completo en `finance-of-sports-project.md`.
 - REGLA (Versión 50, Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL
   TOTAL" de al lado, difícil de leer): `ejercicioLabel(year, isPresupuesto)` cambió de firma, antes
   el 2do parámetro era un `suffix` de texto libre agregado AL FINAL ("Ejercicio 2026/2027
@@ -66,7 +66,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   TODA la temporada (Boca: `r.abonos`; River/Racing: categoría `season_tickets`). Renombrado en
   `simplifiedReportForBoca()` y `GENERIC_SIMPLIFIED_REVENUE_BUCKETS` (mismo valor, solo cambió el
   label). Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
-  `Proyecto Boca.md`.
+  `finance-of-sports-project.md`.
 - REGLA REFORZADA (Versión 48, Guido: "urnifica, tienen que ser exactamente iguales los nombres"):
   no alcanza con nombres PARECIDOS entre Boca y el motor genérico, tienen que ser IDÉNTICOS
   carácter por carácter. Bug real encontrado y corregido: Boca usa el label `'Televisión'` (fila
@@ -86,13 +86,13 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   tiene ninguna línea ahí adentro (Guido lo pidió viendo esa fila en $0 para Racing). Un bucket
   NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas) se sigue mostrando igual que en Boca,
   la regla `hideIfZero` es solo para categorías-excepción sin equivalente Boca. Ver
-  `.claude/skills/club-data-mapping/SKILL.md` sección 13 y `Proyecto Boca.md`.
+  `.claude/skills/club-data-mapping/SKILL.md` sección 13 y `finance-of-sports-project.md`.
 - REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato simplificado" de CUALQUIER
   club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca
   (`simplifiedReportForBoca()`), no un set separado diseñado para el motor genérico. Si el dato
   fuente de un club no permite categorizar así, consultar a Guido antes de decidir cómo resolverlo,
   nunca improvisar. Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
-  `Proyecto Boca.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
+  `finance-of-sports-project.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
   `AskUserQuestion` antes de tocar nada, y ya están resueltas: Racing separó "Estadio: recaudación
   de partidos" de un bucket nuevo "Premios por competencias" (el dato fuente ya los distinguía);
   River se dejó como estaba (su dato no permite separarlo hoy); Gastos se dejó con la
@@ -145,14 +145,14 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   (justo antes de `renderNativePLTable` en el JS) reescribe ese `<colgroup>` cada vez que cambia el
   modo Año a año/Por gestión, en Año a año las columnas 4-6 quedan con ancho EXPLÍCITO `0` (no
   sacadas del colgroup: sacarlas rompe el reparto de espacio porque la fila de encabezado de sección
-  sigue con `colspan="6"`, ver detalle en `Proyecto Boca.md`) para que Rubro siga siendo la única columna sin
+  sigue con `colspan="6"`, ver detalle en `finance-of-sports-project.md`) para que Rubro siga siendo la única columna sin
   ancho y se lleve TODO el espacio sobrante, así la tabla usa el 100% del ancho del card en los dos
   modos, sin la franja muerta que salió en un intento intermedio. Si se agrega una columna numérica
   nueva a esta tabla, TIENE que sumarse a los dos ramales de `syncPLTableColgroup` con su propio ancho
   fijo, dejarla sin ancho reintroduce el bug original. La tabla está envuelta en
   `<div class="table-scroll">` (`overflow-x:auto`, `min-width` distinto por modo: 600px en Por gestión,
   320px en Año a año) para que en mobile scrollee en vez de aplastar Rubro. Detalle completo, con las
-  dos vueltas de debugging, en `Proyecto Boca.md`.
+  dos vueltas de debugging, en `finance-of-sports-project.md`.
 - REGLA (Versión 38, corrige un bug real de categorización): antes de meter algo adentro de
   `items` (sub-ítems de desglose de un revenueLine/expenseLine), confirmar que esos sub-ítems NO
   tengan cada uno su propia categoría real distinta, si la tienen, van como líneas de PRIMER

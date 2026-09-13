@@ -49,12 +49,15 @@
   // sitio para lazy-loading (ver Versión 51). River tiene su propio `riverPresupuestoOverlayByYear`
   // vacío, listo para el día que aparezca un ejercicio dual de ese club.
   function presupuestoOverlayFor(clubId, year){
-    // Vélez (y cualquier club nuevo sin overlay propio todavía, Boca incluido) cae directo a
-    // `null`: no tiene sentido agregar un `<club>PresupuestoOverlayByYear` vacío recién al
-    // onboardear el primer ejercicio con las 2 fuentes a la vez.
-    const table = clubId === 'racing' ? racingPresupuestoOverlayByYear
-      : clubId === 'river' ? riverPresupuestoOverlayByYear
-      : null;
+    // Versión 121: antes esto era un `if` a mano que sólo conocía a racing y river, o sea que
+    // onboardear un club con presupuesto Y balance del mismo ejercicio obligaba a editar ESTE
+    // archivo. Era el último lugar donde sobrevivía el patrón "agregar un club = tocar el código"
+    // que el resto del proyecto ya había eliminado (ver `loadClubData()`, Versión 112, y
+    // `populateClubSelect()`, Versión 101). Ahora sale por convención del propio archivo del club:
+    // alcanza con que su `window.CLUB_GENERIC_DATA.<club>` registre `presupuestoOverlayByYear`.
+    // Un club sin overlay (la mayoría) devuelve null igual que antes, sin romper nada.
+    const club = (window.CLUB_GENERIC_DATA || {})[clubId];
+    const table = club && club.presupuestoOverlayByYear;
     return (table && table[year]) || null;
   }
 

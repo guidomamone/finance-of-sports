@@ -1577,6 +1577,7 @@ window.CLUB_GENERIC_DATA.racing = {
   revenueLinesByYear: racingRevenueLinesByYear, expenseLinesByYear: racingExpenseLinesByYear,
   fiscalYearMeta: racingFiscalYearMeta, pasesData: racingPasesData,
   resultadosData: racingResultadosData, titulosData: racingTitulosData,
+  presupuestoOverlayByYear: racingPresupuestoOverlayByYear,
 };
 
 

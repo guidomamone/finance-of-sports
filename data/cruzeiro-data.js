@@ -157,6 +157,7 @@ window.CLUB_GENERIC_DATA.cruzeiro = {
   revenueLinesByYear: cruzeiroRevenueLinesByYear, expenseLinesByYear: cruzeiroExpenseLinesByYear,
   fiscalYearMeta: cruzeiroFiscalYearMeta, pasesData: cruzeiroPasesData,
   resultadosData: cruzeiroResultadosData, titulosData: cruzeiroTitulosData,
+  presupuestoOverlayByYear: cruzeiroPresupuestoOverlayByYear,
 };
 
 

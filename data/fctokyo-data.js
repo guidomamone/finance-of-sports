@@ -44,6 +44,7 @@ window.CLUB_GENERIC_DATA.fctokyo = {
   revenueLinesByYear: fctokyoRevenueLinesByYear, expenseLinesByYear: fctokyoExpenseLinesByYear,
   fiscalYearMeta: fctokyoFiscalYearMeta, pasesData: fctokyoPasesData,
   resultadosData: fctokyoResultadosData, titulosData: fctokyoTitulosData,
+  presupuestoOverlayByYear: fctokyoPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

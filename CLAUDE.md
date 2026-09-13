@@ -78,14 +78,14 @@ propio comentario de `index.html`). En cambio:
   pocas líneas (Keep a Changelog style — qué cambió, no por qué), no un
   párrafo largo. Esto es obligatorio para cualquier cambio real, chico o
   grande.
-- Agregar además una entrada a `Proyecto Boca.md` SOLO si el cambio amerita
+- Agregar además una entrada a `finance-of-sports-project.md` SOLO si el cambio amerita
   contexto narrativo completo (el "por qué", el proceso de investigación, un
   bug real con su causa raíz) — no todos los cambios lo ameritan, un ajuste
   chico de UI puede quedar solo en `CHANGELOG.md`. Cuando sí amerita, el
   mismo número de versión de `CHANGELOG.md` identifica la entrada
-  correspondiente en `Proyecto Boca.md`.
+  correspondiente en `finance-of-sports-project.md`.
 
-No dupliques la to-do list en `Proyecto Boca.md` ni en `CHANGELOG.md`. La
+No dupliques la to-do list en `finance-of-sports-project.md` ni en `CHANGELOG.md`. La
 lista oficial de próximos pasos vive solo en `index.html`, para que no haya
 dos listas que se puedan desincronizar.
 

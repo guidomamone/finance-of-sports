@@ -1,5 +1,5 @@
 ---
-name: start-session
+name: start-session-finance-of-sports-project
 description: Checklist de arranque y de cierre de CUALQUIER sesión de trabajo en finance-of-sports (el sitio financeofsports.com, "El deporte en Números"). Qué leer antes de tocar nada y en qué orden, qué NO hace falta leer, cómo levantar el sitio local, cómo verificar que no se rompió nada, qué documentar antes de terminar, y la regla de git del proyecto. Usar SIEMPRE al empezar una sesión acá, sea cual sea la tarea (datos, UI, docs, onboarding de un club). Si la tarea además toca datos financieros de un club, este skill te manda a los otros 3 (club-sourcing, club-data-mapping, club-or-year-onboarding) en el momento correcto.
 ---
 
@@ -28,7 +28,7 @@ permanentes. Esto es el procedimiento.
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 
-- `Proyecto Boca.md` (447 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
+- `finance-of-sports-project.md` (447 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
 - `CHANGELOG.md` (68 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
@@ -90,11 +90,11 @@ Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido
 2. **`index.html`, TO-DO LIST**: sacar lo resuelto, agregar lo que quedó pendiente, reordenar si
    cambió la prioridad.
 3. **`CHANGELOG.md`**: SIEMPRE una entrada nueva, aunque el cambio sea chico.
-4. **`Proyecto Boca.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
+4. **`finance-of-sports-project.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
    investigación, un bug real con su causa raíz). Un ajuste de UI no lo amerita.
 5. **`CONVENCIONES.md`**: si se decidió una regla nueva o se contradijo una vieja.
 
-No dupliques la to-do list en `CHANGELOG.md` ni en `Proyecto Boca.md`: la lista oficial vive sólo en
+No dupliques la to-do list en `CHANGELOG.md` ni en `finance-of-sports-project.md`: la lista oficial vive sólo en
 `index.html`.
 
 Si onboardeaste un club, la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `index.html` se

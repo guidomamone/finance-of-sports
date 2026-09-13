@@ -44,6 +44,7 @@ window.CLUB_GENERIC_DATA.nagoyagrampus = {
   revenueLinesByYear: nagoyagrampusRevenueLinesByYear, expenseLinesByYear: nagoyagrampusExpenseLinesByYear,
   fiscalYearMeta: nagoyagrampusFiscalYearMeta, pasesData: nagoyagrampusPasesData,
   resultadosData: nagoyagrampusResultadosData, titulosData: nagoyagrampusTitulosData,
+  presupuestoOverlayByYear: nagoyagrampusPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

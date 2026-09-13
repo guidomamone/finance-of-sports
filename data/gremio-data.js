@@ -167,6 +167,7 @@ window.CLUB_GENERIC_DATA.gremio = {
   revenueLinesByYear: gremioRevenueLinesByYear, expenseLinesByYear: gremioExpenseLinesByYear,
   fiscalYearMeta: gremioFiscalYearMeta, pasesData: gremioPasesData,
   resultadosData: gremioResultadosData, titulosData: gremioTitulosData,
+  presupuestoOverlayByYear: gremioPresupuestoOverlayByYear,
 };
 
 

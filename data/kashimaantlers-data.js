@@ -94,6 +94,7 @@ window.CLUB_GENERIC_DATA.kashimaantlers = {
   revenueLinesByYear: kashimaantlersRevenueLinesByYear, expenseLinesByYear: kashimaantlersExpenseLinesByYear,
   fiscalYearMeta: kashimaantlersFiscalYearMeta, pasesData: kashimaantlersPasesData,
   resultadosData: kashimaantlersResultadosData, titulosData: kashimaantlersTitulosData,
+  presupuestoOverlayByYear: kashimaantlersPresupuestoOverlayByYear,
 };
 
 Object.assign(sources, {

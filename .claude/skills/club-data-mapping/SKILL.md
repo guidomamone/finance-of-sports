@@ -535,7 +535,7 @@ de River/Racing:**
   genérico, en vez de una categoría específica, es un trabajo real de re-mapeo, no un cambio
   cosmético de buckets.
 - **Decisión de Guido (Versión 46, presentada con `AskUserQuestion` antes de tocar nada, ver
-  entrada Versión 46 en `Proyecto Boca.md` para el detalle completo)**: Ingresos de Racing,
+  entrada Versión 46 en `finance-of-sports-project.md` para el detalle completo)**: Ingresos de Racing,
   SÍ separar (ya implementado: categoría `competition_bonus` nueva, líneas de
   `data/racing-data.js` re-etiquetadas, bucket "Premios por competencias" agregado a
   `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`). Ingresos de River, dejarlo como está por ahora (no se
@@ -554,7 +554,7 @@ posición que le correspondería si Boca tuviera esa misma fila, no al final por
 
 **Categorías-excepción sin equivalente en Boca (hoy: "Fútbol profesional (sin desglosar por la
 fuente)") llevan `hideIfZero:true`**: Guido pidió sacar esa fila de Racing porque estaba en $0 (ver
-Versión 47 en `Proyecto Boca.md`). Como esa categoría no existe en el vocabulario de Boca,
+Versión 47 en `finance-of-sports-project.md`). Como esa categoría no existe en el vocabulario de Boca,
 mostrarla en $0 para un club/año que sí tiene todo bien desglosado (como pasa con Racing desde el
 fix de la Versión 38) era una fila extra que rompía la promesa de "exactamente igual que Boca". La
 regla NO es "esconder cualquier fila en $0" (eso rompería la transparencia de mostrar $0 real
