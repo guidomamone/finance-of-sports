@@ -565,6 +565,9 @@ window.CLUB_SELECTOR = (function(){
   }
 
   function pick(id){
+    // También acá y no solo en open(): a un club se llega por el panel o por la
+    // portada, y el cartelito tiene que irse por cualquiera de los dos caminos.
+    hideCoach();
     pushRecent(id);
     try { localStorage.setItem(LS_CLUB, id); } catch(e){}
     close();
@@ -585,12 +588,105 @@ window.CLUB_SELECTOR = (function(){
     $('coachMark').hidden = seen;
   }
 
+
+  // ---------------------------------------------------------------------------
+  // COLD START. La portada de la primera visita: el buscador grande, unos clubes
+  // de acceso rápido y las ligas que tienen algo cargado. Ver el comentario del
+  // HTML (#coldHero) para por qué existe.
+  // ---------------------------------------------------------------------------
+
+  // Los clubes destacados NO son una selección editorial (que sería una opinión
+  // metida adentro de un sitio de datos): son los que más ejercicios tienen
+  // cargados, con los recientes de este visitante adelante. El label lo dice, así
+  // que el criterio está a la vista y no hay que adivinarlo.
+  function quickPicks(n){
+    var byYears = Object.keys(CLUB_INDEX || {}).sort(function(a, b){
+      return (idxOf(b).y || 0) - (idxOf(a).y || 0)
+          || nameOf(a).localeCompare(nameOf(b), 'es', { sensitivity:'base' });
+    });
+    var out = [];
+    recents.concat(byYears).forEach(function(id){
+      if(clubs[id] && out.indexOf(id) < 0 && out.length < n) out.push(id);
+    });
+    return out;
+  }
+
+  function renderHero(){
+    var hc = $('heroClubs');
+    if(!hc) return;
+    hc.innerHTML = '';
+    quickPicks(8).forEach(function(id){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'hq-club';
+      var c = document.createElement('span');
+      c.className = 'crest sm';
+      c.textContent = initials(nameOf(id));
+      b.appendChild(c);
+      b.appendChild(document.createTextNode(nameOf(id) + ' '));
+      var sub = document.createElement('span');
+      sub.className = 'hq-sub';
+      var y = yearsCountOf(id);
+      sub.textContent = y === 1 ? t('selector.year.one', '1 ejercicio') : y + ' ' + t('selector.year.many', 'ejercicios');
+      b.appendChild(sub);
+      b.addEventListener('click', function(){ pick(id); });
+      hc.appendChild(b);
+    });
+
+    var hl = $('heroLeagues');
+    hl.innerHTML = '';
+    Object.keys(LEAGUES).forEach(function(lid){
+      var lg = LEAGUES[lid], co = COUNTRIES[lg.country], n = clubsInLeague(lid).length;
+      if(!n) return;
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'hq-league';
+      b.textContent = (co ? co.flag + ' ' : '') + lg.name + ' · ' + n;
+      b.title = n + ' ' + t('selector.league.count', 'clubes con al menos un ejercicio cargado en esta liga');
+      // La vista agregada de liga (el ranking de ingresos) todavía no existe, así
+      // que el chip abre el panel PARADO en esa liga en vez de prometer una vista
+      // que no está. Cuando exista, este handler es el que cambia.
+      b.addEventListener('click', function(){
+        sel.league = lid; sel.country = lg.country; sel.region = regionOfCountry(lg.country);
+        open(); goPane(4); render();
+      });
+      hl.appendChild(b);
+    });
+
+    var ids = Object.keys(CLUB_INDEX || {});
+    var ejercicios = ids.reduce(function(s2, id){ return s2 + (idxOf(id).y || 0); }, 0);
+    var paises = {};
+    ids.forEach(function(id){ paises[idxOf(id).c] = 1; });
+    $('heroFoot').textContent = ids.length + ' ' + t('selector.clubs', 'clubes')
+      + ' · ' + Object.keys(paises).length + ' ' + t('selector.countries', 'países')
+      + ' · ' + ejercicios + ' ' + t('selector.year.many', 'ejercicios')
+      + ' ' + t('hero.foot', 'con documento oficial detrás.');
+  }
+
+  // La búsqueda del hero delega en el panel: un solo buscador, no dos motores de
+  // búsqueda que se puedan ir separando con el tiempo.
+  function heroSearch(){
+    var term = $('heroQ').value.trim();
+    open();
+    if(term){ $('selQ').value = term; renderSearch(); }
+  }
+
+  // Volver a la portada. Es la vía de vuelta que pidió Guido para que la pantalla
+  // de exploración no quede inalcanzable después del primer click.
+  function goHome(){
+    close();
+    Promise.resolve(api.pickClub(null)).then(function(){ renderButton(); renderHero(); });
+  }
+
   function render(){
     renderCols();
     renderSearch();
     renderRecents();
     renderFoot();
     renderButton();
+    renderHero();
+    // "Ver la portada" solo tiene sentido si hay un club elegido: en frío ya estás ahí.
+    $('selHomeWrap').hidden = !api.getClub();
   }
 
   function init(hooks){
@@ -605,6 +701,9 @@ window.CLUB_SELECTOR = (function(){
     $('clubBackdrop').addEventListener('click', close);
     $('selQ').addEventListener('input', renderSearch);
     $('coachX').addEventListener('click', function(e){ e.stopPropagation(); hideCoach(); });
+    $('selHome').addEventListener('click', goHome);
+    $('heroGo').addEventListener('click', heroSearch);
+    $('heroQ').addEventListener('keydown', function(e){ if(e.key === 'Enter') heroSearch(); });
     // Enter con un solo club en los resultados lo elige: el camino de 1 paso para
     // el que ya sabe qué club quiere.
     $('selQ').addEventListener('keydown', function(e){
@@ -632,6 +731,7 @@ window.CLUB_SELECTOR = (function(){
     close: close,
     refresh: render,
     renderButton: renderButton,
+    goHome: goHome,
     // El club guardado de una visita anterior. Lo lee el arranque de index.html
     // para no volver a mostrar el cold start a alguien que ya eligió.
     savedClub: function(){
