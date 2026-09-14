@@ -965,4 +965,17 @@ documentados, listos para una sesión de onboarding futura.)*
   mitades — a la liga (¿existe el desglose por club del lado de la J.League, que es quien arma los
   promedios divisionales, y hay algún corte de GASTOS por club?) y a cada club (¿publican su propio
   決算公告 / 事業報告 completo?), cada una con su canal de contacto verificado.
+- Cerrados también 7 (dominio y repo: ya estaba hecho, el repo se llama `guidomamone/finance-of-sports`
+  y los push llegan) y 10 (los 3 cards de presupuesto en un tab propio: era un "evaluar si vale la
+  pena", y no vale). Lo único del 7 que no había que perder — que la línea `finance-of-sports/` del
+  `.gitignore` del sitio profesional es lo que mantiene separados los dos repos anidados — se movió
+  a `CLAUDE.md`, que se lee en cada sesión.
+- Anotados 3 hallazgos nuevos que salieron de PROBAR el punto 9 en un teléfono, ninguno en ninguna
+  lista antes (25, 26, 27): el KPI "Deuda neta" de Finanzas publica 0,0 en un ejercicio de
+  presupuesto mientras el aviso de abajo dice que ese 0 no es una deuda de cero (el mismo bug que
+  la 140 arregló en Inicio, en la otra pestaña); `.header-right` desborda a 375px y deja el botón
+  de idioma fuera de la pantalla, regresión del selector de la 137; y `debtDisclosureNote()` no
+  pasa por `t()`, así que su aviso sale en castellano con el sitio en inglés.
+- El punto 9 quedó anotado con su medición: ya no se reproduce (ningún elemento de `#finanzas`
+  excede los 375px), pero se deja abierto hasta que Guido lo mire.
 - Nada de esto mueve un número: `auditAll()` sigue en 41 clubes, 222 checks, 0 que no cierran.

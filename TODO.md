@@ -31,6 +31,13 @@ perdieron sino que se descartaron:
   de empezar; las preguntas abiertas que dejaron (el tipo de cambio doble de Ollamani, el PAT de
   Once Caldas, las 3 cifras de Deportes Tolima, el presupuesto por año calendario de Instituto)
   están en `dudas-por-club.md` y en el archivo de fuentes de cada club.
+- **El dominio y el repo** (era 7). Ya está hecho: el repo de GitHub se llama
+  `guidomamone/finance-of-sports` (el nombre viejo redirige) y los push siguen llegando, así que
+  Netlify quedó bien linkeado. Lo único de ese punto que había que no perder — que la línea
+  `finance-of-sports/` del `.gitignore` del sitio profesional es lo que mantiene separados los dos
+  repos — se movió a `CLAUDE.md`, que se lee en cada sesión, que es donde sirve.
+- **Los 3 cards de presupuesto en un tab propio** (era 10): era un "evaluar si vale la pena", y la
+  respuesta es que no.
 - **El corte free/paid y el paywall** (eran 5 y 6). Decisión de Guido del 2026-09-14: **por ahora
   el sitio va todo gratis**. No hay corte que definir ni cuentas/suscripciones que construir, así
   que no son pendientes. El día que se revise, la arquitectura ya charlada está en
@@ -40,6 +47,43 @@ perdieron sino que se descartaron:
 ---
 
 ## Qué hay que hacer
+
+25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
+    misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·
+    0,0 M USD" en el cuerpo de letra más grande de la página, y unos centímetros más abajo el
+    aviso dice "el documento no desglosa deuda ni caja en su resumen, el $0 que ves NO significa
+    que la deuda sea cero". Un presupuesto no trae estado de situación patrimonial, así que ese
+    cero no existe en ningún documento. Es el MISMO bug que la Versión 140 arregló en Inicio, en
+    la otra pestaña: la TABLA de deuda (`renderDebtBlockGeneric`, js/finanzas-render.js:361) ya
+    tiene la lógica de "0/0 oficial = dato no desglosado" y por eso escribe el aviso; el KPI
+    (`renderFinanzasStatsGeneric`, misma línea 396) no la tiene y publica el 0,0 igual. Chequear
+    también la rama de Boca (`renderFinanzasStatsFromComputed`), que es un camino aparte.
+    El precedente exacto de cómo se resolvió en Inicio: `informaDeuda()` + el stat "Sin dato",
+    js/finanzas-render.js:1012 y 1096.
+
+26. MOBILE, y es una REGRESIÓN del selector de la Versión 137. A 375px de ancho, `.header-right`
+    mide 480px dentro de los 347px disponibles: el botón Comparar queda cortado y los de contacto
+    e idioma quedan FUERA de la pantalla, con la página entera scrolleando de costado
+    (`document.documentElement.scrollWidth` 494 contra 375, medido en el navegador). La causa es
+    aritmética: el botón de club son 210px contra los ~104px del `<select>` que reemplazó, y con
+    el select la fila entraba por 1px. `.header-inner` envuelve (eso se arregló en la 137) pero
+    `.header-right` es `flex-wrap:nowrap` + `flex-shrink:0`, así que no cede.
+    DECISIÓN DE GUIDO, por eso no se arregló solo: las dos salidas cuestan algo distinto.
+    (a) Dejar que `.header-right` envuelva y darle al botón de club su propio renglón — probado en
+        el navegador, `scrollWidth` vuelve a 375 y entra todo, pero el header es `sticky` y pasa
+        de 138px a 181px, o sea 22% de la pantalla fija en un teléfono.
+    (b) Achicar el botón en móvil escondiendo el "Estás viendo" (`.cb-eyebrow`) y el "Cambiar"
+        (`.cb-change`), dejando escudo + nombre + caret. Menos alto, pero el botón pierde la
+        instrucción de qué hace.
+
+27. i18n: `debtDisclosureNote()` (js/finanzas-calc.js:411) arma sus 3 mensajes como texto plano en
+    castellano, sin pasar por `t()`, así que con el sitio en inglés el aviso de deuda sale en
+    castellano. Son 3 líneas hermanas y hay que sumar sus keys a `data/lang/en.js`. Se barrió el
+    resto de `js/` con dos patrones distintos (literales con acentos, y strings que van a
+    textContent/innerHTML sin `t()`): es el único lugar que quedó, no hay más. OJO para el día que
+    se agregue otro idioma: el scan de i18n de `tools/audit.js` mira atributos `data-i18n` y
+    llamadas a `t()`, así que un template literal armado en JS no lo detecta — esto lo encontró
+    una mirada a la pantalla, no la herramienta.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
     (a) RESUELTO (Versión 140). Inicio mostraba "DEUDA NETA ACTUAL: 0,0 M USD" para Boca y
@@ -195,25 +239,6 @@ perdieron sino que se descartaron:
         clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
         paralelas con `Promise.all`.
 
-7. DOMINIO: renombrar el repo en GitHub y re-linkearlo en Netlify. **Lo tiene que
-   hacer Guido, no lo puede hacer un agente.** El dominio `financeofsports.com` ya está
-   comprado y apuntando al sitio, y la carpeta local ya se llama `finance-of-sports`;
-   falta solo el repo.
-   (a) renombrar en GitHub: `guidomamone/numeros-de-boca` -> `guidomamone/finance-of-sports`;
-   (b) INMEDIATAMENTE después, re-linkear en Netlify (Site configuration -> Build & deploy
-       -> Continuous deployment -> Link to a different repository). Netlify guarda el repo
-       como `owner/nombre`: al renombrar, ese string queda viejo y los deploys pueden dejar
-       de dispararse. GitHub mantiene redirects, así que el `git remote` viejo sigue
-       funcionando, pero conviene actualizarlo con
-       `git remote set-url origin https://github.com/guidomamone/finance-of-sports.git`;
-   (c) verificar que el deploy siguiente buildea (cuesta 1 deploy de los ~25 mensuales del
-       free tier, conviene juntarlo con un push real de contenido).
-   OJO, LO ÚNICO QUE ROMPE DE VERDAD si alguien vuelve a renombrar la CARPETA: la línea del
-   `.gitignore` del sitio profesional (`../.gitignore`) que ignora esta carpeta. Sin ella,
-   todo este proyecto se vuelve untracked dentro del repo `guidomamone-website` y se puede
-   commitear o deployar por error al sitio profesional. Nada del código del sitio depende del
-   nombre del repo: no hay netlify.toml, no hay CNAME, no hay build step.
-
 8. Reemplazar el email placeholder del formulario de contacto
    (contacto@bocaennumeros.example) por uno real antes de publicar.
 
@@ -221,7 +246,8 @@ perdieron sino que se descartaron:
    La otra mitad de este punto (el header, que abajo de 900px aplastaba el `nav` a 0px de
    ancho y hacía desaparecer las 4 pestañas) se resolvió en la Versión 137: el header
    envuelve y el nav se lleva su propia fila.
-
-10. Los 3 cards de presupuesto (Supuestos / Presupuesto Financiero / Presupuesto de
-    Inversiones) siguen al fondo de Finanzas y no en un tab propio. Evaluar si hace falta
-    ese paso; hoy no está claro que lo valga.
+   OJO ANTES DE EMPEZAR (medido el 2026-09-14): esto YA NO SE REPRODUCE como está escrito. Con
+   Boca 2026/27 a 375px y todos los acordeones del Presupuesto de Inversiones abiertos, NINGÚN
+   elemento de `#finanzas` supera el ancho de la pantalla — el wrapper `.table-scroll` que se
+   agregó después cubre estas tablas. El problema de móvil que sí se reproduce hoy es el header,
+   y es el punto 26. Este punto se puede cerrar; quedó porque Guido todavía no lo miró.

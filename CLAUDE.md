@@ -4,6 +4,17 @@ Este es un proyecto SEPARADO del sitio profesional de Guido (el resto de
 "Website propio"). No mezclar contenido, código, ni decisiones de deploy
 entre los dos.
 
+**Lo que mantiene esa separación es UNA línea**, y conviene saber cuál antes de
+tocarla: `finance-of-sports/` en el `.gitignore` del sitio profesional
+(`../.gitignore`, línea 5). Este repo está anidado adentro del otro, así que sin
+esa línea todo este proyecto se vuelve untracked dentro de `guidomamone-website`
+y se puede commitear o deployar por error al sitio profesional. **Si alguna vez se
+renombra ESTA carpeta, hay que actualizar esa línea en el mismo movimiento.** Es
+lo único que se rompe de verdad con un rename: nada del código depende del nombre
+del repo (no hay netlify.toml, ni CNAME, ni build step). El repo de GitHub es
+`guidomamone/finance-of-sports` y el dominio `financeofsports.com`; el nombre
+viejo (`numeros-de-boca`) sigue redirigiendo.
+
 ## Al empezar a trabajar acá
 
 Leé primero `ESTADO.md` (qué hay armado hoy, y qué hay cargado de cada club) y
