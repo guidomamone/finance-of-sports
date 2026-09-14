@@ -36,6 +36,7 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const INDEX = path.join(ROOT, 'index.html');
+const CLUB_INDEX_FILE = path.join(ROOT, 'data/club-index.js');
 // OJO: los marcadores NO pueden ser comentarios HTML (`<!-- -->`). Esta sección vive
 // DENTRO del comentario grande de index.html, y un `-->` anidado CIERRA el comentario
 // exterior antes de tiempo: el resto de las notas internas (la TO-DO list incluida) pasa
@@ -55,7 +56,8 @@ function loadData() {
   sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
 
-  const files = ['data/clubs.js', ...fs.readdirSync(path.join(ROOT, 'data'))
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js',
+    ...fs.readdirSync(path.join(ROOT, 'data'))
     .filter(f => f.endsWith('-data.js'))
     .sort()
     .map(f => 'data/' + f)];
@@ -75,6 +77,7 @@ function loadData() {
   return vm.runInContext(
     '({ clubs: typeof clubs !== "undefined" ? clubs : null,' +
     '   sources: typeof sources !== "undefined" ? sources : null,' +
+    '   clubQuality: typeof clubQuality !== "undefined" ? clubQuality : null,' +
     '   generic: (window.CLUB_GENERIC_DATA || {}) })',
     ctx, { filename: 'read-globals' });
 }
@@ -178,6 +181,60 @@ function buildIndex({ clubs, sources, generic }) {
 }
 
 // ---------------------------------------------------------------------------
+// SEGUNDO ARTEFACTO (Versión 129): `data/club-index.js`, el índice LIVIANO que
+// el sitio carga en cada visita.
+//
+// EL PROBLEMA QUE RESUELVE, encontrado auditando el plan del selector jerárquico
+// ANTES de escribirlo: ese panel tiene que mostrar, al lado de cada club y sin
+// entrar a ninguno, su punto de calidad de dato y cuántos ejercicios tiene. Las
+// dos cosas viven adentro de `data/<club>-data.js`, que es justamente lo que el
+// panel NO puede cargar (son 41 archivos hoy, 1000 mañana). Verificado en el
+// navegador con la página recién abierta: `clubs{}` tiene 41 entradas y
+// `sources{}` tiene 3, todas de Boca.
+//
+// La salida fácil habría sido tipear la calidad a mano en `clubs.js`, y sería un
+// campo más que se desincroniza del dato real la primera vez que alguien carga
+// un balance nuevo. Acá se CALCULA, con la misma `clubQuality()` que usa el
+// sitio (`data/sources-view.js`).
+//
+// Formato: claves cortas a propósito, porque esto viaja en cada pageview.
+//   n: displayName · c: país ISO-2 · q: calidad (ver CLUB_QUALITY)
+//   y: cuántos ejercicios cargados · last: el ejercicio más reciente
+// Son ~60 bytes por club contra los ~366 de `clubs.js`, o sea ~60 KB contra
+// ~366 KB proyectados a 1000 clubes.
+function buildClubIndex({ clubs, sources, generic, clubQuality }) {
+  const idx = {};
+  for (const id of Object.keys(clubs).sort()) {
+    const meta = (generic[id] || {}).fiscalYearMeta || {};
+    const years = Object.keys(meta).map(Number).sort((a, b) => a - b);
+    idx[id] = {
+      n: clubs[id].displayName || clubs[id].name,
+      c: clubs[id].country,
+      q: clubQuality(sources, id),
+      y: years.length,
+      last: years.length ? years[years.length - 1] : null,
+    };
+  }
+  const filas = Object.keys(idx).map(id => `  ${JSON.stringify(id)}: ${JSON.stringify(idx[id])},`);
+  return `// ============================================================================
+// data/club-index.js — GENERADO AUTOMÁTICAMENTE por tools/generate-club-index.js.
+// NO EDITAR A MANO: se sobrescribe.
+//
+// El índice liviano de todos los clubes, para lo que necesita mostrarse ANTES de
+// cargar ninguno (el selector de club, y cualquier vista que liste clubes sin
+// entrar a sus datos). Todo lo de acá sale de \`clubs.js\` y de los
+// \`fiscalYearMeta\`/\`sources\` de cada club, así que no puede desincronizarse.
+//
+//   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en
+//   data/sources-view.js) · y: ejercicios cargados · last: el más reciente
+// ============================================================================
+
+window.CLUB_INDEX = {
+${filas.join('\n')}
+};
+`;
+}
+
 function main() {
   const check = process.argv.includes('--check');
   const data = loadData();
@@ -203,6 +260,7 @@ function main() {
 
   if (current === next) {
     console.log(`index.html ya está al día (${Object.keys(data.generic).length} clubes).`);
+    generarClubIndex(data, check);
     return;
   }
   if (check) {
@@ -212,6 +270,22 @@ function main() {
 
   fs.writeFileSync(INDEX, html.slice(0, i + START.length) + next + html.slice(j), 'utf8');
   console.log(`index.html actualizado: ${Object.keys(data.generic).length} clubes.`);
+  generarClubIndex(data, check);
+}
+
+function generarClubIndex(data, check) {
+  const nuevo = buildClubIndex(data);
+  const viejo = fs.existsSync(CLUB_INDEX_FILE) ? fs.readFileSync(CLUB_INDEX_FILE, 'utf8') : null;
+  if (viejo === nuevo) {
+    console.log(`data/club-index.js ya está al día (${Object.keys(data.clubs).length} clubes).`);
+    return;
+  }
+  if (check) {
+    console.error('data/club-index.js quedó DESACTUALIZADO respecto de los datos. Corré: node tools/generate-club-index.js');
+    process.exit(1);
+  }
+  fs.writeFileSync(CLUB_INDEX_FILE, nuevo, 'utf8');
+  console.log(`data/club-index.js actualizado: ${Object.keys(data.clubs).length} clubes, ${nuevo.length} bytes.`);
 }
 
 main();

@@ -83,3 +83,44 @@ function sourceCaveats(source, metas){
   }
   return out;
 }
+
+// ============================================================================
+// CALIDAD DE DATO POR CLUB (Versión 129)
+//
+// El punto de color que el selector jerárquico va a mostrar al lado de cada
+// club, ANTES de que el visitante entre: que no descubra recién adentro que el
+// club que eligió es un placeholder.
+//
+// POR QUÉ VIVE ACÁ Y NO EN EL PANEL: es la misma pregunta que ya contesta
+// `sourceLevel()` ("cuánto pesa esta fuente"), agregada a nivel club. Escribirla
+// de nuevo en el panel sería la cuarta copia de un criterio que ya tuvimos
+// duplicado dos veces esta semana.
+//
+// OJO, EL DETALLE QUE HACE FALTA MIRAR DOS VECES: los 4 estados NO son los 4
+// valores de `reliability`. Una regla del tipo "verde si todos son primary, gris
+// si ninguno lo es" deja a River en gris ("solo placeholder"), y River tiene un
+// balance auditado de verdad, conseguido en una réplica de hinchas
+// (`secondary_mirror`). Un balance real que no viene del dominio oficial es un
+// dato real: no es lo mismo que no tener nada. Por eso la pregunta que se hace
+// acá es "¿hay algún documento REAL?" y no "¿hay algún primary?".
+const CLUB_QUALITY = {
+  full:        { label: 'Todos los ejercicios con documento oficial', dot: 'verde' },
+  mixed:       { label: 'Mezcla de documento real y placeholder',     dot: 'amarillo' },
+  placeholder: { label: 'Solo placeholder, sin documento todavía',    dot: 'gris' },
+  empty:       { label: 'Sin datos cargados',                         dot: 'vacio' },
+};
+
+// clubQuality(sources, clubId): uno de los 4 estados de arriba.
+// `sources` se pasa por parámetro (y no se lee del global) porque los
+// generadores de `tools/` lo tienen completo y el navegador solo tiene el de los
+// clubes ya cargados: quien llama sabe cuál está usando.
+function clubQuality(sources, clubId){
+  const propias = Object.keys(sources || {})
+    .map(k => sources[k])
+    .filter(s => s.clubId === clubId);
+  if(!propias.length) return 'empty';
+  const reales = propias.filter(s => s.reliability !== 'placeholder');
+  if(!reales.length) return 'placeholder';
+  const todosOficiales = propias.every(s => s.reliability === 'primary');
+  return todosOficiales ? 'full' : 'mixed';
+}

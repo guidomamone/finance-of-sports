@@ -15,6 +15,22 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (Versión 129, decidido antes del selector
+  jerárquico). `racingsantander-es`, `nacional-uy`, `independiente-co`. Por qué: el `clubId` no es
+  una clave más, nombra el archivo de datos (`data/<clubId>-data.js`, por convención de
+  `loadClubData()`) y prefija cada `sourceId` (`racing-balance-2009`), así que una colisión se paga
+  en tres lugares. Los nombres se repiten entre países mucho más de lo que parece: Racing
+  (Argentina y Santander), Independiente (Argentina, del Valle, Medellín), Unión (Argentina,
+  Española, Magdalena), Nacional (Uruguay, Paraguay, Colombia, Ecuador). Ya pasa en `fuentes/`, con
+  un Olimpia de Honduras y otro de Paraguay, y ahí no choca solo porque el país es una carpeta.
+  OJO CON LA SINTAXIS: un id con guion NO es una clave JS válida sin comillas, así que en
+  `data/clubs.js` va `'racing-es': { id:'racing-es', ... }`, con la clave entre comillas. Se
+  descubrió rompiendo el archivo al probar el chequeo.
+  LOS 41 CLUBES DE ANTES NO SE MIGRAN AHORA, a propósito: renombrarlos toca sus archivos, sus
+  sourceIds y el club guardado en el localStorage de cada visitante, y no arregla ninguna colisión
+  real porque todavía no hay ninguna. `node tools/audit.js` avisa (`clubid-heredado-ambiguo`, P2)
+  exactamente el día que un id heredado deja de ser inequívoco, o sea cuando entra un club de otro
+  país con el mismo nombre base: ESE es el momento de renombrar el viejo, no antes.
 - `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (Versión 127,
   después de que Guido revisara la primera versión de la pestaña Fuentes: "veo que en Salvedades a
   veces pones 'descargado por Guido' o direcciones que son de mi computadora. Eso no puede

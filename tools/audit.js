@@ -396,6 +396,68 @@ function checkMoneda(api) {
 // El bug de `lump_football_operations` (ver club-data-mapping) pasó los 16
 // tie-outs de su ejercicio sin problema: el total cerraba, la plata estaba, solo
 // estaba en el bucket equivocado. Estas 2 señales son las que lo delatan.
+// --- D14: el espacio de nombres de clubId (Versión 129) --------------------
+// `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
+// (`data/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
+// sourceId (`racing-balance-2009`). Los ids de hoy son `racing`, `independiente`,
+// `union`, `sanlorenzo`: los cuatro nombres existen en varios países (Racing de
+// Santander, Independiente del Valle y el de Medellín, Unión Española, Unión
+// Magdalena). Ya pasa en `fuentes/`, con un Olimpia de Honduras y otro de
+// Paraguay, y ahí no choca solo porque el país es una carpeta.
+//
+// La convención, desde la Versión 129 y escrita en CONVENCIONES.md: todo club
+// NUEVO lleva el país al final del id (`racingsantander-es`). Los 41 de antes
+// quedan como están, listados acá abajo: migrarlos tocaría sus archivos, sus
+// sourceIds y el club guardado en el localStorage de cada visitante, y no
+// arregla ninguna colisión real, porque todavía no hay ninguna.
+const CLUB_IDS_SIN_PAIS_HEREDADOS = [
+  "argentinosjuniors", "athleticclub", "atleticogoianiense", "atleticomadrid", "boca", "botafogo",
+  "celtavigo", "cerezoosaka", "clubamerica", "coritiba", "cruzeiro", "deportivoalaves",
+  "envigado", "estudianteslp", "fcbarcelona", "fctokyo", "gambaosaka", "gremio",
+  "independiente", "instituto", "ituano", "kashimaantlers", "kawasakifrontale", "mirassol",
+  "nagoyagrampus", "oncecaldas", "racing", "realbetis", "realmadrid", "river",
+  "rosariocentral", "sanfreccehiroshima", "sanlorenzo", "sevillafc", "union", "urawareddiamonds",
+  "valenciacf", "velez", "villarrealcf", "visselkobe", "yokohamafmarinos",
+];
+
+function checkClubIds(api) {
+  const heredados = new Set(CLUB_IDS_SIN_PAIS_HEREDADOS);
+  const paises = new Set(Object.values(api.clubs).map(c => (c.country || '').toLowerCase()).filter(Boolean));
+  // El "nombre base" es el id sin su sufijo de país, para comparar peras con peras.
+  const base = id => {
+    const m = id.match(/^(.*)-([a-z]{2})$/);
+    return (m && paises.has(m[2])) ? m[1] : id;
+  };
+
+  // El disparador de migración: mientras `racing` sea el único, "racing" significa
+  // Racing Club sin ambigüedad. El día que entra `racing-es`, el id pelado pasa a ser
+  // el único de la familia que no dice de qué país es, y ahí sí conviene renombrarlo a
+  // `racing-ar`. O sea que esto no prohíbe la convivencia (es justamente la convención
+  // funcionando): avisa cuándo un id heredado se volvió ambiguo, que es el único
+  // momento en que migrarlo vale lo que cuesta.
+  const porBase = {};
+  for (const id of Object.keys(api.clubs)) (porBase[base(id)] = porBase[base(id)] || []).push(id);
+  for (const b of Object.keys(porBase)) {
+    if (porBase[b].length < 2) continue;
+    const pelados = porBase[b].filter(id => id === b);
+    const conPais = porBase[b].filter(id => id !== b);
+    if (!pelados.length) continue;  // todos con país: no hay nada ambiguo
+    for (const id of pelados) {
+      const pais = (api.clubs[id].country || 'xx').toLowerCase();
+      add('P2', 'clubid-heredado-ambiguo', `el id '${id}' (${api.clubs[id].country}) ya no es inequívoco: existe ${conPais.join(', ')} con el mismo nombre base. Es el momento de renombrarlo a '${id}-${pais}' (el archivo data/${id}-data.js, el clubId y el prefijo de sus sourceId)`);
+    }
+  }
+
+  const sinPais = Object.keys(api.clubs).filter(id => !heredados.has(id) && !/-[a-z]{2}$/.test(id));
+  for (const id of sinPais) {
+    add('P2', 'clubid-sin-pais', `el club '${id}' es nuevo y su id no termina en el país (ej. '${id}-${(api.clubs[id].country || 'xx').toLowerCase()}'), que es la convención desde la Versión 129: ver CONVENCIONES.md`);
+  }
+  const heredadosVivos = Object.keys(api.clubs).filter(id => heredados.has(id)).length;
+  if (heredadosVivos) {
+    add('P3', 'clubid-heredado', `${heredadosVivos} clubes con id sin país, de antes de la convención. No es un error y no urge migrarlos: el chequeo de colisión de arriba avisa si alguna vez chocan de verdad`);
+  }
+}
+
 // --- D13: qué de las fuentes se le muestra al visitante (Versión 127) -------
 // `sources[].note` es una nota INTERNA: una sesión se la escribe a la siguiente, con
 // rutas del repo, cómo se leyó el PDF y qué quedó pendiente. En la Versión 126 se
@@ -517,12 +579,23 @@ function checkEscala(api) {
   const ids = Object.keys(api.clubs);
   const hits = [];
   for (const rel of archivos) {
-    const lineas = fs.readFileSync(path.join(ROOT, rel), 'utf8').split('\n');
-    lineas.forEach((linea, i) => {
+    // Los comentarios HTML se blanquean ANTES de buscar (Versión 129, falso positivo
+    // real): el comentario de cabecera de index.html son 50 KB de prosa donde nombrar
+    // `racing` o `boca` es lo normal, y cada mención se reportaba como si fuera una
+    // rama por club en el código. Se reemplaza por líneas vacías, no se borra, para
+    // que los números de línea que se reportan sigan siendo los del archivo.
+    const crudo = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+    const limpio = crudo.replace(/<!--[\s\S]*?-->/g, m => m.replace(/[^\n]/g, ' '));
+    limpio.split('\n').forEach((linea, i) => {
       const t = linea.trim();
+      if (!t) return;
       if (t.startsWith('//') || t.startsWith('*') || t.startsWith('/*') || t.startsWith('-')) return;
       for (const id of ids) {
-        if (new RegExp(`['"\`]${id}['"\`]`).test(linea)) hits.push({ rel, line: i + 1, id, texto: t.slice(0, 110) });
+        // Comillas simples o dobles, NO backticks: en prosa un `id` entre backticks es
+        // markdown, no código, y era la otra mitad del mismo falso positivo.
+        if (new RegExp(`['"]${id}['"]`).test(linea)) {
+          hits.push({ rel, line: i + 1, id, texto: crudo.split('\n')[i].trim().slice(0, 110) });
+        }
       }
     });
   }
@@ -700,6 +773,7 @@ function main() {
   checkMoneda(api);
   checkFxProcedencia(api);
   checkFuentesPublicas(api);
+  checkClubIds(api);
   checkCategorizacion(api);
   checkEscala(api);
   checkHigiene(api);
