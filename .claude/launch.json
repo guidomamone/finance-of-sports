@@ -7,11 +7,11 @@
       "runtimeArgs": [
         "-m",
         "http.server",
-        "8967",
+        "8971",
         "--directory",
         "."
       ],
-      "port": 8967,
+      "port": 8971,
       "autoPort": false
     }
   ]

@@ -783,6 +783,158 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   .header-currency-toggle{border:1px solid rgba(255,255,255,.3);border-radius:6px;}
   .header-currency-toggle button{background:transparent;color:#fff;padding:5px 10px;font-size:12px;font-weight:500;}
   .header-currency-toggle button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
+  /* ======================================================================
+     SELECTOR JERÁRQUICO DE CLUB (Versión 136). Reemplaza al <select id="clubSelect">
+     plano, que con 41 clubes ya era incómodo y al objetivo de 1000 es inusable.
+     Deporte › Región › País › Liga › Equipo, con búsqueda por texto encima.
+
+     TRES DECISIONES DE UX QUE SON PEDIDOS EXPLÍCITOS DE GUIDO, no pulido:
+     (1) El botón del header tiene que LEERSE COMO UN CONTROL: borde dorado,
+         eyebrow "ESTÁS VIENDO" y la palabra "Cambiar" visible. La versión
+         anterior del prototipo era un pill azul sobre header azul con una
+         flechita, y se leía como un título ("si yo llego al site en frío, no me
+         termina de quedar claro cómo elegir y/o cambiar de equipo").
+     (2) SALIR DEL PANEL TIENE QUE SER UN BOTÓN VISIBLE, en los dos modos: "Esc o
+         clickear afuera es LA ÚNICA manera en la que el usuario puede salir de
+         ese selector. Es mala UX". En móvil es peor todavía: no hay tecla Esc y
+         el panel ocupa casi toda la pantalla. Hay DOS salidas visibles (arriba a
+         la derecha "✕ Cerrar", abajo a la derecha "Cerrar sin cambiar"); Esc y el
+         backdrop quedan como atajos para quien los conoce, nunca como el camino.
+     (3) El punto de color de calidad del dato va en la fila, ANTES de entrar al
+         club: que nadie descubra recién adentro que eligió un placeholder. Sale
+         de `data/club-index.js` (campo `q`), que lo deriva de `sources{}` — no es
+         un campo tipeado a mano que se pueda desincronizar del dato real.
+     ====================================================================== */
+  .cb-wrap{position:relative;flex-shrink:0;}
+  .club-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1.5px solid var(--oro);
+            color:#fff;border-radius:9px;padding:4px 8px 4px 5px;cursor:pointer;font:inherit;text-align:left;min-width:196px;}
+  .club-btn:hover{background:rgba(242,183,5,.2);}
+  .club-btn .cb-txt{display:flex;flex-direction:column;line-height:1.2;min-width:0;flex:1;}
+  .club-btn .cb-eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:.09em;color:#a8b8d4;font-weight:700;}
+  .club-btn .cb-name{font-size:13.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .club-btn .cb-change{font-size:10.5px;font-weight:800;color:var(--oro);white-space:nowrap;background:rgba(242,183,5,.15);
+                       border-radius:5px;padding:4px 6px;}
+  /* Coach mark de primera visita: un solo cartel, no un tour de varios pasos. Se
+     va al primer click y no vuelve (flag en localStorage). */
+  .coach{position:absolute;top:calc(100% + 9px);right:0;background:var(--oro);color:var(--azul-dark);
+         font-size:11.5px;font-weight:700;padding:6px 9px;border-radius:7px;white-space:nowrap;z-index:60;
+         box-shadow:0 4px 14px rgba(0,0,0,.25);}
+  .coach::before{content:'';position:absolute;top:-5px;right:26px;border-left:6px solid transparent;
+                 border-right:6px solid transparent;border-bottom:6px solid var(--oro);}
+  .coach-x{cursor:pointer;opacity:.55;margin-left:3px;font-weight:400;}
+  .coach[hidden]{display:none;}
+  /* El escudo es un círculo con las iniciales, en el azul del sitio para TODOS los
+     clubes. NO se le pone el color real de cada club: son 41 pares de colores que
+     habría que verificar uno por uno, y un color equivocado (Boca en rojo) se lee
+     peor que ninguno. Los escudos reales están en la to-do. En la comparación, en
+     cambio, cada sujeto sí lleva color, pero asignado POR POSICIÓN (1º, 2º...), que
+     es dato de la vista y no del club. */
+  .crest{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+         font-size:9.5px;font-weight:800;color:#fff;letter-spacing:-.02em;background:var(--azul);
+         border:1.5px solid rgba(255,255,255,.45);}
+  .crest.sm{width:20px;height:20px;font-size:8px;border-width:1px;}
+  .crest.on-light{border-color:rgba(0,0,0,.12);}
+
+  /* `hidden` pierde contra un `display` explícito: sin estas 3 reglas, esconder la
+     franja de recientes o alternar árbol/resultados con `el.hidden = true` no hace
+     nada, porque `.sel-recents{display:flex}` y `.sel-cols{display:grid}` ganan.
+     Bug real, visto en la primera prueba en el navegador: la franja "RECIENTES"
+     aparecía vacía en la primera visita. */
+  .sel-recents[hidden], .sel-results[hidden], .sel-cols[hidden]{display:none;}
+  .sel-backdrop{position:fixed;inset:0;background:rgba(7,29,63,.45);z-index:80;display:none;}
+  .sel-backdrop.open{display:block;}
+  .sel-panel{position:fixed;z-index:90;top:64px;left:50%;transform:translateX(-50%);width:min(1120px,calc(100vw - 24px));
+             max-height:calc(100vh - 96px);background:var(--card);border:1px solid var(--border);border-radius:12px;
+             box-shadow:0 18px 48px rgba(7,29,63,.3);display:none;flex-direction:column;overflow:hidden;}
+  .sel-panel.open{display:flex;}
+  .sel-search{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--border);}
+  .sel-search input{flex:1;border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:15px;outline:none;font-family:inherit;}
+  .sel-search input:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(10,43,92,.1);}
+  .kbd{font-size:10.5px;color:var(--muted);border:1px solid var(--border);border-radius:4px;padding:2px 5px;background:#fafaf8;white-space:nowrap;}
+  .sel-close{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--border);
+             font-size:13px;color:var(--text);cursor:pointer;line-height:1;padding:10px 13px;border-radius:8px;font-weight:600;font-family:inherit;}
+  .sel-close:hover{background:#f2f2ef;border-color:var(--azul);}
+  .sel-recents{padding:9px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px;flex-wrap:wrap;background:#fbfbf9;}
+  .sel-recents .r-label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;}
+  .r-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);background:#fff;border-radius:999px;
+          padding:3px 9px 3px 4px;font-size:12px;cursor:pointer;color:var(--text);font-family:inherit;}
+  .r-chip:hover{border-color:var(--azul);background:#eef2f9;}
+  /* Miller columns: los 5 niveles a la vista en desktop, uno por vez en móvil. */
+  .sel-cols{display:grid;grid-template-columns:126px 162px 172px 210px 1fr;min-height:0;flex:1;overflow:hidden;}
+  .sel-col{border-right:1px solid var(--border);overflow-y:auto;min-height:0;display:flex;flex-direction:column;}
+  .sel-col:last-child{border-right:none;}
+  .sel-col-head{position:sticky;top:0;background:#fbfbf9;border-bottom:1px solid var(--border);padding:7px 10px;
+                font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;z-index:2;}
+  .sel-row{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:none;border:none;font:inherit;
+           padding:8px 10px;cursor:pointer;color:var(--text);border-bottom:1px solid #f2f2ef;}
+  .sel-row:hover{background:#eef2f9;}
+  .sel-row.sel{background:var(--azul);color:#fff;}
+  .sel-row.sel .r-meta,.sel-row.sel .r-sub{color:#c3d2ea;}
+  .sel-row.disabled{opacity:.42;cursor:not-allowed;}
+  .sel-row.disabled:hover{background:none;}
+  .r-main{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.25;}
+  .r-name{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .r-sub{display:block;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .r-meta{font-size:10.5px;color:var(--muted);flex-shrink:0;margin-left:6px;font-variant-numeric:tabular-nums;}
+  .r-arrow{font-size:10px;color:#b8b8b3;flex-shrink:0;}
+  .sel-row.sel .r-arrow{color:#fff;}
+  .sel-row.all{background:#fbfbf9;}
+  .sel-row.all .r-name{font-weight:700;}
+  .sel-row.all.sel{background:var(--azul);}
+  /* Los 4 estados de calidad del dato. Mismos nombres que devuelve clubQuality()
+     en data/sources-view.js: full | mixed | placeholder | empty. */
+  .q-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .q-dot.full{background:var(--green);}
+  .q-dot.mixed{background:var(--oro);}
+  .q-dot.placeholder{background:#c4c4bf;}
+  .q-dot.empty{background:transparent;border:1px dashed #c4c4bf;}
+  .sel-results{overflow-y:auto;flex:1;min-height:0;}
+  .res-group{padding:6px 14px 2px;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+             font-weight:800;background:#fbfbf9;border-bottom:1px solid var(--border);}
+  .sel-empty{padding:34px 14px;text-align:center;color:var(--muted);font-size:13.5px;line-height:1.6;}
+  .sel-foot{border-top:1px solid var(--border);padding:8px 14px;display:flex;align-items:center;gap:14px;
+            background:#fbfbf9;font-size:11.5px;color:var(--muted);flex-wrap:wrap;}
+  .legend-item{display:inline-flex;align-items:center;gap:5px;}
+  .sel-foot .spacer{flex:1;}
+  .foot-close{background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px 14px;
+              font-size:12.5px;font-weight:600;color:var(--text);cursor:pointer;margin-left:12px;font-family:inherit;}
+  .foot-close:hover{background:var(--azul);color:#fff;border-color:var(--azul);}
+  .sel-crumbs{display:none;gap:4px;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);flex-wrap:wrap;background:#fbfbf9;}
+  .crumb{background:none;border:none;font:inherit;font-size:12px;color:var(--azul);cursor:pointer;padding:2px 4px;border-radius:4px;}
+  .crumb:hover{background:#eef2f9;}
+  .crumb.cur{color:var(--text);font-weight:700;}
+  .crumb-sep{color:#c4c4bf;font-size:10px;}
+
+  @media (max-width:900px){
+    /* EL NAV PASA A SU PROPIA FILA (Versión 136). El botón de club mide ~210px contra
+       los ~104px del <select> que reemplazó, así que en una sola fila el `nav` quedaba
+       aplastado a 0px de ancho y las 4 pestañas desaparecían sin aviso (medido en el
+       navegador: nav.getBoundingClientRect().width === 0 a 614px de ancho). Es la to-do 9
+       del comentario de arriba, que este cambio hacía urgente. Se resuelve dejando que
+       el header envuelva y mandando el nav a una segunda fila completa, en vez de
+       esconderlo: son las 4 secciones del sitio y no hay otra forma de llegar a ellas. */
+    .header-inner{flex-wrap:wrap;}
+    nav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
+    nav button{font-size:12.5px;padding:7px 10px;}
+    .logo{min-width:0;overflow:hidden;}
+    /* Una columna por vez + breadcrumb clickeable. El nav del header ya se recorta
+       abajo de ~850px (to-do 9), así que el panel no puede empeorar eso: en móvil
+       el botón de club se estira y el resto cede espacio antes que él. */
+    .sel-cols{grid-template-columns:1fr;}
+    .sel-col{display:none;border-right:none;}
+    .sel-col.active-pane{display:flex;}
+    .sel-crumbs{display:flex;}
+    .sel-panel{top:8px;max-height:calc(100vh - 16px);}
+    .cb-wrap{min-width:0;flex:1;display:flex;justify-content:flex-end;}
+    .club-btn{min-width:0;flex:1;max-width:210px;}
+    /* Si algo tiene que salir por falta de espacio, que sea el texto informativo,
+       nunca la salida: el conteo se esconde antes que "Cerrar sin cambiar". */
+    .sel-foot{gap:8px;}
+    .sel-foot .spacer{display:none;}
+    .sel-foot .foot-count{display:none;}
+    .foot-close{margin-left:auto;padding:10px 14px;}
+  }
+
   .disclaimer{background:var(--azul-dark);color:#c9d4e6;font-size:12.5px;text-align:center;padding:6px 12px;}
   main{max-width:1160px;margin:0 auto;padding:28px 20px 80px;}
   section{display:none;}
@@ -999,18 +1151,28 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
            populateCurrencyToggle() (ver <script> principal), porque cada club puede tener una
            moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
       <div class="segmented header-currency-toggle" id="currencyToggleGlobal" data-i18n-title="header.currency" title="Moneda: aplica a Inicio y Finanzas"></div>
-      <!-- Versión 101 (refactor de escalabilidad, a pedido de Guido): este <select> arrancaba
-           vacío en el HTML — antes tenía un <option> por club tipeado a mano acá mismo, había que
-           acordarse de agregar uno nuevo en la posición alfabética correcta cada vez que se sumaba
-           un club (ya causó un bug real, ver finance-of-sports-project.md). Ahora se genera en runtime, ver
-           populateClubSelect() en el <script> principal: lee `clubs` (data/clubs.js), ordena por
-           `displayName` alfabético A→Z, y arma cada <option> — agregar un club nuevo ya no toca
-           este HTML en absoluto, alcanza con su entrada en `clubs{}`. -->
-      <select id="clubSelect" data-i18n-title="header.club" title="Elegir club" style="padding:5px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.3);font-size:12px;max-width:104px;"></select>
+      <!-- SELECTOR JERÁRQUICO DE CLUB (Versión 136). Acá había un <select id="clubSelect">
+           plano, generado en runtime desde `clubs{}` (populateClubSelect(), borrada en esta
+           versión). Con 41 clubes ya era incómodo y al objetivo declarado de 1000 es inusable:
+           no se puede buscar, no agrupa, y no dice nada de qué vas a encontrar adentro. Lo
+           reemplaza este botón + el panel de abajo (ver #clubPanel, después de </header>).
+           El botón muestra el club activo y la palabra "Cambiar": ver el comentario del CSS
+           (.club-btn) para por qué se lee así y no como un título. -->
+      <div class="cb-wrap">
+        <button class="club-btn" id="clubBtn" data-i18n-title="header.club.btn" title="Cambiar de club (Ctrl+K)" aria-haspopup="dialog" aria-expanded="false">
+          <span class="crest" id="cbCrest" aria-hidden="true">··</span>
+          <span class="cb-txt">
+            <span class="cb-eyebrow" id="cbEyebrow" data-i18n="header.club.eyebrow">Estás viendo</span>
+            <span class="cb-name" id="cbName" data-i18n="header.club.none">Elegí tu club</span>
+          </span>
+          <span class="cb-change" data-i18n="header.club.change">Cambiar &#9662;</span>
+        </button>
+        <div class="coach" id="coachMark" hidden><span data-i18n="selector.coach">Elegí tu club acá</span> <span class="coach-x" id="coachX" role="button" aria-label="Cerrar">&#215;</span></div>
+      </div>
       <button id="contactBtn" data-i18n-title="header.contact" title="Contacto">&#9993;</button>
       <!-- Selector de idioma (Versión 115). El <button> y el menú se llenan en runtime
-           desde `window.LANGS` (data/lang/langs.js), igual que #clubSelect se llena desde
-           `clubs` (data/clubs.js): agregar un idioma NO toca este HTML. -->
+           desde `window.LANGS` (data/lang/langs.js), igual que el panel del selector se llena
+           desde `clubs` (data/clubs.js): agregar un idioma NO toca este HTML. -->
       <div class="lang-wrap">
         <button id="langBtn" data-i18n-title="header.lang" title="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
           <span class="lang-globe" aria-hidden="true">&#127760;</span><span id="langBtnLabel">ES</span>
@@ -1020,6 +1182,49 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     </div>
   </div>
 </header>
+
+<!-- ===================== PANEL DEL SELECTOR DE CLUB (Versión 136) =====================
+     Miller columns (Deporte › Región › País › Liga › Equipo) con búsqueda arriba. La
+     jerarquía es OPCIONAL, no un peaje: el 90% de las visitas ya tiene un club en la
+     cabeza, y escribir "boca" tiene que llegar en un paso. El árbol es para explorar.
+     Todo el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
+     `data/leagues.js` + `data/club-leagues.js`; no se carga ningún `data/<club>-data.js`
+     para dibujarlo (son 41 clubes en el panel y 0 archivos de datos bajados). -->
+<div class="sel-backdrop" id="clubBackdrop"></div>
+<div class="sel-panel" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
+  <div class="sel-search">
+    <input id="selQ" type="text" autocomplete="off" spellcheck="false"
+           data-i18n-placeholder="selector.search.ph"
+           placeholder="Buscá un club, una liga o un país…  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
+    <span class="kbd">esc</span>
+    <!-- Salida visible N° 1 (arriba a la derecha). NO un × gris de 20px sin caja. -->
+    <button class="sel-close" id="selClose">&#10005;<span data-i18n="selector.close">Cerrar</span></button>
+  </div>
+  <div class="sel-recents" id="selRecentsWrap" hidden>
+    <span class="r-label" data-i18n="selector.recents">Recientes</span>
+    <div id="selRecents" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+  </div>
+  <div class="sel-crumbs" id="selCrumbs"></div>
+  <div class="sel-results" id="selResults" hidden></div>
+  <div class="sel-cols" id="selCols">
+    <div class="sel-col" data-level="0"><div class="sel-col-head" data-i18n="selector.col.sport">Deporte</div><div id="selColSport"></div></div>
+    <div class="sel-col" data-level="1"><div class="sel-col-head" data-i18n="selector.col.region">Región</div><div id="selColRegion"></div></div>
+    <div class="sel-col" data-level="2"><div class="sel-col-head" data-i18n="selector.col.country">País</div><div id="selColCountry"></div></div>
+    <div class="sel-col" data-level="3"><div class="sel-col-head" data-i18n="selector.col.league">Liga</div><div id="selColLeague"></div></div>
+    <div class="sel-col active-pane" data-level="4"><div class="sel-col-head" data-i18n="selector.col.club">Equipo</div><div id="selColClub"></div></div>
+  </div>
+  <div class="sel-foot">
+    <span class="legend-item"><i class="q-dot full"></i> <span data-i18n="selector.legend.full">Balance oficial</span></span>
+    <span class="legend-item"><i class="q-dot mixed"></i> <span data-i18n="selector.legend.mixed">Parcial / mixto</span></span>
+    <span class="legend-item"><i class="q-dot placeholder"></i> <span data-i18n="selector.legend.placeholder">Placeholder</span></span>
+    <span class="legend-item"><i class="q-dot empty"></i> <span data-i18n="selector.legend.empty">Sin datos todavía</span></span>
+    <span class="spacer"></span>
+    <span class="foot-count" id="selFootCount"></span>
+    <!-- Salida visible N° 2 (abajo a la derecha): es donde cae el pulgar en un teléfono,
+         y el texto aclara que salir de ahí no te deja en otro club. -->
+    <button class="foot-close" id="selFootClose" data-i18n="selector.close.nochange">Cerrar sin cambiar</button>
+  </div>
+</div>
 
 <main>
 
@@ -1461,30 +1666,35 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '136';</script>
-<script src="data/lang/langs.js?v=136"></script>
-<script src="js/i18n.js?v=136"></script>
-<script src="data/clubs.js?v=136"></script>
+<script>window.ASSET_V = '136a';</script>
+<script src="data/lang/langs.js?v=136a"></script>
+<script src="js/i18n.js?v=136a"></script>
+<script src="data/clubs.js?v=136a"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=136"></script>
+<script src="data/club-index.js?v=136a"></script>
 <!-- data/leagues.js (Versión 136): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=136"></script>
-<script src="data/club-leagues.js?v=136"></script>
-<script src="data/category-map.js?v=136"></script>
-<script src="data/site-labels.js?v=136"></script>
-<script src="data/currency-map.js?v=136"></script>
-<script src="data/sources-view.js?v=136"></script>
-<script src="data/boca-data.js?v=136"></script>
-<script src="js/finanzas-calc.js?v=136"></script>
-<script src="js/finanzas-render.js?v=136"></script>
+<script src="data/leagues.js?v=136a"></script>
+<script src="data/club-leagues.js?v=136a"></script>
+<script src="data/category-map.js?v=136a"></script>
+<script src="data/site-labels.js?v=136a"></script>
+<script src="data/currency-map.js?v=136a"></script>
+<script src="data/sources-view.js?v=136a"></script>
+<script src="data/boca-data.js?v=136a"></script>
+<script src="js/finanzas-calc.js?v=136a"></script>
+<script src="js/finanzas-render.js?v=136a"></script>
+<!-- js/selector.js (Versión 136): el selector jerárquico de club. Reemplaza al
+     <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
+     clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
+     sin bajar un solo data/<club>-data.js. -->
+<script src="js/selector.js?v=136a"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1515,7 +1725,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   // ---------- CARGA BAJO DEMANDA (LAZY LOADING) DE DATOS POR CLUB ----------
   // Boca es el club default (carga siempre, vía data/boca-data.js en el <head>, igual que antes).
   // Cualquier otro club se inyecta como <script> recién cuando el visitante lo elige en
-  // `clubSelect`, así alguien que solo mira Boca no paga el peso de los demás. `clubDataLoaded`
+  // el selector jerárquico, así alguien que solo mira Boca no paga el peso de los demás. `clubDataLoaded`
   // cachea qué ya se bajó, para no volver a pedir el archivo si el visitante va y vuelve entre
   // clubes en la misma visita.
   //
@@ -1603,31 +1813,34 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     renderInicioCharts();
   }
 
-  // Genera las <option> de #clubSelect a partir de `clubs` (data/clubs.js), ordenadas por
-  // displayName alfabético A→Z (ver comentario en el HTML de arriba). `currentClub` (definido
-  // arriba, 'boca' por defecto) queda marcado `selected` explícito, para que el dropdown nunca
-  // quede desincronizado del club realmente cargado.
-  function populateClubSelect(){
-    const select = document.getElementById('clubSelect');
-    const ids = Object.keys(clubs).sort((a, b) => clubs[a].displayName.localeCompare(clubs[b].displayName, 'es', {sensitivity:'base'}));
-    select.innerHTML = ids.map(id => `<option value="${id}"${id === currentClub ? ' selected' : ''}>${clubs[id].displayName}</option>`).join('');
-  }
-  populateClubSelect();
-
-  document.getElementById('clubSelect').addEventListener('change', (e) => {
-    const select = e.target;
-    const newClub = select.value;
+  // ---------- SELECTOR JERÁRQUICO DE CLUB (Versión 136) ----------
+  // Acá vivían `populateClubSelect()` (que generaba una <option> por club, alfabético
+  // A→Z) y el listener de `change` de ese <select>. Los reemplaza `js/selector.js`: el
+  // panel Deporte › Región › País › Liga › Equipo con búsqueda encima. La regla de la
+  // Versión 96 ("el dropdown va siempre alfabético A→Z") quedó obsoleta con el dropdown
+  // (ver CONVENCIONES.md): el orden alfabético sigue existiendo, pero ahora DENTRO de
+  // cada liga/país, que es el nivel donde comparar dos nombres significa algo.
+  //
+  // Este archivo le pasa 2 funciones y no sabe nada más de él; el selector no sabe nada
+  // de cómo se renderiza el sitio. Cambiar de club sigue siendo exactamente lo que era:
+  // cargar su data file, actualizar `currentClub`, repintar todo, y correr la
+  // verificación de tie-outs de ese club recién cargado.
+  function selectClub(newClub){
     const previousClub = currentClub;
-    select.disabled = true;
-    loadClubData(newClub).then(() => {
+    return loadClubData(newClub).then(() => {
       currentClub = newClub;
       refreshAllForClub();
       verifyTieOuts(newClub);
     }).catch(err => {
       console.error(err);
-      select.value = previousClub;
+      currentClub = previousClub;
       alert('No se pudieron cargar los datos de ese club. Probá de nuevo en un momento.');
-    }).finally(() => { select.disabled = false; });
+    });
+  }
+
+  CLUB_SELECTOR.init({
+    getClub: () => currentClub,
+    pickClub: selectClub,
   });
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
@@ -1700,7 +1913,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   // data/instituto-data.js para el comentario original de este registro) — un club nuevo del motor
   // genérico no necesita tocar estas 3 funciones. River/Racing/etc. se cargan bajo demanda (ver
   // loadClubData más abajo), pero eso no afecta a estas funciones: solo se llaman después de que
-  // loadClubData(clubId) ya resolvió (ver el listener de `clubSelect` más abajo), momento en el que
+  // loadClubData(clubId) ya resolvió (ver `selectClub()` más abajo), momento en el que
   // CLUB_GENERIC_DATA[clubId] ya existe.
   // Versión 131: los 3 devuelven null si no hay club elegido o si sus datos todavía no se
   // cargaron. El comentario de arriba decía que "solo se llaman después de que loadClubData()
