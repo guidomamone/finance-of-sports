@@ -677,7 +677,11 @@ function checkHigiene(api) {
   // i18n: una clave usada y no definida degrada al castellano en silencio.
   const usadas = new Set();
   for (const m of html.matchAll(/data-i18n(?:-title)?="([^"]+)"/g)) usadas.add(m[1]);
-  for (const rel of ['js/finanzas-render.js', 'js/finanzas-calc.js', 'index.html']) {
+  // Versión 136: se suman js/selector.js y js/comparar-clubes.js. Sin esto el chequeo
+  // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no
+  // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
+  // REGLA: todo archivo de `js/` que llame a `t()` va en esta lista.
+  for (const rel of ['js/finanzas-render.js', 'js/finanzas-calc.js', 'js/selector.js', 'js/comparar-clubes.js', 'index.html']) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
     // Una clave que termina en "." no es una clave sino un PREFIJO de clave dinámica
     // (`t('fx.source.' + meta.fxSource, ...)`): el valor real se arma en runtime y no se

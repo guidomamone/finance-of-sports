@@ -612,7 +612,12 @@ window.CLUB_COMPARE = (function(){
     all.forEach(function(s){ years[s.year] = true; });
     var ys = Object.keys(years).map(Number).sort(function(a, b){ return b - a; });
     if(ys.length > 1){
-      w.push(t('cmp.warn.years', 'Estás comparando <b>ejercicios de años distintos</b> (' + ys.join(', ') + '). Cada uno se convierte a USD con el tipo de cambio que declara su propio documento, sin ajustar por inflación: la diferencia incluye el paso del tiempo, no solo al club.'));
+      // Partido en dos claves porque los años van EN EL MEDIO: una sola clave con la
+      // lista ya interpolada adentro es intraducible (el traductor recibiría el texto
+      // con "2027, 2024" pegado y no podría moverlo de lugar).
+      w.push(t('cmp.warn.years.a', 'Estás comparando <b>ejercicios de años distintos</b>')
+        + ' (' + ys.join(', ') + '). '
+        + t('cmp.warn.years.b', 'Cada uno se convierte a USD con el tipo de cambio que declara su propio documento, sin ajustar por inflación: la diferencia incluye el paso del tiempo, no solo al club.'));
     }
 
     // (3) CATEGORÍAS DISTINTAS. Si un sujeto jugó ese ejercicio en otra división que
