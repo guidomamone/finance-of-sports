@@ -642,6 +642,34 @@ o directamente retomar en la próxima sesión)
         ejercicios de Argentinos Juniors y 3 de Unión). Mientras las use un solo club no duplican
         nada; se mueven a la tabla al confirmar la fecha exacta de cierre de cada una.
 
+22. NUEVO (Versión 128, auditoría de escala `auditorias/2026-09-13-escala.md`): los 6 cuellos que
+    aparecen al crecer, en el orden en que aparecen. Cada uno con el número que lo dispara:
+    (a) `clubId` NO tiene país, y es el primer cuello y el más barato de evitar ahora. Los ids
+        `racing`, `independiente`, `union`, `sanlorenzo` existen en varios países (Racing de
+        Santander, Independiente del Valle y el de Medellín, Unión Española, Unión Magdalena). Ya
+        pasa en `fuentes/`, donde conviven Honduras/Olimpia.md y Paraguay/Olimpia.md, y ahí no choca
+        solo porque el país es una carpeta. El id además define el nombre del archivo de datos y el
+        prefijo de cada sourceId, así que arreglar una colisión después es renombrar todo eso.
+        DECIDIR ANTES DEL PRÓXIMO CLUB: id con país (`racing-ar`), más un chequeo en `tools/audit.js`
+        que falle si dos clubes de países distintos comparten nombre base.
+    (b) El comentario interno de ESTE archivo son 50 KB de los 140 KB de `index.html` (36%), y los
+        baja CADA visitante en CADA pageview: la to-do list, qué club es placeholder, todo. Crece
+        102 bytes por club, o sea ~150 KB a 1000 clubes. Mover el bloque a un `ESTADO.md` propio y
+        dejar acá un puntero de 3 líneas.
+    (c) `fuentes.html` es una sola página de 767 bytes por documento: 70 KB hoy con 91 documentos,
+        ~1,7 MB y 2.200 filas a 1000 clubes. Partir por país arriba de ~300 documentos, con un
+        índice. Es el mismo generador con un loop más, y le da una URL propia a cada país.
+    (d) `data/clubs.js` se baja entero siempre, 366 bytes por club: ~366 KB a 1000 clubes antes de
+        ver nada, solo para llenar un dropdown. Separar un índice liviano del resto.
+    (e) El selector de club es un `<select>` plano: a ~100 clubes ya es inusable. Guido lo está
+        trabajando aparte (`prototipo-selector.html`, `PROMPT-selector-jerarquico.md`).
+    (f) `auditAll()` carga los clubes en SERIE (`for` con `await`): 114 ms con 41, pero ~30 s a 1000
+        clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
+        paralelas con `Promise.all`.
+    TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
+    `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
+    otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
+
 SI ALGO NO CIERRA (números, totales)
 Antes de tocar nada, correr una verificación aritmética simple (sumar las
 categorías de Revenue del club/ejercicio en cuestión y comparar contra el
@@ -1476,7 +1504,11 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
 <footer>
   <span data-i18n="footer.text">Este sitio no representa a ninguna lista ni candidatura. Su único objetivo es facilitar el acceso a datos públicos para que cada socio decida su voto.</span><br>
-  <span style="opacity:.7;" data-i18n="footer.note">MVP · datos placeholder · versión de prueba</span>
+  <span style="opacity:.7;" data-i18n="footer.note">MVP · datos placeholder · versión de prueba</span><br>
+  <!-- Link ESTÁTICO a fuentes.html (Versión 128). Los otros 2 links a esa página los arma
+       js/finanzas-render.js en runtime, así que un crawler que no ejecuta JS no la encontraba:
+       la página hecha para que la indexen era huérfana. Este <a> vive en el HTML servido. -->
+  <a href="fuentes.html" style="color:inherit;opacity:.7;" data-i18n="footer.fuentes">Todas las fuentes del sitio</a>
 </footer>
 
 <!-- MODAL DE CONTACTO -->
@@ -1513,17 +1545,17 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '127b';</script>
-<script src="data/lang/langs.js?v=127b"></script>
-<script src="js/i18n.js?v=127b"></script>
-<script src="data/clubs.js?v=127b"></script>
-<script src="data/category-map.js?v=127b"></script>
-<script src="data/site-labels.js?v=127b"></script>
-<script src="data/currency-map.js?v=127b"></script>
-<script src="data/sources-view.js?v=127b"></script>
-<script src="data/boca-data.js?v=127b"></script>
-<script src="js/finanzas-calc.js?v=127b"></script>
-<script src="js/finanzas-render.js?v=127b"></script>
+<script>window.ASSET_V = '128a';</script>
+<script src="data/lang/langs.js?v=128a"></script>
+<script src="js/i18n.js?v=128a"></script>
+<script src="data/clubs.js?v=128a"></script>
+<script src="data/category-map.js?v=128a"></script>
+<script src="data/site-labels.js?v=128a"></script>
+<script src="data/currency-map.js?v=128a"></script>
+<script src="data/sources-view.js?v=128a"></script>
+<script src="data/boca-data.js?v=128a"></script>
+<script src="js/finanzas-calc.js?v=128a"></script>
+<script src="js/finanzas-render.js?v=128a"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

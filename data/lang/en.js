@@ -73,6 +73,7 @@ window.I18N.strings.en = {
   "finanzas.title": "Finances",
   "finanzas.view.board": "By board",
   "finanzas.view.year": "Year by year",
+  "footer.fuentes": "Every source on the site",
   "footer.note": "MVP · placeholder data · test version",
   "footer.text": "This site does not represent any electoral list or candidacy. Its only goal is to make public data easy to reach, so every member can decide their vote for themselves.",
   "fuentes.tipo.estimate_placeholder": "No document",

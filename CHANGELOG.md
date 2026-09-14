@@ -709,3 +709,10 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - 15 títulos de documento tenían un em dash y se limpiaron, más 38 líneas de texto escritas en esta sesión: la regla está en `CONVENCIONES.md` desde la Versión 42 y la había violado sistemáticamente.
 - `tools/audit.js` suma 2 guardarraíles: `nota-publica-con-interno` (P1) si un `publicNote` menciona un nombre propio, una ruta del repo o un detalle de transcripción, y `note-interna-renderizada` (P1) si alguien vuelve a interpolar `.note` dentro de HTML. Probado inyectando la fuga a propósito.
 - `auditAll()`: 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.
+
+## Versión 128: auditoría de escala, y la página de fuentes deja de ser huérfana
+
+- Segunda auditoría del día, eje `escala` (pedida por Guido antes de un cambio grande): `auditorias/2026-09-13-escala.md`.
+- P1 encontrado y arreglado: `fuentes.html` era una página huérfana. Se hizo para que la indexen buscadores y sus únicos links los armaba el JS en runtime, así que un crawler que no ejecuta JavaScript nunca llegaba (los 3 `fuentes.html` de `index.html` estaban los tres dentro de comentarios). Ahora hay un `<a>` estático en el footer, verificado con `curl` sobre el HTML servido.
+- 6 cuellos de escala medidos, con el número en el que aparece cada uno, a la to-do 22: `clubId` sin país (ya hay un Olimpia en Honduras y otro en Paraguay), los 50 KB de comentario interno que baja cada visitante y crecen 102 bytes por club, `fuentes.html` como página única de 767 bytes por documento, `clubs.js` entero en cada visita, el `<select>` plano de clubes, y `auditAll()` cargando en serie.
+- Anotado el techo del modelo: la taxonomía y 3 pestañas asumen fútbol.
