@@ -282,8 +282,8 @@ Regla actual, la que hay que seguir hoy: "Supuestos", "Presupuesto Financiero", 
 Inversiones" e "Ingresos y Egresos por Torneo" (los 4 cards de Finanzas que dependen de tener un
 documento de PRESUPUESTO cargado, no un balance) se esconden enteros (`display:none` en el `.card`)
 cuando el club/ejercicio seleccionado no tiene datos en el mapa correspondiente
-(`presupuestoSupuestosByClub`/`presupuestoFinancieroByClub`/`presupuestoInversionesByClub`, y el
-`#torneosBoca2027` de los 3 cards de torneo). Nada de mensaje "no hay supuestos para este
+(`presupuestoSupuestosByYear`/`presupuestoFinancieroByYear`/`presupuestoInversionesByYear` en el
+`data/<club>-data.js` del club, y el `#torneosBoca2027` de los 3 cards de torneo). Nada de mensaje "no hay supuestos para este
 ejercicio": si no hay dato, el card directamente no aparece.
 
 Implementación de referencia (`renderSupuestosCard`/`renderPresupuestoFinancieroCard`/
@@ -338,7 +338,7 @@ corregido en la Versión 36): se le agregó un `sourceNote` con "Fuente: Presupu
 Ingresos y Egresos, Ejercicio..., documento oficial de Racing Club..." a CADA card nuevo de
 Racing (Supuestos, Presupuesto Financiero, Presupuesto de Inversiones). Guido lo rechazó
 explícitamente ("detesto que hagas eso"). El fix: se sacó `sourceNote` de los 3 mapas de datos
-(`presupuestoSupuestosByClub`/`presupuestoFinancieroByClub`/`presupuestoInversionesByClub`), donde
+(los 3 `presupuesto*ByYear` del club, que hasta la Versión 135 eran registros en el render), donde
 quedaba contenido explicativo real más allá de la cita (ej. la nota de "base de caja" de Racing), se
 renombró a `note` y se le sacó la frase "Fuente: ..." del principio, dejando solo la explicación.
 

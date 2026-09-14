@@ -648,10 +648,191 @@ const bocaTitulosData = [
 // gestionesByClub.boca (data/clubs.js) sigan teniendo los 5 años/2 gestiones viejas para Mercado de
 // Pases/Resultados/Comparar Gestiones. Cualquier club sin estos 2 campos (el resto) muestra TODOS sus
 // años/gestiones, comportamiento sin cambios.
+const bocaPresupuestoFinancieroByYear = {
+  // Presupuesto Financiero 2026/27, tal cual lo imprime el documento oficial (ver
+  // Clubes/Argentina/Boca/presupuesto-26-27.md). Estuvo escrito a mano como HTML adentro de
+  // index.html hasta la Versión 135: era el mismo dato, pero en la capa de markup y solo para
+  // Boca, con un `isBoca2027` decidiendo si se mostraba. Los montos están en MILLONES de ARS,
+  // como el resto del proyecto; `formato:'ars-exacto'` le dice al render que esta tabla se
+  // muestra en pesos enteros con separador de miles (así la imprime el documento), no
+  // convertida por el toggle de moneda.
+  2027: {
+    steps: [
+      { label:'Saldo Inicial', op:'', magnitude:6045.520 },
+      { label:'Créditos a cobrar', op:'+', magnitude:8170.900 },
+      { label:'Ingresos', op:'+', magnitude:239226.960 },
+      { label:'Deudas a pagar', op:'−', magnitude:12601.624 },
+      { label:'Gastos', op:'−', magnitude:194009.816 },
+      { label:'Inversiones Obras', op:'−', magnitude:41767.058 },
+      { label:'Saldo al Cierre', op:'=', magnitude:5064.882, isResult:true },
+    ],
+    tabla: { formato:'ars-exacto', rows: [
+      { label:'SALDO INICIAL', amount:6045.52, kind:'total' },
+      { label:'CRÉDITOS A COBRAR EJERCICIO ANTERIOR', amount:8170.9, kind:'subtotal' },
+      { label:'Ingresos', kind:'subhead' },
+      { label:'Cuotas Sociales', amount:84600.271 },
+      { label:'Comerciales', amount:48760.607 },
+      { label:'Exhibición de Espectáculos Deportivos', amount:30983.617 },
+      { label:'Abonos', amount:57293.884 },
+      { label:'Diversos', amount:12178.898 },
+      { label:'Otros deportes', amount:2118.967 },
+      { label:'Basket Profesional', amount:1656.377 },
+      { label:'Futbol Juvenil', amount:1489.046 },
+      { label:'Futbol Femenino', amount:145.293 },
+      { label:'TOTAL INGRESOS', amount:239226.96, kind:'subtotal' },
+      { label:'DEUDAS A PAGAR EJERCICIO ANTERIOR', amount:12601.624, kind:'subtotal' },
+      { label:'Gastos', kind:'subhead' },
+      { label:'Fútbol Profesional', amount:70047.611 },
+      { label:'Administración', amount:36189.077 },
+      { label:'Organización de Espectáculos', amount:33429.911 },
+      { label:'Gastos Generales', amount:14386.41 },
+      { label:'Fútbol Juvenil', amount:21198.57 },
+      { label:'Otros Deportes', amount:6501.997 },
+      { label:'Basket', amount:5765.515 },
+      { label:'Comerciales', amount:3250.608 },
+      { label:'Socios', amount:2393.117 },
+      { label:'Eventuales', amount:847.0 },
+      { label:'TOTAL GASTOS', amount:194009.816, kind:'subtotal' },
+      { label:'INVERSIONES OBRAS', amount:41767.058, kind:'subtotal' },
+      { label:'SALDO AL CIERRE', amount:5064.882, kind:'total' },
+    ] },
+    note:'Los importes de ingresos y gastos en el presupuesto financiero difieren de los del presupuesto económico porque incluyen el efecto de cobros y pagos diferidos de un ejercicio a otro (créditos y deudas del ejercicio anterior), mientras que el presupuesto económico registra todo por lo devengado.',
+  },
+};
+
+const bocaPresupuestoInversionesByYear = {
+  // Presupuesto de Inversiones 2026/27, obra por obra, del mismo documento. Mismo origen y
+  // mismo criterio de unidades que el financiero de arriba.
+  2027: {
+    total:41767.058,
+    formato:'ars-exacto',
+    groups: [
+      { label:'A. Sistemas y Control de Acceso', total:2818.718, rows: [
+        { label:'Aplicaciones', amount:1671.047 },
+        { label:'Infraestructura', amount:530.971 },
+        { label:'Actualizacion puestos de trabajo', amount:250.18 },
+        { label:'Licencias', amount:160.72 },
+        { label:'Seguridad Informática', amount:121.8 },
+        { label:'Datacenter', amount:84.0 },
+        { label:'A - TOTAL SISTEMAS Y CONTROL DE ACCESO', amount:2818.718, kind:'total' },
+      ] },
+      { label:'B. Estadio', total:19606.5, rows: [
+        { label:'Obras Estadio', kind:'subhead' },
+        { label:'Plan integral de ampliación y mejoras etapa 1', amount:11200.0 },
+        { label:'Intervenciones interiores estadio', amount:1440.0 },
+        { label:'Gimnasio Socios Etapa II', amount:960.0 },
+        { label:'Platea L Etapa II', amount:960.0 },
+        { label:'Hard Rock', amount:512.0 },
+        { label:'Puerta 3 + Hall de Ingreso', amount:360.0 },
+        { label:'Subtotal Obras Estadio', amount:15432.0, kind:'subtotal' },
+        { label:'Operaciones Estadio', kind:'subhead' },
+        { label:'Cambio de 2 transformadores 1000 Kva / Cambio de tablero de 1/2 Tensión', amount:412.5 },
+        { label:'Reparación de Hormigón', amount:300.0 },
+        { label:'Juntas de dilatación - Horizontales', amount:262.5 },
+        { label:'Juntas de dilatación - Verticales', amount:262.5 },
+        { label:'Reubicación/ampliación de Nuevo tablero general eléctrico', amount:255.0 },
+        { label:'Recambio de Butacas y soportes Plateas Alta', amount:240.0 },
+        { label:'Grupo electrogeno con transferencia automatica', amount:220.0 },
+        { label:'Consultoria Estudio estructural - Memorias de cálculos', amount:220.0 },
+        { label:'Adquisición de maquinas y herramientas de mano en general', amount:200.0 },
+        { label:'Adecuacion de Instalacion Sanitaria - Cambio de colectores y alimentación de baños', amount:180.0 },
+        { label:'Nuevas Acometidas eléctricas', amount:180.0 },
+        { label:'Adecuacion Instalacion Cloacal - columnas bajada cloacal baños', amount:160.0 },
+        { label:'Barandas de Escaleras de Acceso, Centrales y laterales. Sincadas.', amount:160.0 },
+        { label:'Señaletica General de Estadio', amount:120.0 },
+        { label:'Mantenimiento excepcional de las instalaciones eléctricas tableros secundarios', amount:110.0 },
+        { label:'Iluminación escaleras de ingresos al estadio/circulación', amount:110.0 },
+        { label:'Cambio de Vidrios // Ley de vidrios', amount:110.0 },
+        { label:'Bombas de Agua - Elevacion', amount:90.0 },
+        { label:'Reparacion en tanques de agua de Bombeo y Reserva', amount:90.0 },
+        { label:'Bandejas porta-cables / General de circuitos de distribucion', amount:82.0 },
+        { label:'Luces de Crecimiento Adecuacion', amount:80.0 },
+        { label:'Varios', amount:330.0 },
+        { label:'Subtotal Operaciones Estadio', amount:4174.5, kind:'subtotal' },
+        { label:'B - TOTAL ESTADIO', amount:19606.5, kind:'total' },
+      ] },
+      { label:'C. Casa Amarilla', total:12325.2, rows: [
+        { label:'Obras Casa Amarilla', kind:'subhead' },
+        { label:'Microestadio', amount:9120.0 },
+        { label:'Asfalto via Playa 3', amount:888.0 },
+        { label:'Garitas de seguridad y comedor personal', amount:777.6 },
+        { label:'Tercer tiempo de hockey', amount:256.0 },
+        { label:'Sector acreditaciones', amount:217.6 },
+        { label:'Subtotal Obras Casa Amarilla', amount:11259.2, kind:'subtotal' },
+        { label:'Operaciones Casa Amarilla', kind:'subhead' },
+        { label:'Compra de maquina fumigadora / cortadoras de césped / Bordeadoras', amount:125.0 },
+        { label:'Cambio de Chapas / cenefas Complejo Dormis', amount:120.0 },
+        { label:'Nuevas Acometidas eléctricas', amount:110.0 },
+        { label:'Iluminacion Cancha 2', amount:95.0 },
+        { label:'Impermeabilización cubierta chapa y losa (Dormis - Futbol)', amount:90.0 },
+        { label:'Grupo electrógeno Dormis y Quinquela con transferencia', amount:83.5 },
+        { label:'Grupo electrógeno Depto Medico con transferencia', amount:83.5 },
+        { label:'Termotanques solares Quinquela', amount:80.0 },
+        { label:'Tableros eléctricos', amount:60.0 },
+        { label:'Cambio de Chapas / cenefas Polideportivo Quinquela Martin', amount:55.0 },
+        { label:'Vidrios Casa Amarilla Ley vidrios GCBA Complejo Dormis / Quinquela Martin', amount:45.0 },
+        { label:'Instalación gas Adecuación Quinquela / Dormis // Gatorade', amount:35.0 },
+        { label:'Nueva vereda interna perimetral Casa Amarilla', amount:25.0 },
+        { label:'Varios', amount:59.0 },
+        { label:'Subtotal Operaciones Casa Amarilla', amount:1066.0, kind:'subtotal' },
+        { label:'C - TOTAL GERENCIA DE OPERACIONES', amount:12325.2, kind:'total' },
+      ] },
+      { label:'D. Predio Ezeiza', total:7016.64, rows: [
+        { label:'Hotel para division reserva', amount:4800.0 },
+        { label:'Vestuarios canchas nuevas', amount:1146.24 },
+        { label:'Buffet/comedor padres', amount:662.4 },
+        { label:'Platea estacionamientos cancha 11', amount:408.0 },
+        { label:'D - TOTAL PREDIO EZEIZA', amount:7016.64, kind:'total' },
+      ] },
+    ],
+  },
+};
+
+const bocaPresupuestoSupuestosByYear = {
+  // Las premisas que el propio presupuesto declara (macro, política de ingresos y de gastos).
+  // Movido desde js/finanzas-render.js en la Versión 135, junto con el Presupuesto Financiero
+  // y el de Inversiones: son datos del club y su lugar es el archivo del club.
+    2027: {
+      docLabel: 'Ejercicio N° 123, del 1° de julio de 2026 al 30 de junio de 2027. Está en pesos argentinos constantes a abril de 2026.',
+      sections: [
+        { heading:'Supuestos macroeconómicos', items: [
+          'Moneda de presentación: pesos argentinos constantes a abril de 2026.',
+          'Tipo de cambio nominal de referencia: $1.480 por USD en julio de 2026, $1.840 por USD en junio de 2027.',
+          'Inflación acumulada proyectada para el período: 21%.',
+          'Política salarial: los costos laborales se ajustan en línea con la inflación estimada.',
+        ]},
+        { heading:'Políticas de ingresos', items: [
+          'Cuotas sociales: se toma la cantidad de socios real a abril de 2026, con ajuste mensual por inflación.',
+          'Campeonatos oficiales: participación prevista en dos competencias organizadas por la Liga.',
+          'Derechos de TV: proyectados según estimaciones de la Liga Profesional.',
+          'Copa Libertadores: se proyecta llegar a cuartos de final en 2026 y fase de grupos en 2027.',
+          'Copa Argentina: se proyecta avanzar hasta cuartos de final en 2026 y primera ronda en 2027.',
+          'Partidos amistosos: se contemplan dos, uno de local.',
+          'Abonos (palcos y plateas): evolucionan según la inflación mensual.',
+          'Ingresos comerciales: contratos vigentes y renovaciones previstas (indumentaria, sponsor de pecho, espalda/pantalón/mangas, publicidad estática, merchandising, otros acuerdos).',
+          'Fútbol juvenil: derechos de formación y mecanismos de solidaridad.',
+          'Otros deportes y básquet: aranceles, cuotas, sponsoreo, TV y recaudaciones propias.',
+          'Ingresos diversos: resultados financieros por inversión de excedentes de liquidez, beneficios del Decreto 510/23, ingresos del Departamento Médico.',
+          'Transferencias de jugadores: no se contempla ningún ingreso por ventas o préstamos en este presupuesto.',
+        ]},
+        { heading:'Política de gastos', items: [
+          'Gastos operativos: metodología de presupuesto base cero para todos los sectores.',
+          'Plantel profesional: premios según acuerdos vigentes ajustados por inflación esperada; primas y amortizaciones calculadas sobre la estructura actual del plantel, sin incorporaciones adicionales presupuestadas.',
+          'Gastos generales: donaciones, IVA, seguros, gastos financieros y bancarios, previsión por contingencias legales e indemnizaciones, aportes institucionales (incluye Fundación Boca Social).',
+          'Amortizaciones: de bienes de uso, instalaciones y otros activos.',
+          'Gastos eventuales: margen de contingencia de hasta 0,4% de los ingresos para desvíos no previstos.',
+        ]},
+      ],
+    },
+};
+
 window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
 window.CLUB_GENERIC_DATA.boca = {
   revenueLinesByYear: bocaRevenueLinesByYear, expenseLinesByYear: bocaExpenseLinesByYear,
   fiscalYearMeta: bocaFiscalYearMeta, pasesData: bocaPasesData,
   resultadosData: bocaResultadosData, titulosData: bocaTitulosData,
   finanzasYears: [2027, 2026, 2025, 2024], finanzasGestiones: ['riquelme'],
+  presupuestoSupuestosByYear: bocaPresupuestoSupuestosByYear,
+  presupuestoFinancieroByYear: bocaPresupuestoFinancieroByYear,
+  presupuestoInversionesByYear: bocaPresupuestoInversionesByYear,
 };

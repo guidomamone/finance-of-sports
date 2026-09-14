@@ -60,6 +60,13 @@ se reescribe, no se acumula.
   El detalle club por club (qué ejercicio, qué fuente, qué es real y qué no) está
   más abajo en "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB", y con más detalle
   todavía en el comentario de cabecera de cada `data/<club>-data.js`.
+- PRESUPUESTOS, POR CLUB (Versión 135): los 3 cards que solo aparecen para un
+  ejercicio con presupuesto (Supuestos, Presupuesto Financiero, Presupuesto de
+  Inversiones) sacan sus datos de `presupuestoSupuestosByYear` /
+  `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, adentro del
+  `data/<club>-data.js` de cada club. Antes vivían en 3 registros por club dentro
+  de `js/finanzas-render.js`, y el contenido de Boca era HTML escrito a mano en
+  ESTE archivo. Onboardear un presupuesto ya no toca ni el motor ni el HTML.
 - CONVENCIÓN DE ARCHIVOS: un club = un `data/<clubId>-data.js`, cargado bajo
   demanda por `loadClubData(clubId)` armando el path por convención. Onboardear un
   club NO requiere tocar `index.html`: alcanza con el `data/*.js` nuevo y su
@@ -632,8 +639,14 @@ o directamente retomar en la próxima sesión)
         cargaron con el proceso viejo en USD ya convertido (ver to-do 1).
     (f) `river 2024`: ni una línea en `wages_squad` ni bolsón sin desglosar — los sueldos quedaron
         enterrados en `other_expenses` (las 11 líneas del ejercicio están todas ahí).
-    (g) 5 literales de `clubId` en el código: `isBoca2027` (×3) y el waterfall del presupuesto
-        financiero, en `js/finanzas-render.js`. Son las últimas ramas por club que quedan vivas.
+    (g) RESUELTO EN SU MAYOR PARTE (Versión 135): de los 5 literales de `clubId` quedan 2, y los 2
+        son a propósito. El Presupuesto Financiero y el de Inversiones de Boca 2026/27 estaban
+        escritos a mano como HTML adentro de este archivo (133 líneas) con un `isBoca2027`
+        decidiendo si se mostraban ellos o la versión genérica; ahora son datos en
+        `data/boca-data.js` y los renderiza el mismo código que usa cualquier club. Los 2 que
+        quedan: `let currentClub = 'boca'` (el club por defecto, que desaparece con el cold start
+        del selector) y el `isBoca2027` de los 3 cards de torneo, que Guido decidió dejar como
+        están porque son una feature que hoy solo tiene Boca.
     (h) LO MÁS IMPORTANTE, y es una decisión de Guido, no una corrección mecánica (sale del eje de
         juicio de `auditorias/2026-09-13.md`): el sitio hoy muestra IGUAL dos cosas distintas — "la
         fuente reporta cero" y "la fuente no lo desglosa". Un club japonés muestra Televisión = $0
@@ -1128,41 +1141,6 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       <h2 data-i18n="budget.cash.title">Presupuesto Financiero</h2>
       <p class="subtitle" data-i18n="budget.cash.sub">A diferencia del cuadro "Estado de resultados" de más arriba (que registra todo por lo devengado, cuando corresponde), acá se ve el movimiento real de caja: cuánta plata entra y sale, hasta llegar al Saldo al Cierre. Solo aparece para los ejercicios que tienen un presupuesto financiero cargado.</p>
 
-      <div id="pfBoca2027">
-        <div class="waterfall-row" id="presupuestoFinancieroWaterfall"></div>
-
-        <table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
-          <tr class="total-row"><td>SALDO INICIAL</td><td class="amount">6.045.520.000</td></tr>
-          <tr class="subtotal-row"><td>CRÉDITOS A COBRAR EJERCICIO ANTERIOR</td><td class="amount">8.170.900.000</td></tr>
-          <tr class="subhead"><td colspan="2">Ingresos</td></tr>
-          <tr><td>Cuotas Sociales</td><td class="amount">84.600.271.000</td></tr>
-          <tr><td>Comerciales</td><td class="amount">48.760.607.000</td></tr>
-          <tr><td>Exhibición de Espectáculos Deportivos</td><td class="amount">30.983.617.000</td></tr>
-          <tr><td>Abonos</td><td class="amount">57.293.884.000</td></tr>
-          <tr><td>Diversos</td><td class="amount">12.178.898.000</td></tr>
-          <tr><td>Otros deportes</td><td class="amount">2.118.967.000</td></tr>
-          <tr><td>Basket Profesional</td><td class="amount">1.656.377.000</td></tr>
-          <tr><td>Futbol Juvenil</td><td class="amount">1.489.046.000</td></tr>
-          <tr><td>Futbol Femenino</td><td class="amount">145.293.000</td></tr>
-          <tr class="subtotal-row"><td>TOTAL INGRESOS</td><td class="amount">239.226.960.000</td></tr>
-          <tr class="subtotal-row"><td>DEUDAS A PAGAR EJERCICIO ANTERIOR</td><td class="amount">12.601.624.000</td></tr>
-          <tr class="subhead"><td colspan="2">Gastos</td></tr>
-          <tr><td>Fútbol Profesional</td><td class="amount">70.047.611.000</td></tr>
-          <tr><td>Administración</td><td class="amount">36.189.077.000</td></tr>
-          <tr><td>Organización de Espectáculos</td><td class="amount">33.429.911.000</td></tr>
-          <tr><td>Gastos Generales</td><td class="amount">14.386.410.000</td></tr>
-          <tr><td>Fútbol Juvenil</td><td class="amount">21.198.570.000</td></tr>
-          <tr><td>Otros Deportes</td><td class="amount">6.501.997.000</td></tr>
-          <tr><td>Basket</td><td class="amount">5.765.515.000</td></tr>
-          <tr><td>Comerciales</td><td class="amount">3.250.608.000</td></tr>
-          <tr><td>Socios</td><td class="amount">2.393.117.000</td></tr>
-          <tr><td>Eventuales</td><td class="amount">847.000.000</td></tr>
-          <tr class="subtotal-row"><td>TOTAL GASTOS</td><td class="amount">194.009.816.000</td></tr>
-          <tr class="subtotal-row"><td>INVERSIONES OBRAS</td><td class="amount">41.767.058.000</td></tr>
-          <tr class="total-row"><td>SALDO AL CIERRE</td><td class="amount">5.064.882.000</td></tr>
-        </table>
-        <p class="source-note">Los importes de ingresos y gastos en el presupuesto financiero difieren de los del presupuesto económico porque incluyen el efecto de cobros y pagos diferidos de un ejercicio a otro (créditos y deudas del ejercicio anterior), mientras que el presupuesto económico registra todo por lo devengado.</p>
-      </div>
       <div id="presupuestoFinancieroBody"></div>
     </div>
 
@@ -1170,102 +1148,6 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       <h2 data-i18n="budget.capex.title">Presupuesto de Inversiones</h2>
       <p class="subtitle" data-i18n="budget.capex.sub">El detalle de en qué obras e inversiones de infraestructura piensa gastar el club durante el ejercicio: estadio, sedes, predios, sistemas, etc. Solo aparece para los ejercicios que tienen un presupuesto de inversiones cargado.</p>
 
-      <div id="piBoca2027">
-      <details class="accordion nested">
-        <summary><span>A. Sistemas y Control de Acceso</span><span>2.818.718.000</span></summary>
-        <div class="accordion-body"><table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
-          <tr><td>Aplicaciones</td><td class="amount">1.671.047.000</td></tr>
-          <tr><td>Infraestructura</td><td class="amount">530.971.000</td></tr>
-          <tr><td>Actualizacion puestos de trabajo</td><td class="amount">250.180.000</td></tr>
-          <tr><td>Licencias</td><td class="amount">160.720.000</td></tr>
-          <tr><td>Seguridad Informática</td><td class="amount">121.800.000</td></tr>
-          <tr><td>Datacenter</td><td class="amount">84.000.000</td></tr>
-          <tr class="total-row"><td>A - TOTAL SISTEMAS Y CONTROL DE ACCESO</td><td class="amount">2.818.718.000</td></tr>
-        </table></div>
-      </details>
-
-      <details class="accordion nested">
-        <summary><span>B. Estadio</span><span>19.606.500.000</span></summary>
-        <div class="accordion-body"><table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
-          <tr class="subhead"><td colspan="2">Obras Estadio</td></tr>
-          <tr><td>Plan integral de ampliación y mejoras etapa 1</td><td class="amount">11.200.000.000</td></tr>
-          <tr><td>Intervenciones interiores estadio</td><td class="amount">1.440.000.000</td></tr>
-          <tr><td>Gimnasio Socios Etapa II</td><td class="amount">960.000.000</td></tr>
-          <tr><td>Platea L Etapa II</td><td class="amount">960.000.000</td></tr>
-          <tr><td>Hard Rock</td><td class="amount">512.000.000</td></tr>
-          <tr><td>Puerta 3 + Hall de Ingreso</td><td class="amount">360.000.000</td></tr>
-          <tr class="subtotal-row"><td>Subtotal Obras Estadio</td><td class="amount">15.432.000.000</td></tr>
-          <tr class="subhead"><td colspan="2">Operaciones Estadio</td></tr>
-          <tr><td>Cambio de 2 transformadores 1000 Kva / Cambio de tablero de 1/2 Tensión</td><td class="amount">412.500.000</td></tr>
-          <tr><td>Reparación de Hormigón</td><td class="amount">300.000.000</td></tr>
-          <tr><td>Juntas de dilatación - Horizontales</td><td class="amount">262.500.000</td></tr>
-          <tr><td>Juntas de dilatación - Verticales</td><td class="amount">262.500.000</td></tr>
-          <tr><td>Reubicación/ampliación de Nuevo tablero general eléctrico</td><td class="amount">255.000.000</td></tr>
-          <tr><td>Recambio de Butacas y soportes Plateas Alta</td><td class="amount">240.000.000</td></tr>
-          <tr><td>Grupo electrogeno con transferencia automatica</td><td class="amount">220.000.000</td></tr>
-          <tr><td>Consultoria Estudio estructural - Memorias de cálculos</td><td class="amount">220.000.000</td></tr>
-          <tr><td>Adquisición de maquinas y herramientas de mano en general</td><td class="amount">200.000.000</td></tr>
-          <tr><td>Adecuacion de Instalacion Sanitaria - Cambio de colectores y alimentación de baños</td><td class="amount">180.000.000</td></tr>
-          <tr><td>Nuevas Acometidas eléctricas</td><td class="amount">180.000.000</td></tr>
-          <tr><td>Adecuacion Instalacion Cloacal - columnas bajada cloacal baños</td><td class="amount">160.000.000</td></tr>
-          <tr><td>Barandas de Escaleras de Acceso, Centrales y laterales. Sincadas.</td><td class="amount">160.000.000</td></tr>
-          <tr><td>Señaletica General de Estadio</td><td class="amount">120.000.000</td></tr>
-          <tr><td>Mantenimiento excepcional de las instalaciones eléctricas tableros secundarios</td><td class="amount">110.000.000</td></tr>
-          <tr><td>Iluminación escaleras de ingresos al estadio/circulación</td><td class="amount">110.000.000</td></tr>
-          <tr><td>Cambio de Vidrios // Ley de vidrios</td><td class="amount">110.000.000</td></tr>
-          <tr><td>Bombas de Agua - Elevacion</td><td class="amount">90.000.000</td></tr>
-          <tr><td>Reparacion en tanques de agua de Bombeo y Reserva</td><td class="amount">90.000.000</td></tr>
-          <tr><td>Bandejas porta-cables / General de circuitos de distribucion</td><td class="amount">82.000.000</td></tr>
-          <tr><td>Luces de Crecimiento Adecuacion</td><td class="amount">80.000.000</td></tr>
-          <tr><td>Varios</td><td class="amount">330.000.000</td></tr>
-          <tr class="subtotal-row"><td>Subtotal Operaciones Estadio</td><td class="amount">4.174.500.000</td></tr>
-          <tr class="total-row"><td>B - TOTAL ESTADIO</td><td class="amount">19.606.500.000</td></tr>
-        </table></div>
-      </details>
-
-      <details class="accordion nested">
-        <summary><span>C. Casa Amarilla</span><span>12.325.200.000</span></summary>
-        <div class="accordion-body"><table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
-          <tr class="subhead"><td colspan="2">Obras Casa Amarilla</td></tr>
-          <tr><td>Microestadio</td><td class="amount">9.120.000.000</td></tr>
-          <tr><td>Asfalto via Playa 3</td><td class="amount">888.000.000</td></tr>
-          <tr><td>Garitas de seguridad y comedor personal</td><td class="amount">777.600.000</td></tr>
-          <tr><td>Tercer tiempo de hockey</td><td class="amount">256.000.000</td></tr>
-          <tr><td>Sector acreditaciones</td><td class="amount">217.600.000</td></tr>
-          <tr class="subtotal-row"><td>Subtotal Obras Casa Amarilla</td><td class="amount">11.259.200.000</td></tr>
-          <tr class="subhead"><td colspan="2">Operaciones Casa Amarilla</td></tr>
-          <tr><td>Compra de maquina fumigadora / cortadoras de césped / Bordeadoras</td><td class="amount">125.000.000</td></tr>
-          <tr><td>Cambio de Chapas / cenefas Complejo Dormis</td><td class="amount">120.000.000</td></tr>
-          <tr><td>Nuevas Acometidas eléctricas</td><td class="amount">110.000.000</td></tr>
-          <tr><td>Iluminacion Cancha 2</td><td class="amount">95.000.000</td></tr>
-          <tr><td>Impermeabilización cubierta chapa y losa (Dormis - Futbol)</td><td class="amount">90.000.000</td></tr>
-          <tr><td>Grupo electrógeno Dormis y Quinquela con transferencia</td><td class="amount">83.500.000</td></tr>
-          <tr><td>Grupo electrógeno Depto Medico con transferencia</td><td class="amount">83.500.000</td></tr>
-          <tr><td>Termotanques solares Quinquela</td><td class="amount">80.000.000</td></tr>
-          <tr><td>Tableros eléctricos</td><td class="amount">60.000.000</td></tr>
-          <tr><td>Cambio de Chapas / cenefas Polideportivo Quinquela Martin</td><td class="amount">55.000.000</td></tr>
-          <tr><td>Vidrios Casa Amarilla Ley vidrios GCBA Complejo Dormis / Quinquela Martin</td><td class="amount">45.000.000</td></tr>
-          <tr><td>Instalación gas Adecuación Quinquela / Dormis // Gatorade</td><td class="amount">35.000.000</td></tr>
-          <tr><td>Nueva vereda interna perimetral Casa Amarilla</td><td class="amount">25.000.000</td></tr>
-          <tr><td>Varios</td><td class="amount">59.000.000</td></tr>
-          <tr class="subtotal-row"><td>Subtotal Operaciones Casa Amarilla</td><td class="amount">1.066.000.000</td></tr>
-          <tr class="total-row"><td>C - TOTAL GERENCIA DE OPERACIONES</td><td class="amount">12.325.200.000</td></tr>
-        </table></div>
-      </details>
-
-      <details class="accordion nested">
-        <summary><span>D. Predio Ezeiza</span><span>7.016.640.000</span></summary>
-        <div class="accordion-body"><table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
-          <tr><td>Hotel para division reserva</td><td class="amount">4.800.000.000</td></tr>
-          <tr><td>Vestuarios canchas nuevas</td><td class="amount">1.146.240.000</td></tr>
-          <tr><td>Buffet/comedor padres</td><td class="amount">662.400.000</td></tr>
-          <tr><td>Platea estacionamientos cancha 11</td><td class="amount">408.000.000</td></tr>
-          <tr class="total-row"><td>D - TOTAL PREDIO EZEIZA</td><td class="amount">7.016.640.000</td></tr>
-        </table></div>
-      </details>
-
-      <table class="mini-table"><colgroup><col><col style="width:130px"></colgroup><tr class="total-row"><td>TOTAL INVERSIONES</td><td class="amount">41.767.058.000</td></tr></table>
-      </div>
       <div id="presupuestoInversionesBody"></div>
     </div>
 
@@ -1579,25 +1461,25 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '133';</script>
-<script src="data/lang/langs.js?v=133"></script>
-<script src="js/i18n.js?v=133"></script>
-<script src="data/clubs.js?v=133"></script>
+<script>window.ASSET_V = '135';</script>
+<script src="data/lang/langs.js?v=135"></script>
+<script src="js/i18n.js?v=135"></script>
+<script src="data/clubs.js?v=135"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=133"></script>
-<script src="data/club-leagues.js?v=133"></script>
-<script src="data/category-map.js?v=133"></script>
-<script src="data/site-labels.js?v=133"></script>
-<script src="data/currency-map.js?v=133"></script>
-<script src="data/sources-view.js?v=133"></script>
-<script src="data/boca-data.js?v=133"></script>
-<script src="js/finanzas-calc.js?v=133"></script>
-<script src="js/finanzas-render.js?v=133"></script>
+<script src="data/club-index.js?v=135"></script>
+<script src="data/club-leagues.js?v=135"></script>
+<script src="data/category-map.js?v=135"></script>
+<script src="data/site-labels.js?v=135"></script>
+<script src="data/currency-map.js?v=135"></script>
+<script src="data/sources-view.js?v=135"></script>
+<script src="data/boca-data.js?v=135"></script>
+<script src="js/finanzas-calc.js?v=135"></script>
+<script src="js/finanzas-render.js?v=135"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1676,7 +1558,6 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
     isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
-    renderPresupuestoFinancieroWaterfall();
     renderFuentesCard();
   }
 

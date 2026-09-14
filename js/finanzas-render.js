@@ -538,123 +538,23 @@
   }
 
 
-  // presupuestoSupuestosByClub: los supuestos/premisas que declara CADA presupuesto, por club y
-  // ejercicio (Versión 34). REGLA (pedida por Guido, no una decisión puntual de un club): el card
-  // "Supuestos" de Finanzas SIEMPRE tiene que estar, para cualquier club/ejercicio, si el
-  // documento de ese ejercicio no declara supuestos (un balance auditado, un ejercicio todavía
-  // placeholder, o un presupuesto que no llegó a transcribirse con este detalle), el card lo dice
-  // EXPLÍCITO en vez de desaparecer (ver `renderSupuestosCard` más abajo, que arma ese mensaje).
-  // Cuando se onboardee un presupuesto nuevo (club existente o club nuevo), hay que sumarle su
-  // entrada acá, no es opcional, es lo que hace cumplir la regla.
-  const presupuestoSupuestosByClub = {
-    boca: {
-      2027: {
-        docLabel: 'Ejercicio N° 123, del 1° de julio de 2026 al 30 de junio de 2027. Está en pesos argentinos constantes a abril de 2026.',
-        sections: [
-          { heading:'Supuestos macroeconómicos', items: [
-            'Moneda de presentación: pesos argentinos constantes a abril de 2026.',
-            'Tipo de cambio nominal de referencia: $1.480 por USD en julio de 2026, $1.840 por USD en junio de 2027.',
-            'Inflación acumulada proyectada para el período: 21%.',
-            'Política salarial: los costos laborales se ajustan en línea con la inflación estimada.',
-          ]},
-          { heading:'Políticas de ingresos', items: [
-            'Cuotas sociales: se toma la cantidad de socios real a abril de 2026, con ajuste mensual por inflación.',
-            'Campeonatos oficiales: participación prevista en dos competencias organizadas por la Liga.',
-            'Derechos de TV: proyectados según estimaciones de la Liga Profesional.',
-            'Copa Libertadores: se proyecta llegar a cuartos de final en 2026 y fase de grupos en 2027.',
-            'Copa Argentina: se proyecta avanzar hasta cuartos de final en 2026 y primera ronda en 2027.',
-            'Partidos amistosos: se contemplan dos, uno de local.',
-            'Abonos (palcos y plateas): evolucionan según la inflación mensual.',
-            'Ingresos comerciales: contratos vigentes y renovaciones previstas (indumentaria, sponsor de pecho, espalda/pantalón/mangas, publicidad estática, merchandising, otros acuerdos).',
-            'Fútbol juvenil: derechos de formación y mecanismos de solidaridad.',
-            'Otros deportes y básquet: aranceles, cuotas, sponsoreo, TV y recaudaciones propias.',
-            'Ingresos diversos: resultados financieros por inversión de excedentes de liquidez, beneficios del Decreto 510/23, ingresos del Departamento Médico.',
-            'Transferencias de jugadores: no se contempla ningún ingreso por ventas o préstamos en este presupuesto.',
-          ]},
-          { heading:'Política de gastos', items: [
-            'Gastos operativos: metodología de presupuesto base cero para todos los sectores.',
-            'Plantel profesional: premios según acuerdos vigentes ajustados por inflación esperada; primas y amortizaciones calculadas sobre la estructura actual del plantel, sin incorporaciones adicionales presupuestadas.',
-            'Gastos generales: donaciones, IVA, seguros, gastos financieros y bancarios, previsión por contingencias legales e indemnizaciones, aportes institucionales (incluye Fundación Boca Social).',
-            'Amortizaciones: de bienes de uso, instalaciones y otros activos.',
-            'Gastos eventuales: margen de contingencia de hasta 0,4% de los ingresos para desvíos no previstos.',
-          ]},
-        ],
-      },
-    },
-    racing: {
-      2026: {
-        docLabel: 'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2025/2026 (1° de julio de 2025 al 30 de junio de 2026).',
-        sections: [
-          { heading:'Premisas macroeconómicas', items: [
-            'Producto Bruto Interno (PBI): se proyecta un crecimiento del 4% interanual.',
-            'Tipo de cambio: se prevé un promedio de $1.438 por dólar, acelerado post elecciones legislativas de medio término.',
-            'Inflación: se proyecta un aumento promedio del Índice de Precios al Consumidor (IPC, medido por el INDEC) del 29,5% durante el período.',
-            'Incremento salarial: se proyecta un incremento salarial promedio del 30,4%.',
-          ]},
-          { heading:'Políticas de ingresos', items: [
-            'Campeonatos oficiales y competencias internacionales: participación en la Liga Profesional, torneos CONMEBOL, Copa Sudamericana 2026, Copa Argentina 2025/26 y amistosos de pretemporada, con la renovación del convenio de ESPN muy avanzada.',
-            'Retransmisión y derechos de TV: ingreso recurrente proyectado al nivel de cuota devengada actual, con renegociación.',
-            'Marketing y publicidad: sponsors vigentes (Betsson, Sur Finanzas, RUS, PAX, Cetrogar, EA Sports, Alliance, Quilmes, Sorare, ESPN, Lat Comex, entre otros) más los ingresos de Locademia y concesiones/licencias sobre la marca.',
-            'Venta y préstamos de jugadores: venta moderada, por decisión de retener y valorizar un plantel competitivo; incluye el cobro de acreencias de ejercicios anteriores.',
-            'Derechos de formación y mecanismo de solidaridad: ingresos por jugadores formados en Racing y transferidos en ligas del exterior.',
-            'Recursos sociales: campaña de captación de socios en el primer mes de ejecución (resultados no contemplados en el presupuesto); incremento de la cuota social bimestral conforme al IPC.',
-            'Otras secciones: ingresos de Básquet, Futsal, Fútbol Infantil, Tenis, Vóley, Handball, Hockey y Colonia de vacaciones, más el Colegio (cuotas escolares y subvención estatal).',
-            'Otros recursos: concesión de la Sede Avellaneda a Gimnasios Argentinos S.A., eventos sociales, y el rendimiento de excedentes transitorios de capital de trabajo (en baja por la normalización de tasas).',
-          ]},
-          { heading:'Política de gastos', items: [
-            'Plantel profesional: remuneraciones, primas y premios según contratos vigentes, según el propio club, "el presupuesto más importante de los últimos tiempos" por la decisión de retener a figuras campeonas.',
-            'Cuerpo técnico: remuneraciones y premios según contratos individuales, campañas y títulos obtenidos.',
-            'Incorporación y venta de jugadores: reemplazo de figuras salientes; gastos asociados a la venta (comisiones de agentes, 15% del jugador y agremiados, Decreto 1212).',
-            'Fútbol amateur: desarrollo de infantiles y divisiones inferiores, la Pensión y el predio Tita Mattiussi.',
-            'Administración: reformulación de la matriz organizacional, dirección deportiva, proveedores, haberes del personal (sin incluir al plantel de fútbol), Obras Sociales y Sindicatos.',
-            'Inversiones (egresos extraordinarios): obras en el Estadio, el predio de Ezeiza y el predio Tita Mattiussi, y mejoras en las sedes Avellaneda y Villa del Parque.',
-          ]},
-        ],
-      },
-      2027: {
-        docLabel: 'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2026/2027 (1° de julio de 2026 al 30 de junio de 2027), el presupuesto vigente hoy.',
-        sections: [
-          { heading:'Premisas macroeconómicas', items: [
-            'Producto Bruto Interno (PBI): se proyecta un crecimiento real del 4,18% interanual.',
-            'Tipo de cambio: se prevé $1.505 por dólar en julio de 2026 y $1.870 por dólar en junio de 2027.',
-            'Inflación: se proyecta un aumento promedio del Índice de Precios al Consumidor (IPC, medido por el INDEC) del 27,1% durante el período.',
-            'Incremento salarial: se proyecta acorde a la inflación estimada para el ejercicio.',
-          ]},
-          { heading:'Políticas de ingresos', items: [
-            'Campeonatos oficiales y competencias internacionales: participación en la Liga Profesional, torneos CONMEBOL, Copa Sudamericana 2027, Copa Argentina 2026/27 y amistosos de pretemporada, con el convenio de televisación de ESPN ya renovado.',
-            'Retransmisión y derechos de TV: ingreso recurrente proyectado al nivel de cuota devengada actual, con una renegociación prudente.',
-            'Marketing y publicidad: sponsors vigentes (Betsson, RUS, PAX, Cetrogar, Alliance, ESPN, Lat Comex, Pirelli, Coca-Cola, entre otros) más los ingresos de Locademia (venta de artículos deportivos) y concesiones/licencias sobre la marca.',
-            'Venta y préstamos de jugadores: venta moderada, priorizando un reembolso neto de la operación por sobre la diferencia compra/venta, dado un mercado poco demandante; incluye el cobro de acreencias de ejercicios anteriores.',
-            'Derechos de formación y mecanismo de solidaridad: ingresos por jugadores formados en Racing y transferidos en ligas del exterior.',
-            'Recursos sociales: incremento de la cuota social bimestral conforme al IPC; no se proyecta crecimiento de la masa societaria pese a las campañas de captación.',
-            'Otras secciones: ingresos de Básquet, Futsal, Fútbol Infantil, Tenis, Vóley, Handball, Hockey y Colonia de vacaciones, más el Colegio (ampliación de matrículas, cuotas escolares y subvención estatal).',
-            'Otros recursos: concesión de la Sede Avellaneda a Gimnasios Argentinos S.A., eventos sociales, y el rendimiento de excedentes transitorios de capital de trabajo.',
-          ]},
-          { heading:'Política de gastos', items: [
-            'Plantel profesional: remuneraciones, primas y premios según los contratos vigentes, para torneos amistosos, Copa Argentina y CONMEBOL 2026/27, según el propio club, uno de los presupuestos salariales más altos del fútbol argentino.',
-            'Cuerpo técnico: remuneraciones y premios según contratos individuales y el acuerdo con el cuerpo técnico saliente.',
-            'Incorporación y venta de jugadores: reemplazo de figuras salientes; gastos asociados a la venta (comisiones de agentes, 15% del jugador y agremiados, Decreto 1212).',
-            'Fútbol amateur: desarrollo de infantiles y divisiones inferiores, viajes al exterior, la Pensión y el predio Tita Mattiussi.',
-            'Administración: nueva estructura organizacional y dirección deportiva, haberes del personal (sin incluir al plantel de fútbol), Obras Sociales y Sindicatos.',
-            'Inversiones (egresos extraordinarios): primera etapa del predio de Ezeiza, obras en el predio Tita Mattiussi, mejoras del Estadio y de las sedes Avellaneda y Villa del Parque, y la nueva sede educativa.',
-          ]},
-        ],
-      },
-    },
-  };
+  // Los supuestos/premisas que declara CADA presupuesto viven en `presupuestoSupuestosByYear`,
+  // adentro del `data/<club>-data.js` de cada club (movido acá desde este archivo en la Versión
+  // 135, junto con el Presupuesto Financiero y el de Inversiones). Cuando se onboardea un
+  // presupuesto nuevo, su entrada va ahí: onboardear un club no toca este archivo.
 
 
   // Card "Supuestos": REGLA (Versión 42, reemplaza la regla de la Versión 34 documentada acá
   // abajo, pedido explícito de Guido). Antes el card SIEMPRE se mostraba, con un mensaje "no hay"
   // cuando el ejercicio no tenía supuestos (ej. un balance auditado, que no es un presupuesto).
   // Guido decidió que ese mensaje ocupa espacio sin aportar nada para esos casos: ahora el card se
-  // ESCONDE por completo (display:none en #supuestosCard) cuando no hay datos en
-  // presupuestoSupuestosByClub para ese club+año, en vez de mostrar la explicación. Mismo criterio
+  // ESCONDE por completo (display:none en #supuestosCard) cuando el club no declara supuestos
+  // para ese ejercicio, en vez de mostrar la explicación. Mismo criterio
   // para Presupuesto Financiero, Presupuesto de Inversiones e Ingresos y Egresos por Torneo, más
   // abajo en este mismo archivo.
   function renderSupuestosCard(clubId, year){
     const card = document.getElementById('supuestosCard');
-    const data = (presupuestoSupuestosByClub[clubId] || {})[year];
+    const data = datosPresupuesto(clubId, year, 'presupuestoSupuestosByYear');
     if(!data){ card.style.display = 'none'; return; }
     card.style.display = '';
     document.getElementById('supuestosBody').innerHTML = `
@@ -704,25 +604,12 @@
   }
 
 
-  // Cifras del card "Presupuesto Financiero" (Ejercicio 2026/2027), en ARS MILLONES exactos, mismo
-  // criterio que bocaRevenueLinesByYear/bocaExpenseLinesByYear[2027] (Guido pidió que respondan al
-  // toggle USD/ARS de Finanzas, como el resto de los números de Boca). Es solo de presentación: no
-  // alimenta ningún cálculo/KPI.
-  const presupuestoFinanciero2027 = [
-    {label:'Saldo Inicial', op:'', magnitude:6045.520},
-    {label:'Créditos a cobrar', op:'+', magnitude:8170.900},
-    {label:'Ingresos', op:'+', magnitude:239226.960},
-    {label:'Deudas a pagar', op:'−', magnitude:12601.624},
-    {label:'Gastos', op:'−', magnitude:194009.816},
-    {label:'Inversiones Obras', op:'−', magnitude:41767.058},
-    {label:'Saldo al Cierre', op:'=', magnitude:5064.882, isResult:true},
-  ];
 
   // renderWaterfallSteps: genérico (Versión 35). Pinta una lista de steps {label, op, magnitude,
   // isResult?} adentro de containerId, convirtiendo cada magnitude con `meta` + currentCurrency. Lo
-  // usan tanto Boca 2027 (steps hardcodeados en presupuestoFinanciero2027, meta=yearMetaFor('boca',2027))
-  // como el Presupuesto Financiero genérico de Racing (steps armados al vuelo desde
-  // presupuestoFinancieroByClub, meta=yearMetaFor(clubId, year)).
+  // Lo usan los waterfalls del Presupuesto Financiero de cualquier club: los steps salen de
+  // `presupuestoFinancieroByYear` del propio club (data/<club>-data.js) y la meta de
+  // yearMetaFor(clubId, year), así que un club nuevo no toca esta función.
   function renderWaterfallSteps(containerId, steps, meta){
     const wrap = document.getElementById(containerId);
     if(!wrap) return;
@@ -734,33 +621,8 @@
     }).join('');
   }
 
-  function renderPresupuestoFinancieroWaterfall(){
-    renderWaterfallSteps('presupuestoFinancieroWaterfall', presupuestoFinanciero2027, yearMetaFor('boca', 2027));
-  }
 
 
-  // presupuestoFinancieroByClub / presupuestoInversionesByClub (Versión 35): "homologar lo que se
-  // pueda homologar", mismo espíritu que presupuestoSupuestosByClub, pero OJO con una diferencia
-  // real entre documentos: el presupuesto de Boca distingue un "presupuesto económico" (devengado)
-  // de un "presupuesto financiero" (caja, con créditos/deudas del ejercicio anterior); el de
-  // Racing YA está armado en base de caja desde el origen (sus propias líneas dicen "Cobranzas
-  // por...", "Cobros por...", "Pago de...", no hay devengado vs. percibido que reconciliar), así
-  // que su Presupuesto Financiero es un waterfall más simple (Saldo Inicial + Ingresos − Egresos =
-  // Saldo al Cierre, sin las filas de créditos/deudas del ejercicio anterior que sí tiene Boca),
-  // no es un descuido, es fiel a que el documento de Racing no tiene ese concepto para reconciliar.
-  // Cifras: SALDO INICIAL DE CAJA Y BANCOS (I) de julio, TOTAL INGRESOS/EGRESOS DE FONDOS DEL
-  // PERÍODO (columna TOTAL PERÍODO) y el último valor de FLUIR DE FONDOS DEL PERÍODO (columna
-  // TOTAL PERÍODO, que en esa fila específica es el saldo de caja de junio, no una suma de los 12
-  // meses), de racing-presupuesto-2025-26.md / presupuesto2026-27.md. Verificado a mano:
-  // saldoInicial + ingresos − |egresos| = saldoFinal, exacto, para los dos ejercicios.
-  const presupuestoFinancieroByClub = {
-    racing: {
-      2026: { saldoInicial:9324.935735, ingresos:123297.209473, egresos:126860.457441, saldoFinal:5761.687768,
-        note:'A diferencia de Boca, el presupuesto de Racing ya está armado en base de caja desde el origen, no distingue un "presupuesto económico" devengado de uno financiero, así que este saldo usa las mismas cifras que el Estado de resultados de arriba, sin ajuste por cobros/pagos diferidos del ejercicio anterior.' },
-      2027: { saldoInicial:5367.787912, ingresos:143118.482343, egresos:142071.747998, saldoFinal:6414.522257,
-        note:'Mismo criterio que el Ejercicio 2025/2026: presupuesto en base de caja desde el origen, sin distinción entre devengado y percibido.' },
-    },
-  };
 
   // Racing agrupa sus inversiones/bienes de uso en UNA sola línea de egresos extraordinarios
   // ("Pago de gastos de compra de bienes de uso y mejoras" 2026 / equivalente 2027), sin desglosar
@@ -768,48 +630,77 @@
   // total real (ya cargado en racingExpenseLinesByYear como "Egresos extraordinarios...") con una
   // nota explícita de que no hay desglose por proyecto, no es un "no hay dato", es "el documento
   // no llega a ese nivel de detalle".
-  const presupuestoInversionesByClub = {
-    racing: {
-      2026: { total:7014.228299, note:'El presupuesto de Racing agrupa este monto en una sola línea ("Egresos extraordinarios", compra de bienes de uso y mejoras) dentro del rubro Egresos Extraordinarios, sin desglosar por obra o proyecto individual como sí hace Boca. El texto del documento menciona en general obras en el Estadio, el predio de Ezeiza, el predio Tita Mattiussi y las sedes Avellaneda y Villa del Parque, pero no separa el monto entre ellas.' },
-      2027: { total:10541.726845, note:'Mismo criterio que el Ejercicio 2025/2026: una sola línea sin desglosar por obra. El documento menciona en general la primera etapa del predio de Ezeiza, obras en el predio Tita Mattiussi, mejoras del Estadio, y las sedes Avellaneda, Villa del Parque y la nueva sede educativa.' },
-    },
-  };
 
+
+  // Versión 135: las dos cards se arman de los datos del club, sin una sola rama por club. Hasta
+  // acá, el Presupuesto Financiero y el de Inversiones de Boca 2026/27 estaban escritos a mano
+  // como HTML adentro de index.html (133 líneas) y un `isBoca2027` decidía cuál de los dos
+  // bloques mostrar; los demás clubes tenían una versión genérica mucho más pobre, y sus datos
+  // vivían en ESTE archivo en vez del `data/<club>-data.js`. Ahora los dos casos usan el mismo
+  // render: el que tiene desglose lo declara, el que no, no.
+  //
+  // Las tablas con `formato:'ars-exacto'` se muestran en pesos enteros con separador de miles,
+  // como las imprime el documento del club, y NO responden al toggle de moneda. Es el
+  // comportamiento que ya tenían cuando eran HTML fijo; cambiarlo es una decisión aparte, no algo
+  // que corresponda colar en una mudanza.
+  function fmtArsExacto(magnitudeEnMillones){
+    return Math.round(magnitudeEnMillones * 1e6).toLocaleString('es-AR');
+  }
+
+  function renderFilasMiniTabla(rows){
+    return rows.map(f => {
+      if(f.kind === 'subhead') return `<tr class="subhead"><td colspan="2">${f.label}</td></tr>`;
+      const cls = f.kind === 'total' ? ' class="total-row"' : f.kind === 'subtotal' ? ' class="subtotal-row"' : '';
+      return `<tr${cls}><td>${f.label}</td><td class="amount">${fmtArsExacto(f.amount)}</td></tr>`;
+    }).join('');
+  }
+
+  const MINI_TABLA_COLS = '<colgroup><col><col style="width:130px"></colgroup>';
+
+  function datosPresupuesto(clubId, year, campo){
+    const club = (window.CLUB_GENERIC_DATA || {})[clubId] || {};
+    return (club[campo] || {})[year] || null;
+  }
 
   function renderPresupuestoFinancieroCard(clubId, year){
     const card = document.getElementById('presupuestoFinancieroCard');
-    const isBoca2027 = clubId === 'boca' && year === 2027;
-    const data = (presupuestoFinancieroByClub[clubId] || {})[year];
-    if(!isBoca2027 && !data){ card.style.display = 'none'; return; }
+    const data = datosPresupuesto(clubId, year, 'presupuestoFinancieroByYear');
+    if(!data){ card.style.display = 'none'; return; }
     card.style.display = '';
-    document.getElementById('pfBoca2027').style.display = isBoca2027 ? '' : 'none';
     const body = document.getElementById('presupuestoFinancieroBody');
-    body.style.display = isBoca2027 ? 'none' : '';
-    if(isBoca2027){ renderPresupuestoFinancieroWaterfall(); return; }
-    const steps = [
-      {label:'Saldo Inicial', op:'', magnitude:data.saldoInicial},
-      {label:'Ingresos', op:'+', magnitude:data.ingresos},
-      {label:'Egresos', op:'−', magnitude:data.egresos},
-      {label:'Saldo al Cierre', op:'=', magnitude:data.saldoFinal, isResult:true},
-    ];
-    body.innerHTML = `<div class="waterfall-row" id="presupuestoFinancieroWaterfallGeneric"></div><p class="source-note">${data.note}</p>`;
-    renderWaterfallSteps('presupuestoFinancieroWaterfallGeneric', steps, yearMetaFor(clubId, year));
+    body.style.display = '';
+    body.innerHTML = `<div class="waterfall-row" id="presupuestoFinancieroWaterfallGeneric"></div>` +
+      (data.tabla ? `<table class="mini-table">${MINI_TABLA_COLS}${renderFilasMiniTabla(data.tabla.rows)}</table>` : '') +
+      (data.note ? `<p class="source-note">${data.note}</p>` : '');
+    renderWaterfallSteps('presupuestoFinancieroWaterfallGeneric', data.steps, yearMetaFor(clubId, year));
   }
 
 
   function renderPresupuestoInversionesCard(clubId, year){
     const card = document.getElementById('presupuestoInversionesCard');
-    const isBoca2027 = clubId === 'boca' && year === 2027;
-    const data = (presupuestoInversionesByClub[clubId] || {})[year];
-    if(!isBoca2027 && !data){ card.style.display = 'none'; return; }
+    const data = datosPresupuesto(clubId, year, 'presupuestoInversionesByYear');
+    if(!data){ card.style.display = 'none'; return; }
     card.style.display = '';
-    document.getElementById('piBoca2027').style.display = isBoca2027 ? '' : 'none';
     const body = document.getElementById('presupuestoInversionesBody');
-    body.style.display = isBoca2027 ? 'none' : '';
-    if(isBoca2027) return;
+    body.style.display = '';
+
+    // Con desglose por obra (Boca): un acordeón por grupo, en pesos exactos, y el total al pie.
+    if(data.groups){
+      body.innerHTML = data.groups.map(g => `
+        <details class="accordion nested">
+          <summary><span>${g.label}</span><span>${fmtArsExacto(g.total)}</span></summary>
+          <div class="accordion-body"><table class="mini-table">${MINI_TABLA_COLS}${renderFilasMiniTabla(g.rows)}</table></div>
+        </details>`).join('') +
+        `<table class="mini-table">${MINI_TABLA_COLS}<tr class="total-row"><td>TOTAL INVERSIONES</td><td class="amount">${fmtArsExacto(data.total)}</td></tr></table>` +
+        (data.note ? `<p class="source-note">${data.note}</p>` : '');
+      return;
+    }
+
+    // Sin desglose (Racing): el total solo, convertido con el toggle de moneda, y la nota que
+    // explica que el documento no llega a más detalle.
     const disp = toDisplayValue(data.total, yearMetaFor(clubId, year), currentCurrency);
     body.innerHTML = `
-      <table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
+      <table class="mini-table">${MINI_TABLA_COLS}
         <tr class="total-row"><td>TOTAL INVERSIONES (sin desglosar por obra)</td><td class="amount">${fmtAmountPlain(disp, currentCurrency)}</td></tr>
       </table>
       <p class="source-note">${data.note}</p>

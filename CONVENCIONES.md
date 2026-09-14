@@ -245,15 +245,17 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   2027 para los 3; Racing 2026 y 2027 para los 3 también, con menos desglose que Boca en
   Inversiones), lo muestra; si no (balances auditados, placeholders), dice explícito por qué
   no hay (función compartida `noDataMsg()`), en vez de esconder el card. Los 3 se repintan
-  juntos cada vez que cambia club/año/gestión, los datos viven en
-  `presupuestoSupuestosByClub`/`presupuestoFinancieroByClub`/`presupuestoInversionesByClub`,
-  todos indexados por `[clubId][year]`. Al onboardear un presupuesto nuevo, sumarle su entrada
-  a los que correspondan es lo único que hace falta (ver
-  `.claude/skills/club-or-year-onboarding/SKILL.md`, sección 6, para el detalle de la regla).
-  El contenido de Boca 2027 para Presupuesto Financiero/Inversiones sigue siendo HTML estático
-  sin tocar (envuelto en `#pfBoca2027`/`#piBoca2027`, mostrado/escondido con display, no por
-  clase CSS), no se reescribió a datos+plantilla por el riesgo de tocar contenido ya
-  verificado y muy anidado (los 4 acordeones de obras de Inversiones).
+  juntos cada vez que cambia club/año/gestión. ACTUALIZADO (Versión 135): los datos de los 3
+  viven en el `data/<club>-data.js` de cada club, en `presupuestoSupuestosByYear` /
+  `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, indexados por `[year]`. Antes
+  eran 3 registros `[clubId][year]` adentro de `js/finanzas-render.js`, o sea datos de club en la
+  capa de render: onboardear un presupuesto obligaba a editar el archivo del motor. Ahora no.
+  Y el contenido de Boca 2027 para Presupuesto Financiero/Inversiones, que hasta la 135 era HTML
+  estático adentro de `index.html` (133 líneas, envuelto en `#pfBoca2027`/`#piBoca2027` y
+  mostrado con un `isBoca2027`), es dato como el de cualquier otro club: se extrajo parseando el
+  propio HTML, no retipeando, y se verificó que las 6 cards renderizadas quedaran idénticas
+  carácter por carácter. Las tablas con `formato:'ars-exacto'` se muestran en pesos enteros y no
+  responden al toggle de moneda, igual que cuando eran HTML fijo.
 - OJO REGLA REFORZADA (bug real, Versión 30): NUNCA cargar datos al sitio
   extrayendo un PDF directo, sin pasar antes por una transcripción completa
   a Markdown (CLAUDE.md ya lo decía, pero se saltó una vez con el

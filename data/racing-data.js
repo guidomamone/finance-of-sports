@@ -1572,12 +1572,113 @@ const racingTitulosData = [
 ];
 
 // Versión 95: registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js).
+const racingPresupuestoFinancieroByYear = {
+  // Movido desde js/finanzas-render.js en la Versión 135: eran datos de un club viviendo en la
+  // capa de render. El presupuesto de Racing YA está armado en base de caja desde el origen (sus
+  // líneas dicen "Cobranzas por...", "Pago de..."), así que su waterfall es más simple que el de
+  // Boca: no tiene las filas de créditos y deudas del ejercicio anterior, porque el documento no
+  // tiene ese concepto para reconciliar. No es un descuido, es fiel a la fuente.
+    2026: {
+      steps: [
+        { label:'Saldo Inicial', op:'', magnitude:9324.935735 },
+        { label:'Ingresos', op:'+', magnitude:123297.209473 },
+        { label:'Egresos', op:'−', magnitude:126860.457441 },
+        { label:'Saldo al Cierre', op:'=', magnitude:5761.687768, isResult:true },
+      ],
+      note:'A diferencia de Boca, el presupuesto de Racing ya está armado en base de caja desde el origen, no distingue un "presupuesto económico" devengado de uno financiero, así que este saldo usa las mismas cifras que el Estado de resultados de arriba, sin ajuste por cobros/pagos diferidos del ejercicio anterior.',
+    },
+    2027: {
+      steps: [
+        { label:'Saldo Inicial', op:'', magnitude:5367.787912 },
+        { label:'Ingresos', op:'+', magnitude:143118.482343 },
+        { label:'Egresos', op:'−', magnitude:142071.747998 },
+        { label:'Saldo al Cierre', op:'=', magnitude:6414.522257, isResult:true },
+      ],
+      note:'Mismo criterio que el Ejercicio 2025/2026: presupuesto en base de caja desde el origen, sin distinción entre devengado y percibido.',
+    },
+};
+
+const racingPresupuestoInversionesByYear = {
+  // Ídem: movido desde el render. Racing agrupa todas sus inversiones en una sola línea de
+  // egresos extraordinarios, sin desglosar por obra como sí hace Boca, así que acá no hay
+  // `groups`: solo el total y la nota que explica por qué no hay más detalle.
+  2026: { total:7014.228299,
+    note:'El presupuesto de Racing agrupa este monto en una sola línea ("Egresos extraordinarios", compra de bienes de uso y mejoras) dentro del rubro Egresos Extraordinarios, sin desglosar por obra o proyecto individual como sí hace Boca. El texto del documento menciona en general obras en el Estadio, el predio de Ezeiza, el predio Tita Mattiussi y las sedes Avellaneda y Villa del Parque, pero no separa el monto entre ellas.' },
+  2027: { total:10541.726845,
+    note:'Mismo criterio que el Ejercicio 2025/2026: una sola línea sin desglosar por obra. El documento menciona en general la primera etapa del predio de Ezeiza, obras en el predio Tita Mattiussi, mejoras del Estadio, y las sedes Avellaneda, Villa del Parque y la nueva sede educativa.' },
+};
+
+const racingPresupuestoSupuestosByYear = {
+  // Ídem Boca: movido desde js/finanzas-render.js en la Versión 135.
+    2026: {
+      docLabel: 'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2025/2026 (1° de julio de 2025 al 30 de junio de 2026).',
+      sections: [
+        { heading:'Premisas macroeconómicas', items: [
+          'Producto Bruto Interno (PBI): se proyecta un crecimiento del 4% interanual.',
+          'Tipo de cambio: se prevé un promedio de $1.438 por dólar, acelerado post elecciones legislativas de medio término.',
+          'Inflación: se proyecta un aumento promedio del Índice de Precios al Consumidor (IPC, medido por el INDEC) del 29,5% durante el período.',
+          'Incremento salarial: se proyecta un incremento salarial promedio del 30,4%.',
+        ]},
+        { heading:'Políticas de ingresos', items: [
+          'Campeonatos oficiales y competencias internacionales: participación en la Liga Profesional, torneos CONMEBOL, Copa Sudamericana 2026, Copa Argentina 2025/26 y amistosos de pretemporada, con la renovación del convenio de ESPN muy avanzada.',
+          'Retransmisión y derechos de TV: ingreso recurrente proyectado al nivel de cuota devengada actual, con renegociación.',
+          'Marketing y publicidad: sponsors vigentes (Betsson, Sur Finanzas, RUS, PAX, Cetrogar, EA Sports, Alliance, Quilmes, Sorare, ESPN, Lat Comex, entre otros) más los ingresos de Locademia y concesiones/licencias sobre la marca.',
+          'Venta y préstamos de jugadores: venta moderada, por decisión de retener y valorizar un plantel competitivo; incluye el cobro de acreencias de ejercicios anteriores.',
+          'Derechos de formación y mecanismo de solidaridad: ingresos por jugadores formados en Racing y transferidos en ligas del exterior.',
+          'Recursos sociales: campaña de captación de socios en el primer mes de ejecución (resultados no contemplados en el presupuesto); incremento de la cuota social bimestral conforme al IPC.',
+          'Otras secciones: ingresos de Básquet, Futsal, Fútbol Infantil, Tenis, Vóley, Handball, Hockey y Colonia de vacaciones, más el Colegio (cuotas escolares y subvención estatal).',
+          'Otros recursos: concesión de la Sede Avellaneda a Gimnasios Argentinos S.A., eventos sociales, y el rendimiento de excedentes transitorios de capital de trabajo (en baja por la normalización de tasas).',
+        ]},
+        { heading:'Política de gastos', items: [
+          'Plantel profesional: remuneraciones, primas y premios según contratos vigentes, según el propio club, "el presupuesto más importante de los últimos tiempos" por la decisión de retener a figuras campeonas.',
+          'Cuerpo técnico: remuneraciones y premios según contratos individuales, campañas y títulos obtenidos.',
+          'Incorporación y venta de jugadores: reemplazo de figuras salientes; gastos asociados a la venta (comisiones de agentes, 15% del jugador y agremiados, Decreto 1212).',
+          'Fútbol amateur: desarrollo de infantiles y divisiones inferiores, la Pensión y el predio Tita Mattiussi.',
+          'Administración: reformulación de la matriz organizacional, dirección deportiva, proveedores, haberes del personal (sin incluir al plantel de fútbol), Obras Sociales y Sindicatos.',
+          'Inversiones (egresos extraordinarios): obras en el Estadio, el predio de Ezeiza y el predio Tita Mattiussi, y mejoras en las sedes Avellaneda y Villa del Parque.',
+        ]},
+      ],
+    },
+    2027: {
+      docLabel: 'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2026/2027 (1° de julio de 2026 al 30 de junio de 2027), el presupuesto vigente hoy.',
+      sections: [
+        { heading:'Premisas macroeconómicas', items: [
+          'Producto Bruto Interno (PBI): se proyecta un crecimiento real del 4,18% interanual.',
+          'Tipo de cambio: se prevé $1.505 por dólar en julio de 2026 y $1.870 por dólar en junio de 2027.',
+          'Inflación: se proyecta un aumento promedio del Índice de Precios al Consumidor (IPC, medido por el INDEC) del 27,1% durante el período.',
+          'Incremento salarial: se proyecta acorde a la inflación estimada para el ejercicio.',
+        ]},
+        { heading:'Políticas de ingresos', items: [
+          'Campeonatos oficiales y competencias internacionales: participación en la Liga Profesional, torneos CONMEBOL, Copa Sudamericana 2027, Copa Argentina 2026/27 y amistosos de pretemporada, con el convenio de televisación de ESPN ya renovado.',
+          'Retransmisión y derechos de TV: ingreso recurrente proyectado al nivel de cuota devengada actual, con una renegociación prudente.',
+          'Marketing y publicidad: sponsors vigentes (Betsson, RUS, PAX, Cetrogar, Alliance, ESPN, Lat Comex, Pirelli, Coca-Cola, entre otros) más los ingresos de Locademia (venta de artículos deportivos) y concesiones/licencias sobre la marca.',
+          'Venta y préstamos de jugadores: venta moderada, priorizando un reembolso neto de la operación por sobre la diferencia compra/venta, dado un mercado poco demandante; incluye el cobro de acreencias de ejercicios anteriores.',
+          'Derechos de formación y mecanismo de solidaridad: ingresos por jugadores formados en Racing y transferidos en ligas del exterior.',
+          'Recursos sociales: incremento de la cuota social bimestral conforme al IPC; no se proyecta crecimiento de la masa societaria pese a las campañas de captación.',
+          'Otras secciones: ingresos de Básquet, Futsal, Fútbol Infantil, Tenis, Vóley, Handball, Hockey y Colonia de vacaciones, más el Colegio (ampliación de matrículas, cuotas escolares y subvención estatal).',
+          'Otros recursos: concesión de la Sede Avellaneda a Gimnasios Argentinos S.A., eventos sociales, y el rendimiento de excedentes transitorios de capital de trabajo.',
+        ]},
+        { heading:'Política de gastos', items: [
+          'Plantel profesional: remuneraciones, primas y premios según los contratos vigentes, para torneos amistosos, Copa Argentina y CONMEBOL 2026/27, según el propio club, uno de los presupuestos salariales más altos del fútbol argentino.',
+          'Cuerpo técnico: remuneraciones y premios según contratos individuales y el acuerdo con el cuerpo técnico saliente.',
+          'Incorporación y venta de jugadores: reemplazo de figuras salientes; gastos asociados a la venta (comisiones de agentes, 15% del jugador y agremiados, Decreto 1212).',
+          'Fútbol amateur: desarrollo de infantiles y divisiones inferiores, viajes al exterior, la Pensión y el predio Tita Mattiussi.',
+          'Administración: nueva estructura organizacional y dirección deportiva, haberes del personal (sin incluir al plantel de fútbol), Obras Sociales y Sindicatos.',
+          'Inversiones (egresos extraordinarios): primera etapa del predio de Ezeiza, obras en el predio Tita Mattiussi, mejoras del Estadio y de las sedes Avellaneda y Villa del Parque, y la nueva sede educativa.',
+        ]},
+      ],
+    },
+};
+
 window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
 window.CLUB_GENERIC_DATA.racing = {
   revenueLinesByYear: racingRevenueLinesByYear, expenseLinesByYear: racingExpenseLinesByYear,
   fiscalYearMeta: racingFiscalYearMeta, pasesData: racingPasesData,
   resultadosData: racingResultadosData, titulosData: racingTitulosData,
   presupuestoOverlayByYear: racingPresupuestoOverlayByYear,
+  presupuestoSupuestosByYear: racingPresupuestoSupuestosByYear,
+  presupuestoFinancieroByYear: racingPresupuestoFinancieroByYear,
+  presupuestoInversionesByYear: racingPresupuestoInversionesByYear,
 };
 
 
