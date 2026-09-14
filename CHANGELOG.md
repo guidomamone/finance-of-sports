@@ -727,3 +727,9 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - Falso positivo corregido en `clubid-hardcodeado`: buscaba ids entre comillas en `index.html` sin saltear los comentarios HTML, así que cada mención de un club en la prosa del comentario de cabecera (50 KB) se reportaba como una rama por club. Ahora los comentarios se blanquean antes de buscar, conservando los números de línea, y no se miran backticks, que en prosa son markdown.
 - Documentado, porque rompió el archivo al probarlo: un `clubId` con guion NO es clave JS válida sin comillas (`'racing-es': { ... }`).
 - `auditAll()`: 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.
+
+## Versión 130: dos cargas simultáneas del mismo club dejan de pisarse
+
+- BUG REAL, encontrado buscando qué más hace falta antes del selector jerárquico: `loadClubData()` marca el club como cargado recién en el `onload`, así que dos llamadas SIMULTÁNEAS al mismo club inyectaban dos `<script>` del mismo archivo. El segundo tira `SyntaxError: Identifier 'velezRevenueLinesByYear' has already been declared`, porque los `const` de un data file viven en el scope global. Los datos quedaban bien (gana el primero), pero la consola se llenaba de errores.
+- No pasaba hasta ahora porque el sitio carga un club por vez. La comparación multi-club lo va a hacer todo el tiempo: 5 sujetos en paralelo, el mismo club en dos ejercicios, o el promedio de una liga que incluye al club activo.
+- Arreglado cacheando la promesa en vuelo, y borrándola también al fallar para que un reintento después de un error de red vuelva a intentar de verdad. Verificado con 3 llamadas simultáneas en pestaña limpia: 1 solo `<script>`, 0 errores.
