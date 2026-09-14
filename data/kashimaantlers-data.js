@@ -62,7 +62,7 @@ const kashimaantlersRevenueLinesByYear = {
   2025: [
     { rawLabel:'スポンサー収入 (Ingreso por sponsors)', normalizedCategory:'sponsorship_commercial', amountNative:3324, disclosureLevel:'detailed' },
     { rawLabel:'入場料収入 (Ingreso por entradas/gate)', normalizedCategory:'matchday_competition', amountNative:1458, disclosureLevel:'detailed' },
-    { rawLabel:'Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)', normalizedCategory:'other_income', amountNative:3391, disclosureLevel:'aggregated_residual' },
+    { rawLabel:'Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)', normalizedCategory:'lump_football_operations', amountNative:3391, disclosureLevel:'aggregated_residual' },
   ],
 };
 

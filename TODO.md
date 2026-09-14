@@ -71,9 +71,14 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
     (a) 11 balances REALES sin `officialPAT` (los 10 de Japón + Club América): tienen
         officialTotalRevenue/Expenses pero no el resultado del ejercicio, así que ese número no lo
         verifica nadie. Chequear si el documento lo trae impreso y cargarlo.
-    (b) 11 ejercicios con el catch-all de Formato simplificado llevándose >40% del total (casi todos
-        de Japón, del lado de Ingresos, más `river 2024` con 80% del lado de Gastos). La taxonomía
-        no cubre cómo reporta la J.League: o se mapean mejor las líneas, o falta una categoría.
+    (b) RESUELTO EN SU MAYOR PARTE (Versión 141). Eran 11 ejercicios con el catch-all arriba del
+        40%; quedan 3 (instituto 2024 Gastos 42%, velez 2016 y 2017 Ingresos 49% y 43%). Los 8 que
+        se fueron eran el mismo problema con dos caras: la fuente no desglosa, y el sitio lo
+        mostraba en una fila que sugería que sí sabíamos qué era. Los 7 japoneses y `river 2024`
+        pasaron al bucket "sin desglosar por la fuente", que lo dice. Para Japón se re-verificó
+        antes (3 fuentes independientes) que el desglose por club NO existe en ningún lado: ver
+        `fuentes/Japón/_notas-generales.md`. Los 3 que quedan son de clubes cuyo documento SÍ podría
+        tener más detalle, hay que ir al documento.
     (c) 16 líneas con el signo opuesto al de su sección y peso real (deducciones sobre la receita de
         los clubes brasileños, "Costo de desarrollo de jugadores propios (reclasificación)" de Vélez
         2015/2016/2017). Probablemente todas correctas: confirmar contra el documento y, recién ahí,

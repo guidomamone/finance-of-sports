@@ -53,6 +53,30 @@ archivos ya están identificados y confirmados.
   cambios) — `expenseLinesByYear` de los 10 clubes quedó vacío, no se usó el promedio/total
   divisional como proxy (sería atribuirle a un club un número que es en realidad un promedio de toda
   la división).
+- **RE-VERIFICADO Y CERRADO (sesión 2026-09-14, a pedido de Guido: "busquemos información de nuevo
+  a ver si en otros lares de internet algo nos da más contexto").** Se salió a buscar si el desglose
+  por club existe en algún lado. NO existe, y ahora hay 3 evidencias independientes:
+  1. **La propia tabla por club del disclosure**, leída directo en `club_doc-2025.md`: son
+     exactamente 3 filas por club, líneas 242 (売上高 / total), 300 (スポンサー収入) y 341
+     (入場料収入). Para Ｇ大阪: 6.574 / 7.223 / 8.817 el total, 2.188 / 2.263 / 2.292 sponsors, y
+     970 / 1.185 / 1.451 entradas (2023 / 2024 / 2025). Ninguna otra categoría aparece por club.
+  2. **La "Ｊリーグ クラブ経営ガイド 2025"** (`https://aboutj.jleague.jp/corporate/assets/pdf/club_guide/jclub_guide-2025.pdf`,
+     181 páginas, documento OFICIAL distinto del disclosure): SÍ tiene las 8 categorías
+     (スポンサー収入, 入場料収入, Ｊリーグ配分金, 移籍補償金等収入, アカデミー関連収入,
+     女子チーム関連収入, 物販収入, その他収入), pero SOLO como PROMEDIO de J1, J2 y J3 ("Ｊ1平均"
+     / "Ｊ2平均" / "Ｊ3平均"), nunca por club. Su propia nota de fuente dice que está armada a
+     partir del mismo disclosure.
+  3. **El "Jクラブ経営情報ポータル"** (cieloazul310.github.io, terceros): documenta las 8 categorías
+     como vocabulario de la liga, pero su ficha por club muestra solo el 営業収入 total.
+  OJO CON LAS NOTAS DE ANÁLISIS JAPONESAS: circulan desgloses por club de 4 líneas (ej. una nota de
+  note.com da para Gamba 2024: 72,2億 total, 22,6 sponsors, 11,9 entradas, **7,6 物販**, 22,5 otros).
+  Los 3 primeros números salen de este disclosure; el de 物販 NO está en ninguna edición del
+  documento oficial, así que es o una estimación del analista o viene de otra fuente que la nota no
+  cita. No usarlo sin identificar su origen.
+  QUÉ SE HIZO CON ESTO (Versión 141): el residual de los 10 clubes japoneses pasó de `other_income`
+  a `lump_football_operations`, o sea de la fila "Otras secciones deportivas y otros ingresos" a
+  "Fútbol profesional (sin desglosar por la fuente)". El número no cambió; lo que cambió es que la
+  fila ahora dice la verdad en vez de sugerir que sabemos que son otras secciones deportivas.
 - **Por club, 3 ejercicios consecutivos** (el año del documento + los 2 anteriores), desglosado por
   categoría de INGRESO: スポンサー収入 (sponsors), 入場料収入 (taquilla/gate), 物販収入
   (merchandising), Ｊリーグ配分金 (distribución de la liga), 移籍補償金等収入 (indemnizaciones de

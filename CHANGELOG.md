@@ -933,3 +933,20 @@ documentados, listos para una sesión de onboarding futura.)*
   umbral sube. El to-do de partirlos se borró: partirlos tendría un costo real (hoy "dónde está la
   historia" tiene una respuesta de una palabra) y no resolvería ningún problema que exista.
 - Auditoría: 0 P0, 0 P1, 51 P2 (eran 54), 8 P3 (eran 12). `auditAll()` 222 checks, 0 que no cierran.
+
+## Versión 141: lo que la fuente no desglosa ahora lo dice, en vez de disfrazarse de otra cosa
+
+- JAPÓN: se salió a buscar si el desglose de ingresos por club existe en algún lado (pedido de
+  Guido). No existe, y quedó verificado con 3 evidencias independientes: la tabla por club del
+  propio disclosure (exactamente 3 filas: total, sponsors, entradas), la "Ｊリーグ クラブ経営ガイド
+  2025" (documento oficial distinto, que sí tiene las 8 categorías pero solo como promedio de J1/J2/
+  J3), y el portal de terceros, que solo muestra el total por club. Anotado en
+  `fuentes/Japón/_notas-generales.md`, incluida la advertencia sobre notas de análisis japonesas que
+  circulan con un desglose de 4 líneas cuya cifra de 物販 no está en ninguna edición del documento.
+- Los 10 clubes japoneses pasaron su línea residual de `other_income` a
+  `lump_football_operations`: el número es el mismo, pero la fila dice "Fútbol profesional (sin
+  desglosar por la fuente)" en vez de "Otras secciones deportivas y otros ingresos", que sugería que
+  sabíamos qué era esa plata.
+- `catchall-dominante` bajó de 11 a 3 (quedan instituto 2024 y velez 2016/2017, cuyos documentos sí
+  podrían tener más detalle). P2 total: 44, eran 54 al empezar el día.
+- `auditAll()`: 41 clubes, 222 checks, 0 que no cierran. Ningún total se movió.
