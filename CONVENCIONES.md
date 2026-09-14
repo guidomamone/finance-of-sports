@@ -15,6 +15,20 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152). El proyecto existe porque sus
+  números son verificables, así que un archivo de datos de mentira es lo más peligroso que se le
+  puede agregar. Se permite UNO, con estas 5 condiciones, y el día que se rompa cualquiera hay que
+  borrarlo: (1) NO vive en `data/` — hoy es `prototipo-pasos-datos-inventados.js`, en la raíz, con
+  "inventados" en el nombre; (2) lo carga UNA sola página que no está linkeada desde ningún lado
+  (`prototipo-pasos.html`), nunca `index.html`; (3) ninguna herramienta lo ve: `tools/audit.js` y
+  `auditAll()` leen `data/*.js`, así que no puede ensuciar una verificación; (4) cada ejercicio
+  inventado se declara solo — `inventado:true` en su meta, una entrada en `sources{}` con
+  `type:'placeholder'` (que hace que el propio sitio muestre su aviso de "número inventado, no es
+  real"), cada rubro terminado en "(inventado)" y la marca "· INVENTADO" al lado del año en todo
+  el prototipo; (5) NO se copia a `data/` jamás: el día que ese club publique su balance real se
+  carga leyendo el documento, no promoviendo el relleno. Pedido de Guido ("el tener datos
+  incompletos me limita la creatividad") con la condición que él mismo puso: "documentar bien lo
+  que estamos tocando para no arrastrar balances inventados".
 - QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta).
   Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
   buckets de "Formato simplificado", el tipo y el nivel de cada fuente, y la procedencia de cada

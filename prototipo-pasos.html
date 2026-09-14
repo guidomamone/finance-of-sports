@@ -619,6 +619,13 @@ consulta puntual, nunca lectura de corrido.
 <style>
   .proto-flag{position:sticky;top:0;z-index:200;background:#1b7a3d;color:#fff;font-size:12px;font-weight:700;
               letter-spacing:.04em;text-align:center;padding:5px 10px;}
+  /* Con datos inventados en la página, la franja deja de ser verde: que nadie
+     confunda una captura de esto con una del sitio. */
+  .proto-flag-falso{background:#b5372b;}
+  .proto-flag-falso b{background:#fff;color:#b5372b;padding:1px 7px;border-radius:5px;}
+  /* La marca de cada ejercicio inventado, donde el prototipo lo ofrece. */
+  .op-falso{font-size:10px;font-weight:800;letter-spacing:.05em;color:#b5372b;background:#fdecea;
+            border:1px solid #f3b8b1;border-radius:4px;padding:1px 5px;margin-left:7px;}
   .proto-flag span{font-weight:400;opacity:.85;}
   .proto-reset{margin-left:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.55);
                color:#fff;border-radius:6px;padding:2px 9px;font-size:11px;font-weight:700;
@@ -773,7 +780,7 @@ consulta puntual, nunca lectura de corrido.
 </style>
 </head>
 <body>
-<div class="proto-flag">PROTOTIPO 2 · Selector paso a paso <span>— no es el sitio publicado</span><button type="button" class="proto-reset" id="protoReset" title="Borra el club elegido y los recientes de ESTE navegador, y recarga. El idioma no se toca.">Volver a la primera visita</button></div>
+<div class="proto-flag proto-flag-falso">PROTOTIPO 2 · Selector paso a paso <span>— no es el sitio publicado · </span><b>DATOS INVENTADOS: los ejercicios 2016-2025 de Argentina y Brasil son de mentira</b><button type="button" class="proto-reset" id="protoReset" title="Borra el club elegido y los recientes de ESTE navegador, y recarga. El idioma no se toca.">Volver a la primera visita</button></div>
 
 <header>
   <div class="header-inner">
@@ -1448,8 +1455,14 @@ consulta puntual, nunca lectura de corrido.
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
+<!-- PROTO: DATOS INVENTADOS. Rellena los últimos 10 ejercicios de los clubes de
+     Argentina y Brasil, con ascensos y descensos, para poder probar la interfaz
+     sin que la falta de datos reales limite el diseño. NINGÚN número que salga de
+     acá es real, y este archivo NO lo carga ninguna otra página del sitio. Ver la
+     cabecera de prototipo-pasos-datos-inventados.js. -->
+<script src="prototipo-pasos-datos-inventados.js?v=1789428327265"></script>
 <!-- PROTO: el selector paso a paso, en vez del de columnas. Misma API pública. -->
-<script src="prototipo-pasos-selector.js?v=1789427146445"></script>
+<script src="prototipo-pasos-selector.js?v=1789428186181"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
@@ -2037,6 +2050,24 @@ consulta puntual, nunca lectura de corrido.
 <!-- ======================== PROTO: comportamiento del banco de pruebas ======== -->
 <script>
 (function(){
+  // Los datos inventados se encienden ACÁ y no arriba, y el motivo es de orden de
+  // carga: loadClubData() lo define el <script> principal de index.html, que corre
+  // DESPUÉS de los <script src> del final del body. Encendiéndolo antes, el wrapper
+  // se instalaba sobre un undefined y los ejercicios inventados nunca entraban —
+  // aparecían en el selector y no existían al abrirlos, que es el peor de los mundos.
+  if(window.FOS_DUMMY){
+    FOS_DUMMY.init();
+    if(window.CLUB_SELECTOR && CLUB_SELECTOR.refresh) CLUB_SELECTOR.refresh();
+    // Si la visita entra con un club guardado, ese club se dibujó en el INIT del
+    // sitio, o sea ANTES de que existieran los ejercicios inventados: hay que
+    // volver a elegirlo para que se redibuje con ellos. Pasar por null y volver es
+    // el mismo camino que usa el selector, no un refresh inventado por afuera.
+    var guardado = (window.CLUB_SELECTOR && CLUB_SELECTOR.savedClub) ? CLUB_SELECTOR.savedClub() : null;
+    if(guardado && typeof selectClub === 'function'){
+      Promise.resolve(selectClub(null)).then(function(){ return selectClub(guardado); });
+    }
+  }
+
   document.getElementById('protoReset').addEventListener('click', function(){
     ['fos_club', 'fos_recent_clubs', 'fos_coach_club'].forEach(function(k){
       try { localStorage.removeItem(k); } catch(e){}

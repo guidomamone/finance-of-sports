@@ -106,6 +106,16 @@ perdieron sino que se descartaron:
     si esconder los ejercicios adentro del dropdown "Ver" no los hace demasiado invisibles, ahora
     que el subtítulo de la fila ya no dice cuántos hay.
 
+30. BORRAR LOS DATOS INVENTADOS cuando se decida el punto 28. `prototipo-pasos-datos-inventados.js`
+    (Versión 152) rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
+    Brasil, con ascensos y descensos inventados, para poder probar la interfaz. Existe con 5
+    condiciones escritas en `CONVENCIONES.md`, y la última es que NUNCA se copia a `data/`: si
+    mañana uno de esos clubes publica su balance de 2019, se carga leyendo el documento, no
+    promoviendo este relleno. El día que el selector se apruebe (o se descarte), este archivo y su
+    `<script>` en `tools/build-prototipo-pasos.js` se borran en el mismo movimiento. Mientras
+    exista, cualquier captura de `prototipo-pasos.html` tiene números falsos: la franja roja de
+    arriba lo dice, pero conviene no pegar esas capturas en ningún lado sin la franja.
+
 29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
     SOLO en la copia del prototipo (`prototipo-inicio-selector.js`, patch (d) del generador). En
     `renderCols()` (js/selector.js:~290), la columna LIGA lista `Object.keys(LEAGUES)` filtrado

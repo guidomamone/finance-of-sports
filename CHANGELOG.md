@@ -1200,3 +1200,30 @@ Tres pedidos de Guido, todos dentro de `prototipo-pasos.html`:
   estaba `hidden`, y ese botón vive en un card que aparece recién cuando el club ya está dibujado.
   Resultado: la comparación contra otro ejercicio se perdía en silencio. `hidden` no impide que el
   listener corra, así que ahora se clickea igual.
+
+## Versión 152: datos inventados para el prototipo 2, encerrados con llave
+
+- NUEVO `prototipo-pasos-datos-inventados.js`: rellena los ejercicios 2016-2025 de los 18 clubes de
+  ARGENTINA y BRASIL que hay cargados, con ascensos y descensos inventados entre primera y segunda
+  división. Pedido de Guido: "estoy queriendo probar cosas y el tener datos incompletos me limita
+  la creatividad". Hoy 10 de los 18 clubes cambian de categoría en esos 10 años.
+- LOS EJERCICIOS REALES NO SE PISAN: solo se rellenan los huecos. Boca pasa de 2 ejercicios a 11, y
+  los 2 reales siguen siendo los reales.
+- LAS 5 CONDICIONES QUE LO CONTIENEN, ahora regla permanente en `CONVENCIONES.md`: no vive en
+  `data/`; lo carga una sola página no linkeada; ninguna herramienta lo ve (`tools/audit.js` y
+  `auditAll()` leen `data/*.js`); cada ejercicio inventado se declara (meta `inventado:true`,
+  fuente `type:'placeholder'` — que hace que el PROPIO sitio muestre su aviso "número inventado,
+  no es real" adentro de Finanzas —, rubros terminados en "(inventado)" y "· INVENTADO" al lado
+  del año en todo el selector); y no se copia a `data/` nunca. La franja del prototipo pasó de
+  verde a ROJA, para que ninguna captura se confunda con el sitio.
+- Los números son deterministas (misma semilla por club-año): si cambiaran en cada recarga, nada de
+  lo que se pruebe con ellos sería repetible. La única regla de negocio que tienen es que un año en
+  segunda división factura ~55% menos, que es lo que hace que el ascenso se NOTE en el gráfico.
+- To-do 30 nuevo: borrar todo esto el día que se decida el selector.
+- DOS PROBLEMAS DE ORDEN DE CARGA resueltos en el camino, los dos del mismo tipo: `loadClubData()`
+  lo define el `<script>` principal de `index.html`, que corre DESPUÉS de los `<script src>`, así
+  que encender el relleno temprano instalaba el wrapper sobre un `undefined`; y el club guardado de
+  la visita anterior se dibuja en ese mismo INIT, o sea antes de que existan los ejercicios
+  inventados, así que hay que volver a elegirlo. Además `finanzasYears` (la lista blanca opcional
+  que usa Boca) hacía que los ejercicios aparecieran en el selector y no adentro de Finanzas.
+- El sitio no se tocó: `index.html`, `js/` y `data/` intactos, `node tools/audit.js` en 0 P0, 0 P1.

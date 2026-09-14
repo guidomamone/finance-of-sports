@@ -283,6 +283,13 @@ se reescribe, no se acumula.
   a propósito: se comparan las dos visualizaciones antes de decidir (to-do 28).
   El `.html` se genera; la lógica (`prototipo-pasos-selector.js`) está escrita a
   mano y expone la misma API pública que `js/selector.js`.
+  **Ese prototipo (y SOLO ese) carga `prototipo-pasos-datos-inventados.js`**, que
+  rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
+  Brasil, con ascensos y descensos inventados, para poder probar la interfaz sin
+  que la falta de datos reales limite el diseño. Ningún número que salga de ahí es
+  real, no vive en `data/`, ninguna auditoría lo ve, y cada ejercicio inventado se
+  anuncia en pantalla. Las 5 condiciones que lo mantienen contenido están en
+  `CONVENCIONES.md`; el día que se decida el selector, se borra (to-do 30).
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.

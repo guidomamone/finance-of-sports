@@ -252,9 +252,10 @@ window.CLUB_SELECTOR = (function(){
           var cuantos = finales.filter(function(id){
             return yearsOf(id).some(function(par){ return par[0] === y; });
           }).length;
+          var falsos = finales.filter(function(id){ return marcaFalsa(id, y); }).length;
           return {
             id: String(y),
-            label: 'Cierre ' + y,
+            label: 'Cierre ' + y + (falsos ? (falsos === cuantos ? ' · INVENTADO' : ' · ' + falsos + ' inventados') : ''),
             // Con varios clubes en juego un año no existe para todos, y eso se dice
             // ANTES de elegirlo en vez de sorprender con una barra vacía.
             meta: cuantos + ' de ' + finales.length + ' clubes'
@@ -310,6 +311,13 @@ window.CLUB_SELECTOR = (function(){
   // de año calendario (Japón, Brasil) no dice "2024/2025" sino "2025", y escribir el
   // rango sería una fecha falsa. Con clubes de los dos tipos mezclados no se puede
   // elegir uno solo, así que ahí va el año pelado.
+  // Todo ejercicio inventado se anuncia donde se ofrece. Es la mitad visible de la
+  // contención que describe la cabecera de prototipo-pasos-datos-inventados.js: el
+  // dato de mentira puede estar, pero no puede pasar por real ni por un segundo.
+  function marcaFalsa(clubId, year){
+    return (window.FOS_DUMMY && window.FOS_DUMMY.esDummy(clubId, year)) ? ' · INVENTADO' : '';
+  }
+
   function labelAnio(y){
     var finales = clubesFinales();
     var conEse = finales.filter(function(id){
@@ -319,7 +327,11 @@ window.CLUB_SELECTOR = (function(){
     var calendario = conEse.map(function(id){ return clubs[id].fiscalYearStart === '01-01'; });
     if(calendario.some(Boolean) && calendario.some(function(x){ return !x; })) return String(y);
     var par = yearsOf(conEse[0]).filter(function(p){ return p[0] === y; })[0];
-    return window.ejercicioLabel(y, par[1], conEse[0]);
+    var falsos = conEse.filter(function(id){ return marcaFalsa(id, y); }).length;
+    var marca = !falsos ? ''
+      : falsos === conEse.length ? ' · INVENTADO'
+      : ' · ' + falsos + ' inventados';
+    return window.ejercicioLabel(y, par[1], conEse[0]) + marca;
   }
 
   function paso(k){ return PASOS.filter(function(p){ return p.clave === k; })[0]; }
