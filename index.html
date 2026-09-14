@@ -42,7 +42,7 @@ en Números" (Versión 117, pedido de Guido). Cada rename fue solo de branding: 
 dominio es **financeofsports.com** y la carpeta/repo se llama
 `finance-of-sports`.
 
-ESTADO ACTUAL (al día, después de la Versión 121)
+ESTADO ACTUAL (al día, después de la Versión 137)
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `CHANGELOG.md` (resumen por
 versión, 96 versiones) y en `finance-of-sports-project.md` (narrativa completa). Este bloque
@@ -75,6 +75,18 @@ se reescribe, no se acumula.
   (`nacional-uy`), porque el id nombra el archivo y prefija cada `sourceId`. Los
   41 de antes quedan como están hasta que alguno se vuelva ambiguo, y
   `tools/audit.js` avisa justo ese día. Ver `CONVENCIONES.md`.
+- TAXONOMÍA DEL SELECTOR (Versión 137): `data/leagues.js` es el CATÁLOGO
+  (6 deportes, 6 regiones, 6 países, 8 ligas con su escalón). NO tiene membresía
+  a propósito, y esa es la regla de arquitectura más importante que salió de esta
+  versión: NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO. La membresía vive solo
+  en `data/club-leagues.js`, y sus 6 helpers nuevos son el único camino para
+  preguntarla: `clubsOfLeagueYear()` para TODO agregado de liga, `leaguesOfClub()`
+  para el árbol, más los de navegación. Un campo `clubs[id].league` con "la liga de
+  hoy" habría sido una segunda verdad sobre el mismo hecho, y encima inútil para
+  "cuánto generaba esta liga en 2022", que necesita saber quiénes la integraban ESE
+  año (lo levantó Guido). En el árbol, un club aparece bajo CADA liga en la que
+  tiene un ejercicio cargado: nada que actualizar por temporada, ningún campo que
+  pueda mentir. `clubs{}` gana `sport`, que sí es intrínseco del club.
 - LIGA POR EJERCICIO (Versión 132): `data/club-leagues.js` dice en qué categoría
   jugó cada club en cada ejercicio, que es distinto de en cuál juega hoy
   (Mirassol 2024 es Série B y Mirassol 2025 Série A). Es un archivo aparte y no
@@ -95,8 +107,9 @@ se reescribe, no se acumula.
   `data/<club>-data.js`, que es justamente lo que no se carga hasta que el
   visitante elige ese club: con la página recién abierta, `clubs{}` tiene 41
   entradas y `sources{}` tiene 3, todas de Boca. Son ~76 bytes por club contra
-  los ~366 de `clubs.js`. Su consumidor es el selector jerárquico, que todavía no
-  está: hasta entonces viaja sin usarse.
+  los ~366 de `clubs.js`. Su consumidor es el selector jerárquico, que desde la
+  Versión 137 EXISTE: es de acá que salen el punto de calidad y el conteo de
+  ejercicios de cada fila del panel, sin bajar un solo archivo de club.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
   cada `fx` caiga en un rango plausible para su moneda. Hoy son 222 checks, 0
@@ -137,10 +150,35 @@ se reescribe, no se acumula.
   trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
   placeholder según el club (ver to-do 4). "Mi Cuenta" es un stub sin
   funcionalidad, esperando la decisión de free/paid (to-do 5 y 6).
-- UI: selector de club global en el header (aplica a todas las pestañas), toggle
-  de moneda nativa/USD, y toggle "Formato del club"/"Formato simplificado" (este
-  último es el default). El toggle "Año a año"/"Por gestión" está OCULTO desde la
-  Versión 112 (pedido de Guido), código y datos intactos.
+- UI: SELECTOR JERÁRQUICO DE CLUB en el header (Versión 137, reemplaza al
+  `<select>` plano de 41 opciones): un botón con el club activo que abre un panel
+  Deporte > Región > País > Liga > Equipo, con búsqueda por texto arriba, punto de
+  calidad del dato por club, recientes, y dos salidas visibles. Se abre con
+  Ctrl/Cmd+K. Vive en `js/selector.js` y se alimenta de `clubs.js` +
+  `club-index.js` + `leagues.js` + `club-leagues.js`, sin bajar ningún archivo de
+  club. `populateClubSelect()` ya no existe.
+- COLD START (Versión 137): el sitio YA NO abre en Boca. Sin club elegido muestra
+  una portada (`#coldHero`) con el buscador grande, los 8 clubes con más
+  ejercicios cargados y un chip por liga; el nav y las secciones quedan
+  escondidos. Elegido un club queda en `localStorage` y las visitas siguientes
+  entran derecho a él, por el mismo camino que un click en el selector. Se vuelve
+  a la portada con "Ver la portada" arriba del panel. Consecuencia: `boca-data.js`
+  ya no se carga eager (son 78 KB menos en la primera carga) y no queda ningún
+  club por default en el código.
+- COMPARACIÓN ENTRE CLUBES (Versión 137, `js/comparar-clubes.js`, no confundir con
+  "Comparar Gestiones", que compara 2 presidencias del mismo club): la unidad
+  comparable es (CLUB, EJERCICIO), así que cada barra lleva su año y "River 20/21
+  vs. River 24/25" son dos sujetos, no una feature aparte. Un solo modelo cubre
+  1 vs 1, N clubes y club contra el promedio de su liga; el modo se deduce de la
+  lista. Vista por default: barras horizontales, un bloque por indicador, escala
+  POR indicador, más "Composición de ingresos" al 100%; la tabla queda detrás de
+  un toggle. Fuerza USD y Formato simplificado, y lo dice en pantalla. Muestra
+  "sin dato" (no 0) cuando la fuente no informa deuda, masa salarial o socios.
+  4 avisos: sesgo del benchmark, ejercicios de años distintos, divisiones
+  distintas, y presupuesto contra balance.
+- Toggle de moneda nativa/USD y toggle "Formato del club"/"Formato simplificado"
+  (este último es el default). El toggle "Año a año"/"Por gestión" está OCULTO
+  desde la Versión 112 (pedido de Guido), código y datos intactos.
 - IDIOMAS: el sitio tiene selector de idioma (globo, arriba a la derecha) desde
   la Versión 115. Castellano (idioma fuente, ES EL HTML mismo, sin archivo de
   diccionario) e inglés (`data/lang/en.js`, ~105 claves). Detecta el idioma del
@@ -484,10 +522,12 @@ o directamente retomar en la próxima sesión)
    CNAME, no hay build step — son archivos estáticos servidos desde la raíz.
 8. Reemplazar el email placeholder del formulario de contacto
    (contacto@bocaennumeros.example) por uno real antes de publicar.
-9. Pasada de mobile/responsive: las tablas largas del presupuesto oficial de
-   Boca, y el header (el nav empieza a recortarse por debajo de ~850px de
-   ancho, hoy no hay un diseño de nav para mobile, solo se angostó lo
-   posible sin rediseñar).
+9. RESUELTO EL HEADER (Versión 137): abajo de 900px el header envuelve y el nav se
+   lleva su propia fila completa, con sus 4 pestañas visibles. Se volvió urgente al
+   poner el botón del selector (~210px contra los ~104px del `<select>` viejo): con
+   una sola fila, el `nav` quedaba aplastado a 0px de ancho y las pestañas
+   desaparecían sin aviso (medido en el navegador). QUEDA PENDIENTE la otra mitad:
+   las tablas largas del presupuesto oficial de Boca en pantallas angostas.
 10. RESUELTO PARCIAL en la Versión 21: el card único "Presupuesto 2026/27
     (oficial)" se dividió en 3 cards (Supuestos / Presupuesto Financiero /
     Presupuesto de Inversiones) para aliviar el volumen de contenido, pero
@@ -644,9 +684,10 @@ o directamente retomar en la próxima sesión)
         escritos a mano como HTML adentro de este archivo (133 líneas) con un `isBoca2027`
         decidiendo si se mostraban ellos o la versión genérica; ahora son datos en
         `data/boca-data.js` y los renderiza el mismo código que usa cualquier club. Los 2 que
-        quedan: `let currentClub = 'boca'` (el club por defecto, que desaparece con el cold start
-        del selector) y el `isBoca2027` de los 3 cards de torneo, que Guido decidió dejar como
-        están porque son una feature que hoy solo tiene Boca.
+        quedaban: `let currentClub = 'boca'`, que se fue con el cold start de la Versión 137
+        (ahora nace en null y el club sale de localStorage), y el `isBoca2027` de los 3 cards de
+        torneo, que Guido decidió dejar como está porque es una feature que hoy solo tiene Boca.
+        O sea que queda UNO, y es a propósito.
     (h) LO MÁS IMPORTANTE, y es una decisión de Guido, no una corrección mecánica (sale del eje de
         juicio de `auditorias/2026-09-13.md`): el sitio hoy muestra IGUAL dos cosas distintas — "la
         fuente reporta cero" y "la fuente no lo desglosa". Un club japonés muestra Televisión = $0
@@ -702,17 +743,60 @@ o directamente retomar en la próxima sesión)
     (c) `fuentes.html` es una sola página de 767 bytes por documento: 70 KB hoy con 91 documentos,
         ~1,7 MB y 2.200 filas a 1000 clubes. Partir por país arriba de ~300 documentos, con un
         índice. Es el mismo generador con un loop más, y le da una URL propia a cada país.
-    (d) PARCIAL (Versión 129): existe `data/club-index.js`, el índice liviano generado (~76 bytes
+    (d) PARCIAL (Versión 129, y el selector de la 136 ya lo consume): existe
+        `data/club-index.js`, el índice liviano generado (~76 bytes
         por club, ~74 KB a 1000 contra los ~366 KB de `clubs.js`), que es lo que el selector
         necesita. Lo que FALTA es la otra mitad: adelgazar `clubs.js`, moviendo a cada
         `data/<club>-data.js` los campos que solo importan una vez que el club está cargado
         (`reportingCurrency`, `fiscalYearStart`, `name` legal). Hoy los dos archivos viajan juntos,
         así que el payload todavía no bajó.
-    (e) El selector de club es un `<select>` plano: a ~100 clubes ya es inusable. Guido lo está
-        trabajando aparte (`prototipo-selector.html`, `PROMPT-selector-jerarquico.md`).
+    (e) RESUELTO (Versión 137): el `<select>` plano de 41 opciones lo reemplazó el selector
+        jerárquico (ver ESTADO ACTUAL). `prototipo-selector.html` y
+        `PROMPT-selector-jerarquico.md` quedan como el registro de la UX que se decidió, no
+        como trabajo pendiente.
     (f) `auditAll()` carga los clubes en SERIE (`for` con `await`): 114 ms con 41, pero ~30 s a 1000
         clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
         paralelas con `Promise.all`.
+23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
+    (a) PRECISIÓN, Y ES LO MÁS IMPORTANTE DE ESTA LISTA. Los presupuestos escriben
+        `grossDebt:0, cash:0` en su `fiscalYearMeta` (Boca 2027, Racing 2026 y 2027): un
+        presupuesto proyecta ingresos y egresos, no un balance. Eso hace que Inicio muestre
+        "DEUDA NETA ACTUAL: 0.0 M USD" para Boca, que se lee como "Boca no debe nada" y es
+        falso. La comparación entre clubes ya lo muestra como "sin dato" (trata el par de ceros
+        exactos como ausencia), pero eso es un parche en UNA vista: el dato sigue diciendo 0 en
+        el archivo del club y el KPI de Inicio lo publica. Las 2 opciones: poner esos campos en
+        `null` en los 3 ejercicios (hay que confirmar contra cada documento que efectivamente no
+        proyectan deuda), o que `renderInicioStats()` use el último ejercicio con BALANCE para
+        la deuda, no el último ejercicio a secas. Es el mismo problema de fondo que la to-do
+        20(h): el sitio muestra igual "la fuente reporta cero" y "la fuente no lo dice".
+    (b) `LEAGUES[].totalClubs` está en `null` en las 8 ligas, así que el aviso de sesgo del
+        benchmark dice "sale de los 5 clubes cargados" y no puede decir "5 de 20". OJO al
+        cargarlo: la cantidad de equipos de una liga TAMBIÉN cambia por temporada (Primera
+        División de Argentina pasó de 20 a 30 en el período cargado), así que el dato va por
+        año, no como un número suelto. Mismo problema que tenía la membresía.
+    (c) LA VISTA DE LIGA (pedido de Guido, "podemos separarlo en sesiones pero guardámelo en un
+        to-do gigante"). Elegir una liga o un país entero en el selector hoy solo filtra la
+        columna Equipo; el prototipo (`prototipo-selector.html`) tiene además un "Ranking de
+        ingresos" con una barra apilada por club. Lo que hay que resolver antes de dibujarlo, y
+        es lo que lo hace una sesión propia: un ranking de liga es (liga, EJERCICIO), así que
+        hay que elegir el año y decir cuántos de sus integrantes tienen ese ejercicio cargado;
+        carga N clubes en paralelo; y mezclar el último ejercicio de cada uno (que es lo que
+        hace el prototipo) compara años distintos sin avisarlo. La infraestructura ya está:
+        `clubsOfLeagueYear()` contesta quiénes integraban la liga ese año, y los 4 avisos de la
+        comparación son los mismos que necesita esta vista.
+    (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
+        ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
+        por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
+        moneda y año. Decisión de Guido si se abre.
+    (e) ESCUDOS. Los 41 clubes se muestran con un círculo azul con sus iniciales. Los escudos
+        reales, o al menos el color de cada club, harían el selector y las barras mucho más
+        legibles; son 41 datos que hay que verificar uno por uno (un color equivocado se lee
+        peor que ninguno) y, si son imágenes, hay que ver el tema de derechos.
+    (f) El botón "Comparar" del header, sin club elegido, abre el panel para ELEGIR club en vez
+        de para comparar. Es correcto (no se puede comparar contra nada), pero el botón no lo
+        explica: podría estar deshabilitado con el motivo, o directamente escondido en la
+        portada.
+
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
@@ -784,7 +868,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   .header-currency-toggle button{background:transparent;color:#fff;padding:5px 10px;font-size:12px;font-weight:500;}
   .header-currency-toggle button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
   /* ======================================================================
-     SELECTOR JERÁRQUICO DE CLUB (Versión 136). Reemplaza al <select id="clubSelect">
+     SELECTOR JERÁRQUICO DE CLUB (Versión 137). Reemplaza al <select id="clubSelect">
      plano, que con 41 clubes ya era incómodo y al objetivo de 1000 es inusable.
      Deporte › Región › País › Liga › Equipo, con búsqueda por texto encima.
 
@@ -906,7 +990,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   .crumb-sep{color:#c4c4bf;font-size:10px;}
 
   @media (max-width:900px){
-    /* EL NAV PASA A SU PROPIA FILA (Versión 136). El botón de club mide ~210px contra
+    /* EL NAV PASA A SU PROPIA FILA (Versión 137). El botón de club mide ~210px contra
        los ~104px del <select> que reemplazó, así que en una sola fila el `nav` quedaba
        aplastado a 0px de ancho y las 4 pestañas desaparecían sin aviso (medido en el
        navegador: nav.getBoundingClientRect().width === 0 a 614px de ancho). Es la to-do 9
@@ -935,7 +1019,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     .foot-close{margin-left:auto;padding:10px 14px;}
   }
 
-  /* ---------- COLD START: la portada de la primera visita (Versión 136) ---------- */
+  /* ---------- COLD START: la portada de la primera visita (Versión 137) ---------- */
   .hero{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;
         border-radius:14px;padding:38px 30px 30px;margin-bottom:28px;}
   .hero[hidden]{display:none;}
@@ -970,7 +1054,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     .hero h1{font-size:23px;}
   }
   /* ======================================================================
-     COMPARACIÓN ENTRE CLUBES (Versión 136). Un solo modelo cubre los 3 casos que
+     COMPARACIÓN ENTRE CLUBES (Versión 137). Un solo modelo cubre los 3 casos que
      pidió Guido (1 vs 1, N clubes, y club vs. promedio de liga): `subjects` es una
      lista de SUJETOS COMPARABLES, y cada uno lleva SU ejercicio. De ahí sale gratis
      el caso "River 2020/21 contra River 2024/25": son dos entradas de la lista, no
@@ -1117,6 +1201,10 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     .cmp-btn::before{content:'\21C4';font-size:14px;}
     .confirm-bar{position:sticky;bottom:0;}
     .cf-ok{flex:1;}
+    /* `repeat(auto-fit, minmax(310px, 1fr))` impone un mínimo de 310px a la columna,
+       y en un teléfono de 375px el ancho útil adentro del card es ~293px: la grilla
+       desbordaba el card y aparecía scroll horizontal. Una columna sola en móvil. */
+    .metric-grid{grid-template-columns:1fr;gap:22px;}
     .mbar-row{grid-template-columns:112px 1fr auto;}
     .mix-row{grid-template-columns:104px 1fr 72px;}
     .cmp-cta{flex-direction:column;align-items:flex-start;}
@@ -1339,7 +1427,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
            populateCurrencyToggle() (ver <script> principal), porque cada club puede tener una
            moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
       <div class="segmented header-currency-toggle" id="currencyToggleGlobal" data-i18n-title="header.currency" title="Moneda: aplica a Inicio y Finanzas"></div>
-      <!-- SELECTOR JERÁRQUICO DE CLUB (Versión 136). Acá había un <select id="clubSelect">
+      <!-- SELECTOR JERÁRQUICO DE CLUB (Versión 137). Acá había un <select id="clubSelect">
            plano, generado en runtime desde `clubs{}` (populateClubSelect(), borrada en esta
            versión). Con 41 clubes ya era incómodo y al objetivo declarado de 1000 es inusable:
            no se puede buscar, no agrupa, y no dice nada de qué vas a encontrar adentro. Lo
@@ -1391,7 +1479,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   </div>
 </header>
 
-<!-- ===================== PANEL DEL SELECTOR DE CLUB (Versión 136) =====================
+<!-- ===================== PANEL DEL SELECTOR DE CLUB (Versión 137) =====================
      Miller columns (Deporte › Región › País › Liga › Equipo) con búsqueda arriba. La
      jerarquía es OPCIONAL, no un peaje: el 90% de las visitas ya tiene un club en la
      cabeza, y escribir "boca" tiene que llegar en un paso. El árbol es para explorar.
@@ -1446,7 +1534,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
 
 <main>
 
-  <!-- ===== COLD START (Versión 136) =====
+  <!-- ===== COLD START (Versión 137) =====
        Lo que ve alguien que llega por primera vez. Antes el sitio abría directo en Boca,
        con un <select> chico en un header azul: quien no sabía que el sitio era multi-club
        no tenía forma de enterarse. Acá la elección de club es LA tarea de la pantalla, y
@@ -1480,7 +1568,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     <h1 data-i18n="inicio.title">Datos del club</h1>
     <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
     <div class="grid" id="inicioStats"></div>
-    <!-- PUNTO DE ENTRADA 2 de 3 (Versión 136): la tarjeta, abajo de los KPIs. Es el que de
+    <!-- PUNTO DE ENTRADA 2 de 3 (Versión 137): la tarjeta, abajo de los KPIs. Es el que de
          verdad se usa, porque aparece donde el visitante ya está mirando números y se le
          ocurre la pregunta. Desaparece cuando ya hay una comparación activa. -->
     <div class="cmp-cta" id="cmpCta" hidden>
@@ -1954,44 +2042,44 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '136i';</script>
-<script src="data/lang/langs.js?v=136i"></script>
-<script src="js/i18n.js?v=136i"></script>
-<script src="data/clubs.js?v=136i"></script>
+<script>window.ASSET_V = '137';</script>
+<script src="data/lang/langs.js?v=137"></script>
+<script src="js/i18n.js?v=137"></script>
+<script src="data/clubs.js?v=137"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=136i"></script>
-<!-- data/leagues.js (Versión 136): el CATÁLOGO de la taxonomía del selector jerárquico
+<script src="data/club-index.js?v=137"></script>
+<!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=136i"></script>
-<script src="data/club-leagues.js?v=136i"></script>
-<script src="data/category-map.js?v=136i"></script>
-<script src="data/site-labels.js?v=136i"></script>
-<script src="data/currency-map.js?v=136i"></script>
-<script src="data/sources-view.js?v=136i"></script>
-<!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 136). Era el único data file de club
+<script src="data/leagues.js?v=137"></script>
+<script src="data/club-leagues.js?v=137"></script>
+<script src="data/category-map.js?v=137"></script>
+<script src="data/site-labels.js?v=137"></script>
+<script src="data/currency-map.js?v=137"></script>
+<script src="data/sources-view.js?v=137"></script>
+<!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=136i"></script>
-<script src="js/finanzas-render.js?v=136i"></script>
-<!-- js/selector.js (Versión 136): el selector jerárquico de club. Reemplaza al
+<script src="js/finanzas-calc.js?v=137"></script>
+<script src="js/finanzas-render.js?v=137"></script>
+<!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=136i"></script>
-<!-- js/comparar-clubes.js (Versión 136): la comparación ENTRE CLUBES (no confundir con
+<script src="js/selector.js?v=137"></script>
+<!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
      clubes, y club contra el promedio de su liga. Ver su cabecera. -->
-<script src="js/comparar-clubes.js?v=136i"></script>
+<script src="js/comparar-clubes.js?v=137"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -2017,7 +2105,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   // River y Racing usan este motor más chico, que arma el mismo tipo de cálculo (EBITDA,
   // resultado operativo, etc.) pero a partir de listas de líneas (revenueLines/expenseLines)
   // en vez de campos fijos, porque cada club tiene una cantidad distinta de rubros reales.
-  // Versión 136: el sitio YA NO abre en un club por default. Si el visitante nunca
+  // Versión 137: el sitio YA NO abre en un club por default. Si el visitante nunca
   // eligió uno, `currentClub` es null y se muestra la portada (#coldHero): abrir
   // siempre en Boca era la razón principal por la que nadie se enteraba de que el
   // sitio es multi-club. Si ya eligió alguna vez, entra derecho a SU club, que es lo
@@ -2032,7 +2120,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   let currentClub = null;
 
   // ---------- CARGA BAJO DEMANDA (LAZY LOADING) DE DATOS POR CLUB ----------
-  // Versión 136: ya no hay club default ni data file eager. Todo club se inyecta como <script> recién cuando el visitante lo elige en
+  // Versión 137: ya no hay club default ni data file eager. Todo club se inyecta como <script> recién cuando el visitante lo elige en
   // el selector jerárquico, así alguien que solo mira Boca no paga el peso de los demás. `clubDataLoaded`
   // cachea qué ya se bajó, para no volver a pedir el archivo si el visitante va y vuelve entre
   // clubes en la misma visita.
@@ -2046,7 +2134,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   // archivo distinto, agregar una entrada a `CLUB_DATA_SCRIPT_OVERRIDE` (abajo) en vez de volver al
   // mapa completo — no reintroducir la convención vieja "por las dudas".
   const CLUB_DATA_SCRIPT_OVERRIDE = {};
-  // Versión 136: arranca VACÍO. Hasta acá tenía `{ boca: true }` porque boca-data.js
+  // Versión 137: arranca VACÍO. Hasta acá tenía `{ boca: true }` porque boca-data.js
   // entraba por <script src> en el <body>; ya no entra ninguno eager (ver el comentario
   // en los <script src> de arriba).
   const clubDataLoaded = {};
@@ -2124,7 +2212,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     renderInicioCharts();
   }
 
-  // ---------- SELECTOR JERÁRQUICO DE CLUB (Versión 136) ----------
+  // ---------- SELECTOR JERÁRQUICO DE CLUB (Versión 137) ----------
   // Acá vivían `populateClubSelect()` (que generaba una <option> por club, alfabético
   // A→Z) y el listener de `change` de ese <select>. Los reemplaza `js/selector.js`: el
   // panel Deporte › Región › País › Liga › Equipo con búsqueda encima. La regla de la
@@ -2154,7 +2242,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       verifyTieOuts(newClub);
       CLUB_COMPARE.onActiveChanged();
     }).catch(err => {
-      // NO un alert() (Versión 136). Un alert nativo CONGELA la página entera: timers,
+      // NO un alert() (Versión 137). Un alert nativo CONGELA la página entera: timers,
       // onload de scripts, todo. Si el club que falla es el guardado en localStorage, el
       // sitio queda congelado en cada visita y ni siquiera se puede elegir otro club.
       // Pasó de verdad al probar el cold start. Ahora el error se cuenta en la consola y

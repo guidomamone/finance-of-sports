@@ -15,6 +15,36 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (Versión 137, decisión de arquitectura que salió
+  de un pushback de Guido: "si el usuario quiere ver cuánto generaba una liga en 2025 y 2024, 2023,
+  2022, tiene que tener en cuenta que los clubes fueron cambiando"). `data/leagues.js` es el
+  CATÁLOGO de ligas (nombre, país, deporte, escalón) y no tiene una sola línea de membresía. La
+  membresía es (club, ejercicio) -> liga y vive solo en `data/club-leagues.js`. Todo agregado de
+  liga (promedio, mediana, ranking, "cuánto generaba la liga en 2022") pasa por
+  `clubsOfLeagueYear(liga, ejercicio)`: si una función nueva necesita "los clubes de la liga L" sin
+  año, está mal planteada. Para NAVEGAR sí existe `clubsOfLeague(L)` sin año, y su conteo significa
+  "clubes con al menos un ejercicio cargado acá", que NO es "los clubes de la liga" y el sitio no
+  puede afirmar lo segundo. Por lo mismo `LEAGUES[].totalClubs` está en null: ese número también
+  cambia por temporada. Un campo `clubs[id].league` con "la liga de hoy" está prohibido: sería una
+  segunda verdad sobre el mismo hecho. En el árbol del selector, un club aparece bajo cada liga en
+  la que tiene un ejercicio cargado.
+- "SIN DATO" NO ES CERO EN LA COMPARACIÓN ENTRE CLUBES (Versión 137). `js/comparar-clubes.js`
+  muestra "sin dato" y no "0.0 M USD" cuando la fuente no informa un indicador: deuda (los dos
+  campos en null, o los dos en CERO EXACTO, que es como lo escriben los presupuestos), masa
+  salarial que el documento no desglosa, o un club sin padrón de socios publicado. Un cero se lee
+  como un dato, y "Deuda neta: 0.0" se lee como "este club no debe nada". OJO, esto es un criterio
+  de ESA VISTA: el dato sigue diciendo 0 en el archivo del club y otras vistas lo publican como 0
+  (ver to-do 23(a) de `index.html`). El criterio general sigue abierto en la to-do 20(h).
+- NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
+  `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
+  `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde
+  que el club elegido se guarda en `localStorage` y se carga solo al abrir el sitio, un club que
+  falle con un alert deja la página congelada EN CADA VISITA, sin poder siquiera elegir otro. Los
+  errores se cuentan por `console.error` y se muestran en un aviso dentro de la página.
+- TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js` (Versión 137). El
+  chequeo `i18n-incompleto` recorre una lista fija de archivos; `js/selector.js` y
+  `js/comparar-clubes.js` no estaban, así que sus 95 claves nuevas eran invisibles y el chequeo
+  pasaba en verde mientras el visitante de habla inglesa leía castellano.
 - LA LIGA DE UN EJERCICIO ES LA DEL CIERRE (Versión 132, decidido por Guido). Cuando un ejercicio
   cruza dos torneos (los argentinos cierran el 30/6 y la temporada va de febrero a diciembre), en
   `data/club-leagues.js` se anota la división en la que estaba el club EL DÍA QUE CERRÓ EL BALANCE.
@@ -104,8 +134,12 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   `window.CLUB_GENERIC_DATA`, que da `undefined` sin explotar) — eso frenaba en seco TODO el resto
   del bloque INIT synchronous. Fix: `window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};` al
   principio mismo del `<script>` principal, antes de que corra nada más. (2) REGLA NUEVA a pedido de
-  Guido: el dropdown de clubes del header (`#clubSelect`) va SIEMPRE en orden alfabético
-  ASCENDENTE (A→Z) por nombre visible — se reordenaron las 11 `<option>`, con Boca marcado
+  Guido: el dropdown de clubes del header (`#clubSelect`) iba SIEMPRE en orden alfabético
+  ASCENDENTE (A→Z) por nombre visible. OBSOLETA DESDE LA VERSIÓN 137: ese dropdown ya no
+  existe, lo reemplazó el selector jerárquico (`js/selector.js`). El orden alfabético sigue
+  vigente pero DENTRO de cada liga o país, que es el nivel donde comparar dos nombres significa
+  algo; la lista completa de 41 clubes en una sola tira alfabética era justamente lo que dejó
+  de servir. Lo que sigue es el registro del bug original — se reordenaron las 11 `<option>`, con Boca marcado
   `selected` explícito (no es la primera opción alfabética — esa es Argentinos Juniors—, pero
   sigue siendo el club default de la app). `verifyTieOuts()` sigue dando 240/240 checks, 0 errores,
   en los 11 clubes. Detalle completo en `finance-of-sports-project.md`.

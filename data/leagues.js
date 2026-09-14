@@ -3,7 +3,7 @@
 // jerárquico: deportes, regiones, países y ligas. Nada más que eso.
 //
 // LO QUE ESTE ARCHIVO NO TIENE, A PROPÓSITO: qué club pertenece a qué liga.
-// Decisión de arquitectura de la Versión 136, después de que Guido levantara el
+// Decisión de arquitectura de la Versión 137, después de que Guido levantara el
 // problema de fondo: "si el usuario quiere ver cuánto generaba una liga en 2025
 // y 2024, 2023, 2022, tiene que tener en cuenta que los clubes fueron
 // cambiando. hay que pensar más arquitectura".

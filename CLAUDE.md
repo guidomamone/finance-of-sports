@@ -233,6 +233,15 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   entre navegaciones); si el error es sospechosamente el mismo que uno ya
   arreglado, volvé a chequear el estado real en vez de confiar en la lectura
   de consola.
+- **Un diálogo nativo abierto (`alert`/`confirm`) congela TAMBIÉN las herramientas
+  de debug** (sesión 2026-09-13, Versión 137, costó una hora). Si `javascript_tool`
+  empieza a dar timeout, si un `setTimeout` de 300 ms no resuelve, o si un
+  `loadClubData()` queda "pendiente para siempre" aunque su request haya devuelto
+  200, sospechá de un `alert()` abierto ANTES de buscar un bug de concurrencia: un
+  diálogo nativo bloquea el hilo entero, así que ni los timers ni el `onload` de un
+  `<script>` inyectado ni tu propia sonda desde la consola llegan a correr. Se
+  destraba navegando con `force:true`. Y la moraleja para el sitio quedó como regla
+  en `CONVENCIONES.md`: ningún camino de error usa `alert()`.
 - **`computer` screenshot da BLANCO si la página está scrolleada**: en este
   entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco
   cada vez que `window.scrollY > 0` en el momento de la captura, no importa

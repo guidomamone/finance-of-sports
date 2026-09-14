@@ -1,0 +1,97 @@
+# Argentinos Juniors — Resumen del Órgano de Fiscalización, Estados Comparativos al 30/06/2023
+
+Transcripción completa de `resumen-organo-fiscalizacion-2022.pdf` (documento escaneado sin capa de texto, OCR con Tesseract `-l spa --psm 6`). Fiel al original en la medida de lo que permite el OCR — los números se verifican aparte contra el documento antes de cargarlos al sitio, ver CLAUDE.md.
+
+--- pág. 1 ---
+
+ESTADOS DE SITUACIÓN PATRIMONIAL Valores aiustados por inflación
+30/06/2023 30/06/2022 30/06/2021 30/06/2020 30/06/2019
+1 2,155802735 3,5351 5,3098 7,5802
+Caja y bancos 16.001.685 18.021.526 4.228.301 31.554.127 229.549.104
+Créditos 1.067.758.034 73.866.985 1.258.505.890 381.914.450 1.093.871.651
+Bienes para comercialización 41.622.153 18.974.970 22.981.587 2.474.078 4.995.401
+Bienes intangibles 310.647.870 2.819.061.967 762.305.074 2.248.883.119 -
+Total Activo Corriente 1.436.029.742 2.929.925.448 2.048.020.853 2.664.825.774 1.328.416.156
+ACTIVO NO CORRIENTE - -
+Bienes de uso 13.914.252.695 13.626.262.710 12,598.483,291  11.083.982.754  10.416.599.006
+Bienes intangibles 3.251.234.582 2.700.567.082 3.090.229.958 2.167.614.201 2.081.025.021
+Total Activo No Corriente 17.165.487.277 16.326,829.791 15.688.713,249 13.251.596,955 12.497.624.027
+TOTAL DEL ACTIVO 18.601.517.019 19.256.755.240 17.736.734,102 15.916,422.730 13.826.040,183
+PASIVO CORRIENTE - -
+Deudas ordinarias 1.182.787.107 1.207.849.425 1.110.671.996 918.328.194 1.050.310.597
+Deudas financieras 399.300.911 754.108.213 820.595.943 754.148.967 328.979.897
+Deudas fiscales 93.054.849 143.204.703 95.987.647 101.316.673 68.780.661
+Remuneraciones y cargas sociales 196.840.070 226.824.759 253.917.129 455.024.640 190.401.777
+Otras deudas 1.577.938 3.401.723 5.578.233 8.378.511 -
+1.873.560.875 2.335.388.823 2.286.750.949 2.237,196.984 1.638,472.932
+Previsiones 61.470.351 50.759.391 697.839.979 78.076.967 64.082.070
+Total Pasivo Corriente 1.935.031.226 2.386.148.213 2.984.590.928 2.315.273.951 1.702.555.002
+PASIVO NO CORRIENTE - - - - -
+Deudas ordinarias - - - - -
+Deudas financieras 221.000.719 259.435.799 466.948.274 860.895.616 -
+Deudas fiscales 4.952.415 54.537.661 27.902.532 19.153.545 37.174.592
+Otras deudas - 3.401.723 16.734.696 25.135.527 -
+225.953.134 317.375.183 511.585.502 905.184.688 37.174.592
+Previsiones 225.217.659 611.488.468 78.553.650 156.845.486 136.868.827
+Total Pasivo No Corriente 451.170.793 928.863.651 590.139.152 1.062.030.174 174,043,419
+TOTAL DEL PASIVO 2.386.202.019 3.315.011.864 3.574.730.080 3.377,304.126 1.876.598,421
+PATRIMONIO NETO 16.215.315.000 15.941.743.375 14.162.004.022 12.539.118.604 11.949,441.762
+Total Pasivo y Patrimonio Neto 18.601.517.019 19.256.755.240 17.736.734,102 15.916.422.730 13.826.040.183
+Indices 30/06/2023 30/06/2022 30/06/2021 30/06/2020 30/06/2019
+[Liquidez (Activo Corriente/Pasivo Corriente) [77727272222] os
+[Solvencia (Patrimonio Neto/Pasivo) 2222222» ao aan] |
+Endeudamiento (Pasivo/Patrimonio Neto) | os om] os] oz] ox%|
+[Rentablidad (Resultado del EjeciioPatrimonio Neto) Jero] o]
+8,00
+7,00 Evolucion Indices
+6,00
+5,00
+4,00 AE
+3,00
+2,00
+1,00 AA ——— __ __—__—_———————— A
+z a  _ _—
+01/01/2019 01/01/2020 01/01/2021 01/01/2022 01/01/2023
+— liquidez (Activo Corriente/Pasivo Corriente) — Solvencia (Patrimonio Neto/Pasivo)
+Endeudamiento (Pasivo/Patrimonio Neto) — Rentabilidad (Resultado del Ejercicio/Patrimonio Neto)
+PUBLIC
+
+--- pág. 2 ---
+
+ESTADOS DE RESULTADOS COMPARATIVOS (cifras expresadas en pesos ajustadas por inflación)
+30/06/2019 30/06/2020 30/06/2021 30/06/2022 30/06/2023
+RECURSOS
+Fútbol profesional 7.830.897.189 4.041.895.553 6.122.948.296 4.243.591.862 5.012.663.465
+Actividades deportivas y culturales 157.318.687 123.454.821 47.961.417 116.306.674 127.306.793
+Socios 257.380.349 187.938.575 164.191.217 238.988.256 355.690.468
+Diversos 554.672.106 135.054.284 218.916.508 310.625.289 345.281.961
+TOTAL DE RECURSOS 8.800.268.331 4.488.343.234 6.554.017.437 4.909.512.081 5.840.942.687
+GASTOS
+Fútbol profesional -7.211.628.190  -2.872.900.8683  -4.622.650.909  -3.170.606.496 -4,238.912.984
+Actividades deportivas y culturales -375.072.300 -285.056.913 -235.440.757 -258.205.236 -302.651.144
+Administración -451.924.938 -339.876.881 -595.544.612 -639.529.076 -535.487.553
+Estadio y predios -267.688.744 -288.959.254 -447 730.392 -389.119.835 -655.706.025
+TOTAL DE GASTOS -8.306.314.172  -3.786.793.911 -5.901.366.670 -4.457,460.643 -5.732.757.706
+RESULTADOS ANTES DEL EFECTO FINANCIERO 493.954.159 701.549.323 652.650.767 452.051.437 108.184.981
+Resultados financieros y por tenencia, netos 410.166.534 -6.802.641 970.234.650 1.327.687.916 165.386.642
+SUPERÁVIT / (DÉFICIT) DEL EJERCICIO 904.120.693 694.746.681 1.622.885.417 1.779.739.353 273.571.623
+0 0 0 10) 0
+0 0 0 10) 0
+10) 0 0 0 0
+0 0 0 10) 0
+Evolución de los resultados del ejercicio
+1.623 1.780
+» 1.200 i H
+E 904
+S 1.000 . = : 695 :
+= 800 al
+600
+400 es
+200
+0
+-200 ” ]
+-400 Ge
+-600
+30/06/2019 30/06/2020 30/06/2021 30/06/2022 30/06/2023
+PUBLIC
+

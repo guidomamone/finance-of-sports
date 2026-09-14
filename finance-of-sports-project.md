@@ -5175,6 +5175,62 @@ Los em dashes merecen una línea aparte, porque el patrón es el mismo que el de
 
 ---
 
+## Versión 137: el selector jerárquico, y la arista que no puede existir
+
+El `<select>` de clubes del header tenía 41 opciones ordenadas alfabéticamente. Guido había armado aparte un prototipo navegable (`prototipo-selector.html`) y un prompt de implementación (`PROMPT-selector-jerarquico.md`) con la UX ya decidida después de varias rondas de feedback propias. Esta sesión fue llevar eso al sitio real, y el pedido de arranque fue explícito: "podemos ir lento y auditando que no se haya roto nada", con un backup pusheado antes de tocar nada.
+
+### La única decisión que no venía resuelta del prototipo
+
+El prompt pedía agregarle a cada club dos campos: `sport` y `league`. El segundo parecía trivial (los 41 clubes, su liga de hoy) y fue lo primero que se propuso. Guido lo frenó:
+
+> "ojo que es aun mas complicado. porque si el usuario quiere ver cuanto generaba una liga en 2025 y 2024, 2023, 2022, tiene que tener en cuenta que los clubes fueron cambiando. capaz en NBA no pasa mucho pero en futbol es normal. hay que pensar mas arquitectetura"
+
+Tenía razón, y el problema es más profundo que "el campo se desactualiza". Un `clubs[id].league` es una arista club → liga **sin año**, y todo lo interesante que el sitio quiere hacer con una liga necesita el año: quiénes integraban la Série A en 2022, cuánto generaba LaLiga en 2023, contra qué promedio se mide un ejercicio de 2019. Un campo sin año no solo no contesta ninguna de esas: además contradice a `data/club-leagues.js`, que desde la Versión 132 tiene el dato bien, verificado fila por fila, y con la regla de que `null` significa "nadie lo chequeó todavía". Con las dos cosas en el repo hay dos verdades sobre el mismo hecho, y la que se actualiza es siempre la que alguien se acuerda de tocar.
+
+La regla que salió, y que quedó escrita en la cabecera de `data/leagues.js` porque es la que más fácil se reinventa mal en una sesión futura:
+
+> **No existe ninguna arista club → liga sin año. Ni una.**
+
+`data/leagues.js` es entonces solo el catálogo (deportes, regiones, países, ligas con su escalón), sin una sola línea de membresía. La membresía se pregunta por seis helpers nuevos en `club-leagues.js`, y el que importa es `clubsOfLeagueYear(liga, ejercicio)`: si una función nueva necesita "los clubes de la liga L" sin año, está mal planteada.
+
+Queda una pregunta que el árbol del selector sí tiene que contestar: bajo qué liga listar a un club. La respuesta que no cuesta ningún dato nuevo es **bajo todas las ligas en las que tiene un ejercicio cargado**. Mirassol, que hoy solo tiene su 2024, aparece bajo Série B con el año a la vista; el día que se cargue su 2025 va a aparecer bajo las dos. No hay nada que actualizar por temporada, no hay un campo que pueda mentir, y el conteo de cada liga pasa a significar algo verificable: "clubes con al menos un ejercicio cargado acá", que no es lo mismo que "clubes de la liga" y el sitio no puede afirmar lo segundo. `totalClubs` quedó en `null` en las 8 ligas por la misma razón, y con un agravante que conviene tener anotado: la cantidad de equipos de una liga también cambia por temporada (Primera División de Argentina pasó de 20 a 30 en el período cargado), así que cuando se verifique, ese dato también va por año.
+
+`sport` sí se agregó al club. Un club no cambia de deporte: ahí no hay arista con año que valga.
+
+### El cold start, y por qué se llevó puesto el último club por default
+
+El sitio abría en Boca con un `<select>` chico en un header azul. Alguien que llegaba en frío no tenía forma de enterarse de que el sitio tiene 41 clubes: no había nada en pantalla que se leyera como "acá elegís". El prototipo ya resolvía eso con una portada, y se implementó igual, con una diferencia que decidió Guido: el hero no es solo de la primera visita, hay una vía de vuelta ("Ver la portada con todos los clubes", arriba del árbol), para que la pantalla de exploración no quede inalcanzable para siempre después del primer click.
+
+La consecuencia interesante es de código, no de diseño. `let currentClub = 'boca'` era, después de la Versión 135, uno de los dos últimos literales de `clubId` estructurales del proyecto (la auditoría de la Versión 123 los venía contando). Con el cold start, `currentClub` nace en `null` y el club sale de `localStorage`, así que se fue solo. Y con él se fue la carga eager de `data/boca-data.js`, que era el único archivo de club que entraba por `<script src>` justamente porque Boca era el default: son 78 KB que ya no baja nadie que no elija Boca. Boca terminó de ser un club como cualquier otro, que era lo que había empezado la Versión 135.
+
+### La comparación: la unidad comparable es el par
+
+Guido había levantado dos cosas sobre el comparador que parecían separadas: que le faltaba el año ("podría ser que alguien quiera comparar River de un año contra otro equipo, otro año") y que los clubes suben y bajan de categoría. Son la misma: si el sujeto del sitio deja de ser el club y pasa a ser **el club en un ejercicio**, las dos se caen solas. Cada barra lleva su año; "River 2020/21 contra River 2024/25" deja de necesitar una feature de "comparar contra sí mismo" y pasa a ser dos entradas de la lista; y la liga es un atributo del par, así que "Mirassol Série B 2024" y "Mirassol Série A 2025" conviven sin contradecirse. Por lo mismo, el promedio de una liga es (liga, ejercicio) y nunca liga sola.
+
+La unicidad es entonces del par, y hay cuatro caminos por los que se puede llegar a un duplicado: el `+` del panel, el atajo "+ Otro año", el `<select>` de cada chip, y el `<select>` de Año de Finanzas, porque el club activo también ocupa un ejercicio. Los cuatro pasan por un solo helper. En una versión anterior del prototipo faltaba justamente eso y se podía comparar un club contra sí mismo en el mismo año: lo encontró Guido probando.
+
+### El cuarto aviso, que no estaba en el plan
+
+El prompt pedía tres avisos: sesgo del benchmark, ejercicios de años distintos, y categorías distintas. Los tres están. El cuarto apareció probando: el ejercicio por default de Boca es su presupuesto 2026/27, así que la primera comparación que salió en pantalla ponía un pronóstico al lado de un balance auditado de River, prolija y sin decirlo. Este sitio lo usan periodistas y una comparación que se ve bien y es falsa termina citada en una nota, así que se sumó el aviso.
+
+Del mismo tipo, pero peor, es lo que apareció mirando la deuda: los presupuestos escriben `grossDebt: 0, cash: 0` en su meta, porque proyectan ingresos y egresos y no proyectan un balance. La comparación mostraba "Boca, deuda neta 0.0 M USD". Un club de primera división con deuda bruta y caja exactamente cero no existe, así que la vista de comparación trata ese par de ceros como ausencia y muestra "sin dato". **Es un parche en una vista**: el dato sigue diciendo 0 en el archivo del club y el KPI de Inicio publica "DEUDA NETA ACTUAL: 0.0 M USD" para Boca, que se lee como "Boca no debe nada". Quedó como to-do 23(a), que es la más importante de las que dejó esta sesión, y es la misma cuestión de fondo de la to-do 20(h): el sitio muestra igual "la fuente reporta cero" y "la fuente no lo dice".
+
+### Tres bugs que no se ven leyendo el código
+
+**`hidden` pierde contra un `display` explícito.** `.sel-recents{display:flex}` gana sobre el atributo `hidden`, así que la franja "Recientes" aparecía vacía en la primera visita y el árbol nunca se escondía detrás de los resultados de búsqueda. Tres reglas de CSS.
+
+**El botón del selector aplastó el nav a 0 px.** Mide ~210px contra los ~104 del `<select>` que reemplazó, y abajo de 900px de ancho eso dejaba al `nav` con `width: 0` (medido en el navegador, no deducido): las 4 pestañas del sitio desaparecían sin ningún aviso. Es la to-do 9, que llevaba ahí desde hacía versiones y este cambio volvió urgente. Se resolvió dejando que el header envuelva y mandando el nav a una segunda fila completa, en vez de esconderlo como hacía el prototipo: son las 4 secciones del sitio y no hay otra forma de llegar a ellas.
+
+**El `alert()` de error congelaba la página entera.** Este costó la peor hora de la sesión, y vale la pena dejarlo escrito porque el síntoma no se parece en nada a la causa. `selectClub()` heredaba del listener viejo un `alert('No se pudieron cargar los datos de ese club')` en el `catch`. Un alert nativo bloquea el hilo completo: timers, `onload` de los `<script>` inyectados, todo. Con el cold start, el club guardado en `localStorage` se carga solo al abrir el sitio, así que un club que falle deja la página congelada **en cada visita**, sin siquiera poder elegir otro. Y mientras la sesión intentaba diagnosticarlo, cada intento de leer el estado desde la consola también se colgaba, porque el alert estaba bloqueando eso también: el `loadClubData` que se veía "pendiente para siempre" no estaba roto, estaba congelado. Ahora es un `console.error` más un aviso adentro de la portada, que sigue siendo usable.
+
+### Verificación
+
+`auditAll()` da lo mismo que antes del cambio (41 clubes, 222 checks, 0 que no cierran, 0 warnings de fx) y `node tools/audit.js` sigue en 0 P0 y 0 P1. Además, cada cifra que muestra la comparación se chequeó contra el motor real: `computeYearGeneric()` + `toDisplayValue()` a USD, decimal por decimal, y las barras al 100% de composición de ingresos suman exactamente el mismo total de ingresos que la fila de arriba. La regla del proyecto de no reimplementar la cascada por afuera se respetó: el módulo de comparación no calcula nada, lee del motor.
+
+Un hallazgo de la verificación que valía por sí solo: `tools/audit.js` buscaba claves de traducción en tres archivos fijos, así que las 95 claves nuevas del selector y de la comparación eran invisibles para el chequeo. El chequeo pasaba en verde mientras el visitante de habla inglesa leía castellano. Ahora la lista incluye los dos archivos nuevos y la regla quedó escrita: todo archivo de `js/` que llame a `t()` va ahí.
+
+---
+
 # VOLUMEN 0 — ORIGEN DEL PROYECTO (antes de la Versión 10)
 
 Todo lo que sigue en este Volumen 0 estuvo, hasta hoy, en un archivo suelto

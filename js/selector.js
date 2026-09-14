@@ -1,5 +1,5 @@
 // ============================================================================
-// js/selector.js — el SELECTOR JERÁRQUICO DE CLUB (Versión 136).
+// js/selector.js — el SELECTOR JERÁRQUICO DE CLUB (Versión 137).
 //
 // Reemplaza al `<select id="clubSelect">` plano del header (y a
 // `populateClubSelect()`, borrada). Con 41 clubes el dropdown ya era incómodo, y

@@ -169,7 +169,7 @@ window.I18N.strings.en = {
   "th.window": "Window",
   "th.year": "Year",
 
-  // --- Selector jerárquico de club (Versión 136) ---
+  // --- Selector jerárquico de club (Versión 137) ---
   "header.club.btn": "Change club (Ctrl+K)",
   "header.club.btn.none": "Pick a club to see its numbers (Ctrl+K)",
   "header.club.change": "Change \u25BE",
@@ -234,7 +234,7 @@ window.I18N.strings.en = {
   "country.ES": "Spain",
   "country.JP": "Japan",
   "country.MX": "Mexico",
-  // --- Comparación entre clubes (Versión 136) ---
+  // --- Comparación entre clubes (Versión 137) ---
   "header.compare": "Compare",
   "header.compare.tip": "Compare with another club",
   "cmp.title": "Comparison",

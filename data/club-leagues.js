@@ -160,7 +160,7 @@ function clubLeagueCoverage(){
 }
 
 // ============================================================================
-// MEMBRESÍA. Versión 136: estas 6 funciones son el ÚNICO camino por el que el
+// MEMBRESÍA. Versión 137: estas 6 funciones son el ÚNICO camino por el que el
 // sitio puede contestar "quiénes integran una liga", y todas piden el año donde
 // el año importa. Están acá y no en `data/leagues.js` a propósito: ese archivo
 // es el catálogo (qué ligas existen) y este es el hecho verificado (quién jugó

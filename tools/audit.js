@@ -677,7 +677,7 @@ function checkHigiene(api) {
   // i18n: una clave usada y no definida degrada al castellano en silencio.
   const usadas = new Set();
   for (const m of html.matchAll(/data-i18n(?:-title)?="([^"]+)"/g)) usadas.add(m[1]);
-  // Versión 136: se suman js/selector.js y js/comparar-clubes.js. Sin esto el chequeo
+  // Versión 137: se suman js/selector.js y js/comparar-clubes.js. Sin esto el chequeo
   // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no
   // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
   // REGLA: todo archivo de `js/` que llame a `t()` va en esta lista.

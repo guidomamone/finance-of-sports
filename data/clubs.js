@@ -21,12 +21,12 @@
 // mano en el HTML, con este mismo texto tipeado por separado; ahora el dropdown se genera
 // en runtime a partir de este campo. `name` (el nombre legal completo) sigue usándose donde
 // ya se usaba (pestaña Fuentes, etc.).
-// `sport` (Versión 136): el deporte del club, para el primer nivel del selector jerárquico. Hoy los
+// `sport` (Versión 137): el deporte del club, para el primer nivel del selector jerárquico. Hoy los
 // 41 dicen `'futbol'` y es redundante, pero el campo existe desde ahora para que sumar un club de
 // otro deporte no obligue a migrar los 41. Va en el club y no derivado de su liga porque un club no
 // cambia de deporte: no hay ninguna arista con año que valga.
 //
-// NO HAY, NI VA A HABER, UN CAMPO `league` ACÁ (decisión de la Versión 136, después de que Guido
+// NO HAY, NI VA A HABER, UN CAMPO `league` ACÁ (decisión de la Versión 137, después de que Guido
 // levantara el problema: "si el usuario quiere ver cuánto generaba una liga en 2025 y 2024, 2023,
 // 2022, tiene que tener en cuenta que los clubes fueron cambiando"). La membresía de liga es
 // (club, ejercicio) → liga y vive SOLO en `data/club-leagues.js`. Un `clubs[id].league` con "la liga

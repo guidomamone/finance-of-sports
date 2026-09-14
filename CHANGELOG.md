@@ -816,3 +816,42 @@ documentados, listos para una sesión de onboarding futura.)*
 - `.gitignore`: se agregaron `Clubes/**/*.htm` y `Clubes/**/*.html` para que los filings de la SEC
   (2-4 MB de HTML cada uno) queden locales igual que los PDF. El patrón está limitado a `Clubes/**`
   a propósito, porque `index.html` y `fuentes.html` viven en la raíz y sí son parte del sitio.
+
+## Versión 137: el selector jerárquico de club, el cold start y la comparación entre clubes
+
+- `data/leagues.js` nuevo: el CATÁLOGO de la taxonomía del selector (6 deportes, 6 regiones, 6
+  países, 8 ligas con su escalón). NO tiene membresía a propósito. REGLA DE ARQUITECTURA: no existe
+  ninguna arista club → liga sin año; la membresía vive solo en `data/club-leagues.js`, que gana 6
+  helpers (`clubsOfLeagueYear` para todo agregado, `leaguesOfClub` para el árbol, y los de
+  navegación y cobertura). `clubs{}` gana `sport`, que sí es intrínseco del club.
+- `js/selector.js` nuevo: el selector jerárquico Deporte › Región › País › Liga › Equipo, con
+  búsqueda insensible a acentos, recientes en localStorage, punto de calidad del dato por club, dos
+  salidas visibles y Ctrl/Cmd+K. Reemplaza al `<select id="clubSelect">` y a `populateClubSelect()`,
+  las dos borradas. En el árbol, un club aparece bajo cada liga en la que tiene un ejercicio.
+- COLD START: el sitio ya no abre en Boca. Sin club elegido muestra una portada con buscador grande,
+  los 8 clubes con más ejercicios y un chip por liga, con el nav y las secciones escondidos. El club
+  elegido queda en localStorage y la visita siguiente entra por el mismo camino que un click en el
+  selector. Se vuelve con "Ver la portada" arriba del panel. `data/boca-data.js` deja de cargarse
+  eager (78 KB menos en la primera carga) y no queda ningún club por default en el código.
+- `js/comparar-clubes.js` nuevo: comparación entre clubes distintos (no confundir con "Comparar
+  Gestiones"). La unidad comparable es (club, ejercicio), así que cada barra lleva su año y el mismo
+  club en dos años son dos sujetos. Un solo modelo cubre 1 vs 1, N clubes y club contra el promedio o
+  la mediana de su liga; el modo se deduce de la lista. Unicidad del par, forzada en los 4 caminos.
+  Tope de 4 rivales + el club activo.
+- Vista de comparación: barras horizontales por indicador (escala por indicador), "Composición de
+  ingresos" al 100%, y la tabla detrás de un toggle. Fuerza USD y Formato simplificado, y lo dice en
+  pantalla. Muestra "sin dato" en vez de 0 cuando la fuente no informa deuda, masa salarial o socios.
+  4 avisos: sesgo del benchmark, ejercicios de años distintos, divisiones distintas, y presupuesto
+  contra balance (este cuarto salió de probar, no del plan).
+- Bugs reales corregidos: `hidden` perdía contra `display:flex/grid` (la franja de recientes aparecía
+  vacía); el botón del selector aplastaba el `nav` a 0px abajo de 900 y las 4 pestañas desaparecían
+  (to-do 9, ahora el nav tiene su propia fila); el `alert()` de error de carga congelaba la página
+  entera, timers y `onload` incluidos, así que un club guardado que fallara dejaba el sitio
+  congelado en cada visita (reemplazado por un aviso dentro de la portada); el toggle de moneda
+  mostraba "undefined" sin club; la grilla de indicadores desbordaba en un teléfono de 375px.
+- `data/lang/en.js`: 95 claves nuevas. `tools/audit.js` ahora busca claves `t()` también en
+  `js/selector.js` y `js/comparar-clubes.js`, que antes no miraba (el chequeo pasaba mientras el
+  visitante leía castellano).
+- Verificación: `auditAll()` 41 clubes, 222 checks, 0 que no cierran, 0 warnings de fx. `node
+  tools/audit.js` 0 P0, 0 P1. Cada cifra de la comparación verificada contra `computeYearGeneric()`
+  + `toDisplayValue()`.

@@ -1,5 +1,5 @@
 // ============================================================================
-// js/comparar-clubes.js — COMPARACIÓN ENTRE CLUBES (Versión 136).
+// js/comparar-clubes.js — COMPARACIÓN ENTRE CLUBES (Versión 137).
 //
 // OJO, NO CONFUNDIR con "Comparar Gestiones" (js/finanzas-render.js), que compara
 // dos PRESIDENCIAS del MISMO club. Esto compara clubes distintos entre sí.
