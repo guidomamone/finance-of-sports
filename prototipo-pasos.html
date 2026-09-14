@@ -663,9 +663,12 @@ consulta puntual, nunca lectura de corrido.
      (abierto, con las opciones) y pendiente (apenas visible, para que se vea
      cuántos pasos faltan sin competir por la atención).
      --------------------------------------------------------------------------- */
-  .paso{background:var(--card);border-radius:12px;margin-bottom:10px;overflow:hidden;
+  /* color explícito: el bloque de afuera es azul con texto blanco, y sin esto
+     cualquier texto del card que no traiga color propio nace blanco sobre blanco
+     (pasó de verdad con el mensaje del card final). */
+  .paso{background:var(--card);color:var(--text);border-radius:12px;margin-bottom:10px;overflow:hidden;
         border:1px solid transparent;}
-  .paso.pendiente{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);}
+  .paso.pendiente{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff;}
   .paso.ahora{border-color:var(--oro);box-shadow:0 8px 24px rgba(7,29,63,.25);}
   .paso-head{display:flex;align-items:center;gap:11px;padding:11px 14px;}
   .paso-n{width:22px;height:22px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11.5px;
@@ -692,6 +695,14 @@ consulta puntual, nunca lectura de corrido.
   .op:hover{border-color:var(--azul);background:#eef2f9;}
   .op.off{opacity:.45;cursor:not-allowed;}
   .op.off:hover{border-color:var(--border);background:#fff;}
+  /* La casilla. Cada paso es multi-selección (pedido de Guido: "el usuario tiene
+     que poder elegir dos o más opciones en cada paso"), y una casilla lo dice sin
+     tener que explicarlo: un botón que se pinta al tocarlo se lee como un radio. */
+  .op-check{width:17px;height:17px;border-radius:5px;border:1.5px solid var(--border);flex:0 0 auto;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;background:#fff;}
+  .op.on{border-color:var(--azul);background:#eef2f9;}
+  .op.on .op-check{background:var(--azul);border-color:var(--azul);}
+  .op.off .op-check{opacity:.5;}
   .op-icon{font-size:17px;flex:0 0 auto;}
   .op-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
             display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
@@ -699,9 +710,25 @@ consulta puntual, nunca lectura de corrido.
   .op-label{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .op-sub{font-size:11.5px;color:var(--muted);}
   .op-meta{font-size:11.5px;color:var(--muted);white-space:nowrap;}
-  .paso-skip{margin-top:10px;background:none;border:none;color:var(--azul);font-family:inherit;font-size:13px;
+  /* El pie de cada paso: confirmar, o decidir después. "Elegir más tarde" está en
+     los seis pasos, y por eso ninguno dice "opcional": todos lo son. */
+  .paso-pie{display:flex;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;}
+  .paso-ok{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:8px;
+           padding:9px 16px;font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
+  .paso-ok:hover{background:var(--azul-dark);}
+  .paso-ok.off{background:#eef2f9;color:var(--muted);border-color:var(--border);cursor:not-allowed;}
+  .paso-skip{background:none;border:none;color:var(--azul);font-family:inherit;font-size:13px;
              cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
   .paso-skip:hover{color:var(--azul-dark);}
+  .paso-ayuda{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
+
+  /* El card final. Cuando quedó un solo club NO felicita a nadie: la gracia del
+     sitio es comparar, así que ofrece contra quién. */
+  .paso.resultado .paso-n{background:var(--green);color:#fff;}
+  .res-msg{font-size:15.5px;font-weight:700;margin:0 0 4px;}
+  .res-sub{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 12px;max-width:620px;}
+  .op-grid.sugeridos{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-bottom:10px;}
+  .paso.saltado .paso-v{color:var(--muted);font-weight:500;font-style:italic;}
 
   #pasosResultados{background:var(--card);border-radius:12px;padding:12px;}
 

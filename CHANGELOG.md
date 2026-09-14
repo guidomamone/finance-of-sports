@@ -1116,3 +1116,30 @@ PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
 - Apoyado en dos libros de `Business Books/`: la segunda ley de Krug (`dont_make_me_think.md`) —
   muchos clicks obvios le ganan a uno que obliga a pensar — y la divulgación progresiva de
   Higgins (`better_onboarding.md`).
+
+## Versión 149: el prototipo 2 pasa a multi-selección, todo paso se puede ignorar, y comparar deja de ser opcional
+
+Cuatro reglas nuevas de Guido, todas dentro de `prototipo-pasos.html` (el sitio no se tocó):
+
+- **Todo paso se puede ignorar**, con un botón que dice **"Elegir más tarde"**. Es lo mismo que un
+  "ver todos" pero dicho como lo piensa el visitante: no es que quiera ver todo, es que todavía no
+  quiere decidir eso. Consecuencia directa: el paso del ejercicio dejó de estar marcado como
+  "opcional", porque ahora lo son los seis y marcar uno solo decía algo falso de los otros cinco.
+- **Cada paso es multi-selección**, con casilla en vez de botón: "Argentina y Brasil" es una
+  respuesta tan válida como "Argentina". Por eso cada paso necesita un "Continuar" explícito (que
+  además dice cuántos llevás elegidos): con casillas, el primer click ya no puede avanzar solo sin
+  romper la posibilidad de marcar una segunda.
+- **Si ignora todo, elegimos nosotros y se lo decimos**: "No elegiste nada, así que elegimos por
+  vos: Boca Juniors contra River Plate", y la comparación queda cargada abajo. Si un filtro
+  anterior deja afuera a alguno de los dos, la regla se generaliza sola a los dos clubes con más
+  ejercicios de lo que quedó.
+- **Un club solo no es el destino**: "la gracia de todo esto es comparar, no analizar un club en
+  solitario" (Guido). Cuando la selección termina con uno, el card final no felicita a nadie:
+  explica por qué un número solo no dice nada y ofrece 3 rivales de su propia liga a un click. El
+  mismo club en 2 ejercicios también cuenta como comparación, y ahí el card no insiste.
+- Los ejercicios elegidos se aplican sobre los chips de la bandeja (`.chip-year`), que es el
+  control que ya sabe qué años son válidos para cada sujeto. Se reintenta 4 veces porque ese
+  redibujo es asíncrono y pisaba el primer intento (el segundo chip se quedaba con el año
+  automático).
+- `Business Books/` agregado al `.gitignore`: este repo es público y deploya a Netlify, así que
+  commitear esos resúmenes los publicaría en internet.

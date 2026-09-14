@@ -12,3 +12,9 @@
 # y fuentes.html viven en la raíz y SÍ son parte del sitio.
 Clubes/**/*.htm
 Clubes/**/*.html
+
+# Los resúmenes de libros que Guido usa como base de conocimiento. Quedan LOCALES
+# a propósito: este repo es público y deploya a Netlify, así que commitearlos los
+# publicaría en internet. Son resúmenes de obras de terceros, y además no son
+# parte del sitio.
+Business Books/

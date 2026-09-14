@@ -56,10 +56,13 @@ perdieron sino que se descartaron:
     10 clubes) sin tocar nada, y deja volver un nivel sin perder el resto. Su costo es el que
     levantó Guido: ~67 opciones y 5 decisiones simultáneas en la primera pantalla.
 
-    **B. `prototipo-pasos.html`** (Versión 148) — un card por paso, apilados, una decisión por
-    vez, con el card resuelto encogido a una línea. Entra en un teléfono sin media queries y sin
-    el punto de calidad ni su leyenda (los sacó Guido). Su costo es el inverso: esconde la forma
-    de los datos hasta que llegás al nivel, y son más clicks para el que quiere mirar.
+    **B. `prototipo-pasos.html`** (Versiones 148-149) — un card por paso, apilados, una decisión
+    por vez, con el card resuelto encogido a una línea. Cada paso es multi-selección (casillas) y
+    cada paso se puede ignorar con "Elegir más tarde"; si se ignoran todos, el sitio elige y lo
+    dice (Boca contra River); si queda un solo club, el card final ofrece contra quién compararlo.
+    Entra en un teléfono sin media queries y sin el punto de calidad ni su leyenda (los sacó
+    Guido). Su costo es el inverso al de A: esconde la forma de los datos hasta que llegás al
+    nivel, y son más clicks para el que quiere mirar.
 
     Lo que sigue describe al prototipo A, que es el que tiene más iteraciones encima:
     (a) El selector desplegado EN la página en vez de atrás de un click, y que SE QUEDA ahí

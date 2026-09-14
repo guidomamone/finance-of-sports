@@ -16,22 +16,35 @@
 //
 // LA APUESTA: una decisión por vez. Es literalmente la segunda ley de Krug
 // (`Business Books/dont_make_me_think.md`): "no importa cuántos clicks haya que
-// hacer, mientras cada click sea una elección obvia y sin pensar; tres clicks sin
-// pensar valen menos que uno que te obliga a pensar". Y es divulgación progresiva
-// en el sentido de Higgins (`better_onboarding.md`): mostrar capacidad a medida
-// que el usuario demuestra que la necesita, no toda junta de entrada.
+// hacer, mientras cada click sea una elección obvia y sin pensar". Y es
+// divulgación progresiva en el sentido de Higgins (`better_onboarding.md`).
 //
-// LO QUE SE PIERDE, para tenerlo a la vista y no descubrirlo tarde: el panel de
-// columnas deja VER la forma de los datos (que hay 6 países, que Japón tiene 10
-// clubes) sin tocar nada, y permite volver un nivel sin perder el resto. Los
-// pasos esconden eso hasta que llegás. El atajo que lo compensa es el buscador de
-// arriba, que sigue llegando a cualquier club en un paso.
+// LAS 4 REGLAS QUE PIDIÓ GUIDO EN LA SEGUNDA VUELTA, y que cambian el modelo:
 //
-// TRES COSAS QUE EL PROTOTIPO 1 DEJÓ APROBADAS Y ACÁ SE MANTIENEN:
-//   - el selector VIVE EN LA PÁGINA, no atrás de un modal, y se queda cuando ya
-//     elegiste un club (se colapsa a una línea con el camino elegido);
-//   - las pestañas del header se ven desde la primera visita;
-//   - un ejercicio puntual se puede elegir sin entrar al club.
+//  1. TODO PASO SE PUEDE IGNORAR, con un botón que dice "Elegir más tarde". Es lo
+//     mismo que un "ver todos" pero dicho como lo piensa el visitante: no es que
+//     quiera ver todo, es que todavía no quiere decidir eso. Consecuencia directa:
+//     el paso del ejercicio dejó de estar marcado como "opcional", porque ahora
+//     TODOS lo son y marcar uno solo era decir algo falso de los otros cinco.
+//
+//  2. CADA PASO ES MULTI-SELECCIÓN (checkbox, no radio). "Argentina y Brasil" es
+//     una respuesta tan válida como "Argentina". Por eso cada paso necesita un
+//     "Continuar" explícito: con casillas, el primer click ya no puede avanzar
+//     solo sin romper la posibilidad de marcar una segunda.
+//
+//  3. SI EL VISITANTE IGNORA TODO, elegimos nosotros y se lo decimos en pantalla:
+//     Boca contra River. No es un default escondido, es una respuesta declarada —
+//     la pantalla dice qué eligió el sitio y por qué lo eligió.
+//
+//  4. UN CLUB SOLO NO ES EL DESTINO. "La gracia de todo esto es comparar, no
+//     analizar un club en solitario" (Guido). Así que cuando la selección termina
+//     con un solo club, el último card no felicita a nadie: ofrece contra quién
+//     compararlo, con rivales de su propia liga a un click.
+//
+// LO QUE SE PIERDE CONTRA EL SELECTOR DE COLUMNAS, para tenerlo a la vista: el
+// panel deja VER la forma de los datos (que hay 6 países, que Japón tiene 10
+// clubes) sin tocar nada. Los pasos esconden eso hasta que llegás. El atajo que lo
+// compensa es el buscador de arriba, que sigue llegando a cualquier club en uno.
 //
 // QUÉ NO TIENE, a pedido de Guido: el punto de color de calidad del dato y su
 // leyenda ("Balance oficial / Parcial / Placeholder / Sin datos"). La calidad
@@ -47,13 +60,20 @@ window.CLUB_SELECTOR = (function(){
 
   var LS_CLUB = 'fos_club';
 
-  // El estado es EL CAMINO, no una selección suelta por columna: elegir un país
-  // distinto invalida la liga, elegir otra región invalida el país. Guardarlo así
-  // hace imposible el bug que tenía el selector de columnas (una liga de la región
-  // anterior quedaba a la vista después de cambiar de región, to-do 29).
-  var paso = { sport:null, region:null, country:null, league:null };
+  // Los 6 pasos, cada uno con lo que el visitante marcó y si decidió no decidir.
+  // `sel` vacío + `saltado` en false = todavía no llegó; `sel` vacío + `saltado`
+  // en true = lo ignoró a propósito. La diferencia importa: la primera es una
+  // pregunta pendiente y la segunda es una respuesta.
+  var CLAVES = ['sport', 'region', 'country', 'league', 'club', 'year'];
+  var st = {};
+  function reset(){
+    CLAVES.forEach(function(k){ st[k] = { sel:[], resuelto:false, saltado:false }; });
+  }
+  reset();
+
   var abierto = true;          // el bloque entero, plegable cuando ya hay club
   var inited = false;
+  var autoElegido = false;     // true cuando el sitio eligió por el visitante
 
   var api = {
     getClub: function(){ return null; },
@@ -70,7 +90,9 @@ window.CLUB_SELECTOR = (function(){
   function idx(id){ return (window.CLUB_INDEX || {})[id] || {}; }
   function nameOf(id){ return (clubs[id] && clubs[id].displayName) || idx(id).n || id; }
   function countryOf(id){ return (clubs[id] && clubs[id].country) || idx(id).c; }
+  function regionOf(id){ return window.regionOfCountry(countryOf(id)); }
   function sportOf(id){ return (clubs[id] && clubs[id].sport) || 'futbol'; }
+  function ligasDe(id){ return window.leaguesOfClub(id).map(function(l){ return l.league; }); }
   function yearsOf(id){
     return (idx(id).yrs || []).filter(function(par){
       return par[1] !== 'placeholder' && par[1] !== 'pending_official';
@@ -81,21 +103,28 @@ window.CLUB_SELECTOR = (function(){
     var w = String(name || '').replace(/[^A-Za-zÀ-ÿ ]/g, '').split(/\s+/).filter(Boolean);
     return (w.slice(0, 2).map(function(x){ return x[0]; }).join('') || '··').toUpperCase();
   }
+  function tiene(k, id){ return st[k].sel.indexOf(id) >= 0; }
+  function alternar(k, id){
+    var i = st[k].sel.indexOf(id);
+    if(i >= 0) st[k].sel.splice(i, 1); else st[k].sel.push(id);
+  }
 
   // ---------------------------------------------------------------------------
   // QUÉ CLUBES QUEDAN. Un solo filtro, del que salen todos los conteos: si el
   // número que muestra un paso no sale de la MISMA función que arma la lista del
-  // paso siguiente, tarde o temprano dicen cosas distintas.
+  // paso siguiente, tarde o temprano dicen cosas distintas. Dentro de un paso los
+  // valores se suman (Argentina O Brasil); entre pasos se cruzan (Sudamérica Y
+  // primera división).
   // ---------------------------------------------------------------------------
   function clubsQueQuedan(hasta){
+    var corte = CLAVES.indexOf(hasta || 'club');
     var ids = Object.keys(window.CLUB_INDEX || {}).filter(function(id){ return !!clubs[id]; });
-    if(paso.sport) ids = ids.filter(function(id){ return sportOf(id) === paso.sport; });
-    if(hasta === 'sport') return ids;
-    if(paso.region) ids = ids.filter(function(id){ return window.regionOfCountry(countryOf(id)) === paso.region; });
-    if(hasta === 'region') return ids;
-    if(paso.country) ids = ids.filter(function(id){ return countryOf(id) === paso.country; });
-    if(hasta === 'country') return ids;
-    if(paso.league) ids = ids.filter(function(id){ return clubsOfLeague(paso.league).indexOf(id) >= 0; });
+    if(corte > 0 && st.sport.sel.length) ids = ids.filter(function(id){ return st.sport.sel.indexOf(sportOf(id)) >= 0; });
+    if(corte > 1 && st.region.sel.length) ids = ids.filter(function(id){ return st.region.sel.indexOf(regionOf(id)) >= 0; });
+    if(corte > 2 && st.country.sel.length) ids = ids.filter(function(id){ return st.country.sel.indexOf(countryOf(id)) >= 0; });
+    if(corte > 3 && st.league.sel.length) ids = ids.filter(function(id){
+      return ligasDe(id).some(function(l){ return st.league.sel.indexOf(l) >= 0; });
+    });
     return ids;
   }
 
@@ -104,131 +133,151 @@ window.CLUB_SELECTOR = (function(){
       return nameOf(a).localeCompare(nameOf(b), 'es', { sensitivity:'base' });
     });
   }
+  function porEjercicios(ids){
+    return ids.slice().sort(function(a, b){
+      return (yearsOf(b).length - yearsOf(a).length) || nameOf(a).localeCompare(nameOf(b), 'es');
+    });
+  }
 
   // ---------------------------------------------------------------------------
-  // LOS 5 PASOS. Cada uno se describe con los mismos 4 datos, y el render es uno
-  // solo para los cinco: agregar un nivel (deporte > confederación > liga, por
-  // ejemplo) es una entrada más en esta lista, no una función nueva.
-  //   titulo   — el encabezado del card
-  //   valor()  — qué se eligió, o null si todavía no
-  //   opciones() — [{ id, label, sub, meta, icon, disabled }]
-  //   elegir(id) — null significa "saltear este nivel"
+  // LOS 6 PASOS. Cada uno se describe con los mismos datos, y el render es uno
+  // solo para todos: agregar un nivel es una entrada más en esta lista, no una
+  // función nueva.
   // ---------------------------------------------------------------------------
   var PASOS = [
     {
-      clave: 'sport',
-      titulo: 'Elegí el deporte',
-      valor: function(){
-        if(!paso.sport) return null;
-        var sp = window.SPORTS.filter(function(s){ return s.id === paso.sport; })[0];
-        return sp ? sp.icon + ' ' + sp.name : paso.sport;
+      clave: 'sport', titulo: 'Elegí el deporte',
+      etiqueta: function(id){
+        var sp = window.SPORTS.filter(function(s){ return s.id === id; })[0];
+        return sp ? sp.icon + ' ' + sp.name : id;
       },
       opciones: function(){
         return window.SPORTS.map(function(sp){
           var n = sp.active ? Object.keys(window.CLUB_INDEX).filter(function(id){
             return clubs[id] && sportOf(id) === sp.id;
           }).length : 0;
-          return {
-            id: sp.id, icon: sp.icon, label: sp.name,
-            meta: n ? nClubes(n) : 'próximamente',
-            disabled: !sp.active
-          };
+          return { id:sp.id, icon:sp.icon, label:sp.name, meta: n ? nClubes(n) : 'próximamente', disabled: !sp.active };
         });
-      },
-      elegir: function(id){ paso.sport = id; paso.region = null; paso.country = null; paso.league = null; }
-    },
-    {
-      clave: 'region',
-      titulo: 'Elegí la región',
-      valor: function(){
-        if(!paso.region) return null;
-        var r = window.REGIONS.filter(function(x){ return x.id === paso.region; })[0];
-        return r ? r.name : paso.region;
-      },
-      saltear: 'Ver todas las regiones',
-      opciones: function(){
-        return window.REGIONS.map(function(r){
-          var n = clubsQueQuedan('sport').filter(function(id){
-            return window.regionOfCountry(countryOf(id)) === r.id;
-          }).length;
-          return { id:r.id, label:r.name, meta: n ? nClubes(n) : 'próximamente', disabled: !n };
-        });
-      },
-      elegir: function(id){ paso.region = id; paso.country = null; paso.league = null; }
-    },
-    {
-      clave: 'country',
-      titulo: 'Elegí el país',
-      valor: function(){
-        if(!paso.country) return null;
-        var co = window.COUNTRIES[paso.country];
-        return co ? co.flag + ' ' + co.name : paso.country;
-      },
-      saltear: 'Ver todos los países',
-      opciones: function(){
-        var base = clubsQueQuedan('region');
-        var vistos = {};
-        base.forEach(function(id){ vistos[countryOf(id)] = (vistos[countryOf(id)] || 0) + 1; });
-        return Object.keys(vistos).sort(function(a, b){
-          return window.COUNTRIES[a].name.localeCompare(window.COUNTRIES[b].name, 'es');
-        }).map(function(cid){
-          return { id:cid, icon:window.COUNTRIES[cid].flag, label:window.COUNTRIES[cid].name, meta: nClubes(vistos[cid]) };
-        });
-      },
-      elegir: function(id){
-        paso.country = id;
-        paso.region = window.regionOfCountry(id);
-        paso.league = null;
       }
     },
     {
-      clave: 'league',
-      titulo: 'Elegí la liga',
-      valor: function(){ return paso.league ? window.LEAGUES[paso.league].name : null; },
-      saltear: 'Ver todas las ligas',
+      clave: 'region', titulo: 'Elegí la región',
+      etiqueta: function(id){
+        var r = window.REGIONS.filter(function(x){ return x.id === id; })[0];
+        return r ? r.name : id;
+      },
       opciones: function(){
-        var base = clubsQueQuedan('country');
-        var vistas = {};
-        base.forEach(function(id){
-          window.leaguesOfClub(id).forEach(function(l){ vistas[l.league] = 1; });
+        var base = clubsQueQuedan('region');
+        return window.REGIONS.map(function(r){
+          var n = base.filter(function(id){ return regionOf(id) === r.id; }).length;
+          return { id:r.id, label:r.name, meta: n ? nClubes(n) : 'próximamente', disabled: !n };
         });
+      }
+    },
+    {
+      clave: 'country', titulo: 'Elegí el país',
+      etiqueta: function(id){
+        var co = window.COUNTRIES[id];
+        return co ? co.flag + ' ' + co.name : id;
+      },
+      opciones: function(){
+        var base = clubsQueQuedan('country'), cuenta = {};
+        base.forEach(function(id){ cuenta[countryOf(id)] = (cuenta[countryOf(id)] || 0) + 1; });
+        return Object.keys(cuenta).sort(function(a, b){
+          return window.COUNTRIES[a].name.localeCompare(window.COUNTRIES[b].name, 'es');
+        }).map(function(cid){
+          return { id:cid, icon:window.COUNTRIES[cid].flag, label:window.COUNTRIES[cid].name, meta:nClubes(cuenta[cid]) };
+        });
+      }
+    },
+    {
+      clave: 'league', titulo: 'Elegí la liga',
+      etiqueta: function(id){ return window.LEAGUES[id] ? window.LEAGUES[id].name : id; },
+      opciones: function(){
+        var base = clubsQueQuedan('league'), vistas = {};
+        base.forEach(function(id){ ligasDe(id).forEach(function(l){ vistas[l] = 1; }); });
         return Object.keys(vistas).sort(function(a, b){
           return window.LEAGUES[a].name.localeCompare(window.LEAGUES[b].name, 'es');
         }).map(function(lid){
-          var n = base.filter(function(id){ return clubsOfLeague(lid).indexOf(id) >= 0; }).length;
-          return { id:lid, label:window.LEAGUES[lid].name, sub:window.tierLabel(window.LEAGUES[lid].tier), meta: nClubes(n) };
+          var n = base.filter(function(id){ return ligasDe(id).indexOf(lid) >= 0; }).length;
+          return { id:lid, label:window.LEAGUES[lid].name, sub:window.tierLabel(window.LEAGUES[lid].tier), meta:nClubes(n) };
         });
-      },
-      elegir: function(id){
-        paso.league = id;
-        paso.country = window.LEAGUES[id].country;
-        paso.region = window.regionOfCountry(paso.country);
       }
     },
     {
-      clave: 'club',
-      titulo: 'Elegí el club',
-      valor: function(){ return api.getClub() ? nameOf(api.getClub()) : null; },
+      clave: 'club', titulo: 'Elegí el club',
+      ayuda: 'Podés marcar más de uno: dos clubes marcados es una comparación.',
+      etiqueta: function(id){ return nameOf(id); },
       opciones: function(){
-        return ordenados(clubsQueQuedan()).map(function(id){
+        return ordenados(clubsQueQuedan('club')).map(function(id){
           var n = yearsOf(id).length;
+          return { id:id, crest:initials(nameOf(id)), label:nameOf(id), meta: n === 1 ? '1 ejercicio' : n + ' ejercicios' };
+        });
+      }
+    },
+    {
+      clave: 'year', titulo: 'Elegí el ejercicio',
+      etiqueta: function(y){ return labelAnio(Number(y)); },
+      opciones: function(){
+        var finales = clubesFinales();
+        var anios = {};
+        finales.forEach(function(id){ yearsOf(id).forEach(function(par){ anios[par[0]] = 1; }); });
+        return Object.keys(anios).map(Number).sort(function(a, b){ return b - a; }).map(function(y){
+          var cuantos = finales.filter(function(id){
+            return yearsOf(id).some(function(par){ return par[0] === y; });
+          }).length;
           return {
-            id: id, crest: initials(nameOf(id)), label: nameOf(id),
-            meta: n === 1 ? '1 ejercicio' : n + ' ejercicios'
+            id: String(y), label: labelAnio(y),
+            // Con varios clubes en juego, un año no siempre existe para todos, y eso
+            // se dice ANTES de elegirlo en vez de sorprender con una barra vacía.
+            meta: finales.length > 1 ? cuantos + ' de ' + finales.length : null
           };
         });
-      },
-      elegir: function(id){ elegirClub(id); }
+      }
     }
   ];
 
-  // El paso en el que estás: el primero sin resolver. No hay un índice aparte que
-  // pueda quedar desfasado del estado.
+  // El label del ejercicio sale de `ejercicioLabel()`, el del sitio, porque un club
+  // de año calendario (Japón, Brasil) no dice "2024/2025" sino "2025", y escribir el
+  // rango sería una fecha falsa. Con clubes de los dos tipos mezclados no se puede
+  // elegir uno solo, así que ahí va el año pelado.
+  function labelAnio(y){
+    var finales = clubesFinales();
+    var conEse = finales.filter(function(id){
+      return yearsOf(id).some(function(par){ return par[0] === y; });
+    });
+    if(!conEse.length || !window.ejercicioLabel) return String(y);
+    var calendario = conEse.map(function(id){ return clubs[id].fiscalYearStart === '01-01'; });
+    if(calendario.some(Boolean) && calendario.some(function(x){ return !x; })) return String(y);
+    var par = yearsOf(conEse[0]).filter(function(p){ return p[0] === y; })[0];
+    return window.ejercicioLabel(y, par[1], conEse[0]);
+  }
+
+  function paso(k){ return PASOS.filter(function(p){ return p.clave === k; })[0]; }
+  function resuelto(k){ return st[k].resuelto; }
   function pasoActual(){
-    for(var i = 0; i < PASOS.length; i++){
-      if(PASOS[i].valor() === null) return i;
-    }
+    for(var i = 0; i < PASOS.length; i++){ if(!resuelto(PASOS[i].clave)) return i; }
     return PASOS.length;
+  }
+  function todoResuelto(){ return pasoActual() === PASOS.length; }
+  function nadaElegido(){
+    return CLAVES.every(function(k){ return !st[k].sel.length; });
+  }
+
+  // LOS CLUBES QUE SE VAN A MOSTRAR. Si el visitante eligió, son los suyos. Si no
+  // eligió ninguno, elegimos nosotros — y `autoElegido` existe para poder DECIRLO
+  // en pantalla, que es la mitad de la regla que pidió Guido.
+  //
+  // El default es Boca contra River (el clásico que pidió). Si el filtro que venía
+  // arrastrando deja afuera a alguno de los dos, la regla se generaliza sola: los
+  // dos clubes con más ejercicios cargados de lo que quedó, que son los que más
+  // tienen para comparar.
+  function clubesFinales(){
+    if(st.club.sel.length) return st.club.sel.slice();
+    var quedan = clubsQueQuedan('club');
+    var clasico = ['boca', 'river'].filter(function(id){ return quedan.indexOf(id) >= 0; });
+    if(clasico.length === 2) return clasico;
+    return porEjercicios(quedan).slice(0, 2);
   }
 
   // ---------------------------------------------------------------------------
@@ -241,11 +290,12 @@ window.CLUB_SELECTOR = (function(){
     return e;
   }
 
-  function opcionBtn(op, onClick){
-    var b = el('button', 'op' + (op.disabled ? ' off' : ''));
+  function opcionBtn(op, marcado, onClick){
+    var b = el('button', 'op' + (op.disabled ? ' off' : '') + (marcado ? ' on' : ''));
     b.type = 'button';
-    if(op.icon){ b.appendChild(el('span', 'op-icon', op.icon)); }
-    else if(op.crest){ b.appendChild(el('span', 'op-crest', op.crest)); }
+    b.appendChild(el('span', 'op-check', marcado ? '✓' : ''));
+    if(op.icon) b.appendChild(el('span', 'op-icon', op.icon));
+    else if(op.crest) b.appendChild(el('span', 'op-crest', op.crest));
     var txt = el('span', 'op-txt');
     txt.appendChild(el('span', 'op-label', op.label));
     if(op.sub) txt.appendChild(el('span', 'op-sub', op.sub));
@@ -256,36 +306,42 @@ window.CLUB_SELECTOR = (function(){
     return b;
   }
 
+  // El resumen de un paso ya resuelto. Tres estados posibles, y los tres se leen
+  // distinto a propósito: lo que elegiste, lo que decidiste no decidir, y lo que
+  // elegimos nosotros.
+  function resumenDe(p){
+    var s = st[p.clave];
+    if(s.saltado) return 'Elegir más tarde';
+    if(!s.sel.length) return '—';
+    var nombres = s.sel.map(p.etiqueta);
+    if(nombres.length <= 3) return nombres.join(' + ');
+    return nombres.slice(0, 2).join(' + ') + ' + ' + (nombres.length - 2) + ' más';
+  }
+
   function render(){
     var wrap = $('pasosWrap');
     if(!wrap) return;
     wrap.innerHTML = '';
     var actual = pasoActual();
-    var club = api.getClub();
+    var hayClub = !!api.getClub();
 
-    // Bloque plegado: con un club ya elegido el selector no se va de la página,
-    // se encoge a una línea con el camino. Es lo que el prototipo 1 dejó probado.
-    $('pasosBlock').classList.toggle('con-club', !!club);
-    $('pasosBlock').classList.toggle('plegado', !!club && !abierto);
-    $('pasosResumen').textContent = camino().join('  ›  ');
+    $('pasosBlock').classList.toggle('con-club', hayClub);
+    $('pasosBlock').classList.toggle('plegado', hayClub && !abierto);
+    $('pasosResumen').textContent = camino();
     $('pasosToggle').textContent = abierto ? 'Minimizar' : 'Cambiar de club';
-    if(!!club && !abierto) return;
+    if(hayClub && !abierto) return;
 
     PASOS.forEach(function(p, i){
-      var valor = p.valor();
-      var estado = valor !== null ? 'hecho' : (i === actual ? 'ahora' : 'pendiente');
-      // <div> y NO <section>: el CSS del sitio esconde toda <section> que no tenga
-    // .active (son las pestañas), así que un card <section> nace invisible. Costó
-    // un rato de debug.
-    var card = el('div', 'paso ' + estado);
+      var estado = resuelto(p.clave) ? 'hecho' : (i === actual ? 'ahora' : 'pendiente');
+      var card = el('div', 'paso ' + estado + (st[p.clave].saltado ? ' saltado' : ''));
 
       var head = el('div', 'paso-head');
       head.appendChild(el('span', 'paso-n', String(i + 1)));
       var ht = el('span', 'paso-ht');
       ht.appendChild(el('span', 'paso-t', p.titulo));
-      if(valor !== null) ht.appendChild(el('span', 'paso-v', valor));
+      if(estado === 'hecho') ht.appendChild(el('span', 'paso-v', resumenDe(p)));
       head.appendChild(ht);
-      if(valor !== null){
+      if(estado === 'hecho'){
         var cambiar = el('button', 'paso-change', 'Cambiar');
         cambiar.type = 'button';
         cambiar.addEventListener('click', function(){ volverA(i); });
@@ -295,103 +351,269 @@ window.CLUB_SELECTOR = (function(){
 
       if(estado === 'ahora'){
         var body = el('div', 'paso-body');
+        if(p.ayuda) body.appendChild(el('p', 'paso-ayuda', p.ayuda));
         var ops = p.opciones();
         if(!ops.length){
           body.appendChild(el('p', 'paso-vacio', 'No hay nada cargado acá todavía.'));
         } else {
           var grid = el('div', 'op-grid' + (p.clave === 'club' ? ' clubes' : ''));
-          ops.forEach(function(op){ grid.appendChild(opcionBtn(op, function(id){ p.elegir(id); render(); })); });
+          ops.forEach(function(op){
+            grid.appendChild(opcionBtn(op, tiene(p.clave, op.id), function(id){
+              alternar(p.clave, id);
+              render();
+            }));
+          });
           body.appendChild(grid);
         }
-        // Saltear un nivel es parte del diseño, no una salida de emergencia: quien
-        // quiere "todos los clubes de Europa" no debería tener que elegir un país.
-        if(p.saltear){
-          var skip = el('button', 'paso-skip', p.saltear + ' (' + nClubes(clubsQueQuedan(p.clave === 'region' ? 'sport' : p.clave === 'country' ? 'region' : 'country').length) + ')');
-          skip.type = 'button';
-          skip.addEventListener('click', function(){ p.elegir(null); render(); });
-          body.appendChild(skip);
-        }
+        body.appendChild(pieDelPaso(p));
         card.appendChild(body);
       }
       wrap.appendChild(card);
     });
 
-    if(club) wrap.appendChild(cardEjercicio(club));
+    if(todoResuelto()) wrap.appendChild(cardResultado());
   }
 
-  // El 6to card aparece SOLO con un club elegido, y es opcional: sin tocarlo ya
-  // estás viendo el club entero. Que el ejercicio sea un paso más y no un dropdown
-  // escondido es el mismo criterio que el resto de la pantalla.
-  function cardEjercicio(clubId){
-    var card = el('div', 'paso ahora ejercicio');
+  // El pie de cada paso: confirmar lo marcado, o decir que esto se decide después.
+  // "Elegir más tarde" está SIEMPRE, en los seis pasos: esa es la regla.
+  function pieDelPaso(p){
+    var pie = el('div', 'paso-pie');
+    var n = st[p.clave].sel.length;
+    var seguir = el('button', 'paso-ok' + (n ? '' : ' off'), n ? 'Continuar con ' + n + (n === 1 ? ' elegido' : ' elegidos') : 'Continuar');
+    seguir.type = 'button';
+    seguir.disabled = !n;
+    seguir.addEventListener('click', function(){
+      st[p.clave].resuelto = true;
+      st[p.clave].saltado = false;
+      avanzar();
+    });
+    pie.appendChild(seguir);
+
+    var luego = el('button', 'paso-skip', 'Elegir más tarde');
+    luego.type = 'button';
+    luego.title = 'Seguimos sin filtrar por esto. Podés volver cuando quieras.';
+    luego.addEventListener('click', function(){
+      st[p.clave].sel = [];
+      st[p.clave].resuelto = true;
+      st[p.clave].saltado = true;
+      avanzar();
+    });
+    pie.appendChild(luego);
+    return pie;
+  }
+
+  // Resolver un paso puede dejar sin sentido lo marcado más abajo (elegir Europa
+  // después de haber marcado Boca), así que los de abajo se limpian. Es la misma
+  // cascada del "Cambiar", y es lo que hace imposible el bug de la to-do 29.
+  function avanzar(){
+    if(todoResuelto()) return aplicar();
+    render();
+  }
+
+  function cardResultado(){
+    var finales = clubesFinales();
+    var card = el('div', 'paso ahora resultado');
     var head = el('div', 'paso-head');
-    head.appendChild(el('span', 'paso-n', '6'));
+    head.appendChild(el('span', 'paso-n', '✓'));
     var ht = el('span', 'paso-ht');
-    ht.appendChild(el('span', 'paso-t', 'Elegí el ejercicio'));
-    ht.appendChild(el('span', 'paso-v', 'opcional'));
+    ht.appendChild(el('span', 'paso-t', 'Listo'));
     head.appendChild(ht);
+    var reiniciar = el('button', 'paso-change', 'Empezar de nuevo');
+    reiniciar.type = 'button';
+    reiniciar.addEventListener('click', function(){ goHome(); });
+    head.appendChild(reiniciar);
     card.appendChild(head);
 
     var body = el('div', 'paso-body');
-    var grid = el('div', 'op-grid anios');
-    var todos = el('button', 'op', '');
-    todos.type = 'button';
-    todos.appendChild(el('span', 'op-label', 'Todos los ejercicios'));
-    todos.addEventListener('click', function(){ irAlClub(clubId); });
-    grid.appendChild(todos);
 
-    yearsOf(clubId).forEach(function(par){
-      var b = el('button', 'op');
-      b.type = 'button';
-      b.appendChild(el('span', 'op-label', window.ejercicioLabel ? window.ejercicioLabel(par[0], par[1], clubId) : String(par[0])));
-      b.addEventListener('click', function(){
-        if(window.goToFinanzasYear) window.goToFinanzasYear(clubId, par[0]);
+    if(autoElegido){
+      // La regla 3 de Guido: si no elegiste nada, elegimos nosotros Y TE LO DECIMOS.
+      body.appendChild(el('p', 'res-msg',
+        'No elegiste nada, así que elegimos por vos: ' + finales.map(nameOf).join(' contra ') + '.'));
+      body.appendChild(el('p', 'res-sub',
+        'Es el clásico más cargado del sitio. Cambiá cualquier paso de arriba para ver otra cosa.'));
+    } else if(finales.length === 1 && st.year.sel.length > 1){
+      // Un club contra sí mismo en dos ejercicios TAMBIÉN es una comparación, así
+      // que acá no corresponde el empujón de "sumá un rival": ya está comparando.
+      body.appendChild(el('p', 'res-msg',
+        'Comparando ' + nameOf(finales[0]) + ' en ' + st.year.sel.length + ' ejercicios: '
+        + st.year.sel.map(function(y){ return labelAnio(Number(y)); }).join(' contra ') + '.'));
+      var ver2 = el('button', 'paso-ok', 'Ver la comparación');
+      ver2.type = 'button';
+      ver2.addEventListener('click', function(){
+        var c = $('compareCard');
+        if(c && !c.hidden) c.scrollIntoView({ behavior:'smooth', block:'start' });
       });
-      grid.appendChild(b);
-    });
-    body.appendChild(grid);
+      body.appendChild(ver2);
+    } else if(finales.length === 1 && !(window.CLUB_COMPARE && window.CLUB_COMPARE.count())){
+      // La regla 4: un club solo no es el destino. En vez de felicitar al visitante
+      // por haber llegado, el card le muestra contra quién puede comparar.
+      body.appendChild(el('p', 'res-msg', 'Estás viendo ' + nameOf(finales[0]) + ', solo.'));
+      body.appendChild(el('p', 'res-sub', 'Un número solo no dice mucho: 60 millones de ingresos es enorme o es poco según contra quién. Sumá un rival y las dos columnas se miran juntas.'));
+      var grid = el('div', 'op-grid sugeridos');
+      sugeridos(finales[0]).forEach(function(id){
+        var co = window.COUNTRIES[countryOf(id)];
+        grid.appendChild(opcionBtn({
+          id:id, crest:initials(nameOf(id)), label:nameOf(id),
+          sub: (co ? co.flag + ' ' : '') + (ligasDe(id)[0] && window.LEAGUES[ligasDe(id)[0]] ? window.LEAGUES[ligasDe(id)[0]].name : '')
+        }, false, function(cid){ sumarRival(cid); }));
+      });
+      body.appendChild(grid);
+      var otro = el('button', 'paso-skip', 'Elegir otro rival de la lista');
+      otro.type = 'button';
+      otro.addEventListener('click', function(){ volverA(4); });
+      body.appendChild(otro);
+    } else {
+      body.appendChild(el('p', 'res-msg', 'Comparando ' + finales.map(nameOf).join(' · ') + '.'));
+      // (si finales quedó en 1 pero hay rivales sumados desde este mismo card, el
+      //  nombre del rival ya está en st.club.sel y entra en `finales`)
+      var ver = el('button', 'paso-ok', 'Ver la comparación');
+      ver.type = 'button';
+      ver.addEventListener('click', function(){
+        var card2 = $('compareCard');
+        if(card2 && !card2.hidden) card2.scrollIntoView({ behavior:'smooth', block:'start' });
+      });
+      body.appendChild(ver);
+    }
     card.appendChild(body);
     return card;
   }
 
+  // Contra quién ofrecer. Primero los de su misma liga (que es la comparación que
+  // se sostiene sola), después los que más ejercicios tienen cargados, que son los
+  // que más tienen para mostrar. Nunca una lista editorial de "clubes importantes".
+  function sugeridos(clubId){
+    var ligas = ligasDe(clubId);
+    var mismos = porEjercicios(Object.keys(window.CLUB_INDEX).filter(function(id){
+      return clubs[id] && id !== clubId && ligasDe(id).some(function(l){ return ligas.indexOf(l) >= 0; });
+    }));
+    var resto = porEjercicios(Object.keys(window.CLUB_INDEX).filter(function(id){
+      return clubs[id] && id !== clubId && mismos.indexOf(id) < 0;
+    }));
+    return mismos.concat(resto).slice(0, 3);
+  }
+
   function camino(){
-    var out = [];
+    if(autoElegido) return 'Elegimos por vos: ' + clubesFinales().map(nameOf).join(' contra ');
+    var partes = [];
     PASOS.forEach(function(p){
-      var v = p.valor();
-      if(v !== null) out.push(v);
+      if(st[p.clave].sel.length) partes.push(resumenDe(p));
     });
-    return out.length ? out : ['Todavía sin elegir'];
+    return partes.length ? partes.join('  ›  ') : 'Todavía sin elegir';
+  }
+
+  // ---------------------------------------------------------------------------
+  // APLICAR: de la selección a lo que el sitio muestra.
+  //
+  // El club 0 pasa a ser el club activo (el modelo de `js/comparar-clubes.js` lo
+  // tiene como sujeto 0 y no se puede comparar sin él) y los demás entran como
+  // rivales. Los ejercicios elegidos se aplican DESPUÉS de que estén los sujetos,
+  // porque hasta que un sujeto no existe no hay a qué ponerle el año.
+  // ---------------------------------------------------------------------------
+  function aplicar(){
+    var finales = clubesFinales();
+    autoElegido = !st.club.sel.length;
+    var rivales = finales.slice(1);
+
+    Promise.resolve(api.pickClub(finales[0])).then(function(){
+      try { localStorage.setItem(LS_CLUB, finales[0]); } catch(e){}
+      renderButton();
+      var cmp = window.CLUB_COMPARE;
+      var cadena = Promise.resolve();
+      if(cmp){
+        rivales.forEach(function(id){
+          cadena = cadena.then(function(){ return cmp.toggleClub(id); });
+        });
+      }
+      return cadena;
+    }).then(function(){
+      aplicarAnios(finales);
+      render();
+      irAlContenido();
+    });
+  }
+
+  // Los años elegidos. Tres casos, y ninguno inventa un dato que no exista:
+  //   - un club y un año        -> la ficha de Finanzas de ese ejercicio;
+  //   - un club y varios años   -> ese club contra sí mismo, un sujeto por año;
+  //   - varios clubes y un año  -> cada uno en ese año, y el que no lo tenga se
+  //                                queda en el suyo (se avisa en el paso).
+  function aplicarAnios(finales){
+    var anios = st.year.sel.map(Number).sort(function(a, b){ return b - a; });
+    if(!anios.length) return;
+    var cmp = window.CLUB_COMPARE;
+
+    if(finales.length === 1 && anios.length > 1 && cmp){
+      // "+ Otro año" del propio sitio: agrega un sujeto más del club activo. Los
+      // años exactos se fijan abajo, sobre los chips ya dibujados.
+      for(var i = 1; i < anios.length; i++){
+        var btn = $('ccYearBtn');
+        if(btn && !btn.hidden) btn.click();
+      }
+    }
+    if(window.goToFinanzasYear) window.goToFinanzasYear(finales[0], anios[0]);
+    // La bandeja de comparación se vuelve a dibujar sola después de cambiar el año
+    // del club activo, y ese redibujo es ASÍNCRONO (adentro carga el data file del
+    // club). Si los chips se tocan una sola vez, el redibujo los pisa: pasó de
+    // verdad, el segundo chip se quedaba con el año automático. Por eso se intenta
+    // varias veces; la función es idempotente (solo escribe si el año difiere y es
+    // una opción válida para ese sujeto).
+    [0, 250, 700, 1400].forEach(function(ms){
+      setTimeout(function(){ fijarAniosDeChips(finales, anios); }, ms);
+    });
+  }
+
+  // Los chips de la bandeja de comparación traen su propio <select> de ejercicio
+  // (`.chip-year`, js/comparar-clubes.js). En vez de duplicar acá la lógica de qué
+  // años son válidos para cada sujeto, se usa ESE control: si el año elegido no es
+  // una opción suya, no se toca y el sujeto se queda con el que tenía.
+  function fijarAniosDeChips(finales, anios){
+    var chips = document.querySelectorAll('#trayChips .chip');
+    for(var i = 0; i < chips.length; i++){
+      var nombre = chips[i].querySelector('.chip-name');
+      var sel = chips[i].querySelector('.chip-year');
+      if(!nombre || !sel) continue;
+      // Un sujeto por año cuando es el mismo club repetido; si no, el primero.
+      var objetivo = finales.length === 1 ? (anios[i] != null ? anios[i] : anios[0]) : anios[0];
+      var existe = Array.prototype.some.call(sel.options, function(o){ return Number(o.value) === objetivo && !o.disabled; });
+      if(!existe || Number(sel.value) === objetivo) continue;
+      sel.value = String(objetivo);
+      sel.dispatchEvent(new Event('change', { bubbles:true }));
+    }
   }
 
   // "Cambiar" en un paso ya resuelto borra ESE y todos los de abajo. Volver atrás
   // sin invalidar lo que dependía de esa elección es justo el bug que tiene hoy el
   // selector de columnas (to-do 29).
   function volverA(i){
-    var claves = ['sport', 'region', 'country', 'league'];
-    for(var k = i; k < claves.length; k++) paso[claves[k]] = null;
-    if(i <= 4){
-      try { localStorage.removeItem(LS_CLUB); } catch(e){}
-      Promise.resolve(api.pickClub(null)).then(function(){ abierto = true; render(); });
-      return;
+    for(var k = i; k < CLAVES.length; k++){
+      st[CLAVES[k]] = { sel:[], resuelto:false, saltado:false };
     }
-    render();
-  }
-
-  function elegirClub(id){
-    try { localStorage.setItem(LS_CLUB, id); } catch(e){}
-    Promise.resolve(api.pickClub(id)).then(function(){
+    autoElegido = false;
+    abierto = true;
+    if(window.CLUB_COMPARE) window.CLUB_COMPARE.clear();
+    Promise.resolve(api.pickClub(null)).then(function(){
+      try { localStorage.removeItem(LS_CLUB); } catch(e){}
       renderButton();
       render();
-      irAlContenido();
     });
   }
 
-  function irAlClub(clubId){
-    if(api.getClub() !== clubId) return elegirClub(clubId);
-    irAlContenido();
+  // Sumar un rival desde el card final, sin volver a recorrer nada.
+  function sumarRival(id){
+    if(!window.CLUB_COMPARE) return;
+    if(st.club.sel.indexOf(id) < 0) st.club.sel.push(id);
+    autoElegido = false;
+    Promise.resolve(window.CLUB_COMPARE.toggleClub(id)).then(function(){
+      render();
+      var card = $('compareCard');
+      if(card && !card.hidden) card.scrollIntoView({ behavior:'smooth', block:'start' });
+    });
   }
 
   function irAlContenido(){
+    var card = $('compareCard');
+    if(card && !card.hidden) return card.scrollIntoView({ behavior:'smooth', block:'start' });
     var secs = document.querySelectorAll('main > section');
     for(var i = 0; i < secs.length; i++){
       if(secs[i].classList.contains('active') && secs[i].style.display !== 'none'){
@@ -403,7 +625,7 @@ window.CLUB_SELECTOR = (function(){
 
   // ---------------------------------------------------------------------------
   // BUSCADOR. El atajo que compensa lo que los pasos esconden: quien ya sabe qué
-  // club quiere no tiene por qué recorrer 5 niveles. Busca por club, país y liga,
+  // club quiere no tiene por qué recorrer 6 niveles. Busca por club, país y liga,
   // ignorando acentos y mayúsculas.
   // ---------------------------------------------------------------------------
   function norm(s){
@@ -421,7 +643,7 @@ window.CLUB_SELECTOR = (function(){
     var hits = ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){
       if(!clubs[id]) return false;
       var co = window.COUNTRIES[countryOf(id)];
-      var ligas = window.leaguesOfClub(id).map(function(l){ return window.LEAGUES[l.league].name; }).join(' ');
+      var ligas = ligasDe(id).map(function(l){ return window.LEAGUES[l].name; }).join(' ');
       return norm(nameOf(id)).indexOf(q) >= 0
           || (co && norm(co.name).indexOf(q) >= 0)
           || norm(ligas).indexOf(q) >= 0;
@@ -436,27 +658,32 @@ window.CLUB_SELECTOR = (function(){
       var co = window.COUNTRIES[countryOf(id)];
       var n = yearsOf(id).length;
       grid.appendChild(opcionBtn({
-        id: id, crest: initials(nameOf(id)), label: nameOf(id),
+        id:id, crest:initials(nameOf(id)), label:nameOf(id),
         sub: (co ? co.flag + ' ' + co.name : ''),
         meta: n === 1 ? '1 ejercicio' : n + ' ejercicios'
-      }, function(cid){
-        // Elegir desde la búsqueda deja el camino coherente: los pasos se llenan
-        // solos con el club elegido, no quedan vacíos contradiciendo lo que ves.
+      }, false, function(cid){
+        // Elegir desde la búsqueda deja los pasos coherentes con lo que ves: se
+        // marcan solos con el camino de ese club, en vez de quedar vacíos.
         pararseEn(cid);
         $('pasosQ').value = '';
         renderBusqueda();
-        elegirClub(cid);
+        aplicar();
       }));
     });
     caja.appendChild(grid);
   }
 
   function pararseEn(clubId){
-    var lgs = window.leaguesOfClub(clubId);
-    paso.sport = sportOf(clubId);
-    paso.country = countryOf(clubId);
-    paso.region = window.regionOfCountry(paso.country);
-    paso.league = lgs.length ? lgs[0].league : null;
+    reset();
+    var ligas = ligasDe(clubId);
+    st.sport.sel = [sportOf(clubId)];
+    st.region.sel = [regionOf(clubId)];
+    st.country.sel = [countryOf(clubId)];
+    st.league.sel = ligas.length ? [ligas[0]] : [];
+    st.league.saltado = !ligas.length;
+    st.club.sel = [clubId];
+    st.year.saltado = true;
+    CLAVES.forEach(function(k){ st[k].resuelto = true; });
   }
 
   // ---------------------------------------------------------------------------
@@ -481,9 +708,12 @@ window.CLUB_SELECTOR = (function(){
   function close(){ /* no hay modal que cerrar: el selector vive en la página */ }
 
   function goHome(){
-    paso = { sport:null, region:null, country:null, league:null };
+    reset();
+    autoElegido = false;
+    abierto = true;
+    if(window.CLUB_COMPARE) window.CLUB_COMPARE.clear();
     try { localStorage.removeItem(LS_CLUB); } catch(e){}
-    Promise.resolve(api.pickClub(null)).then(function(){ abierto = true; renderButton(); render(); });
+    Promise.resolve(api.pickClub(null)).then(function(){ renderButton(); render(); });
   }
 
   function init(hooks){
