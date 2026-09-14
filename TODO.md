@@ -48,9 +48,20 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-28. DECIDIR SI LA PORTADA NUEVA VA AL SITIO. Está prototipada y andando en
-    `prototipo-inicio-selector.html` (abrilo al lado de `index.html`, son la misma pantalla en
-    frío). Dos cosas, las dos pedidas por Guido el 2026-09-14:
+28. DECIDIR QUÉ SELECTOR VA AL SITIO. Hay DOS prototipos andando con los datos reales, y la
+    decisión es entre ellos (o entre partes de cada uno), no un sí/no:
+
+    **A. `prototipo-inicio-selector.html`** — el selector de columnas de hoy, metido en la
+    portada. Muestra la forma de los datos de una sola mirada (que hay 6 países, que Japón tiene
+    10 clubes) sin tocar nada, y deja volver un nivel sin perder el resto. Su costo es el que
+    levantó Guido: ~67 opciones y 5 decisiones simultáneas en la primera pantalla.
+
+    **B. `prototipo-pasos.html`** (Versión 148) — un card por paso, apilados, una decisión por
+    vez, con el card resuelto encogido a una línea. Entra en un teléfono sin media queries y sin
+    el punto de calidad ni su leyenda (los sacó Guido). Su costo es el inverso: esconde la forma
+    de los datos hasta que llegás al nivel, y son más clicks para el que quiere mirar.
+
+    Lo que sigue describe al prototipo A, que es el que tiene más iteraciones encima:
     (a) El selector desplegado EN la página en vez de atrás de un click, y que SE QUEDA ahí
         después de elegir, encima de los datos del club: minimizarlo lo deja en una barra de
         53px. Las pestañas del header se ven desde la primera visita, apagadas hasta que haya

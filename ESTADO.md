@@ -276,6 +276,13 @@ se reescribe, no se acumula.
   "Volver a la primera visita" que borra lo que el sitio guarda en el navegador
   (club elegido, recientes, cartelito, estado minimizado) y recarga: sirve para
   probar el arranque en frío sin abrir las herramientas del navegador.
+- `tools/build-prototipo-pasos.js` + `prototipo-pasos.html` + `prototipo-pasos-selector.js`
+  (Versión 148): PROTOTIPO 2 del selector, un card por paso (Deporte › Región ›
+  País › Liga › Club) uno abajo del otro, en vez de las 5 columnas simultáneas.
+  Sin punto de calidad ni leyenda, a pedido de Guido. Convive con el prototipo 1,
+  a propósito: se comparan las dos visualizaciones antes de decidir (to-do 28).
+  El `.html` se genera; la lógica (`prototipo-pasos-selector.js`) está escrita a
+  mano y expone la misma API pública que `js/selector.js`.
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.

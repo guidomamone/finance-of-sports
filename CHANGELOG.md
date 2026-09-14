@@ -1088,3 +1088,31 @@ PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
   página a inglés según el navegador, y lo que se prueba acá es el selector.
 - Vive en la franja del prototipo y no en el sitio a propósito: no es una feature, es el banco de
   pruebas. El sitio no tiene backend, así que "primera visita" son exactamente esas claves.
+
+## Versión 148: un segundo prototipo de selector, de a un paso por vez
+
+- NUEVO `prototipo-pasos.html` + `prototipo-pasos-selector.js` + `tools/build-prototipo-pasos.js`.
+  El prototipo 1 (`prototipo-inicio-*`) queda intacto: son dos visualizaciones para comparar, no
+  una encima de la otra.
+- QUÉ CAMBIA (Guido: "siento que con el actual le estamos poniendo una cantidad de información
+  impresionante al usuario ni bien se loguea"). El panel de columnas muestra a la vez 6 deportes,
+  6 regiones, 6 países, 8 ligas y 41 clubes: ~67 opciones y 5 decisiones simultáneas. Acá se elige
+  de a una: un card por paso (Deporte › Región › País › Liga › Club), apilados, el siguiente se
+  abre cuando el anterior se resolvió y el resuelto se encoge a una línea con lo elegido y un
+  "Cambiar". Un 6to card, opcional, elige el ejercicio.
+- Como los cards van apilados, la misma pantalla entra en un teléfono SIN una sola regla de media
+  query: verificado a 390px, sin scroll horizontal.
+- FUERA, a pedido de Guido: el punto de color de calidad del dato y su leyenda (Balance oficial /
+  Parcial / Placeholder / Sin datos).
+- "Cambiar" en un paso borra ESE y todos los de abajo, así que el bug de la to-do 29 (la liga de
+  la región anterior seguía a la vista) no puede existir acá: el estado es el CAMINO, no una
+  selección suelta por columna.
+- Se mantiene lo que el prototipo 1 dejó aprobado: el selector vive en la página y se queda
+  (plegado a una línea) con el club ya elegido, las pestañas se ven desde la primera visita, y hay
+  un buscador de una línea como atajo para quien ya sabe qué club quiere.
+- El selector nuevo NO es un parche de `js/selector.js`: es otro componente, con la MISMA API
+  pública (init/open/close/refresh/renderButton/goHome/savedClub), así `index.html` y
+  `js/comparar-clubes.js` no se enteran de cuál está cargado.
+- Apoyado en dos libros de `Business Books/`: la segunda ley de Krug (`dont_make_me_think.md`) —
+  muchos clicks obvios le ganan a uno que obliga a pensar — y la divulgación progresiva de
+  Higgins (`better_onboarding.md`).
