@@ -177,6 +177,22 @@ window.CLUB_SELECTOR = (function(){
       mt.textContent = o.meta;
       b.appendChild(mt);
     }
+    // El "+" de comparación. Vive en la fila del panel (clubes y ligas) y agrega ese
+    // sujeto SIN cambiar de club activo. Cuando no se puede, va deshabilitado con el
+    // motivo en el `title`: nunca un botón que al tocarlo no hace nada.
+    if(o.addable){
+      var a = document.createElement('button');
+      a.type = 'button';
+      a.className = 'add-btn' + (o.added ? ' on' : '');
+      a.textContent = o.added ? '✓' : '+';
+      if(o.addDisabled){ a.disabled = true; a.title = o.addDisabled; }
+      else a.title = o.added ? t('cmp.remove', 'Sacar de la comparación') : t('cmp.add', 'Agregar a la comparación');
+      a.addEventListener('click', function(ev){
+        ev.stopPropagation();
+        if(!o.addDisabled && o.onAdd) o.onAdd();
+      });
+      b.appendChild(a);
+    }
     if(o.arrow){
       var ar = document.createElement('span');
       ar.className = 'r-arrow';
@@ -291,6 +307,9 @@ window.CLUB_SELECTOR = (function(){
         meta: String(n),
         title: n + ' ' + t('selector.league.count', 'clubes con al menos un ejercicio cargado en esta liga'),
         selected: sel.league === lid, disabled: !n, arrow: !!n,
+        addable: !!n && !!window.CLUB_COMPARE && !!api.getClub(),
+        added: !!window.CLUB_COMPARE && window.CLUB_COMPARE.has('bench', lid),
+        onAdd: function(){ window.CLUB_COMPARE.toggleBench(lid); },
         onClick: function(){
           sel.league = lid; sel.country = lg.country; sel.region = window.regionOfCountry(lg.country);
           goPane(4); render();
@@ -316,15 +335,31 @@ window.CLUB_SELECTOR = (function(){
 
     // Equipo.
     var list = sel.league === '__none__' ? huerfanos : clubsForSelection();
-    fill('selColClub', list.map(function(id){
-      return mkRow({
-        crest: initials(nameOf(id)), name: nameOf(id), sub: clubSubtitle(id),
-        dot: qualityOf(id), selected: active === id,
-        onClick: function(){ pick(id); }
-      });
-    }));
+    fill('selColClub', list.map(function(id){ return clubRow(id, clubSubtitle(id)); }));
 
     renderCrumbs();
+  }
+
+  // Una fila de club, la misma en la columna Equipo y en los resultados de búsqueda.
+  // En modo comparar el CLICK agrega el club a la comparación en vez de cambiar de
+  // club activo: si no, el panel abierto desde "Comparar" se ve igual que el de
+  // cambiar de club y el visitante cambia de club sin querer.
+  function clubRow(id, sub, meta){
+    var cmp = window.CLUB_COMPARE;
+    var enModoAgregar = !!cmp && cmp.isAddMode();
+    var blocked = cmp ? cmp.blockReason(id) : null;
+    return mkRow({
+      crest: initials(nameOf(id)), name: nameOf(id), sub: sub, meta: meta,
+      dot: qualityOf(id), selected: !enModoAgregar && api.getClub() === id,
+      addable: !!cmp && !!api.getClub(),
+      added: !!cmp && cmp.has('club', id),
+      addDisabled: blocked,
+      onAdd: function(){ cmp.toggleClub(id); },
+      onClick: function(){
+        if(enModoAgregar){ if(!blocked) cmp.toggleClub(id); }
+        else pick(id);
+      }
+    });
   }
 
   // ---------------------------------------------------------------------------
@@ -411,13 +446,10 @@ window.CLUB_SELECTOR = (function(){
       clubHits.slice(0, 25).forEach(function(id){
         var co = window.COUNTRIES[countryOf(id)];
         var n = yearsCountOf(id);
-        res.appendChild(mkRow({
-          crest: initials(nameOf(id)), name: nameOf(id), dot: qualityOf(id),
-          sub: window.leaguesOfClub(id).map(function(r){ return window.LEAGUES[r.league].name; }).join(' / ')
-               + (co ? ' · ' + t(co.key, co.name) : ''),
-          meta: n === 1 ? t('selector.year.one', '1 ejercicio') : n + ' ' + t('selector.year.many', 'ejercicios'),
-          onClick: function(){ pick(id); }
-        }));
+        res.appendChild(clubRow(id,
+          window.leaguesOfClub(id).map(function(r){ return window.LEAGUES[r.league].name; }).join(' / ')
+            + (co ? ' · ' + t(co.key, co.name) : ''),
+          n === 1 ? t('selector.year.one', '1 ejercicio') : n + ' ' + t('selector.year.many', 'ejercicios')));
       });
     }
     if(lgHits.length){
@@ -427,6 +459,9 @@ window.CLUB_SELECTOR = (function(){
         res.appendChild(mkRow({
           name: lg.full, sub: (co ? t(co.key, co.name) : '') + ' · ' + window.tierLabel(lg.tier),
           meta: clubsInLeague(lid).length + ' ' + t('selector.clubs', 'clubes'), arrow: true,
+          addable: !!window.CLUB_COMPARE && !!api.getClub(),
+          added: !!window.CLUB_COMPARE && window.CLUB_COMPARE.has('bench', lid),
+          onAdd: function(){ window.CLUB_COMPARE.toggleBench(lid); },
           // Elegir una liga desde la búsqueda deja el árbol PARADO EN ESA LIGA, no
           // en su primer club: el que buscó "laliga" quiere ver la liga.
           onClick: function(){
@@ -535,7 +570,7 @@ window.CLUB_SELECTOR = (function(){
   // ---------------------------------------------------------------------------
   function isOpen(){ return $('clubPanel').classList.contains('open'); }
 
-  function open(){
+  function open(forCompare){
     if(!inited) return;
     hideCoach();
     // El árbol se para donde está el club activo, así abrir el panel muestra el
@@ -554,13 +589,19 @@ window.CLUB_SELECTOR = (function(){
     $('selQ').value = '';
     goPane(4);
     render();
+    if(window.CLUB_COMPARE) window.CLUB_COMPARE.renderConfirm();
     $('selQ').focus();
   }
 
+  // Cerrar por acá (✕, "Cerrar sin cambiar", Esc, backdrop) CONSERVA lo que se haya
+  // elegido para comparar: solo el "Cancelar" explícito de la barra de confirmación
+  // descarta. Lo que sí hace es salir del modo comparar, para que la próxima apertura
+  // no herede un banner que ya no corresponde.
   function close(){
     $('clubPanel').classList.remove('open');
     $('clubBackdrop').classList.remove('open');
     $('clubBtn').setAttribute('aria-expanded', 'false');
+    if(window.CLUB_COMPARE) window.CLUB_COMPARE.leaveAddMode();
     $('clubBtn').focus();
   }
 
@@ -695,7 +736,7 @@ window.CLUB_SELECTOR = (function(){
     api.pickClub = hooks.pickClub || api.pickClub;
     recents = readRecents();
 
-    $('clubBtn').addEventListener('click', open);
+    $('clubBtn').addEventListener('click', function(){ open(false); });
     $('selClose').addEventListener('click', close);
     $('selFootClose').addEventListener('click', close);
     $('clubBackdrop').addEventListener('click', close);

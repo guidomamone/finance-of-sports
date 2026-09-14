@@ -969,6 +969,160 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     .hero{padding:26px 18px 22px;}
     .hero h1{font-size:23px;}
   }
+  /* ======================================================================
+     COMPARACIÓN ENTRE CLUBES (Versión 136). Un solo modelo cubre los 3 casos que
+     pidió Guido (1 vs 1, N clubes, y club vs. promedio de liga): `subjects` es una
+     lista de SUJETOS COMPARABLES, y cada uno lleva SU ejercicio. De ahí sale gratis
+     el caso "River 2020/21 contra River 2024/25": son dos entradas de la lista, no
+     una feature aparte. El modo (Duelo/Múltiple/Benchmark/Mixto) se DEDUCE de la
+     lista, el usuario nunca lo elige.
+
+     LA VISTA PRINCIPAL SON BARRAS, NO UNA TABLA DE COLUMNAS (pedido explícito de
+     Guido: "de la foto que te compartí me gustaba lo de las barras comparando,
+     hacetelo en vez de columnas"). La tabla sigue existiendo detrás de un toggle,
+     para el periodista que quiere el número exacto y copiarlo.
+     ====================================================================== */
+  .cmp-btn{background:none;border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:8px;padding:8px 11px;
+           cursor:pointer;font-size:12px;font-weight:700;white-space:nowrap;font-family:inherit;}
+  .cmp-btn:hover{background:rgba(255,255,255,.14);border-color:var(--oro);}
+  .cmp-btn.on{background:var(--oro);border-color:var(--oro);color:var(--azul-dark);}
+
+  /* Bandeja: aparece sola cuando hay al menos un rival, y no ocupa lugar si no. */
+  .tray{background:var(--azul-dark);color:#cfdaec;border-top:1px solid rgba(255,255,255,.08);}
+  .tray[hidden]{display:none;}
+  .tray-inner{max-width:1280px;margin:0 auto;padding:8px 14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .tray-label{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:#8fa3c4;font-weight:700;}
+  .chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+        border-radius:999px;padding:3px 5px 3px 4px;font-size:12px;color:#fff;}
+  .chip.bench{background:rgba(242,183,5,.16);border-color:rgba(242,183,5,.45);}
+  .chip .chip-name{padding-right:2px;white-space:nowrap;}
+  .chip .x{background:none;border:none;color:#9fb0cc;cursor:pointer;font-size:14px;line-height:1;padding:0 3px;font-family:inherit;}
+  .chip .x:hover{color:#fff;}
+  /* El ejercicio vive en el chip: es del SUJETO, no un filtro global. Un filtro
+     global haría imposible comparar dos ejercicios del mismo club. */
+  .chip-year{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;
+             font-size:11px;padding:2px 4px;cursor:pointer;font-family:inherit;}
+  .chip-year option{color:var(--text);}
+  .chip-stat{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;
+             font-size:10px;padding:3px 6px;cursor:pointer;font-family:inherit;}
+  .chip-add{background:none;border:1px dashed rgba(255,255,255,.3);color:#cfdaec;border-radius:999px;
+            padding:4px 11px;font-size:12px;cursor:pointer;font-family:inherit;}
+  .chip-add:hover{border-color:var(--oro);color:var(--oro);}
+  .tray-mode{margin-left:auto;display:flex;align-items:center;gap:8px;}
+  .mode-pill{font-size:11px;background:var(--oro);color:var(--azul-dark);font-weight:800;border-radius:999px;
+             padding:3px 9px;text-transform:uppercase;letter-spacing:.04em;}
+  .tray-hint{font-size:11.5px;color:#8fa3c4;}
+
+  /* El punto de entrada que de verdad se usa: aparece donde el visitante ya está
+     mirando números y se le ocurre la pregunta. Un ícono ⇄ suelto en el header no
+     le dice a nadie qué hace. */
+  .cmp-cta{display:flex;align-items:center;gap:14px;background:#fff;border:1.5px dashed var(--border);
+           border-radius:10px;padding:15px 18px;margin-bottom:26px;}
+  .cmp-cta[hidden]{display:none;}
+  .cmp-cta .cc-ico{font-size:20px;color:var(--azul);}
+  .cmp-cta .cc-txt{flex:1;min-width:0;}
+  .cmp-cta .cc-t{font-size:14px;font-weight:700;display:block;}
+  .cmp-cta .cc-s{font-size:12.5px;color:var(--muted);margin-top:2px;display:block;}
+  .cmp-cta button{background:var(--azul);color:#fff;border:none;border-radius:8px;padding:10px 15px;
+                  font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;}
+  .cmp-cta button:hover{background:var(--azul-dark);}
+  .cmp-cta button.secundario{background:#fff;color:var(--azul);border:1.5px solid var(--azul);}
+
+  /* Banner del panel cuando se abre para comparar: sin esto, el panel abierto desde
+     "Comparar" se ve idéntico al de cambiar de club, y el visitante cambia de club
+     sin querer. */
+  .add-banner{background:var(--azul);color:#fff;padding:10px 14px;font-size:13px;display:flex;align-items:center;gap:9px;line-height:1.45;}
+  .add-banner[hidden]{display:none;}
+  .add-banner b{color:var(--oro);}
+  /* Barra de confirmación. El panel de comparar es MULTI-selección, así que no puede
+     cerrarse al primer click; y si no se cierra y no hay botón, el visitante agrega
+     uno y se queda esperando a que pase algo (pedido de Guido: "necesito un botón de
+     OK o algo así, no queda obvio cómo proseguir"). */
+  .confirm-bar{border-top:1px solid var(--border);background:var(--azul);color:#fff;
+               padding:10px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .confirm-bar[hidden]{display:none;}
+  .cf-sel{flex:1;min-width:160px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px;color:#c3d2ea;}
+  .cf-sel .cf-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.12);
+                   border-radius:999px;padding:3px 9px 3px 4px;color:#fff;}
+  .cf-cancel{background:none;border:none;color:#a8b8d4;font-size:12.5px;cursor:pointer;padding:8px 10px;font-family:inherit;}
+  .cf-cancel:hover{color:#fff;text-decoration:underline;}
+  .cf-ok{background:var(--oro);color:var(--azul-dark);border:none;border-radius:8px;padding:10px 20px;
+         font-size:13.5px;font-weight:800;cursor:pointer;font-family:inherit;}
+  .cf-ok:hover{filter:brightness(1.07);}
+  .cf-ok:disabled{background:rgba(255,255,255,.18);color:#8fa3c4;cursor:not-allowed;}
+
+  /* El "+" de cada fila del panel: agrega ese club (o el promedio de esa liga) a la
+     comparación sin cambiar de club activo. */
+  .add-btn{opacity:0;background:none;border:1px solid var(--border);color:var(--muted);border-radius:6px;
+           width:22px;height:22px;font-size:13px;line-height:1;cursor:pointer;flex-shrink:0;font-family:inherit;}
+  .sel-row:hover .add-btn, .add-btn.on, .add-btn:focus{opacity:1;}
+  .add-btn:hover{border-color:var(--azul);color:var(--azul);background:#fff;}
+  .add-btn.on{background:var(--oro);border-color:var(--oro);color:var(--azul-dark);font-weight:700;}
+  .add-btn:disabled{opacity:.3;cursor:not-allowed;}
+  .sel-row.sel .add-btn{border-color:rgba(255,255,255,.4);color:#fff;}
+
+  /* ---------- LA VISTA DE BARRAS ---------- */
+  .card-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;flex-wrap:wrap;}
+  .card-head .ch-txt{flex:1;min-width:220px;}
+  .viewtoggle{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-left:auto;}
+  .viewtoggle button{border:none;background:#fff;padding:6px 13px;font-size:12px;cursor:pointer;color:var(--text);font-family:inherit;}
+  .viewtoggle button.active{background:var(--azul);color:#fff;font-weight:700;}
+  /* Los 3 avisos. Este sitio lo usan periodistas: una comparación que se ve prolija y
+     es falsa termina citada en una nota. Ninguno de los 3 es opcional. */
+  .cmp-warn{background:#fff8e1;border:1px solid #e0b400;color:#5c4a00;border-radius:8px;padding:9px 12px;
+            font-size:12.5px;line-height:1.5;margin-bottom:18px;}
+  .cmp-warn[hidden]{display:none;}
+  .cmp-warn div + div{margin-top:6px;}
+  .cmp-rules{font-size:12px;color:var(--muted);margin:0 0 18px;line-height:1.5;}
+  /* La escala es POR INDICADOR, no global: comparar "Ingresos" contra "Deuda neta" en
+     la misma escala no significa nada. */
+  .metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:26px 34px;}
+  .metric{min-width:0;}
+  .metric .m-title{font-size:13px;font-weight:800;margin-bottom:2px;}
+  .metric .m-note{font-size:11.5px;color:var(--muted);margin-bottom:11px;min-height:14px;}
+  .mbar-row{display:grid;grid-template-columns:132px 1fr auto;align-items:center;gap:9px;margin-bottom:7px;}
+  .mbar-name{font-size:12px;display:flex;align-items:center;gap:6px;min-width:0;}
+  .mbar-txt{display:flex;flex-direction:column;line-height:1.22;min-width:0;}
+  .mbar-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;}
+  .mbar-yr{font-size:9.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .mbar-row.is-bench .mbar-name{color:var(--muted);font-style:italic;}
+  .mbar-row.is-bench .mbar-nm{font-weight:400;}
+  .mbar-track{background:#f2f2ef;border-radius:4px;height:20px;position:relative;overflow:hidden;}
+  .mbar-fill{height:100%;border-radius:4px;min-width:3px;}
+  /* El benchmark se dibuja distinto (trama diagonal): no es un club, es un agregado. */
+  .mbar-fill.bench{background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.45) 0 4px,transparent 4px 8px);}
+  .mbar-zero{position:absolute;top:0;bottom:0;width:1.5px;background:#c4c4bf;}
+  .mbar-val{font-size:12px;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;}
+  .mbar-val.best{color:var(--green);}
+  .mbar-val.nodata{color:var(--muted);font-weight:400;font-style:italic;}
+  .cmp-crest{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+             font-size:8px;font-weight:800;color:#fff;letter-spacing:-.02em;}
+  /* Composición de ingresos al 100%: compara la MEZCLA (cuánto depende cada club de
+     TV vs. socios vs. venta de pases), que es la pregunta interesante, sin que la
+     tape la diferencia de tamaño entre Real Madrid y Unión. */
+  .mix-row{display:grid;grid-template-columns:170px 1fr 92px;align-items:center;gap:10px;margin-bottom:9px;}
+  .mix-name{display:flex;align-items:center;gap:7px;font-size:12.5px;min-width:0;}
+  .mix-bar{height:22px;border-radius:4px;display:flex;overflow:hidden;background:#f2f2ef;}
+  .mix-seg{height:100%;}
+  .mix-val{font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);}
+  .mix-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted);}
+  .mix-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:-1px;}
+  .cmp-table th.bench-col, .cmp-table td.bench-col{background:rgba(242,183,5,.08);}
+  .cmp-table td.best{color:var(--green);font-weight:700;}
+  .cmp-table td.num, .cmp-table th.num{text-align:right;font-variant-numeric:tabular-nums;}
+
+  @media (max-width:900px){
+    /* En móvil el botón de comparar queda solo con el ícono: no entra el texto. */
+    .cmp-btn{font-size:0;padding:8px 10px;}
+    .cmp-btn::before{content:'\21C4';font-size:14px;}
+    .confirm-bar{position:sticky;bottom:0;}
+    .cf-ok{flex:1;}
+    .mbar-row{grid-template-columns:112px 1fr auto;}
+    .mix-row{grid-template-columns:104px 1fr 72px;}
+    .cmp-cta{flex-direction:column;align-items:flex-start;}
+    .cmp-cta button{width:100%;}
+  }
+
   .disclaimer{background:var(--azul-dark);color:#c9d4e6;font-size:12.5px;text-align:center;padding:6px 12px;}
   main{max-width:1160px;margin:0 auto;padding:28px 20px 80px;}
   section{display:none;}
@@ -1203,6 +1357,10 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
         </button>
         <div class="coach" id="coachMark" hidden><span data-i18n="selector.coach">Elegí tu club acá</span> <span class="coach-x" id="coachX" role="button" aria-label="Cerrar">&#215;</span></div>
       </div>
+      <!-- Punto de entrada 1 de 3 de la comparación: un botón CON TEXTO, no un ícono mudo.
+           Los otros dos son la tarjeta abajo de los KPIs de Inicio (#cmpCta) y el banner del
+           panel cuando se abre para comparar (#addBanner). -->
+      <button class="cmp-btn" id="compareBtn" data-i18n-title="header.compare.tip" title="Comparar con otro club">&#8644; <span data-i18n="header.compare">Comparar</span></button>
       <button id="contactBtn" data-i18n-title="header.contact" title="Contacto">&#9993;</button>
       <!-- Selector de idioma (Versión 115). El <button> y el menú se llenan en runtime
            desde `window.LANGS` (data/lang/langs.js), igual que el panel del selector se llena
@@ -1212,6 +1370,22 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
           <span class="lang-globe" aria-hidden="true">&#127760;</span><span id="langBtnLabel">ES</span>
         </button>
         <div id="langMenu" role="menu" hidden></div>
+      </div>
+    </div>
+  </div>
+  <!-- BANDEJA DE COMPARACIÓN. Aparece sola cuando hay al menos un rival o benchmark;
+       con la lista vacía no ocupa lugar. El club activo es siempre el primer sujeto y
+       no se puede sacar. -->
+  <div class="tray" id="cmpTray" hidden>
+    <div class="tray-inner">
+      <span class="tray-label" data-i18n="cmp.tray.label">Comparando</span>
+      <div id="trayChips" style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;"></div>
+      <button class="chip-add" id="trayAdd" data-i18n="cmp.tray.add">+ Club</button>
+      <button class="chip-add" id="trayAddYear" data-i18n="cmp.tray.addyear">+ Otro año</button>
+      <button class="chip-add" id="trayClear" data-i18n="cmp.tray.clear">Cerrar comparación</button>
+      <div class="tray-mode">
+        <span class="mode-pill" id="cmpModePill"></span>
+        <span class="tray-hint" id="cmpModeHint"></span>
       </div>
     </div>
   </div>
@@ -1226,6 +1400,8 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      para dibujarlo (son 41 clubes en el panel y 0 archivos de datos bajados). -->
 <div class="sel-backdrop" id="clubBackdrop"></div>
 <div class="sel-panel" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
+  <!-- Se llena desde js/comparar-clubes.js cuando el panel se abre en modo comparar. -->
+  <div class="add-banner" id="addBanner" hidden></div>
   <div class="sel-search">
     <input id="selQ" type="text" autocomplete="off" spellcheck="false"
            data-i18n-placeholder="selector.search.ph"
@@ -1249,6 +1425,11 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     <div class="sel-col" data-level="2"><div class="sel-col-head" data-i18n="selector.col.country">País</div><div id="selColCountry"></div></div>
     <div class="sel-col" data-level="3"><div class="sel-col-head" data-i18n="selector.col.league">Liga</div><div id="selColLeague"></div></div>
     <div class="sel-col active-pane" data-level="4"><div class="sel-col-head" data-i18n="selector.col.club">Equipo</div><div id="selColClub"></div></div>
+  </div>
+  <div class="confirm-bar" id="confirmBar" hidden>
+    <div class="cf-sel" id="cfSel"></div>
+    <button class="cf-cancel" id="cmpCancel" data-i18n="cmp.cancel">Cancelar</button>
+    <button class="cf-ok" id="cmpOk" data-i18n="cmp.ok">Ver comparación</button>
   </div>
   <div class="sel-foot">
     <span class="legend-item"><i class="q-dot full"></i> <span data-i18n="selector.legend.full">Balance oficial</span></span>
@@ -1299,6 +1480,47 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     <h1 data-i18n="inicio.title">Datos del club</h1>
     <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
     <div class="grid" id="inicioStats"></div>
+    <!-- PUNTO DE ENTRADA 2 de 3 (Versión 136): la tarjeta, abajo de los KPIs. Es el que de
+         verdad se usa, porque aparece donde el visitante ya está mirando números y se le
+         ocurre la pregunta. Desaparece cuando ya hay una comparación activa. -->
+    <div class="cmp-cta" id="cmpCta" hidden>
+      <span class="cc-ico" aria-hidden="true">&#8644;</span>
+      <span class="cc-txt">
+        <span class="cc-t" id="ccT"></span>
+        <span class="cc-s" data-i18n="cmp.cta.sub">Poné dos clubes lado a lado, o medilo contra el promedio de su liga.</span>
+      </span>
+      <span style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button id="ccBtn" data-i18n="cmp.cta.club">Con otro club</button>
+        <button id="ccYearBtn" class="secundario" data-i18n="cmp.cta.year">Con otro año de este club</button>
+      </span>
+    </div>
+
+    <!-- LA COMPARACIÓN. Barras por default; la tabla existe para el que quiere el número
+         exacto y copiarlo, detrás del toggle. -->
+    <div class="card" id="compareCard" hidden>
+      <div class="card-head">
+        <div class="ch-txt">
+          <h2 data-i18n="cmp.title">Comparación</h2>
+          <p class="subtitle" style="margin:0;" data-i18n="cmp.sub">Una barra por sujeto, indicador por indicador. Cada barra está a escala dentro de su propio indicador, no entre indicadores.</p>
+        </div>
+        <div class="viewtoggle" id="cmpView">
+          <button type="button" data-v="bars" class="active" data-i18n="cmp.view.bars">Barras</button>
+          <button type="button" data-v="table" data-i18n="cmp.view.table">Tabla</button>
+        </div>
+      </div>
+      <div class="cmp-warn" id="cmpWarn" hidden></div>
+      <p class="cmp-rules" id="cmpRules"></p>
+      <div class="metric-grid" id="metricGrid"></div>
+      <div class="table-scroll" id="cmpTableWrap" hidden><table class="cmp-table" id="cmpTable"></table></div>
+    </div>
+
+    <div class="card" id="mixCard" hidden>
+      <h2 data-i18n="cmp.mix.title">Composición de ingresos</h2>
+      <p class="subtitle" data-i18n="cmp.mix.sub">De dónde sale la plata de cada uno. Barras al 100%, para comparar la mezcla y no el tamaño; el total va al costado.</p>
+      <div id="mixRows"></div>
+      <div class="mix-legend" id="mixLegend"></div>
+    </div>
+
 
     <div class="card">
       <h2 data-i18n="inicio.chart.rev">Ingresos por año</h2>
@@ -1732,39 +1954,44 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '136d';</script>
-<script src="data/lang/langs.js?v=136d"></script>
-<script src="js/i18n.js?v=136d"></script>
-<script src="data/clubs.js?v=136d"></script>
+<script>window.ASSET_V = '136h';</script>
+<script src="data/lang/langs.js?v=136h"></script>
+<script src="js/i18n.js?v=136h"></script>
+<script src="data/clubs.js?v=136h"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=136d"></script>
+<script src="data/club-index.js?v=136h"></script>
 <!-- data/leagues.js (Versión 136): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=136d"></script>
-<script src="data/club-leagues.js?v=136d"></script>
-<script src="data/category-map.js?v=136d"></script>
-<script src="data/site-labels.js?v=136d"></script>
-<script src="data/currency-map.js?v=136d"></script>
-<script src="data/sources-view.js?v=136d"></script>
+<script src="data/leagues.js?v=136h"></script>
+<script src="data/club-leagues.js?v=136h"></script>
+<script src="data/category-map.js?v=136h"></script>
+<script src="data/site-labels.js?v=136h"></script>
+<script src="data/currency-map.js?v=136h"></script>
+<script src="data/sources-view.js?v=136h"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 136). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=136d"></script>
-<script src="js/finanzas-render.js?v=136d"></script>
+<script src="js/finanzas-calc.js?v=136h"></script>
+<script src="js/finanzas-render.js?v=136h"></script>
 <!-- js/selector.js (Versión 136): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=136d"></script>
+<script src="js/selector.js?v=136h"></script>
+<!-- js/comparar-clubes.js (Versión 136): la comparación ENTRE CLUBES (no confundir con
+     "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
+     comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
+     clubes, y club contra el promedio de su liga. Ver su cabecera. -->
+<script src="js/comparar-clubes.js?v=136h"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1916,6 +2143,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     // memoria, así que volver a elegirlo es instantáneo.
     if(newClub === null){
       currentClub = null;
+      CLUB_COMPARE.clear();
       applyClubMode();
       return Promise.resolve();
     }
@@ -1924,6 +2152,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       applyClubMode();
       refreshAllForClub();
       verifyTieOuts(newClub);
+      CLUB_COMPARE.onActiveChanged();
     }).catch(err => {
       // NO un alert() (Versión 136). Un alert nativo CONGELA la página entera: timers,
       // onload de scripts, todo. Si el club que falla es el guardado en localStorage, el
@@ -1953,16 +2182,41 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       sec.style.display = cold ? 'none' : '';
     });
     CLUB_SELECTOR.renderButton();
+    if(window.CLUB_COMPARE) CLUB_COMPARE.draw();
   }
 
   CLUB_SELECTOR.init({
     getClub: () => currentClub,
     pickClub: selectClub,
   });
+
+  // La comparación entre clubes (js/comparar-clubes.js). El ejercicio del club activo
+  // sale del MISMO `<select>` de Año que usa Finanzas, no de un estado propio: si cada
+  // vista se guardara su año, el chip de la bandeja y la tabla de Finanzas podrían
+  // mostrar ejercicios distintos del mismo club al mismo tiempo.
+  CLUB_COMPARE.init({
+    getClub: () => currentClub,
+    getYear: () => {
+      const v = parseInt(document.getElementById('anioSelect').value, 10);
+      return isNaN(v) ? null : v;
+    },
+    setYear: (y) => {
+      document.getElementById('anioSelect').value = String(y);
+      refreshFinanzas();
+    },
+    openPanel: (forCompare) => CLUB_SELECTOR.open(forCompare),
+    closePanel: () => CLUB_SELECTOR.close(),
+  });
   applyClubMode();
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
-  document.getElementById('anioSelect').addEventListener('change', refreshFinanzas);
+  document.getElementById('anioSelect').addEventListener('change', () => {
+    refreshFinanzas();
+    // El ejercicio del club activo es también el del primer sujeto de la comparación:
+    // cambiarlo puede dejar un rival duplicado (el mismo club en el mismo año), que es
+    // el 4to de los cuatro caminos al duplicado. `onActiveChanged()` lo resuelve.
+    CLUB_COMPARE.onActiveChanged();
+  });
   document.querySelectorAll('#viewToggle button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('#viewToggle button').forEach(b => b.classList.remove('active'));
