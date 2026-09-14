@@ -259,10 +259,12 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-144):
+- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-145):
   prototipo de un Inicio en frío con el selector jerárquico desplegado EN la portada
-  (hoy vive atrás de un click), con copy antes y después, minimizable, y con un
-  dropdown de EJERCICIO por club en la columna EQUIPO. NO se deploya y no lo linkea
+  (hoy vive atrás de un click), con copy antes y después, minimizable, con un
+  dropdown de EJERCICIO por club en la columna EQUIPO y dos botones por fila
+  ("Ver" y "Ver y elegir otro", que deja el panel abierto para sumar un segundo
+  club). NO se deploya y no lo linkea
   ninguna página: se abre a mano, al lado de `index.html`. Los 3 archivos están
   GENERADOS (la portada desde `index.html`, `prototipo-inicio-selector.js` como copia
   parcheada de `js/selector.js`, y `prototipo-inicio-ejercicios.js` desde los

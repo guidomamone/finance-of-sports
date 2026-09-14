@@ -1020,3 +1020,26 @@ documentados, listos para una sesión de onboarding futura.)*
 - En móvil el dropdown baja a su propio renglón: al lado del nombre le comía 128px de 312px y
   partía el nombre del club ("Argentinos Juni…", medido a 390px).
 - `js/selector.js` y el resto del sitio siguen intactos; `node tools/audit.js` sin cambios.
+
+## Versión 145: 5 correcciones al prototipo de portada, una de ellas es un bug del sitio
+
+- BUG DEL SITIO PUBLICADO, encontrado por Guido probando el prototipo: al elegir una REGIÓN, la
+  columna Liga seguía listando las ligas de todos los países, así que después de cambiar de región
+  quedaban a la vista las ligas de la anterior. La selección sí se limpiaba (`sel.league = null`);
+  lo que no se filtraba era la lista. Arreglado en la copia del prototipo; `js/selector.js` sigue
+  con el bug hasta que se decida el resto (to-do 28).
+- La fila de club suma dos botones con texto, **Ver** y **Ver y elegir otro**. El segundo muestra
+  el club pero NO cierra el panel y lo deja en modo comparar, así el siguiente que toques se suma
+  en vez de reemplazar (pedido de Guido: "permanecer en el selector y elegir un segundo equipo,
+  liga, etc"). Reemplazan al "+" de la fila de club: el mismo camino que antes había que descubrir.
+  El primer club tiene que pasar a ser el activo porque el modelo de comparación lo tiene como
+  sujeto 0; del segundo en adelante entran como rivales.
+- El dropdown de ejercicio y los dos botones van en un segundo renglón de la fila, alineados bajo
+  el nombre: los 3 controles en línea le dejaban ~110px al nombre del club y lo partían. El panel
+  embebido pasó de 520 a 620px de alto para compensar filas más altas.
+- COPY: la bajada de la portada pierde "y mercado de pases" (el sitio todavía no lo tiene cargado)
+  y deja de cortarse a los 600px, que le metía un salto de línea en la mitad de la frase con medio
+  card vacío al lado. Los ejemplos del buscador van con mayúscula ("Boca", "LaLiga", "Japón"): la
+  búsqueda ignora mayúsculas y acentos, así que escribirlos bien no le cuesta nada al que busca.
+  Los dos cambios tienen su gemelo pendiente en `data/lang/en.js` (`hero.sub`, `selector.search.ph`).
+- "O empezá por uno de estos" pasó de 8 clubes a 3.

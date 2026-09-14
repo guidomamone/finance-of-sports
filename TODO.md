@@ -53,9 +53,12 @@ perdieron sino que se descartaron:
     frío). Dos cosas, las dos pedidas por Guido el 2026-09-14:
     (a) El selector jerárquico desplegado EN la portada en vez de atrás de un click, con copy
         antes y después, minimizable, y sin el botón de club del header mientras no haya club.
-    (b) En la columna EQUIPO, un dropdown de EJERCICIO por club: elegir un año carga el club y
-        cae en su ficha de Finanzas de ese ejercicio (clickear la fila sigue llevando al club
-        entero). Anda en el árbol, en la búsqueda, en el panel embebido y en el modal.
+    (b) En la columna EQUIPO, un dropdown de EJERCICIO por club: elegir un año y tocar Ver cae
+        en la ficha de Finanzas de ese ejercicio. Anda en el árbol, en la búsqueda, en el panel
+        embebido y en el modal.
+    (c) Dos botones con texto en cada fila de club, **Ver** y **Ver y elegir otro**. El segundo
+        deja el panel abierto y en modo comparar, para sumar un segundo club o el promedio de una
+        liga sin salir. Reemplazan al "+" de la fila de club.
     El prototipo corre con los 41 clubes y el motor reales, así que lo único que falta decidir es
     si convence.
     SI SE APRUEBA, la implementación real NO es copiar los archivos del prototipo:
@@ -71,10 +74,27 @@ perdieron sino que se descartaron:
       `js/selector.js` y tenés el parche. Los textos nuevos (los de la portada y los 2 del
       select) pasan por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`.
     - Subir `ASSET_V` en los dos lugares (la constante y los tags).
+    - Los textos que el prototipo tiene en castellano a mano necesitan su gemelo en
+      `data/lang/en.js`. Dos ya existen y hay que CORREGIRLOS, no solo traducirlos: `hero.sub`
+      todavía dice "and transfers" (mercado de pases, que no está cargado) y
+      `selector.search.ph` tiene los ejemplos en minúscula ("boca", "laliga", "japan").
     Preguntas que el prototipo deja abiertas y conviene mirar en pantalla: si el panel embebido
-    (520px) deja la portada demasiado alta en un teléfono; si minimizado tiene que recordar el
-    estado entre visitas o abrir siempre expandido; y si el dropdown de ejercicio no duplica al
-    subtítulo de la fila, que en la vista de país YA lista los años del club.
+    (620px) deja la portada demasiado alta en un teléfono; si minimizado tiene que recordar el
+    estado entre visitas o abrir siempre expandido; si el dropdown de ejercicio no duplica al
+    subtítulo de la fila, que en la vista de país YA lista los años del club; y sobre todo CUÁNTO
+    PESA la fila de club ahora que tiene 3 controles — 70px en desktop y 126px en un teléfono,
+    o sea 2 clubes y medio por pantalla en móvil. Si molesta, la salida más probable es que los
+    botones aparezcan solo en la fila activa (con el costo de volverlos menos visibles, que es
+    justo lo que se quiso evitar).
+
+29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
+    SOLO en la copia del prototipo (`prototipo-inicio-selector.js`, patch (d) del generador). En
+    `renderCols()` (js/selector.js:~290), la columna LIGA lista `Object.keys(LEAGUES)` filtrado
+    solo por DEPORTE cuando no hay país elegido, así que al elegir una región siguen apareciendo
+    las ligas de los otros continentes: elegís Europa › España, volvés a cambiar la región a Asia,
+    y LaLiga sigue en la columna. La selección sí se limpia; la lista no se filtra. El arreglo es
+    una línea (`regionOfCountry(lg.country) === sel.region`) y se puede llevar a `js/selector.js`
+    independientemente de qué se decida con el punto 28.
 
 25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
     misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·

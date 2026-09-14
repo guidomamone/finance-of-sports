@@ -177,17 +177,26 @@ window.CLUB_SELECTOR = (function(){
       mt.textContent = o.meta;
       b.appendChild(mt);
     }
-    // PROTO: el <select> de ejercicio. Pedido de Guido: poder elegir el AÑO desde la
-    // misma fila, sin entrar al club primero y buscar el dropdown de Finanzas después.
-    // La opción 0 no es un año: es "el club entero", que es adónde lleva clickear la
-    // fila, y tiene que seguir siendo el camino por default (el 90% quiere el club,
-    // no un ejercicio puntual).
+    // PROTO: la barra de acciones de la fila de club. Tres controles, en este orden:
+    // qué ejercicio, verlo, y verlo sin salir del selector.
+    //
+    // El <select> de ejercicio (pedido de Guido) evita entrar al club y recién ahí
+    // buscar el dropdown de Finanzas. Su opción 0 NO es un año: es "el club entero",
+    // que sigue siendo el camino por default.
+    //
+    // Los 2 botones son la otra mitad: "Ver" sale del selector, "Ver y elegir otro" se
+    // queda adentro para sumar un segundo club (o una liga, con el + de su fila).
+    // Reemplazan al "+" de comparación de la fila de club: un símbolo que había que
+    // descubrir pasa a ser dos botones que dicen lo que hacen.
     if(o.years && o.years.length){
+      var acts = document.createElement('span');
+      acts.className = 'r-acts';
+
       var ys = document.createElement('select');
       ys.className = 'r-years';
       var op0 = document.createElement('option');
       op0.value = '';
-      op0.textContent = o.years.length === 1 ? 'Ver el ejercicio' : 'Ver un ejercicio';
+      op0.textContent = o.years.length === 1 ? 'Todo el club' : 'Todos sus ejercicios';
       ys.appendChild(op0);
       o.years.forEach(function(par){
         var op = document.createElement('option');
@@ -200,16 +209,30 @@ window.CLUB_SELECTOR = (function(){
           : String(par[0]);
         ys.appendChild(op);
       });
-      ys.title = 'Ir directo a un ejercicio de este club';
+      ys.title = 'Elegí un ejercicio, o dejá "todos" para ver el club entero';
       // Los 3: sin mousedown el <button> de la fila se "arma" y en algunos navegadores
       // se queda con el click; sin click el dropdown elige el club al abrirse.
       ys.addEventListener('mousedown', function(ev){ ev.stopPropagation(); });
       ys.addEventListener('click', function(ev){ ev.stopPropagation(); });
-      ys.addEventListener('change', function(ev){
-        ev.stopPropagation();
-        if(this.value && o.onYear) o.onYear(this.value);
+      ys.addEventListener('change', function(ev){ ev.stopPropagation(); });
+      acts.appendChild(ys);
+
+      [{ cls:'r-go', txt:'Ver', fn:o.onSee, ttl:'Ver este club y salir del selector' },
+       { cls:'r-go alt', txt:'Ver y elegir otro', fn:o.onSeeAndMore, ttl:'Verlo y quedarte acá para sumar otro club o una liga' }
+      ].forEach(function(def){
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = def.cls;
+        btn.textContent = def.txt;
+        btn.title = def.ttl;
+        btn.addEventListener('mousedown', function(ev){ ev.stopPropagation(); });
+        btn.addEventListener('click', function(ev){
+          ev.stopPropagation();
+          if(def.fn) def.fn(ys.value);
+        });
+        acts.appendChild(btn);
       });
-      b.appendChild(ys);
+      b.appendChild(acts);
     }
 
     // El "+" de comparación. Vive en la fila del panel (clubes y ligas) y agrega ese
@@ -321,7 +344,12 @@ window.CLUB_SELECTOR = (function(){
 
     // Liga. Sin país elegido se listan todas las del deporte.
     var leagueIds = sel.country ? window.leaguesOfCountry(sel.country)
-                                : Object.keys(window.LEAGUES).filter(function(id){ return window.LEAGUES[id].sport === sel.sport; });
+                                : Object.keys(window.LEAGUES).filter(function(id){
+                                    var lg = window.LEAGUES[id];
+                                    if(lg.sport !== sel.sport) return false;
+                                    // PROTO: sin país pero CON región, solo las ligas de esa región.
+                                    return !sel.region || window.regionOfCountry(lg.country) === sel.region;
+                                  });
     var leagueRows = [];
     if(sel.country){
       leagueRows.push(mkRow({
@@ -385,11 +413,12 @@ window.CLUB_SELECTOR = (function(){
     var blocked = cmp ? cmp.blockReason(id) : null;
     return mkRow({
       crest: initials(nameOf(id)), name: nameOf(id), sub: sub, meta: meta,
-      // PROTO: el dropdown de ejercicio de la columna EQUIPO.
+      // PROTO: el dropdown de ejercicio y los 2 botones de la columna EQUIPO.
       years: (window.PROTO_YEARS || {})[id], yearsClubId: id,
-      onYear: function(y){ pick(id, y); },
+      onSee: function(y){ pick(id, y); },
+      onSeeAndMore: function(y){ pickAndStay(id, y); },
       dot: qualityOf(id), selected: !enModoAgregar && api.getClub() === id,
-      addable: !!cmp && !!api.getClub(),
+      addable: false,   // PROTO: lo reemplazan los 2 botones de la fila
       added: !!cmp && cmp.has('club', id),
       addDisabled: blocked,
       onAdd: function(){ cmp.toggleClub(id); },
@@ -656,6 +685,37 @@ window.CLUB_SELECTOR = (function(){
     });
   }
 
+  // PROTO: "Ver y elegir otro". La otra mitad de la respuesta a Guido ("permanecer en
+  // el selector y elegir un segundo equipo, liga, o inclusive más de un equipo"): el
+  // club se muestra igual que con "Ver", pero el panel NO se cierra y queda en modo
+  // comparar, así el siguiente que toques se suma en vez de reemplazar.
+  //
+  // POR QUÉ EL PRIMERO TIENE QUE PASAR A SER EL CLUB ACTIVO: el modelo de la
+  // comparación (js/comparar-clubes.js) tiene al club activo como sujeto 0 y a los
+  // demás como rivales. No hay "comparación sin club activo", así que el primer
+  // "Ver y elegir otro" elige, y del segundo en adelante se suma.
+  function pickAndStay(id, year){
+    hideCoach();
+    var cmp = window.CLUB_COMPARE;
+    var active = api.getClub();
+    if(active && cmp && active !== id){
+      cmp.toggleClub(id);
+      if(!cmp.isAddMode()) document.getElementById('compareBtn').click();
+      return;
+    }
+    pushRecent(id);
+    try { localStorage.setItem(LS_CLUB, id); } catch(e){}
+    Promise.resolve(api.pickClub(id)).then(function(){
+      renderButton(); renderRecents();
+      if(year && window.goToFinanzasYear) window.goToFinanzasYear(id, Number(year));
+      // Reabre el panel en modo comparar (el club recién elegido esconde la portada, y
+      // con ella el panel embebido). openForCompare() no está exportado, pero el botón
+      // Comparar del header es exactamente ese camino.
+      document.getElementById('compareBtn').click();
+      render();
+    });
+  }
+
   // ---------------------------------------------------------------------------
   // COACH MARK. Un solo cartel, se va al primer click y no vuelve.
   // ---------------------------------------------------------------------------
@@ -697,7 +757,7 @@ window.CLUB_SELECTOR = (function(){
     var hc = $('heroClubs');
     if(!hc) return;
     hc.innerHTML = '';
-    quickPicks(8).forEach(function(id){
+    quickPicks(3).forEach(function(id){
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'hq-club';

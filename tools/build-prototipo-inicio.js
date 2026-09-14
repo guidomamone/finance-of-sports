@@ -89,7 +89,9 @@ const PROTO_CSS = `
   /* El panel es EL MISMO nodo que el modal (js/selector.js lo sigue manejando por id):
      el prototipo lo MUDA acá adentro cuando no hay club elegido, y lo devuelve al
      <body> cuando sí. Por eso esto solo apaga el posicionamiento fijo. */
-  .sel-panel.embedded{position:static;transform:none;width:auto;max-height:none;height:min(520px,62vh);
+  /* Más alto que las 520px de la primera versión: con la barra de acciones, cada fila
+     de club pasó de ~40px a ~70px, y a 520 entraban 4 clubes. */
+  .sel-panel.embedded{position:static;transform:none;width:auto;max-height:none;height:min(620px,70vh);
                       box-shadow:0 10px 30px rgba(7,29,63,.22);display:flex !important;}
   /* Adentro de la portada no hay a dónde "cerrar": la salida es Minimizar, arriba. */
   .sel-panel.embedded .sel-close,
@@ -104,24 +106,38 @@ const PROTO_CSS = `
   .hero.min .hero-sel-bar{margin-bottom:0;}
   .hero.min .hero-search{margin-top:10px;}
 
-  /* El <select> de ejercicio de la columna EQUIPO. Tiene que leerse como un control
-     secundario: la acción principal de la fila sigue siendo elegir el club. Por eso
-     va chico, en gris, y recién al hover toma el azul del sitio. */
-  .sel-row .r-years{margin-left:auto;flex:0 0 auto;max-width:44%;font-family:inherit;font-size:11px;
-                    color:var(--muted);background:#fff;border:1px solid var(--border);border-radius:6px;
-                    padding:3px 4px;cursor:pointer;max-height:24px;}
-  .sel-row .r-years:hover{border-color:var(--azul);color:var(--azul);}
-  .sel-row.sel .r-years{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.45);color:#fff;}
-  /* En una fila con dropdown, el "+" de comparar deja de empujar el layout. */
-  .sel-row .r-years + .add-btn{margin-left:6px;}
-  /* En móvil el dropdown al lado del nombre le come 128px de 312px y parte el nombre
-     ("Argentinos Juni…", medido a 390px), así que se baja a su propio renglón,
-     alineado con el nombre. Más alto por fila, pero el nombre del club entero y un
-     blanco de toque más grande, que en un teléfono valen más. */
+  /* La barra de acciones de la fila de club: [ejercicio] [Ver] [Ver y elegir otro].
+     Va en su propio renglón, alineada bajo el nombre. En línea con el nombre, los 3
+     controles le dejaban ~110px al nombre del club y lo partían. */
+  .sel-row:has(.r-acts){flex-wrap:wrap;align-items:flex-start;padding-bottom:8px;}
+  .r-acts{flex-basis:calc(100% - 34px);margin:6px 0 0 34px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+  .r-acts .r-years{font-family:inherit;font-size:11.5px;color:var(--text);background:#fff;
+                   border:1px solid var(--border);border-radius:6px;padding:4px 5px;cursor:pointer;
+                   max-width:210px;flex:0 1 auto;}
+  .r-acts .r-years:hover{border-color:var(--azul);}
+  /* "Ver" es la acción principal de la fila y se ve como tal; "Ver y elegir otro" es
+     la secundaria, con el mismo peso tipográfico pero sin relleno. */
+  .r-go{font-family:inherit;font-size:11.5px;font-weight:700;border-radius:6px;cursor:pointer;
+        padding:4px 10px;background:var(--azul);color:#fff;border:1px solid var(--azul);white-space:nowrap;}
+  .r-go:hover{background:var(--azul-dark);border-color:var(--azul-dark);}
+  .r-go.alt{background:#fff;color:var(--azul);border-color:var(--border);}
+  .r-go.alt:hover{border-color:var(--azul);background:#eef2f9;}
+  /* Fila seleccionada (fondo azul): los controles se dan vuelta para seguir leyéndose. */
+  .sel-row.sel .r-acts .r-years{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);color:#fff;}
+  .sel-row.sel .r-go{background:var(--oro);color:var(--azul-dark);border-color:var(--oro);}
+  .sel-row.sel .r-go.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
   @media (max-width:900px){
-    .sel-row:has(.r-years){flex-wrap:wrap;}
-    .sel-row .r-years{flex-basis:calc(100% - 34px);max-width:none;margin:5px 0 1px 34px;padding:5px 6px;font-size:12px;max-height:none;}
+    /* En un teléfono los 2 botones se reparten el ancho y el select va arriba solo:
+       blancos de toque grandes, que es lo que falta cuando todo entra pero apretado. */
+    .r-acts{margin-left:30px;}
+    .r-acts .r-years{flex-basis:100%;max-width:none;padding:6px;font-size:12px;}
+    .r-go{flex:1 1 0;padding:7px 8px;font-size:12px;}
   }
+
+  /* Punto 3 de Guido: la bajada cortaba a los 600px (la regla .hero p de index.html)
+     y metía un salto de línea en la mitad de una frase, con medio card vacío al lado.
+     820px la deja en una sola línea en desktop sin volverse un renglón interminable. */
+  .hero p{max-width:820px;}
 
   /* Copy de después del selector. */
   /* Con el selector en la portada, el botón de club del header sobra: repite la
@@ -140,6 +156,16 @@ replaceOnce('</style>\n', '</style>\n' + PROTO_CSS, 'cierre del <style> del siti
 // ---------------------------------------------------------------------------
 // 3. La franja de prototipo, apenas abre el <body>.
 // ---------------------------------------------------------------------------
+// PROTO (punto 4 de Guido): los ejemplos del buscador iban en minúscula ("boca",
+// "laliga", "japón") como si fueran cómo hay que escribirlos. La búsqueda ignora
+// mayúsculas y acentos, así que escribirlos bien no le cuesta nada al usuario y el
+// sitio deja de mostrar mal los nombres propios. Mismo arreglo pendiente en la clave
+// `selector.search.ph` de data/lang/en.js ("boca", "laliga", "japan").
+replaceOnce(
+  'placeholder="Buscá un club, una liga o un país…  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)"',
+  'placeholder="Buscá un club, una liga o un país…  (ej. &quot;Boca&quot;, &quot;LaLiga&quot;, &quot;Japón&quot;)"',
+  'placeholder del buscador del panel');
+
 replaceOnce('<body>\n', '<body>\n<div class="proto-flag">PROTOTIPO · Inicio con el selector en la portada <span>— no es el sitio publicado</span></div>\n', '<body>');
 
 // ---------------------------------------------------------------------------
@@ -161,7 +187,10 @@ const HERO_NUEVO = `  <div class="hero" id="coldHero" hidden>
          el sitio y de dónde salen los números, que es lo que hace falta leer ANTES
          de ponerse a elegir. -->
     <h1 data-i18n="hero.title">Los números reales de tu club</h1>
-    <p data-i18n="hero.sub">Ingresos, gastos, deuda y mercado de pases, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
+    <!-- PROTO (punto 3 de Guido): sale "y mercado de pases", que el sitio todavía no
+         tiene cargado. Si esto se aprueba, el mismo cambio va en la clave hero.sub
+         de data/lang/en.js, que hoy dice "and transfers". -->
+    <p data-i18n="hero.sub">Ingresos, gastos y deuda, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
 
     <!-- PROTO: EL SELECTOR, ACÁ MISMO. Antes vivía atrás de un click en el header y
          la portada tenía un buscador propio; ahora es lo que ves. El panel no está
@@ -345,44 +374,92 @@ function parcharSelector(needle, replacement, what){
   selJs = selJs.slice(0, i) + replacement + selJs.slice(i + needle.length);
 }
 
-// (a) La fila de club le pasa a mkRow sus ejercicios y qué hacer cuando se elige uno.
+// (a) La fila de club le pasa a mkRow sus ejercicios y sus dos acciones. Y deja de
+//     pedir el "+" de comparación: lo reemplaza el botón "Ver y elegir otro", que
+//     dice con palabras lo mismo que el "+" decía con un símbolo.
 parcharSelector(
   '      crest: initials(nameOf(id)), name: nameOf(id), sub: sub, meta: meta,',
   '      crest: initials(nameOf(id)), name: nameOf(id), sub: sub, meta: meta,\n' +
-  '      // PROTO: el dropdown de ejercicio de la columna EQUIPO.\n' +
+  '      // PROTO: el dropdown de ejercicio y los 2 botones de la columna EQUIPO.\n' +
   '      years: (window.PROTO_YEARS || {})[id], yearsClubId: id,\n' +
-  '      onYear: function(y){ pick(id, y); },',
+  '      onSee: function(y){ pick(id, y); },\n' +
+  '      onSeeAndMore: function(y){ pickAndStay(id, y); },',
   'clubRow -> mkRow');
+parcharSelector(
+  '      addable: !!cmp && !!api.getClub(),\n',
+  '      addable: false,   // PROTO: lo reemplazan los 2 botones de la fila\n',
+  'clubRow -> addable');
 
 // (b) `pick` acepta un ejercicio opcional. Sin año se comporta igual que hoy (cae en
 //     Inicio, que muestra todos los ejercicios); con año va derecho a la ficha de
 //     Finanzas de ESE ejercicio, reusando `goToFinanzasYear()`, que ya existe para el
 //     click en una barra de los gráficos de Inicio: un solo camino a "club + año".
 parcharSelector(
-  '    Promise.resolve(api.pickClub(id)).then(function(){ renderButton(); renderRecents(); });',
-  '    Promise.resolve(api.pickClub(id)).then(function(){\n' +
-  '      renderButton(); renderRecents();\n' +
-  '      if(year && window.goToFinanzasYear) window.goToFinanzasYear(id, Number(year));\n' +
-  '    });',
-  'pick -> goToFinanzasYear');
+  '    Promise.resolve(api.pickClub(id)).then(function(){ renderButton(); renderRecents(); });\n  }',
+  `    Promise.resolve(api.pickClub(id)).then(function(){
+      renderButton(); renderRecents();
+      if(year && window.goToFinanzasYear) window.goToFinanzasYear(id, Number(year));
+    });
+  }
+
+  // PROTO: "Ver y elegir otro". La otra mitad de la respuesta a Guido ("permanecer en
+  // el selector y elegir un segundo equipo, liga, o inclusive más de un equipo"): el
+  // club se muestra igual que con "Ver", pero el panel NO se cierra y queda en modo
+  // comparar, así el siguiente que toques se suma en vez de reemplazar.
+  //
+  // POR QUÉ EL PRIMERO TIENE QUE PASAR A SER EL CLUB ACTIVO: el modelo de la
+  // comparación (js/comparar-clubes.js) tiene al club activo como sujeto 0 y a los
+  // demás como rivales. No hay "comparación sin club activo", así que el primer
+  // "Ver y elegir otro" elige, y del segundo en adelante se suma.
+  function pickAndStay(id, year){
+    hideCoach();
+    var cmp = window.CLUB_COMPARE;
+    var active = api.getClub();
+    if(active && cmp && active !== id){
+      cmp.toggleClub(id);
+      if(!cmp.isAddMode()) document.getElementById('compareBtn').click();
+      return;
+    }
+    pushRecent(id);
+    try { localStorage.setItem(LS_CLUB, id); } catch(e){}
+    Promise.resolve(api.pickClub(id)).then(function(){
+      renderButton(); renderRecents();
+      if(year && window.goToFinanzasYear) window.goToFinanzasYear(id, Number(year));
+      // Reabre el panel en modo comparar (el club recién elegido esconde la portada, y
+      // con ella el panel embebido). openForCompare() no está exportado, pero el botón
+      // Comparar del header es exactamente ese camino.
+      document.getElementById('compareBtn').click();
+      render();
+    });
+  }`,
+  'pick -> goToFinanzasYear + pickAndStay');
 parcharSelector('  function pick(id){', '  function pick(id, year){', 'firma de pick');
 
-// (c) mkRow dibuja el <select>. Va ANTES del "+" de comparación, así el orden de la
-//     fila es: nombre › ejercicio › comparar. El `stopPropagation` es obligatorio:
-//     la fila entera es un <button>, y sin eso abrir el dropdown elegiría el club.
+// (c) mkRow dibuja la SEGUNDA LÍNEA de la fila de club: el <select> de ejercicio y los
+//     dos botones. Van en su propio renglón y no al lado del nombre porque con los 3
+//     controles en línea el nombre del club se parte hasta en desktop.
 parcharSelector(
   '    // El "+" de comparación. Vive en la fila del panel (clubes y ligas) y agrega ese',
-  `    // PROTO: el <select> de ejercicio. Pedido de Guido: poder elegir el AÑO desde la
-    // misma fila, sin entrar al club primero y buscar el dropdown de Finanzas después.
-    // La opción 0 no es un año: es "el club entero", que es adónde lleva clickear la
-    // fila, y tiene que seguir siendo el camino por default (el 90% quiere el club,
-    // no un ejercicio puntual).
+  `    // PROTO: la barra de acciones de la fila de club. Tres controles, en este orden:
+    // qué ejercicio, verlo, y verlo sin salir del selector.
+    //
+    // El <select> de ejercicio (pedido de Guido) evita entrar al club y recién ahí
+    // buscar el dropdown de Finanzas. Su opción 0 NO es un año: es "el club entero",
+    // que sigue siendo el camino por default.
+    //
+    // Los 2 botones son la otra mitad: "Ver" sale del selector, "Ver y elegir otro" se
+    // queda adentro para sumar un segundo club (o una liga, con el + de su fila).
+    // Reemplazan al "+" de comparación de la fila de club: un símbolo que había que
+    // descubrir pasa a ser dos botones que dicen lo que hacen.
     if(o.years && o.years.length){
+      var acts = document.createElement('span');
+      acts.className = 'r-acts';
+
       var ys = document.createElement('select');
       ys.className = 'r-years';
       var op0 = document.createElement('option');
       op0.value = '';
-      op0.textContent = o.years.length === 1 ? 'Ver el ejercicio' : 'Ver un ejercicio';
+      op0.textContent = o.years.length === 1 ? 'Todo el club' : 'Todos sus ejercicios';
       ys.appendChild(op0);
       o.years.forEach(function(par){
         var op = document.createElement('option');
@@ -395,20 +472,55 @@ parcharSelector(
           : String(par[0]);
         ys.appendChild(op);
       });
-      ys.title = 'Ir directo a un ejercicio de este club';
+      ys.title = 'Elegí un ejercicio, o dejá "todos" para ver el club entero';
       // Los 3: sin mousedown el <button> de la fila se "arma" y en algunos navegadores
       // se queda con el click; sin click el dropdown elige el club al abrirse.
       ys.addEventListener('mousedown', function(ev){ ev.stopPropagation(); });
       ys.addEventListener('click', function(ev){ ev.stopPropagation(); });
-      ys.addEventListener('change', function(ev){
-        ev.stopPropagation();
-        if(this.value && o.onYear) o.onYear(this.value);
+      ys.addEventListener('change', function(ev){ ev.stopPropagation(); });
+      acts.appendChild(ys);
+
+      [{ cls:'r-go', txt:'Ver', fn:o.onSee, ttl:'Ver este club y salir del selector' },
+       { cls:'r-go alt', txt:'Ver y elegir otro', fn:o.onSeeAndMore, ttl:'Verlo y quedarte acá para sumar otro club o una liga' }
+      ].forEach(function(def){
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = def.cls;
+        btn.textContent = def.txt;
+        btn.title = def.ttl;
+        btn.addEventListener('mousedown', function(ev){ ev.stopPropagation(); });
+        btn.addEventListener('click', function(ev){
+          ev.stopPropagation();
+          if(def.fn) def.fn(ys.value);
+        });
+        acts.appendChild(btn);
       });
-      b.appendChild(ys);
+      b.appendChild(acts);
     }
 
     // El "+" de comparación. Vive en la fila del panel (clubes y ligas) y agrega ese`,
-  'mkRow -> <select> de ejercicio');
+  'mkRow -> barra de acciones');
+
+// (d) BUG REAL, y está en el sitio publicado, no solo acá (lo encontró Guido): al
+//     elegir una región, la columna LIGA seguía mostrando las ligas de TODOS los
+//     países, así que después de cambiar de región quedaban a la vista las ligas de la
+//     región anterior. La selección sí se limpiaba (`sel.league = null`); lo que no se
+//     filtraba era la LISTA. Con país elegido siempre estuvo bien.
+parcharSelector(
+  "    var leagueIds = sel.country ? window.leaguesOfCountry(sel.country)\n" +
+  "                                : Object.keys(window.LEAGUES).filter(function(id){ return window.LEAGUES[id].sport === sel.sport; });",
+  `    var leagueIds = sel.country ? window.leaguesOfCountry(sel.country)
+                                : Object.keys(window.LEAGUES).filter(function(id){
+                                    var lg = window.LEAGUES[id];
+                                    if(lg.sport !== sel.sport) return false;
+                                    // PROTO: sin país pero CON región, solo las ligas de esa región.
+                                    return !sel.region || window.regionOfCountry(lg.country) === sel.region;
+                                  });`,
+  'columna Liga filtrada por región');
+
+// (e) La portada muestra 3 clubes de acceso rápido, no 8 (pedido de Guido). Con el
+//     selector desplegado arriba, esa fila dejó de ser la forma principal de elegir.
+parcharSelector('    quickPicks(8).forEach(function(id){', '    quickPicks(3).forEach(function(id){', 'cantidad de clubes destacados');
 
 fs.writeFileSync(OUT_SEL, selJs);
 
