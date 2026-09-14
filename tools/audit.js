@@ -635,7 +635,7 @@ function checkEscala(api) {
 
   for (const [f, limite] of [['CHANGELOG.md', 100], ['finance-of-sports-project.md', 400], ['index.html', 150]]) {
     const kb = fs.statSync(path.join(ROOT, f)).size / 1024;
-    if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir, ver to-do 0`);
+    if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir, ver to-do 24 de TODO.md`);
   }
 }
 

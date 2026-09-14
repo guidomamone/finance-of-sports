@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/generate-club-index.js — genera, desde los propios datos, la sección
-// "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" del comentario de index.html.
+// "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md`.
 //
 // EL PROBLEMA QUE RESUELVE (la "fuga 1" del mapa de procesos): esa sección se
 // escribía a mano, un párrafo por club, y decía lo mismo que el comentario de
 // cabecera de cada `data/<club>-data.js` ya decía. Dos copias de la misma
-// información, y la de index.html es la que se desactualiza, porque el
+// información, y la escrita a mano es la que se desactualiza, porque el
 // `data/<club>-data.js` es el único archivo que SÍ o SÍ se toca al cargar un
 // club. Con 41 clubes ya eran 18 párrafos desparejos (los primeros clubes con
 // 20 líneas cada uno, los últimos 10 clubes compartiendo un bullet); al objetivo
@@ -24,7 +24,7 @@
 // índice contesta "qué hay"; el archivo del club contesta "por qué".
 //
 // USO:
-//   node tools/generate-club-index.js           reescribe la sección en index.html
+//   node tools/generate-club-index.js           reescribe la sección en ESTADO.md
 //   node tools/generate-club-index.js --check   no escribe; sale con código 1 si
 //                                               la sección quedó desactualizada
 //                                               (sirve para chequear antes de un push)
@@ -35,12 +35,13 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const INDEX = path.join(ROOT, 'index.html');
+// Versión 138: el destino es ESTADO.md. Hasta la 137 esta sección vivía dentro del
+// comentario HTML de index.html; se movió junto con el resto del estado y la to-do list.
+const ESTADO = path.join(ROOT, 'ESTADO.md');
 const CLUB_INDEX_FILE = path.join(ROOT, 'data/club-index.js');
-// OJO: los marcadores NO pueden ser comentarios HTML (`<!-- -->`). Esta sección vive
-// DENTRO del comentario grande de index.html, y un `-->` anidado CIERRA el comentario
-// exterior antes de tiempo: el resto de las notas internas (la TO-DO list incluida) pasa
-// a renderizarse como texto visible en el sitio. Pasó de verdad al escribir este script.
+// Los marcadores se mantuvieron como texto plano al mudar la sección a ESTADO.md, aunque
+// ahí un comentario HTML ya no rompería nada: cambiarlos habría obligado a tocar el
+// archivo a mano justo en la migración, que es cuando más fácil se rompe algo.
 const START = '===== CLUB-INDEX:START (generado por tools/generate-club-index.js, no editar a mano) =====';
 const END = '===== CLUB-INDEX:END =====';
 
@@ -248,10 +249,10 @@ function main() {
   }
 
   const generated = buildIndex(data);
-  const html = fs.readFileSync(INDEX, 'utf8');
+  const html = fs.readFileSync(ESTADO, 'utf8');
   const i = html.indexOf(START), j = html.indexOf(END);
   if (i === -1 || j === -1) {
-    console.error(`ERROR: no encontré los marcadores en index.html.\n  ${START}\n  ${END}`);
+    console.error(`ERROR: no encontré los marcadores en ESTADO.md.\n  ${START}\n  ${END}`);
     process.exit(1);
   }
 
@@ -259,17 +260,17 @@ function main() {
   const next = '\n' + generated + '\n';
 
   if (current === next) {
-    console.log(`index.html ya está al día (${Object.keys(data.generic).length} clubes).`);
+    console.log(`ESTADO.md ya está al día (${Object.keys(data.generic).length} clubes).`);
     generarClubIndex(data, check);
     return;
   }
   if (check) {
-    console.error('index.html quedó DESACTUALIZADO respecto de los datos. Corré: node tools/generate-club-index.js');
+    console.error('ESTADO.md quedó DESACTUALIZADO respecto de los datos. Corré: node tools/generate-club-index.js');
     process.exit(1);
   }
 
-  fs.writeFileSync(INDEX, html.slice(0, i + START.length) + next + html.slice(j), 'utf8');
-  console.log(`index.html actualizado: ${Object.keys(data.generic).length} clubes.`);
+  fs.writeFileSync(ESTADO, html.slice(0, i + START.length) + next + html.slice(j), 'utf8');
+  console.log(`ESTADO.md actualizado: ${Object.keys(data.generic).length} clubes.`);
   generarClubIndex(data, check);
 }
 

@@ -6,16 +6,20 @@ entre los dos.
 
 ## Al empezar a trabajar acá
 
-Leé primero el comentario HTML al principio de `index.html` (antes de
-`<html lang="es">`). Ese bloque es la fuente única de verdad del estado
-actual del proyecto: qué hay armado, qué dato es real vs. placeholder por
-club, y una to-do list en orden de prioridad. Leelo vos solo, sin que Guido
+Leé primero `ESTADO.md` (qué hay armado hoy, y qué hay cargado de cada club) y
+`TODO.md` (qué falta hacer, en orden de prioridad). Leelos vos solo, sin que Guido
 tenga que pedirlo o resumirlo.
+
+Hasta la Versión 137 las dos cosas vivían adentro de un comentario HTML al
+principio de `index.html`. Se movieron a archivos propios el 2026-09-14, a pedido
+explícito de Guido ("Index NO es el archivo para tener to do. Eso era al inicio"):
+eran 80 KB de los 183 KB de `index.html`, que además se bajaba cada visitante en
+cada pageview. En `index.html` quedó un puntero de 15 líneas.
 
 Revisá también si hay algo nuevo pegado en `fuentes-por-club.md` — es donde
 Guido deja links a documentos oficiales o notas de prensa antes de que se
-carguen al sitio. Si hay algo ahí que el comentario de `index.html` todavía
-no menciona como cargado, es trabajo pendiente.
+carguen al sitio. Si hay algo ahí que `ESTADO.md` todavía no menciona como
+cargado, es trabajo pendiente.
 
 Desde la sesión 2026-09-13, `fuentes-por-club.md` es solo un ÍNDICE (una
 línea por club, agrupado por país, con estado resumido + fecha de último
@@ -75,20 +79,22 @@ skill" al final de cada archivo para el criterio de cuándo actualizarlos).
 ## Antes de terminar la sesión
 
 Si se hizo algún cambio real al sitio (datos, features, estructura, copy,
-lo que sea), actualizá el comentario HTML de `index.html` para que siga
-siendo verdad, SIN que Guido tenga que pedirlo explícitamente:
+lo que sea), actualizá estos dos archivos para que sigan siendo verdad, SIN que
+Guido tenga que pedirlo explícitamente:
 
-- **ESTADO ACTUAL**: reflejar lo que cambió (es un snapshot del estado actual,
-  no un log — si algo que decía ahí ya no es cierto, se reemplaza o se borra,
-  no se apila una línea nueva al lado de la vieja).
-- **QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB**: actualizar si se cargó,
-  reemplazó o verificó algún dato.
-- **TO-DO LIST**: sacar o tachar lo que ya se resolvió, reordenar si
-  cambió la prioridad, agregar lo nuevo que haya quedado pendiente.
+- **`ESTADO.md`**: reflejar lo que cambió. Es un snapshot, no un log: si algo que
+  decía ahí ya no es cierto, se reemplaza o se borra, no se apila una línea nueva
+  al lado de la vieja. Su sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" NO
+  se escribe a mano: se regenera con `node tools/generate-club-index.js`.
+- **`TODO.md`**: BORRAR lo que se resolvió (no marcarlo como "RESUELTO" y dejarlo
+  ahí, que es como la lista vieja terminó con la mitad de los puntos siendo cosas
+  ya hechas: la historia queda en `CHANGELOG.md`), reordenar si cambió la
+  prioridad, y agregar lo nuevo que haya quedado pendiente. Los números son
+  identificadores estables, no prioridad: un punto nuevo toma el siguiente al más
+  alto, nunca un hueco libre.
 
-**El historial de versiones YA NO vive en `index.html`** (hasta la Versión
-101 sí, dejó de escalar — ver la nota "HISTORIAL DE VERSIONES" dentro del
-propio comentario de `index.html`). En cambio:
+**El historial de versiones no vive con el estado** (hasta la Versión 101 sí,
+estaba adentro del mismo bloque, y dejó de escalar). En cambio:
 
 - Agregar SIEMPRE una entrada nueva a `CHANGELOG.md` (misma carpeta): unas
   pocas líneas (Keep a Changelog style — qué cambió, no por qué), no un
@@ -102,8 +108,8 @@ propio comentario de `index.html`). En cambio:
   correspondiente en `finance-of-sports-project.md`.
 
 No dupliques la to-do list en `finance-of-sports-project.md` ni en `CHANGELOG.md`. La
-lista oficial de próximos pasos vive solo en `index.html`, para que no haya
-dos listas que se puedan desincronizar.
+lista oficial de próximos pasos vive solo en `TODO.md`, para que no haya dos
+listas que se puedan desincronizar.
 
 ## Estructura de carpetas de documentos fuente: Clubes/<País>/<Club>/ (PDF y transcripción juntos)
 

@@ -936,4 +936,4 @@ terminar esa sesión si:
   `club-or-year-onboarding`), con el documento/página exacto donde se encontró.
 
 No hace falta pedirle permiso a Guido para estas actualizaciones menores, es información viva que
-debería quedar al día sola, igual que el comentario de `index.html`.
+debería quedar al día sola, igual que la sección generada de `ESTADO.md`.

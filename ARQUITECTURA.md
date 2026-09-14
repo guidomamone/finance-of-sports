@@ -7,7 +7,7 @@ Antes vivía dentro del comentario de `index.html`. Se movió acá en la Versió
 114: es referencia que se consulta cuando hace falta (al tocar el motor, al
 agregar un club), no contexto que haga falta leer para retomar el proyecto.
 
-Para el estado del proyecto y la to-do list, ver el comentario de `index.html`.
+Para el estado del proyecto ver `ESTADO.md`, y para la to-do list `TODO.md`.
 Para las reglas vigentes de UI/datos, ver `CONVENCIONES.md`.
 
 ---

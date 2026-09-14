@@ -18,8 +18,9 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | El comentario HTML al principio de `index.html` (antes de `<html lang>`): ESTADO ACTUAL, QUÉ ES REAL POR CLUB, TO-DO LIST | **siempre** | ~51 KB |
-| 2 | `CONVENCIONES.md` | **siempre** | 22 KB |
+| 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 23 KB |
+| 2 | `CONVENCIONES.md` | **siempre** | 25 KB |
+| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 28 KB |
 | 3 | `ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 8 KB |
 | 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 73 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 64 KB |
@@ -97,19 +98,21 @@ falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetS
 
 Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido lo pida:
 
-1. **`index.html`, bloque ESTADO ACTUAL**: es un snapshot, no un log. Si algo que decía ya no es
-   cierto, se reemplaza, no se apila una línea nueva al lado de la vieja.
-2. **`index.html`, TO-DO LIST**: sacar lo resuelto, agregar lo que quedó pendiente, reordenar si
-   cambió la prioridad.
+1. **`ESTADO.md`**: es un snapshot, no un log. Si algo que decía ya no es cierto, se reemplaza, no
+   se apila una línea nueva al lado de la vieja. Su sección "QUÉ ES REAL POR CLUB" se GENERA
+   (`node tools/generate-club-index.js`), no se escribe.
+2. **`TODO.md`**: BORRAR lo resuelto (no marcarlo "RESUELTO" y dejarlo, que es como la lista vieja
+   terminó con la mitad de los puntos siendo cosas ya hechas), agregar lo que quedó pendiente,
+   reordenar si cambió la prioridad. Los números son identificadores estables, no prioridad.
 3. **`CHANGELOG.md`**: SIEMPRE una entrada nueva, aunque el cambio sea chico.
 4. **`finance-of-sports-project.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
    investigación, un bug real con su causa raíz). Un ajuste de UI no lo amerita.
 5. **`CONVENCIONES.md`**: si se decidió una regla nueva o se contradijo una vieja.
 
 No dupliques la to-do list en `CHANGELOG.md` ni en `finance-of-sports-project.md`: la lista oficial vive sólo en
-`index.html`.
+`TODO.md`.
 
-Si onboardeaste un club, la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `index.html` se
+Si onboardeaste un club, la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md` se
 GENERA, no se escribe a mano: corré `node tools/generate-club-index.js` (ver sección 7).
 
 ---
@@ -141,7 +144,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   `sources{}` y los `fiscalYearMeta`. Corrélo después de cargar un club o de tocar una fuente.
   `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.
 - `node tools/generate-club-index.js` — regenera, desde los propios `data/<club>-data.js`, la sección
-  "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `index.html`. Corrélo después de onboardear un club
+  "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
 

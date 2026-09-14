@@ -34,7 +34,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   salarial que el documento no desglosa, o un club sin padrón de socios publicado. Un cero se lee
   como un dato, y "Deuda neta: 0.0" se lee como "este club no debe nada". OJO, esto es un criterio
   de ESA VISTA: el dato sigue diciendo 0 en el archivo del club y otras vistas lo publican como 0
-  (ver to-do 23(a) de `index.html`). El criterio general sigue abierto en la to-do 20(h).
+  (ver to-do 23(a) de `TODO.md`). El criterio general sigue abierto en la to-do 20(h).
 - NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde
@@ -104,7 +104,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   la leen de verdad). Subir la constante y olvidarse de los tags deja al navegador sirviendo los
   `js/data` viejos de su caché con el HTML nuevo: pasó al migrar los `fx`, llegó un
   `currency-map.js` cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y la
-  página entera tiró `ReferenceError`. El comentario de `index.html` y `CLAUDE.md` decían que los
+  página entera tiró `ReferenceError`. Las notas del proyecto y `CLAUDE.md` decían que los
   tags llevaban la constante, que no era cierto. Ahora lo chequea `node tools/audit.js`
   (`asset-v-desfasado`, P1): compara la constante contra cada tag.
 - SEGUNDO EJERCICIO NUEVO DE SAN LORENZO + REGLA DE PRESUPUESTOS EN CAJA (Versión 97, Guido: "quiero
