@@ -775,3 +775,44 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - VERIFICACIÓN: se capturó el texto renderizado de las 6 cards (Boca 2027, Racing 2026, Racing 2027) ANTES del cambio, con los acordeones abiertos, y se comparó después. Los 6 hashes son idénticos, carácter por carácter. Un club sin presupuesto (Vélez) sigue escondiendo las 3 cards.
 - Las tablas de Boca se muestran en pesos enteros y no responden al toggle de moneda, igual que cuando eran HTML fijo (`formato:'ars-exacto'`). Cambiar eso es una decisión aparte, no algo para colar en una mudanza.
 - Los literales de `clubId` en el código bajaron de 5 a 2, y los 2 que quedan son a propósito: el club por defecto (desaparece con el cold start del selector) y los 3 cards de torneo de Boca, que Guido decidió dejar.
+
+## Versión 136: primer sourcing fuera del fútbol — Reino Unido y EE.UU., 27 entidades de 7 deportes
+
+*(Sesión de SOURCING solamente: no se cargó ningún club al sitio, no se tocó ni `index.html` ni
+ningún archivo de `data/` ni de `js/`. Todo lo de abajo son documentos encontrados, descargados y
+documentados, listos para una sesión de onboarding futura.)*
+
+- **Companies House (Reino Unido) es el mejor canal encontrado hasta ahora, y no depende del
+  deporte**: toda sociedad limitada británica deposita cuentas auditadas y el registro las publica
+  gratis, sin login y sin API key. De un solo barrido salieron 4 deportes: fútbol, rugby union,
+  cricket y Fórmula 1.
+- Descargados y verificados uno por uno (entidad y período confirmados por OCR de la portada, no
+  asumidos): **10 clubes de fútbol** (Arsenal, Tottenham, Liverpool, Manchester City, Everton,
+  Chelsea, Newcastle, Aston Villa, West Ham y Celtic en Escocia), **4 de rugby** (Leicester Tigers,
+  Northampton Saints, Bath, Harlequins), **4 condados de cricket** (Surrey, Lancashire, Yorkshire,
+  Warwickshire) y **5 escuderías de F1** (McLaren, Williams, Aston Martin, Mercedes, Red Bull).
+- Los clubes de cricket NO están en Companies House: son *registered societies* y depositan en el
+  **Mutuals Public Register de la FCA**, que resultó mejor todavía — esos PDF sí tienen capa de texto
+  (no hace falta OCR) y el histórico es mucho más profundo. Warwickshire tiene **37 memorias anuales
+  desde 1993** y Surrey **35 desde 1994**: la serie más larga de todo el proyecto.
+- **La SEC también es un canal, para los deportes de EE.UU. que no son fútbol.** El dead-end de la
+  MLS (single-entity) era solo de la MLS: New York Knicks (NBA) y New York Rangers (NHL) publican vía
+  Madison Square Garden Sports Corp., y los Atlanta Braves (MLB) vía Atlanta Braves Holdings. Los
+  filings son HTML con texto real, cero OCR.
+- Manchester United entra por los dos canales a la vez (20-F en la SEC + Companies House) y es el
+  único club inglés del lote que no hay que OCRear. Ingresos 2024/25 ya verificados contra el propio
+  documento: £666,5 M (Commercial 333.274 + Broadcasting 172.977 + Matchday 160.263).
+- Cifras de control ya leídas de los documentos, listas como tie-out: Bath £23,3 M, Surrey £60,3 M,
+  Lancashire £64,0 M, Warwickshire £40,4 M, Yorkshire £18,9 M, MSG Sports USD 1.154 M, Braves
+  USD 732,5 M.
+- Documentación nueva: `fuentes/Inglaterra/` (18 fichas + notas generales con el procedimiento
+  completo), `fuentes/Escocia/`, 3 fichas nuevas en `fuentes/Estados Unidos/`, secciones 9, 10 y 11
+  del skill `club-sourcing`, y 4 decisiones de criterio abiertas en `dudas-por-club.md` (qué país es
+  el de una escudería de F1, qué hacer con un documento que cubre dos clubes de dos deportes, si un
+  equipo de F1 entra en el esquema club-temporada-liga).
+- CONVENCIÓN, decidida por Guido: las carpetas siguen ordenadas por PAÍS y el deporte se declara
+  adentro del archivo de cada club (regla 3 de `fuentes-por-club.md`). No se migró nada de lo
+  existente.
+- `.gitignore`: se agregaron `Clubes/**/*.htm` y `Clubes/**/*.html` para que los filings de la SEC
+  (2-4 MB de HTML cada uno) queden locales igual que los PDF. El patrón está limitado a `Clubes/**`
+  a propósito, porque `index.html` y `fuentes.html` viven en la raíz y sí son parte del sitio.

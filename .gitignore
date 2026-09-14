@@ -4,3 +4,11 @@
 # the site reads from data/*.js, not from these). Their .md transcriptions
 # ARE tracked, since those are small and reusable across sessions.
 *.pdf
+
+# Mismo criterio para los documentos fuente que NO son PDF: los filings de la
+# SEC (10-K, 20-F) se publican como HTML de 2-4 MB cada uno. Se guardan al lado
+# del resto de la documentación del club, pero quedan locales igual que los PDFs.
+# Ojo con el path: tiene que ser Clubes/** y no *.htm suelto, porque index.html
+# y fuentes.html viven en la raíz y SÍ son parte del sitio.
+Clubes/**/*.htm
+Clubes/**/*.html

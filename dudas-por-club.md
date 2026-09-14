@@ -245,6 +245,36 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   contábeis completas (DRE y balanço patrimonial como tablas) del ejercicio 2024? Con eso el club
   pasaría de 1 línea de ingresos a un desglose real.
 
+## Clubes que NO son de fútbol (sesión 2026-09-13, primer sourcing multideporte)
+
+Estas 4 no son preguntas para un club: son decisiones de criterio del PROYECTO que aparecieron al
+sumar deportes nuevos, y que conviene que resuelva Guido antes de que se carguen los primeros
+documentos, porque después son caras de cambiar. Se anotan acá y no en un comentario de código
+porque no hay ningún archivo de club todavía donde ponerlas.
+
+- **¿Cuál es el "país" de una escudería de Fórmula 1?**: las 5 escuderías bajadas están registradas
+  en Inglaterra y depositan ahí sus cuentas, pero compiten con licencia de otra nacionalidad —
+  Mercedes corre con licencia **alemana** desde Brackley (Inglaterra) y Red Bull Racing con licencia
+  **austríaca** desde Milton Keynes (Inglaterra). Por ahora quedaron archivadas bajo `Inglaterra`
+  (que es de donde sale el documento), pero el sitio muestra el país como un dato del club, no del
+  documento. ¿País = registro societario, o país = licencia de competencia? — esto no se pregunta a
+  ningún club, lo define el sitio.
+- **¿Qué hacer con un documento que cubre DOS clubes de DOS deportes?**: el 10-K de Madison Square
+  Garden Sports Corp. consolida a los New York Knicks (NBA) y a los New York Rangers (NHL) en un solo
+  estado, con ingresos combinados de USD 1.154 M en FY2026. Falta chequear si la nota de segmentos
+  los desglosa; si no lo hace, ¿se carga el bundle aclarando la mezcla (como se hizo con Club América
+  dentro de Ollamani), se carga como una entidad sola llamada "MSG Sports", o no se carga? Ver
+  `fuentes/Estados Unidos/New York Knicks.md`.
+- **Atlanta Braves: ¿consolidado o solo el segmento de béisbol?**: Atlanta Braves Holdings reporta
+  dos segmentos, el club y el desarrollo inmobiliario The Battery Atlanta. El total consolidado 2025
+  es USD 732,5 M. ¿Se muestra el consolidado (que incluye ingresos que no son deporte) o solo el
+  segmento de béisbol? Mismo tipo de decisión que ya se tomó en México, conviene que sea el mismo
+  criterio.
+- **¿Un equipo de F1 es un "club"?**: el esquema del sitio asume club-temporada-liga. Una escudería
+  no tiene socios, ni ascensos, ni mercado de pases en el sentido del fútbol, y su ejercicio coincide
+  exacto con el campeonato. Antes de cargar la primera, definir si entra en el mismo esquema o si
+  necesita un tratamiento propio.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

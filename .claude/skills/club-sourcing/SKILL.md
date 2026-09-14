@@ -3,7 +3,14 @@ name: club-sourcing
 description: Metodología para BUSCAR estados financieros/balances auditados de clubes de fútbol que todavía no tienen nada cargado en finance-of-sports — qué regulador o canal público chequear según el país, gotchas concretos de cada portal (URLs que no sirven, formularios que hay que usar de una forma específica, categorías legales que determinan si un club puede o no tener balance público), y qué hacer cuando no se encuentra nada. Usar ANTES de salir a buscar PDFs de un club/país nuevo, para no repetir intentos que una sesión anterior ya probó y descartó. Es sourcing (encontrar y guardar el PDF), no mapeo de datos — para categorizar lo que ya se encontró, ver `club-data-mapping`.
 ---
 
-# Cómo buscar estados financieros de clubes de fútbol, país por país
+# Cómo buscar estados financieros de clubes, país por país
+
+**Actualizado 2026-09-13: esto ya no es solo de fútbol.** La sección 9 (Reino Unido) fue el primer
+hallazgo donde el canal NO depende del deporte sino de la forma jurídica del club, y de una sola vez
+abrió fútbol, rugby union, cricket y Fórmula 1. Cuando encares un país nuevo, la pregunta útil no es
+"¿dónde publica su balance un club de fútbol de acá?" sino "¿qué obligación de publicar tiene la
+figura jurídica que usan los clubes de acá?" — la respuesta suele servir para todos los deportes
+juntos.
 
 Este skill es la memoria de qué funcionó y qué no al buscar balances/estados contables auditados de
 clubes que todavía no están en el sitio (fuera de Argentina, principalmente, donde el criterio ya es
@@ -316,7 +323,9 @@ público de todo el proyecto — con UNA excepción real que vale la pena explot
   compartido con otra tarea en paralelo, pestañas cerrándose solas) — no un bloqueo real del sitio.
   Waterhouse FC Limited ya confirmado como entidad registrada candidata. Retomar con browser dedicado
   o pagando la tarifa en JMD por el documento certificado — ver `fuentes/Jamaica/_notas-generales.md`.
-- **MLS (Estados Unidos/Canadá) — dead-end estructural confirmado, no reintentar**: la liga opera
+- **MLS (Estados Unidos/Canadá) — dead-end estructural confirmado para el FÚTBOL, no reintentar**
+  (pero ojo: esto NO es la conclusión sobre EE.UU. en general — ver sección 10, donde la SEC sí
+  resultó un canal real para básquet, hockey y béisbol): la liga opera
   como "single-entity" (Major League Soccer, L.L.C. es dueña centralizada de todos los equipos y
   contratos) — no existe ni puede existir un balance standalone por club bajo este diseño
   institucional. Confirmado en SEC EDGAR: cero filings de clubes individuales. Las valuaciones de
@@ -377,6 +386,95 @@ el resumen que importa para decidir por dónde seguir.
 Ningún club africano (de los investigados en ningún país) cotiza en ninguna bolsa continental, y no
 existe ningún club de fútbol africano listado directamente en bolsa (a diferencia de casos europeos
 como Ajax o Borussia Dortmund) — confirmado con una búsqueda específica de este punto.
+
+## 9. Reino Unido — Companies House, el mejor canal del proyecto, y sirve para CUALQUIER deporte
+
+Primer barrido 2026-09-13. Toda sociedad limitada británica está obligada por la Companies Act 2006
+a depositar cuentas anuales auditadas, y **Companies House las publica enteras, gratis, sin login,
+sin API key y sin límite** — un `curl` con User-Agent de navegador alcanza. No hay equivalente al
+`auth`/`send` de la CMF chilena, al Referer del SIIS colombiano ni al pago del OMPIC marroquí.
+
+Como la obligación es por forma jurídica y no por deporte, de un solo barrido salieron 24 entidades
+de 4 deportes: 10 clubes de fútbol (9 Premier League + Celtic en Escocia), 4 de rugby union
+(Premiership), 4 condados de cricket y 5 escuderías de Fórmula 1.
+
+**Los 3 pasos:**
+1. Buscar: `.../search/companies?q=<nombre>` → `href="/company/<número>"`.
+2. Listar: `.../company/<número>/filing-history` (y `?page=2` para ir más atrás). El parámetro
+   `?category=accounts` **no filtra nada** por `curl`, hay que filtrar por texto uno mismo.
+3. Bajar: `.../company/<número>/filing-history/<transactionId>/document?format=pdf&download=0`.
+   (Host: `find-and-update.company-information.service.gov.uk`.)
+
+**El tipo de presentación dice qué hay adentro, y hay que leerlo:**
+- `Group of companies' accounts` = consolidadas, es lo que conviene.
+- `Full accounts` = una sola sociedad; puede dejar afuera actividad del grupo (Manchester City y
+  Aston Villa presentan así, y su grupo controlante es otra entidad).
+- `Accounts for a medium company` = **puede** venir sin cuenta de resultados, pero no siempre:
+  verificado que Bath Rugby FY2024/25 trae el P&L completo igual. No descartar por la etiqueta, abrir
+  y buscar `TURNOVER`.
+- `Accounts for a dormant company` / `Micro company accounts` = sociedad vacía; la operativa es otra.
+
+**Gotcha central: los PDF de Companies House son ESCANEOS** (`Creator: go-tiff2pdf`), ~1 char/página
+con `pdftotext`. Hay que OCRear con el flujo ya conocido del proyecto pero con `-l eng` en vez de
+`-l spa`; probado a 200 dpi con `--psm 6` y la calidad es muy buena. Se probó pedir el iXBRL original
+(`?format=xhtml` / `?format=xml`, que evitaría el OCR entero): devolvió **HTTP 500**. Vale reintentar
+por sociedad, no contar con eso.
+
+**Los clubes de cricket NO están en Companies House.** Son *registered societies* (número terminado
+en `R`) y depositan en el **Mutuals Public Register de la FCA**. Buscados en Companies House aparecen
+pero con historial de presentaciones VACÍO — no es que no publiquen, es el registro equivocado. El
+canal de la FCA resultó incluso mejor:
+- Buscar: `https://mutuals.fca.org.uk/Search/Search?SearchTerm=<nombre>` → `/Search/Society/<id>`.
+- Listar (JSON, sin login): `https://mutuals.fca.org.uk/Documents/GetSocietiesDocument?societyId=<id>`.
+  **Gotcha de parseo**: devuelve dos formas distintas según la sociedad, a veces un array pelado y a
+  veces `{sEcho, iTotalRecords, aaData}`. Si no se contemplan las dos, el listado sale vacío sin
+  error (en esta sesión 6 condados dieron "0 memorias" hasta arreglarlo).
+- Bajar: `https://mutuals.fca.org.uk/Documents/Download/<docId>`.
+- **Atajo de descubrimiento**: el padrón COMPLETO de las 32.430 sociedades registradas está como CSV
+  abierto en `https://fcastoragemprprod.blob.core.windows.net/societylist/SocietyList.csv`. Filtrando
+  por nombre se encuentran todas las de un deporte de una (43 con "cricket").
+- **Estos PDF SÍ tienen capa de texto** (57.000-131.000 caracteres): `pdftotext -layout` y listo, sin
+  OCR. Y el histórico es mucho más profundo que Companies House: Warwickshire tiene 37 memorias desde
+  1993 y Surrey 35 desde 1994 — la serie más larga de todo el proyecto.
+
+**Escocia** es el mismo Companies House, con números `SC` (Celtic = `SC003487`).
+
+**Qué queda**: los 92 clubes de Premier + EFL, los 9 condados de cricket restantes (ya identificados
+en el CSV), el resto de Premiership Rugby, la Super League de rugby league. No hay nada que
+investigar en ninguno de esos, es ejecutar el mismo procedimiento.
+
+## 10. Estados Unidos — la SEC, para los deportes que NO son fútbol
+
+El dead-end de la MLS (sección 7) es real pero es SOLO de la MLS. La regla que sí generaliza es la
+misma que ya había aparecido en México con Ollamani/Club América: **si el dueño de un club es una
+compañía que cotiza, la SEC la obliga a publicar estados auditados completos, gratis**. Confirmado
+2026-09-13 para 3 clubes de 3 deportes: New York Knicks (NBA) y New York Rangers (NHL) vía Madison
+Square Garden Sports Corp. (`MSGS`), y Atlanta Braves (MLB) vía Atlanta Braves Holdings (`BATRA`).
+
+Procedimiento: `https://www.sec.gov/files/company_tickers.json` (padrón de emisores, sirve además
+como descarte rápido) → `https://data.sec.gov/submissions/CIK<cik a 10 dígitos>.json` →
+`https://www.sec.gov/Archives/edgar/data/<cik>/<accession sin guiones>/<primaryDocument>`.
+
+**Dos ventajas y un gotcha:**
+- Los documentos son **HTML con texto real**, no escaneos: cero OCR. El más barato de procesar de
+  todos los canales del proyecto.
+- El mismo canal sirve para clubes que no son de EE.UU.: Manchester United plc presenta un 20-F,
+  así que es el único club inglés de esta sesión que NO hay que OCRear.
+- **Gotcha**: la SEC devuelve **HTTP 403** si el `User-Agent` no identifica a quien consulta. Un UA
+  de navegador común NO alcanza (sí alcanza en Companies House); hay que mandar el formato que pide
+  la SEC, `Nombre contacto@dominio`.
+
+Problema recurrente de este canal, en los 3 casos: **el perímetro nunca es "un club"**. MSG Sports
+mezcla dos clubes de dos deportes en un solo consolidado, Braves Holdings mezcla el club con un
+desarrollo inmobiliario, Ollamani mezclaba el club con el estadio y con negocios que no son deporte.
+Antes de cargar, mirar la nota de segmentos y decidir explícitamente qué perímetro se publica.
+
+## 11. Gotcha de TOOLING (no de ningún portal): tesseract no puede leer de `/tmp`
+
+En este entorno, `tesseract /tmp/x.png stdout` falla con `Error in fopenReadStream: failed to open
+locally`. No es un problema del PDF ni del OCR: el sandbox bloquea esa ruta. Hay que renderizar las
+imágenes al directorio de scratchpad de la sesión y OCRear desde ahí. Se pierde bastante tiempo
+buscándole la vuelta si uno cree que el PDF está roto.
 
 ## Cómo mantener este skill
 

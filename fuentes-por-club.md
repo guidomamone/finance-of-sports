@@ -41,10 +41,20 @@ a la AIN, o contacto directo con un socio— para la próxima vez).
 
 ---
 
+**REGLA 3 (sesión 2026-09-13, decisión de Guido al sumar el primer deporte que no es fútbol)**:
+las carpetas siguen ordenadas por PAÍS, no por deporte. El deporte va declarado adentro del archivo
+de cada club (primera línea, `- **Deporte**:`) y, cuando no es fútbol, también en su línea del índice
+de acá. Si algún día dos clubes del mismo país comparten nombre en deportes distintos, se desambigua
+en el nombre del archivo. Se eligió así para no migrar los 41 clubes de fútbol ya cargados y no tocar
+los paths que ya citan docs y skills.
+
+---
+
 ## Índice de clubes
 
 Cada club tiene su propio archivo en `fuentes/<País>/<Club>.md` con el detalle completo
 (links, fecha de último chequeo, qué se probó y qué falta). Esta es solo la vista rápida.
+Las líneas sin deporte declarado son de fútbol.
 
 ### Argentina
 
@@ -291,10 +301,13 @@ inesperado en México (Club América vía Ollamani, S.A.B., cotizante en BMV). V
 - [Waterhouse FC](<fuentes/Jamaica/Waterhouse FC.md>) — sin PDF, lead sin cerrar (Companies Act) — Último chequeo: 2026-09-13
 - [Notas generales de Jamaica](fuentes/Jamaica/_notas-generales.md)
 
-### Estados Unidos (MLS)
+### Estados Unidos
 
-- [LA Galaxy](<fuentes/Estados Unidos/LA Galaxy.md>) — sin PDF, dead-end estructural (single-entity) — Último chequeo: 2026-09-13
-- [Notas generales de Estados Unidos](<fuentes/Estados Unidos/_notas-generales.md>)
+- [Atlanta Braves](<fuentes/Estados Unidos/Atlanta Braves.md>) — **béisbol (MLB)** — 10-K 2025 real descargado, 3 ejercicios disponibles — Último chequeo: 2026-09-13
+- [New York Knicks](<fuentes/Estados Unidos/New York Knicks.md>) — **básquet (NBA)** — 10-K FY2026 real descargado, comparte documento con los Rangers — Último chequeo: 2026-09-13
+- [New York Rangers](<fuentes/Estados Unidos/New York Rangers.md>) — **hockey sobre hielo (NHL)** — mismo 10-K de MSG Sports que los Knicks — Último chequeo: 2026-09-13
+- [LA Galaxy](<fuentes/Estados Unidos/LA Galaxy.md>) — fútbol (MLS) — sin PDF, dead-end estructural (single-entity) — Último chequeo: 2026-09-13
+- [Notas generales de Estados Unidos](<fuentes/Estados Unidos/_notas-generales.md>) — el dead-end de la MLS NO se extiende al resto de los deportes: la SEC sí es un canal
 
 **Clubes de África:** Primer barrido de sourcing en el continente (sesión 2026-09-13), 0 clubes con
 PDF real conseguido pero 4 países investigados a fondo con metodología propia por país — ver
@@ -331,6 +344,43 @@ un pago que un agente no puede completar).
 ### Nigeria
 
 - [Notas generales de Nigeria](fuentes/Nigeria/_notas-generales.md) — dead-end a nivel liga completa (NPFL), clubes mayormente estatales sin registro CAC
+
+### Inglaterra
+
+Primer país con más de un deporte. El canal es **Companies House** (gratis, sin API key, toda
+sociedad limitada obligada a depositar cuentas auditadas) y, para los clubes de cricket, el
+**registro de mutuales de la FCA** — ver [Notas generales de Inglaterra](fuentes/Inglaterra/_notas-generales.md),
+que es el archivo a leer antes de tocar cualquier club británico.
+
+- [Arsenal](fuentes/Inglaterra/Arsenal.md) — 2 ejercicios reales descargados (2023/24-2024/25), 18 disponibles — Último chequeo: 2026-09-13
+- [Aston Villa](fuentes/Inglaterra/Aston Villa.md) — 1 ejercicio real (2024/25), 8 disponibles — Último chequeo: 2026-09-13
+- [Chelsea](fuentes/Inglaterra/Chelsea.md) — 1 ejercicio real (2024/25), 12 disponibles — Último chequeo: 2026-09-13
+- [Everton](fuentes/Inglaterra/Everton.md) — 2 ejercicios reales (2023/24-2024/25), 6 disponibles — Último chequeo: 2026-09-13
+- [Liverpool](fuentes/Inglaterra/Liverpool.md) — 2 ejercicios reales (2023/24-2024/25), 16 disponibles — Último chequeo: 2026-09-13
+- [Manchester City](fuentes/Inglaterra/Manchester City.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; cuentas individuales, no del grupo — Último chequeo: 2026-09-13
+- [Manchester United](fuentes/Inglaterra/Manchester United.md) — 20-F 2024/25 real, **sin escanear (HTML)**, ingresos £666,5 M ya verificados — Último chequeo: 2026-09-13
+- [Newcastle United](fuentes/Inglaterra/Newcastle United.md) — 1 ejercicio real (2024/25), 14 disponibles — Último chequeo: 2026-09-13
+- [Tottenham Hotspur](fuentes/Inglaterra/Tottenham Hotspur.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles — Último chequeo: 2026-09-13
+- [West Ham United](fuentes/Inglaterra/West Ham United.md) — 1 ejercicio real (2024/25), 9 disponibles — Último chequeo: 2026-09-13
+- [Bath Rugby](fuentes/Inglaterra/Bath Rugby.md) — **rugby union (Premiership)** — 2 ejercicios reales, ingresos £23,3 M verificados, 16 disponibles — Último chequeo: 2026-09-13
+- [Harlequins](fuentes/Inglaterra/Harlequins.md) — **rugby union (Premiership)** — 1 ejercicio real (2022/23), 13 disponibles; los 2 últimos son cuentas abreviadas, verificar — Último chequeo: 2026-09-13
+- [Leicester Tigers](fuentes/Inglaterra/Leicester Tigers.md) — **rugby union (Premiership)** — 2 ejercicios reales, 12 disponibles — Último chequeo: 2026-09-13
+- [Northampton Saints](fuentes/Inglaterra/Northampton Saints.md) — **rugby union (Premiership)** — 2 ejercicios reales, 14 disponibles — Último chequeo: 2026-09-13
+- [Lancashire CCC](fuentes/Inglaterra/Lancashire CCC.md) — **cricket (County Championship)** — 1 ejercicio real (2025), ingresos £64,0 M verificados, **33 memorias desde 1996** — Último chequeo: 2026-09-13
+- [Surrey CCC](fuentes/Inglaterra/Surrey CCC.md) — **cricket (County Championship)** — 2 ejercicios reales, ingresos £60,3 M verificados, **35 memorias desde 1994** (la serie más larga del proyecto) — Último chequeo: 2026-09-13
+- [Warwickshire CCC](fuentes/Inglaterra/Warwickshire CCC.md) — **cricket (County Championship)** — 1 ejercicio real (2025), ingresos £40,4 M verificados, **37 memorias desde 1993** — Último chequeo: 2026-09-13
+- [Yorkshire CCC](fuentes/Inglaterra/Yorkshire CCC.md) — **cricket (County Championship)** — 1 ejercicio real (2025), ingresos £18,9 M verificados, 33 memorias desde 1999 — Último chequeo: 2026-09-13
+- [Aston Martin F1](fuentes/Inglaterra/Aston Martin F1.md) — **Fórmula 1** — 1 ejercicio real (2024), 7 disponibles — Último chequeo: 2026-09-13
+- [McLaren Racing](fuentes/Inglaterra/McLaren Racing.md) — **Fórmula 1** — 1 ejercicio real (2024), 6 disponibles; el consolidado incluye IndyCar y Fórmula E — Último chequeo: 2026-09-13
+- [Mercedes F1](fuentes/Inglaterra/Mercedes F1.md) — **Fórmula 1** — 2 ejercicios reales (2024-2025), 11 disponibles; licencia alemana, fábrica inglesa — Último chequeo: 2026-09-13
+- [Red Bull Racing](fuentes/Inglaterra/Red Bull Racing.md) — **Fórmula 1** — 1 ejercicio real (2024), **21 disponibles desde 2004**; licencia austríaca, fábrica inglesa — Último chequeo: 2026-09-13
+- [Williams Racing](fuentes/Inglaterra/Williams Racing.md) — **Fórmula 1** — 1 ejercicio real (2024), 11 disponibles — Último chequeo: 2026-09-13
+- [Notas generales de Inglaterra](fuentes/Inglaterra/_notas-generales.md)
+
+### Escocia
+
+- [Celtic](fuentes/Escocia/Celtic.md) — 1 ejercicio real (2024/25), 6 disponibles — Último chequeo: 2026-09-13
+- [Notas generales de Escocia](fuentes/Escocia/_notas-generales.md) — mismo Companies House que Inglaterra, números `SC`
 
 ### España
 
