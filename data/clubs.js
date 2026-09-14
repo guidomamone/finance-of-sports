@@ -123,13 +123,6 @@ const sources = {
       type:'official_budget', reliability:'primary',
       note:'PDF subido directamente por Guido. Transcripto completo en el acordeón "Presupuesto 2026/27 (oficial)" de Finanzas.',
     },
-  'boca-placeholder-historico': {
-      id:'boca-placeholder-historico', clubId:'boca',
-      title:'Placeholder histórico 2018-2024 (números inventados para probar el diseño del sitio)',
-      type:'estimate_placeholder', reliability:'placeholder',
-      publicNote:'No es un documento: son números de prueba, puestos para diseñar el sitio mientras se consiguen los balances reales de esos ejercicios.',
-      note:'Pendiente reemplazar con los balances oficiales de bocajuniors.com.ar/club/presupuesto (ver fuentes-por-club.md). El Ejercicio 2025 ya no es placeholder, ver boca-balance-2024-25.',
-    },
   'boca-balance-2024-25': {
       id:'boca-balance-2024-25', clubId:'boca',
       title:'Memoria y Balance (estados contables auditados), Ejercicio Económico N°121, 1/7/2024 a 30/6/2025',
@@ -144,9 +137,15 @@ const sources = {
 // resto de los clubes agrega gestionesByClub.<club> = {...} al final de su propio archivo.
 const gestionesByClub = {
   boca: {
-      riquelme:  { nombre:'Riquelme (2023-actual)', firstYear:2024, lastYear:2027 },
+      riquelme:  { nombre:'Riquelme (2023-actual)', firstYear:2025, lastYear:2027 },
       ameal:     { nombre:'Ameal (2019-2023)',      firstYear:2021, lastYear:2023 },
       angelici:  { nombre:'Angelici (2015-2019)',   firstYear:2018, lastYear:2019 },
+      // Versión 138: `ameal` y `angelici` ya NO tienen ningún ejercicio de Finanzas detrás. Sus
+      // años eran los placeholder de Boca, que se borraron. Se quedan acá porque Mercado de Pases
+      // y Resultados Deportivos siguen agrupando por gestión y tienen filas de las dos, y porque
+      // `finanzasYears`/`finanzasGestiones` de data/boca-data.js ya las excluía del selector de
+      // Finanzas desde la Versión 81. El día que se cargue un balance real de esos años, sus
+      // firstYear/lastYear vuelven a apuntar a algo.
     },
 };
 

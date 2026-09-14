@@ -855,3 +855,31 @@ documentados, listos para una sesión de onboarding futura.)*
 - Verificación: `auditAll()` 41 clubes, 222 checks, 0 que no cierran, 0 warnings de fx. `node
   tools/audit.js` 0 P0, 0 P1. Cada cifra de la comparación verificada contra `computeYearGeneric()`
   + `toDisplayValue()`.
+
+## Versión 138: el estado y la to-do list salen de index.html, y se van los ejercicios placeholder
+
+- `ESTADO.md` y `TODO.md` nuevos. Hasta acá el estado del proyecto, la lista de qué es real por club
+  y la to-do list entera vivían en un comentario HTML de 830 líneas al principio de `index.html`:
+  80 KB de los 183 KB del archivo, que además bajaba cada visitante en cada pageview. Pedido
+  explícito de Guido ("Index NO es el archivo para tener to do. Eso era al inicio"). En `index.html`
+  queda un puntero de 15 líneas y el archivo baja a 122 KB, fuera de la lista de archivos pesados de
+  la auditoría.
+- `tools/generate-club-index.js` ahora escribe la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR
+  CLUB" en `ESTADO.md` en vez de en `index.html`.
+- TO-DO: se borraron 4 puntos por decisión de Guido en vez de marcarlos resueltos (buscar los
+  ejercicios que faltan de Racing/River y de Boca, el toggle de Formato simplificado ya resuelto, y
+  Mercado de Pases, fuera de alcance). La mitad que seguía abierta del viejo punto 0 (partir
+  `CHANGELOG.md` y la narrativa) vuelve como punto 24. Los números pasan a ser identificadores
+  estables, no prioridad: los puntos se citan entre ellos y desde los skills.
+- SE BORRARON LOS 9 EJERCICIOS PLACEHOLDER que quedaban, 7 de Boca (2018, 2019, 2021, 2022, 2023,
+  2024, 2026) y 2 de River (2021, 2025), junto con sus 2 entradas de `sources`. Cinco eran
+  placeholder puro con rubros inventados; cuatro eran ejercicios reales sin publicar, cargados en
+  cero. Todo ejercicio que muestra el sitio tiene ahora un documento detrás.
+- Consecuencias: 85 ejercicios en vez de 94, 89 documentos en vez de 91, Boca pasa de calidad
+  "mixta" a "oficial" en el selector, los gráficos de Inicio pierden las columnas vacías, y el
+  `<select>` de Año de Boca queda con sus 2 ejercicios reales. `gestionesByClub` se ajustó: el rango
+  de Riquelme arranca en 2025 y el de Brito es 2024; `ameal`, `angelici` y `donofrio` se quedan sin
+  ejercicio pero siguen declaradas, porque Mercado de Pases y Resultados agrupan por gestión.
+- Verificación: `auditAll()` 41 clubes, 222 checks, 0 que no cierran, 0 warnings de fx (los mismos
+  222: ningún ejercicio borrado tenía total oficial contra qué cerrar). `node tools/audit.js` 0 P0,
+  0 P1.

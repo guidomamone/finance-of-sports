@@ -41,79 +41,15 @@
 
 
 // ---------- INGRESOS ----------
-// Placeholder (2018/2019/2021/2022/2023): mismos 9 campos inventados de siempre (ver
-// Versión 81 del historial, "quita los años placeholder de Finanzas" — por eso
-// `finanzasYears` más abajo los excluye del <select> de Finanzas, pero se dejan acá para
-// no romper Mercado de Pases/Resultados/Comparar Gestiones, que sí siguen usando estos 5
-// años vía gestionesByClub.boca en data/clubs.js). 2024/2026: en cero a propósito
-// (ejercicios reales que Boca todavía no publicó, ver bocaFiscalYearMeta más abajo).
+// Versión 138 (pedido de Guido: "quita los ejercicios que sean placeholder, antes tenían
+// sentido, hoy no"): Boca tenía 7 ejercicios sin documento detrás y se borraron los 7. Cinco
+// eran placeholder puro con 9 rubros inventados (2018, 2019, 2021, 2022, 2023), puestos
+// cuando el sitio era un MVP y necesitaba algo que dibujar; los otros dos (2024, 2026) eran
+// `pending_official`, ejercicios reales que Boca todavía no publicó, cargados en cero. Los
+// dos casos se veían igual en pantalla: una columna vacía en los gráficos de Inicio con la
+// leyenda "no reportado por el club", y una opción "(Placeholder)" en el selector de Año.
+// Quedan los 2 ejercicios con documento: el balance 2024/25 y el presupuesto 2026/27.
 const bocaRevenueLinesByYear = {
-  2018: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:9, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:16, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
-  2019: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:10, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:18, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
-  2021: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:17, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:23, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
-  2022: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:18, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:27, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
-  2023: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:18, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:29, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0.2, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
-  2024: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
   // Ejercicio 2025 = Memoria y Balance oficial auditado al 30/06/2025 (sources['boca-balance-2024-25']
   // en data/clubs.js). Las 11 categorías tal cual la pág. 76 del balance (mismo orden y mismos montos
   // que antes vivían en nativeFinancialsBoca[2025].ingresos): la suma da EXACTO el Total de Recursos
@@ -151,17 +87,6 @@ const bocaRevenueLinesByYear = {
     { rawLabel:'Cesión de jugadores a préstamo', normalizedCategory:'player_sales', amountNative:375.211221, disclosureLevel:'detailed' },
     { rawLabel:'Departamento de educación física', normalizedCategory:'other_sports', amountNative:796.665345, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos varios', normalizedCategory:'other_income', amountNative:3037.163188, disclosureLevel:'detailed' },
-  ],
-  2026: [
-    { rawLabel:'Cuotas Sociales', normalizedCategory:'member_dues', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comerciales', normalizedCategory:'sponsorship_commercial', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Exhibición de Espectáculos Deportivos', normalizedCategory:'matchday_competition', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros deportes', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Basket Profesional', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Juvenil', normalizedCategory:'youth_football', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Futbol Femenino', normalizedCategory:'womens_football', amountNative:0, disclosureLevel:'not_disclosed' },
   ],
   // Ejercicio 2027 = Presupuesto oficial 2026/27. Las mismas 9 categorías y montos que antes vivían en
   // yearsRaw[2027]+revenueBreakdown[2027]. Suma exacta a $239.392,104 M, el total oficial del presupuesto.
@@ -216,55 +141,6 @@ const bocaRevenueLinesByYear = {
 
 // ---------- GASTOS ----------
 const bocaExpenseLinesByYear = {
-  2018: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:-14, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-8, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Ítems excepcionales', normalizedCategory:'exceptional_items', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases', normalizedCategory:'player_amortisation', amountNative:-2.5, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Deterioro de pases', normalizedCategory:'player_impairment', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-0.5, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otras amortizaciones', normalizedCategory:'other_amortisation', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-  ],
-  2019: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:-15, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-9, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Ítems excepcionales', normalizedCategory:'exceptional_items', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases', normalizedCategory:'player_amortisation', amountNative:-3.0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Deterioro de pases', normalizedCategory:'player_impairment', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-0.6, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otras amortizaciones', normalizedCategory:'other_amortisation', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-  ],
-  2021: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:-22, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-13, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Ítems excepcionales', normalizedCategory:'exceptional_items', amountNative:-0.1, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases', normalizedCategory:'player_amortisation', amountNative:-4.5, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Deterioro de pases', normalizedCategory:'player_impairment', amountNative:-0.2, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-0.8, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otras amortizaciones', normalizedCategory:'other_amortisation', amountNative:-0.2, disclosureLevel:'not_disclosed' },
-  ],
-  2022: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:-24, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-13, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Ítems excepcionales', normalizedCategory:'exceptional_items', amountNative:-0.2, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases', normalizedCategory:'player_amortisation', amountNative:-4.8, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Deterioro de pases', normalizedCategory:'player_impairment', amountNative:-0.3, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-0.9, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otras amortizaciones', normalizedCategory:'other_amortisation', amountNative:-0.2, disclosureLevel:'not_disclosed' },
-  ],
-  2023: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:-25, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-13, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Ítems excepcionales', normalizedCategory:'exceptional_items', amountNative:-0.3, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases', normalizedCategory:'player_amortisation', amountNative:-5.0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Deterioro de pases', normalizedCategory:'player_impairment', amountNative:-0.4, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-1.0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otras amortizaciones', normalizedCategory:'other_amortisation', amountNative:-0.2, disclosureLevel:'not_disclosed' },
-  ],
-  2024: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'not_disclosed' },
-  ],
   // Ejercicio 2025: reconstruido departamento por departamento a partir de Clubes/Argentina/Boca/
   // memoria-y-balance-2024-25.md (Anexos IX, X, XI-XVIII), separando en cada departamento su propia
   // línea "Remuneraciones y cargas sociales" (wages_squad) del resto de sus gastos operativos —
@@ -361,10 +237,6 @@ const bocaExpenseLinesByYear = {
       ['Comisiones y gastos bancarios', -811.583347], ['Seguros', -615.119216], ['Gratificaciones', -109.316586], ['Gastos diversos', -39.750336],
     ]},
     { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-7452.805787, disclosureLevel:'detailed' },
-  ],
-  2026: [
-    { rawLabel:'Salarios', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'not_disclosed' },
   ],
   // Ejercicio 2027 = Presupuesto oficial 2026/27, misma fuente que antes (expenseBreakdown[2027]/
   // expenseSubBreakdown[2027]). "Fútbol Profesional" (-120.358,357 M en el resumen del presupuesto) se
@@ -549,24 +421,6 @@ const bocaExpenseLinesByYear = {
 
 // ---------- METADATOS POR EJERCICIO ----------
 const bocaFiscalYearMeta = {
-  2018: { currency:'USD', fx:null, sourceId:'boca-placeholder-historico', reportType:'placeholder', gestionId:'angelici',
-    grossDebt:5.5, cash:1.8, profitOnPlayerSales:5.5, assetSales:0, netInterest:-0.4, tax:-0.1,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
-  2019: { currency:'USD', fx:null, sourceId:'boca-placeholder-historico', reportType:'placeholder', gestionId:'angelici',
-    grossDebt:6.1, cash:2.0, profitOnPlayerSales:6.0, assetSales:0, netInterest:-0.5, tax:-0.1,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
-  2021: { currency:'USD', fx:null, sourceId:'boca-placeholder-historico', reportType:'placeholder', gestionId:'ameal',
-    grossDebt:11.8, cash:1.0, profitOnPlayerSales:3.0, assetSales:0, netInterest:-0.9, tax:-0.1,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
-  2022: { currency:'USD', fx:null, sourceId:'boca-placeholder-historico', reportType:'placeholder', gestionId:'ameal',
-    grossDebt:11.0, cash:1.2, profitOnPlayerSales:4.2, assetSales:0, netInterest:-0.8, tax:-0.2,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
-  2023: { currency:'USD', fx:null, sourceId:'boca-placeholder-historico', reportType:'placeholder', gestionId:'ameal',
-    grossDebt:10.5, cash:1.5, profitOnPlayerSales:5.0, assetSales:0, netInterest:-0.7, tax:-0.2,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
-  2024: { currency:'USD', fx:null, sourceId:null, reportType:'pending_official', gestionId:'riquelme',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
   // Ejercicio 2025 = Memoria y Balance auditado al 30/06/2025 (sources['boca-balance-2024-25']). fx =
   // dólar mayorista BCRA al 30/06/2025 ($1.203), fecha de cierre puntual (el balance ya está en
   // "moneda homogénea" al 30/06/2025, Nota 2.2, así que corresponde el tipo de cambio de ESE día, no
@@ -578,9 +432,6 @@ const bocaFiscalYearMeta = {
     grossDebt:44566.207208, cash:12520.193181, profitOnPlayerSales:0, assetSales:0, netInterest:711.737276, tax:0,
     extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:711.737276}],
     officialTotalRevenue:237614.566642, officialTotalExpenses:202744.841714, officialPAT:35581.462204 },
-  2026: { currency:'USD', fx:null, sourceId:null, reportType:'pending_official', gestionId:'riquelme',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:null },
   // Ejercicio 2027 = Presupuesto oficial 2026/27. fx = promedio entre el dólar de inicio ($1.480) y
   // cierre ($1.840) del ejercicio = $1.660 (ver acordeón "Presupuesto 2026/27"). officialPAT acá es un
   // resultado DERIVADO (Ingresos − Gastos del propio presupuesto, $3.402,243 M), no una cifra que el
@@ -641,13 +492,13 @@ const bocaTitulosData = [
 // Versión 102 (migración de Boca al motor genérico, ver comentario de cabecera del archivo): mismo
 // registro que ya usan River/Racing/etc. — reemplaza yearMeta/computeYear/simplifiedReportForBoca/
 // nativeFinancialsBoca (borrados de js/finanzas-calc.js y js/finanzas-render.js en la misma migración).
-// finanzasYears/finanzasGestiones (campos nuevos, opcionales, leídos por populateFinanzasSelectors en
-// js/finanzas-render.js): qué años/gestiones muestra el <select> de Finanzas — Boca sigue mostrando
-// solo los 4 ejercicios reales/pendientes (Versión 81 del historial, "quita los años placeholder de
-// Finanzas") y la gestión Riquelme (única con datos de Finanzas), aunque bocaFiscalYearMeta/
-// gestionesByClub.boca (data/clubs.js) sigan teniendo los 5 años/2 gestiones viejas para Mercado de
-// Pases/Resultados/Comparar Gestiones. Cualquier club sin estos 2 campos (el resto) muestra TODOS sus
-// años/gestiones, comportamiento sin cambios.
+// finanzasYears/finanzasGestiones (campos opcionales, leídos por populateFinanzasSelectors en
+// js/finanzas-render.js): qué años/gestiones muestra el <select> de Finanzas. Desde la Versión 138
+// `finanzasYears` es redundante para Boca (los años que excluía ya no existen en
+// bocaFiscalYearMeta), pero se deja declarado: es el mecanismo genérico que cualquier club puede
+// necesitar, y borrarlo acá no lo documenta mejor. `finanzasGestiones:['riquelme']` sí sigue
+// haciendo falta, porque gestionesByClub.boca conserva ameal/angelici para Mercado de Pases y
+// Resultados. Cualquier club sin estos 2 campos (el resto) muestra TODOS sus años/gestiones.
 const bocaPresupuestoFinancieroByYear = {
   // Presupuesto Financiero 2026/27, tal cual lo imprime el documento oficial (ver
   // Clubes/Argentina/Boca/presupuesto-26-27.md). Estuvo escrito a mano como HTML adentro de
@@ -831,7 +682,7 @@ window.CLUB_GENERIC_DATA.boca = {
   revenueLinesByYear: bocaRevenueLinesByYear, expenseLinesByYear: bocaExpenseLinesByYear,
   fiscalYearMeta: bocaFiscalYearMeta, pasesData: bocaPasesData,
   resultadosData: bocaResultadosData, titulosData: bocaTitulosData,
-  finanzasYears: [2027, 2026, 2025, 2024], finanzasGestiones: ['riquelme'],
+  finanzasYears: [2027, 2025], finanzasGestiones: ['riquelme'],
   presupuestoSupuestosByYear: bocaPresupuestoSupuestosByYear,
   presupuestoFinancieroByYear: bocaPresupuestoFinancieroByYear,
   presupuestoInversionesByYear: bocaPresupuestoInversionesByYear,

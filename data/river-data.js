@@ -78,22 +78,6 @@ const riverRevenueLinesByYear = {
       ['Cuotas sociales', 42123.020825], ['Somos River', 7803.142331], ['Otras membresías', 33.369743],
     ]},
   ],
-  2025: [
-    { rawLabel:'Cuotas sociales (placeholder, sin fuente)', normalizedCategory:'member_dues', amountNative:20, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos (placeholder, sin fuente)', normalizedCategory:'season_tickets', amountNative:15, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Partidos y competencias (placeholder, sin fuente)', normalizedCategory:'matchday_competition', amountNative:25, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comercial / sponsors (placeholder, sin fuente)', normalizedCategory:'sponsorship_commercial', amountNative:30, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros ingresos (placeholder, sin fuente)', normalizedCategory:'other_income', amountNative:5, disclosureLevel:'not_disclosed' },
-  ],
-  // 2021: último ejercicio de la gestión D'Onofrio, agregado solo para que "Comparar Gestiones"
-  // tenga dos períodos de River para poner lado a lado. Placeholder igual que el de arriba.
-  2021: [
-    { rawLabel:'Cuotas sociales (placeholder, sin fuente)', normalizedCategory:'member_dues', amountNative:15, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Abonos (placeholder, sin fuente)', normalizedCategory:'season_tickets', amountNative:8, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Partidos y competencias (placeholder, sin fuente)', normalizedCategory:'matchday_competition', amountNative:18, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Comercial / sponsors (placeholder, sin fuente)', normalizedCategory:'sponsorship_commercial', amountNative:20, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros ingresos (placeholder, sin fuente)', normalizedCategory:'other_income', amountNative:4, disclosureLevel:'not_disclosed' },
-  ],
 };
 
 const riverExpenseLinesByYear = {
@@ -112,18 +96,6 @@ const riverExpenseLinesByYear = {
     { rawLabel:'Depreciación de bienes de uso', normalizedCategory:'depreciation', amountNative:-5984.158778, disclosureLevel:'detailed' },
     { rawLabel:'Amortización de plantel de jugadores de fútbol', normalizedCategory:'player_amortisation', amountNative:-23916.286868, disclosureLevel:'detailed' },
     { rawLabel:'Amortización de software', normalizedCategory:'other_amortisation', amountNative:-434.744044, disclosureLevel:'detailed' },
-  ],
-  2025: [
-    { rawLabel:'Salarios del plantel (placeholder, sin fuente)', normalizedCategory:'wages_squad', amountNative:-45, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos (placeholder, sin fuente)', normalizedCategory:'other_expenses', amountNative:-30, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases (placeholder, sin fuente)', normalizedCategory:'player_amortisation', amountNative:-8, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación (placeholder, sin fuente)', normalizedCategory:'depreciation', amountNative:-2, disclosureLevel:'not_disclosed' },
-  ],
-  2021: [
-    { rawLabel:'Salarios del plantel (placeholder, sin fuente)', normalizedCategory:'wages_squad', amountNative:-32, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Otros gastos (placeholder, sin fuente)', normalizedCategory:'other_expenses', amountNative:-22, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Amortización de pases (placeholder, sin fuente)', normalizedCategory:'player_amortisation', amountNative:-6, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Depreciación (placeholder, sin fuente)', normalizedCategory:'depreciation', amountNative:-1, disclosureLevel:'not_disclosed' },
   ],
 };
 
@@ -160,22 +132,6 @@ const riverFiscalYearMeta = {
     // compara contra Math.abs(expenses)+Math.abs(nonCash), no contra expenses solo. Todo en ARS
     // millones (Versión 32).
     officialTotalRevenue:207077.217738, officialTotalExpenses:149674.797729, officialPAT:58945.518837,
-  },
-  2025: {
-    currency:'USD', fx:null,
-    sourceId:'river-placeholder',
-    reportType:'placeholder',
-    gestionId:'brito',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
-    officialTotalRevenue:null, officialTotalExpenses:null,
-  },
-  2021: {
-    currency:'USD', fx:null,
-    sourceId:'river-placeholder',
-    reportType:'placeholder',
-    gestionId:'donofrio',
-    grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
-    officialTotalRevenue:null, officialTotalExpenses:null,
   },
 };
 
@@ -238,13 +194,6 @@ window.CLUB_GENERIC_DATA.river = {
 
 
 Object.assign(sources, {
-  'river-placeholder': {
-      id:'river-placeholder', clubId:'river',
-      title:'Placeholder (números enteramente inventados, sin ninguna fuente todavía)',
-      type:'estimate_placeholder', reliability:'placeholder',
-      publicNote:'No es un documento: son números de prueba, puestos para diseñar el sitio mientras se consiguen los balances reales de esos ejercicios.',
-      note:'Sigue sin fuente real el Ejercicio 2025 (gestión Brito) y el Ejercicio 2021 (última temporada de D\'Onofrio). El Ejercicio 2024 ya no es placeholder, ver river-estados-contables-2023-24. Pendiente: cargar balance o presupuesto oficial para el resto (ver fuentes-por-club.md).',
-    },
   'river-estados-contables-2023-24': {
       id:'river-estados-contables-2023-24', clubId:'river',
       title:'Estados Contables (balance auditado), Ejercicio Económico N°123, 1°/9/2023 al 31/8/2024',
@@ -256,7 +205,12 @@ Object.assign(sources, {
 });
 
 gestionesByClub.river = {
-    brito:    { nombre:'Brito (2021-actual)',   firstYear:2025, lastYear:2025 },
+    // Versión 138: los ejercicios 2021 y 2025 de River eran placeholder puro (existían solo para
+    // que "Comparar Gestiones" tuviera dos períodos que poner lado a lado) y se borraron. El único
+    // ejercicio real de River es el 2024, y es de la gestión Brito, así que su rango es ese.
+    // `donofrio` se queda sin ningún ejercicio, igual que ameal/angelici en Boca: sigue acá porque
+    // Mercado de Pases y Resultados Deportivos agrupan por gestión y tienen filas suyas.
+    brito:    { nombre:'Brito (2021-actual)',   firstYear:2024, lastYear:2024 },
     donofrio: { nombre:"D'Onofrio (2013-2021)", firstYear:2021, lastYear:2021 },
   };
 

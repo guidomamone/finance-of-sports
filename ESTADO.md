@@ -54,6 +54,18 @@ se reescribe, no se acumula.
   `main` del repo de GitHub. Dominio propio desde 2026-09-13:
   **financeofsports.com** (ver to-do 7: falta renombrar el repo en GitHub y
   re-linkearlo en Netlify, eso lo tiene que hacer Guido).
+- YA NO HAY EJERCICIOS PLACEHOLDER (Versión 138, pedido de Guido: "quita los
+  ejercicios que sean placeholder, antes tenían sentido, hoy no"). Se borraron los 9
+  que quedaban, todos de Boca (7) y River (2): cinco eran placeholder puro con rubros
+  inventados, de cuando el sitio era un MVP y necesitaba algo que dibujar, y cuatro
+  eran ejercicios reales sin publicar todavía, cargados en cero. Los dos de River
+  existían solo para que "Comparar Gestiones" tuviera dos períodos que comparar. TODO
+  ejercicio que muestra el sitio tiene ahora un documento detrás. Consecuencia: 85
+  ejercicios en vez de 94, Boca pasó de calidad "mixta" a "oficial" en el selector, y
+  los gráficos de Inicio dejaron de tener columnas vacías. `reportType:'placeholder'`
+  y `'pending_official'` siguen existiendo en el código, con su rama en
+  `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
+  los usa ningún club.
 - DATOS: 41 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
   oficial), de 6 países: Argentina 11, Japón 10, España 10, Brasil 7, Colombia 2,
   México 1. Un solo motor genérico calcula Finanzas para todos (ver
@@ -135,11 +147,11 @@ se reescribe, no se acumula.
   mirando (link incluido), su tipo y nivel de fuente, el tipo de cambio usado CON
   su procedencia, y las salvedades; la pestaña Fuentes lista los documentos del
   club seleccionado; y `fuentes.html` es el listado completo del sitio, una tabla
-  de País, Equipo, Fuente y Notas (91 documentos, 41 clubes, 61 con link), página
+  de País, Equipo, Fuente y Notas (89 documentos, 41 clubes), página
   propia y estática para prensa y buscadores, que GENERA
   `node tools/generate-fuentes-page.js`: no se edita a mano.
   OJO CON QUÉ SE MUESTRA: `note` es INTERNA y no se renderiza nunca; lo que ve el
-  visitante es `publicNote` (17 de 91 documentos) más las salvedades que
+  visitante es `publicNote` (17 de 89 documentos) más las salvedades que
   `sourceCaveats()` deriva de los datos. Ver `CONVENCIONES.md` y
   `data/sources-view.js`, que además es donde viven las etiquetas de tipo y nivel
   compartidas entre el sitio y el generador. Antes de esto había
@@ -149,7 +161,7 @@ se reescribe, no se acumula.
   advertencia, que no aparece cuando el dato es oficial).
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
   trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
-  placeholder según el club (ver to-do 4). "Mi Cuenta" es un stub sin
+  placeholder según el club. "Mi Cuenta" es un stub sin
   funcionalidad, esperando la decisión de free/paid (to-do 5 y 6).
 - UI: SELECTOR JERÁRQUICO DE CLUB en el header (Versión 137, reemplaza al
   `<select>` plano de 41 opciones): un botón con el club activo que abre un panel
@@ -276,16 +288,16 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 41 clubes, 94 ejercicios, 6 países.
+TOTAL: 41 clubes, 85 ejercicios, 6 países.
 
 ARGENTINA (11)
   Argentinos Juniors       5 ejercicios (2014/2015 a 2018/2019), balance, ARS
-  Boca Juniors             9 ejercicios (2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025, 2025/2026, 2026/2027), PLACEHOLDER + sin datos, esperando al club + balance + presupuesto, USD/ARS
+  Boca Juniors             2 ejercicios (2024/2025, 2026/2027), balance + presupuesto, ARS
   Estudiantes de La Plata  4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Independiente            1 ejercicio (2023/2024), balance, ARS
   Instituto ACC            1 ejercicio (2023/2024), balance, ARS
   Racing Club              17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS
-  River Plate              3 ejercicios (2020/2021, 2023/2024, 2024/2025), PLACEHOLDER + balance de réplica no oficial, USD/ARS
+  River Plate              1 ejercicio (2023/2024), balance de réplica no oficial, ARS
   Rosario Central          1 ejercicio (2022/2023), balance, ARS
   San Lorenzo              8 ejercicios (2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2023/2024), balance + presupuesto, ARS
   Unión                    4 ejercicios (2021/2022 a 2024/2025), balance, ARS
