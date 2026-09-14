@@ -21,8 +21,19 @@
 // mano en el HTML, con este mismo texto tipeado por separado; ahora el dropdown se genera
 // en runtime a partir de este campo. `name` (el nombre legal completo) sigue usándose donde
 // ya se usaba (pestaña Fuentes, etc.).
+// `sport` (Versión 136): el deporte del club, para el primer nivel del selector jerárquico. Hoy los
+// 41 dicen `'futbol'` y es redundante, pero el campo existe desde ahora para que sumar un club de
+// otro deporte no obligue a migrar los 41. Va en el club y no derivado de su liga porque un club no
+// cambia de deporte: no hay ninguna arista con año que valga.
+//
+// NO HAY, NI VA A HABER, UN CAMPO `league` ACÁ (decisión de la Versión 136, después de que Guido
+// levantara el problema: "si el usuario quiere ver cuánto generaba una liga en 2025 y 2024, 2023,
+// 2022, tiene que tener en cuenta que los clubes fueron cambiando"). La membresía de liga es
+// (club, ejercicio) → liga y vive SOLO en `data/club-leagues.js`. Un `clubs[id].league` con "la liga
+// de hoy" sería una segunda verdad sobre el mismo hecho, y encima inútil para todo agregado de liga,
+// que necesita saber quiénes la integraban ESE año. Ver la cabecera de `data/leagues.js`.
 const clubs = {
-  boca:   { id:'boca',   name:'Club Atlético Boca Juniors', displayName:'Boca Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
+  boca:   { id:'boca',   name:'Club Atlético Boca Juniors', displayName:'Boca Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
   // fiscalYearStart corregido a '09-01' en esta sesión (onboarding de Brasil): decía '01-01' desde
   // siempre, un dato incorrecto pero inofensivo mientras nada leía este campo (ver comentario de
   // `isCalendarYearClub()` en js/finanzas-calc.js, agregado esta sesión — es la primera vez que
@@ -33,54 +44,54 @@ const clubs = {
   // perdido el rango de temporada "2023/2024", mostrando solo "2024" suelto, un caso real de dato
   // muerto que se vuelve vivo (y rompe algo) al generalizar una función existente — visto y corregido
   // en el spot-check del navegador de esta sesión, no antes.
-  river:  { id:'river',  name:'Club Atlético River Plate',  displayName:'River Plate', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'09-01' },
-  racing: { id:'racing', name:'Racing Club',                displayName:'Racing Club', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  velez:  { id:'velez',  name:'Club Atlético Vélez Sarsfield', displayName:'Vélez Sarsfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  instituto: { id:'instituto', name:'Instituto Atlético Central Córdoba', displayName:'Instituto ACC', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  rosariocentral: { id:'rosariocentral', name:'Club Atlético Rosario Central', displayName:'Rosario Central', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  independiente: { id:'independiente', name:'Club Atlético Independiente', displayName:'Independiente', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  argentinosjuniors: { id:'argentinosjuniors', name:'Asociación Atlética Argentinos Juniors', displayName:'Argentinos Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  estudianteslp: { id:'estudianteslp', name:'Club Estudiantes de La Plata', displayName:'Estudiantes de La Plata', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  sanlorenzo: { id:'sanlorenzo', name:'Club Atlético San Lorenzo de Almagro', displayName:'San Lorenzo', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
-  union: { id:'union', name:'Club Atlético Unión', displayName:'Unión', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01' },
+  river:  { id:'river',  name:'Club Atlético River Plate',  displayName:'River Plate', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'09-01', sport:'futbol' },
+  racing: { id:'racing', name:'Racing Club',                displayName:'Racing Club', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  velez:  { id:'velez',  name:'Club Atlético Vélez Sarsfield', displayName:'Vélez Sarsfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  instituto: { id:'instituto', name:'Instituto Atlético Central Córdoba', displayName:'Instituto ACC', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  rosariocentral: { id:'rosariocentral', name:'Club Atlético Rosario Central', displayName:'Rosario Central', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  independiente: { id:'independiente', name:'Club Atlético Independiente', displayName:'Independiente', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  argentinosjuniors: { id:'argentinosjuniors', name:'Asociación Atlética Argentinos Juniors', displayName:'Argentinos Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  estudianteslp: { id:'estudianteslp', name:'Club Estudiantes de La Plata', displayName:'Estudiantes de La Plata', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  sanlorenzo: { id:'sanlorenzo', name:'Club Atlético San Lorenzo de Almagro', displayName:'San Lorenzo', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
+  union: { id:'union', name:'Club Atlético Unión', displayName:'Unión', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol' },
   // Primer club no argentino del sitio (Versión 104). reportingCurrency:'MXN' — ver data/currency-map.js
   // (entrada MXN, scale:1) y data/clubamerica-data.js (comentario de cabecera) para el detalle completo
   // de la fuente (segmento de negocio de una compañía bursátil, no un balance propio del club).
   // fiscalYearStart:'01-01': Ollamani reporta en año calendario (1/1 a 31/12), no en un ejercicio
   // partido como los clubes argentinos.
-  clubamerica: { id:'clubamerica', name:'Club de Fútbol América, S.A. de C.V.', displayName:'Club América', country:'MX', reportingCurrency:'MXN', fiscalYearStart:'01-01' },
+  clubamerica: { id:'clubamerica', name:'Club de Fútbol América, S.A. de C.V.', displayName:'Club América', country:'MX', reportingCurrency:'MXN', fiscalYearStart:'01-01', sport:'futbol' },
   // Japón (J.League), sesión 2026-09-13: 10 clubes, todos con Ejercicio 2025 (temporada calendario
   // ene-dic 2025, la convención estándar de J.League — ninguno de estos 10 está en la lista de 7
   // clubes con cierre marzo/junio del club_doc-2025.pdf, ver fuentes/Japón/_notas-generales.md).
   // reportingCurrency:'JPY' — ver data/currency-map.js para el CURRENCY_META nuevo. displayName usa
   // el nombre corto habitual en español/inglés (el que ya usan medios deportivos hispanohablantes),
   // name lleva el nombre oficial completo en inglés.
-  kashimaantlers: { id:'kashimaantlers', name:'Kashima Antlers Football Club', displayName:'Kashima Antlers', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  urawareddiamonds: { id:'urawareddiamonds', name:'Urawa Red Diamonds', displayName:'Urawa Red Diamonds', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  yokohamafmarinos: { id:'yokohamafmarinos', name:'Yokohama F. Marinos', displayName:'Yokohama F. Marinos', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  kawasakifrontale: { id:'kawasakifrontale', name:'Kawasaki Frontale', displayName:'Kawasaki Frontale', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  visselkobe: { id:'visselkobe', name:'Vissel Kobe', displayName:'Vissel Kobe', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  gambaosaka: { id:'gambaosaka', name:'Gamba Osaka', displayName:'Gamba Osaka', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  cerezoosaka: { id:'cerezoosaka', name:'Cerezo Osaka', displayName:'Cerezo Osaka', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  fctokyo: { id:'fctokyo', name:'FC Tokyo', displayName:'FC Tokyo', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  sanfreccehiroshima: { id:'sanfreccehiroshima', name:'Sanfrecce Hiroshima', displayName:'Sanfrecce Hiroshima', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
-  nagoyagrampus: { id:'nagoyagrampus', name:'Nagoya Grampus', displayName:'Nagoya Grampus', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01' },
+  kashimaantlers: { id:'kashimaantlers', name:'Kashima Antlers Football Club', displayName:'Kashima Antlers', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  urawareddiamonds: { id:'urawareddiamonds', name:'Urawa Red Diamonds', displayName:'Urawa Red Diamonds', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  yokohamafmarinos: { id:'yokohamafmarinos', name:'Yokohama F. Marinos', displayName:'Yokohama F. Marinos', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  kawasakifrontale: { id:'kawasakifrontale', name:'Kawasaki Frontale', displayName:'Kawasaki Frontale', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  visselkobe: { id:'visselkobe', name:'Vissel Kobe', displayName:'Vissel Kobe', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  gambaosaka: { id:'gambaosaka', name:'Gamba Osaka', displayName:'Gamba Osaka', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  cerezoosaka: { id:'cerezoosaka', name:'Cerezo Osaka', displayName:'Cerezo Osaka', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  fctokyo: { id:'fctokyo', name:'FC Tokyo', displayName:'FC Tokyo', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  sanfreccehiroshima: { id:'sanfreccehiroshima', name:'Sanfrecce Hiroshima', displayName:'Sanfrecce Hiroshima', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
+  nagoyagrampus: { id:'nagoyagrampus', name:'Nagoya Grampus', displayName:'Nagoya Grampus', country:'JP', reportingCurrency:'JPY', fiscalYearStart:'01-01', sport:'futbol' },
   // Primeros clubes de Brasil (sesión 2026-09-13): ejercicio social = año calendario
   // (fiscalYearStart:'01-01', no jul-jun/sep-ago como los clubes argentinos de arriba) — ver
   // isCalendarYearClub() en js/finanzas-calc.js, que generaliza el dropdown "Año"/"Estado de
   // resultados"/gráficos de Inicio para mostrar "2024" en vez de un rango de temporada "2023/2024"
   // que sería falso para este club.
-  gremio: { id:'gremio', name:'Grêmio Foot-Ball Porto Alegrense', displayName:'Grêmio', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
-  botafogo: { id:'botafogo', name:'Botafogo Sociedade Anônima do Futebol', displayName:'Botafogo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
-  cruzeiro: { id:'cruzeiro', name:'Cruzeiro Esporte Clube SAF', displayName:'Cruzeiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
-  mirassol: { id:'mirassol', name:'Mirassol Futebol Clube', displayName:'Mirassol', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
-  ituano: { id:'ituano', name:'Ituano Futebol Clube', displayName:'Ituano', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
-  coritiba: { id:'coritiba', name:'Coritiba Sociedade Anônima do Futebol - SAF', displayName:'Coritiba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
-  atleticogoianiense: { id:'atleticogoianiense', name:'Atlético Clube Goianiense', displayName:'Atlético Goianiense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01' },
+  gremio: { id:'gremio', name:'Grêmio Foot-Ball Porto Alegrense', displayName:'Grêmio', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
+  botafogo: { id:'botafogo', name:'Botafogo Sociedade Anônima do Futebol', displayName:'Botafogo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
+  cruzeiro: { id:'cruzeiro', name:'Cruzeiro Esporte Clube SAF', displayName:'Cruzeiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
+  mirassol: { id:'mirassol', name:'Mirassol Futebol Clube', displayName:'Mirassol', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
+  ituano: { id:'ituano', name:'Ituano Futebol Clube', displayName:'Ituano', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
+  coritiba: { id:'coritiba', name:'Coritiba Sociedade Anônima do Futebol - SAF', displayName:'Coritiba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
+  atleticogoianiense: { id:'atleticogoianiense', name:'Atlético Clube Goianiense', displayName:'Atlético Goianiense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol' },
   // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
   // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
-  oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01' },
-  envigado: { id:'envigado', name:'Envigado Fútbol Club S.A.', displayName:'Envigado FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01' },
+  oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  envigado: { id:'envigado', name:'Envigado Fútbol Club S.A.', displayName:'Envigado FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
   // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
   // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
   // moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por
@@ -88,16 +99,16 @@ const clubs = {
   // index.html). `fiscalYearStart:'07-01'`: los ejercicios de LaLiga corren 1/7 a 30/6, confirmado
   // en cada PDF fuente ("ejercicio anual terminado el 30 de junio de AAAA") — temporada partida,
   // igual que los clubes argentinos (no aplica isCalendarYearClub acá).
-  realmadrid: { id:'realmadrid', name:'Real Madrid Club de Fútbol', displayName:'Real Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  fcbarcelona: { id:'fcbarcelona', name:'Futbol Club Barcelona', displayName:'FC Barcelona', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  atleticomadrid: { id:'atleticomadrid', name:'Club Atlético de Madrid, S.A.D.', displayName:'Atlético de Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  athleticclub: { id:'athleticclub', name:'Athletic Club', displayName:'Athletic Club', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  sevillafc: { id:'sevillafc', name:'Sevilla Fútbol Club, S.A.D.', displayName:'Sevilla FC', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  valenciacf: { id:'valenciacf', name:'Valencia Club de Fútbol, S.A.D.', displayName:'Valencia CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  villarrealcf: { id:'villarrealcf', name:'Villarreal Club de Fútbol, S.A.D.', displayName:'Villarreal CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  realbetis: { id:'realbetis', name:'Real Betis Balompié, S.A.D.', displayName:'Real Betis', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  celtavigo: { id:'celtavigo', name:'Real Club Celta de Vigo, S.A.D.', displayName:'Celta de Vigo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
-  deportivoalaves: { id:'deportivoalaves', name:'Deportivo Alavés, S.A.D.', displayName:'Deportivo Alavés', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01' },
+  realmadrid: { id:'realmadrid', name:'Real Madrid Club de Fútbol', displayName:'Real Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  fcbarcelona: { id:'fcbarcelona', name:'Futbol Club Barcelona', displayName:'FC Barcelona', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  atleticomadrid: { id:'atleticomadrid', name:'Club Atlético de Madrid, S.A.D.', displayName:'Atlético de Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  athleticclub: { id:'athleticclub', name:'Athletic Club', displayName:'Athletic Club', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  sevillafc: { id:'sevillafc', name:'Sevilla Fútbol Club, S.A.D.', displayName:'Sevilla FC', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  valenciacf: { id:'valenciacf', name:'Valencia Club de Fútbol, S.A.D.', displayName:'Valencia CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  villarrealcf: { id:'villarrealcf', name:'Villarreal Club de Fútbol, S.A.D.', displayName:'Villarreal CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  realbetis: { id:'realbetis', name:'Real Betis Balompié, S.A.D.', displayName:'Real Betis', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  celtavigo: { id:'celtavigo', name:'Real Club Celta de Vigo, S.A.D.', displayName:'Celta de Vigo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  deportivoalaves: { id:'deportivoalaves', name:'Deportivo Alavés, S.A.D.', displayName:'Deportivo Alavés', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
