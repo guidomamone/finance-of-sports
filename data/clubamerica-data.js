@@ -240,9 +240,10 @@ window.CLUB_GENERIC_DATA.clubamerica = {
 Object.assign(sources, {
   'clubamerica-ollamani-2025': {
       id:'clubamerica-ollamani-2025', clubId:'clubamerica',
-      title:'Ollamani, S.A.B. de C.V. — Reporte Financiero BMV (Trimestre 4D, Año 2025), Nota de Segmentos ("Segmento de Fútbol")',
+      title:'Ollamani, S.A.B. de C.V.: Reporte Financiero BMV (Trimestre 4D, Año 2025), Nota de Segmentos ("Segmento de Fútbol")',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://ollamani.com.mx/reportes-3/',
+      publicNote:'Club América no publica un balance propio. Las cifras salen del segmento de fútbol de Ollamani, la compañía que controla al club, y ese segmento incluye también el negocio del Estadio Banorte sin desglose posible entre los dos. A nivel de segmento no se informan deuda ni caja.',
       note:'PDF oficial de 113 páginas (texto nativo), Estados Financieros Consolidados auditados bajo IFRS del año terminado el 31/12/2025, presentados ante la Bolsa Mexicana de Valores (BMV, clave AGUILAS) y espejados en bmv.com.mx y gob.mx/cnbv. Club América NO publica balance propio: Ollamani es la controladora pública (post spin-off de Grupo Televisa, 31/01/2024) y reporta un "Segmento de Fútbol" bajo IFRS 8 que agrupa Club América (varonil y femenil) CON el Estadio Banorte — ver comentario de cabecera de data/clubamerica-data.js para el detalle completo de este límite y de por qué grossDebt/cash/officialPAT quedan en 0/0/null. Copia local en finance-of-sports/Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.pdf.',
     },
 });

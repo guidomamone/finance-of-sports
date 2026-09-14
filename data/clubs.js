@@ -116,6 +116,7 @@ const sources = {
       id:'boca-placeholder-historico', clubId:'boca',
       title:'Placeholder histórico 2018-2024 (números inventados para probar el diseño del sitio)',
       type:'estimate_placeholder', reliability:'placeholder',
+      publicNote:'No es un documento: son números de prueba, puestos para diseñar el sitio mientras se consiguen los balances reales de esos ejercicios.',
       note:'Pendiente reemplazar con los balances oficiales de bocajuniors.com.ar/club/presupuesto (ver fuentes-por-club.md). El Ejercicio 2025 ya no es placeholder, ver boca-balance-2024-25.',
     },
   'boca-balance-2024-25': {

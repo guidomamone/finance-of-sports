@@ -113,7 +113,7 @@ window.CLUB_GENERIC_DATA.mirassol = {
 Object.assign(sources, {
   'mirassol-relatorio-auditoria-2024': {
       id:'mirassol-relatorio-auditoria-2024', clubId:'mirassol',
-      title:'Relatório de Auditoria Contábil — Exercício 2024',
+      title:'Relatório de Auditoria Contábil, Exercício 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://mirassolfc.com.br/',
       note:'PDF oficial (6 páginas, texto nativo), auditoría de ANALYST GESTAO EMPRESARIAL LTDA firmada el 21/5/2025. OJO: no son las demonstrações contábeis en sí, es el informe narrativo del auditor sobre ellas, y cita las cifras en prosa sin desglosar ningún rubro — por eso el club aparece con una sola línea de ingresos y dos de gastos. El monto de "Custos" no está impreso: se despeja de las otras 3 cifras y queda confirmado a 14 decimales por el porcentaje sobre la receita que el propio documento publica. grossDebt/cash sin cargar (el documento nunca publica el total del passivo circulante). El Patrimônio Líquido del documento no cierra consigo mismo, ver dudas-por-club.md. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Mirassol/relatorio-auditoria-contabil-2024.md.',

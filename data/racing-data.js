@@ -1587,12 +1587,14 @@ Object.assign(sources, {
       title:'Cobertura de prensa del presupuesto económico-financiero de Racing, julio 2025 a junio 2026',
       type:'press_coverage_of_assembly', reliability:'secondary_press',
       url:'https://x.com/Sacostaracing/status/1944855768127431049',
+      publicNote:'No es el documento del club, sino la cobertura de prensa del resumen presentado en asamblea. Los rubros vienen agrupados de forma más gruesa que en un presupuesto oficial.',
       note:'Hilo de X con el resumen presentado en asamblea, no el documento oficial del club. Los rubros vienen agrupados de forma más gruesa que los de Boca — por ejemplo "fútbol profesional" junto en vez de separado por TV/matchday/pases. Donde la prensa no desglosaba un monto, se dejó como línea residual "no desglosado" en vez de inventar categorías.',
     },
   'racing-placeholder': {
       id:'racing-placeholder', clubId:'racing',
-      title:'Placeholder (ya no se usa — ver racing-balance-2023-24/2024-25/racing-presupuesto-2025-26)',
+      title:'Placeholder (ya no se usa, ver racing-balance-2023-24/2024-25/racing-presupuesto-2025-26)',
       type:'estimate_placeholder', reliability:'placeholder',
+      publicNote:'No es un documento: son números de prueba, puestos para diseñar el sitio mientras se consiguen los balances reales de esos ejercicios.',
       note:'Todas las finanzas de Racing que estaban cargadas con esta fuente (Blanco placeholder puro, Milito con dato de prensa) se reemplazaron por documentos oficiales reales en la Versión 15/16. Queda esta entrada solo por si algún dato viejo la sigue referenciando.',
     },
   'racing-balance-2009': {

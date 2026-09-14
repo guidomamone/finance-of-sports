@@ -673,7 +673,7 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - Aprovechado para que la lista sea completa: eran 3 skills enumerados de 5. Faltaban `start-session-finance-of-sports-project` (que es por dónde hay que empezar) y `auditoria-finance-of-sports` (Versión 123).
 
 
-## Versión 125 — Cada tipo de cambio dice de dónde salió, y las cotizaciones de mercado se dicen una sola vez
+## Versión 125: Cada tipo de cambio dice de dónde salió, y las cotizaciones de mercado se dicen una sola vez
 
 - `fxSource` nuevo en cada ejercicio: `document_close` (lo declara el balance), `document_assumption` (la premisa de un presupuesto), `market_close`, `market_approx`, `placeholder`, `unknown`. Son las 4 reglas de `club-data-mapping` §5 hechas campo, más el estado "todavía no se sabe".
 - `document_assumption` es una categoría propia a pedido de Guido ("para Presupuesto, los clubes toman assumption de FX siempre"): un presupuesto declara un pronóstico que puede terminar equivocado, no un cierre ya ocurrido. Boca 2027 usa 1660, el promedio entre el dólar de inicio ($1.480) y el de cierre ($1.840) que asume el propio documento.
@@ -687,13 +687,25 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - BUG REAL, encontrado al migrar: los `?v=` de los `<script src>` estáticos son literales y NO salen de `window.ASSET_V`, contra lo que decían `index.html` y `CLAUDE.md`. Subir solo la constante dejó al navegador sirviendo un `currency-map.js` cacheado sin `fxMetaFor()` con un `finanzas-calc.js` nuevo que ya lo llamaba: `ReferenceError` en toda la página. Corregida la documentación y agregado el chequeo `asset-v-desfasado` (P1) que compara la constante contra cada tag.
 - `auditAll()`: 41 clubes, 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.
 
-## Versión 126 — Cada número cita su documento: ficha de Fuentes en Finanzas y `fuentes.html`
+## Versión 126: Cada número cita su documento: ficha de Fuentes en Finanzas y `fuentes.html`
 
 - Card "Fuentes" al final de Finanzas, por ejercicio: documento (con link), nivel de fuente, tipo de cambio usado CON su procedencia, y las salvedades. Si el ejercicio tiene balance y presupuesto, muestra los DOS tipos de cambio (Racing 2020: el balance declara 73,98, el presupuesto asumió 70).
 - Reemplaza a `finanzasClubSourceText`, un objeto escrito a mano con 3 entradas (Boca, Racing, River) que dejaba a los otros 38 clubes sin citar nada.
-- Arreglo de fondo: `sources{}` tenía 91 entradas con 61 URLs y se consumía en UN solo lugar, el banner de advertencia, que hace `return` temprano cuando el ejercicio es oficial — o sea que los 88 ejercicios REALES no mostraban su fuente en ningún lado mientras el sitio prometía "todo dato cita su origen". El banner ahora solo advierte y no repite el documento.
+- Arreglo de fondo: `sources{}` tenía 91 entradas con 61 URLs y se consumía en UN solo lugar, el banner de advertencia, que hace `return` temprano cuando el ejercicio es oficial, o sea que los 88 ejercicios REALES no mostraban su fuente en ningún lado mientras el sitio prometía "todo dato cita su origen". El banner ahora solo advierte y no repite el documento.
 - Pestaña Fuentes: se borraron la tabla de 6 filas escritas a mano (IGJ, INDEC, actas de Boca) y el párrafo de ~450 palabras que nombraba club por club y se había quedado en 12 clubes argentinos. En su lugar, los documentos del club seleccionado, generados de los datos. Escala por construcción: nunca lista más de un club.
 - `fuentes.html` nuevo, generado por `tools/generate-fuentes-page.js`: el listado completo del sitio, 91 documentos de 41 clubes de 6 países, 61 con link al original, cada uno con qué ejercicios respalda, con qué tipo de cambio se convirtió y qué salvedades tiene. Página propia y estática (URL rankeable, sin depender de JS para el crawler) en vez de más filas dentro de `index.html`. `--check` avisa si quedó vieja.
 - Las etiquetas nuestras (nivel de fuente, procedencia del fx) pasan por `t()` y están traducidas al inglés; el título y las salvedades de cada documento quedan en su idioma original a propósito, mismo criterio que los rubros de "Formato del club".
 - BUG en el chequeo de i18n de `tools/audit.js`: buscaba las claves definidas entre comillas simples y `data/lang/en.js` las escribe entre dobles, así que el conjunto de definidas quedaba VACÍO y reportaba como sin traducir TODAS las claves usadas. De ahí las "88 claves" de la primera auditoría, que nunca fueron el número real. Con el regex arreglado (y salteando los prefijos de clave dinámica) el faltante real es 0.
+- `auditAll()`: 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.
+
+## Versión 127: la pestaña Fuentes revisada, y la nota interna deja de publicarse
+
+- BUG DE PRIVACIDAD, encontrado por Guido al revisar la Versión 126: `sources[].note` es la nota que una sesión le deja a la siguiente, y 64 de las 91 mencionan su nombre o rutas de su disco ("PDF subido directamente por Guido", "Transcripción completa en Clubes/España/..."). Se publicaban tal cual en la pestaña Fuentes y en la ficha de Finanzas.
+- `note` pasa a ser explícitamente interna y no se renderiza en ningún lado. Lo que ve el visitante es `publicNote`, nueva: una o dos oraciones escritas para un lector, solo donde hay una salvedad que no se deduce de los datos. La tienen 17 de 91 documentos (River, Club América, los 10 de Japón, Argentinos, la cobertura de prensa de Racing y los 3 placeholders).
+- `sourceCaveats()` nueva (`data/sources-view.js`): el resto de las salvedades se deriva de los campos que ya existen (tipo de cambio de referencia o aproximado, balance que no publica el resultado del ejercicio, ejercicio sin deuda ni caja). Un club nuevo las trae bien sin que nadie escriba una línea.
+- `data/sources-view.js` nuevo: las etiquetas de tipo y nivel de documento estaban duplicadas entre `js/finanzas-render.js` y `tools/generate-fuentes-page.js`, o sea que el sitio y la página podían describir distinto el mismo documento. Ahora salen de un archivo que cargan los dos.
+- `fuentes.html` pasa de una lista de cards a una tabla de País, Equipo, Fuente y Notas, a ancho completo (1600px en vez de 900px). Las notas largas se pliegan en un `<details>` con "Ver más", sin JavaScript, así que un crawler las lee igual.
+- La pestaña Fuentes pierde el card "Sobre mí" (pedido de Guido) y muestra el tipo de documento además del nivel. Las 6 claves de tipo se tradujeron al inglés.
+- 15 títulos de documento tenían un em dash y se limpiaron, más 38 líneas de texto escritas en esta sesión: la regla está en `CONVENCIONES.md` desde la Versión 42 y la había violado sistemáticamente.
+- `tools/audit.js` suma 2 guardarraíles: `nota-publica-con-interno` (P1) si un `publicNote` menciona un nombre propio, una ruta del repo o un detalle de transcripción, y `note-interna-renderizada` (P1) si alguien vuelve a interpolar `.note` dentro de HTML. Probado inyectando la fuga a propósito.
 - `auditAll()`: 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.

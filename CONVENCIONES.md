@@ -15,9 +15,22 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (Versión 127,
+  después de que Guido revisara la primera versión de la pestaña Fuentes: "veo que en Salvedades a
+  veces pones 'descargado por Guido' o direcciones que son de mi computadora. Eso no puede
+  aparecerle al usuario"). `sources[].note` es la nota que una sesión le deja a la siguiente: dónde
+  quedó la transcripción, cómo se leyó el PDF, qué falta. Las 91 entradas la tienen y 64 mencionan
+  el nombre de Guido o rutas del repo. `sources[].publicNote` es la que se muestra: una o dos
+  oraciones escritas para un lector, y SOLO donde hay una salvedad que no se puede deducir de los
+  datos (hoy 17 de 91). Todo lo demás sale derivado por `sourceCaveats()` (`data/sources-view.js`)
+  de los campos que ya existen: que el tipo de cambio sea de referencia, que el documento no publique
+  el resultado del ejercicio, que no informe deuda ni caja. Un club nuevo trae esas salvedades bien
+  sin que nadie escriba una línea. Lo vigila `node tools/audit.js`: `nota-publica-con-interno` (P1)
+  si un `publicNote` menciona un nombre propio, una ruta o un detalle de transcripción, y
+  `note-interna-renderizada` (P1) si alguien vuelve a interpolar `.note` dentro de HTML.
 - PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (Versión 125, a pedido de Guido:
   "si yo mañana quiero auditar los tipos de cambio usado para cada club para cada año y entender si
-  salieron de internet o del club, ¿puedo hacerlo sin drama?" — la respuesta era que no). Cada
+  salieron de internet o del club, ¿puedo hacerlo sin drama?", la respuesta era que no). Cada
   ejercicio lleva `fxSource` con uno de los 6 valores de `FX_SOURCE` (`data/currency-map.js`), o
   `fxRef` apuntando a `FX_CLOSE`. **La regla de cuál de las dos formas usar**: si el tipo de cambio
   lo declara el propio documento, el número va LITERAL en el archivo del club (`fx:909,
@@ -33,7 +46,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   fecha también.
 - ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO (Versión 125, bug real de esta sesión): `window.ASSET_V`
   es una constante inline, pero los `?v=` de los `<script src>` estáticos del final del `<body>` son
-  LITERALES — no salen de ella (solo los 2 cargadores dinámicos, `loadClubData()` e `I18N.load()`,
+  LITERALES, no salen de ella (solo los 2 cargadores dinámicos, `loadClubData()` e `I18N.load()`,
   la leen de verdad). Subir la constante y olvidarse de los tags deja al navegador sirviendo los
   `js/data` viejos de su caché con el HTML nuevo: pasó al migrar los `fx`, llegó un
   `currency-map.js` cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y la

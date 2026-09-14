@@ -83,13 +83,19 @@ se reescribe, no se acumula.
   forzar la carga de los 41 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
   los clubes que nadie está mirando.
-- FUENTES (Versión 126): cada número cita su documento. Al final de Finanzas hay
-  una ficha con el documento del ejercicio que se está mirando (link incluido),
-  su nivel de fuente, el tipo de cambio usado CON su procedencia, y las
-  salvedades; la pestaña Fuentes lista los documentos del club seleccionado; y
-  `fuentes.html` es el listado completo del sitio (91 documentos, 41 clubes, 61
-  con link), una página propia y estática para prensa y buscadores, que GENERA
-  `node tools/generate-fuentes-page.js` — no se edita a mano. Antes de esto había
+- FUENTES (Versión 126, revisada en la 127): cada número cita su documento. Al
+  final de Finanzas hay una ficha con el documento del ejercicio que se está
+  mirando (link incluido), su tipo y nivel de fuente, el tipo de cambio usado CON
+  su procedencia, y las salvedades; la pestaña Fuentes lista los documentos del
+  club seleccionado; y `fuentes.html` es el listado completo del sitio, una tabla
+  de País, Equipo, Fuente y Notas (91 documentos, 41 clubes, 61 con link), página
+  propia y estática para prensa y buscadores, que GENERA
+  `node tools/generate-fuentes-page.js`: no se edita a mano.
+  OJO CON QUÉ SE MUESTRA: `note` es INTERNA y no se renderiza nunca; lo que ve el
+  visitante es `publicNote` (17 de 91 documentos) más las salvedades que
+  `sourceCaveats()` deriva de los datos. Ver `CONVENCIONES.md` y
+  `data/sources-view.js`, que además es donde viven las etiquetas de tipo y nivel
+  compartidas entre el sitio y el generador. Antes de esto había
   una tabla de 6 filas y un párrafo escritos a mano que se habían quedado en los
   primeros clubes argentinos, y los 88 ejercicios REALES no mostraban su fuente
   en ningún lado (el único consumidor de `sources{}` era el banner de
@@ -121,13 +127,13 @@ se reescribe, no se acumula.
   OJO, SE SUBE EN DOS LUGARES (corregido en la Versión 125, hasta acá este
   párrafo decía algo que no era cierto): `window.ASSET_V` es una constante
   inline, pero los `?v=` de los `<script src>` estáticos son LITERALES y no salen
-  de ella — solo los 2 cargadores dinámicos (`loadClubData()`, `I18N.load()`) la
+  de ella, solo los 2 cargadores dinámicos (`loadClubData()`, `I18N.load()`) la
   leen. Hay que cambiar la constante Y los tags. Subir uno solo es peor que no
   subir ninguno: mezcla archivos nuevos con archivos viejos de la caché, que es
   el estado en el que el sitio tira `ReferenceError`. Lo chequea
   `node tools/audit.js` (`asset-v-desfasado`, P1).
 - PROCEDENCIA DEL TIPO DE CAMBIO (Versión 125): cada ejercicio declara de dónde
-  salió su `fx` — `fxSource` con uno de los 6 valores de `FX_SOURCE`
+  salió su `fx`, `fxSource` con uno de los 6 valores de `FX_SOURCE`
   (`data/currency-map.js`), o `fxRef` apuntando a `FX_CLOSE`, la tabla de
   cotizaciones de mercado por moneda y fecha de cierre. La regla: lo que declara
   el documento va literal en el archivo del club; lo que es cotización pública se
@@ -567,7 +573,7 @@ o directamente retomar en la próxima sesión)
     las escribe entre dobles: el conjunto de definidas quedaba vacío y reportaba como faltante TODA
     clave usada. Con el regex arreglado el faltante real es 0. Lo que queda:
     (a) RESUELTO (Versión 126): el párrafo "Calidad de dato por club" y la tabla de 6 filas de la
-        pestaña Fuentes ya no existen — se reemplazaron por contenido generado de los datos, que
+        pestaña Fuentes ya no existen, se reemplazaron por contenido generado de los datos, que
         nace traducible (las etiquetas pasan por `t()`, el texto de cada documento queda en su
         idioma original a propósito, mismo criterio que los rubros de "Formato del club");
     (b) los 3 cards de competencia del presupuesto de Boca (Copa Libertadores / Campeonato Liga
@@ -629,7 +635,7 @@ o directamente retomar en la próxima sesión)
         Vélez no se pudieron confirmar porque la transcripción de esos 2 escaneos no preservó la
         columna de cambio vigente (los otros 9 años de Vélez SÍ se verificaron uno por uno contra su
         Anexo VI en esta sesión). Los de San Lorenzo, porque sus PDFs 2014-15, 2015-16 y 2016-17
-        nunca se transcribieron a `.md`, contra la regla del proyecto — transcribirlos es el paso
+        nunca se transcribieron a `.md`, contra la regla del proyecto, transcribirlos es el paso
         que además resuelve esto. OJO: San Lorenzo y Vélez tienen EXACTAMENTE los mismos valores en
         2015 (8,988) y 2016 (14,94), así que puede haber una copia entre clubes detrás.
     (c) 8 cotizaciones de mercado escritas en el archivo de un club en vez de `FX_CLOSE` (los 5
@@ -1438,10 +1444,6 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   <section id="fuentes">
     <h1 data-i18n="fuentes.title">Fuentes</h1>
 
-    <div class="card">
-      <h2 data-i18n="fuentes.about.title">Sobre mí</h2>
-      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;" data-i18n="fuentes.about.text">Soy hincha de Boca. Nada más. Este sitio es anónimo a propósito: no representa a ninguna lista, candidatura ni a la dirigencia del club. Lo que importa acá es el dato, no quién lo junta.</p>
-    </div>
 
     <p class="subtitle" data-i18n="fuentes.sub">Todo dato en este sitio cita su origen y fecha. Acá está de dónde sale cada número del club que estás mirando, y el listado completo del sitio.</p>
 
@@ -1511,16 +1513,17 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '126b';</script>
-<script src="data/lang/langs.js?v=126b"></script>
-<script src="js/i18n.js?v=126b"></script>
-<script src="data/clubs.js?v=126b"></script>
-<script src="data/category-map.js?v=126b"></script>
-<script src="data/site-labels.js?v=126b"></script>
-<script src="data/currency-map.js?v=126b"></script>
-<script src="data/boca-data.js?v=126b"></script>
-<script src="js/finanzas-calc.js?v=126b"></script>
-<script src="js/finanzas-render.js?v=126b"></script>
+<script>window.ASSET_V = '127b';</script>
+<script src="data/lang/langs.js?v=127b"></script>
+<script src="js/i18n.js?v=127b"></script>
+<script src="data/clubs.js?v=127b"></script>
+<script src="data/category-map.js?v=127b"></script>
+<script src="data/site-labels.js?v=127b"></script>
+<script src="data/currency-map.js?v=127b"></script>
+<script src="data/sources-view.js?v=127b"></script>
+<script src="data/boca-data.js?v=127b"></script>
+<script src="js/finanzas-calc.js?v=127b"></script>
+<script src="js/finanzas-render.js?v=127b"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

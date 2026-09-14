@@ -152,7 +152,7 @@ window.CLUB_GENERIC_DATA.ituano = {
 Object.assign(sources, {
   'ituano-relatorio-auditoria-2024': {
       id:'ituano-relatorio-auditoria-2024', clubId:'ituano',
-      title:'Demonstrações Financeiras e Relatório de Auditoria — Exercício findo em 31 de dezembro de 2024',
+      title:'Demonstrações Financeiras e Relatório de Auditoria, Exercício findo em 31 de dezembro de 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://ituanofc.com.br/',
       note:'PDF oficial (17 páginas, texto nativo) con Balanço Patrimonial al 31/12/2024, DRE, Mutações do Patrimônio Líquido, Fluxos de Caixa y Notas Explicativas. Ituano NO es SAF, sigue siendo associação. Ejercicio 2024 cerrado en DÉFICIT de R$ 7.063.131,20. Los 4 subtotales de la DRE y el resultado final cierran exacto contra la suma de sus propias líneas, sin ninguna inconsistencia. Cifras en reales enteros con centavos (no en miles). grossDebt = las 2 líneas de Emprestimos (Notas 18 y 20), excluidas las obligaciones laborales/tributarias/proveedores. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Ituano/relatorio-auditoria-2024.md.',

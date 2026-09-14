@@ -87,7 +87,8 @@ function loadEngine() {
     ctx, { filename: 'globals-de-index.html' });
 
   const files = [
-    'data/clubs.js', 'data/category-map.js', 'data/currency-map.js', 'data/site-labels.js',
+    'data/clubs.js', 'data/category-map.js', 'data/currency-map.js',
+    'data/sources-view.js', 'data/site-labels.js',
     ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f),
     'js/finanzas-calc.js',
   ];
@@ -395,6 +396,37 @@ function checkMoneda(api) {
 // El bug de `lump_football_operations` (ver club-data-mapping) pasó los 16
 // tie-outs de su ejercicio sin problema: el total cerraba, la plata estaba, solo
 // estaba en el bucket equivocado. Estas 2 señales son las que lo delatan.
+// --- D13: qué de las fuentes se le muestra al visitante (Versión 127) -------
+// `sources[].note` es una nota INTERNA: una sesión se la escribe a la siguiente, con
+// rutas del repo, cómo se leyó el PDF y qué quedó pendiente. En la Versión 126 se
+// publicó tal cual, y el visitante terminó leyendo "PDF subido directamente por Guido"
+// y rutas de su disco. Esto vigila las dos mitades de ese arreglo: que lo público no
+// filtre nada interno, y que nadie vuelva a renderizar `note` sin darse cuenta.
+function checkFuentesPublicas(api) {
+  const INTERNO = /\bGuido\b|Clubes\/|\.pdf\b|\.md\b|pdftotext|pdftoppm|Tesseract|\bOCR\b|transcripci[oó]n|transcript/i;
+  let sinNota = 0;
+
+  for (const id of Object.keys(api.sources)) {
+    const s = api.sources[id];
+    if (s.publicNote && INTERNO.test(s.publicNote)) {
+      add('P1', 'nota-publica-con-interno', `sources['${id}'].publicNote menciona algo interno (nombre propio, ruta del repo o detalle de transcripción): "${s.publicNote.match(INTERNO)[0]}". Esa nota la lee el visitante`);
+    }
+    if (s.reliability !== 'primary' && !s.publicNote) sinNota++;
+  }
+  if (sinNota) {
+    add('P3', 'fuente-no-primaria-sin-nota', `${sinNota} documentos que no son fuente primaria y no tienen publicNote. El nivel solo dice "réplica" o "prensa": conviene una frase que diga por qué`);
+  }
+
+  // El guardarraíl del bug de la 126: `note` no se renderiza en ningún lado.
+  for (const rel of ['js/finanzas-render.js', 'tools/generate-fuentes-page.js']) {
+    const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+    const usos = [...src.matchAll(/\$\{[^}]*\b[a-z]\.note\b/gi)];
+    if (usos.length) {
+      add('P1', 'note-interna-renderizada', `${rel} interpola \`.note\` dentro de HTML (${usos.length} ${usos.length === 1 ? 'vez' : 'veces'}): esa es la nota interna, la que ve el visitante es publicNote`);
+    }
+  }
+}
+
 // --- D12: procedencia del tipo de cambio (Versión 125) ---------------------
 // `checkMoneda()` revisa que el fx EXISTA y sea plausible. Esto revisa de DÓNDE
 // SALIÓ: si lo declara el documento, si es una cotización de mercado, o si nadie
@@ -425,7 +457,7 @@ function checkFxProcedencia(api) {
 
     if (f.source === 'unknown') {
       sinProcedencia++;
-      add('P2', 'fx-sin-procedencia', `${ref(clubId, year)}: fx ${f.fx} sin procedencia declarada (fxSource) — no se sabe si lo declara el documento o si es una cotización externa`);
+      add('P2', 'fx-sin-procedencia', `${ref(clubId, year)}: fx ${f.fx} sin procedencia declarada (fxSource), no se sabe si lo declara el documento o si es una cotización externa`);
     }
 
     // Una cotización de mercado cargada a mano en el archivo de un club, en vez
@@ -436,7 +468,7 @@ function checkFxProcedencia(api) {
       const enTabla = tabla[`${ym.currency}|${year}`] || [];
       const choque = enTabla.find(e => Math.abs(f.fx - e.fx) / e.fx > 0.02);
       if (choque) {
-        add('P2', 'fx-mercado-discrepante', `${ref(clubId, year)}: usa ${f.fx} ${ym.currency}/USD como cotización de mercado, pero FX_CLOSE declara ${choque.fx} para esa fecha (${choque.key}, ${choque.label}) — ${((Math.abs(f.fx - choque.fx) / choque.fx) * 100).toFixed(1)}% de diferencia`);
+        add('P2', 'fx-mercado-discrepante', `${ref(clubId, year)}: usa ${f.fx} ${ym.currency}/USD como cotización de mercado, pero FX_CLOSE declara ${choque.fx} para esa fecha (${choque.key}, ${choque.label}), ${((Math.abs(f.fx - choque.fx) / choque.fx) * 100).toFixed(1)}% de diferencia`);
       } else if (f.source === 'market_close') {
         fueraDeTabla.push(`${clubId} ${year} (${f.fx} ${ym.currency})`);
       }
@@ -444,7 +476,7 @@ function checkFxProcedencia(api) {
   }
 
   if (fueraDeTabla.length) {
-    add('P3', 'fx-mercado-fuera-de-tabla', `${fueraDeTabla.length} cotizaciones de mercado escritas en el archivo de un club en vez de FX_CLOSE: ${fueraDeTabla.join(', ')}. Mientras las use un solo club no duplica nada, pero es el estado del que nace la duplicación — mover a la tabla al confirmar su fecha exacta de cierre.`);
+    add('P3', 'fx-mercado-fuera-de-tabla', `${fueraDeTabla.length} cotizaciones de mercado escritas en el archivo de un club en vez de FX_CLOSE: ${fueraDeTabla.join(', ')}. Mientras las use un solo club no duplica nada, pero es el estado del que nace la duplicación, mover a la tabla al confirmar su fecha exacta de cierre.`);
   }
   if (sinProcedencia) {
     add('P3', 'fx-procedencia-pendiente', `${sinProcedencia} ejercicios reales con fx sin procedencia verificada. Es la lista de to-dos que dejó la migración de la Versión 125, no un error de carga: cada uno se resuelve mirando el Anexo de moneda extranjera de su propio documento.`);
@@ -530,7 +562,7 @@ function checkHigiene(api) {
   } catch { /* sin git, no es un error de datos */ }
 
   // ASSET_V, la otra mitad (Versión 125): los `?v=` de los <script src> estáticos
-  // son LITERALES, no salen de la constante — subir `window.ASSET_V` y olvidarse
+  // son LITERALES, no salen de la constante, subir `window.ASSET_V` y olvidarse
   // de los tags deja al navegador sirviendo los archivos viejos de su caché, con
   // el HTML nuevo. Pasó de verdad al migrar los fx: `currency-map.js` llegó
   // cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y la
@@ -541,7 +573,7 @@ function checkHigiene(api) {
     const enTags = [...new Set([...html.matchAll(/<script src="(?:js|data)\/[^"]*\?v=([^"]+)"/g)].map(m => m[1]))];
     const desfasados = enTags.filter(v => v !== declarada);
     if (declarada && desfasados.length) {
-      add('P1', 'asset-v-desfasado', `index.html declara ASSET_V '${declarada}' pero sus <script src> piden ?v=${desfasados.join(', ?v=')} — el visitante recibe el HTML nuevo con los js/data viejos de su caché`);
+      add('P1', 'asset-v-desfasado', `index.html declara ASSET_V '${declarada}' pero sus <script src> piden ?v=${desfasados.join(', ?v=')}, el visitante recibe el HTML nuevo con los js/data viejos de su caché`);
     }
   } catch { /* sin index.html legible no hay nada que comparar */ }
 
@@ -560,7 +592,7 @@ function checkHigiene(api) {
     // Comillas simples O dobles (arreglado en la Versión 125): el regex solo aceptaba
     // simples y `data/lang/en.js` escribe sus 134 claves con dobles, así que `definidas`
     // quedaba VACÍO y el chequeo reportaba como "sin traducir" absolutamente todas las
-    // claves usadas — de ahí las "88 claves" de la primera corrida, que no era el número real.
+    // claves usadas, de ahí las "88 claves" de la primera corrida, que no era el número real.
     const definidas = new Set([...src.matchAll(/^\s*['"]([^'"]+)['"]\s*:/gm)].map(m => m[1]));
     const faltan = [...usadas].filter(k => !definidas.has(k)).sort();
     if (faltan.length) {
@@ -627,7 +659,7 @@ function listarFx(api) {
     filas.push({
       moneda: meta.currency, year, clubId: clubId + (sufijo || ''), fx: f.fx,
       procedencia: f.source,
-      origen: f.ref ? `${f.ref} — ${f.label}` : (api.FX_SOURCE[f.source] || {}).label || f.source,
+      origen: f.ref ? `${f.ref}, ${f.label}` : (api.FX_SOURCE[f.source] || {}).label || f.source,
     });
   };
   for (const { clubId, year, ym } of clubYears(api)) fila(clubId, year, ym);
@@ -667,6 +699,7 @@ function main() {
   checkLineas(api);
   checkMoneda(api);
   checkFxProcedencia(api);
+  checkFuentesPublicas(api);
   checkCategorizacion(api);
   checkEscala(api);
   checkHigiene(api);

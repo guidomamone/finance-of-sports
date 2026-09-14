@@ -184,7 +184,7 @@ window.CLUB_GENERIC_DATA.coritiba = {
 Object.assign(sources, {
   'coritiba-demonstracoes-2024': {
       id:'coritiba-demonstracoes-2024', clubId:'coritiba',
-      title:'Demonstrações Contábeis — Exercícios findos em 31 de dezembro de 2024 e 2023',
+      title:'Demonstrações Contábeis, Exercícios findos em 31 de dezembro de 2024 e 2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://coritiba.com.br/',
       note:'PDF oficial (36 páginas, texto nativo, firmado por Docusign) con Balanços patrimoniais, DRE, mutações do PL, fluxos de caixa y Notas Explicativas 1-28. Coritiba ES SAF desde julio de 2023. Ejercicio 2024 con PREJUÍZO de R$ 139.402.626 sobre una receita líquida de R$ 87.002.707, y patrimônio líquido NEGATIVO de R$ (29.915.096) al cierre. Los costos del fútbol se cargaron desde el desglose POR NATUREZA de la Nota 22 (9 líneas con categoría real) y no desde las 2 líneas por destino de la DRE, que son un bolsón sin categoría. OJO: la Nota 22 suma R$ 999 más que esas 2 líneas de la DRE para el mismo concepto, una inconsistencia real del documento, documentada en data/coritiba-data.js y en la transcripción. grossDebt = las 2 líneas de Empréstimos e financiamentos (Nota 13). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md.',

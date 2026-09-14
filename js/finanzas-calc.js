@@ -25,7 +25,7 @@
   // toggle igual funcione, aunque sea con un número aproximado.
   // Versión 125: el fx se resuelve con fxMetaFor() (data/currency-map.js) en vez
   // de leerse crudo, porque un ejercicio puede traer `fxRef:'BRL@2024-12-31'` en
-  // vez de `fx:` — el número vive en FX_CLOSE y no en el archivo del club. Se
+  // vez de `fx:`, el número vive en FX_CLOSE y no en el archivo del club. Se
   // devuelven además `fxSource`/`fxLabel` (de dónde salió ese tipo de cambio),
   // que es lo que la ficha de fuente de Finanzas muestra al visitante.
   function yearMetaFor(clubId, year){

@@ -50,9 +50,10 @@ window.CLUB_GENERIC_DATA.sanfreccehiroshima = {
 Object.assign(sources, {
   'sanfreccehiroshima-jleague-doc-2025': {
     id:'sanfreccehiroshima-jleague-doc-2025', clubId:'sanfreccehiroshima',
-    title:'クラブ経営情報開示資料 (Club Management Information Disclosure Material) — edición 2025, J.League',
+    title:'クラブ経営情報開示資料 (Club Management Information Disclosure Material), edición 2025, J.League',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://aboutj.jleague.jp/corporate/assets/pdf/club_info/club_doc-2025.pdf',
+    publicNote:'El documento lo publica la J.League, no el club. Por club informa solo el ingreso total, el de patrocinio y el de entradas: el resto del desglose de ingresos y todos los costos se publican por división (J1, J2, J3), no club por club.',
     note:'Documento publicado por la propia J.League (no por Sanfrecce Hiroshima directamente), como parte de su Club Licensing System — cubre los 60 clubes de J1/J2/J3. Copia local en Clubes/Japón/_J.League (todos los clubes)/club_doc-2025.pdf (carpeta compartida por los 10 clubes de Japón cargados). Ingreso Total/Sponsor/Gate son cifras reales por club (págs. 8-10); el resto de categorías de ingreso y TODOS los costos solo se publican a nivel de división J1/J2/J3, no por club individual (ver comentario completo en data/kashimaantlers-data.js). fx:150 JPY/USD es placeholder de referencia, no declarado por el documento.',
   },
 });

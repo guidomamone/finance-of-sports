@@ -115,7 +115,7 @@ const FX_SOURCE = {
     label: 'Declarado por el balance',
     detail: 'Tipo de cambio de cierre que el propio balance declara en su Anexo de moneda extranjera',
   },
-  // Regla 3: un presupuesto NO tiene cierre todavía — declara un supuesto sobre
+  // Regla 3: un presupuesto NO tiene cierre todavía, declara un supuesto sobre
   // el futuro ("Estimamos un TC de $X en promedio para el período"). Es una
   // categoría propia y no un `document_close` más porque un supuesto puede
   // terminar equivocado: comparar un presupuesto en USD contra un balance en
@@ -198,7 +198,7 @@ function fxMetaFor(meta){
   if(m.fxRef){
     const entry = FX_CLOSE[m.fxRef];
     if(!entry){
-      console.warn(`[fx] fxRef desconocido: '${m.fxRef}' — no está en FX_CLOSE (data/currency-map.js). El ejercicio queda sin tipo de cambio.`);
+      console.warn(`[fx] fxRef desconocido: '${m.fxRef}', no está en FX_CLOSE (data/currency-map.js). El ejercicio queda sin tipo de cambio.`);
       return { fx: null, source: 'unknown', label: `Referencia inexistente: ${m.fxRef}`, ref: m.fxRef };
     }
     return { fx: entry.fx, source: entry.source, label: entry.label, ref: m.fxRef };
@@ -248,7 +248,7 @@ function checkFxSanity(){
     Object.keys(meta).forEach(year => {
       const y = meta[year];
       if(!y || y.currency === 'USD') return;
-      // Versión 125: por fxMetaFor y no por `y.fx` directo — un ejercicio con
+      // Versión 125: por fxMetaFor y no por `y.fx` directo, un ejercicio con
       // `fxRef` tiene el número en FX_CLOSE, no en su propio archivo, y leerlo
       // crudo lo haría pasar por "sin fx" y saltearse este chequeo.
       const fx = fxMetaFor(y).fx;
@@ -257,7 +257,7 @@ function checkFxSanity(){
       if(!range) return;
       const [min, max] = range;
       if(fx < min || fx > max){
-        console.warn(`[fx sanity] ${clubId} ${year}: fx:${fx} para ${y.currency} está fuera del rango plausible [${min}, ${max}] (moneda nativa por 1 USD) — revisar si está invertido o con el orden de magnitud equivocado.`);
+        console.warn(`[fx sanity] ${clubId} ${year}: fx:${fx} para ${y.currency} está fuera del rango plausible [${min}, ${max}] (moneda nativa por 1 USD), revisar si está invertido o con el orden de magnitud equivocado.`);
       }
     });
   });

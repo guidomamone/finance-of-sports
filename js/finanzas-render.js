@@ -685,7 +685,7 @@
       : meta.reportType === 'unofficial_mirror'
       ? 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad de hinchas, no del dominio oficial del club'
       : 'Dato placeholder, número inventado para probar el diseño del sitio, no es real';
-    // Versión 125: el banner ya no repite el documento ni sus salvedades — eso pasó a la ficha
+    // Versión 125: el banner ya no repite el documento ni sus salvedades, eso pasó a la ficha
     // de Fuentes del final de la sección, que las muestra para TODOS los ejercicios y no solo
     // para los que tienen algo malo que avisar. Acá queda solo la advertencia, que es su trabajo.
     banner.innerHTML = `⚠️ <strong>${kind}.</strong>` +
@@ -831,25 +831,20 @@
   // `finanzasClubSourceText`, que era un objeto escrito a mano con 3 entradas (Boca, Racing, River)
   // y dejaba a los otros 38 clubes sin citar ninguna fuente. Peor todavía: `sources{}` tenía 91
   // entradas con 61 URLs y se consumía en UN solo lugar, el banner de calidad de dato, que hace
-  // `return` temprano cuando el ejercicio es oficial — o sea que los 88 ejercicios REALES no
+  // `return` temprano cuando el ejercicio es oficial, o sea que los 88 ejercicios REALES no
   // mostraban su fuente en ningún lado, y el sitio prometía "todo dato cita su origen". Esta card
   // se arma de los datos, así que un club nuevo la trae sin tocar una línea de acá.
-  const FUENTE_NIVEL = {
-    primary:          { label: 'Fuente primaria',          color: '#1b7f3b' },
-    secondary_mirror: { label: 'Réplica no oficial',       color: '#9a6b00' },
-    secondary_press:  { label: 'Cobertura de prensa',      color: '#9a6b00' },
-    placeholder:      { label: 'Sin fuente (placeholder)', color: '#b00020' },
-  };
-
   // El nivel de fuente y la procedencia del tipo de cambio son etiquetas NUESTRAS, no texto del
-  // documento, así que se traducen (a diferencia del título de un balance o de sus salvedades, que
-  // salen textuales de la fuente y quedan en su idioma original, mismo criterio que los rubros de
-  // "Formato del club").
+  // documento, así que se traducen (a diferencia del título de un balance, que sale textual de la
+  // fuente y queda en su idioma original, mismo criterio que los rubros de "Formato del club").
+  // Las etiquetas salen de `data/sources-view.js`, compartidas con `fuentes.html`: antes estaban
+  // duplicadas acá y en el generador, y podían decir cosas distintas del mismo documento.
   function nivelFuente(reliability){
-    const n = FUENTE_NIVEL[reliability];
-    if(!n) return { label: reliability || '—', color: 'var(--muted)' };
+    const n = sourceLevel(reliability);
     return { label: t('fuentes.nivel.' + reliability, n.label), color: n.color };
   }
+
+  function tipoFuente(type){ return t('fuentes.tipo.' + type, sourceTypeLabel(type)); }
 
   function fmtFx(fx, currency){
     const dec = fx < 10 ? 4 : 2;
@@ -866,7 +861,7 @@
     // el de un fx literal es la etiqueta genérica de su procedencia, y esa sí se traduce.
     const label = meta.fxRef ? (meta.fxLabel || '') : (def ? t('fx.source.' + meta.fxSource, def.label) : (meta.fxLabel || ''));
     return filaFicha(etiqueta,
-      `${fmtFx(meta.fx, meta.currency)} — ${label}` +
+      `${fmtFx(meta.fx, meta.currency)}, ${label}` +
       (detalle ? `<span style="display:block;color:var(--muted);font-size:13px;margin-top:2px;">${detalle}</span>` : ''));
   }
 
@@ -900,14 +895,32 @@
 
     body.innerHTML = docs.map(d => {
       const nivel = nivelFuente(d.reliability);
+      const notas = salvedadesDe(d, metasDeFuente(d.id));
       return `<div style="border-top:1px solid var(--border);padding:11px 0 4px;">
         <div style="font-size:14.5px;font-weight:600;">${d.url ? `<a href="${d.url}" target="_blank" rel="noopener">${d.title}</a>` : d.title}</div>
         <div style="font-size:13px;color:var(--muted);margin-top:2px;">
-          <span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>${d.url ? '' : ` · ${t('fuentes.club.nourl', 'sin URL pública')}`}
+          ${tipoFuente(d.type)} · <span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>${d.url ? '' : ` · ${t('fuentes.club.nourl', 'sin URL pública')}`}
         </div>
-        ${d.note ? `<div style="font-size:13px;color:var(--muted);margin-top:4px;">${d.note}</div>` : ''}
+        ${notas ? `<div style="font-size:13px;color:var(--muted);margin-top:4px;">${notas}</div>` : ''}
       </div>`;
     }).join('') + linkTodasLasFuentes();
+  }
+
+  // Las salvedades que se le muestran al visitante: la `publicNote` del documento (escrita para un
+  // lector, la tienen 17 de 91) más lo que `sourceCaveats()` deriva de los propios datos.
+  // NUNCA `note`, que es la nota interna de una sesión para la siguiente y hasta la Versión 126 se
+  // publicaba tal cual, con rutas del disco de Guido adentro. Ver data/sources-view.js.
+  function salvedadesDe(src, metas){
+    const partes = [];
+    if(src.publicNote) partes.push(src.publicNote);
+    partes.push(...sourceCaveats(src, metas));
+    return partes.join(' ');
+  }
+
+  // Las metas de fiscalYearMeta del club actual que usan ESE documento.
+  function metasDeFuente(sourceId){
+    const meta = (CLUB_GENERIC_DATA[currentClub] || {}).fiscalYearMeta || {};
+    return Object.keys(meta).filter(y => meta[y].sourceId === sourceId).map(y => meta[y]);
   }
 
   function linkTodasLasFuentes(){
@@ -937,14 +950,17 @@
     const filas = [
       filaFicha(t('fuentes.card.doc', 'Documento'),
         `${src.title}${src.url ? ` <a href="${src.url}" target="_blank" rel="noopener">(${t('fuentes.card.see', 'ver documento')})</a>` : ''}`),
-      filaFicha(t('fuentes.card.level', 'Nivel de fuente'),
-        `<span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>`),
+      filaFicha(t('fuentes.card.level', 'Tipo y nivel de fuente'),
+        `${tipoFuente(src.type)} · <span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>`),
       filaFx(yearMetaFor(currentClub, year), t('fuentes.card.fx', 'Tipo de cambio')),
       // Un ejercicio con balance Y presupuesto muestra dos columnas, y cada una se convierte con
       // SU tipo de cambio: el del balance es un cierre ya ocurrido, el del presupuesto un supuesto.
       filaFx(presupuestoOverlayMetaFor(currentClub, year), t('fuentes.card.fxBudget', 'Tipo de cambio del presupuesto')),
-      src.note ? filaFicha(t('fuentes.card.note', 'Salvedades'),
-        `<span style="color:var(--muted);">${src.note}</span>`) : '',
+      (() => {
+        const notas = salvedadesDe(src, [meta]);
+        return notas ? filaFicha(t('fuentes.card.note', 'Salvedades'),
+          `<span style="color:var(--muted);">${notas}</span>`) : '';
+      })(),
     ].join('');
 
     body.innerHTML = filas + linkTodas;

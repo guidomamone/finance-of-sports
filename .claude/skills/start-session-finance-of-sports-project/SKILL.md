@@ -136,7 +136,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   agrupados por moneda y ordenados por año, con de dónde salió cada uno (lo declara el balance, es
   la premisa de un presupuesto, es una cotización de mercado de `FX_CLOSE`, o todavía no se sabe).
   Es la respuesta a "¿de dónde salió este número?" sin abrir un solo archivo de club.
-- `node tools/generate-fuentes-page.js` — regenera `fuentes.html`, el listado completo de documentos
+- `node tools/generate-fuentes-page.js`: regenera `fuentes.html`, el listado completo de documentos
   fuente del sitio (la página pública que linkean la ficha de Finanzas y la pestaña Fuentes), desde
   `sources{}` y los `fiscalYearMeta`. Corrélo después de cargar un club o de tocar una fuente.
   `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.

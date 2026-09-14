@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/generate-fuentes-page.js — genera `fuentes.html`, el listado COMPLETO
+// tools/generate-fuentes-page.js, genera `fuentes.html`, el listado COMPLETO
 // de documentos fuente del sitio, desde los propios datos.
 //
 // EL PROBLEMA QUE RESUELVE (el tercer riesgo de escala del mapa de procesos):
@@ -12,18 +12,22 @@
 // sitio cuya promesa es "todo dato cita su origen" mostraba una lista de
 // orígenes que no correspondía a sus datos.
 //
-// Mientras tanto `sources{}` tenía 91 entradas reales con 61 URLs, y se
-// consumía en UN solo lugar del sitio. Esta página las publica todas.
-//
 // POR QUÉ UNA PÁGINA PROPIA Y NO LA PESTAÑA (decisión de Guido): una URL propia
 // es rankeable y el crawler no depende de JS para verla, y `index.html` no
 // crece una fila por documento a medida que el sitio escala a cientos de
 // clubes. La pestaña Fuentes muestra el club que el visitante está mirando y
 // linkea acá para el listado completo.
 //
-// QUÉ NO HACE, A PROPÓSITO: no inventa una fuente para un club que no la tiene
-// cargada, y no resume las salvedades de cada documento — las imprime tal cual
-// las escribió la sesión que cargó el club, en `sources[].note`.
+// QUÉ SE MUESTRA Y QUÉ NO (Versión 127, después de que Guido revisara la
+// primera versión): una tabla de País, Equipo, Fuente y Notas. En Notas va
+// `publicNote` (escrita para un lector) más las salvedades que `sourceCaveats()`
+// deriva de los datos. NUNCA va `note`, que es la nota interna que una sesión le
+// deja a la siguiente: en la Versión 126 se publicaba tal cual y el visitante
+// terminaba leyendo rutas del disco de Guido. Ver `data/sources-view.js`.
+//
+// Las etiquetas de tipo y nivel tampoco viven acá: salen del mismo
+// `data/sources-view.js` que usa el sitio, para que la página y las fichas de
+// Finanzas no puedan decir cosas distintas del mismo documento.
 //
 // USO:
 //   node tools/generate-fuentes-page.js           reescribe fuentes.html
@@ -48,11 +52,15 @@ function cargar() {
   sandbox.globalThis = sandbox;
   const ctx = vm.createContext(sandbox);
   const files = [
-    'data/clubs.js', 'data/category-map.js', 'data/currency-map.js', 'data/site-labels.js',
+    'data/clubs.js', 'data/category-map.js', 'data/currency-map.js',
+    'data/sources-view.js', 'data/site-labels.js',
     ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f),
   ];
   for (const rel of files) vm.runInContext(fs.readFileSync(path.join(ROOT, rel), 'utf8'), ctx, { filename: rel });
-  return vm.runInContext('({ clubs, sources, generic: window.CLUB_GENERIC_DATA || {}, fxMetaFor, FX_SOURCE })', ctx);
+  return vm.runInContext(`({
+    clubs, sources, generic: window.CLUB_GENERIC_DATA || {},
+    fxMetaFor, sourceCaveats, sourceTypeLabel, sourceLevel,
+  })`, ctx);
 }
 
 const PAIS = {
@@ -60,24 +68,9 @@ const PAIS = {
   ES: 'España', JP: 'Japón', MX: 'México', PE: 'Perú', UY: 'Uruguay',
 };
 
-const TIPO = {
-  official_balance_sheet: 'Balance auditado',
-  official_budget: 'Presupuesto oficial',
-  official_budget_and_balance: 'Presupuesto y balance',
-  unofficial_mirror: 'Balance auditado, copia no oficial',
-  press_coverage_of_assembly: 'Cobertura de prensa de la asamblea',
-  estimate_placeholder: 'Placeholder, no es un documento',
-};
+// Cuántos caracteres de nota se muestran antes de plegar el resto en "Ver más".
+const CORTE_NOTA = 150;
 
-const NIVEL = {
-  primary: ['Fuente primaria', '#1b7a3d'],
-  secondary_mirror: ['Réplica no oficial', '#9a6b00'],
-  secondary_press: ['Prensa', '#9a6b00'],
-  placeholder: ['Sin fuente', '#b5372b'],
-};
-
-// Mismo formato que la ficha de Fuentes del sitio: coma decimal, y 4 decimales
-// para las monedas cuyo valor por dólar es chico (EUR), 2 para el resto.
 const fmtFx = fx => fx.toLocaleString('es-AR', {
   minimumFractionDigits: fx < 10 ? 4 : 2, maximumFractionDigits: fx < 10 ? 4 : 2,
 });
@@ -90,12 +83,25 @@ function etiquetaEjercicio(year, club) {
   return (club && club.fiscalYearStart === '01-01') ? String(year) : `${year - 1}/${year}`;
 }
 
+// Nota corta con "Ver más": se corta en el primer punto que caiga después de
+// CORTE_NOTA para no partir una oración al medio, y el resto queda en un
+// <details>. Sin JavaScript, así que funciona igual para un crawler.
+function notaPlegable(texto) {
+  if (texto.length <= CORTE_NOTA) return esc(texto);
+  let corte = texto.indexOf('. ', CORTE_NOTA);
+  corte = corte === -1 ? CORTE_NOTA : corte + 1;
+  if (corte >= texto.length - 20) return esc(texto);
+  return `${esc(texto.slice(0, corte))}
+        <details><summary>Ver más</summary>${esc(texto.slice(corte).trim())}</details>`;
+}
+
 function construir(api) {
   const { clubs, sources, generic } = api;
 
-  // Qué ejercicios respalda cada documento, y con qué tipo de cambio se
-  // convirtieron. Sale de fiscalYearMeta, o sea del mismo campo que usa el
-  // motor para renderizar: no hay una segunda lista que se pueda desincronizar.
+  // Qué ejercicios respalda cada documento, con qué tipo de cambio se
+  // convirtieron y cuál es su meta. Sale de fiscalYearMeta, o sea del mismo
+  // campo con el que el motor renderiza: no hay una segunda lista que se pueda
+  // desincronizar.
   const usos = {};
   for (const clubId of Object.keys(generic)) {
     const meta = generic[clubId].fiscalYearMeta || {};
@@ -104,63 +110,66 @@ function construir(api) {
       if (!ym.sourceId) continue;
       const f = api.fxMetaFor(ym);
       (usos[ym.sourceId] = usos[ym.sourceId] || []).push({
-        year,
-        etiqueta: etiquetaEjercicio(year, clubs[clubId]),
-        fx: f.fx, moneda: ym.currency, fxSource: f.source, fxLabel: f.label,
+        year, ym, etiqueta: etiquetaEjercicio(year, clubs[clubId]),
+        fx: f.fx, moneda: ym.currency, fxLabel: f.label,
       });
     }
   }
 
-  const porPais = {};
+  // Una fila por documento, ordenadas por país y después por club.
+  const filas = [];
   for (const id of Object.keys(sources)) {
     const s = sources[id];
     const club = clubs[s.clubId];
     if (!club) continue;
-    const pais = PAIS[club.country] || club.country;
-    ((porPais[pais] = porPais[pais] || {})[s.clubId] = porPais[pais][s.clubId] || []).push({ id, ...s });
+    filas.push({ id, s, club, pais: PAIS[club.country] || club.country, u: usos[id] || [] });
   }
+  filas.sort((a, b) =>
+    a.pais.localeCompare(b.pais, 'es') ||
+    (a.club.displayName || a.club.name).localeCompare(b.club.displayName || b.club.name, 'es') ||
+    a.s.title.localeCompare(b.s.title, 'es'));
 
-  const partes = [];
-  let totalDocs = 0, totalClubes = 0, conLink = 0;
+  const totalDocs = filas.length;
+  const totalClubes = new Set(filas.map(f => f.s.clubId)).size;
+  const totalPaises = new Set(filas.map(f => f.pais)).size;
+  const conLink = filas.filter(f => f.s.url).length;
 
-  for (const pais of Object.keys(porPais).sort((a, b) => a.localeCompare(b, 'es'))) {
-    const clubIds = Object.keys(porPais[pais]).sort((a, b) =>
-      (clubs[a].displayName || clubs[a].name).localeCompare(clubs[b].displayName || clubs[b].name, 'es'));
-    totalClubes += clubIds.length;
-    partes.push(`<h2 id="${esc(pais.toLowerCase().replace(/[^a-z]/g, ''))}">${esc(pais)} <span class="conteo">${clubIds.length} ${clubIds.length === 1 ? 'club' : 'clubes'}</span></h2>`);
+  // País y equipo se escriben una sola vez por grupo, como en una planilla.
+  const tr = [];
+  let paisPrev = null, clubPrev = null;
+  for (const f of filas) {
+    const nivel = api.sourceLevel(f.s.reliability);
+    const ejercicios = f.u.map(x => x.etiqueta).join(', ');
+    const fxs = [...new Set(f.u.filter(x => x.fx != null && x.moneda !== 'USD')
+      .map(x => `1 USD = ${fmtFx(x.fx)} ${x.moneda} (${x.fxLabel})`))];
+    const notas = [];
+    if (f.s.publicNote) notas.push(f.s.publicNote);
+    notas.push(...api.sourceCaveats(f.s, f.u.map(x => x.ym)));
 
-    for (const clubId of clubIds) {
-      const club = clubs[clubId];
-      const docs = porPais[pais][clubId].sort((a, b) => a.title.localeCompare(b.title, 'es'));
-      totalDocs += docs.length;
-      partes.push(`<section class="club">
-  <h3>${esc(club.displayName || club.name)}<span class="legal">${esc(club.name)}</span></h3>`);
+    const nuevoPais = f.pais !== paisPrev;
+    const nuevoClub = nuevoPais || f.s.clubId !== clubPrev;
+    paisPrev = f.pais; clubPrev = f.s.clubId;
 
-      for (const d of docs) {
-        if (d.url) conLink++;
-        const [nivelLabel, nivelColor] = NIVEL[d.reliability] || [d.reliability || '—', '#6b6b6b'];
-        const u = usos[d.id] || [];
-        // El tipo de cambio se imprime una vez por documento cuando es el mismo
-        // para todos sus ejercicios, que es el caso normal.
-        const fxs = [...new Set(u.filter(x => x.fx != null && x.moneda !== 'USD')
-          .map(x => `1 USD = ${fmtFx(x.fx)} ${x.moneda} — ${x.fxLabel}`))];
-        partes.push(`  <article class="doc">
-    <p class="titulo">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</p>
-    <p class="meta"><span class="tipo">${esc(TIPO[d.type] || d.type)}</span> · <span style="color:${nivelColor};font-weight:600;">${esc(nivelLabel)}</span>${
-      u.length ? ` · ${u.length === 1 ? 'Ejercicio' : 'Ejercicios'} ${u.map(x => esc(x.etiqueta)).join(', ')}` : ''
-    }${d.url ? '' : ' · <span class="sinlink">sin URL pública</span>'}</p>${
-      fxs.length ? `\n    <p class="fx">Tipo de cambio: ${fxs.map(esc).join(' · ')}</p>` : ''
-    }${d.note ? `\n    <p class="nota">${esc(d.note)}</p>` : ''}
-  </article>`);
-      }
-      partes.push('</section>');
-    }
+    tr.push(`      <tr${nuevoClub ? ' class="sep"' : ''}>
+        <td class="pais">${nuevoPais ? esc(f.pais) : ''}</td>
+        <td class="equipo">${nuevoClub ? esc(f.club.displayName || f.club.name) : ''}</td>
+        <td class="fuente">
+          <span class="titulo">${f.s.url
+            ? `<a href="${esc(f.s.url)}" target="_blank" rel="noopener">${esc(f.s.title)}</a>`
+            : esc(f.s.title)}</span>
+          <span class="meta">${esc(api.sourceTypeLabel(f.s.type))} · <b style="color:${nivel.color}">${esc(nivel.label)}</b>${
+            ejercicios ? ` · ${f.u.length === 1 ? 'Ejercicio' : 'Ejercicios'} ${esc(ejercicios)}` : ''}${
+            f.s.url ? '' : ' · sin URL pública'}</span>${
+            fxs.length ? `\n          <span class="meta">${esc(fxs.join(' · '))}</span>` : ''}
+        </td>
+        <td class="notas">${notas.length ? notaPlegable(notas.join(' ')) : '<span class="vacio">Sin salvedades</span>'}</td>
+      </tr>`);
   }
 
   const hoy = new Date().toISOString().slice(0, 10);
   return `<!DOCTYPE html>
 <!--
-  GENERADO AUTOMÁTICAMENTE por tools/generate-fuentes-page.js — NO EDITAR A MANO.
+  GENERADO AUTOMÁTICAMENTE por tools/generate-fuentes-page.js. NO EDITAR A MANO.
   Todo lo que se ve acá sale de sources{} y de los fiscalYearMeta de cada
   data/<club>-data.js, o sea de los mismos campos con los que el sitio renderiza
   los números. Para corregir algo de esta página, corregí el archivo del club y
@@ -171,44 +180,62 @@ function construir(api) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fuentes | El deporte en Números</title>
-<meta name="description" content="Todos los documentos oficiales que respaldan los números de financeofsports.com: ${totalDocs} balances, presupuestos y estados contables de ${totalClubes} clubes, con su tipo de cambio y sus salvedades.">
+<meta name="description" content="Todos los documentos oficiales que respaldan los números de financeofsports.com: ${totalDocs} balances, presupuestos y estados contables de ${totalClubes} clubes de ${totalPaises} países, con su tipo de cambio y sus salvedades.">
 <link rel="canonical" href="https://financeofsports.com/fuentes.html">
 <style>
   :root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;}
   *{box-sizing:border-box;}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
   header{background:var(--azul);color:#fff;padding:12px 14px;}
-  .header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;}
+  .header-inner{max-width:1600px;margin:0 auto;display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;}
   .dot{width:10px;height:10px;background:var(--oro);border-radius:50%;}
   header a{color:#fff;text-decoration:none;}
-  main{max-width:900px;margin:0 auto;padding:26px 14px 60px;}
+  main{max-width:1600px;margin:0 auto;padding:26px 20px 60px;}
   h1{font-size:26px;margin:0 0 8px;}
-  .sub{color:var(--muted);font-size:15px;margin:0 0 8px;max-width:70ch;}
-  .volver{font-size:14px;margin:18px 0 0;}
-  h2{font-size:19px;margin:34px 0 4px;padding-bottom:6px;border-bottom:2px solid var(--azul);}
-  .conteo{font-size:13px;font-weight:400;color:var(--muted);}
-  .club{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin:14px 0;}
-  .club h3{font-size:16px;margin:0 0 4px;}
-  .legal{display:block;font-size:12.5px;font-weight:400;color:var(--muted);margin-top:2px;}
-  .doc{border-top:1px solid var(--border);padding:11px 0 3px;margin:8px 0 0;}
-  .titulo{margin:0;font-size:14.5px;font-weight:600;}
-  .meta{margin:3px 0 0;font-size:13px;color:var(--muted);}
-  .tipo{color:var(--text);}
-  .sinlink{font-style:italic;}
-  .fx{margin:3px 0 0;font-size:13px;color:var(--muted);}
-  .nota{margin:5px 0 0;font-size:13px;color:var(--muted);}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 8px;max-width:100ch;}
+  .volver{font-size:14px;margin:16px 0 22px;}
+  .tabla-wrap{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  th{
+    text-align:left;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    font-weight:600;padding:12px 14px;border-bottom:2px solid var(--border);white-space:nowrap;background:var(--card);
+    position:sticky;top:0;z-index:1;
+  }
+  td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
+  tr.sep td{border-top:1px solid var(--border);}
+  td.pais{font-weight:600;white-space:nowrap;width:1%;}
+  td.equipo{font-weight:600;white-space:nowrap;width:1%;}
+  td.fuente{width:44%;}
+  td.notas{color:var(--muted);font-size:13.5px;}
+  .titulo{display:block;font-weight:500;}
+  .meta{display:block;color:var(--muted);font-size:12.5px;margin-top:3px;}
+  .vacio{color:#a9a9a4;}
+  details{margin-top:4px;}
+  summary{cursor:pointer;color:var(--azul);font-weight:600;}
   a{color:var(--azul);}
-  footer{max-width:900px;margin:0 auto;padding:0 14px 40px;color:var(--muted);font-size:13px;}
+  footer{max-width:1600px;margin:0 auto;padding:18px 20px 40px;color:var(--muted);font-size:13px;}
+  @media (max-width:820px){
+    td.fuente{width:auto;}
+    th,td{padding:9px 10px;}
+  }
 </style>
 </head>
 <body>
 <header><div class="header-inner"><span class="dot"></span><a href="index.html">El deporte en Números</a></div></header>
 <main>
   <h1>Fuentes</h1>
-  <p class="sub">Todo número del sitio sale de un documento público de su club, y acá está la lista completa: ${totalDocs} documentos de ${totalClubes} clubes, ${conLink} de ellos con link directo al original. De cada uno se indica qué tipo de documento es, qué ejercicios respalda, con qué tipo de cambio se convirtió a dólares, y qué salvedades tiene.</p>
-  <p class="sub">Cuando un documento no declara su propio tipo de cambio se usa la cotización oficial de la fecha de cierre, y eso se dice acá en vez de dejarlo implícito. Un presupuesto declara un tipo de cambio <em>supuesto</em>, que puede terminar siendo distinto del que termine ocurriendo: también se aclara.</p>
-  <p class="volver"><a href="index.html">← Volver al sitio</a></p>
-${partes.join('\n')}
+  <p class="sub">Todo número del sitio sale de un documento público de su club, y acá está la lista completa: ${totalDocs} documentos de ${totalClubes} clubes de ${totalPaises} países, ${conLink} de ellos con link directo al original. De cada uno se indica qué tipo de documento es, qué ejercicios respalda, con qué tipo de cambio se convirtió a dólares y qué salvedades tiene.</p>
+  <p class="sub">Cuando un documento no declara su propio tipo de cambio se usa la cotización oficial de su fecha de cierre, y eso se dice acá en vez de dejarlo implícito. Un presupuesto declara un tipo de cambio supuesto, que puede terminar siendo distinto del que ocurra: también se aclara.</p>
+  <p class="volver"><a href="index.html">Volver al sitio</a></p>
+
+  <div class="tabla-wrap">
+    <table>
+      <thead><tr><th>País</th><th>Equipo</th><th>Fuente</th><th>Notas</th></tr></thead>
+      <tbody>
+${tr.join('\n')}
+      </tbody>
+    </table>
+  </div>
 </main>
 <footer>Generado desde los datos del sitio el ${hoy}. Para corregir algo, se corrige el archivo del club y se vuelve a generar esta página.</footer>
 </body>

@@ -243,12 +243,12 @@ presupuesto en USD contra un balance en USD mezcla las dos cosas, y el sitio nec
 La diferencia no es estilística, es la regla #0 otra vez: **el TC declarado por un documento es un
 dato de ESE club** (dos clubes pueden declarar valores distintos para el mismo día y los dos están
 bien, por eso nunca se comparte), mientras que **una cotización de mercado es un dato del mercado**,
-no del club — se dice una vez en `FX_CLOSE` y la referencian todos los que la usen. Antes de la
+no del club, se dice una vez en `FX_CLOSE` y la referencian todos los que la usen. Antes de la
 Versión 125 las cotizaciones se copiaban club por club: el cierre del real al 31/12/2024 estaba
 escrito a mano en 5 archivos, el euro al 30/6/2025 en 9 y el ¥150 de la J.League en 10.
 
 **Si la moneda y fecha que necesitás no está en `FX_CLOSE`, agregala ahí** (con su `label`: qué
-cotización es y de qué organismo — PTAX, BCRA, BNA, BCE, TRM), no en el archivo del club. Excepción:
+cotización es y de qué organismo, PTAX, BCRA, BNA, BCE, TRM), no en el archivo del club. Excepción:
 una `market_approx` se queda como literal en el archivo del club, para que nadie la reuse desde la
 tabla creyendo que es un cierre oficial.
 
