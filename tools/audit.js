@@ -633,9 +633,21 @@ function checkEscala(api) {
   const porClub = Math.round(bytesData / n);
   add('P3', 'proyeccion', `data/*.js: ${(bytesData / 1024).toFixed(0)} KB en ${n} clubes (~${(porClub / 1024).toFixed(1)} KB/club). A 1000 clubes: ~${(porClub * 1000 / 1024 / 1024).toFixed(1)} MB en disco; el que se baja por visita sigue siendo 1 (lazy load), pero clubs.js se carga entero SIEMPRE (hoy ${(fs.statSync(path.join(ROOT, 'data/clubs.js')).size / 1024).toFixed(0)} KB).`);
 
-  for (const [f, limite] of [['CHANGELOG.md', 100], ['finance-of-sports-project.md', 400], ['index.html', 150]]) {
+  // UMBRALES POR CÓMO SE LEE EL ARCHIVO, no por tamaño a secas (Versión 140, decisión de
+  // Guido después de plantearle el trade-off). Un archivo que se lee ENTERO paga su tamaño
+  // en cada lectura: `index.html` lo baja cada visitante en cada pageview, y `ESTADO.md` y
+  // `TODO.md` los lee entera cada sesión que arranca acá. Esos tienen umbral apretado.
+  // `CHANGELOG.md` y `finance-of-sports-project.md` son de CONSULTA PUNTUAL: se entra con un
+  // grep, se lee un bloque y se sale, y para ese uso 459 KB en un archivo cuestan lo mismo
+  // que 459 KB repartidos en cinco. Partirlos tendría un costo real y concreto: hoy "¿dónde
+  // está la historia?" tiene una respuesta de una palabra, y con CHANGELOG-2026/2027/... cada
+  // búsqueda arranca eligiendo archivo y cada tanto alguien escribe en el viejo. Sus umbrales
+  // son deliberadamente altos y solo existen para avisar si algún día se van de escala.
+  // EL DÍA QUE SÍ HAYA QUE PARTIRLOS no va a ser por el tamaño: va a ser cuando un grep
+  // devuelva decenas de bloques irrelevantes, y eso se arregla con un índice, no partiendo.
+  for (const [f, limite] of [['CHANGELOG.md', 400], ['finance-of-sports-project.md', 1200], ['index.html', 150], ['ESTADO.md', 60], ['TODO.md', 60]]) {
     const kb = fs.statSync(path.join(ROOT, f)).size / 1024;
-    if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir, ver to-do 24 de TODO.md`);
+    if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir`);
   }
 }
 

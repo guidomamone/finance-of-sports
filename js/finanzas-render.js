@@ -999,6 +999,30 @@
 
 
   // ---------- INICIO ----------
+
+  // ¿Este ejercicio informa deuda? Mismo test que usa la comparación entre clubes
+  // (js/comparar-clubes.js) y que `sourceCaveats()` usa para derivar la salvedad "no informa
+  // deuda ni caja": los dos campos en null es "no lo dice", y los dos en CERO EXACTO es lo
+  // mismo escrito distinto, que es como lo escriben los presupuestos. Un club de primera
+  // división con deuda bruta y caja exactamente cero no existe.
+  function informaDeuda(clubId, year){
+    const m = ((window.CLUB_GENERIC_DATA || {})[clubId] || {}).fiscalYearMeta;
+    const y = (m && m[year]) || null;
+    if(!y) return false;
+    if(y.grossDebt == null && y.cash == null) return false;
+    if(y.grossDebt === 0 && y.cash === 0) return false;
+    return true;
+  }
+
+  // El ejercicio más reciente de la gestión `g` que cumple `test`, o null si ninguno. Se
+  // recorre de atrás para adelante porque lo que se busca siempre es "el más nuevo que...".
+  function ultimoEjercicioCon(clubId, g, test){
+    for(let y = g.lastYear; y >= g.firstYear; y--){
+      if(computeYearForClub(clubId, y) && test(y)) return y;
+    }
+    return null;
+  }
+
   function renderInicioStats(){
     const gestionKey = currentGestionKey(currentClub);
     const g = (gestionesByClub[currentClub] || {})[gestionKey];
@@ -1016,7 +1040,38 @@
       `;
       return;
     }
-    const cur = computeYearForClub(currentClub, g.lastYear);
+    // VERSIÓN 140. Antes acá decía `computeYearForClub(currentClub, g.lastYear)`, o sea "el
+    // último ejercicio de la gestión actual", y ESE mismo objeto alimentaba los 2 stats
+    // financieros. El problema, encontrado tirando del hilo desde el píxel: el último ejercicio
+    // de Boca es su PRESUPUESTO 2026/27, así que la home mostraba "Último resultado: +2,0 M USD"
+    // (un pronóstico del club, no su último resultado) y "Deuda neta actual: 0,0 M USD" (porque
+    // un presupuesto proyecta ingresos y egresos, no un balance, y escribe deuda y caja en cero).
+    // Lo segundo se lee como "Boca no debe nada", que es falso.
+    //
+    // La causa raíz no era el cero: era usar "el último ejercicio" como sinónimo de "el estado
+    // actual del club", sin preguntarse si ese ejercicio es un balance o un pronóstico, ni si el
+    // documento informa ese indicador. Ahora CADA stat pide el último ejercicio QUE TENGA SU
+    // DATO, y lo dice en pantalla en vez de esconderlo en un tooltip.
+    // Primero el último BALANCE. Si el club solo tiene presupuestos, se usa el último ejercicio
+    // real igual, pero la etiqueta cambia a "Resultado presupuestado" para no llamar "último
+    // resultado" a un pronóstico. El fallback exige `!== 'blank'`: `computeYearForClub()`
+    // devuelve un objeto para CUALQUIER año de un club cargado, también para uno que no existe
+    // en su `fiscalYearMeta`, así que sin ese filtro el fallback podría elegir un año vacío.
+    const añoResultado = ultimoEjercicioCon(currentClub, g, (y) => yearKindForClub(currentClub, y) === 'balance')
+                      ?? ultimoEjercicioCon(currentClub, g, (y) => yearKindForClub(currentClub, y) !== 'blank');
+    const añoDeuda = ultimoEjercicioCon(currentClub, g, (y) => informaDeuda(currentClub, y));
+    const cur = añoResultado == null ? null : computeYearForClub(currentClub, añoResultado);
+    if(!cur){
+      // Una gestión cuyo rango no cubre ningún ejercicio real: mismo "Sin dato" de arriba en los
+      // 2 stats financieros, en vez de un NaN o un año inventado.
+      document.getElementById('inicioStats').innerHTML = `
+        <div class="stat"><div class="label">${t('stat.result','Último resultado')}</div><div class="value">${t('stat.nodata','Sin dato')}</div></div>
+        <div class="stat"><div class="label">${t('stat.netdebt','Deuda neta')}</div><div class="value">${t('stat.nodata','Sin dato')}</div></div>
+        <div class="stat"><div class="label">${t('stat.netspend','Gasto neto en pases')}</div><div class="value">${fmtAmount(pasesNetSpend(currentClub, gestionKey), 'USD')}</div></div>
+        <div class="stat"><div class="label">${t('stat.members','Socios activos')}</div><div class="value">${memberCountByClub[currentClub] ? memberCountByClub[currentClub].toLocaleString('es-AR') : t('stat.nodata','Sin dato')}</div></div>
+      `;
+      return;
+    }
     // NO usa displayFinancialsForClub() acá a propósito — esa función fuerza USD siempre (la usa
     // "Comparar Gestiones", que por diseño ignora el toggle de moneda, ver su propio comentario en
     // js/finanzas-calc.js). El toggle de moneda ahora es universal (header, al lado del selector de
@@ -1025,7 +1080,9 @@
     // tienen un fx propio de ningún balance/presupuesto para convertir), se muestran siempre en USD.
     const meta = yearMetaFor(currentClub, cur.year);
     const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
-    const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
+    const deuda = añoDeuda == null ? null : computeYearForClub(currentClub, añoDeuda);
+    const netDebtDisp = deuda ? toDisplayValue(deuda.netDebt, yearMetaFor(currentClub, añoDeuda), currentCurrency) : null;
+    const esPresupuesto = yearKindForClub(currentClub, cur.year) === 'presupuesto';
     const netSpend = pasesNetSpend(currentClub, gestionKey);
     const members = memberCountByClub[currentClub];
     // Los 4 labels entran siempre en una sola línea (evita que un card quede más alto que los
@@ -1035,8 +1092,10 @@
     // movió a `title` (tooltip nativo al pasar el mouse), no se perdió información, solo se sacó
     // del texto visible.
     document.getElementById('inicioStats').innerHTML = `
-      <div class="stat"><div class="label" title="${t('stat.result.tip','Ejercicio')} ${cur.yearLabel}">${t('stat.result','Último resultado')}</div><div class="value ${patDisp>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">${t('stat.netdebt','Deuda neta actual')}</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${esPresupuesto ? t('stat.result.budget','Resultado presupuestado') : t('stat.result','Último resultado')}</div><div class="value ${patDisp>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div><div class="stat-sub">${cur.yearLabel}</div></div>
+      <div class="stat"><div class="label">${t('stat.netdebt','Deuda neta')}</div>${netDebtDisp === null
+        ? `<div class="value">${t('stat.nodata','Sin dato')}</div><div class="stat-sub">${t('stat.netdebt.none','ningún ejercicio cargado informa deuda')}</div>`
+        : `<div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div><div class="stat-sub">${computeYearForClub(currentClub, añoDeuda).yearLabel}</div>`}</div>
       <div class="stat"><div class="label" title="${t('stat.netspend.tip','Gestión actual')}">${t('stat.netspend','Gasto neto en pases')}</div><div class="value ${netSpend>=0?'pos':'neg'}">${fmtAmount(netSpend, 'USD')}</div></div>
       <div class="stat"><div class="label">${t('stat.members','Socios activos')}</div><div class="value">${members ? members.toLocaleString('es-AR') : t('stat.nodata','Sin dato')}</div></div>
     `;

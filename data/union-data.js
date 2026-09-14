@@ -219,11 +219,26 @@ const unionExpenseLinesByYear = {
   ],
 };
 
+// LOS 4 TIPOS DE CAMBIO DE UNIÓN SON `document_close`, NO `market_close` (corregido en la
+// Versión 140). Estaban etiquetados como cotización de mercado y no lo son: los 4 salen del
+// ANEXO V del propio balance de Unión, lado Activo/Créditos, como dice la `note` de cada
+// fuente en data/clubs.js. La etiqueta equivocada disparaba 2 hallazgos de la auditoría, y el
+// más ruidoso era real pero mal diagnosticado: "Unión 2024 usa 890,50 pero la tabla de mercado
+// dice 909 para esa fecha".
+//
+// LOS DOS NÚMEROS ESTÁN BIEN, Y ESTA ES LA PARTE QUE HAY QUE ENTENDER ANTES DE "CORREGIR"
+// ALGUNO (lo planteó Guido: "puede ser porque tuvieron acceso a distinto FX, o porque al
+// momento de cancelar o recibir tal plata, el fx era distinto"): un Anexo de moneda extranjera
+// valúa los ACTIVOS (créditos, lo que le deben al club) al tipo COMPRADOR y los PASIVOS
+// (deudas) al VENDEDOR. Son los dos lados del spread del mismo día. 890,50 es el comprador
+// del 30/6/2024 y ~909 el mayorista/vendedor: no se contradicen, describen cosas distintas.
+// Por eso la regla del proyecto dice que el `fx` que declara un documento va LITERAL en el
+// archivo de ese club y nunca se mueve a FX_CLOSE ni se reemplaza por el de otro club.
 const unionFiscalYearMeta = {
   2022: {
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
-    currency:'ARS', fx:124, fxSource:'market_close', sourceId:'union-memoria-y-balance-116',
+    currency:'ARS', fx:124, fxSource:'document_close', sourceId:'union-memoria-y-balance-116',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:-45.996916, tax:0,
     // SUPERÁVIT FINAL real: $190.408.914 ARS.
@@ -232,7 +247,7 @@ const unionFiscalYearMeta = {
   2023: {
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
-    currency:'ARS', fx:255, fxSource:'market_close', sourceId:'union-memoria-y-balance-117',
+    currency:'ARS', fx:255, fxSource:'document_close', sourceId:'union-memoria-y-balance-117',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:145.239007, tax:0,
     // SUPERÁVIT FINAL real: $893.901.287 ARS.
@@ -241,7 +256,7 @@ const unionFiscalYearMeta = {
   2024: {
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo — grossDebt/cash quedan sin cargar, no inventados.
-    currency:'ARS', fx:890.50, fxSource:'market_close', sourceId:'union-estados-contables-118-2023-24',
+    currency:'ARS', fx:890.50, fxSource:'document_close', sourceId:'union-estados-contables-118-2023-24',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:-64.084989, tax:0,
     // SUPERÁVIT FINAL real: $1.166.322.977 ARS.
@@ -251,7 +266,7 @@ const unionFiscalYearMeta = {
     // El propio balance no se pudo leer con confianza para su Anexo de moneda extranjera (ver
     // comentario de cabecera) — dólar oficial vendedor BNA de cierre 30/6/2025, investigado
     // externamente.
-    currency:'ARS', fx:1217.87, fxSource:'market_close', sourceId:'union-memoria-y-balance-119',
+    currency:'ARS', fx:1217.87, fxSource:'document_close', sourceId:'union-memoria-y-balance-119',
     reportType:'official_balance_sheet', gestionId:'spahn',
     // grossDebt = Deudas corriente (8.619,653532) + no corriente (137,744168), sin Previsiones
     // (704,285792, contingencia). cash = Caja y bancos.

@@ -124,6 +124,28 @@ const FX_SOURCE = {
     label: 'Premisa del presupuesto',
     detail: 'Tipo de cambio que el propio presupuesto declara como supuesto para un ejercicio que todavía no cerró',
   },
+  // Versión 140, a pedido de Guido: "puede ser porque tuvieron acceso a distinto FX,
+  // o porque al momento de cancelar o recibir tal plata, el fx era distinto. Para
+  // Argentina es normal que el fx sea difícil".
+  //
+  // Este es el caso que faltaba, y no es una variante de `document_close`: un balance
+  // convierte su ESTADO DE RESULTADOS (un flujo, plata que entró y salió a lo largo de
+  // 12 meses) a un tipo de cambio PROMEDIO del período, y su BALANCE (un stock al
+  // cierre) al de cierre. Es contabilidad estándar y en Argentina la diferencia entre
+  // los dos es enorme. Sin esta categoría, un club que declare su promedio quedaría
+  // etiquetado `document_close`, que sería falso: diría "este es el tipo de cambio del
+  // día del cierre" sobre un número que es el promedio de un año.
+  //
+  // OJO AL CARGAR UNO: si el documento declara los DOS (promedio para resultados,
+  // cierre para el balance), el `fx` del ejercicio es el que corresponde a lo que el
+  // sitio muestra. Hoy `revenueLines`/`expenseLines` son el estado de resultados, así
+  // que va el PROMEDIO; `grossDebt`/`cash` son del balance y quedarían convertidos con
+  // el promedio, que es incorrecto. Ese caso todavía no existe en el sitio: el día que
+  // aparezca, hay que separar el fx por tipo de dato, no elegir uno para todo.
+  document_average: {
+    label: 'Promedio del período, declarado por el balance',
+    detail: 'Tipo de cambio promedio del ejercicio que el propio documento declara para convertir su estado de resultados, distinto del de cierre que usa para el balance',
+  },
   // Reglas 1 y 2: el documento no declara ninguno, se usó la cotización oficial
   // de la fecha de cierre. Estas son las que se repetían club por club y ahora
   // viven una sola vez en FX_CLOSE, abajo.

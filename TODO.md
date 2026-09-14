@@ -25,28 +25,14 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
 
 ## Qué hay que hacer
 
-24. `CHANGELOG.md` (103 KB) y `finance-of-sports-project.md` (459 KB) crecen un bloque por
-    versión, sin partición, y los dos ya pasaron el umbral de `node tools/audit.js`. Es la
-    mitad que quedó abierta del viejo punto 0: la otra mitad (la sección por club y la to-do
-    list adentro del comentario de `index.html`) se resolvió en la Versión 138 moviéndolas a
-    `ESTADO.md` y a este archivo. Evaluar si conviene partir por año o por rango de versiones
-    (ej. `CHANGELOG-2026.md`) o esperar a que sea un problema real de lectura/edición. OJO
-    antes de decidir: los dos son archivos de CONSULTA PUNTUAL (se buscan con grep, no se leen
-    de corrido), así que el tamaño molesta mucho menos que en un archivo que se lee entero.
-
-
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
-    (a) PRECISIÓN, Y ES LO MÁS IMPORTANTE DE ESTA LISTA. Los presupuestos escriben
-        `grossDebt:0, cash:0` en su `fiscalYearMeta` (Boca 2027, Racing 2026 y 2027): un
-        presupuesto proyecta ingresos y egresos, no un balance. Eso hace que Inicio muestre
-        "DEUDA NETA ACTUAL: 0.0 M USD" para Boca, que se lee como "Boca no debe nada" y es
-        falso. La comparación entre clubes ya lo muestra como "sin dato" (trata el par de ceros
-        exactos como ausencia), pero eso es un parche en UNA vista: el dato sigue diciendo 0 en
-        el archivo del club y el KPI de Inicio lo publica. Las 2 opciones: poner esos campos en
-        `null` en los 3 ejercicios (hay que confirmar contra cada documento que efectivamente no
-        proyectan deuda), o que `renderInicioStats()` use el último ejercicio con BALANCE para
-        la deuda, no el último ejercicio a secas. Es el mismo problema de fondo que la to-do
-        20(h): el sitio muestra igual "la fuente reporta cero" y "la fuente no lo dice".
+    (a) RESUELTO (Versión 140). Inicio mostraba "DEUDA NETA ACTUAL: 0,0 M USD" para Boca y
+        "Último resultado" con la cifra del PRESUPUESTO. Causa: `renderInicioStats()` usaba "el
+        último ejercicio de la gestión actual" como sinónimo de "el estado actual del club". Ahora
+        cada stat pide el último ejercicio QUE TENGA SU DATO (el último balance para el resultado,
+        el último que informe deuda para la deuda) y escribe cuál es abajo del número, en vez de
+        esconderlo en un tooltip. Los presupuestos siguen escribiendo `grossDebt:0, cash:0` en sus
+        datos, pero ninguna vista los publica ya como si fueran un cero real.
     (b) `LEAGUES[].totalClubs` está en `null` en las 8 ligas, así que el aviso de sesgo del
         benchmark dice "sale de los 5 clubes cargados" y no puede decir "5 de 20". OJO al
         cargarlo: la cantidad de equipos de una liga TAMBIÉN cambia por temporada (Primera
@@ -97,8 +83,15 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
         Decidir: ¿se agrega una categoría de ingreso extraordinario, o se reubican esas líneas?
     (e) Racing 2009/2010/2011: ejercicios reales sin ningún total oficial cargado. Son los 3 que se
         cargaron con el proceso viejo en USD ya convertido (ver to-do 1).
-    (f) `river 2024`: ni una línea en `wages_squad` ni bolsón sin desglosar — los sueldos quedaron
-        enterrados en `other_expenses` (las 11 líneas del ejercicio están todas ahí).
+    (f) RESUELTO (Versión 140). `river 2024` tenía sus 8 líneas de gasto en `other_expenses`, o
+        sea el 80% en el catch-all y "Salarios y primas" en $0. Su Anexo VIII desglosa POR DESTINO
+        (qué área gastó) y no por naturaleza, así que los sueldos están adentro de cada área. Se
+        mapeó cada destino al bucket de destino que ya existe, siguiendo línea por línea el
+        precedente de Boca 2025: el catch-all quedó en 0% y el 53% que no se puede desglosar está
+        en la fila "Fútbol profesional (sin desglosar por la fuente)", que lo dice. Ni un peso se
+        movió. LO QUE FALTA es UNA celda: fila "Sueldos y cargas sociales" x columna "Fútbol
+        profesional" del Anexo VIII (páginas 59-62 del PDF). El día que se lea y verifique, esa
+        porción pasa a `wages_squad`.
     (g) RESUELTO EN SU MAYOR PARTE (Versión 135): de los 5 literales de `clubId` quedan 2, y los 2
         son a propósito. El Presupuesto Financiero y el de Inversiones de Boca 2026/27 estaban
         escritos a mano como HTML adentro de este archivo (133 líneas) con un `isBoca2027`
@@ -125,24 +118,25 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
         hay que chequear antes si su balance trae la nota de costos por naturaleza, que sería mejor
         que el bolsón. NINGUNO de los dos cambios mueve un número: cambian bajo qué fila se muestra.
 
-21. NUEVO (Versión 125): lo que dejó pendiente la migración de procedencia de los tipos de cambio.
-    Los 3 salen listados por `node tools/audit.js`, no hace falta buscarlos a mano:
-    (a) UNIÓN 2024 usa 890,50 ARS/USD como cotización de mercado para el 30/6/2024, cuando Racing,
-        Vélez y Estudiantes declaran 909 para ese mismo cierre y el propio comentario de Unión dice
-        "dólar BNA vendedor de cierre", que ese día era ~912. Es el primer candidato real a un fx
-        traído de otro club, que el skill prohíbe explícitamente. No se tocó el número sin tener el
-        documento delante (decisión de Guido). Revisar el Anexo de moneda extranjera de Unión.
-    (b) 5 ejercicios con `fxSource:'unknown'`: San Lorenzo 2015/2016/2017 y Vélez 2015/2016. Los de
+21. TIPOS DE CAMBIO SIN PROCEDENCIA VERIFICADA. Los 2 que quedan salen listados por
+    `node tools/audit.js`, no hace falta buscarlos a mano:
+    (a) 5 ejercicios con `fxSource:'unknown'`: San Lorenzo 2015/2016/2017 y Vélez 2015/2016. Los de
         Vélez no se pudieron confirmar porque la transcripción de esos 2 escaneos no preservó la
         columna de cambio vigente (los otros 9 años de Vélez SÍ se verificaron uno por uno contra su
-        Anexo VI en esta sesión). Los de San Lorenzo, porque sus PDFs 2014-15, 2015-16 y 2016-17
-        nunca se transcribieron a `.md`, contra la regla del proyecto, transcribirlos es el paso
-        que además resuelve esto. OJO: San Lorenzo y Vélez tienen EXACTAMENTE los mismos valores en
-        2015 (8,988) y 2016 (14,94), así que puede haber una copia entre clubes detrás.
-    (c) 8 cotizaciones de mercado escritas en el archivo de un club en vez de `FX_CLOSE` (los 5
-        ejercicios de Argentinos Juniors y 3 de Unión). Mientras las use un solo club no duplican
-        nada; se mueven a la tabla al confirmar la fecha exacta de cierre de cada una.
-
+        Anexo VI). Los de San Lorenzo, porque sus PDFs 2014-15, 2015-16 y 2016-17 nunca se
+        transcribieron a `.md`, contra la regla del proyecto: transcribirlos es el paso que además
+        resuelve esto. OJO: San Lorenzo y Vélez tienen EXACTAMENTE los mismos valores en 2015
+        (8,988) y 2016 (14,94), así que puede haber una copia entre clubes detrás.
+    (b) 5 cotizaciones de mercado escritas en el archivo de Argentinos Juniors en vez de `FX_CLOSE`.
+        Mientras las use un solo club no duplican nada; se mueven a la tabla al confirmar la fecha
+        exacta de cierre de cada una. ANTES DE MOVERLAS hay que confirmar que de verdad sean de
+        mercado y no del propio documento: los 4 de Unión estaban marcados así y resultaron salir de
+        su Anexo V (ver Versión 140), o sea que el rótulo estaba mal, no el número.
+    RESUELTO (Versión 140): Unión. Sus 4 tipos de cambio estaban etiquetados `market_close` y los 4
+    salen del Anexo V de su propio balance, lado Activo/Créditos. Pasaron a `document_close`. El
+    hallazgo "Unión 2024 usa 890,50 cuando la tabla dice 909" era real pero mal diagnosticado: un
+    Anexo de moneda extranjera valúa activos al comprador y pasivos al vendedor, así que 890,50 y
+    909 son los dos lados del spread del mismo día y los dos están bien.
 22. NUEVO (Versión 128, auditoría de escala `auditorias/2026-09-13-escala.md`): los 6 cuellos que
     aparecen al crecer, en el orden en que aparecen. Cada uno con el número que lo dispara:
     (a) RESUELTO (Versión 129): `clubId` NO tenía país. Convención escrita en `CONVENCIONES.md`

@@ -84,15 +84,45 @@ const riverExpenseLinesByYear = {
   // ARS millones nativos (Versión 32). Fuente: Anexo VIII, pág. 59-62, fila "Totales al
   // 31/08/2024" por área + Estado de Recursos y Gastos (Depreciación/Amortización, pág. 11). Suma
   // exacta a $(149.674.797.729), el "Total gastos ordinarios" impreso.
+  // CATEGORIZACIÓN POR DESTINO (Versión 140, a pedido de Guido: "river 2024: arreglalo").
+  // Hasta acá las 8 líneas de arriba estaban las 8 en `other_expenses`, o sea el 80% de los
+  // gastos de River caía al catch-all "Otros gastos" de Formato simplificado, y la fila
+  // "Salarios y primas" mostraba $0. Un club de primera división no gasta cero en sueldos: lo
+  // que pasa es que el Anexo VIII de River desglosa sus gastos POR DESTINO (qué área del club
+  // los gastó) y no POR NATURALEZA (en qué se gastaron), así que los sueldos están adentro de
+  // cada área, sin una línea propia.
+  //
+  // QUÉ SE HIZO: mapear cada destino al bucket de destino que el sitio ya tiene, siguiendo
+  // LÍNEA POR LÍNEA el precedente de Boca 2025 (`data/boca-data.js`), que es la referencia
+  // canónica de Formato simplificado. No se movió ni un peso: los montos son los mismos y el
+  // total sigue cerrando contra los $149.674.797.729 impresos.
+  //   - "Fútbol profesional" -> `lump_football_operations_expense`, que es exactamente lo que
+  //     es: un bolsón que la fuente no desglosa. Se muestra en la fila "Fútbol profesional (sin
+  //     desglosar por la fuente)", que lo dice, en vez de perderse en "Otros gastos".
+  //   - "Educación" y "Deportes" -> `youth_other_sports_expense` (Boca manda ahí su
+  //     Departamento de educación física, Fútbol juvenil, Básquet y Fútbol femenino).
+  //   - "Administración", "Mantenimiento e intendencia", "Servicio médico y asistencial",
+  //     "Socios" y "Museo" -> `admin_general_expense` (Boca manda ahí "Gastos generales",
+  //     "Gastos de estructura operativa — Otros", "Departamento médico — Otros gastos
+  //     operativos" y "Departamento de cultura", que es el análogo del Museo).
+  //
+  // LO QUE SIGUE SIN SABERSE, Y DÓNDE ESTÁ: cuánto de esos $78.835 M es sueldo del plantel.
+  // El Anexo VIII tiene la matriz completa (30 conceptos x 8 áreas, páginas 59-62 del PDF,
+  // impresas 51-54), con "Sueldos y cargas sociales" como una de sus filas. NO se transcribió:
+  // la sesión que leyó el documento encontró diferencias no explicadas al sumar celdas
+  // individuales de esa matriz escaneada y decidió no publicar cifras posiblemente incorrectas
+  // (ver el final de `Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md`).
+  // La celda que hace falta es UNA: fila "Sueldos y cargas sociales" x columna "Fútbol
+  // profesional". El día que se lea y verifique, esa porción sale de acá y pasa a `wages_squad`.
   2024: [
-    { rawLabel:'Fútbol profesional', normalizedCategory:'other_expenses', amountNative:-78835.612406, disclosureLevel:'detailed' },
-    { rawLabel:'Educación', normalizedCategory:'other_expenses', amountNative:-4112.960939, disclosureLevel:'detailed' },
-    { rawLabel:'Deportes', normalizedCategory:'other_expenses', amountNative:-5640.127149, disclosureLevel:'detailed' },
-    { rawLabel:'Administración', normalizedCategory:'other_expenses', amountNative:-10887.796621, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento e intendencia', normalizedCategory:'other_expenses', amountNative:-7235.840776, disclosureLevel:'detailed' },
-    { rawLabel:'Servicio médico y asistencial', normalizedCategory:'other_expenses', amountNative:-875.180363, disclosureLevel:'detailed' },
-    { rawLabel:'Socios', normalizedCategory:'other_expenses', amountNative:-10595.940947, disclosureLevel:'detailed' },
-    { rawLabel:'Museo', normalizedCategory:'other_expenses', amountNative:-1156.148838, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional', normalizedCategory:'lump_football_operations_expense', amountNative:-78835.612406, disclosureLevel:'not_disclosed' },
+    { rawLabel:'Educación', normalizedCategory:'youth_other_sports_expense', amountNative:-4112.960939, disclosureLevel:'detailed' },
+    { rawLabel:'Deportes', normalizedCategory:'youth_other_sports_expense', amountNative:-5640.127149, disclosureLevel:'detailed' },
+    { rawLabel:'Administración', normalizedCategory:'admin_general_expense', amountNative:-10887.796621, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento e intendencia', normalizedCategory:'admin_general_expense', amountNative:-7235.840776, disclosureLevel:'detailed' },
+    { rawLabel:'Servicio médico y asistencial', normalizedCategory:'admin_general_expense', amountNative:-875.180363, disclosureLevel:'detailed' },
+    { rawLabel:'Socios', normalizedCategory:'admin_general_expense', amountNative:-10595.940947, disclosureLevel:'detailed' },
+    { rawLabel:'Museo', normalizedCategory:'admin_general_expense', amountNative:-1156.148838, disclosureLevel:'detailed' },
     { rawLabel:'Depreciación de bienes de uso', normalizedCategory:'depreciation', amountNative:-5984.158778, disclosureLevel:'detailed' },
     { rawLabel:'Amortización de plantel de jugadores de fútbol', normalizedCategory:'player_amortisation', amountNative:-23916.286868, disclosureLevel:'detailed' },
     { rawLabel:'Amortización de software', normalizedCategory:'other_amortisation', amountNative:-434.744044, disclosureLevel:'detailed' },

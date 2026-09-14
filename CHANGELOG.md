@@ -903,3 +903,33 @@ documentados, listos para una sesión de onboarding futura.)*
   ningún nombre propio (club, liga, y los nombres de gestión, que son apellidos de presidentes).
 - 30 claves nuevas en `data/lang/en.js`. Cobertura: 204 de 204 claves usadas, y 28 de 28 en
   `fuentes.html`. To-do 19 borrado.
+
+## Versión 140: la home dejó de publicar el presupuesto como si fuera el último balance
+
+- INICIO mostraba, para Boca, "Último resultado: +2,0 M USD" y "Deuda neta actual: 0,0 M USD". Los
+  dos salían del PRESUPUESTO 2026/27, porque `renderInicioStats()` usaba "el último ejercicio de la
+  gestión actual" como sinónimo de "el estado actual del club". El de deuda era el peor: un
+  presupuesto proyecta ingresos y egresos, no un balance, y escribe deuda y caja en cero, así que la
+  home decía que Boca no debe nada. Ahora cada stat pide el último ejercicio QUE TENGA SU DATO (el
+  último balance para el resultado, el último que informe deuda para la deuda), y escribe cuál es
+  abajo del número en vez de esconderlo en un tooltip. Boca pasó a mostrar +29,6 M USD y 26,6 M USD,
+  los dos del Balance 2024/25. Verificado en los 41 clubes, ninguno con NaN ni "undefined".
+- RIVER 2024: sus 8 líneas de gasto estaban las 8 en `other_expenses` (80% en el catch-all,
+  "Salarios y primas" en $0). Su Anexo VIII desglosa por DESTINO y no por naturaleza, así que se
+  mapeó cada destino al bucket que ya existe, siguiendo línea por línea el precedente de Boca 2025.
+  El catch-all quedó en 0% y el 53% que la fuente no desglosa está en la fila "Fútbol profesional
+  (sin desglosar por la fuente)". Ni un peso se movió: el total sigue cerrando exacto.
+- TIPOS DE CAMBIO: `FX_SOURCE` gana `document_average`, el caso que faltaba (un balance convierte su
+  estado de resultados a un promedio del período y su balance al cierre; sin esta categoría habría
+  que etiquetarlo `document_close`, que sería falso).
+- UNIÓN: sus 4 tipos de cambio estaban marcados `market_close` y los 4 salen del Anexo V de su
+  propio balance. Pasaron a `document_close`. El hallazgo "Unión 2024 usa 890,50 cuando la tabla dice
+  909" era real pero mal diagnosticado: un Anexo de moneda extranjera valúa activos al comprador y
+  pasivos al vendedor, así que los dos son el mismo día y los dos están bien. `fx-mercado-discrepante`
+  quedó en 0 y `fx-mercado-fuera-de-tabla` bajó de 8 a 5.
+- `tools/audit.js`: los umbrales de tamaño de archivo pasan a depender de CÓMO se lee cada uno. Los
+  que se leen enteros (`index.html`, `ESTADO.md`, `TODO.md`) quedan apretados; `CHANGELOG.md` y
+  `finance-of-sports-project.md` son de consulta puntual (se entra con grep, se lee un bloque) y su
+  umbral sube. El to-do de partirlos se borró: partirlos tendría un costo real (hoy "dónde está la
+  historia" tiene una respuesta de una palabra) y no resolvería ningún problema que exista.
+- Auditoría: 0 P0, 0 P1, 51 P2 (eran 54), 8 P3 (eran 12). `auditAll()` 222 checks, 0 que no cierran.
