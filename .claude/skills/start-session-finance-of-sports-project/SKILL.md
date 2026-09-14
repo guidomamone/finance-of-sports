@@ -132,6 +132,10 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   `--json` para la lista completa, `--quiet` para usarlo como gate antes de un push.
   `tools/audit-ignore.json` silencia un hallazgo YA verificado a mano contra el documento, con el
   motivo escrito — nunca uno sin verificar, que es justo el atajo que este proyecto no se puede dar.
+  `--fx` (Versión 125) no audita: LISTA. Imprime los 89 tipos de cambio, uno por club-ejercicio,
+  agrupados por moneda y ordenados por año, con de dónde salió cada uno (lo declara el balance, es
+  la premisa de un presupuesto, es una cotización de mercado de `FX_CLOSE`, o todavía no se sabe).
+  Es la respuesta a "¿de dónde salió este número?" sin abrir un solo archivo de club.
 - `node tools/generate-club-index.js` — regenera, desde los propios `data/<club>-data.js`, la sección
   "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `index.html`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó

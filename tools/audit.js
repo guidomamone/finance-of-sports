@@ -605,10 +605,54 @@ function imprimir(api) {
   }
 }
 
+// `--fx`: la planilla de tipos de cambio, un renglón por club-ejercicio. El
+// resto del script reporta lo que está MAL; esto muestra lo que HAY, que es la
+// pregunta con la que nació el campo `fxSource` (Guido, Versión 125: "si yo
+// mañana quiero auditar los tipos de cambio usado para cada club para cada año
+// y entender si salieron de internet o del club"). Sale ordenado por moneda y
+// año para que dos clubes con el mismo cierre queden uno al lado del otro, que
+// es como se ve a simple vista si alguno desentona.
+function listarFx(api) {
+  const filas = [];
+  const fila = (clubId, year, meta, sufijo) => {
+    const f = api.fxMetaFor(meta);
+    if (f.fx == null) return;
+    filas.push({
+      moneda: meta.currency, year, clubId: clubId + (sufijo || ''), fx: f.fx,
+      procedencia: f.source,
+      origen: f.ref ? `${f.ref} — ${f.label}` : (api.FX_SOURCE[f.source] || {}).label || f.source,
+    });
+  };
+  for (const { clubId, year, ym } of clubYears(api)) fila(clubId, year, ym);
+  // Un ejercicio con balance Y presupuesto cargados tiene DOS tipos de cambio, y el
+  // del presupuesto suele ser una premisa distinta a la del cierre del mismo año
+  // (Racing 2020: el balance declara 73,98 y el presupuesto asumió 70). El overlay
+  // pinta una columna que el visitante ve, así que también se audita.
+  for (const clubId of Object.keys(api.generic).sort()) {
+    const ov = api.generic[clubId].presupuestoOverlayByYear || {};
+    for (const year of Object.keys(ov).map(Number).sort((a, b) => a - b)) fila(clubId, year, ov[year], ' (presup.)');
+  }
+  filas.sort((a, b) => a.moneda.localeCompare(b.moneda) || a.year - b.year || a.clubId.localeCompare(b.clubId));
+
+  const w = k => Math.max(...filas.map(f => String(f[k]).length));
+  const [wc, wf, wp] = [w('clubId'), w('fx'), w('procedencia')];
+  let monedaActual = null;
+  console.log(`TIPOS DE CAMBIO, ${filas.length} club-ejercicios (moneda nativa por 1 USD)\n`);
+  for (const f of filas) {
+    if (f.moneda !== monedaActual) { console.log(`${monedaActual ? '\n' : ''}${f.moneda}`); monedaActual = f.moneda; }
+    console.log(`  ${f.year}  ${f.clubId.padEnd(wc)}  ${String(f.fx).padStart(wf)}  ${f.procedencia.padEnd(wp)}  ${f.origen}`);
+  }
+  const porFuente = filas.reduce((a, f) => ({ ...a, [f.procedencia]: (a[f.procedencia] || 0) + 1 }), {});
+  console.log('\nPor procedencia: ' + Object.entries(porFuente).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join(' · '));
+  console.log('Lo que declara un documento va literal en el archivo del club; lo que es cotización de mercado sale de FX_CLOSE (data/currency-map.js).');
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
   catch (e) { console.error(`ERROR cargando el motor: ${e.message}`); process.exit(2); }
+
+  if (ARGS.includes('--fx')) { listarFx(api); return; }
 
   checkEstructura(api);
   checkTieOuts(api);
