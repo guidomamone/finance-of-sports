@@ -5137,6 +5137,26 @@ Estado al cerrar: `auditAll()` 222 checks, 0 mismatches, 0 warnings; `node tools
 
 ---
 
+## Versión 126 — Que el dato bueno también cite su fuente
+
+El tercer riesgo de escala del mapa de procesos decía que la pestaña Fuentes era "la misma duplicación, pero visible": una tabla de 6 filas escrita a mano (IGJ, INDEC, actas de asamblea de Boca) más un párrafo de ~450 palabras que nombraba club por club y se había quedado en 12 clubes argentinos, con el sitio ya cubriendo 41 clubes de 6 países.
+
+Al abrir el código apareció que el problema era peor que eso, y al revés de como se contaba. `sources{}` tenía **91 entradas reales con 61 URLs** — o sea que la información existía, completa y bien escrita. Se consumía en **un solo lugar** de todo el sitio: `renderDataQualityBannerForCurrentSelection()`, el banner de advertencia. Y ese banner hace `return` temprano cuando el `reportType` es oficial. La consecuencia, que nadie había notado: **los 88 ejercicios REALES no mostraban su fuente en ningún lado**. El único dato que citaba su origen era el placeholder. Un sitio cuyo subtítulo prometía "todo dato en este sitio cita su origen y fecha" cumplía esa promesa únicamente para los números inventados.
+
+Había una tercera copia del mismo problema que el mapa no listaba: `finanzasClubSourceText`, un objeto con 3 entradas escritas a mano (Boca, Racing, River) que pintaba la nota al pie de Finanzas. Los otros 38 clubes veían un string vacío.
+
+La solución tiene tres piezas, y ninguna es una lista escrita a mano:
+
+1. **La ficha de Fuentes al final de Finanzas**, por ejercicio: documento con link, nivel de fuente, tipo de cambio usado con su procedencia (que existe desde la Versión 125), y las salvedades tal cual las escribió la sesión que cargó el club. Cuando el ejercicio tiene balance Y presupuesto muestra los dos tipos de cambio, que es donde se ve la distinción que pidió Guido: Racing 2020 dice "1 USD = 73,98 ARS — declarado por el balance" y abajo "1 USD = 70,00 ARS — premisa del presupuesto".
+2. **La pestaña Fuentes** pasa a listar los documentos del club seleccionado. Escala por construcción: nunca lista más de un club, así que da lo mismo que el sitio tenga 41 o 1000.
+3. **`fuentes.html`**, generado por `tools/generate-fuentes-page.js`: el listado completo, 91 documentos de 41 clubes, con qué ejercicios respalda cada uno, con qué tipo de cambio se convirtió y qué salvedades tiene. Guido eligió que fuera una página propia y no más filas adentro de `index.html`: una URL propia es rankeable, el crawler no depende de JS para verla, y el HTML principal no crece un renglón por documento a medida que entran clubes.
+
+Las etiquetas que son NUESTRAS (nivel de fuente, procedencia del tipo de cambio) pasan por `t()` y se tradujeron al inglés; el título y las salvedades de cada documento quedan en su idioma original a propósito, el mismo criterio que ya regía para los rubros de "Formato del club": eso es texto de la fuente, no chrome del sitio.
+
+**El hallazgo lateral de la sesión** fue un bug en el chequeo de i18n de `tools/audit.js`, creado dos versiones antes. El regex que junta las claves DEFINIDAS las buscaba entre comillas simples, y `data/lang/en.js` escribe sus 134 claves entre dobles: el conjunto de definidas quedaba vacío y el script reportaba como "sin traducir" absolutamente TODA clave usada en el sitio. De ahí salió el "88 claves sin traducción" de la primera auditoría, que se había copiado a la to-do 19 de `index.html` y al reporte `auditorias/2026-09-13.md` como si fuera el estado real. Arreglado el regex —y salteando los prefijos de clave dinámica tipo `t('fx.source.' + x)`, que no se pueden resolver leyendo el código— el faltante real es 0. Vale como recordatorio de que un chequeo automático también es código que puede estar mal, y que un número que nadie cuestiona se propaga a tres archivos en dos sesiones.
+
+---
+
 # VOLUMEN 0 — ORIGEN DEL PROYECTO (antes de la Versión 10)
 
 Todo lo que sigue en este Volumen 0 estuvo, hasta hoy, en un archivo suelto

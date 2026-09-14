@@ -541,8 +541,8 @@
 <section class="fixes">
   <div class="col" style="margin-bottom:22px;">
     <h2 id="riesgos">Riesgos de escala</h2>
-    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Están ordenados por lo que devuelven sobre lo que cuestan. Lo que se va arreglando sale de la lista: hoy quedan dos.</p>
-    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (6 de 222 checks; ahora <code>auditAll()</code> corre los 222 a pedido), la sección "qué es real por club" que se escribía a mano (ahora se genera desde los datos), el <code>if</code> con nombres de club escrito adentro del motor (ahora sale por convención del archivo de cada club), y <strong>los tipos de cambio repetidos club por club</strong> (Versión 125: las cotizaciones de mercado se dicen una sola vez en <code>FX_CLOSE</code>, por moneda y fecha de cierre, y cada ejercicio declara además si su tipo de cambio lo dice el documento o salió de afuera — 33 copias de 9 valores pasaron a 9 entradas).</p>
+    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Están ordenados por lo que devuelven sobre lo que cuestan. Lo que se va arreglando sale de la lista: hoy queda uno.</p>
+    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (6 de 222 checks; ahora <code>auditAll()</code> corre los 222 a pedido), la sección "qué es real por club" que se escribía a mano (ahora se genera desde los datos), el <code>if</code> con nombres de club escrito adentro del motor (ahora sale por convención del archivo de cada club), <strong>los tipos de cambio repetidos club por club</strong> (Versión 125: las cotizaciones de mercado se dicen una sola vez en <code>FX_CLOSE</code>, por moneda y fecha de cierre, y cada ejercicio declara además si su tipo de cambio lo dice el documento o salió de afuera — 33 copias de 9 valores pasaron a 9 entradas), y <strong>la pestaña Fuentes</strong> (Versión 126: la tabla de 6 filas y el párrafo por club se reemplazaron por contenido generado de <code>sources{}</code>, más <code>fuentes.html</code>, el listado completo de los 91 documentos con su tipo de cambio y sus salvedades).</p>
   </div>
 
 
@@ -556,13 +556,6 @@
     <div><span class="effort m">sesión propia</span></div>
   </div>
 
-  <div class="fix">
-    <div>
-      <h3>La pestaña Fuentes es la misma duplicación, pero visible</h3>
-      <p><strong>Qué se rompe a escala:</strong> es una tabla escrita a mano con seis filas argentinas (IGJ, INDEC, actas de asamblea de Boca) más un párrafo único que nombra club por club. Con 41 clubes de seis países ya no es cierta. Acá el costo no es tiempo sino credibilidad: un sitio cuya promesa es "todo dato cita su origen" muestra una lista de orígenes que no corresponde a sus datos. Se arregla con el mismo generador, apuntado a <code>sources{}</code>.</p>
-    </div>
-    <div><span class="effort m">sesión propia</span></div>
-  </div>
 </section>
 
 <footer>

@@ -83,6 +83,17 @@ se reescribe, no se acumula.
   forzar la carga de los 41 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
   los clubes que nadie está mirando.
+- FUENTES (Versión 126): cada número cita su documento. Al final de Finanzas hay
+  una ficha con el documento del ejercicio que se está mirando (link incluido),
+  su nivel de fuente, el tipo de cambio usado CON su procedencia, y las
+  salvedades; la pestaña Fuentes lista los documentos del club seleccionado; y
+  `fuentes.html` es el listado completo del sitio (91 documentos, 41 clubes, 61
+  con link), una página propia y estática para prensa y buscadores, que GENERA
+  `node tools/generate-fuentes-page.js` — no se edita a mano. Antes de esto había
+  una tabla de 6 filas y un párrafo escritos a mano que se habían quedado en los
+  primeros clubes argentinos, y los 88 ejercicios REALES no mostraban su fuente
+  en ningún lado (el único consumidor de `sources{}` era el banner de
+  advertencia, que no aparece cuando el dato es oficial).
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
   trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
   placeholder según el club (ver to-do 4). "Mi Cuenta" es un stub sin
@@ -98,12 +109,12 @@ se reescribe, no se acumula.
   AGREGAR UN IDIOMA = crear `data/lang/<code>.js` + una línea en
   `data/lang/langs.js`. Nada más: ni el HTML ni `js/i18n.js` se tocan.
   Traducido hoy: todo el chrome (nav, títulos, subtítulos, controles, headers de
-  tabla, footer, modal de contacto), los stats de Inicio y Finanzas, y los
-  buckets de "Formato simplificado". NO traducido a propósito: los rubros de
-  "Formato del club", que salen textuales del balance de cada club. NO traducido
-  todavía (pendiente, no es una decisión): el párrafo largo "Calidad de dato por
-  club" de Fuentes, los 3 cards de competencia del presupuesto de Boca, y los
-  avisos por tipo de reporte.
+  tabla, footer, modal de contacto), los stats de Inicio y Finanzas, los buckets
+  de "Formato simplificado" y las fichas de Fuentes. NO traducido a propósito:
+  los rubros de "Formato del club" y el título/salvedades de cada documento, que
+  salen textuales de la fuente. Lo que falta es poco y está en la to-do 19: el
+  "88 claves sin traducir" que decía esta lista era un falso positivo del
+  chequeo, no el estado real (ver to-do 19).
 - CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
   NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
   ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
@@ -550,15 +561,21 @@ o directamente retomar en la próxima sesión)
     búsqueda, sin explorar en profundidad). También pendiente: investigar `memberCountByClub` y
     `gestionesByClub` (presidentes reales) para los 10 clubes, ninguno investigado esta sesión.
 
-19. NUEVO (Versión 115): terminar la traducción al inglés. El motor y el selector ya están y
-    escalan (ver `js/i18n.js`), lo que falta son claves, no arquitectura:
-    (a) el párrafo largo "Calidad de dato por club" de la pestaña Fuentes (hoy habla casi solo de
-        clubes argentinos, conviene reescribirlo antes de traducirlo, no traducir el texto viejo);
+19. ACTUALIZADO (Versión 126): la traducción al inglés está MUCHO más cerca de lo que decía esta
+    lista, porque el número que la sostenía era falso. `tools/audit.js` reportaba "88 claves sin
+    traducir", pero su regex buscaba las claves definidas entre comillas simples y `data/lang/en.js`
+    las escribe entre dobles: el conjunto de definidas quedaba vacío y reportaba como faltante TODA
+    clave usada. Con el regex arreglado el faltante real es 0. Lo que queda:
+    (a) RESUELTO (Versión 126): el párrafo "Calidad de dato por club" y la tabla de 6 filas de la
+        pestaña Fuentes ya no existen — se reemplazaron por contenido generado de los datos, que
+        nace traducible (las etiquetas pasan por `t()`, el texto de cada documento queda en su
+        idioma original a propósito, mismo criterio que los rubros de "Formato del club");
     (b) los 3 cards de competencia del presupuesto de Boca (Copa Libertadores / Campeonato Liga
-        Profesional / Copa Argentina), que son Boca-2027-only;
-    (c) los avisos por `reportType` (banner de placeholder, "todavía no informado por el club",
-        etc.) y los nombres de gestión de `gestionesByClub`;
-    (d) la tabla de fuentes de la pestaña Fuentes (6 filas, castellano).
+        Profesional / Copa Argentina), que son Boca-2027-only, siguen sin `data-i18n`;
+    (c) los nombres de gestión de `gestionesByClub` y los rubros nativos de cada balance: son datos,
+        no chrome, y la decisión de si se traducen o no sigue abierta;
+    (d) `fuentes.html` se genera solo en castellano. Para publicarlo en inglés hay que decidir si el
+        generador emite 2 archivos o si la página lee el diccionario como el sitio.
     RESUELTO (Versión 117): Guido decidió que la marca cambia por idioma, "El deporte en Números"
     en castellano y "Finance of Sports" en inglés. No hace falta unificarla.
     Candidatos de idioma obvios cuando haya ganas: português (4 clubes de Brasil cargados) y
@@ -1298,7 +1315,16 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       </div>
     </div>
 
-    <p class="source-note" id="finanzasClubSourceNote"></p>
+    <!-- FICHA DE FUENTE (Versión 125, pedido de Guido: "que en /Finanzas haya un card al final
+         que sea Fuentes"). Reemplaza a `finanzasClubSourceNote`, que era un texto fijo escrito a
+         mano para 3 clubes (Boca, Racing, River) y no decía nada para los otros 38. Este se arma
+         de `sources{}` + la meta del ejercicio, así que no se puede desincronizar ni quedarse
+         corto cuando entra un club nuevo. Se llena en renderFuentesCard(), js/finanzas-render.js. -->
+    <div class="card" id="finanzasFuentesCard" style="margin-top:22px;">
+      <h2 data-i18n="fuentes.card.title">Fuentes</h2>
+      <p class="subtitle" style="margin-top:-4px;" data-i18n="fuentes.card.sub">De dónde sale cada número de este ejercicio.</p>
+      <div id="finanzasFuentesBody"></div>
+    </div>
 
   </section>
 
@@ -1417,24 +1443,20 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
       <p style="color:var(--muted);font-size:14.5px;line-height:1.6;" data-i18n="fuentes.about.text">Soy hincha de Boca. Nada más. Este sitio es anónimo a propósito: no representa a ninguna lista, candidatura ni a la dirigencia del club. Lo que importa acá es el dato, no quién lo junta.</p>
     </div>
 
-    <p class="subtitle" data-i18n="fuentes.sub">Todo dato en este sitio cita su origen y fecha. Estas son las fuentes primarias que se van a usar en la versión final.</p>
-    <div class="card">
-      <table>
-        <thead><tr><th data-i18n="th.source">Fuente</th><th data-i18n="th.provides">Qué aporta</th></tr></thead>
-        <tbody>
-          <tr><td>bocajuniors.com.ar/club/presupuesto</td><td>Balances y presupuestos oficiales del club</td></tr>
-          <tr><td>Actas de Asamblea de Representantes</td><td>Memoria y balance anual, discusión de socios</td></tr>
-          <tr><td>IGJ (Inspección General de Justicia)</td><td>Balances registrados, reglas estatutarias</td></tr>
-          <tr><td>Transfermarkt</td><td>Valores de mercado y movimientos de pases y DTs</td></tr>
-          <tr><td>INDEC / BCRA</td><td>Inflación y tipo de cambio para deflactar series</td></tr>
-          <tr><td>Cobertura periodística especializada</td><td>Desgloses de asamblea, verificados cruzando fuentes</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <p class="subtitle" data-i18n="fuentes.sub">Todo dato en este sitio cita su origen y fecha. Acá está de dónde sale cada número del club que estás mirando, y el listado completo del sitio.</p>
 
+    <!-- FUENTES DEL CLUB SELECCIONADO (Versión 125). Antes había acá una tabla de 6 filas escrita
+         a mano (bocajuniors.com.ar, actas de asamblea, IGJ, INDEC/BCRA, Transfermarkt, prensa) y
+         un párrafo de ~450 palabras que nombraba club por club: las dos cosas se habían quedado en
+         los primeros clubes argentinos y no decían nada de los 6 países que el sitio cubre hoy. El
+         costo no era el tiempo de mantenerlas sino la credibilidad, que es todo lo que este sitio
+         tiene: prometía "todo dato cita su origen" y mostraba orígenes que no eran los de sus
+         datos. Ahora se arma de `sources{}`, en renderFuentesClubCard() (js/finanzas-render.js), y
+         el listado completo de los 91 documentos vive en fuentes.html, que genera
+         tools/generate-fuentes-page.js. -->
     <div class="card">
-      <h2 data-i18n="fuentes.quality.title">Calidad de dato por club</h2>
-      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;">El sitio ahora cubre varios clubes, y cada uno tiene un nivel de dato distinto, se marca con un aviso en cada sección cuando corresponde. <strong>Boca</strong> tiene el Ejercicio 2024/2025 (balance auditado) y 2026/2027 (presupuesto) reales, el resto (2018-2023) sigue siendo placeholder mientras se consiguen los balances históricos del club. <strong>Racing</strong> tiene su archivo público 100% cargado: 13 ejercicios consecutivos 2008/09-2020/21 más 2023/2024 a 2026/2027, todos con datos oficiales reales (varios ejercicios con presupuesto Y balance del mismo año, columna comparativa "Presupuesto"/"Balance"). <strong>River</strong> tiene un solo ejercicio real (2023/2024, balance auditado conseguido en una réplica de la comunidad de hinchas tuRiver, no del dominio oficial — el club solo publica la Memoria narrativa, sin estados contables); el resto sigue siendo placeholder a la espera de que aparezca el documento oficial o otra réplica confiable. <strong>Vélez Sarsfield</strong> tiene su archivo público 100% cargado: los 11 ejercicios consecutivos 2014/15 a 2024/2025, todos con datos oficiales reales (3 de ellos — 2015, 2016 y 2017 — transcriptos por OCR porque el club solo publicó el escaneo, no el PDF con texto). <strong>Instituto Atlético Central Córdoba</strong>, <strong>Rosario Central</strong> e <strong>Independiente</strong> tienen cada uno un ejercicio real (2023/2024, 2022/2023 y 2023/2024 respectivamente, todos balances auditados), con el resto de sus archivos pendiente. <strong>Argentinos Juniors</strong> tiene 5 ejercicios reales consecutivos (2015-2019), pero a nivel agregado (4 categorías, desde una presentación de asamblea comparativa, no un balance completo con Anexos). <strong>Estudiantes de La Plata</strong> tiene 3 ejercicios reales consecutivos (2022-2024) con detalle completo por Anexo. <strong>San Lorenzo</strong> tiene 2 ejercicios reales consecutivos (2013-2014). <strong>Unión</strong> tiene un ejercicio real (2025), el primer club del sitio cargado desde un PDF con páginas nativas y páginas escaneadas mezcladas en el mismo archivo. <strong>Club América</strong> (primer club fuera de Argentina) tiene un ejercicio real (2025), pero con una salvedad importante: el club no publica balance propio, el dato sale de la Nota de Segmentos ("Segmento de Fútbol") de Ollamani, S.A.B. de C.V., la compañía bursátil mexicana que controla al club desde 2024 — ese segmento incluye, además de Club América, el negocio del Estadio Banorte, sin desglose posible entre los dos, y no trae balance patrimonial (deuda/caja) a nivel de segmento, solo ingresos y una utilidad operativa antes de depreciación e impuestos. El toggle USD/ARS y Formato del club/simplificado están disponibles para todos los clubes argentinos, cada ejercicio real usa el tipo de cambio que declara su propio balance/presupuesto, no una cotización externa (Club América usa el toggle análogo MXN/USD). La lista de dónde salió cada fuente vive en <code>fuentes-por-club.md</code>, en la misma carpeta del sitio.</p>
+      <h2 id="fuentesClubTitulo">Documentos de este club</h2>
+      <div id="fuentesClubBody"></div>
     </div>
   </section>
 
@@ -1489,16 +1511,16 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '125';</script>
-<script src="data/lang/langs.js?v=125"></script>
-<script src="js/i18n.js?v=125"></script>
-<script src="data/clubs.js?v=125"></script>
-<script src="data/category-map.js?v=125"></script>
-<script src="data/site-labels.js?v=125"></script>
-<script src="data/currency-map.js?v=125"></script>
-<script src="data/boca-data.js?v=125"></script>
-<script src="js/finanzas-calc.js?v=125"></script>
-<script src="js/finanzas-render.js?v=125"></script>
+<script>window.ASSET_V = '126';</script>
+<script src="data/lang/langs.js?v=126"></script>
+<script src="js/i18n.js?v=126"></script>
+<script src="data/clubs.js?v=126"></script>
+<script src="data/category-map.js?v=126"></script>
+<script src="data/site-labels.js?v=126"></script>
+<script src="data/currency-map.js?v=126"></script>
+<script src="data/boca-data.js?v=126"></script>
+<script src="js/finanzas-calc.js?v=126"></script>
+<script src="js/finanzas-render.js?v=126"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1564,7 +1586,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
     renderPresupuestoFinancieroWaterfall();
-    renderClubSourceNote();
+    renderFuentesCard();
   }
 
   // Cambiar de club en el header reconstruye los selectores y vuelve a dibujar TODAS las
@@ -1597,6 +1619,9 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
     renderTitulosTable();
     populateCompararSelectors(currentClub);
     renderComparar();
+    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club
+    // (Versión 125), no en cada cambio de ejercicio como la ficha de Finanzas.
+    renderFuentesClubCard();
     renderInicioStats();
     renderInicioCharts();
   }
@@ -1816,6 +1841,7 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
   renderResultados();
   renderTitulosTable();
   renderComparar();
+  renderFuentesClubCard();
 
   // ==========================================================================
   // SELECTOR DE IDIOMA (Versión 115)

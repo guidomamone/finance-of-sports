@@ -550,11 +550,18 @@ function checkHigiene(api) {
   for (const m of html.matchAll(/data-i18n(?:-title)?="([^"]+)"/g)) usadas.add(m[1]);
   for (const rel of ['js/finanzas-render.js', 'js/finanzas-calc.js', 'index.html']) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
-    for (const m of src.matchAll(/\bt\(\s*'([a-z0-9_.]+)'/gi)) usadas.add(m[1]);
+    // Una clave que termina en "." no es una clave sino un PREFIJO de clave dinámica
+    // (`t('fx.source.' + meta.fxSource, ...)`): el valor real se arma en runtime y no se
+    // puede resolver leyendo el código. Se saltea en vez de reportarla como sin traducir.
+    for (const m of src.matchAll(/\bt\(\s*'([a-z0-9_.]+)'/gi)) { if (!m[1].endsWith('.')) usadas.add(m[1]); }
   }
   for (const f of fs.readdirSync(path.join(ROOT, 'data/lang')).filter(f => f.endsWith('.js') && f !== 'langs.js')) {
     const src = fs.readFileSync(path.join(ROOT, 'data/lang', f), 'utf8');
-    const definidas = new Set([...src.matchAll(/^\s*'([^']+)'\s*:/gm)].map(m => m[1]));
+    // Comillas simples O dobles (arreglado en la Versión 125): el regex solo aceptaba
+    // simples y `data/lang/en.js` escribe sus 134 claves con dobles, así que `definidas`
+    // quedaba VACÍO y el chequeo reportaba como "sin traducir" absolutamente todas las
+    // claves usadas — de ahí las "88 claves" de la primera corrida, que no era el número real.
+    const definidas = new Set([...src.matchAll(/^\s*['"]([^'"]+)['"]\s*:/gm)].map(m => m[1]));
     const faltan = [...usadas].filter(k => !definidas.has(k)).sort();
     if (faltan.length) {
       add('P3', 'i18n-incompleto', `data/lang/${f}: ${faltan.length} claves usadas en el sitio sin traducción (el visitante las ve en castellano): ${faltan.slice(0, 6).join(', ')}${faltan.length > 6 ? '…' : ''}`);

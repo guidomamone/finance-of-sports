@@ -685,9 +685,11 @@
       : meta.reportType === 'unofficial_mirror'
       ? 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad de hinchas, no del dominio oficial del club'
       : 'Dato placeholder, número inventado para probar el diseño del sitio, no es real';
+    // Versión 125: el banner ya no repite el documento ni sus salvedades — eso pasó a la ficha
+    // de Fuentes del final de la sección, que las muestra para TODOS los ejercicios y no solo
+    // para los que tienen algo malo que avisar. Acá queda solo la advertencia, que es su trabajo.
     banner.innerHTML = `⚠️ <strong>${kind}.</strong>` +
-      (src ? ` Fuente: ${src.title}${src.url ? ` (<a href="${src.url}" target="_blank" rel="noopener">ver</a>)` : ''}.` : '') +
-      (src && src.note ? ` ${src.note}` : '');
+      (src ? ` ${t('fuentes.banner.ver', 'El documento y sus salvedades están en "Fuentes", al final de esta sección.')}` : '');
   }
 
 
@@ -825,17 +827,127 @@
   }
 
 
-  // Nota de fuente general de "Estado de resultados", al fondo de Finanzas, antes era texto fijo
-  // (siempre citaba bocajuniors.com.ar, incluso mirando Racing o River). Un resumen por club, no por
-  // ejercicio puntual (para eso está finanzasDataQualityBanner, que sí es por ejercicio).
-  const finanzasClubSourceText = {
-    boca: 'Fuente: bocajuniors.com.ar/club/presupuesto (placeholder para años históricos) · Ejercicio 2026/2027: Presupuesto oficial.',
-    racing: 'Fuente: racingclub.com.ar/informes (archivo oficial completo de balances y presupuestos) · todos los ejercicios cargados son documentos oficiales reales (balances auditados o presupuesto oficial).',
-    river: 'Fuente: Ejercicio 2023/2024, balance auditado real (réplica de la comunidad tuRiver, ver pestaña Fuentes) · resto de los ejercicios: placeholder.',
+  // FICHA DE FUENTE del ejercicio que se está mirando (Versión 125). Reemplaza a
+  // `finanzasClubSourceText`, que era un objeto escrito a mano con 3 entradas (Boca, Racing, River)
+  // y dejaba a los otros 38 clubes sin citar ninguna fuente. Peor todavía: `sources{}` tenía 91
+  // entradas con 61 URLs y se consumía en UN solo lugar, el banner de calidad de dato, que hace
+  // `return` temprano cuando el ejercicio es oficial — o sea que los 88 ejercicios REALES no
+  // mostraban su fuente en ningún lado, y el sitio prometía "todo dato cita su origen". Esta card
+  // se arma de los datos, así que un club nuevo la trae sin tocar una línea de acá.
+  const FUENTE_NIVEL = {
+    primary:          { label: 'Fuente primaria',          color: '#1b7f3b' },
+    secondary_mirror: { label: 'Réplica no oficial',       color: '#9a6b00' },
+    secondary_press:  { label: 'Cobertura de prensa',      color: '#9a6b00' },
+    placeholder:      { label: 'Sin fuente (placeholder)', color: '#b00020' },
   };
 
-  function renderClubSourceNote(){
-    document.getElementById('finanzasClubSourceNote').textContent = finanzasClubSourceText[currentClub] || '';
+  // El nivel de fuente y la procedencia del tipo de cambio son etiquetas NUESTRAS, no texto del
+  // documento, así que se traducen (a diferencia del título de un balance o de sus salvedades, que
+  // salen textuales de la fuente y quedan en su idioma original, mismo criterio que los rubros de
+  // "Formato del club").
+  function nivelFuente(reliability){
+    const n = FUENTE_NIVEL[reliability];
+    if(!n) return { label: reliability || '—', color: 'var(--muted)' };
+    return { label: t('fuentes.nivel.' + reliability, n.label), color: n.color };
+  }
+
+  function fmtFx(fx, currency){
+    const dec = fx < 10 ? 4 : 2;
+    return `1 USD = ${fx.toLocaleString('es-AR', { minimumFractionDigits: dec, maximumFractionDigits: dec })} ${currency}`;
+  }
+
+  // Una línea "Tipo de cambio", con de dónde salió al lado. `meta` es lo que devuelve
+  // yearMetaFor()/presupuestoOverlayMetaFor(): ya trae fxSource/fxLabel resueltos.
+  function filaFx(meta, etiqueta){
+    if(!meta || meta.currency === 'USD' || meta.fx == null) return '';
+    const def = (typeof FX_SOURCE !== 'undefined' && FX_SOURCE[meta.fxSource]) || null;
+    const detalle = def ? t('fx.detail.' + meta.fxSource, def.detail) : '';
+    // `fxLabel` de una cotización de FX_CLOSE nombra el organismo y la fecha (dato, no chrome);
+    // el de un fx literal es la etiqueta genérica de su procedencia, y esa sí se traduce.
+    const label = meta.fxRef ? (meta.fxLabel || '') : (def ? t('fx.source.' + meta.fxSource, def.label) : (meta.fxLabel || ''));
+    return filaFicha(etiqueta,
+      `${fmtFx(meta.fx, meta.currency)} — ${label}` +
+      (detalle ? `<span style="display:block;color:var(--muted);font-size:13px;margin-top:2px;">${detalle}</span>` : ''));
+  }
+
+  function filaFicha(etiqueta, html){
+    return `<div style="display:flex;gap:14px;padding:9px 0;border-top:1px solid var(--border,#e5e5e5);font-size:14.5px;line-height:1.55;">
+      <div style="flex:0 0 150px;color:var(--muted);">${etiqueta}</div>
+      <div style="flex:1;">${html}</div>
+    </div>`;
+  }
+
+  // La pestaña Fuentes: todos los documentos del club seleccionado (no de un ejercicio suelto),
+  // más el link al listado completo del sitio. Escala por construcción: nunca lista más de un club,
+  // así que da igual que el sitio tenga 41 clubes o 1000.
+  function renderFuentesClubCard(){
+    const body = document.getElementById('fuentesClubBody');
+    if(!body) return;
+    const club = clubs[currentClub] || {};
+    const titulo = document.getElementById('fuentesClubTitulo');
+    if(titulo) titulo.textContent = `${t('fuentes.club.title', 'Documentos de')} ${club.displayName || club.name || ''}`;
+
+    const docs = Object.keys(sources)
+      .filter(id => sources[id].clubId === currentClub)
+      .map(id => sources[id])
+      .sort((a,b) => a.title.localeCompare(b.title, 'es'));
+
+    if(!docs.length){
+      body.innerHTML = `<p style="color:var(--muted);font-size:14.5px;">${
+        t('fuentes.club.none', 'Todavía no hay ningún documento cargado para este club.')}</p>` + linkTodasLasFuentes();
+      return;
+    }
+
+    body.innerHTML = docs.map(d => {
+      const nivel = nivelFuente(d.reliability);
+      return `<div style="border-top:1px solid var(--border);padding:11px 0 4px;">
+        <div style="font-size:14.5px;font-weight:600;">${d.url ? `<a href="${d.url}" target="_blank" rel="noopener">${d.title}</a>` : d.title}</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:2px;">
+          <span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>${d.url ? '' : ` · ${t('fuentes.club.nourl', 'sin URL pública')}`}
+        </div>
+        ${d.note ? `<div style="font-size:13px;color:var(--muted);margin-top:4px;">${d.note}</div>` : ''}
+      </div>`;
+    }).join('') + linkTodasLasFuentes();
+  }
+
+  function linkTodasLasFuentes(){
+    return `<p style="margin:14px 0 0;font-size:14px;"><a href="fuentes.html">${
+      t('fuentes.card.all', 'Ver todas las fuentes del sitio')} →</a></p>`;
+  }
+
+  function renderFuentesCard(){
+    const body = document.getElementById('finanzasFuentesBody');
+    if(!body) return;
+    const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
+    const year = isGestion
+      ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear
+      : parseInt(document.getElementById('anioSelect').value, 10);
+    const meta = (CLUB_GENERIC_DATA[currentClub].fiscalYearMeta[year]) || {};
+    const src = sources[meta.sourceId];
+    const linkTodas = linkTodasLasFuentes();
+
+    if(!src){
+      body.innerHTML = `<p style="color:var(--muted);font-size:14.5px;line-height:1.6;margin:6px 0 0;">${
+        t('fuentes.card.none', 'Este ejercicio todavía no tiene un documento oficial cargado: los números que se muestran son un placeholder para probar el diseño, no cifras reales del club.')
+      }</p>` + linkTodas;
+      return;
+    }
+
+    const nivel = nivelFuente(src.reliability);
+    const filas = [
+      filaFicha(t('fuentes.card.doc', 'Documento'),
+        `${src.title}${src.url ? ` <a href="${src.url}" target="_blank" rel="noopener">(${t('fuentes.card.see', 'ver documento')})</a>` : ''}`),
+      filaFicha(t('fuentes.card.level', 'Nivel de fuente'),
+        `<span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>`),
+      filaFx(yearMetaFor(currentClub, year), t('fuentes.card.fx', 'Tipo de cambio')),
+      // Un ejercicio con balance Y presupuesto muestra dos columnas, y cada una se convierte con
+      // SU tipo de cambio: el del balance es un cierre ya ocurrido, el del presupuesto un supuesto.
+      filaFx(presupuestoOverlayMetaFor(currentClub, year), t('fuentes.card.fxBudget', 'Tipo de cambio del presupuesto')),
+      src.note ? filaFicha(t('fuentes.card.note', 'Salvedades'),
+        `<span style="color:var(--muted);">${src.note}</span>`) : '',
+    ].join('');
+
+    body.innerHTML = filas + linkTodas;
   }
 
 
