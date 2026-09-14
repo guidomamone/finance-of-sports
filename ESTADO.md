@@ -259,6 +259,12 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
+- `tools/build-prototipo-inicio.js` + `prototipo-inicio-selector.html` (Versión 143):
+  prototipo de un Inicio en frío con el selector jerárquico desplegado EN la portada
+  (hoy vive atrás de un click), con copy antes y después, y minimizable. NO se
+  deploya y no lo linkea ninguna página: se abre a mano, al lado de `index.html`.
+  El `.html` está GENERADO desde `index.html`, no se edita a mano; los cambios van
+  en el generador. Está a la espera de la decisión de Guido, to-do 28.
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.

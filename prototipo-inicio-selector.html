@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<!--
+==================================================================================
+finance-of-sports — el HTML/CSS/JS principal del sitio.
+
+ESTE COMENTARIO YA NO ES LA MEMORIA DEL PROYECTO. Hasta la Versión 137 acá vivían el
+estado, la lista de qué es real por club y la to-do list entera: 80 KB de los 183 KB
+de este archivo, que además se bajaba cada visitante en cada pageview. Se movieron a
+archivos propios el 2026-09-14 (Versión 138), a pedido de Guido: "Index NO es el
+archivo para tener to do. Eso era al inicio".
+
+PARA RETOMAR EL PROYECTO, leé en este orden:
+  1. `ESTADO.md`         qué hay armado hoy, y qué hay cargado de cada club.
+  2. `CONVENCIONES.md`   reglas vigentes y trampas ya encontradas. Siempre.
+  3. `TODO.md`           qué falta hacer. Es la ÚNICA lista de próximos pasos.
+Y `.claude/skills/start-session-finance-of-sports-project/` es el checklist de
+arranque y de cierre de cualquier sesión acá. Empezá por ahí.
+
+`CHANGELOG.md` (qué cambió y cuándo) y `finance-of-sports-project.md` (por qué) son
+consulta puntual, nunca lectura de corrido.
+==================================================================================
+-->
+
+
+
+<!--
+  ============================ ESTO NO ES EL SITIO ============================
+  Prototipo del Inicio en frío con el selector abierto en la portada.
+  GENERADO por `node tools/build-prototipo-inicio.js` a partir de index.html.
+  NO editar a mano: se sobrescribe. Los cambios van en el generador.
+  Todo lo que agrega el prototipo está marcado con PROTO en el HTML, el CSS y el JS.
+  Los datos, los clubes y el motor del selector son los REALES (mismos js/ y data/).
+  =============================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROTOTIPO · Inicio con el selector en la portada</title>
+<style>
+  :root{
+    --azul:#0a2b5c;
+    --azul-dark:#071d3f;
+    --oro:#f2b705;
+    --bg:#f7f7f5;
+    --card:#ffffff;
+    --text:#1c1c1c;
+    --muted:#6b6b6b;
+    --border:#e3e3e0;
+    --green:#1b7a3d;
+    --red:#b5372b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+  header{background:var(--azul);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,.15);}
+  .header-inner{max-width:1280px;margin:0 auto;display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;padding:10px 14px;gap:8px;}
+  .logo{display:flex;align-items:center;gap:7px;font-weight:700;font-size:15px;white-space:nowrap;flex-shrink:0;}
+  .logo .dot{width:10px;height:10px;background:var(--oro);border-radius:50%;flex-shrink:0;}
+  nav{display:flex;flex-wrap:nowrap;gap:0;min-width:0;}
+  nav button{background:none;border:none;color:#dbe3f0;font-size:12px;padding:7px 7px;cursor:pointer;border-radius:6px;transition:.15s;font-weight:500;white-space:nowrap;}
+  nav button:hover{background:rgba(255,255,255,.08);color:#fff;}
+  nav button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
+  .header-right{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+  /* Toggle de moneda universal (header, al lado del selector de club): mismo `.segmented` de
+     siempre pero con los colores del header (fondo transparente + texto blanco, en vez del
+     fondo blanco + azul de `.segmented` normal, pensado para cards sobre fondo claro) — mismo
+     criterio visual que ya usa `nav button.active` (dorado) para su propio estado activo. */
+  .header-currency-toggle{border:1px solid rgba(255,255,255,.3);border-radius:6px;}
+  .header-currency-toggle button{background:transparent;color:#fff;padding:5px 10px;font-size:12px;font-weight:500;}
+  .header-currency-toggle button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
+  /* ======================================================================
+     SELECTOR JERÁRQUICO DE CLUB (Versión 137). Reemplaza al <select id="clubSelect">
+     plano, que con 41 clubes ya era incómodo y al objetivo de 1000 es inusable.
+     Deporte › Región › País › Liga › Equipo, con búsqueda por texto encima.
+
+     TRES DECISIONES DE UX QUE SON PEDIDOS EXPLÍCITOS DE GUIDO, no pulido:
+     (1) El botón del header tiene que LEERSE COMO UN CONTROL: borde dorado,
+         eyebrow "ESTÁS VIENDO" y la palabra "Cambiar" visible. La versión
+         anterior del prototipo era un pill azul sobre header azul con una
+         flechita, y se leía como un título ("si yo llego al site en frío, no me
+         termina de quedar claro cómo elegir y/o cambiar de equipo").
+     (2) SALIR DEL PANEL TIENE QUE SER UN BOTÓN VISIBLE, en los dos modos: "Esc o
+         clickear afuera es LA ÚNICA manera en la que el usuario puede salir de
+         ese selector. Es mala UX". En móvil es peor todavía: no hay tecla Esc y
+         el panel ocupa casi toda la pantalla. Hay DOS salidas visibles (arriba a
+         la derecha "✕ Cerrar", abajo a la derecha "Cerrar sin cambiar"); Esc y el
+         backdrop quedan como atajos para quien los conoce, nunca como el camino.
+     (3) El punto de color de calidad del dato va en la fila, ANTES de entrar al
+         club: que nadie descubra recién adentro que eligió un placeholder. Sale
+         de `data/club-index.js` (campo `q`), que lo deriva de `sources{}` — no es
+         un campo tipeado a mano que se pueda desincronizar del dato real.
+     ====================================================================== */
+  .cb-wrap{position:relative;flex-shrink:0;}
+  .club-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1.5px solid var(--oro);
+            color:#fff;border-radius:9px;padding:4px 8px 4px 5px;cursor:pointer;font:inherit;text-align:left;min-width:196px;}
+  .club-btn:hover{background:rgba(242,183,5,.2);}
+  .club-btn .cb-txt{display:flex;flex-direction:column;line-height:1.2;min-width:0;flex:1;}
+  .club-btn .cb-eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:.09em;color:#a8b8d4;font-weight:700;}
+  .club-btn .cb-name{font-size:13.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .club-btn .cb-change{font-size:10.5px;font-weight:800;color:var(--oro);white-space:nowrap;background:rgba(242,183,5,.15);
+                       border-radius:5px;padding:4px 6px;}
+  /* Coach mark de primera visita: un solo cartel, no un tour de varios pasos. Se
+     va al primer click y no vuelve (flag en localStorage). */
+  .coach{position:absolute;top:calc(100% + 9px);right:0;background:var(--oro);color:var(--azul-dark);
+         font-size:11.5px;font-weight:700;padding:6px 9px;border-radius:7px;white-space:nowrap;z-index:60;
+         box-shadow:0 4px 14px rgba(0,0,0,.25);}
+  .coach::before{content:'';position:absolute;top:-5px;right:26px;border-left:6px solid transparent;
+                 border-right:6px solid transparent;border-bottom:6px solid var(--oro);}
+  .coach-x{cursor:pointer;opacity:.55;margin-left:3px;font-weight:400;}
+  .coach[hidden]{display:none;}
+  /* El escudo es un círculo con las iniciales, en el azul del sitio para TODOS los
+     clubes. NO se le pone el color real de cada club: son 41 pares de colores que
+     habría que verificar uno por uno, y un color equivocado (Boca en rojo) se lee
+     peor que ninguno. Los escudos reales están en la to-do. En la comparación, en
+     cambio, cada sujeto sí lleva color, pero asignado POR POSICIÓN (1º, 2º...), que
+     es dato de la vista y no del club. */
+  .crest{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+         font-size:9.5px;font-weight:800;color:#fff;letter-spacing:-.02em;background:var(--azul);
+         border:1.5px solid rgba(255,255,255,.45);}
+  .crest.sm{width:20px;height:20px;font-size:8px;border-width:1px;}
+  .crest.on-light{border-color:rgba(0,0,0,.12);}
+
+  /* `hidden` pierde contra un `display` explícito: sin estas 3 reglas, esconder la
+     franja de recientes o alternar árbol/resultados con `el.hidden = true` no hace
+     nada, porque `.sel-recents{display:flex}` y `.sel-cols{display:grid}` ganan.
+     Bug real, visto en la primera prueba en el navegador: la franja "RECIENTES"
+     aparecía vacía en la primera visita. */
+  .sel-recents[hidden], .sel-results[hidden], .sel-cols[hidden]{display:none;}
+  .sel-backdrop{position:fixed;inset:0;background:rgba(7,29,63,.45);z-index:80;display:none;}
+  .sel-backdrop.open{display:block;}
+  .sel-panel{position:fixed;z-index:90;top:64px;left:50%;transform:translateX(-50%);width:min(1120px,calc(100vw - 24px));
+             max-height:calc(100vh - 96px);background:var(--card);border:1px solid var(--border);border-radius:12px;
+             box-shadow:0 18px 48px rgba(7,29,63,.3);display:none;flex-direction:column;overflow:hidden;}
+  .sel-panel.open{display:flex;}
+  .sel-search{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--border);}
+  .sel-search input{flex:1;border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:15px;outline:none;font-family:inherit;}
+  .sel-search input:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(10,43,92,.1);}
+  .kbd{font-size:10.5px;color:var(--muted);border:1px solid var(--border);border-radius:4px;padding:2px 5px;background:#fafaf8;white-space:nowrap;}
+  .sel-close{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--border);
+             font-size:13px;color:var(--text);cursor:pointer;line-height:1;padding:10px 13px;border-radius:8px;font-weight:600;font-family:inherit;}
+  .sel-close:hover{background:#f2f2ef;border-color:var(--azul);}
+  .sel-recents{padding:9px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px;flex-wrap:wrap;background:#fbfbf9;}
+  .sel-recents .r-label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;}
+  .r-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);background:#fff;border-radius:999px;
+          padding:3px 9px 3px 4px;font-size:12px;cursor:pointer;color:var(--text);font-family:inherit;}
+  .r-chip:hover{border-color:var(--azul);background:#eef2f9;}
+  /* Miller columns: los 5 niveles a la vista en desktop, uno por vez en móvil. */
+  .sel-cols{display:grid;grid-template-columns:126px 162px 172px 210px 1fr;min-height:0;flex:1;overflow:hidden;}
+  .sel-col{border-right:1px solid var(--border);overflow-y:auto;min-height:0;display:flex;flex-direction:column;}
+  .sel-col:last-child{border-right:none;}
+  .sel-col-head{position:sticky;top:0;background:#fbfbf9;border-bottom:1px solid var(--border);padding:7px 10px;
+                font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;z-index:2;}
+  .sel-row{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:none;border:none;font:inherit;
+           padding:8px 10px;cursor:pointer;color:var(--text);border-bottom:1px solid #f2f2ef;}
+  .sel-row:hover{background:#eef2f9;}
+  .sel-row.sel{background:var(--azul);color:#fff;}
+  .sel-row.sel .r-meta,.sel-row.sel .r-sub{color:#c3d2ea;}
+  .sel-row.disabled{opacity:.42;cursor:not-allowed;}
+  .sel-row.disabled:hover{background:none;}
+  .r-main{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.25;}
+  .r-name{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .r-sub{display:block;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .r-meta{font-size:10.5px;color:var(--muted);flex-shrink:0;margin-left:6px;font-variant-numeric:tabular-nums;}
+  .r-arrow{font-size:10px;color:#b8b8b3;flex-shrink:0;}
+  .sel-row.sel .r-arrow{color:#fff;}
+  .sel-row.all{background:#fbfbf9;}
+  .sel-row.all .r-name{font-weight:700;}
+  .sel-row.all.sel{background:var(--azul);}
+  /* Los 4 estados de calidad del dato. Mismos nombres que devuelve clubQuality()
+     en data/sources-view.js: full | mixed | placeholder | empty. */
+  .q-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .q-dot.full{background:var(--green);}
+  .q-dot.mixed{background:var(--oro);}
+  .q-dot.placeholder{background:#c4c4bf;}
+  .q-dot.empty{background:transparent;border:1px dashed #c4c4bf;}
+  .sel-results{overflow-y:auto;flex:1;min-height:0;}
+  .res-group{padding:6px 14px 2px;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+             font-weight:800;background:#fbfbf9;border-bottom:1px solid var(--border);}
+  .sel-empty{padding:34px 14px;text-align:center;color:var(--muted);font-size:13.5px;line-height:1.6;}
+  .sel-foot{border-top:1px solid var(--border);padding:8px 14px;display:flex;align-items:center;gap:14px;
+            background:#fbfbf9;font-size:11.5px;color:var(--muted);flex-wrap:wrap;}
+  .legend-item{display:inline-flex;align-items:center;gap:5px;}
+  .sel-foot .spacer{flex:1;}
+  .foot-close{background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px 14px;
+              font-size:12.5px;font-weight:600;color:var(--text);cursor:pointer;margin-left:12px;font-family:inherit;}
+  .foot-close:hover{background:var(--azul);color:#fff;border-color:var(--azul);}
+  .sel-crumbs{display:none;gap:4px;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);flex-wrap:wrap;background:#fbfbf9;}
+  .crumb{background:none;border:none;font:inherit;font-size:12px;color:var(--azul);cursor:pointer;padding:2px 4px;border-radius:4px;}
+  .crumb:hover{background:#eef2f9;}
+  .crumb.cur{color:var(--text);font-weight:700;}
+  .crumb-sep{color:#c4c4bf;font-size:10px;}
+
+  @media (max-width:900px){
+    /* EL NAV PASA A SU PROPIA FILA (Versión 137). El botón de club mide ~210px contra
+       los ~104px del <select> que reemplazó, así que en una sola fila el `nav` quedaba
+       aplastado a 0px de ancho y las 4 pestañas desaparecían sin aviso (medido en el
+       navegador: nav.getBoundingClientRect().width === 0 a 614px de ancho). Es la to-do 9
+       del comentario de arriba, que este cambio hacía urgente. Se resuelve dejando que
+       el header envuelva y mandando el nav a una segunda fila completa, en vez de
+       esconderlo: son las 4 secciones del sitio y no hay otra forma de llegar a ellas. */
+    .header-inner{flex-wrap:wrap;}
+    nav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
+    nav button{font-size:12.5px;padding:7px 10px;}
+    .logo{min-width:0;overflow:hidden;}
+    /* Una columna por vez + breadcrumb clickeable. El nav del header ya se recorta
+       abajo de ~850px (to-do 9), así que el panel no puede empeorar eso: en móvil
+       el botón de club se estira y el resto cede espacio antes que él. */
+    .sel-cols{grid-template-columns:1fr;}
+    .sel-col{display:none;border-right:none;}
+    .sel-col.active-pane{display:flex;}
+    .sel-crumbs{display:flex;}
+    .sel-panel{top:8px;max-height:calc(100vh - 16px);}
+    .cb-wrap{min-width:0;flex:1;display:flex;justify-content:flex-end;}
+    .club-btn{min-width:0;flex:1;max-width:210px;}
+    /* Si algo tiene que salir por falta de espacio, que sea el texto informativo,
+       nunca la salida: el conteo se esconde antes que "Cerrar sin cambiar". */
+    .sel-foot{gap:8px;}
+    .sel-foot .spacer{display:none;}
+    .sel-foot .foot-count{display:none;}
+    .foot-close{margin-left:auto;padding:10px 14px;}
+  }
+
+  /* ---------- COLD START: la portada de la primera visita (Versión 137) ---------- */
+  .hero{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;
+        border-radius:14px;padding:38px 30px 30px;margin-bottom:28px;}
+  .hero[hidden]{display:none;}
+  .hero h1{font-size:29px;margin:0 0 8px;color:#fff;}
+  .hero p{color:#bfcde6;font-size:14.5px;margin:0 0 22px;max-width:600px;line-height:1.55;}
+  .hero .hero-foot{font-size:12px;color:#8fa3c4;margin:22px 0 0;}
+  .hero .hero-error{background:rgba(181,55,43,.25);border:1px solid #e08d84;color:#ffd9d4;
+                    border-radius:8px;padding:9px 12px;font-size:13px;margin:14px 0 0;}
+  .hero .hero-error[hidden]{display:none;}
+  .hero-search{display:flex;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:4px 4px 4px 14px;max-width:560px;}
+  .hero-search input{flex:1;border:none;outline:none;font-size:15.5px;padding:11px 0;background:none;font-family:inherit;color:var(--text);}
+  .hero-search button{background:var(--oro);color:var(--azul-dark);border:none;border-radius:7px;
+                      padding:11px 16px;font-weight:800;font-size:13.5px;cursor:pointer;white-space:nowrap;font-family:inherit;}
+  .hero-quick{margin-top:22px;}
+  .hero-quick .hq-label{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#8fa3c4;font-weight:800;margin-bottom:10px;}
+  .hq-row{display:flex;gap:8px;flex-wrap:wrap;}
+  .hq-club{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+           color:#fff;border-radius:9px;padding:7px 12px 7px 7px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;}
+  .hq-club:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
+  .hq-club .hq-sub{font-weight:400;color:#a8b8d4;font-size:11.5px;}
+  .hq-league{background:none;border:1px solid rgba(255,255,255,.25);color:#cfdaec;border-radius:999px;
+             padding:6px 13px;font-size:12.5px;cursor:pointer;font-family:inherit;}
+  .hq-league:hover{border-color:var(--oro);color:var(--oro);}
+  /* La vía de vuelta a la portada, arriba del árbol del selector. */
+  .sel-home{padding:8px 14px;border-bottom:1px solid var(--border);background:#fbfbf9;}
+  .sel-home[hidden]{display:none;}
+  .sel-home button{background:none;border:none;font:inherit;font-size:12.5px;color:var(--azul);cursor:pointer;
+                   padding:2px 0;text-decoration:underline;text-underline-offset:2px;}
+  .sel-home button:hover{color:var(--azul-dark);}
+  @media (max-width:900px){
+    .hero{padding:26px 18px 22px;}
+    .hero h1{font-size:23px;}
+  }
+  /* ======================================================================
+     COMPARACIÓN ENTRE CLUBES (Versión 137). Un solo modelo cubre los 3 casos que
+     pidió Guido (1 vs 1, N clubes, y club vs. promedio de liga): `subjects` es una
+     lista de SUJETOS COMPARABLES, y cada uno lleva SU ejercicio. De ahí sale gratis
+     el caso "River 2020/21 contra River 2024/25": son dos entradas de la lista, no
+     una feature aparte. El modo (Duelo/Múltiple/Benchmark/Mixto) se DEDUCE de la
+     lista, el usuario nunca lo elige.
+
+     LA VISTA PRINCIPAL SON BARRAS, NO UNA TABLA DE COLUMNAS (pedido explícito de
+     Guido: "de la foto que te compartí me gustaba lo de las barras comparando,
+     hacetelo en vez de columnas"). La tabla sigue existiendo detrás de un toggle,
+     para el periodista que quiere el número exacto y copiarlo.
+     ====================================================================== */
+  .cmp-btn{background:none;border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:8px;padding:8px 11px;
+           cursor:pointer;font-size:12px;font-weight:700;white-space:nowrap;font-family:inherit;}
+  .cmp-btn:hover{background:rgba(255,255,255,.14);border-color:var(--oro);}
+  .cmp-btn.on{background:var(--oro);border-color:var(--oro);color:var(--azul-dark);}
+
+  /* Bandeja: aparece sola cuando hay al menos un rival, y no ocupa lugar si no. */
+  .tray{background:var(--azul-dark);color:#cfdaec;border-top:1px solid rgba(255,255,255,.08);}
+  .tray[hidden]{display:none;}
+  .tray-inner{max-width:1280px;margin:0 auto;padding:8px 14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .tray-label{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:#8fa3c4;font-weight:700;}
+  .chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+        border-radius:999px;padding:3px 5px 3px 4px;font-size:12px;color:#fff;}
+  .chip.bench{background:rgba(242,183,5,.16);border-color:rgba(242,183,5,.45);}
+  .chip .chip-name{padding-right:2px;white-space:nowrap;}
+  .chip .x{background:none;border:none;color:#9fb0cc;cursor:pointer;font-size:14px;line-height:1;padding:0 3px;font-family:inherit;}
+  .chip .x:hover{color:#fff;}
+  /* El ejercicio vive en el chip: es del SUJETO, no un filtro global. Un filtro
+     global haría imposible comparar dos ejercicios del mismo club. */
+  .chip-year{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;
+             font-size:11px;padding:2px 4px;cursor:pointer;font-family:inherit;}
+  .chip-year option{color:var(--text);}
+  .chip-stat{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;
+             font-size:10px;padding:3px 6px;cursor:pointer;font-family:inherit;}
+  .chip-add{background:none;border:1px dashed rgba(255,255,255,.3);color:#cfdaec;border-radius:999px;
+            padding:4px 11px;font-size:12px;cursor:pointer;font-family:inherit;}
+  .chip-add:hover{border-color:var(--oro);color:var(--oro);}
+  .tray-mode{margin-left:auto;display:flex;align-items:center;gap:8px;}
+  .mode-pill{font-size:11px;background:var(--oro);color:var(--azul-dark);font-weight:800;border-radius:999px;
+             padding:3px 9px;text-transform:uppercase;letter-spacing:.04em;}
+  .tray-hint{font-size:11.5px;color:#8fa3c4;}
+
+  /* El punto de entrada que de verdad se usa: aparece donde el visitante ya está
+     mirando números y se le ocurre la pregunta. Un ícono ⇄ suelto en el header no
+     le dice a nadie qué hace. */
+  .cmp-cta{display:flex;align-items:center;gap:14px;background:#fff;border:1.5px dashed var(--border);
+           border-radius:10px;padding:15px 18px;margin-bottom:26px;}
+  .cmp-cta[hidden]{display:none;}
+  .cmp-cta .cc-ico{font-size:20px;color:var(--azul);}
+  .cmp-cta .cc-txt{flex:1;min-width:0;}
+  .cmp-cta .cc-t{font-size:14px;font-weight:700;display:block;}
+  .cmp-cta .cc-s{font-size:12.5px;color:var(--muted);margin-top:2px;display:block;}
+  .cmp-cta button{background:var(--azul);color:#fff;border:none;border-radius:8px;padding:10px 15px;
+                  font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;}
+  .cmp-cta button:hover{background:var(--azul-dark);}
+  .cmp-cta button.secundario{background:#fff;color:var(--azul);border:1.5px solid var(--azul);}
+
+  /* Banner del panel cuando se abre para comparar: sin esto, el panel abierto desde
+     "Comparar" se ve idéntico al de cambiar de club, y el visitante cambia de club
+     sin querer. */
+  .add-banner{background:var(--azul);color:#fff;padding:10px 14px;font-size:13px;display:flex;align-items:center;gap:9px;line-height:1.45;}
+  .add-banner[hidden]{display:none;}
+  .add-banner b{color:var(--oro);}
+  /* Barra de confirmación. El panel de comparar es MULTI-selección, así que no puede
+     cerrarse al primer click; y si no se cierra y no hay botón, el visitante agrega
+     uno y se queda esperando a que pase algo (pedido de Guido: "necesito un botón de
+     OK o algo así, no queda obvio cómo proseguir"). */
+  .confirm-bar{border-top:1px solid var(--border);background:var(--azul);color:#fff;
+               padding:10px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .confirm-bar[hidden]{display:none;}
+  .cf-sel{flex:1;min-width:160px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px;color:#c3d2ea;}
+  .cf-sel .cf-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.12);
+                   border-radius:999px;padding:3px 9px 3px 4px;color:#fff;}
+  .cf-cancel{background:none;border:none;color:#a8b8d4;font-size:12.5px;cursor:pointer;padding:8px 10px;font-family:inherit;}
+  .cf-cancel:hover{color:#fff;text-decoration:underline;}
+  .cf-ok{background:var(--oro);color:var(--azul-dark);border:none;border-radius:8px;padding:10px 20px;
+         font-size:13.5px;font-weight:800;cursor:pointer;font-family:inherit;}
+  .cf-ok:hover{filter:brightness(1.07);}
+  .cf-ok:disabled{background:rgba(255,255,255,.18);color:#8fa3c4;cursor:not-allowed;}
+
+  /* El "+" de cada fila del panel: agrega ese club (o el promedio de esa liga) a la
+     comparación sin cambiar de club activo. */
+  .add-btn{opacity:0;background:none;border:1px solid var(--border);color:var(--muted);border-radius:6px;
+           width:22px;height:22px;font-size:13px;line-height:1;cursor:pointer;flex-shrink:0;font-family:inherit;}
+  .sel-row:hover .add-btn, .add-btn.on, .add-btn:focus{opacity:1;}
+  .add-btn:hover{border-color:var(--azul);color:var(--azul);background:#fff;}
+  .add-btn.on{background:var(--oro);border-color:var(--oro);color:var(--azul-dark);font-weight:700;}
+  .add-btn:disabled{opacity:.3;cursor:not-allowed;}
+  .sel-row.sel .add-btn{border-color:rgba(255,255,255,.4);color:#fff;}
+
+  /* ---------- LA VISTA DE BARRAS ---------- */
+  .card-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;flex-wrap:wrap;}
+  .card-head .ch-txt{flex:1;min-width:220px;}
+  .viewtoggle{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-left:auto;}
+  .viewtoggle button{border:none;background:#fff;padding:6px 13px;font-size:12px;cursor:pointer;color:var(--text);font-family:inherit;}
+  .viewtoggle button.active{background:var(--azul);color:#fff;font-weight:700;}
+  /* Los 3 avisos. Este sitio lo usan periodistas: una comparación que se ve prolija y
+     es falsa termina citada en una nota. Ninguno de los 3 es opcional. */
+  .cmp-warn{background:#fff8e1;border:1px solid #e0b400;color:#5c4a00;border-radius:8px;padding:9px 12px;
+            font-size:12.5px;line-height:1.5;margin-bottom:18px;}
+  .cmp-warn[hidden]{display:none;}
+  .cmp-warn div + div{margin-top:6px;}
+  .cmp-rules{font-size:12px;color:var(--muted);margin:0 0 18px;line-height:1.5;}
+  /* La escala es POR INDICADOR, no global: comparar "Ingresos" contra "Deuda neta" en
+     la misma escala no significa nada. */
+  .metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:26px 34px;}
+  .metric{min-width:0;}
+  .metric .m-title{font-size:13px;font-weight:800;margin-bottom:2px;}
+  .metric .m-note{font-size:11.5px;color:var(--muted);margin-bottom:11px;min-height:14px;}
+  .mbar-row{display:grid;grid-template-columns:132px 1fr auto;align-items:center;gap:9px;margin-bottom:7px;}
+  .mbar-name{font-size:12px;display:flex;align-items:center;gap:6px;min-width:0;}
+  .mbar-txt{display:flex;flex-direction:column;line-height:1.22;min-width:0;}
+  .mbar-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;}
+  .mbar-yr{font-size:9.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .mbar-row.is-bench .mbar-name{color:var(--muted);font-style:italic;}
+  .mbar-row.is-bench .mbar-nm{font-weight:400;}
+  .mbar-track{background:#f2f2ef;border-radius:4px;height:20px;position:relative;overflow:hidden;}
+  .mbar-fill{height:100%;border-radius:4px;min-width:3px;}
+  /* El benchmark se dibuja distinto (trama diagonal): no es un club, es un agregado. */
+  .mbar-fill.bench{background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.45) 0 4px,transparent 4px 8px);}
+  .mbar-zero{position:absolute;top:0;bottom:0;width:1.5px;background:#c4c4bf;}
+  .mbar-val{font-size:12px;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;}
+  .mbar-val.best{color:var(--green);}
+  .mbar-val.nodata{color:var(--muted);font-weight:400;font-style:italic;}
+  .cmp-crest{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+             font-size:8px;font-weight:800;color:#fff;letter-spacing:-.02em;}
+  /* Composición de ingresos al 100%: compara la MEZCLA (cuánto depende cada club de
+     TV vs. socios vs. venta de pases), que es la pregunta interesante, sin que la
+     tape la diferencia de tamaño entre Real Madrid y Unión. */
+  .mix-row{display:grid;grid-template-columns:170px 1fr 92px;align-items:center;gap:10px;margin-bottom:9px;}
+  .mix-name{display:flex;align-items:center;gap:7px;font-size:12.5px;min-width:0;}
+  .mix-bar{height:22px;border-radius:4px;display:flex;overflow:hidden;background:#f2f2ef;}
+  .mix-seg{height:100%;}
+  .mix-val{font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);}
+  .mix-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted);}
+  .mix-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:-1px;}
+  .cmp-table th.bench-col, .cmp-table td.bench-col{background:rgba(242,183,5,.08);}
+  .cmp-table td.best{color:var(--green);font-weight:700;}
+  .cmp-table td.num, .cmp-table th.num{text-align:right;font-variant-numeric:tabular-nums;}
+
+  @media (max-width:900px){
+    /* En móvil el botón de comparar queda solo con el ícono: no entra el texto. */
+    .cmp-btn{font-size:0;padding:8px 10px;}
+    .cmp-btn::before{content:'\21C4';font-size:14px;}
+    .confirm-bar{position:sticky;bottom:0;}
+    .cf-ok{flex:1;}
+    /* `repeat(auto-fit, minmax(310px, 1fr))` impone un mínimo de 310px a la columna,
+       y en un teléfono de 375px el ancho útil adentro del card es ~293px: la grilla
+       desbordaba el card y aparecía scroll horizontal. Una columna sola en móvil. */
+    .metric-grid{grid-template-columns:1fr;gap:22px;}
+    .mbar-row{grid-template-columns:112px 1fr auto;}
+    .mix-row{grid-template-columns:104px 1fr 72px;}
+    .cmp-cta{flex-direction:column;align-items:flex-start;}
+    .cmp-cta button{width:100%;}
+  }
+
+  .disclaimer{background:var(--azul-dark);color:#c9d4e6;font-size:12.5px;text-align:center;padding:6px 12px;}
+  main{max-width:1160px;margin:0 auto;padding:28px 20px 80px;}
+  section{display:none;}
+  section.active{display:block;animation:fade .2s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+  h1{font-size:26px;margin:0 0 6px;}
+  h2{font-size:20px;margin:0 0 16px;}
+  .subtitle{color:var(--muted);font-size:14.5px;margin-bottom:22px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:32px;}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:32px;}
+  .controls label{font-size:13px;color:var(--muted);margin-right:4px;}
+  select{padding:8px 10px;border-radius:6px;border:1px solid var(--border);background:#fff;font-size:14px;}
+  /* Ancho fijo (Versión 43, pedido de Guido): sin esto, el <select> de "Año" se achica o agranda
+     según el club/ejercicio elegido, porque un <select> nativo mide su ancho por el texto de la
+     OPCIÓN seleccionada, no por la más larga de la lista. 300px alcanza para la etiqueta más larga
+     de los 3 clubes ("Ejercicio 2025/2026 (esperando datos)", Boca), medida en el navegador
+     (~282.5px incluida la flecha nativa) más margen. REGLA: si se agrega un año/label más largo a
+     futuro, medir de nuevo contra este ancho antes de asumir que sigue alcanzando. */
+  #anioSelect{width:300px;max-width:100%;}
+  /* Mismo criterio que #anioSelect de arriba (Versión 44, mismo pedido de Guido extendido a
+     "Gestión"): sin ancho fijo, el <select> se achica o agranda según el club (el ancho natural de
+     un <select> sigue a la opción MÁS LARGA de su lista actual, no a la seleccionada). 200px
+     alcanza para la más larga de los 3 clubes ("Riquelme (2023-actual)", Boca, ~188px medido en el
+     navegador) más margen. Misma regla: si se agrega una gestión con nombre más largo, medir de
+     nuevo antes de asumir que 200px sigue alcanzando. */
+  #gestionSelect{width:200px;max-width:100%;}
+  .segmented{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+  .segmented button{border:none;background:#fff;padding:8px 16px;font-size:13.5px;cursor:pointer;color:var(--text);}
+  .segmented button.active{background:var(--azul);color:#fff;}
+  #contactBtn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:7px 11px;cursor:pointer;font-size:15px;line-height:1;}
+  #contactBtn:hover{background:rgba(255,255,255,.1);}
+  /* Selector de idioma (Versión 115). Un botón de globo + menú desplegable, NO una
+     tira de botones por idioma: el nav ya se recorta abajo de ~850px (to-do 9), así
+     que el costo de ancho del selector tiene que ser constante, no crecer con cada
+     idioma nuevo que se agregue a `data/lang/langs.js`. */
+  .lang-wrap{position:relative;flex-shrink:0;}
+  #langBtn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:6px 9px;cursor:pointer;font-size:12px;line-height:1;display:flex;align-items:center;gap:5px;font-weight:600;}
+  #langBtn:hover{background:rgba(255,255,255,.1);}
+  #langBtn .lang-globe{font-size:14px;line-height:1;}
+  #langMenu{position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.18);padding:4px;min-width:150px;z-index:60;}
+  #langMenu button{display:block;width:100%;text-align:left;background:none;border:none;padding:8px 10px;font-size:13.5px;color:var(--text);cursor:pointer;border-radius:6px;white-space:nowrap;}
+  #langMenu button:hover{background:#f2f2ef;}
+  #langMenu button.active{background:var(--azul);color:#fff;font-weight:700;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px;}
+  .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;}
+  .stat .label{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .stat .value{font-size:22px;font-weight:700;margin-top:4px;}
+  .stat .value.pos{color:var(--green);}
+  .stat .value.neg{color:var(--red);}
+  /* Qué ejercicio es cada stat de Inicio (Versión 140). Antes iba en un `title` (tooltip),
+     así que en un teléfono no existía: "Último resultado" no decía de qué año era. */
+  .stat .stat-sub{font-size:11.5px;color:var(--muted);margin-top:3px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em;}
+  tr:last-child td{border-bottom:none;}
+  .neg-num{color:var(--red);}
+  .pl-bold td{font-weight:700;}
+  .pl-shade td{background:#f2f2ef;}
+  .pl-highlight td{background:#eef3fa;}
+  .pl-clickable{cursor:pointer;}
+  .pl-clickable:hover td{background:#f5f8fc;}
+  .pl-arrow{display:inline-block;width:14px;color:var(--muted);font-size:10px;}
+  .pl-spacer td{padding:0;height:18px;border:none;background:transparent;}
+  .pl-breakdown-row td{background:#fafbfc;border-bottom:1px dashed #ececec;font-size:12.5px;color:var(--muted);padding-top:5px;padding-bottom:5px;}
+  .pl-section-head td{font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:transparent;border-bottom:2px solid var(--azul);padding-top:16px;padding-bottom:4px;}
+  /* Un ejercicio sin overlay de Presupuesto (la mayoría) no tiene nada que mostrar en las columnas
+     4 y 5, se ocultan con esta clase y la columna Rubro se estira sola para ocupar el ancho libre
+     (ver colgroup de abajo). Col. 3 ("% del total" de la col. 2) se agregó en la Versión 31 y se
+     muestra SIEMPRE, por eso el corte es nth-child(n+4) (oculta la 4ta EN ADELANTE). ACTUALIZADO
+     Versión 60: col. 4 pasó de ser una sola columna "Presupuesto" a 2 (Presupuesto + su propio
+     % del total, pedido de Guido: "dos columnas que sean % del total"), pero como nth-child(n+4) ya
+     oculta "la 4ta en adelante" (no una cantidad fija), la regla no necesitó tocarse — sigue
+     ocultando exactamente lo que corresponde sin importar si son 1, 2 o más columnas extra. */
+  #finanzasPLTable.pl-hide-compare th:nth-child(n+4), #finanzasPLTable.pl-hide-compare td:nth-child(n+4){display:none;}
+  /* REGLA (Versión 39, bug real reportado por Guido con captura: la columna del ejercicio arrancaba
+     en un % distinto del ancho de la tabla según el club/formato mostrado, ej. 41% en "Formato del
+     club" de Boca vs. 47% en "Formato simplificado", medido en el navegador con getBoundingClientRect
+    , porque #finanzasPLTable no tenía table-layout:fixed y el ancho de la columna Rubro se
+     recalculaba solo, según el largo del texto más largo de esa tabla puntual. Con table-layout:fixed
+     + el <colgroup> de arriba, las columnas 2-6 (numéricas) tienen SIEMPRE el mismo ancho fijo en
+     píxeles pase lo que pase en Rubro (que se lleva el resto del ancho y ella sola se estira/wrappea),
+     así que arrancan siempre en el mismo lugar, sin importar cuán largo sea el rubro más largo de
+     ese club/año/formato puntual, y sin importar si son 3 columnas visibles (año a año) o 6 (por
+     gestión). Si se agrega una columna nueva a esta tabla en el futuro, la REGLA es: sumarle su
+     <col style="width:...px"> al colgroup (nunca dejarla sin ancho fijo), de lo contrario vuelve el
+     mismo bug. Todas las columnas numéricas van siempre alineadas a la derecha, sea cual sea el modo
+     (antes solo la col. 2 lo hacía en "Año a año", nunca en "Por gestión", inconsistencia de paso,
+     corregida acá de una).
+     BUG REAL #2 (mismo día, encontrado por Guido: "quedó horrible, no usa todo el ancho del card"):
+     ocultar el <td>/<th> de las columnas 4-6 con la regla de arriba SÍ libera su espacio, pero un
+     <col> con `display:none` en el <colgroup> NO, probado en el navegador con getBoundingClientRect:
+     agregar `display:none` a esos <col> no cambió en nada el ancho de Rubro, seguía tan angosto como
+     con los <col> visibles. En "table-layout:fixed" el ancho de columna lo fija el <col>, y ocultarlo
+     con CSS no hace que el motor de layout libere ese ancho, a diferencia de una celda oculta. Único
+     fix confiable: que esas columnas NO EXISTAN en el <colgroup> en modo "Año a año", no que existan
+     ocultas. Por eso `syncPLTableColgroup()` (ver función en JS, arriba de `renderNativePLTable`)
+     REESCRIBE el `<colgroup>` entero según el modo, en vez de dejarlo fijo en HTML y ocultar
+     columnas por CSS. ACTUALIZADO Versión 57/59/60 (el resto del párrafo es historia, ya no la
+     lectura actual): el criterio para reescribir el colgroup pasó de "Año a año vs. Por gestión" a
+     "el ejercicio tiene overlay de Presupuesto o no" (Versión 57), y las columnas Var./Var.% se
+     sacaron de la tabla del todo (Versión 59, ver `buildNativeSectionHtml`). En la Versión 60 se
+     agregó una 2da columna de "% del total" (para Presupuesto) Y se angostaron los anchos numéricos
+     existentes (100/65px → 84/54px) para que las 5 columnas totales entren sin scroll horizontal
+     (pedido de Guido: "desliza las columnas apenas a la izquierda para que no haya que scrollear.
+     esto tambien deberia ser regla" — REGLA: toda columna nueva que se agregue a esta tabla a
+     futuro tiene que angostar las existentes en la misma medida que agranda el total, no solo
+     sumarse encima). Hoy son 3 `<col>` sin overlay (Rubro + 2 numéricas) y 5 con overlay (Rubro +
+     4), no 3/6 como decía este párrafo originalmente. Los anchos finales (84/54, no 78/40 como en un
+     primer intento) salieron de verificar en el navegador con scrollWidth/clientWidth: 78/40 hacía
+     que el propio CONTENIDO de la celda (el header "PRESUPUESTO" en mayúsculas, o "100%") desbordara
+     su columna aunque la tabla en sí no excediera el contenedor — ver el comentario de
+     `overflow-wrap:break-word` más abajo para el fix complementario. */
+  /* El wrapper `.table-scroll` (overflow-x:auto) es la salida para pantallas angostas donde ni
+     siquiera las columnas numéricas realmente visibles + un Rubro legible entran, scrollea horizontal
+     en vez de aplastar las columnas y romper la regla de arriba. El `min-width` de la tabla depende
+     de si el ejercicio tiene overlay de Presupuesto: con overlay necesita lugar para 4 columnas
+     numéricas (276px, Versión 60: 84+54+84+54) + Rubro; sin overlay solo necesita 2 (138px) + Rubro,
+     así que su mínimo es más chico, si usáramos el mismo min-width en los dos casos, el caso sin
+     overlay (la mayoría de los ejercicios) forzaría scroll en mobile sin necesidad. */
+  .table-scroll{overflow-x:auto;}
+  #finanzasPLTable{table-layout:fixed;min-width:600px;}
+  #finanzasPLTable.pl-hide-compare{min-width:300px;}
+  #finanzasPLTable th:nth-child(n+2), #finanzasPLTable td:nth-child(n+2){text-align:right;}
+  #finanzasPLTable th:nth-child(3), #finanzasPLTable td:nth-child(3), #finanzasPLTable th:nth-child(5), #finanzasPLTable td:nth-child(5){color:var(--muted);}
+  /* BUG REAL (Versión 60, encontrado en el navegador con getBoundingClientRect/scrollWidth mientras
+     se verificaba el fix de "desliza las columnas... para que no haya que scrollear"): con columnas
+     numéricas angostas (54-84px), un header de una sola palabra en mayúsculas (`text-transform:
+     uppercase` de arriba) como "PRESUPUESTO" no entra en una sola línea y, sin este fix, DESBORDA la
+     celda en vez de cortar — eso por sí solo empujaba el ancho real de la tabla más allá del
+     contenedor y forzaba scroll horizontal, aunque el <colgroup>/table-layout:fixed dijeran otra
+     cosa (el ancho de columna no evita que el CONTENIDO de una celda desborde, son dos mecanismos
+     distintos). Fix: `overflow-wrap:break-word` en los `<th>` de esta tabla, así una palabra que no
+     entra se parte en dos líneas en vez de desbordar. Confirmado en el navegador (1280px de ancho):
+     scrollWidth del wrapper `.table-scroll` volvió a ser igual a su clientWidth (antes 1091 vs 1078,
+     una tabla con overlay de Presupuesto forzaba 13px de scroll de más). */
+  #finanzasPLTable th{overflow-wrap:break-word;}
+  .waterfall-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:16px;}
+  .waterfall-step{flex:1 1 110px;padding:9px 8px;text-align:center;}
+  .waterfall-step .label{font-size:10px;line-height:1.25;}
+  .waterfall-step .value{font-size:12.5px;margin-top:3px;word-break:break-all;}
+  .waterfall-op{flex:0 0 auto;font-size:17px;font-weight:700;color:var(--muted);}
+  .waterfall-result{background:#eef3fa;border-color:var(--azul);}
+  .source-note{font-size:12px;color:var(--muted);margin-top:8px;}
+  .compare-table td.better{font-weight:700;}
+  .charts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:6px;}
+  .chart-wrap{position:relative;height:270px;margin-top:8px;}
+  /* Leyenda HTML propia de los 2 gráficos apilados de Inicio (Ingresos/Gastos), reemplaza la
+     leyenda nativa de Chart.js (ver renderInicioLegend en js/finanzas-render.js). CSS Grid, no
+     flex-wrap: así las columnas de Ingresos y Gastos empiezan en el mismo x (mismo ancho de card),
+     "alineadas entre sí" — un flex-wrap centrado no lo garantiza porque cada fila tiene un ancho de
+     contenido distinto. */
+  .inicio-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px 12px;margin-top:10px;font-size:12px;color:var(--muted);}
+  .inicio-legend-item{display:flex;align-items:flex-start;gap:6px;line-height:1.3;}
+  .inicio-legend-swatch{width:11px;height:11px;border-radius:3px;flex:0 0 auto;margin-top:2px;}
+  /* Antes se dibujaba el "$" a mano dentro del <canvas> (afterDraw de Chart.js) para evitar que
+     Chart.js lo rotara 90° (rota siempre el título nativo del eje Y), pero el glyph salía roto en
+     el canvas (reportado por Guido, no se veía como un "$"). Un <span> de HTML normal, superpuesto
+     arriba a la izquierda del área del gráfico, evita todo el lío de fuentes/transform del canvas:
+     es texto de verdad, se ve exactamente como en el resto de la página. */
+  .chart-axis-dollar{position:absolute;top:2px;left:6px;font-size:12px;font-weight:600;color:var(--muted);z-index:2;pointer-events:none;}
+  .chart-caption{font-size:13px;color:var(--muted);}
+  footer{background:var(--azul-dark);color:#c9d4e6;padding:26px 20px;font-size:13px;text-align:center;}
+  footer a{color:var(--oro);}
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:200;padding:20px;}
+  .modal-overlay.open{display:flex;}
+  .modal-box{background:#fff;border-radius:10px;padding:24px;max-width:440px;width:100%;}
+  .modal-box label{display:block;font-size:13px;color:var(--muted);margin-bottom:2px;}
+  .modal-box input,.modal-box select,.modal-box textarea{width:100%;padding:9px;margin:4px 0 14px;border:1px solid var(--border);border-radius:6px;font-family:inherit;font-size:14px;}
+  .modal-actions{display:flex;gap:10px;justify-content:flex-end;}
+  .btn-secondary{padding:9px 16px;border-radius:6px;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:14px;}
+  .btn-primary{padding:9px 16px;border-radius:6px;border:none;background:var(--azul);color:#fff;cursor:pointer;font-weight:600;font-size:14px;}
+
+  details.accordion{border:1px solid var(--border);border-radius:8px;margin-bottom:8px;overflow:hidden;background:#fff;}
+  details.accordion>summary{cursor:pointer;padding:11px 14px;font-weight:700;font-size:13.5px;list-style:none;background:#eef1f6;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  details.accordion>summary::-webkit-details-marker{display:none;}
+  details.accordion>summary::after{content:'+';font-size:16px;color:var(--muted);flex-shrink:0;}
+  details.accordion[open]>summary::after{content:'\2212';}
+  details.accordion .accordion-body{padding:12px 14px;}
+  details.accordion.nested{margin-left:0;border-color:#e9e9e6;margin-bottom:6px;}
+  details.accordion.nested>summary{background:#f7f7f5;font-size:12.5px;font-weight:600;padding:8px 12px;}
+  /* El ::after (+/−) es un 3er hijo flex además de los 2 <span>, con justify-content:space-between
+     el monto (2do hijo) quedaba "flotando" a una distancia distinta del borde derecho en cada fila
+     (según cuánto medía el label), no alineado. Ancho fijo para el label (crece/achica) y para el
+     monto (siempre el mismo ancho, alineado a la derecha) resuelve la alineación entre filas. */
+  details.accordion.nested>summary>span:first-child{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  details.accordion.nested>summary>span:last-child{flex:0 0 130px;text-align:right;}
+  details.accordion.nested details.accordion.nested>summary{background:#fbfbfa;font-size:12px;}
+  .mini-table{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:2px;table-layout:fixed;}
+  .mini-table td{padding:4px 8px;border-bottom:1px solid #f1f1ee;word-wrap:break-word;}
+  .mini-table td.amount{text-align:right;white-space:nowrap;width:130px;}
+  .mini-table tr.subtotal-row td{font-weight:700;background:#f4f4f1;}
+  .mini-table tr.total-row td{font-weight:700;background:#e9edf3;}
+  .mini-table tr.subhead td{font-style:italic;color:var(--muted);font-size:11px;padding-top:8px;background:transparent;border-bottom:none;}
+  .mini-table tr.neg-row td{color:var(--red);}
+  .premisas-list{font-size:13.5px;color:var(--text);line-height:1.7;margin:0 0 12px;padding-left:20px;}
+  .premisas-list li{margin-bottom:4px;}
+  .premisas-h{font-size:13px;font-weight:700;margin:14px 0 4px;}
+  .premisas-h:first-child{margin-top:0;}
+</style>
+
+<!-- ======================== PROTO: estilos del prototipo ======================== -->
+<style>
+  /* Franja permanente: ninguna captura de esto puede pasar por el sitio real. */
+  .proto-flag{position:sticky;top:0;z-index:200;background:#b5372b;color:#fff;font-size:12px;font-weight:700;
+              letter-spacing:.04em;text-align:center;padding:5px 10px;}
+  .proto-flag span{font-weight:400;opacity:.85;}
+
+  /* La portada deja de ser un card de marketing con un buscador chico y pasa a ser
+     el selector en persona. El copy de antes y el de después quedan, porque son los
+     que explican qué es esto y qué pasa cuando elegís. */
+  .hero-sel{margin:6px 0 0;}
+  .hero-sel-bar{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:9px;}
+  .hs-title{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#8fa3c4;font-weight:800;}
+  .hs-hint{font-size:12.5px;color:#a8b8d4;flex:1;min-width:180px;}
+  .hs-toggle{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:8px;
+             padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;}
+  .hs-toggle:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
+
+  /* El panel es EL MISMO nodo que el modal (js/selector.js lo sigue manejando por id):
+     el prototipo lo MUDA acá adentro cuando no hay club elegido, y lo devuelve al
+     <body> cuando sí. Por eso esto solo apaga el posicionamiento fijo. */
+  .sel-panel.embedded{position:static;transform:none;width:auto;max-height:none;height:min(520px,62vh);
+                      box-shadow:0 10px 30px rgba(7,29,63,.22);display:flex !important;}
+  /* Adentro de la portada no hay a dónde "cerrar": la salida es Minimizar, arriba. */
+  .sel-panel.embedded .sel-close,
+  .sel-panel.embedded .foot-close,
+  .sel-panel.embedded .kbd{display:none;}
+  .hero.min .sel-panel.embedded{display:none !important;}
+
+  /* Minimizado: vuelve el buscador de una línea, para que el estado chico siga
+     sirviendo para algo y no sea solo un título. Escribir ahí reabre el selector. */
+  .hero .hero-search{display:none;}
+  .hero.min .hero-search{display:flex;}
+  .hero.min .hero-sel-bar{margin-bottom:0;}
+  .hero.min .hero-search{margin-top:10px;}
+
+  /* Copy de después del selector. */
+  /* Con el selector en la portada, el botón de club del header sobra: repite la
+     misma acción a 2 cm de distancia, y "Cambiar" cuando todavía no elegiste nada
+     no significa nada. Vuelve apenas hay club, que es cuando pasa a ser la única
+     forma de cambiarlo. Lo mismo con el cartelito que lo señala. */
+  body.proto-cold .cb-wrap{display:none;}
+
+  .hero-after{color:#bfcde6;font-size:13.5px;line-height:1.6;max-width:640px;margin:20px 0 0;}
+  .hero-after b{color:#fff;font-weight:700;}
+  .proto-hidden{display:none !important;}
+</style>
+</head>
+<body>
+<div class="proto-flag">PROTOTIPO · Inicio con el selector en la portada <span>— no es el sitio publicado</span></div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><span class="dot"></span> <span data-i18n="site.name">El deporte en Números</span></div>
+    <nav id="mainNav">
+      <button data-section="inicio" class="active" data-i18n="nav.inicio">Inicio</button>
+      <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>
+      <button data-section="fuentes" data-i18n="nav.fuentes">Fuentes</button>
+      <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
+    </nav>
+    <div class="header-right">
+      <!-- Versión 103: ya no 2 <button> fijos ("USD"/"ARS") — se generan por club en
+           populateCurrencyToggle() (ver <script> principal), porque cada club puede tener una
+           moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
+      <div class="segmented header-currency-toggle" id="currencyToggleGlobal" data-i18n-title="header.currency" title="Moneda: aplica a Inicio y Finanzas"></div>
+      <!-- SELECTOR JERÁRQUICO DE CLUB (Versión 137). Acá había un <select id="clubSelect">
+           plano, generado en runtime desde `clubs{}` (populateClubSelect(), borrada en esta
+           versión). Con 41 clubes ya era incómodo y al objetivo declarado de 1000 es inusable:
+           no se puede buscar, no agrupa, y no dice nada de qué vas a encontrar adentro. Lo
+           reemplaza este botón + el panel de abajo (ver #clubPanel, después de </header>).
+           El botón muestra el club activo y la palabra "Cambiar": ver el comentario del CSS
+           (.club-btn) para por qué se lee así y no como un título. -->
+      <div class="cb-wrap">
+        <button class="club-btn" id="clubBtn" data-i18n-title="header.club.btn" title="Cambiar de club (Ctrl+K)" aria-haspopup="dialog" aria-expanded="false">
+          <span class="crest" id="cbCrest" aria-hidden="true">··</span>
+          <span class="cb-txt">
+            <span class="cb-eyebrow" id="cbEyebrow" data-i18n="header.club.eyebrow">Estás viendo</span>
+            <span class="cb-name" id="cbName" data-i18n="header.club.none">Elegí tu club</span>
+          </span>
+          <span class="cb-change" data-i18n="header.club.change">Cambiar &#9662;</span>
+        </button>
+        <div class="coach" id="coachMark" hidden><span data-i18n="selector.coach">Elegí tu club acá</span> <span class="coach-x" id="coachX" role="button" aria-label="Cerrar">&#215;</span></div>
+      </div>
+      <!-- Punto de entrada 1 de 3 de la comparación: un botón CON TEXTO, no un ícono mudo.
+           Los otros dos son la tarjeta abajo de los KPIs de Inicio (#cmpCta) y el banner del
+           panel cuando se abre para comparar (#addBanner). -->
+      <button class="cmp-btn" id="compareBtn" data-i18n-title="header.compare.tip" title="Comparar con otro club">&#8644; <span data-i18n="header.compare">Comparar</span></button>
+      <button id="contactBtn" data-i18n-title="header.contact" title="Contacto">&#9993;</button>
+      <!-- Selector de idioma (Versión 115). El <button> y el menú se llenan en runtime
+           desde `window.LANGS` (data/lang/langs.js), igual que el panel del selector se llena
+           desde `clubs` (data/clubs.js): agregar un idioma NO toca este HTML. -->
+      <div class="lang-wrap">
+        <button id="langBtn" data-i18n-title="header.lang" title="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-globe" aria-hidden="true">&#127760;</span><span id="langBtnLabel">ES</span>
+        </button>
+        <div id="langMenu" role="menu" hidden></div>
+      </div>
+    </div>
+  </div>
+  <!-- BANDEJA DE COMPARACIÓN. Aparece sola cuando hay al menos un rival o benchmark;
+       con la lista vacía no ocupa lugar. El club activo es siempre el primer sujeto y
+       no se puede sacar. -->
+  <div class="tray" id="cmpTray" hidden>
+    <div class="tray-inner">
+      <span class="tray-label" data-i18n="cmp.tray.label">Comparando</span>
+      <div id="trayChips" style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;"></div>
+      <button class="chip-add" id="trayAdd" data-i18n="cmp.tray.add">+ Club</button>
+      <button class="chip-add" id="trayAddYear" data-i18n="cmp.tray.addyear">+ Otro año</button>
+      <button class="chip-add" id="trayClear" data-i18n="cmp.tray.clear">Cerrar comparación</button>
+      <div class="tray-mode">
+        <span class="mode-pill" id="cmpModePill"></span>
+        <span class="tray-hint" id="cmpModeHint"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PANEL DEL SELECTOR DE CLUB (Versión 137) =====================
+     Miller columns (Deporte › Región › País › Liga › Equipo) con búsqueda arriba. La
+     jerarquía es OPCIONAL, no un peaje: el 90% de las visitas ya tiene un club en la
+     cabeza, y escribir "boca" tiene que llegar en un paso. El árbol es para explorar.
+     Todo el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
+     `data/leagues.js` + `data/club-leagues.js`; no se carga ningún `data/<club>-data.js`
+     para dibujarlo (son 41 clubes en el panel y 0 archivos de datos bajados). -->
+<div class="sel-backdrop" id="clubBackdrop"></div>
+<div class="sel-panel" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
+  <!-- Se llena desde js/comparar-clubes.js cuando el panel se abre en modo comparar. -->
+  <div class="add-banner" id="addBanner" hidden></div>
+  <div class="sel-search">
+    <input id="selQ" type="text" autocomplete="off" spellcheck="false"
+           data-i18n-placeholder="selector.search.ph"
+           placeholder="Buscá un club, una liga o un país…  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
+    <span class="kbd">esc</span>
+    <!-- Salida visible N° 1 (arriba a la derecha). NO un × gris de 20px sin caja. -->
+    <button class="sel-close" id="selClose">&#10005;<span data-i18n="selector.close">Cerrar</span></button>
+  </div>
+  <div class="sel-home" id="selHomeWrap" hidden>
+    <button id="selHome" data-i18n="selector.home">&#8592; Ver la portada con todos los clubes</button>
+  </div>
+  <div class="sel-recents" id="selRecentsWrap" hidden>
+    <span class="r-label" data-i18n="selector.recents">Recientes</span>
+    <div id="selRecents" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+  </div>
+  <div class="sel-crumbs" id="selCrumbs"></div>
+  <div class="sel-results" id="selResults" hidden></div>
+  <div class="sel-cols" id="selCols">
+    <div class="sel-col" data-level="0"><div class="sel-col-head" data-i18n="selector.col.sport">Deporte</div><div id="selColSport"></div></div>
+    <div class="sel-col" data-level="1"><div class="sel-col-head" data-i18n="selector.col.region">Región</div><div id="selColRegion"></div></div>
+    <div class="sel-col" data-level="2"><div class="sel-col-head" data-i18n="selector.col.country">País</div><div id="selColCountry"></div></div>
+    <div class="sel-col" data-level="3"><div class="sel-col-head" data-i18n="selector.col.league">Liga</div><div id="selColLeague"></div></div>
+    <div class="sel-col active-pane" data-level="4"><div class="sel-col-head" data-i18n="selector.col.club">Equipo</div><div id="selColClub"></div></div>
+  </div>
+  <div class="confirm-bar" id="confirmBar" hidden>
+    <div class="cf-sel" id="cfSel"></div>
+    <button class="cf-cancel" id="cmpCancel" data-i18n="cmp.cancel">Cancelar</button>
+    <button class="cf-ok" id="cmpOk" data-i18n="cmp.ok">Ver comparación</button>
+  </div>
+  <div class="sel-foot">
+    <span class="legend-item"><i class="q-dot full"></i> <span data-i18n="selector.legend.full">Balance oficial</span></span>
+    <span class="legend-item"><i class="q-dot mixed"></i> <span data-i18n="selector.legend.mixed">Parcial / mixto</span></span>
+    <span class="legend-item"><i class="q-dot placeholder"></i> <span data-i18n="selector.legend.placeholder">Placeholder</span></span>
+    <span class="legend-item"><i class="q-dot empty"></i> <span data-i18n="selector.legend.empty">Sin datos todavía</span></span>
+    <span class="spacer"></span>
+    <span class="foot-count" id="selFootCount"></span>
+    <!-- Salida visible N° 2 (abajo a la derecha): es donde cae el pulgar en un teléfono,
+         y el texto aclara que salir de ahí no te deja en otro club. -->
+    <button class="foot-close" id="selFootClose" data-i18n="selector.close.nochange">Cerrar sin cambiar</button>
+  </div>
+</div>
+
+<main>
+
+  <!-- ===== COLD START (Versión 137) =====
+       Lo que ve alguien que llega por primera vez. Antes el sitio abría directo en Boca,
+       con un <select> chico en un header azul: quien no sabía que el sitio era multi-club
+       no tenía forma de enterarse. Acá la elección de club es LA tarea de la pantalla, y
+       eso resuelve el arranque en frío de una. Elegido un club queda guardado en
+       localStorage y las visitas siguientes entran derecho a su club; para volver acá hay
+       un "Ver la portada" arriba del panel del selector (decisión de Guido: que la
+       pantalla de exploración no quede inalcanzable para siempre después del primer click).
+       El nav y las secciones se esconden mientras no haya club: no hay nada que navegar
+       hasta que se elija uno, y un tab que lleva a una vista vacía es peor que no estar. -->
+  <div class="hero" id="coldHero" hidden>
+    <!-- PROTO: COPY DE ANTES. Se queda tal cual (mismas claves de i18n): dice qué es
+         el sitio y de dónde salen los números, que es lo que hace falta leer ANTES
+         de ponerse a elegir. -->
+    <h1 data-i18n="hero.title">Los números reales de tu club</h1>
+    <p data-i18n="hero.sub">Ingresos, gastos, deuda y mercado de pases, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
+
+    <!-- PROTO: EL SELECTOR, ACÁ MISMO. Antes vivía atrás de un click en el header y
+         la portada tenía un buscador propio; ahora es lo que ves. El panel no está
+         duplicado: es el mismo nodo #clubPanel, mudado acá por el script de abajo. -->
+    <div class="hero-sel" id="heroSel">
+      <div class="hero-sel-bar">
+        <span class="hs-title">Elegí tu club</span>
+        <span class="hs-hint" id="hsHint">Escribí el nombre, o bajá por deporte, región, país y liga.</span>
+        <button class="hs-toggle" id="hsToggle" type="button" aria-expanded="true" aria-controls="heroSelSlot">Minimizar</button>
+      </div>
+      <div class="hero-sel-slot" id="heroSelSlot"></div>
+      <!-- Visible SOLO minimizado: el estado chico tiene que seguir siendo usable.
+           Es el mismo buscador de la portada de hoy, y delega en el panel. -->
+      <div class="hero-search">
+        <input id="heroQ" type="text" autocomplete="off" data-i18n-placeholder="hero.search.ph" placeholder="Buscá tu club…  ej. Boca, Racing, Barcelona, Kashima">
+        <button id="heroGo" data-i18n="hero.search.go">Buscar</button>
+      </div>
+    </div>
+
+    <!-- PROTO: COPY DE DESPUÉS. Tres cosas, en este orden: un atajo para el que no
+         quiere explorar, qué pasa cuando elegís, y cuánto hay cargado. -->
+    <div class="hero-quick">
+      <div class="hq-label" data-i18n="hero.quick.clubs">O empezá por uno de estos</div>
+      <div class="hq-row" id="heroClubs"></div>
+    </div>
+    <p class="hero-after">
+      Elegí uno y vas a ver sus <b>ingresos, gastos, deuda y resultados, año por año</b>,
+      con el balance o el presupuesto que respalda cada cifra a un click de distancia.
+      Después podés cambiar de club cuando quieras, desde el botón del header.
+    </p>
+    <p class="hero-foot" id="heroFoot"></p>
+    <p class="hero-error" id="clubLoadError" hidden></p>
+    <!-- Las ligas ya están como columna adentro del selector: acá serían una tercera
+         forma de decir lo mismo. El nodo queda porque renderHero() le escribe. -->
+    <div class="hero-quick proto-hidden">
+      <div class="hq-label" data-i18n="hero.quick.leagues">O mirá qué hay cargado de cada liga</div>
+      <div class="hq-row" id="heroLeagues"></div>
+    </div>
+  </div>
+
+  <!-- INICIO -->
+  <section id="inicio" class="active">
+    <h1 data-i18n="inicio.title">Datos del club</h1>
+    <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
+    <div class="grid" id="inicioStats"></div>
+    <!-- PUNTO DE ENTRADA 2 de 3 (Versión 137): la tarjeta, abajo de los KPIs. Es el que de
+         verdad se usa, porque aparece donde el visitante ya está mirando números y se le
+         ocurre la pregunta. Desaparece cuando ya hay una comparación activa. -->
+    <div class="cmp-cta" id="cmpCta" hidden>
+      <span class="cc-ico" aria-hidden="true">&#8644;</span>
+      <span class="cc-txt">
+        <span class="cc-t" id="ccT"></span>
+        <span class="cc-s" data-i18n="cmp.cta.sub">Poné dos clubes lado a lado, o medilo contra el promedio de su liga.</span>
+      </span>
+      <span style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button id="ccBtn" data-i18n="cmp.cta.club">Con otro club</button>
+        <button id="ccYearBtn" class="secundario" data-i18n="cmp.cta.year">Con otro año de este club</button>
+      </span>
+    </div>
+
+    <!-- LA COMPARACIÓN. Barras por default; la tabla existe para el que quiere el número
+         exacto y copiarlo, detrás del toggle. -->
+    <div class="card" id="compareCard" hidden>
+      <div class="card-head">
+        <div class="ch-txt">
+          <h2 data-i18n="cmp.title">Comparación</h2>
+          <p class="subtitle" style="margin:0;" data-i18n="cmp.sub">Una barra por sujeto, indicador por indicador. Cada barra está a escala dentro de su propio indicador, no entre indicadores.</p>
+        </div>
+        <div class="viewtoggle" id="cmpView">
+          <button type="button" data-v="bars" class="active" data-i18n="cmp.view.bars">Barras</button>
+          <button type="button" data-v="table" data-i18n="cmp.view.table">Tabla</button>
+        </div>
+      </div>
+      <div class="cmp-warn" id="cmpWarn" hidden></div>
+      <p class="cmp-rules" id="cmpRules"></p>
+      <div class="metric-grid" id="metricGrid"></div>
+      <div class="table-scroll" id="cmpTableWrap" hidden><table class="cmp-table" id="cmpTable"></table></div>
+    </div>
+
+    <div class="card" id="mixCard" hidden>
+      <h2 data-i18n="cmp.mix.title">Composición de ingresos</h2>
+      <p class="subtitle" data-i18n="cmp.mix.sub">De dónde sale la plata de cada uno. Barras al 100%, para comparar la mezcla y no el tamaño; el total va al costado.</p>
+      <div id="mixRows"></div>
+      <div class="mix-legend" id="mixLegend"></div>
+    </div>
+
+
+    <div class="card">
+      <h2 data-i18n="inicio.chart.rev">Ingresos por año</h2>
+      <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioIngresosChart"></canvas></div>
+      <div class="inicio-legend" id="inicioIngresosLegend"></div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="inicio.chart.exp">Gastos por año</h2>
+      <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioGastosChart"></canvas></div>
+      <div class="inicio-legend" id="inicioGastosLegend"></div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="inicio.chart.debt">Deuda neta por año</h2>
+      <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioDeudaChart"></canvas></div>
+    </div>
+  </section>
+
+  <!-- FINANZAS -->
+  <section id="finanzas">
+    <h1 data-i18n="finanzas.title">Finanzas</h1>
+    <p class="subtitle" data-i18n="finanzas.sub">Estado de resultados estilo cuenta de pérdidas y ganancias.</p>
+
+
+    <div class="controls">
+      <!-- "Por gestión" oculto desde la Versión 112 (pedido de Guido, escalando a 1000 clubes: la
+           mayoría de los clubes nuevos no tienen presidencia/gestión real confirmada, solo una
+           entrada sintética "Gestión actual" — el toggle dejó de aportar valor). Mismo criterio que
+           ya se usa para las pestañas Pases/Resultados/Comparar (Versión 56, "ocultos por ahora"):
+           se esconde la UI, NO se borra gestionesByClub ni el código de cálculo por gestión, para
+           poder traerlo de vuelta sin reconstruir nada si en el futuro hace falta para los clubes
+           argentinos que sí tienen gestión real. -->
+      <div class="segmented" id="viewToggle" style="display:none;">
+        <button data-view="anio" class="active" data-i18n="finanzas.view.year">Año a año</button>
+        <button data-view="gestion" data-i18n="finanzas.view.board">Por gestión</button>
+      </div>
+
+      <span id="gestionSelectWrap" style="display:none;">
+        <label data-i18n="label.board">Gestión:</label>
+        <select id="gestionSelect">
+          <option value="riquelme">Riquelme (2023-actual)</option>
+        </select>
+      </span>
+
+      <span id="anioSelectWrap">
+        <label data-i18n="label.year">Año:</label>
+        <select id="anioSelect">
+          <option value="2027">2026/2027 (Presupuesto)</option>
+          <option value="2026">2025/2026 (Placeholder)</option>
+          <option value="2025">2024/2025 (Balance)</option>
+          <option value="2024">2023/2024 (Placeholder)</option>
+        </select>
+      </span>
+
+      <span id="simplifyToggleWrap">
+        <div class="segmented" id="simplifyToggle" title="Formato del club: las categorías tal cual las reportó el club. Formato simplificado: los mismos números, reclasificados a un formato uniforme para poder comparar entre ejercicios (y a futuro, entre clubes).">
+          <button data-simplify="0" data-i18n="finanzas.fmt.club">Formato del club</button>
+          <button data-simplify="1" class="active" data-i18n="finanzas.fmt.simple">Formato simplificado</button>
+        </div>
+      </span>
+    </div>
+
+    <div id="finanzasDataQualityBanner" style="display:none;margin-bottom:16px;padding:12px 16px;border-radius:8px;border:1px solid #e0b400;background:#fff8e1;color:#5c4a00;font-size:14px;line-height:1.5;"></div>
+
+    <div class="grid" id="finanzasStats"></div>
+
+    <div class="card">
+      <h2 data-i18n="finanzas.pl.title">Estado de resultados</h2>
+      <p class="subtitle" data-i18n="finanzas.pl.sub">En ingresos ves cuánta plata entró y en gastos ves cuánta salió del club en este ejercicio, categoría por categoría.</p>
+      <div class="table-scroll">
+      <table id="finanzasPLTable">
+        <colgroup><col><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup>
+        <thead><tr><th data-i18n="th.line">Rubro</th><th id="finanzasPLTableCurLabel">Actual</th><th>% del<br>total</th><th id="finanzasPLTablePrevLabel">Anterior</th><th>% del<br>total</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="finanzas.debt.title">Deuda</h2>
+      <p class="subtitle" data-i18n="finanzas.debt.sub">Acá ves cuánta plata le debe el club a terceros (deuda bruta), cuánta plata tiene disponible (caja) y la diferencia entre las dos (deuda neta).</p>
+      <table id="finanzasDebtTable">
+        <thead><tr><th data-i18n="th.indicator">Indicador</th><th id="finanzasDebtTableCurLabel">Actual</th><th id="finanzasDebtTablePrevLabel">Anterior</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="source-note" id="finanzasDebtNote" style="color:var(--azul);font-weight:600;"></p>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="finanzas.charts.title">Gráficos</h2>
+      <p class="subtitle" data-i18n="finanzas.charts.sub">Los mismos números de arriba, pero en gráfico: para ver de un vistazo cómo evolucionaron ingresos y gastos a través de los ejercicios, y de qué rubros vive el club.</p>
+      <div class="charts-grid">
+        <div>
+          <div class="chart-caption">Ingresos vs. gastos, últimos ejercicios</div>
+          <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="trendChart"></canvas></div>
+        </div>
+        <div>
+          <div class="chart-caption">Composición de ingresos del ejercicio seleccionado</div>
+          <div class="chart-wrap"><canvas id="breakdownChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="supuestosCard">
+      <h2 data-i18n="budget.assump.title">Supuestos</h2>
+      <p class="subtitle" data-i18n="budget.assump.sub">Antes de mostrar los números del presupuesto, el club explica bajo qué supuestos los armó: inflación esperada, tipo de cambio, resultados deportivos previstos, etc. Es la letra chica que explica de dónde salen las proyecciones de arriba. Solo aparece para los ejercicios que tienen un presupuesto cargado con este detalle.</p>
+      <div id="supuestosBody"></div>
+    </div>
+
+    <div class="card" id="presupuestoFinancieroCard">
+      <h2 data-i18n="budget.cash.title">Presupuesto Financiero</h2>
+      <p class="subtitle" data-i18n="budget.cash.sub">A diferencia del cuadro "Estado de resultados" de más arriba (que registra todo por lo devengado, cuando corresponde), acá se ve el movimiento real de caja: cuánta plata entra y sale, hasta llegar al Saldo al Cierre. Solo aparece para los ejercicios que tienen un presupuesto financiero cargado.</p>
+
+      <div id="presupuestoFinancieroBody"></div>
+    </div>
+
+    <div class="card" id="presupuestoInversionesCard">
+      <h2 data-i18n="budget.capex.title">Presupuesto de Inversiones</h2>
+      <p class="subtitle" data-i18n="budget.capex.sub">El detalle de en qué obras e inversiones de infraestructura piensa gastar el club durante el ejercicio: estadio, sedes, predios, sistemas, etc. Solo aparece para los ejercicios que tienen un presupuesto de inversiones cargado.</p>
+
+      <div id="presupuestoInversionesBody"></div>
+    </div>
+
+    <div id="torneosBoca2027">
+      <div class="card" id="torneoLibertadoresCard">
+        <h2 data-i18n="torneo.lib.title">Copa Libertadores. Ingresos y Egresos</h2>
+        <p class="subtitle" data-i18n="torneo.sub">Cuánto entra y cuánto sale por esta competencia en particular, según el Presupuesto 2026/2027.</p>
+        <p style="font-size:13.5px;color:var(--text);margin:0 0 14px;line-height:1.5;" data-i18n-html="torneo.lib.instancia"><strong>Instancia presupuestada:</strong> el presupuesto proyecta llegar hasta Cuartos de Final en la edición 2026 y hasta Fase de Grupos en la edición 2027. Este ejercicio (julio 2026 a junio 2027) abarca el cierre de la Libertadores 2026 y el arranque de la 2027.</p>
+        <table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="subhead"><td colspan="2" data-i18n="section.revenue">Ingresos</td></tr>
+          <tr><td>Recaudaciones</td><td class="amount">12.260.266.000</td></tr>
+          <tr><td>Derechos de Televisión</td><td class="amount">10.062.951.000</td></tr>
+          <tr><td>Bonos</td><td class="amount">2.039.262.000</td></tr>
+          <tr class="subtotal-row"><td data-i18n="torneo.total.ingresos">TOTAL INGRESOS</td><td class="amount">24.362.479.000</td></tr>
+        </table>
+        <details class="accordion nested">
+          <summary><span data-i18n="torneo.gastos.org">Gastos de organización de partidos</span><span>13.833.167.000</span></summary>
+          <div class="accordion-body"><table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
+            <tr><td>Premios Grupales</td><td class="amount">6.879.011.000</td></tr>
+            <tr><td>Remuneraciones BICA, S.A.C. y Cs. Sociales</td><td class="amount">1.891.842.000</td></tr>
+            <tr><td>Viajes y Movilidad</td><td class="amount">1.038.931.000</td></tr>
+            <tr><td>Gastos AFA</td><td class="amount">1.101.321.000</td></tr>
+            <tr><td>Gastos Concentración</td><td class="amount">526.296.000</td></tr>
+            <tr><td>Policía Adicional</td><td class="amount">606.879.000</td></tr>
+            <tr><td>Sanción Disciplinaria</td><td class="amount">254.403.000</td></tr>
+            <tr><td>Seguro Espectador</td><td class="amount">309.650.000</td></tr>
+            <tr><td>Servicios y Abonos Varios</td><td class="amount">232.485.000</td></tr>
+            <tr><td>Alquiler Equipos y otros</td><td class="amount">148.330.000</td></tr>
+            <tr><td>Agasajos, Buffet y Refrigerios</td><td class="amount">147.665.000</td></tr>
+            <tr><td>Vigilancia</td><td class="amount">441.860.000</td></tr>
+            <tr><td>Mantenimiento</td><td class="amount">68.790.000</td></tr>
+            <tr><td>Articulos de limpieza</td><td class="amount">42.363.000</td></tr>
+            <tr><td>Varios</td><td class="amount">37.957.000</td></tr>
+            <tr><td>Gastos Ticket</td><td class="amount">34.144.000</td></tr>
+            <tr><td>Canjes: Baños Químicos</td><td class="amount">31.031.000</td></tr>
+            <tr><td>Enlace SIS y Mantenimiento</td><td class="amount">19.253.000</td></tr>
+            <tr><td>Honorarios</td><td class="amount">17.535.000</td></tr>
+            <tr><td>Alcanzabalones</td><td class="amount">3.421.000</td></tr>
+            <tr class="total-row"><td data-i18n="torneo.total.gastos">TOTAL GASTOS DE ORGANIZACIÓN</td><td class="amount">13.833.167.000</td></tr>
+          </table></div>
+        </details>
+        <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="total-row"><td>DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount">10.529.312.000</td></tr>
+        </table>
+        <p class="source-note">No incluye sueldos ni primas del plantel: el presupuesto no desglosa esos costos por torneo (son una única cifra para todo el plantel, sin importar en qué competencia jugó cada partido), así que la "Diferencia" de acá NO es el resultado económico real de disputar esta copa, solo compara los ingresos de la competencia contra el costo de organizar sus partidos (seguridad, viajes, concentración, premios por avance de ronda, AFA, etc.).</p>
+      </div>
+
+      <div class="card" id="torneoLigaCard">
+        <h2 data-i18n="torneo.liga.title">Campeonato Liga Profesional. Ingresos y Egresos</h2>
+        <p class="subtitle" data-i18n="torneo.sub.liga">Cuánto entra y cuánto sale por el torneo local en particular, según el Presupuesto 2026/2027.</p>
+        <p style="font-size:13.5px;color:var(--text);margin:0 0 14px;line-height:1.5;" data-i18n-html="torneo.liga.instancia"><strong>Instancia presupuestada:</strong> el presupuesto no proyecta una instancia final: son las 2 competencias que organiza la Liga Profesional en este período, en formato de todos contra todos, sin fase eliminatoria que estimar.</p>
+        <table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="subhead"><td colspan="2" data-i18n="section.revenue">Ingresos</td></tr>
+          <tr><td>Derechos de Televisión</td><td class="amount">9.174.920.000</td></tr>
+          <tr><td>Recaudaciones</td><td class="amount">5.847.950.000</td></tr>
+          <tr><td>Premio por Campeonato</td><td class="amount">1.785.000.000</td></tr>
+          <tr class="subtotal-row"><td data-i18n="torneo.total.ingresos">TOTAL INGRESOS</td><td class="amount">16.807.870.000</td></tr>
+        </table>
+        <details class="accordion nested">
+          <summary><span data-i18n="torneo.gastos.org">Gastos de organización de partidos</span><span>18.747.077.000</span></summary>
+          <div class="accordion-body"><table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
+            <tr><td>Remuneraciones BICA, S.A.C. y Cs. Sociales</td><td class="amount">5.981.378.000</td></tr>
+            <tr><td>Policía Adicional</td><td class="amount">2.668.276.000</td></tr>
+            <tr><td>Gastos Concentración</td><td class="amount">2.123.633.000</td></tr>
+            <tr><td>Vigilancia</td><td class="amount">1.942.734.000</td></tr>
+            <tr><td>Premios Grupales</td><td class="amount">850.000.000</td></tr>
+            <tr><td>Seguro espectador</td><td class="amount">869.107.000</td></tr>
+            <tr><td>Servicios y Abonos Varios</td><td class="amount">821.034.000</td></tr>
+            <tr><td>Agasajos, Buffet y Refrigerios</td><td class="amount">649.239.000</td></tr>
+            <tr><td>Alquiler de Equipos Varios</td><td class="amount">585.152.000</td></tr>
+            <tr><td>Viajes y Movilidad</td><td class="amount">481.208.000</td></tr>
+            <tr><td>Mantenimiento</td><td class="amount">394.782.000</td></tr>
+            <tr><td>Gastos AFA</td><td class="amount">277.299.000</td></tr>
+            <tr><td>Sanción Disciplinaria</td><td class="amount">165.217.000</td></tr>
+            <tr><td>Canjes: Baños Quimicos</td><td class="amount">128.819.000</td></tr>
+            <tr><td>Articulos de limpieza</td><td class="amount">116.026.000</td></tr>
+            <tr><td>Canjes: Cable</td><td class="amount">110.500.000</td></tr>
+            <tr><td>Enlace SIS y Mantenimiento</td><td class="amount">84.651.000</td></tr>
+            <tr><td>Varios</td><td class="amount">48.181.000</td></tr>
+            <tr><td>Honorarios</td><td class="amount">37.215.000</td></tr>
+            <tr><td>Gastos Tickets</td><td class="amount">33.971.000</td></tr>
+            <tr><td>Canjes: Carro</td><td class="amount">19.421.000</td></tr>
+            <tr><td>Alcanzabalones</td><td class="amount">16.023.000</td></tr>
+            <tr><td>Canjes: Ambulancia</td><td class="amount">11.173.000</td></tr>
+            <tr class="total-row"><td data-i18n="torneo.total.gastos">TOTAL GASTOS DE ORGANIZACIÓN</td><td class="amount">18.747.077.000</td></tr>
+          </table></div>
+        </details>
+        <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="total-row"><td>DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount neg-num">(1.939.207.000)</td></tr>
+        </table>
+        <p class="source-note">No incluye sueldos ni primas del plantel: el presupuesto no desglosa esos costos por torneo (son una única cifra para todo el plantel, sin importar en qué competencia jugó cada partido), así que la "Diferencia" de acá NO es el resultado económico real de disputar este torneo, solo compara los ingresos de la competencia contra el costo de organizar sus partidos (seguridad, viajes, concentración, premios grupales, AFA, etc.). Que dé negativa acá no significa que el club "pierde plata" jugando la Liga: la Liga también paga, indirectamente, gran parte de los sueldos del plantel, que no están en esta cuenta.</p>
+      </div>
+
+      <div class="card" id="torneoCopaArgCard">
+        <h2 data-i18n="torneo.copa.title">Copa Argentina. Ingresos y Egresos</h2>
+        <p class="subtitle" data-i18n="torneo.sub">Cuánto entra y cuánto sale por esta competencia en particular, según el Presupuesto 2026/2027.</p>
+        <p style="font-size:13.5px;color:var(--text);margin:0 0 14px;line-height:1.5;" data-i18n-html="torneo.copa.instancia"><strong>Instancia presupuestada:</strong> el presupuesto proyecta avanzar hasta Cuartos de Final en la edición 2026 y hasta Primera Ronda en la edición 2027 (mismo criterio que Libertadores: este ejercicio abarca el cierre de una edición y el arranque de la siguiente).</p>
+        <table class="mini-table"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="subhead"><td colspan="2" data-i18n="section.revenue">Ingresos</td></tr>
+          <tr><td>Premio Por Avanzar de Ronda / Acelerador</td><td class="amount">340.417.000</td></tr>
+          <tr class="subtotal-row"><td data-i18n="torneo.total.ingresos">TOTAL INGRESOS</td><td class="amount">340.417.000</td></tr>
+        </table>
+        <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="subhead"><td colspan="2" data-i18n="torneo.gastos.org">Gastos de organización de partidos</td></tr>
+          <tr><td>Remuneraciones BICA, S.A.C. y Cs. Sociales</td><td class="amount">107.181.000</td></tr>
+          <tr><td>Alojamiento y Concentraciones</td><td class="amount">44.015.000</td></tr>
+          <tr><td>Viajes y Movilidad</td><td class="amount">15.462.000</td></tr>
+          <tr><td>Varios</td><td class="amount">3.542.000</td></tr>
+          <tr class="subtotal-row"><td data-i18n="torneo.total.gastos">TOTAL GASTOS DE ORGANIZACIÓN</td><td class="amount">170.200.000</td></tr>
+        </table>
+        <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
+          <tr class="total-row"><td>DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount">170.217.000</td></tr>
+        </table>
+        <p class="source-note">No incluye sueldos ni primas del plantel: el presupuesto no desglosa esos costos por torneo (son una única cifra para todo el plantel, sin importar en qué competencia jugó cada partido), así que la "Diferencia" de acá NO es el resultado económico real de disputar esta copa, solo compara los ingresos de la competencia contra el costo de organizar sus partidos.</p>
+      </div>
+    </div>
+
+    <!-- FICHA DE FUENTE (Versión 125, pedido de Guido: "que en /Finanzas haya un card al final
+         que sea Fuentes"). Reemplaza a `finanzasClubSourceNote`, que era un texto fijo escrito a
+         mano para 3 clubes (Boca, Racing, River) y no decía nada para los otros 38. Este se arma
+         de `sources{}` + la meta del ejercicio, así que no se puede desincronizar ni quedarse
+         corto cuando entra un club nuevo. Se llena en renderFuentesCard(), js/finanzas-render.js. -->
+    <div class="card" id="finanzasFuentesCard" style="margin-top:22px;">
+      <h2 data-i18n="fuentes.card.title">Fuentes</h2>
+      <p class="subtitle" style="margin-top:-4px;" data-i18n="fuentes.card.sub">De dónde sale cada número de este ejercicio.</p>
+      <div id="finanzasFuentesBody"></div>
+    </div>
+
+  </section>
+
+  <!-- MERCADO DE PASES -->
+  <section id="pases">
+    <h1 data-i18n="pases.title">Mercado de Pases</h1>
+    <p class="subtitle">Compras, ventas y movimientos de cuerpo técnico. Filtrá por gestión, año, ventana de pases y tipo.</p>
+
+    <div class="controls">
+      <label>Gestión:</label>
+      <select id="pasesGestionFilter">
+        <option value="todas">Todas</option>
+        <option value="riquelme">Riquelme (2023-actual)</option>
+        <option value="ameal">Ameal (2019-2023)</option>
+        <option value="angelici">Angelici (2015-2019)</option>
+      </select>
+      <label>Año:</label>
+      <select id="pasesAnioFilter">
+        <option value="todos">Todos</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+      </select>
+      <label>Ventana:</label>
+      <select id="pasesVentanaFilter">
+        <option value="todas">Todas</option>
+        <option value="Verano">Verano</option>
+        <option value="Invierno">Invierno</option>
+      </select>
+      <label>Tipo:</label>
+      <select id="pasesTipoFilter">
+        <option value="todos">Todos</option>
+        <option value="Jugador">Jugadores</option>
+        <option value="DT">DTs</option>
+      </select>
+    </div>
+
+    <div class="grid" id="pasesStats"></div>
+
+    <div class="card">
+      <h2 data-i18n="pases.table.title">Movimientos</h2>
+      <table id="pasesTable">
+        <thead><tr><th data-i18n="th.name">Nombre</th><th data-i18n="th.type">Tipo</th><th data-i18n="th.movement">Movimiento</th><th data-i18n="th.amount">Monto</th><th data-i18n="th.year">Año</th><th data-i18n="th.window">Ventana</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="source-note">Fuente: Transfermarkt + reportes de club (placeholder). Los movimientos de DT no tienen impacto monetario directo en esta demo.</p>
+    </div>
+  </section>
+
+  <!-- RESULTADOS DEPORTIVOS -->
+  <section id="resultados">
+    <h1 data-i18n="resultados.title">Resultados Deportivos</h1>
+    <p class="subtitle">Complemento al análisis financiero. Es contexto, no el eje del sitio. Cada título queda contado en la gestión del presidente que estaba en funciones el día que se ganó, no en la de quien empezó el torneo, por eso a veces un título "cruza" el cambio de gestión.</p>
+
+    <div class="controls">
+      <label>Gestión:</label>
+      <select id="resultadosGestionSelect">
+        <option value="riquelme">Riquelme (2023-actual)</option>
+        <option value="ameal">Ameal (2019-2023)</option>
+        <option value="angelici">Angelici (2015-2019)</option>
+      </select>
+    </div>
+
+    <div class="grid" id="resultadosStats"></div>
+
+    <div class="card">
+      <h2 data-i18n="resultados.table.title">Títulos y competencias por año</h2>
+      <table id="resultadosTable">
+        <thead><tr><th>Año</th><th data-i18n="th.competition">Competencia</th><th data-i18n="th.result">Resultado</th><th data-i18n="th.board">Gestión</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="source-note">Solo se listan títulos ganados.</p>
+      <p class="source-note">Fuentes: Wikipedia (anexos de presidentes de cada club), cobertura de Infobae, La Nación y ESPN sobre cada gestión, buscada y verificada en agosto de 2026. A cruzar contra el sitio oficial de cada club antes de publicar.</p>
+    </div>
+  </section>
+
+  <!-- COMPARAR -->
+  <section id="comparar">
+    <h1 data-i18n="comparar.title">Comparar Gestiones</h1>
+    <p class="subtitle" data-i18n="comparar.sub">Mismos indicadores, financieros y deportivos, lado a lado.</p>
+
+    <div class="controls">
+      <label data-i18n="label.boardA">Gestión A:</label>
+      <select id="compA">
+        <option value="riquelme">Riquelme (2023-actual)</option>
+        <option value="ameal">Ameal (2019-2023)</option>
+        <option value="angelici">Angelici (2015-2019)</option>
+      </select>
+      <label data-i18n="label.boardB">Gestión B:</label>
+      <select id="compB">
+        <option value="ameal">Ameal (2019-2023)</option>
+        <option value="riquelme">Riquelme (2023-actual)</option>
+        <option value="angelici">Angelici (2015-2019)</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <table class="compare-table" id="compareTable">
+        <thead><tr><th>Indicador</th><th id="compAHead">Gestión A</th><th id="compBHead">Gestión B</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="source-note">Financieros: último ejercicio de cada gestión. Deportivos: acumulado de la gestión. Datos placeholder.</p>
+    </div>
+  </section>
+
+  <!-- FUENTES -->
+  <section id="fuentes">
+    <h1 data-i18n="fuentes.title">Fuentes</h1>
+
+
+    <p class="subtitle" data-i18n="fuentes.sub">Todo dato en este sitio cita su origen y fecha. Acá está de dónde sale cada número del club que estás mirando, y el listado completo del sitio.</p>
+
+    <!-- FUENTES DEL CLUB SELECCIONADO (Versión 125). Antes había acá una tabla de 6 filas escrita
+         a mano (bocajuniors.com.ar, actas de asamblea, IGJ, INDEC/BCRA, Transfermarkt, prensa) y
+         un párrafo de ~450 palabras que nombraba club por club: las dos cosas se habían quedado en
+         los primeros clubes argentinos y no decían nada de los 6 países que el sitio cubre hoy. El
+         costo no era el tiempo de mantenerlas sino la credibilidad, que es todo lo que este sitio
+         tiene: prometía "todo dato cita su origen" y mostraba orígenes que no eran los de sus
+         datos. Ahora se arma de `sources{}`, en renderFuentesClubCard() (js/finanzas-render.js), y
+         el listado completo de los 91 documentos vive en fuentes.html, que genera
+         tools/generate-fuentes-page.js. -->
+    <div class="card">
+      <h2 id="fuentesClubTitulo">Documentos de este club</h2>
+      <div id="fuentesClubBody"></div>
+    </div>
+  </section>
+
+  <!-- MI CUENTA (stub, sin funcionalidad todavía) -->
+  <section id="cuenta">
+    <h1 data-i18n="cuenta.title">Mi Cuenta</h1>
+    <p class="subtitle" data-i18n="cuenta.sub">Cuentas y suscripciones, próximamente.</p>
+    <div class="card">
+      <h2 data-i18n="cuenta.empty.title">Todavía no hay nada acá</h2>
+      <p style="color:var(--muted);font-size:14.5px;line-height:1.6;" data-i18n="cuenta.empty.text">La idea es tener un plan gratis (lo que ya ves en el sitio) y un plan pago con analítica avanzada y contenido pensado para periodistas y creadores de contenido, con pagos vía dLocal Go. Todavía no está construido: esta pestaña es un lugar reservado, no un formulario funcional.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span data-i18n="footer.text">Este sitio no representa a ninguna lista ni candidatura. Su único objetivo es facilitar el acceso a datos públicos para que cada socio decida su voto.</span><br>
+  <span style="opacity:.7;" data-i18n="footer.note">MVP · datos placeholder · versión de prueba</span><br>
+  <!-- Link ESTÁTICO a fuentes.html (Versión 128). Los otros 2 links a esa página los arma
+       js/finanzas-render.js en runtime, así que un crawler que no ejecuta JS no la encontraba:
+       la página hecha para que la indexen era huérfana. Este <a> vive en el HTML servido. -->
+  <a href="fuentes.html" style="color:inherit;opacity:.7;" data-i18n="footer.fuentes">Todas las fuentes del sitio</a>
+</footer>
+
+<!-- MODAL DE CONTACTO -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-box">
+    <h2 data-i18n="modal.title">Contacto</h2>
+    <p style="color:var(--muted);font-size:13.5px;margin-top:0;" data-i18n="modal.sub">Dudas, sugerencias o datos para mejorar el sitio. Podés dejarlo anónimo.</p>
+    <form id="contactForm">
+      <label data-i18n="modal.name">Nombre (opcional)</label>
+      <input type="text" id="cfNombre">
+      <label data-i18n="modal.email">Email (opcional)</label>
+      <input type="email" id="cfEmail">
+      <label>Tipo</label>
+      <select id="cfTipo">
+        <option>Duda</option>
+        <option>Sugerencia</option>
+        <option>Dato / corrección</option>
+        <option>Otro</option>
+      </select>
+      <label data-i18n="modal.message">Mensaje</label>
+      <textarea id="cfMensaje" rows="4" required></textarea>
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" id="cfCancel" data-i18n="modal.cancel">Cancelar</button>
+        <button type="submit" class="btn-primary" data-i18n="modal.send">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<!-- ASSET_V (Versión 115): versión de los assets propios, para invalidar el cache del
+     navegador cuando se deploya una versión nueva. Sin esto, un visitante que ya entró antes
+     se puede quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo (pasó en
+     desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
+     render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
+     `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
+<script>window.ASSET_V = '141';</script>
+<script src="data/lang/langs.js?v=141"></script>
+<script src="js/i18n.js?v=141"></script>
+<script src="data/clubs.js?v=141"></script>
+<!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
+     calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
+     porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
+     cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
+     se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
+     que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
+<script src="data/club-index.js?v=141"></script>
+<!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
+     (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
+     (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
+     cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
+<script src="data/leagues.js?v=141"></script>
+<script src="data/club-leagues.js?v=141"></script>
+<script src="data/category-map.js?v=141"></script>
+<script src="data/site-labels.js?v=141"></script>
+<script src="data/currency-map.js?v=141"></script>
+<script src="data/sources-view.js?v=141"></script>
+<!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
+     que entraba eager, porque Boca era el club por default del sitio. Con el cold start
+     no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
+     entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
+     carga de alguien que todavía no eligió, o que eligió otro club. -->
+<script src="js/finanzas-calc.js?v=141"></script>
+<script src="js/finanzas-render.js?v=141"></script>
+<!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
+     <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
+     clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
+     sin bajar un solo data/<club>-data.js. -->
+<script src="js/selector.js?v=141"></script>
+<!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
+     "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
+     comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
+     clubes, y club contra el promedio de su liga. Ver su cabecera. -->
+<script src="js/comparar-clubes.js?v=141"></script>
+<!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
+     (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
+<script>
+  // Bug real (encontrado en producción): `window.CLUB_GENERIC_DATA` solo se crea DENTRO de cada
+  // `data/<club>-data.js` lazy-loaded (ver más abajo) — boca-data.js (el único que carga en el
+  // <head>) no lo toca. En la carga inicial de la página, antes de que el visitante cambie de
+  // club por primera vez, ningún script lo había creado todavía, así que la referencia SIN
+  // `window.` en `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` (más abajo) tiraba
+  // `ReferenceError: CLUB_GENERIC_DATA is not defined` (identificador global nunca declarado, a
+  // diferencia de `window.CLUB_GENERIC_DATA`, que da `undefined` sin explotar). Eso frenaba en seco
+  // TODO el resto del bloque INIT (JS sincrónico: un throw sin catch corta las statements
+  // siguientes del mismo <script>), dejando Boca con Ingresos/Gastos/Pases/Resultados vacíos hasta
+  // el primer cambio de club (que sí dispara la carga de un `data/*-data.js`, creando recién ahí el
+  // objeto). Fix: crearlo acá, antes de que corra nada más.
+  window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+
+  const FX_RATE = 1450; // ARS por USD, placeholder de referencia
+  let currentCurrency = 'USD';
+  let simplifyFormat = true; // toggle "Formato del club" / "Formato simplificado" (Versión 80: default pasó a simplificado, pedido explícito de Guido)
+
+  // ---------- MULTI-CLUB: motor genérico para clubes sin el detalle de Boca ----------
+  // Boca sigue usando computeYear/plRows/renderPLTable de arriba, sin tocar (ya verificado).
+  // River y Racing usan este motor más chico, que arma el mismo tipo de cálculo (EBITDA,
+  // resultado operativo, etc.) pero a partir de listas de líneas (revenueLines/expenseLines)
+  // en vez de campos fijos, porque cada club tiene una cantidad distinta de rubros reales.
+  // Versión 137: el sitio YA NO abre en un club por default. Si el visitante nunca
+  // eligió uno, `currentClub` es null y se muestra la portada (#coldHero): abrir
+  // siempre en Boca era la razón principal por la que nadie se enteraba de que el
+  // sitio es multi-club. Si ya eligió alguna vez, entra derecho a SU club, que es lo
+  // que guardó el selector en localStorage. El `'boca'` que estaba acá era el último
+  // literal de clubId estructural que quedaba en el código (to-do 20(g)).
+  // El club de la visita anterior, si hubo. `currentClub` arranca SIEMPRE en null: el
+  // sitio se dibuja en frío y recién al final del INIT se pide el club guardado, que
+  // entra por el mismo camino que un click en el selector (selectClub -> loadClubData
+  // -> refreshAllForClub). Así no hay dos caminos distintos para llegar a un club
+  // mostrado, que es como se desincronizan.
+  const clubGuardado = CLUB_SELECTOR.savedClub();
+  let currentClub = null;
+
+  // ---------- CARGA BAJO DEMANDA (LAZY LOADING) DE DATOS POR CLUB ----------
+  // Versión 137: ya no hay club default ni data file eager. Todo club se inyecta como <script> recién cuando el visitante lo elige en
+  // el selector jerárquico, así alguien que solo mira Boca no paga el peso de los demás. `clubDataLoaded`
+  // cachea qué ya se bajó, para no volver a pedir el archivo si el visitante va y vuelve entre
+  // clubes en la misma visita.
+  //
+  // CONVENCIÓN (Versión 112, reemplaza el mapa CLUB_DATA_SCRIPT_SRC que había que editar a mano en
+  // cada onboarding): el archivo de datos de CUALQUIER club es SIEMPRE `data/<clubId>-data.js` — se
+  // construye el path directo desde `clubId`, no hay ningún registro que mantener. Confirmado que
+  // los ~35 clubes cargados hasta ahora siguen esta convención sin excepción (ver
+  // `.claude/skills/club-or-year-onboarding/SKILL.md` para el recipe completo de onboarding, que ya
+  // asumía este nombre de archivo). Si alguna vez aparece un club real que necesite un nombre de
+  // archivo distinto, agregar una entrada a `CLUB_DATA_SCRIPT_OVERRIDE` (abajo) en vez de volver al
+  // mapa completo — no reintroducir la convención vieja "por las dudas".
+  const CLUB_DATA_SCRIPT_OVERRIDE = {};
+  // Versión 137: arranca VACÍO. Hasta acá tenía `{ boca: true }` porque boca-data.js
+  // entraba por <script src> en el <body>; ya no entra ninguno eager (ver el comentario
+  // en los <script src> de arriba).
+  const clubDataLoaded = {};
+  // Versión 130: dos llamadas SIMULTÁNEAS al mismo club devuelven la MISMA promesa, en vez de
+  // inyectar dos <script> del mismo archivo. `clubDataLoaded[clubId]` recién se marca en el
+  // `onload`, así que sin esto la segunda llamada no ve nada cargado todavía y arranca una carga
+  // paralela: el archivo se ejecuta dos veces y la segunda tira "Identifier
+  // 'velezRevenueLinesByYear' has already been declared", porque los `const` de un data file viven
+  // en el scope global. Los datos igual quedaban bien (gana el primero), pero la consola se llena
+  // de errores. No pasaba hasta ahora porque el sitio carga un club por vez; la comparación
+  // multi-club del selector jerárquico lo va a hacer todo el tiempo (5 sujetos en paralelo, o el
+  // promedio de una liga que incluye al club activo). Verificado con 3 llamadas simultáneas.
+  const clubDataPending = {};
+  function loadClubData(clubId){
+    if(clubDataLoaded[clubId] || !clubs[clubId]) return Promise.resolve();
+    if(clubDataPending[clubId]) return clubDataPending[clubId];
+    // `?v=` (Versión 115): mismo ASSET_V que los <script src> estáticos del final del <body>.
+    // Sin esto, un visitante con un data/<club>-data.js viejo cacheado seguiría viendo números
+    // viejos de ese club después de un deploy que los corrigió.
+    const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubId + '-data.js');
+    const src = base + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    clubDataPending[clubId] = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => { clubDataLoaded[clubId] = true; delete clubDataPending[clubId]; resolve(); };
+      // Se borra también al fallar, para que un reintento (el visitante que elige otra vez el
+      // mismo club después de un error de red) vuelva a intentarlo de verdad.
+      script.onerror = () => { delete clubDataPending[clubId]; reject(new Error('No se pudo cargar ' + src)); };
+      document.head.appendChild(script);
+    });
+    return clubDataPending[clubId];
+  }
+
+  function refreshFinanzas(){
+    const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
+    isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
+    renderDataQualityBannerForCurrentSelection();
+    renderFuentesCard();
+  }
+
+  // Cambiar de club en el header reconstruye los selectores y vuelve a dibujar TODAS las
+  // secciones (no solo la que está a la vista), para que al cambiar de pestaña ya esté todo
+  // al día con el club elegido, en vez de quedar desactualizado hasta el próximo evento.
+  function refreshAllForClub(){
+    populateFinanzasSelectors(currentClub);
+    // Los cards "Supuestos", "Presupuesto Financiero" y "Presupuesto de Inversiones" YA NO se
+    // esconden por club (Versión 35, antes tenían la clase `.bocaPresupuestoOficialCard` y se
+    // escondían acá con un querySelectorAll). Ahora son genéricos y SIEMPRE visibles, para
+    // cualquier club/ejercicio: cada uno decide su propio contenido en renderSupuestosCard()/
+    // renderPresupuestoFinancieroCard()/renderPresupuestoInversionesCard() (llamadas desde
+    // updateFinanzasByAnio(Generic)/updateFinanzasByGestion(Generic) más abajo), mostrando el
+    // contenido real si existe o un mensaje explícito de "no hay" si no, es la regla que pidió
+    // Guido, no algo condicional por club. La clase `.bocaPresupuestoOficialCard` ya no tiene
+    // ningún elemento en el HTML.
+    // Toggle de moneda (Versión 32: antes solo Boca; Versión 103: nativa/USD para CUALQUIER club,
+    // ver populateCurrencyToggle() y el comentario de cabecera de data/currency-map.js).
+    populateCurrencyToggle(currentClub);
+    // "Formato del club" / "Formato simplificado" (`simplifyToggleWrap`): SIEMPRE visible para
+    // cualquier club (Versión 103 — antes estaba atado al mismo gate `isArgentineClub` que la
+    // moneda, una conflación accidental: este toggle no depende de la moneda ni del país, depende
+    // de si el club tiene `normalizedCategory` en sus líneas, y TODOS los clubes lo tienen desde
+    // que Boca se migró al motor genérico en la Versión 102).
+    refreshFinanzas();
+    populatePasesSelectors(currentClub);
+    applyPasesFilters();
+    populateResultadosSelector(currentClub);
+    renderResultados();
+    renderTitulosTable();
+    populateCompararSelectors(currentClub);
+    renderComparar();
+    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club
+    // (Versión 125), no en cada cambio de ejercicio como la ficha de Finanzas.
+    renderFuentesClubCard();
+    renderInicioStats();
+    renderInicioCharts();
+  }
+
+  // ---------- SELECTOR JERÁRQUICO DE CLUB (Versión 137) ----------
+  // Acá vivían `populateClubSelect()` (que generaba una <option> por club, alfabético
+  // A→Z) y el listener de `change` de ese <select>. Los reemplaza `js/selector.js`: el
+  // panel Deporte › Región › País › Liga › Equipo con búsqueda encima. La regla de la
+  // Versión 96 ("el dropdown va siempre alfabético A→Z") quedó obsoleta con el dropdown
+  // (ver CONVENCIONES.md): el orden alfabético sigue existiendo, pero ahora DENTRO de
+  // cada liga/país, que es el nivel donde comparar dos nombres significa algo.
+  //
+  // Este archivo le pasa 2 funciones y no sabe nada más de él; el selector no sabe nada
+  // de cómo se renderiza el sitio. Cambiar de club sigue siendo exactamente lo que era:
+  // cargar su data file, actualizar `currentClub`, repintar todo, y correr la
+  // verificación de tie-outs de ese club recién cargado.
+  function selectClub(newClub){
+    const previousClub = currentClub;
+    // null = volver a la portada (el "Ver la portada" del panel). No se descarga ni
+    // se descarta ningún dato: el archivo del club que estaba cargado queda en
+    // memoria, así que volver a elegirlo es instantáneo.
+    if(newClub === null){
+      currentClub = null;
+      CLUB_COMPARE.clear();
+      applyClubMode();
+      return Promise.resolve();
+    }
+    return loadClubData(newClub).then(() => {
+      currentClub = newClub;
+      applyClubMode();
+      refreshAllForClub();
+      verifyTieOuts(newClub);
+      CLUB_COMPARE.onActiveChanged();
+    }).catch(err => {
+      // NO un alert() (Versión 137). Un alert nativo CONGELA la página entera: timers,
+      // onload de scripts, todo. Si el club que falla es el guardado en localStorage, el
+      // sitio queda congelado en cada visita y ni siquiera se puede elegir otro club.
+      // Pasó de verdad al probar el cold start. Ahora el error se cuenta en la consola y
+      // se muestra un aviso adentro de la portada, que sigue siendo usable.
+      console.error('[club] no se pudo cargar', newClub, err);
+      currentClub = previousClub;
+      applyClubMode();
+      const aviso = document.getElementById('clubLoadError');
+      if(aviso){
+        aviso.textContent = 'No se pudieron cargar los datos de ' + ((clubs[newClub] || {}).displayName || newClub) + '. Probá de nuevo en un momento.';
+        aviso.hidden = false;
+      }
+    });
+  }
+
+  // applyClubMode(): la única función que decide entre "portada" y "club elegido".
+  // Con `currentClub` en null esconde el nav y las secciones y muestra la portada:
+  // no hay nada que navegar hasta que haya un club, y una pestaña que lleva a una
+  // vista vacía es peor que una pestaña que no está.
+  function applyClubMode(){
+    const cold = !currentClub;
+    document.getElementById('coldHero').hidden = !cold;
+    document.getElementById('mainNav').style.display = cold ? 'none' : '';
+    document.querySelectorAll('main > section').forEach(sec => {
+      sec.style.display = cold ? 'none' : '';
+    });
+    CLUB_SELECTOR.renderButton();
+    if(window.CLUB_COMPARE) CLUB_COMPARE.draw();
+  }
+
+  CLUB_SELECTOR.init({
+    getClub: () => currentClub,
+    pickClub: selectClub,
+  });
+
+  // La comparación entre clubes (js/comparar-clubes.js). El ejercicio del club activo
+  // sale del MISMO `<select>` de Año que usa Finanzas, no de un estado propio: si cada
+  // vista se guardara su año, el chip de la bandeja y la tabla de Finanzas podrían
+  // mostrar ejercicios distintos del mismo club al mismo tiempo.
+  CLUB_COMPARE.init({
+    getClub: () => currentClub,
+    getYear: () => {
+      const v = parseInt(document.getElementById('anioSelect').value, 10);
+      return isNaN(v) ? null : v;
+    },
+    setYear: (y) => {
+      document.getElementById('anioSelect').value = String(y);
+      refreshFinanzas();
+    },
+    openPanel: (forCompare) => CLUB_SELECTOR.open(forCompare),
+    closePanel: () => CLUB_SELECTOR.close(),
+  });
+  applyClubMode();
+
+  document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
+  document.getElementById('anioSelect').addEventListener('change', () => {
+    refreshFinanzas();
+    // El ejercicio del club activo es también el del primer sujeto de la comparación:
+    // cambiarlo puede dejar un rival duplicado (el mismo club en el mismo año), que es
+    // el 4to de los cuatro caminos al duplicado. `onActiveChanged()` lo resuelve.
+    CLUB_COMPARE.onActiveChanged();
+  });
+  document.querySelectorAll('#viewToggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#viewToggle button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const isGestion = btn.dataset.view === 'gestion';
+      document.getElementById('gestionSelectWrap').style.display = isGestion ? 'inline' : 'none';
+      document.getElementById('anioSelectWrap').style.display = isGestion ? 'none' : 'inline';
+      refreshFinanzas();
+    });
+  });
+
+  // Verificación automática: para cada club-ejercicio que tiene un total oficial conocido,
+  // chequea que la suma de las líneas cargadas coincida. Corre sola al abrir el sitio y avisa
+  // por consola si algo no cierra, para no depender de acordarse de revisarlo a mano.
+  // onlyClub (opcional): con lazy-loading, los datos de River/Racing pueden no estar cargados
+  // todavía cuando esta función corre (ver INIT, más abajo, que solo llama a verifyTieOuts() sin
+  // argumento apenas abre la página, con Boca como único club en memoria). Los bloques de
+  // racing/river están gateados por `typeof ... !== 'undefined'` para no tirar ReferenceError si
+  // ese data/*.js todavía no se bajó, y loadClubData() (ver más arriba) vuelve a llamar a esta
+  // misma función con el clubId recién cargado, para no perder la verificación, solo diferirla al
+  // momento en que el dato efectivamente llega.
+  function verifyTieOuts(onlyClub){
+    const checks = [];
+    // Versión 101 (refactor de escalabilidad, a pedido de Guido): hasta acá, cada club del motor
+    // genérico tenía su propio bloque copy-pasteado (un `if(typeof <club>FiscalYearMeta...)` +
+    // checks a mano o un mini-mapa `officialPat` + forEach), ~250 líneas en total y creciendo con
+    // cada club/ejercicio nuevo. Ahora cada club guarda sus propios officialTotalRevenue/
+    // officialTotalExpenses/officialPAT DENTRO de su propio `fiscalYearMeta[year]` (en su
+    // data/<club>-data.js, al lado de donde ya vivían los primeros dos campos) — agregar un club o
+    // un ejercicio nuevo YA NO requiere tocar esta función, solo agregar esos 3 campos al año
+    // correspondiente en el archivo del club. Este loop único reemplaza los ~11 bloques por club que
+    // había antes; itera todo lo que haya en `window.CLUB_GENERIC_DATA` (Versión 102: Boca también
+    // está ahí, sus 3 checks de siempre — Revenue 2027/2025 y PAT 2025 — salen de este mismo loop
+    // ahora, ver bocaFiscalYearMeta en data/boca-data.js).
+    // officialPAT se omite (sin 3er check) en años que son PRESUPUESTO puro sin balance auditado
+    // (ej. Racing 2019/2026/2027): no hay un "Superávit/Déficit del ejercicio" real impreso contra
+    // qué comparar. Mismo criterio de siempre, ahora expresado como "el campo no está" en vez de
+    // "el año no aparece en la lista de este bloque".
+    Object.keys(window.CLUB_GENERIC_DATA || {}).forEach(clubId => {
+      const meta = window.CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
+      if(!meta) return;
+      Object.keys(meta).map(Number).forEach(year => {
+        const y = meta[year];
+        if(y.officialTotalRevenue == null && y.officialTotalExpenses == null && y.officialPAT == null) return;
+        const computed = computeYearGeneric(clubId, year);
+        if(y.officialTotalRevenue != null){
+          checks.push({ club:clubId, year, label:'Revenue', computed: computed.revenue, official: y.officialTotalRevenue });
+        }
+        if(y.officialTotalExpenses != null){
+          checks.push({ club:clubId, year, label:'Expenses (incl. no-efectivo)', computed: Math.abs(computed.expenses + computed.nonCash), official: Math.abs(y.officialTotalExpenses) });
+        }
+        if(y.officialPAT != null){
+          checks.push({ club:clubId, year, label:'Resultado neto (PAT)', computed: computed.pat, official: y.officialPAT });
+        }
+      });
+    });
+    checks.filter(c => c.official !== null && (!onlyClub || c.club === onlyClub)).forEach(c => {
+      const delta = +(c.computed - c.official).toFixed(3);
+      const ok = Math.abs(delta) < 0.01;
+      console[ok ? 'log' : 'error'](`[verificación] ${c.club} ${c.year} ${c.label}: calculado ${c.computed} vs. oficial ${c.official} -> ${ok ? 'OK, cierra' : 'NO CIERRA, diferencia de ' + delta}`);
+    });
+  }
+
+  // ---------- MULTI-CLUB: acceso por club para Pases/Resultados/Comparar/Inicio ----------
+  // Todos los clubes (Boca incluida desde la Versión 102) viven en el registro CLUB_GENERIC_DATA (ver
+  // data/instituto-data.js para el comentario original de este registro) — un club nuevo del motor
+  // genérico no necesita tocar estas 3 funciones. River/Racing/etc. se cargan bajo demanda (ver
+  // loadClubData más abajo), pero eso no afecta a estas funciones: solo se llaman después de que
+  // loadClubData(clubId) ya resolvió (ver `selectClub()` más abajo), momento en el que
+  // CLUB_GENERIC_DATA[clubId] ya existe.
+  // Versión 131: los 3 devuelven null si no hay club elegido o si sus datos todavía no se
+  // cargaron. El comentario de arriba decía que "solo se llaman después de que loadClubData()
+  // resolvió", y era cierto mientras SIEMPRE hubiera un club activo. Deja de serlo con el cold
+  // start del selector jerárquico, donde el sitio abre sin club hasta que el visitante elige:
+  // ahí `currentClub` es null y estas tres tiraban TypeError. Ver `clubCargado()`, más abajo.
+  function pasesDataForClub(clubId){
+    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].pasesData : null;
+  }
+  function resultadosDataForClub(clubId){
+    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].resultadosData : null;
+  }
+  function titulosDataForClub(clubId){
+    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].titulosData : null;
+  }
+
+  // clubCargado(clubId): el único lugar que contesta "¿hay datos de este club acá y ahora?".
+  // Se usa para distinguir los dos estados que antes no existían: "todavía no se eligió club"
+  // (cold start) y "se eligió pero su archivo todavía no bajó".
+  function clubCargado(clubId){
+    return !!(clubId && (window.CLUB_GENERIC_DATA || {})[clubId]);
+  }
+  window.clubCargado = clubCargado;
+
+  // ---------- NAVEGACIÓN ----------
+  const navButtons = document.querySelectorAll('#mainNav button');
+  const sections = document.querySelectorAll('main > section');
+  navButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      navButtons.forEach(b => b.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.section).classList.add('active');
+    });
+  });
+
+  // ---------- CURRENCY TOGGLE (universal, header: afecta Inicio Y Finanzas) ----------
+  // Antes vivía solo dentro de Finanzas (#currencyToggleFin, adentro de sus controles). Guido pidió
+  // que sea universal, al lado del selector de club, porque Inicio también necesita mostrar la
+  // moneda nativa. "Comparar Gestiones" sigue ignorando este toggle a propósito (ver
+  // displayFinancialsForClub en js/finanzas-calc.js, muestra USD siempre, es una vista pensada para
+  // comparar clubes/gestiones entre sí, no se presta a que quede a mitad en una moneda de un lado y
+  // USD del otro).
+  //
+  // Versión 103 (a pedido de Guido, "full native currency toggle for every club", ver comentario de
+  // cabecera de data/currency-map.js para el modelo completo): los 2 <button> ya NO son HTML
+  // estático (antes literalmente "USD"/"ARS" fijos) — se regeneran por club en
+  // `populateCurrencyToggle()` (llamada desde `refreshAllForClub()`), mismo criterio que
+  // `populateClubSelect()`. Como los botones se regeneran, el listener de click se delega en el
+  // contenedor fijo `#currencyToggleGlobal` (que sí existe siempre en el HTML) en vez de
+  // engancharse a cada <button> individual (que se destruyen y recrean).
+  document.getElementById('currencyToggleGlobal').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-currency]');
+    if(!btn) return;
+    document.querySelectorAll('#currencyToggleGlobal button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCurrency = btn.dataset.currency;
+    refreshFinanzas();
+    renderInicioStats();
+    renderInicioCharts();
+  });
+
+  // Arma el toggle [moneda nativa del club / USD] para `clubId`. Un club cuyo `reportingCurrency`
+  // (data/clubs.js) YA ES 'USD' (ej. Ecuador, oficialmente dolarizado) no tiene nada que togglear:
+  // el contenedor entero se esconde, mismo criterio que ya existía para clubes sin cotización propia
+  // antes de esta versión. `currentCurrency` se resetea a USD al cambiar de club SOLO si la moneda
+  // elegida no tiene sentido para el club nuevo (ej. veníamos de ver ARS y el club nuevo es en BRL);
+  // entre 2 clubes de la MISMA moneda nativa (ej. dos clubes argentinos), la elección se conserva.
+  function populateCurrencyToggle(clubId){
+    const wrap = document.getElementById('currencyToggleGlobal');
+    const native = (clubs[clubId] || {}).reportingCurrency;
+    // Sin club elegido (portada) no hay moneda nativa que ofrecer, y el toggle se
+    // pintaba con el literal "undefined" al lado de USD. Bug real, visto en la
+    // primera prueba del cold start en el navegador.
+    if(!native || native === 'USD'){
+      wrap.style.display = 'none';
+      currentCurrency = 'USD';
+      return;
+    }
+    wrap.style.display = '';
+    if(currentCurrency !== 'USD' && currentCurrency !== native) currentCurrency = 'USD';
+    wrap.innerHTML = `<button data-currency="USD" class="${currentCurrency === 'USD' ? 'active' : ''}">USD</button>` +
+      `<button data-currency="${native}" class="${currentCurrency === native ? 'active' : ''}">${native}</button>`;
+  }
+
+  // ---------- TOGGLE "FORMATO DEL CLUB" / "FORMATO SIMPLIFICADO" (Estado de resultados, solo Boca) ----------
+  document.querySelectorAll('#simplifyToggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#simplifyToggle button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      simplifyFormat = btn.dataset.simplify === '1';
+      refreshFinanzas();
+    });
+  });
+
+  // ---------- CONTACTO ----------
+  document.getElementById('contactBtn').addEventListener('click', () => document.getElementById('contactModal').classList.add('open'));
+  document.getElementById('cfCancel').addEventListener('click', () => document.getElementById('contactModal').classList.remove('open'));
+  document.getElementById('contactModal').addEventListener('click', (e) => { if(e.target.id === 'contactModal') document.getElementById('contactModal').classList.remove('open'); });
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('cfNombre').value || 'Anónimo';
+    const email = document.getElementById('cfEmail').value;
+    const tipo = document.getElementById('cfTipo').value;
+    const mensaje = document.getElementById('cfMensaje').value;
+    const subject = encodeURIComponent(`[El deporte en Números] ${tipo} de ${nombre}`);
+    const body = encodeURIComponent(`${mensaje}\n\nEmail de contacto: ${email || 'no provisto'}`);
+    window.location.href = `mailto:contacto@bocaennumeros.example?subject=${subject}&body=${body}`;
+    document.getElementById('contactModal').classList.remove('open');
+    document.getElementById('contactForm').reset();
+  });
+
+  // ---------- INIT ----------
+  renderInicioStats();
+  renderInicioCharts();
+  // REGLA (Versión 56): antes de esto, `populateFinanzasSelectors()` solo se llamaba al CAMBIAR de
+  // club (`refreshAllForClub()`), nunca en la carga inicial, así que el `<select id="anioSelect">"
+  // se quedaba con las opciones ESTÁTICAS del HTML (arriba en el <body>) hasta el primer cambio de
+  // club. Bug real encontrado al implementar `anioDropdownSuffix()`: el HTML estático todavía tenía
+  // los sufijos viejos ("presupuestado", "esperando datos"), así que Boca (el club default) los
+  // seguía mostrando en la carga inicial, aunque el código de `populateFinanzasSelectors` ya
+  // generaba los nuevos ("Presupuesto"/"Placeholder") correctamente para cualquier club que no
+  // fuera el default. Se llama acá también para que el dropdown sea SIEMPRE el generado por JS,
+  // no dependa de que el visitante cambie de club para corregirse solo.
+  populateFinanzasSelectors(currentClub);
+  populateCurrencyToggle(currentClub);
+  refreshFinanzas();
+  verifyTieOuts();
+  checkFxSanity();
+  applyPasesFilters();
+  renderResultados();
+  renderTitulosTable();
+  renderComparar();
+  renderFuentesClubCard();
+
+  // Y recién acá entra el club de la visita anterior, por el mismo camino que un click en
+  // el selector (selectClub -> loadClubData -> applyClubMode -> refreshAllForClub). Si no
+  // hay ninguno, el sitio se queda en la portada, que es el estado del que arranca todo
+  // esto: `currentClub` nace en null y ninguna de las llamadas de arriba lo asume cargado.
+  if(clubGuardado) selectClub(clubGuardado);
+
+  // ==========================================================================
+  // SELECTOR DE IDIOMA (Versión 115)
+  //
+  // El menú se dibuja leyendo `window.LANGS` (data/lang/langs.js), así que sumar
+  // un idioma nuevo NO toca este código ni el HTML: alcanza con la entrada en
+  // LANGS y su `data/lang/<code>.js`. Mismo criterio que `populateClubSelect()`
+  // (Versión 101) y que `loadClubData()` (Versión 112): convención, no un mapa a
+  // mano que alguien se tiene que acordar de actualizar.
+  // ==========================================================================
+  function renderLangMenu(){
+    const menu = document.getElementById('langMenu');
+    menu.innerHTML = Object.keys(window.LANGS).map(code => {
+      const l = window.LANGS[code];
+      const active = (code === I18N.current) ? ' class="active"' : '';
+      return `<button type="button" role="menuitem" data-lang="${code}"${active}>${l.name}</button>`;
+    }).join('');
+    document.getElementById('langBtnLabel').textContent = I18N.current.toUpperCase();
+  }
+
+  function setLangMenuOpen(open){
+    const menu = document.getElementById('langMenu');
+    const btn  = document.getElementById('langBtn');
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  document.getElementById('langBtn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    setLangMenuOpen(document.getElementById('langMenu').hidden);
+  });
+
+  document.getElementById('langMenu').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-lang]');
+    if (!b) return;
+    I18N.setLang(b.dataset.lang);
+    setLangMenuOpen(false);
+  });
+
+  // Cerrar el menú al hacer click afuera o con Escape (si no, queda abierto tapando
+  // el contenido, que es justo lo que pasa con un dropdown hecho a mano sin esto).
+  document.addEventListener('click', () => setLangMenuOpen(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setLangMenuOpen(false); });
+
+  // Todo lo que se genera en JS hay que volver a dibujarlo cuando cambia el idioma:
+  // `I18N.apply()` solo alcanza para lo que está escrito en el HTML con data-i18n.
+  // Si mañana se agrega una vista nueva que genere texto propio, sumarla ACÁ.
+  I18N.onChange(() => {
+    renderLangMenu();
+    populateFinanzasSelectors(currentClub);
+    populateCurrencyToggle(currentClub);
+    refreshFinanzas();
+    renderInicioStats();
+    renderInicioCharts();
+    applyPasesFilters();
+    renderResultados();
+    renderTitulosTable();
+    renderComparar();
+    // La pestaña Fuentes arma su contenido en JS (Versión 126): sin esto, el título y las
+    // etiquetas quedan en el idioma que hubiera al cargar la página. `refreshFinanzas()`, acá
+    // arriba, ya redibuja la ficha de Fuentes de Finanzas.
+    renderFuentesClubCard();
+  });
+
+  I18N.init().then(renderLangMenu);
+
+  // ==========================================================================
+  // auditAll() — AUDITORÍA COMPLETA, DE TODOS LOS CLUBES (Versión 118)
+  //
+  // EL PROBLEMA QUE RESUELVE: `verifyTieOuts()` y `checkFxSanity()` solo pueden
+  // revisar los clubes que están CARGADOS en memoria, y los clubes se cargan por
+  // demanda (`loadClubData()`, Versión 112). Como el único `data/<club>-data.js`
+  // que entra por `<script src>` es el de Boca, una carga normal de la página
+  // corría 6 de los 222 checks que existen. Los otros 216 solo corrían si un
+  // visitante elegía justo ese club en el selector. O sea: un error de datos en
+  // el club N° 37 era invisible hasta que alguien lo miraba a mano. A 41 clubes
+  // ya era poco probable que alguien los mirara todos; al objetivo de ~1000, es
+  // imposible.
+  //
+  // POR QUÉ NO SE ARREGLA CARGANDO TODO SIEMPRE: la carga por demanda es
+  // correcta y hay que conservarla. Es lo que hace que el visitante que solo
+  // quiere ver Boca no baje 41 archivos de datos.
+  //
+  // POR QUÉ LLAMA AL MOTOR EN VEZ DE RECALCULAR: al escribir esto se probó
+  // primero un verificador aparte, en Node, que reimplementaba el cálculo del
+  // PAT. Tiró 12 falsos positivos, porque el motor real suma cosas que esa
+  // fórmula simplificada no tenía (nonCash, profitOnPlayerSales, assetSales,
+  // tax). REGLA: cualquier verificación total tiene que pasar por
+  // `computeYearGeneric()`, nunca reimplementar la cascada.
+  //
+  // CÓMO SE USA:
+  //   - `financeofsports.com/?audit=1` — carga los 41 clubes y audita todo.
+  //   - `auditAll()` desde la consola del navegador, en cualquier momento.
+  // Devuelve una Promise con el resumen, además de imprimirlo.
+  // ==========================================================================
+  async function auditAll(){
+    const ids = Object.keys(clubs);
+    const failedToLoad = [];
+    console.log(`[auditoría] cargando los ${ids.length} clubes...`);
+    for(const id of ids){
+      try { await loadClubData(id); }
+      catch(e){ failedToLoad.push(id); console.error(`[auditoría] no se pudo cargar ${id}:`, e.message); }
+    }
+
+    // Se interceptan console.log/error para CONTAR, pero se deja pasar todo a la
+    // consola igual: el detalle línea por línea sigue siendo útil para encontrar
+    // cuál check falló, el resumen es un agregado arriba de eso, no un reemplazo.
+    let ok = 0; const failures = [], warnings = [];
+    const realLog = console.log, realError = console.error, realWarn = console.warn;
+    console.log = (...a) => { const t = a.join(' '); if(t.includes('OK, cierra')) ok++; realLog(...a); };
+    console.error = (...a) => { const t = a.join(' '); if(t.includes('[verificación]')) failures.push(t); realError(...a); };
+    console.warn = (...a) => { const t = a.join(' '); if(t.includes('fx')) warnings.push(t); realWarn(...a); };
+    try { verifyTieOuts(); checkFxSanity(); }
+    finally { console.log = realLog; console.error = realError; console.warn = realWarn; }
+
+    const summary = {
+      clubes: ids.length,
+      clubesQueNoCargaron: failedToLoad,
+      checksOK: ok,
+      checksQueNoCierran: failures.length,
+      warningsDeTipoDeCambio: warnings.length,
+      detalle: { noCierran: failures, fx: warnings },
+    };
+    const limpio = failures.length === 0 && warnings.length === 0 && failedToLoad.length === 0;
+    console[limpio ? 'log' : 'error'](
+      `[auditoría] ${ids.length} clubes · ${ok} checks cierran · ${failures.length} no cierran · ` +
+      `${warnings.length} warnings de fx · ${failedToLoad.length} clubes que no cargaron` +
+      (limpio ? ' -> TODO OK' : ' -> REVISAR')
+    );
+    return summary;
+  }
+  window.auditAll = auditAll;
+
+  // `?audit=1` dispara la auditoría completa sola, para poder pegar el link en
+  // una sesión o revisarlo después de un deploy sin tener que abrir la consola.
+  if(new URLSearchParams(location.search).get('audit') === '1'){
+    auditAll();
+  }
+</script>
+
+<!-- ======================== PROTO: comportamiento nuevo ========================
+     Dos cosas, y nada más: mudar el panel del selector adentro de la portada
+     mientras no haya club elegido, y poder minimizarlo.
+
+     NO toca js/selector.js ni el <script> principal de index.html a propósito: la
+     idea es ver si el layout convence ANTES de meterle mano al motor. Si se aprueba,
+     la implementación real no va a ser este script — va a ser mover el markup y que
+     applyClubMode() haga la mudanza, con los textos nuevos pasando por t() como pide
+     CONVENCIONES.md (acá están en castellano a mano, el prototipo no se traduce).
+-->
+<script>
+(function(){
+  var hero = document.getElementById('coldHero');
+  var panel = document.getElementById('clubPanel');
+  var backdrop = document.getElementById('clubBackdrop');
+  var slot = document.getElementById('heroSelSlot');
+  var toggle = document.getElementById('hsToggle');
+  var hint = document.getElementById('hsHint');
+  var LS_MIN = 'fos_proto_selector_min';
+
+  // El panel vive en el <body> como modal. Con la portada a la vista lo mudamos
+  // adentro; cuando hay club elegido vuelve, y sigue abriéndose desde el header
+  // exactamente como hoy. Un solo nodo, dos lugares: duplicarlo sería tener dos
+  // árboles que se pueden desincronizar.
+  function sync(){
+    var cold = !hero.hidden;
+    document.body.classList.toggle('proto-cold', cold);
+    if(cold && panel.parentNode !== slot){
+      slot.appendChild(panel);
+      panel.classList.add('embedded');
+      backdrop.classList.remove('open');
+    } else if(!cold && panel.classList.contains('embedded')){
+      panel.classList.remove('embedded', 'open');
+      document.body.appendChild(panel);
+    }
+  }
+  // applyClubMode() (index.html) es quien muestra y esconde la portada. En vez de
+  // parchearlo, el prototipo escucha el atributo que ya cambia.
+  new MutationObserver(sync).observe(hero, { attributes:true, attributeFilter:['hidden'] });
+
+  function setMin(min){
+    hero.classList.toggle('min', min);
+    toggle.textContent = min ? 'Abrir el selector' : 'Minimizar';
+    toggle.setAttribute('aria-expanded', String(!min));
+    hint.textContent = min
+      ? 'Buscalo por nombre, o abrí el selector para explorar por liga y país.'
+      : 'Escribí el nombre, o bajá por deporte, región, país y liga.';
+    try { localStorage.setItem(LS_MIN, min ? '1' : '0'); } catch(e){}
+  }
+  toggle.addEventListener('click', function(){
+    var min = !hero.classList.contains('min');
+    setMin(min);
+    if(!min){ var q = document.getElementById('selQ'); if(q) q.focus(); }
+  });
+  // Buscar desde el estado minimizado reabre el selector: el resultado de la
+  // búsqueda se dibuja adentro del panel, así que esconderlo dejaría la búsqueda
+  // sin lugar donde pasar nada.
+  document.getElementById('heroGo').addEventListener('click', function(){ setMin(false); });
+  document.getElementById('heroQ').addEventListener('keydown', function(e){ if(e.key === 'Enter') setMin(false); });
+
+  var guardado = null;
+  try { guardado = localStorage.getItem(LS_MIN); } catch(e){}
+  setMin(guardado === '1');
+  sync();
+})();
+</script>
+
+</body>
+</html>

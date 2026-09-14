@@ -48,6 +48,20 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+28. DECIDIR SI LA PORTADA NUEVA VA AL SITIO. Está prototipada y andando en
+    `prototipo-inicio-selector.html` (abrilo al lado de `index.html`, son la misma pantalla en
+    frío): el selector jerárquico desplegado EN la portada en vez de atrás de un click, con copy
+    antes y después, minimizable, y sin el botón de club del header mientras no haya club elegido.
+    Pedido de Guido del 2026-09-14. El prototipo corre con los 41 clubes y el motor reales, así que
+    lo único que falta decidir es si convence.
+    SI SE APRUEBA, la implementación real NO es copiar el `<script>` del prototipo: el markup del
+    panel se mueve adentro de `#coldHero` y la mudanza la hace `applyClubMode()` (que ya es la
+    única función que decide portada vs. club), sin `MutationObserver`; los 4 textos nuevos pasan
+    por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`; y hay que subir `ASSET_V`
+    en los dos lugares. Preguntas que el prototipo deja abiertas y conviene mirar en pantalla:
+    si el panel embebido (520px) deja la portada demasiado alta en un teléfono, y si minimizado
+    tiene que recordar el estado entre visitas o abrir siempre expandido.
+
 25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
     misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·
     0,0 M USD" en el cuerpo de letra más grande de la página, y unos centímetros más abajo el

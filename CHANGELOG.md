@@ -979,3 +979,24 @@ documentados, listos para una sesión de onboarding futura.)*
 - El punto 9 quedó anotado con su medición: ya no se reproduce (ningún elemento de `#finanzas`
   excede los 375px), pero se deja abierto hasta que Guido lo mire.
 - Nada de esto mueve un número: `auditAll()` sigue en 41 clubes, 222 checks, 0 que no cierran.
+
+## Versión 143: prototipo de un Inicio en frío donde el selector ES la portada
+
+- NUEVO `prototipo-inicio-selector.html` (no se deploya, no lo linkea ninguna página): la primera
+  visita, en vez del card con buscador chico, abre con el **selector jerárquico desplegado en la
+  portada**, con copy antes (qué es el sitio) y después (qué pasa cuando elegís + los 8 clubes de
+  acceso rápido + el conteo). Pedido de Guido.
+- El selector se puede **minimizar**: colapsa a una línea con el buscador de hoy y recuerda el
+  estado en `localStorage` (`fos_proto_selector_min`). Buscar desde ahí lo vuelve a abrir, porque
+  los resultados se dibujan adentro del panel.
+- El panel NO se duplica: es el mismo `#clubPanel`, que el prototipo MUDA adentro de la portada
+  mientras no hay club elegido y devuelve al `<body>` (modal de siempre) apenas hay uno. La mudanza
+  la dispara un `MutationObserver` sobre el `hidden` de `#coldHero`, así el prototipo no parchea
+  `applyClubMode()` ni `js/selector.js`.
+- En frío se esconde el botón de club del header: repetía la misma acción a 2 cm del selector, y
+  "Cambiar" sin club elegido no significa nada. Vuelve con el club.
+- NUEVO `tools/build-prototipo-inicio.js`: genera el prototipo desde `index.html` (falla si un
+  ancla no está, en vez de escribir un archivo a medias). El prototipo anterior era un mock con
+  taxonomía embebida y números inventados; este corre con los 41 clubes y el motor reales, porque
+  lo único nuevo a decidir es el layout.
+- Nada del sitio cambió: `index.html` intacto, `node tools/audit.js` igual (0 P0, 0 P1).
