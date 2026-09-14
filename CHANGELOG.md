@@ -742,3 +742,11 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - `clubCargado(clubId)` nueva en `index.html`: el único lugar que contesta "¿hay datos de este club acá y ahora?", que distingue los dos estados nuevos ("todavía no se eligió" y "se eligió pero su archivo no bajó").
 - `computeYearGeneric()` devuelve `null` sin club, y sus 2 orquestadores cortan ahí en vez de pintar ceros: un cero se lee como un dato, y este sitio no muestra datos que no tiene.
 - Verificado en las dos direcciones: los 15 puntos de entrada con `currentClub = null` sin una sola excepción, y el camino normal intacto (`auditAll()` 222 checks, 0 mismatches, 0 warnings, cambio de club a Racing y Finanzas pintando).
+
+## Versión 132: en qué liga jugó cada club, cada ejercicio
+
+- `data/club-leagues.js` nuevo, a pedido de Guido: la liga de cada club en cada ejercicio, en UN archivo que se actualiza una vez por temporada, en vez de un campo `league` repartido en los 41 `data/<club>-data.js` como proponía el prompt del selector.
+- Nace con las 85 filas en `null`, y `null` significa "nadie lo verificó todavía". No se rellena de memoria ni por deducción: se mira la temporada en la fuente y recién ahí se escribe. El archivo ES la lista de pendientes.
+- `leagueAt(clubId, year)` devuelve null cuando no se verificó, a propósito, en vez de caer a "la liga de hoy": un ejercicio de hace diez años puede ser de otra categoría, y contestar con la actual sería inventar justo el dato que este archivo existe para no inventar.
+- `tools/audit.js` suma `liga-sin-fila` (P2, un ejercicio real que ni siquiera tiene su fila) y `liga-sin-verificar` (P3, cuántas filas siguen en null). Hoy: 0 y 85 de 85.
+- Pregunta abierta que bloquea las 55 filas argentinas: un ejercicio que cierra el 30/6 (o el 31/8 de Racing hasta 2021) cruza dos torneos del calendario argentino. Hay que fijar el criterio una vez. España, México y los de año calendario (Brasil, Japón, Colombia) no tienen esa ambigüedad.

@@ -88,7 +88,7 @@ function loadEngine() {
 
   const files = [
     'data/clubs.js', 'data/category-map.js', 'data/currency-map.js',
-    'data/sources-view.js', 'data/site-labels.js',
+    'data/sources-view.js', 'data/club-leagues.js', 'data/site-labels.js',
     ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f),
     'js/finanzas-calc.js',
   ];
@@ -108,6 +108,7 @@ function loadEngine() {
     EXPENSE_BUCKETS: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS,
     clubs, sources, gestionesByClub, CURRENCY_META,
     fxMetaFor, FX_SOURCE, FX_CLOSE,
+    CLUB_LEAGUE_BY_YEAR, clubLeagueCoverage,
     generic: window.CLUB_GENERIC_DATA || {},
   })`, ctx, { filename: 'leer-globals' });
 }
@@ -396,6 +397,29 @@ function checkMoneda(api) {
 // El bug de `lump_football_operations` (ver club-data-mapping) pasó los 16
 // tie-outs de su ejercicio sin problema: el total cerraba, la plata estaba, solo
 // estaba en el bucket equivocado. Estas 2 señales son las que lo delatan.
+// --- D15: la liga de cada ejercicio (Versión 132) ---------------------------
+// `data/club-leagues.js` dice en qué categoría jugó cada club cada ejercicio, y
+// nace con todas las filas en `null` a propósito: null es "nadie lo verificó
+// todavía". Esto cuenta lo que falta (para que el pendiente no dependa de que
+// alguien se acuerde) y avisa si un ejercicio real no tiene ni siquiera su fila.
+function checkLigasPorEjercicio(api) {
+  const cob = api.clubLeagueCoverage ? api.clubLeagueCoverage() : null;
+  if (!cob) return;
+
+  const sinFila = [];
+  for (const { clubId, year, ym } of clubYears(api)) {
+    if (!REPORT_TYPES_REALES.includes(ym.reportType)) continue;
+    const delClub = api.CLUB_LEAGUE_BY_YEAR[clubId];
+    if (!delClub || !(year in delClub)) sinFila.push(ref(clubId, year));
+  }
+  if (sinFila.length) {
+    add('P2', 'liga-sin-fila', `${sinFila.length} ejercicios reales sin fila en data/club-leagues.js (${sinFila.slice(0, 6).join(', ')}${sinFila.length > 6 ? '…' : ''}): al cargar un ejercicio hay que agregarle su fila, si no el selector no sabe en qué categoría se jugó`);
+  }
+  if (cob.faltan) {
+    add('P3', 'liga-sin-verificar', `${cob.faltan} de ${cob.total} filas de data/club-leagues.js siguen en null, o sea sin verificar contra fuente. Las 55 argentinas esperan además el criterio de qué categoría le corresponde a un ejercicio que cruza dos torneos`);
+  }
+}
+
 // --- D14: el espacio de nombres de clubId (Versión 129) --------------------
 // `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
 // (`data/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
@@ -774,6 +798,7 @@ function main() {
   checkFxProcedencia(api);
   checkFuentesPublicas(api);
   checkClubIds(api);
+  checkLigasPorEjercicio(api);
   checkCategorizacion(api);
   checkEscala(api);
   checkHigiene(api);
