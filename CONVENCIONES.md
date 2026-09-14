@@ -15,6 +15,16 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta).
+  Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
+  buckets de "Formato simplificado", el tipo y el nivel de cada fuente, y la procedencia de cada
+  tipo de cambio. NO se traduce nada que salga TEXTUAL de un documento o que sea un nombre propio:
+  los rubros de "Formato del club" (`rawLabel`), el título de cada balance, los nombres de club y de
+  liga, y los nombres de gestión de `gestionesByClub` (son apellidos de presidentes). El criterio es
+  uno solo y ya estaba en la cabecera de `js/i18n.js`: traducir un rubro del balance de un club
+  argentino sería inventar un dato que el documento no dice. Vale igual para `fuentes.html`, que
+  desde esta versión se traduce sola con el mismo motor y el mismo diccionario que el sitio, en vez
+  de generarse un archivo por idioma.
 - NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (Versión 137, decisión de arquitectura que salió
   de un pushback de Guido: "si el usuario quiere ver cuánto generaba una liga en 2025 y 2024, 2023,
   2022, tiene que tener en cuenta que los clubes fueron cambiando"). `data/leagues.js` es el

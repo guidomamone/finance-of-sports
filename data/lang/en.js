@@ -296,5 +296,38 @@ window.I18N.strings.en = {
   "cmp.warn.years.a": "You are comparing <b>financial years from different years</b>",
   "cmp.warn.years.b": "Each one converts to USD at the rate its own document declares, with no inflation adjustment: the difference includes the passing of time, not just the club.",
   "cmp.warn.tiers": "There are subjects from <b>different divisions</b>: broadcasting revenue and prize money are not comparable one to one.",
-  "cmp.warn.budget": "is a <b>budget</b>, not audited accounts. These are numbers the club projected, not what actually happened."
+  "cmp.warn.budget": "is a <b>budget</b>, not audited accounts. These are numbers the club projected, not what actually happened.",
+  // --- Cards de torneo del presupuesto de Boca 2026/27 (Versión 138) ---
+  // Solo el CHROME. Los rubros de las tablas ("Premios Grupales", "Remuneraciones BICA,
+  // S.A.C. y Cs. Sociales", "Policía Adicional") salen textuales del presupuesto y NO se
+  // traducen, mismo criterio que los rubros de "Formato del club".
+  "torneo.lib.title": "Copa Libertadores. Revenue and costs",
+  "torneo.liga.title": "Liga Profesional championship. Revenue and costs",
+  "torneo.copa.title": "Copa Argentina. Revenue and costs",
+  "torneo.sub": "What comes in and what goes out for this competition in particular, per the 2026/2027 budget.",
+  "torneo.sub.liga": "What comes in and what goes out for the domestic league in particular, per the 2026/2027 budget.",
+  "torneo.lib.instancia": "<strong>Budgeted stage:</strong> the budget projects reaching the quarter-finals in the 2026 edition and the group stage in the 2027 one. This financial year (July 2026 to June 2027) covers the end of the 2026 Libertadores and the start of the 2027 one.",
+  "torneo.liga.instancia": "<strong>Budgeted stage:</strong> the budget projects no final stage: these are the 2 competitions the Liga Profesional runs in this period, both round-robin, with no knockout stage to estimate.",
+  "torneo.copa.instancia": "<strong>Budgeted stage:</strong> the budget projects reaching the quarter-finals in the 2026 edition and the first round in the 2027 one (same criterion as the Libertadores: this financial year covers the end of one edition and the start of the next).",
+  "torneo.gastos.org": "Matchday organisation costs",
+  "torneo.total.ingresos": "TOTAL REVENUE",
+  "torneo.total.gastos": "TOTAL ORGANISATION COSTS",
+  // --- fuentes.html, la página estática de documentos (Versión 138) ---
+  "fuentes.page.title": "Sources | Finance of Sports",
+  "fuentes.page.intro1a": "Every figure on this site comes from a public document of its club, and this is the full list:",
+  "fuentes.page.intro1b": "documents from",
+  "fuentes.page.intro1c": "clubs across",
+  "fuentes.page.intro1d": "countries,",
+  "fuentes.page.intro1e": "of them with a direct link to the original. For each one we state what kind of document it is, which financial years it backs, what exchange rate was used to convert it to dollars, and what caveats it carries.",
+  "fuentes.page.intro2": "When a document does not declare its own exchange rate, the official quote for its closing date is used, and that is said here rather than left implicit. A budget declares an assumed rate, which may end up different from the one that occurs: that is stated too.",
+  "fuentes.page.volver": "Back to the site",
+  "fuentes.page.footer": "Generated from the site's data on",
+  "fuentes.page.footer2": "To correct something, the club's file is corrected and this page is regenerated.",
+  "th.country": "Country",
+  "th.team": "Team",
+  "th.source": "Source",
+  "th.notes": "Notes",
+  "fuentes.ejercicio": "Financial year",
+  "fuentes.ejercicios": "Financial years",
+  "fuentes.sinurl": "no public URL"
 };

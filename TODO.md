@@ -143,26 +143,6 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
         ejercicios de Argentinos Juniors y 3 de Unión). Mientras las use un solo club no duplican
         nada; se mueven a la tabla al confirmar la fecha exacta de cierre de cada una.
 
-19. ACTUALIZADO (Versión 126): la traducción al inglés está MUCHO más cerca de lo que decía esta
-    lista, porque el número que la sostenía era falso. `tools/audit.js` reportaba "88 claves sin
-    traducir", pero su regex buscaba las claves definidas entre comillas simples y `data/lang/en.js`
-    las escribe entre dobles: el conjunto de definidas quedaba vacío y reportaba como faltante TODA
-    clave usada. Con el regex arreglado el faltante real es 0. Lo que queda:
-    (a) RESUELTO (Versión 126): el párrafo "Calidad de dato por club" y la tabla de 6 filas de la
-        pestaña Fuentes ya no existen, se reemplazaron por contenido generado de los datos, que
-        nace traducible (las etiquetas pasan por `t()`, el texto de cada documento queda en su
-        idioma original a propósito, mismo criterio que los rubros de "Formato del club");
-    (b) los 3 cards de competencia del presupuesto de Boca (Copa Libertadores / Campeonato Liga
-        Profesional / Copa Argentina), que son Boca-2027-only, siguen sin `data-i18n`;
-    (c) los nombres de gestión de `gestionesByClub` y los rubros nativos de cada balance: son datos,
-        no chrome, y la decisión de si se traducen o no sigue abierta;
-    (d) `fuentes.html` se genera solo en castellano. Para publicarlo en inglés hay que decidir si el
-        generador emite 2 archivos o si la página lee el diccionario como el sitio.
-    RESUELTO (Versión 117): Guido decidió que la marca cambia por idioma, "El deporte en Números"
-    en castellano y "Finance of Sports" en inglés. No hace falta unificarla.
-    Candidatos de idioma obvios cuando haya ganas: português (4 clubes de Brasil cargados) y
-    japonés (10 clubes de Japón). Cada uno es 1 archivo nuevo + 1 línea en `data/lang/langs.js`.
-
 22. NUEVO (Versión 128, auditoría de escala `auditorias/2026-09-13-escala.md`): los 6 cuellos que
     aparecen al crecer, en el orden en que aparecen. Cada uno con el número que lo dispara:
     (a) RESUELTO (Versión 129): `clubId` NO tenía país. Convención escrita en `CONVENCIONES.md`

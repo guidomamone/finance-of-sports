@@ -883,3 +883,23 @@ documentados, listos para una sesión de onboarding futura.)*
 - Verificación: `auditAll()` 41 clubes, 222 checks, 0 que no cierran, 0 warnings de fx (los mismos
   222: ningún ejercicio borrado tenía total oficial contra qué cerrar). `node tools/audit.js` 0 P0,
   0 P1.
+
+## Versión 139: la traducción al inglés queda completa, `fuentes.html` incluida
+
+- Los 3 cards de torneo del presupuesto de Boca 2026/27 (Copa Libertadores, Campeonato Liga
+  Profesional, Copa Argentina) eran el último HTML del sitio sin `data-i18n`. Ahora su chrome se
+  traduce; los rubros de sus tablas ("Premios Grupales", "Remuneraciones BICA, S.A.C.", "Policía
+  Adicional") NO, porque salen textuales del presupuesto.
+- `fuentes.html` se traduce sola. Carga `js/i18n.js` y el mismo diccionario que el sitio, y respeta
+  el idioma que el visitante ya eligió. Se descartó generar un `fuentes-en.html` aparte: dos
+  archivos por idioma se multiplican por cada idioma nuevo, y esta página además va a tener que
+  partirse por país arriba de ~300 documentos (to-do 22c). Se traducen el chrome, el tipo y el nivel
+  de cada fuente, y la procedencia de cada tipo de cambio (etiquetas nuestras); el título de cada
+  documento queda en su idioma original.
+- El generador de `fuentes.html` lee el `ASSET_V` de `index.html` en vez de tener el suyo, para que
+  las dos páginas no puedan pedir versiones distintas del mismo `js/i18n.js`.
+- REGLA NUEVA en `CONVENCIONES.md`, que cierra la decisión que el to-do 19(c) dejaba abierta: se
+  traduce el chrome y toda etiqueta nuestra; no se traduce nada que salga textual de un documento ni
+  ningún nombre propio (club, liga, y los nombres de gestión, que son apellidos de presidentes).
+- 30 claves nuevas en `data/lang/en.js`. Cobertura: 204 de 204 claves usadas, y 28 de 28 en
+  `fuentes.html`. To-do 19 borrado.

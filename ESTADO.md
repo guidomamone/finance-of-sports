@@ -198,13 +198,12 @@ se reescribe, no se acumula.
   navegador en la primera visita y recuerda la elección en localStorage.
   AGREGAR UN IDIOMA = crear `data/lang/<code>.js` + una línea en
   `data/lang/langs.js`. Nada más: ni el HTML ni `js/i18n.js` se tocan.
-  Traducido hoy: todo el chrome (nav, títulos, subtítulos, controles, headers de
-  tabla, footer, modal de contacto), los stats de Inicio y Finanzas, los buckets
-  de "Formato simplificado" y las fichas de Fuentes. NO traducido a propósito:
-  los rubros de "Formato del club" y el título/salvedades de cada documento, que
-  salen textuales de la fuente. Lo que falta es poco y está en la to-do 19: el
-  "88 claves sin traducir" que decía esta lista era un falso positivo del
-  chequeo, no el estado real (ver to-do 19).
+  TRADUCCIÓN COMPLETA desde la Versión 138: las 204 claves que el sitio usa están
+  las 204 en `en.js`, y `fuentes.html` también se traduce sola, con el mismo motor
+  y el mismo diccionario (no se genera un archivo por idioma). Lo que NO se traduce
+  es a propósito y ahora es una regla escrita en `CONVENCIONES.md`: los rubros de
+  "Formato del club", el título de cada documento, y los nombres de club, de liga y
+  de gestión, que salen textuales de la fuente o son nombres propios.
 - CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
   NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
   ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.

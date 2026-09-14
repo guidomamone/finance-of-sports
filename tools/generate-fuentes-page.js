@@ -111,7 +111,7 @@ function construir(api) {
       const f = api.fxMetaFor(ym);
       (usos[ym.sourceId] = usos[ym.sourceId] || []).push({
         year, ym, etiqueta: etiquetaEjercicio(year, clubs[clubId]),
-        fx: f.fx, moneda: ym.currency, fxLabel: f.label,
+        fx: f.fx, moneda: ym.currency, fxLabel: f.label, fxSource: f.source,
       });
     }
   }
@@ -140,8 +140,13 @@ function construir(api) {
   for (const f of filas) {
     const nivel = api.sourceLevel(f.s.reliability);
     const ejercicios = f.u.map(x => x.etiqueta).join(', ');
+    // La procedencia del tipo de cambio es una etiqueta NUESTRA, no texto del documento:
+    // se traduce, con la misma clave `fx.source.<origen>` que usa la ficha de Finanzas.
+    // OJO: estas cadenas ya traen markup (`<span data-i18n>`), así que se interpolan SIN
+    // `esc()` más abajo, a diferencia de todo el resto. Lo que sí se escapa es el contenido
+    // variable de adentro (`esc(x.fxLabel)`); el número y la moneda los arma este archivo.
     const fxs = [...new Set(f.u.filter(x => x.fx != null && x.moneda !== 'USD')
-      .map(x => `1 USD = ${fmtFx(x.fx)} ${x.moneda} (${x.fxLabel})`))];
+      .map(x => `1 USD = ${fmtFx(x.fx)} ${x.moneda} (<span data-i18n="fx.source.${x.fxSource}">${esc(x.fxLabel)}</span>)`))];
     const notas = [];
     if (f.s.publicNote) notas.push(f.s.publicNote);
     notas.push(...api.sourceCaveats(f.s, f.u.map(x => x.ym)));
@@ -157,16 +162,22 @@ function construir(api) {
           <span class="titulo">${f.s.url
             ? `<a href="${esc(f.s.url)}" target="_blank" rel="noopener">${esc(f.s.title)}</a>`
             : esc(f.s.title)}</span>
-          <span class="meta">${esc(api.sourceTypeLabel(f.s.type))} · <b style="color:${nivel.color}">${esc(nivel.label)}</b>${
-            ejercicios ? ` · ${f.u.length === 1 ? 'Ejercicio' : 'Ejercicios'} ${esc(ejercicios)}` : ''}${
-            f.s.url ? '' : ' · sin URL pública'}</span>${
-            fxs.length ? `\n          <span class="meta">${esc(fxs.join(' · '))}</span>` : ''}
+          <span class="meta"><span data-i18n="fuentes.tipo.${f.s.type}">${esc(api.sourceTypeLabel(f.s.type))}</span> · <b style="color:${nivel.color}" data-i18n="fuentes.nivel.${f.s.reliability}">${esc(nivel.label)}</b>${
+            ejercicios ? ` · <span data-i18n="${f.u.length === 1 ? 'fuentes.ejercicio' : 'fuentes.ejercicios'}">${f.u.length === 1 ? 'Ejercicio' : 'Ejercicios'}</span> ${esc(ejercicios)}` : ''}${
+            f.s.url ? '' : ' · <span data-i18n="fuentes.sinurl">sin URL pública</span>'}</span>${
+            fxs.length ? `\n          <span class="meta">${fxs.join(' · ')}</span>` : ''}
         </td>
         <td class="notas">${notas.length ? notaPlegable(notas.join(' ')) : '<span class="vacio">Sin salvedades</span>'}</td>
       </tr>`);
   }
 
   const hoy = new Date().toISOString().slice(0, 10);
+  // El ASSET_V sale de index.html, no se escribe a mano acá: si esta página pidiera una
+  // versión distinta de js/i18n.js que el sitio, un visitante podría recibir el motor
+  // viejo de su caché en una página y el nuevo en la otra. Ver la regla de ASSET_V en
+  // CONVENCIONES.md.
+  const mAsset = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8').match(/window\.ASSET_V\s*=\s*'([^']+)'/);
+  const assetV = mAsset ? mAsset[1] : '1';
   return `<!DOCTYPE html>
 <!--
   GENERADO AUTOMÁTICAMENTE por tools/generate-fuentes-page.js. NO EDITAR A MANO.
@@ -179,7 +190,7 @@ function construir(api) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fuentes | El deporte en Números</title>
+<title data-i18n="fuentes.page.title">Fuentes | El deporte en Números</title>
 <meta name="description" content="Todos los documentos oficiales que respaldan los números de financeofsports.com: ${totalDocs} balances, presupuestos y estados contables de ${totalClubes} clubes de ${totalPaises} países, con su tipo de cambio y sus salvedades.">
 <link rel="canonical" href="https://financeofsports.com/fuentes.html">
 <style>
@@ -221,23 +232,33 @@ function construir(api) {
 </style>
 </head>
 <body>
-<header><div class="header-inner"><span class="dot"></span><a href="index.html">El deporte en Números</a></div></header>
+<header><div class="header-inner"><span class="dot"></span><a href="index.html" data-i18n="site.name">El deporte en Números</a></div></header>
 <main>
-  <h1>Fuentes</h1>
-  <p class="sub">Todo número del sitio sale de un documento público de su club, y acá está la lista completa: ${totalDocs} documentos de ${totalClubes} clubes de ${totalPaises} países, ${conLink} de ellos con link directo al original. De cada uno se indica qué tipo de documento es, qué ejercicios respalda, con qué tipo de cambio se convirtió a dólares y qué salvedades tiene.</p>
-  <p class="sub">Cuando un documento no declara su propio tipo de cambio se usa la cotización oficial de su fecha de cierre, y eso se dice acá en vez de dejarlo implícito. Un presupuesto declara un tipo de cambio supuesto, que puede terminar siendo distinto del que ocurra: también se aclara.</p>
-  <p class="volver"><a href="index.html">Volver al sitio</a></p>
+  <h1 data-i18n="nav.fuentes">Fuentes</h1>
+  <p class="sub"><span data-i18n="fuentes.page.intro1a">Todo número del sitio sale de un documento público de su club, y acá está la lista completa:</span> ${totalDocs} <span data-i18n="fuentes.page.intro1b">documentos de</span> ${totalClubes} <span data-i18n="fuentes.page.intro1c">clubes de</span> ${totalPaises} <span data-i18n="fuentes.page.intro1d">países,</span> ${conLink} <span data-i18n="fuentes.page.intro1e">de ellos con link directo al original. De cada uno se indica qué tipo de documento es, qué ejercicios respalda, con qué tipo de cambio se convirtió a dólares y qué salvedades tiene.</span></p>
+  <p class="sub" data-i18n="fuentes.page.intro2">Cuando un documento no declara su propio tipo de cambio se usa la cotización oficial de su fecha de cierre, y eso se dice acá en vez de dejarlo implícito. Un presupuesto declara un tipo de cambio supuesto, que puede terminar siendo distinto del que ocurra: también se aclara.</p>
+  <p class="volver"><a href="index.html" data-i18n="fuentes.page.volver">Volver al sitio</a></p>
 
   <div class="tabla-wrap">
     <table>
-      <thead><tr><th>País</th><th>Equipo</th><th>Fuente</th><th>Notas</th></tr></thead>
+      <thead><tr><th data-i18n="th.country">País</th><th data-i18n="th.team">Equipo</th><th data-i18n="th.source">Fuente</th><th data-i18n="th.notes">Notas</th></tr></thead>
       <tbody>
 ${tr.join('\n')}
       </tbody>
     </table>
   </div>
 </main>
-<footer>Generado desde los datos del sitio el ${hoy}. Para corregir algo, se corrige el archivo del club y se vuelve a generar esta página.</footer>
+<footer><span data-i18n="fuentes.page.footer">Generado desde los datos del sitio el</span> ${hoy}. <span data-i18n="fuentes.page.footer2">Para corregir algo, se corrige el archivo del club y se vuelve a generar esta página.</span></footer>
+<!-- i18n (Versión 138): la página se traduce sola, con el mismo motor y el mismo
+     diccionario que el sitio, y respeta el idioma que el visitante ya eligió (I18N lo
+     guarda en localStorage). Se decidió esto y NO generar un fuentes-en.html aparte:
+     dos archivos por idioma se multiplican por cada idioma nuevo, y esta página ya va a
+     tener que partirse por país arriba de ~300 documentos (to-do 22c).
+     OJO: el TÍTULO de cada documento NO se traduce, sale textual de la fuente. Lo que se
+     traduce es el chrome y las etiquetas de tipo/nivel, que son nuestras. -->
+<script src="data/lang/langs.js?v=${assetV}"></script>
+<script src="js/i18n.js?v=${assetV}"></script>
+<script>window.ASSET_V = '${assetV}'; I18N.init();</script>
 </body>
 </html>
 `;
