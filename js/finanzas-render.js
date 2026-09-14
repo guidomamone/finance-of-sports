@@ -454,6 +454,7 @@
     const g = gestiones[key];
     if(!g) return;
     const cur = computeYearGeneric(clubId, g.lastYear);
+    if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const prev = g.firstYear !== g.lastYear ? computeYearGeneric(clubId, g.firstYear) : null;
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
@@ -471,6 +472,7 @@
   function updateFinanzasByAnioGeneric(clubId){
     const y = parseInt(document.getElementById('anioSelect').value, 10);
     const cur = computeYearGeneric(clubId, y);
+    if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
@@ -498,7 +500,14 @@
     // los años placeholder de Finanzas" — Mercado de Pases/Resultados/Comparar Gestiones siguen
     // usando el set completo, sin filtrar, vía gestionesByClub/fiscalYearMeta directo). Cualquier
     // club sin estos 2 campos (el resto) muestra TODAS sus gestiones/años, sin cambios.
-    const gd = CLUB_GENERIC_DATA[clubId];
+    // Versión 131: sin club elegido (cold start) o con el archivo del club todavía sin bajar, los
+    // selectores quedan vacíos en vez de tirar TypeError. Ver `clubCargado()` en index.html.
+    const gd = (window.CLUB_GENERIC_DATA || {})[clubId];
+    if(!gd){
+      gestionSelect.innerHTML = '';
+      document.getElementById('anioSelect').innerHTML = '';
+      return;
+    }
     const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
     const gestionKeys = gd.finanzasGestiones || Object.keys(gestiones);
     gestionSelect.innerHTML = gestionKeys.map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
@@ -663,8 +672,10 @@
   function renderDataQualityBannerForCurrentSelection(){
     const banner = document.getElementById('finanzasDataQualityBanner');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    const year = isGestion ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear : parseInt(document.getElementById('anioSelect').value, 10);
-    const meta = (CLUB_GENERIC_DATA[currentClub].fiscalYearMeta[year]) || {};
+    const year = isGestion
+      ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
+      : parseInt(document.getElementById('anioSelect').value, 10);
+    const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
     // REGLA (Versión 58): 'official_budget_and_balance' (ejercicio con las 2 fuentes reales
     // cargadas a la vez, ver club-or-year-onboarding/SKILL.md sección 11) es tan "real" como
     // 'official_balance_sheet'/'official_budget' solos, tiene que ocultar el banner igual. Bug
@@ -919,7 +930,7 @@
 
   // Las metas de fiscalYearMeta del club actual que usan ESE documento.
   function metasDeFuente(sourceId){
-    const meta = (CLUB_GENERIC_DATA[currentClub] || {}).fiscalYearMeta || {};
+    const meta = ((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {};
     return Object.keys(meta).filter(y => meta[y].sourceId === sourceId).map(y => meta[y]);
   }
 
@@ -933,9 +944,9 @@
     if(!body) return;
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
     const year = isGestion
-      ? gestionesByClub[currentClub][document.getElementById('gestionSelect').value].lastYear
+      ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
       : parseInt(document.getElementById('anioSelect').value, 10);
-    const meta = (CLUB_GENERIC_DATA[currentClub].fiscalYearMeta[year]) || {};
+    const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
     const src = sources[meta.sourceId];
     const linkTodas = linkTodasLasFuentes();
 

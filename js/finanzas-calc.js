@@ -29,7 +29,7 @@
   // devuelven además `fxSource`/`fxLabel` (de dónde salió ese tipo de cambio),
   // que es lo que la ficha de fuente de Finanzas muestra al visitante.
   function yearMetaFor(clubId, year){
-    const table = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
+    const table = ((window.CLUB_GENERIC_DATA || {})[clubId] || {}).fiscalYearMeta;
     const m = (table && table[year]) || {};
     const f = fxMetaFor(m);
     return {
@@ -424,7 +424,9 @@
   function computeYearGeneric(clubId, year){
     // Versión 82: se sumó la 3ra rama (Vélez) a los 3 ternarios de esta función, primer club nuevo
     // desde que el motor genérico existe (antes solo river/racing) — ver nota en yearMetaFor.
-    const gd = CLUB_GENERIC_DATA[clubId];
+    // Versión 131: sin club elegido (cold start del selector) no hay nada que computar.
+    const gd = (window.CLUB_GENERIC_DATA || {})[clubId];
+    if(!gd) return null;
     const revenueLines = (gd.revenueLinesByYear[year]) || [];
     const expenseLines = (gd.expenseLinesByYear[year]) || [];
     const meta = (gd.fiscalYearMeta[year]) || {};
@@ -538,7 +540,7 @@
   // para "es un balance, no un presupuesto" vs. "todavía es placeholder"). Lee directo de
   // <club>FiscalYearMeta[year].reportType (ver data/<club>-data.js).
   function reportTypeForYear(clubId, year){
-    const table = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
+    const table = ((window.CLUB_GENERIC_DATA || {})[clubId] || {}).fiscalYearMeta || {};
     return ((table[year]) || {}).reportType || 'placeholder';
   }
 
@@ -590,7 +592,10 @@
   // sus datos (real o placeholder), sin saltear ningún año del medio aunque no haya ninguna entrada
   // cargada para él.
   function allYearsRangeForClub(clubId){
-    const years = Object.keys(CLUB_GENERIC_DATA[clubId].fiscalYearMeta).map(Number);
+    // Versión 131: sin club elegido devuelve un rango vacío, no una lista de NaN.
+    const table = ((window.CLUB_GENERIC_DATA || {})[clubId] || {}).fiscalYearMeta;
+    if(!table) return [];
+    const years = Object.keys(table).map(Number);
     const min = Math.min(...years), max = Math.max(...years);
     const range = [];
     for(let y=min; y<=max; y++) range.push(y);
