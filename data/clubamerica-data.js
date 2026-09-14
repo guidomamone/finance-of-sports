@@ -184,7 +184,7 @@ const clubamericaFiscalYearMeta = {
     // Tipo de cambio de cierre al 31/12/2025 que declara la Nota a los estados financieros
     // auditados (pág. 104/113, footnote 3 de "Gastos financieros, neto") — ver comentario largo de
     // cabecera sobre la discrepancia con la cifra de la sección MD&A ($18.0012).
-    fx:17.9528,
+    fx:17.9528, fxSource:'document_close',
     sourceId:'clubamerica-ollamani-2025',
     reportType:'official_balance_sheet',
     // Sin gestión real asignable (ver comentario de cabecera): entrada sintética 'ollamani', no un

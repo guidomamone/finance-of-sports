@@ -541,20 +541,12 @@
 <section class="fixes">
   <div class="col" style="margin-bottom:22px;">
     <h2 id="riesgos">Riesgos de escala</h2>
-    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Están ordenados por lo que devuelven sobre lo que cuestan. Lo que se va arreglando sale de la lista: hoy quedan tres.</p>
-    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (6 de 222 checks; ahora <code>auditAll()</code> corre los 222 a pedido), la sección "qué es real por club" que se escribía a mano (ahora se genera desde los datos), y el <code>if</code> con nombres de club escrito adentro del motor (ahora sale por convención del archivo de cada club).</p>
+    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Están ordenados por lo que devuelven sobre lo que cuestan. Lo que se va arreglando sale de la lista: hoy quedan dos.</p>
+    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (6 de 222 checks; ahora <code>auditAll()</code> corre los 222 a pedido), la sección "qué es real por club" que se escribía a mano (ahora se genera desde los datos), el <code>if</code> con nombres de club escrito adentro del motor (ahora sale por convención del archivo de cada club), y <strong>los tipos de cambio repetidos club por club</strong> (Versión 125: las cotizaciones de mercado se dicen una sola vez en <code>FX_CLOSE</code>, por moneda y fecha de cierre, y cada ejercicio declara además si su tipo de cambio lo dice el documento o salió de afuera — 33 copias de 9 valores pasaron a 9 entradas).</p>
   </div>
 
 
 
-
-  <div class="fix">
-    <div>
-      <h3>Los tipos de cambio se repiten club por club</h3>
-      <p><strong>Qué se rompe a escala:</strong> el cierre del 31/12/2024 para el real (R$ 6,1923) está escrito a mano en cinco archivos. Si se corrige, hay que acordarse de los cinco, y nada avisa si uno queda distinto. Con 1000 clubes son decenas de copias por cada moneda y fecha. Una tabla por moneda y fecha de cierre lo diría una vez, y el tipo de cambio que declara el propio balance de un club seguiría ganando, como ya manda la regla.</p>
-    </div>
-    <div><span class="effort s">sesión corta</span></div>
-  </div>
 
   <div class="fix">
     <div>

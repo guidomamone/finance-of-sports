@@ -250,7 +250,7 @@ const estudiantesLPExpenseLinesByYear = {
 
 const estudiantesLPFiscalYearMeta = {
   2022: {
-    currency:'ARS', fx:125.030, sourceId:'estudianteslp-memoria-y-balance-2021-22',
+    currency:'ARS', fx:125.030, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2021-22',
     reportType:'official_balance_sheet', gestionId:'gorostegui',
     grossDebt:1153.353229, cash:12.545548,
     profitOnPlayerSales:0, assetSales:0, netInterest:690.331357, tax:0,
@@ -260,7 +260,7 @@ const estudiantesLPFiscalYearMeta = {
     officialTotalRevenue:4332.941478, officialTotalExpenses:4448.448161, officialPAT:574.824674,
   },
   2023: {
-    currency:'ARS', fx:256.30, sourceId:'estudianteslp-memoria-y-balance-2022-23',
+    currency:'ARS', fx:256.30, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2022-23',
     reportType:'official_balance_sheet', gestionId:'gorostegui',
     grossDebt:2410.436335, cash:36.433986,
     profitOnPlayerSales:0, assetSales:0, netInterest:1535.101326, tax:0,
@@ -268,7 +268,7 @@ const estudiantesLPFiscalYearMeta = {
     officialTotalRevenue:7650.443395, officialTotalExpenses:9171.470536, officialPAT:14.074185,
   },
   2024: {
-    currency:'ARS', fx:909.00, sourceId:'estudianteslp-memoria-y-balance-2023-24',
+    currency:'ARS', fx:909.00, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2023-24',
     reportType:'official_balance_sheet', gestionId:'veron', // ver duda abierta en dudas-por-club.md
     grossDebt:12029.051057, cash:67.946816,
     profitOnPlayerSales:0, assetSales:0, netInterest:534.909348, tax:0,
@@ -276,7 +276,7 @@ const estudiantesLPFiscalYearMeta = {
     officialTotalRevenue:49829.905478, officialTotalExpenses:40799.276647, officialPAT:9565.538179,
   },
   2025: {
-    currency:'ARS', fx:1196.00, sourceId:'estudianteslp-memoria-y-balance-2024-25',
+    currency:'ARS', fx:1196.00, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2024-25',
     reportType:'official_balance_sheet', gestionId:'veron',
     // grossDebt = Deudas corriente (23197.866989) + no corriente (12564.970707), EXCLUYENDO Fondos
     // específicos (144.600000+710.269290) y Previsiones (129.000000).

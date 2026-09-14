@@ -106,6 +106,7 @@ function loadEngine() {
     REVENUE_BUCKETS: GENERIC_SIMPLIFIED_REVENUE_BUCKETS,
     EXPENSE_BUCKETS: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS,
     clubs, sources, gestionesByClub, CURRENCY_META,
+    fxMetaFor, FX_SOURCE, FX_CLOSE,
     generic: window.CLUB_GENERIC_DATA || {},
   })`, ctx, { filename: 'leer-globals' });
 }
@@ -327,11 +328,15 @@ function checkMoneda(api) {
     // callada, que es distinto. Por eso acá se mira el dato CRUDO (dónde falta el fx
     // del documento) y se reserva el ruido para los ejercicios reales: un placeholder
     // ya se le anuncia al visitante como tal.
-    if (real && ym.fx == null) {
+    // "Crudo" pero resuelto (Versión 125): un ejercicio puede traer `fxRef` en vez de
+    // `fx`, con el número en FX_CLOSE. Leer `ym.fx` a secas daría "sin fx" para los 33
+    // que usan la tabla.
+    const fxCrudo = api.fxMetaFor(ym).fx;
+    if (real && fxCrudo == null) {
       add(ym.currency === 'USD' ? 'P2' : 'P1', 'fx-ausente', `${ref(clubId, year)}: ejercicio real (${ym.reportType}${ym.currency === 'USD' ? ', guardado en USD' : ' en ' + ym.currency}) sin fx propio — se convierte con el FX_RATE placeholder global (1450)${nativa && nativa !== 'USD' ? `, así que la vista en ${nativa} es un número inventado` : ''}`);
     }
-    if (!real && ym.fx == null && nativa && nativa !== 'USD' && sum(rev) !== 0) placeholdersSinFx++;
-    if (real && ym.fx === 1450) {
+    if (!real && fxCrudo == null && nativa && nativa !== 'USD' && sum(rev) !== 0) placeholdersSinFx++;
+    if (real && fxCrudo === 1450) {
       add('P2', 'fx-placeholder', `${ref(clubId, year)}: ejercicio real con fx 1450, que es el placeholder global FX_RATE, no un tipo de cambio del documento`);
     }
 
@@ -390,6 +395,62 @@ function checkMoneda(api) {
 // El bug de `lump_football_operations` (ver club-data-mapping) pasó los 16
 // tie-outs de su ejercicio sin problema: el total cerraba, la plata estaba, solo
 // estaba en el bucket equivocado. Estas 2 señales son las que lo delatan.
+// --- D12: procedencia del tipo de cambio (Versión 125) ---------------------
+// `checkMoneda()` revisa que el fx EXISTA y sea plausible. Esto revisa de DÓNDE
+// SALIÓ: si lo declara el documento, si es una cotización de mercado, o si nadie
+// lo sabe. Antes de la Versión 125 eso vivía en prosa y no se podía chequear.
+function checkFxProcedencia(api) {
+  const fueraDeTabla = [];
+  let sinProcedencia = 0;
+
+  // Las entradas de FX_CLOSE, indexadas por moneda+año, para comparar contra
+  // ellas cualquier cotización de mercado que un club haya cargado por su cuenta.
+  const tabla = {};
+  for (const [key, entry] of Object.entries(api.FX_CLOSE || {})) {
+    const [moneda, fecha] = key.split('@');
+    (tabla[`${moneda}|${fecha.slice(0, 4)}`] = tabla[`${moneda}|${fecha.slice(0, 4)}`] || []).push({ key, ...entry });
+  }
+
+  for (const { clubId, year, ym } of clubYears(api)) {
+    const real = REPORT_TYPES_REALES.includes(ym.reportType);
+    const f = api.fxMetaFor(ym);
+
+    // Una referencia rota es grave: el ejercicio se queda sin tipo de cambio y se
+    // convierte con el placeholder global, en silencio.
+    if (ym.fxRef && !(api.FX_CLOSE || {})[ym.fxRef]) {
+      add('P1', 'fx-ref-rota', `${ref(clubId, year)}: fxRef '${ym.fxRef}' no existe en FX_CLOSE (data/currency-map.js)`);
+      continue;
+    }
+    if (!real || f.fx == null) continue;
+
+    if (f.source === 'unknown') {
+      sinProcedencia++;
+      add('P2', 'fx-sin-procedencia', `${ref(clubId, year)}: fx ${f.fx} sin procedencia declarada (fxSource) — no se sabe si lo declara el documento o si es una cotización externa`);
+    }
+
+    // Una cotización de mercado cargada a mano en el archivo de un club, en vez
+    // de salir de FX_CLOSE. Si además difiere de la que la tabla declara para esa
+    // moneda y ese año, hay una contradicción publicada: dos clubes convirtiendo
+    // el mismo cierre con números distintos.
+    if ((f.source === 'market_close' || f.source === 'market_approx') && !f.ref) {
+      const enTabla = tabla[`${ym.currency}|${year}`] || [];
+      const choque = enTabla.find(e => Math.abs(f.fx - e.fx) / e.fx > 0.02);
+      if (choque) {
+        add('P2', 'fx-mercado-discrepante', `${ref(clubId, year)}: usa ${f.fx} ${ym.currency}/USD como cotización de mercado, pero FX_CLOSE declara ${choque.fx} para esa fecha (${choque.key}, ${choque.label}) — ${((Math.abs(f.fx - choque.fx) / choque.fx) * 100).toFixed(1)}% de diferencia`);
+      } else if (f.source === 'market_close') {
+        fueraDeTabla.push(`${clubId} ${year} (${f.fx} ${ym.currency})`);
+      }
+    }
+  }
+
+  if (fueraDeTabla.length) {
+    add('P3', 'fx-mercado-fuera-de-tabla', `${fueraDeTabla.length} cotizaciones de mercado escritas en el archivo de un club en vez de FX_CLOSE: ${fueraDeTabla.join(', ')}. Mientras las use un solo club no duplica nada, pero es el estado del que nace la duplicación — mover a la tabla al confirmar su fecha exacta de cierre.`);
+  }
+  if (sinProcedencia) {
+    add('P3', 'fx-procedencia-pendiente', `${sinProcedencia} ejercicios reales con fx sin procedencia verificada. Es la lista de to-dos que dejó la migración de la Versión 125, no un error de carga: cada uno se resuelve mirando el Anexo de moneda extranjera de su propio documento.`);
+  }
+}
+
 function checkCategorizacion(api) {
   for (const { clubId, year, rev, exp } of clubYears(api)) {
     if (!exp.length && !rev.length) continue;
@@ -468,6 +529,22 @@ function checkHigiene(api) {
     }
   } catch { /* sin git, no es un error de datos */ }
 
+  // ASSET_V, la otra mitad (Versión 125): los `?v=` de los <script src> estáticos
+  // son LITERALES, no salen de la constante — subir `window.ASSET_V` y olvidarse
+  // de los tags deja al navegador sirviendo los archivos viejos de su caché, con
+  // el HTML nuevo. Pasó de verdad al migrar los fx: `currency-map.js` llegó
+  // cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y la
+  // página entera tiró ReferenceError. Es invisible salvo que se compare.
+  try {
+    const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+    const declarada = (html.match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1];
+    const enTags = [...new Set([...html.matchAll(/<script src="(?:js|data)\/[^"]*\?v=([^"]+)"/g)].map(m => m[1]))];
+    const desfasados = enTags.filter(v => v !== declarada);
+    if (declarada && desfasados.length) {
+      add('P1', 'asset-v-desfasado', `index.html declara ASSET_V '${declarada}' pero sus <script src> piden ?v=${desfasados.join(', ?v=')} — el visitante recibe el HTML nuevo con los js/data viejos de su caché`);
+    }
+  } catch { /* sin index.html legible no hay nada que comparar */ }
+
   // i18n: una clave usada y no definida degrada al castellano en silencio.
   const usadas = new Set();
   for (const m of html.matchAll(/data-i18n(?:-title)?="([^"]+)"/g)) usadas.add(m[1]);
@@ -538,6 +615,7 @@ function main() {
   checkCategorias(api);
   checkLineas(api);
   checkMoneda(api);
+  checkFxProcedencia(api);
   checkCategorizacion(api);
   checkEscala(api);
   checkHigiene(api);

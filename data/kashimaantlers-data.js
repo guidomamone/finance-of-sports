@@ -74,7 +74,7 @@ const kashimaantlersExpenseLinesByYear = {
 
 const kashimaantlersFiscalYearMeta = {
   2025: {
-    currency:'JPY', fx:150,
+    currency:'JPY', fxRef:'JPY@2025-12-31',
     sourceId:'kashimaantlers-jleague-doc-2025',
     reportType:'official_balance_sheet',
     gestionId:'temporada2025',

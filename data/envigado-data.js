@@ -131,7 +131,7 @@ const envigadoFiscalYearMeta = {
     // TRM oficial (Superintendencia Financiera de Colombia / Banco de la República) al 31/12/2025,
     // cierre del ejercicio: $3.757,08 COP/USD. El documento no declara su propio tipo de cambio
     // (mismo caso que Once Caldas, ver ese archivo), así que se usa la TRM de cierre oficial.
-    currency:'COP', fx:3757.08,
+    currency:'COP', fxRef:'COP@2025-12-31',
     sourceId:'envigado-estados-financieros-2025',
     reportType:'official_balance_sheet',
     gestionId:'actual',

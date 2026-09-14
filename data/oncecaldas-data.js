@@ -139,7 +139,7 @@ const oncecaldasFiscalYearMeta = {
     // sitio cuando un balance argentino no declara su propio fx (ver club-data-mapping SKILL.md
     // sección 5, regla 1). Fuente: Superintendencia Financiera de Colombia
     // (superfinanciera.gov.co/powerbi/reportes/514/482/), cruzado contra dolar-colombia.com.
-    currency:'COP', fx:3757.08,
+    currency:'COP', fxRef:'COP@2025-12-31',
     sourceId:'oncecaldas-estados-financieros-2025',
     reportType:'official_balance_sheet',
     gestionId:'actual',

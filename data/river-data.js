@@ -137,7 +137,7 @@ const riverFiscalYearMeta = {
   // en su Anexo V (ver comentario de cabecera) — no una cotización externa. grossDebt/cash/extraRows
   // están en ARS millones nativos ahora (antes USD ya convertido).
   2024: {
-    currency:'ARS', fx:950.50,
+    currency:'ARS', fx:950.50, fxSource:'document_close',
     sourceId:'river-estados-contables-2023-24',
     reportType:'unofficial_mirror',
     gestionId:'brito',

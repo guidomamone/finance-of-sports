@@ -209,12 +209,20 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   pestaña). Lo único que funcionó de forma confiable: cambiar la URL exacta
   del `<script src="...">` con un query string.
   **ACTUALIZADO (Versión 115): esto ya NO es un truco temporal, ahora es una
-  convención del proyecto.** Todos los `<script src>` propios llevan
-  `?v=<ASSET_V>`, y `window.ASSET_V` está declarado en un `<script>` inline
-  justo antes de ellos (los 2 cargadores dinámicos, `loadClubData()` e
-  `I18N.load()`, leen la misma constante). Para forzar recarga durante una
-  sesión de desarrollo: subí ASSET_V a un valor que nunca se pidió antes (ej.
-  `115a`), navegá, confirmá, y dejalo en un valor limpio al terminar. Sirve
+  convención del proyecto.** Todos los `<script src>` propios llevan un `?v=`,
+  y `window.ASSET_V` está declarado en un `<script>` inline justo antes de ellos.
+  **CORRECCIÓN IMPORTANTE (Versión 125, este párrafo decía algo que no era
+  cierto y costó un bug): los `?v=` de los `<script src>` estáticos son
+  LITERALES, NO salen de `ASSET_V`.** Solo los 2 cargadores dinámicos
+  (`loadClubData()` e `I18N.load()`) leen la constante de verdad. O sea que hay
+  que cambiar la constante Y los tags, y cambiar uno solo es PEOR que no cambiar
+  ninguno: el navegador mezcla archivos nuevos con archivos viejos de su caché
+  (pasó al migrar los `fx`: llegó un `currency-map.js` cacheado sin
+  `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, `ReferenceError` en
+  toda la página). Lo chequea `node tools/audit.js` (`asset-v-desfasado`, P1),
+  que compara la constante contra cada tag. Para forzar recarga durante una
+  sesión de desarrollo: subí ASSET_V (y los tags) a un valor que nunca se pidió
+  antes (ej. `115a`), navegá, confirmá, y dejalo en un valor limpio al terminar. Sirve
   igual en producción: sin esto, un visitante que ya entró antes se puede
   quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo. Confirmalo ejecutando `Object.keys(algunaConstDeEseArchivo)` o
   `document.querySelector('style').textContent.includes('tu regla nueva')`

@@ -66,7 +66,7 @@ const villarrealcfExpenseLinesByYear = {
 
 const villarrealcfFiscalYearMeta = {
   2024: {
-    currency:'EUR', fx:0.9337, // 1/1,071 (ver comentario de cabecera)
+    currency:'EUR', fxRef:'EUR@2024-06-30',
     sourceId:'villarrealcf-estados-financieros-2023-24',
     reportType:'official_balance_sheet',
     gestionId: null,

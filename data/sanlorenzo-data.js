@@ -406,21 +406,21 @@ const sanLorenzoExpenseLinesByYear = {
 const sanLorenzoFiscalYearMeta = {
   2011: {
     // Comparativo dentro del balance 2011-2012 — no hay archivo propio descargado para este año.
-    currency:'ARS', fx:4.11, sourceId:'sanlorenzo-memoria-y-balance-2011-12',
+    currency:'ARS', fx:4.11, fxSource:'market_approx', sourceId:'sanlorenzo-memoria-y-balance-2011-12',
     reportType:'official_balance_sheet', gestionId:'abdo',
     grossDebt:187.458841, cash:3.574280,
     profitOnPlayerSales:0, assetSales:0, netInterest:-18.071405, tax:0,
     officialTotalRevenue:72.806956, officialTotalExpenses:96.381038, officialPAT:-41.645487,
   },
   2012: {
-    currency:'ARS', fx:4.4870, sourceId:'sanlorenzo-memoria-y-balance-2011-12',
+    currency:'ARS', fx:4.4870, fxSource:'document_close', sourceId:'sanlorenzo-memoria-y-balance-2011-12',
     reportType:'official_balance_sheet', gestionId:'abdo',
     grossDebt:192.833595, cash:0.562519,
     profitOnPlayerSales:0, assetSales:0, netInterest:-19.552079, tax:0,
     officialTotalRevenue:98.234570, officialTotalExpenses:124.426832, officialPAT:-45.744341,
   },
   2017: {
-    currency:'ARS', fx:16.53, sourceId:'sanlorenzo-memoria-y-balance-2016-17',
+    currency:'ARS', fx:16.53, fxSource:'unknown', sourceId:'sanlorenzo-memoria-y-balance-2016-17',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:795.167813, cash:4.426903,
     profitOnPlayerSales:0, assetSales:0, netInterest:30.027161, tax:0,
@@ -430,7 +430,7 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:775.354479, officialTotalExpenses:804.945023, officialPAT:0.436617,
   },
   2016: {
-    currency:'ARS', fx:14.94, sourceId:'sanlorenzo-memoria-y-balance-2015-16',
+    currency:'ARS', fx:14.94, fxSource:'unknown', sourceId:'sanlorenzo-memoria-y-balance-2015-16',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:295.282497, cash:0.516489,
     // Resultados financieros y por tenencia dio POSITIVO este ejercicio ($93.428.003) — no es un
@@ -441,7 +441,7 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:442.764613, officialTotalExpenses:502.814732, officialPAT:33.377884,
   },
   2015: {
-    currency:'ARS', fx:8.9880, sourceId:'sanlorenzo-memoria-y-balance-2014-15',
+    currency:'ARS', fx:8.9880, fxSource:'unknown', sourceId:'sanlorenzo-memoria-y-balance-2014-15',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:155.775046, cash:0.304329,
     profitOnPlayerSales:0, assetSales:0, netInterest:-33.122045, tax:0,
@@ -450,7 +450,7 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:438.765768, officialTotalExpenses:363.675335, officialPAT:41.968388,
   },
   2013: {
-    currency:'ARS', fx:5.3550, sourceId:'sanlorenzo-memoria-y-balance-2012-13',
+    currency:'ARS', fx:5.3550, fxSource:'document_close', sourceId:'sanlorenzo-memoria-y-balance-2012-13',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:144.192315, cash:0.199171,
     profitOnPlayerSales:0, assetSales:0, netInterest:8.029385, tax:0,
@@ -459,7 +459,7 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:180.832670, officialTotalExpenses:155.932357, officialPAT:32.929698,
   },
   2014: {
-    currency:'ARS', fx:8.15, sourceId:'sanlorenzo-memoria-y-balance-2013-14',
+    currency:'ARS', fxRef:'ARS@2014-06-30', sourceId:'sanlorenzo-memoria-y-balance-2013-14',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:156.616408, cash:0.331774,
     profitOnPlayerSales:0, assetSales:0, netInterest:25.108904, tax:0,
@@ -469,7 +469,7 @@ const sanLorenzoFiscalYearMeta = {
   },
   2024: {
     // Presupuesto (no balance auditado), sección Ordinaria únicamente — ver comentario de cabecera.
-    currency:'ARS', fx:909, sourceId:'sanlorenzo-presupuesto-2023-24',
+    currency:'ARS', fxRef:'ARS@2024-06-30', sourceId:'sanlorenzo-presupuesto-2023-24',
     reportType:'official_budget', gestionId:'moretti',
     // Presupuesto de caja: no incluye Estado de Situación Patrimonial, sin grossDebt/cash (mismo
     // motivo que Boca 2027/Racing 2026-2027).

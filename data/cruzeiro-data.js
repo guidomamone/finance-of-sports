@@ -123,7 +123,7 @@ const cruzeiroExpenseLinesByYear = {
 
 const cruzeiroFiscalYearMeta = {
   2025: {
-    currency:'BRL', fx:5.5024,
+    currency:'BRL', fxRef:'BRL@2025-12-31',
     sourceId:'cruzeiro-informativo-financeiro-2025',
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',

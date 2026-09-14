@@ -80,7 +80,7 @@ const celtavigoExpenseLinesByYear = {
 
 const celtavigoFiscalYearMeta = {
   2025: {
-    currency:'EUR', fx:0.8532, // 1/1,172 (ver comentario de cabecera)
+    currency:'EUR', fxRef:'EUR@2025-06-30',
     sourceId:'celtavigo-cuentas-anuales-individual-2024-25',
     reportType:'official_balance_sheet',
     gestionId: null,

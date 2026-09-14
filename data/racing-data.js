@@ -1003,21 +1003,21 @@ const racingExpenseLinesByYear = {
 // declarado por el propio documento (balance o presupuesto), no una cotización externa.
 const racingFiscalYearMeta = {
   2009: {
-    currency:'USD', fx:3.82,
+    currency:'USD', fx:3.82, fxSource:'market_approx',
     sourceId:'racing-balance-2009',
     reportType:'official_balance_sheet',
     gestionId:null, // pre-Blanco (asumió 2013), presidencia no verificada — ver comentario arriba
     grossDebt:18.393, cash:1.993, profitOnPlayerSales:0, assetSales:0, netInterest:-0.042, tax:0,
   },
   2010: {
-    currency:'USD', fx:3.98,
+    currency:'USD', fx:3.98, fxSource:'market_approx',
     sourceId:'racing-balance-2010',
     reportType:'official_balance_sheet',
     gestionId:null,
     grossDebt:26.459, cash:0.713, profitOnPlayerSales:0, assetSales:0, netInterest:-0.612, tax:0,
   },
   2011: {
-    currency:'USD', fx:4.27,
+    currency:'USD', fx:4.27, fxSource:'market_approx',
     sourceId:'racing-balance-2011',
     reportType:'official_balance_sheet',
     gestionId:null,
@@ -1032,7 +1032,7 @@ const racingFiscalYearMeta = {
   // y Bancos (misma página). netInterest = Resultados Financieros Ingresos−Egresos del Estado de
   // Recursos y Gastos (6.078.346−7.059.282 = −980.936).
   2012: {
-    currency:'ARS', fx:4.7260,
+    currency:'ARS', fx:4.7260, fxSource:'document_close',
     sourceId:'racing-balance-2012',
     reportType:'official_balance_sheet',
     gestionId:null,
@@ -1049,7 +1049,7 @@ const racingFiscalYearMeta = {
   // Financieros Ingresos−Egresos del Estado de Recursos y Gastos (12.161.277−11.995.156 =
   // 166.121).
   2013: {
-    currency:'ARS', fx:5.8720,
+    currency:'ARS', fx:5.8720, fxSource:'document_close',
     sourceId:'racing-balance-2013',
     reportType:'official_balance_sheet',
     gestionId:null,
@@ -1066,7 +1066,7 @@ const racingFiscalYearMeta = {
   // Resultados Financieros Ingresos−Egresos del Estado de Recursos y Gastos
   // (22.318.464−5.867.338 = 16.451.126).
   2014: {
-    currency:'ARS', fx:8.3070,
+    currency:'ARS', fx:8.3070, fxSource:'document_close',
     sourceId:'racing-balance-2014',
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
@@ -1082,7 +1082,7 @@ const racingFiscalYearMeta = {
   // netInterest = Resultados Financieros y por tenencia del Anexo II (4.065.311+19.592.652 =
   // 23.657.963 — este ejercicio no desglosa un lado "Egresos" financieros separado).
   2016: {
-    currency:'ARS', fx:14.83,
+    currency:'ARS', fx:14.83, fxSource:'document_close',
     sourceId:'racing-balance-2016',
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
@@ -1097,7 +1097,7 @@ const racingFiscalYearMeta = {
   // = Resultados Financieros Ingresos−Egresos del Estado de Recursos y Gastos
   // (7.900.977−4.016.785 = 3.884.192).
   2015: {
-    currency:'ARS', fx:9.20,
+    currency:'ARS', fx:9.20, fxSource:'document_close',
     sourceId:'racing-balance-2014-15',
     reportType:'official_balance_sheet',
     gestionId:'blanco',
@@ -1111,7 +1111,7 @@ const racingFiscalYearMeta = {
   // financieros + Diferencias de cambio del Estado de Recursos y Gastos (16.091.594+21.628.821 =
   // 37.720.415).
   2017: {
-    currency:'ARS', fx:17.21,
+    currency:'ARS', fx:17.21, fxSource:'document_close',
     sourceId:'racing-balance-2017',
     reportType:'official_balance_sheet',
     gestionId:'blanco',
@@ -1140,7 +1140,7 @@ const racingFiscalYearMeta = {
   // 1.789.819.233 - 1.350.447.843 + 177.149.112 = 616.520.502, exacto contra "RESULTADO FINAL –
   // Superávit" impreso — ver verifyTieOuts().
   2018: {
-    currency:'ARS', fx:36.65,
+    currency:'ARS', fx:36.65, fxSource:'document_close',
     sourceId:'racing-balance-2018',
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
@@ -1156,7 +1156,7 @@ const racingFiscalYearMeta = {
   // promedio para el período"). Sin balance real, no hay grossDebt/cash/netInterest que declarar
   // (mismo criterio que 2026/2027, únicos otros `official_budget` simples del sitio): quedan en 0.
   2019: {
-    currency:'ARS', fx:40,
+    currency:'ARS', fx:40, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2018-19',
     reportType:'official_budget',
     gestionId:'blanco',
@@ -1177,7 +1177,7 @@ const racingFiscalYearMeta = {
   // comparación en "Estado de resultados" (ver `.claude/skills/club-or-year-onboarding/SKILL.md`
   // sección 7).
   2020: {
-    currency:'ARS', fx:73.98,
+    currency:'ARS', fx:73.98, fxSource:'document_close',
     sourceId:'racing-balance-2019-20',
     reportType:'official_budget_and_balance',
     gestionId:'blanco',
@@ -1200,7 +1200,7 @@ const racingFiscalYearMeta = {
   // Anexo V del ejercicio anterior. `official_balance_sheet` simple (no `official_budget_and_balance`
   // como 2020): el archivo de Racing no tiene un presupuesto propio de este ejercicio de transición.
   2021: {
-    currency:'ARS', fx:95.52,
+    currency:'ARS', fx:95.52, fxSource:'document_close',
     sourceId:'racing-balance-2021',
     reportType:'official_balance_sheet',
     gestionId:'blanco',
@@ -1211,7 +1211,7 @@ const racingFiscalYearMeta = {
     officialTotalRevenue:3335.562848, officialTotalExpenses:3404.446864, officialPAT:7.012082,
   },
   2024: {
-    currency:'ARS', fx:909,
+    currency:'ARS', fx:909, fxSource:'document_close',
     sourceId:'racing-balance-2023-24',
     reportType:'official_balance_sheet',
     gestionId:'blanco',
@@ -1227,7 +1227,7 @@ const racingFiscalYearMeta = {
     officialTotalRevenue:66367.712489, officialTotalExpenses:79167.964692, officialPAT:-6127.619872,
   },
   2025: {
-    currency:'ARS', fx:1196,
+    currency:'ARS', fx:1196, fxSource:'document_close',
     sourceId:'racing-balance-2024-25',
     reportType:'official_balance_sheet',
     gestionId:'milito',
@@ -1238,7 +1238,7 @@ const racingFiscalYearMeta = {
     officialTotalRevenue:87399.617009, officialTotalExpenses:91293.614298, officialPAT:-178.451821,
   },
   2026: {
-    currency:'ARS', fx:1438,
+    currency:'ARS', fx:1438, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2025-26',
     reportType:'official_budget',
     gestionId:'milito',
@@ -1249,7 +1249,7 @@ const racingFiscalYearMeta = {
   // como premisa ("$1.505 para Julio 2026 y $1.870 para Junio 2027") = $1.687,5 — mismo criterio
   // que usa Boca para su Presupuesto 2027 (promedio inicio/cierre declarado por el documento).
   2027: {
-    currency:'ARS', fx:1687.5,
+    currency:'ARS', fx:1687.5, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2026-27',
     reportType:'official_budget',
     gestionId:'milito',
@@ -1307,7 +1307,7 @@ const racingPresupuestoOverlayByYear = {
   // tenían en los slots principales, sin cambios, solo cambió DÓNDE viven estos datos en el
   // archivo.
   2014: {
-    currency:'ARS', fx:6.00,
+    currency:'ARS', fx:6.00, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2013-14',
     revenueLines: [
       { rawLabel:'Campeonatos Oficiales AFA', normalizedCategory:'matchday_competition', amountNative:8.810000 },
@@ -1359,7 +1359,7 @@ const racingPresupuestoOverlayByYear = {
   // `racingFiscalYearMeta[2016]`, `reportType:'official_budget_and_balance'`) — estas mismas
   // líneas de presupuesto, sin tocar un solo valor, se movieron acá como columna de comparación.
   2016: {
-    currency:'ARS', fx:11.80,
+    currency:'ARS', fx:11.80, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2015-16',
     revenueLines: [
       { rawLabel:'Campeonatos Oficiales AFA', normalizedCategory:'matchday_competition', amountNative:23.045000 },
@@ -1419,7 +1419,7 @@ const racingPresupuestoOverlayByYear = {
   // `racingRevenueLinesByYear`/`racingExpenseLinesByYear` de versiones anteriores — mismo criterio,
   // sin cambios, solo cambió DÓNDE viven estos datos en el archivo.
   2018: {
-    currency:'ARS', fx:20,
+    currency:'ARS', fx:20, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2017-18',
     revenueLines: [
       { rawLabel:'Campeonatos Oficiales AFA', normalizedCategory:'matchday_competition', amountNative:20.0 },
@@ -1468,7 +1468,7 @@ const racingPresupuestoOverlayByYear = {
     // Suma exacta a $(1.125.591.043), el "Total de Egresos de Fdos (IV)+(V)" impreso.
   },
   2020: {
-    currency:'ARS', fx:70,
+    currency:'ARS', fx:70, fxSource:'document_assumption',
     sourceId:'racing-presupuesto-2019-20',
     revenueLines: [
       { rawLabel:'Cobranzas por venta de entradas', normalizedCategory:'matchday_competition', amountNative:156.000000 },

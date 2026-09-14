@@ -574,7 +574,7 @@ const bocaFiscalYearMeta = {
   // transferencias de pases, ver comentario de cabecera del archivo). officialTotalExpenses = Total
   // de Gastos impreso pág. 76. officialPAT = Superávit del ejercicio impreso pág. 76. extraRows
   // preserva la etiqueta real del balance para esta fila (en vez de la genérica "Intereses netos").
-  2025: { currency:'ARS', fx:1203, sourceId:'boca-balance-2024-25', reportType:'official_balance_sheet', gestionId:'riquelme',
+  2025: { currency:'ARS', fxRef:'ARS@2025-06-30', sourceId:'boca-balance-2024-25', reportType:'official_balance_sheet', gestionId:'riquelme',
     grossDebt:44566.207208, cash:12520.193181, profitOnPlayerSales:0, assetSales:0, netInterest:711.737276, tax:0,
     extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:711.737276}],
     officialTotalRevenue:237614.566642, officialTotalExpenses:202744.841714, officialPAT:35581.462204 },
@@ -586,7 +586,7 @@ const bocaFiscalYearMeta = {
   // resultado DERIVADO (Ingresos − Gastos del propio presupuesto, $3.402,243 M), no una cifra que el
   // documento imprima con esa etiqueta (un presupuesto no tiene "Superávit del ejercicio" real
   // todavía), se deja como chequeo de consistencia interna igual que Revenue/Expenses.
-  2027: { currency:'ARS', fx:1660, sourceId:'boca-presupuesto-2026-27', reportType:'official_budget', gestionId:'riquelme',
+  2027: { currency:'ARS', fx:1660, fxSource:'document_assumption', sourceId:'boca-presupuesto-2026-27', reportType:'official_budget', gestionId:'riquelme',
     grossDebt:0, cash:0, profitOnPlayerSales:0, assetSales:0, netInterest:0, tax:0,
     officialTotalRevenue:239392.104, officialTotalExpenses:235989.861, officialPAT:3402.243 },
 };

@@ -223,7 +223,7 @@ const unionFiscalYearMeta = {
   2022: {
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
-    currency:'ARS', fx:124, sourceId:'union-memoria-y-balance-116',
+    currency:'ARS', fx:124, fxSource:'market_close', sourceId:'union-memoria-y-balance-116',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:-45.996916, tax:0,
     // SUPERÁVIT FINAL real: $190.408.914 ARS.
@@ -232,7 +232,7 @@ const unionFiscalYearMeta = {
   2023: {
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
-    currency:'ARS', fx:255, sourceId:'union-memoria-y-balance-117',
+    currency:'ARS', fx:255, fxSource:'market_close', sourceId:'union-memoria-y-balance-117',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:145.239007, tax:0,
     // SUPERÁVIT FINAL real: $893.901.287 ARS.
@@ -241,7 +241,7 @@ const unionFiscalYearMeta = {
   2024: {
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo — grossDebt/cash quedan sin cargar, no inventados.
-    currency:'ARS', fx:890.50, sourceId:'union-estados-contables-118-2023-24',
+    currency:'ARS', fx:890.50, fxSource:'market_close', sourceId:'union-estados-contables-118-2023-24',
     reportType:'official_balance_sheet', gestionId:'spahn',
     profitOnPlayerSales:0, assetSales:0, netInterest:-64.084989, tax:0,
     // SUPERÁVIT FINAL real: $1.166.322.977 ARS.
@@ -251,7 +251,7 @@ const unionFiscalYearMeta = {
     // El propio balance no se pudo leer con confianza para su Anexo de moneda extranjera (ver
     // comentario de cabecera) — dólar oficial vendedor BNA de cierre 30/6/2025, investigado
     // externamente.
-    currency:'ARS', fx:1217.87, sourceId:'union-memoria-y-balance-119',
+    currency:'ARS', fx:1217.87, fxSource:'market_close', sourceId:'union-memoria-y-balance-119',
     reportType:'official_balance_sheet', gestionId:'spahn',
     // grossDebt = Deudas corriente (8.619,653532) + no corriente (137,744168), sin Previsiones
     // (704,285792, contingencia). cash = Caja y bancos.

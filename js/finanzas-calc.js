@@ -23,10 +23,20 @@
   // balance/presupuesto declara; los que no se re-extrajeron (placeholders) quedan en currency:'USD'
   // con un fx (documentado o null). Si fx viene null, se usa FX_RATE (placeholder global) para que el
   // toggle igual funcione, aunque sea con un número aproximado.
+  // Versión 125: el fx se resuelve con fxMetaFor() (data/currency-map.js) en vez
+  // de leerse crudo, porque un ejercicio puede traer `fxRef:'BRL@2024-12-31'` en
+  // vez de `fx:` — el número vive en FX_CLOSE y no en el archivo del club. Se
+  // devuelven además `fxSource`/`fxLabel` (de dónde salió ese tipo de cambio),
+  // que es lo que la ficha de fuente de Finanzas muestra al visitante.
   function yearMetaFor(clubId, year){
     const table = CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
     const m = (table && table[year]) || {};
-    return { currency: m.currency || 'USD', fx: (m.fx != null ? m.fx : FX_RATE) };
+    const f = fxMetaFor(m);
+    return {
+      currency: m.currency || 'USD',
+      fx: (f.fx != null ? f.fx : FX_RATE),
+      fxSource: f.source, fxLabel: f.label, fxRef: f.ref,
+    };
   }
 
 
@@ -94,7 +104,17 @@
   // moneda que se está mostrando. `null` si no hay overlay.
   function presupuestoOverlayMetaFor(clubId, year){
     const overlay = presupuestoOverlayFor(clubId, year);
-    return overlay ? { currency: overlay.currency, fx: overlay.fx } : null;
+    if(!overlay) return null;
+    // Mismo criterio que yearMetaFor (Versión 125): el overlay también puede
+    // traer `fxRef` en vez de `fx`, y su procedencia casi siempre es
+    // `document_assumption` (la premisa del presupuesto), distinta de la del
+    // balance del MISMO ejercicio.
+    const f = fxMetaFor(overlay);
+    return {
+      currency: overlay.currency,
+      fx: (f.fx != null ? f.fx : FX_RATE),
+      fxSource: f.source, fxLabel: f.label, fxRef: f.ref,
+    };
   }
 
 

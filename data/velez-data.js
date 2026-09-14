@@ -872,7 +872,7 @@ const velezFiscalYearMeta = {
   // Ejercicio 2015 (N°105): único cargado vía OCR de un PDF de baja resolución — ver comentario en
   // velezExpenseLinesByYear.2015 y en la cabecera del archivo para la metodología de verificación.
   2015: {
-    currency:'ARS', fx:8.988,
+    currency:'ARS', fx:8.988, fxSource:'unknown',
     sourceId:'velez-balance-2014-15',
     reportType:'official_balance_sheet',
     gestionId:'gamez',
@@ -894,7 +894,7 @@ const velezFiscalYearMeta = {
   // velezExpenseLinesByYear.2017).
   // Ejercicio 2016 (N°106): también vía OCR, sin ruido detectado (todas las sumas cerraron exacto).
   2016: {
-    currency:'ARS', fx:14.94,
+    currency:'ARS', fx:14.94, fxSource:'unknown',
     sourceId:'velez-balance-2015-16',
     reportType:'official_balance_sheet',
     gestionId:'gamez',
@@ -910,7 +910,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:360.607477, officialTotalExpenses:386.948224, officialPAT:66.227589,
   },
   2017: {
-    currency:'ARS', fx:16.53,
+    currency:'ARS', fx:16.53, fxSource:'document_close',
     sourceId:'velez-balance-2016-17',
     reportType:'official_balance_sheet',
     gestionId:'gamez',
@@ -927,7 +927,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:425.405393, officialTotalExpenses:490.176531, officialPAT:-73.534953,
   },
   2018: {
-    currency:'ARS', fx:28.75,
+    currency:'ARS', fx:28.75, fxSource:'document_close',
     sourceId:'velez-balance-2017-18',
     reportType:'official_balance_sheet',
     gestionId:'rapisarda',
@@ -946,7 +946,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:526.713827, officialTotalExpenses:673.975171, officialPAT:342.815648,
   },
   2019: {
-    currency:'ARS', fx:42.263,
+    currency:'ARS', fx:42.263, fxSource:'document_close',
     sourceId:'velez-balance-2018-19',
     reportType:'official_balance_sheet',
     gestionId:'rapisarda',
@@ -962,7 +962,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:882.811660, officialTotalExpenses:1315.509072, officialPAT:370.018627,
   },
   2020: {
-    currency:'ARS', fx:70.26,
+    currency:'ARS', fx:70.26, fxSource:'document_close',
     sourceId:'velez-balance-2019-20',
     reportType:'official_balance_sheet',
     gestionId:'rapisarda',
@@ -978,7 +978,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:1375.210181, officialTotalExpenses:2033.468145, officialPAT:-145.019616,
   },
   2021: {
-    currency:'ARS', fx:95.52,
+    currency:'ARS', fx:95.52, fxSource:'document_close',
     sourceId:'velez-balance-2020-21',
     reportType:'official_balance_sheet',
     gestionId:'rapisarda',
@@ -994,7 +994,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:2346.353726, officialTotalExpenses:3073.742339, officialPAT:-753.625872,
   },
   2022: {
-    currency:'ARS', fx:125.03,
+    currency:'ARS', fx:125.03, fxSource:'document_close',
     sourceId:'velez-balance-2021-22',
     reportType:'official_balance_sheet',
     gestionId:'rapisarda',
@@ -1015,7 +1015,7 @@ const velezFiscalYearMeta = {
   // JUSTO después del cierre de este ejercicio (30/6/2023); el ejercicio en sí (1°/7/2022-30/6/2023)
   // transcurrió íntegro bajo su presidencia, por eso sigue siendo gestionId:'rapisarda'.
   2023: {
-    currency:'ARS', fx:256.30,
+    currency:'ARS', fx:256.30, fxSource:'document_close',
     sourceId:'velez-balance-2022-23',
     reportType:'official_balance_sheet',
     gestionId:'rapisarda',
@@ -1033,7 +1033,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:10416.621579, officialTotalExpenses:15747.530442, officialPAT:522.234138,
   },
   2024: {
-    currency:'ARS', fx:909,
+    currency:'ARS', fx:909, fxSource:'document_close',
     sourceId:'velez-balance-2023-24',
     reportType:'official_balance_sheet',
     gestionId:'berlanga',
@@ -1053,7 +1053,7 @@ const velezFiscalYearMeta = {
     officialTotalRevenue:46598.890489, officialTotalExpenses:63116.161701, officialPAT:-1113.139098,
   },
   2025: {
-    currency:'ARS', fx:1196,
+    currency:'ARS', fx:1196, fxSource:'document_close',
     sourceId:'velez-balance-2024-25',
     reportType:'official_balance_sheet',
     gestionId:'berlanga',

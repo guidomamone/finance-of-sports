@@ -94,7 +94,7 @@ const independienteExpenseLinesByYear = {
 
 const independienteFiscalYearMeta = {
   2024: {
-    currency:'ARS', fx:890.50,
+    currency:'ARS', fx:890.50, fxSource:'document_close',
     sourceId:'independiente-memoria-y-balance-2023-24',
     reportType:'official_balance_sheet',
     gestionId:'grindetti',

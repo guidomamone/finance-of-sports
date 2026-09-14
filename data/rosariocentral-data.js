@@ -118,7 +118,7 @@ const rosarioCentralFiscalYearMeta = {
     // Ver DUDA ABIERTA en el comentario de cabecera: el balance declara $255 (Activo) y $268
     // (Pasivo) para USD en el mismo Anexo IV. Se usó $255 (coherente con `cash`, que sale de "Caja
     // y bancos").
-    currency:'ARS', fx:255,
+    currency:'ARS', fx:255, fxSource:'document_close',
     sourceId:'rosariocentral-estados-contables-2022-23',
     reportType:'official_balance_sheet',
     gestionId:'belloso',

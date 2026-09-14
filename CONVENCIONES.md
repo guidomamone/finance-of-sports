@@ -15,6 +15,31 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (Versión 125, a pedido de Guido:
+  "si yo mañana quiero auditar los tipos de cambio usado para cada club para cada año y entender si
+  salieron de internet o del club, ¿puedo hacerlo sin drama?" — la respuesta era que no). Cada
+  ejercicio lleva `fxSource` con uno de los 6 valores de `FX_SOURCE` (`data/currency-map.js`), o
+  `fxRef` apuntando a `FX_CLOSE`. **La regla de cuál de las dos formas usar**: si el tipo de cambio
+  lo declara el propio documento, el número va LITERAL en el archivo del club (`fx:909,
+  fxSource:'document_close'`), porque es un dato de ESE club y dos clubes pueden declarar valores
+  distintos para el mismo día; si el documento no declara nada y se usó una cotización pública, NO
+  se escribe el número en el archivo del club, se referencia la entrada de `FX_CLOSE`
+  (`fxRef:'EUR@2025-06-30'`), porque es un dato del mercado y antes se copiaba club por club (33
+  copias de 9 valores). `document_assumption` (la premisa de un presupuesto) es una categoría
+  aparte de `document_close` a propósito: un presupuesto declara un pronóstico que puede terminar
+  equivocado, no un cierre ya ocurrido. Detalle completo y tabla de los 6 valores en
+  `.claude/skills/club-data-mapping/SKILL.md` sección 5. Lo chequea `node tools/audit.js`: un `fx`
+  sin procedencia sale listado, y una cotización de mercado que contradiga a la tabla para la misma
+  fecha también.
+- ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO (Versión 125, bug real de esta sesión): `window.ASSET_V`
+  es una constante inline, pero los `?v=` de los `<script src>` estáticos del final del `<body>` son
+  LITERALES — no salen de ella (solo los 2 cargadores dinámicos, `loadClubData()` e `I18N.load()`,
+  la leen de verdad). Subir la constante y olvidarse de los tags deja al navegador sirviendo los
+  `js/data` viejos de su caché con el HTML nuevo: pasó al migrar los `fx`, llegó un
+  `currency-map.js` cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y la
+  página entera tiró `ReferenceError`. El comentario de `index.html` y `CLAUDE.md` decían que los
+  tags llevaban la constante, que no era cierto. Ahora lo chequea `node tools/audit.js`
+  (`asset-v-desfasado`, P1): compara la constante contra cada tag.
 - SEGUNDO EJERCICIO NUEVO DE SAN LORENZO + REGLA DE PRESUPUESTOS EN CAJA (Versión 97, Guido: "quiero
   onboardear todos los pdf que tengamos"): 2 decisiones de arquitectura documentadas y 1 ejercicio
   nuevo cargado. (1) Instituto: el Presupuesto 2025 (año calendario, ya transcripto) NO se carga —

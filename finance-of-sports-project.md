@@ -5112,6 +5112,31 @@ Una verificación final con `pdfinfo` sobre las 65 descargas encontró una corru
 
 ---
 
+## Versión 125 — Que un tipo de cambio pueda auditarse: de dónde salió cada uno, y las cotizaciones dichas una sola vez
+
+Esta sesión arrancó como una conversación sobre los tres riesgos de escala que quedaban en el mapa de procesos. Guido hizo una pregunta concreta sobre el primero: *"si yo mañana quiero auditar los tipos de cambio usado para cada club para cada año y entender si salieron de internet o del club, ¿puedo hacerlo sin drama?"*.
+
+La respuesta, medida antes de contestarla, era que no. De los 89 `fx` cargados, 57 tenían un comentario cerca, 26 solo una mención en el header del archivo, y **18 no tenían ningún rastro**. Los 71 que sí decían algo lo decían en prosa, con unas diez redacciones distintas para la misma idea: "el documento no declara tipo de cambio propio", "PTAX de cierre 31/12/2024 (venda)", "cotización de cierre BCE, investigada vía web", "la tasa dominante que declara el propio balance en su Anexo". Auditar los 41 clubes era abrir 44 archivos y leer comentarios, y no había forma de filtrar, contar ni chequear nada.
+
+Guido agregó el dato que terminó definiendo el modelo: **"el tema es que para Presupuesto, los clubes toman assumption de FX siempre"**. Es cierto y estaba a la vista en los datos sin que nadie lo hubiera nombrado: Boca 2027 usa 1660, que es el promedio entre el dólar de inicio ($1.480) y el de cierre ($1.840) que asume el propio presupuesto; Racing tiene presupuestos con 40, 1438 y 1687,5, todos declarados como premisa macro del documento. Eso no es ni un cierre de mercado ni un tipo de cambio realizado: es un pronóstico, y puede terminar equivocado. Por eso `document_assumption` quedó como una procedencia propia y no como un `document_close` más — comparar un presupuesto en USD contra un balance en USD mezcla un supuesto con un cierre ya ocurrido, y el sitio necesitaba poder decirlo.
+
+Las seis procedencias (`document_close`, `document_assumption`, `market_close`, `market_approx`, `placeholder`, `unknown`) no se inventaron: son las cuatro reglas que `club-data-mapping` §5 ya tenía escritas en orden de preferencia, más el caso "la cotización exacta no aparece" que el mismo skill documentaba, más el estado "todavía no se sabe" para no fingir certeza.
+
+La otra mitad del cambio es `FX_CLOSE`, la tabla de cotizaciones de mercado por moneda y fecha de cierre. La duplicación era real y crecía sola: el cierre del real al 31/12/2024 escrito a mano en cinco archivos, el euro al 30/6/2025 en nueve, el ¥150 de la J.League en diez — 33 copias de 9 valores. La regla que hace que la tabla no contradiga la regla #0 del skill ("nunca reuses el fx de un club para otro") es la distinción entre de quién es el dato: **lo que declara un documento es un dato de ESE club** y va literal en su archivo (dos clubes pueden declarar valores distintos para el mismo día y los dos están bien); **una cotización pública es un dato del mercado**, no del club, y se dice una vez. Una `market_approx` se queda literal a propósito, para que nadie la tome de la tabla creyendo que es un cierre oficial.
+
+Clasificar los 89 valores no fue mecánico. Dos casos que salieron del barrido:
+
+- **Vélez no tenía documentada la procedencia de ninguno de sus 11 ejercicios.** Buscarla en las transcripciones mostró que sus balances declaran DOS cotizaciones de USD (una de Activo y una de Pasivo, separadas por ~$0,10 consistentemente: 909 y 912 al 30/6/2024, 1196 y 1205 al 30/6/2025), y que los nueve valores cargados 2017-2025 son siempre el de Activo — el mismo criterio que Rosario Central y Estudiantes ya tenían escrito. Se verificaron uno por uno. Los de 2015 y 2016 quedaron sin confirmar porque el OCR de esos dos escaneos no preservó la columna de cambio vigente.
+- **Unión 2024 usa 890,50 ARS/USD para el 30/6/2024**, cuando Racing, Vélez y Estudiantes declaran 909 para ese mismo cierre, y el propio comentario de Unión dice que se usó "el dólar oficial vendedor BNA de cierre", que ese día era ~912. Es el primer candidato real a un tipo de cambio traído de otro club. Guido decidió no tocar el número sin el documento delante, que es el criterio correcto para un dato publicado: quedó marcado y lo reporta la auditoría.
+
+El chequeo que encuentra eso último es nuevo y vive en `tools/audit.js`, no en una herramienta aparte: la sesión iba a crear un `tools/audit-fx.js` hasta que apareció, a mitad de trabajo, que otra sesión acababa de crear `tools/audit.js` (Versión 122) en el mismo repo. Dos herramientas de auditoría en paralelo hubieran sido exactamente la duplicación que esta sesión venía a eliminar.
+
+**El bug real de la sesión** no estuvo en los datos. Después de migrar los `fx`, el sitio tiró `ReferenceError: fxMetaFor is not defined` en toda la página. La causa: los `?v=` de los `<script src>` estáticos de `index.html` son **literales**, no salen de `window.ASSET_V`; solo los dos cargadores dinámicos leen la constante. Subir la constante y dejar los tags en `?v=121` hizo que el navegador sirviera `currency-map.js` desde su caché (la versión vieja, sin `fxMetaFor()`) junto con un `finanzas-calc.js` nuevo que ya lo llamaba. Tanto el comentario de `index.html` como `CLAUDE.md` afirmaban que los tags llevaban la constante — no era cierto, y es el tipo de afirmación que se vuelve trampa justo cuando hace falta. Se corrigieron los dos textos y se agregó `asset-v-desfasado` (P1) a la auditoría, que compara la constante contra cada tag; se verificó inyectando el desfasaje a propósito.
+
+Estado al cerrar: `auditAll()` 222 checks, 0 mismatches, 0 warnings; `node tools/audit.js` 0 P0, 0 P1. Lo que quedó sin resolver (Unión 2024, los 5 `unknown`, las 8 cotizaciones todavía fuera de la tabla) no quedó en un comentario: lo lista la auditoría y quedó como to-do 21.
+
+---
+
 # VOLUMEN 0 — ORIGEN DEL PROYECTO (antes de la Versión 10)
 
 Todo lo que sigue en este Volumen 0 estuvo, hasta hoy, en un archivo suelto

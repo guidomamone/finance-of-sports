@@ -73,8 +73,9 @@ se reescribe, no se acumula.
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
   ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 52 P2,
-  7 P3 (ver to-do 20).
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 58 P2,
+  9 P3 (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
+  tipo de cambio, no solo que exista y sea plausible.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
   solo pueden revisar lo que está en memoria, así que una carga normal de la
   página audita SOLO Boca (6 de los 222 checks). Para auditar TODO hay que
@@ -102,10 +103,25 @@ se reescribe, no se acumula.
   todavía (pendiente, no es una decisión): el párrafo largo "Calidad de dato por
   club" de Fuentes, los 3 cards de competencia del presupuesto de Boca, y los
   avisos por tipo de reporte.
-- CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=` con
-  `window.ASSET_V` (declarado inline justo antes de ellos). SUBIR ESE NÚMERO al
-  cambiar cualquier archivo de `js/` o `data/`, si no un visitante que ya entró
-  antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
+- CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
+  NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
+  ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
+  OJO, SE SUBE EN DOS LUGARES (corregido en la Versión 125, hasta acá este
+  párrafo decía algo que no era cierto): `window.ASSET_V` es una constante
+  inline, pero los `?v=` de los `<script src>` estáticos son LITERALES y no salen
+  de ella — solo los 2 cargadores dinámicos (`loadClubData()`, `I18N.load()`) la
+  leen. Hay que cambiar la constante Y los tags. Subir uno solo es peor que no
+  subir ninguno: mezcla archivos nuevos con archivos viejos de la caché, que es
+  el estado en el que el sitio tira `ReferenceError`. Lo chequea
+  `node tools/audit.js` (`asset-v-desfasado`, P1).
+- PROCEDENCIA DEL TIPO DE CAMBIO (Versión 125): cada ejercicio declara de dónde
+  salió su `fx` — `fxSource` con uno de los 6 valores de `FX_SOURCE`
+  (`data/currency-map.js`), o `fxRef` apuntando a `FX_CLOSE`, la tabla de
+  cotizaciones de mercado por moneda y fecha de cierre. La regla: lo que declara
+  el documento va literal en el archivo del club; lo que es cotización pública se
+  dice una vez en la tabla y se referencia. Antes esto vivía en prosa, con 10
+  redacciones distintas, y 18 de los 89 valores no decían nada. Ver
+  `CONVENCIONES.md` y `club-data-mapping/SKILL.md` sección 5.
 - BRANDING: RESUELTO en la Versión 117 (decisión de Guido). La marca es distinta
   por idioma, a propósito: "El deporte en Números" en castellano, "Finance of
   Sports" en inglés (clave `site.name`, `data/lang/en.js`), que es además el
@@ -584,6 +600,23 @@ o directamente retomar en la próxima sesión)
         genérico, y mostrar "—" en vez de "$0" en los buckets que la fuente no reporta. Para River
         hay que chequear antes si su balance trae la nota de costos por naturaleza, que sería mejor
         que el bolsón. NINGUNO de los dos cambios mueve un número: cambian bajo qué fila se muestra.
+21. NUEVO (Versión 125): lo que dejó pendiente la migración de procedencia de los tipos de cambio.
+    Los 3 salen listados por `node tools/audit.js`, no hace falta buscarlos a mano:
+    (a) UNIÓN 2024 usa 890,50 ARS/USD como cotización de mercado para el 30/6/2024, cuando Racing,
+        Vélez y Estudiantes declaran 909 para ese mismo cierre y el propio comentario de Unión dice
+        "dólar BNA vendedor de cierre", que ese día era ~912. Es el primer candidato real a un fx
+        traído de otro club, que el skill prohíbe explícitamente. No se tocó el número sin tener el
+        documento delante (decisión de Guido). Revisar el Anexo de moneda extranjera de Unión.
+    (b) 5 ejercicios con `fxSource:'unknown'`: San Lorenzo 2015/2016/2017 y Vélez 2015/2016. Los de
+        Vélez no se pudieron confirmar porque la transcripción de esos 2 escaneos no preservó la
+        columna de cambio vigente (los otros 9 años de Vélez SÍ se verificaron uno por uno contra su
+        Anexo VI en esta sesión). Los de San Lorenzo, porque sus PDFs 2014-15, 2015-16 y 2016-17
+        nunca se transcribieron a `.md`, contra la regla del proyecto — transcribirlos es el paso
+        que además resuelve esto. OJO: San Lorenzo y Vélez tienen EXACTAMENTE los mismos valores en
+        2015 (8,988) y 2016 (14,94), así que puede haber una copia entre clubes detrás.
+    (c) 8 cotizaciones de mercado escritas en el archivo de un club en vez de `FX_CLOSE` (los 5
+        ejercicios de Argentinos Juniors y 3 de Unión). Mientras las use un solo club no duplican
+        nada; se mueven a la tabla al confirmar la fecha exacta de cierre de cada una.
 
 SI ALGO NO CIERRA (números, totales)
 Antes de tocar nada, correr una verificación aritmética simple (sumar las
@@ -1455,16 +1488,16 @@ acumula historial, solo mantiene ESTADO ACTUAL/TO-DO LIST al día.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '121';</script>
-<script src="data/lang/langs.js?v=121"></script>
-<script src="js/i18n.js?v=121"></script>
-<script src="data/clubs.js?v=121"></script>
-<script src="data/category-map.js?v=121"></script>
-<script src="data/site-labels.js?v=121"></script>
-<script src="data/currency-map.js?v=121"></script>
-<script src="data/boca-data.js?v=121"></script>
-<script src="js/finanzas-calc.js?v=121"></script>
-<script src="js/finanzas-render.js?v=121"></script>
+<script>window.ASSET_V = '125';</script>
+<script src="data/lang/langs.js?v=125"></script>
+<script src="js/i18n.js?v=125"></script>
+<script src="data/clubs.js?v=125"></script>
+<script src="data/category-map.js?v=125"></script>
+<script src="data/site-labels.js?v=125"></script>
+<script src="data/currency-map.js?v=125"></script>
+<script src="data/boca-data.js?v=125"></script>
+<script src="js/finanzas-calc.js?v=125"></script>
+<script src="js/finanzas-render.js?v=125"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

@@ -115,7 +115,7 @@ const ituanoExpenseLinesByYear = {
 
 const ituanoFiscalYearMeta = {
   2024: {
-    currency:'BRL', fx:6.1923,
+    currency:'BRL', fxRef:'BRL@2024-12-31',
     sourceId:'ituano-relatorio-auditoria-2024',
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',

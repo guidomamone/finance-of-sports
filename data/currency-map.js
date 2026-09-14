@@ -90,6 +90,123 @@ function currencyMetaFor(code){
   return CURRENCY_META[code] || DEFAULT_CURRENCY_META;
 }
 
+// ============================================================================
+// PROCEDENCIA DEL TIPO DE CAMBIO (Versión 125)
+//
+// EL PROBLEMA QUE RESUELVE: hasta acá, `fx` era un número suelto y de dónde
+// salía se contaba en prosa, en el comentario de cada año o en el header del
+// archivo, con una decena de redacciones distintas para la misma idea ("el
+// documento no declara tipo de cambio propio", "PTAX de cierre", "cotización de
+// cierre BCE investigada vía web", "la tasa dominante que declara el propio
+// balance"). Auditar los 41 clubes era abrir 44 archivos y leer comentarios, y
+// 18 de los 89 valores no decían nada. Nada de eso se podía filtrar, contar ni
+// chequear. Ahora cada `fx` declara su procedencia en un campo, y
+// `node tools/audit.js` la lee.
+//
+// LAS 6 PROCEDENCIAS, y por qué son 6 y no 2 (pedido explícito de Guido: "para
+// Presupuesto, los clubes toman assumption de FX siempre"). Las 4 primeras son
+// las 4 reglas de `.claude/skills/club-data-mapping/SKILL.md` sección 5, en su
+// mismo orden de preferencia:
+const FX_SOURCE = {
+  // Regla 0: el balance declara su propio tipo de cambio de cierre (Anexo de
+  // "Activos y pasivos en moneda extranjera"). Es el más fiel y el que gana
+  // siempre que exista.
+  document_close: {
+    label: 'Declarado por el balance',
+    detail: 'Tipo de cambio de cierre que el propio balance declara en su Anexo de moneda extranjera',
+  },
+  // Regla 3: un presupuesto NO tiene cierre todavía — declara un supuesto sobre
+  // el futuro ("Estimamos un TC de $X en promedio para el período"). Es una
+  // categoría propia y no un `document_close` más porque un supuesto puede
+  // terminar equivocado: comparar un presupuesto en USD contra un balance en
+  // USD mezcla un pronóstico con un cierre realizado.
+  document_assumption: {
+    label: 'Premisa del presupuesto',
+    detail: 'Tipo de cambio que el propio presupuesto declara como supuesto para un ejercicio que todavía no cerró',
+  },
+  // Reglas 1 y 2: el documento no declara ninguno, se usó la cotización oficial
+  // de la fecha de cierre. Estas son las que se repetían club por club y ahora
+  // viven una sola vez en FX_CLOSE, abajo.
+  market_close: {
+    label: 'Cotización oficial de cierre',
+    detail: 'El documento no declara ninguno: se usó la cotización oficial de la fecha de cierre (BCRA, BNA, PTAX, BCE, TRM)',
+  },
+  // "Cuándo la cotización exacta no aparece" del mismo skill: para fechas
+  // viejas, interpolada o de fecha cercana. Se distingue a propósito de
+  // `market_close` porque el skill exige poder separar "esto es exacto" de
+  // "esto es una estimación razonable".
+  market_approx: {
+    label: 'Cotización aproximada',
+    detail: 'No se consiguió la cotización exacta del día: se interpoló o se usó una de fecha cercana',
+  },
+  // No sale de ninguna fuente. Existe para que el toggle de moneda funcione.
+  placeholder: {
+    label: 'Valor de referencia',
+    detail: 'No sale de ninguna fuente: existe solo para que el toggle de moneda funcione',
+  },
+  // Cargado antes de que existiera este campo, sin rastro de su procedencia.
+  // NO es un estado aceptable a largo plazo: `tools/audit.js` lo lista como
+  // pendiente hasta que alguien lo verifique contra el documento.
+  unknown: {
+    label: 'Sin determinar',
+    detail: 'Todavía no se verificó de dónde salió; queda listado como pendiente en node tools/audit.js',
+  },
+};
+
+// FX_CLOSE: las cotizaciones de mercado, UNA SOLA VEZ, por moneda y fecha de
+// cierre. Antes de esta tabla el cierre del real al 31/12/2024 (R$6,1923) estaba
+// escrito a mano en 5 archivos, el euro al 30/6/2025 en 9 y el ¥150 de la
+// J.League en 10: 33 copias de 9 valores, y nada avisaba si una quedaba
+// distinta. Las copias crecen con la cantidad de clubes; la verdad crece con
+// (moneda × fecha de cierre), que está acotada.
+//
+// LA REGLA, que es lo que hace que esta tabla no contradiga la regla #0 del
+// skill ("nunca reuses el fx de un club para otro"):
+//   - `fx:` literal en el archivo del club = lo declara ESE documento. Dos
+//     clubes pueden declarar valores distintos para el mismo día y los dos
+//     están bien. NUNCA se mueve a esta tabla.
+//   - `fxRef:'MONEDA@AAAA-MM-DD'` = el documento no declaraba nada y se usó la
+//     cotización pública de esa fecha. Eso no es un dato del club, es un dato
+//     del mercado: se dice una vez acá y lo referencian todos los que lo usen.
+// Solo entran cotizaciones EXACTAS y verificadas: una `market_approx` se queda
+// como literal en el archivo del club, para que nadie la reuse creyendo que es
+// un cierre oficial.
+const FX_CLOSE = {
+  'ARS@2014-06-30': { fx: 8.15,    source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2014' },
+  'ARS@2024-06-30': { fx: 909,     source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2024' },
+  'ARS@2025-06-30': { fx: 1203,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2025' },
+  'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },
+  'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },
+  'COP@2025-12-31': { fx: 3757.08, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025' },
+  'EUR@2024-06-30': { fx: 0.9337,  source: 'market_close', label: 'Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD)' },
+  'EUR@2025-06-30': { fx: 0.8532,  source: 'market_close', label: 'Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD)' },
+  // Placeholder, no cotización: la J.League no declara ninguna en su Club
+  // Licensing Report y los 10 clubes de Japón salen de ese mismo documento.
+  'JPY@2025-12-31': { fx: 150,     source: 'placeholder',  label: 'Referencia redonda de ¥150 por USD; el documento de la J.League no declara ninguna' },
+};
+
+// fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
+// de presupuesto) a {fx, source, label, ref}, mirando `fxRef` en FX_CLOSE
+// cuando corresponde. ES EL ÚNICO LUGAR que resuelve `fxRef`: todo lo que
+// necesite un fx (yearMetaFor, presupuestoOverlayMetaFor, checkFxSanity,
+// tools/audit.js) pasa por acá en vez de leer `meta.fx` directo, si no un
+// ejercicio con `fxRef` parece un ejercicio sin tipo de cambio.
+// `fx:null` (los placeholders históricos de Boca/River) sigue devolviendo null:
+// el fallback al FX_RATE global es responsabilidad de yearMetaFor, como siempre.
+function fxMetaFor(meta){
+  const m = meta || {};
+  if(m.fxRef){
+    const entry = FX_CLOSE[m.fxRef];
+    if(!entry){
+      console.warn(`[fx] fxRef desconocido: '${m.fxRef}' — no está en FX_CLOSE (data/currency-map.js). El ejercicio queda sin tipo de cambio.`);
+      return { fx: null, source: 'unknown', label: `Referencia inexistente: ${m.fxRef}`, ref: m.fxRef };
+    }
+    return { fx: entry.fx, source: entry.source, label: entry.label, ref: m.fxRef };
+  }
+  const source = m.fxSource || (m.fx == null ? 'placeholder' : 'unknown');
+  return { fx: (m.fx != null ? m.fx : null), source, label: (FX_SOURCE[source] || {}).label || source, ref: null };
+}
+
 // FX_PLAUSIBLE_RANGE (Versión 112): rango [min, max] de unidades de moneda nativa por 1 USD que se
 // consideran plausibles para esa moneda, usado SOLO para detectar un error de carga (`fx` invertido
 // o tipeado con el orden de magnitud equivocado), nunca para validar precisión — el `fx` real de
@@ -130,12 +247,17 @@ function checkFxSanity(){
     if(!meta) return;
     Object.keys(meta).forEach(year => {
       const y = meta[year];
-      if(!y || y.currency === 'USD' || y.fx == null) return;
+      if(!y || y.currency === 'USD') return;
+      // Versión 125: por fxMetaFor y no por `y.fx` directo — un ejercicio con
+      // `fxRef` tiene el número en FX_CLOSE, no en su propio archivo, y leerlo
+      // crudo lo haría pasar por "sin fx" y saltearse este chequeo.
+      const fx = fxMetaFor(y).fx;
+      if(fx == null) return;
       const range = FX_PLAUSIBLE_RANGE[y.currency];
       if(!range) return;
       const [min, max] = range;
-      if(y.fx < min || y.fx > max){
-        console.warn(`[fx sanity] ${clubId} ${year}: fx:${y.fx} para ${y.currency} está fuera del rango plausible [${min}, ${max}] (moneda nativa por 1 USD) — revisar si está invertido o con el orden de magnitud equivocado.`);
+      if(fx < min || fx > max){
+        console.warn(`[fx sanity] ${clubId} ${year}: fx:${fx} para ${y.currency} está fuera del rango plausible [${min}, ${max}] (moneda nativa por 1 USD) — revisar si está invertido o con el orden de magnitud equivocado.`);
       }
     });
   });

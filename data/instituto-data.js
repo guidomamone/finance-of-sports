@@ -105,7 +105,7 @@ const institutoExpenseLinesByYear = {
 
 const institutoFiscalYearMeta = {
   2024: {
-    currency:'ARS', fx:909,
+    currency:'ARS', fxRef:'ARS@2024-06-30',
     sourceId:'instituto-balance-2023-24',
     reportType:'official_balance_sheet',
     gestionId:'cavagliatto',

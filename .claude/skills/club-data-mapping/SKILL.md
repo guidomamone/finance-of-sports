@@ -205,6 +205,58 @@ Qué tipo de cambio usar, en orden de preferencia:
    puntos (ej. Racing 2026-27: "$1.505 para julio 2026 y $1.870 para junio 2027") en vez de un
    promedio único, promedialos vos (mismo criterio que ya usa Boca 2027: inicio+cierre / 2).
 
+### Cómo se ESCRIBE esa procedencia en el archivo (Versión 125): `fxSource` y `fxRef`
+
+Las 4 reglas de arriba ya no se cuentan en un comentario: cada ejercicio declara de dónde salió su
+tipo de cambio en un campo, y `node tools/audit.js` lo lee. **Un `fx` nuevo sin `fxSource` (o sin
+`fxRef`) sale listado como pendiente en la auditoría**, así que esto no es opcional al cargar un
+club.
+
+Los 6 valores posibles (definidos en `FX_SOURCE`, `data/currency-map.js`) mapean uno a uno con las
+reglas de arriba:
+
+| `fxSource` | Cuándo | Regla |
+|---|---|---|
+| `document_close` | el balance declara su TC de cierre en su Anexo de moneda extranjera | 0 |
+| `document_assumption` | el presupuesto declara un TC como premisa (todavía no hay cierre) | 3 |
+| `market_close` | el documento no declara ninguno, se usó la cotización oficial de la fecha de cierre | 1 y 2 |
+| `market_approx` | no se consiguió la cotización exacta: interpolada o de fecha cercana | "Cuándo la cotización exacta no aparece" |
+| `placeholder` | no sale de ninguna fuente, existe para que el toggle funcione | — |
+| `unknown` | cargado antes de que existiera el campo, sin rastro | — (es un to-do, no un destino) |
+
+**`document_assumption` es una categoría propia y no un `document_close` más** (pedido explícito de
+Guido: "para Presupuesto, los clubes toman assumption de FX siempre"). Un presupuesto declara un
+pronóstico, que puede terminar equivocado; un balance declara un cierre ya ocurrido. Comparar un
+presupuesto en USD contra un balance en USD mezcla las dos cosas, y el sitio necesita poder decirlo.
+
+**Cómo se escribe, y por qué hay dos formas:**
+
+```js
+// El documento lo declara → el número va literal, en el archivo del club.
+2024: { currency:'ARS', fx:909, fxSource:'document_close', ... }
+
+// El documento no declara nada y se usó una cotización pública → NO se escribe el
+// número acá: se referencia la entrada de FX_CLOSE (data/currency-map.js).
+2025: { currency:'EUR', fxRef:'EUR@2025-06-30', ... }
+```
+
+La diferencia no es estilística, es la regla #0 otra vez: **el TC declarado por un documento es un
+dato de ESE club** (dos clubes pueden declarar valores distintos para el mismo día y los dos están
+bien, por eso nunca se comparte), mientras que **una cotización de mercado es un dato del mercado**,
+no del club — se dice una vez en `FX_CLOSE` y la referencian todos los que la usen. Antes de la
+Versión 125 las cotizaciones se copiaban club por club: el cierre del real al 31/12/2024 estaba
+escrito a mano en 5 archivos, el euro al 30/6/2025 en 9 y el ¥150 de la J.League en 10.
+
+**Si la moneda y fecha que necesitás no está en `FX_CLOSE`, agregala ahí** (con su `label`: qué
+cotización es y de qué organismo — PTAX, BCRA, BNA, BCE, TRM), no en el archivo del club. Excepción:
+una `market_approx` se queda como literal en el archivo del club, para que nadie la reuse desde la
+tabla creyendo que es un cierre oficial.
+
+**Lo que este campo ya encontró** (para que se entienda qué tipo de error atrapa): Unión 2024 usa
+890,50 ARS/USD como cotización de mercado para el 30/6/2024, cuando Racing, Vélez y Estudiantes
+declaran 909 para ese mismo cierre y el propio comentario de Unión dice "dólar BNA vendedor", que
+ese día era ~912. Lo reporta `node tools/audit.js` como `fx-mercado-discrepante`.
+
 ### Guardar amountNative en la moneda nativa del club, no pre-convertido a USD (regla desde la Versión 32)
 
 Hasta la Versión 31 de finance-of-sports, River y Racing guardaban `amountNative` YA CONVERTIDO a
