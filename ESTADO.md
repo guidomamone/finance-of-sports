@@ -117,15 +117,18 @@ se reescribe, no se acumula.
   primer y segundo escalón argentino son `ar-primera` y `ar-primeranacional`, y
   NO el `ar-lpf` del prompt del selector: esa categoría cambió de organizador
   tres veces en el período cargado, y el id nombra el escalón, que no cambia.
-- ÍNDICE LIVIANO DE CLUBES (Versión 129): `data/club-index.js`, GENERADO, con lo
-  que hay que mostrar de un club ANTES de entrar a él (nombre, país, calidad del
-  dato, cuántos ejercicios, el más reciente). Existe porque eso vive adentro de
-  `data/<club>-data.js`, que es justamente lo que no se carga hasta que el
-  visitante elige ese club: con la página recién abierta, `clubs{}` tiene 41
-  entradas y `sources{}` tiene 3, todas de Boca. Son ~76 bytes por club contra
-  los ~366 de `clubs.js`. Su consumidor es el selector jerárquico, que desde la
-  Versión 137 EXISTE: es de acá que salen el punto de calidad y el conteo de
-  ejercicios de cada fila del panel, sin bajar un solo archivo de club.
+- ÍNDICE LIVIANO DE CLUBES (Versión 129, ampliado en la 146): `data/club-index.js`,
+  GENERADO, con lo que hay que mostrar de un club ANTES de entrar a él (nombre,
+  país, calidad del dato, cuántos ejercicios, el más reciente, y desde la Versión
+  146 `yrs`: la LISTA de ejercicios con el reportType de cada uno). Existe porque
+  eso vive adentro de `data/<club>-data.js`, que es justamente lo que no se carga
+  hasta que el visitante elige ese club: con la página recién abierta, `clubs{}`
+  tiene 41 entradas y `sources{}` tiene 3, todas de Boca. Son 7 KB para los 41
+  clubes contra los ~366 bytes POR CLUB de `clubs.js`. Su consumidor es el
+  selector jerárquico, que desde la Versión 137 EXISTE: es de acá que salen el
+  punto de calidad y el conteo de ejercicios de cada fila del panel, sin bajar un
+  solo archivo de club. `yrs` se agregó para que el selector pueda además ofrecer
+  un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
   cada `fx` caiga en un rango plausible para su moneda. Hoy son 222 checks, 0
@@ -259,12 +262,12 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-145):
+- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-146):
   prototipo de un Inicio en frío con el selector jerárquico desplegado EN la portada
-  (hoy vive atrás de un click), con copy antes y después, minimizable, con un
-  dropdown de EJERCICIO por club en la columna EQUIPO y dos botones por fila
-  ("Ver" y "Ver y elegir otro", que deja el panel abierto para sumar un segundo
-  club). NO se deploya y no lo linkea
+  (hoy vive atrás de un click) y que SE QUEDA ahí con el club ya elegido, encima
+  de sus datos y minimizable. Cada fila de club tiene un dropdown "Ver" que junta
+  el ejercicio ("Balance 2024/2025") con las dos acciones ("El club entero" y
+  "Ver y elegir otro", que deja el selector abierto para sumar un segundo club). NO se deploya y no lo linkea
   ninguna página: se abre a mano, al lado de `index.html`. Los 3 archivos están
   GENERADOS (la portada desde `index.html`, `prototipo-inicio-selector.js` como copia
   parcheada de `js/selector.js`, y `prototipo-inicio-ejercicios.js` desde los

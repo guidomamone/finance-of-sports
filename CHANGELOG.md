@@ -1043,3 +1043,38 @@ documentados, listos para una sesión de onboarding futura.)*
   búsqueda ignora mayúsculas y acentos, así que escribirlos bien no le cuesta nada al que busca.
   Los dos cambios tienen su gemelo pendiente en `data/lang/en.js` (`hero.sub`, `selector.search.ph`).
 - "O empezá por uno de estos" pasó de 8 clubes a 3.
+
+## Versión 146: el índice liviano ahora lista los ejercicios, y la portada se queda en la página
+
+CAMBIO REAL DEL SITIO (lo único de esta sesión que sale del prototipo):
+
+- `data/club-index.js` gana `yrs`: la LISTA de ejercicios de cada club con su reportType, del más
+  reciente al más viejo, además del conteo (`y`) que ya tenía. Lo genera
+  `tools/generate-club-index.js` desde los mismos `fiscalYearMeta`, así que no se puede
+  desincronizar. Es lo que le faltaba al selector para poder ofrecer un ejercicio puntual
+  ("Balance 2024/2025") sin bajar los 41 `data/<club>-data.js`. El archivo pasó de 4,4 a 7 KB;
+  se guarda el reportType completo y no un código de una letra porque son 7 strings repetidos
+  miles de veces, o sea justo lo que gzip aplasta, y un código propio costaría una tabla de
+  traducción para ahorrar bytes que el transporte ya ahorra.
+- `ASSET_V` a 142, en la constante y en los 13 tags (`data/club-index.js` cambió y sin esto un
+  visitante que ya entró se queda con el viejo cacheado).
+- `auditAll()`: 41 clubes, 222 checks, 0 que no cierran, 0 warnings. Ningún número se movió.
+
+PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
+
+- EL SELECTOR SE QUEDA EN LA PÁGINA con el club ya elegido, encima de sus datos, y ahí sí se
+  minimiza (bar de 53px). Antes desaparecía al elegir y había que ir al header para cambiar de
+  club. La portada dejó de ser una pantalla aparte: es el mismo bloque en dos modos, y eso lo
+  decide `applyClubMode()`, que ya era la única función que decidía portada vs. club.
+- El botón Minimizar se fue de la portada en frío: ahí abajo no hay nada que descubrir.
+- Las pestañas del header se ven desde la primera visita, apagadas e inertes hasta que haya club.
+- La fila de club quedó en UNA línea (43px, eran 70): se fue el subtítulo "N ejercicios · Liga"
+  (los ejercicios están en el dropdown de la misma fila; la liga es la columna de al lado) y los
+  dos botones se juntaron con el dropdown de ejercicio en un solo control, "Ver", con las
+  opciones agrupadas. Los resultados de búsqueda SÍ conservan el subtítulo: ahí no hay columnas
+  que den ese contexto.
+- Los 3 clubes de acceso rápido se mudaron al lado derecho del buscador, que ocupaba todo el
+  ancho con la mitad vacía.
+- Se fueron los dos copys que sobraban: el "Elegí tu club / Escribí el nombre..." de arriba del
+  selector y el párrafo de abajo.
+- Y se esconde "Ver la portada con todos los clubes": la portada ya no es otra pantalla.

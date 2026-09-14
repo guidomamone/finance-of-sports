@@ -201,6 +201,7 @@ function buildIndex({ clubs, sources, generic }) {
 // Formato: claves cortas a propósito, porque esto viaja en cada pageview.
 //   n: displayName · c: país ISO-2 · q: calidad (ver CLUB_QUALITY)
 //   y: cuántos ejercicios cargados · last: el ejercicio más reciente
+//   yrs: [[año, reportType], ...] del más reciente al más viejo (Versión 146)
 // Son ~60 bytes por club contra los ~366 de `clubs.js`, o sea ~60 KB contra
 // ~366 KB proyectados a 1000 clubes.
 function buildClubIndex({ clubs, sources, generic, clubQuality }) {
@@ -214,6 +215,27 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       q: clubQuality(sources, id),
       y: years.length,
       last: years.length ? years[years.length - 1] : null,
+      // `yrs` (Versión 146): la LISTA de ejercicios, no solo el conteo, del más
+      // reciente al más viejo, cada uno con su reportType. Lo pidió el selector:
+      // para ofrecer "Balance 2024/2025" o "Presupuesto 2026/2027" al lado de cada
+      // club hace falta saber qué años tiene y de qué tipo es cada uno, y eso vivía
+      // solo adentro del `data/<club>-data.js` que el panel justamente no puede
+      // cargar (41 archivos hoy, 1000 mañana). Con el conteo (`y`) no alcanzaba.
+      //
+      // Se listan TODOS los ejercicios de `fiscalYearMeta`, incluidos los
+      // placeholder, para que `y === yrs.length` siempre y el índice sea un espejo
+      // fiel del dato. Filtrar los que no se pueden mostrar es decisión de quien
+      // consume (el selector ya sabe que 'placeholder' y 'pending_official' no son
+      // navegables, mismo criterio que `goToFinanzasYear()`).
+      //
+      // SOBRE EL PESO, que es la objeción obvia a meter esto en un archivo que se
+      // baja en cada visita: son ~30 bytes por ejercicio, o sea ~2,5 KB para los 85
+      // de hoy y ~90 KB proyectados a 1000 clubes. Se guarda el reportType COMPLETO
+      // y no un código de una letra a propósito: son 7 strings que se repiten miles
+      // de veces, o sea justo lo que gzip aplasta a casi nada, y un código propio
+      // costaría una tabla de traducción y un archivo ilegible para ahorrar bytes
+      // que el transporte ya ahorra.
+      yrs: years.slice().reverse().map(y => [y, meta[y].reportType]),
     };
   }
   const filas = Object.keys(idx).map(id => `  ${JSON.stringify(id)}: ${JSON.stringify(idx[id])},`);
@@ -227,7 +249,8 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
 // \`fiscalYearMeta\`/\`sources\` de cada club, así que no puede desincronizarse.
 //
 //   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en
-//   data/sources-view.js) · y: ejercicios cargados · last: el más reciente
+//   data/sources-view.js) · y: ejercicios cargados · last: el más reciente ·
+//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType]
 // ============================================================================
 
 window.CLUB_INDEX = {

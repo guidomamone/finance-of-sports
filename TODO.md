@@ -51,25 +51,23 @@ perdieron sino que se descartaron:
 28. DECIDIR SI LA PORTADA NUEVA VA AL SITIO. Está prototipada y andando en
     `prototipo-inicio-selector.html` (abrilo al lado de `index.html`, son la misma pantalla en
     frío). Dos cosas, las dos pedidas por Guido el 2026-09-14:
-    (a) El selector jerárquico desplegado EN la portada en vez de atrás de un click, con copy
-        antes y después, minimizable, y sin el botón de club del header mientras no haya club.
-    (b) En la columna EQUIPO, un dropdown de EJERCICIO por club: elegir un año y tocar Ver cae
-        en la ficha de Finanzas de ese ejercicio. Anda en el árbol, en la búsqueda, en el panel
-        embebido y en el modal.
-    (c) Dos botones con texto en cada fila de club, **Ver** y **Ver y elegir otro**. El segundo
-        deja el panel abierto y en modo comparar, para sumar un segundo club o el promedio de una
-        liga sin salir. Reemplazan al "+" de la fila de club.
+    (a) El selector desplegado EN la página en vez de atrás de un click, y que SE QUEDA ahí
+        después de elegir, encima de los datos del club: minimizarlo lo deja en una barra de
+        53px. Las pestañas del header se ven desde la primera visita, apagadas hasta que haya
+        club.
+    (b) Un dropdown "Ver" por fila de club, que junta el ejercicio ("Balance 2024/2025", y cae
+        derecho en la ficha de Finanzas de ese ejercicio) con las dos acciones: "El club entero"
+        y "Ver y elegir otro", que deja el selector abierto y en modo comparar para sumar un
+        segundo club o el promedio de una liga. Reemplaza al "+" de la fila de club.
     El prototipo corre con los 41 clubes y el motor reales, así que lo único que falta decidir es
     si convence.
     SI SE APRUEBA, la implementación real NO es copiar los archivos del prototipo:
     - El markup del panel se mueve adentro de `#coldHero` y la mudanza la hace `applyClubMode()`
       (que ya es la única función que decide portada vs. club), sin el `MutationObserver` que usa
       el prototipo para no tocar el sitio.
-    - El dropdown necesita la lista de ejercicios de cada club ANTES de bajar su data file, y hoy
-      `data/club-index.js` trae el conteo (`y`) y el último (`last`), no la lista. O sea que el
-      cambio de verdad empieza en `tools/generate-club-index.js`, agregando ese campo; el
-      `prototipo-inicio-ejercicios.js` de hoy tiene exactamente la forma que haría falta. Lo que
-      NO se puede hacer es cargar los 41 `data/<club>-data.js` para dibujar el panel.
+    - HECHO en la Versión 146, ya está en el sitio: `data/club-index.js` lista los ejercicios de
+      cada club (`yrs`), así el dropdown no necesita bajar ningún `data/<club>-data.js`. El
+      prototipo ya lee de ahí y su tabla propia se borró.
     - Los 3 cambios a `js/selector.js` están en `prototipo-inicio-selector.js`: diffealo contra
       `js/selector.js` y tenés el parche. Los textos nuevos (los de la portada y los 2 del
       select) pasan por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`.
@@ -78,14 +76,14 @@ perdieron sino que se descartaron:
       `data/lang/en.js`. Dos ya existen y hay que CORREGIRLOS, no solo traducirlos: `hero.sub`
       todavía dice "and transfers" (mercado de pases, que no está cargado) y
       `selector.search.ph` tiene los ejemplos en minúscula ("boca", "laliga", "japan").
-    Preguntas que el prototipo deja abiertas y conviene mirar en pantalla: si el panel embebido
-    (620px) deja la portada demasiado alta en un teléfono; si minimizado tiene que recordar el
-    estado entre visitas o abrir siempre expandido; si el dropdown de ejercicio no duplica al
-    subtítulo de la fila, que en la vista de país YA lista los años del club; y sobre todo CUÁNTO
-    PESA la fila de club ahora que tiene 3 controles — 70px en desktop y 126px en un teléfono,
-    o sea 2 clubes y medio por pantalla en móvil. Si molesta, la salida más probable es que los
-    botones aparezcan solo en la fila activa (con el costo de volverlos menos visibles, que es
-    justo lo que se quiso evitar).
+    MÓVIL NO SE TOCÓ TODAVÍA, por decisión de Guido (2026-09-14): primero se termina el selector
+    en desktop y recién ahí se acomoda para teléfono. Las reglas de móvil que tiene hoy el
+    prototipo son las heredadas del sitio, no un diseño pensado.
+    Preguntas que el prototipo deja abiertas y conviene mirar en pantalla: si al elegir un club
+    conviene que el selector quede ABIERTO (como está hoy, con la página bajando sola hasta los
+    datos) o que se minimice solo; si el estado minimizado tiene que recordarse entre visitas; y
+    si esconder los ejercicios adentro del dropdown "Ver" no los hace demasiado invisibles, ahora
+    que el subtítulo de la fila ya no dice cuántos hay.
 
 29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
     SOLO en la copia del prototipo (`prototipo-inicio-selector.js`, patch (d) del generador). En
