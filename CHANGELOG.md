@@ -1173,3 +1173,30 @@ Tres pedidos de Guido, todos dentro de `prototipo-pasos.html` (el sitio no se to
 - BUG DE TOOLING corregido en los DOS generadores: los `<script>` de los prototipos no llevaban
   `?v=`, así que el navegador servía el JS viejo de su caché con el HTML nuevo y se depuraba un bug
   ya arreglado (la trampa que documenta `CLAUDE.md`). Ahora llevan la fecha de modificación.
+
+## Versión 151: el paso 7 del prototipo 2 — contra qué comparar, y la página que dejó de moverse sola
+
+Tres pedidos de Guido, todos dentro de `prototipo-pasos.html`:
+
+- COPY COHERENTE: los seis títulos pasan a la misma forma plural — "Elegí uno o más deportes",
+  "una o más regiones", "uno o más países", "una o más ligas", "uno o más clubes", "uno o más
+  ejercicios". Antes decían "Elegí el deporte" y la casilla ya permitía varios: el título mentía.
+- PASO 7, "Elegí contra qué comparar". Es el paso que faltaba, y resuelve dos cosas de una. La
+  primera: al terminar el paso 6 la página cargaba el club y BAJABA sola hasta los números, con lo
+  cual el selector se iba de la pantalla justo cuando el visitante todavía no había decidido lo más
+  importante. Ahora la página NO se mueve sola nunca — bajar es un botón ("Ver los números ↓").
+  La segunda: comparar contra otro ejercicio DEL MISMO CLUB estaba escondido en la bandeja, y ahora
+  es la primera opción del paso, con la etiqueta real de cada ejercicio.
+- Las opciones del paso 7, según lo que haya elegido: los otros ejercicios del mismo club, el
+  promedio de su liga (que el motor ya sabía calcular pero nadie encontraba), y 3 rivales de su
+  misma liga. El pie es la decisión explícita que pidió Guido: "Continuar solo con lo que elegí" o
+  "Comparar con eso", más "Compararlo contra un grupo entero (una liga, un país…)", que cierra este
+  lado y arranca el rival con los mismos 7 pasos.
+- El orden de los sujetos ahora respeta lo elegido: si el paso 6 se saltea, el club conserva SU
+  ejercicio por default y el del paso 7 entra como segundo sujeto (Boca 2026/27 contra Boca
+  2024/25). `null` en la lista de años significa "no toques el de este", que no es lo mismo que
+  "el más reciente".
+- BUG ENCONTRADO Y CORREGIDO EN EL CAMINO: el botón "+ Otro año" del sitio se clickeaba solo si no
+  estaba `hidden`, y ese botón vive en un card que aparece recién cuando el club ya está dibujado.
+  Resultado: la comparación contra otro ejercicio se perdía en silencio. `hidden` no impide que el
+  listener corra, así que ahora se clickea igual.
