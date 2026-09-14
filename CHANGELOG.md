@@ -1143,3 +1143,33 @@ Cuatro reglas nuevas de Guido, todas dentro de `prototipo-pasos.html` (el sitio 
   automático).
 - `Business Books/` agregado al `.gitignore`: este repo es público y deploya a Netlify, así que
   commitear esos resúmenes los publicaría en internet.
+
+## Versión 150: grupos en el prototipo 2 — sumar clubes y ligas y medirlos contra otro grupo
+
+Tres pedidos de Guido, todos dentro de `prototipo-pasos.html` (el sitio no se tocó):
+
+- **"Elegir todos" en el paso del club**, que arma un grupo entero (una liga, un país, o lo que
+  hayas filtrado) en un click en vez de tildar 11 casillas.
+- **LADOS (grupos)**: la selección terminada se guarda como un lado, y el card final ofrece
+  "Comparar contra otro grupo", que reinicia los pasos manteniendo lo ya armado. La barra de arriba
+  muestra `A: Primera División (11) · B: LaLiga (10)`. Es la funcionalidad que faltaba: hasta acá
+  `js/comparar-clubes.js` compara SUJETOS sueltos (hasta 5) y su "promedio de liga" es un promedio,
+  no un total; un lado SUMA. Probado con el ejemplo de Guido: Primera División contra LaLiga.
+- El corte entre las dos vistas no es un gusto: hasta 5 clubes se usa la comparación que el sitio
+  ya tiene (una barra por club), que es el MAX de sujetos de `comparar-clubes`; de ahí para arriba
+  el grupo se suma y se muestra como un lado.
+- **El paso del ejercicio dejó de ser confuso** (Guido: "el usuario no tiene claro de quién es cada
+  ejercicio"). Con UN club se listan SUS ejercicios con la etiqueta real ("Balance 2024/2025"); con
+  varios, un ejercicio no es de nadie en particular, así que se listan los AÑOS DE CIERRE
+  ("Cierre 2025") y cada uno dice a cuántos de los clubes elegidos les corresponde. El texto de
+  ayuda explica por qué el año es el del cierre y que sin elegir nada se usa el más reciente de
+  cada uno.
+- LAS 3 REGLAS DE HONESTIDAD DEL TOTAL DE UN GRUPO, que es lo que hace que la vista sirva: un club
+  sin el ejercicio pedido queda AFUERA del total y se cuenta aparte (no suma cero); un indicador que
+  la fuente no informa se cuenta aparte ("8 de 11 lo informan"); y los números salen de
+  `computeYearGeneric()` + `toDisplayValue()`, el motor real, sumando lo que ya calculó club por
+  club. Además el card avisa cuando los ejercicios sumados abarcan más de 2 años y cuántos de ellos
+  son presupuestos (proyecciones) y no balances.
+- BUG DE TOOLING corregido en los DOS generadores: los `<script>` de los prototipos no llevaban
+  `?v=`, así que el navegador servía el JS viejo de su caché con el HTML nuevo y se depuraba un bug
+  ya arreglado (la trampa que documenta `CLAUDE.md`). Ahora llevan la fecha de modificación.

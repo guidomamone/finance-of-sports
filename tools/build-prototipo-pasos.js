@@ -181,6 +181,41 @@ const PROTO_CSS = `
 
   #pasosResultados{background:var(--card);border-radius:12px;padding:12px;}
 
+  /* "Elegir todos": el atajo que arma un grupo entero (una liga, un país) sin
+     tildar 11 casillas. Va arriba de la grilla, no perdido al final. */
+  .paso-todos{margin:0 0 10px;background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:8px;
+              padding:7px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+  .paso-todos:hover{background:#eef2f9;}
+  .paso-todos.on{background:var(--azul);color:#fff;border-style:solid;}
+
+  /* ---------------------------------------------------------------------------
+     EL CARD DE GRUPOS. Una columna por lado, una fila por indicador, el total de
+     cada lado y cuántos clubes lo sostienen. La barra es relativa al lado más
+     grande de ESA fila, nunca entre indicadores distintos.
+     --------------------------------------------------------------------------- */
+  .grupos-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:26px;}
+  .grupos-card[hidden]{display:none;}
+  .gc-head h2{margin:0 0 4px;font-size:20px;}
+  .gc-sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
+  .gc-cargando{color:var(--muted);font-size:13.5px;margin:0;}
+  .gc-tabla{width:100%;border-collapse:collapse;}
+  .gc-tabla th, .gc-tabla td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+  .gc-tabla thead th{border-bottom:2px solid var(--azul);}
+  .gc-letra{display:inline-flex;width:20px;height:20px;border-radius:50%;background:var(--azul);color:#fff;
+            align-items:center;justify-content:center;font-size:11px;font-weight:800;margin-right:7px;}
+  .gc-nombre{font-size:14.5px;font-weight:700;}
+  .gc-meta{display:block;font-size:11.5px;color:var(--muted);font-weight:400;margin-top:3px;}
+  .gc-ind{font-size:13px;color:var(--muted);font-weight:700;width:190px;}
+  .gc-num{font-size:17px;font-weight:800;display:block;}
+  .gc-num.neg{color:var(--red);}
+  .gc-nodato{color:var(--muted);font-size:13px;font-style:italic;}
+  .gc-bar{display:block;height:6px;background:#eef2f9;border-radius:3px;margin-top:6px;overflow:hidden;max-width:260px;}
+  .gc-bar-in{display:block;height:100%;background:var(--azul);}
+  .gc-bar-in.neg{background:var(--red);}
+  .gc-avisos{margin-top:14px;}
+  .gc-avisos p{color:var(--muted);font-size:12px;line-height:1.5;margin:0 0 5px;}
+  .gc-acciones{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:14px;}
+
   main > section{scroll-margin-top:96px;}
   #mainNav.proto-dummy{opacity:.45;}
   #mainNav.proto-dummy button{cursor:default;}
@@ -236,6 +271,10 @@ const HERO_NUEVO = `  <div class="pasos-block" id="pasosBlock">
 
     <p class="hero-error" id="clubLoadError" hidden></p>
   </div>
+
+  <!-- PROTO: el card de GRUPOS. Vive fuera del bloque azul porque es un resultado,
+       no un control: acá se muestran los totales de cada lado. -->
+  <div class="grupos-card" id="gruposCard" hidden></div>
 `;
 html = html.slice(0, iniHero) + HERO_NUEVO + html.slice(finHero);
 
@@ -264,9 +303,13 @@ replaceOnce(`  function applyClubMode(){
 // ---------------------------------------------------------------------------
 const TAG_SELECTOR = html.match(/<script src="js\/selector\.js\?v=[^"]*"><\/script>/);
 if(!TAG_SELECTOR) throw new Error('no se encontró el <script> de js/selector.js en index.html');
+// El `?v=` con la fecha de modificación del archivo NO es decorativo: sin él el
+// navegador sirve el JS viejo de su caché aunque el HTML sea nuevo, y se depura un
+// bug que ya estaba arreglado (pasó, ver CLAUDE.md, "Gotchas de tooling").
+const V_SEL = Math.floor(fs.statSync(path.join(ROOT, 'prototipo-pasos-selector.js')).mtimeMs);
 replaceOnce(TAG_SELECTOR[0],
   '<!-- PROTO: el selector paso a paso, en vez del de columnas. Misma API pública. -->\n' +
-  '<script src="prototipo-pasos-selector.js"></script>',
+  '<script src="prototipo-pasos-selector.js?v=' + V_SEL + '"></script>',
   'script de js/selector.js');
 
 // ---------------------------------------------------------------------------

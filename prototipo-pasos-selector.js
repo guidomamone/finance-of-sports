@@ -75,6 +75,20 @@ window.CLUB_SELECTOR = (function(){
   var inited = false;
   var autoElegido = false;     // true cuando el sitio eligió por el visitante
 
+  // LOS LADOS. Un lado es un CONJUNTO de clubes que se mide como uno solo: "la
+  // Primera División", "Cruzeiro + la liga argentina", "Boca". Existe porque el
+  // modelo viejo no alcanzaba (Guido: "falta la funcionalidad de poder sumar
+  // distintos equipos o ligas y medirlo contra otro"): `js/comparar-clubes.js`
+  // compara SUJETOS sueltos —un club, o el promedio de una liga— y no sabe sumar
+  // un grupo armado a mano.
+  //
+  // OJO CON LA PALABRA "TOTAL", que es la diferencia real con lo que ya existe: el
+  // benchmark de liga del sitio es un PROMEDIO (o mediana) de sus integrantes; un
+  // lado suma. "La liga argentina" como promedio y como total son dos números
+  // distintos y contestan dos preguntas distintas.
+  var lados = [];              // [{ nombre, clubes:[ids], anio:number|null }]
+  var LETRAS = ['A', 'B', 'C', 'D'];
+
   var api = {
     getClub: function(){ return null; },
     pickClub: function(){ return Promise.resolve(); }
@@ -206,7 +220,8 @@ window.CLUB_SELECTOR = (function(){
     },
     {
       clave: 'club', titulo: 'Elegí el club',
-      ayuda: 'Podés marcar más de uno: dos clubes marcados es una comparación.',
+      ayuda: 'Marcá los que quieras: dos son una comparación, y "Elegir todos" arma un grupo entero (una liga, un país) para medirlo como uno solo.',
+      todos: true,
       etiqueta: function(id){ return nameOf(id); },
       opciones: function(){
         return ordenados(clubsQueQuedan('club')).map(function(id){
@@ -217,9 +232,20 @@ window.CLUB_SELECTOR = (function(){
     },
     {
       clave: 'year', titulo: 'Elegí el ejercicio',
+      // Guido: "el paso 6 queda confuso porque el usuario no tiene claro de quién es
+      // cada ejercicio". Con UN club se listan SUS ejercicios, con su etiqueta real
+      // ("Balance 2024/2025"). Con varios, un ejercicio no es de nadie en particular:
+      // se listan los AÑOS DE CIERRE, y cada uno dice a cuántos de los clubes
+      // elegidos les corresponde. Mezclar las dos cosas era el problema.
+      ayuda: null,   // se arma abajo, según cuántos clubes haya
       etiqueta: function(y){ return labelAnio(Number(y)); },
       opciones: function(){
         var finales = clubesFinales();
+        if(finales.length === 1){
+          return yearsOf(finales[0]).map(function(par){
+            return { id:String(par[0]), label: labelAnio(par[0]) };
+          });
+        }
         var anios = {};
         finales.forEach(function(id){ yearsOf(id).forEach(function(par){ anios[par[0]] = 1; }); });
         return Object.keys(anios).map(Number).sort(function(a, b){ return b - a; }).map(function(y){
@@ -227,10 +253,11 @@ window.CLUB_SELECTOR = (function(){
             return yearsOf(id).some(function(par){ return par[0] === y; });
           }).length;
           return {
-            id: String(y), label: labelAnio(y),
-            // Con varios clubes en juego, un año no siempre existe para todos, y eso
-            // se dice ANTES de elegirlo en vez de sorprender con una barra vacía.
-            meta: finales.length > 1 ? cuantos + ' de ' + finales.length : null
+            id: String(y),
+            label: 'Cierre ' + y,
+            // Con varios clubes en juego un año no existe para todos, y eso se dice
+            // ANTES de elegirlo en vez de sorprender con una barra vacía.
+            meta: cuantos + ' de ' + finales.length + ' clubes'
           };
         });
       }
@@ -351,8 +378,12 @@ window.CLUB_SELECTOR = (function(){
 
       if(estado === 'ahora'){
         var body = el('div', 'paso-body');
-        if(p.ayuda) body.appendChild(el('p', 'paso-ayuda', p.ayuda));
+        var ayuda = p.clave === 'year' ? ayudaDelAnio() : p.ayuda;
+        if(ayuda) body.appendChild(el('p', 'paso-ayuda', ayuda));
         var ops = p.opciones();
+        // "Elegir todos" (paso del club): es lo que permite armar un GRUPO —
+        // una liga entera, un país entero— en un click, en vez de tildar 11 casillas.
+        if(p.todos && ops.length > 1) body.appendChild(botonTodos(p, ops));
         if(!ops.length){
           body.appendChild(el('p', 'paso-vacio', 'No hay nada cargado acá todavía.'));
         } else {
@@ -372,6 +403,27 @@ window.CLUB_SELECTOR = (function(){
     });
 
     if(todoResuelto()) wrap.appendChild(cardResultado());
+  }
+
+  function ayudaDelAnio(){
+    var finales = clubesFinales();
+    if(finales.length === 1) return 'Los ejercicios de ' + nameOf(finales[0]) + '. Si no elegís ninguno, mostramos el más reciente.';
+    return 'Son ' + finales.length + ' clubes y no todos cierran el mismo día: un club argentino cierra en junio y uno japonés en diciembre, '
+         + 'así que el año es el del CIERRE. Si no elegís ninguno, usamos el ejercicio más reciente de cada uno.';
+  }
+
+  function botonTodos(p, ops){
+    var libres = ops.filter(function(o){ return !o.disabled; });
+    var todosMarcados = libres.length && libres.every(function(o){ return tiene(p.clave, o.id); });
+    var b = el('button', 'paso-todos' + (todosMarcados ? ' on' : ''),
+      todosMarcados ? 'Sacar todos' : 'Elegir todos (' + libres.length + ')');
+    b.type = 'button';
+    b.title = 'Para comparar un grupo entero contra otro: una liga, un país, o lo que hayas filtrado';
+    b.addEventListener('click', function(){
+      st[p.clave].sel = todosMarcados ? [] : libres.map(function(o){ return o.id; });
+      render();
+    });
+    return b;
   }
 
   // El pie de cada paso: confirmar lo marcado, o decir que esto se decide después.
@@ -412,6 +464,7 @@ window.CLUB_SELECTOR = (function(){
 
   function cardResultado(){
     var finales = clubesFinales();
+    var grupo = lados.length > 1 || finales.length > MAX_SUELTOS;
     var card = el('div', 'paso ahora resultado');
     var head = el('div', 'paso-head');
     head.appendChild(el('span', 'paso-n', '✓'));
@@ -425,6 +478,30 @@ window.CLUB_SELECTOR = (function(){
     card.appendChild(head);
 
     var body = el('div', 'paso-body');
+
+    if(grupo){
+      // Un grupo no se "ve", se compara: el card lo dice y manda al card de abajo.
+      var l = lados[lados.length - 1] || ladoActual();
+      body.appendChild(el('p', 'res-msg', lados.length > 1
+        ? 'Comparando ' + lados.map(function(x){ return x.nombre; }).join(' contra ') + '.'
+        : 'Grupo armado: ' + l.nombre + ' (' + l.clubes.length + ' clubes), sumados.'));
+      body.appendChild(el('p', 'res-sub', lados.length > 1
+        ? 'Los totales están abajo. Podés sumar un tercer grupo, o sacar uno.'
+        : 'Abajo está el total del grupo. Para que sirva de verdad hace falta contra qué medirlo: armá el segundo.'));
+      var bg = el('button', 'paso-ok', lados.length > 1 ? 'Agregar otro grupo' : 'Comparar contra otro grupo');
+      bg.type = 'button';
+      bg.addEventListener('click', nuevoLado);
+      body.appendChild(bg);
+      var verG = el('button', 'paso-skip', 'Ver los totales');
+      verG.type = 'button';
+      verG.addEventListener('click', function(){
+        var c = $('gruposCard');
+        if(c && !c.hidden) c.scrollIntoView({ behavior:'smooth', block:'start' });
+      });
+      body.appendChild(verG);
+      card.appendChild(body);
+      return card;
+    }
 
     if(autoElegido){
       // La regla 3 de Guido: si no elegiste nada, elegimos nosotros Y TE LO DECIMOS.
@@ -463,6 +540,11 @@ window.CLUB_SELECTOR = (function(){
       otro.type = 'button';
       otro.addEventListener('click', function(){ volverA(4); });
       body.appendChild(otro);
+      var contraGrupo = el('button', 'paso-skip', 'O compararlo contra un grupo entero');
+      contraGrupo.type = 'button';
+      contraGrupo.title = 'Una liga, un país, o los clubes que elijas, sumados';
+      contraGrupo.addEventListener('click', nuevoLado);
+      body.appendChild(contraGrupo);
     } else {
       body.appendChild(el('p', 'res-msg', 'Comparando ' + finales.map(nameOf).join(' · ') + '.'));
       // (si finales quedó en 1 pero hay rivales sumados desde este mismo card, el
@@ -494,6 +576,10 @@ window.CLUB_SELECTOR = (function(){
   }
 
   function camino(){
+    if(lados.length){
+      var nombres = lados.map(function(l, i){ return LETRAS[i] + ': ' + l.nombre; }).join('   ·   ');
+      return nombres + (todoResuelto() ? '' : '   ·   armando el ' + LETRAS[lados.length] + '…');
+    }
     if(autoElegido) return 'Elegimos por vos: ' + clubesFinales().map(nameOf).join(' contra ');
     var partes = [];
     PASOS.forEach(function(p){
@@ -510,10 +596,21 @@ window.CLUB_SELECTOR = (function(){
   // rivales. Los ejercicios elegidos se aplican DESPUÉS de que estén los sujetos,
   // porque hasta que un sujeto no existe no hay a qué ponerle el año.
   // ---------------------------------------------------------------------------
+  // GRUPO CHICO vs GRUPO GRANDE. Con hasta 4 clubes conviene la comparación que el
+  // sitio ya tiene (una barra por club, con su nombre y su año). De 5 para arriba
+  // eso deja de leerse, y además es el caso que Guido pidió: ahí el grupo se SUMA y
+  // se muestra como un lado. El corte en 4 no es un gusto: es el MAX de sujetos de
+  // js/comparar-clubes.js (4 rivales + el club activo).
+  var MAX_SUELTOS = 5;
+
   function aplicar(){
     var finales = clubesFinales();
     autoElegido = !st.club.sel.length;
-    var rivales = finales.slice(1);
+    var lado = ladoActual();
+    // Un lado por selección terminada. Si ya había uno, este es el rival.
+    lados.push(lado);
+    var comoGrupo = lados.length > 1 || finales.length > MAX_SUELTOS;
+    var rivales = comoGrupo ? [] : finales.slice(1);
 
     Promise.resolve(api.pickClub(finales[0])).then(function(){
       try { localStorage.setItem(LS_CLUB, finales[0]); } catch(e){}
@@ -527,9 +624,21 @@ window.CLUB_SELECTOR = (function(){
       }
       return cadena;
     }).then(function(){
-      aplicarAnios(finales);
+      if(!comoGrupo) aplicarAnios(finales);
       render();
-      irAlContenido();
+      if(comoGrupo){
+        // Los totales necesitan los data files de TODOS los clubes del lado: se
+        // bajan acá, y recién con eso se puede sumar.
+        var caja = $('gruposCard');
+        if(caja){ caja.hidden = false; caja.innerHTML = '<p class="gc-cargando">Sumando los clubes del grupo…</p>'; }
+        Promise.all(lados.map(cargarLado)).then(function(){
+          renderGrupos();
+          if(caja) caja.scrollIntoView({ behavior:'smooth', block:'start' });
+        });
+      } else {
+        renderGrupos();
+        irAlContenido();
+      }
     });
   }
 
@@ -589,6 +698,10 @@ window.CLUB_SELECTOR = (function(){
     for(var k = i; k < CLAVES.length; k++){
       st[CLAVES[k]] = { sel:[], resuelto:false, saltado:false };
     }
+    // El último lado se estaba armando con estos pasos: si se toca un paso, ese
+    // lado deja de ser lo que decía. Los lados anteriores, ya cerrados, se quedan.
+    if(todoResuelto() || lados.length) lados.pop();
+    renderGrupos();
     autoElegido = false;
     abierto = true;
     if(window.CLUB_COMPARE) window.CLUB_COMPARE.clear();
@@ -621,6 +734,253 @@ window.CLUB_SELECTOR = (function(){
         return;
       }
     }
+  }
+
+
+  // ===========================================================================
+  // LADOS (GRUPOS) Y SUS TOTALES
+  //
+  // Lo que falta en el sitio y esto prototipa: sumar clubes y ligas de un lado y
+  // medirlos contra otro. `js/comparar-clubes.js` compara sujetos SUELTOS (hasta 5)
+  // y su "promedio de liga" es un promedio, no un total. Acá un lado es un
+  // conjunto y se suma.
+  //
+  // LAS 3 REGLAS DE HONESTIDAD DE ESTA VISTA, que son las mismas del resto del
+  // sitio y por eso no se negocian:
+  //   1. Un club sin el ejercicio pedido NO cuenta como cero: queda afuera del
+  //      total y el card dice cuántos quedaron afuera.
+  //   2. Un indicador que la fuente no informa (deuda de un presupuesto, masa
+  //      salarial sin desglosar) no suma cero: se cuenta aparte y se muestra
+  //      "9 de 12 informan".
+  //   3. Los números salen de `computeYearGeneric()`, el motor real, y se
+  //      convierten con `toDisplayValue()`. Acá no se reimplementa ninguna
+  //      cascada: se suma lo que el motor ya calculó, club por club.
+  // ===========================================================================
+
+  // El último ejercicio REAL de un club, según el índice liviano.
+  function ultimoAnio(id){
+    var ys = yearsOf(id);
+    return ys.length ? ys[0][0] : null;
+  }
+
+  // Los 4 indicadores de un club-ejercicio, en USD. Es la misma cuenta que hace
+  // `financialsFor()` adentro de js/comparar-clubes.js (que es privada), con sus
+  // mismos tests de "esto la fuente no lo informa".
+  function numerosDe(id, year){
+    var c = window.computeYearGeneric(id, year);
+    if(!c) return null;
+    var meta = window.yearMetaFor(id, year);
+    var usd = function(v){ return window.toDisplayValue(v, meta, 'USD'); };
+    var sinDeuda = (c.meta.grossDebt == null && c.meta.cash == null)
+                || (c.meta.grossDebt === 0 && c.meta.cash === 0);
+    return {
+      year: year,
+      revenue: usd(c.revenue),
+      expenses: Math.abs(usd(c.expenses + c.nonCash)),
+      pat: usd(c.pat),
+      netDebt: sinDeuda ? null : usd(c.netDebt)
+    };
+  }
+
+  var INDICADORES = [
+    { key:'revenue',  label:'Ingresos' },
+    { key:'expenses', label:'Gastos' },
+    { key:'pat',      label:'Resultado del ejercicio', signo:true },
+    { key:'netDebt',  label:'Deuda neta', signo:true }
+  ];
+
+  function totalesDeLado(lado){
+    var out = { nombre:lado.nombre, n:lado.clubes.length, conDato:0, sinEjercicio:[], anios:[], presupuestos:0, tot:{}, informan:{} };
+    INDICADORES.forEach(function(m){ out.tot[m.key] = 0; out.informan[m.key] = 0; });
+    lado.clubes.forEach(function(id){
+      var y = lado.anio || ultimoAnio(id);
+      var tieneEse = y && yearsOf(id).some(function(par){ return par[0] === y; });
+      if(!tieneEse){ out.sinEjercicio.push(nameOf(id)); return; }
+      var n = numerosDe(id, y);
+      if(!n){ out.sinEjercicio.push(nameOf(id)); return; }
+      out.conDato++;
+      out.anios.push(y);
+      // Un presupuesto es una PROYECCIÓN, no un cierre. Sumarlo con balances no
+      // está mal —es lo último que publicó ese club— pero el total deja de ser
+      // "lo que pasó" y el card tiene que decirlo.
+      var tipo = (yearsOf(id).filter(function(par){ return par[0] === y; })[0] || [])[1];
+      if(tipo === 'official_budget') out.presupuestos++;
+      INDICADORES.forEach(function(m){
+        if(n[m.key] == null) return;
+        out.tot[m.key] += n[m.key];
+        out.informan[m.key]++;
+      });
+    });
+    return out;
+  }
+
+  function fmtM(v){
+    if(v == null) return 'sin dato';
+    var abs = Math.abs(v);
+    var txt = abs >= 1000 ? (abs / 1000).toFixed(2) + ' MM' : abs.toFixed(1) + ' M';
+    return (v < 0 ? '-' : '') + txt + ' USD';
+  }
+
+  function rangoAnios(t){
+    if(!t.anios.length) return '—';
+    var min = Math.min.apply(null, t.anios), max = Math.max.apply(null, t.anios);
+    return min === max ? String(min) : min + '-' + max;
+  }
+
+  // El nombre de un lado sale de lo que el visitante eligió, no de una caja de
+  // texto: si marcó todos los clubes de una liga, el lado se llama como la liga.
+  function nombreDeSeleccion(){
+    var sel = st.club.sel;
+    if(sel.length === 1) return nameOf(sel[0]);
+    var universo = clubsQueQuedan('club');
+    var completo = sel.length && sel.length === universo.length;
+    var ctx = null;
+    if(st.league.sel.length === 1) ctx = window.LEAGUES[st.league.sel[0]].name;
+    else if(st.country.sel.length === 1) ctx = window.COUNTRIES[st.country.sel[0]].name;
+    else if(st.region.sel.length === 1){
+      var r = window.REGIONS.filter(function(x){ return x.id === st.region.sel[0]; })[0];
+      ctx = r ? r.name : null;
+    }
+    if(completo && ctx) return ctx + ' (' + sel.length + ')';
+    if(sel.length <= 3 && sel.length) return sel.map(nameOf).join(' + ');
+    return (ctx ? ctx + ': ' : '') + sel.length + ' clubes';
+  }
+
+  function ladoActual(){
+    return {
+      nombre: nombreDeSeleccion() || 'Selección',
+      clubes: clubesFinales(),
+      anio: st.year.sel.length ? Number(st.year.sel[0]) : null
+    };
+  }
+
+  // Un lado hay que BAJARLO antes de sumarlo: los data files de sus clubes se
+  // cargan por demanda, y sin ellos `computeYearGeneric()` no tiene con qué.
+  function cargarLado(lado){
+    return Promise.all(lado.clubes.map(function(id){
+      return window.loadClubData ? window.loadClubData(id).catch(function(){ return null; }) : null;
+    }));
+  }
+
+  function renderGrupos(){
+    var caja = $('gruposCard');
+    if(!caja) return;
+    if(lados.length < 1){ caja.hidden = true; caja.innerHTML = ''; return; }
+    caja.hidden = false;
+    caja.innerHTML = '';
+
+    var head = el('div', 'gc-head');
+    head.appendChild(el('h2', null, lados.length > 1 ? 'Grupo contra grupo' : 'El grupo, sumado'));
+    var sub = el('p', 'gc-sub', lados.length > 1
+      ? 'Cada columna es un grupo entero sumado, no un club. Los totales son en USD.'
+      : 'Los clubes que elegiste, sumados. Agregá otro grupo para compararlo contra este.');
+    head.appendChild(sub);
+    caja.appendChild(head);
+
+    var tots = lados.map(totalesDeLado);
+
+    var tabla = el('table', 'gc-tabla');
+    var thead = el('thead');
+    var trh = el('tr');
+    trh.appendChild(el('th', null, ''));
+    tots.forEach(function(t, i){
+      var th = el('th');
+      th.appendChild(el('span', 'gc-letra', LETRAS[i]));
+      th.appendChild(el('span', 'gc-nombre', t.nombre));
+      th.appendChild(el('span', 'gc-meta', t.conDato + ' de ' + t.n + (t.n === 1 ? ' club' : ' clubes') + ' · ejercicio ' + rangoAnios(t)));
+      tabla.appendChild(th);
+      trh.appendChild(th);
+    });
+    thead.appendChild(trh);
+    tabla.appendChild(thead);
+
+    var tbody = el('tbody');
+    INDICADORES.forEach(function(m){
+      var tr = el('tr');
+      tr.appendChild(el('th', 'gc-ind', m.label));
+      var maxAbs = Math.max.apply(null, tots.map(function(t){
+        return t.informan[m.key] ? Math.abs(t.tot[m.key]) : 0;
+      })) || 1;
+      tots.forEach(function(t){
+        var td = el('td');
+        if(!t.informan[m.key]){
+          td.appendChild(el('span', 'gc-nodato', 'sin dato'));
+        } else {
+          var v = t.tot[m.key];
+          td.appendChild(el('span', 'gc-num' + (m.signo && v < 0 ? ' neg' : ''), fmtM(v)));
+          var barra = el('span', 'gc-bar');
+          var relleno = el('span', 'gc-bar-in' + (m.signo && v < 0 ? ' neg' : ''));
+          relleno.style.width = Math.round((Math.abs(v) / maxAbs) * 100) + '%';
+          barra.appendChild(relleno);
+          td.appendChild(barra);
+          // La mitad de la honestidad del card: cuántos de los clubes del lado
+          // informan ESTE indicador. Sumar 9 deudas y presentarlo como la deuda de
+          // 12 clubes sería inventar 3 ceros.
+          if(t.informan[m.key] < t.conDato){
+            td.appendChild(el('span', 'gc-meta', t.informan[m.key] + ' de ' + t.conDato + ' lo informan'));
+          }
+        }
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    tabla.appendChild(tbody);
+    caja.appendChild(tabla);
+
+    var avisos = [];
+    tots.forEach(function(t, i){
+      if(t.sinEjercicio.length){
+        avisos.push(LETRAS[i] + ': ' + t.sinEjercicio.length + ' club' + (t.sinEjercicio.length > 1 ? 'es' : '')
+          + ' sin ese ejercicio cargado, afuera del total (' + t.sinEjercicio.slice(0, 4).join(', ')
+          + (t.sinEjercicio.length > 4 ? ', y ' + (t.sinEjercicio.length - 4) + ' más' : '') + ').');
+      }
+    });
+    // Dos salvedades que un total de grupo esconde si nadie las dice.
+    tots.forEach(function(t, i){
+      if(t.anios.length > 1){
+        var min = Math.min.apply(null, t.anios), max = Math.max.apply(null, t.anios);
+        if(max - min >= 2){
+          avisos.push(LETRAS[i] + ': los ejercicios sumados van de ' + min + ' a ' + max
+            + '. No es el total de una temporada, es el último ejercicio de cada club, y algunos son bastante más viejos que otros.');
+        }
+      }
+      if(t.presupuestos){
+        avisos.push(LETRAS[i] + ': ' + t.presupuestos + ' de los ' + t.conDato + ' ejercicios sumados '
+          + (t.presupuestos === 1 ? 'es un PRESUPUESTO, o sea una proyección' : 'son PRESUPUESTOS, o sea proyecciones')
+          + ' del club, no un cierre auditado.');
+      }
+    });
+    avisos.push('Un club sin el dato no suma cero: queda afuera y se cuenta aparte. Los totales de grupos con distinta cantidad de clubes no son comparables entre sí sin mirar esa cuenta.');
+    var pie = el('div', 'gc-avisos');
+    avisos.forEach(function(a){ pie.appendChild(el('p', null, a)); });
+    caja.appendChild(pie);
+
+    var acciones = el('div', 'gc-acciones');
+    var mas = el('button', 'paso-ok', lados.length > 1 ? 'Agregar otro grupo' : 'Comparar contra otro grupo');
+    mas.type = 'button';
+    mas.addEventListener('click', nuevoLado);
+    acciones.appendChild(mas);
+    lados.forEach(function(l, i){
+      var quitar = el('button', 'paso-skip', 'Sacar ' + LETRAS[i]);
+      quitar.type = 'button';
+      quitar.addEventListener('click', function(){
+        lados.splice(i, 1);
+        renderGrupos();
+        render();
+      });
+      acciones.appendChild(quitar);
+    });
+    caja.appendChild(acciones);
+  }
+
+  // Empezar otro lado: se guarda el actual y los pasos vuelven a cero, con la
+  // barra de arriba mostrando lo que ya está armado.
+  function nuevoLado(){
+    reset();
+    autoElegido = false;
+    abierto = true;
+    render();
+    $('pasosBlock').scrollIntoView({ behavior:'smooth', block:'start' });
   }
 
   // ---------------------------------------------------------------------------
@@ -709,6 +1069,8 @@ window.CLUB_SELECTOR = (function(){
 
   function goHome(){
     reset();
+    lados = [];
+    renderGrupos();
     autoElegido = false;
     abierto = true;
     if(window.CLUB_COMPARE) window.CLUB_COMPARE.clear();

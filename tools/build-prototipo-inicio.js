@@ -556,10 +556,13 @@ fs.writeFileSync(OUT_SEL, selJs);
 // ---------------------------------------------------------------------------
 const TAG_SELECTOR = html.match(/<script src="js\/selector\.js\?v=[^"]*"><\/script>/);
 if(!TAG_SELECTOR) throw new Error('no se encontró el <script> de js/selector.js en index.html');
+// El `?v=` con la fecha de modificación: sin él el navegador sirve el JS viejo de
+// su caché aunque el HTML sea nuevo (ver CLAUDE.md, "Gotchas de tooling").
+const V_SEL = Math.floor(fs.statSync(OUT_SEL).mtimeMs);
 replaceOnce(TAG_SELECTOR[0],
   '<!-- PROTO: la copia PARCHEADA de js/selector.js (la genera\n' +
   '     tools/build-prototipo-inicio.js; el sitio sigue cargando js/selector.js). -->\n' +
-  '<script src="prototipo-inicio-selector.js"></script>',
+  '<script src="prototipo-inicio-selector.js?v=' + V_SEL + '"></script>',
   'script de js/selector.js');
 
 fs.writeFileSync(OUT, html);
