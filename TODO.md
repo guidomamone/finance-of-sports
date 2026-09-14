@@ -50,17 +50,31 @@ perdieron sino que se descartaron:
 
 28. DECIDIR SI LA PORTADA NUEVA VA AL SITIO. Está prototipada y andando en
     `prototipo-inicio-selector.html` (abrilo al lado de `index.html`, son la misma pantalla en
-    frío): el selector jerárquico desplegado EN la portada en vez de atrás de un click, con copy
-    antes y después, minimizable, y sin el botón de club del header mientras no haya club elegido.
-    Pedido de Guido del 2026-09-14. El prototipo corre con los 41 clubes y el motor reales, así que
-    lo único que falta decidir es si convence.
-    SI SE APRUEBA, la implementación real NO es copiar el `<script>` del prototipo: el markup del
-    panel se mueve adentro de `#coldHero` y la mudanza la hace `applyClubMode()` (que ya es la
-    única función que decide portada vs. club), sin `MutationObserver`; los 4 textos nuevos pasan
-    por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`; y hay que subir `ASSET_V`
-    en los dos lugares. Preguntas que el prototipo deja abiertas y conviene mirar en pantalla:
-    si el panel embebido (520px) deja la portada demasiado alta en un teléfono, y si minimizado
-    tiene que recordar el estado entre visitas o abrir siempre expandido.
+    frío). Dos cosas, las dos pedidas por Guido el 2026-09-14:
+    (a) El selector jerárquico desplegado EN la portada en vez de atrás de un click, con copy
+        antes y después, minimizable, y sin el botón de club del header mientras no haya club.
+    (b) En la columna EQUIPO, un dropdown de EJERCICIO por club: elegir un año carga el club y
+        cae en su ficha de Finanzas de ese ejercicio (clickear la fila sigue llevando al club
+        entero). Anda en el árbol, en la búsqueda, en el panel embebido y en el modal.
+    El prototipo corre con los 41 clubes y el motor reales, así que lo único que falta decidir es
+    si convence.
+    SI SE APRUEBA, la implementación real NO es copiar los archivos del prototipo:
+    - El markup del panel se mueve adentro de `#coldHero` y la mudanza la hace `applyClubMode()`
+      (que ya es la única función que decide portada vs. club), sin el `MutationObserver` que usa
+      el prototipo para no tocar el sitio.
+    - El dropdown necesita la lista de ejercicios de cada club ANTES de bajar su data file, y hoy
+      `data/club-index.js` trae el conteo (`y`) y el último (`last`), no la lista. O sea que el
+      cambio de verdad empieza en `tools/generate-club-index.js`, agregando ese campo; el
+      `prototipo-inicio-ejercicios.js` de hoy tiene exactamente la forma que haría falta. Lo que
+      NO se puede hacer es cargar los 41 `data/<club>-data.js` para dibujar el panel.
+    - Los 3 cambios a `js/selector.js` están en `prototipo-inicio-selector.js`: diffealo contra
+      `js/selector.js` y tenés el parche. Los textos nuevos (los de la portada y los 2 del
+      select) pasan por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`.
+    - Subir `ASSET_V` en los dos lugares (la constante y los tags).
+    Preguntas que el prototipo deja abiertas y conviene mirar en pantalla: si el panel embebido
+    (520px) deja la portada demasiado alta en un teléfono; si minimizado tiene que recordar el
+    estado entre visitas o abrir siempre expandido; y si el dropdown de ejercicio no duplica al
+    subtítulo de la fila, que en la vista de país YA lista los años del club.
 
 25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
     misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·

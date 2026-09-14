@@ -649,6 +649,25 @@ consulta puntual, nunca lectura de corrido.
   .hero.min .hero-sel-bar{margin-bottom:0;}
   .hero.min .hero-search{margin-top:10px;}
 
+  /* El <select> de ejercicio de la columna EQUIPO. Tiene que leerse como un control
+     secundario: la acción principal de la fila sigue siendo elegir el club. Por eso
+     va chico, en gris, y recién al hover toma el azul del sitio. */
+  .sel-row .r-years{margin-left:auto;flex:0 0 auto;max-width:44%;font-family:inherit;font-size:11px;
+                    color:var(--muted);background:#fff;border:1px solid var(--border);border-radius:6px;
+                    padding:3px 4px;cursor:pointer;max-height:24px;}
+  .sel-row .r-years:hover{border-color:var(--azul);color:var(--azul);}
+  .sel-row.sel .r-years{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.45);color:#fff;}
+  /* En una fila con dropdown, el "+" de comparar deja de empujar el layout. */
+  .sel-row .r-years + .add-btn{margin-left:6px;}
+  /* En móvil el dropdown al lado del nombre le come 128px de 312px y parte el nombre
+     ("Argentinos Juni…", medido a 390px), así que se baja a su propio renglón,
+     alineado con el nombre. Más alto por fila, pero el nombre del club entero y un
+     blanco de toque más grande, que en un teléfono valen más. */
+  @media (max-width:900px){
+    .sel-row:has(.r-years){flex-wrap:wrap;}
+    .sel-row .r-years{flex-basis:calc(100% - 34px);max-width:none;margin:5px 0 1px 34px;padding:5px 6px;font-size:12px;max-height:none;}
+  }
+
   /* Copy de después del selector. */
   /* Con el selector en la portada, el botón de club del header sobra: repite la
      misma acción a 2 cm de distancia, y "Cambiar" cuando todavía no elegiste nada
@@ -1352,7 +1371,11 @@ consulta puntual, nunca lectura de corrido.
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=141"></script>
+<!-- PROTO: la tabla de ejercicios por club, y la copia PARCHEADA de js/selector.js
+     (el <select> de ejercicio en la columna EQUIPO). Las dos las genera
+     tools/build-prototipo-inicio.js; el sitio sigue cargando js/selector.js. -->
+<script src="prototipo-inicio-ejercicios.js"></script>
+<script src="prototipo-inicio-selector.js"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N

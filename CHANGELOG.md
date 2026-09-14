@@ -1000,3 +1000,23 @@ documentados, listos para una sesión de onboarding futura.)*
   taxonomía embebida y números inventados; este corre con los 41 clubes y el motor reales, porque
   lo único nuevo a decidir es el layout.
 - Nada del sitio cambió: `index.html` intacto, `node tools/audit.js` igual (0 P0, 0 P1).
+
+## Versión 144: el prototipo de portada suma el ejercicio al selector
+
+- En la columna EQUIPO cada club trae ahora un `<select>` con sus ejercicios, del más reciente al
+  más viejo ("Presupuesto 2026/2027", "Balance 2024/2025", y año suelto para los clubes de
+  ejercicio calendario: el label sale de `ejercicioLabel()`, no de un formato nuevo). Elegir uno
+  carga el club Y cae en su ficha de Finanzas de ESE ejercicio, reusando `goToFinanzasYear()`.
+  Pedido de Guido. Clickear la fila sigue llevando al club entero, sin tocar el dropdown.
+- Anda igual en el árbol y en los resultados de búsqueda (las dos ramas dibujan la misma
+  `clubRow()`), y en el panel embebido de la portada igual que en el modal del header.
+- NUEVO `prototipo-inicio-ejercicios.js` (generado): por club, la lista de `[año, reportType]`.
+  Es lo que hoy le falta a `data/club-index.js` — que trae el CONTEO de ejercicios y el último,
+  no la lista — para que el panel pueda ofrecer el ejercicio sin bajar el `data/<club>-data.js`
+  de cada club (41 clubes en pantalla, 0 archivos de datos bajados, y eso no se negocia).
+- NUEVO `prototipo-inicio-selector.js` (generado): copia PARCHEADA de `js/selector.js` con los 3
+  cambios que esto necesita (la fila pasa sus ejercicios, `pick()` acepta un año, `mkRow()` dibuja
+  el select). El diff contra `js/selector.js` ES la propuesta de implementación.
+- En móvil el dropdown baja a su propio renglón: al lado del nombre le comía 128px de 312px y
+  partía el nombre del club ("Argentinos Juni…", medido a 390px).
+- `js/selector.js` y el resto del sitio siguen intactos; `node tools/audit.js` sin cambios.

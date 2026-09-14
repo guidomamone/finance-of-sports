@@ -25,9 +25,15 @@
 const fs = require('fs');
 const path = require('path');
 
+const vm = require('vm');
+
 const ROOT = path.join(__dirname, '..');
 const SRC = path.join(ROOT, 'index.html');
 const OUT = path.join(ROOT, 'prototipo-inicio-selector.html');
+// El prototipo son 3 archivos, no 1: la portada, la copia PARCHEADA de js/selector.js
+// (el `<select>` de ejercicio por club) y la tabla de ejercicios que ese select necesita.
+const OUT_SEL = path.join(ROOT, 'prototipo-inicio-selector.js');
+const OUT_YEARS = path.join(ROOT, 'prototipo-inicio-ejercicios.js');
 
 let html = fs.readFileSync(SRC, 'utf8');
 
@@ -97,6 +103,25 @@ const PROTO_CSS = `
   .hero.min .hero-search{display:flex;}
   .hero.min .hero-sel-bar{margin-bottom:0;}
   .hero.min .hero-search{margin-top:10px;}
+
+  /* El <select> de ejercicio de la columna EQUIPO. Tiene que leerse como un control
+     secundario: la acción principal de la fila sigue siendo elegir el club. Por eso
+     va chico, en gris, y recién al hover toma el azul del sitio. */
+  .sel-row .r-years{margin-left:auto;flex:0 0 auto;max-width:44%;font-family:inherit;font-size:11px;
+                    color:var(--muted);background:#fff;border:1px solid var(--border);border-radius:6px;
+                    padding:3px 4px;cursor:pointer;max-height:24px;}
+  .sel-row .r-years:hover{border-color:var(--azul);color:var(--azul);}
+  .sel-row.sel .r-years{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.45);color:#fff;}
+  /* En una fila con dropdown, el "+" de comparar deja de empujar el layout. */
+  .sel-row .r-years + .add-btn{margin-left:6px;}
+  /* En móvil el dropdown al lado del nombre le come 128px de 312px y parte el nombre
+     ("Argentinos Juni…", medido a 390px), así que se baja a su propio renglón,
+     alineado con el nombre. Más alto por fila, pero el nombre del club entero y un
+     blanco de toque más grande, que en un teléfono valen más. */
+  @media (max-width:900px){
+    .sel-row:has(.r-years){flex-wrap:wrap;}
+    .sel-row .r-years{flex-basis:calc(100% - 34px);max-width:none;margin:5px 0 1px 34px;padding:5px 6px;font-size:12px;max-height:none;}
+  }
 
   /* Copy de después del selector. */
   /* Con el selector en la portada, el botón de club del header sobra: repite la
@@ -251,5 +276,156 @@ const PROTO_JS = `
 `;
 replaceOnce('\n</body>', PROTO_JS + '\n</body>', 'cierre del <body>');
 
+// ---------------------------------------------------------------------------
+// 6. LA TABLA DE EJERCICIOS POR CLUB (`prototipo-inicio-ejercicios.js`).
+//
+//    El `<select>` de la columna EQUIPO tiene que poder decir "Balance 2024/2025"
+//    y "Presupuesto 2026/2027" SIN bajar el `data/<club>-data.js` de cada club: el
+//    panel dibuja 41 clubes y hoy baja 0 archivos de datos, y romper eso para
+//    poner un dropdown sería cambiar un click por 873 KB.
+//
+//    Hoy el índice liviano (`data/club-index.js`) trae el CONTEO de ejercicios
+//    (`y`) y el último (`last`), no la lista. Así que el prototipo genera su
+//    propia tabla, con la misma forma que tendría que ganar `club-index.js` si
+//    esto se aprueba: por club, la lista de [año, reportType], del más reciente al
+//    más viejo. Sale de los mismos `fiscalYearMeta` que lee el sitio, con el mismo
+//    truco de `vm` que usa tools/generate-club-index.js (los data files están
+//    escritos para el navegador, no son módulos de Node).
+// ---------------------------------------------------------------------------
+function cargarDatosDeClubes(){
+  const sandbox = { console, window: {} };
+  sandbox.window.window = sandbox.window;
+  const ctx = vm.createContext(sandbox);
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js',
+    ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f)];
+  for(const rel of files){
+    vm.runInContext(fs.readFileSync(path.join(ROOT, rel), 'utf8'), ctx, { filename: rel });
+  }
+  return vm.runInContext('({ clubs: typeof clubs !== "undefined" ? clubs : null, generic: (window.CLUB_GENERIC_DATA || {}) })', ctx, { filename: 'read-globals' });
+}
+
+const { clubs, generic } = cargarDatosDeClubes();
+const yearsPorClub = {};
+let totalEjercicios = 0;
+Object.keys(generic).sort().forEach(function(clubId){
+  if(!clubs[clubId]) return;
+  const meta = generic[clubId].fiscalYearMeta || {};
+  const filas = Object.keys(meta).map(Number)
+    // Un ejercicio placeholder o esperando al club no es una opción de ejercicio:
+    // es el mismo criterio con el que `goToFinanzasYear()` se niega a navegar a uno.
+    .filter(function(y){ const rt = meta[y].reportType; return rt !== 'placeholder' && rt !== 'pending_official'; })
+    .sort(function(a, b){ return b - a; })   // el más reciente primero
+    .map(function(y){ return [y, meta[y].reportType]; });
+  if(!filas.length) return;
+  yearsPorClub[clubId] = filas;
+  totalEjercicios += filas.length;
+});
+
+fs.writeFileSync(OUT_YEARS, [
+  '// GENERADO por tools/build-prototipo-inicio.js — NO editar a mano.',
+  '// Los ejercicios de cada club, del más reciente al más viejo: [año, reportType].',
+  '// Es lo que le falta a data/club-index.js para que el selector pueda ofrecer el',
+  '// ejercicio sin bajar el data file del club. Solo lo usa el prototipo.',
+  'window.PROTO_YEARS = ' + JSON.stringify(yearsPorClub, null, 0).replace(/\],"/g, '],\n  "').replace(/^\{/, '{\n  ').replace(/\}$/, '\n};'),
+  ''
+].join('\n'));
+
+// ---------------------------------------------------------------------------
+// 7. LA COPIA PARCHEADA DE js/selector.js (`prototipo-inicio-selector.js`).
+//
+//    3 cambios, y este diff ES la propuesta de implementación: si Guido aprueba,
+//    esto mismo va a js/selector.js (con los textos pasando por `t()`).
+// ---------------------------------------------------------------------------
+let selJs = fs.readFileSync(path.join(ROOT, 'js/selector.js'), 'utf8');
+
+function parcharSelector(needle, replacement, what){
+  const i = selJs.indexOf(needle);
+  if(i < 0) throw new Error('ancla no encontrada en js/selector.js (' + what + '): actualizá tools/build-prototipo-inicio.js');
+  if(selJs.indexOf(needle, i + 1) >= 0) throw new Error('ancla ambigua en js/selector.js (' + what + ')');
+  selJs = selJs.slice(0, i) + replacement + selJs.slice(i + needle.length);
+}
+
+// (a) La fila de club le pasa a mkRow sus ejercicios y qué hacer cuando se elige uno.
+parcharSelector(
+  '      crest: initials(nameOf(id)), name: nameOf(id), sub: sub, meta: meta,',
+  '      crest: initials(nameOf(id)), name: nameOf(id), sub: sub, meta: meta,\n' +
+  '      // PROTO: el dropdown de ejercicio de la columna EQUIPO.\n' +
+  '      years: (window.PROTO_YEARS || {})[id], yearsClubId: id,\n' +
+  '      onYear: function(y){ pick(id, y); },',
+  'clubRow -> mkRow');
+
+// (b) `pick` acepta un ejercicio opcional. Sin año se comporta igual que hoy (cae en
+//     Inicio, que muestra todos los ejercicios); con año va derecho a la ficha de
+//     Finanzas de ESE ejercicio, reusando `goToFinanzasYear()`, que ya existe para el
+//     click en una barra de los gráficos de Inicio: un solo camino a "club + año".
+parcharSelector(
+  '    Promise.resolve(api.pickClub(id)).then(function(){ renderButton(); renderRecents(); });',
+  '    Promise.resolve(api.pickClub(id)).then(function(){\n' +
+  '      renderButton(); renderRecents();\n' +
+  '      if(year && window.goToFinanzasYear) window.goToFinanzasYear(id, Number(year));\n' +
+  '    });',
+  'pick -> goToFinanzasYear');
+parcharSelector('  function pick(id){', '  function pick(id, year){', 'firma de pick');
+
+// (c) mkRow dibuja el <select>. Va ANTES del "+" de comparación, así el orden de la
+//     fila es: nombre › ejercicio › comparar. El `stopPropagation` es obligatorio:
+//     la fila entera es un <button>, y sin eso abrir el dropdown elegiría el club.
+parcharSelector(
+  '    // El "+" de comparación. Vive en la fila del panel (clubes y ligas) y agrega ese',
+  `    // PROTO: el <select> de ejercicio. Pedido de Guido: poder elegir el AÑO desde la
+    // misma fila, sin entrar al club primero y buscar el dropdown de Finanzas después.
+    // La opción 0 no es un año: es "el club entero", que es adónde lleva clickear la
+    // fila, y tiene que seguir siendo el camino por default (el 90% quiere el club,
+    // no un ejercicio puntual).
+    if(o.years && o.years.length){
+      var ys = document.createElement('select');
+      ys.className = 'r-years';
+      var op0 = document.createElement('option');
+      op0.value = '';
+      op0.textContent = o.years.length === 1 ? 'Ver el ejercicio' : 'Ver un ejercicio';
+      ys.appendChild(op0);
+      o.years.forEach(function(par){
+        var op = document.createElement('option');
+        op.value = String(par[0]);
+        // Mismo label que usa el sitio adentro (ejercicioLabel, js/finanzas-calc.js):
+        // "Balance 2024/2025", "Presupuesto 2026/2027", y año suelto para los clubes
+        // de ejercicio calendario. No se inventa un formato nuevo para el selector.
+        op.textContent = window.ejercicioLabel
+          ? window.ejercicioLabel(par[0], par[1], o.yearsClubId)
+          : String(par[0]);
+        ys.appendChild(op);
+      });
+      ys.title = 'Ir directo a un ejercicio de este club';
+      // Los 3: sin mousedown el <button> de la fila se "arma" y en algunos navegadores
+      // se queda con el click; sin click el dropdown elige el club al abrirse.
+      ys.addEventListener('mousedown', function(ev){ ev.stopPropagation(); });
+      ys.addEventListener('click', function(ev){ ev.stopPropagation(); });
+      ys.addEventListener('change', function(ev){
+        ev.stopPropagation();
+        if(this.value && o.onYear) o.onYear(this.value);
+      });
+      b.appendChild(ys);
+    }
+
+    // El "+" de comparación. Vive en la fila del panel (clubes y ligas) y agrega ese`,
+  'mkRow -> <select> de ejercicio');
+
+fs.writeFileSync(OUT_SEL, selJs);
+
+// ---------------------------------------------------------------------------
+// 8. La portada carga la copia parcheada en vez de js/selector.js.
+// ---------------------------------------------------------------------------
+const TAG_SELECTOR = html.match(/<script src="js\/selector\.js\?v=[^"]*"><\/script>/);
+if(!TAG_SELECTOR) throw new Error('no se encontró el <script> de js/selector.js en index.html');
+replaceOnce(TAG_SELECTOR[0],
+  '<!-- PROTO: la tabla de ejercicios por club, y la copia PARCHEADA de js/selector.js\n' +
+  '     (el <select> de ejercicio en la columna EQUIPO). Las dos las genera\n' +
+  '     tools/build-prototipo-inicio.js; el sitio sigue cargando js/selector.js. -->\n' +
+  '<script src="prototipo-inicio-ejercicios.js"></script>\n' +
+  '<script src="prototipo-inicio-selector.js"></script>',
+  'script de js/selector.js');
+
 fs.writeFileSync(OUT, html);
 console.log('escrito: ' + path.relative(ROOT, OUT) + ' (' + Math.round(html.length / 1024) + ' KB)');
+console.log('escrito: ' + path.relative(ROOT, OUT_SEL) + ' (copia parcheada de js/selector.js)');
+console.log('escrito: ' + path.relative(ROOT, OUT_YEARS) + ' (' + Object.keys(yearsPorClub).length + ' clubes, ' + totalEjercicios + ' ejercicios)');
