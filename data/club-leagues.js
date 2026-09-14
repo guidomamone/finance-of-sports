@@ -26,9 +26,17 @@
 // ningún torneo). Al cargar un ejercicio nuevo hay que agregar su fila acá: la
 // auditoría avisa si falta.
 //
-// ESTADO: verificadas las 30 filas que no tienen ambigüedad de calendario (Japón,
-// España, Brasil, Colombia, México), cada bloque con la página de Wikipedia
-// contra la que se chequeó. Faltan las 55 argentinas.
+// ESTADO: 82 de las 85 filas verificadas, cada bloque con la fuente contra la que
+// se chequeó. Las 3 que faltan son presupuestos (Boca 2027, Racing 2026 y 2027):
+// dos cierran en el futuro y el tercero no se chequeó contra la temporada.
+//
+// LOS IDS DEL PRIMER Y SEGUNDO ESCALÓN ARGENTINO son `ar-primera` y
+// `ar-primeranacional`, y NO el `ar-lpf` que propone el prompt del selector. El
+// motivo: en el período cargado (2009 a 2027) esa misma categoría cambió de
+// organizador y de nombre tres veces (Primera División de AFA, Superliga
+// 2017-2019, Liga Profesional desde 2020), así que un id atado al organizador de
+// hoy leería mal en un ejercicio de 2009. El id nombra el ESCALÓN, que es lo que
+// no cambia; el nombre de cada época es un dato de `leagues.js`, cuando exista.
 //
 // LOS IDS DE LIGA todavía no existen: `data/leagues.js` es parte de la sesión
 // del selector. La convención acordada en ese prompt es `<iso2>-<slug>`:
@@ -50,17 +58,35 @@
 
 const CLUB_LEAGUE_BY_YEAR = {
   // ---- ARGENTINA (cierre de ejercicio: 30/6 y 31/8) ----
-  argentinosjuniors: { 2015: null, 2016: null, 2017: null, 2018: null, 2019: null },
-  boca: { 2025: null, 2027: null },
-  estudianteslp: { 2022: null, 2023: null, 2024: null, 2025: null },
-  independiente: { 2024: null },
-  instituto: { 2024: null },
-  racing: { 2009: null, 2010: null, 2011: null, 2012: null, 2013: null, 2014: null, 2015: null, 2016: null, 2017: null, 2018: null, 2019: null, 2020: null, 2021: null, 2024: null, 2025: null, 2026: null, 2027: null },
-  river: { 2024: null },
-  rosariocentral: { 2023: null },
-  sanlorenzo: { 2011: null, 2012: null, 2013: null, 2014: null, 2015: null, 2016: null, 2017: null, 2024: null },
-  union: { 2022: null, 2023: null, 2024: null, 2025: null },
-  velez: { 2015: null, 2016: null, 2017: null, 2018: null, 2019: null, 2020: null, 2021: null, 2022: null, 2023: null, 2024: null, 2025: null },
+  // Verificado el 13/9/2026: temporadas 2022, 2023, 2024 y 2025 de Primera División contra sus
+  // páginas de Wikipedia (cubren Estudiantes, Unión, Rosario Central, Independiente, Instituto,
+  // River, Boca, San Lorenzo 2024, Racing 2024 y Vélez 2024); Argentinos Juniors contra su propia
+  // página y la de la B Nacional 2016-17. Vélez, San Lorenzo y Racing en todos los años con
+  // balance: confirmado por Guido, que conoce el dato (13/9/2026).
+  //
+  // SUB-REGLA DE "LA CATEGORÍA AL CIERRE", para los ejercicios que cierran entre dos torneos:
+  // vale la categoría de la temporada EN CURSO o recién terminada a la fecha de cierre. Importa
+  // una sola vez acá, y es el caso de Argentinos: su ejercicio jul-2015/jun-2016 se jugó entero en
+  // Primera (el descenso se definió al terminar el torneo 2016, en mayo), así que ese ejercicio es
+  // Primera aunque al 30/6/2016 el club ya estuviera descendido para el torneo siguiente. Leerlo al
+  // revés pondría como "B Nacional" un año cuyos ingresos son 100% de Primera.
+  argentinosjuniors: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primeranacional', 2018: 'ar-primera', 2019: 'ar-primera' },
+  // El único de los 11 que cambió de categoría en el período cargado: descendió al terminar el
+  // torneo de transición 2016 y jugó la B Nacional 2016-17, que ganó (terminó el 30/7/2017, o sea
+  // que al cierre del ejercicio 2017 todavía estaba en curso). Volvió a Primera para 2017-18.
+  boca: { 2025: 'ar-primera', 2027: null },          // 2027 es el presupuesto jul-2026/jun-2027: cierra en el futuro
+  estudianteslp: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
+  independiente: { 2024: 'ar-primera' },
+  instituto: { 2024: 'ar-primera' },              // ascendido para 2023, ya en Primera al cierre
+  racing: { 2009: 'ar-primera', 2010: 'ar-primera', 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera', 2026: null, 2027: null },
+  // 2026 y 2027 son presupuestos: el de 2027 cierra en el futuro, y el de 2026 (cerrado el
+  // 30/6/2026) no se verificó contra la temporada, así que queda en null como cualquier otro
+  // dato sin chequear.
+  river: { 2024: 'ar-primera' },
+  rosariocentral: { 2023: 'ar-primera' },
+  sanlorenzo: { 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2024: 'ar-primera' },
+  union: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
+  velez: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
 
   // ---- BRASIL (cierre de ejercicio: 31/12) ----
   // Verificado el 13/9/2026 contra las páginas de temporada de Wikipedia: Série A 2024 y 2025,

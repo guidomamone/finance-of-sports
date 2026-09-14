@@ -416,7 +416,7 @@ function checkLigasPorEjercicio(api) {
     add('P2', 'liga-sin-fila', `${sinFila.length} ejercicios reales sin fila en data/club-leagues.js (${sinFila.slice(0, 6).join(', ')}${sinFila.length > 6 ? '…' : ''}): al cargar un ejercicio hay que agregarle su fila, si no el selector no sabe en qué categoría se jugó`);
   }
   if (cob.faltan) {
-    add('P3', 'liga-sin-verificar', `${cob.faltan} de ${cob.total} filas de data/club-leagues.js siguen en null, o sea sin verificar contra fuente. Las 55 argentinas esperan además el criterio de qué categoría le corresponde a un ejercicio que cruza dos torneos`);
+    add('P3', 'liga-sin-verificar', `${cob.faltan} de ${cob.total} filas de data/club-leagues.js siguen en null, o sea sin verificar contra fuente`);
   }
 }
 
