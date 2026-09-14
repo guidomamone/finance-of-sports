@@ -15,6 +15,14 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- LA LIGA DE UN EJERCICIO ES LA DEL CIERRE (Versión 132, decidido por Guido). Cuando un ejercicio
+  cruza dos torneos (los argentinos cierran el 30/6 y la temporada va de febrero a diciembre), en
+  `data/club-leagues.js` se anota la división en la que estaba el club EL DÍA QUE CERRÓ EL BALANCE.
+  Es la misma regla que el proyecto ya usa para atribuir la gestión presidencial, y por eso se
+  eligió: una regla menos que explicar y que recordar. Ojo con lo que NO dice: no afirma que todos
+  los ingresos del ejercicio se hayan generado en esa categoría, y cuando el club ascendió o
+  descendió en el medio, la mitad de la plata viene de la otra. Si alguna vez eso importa para una
+  comparación, se agrega el matiz en el aviso, no cambiando el criterio.
 - EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (Versión 129, decidido antes del selector
   jerárquico). `racingsantander-es`, `nacional-uy`, `independiente-co`. Por qué: el `clubId` no es
   una clave más, nombra el archivo de datos (`data/<clubId>-data.js`, por convención de

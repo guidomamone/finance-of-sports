@@ -26,18 +26,26 @@
 // ningún torneo). Al cargar un ejercicio nuevo hay que agregar su fila acá: la
 // auditoría avisa si falta.
 //
+// ESTADO: verificadas las 30 filas que no tienen ambigüedad de calendario (Japón,
+// España, Brasil, Colombia, México), cada bloque con la página de Wikipedia
+// contra la que se chequeó. Faltan las 55 argentinas.
+//
 // LOS IDS DE LIGA todavía no existen: `data/leagues.js` es parte de la sesión
 // del selector. La convención acordada en ese prompt es `<iso2>-<slug>`:
 // `ar-lpf`, `ar-primeranacional`, `es-laliga`, `jp-j1`, `br-serieA`,
 // `br-serieB`, `co-primeraA`, `mx-ligamx`.
 //
-// PREGUNTA ABIERTA, y por eso las 55 filas argentinas siguen en null: un
-// ejercicio argentino cierra el 30/6 (o el 31/8, Racing hasta 2021) y la
-// temporada argentina va de febrero a diciembre, así que UN ejercicio toca DOS
-// torneos. Hay que decidir el criterio una vez (¿la categoría en la que cerró el
-// ejercicio? ¿la del torneo que terminó adentro? ¿se marca como mixto?) y
-// aplicarlo parejo. España, México (cierre 30/6, temporada ago-may) y los de año
-// calendario (Brasil, Japón, Colombia) no tienen esta ambigüedad.
+// EL CRITERIO CUANDO UN EJERCICIO CRUZA DOS TORNEOS (decidido por Guido, Versión
+// 132): vale LA CATEGORÍA AL CIERRE DEL EJERCICIO. Un ejercicio argentino cierra
+// el 30/6 (o el 31/8, Racing hasta 2021) y la temporada argentina va de febrero a
+// diciembre, así que uno solo toca dos torneos; se anota la división en la que
+// estaba el club el día que cerró el balance. Es una regla sola, siempre
+// determinable, y es la MISMA que el proyecto ya usa para atribuir la gestión
+// presidencial (el presidente a cargo al cierre, aunque el ejercicio se haya
+// repartido entre dos: ver Moretti en San Lorenzo 2024 y el caso de Vélez 2023).
+// España y México (cierre 30/6, temporada ago-may) y los de año calendario
+// (Brasil, Japón, Colombia) no tienen esta ambigüedad: el ejercicio coincide con
+// una temporada.
 // ============================================================================
 
 const CLUB_LEAGUE_BY_YEAR = {
@@ -55,44 +63,53 @@ const CLUB_LEAGUE_BY_YEAR = {
   velez: { 2015: null, 2016: null, 2017: null, 2018: null, 2019: null, 2020: null, 2021: null, 2022: null, 2023: null, 2024: null, 2025: null },
 
   // ---- BRASIL (cierre de ejercicio: 31/12) ----
-  atleticogoianiense: { 2025: null },
-  botafogo: { 2024: null },
-  coritiba: { 2024: null },
-  cruzeiro: { 2025: null },
-  gremio: { 2024: null },
-  ituano: { 2024: null },
-  mirassol: { 2024: null },
+  // Verificado el 13/9/2026 contra las páginas de temporada de Wikipedia: Série A 2024 y 2025,
+  // Série B 2024 y 2025. El ejercicio es el año calendario, así que coincide con la temporada.
+  atleticogoianiense: { 2025: 'br-serieB' },   // descendido de la Série A 2024
+  botafogo: { 2024: 'br-serieA' },             // campeón 2024
+  coritiba: { 2024: 'br-serieB' },             // descendido de la Série A 2023
+  cruzeiro: { 2025: 'br-serieA' },
+  gremio: { 2024: 'br-serieA' },
+  ituano: { 2024: 'br-serieB' },
+  mirassol: { 2024: 'br-serieB' },             // ascendió a la Série A para 2025
 
   // ---- COLOMBIA (cierre de ejercicio: 31/12) ----
-  envigado: { 2025: null },
-  oncecaldas: { 2025: null },
+  // Verificado el 13/9/2026 contra "2025 Categoría Primera A season" (Wikipedia).
+  envigado: { 2025: 'co-primeraA' },           // descendió al terminar 2025
+  oncecaldas: { 2025: 'co-primeraA' },
 
   // ---- ESPAÑA (cierre de ejercicio: 30/6) ----
-  athleticclub: { 2025: null },
-  atleticomadrid: { 2025: null },
-  celtavigo: { 2025: null },
-  deportivoalaves: { 2025: null },
-  fcbarcelona: { 2025: null },
-  realbetis: { 2025: null },
-  realmadrid: { 2025: null },
-  sevillafc: { 2025: null },
-  valenciacf: { 2025: null },
-  villarrealcf: { 2024: null },
+  // Verificado el 13/9/2026 contra "2024-25 La Liga" y "2023-24 La Liga" (Wikipedia). El
+  // ejercicio cierra el 30/6 y coincide con la temporada, sin ambigüedad.
+  athleticclub: { 2025: 'es-laliga' },
+  atleticomadrid: { 2025: 'es-laliga' },
+  celtavigo: { 2025: 'es-laliga' },
+  deportivoalaves: { 2025: 'es-laliga' },
+  fcbarcelona: { 2025: 'es-laliga' },
+  realbetis: { 2025: 'es-laliga' },
+  realmadrid: { 2025: 'es-laliga' },
+  sevillafc: { 2025: 'es-laliga' },
+  valenciacf: { 2025: 'es-laliga' },
+  villarrealcf: { 2024: 'es-laliga' },         // temporada 2023/24
 
   // ---- JAPÓN (cierre de ejercicio: 31/12) ----
-  cerezoosaka: { 2025: null },
-  fctokyo: { 2025: null },
-  gambaosaka: { 2025: null },
-  kashimaantlers: { 2025: null },
-  kawasakifrontale: { 2025: null },
-  nagoyagrampus: { 2025: null },
-  sanfreccehiroshima: { 2025: null },
-  urawareddiamonds: { 2025: null },
-  visselkobe: { 2025: null },
-  yokohamafmarinos: { 2025: null },
+  // Verificado el 13/9/2026 contra "2025 J1 League" (Wikipedia): los 10 clubes cargados
+  // jugaron J1 en 2025.
+  cerezoosaka: { 2025: 'jp-j1' },
+  fctokyo: { 2025: 'jp-j1' },
+  gambaosaka: { 2025: 'jp-j1' },
+  kashimaantlers: { 2025: 'jp-j1' },
+  kawasakifrontale: { 2025: 'jp-j1' },
+  nagoyagrampus: { 2025: 'jp-j1' },
+  sanfreccehiroshima: { 2025: 'jp-j1' },
+  urawareddiamonds: { 2025: 'jp-j1' },
+  visselkobe: { 2025: 'jp-j1' },
+  yokohamafmarinos: { 2025: 'jp-j1' },
 
   // ---- MÉXICO (cierre de ejercicio: 31/12) ----
-  clubamerica: { 2025: null },
+  // Verificado el 13/9/2026 contra "2024-25 Liga MX season" (Wikipedia). Liga MX viene con
+  // los mismos 18 clubes desde 2020-21.
+  clubamerica: { 2025: 'mx-ligamx' },
 };
 
 // leagueAt(clubId, year): la liga de ESE ejercicio, o null si todavía no se

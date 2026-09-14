@@ -750,3 +750,10 @@ to-do list vigente) ver el comentario HTML al principio de `index.html`.
 - `leagueAt(clubId, year)` devuelve null cuando no se verificó, a propósito, en vez de caer a "la liga de hoy": un ejercicio de hace diez años puede ser de otra categoría, y contestar con la actual sería inventar justo el dato que este archivo existe para no inventar.
 - `tools/audit.js` suma `liga-sin-fila` (P2, un ejercicio real que ni siquiera tiene su fila) y `liga-sin-verificar` (P3, cuántas filas siguen en null). Hoy: 0 y 85 de 85.
 - Pregunta abierta que bloquea las 55 filas argentinas: un ejercicio que cierra el 30/6 (o el 31/8 de Racing hasta 2021) cruza dos torneos del calendario argentino. Hay que fijar el criterio una vez. España, México y los de año calendario (Brasil, Japón, Colombia) no tienen esa ambigüedad.
+
+## Versión 133: criterio de liga por ejercicio, y las primeras 30 filas verificadas
+
+- CRITERIO decidido por Guido, escrito en `CONVENCIONES.md` y en el archivo: cuando un ejercicio cruza dos torneos, vale LA CATEGORÍA AL CIERRE. Es la misma regla que el proyecto ya usa para atribuir la gestión presidencial, así que es una regla menos que recordar. No afirma que todos los ingresos del ejercicio se hayan generado en esa categoría; si alguna vez eso importa, el matiz va en el aviso de la comparación, no en el criterio.
+- 30 de las 85 filas de `data/club-leagues.js` verificadas contra las páginas de temporada de Wikipedia, con la fuente anotada por bloque: Japón (10 clubes, J1 2025), España (9 en LaLiga 2024/25 más Villarreal en 2023/24), Brasil (7, repartidos entre Série A y B), Colombia (2, Primera A) y México (1, Liga MX).
+- Dos de esas 7 filas brasileñas corrigen la suposición del prototipo: Coritiba e Ituano jugaron la Série B 2024, y Atlético Goianiense la Série B 2025 (había descendido de la Série A 2024). Mirassol 2024 también es Série B, y ascendió para 2025, que es justo el caso que el prototipo usaba de ejemplo.
+- Faltan las 55 argentinas, que necesitan la historia año por año de cada club.
