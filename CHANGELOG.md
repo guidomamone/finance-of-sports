@@ -5,8 +5,9 @@ por versión, desde la Versión 10 (cuando el sitio pasó de ser solo de Boca a
 multi-club) hasta hoy. Son bullets terses de qué cambió, no el porqué completo.
 Para el razonamiento narrativo detrás de cualquier entrada (qué se probó, qué se
 descartó, cómo se encontró cada bug) ver `finance-of-sports-project.md`. Para el estado
-actual del proyecto (qué hay armado, qué es real vs. placeholder por club, y la
-to-do list vigente) ver el comentario HTML al principio de `index.html`.
+actual del proyecto (qué hay armado, qué es real vs. placeholder por club) ver
+`ESTADO.md`, y para la to-do list vigente, `TODO.md` — hasta la Versión 137 las
+dos cosas vivían en un comentario HTML al principio de `index.html`.
 
 ---
 
@@ -950,3 +951,18 @@ documentados, listos para una sesión de onboarding futura.)*
 - `catchall-dominante` bajó de 11 a 3 (quedan instituto 2024 y velez 2016/2017, cuyos documentos sí
   podrían tener más detalle). P2 total: 44, eran 54 al empezar el día.
 - `auditAll()`: 41 clubes, 222 checks, 0 que no cierran. Ningún total se movió.
+
+## Versión 142: la to-do list pasó de 18 puntos a 8, y Japón pasó de tarea a pregunta
+
+- Sacados de `TODO.md` por decisión de Guido, con el motivo escrito en el propio archivo para que
+  quede el registro: los 6 puntos de sourcing y onboarding por país (eran 12 a 18 — Argentina,
+  Ecuador, Marruecos, Club América, Brasil, España, Colombia), que son trabajo normal del proyecto y
+  no una lista de pendientes; y el corte free/paid y el paywall (eran 5 y 6).
+- DECISIÓN: el sitio va **todo gratis por ahora**. `ESTADO.md` lo dice, se borró el CSS muerto de
+  `.premium-cta` (2 reglas que ya no usaba ningún markup), y queda anotado que "Mi Cuenta" es lo
+  único que todavía le anuncia al visitante un plan pago.
+- JAPÓN: la pregunta que quedó abierta tras la Versión 141 se anotó en `dudas-por-club.md`, en dos
+  mitades — a la liga (¿existe el desglose por club del lado de la J.League, que es quien arma los
+  promedios divisionales, y hay algún corte de GASTOS por club?) y a cada club (¿publican su propio
+  決算公告 / 事業報告 completo?), cada una con su canal de contacto verificado.
+- Nada de esto mueve un número: `auditAll()` sigue en 41 clubes, 222 checks, 0 que no cierran.

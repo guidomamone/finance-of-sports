@@ -17,9 +17,25 @@ ni en el comentario de ningún archivo de código.
   "RESUELTO" y la lista terminó con la mitad de los puntos siendo cosas ya hechas.
 
 Sacados el 2026-09-14 por decisión de Guido, para que quede el registro de que no se
-perdieron sino que se descartaron: buscar y cargar ejercicios que faltan de un club
-(Racing/River, y Boca), que no es una tarea de lista sino trabajo normal de onboarding;
-y Mercado de Pases, que queda fuera de alcance por ahora.
+perdieron sino que se descartaron:
+
+- **Buscar y cargar ejercicios que faltan de un club** (Racing/River, y Boca): no es una tarea de
+  lista, es trabajo normal de onboarding.
+- **Mercado de Pases**: fuera de alcance por ahora.
+- **Los 6 puntos de sourcing y onboarding por país** (eran 12 a 18: los PDFs argentinos ya
+  descargados sin cargar, Ecuador, la pista de OMPIC en Marruecos, el ejercicio 2024 de Club
+  América, los 5 brasileños con PDF listo, los años extra de España, y el barrido colombiano).
+  Mismo criterio que el primer punto: buscar y cargar documentos es el trabajo del proyecto, no
+  una lista de pendientes. **No se perdió nada**: qué hay descargado y qué falta de cada club vive
+  en `fuentes/<País>/<Club>.md` y en el índice `fuentes-por-club.md`, que es donde se mira antes
+  de empezar; las preguntas abiertas que dejaron (el tipo de cambio doble de Ollamani, el PAT de
+  Once Caldas, las 3 cifras de Deportes Tolima, el presupuesto por año calendario de Instituto)
+  están en `dudas-por-club.md` y en el archivo de fuentes de cada club.
+- **El corte free/paid y el paywall** (eran 5 y 6). Decisión de Guido del 2026-09-14: **por ahora
+  el sitio va todo gratis**. No hay corte que definir ni cuentas/suscripciones que construir, así
+  que no son pendientes. El día que se revise, la arquitectura ya charlada está en
+  `finance-of-sports-project.md` (sitio estático + capa mínima de backend: Supabase para auth y estado
+  de suscripción, Netlify Functions para el webhook de pagos; no migrar a Next.js).
 
 ---
 
@@ -77,7 +93,8 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
         mostraba en una fila que sugería que sí sabíamos qué era. Los 7 japoneses y `river 2024`
         pasaron al bucket "sin desglosar por la fuente", que lo dice. Para Japón se re-verificó
         antes (3 fuentes independientes) que el desglose por club NO existe en ningún lado: ver
-        `fuentes/Japón/_notas-generales.md`. Los 3 que quedan son de clubes cuyo documento SÍ podría
+        `fuentes/Japón/_notas-generales.md`. Lo que queda de Japón ya no es una tarea de código
+        sino dos preguntas, una a la liga y otra a los clubes, anotadas en `dudas-por-club.md`. Los 3 que quedan son de clubes cuyo documento SÍ podría
         tener más detalle, hay que ir al documento.
     (c) 16 líneas con el signo opuesto al de su sección y peso real (deducciones sobre la receita de
         los clubes brasileños, "Costo de desarrollo de jugadores propios (reclasificación)" de Vélez
@@ -177,122 +194,6 @@ y Mercado de Pases, que queda fuera de alcance por ahora.
     (f) `auditAll()` carga los clubes en SERIE (`for` con `await`): 114 ms con 41, pero ~30 s a 1000
         clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
         paralelas con `Promise.all`.
-
-12. ACTUALIZADO Versión 95 (Guido: "onboard all pdfs we have"): de los 11 clubes con al menos un
-    balance/memoria real ya descargado que identificó la investigación de la Versión 75 (ver
-    `fuentes-por-club.md`, sección "Otros clubes de Primera División"), TODOS fueron revisados a
-    fondo en esta sesión. 6 tenían datos financieros reales usables y ya están cargados: Rosario
-    Central, Independiente, Argentinos Juniors, Estudiantes de La Plata, San Lorenzo, Unión (sumados
-    a Vélez e Instituto, ya cargados antes) — el sitio pasó de 5 a 11 clubes en una sola sesión. Los
-    otros 3 (Gimnasia y Esgrima LP, Talleres, Belgrano) NO tienen datos cargables pese a nombres de
-    archivo prometedores — son reportes narrativos/infográficos sin Estado de Recursos y Gastos real,
-    confirmado revisando el contenido completo de cada uno, no solo el nombre.
-    PENDIENTE (documentos ya identificados, quedaron sin procesar por alcance/tiempo de esta sesión,
-    no por falta de fuente):
-    - Argentinos Juniors: 3 balances escaneados (2015-16/2016-17/2017-18) sin OCR — hoy esos 3
-      ejercicios están cargados a nivel agregado (4 categorías, desde una presentación de asamblea),
-      el OCR de los balances completos daría más detalle por rubro.
-    - Estudiantes de La Plata: Ejercicio 2024-25, escaneado, sin OCR.
-    - San Lorenzo: 4 balances escaneados (2011-12/2014-15/2015-16/2016-17) sin OCR; Presupuesto/
-      Pautas 2023-24 transcriptos pero no cargados (presupuesto de caja mensual, filas mal alineadas
-      por el layout de pdftotext, necesita más trabajo de parsing).
-    - Unión: Ejercicios 116/117/118 (estados contables), escaneados, sin OCR.
-    - Instituto: Presupuesto 2025 + premisas transcriptos pero SIN cargar — presupuestan por año
-      CALENDARIO (ene-dic) en vez de por ejercicio económico (jul-jun, el que usa el balance), no
-      encaja en el mismo `year` key sin decidir antes cómo modelar un presupuesto de ejercicio
-      calendario (¿un `year` propio tipo "cal-2025"? ¿mapearlo al ejercicio jul-jun que más se
-      superpone?) — confirmar con Guido antes de forzar un criterio.
-    Ver `dudas-por-club.md` para las preguntas genuinas que quedaron abiertas de esta sesión
-    (atribución de gestión con cambio de presidente a mitad de ejercicio, cotizaciones de USD
-    ambiguas, columnas de Anexo no separables por OCR) — no se asumió ningún criterio a ciegas.
-
-13. NUEVO (Versión 104): Ecuador — evaluar si el "informe presidencial" de Deportivo Cuenca (caja:
-    ingresos/egresos bancarios + pagos SRI/IESS, ver `fuentes/Ecuador/Deportivo Cuenca.md`) es
-    cargable al sitio pese a no ser un estado contable devengado (sin balance/estado de resultados
-    completo) — decidir con Guido antes de forzarlo al esquema existente, o anotar la duda en
-    `dudas-por-club.md`. Aparte: re-chequear Ecuador en unos meses, cuando la prensa reporte que
-    algún club de la lista completó su conversión a S.A.D.P./SAD (ver hallazgo de esta sesión: a
-    sept-2026 ninguno lo hizo todavía) — recién ahí tendría sentido buscar en Supercias.
-
-14. NUEVO (Versión 105): sourcing en África, 0 PDFs conseguidos pero una pista concreta sin cerrar
-    en Marruecos. Wydad AC y Raja Club Athletic tienen SAS (sociedad anónima) reales que deberían
-    depositar su bilan (balance) en el registro oficial marroquí OMPIC (`directinfo.ma`) — la
-    búsqueda por nombre es gratis, pero descargar el documento es pago y requiere una cuenta que un
-    agente no puede crear. Si Guido quiere pagarlo él mismo: entrar a `directinfo.ma`, buscar "RAJA
-    CLUB ATHLETIC SOCIETE ANONYME RAJA" y "WYDAD ATHLETIC CLUB", confirmar primero (gratis) si
-    figura un bilan depositado antes de pagar nada — ver `fuentes/Marruecos/_notas-generales.md`
-    para el detalle completo. Sudáfrica, Egipto y Nigeria quedaron como dead-end estructural (ver
-    `.claude/skills/club-sourcing/SKILL.md` sección 8), no vale la pena reintentarlos sin un dato
-    nuevo.
-
-15. NUEVO (Versión 107): Club América/Ollamani — decidir si vale la pena cargar el Ejercicio 2024
-    (período inicial de 11 meses, 1/2/2024 a 31/12/2024, PDF ya descargado en
-    `Clubes/México/Club América/reporte-financiero-ollamani-2024-auditado.pdf`) como 2do punto de
-    la serie histórica, aun sin ser directamente comparable a un año completo. Aparte: preguntarle
-    a Guido (o anotar en `dudas-por-club.md`) si vale la pena escribirle a Ollamani Investor
-    Relations para resolver la discrepancia de tipo de cambio de cierre 31/12/2025 declarada en el
-    mismo reporte ($18.0012 en la sección MD&A vs. $17.9528 en la Nota a los EEFF auditados, ver
-    `data/clubamerica-data.js`). Por último: `fuentes/México/_notas-generales.md` señala que otros
-    grupos matriz de Liga MX que ya cotizan en BMV por otro negocio (FEMSA-Monterrey/Tigres,
-    CEMEX-Tigres) podrían desglosar fútbol como segmento en SUS PROPIOS reportes CNBV, igual que
-    Ollamani — vale la pena chequear antes de asumir que el hallazgo de Club América es único en
-    Liga MX. RESUELTO (al onboardear los primeros clubes de Brasil): `ejercicioLabel(year,
-    reportType, clubId)` ahora recibe un 3er parámetro opcional `clubId`; si `isCalendarYearClub(clubId)`
-    (lee `clubs[clubId].fiscalYearStart === '01-01'`) el label es el año suelto ("Balance 2025"), no
-    el rango de temporada. Aplica automáticamente a Club América, Japón y cualquier club de año
-    calendario futuro con solo declarar `fiscalYearStart:'01-01'` en `data/clubs.js`, sin tocar
-    `js/finanzas-calc.js` de nuevo.
-
-16. ACTUALIZADO (Versión 116): Brasil — de los 8 clubes con PDF ya descargado en `Clubes/Brasil/`
-    que quedaban sin cargar, se cargaron 3 en la Versión 116 (Coritiba, Ituano, Mirassol). QUEDAN 5,
-    todos con PDF ya descargado Y con texto extraíble confirmado (se midió `pdftotext` chars/página
-    para los 8 antes de empezar: ninguno es escaneo, ninguno necesita OCR, así que son todos
-    "fáciles" en el sentido de la Versión 116):
-    - Athletico Paranaense (2 ejercicios: 2024 y 2025, no es SAF, 47 pág., ~2.346 char/pág.)
-    - Bahia (2024 + 2025 de la SAF, más 2020-2021 de la associação — DECIDIR QUÉ ENTIDAD USAR antes
-      de cargar, es el único de los 5 con esa pregunta abierta; 41 pág., ~3.143 char/pág.)
-    - Botafogo-SP (3 PDFs, NO es el Botafogo carioca ya cargado, ojo de no confundirlos; 35 pág.,
-      ~2.101 char/pág.)
-    - Chapecoense (3 ejercicios: 2016, 2017 y 2020-2021, no es SAF; 40 pág., ~2.270 char/pág.)
-    - Vasco da Gama (2 SAF + 1 associação, recuperado pese al bloqueo Cloudflare del dominio
-      oficial; 54 pág., ~2.464 char/pág.)
-    Para cada uno: 1 solo ejercicio, seguir el patrón de `data/coritiba-data.js` (el más completo de
-    Brasil) o `data/gremio-data.js`. OJO con la trampa que apareció en Coritiba: si la DRE presenta
-    los costos del fútbol en 2 líneas por DESTINO ("futebol profissional"/"categorias de base"),
-    NO cargar esas 2, buscar la nota de "custos por natureza" y cargar ESA, o el bucket "Salarios y
-    primas" de Formato Simplificado queda en cero para el club (ver la REGLA de la Versión 38 en
-    club-data-mapping SKILL.md sección 1). Aparte: Deportes Tolima (Colombia) quedó sin
-    cargar por una discrepancia real de 3 cifras de PAT distintas entre SIIS/el documento/la cuenta
-    propia (ver `dudas-por-club.md`) — no forzar un número hasta resolver cuál es la correcta.
-
-17. NUEVO (Versión 110): Once Caldas tiene `tax` como residuo documentado (no una línea impresa) por
-    falta del estado primario en el PDF descargado (solo notas) — si en el futuro aparece el Estado
-    de Resultado Integral primario, reemplazar el residuo por el dato real (ver `dudas-por-club.md`).
-    Envigado tiene 9 ejercicios más (2016-2024) disponibles en SIIS sin cargar, a propósito (pedido
-    explícito de ampliar clubes esta sesión, no profundizar uno). El resto del barrido colombiano
-    (América de Cali, Atlético Nacional, Independiente Santa Fe, Junior de Barranquilla, Deportivo
-    Cali, Deportivo Pereira, Millonarios) sigue sin cargar, solo sourcing — ver `fuentes-por-club.md`.
-
-18. NUEVO (Versión 111): España — los 10 clubes cargados tienen MUCHOS más años disponibles sin
-    cargar todavía en `Clubes/España/<Club>/` (Real Madrid y Barcelona: 22 años cada uno, 2003-2025;
-    Atlético de Madrid: 12 años; Deportivo Alavés: 9 años; Real Betis/Celta de Vigo: con huecos;
-    Villarreal/Valencia solo tienen 1-2 años reales en el archivo actual) — próxima extensión
-    natural es sumar el ejercicio anterior de cada club para habilitar comparación año a año, o
-    seguir sumando clubes nuevos: Real Sociedad (carpeta creada, sin PDFs encontrados todavía) y los
-    5 candidatos de `fuentes/España/_notas-generales.md` (Getafe CF, RCD Mallorca, RC Deportivo, SD
-    Ponferradina, Real Zaragoza, cada uno con página propia de "Ley de Transparencia" confirmada por
-    búsqueda, sin explorar en profundidad). También pendiente: investigar `memberCountByClub` y
-    `gestionesByClub` (presidentes reales) para los 10 clubes, ninguno investigado esta sesión.
-
-5. Definir el corte free/paid: qué queda gratis y qué es contenido pago,
-   antes de poder construir Mi Cuenta de verdad (ver to-do #3, están ligados).
-
-6. Construir el paywall real: cuentas + suscripciones (Supabase para
-   auth/estado de suscripción, no para los datos de los clubes, que siguen
-   siendo archivos estáticos), Netlify Functions para el webhook de dLocal
-   Go y para gatear el contenido pago, siguiendo la recomendación de
-   arquitectura ya charlada (sitio estático + capa mínima de backend, no
-   migrar a Next.js todavía).
 
 7. DOMINIO: renombrar el repo en GitHub y re-linkearlo en Netlify. **Lo tiene que
    hacer Guido, no lo puede hacer un agente.** El dominio `financeofsports.com` ya está

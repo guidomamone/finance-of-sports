@@ -28,9 +28,12 @@ mismo archivo, con conflictos entre sesiones que no tenían nada que ver entre s
 
 Arrancó como un sitio solo para hinchas de Boca antes de una elección de
 presidente. Ahora es más ambicioso: un sitio de finanzas de clubes de fútbol
-en general (multi-club), pensado para periodistas y creadores de contenido,
-con plan gratis (lo que hoy se ve) y un plan pago futuro (analítica avanzada +
-tweets pre-armados, suscripciones vía dLocal Go). Presupuesto casi cero,
+en general (multi-club), pensado para periodistas y creadores de contenido.
+**Todo el sitio es gratis, y por ahora se queda así** (decisión de Guido,
+2026-09-14: no hay corte free/paid que definir ni paywall que construir; los
+dos puntos que había en la to-do se sacaron). La idea de un plan pago
+(analítica avanzada + tweets pre-armados, suscripciones vía dLocal Go) queda
+como posibilidad, no como trabajo pendiente. Presupuesto casi cero,
 sigue siendo un proyecto hobby de Guido, no gastar en infraestructura que
 no haga falta todavía. Nombre del sitio: "El deporte en Números" en castellano y
 "Finance of Sports" en inglés (clave `site.name`, ver data/lang/en.js). Historia
@@ -162,7 +165,10 @@ se reescribe, no se acumula.
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
   trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
   placeholder según el club. "Mi Cuenta" es un stub sin
-  funcionalidad, esperando la decisión de free/paid (to-do 5 y 6).
+  funcionalidad: es la única parte del sitio que todavía le anuncia al visitante
+  un plan pago ("próximamente"), y con la decisión de ir todo gratis ya no está
+  esperando nada. Pendiente de decidir con Guido si se saca la pestaña o se
+  reescribe el texto.
 - UI: SELECTOR JERÁRQUICO DE CLUB en el header (Versión 137, reemplaza al
   `<select>` plano de 41 opciones): un botón con el club activo que abre un panel
   Deporte > Región > País > Liga > Equipo, con búsqueda por texto arriba, punto de

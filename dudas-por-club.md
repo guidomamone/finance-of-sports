@@ -275,6 +275,42 @@ porque no hay ningún archivo de club todavía donde ponerlas.
   exacto con el campeonato. Antes de cargar la primera, definir si entra en el mismo esquema o si
   necesita un tratamiento propio.
 
+## Japón — J.League y sus 10 clubes (la misma pregunta, a los dos lados)
+
+Contexto (verificado con 3 fuentes independientes, ver `fuentes/Japón/_notas-generales.md`): el
+disclosure oficial de la liga (`club_doc-<AÑO>.pdf`) publica **3 cifras por club** — 売上高 (ingreso
+total), スポンサー収入 (sponsors) y 入場料収入 (entradas) — y nada más. Las otras 6 categorías de
+ingreso (Ｊリーグ配分金 distribución de liga, 移籍補償金等収入 transferencias, 物販収入
+merchandising, アカデミー関連収入 academia, 女子チーム関連収入 femenino, その他収入 otros)
+existen en el vocabulario de la liga y se publican **solo como promedio de J1/J2/J3**, nunca por
+club. Consecuencia en el sitio: los 10 clubes japoneses muestran ~58% de sus ingresos en una sola
+fila, "Fútbol profesional (sin desglosar por la fuente)". Y no hay NINGÚN dato de gastos por club en
+ninguna edición, así que `expenseLinesByYear` de los 10 está vacío.
+
+Esto no se puede resolver leyendo más documentos: ya se buscó. Hay que preguntar. Son dos preguntas
+distintas, y conviene hacer las dos porque cualquiera de las dos que salga bien resuelve el punto.
+
+- **A la LIGA — ¿existe el desglose por club y no está publicado, o no existe?**: la liga arma los
+  promedios divisionales de las 8 categorías (Apéndice 3-1/3-2 del disclosure, y la Ｊリーグ
+  クラブ経営ガイド entera) a partir de lo que le reportan los clubes bajo el Club Licensing System,
+  así que el dato por club tiene que existir del lado de la liga. ¿Se puede pedir? ¿Hay una versión
+  del disclosure con más detalle para prensa o investigación? Y la segunda mitad: ¿publican en algún
+  lado el desglose de GASTOS por club (人件費 / masa salarial en particular), o el único corte
+  disponible es el divisional? — a quién preguntarle: 公益社団法人日本プロサッカーリーグ (J.League),
+  formulario de contacto corporativo en https://aboutj.jleague.jp/corporate/contact/ (la sección
+  corporativa es la que publica el disclosure, no el sitio de hinchas jleague.jp).
+- **A CADA CLUB — ¿publican ustedes su propio 決算公告 / 事業報告 completo?**: los 10 son sociedades
+  japonesas (株式会社) y la ley societaria obliga a publicar el 決算公告 (aviso de cierre de
+  ejercicio). Si alguno publica un estado de resultados completo por su cuenta — en su web, en el
+  boletín oficial (官報), o en el informe de su asamblea — ese club pasa de 3 líneas a un desglose
+  real, sin depender de la liga. Empezar por Gamba Osaka, que es el caso que disparó esto
+  (https://www.gamba-osaka.net/contact/), y repetir con los otros 9 si la respuesta sirve.
+- **Lo que NO hay que hacer mientras tanto**: circulan notas de análisis japonesas con un desglose
+  por club de 4 líneas (una de note.com da para Gamba 2024: 72,2億 total, 22,6 sponsors, 11,9
+  entradas, **7,6 物販**, 22,5 otros). Los 3 primeros números salen del disclosure oficial; el de
+  物販 no está en ninguna edición de ese documento, así que es una estimación del analista o viene de
+  una fuente que la nota no cita. No cargarlo sin identificar de dónde sale.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
