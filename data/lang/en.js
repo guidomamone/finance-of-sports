@@ -159,9 +159,7 @@ window.I18N.strings.en = {
   "th.line": "Line item",
   "th.movement": "Movement",
   "th.name": "Name",
-  "th.provides": "What it provides",
   "th.result": "Result",
-  "th.source": "Source",
   "th.type": "Type",
   "th.window": "Window",
   "th.year": "Year"
