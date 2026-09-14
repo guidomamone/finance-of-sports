@@ -74,6 +74,14 @@ const PROTO_CSS = `
   .proto-flag{position:sticky;top:0;z-index:200;background:#b5372b;color:#fff;font-size:12px;font-weight:700;
               letter-spacing:.04em;text-align:center;padding:5px 10px;}
   .proto-flag span{font-weight:400;opacity:.85;}
+  /* Volver a la primera visita. Vive en la franja del prototipo y no en el sitio
+     porque no es una feature: es el banco de pruebas. Lo que hace es borrar lo que
+     el sitio guarda en el navegador de cada visitante (el club elegido, los
+     recientes, el cartelito del selector) y recargar. */
+  .proto-reset{margin-left:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.55);
+               color:#fff;border-radius:6px;padding:2px 9px;font-size:11px;font-weight:700;
+               font-family:inherit;cursor:pointer;vertical-align:1px;}
+  .proto-reset:hover{background:#fff;color:#b5372b;}
   .proto-hidden{display:none !important;}
 
   /* ---------------------------------------------------------------------------
@@ -161,7 +169,11 @@ replaceOnce('</style>\n', '</style>\n' + PROTO_CSS, 'cierre del <style> del siti
 // ---------------------------------------------------------------------------
 // 3. La franja de prototipo, apenas abre el <body>.
 // ---------------------------------------------------------------------------
-replaceOnce('<body>\n', '<body>\n<div class="proto-flag">PROTOTIPO · Inicio con el selector en la página <span>— no es el sitio publicado</span></div>\n', '<body>');
+replaceOnce('<body>\n',
+  '<body>\n<div class="proto-flag">PROTOTIPO · Inicio con el selector en la página '
+  + '<span>— no es el sitio publicado</span>'
+  + '<button type="button" class="proto-reset" id="protoReset" title="Borra el club elegido, los recientes y el estado del selector de ESTE navegador, y recarga. El idioma no se toca.">Volver a la primera visita</button>'
+  + '</div>\n', '<body>');
 
 // PROTO (punto 4 de Guido): los ejemplos del buscador iban en minúscula ("boca",
 // "laliga", "japón") como si fueran cómo hay que escribirlos. La búsqueda ignora
@@ -316,6 +328,22 @@ const PROTO_JS = `
   document.getElementById('mainNav').addEventListener('click', function(ev){
     if(this.classList.contains('proto-dummy')){ ev.stopPropagation(); ev.preventDefault(); }
   }, true);
+
+  // (e2) Volver a la primera visita. El sitio no tiene backend: todo lo que sabe de
+  //      vos vive en el localStorage de tu navegador, así que "primera visita" es
+  //      exactamente esas 4 claves borradas. El idioma (fos_lang) NO se toca a
+  //      propósito: resetearlo mandaría la página a inglés según el navegador, y lo
+  //      que se está probando acá es el selector, no el idioma.
+  document.getElementById('protoReset').addEventListener('click', function(){
+    ['fos_club', 'fos_recent_clubs', 'fos_coach_club', 'fos_proto_selector_min'].forEach(function(k){
+      try { localStorage.removeItem(k); } catch(e){}
+    });
+    // Sin esto el navegador restaura el scroll donde estabas, y una "primera visita"
+    // que arranca a media página no es una primera visita.
+    try { history.scrollRestoration = 'manual'; } catch(e){}
+    window.scrollTo(0, 0);
+    location.reload();
+  });
 
   // (f) Al elegir un club SIN ejercicio puntual, la página baja hasta sus datos: el
   //     selector se queda arriba (eso es lo pedido), pero el click tiene que verse.

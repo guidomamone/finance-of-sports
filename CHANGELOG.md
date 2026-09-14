@@ -1078,3 +1078,13 @@ PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
 - Se fueron los dos copys que sobraban: el "Elegí tu club / Escribí el nombre..." de arriba del
   selector y el párrafo de abajo.
 - Y se esconde "Ver la portada con todos los clubes": la portada ya no es otra pantalla.
+
+## Versión 147: el prototipo se puede volver a la primera visita
+
+- Botón "Volver a la primera visita" en la franja roja del prototipo (pedido de Guido). Borra las
+  4 claves que el sitio guarda en el navegador — el club elegido, los recientes, el cartelito del
+  selector y el estado minimizado — y recarga arriba de todo, con `history.scrollRestoration` en
+  manual para que no vuelva al scroll anterior. El idioma NO se toca: resetearlo mandaría la
+  página a inglés según el navegador, y lo que se prueba acá es el selector.
+- Vive en la franja del prototipo y no en el sitio a propósito: no es una feature, es el banco de
+  pruebas. El sitio no tiene backend, así que "primera visita" son exactamente esas claves.

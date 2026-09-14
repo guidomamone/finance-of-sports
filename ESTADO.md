@@ -262,7 +262,7 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-146):
+- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-147):
   prototipo de un Inicio en frío con el selector jerárquico desplegado EN la portada
   (hoy vive atrás de un click) y que SE QUEDA ahí con el club ya elegido, encima
   de sus datos y minimizable. Cada fila de club tiene un dropdown "Ver" que junta
@@ -272,7 +272,10 @@ se reescribe, no se acumula.
   GENERADOS (la portada desde `index.html`, `prototipo-inicio-selector.js` como copia
   parcheada de `js/selector.js`, y `prototipo-inicio-ejercicios.js` desde los
   `fiscalYearMeta`), no se editan a mano: los cambios van en el generador. Está a la
-  espera de la decisión de Guido, to-do 28.
+  espera de la decisión de Guido, to-do 28. La franja roja de arriba trae un botón
+  "Volver a la primera visita" que borra lo que el sitio guarda en el navegador
+  (club elegido, recientes, cartelito, estado minimizado) y recarga: sirve para
+  probar el arranque en frío sin abrir las herramientas del navegador.
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.
