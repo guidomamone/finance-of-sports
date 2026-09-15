@@ -262,7 +262,7 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `Prototyping/`: los 3 prototipos del selector de club, con su propio
+- `Prototyping/`: los 4 prototipos del selector de club, con su propio
   `README.md` (leelo antes de tocar cualquier cosa de ahí). NADA de esa carpeta es
   el sitio: no se linkea desde `index.html` ni se sirve como parte de la
   experiencia real. Son maquetas para decidir cómo se elige un club antes de
@@ -273,10 +273,12 @@ se reescribe, no se acumula.
   columnas, Equipo A contra Equipo B, con un toggle para el que solo quiere ver uno;
   cada columna tiene el árbol entero (Deporte › Región › País › Liga › Equipo, un
   nivel por vez, con breadcrumb) y su lado puede ser un club, una liga, un país o
-  una región.
+  una región; **el 4** (`prototipo-cards.html`, Versión 156) tiene esos mismos dos
+  cards pero VACÍOS, y apretar uno abre un modal con los pasos del 2, sin el paso
+  "contra qué comparar".
   Los `.html` están generados (`node Prototyping/build-prototipo-*.js`) y llevan
   `<base href="../">` porque el sitio se sirve desde la raíz.
-  **Los prototipos 2 y 3 cargan `prototipo-pasos-datos-inventados.js`**, que
+  **Los prototipos 2, 3 y 4 cargan `prototipo-pasos-datos-inventados.js`**, que
   rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
   Brasil. Ningún número que salga de ahí es real, no vive en `data/`, ninguna
   auditoría lo ve, y cada ejercicio inventado se anuncia en pantalla. Las 5

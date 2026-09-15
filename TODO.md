@@ -48,7 +48,7 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-28. DECIDIR QUÉ SELECTOR VA AL SITIO. Hay TRES prototipos andando con los datos reales, todos en
+28. DECIDIR QUÉ SELECTOR VA AL SITIO. Hay CUATRO prototipos andando con los datos reales, todos en
     `Prototyping/` (que tiene su propio README con cómo abrirlos y regenerarlos). Hay que elegir
     entre ellos, o entre partes de cada uno; no es un sí/no:
 
@@ -88,6 +88,21 @@ perdieron sino que se descartaron:
     árbol en vez de con una bandeja aparte: no deja armar un grupo a mano ("Boca + River + Racing"),
     solo conjuntos que ya existen en la taxonomía. Si se aprueba C, esa es la diferencia a decidir.
     Es el más nuevo y el menos probado.
+
+    **D. `Prototyping/prototipo-cards.html`** (Versión 156) — los dos cards del C, pero VACÍOS:
+    cada uno es un botón grande, y apretarlo abre un MODAL con los pasos del B, sin el paso 7
+    ("contra qué comparar"). Es el C por fuera y el B por dentro. Nace de una crítica de Guido al C
+    ("no me gusta el prototipo 3"): meterle el árbol entero a cada columna entra, pero la portada
+    abre con dos árboles de cinco niveles a la vez, que es el mismo exceso de información que el B
+    vino a corregir, ahora duplicado. Acá la portada abre con UNA pregunta, dos veces.
+    QUÉ RESUELVE DE LOS OTROS DOS: el paso 7 del B desaparece sin perder función, porque el card B
+    ES el rival; y con él se va la pregunta del paso 5 ("¿comparar entre los N o armar un grupo?"),
+    porque un card es un lado y un lado se mide como uno solo. Los grupos del B siguen existiendo
+    (marcar varios clubes arma un conjunto), pero ya no abren ninguna casuística.
+    LO QUE FALTA DECIDIR SI GANA: un lado puede ser cualquier conjunto que salga de los filtros
+    (los 11 argentinos, los 6 de la Série A), pero NO un grupo a mano de clubes de países
+    distintos, que el B sí dejaba armar con su bandeja. Y el card vacío no muestra nada de la forma
+    de los datos: esa información aparece recién adentro del modal.
 
     PENDIENTES DEL PROTOTIPO B, de la última sesión de pruebas de Guido, sin implementar porque
     pidió congelarlo y pasar al C: el promedio y la sumatoria deberían dejar ELEGIR qué años entran
@@ -133,12 +148,13 @@ perdieron sino que se descartaron:
 
 30. BORRAR LOS DATOS INVENTADOS cuando se decida el punto 28. `Prototyping/prototipo-pasos-datos-inventados.js`
     (Versión 152) rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
-    Brasil, con ascensos y descensos inventados, para poder probar la interfaz. Existe con 5
+    Brasil, con ascensos y descensos inventados, para poder probar la interfaz. Lo cargan los
+    prototipos 2, 3 y 4. Existe con 5
     condiciones escritas en `CONVENCIONES.md`, y la última es que NUNCA se copia a `data/`: si
     mañana uno de esos clubes publica su balance de 2019, se carga leyendo el documento, no
     promoviendo este relleno. El día que el selector se apruebe (o se descarte), este archivo y su
     `<script>` en los generadores de `Prototyping/` se borran en el mismo movimiento. Mientras
-    exista, cualquier captura de los prototipos 2 y 3 tiene números falsos: la franja roja de
+    exista, cualquier captura de los prototipos 2, 3 y 4 tiene números falsos: la franja roja de
     arriba lo dice, pero conviene no pegar esas capturas en ningún lado sin la franja.
 
 31. BUG DEL SITIO PUBLICADO, encontrado el 2026-09-14 trabajando en el prototipo 3 y arreglado SOLO

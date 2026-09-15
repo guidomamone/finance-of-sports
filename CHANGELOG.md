@@ -1333,3 +1333,34 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   EL SITIO PUBLICADO TIENE EL MISMO BUG, en `js/comparar-clubes.js:339` y en los KPIs de la ficha de
   Finanzas (la tabla de abajo sí muestra guiones): queda anotado como to-do 31, sin tocar.
 - Arreglado de paso "Cierre 2026 (1 clubes)" en el desplegable de ejercicio de un conjunto.
+
+## Versión 156: prototipo 4 — dos cards vacíos, y los pasos del 2 adentro de un modal
+
+- **NUEVO `Prototyping/prototipo-cards.html`**, pedido de Guido después de probar el 3: "no me
+  gusta el prototipo 3. Quiero ver un prototipo 4: Inicio comienza con un card como el attached
+  pero claramente los cards están vacíos. Apretás el card y se dispara un modal que es el selector
+  del prototipo 2, pero a ese selector quitale el paso que es para comparar con otra cosa".
+  Es **el 3 por fuera y el 2 por dentro**: la portada abre con dos cards vacíos (un botón grande
+  cada uno) y toda la complejidad de elegir vive adentro del modal, de a un paso.
+- **SE VA EL PASO 7** ("contra qué comparar"). No se pierde ninguna función: ese paso existía para
+  contestar "y ahora contra qué mido esto", que es exactamente lo que el segundo card contesta en
+  la pantalla misma. El card B ES el rival.
+- **Y CON ÉL SE VA LA PREGUNTA DEL PASO 5** ("¿comparar entre los N o armar un grupo con los N?").
+  Un card es un lado, y un lado se mide como uno solo: marcar cinco clubes es un conjunto. Lo único
+  que queda por decidir es si se lee sumado o promediado, y eso se elige después, en el card.
+- Lo que se hereda de cada uno, literal: del 2 los 6 pasos, el filtro único `clubsQueQuedan()`,
+  "Elegir más tarde" en todos los pasos, la multi-selección con casillas, el card resuelto encogido
+  a una línea y el buscador como atajo de un paso (escribir "boca" y tocarlo llena el card sin
+  recorrer nada); del 3 el cálculo de cada lado con `computeYearGeneric()`, la tabla de A contra B,
+  los avisos y el toggle "comparar dos / ver uno".
+- Un lado es SIEMPRE lo mismo: una lista de pares (club, ejercicio). Un club suelto es el caso de
+  un par; una liga entera son 11. No hay dos formas de lado.
+- Reabrir un card vuelve a los pasos con lo que ese card había elegido, no a cero.
+- El fix de los gastos que no informa la fuente (to-do 31) va también acá, desde el principio.
+- GOTCHA DEL GENERADOR: el markup del modal va antes del `<footer>` y no antes de `</body>`. El
+  `<script>` principal de `index.html` está al final del body y es el que llama a
+  `CLUB_SELECTOR.init()`: con el modal después de ese script, `init()` corría con el markup
+  todavía inexistente, `$('modalX')` daba null y los dos cards quedaban muertos.
+- En el modal los labels de opción ENVUELVEN en vez de cortarse con puntos suspensivos: el bloque
+  del prototipo 2 ocupaba el ancho de la página y el modal mide 760px, así que "Fútbol americano"
+  quedaba en "Fútbol ...".
