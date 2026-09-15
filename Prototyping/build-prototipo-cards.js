@@ -13,6 +13,14 @@
  * el selector del prototipo 2, pero a ese selector quitale el paso que es para
  * comparar con otra cosa".
  *
+ * SEGUNDA VUELTA (Guido, 2026-09-15): "en Inicio, preguntá al usuario 'quiero ver
+ * un club en particular' vs 'quiero comparar dos clubes o ligas'. Si contesta el
+ * primero, llevalo a Finanzas y ahí mostrá el selector. Si contesta el segundo,
+ * llevalo a un tab llamado Comparar, que es el Inicio de hoy".
+ * O sea que la pantalla de los dos cards dejó de ser la portada: ahora la portada
+ * es UNA pregunta de dos opciones, y los dos cards viven en una pestaña propia.
+ * El que viene por un club solo no pasa nunca por una pantalla partida al medio.
+ *
  * Carga los MISMOS datos inventados que los prototipos 2 y 3 (los clubes de
  * Argentina y Brasil con 10 ejercicios cada uno): sin eso no se puede probar el
  * paso de ejercicios. Ver la cabecera de `prototipo-pasos-datos-inventados.js`.
@@ -65,7 +73,17 @@ replaceOnce('<head>\n', '<head>\n' +
   '<base href="../">\n', '<head>');
 
 replaceOnce('<title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>',
-  '<title>PROTOTIPO 4 · Dos cards y un modal de pasos</title>', 'title');
+  '<title>PROTOTIPO 4 · Inicio pregunta, y los cards viven en Comparar</title>', 'title');
+
+// ---------------------------------------------------------------------------
+// 1b. LA PESTAÑA NUEVA. `data-section="vs"` y NO "comparar": ese id ya existe en
+//     index.html y es "Comparar Gestiones" (dos presidencias del MISMO club,
+//     escondida del nav desde la Versión 56). Son dos cosas distintas y el id no se
+//     puede pisar; lo que el visitante lee sí dice "Comparar".
+// ---------------------------------------------------------------------------
+replaceOnce('      <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>',
+  '      <button data-section="vs">Comparar</button>\n' +
+  '      <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>', 'nav');
 
 // ---------------------------------------------------------------------------
 // 2. CSS. Los cards son los del prototipo 3 (prefijo `cd-`) y el contenido del
@@ -93,13 +111,57 @@ const PROTO_CSS = `
   .sel-panel, .sel-backdrop, .coach{display:none !important;}
 
   /* ---------------------------------------------------------------------------
+     INICIO = LA PREGUNTA. Dos opciones grandes y nada más: es la primera pantalla
+     y la única decisión que se toma en ella.
+
+     El resto de la sección #inicio sigue en el DOM (los KPIs y el CTA de comparar
+     del sitio) pero no se muestra: sus ids los escribe el <script> principal sin
+     preguntar si están visibles, y borrarlos deja al prototipo tirando TypeError.
+     --------------------------------------------------------------------------- */
+  #inicio > *:not(#bifurca){display:none !important;}
+  .bifurca h1{font-size:30px;margin:0 0 6px;}
+  .bif-lead{color:var(--muted);font-size:15px;margin:0 0 24px;max-width:700px;line-height:1.55;}
+  .bif-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;max-width:900px;}
+  .bif-op{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;
+          background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px 24px;
+          font-family:inherit;color:var(--text);cursor:pointer;}
+  .bif-op:hover{border-color:var(--azul);box-shadow:0 10px 30px rgba(7,29,63,.12);transform:translateY(-1px);}
+  .bif-ico{width:44px;height:44px;border-radius:12px;background:#eef2f9;color:var(--azul);font-size:21px;
+           display:flex;align-items:center;justify-content:center;margin-bottom:5px;}
+  .bif-t{font-size:19px;font-weight:800;line-height:1.25;}
+  .bif-s{font-size:13.5px;color:var(--muted);line-height:1.5;}
+  .bif-cta{margin-top:9px;font-size:13.5px;font-weight:800;color:var(--azul);}
+
+  /* ---------------------------------------------------------------------------
+     EL SELECTOR EN FINANZAS. Sin club es lo único que hay para hacer en esta
+     pantalla; con club, es cómo se cambia.
+     --------------------------------------------------------------------------- */
+  /* Sin club, Finanzas es SOLO el selector: las tablas vacías y el banner amarillo
+     de "dato placeholder" que quedaban abajo no dicen nada de nada, y el banner
+     encima miente (no hay dato inventado, no hay dato). */
+  #finanzas.sin-club > *:not(h1):not(.subtitle):not(.fin-sel){display:none !important;}
+  .fin-sel{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;
+           margin-bottom:18px;display:flex;align-items:center;gap:13px;flex-wrap:wrap;}
+  .fin-sel.vacio{border-style:dashed;border-color:var(--azul);background:#f3f7ff;}
+  .fin-sel-ico{width:38px;height:38px;border-radius:50%;background:var(--azul);color:#fff;font-size:13px;
+               font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .fin-sel-txt{display:flex;flex-direction:column;min-width:0;flex:1;}
+  .fin-sel-t{font-size:16px;font-weight:800;}
+  .fin-sel-s{font-size:12.5px;color:var(--muted);}
+  .fin-sel-btn{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:9px;padding:10px 16px;
+               font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
+  .fin-sel-btn:hover{background:var(--azul-dark);}
+  .fin-sel-btn.alt{background:none;color:var(--azul);}
+  .fin-sel-btn.alt:hover{background:#eef2f9;color:var(--azul-dark);}
+
+  /* ---------------------------------------------------------------------------
      LOS DOS CARDS. Iguales a los del prototipo 3, pero arrancan VACÍOS: el card
      vacío es un botón grande y nada más, así la portada abre con una pregunta en
      vez de con un árbol de cinco niveles por lado.
      --------------------------------------------------------------------------- */
   .cards-block{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;
                border-radius:14px;padding:26px 24px 22px;margin-bottom:22px;}
-  .cards-block h1{font-size:27px;margin:0 0 6px;color:#fff;}
+  .cards-block h1{font-size:25px;margin:0 0 6px;color:#fff;}
   .cards-block .lead{color:#bfcde6;font-size:14.5px;margin:0 0 18px;max-width:820px;line-height:1.55;}
 
   .cd-toggle{display:inline-flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);
@@ -299,7 +361,7 @@ replaceOnce('</style>\n', '</style>\n' + PROTO_CSS, 'cierre del <style> del siti
 // 3. Franja del prototipo + botón de reset.
 // ---------------------------------------------------------------------------
 replaceOnce('<body>\n',
-  '<body>\n<div class="proto-flag proto-flag-falso">PROTOTIPO 4 · Dos cards y un modal de pasos '
+  '<body>\n<div class="proto-flag proto-flag-falso">PROTOTIPO 4 · Inicio pregunta, y los cards viven en Comparar '
   + '<span>— no es el sitio publicado · </span>'
   + '<b>DATOS INVENTADOS: los ejercicios 2016-2025 de Argentina y Brasil son de mentira</b>'
   + '<button type="button" class="proto-reset" id="protoReset" title="Borra el club elegido y los recientes de ESTE navegador, y recarga. El idioma no se toca.">Volver a la primera visita</button>'
@@ -320,32 +382,75 @@ const iniHero = html.indexOf(HERO_VIEJO_INICIO);
 const finHero = html.indexOf(HERO_VIEJO_FIN, iniHero);
 if(iniHero < 0 || finHero < 0) throw new Error('no se encontró el bloque #coldHero de index.html');
 
-const HERO_NUEVO = `  <div class="cards-block" id="cardsBlock">
-    <!-- #coldHero sigue existiendo (vacío y escondido) porque applyClubMode() lo
-         toca por id. El bloque de los cards es este de afuera. -->
-    <div id="coldHero" hidden></div>
-
-    <h1>Los números reales de tu club</h1>
-    <p class="lead">Ingresos, gastos y deuda, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
-
-    <!-- El toggle. La mayoría de las visitas quiere UN club y no tiene por qué pagar
-         el costo de una pantalla partida al medio; el que vino a comparar encuentra
-         los dos cards sin buscarlos. -->
-    <div class="cd-toggle">
-      <button type="button" id="cdToggleDuelo" class="on">Quiero comparar dos</button>
-      <button type="button" id="cdToggleUno">Solo quiero ver uno</button>
-    </div>
-
-    <div class="cd-wrap" id="cdWrap"></div>
-    <div class="cd-pie" id="cdPie"></div>
-
-    <p class="hero-error" id="clubLoadError" hidden></p>
-  </div>
-
-  <!-- El resultado. Vive fuera del bloque porque es lo que se mira, no un control. -->
-  <div class="cd-resultado" id="cdResultado" hidden></div>
+const HERO_NUEVO = `  <!-- #coldHero sigue existiendo (vacío y escondido) porque applyClubMode() lo toca
+       por id. En esta vuelta la portada NO es un hero: es la pestaña Inicio, que
+       pregunta qué querés hacer. -->
+  <div id="coldHero" hidden></div>
+  <p class="hero-error" id="clubLoadError" hidden></p>
 `;
 html = html.slice(0, iniHero) + HERO_NUEVO + html.slice(finHero);
+
+// ---------------------------------------------------------------------------
+// 4b. INICIO = LA PREGUNTA. No se borra el contenido viejo de la sección: se
+//     esconde por CSS y se le mete la bifurcación adelante. Es a propósito —
+//     `#inicioStats`, `#cmpCta`, `#ccT`, `#ccBtn` y `#ccYearBtn` los escribe el
+//     <script> principal de index.html y js/comparar-clubes.js sin preguntar si
+//     están visibles; borrarlos deja al prototipo tirando TypeError en cada
+//     redibujo, que es exactamente el tiempo que este prototipo no quiere gastar.
+// ---------------------------------------------------------------------------
+const BIFURCA = `    <div class="bifurca" id="bifurca">
+      <h1>¿Qué querés hacer?</h1>
+      <p class="bif-lead">Los dos caminos llegan a los mismos números, sacados del balance oficial de cada club. Cambia por dónde entrás.</p>
+      <div class="bif-grid">
+        <button type="button" class="bif-op" id="bifUno">
+          <span class="bif-ico" aria-hidden="true">&#128202;</span>
+          <span class="bif-t">Quiero ver un club en particular</span>
+          <span class="bif-s">Ingresos, gastos y deuda de un club, ejercicio por ejercicio, con la fuente de cada cifra.</span>
+          <span class="bif-cta">Elegir el club &rsaquo;</span>
+        </button>
+        <button type="button" class="bif-op" id="bifDos">
+          <span class="bif-ico" aria-hidden="true">&#8644;</span>
+          <span class="bif-t">Quiero comparar dos clubes o ligas</span>
+          <span class="bif-s">Dos lados, uno contra el otro. Cada lado puede ser un club, una liga entera o un país.</span>
+          <span class="bif-cta">Ir a Comparar &rsaquo;</span>
+        </button>
+      </div>
+    </div>
+`;
+replaceOnce('  <section id="inicio" class="active">\n', '  <section id="inicio" class="active">\n' + BIFURCA, 'apertura de #inicio');
+
+// ---------------------------------------------------------------------------
+// 4c. LA PESTAÑA COMPARAR: acá viven los dos cards, que hasta esta vuelta eran la
+//     portada. Va antes de #finanzas para que quede en el mismo orden que el nav.
+// ---------------------------------------------------------------------------
+const SECCION_VS = `  <section id="vs">
+    <div class="cards-block" id="cardsBlock">
+      <h1>Compará dos clubes o ligas</h1>
+      <p class="lead">Elegí cada lado por separado. Un lado puede ser un club, una liga entera o un país: se mide como uno solo.</p>
+
+      <!-- Acá había un toggle "quiero comparar dos / solo quiero ver uno". Se fue con
+           esta vuelta: esa pregunta la hace INICIO, y el que llegó a esta pestaña ya la
+           contestó. Preguntarla de nuevo era tener la misma bifurcación en dos lugares,
+           que es justo lo que este prototipo vino a sacar. El que se arrepiente vuelve
+           a Inicio, que está en el nav. -->
+      <div class="cd-wrap" id="cdWrap"></div>
+      <div class="cd-pie" id="cdPie"></div>
+    </div>
+
+    <!-- El resultado. Fuera del bloque azul porque es lo que se mira, no un control. -->
+    <div class="cd-resultado" id="cdResultado" hidden></div>
+  </section>
+
+`;
+replaceOnce('  <section id="finanzas">\n', SECCION_VS + '  <section id="finanzas">\n', 'apertura de #finanzas');
+
+// ---------------------------------------------------------------------------
+// 4d. FINANZAS ABRE CON EL SELECTOR (pedido de Guido). Sin club es lo único que hay
+//     para hacer en esta pantalla; con club, es cómo se cambia.
+// ---------------------------------------------------------------------------
+replaceOnce('    <p class="subtitle" data-i18n="finanzas.sub">Estado de resultados estilo cuenta de pérdidas y ganancias.</p>',
+  '    <p class="subtitle" data-i18n="finanzas.sub">Estado de resultados estilo cuenta de pérdidas y ganancias.</p>\n' +
+  '    <div class="fin-sel" id="finSelector"></div>', 'subtitle de finanzas');
 
 // EL MODAL. Va al final del body y no adentro del bloque azul: es una capa sobre
 // la página entera, y anidarlo en un contenedor con `border-radius` y `overflow`
@@ -384,16 +489,20 @@ replaceOnce('<footer>', MODAL + '\n<footer>', 'apertura del <footer> (modal)');
 replaceOnce(`  function applyClubMode(){
     const cold = !currentClub;
     document.getElementById('coldHero').hidden = !cold;
-    document.getElementById('mainNav').style.display = cold ? 'none' : '';`,
+    document.getElementById('mainNav').style.display = cold ? 'none' : '';
+    document.querySelectorAll('main > section').forEach(sec => {
+      sec.style.display = cold ? 'none' : '';
+    });`,
 `  function applyClubMode(){
     const cold = !currentClub;
-    // PROTO: el bloque de los cards se queda en la página con el club ya elegido; el
-    // #coldHero original quedó vacío y escondido, solo para que esta línea siga
-    // teniendo a quién apuntar.
+    // PROTO: acá el sitio escondía el nav Y TODAS las secciones mientras no hubiera
+    // club, porque su portada era un hero suelto fuera de <main>. En este prototipo
+    // la portada ES una sección (#inicio) y la pestaña Comparar es otra (#vs), así
+    // que esconderlas dejaba la página en blanco: no se esconde nada, y las tres
+    // pestañas que funcionan sin club (Inicio, Comparar, Finanzas) se navegan desde
+    // la primera visita.
     document.getElementById('coldHero').hidden = true;
-    // PROTO: las pestañas se ven siempre, apagadas hasta que haya club.
-    document.getElementById('mainNav').style.display = '';
-    document.getElementById('mainNav').classList.toggle('proto-dummy', cold);`,
+    document.getElementById('mainNav').style.display = '';`,
   'applyClubMode');
 
 // ---------------------------------------------------------------------------
@@ -452,9 +561,9 @@ const PROTO_JS = `
     window.scrollTo(0, 0);
     location.reload();
   });
-  document.getElementById('mainNav').addEventListener('click', function(ev){
-    if(this.classList.contains('proto-dummy')){ ev.stopPropagation(); ev.preventDefault(); }
-  }, true);
+  // (Acá había un guard que bloqueaba el nav mientras no hubiera club. Se fue con la
+  // estructura nueva: Inicio y Comparar funcionan sin club, y Finanzas sin club es
+  // justamente donde se muestra el selector.)
 })();
 </script>
 `;

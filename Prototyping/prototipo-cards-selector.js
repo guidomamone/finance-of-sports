@@ -43,6 +43,21 @@
 //     club, la tabla de A contra B, los avisos, y el toggle "comparar dos / ver
 //     uno".
 //
+// SEGUNDA VUELTA (Guido, 2026-09-15): "en Inicio, preguntá al usuario 'quiero ver
+// un club en particular' vs 'quiero comparar dos clubes o ligas'. Si contesta el
+// primero, llevalo a Finanzas y ahí mostrá el selector. Si contesta el segundo,
+// llevalo a un tab llamado Comparar, que es el Inicio de hoy".
+//
+// QUÉ CAMBIA, Y POR QUÉ ES MÁS QUE MOVER CAJAS: hasta acá los dos cards eran la
+// portada, así que TODA visita empezaba mirando una pantalla partida al medio,
+// incluida la mayoría, que viene por un club y nada más. Ahora la portada es una
+// sola pregunta de dos opciones, y cada respuesta lleva a una pantalla que hace
+// una sola cosa:
+//   - "un club en particular" -> el modal de pasos, y al confirmar, FINANZAS;
+//   - "comparar dos"          -> la pestaña Comparar, que es la de los dos cards.
+// El mismo modal sirve para los dos caminos: lo único que cambia es a dónde va lo
+// elegido, y eso es `origen`.
+//
 // La API pública es la MISMA que la de `js/selector.js`, porque `index.html` y
 // `js/comparar-clubes.js` la llaman sin saber cuál está cargada.
 // ============================================================================
@@ -62,11 +77,20 @@ window.CLUB_SELECTOR = (function(){
   // que corresponde cuando el visitante saltó el paso 6 y los clubes no cierran
   // todos el mismo día.
   var lado = [null, null];
-  var modo = 'duelo';          // 'duelo' | 'uno'
+  // La pestaña Comparar SIEMPRE muestra los dos cards. El modo 'uno' existió mientras
+  // esta pantalla era la portada y tenía que servir a las dos intenciones; ahora la
+  // intención se declara en Inicio, y el que quiere un club solo no llega hasta acá.
+  // La variable queda porque la leen los textos, pero ya no cambia.
+  var modo = 'duelo';
   var mostrando = false;
   var inited = false;
 
   // --- El modal de pasos -----------------------------------------------------
+  // DE DÓNDE SE ABRIÓ, que es lo único que distingue los dos caminos:
+  //   'vs'       -> lo abrió un card de la pestaña Comparar; lo elegido llena ese card.
+  //   'finanzas' -> lo abrió Inicio ("ver un club") o el selector de Finanzas; lo
+  //                 elegido se carga como club activo y la pantalla salta a Finanzas.
+  var origen = 'vs';
   var modalLado = 0;                 // qué card lo abrió
   var CLAVES = ['sport', 'region', 'country', 'league', 'club', 'year'];
   var st = {};
@@ -88,6 +112,15 @@ window.CLUB_SELECTOR = (function(){
   // rompe todo; está documentado dos veces en este repo y costó media hora dos
   // veces.
   function $(id){ return document.getElementById(id); }
+
+  // Cambiar de pestaña APRETANDO EL BOTÓN del nav, en vez de repetir acá las clases
+  // `active` que pone el <script> de index.html. Si mañana esa navegación cambia,
+  // este prototipo no se entera; reimplementarla es garantizarse dos verdades.
+  function irASeccion(id){
+    var btn = document.querySelector('#mainNav button[data-section="' + id + '"]');
+    if(btn) btn.click();
+    window.scrollTo(0, 0);
+  }
   function idx(id){ return (window.CLUB_INDEX || {})[id] || {}; }
   function nameOf(id){ return (clubs[id] && clubs[id].displayName) || idx(id).n || id; }
   function countryOf(id){ return (clubs[id] && clubs[id].country) || idx(id).c; }
@@ -300,14 +333,16 @@ window.CLUB_SELECTOR = (function(){
   // ---------------------------------------------------------------------------
   // EL MODAL
   // ---------------------------------------------------------------------------
-  function abrirModal(i){
+  function abrirModal(i, desde){
+    origen = desde || 'vs';
     modalLado = i;
     // Reabrir el card de un lado ya armado no empieza de cero: vuelve a lo que ese
     // card había elegido. "Elegir otro" casi siempre es "cambiar una cosa".
     if(stGuardado[i]) st = JSON.parse(JSON.stringify(stGuardado[i]));
     else reset();
     $('modalQ').value = '';
-    $('modalTitulo').textContent = modo === 'uno' ? 'Qué querés ver' : 'Equipo ' + LETRAS[i];
+    $('modalTitulo').textContent = origen === 'finanzas' ? 'Elegí el club'
+                                 : (modo === 'uno' ? 'Qué querés ver' : 'Equipo ' + LETRAS[i]);
     $('modalBack').hidden = false;
     document.body.style.overflow = 'hidden';
     renderModal();
@@ -501,9 +536,31 @@ window.CLUB_SELECTOR = (function(){
       return card;
     }
 
+    // EL CAMINO "UN CLUB EN PARTICULAR" TERMINA EN FINANZAS, que muestra UN club por
+    // vez. Si el visitante marcó varios, no se le descarta la selección en silencio
+    // ni se le inventa un promedio que no pidió: se le dice qué va a ver, y se le
+    // ofrece el otro camino con lo mismo que ya eligió.
+    if(origen === 'finanzas'){
+      var uno = el('button', 'paso-ok', 'Ver los números de ' + nameOf(finales[0]));
+      uno.type = 'button';
+      uno.addEventListener('click', function(){ confirmar('finanzas'); });
+      body.appendChild(uno);
+      if(finales.length > 1){
+        body.insertBefore(el('p', 'res-sub', 'Elegiste ' + finales.length
+          + ' clubes, y Finanzas muestra uno por vez: vas a ver ' + nameOf(finales[0])
+          + '. Para verlos juntos está Comparar.'), uno);
+        var aVs = el('button', 'paso-skip', 'Llevar los ' + finales.length + ' a Comparar');
+        aVs.type = 'button';
+        aVs.addEventListener('click', function(){ confirmar('vs'); });
+        body.appendChild(aVs);
+      }
+      card.appendChild(body);
+      return card;
+    }
+
     var ok = el('button', 'paso-ok', modo === 'uno' ? 'Ver estos números' : 'Usar como Equipo ' + LETRAS[modalLado]);
     ok.type = 'button';
-    ok.addEventListener('click', confirmar);
+    ok.addEventListener('click', function(){ confirmar('vs'); });
     body.appendChild(ok);
     card.appendChild(body);
     return card;
@@ -539,10 +596,13 @@ window.CLUB_SELECTOR = (function(){
     return finales.length + ' clubes, medidos como un conjunto. ' + queAnios + '.';
   }
 
-  // Cerrar el modal metiendo lo elegido en el card que lo abrió.
-  function confirmar(){
+  // Cerrar el modal metiendo lo elegido donde corresponda. `destino` gana sobre
+  // `origen` para el único caso en que no coinciden: elegiste varios clubes viniendo
+  // por el camino de "un club" y pediste llevarlos a Comparar.
+  function confirmar(destino){
     var finales = clubesDelLado();
     if(!finales.length) return;
+    destino = destino || origen;
     var anios = st.year.sel.map(Number);
     var pares = [];
     finales.forEach(function(id){
@@ -563,6 +623,18 @@ window.CLUB_SELECTOR = (function(){
     mostrando = false;
     cerrarModal();
     render();
+
+    if(destino === 'finanzas'){
+      // Finanzas muestra el club activo, así que acá sí hay que cargarlo: es la
+      // misma llamada que hace el sitio al elegir un club en su selector.
+      Promise.resolve(api.pickClub(finales[0])).then(function(){
+        try { localStorage.setItem(LS_CLUB, finales[0]); } catch(e){}
+        renderButton();
+        irASeccion('finanzas');
+      });
+    } else {
+      irASeccion('vs');
+    }
   }
 
   // ---------------------------------------------------------------------------
@@ -603,7 +675,7 @@ window.CLUB_SELECTOR = (function(){
         pararseEn(cid);
         $('modalQ').value = '';
         renderBusqueda();
-        confirmar();
+        confirmar();   // sin destino: el que corresponda al origen
       }));
     });
     caja.appendChild(grid);
@@ -721,8 +793,6 @@ window.CLUB_SELECTOR = (function(){
     if(!wrap) return;
     wrap.innerHTML = '';
     wrap.className = 'cd-wrap' + (modo === 'uno' ? ' uno' : '');
-    $('cdToggleDuelo').classList.toggle('on', modo === 'duelo');
-    $('cdToggleUno').classList.toggle('on', modo === 'uno');
 
     wrap.appendChild(card(0));
     if(modo === 'duelo'){
@@ -760,7 +830,7 @@ window.CLUB_SELECTOR = (function(){
     b.appendChild(el('span', 'cd-vacio-mas', '+'));
     b.appendChild(el('span', 'cd-vacio-t', modo === 'uno' ? 'Elegí qué ver' : 'Elegí el equipo ' + LETRAS[i]));
     b.appendChild(el('span', 'cd-vacio-s', 'Un club, una liga entera, un país. Te lo preguntamos de a un paso.'));
-    b.addEventListener('click', function(){ abrirModal(i); });
+    b.addEventListener('click', function(){ abrirModal(i, 'vs'); });
     return b;
   }
 
@@ -780,7 +850,7 @@ window.CLUB_SELECTOR = (function(){
     var otro = el('button', 'cd-otro', 'Elegir otro');
     otro.type = 'button';
     otro.title = 'Vuelve a los pasos con lo que elegiste, para cambiar lo que haga falta';
-    otro.addEventListener('click', function(){ abrirModal(i); });
+    otro.addEventListener('click', function(){ abrirModal(i, 'vs'); });
     fila.appendChild(otro);
     caja.appendChild(fila);
 
@@ -974,19 +1044,51 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
+  // EL SELECTOR DENTRO DE FINANZAS (pedido de Guido). Sin club es lo único que hay
+  // para hacer en esa pantalla, así que ocupa el lugar de un card entero; con club
+  // es una línea, porque ya no es la tarea principal sino cómo se cambia de club.
+  // ---------------------------------------------------------------------------
+  function renderFinSelector(){
+    var caja = $('finSelector');
+    if(!caja) return;
+    caja.innerHTML = '';
+    var id = api.getClub();
+    caja.className = 'fin-sel' + (id ? '' : ' vacio');
+    // Sin club elegido, esta pantalla es solo el selector: lo de abajo se esconde.
+    var sec = $('finanzas');
+    if(sec) sec.classList.toggle('sin-club', !id);
+
+    caja.appendChild(el('span', 'fin-sel-ico', id ? initials(nameOf(id)) : '?'));
+    var t = el('span', 'fin-sel-txt');
+    t.appendChild(el('span', 'fin-sel-t', id ? nameOf(id) : 'Todavía no elegiste un club'));
+    t.appendChild(el('span', 'fin-sel-s', id
+      ? ((window.COUNTRIES[countryOf(id)] || {}).name || '') + ' · los números de abajo son de este club'
+      : 'Elegilo y acá abajo aparecen sus ingresos, gastos y deuda, ejercicio por ejercicio.'));
+    caja.appendChild(t);
+
+    var b = el('button', 'fin-sel-btn' + (id ? ' alt' : ''), id ? 'Cambiar de club' : 'Elegir un club');
+    b.type = 'button';
+    b.addEventListener('click', function(){ abrirModal(0, 'finanzas'); });
+    caja.appendChild(b);
+  }
+
+  // ---------------------------------------------------------------------------
   // API PÚBLICA (la misma que js/selector.js)
   // ---------------------------------------------------------------------------
   function renderButton(){
     var id = api.getClub();
     var name = $('cbName'), eyebrow = $('cbEyebrow');
+    // El selector de Finanzas se redibuja ACÁ y no en un evento propio: `renderButton`
+    // es lo que el sitio llama cada vez que cambia el club activo (applyClubMode), así
+    // que es el único punto donde este prototipo se entera sin inventar un canal nuevo.
+    renderFinSelector();
     if(!name) return;
     name.textContent = id ? nameOf(id) : 'Elegí tu club';
     if(eyebrow) eyebrow.textContent = id ? 'Estás viendo' : 'Todavía sin elegir';
   }
-  function open(){
-    if(!lado[0]) return abrirModal(0);
-    $('cardsBlock').scrollIntoView({ behavior:'smooth', block:'start' });
-  }
+  // El botón de club del header abre el mismo modal, y su destino es Finanzas: es el
+  // control de "qué club estoy viendo", no el de armar una comparación.
+  function open(){ abrirModal(0, 'finanzas'); }
   function close(){ cerrarModal(); }
   function goHome(){
     lado = [null, null];
@@ -1008,8 +1110,6 @@ window.CLUB_SELECTOR = (function(){
     api.getClub = hooks.getClub || api.getClub;
     api.pickClub = hooks.pickClub || api.pickClub;
 
-    $('cdToggleDuelo').addEventListener('click', function(){ modo = 'duelo'; mostrando = false; render(); });
-    $('cdToggleUno').addEventListener('click', function(){ modo = 'uno'; mostrando = false; render(); });
     $('clubBtn').addEventListener('click', function(ev){ ev.stopPropagation(); open(); }, true);
 
     $('modalX').addEventListener('click', cerrarModal);
@@ -1019,13 +1119,19 @@ window.CLUB_SELECTOR = (function(){
     });
     $('modalQ').addEventListener('input', renderBusqueda);
 
+    // LA BIFURCACIÓN DE INICIO. Las dos opciones abren caminos distintos con el mismo
+    // modal: la primera termina en Finanzas, la segunda ni siquiera lo abre — lleva a
+    // la pestaña Comparar, donde los dos cards vacíos hacen la pregunta.
+    $('bifUno').addEventListener('click', function(){ abrirModal(0, 'finanzas'); });
+    $('bifDos').addEventListener('click', function(){ irASeccion('vs'); });
+
+    // El club guardado de una visita anterior ya NO llena el card A. Con la
+    // estructura nueva ese club es asunto de Finanzas (el sitio lo carga solo y el
+    // selector de esa pantalla lo muestra); la pestaña Comparar arranca siempre con
+    // los dos cards vacíos, porque "con qué comparar" no se hereda de la visita
+    // pasada. Lo único que se hereda es dónde se para el modal al abrirlo.
     var guardado = savedClub();
-    if(guardado){
-      modo = 'uno';
-      pararseEn(guardado);
-      lado[0] = { nombre:nameOf(guardado), pares:[[guardado, null]], modo:'promedio', unClub:guardado };
-      stGuardado[0] = JSON.parse(JSON.stringify(st));
-    }
+    if(guardado) pararseEn(guardado);
     inited = true;
     renderButton();
     render();

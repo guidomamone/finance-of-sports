@@ -1364,3 +1364,35 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - En el modal los labels de opción ENVUELVEN en vez de cortarse con puntos suspensivos: el bloque
   del prototipo 2 ocupaba el ancho de la página y el modal mide 760px, así que "Fútbol americano"
   quedaba en "Fútbol ...".
+
+## Versión 157: el prototipo 4 arranca preguntando, y los dos cards se mudan a una pestaña
+
+- **INICIO ES AHORA UNA PREGUNTA DE DOS OPCIONES** (pedido de Guido): "quiero ver un club en
+  particular" contra "quiero comparar dos clubes o ligas". Hasta acá los dos cards eran la portada,
+  así que TODA visita empezaba mirando una pantalla partida al medio, incluida la mayoría, que
+  viene por un club y nada más.
+- **"Un club en particular"** abre el modal de pasos y, al confirmar, carga el club y salta a
+  **Finanzas**. **"Comparar dos"** lleva a la pestaña **Comparar**, que es la pantalla de los dos
+  cards de la Versión 156. El modal es el mismo para los dos caminos; lo único que cambia es a
+  dónde va lo elegido (`origen`).
+- **FINANZAS ABRE CON EL SELECTOR**: con club es una línea con el club activo y "Cambiar de club";
+  sin club es un card con "Elegir un club", y el resto de la pantalla se esconde — las tablas
+  vacías y el banner amarillo de "dato placeholder" que quedaban abajo no dicen nada, y el banner
+  encima miente (no hay dato inventado, no hay dato).
+- **PESTAÑA NUEVA `data-section="vs"`, que el visitante lee como "Comparar".** El id `comparar` ya
+  existe en `index.html` y es "Comparar Gestiones" (dos presidencias del MISMO club, escondida del
+  nav desde la Versión 56): son dos cosas distintas y el id no se puede pisar.
+- **SE FUE EL TOGGLE "quiero comparar dos / solo quiero ver uno"** de adentro de la pestaña
+  Comparar: esa pregunta ahora la hace Inicio, y tenerla en dos lugares era la misma bifurcación
+  duplicada que este prototipo vino a sacar.
+- El club guardado de una visita anterior ya NO llena el card A. Ese club es asunto de Finanzas; la
+  pestaña Comparar arranca siempre con los dos cards vacíos, porque "contra qué comparar" no se
+  hereda de la visita pasada.
+- Si el visitante marcó VARIOS clubes viniendo por el camino de "un club en particular", el card
+  final no descarta la selección en silencio ni inventa un promedio: dice qué va a ver y ofrece
+  llevar los N a Comparar.
+- `applyClubMode()` ya no esconde el nav ni las secciones mientras no hay club: en el sitio la
+  portada es un hero suelto fuera de `<main>`, pero acá la portada ES una sección y esconderlas
+  dejaba la página en blanco.
+- La navegación entre pestañas se hace APRETANDO el botón del nav, no repitiendo las clases
+  `active` del `<script>` de index.html: reimplementarla es garantizarse dos verdades.

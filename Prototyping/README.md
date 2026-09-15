@@ -20,12 +20,19 @@ que `js/selector.js`, así que `index.html` no se entera de cuál está cargado.
 | **1** | `prototipo-inicio-selector.html` | El selector de columnas de hoy (Deporte › Región › País › Liga › Equipo), metido en la portada en vez de atrás de un click. Se queda en la página con el club elegido y se minimiza. | Congelado |
 | **2** | `prototipo-pasos.html` | Un card por paso, apilados, una decisión por vez. 7 pasos, multi-selección, grupos (sumar clubes y ligas y medirlos contra otro grupo). | Congelado a pedido de Guido, con pendientes anotados abajo |
 | **3** | `prototipo-duelo.html` | Dos columnas, **Equipo A contra Equipo B**, con un toggle arriba para el que solo quiere ver uno. Cada columna tiene el árbol completo (Deporte › Región › País › Liga › Equipo, un nivel por vez) y puede terminar en un club, una liga, un país o una región entera (promedio o total). | El más nuevo, el menos probado |
-| **4** | `prototipo-cards.html` | Los dos cards del 3, pero **vacíos**: apretar uno abre un **modal con los pasos del 2**, sin el paso "contra qué comparar". El 3 por fuera, el 2 por dentro. | El más nuevo |
+| **4** | `prototipo-cards.html` | **Inicio pregunta**: "ver un club" (→ Finanzas, con el selector) o "comparar dos" (→ pestaña **Comparar**, los dos cards vacíos del 3). Apretar un card abre un **modal con los pasos del 2**, sin el paso "contra qué comparar". | El más nuevo |
 
 **El 3 nace de una crítica al 2** (Guido): comparar obligaba a pasar por el
 selector dos veces, y eso generaba casuística que nadie quería contestar (¿el
 paso 7 vuelve a aparecer?, ¿en qué momento se cierra un lado?). Con las dos
 columnas a la vista, comparar deja de ser un estado en el que entrás y salís.
+
+**El 4 arranca preguntando** (Versión 157): la portada ya no es la pantalla de los
+dos cards, es una sola pregunta de dos opciones. El que viene por un club no pasa
+nunca por una pantalla partida al medio: elige en el modal y aterriza en Finanzas.
+El que viene a comparar va a la pestaña Comparar, que es la pantalla de los dos
+cards. El modal es el mismo para los dos caminos; lo único que cambia es a dónde
+va lo elegido.
 
 **El 4 nace de una crítica al 3** (Guido: "no me gusta el prototipo 3"): meterle
 el árbol entero a cada columna entra, pero la portada abre con dos árboles de

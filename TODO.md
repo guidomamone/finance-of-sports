@@ -89,9 +89,12 @@ perdieron sino que se descartaron:
     solo conjuntos que ya existen en la taxonomía. Si se aprueba C, esa es la diferencia a decidir.
     Es el más nuevo y el menos probado.
 
-    **D. `Prototyping/prototipo-cards.html`** (Versión 156) — los dos cards del C, pero VACÍOS:
-    cada uno es un botón grande, y apretarlo abre un MODAL con los pasos del B, sin el paso 7
-    ("contra qué comparar"). Es el C por fuera y el B por dentro. Nace de una crítica de Guido al C
+    **D. `Prototyping/prototipo-cards.html`** (Versiones 156-157) — INICIO ES UNA PREGUNTA de dos
+    opciones: "quiero ver un club en particular" (abre el modal y aterriza en FINANZAS, que tiene
+    su propio selector arriba) o "quiero comparar dos clubes o ligas" (lleva a una pestaña
+    COMPARAR). Esa pestaña son los dos cards del C pero VACÍOS: cada uno es un botón grande, y
+    apretarlo abre un MODAL con los pasos del B, sin el paso 7 ("contra qué comparar"). O sea, el C
+    por fuera y el B por dentro, detrás de una bifurcación. Nace de una crítica de Guido al C
     ("no me gusta el prototipo 3"): meterle el árbol entero a cada columna entra, pero la portada
     abre con dos árboles de cinco niveles a la vez, que es el mismo exceso de información que el B
     vino a corregir, ahora duplicado. Acá la portada abre con UNA pregunta, dos veces.
