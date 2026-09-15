@@ -192,7 +192,7 @@ perdieron sino que se descartaron:
         año, no como un número suelto. Mismo problema que tenía la membresía.
     (c) LA VISTA DE LIGA (pedido de Guido, "podemos separarlo en sesiones pero guardámelo en un
         to-do gigante"). Elegir una liga o un país entero en el selector hoy solo filtra la
-        columna Equipo; el prototipo (`prototipo-selector.html`) tiene además un "Ranking de
+        columna Equipo; el prototipo de la Versión 137 (ya borrado) tenía además un "Ranking de
         ingresos" con una barra apilada por club. Lo que hay que resolver antes de dibujarlo, y
         es lo que lo hace una sesión propia: un ranking de liga es (liga, EJERCICIO), así que
         hay que elegir el año y decir cuántos de sus integrantes tienen ese ejercicio cargado;
@@ -325,8 +325,9 @@ perdieron sino que se descartaron:
         así que el payload todavía no bajó.
     (e) RESUELTO (Versión 137): el `<select>` plano de 41 opciones lo reemplazó el selector
         jerárquico (ver ESTADO ACTUAL). `prototipo-selector.html` y
-        `PROMPT-selector-jerarquico.md` quedan como el registro de la UX que se decidió, no
-        como trabajo pendiente.
+        `PROMPT-selector-jerarquico.md` —el mock y el prompt con los que se diseñó— los borró
+        Guido, y la borrada se registró en la Versión 154: lo que decidieron ya está construido y
+        vive en `js/selector.js`. Los prototipos vivos son otros, y están en `Prototyping/`.
     (f) `auditAll()` carga los clubes en SERIE (`for` con `await`): 114 ms con 41, pero ~30 s a 1000
         clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
         paralelas con `Promise.all`.

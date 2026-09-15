@@ -1291,3 +1291,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - BUG en los datos inventados: `window.clubs` (que es `undefined`, porque `clubs` es un `const` de
   su archivo y no una propiedad de window) rompía `clubsOfLeague()`. Es la MISMA trampa que ya está
   documentada dos veces en este repo; costó media hora otra vez.
+- Se registra la borrada de `prototipo-selector.html` y `PROMPT-selector-jerarquico.md` (el mock y
+  el prompt con los que se diseñó el selector en la Versión 137). Los borró Guido y estaban sin
+  commitear desde entonces; lo que decidieron ya está construido en `js/selector.js`, y las dos
+  referencias que quedaban apuntando a ellos en `TODO.md` se corrigieron.
