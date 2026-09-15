@@ -269,8 +269,11 @@ se reescribe, no se acumula.
   tocar producción, y corren con los datos y el motor REALES.
   **El 1** (`prototipo-inicio-selector.html`) mete el selector de columnas de hoy
   en la portada; **el 2** (`prototipo-pasos.html`) pregunta de a un paso por card;
-  **el 3** (`prototipo-duelo.html`, Versión 154) parte la pantalla en dos columnas,
-  Equipo A contra Equipo B, con un toggle para el que solo quiere ver uno.
+  **el 3** (`prototipo-duelo.html`, Versiones 154-155) parte la pantalla en dos
+  columnas, Equipo A contra Equipo B, con un toggle para el que solo quiere ver uno;
+  cada columna tiene el árbol entero (Deporte › Región › País › Liga › Equipo, un
+  nivel por vez, con breadcrumb) y su lado puede ser un club, una liga, un país o
+  una región.
   Los `.html` están generados (`node Prototyping/build-prototipo-*.js`) y llevan
   `<base href="../">` porque el sitio se sirve desde la raíz.
   **Los prototipos 2 y 3 cargan `prototipo-pasos-datos-inventados.js`**, que

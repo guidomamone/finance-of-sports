@@ -72,12 +72,22 @@ perdieron sino que se descartaron:
     salvedades a la vista (clubes sin ese ejercicio, indicadores que la fuente no informa,
     presupuestos mezclados con balances).
 
-    **C. `Prototyping/prototipo-duelo.html`** (Versión 154) — dos columnas, Equipo A contra Equipo
-    B, con un toggle arriba ("quiero comparar dos" / "solo quiero ver uno"). Cada columna puede ser
-    un club o una liga entera, y una liga se mide por promedio por club o por total. Nace de una
+    **C. `Prototyping/prototipo-duelo.html`** (Versiones 154-155) — dos columnas, Equipo A contra
+    Equipo B, con un toggle arriba ("quiero comparar dos" / "solo quiero ver uno"). Nace de una
     crítica de Guido al B: comparar obligaba a pasar por el selector dos veces, y eso generaba
     casuística que nadie quería contestar. Con las dos columnas a la vista, comparar deja de ser un
-    estado en el que entrás y salís. Es el más nuevo y el menos probado.
+    estado en el que entrás y salís.
+    CADA COLUMNA TIENE EL ÁRBOL ENTERO (Versión 155, pedido de Guido: la primera versión del C lo
+    había cambiado por dos pestañas planas y una lista alfabética de 41 filas). Es el mismo árbol
+    de `js/selector.js` — Deporte › Región › País › Liga › Equipo — servido de a UN nivel por vez,
+    con breadcrumb clickeable arriba, porque media pantalla no da para 5 columnas y son dos
+    árboles. El buscador queda por encima y sigue siendo transversal.
+    Y SUMA ALGO QUE EL SITIO NO TIENE, igual que el B pero por otro camino: el lado puede ser un
+    club, una liga, un PAÍS o una REGIÓN entera (⊕ en cada fila de conjunto), medidos por promedio
+    por club o por todo sumado. Es el mismo agregado que el B llama "grupos", pero armado desde el
+    árbol en vez de con una bandeja aparte: no deja armar un grupo a mano ("Boca + River + Racing"),
+    solo conjuntos que ya existen en la taxonomía. Si se aprueba C, esa es la diferencia a decidir.
+    Es el más nuevo y el menos probado.
 
     PENDIENTES DEL PROTOTIPO B, de la última sesión de pruebas de Guido, sin implementar porque
     pidió congelarlo y pasar al C: el promedio y la sumatoria deberían dejar ELEGIR qué años entran
@@ -130,6 +140,27 @@ perdieron sino que se descartaron:
     `<script>` en los generadores de `Prototyping/` se borran en el mismo movimiento. Mientras
     exista, cualquier captura de los prototipos 2 y 3 tiene números falsos: la franja roja de
     arriba lo dice, pero conviene no pegar esas capturas en ningún lado sin la franja.
+
+31. BUG DEL SITIO PUBLICADO, encontrado el 2026-09-14 trabajando en el prototipo 3 y arreglado SOLO
+    ahí. LOS 10 CLUBES JAPONESES MUESTRAN UN RESULTADO FALSO, no un dato faltante. La J.League
+    publica el ingreso de cada club pero no su estructura de costos, así que los 10
+    `data/<club>-data.js` tienen `expenseLines: []` y `officialTotalExpenses: null`. La ficha de
+    Finanzas de Cerezo Osaka dice, en el cuerpo de letra más grande de la página, "Gastos 0,0 M
+    USD" y "Resultado neto +38,1 M USD": ese club no ganó 38 millones, simplemente no sabemos qué
+    gastó. La TABLA de abajo ya lo hace bien (muestra guiones), así que el criterio existe en el
+    proyecto y son los KPIs de arriba los que no lo aplican.
+    Mismo problema, y por la misma línea de código, en `js/comparar-clubes.js:339`
+    (`expenses: Math.abs(usd(c.expenses + c.nonCash))`, sin el test de "la fuente no informa"), que
+    es el gemelo del test `sinDeuda` que esa misma función ya hace tres líneas más abajo para la
+    deuda. Comparar un club japonés contra cualquier otro publica los dos números falsos.
+    El arreglo ya escrito y probado está en `Prototyping/prototipo-duelo-selector.js`, función
+    `numerosDe()`: si no hay líneas de gasto, ni total oficial de gastos, ni `expenses`, ni
+    `nonCash`, entonces gastos va en `null` y el resultado del ejercicio también (es el final de
+    una cascada que arranca en los gastos). Llevarlo a `js/comparar-clubes.js` y a los KPIs de la
+    ficha de Finanzas, subir `ASSET_V` en los dos lugares, y correr `auditAll()`.
+    OJO CON `tools/audit.js`: hoy no lo detecta. Un ejercicio sin gastos cierra perfecto contra su
+    propio total de ingresos, que es exactamente el tipo de error que `audit.js` existe para
+    encontrar. Vale un chequeo nuevo ahí también.
 
 29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
     SOLO en la copia del prototipo (`Prototyping/prototipo-inicio-selector.js`, patch (d) del generador). En

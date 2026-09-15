@@ -120,17 +120,46 @@ const PROTO_CSS = `
   .du-x{background:none;border:none;color:var(--muted);font-size:19px;line-height:1;cursor:pointer;padding:0 3px;}
   .du-x:hover{color:var(--red);}
 
-  .du-tabs{display:flex;gap:6px;padding:10px 13px 0;}
-  .du-tab{background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 11px;
-          font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
-  .du-tab.on{background:var(--azul);border-color:var(--azul);color:#fff;}
-  .du-busca{margin:10px 13px;width:calc(100% - 26px);border:1px solid var(--border);border-radius:8px;
+  .du-busca{margin:12px 13px 8px;width:calc(100% - 26px);border:1px solid var(--border);border-radius:8px;
             padding:9px 11px;font-family:inherit;font-size:14px;outline:none;}
   .du-busca:focus{border-color:var(--azul);}
-  .du-lista{max-height:290px;overflow-y:auto;padding:0 13px 13px;display:flex;flex-direction:column;gap:5px;}
+
+  /* EL BREADCRUMB. Con un nivel por vez es la única forma de volver, así que tiene
+     que leerse como navegación y no como un título: cada tramo es un botón. */
+  .du-migas{display:flex;flex-wrap:wrap;align-items:center;gap:3px;padding:0 13px 8px;font-size:11.5px;}
+  .du-migas[hidden]{display:none;}
+  .du-miga{background:none;border:none;font-family:inherit;font-size:11.5px;font-weight:700;color:var(--azul);
+           padding:2px 4px;border-radius:5px;cursor:pointer;}
+  .du-miga:hover{background:#eef2f9;text-decoration:underline;}
+  .du-miga-sep{color:var(--muted);font-size:11px;}
+  .du-miga-ahi{font-size:11.5px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;
+               padding:2px 2px;}
+
+  .du-lista{max-height:366px;overflow-y:auto;padding:0 13px 13px;display:flex;flex-direction:column;gap:5px;}
   .du-op{display:flex;align-items:center;gap:9px;text-align:left;background:#fff;border:1px solid var(--border);
-         border-radius:9px;padding:8px 10px;font-family:inherit;cursor:pointer;color:var(--text);}
+         border-radius:9px;padding:8px 10px;font-family:inherit;cursor:pointer;color:var(--text);width:100%;}
   .du-op:hover{border-color:var(--azul);background:#eef2f9;}
+  .du-op.off{opacity:.42;cursor:default;}
+  .du-op.off:hover{border-color:var(--border);background:#fff;}
+  /* La fila que toma el conjunto entero: se distingue del resto porque es una
+     ACCIÓN (elegir), no un escalón más del árbol. */
+  .du-op.conjunto{background:#f3f7ff;border-color:#c9d8f2;}
+  .du-op.conjunto .du-op-n{font-weight:800;}
+  .du-op.conjunto .du-op-meta{background:var(--azul);color:#fff;border-radius:6px;padding:4px 9px;font-size:11.5px;}
+  .du-op.conjunto:hover .du-op-meta{background:var(--azul-dark);}
+  .du-op.ver{background:none;border-style:dashed;}
+  .du-op-meta{margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);flex:0 0 auto;}
+  .du-op-arrow{color:var(--muted);font-size:15px;flex:0 0 auto;}
+  /* El ⊕: toma el conjunto de esa fila sin bajar un nivel. Es un <span> con rol de
+     botón y no un <button>, porque la fila entera ya es un <button>. */
+  .du-pick{margin-left:auto;width:23px;height:23px;border-radius:50%;border:1px solid var(--border);color:var(--azul);
+           display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;flex:0 0 auto;
+           background:#fff;cursor:pointer;}
+  .du-pick + .du-op-arrow{margin-left:5px;}
+  .du-pick:hover{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .du-op-meta + .du-op-arrow{margin-left:5px;}
+  .du-grupo-tit{margin:7px 0 1px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;
+                color:var(--muted);}
   .du-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
             display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
   .du-crest.grande{width:34px;height:34px;font-size:12px;}
@@ -143,6 +172,9 @@ const PROTO_CSS = `
   .du-elegido{padding:13px;}
   .du-sujeto{display:flex;align-items:center;gap:11px;margin-bottom:12px;}
   .du-sujeto-n{font-size:17px;font-weight:800;}
+  .du-otro{margin-left:auto;background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;
+           padding:5px 9px;font-family:inherit;font-size:11.5px;font-weight:700;cursor:pointer;flex:0 0 auto;}
+  .du-otro:hover{border-color:var(--azul);color:var(--azul);}
   .du-modos{display:flex;gap:6px;margin-bottom:12px;}
   .du-modo{flex:1;background:#fff;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:7px 9px;
            font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}

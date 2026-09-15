@@ -19,12 +19,21 @@ que `js/selector.js`, así que `index.html` no se entera de cuál está cargado.
 |---|---|---|---|
 | **1** | `prototipo-inicio-selector.html` | El selector de columnas de hoy (Deporte › Región › País › Liga › Equipo), metido en la portada en vez de atrás de un click. Se queda en la página con el club elegido y se minimiza. | Congelado |
 | **2** | `prototipo-pasos.html` | Un card por paso, apilados, una decisión por vez. 7 pasos, multi-selección, grupos (sumar clubes y ligas y medirlos contra otro grupo). | Congelado a pedido de Guido, con pendientes anotados abajo |
-| **3** | `prototipo-duelo.html` | Dos columnas, **Equipo A contra Equipo B**, con un toggle arriba para el que solo quiere ver uno. Cada columna puede ser un club o una liga entera (promedio o total). | El más nuevo, el menos probado |
+| **3** | `prototipo-duelo.html` | Dos columnas, **Equipo A contra Equipo B**, con un toggle arriba para el que solo quiere ver uno. Cada columna tiene el árbol completo (Deporte › Región › País › Liga › Equipo, un nivel por vez) y puede terminar en un club, una liga, un país o una región entera (promedio o total). | El más nuevo, el menos probado |
 
 **El 3 nace de una crítica al 2** (Guido): comparar obligaba a pasar por el
 selector dos veces, y eso generaba casuística que nadie quería contestar (¿el
 paso 7 vuelve a aparecer?, ¿en qué momento se cierra un lado?). Con las dos
 columnas a la vista, comparar deja de ser un estado en el que entrás y salís.
+
+**El árbol del 3** (Versión 155) es el mismo de `js/selector.js`, pero servido de
+a un nivel por vez en vez de en 5 columnas: media pantalla no da para 5 columnas,
+y son dos árboles, uno por lado. El breadcrumb de arriba hace el trabajo que allá
+hacían las columnas de la izquierda (ver dónde estás, y volver), y el buscador
+queda POR ENCIMA del árbol, transversal: escribir "boca" o "japon" sigue llegando
+en un paso desde cualquier nivel. Lo que el árbol del sitio no tiene: acá cada
+fila de conjunto lleva un ⊕ que lo toma ENTERO como lado, así que un país o una
+región son sujetos tan válidos como un club o una liga.
 
 ---
 

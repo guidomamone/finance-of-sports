@@ -1295,3 +1295,41 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   el prompt con los que se diseñó el selector en la Versión 137). Los borró Guido y estaban sin
   commitear desde entonces; lo que decidieron ya está construido en `js/selector.js`, y las dos
   referencias que quedaban apuntando a ellos en `TODO.md` se corrigieron.
+
+## Versión 155: el árbol vuelve al prototipo 3, adentro de las dos columnas
+
+- **VUELVE LA NAVEGACIÓN POR DEPORTE › REGIÓN › PAÍS › LIGA › EQUIPO** al prototipo 3
+  (`Prototyping/prototipo-duelo-selector.js`), pedido de Guido: "en el prototipo 3 se perdió lo de
+  buscar por deporte, región, etc. Traelo de nuevo pero manteniendo las dos columnas". La primera
+  versión lo había cambiado por dos pestañas planas (Clubes / Ligas enteras) con una lista
+  alfabética de 41 filas, que no dice nada de la forma de los datos hasta leerla entera.
+- **CÓMO ENTRA UN ÁRBOL DE 5 NIVELES EN MEDIA PANTALLA**: no al lado, abajo. Las 5 columnas de
+  `js/selector.js` se vuelven UN nivel por vez, con breadcrumb clickeable arriba haciendo el
+  trabajo que allá hacían las columnas de la izquierda. Cada columna tiene su propio árbol y su
+  propio breadcrumb. El buscador queda por ENCIMA del árbol y sigue siendo transversal (escribir
+  "boca" o "japon" llega en un paso desde cualquier nivel); mientras hay texto escrito el árbol se
+  esconde entero y la lista pasa a ser el resultado, agrupado en Equipos / Ligas / Países /
+  Regiones.
+- **UN LADO YA NO ES SOLO UN CLUB O UNA LIGA: también un país o una región enteros.** Toda fila de
+  conjunto lleva un ⊕ que lo toma entero sin bajar hasta un club, y el primer renglón de cada nivel
+  ofrece el conjunto en el que ya estás parado ("Toda la liga", "Todo el país", "Toda la región").
+  `lado.tipo` pasó de `'liga'` a `'grupo'` con un `kind`; lo único que cambia entre los tres kinds
+  es de dónde sale la lista de clubes, de ahí para abajo se calculan igual. "Argentina contra
+  LaLiga" ya se puede preguntar.
+- El botón "Elegir otro" vacía la columna dejando el árbol parado donde estaba el sujeto, no en la
+  lista de regiones.
+- El árbol de la columna B arranca parado en el país del club guardado: el rival más probable de
+  Boca es otro club argentino.
+- El bug 29 del sitio publicado (la columna Liga no filtra por región) no se repite acá: volver a
+  un nivel limpia todo lo que colgaba más abajo.
+- Los conjuntos se nombran por su TIPO y no por su nombre propio ("Toda la liga", no "Todo
+  LaLiga"): el artículo concuerda con el nombre, y los nombres los ponen las ligas y los países.
+  Concatenar daba "Todo Primera División", "Todo España", "Todo Argentina".
+- **BUG DE DATOS ENCONTRADO DE PASO, y arreglado SOLO en el prototipo**: los 10 clubes japoneses
+  tienen ingresos cargados y `expenseLines: []` (la J.League publica el ingreso por club, no su
+  estructura de costos), así que el promedio de Japón salía con "Gastos 0,0 M USD" y "Resultado del
+  ejercicio 55,0 M USD". No es un dato incompleto, es un dato falso. `numerosDe()` ahora manda
+  gastos y resultado a "sin dato" cuando la fuente no los informa, igual que ya hacía con la deuda.
+  EL SITIO PUBLICADO TIENE EL MISMO BUG, en `js/comparar-clubes.js:339` y en los KPIs de la ficha de
+  Finanzas (la tabla de abajo sí muestra guiones): queda anotado como to-do 31, sin tocar.
+- Arreglado de paso "Cierre 2026 (1 clubes)" en el desplegable de ejercicio de un conjunto.
