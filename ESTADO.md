@@ -262,31 +262,25 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `Prototyping/`: los 4 prototipos del selector de club, con su propio
-  `README.md` (leelo antes de tocar cualquier cosa de ahí). NADA de esa carpeta es
-  el sitio: no se linkea desde `index.html` ni se sirve como parte de la
-  experiencia real. Son maquetas para decidir cómo se elige un club antes de
-  tocar producción, y corren con los datos y el motor REALES.
-  **El 1** (`prototipo-inicio-selector.html`) mete el selector de columnas de hoy
-  en la portada; **el 2** (`prototipo-pasos.html`) pregunta de a un paso por card;
-  **el 3** (`prototipo-duelo.html`, Versiones 154-155) parte la pantalla en dos
-  columnas, Equipo A contra Equipo B, con un toggle para el que solo quiere ver uno;
-  cada columna tiene el árbol entero (Deporte › Región › País › Liga › Equipo, un
-  nivel por vez, con breadcrumb) y su lado puede ser un club, una liga, un país o
-  una región; **el 4** (`prototipo-cards.html`, Versiones 156-157) abre
-  preguntando "¿ver un club o comparar dos?": el primer camino lleva a Finanzas con
-  un selector propio, y el segundo a una pestaña Comparar con dos cards VACÍOS que
-  se llenan desde un modal con los pasos del 2, sin el paso "contra qué comparar".
-  Desde la Versión 158 cada lado es una SUMA DE BLOQUES (una liga-temporada, un
-  puñado de clubes), cada uno con su propio agregador: promedio o sumatoria.
-  Los `.html` están generados (`node Prototyping/build-prototipo-*.js`) y llevan
-  `<base href="../">` porque el sitio se sirve desde la raíz.
-  **Los prototipos 2, 3 y 4 cargan `prototipo-pasos-datos-inventados.js`**, que
-  rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
-  Brasil. Ningún número que salga de ahí es real, no vive en `data/`, ninguna
-  auditoría lo ve, y cada ejercicio inventado se anuncia en pantalla. Las 5
-  condiciones que lo contienen están en `CONVENCIONES.md`; el día que se decida el
-  selector, se borra (to-do 30).
+- `Prototyping/`: los 4 prototipos del selector de club. **YA HAY GANADOR**: el
+  prototipo 4, decidido el 2026-09-15 (era el to-do 28). Vive en
+  `Prototyping/Selector/` junto a `MERGE-A-PRODUCCION.md`, que es el documento que
+  explica qué es, qué cambia respecto del sitio publicado archivo por archivo, y
+  cómo encarar el merge — está escrito para una sesión que no vivió ninguna de
+  estas, y es por donde hay que empezar (to-do 32). Los otros tres quedaron en
+  `Prototyping/Selector/Archive/`, con el README de `Prototyping/` explicando por
+  qué perdió cada uno. NADA de esa carpeta es el sitio: no se linkea desde
+  `index.html` ni se sirve como parte de la experiencia real, y corre con los datos
+  y el motor REALES.
+  QUÉ PROPONE EL GANADOR, en tres líneas: Inicio pasa a preguntar "¿ver un club o
+  comparar dos?"; el árbol de 5 columnas se vuelve un modal paso a paso; y un lado
+  de una comparación pasa a ser una SUMA DE BLOQUES (una liga-temporada, un puñado
+  de clubes), cada uno con su propio agregador, promedio o sumatoria.
+  **`Selector/prototipo-pasos-datos-inventados.js`** rellena de mentira los
+  ejercicios 2016-2025 de los 18 clubes de Argentina y Brasil. Ningún número que
+  salga de ahí es real, no vive en `data/`, ninguna auditoría lo ve, y cada
+  ejercicio inventado se anuncia en pantalla. Las 5 condiciones que lo contienen
+  están en `CONVENCIONES.md`; se borra cuando termine el merge (to-do 30).
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.

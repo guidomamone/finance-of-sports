@@ -48,119 +48,36 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-28. DECIDIR QUÉ SELECTOR VA AL SITIO. Hay CUATRO prototipos andando con los datos reales, todos en
-    `Prototyping/` (que tiene su propio README con cómo abrirlos y regenerarlos). Hay que elegir
-    entre ellos, o entre partes de cada uno; no es un sí/no:
+32. LLEVAR EL PROTOTIPO 4 A PRODUCCIÓN. El punto 28 ("decidir qué selector va al sitio") se
+    resolvió el 2026-09-15: de los cuatro prototipos gana el 4, y lo que queda es el merge, que es
+    grande — toca la portada, la navegación, el selector de club y el comparador.
 
-    **A. `Prototyping/prototipo-inicio-selector.html`** — el selector de columnas de hoy, metido en la
-    portada. Muestra la forma de los datos de una sola mirada (que hay 6 países, que Japón tiene
-    10 clubes) sin tocar nada, y deja volver un nivel sin perder el resto. Su costo es el que
-    levantó Guido: ~67 opciones y 5 decisiones simultáneas en la primera pantalla.
+    **TODO LO QUE HACE FALTA PARA PLANEARLO ESTÁ EN `Prototyping/Selector/MERGE-A-PRODUCCION.md`**,
+    escrito para una sesión que no vivió ninguna de estas: qué es el prototipo, el modelo de datos,
+    qué cambia archivo por archivo, un plan por etapas, las decisiones abiertas y los gotchas. No
+    repetirlo acá: esa es la fuente.
 
-    **B. `Prototyping/prototipo-pasos.html`** (Versiones 148-153) — un card por paso, apilados, una decisión
-    por vez, con el card resuelto encogido a una línea. Cada paso es multi-selección (casillas) y
-    cada paso se puede ignorar con "Elegir más tarde"; si se ignoran todos, el sitio elige y lo
-    dice (Boca contra River); si queda un solo club, el card final ofrece contra quién compararlo.
-    Entra en un teléfono sin media queries y sin el punto de calidad ni su leyenda (los sacó
-    Guido). Su costo es el inverso al de A: esconde la forma de los datos hasta que llegás al
-    nivel, y son más clicks para el que quiere mirar.
-    B TRAE ADEMÁS UNA FEATURE QUE EL SITIO NO TIENE, y que habría que construir de verdad si se
-    aprueba: GRUPOS. Un lado es un conjunto de clubes que se mide como uno solo ("Primera División
-    contra LaLiga"), sumando. Hoy `js/comparar-clubes.js` compara hasta 5 sujetos sueltos y su
-    benchmark de liga es un PROMEDIO, no un total: son dos preguntas distintas y el sitio solo
-    contesta una. El prototipo suma llamando a `computeYearGeneric()` club por club, con las tres
-    salvedades a la vista (clubes sin ese ejercicio, indicadores que la fuente no informa,
-    presupuestos mezclados con balances).
+    El resumen de una línea, para saber de qué se trata sin abrir nada: Inicio pasa a preguntar
+    "¿ver un club o comparar dos?"; el árbol de 5 columnas se vuelve un modal paso a paso; y un lado
+    de una comparación pasa a ser una SUMA DE BLOQUES (una liga-temporada, un puñado de clubes),
+    cada uno con su propio agregador, promedio o sumatoria.
 
-    **C. `Prototyping/prototipo-duelo.html`** (Versiones 154-155) — dos columnas, Equipo A contra
-    Equipo B, con un toggle arriba ("quiero comparar dos" / "solo quiero ver uno"). Nace de una
-    crítica de Guido al B: comparar obligaba a pasar por el selector dos veces, y eso generaba
-    casuística que nadie quería contestar. Con las dos columnas a la vista, comparar deja de ser un
-    estado en el que entrás y salís.
-    CADA COLUMNA TIENE EL ÁRBOL ENTERO (Versión 155, pedido de Guido: la primera versión del C lo
-    había cambiado por dos pestañas planas y una lista alfabética de 41 filas). Es el mismo árbol
-    de `js/selector.js` — Deporte › Región › País › Liga › Equipo — servido de a UN nivel por vez,
-    con breadcrumb clickeable arriba, porque media pantalla no da para 5 columnas y son dos
-    árboles. El buscador queda por encima y sigue siendo transversal.
-    Y SUMA ALGO QUE EL SITIO NO TIENE, igual que el B pero por otro camino: el lado puede ser un
-    club, una liga, un PAÍS o una REGIÓN entera (⊕ en cada fila de conjunto), medidos por promedio
-    por club o por todo sumado. Es el mismo agregado que el B llama "grupos", pero armado desde el
-    árbol en vez de con una bandeja aparte: no deja armar un grupo a mano ("Boca + River + Racing"),
-    solo conjuntos que ya existen en la taxonomía. Si se aprueba C, esa es la diferencia a decidir.
-    Es el más nuevo y el menos probado.
+    LA DECISIÓN QUE HAY QUE TOMAR ANTES DE ESCRIBIR UNA LÍNEA, y que cambia todo lo demás: qué pasa
+    con `js/comparar-clubes.js`, que contesta la misma pregunta de otra manera y que el prototipo
+    reemplaza funcionalmente. Las tres salidas están en la sección 6 de ese documento; la
+    recomendación es que el prototipo lo reemplace, por etapas.
 
-    **D. `Prototyping/prototipo-cards.html`** (Versiones 156-157) — INICIO ES UNA PREGUNTA de dos
-    opciones: "quiero ver un club en particular" (abre el modal y aterriza en FINANZAS, que tiene
-    su propio selector arriba) o "quiero comparar dos clubes o ligas" (lleva a una pestaña
-    COMPARAR). Esa pestaña son los dos cards del C pero VACÍOS: cada uno es un botón grande, y
-    apretarlo abre un MODAL con los pasos del B, sin el paso 7 ("contra qué comparar"). O sea, el C
-    por fuera y el B por dentro, detrás de una bifurcación.
-    DESDE LA VERSIÓN 158 un lado es una SUMA DE BLOQUES y no una lista de clubes con un agregador
-    único: el paso 4 bifurca en ligas / clubes / una mezcla, cada bloque lleva su año y su
-    agregador (promedio o sumatoria), y el card muestra la fórmula. Las ligas llevan temporada, con
-    la membresía de ESE año. Es el modelo que hace posible "promedio de los colombianos + suma de 6
-    brasileños contra Real Madrid", y el que contesta "¿la liga creció entre 2024 y 2025?". Nace de una crítica de Guido al C
-    ("no me gusta el prototipo 3"): meterle el árbol entero a cada columna entra, pero la portada
-    abre con dos árboles de cinco niveles a la vez, que es el mismo exceso de información que el B
-    vino a corregir, ahora duplicado. Acá la portada abre con UNA pregunta, dos veces.
-    QUÉ RESUELVE DE LOS OTROS DOS: el paso 7 del B desaparece sin perder función, porque el card B
-    ES el rival; y con él se va la pregunta del paso 5 ("¿comparar entre los N o armar un grupo?"),
-    porque un card es un lado y un lado se mide como uno solo. Los grupos del B siguen existiendo
-    (marcar varios clubes arma un conjunto), pero ya no abren ninguna casuística.
-    LO QUE FALTA DECIDIR SI GANA: un lado puede ser cualquier conjunto que salga de los filtros
-    (los 11 argentinos, los 6 de la Série A), pero NO un grupo a mano de clubes de países
-    distintos, que el B sí dejaba armar con su bandeja. Y el card vacío no muestra nada de la forma
-    de los datos: esa información aparece recién adentro del modal.
+    La etapa 1 del plan es independiente de todo el resto y mejora el sitio de hoy: Finanzas sin
+    club muestra el card del selector en vez de tablas vacías y un banner que miente.
 
-    PENDIENTES DEL PROTOTIPO B, de la última sesión de pruebas de Guido, sin implementar porque
-    pidió congelarlo y pasar al C: el promedio y la sumatoria deberían dejar ELEGIR qué años entran
-    (hoy toman todos); el botón "Compararlo contra un grupo que arme yo" debería llamarse "otra
-    cosa" y avisar que te lleva arriba a elegir; el paso 7 reaparece después de armar el rival y se
-    lee como un loop; y el paso 6 debería ofrecer promedio/sumatoria para el que no quiere comparar
-    sino ver ese dato. El prototipo C evita los dos del medio POR DISEÑO, no los resuelve.
-
-    Lo que sigue describe al prototipo A, que es el que tiene más iteraciones encima:
-    (a) El selector desplegado EN la página en vez de atrás de un click, y que SE QUEDA ahí
-        después de elegir, encima de los datos del club: minimizarlo lo deja en una barra de
-        53px. Las pestañas del header se ven desde la primera visita, apagadas hasta que haya
-        club.
-    (b) Un dropdown "Ver" por fila de club, que junta el ejercicio ("Balance 2024/2025", y cae
-        derecho en la ficha de Finanzas de ese ejercicio) con las dos acciones: "El club entero"
-        y "Ver y elegir otro", que deja el selector abierto y en modo comparar para sumar un
-        segundo club o el promedio de una liga. Reemplaza al "+" de la fila de club.
-    El prototipo corre con los 41 clubes y el motor reales, así que lo único que falta decidir es
-    si convence.
-    SI SE APRUEBA, la implementación real NO es copiar los archivos del prototipo:
-    - El markup del panel se mueve adentro de `#coldHero` y la mudanza la hace `applyClubMode()`
-      (que ya es la única función que decide portada vs. club), sin el `MutationObserver` que usa
-      el prototipo para no tocar el sitio.
-    - HECHO en la Versión 146, ya está en el sitio: `data/club-index.js` lista los ejercicios de
-      cada club (`yrs`), así el dropdown no necesita bajar ningún `data/<club>-data.js`. El
-      prototipo ya lee de ahí y su tabla propia se borró.
-    - Los 3 cambios a `js/selector.js` están en `Prototyping/prototipo-inicio-selector.js`: diffealo contra
-      `js/selector.js` y tenés el parche. Los textos nuevos (los de la portada y los 2 del
-      select) pasan por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`.
-    - Subir `ASSET_V` en los dos lugares (la constante y los tags).
-    - Los textos que el prototipo tiene en castellano a mano necesitan su gemelo en
-      `data/lang/en.js`. Dos ya existen y hay que CORREGIRLOS, no solo traducirlos: `hero.sub`
-      todavía dice "and transfers" (mercado de pases, que no está cargado) y
-      `selector.search.ph` tiene los ejemplos en minúscula ("boca", "laliga", "japan").
-    MÓVIL NO SE TOCÓ TODAVÍA, por decisión de Guido (2026-09-14): primero se termina el selector
-    en desktop y recién ahí se acomoda para teléfono. Las reglas de móvil que tiene hoy el
-    prototipo son las heredadas del sitio, no un diseño pensado.
-    Preguntas que el prototipo deja abiertas y conviene mirar en pantalla: si al elegir un club
-    conviene que el selector quede ABIERTO (como está hoy, con la página bajando sola hasta los
-    datos) o que se minimice solo; si el estado minimizado tiene que recordarse entre visitas; y
-    si esconder los ejercicios adentro del dropdown "Ver" no los hace demasiado invisibles, ahora
-    que el subtítulo de la fila ya no dice cuántos hay.
-
-30. BORRAR LOS DATOS INVENTADOS cuando se decida el punto 28. `Prototyping/prototipo-pasos-datos-inventados.js`
+30. BORRAR LOS DATOS INVENTADOS cuando termine el merge del punto 32.
+    `Prototyping/Selector/prototipo-pasos-datos-inventados.js`
     (Versión 152) rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
     Brasil, con ascensos y descensos inventados, para poder probar la interfaz. Lo cargan los
     prototipos 2, 3 y 4. Existe con 5
     condiciones escritas en `CONVENCIONES.md`, y la última es que NUNCA se copia a `data/`: si
     mañana uno de esos clubes publica su balance de 2019, se carga leyendo el documento, no
-    promoviendo este relleno. El día que el selector se apruebe (o se descarte), este archivo y su
+    promoviendo este relleno. Ya se aprobó el selector (gana el prototipo 4), así que el día que el merge termine este archivo y su
     `<script>` en los generadores de `Prototyping/` se borran en el mismo movimiento. Mientras
     exista, cualquier captura de los prototipos 2, 3 y 4 tiene números falsos: la franja roja de
     arriba lo dice, pero conviene no pegar esas capturas en ningún lado sin la franja.
@@ -177,7 +94,7 @@ perdieron sino que se descartaron:
     (`expenses: Math.abs(usd(c.expenses + c.nonCash))`, sin el test de "la fuente no informa"), que
     es el gemelo del test `sinDeuda` que esa misma función ya hace tres líneas más abajo para la
     deuda. Comparar un club japonés contra cualquier otro publica los dos números falsos.
-    El arreglo ya escrito y probado está en `Prototyping/prototipo-duelo-selector.js`, función
+    El arreglo ya escrito y probado está en `Prototyping/Selector/Archive/prototipo-duelo-selector.js`, función
     `numerosDe()`: si no hay líneas de gasto, ni total oficial de gastos, ni `expenses`, ni
     `nonCash`, entonces gastos va en `null` y el resultado del ejercicio también (es el final de
     una cascada que arranca en los gastos). Llevarlo a `js/comparar-clubes.js` y a los KPIs de la
@@ -187,13 +104,15 @@ perdieron sino que se descartaron:
     encontrar. Vale un chequeo nuevo ahí también.
 
 29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
-    SOLO en la copia del prototipo (`Prototyping/prototipo-inicio-selector.js`, patch (d) del generador). En
+    SOLO en la copia del prototipo (`Prototyping/Selector/Archive/prototipo-inicio-selector.js`, patch (d) del generador). En
     `renderCols()` (js/selector.js:~290), la columna LIGA lista `Object.keys(LEAGUES)` filtrado
     solo por DEPORTE cuando no hay país elegido, así que al elegir una región siguen apareciendo
     las ligas de los otros continentes: elegís Europa › España, volvés a cambiar la región a Asia,
     y LaLiga sigue en la columna. La selección sí se limpia; la lista no se filtra. El arreglo es
     una línea (`regionOfCountry(lg.country) === sel.region`) y se puede llevar a `js/selector.js`
-    independientemente de qué se decida con el punto 28.
+    independientemente del merge del punto 32. OJO: ese merge reemplaza `js/selector.js` entero, así
+    que este punto desaparece con él — arreglarlo ahora solo vale si el merge se va a demorar, y en
+    ese caso sí conviene, porque el bug está hoy en el sitio publicado.
 
 25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
     misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·

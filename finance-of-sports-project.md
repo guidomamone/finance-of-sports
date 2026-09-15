@@ -5231,6 +5231,73 @@ Un hallazgo de la verificación que valía por sí solo: `tools/audit.js` buscab
 
 ---
 
+## Versiones 155-159: cuatro prototipos para una pantalla, y el que ganó
+
+Esta sesión (2026-09-14 y 15) cerró una pregunta que venía abierta desde la Versión
+137: cómo elige un club el visitante. El sitio publicado resolvió eso con un panel
+jerárquico de 5 columnas y una portada con buscador, y funcionaba, pero Guido nunca
+quedó conforme con la primera pantalla: *"siento que le estamos poniendo una
+cantidad de información impresionante al usuario ni bien se loguea"*.
+
+Se probaron cuatro caminos, cada uno naciendo de la crítica al anterior, y ese
+encadenamiento es lo que vale la pena conservar:
+
+**El 1** metió el selector de columnas de hoy en la portada. Muestra la forma de los
+datos de una sola mirada —que hay 6 países, que Japón tiene 10 clubes— sin tocar
+nada. Su costo es el que lo hundió: ~67 opciones y 5 decisiones simultáneas en la
+primera pantalla.
+
+**El 2** fue al extremo opuesto: un card por paso, una decisión por vez, con
+"Elegir más tarde" en todos. Resolvió el exceso de información y trajo algo que el
+sitio no tenía —grupos, sumar clubes y medirlos como uno— pero comparar obligaba a
+pasar por el selector dos veces, y de ahí salía una casuística que nadie quería
+contestar (¿el paso 7 vuelve a aparecer?, ¿en qué momento se cierra un lado?).
+
+**El 3** atacó justo eso: dos columnas, Equipo A contra Equipo B, con la comparación
+como pantalla en vez de como estado en el que entrás y salís. Después de probarlo,
+Guido pidió devolverle el árbol por deporte/región/país/liga, que la primera versión
+había cambiado por una lista plana. Entró, pero al meter un árbol de cinco niveles
+en cada columna la portada terminó abriendo con dos árboles a la vez: el mismo
+exceso de información que el 2 había venido a corregir, ahora duplicado. Guido fue
+corto: *"no me gusta el prototipo 3"*.
+
+**El 4** es el 3 por fuera y el 2 por dentro, y ganó. Los dos cards dan la forma; el
+modal de pasos da el contenido. Y el paso 7 del 2 —"contra qué comparar"— desapareció
+sin perder ninguna función, porque el card B ES el rival. Ese fue el momento en que
+el diseño se acomodó solo: sacando ese paso se cayó también la pregunta del paso 5
+("¿comparar entre los N o armar un grupo?"), porque un card es un lado y un lado se
+mide como uno solo.
+
+Después vinieron dos vueltas más, las dos pedidas por Guido y las dos estructurales.
+La primera movió la bifurcación a Inicio: el sitio abre preguntando "¿ver un club o
+comparar dos?", y el que viene por un club —la mayoría— no ve nunca una pantalla
+partida al medio. La segunda es la más profunda: un lado dejó de tener UN agregador
+y pasó a ser una **suma de bloques**, cada uno con el suyo. El caso que la motivó
+fue concreto: *"promedio de clubes colombianos + sumatoria de 6 clubes brasileros"*
+contra Real Madrid. La estructura que salió es la de una tabla dinámica, y lo mejor
+que tiene es que la opción "una mezcla" del paso 4 no es un caso especial: es el
+caso general, y "ligas" y "clubes" son atajos que producen un lado de un solo
+bloque. Un motor, tres puertas.
+
+De esa última vuelta salió además una cosa que no es de interfaz: las ligas ahora
+llevan temporada, y la temporada define QUIÉNES la integraban ese año
+(`clubsOfLeagueYear`, que existía desde la Versión 132 y nadie usaba). Primera
+División 2025 son 10 equipos y 2024 son 11: sin ese dato, "la liga creció" mezcla
+plata con aritmética, y la pregunta que había motivado todo era exactamente esa.
+
+Se encontraron dos bugs del sitio publicado en el camino, los dos por usar el motor
+real en los prototipos: la columna Liga del selector no filtra por región (to-do 29)
+y los 10 clubes japoneses muestran "Gastos 0,0 M USD" y un resultado igual a sus
+ingresos, porque la J.League publica el ingreso de cada club y no su estructura de
+costos (to-do 31). El segundo es un número falso en el cuerpo de letra más grande de
+la ficha de Finanzas, y está arreglado en el prototipo pero no en producción.
+
+El detalle técnico completo —modelo de datos, qué cambia archivo por archivo, plan
+de merge por etapas, decisiones abiertas y gotchas— no está acá: vive en
+`Prototyping/Selector/MERGE-A-PRODUCCION.md`, escrito para la sesión que haga el
+merge.
+
+
 # VOLUMEN 0 — ORIGEN DEL PROYECTO (antes de la Versión 10)
 
 Todo lo que sigue en este Volumen 0 estuvo, hasta hoy, en un archivo suelto

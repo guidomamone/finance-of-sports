@@ -1432,3 +1432,26 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   dar la funcionalidad".
 - "X de Y lo informan" en la tabla de resultados ahora cuenta PARTES del lado, no ejercicios: con un
   agregador por bloque, "2 de 8" mezclaba dos unidades en la misma frase.
+
+## Versión 159: gana el prototipo 4, y queda documentado para el merge
+
+- **DECIDIDO EL PUNTO 28**: de los cuatro prototipos del selector, el que va al sitio es el 4. Lo
+  que queda es el merge a producción, que es grande y pasó a ser el **to-do 32**.
+- `Prototyping/` se reorganizó a pedido de Guido: el ganador y sus archivos viven en
+  `Prototyping/Selector/`, y los prototipos 1, 2 y 3 en `Prototyping/Selector/Archive/`. Los cuatro
+  generadores se ajustaron (ROOT, `<base href>` y las rutas de los `<script src>` que inyectan) y
+  se regeneraron; los cuatro `.html` cargan sin errores desde su ubicación nueva.
+- **NUEVO `Prototyping/Selector/MERGE-A-PRODUCCION.md`** (292 líneas), escrito para una sesión que
+  no vivió ninguna de estas: qué es el prototipo, el modelo de datos (un lado es una suma de
+  bloques), qué cambia archivo por archivo en producción, un plan de merge por etapas, las 6 cosas
+  que el prototipo no resuelve, la decisión de fondo sobre `js/comparar-clubes.js`, los 7 gotchas
+  que cuestan tiempo, y un mapa de las 1.700 líneas del selector.
+- Los datos inventados se mudaron con el ganador (`Selector/prototipo-pasos-datos-inventados.js`) y
+  los prototipos archivados los referencian desde ahí; siguen siendo el mismo archivo con las
+  mismas 5 condiciones, y se borran cuando termine el merge (to-do 30).
+- `README.md` de `Prototyping/` reescrito: ahora abre con el ganador y una tabla de por qué perdió
+  cada uno de los otros tres.
+- De paso, `fuentes.html` estaba desactualizado respecto de los datos (8 documentos decían
+  "Cotización oficial de cierre" donde su club ya declara `fxSource: document_close`). Se regeneró
+  con `node tools/generate-fuentes-page.js`: no cambia ningún número, solo la procedencia del tipo
+  de cambio, que ahora dice lo que dicen los datos.

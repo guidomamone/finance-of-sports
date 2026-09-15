@@ -9,127 +9,89 @@ modelo real. Antes vivían en la raíz del repo y sus generadores en `tools/`.
 
 ---
 
-## Los cuatro prototipos
+## Ya hay un ganador: el prototipo 4
+
+El 2026-09-15 se cerró la decisión (era el **punto 28** de `TODO.md`, ahora
+resuelto). Gana el **prototipo 4**, y lo que falta es llevarlo a producción, que es
+un merge grande.
+
+```
+Selector/
+  MERGE-A-PRODUCCION.md   ← EMPEZÁ POR ACÁ si venís a hacer el merge
+  prototipo-cards.html    ← el ganador, generado
+  build-prototipo-cards.js
+  prototipo-cards-selector.js
+  prototipo-pasos-datos-inventados.js   ⚠️ datos falsos, ver abajo
+  Archive/                ← los tres que perdieron
+```
+
+**`Selector/MERGE-A-PRODUCCION.md` es el documento que importa.** Explica el
+prototipo entero, qué cambia respecto del sitio publicado archivo por archivo, un
+plan de merge por etapas, las decisiones abiertas y los gotchas. Está escrito para
+una sesión que no vivió ninguna de estas.
+
+```
+http://localhost:8971/Prototyping/Selector/prototipo-cards.html
+```
+
+---
+
+## Los cuatro prototipos, y por qué ganó el 4
 
 Los cuatro corren con los **datos y el motor reales** del sitio (mismos `js/`,
 `data/`, mismo `computeYearGeneric()`), y los cuatro exponen la misma API pública
 que `js/selector.js`, así que `index.html` no se entera de cuál está cargado.
 
-| | Archivo | Idea | Estado |
+| | Archivo | Idea | Por qué no |
 |---|---|---|---|
-| **1** | `prototipo-inicio-selector.html` | El selector de columnas de hoy (Deporte › Región › País › Liga › Equipo), metido en la portada en vez de atrás de un click. Se queda en la página con el club elegido y se minimiza. | Congelado |
-| **2** | `prototipo-pasos.html` | Un card por paso, apilados, una decisión por vez. 7 pasos, multi-selección, grupos (sumar clubes y ligas y medirlos contra otro grupo). | Congelado a pedido de Guido, con pendientes anotados abajo |
-| **3** | `prototipo-duelo.html` | Dos columnas, **Equipo A contra Equipo B**, con un toggle arriba para el que solo quiere ver uno. Cada columna tiene el árbol completo (Deporte › Región › País › Liga › Equipo, un nivel por vez) y puede terminar en un club, una liga, un país o una región entera (promedio o total). | El más nuevo, el menos probado |
-| **4** | `prototipo-cards.html` | **Inicio pregunta**: "ver un club" (→ Finanzas, con el selector) o "comparar dos" (→ pestaña **Comparar**, los dos cards vacíos del 3). Apretar un card abre un **modal con los pasos del 2**, sin el paso "contra qué comparar", y con un paso 4 que bifurca en **ligas / clubes / una mezcla**. Cada parte del lado trae su año y su agregador. | El más nuevo |
+| **1** | `Archive/prototipo-inicio-selector.html` | El selector de columnas de hoy (Deporte › Región › País › Liga › Equipo), metido en la portada en vez de atrás de un click. | ~67 opciones y 5 decisiones simultáneas en la primera pantalla. |
+| **2** | `Archive/prototipo-pasos.html` | Un card por paso, apilados, una decisión por vez. 7 pasos, multi-selección, grupos. | Comparar obligaba a pasar por el selector dos veces, y de ahí salía una casuística que nadie quería contestar. |
+| **3** | `Archive/prototipo-duelo.html` | Dos columnas, Equipo A contra Equipo B, cada una con el árbol entero adentro. | La portada abría con dos árboles de cinco niveles a la vez: el mismo exceso de información que el 2 vino a corregir, duplicado. |
+| **4** | `Selector/prototipo-cards.html` | **GANADOR.** Inicio pregunta ("ver un club" o "comparar dos"); los dos cards viven en una pestaña Comparar y se llenan desde un modal con los pasos del 2. Un lado es una suma de bloques, cada uno con su año y su agregador. | — |
 
-**El 3 nace de una crítica al 2** (Guido): comparar obligaba a pasar por el
-selector dos veces, y eso generaba casuística que nadie quería contestar (¿el
-paso 7 vuelve a aparecer?, ¿en qué momento se cierra un lado?). Con las dos
-columnas a la vista, comparar deja de ser un estado en el que entrás y salís.
-
-**Un lado del 4 es una suma de bloques** (Versión 158), no una lista de clubes con
-un agregador único: `LADO = bloque + bloque + …`, y cada bloque es `(qué cosas) ×
-(qué año) × (cómo se agrega)`. Es el modelo de una tabla dinámica, y sirve para
-"promedio de los colombianos + suma de 6 brasileños contra Real Madrid". La opción
-"una mezcla" del paso 4 es el caso general; "ligas" y "clubes" son atajos que
-producen un lado de un solo bloque. Las ligas llevan TEMPORADA, con la membresía
-de ese año (`clubsOfLeagueYear`), así "la Primera de 2025 contra la de 2024" es una
-comparación de verdad y no una mezcla de planteles.
-
-**El 4 arranca preguntando** (Versión 157): la portada ya no es la pantalla de los
-dos cards, es una sola pregunta de dos opciones. El que viene por un club no pasa
-nunca por una pantalla partida al medio: elige en el modal y aterriza en Finanzas.
-El que viene a comparar va a la pestaña Comparar, que es la pantalla de los dos
-cards. El modal es el mismo para los dos caminos; lo único que cambia es a dónde
-va lo elegido.
-
-**El 4 nace de una crítica al 3** (Guido: "no me gusta el prototipo 3"): meterle
-el árbol entero a cada columna entra, pero la portada abre con dos árboles de
-cinco niveles a la vez, que es el mismo exceso de información que el 2 vino a
-corregir, ahora duplicado. Con los cards vacíos, la portada abre con UNA pregunta
-("¿qué querés ver?", dos veces) y el trabajo de elegir pasa al modal. Y el paso 7
-del 2 se va porque ya no hay nada que preguntar: el card B es el rival.
-
-**El árbol del 3** (Versión 155) es el mismo de `js/selector.js`, pero servido de
-a un nivel por vez en vez de en 5 columnas: media pantalla no da para 5 columnas,
-y son dos árboles, uno por lado. El breadcrumb de arriba hace el trabajo que allá
-hacían las columnas de la izquierda (ver dónde estás, y volver), y el buscador
-queda POR ENCIMA del árbol, transversal: escribir "boca" o "japon" sigue llegando
-en un paso desde cualquier nivel. Lo que el árbol del sitio no tiene: acá cada
-fila de conjunto lleva un ⊕ que lo toma ENTERO como lado, así que un país o una
-región son sujetos tan válidos como un club o una liga.
-
----
-
-## Cómo se abren
-
-El sitio se sirve desde la RAÍZ del repo (`.claude/launch.json`, puerto 8971), no
-desde esta carpeta:
-
-```
-http://localhost:8971/Prototyping/prototipo-cards.html
-http://localhost:8971/Prototyping/prototipo-duelo.html
-http://localhost:8971/Prototyping/prototipo-pasos.html
-http://localhost:8971/Prototyping/prototipo-inicio-selector.html
-```
-
-Cada `.html` lleva `<base href="../">` para que TODA ruta relativa (los `<script
-src>` de `js/` y `data/`, y también las que arma el JS en tiempo de ejecución:
-`loadClubData()` e `I18N.load()`) siga resolviendo contra la raíz.
+El 4 se quedó con lo mejor de los otros tres: la forma de dos cards del 3, los pasos
+del 2 y el árbol del 1 comprimido en esos pasos. Y sacó lo que sobraba: el paso
+"contra qué comparar" del 2 (lo contesta el otro card) y la pantalla partida al
+medio para el que viene por un club solo.
 
 ## Cómo se regeneran
 
-Los `.html` están **generados**: no se editan a mano, se sobrescriben. Cada uno
-sale de `index.html` más un puñado de reemplazos con ancla, y si un ancla no
-aparece el generador FALLA en vez de escribir un archivo a medias.
+Los `.html` están **generados**: no se editan a mano, se sobrescriben. Cada uno sale
+de `index.html` más un puñado de reemplazos con ancla, y si un ancla no aparece el
+generador FALLA en vez de escribir un archivo a medias.
 
 ```bash
-node Prototyping/build-prototipo-inicio.js
-node Prototyping/build-prototipo-pasos.js
-node Prototyping/build-prototipo-duelo.js
-node Prototyping/build-prototipo-cards.js
+node Prototyping/Selector/build-prototipo-cards.js
+node Prototyping/Selector/Archive/build-prototipo-inicio.js
+node Prototyping/Selector/Archive/build-prototipo-pasos.js
+node Prototyping/Selector/Archive/build-prototipo-duelo.js
 ```
 
+Cada `.html` lleva un `<base href>` que apunta a la RAÍZ del repo, para que TODA
+ruta relativa (los `<script src>` de `js/` y `data/`, y también las que arma el JS en
+tiempo de ejecución: `loadClubData()` e `I18N.load()`) siga resolviendo bien. Los de
+`Selector/` llevan `../../` y los de `Archive/`, `../../../`.
+
 La lógica de los prototipos 2, 3 y 4 NO se genera: vive en
-`prototipo-pasos-selector.js`, `prototipo-duelo-selector.js` y
-`prototipo-cards-selector.js`, escritos a mano.
-La del 1 sí: es una copia parcheada de `js/selector.js`, y el diff entre las dos
-ES la propuesta de implementación.
+`Archive/prototipo-pasos-selector.js`, `Archive/prototipo-duelo-selector.js` y
+`Selector/prototipo-cards-selector.js`, escritos a mano. La del 1 sí: es una copia
+parcheada de `js/selector.js`, y el diff entre las dos ES su propuesta.
 
 ---
 
 ## ⚠️ Los datos inventados
 
-`prototipo-pasos-datos-inventados.js` rellena de mentira los ejercicios 2016-2025
-de los 18 clubes de Argentina y Brasil, con ascensos y descensos inventados, para
-poder probar la interfaz sin que la falta de datos reales limite el diseño.
+`Selector/prototipo-pasos-datos-inventados.js` rellena de mentira los ejercicios
+2016-2025 de los 18 clubes de Argentina y Brasil, con ascensos y descensos
+inventados, para poder probar la interfaz sin que la falta de datos reales limite el
+diseño.
 
 **Lo cargan los prototipos 2, 3 y 4. El 1 no, y el sitio tampoco.**
 
-Las 5 condiciones que lo mantienen contenido están escritas en `CONVENCIONES.md`
-y la más importante es la última: **estos números no se copian a `data/` nunca**.
-El día que uno de esos clubes publique su balance real, se carga leyendo el
-documento. Mientras el archivo exista, cualquier captura de los prototipos 2, 3 y
-4 tiene números falsos — por eso su franja de arriba es roja y lo dice.
+Las 5 condiciones que lo mantienen contenido están escritas en `CONVENCIONES.md` y
+la más importante es la última: **estos números no se copian a `data/` nunca**. El
+día que uno de esos clubes publique su balance real, se carga leyendo el documento.
+Mientras el archivo exista, cualquier captura de los prototipos 2, 3 y 4 tiene
+números falsos — por eso su franja de arriba es roja y lo dice.
 
----
-
-## Qué quedó pendiente
-
-De la última sesión de pruebas de Guido sobre el prototipo 2, sin implementar
-porque pidió congelarlo y pasar al 3:
-
-1. **Promedio y sumatoria con elección de años.** Hoy el promedio toma TODOS los
-   ejercicios del club; Guido quiere elegir cuáles.
-2. **"Otra cosa" en el paso 7.** El botón "Compararlo contra un grupo que arme
-   yo" debería llamarse así y decir que te lleva arriba a elegir.
-3. **El paso 7 reaparece después de armar el rival** y se lee como un loop.
-4. **Promedio y sumatoria también en el paso 6**, para el que no quiere comparar
-   sino ver ese dato directamente.
-
-El prototipo 3 evita (2) y (3) por diseño, no los resuelve: son problemas del
-modelo de "pasar dos veces por el selector".
-
-La decisión de fondo —cuál de los cuatro va al sitio, o qué partes de cada uno—
-es el **punto 28 de `TODO.md`**, y el día que se resuelva hay que borrar los
-datos inventados (**punto 30**).
+Se borra cuando el merge termine (**punto 30 de `TODO.md`**).

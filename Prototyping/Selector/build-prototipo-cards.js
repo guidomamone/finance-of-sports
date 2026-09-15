@@ -32,8 +32,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');        // la raíz del repo
-const AQUI = __dirname;                          // Prototyping/, donde salen los archivos
+const ROOT = path.join(__dirname, '..', '..');   // la raíz del repo
+const AQUI = __dirname;                          // Prototyping/Selector/, donde salen los archivos
 const SRC = path.join(ROOT, 'index.html');
 const OUT = path.join(AQUI, 'prototipo-cards.html');
 
@@ -53,7 +53,7 @@ replaceOnce('<html lang="es">', [
   '<!--',
   '  ============================ ESTO NO ES EL SITIO ============================',
   '  PROTOTIPO 4 del selector: dos cards vacíos, y un modal con los pasos del 2.',
-  '  GENERADO por `node Prototyping/build-prototipo-cards.js` a partir de index.html.',
+  '  GENERADO por `node Prototyping/Selector/build-prototipo-cards.js` a partir de index.html.',
   '  NO editar a mano: se sobrescribe. Los cambios van en el generador, y la',
   '  lógica del selector en `prototipo-cards-selector.js`.',
   '  Los prototipos 1, 2 y 3 siguen en sus propios archivos: son cuatro',
@@ -65,12 +65,12 @@ replaceOnce('<html lang="es">', [
 ].join('\n'), 'apertura <html>');
 
 replaceOnce('<head>\n', '<head>\n' +
-  '<!-- PROTO: el prototipo vive en Prototyping/ y el sitio en la raíz. Esta línea hace\n' +
+  '<!-- PROTO: el prototipo vive en Prototyping/Selector/ y el sitio en la raíz. Esta línea hace\n' +
   '     que TODA ruta relativa (los <script src> de js/ y data/, y también las que arma\n' +
   '     el JS en tiempo de ejecución: loadClubData() y I18N.load()) siga resolviendo\n' +
   '     contra la raíz. Sin esto habría que reescribir cada ruta, incluidas las que no\n' +
   '     están en el HTML. -->\n' +
-  '<base href="../">\n', '<head>');
+  '<base href="../../">\n', '<head>');
 
 replaceOnce('<title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>',
   '<title>PROTOTIPO 4 · Inicio pregunta, y los cards viven en Comparar</title>', 'title');
@@ -594,10 +594,10 @@ replaceOnce(TAG_SELECTOR[0],
   '     sin que la falta de datos reales limite el diseño. NINGÚN número que salga de\n' +
   '     acá es real, y este archivo NO lo carga ninguna otra página del sitio. Ver la\n' +
   '     cabecera de prototipo-pasos-datos-inventados.js. -->\n' +
-  '<script src="Prototyping/prototipo-pasos-datos-inventados.js?v=' + V_DUM + '"></script>\n' +
+  '<script src="Prototyping/Selector/prototipo-pasos-datos-inventados.js?v=' + V_DUM + '"></script>\n' +
   '<!-- PROTO: los dos cards + el modal de pasos, en vez del selector de columnas.\n' +
   '     Misma API pública. -->\n' +
-  '<script src="Prototyping/prototipo-cards-selector.js?v=' + V_SEL + '"></script>',
+  '<script src="Prototyping/Selector/prototipo-cards-selector.js?v=' + V_SEL + '"></script>',
   'script de js/selector.js');
 
 // ---------------------------------------------------------------------------
