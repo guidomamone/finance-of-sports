@@ -94,7 +94,12 @@ perdieron sino que se descartaron:
     su propio selector arriba) o "quiero comparar dos clubes o ligas" (lleva a una pestaña
     COMPARAR). Esa pestaña son los dos cards del C pero VACÍOS: cada uno es un botón grande, y
     apretarlo abre un MODAL con los pasos del B, sin el paso 7 ("contra qué comparar"). O sea, el C
-    por fuera y el B por dentro, detrás de una bifurcación. Nace de una crítica de Guido al C
+    por fuera y el B por dentro, detrás de una bifurcación.
+    DESDE LA VERSIÓN 158 un lado es una SUMA DE BLOQUES y no una lista de clubes con un agregador
+    único: el paso 4 bifurca en ligas / clubes / una mezcla, cada bloque lleva su año y su
+    agregador (promedio o sumatoria), y el card muestra la fórmula. Las ligas llevan temporada, con
+    la membresía de ESE año. Es el modelo que hace posible "promedio de los colombianos + suma de 6
+    brasileños contra Real Madrid", y el que contesta "¿la liga creció entre 2024 y 2025?". Nace de una crítica de Guido al C
     ("no me gusta el prototipo 3"): meterle el árbol entero a cada columna entra, pero la portada
     abre con dos árboles de cinco niveles a la vez, que es el mismo exceso de información que el B
     vino a corregir, ahora duplicado. Acá la portada abre con UNA pregunta, dos veces.

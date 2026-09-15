@@ -277,6 +277,8 @@ se reescribe, no se acumula.
   preguntando "¿ver un club o comparar dos?": el primer camino lleva a Finanzas con
   un selector propio, y el segundo a una pestaña Comparar con dos cards VACÍOS que
   se llenan desde un modal con los pasos del 2, sin el paso "contra qué comparar".
+  Desde la Versión 158 cada lado es una SUMA DE BLOQUES (una liga-temporada, un
+  puñado de clubes), cada uno con su propio agregador: promedio o sumatoria.
   Los `.html` están generados (`node Prototyping/build-prototipo-*.js`) y llevan
   `<base href="../">` porque el sitio se sirve desde la raíz.
   **Los prototipos 2, 3 y 4 cargan `prototipo-pasos-datos-inventados.js`**, que

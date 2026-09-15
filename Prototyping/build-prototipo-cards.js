@@ -338,6 +338,78 @@ const PROTO_CSS = `
   .paso-skip:hover{color:var(--azul-dark);}
   .paso-ayuda{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
 
+  /* El paso 4 son tres opciones grandes, no una grilla de filtros. */
+  .op-grid.tipo{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+  .op-grid.tipo .op{flex-direction:column;align-items:flex-start;gap:5px;padding:14px;}
+  .op-grid.tipo .op-check{display:none;}
+  .op-grid.tipo .op-icon{font-size:24px;}
+  .op-grid.tipo .op-label{font-size:15px;font-weight:800;}
+
+  /* ---------------------------------------------------------------------------
+     LOS PASOS DE ARMADO: una fila por sujeto, con su año al lado. La regla que los
+     une es que un ejercicio nunca aparece suelto — siempre cuelga de su club o de
+     su liga.
+     --------------------------------------------------------------------------- */
+  .armado{display:flex;flex-direction:column;gap:9px;max-height:390px;overflow-y:auto;}
+  .arm-fila{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:#fff;}
+  .arm-fila.total{background:#f3f7ff;border-color:#c9d8f2;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .arm-cab{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+  .arm-ico{font-size:17px;}
+  .arm-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
+             display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .arm-n{font-size:14.5px;font-weight:700;}
+  .arm-chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .arm-chip{background:#fff;border:1px solid var(--border);color:var(--text);border-radius:999px;padding:5px 12px;
+            font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+  .arm-chip:hover{border-color:var(--azul);background:#eef2f9;}
+  .arm-chip.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .arm-chip.off{opacity:.4;cursor:not-allowed;}
+  .arm-vacio{font-size:12.5px;color:var(--muted);}
+  .arm-anio{display:flex;align-items:center;gap:7px;margin-bottom:6px;}
+  .arm-anio select{flex:1;font-family:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--border);
+                   border-radius:8px;background:#fff;color:var(--text);cursor:pointer;}
+  .arm-x{background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;width:28px;height:28px;
+         font-size:15px;line-height:1;cursor:pointer;flex:0 0 auto;}
+  .arm-x:hover{border-color:var(--red);color:var(--red);}
+  .arm-mas{background:none;border:none;color:var(--azul);font-family:inherit;font-size:12.5px;cursor:pointer;
+           text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
+  .agg-fila{display:flex;align-items:center;gap:7px;margin-top:9px;flex-wrap:wrap;}
+  .agg-lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);}
+  .agg-btn{background:#fff;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 11px;
+           font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .agg-btn:hover{border-color:var(--azul);color:var(--azul);}
+  .agg-btn.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+
+  /* ---------------------------------------------------------------------------
+     EL CONSTRUCTOR DE LA MEZCLA, con forma de tabla dinámica: una fila por parte,
+     con qué es, de qué año, cómo se agrega y qué entra.
+     --------------------------------------------------------------------------- */
+  .mz-fila{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;
+           padding:9px 11px;background:#fff;flex-wrap:wrap;}
+  .mz-num{width:20px;height:20px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11px;font-weight:800;
+          display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .mz-que{display:flex;flex-direction:column;min-width:150px;flex:1;}
+  .mz-n{font-size:14px;font-weight:700;}
+  .mz-s{font-size:11.5px;color:var(--muted);}
+  .mz-anio select{font-family:inherit;font-size:12.5px;padding:6px 7px;border:1px solid var(--border);
+                  border-radius:7px;background:#fff;color:var(--text);cursor:pointer;}
+  .mz-agg{display:flex;gap:5px;}
+  .mz-entra{font-size:11.5px;color:var(--muted);font-weight:700;white-space:nowrap;}
+  .mz-x{background:none;border:none;color:var(--muted);font-size:17px;line-height:1;cursor:pointer;padding:0 3px;}
+  .mz-x:hover{color:var(--red);}
+  .mz-formula{margin:4px 0 0;font-size:12.5px;color:var(--azul);font-weight:700;}
+  .mz-add{display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;}
+  .mz-add-btn{background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:9px;padding:9px 14px;
+              font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;}
+  .mz-add-btn:hover{background:#eef2f9;}
+  .mz-panel{border:1px solid var(--azul);border-radius:10px;padding:12px;background:#f3f7ff;margin-top:4px;}
+  .mz-panel-t{margin:0 0 9px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);}
+  .mz-panel .op-grid{max-height:220px;overflow-y:auto;}
+
+  .res-warn{background:#fdf6e3;border:1px solid #f0d98a;border-radius:9px;padding:9px 11px;font-size:12.5px;
+            line-height:1.5;color:#7a5c00;margin:0 0 12px;}
+  .cd-formula{margin:0 0 10px;font-size:12px;color:var(--azul);font-weight:700;line-height:1.45;}
+
   /* El card final del modal: dice qué se va a meter en el card y lo confirma. */
   .paso.resultado .paso-n{background:var(--green);color:#fff;}
   .res-msg{font-size:15.5px;font-weight:700;margin:0 0 4px;}

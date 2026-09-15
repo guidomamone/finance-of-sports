@@ -1396,3 +1396,39 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   dejaba la página en blanco.
 - La navegación entre pestañas se hace APRETANDO el botón del nav, no repitiendo las clases
   `active` del `<script>` de index.html: reimplementarla es garantizarse dos verdades.
+
+## Versión 158: un lado deja de tener un agregador y pasa a ser una suma de bloques
+
+- **EL PASO 4 DEL PROTOTIPO 4 ES AHORA UNA BIFURCACIÓN DE TRES**: 🏆 Ligas enteras, 👕 Clubes, 🧩 Una
+  mezcla. De lo que se elija ahí dependen los pasos 5 y 6, así que la lista de pasos dejó de ser una
+  constante y la arma `pasosActivos()`.
+- **UN LADO YA NO TIENE UN AGREGADOR: LO TIENE CADA PARTE.** Pedido de Guido, con un caso concreto:
+  "promedio de clubes colombianos + sumatoria de 6 clubes brasileros" contra Real Madrid. El modelo
+  nuevo es el de una tabla dinámica:
+  `LADO = bloque + bloque + …`, y cada bloque es `(qué cosas) × (qué año) × (cómo se agrega)`.
+  La mezcla es el CASO GENERAL y las otras dos opciones son atajos que producen un lado de un
+  bloque: un solo motor, tres puertas de entrada.
+- **CONSECUENCIA VISIBLE: se fue el toggle Promedio / Todo sumado del card.** El agregador vive en
+  el bloque, y el card muestra la fórmula en castellano (`promedio(Primera A 2025) + suma(6 clubes)`).
+- **LAS LIGAS AHORA TIENEN TEMPORADA**, que era lo que arrancó todo esto ("comparar la liga de 2025
+  contra la de 2024 para ver si el total creció"). El paso 6 de la rama Ligas es una fila por liga
+  con sus temporadas como chips, y cada chip dice CUÁNTOS EQUIPOS tenía la liga ese año: sale de
+  `clubsOfLeagueYear()`, la membresía por año, no de quiénes están cargados hoy. Primera División
+  2025 son 10 equipos y 2024 son 11, y sin ese dato "la liga creció" mezcla plata con aritmética.
+- **ATAJO PARA LA PREGUNTA QUE LO MOTIVÓ**: marcar dos temporadas de la misma liga las SUMA (un lado
+  se mide como uno solo), así que el card final ofrece "2025 acá y 2024 en el otro card", que llena
+  los dos cards de una y deja la comparación lista.
+- **EL PASO 6 DE LA RAMA CLUBES SE AGRUPA POR CLUB** (pedido de Guido: "si no, el usuario pierde
+  noción de quién son los balances"): "Boca Juniors" con el desplegable de SUS balances, "+ Otro
+  ejercicio de Boca Juniors" debajo, y el agregador del conjunto una sola vez al final. El ejercicio
+  que agrega ese botón arranca en el primero que ese club todavía no tenga en el lado.
+- **EL CONSTRUCTOR DE LA MEZCLA** tiene forma de tabla dinámica: una fila por parte con qué es, de
+  qué año, cómo se agrega y cuántos ejercicios entran, la fórmula abajo, y dos botones para sumar
+  partes. La columna dice "qué entra" y no "cuánto aporta" a propósito: el aporte en plata obliga a
+  bajar el `data/<club>-data.js` de cada club del bloque, que es justo lo que el selector no hace
+  mientras elegís.
+- Un lado puede sumar un promedio con una sumatoria. Se avisa en el card final y abajo de la tabla,
+  pero NO se prohíbe: decisión de Guido, "suma peras con manzanas pero no es mi tema, yo tengo que
+  dar la funcionalidad".
+- "X de Y lo informan" en la tabla de resultados ahora cuenta PARTES del lado, no ejercicios: con un
+  agregador por bloque, "2 de 8" mezclaba dos unidades en la misma frase.
