@@ -1227,3 +1227,36 @@ Tres pedidos de Guido, todos dentro de `prototipo-pasos.html`:
   inventados, así que hay que volver a elegirlo. Además `finanzasYears` (la lista blanca opcional
   que usa Boca) hacía que los ejercicios aparecieran en el selector y no adentro de Finanzas.
 - El sitio no se tocó: `index.html`, `js/` y `data/` intactos, `node tools/audit.js` en 0 P0, 0 P1.
+
+## Versión 153: el paso 7 se agrupa por tipo de rival, y el paso 5 deja de decidir por vos
+
+Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
+
+- **"Deseleccionar todos"** en CUALQUIER paso que tenga algo marcado (destildar de a uno cuando
+  marcaste once era un castigo). "Elegir todos" sigue solo donde significa algo: el paso del club.
+- **El paso 5 ya no decide por el visitante.** Con 2 o más clubes marcados, dos botones que nombran
+  las dos cosas distintas que puede querer: "Comparar entre los N seleccionados" (uno al lado del
+  otro) o "Armar un grupo con los N" (sumados, como un lado). Antes lo decidía el sistema por la
+  cantidad —hasta 5 sueltos, de 6 para arriba sumados— y se enteraba después.
+- **EL MODELO DE "LADO" CAMBIÓ**: era una lista de clubes con un año; ahora es una lista de pares
+  (club, ejercicio) con un modo, `suma` o `promedio`. Con clubes sueltos no entraba el escenario que
+  pidió Guido: "Boca 24/25 contra el promedio de sus últimos 10 años" es un lado de UN club y DIEZ
+  ejercicios. Con pares, una liga entera, un club en diez años y un club solo son el mismo objeto.
+- **El paso 7 pasó de una grilla plana a un menú por TIPO de rival**, cada uno desplegable y de
+  selección múltiple: "Otro balance de X", "Un presupuesto de X", "Promedio de…", "Sumatoria de…",
+  "Otro club". Mezclados en una grilla, "Balance 2023/24" y "el promedio de sus últimos 10" parecían
+  la misma clase de cosa. El promedio y la suma se dibujan en el card de grupos, porque son
+  conjuntos y el comparador del sitio compara club-ejercicios.
+- **El promedio divide por los ejercicios que INFORMAN cada indicador**, no por el total de la
+  lista: promediar 8 deudas entre 11 sujetos sería inventar tres ceros que nadie publicó.
+- **COPY**: los botones del paso 7 dicen el nombre de lo que hacen ("Comparar Boca Juniors contra lo
+  marcado acá (2)" / "Ver Boca Juniors sin comparar"). Antes decían "Comparar con eso" y "Continuar
+  solo con lo que elegí", y Guido no podía saber qué era "eso" ni cuál de los dos era su selección.
+- **DOS SALTOS QUE NO CORRESPONDÍAN**: al comparar, la página saltaba al tope y a la pestaña
+  Finanzas. Los dos salían de `goToFinanzasYear()`, que hace tres cosas a la vez (pone el año, va a
+  Finanzas, sube al tope). Ahora se llama SOLO cuando el pedido es ver la ficha de un ejercicio
+  (un club, un año, nada contra qué compararlo); para todo lo demás se toca el `<select>` del año,
+  que es lo único que la comparación necesita.
+- BUG PROPIO ENCONTRADO Y CORREGIDO: `ladosVs` se usaba tres líneas antes de declararse, así que
+  `var` lo dejaba en `undefined` y la comparación contra un promedio no llegaba a dibujarse nunca.
+  Y `comoGrupo` se preguntaba DESPUÉS de meter el lado en la lista, con lo cual siempre daba true.

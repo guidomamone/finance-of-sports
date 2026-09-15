@@ -190,10 +190,30 @@ const PROTO_CSS = `
 
   /* "Elegir todos": el atajo que arma un grupo entero (una liga, un país) sin
      tildar 11 casillas. Va arriba de la grilla, no perdido al final. */
-  .paso-todos{margin:0 0 10px;background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:8px;
+  .paso-todos-fila{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px;}
+  .paso-todos{background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:8px;
               padding:7px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
   .paso-todos:hover{background:#eef2f9;}
   .paso-todos.on{background:var(--azul);color:#fff;border-style:solid;}
+  .paso-nada{background:#fff;border:1px dashed var(--border);color:var(--muted);border-radius:8px;
+             padding:7px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+  .paso-nada:hover{border-color:var(--red);color:var(--red);}
+
+  /* Los menús del paso 7: un desplegable por TIPO de rival, con selección múltiple
+     adentro. Agrupados porque "un balance" y "el promedio de diez" no son la misma
+     clase de cosa y en una grilla plana había que leer cada tarjeta para saberlo. */
+  .vs-menu{border:1px solid var(--border);border-radius:9px;margin-bottom:8px;background:#fff;}
+  .vs-menu.on{border-color:var(--azul);}
+  .vs-menu summary{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;list-style:none;}
+  .vs-menu summary::-webkit-details-marker{display:none;}
+  .vs-menu summary:after{content:'⌄';margin-left:auto;color:var(--muted);font-size:15px;}
+  .vs-menu[open] summary:after{content:'⌃';}
+  .vs-t{font-size:14px;font-weight:700;}
+  .vs-sub{font-size:12px;color:var(--muted);}
+  .vs-n{font-size:11.5px;font-weight:800;color:var(--azul);background:#eef2f9;border-radius:5px;padding:2px 7px;}
+  .vs-body{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;padding:0 13px 13px;}
+  .paso-ok.alt{background:#fff;color:var(--azul);border-color:var(--azul);}
+  .paso-ok.alt:hover{background:#eef2f9;}
 
   /* ---------------------------------------------------------------------------
      EL CARD DE GRUPOS. Una columna por lado, una fila por indicador, el total de
