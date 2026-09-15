@@ -930,9 +930,34 @@ window.CLUB_SELECTOR = (function(){
     lados.push(lado);
     ladosVs.forEach(function(l){ lados.push(l); });
 
+    var principales = st.year.sel.map(Number).sort(function(a, b){ return b - a; });
+    // "Ficha" = un club, un ejercicio y nada contra qué compararlo. Es el único caso
+    // en el que corresponde llevar al visitante a la pestaña Finanzas.
+    var soloFicha = finales.length === 1 && principales.length === 1
+                 && !aniosExtra.length && !vs.length && !rivales.length;
+
     Promise.resolve(api.pickClub(finales[0])).then(function(){
       try { localStorage.setItem(LS_CLUB, finales[0]); } catch(e){}
       renderButton();
+      // EL AÑO DEL CLUB ACTIVO SE MUEVE PRIMERO, ANTES DE SUMAR NINGÚN RIVAL. Bug
+      // real reportado por Guido ("un club contra su pasado y no me aparecen los
+      // números"): "+ Otro año" elige el ejercicio libre más nuevo, y si el activo
+      // todavía estaba en su año por default, elegía justo el que el visitante había
+      // pedido como principal. Al moverlo después, los dos sujetos quedaban en el
+      // mismo ejercicio y la comparación se descarta sola por duplicada
+      // (`onActiveChanged` saca el sujeto que repite al activo): la bandeja quedaba
+      // vacía y no se veía ninguna comparación.
+      if(principales.length){
+        if(soloFicha && window.goToFinanzasYear){
+          window.goToFinanzasYear(finales[0], principales[0]);
+        } else {
+          var selAnio = $('anioSelect');
+          if(selAnio && selAnio.value !== String(principales[0])){
+            selAnio.value = String(principales[0]);
+            selAnio.dispatchEvent(new Event('change', { bubbles:true }));
+          }
+        }
+      }
       var cmp = window.CLUB_COMPARE;
       var cadena = Promise.resolve();
       if(cmp){
@@ -963,13 +988,8 @@ window.CLUB_SELECTOR = (function(){
         // (o `null`, que significa "dejale al club el suyo por default"), después los
         // que sumó el paso 7. `null` NO es lo mismo que "el más reciente": es "no
         // toques nada", y por eso viaja en la lista en vez de resolverse acá.
-        var principales = st.year.sel.map(Number).sort(function(a, b){ return b - a; });
         var lista = (principales.length ? principales : [null]).concat(aniosExtra);
-        // "Ficha" = un club, un ejercicio y nada contra qué compararlo. Es el único
-        // caso en el que tiene sentido llevar al visitante a la pestaña Finanzas.
-        var soloFicha = finales.length === 1 && principales.length === 1
-                     && !aniosExtra.length && !vs.length && !rivales.length;
-        aplicarAnios(finales, lista, principales.length > 0, soloFicha);
+        aplicarAnios(finales, lista);
       }
       render();
       if(comoGrupo){
@@ -979,7 +999,11 @@ window.CLUB_SELECTOR = (function(){
         if(caja){ caja.hidden = false; caja.innerHTML = '<p class="gc-cargando">Sumando los clubes del grupo…</p>'; }
         Promise.all(lados.map(cargarLado)).then(function(){ renderGrupos(); });
       } else {
-        renderGrupos();
+        // Sin grupos en juego el card de totales no va: mostrar "el grupo, sumado"
+        // con un solo club al lado de una comparación normal era ruido que competía
+        // con el resultado de verdad.
+        var caja2 = $('gruposCard');
+        if(caja2){ caja2.hidden = true; caja2.innerHTML = ''; }
       }
       if(seguirConOtroGrupo) nuevoLado();
       // La página NO se mueve sola (lo levantó Guido: "de repente scrollea y no veo
@@ -993,7 +1017,7 @@ window.CLUB_SELECTOR = (function(){
   //   - un club y varios años   -> ese club contra sí mismo, un sujeto por año;
   //   - varios clubes y un año  -> cada uno en ese año, y el que no lo tenga se
   //                                queda en el suyo (se avisa en el paso).
-  function aplicarAnios(finales, anios, moverActivo, soloFicha){
+  function aplicarAnios(finales, anios){
     anios = (anios || []).filter(function(y, i){ return y != null || i === 0; });
     if(!anios.length) return;
     var cmp = window.CLUB_COMPARE;
@@ -1007,23 +1031,8 @@ window.CLUB_SELECTOR = (function(){
         if(btn) btn.click();
       }
     }
-    // `goToFinanzasYear()` es del sitio y hace TRES cosas: pone el año, salta a la
-    // pestaña Finanzas y sube la página al tope. Las dos últimas están bien cuando
-    // el visitante pidió ver UN ejercicio, y están mal cuando pidió una comparación:
-    // lo sacan de donde estaba mirando (las dos cosas las reportó Guido). Así que se
-    // llama SOLO en el caso de ficha, y para lo demás se toca el <select> del año,
-    // que es lo único que la comparación necesita.
-    if(moverActivo && anios[0] != null){
-      if(soloFicha && window.goToFinanzasYear){
-        window.goToFinanzasYear(finales[0], anios[0]);
-      } else {
-        var sel = $('anioSelect');
-        if(sel && sel.value !== String(anios[0])){
-          sel.value = String(anios[0]);
-          sel.dispatchEvent(new Event('change', { bubbles:true }));
-        }
-      }
-    }
+    // El año del club ACTIVO ya se movió antes de sumar sujetos (ver el comentario en
+    // aplicar()). Acá solo se acomodan los chips de los demás.
     // La bandeja de comparación se vuelve a dibujar sola después de cambiar el año
     // del club activo, y ese redibujo es ASÍNCRONO (adentro carga el data file del
     // club). Si los chips se tocan una sola vez, el redibujo los pisa: pasó de

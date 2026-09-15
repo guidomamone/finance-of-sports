@@ -18,9 +18,9 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 - DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152). El proyecto existe porque sus
   números son verificables, así que un archivo de datos de mentira es lo más peligroso que se le
   puede agregar. Se permite UNO, con estas 5 condiciones, y el día que se rompa cualquiera hay que
-  borrarlo: (1) NO vive en `data/` — hoy es `prototipo-pasos-datos-inventados.js`, en la raíz, con
-  "inventados" en el nombre; (2) lo carga UNA sola página que no está linkeada desde ningún lado
-  (`prototipo-pasos.html`), nunca `index.html`; (3) ninguna herramienta lo ve: `tools/audit.js` y
+  borrarlo: (1) NO vive en `data/` — es `Prototyping/prototipo-pasos-datos-inventados.js`, en la carpeta de
+  prototipos, con "inventados" en el nombre; (2) lo cargan SOLO los prototipos 2 y 3, que no están
+  linkeados desde ningún lado, nunca `index.html`; (3) ninguna herramienta lo ve: `tools/audit.js` y
   `auditAll()` leen `data/*.js`, así que no puede ensuciar una verificación; (4) cada ejercicio
   inventado se declara solo — `inventado:true` en su meta, una entrada en `sources{}` con
   `type:'placeholder'` (que hace que el propio sitio muestre su aviso de "número inventado, no es

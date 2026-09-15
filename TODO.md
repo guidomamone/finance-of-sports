@@ -48,15 +48,16 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-28. DECIDIR QUÉ SELECTOR VA AL SITIO. Hay DOS prototipos andando con los datos reales, y la
-    decisión es entre ellos (o entre partes de cada uno), no un sí/no:
+28. DECIDIR QUÉ SELECTOR VA AL SITIO. Hay TRES prototipos andando con los datos reales, todos en
+    `Prototyping/` (que tiene su propio README con cómo abrirlos y regenerarlos). Hay que elegir
+    entre ellos, o entre partes de cada uno; no es un sí/no:
 
-    **A. `prototipo-inicio-selector.html`** — el selector de columnas de hoy, metido en la
+    **A. `Prototyping/prototipo-inicio-selector.html`** — el selector de columnas de hoy, metido en la
     portada. Muestra la forma de los datos de una sola mirada (que hay 6 países, que Japón tiene
     10 clubes) sin tocar nada, y deja volver un nivel sin perder el resto. Su costo es el que
     levantó Guido: ~67 opciones y 5 decisiones simultáneas en la primera pantalla.
 
-    **B. `prototipo-pasos.html`** (Versiones 148-150) — un card por paso, apilados, una decisión
+    **B. `Prototyping/prototipo-pasos.html`** (Versiones 148-153) — un card por paso, apilados, una decisión
     por vez, con el card resuelto encogido a una línea. Cada paso es multi-selección (casillas) y
     cada paso se puede ignorar con "Elegir más tarde"; si se ignoran todos, el sitio elige y lo
     dice (Boca contra River); si queda un solo club, el card final ofrece contra quién compararlo.
@@ -70,6 +71,20 @@ perdieron sino que se descartaron:
     contesta una. El prototipo suma llamando a `computeYearGeneric()` club por club, con las tres
     salvedades a la vista (clubes sin ese ejercicio, indicadores que la fuente no informa,
     presupuestos mezclados con balances).
+
+    **C. `Prototyping/prototipo-duelo.html`** (Versión 154) — dos columnas, Equipo A contra Equipo
+    B, con un toggle arriba ("quiero comparar dos" / "solo quiero ver uno"). Cada columna puede ser
+    un club o una liga entera, y una liga se mide por promedio por club o por total. Nace de una
+    crítica de Guido al B: comparar obligaba a pasar por el selector dos veces, y eso generaba
+    casuística que nadie quería contestar. Con las dos columnas a la vista, comparar deja de ser un
+    estado en el que entrás y salís. Es el más nuevo y el menos probado.
+
+    PENDIENTES DEL PROTOTIPO B, de la última sesión de pruebas de Guido, sin implementar porque
+    pidió congelarlo y pasar al C: el promedio y la sumatoria deberían dejar ELEGIR qué años entran
+    (hoy toman todos); el botón "Compararlo contra un grupo que arme yo" debería llamarse "otra
+    cosa" y avisar que te lleva arriba a elegir; el paso 7 reaparece después de armar el rival y se
+    lee como un loop; y el paso 6 debería ofrecer promedio/sumatoria para el que no quiere comparar
+    sino ver ese dato. El prototipo C evita los dos del medio POR DISEÑO, no los resuelve.
 
     Lo que sigue describe al prototipo A, que es el que tiene más iteraciones encima:
     (a) El selector desplegado EN la página en vez de atrás de un click, y que SE QUEDA ahí
@@ -89,7 +104,7 @@ perdieron sino que se descartaron:
     - HECHO en la Versión 146, ya está en el sitio: `data/club-index.js` lista los ejercicios de
       cada club (`yrs`), así el dropdown no necesita bajar ningún `data/<club>-data.js`. El
       prototipo ya lee de ahí y su tabla propia se borró.
-    - Los 3 cambios a `js/selector.js` están en `prototipo-inicio-selector.js`: diffealo contra
+    - Los 3 cambios a `js/selector.js` están en `Prototyping/prototipo-inicio-selector.js`: diffealo contra
       `js/selector.js` y tenés el parche. Los textos nuevos (los de la portada y los 2 del
       select) pasan por `t()` con su clave en `data/lang/`, como pide `CONVENCIONES.md`.
     - Subir `ASSET_V` en los dos lugares (la constante y los tags).
@@ -106,18 +121,18 @@ perdieron sino que se descartaron:
     si esconder los ejercicios adentro del dropdown "Ver" no los hace demasiado invisibles, ahora
     que el subtítulo de la fila ya no dice cuántos hay.
 
-30. BORRAR LOS DATOS INVENTADOS cuando se decida el punto 28. `prototipo-pasos-datos-inventados.js`
+30. BORRAR LOS DATOS INVENTADOS cuando se decida el punto 28. `Prototyping/prototipo-pasos-datos-inventados.js`
     (Versión 152) rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
     Brasil, con ascensos y descensos inventados, para poder probar la interfaz. Existe con 5
     condiciones escritas en `CONVENCIONES.md`, y la última es que NUNCA se copia a `data/`: si
     mañana uno de esos clubes publica su balance de 2019, se carga leyendo el documento, no
     promoviendo este relleno. El día que el selector se apruebe (o se descarte), este archivo y su
-    `<script>` en `tools/build-prototipo-pasos.js` se borran en el mismo movimiento. Mientras
-    exista, cualquier captura de `prototipo-pasos.html` tiene números falsos: la franja roja de
+    `<script>` en los generadores de `Prototyping/` se borran en el mismo movimiento. Mientras
+    exista, cualquier captura de los prototipos 2 y 3 tiene números falsos: la franja roja de
     arriba lo dice, pero conviene no pegar esas capturas en ningún lado sin la franja.
 
 29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
-    SOLO en la copia del prototipo (`prototipo-inicio-selector.js`, patch (d) del generador). En
+    SOLO en la copia del prototipo (`Prototyping/prototipo-inicio-selector.js`, patch (d) del generador). En
     `renderCols()` (js/selector.js:~290), la columna LIGA lista `Object.keys(LEAGUES)` filtrado
     solo por DEPORTE cuando no hay país elegido, así que al elegir una región siguen apareciendo
     las ligas de los otros continentes: elegís Europa › España, volvés a cambiar la región a Asia,

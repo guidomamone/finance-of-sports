@@ -25,20 +25,24 @@ consulta puntual, nunca lectura de corrido.
 
 <!--
   ============================ ESTO NO ES EL SITIO ============================
-  PROTOTIPO 2 del selector de club: un paso por card, uno abajo del otro.
-  GENERADO por `node tools/build-prototipo-pasos.js` a partir de index.html.
-  NO editar a mano: se sobrescribe. Los cambios van en el generador, y la
-  lógica del selector en `prototipo-pasos-selector.js`.
-  El prototipo 1 (selector de columnas en la portada) sigue en
-  `prototipo-inicio-selector.html`: son dos visualizaciones para comparar.
-  Los datos y los clubes son los REALES (mismos js/ y data/).
+  Prototipo del Inicio con el selector de clubes en la página.
+  GENERADO por `node tools/build-prototipo-inicio.js` a partir de index.html.
+  NO editar a mano: se sobrescribe. Los cambios van en el generador.
+  Todo lo que agrega el prototipo está marcado con PROTO en el HTML, el CSS y el JS.
+  Los datos, los clubes y el motor del selector son los REALES (mismos js/ y data/).
   =============================================================================
 -->
 <html lang="es">
 <head>
+<!-- PROTO: el prototipo vive en Prototyping/ y el sitio en la raíz. Esta línea hace
+     que TODA ruta relativa (los <script src> de js/ y data/, y también las que arma
+     el JS en tiempo de ejecución: loadClubData() y I18N.load()) siga resolviendo
+     contra la raíz. Sin esto habría que reescribir cada ruta, incluidas las que no
+     están en el HTML. -->
+<base href="../">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PROTOTIPO 2 · Selector paso a paso</title>
+<title>PROTOTIPO · Inicio con el selector en la página</title>
 <style>
   :root{
     --azul:#0a2b5c;
@@ -617,190 +621,102 @@ consulta puntual, nunca lectura de corrido.
 
 <!-- ======================== PROTO: estilos del prototipo ======================== -->
 <style>
-  .proto-flag{position:sticky;top:0;z-index:200;background:#1b7a3d;color:#fff;font-size:12px;font-weight:700;
+  /* Franja permanente: ninguna captura de esto puede pasar por el sitio real. */
+  .proto-flag{position:sticky;top:0;z-index:200;background:#b5372b;color:#fff;font-size:12px;font-weight:700;
               letter-spacing:.04em;text-align:center;padding:5px 10px;}
-  /* Con datos inventados en la página, la franja deja de ser verde: que nadie
-     confunda una captura de esto con una del sitio. */
-  .proto-flag-falso{background:#b5372b;}
-  .proto-flag-falso b{background:#fff;color:#b5372b;padding:1px 7px;border-radius:5px;}
-  /* La marca de cada ejercicio inventado, donde el prototipo lo ofrece. */
-  .op-falso{font-size:10px;font-weight:800;letter-spacing:.05em;color:#b5372b;background:#fdecea;
-            border:1px solid #f3b8b1;border-radius:4px;padding:1px 5px;margin-left:7px;}
   .proto-flag span{font-weight:400;opacity:.85;}
+  /* Volver a la primera visita. Vive en la franja del prototipo y no en el sitio
+     porque no es una feature: es el banco de pruebas. Lo que hace es borrar lo que
+     el sitio guarda en el navegador de cada visitante (el club elegido, los
+     recientes, el cartelito del selector) y recargar. */
   .proto-reset{margin-left:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.55);
                color:#fff;border-radius:6px;padding:2px 9px;font-size:11px;font-weight:700;
                font-family:inherit;cursor:pointer;vertical-align:1px;}
-  .proto-reset:hover{background:#fff;color:#1b7a3d;}
-
-  /* El panel de columnas sigue en el DOM porque js/comparar-clubes.js le pregunta
-     por varios ids, pero en esta versión no se muestra nunca. */
-  .sel-panel, .sel-backdrop, .coach{display:none !important;}
+  .proto-reset:hover{background:#fff;color:#b5372b;}
+  .proto-hidden{display:none !important;}
 
   /* ---------------------------------------------------------------------------
-     EL BLOQUE DE PASOS. Vive en la página (no es un modal) y se queda cuando ya
-     hay club elegido, plegado a una línea con el camino.
+     LA PORTADA. Dos modos del MISMO bloque, no dos pantallas: en frío manda el
+     selector (con el título y la bajada arriba); con un club elegido el bloque se
+     encoge, el contenido del club pasa a ser lo principal, y el selector se queda
+     en la página para cambiar de club sin ir a buscar nada (.warm).
      --------------------------------------------------------------------------- */
-  .pasos-block{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;
-               border-radius:14px;padding:26px 24px 22px;margin-bottom:26px;}
-  .pasos-block h1{font-size:27px;margin:0 0 6px;color:#fff;}
-  .pasos-block .lead{color:#bfcde6;font-size:14.5px;margin:0 0 20px;max-width:820px;line-height:1.55;}
-  .pasos-block.con-club h1, .pasos-block.con-club .lead{display:none;}
-  .pasos-block.con-club{padding:12px 14px;margin-bottom:18px;}
+  .hero{padding:26px 26px 22px;}
+  .hero h1{margin-bottom:6px;}
+  .hero.warm .hero-copy,
+  .hero.warm .hero-quick,
+  .hero.warm .hero-foot{display:none;}
+  .hero.warm{padding:12px 14px;margin-bottom:18px;}
 
-  /* La barra de arriba: el camino elegido + minimizar. Es el "you are here" de
-     Krug, y por eso el camino se lee entero, no abreviado. */
-  .pasos-bar{display:none;align-items:center;gap:12px;}
-  .pasos-block.con-club .pasos-bar{display:flex;}
-  .pasos-resumen{flex:1;min-width:0;font-size:13.5px;font-weight:700;color:#fff;background:none;border:none;
-                 text-align:left;font-family:inherit;cursor:pointer;padding:4px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-  .pasos-resumen:hover{color:var(--oro);}
-  .pasos-toggle{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:8px;
-                padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;}
-  .pasos-toggle:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
-  .pasos-block.plegado .pasos-busca, .pasos-block.plegado #pasosWrap, .pasos-block.plegado #pasosResultados{display:none;}
-  .pasos-block.con-club .pasos-busca{margin-top:12px;}
+  /* La barra con el botón Minimizar. Solo existe con un club elegido: en frío no
+     hay nada abajo del selector que minimizarlo te deje ver. */
+  .hero-sel-bar{display:none;align-items:center;gap:10px;margin-bottom:9px;}
+  .hero.warm .hero-sel-bar{display:flex;}
+  .hs-title{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#8fa3c4;font-weight:800;flex:1;}
+  .hs-toggle{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:8px;
+             padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;}
+  .hs-toggle:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
+  .hero.min .hero-sel-bar{margin-bottom:0;}
 
-  /* El atajo de una sola línea, para el que ya sabe qué club quiere. */
-  .pasos-busca{display:flex;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:4px 4px 4px 14px;max-width:560px;margin-bottom:18px;}
-  .pasos-busca input{flex:1;border:none;outline:none;font-size:15px;padding:10px 0;background:none;font-family:inherit;color:var(--text);}
-  .pasos-busca .lupa{color:var(--muted);font-size:15px;}
+  /* El panel es EL MISMO nodo que el modal (js/selector.js lo sigue manejando por
+     id): el prototipo lo muda adentro de la portada y ya no lo saca nunca, así que
+     esto solo apaga el posicionamiento fijo. El backdrop no corre más: no hay modal
+     que oscurecer. */
+  .sel-panel.embedded{position:static;transform:none;width:auto;max-height:none;height:min(560px,68vh);
+                      box-shadow:0 10px 30px rgba(7,29,63,.22);display:flex !important;}
+  .sel-backdrop{display:none !important;}
+  /* Adentro de la página no hay a dónde "cerrar": la salida es Minimizar. Y "Ver la
+     portada con todos los clubes" tampoco tiene sentido: la portada no es otra
+     pantalla, es esta misma, y los 41 clubes están a la vista mientras lo leés. */
+  .sel-panel.embedded .sel-close,
+  .sel-panel.embedded .foot-close,
+  .sel-panel.embedded .kbd,
+  .sel-panel.embedded .sel-home{display:none;}
+  .hero.min .sel-panel.embedded{display:none !important;}
+
+  /* Punto 3 de Guido: la bajada cortaba a los 600px (la regla .hero p de index.html)
+     y metía un salto de línea en la mitad de una frase, con medio card vacío al lado. */
+  .hero p{max-width:820px;}
 
   /* ---------------------------------------------------------------------------
-     UN CARD POR PASO. Tres estados: resuelto (una línea con lo elegido), actual
-     (abierto, con las opciones) y pendiente (apenas visible, para que se vea
-     cuántos pasos faltan sin competir por la atención).
+     LA FILA DE BÚSQUEDA. El input ocupaba el ancho entero y al lado quedaba aire;
+     ahí van ahora los 3 clubes de acceso rápido (punto 12 de Guido).
      --------------------------------------------------------------------------- */
-  /* color explícito: el bloque de afuera es azul con texto blanco, y sin esto
-     cualquier texto del card que no traiga color propio nace blanco sobre blanco
-     (pasó de verdad con el mensaje del card final). */
-  .paso{background:var(--card);color:var(--text);border-radius:12px;margin-bottom:10px;overflow:hidden;
-        border:1px solid transparent;}
-  .paso.pendiente{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff;}
-  .paso.ahora{border-color:var(--oro);box-shadow:0 8px 24px rgba(7,29,63,.25);}
-  .paso-head{display:flex;align-items:center;gap:11px;padding:11px 14px;}
-  .paso-n{width:22px;height:22px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11.5px;
-          font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
-  .paso.ahora .paso-n{background:var(--oro);color:var(--azul-dark);}
-  .paso.pendiente .paso-n{background:rgba(255,255,255,.12);color:#a8b8d4;}
-  .paso-ht{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1;}
-  .paso-t{font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted);}
-  .paso.pendiente .paso-t{color:#8fa3c4;}
-  .paso-v{font-size:15px;font-weight:700;color:var(--text);}
-  .paso-change{background:none;border:1px solid var(--border);color:var(--azul);border-radius:7px;
-               padding:4px 10px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;}
-  .paso-change:hover{border-color:var(--azul);background:#eef2f9;}
-  .paso-body{padding:2px 14px 14px;}
-  .paso-vacio{color:var(--muted);font-size:13.5px;margin:6px 0;}
-
-  /* Las opciones. Grilla que se acomoda sola: en desktop entran 3 o 4 por fila,
-     en un teléfono queda una columna, sin una sola regla de media query. */
-  .op-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
-  .op-grid.clubes{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));max-height:340px;overflow-y:auto;}
-  .op-grid.anios{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));}
-  .op{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:#fff;border:1px solid var(--border);
-      border-radius:9px;padding:10px 12px;font-family:inherit;font-size:14px;cursor:pointer;color:var(--text);}
-  .op:hover{border-color:var(--azul);background:#eef2f9;}
-  .op.off{opacity:.45;cursor:not-allowed;}
-  .op.off:hover{border-color:var(--border);background:#fff;}
-  /* La casilla. Cada paso es multi-selección (pedido de Guido: "el usuario tiene
-     que poder elegir dos o más opciones en cada paso"), y una casilla lo dice sin
-     tener que explicarlo: un botón que se pinta al tocarlo se lee como un radio. */
-  .op-check{width:17px;height:17px;border-radius:5px;border:1.5px solid var(--border);flex:0 0 auto;
-            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;background:#fff;}
-  .op.on{border-color:var(--azul);background:#eef2f9;}
-  .op.on .op-check{background:var(--azul);border-color:var(--azul);}
-  .op.off .op-check{opacity:.5;}
-  .op-icon{font-size:17px;flex:0 0 auto;}
-  .op-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
-            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
-  .op-txt{display:flex;flex-direction:column;min-width:0;flex:1;}
-  .op-label{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .op-sub{font-size:11.5px;color:var(--muted);}
-  .op-meta{font-size:11.5px;color:var(--muted);white-space:nowrap;}
-  /* El pie de cada paso: confirmar, o decidir después. "Elegir más tarde" está en
-     los seis pasos, y por eso ninguno dice "opcional": todos lo son. */
-  .paso-pie{display:flex;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;}
-  .paso-ok{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:8px;
-           padding:9px 16px;font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
-  .paso-ok:hover{background:var(--azul-dark);}
-  .paso-ok.off{background:#eef2f9;color:var(--muted);border-color:var(--border);cursor:not-allowed;}
-  .paso-skip{background:none;border:none;color:var(--azul);font-family:inherit;font-size:13px;
-             cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
-  .paso-skip:hover{color:var(--azul-dark);}
-  .paso-ayuda{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
-
-  /* El card final. Cuando quedó un solo club NO felicita a nadie: la gracia del
-     sitio es comparar, así que ofrece contra quién. */
-  .paso.resultado .paso-n{background:var(--green);color:#fff;}
-  .res-msg{font-size:15.5px;font-weight:700;margin:0 0 4px;}
-  .res-sub{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 12px;max-width:620px;}
-  .op-grid.sugeridos{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-bottom:10px;}
-  .paso.saltado .paso-v{color:var(--muted);font-weight:500;font-style:italic;}
-
-  #pasosResultados{background:var(--card);border-radius:12px;padding:12px;}
-
-  /* "Elegir todos": el atajo que arma un grupo entero (una liga, un país) sin
-     tildar 11 casillas. Va arriba de la grilla, no perdido al final. */
-  .paso-todos-fila{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px;}
-  .paso-todos{background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:8px;
-              padding:7px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
-  .paso-todos:hover{background:#eef2f9;}
-  .paso-todos.on{background:var(--azul);color:#fff;border-style:solid;}
-  .paso-nada{background:#fff;border:1px dashed var(--border);color:var(--muted);border-radius:8px;
-             padding:7px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
-  .paso-nada:hover{border-color:var(--red);color:var(--red);}
-
-  /* Los menús del paso 7: un desplegable por TIPO de rival, con selección múltiple
-     adentro. Agrupados porque "un balance" y "el promedio de diez" no son la misma
-     clase de cosa y en una grilla plana había que leer cada tarjeta para saberlo. */
-  .vs-menu{border:1px solid var(--border);border-radius:9px;margin-bottom:8px;background:#fff;}
-  .vs-menu.on{border-color:var(--azul);}
-  .vs-menu summary{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;list-style:none;}
-  .vs-menu summary::-webkit-details-marker{display:none;}
-  .vs-menu summary:after{content:'⌄';margin-left:auto;color:var(--muted);font-size:15px;}
-  .vs-menu[open] summary:after{content:'⌃';}
-  .vs-t{font-size:14px;font-weight:700;}
-  .vs-sub{font-size:12px;color:var(--muted);}
-  .vs-n{font-size:11.5px;font-weight:800;color:var(--azul);background:#eef2f9;border-radius:5px;padding:2px 7px;}
-  .vs-body{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;padding:0 13px 13px;}
-  .paso-ok.alt{background:#fff;color:var(--azul);border-color:var(--azul);}
-  .paso-ok.alt:hover{background:#eef2f9;}
+  .sel-panel.embedded .sel-search{flex-wrap:wrap;}
+  .sel-panel.embedded .sel-search input{flex:1 1 380px;}
+  .sel-search .hero-quick{margin:0;display:flex;align-items:center;gap:9px;flex:0 1 auto;}
+  .sel-search .hq-label{margin:0;color:var(--muted);font-size:10.5px;white-space:nowrap;}
+  /* Los chips estaban pensados para el fondo azul del hero; acá viven sobre blanco. */
+  .sel-search .hq-club{background:#f4f6fa;border-color:var(--border);color:var(--text);padding:5px 10px 5px 5px;font-size:12.5px;}
+  .sel-search .hq-club:hover{background:#eef2f9;border-color:var(--azul);}
+  .sel-search .hq-club .hq-sub{color:var(--muted);}
+  .sel-search .hq-club .crest{border-color:rgba(0,0,0,.12);}
 
   /* ---------------------------------------------------------------------------
-     EL CARD DE GRUPOS. Una columna por lado, una fila por indicador, el total de
-     cada lado y cuántos clubes lo sostienen. La barra es relativa al lado más
-     grande de ESA fila, nunca entre indicadores distintos.
+     LA FILA DE CLUB. Un solo control (punto 13): el dropdown "Ver" junta el
+     ejercicio y las dos acciones, así la fila vuelve a ser de una línea.
      --------------------------------------------------------------------------- */
-  .grupos-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:26px;}
-  .grupos-card[hidden]{display:none;}
-  .gc-head h2{margin:0 0 4px;font-size:20px;}
-  .gc-sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
-  .gc-cargando{color:var(--muted);font-size:13.5px;margin:0;}
-  .gc-tabla{width:100%;border-collapse:collapse;}
-  .gc-tabla th, .gc-tabla td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
-  .gc-tabla thead th{border-bottom:2px solid var(--azul);}
-  .gc-letra{display:inline-flex;width:20px;height:20px;border-radius:50%;background:var(--azul);color:#fff;
-            align-items:center;justify-content:center;font-size:11px;font-weight:800;margin-right:7px;}
-  .gc-nombre{font-size:14.5px;font-weight:700;}
-  .gc-meta{display:block;font-size:11.5px;color:var(--muted);font-weight:400;margin-top:3px;}
-  .gc-ind{font-size:13px;color:var(--muted);font-weight:700;width:190px;}
-  .gc-num{font-size:17px;font-weight:800;display:block;}
-  .gc-num.neg{color:var(--red);}
-  .gc-nodato{color:var(--muted);font-size:13px;font-style:italic;}
-  .gc-bar{display:block;height:6px;background:#eef2f9;border-radius:3px;margin-top:6px;overflow:hidden;max-width:260px;}
-  .gc-bar-in{display:block;height:100%;background:var(--azul);}
-  .gc-bar-in.neg{background:var(--red);}
-  .gc-avisos{margin-top:14px;}
-  .gc-avisos p{color:var(--muted);font-size:12px;line-height:1.5;margin:0 0 5px;}
-  .gc-acciones{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:14px;}
+  /* Contorno y no relleno: son 41 filas, y 41 botones azules macizos apilados le
+     ganan la atención al nombre del club, que es lo que el visitante viene a leer. */
+  .r-act{margin-left:auto;flex:0 0 auto;font-family:inherit;font-size:11.5px;font-weight:700;
+         color:var(--azul);background:#fff;border:1px solid var(--border);border-radius:6px;
+         padding:4px 6px;cursor:pointer;max-width:46%;}
+  .r-act:hover{border-color:var(--azul);background:#eef2f9;}
+  .sel-row.sel .r-act{background:var(--oro);color:var(--azul-dark);border-color:var(--oro);}
+  .r-act + .add-btn{margin-left:6px;}
 
+  /* Al elegir club la página baja hasta sus datos, y el header es sticky: sin esto
+     el título de la sección queda tapado abajo del header. */
   main > section{scroll-margin-top:96px;}
+
+  /* PROTO (punto 9): las pestañas se ven desde la primera visita. En frío no llevan
+     a ningún lado todavía, y eso se dice apagándolas, no escondiéndolas. */
   #mainNav.proto-dummy{opacity:.45;}
   #mainNav.proto-dummy button{cursor:default;}
 </style>
 </head>
 <body>
-<div class="proto-flag proto-flag-falso">PROTOTIPO 2 · Selector paso a paso <span>— no es el sitio publicado · </span><b>DATOS INVENTADOS: los ejercicios 2016-2025 de Argentina y Brasil son de mentira</b><button type="button" class="proto-reset" id="protoReset" title="Borra el club elegido y los recientes de ESTE navegador, y recarga. El idioma no se toca.">Volver a la primera visita</button></div>
+<div class="proto-flag">PROTOTIPO · Inicio con el selector en la página <span>— no es el sitio publicado</span><button type="button" class="proto-reset" id="protoReset" title="Borra el club elegido, los recientes y el estado del selector de ESTE navegador, y recarga. El idioma no se toca.">Volver a la primera visita</button></div>
 
 <header>
   <div class="header-inner">
@@ -882,7 +798,7 @@ consulta puntual, nunca lectura de corrido.
   <div class="sel-search">
     <input id="selQ" type="text" autocomplete="off" spellcheck="false"
            data-i18n-placeholder="selector.search.ph"
-           placeholder="Buscá un club, una liga o un país…  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
+           placeholder="Buscá un club, una liga o un país…  (ej. &quot;Boca&quot;, &quot;LaLiga&quot;, &quot;Japón&quot;)">
     <span class="kbd">esc</span>
     <!-- Salida visible N° 1 (arriba a la derecha). NO un × gris de 20px sin caja. -->
     <button class="sel-close" id="selClose">&#10005;<span data-i18n="selector.close">Cerrar</span></button>
@@ -933,35 +849,48 @@ consulta puntual, nunca lectura de corrido.
        pantalla de exploración no quede inalcanzable para siempre después del primer click).
        El nav y las secciones se esconden mientras no haya club: no hay nada que navegar
        hasta que se elija uno, y un tab que lleva a una vista vacía es peor que no estar. -->
-  <div class="pasos-block" id="pasosBlock">
-    <!-- #coldHero sigue existiendo (vacío y escondido) porque applyClubMode() lo
-         toca por id. El bloque de pasos es este de afuera. -->
-    <div id="coldHero" hidden></div>
-
-    <h1>Los números reales de tu club</h1>
-    <p class="lead">Ingresos, gastos y deuda, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
-
-    <!-- Con un club elegido, todo el bloque se reduce a esta línea. -->
-    <div class="pasos-bar">
-      <button class="pasos-resumen" id="pasosResumen" type="button"></button>
-      <button class="pasos-toggle" id="pasosToggle" type="button">Minimizar</button>
+  <div class="hero" id="coldHero" hidden>
+    <!-- PROTO: COPY DE ANTES. Solo en frío: con un club elegido se esconde, porque
+         a esa altura ya no le está explicando nada a nadie. -->
+    <div class="hero-copy">
+      <h1 data-i18n="hero.title">Los números reales de tu club</h1>
+      <!-- Sin "y mercado de pases", que el sitio todavía no tiene cargado (punto 3
+           de Guido). El mismo cambio va en la clave hero.sub de data/lang/en.js,
+           que hoy dice "and transfers". -->
+      <p data-i18n="hero.sub">Ingresos, gastos y deuda, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
     </div>
 
-    <!-- El atajo: quien ya sabe qué club quiere no recorre 5 pasos. -->
-    <div class="pasos-busca">
-      <span class="lupa" aria-hidden="true">&#128269;</span>
-      <input id="pasosQ" type="text" autocomplete="off" spellcheck="false" placeholder="¿Ya sabés cuál? Escribí el club, la liga o el país">
+    <!-- PROTO: EL SELECTOR, ACÁ MISMO, SIEMPRE. No está duplicado: es el mismo nodo
+         #clubPanel, mudado acá por el script de abajo y no devuelto nunca. -->
+    <div class="hero-sel" id="heroSel">
+      <div class="hero-sel-bar">
+        <span class="hs-title" id="hsTitle">Cambiar de club</span>
+        <button class="hs-toggle" id="hsToggle" type="button" aria-expanded="true" aria-controls="heroSelSlot">Minimizar</button>
+      </div>
+      <div class="hero-sel-slot" id="heroSelSlot"></div>
     </div>
 
-    <div id="pasosResultados" hidden></div>
-    <div id="pasosWrap"></div>
+    <!-- Los 3 clubes de acceso rápido. El script los MUEVE adentro de la fila de
+         búsqueda del panel, que tenía todo el lado derecho vacío (punto 12). -->
+    <div class="hero-quick" id="heroQuickWrap">
+      <div class="hq-label" data-i18n="hero.quick.clubs">O empezá por</div>
+      <div class="hq-row" id="heroClubs"></div>
+    </div>
 
+    <p class="hero-foot" id="heroFoot"></p>
     <p class="hero-error" id="clubLoadError" hidden></p>
-  </div>
 
-  <!-- PROTO: el card de GRUPOS. Vive fuera del bloque azul porque es un resultado,
-       no un control: acá se muestran los totales de cada lado. -->
-  <div class="grupos-card" id="gruposCard" hidden></div>
+    <!-- Nodos que js/selector.js necesita pero este layout no muestra: el buscador
+         del hero (lo reemplazó el del panel) y las ligas (ya son una columna del
+         árbol). Se esconden en vez de borrarse: sin ellos, init() explota. -->
+    <div class="hero-search proto-hidden">
+      <input id="heroQ" type="text" autocomplete="off" data-i18n-placeholder="hero.search.ph" placeholder="Buscá tu club…  ej. Boca, Racing, Barcelona, Kashima">
+      <button id="heroGo" data-i18n="hero.search.go">Buscar</button>
+    </div>
+    <div class="hero-quick proto-hidden">
+      <div class="hq-label" data-i18n="hero.quick.leagues">O mirá qué hay cargado de cada liga</div>
+      <div class="hq-row" id="heroLeagues"></div>
+    </div>
   </div>
 
   <!-- INICIO -->
@@ -1475,14 +1404,9 @@ consulta puntual, nunca lectura de corrido.
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<!-- PROTO: DATOS INVENTADOS. Rellena los últimos 10 ejercicios de los clubes de
-     Argentina y Brasil, con ascensos y descensos, para poder probar la interfaz
-     sin que la falta de datos reales limite el diseño. NINGÚN número que salga de
-     acá es real, y este archivo NO lo carga ninguna otra página del sitio. Ver la
-     cabecera de prototipo-pasos-datos-inventados.js. -->
-<script src="prototipo-pasos-datos-inventados.js?v=1789428327265"></script>
-<!-- PROTO: el selector paso a paso, en vez del de columnas. Misma API pública. -->
-<script src="prototipo-pasos-selector.js?v=1789430342692"></script>
+<!-- PROTO: la copia PARCHEADA de js/selector.js (la genera
+     tools/build-prototipo-inicio.js; el sitio sigue cargando js/selector.js). -->
+<script src="Prototyping/prototipo-inicio-selector.js?v=1789431755424"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
@@ -1672,11 +1596,16 @@ consulta puntual, nunca lectura de corrido.
   // vista vacía es peor que una pestaña que no está.
   function applyClubMode(){
     const cold = !currentClub;
-    // PROTO: el bloque de pasos se queda en la página con el club ya elegido; el
-    // #coldHero original quedó vacío y escondido, solo para que esta línea siga
-    // teniendo a quién apuntar.
-    document.getElementById('coldHero').hidden = true;
-    // PROTO: las pestañas se ven siempre, apagadas hasta que haya club.
+    // PROTO: la portada dejó de ser una pantalla aparte que se apaga al elegir club.
+    // Es el mismo bloque en dos modos, y el selector se queda en la página con el
+    // club ya elegido (pedido de Guido: "que el selector se quede ahí, pero puedas
+    // minimizarlo"). Esconderlo era obligar a un viaje al header para cambiar de club.
+    const portada = document.getElementById('coldHero');
+    portada.hidden = false;
+    portada.classList.toggle('warm', !cold);
+    // PROTO: las pestañas se ven siempre (punto 9). En frío no llevan a ningún lado
+    // todavía — no hay club que mostrar — y eso se dice apagándolas, no borrándolas:
+    // que se vea lo que el sitio tiene para ofrecer antes de elegir.
     document.getElementById('mainNav').style.display = '';
     document.getElementById('mainNav').classList.toggle('proto-dummy', cold);
     document.querySelectorAll('main > section').forEach(sec => {
@@ -2067,38 +1996,89 @@ consulta puntual, nunca lectura de corrido.
   }
 </script>
 
-<!-- ======================== PROTO: comportamiento del banco de pruebas ======== -->
+<!-- ======================== PROTO: comportamiento nuevo ======================== -->
 <script>
 (function(){
-  // Los datos inventados se encienden ACÁ y no arriba, y el motivo es de orden de
-  // carga: loadClubData() lo define el <script> principal de index.html, que corre
-  // DESPUÉS de los <script src> del final del body. Encendiéndolo antes, el wrapper
-  // se instalaba sobre un undefined y los ejercicios inventados nunca entraban —
-  // aparecían en el selector y no existían al abrirlos, que es el peor de los mundos.
-  if(window.FOS_DUMMY){
-    FOS_DUMMY.init();
-    if(window.CLUB_SELECTOR && CLUB_SELECTOR.refresh) CLUB_SELECTOR.refresh();
-    // Si la visita entra con un club guardado, ese club se dibujó en el INIT del
-    // sitio, o sea ANTES de que existieran los ejercicios inventados: hay que
-    // volver a elegirlo para que se redibuje con ellos. Pasar por null y volver es
-    // el mismo camino que usa el selector, no un refresh inventado por afuera.
-    var guardado = (window.CLUB_SELECTOR && CLUB_SELECTOR.savedClub) ? CLUB_SELECTOR.savedClub() : null;
-    if(guardado && typeof selectClub === 'function'){
-      Promise.resolve(selectClub(null)).then(function(){ return selectClub(guardado); });
-    }
-  }
+  var hero = document.getElementById('coldHero');
+  var panel = document.getElementById('clubPanel');
+  var slot = document.getElementById('heroSelSlot');
+  var toggle = document.getElementById('hsToggle');
+  var titulo = document.getElementById('hsTitle');
+  var LS_MIN = 'fos_proto_selector_min';
 
+  // (a) El panel del selector se muda adentro de la página y ya no vuelve al <body>:
+  //     en este prototipo no existe el modal. Un solo nodo, un solo lugar.
+  slot.appendChild(panel);
+  panel.classList.add('embedded');
+  panel.classList.add('open');
+
+  // (b) Los 3 clubes de acceso rápido se mudan al lado derecho del buscador, que
+  //     estaba vacío (punto 12 de Guido).
+  var search = panel.querySelector('.sel-search');
+  if(search) search.appendChild(document.getElementById('heroQuickWrap'));
+
+  // (c) Minimizar. Solo se ve con un club elegido: en frío no hay nada abajo que
+  //     minimizarlo te deje ver.
+  function setMin(min){
+    hero.classList.toggle('min', min);
+    toggle.textContent = min ? 'Abrir el selector' : 'Minimizar';
+    toggle.setAttribute('aria-expanded', String(!min));
+    titulo.textContent = min ? 'Cambiar de club' : 'Elegí otro club';
+    try { localStorage.setItem(LS_MIN, min ? '1' : '0'); } catch(e){}
+  }
+  toggle.addEventListener('click', function(){
+    var min = !hero.classList.contains('min');
+    setMin(min);
+    if(!min){ var q = document.getElementById('selQ'); if(q) q.focus(); }
+  });
+  var guardado = null;
+  try { guardado = localStorage.getItem(LS_MIN); } catch(e){}
+  setMin(guardado === '1');
+
+  // (d) El botón de club del header ya no abre un modal (no hay), así que abre y
+  //     muestra el selector que está en la página.
+  document.getElementById('clubBtn').addEventListener('click', function(ev){
+    ev.stopPropagation();
+    setMin(false);
+    hero.scrollIntoView({ behavior:'smooth', block:'start' });
+    var q = document.getElementById('selQ');
+    if(q) q.focus();
+  }, true);
+
+  // (e) Las pestañas en frío son de mentira: muestran qué tiene el sitio, pero no
+  //     hay club que mostrar todavía, así que no llevan a ningún lado.
+  document.getElementById('mainNav').addEventListener('click', function(ev){
+    if(this.classList.contains('proto-dummy')){ ev.stopPropagation(); ev.preventDefault(); }
+  }, true);
+
+  // (e2) Volver a la primera visita. El sitio no tiene backend: todo lo que sabe de
+  //      vos vive en el localStorage de tu navegador, así que "primera visita" es
+  //      exactamente esas 4 claves borradas. El idioma (fos_lang) NO se toca a
+  //      propósito: resetearlo mandaría la página a inglés según el navegador, y lo
+  //      que se está probando acá es el selector, no el idioma.
   document.getElementById('protoReset').addEventListener('click', function(){
-    ['fos_club', 'fos_recent_clubs', 'fos_coach_club'].forEach(function(k){
+    ['fos_club', 'fos_recent_clubs', 'fos_coach_club', 'fos_proto_selector_min'].forEach(function(k){
       try { localStorage.removeItem(k); } catch(e){}
     });
+    // Sin esto el navegador restaura el scroll donde estabas, y una "primera visita"
+    // que arranca a media página no es una primera visita.
     try { history.scrollRestoration = 'manual'; } catch(e){}
     window.scrollTo(0, 0);
     location.reload();
   });
-  document.getElementById('mainNav').addEventListener('click', function(ev){
-    if(this.classList.contains('proto-dummy')){ ev.stopPropagation(); ev.preventDefault(); }
-  }, true);
+
+  // (f) Al elegir un club SIN ejercicio puntual, la página baja hasta sus datos: el
+  //     selector se queda arriba (eso es lo pedido), pero el click tiene que verse.
+  //     Con ejercicio elegido no corre: de eso se encarga goToFinanzasYear().
+  window.PROTO_AFTER_PICK = function(){
+    var secs = document.querySelectorAll('main > section');
+    for(var i = 0; i < secs.length; i++){
+      if(secs[i].style.display !== 'none' && secs[i].classList.contains('active')){
+        secs[i].scrollIntoView({ behavior:'smooth', block:'start' });
+        return;
+      }
+    }
+  };
 })();
 </script>
 

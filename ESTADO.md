@@ -262,34 +262,23 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `tools/build-prototipo-inicio.js` + los 3 `prototipo-inicio-*` (Versiones 143-147):
-  prototipo de un Inicio en frío con el selector jerárquico desplegado EN la portada
-  (hoy vive atrás de un click) y que SE QUEDA ahí con el club ya elegido, encima
-  de sus datos y minimizable. Cada fila de club tiene un dropdown "Ver" que junta
-  el ejercicio ("Balance 2024/2025") con las dos acciones ("El club entero" y
-  "Ver y elegir otro", que deja el selector abierto para sumar un segundo club). NO se deploya y no lo linkea
-  ninguna página: se abre a mano, al lado de `index.html`. Los 3 archivos están
-  GENERADOS (la portada desde `index.html`, `prototipo-inicio-selector.js` como copia
-  parcheada de `js/selector.js`, y `prototipo-inicio-ejercicios.js` desde los
-  `fiscalYearMeta`), no se editan a mano: los cambios van en el generador. Está a la
-  espera de la decisión de Guido, to-do 28. La franja roja de arriba trae un botón
-  "Volver a la primera visita" que borra lo que el sitio guarda en el navegador
-  (club elegido, recientes, cartelito, estado minimizado) y recarga: sirve para
-  probar el arranque en frío sin abrir las herramientas del navegador.
-- `tools/build-prototipo-pasos.js` + `prototipo-pasos.html` + `prototipo-pasos-selector.js`
-  (Versión 148): PROTOTIPO 2 del selector, un card por paso (Deporte › Región ›
-  País › Liga › Club) uno abajo del otro, en vez de las 5 columnas simultáneas.
-  Sin punto de calidad ni leyenda, a pedido de Guido. Convive con el prototipo 1,
-  a propósito: se comparan las dos visualizaciones antes de decidir (to-do 28).
-  El `.html` se genera; la lógica (`prototipo-pasos-selector.js`) está escrita a
-  mano y expone la misma API pública que `js/selector.js`.
-  **Ese prototipo (y SOLO ese) carga `prototipo-pasos-datos-inventados.js`**, que
+- `Prototyping/`: los 3 prototipos del selector de club, con su propio
+  `README.md` (leelo antes de tocar cualquier cosa de ahí). NADA de esa carpeta es
+  el sitio: no se linkea desde `index.html` ni se sirve como parte de la
+  experiencia real. Son maquetas para decidir cómo se elige un club antes de
+  tocar producción, y corren con los datos y el motor REALES.
+  **El 1** (`prototipo-inicio-selector.html`) mete el selector de columnas de hoy
+  en la portada; **el 2** (`prototipo-pasos.html`) pregunta de a un paso por card;
+  **el 3** (`prototipo-duelo.html`, Versión 154) parte la pantalla en dos columnas,
+  Equipo A contra Equipo B, con un toggle para el que solo quiere ver uno.
+  Los `.html` están generados (`node Prototyping/build-prototipo-*.js`) y llevan
+  `<base href="../">` porque el sitio se sirve desde la raíz.
+  **Los prototipos 2 y 3 cargan `prototipo-pasos-datos-inventados.js`**, que
   rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
-  Brasil, con ascensos y descensos inventados, para poder probar la interfaz sin
-  que la falta de datos reales limite el diseño. Ningún número que salga de ahí es
-  real, no vive en `data/`, ninguna auditoría lo ve, y cada ejercicio inventado se
-  anuncia en pantalla. Las 5 condiciones que lo mantienen contenido están en
-  `CONVENCIONES.md`; el día que se decida el selector, se borra (to-do 30).
+  Brasil. Ningún número que salga de ahí es real, no vive en `data/`, ninguna
+  auditoría lo ve, y cada ejercicio inventado se anuncia en pantalla. Las 5
+  condiciones que lo contienen están en `CONVENCIONES.md`; el día que se decida el
+  selector, se borra (to-do 30).
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.

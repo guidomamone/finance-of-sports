@@ -1260,3 +1260,34 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - BUG PROPIO ENCONTRADO Y CORREGIDO: `ladosVs` se usaba tres líneas antes de declararse, así que
   `var` lo dejaba en `undefined` y la comparación contra un promedio no llegaba a dibujarse nunca.
   Y `comoGrupo` se preguntaba DESPUÉS de meter el lado en la lista, con lo cual siempre daba true.
+
+## Versión 154: los prototipos se mudan a `Prototyping/`, y nace el tercero (dos columnas, A contra B)
+
+- **TODO LO DE PROTOTIPOS VIVE AHORA EN `Prototyping/`**, con su propio `README.md` (pedido de
+  Guido: "no mezclemos nada con los archivos que están en producción"). Se movieron los 5 archivos
+  de los prototipos 1 y 2 y sus 2 generadores, que estaban en la raíz y en `tools/`. `tools/` queda
+  solo con las herramientas del sitio.
+  Cada `.html` generado lleva ahora `<base href="../">`: el sitio se sirve desde la raíz, y esa
+  línea hace que TODA ruta relativa siga resolviendo bien, incluidas las que arma el JS en tiempo
+  de ejecución (`loadClubData()`, `I18N.load()`), que reescribir a mano era imposible.
+- **NUEVO PROTOTIPO 3: `prototipo-duelo.html`** — dos columnas, Equipo A contra Equipo B, con un
+  toggle arriba ("quiero comparar dos" / "solo quiero ver uno"). Cada columna puede ser un club o
+  una liga entera, y una liga se mide por promedio por club o por total. Los prototipos 1 y 2
+  quedan congelados: son tres formas de resolver la misma pantalla, para compararlas.
+  POR QUÉ: en el de pasos, comparar obligaba a pasar por el selector dos veces, y eso generaba
+  casuística que nadie quería contestar (¿el paso 7 vuelve a aparecer?, ¿en qué momento se cierra
+  un lado?). Con las dos columnas a la vista, comparar deja de ser un estado en el que entrás y
+  salís: es la pantalla. Y el toggle es la otra mitad: la mayoría quiere UN club y no tiene por qué
+  pagar una pantalla partida al medio.
+  De paso resuelve el escenario que el prototipo 2 no podía: un club contra el promedio de una liga
+  AJENA (Boca contra el promedio de la Série A), porque cada columna se elige por separado.
+- BUG REPORTADO POR GUIDO Y ARREGLADO en el prototipo 2 (lo único que se le tocó): "un club contra
+  su pasado y no me aparecen los números". Causa: "+ Otro año" elige el ejercicio libre más nuevo,
+  y como el club activo todavía estaba en su año por default, elegía justo el que el visitante
+  había pedido como principal; al mover el año del activo DESPUÉS, los dos sujetos quedaban en el
+  mismo ejercicio y `onActiveChanged()` descartaba el duplicado: la bandeja quedaba vacía. Ahora el
+  año del activo se mueve ANTES de sumar ningún rival. Y el card de totales dejó de aparecer en una
+  comparación normal, donde competía con el resultado de verdad.
+- BUG en los datos inventados: `window.clubs` (que es `undefined`, porque `clubs` es un `const` de
+  su archivo y no una propiedad de window) rompía `clubsOfLeague()`. Es la MISMA trampa que ya está
+  documentada dos veces en este repo; costó media hora otra vez.

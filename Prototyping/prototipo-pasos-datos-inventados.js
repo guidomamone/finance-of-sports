@@ -242,7 +242,7 @@ window.FOS_DUMMY = (function(){
     };
     window.clubsOfLeague = function(leagueId){
       return Object.keys(tabla).filter(function(id){
-        return window.clubs[id] && Object.keys(tabla[id]).some(function(y){ return tabla[id][y] === leagueId; });
+        return clubs[id] && Object.keys(tabla[id]).some(function(y){ return tabla[id][y] === leagueId; });
       }).sort();
     };
     window.leagueYears = function(leagueId){

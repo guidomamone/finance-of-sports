@@ -26,9 +26,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
+const ROOT = path.join(__dirname, '..');        // la raíz del repo
+const AQUI = __dirname;                          // Prototyping/, donde salen los archivos
 const SRC = path.join(ROOT, 'index.html');
-const OUT = path.join(ROOT, 'prototipo-pasos.html');
+const OUT = path.join(AQUI, 'prototipo-pasos.html');
 
 let html = fs.readFileSync(SRC, 'utf8');
 
@@ -56,6 +57,14 @@ replaceOnce('<html lang="es">', [
   '-->',
   '<html lang="es">'
 ].join('\n'), 'apertura <html>');
+
+replaceOnce('<head>\n', '<head>\n' +
+  '<!-- PROTO: el prototipo vive en Prototyping/ y el sitio en la raíz. Esta línea hace\n' +
+  '     que TODA ruta relativa (los <script src> de js/ y data/, y también las que arma\n' +
+  '     el JS en tiempo de ejecución: loadClubData() y I18N.load()) siga resolviendo\n' +
+  '     contra la raíz. Sin esto habría que reescribir cada ruta, incluidas las que no\n' +
+  '     están en el HTML. -->\n' +
+  '<base href="../">\n', '<head>');
 
 replaceOnce('<title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>',
   '<title>PROTOTIPO 2 · Selector paso a paso</title>', 'title');
@@ -334,17 +343,17 @@ if(!TAG_SELECTOR) throw new Error('no se encontró el <script> de js/selector.js
 // El `?v=` con la fecha de modificación del archivo NO es decorativo: sin él el
 // navegador sirve el JS viejo de su caché aunque el HTML sea nuevo, y se depura un
 // bug que ya estaba arreglado (pasó, ver CLAUDE.md, "Gotchas de tooling").
-const V_SEL = Math.floor(fs.statSync(path.join(ROOT, 'prototipo-pasos-selector.js')).mtimeMs);
-const V_DUM = Math.floor(fs.statSync(path.join(ROOT, 'prototipo-pasos-datos-inventados.js')).mtimeMs);
+const V_SEL = Math.floor(fs.statSync(path.join(AQUI, 'prototipo-pasos-selector.js')).mtimeMs);
+const V_DUM = Math.floor(fs.statSync(path.join(AQUI, 'prototipo-pasos-datos-inventados.js')).mtimeMs);
 replaceOnce(TAG_SELECTOR[0],
   '<!-- PROTO: DATOS INVENTADOS. Rellena los últimos 10 ejercicios de los clubes de\n' +
   '     Argentina y Brasil, con ascensos y descensos, para poder probar la interfaz\n' +
   '     sin que la falta de datos reales limite el diseño. NINGÚN número que salga de\n' +
   '     acá es real, y este archivo NO lo carga ninguna otra página del sitio. Ver la\n' +
   '     cabecera de prototipo-pasos-datos-inventados.js. -->\n' +
-  '<script src="prototipo-pasos-datos-inventados.js?v=' + V_DUM + '"></script>\n' +
+  '<script src="Prototyping/prototipo-pasos-datos-inventados.js?v=' + V_DUM + '"></script>\n' +
   '<!-- PROTO: el selector paso a paso, en vez del de columnas. Misma API pública. -->\n' +
-  '<script src="prototipo-pasos-selector.js?v=' + V_SEL + '"></script>',
+  '<script src="Prototyping/prototipo-pasos-selector.js?v=' + V_SEL + '"></script>',
   'script de js/selector.js');
 
 // ---------------------------------------------------------------------------

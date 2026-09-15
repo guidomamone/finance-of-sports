@@ -26,14 +26,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
+const ROOT = path.join(__dirname, '..');        // la raíz del repo
+const AQUI = __dirname;                          // Prototyping/, donde salen los archivos
 const SRC = path.join(ROOT, 'index.html');
-const OUT = path.join(ROOT, 'prototipo-inicio-selector.html');
+const OUT = path.join(AQUI, 'prototipo-inicio-selector.html');
 // El prototipo son 2 archivos: la portada y la copia PARCHEADA de js/selector.js.
 // (Hasta la Versión 145 eran 3: el tercero era una tabla propia de ejercicios por
 // club. Dejó de hacer falta en la 146, cuando esa lista pasó a `data/club-index.js`,
 // que es el índice liviano REAL del sitio.)
-const OUT_SEL = path.join(ROOT, 'prototipo-inicio-selector.js');
+const OUT_SEL = path.join(AQUI, 'prototipo-inicio-selector.js');
 
 let html = fs.readFileSync(SRC, 'utf8');
 
@@ -59,6 +60,14 @@ replaceOnce('<html lang="es">', [
   '-->',
   '<html lang="es">'
 ].join('\n'), 'apertura <html>');
+
+replaceOnce('<head>\n', '<head>\n' +
+  '<!-- PROTO: el prototipo vive en Prototyping/ y el sitio en la raíz. Esta línea hace\n' +
+  '     que TODA ruta relativa (los <script src> de js/ y data/, y también las que arma\n' +
+  '     el JS en tiempo de ejecución: loadClubData() y I18N.load()) siga resolviendo\n' +
+  '     contra la raíz. Sin esto habría que reescribir cada ruta, incluidas las que no\n' +
+  '     están en el HTML. -->\n' +
+  '<base href="../">\n', '<head>');
 
 replaceOnce('<title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>',
   '<title>PROTOTIPO · Inicio con el selector en la página</title>', 'title');
@@ -562,7 +571,7 @@ const V_SEL = Math.floor(fs.statSync(OUT_SEL).mtimeMs);
 replaceOnce(TAG_SELECTOR[0],
   '<!-- PROTO: la copia PARCHEADA de js/selector.js (la genera\n' +
   '     tools/build-prototipo-inicio.js; el sitio sigue cargando js/selector.js). -->\n' +
-  '<script src="prototipo-inicio-selector.js?v=' + V_SEL + '"></script>',
+  '<script src="Prototyping/prototipo-inicio-selector.js?v=' + V_SEL + '"></script>',
   'script de js/selector.js');
 
 fs.writeFileSync(OUT, html);
