@@ -602,6 +602,30 @@ consulta puntual, nunca lectura de corrido.
   .premisas-list li{margin-bottom:4px;}
   .premisas-h{font-size:13px;font-weight:700;margin:14px 0 4px;}
   .premisas-h:first-child{margin-top:0;}
+
+  /* ===== EL SELECTOR DENTRO DE FINANZAS (Versión 143) =====
+     Sin club elegido, Finanzas era la peor pantalla del sitio: tablas vacías, selectores
+     de Año sin opciones, y el banner amarillo de "dato placeholder" encima, que además
+     miente — no hay un dato inventado, no hay ningún dato. Ahora esa pantalla es UNA
+     cosa: el selector. Con club elegido el mismo card se encoge a una línea, porque ya
+     no es la tarea sino cómo se cambia de club.
+     Viene del prototipo 4 (`Prototyping/Selector/MERGE-A-PRODUCCION.md`, etapa 1 del plan
+     de merge). Es la única etapa independiente de todo el resto: no toca js/selector.js
+     ni el modelo de datos, así que el botón de acá abre el panel de columnas de hoy. */
+  #finanzas.sin-club > *:not(h1):not(.subtitle):not(.fin-sel){display:none !important;}
+  .fin-sel{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;
+           margin-bottom:18px;display:flex;align-items:center;gap:13px;flex-wrap:wrap;}
+  .fin-sel.vacio{border-style:dashed;border-color:var(--azul);background:#f3f7ff;}
+  .fin-sel-ico{width:38px;height:38px;border-radius:50%;background:var(--azul);color:#fff;font-size:13px;
+               font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .fin-sel-txt{display:flex;flex-direction:column;min-width:0;flex:1;}
+  .fin-sel-t{font-size:16px;font-weight:800;}
+  .fin-sel-s{font-size:12.5px;color:var(--muted);}
+  .fin-sel-btn{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:9px;padding:10px 16px;
+               font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
+  .fin-sel-btn:hover{background:var(--azul-dark);}
+  .fin-sel-btn.alt{background:none;color:var(--azul);}
+  .fin-sel-btn.alt:hover{background:#eef2f9;color:var(--azul-dark);}
 </style>
 </head>
 <body>
@@ -825,6 +849,10 @@ consulta puntual, nunca lectura de corrido.
   <section id="finanzas">
     <h1 data-i18n="finanzas.title">Finanzas</h1>
     <p class="subtitle" data-i18n="finanzas.sub">Estado de resultados estilo cuenta de pérdidas y ganancias.</p>
+    <!-- Lo llena renderFinSelector() de js/selector.js, que corre en cada renderButton(),
+         o sea cada vez que cambia el club activo. Vacío en el HTML a propósito: su
+         contenido depende del club y no hay ninguno hasta que el visitante elija. -->
+    <div class="fin-sel" id="finSelector"></div>
 
 
     <div class="controls">
@@ -1235,44 +1263,44 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '142';</script>
-<script src="data/lang/langs.js?v=142"></script>
-<script src="js/i18n.js?v=142"></script>
-<script src="data/clubs.js?v=142"></script>
+<script>window.ASSET_V = '143';</script>
+<script src="data/lang/langs.js?v=143"></script>
+<script src="js/i18n.js?v=143"></script>
+<script src="data/clubs.js?v=143"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=142"></script>
+<script src="data/club-index.js?v=143"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=142"></script>
-<script src="data/club-leagues.js?v=142"></script>
-<script src="data/category-map.js?v=142"></script>
-<script src="data/site-labels.js?v=142"></script>
-<script src="data/currency-map.js?v=142"></script>
-<script src="data/sources-view.js?v=142"></script>
+<script src="data/leagues.js?v=143"></script>
+<script src="data/club-leagues.js?v=143"></script>
+<script src="data/category-map.js?v=143"></script>
+<script src="data/site-labels.js?v=143"></script>
+<script src="data/currency-map.js?v=143"></script>
+<script src="data/sources-view.js?v=143"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=142"></script>
-<script src="js/finanzas-render.js?v=142"></script>
+<script src="js/finanzas-calc.js?v=143"></script>
+<script src="js/finanzas-render.js?v=143"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=142"></script>
+<script src="js/selector.js?v=143"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
      clubes, y club contra el promedio de su liga. Ver su cabecera. -->
-<script src="js/comparar-clubes.js?v=142"></script>
+<script src="js/comparar-clubes.js?v=143"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

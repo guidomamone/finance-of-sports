@@ -543,11 +543,65 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
+  // EL SELECTOR DENTRO DE FINANZAS (Versión 143, etapa 1 del merge del prototipo 4).
+  //
+  // Sin club, Finanzas es SOLO esto: las tablas vacías y el banner de "dato
+  // placeholder" que quedaban abajo no dicen nada, y el banner encima miente (no hay
+  // un dato inventado, no hay ningún dato). Con club, el mismo card se encoge a una
+  // línea: ya no es la tarea de la pantalla sino cómo se cambia de club.
+  //
+  // Se redibuja desde `renderButton()` y no desde un evento propio: esa función es lo
+  // que el sitio ya llama cada vez que cambia el club activo (`applyClubMode()`), así
+  // que es el único punto donde enterarse sin inventar un canal nuevo.
+  // ---------------------------------------------------------------------------
+  function renderFinSelector(){
+    var caja = $('finSelector');
+    if(!caja) return;
+    caja.innerHTML = '';
+    var id = api.getClub();
+    caja.className = 'fin-sel' + (id ? '' : ' vacio');
+    var sec = $('finanzas');
+    if(sec) sec.classList.toggle('sin-club', !id);
+
+    var ico = document.createElement('span');
+    ico.className = 'fin-sel-ico';
+    ico.textContent = id ? initials(nameOf(id)) : '?';
+    caja.appendChild(ico);
+
+    var txt = document.createElement('span');
+    txt.className = 'fin-sel-txt';
+    var t1 = document.createElement('span');
+    t1.className = 'fin-sel-t';
+    t1.textContent = id ? nameOf(id) : t('finanzas.sel.none', 'Todavía no elegiste un club');
+    txt.appendChild(t1);
+    var t2 = document.createElement('span');
+    t2.className = 'fin-sel-s';
+    if(id){
+      var co = window.COUNTRIES[countryOf(id)];
+      t2.textContent = (co ? t(co.key, co.name) + ' · ' : '')
+        + t('finanzas.sel.sub.club', 'los números de abajo son de este club');
+    } else {
+      t2.textContent = t('finanzas.sel.sub.none',
+        'Elegilo y acá abajo aparecen sus ingresos, gastos y deuda, ejercicio por ejercicio.');
+    }
+    txt.appendChild(t2);
+    caja.appendChild(txt);
+
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'fin-sel-btn' + (id ? ' alt' : '');
+    b.textContent = id ? t('finanzas.sel.change', 'Cambiar de club') : t('finanzas.sel.pick', 'Elegir un club');
+    b.addEventListener('click', function(){ open(false); });
+    caja.appendChild(b);
+  }
+
+  // ---------------------------------------------------------------------------
   // BOTÓN DEL HEADER
   // ---------------------------------------------------------------------------
   function renderButton(){
     var id = api.getClub();
     var crest = $('cbCrest'), name = $('cbName'), eyebrow = $('cbEyebrow');
+    renderFinSelector();
     if(!id){
       crest.textContent = '?';
       name.textContent = t('header.club.none', 'Elegí tu club');
