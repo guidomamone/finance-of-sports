@@ -460,6 +460,34 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   hay que confirmar primero si esos balances viejos corresponden al mismo perímetro del club actual
   o a la entidad liquidada.
 
+## Bologna (sourcing de Italia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Sigue publicando el fascicolo completo?**: hay 2 ejercicios (2017/18, 2022/23) pero un gap sin
+  explicar en 2023/24-2024/25, justo cuando el club mejoró sus resultados deportivos — no se
+  encontró en ningún canal si dejó de publicar o si solo cambió de ubicación.
+
+## Cagliari (sourcing de Italia, sesión 2026-09-17, accionable, no es duda para el club sino un aviso)
+
+- **El link oficial "Informazioni finanziarie" del sitio del club apunta a un Google Drive borrado o
+  roto (404)** — se le podría pedir directo al club que lo arregle, ya que aparentemente sí tenían
+  intención de publicar.
+
+## Parma (sourcing de Italia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Cuánto dura el ejercicio de transición jun→dic 2018?**: no se confirmó si cubre 12 meses o si
+  hay un puente de 18 meses no localizado en ningún otro documento.
+
+## Genoa (sourcing de Italia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Cuánto dura el ejercicio de transición dic→jun 30.06.2024?**: no se confirmó si cubre 6 o 12
+  meses.
+
+## Inter (sourcing de Italia, sesión 2026-09-17, pregunta de criterio, no para el club)
+
+- **¿Cargar el perímetro "Inter Media and Communication S.p.A."?**: hay una serie 2017-2025 (sin
+  OCR todavía) de esta entidad, que no es el club entero sino una unidad de negocio — decisión de
+  Guido si vale la pena cargarla como dato complementario o descartarla por no representar al club.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
