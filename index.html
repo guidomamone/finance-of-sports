@@ -184,6 +184,11 @@ consulta puntual, nunca lectura de corrido.
   .cmp-cta{display:flex;align-items:center;gap:14px;background:#fff;border:1.5px dashed var(--border);
            border-radius:10px;padding:15px 18px;margin-bottom:26px;}
   .cmp-cta[hidden]{display:none;}
+  /* Versión 148: la tarjeta "Compará X con otro club" ya no se ofrece nunca — la
+     reemplazaron los dos cards de la pestaña Comparar. Se esconde por CSS y no
+     poniéndole `hidden`, porque js/comparar-clubes.js la vuelve a mostrar en cada
+     redibujo; ese archivo, esta regla y este markup se van juntos en la etapa 5. */
+  .cmp-cta{display:none !important;}
   .cmp-cta .cc-ico{font-size:20px;color:var(--azul);}
   .cmp-cta .cc-txt{flex:1;min-width:0;}
   .cmp-cta .cc-t{font-size:14px;font-weight:700;display:block;}
@@ -534,7 +539,7 @@ consulta puntual, nunca lectura de corrido.
   /* Separa la pregunta del resumen del club, cuando hay club y los dos conviven. */
   #inicioClub{margin-top:34px;border-top:1px solid var(--border);padding-top:26px;}
   /* `display:flex` de una clase le gana al `display:none` que el navegador le da a
-     [hidden]: sin esta regla, #vsSinClub se ve aunque esté hidden. */
+     [hidden]: sin esta regla, un .fin-sel escondido se ve igual. */
   .fin-sel[hidden]{display:none;}
   /* El aviso de "no se pudo cargar el club" vivía adentro del hero del cold start
      (borrado en la Versión 146) y heredaba su paleta oscura: acá va sobre fondo claro. */
@@ -660,8 +665,138 @@ consulta puntual, nunca lectura de corrido.
   .res-msg{font-size:15.5px;font-weight:700;margin:0 0 4px;}
   .res-sub{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 12px;max-width:620px;}
 
+  /* ===== EL PASO 4 Y SUS RAMAS (Versión 148) =====
+     Tres opciones grandes, no una grilla de filtros: es una bifurcación. */
+  .op-grid.tipo{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+  .op-grid.tipo .op{flex-direction:column;align-items:flex-start;gap:5px;padding:14px;}
+  .op-grid.tipo .op-check{display:none;}
+  .op-grid.tipo .op-icon{font-size:24px;}
+  .op-grid.tipo .op-label{font-size:15px;font-weight:800;}
+  .op-grid.tipo .op-meta{margin-left:0;}
+
+  /* La rama Ligas: temporadas como chips, con cuántos equipos tenía cada una. Sin
+     ese dato, "la liga creció" mezcla plata con aritmética. */
+  .arm-fila.total{background:#f3f7ff;border-color:#c9d8f2;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .arm-ico{font-size:17px;}
+  .arm-chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .arm-chip{background:#fff;border:1px solid var(--border);color:var(--text);border-radius:999px;padding:5px 12px;
+            font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+  .arm-chip:hover{border-color:var(--azul);background:#eef2f9;}
+  .arm-chip.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .arm-chip.off{opacity:.4;cursor:not-allowed;}
+  .arm-vacio{font-size:12.5px;color:var(--muted);}
+  .agg-fila{display:flex;align-items:center;gap:7px;margin-top:9px;flex-wrap:wrap;}
+  .agg-lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);}
+  .agg-btn{background:#fff;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 11px;
+           font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .agg-btn:hover{border-color:var(--azul);color:var(--azul);}
+  .agg-btn.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+
+  /* El constructor de la mezcla, con forma de tabla dinámica: una fila por parte,
+     con qué es, de qué año, cómo se agrega y qué entra. */
+  .mz-fila{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;
+           padding:9px 11px;background:#fff;flex-wrap:wrap;}
+  .mz-num{width:20px;height:20px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11px;font-weight:800;
+          display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .mz-que{display:flex;flex-direction:column;min-width:150px;flex:1;}
+  .mz-n{font-size:14px;font-weight:700;}
+  .mz-s{font-size:11.5px;color:var(--muted);}
+  .mz-anio select{font-family:inherit;font-size:12.5px;padding:6px 7px;border:1px solid var(--border);
+                  border-radius:7px;background:#fff;color:var(--text);cursor:pointer;}
+  .mz-agg{display:flex;gap:5px;}
+  .mz-entra{font-size:11.5px;color:var(--muted);font-weight:700;white-space:nowrap;}
+  .mz-x{background:none;border:none;color:var(--muted);font-size:17px;line-height:1;cursor:pointer;padding:0 3px;}
+  .mz-x:hover{color:var(--red);}
+  .mz-formula{margin:4px 0 0;font-size:12.5px;color:var(--azul);font-weight:700;}
+  .mz-add{display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;}
+  .mz-add-btn{background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:9px;padding:9px 14px;
+              font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;}
+  .mz-add-btn:hover{background:#eef2f9;}
+  .mz-panel{border:1px solid var(--azul);border-radius:10px;padding:12px;background:#f3f7ff;margin-top:4px;}
+  .mz-panel-t{margin:0 0 9px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);}
+  .mz-panel .op-grid{max-height:220px;overflow-y:auto;}
+  .res-warn{background:#fdf6e3;border:1px solid #f0d98a;border-radius:9px;padding:9px 11px;font-size:12.5px;
+            line-height:1.5;color:#7a5c00;margin:0 0 12px;}
+
+  /* ===== LOS DOS CARDS DE COMPARAR (Versión 148) =====
+     Arrancan VACÍOS: el card vacío es un botón grande y nada más, así la pantalla
+     abre con una pregunta en vez de con un árbol de cinco niveles por lado. */
+  .cd-wrap{display:grid;grid-template-columns:1fr 44px 1fr;gap:10px;align-items:stretch;
+           background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);
+           border-radius:14px;padding:20px;margin-bottom:0;}
+  .cd-vs{align-self:center;text-align:center;font-size:13px;font-weight:800;color:#8fa3c4;letter-spacing:.08em;}
+  .cd-col{background:var(--card);color:var(--text);border-radius:12px;border:1px solid transparent;overflow:hidden;
+          display:flex;flex-direction:column;}
+  .cd-col.con{border-color:var(--oro);}
+  .cd-head{display:flex;align-items:center;gap:9px;padding:11px 13px;border-bottom:1px solid var(--border);}
+  .cd-letra{width:22px;height:22px;border-radius:50%;background:var(--azul);color:#fff;font-size:11.5px;font-weight:800;
+            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .cd-letra.chica{display:inline-flex;width:19px;height:19px;font-size:10.5px;margin-right:7px;vertical-align:1px;}
+  .cd-titulo{font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted);flex:1;}
+  .cd-x{background:none;border:none;color:var(--muted);font-size:19px;line-height:1;cursor:pointer;padding:0 3px;}
+  .cd-x:hover{color:var(--red);}
+  /* El botón ocupa el alto del card entero, para que apretar "en cualquier parte
+     del card" haga lo que el visitante espera. */
+  .cd-vacio{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+            background:none;border:2px dashed var(--border);border-radius:11px;margin:11px;padding:30px 18px;
+            font-family:inherit;color:var(--text);cursor:pointer;text-align:center;}
+  .cd-vacio:hover{border-color:var(--azul);background:#f3f7ff;}
+  .cd-vacio-mas{width:34px;height:34px;border-radius:50%;background:var(--azul);color:#fff;font-size:21px;line-height:1;
+                display:flex;align-items:center;justify-content:center;margin-bottom:3px;}
+  .cd-vacio-t{font-size:16px;font-weight:800;}
+  .cd-vacio-s{font-size:12.5px;color:var(--muted);max-width:280px;line-height:1.45;}
+  .cd-elegido{padding:13px;}
+  .cd-sujeto{display:flex;align-items:center;gap:11px;margin-bottom:12px;}
+  .cd-crest{width:34px;height:34px;border-radius:50%;background:var(--azul);color:#fff;font-size:12px;font-weight:800;
+            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .cd-op-txt{display:flex;flex-direction:column;min-width:0;}
+  .cd-op-s{font-size:11.5px;color:var(--muted);}
+  .cd-sujeto-n{font-size:17px;font-weight:800;}
+  .cd-otro{margin-left:auto;background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;
+           padding:5px 9px;font-family:inherit;font-size:11.5px;font-weight:700;cursor:pointer;flex:0 0 auto;}
+  .cd-otro:hover{border-color:var(--azul);color:var(--azul);}
+  /* La fórmula en lugar de un toggle Promedio/Sumatoria: con un agregador por
+     bloque, un botón único ya no puede decir cómo se mide este lado. */
+  .cd-formula{margin:0 0 10px;font-size:12px;color:var(--azul);font-weight:700;line-height:1.45;}
+  .cd-anio{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted);font-weight:700;}
+  .cd-anio select{flex:1;font-family:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--border);
+                  border-radius:8px;background:#fff;color:var(--text);cursor:pointer;}
+  .cd-anios{margin:0;font-size:12px;color:var(--muted);font-weight:700;}
+  .cd-pie{background:linear-gradient(160deg,var(--azul-dark),var(--azul-dark));border-radius:0 0 14px 14px;
+          margin-top:-14px;padding:0 20px 20px;margin-bottom:22px;}
+  .cd-go{background:var(--oro);color:var(--azul-dark);border:none;border-radius:10px;padding:12px 22px;
+         font-family:inherit;font-size:14.5px;font-weight:800;cursor:pointer;}
+  .cd-go:hover{filter:brightness(1.07);}
+  .cd-go.off{background:rgba(255,255,255,.12);color:#8fa3c4;cursor:not-allowed;}
+
+  /* El resultado: una barra por lado en cada indicador, a escala DENTRO de su
+     indicador y no entre indicadores (misma regla que la comparación de hoy). */
+  .cd-resultado{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:26px;}
+  .cd-resultado[hidden]{display:none;}
+  .cd-res-head h2{margin:0 0 4px;font-size:20px;}
+  .cd-res-sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
+  .cd-cargando{color:var(--muted);font-size:13.5px;margin:0;}
+  .cd-tabla{width:100%;border-collapse:collapse;}
+  .cd-tabla th, .cd-tabla td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+  .cd-tabla thead th{border-bottom:2px solid var(--azul);}
+  .cd-res-n{font-size:14.5px;font-weight:700;}
+  .cd-res-m{display:block;font-size:11.5px;color:var(--muted);font-weight:400;margin-top:3px;}
+  .cd-ind{font-size:13px;color:var(--muted);font-weight:700;width:190px;}
+  .cd-num{font-size:17px;font-weight:800;display:block;}
+  .cd-num.neg{color:var(--red);}
+  .cd-nodato{color:var(--muted);font-size:13px;font-style:italic;}
+  .cd-bar{display:block;height:6px;background:#eef2f9;border-radius:3px;margin-top:6px;overflow:hidden;max-width:260px;}
+  .cd-bar-in{display:block;height:100%;background:var(--azul);}
+  .cd-bar-in.neg{background:var(--red);}
+  .cd-avisos{margin-top:14px;}
+  .cd-avisos p{color:var(--muted);font-size:12px;line-height:1.5;margin:0 0 5px;}
+
   @media (max-width:900px){
     .sel-modal{padding:12px 8px;}
+    /* Los dos cards se apilan y el VS queda en el medio. */
+    .cd-wrap{grid-template-columns:1fr;}
+    .cd-vs{padding:4px 0;}
+    .cd-tabla .cd-ind{width:auto;}
   }
 </style>
 </head>
@@ -856,20 +991,26 @@ consulta puntual, nunca lectura de corrido.
     <h1 data-i18n="vs.title">Comparar</h1>
     <p class="subtitle" data-i18n="vs.sub">Dos clubes lado a lado, o un club contra el promedio de su liga. Todo en USD y en formato simplificado: son las dos condiciones para que la comparación signifique algo.</p>
 
-    <!-- Sin club activo no hay con qué arrancar: la comparación de hoy se para siempre sobre
-         el club que estás viendo. Lo destapa applyClubMode(). -->
-    <div class="fin-sel vacio" id="vsSinClub" hidden>
-      <span class="fin-sel-ico">?</span>
-      <span class="fin-sel-txt">
-        <span class="fin-sel-t" data-i18n="vs.none.t">Primero elegí un club</span>
-        <span class="fin-sel-s" data-i18n="vs.none.s">La comparación arranca desde el club que estás viendo, y todavía no elegiste ninguno.</span>
-      </span>
-      <button type="button" class="fin-sel-btn" id="vsPick" data-i18n="vs.none.btn">Elegir un club</button>
-    </div>
+    <!-- LOS DOS CARDS (Versión 148, etapa 4 del merge del prototipo 4). Cada uno es un
+         LADO, y un lado es una suma de bloques: una liga-temporada, un puñado de clubes,
+         o una mezcla de los dos, cada bloque con su propio agregador. Los llena
+         js/selector.js con el mismo modal de pasos que usa el camino "ver un club";
+         lo único que cambia es a dónde va lo elegido.
+         NO necesitan club activo: por eso el aviso "primero elegí un club" que había acá
+         hasta la Versión 147 desapareció. -->
+    <div class="cd-wrap" id="cdWrap"></div>
+    <div class="cd-pie" id="cdPie"></div>
 
-    <!-- PUNTO DE ENTRADA 2 de 3 (Versión 137): la tarjeta, abajo de los KPIs. Es el que de
-         verdad se usa, porque aparece donde el visitante ya está mirando números y se le
-         ocurre la pregunta. Desaparece cuando ya hay una comparación activa. -->
+    <!-- El resultado. Fuera del bloque de arriba porque es lo que se mira, no un control. -->
+    <div class="cd-resultado" id="cdResultado" hidden></div>
+
+    <!-- LA COMPARACIÓN VIEJA (js/comparar-clubes.js), en retirada. Desde la Versión 148
+         los dos cards de arriba son la forma de comparar, así que esta tarjeta ya no se
+         muestra nunca (la esconde applyClubMode) y lo de abajo solo aparece si alguien
+         entra por el botón "Comparar" del header o por la bandeja de chips. Los tres
+         puntos de entrada, el archivo y este markup se retiran juntos en la etapa 5;
+         hasta entonces conviven porque ese archivo todavía dibuja la vista de barras
+         completa, que Guido pidió conservar. -->
     <div class="cmp-cta" id="cmpCta" hidden>
       <span class="cc-ico" aria-hidden="true">&#8644;</span>
       <span class="cc-txt">
@@ -1327,44 +1468,44 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '147';</script>
-<script src="data/lang/langs.js?v=147"></script>
-<script src="js/i18n.js?v=147"></script>
-<script src="data/clubs.js?v=147"></script>
+<script>window.ASSET_V = '149';</script>
+<script src="data/lang/langs.js?v=149"></script>
+<script src="js/i18n.js?v=149"></script>
+<script src="data/clubs.js?v=149"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=147"></script>
+<script src="data/club-index.js?v=149"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=147"></script>
-<script src="data/club-leagues.js?v=147"></script>
-<script src="data/category-map.js?v=147"></script>
-<script src="data/site-labels.js?v=147"></script>
-<script src="data/currency-map.js?v=147"></script>
-<script src="data/sources-view.js?v=147"></script>
+<script src="data/leagues.js?v=149"></script>
+<script src="data/club-leagues.js?v=149"></script>
+<script src="data/category-map.js?v=149"></script>
+<script src="data/site-labels.js?v=149"></script>
+<script src="data/currency-map.js?v=149"></script>
+<script src="data/sources-view.js?v=149"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=147"></script>
-<script src="js/finanzas-render.js?v=147"></script>
+<script src="js/finanzas-calc.js?v=149"></script>
+<script src="js/finanzas-render.js?v=149"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=147"></script>
+<script src="js/selector.js?v=149"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
      clubes, y club contra el promedio de su liga. Ver su cabecera. -->
-<script src="js/comparar-clubes.js?v=147"></script>
+<script src="js/comparar-clubes.js?v=149"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1592,7 +1733,6 @@ consulta puntual, nunca lectura de corrido.
     if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
 
     document.getElementById('inicioClub').hidden = cold;
-    document.getElementById('vsSinClub').hidden = !cold;
 
     CLUB_SELECTOR.renderButton();
     if(window.CLUB_COMPARE) CLUB_COMPARE.draw();
@@ -1631,7 +1771,6 @@ consulta puntual, nunca lectura de corrido.
     CLUB_SELECTOR.open(false);
   });
   document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
-  document.getElementById('vsPick').addEventListener('click', () => CLUB_SELECTOR.open(false));
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
   document.getElementById('anioSelect').addEventListener('change', () => {
