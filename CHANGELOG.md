@@ -1588,3 +1588,37 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Efecto colateral: resuelve la mitad de la to-do 21(a) (San Lorenzo 2014-15/2015-16/2016-17
   nunca se habían transcripto) — la comprobación de sus 3 tipos de cambio `fxSource:'unknown'`
   sigue pendiente, es trabajo de mapeo de datos, no de esta tarea.
+
+## Versión 157: la transcripción masiva sigue el ritmo del sourcing en simultáneo (6 países más)
+
+- Continuación directa de la Versión 156, mismo pedido de Guido y mismo alcance (solo
+  transcripción, nada de mapeo de datos). Mientras corría, sesiones de sourcing en paralelo
+  fueron agregando países nuevos a `Clubes/` — el driver, armado para re-escanear y procesar
+  solo lo que falte, terminó transcribiendo ~570 PDF más sin haber sido relanzado a mano para
+  cada país: Bélgica (~315, ver más abajo), China, Corea del Sur, Croacia, Dinamarca y Francia.
+- **Bélgica necesitó ruteo de idioma POR CLUB, no por país**: a diferencia de todos los países
+  anteriores, Bélgica tiene clubes que presentan sus cuentas en francés (Standard Liège,
+  Charleroi, RAAL La Louvière, Union Saint-Gilloise — Valonia y el lado francófono de Bruselas)
+  y otros en neerlandés (el resto, Flandes — confirmado renderizando la página 1 de una muestra
+  de cada uno antes de asumir nada, no por el nombre del archivo: todos comparten el nombre
+  genérico `jaarrekening-...` sea cual sea el idioma real adentro). El reporte anual de Deloitte
+  sobre la Pro League, aparte, está en inglés.
+- Corea del Sur, China y Croacia sumaron `kor`/`chi_sim`/`hrv` sin sorpresas — page-by-page
+  legible, incluidos los caracteres chinos y los diacríticos croatas (đ, š, ž). Único hallazgo
+  menor: los índices con puntos suspensivos largos (tabla de contenidos) confunden a Tesseract en
+  coreano, que alucina Hangul repetido en vez de leer los puntos — no pierde datos financieros
+  (esas páginas son solo el índice), no se persiguió más.
+- Dos gaps de idioma reales, encontrados y corregidos EN CALIENTE (con archivos ya mal
+  transcriptos, borrados y re-hechos) porque el país apareció después de armar la tabla de
+  idiomas: Dinamarca (13 archivos con modelo de español antes de agregar `dan`) y sin
+  consecuencia todavía cuando se agregó Francia (`fra`, a tiempo).
+- Bug de infraestructura real, no de idioma: el driver quedó en loop infinito reintentando UN PDF
+  corrupto (`Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2021.pdf` — descarga trunca,
+  `pdfinfo`/`pdftoppm` no pueden ni abrirlo, xref y trailer rotos, no es recuperable con las
+  herramientas de este entorno) miles de veces por minuto, porque el script no tenía forma de
+  recordar "esto ya falló, no lo reintentes" entre pasadas. Se agregó una lista de fallos
+  permanentes (`permafail.txt`): un archivo se reintenta como máximo una vez por corrida; si
+  falla, se excluye de las pasadas siguientes y queda listado al final para atención manual. Ese
+  PDF puntual sigue sin transcribir — necesita que alguien lo vuelva a descargar.
+- (Ver también CLAUDE.md, gotcha nuevo sobre `pdfinfo | grep` y bytes NUL en metadata, encontrado
+  en el mismo tramo con los PDF de clubes chinos.)
