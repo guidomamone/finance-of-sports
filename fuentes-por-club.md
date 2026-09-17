@@ -369,16 +369,16 @@ completo.
 - [Borussia Dortmund](<fuentes/Alemania/Borussia Dortmund.md>) — 7 ejercicios reales (2018/19-2024/25), Geschäftsbericht completo, sin cargar aún — Último chequeo: 2026-09-17
 - [Bayern Munich](<fuentes/Alemania/Bayern Munich.md>) — 4 ejercicios reales vía comunicado de la Junta, sin cargar aún — Último chequeo: 2026-09-17
 - [RB Leipzig](<fuentes/Alemania/RB Leipzig.md>) — 12 ejercicios reales, serie completa 2014-2025, sin cargar aún — Último chequeo: 2026-09-17
-- [TSG Hoffenheim](<fuentes/Alemania/TSG Hoffenheim.md>) — 6 ejercicios reales descargados de 16 confirmados, sin cargar aún — Último chequeo: 2026-09-17
+- [TSG Hoffenheim](<fuentes/Alemania/TSG Hoffenheim.md>) — 16 ejercicios reales, serie completa 2009-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [Bayer Leverkusen](<fuentes/Alemania/Bayer Leverkusen.md>) — dead-end estructural (exención §264 HGB, socio único Bayer AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [VfL Wolfsburg](<fuentes/Alemania/VfL Wolfsburg.md>) — dead-end estructural (exención §264 HGB, socio único Volkswagen AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [Hamburger SV](<fuentes/Alemania/Hamburger SV.md>) — 4 ejercicios reales de 2 entidades (Fußball AG & Co. KGaA + e.V. matriz, no confundir) — Último chequeo: 2026-09-17
-- [Borussia Mönchengladbach](<fuentes/Alemania/Borussia Mönchengladbach.md>) — entidad real confirmada (GmbH activa), PDF pendiente de bajar (corte de tooling), duda de perímetro en dudas-por-club.md — Último chequeo: 2026-09-17
-- [Werder Bremen](<fuentes/Alemania/Werder Bremen.md>) — entidad confirmada, PDF pendiente de bajar — Último chequeo: 2026-09-17
-- [Eintracht Frankfurt](<fuentes/Alemania/Eintracht Frankfurt.md>) — entidad y filing confirmados, PDF pendiente de bajar — Último chequeo: 2026-09-17
-- [VfB Stuttgart](<fuentes/Alemania/VfB Stuttgart.md>) — entidad confirmada, PDF pendiente de bajar — Último chequeo: 2026-09-17
-- [1. FC Köln](<fuentes/Alemania/1. FC Köln.md>) — entidad y filing confirmados, PDF pendiente de bajar — Último chequeo: 2026-09-17
-- [FC Augsburg](<fuentes/Alemania/FC Augsburg.md>) — entidad y filing confirmados, PDF pendiente de bajar — Último chequeo: 2026-09-17
+- [Borussia Mönchengladbach](<fuentes/Alemania/Borussia Mönchengladbach.md>) — 4 ejercicios reales (2021-2024), confirmado real filer con serie completa desde 2006, sin cargar aún — Último chequeo: 2026-09-17
+- [Werder Bremen](<fuentes/Alemania/Werder Bremen.md>) — 3 ejercicios reales (2022/23-2024/25), sin cargar aún — Último chequeo: 2026-09-17
+- [Eintracht Frankfurt](<fuentes/Alemania/Eintracht Frankfurt.md>) — 2 ejercicios reales (2023/24-2024/25), sin cargar aún — Último chequeo: 2026-09-17
+- [VfB Stuttgart](<fuentes/Alemania/VfB Stuttgart.md>) — 2 ejercicios reales (2023-2024), sin cargar aún — Último chequeo: 2026-09-17
+- [1. FC Köln](<fuentes/Alemania/1. FC Köln.md>) — 2 ejercicios reales (2023/24-2024/25), sin cargar aún — Último chequeo: 2026-09-17
+- [FC Augsburg](<fuentes/Alemania/FC Augsburg.md>) — 2 ejercicios reales (2023/24-2024/25), sin cargar aún — Último chequeo: 2026-09-17
 - [1. FC Union Berlin](<fuentes/Alemania/1. FC Union Berlin.md>) — 100% e.V., balance real solo para socios, solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [SC Freiburg](<fuentes/Alemania/SC Freiburg.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [1. FSV Mainz 05](<fuentes/Alemania/1. FSV Mainz 05.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17

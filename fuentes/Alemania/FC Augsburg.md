@@ -3,17 +3,21 @@
 - **Deporte**: Fútbol
 - **Liga / competencia**: Bundesliga (Alemania, 1ª división)
 - **Entidad legal**: Fußball-Club Augsburg 1907 GmbH & Co. KGaA (HRB 21812, Amtsgericht Augsburg).
+  Confirmado real filer (no exento).
 
-## Estado (sesión 2026-09-16/17): entidad confirmada, filing real confirmado por prensa, sin descargar
+## Qué se bajó (sesión 2026-09-16/17)
 
-WebSearch confirma Jahresabschluss disponibles para los ejercicios cerrados en 2023, 2024 y 2025
-(cierre 30 de junio) — esta sociedad SÍ deposita cuentas propias. **No se llegó a entrar al portal y
-bajar el PDF** por priorización de tiempo. Procedimiento idéntico al ya usado para RB Leipzig/
-Hoffenheim, ver `fuentes/Alemania/_notas-generales.md` sección 1.
+**2 ejercicios**, `Clubes/Alemania/FC Augsburg/`, ambos Konzernabschluss (consolidado):
 
-## Fuente alternativa ya asegurada
+- `konzernabschluss-2024-25.pdf` — cerrado 30/6/2025, 24 páginas.
+- `konzernabschluss-2023-24.pdf` — cerrado 30/6/2024, 24 páginas.
 
-DFL Finanzkennzahlen (`Clubes/Alemania/_DFL-Finanzkennzahlen/`) trae Bilanz + GuV de FC Augsburg para
-7 ejercicios (fiscal 2018-2024), columna "Konzern".
+## Serie disponible sin bajar
+
+Unternehmensregister muestra al menos 2 páginas de resultados (mínimo 3 ejercicios listados: 2024/25,
+2023/24, 2022/23), con ejercicios más antiguos probablemente disponibles pero sin confirmar en
+detalle. El ejercicio 2022/23 no se llegó a bajar esta sesión por priorización de tiempo. Mismo
+procedimiento que los 2 ya bajados: buscar "Fußball-Club Augsburg 1907 GmbH & Co. KGaA" en
+`unternehmensregister.de`.
 
 - Último chequeo: 2026-09-17.

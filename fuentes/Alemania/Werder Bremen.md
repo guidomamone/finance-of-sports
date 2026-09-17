@@ -3,22 +3,24 @@
 - **Deporte**: Fútbol
 - **Liga / competencia**: Bundesliga (Alemania, 1ª división)
 - **Entidad legal**: SV Werder Bremen GmbH & Co. KGaA (HRB 21775 HB, Amtsgericht Bremen), fundada
-  05/12/2003. Socio único/mayoritario es la asociación (e.V.), no una corporación externa — por lo
-  tanto no debería aplicar la exención por garantía del §264 Abs. 3/264b HGB (mismo razonamiento que
-  RB Leipzig/TSG Hoffenheim/Mönchengladbach), aunque esto no se verificó todavía en
-  Unternehmensregister.
+  05/12/2003. Confirmado real filer (no exento) — tiene varias subsidiarias pequeñas (Werder Bremen
+  Payment GmbH, Werder Bremen Merchandising GmbH) que SÍ están exentas bajo la garantía de la propia
+  SV Werder Bremen GmbH & Co. KGaA (mismo mecanismo del §264 Abs.3/264b HGB que en Leverkusen/
+  Wolfsburg, pero aplicado a subsidiarias menores, no a la entidad principal del club).
+- **Canal**: `unternehmensregister.de`.
 
-## Estado (sesión 2026-09-16/17): entidad confirmada, sin verificar en Unternehmensregister
+## Qué se bajó (sesión 2026-09-16/17)
 
-Confirmada la razón social y el HRB por WebSearch (prensa confirma que el balance más reciente se
-publicó el 02.07.2026). **No se llegó a buscar en `unternehmensregister.de`** por priorización de
-tiempo dentro de la sesión (se agotó con Dortmund/Bayern/RB Leipzig/Hoffenheim/Leverkusen/Wolfsburg/
-HSV/Mönchengladbach antes de llegar a este club) — el procedimiento a seguir es idéntico al ya usado
-para esos clubes, ver `fuentes/Alemania/_notas-generales.md` sección 1.
+**3 ejercicios**, `Clubes/Alemania/Werder Bremen/`, todos Konzernabschluss (consolidado):
 
-## Fuente alternativa ya asegurada
+- `konzernabschluss-2024-25.pdf` — cerrado 30/6/2025, 20 páginas.
+- `konzernabschluss-2023-24.pdf` — cerrado 30/6/2024, 21 páginas.
+- `konzernabschluss-2022-23.pdf` — cerrado 30/6/2023, 21 páginas.
 
-DFL Finanzkennzahlen (`Clubes/Alemania/_DFL-Finanzkennzahlen/`) trae Bilanz + GuV de Werder Bremen
-para 7 ejercicios (fiscal 2018-2024), columna "Konzern".
+## Serie disponible sin bajar
+
+Unternehmensregister muestra 34 páginas de resultados para esta entidad — hay ejercicios anteriores
+a 2022/23 sin confirmar en detalle ni descargar, por priorización de tiempo. Mismo procedimiento que
+los 3 ya bajados: buscar "SV Werder Bremen GmbH & Co KGaA" en `unternehmensregister.de`.
 
 - Último chequeo: 2026-09-17.

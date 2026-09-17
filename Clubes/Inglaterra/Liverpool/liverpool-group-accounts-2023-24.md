@@ -1,0 +1,1977 @@
+
+--- pág. 1 ---
+
+The Liverpool Football Club and
+Athletic Grounds Limited
+
+Annual report and consolidated
+financial statements
+Registered number 00035668
+
+31 May 2024
+
+mW | i mm
+
+COMPANIES HOUSE
+
+
+--- pág. 2 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements -
+
+31 May 2024
+Contents
+Group strategic report |
+Group corporate governance report 4
+Group directors’ report 5
+Statement of directors’ responsibilities in respect of the annual report and the financial statements 8
+Independent auditor’s report to the members of The Liverpool Football Club and Athletic Grounds Limited 9
+Consolidated Profit and Loss Account and Other Comprehensive Income 12
+Consolidated Balance Sheet : ; 13
+Company Balance Sheet , 14
+Consolidated Statement of Changes in Equity ; 15
+Company Statement of Changes in Equity 16
+Consolidated Statement of Cash Flows 17
+Notes — : 18
+
+\
+
+--- pág. 3 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+Annual report and consolidated financial statements
+31] May 2024
+
+Group Strategic Report
+
+The directors present their strategic report and financial statements of The Liverpool Football Club and Athletic
+Grounds Limited (“the Club” or “Company”) and its subsidiaries (together “the Group”) for the year ended 31 May
+2024.
+
+Principal activities
+
+The Company is a wholly owned subsidiary of UKSV Holdings Company Limited, a company incorporated in the
+United Kingdom.
+
+The Company’s principal activity during the year continued to be those of a professional football club and related
+activities. ;
+
+Strategy
+
+The four key elements of the Group’s strategy are to:
+
+Improve football performance through a positive playing style and strategic player investment;
+Improve the scouting and player recruitment process;
+
+Improve the fan experience and interaction with the Club; and
+Leverage the Club’s global following to deliver profitable revenue growth.
+
+Review of the business
+
+During the reporting period the Club were successful in winning the English Football League Cup. The Club
+finished in third place in the Premier League qualifying for the UEFA Champions League competition for the
+2024/2025 season. The Club also reached the Quarter Finals of the UEFA Europa League during the 2023/2024
+
+season.
+Profit and Loss Account
+Turnover for the year ended 31 May 2024 was £613.8 million (2023: £593.8 million).
+
+Media revenue for the year ended 31 May 2024 was £203.7 million (2023: £241.6 million). The decrease mainly
+related to the Club’s participation in the Europa League competition in Season 2023/24 compared to the Club’s
+participation in the Champions League in Season 2022/23. This was partially offset by increased Premier League
+Media revenue as a result of stronger on pitch performance in Season 2023/24.
+
+Match day revenue for the year ended 31 May 2024 was £101.7 million (2023: £79.8 million). The increase in
+matchday revenue was as a result of the opening of the Anfield Road stand during the season and higher number of
+competitive games being played in Season 2023/24.
+
+Commercial revenue for the year ended 31 May 2024 was £308.4 million (2023: £272.5. million), with strong
+growth in Sponsorship and Retail revenue during this period.
+
+Administrative expenses for the year ended 31 May 2024 were £600.0 million (2023: £561.5 million). The increase
+mainly related to higher salary and overhead costs during the period resulting from an increased number of fixtures
+during the year and from a higher cost base to support the increased commercia! revenue.
+
+The profit on the disposal of registrations for the year ended 31 May 2024 was £22.0 million (2023: £33.8 million).
+
+Interest payable for the year ended 31 May 2024 was £12.6 million (2023: £6.2 million).
+
+The loss before taxation for the year ended 31 May 2024 was £57.1 million (2023: £9.0 million loss).
+
+--- pág. 4 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+Annual report and consolidated financial statements
+31 May 2024
+
+Group Strategic report (continued)
+
+Review of the business (continued)
+Balance Sheet
+
+Intangible fixed assets have increased from £289.1 million at 31 May 2023 to £353.7 million at 31 May 2024. The
+main element of this is the registration movement from a net book value of £289.1 million at 31 May 2023 to £353.7
+million at 31 May 2024. This is as‘a result of player and key football management staff acquisitions of £194.5
+million offset by the net book value of disposals of £14.8 million arid amortisation and impairment of £115.1
+million.
+
+Tangible fixed assets have increased from £274.6 million at 3] May 2023 to £310.4 million at 31 May 2024. The
+main element of this increase related to the costs associated with the Anfield Road stadium expansion.
+
+Net bank debt after deferred loan costs has decreased by £13.9 million from £122.0 million at 31 May 2023 to
+£108.1 million at 31 May 2024.
+
+Intercompany debt has increased by £127.3 million from £71.4 million at 31 May 2023 to £198.7 million at 31 May
+2024.
+
+Key performance indicators
+
+The principal key performance indicators for the financial year were as follows:
+Non-financial
+
+e European competition qualification ~ The Club qualified for the Champions League competition for the
+2024/2025 season having qualified for European Competitions in the previous seven seasons.
+
+e Attendance versus capacity — 98% attendance during 2023/2024 season.
+
+e Performance of all squads — as well as the Club’s performance as detailed in the review of the business, the
+LFC Women’s team finished 4" in the FA Women’s Super League (7"" place finish in 2022/2023 season).
+
+Financial
+
+Revenue
+
+Payroll costs
+
+EBITDA (Earnings before interest, tax, depreciation, and amortisation)
+Cash flow
+
+Player trading
+
+e Capital expenditure
+
+Principal risks and uncertainties
+
+The Board acknowledges there are risks that affect the Group and action is taken to minimise the risks. The directors
+consider the principal risks and uncertainties associated with running a professional football Club such as Liverpool
+Football Club to be the player transfer market and wage levels, attendance levels, and revenues from broadcasting
+contracts and football competitions. An area of focus is the player transfer market and wage costs, and the aim is to
+manage these costs within financial constraints, whilst remaining as competitive as possible. Development of the
+Club’s commercial revenue continues, and the Board is mindful that continued success on the field is paramount to
+this development. Regular meetings are held internally at the Club on the latest risks and financial and commercial
+issues, including health and safety updates.
+
+Future developments
+
+The Club will continually aim to be successful both on and off the pitch, with successful seasons in the Premier
+League and UEFA competitions, whilst continuing to explore new commercial opportunities to further support the
+Club.
+
+--- pág. 5 ---
+
+" The Liverpool Football Club and Athletic Grounds Limited
+
+' Annual report and consolidated financial statements
+‘ 3] May 2024
+
+Group Strategic report (continued)
+
+Financial risk management objectives and policies
+
+An explanation of the Group’s exposure to liquidity and cash flow risk, currency risk and credit risk is given in note
+19 of the financial statements.
+
+Directors’ statement of responsibilities under section 172 Companies Act 2006
+
+The Directors understand their duty to promote the success of the Group for the benefits of its members while
+considering the Group’s long-term decisions and the impacts on, and views of, the wider stakeholder groups. The
+main stakeholders of the business include fans, employees, sponsors, suppliers, lenders, football authorities and
+owners. For the Group success means the performance of the team on the pitch and the long-term increase in the
+value of the Group stakeholders whilst also having regard to a number of broader factors, including the impact of the
+Group’s operations on the community and the environment and the likely consequences of decisions in the long
+term.
+
+The Directors continue to consider each of the sub-sections of s.172 during the year:
+
+e The likely consequences of any decision in the long-term
+
+¢ The need to foster the Group’s relationships with supporters, suppliers, customers, and others
+e The impact of the Group’s operations on the community and environment
+
+e The desirability of the Group maintaining a reputation for high standards of business conduct
+e The need to act fairly between members of the Group
+
+e The interest of the Group’s employees
+
+The Directors understand that the strength of the business is built on the hard work and dedication of all its employees,
+with the Club providing an environment where opportunities exist for employees to realise their potential in a working -
+environment where they can succeed. Reds Together is the Club’s approach to Equality, Diversity & Inclusion. The
+Club aims to be the most inclusive football club — providing fair opportunities to as many different people as possible,
+being welcoming and meeting their needs as best it can in employment, watching the game, playing the game and
+supporting the team.
+
+The Club always has and continues to enjoy a unique relationship with its loyal and dedicated supporter base. It
+recognises and respects the invaluable contribution made by each and every supporter to the ongoing success and
+longevity of the Club. As such, Liverpool Football Club endeavours to be open and accessible to its supporters,
+communicating information via the appropriate channels in a clear and effective manner.
+
+To further demonstrate the value the Club places in the fan base, an official Supporters Board was formed on 17%
+August 2022. The Board is represented by 16 members, with representatives from many of the existing fan groups.
+The Supporters Board meets with Executives and Senior Club staff to discuss strategic issues, with the Chair and Vice
+Chair meeting with the Board of Directors on an annual basis.
+
+The Club has a constructive and cooperative relationship with the regulatory bodies that authorise and regulate its
+business activities which allows the Club to maintain a reputation for high standards of business conduct.
+
+The Club is dedicated to being a good neighbour. Whether that is engaging people in Liverpool FC’s local or global
+communities, the Club is committed to supporting fans, schools, community organisations and grassroots football to
+inspire positive and lasting change in people’s lives.
+
+By order of the board
+
+ea
+Andrew Hughes Anfield Road
+Director Liverpool
+
+L4 0TH
+
+--- pág. 6 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+: Annual report and consolidated, financial statements
+. 31 May 2024
+
+Group Corporate Governance report
+
+Introduction
+
+The Wates Corporate Governance Principles for Large Private Companies serves as a framework to demonstrate
+how Directors have had regard for the matters set out in section 172(1)(a) to (f) of the Companies Act 2006 when
+performing their duties, including how Directors have engaged with and considered the interests of all stakeholders.
+The bélow sets out how the Directors have considered and incorporated the Wates principles.
+
+Purpose and Leadership
+
+The Directors of the Club, together with the Executive Committee and wider Leadership team continually review
+and communicate the Club’s strategy to ensure it is aligned with the purpose of the Company and promotes its
+values and culture.
+
+Leadership Composition
+
+The Board consists of representatives of Ownership, the Chief Executive Officer, Managing Director, and a Non-
+Executive Director. The Board delegates the day to day running of the Club to the Executive Committee and other
+key decision-making bodies across its Football and Non-Football operations. The Executive Committee members
+include senior leaders from Finance, Legal, Human 1 Resources, Commercial and Operations departments with a
+diverse range of skills and expertise.
+
+Director Responsibilities
+
+The Board and its individual directors have a clear understanding of their accountability and responsibilities. The
+Executive Committee and other decision-making boards meet regularly to ensure tasks are reviewed and delegated
+to the individuals with appropriate knowledge and experience. The Board also understands the importance of
+promoting the correct ways of working to foster the right culture for all Club employees and operate a Corporate
+Governance Framework and Equality, Diversity and Inclusion policy.
+
+Opportunity and risk
+
+The Executive Committee and other decision-making boards meet on a regular basis to discuss opportunities to
+create and preserve value, and uses both internal expertise and external consultants to explore innovative ways of
+working to further growth.
+
+The Club also monitors and acts to mitigate risk, actively managing a Risk Register and encouraging regular
+communication between all leaders of the Club to ensure the right people are engaged in the right processes.
+
+Remuneration
+
+The Club regularly reviews the remuneration and benefits of its staff and how this compares to market benchmarks.
+The Club also operates bonus schemes linked to the financial success of the company and the performance of the
+individual staff member in their role. The Club is committed to creating a culture in which employees can reach
+their potential and be rewarded for their contribution to the Club’s success.
+
+Stakeholder Relationships and Engagement
+
+The Club values all Stakeholders and continually looks to improve opportunities for them to engage and further
+improve relationships which are essential to the longer-term success of the Club. The Directors have further
+disclosed its engagement with stakeholders in their Statement of Responsibilities under section 172 Companies Act
+2006 on page 3 of these financial statements.
+
+--- pág. 7 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+Annual report and consolidated financial statements
+3] May 2024
+
+Group Directors’ report
+
+The directors present their directors’ report and financial statements of The Liverpool Football Club and Athletic
+Grounds Limited (the “Company”) and its subsidiaries (together “the Group”) for the year ended 31 May 2024.
+
+Results and dividend
+
+The Consolidated Group Profit and Loss Account on page 12 shows a loss before taxation for the year of £57.1
+million (2023: £9.0 million). The directors do not recommend the payment of a dividend (2023: nil).
+
+Directors ,
+The directors who held office during the year were as follows:
+
+J Henry
+
+T Werner
+M Gordon
+M Egan
+
+K Dalglish
+A Hughes
+W Hogan
+
+rc
+
+Directors benefit from qualifying third-party indemnity provisions in place during the financial period and at the
+date of this report.
+
+Going concern
+
+The Group made a loss for the year of £43.5 million (2023: £6.9 million loss) and has net current liabilities of
+£344.0 million (2023: £180.9 million).
+
+In determining whether the Group's annual financial statements can be prepared on a going concern basis and whether
+there is a material uncertainty with respect to going concern, the Directors have considered the Group's business
+activities, together with the factors likely to affect its future development, performance and position for a period to 30
+September 2025. The review also includes the financial position of the Company and the wider Group that the
+Company is part of, their short term and long-term cash flows, liquidity position and borrowing facilities.
+
+The key factors considered by the directors in making the assessment of going concern were as follows:
+
+* The implications of changes to the economic environment on the Group's revenues and profits, assuming the club
+can continue to compete in all competitions without interruption from further disruptive global or domestic events.
+
+* A prudent assumption in respect of the expected success of the club in the various competitions that it expects to
+compete in during the coming season, including the Premier League and UEFA competitions.
+
+* Cash flows in respect of transfers of players based on the underlying contractual terms.
+
+* On 24" September 2024, the Group and its holding company, UKSV Holdings Company Limited, refinanced its
+credit facility which was due to mature in July 2025. This provided £350.0m of facilities for a term of five years and
+is available for general corporate purposes including working capital and letters of credit. The Group’s forecasts and
+projections show that the Group should be able to operate within the level-of the credit facility and meet its
+obligations as they fall due in the foreseeable future.
+
+* Confirmation the Group’s Parent does not intend to call the parent loan undertaking for payment in the next 12
+months unless the Group has sufficient resources to enable repayment amounting to.£198.7 million.
+
+--- pág. 8 ---
+
+oa The Liverpool Football Club and Athletic Grounds Limited
+
+Annual report and consolidated financial statements
+31 May 2024
+
+Group Directors’ report (continued)
+
+Going concern (continued)
+
+Conclusion
+
+During the year, the intercompany loan from FSG Football Group, LLC (formerly UKSV I, LLC), has increased
+based on the injection of cash at Club level following an equity investment within FSG Football Group, LLC Group.
+The Directors therefore believe that even in a scenario of downside performance, the club would have sufficient
+liquidity, based on the cash generation of the ongoing business, its existing revolving credit facility, and existing
+intercompany loans. The Directors are therefore satisfied that there is not a material uncertainty regarding going
+concern. In preparing the financial statements, the Directors have not included any adjustments that would be
+required to be made if they were prepared on a basis other than going concern.
+
+Subsequent events
+
+Details of subsequent events are given in note 27 of the financial statements.
+
+Employees
+
+- Within the bounds of commercial confidentiality, the Group endeavours to keep staff at all levels informed of
+matters that affect the progress of the Group and are of interest to them as employees.
+
+The Group operates an equal opportunities policy. The aim of this policy is to ensure that there should be equal
+opportunity for all, and this applies to external recruitment, internal appointments, terms of employment, conditions
+of service and opportunity for training and promotion regardless of gender, ethnic origin or disability.
+
+Disabled persons are given full and fair consideration for all types of vacancy in as much as the opportunities
+available are constrained by the practical limitations of the disability. Should, for whatever reason, an employee of
+the Group become disabled whilst in employment, every step, where appropriate, will be taken to assist with
+rehabilitation and suitable re-training. The Group maintains its own health, safety and environmental policies
+covering all aspects of its operations.
+
+Regular meetings and inspections take place to ensure all legal requirements are adhered to and that the Group is
+responsible for the needs of the employees and the environment.
+
+--- pág. 9 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+‘ Annual report and consolidated financial statements
+31 May 2024
+
+Group Directors’ report (continued)
+Streamlined Energy & Carbon Report (SECR)
+
+The Group has been pro-active during the season in progressing towards its ambitious energy efficiency and carbon
+reduction targets. The primary development has been the adoption of the IS0:50001 standard by the club which has
+now been independently verified and continued during this period. This standard provides an Energy Management
+System through which the Group has monitored its energy usage during the season. The ISO:50001 standard and
+. associated systems have underpinned the Group’s Carbon Management Plan. The Group is now carbon neutral which
+has been verified in accordance with BSI’s PAS2060. Through ‘The Red Way’ scheme, the Group has used its ESOS
+data and additional surveys to identify further potential savings. With ESOS phase 3 now in progress the Group will
+be looking to implement further savings found from future site surveys. Through this work, the Group has formalised
+its commitment to energy efficiency and look forward to progressing this in the next financial period. The current
+intensity ratio for the reporting period was 6.5 (2023: 5.8). This is comprised of all emissions associated with the
+operating activities of the Group, divided by turnover. The methodology used is aligned to the GHG Protocol.
+
+2024 2023
+Emissions from combustion of fuels (Tco2e) (Scope 1) : 1,412 1,200
+Emissions from purchased electricity (Tco2e) (Scope 2) 2,586 2,243
+Total emissions (Tco2e) 3,997 3,431
+Intensity ratio (Tco2e/£m Turnover) . 6.5 5.8
+Energy consumption used to calculate emissions (kWh) 19,991,080 17,798,586
+
+Future developments
+
+Future developments are discussed in the strategic report
+
+Disclosure of information to auditor
+
+The directors who held office at the date of approval of this directors’ report confirm that, so far as they are each
+aware, there is no relevant audit information of which the Group’s auditor is unaware; ‘and each director has taken
+all the steps that he ought to have taken as a director to make himself aware of any relevant audit information and
+to establish that the Group’s auditor is aware of that information.
+
+Auditor
+
+Pursuant to Section 485 of the Companies Act 2006, the auditor will be deemed to be reappointed and Emst and
+
+Young LLP will therefore continue in office. ‘
+By order of the board ~
+Andrew Hughes . Anfield Road
+Director ; Liverpool
+L4 OTH
+7
+
+--- pág. 10 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+Annual report and consolidated financial statements
+31 May 2024
+
+Statement of directors’ responsibilities in respect of the annual report and the
+financial statements
+
+The directors are responsible for preparing the strategic report, director’s report and the financial statements in
+accordance with applicable law and regulations.
+
+Company law requires the directors to prepare financial statements for each financial year. Under that law they
+have elected to prepare the company financial statements in accordance with UK Accounting Standards and
+applicable law (UK Generally Accepted Accounting Practice), including FRS 102 The Financial Reporting
+Standard applicable in the UK and Republic of Ireland.
+
+Under Company law the directors must not approve the financial statements unless they are satisfied that they
+give a true and fair view state of affairs of the Group and parent company and of the profit or loss for the Group
+and company for that period. In preparing each of the Group and parent company financial statements, the
+directors are required to:
+
+e select suitable accounting policies and then apply them consistently;
+e make judgements and estimates that are reasonable and prudent;
+
+e state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements;
+
+e prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+Group and the parent company will continue in business.
+
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+parent company’s transactions and disclose with reasonable accuracy at any time the financial position of the
+parent company and enable them to ensure that its financial statements comply with the Companies Act 2006.
+They have general responsibility for taking such steps as are reasonably open to them to safeguard the assets of
+the Group and to prevent and detect fraud and other irregularities.
+
+--- pág. 11 ---
+
+Independent auditor’s report to the members of The Liverpool Football Club and
+Athletic Grounds Limited
+
+Opinion
+
+We have audited the financial statements of The Liverpool Football Club and Athletic Grounds Limited (‘the parent
+company’) and its subsidiaries (the ‘group’) for the year ended 31 May 2024 which comprise the Consolidated
+Profit and Loss Account and Other Comprehensive Income, the Consolidated Balance Sheet, the Company Balance
+Sheet, the Consolidated Statement of Changes in Equity, the Company Statement of Changes in Equity and the
+Consolidated Statement of Cash Flows and the related notes | to 27, including a summary of significant accounting
+policies. The financial reporting framework that has been applied in their preparation is applicable law and United
+Kingdom Accounting Standards including FRS 102 “The Financial Reporting Standard applicable in the UK and
+Republic of Ireland” (United Kingdom Generally Accepted Accounting Practice).
+
+In our opinion, the financial statements:
+
+- @ give a true and fair view of the group’s and of the parent company’s affairs as at 31 May 2024 and of the
+group’s loss for the year then ended;
+
+« have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice;
+and
+
+e have been prepared in accordance with the requirements of the Companies Act 2006.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable
+law. Our responsibilities under those standards are further described in the Auditor’s responsibilities for the audit of
+the financial statements section of our report. We are independent of the group in accordance with the ethical
+requirements that are relevant to our audit of the financial statements in the UK, including the FRC’s Ethical
+Standard, and we have fulfilled our other ethical responsibilities in accordance with these requirements.
+
+We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+
+Conclusions relating to going concern
+
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting
+in the preparation of the financial statements is appropriate.
+
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the group and parent company’s ability to
+continue as a going concern for the period to 30 September 2025.
+
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant
+sections of this report. However, because not all future events or conditions can be predicted, this statement is not a
+guarantee as to the group’s ability to continue as a going concern.
+
+Other information
+
+The other information comprises the information included in the annual report, other than the financial statements
+and our auditor’s report thereon. The directors are responsible for the other information contained within the annual
+report. :
+
+Our opinion on the financial statements does not cover the other information and, except to the extent otherwise
+explicitly stated in this report, we do not express any form of assurance conclusion thereon.
+
+--- pág. 12 ---
+
+Independent auditor’s report to the members of The Liverpool Football Club and
+Athletic Grounds Limited (continued)
+
+Other information (continued)
+
+Our responsibility is to read the other information and, in doing so, consider whether the other information is materially
+inconsistent with the financial statements or our knowledge obtained in the course of the audit or otherwise appears
+to be materially misstated. If we identify such material inconsistencies or apparent material misstatements, we are
+required to determine whether this gives rise to a material misstatement in the financial statements themselves. If,
+based on the work we have performed, we conclude that there i isa material misstatement of the other information, we
+are required to report that fact.
+
+We have nothing to report in this regard.
+
+Opinions on other matters prescribed by the Companies Act 2006
+
+In our opinion, based on the work undertaken in the course of the audit:
+
+e the information given in the strategic report and the directors’ report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and
+
+e the strategic report and directors’ report have been prepared in accordance with applicable legal requirements.
+
+Matters on which we are required to report by exception
+
+In the light of the knowledge and understanding of the group and the parent company and its environment obtained
+in the course of the audit, we have not identified material misstatements in the siralegic report or directors’ report.
+
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires
+
+us to report to you if, in our opinion:
+
+¢ adequate accounting records have not been kept, or returns adequate for our audit have not been received from
+branches not visited by us; or
+the parent company financial statements are not in agreement with the accounting records and returns; or
+certain disclosures of directors’ remuneration specified by law are not made; or
+
+e we have not received all the information and explanations we require for our audit
+
+Responsibilities of directors °
+
+As explained more fully in the directors’ responsibilities statement set out on page 8, the directors are responsible for
+the preparation of the financial statements and for being satisfied that they give a true and fair view, and for such
+internal control as the directors determine is necessary to enable the preparation of financial statements that are free
+from material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the directors are responsible for assessing the group’s and the parent company’s
+ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the group or the parent company or to cease
+operations, or have no realistic alternative but to do so.
+
+Auditor’s responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from
+material misstatement, whether due to fraud or error, and to issue an auditor’s report that includes our opinion.
+Reasonable assurance is a high level of assurance but is not a guarantee that an audit conducted in accordance with
+ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or error
+and are considered material if, individually or in the aggregate, they could reasonably be expected to influence the
+economic decisions of users taken on the basis of these financial statements.
+
+10
+
+--- pág. 13 ---
+
+Independent auditor’s report to the members of The Liverpool Football Club and
+Athletic Grounds Limited (continued)
+
+Auditor’s responsibilities for the audit of the financial statements (continued)
+Explanation as to what extent the audit was considered capable of detecting irregularities, including fraud
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in
+line with our responsibilities, outlined above, to detect irregularities, including fraud. The risk of not detecting a
+material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may
+involve deliberate concealment by, for example, forgery or intentional misrepresentations, or through collusion. The
+extent to which our procedures are capable of detecting irregularities, including fraud is detailed below. However,
+the primary responsibility for the prevention and detection of fraud rests with both those charged with governance of
+the entity and management. .
+
+Our approach was as follows:
+
+* We obtained an understanding of the legal and regulatory frameworks that are applicable to the company and
+determined that the most significant are those that relate to the reporting framework (FRS 102), the Companies Act
+2006, the relevant direct and indirect tax compliance regulations in the United Kingdom, the laws and regulations
+relating to the Proceeds of Crime Act 2002, Money Laundering Regulations 2003, Bribery Act 2010, GDPR 2016
+and the regulations of The Football Association Premier League and the Union of European Football Associations.
+
+* We understood how The Liverpool Football Club and Athletic Grounds Limited is complying with those
+frameworks by making enquiries of management and those responsible for legal and compliance procedures,
+including internal legal counsel. We corroborated our enquiries through reading the minutes of board meetings and
+reviewing correspondence with authorities and external legal counsel.
+
+* We assessed the susceptibility of the Company’s financial statements to material misstatement, including how
+fraud might occur by meeting with management in various parts of the business to understand where they
+considered there was susceptibility to fraud. We considered the risk of management override to be a fraud risk,
+specifically around the posting of manual journals to revenue around the period end.
+
+* Based on this understanding we designed our audit procedures to identify noncompliance with such laws and
+regulations. Our procedures involved testing journal entries which met specific risk criteria set by the audit team.
+
+A further description of our responsibilities for the audit of the financial statements is located on the
+Financial Reporting Council’s website at https://www.frc.org.uk/auditorsresponsibitities. This description forms
+part of our auditor’s report.
+
+Use of our report
+
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent
+permitted by law, we do not accept or assume responsibility to anyone other than the company and the company’s
+members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+Mark J Morritt (Senior Statutory Auditor)
+
+for and on behalf of Ernst & Young LLP, Statutory Auditor
+Liverpool
+
+Date: 30 September 2024
+
+11
+
+--- pág. 14 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+
+31 May 2024
+Consolidated Profit and Loss Account and Other Comprehensive Income
+Sor the year ended 31 May 2024
+2024 2023
+Note
+£000 £000
+Turnover 2 : 613,764 593,836
+Cost of sales ; (83,483) | (70,543)
+Gross profit. ~ . . 530,281 $23,293
+Administrative expenses : 3 (599,956) (561,517)
+Profit on disposal of registrations 22,017 33,767
+Operating loss , (47,658) (4,457)
+Interest receivable and similar income 6 3,162 1,614
+Interest payable and similar charges 7 (12,608) (6,162)
+Loss on ordinary activities before taxation . (57,104) (9,005)
+Tax on loss on ordinary activities 8 13,626 2,075
+Loss for the financial year (43,478) (6,930)
+Other comprehensive profit/ (loss) for the period 114 (107)
+Total comprehensive loss for the year attributable to the shareholders
+of the parent company (43,364) (7,037)
+
+The activities represent the continuing activities of the Group.
+
+The notes on pages 18 to 36 form part of the financial statements.
+
+12
+
+--- pág. 15 ---
+
+a , The Liverpool Football Club and Athletic Grounds Limited
+% Annual report and consolidated financial statements
+
+31 May 2024
+Consolidated Balance Sheet
+at 31 May 2024
+. Note 2024 2024 2023 2023
+£000 £000 £000 £000
+Fixed assets
+Intangible assets . 9 353,706 289,097
+Tangible assets ' 10 310,411 274,587
+: 664,117 563,684
+Current assets
+Stocks 22,974 19,349
+Debtors (including £15.0 million (2023: £30.8
+- million) due after more than one year) 12 133,733 134,526
+Cash at bank and in hand 7,504 3,394
+164,211 157,269
+Creditors: amounts falling due within one year 13 (508,239) , (338,139)
+Net current liabilities (344,028) (180,870)
+Total assets less current liabilities . 320,089 382,814
+Creditors: amounts falling due after more than 14 (161,754) (167,487)
+one year
+Provisions for liabilities
+Deferred tax 16 (7,067) (20,695)
+Net assets 151,268 194,632
+Capital and reserves
+Called up share capital 18 174 174
+Share premium account 101,847 101,847
+Capital contribution reserve 107,704 107,704
+Accumulated other comprehensive loss - (114)
+Retained losses (58,457) (14,979)
+Shareholders’ funds 151,268 194,632
+
+The notes on pages 18 to 36 form part of the financial statements.
+
+These financial statements were approved by the board of directors on 27" September 2024 and were signed on its
+behalf by:
+
+Andrew Hughes
+Director
+
+Company registered number: 00035668
+
+13
+
+--- pág. 16 ---
+
+a The Liverpool Football Club and Athletic Grounds Limited
+: Annual report and consolidated financial statements
+
+31 May 2024
+Company Balance Sheet
+at 31 May 2024 :
+Note 2024 2024 2023 2023
+. £000 £000 £000 £000
+Fixed assets
+Intangible assets ' 9 353,600 289,076
+Tangible assets 10 310,025 274,250
+Investments ai 15,890. 15,890
+679,515 579,216
+Current assets
+Stocks 22,974 19,349
+Debtors (including £15.0 million (2023: £30.8 ;
+million) due after more than one year) 12 + = 138,350 . 138,928
+Cash at bank and in hand 6,859 3,038
+168,183 161,315
+Creditors: amounts falling due within one year 13 (507,291) (337,570)
+Net current liabilities (339,108) (176,255)
+Total assets less current liabilities 340,407 402,961
+Creditors: amounts falling due after more than 14 (181,756) (187,488)
+one year .
+Provisions for liabilities
+Deferred tax (7,059) . (20,745)
+Net assets 151,592 194,728
+Capital and reserves - 3
+Called up share capital 18 174 174
+Share premium account 101,847 101,847
+Capital contribution reserve 107,704 107,704
+Accumulated other comprehensive loss - (114)
+Retained losses (58,133) (14,883)
+
+Shareholders’ funds 151,592 194,728
+
+The Company made a loss after tax for the financial year of £43.3 million (2023: £6.4 million).
+The notes on pages 18 to 36 form part of the financial statements.
+
+These financial statements were approved by the board of directors on 27" September 2024 and were signed on its
+behalf by:
+
+Andrew Hughes .
+Director .
+Company registered number: 00035668 at
+
+14
+
+--- pág. 17 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+
+Consolidated Statement of Changes in Equity
+
+Balance at 1 June 2022
+
+Loss for the period
+
+Other comprehensive loss for the
+period
+
+Total comprehensive loss for the
+period
+
+Balance at 31 May 2023
+
+Loss for the period
+
+Other comprehensive income for
+the period
+
+Total comprehensive loss for the
+period
+
+Balance at 31 May 2024
+
+Annual report and consolidated financial statements
+
+31 May 2024
+Called up Share Capital Accumulated Retained Total
+share premium contribution Other comp’ve losses equity
+capital account reserve loss
+
+£000 £000 £000 £000 £000 £000
+174 101,847 107,704 (7) (8,049) 201,669
+- - - - (6,930) (6,930)
+- - - (107) - (107)
+- - - (107) (6,930) (7,037)
+174 101,847 107,704 (114) (14,979) 194,632
+
+- - - - (43,478) (43,478)
+- - - 114 - 114
+
+- - - 114 (43,478) (43,364)
+174 101,847 107,704 - (58,457) 151,268
+
+The notes on pages 18 to 36 form part of the financial statements.
+
+15
+
+--- pág. 18 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+
+31 May 2024
+Company Statement of Changes in Equity
+Called up Share Capital Accumulated Retained Total
+share premium — contribution Other losses equity
+capital account reserve comp’ve loss
+£000 £000 £000 £000 £000 £000
+Balance at I June 2022 174 101,847 107,704 (7) (8,520) 201,198
+Loss for the period - - - (6,363) (6,363)
+Other comprehensive loss for - - - (107) - (107)
+the period
+Total comprehensive loss for - - - (107) (6,363) (6,470)
+the period
+Balance at 31 May 2023 174 101,847 107,704 (114) (14,883) 194,728
+Loss for the period - - - - (43,250) (43,250)
+Other comprehensive income - - - 114 - 114
+for the period
+Total comprehensive loss for - - - 114 (43,250) (43,136)
+the period
+Balance at 31 May 2024 174 101,847 107,704 - (58,133) 151,592
+
+The notes on pages 18 to 36 form part of the financial statements.
+
+16
+
+--- pág. 19 ---
+
+The Liverpool Football Club and Athletic Grounds Limited’
+Annual report and consolidated financial statements
+
+31 May 2024
+Consolidated Statement of Cash Flows
+For the year ended 31 May 2024
+2024 2023
+£000 £000
+Cash flows from operating activities
+Operating loss for the year (47,658) (4,457)
+Adjustments for: .
+Depreciation, amortisation and impairment 130,773 121,824
+Profit on disposal of registrations (22,017) (33,767)
+Loss on sale of tangible fixed assets . 11 136
+(Increase)/ decrease in trade and other debtors (8,159) 19,652
+Increase in stocks (3,625) (5,390)
+Increase/ (decrease) in trade and other creditors 34,421 (9,122)
+Cash flows from operations ; 83,746 88,876
+Interest received . 376 72
+Interest paid (8,689) (4,209)
+Net cash from operating activities 75,433 84,739
+Cash flows from investing activities
+Proceeds from sale of tangible fixed assets 21 121
+Acquisition of tangible fixed assets (55,978) (49,925)
+Proceeds from sale of registrations 49,061 39,072
+Acquisition of registrations (181,568) (122,154)
+Net cash used in investing activities (188,464) _ (132,886)
+Cash flows from financing activities
+Cash (outflow)/ inflow from change in borrowings — bank loans (10,159) 38,000
+Cash inflow from change in intercompany debt 127,300 -
+Net cash provided by financing activities 117,141 38,000
+Net increase/ (decrease) in cash and cash equivalents 4,110 (10,147)
+Cash and cash equivalents at 1 June ; 3,394 13,541
+Cash and cash equivalents at 31 May . 7,504 3,394
+Consolidated Analysis of Net Debt
+At 1 June 2023 Cash Flows At 31 May 2024
+£000 £000 £000
+Cash at bank and in hand 3,394 4,110 7,504
+Secured bank loans after deferred loan costs (125,407) 9,812 (115,595)
+Intercompany loans “ (71,400) (127,300). (198,700)
+(193,413) (113,378) (306,791)
+The notes on pages 18 to 36 form part of the financial statements.
+17
+
+--- pág. 20 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+31 May 2024
+
+Notes
+(forming part of the financial statements)
+
+1 Accounting policies
+
+The Liverpool Football Club and Athletic Grounds Limited (the “Company”) is a company limited by shares and
+incorporated and domiciled in the UK.
+
+These Group and parent company financial statements were prepared in accordance with Financial Reporting
+Standard 102 The Financial Reporting Standard applicable in the UK and Republic of Ireland (“FRS /02”) as
+issued in January 2022. The presentation currency of these financial statements is sterling. All amounts in the
+financial statements have been rounded to the nearest £1,000.
+
+The parent company (is included in the consolidated financial statements and is considered to be a qualifying entity
+under FRS 102 paragraphs 1.8 to 1.12. The following exemptions available under FRS 102 in respect of certain
+disclosures for the parent company financial statements have been applied:
+
+¢ No separate parent company Statement of Cash Flows with related notes is included; and
+
+e The disclosures required by FRS 102.11 Basic Financial Instruments and FRS 102.12 Other Financial
+Instrument Issues in respect of financial instruments not falling within the fair value accounting rules of
+Paragraph 36(4) of Schedule 1.
+
+The accounting policies set out below have, unless otherwise stated, been applied consistently to all periods
+presented in these financial statements.
+
+Judgements made by the management, in the application of these accounting policies that have significant effect on
+the financial statements and estimates with a significant risk of material adjustment in the next year are discussed in
+note 26. .
+
+Ld Measurement convention
+
+The financial statements are prepared on the historical cost basis except that the long-term player debtors and player
+creditors are measured at the present value of future receipts and payments discounted at a market rate of interest for
+a similar debt instrument. In addition, derivative financial instruments are stated at their fair value.
+
+1.2 Going concern
+
+In determining whether the Group's annual financial statements can be prepared on a going concern basis and
+whether there is a material uncertainty with respect to going concern, the Directors have considered the Group's
+business activities, together with the factors likely to affect its future development, performance and position for a
+period to 30 September 2025. The review also includes the financial position of the Company and the wider Group
+that the Company is part of, their short term and long-term cash flows, liquidity position and borrowing facilities.
+The Group made a loss for the period of £43.5 million (2023: £6.9 million loss) and has net current liabilities of
+£344.0 million (2023: £180.9 million) as at 31 May 2024.
+
+The key factors considered by the directors in making the assessment of going concern were as follows:
+
+* The implications of changes to the economic environment on the Group's revenues and profits, assuming the club
+can continue to compete in all competitions without interruption from further disruptive global or domestic events.
+
++ A prudent assumption in respect of the expected success of the club in the various competitions that it expects to
+compete in during the coming season, including the Premier League and UEFA competitions.
+
+* Cash flows in respect of transfers of players based on the underlying contractual terms.
+
+* On 24" September 2024, the Group and its holding company, UKSV Holdings Company Limited, refinanced its
+credit facility which was due to mature in July 2025. This provided £350.0m of facilities for a term of five years and
+is available for general corporate purposes including working capital and letters of credit. The Group’s forecasts and
+projections show that the Group should be able to operate within the level of the credit facility and meet its
+obligations as they fall due in the foreseeable future.
+
+* Confirmation the Group’s Parent does not intend to call the parent loan undertaking for payment in the next 12
+months unless the Group has sufficient resources to enable repayment amounting to £198.7 million.
+
+18
+
+--- pág. 21 ---
+
+' The Liverpool Football Club and Athletic Grounds Limited
+' Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+Accounting policies (continued)
+1.2 Going concern (continued)
+
+Conclusion
+
+During the year, the intercompany loan from FSG Football Group, LLC (formerly UKSV I, LLC), has increased
+based on-the injection of cash at Club level following an equity investment within FSG Football Group, LLC. The
+Directors therefore believe that even in a scenario of downside performance, the club would have sufficient
+liquidity, based on the cash generation of the ongoing business, its existing revolving credit facility, and existing
+intercompany loans. The Directors are therefore satisfied that there is not a material uncertainty regarding going
+concern. In preparing the financial statements, the Directors have not included any adjustments that would be
+required to be made if they were prepared on a basis other than going concern.
+
+1.3 Basis of consolidation
+
+The consolidated financial statements include the financial statements of the Company and its subsidiary
+undertakings made up to 31 May 2024. A subsidiary is an entity that is controlled by the parent. The results of
+subsidiary undertakings are included in the consolidated Profit and Loss Account from the date that control
+commences until the date that control ceases. Control is established when the Company has the power to govern
+the operating and financial policies of an entity so as to obtain benefits from its activities. In assessing control, the
+Group takes into consideration potential voting rights that are currently exercisable.
+
+Under Section 408 of the Companies Act 2006 the Company is exempt from the requirement to present its own
+Profit and Loss Account.
+
+LA Foreign currency
+
+Transactions in foreign currencies are translated to the Group companies’ functional currency at the foreign
+exchange rate ruling at the date of the transaction. Monetary assets and liabilities denominated in foreign
+currencies at the balance sheet date are retranslated to the functional currency at the foreign exchange rate ruling at
+that date. Foreign exchange differences arising on translation are recognised in the Profit and Loss Account.
+
+IS Turnover
+
+Turnover represents income receivable from the Group’s principal activities and is exclusive of value added tax
+and transfer fees. Match day receipts are recognised over the course of the football season as games are played.
+Sponsorship and similar commercial income is recognised over the duration of the respective contracts. Income
+arising from the fixed element of broadcasting revenue is recognised over the duration of the playing season.
+Facility fees (non-fixed element of broadcasting revenue) which relate to live coverage or highlights of games are
+recognised as games are played. Revenue arising from participation in European competitions is recognised as
+matches are played and is classified as match day income and media income as appropriate. Turnover relating to
+retail and mail order consists of the amounts receivable for goods supplied by the Group to customers, excluding
+value added tax. Mail order sales are recognised on delivery to the customer.
+
+19
+
+--- pág. 22 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+_ Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+Accounting policies (continued)
+1.6 Expenses
+
+Operating lease
+
+Payments (excluding costs for services and insurance) made under operating leases are recognised in the Profit and
+Loss Account on a straight-line basis over the term of the lease unless the payments to the lessor are structured to
+increase in line with expected general inflation; in which case the payments related to the structured increases are
+recognised as incurred. Lease incentives received are recognised in the Profit and Loss Account over the term of the
+lease as an integral part of'the total lease expense.
+
+Interest receivable and Interest payable
+
+Interest receivable:and similar income include interest receivable on cash held at bank, notional interest on deferred
+receipts for sale‘of registrations and net foreign exchange gains.
+
+Interest payable.and:similar:charges include interest payable on loan and overdraft, notional interest expense on
+deferred payments for registrations, and net foreign exchange losses that are recognised in the Profit and Loss
+Account (see foréign-currency.accounting policy). Borrowing costs that are directly attributable to the acquisition,
+construction or. production-of.an asset that takes a substantial time to be prepared for use, are capitalised as part of the
+cost of that asset.
+
+. Interest income:and interest payable are recognised in the Profit and Loss Account as they accrue, using the effective
+interest method. —
+
+1.7 Signing on:andJdoyalty fees
+
+Signing on fees-are-charged evenly, as part of the administrative expenses, to the Profit and Loss Account over the
+period of the player’s:contract::Where a registration is transferred any signing on fees payable in respect of future
+period are chargeéd against:the profit/loss on disposal of registrations in the period in which the disposal is recognised.
+Loyalty fees payable aré:recorded in the Profit and Loss Account in the period to which they relate.
+
+18 Taxation
+
+Tax on the profit-or‘doss forthe:year comprises current and deferred tax. Tax is recognised in the Profit and Loss
+Account except to:the.extent‘that it relates to items recognised directly in equity or other comprehensive income, in
+which case it is.recognised directly in equity or other comprehensive income.
+
+Current tax is the expected tax:payable or receivable on the taxable income or loss for the year, using tax rates
+enacted or substantively enacted.at the balance sheet date, and any adjustment to tax payable in respect of previous
+years.
+
+Deferred tax is provided'ontiming differences which arise from the inclusion of income and expenses in tax assessments
+in periods different-from:those :in-which they are recognised in the financial statements. Timing differences are not
+provided for differences rélating to investments in subsidiaries, to the extent that it is not probable that they will reverse
+in the foreseeable future:and the reporting entity is able to control the reversal of the timing difference. Deferred tax is
+not recognised on:permanent differences arising because certain types of income or expense are non-taxable or are
+disallowable for tax.or-because‘certain tax charges or allowances are greater or smaller than the corresponding income or
+expense.
+
+Deferred tax is.provided in:respect of the additional tax that will be paid or avoided on differences between the amount at
+which an asset (other than:goodwill) or liability is recognised in a business combination and the corresponding amount
+that can be deducted or assessed: for tax.
+
+Deferred tax is measured:at:thé tax rate that is expected to apply to the reversal of the related difference, using tax rates
+enacted or substantively:enacted at the balance sheet date. Deferred tax balances are not discounted.
+
+- Unrelieved tax losses and other deferred tax assets are recognised only to the extent that is it probable that they will
+be recovered against the reversal of deferred tax liabilities or other future taxable profits.
+
+20
+
+--- pág. 23 ---
+
+aa The Liverpool Football Club and Athletic Grounds Limited
+‘ . Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+Accounting policies (continued)
+19 Tangible fixed assets
+Tangible fixed assets are stated:at cost less accumulated depreciation and accumulated impairment losses.
+
+Where parts of an item of tangible fixed assets have different useful lives, they are accounted for as separate items of
+tangible fixed assets, for example land is treated separately from buildings.
+
+Depreciation is provided on the cost of fixed assets appropriate to their estimated useful lives as follows:
+
+Freehold/long leaséhold buildings 2% Stands, fixtures, fittings and
+equipment 2% - 33%
+‘ Youth Academy . 2% Motor vehicles 20%
+
+Training Ground . 2% Computers 25%
+
+Land is not depreciated. “Alliother‘classes of tangible fixed assets are depreciated on a straight-line basis at the rates
+stated above, except-for-fixtures;fittings and equipment which are depreciated using the reducing balance method.
+The historical cost-of-the-existing stadium is included under the heading “stands, fixtures, fittings and equipment”.
+
+Assets under construction are.not depreciated until they are available for use, at which point they are transferred into
+the relevant category.of:fixed:assets. .
+
+Depreciation methods, useful lives and residual values are reviewed if there is an indication of a significant change
+since last annual:reporting:date in the pattern by which the Group expects to consume an asset’s future economic
+benefits.
+
+The carrying amounts.of the:Groupis assets are reviewed for impairment when events or changes in circumstances
+indicate that the carrying:amount.of the fixed asset may not be recoverable. If any such indication exists, the asset’s
+recoverable amount.is estimated.-An.impairment loss is recognised in the Profit and Loss Account whenever the
+carrying amount:of.an.asset.exceeds.its recoverable amount.
+
+1.10 + ~Intangible.assets and. goodwill
+Goodwill a a - va . \
+
+Goodwill is stated:at.cost less:any:accumulated amortisation. Goodwill is allocated to cash-generating units or group
+of cash-generatingsunits that.are-expected to benefit from the synergies of the business combination from which it
+arose.
+
+Goodwill is amortised-over ‘its:estimated useful life of 20 years and is reviewed annually for impairment. The useful
+life has been arrived. at:by:considering the longevity of the club, the nature and longevity of the marketplace and long-
+term financial forecasts: The:Group reviews the amortisation period and method when events and circumstances
+indicate that the uséful:life-may have changed since the last reporting date.
+
+Other intangible:assets— registrations
+
+The costs associated‘ with.the acquisition of players’ and key football management staffs’ registrations are capitalised
+as intangible fixed:assets. These costs are fully amortised in equal instalments over the period of the individuals’
+contracts. Where:a:contract.isextended beyond its initial period, amortisation is calculated over the period of the
+extended contract:from:the:date:on‘which it is signed.
+
+The profit or loss on disposal of a registration is calculated as the difference between the transfer fee
+
+- recovered/receivable.Jessithe net:book value at the date of sale and less any direct costs of the transfer. Future receipts
+of transfer fees‘baséd-on‘the transferred player or the buying club meeting certain performance criteria in the future
+are recognised when‘the:criteria’are-met. Future payments of transfer fees based on performance criteria are
+recognised when the criteria are met.
+
+Intangible assets are tested for impairment in accordance with Section 27 Impairment of assets when there is an
+indication that an intangible asset may be impaired.
+
+21
+
+--- pág. 24 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+
+Accounting policies (continued)
+111 Stocks.
+
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost is based on
+the first-in first-out principle and includes expenditure incurred in acquiring the stocks and other costs in bringing
+them to their existing location and’ condition.
+
+112 Classification of fi inancial instruments issued by the Group
+
+The Group uses foreign exchange: contracts to manage foreign currency risk impacting assets and liabilities due at a
+future date. These derivative financial instruments are recognised at fair value.
+
+The Group accounts for certain foreign currency contracts as cash flow hedges. The effective portion of changes in
+the fair value of derivatives that are designated, and qualify as cash flow hedges is recognised in other
+comprehensive income.. Any ineffective portion of the hedge is recognised in the Profit and Loss Account.
+
+The Group also.uses foreign exchange contracts to mitigate foreign currency risks that are not designated as cash
+flow hedges. The: Bain: :or:loss. on: ‘re-+measurement to fair value of these contracts is recognised in the Profit and
+Loss Account. - :
+
+1.13 Basic “facia instruniént
+Trade and other.debtors / creditors
+
+Trade and other debtors/creditors are recognised initially at transaction price less/plus attributable transaction costs.
+If the arrangement constitutes a financing transaction, for example if payment is deferred beyond normal business
+terms, then itiis measured-at:the present value of future payments discounted at a market rate of interest for a
+similar debt instrument.
+
+A financial asset noti Gaitied.at fa value is assessed at each reporting date to determine whether there is objective
+evidence that it is'impaired..A-financial asset is impaired if objective evidence indicates that a loss event has
+occurred after,the.initial recognition of the asset, and that the loss event had a negative effect on the estimated
+future cash flows: ‘of that. asset that can be estimated reliably.
+
+Interest-bearing: borrowings
+
+Interest-bearing. ‘borrowings are? »recognised initially at transaction price, unless the arrangement constitutes a
+
+financial transaction, where the-liability is measured at the present value of the future payments discounted at a '
+market rate of interest.:Subsequent to initial recognition, interest-bearing borrowings are stated at amortised cost
+
+using the effective interest method.
+
+Cash and cash’ ‘equivalents
+
+Cash and cash equivalents:comprise cash balances. Bank overdrafts that are repayable on demand and form an
+
+integral part of the;Group’s‘cash:management are included as a component of cash and cash equivalents for the
+purpose only of the :Consolidated Statement of Cash Flows.
+
+1.14 Other financial instruments
+
+Financial instrutiients. not considered to be Basic financial instruments (Other financial instruments)
+
+Other financial. instruments not meeting the definition of Basic Financial Instruments are recognised initially at
+fair value. Subsequent.to’ initial recognition other financial instruments are measured at fair value with changes
+
+recognised ‘in'the’ Profit orisoss ‘Account except as hedging instruments in a designated hedging relationship shall
+be recognised: ;
+
+Derivative financial instruments:and hedging
+
+Derivative financial instruments are recognised at fair value. The gain or loss on re-measurement to fair value is
+recognised immediately in the Profit or Loss Account. However, where derivatives qualify for hedge accounting, -
+recognition of any resultant gain or loss depends on the nature of the item being hedged.
+
+5 .
+
+--- pág. 25 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+Accounting policies (continued)
+114 Other financial instruments (continued)
+
+Cash flow hedges
+
+Where a derivative-financial instrument is designated as a hedge of the variability in cash flows of a recognised
+asset or liability, or a highly probable forecast transaction, the effective part of any gain or loss on the derivative
+financial instrument is recognised directly in other comprehensive income. Any ineffective portion of the hedge is
+recognised immediately in the Profit or Loss Account.
+
+For cash flow hedges,:where the forecast transactions resulted in the recognition of a non-financial asset or non-
+financial liability, the hedging gain or loss recognised in Other Comprehensive Income is included in the initial
+cost or other carrying amount of the asset or liability. Alternatively, when the hedged item is recognised in the
+Profit or Loss Account the hedging gain or loss is reclassified to the Profit and Loss Account.
+
+When a hedging. instrument expires or is sold, terminated or exercised, or the entity discontinues designation of the
+hedge relationship;but: ‘the hedged forecast transaction is still expected to occur, the cumulative gain or loss at that
+point remains in‘équity-and is recognised in accordance with the above policy when the transaction occurs. If the
+hedged transaction‘is:no longer expected to take place, the cumulative unrealised gain or loss recognised in equity
+is recognised in-the:Profit and Loss Account immediately.
+
+1.15 Pensions -..:.
+
+The Group operates its own defined contribution scheme which is managed by Legal and General Group Ple.
+‘Contributions are also paid to individuals’ private pension schemes. Pension contributions are charged to the Profit
+and Loss Account.asithey become payable.
+
+The Group continues:to make contributions in respect of its share of the deficit of the defined benefit section of
+The Footbal! Léague‘Limited Pension and Life Assurance Scheme (the ‘Scheme’). Accrual of benefits on a final
+salary basis was;suspended with effect from 31 August 1999, when an actuarial review showed a substantial
+deficit. As one of.a.number of participating employers the Group is advised only of its share of the Scheme’s
+deficit and recogriises a liability i in respect of this. As a result, the contributions paid to the scheme reduce the
+provision. The:Group:is unable to identify its share of the underlying assets and liabilities of the scheme on a
+consistent and:réliable‘basis and therefore, accounts for the scheme as if it were a defined contribution scheme.
+
+116 Provisions -
+
+A provision is recognised i in the balance sheet when the entity has a present legal or constructive obligation asa
+result of a past event, that can be reliably measured, and it is probable that an outflow of economic benefits will be
+required to settle:the‘obligation. Provisions are recognised at the best estimate of the amount required to settle the
+obligation at the.reporting date.
+
+23
+
+--- pág. 26 ---
+
+4 The Liverpool Football Club and Athletic Grounds Limited
+: , Annual report and consolidated financial statements
+
+31 May 2024
+Notes (continued)
+2 Turnover
+2024 ‘2023
+£000 £000
+By activity:
+Media ‘ ‘ . . 203,705 241,553
+Commercial . a ; 308,398 272,523
+Match day : . a 101,661 79,760
+4 . 613,764 593,836
+By geographical market: a , ,
+United Kingdom ; 580,801 564,544
+EU . : _ 11,896 8,090
+Rest of the*World os ar 21,067 21,202
+vee 613,764 593,836
+Matchday tufnover includes £8.6m.of compensatory proceeds for loss of matchday revenue.
+3 Administrative.expenses
+. Included in. administrative expenses are the following:
+2024 2023
+oo £000 £000
+Amortisation-of registrations : 114,479 107,546
+Impairment loss-onregistrations 7.) 618 2,141
+Depreciation of tangible.fixed assets. ..1¢,. 15,218 _ 12,137
+Impairment loss on tangible fixed assets - 458 -
+Operating lease.rentals _ are . 2,751 2,917
+Auditors’ remunetation~ audit fees ° . 95 112
+Auditors’ remunération —-assurance 55 -
+Auditors’ remuneration ‘tax ‘advisory: fees ‘ 6 9
+
+(Profit)/ loss‘on:disposal-oftangible fixed assets ; : (52) 416
+
+24
+
+--- pág. 27 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+
+4 Staff numbers and costs
+
+The average number of persons employed by the Group (including directors) during the year, analysed by category,
+was as follows:
+Number of employees
+
+2024 2023
+Administration, commercial and other : 713 701
+Players, managers and coaches oo 229 238
+Ground and maintenance staff 69 69
+1,011 1,008
+
+Full-time employees are those.employed for more than 20 hours per week. In addition, the Group engaged on match
+days and non-match.days-an‘average-of.2,109 part-time temporary staff (2023: 2,062).
+
+2024 2023
+oon £000 £000
+
+Aggregate amounts for.both staffiand: directors s charged i in respect of:
+Wages and salaries 341,354 329,980
+Social security costs — . 40,141 39,819
+Pension costs: i , ‘ 4,591 3,082
+. 386,086 372,881
+
+a Sg et
+
+During the financialsyear.erided ‘3:1 st May 2024, the Club incurred termination costs totalling £9.6 million. These
+costs related:to:severance:payments'to‘former football management personnel and coaching staff as part of
+contractual obligations following-their;departures from the Club. Termination costs are recognised as a liability and
+an expense when:the-Club is: -demonstrably, committed to terminating the employment of employees or group of
+employees.
+
+5 Directors’ remuneration
+2024 2023
+£000 £000
+Directors’ remuneration ° x 3,860 4,184
+Group contributions: to moiiey purchase:péision plans 4 9
+ae i? 3,864 4,193
+2024 2023
+; ; £000 £000
+
+Highest paid director’s remuneration:
+
+Remuneration 2,164 2,244
+2,164 2,244
+
+Number of directors
+
+. . 2024 2023
+Retirement benefits are accruing to the following number of directors under:
+Money purchase pension plans * 1 1
+25
+
+--- pág. 28 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+
+31 May 2024
+Notes (continued)
+6 Interest,receivable.and similar income
+2024 2023
+£000 £000
+Notional interest on deferred-receipts for sale of registrations 2,786 1,542
+Bank interest 376 72
+Total interest receivable and similar income 3,162 1,614
+7 Interest:payable.and similar charges
+: . , 2024 2023
+£000 £000
+Notional interest expense on‘deferred payments for registrations 3,256 1,789
+On loan and overdrafts ame 8,749 _ 3,918
+Other finance:costs 603 455
+Total interest payable.and similar charges 12,608 6,162
+8 Taxation
+Total tax credit, recognised in the Profit and Loss Account and Other Comprehensive Income
+- - 2024 2023
+£000 £000
+Current tax
+Current tax on‘loss‘for the period 25 57
+Adjustments in respect.of:prior.periods * (24) (642)
+Total current tax + 1 (585)
+Deferred tax (see-note:l6) secs gi
+Origination and:reversalof timing differences (13,311) (1,033)
+Adjustments in respect of:prior periods (316) (199)
+Difference between:current.and deferred tax rates - (258)
+Total deferred tax (13,627) (1,490)
+Total tax (13,626) (2,075)
+
+26
+
+--- pág. 29 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+
+3] May 2024
+' Notes (continued)
+8 Taxation (continued)
+Analysis of current tax recognised in the Profit and Loss Account
+2024 2023
+£000 £000
+UK corporation tax (24) (660)
+Double taxation relief ; - (30)
+Foreign tax 25 105
+Total current tax recognised in the Profit and Loss Account 1 (585)
+Reconciliation of effective tax rate
+2024 2023
+£000 £000
+Loss for the year . (43,478) (6,930)
+Total tax credit (13,626) (2,075)
+Loss excluding taxation (57,104) (9,005)
+Tax using the UK corporation tax rate of 25.0% (2023: 20.0%) (14,276) (1,801)
+Non-deductible expenses 943 814
+Effect of tax rates on foreign jurisdictions 25 8
+Difference between current and deferred tax rates - (258)
+Group relief : (3) (4)
+Foreign income exempt from UK tax - 7
+Over provided in prior years : (313) (841)
+Total tax credit included in Profit and Loss Account ‘ (13,626) (2,075)
+
+Deferred tax has been measured at 25% for the current and prior year.
+
+27
+
+--- pág. 30 ---
+
+4 ; The Liverpool Football Club and Athletic Grounds Limited
+: Annual report and consolidated financial statements
+
+31 May 2024
+Notes (continued)
+9 Intangible assets and goodwill
+Group Goodwill Registrations Total
+£000 £000 £000
+Cost
+Balance at 1 June 2023 13,994 787,141 801,135
+Additions - 194,466 194,466
+Disposals - * (232,160) (232,160)
+Balance at 31 May 2024 _ 13,994 749,447 763,441
+Amortisation and impairment .
+Balance at 1 June 2023 " 13,994 498,044 512,038
+Amortisation for the year - 114,479 114,479
+Impairment ; - 618 618
+Disposals - (217,400) (217,400)
+Balance at 31 May 2024 13,994 395,741 409,735
+Net book value
+At 1 June 2023 - 289,097 289,097
+- 353,706 353,706
+
+At 31 May 2024 ©
+
+Included within intangible assets and goodwill is £103,282 (2023: £19,331) relating to subsidiary undertakings of
+the Company. The Directors periodically review the carrying value of registrations for impairment. Where events or
+changes in circumstances indicate the carrying value of the asset may not be fully recoverable, and it exceeds its
+recoverable amount, the resulting impairment loss is recognised in the Profit and Loss Account.
+
+10 Tangible fixed assets
+
+Freehold Stands,
+Group Land fixtures,
+and Long fittings and Motor Assets under
+buildings leasehold equipment vehicles construction Total
+
+. £000 £000 £000 £000 £000 £000
+Cost
+Balance at 1 June 2023 26,465 3 280,427 236 - 75,924 383,055
+Additions - - 32,325 1] 19,197 51,533
+Disposals - - (2,046) (11) - (2,057)
+Transfers - - 94,603 - (94,603) | -
+Balance at 31 May 2024 26,465 3 405,309 236 518 432,531
+Depreciation and impairment
+Balance at 1 June 2023 15,228 - 93,056 184 - 108,468
+Depreciation charge for the year 265 - 14,932 21 - 15,218
+Impairment - - 458 - - . 458
+Disposals - - (2,013) qd) - (2,024)
+Balance at 31 May 2024 15,493 - 106,433 194 - 122,120
+Net book value
+At 1 June 2023 | 11,237 3 187,371 52 75,924 274,587
+At 31 May 2024 10,972 3 298,876 42 , 518 310,411
+
+28
+
+--- pág. 31 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+31 May 2024
+
+Notes (continued)
+10 - Tangible fixed assets (continued)
+
+Included within tangible fixed assets is £383,996 (2023: £335,056) relating to subsidiary undertakings of the |
+Company.
+
+11 Fixed asset investments
+Shares in
+group
+undertakings
+£000
+Cost and net book value
+At 1 June 2023 and.31.May.2024 . 15,890
+
+The investment:carrying value of £15.9 million in the Company represents the cost of acquiring the entire share
+capital of Liverpoolfc:TV'Limited. This company is now dormant following the transfer of the trade and assets to the
+Company in Tuly,2009..-he:net assets of Liverpoolfc.TV Limited as at 31 May 2024 were £20.0 million.
+
+(a) Investments i in wholly owned Group undertakings comprise:
+
+All subsidiary undertakings of the Company are as follows:
+
+a . ‘¢ “st
+Name of subsidiaries
+Sede Cae ed toe. Issued share capital (£)
+Liverpool Women’s-FC:Limited * . 100
+
+LFC International: Limited * “1
+LFC Properties Limited* ; 100
+LFC Financial: Services:Limited Y 1,600
+LFC Leisure Limited. ¥ =~ -2 100
+LFC Limited Y « - 0 7% es ‘ . 100
+Anfield Arena Limited Y I
+LFC Servicesikimited-Y . : 1,000
+LFC Television:Limited'Y . : . +» 100
+LFC Travel kimitedY :se;..¢ 1,000
+LFC TV Limited:¥ ~:- 100
+Liverpool FC: Limited Y 3 1,000
+Liverpoolfc.TV Limited Y “> an 1,000
+Liverpool Football Club-Limited Y 1,000
+
+Liverpoo! Limited Y . 7 1,000
+
+* Operating company
+Y Dormant company
+
+For all investmentslisted.in the above table, the Company owns directly 100% of the ordinary share capital and have
+a registered office-address of Anfield Road, Liverpoo!, L4 OTH.
+
+(b) Joint venture
+
+The Group owns 50% of the share capital in Stanley Park Company Limited. The remaining 50% is held by
+Liverpool City Council. Stanley Park Company Limited did not trade during the period. Stanley Park Company
+Limited has a year end of 31 March and a registered office address of Anfield Road, Liverpool, L4 0TH.
+
+29
+
+--- pág. 32 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+
+3] May 2024
+Notes (continued) 4
+12 Debtors
+“oe Group Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Amounts falling due within one year
+Trade debtors : ; 91,280 80,027 91,205 79,910
+Amounts owed by:Group undertakings 6,392 8,789 11,323 13,497
+Other debtors ~ 9,427 3,899 9,233 3,777
+Prepayments and accrued:income 11,660 11,022 11,615 10,955
+118,759 103,737 123,376 108,139
+Amounts falling due:after one.year
+Trade debtors 14,974 30,789 14,974 30,789
+" * 133,733 134,526 138,350 138,928
+13 Creditors: ‘amounts falling due within one year
+Group Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Trade creditors | 103,816 100,570 103,760 100,554
+Amounts owed toxparent 198,700 71,400 198,700 71,400
+Taxation and-social security 42,742 42,079 42,627 41,970
+Corporation tax “| 276 310 265 289
+Other creditors 11,691 5,498 11,532 5,328
+Accruals - 78,064 53,688 77,658 53,435
+Deferred income . 72,950 64,594 72,749 64,594
+508,239 338,139 507,291 337,570
+14 Creditors::amounts falling due after more than one year
+Saree Lo Group Company
+- 2024 2023 2024 2023
+£000 £000 £000 £000
+Bank loans and overifafts:(see:note 15) 115,595 125,407 115,595 125,407
+Trade creditors” we “ 37,528 37,460 37,528 37,460
+Amounts owed to group undertakings - - 20,001 20,001
+Other creditors 8,631 4,620 8,632 4,620
+161,754 167,487 181,756 187,488
+
+
+--- pág. 33 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+; Annual report and consolidated financial statements
+\ ; 31 May 2024
+
+Notes (continued) ;
+
+15 Interest-bearing loans and borrowings
+
+This note provides information about the contractual terms of the Group’s and parent Company’s interest-bearing
+and non-interest-bearing loans and borrowings, which are measured at amortised cost.
+
+Group Company
+
+2024 2023 2024 2023
+£000 £000 £000 £000
+
+Creditors falling due within one year
+Intercompany loan 198,700 71,400 198,700 71,400
+198,700 71,400 198,700 71,400
+
+Creditors falling due more than one year
+
+Secured bank loans ; 116,000 126,000 116,000 126,000
+Less: deferred loan:costs (405) (593) (405) (593)
+115,595 125,407 115,595 125,407
+
+Terms and debt:repayment schedule
+Group and Company. ; Nominal Year of Repayment 2024 2023
+
+oe interest rate maturity schedule
+
+£000 £000
+Secured bank loan. -. 6.36% 2025 Revolver 116,000 -
+Secured bank toan . 5.84% 2025 Revolver - 126,000
+Intercompany Joan Interest free N/A On demand 198,700 71,400
+314,700 197,400
+
+At the year end the.Club held a £200.0 million revolving credit facility. On 24 September 2024, the Club and its
+holding company, UKSV Holdings Company Limited, refinanced its credit facility which was due to mature in July
+2025. This provided:£350.0m of facilities for a term of five years and is available for general corporate purposes
+including working capital and letters of credit.
+
+The £198.7 million'(2023: £71.4 million) due to group undertaking at 31 May 2024 represented an intercompany
+creditor with FSG‘Football Group, LLC (formerly UKSV I, LLC). This intercompany loan has been provided to
+fund the stadium-expansion work and is interest-free.
+
+31
+
+--- pág. 34 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+
+31 May 2024
+
+Notes (continued)
+16 Deferred tax assets and liabilities
+Deferred tax assets and liabilities are summarised as follows:
+Group Assets Liabilities Net
+
+2024 ; 2023 2024 — 2023 2024 2023
+
+£000 £000 £000 £000 £000 £000
+Accelerated capital allowances - - 10,531 9,854 10,531 9,854
+Intangible asset timing differences - - 12,364 23,016 12,364 23,016
+Employee benefits (4,073) (1,692) - —_ (4,073) (1,692)
+Unused tax losses and other (11,755) (10,483) - - (11,755) (10,483)
+Total (15,828) (12,175) 22,895 32,870 7,067 20,695
+
+The Group has total gross tax losses of £49.4 million (2023: £45.4 million). A deferred tax asset has been
+recognised on £45.6 million of these losses (2023: £41.6 million).
+
+The Group expects deferred tax assets of £1.2 million (2023: nil) and deferred tax liabilities of £9.6 million (2023:
+£4.5 million) to reverse in 2025 as tax losses are utilised and rolled-over intangible gains and accelerated capital
+allowances unwind.
+
+The Group has applied the exception in FRS 102, Section 29 ‘Income Tax’ for deferred taxes and liabilities related to
+Pillar Two income taxes. The group are currently undergoing a review of the impact, based on an initial assessment
+considering current trading and UK tax at 25%, the Group expect the risk of additional top-up taxes to be low.
+
+17 Employee benefits
+The Company operates a defined contribution pension plan.
+
+The total expense relating to these plans in the current year was £4.6 million (2023: £3./ million).
+
+18 Capital and reserves
+Share capital
+
+Group and Company — Ordinary shares Ordinary shares
+. 2024 2023
+_ On issue at 1 June . 34,825 34,825
+On issue at 31 May — fully paid 34,825 34,825
+2024 2023
+£000 £000
+
+Allotted, called up and fully paid
+34,825 ordinary shares of £5 each 174 174
+Shares classified in shareholders’ funds . 174 174
+
+32
+
+--- pág. 35 ---
+
+. The Liverpool Football Club and Athletic Grounds Limited
+“4 ; Annual report and consolidated financial statements
+
+31 May 2024
+Notes (continued)
+19 Financial instruments:
+19 (a) Carrying amount of financial instruments
+The carrying amounts of the financial assets and liabilities include:
+Group Financial Assets Financial Non-financial Total Financial Non-financial Total |
+Assets Assets Assets Assets Assets Assets:
+2024 2024 2024 2023 2023 2023
+£000 £000 , £000 £000 £000 £000
+At amortised cost: :
+Cash 7,504 - 7,504 3,394 - 3,394
+Trade debtors (excluding player 48,386 - oe 48,386 ; 44,232 - 44,232
+receivables)
+Player receivables 57,868 - 57,868 66,584 - 66,584
+_ Other receivables 15,819 11,660 27,479 12,688 11,022 23,710
+Total Assets 129,577 11,660. 141,237 126,898 11,022 137,920
+Group Financial Liabilities Financial Non-financial Total Financial Non-financial Total
+Liabilities Liabilities Liabilities Liabilitics . Liabilities Liabilities
+2024 2024 2024 2023 2023 2023
+£000 £000 £000 £000 £000 £000
+At amortised cost:
+Trade creditors 13,537 - 13,537 25,636 - 25,636
+(excluding player creditors)
+Player creditors 127,807 a 127,807 112,394 - 112,394
+Other payables 340,104 72,950 413,054 177,595 64,953 242,548
+Bank loans and overdrafts 115,595 - 115,595 125,407 - 125,407
+Total Liabilities 597,043 72,950 - 669,993 441,032 64,953 505,985
+
+33
+
+--- pág. 36 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+Annual report and consolidated financial statements
+31 May 2024
+
+.Notes (continued)
+
+19 Financial instruments (continued)
+19 (b) Financial risk management
+
+The Group’s activities expose it to a variety of financial risks: market risks (including currency risk and interest rate
+risk), credit risk and liquidity risk. The Group uses derivative financial instruments to hedge certain exposures and
+has designated certain derivatives as hedges of cash flows (cash flow hedge).
+
+The policy for each of the above risks is described in more detail below:
+
+os
+
+Currency risk
+
+Where currencies other than sterling are used, the Group looks at natural hedges in the business, and enters hedging
+arrangements where appropriate. The fair value of foreign currency contracts is based on their listed market price, if
+available. If a listed market price is not available, then fair value is estimated by discounting the difference between
+the contractual: forward price and the current forward price for the residual maturity of the contract using a risk-free
+interest rate (based‘on government bonds). :
+
+at
+
+Interest rate risk
+
+The Group has no‘significant interest-bearing assets other than cash on deposit which attracts interest at a small
+margin above:the:UK base rates. ;
+
+The Group’s interest rate risk arises from its borrowings. Borrowings issued at variable interest rates expose the
+Group to cash-flow interest rate risk. The Group’s borrowings are denominated in pounds sterling.
+
+Credit risk
+
+Credit risk refers‘to the risk that a counterparty will default on its contractual obligations resulting in financial loss
+to the Group. Credit risk is managed on a Group basis and arises from cash and cash equivalents and trade and other
+receivables (excluding receivables from parent undertakings and prepayments).
+
+The maximum‘exposure risk relates to football debtors, but this is mitigated by the governing bodies of international
+and national football associations.
+Credit evaluations:are performed on all customers requiring credit over a certain amount. The maximum credit risk
+
+exposure of the.Group comprises the amounts presented in the balance sheet which are stated net of provisions for
+doubtful debts.
+
+Liquidity risk
+
+The Group’s policy.is to maintain a balance of continuity of funding and flexibility through the use of its secured
+loan facility. The-annual cash flow is cyclical in nature with a significant portion of cash inflows being received
+prior to the start‘Of the playing season. Responsibility for liquidity risk management rests with management. The
+management use: predictive financial models to constantly monitor and manage current and future liquidity.
+
+19 (c) Hedge accounting
+
+Where possible.and.depending on the payment profile of transfer fees payable and receivable the Group will seek to
+hedge future payments and receipts at the point it becomes reasonably certain that the payments will be made, or the
+income will be received.
+
+34
+
+--- pág. 37 ---
+
+The Liverpool Football Club and Athletic Grounds Limited
+' Annual report and consolidated financial statements
+
+31 May 2024
+Notes (continued)
+20 Operating leases
+Non-cancellable retail and office operating lease rentals are payable as follows:
+2024 2023
+£000 £000
+Less than one year . : 2,006 2,185
+Between one and five years 5,437 4,940
+More than five years . ‘ 479 566
+7,922 7,691
+
+During the year £2.8 million was:recognised as an expense in the Profit and Loss Account in respect of operating
+leases (2023: £2'9 million). = *~
+
+21 Commitments
+Capital commitments
+
+Contractual commiitments'to: purchase tangible fixed assets at the year-end were £2.7 million (2023: £11.9 million).
+22 Contingencies
+
+Under the terms of certain contracts for the acquisition of registrations, future transfer fees may be payable of £41.6
+million (2023::£55:9million):In-accordance with the Group’s accounting policy for transfer fees any additional fees
+which may be payable-under: these: agreements, will be accounted for in the year that the criteria is met. Since the
+
+year end £0.3.million-have. crystallised, amounts in relation to existing or new registrations will be capitalised and
+those relating-to disposed registrations will be recognised in the profit and loss account.
+
+Under the terins‘6f-certain contracts for the sale of registrations, future amounts may be received by the Club. As at
+31 May 2024:the\maximum-amount that could be received is £2.5 million (2023: £12.7 million). Since the period
+end £0.5 million:have-crystallised:and will be recognised in the profit and loss account.
+
+23 Share based payments - 7
+
+Certain employees of the Group participate in a Management Incentive Plan (MIP) which is accounted for in
+accordance with:Section.26 of:FRS :102 “Share-based Payment”. This incentive arrangement provides
+compensation*benefits linked to:the ‘equity valuation of the wider FSG Group and the fair value of these benefits is
+recognised as.an: expense.over-the ‘employees’ service periods. The estimated fair value is determined and
+remeasured at eachcalendar-year: end using a market approach by the appreciation in the wider FSG Group’s equity
+value over a stated MIP:hurdle'rate:‘Each award agreement will set out the terms under which an award is eligible to
+become vested. Each.award. granted under the incentive arrangement will be subject to a five-to-seven-year vesting
+period on the anniversary of the grant date.
+
+The total liability in respect of:these incentive arrangements as at 31st May 2024 is £5.6 million (2023: £1.6
+million), which is recognised i in the. balance sheet as a liability.
+
+An expense of £4.0 ‘million-(2023: ‘£1.6 million) has been recognised in the profit and loss account in respect of the
+incentive arrangements for the year ended 31st May 2024. This expense represents the current period’s charge for
+services receivéd:from:employees:in.return for rights to equity and cash-settled share-based payments.
+
+24 Related ‘parties
+
+Transactions with related parties are limited to those companies that are wholly owned within the wider group and as
+such are exempt from disclosure.
+
+35
+
+--- pág. 38 ---
+
+: The Liverpool Football Club and Athletic Grounds Limited
+' Annual report and consolidated financial statements
+; 31 May 2024
+
+Notes (continued)
+
+24 Related parties (continued)
+Transactions with key.management personnel
+
+Total compensation of key management personnel across the Group (including the directors) in the year amounted to
+£4.8 million (2023: £9.7 million).
+
+25 Ultimate parent company and parent company of larger group
+
+- The ultimate parent Company and controlling party is Fenway Sports Group, LLC, a company incorporated in the
+United States of America.
+
+The largest group in which the results of the Company are consolidated is that headed by Fenway Sports Group,
+LLC.
+
+The smallest group in which the results of the Company are consolidated is that headed by UKSV Holdings
+Company Limited incorporated in the United Kingdom. The consolidated financial statements of UKSV Holdings
+Company Limited:are available to the public and may be obtained from the Registrar of Companies, Companies
+House, Crown*Way,-Cardiff, CF14 3UZ.
+
+26 Accounting estimates and judgements
+Valuation of registrations
+
+The recoverability. of the squad value is considered in accordance with the accounting policy as described in note
+1.10. A key judgement relates to which players are included within the first team squad for cash-generating unit
+purposes, in addition-to estimating the market value of individual registrations. This is subject to fluctuations in the
+wider transfer:market..:Management make their assessment based on internal and external sources, such as recent
+comparable transfers. or offers received for those registrations. :
+
+27 Subsequent events
+
+Player Trading
+
+Since the end of the financial period, the Club has contracted for the purchase and sale of various players. The net
+amount payable restlting from this activity is £0.1 million. This activity will be accounted for in the year ending 31
+May 2025. The cumulative effect on the Profit and Loss Account since the period end in relation to the profit on
+sales of players isa £41 .9 million profit.
+
+Interest-bearing: loins Sand borrowings
+
+On 24% Septeiber2024, the Group and its holding company, UKSV Holdings Company Limited, refi nanced its
+credit facility which was due to mature in July 2025. This provided £350.0m of facilities for a term of five years and
+is available for.general.corporate purposes including working capital and letters of credit.
+
+“”
+
+36

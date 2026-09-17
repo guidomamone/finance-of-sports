@@ -34,8 +34,23 @@ mecanismo (confirmado funcionando con Bayer Leverkusen, VfL Wolfsburg, RasenBall
    tool `computer` empieza a fallar ("the Browser pane is not displayed, so the page is not
    compositing frames") — incluso con `ref` válido. `find`/`read_page`/`javascript_tool` siguen
    funcionando (no necesitan compositor), pero como el mecanismo de descarga depende de un click
-   "de verdad", quedó bloqueado en el medio de esta sesión (ver TODO.md / abajo, clubes pendientes).
-   Si pasa de nuevo: no es un bug del sitio, esperar a que el panel vuelva a estar visible.
+   "de verdad", quedó bloqueado en el medio de esta sesión. **Actualizado**: en una sesión de
+   continuación posterior el bloqueo YA NO estaba — bastó con abrir una pestaña nueva del Browser
+   pane (`tabs_create`) para que los clicks reales volvieran a funcionar de entrada. No está
+   confirmado si fue la pestaña nueva específicamente o que el panel volvió a estar visible por otro
+   motivo, pero abrir pestaña propia de entrada es de cualquier forma la práctica correcta cuando hay
+   sospecha de que otro agente en paralelo esté compartiendo el Browser pane (ver el gotcha ya
+   documentado en `CLAUDE.md`). Si pasa de nuevo: no es un bug del sitio, probar primero con una
+   pestaña nueva antes de darse por vencido con un club.
+6. **Gotcha de múltiples depósitos para el mismo Geschäftsjahr**: para varios clubes (confirmado en
+   Mönchengladbach, y probablemente aplica en general) el registro lista más de un documento con el
+   MISMO texto de enlace ("Jahresabschluss zum Geschäftsjahr vom ... bis zum ...") para el mismo año
+   — el depósito original completo (balance + GuV + Anhang + Lagebericht + dictamen) y uno o más
+   "Ergänzung"/"Berichtigung" posteriores que solo agregan o corrigen una pieza puntual (ej. el
+   informe del consejo de vigilancia, unas pocas páginas). El tamaño en bytes de la respuesta de la
+   API de descarga es una señal confiable de cuál es el completo (el complemento suele ser
+   sensiblemente más chico) — verificar igual con `pdftotext` antes de dar por buena la descarga, no
+   asumir que el primer resultado de la búsqueda es el documento completo.
 
 **El hallazgo más importante — quién SÍ y quién NO tiene cuentas propias ahí:**
 
@@ -52,11 +67,18 @@ mecanismo (confirmado funcionando con Bayer Leverkusen, VfL Wolfsburg, RasenBall
   exención NO aplica — la GmbH/AG/KGaA del fútbol SÍ deposita su propio Jahresabschluss/
   Konzernabschluss completo, año a año, igual que cualquier sociedad. Confirmado real (no exento)
   para **RasenBallsport Leipzig GmbH** (dueño: Red Bull GmbH, austríaco — sin el mecanismo de
-  garantía usado por Bayer/VW), **TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH** y **Borussia VfL
-  1900 Mönchengladbach GmbH** (esta última, ojo: la prensa alemana describe a Mönchengladbach como
-  uno de los "clubes e.V. sin escindir" — pero el Unternehmensregister muestra una GmbH activa con
-  Jahresabschluss real y calendario fiscal propio, 21 páginas de resultados de histórico; hay que
-  verificar en la próxima sesión si es la entidad operativa del fútbol o una subsidiaria distinta).
+  garantía usado por Bayer/VW), **TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH**, **Borussia VfL
+  1900 Mönchengladbach GmbH**, **SV Werder Bremen GmbH & Co. KGaA**, **Eintracht Frankfurt Fußball
+  Aktiengesellschaft**, **VfB Stuttgart 1893 AG**, **1. FC Köln GmbH & Co. KGaA** y **Fußball-Club
+  Augsburg 1907 GmbH & Co. KGaA** — los 8 clubes escindidos que quedaban por confirmar resultaron
+  TODOS reales, ninguno exento. Nota resuelta sobre Mönchengladbach (la prensa alemana lo describe
+  como uno de los "clubes e.V. sin escindir", lo cual generó dudas en una versión anterior de esta
+  nota): se leyó el Lagebericht 2024 completo y confirma explícitamente que la GmbH SÍ es la
+  operadora de la Lizenzspielermannschaft — la prensa estaba desactualizada o imprecisa para este
+  club en particular, no hace falta preguntarle nada al club sobre esto. Lo mismo aplica en general:
+  varios de estos 8 clubes tienen además subsidiarias PEQUEÑAS (marketing, merchandising, gestión de
+  estadio, servicios) que SÍ están exentas bajo la garantía del club mismo como matriz — no confundir
+  esa exención de una subsidiaria menor con una exención de la entidad principal del club.
 - **Cuando el club NUNCA escindió el fútbol de la asociación** (sigue siendo 100% e.V., sin ninguna
   GmbH/AG/KGaA intermedia), no hay nada que buscar en Unternehmensregister — la asociación no
   deposita ahí. Confirmado por prensa (no verificado individualmente todavía en el registro) para
@@ -139,16 +161,16 @@ para el final, como pidió Guido.
 | Borussia Dortmund | Borussia Dortmund GmbH & Co. KGaA (cotiza, Deutsche Börse) | no investigado (no hace falta, cotiza) | **7 ejercicios reales** (2018/19-2024/25), Geschäftsbericht completo (244 pág.) vía `report.bvb.de`/`bericht.bvb.de` | sí |
 | Bayern München | FC Bayern München AG (mayoría e.V.) | no investigado | **3 ejercicios reales** (2022/23-2024/25) vía comunicado de la Jahreshauptversammlung en `fcbayern.com` | sí |
 | RB Leipzig | RasenBallsport Leipzig GmbH (dueño: Red Bull GmbH) | **12 ejercicios reales, serie completa 2014-2025** | no investigado (no hace falta) | sí |
-| TSG Hoffenheim | TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH (dueño: Dietmar Hopp) | **6 ejercicios reales** (2019/20-2024/25) de una serie confirmada de 16 (2009-2025), quedan 10 años más por bajar | no investigado | sí |
+| TSG Hoffenheim | TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH (dueño: Dietmar Hopp) | **16 de 16 ejercicios reales, serie COMPLETA 2009-2025** | no investigado | sí |
 | Hamburger SV | HSV Fußball AG & Co. KGaA (fútbol) + Hamburger Sport-Verein e.V. (asociación madre, multideporte) | no investigado | **4 ejercicios reales de cada entidad** (2021/22-2024/25) vía `hsv.de` — OJO perímetros distintos, ver `fuentes/Alemania/Hamburger SV.md` | sí |
 | Bayer Leverkusen | Bayer 04 Leverkusen Fußball GmbH (dueño: Bayer AG) | **dead-end estructural confirmado** (exención §264 Abs.3/264b HGB) | sin verificar | sí (única fuente completa) |
 | VfL Wolfsburg | VfL Wolfsburg-Fußball GmbH (dueño: Volkswagen AG) | **dead-end estructural confirmado** (mismo mecanismo que Leverkusen) | sin verificar | sí (única fuente completa) |
-| Borussia Mönchengladbach | Borussia VfL 1900 Mönchengladbach GmbH (HRB 5742) | **confirmado activo, Jahresabschluss real, ejercicio calendario** — PDF no descargado esta sesión (ver Gotcha de tooling arriba) | sin verificar | sí |
-| SV Werder Bremen | SV Werder Bremen GmbH & Co. KGaA (HRB 21775, Bremen) | entidad confirmada, no verificado si filing real o exento — pendiente | sin verificar | sí |
-| Eintracht Frankfurt | Eintracht Frankfurt Fußball Aktiengesellschaft (HRB 49421) | entidad confirmada (Jahresabschluss 2024/25 y Konzernabschluss publicados según prensa), no descargado | sin verificar | sí |
-| VfB Stuttgart | VfB Stuttgart 1893 AG (HRB 750582) — accionistas Mercedes-Benz, Porsche, Jako | entidad confirmada, no descargado | sin verificar | sí |
-| 1. FC Köln | 1. FC Köln GmbH & Co. KGaA (HRB 37030) | entidad confirmada, no descargado | sin verificar | sí |
-| FC Augsburg | Fußball-Club Augsburg 1907 GmbH & Co. KGaA (HRB 21812) | entidad confirmada, no descargado | sin verificar | sí |
+| Borussia Mönchengladbach | Borussia VfL 1900 Mönchengladbach GmbH (HRB 5742) | **4 ejercicios reales** (2021-2024), confirmado real filer, serie completa desde 2006 | sin verificar | sí |
+| SV Werder Bremen | SV Werder Bremen GmbH & Co. KGaA (HRB 21775, Bremen) | **3 ejercicios reales** (2022/23-2024/25), confirmado real filer | sin verificar | sí |
+| Eintracht Frankfurt | Eintracht Frankfurt Fußball Aktiengesellschaft (HRB 49421) | **2 ejercicios reales** (2023/24-2024/25), confirmado real filer | sin verificar | sí |
+| VfB Stuttgart | VfB Stuttgart 1893 AG (HRB 750582) — accionistas Mercedes-Benz, Porsche, Jako | **2 ejercicios reales** (2023-2024), confirmado real filer | sin verificar | sí |
+| 1. FC Köln | 1. FC Köln GmbH & Co. KGaA (HRB 37030) | **2 ejercicios reales** (2023/24-2024/25), confirmado real filer | sin verificar | sí |
+| FC Augsburg | Fußball-Club Augsburg 1907 GmbH & Co. KGaA (HRB 21812) | **2 ejercicios reales** (2023/24-2024/25), confirmado real filer | sin verificar | sí |
 | 1. FC Union Berlin | sin escindir, 100% e.V. (confirmado por prensa) | no aplica | balance solo para socios (confirmado explícito por el club) | sí (única fuente completa) |
 | SC Freiburg | sin escindir, 100% e.V. (confirmado por prensa) | no aplica | sin balance descargable | sí (única fuente completa) |
 | 1. FSV Mainz 05 | sin escindir, 100% e.V. (confirmado por prensa, decisión consciente de no escindir) | no aplica | sin balance descargable | sí (única fuente completa) |
@@ -157,15 +179,20 @@ para el final, como pidió Guido.
 
 ## 5. Qué queda pendiente para la próxima sesión
 
-- **Bloqueo de tooling, no del portal**: en el medio de esta sesión el Browser pane dejó de estar
-  visible ("the Browser pane is not displayed, so the page is not compositing frames") y el mecanismo
-  de descarga de Unternehmensregister (que necesita un click "de verdad", ver sección 1) quedó
-  bloqueado. Por eso quedaron pendientes de bajar, aunque la entidad y la existencia del filing ya
-  están confirmadas: el resto de la serie de TSG Hoffenheim (10 años más, 2009-2019), el PDF de
-  Borussia Mönchengladbach (entidad confirmada activa), y los 5 clubes con entidad identificada pero
-  sin verificar en el registro (Werder Bremen, Eintracht Frankfurt, VfB Stuttgart, 1. FC Köln, FC
-  Augsburg) — para estos 5, el procedimiento a seguir es exactamente el de la sección 1, no hace
-  falta investigar de nuevo la razón social (ya está en la tabla de arriba).
+- **Resuelto en la sesión de continuación (mismo barrido)**: el bloqueo de tooling del Browser pane
+  mencionado en una versión anterior de esta nota se destrabó abriendo una pestaña nueva — con eso se
+  completó la serie ENTERA de TSG Hoffenheim (16/16, 2009-2025) y se consiguieron 2-4 ejercicios
+  reales de cada uno de los 6 clubes que habían quedado con la entidad identificada pero sin
+  descargar: Borussia Mönchengladbach, Werder Bremen, Eintracht Frankfurt, VfB Stuttgart, 1. FC Köln,
+  FC Augsburg. Ver la tabla de la sección 4 (actualizada) y el archivo `fuentes/Alemania/<Club>.md` de
+  cada uno para el detalle exacto de qué se bajó.
+- **Series históricas más profundas, confirmadas disponibles pero no agotadas** (quedó una serie
+  RAZONABLE de 2-4 años por club, no la serie completa que sí se hizo para RB Leipzig/TSG Hoffenheim
+  — por priorización de tiempo frente al volumen de clubes a cubrir en una sola sesión): Borussia
+  Mönchengladbach tiene serie confirmada desde 2006 (15 años más sin bajar), Werder Bremen/Eintracht
+  Frankfurt/VfB Stuttgart/1. FC Köln/FC Augsburg probablemente tienen varios años más atrás de los
+  bajados (sus páginas de resultados en Unternehmensregister son más largas que la cantidad de
+  ejercicios descargados) — mismo procedimiento de la sección 1 para profundizar cualquiera de estos.
 - Dortmund: se confirmó la serie hasta 2018/19 vía `bericht.bvb.de`/`report.bvb.de`; no se pudo
   confirmar años anteriores (2009-2018) — el path viejo de `aktie.bvb.de/Publikationen/
   Geschaeftsberichte/...` está deprecado (devuelve página vacía) y la Wayback Machine estuvo caída

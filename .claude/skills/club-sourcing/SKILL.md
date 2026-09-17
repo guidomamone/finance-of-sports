@@ -587,13 +587,21 @@ en ningún otro país del proyecto:
 - **Gotcha de tooling, no del portal**: la búsqueda y descarga en Unternehmensregister necesitan un
   click real (`computer`, no JS/fetch) porque el flujo pasa por un formulario con sesión — si el
   Browser pane deja de estar visible en pantalla a mitad de una sesión larga, las descargas se
-  bloquean sin error claro. Si esto pasa, hay que re-adjuntar el pane antes de seguir, no asumir que
-  el portal cambió de comportamiento.
-- **Quedan pendientes de descargar** (entidad y HRB ya confirmados, PDF no bajado por el corte de
-  tooling de arriba): Borussia Mönchengladbach (con una duda de mapeo abierta en
-  `dudas-por-club.md` sobre si su GmbH es la del fútbol o de otra unidad de negocio), Werder Bremen,
-  Eintracht Frankfurt, VfB Stuttgart, 1. FC Köln, FC Augsburg, y el resto del histórico de TSG
-  Hoffenheim (quedan 10 de los 16 ejercicios confirmados).
+  bloquean sin error claro. **La vuelta que funcionó**: abrir una pestaña nueva con `tabs_create` —
+  el bloqueo desapareció de entrada, sin ningún otro truco. No hace falta pelear con la pestaña
+  vieja, es más rápido abrir una nueva.
+- **Un mismo ejercicio puede tener DOS depósitos con el mismo texto de enlace en el listado**: para
+  Borussia Mönchengladbach 2024 había dos entradas idénticas en apariencia — una era solo el informe
+  del consejo de vigilancia (3 páginas), la otra el balance completo (15 páginas). El tamaño en
+  bytes de la respuesta es la forma rápida de distinguir cuál es cuál sin abrir los dos.
+- **Con los 18 clubes de Bundesliga 2025/26 con ejercicio(s) reales confirmados** (RB Leipzig,
+  Dortmund, Bayern, TSG Hoffenheim con serie completa 2009-2025, Borussia Mönchengladbach con serie
+  confirmada desde 2006, Werder Bremen, Eintracht Frankfurt, VfB Stuttgart, 1. FC Köln, FC Augsburg,
+  Hamburger SV — más Leverkusen/Wolfsburg vía el agregado de la DFL, y los 5 e.V. puros también vía
+  DFL), Alemania queda como la primera liga top del proyecto sin ningún club sin cubrir. Lo que
+  queda es solo profundidad: varios clubes tienen más ejercicios históricos confirmados en el
+  registro de los que se bajaron (ej. Mönchengladbach hasta 2006) — mismo procedimiento, sección de
+  arriba, para quien quiera completarlo.
 
 ## Cómo mantener este skill
 

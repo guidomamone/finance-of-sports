@@ -1,0 +1,2084 @@
+
+--- pág. 1 ---
+
+Régisteréd niimber: 01989823
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED.
+
+Doe.
+
+eo
+
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+oe
+a
+D2
+w
+Fa *AEYIKGNK*
+mee | OA13 24/03/2026 #63
+
+—~ COMPANIES HOUSE
+
+--- pág. 2 ---
+
+aL
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+2 oe ee ee ee a -———— <n
+
+COMPANY INFORMATION
+
+‘Directors J F Bowater
+J Gough
+Y Shi (resigned 19 December 2025)
+J Shi (appointed 19 Decernber 2025)
+
+Company secretary M D Wild
+Registered number 01989823
+
+Registered office Molineux Stadium .
+Waterloo Road
+Wolverhampton
+West Midlands ~~
+WV1 4QR
+
+Independent auditor Crowe U.K. LLP
+Black Country House
+Rounds Green Road
+Oldbury
+West Midlands
+B69 2DG
+
+Bankers Barclays Bank PLC
+One Snowhill
+Snow Hill Queensway
+Birmingham
+B4 6GH
+
+Fe
+
+ae
+
+--- pág. 3 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+CONTENTS
+
+Section 172 statement
+
+Directors' report
+
+Strategic report
+
+Directors’ responsibilities statement
+Independent auditor's report
+
+Profit and Loss account
+
+Balance sheet
+
+Statement of changes in equity
+
+Notes to the financial statements
+
+Page
+1-4
+
+{eo
+
+-12
+
+13
+
+14-17
+
+18
+
+19
+
+20
+
+21-38
+
+--- pág. 4 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+SECTION 172 STATEMENT
+AS AT 30 JUNE 2025
+
+.Directors' statement of compliance with duty to promote the success of the Company
+
+Section 172 of the Companies Act 2006 requires the Directors of a company to act in a way they consider to be
+in good faith and would be most likely to promote the success of the company for the benefit of all its members,
+both in the current period and in the long term.
+
+In discharging their duties above, the Directors carefully consider, amongst other matters, the impact of their
+decisions on various stakeholder groups. The groups considered in this regard are our employees, our
+customers, our suppliers and our shareholders, as well as the wider community in which we operate. The
+Directors recognise that building strong relationships with our stakeholders will help us to deliver our long-term
+strategy in line with our core values and to operate the business in a sustainable way. We are committed to
+conducting business responsibly. The directors do not believe that there have been any key decisions faced
+during the year which require specific reference or have had significant impact on any of the company’s
+stakeholder groups.
+
+Supporters
+
+Whiist our fanbase continues to grow, it remains important to ensure that every action taken has the core aim of
+improving team performances and increasing engagement with all sections of the fanbase, ensuring supporters
+can remain connected with their club.
+
+We are committed to providing a high standard of communication and consultation to our supporters, with
+important club updates provided through the official website and official club social media channels.
+
+Supporters who wish to contact the club can do so through a variety of methods which are all directed to the
+central Fan Services team. Following supporter feedback, the Fan Services team was introduced in 2021, acting
+as a central hub with a single point of contact for all supporter enquiries and feedback. As well as providing a
+reliable platform for telephone and email enquiries, the Fan Services team introduced two new contact methods,
+with fans now able to submit a direct message to a dedicated fan help account through the social media network
+X (formerly Twitter), and also live chat with an advisor through the club’s FAQ portal. The club welcomes all
+feedback from supporters and encourages fans with any queries, issues, concerns or praise to get in touch. Data
+from Fan Services enquiries is collated and regularly shared with club management to ensure the fan voice is
+considered.
+
+The club has a dedicated supporter liaison officer (SLO) with the aim of communicating key information to
+supporters ahead of both home and away matches, as well as working closely with individual supporters to
+resolve any issues they may experience on a matchday. The SLO produces matchday guides for supporters
+ahead of each game, detailing any important updates relating to travel or matchday experience. These updates
+are also shared from a dedicated social media channel, @WolvesHelp, which is designed to share important
+updates for match going supporters. The club also has a dedicated disability access officer (DAO) as a point of
+contact for disabled supporters and is committed to making Molineux accessible for all supporters. The DAO
+also collates relevant information for away fixtures to ensure supporters with accessible requirements are
+comfortable when travelling.
+
+The club continues to operate a number of Fan Focus Groups which allow supporters to work closely with the
+club on the subjects that matter most to them. The matchday experience group was launched in 2018 and was
+followed by groups devoted to ticketing, retail and equality, diversity and inclusion. Each group has a nominated
+member who represents the group on the club's Fan Advisory Board, with representatives chosen by the group
+members. The club has also introduced focus groups for environmental sustainability and for Wolves Women,
+which are not currently represented on the Fan Advisory Board due to only being recently established.
+
+A terms of reference document, along with updates from Fan Focus Groups, is detailed on the club's official
+website at wolves.co.uk/fans in the form of meeting notes. Dates of previous focus group meetings are also
+available.
+
+Page 1
+
+--- pág. 5 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+SECTION 172 STATEMENT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+The club launched its Fan Advisory Board ahead of the 2023-24 season to create a consultative panel of
+supporters who work alongside the club for the purpose of engaging in dialogue, exchanging information, ideas
+and securing feedback from the fan perspective. To ensure consistency with the club's other fan engagement
+and consultation initiatives, the Fan Acvisory Board comprises a representative from each of the club’s Fan
+Focus Groups, a representative from the Wolves 1877 Supporters Trust, a representative from the Wolves
+Disabled Supporters Association and an independent supporter representative selected by the club and the
+Football Supporters Association following an application process in the summer of 2023. Meetings include
+members of the senior management team based on the agenda for each meeting. A representative from the
+club's ownership will also attend at least one Fan Advisory Board meeting per season.
+
+The club is proud to work with a number of representative groups to ensure their voice is heard and to support
+them in being represented at national level.
+
+The club welcomes the formation of an Independent Supporters Trust (Wolves 1877 Trust), allowing Wolves
+supporters to be represented at national level through affiliation with the Football Supporters Association. The
+club has regularly engaged with the Wolves 1877 Trust since its formation in 2021. Wolves has also worked
+closely with the Wolves Disabled Supporters Association for a number of years through the club's dedicated
+disability access officer.
+
+Full details of the club’s commitment to fan engagement and consultation can be found in the Fan Engagement
+Plan on the fan engagement page of the Wolves website. This page also contains contact information, policies,
+guides, FAQs and meeting notes from all Fan Advisory Board and Fan Focus Group meetings.
+
+Employees
+
+At Wolves, the core foundations of our culture are employee wellbeing, equality, diversity and inclusion (EDI),
+and safeguarding. We are committed to creating a culture where all employees feel safe, valued and supported
+to thrive in their roles.
+
+We are committed to promoting a healthy workforce across our organisation and are focusing on physical,
+mental, financial and social well-being.
+
+The club has a dedicated team of mental health first-aiders (We Care Ambassadors), providing signposting and
+mental health and well-being support, alongside employee resource groups which cover menopause (Pause To
+Chat), gender (Women at Wolves) and neurodiversity. These further enhance staff voice and strengthen
+collective learning and development, including enhancements to annual leave entitlement and to maternity,
+paternity and parental leave policies.
+
+Each season, the club recognises staff achievements through the Pride In Our Pack awards dinner, and
+throughout the year colleagues can express appreciation for one another through a separate recognition scheme
+called Shine - We See You.
+
+Wolves’ commitment to corporate social responsibility continues to grow with the achievement of Intermediate
+Level of the Premier League Equality, Diversity and Inclusion Standard (PLEDIS) in 2023, coinciding with the
+launch of Mission One Pack, our three-year equality, diversity and inclusion strategy for the whole organisation.
+This strategy focuses on increasing representation and involvement across our strategic priorities: women and
+girls, access and disabilities, race, ethnicity and religion, and LGBTQIA+ inclusion. It culminates in our next
+PLEDIS assessment, planned for 2026, with thinking already underway for the next phase of our EDI strategy.
+
+The strategy focuses on how our organisation continues to advance its collective efforts both internally and
+externally using the following tactics:
+
+Activities
+
+Recruitment and onboarding
+Staff and visitor experience
+Learning and development
+
+oe a 8
+
+Page 2
+
+--- pág. 6 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+SECTION 172 STATEMENT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+This is further supported by the club's internal ED! working group, comprising staff from across 26 departments
+and every business function, who meet regularly to disseminate information and review EDI departmental plans.
+The club also has a dedicated external equality advisory group (EAG) which helps to progress and advise on the
+club's EDI strategy and departmental plans. The EAG meets throughout the season, with different staff including
+senior leadership attending.
+
+We continue to nurture an environment where everyone can thrive as part of our #OnePack ethos and through
+our annual One Pack Week celebrating diversity on and off the pitch. This has included bringing supporters,
+local communities, players and staff together through special events and campaigns, including a key event
+celebrating Black History Month, and marching at both Birmingham and Wolverhampton Pride.
+
+As part of our commitment to safeguarding, each season we also hald an annual Safeguarding Week and a-
+
+dedicated Play Safe fixture, with a range of learning and development opportunities delivered across the
+organisation.
+
+Commercial partners
+
+The Directors and senior management commit considerable time, effort and resources into developing,
+activating and delivering for our commercial! partners, with a view to fostering long-term, mutually beneficial
+partnerships. We are a challenger club for challenger brands, and we seek to partner with organisations that
+dare to be different and challenge the status quo.
+
+We drive innovation and pursue every venture with a dynamic and progressive purpose. We act to service our
+partners’ needs to the highest standards, aiming to add value beyond traditional commercial partnerships.
+
+Suppliers
+
+The Directors have established procedures to ensure that external suppliers are individually verified to ensure
+they meet the health and safety, regulatory and financial security standards required by the company. The
+company seeks to pay all suppliers any undisputed amounts due that conform with the company’s billing
+requirements within agreed terms. The company has procedures for dispute resolution which ensure timely and
+fair outcomes.
+
+Regulatory bodies
+
+The Company is regulated by the FA, the Premier League, UEFA and FIFA. The Company actively engages with
+all regulatory bodies, always ensuring transparent compliance.
+
+Community
+
+The Company takes its role within the community very seriously and promotes and encourages community and
+charitable contribution, primarily through its charitable arm, Wolves Foundation.
+
+Wolves Foundation is a cornerstone of the city of Wolverhampton. Through a team of highly skilled, dedicated
+staff and volunteers, it harnesses the strong local connection with Wolves to motivate, educate and inspire tens
+of thousands of beneficiaries across our communities.
+
+The charity works in partnership with key local stakeholders including the local authority, police, health service
+and education providers to identify risk factors in the city around societal issues and health status, using data
+and insight to deliver evidence-based practice through its vast array of projects. The Premier League and PFA
+provide vital funding allowing the Foundation to extend its influence across the city.
+
+The Foundation launched a new five-year strategy in August 2025 focusing on four key pillars: economic
+prosperity and employment; community safety; health and well-being; stronger together.
+
+Page 3
+
+aor eee
+
+--- pág. 7 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+SECTION 172 STATEMENT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Working in the community is vital to its work, removing barriers to engagement regardless of age, gender, race,
+religion, sexual orientation or disability.
+
+With participants ranging from one month to 95 years old across 225 different delivery sites in the city, work is
+delivered all year round, improving the physica! and mental health, personal development and life choices of the
+people engaged in its programmes.
+
+Wolves Foundation continues to organise its own range of events to bring in vital funding, including the Molineux
+Sleepout, Molineux Abseil and Focus Fixture, as well as an annual Gala Dinner showcasing its wide range of
+delivery and celebrating the achievements of staff and participants.
+
+The environment
+
+At Wolves, we have an ambition to become industry leaders in environmental sustainability, maximising the
+club’s positive impact in the city of Wolverhampton and globally.
+
+“a BR ns
+
+In February 2023, we launched the One Pack, One Planet programme, featuring four headline commitments to”
+
+environmental sustainability:
+
+Carbon: We will work towards becoming a net zero football club by 2040.
+
+Waste: We will embrace a circular economy, minimising waste and maximising reuse.
+
+Nature: We will protect our natural environment and support a wilder future.
+
+Culture: We will embed environmenta! sustainability across the club while engaging, educating and
+communicating around sustainability.
+
+1@ fee
+
+The club’s latest environmental sustainability report was published in January 2025. It outlines the environmental
+progress delivered across the previous year and includes a detailed breakdown of the club’s carbon footprint. An
+environmental sustainability policy is also published on our website.
+
+The One Pack, One Planet Working Group drives environmental sustainability across club departments and key
+partners, providing a forum for collaboration, sharing ideas and delivering progress. Delivery of our sustainability
+commitments is underpinned by departmental action plans co-created by club staff. The Environmental
+Sustainability Fan Focus Group provides a platform for supporters to share ideas and provide feedback on the
+club's sustainability plans.
+
+Wolves is also represented on external forums including the Premier League Club Sustainability Working Group
+and the Fosun ESG Network. Regular sustainability updates are shared through the club’s media channels.
+
+Shareholders
+The directors endeavour to create value for our ultimate shareholders by ensuring the company’s performance
+
+remains strong as well as sustainable. The directors adhere to the company’s long-term strategic plan when
+making operational decisions.
+
+Page 4
+
+--- pág. 8 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+DIRECTORS' REPORT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+The Directors present their report and the financial statements for the 13 month period ended 30 June 2025.
+Results and dividends
+
+The loss for the 13 month period, after taxation, amounted to £11,631 ,000 (2024 - loss £10,878,000).
+
+The Directors do not recommend payment of a dividend (2024 - same) due to the distributable reserve position.
+Directors
+
+The Directors who served during the 13 month period were:
+
+JF Bowater
+
+J Gough
+
+Y Shi (resigned 19 December 2025)
+
+The Company has made qualifying third-party indemnity provisions for the benefit of its Directors and these
+provisions remain in force at the date of this report.
+
+Future developments
+
+Future developments have been disclosed as part of the Strategic Report.
+
+Engagement with employees
+
+The Company considers that employee involvement is essential to the continuing development and success of
+its business and uses a variety of methods to inform, consult and involve its employees. This is achieved through
+formal and informal meetings.
+
+Disabled employees
+
+Applications for employment by disabled persons are always fully considered, bearing in mind the abilities of the
+applicant concerned. In the event of members of staff becoming disabled every effort is made to ensure that
+their employment within the Company continues and that appropriate training is arranged. It is the policy of the
+
+Company that the training, career development and promotion of disabled persons, should, as far as possible,
+be identical to that of other employees.
+
+Page §
+
+ee ee ee eed
+
+cs
+
+--- pág. 9 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+DIRECTORS' REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Greenhouse gas emissions, energy consumption and energy efficiency action
+
+The Company's GHG emissions and energy use data for period ist June 2024 to 30th June 2025 are as
+follows:
+
+(13 month FY 2023-24 | FY 2022-23 | FY 2524-22 | F¥ 2020-21 "oueline)
+Scope 1 emissions (tCO2Ze) 624 653 759) Rt ae 941
+Scope 2 emissions, location-based (tCO2e} 1,087 1,034 924 Ge G4 1,301
+Scope 2 emissions, market-based (tCO2e) [t} it) Qj c a 0
+Total Scope 1 & 2 emissions (tCO2e) 1,711) 1,686) 1,683} Law, Laid 2,242
+tewny. rersumenion used fo calculate the above emissions 8,873,977 8,094,470} 8,813,592 eB t BAF 27 10,100,194)
+Intensity ratio: tCO2Ze/turnover £m 9.9 9.5 10.0) ow) vA 16.9
+intensity ratio: tCO2e/hame match B15 67.4 73.2 ra AG 93.4)
+Scope 3 C1: Catering 1,829 | 4 - 4
+Scope 3 C1: Water 11 3 “10 7 .
+Scope 3 C1: Other purchased goods and services 1,053) - ‘4 .
+Scope 3 CS: Waste 11 6
+Scope 3 C6: Business-related travel : 1,331) 714 38q df .
+scone 3 C6: Men's first-team travel 773] 595} 125 6a 1 '
+Scape 3 C6: Women's first-team travel 5 i)
+Scope 3 C6: Academy team travel ; 19) 19
+Scope 3 C7: Employee commuting ; 330) 265) -
+Scope 3 C9: Men’s first-team fan travel 13,753) 15,152 10,712 pty? : 7
+Scope 3. C14: Wolves Foundation \ af 12
+Methodology
+
+The data reported aligns to the financial year, 1st June 2024 to 30th June 2025. Please note this is a transitional
+13-month period, due to an adjustment to the Company’s financial year. Prior years cover the period 1st June —
+31st May. This should be considered when making year-on-year comparisons.
+
+This information has been calculated in accordance with HM Government's Environmental Reporting Guidelines
+and using Government conversion factors for company reporting of greenhouse gas emissions. The
+methodology is aligned with the GHG Reporting Protocol, which supplies the world's most widely used
+greenhouse gas reporting standards.
+
+The intensity ratios reparted, tCO2e/turnover and tCO2e/home match have been selected to enable comparison
+with prior year performance and give context to the organisation's reported emissions.
+
+Page 6
+
+--- pág. 10 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+DIRECTORS’ REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+All electricity supplied to WWFC is 100% generated from wind, solar and hydro sources, backed by relevant
+Renewable Energy Guarantee of Origin (REGO) certificates administered by OFGEM. Therefore, market-based
+Scope 2 emissions are reported as zero.
+
+WWFEC has voluntarily reported on Scope 3 emissions, including water, team travel, business travel and fan
+travel. Scope 3 emissions are an indirect consequence of an organisation's actions. Scope 3 emissions are
+highly material and therefore an important part of WWEFC's environmental sustainability strategy.
+
+WWEC will separately publish more detailed carbon emissions data as part of an annual environmental
+sustainability report.
+
+Energy efficiency
+
+WWEC have been undertaking a significant energy efficiency programme over the last 7 years. The organisation
+has worked with Hospitality Energy Savings to establish a formal energy reduction strategy for the business. This
+strategy has led to the implementation of a comprehensive metering system that tracks consumption across
+each area of its buildings. This has enabled BMS systems to be optimised and unnecessary consumption to be
+eliminated during quieter operational periods. LED lighting and energy efficient boilers have been introduced.
+
+In the organisation's financial year, energy efficiency actions have included ongoing LED fighting upgrades and
+ongoing post-event site inspections to ensure event-related equipment is shut down.
+
+One Pack, One Planet
+
+In February 2023, Wolves unveiled the club's new ‘One Pack, One Planet’ programme, featuring four key
+commitments to environmental sustainability. As well as a commitment to net zero by 2040, One Pack, One
+Planet focuses on addressing waste, protecting the natural environment and embedding sustainability across the
+club.
+
+The club's latest environmental sustainability report was published in January 2025, which outlined the
+environmental progress delivered at the club across the previous year and includes a detailed breakdown of the
+club's carbon footprint.
+
+The ongoing implementation of One Pack, One Planet continues to be driven by the internal working group,
+informed by engagement with the fan focus group for environmental sustainability and participation in the
+Premier League’s Club Sustainability Working Group. The sustainability programme is supported by Sustainable
+Football. :
+
+More information about WWEFC's environmental commitments, environmental policy and sustainability news can
+be found of the club's website: woives.co.uk/club/sustainability/
+
+Disclosure of information to auditor
+Each of the persons who are Directors at the time when this Directors’ report is approved has confirmed that:
+
+° so far as the Director is aware, there is no relevant audit information of which the Company's auditor is
+unaware, and
+
+° the Director has taken all the steps that ought to have been taken as a Director in order to be aware of any
+relevant audit information and to establish that the Company's auditor is aware of that information.
+
+Post balance sheet events
+
+Details of post-year end trading are set out in note 27 to the financial statements.
+
+Page 7
+
+--- pág. 11 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+DIRECTORS’ REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Auditor
+
+The auditor, Crowe U.K. LLP, will be proposed for reappointment in accordance with section 485 of the
+Companies Act 2006.
+
+Was approved by the board and signed on its behalf.
+
+Secretary
+
+Date: 24 Decemged lols
+
+Page 8
+
+--- pág. 12 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+STRATEGIC REPORT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+The Directors, in preparing this strategic report, have complied with s414C of the Companies Act 2006.
+Principal activities
+
+The principal activity of the Company during the year was that of a professional football club, and related
+activities.
+
+Review of developments and future prospects
+
+During the period, the Company extended its period end to June, to better align the Company's period end to
+their parent, peer football clubs in the Premier League, and player and head coach contracts.
+
+This therefore established a 13 month accounting period in these financial statements and prior year
+comparatives are not always comparable. The Company has therefore also included an annualised result
+aligned to their new period end date to ensure consistent comparison in future financial statements.
+
+The followings is a 3 -year summary by key performance indicator, including the annualised equivalent result:
+
+2024/25 season 2024/25 season
+KPI (annualised & | 2023/24 scason | 2022/23 season
+(13 months) .
+unaudited)
+
+Turnover £172.0m £171.8m £177.7m ____ £168.8m
+
+Wage/turnover ratio 94.2% 84.7% 79.5% 83.9%
+Player trading £29.2m £34.3m (£2.6m) (£38.6m)
+Pron ered the (£11.6m) £5.1m (£10.9m) (£64.1m)
+
+Average attendance 30,881 30,881 31,265 31,346
+
+In the period under review, the Company competed in the Premier League for the seventh consecutive season,
+with the team experiencing a more challenging season compared to 2023/24. There was a four-point decrease in
+points gained, and the club were involved in a battle to retain their Premier League status until the latter part of
+the season, as opposed to competing for UEFA qualification until the latter part of the prior season.
+
+Revenue for the period was £172.0m, a decrease on £177.7m achieved last financial year due to the lower
+metric of merit payment in 2024/25 (five merit units compared to seven merit units, due to finishing two places
+lower in the final Premier Leaque table), and was further impacted by a small decrease in live TV facility fee
+broadcasting (15 times on live UK TV in 2024/25 compared to 16 times in 2023/24). Ticketing and hospitality
+revenues were consistent year-on-year, as increases on a per matchday basis, achieved primarily through price
+increases, were offset by a lower number of home matchdays (two less FA Cup and one less friendly in 2024/25,
+compared to 2023/24). Partnerships increased by over £1m, primarily achieved through a new front of shirt
+partnership, and further supported by growth in volume of partners.
+
+Average attendance for the season was 30,881 (2023/24: 31,265), being materially consistent despite the more
+challenging season and an increase in ticket price.
+
+Page 9
+
+--- pág. 13 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+STRATEGIC REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Player trading in the period generated a profit of £117.0m (2023/24: £64.6m). The extended period end to June.
+2025 was particularly beneficial, with the sales of Matheus Cunha and Rayan Ait-Nouri post season captured
+within these financial statements. Prior to this, sales of Max Kilman, Pedro Neto, Daniel Podence, Luke Cundle
+and Mario Lemina, alongside crystalising contingent fees for Morgan Gibbs-White, Francisco Trincao and Pedro
+Goncalves. This was partially offset by higher amortisation and impairment charges on player registrations,
+totalling £87.8m (2024: £67.2m), driven by investments in the first-team and academy, including the acquisitions
+of Tommy Doyle, Pedro Lima, Rodrigo Gomes, Andre Trindade, Bastien Meupiyou, Sam Johnstone, Emmanuel
+Agbadou, Marshall Munetsi, Nasser Djiga, Fer Lopez, Matheus Mane, Ethan Sutherland, Vitor Pereira, various
+new contracts, and crystalising contingencies for Jose Sa, Emmanuel Agbadou and several academy players
+signing their first professional contract. This results in a net player trading profit of £29.2m (2024: loss £2.6m).
+The significant improvement in player trading performance enables the Company to strengthen their position for
+future investment, taking into consideration specifics within the proposed Premier League Squad Cost Ratio
+rules, to be introduced from the 2026/27 season.
+
+2025 also saw increased investment into the club's women's team, with expenditure in the team of £0.4m (2024:
+
+£0.3m)-The Women’s team also benefit from merging their training facilities-with those used by the academy.
+
+Operating costs increased slightly in this period, which is primarily because of increases in player payroll, the
+drivers being the investment in the squad during the winter transfer window, alongside new contracts for several
+members of the squad. Other variances, such as savings from lower number of home matches, the continuation
+of savings from the 2023/24 cost optimisation project, increases in agents fee expenses, and comparison of the
+settlement provisions from the departure of coaching staff, overall offset against one another, save for the
+natural difference of comparing a 13-month period to a 12-month period. Net finance expenses increased in the
+period, in part due to the increased quantum of deferred transfer receivables being subjected to factoring, and
+partly driven by the comparison of a 13-month period to a 12-month period.
+
+Overall, the loss for the period, after interest and tax, is £11.6m (2024: £10.9m).
+
+Throughout the year, the Company was under the ownership of Fosun International Holdings Limited, with
+ultimate ownership of Chairman Guo Guangchang as majority shareholder of Fosun International Holdings
+Limited. Going forward, the aim for the Company is to remain a competitive and established Premier League
+football club, whilst embracing a challenger mindset to enhance its commercial and wider operational
+performance off the pitch.
+
+The Directors have a continued commitment to continuously improve the Company, from both a footballing and a
+wider operational and strategic perspective. Supported by continued success in both the Premier League and
+cup competitions, directors consider prospects for the company remain strong as an established Premier
+League club, with effective planning and a contingency plan in place in the event of relegation.
+
+Going concern
+
+The Directors have concluded, after making enquiries, that they have a reasonable expectation that the
+Company has adequate resources to continue in operational existence for the foreseeable future and therefore
+they continue to adopt the going concern basis in preparing the financial statements.
+
+Further details regarding the adoption of the going concern basis can be found in the accounting policies in note
+1 of the financial statements.
+
+The Directors have obtained a !etter from Fosun International Limited, which confirms their intention to meet all
+the obligations of the Company, to the extent they may be unable to meet those obligations themselves, for a
+period of not less than one year from the date of the signing of the financial statements. The Company also have
+no intention of calling the loans due to them for at least a period of the next 12 months.
+
+Page 10
+
+--- pág. 14 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+STRATEGIC REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Financial risk management
+
+The Company's principal risk relates to the league in which the club competes and the financial impact that this
+has on the business in terms of attendances and the funds received from central distributions made by either the
+Premier League or the EFL. In the year under review the club receives league distributions and broadcasting
+rights from the Premier League.
+
+As is the case with all professional football clubs under the realm of the Premier League, there is a risk in
+respect of complying with the Profit and Sustainability regulations, where failure to meet the required thresholds
+can result in both financial and operational sanctions to the Company. However, in response to this, the Directors
+ensure the latest forecasted financial performance against the Profit and Sustainability criteria is consistently
+monitored and updated as a minimum month on month, to mitigate the risk of such sanctions by maintaining a
+comfortable headroom position, ensuring decisions taken considering such forecasting do not compromise a
+comfortable level of headroom.
+
+Another financial risk arises as a result macro-economic factors which affect the value of the pound against the
+euro. The impact on the foreign exchange rate between the euro and the pound has had an impact on the value
+of transfer fees paid which are stated in euros per the terms of the individual transfer agreements, and therefore
+as the functional and presentation currency of these set of statutory accounts is the pound, transfer instalments
+stated in euros per the transfer agreements are retranslated at the balance sheet date.
+
+There is a comprehensive system in place for reporting financial information to the board including the
+preparation of budgets for each business activity, monthly accounts comparisons to budget and the prior year
+and regular profit and loss projections and cash flow forecasts.
+
+Price risk
+
+This is largely governed by the league in which the Company is campeting, and prices are set accordingly. The
+policy adopted recognises the inherent value of the fan base and core supporters and the need to grow the
+number of supporters following the team. By monitoring feedback and industry pricing the Company looks to
+offer good value for money to help achieve this objective.
+
+Liquidity and cashflow risk
+
+A large part of the seasonal business is paid for ahead of fixtures taking place, via season ticket sales and
+seasonal corporate business. Major fluctuations in cash flow during the season will usually only arise through
+player transactions during the transfer window periods. Match-to-match business is largely dependent upon
+attendance levels and team performances.
+
+As most of the business is secured in advance of the start of the season, budgets can be prepared within
+defined key business parameters and hence working capital can be assessed and managed accordingly.
+
+W.W.F.C (1986) continues to demonstrate effective working capital management with enough headroom to
+accommodate any seasonal fluctuations. Cash flows are prepared and managed monthly but monitored daily to
+the satisfaction of the Directors and shareholders. Fosun International Limited have confirmed their intention to
+meet all the obligations of the Company, to the extent they may be unable to meet those obligations themselves,
+for a period of not less than one year from the date of the signing of the financial statements.
+
+“Page 117
+
+--- pág. 15 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+STRATEGIC REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Ownership
+
+The Company is immediately owned by W.W (1990), itself a wholly owned subsidiary within the Fosun group of
+companies, the largest of which, and for which group financial statements are prepared, is FIL.
+
+‘XN
+
+4 by the board and signed on its behalf.
+
+Secretary
+
+Date: 24 Hecc meee. lols |
+
+Page 12
+
+--- pág. 16 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+DIRECTORS’ RESPONSIBILITIES STATEMENT .
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+The Directors are responsible for preparing the Strategic report, the Directors’ report and the financial
+statements in accordance with applicable law and regulations.
+
+Company law requires the Directors to prepare financial statements for each financial year. Under that law the
+Directors have elected te prepare the financial statements in accordance with applicable law and United
+Kingdom Accounting Standards (United Kingdom Generally Accepted Accounting Practice), including Financial
+Reporting Standard 102 ‘The Financial Reporting Standard applicable in the UK and Republic of Ireland’. Under
+company law the Directors must not approve the financial statements unless they are satisfied that they give a
+true and fair view of the state of affairs of the Company and of the profit or loss of the Company for that period.
+
+In preparing these financial statements, the Directors are required to:
+
+e select suitable accounting policies for the Company's financial statements and then apply them
+consistently;
+
+- axa Make judgements and accounting estimates that are reasonable and prudent;-—
+
+e state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements;
+
+° prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+Company will continue in business.
+
+The Directors are responsible for keeping adequate accounting records that are sufficient to show and explain
+the Company's transactions and disclose with reasonable accuracy at any time the financial position of the
+Company and to enable them to ensure that the financial statements comply with the Companies Act 2006. They
+are also responsible for safeguarding the assets of the Company and hence for taking reasonable steps for the
+prevention and detection of fraud and other irregularities.
+
+Page 13
+
+--- pág. 17 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF WOLVERHAMPTON WANDERERS
+FOOTBALL CLUB (1986) LIMITED
+
+Opinion
+
+We have audited the financial statements of Wolverhampton Wanderers Football Club (1986) Limited (the
+‘Company’) for the 13 month period ended 30 June 2025, which comprise the Profit and Loss Account, the
+Balance sheet, the Statement of changes in equity and the notes to the financial statements, including a
+summary of significant accounting policies. The financial reporting framework that has been applied in their
+preparation is applicable law and United Kingdom Accounting Standards, including Financial Reporting Standard
+102 ‘The Financial Reporting Standard applicable in the UK and Republic of treland’ (United Kingdom Generally
+Accepted Accounting Practice).
+
+In our opinion the financial statements:
+
+° give a true and fair view of the state of the Company's affairs as at 30 June 2025 and of its loss for the 13
+month period then ended;
+
+° have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice; and
+
+° have been prepared in accordance with the requirements of the Companies Act 2006.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable
+jaw. Our responsibilities under those standards are further described in the Auditor's responsibilities for the audit
+of the financial statements section of our report. We are independent of the Company in accordance with the
+ethical requirements that are relevant to our audit of the financial statements in the United Kingdom, including
+the Financial Reporting Council's Ethical Standard and we have fulfilled our other ethical responsibilities in
+accordance with these requirements. We believe that the audit evidence we have obtained is sufficient and
+appropriate to provide a basis for our opinion.
+
+Conclusions relating to going concern
+
+In auditing the financial statements, we have concluded that the Directors’ use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the Company's ability to continue as a
+going concern for a period of at least twelve months from when the financial statements are authorised for issue.
+
+Our responsibilities and the responsibilities of the Directors with respect to going concern are described in the
+relevant sections of this report.
+
+Page 14
+
+--- pág. 18 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF WOLVERHAMPTON WANDERERS
+FOOTBALL CLUB (1986) LIMITED (CONTINUED)
+
+hee on © . = —
+
+Other information.
+
+The other information comprises the information included in the Annual Report other than the financial
+statements and our Auditor's report thereon. The Directors are responsible for the other information contained
+within the Annual Report. Our opinion on the financial statements does not cover the other information and,
+except to the extent otherwise explicitly stated in our report, we do not express any form of assurance conclusion
+thereon. Our responsibility is to read the other information and, in doing so, consider whether the other
+information is materially inconsistent with the financial statements or our knowledge obtained in the course of the
+audit, or otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent
+material misstatements, we are required to determine whether this gives rise to a material misstatement in the
+financial statements themselves. If, based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact.
+
+We have nothing to report inthis regard.
+
+Opinion on other matters prescribed by the Companies Act 2006
+
+In our opinion, based on the work undertaken in the course of the audit:
+
+° the information given in the Strategic report and the Directors’ report for the financial 13 month period for
+which the financial statements are prepared is consistent with the financial statements; and
+° the Strategic report and the Directors’ report have been prepared in accordance with applicable legal
+
+requirements.
+Matters on which we are required to report by exception
+
+In the light of the knowledge and understanding of the Company and its environment obtained in the course of
+the audit, we have not identified material misstatements in the Strategic report or the Directors’ report.
+
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006
+requires us to report to you if, in our opinion:
+
+° adequate accounting records have not been kept, or returns adequate for our audit have not been
+received from branches not visited by us; or
+
+e the financial statements are not in agreement with the accounting records and returns; or
+
+. certain disclosures of Directors' remuneration specified by law are not made; or
+
+e we have not received ail the information and explanations we require for our audit.
+
+Responsibilities of Directors
+
+As explained more fully in the Directors’ responsibilities statement set out on page 13, the Directors are
+responsible for the preparation of the financial statements and for being satisfied that they give a true and fair
+view, and for such internal control as the Directors determine is necessary to enable the preparation of financial
+statements that are free from material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the Directors are responsible for assessing the Company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the Directors either intend to liquidate the Company or to cease operations,
+or have no realistic alternative but to do so.
+
+Page 15
+
+ot
+
+--- pág. 19 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF WOLVERHAMPTON WANDERERS
+FOOTBALL CLUB (1986) LIMITED (CONTINUED)
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an Auditor's report that includes our
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be
+expected to influence the economic decisions of users taken on the basis of these financial statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures
+in line with our responsibilities, outlined above, to detect material misstatements in respect of irregularities,
+including fraud. The extent to which our procedures are capable of detecting irregularities, including fraud is
+detailed below:
+
+We obtained an understanding of the legal and regulatory frameworks within which the Company operates,
+focusing on those laws and regulations that have a direct effect on the determination of material amounts and
+disclosures in the financial statements. The laws and regulations we considered in this context were the
+Companies Act 2006 and the regulations of The Football Association Premier League and the Union of
+European Football Associations.. We assessed the required compliance with these laws and regulations as part
+of our audit procedures on the related financial statement items.
+
+In addition, we considered provisions of other laws and regulations that do not have a direct effect on the
+financial statements but compliance with which might be fundamental to the Company’s ability to operate or to
+avoid a material penalty. We also considered the opportunities and incentives that may exist within the Company
+for fraud. The laws and regulations we considered in this context for the UK operations were General Data
+Protection Regulation (GDPR), Anti-fraud, bribery and corruption legislation, environmental protection legislation,
+Health and safety legislation, Taxation legislation and Employment legislation.
+
+Auditing standards limit the required audit procedures to identify non-compliance with these laws and regulations
+to enquiry of the Directors and other management and inspection of regulatory and legal correspondence, if any.
+
+We identified the greatest risk of material impact on the financial statements from irregularities, including fraud,
+to be in the following areas: timing of recognition of income; the override of controls by management, including
+posting of unusual journals; inappropriate treatment of non-routine transactions and areas of estimation
+uncertainty.
+
+Our audit procedures to respond to these risks included enquiries of management about their own identification
+and assessment of the risks of irregularities, review and discussion of non-routine transactions, sample testing
+on the posting of journals and income transactions and review of accounting estimates for biases.
+
+Because of the inherent limitations of an audit, there is a risk that we will not detect all irregularities, including
+those leading to a material misstatement in the financial statements or non-compliance with regulation. This risk
+increases the more that compliance with a law or regulation is removed from the events and transactions
+reflected in the financial statements, as we will be less likely to become aware of instances of non-compliance.
+The risk is also greater regarding irregularities occurring due to fraud rather than error, as fraud involves
+intentional concealment, forgery, collusion, omission or misrepresentation.
+
+A further description of our responsibilities for the audit of the financial statements is available on the Financial
+Reporting Council's website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our
+Auditor's report.
+
+Page 16
+
+--- pág. 20 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF WOLVERHAMPTON WANDERERS
+FOOTBALL CLUB (1986) LIMITED (CONTINUED)
+
+Use of our report
+
+This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members
+those matters we are required to state to them in an Auditor's report and for no other purpose. To the fullest
+extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the
+Company's members, as a body, for our audit work, for this report, or for the opinions we have formed.
+
+Mark Evans (Senior statutory auditor)
+
+for-and-on behalf-of _ —
+Crowe U.K. LLP
+
+Statutory Auditor
+
+Black Country House
+Rounds Green Road
+Oldbury
+
+West Midlands
+
+B69 2DG
+
+Date: 29» January 2026
+
+“Page 17
+
+eeu
+
+--- pág. 21 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+PROFIT AND LOSS ACCOUNT
+
+FOR THE PERIOD ENDED 30 JUNE 2025
+
+Turnover
+
+Operating expenses
+Other operating income
+Operating loss
+
+Profit on disposal of player
+
+registrations
+
+Operations
+
+ert, pe ere oii
+
+Loss ‘before net
+financing
+
+Interest receivable and
+similar income
+
+Interest payable and similar
+
+charges
+Loss before taxation
+Tax on loss
+
+Loss for the financial
+period
+
+(excluding
+player _ Player 13 months
+amortisation amortisation to30June 12 months to
+Note & trading) & trading 2025 31 May 2024
+£'000 £'000 £'000 £'000
+4 171,975 - 171,975 177,697
+(202,907): (87,791) (290,698) (247,567)
+5 1,424 _ 1,424 ‘
+6 (29,508) (87,791) (117,299) (69,870)
+116,984 116,984 64,631
+29,508) ____29,193 (315) (5,239)
+10 868 1,344
+4 - (12,184) _ — (6,983).
+(11,631) (10,878)
+12 : ‘:
+(11,631) .___*(10,878).
+
+The notes on pages 21 to 38 form part of these financial statements.
+
+Player trading consists primarily of amortisation costs of acquiring player registrations, impairment
+charges and profit on disposal of player registrations.
+
+All results derive from continuing operations.
+
+There are no recognised gains and losses other than those included in the results above. Accordingly, no
+separate consolidated statement of comprehensive income has been prepared.
+
+Page 18
+
+--- pág. 22 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+REGISTERED NUMBER: 01989823
+
+BALANCE SHEET
+AS AT 30 JUNE 2025
+
+30 June 30 June 31 May 31 May
+2025 2025 2024 2024
+Note £000 £000 £000 £000
+Fixed assets
+Intangible assets 43 167,743 167,067
+Tangible assets 14 5,130 5,725
+172,873 172,792
+Current assets
+Debtors (£117,474,000 due in more than 1
+year, 2024: £101,309,000) 15 201,859 138,436
+Cash at bank and in hand 3 9439, 30,563
+235,298 168,999
+Current liabilities
+Creditors: amounts falling due within one
+year 16 (428,765) (361,331)
+Net current liabilities : (193,467) (192,332) ;
+Total assets less current liabilities (20,594) (1 9,540)
+Creditors: amounts falling due after more
+than one year 17 (161,669) (152,813)
+Provisions for liabilities
+Other provisions 19 (3,701) (1,980)
+Net liabilities (185,964) , (174,333)
+Capital and reserves
+Called up share capital 21 3,000 3,000
+Other reserves 22 26,830 26,830
+Profit and loss account 22 (215,794) (204,163)
+(185,964) (174,333)
+
+td-and were signed on its behalf by:
+—_—— 4
+
+The notes on pages 21 to 38 form part of these financial statements.
+
+Page 19
+
+
+--- pág. 23 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+STATEMENT OF CHANGES IN EQUITY
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Called up Other Profit and
+
+share capital reserves loss account Total equity
+
+£000 £000 £000 £000
+
+At 1 June 2023 3,000 26,830 (193,285) (163,455)
+Loss for the year ‘ - ~ (10,878) (10,878)
+At 1 June 2024 3,000 «26,830 = (204,163) (174,333)
+Loss for the period - . (11,631) (11,631)
+At 30 June 2025 , 3,000 (1 85,964)
+
+The notes on pages 21 to 38 form part of these financial statements.
+
+26,830 (215,794)
+
+
+--- pág. 24 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+General information
+
+Wolverhampton Wanderers Football Club (1986) Limited is a private Company (limited by shares)
+incorporated and registered in England and Wales, registration number 01989823. The registered office
+and principal trading address is Molineux Stadium, Waterloo Road, Wolverhampton, West Midlands, WV1
+4QR.
+
+During the period, the Company extended it's year end to align itself with its group parent. As a result
+these financial statements are drawn up for the 13 month period to 30 June 2025, whilst the comparative
+amounts are for the 12 months to 31 May 2024. As a result the comparative amounts presented in the
+financial statements are not directly comparable.
+
+The principal activity of the Company during the year was that of a professional football club.
+
+. Accounting policies
+
+2.1 Basis of preparation of financial statements
+
+The financial statements have been prepared under the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with Financial Reporting Standard 102,
+the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the
+Companies Act 2006.
+
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires management to exercise judgement in applying the
+Company's accounting policies (see note 3).
+
+The following principal accounting policies have been applied:
+2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
+
+The Company has taken advantage of the following disclosure exemptions in preparing these
+financial statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in
+the UK and Republic of Ireland":
+
+° the requirements of Section 7 Statement of Cash Flows;
+. the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+
+e the requirements of Section 11 Financial Instruments paragraphs 11.42, 11.44 to 11.45, 11.47,
+11.48(a)(iii), 11.48(a)(iv), 11.48(b) and 11.48(c);
+
+« the requirements of Section 12 Other Financial Instruments paragraphs 12.26 to 12.27,
+12.29(a), 12.29(b) and 12.29A;
+
+*, the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+
+This information is included in the consolidated financial statements of W.W. (1990) Limited as at 30
+June 2025 and these financial statements may be obtained from Companies House.
+
+Page 21
+
+--- pág. 25 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+2.
+
+Accounting policies (continued)
+
+2.3. Going concern
+
+In assessing the Company's ability to continue as a going concern, the Board has prepared detailed
+cash flow forecasts extending to the end of the 2026/27 season and performed stress testing on
+these forecasts, with on-pitch performance representing a key underlying driver.
+
+These forecasts assume the continued financial support of Fosun International Limited, which has
+confirmed its commitment to provide the funding required for the Club to meet its obligations. In
+addition, the Club retains the ability to secure further funding through player sales and cost-reduction
+measures, if necessary.
+
+Based on this assessment and the confirmed support available, the Directors have a reasonable
+
+o=uss.. expectation -that -the Company will continue .to- operate -for-at.least-12 months -from the date of =---~=-—=~.
+
+approval of these financial statements. Accordingly, the financial statements have been prepared on
+a going concern basis.
+
+2.4 Turnover
+
+Turnover represents League distributions, gate receipts, sponsorship, advertising and other income
+associated with the principal activity of running a professional football club and excludes value added
+tax. Turnover is recognised when the provision of each service is complete. All turnover is derived
+from activities in the UK. The fixed element of League distributions and broadcasting revenues are
+recognised over the duration of the football season whilst facility fees for live coverage or highlights
+are recognised when the match is played and broadcasted.
+
+2.5 Operating leases
+
+Rentals paid under operating leases are charged to profit or loss on a straight-line basis over the
+lease term.
+
+2.6 Leased assets
+
+Assets obtained under hire purchase contracts and finance leases are capitalised as tangible fixed
+assets. Assets acquired by finance lease are depreciated over the shorter of the lease term and their
+useful lives. Assets acquired by hire purchase are depreciated over their useful lives. Finance leases
+are those where substantially all of the benefits and risks of ownership are assumed by the
+Company. Obligations under such agreements are included in creditors net of the finance charge
+allocated to future periods. The finance element of the rental payment is charged to profit or loss so
+as to produce a constant periodic rate of charge on the net obligation outstanding in each period.
+
+2.7 Interest income and interest payable
+
+Interest income and interest payable is recognised in profit or loss using the effective interest
+method.
+
+Page 22
+
+--- pág. 26 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+2. Accounting policies (continued)
+
+2.8 Pensions
+
+A defined contribution plan is a post-employment benefit plan under which the Company pays fixed
+contributions into a separate entity and will have no legal or constructive obligation to pay further
+amounts. Obligations for contributions to defined contribution pension plans are recognised as an
+expenses in the profit and loss account in the periods during which services are rendered by
+employees. Differences between contributions payable in the year and contributions paid are shown
+as either accruals or prepayments in the balance sheet.
+
+2.9 Intangible assets
+
+The costs associated with the acquisition of players’ registrations, less financing element for
+
+co tian tweens wniten usa. ..._instalments .deferred .beyond normal .credit terms,.are capitalised_as intangible fixed assets. These _.... 2.2...
+costs are fully amortised on a straight-line basis over the period of the respective players’ contracts.
+Provision for impairment is made when it becomes apparent that any diminution in value is
+permanent, because of an adverse event. In the event of an initial contract being renegotiated prior to
+expiry, the remaining net book value is amortised over the extended period.
+
+2.10 Signing-on fees
+
+Signing-on fees payable to players are charged, as part of operating expenses, to the profit and loss
+account over the period of the player's contract on a straight-line basis. Where a player's registration
+is transferred, any signing-on fees payable in respect of future periods are charged immediately as
+payroll costs.
+
+2.11 Contingent appearance fees
+
+Under the conditions of certain transfer agreements or contract renegotiations, further fees will be
+payable in the event of the players concerned making a certain number of appearances or on the
+occurrence of certain other specified future events. Where the Directors consider the likelihood of a
+player meeting future performance and appearance criteria laid down in the transfer agreement of
+that player to be probable, provision for this cost is made (see note 19). If the likelihood of meeting
+these criteria is not probable no provision is made (see note 23).
+
+
+--- pág. 27 ---
+
+|
+ae Se ele
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+2. Accounting policies (continued)
+
+2.12 Tangible fixed assets
+
+Tangible fixed assets under the cost model are stated at historical cost less accumulated
+depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+directly attributable to bringing the asset to the location and condition necessary for it to be capable of
+operating in the manner intended by management.
+
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+estimated useful lives, using the straight-line method.
+
+Depreciation is provided on the following basis:
+
+—~Plant-and equipment-———-—-—~--10-20%
+Motor vehicles - 20%
+Fixtures and fittings - 12.5%
+
+The assets' residual values, useful lives and depreciation methods are reviewed, and adjusted’
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date.
+
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in profit or loss.
+
+ate =
+
+2.13 Impairment of fixed assets
+
+Assets that are subject to depreciation or amortisation are assessed at each balance sheet date to
+determine whether there is any indication that the assets are impaired. Where there is any indication
+that an asset may be impaired, the carrying value of the asset is tested for impairment. An
+impairment loss is recognised for the amount by which the asset's carrying amount exceeds its
+recoverable amount. The recoverable amount is the higher of an asset's fair value less costs to sell
+and value in use
+
+2.14 Financial instruments
+
+The Company only enters into basic financial instrument transactions that result in the recognition of
+financial assets and liabilities like trade and other debtors and creditors, loans from banks and other
+third parties, loans to related parties and investments in ordinary shares.
+
+Debt instruments (other than those wholly repayable or receivable within one year), including loans
+and other accounts receivable and payable, are initially measured at present value of the future cash
+flows and subsequently at amortised cost using the effective interest method. Debt instruments that
+are payable or receivable within one year, typically trade debtors and creditors, are measured, initially
+and subsequently, at the undiscounted amount of the cash or other consideration expected to be paid
+or received. However, if the arrangements of a short-term instrument constitute a financing
+transaction, like the payment of a trade debt deferred beyond normal business terms or in case of an
+out-right short-term loan that is not at market rate, the financial asset or liability is measured, initially
+at the present value of future cash flows discounted at a market rate of interest for a similar debt
+instrument and subsequently at amortised cost.
+
+Financial assets that are measured at cost and amortised cost are assessed at the end of each
+reporting period for objective evidence of impairment. If objective evidence of impairment is found, an
+impairment loss is recognised in the Statement of profit and loss.
+
+Page 24
+
+--- pág. 28 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Accounting policies (continued)
+
+2.14 Financial instruments (continued)
+
+For financial assets measured at amortised cost, the impairment loss is measured as the difference
+between an asset's carrying amount and the present value of estimated cash flows discounted at the
+asset's original effective interest rate. If a financial asset has a variable interest rate, the discount rate
+for measuring any impairment toss is the current effective interest rate determined under the
+contract.
+
+For financial assets measured at cost less impairment, the impairment loss is measured as the
+difference between an asset's carrying amount and best estimate of the recoverable amount, which is
+an approximation of the amount that the Company would receive for the asset if it were to be sold at
+the balance sheet date.
+
+‘Financial assets and liabilities are offset and the net amount reported in the Balance sheet when
+there is an enforceable right to set off the recognised amounts and there is an intention to settle on a
+net basis or to realise the asset and settle the liability simultaneously.
+
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic
+financial instruments. Derivatives are initially recognised at fair value on the date a derivative contract
+is entered into and are subsequently re-measured at their fair value. Changes in the fair value of
+derivatives are recognised in profit or loss in finance costs or income as appropriate. The Company
+does not currently apply hedge accounting for interest rate and foreign exchange derivatives.
+
+2.15 Foreign currencies
+
+The individual financial statements of the Company are presented in pound sterling as it is the
+primary economic environment in which the Company operates.
+
+Transactions in foreign currencies are recorded at the rate of exchange at the date of the transaction.
+Monetary assets and liabilities denominated in foreign currencies at the balance sheet date are
+reported at the rates of exchange prevailing at that date. Foreign exchange differences arising in
+translation are recognised in the profit and loss account.
+
+2.16 Provisions for liabilities
+Provisions are made where an event has taken place that gives the Company a legal or constructive
+obligation that probably requires settlement by a transfer of economic benefit, and a reliable estimate
+can be made of the amount of the obligation.
+Provisions are charged as an expense to profit or loss in the year that the Company becomes aware
+of the obligation, and are measured at the best estimate at the balance sheet date of the expenditure
+required to settle the obligation, taking into account relevant risks and uncertainties.
+
+When payments are eventually made, they are charged to the provision carried in the Balance sheet.
+
+Page 25
+
+ee ee ee
+
+
+--- pág. 29 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Judgements in applying accounting policies and key sources of estimation uncertainty
+
+In the application of the Company's accounting policies, which are described in note 2, the Directors are
+required to make judgements, estimates and assumptions about the carrying amounts of assets and
+liabilities that are not readily apparent from other sources. The estimates and associated assumptions are
+based in historical experience and other factors that are relevant. Actual results may differ from these
+estimates.
+
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised.
+
+Critical judgements in applying the Company's accounting policies
+
+The following are the critical judgements, apart from those involving estimation (which are dealt with
+separately below), that the Directors have made in the process of applying the Company's accounting
+
+ie i a a
+
+policiés and that Have the most significant effect on the amounts recognised in the financial statements. —
+Valuation of player registrations
+
+The net book value of player registrations includes the Directors' judgement of the recoverable value, and
+the existence of any indicators of impairment, particularly for players who are not involved in the first team
+affairs or are in their development phase. Where in the opinion of the Directors the recoverable value of a
+player registration is less that the net book value, an impairment adjustment is recorded.
+
+Key sources of estimation uncertainty
+
+The key sources of estimation uncertainty at the balance sheet date, which have a risk of causing a
+material adjustment to the carrying amounts of assets and liabilities within the next financial year, are
+discussed below.
+
+Fair value of contingent transfer provision
+
+The fair value of contingent appearance provision requires an estimate of when the criteria will be
+achieved and as such when the contingent sums will be due for payment, to determine the present value.
+The Company have based their assessment on an individual player by player basis, considering their
+involvement in match day competitive fixtures. Such estimates are subject to change, because of injuries
+or changes to first team management.
+
+Fair value of settlement provision
+
+Fair value of settlement provision judgement: The fair value of settlement provisions requires a reliable
+estimate of both the timing and the probable amounts of the settlement. These estimates are essential for
+accurately calculating the present value of the obligation. The Company have based their assessment on
+circumstances known to date which are subject to change.
+
+Page 26
+
+be
+
+--- pág. 30 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Turnover
+
+An analysis of turnover by class of business is as follows:
+
+2025 2024
+
+£000 £000
+
+Gate receipts 21,766 21,819
+Sponsorship and advertising 19,830 15,097
+Broadcasting rights 125,591 134,018
+Commercial ‘ 4,788 6,763
+171,975 177,697
+
+All turnover is derived from operations within the United Kingdom.
+
+The Company has streamlined turnover classes to aid understanding, the comparative amounts have
+been reclassified as a result.
+
+Other operating income
+
+2025 2024
+£000 £000
+Other operating income 324 tes
+Insurance claims receivable 1,100 -
+1,424 -
+Operating loss
+The operating loss is stated after charging:
+2025 2024
+£000 £000
+Depreciation of assets 1,535 1,477
+Amortisation of player's registrations 75,426 64,168
+Amortisation of other intangible assets 12 67
+Provision for impairment of intangible assets 12,365 3,024
+Profit on disposal of player registration (116,984) (64,631)
+Operating lease rentals 324 367
+
+Foreign exchange losses/(gains) 2,018 (752)
+
+Page 27
+
+
+--- pág. 31 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+Auditor's remuneration
+
+During the 13 month period, the Company obtained the following services from the Company's auditor
+and its associates:
+
+2025 2024
+£000 £000
+Fees payable to the Company's auditor and its associates for the audit of
+the Company's financial statements 44 42
+
+The Company has taken advantage of the exemption not to disclose amounts paid for non-audit services
+as these are disclosed in the consolidated accounts of the parent Company.
+
+Employees anne ren snare
+
+Staff costs, including Directors' remuneration, were as follows:.
+
+2025 2024
+
+£000 £000
+
+Wages and salaries 141,563 123,695
+Social security costs 20,145 17,278
+Pension 379 317
+"462,087 «147,284
+
+The average monthly number of employees, including the Directors, during the period/year was as
+follows:
+
+2025 2024
+: No.. No.
+Playing staff ‘97 81
+Non-piaying staff 289. 313
+
+366 394
+
+Page 28
+
+--- pág. 32 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+“n
+
+—_ ———_—_—oaooo——aaa=aaa — — - Page 29
+
+De ae,
+
+9, Directors’ remuneration
+The Directors receive the below emoluments paid by Wolverhampton Wanderers FC (1986) Limited, but
+it is not practical to allocate this between their services as executives of W.W. (1990) Limited and their e
+services as Directors of Wolverhampton Wanderers FC (1986) Limited and Wolverhampton Wanderers
+Properties Limited. ,
+2025 2024
+£000 £000
+Directors' emoluments 688 564
+The highest paid Director received remuneration of £688,000 (2024: £564,000).
+~ The value of the Company's contributions paid to a defined contribution pension scheme in respect of the —
+highest paid Director amounted to ENIL (2024: ENIL).
+The Directors do not consider there to be any key management personnel other than the Directors (2024: .
+same). ‘
+10. Interest receivable
+2025 2024
+£000 £000:
+Other interest receivable 868 1,344
+11. Interest payable and similar expenses
+2025 2024
+£000 £000
+Bank interest payable 12,182 6,980
+Other interest payable 2 3
+12,184 6,983
+
+--- pág. 33 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+SM a ha in, SI | een,
+
+- ~ = , - - -— ‘
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+12.
+
+Taxation
+2025 2024
+£000 £000
+Total current tax ~~
+Total deferred tax i =
+
+Factors affecting tax charge for the 13 month period/year
+
+The tax assessed for the 13 month period/year is higher than (2024 - higher than) the standard rate of
+corporation tax in the UK of 25% (2024: 25%). The differences are explained below:
+
+2025 2024
+
+£000 £000
+Loss on ordinary activities before tax (11,631) (10,878)
+
+‘= — = = t
+
+Loss on ordinary activities multiplied by standard rate of corporation tax in k
+the UK of 25% (2024 - 25%) (2,908) (2,720)
+Effects of:
+Expenses not deductible for tax purposes, other than goodwill amortisation .
+and impairment 89 92
+Capital allowances for 13 month period/year in excess of depreciation 31 28
+R&D expenditure credits (84) -.
+Deferred tax not recognised 1,917 1,657
+Group relief 3,721 3,589
+Transfer pricing adjustments (2,766) (2,640)
+Total tax charge for the 13 month period/year EN : 2
+
+Factors that may affect future tax charges
+The Company has tax losses to carry forward of £200,681 ,000 (2024: £193,514,000).
+The potential deferred tax asset of £51,152,000 (2024. £49, 780,000), which arises largely due in respect
+
+of losses carried forward has not been recognised as it is not anticipated that there will be sufficient
+taxable profits generated in the future against which the losses may be offset.
+
+Page 30
+
+--- pág. 34 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+- RL a NT OH oh tal
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+13.
+
+Intangible assets
+
+Cost
+
+At 1 June 2024
+Additions
+Disposals
+
+At 30 June 2025
+
+Amortisation
+At 1 June 2024
+
+Charge for the 13 month period on owned
+assets
+
+On disposals
+Impairment charge
+
+At 30 June 2025
+
+Net book value 7
+
+At 30 June 2025
+
+At 31 May 2024
+
+Players' Development
+
+registrations costs Licences Total
+£000 £000 £000 £000
+339,993 333 14 340,340
+124,425 ‘et * 124,425
+(148,603) - : (148,603)
+"315815 333 14 316,162
+173,017 249 7 173,273
+75,426 6 6 75,438
+(112,657) i z (112,657)
+12,365 “ 3 12,365 ;
+448,154 255 13 148,419
+167,664 78 1 167,743
+166,976 84 7 167,067
+
+An impairment of players' registrations has been recognised to write down players’ net book value to their
+
+recoverable amount.
+
+Page 31
+
+
+--- pág. 35 ---
+
+ey me eet
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+14. Tangible fixed assets
+
+Cost or valuation
+At 1 June 2024
+Additions
+
+At 30 June 2025
+
+Depreciation
+At 1 June 2024
+
+Charge for the 13 month period on owned
+assets
+
+At 30 June 2025
+
+Net book value
+
+At 30 June 2025
+
+At 31 May 2024
+
+Motor Fixtures and Plant and
+vehicles fittings equipment Total
+£000 £000 £000 £000
+85 10,659 12,498 23,242
+- 655 285 940
+- - = =
+85 11,314 12,783 24,182
+85 7,956 9,476 47,517
+- 851 684 1,535
+85 —-8,807 10,160 19,052
+- 2,507 2,623 5,130
+5,725
+
+3,022
+
+Page 32.
+
+=
+
+AO et raat,
+
+--- pág. 36 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+15.
+
+16.
+
+Debtors
+30 June 30 June
+2025 2024
+£000 £000
+Trade debtors 3,956 683
+Amounts owed by group undertakings 66,472 63,576
+Amounts owed by joint ventures and associated undertakings 876 2,437
+Other debtors . 125,908 67,714
+Prepayments and accrued income 4,647 4,026
+201,859 138,436
+
+The Company has reclassified amounts owed to associated undertakings from Other debtors in the
+comparative period to aid understanding, this adjustment had no impact on the amount of total debtors,
+
+the Balance sheet or Net liabilities of the Company.
+
+All debtors are due within one year, other than amounts due from group undertakings and other debtors
+
+totalling £51,895,000 (2024: £39, 563,000) relating to transfer of player registrations.
+
+Debtors relating to player trading of £117,225,000 (2024: £64,674,000) are included in other debtors.
+
+Creditors: Amounts falling due within one year
+
+30 June 30 June
+2025 2024
+£000 £000
+
+Bank loans 21,939 -
+Trade creditors 1,214 1,480
+Amounts owed to group undertakings 247,502 241,462
+~ Other taxation and social security 29,665 6,594
+Other creditors, accruals and deferred income 128,445 111,795
+428,765 361,331
+
+Amounts payable in respect of player trading of £89,864,000 (2024: £82,820,000) are included within
+
+other creditors.
+
+Page 33
+
+--- pág. 37 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+17.
+
+18.
+
+Creditors: Amounts falling due after more than one year
+
+30 June 30 June
+
+2025 2024
+
+£000 £000
+
+Bank loans 79,455 100,609
+Other creditors 82,214 52,204
+"161,669 152,813
+
+Amounts payable in respect of player trading of £82,214,000 (2024: £52,204,000) are included within
+
+other creditors.
+
++ en =.
+
+Ps -
+
+Loans
+
+Analysis of the maturity of loans is given below:
+
+30 June 30 June
+2025 2024
+£000 £000
+Amounts falling due within one year
+Bank loans 21,939 =
+Amounts falling due 2-5 years
+Bank loans . 79,455 100,609
+100,609
+
+101,394
+
+From the date the loan was executed, the bank loan is repayable over a five year term and carries
+
+interest at SONIA +3.5% per annum.
+
+Page 34
+
+--- pág. 38 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+19. Provisions
+
+Settlement
+
+provision
+
+“£000
+
+At 1 June 2024 1,980
+
+Charged to profit or loss 7,658
+Reversed in the year (197)
+Utilised in 13 month period (5,740)
+At 30 June 2025 3,701
+
+20. Financial instruments
+
+30 June 30 June
+
+2025 2024
+
+£000 £000
+
+Financial liabilities
+
+Financial liabilities measured at fair value through profit or loss 286" 453
+
+Derivative financial instruments measured at fair value through profit or loss comprise an FX liability held
+within creditors.
+
+The Company's income, expense, gains and losses in respect of financial instruments are summarised
+
+below:
+
+30 June 30 June
+2025 2024
+£000 £000
+
+Interest expense
+On financial liabilities (12,182) (6,980)
+——— ee
+30 June 30 June
+2025 2024
+£000 £000
+
+Interest received
+
+Interest received 868 1,344
+
+Page 35
+
+
+--- pág. 39 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+21.
+
+22.
+
+Share capital
+
+30 June 30 June
+2025 2024
+£000 £000
+Allotted, called up and fully paid
+3,000,000 (2024 - 3,000,000) Ordinary shares of £1.00 each 3,000 3,000
+
+Reserves
+
+Other reserve
+
+23.
+
+24.
+
+“Relates to capital amounts contributed to the Company by their parent undertakings with no attached
+
+encumbrances.
+Profit and loss account
+
+Relates to accumulated profits and losses through day to day operation of trading.
+
+Contingent liabilities
+
+At 30 June 2025 the Company had a liability to pay up to £76,057 ,000 (2024: £86,861,000) to other clubs
+in respect of players under contract, contingent upon the occurrence of a number of factors but principally
+future first team and international appearances and on field playing success.
+
+The Company also had a liability of £3,794,000 (2024: £16,879,000) contingent upon future contractual
+loyalty fees for playing staff.
+
+Pension commitments
+
+Certain employees of the Company are members of either the Football League Limited Retirement
+Income Scheme, a defined contribution scheme, or the Football League Limited Pension and Life
+Assurance Scheme ("the scheme”), a defined benefit scheme. The Scheme is a funded multi-employer
+defined benefit scheme, and as one of a number of participating employers, the Company is advised only
+of its share of the deficit in the Scheme. The last actuarial valuation carried out at 31 August 2023
+highlighted that the Company's notional share of the deficit. The present value of the Company's
+outstanding contributions rolled forward to 30 June 2025 based on the same assumptions, is £46,000
+(£81,000 as at 31 May 2024).
+
+Total costs relating to the defined contribution schemes in the year are £379,000 (2024: £311,000) and at
+the year end there were outstanding contributions of £46,000 (2024: £70,000).
+
+Page 36
+
+--- pág. 40 ---
+
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+25.
+
+Commitments under operating leases
+
+At 30 June 2025 the Company had future minimum lease payments due under non-cancellable operating
+leases for each of the following periods:
+
+30 June 30 June
+
+2025 2024
+
+£000 £000
+
+Not later than 1 year 119 96
+Later than 1 year and not later than 5 years 128 194
+
+27.
+
+Related party transactions
+
+The Company is a wholly-owned subsidiary of W.W. (1990) Limited and has taken advantage of the
+exemption conferred by Section 33.1A of FRS 102 "Related Party Disclosures" not to disclose
+transactions with W.W. (1990) Limited or other wholly-owned subsidiaries within the Group.
+
+Post balance sheet events
+
+Since the end of the financial period, the club has contracted for the purchase and sale of various players.
+The net amount payable resulting from this activity is £57,600,000 (2024: £20,263,000 receivable). This
+activity will be accounted for in the year ending 30 June 2026.
+
+The cumulative effect on the Profit and Loss account since the period end in relation to the profit on sales
+of player registrations is £11,973,000 (2024: £65,324,000).
+
+On 15 September 2025, the Group completed the refinancing of its existing £100 million senior loan
+facility. The new facility, provided by PGIM, replaces the previous facility on equivalent principal terms.
+
+The new senior loan facility carries interest at 7.35% per annum, increasing to 7.85% per annum during
+any Non-Premier League Period, and matures on 31 October 2031. The agreement includes a structured
+amortisation profile over the term of the loan and a step-down in principal in the event of relegation,
+aligning repayment obligations with anticipated cash flow levels.
+
+The new facility strengthens the Group’s medium-term funding structure and provides continued financial
+flexibility.
+
+Subsequent to the reporting date, the Club terminated the employment of its Head Coach, Mr. Vitor
+Pereira, and members of his coaching staff. The Club has reached a settlement agreement in respect of
+all contractual obligations arising from the termination.
+
+Page 37
+
+--- pág. 41 ---
+
+‘WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+28.
+
+Parent undertaking
+
+The ultimate holding Company is Fosun International Holdings Limited, a company incorporated in the
+British Virgin Islands whose address is Akara Building, 24 De Castr Street, Wickhams Clay |, Road Town,
+VG1110, British Virgin Islands. The immediate parent undertaking is W.W. (1990) Limited, a company
+registered in England and Wales whose registered office is Molineux Stadium, Waterloo Road,
+Wolverhampton, WV1 4QR.
+
+The smallest group in which the results of the Company are consolidated is that headed by W.W. (1990)
+Limited. Copies of these financial statement can be obtained from Companies House.
+
+The largest group of which the Company is a member and for which group financial statements are
+prepared is that headed by Fosun International Limited. The latest submitted financial report for the interim
+period can be obtained on Fosun's website, www.fosun.com
+
+eas iad ebitn
+
+eh,
+
+Page 38
+
+pers
