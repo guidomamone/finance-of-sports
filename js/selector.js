@@ -770,7 +770,16 @@ window.CLUB_SELECTOR = (function(){
   // de exploración no quede inalcanzable después del primer click.
   function goHome(){
     close();
-    Promise.resolve(api.pickClub(null)).then(function(){ renderButton(); renderHero(); });
+    // Versión 144: "la portada" ya no es el #coldHero (que no se muestra más) sino la
+    // pestaña Inicio, o sea la bifurcación. Soltar el club y quedarse parado en Finanzas
+    // dejaba al visitante mirando el card del selector sin haber pedido cambiar nada.
+    Promise.resolve(api.pickClub(null)).then(function(){
+      renderButton();
+      renderHero();
+      var btn = document.querySelector('#mainNav button[data-section="inicio"]');
+      if(btn) btn.click();
+      window.scrollTo(0, 0);
+    });
   }
 
   function render(){

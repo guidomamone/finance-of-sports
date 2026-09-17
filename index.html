@@ -626,6 +626,32 @@ consulta puntual, nunca lectura de corrido.
   .fin-sel-btn:hover{background:var(--azul-dark);}
   .fin-sel-btn.alt{background:none;color:var(--azul);}
   .fin-sel-btn.alt:hover{background:#eef2f9;color:var(--azul-dark);}
+
+  /* ===== INICIO = LA PREGUNTA (Versión 144) =====
+     Dos opciones grandes y nada más arriba de todo: es la primera pantalla y la única
+     decisión que se toma en ella. Viene del prototipo 4, etapa 2 del plan de merge. */
+  .bifurca h1{font-size:30px;margin:0 0 6px;}
+  .bif-lead{color:var(--muted);font-size:15px;margin:0 0 24px;max-width:700px;line-height:1.55;}
+  .bif-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;max-width:900px;}
+  .bif-op{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;
+          background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px 24px;
+          font-family:inherit;color:var(--text);cursor:pointer;}
+  .bif-op:hover{border-color:var(--azul);box-shadow:0 10px 30px rgba(7,29,63,.12);transform:translateY(-1px);}
+  .bif-ico{width:44px;height:44px;border-radius:12px;background:#eef2f9;color:var(--azul);font-size:21px;
+           display:flex;align-items:center;justify-content:center;margin-bottom:5px;}
+  .bif-t{font-size:19px;font-weight:800;line-height:1.25;}
+  .bif-s{font-size:13.5px;color:var(--muted);line-height:1.5;}
+  .bif-cta{margin-top:9px;font-size:13.5px;font-weight:800;color:var(--azul);}
+  /* Separa la pregunta del resumen del club, cuando hay club y los dos conviven. */
+  #inicioClub{margin-top:34px;border-top:1px solid var(--border);padding-top:26px;}
+  /* `display:flex` de una clase le gana al `display:none` que el navegador le da a
+     [hidden]: sin esta regla, #vsSinClub se ve aunque esté hidden. */
+  .fin-sel[hidden]{display:none;}
+  /* El aviso de "no se pudo cargar el club" salió de adentro del #coldHero (Versión 144),
+     así que ya no hereda su paleta oscura: acá va la versión sobre fondo claro. */
+  .aviso-error{background:#fdecea;border:1px solid #e08d84;color:#8c2b21;border-radius:8px;
+               padding:9px 12px;font-size:13px;margin:14px 0 0;}
+  .aviso-error[hidden]{display:none;}
 </style>
 </head>
 <body>
@@ -635,6 +661,10 @@ consulta puntual, nunca lectura de corrido.
     <div class="logo"><span class="dot"></span> <span data-i18n="site.name">El deporte en Números</span></div>
     <nav id="mainNav">
       <button data-section="inicio" class="active" data-i18n="nav.inicio">Inicio</button>
+      <!-- `data-section="vs"` y NO "comparar": ese id ya existe y es "Comparar Gestiones"
+           (dos presidencias del MISMO club, escondida del nav desde la Versión 56). Son dos
+           cosas distintas y el id no se puede pisar; lo que el visitante lee sí dice "Comparar". -->
+      <button data-section="vs" data-i18n="nav.vs">Comparar</button>
       <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>
       <button data-section="fuentes" data-i18n="nav.fuentes">Fuentes</button>
       <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
@@ -777,14 +807,86 @@ consulta puntual, nunca lectura de corrido.
       <div class="hq-row" id="heroLeagues"></div>
     </div>
     <p class="hero-foot" id="heroFoot"></p>
-    <p class="hero-error" id="clubLoadError" hidden></p>
   </div>
 
   <!-- INICIO -->
   <section id="inicio" class="active">
-    <h1 data-i18n="inicio.title">Datos del club</h1>
-    <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
-    <div class="grid" id="inicioStats"></div>
+    <!-- INICIO = LA PREGUNTA (Versión 144, etapa 2 del merge del prototipo 4).
+         Hasta acá la primera pantalla era el #coldHero: un buscador más dos filas de
+         atajos, o sea 67 opciones y ninguna pregunta. Ahora la portada hace UNA sola
+         pregunta de dos opciones, y cada respuesta lleva a una pantalla que hace una
+         sola cosa. El que viene por un club nunca ve una pantalla partida al medio.
+         Los dos caminos los cablea el <script> del final del body. -->
+    <div class="bifurca" id="bifurca">
+      <h1 data-i18n="bif.title">¿Qué querés hacer?</h1>
+      <p class="bif-lead" data-i18n="bif.lead">Los dos caminos llegan a los mismos números, sacados del balance oficial de cada club. Cambia por dónde entrás.</p>
+      <div class="bif-grid">
+        <button type="button" class="bif-op" id="bifUno">
+          <span class="bif-ico" aria-hidden="true">&#128202;</span>
+          <span class="bif-t" data-i18n="bif.uno.t">Quiero ver un club en particular</span>
+          <span class="bif-s" data-i18n="bif.uno.s">Ingresos, gastos y deuda de un club, ejercicio por ejercicio, con la fuente de cada cifra.</span>
+          <span class="bif-cta" data-i18n="bif.uno.cta">Elegir el club &rsaquo;</span>
+        </button>
+        <button type="button" class="bif-op" id="bifDos">
+          <span class="bif-ico" aria-hidden="true">&#8644;</span>
+          <span class="bif-t" data-i18n="bif.dos.t">Quiero comparar dos clubes o ligas</span>
+          <span class="bif-s" data-i18n="bif.dos.s">Dos lados, uno contra el otro. Cada lado puede ser un club, una liga entera o un país.</span>
+          <span class="bif-cta" data-i18n="bif.dos.cta">Ir a Comparar &rsaquo;</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Salió de adentro del #coldHero (Versión 144): ese hero ya no se muestra nunca, y
+         con el aviso adentro un club que no carga fallaba en silencio. -->
+    <p class="aviso-error" id="clubLoadError" hidden></p>
+
+    <!-- El resumen del club activo. `hidden` mientras no haya club: sin uno son 4 KPIs en
+         "Sin dato" y 3 gráficos vacíos, que es peor que no estar. Lo destapa applyClubMode(). -->
+    <div id="inicioClub" hidden>
+      <h1 data-i18n="inicio.title">Datos del club</h1>
+      <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
+      <div class="grid" id="inicioStats"></div>
+
+      <div class="card">
+        <h2 data-i18n="inicio.chart.rev">Ingresos por año</h2>
+        <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioIngresosChart"></canvas></div>
+        <div class="inicio-legend" id="inicioIngresosLegend"></div>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="inicio.chart.exp">Gastos por año</h2>
+        <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioGastosChart"></canvas></div>
+        <div class="inicio-legend" id="inicioGastosLegend"></div>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="inicio.chart.debt">Deuda neta por año</h2>
+        <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioDeudaChart"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARAR (Versión 144, etapa 2 del merge del prototipo 4).
+       La comparación entre clubes vivía adentro de #inicio, abajo de los KPIs. Con Inicio
+       convertido en la pregunta, se muda acá, que es la pestaña que la bifurcación ofrece.
+       Es una MUDANZA de markup, no una reescritura: js/comparar-clubes.js escribe por id y
+       no se entera. En la etapa 3 los dos cards del prototipo se suman acá arriba; la vista
+       de barras se conserva (decisión de Guido). -->
+  <section id="vs">
+    <h1 data-i18n="vs.title">Comparar</h1>
+    <p class="subtitle" data-i18n="vs.sub">Dos clubes lado a lado, o un club contra el promedio de su liga. Todo en USD y en formato simplificado: son las dos condiciones para que la comparación signifique algo.</p>
+
+    <!-- Sin club activo no hay con qué arrancar: la comparación de hoy se para siempre sobre
+         el club que estás viendo. Lo destapa applyClubMode(). -->
+    <div class="fin-sel vacio" id="vsSinClub" hidden>
+      <span class="fin-sel-ico">?</span>
+      <span class="fin-sel-txt">
+        <span class="fin-sel-t" data-i18n="vs.none.t">Primero elegí un club</span>
+        <span class="fin-sel-s" data-i18n="vs.none.s">La comparación arranca desde el club que estás viendo, y todavía no elegiste ninguno.</span>
+      </span>
+      <button type="button" class="fin-sel-btn" id="vsPick" data-i18n="vs.none.btn">Elegir un club</button>
+    </div>
+
     <!-- PUNTO DE ENTRADA 2 de 3 (Versión 137): la tarjeta, abajo de los KPIs. Es el que de
          verdad se usa, porque aparece donde el visitante ya está mirando números y se le
          ocurre la pregunta. Desaparece cuando ya hay una comparación activa. -->
@@ -824,24 +926,6 @@ consulta puntual, nunca lectura de corrido.
       <p class="subtitle" data-i18n="cmp.mix.sub">De dónde sale la plata de cada uno. Barras al 100%, para comparar la mezcla y no el tamaño; el total va al costado.</p>
       <div id="mixRows"></div>
       <div class="mix-legend" id="mixLegend"></div>
-    </div>
-
-
-    <div class="card">
-      <h2 data-i18n="inicio.chart.rev">Ingresos por año</h2>
-      <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioIngresosChart"></canvas></div>
-      <div class="inicio-legend" id="inicioIngresosLegend"></div>
-    </div>
-
-    <div class="card">
-      <h2 data-i18n="inicio.chart.exp">Gastos por año</h2>
-      <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioGastosChart"></canvas></div>
-      <div class="inicio-legend" id="inicioGastosLegend"></div>
-    </div>
-
-    <div class="card">
-      <h2 data-i18n="inicio.chart.debt">Deuda neta por año</h2>
-      <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioDeudaChart"></canvas></div>
     </div>
   </section>
 
@@ -1263,44 +1347,44 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '143';</script>
-<script src="data/lang/langs.js?v=143"></script>
-<script src="js/i18n.js?v=143"></script>
-<script src="data/clubs.js?v=143"></script>
+<script>window.ASSET_V = '145';</script>
+<script src="data/lang/langs.js?v=145"></script>
+<script src="js/i18n.js?v=145"></script>
+<script src="data/clubs.js?v=145"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=143"></script>
+<script src="data/club-index.js?v=145"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=143"></script>
-<script src="data/club-leagues.js?v=143"></script>
-<script src="data/category-map.js?v=143"></script>
-<script src="data/site-labels.js?v=143"></script>
-<script src="data/currency-map.js?v=143"></script>
-<script src="data/sources-view.js?v=143"></script>
+<script src="data/leagues.js?v=145"></script>
+<script src="data/club-leagues.js?v=145"></script>
+<script src="data/category-map.js?v=145"></script>
+<script src="data/site-labels.js?v=145"></script>
+<script src="data/currency-map.js?v=145"></script>
+<script src="data/sources-view.js?v=145"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=143"></script>
-<script src="js/finanzas-render.js?v=143"></script>
+<script src="js/finanzas-calc.js?v=145"></script>
+<script src="js/finanzas-render.js?v=145"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=143"></script>
+<script src="js/selector.js?v=145"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
      clubes, y club contra el promedio de su liga. Ver su cabecera. -->
-<script src="js/comparar-clubes.js?v=143"></script>
+<script src="js/comparar-clubes.js?v=145"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1445,6 +1529,18 @@ consulta puntual, nunca lectura de corrido.
   // de cómo se renderiza el sitio. Cambiar de club sigue siendo exactamente lo que era:
   // cargar su data file, actualizar `currentClub`, repintar todo, y correr la
   // verificación de tie-outs de ese club recién cargado.
+  // Cambiar de pestaña APRETANDO EL BOTÓN del nav, en vez de repetir las clases `active`
+  // que pone el listener de más abajo: si mañana esa navegación cambia, esto no se entera.
+  function irASeccion(id){
+    const btn = document.querySelector('#mainNav button[data-section="' + id + '"]');
+    if(btn) btn.click();
+    window.scrollTo(0, 0);
+  }
+  // Lo prende la opción "quiero ver un club en particular" de la bifurcación de Inicio, y lo
+  // apaga selectClub() al aterrizar. Un flag y no un parámetro de selectClub() porque entre
+  // el click y la elección hay un panel entero de por medio.
+  let irAFinanzasAlElegir = false;
+
   function selectClub(newClub){
     const previousClub = currentClub;
     // null = volver a la portada (el "Ver la portada" del panel). No se descarga ni
@@ -1462,6 +1558,13 @@ consulta puntual, nunca lectura de corrido.
       refreshAllForClub();
       verifyTieOuts(newClub);
       CLUB_COMPARE.onActiveChanged();
+      // Versión 144: el que entró por "quiero ver un club en particular" aterriza en
+      // FINANZAS, que es donde están los números de un club. Es lo único que distingue
+      // ese camino del botón de club del header, que te deja donde estabas.
+      if(irAFinanzasAlElegir){
+        irAFinanzasAlElegir = false;
+        irASeccion('finanzas');
+      }
     }).catch(err => {
       // NO un alert() (Versión 137). Un alert nativo CONGELA la página entera: timers,
       // onload de scripts, todo. Si el club que falla es el guardado en localStorage, el
@@ -1479,17 +1582,40 @@ consulta puntual, nunca lectura de corrido.
     });
   }
 
-  // applyClubMode(): la única función que decide entre "portada" y "club elegido".
-  // Con `currentClub` en null esconde el nav y las secciones y muestra la portada:
-  // no hay nada que navegar hasta que haya un club, y una pestaña que lleva a una
-  // vista vacía es peor que una pestaña que no está.
+  // applyClubMode(): la única función que decide qué se ve según haya club o no.
+  //
+  // VERSIÓN 144 (etapa 2 del merge del prototipo 4). Hasta acá escondía EL NAV ENTERO y
+  // TODAS las secciones mientras no hubiera club, porque la portada era un hero suelto
+  // fuera de <main> y no había nada que navegar hasta elegir uno. Ahora la portada ES una
+  // sección (#inicio, la bifurcación) y Comparar es otra, así que esconderlas dejaba la
+  // página en blanco.
+  //
+  // LA REGLA NUEVA, que conserva lo que la Versión 137 buscaba (nunca ofrecer una pestaña
+  // que lleva a una vista vacía) sin esconder el nav: las pestañas que funcionan SIN club
+  // se ven siempre (Inicio, Comparar, Finanzas, Mi Cuenta) y las que no significan nada
+  // sin uno se esconden hasta que lo haya (Fuentes). Finanzas sin club no está vacía: es
+  // el card del selector (Versión 143). Y si el visitante estaba parado en una pestaña que
+  // acaba de esconderse (volvió a la portada desde Fuentes), se lo devuelve a Inicio en vez
+  // de dejarlo mirando una sección sin botón.
+  const TABS_SIN_CLUB = ['inicio', 'vs', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
-    document.getElementById('coldHero').hidden = !cold;
-    document.getElementById('mainNav').style.display = cold ? 'none' : '';
-    document.querySelectorAll('main > section').forEach(sec => {
-      sec.style.display = cold ? 'none' : '';
+    // El #coldHero de la Versión 137 ya no se muestra nunca: lo reemplazó la bifurcación.
+    // El markup sigue en el DOM porque js/selector.js le engancha listeners por id; los dos
+    // se van juntos en la etapa 3, cuando ese archivo se reemplace entero.
+    document.getElementById('coldHero').hidden = true;
+    document.getElementById('mainNav').style.display = '';
+    document.querySelectorAll('main > section').forEach(sec => { sec.style.display = ''; });
+
+    document.querySelectorAll('#mainNav button').forEach(b => {
+      b.hidden = cold && TABS_SIN_CLUB.indexOf(b.dataset.section) < 0;
     });
+    const activo = document.querySelector('#mainNav button.active');
+    if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
+
+    document.getElementById('inicioClub').hidden = cold;
+    document.getElementById('vsSinClub').hidden = !cold;
+
     CLUB_SELECTOR.renderButton();
     if(window.CLUB_COMPARE) CLUB_COMPARE.draw();
   }
@@ -1517,6 +1643,17 @@ consulta puntual, nunca lectura de corrido.
     closePanel: () => CLUB_SELECTOR.close(),
   });
   applyClubMode();
+
+  // ---------- LA BIFURCACIÓN DE INICIO (Versión 144) ----------
+  // Las dos opciones abren caminos distintos: la primera, el selector, y al elegir cae en
+  // Finanzas; la segunda ni lo abre — lleva a la pestaña Comparar. En la etapa 3 el
+  // selector pasa a ser el modal de pasos y esto no cambia: sigue siendo `CLUB_SELECTOR.open()`.
+  document.getElementById('bifUno').addEventListener('click', () => {
+    irAFinanzasAlElegir = true;
+    CLUB_SELECTOR.open(false);
+  });
+  document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
+  document.getElementById('vsPick').addEventListener('click', () => CLUB_SELECTOR.open(false));
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
   document.getElementById('anioSelect').addEventListener('change', () => {
