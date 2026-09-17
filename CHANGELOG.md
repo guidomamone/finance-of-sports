@@ -1566,3 +1566,25 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - **To-do 34 nuevo**: las 6 cosas que el merge dejó abiertas a propósito (móvil, grupos guardados,
   el año por bloque en la mezcla, el aporte en plata, promedio + sumatoria, y que los datos son
   flacos para lo que la interfaz ya permite).
+
+## Versión 156: transcripción masiva a `.md` de todos los PDF fuente pendientes
+
+- Solo el paso de transcripción (pedido explícito de Guido: "no hagas el onboarding entero, solo
+  el full transcript"), sin categorizar ni cargar ningún dato al sitio.
+- Todos los PDF bajo `Clubes/` que no tenían su `.md` gemelo (ninguno traía capa de texto: eran
+  escaneos o exports de imagen, `pdftotext` devolvía 0 caracteres reales) ahora lo tienen —
+  transcripción página por página vía Tesseract OCR (300dpi, español/portugués/inglés/alemán
+  según país), con marca `--- pág. N ---` antes de cada página.
+- Detección y corrección automática de páginas rotadas 90° (Tesseract OSD + rotación con PIL)
+  antes de OCRear, en vez de dejarlas ilegibles.
+- Se descartó `--psm 6` (asume una sola columna) a favor de `--psm 3` (segmentación automática):
+  igual de rápido en páginas normales, pero mucho más preciso en balances con columnas
+  (capturaba filas de "Total" que `--psm 6` se comía enteras) y en páginas de layout complejo
+  (balances publicados como aviso legal dentro de una página de diario, várias columnas).
+- El repo fue creciendo clubes nuevos en paralelo mientras corría esta tarea (Alemania, Austria,
+  y carpetas vacías de Costa Rica/Estados Unidos/Guatemala/Honduras/Jamaica/Panamá todavía sin
+  PDF) — el driver quedó armado para re-escanear `Clubes/` y solo procesar lo que falte, así que
+  sirve para correrlo de nuevo sin repetir trabajo si aparecen más PDF.
+- Efecto colateral: resuelve la mitad de la to-do 21(a) (San Lorenzo 2014-15/2015-16/2016-17
+  nunca se habían transcripto) — la comprobación de sus 3 tipos de cambio `fxSource:'unknown'`
+  sigue pendiente, es trabajo de mapeo de datos, no de esta tarea.

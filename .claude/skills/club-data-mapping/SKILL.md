@@ -810,9 +810,15 @@ tool:**
 2. Renderizar cada página a imagen: `pdftoppm -png -r 300 archivo.pdf page` (300dpi alcanza para
    PDF de tamaño A4 normal; si el PDF tiene páginas físicamente más chicas —ej. la mitad de A4—,
    subir a 450-900dpi para esa página puntual, o el OCR sale con más ruido).
-3. OCRear cada imagen: `tesseract page-NN.png out -l spa --psm 6` (`--psm 6` asume un bloque de
-   texto uniforme, funciona bien para tablas; probar otros valores de `--psm` si una página
-   específica sale mal).
+3. OCRear cada imagen: `tesseract page-NN.png out -l spa --psm 3` (actualizado en la transcripción
+   masiva de la Versión 156: `--psm 3`, segmentación automática de página, salió MEJOR que
+   `--psm 6` en la práctica sobre ~5.000 páginas de prueba — misma velocidad en una página normal
+   de balance, pero en tablas con más de una columna de totales `--psm 6` se comía filas enteras
+   de "Total" que `--psm 3` sí capturó, y en páginas de layout complejo —balances publicados como
+   aviso legal dentro de una página de diario, varias columnas de texto no relacionado alrededor
+   de la tabla— `--psm 6` mezclaba texto de columnas distintas en la misma línea mientras `--psm 3`
+   las separó correctamente. `--psm 6` sigue siendo la opción a probar si una página puntual sale
+   peor con `--psm 3`, no al revés).
 4. Armar el `.md` de transcripción igual que con `pdftotext` (con separadores `--- pág. N ---`),
    pero con una nota en el encabezado aclarando que es OCR, no texto nativo, y que los números se
    verifican aparte antes de cargar — igual de obligatorio transcribir ANTES de extraer datos (ver
@@ -826,6 +832,15 @@ la salida garbled, y antes de re-OCRear, rotar con PIL —
 no alcanza) — y correr Tesseract sobre la imagen ya rotada. Si además la página es de tamaño
 reducido, puede hacer falta subir el DPI del render ANTES de rotar (900dpi en vez de 300-450) para
 que el texto tenga suficiente resolución tras la rotación.
+
+**Mejor que adivinar `90` vs `-90` a mano: Tesseract mismo detecta el ángulo (OSD, "Orientation and
+Script Detection"), rápido (menos de 1 segundo por página) y confiable en la práctica sobre ~5.000
+páginas de la transcripción masiva de la Versión 156** — `tesseract page-NN.png - --psm 0` devuelve
+una línea `Rotate: N` (0/90/180/270, el ángulo horario para enderezarla) más una confianza. Rotar
+con `Image.open('page-NN.png').rotate(-N, expand=True, fillcolor='white').save(...)` (el signo
+negativo porque PIL rota antihorario) y recién ahí correr el OCR normal. Esto se puede correr
+SIEMPRE antes de OCRear cada página (no solo cuando ya se sospecha una tabla rotada): un `Rotate: 0`
+con confianza alta no cuesta nada, y detecta rotaciones que a simple vista no siempre se notan.
 
 **Verificación: usar la columna "Total <año>" impresa de cada fila, no reconstruir sumando las
 columnas de sector.** El OCR tiene más ruido en las columnas angostas intermedias (dígitos sueltos
