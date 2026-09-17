@@ -1622,3 +1622,21 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   PDF puntual sigue sin transcribir — necesita que alguien lo vuelva a descargar.
 - (Ver también CLAUDE.md, gotcha nuevo sobre `pdfinfo | grep` y bytes NUL en metadata, encontrado
   en el mismo tramo con los PDF de clubes chinos.)
+
+## Versión 158 — Auditoría de escala (eje `escala`, pedido explícito de Guido) y skill nueva
+
+- Re-corrida completa del mapa de escala de la Versión 128 (`auditorias/2026-09-13-escala.md`)
+  contra el estado actual: 3 cuellos resueltos (`clubId` sin país, comentario de `index.html`,
+  selector jerárquico), 3 vigentes sin cambios (`fuentes.html` sin partir, `clubs.js` sin
+  adelgazar del todo, `auditAll()` en serie), 4 nuevos que la corrida anterior no podía ver
+  todavía: `fuentes-por-club.md` (el índice de sourcing, no su contenido) ya cruzó su propio
+  umbral de partición; el payload eager de `index.html` es 8 archivos y el que más crece es
+  `club-leagues.js`, no `clubs.js`; el buscador del selector no tiene debounce ni límite de
+  resultados; y el backlog de transcripción en `Clubes/` corre ~8x más rápido que la carga real.
+  Reporte completo: `auditorias/2026-09-17-escala.md`. To-do 22 actualizado con los hallazgos
+  vigentes y nuevos.
+- Skill nueva: `.claude/skills/escala-finance-of-sports/`, dedicada al mapa de puntos calientes de
+  escala y su metodología, separada de `auditoria-finance-of-sports` (que sigue siendo el
+  procedimiento genérico de los 5 ejes) porque el mapa es grande y cambia con cada sesión de
+  sourcing/onboarding. `CLAUDE.md` y el eje `escala` de `auditoria-finance-of-sports` apuntan a
+  ella.

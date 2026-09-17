@@ -5699,3 +5699,47 @@ commiteado, pero costó tiempo. La lección quedó en el método, no en un archi
 toda borradura por rango lleva un tope de bytes esperado y falla si se pasa, y el
 script escribe después de cada paso y no todo al final, para que un ancla rota no
 tire abajo el trabajo que ya había salido bien.
+
+## Versión 158 — Generalizar la lección de `fuentes-por-club.md`: una skill para "qué se rompe con volumen"
+
+Guido pidió algo puntual: auditar escala, no datos, y esta vez con un objetivo explícito — 1000 a
+3000 clubes, ~5 ejercicios cada uno — en vez de "cientos" en abstracto. Y pidió generalizar un
+precedente concreto: `fuentes-por-club.md` ya pasó por esto una vez (contenido por club → índice +
+detalle particionado, sesión 2026-09-13), ¿qué otro archivo está HOY donde ese estaba ANTES de
+partirse?
+
+Encontrarlo fue releer `auditorias/2026-09-13-escala.md` (Versión 128, la primera vez que se corrió
+este eje) línea por línea contra el estado actual, no auditar de cero. Tres de sus seis cuellos ya se
+resolvieron solos, como efecto colateral de otro trabajo (el selector jerárquico se llevó puesto el
+`<select>` plano; mover el comentario de `index.html` a `ESTADO.md` en la Versión 138 resolvió el
+cuello 2 sin que nadie lo buscara con ese objetivo). Eso ya era una señal: una auditoría de escala
+vieja, sin actualizar, miente por desactualización tanto como por omisión — dice "vigente" un
+problema que ya no existe, y no ve el que apareció después.
+
+Y apareció uno grande, exactamente donde predijo la pregunta de Guido: **`fuentes-por-club.md`, ya
+partido en índice + detalle, volvió a crecer — pero esta vez es el propio ÍNDICE el que se volvió
+grande** (468 líneas-club, 39 países, cruzando sin que nadie lo marcara el mismo umbral de ~300 que
+la auditoría anterior le había puesto a `fuentes.html`). El patrón se repite un nivel más arriba: no
+alcanza con partir contenido en índice+detalle una vez, hay que vigilar que el ÍNDICE no se vuelva el
+próximo monolito. Mismo hallazgo, en una escala menor pero con la misma forma, en
+`data/club-leagues.js`: un archivo único con una sección por club, mantenido a mano "una vez por
+temporada" según su propio comentario — la forma exacta que tenía `fuentes-por-club.md` antes de
+partirse, un escalón más adelante en el tiempo.
+
+El otro hallazgo que valió la pena fue de FORMA, no de contenido: la auditoría del 2026-09-13 había
+mirado `clubs.js` y concluido que crecía linealmente con los clubes (366 B/club). Cierto, pero
+incompleto — `index.html` carga eager OCHO archivos de `data/`, no uno, y el que crece más rápido es
+`club-leagues.js`, porque su unidad es el EJERCICIO, no el club (con ~5 ejercicios/club promedio,
+crece ~5x más rápido). La lección genérica, que quedó escrita en la skill nueva como criterio y no
+solo como hallazgo puntual: mirar la unidad de crecimiento real de un archivo, no asumir que es
+"por club" porque el archivo vive en `data/` junto a los que sí lo son.
+
+Decisión de diseño: ¿ampliar el eje `escala` de `auditoria-finance-of-sports` en línea, o una skill
+aparte? Se eligió skill aparte, por la misma razón que `club-sourcing`/`club-data-mapping`/
+`club-or-year-onboarding` son tres skills y no una: temas relacionados que se invocan por separado
+(Guido ya pidió este eje dos veces fuera de la cadencia de auditoría de rutina, "porque viene un
+cambio grande"), y un mapa que va a seguir creciendo con cada sesión de sourcing — meterlo adentro
+de la skill genérica la volvería, con el tiempo, un archivo sobre un eje disfrazado de skill sobre
+cinco. La propia skill de auditoría ya tenía la regla escrita para este caso ("si el archivo crece
+tanto que no se lee en dos minutos, andá a otro lado"); solo hacía falta aplicársela a sí misma antes
+de que el eje `escala` la desbordara.

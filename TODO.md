@@ -265,42 +265,38 @@ perdieron sino que se descartaron:
     hallazgo "Unión 2024 usa 890,50 cuando la tabla dice 909" era real pero mal diagnosticado: un
     Anexo de moneda extranjera valúa activos al comprador y pasivos al vendedor, así que 890,50 y
     909 son los dos lados del spread del mismo día y los dos están bien.
-22. NUEVO (Versión 128, auditoría de escala `auditorias/2026-09-13-escala.md`): los 6 cuellos que
-    aparecen al crecer, en el orden en que aparecen. Cada uno con el número que lo dispara:
-    (a) RESUELTO (Versión 129): `clubId` NO tenía país. Convención escrita en `CONVENCIONES.md`
-        (club nuevo = id con país al final), los 41 viejos sin migrar a propósito, y
-        `tools/audit.js` avisa (`clubid-heredado-ambiguo`) el día que un id heredado deja de ser
-        inequívoco, que es el único momento en que renombrarlo vale lo que cuesta. Lo que sigue es
-        el detalle de por qué, por si hace falta revisar la decisión: Los ids
-        `racing`, `independiente`, `union`, `sanlorenzo` existen en varios países (Racing de
-        Santander, Independiente del Valle y el de Medellín, Unión Española, Unión Magdalena). Ya
-        pasa en `fuentes/`, donde conviven Honduras/Olimpia.md y Paraguay/Olimpia.md, y ahí no choca
-        solo porque el país es una carpeta. El id además define el nombre del archivo de datos y el
-        prefijo de cada sourceId, así que arreglar una colisión después es renombrar todo eso.
-        DECIDIR ANTES DEL PRÓXIMO CLUB: id con país (`racing-ar`), más un chequeo en `tools/audit.js`
-        que falle si dos clubes de países distintos comparten nombre base.
-    (b) El comentario interno de ESTE archivo son 50 KB de los 140 KB de `index.html` (36%), y los
-        baja CADA visitante en CADA pageview: la to-do list, qué club es placeholder, todo. Crece
-        102 bytes por club, o sea ~150 KB a 1000 clubes. Mover el bloque a un `ESTADO.md` propio y
-        dejar acá un puntero de 3 líneas.
-    (c) `fuentes.html` es una sola página de 767 bytes por documento: 70 KB hoy con 91 documentos,
-        ~1,7 MB y 2.200 filas a 1000 clubes. Partir por país arriba de ~300 documentos, con un
-        índice. Es el mismo generador con un loop más, y le da una URL propia a cada país.
-    (d) PARCIAL (Versión 129, y el selector de la 136 ya lo consume): existe
-        `data/club-index.js`, el índice liviano generado (~76 bytes
-        por club, ~74 KB a 1000 contra los ~366 KB de `clubs.js`), que es lo que el selector
-        necesita. Lo que FALTA es la otra mitad: adelgazar `clubs.js`, moviendo a cada
-        `data/<club>-data.js` los campos que solo importan una vez que el club está cargado
-        (`reportingCurrency`, `fiscalYearStart`, `name` legal). Hoy los dos archivos viajan juntos,
-        así que el payload todavía no bajó.
-    (e) RESUELTO (Versión 137): el `<select>` plano de 41 opciones lo reemplazó el selector
-        jerárquico (ver ESTADO ACTUAL). `prototipo-selector.html` y
-        `PROMPT-selector-jerarquico.md` —el mock y el prompt con los que se diseñó— los borró
-        Guido, y la borrada se registró en la Versión 154: lo que decidieron ya está construido y
-        vive en `js/selector.js`. Los prototipos vivos son otros, y están en `Prototyping/`.
-    (f) `auditAll()` carga los clubes en SERIE (`for` con `await`): 114 ms con 41, pero ~30 s a 1000
-        clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
-        paralelas con `Promise.all`.
+22. MAPA DE ESCALA (Versión 128, ampliado en la 158 — ver `.claude/skills/escala-finance-of-sports/`
+    para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
+    de esta corrida). (a), (b) y (e) resueltos, se borran de acá. Siguen abiertos, en el orden en
+    que aparecen:
+    (c) `fuentes.html` sigue siendo una sola página: 86,5 KB hoy con ~90 documentos, ~1,9 MB
+        proyectado a 1000 clubes (~2 docs/club). Partir por país arriba de ~300 documentos, con un
+        índice — mismo generador (`tools/generate-fuentes-page.js`) con un loop más.
+    (d) `clubs.js` sigue sin adelgazar del todo: `club-index.js` (Versión 129) ya resolvió la mitad
+        que necesitaba el selector, pero `reportingCurrency`/`fiscalYearStart` siguen solo en
+        `clubs.js` (eager). AMPLIADO (Versión 158): el problema real no es solo `clubs.js`, es que
+        `index.html` carga eager 8 archivos de `data/`, y el que más crece no es `clubs.js` sino
+        `club-leagues.js` (crece por EJERCICIO, no por club: ~803 KB proyectado a 5000 ejercicios,
+        contra ~395 KB de `clubs.js` a 1000 clubes). Sumados, el payload eager pasa de ~38 KB hoy a
+        ~1,4 MB proyectado. Mover el detalle completo de `club-leagues.js` a lazy-load por
+        país/liga, y terminar de adelgazar `clubs.js`.
+    (f) `auditAll()` sigue cargando los clubes en SERIE (`for` con `await`, confirmado sin cambios
+        en `index.html:1850`): 114 ms con 41, ~30 s proyectado a 1000 con latencia real, y es lo que
+        hay que correr antes de cada push de datos. Segunda auditoría seguida que lo encuentra sin
+        resolver. Tandas paralelas con `Promise.all`.
+    (g) NUEVO (Versión 158): `fuentes-por-club.md`, el ÍNDICE de sourcing (no el contenido por
+        club, que ya se partió), ya cruzó el umbral de partición que se le fijó a `fuentes.html`
+        (~300): hoy son 468 líneas-club en 39 países, 80 KB. Mismo patrón que ya funcionó una vez:
+        partir en `fuentes/_indice/<País>.md` + un índice de países en `fuentes-por-club.md`.
+    (h) NUEVO (Versión 158): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
+        tiene debounce ni límite de resultados — filtra y reconstruye el DOM completo en cada
+        tecla. Invisible a 41 clubes, jank probable a 1000-3000. Debounce ~150-200ms + top-N con
+        "mostrar más".
+    (i) NUEVO (Versión 158): `data/club-leagues.js` (241 líneas hoy) es un archivo único con una
+        sección por club, mantenido a mano "una vez por temporada" según su propio comentario —
+        mismo patrón que tenía `fuentes-por-club.md` antes de partirse, un escalón más adelante.
+        No urgente todavía; decidir el split (por país o liga) antes de que deje de ser viable
+        repasarlo de una sentada.
 
 8. Reemplazar el email placeholder del formulario de contacto
    (contacto@bocaennumeros.example) por uno real antes de publicar.

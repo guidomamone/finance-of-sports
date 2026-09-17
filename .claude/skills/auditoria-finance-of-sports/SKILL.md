@@ -57,7 +57,7 @@ suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 | Eje | Qué mirar, que el script no puede |
 |---|---|
 | `datos` | Los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? ¿El criterio contable es el mismo que en clubes parecidos? |
-| `escala` | ¿Qué se rompe a 200 clubes? ¿Y a 1000? ¿Y con un club de otro deporte (sin pases, sin temporada partida, sin gestiones)? Nombrá el primer cuello con su número, no "esto no escala". |
+| `escala` | Ver `.claude/skills/escala-finance-of-sports/SKILL.md`: tiene el mapa completo de puntos calientes (con el número en el que se rompe cada uno) y la metodología para actualizarlo. Es una skill aparte porque el mapa es grande y cambia con cada sesión de sourcing/onboarding — meterlo acá bloquearía esta skill genérica. |
 | `codigo` | Con el sitio levantado: consola limpia, re-render que no duplica listeners, charts que se destruyen, `loadClubData()` con un club que falla, toggles combinados (moneda × formato × club × año). |
 | `docs` | Qué dice dos veces lo mismo, qué se lee en cada sesión sin usarse, qué quedó desactualizado respecto de los datos (`node tools/generate-club-index.js --check`). |
 | `tokens` | Dónde se van los tokens de una sesión típica, y qué de eso es automatizable. **Con el §4 de este skill al lado.** |
