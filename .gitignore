@@ -13,6 +13,18 @@
 Clubes/**/*.htm
 Clubes/**/*.html
 
+# LAS TRANSCRIPCIONES DE FUENTE NO OFICIAL NO SE TRACKEAN (2026-09-17). El repo
+# entero se deploya —no hay netlify.toml ni _redirects, Netlify publica la raíz—
+# así que todo archivo trackeado queda servido en financeofsports.com. Para un
+# balance oficial eso está bien y hasta es coherente con el proyecto: la
+# transcripción de un documento público al lado del link al documento. Para un
+# PDF que se consiguió en una réplica de una comunidad de hinchas (turiver.com,
+# no el dominio de River) es otra cosa: linkear el documento es una cosa,
+# republicar su transcripción completa desde el dominio propio es otra.
+# Los archivos SIGUEN EXISTIENDO en la máquina de Guido y se usan igual para
+# extraer datos; lo único que cambia es que no viajan al repo. Decisión de Guido.
+Clubes/Argentina/River/estados-contables-leads/
+
 # Los resúmenes de libros que Guido usa como base de conocimiento. Quedan LOCALES
 # a propósito: este repo es público y deploya a Netlify, así que commitearlos los
 # publicaría en internet. Son resúmenes de obras de terceros, y además no son

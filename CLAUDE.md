@@ -161,6 +161,18 @@ oficial — Y su transcripción, juntos ahí también, mismo criterio) — eso s
 está bien, lo que no escala es una carpeta nueva por club al nivel raíz del
 proyecto.
 
+**OJO CON LO QUE SE TRACKEA, que no es lo mismo que lo que se guarda (2026-09-17).**
+El repo entero se deploya: no hay `netlify.toml` ni `_redirects`, Netlify publica
+la raíz, así que CUALQUIER archivo trackeado queda servido en
+`financeofsports.com/<su ruta>`. Los PDFs no viajan (`*.pdf` está en `.gitignore`),
+pero las transcripciones `.md` sí, y son 106 MB de los 110 MB del repo. Para un
+balance oficial eso está bien y hasta es coherente con el proyecto. Para un
+documento que NO es del dominio del club, no: la carpeta
+`Clubes/Argentina/River/estados-contables-leads/` está en `.gitignore` por eso —
+el PDF se consiguió en una réplica de la comunidad tuRiver. Los archivos siguen en
+la máquina y se usan igual; lo único que cambia es que no se publican. **Si
+aparece otra fuente no oficial, mismo criterio: se guarda, no se trackea.**
+
 ## Cada PDF nuevo: transcribirlo a Markdown ANTES de usarlo
 
 Cuando se descarga o recibe un PDF nuevo para este proyecto (balance, presupuesto,

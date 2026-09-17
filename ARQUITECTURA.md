@@ -65,7 +65,9 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
 - Clubes/<País>/<Club>/: TODOS los PDFs fuente (balances, presupuestos,
   memorias) Y sus transcripciones a Markdown, juntos en la misma carpeta,
   hoy Clubes/Argentina/Boca/, Clubes/Argentina/River/ (con la subcarpeta
-  estados-contables-leads/ para el PDF+extract de fuente no oficial),
+  estados-contables-leads/ para el PDF+extract de fuente no oficial, que desde
+  el 2026-09-17 está en .gitignore: existe en la máquina, no viaja al repo,
+  porque el repo se deploya entero y ese documento no es del dominio del club),
   Clubes/Argentina/Racing/. País y club van capitalizados (Argentina, Boca,
   River, Racing), a diferencia de los `clubId` del código (minúscula). Regla
   desde la Versión 28: reemplazó el esquema anterior de dos árboles

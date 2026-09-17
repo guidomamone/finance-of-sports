@@ -21,7 +21,11 @@
 // en data/clubs.js — el PDF se consiguió en una réplica de la comunidad tuRiver (turiver.com), NO
 // del dominio oficial de River, aunque el documento en sí es el balance auditado real (informe de
 // auditoría independiente incluido, sellos CPCECABA). Transcripción completa en
-// Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md.
+// Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md,
+// que existe EN LA MÁQUINA pero NO en el repo: esa carpeta está en .gitignore desde
+// el 2026-09-17, porque el repo entero se deploya y republicar desde el dominio
+// propio la transcripción de un PDF que se consiguió en una réplica de hinchas es
+// distinto de linkear el documento. Ver el comentario en .gitignore.
 //
 // Cifras en PESOS COMPLETOS / millones ARS NATIVOS (Versión 32 — REESCRITO). Hasta la Versión 31,
 // este archivo guardaba amountNative ya convertido a USD (una sola conversión, sin capa de
@@ -111,7 +115,8 @@ const riverExpenseLinesByYear = {
   // impresas 51-54), con "Sueldos y cargas sociales" como una de sus filas. NO se transcribió:
   // la sesión que leyó el documento encontró diferencias no explicadas al sumar celdas
   // individuales de esa matriz escaneada y decidió no publicar cifras posiblemente incorrectas
-  // (ver el final de `Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md`).
+  // (ver el final de `Clubes/Argentina/River/estados-contables-leads/river-estados-contables-2023-24.md`,
+  // que está en la máquina pero no en el repo — ver .gitignore).
   // La celda que hace falta es UNA: fila "Sueldos y cargas sociales" x columna "Fútbol
   // profesional". El día que se lea y verifique, esa porción sale de acá y pasa a `wages_squad`.
   2024: [
