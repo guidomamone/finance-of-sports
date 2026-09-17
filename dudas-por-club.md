@@ -421,6 +421,20 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   informe trae un desglose IFRS 8 por segmento que permita aislar el perímetro de OB, o si va todo
   junto sin desglose — determina si esta fuente alcanza para cargar al sitio tal cual.
 
+## AS Monaco (sourcing de Francia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Cuál es la relación exacta entre la SIREN francesa y la sociedad monegasca real?**: el informe
+  DNCG describe al club como "SA à loi monégasque" (la única entidad de Ligue 1 de derecho NO
+  francés), pero existe además una SIREN francesa parecida (515109692, "AS Monaco Football Club
+  SA") sin confirmar si es la misma entidad con doble registro o una filial menor.
+
+## Olympique Lyonnais (sourcing de Francia, sesión 2026-09-17, no bloqueó la descarga pero queda sin cerrar)
+
+- **¿El DEU de Eagle Football Group desglosa el segmento "Olympique Lyonnais" puro?**: el documento
+  consolida el fútbol de Lyon con otros clubes del grupo (Botafogo, RWD Molenbeek, y Crystal Palace
+  hasta 2025) — no se confirmó si trae un desglose por segmento que aísle a Lyon, o si hace falta
+  cruzarlo con el bilan individual de la SASP vía el agregado DNCG para tener el perímetro correcto.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

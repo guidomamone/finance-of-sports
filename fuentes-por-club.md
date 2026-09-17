@@ -528,6 +528,36 @@ gratis, sin login, sin bloqueo de Cloudflare, y scripteable con curl — los 12 
 - [Viborg FF](<fuentes/Dinamarca/Viborg FF.md>) — 30 ejercicios reales, serie completa 1995/96-2024/25, sin ninguna transición de ejercicio, sin cargar aún — Último chequeo: 2026-09-17
 - [Notas generales de Dinamarca](<fuentes/Dinamarca/_notas-generales.md>)
 
+### Francia
+
+**Octavo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** Sin registro
+mercantil gratis tipo Bélgica/Dinamarca (`data.inpi.fr` existe pero está bloqueado por
+captcha+cuenta, no por pago). El hallazgo real fue la **DNCG**, que publica un agregado de liga con
+el bilan+resultado INDIVIDUAL de cada club (no solo KPIs agregados como DFL/ÖFBL) — 21 temporadas
+descargadas, los 18 clubes actuales cubiertos. Olympique Lyonnais además tiene disclosure propio vía
+su holding cotizante (Eagle Football Group, Euronext Paris). Ver `fuentes/Francia/_notas-generales.md`
+y la sección 19 (propuesta) del skill de sourcing.
+
+- [Paris Saint-Germain](<fuentes/Francia/Paris Saint-Germain.md>) — cubierto vía agregado DNCG (21 temporadas), sin cargar aún — Último chequeo: 2026-09-17
+- [Olympique Lyonnais](<fuentes/Francia/Olympique Lyonnais.md>) — 9 ejercicios de DEU público (Eagle Football Group cotiza) + agregado DNCG, ver duda de perímetro en dudas-por-club.md — Último chequeo: 2026-09-17
+- [Angers SCO](<fuentes/Francia/Angers SCO.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [AJ Auxerre](<fuentes/Francia/AJ Auxerre.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [Stade Brestois 29](<fuentes/Francia/Stade Brestois 29.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [Le Havre AC](<fuentes/Francia/Le Havre AC.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [RC Lens](<fuentes/Francia/RC Lens.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [LOSC Lille](<fuentes/Francia/LOSC Lille.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [FC Lorient](<fuentes/Francia/FC Lorient.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [Olympique de Marseille](<fuentes/Francia/Olympique de Marseille.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [FC Metz](<fuentes/Francia/FC Metz.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [AS Monaco](<fuentes/Francia/AS Monaco.md>) — cubierto vía agregado DNCG, ver duda sobre entidad monegasca en dudas-por-club.md — Último chequeo: 2026-09-17
+- [FC Nantes](<fuentes/Francia/FC Nantes.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [OGC Nice](<fuentes/Francia/OGC Nice.md>) — cubierto vía agregado DNCG; 28 comptes annuels confirmados en INPI, bloqueados por captcha+cuenta — Último chequeo: 2026-09-17
+- [Paris FC](<fuentes/Francia/Paris FC.md>) — cubierto vía agregado DNCG (incl. años en Ligue 2), sin cargar aún — Último chequeo: 2026-09-17
+- [Stade Rennais FC](<fuentes/Francia/Stade Rennais FC.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [RC Strasbourg Alsace](<fuentes/Francia/RC Strasbourg Alsace.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [Toulouse FC](<fuentes/Francia/Toulouse FC.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
+- [Notas generales de Francia](<fuentes/Francia/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada
