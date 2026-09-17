@@ -1,19 +1,29 @@
 # finance-of-sports — instrucciones permanentes
 
-Este es un proyecto SEPARADO del sitio profesional de Guido (el resto de
-"Website propio"). No mezclar contenido, código, ni decisiones de deploy
-entre los dos.
+Este es un proyecto SEPARADO del sitio profesional de Guido (`Guidomamone-pm`,
+repo `guidomamone-website`). No mezclar contenido, código, ni decisiones de
+deploy entre los dos.
 
-**Lo que mantiene esa separación es UNA línea**, y conviene saber cuál antes de
-tocarla: `finance-of-sports/` en el `.gitignore` del sitio profesional
-(`../.gitignore`, línea 5). Este repo está anidado adentro del otro, así que sin
-esa línea todo este proyecto se vuelve untracked dentro de `guidomamone-website`
-y se puede commitear o deployar por error al sitio profesional. **Si alguna vez se
-renombra ESTA carpeta, hay que actualizar esa línea en el mismo movimiento.** Es
-lo único que se rompe de verdad con un rename: nada del código depende del nombre
-del repo (no hay netlify.toml, ni CNAME, ni build step). El repo de GitHub es
-`guidomamone/finance-of-sports` y el dominio `financeofsports.com`; el nombre
-viejo (`numeros-de-boca`) sigue redirigiendo.
+**Desde el 2026-09-15 esta carpeta vive como hermana de la del sitio
+profesional** (`Claude/Projects/finance-of-sports/` y `Claude/Projects/
+Guidomamone-pm/`, ambas debajo de `Claude/Projects/`), no anidada adentro
+como antes. Cada una es su propio repo Git con su propio remoto
+(`guidomamone/finance-of-sports` acá, `guidomamone/guidomamone-website` el
+otro) — no hay un working tree compartido, así que no existe el riesgo de
+que un `git add`/commit en un repo arrastre archivos del otro. Por eso ya
+no hace falta ninguna línea de `.gitignore` sosteniendo la separación (la
+que existía cuando este repo estaba anidado, `finance-of-sports/` en el
+`.gitignore` del sitio profesional, se borró en el mismo movimiento y no
+hay que recrearla). El riesgo que SÍ sigue existiendo, y que ningún
+acomodo de carpetas elimina, es el humano: abrir una sesión de Claude Code
+en el directorio equivocado y editar o commitear el proyecto que no era —
+conviene chequear el `pwd`/remote al arrancar si hay dudas.
+
+Nada del código depende del nombre de esta carpeta ni de dónde esté
+ubicada: no hay `netlify.toml`, ni `CNAME`, ni build step que lo requiera.
+El repo de GitHub es `guidomamone/finance-of-sports` y el dominio
+`financeofsports.com`; el nombre viejo (`numeros-de-boca`) sigue
+redirigiendo.
 
 ## Al empezar a trabajar acá
 

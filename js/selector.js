@@ -54,14 +54,13 @@
 // diciembre). En un bloque de liga el año NO puede ser null: define QUIÉNES la
 // integraban esa temporada.
 //
-// EL MODO COMPARAR es un puente, no el destino. `js/comparar-clubes.js` sigue
-// siendo el que dibuja la comparación, y sigue esperando los mismos ids que le
-// daba el panel viejo (#clubPanel con clase `open`, #addBanner, #confirmBar,
-// .sel-foot): el modal los conserva, así que ese archivo no se tocó. Cuando el
-// modal se abre para comparar, el paso de clubes deja de ser una selección
-// propia y pasa a prender y apagar sujetos con `CLUB_COMPARE.toggleClub()`, y
-// la barra de confirmación de abajo es la que cierra. En la etapa 5, cuando los
-// dos cards sean la comparación, este puente se retira entero.
+// LOS DOS CARDS SON LA ÚNICA FORMA DE COMPARAR (Versión 152). `js/comparar-clubes.js`
+// —la bandeja de chips de la Versión 137, con sus tres puntos de entrada— se
+// borró: contestaba la misma pregunta de otra manera y convivían mal. Lo que ese
+// archivo hacía mejor sí se conservó, y vive acá: los 6 indicadores con sus
+// barras y sus notas, las 3 reglas de comparabilidad escritas en pantalla, y la
+// composición de ingresos. Lo que NO sobrevivió es su modelo: un sujeto era un
+// club o el promedio de una liga, y un lado que suma partes no es un sujeto.
 //
 // OJO CON `clubs`: se declara con `const` en `data/clubs.js`, así que NO es una
 // propiedad de `window` (a diferencia de `CLUB_INDEX`, que se asigna, y de las
@@ -84,10 +83,6 @@ window.CLUB_SELECTOR = (function(){
 
   var inited = false;
   var LETRAS = ['A', 'B'];
-  // PUENTE con `js/comparar-clubes.js`: abierto desde la comparación VIEJA (el
-  // botón del header o la bandeja de chips) en vez de para elegir un club o para
-  // llenar un card. Se retira en la etapa 5, con ese archivo.
-  var comparando = false;
 
   // LOS DOS LADOS de la pestaña Comparar. `null` = card vacío.
   var lado = [null, null];
@@ -320,12 +315,8 @@ window.CLUB_SELECTOR = (function(){
 
   var PASO_CLUBES = {
     clave:'club',
-    titulo:function(){
-      return comparando ? t('sel.paso.club.cmp', 'Elegí con quién comparar')
-                        : t('sel.paso.club', 'Elegí uno o más clubes');
-    },
+    titulo:function(){ return t('sel.paso.club', 'Elegí uno o más clubes'); },
     ayuda:function(){
-      if(comparando) return null;
       return origen === 'vs'
         ? t('sel.paso.club.ayuda.vs', 'Marcá los que quieras. Si marcás más de uno, este lado los mide como un conjunto, y en el paso siguiente elegís si los suma o los promedia.')
         : t('sel.paso.club.ayuda', 'Marcá los que quieras. Si marcás más de uno, en el paso siguiente elegís el ejercicio de cada uno.');
@@ -335,16 +326,9 @@ window.CLUB_SELECTOR = (function(){
     opciones:function(){
       return ordenados(clubsQueQuedan('club')).map(function(id){
         var co = window.COUNTRIES[countryOf(id)];
-        var op = { id:id, crest:initials(nameOf(id)), label:nameOf(id),
-                   sub:co ? co.flag + ' ' + t(co.key, co.name) : '',
-                   meta:nEjercicios(yearsOf(id).length) };
-        // En modo comparar, un club que no puede sumar ningún ejercicio nuevo se
-        // muestra apagado CON EL MOTIVO, en vez de no responder al click.
-        if(comparando && window.CLUB_COMPARE){
-          var motivo = CLUB_COMPARE.blockReason(id);
-          if(motivo){ op.disabled = true; op.sub = motivo; }
-        }
-        return op;
+        return { id:id, crest:initials(nameOf(id)), label:nameOf(id),
+                 sub:co ? co.flag + ' ' + t(co.key, co.name) : '',
+                 meta:nEjercicios(yearsOf(id).length) };
       });
     },
     // Un solo bloque con todos los clubes marcados, cada uno en su ejercicio más
@@ -362,11 +346,8 @@ window.CLUB_SELECTOR = (function(){
 
   function pasosActivos(){
     var out = PASOS_FILTRO.slice();
-    // El puente con la comparación vieja: ahí no se arma un lado, se prenden y
-    // apagan rivales, así que el paso 4 no tiene nada que bifurcar.
-    if(comparando) return out.concat([PASO_CLUBES]);
-    // Viniendo por "quiero ver un club en particular" tampoco: ese camino es de
-    // clubes por definición, y preguntarlo sería un peaje.
+    // Viniendo por "quiero ver un club en particular" no hay nada que bifurcar: ese
+    // camino es de clubes por definición, y preguntarlo sería un peaje.
     if(origen === 'finanzas') return out.concat([PASO_CLUBES, PASO_CLUB_ANIO]);
     out.push(PASO_TIPO);
     var tipo = st.tipo.sel[0];
@@ -391,12 +372,11 @@ window.CLUB_SELECTOR = (function(){
 
   // Abrir el modal. `i` es el card que lo pide (0 o 1) y `desde` a dónde va lo
   // elegido: 'finanzas' carga un club, 'vs' llena ese card.
-  function abrirModal(i, desde, forCompare){
+  function abrirModal(i, desde){
     if(!inited) return;
     hideCoach();
     origen = desde || 'finanzas';
     modalLado = i || 0;
-    comparando = !!forCompare;
 
     // Reabrir un card ya armado no empieza de cero: vuelve a lo que ese card había
     // elegido. "Elegir otro" casi siempre es "cambiar una cosa".
@@ -407,41 +387,35 @@ window.CLUB_SELECTOR = (function(){
     } else {
       reset();
       // Los filtros arrancan parados donde está el club activo, así abrir el modal
-      // muestra el contexto de lo que estás viendo en vez de la raíz. Comparando no:
-      // ahí el club activo es el sujeto 0 y lo que se busca es OTRO.
+      // muestra el contexto de lo que estás viendo en vez de la raíz. Para un card
+      // de Comparar no: ahí lo que se busca es otra cosa, no dónde estás.
       var actual = api.getClub();
-      if(actual && !comparando && origen === 'finanzas') pararseEn(actual, true);
+      if(actual && origen === 'finanzas') pararseEn(actual, true);
     }
 
     $('modalQ').value = '';
     $('modalResultados').hidden = true;
     $('modalWrap').hidden = false;
-    $('modalTitulo').textContent = comparando ? t('sel.modal.cmp', 'Sumar a la comparación')
-      : origen === 'vs' ? t('sel.modal.lado', 'Lado') + ' ' + LETRAS[modalLado]
+    $('modalTitulo').textContent = origen === 'vs'
+      ? t('sel.modal.lado', 'Lado') + ' ' + LETRAS[modalLado]
       : t('sel.modal.club', 'Elegí el club');
     $('clubPanel').classList.add('open');
     $('clubBackdrop').classList.add('open');
     $('clubBtn').setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
     renderModal();
-    if(window.CLUB_COMPARE) window.CLUB_COMPARE.renderConfirm();
     setTimeout(function(){ $('modalQ').focus(); }, 30);
   }
 
-  // La firma vieja, que es la que llaman index.html y js/comparar-clubes.js.
-  function open(forCompare){ abrirModal(0, 'finanzas', forCompare); }
+  // La firma que llama index.html: el botón de club del header y la bifurcación de
+  // Inicio abren el camino de Finanzas.
+  function open(){ abrirModal(0, 'finanzas'); }
 
-  // Cerrar por acá (✕, Esc, el backdrop) CONSERVA lo que se haya elegido para
-  // comparar: solo el "Cancelar" explícito de la barra de confirmación descarta.
-  // Lo que sí hace es salir del modo comparar, para que la próxima apertura no
-  // herede un banner que ya no corresponde.
   function close(){
     $('clubPanel').classList.remove('open');
     $('clubBackdrop').classList.remove('open');
     $('clubBtn').setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
-    comparando = false;
-    if(window.CLUB_COMPARE) window.CLUB_COMPARE.leaveAddMode();
   }
 
   // ---------------------------------------------------------------------------
@@ -519,13 +493,7 @@ window.CLUB_SELECTOR = (function(){
           if(botones) body.appendChild(botones);
           var grid = el('div', 'op-grid' + (p.clave === 'club' ? ' clubes' : '') + (p.clave === 'tipo' ? ' tipo' : ''));
           ops.forEach(function(op){
-            grid.appendChild(opcionBtn(op, marcadoEn(p, op.id), function(id){
-              if(comparando && p.clave === 'club'){
-                // El puente con la comparación vieja: acá no se junta una selección
-                // propia, se prenden y apagan sujetos de `CLUB_COMPARE`.
-                Promise.resolve(CLUB_COMPARE.toggleClub(id)).then(renderModal);
-                return;
-              }
+            grid.appendChild(opcionBtn(op, tiene(p.clave, op.id), function(id){
               // El paso 4 es de elección única y avanza solo: es una bifurcación, no
               // un filtro, y marcar "ligas Y clubes" es justamente la tercera opción.
               if(p.unico){
@@ -541,7 +509,6 @@ window.CLUB_SELECTOR = (function(){
             }));
           });
           body.appendChild(grid);
-          if(comparando && p.clave === 'club') body.appendChild(ligasParaComparar());
         }
         body.appendChild(pieDelPaso(p));
         card.appendChild(body);
@@ -549,47 +516,7 @@ window.CLUB_SELECTOR = (function(){
       wrap.appendChild(card);
     });
 
-    if(todoResuelto() && !comparando) wrap.appendChild(cardFinal());
-  }
-
-  function marcadoEn(p, id){
-    if(comparando && p.clave === 'club') return !!(window.CLUB_COMPARE && CLUB_COMPARE.has('club', id));
-    return tiene(p.clave, id);
-  }
-
-  // EL PROMEDIO DE UNA LIGA, comparando. El panel viejo lo ofrecía como un "+" en
-  // la columna de ligas; sin esa columna, va acá abajo de los clubes. No se perdió
-  // la función: se mudó. En la etapa 4 esto lo reemplaza un bloque de liga.
-  function ligasParaComparar(){
-    var caja = el('div', 'cmp-ligas');
-    var base = clubsQueQuedan('club'), vistas = {};
-    base.forEach(function(id){ ligasDe(id).forEach(function(l){ vistas[l] = 1; }); });
-    var lids = Object.keys(vistas).filter(function(lid){
-      // Un "promedio" de un solo club no es un promedio.
-      return (window.leagueYears(lid) || []).some(function(y){
-        return (window.clubsOfLeagueYear(lid, y) || []).filter(function(id){ return !!clubs[id]; }).length >= 2;
-      });
-    }).sort(function(a, b){
-      return window.LEAGUES[a].name.localeCompare(window.LEAGUES[b].name, 'es');
-    });
-    if(!lids.length) return caja;
-
-    caja.appendChild(el('p', 'paso-ayuda', t('sel.cmp.ligas', 'O medilo contra el promedio de una liga entera:')));
-    var grid = el('div', 'op-grid clubes');
-    lids.forEach(function(lid){
-      var lg = window.LEAGUES[lid];
-      var co = window.COUNTRIES[lg.country];
-      var ys = window.leagueYears(lid) || [];
-      grid.appendChild(opcionBtn({
-        id:lid, icon:(co || {}).flag || '🏆', label:lg.name,
-        sub:window.tierLabel(lg.tier),
-        meta:ys.length + ' ' + t('sel.seasons', 'temporadas')
-      }, !!(window.CLUB_COMPARE && CLUB_COMPARE.has('bench', lid)), function(id){
-        Promise.resolve(CLUB_COMPARE.toggleBench(id)).then(renderModal);
-      }));
-    });
-    caja.appendChild(grid);
-    return caja;
+    if(todoResuelto()) wrap.appendChild(cardFinal());
   }
 
   // Los dos botones de arriba de la grilla. "Elegir todos" solo donde marcar todo
@@ -597,7 +524,6 @@ window.CLUB_SELECTOR = (function(){
   // cualquier paso donde haya algo marcado, porque destildar de a uno cuando
   // marcaste once es un castigo (pedido de Guido).
   function botonesDeSeleccion(p, ops){
-    if(comparando && p.clave === 'club') return null;
     var fila = el('div', 'paso-todos-fila');
     var libres = ops.filter(function(o){ return !o.disabled; });
     var marcados = st[p.clave].sel.length;
@@ -627,10 +553,6 @@ window.CLUB_SELECTOR = (function(){
   // "opcional", porque todos lo son.
   function pieDelPaso(p){
     var pie = el('div', 'paso-pie');
-    // Comparando, el paso del club no confirma nada: la barra de abajo es la que
-    // cierra, y cada tap ya sumó o sacó un sujeto.
-    if(comparando && p.clave === 'club') return pie;
-
     // El paso 4 avanza solo al tocar una opción: no tiene pie.
     if(p.unico) return pie;
 
@@ -1231,12 +1153,24 @@ window.CLUB_SELECTOR = (function(){
   // afuera (se probó, y una fórmula simplificada tiró 12 falsos positivos porque
   // no contemplaba nonCash, profitOnPlayerSales, assetSales ni tax).
   // ---------------------------------------------------------------------------
+  // LOS 6 INDICADORES, los mismos que dibujaba la vista de barras de
+  // js/comparar-clubes.js hasta la Versión 152. Los 4 primeros son MONTOS y se
+  // agregan sumando (o promediando) ejercicio por ejercicio; los 2 últimos son
+  // RATIOS y NO se pueden promediar así — ver `ratiosDe()`.
   var INDICADORES = [
-    { key:'revenue',  label:function(){ return t('cmp.metric.revenue', 'Ingresos'); } },
-    { key:'expenses', label:function(){ return t('cmp.metric.expenses', 'Gastos'); } },
-    { key:'pat',      label:function(){ return t('cmp.metric.pat', 'Resultado del ejercicio'); }, signo:true },
-    { key:'netDebt',  label:function(){ return t('cmp.metric.debt', 'Deuda neta'); }, signo:true }
+    { key:'revenue',  label:function(){ return t('cmp.m.revenue', 'Ingresos'); } },
+    { key:'expenses', label:function(){ return t('cmp.m.expenses', 'Gastos'); },
+      nota:function(){ return t('cmp.m.expenses.note', 'Incluye amortizaciones y depreciación, igual que el total de la tabla de Finanzas.'); } },
+    { key:'pat',      label:function(){ return t('cmp.m.pat', 'Resultado del ejercicio'); }, signo:true },
+    { key:'netDebt',  label:function(){ return t('cmp.m.netdebt', 'Deuda neta'); }, signo:true,
+      nota:function(){ return t('cmp.m.netdebt.note', 'Deuda bruta menos caja. Negativa quiere decir más caja que deuda.'); } },
+    { key:'wagesPct', label:function(){ return t('cmp.m.wages', 'Masa salarial / Ingresos'); }, ratio:'pct',
+      nota:function(){ return t('cmp.m.wages.note', 'Cuánto de lo que entra se va en sueldos del plantel.'); } },
+    { key:'perMember', label:function(){ return t('cmp.m.permember', 'Ingreso por socio'); }, ratio:'usd',
+      nota:function(){ return t('cmp.m.permember.note', 'Solo para los clubes que publican su padrón de socios.'); } }
   ];
+  // Los 4 que se agregan sumando. Los 2 ratios se calculan aparte, al final.
+  var MONTOS = INDICADORES.filter(function(m){ return !m.ratio; });
 
   // Los pares (club, ejercicio) de UN bloque. Para una liga salen de la membresía
   // de esa temporada; para un puñado de clubes, de lo que se eligió club por club.
@@ -1285,22 +1219,53 @@ window.CLUB_SELECTOR = (function(){
     var sinGastos = !(c.expenseLines || []).length
                  && c.meta.officialTotalExpenses == null
                  && !c.expenses && !c.nonCash;
+    // Un club con masa salarial 0 no existe: si da 0 es que el documento no la
+    // desglosa (pasa con River 2024, cuyos 8 rubros de gasto están todos en
+    // `other_expenses`, etiquetados por sector).
+    var sinSalarios = !c.wages;
+    var socios = (typeof memberCountByClub !== 'undefined') ? memberCountByClub[id] : null;
+    var revenueUsd = usd(c.revenue);
     return {
-      revenue: usd(c.revenue),
+      revenue: revenueUsd,
       expenses: sinGastos ? null : Math.abs(usd(c.expenses + c.nonCash)),
       pat: sinGastos ? null : usd(c.pat),
-      netDebt: sinDeuda ? null : usd(c.netDebt)
+      netDebt: sinDeuda ? null : usd(c.netDebt),
+      // Los dos insumos de los ratios. Van como MONTOS para poder sumarlos, y el
+      // ratio se arma recién con los totales del lado: promediar porcentajes de
+      // clubes con tamaños distintos da un número que no describe a nadie.
+      wages: sinSalarios ? null : Math.abs(usd(c.wages)),
+      // `revenueConWages` y `revenueConSocios` son el MISMO ingreso, contado solo
+      // cuando el otro término del ratio existe. Sin esto, un club que informa
+      // ingresos pero no salarios infla el denominador y el ratio sale bajo.
+      revenueConWages: sinSalarios ? null : revenueUsd,
+      socios: socios || null,
+      revenueConSocios: socios ? revenueUsd : null
     };
+  }
+
+  // La composición de ingresos de un club-ejercicio, en USD y en "Formato
+  // simplificado", que es la única taxonomía comparable entre clubes de países
+  // distintos.
+  function mezclaDe(id, year){
+    var rows = (window.simplifiedReportForClub(id, year) || {}).ingresos || [];
+    var meta = window.yearMetaFor(id, year);
+    return rows.map(function(r){
+      return { label:r.label, value: window.toDisplayValue(r.value, meta, 'USD') };
+    }).filter(function(r){ return r.value > 0; });
   }
 
   // UN BLOQUE: se suman sus ejercicios y, si el agregador es promedio, se divide por
   // los que informan ESE indicador (no por los ejercicios del bloque: un club que no
   // publica su deuda no puede bajar el promedio de deuda de los demás).
+  // Las claves que se ACUMULAN: los 4 montos más los 4 insumos de los 2 ratios.
+  var ACUMULADAS = ['revenue', 'expenses', 'pat', 'netDebt',
+                    'wages', 'revenueConWages', 'socios', 'revenueConSocios'];
+
   function totalesDeBloque(b){
     var pares = paresDeBloque(b);
     var out = { nombre:nombreBloque(b), agg:b.agg, n:pares.length, conDato:0, sinEjercicio:[],
-                anios:[], presupuestos:0, tot:{}, informan:{} };
-    INDICADORES.forEach(function(m){ out.tot[m.key] = 0; out.informan[m.key] = 0; });
+                anios:[], presupuestos:0, tot:{}, informan:{}, mezcla:{} };
+    ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
     pares.forEach(function(par){
       var id = par[0], y = par[1];
       var tieneEse = y && yearsOf(id).some(function(p){ return p[0] === y; });
@@ -1311,15 +1276,23 @@ window.CLUB_SELECTOR = (function(){
       out.anios.push(y);
       var tipo = (yearsOf(id).filter(function(p){ return p[0] === y; })[0] || [])[1];
       if(tipo === 'official_budget') out.presupuestos++;
-      INDICADORES.forEach(function(m){
-        if(n[m.key] == null) return;
-        out.tot[m.key] += n[m.key];
-        out.informan[m.key]++;
+      ACUMULADAS.forEach(function(k){
+        if(n[k] == null) return;
+        out.tot[k] += n[k];
+        out.informan[k]++;
       });
+      // La composición de ingresos del bloque: los rubros simplificados de cada
+      // ejercicio, SUMADOS en USD. Un conjunto sí tiene una mezcla propia (de dónde
+      // sale la plata de estos clubes juntos); lo que no tiene sentido es promediar
+      // los porcentajes de clubes con tamaños distintos.
+      mezclaDe(id, y).forEach(function(r){ out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value; });
     });
     if(b.agg === 'promedio'){
-      INDICADORES.forEach(function(m){
-        if(out.informan[m.key]) out.tot[m.key] = out.tot[m.key] / out.informan[m.key];
+      ACUMULADAS.forEach(function(k){
+        if(out.informan[k]) out.tot[k] = out.tot[k] / out.informan[k];
+      });
+      Object.keys(out.mezcla).forEach(function(lbl){
+        if(out.conDato) out.mezcla[lbl] = out.mezcla[lbl] / out.conDato;
       });
     }
     return out;
@@ -1330,8 +1303,8 @@ window.CLUB_SELECTOR = (function(){
   // con el aviso correspondiente abajo de la tabla.
   function totalesDe(l){
     var out = { nombre:l.nombre, n:0, conDato:0, sinEjercicio:[], anios:[], presupuestos:0,
-                tot:{}, informan:{}, partes:[], mezclaAgg:false, formula:formulaDe(l) };
-    INDICADORES.forEach(function(m){ out.tot[m.key] = 0; out.informan[m.key] = 0; });
+                tot:{}, informan:{}, mezcla:{}, partes:[], mezclaAgg:false, formula:formulaDe(l) };
+    ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
     var aggs = {};
     (l.bloques || []).forEach(function(b){
       var tb = totalesDeBloque(b);
@@ -1342,18 +1315,35 @@ window.CLUB_SELECTOR = (function(){
       out.presupuestos += tb.presupuestos;
       out.sinEjercicio = out.sinEjercicio.concat(tb.sinEjercicio);
       if(tb.conDato) aggs[b.agg] = 1;
-      INDICADORES.forEach(function(m){
-        if(!tb.informan[m.key]) return;
-        out.tot[m.key] += tb.tot[m.key];
-        out.informan[m.key]++;
+      ACUMULADAS.forEach(function(k){
+        if(!tb.informan[k]) return;
+        out.tot[k] += tb.tot[k];
+        out.informan[k]++;
+      });
+      Object.keys(tb.mezcla).forEach(function(lbl){
+        out.mezcla[lbl] = (out.mezcla[lbl] || 0) + tb.mezcla[lbl];
       });
     });
     out.mezclaAgg = Object.keys(aggs).length > 1;
+
+    // LOS DOS RATIOS, recién acá. Se calculan sobre los TOTALES del lado y solo con
+    // los ejercicios que informan los dos términos: promediar el porcentaje de un
+    // club chico con el de uno grande da un número que no describe a ninguno de los
+    // dos. `informan` para un ratio es el del insumo que puede faltar.
+    out.tot.wagesPct = out.informan.wages && out.tot.revenueConWages
+      ? (out.tot.wages / out.tot.revenueConWages) * 100 : null;
+    out.informan.wagesPct = out.informan.wages;
+    // Ingresos en USD son millones; el ingreso por socio va en USD enteros.
+    out.tot.perMember = out.informan.socios && out.tot.socios
+      ? (out.tot.revenueConSocios * 1e6) / out.tot.socios : null;
+    out.informan.perMember = out.informan.socios;
     return out;
   }
 
-  function fmtM(v){
+  function fmtM(v, m){
     if(v == null) return t('cmp.nodata', 'sin dato');
+    if(m && m.ratio === 'pct') return v.toFixed(0) + '%';
+    if(m && m.ratio === 'usd') return Math.round(v).toLocaleString('es-AR') + ' USD';
     var abs = Math.abs(v);
     var txt = abs >= 1000 ? (abs / 1000).toFixed(2) + ' MM' : abs.toFixed(1) + ' M';
     return (v < 0 ? '-' : '') + txt + ' USD';
@@ -1565,6 +1555,15 @@ window.CLUB_SELECTOR = (function(){
       'En USD. Cada lado se calcula ejercicio por ejercicio con el mismo motor que usa el resto del sitio.')));
     caja.appendChild(head);
 
+    // LAS 3 REGLAS DE COMPARABILIDAD SE DICEN, no solo se aplican. Vienen tal cual de
+    // la vista que esto reemplaza (js/comparar-clubes.js, Versión 137).
+    var reglas = el('p', 'cd-reglas');
+    reglas.innerHTML = t('cmp.rules',
+      'Todo en <b>USD</b> (la comparación ignora el toggle de moneda a propósito) y en <b>Formato simplificado</b>, '
+      + 'la única taxonomía comparable entre clubes de países distintos. Cada lado muestra <b>su propio ejercicio</b>: '
+      + 'los clubes no cierran el mismo día ni tienen los mismos años cargados.');
+    caja.appendChild(reglas);
+
     var tabla = el('table', 'cd-tabla');
     var trh = el('tr');
     trh.appendChild(el('th', null, ''));
@@ -1591,7 +1590,13 @@ window.CLUB_SELECTOR = (function(){
     var tbody = el('tbody');
     INDICADORES.forEach(function(m){
       var tr = el('tr');
-      tr.appendChild(el('th', 'cd-ind', m.label()));
+      var th = el('th', 'cd-ind');
+      th.appendChild(el('span', null, m.label()));
+      // La nota de cada indicador, la misma que escribía la vista vieja: sin ella
+      // "Gastos" no dice que incluye amortizaciones, y "Deuda neta" negativa se lee
+      // como un error en vez de como "más caja que deuda".
+      if(m.nota) th.appendChild(el('span', 'cd-ind-nota', m.nota()));
+      tr.appendChild(th);
       // Cada barra está a escala DENTRO de su indicador, no entre indicadores: es la
       // misma regla que ya usa la comparación de barras del sitio.
       var maxAbs = Math.max.apply(null, tots.map(function(tt){
@@ -1603,7 +1608,7 @@ window.CLUB_SELECTOR = (function(){
           td.appendChild(el('span', 'cd-nodato', t('cmp.nodata', 'sin dato')));
         } else {
           var v = tt.tot[m.key];
-          td.appendChild(el('span', 'cd-num' + (m.signo && v < 0 ? ' neg' : ''), fmtM(v)));
+          td.appendChild(el('span', 'cd-num' + (m.signo && v < 0 ? ' neg' : ''), fmtM(v, m)));
           var barra = el('span', 'cd-bar');
           var relleno = el('span', 'cd-bar-in' + (m.signo && v < 0 ? ' neg' : ''));
           relleno.style.width = Math.round((Math.abs(v) / maxAbs) * 100) + '%';
@@ -1652,6 +1657,70 @@ window.CLUB_SELECTOR = (function(){
     var pie = el('div', 'cd-avisos');
     avisos.forEach(function(a){ pie.appendChild(el('p', null, a)); });
     caja.appendChild(pie);
+
+    caja.appendChild(cardMezcla(tots));
+  }
+
+  // ---------------------------------------------------------------------------
+  // DE DÓNDE SALE LA PLATA DE CADA LADO. Barras al 100%, para comparar la MEZCLA y
+  // no el tamaño; el total va al costado. Viene de la vista vieja, con una
+  // diferencia: allá un benchmark de liga no tenía composición propia, porque el
+  // promedio era de porcentajes. Acá los rubros se suman en USD antes de sacar el
+  // porcentaje, así que un conjunto sí describe algo — de dónde sale la plata de
+  // esos clubes juntos.
+  // ---------------------------------------------------------------------------
+  function cardMezcla(tots){
+    var caja = el('div', 'cd-mix');
+    caja.appendChild(el('h3', null, t('cmp.mix.title', 'Composición de ingresos')));
+    caja.appendChild(el('p', 'cd-res-sub', t('cmp.mix.sub',
+      'De dónde sale la plata de cada uno. Barras al 100%, para comparar la mezcla y no el tamaño; el total va al costado.')));
+
+    var usados = {};
+    tots.forEach(function(tt, i){
+      var labels = Object.keys(tt.mezcla).filter(function(l){ return tt.mezcla[l] > 0; });
+      var total = labels.reduce(function(acc, l){ return acc + tt.mezcla[l]; }, 0);
+      var fila = el('div', 'mix-row');
+
+      var nombre = el('div', 'mix-name');
+      nombre.appendChild(el('span', 'cd-letra chica', LETRAS[i]));
+      var txt = el('span', 'mbar-txt');
+      txt.appendChild(el('span', 'mbar-nm', tt.nombre));
+      txt.appendChild(el('span', 'mbar-yr', rangoAnios(tt)));
+      nombre.appendChild(txt);
+      fila.appendChild(nombre);
+
+      var barra = el('div', 'mix-bar');
+      labels.sort(function(a, b){ return tt.mezcla[b] - tt.mezcla[a]; }).forEach(function(lbl){
+        usados[lbl] = true;
+        var seg = el('div', 'mix-seg');
+        seg.style.width = (tt.mezcla[lbl] / total * 100) + '%';
+        seg.style.background = colorDeRubro(lbl);
+        seg.title = lbl + ': ' + Math.round(tt.mezcla[lbl] / total * 100) + '%';
+        barra.appendChild(seg);
+      });
+      fila.appendChild(barra);
+      fila.appendChild(el('div', 'mix-val', total ? total.toFixed(1) + ' M USD' : '—'));
+      caja.appendChild(fila);
+    });
+
+    // La leyenda lista solo las categorías que efectivamente aparecen.
+    var leyenda = el('div', 'mix-legend');
+    Object.keys(usados).forEach(function(lbl){
+      var sp = el('span');
+      var i = el('i');
+      i.style.background = colorDeRubro(lbl);
+      sp.appendChild(i);
+      sp.appendChild(document.createTextNode(lbl));
+      leyenda.appendChild(sp);
+    });
+    caja.appendChild(leyenda);
+    return caja;
+  }
+
+  function colorDeRubro(label){
+    var b = (typeof INICIO_INGRESOS_BUCKETS !== 'undefined' ? INICIO_INGRESOS_BUCKETS : [])
+      .filter(function(x){ return x.label === label; })[0];
+    return b ? b.color : '#b8b8b3';
   }
 
   // ---------------------------------------------------------------------------
@@ -1666,47 +1735,100 @@ window.CLUB_SELECTOR = (function(){
     $('modalWrap').hidden = !!q;
     if(!q) return;
 
-    var hits = ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){
-      if(!clubs[id]) return false;
-      var co = window.COUNTRIES[countryOf(id)];
-      var ligas = ligasDe(id).map(function(l){ return (window.LEAGUES[l] || {}).name || ''; }).join(' ');
-      return norm(nameOf(id)).indexOf(q) >= 0
-          || (co && norm(t(co.key, co.name)).indexOf(q) >= 0)
-          || norm(ligas).indexOf(q) >= 0;
-    }));
-    if(!hits.length){
-      caja.appendChild(el('p', 'paso-vacio',
-        t('sel.nohits', 'Ningún club, liga ni país con ese nombre. Probá con menos letras.')));
-      return;
-    }
-    var grid = el('div', 'op-grid clubes');
-    hits.forEach(function(id){
-      var co = window.COUNTRIES[countryOf(id)];
-      var op = { id:id, crest:initials(nameOf(id)), label:nameOf(id),
-                 sub:co ? co.flag + ' ' + t(co.key, co.name) : '',
-                 meta:nEjercicios(yearsOf(id).length) };
-      if(comparando && window.CLUB_COMPARE){
-        var motivo = CLUB_COMPARE.blockReason(id);
-        if(motivo){ op.disabled = true; op.sub = motivo; }
-      }
-      grid.appendChild(opcionBtn(op, marcadoEn(PASO_CLUBES, id), function(cid){
-        if(comparando){
-          Promise.resolve(CLUB_COMPARE.toggleClub(cid)).then(function(){
+    // LAS LIGAS TAMBIÉN SE BUSCAN (Versión 152). El placeholder promete "un club,
+    // una liga o un país" desde siempre, pero hasta acá escribir "primera div"
+    // devolvía los 11 clubes argentinos y no la liga: el nombre de la liga entraba
+    // en la búsqueda solo como un atributo de sus clubes. Lo levantó Guido probando
+    // la etapa 4 ("puse 'primera div' y no me trajo Primera División, así que busqué
+    // con el flow"). Una liga es un lado posible, así que tiene que poder elegirse
+    // igual que un club.
+    // Solo en el camino de Comparar: Finanzas muestra un club por vez.
+    var hits = 0;
+    if(origen === 'vs'){
+      var ligas = ligasConClubes().filter(function(lid){
+        var lg = window.LEAGUES[lid];
+        var co = window.COUNTRIES[lg.country];
+        // `full` además de `name`: la tabla guarda "Primera División" y "Primera
+        // División de Argentina", y buscar por el nombre largo tiene que funcionar.
+        return norm(lg.name).indexOf(q) >= 0
+            || norm(lg.full || '').indexOf(q) >= 0
+            || (co && norm(t(co.key, co.name)).indexOf(q) >= 0);
+      });
+      if(ligas.length){
+        caja.appendChild(el('p', 'busca-grupo', t('sel.busca.ligas', 'Ligas')));
+        var gl = el('div', 'op-grid clubes');
+        ligas.forEach(function(lid){
+          var lg = window.LEAGUES[lid], co = window.COUNTRIES[lg.country] || {};
+          gl.appendChild(opcionBtn({
+            id:lid, icon:co.flag || '🏆', label:lg.name,
+            sub:window.tierLabel(lg.tier),
+            meta:temporadasDe(lid).length + ' ' + t('sel.seasons', 'temporadas')
+          }, false, function(id){
+            // Una liga NO se confirma de una, a diferencia de un club: sin temporada
+            // no es un sujeto (CONVENCIONES.md, "no existe ninguna arista club ->
+            // liga sin año"). Se deja parado en el paso de la temporada, con la más
+            // reciente ya marcada, para que se vea y se pueda cambiar.
+            pararseEnLiga(id);
             $('modalQ').value = '';
             renderBusqueda();
             renderModal();
-          });
-          return;
-        }
-        // Elegir desde la búsqueda deja los pasos coherentes con lo que ves: se
-        // marcan solos con el camino de ese club, en vez de quedar vacíos.
-        pararseEn(cid);
-        $('modalQ').value = '';
-        renderBusqueda();
-        confirmar();   // sin destino: el que corresponda al origen
-      }));
-    });
-    caja.appendChild(grid);
+          }));
+        });
+        caja.appendChild(gl);
+        hits += ligas.length;
+      }
+    }
+
+    var clubesHit = ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){
+      if(!clubs[id]) return false;
+      var co = window.COUNTRIES[countryOf(id)];
+      var ligasTxt = ligasDe(id).map(function(l){ return (window.LEAGUES[l] || {}).name || ''; }).join(' ');
+      return norm(nameOf(id)).indexOf(q) >= 0
+          || (co && norm(t(co.key, co.name)).indexOf(q) >= 0)
+          || norm(ligasTxt).indexOf(q) >= 0;
+    }));
+    if(clubesHit.length){
+      if(origen === 'vs') caja.appendChild(el('p', 'busca-grupo', t('sel.busca.clubes', 'Clubes')));
+      var gc = el('div', 'op-grid clubes');
+      clubesHit.forEach(function(id){
+        var co = window.COUNTRIES[countryOf(id)];
+        gc.appendChild(opcionBtn({
+          id:id, crest:initials(nameOf(id)), label:nameOf(id),
+          sub:co ? co.flag + ' ' + t(co.key, co.name) : '',
+          meta:nEjercicios(yearsOf(id).length)
+        }, false, function(cid){
+          // Elegir un club deja los pasos coherentes con lo que ves: se marcan solos
+          // con el camino de ese club, en vez de quedar vacíos.
+          pararseEn(cid);
+          $('modalQ').value = '';
+          renderBusqueda();
+          confirmar();   // sin destino: el que corresponda al origen
+        }));
+      });
+      caja.appendChild(gc);
+      hits += clubesHit.length;
+    }
+
+    if(!hits){
+      caja.appendChild(el('p', 'paso-vacio',
+        t('sel.nohits', 'Ningún club, liga ni país con ese nombre. Probá con menos letras.')));
+    }
+  }
+
+  // Elegir una liga desde el buscador: los pasos quedan marcados con su camino y el
+  // visitante aterriza en el paso de la temporada, que es la única pregunta que le
+  // queda por contestar.
+  function pararseEnLiga(lid){
+    var lg = window.LEAGUES[lid] || {};
+    reset();
+    st.sport.sel   = [lg.sport || 'futbol'];
+    st.region.sel  = [window.regionOfCountry(lg.country)].filter(Boolean);
+    st.country.sel = [lg.country].filter(Boolean);
+    st.tipo.sel    = ['liga'];
+    st.league.sel  = [lid];
+    ['sport', 'region', 'country', 'tipo', 'league'].forEach(function(k){ st[k].resuelto = true; });
+    bloques = [{ kind:'liga', league:lid,
+                 years:[ultimaTemporada(lid)].filter(function(y){ return y != null; }), agg:'promedio' }];
   }
 
   // Elegir un club deja los pasos coherentes con lo que ves: se marcan solos con

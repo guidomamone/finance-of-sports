@@ -249,6 +249,23 @@
     const ing = buildNativeSectionHtml(t('section.revenue','Ingresos'), curReport.ingresos, overlayReport ? overlayReport.ingresos : null, curMeta, overlayMeta, currentCurrency, containerId+'-ing');
     const gas = buildNativeSectionHtml(t('section.expenses','Gastos'), curReport.gastos, overlayReport ? overlayReport.gastos : null, curMeta, overlayMeta, currentCurrency, containerId+'-gas');
 
+    // "SIN DATO" NO ES CERO, TAMBIÉN ACÁ (Versión 152, to-do 31). Los 10 clubes
+    // japoneses tienen `expenseLines: []` y `officialTotalExpenses: null`: la J.League
+    // publica el ingreso de cada club y no su estructura de costos. Sin este test la
+    // tabla dibuja la lista entera de rubros en 0,0 y cierra con "Total Gastos 0,0" y
+    // un "Resultado neto" igual a los ingresos — no un dato incompleto, uno FALSO.
+    // Arriba, los KPIs ya dicen "Sin dato" desde esta misma versión; sin esto, las dos
+    // mitades de la misma pantalla se contradecían.
+    const cGastos = (typeof computeYearGeneric === 'function') ? computeYearGeneric(clubId, year) : null;
+    const sinGastos = !!cGastos
+                   && !(cGastos.expenseLines || []).length
+                   && (cGastos.meta || {}).officialTotalExpenses == null
+                   && !cGastos.expenses && !cGastos.nonCash;
+    const gastosHtml = sinGastos
+      ? `<tr class="pl-section-head"><td colspan="5">${t("section.expenses","Gastos")}</td></tr>`
+        + `<tr class="pl-nodata"><td colspan="5">${t('pl.sin.gastos','La fuente de este ejercicio publica los ingresos del club pero no su estructura de costos, así que no hay gastos que mostrar. No es que sean cero: no están informados.')}</td></tr>`
+      : gas.html;
+
     // REGLA (Versión 54, pedido explícito de Guido: "en el card de Estado de resultado de Boca,
     // ponés 'intereses netos, impuestos' y un copy abajo. quitalo, y quede igual para todos los
     // clubes, todos los años") — REVERTIDA PARCIALMENTE en la Versión 60: Guido detectó que Racing
@@ -273,7 +290,7 @@
       return `<tr><td>${tLabel(e.label)}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td></tr>`;
     }).join('');
 
-    const resultado = ing.total + gas.total + extraTotal;
+    const resultado = sinGastos ? null : (ing.total + gas.total + extraTotal);
     // REGLA (Versión 60, pedido explícito de Guido: "para presupuesto... que resultado neto tenga
     // un numero, no me lo dejes incompleto"): el Resultado Neto de la columna Presupuesto es la
     // suma directa de sus propias revenueLines/expenseLines (`ing.totalPrev + gas.totalPrev`), SIN
@@ -282,12 +299,12 @@
     // (ver nota en `data/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`, corregida en esta
     // misma versión para que sea así en las 2 columnas).
     const resultadoOverlay = overlayReport ? (ing.totalPrev + gas.totalPrev) : null;
-    const resultRow = `<tr class="pl-bold pl-highlight"><td>${curReport.resultLabel || 'Resultado neto'}</td><td>${fmtDisplay(resultado)}</td><td>—</td>` +
+    const resultRow = `<tr class="pl-bold pl-highlight"><td>${curReport.resultLabel || 'Resultado neto'}</td><td>${resultado === null ? t('stat.nodata','Sin dato') : fmtDisplay(resultado)}</td><td>—</td>` +
       `<td>${resultadoOverlay !== null ? fmtDisplay(resultadoOverlay) : '—'}</td><td>—</td></tr>`;
 
     document.querySelector('#'+containerId+' tbody').innerHTML =
-      ing.html + '<tr class="pl-spacer"><td colspan="5"></td></tr>' + gas.html +
-      (extraRowsHtml ? '<tr class="pl-spacer"><td colspan="5"></td></tr>' + extraRowsHtml : '') +
+      ing.html + '<tr class="pl-spacer"><td colspan="5"></td></tr>' + gastosHtml +
+      (!sinGastos && extraRowsHtml ? '<tr class="pl-spacer"><td colspan="5"></td></tr>' + extraRowsHtml : '') +
       '<tr class="pl-spacer"><td colspan="5"></td></tr>' + resultRow;
     // Se devuelven los totales YA en la moneda mostrada para que el stat "Gastos" de arriba de
     // Finanzas use EXACTAMENTE el mismo número que "Total Gastos" acá abajo, antes ese stat salía
@@ -298,7 +315,7 @@
     // pintar el stat "Int." de arriba con EXACTAMENTE el mismo número que ya se sumó acá abajo para
     // llegar a "Resultado neto" (Ingresos + Gastos + Int. = Resultado neto, visible en los 2
     // lugares a la vez).
-    return { ingresosTotal: ing.total, gastosTotal: gas.total, resultado, extraTotal };
+    return { ingresosTotal: ing.total, gastosTotal: sinGastos ? undefined : gas.total, resultado, extraTotal: sinGastos ? undefined : extraTotal };
   }
 
 
@@ -385,14 +402,26 @@
     const expensesDisp = gastosTotal !== undefined ? Math.abs(gastosTotal) : Math.abs(toDisplayValue(cur.expenses, meta, currentCurrency));
     const patDisp = toDisplayValue(cur.pat, meta, currentCurrency);
     const netDebtDisp = toDisplayValue(cur.netDebt, meta, currentCurrency);
+    // "SIN DATO" NO ES CERO (Versión 152, to-do 31). Los 10 clubes japoneses tienen
+    // ingresos cargados y `expenseLines: []` con `officialTotalExpenses: null`, porque
+    // la J.League publica el ingreso de cada club y no su estructura de costos. Sin
+    // este test, la ficha de Cerezo Osaka decía "Gastos 0,0 M USD" y "Resultado neto
+    // +38,1 M USD" en el cuerpo de letra más grande de la página: ese club no ganó 38
+    // millones, simplemente no sabemos qué gastó. La TABLA de abajo ya lo hacía bien
+    // (muestra guiones), así que el criterio existía en el proyecto y eran estos KPIs
+    // los que no lo aplicaban. El resultado cae con los gastos: es el final de una
+    // cascada que arranca ahí.
+    const sinGastos = !(cur.expenseLines || []).length
+                   && (cur.meta || {}).officialTotalExpenses == null
+                   && !cur.expenses && !cur.nonCash;
     const extraStat = extraTotal !== undefined
       ? `<div class="stat"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
       : '';
     document.getElementById('finanzasStats').innerHTML = `
       <div class="stat"><div class="label">${t('section.revenue','Ingresos')}</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">${t('section.expenses','Gastos')}</div><div class="value">${fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
-      ${extraStat}
-      <div class="stat"><div class="label">${t('stat.pat','Resultado neto')}</div><div class="value ${cur.pat>=0?'pos':'neg'}">${fmtAmount(patDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('section.expenses','Gastos')}</div><div class="value${sinGastos ? ' nodato' : ''}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
+      ${sinGastos ? '' : extraStat}
+      <div class="stat"><div class="label">${t('stat.pat','Resultado neto')}</div><div class="value ${sinGastos ? 'nodato' : (cur.pat>=0?'pos':'neg')}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmount(patDisp, currentCurrency)}</div></div>
       <div class="stat"><div class="label">${t('stat.netdebt.short','Deuda neta')}</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
     `;
   }
