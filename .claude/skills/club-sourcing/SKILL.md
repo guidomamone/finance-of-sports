@@ -44,6 +44,10 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
 - **Antes de cargar cualquier PDF encontrado en un país nuevo al sitio**, releer `club-data-mapping`
   sección 5 (conversión a USD) y sección 14 (`grossDebt`) — ambas asumen implícitamente el criterio
   argentino de "moneda homogénea"/RT6, que puede no aplicar en otro país con otra normativa contable.
+- **Antes de lanzar una búsqueda en worktrees separados (varias sesiones en paralelo sobre distintos
+  países/clubes), consultar a Guido primero** — qué países/clubes y cuántas sesiones, no asumirlo. La
+  excepción es un pedido puntual (un club concreto, o un ejercicio suelto de un club ya conocido): eso
+  se corre directo en la sesión actual, sin preguntar y sin worktree.
 
 ## 1. Chile — CMF, la fuente más confiable encontrada hasta ahora
 
@@ -746,6 +750,32 @@ para esto (regla general del proyecto).
 - **Wayback Machine estuvo caído durante toda la sesión** para varios huecos puntuales (Dinamo 2023,
   Slaven Belupo 2019-2023) — no es un dead-end confirmado, retomar en una sesión futura cuando el
   servicio esté disponible, antes de asumir que esos ejercicios no existen.
+
+## 18. Dinamarca — el mejor canal del proyecto junto con Bélgica, y una idea reutilizable
+
+Séptimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). La API pública de la
+Erhvervsstyrelsen (danés: el registro mercantil estatal) resultó tan buena como la Centrale des
+bilans belga (sección 14), y por el mismo motivo: es una API, no una interfaz web para humanos.
+
+- **`distribution.virk.dk/offentliggoerelser` es un Elasticsearch público, gratis, sin login y sin
+  bloqueo de Cloudflare** — se busca por `cvrNummer` y cada resultado trae la URL directa del
+  documento en `regnskaber.virk.dk`, descargable con `curl --compressed` sin token especial.
+  `cvrapi.dk` (gratis, con rate-limit) sirve para resolver el CVR a partir del nombre del club.
+  **La interfaz web para humanos (`datacvr.virk.dk`) SÍ está bloqueada por Cloudflare** — la
+  lección repetida (ya vista en Bélgica, sección 14): cuando un registro tiene una interfaz web
+  bloqueada, buscar si expone una API/endpoint de datos por debajo antes de darlo por perdido.
+- **Resultado: los 12 clubes de la Superliga 2025/26 cubiertos con series de 17 a 30 ejercicios
+  cada uno** (307 documentos reales) — la profundidad histórica más pareja de cualquier país del
+  proyecto (todos los clubes tienen series largas, no solo 1-2 destacados como pasó en otros
+  países).
+- **Gotchas menores**: algunos ejercicios recientes traen un PDF que es solo una carátula de 1
+  página — usar el `.xhtml` que acompaña al mismo depósito en esos casos. Varias sociedades
+  cambiaron de razón social sin cambiar de CVR (ej. AGF, ex-"Aarhus Elite A/S") — buscar siempre
+  por CVR, no por nombre histórico. 4 clubes tuvieron transiciones de ejercicio fiscal (marcadas
+  `-transicion` en el nombre de archivo, mismo criterio que Wolves/Forest en Inglaterra, sección
+  9). FC København y OB tienen perímetro mezclado con otras actividades del grupo controlante
+  (eventos, hoteles) — confirmar si el informe desglosa el segmento fútbol antes de cargar (dudas
+  abiertas en `dudas-por-club.md`).
 
 ## Cómo mantener este skill
 

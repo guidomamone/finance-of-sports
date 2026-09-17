@@ -13,6 +13,15 @@
 Clubes/**/*.htm
 Clubes/**/*.html
 
+# Mismo criterio para los escaneos TIFF y los filings XHTML que trae el registro
+# danés (Erhvervsstyrelsen/virk.dk, sourcing de Dinamarca, sesión 2026-09-17):
+# son igual de "documento fuente crudo" que un PDF o un 10-K en HTML, solo que
+# con otra extensión — sin esta regla, una sola sesión de sourcing de un país
+# con este formato agrega cientos de MB al repo.
+Clubes/**/*.tif
+Clubes/**/*.tiff
+Clubes/**/*.xhtml
+
 # LAS TRANSCRIPCIONES DE FUENTE NO OFICIAL NO SE TRACKEAN (2026-09-17). El repo
 # entero se deploya —no hay netlify.toml ni _redirects, Netlify publica la raíz—
 # así que todo archivo trackeado queda servido en financeofsports.com. Para un

@@ -506,6 +506,28 @@ de la HNS (que exige publicar los mismos formularios F.01/F.02 en los 10 sitios)
 - [Vukovar 1991](<fuentes/Croacia/Vukovar 1991.md>) — 1 ejercicio real (2025, recién ascendido), sin cargar aún — Último chequeo: 2026-09-17
 - [Notas generales de Croacia](<fuentes/Croacia/_notas-generales.md>)
 
+### Dinamarca
+
+**Séptimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). El mejor canal
+del proyecto junto con Bélgica**: la API pública de la Erhvervsstyrelsen (`distribution.virk.dk`) es
+gratis, sin login, sin bloqueo de Cloudflare, y scripteable con curl — los 12 clubes de la Superliga
+2025/26 quedaron cubiertos con series de 17 a 30 ejercicios cada uno (307 documentos reales). Ver
+`fuentes/Dinamarca/_notas-generales.md` y la sección 18 del skill de sourcing.
+
+- [AGF](<fuentes/Dinamarca/AGF.md>) — 30 ejercicios reales, serie completa 1995-2025/26, sin cargar aún — Último chequeo: 2026-09-17
+- [Brøndby](<fuentes/Dinamarca/Brøndby.md>) — 30 ejercicios reales, serie completa 1995-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [FC København](<fuentes/Dinamarca/FC København.md>) — 30 ejercicios del consolidado PARKEN S&E + 3 de la entidad de fútbol standalone (desde 2023), ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
+- [FC Midtjylland](<fuentes/Dinamarca/FC Midtjylland.md>) — 17 ejercicios reales, serie completa 2008/09-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [FC Fredericia](<fuentes/Dinamarca/FC Fredericia.md>) — 22 ejercicios reales, serie completa 2004-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [FC Nordsjælland](<fuentes/Dinamarca/FC Nordsjælland.md>) — 26 ejercicios reales, serie completa 2000-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [OB](<fuentes/Dinamarca/OB.md>) — 30 ejercicios reales, perímetro mezclado con otras actividades del grupo, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
+- [Randers FC](<fuentes/Dinamarca/Randers FC.md>) — 30 ejercicios reales, serie completa 1995-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [Silkeborg IF](<fuentes/Dinamarca/Silkeborg IF.md>) — 24 ejercicios reales, serie completa 2002-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [SønderjyskE](<fuentes/Dinamarca/SønderjyskE.md>) — 17 ejercicios reales, serie completa 2008/09-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Vejle](<fuentes/Dinamarca/Vejle.md>) — 18 ejercicios reales, serie completa 2008-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [Viborg FF](<fuentes/Dinamarca/Viborg FF.md>) — 30 ejercicios reales, serie completa 1995/96-2024/25, sin ninguna transición de ejercicio, sin cargar aún — Último chequeo: 2026-09-17
+- [Notas generales de Dinamarca](<fuentes/Dinamarca/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada

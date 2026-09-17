@@ -406,6 +406,21 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   `fuentes/Croacia/Lokomotiva.md`). Si Guido quiere pagar/crear la cuenta él mismo, ahí están los
   links; si no, el club queda sin datos por ahora.
 
+## FC København (sourcing de Dinamarca, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Existía una entidad "solo fútbol masculino" antes de 2023?**: F.C. København P/S (CVR
+  43952161) se constituyó recién el 29/03/2023, así que solo tiene 3 ejercicios. Antes de esa
+  fecha, el fútbol parece haber estado dentro del consolidado de PARKEN Sport & Entertainment A/S
+  sin desglose propio — no se confirmó si hay otra entidad previa dada de baja, o si el desglose
+  por segmento existe dentro del propio informe consolidado.
+
+## OB (sourcing de Dinamarca, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿El informe de Odense Sport & Event A/S desglosa el fútbol como segmento propio?**: la sociedad
+  mezcla fútbol profesional con ferias/hoteles/eventos en su objeto social. No se revisó si el
+  informe trae un desglose IFRS 8 por segmento que permita aislar el perímetro de OB, o si va todo
+  junto sin desglose — determina si esta fuente alcanza para cargar al sitio tal cual.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
