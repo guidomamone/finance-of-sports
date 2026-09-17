@@ -643,6 +643,35 @@ fútbol profesional real — varios quedaron con perímetro sin confirmar. Ver
 - [Lillestrøm](<fuentes/Noruega/Lillestrøm.md>) — solo 4 ejercicios (2008-2011), contradice su propia memoria publicada, ver duda — Último chequeo: 2026-09-17
 - [Notas generales de Noruega](<fuentes/Noruega/_notas-generales.md>)
 
+### Países Bajos
+
+**Duodécimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** La KvK
+(Kamer van Koophandel) es de pago (€3,90/documento) — el canal real fue el mandato de licencia F.04
+de la KNVB, que obliga a cada club a publicar su jaarverslag en su propio sitio, con un índice de la
+KNVB por temporada como mapa — mismo patrón que Croacia (HNS) e Italia (licencia UEFA). Ningún club
+quedó en dead-end total. Ver `fuentes/Países Bajos/_notas-generales.md` y la sección 23 (propuesta)
+del skill de sourcing.
+
+- [Ajax](<fuentes/Países Bajos/Ajax.md>) — 11 ejercicios 2013/14-2024/25 (falta 2017/18), sin cargar aún — Último chequeo: 2026-09-17
+- [PSV](<fuentes/Países Bajos/PSV.md>) — 9 ejercicios, serie completa 2016/17-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Feyenoord](<fuentes/Países Bajos/Feyenoord.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [AZ](<fuentes/Países Bajos/AZ.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [FC Twente](<fuentes/Países Bajos/FC Twente.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [FC Groningen](<fuentes/Países Bajos/FC Groningen.md>) — 16 ejercicios, serie completa 2009/10-2024/25, ver duda de dos entidades en dudas-por-club.md — Último chequeo: 2026-09-17
+- [FC Utrecht](<fuentes/Países Bajos/FC Utrecht.md>) — 7 ejercicios 2017/18-2024/25 (falta 2019/20), sin cargar aún — Último chequeo: 2026-09-17
+- [sc Heerenveen](<fuentes/Países Bajos/SC Heerenveen.md>) — 4 ejercicios 2021/22-2024/25 (faltan 2018/19-2020/21), sin cargar aún — Último chequeo: 2026-09-17
+- [N.E.C.](<fuentes/Países Bajos/NEC.md>) — 12 ejercicios, serie completa 2013/14-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Sparta Rotterdam](<fuentes/Países Bajos/Sparta Rotterdam.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Heracles Almelo](<fuentes/Países Bajos/Heracles Almelo.md>) — 8 ejercicios, serie completa 2017/18-2024/25 (Stichting, no BV/NV, ver duda) — Último chequeo: 2026-09-17
+- [PEC Zwolle](<fuentes/Países Bajos/PEC Zwolle.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Excelsior](<fuentes/Países Bajos/Excelsior.md>) — 8 ejercicios, serie completa 2017/18-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [NAC Breda](<fuentes/Países Bajos/NAC Breda.md>) — 6 ejercicios (falta 2019/20), sin cargar aún — Último chequeo: 2026-09-17
+- [Go Ahead Eagles](<fuentes/Países Bajos/Go Ahead Eagles.md>) — 5 ejercicios 2020/21-2024/25 (faltan 2018/19-2019/20), sin cargar aún — Último chequeo: 2026-09-17
+- [Fortuna Sittard](<fuentes/Países Bajos/Fortuna Sittard.md>) — 4 ejercicios 2021/22-2024/25 (faltan 2018/19-2020/21), sin cargar aún — Último chequeo: 2026-09-17
+- [Telstar](<fuentes/Países Bajos/Telstar.md>) — 3 ejercicios 2022/23-2024/25 (faltan 2018/19-2021/22), sin cargar aún — Último chequeo: 2026-09-17
+- [FC Volendam](<fuentes/Países Bajos/FC Volendam.md>) — 5 ejercicios (faltan 2018/19, 2021/22), Stichting no BV/NV, ver duda de fundación en dudas-por-club.md — Último chequeo: 2026-09-17
+- [Notas generales de Países Bajos](<fuentes/Países Bajos/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada

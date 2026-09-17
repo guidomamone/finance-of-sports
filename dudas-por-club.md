@@ -511,6 +511,27 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   2011 — no se confirmó si cambiaron de entidad legal sin actualizar el registro, o si el registro
   está desactualizado.
 
+## FC Groningen (sourcing de Países Bajos, sesión 2026-09-17, no bloqueó la descarga pero queda sin confirmar)
+
+- **¿"FC Groningen" y "FC Groningen Beheer" son la misma entidad?**: el ejercicio 2017/18 tiene dos
+  jaarverslagen separados con esos dos nombres — no se confirmó si es una renombrada de la otra o si
+  una es la holding (Beheer = "gestión/administración" en neerlandés) y la otra la operativa, con
+  perímetros distintos.
+
+## FC Volendam (sourcing de Países Bajos, sesión 2026-09-17, no bloqueó la descarga pero queda sin confirmar)
+
+- **¿"Stichting Óók FC Volendam" es una fundación de apoyo distinta del club?**: los documentos
+  2013-2019 están bajo esa entidad (carpeta `/1071/`), y los de 2019/20 en adelante bajo "Stichting
+  R.K.F.C. Volendam" (carpeta `/1137/`) — el nombre de la primera ("Óók", "también" en neerlandés)
+  sugiere que podría ser una fundación de apoyo/hinchas, no el club mismo. No se descargaron esos
+  documentos por esta duda sin resolver.
+
+## Países Bajos — forma jurídica Stichting, no BV/NV (sourcing, sesión 2026-09-17, pregunta de criterio)
+
+- **Heracles Almelo y FC Volendam operan como "Stichting" (fundación) en vez de BV/NV** — no se
+  confirmó si el criterio de mapeo de `club-data-mapping/SKILL.md` (pensado para sociedades
+  mercantiles) aplica igual a una fundación sin fines de lucro, o si hace falta un criterio aparte.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
