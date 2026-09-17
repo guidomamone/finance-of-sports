@@ -387,6 +387,29 @@ completo.
 - DFL Finanzkennzahlen — 7 ejercicios agregados (2018-2024) con Bilanz+GuV de los 18 clubes a la vez, en `Clubes/Alemania/_DFL-Finanzkennzahlen/` — Último chequeo: 2026-09-17
 - [Notas generales de Alemania](<fuentes/Alemania/_notas-generales.md>)
 
+### Austria
+
+**Segundo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17), tras Alemania
+(Arabia Saudita quedó saltada a pedido de Guido).** El Firmenbuch austríaco existe pero está bloqueado
+por login+pago (misma clase de barrera que el OMPIC marroquí) — el hallazgo real es el agregado de
+Finanzkennzahlen de la Österreichische Fußball-Bundesliga, equivalente al DFL alemán. Ver
+`fuentes/Austria/_notas-generales.md` y la sección 13 del skill de sourcing.
+
+- [Rapid Wien](<fuentes/Austria/Rapid Wien.md>) — 15 ejercicios reales, serie completa 2010/11-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Austria Wien](<fuentes/Austria/Austria Wien.md>) — sin PDF propio, cifras reales en notas de prensa (2021/22-2023/24) + agregado ÖFBL — Último chequeo: 2026-09-17
+- [Red Bull Salzburg](<fuentes/Austria/Red Bull Salzburg.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [Sturm Graz](<fuentes/Austria/Sturm Graz.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [LASK](<fuentes/Austria/LASK.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [TSV Hartberg](<fuentes/Austria/TSV Hartberg.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [WSG Tirol](<fuentes/Austria/WSG Tirol.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [SCR Altach](<fuentes/Austria/SCR Altach.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [SV Ried](<fuentes/Austria/SV Ried.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [Wolfsberger AC](<fuentes/Austria/Wolfsberger AC.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [Grazer AK](<fuentes/Austria/Grazer AK.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- [Blau-Weiß Linz](<fuentes/Austria/Blau-Weiß Linz.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
+- Bundesliga-Finanzkennzahlen — 8 ejercicios agregados (2017/18-2024/25) con Bilanz+GuV de los 24 clubes de ambas divisiones, en `Clubes/Austria/_Bundesliga-Finanzkennzahlen/` — Último chequeo: 2026-09-17
+- [Notas generales de Austria](<fuentes/Austria/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada

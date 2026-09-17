@@ -332,6 +332,14 @@ Lizenzspielermannschaft — el fútbol profesional, no otra unidad de negocio. L
 describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 `fuentes/Alemania/Borussia Mönchengladbach.md`.)*
 
+## FK Austria Wien (sourcing de Austria, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿El club publicó alguna vez un Geschäftsbericht completo descargable?**: solo se encontró un
+  intento roto de 2019/20 (link muerto, sin snapshot en Wayback Machine). No se pudo confirmar si
+  existe un archivo histórico en algún otro lado — a quién preguntarle: directo al club (prensa o
+  área de socios/accionistas), ya que la Firmenbuch confirma que la FK Austria Wien AG sí deposita
+  cuentas pero el documento está bloqueado por login+pago (ver `fuentes/Austria/Austria Wien.md`).
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
