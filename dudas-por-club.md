@@ -357,6 +357,26 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   este patrón (operaba como "De Klokke" hasta 2011) — no está confirmado si a Cercle Brugge le pasa
   lo mismo o si simplemente no hay registro más antiguo en la Centrale des bilans.
 
+## Guangzhou Evergrande (sourcing de China, sesión 2026-09-17, pregunta de criterio para Guido, no para el club)
+
+- **¿Cargar al sitio un club que ya no juega en la CSL actual?**: es el único club chino que alguna
+  vez cotizó con disclosure completo (NEEQ:834338, 2015-2021) — 5 ejercicios anuales reales
+  (2015-2019) + semestral 2020 ya descargados en `Clubes/China/Guangzhou Evergrande/`, con cifras
+  reales de la crisis (FY2019: ingresos RMB 783M, pérdida neta -RMB 1.943M, patrimonio neto negativo
+  ~RMB 4.150M). El club descendió y prácticamente desapareció tras el colapso del grupo Evergrande.
+  Tiene valor documental único (es la única serie financiera auditada real de un club chino, y
+  documenta con números una de las quiebras más grandes del fútbol mundial), pero no es un club
+  vigente de la temporada corriente — no está claro si el criterio del proyecto es limitarse a
+  clubes activos o si vale la pena cargarlo igual como caso histórico. Decisión de Guido, no del
+  club.
+
+## Henan (sourcing de China, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Vale la pena revisar los EEFF de Jianye Real Estate (HKEX:0832) de 2021-2023?**: durante ese
+  período Jianye tuvo ~30% del club vía un consorcio — no se confirmó si sus estados financieros
+  desglosaron esa inversión asociada. El accionista ya vendió su parte, así que no es urgente, pero
+  queda como pista sin agotar para una sesión futura.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
