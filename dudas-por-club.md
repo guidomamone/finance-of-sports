@@ -488,6 +488,29 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   OCR todavía) de esta entidad, que no es el club entero sino una unidad de negocio — decisión de
   Guido si vale la pena cargarla como dato complementario o descartarla por no representar al club.
 
+## Vålerenga (sourcing de Noruega, sesión 2026-09-17, no bloqueó la descarga pero queda sin cerrar — la más importante de las 5)
+
+- **¿Cuál de las 3 entidades es "el club" a cargar?**: hay 3 entidades activas con depósitos
+  (Elite FLI con 18 ejercicios, una AS comercial con 17, y una FLI paraguas con 11) — no está
+  confirmado cuál concentra el fútbol profesional real, o si hace falta consolidar más de una.
+
+## Bodø/Glimt (sourcing de Noruega, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Por qué falta el período 2018-2022?**: justo coincide con los años de título del club — no se
+  encontró ningún depósito para esos ejercicios pese a continuidad antes y después.
+
+## KFUM (Oslo) (sourcing de Noruega, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Por qué no hay nada depositado desde 2019?**: el club ascendió a la Eliteserien después de esa
+  fecha, y no se encontró ningún depósito posterior pese a la obligación de licencia.
+
+## Lillestrøm (sourcing de Noruega, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **Contradicción entre la memoria propia del club y el registro oficial**: el sitio propio
+  (lsk.no) publica su memoria hasta 2023, pero el Regnskapsregisteret no tiene ningún depósito desde
+  2011 — no se confirmó si cambiaron de entidad legal sin actualizar el registro, o si el registro
+  está desactualizado.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
