@@ -302,6 +302,20 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   no queda ninguna". El chequeo confiable: `grep -n 'CARACTER' archivo` (sin
   capturar contexto con un cuantificador de caracteres, solo el número de
   línea) y revisar cada línea completa a mano.
+- **`pdfinfo archivo.pdf | grep "^Pages:"` puede devolver VACÍO en silencio
+  si el PDF trae bytes NUL en sus metadatos** (encontrado en la transcripción
+  masiva de la Versión 156/157, con PDF de clubes chinos generados por
+  PDFsharp: el campo `Producer` arrastra restos de un string UTF-16 de
+  Windows sin convertir, con bytes `\0` de por medio). `grep` detecta esos
+  bytes NUL, decide que el stream es binario, y deja de hacer matching línea
+  por línea — así que la línea `Pages:` (que viene DESPUÉS de `Producer` en
+  la salida de `pdfinfo`) nunca aparece, aunque `pdfinfo` sin pipear muestre
+  todo bien. Síntoma típico: una variable de cantidad de páginas que queda
+  vacía y rompe el comando siguiente (`seq 1 ""` → "invalid floating point
+  argument"), no un error de `pdfinfo` en sí. El fix es `grep -a` (fuerza a
+  tratar el input como texto pase lo que pase) en vez de `grep` a secas,
+  cualquier vez que se parsee la salida de `pdfinfo` (o de cualquier otra
+  herramienta que pueda traer metadata binaria) con grep.
 - **Varios agentes de sourcing en paralelo (subagentes del `Agent` tool) pueden compartir el mismo
   Browser pane** (sesión 2026-09-16, barrido de LaLiga en simultáneo con Brasil): una pestaña se
   navegó sola a un sitio de otro agente en medio de la búsqueda. No es un bug del portal que se
