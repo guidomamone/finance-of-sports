@@ -921,6 +921,34 @@ Grecia/Noruega.
   fines de lucro) — confirmar si el criterio de `club-data-mapping` aplica igual antes de mapear
   (duda abierta en `dudas-por-club.md`).
 
+## 24. Portugal — la mejor cobertura de liga completa hasta ahora, y una tercera red de rescate nueva
+
+Decimotercer país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). 17 de 18 clubes
+de la Primeira Liga 2025/26 quedaron con datos reales — la mejor cobertura de liga completa del
+proyecto hasta ahora.
+
+- **Sporting CP dio 26 ejercicios ININTERRUMPIDOS (1999-2024/25)** — Club Brugge (Bélgica, sección
+  14) tiene 35 ejercicios nominales pero con "correction" y algún hueco de por medio; Sporting es
+  la serie más larga SIN NINGÚN hueco de todo el proyecto, superando a Juventus (23, Italia sección
+  21). Junto con Benfica (21 ejercicios), ambos cotizantes en Euronext Lisbon dieron el mismo
+  patrón que Juventus/Ajax/Man Utd: holding cotizante = disclosure largo y prolijo. Porto tiene SAD
+  pero solo bonos cotizando (no acciones) — igual publica 10 ejercicios completos.
+- **El resto de la liga se cubrió casi 100% vía publicación voluntaria sostenida por el mandato de
+  licencia de Liga Portugal/FPF** — mismo patrón que Croacia (sección 17), Italia (sección 21) y
+  Países Bajos (sección 23). Nunca hizo falta pelear con el registro societario portugués
+  (`publicacoes.mj.pt`), que quedó sin confirmar del todo si es pago para consulta de terceros (la
+  REGISTRACIÓN sí es paga, eso es distinto).
+- **Gotcha nuevo, tercera red de rescate reutilizable**: cuando un sitio se rediseña y Wayback
+  Machine trunca el archivo a 5 MB (ya visto con Udinese en Italia, sección 21), **el archivo web
+  NACIONAL del propio país** (acá, `arquivo.pt`) puede tener una copia completa que Wayback no
+  tiene. Funcionó para rescatar el único ejercicio de Tondela. Antes de dar un club por perdido en
+  cualquier país con archivo web nacional propio (varios países europeos lo tienen), probar esa
+  tercera red antes de Wayback.
+- **Arouca es un caso raro**: se confirmó por metadata de Wayback que 4 ejercicios existieron, pero
+  ninguna copia completa sobrevive en ningún archivo consultado — a diferencia de un dead-end por
+  falta de disclosure, acá el club SÍ publicó pero la evidencia se perdió. Vale la pena pedirle al
+  club que resuba (ver `dudas-por-club.md`).
+
 ## Cómo mantener este skill
 
 Actualizar esta sección la primera vez que un país nuevo produzca un hallazgo real de metodología

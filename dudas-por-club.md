@@ -532,6 +532,20 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   confirmó si el criterio de mapeo de `club-data-mapping/SKILL.md` (pensado para sociedades
   mercantiles) aplica igual a una fundación sin fines de lucro, o si hace falta un criterio aparte.
 
+## Tondela (sourcing de Portugal, sesión 2026-09-17, pregunta real para el club)
+
+- **¿Por qué solo hay un ejercicio publicado en todo el historial del dominio?**: el club tiene SAD
+  y juega en Primeira Liga (obligación de licencia), pero solo se encontró el ejercicio 2020/21
+  (parcial, rescatado vía arquivo.pt) en todo el historial del sitio — vale la pena preguntarle
+  directo al club si publica en algún otro canal o por qué dejó de hacerlo.
+
+## Arouca (sourcing de Portugal, sesión 2026-09-17, accionable, no es duda para el club sino un aviso)
+
+- **Pedirle al club que resuba sus Relatório e Contas**: se confirmó (vía metadata de Wayback
+  Machine) que existieron 4 ejercicios (2021/22-2024/25), pero ya no hay ninguna copia completa en
+  ningún archivo web consultado (Wayback los trunca a 5 MB) — el club podría resolverlo resubiendo
+  los PDFs a su sitio.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
