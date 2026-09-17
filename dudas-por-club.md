@@ -340,6 +340,23 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   área de socios/accionistas), ya que la Firmenbuch confirma que la FK Austria Wien AG sí deposita
   cuentas pero el documento está bloqueado por login+pago (ver `fuentes/Austria/Austria Wien.md`).
 
+## OH Leuven (sourcing de Bélgica, sesión 2026-09-17, no bloqueó la elección de entidad pero queda sin confirmar)
+
+- **¿Qué son las otras 2 entidades "Oud-Heverlee Leuven"?**: además de la BV correcta (0668.426.703,
+  la que tiene turnover real), existen "OUD-HEVERLEE LEUVEN" NV (0864.391.150) y "OUD - HEVERLEE
+  LEUVEN" VZW (0430.065.732), ambas con el campo Omzet en blanco en su depósito más reciente. Es
+  razonable asumir que una es la asociación histórica madre y la otra una sociedad patrimonial
+  (estadio/estructura), mismo patrón que Hamburger SV en Alemania, pero no se abrió ninguno de los 2
+  PDFs para confirmarlo — a quién preguntarle: no hace falta, alcanza con abrir esos 2 PDFs en una
+  sesión futura si se necesita el dato.
+
+## Cercle Brugge (sourcing de Bélgica, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Existía el club bajo otra razón social antes de 2015?**: no se encontró ningún depósito
+  anterior a 2015 para "Cercle Brugge" ni para ninguna entidad con ese nombre. Club Brugge sí tenía
+  este patrón (operaba como "De Klokke" hasta 2011) — no está confirmado si a Cercle Brugge le pasa
+  lo mismo o si simplemente no hay registro más antiguo en la Centrale des bilans.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

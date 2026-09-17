@@ -631,6 +631,36 @@ austríaco NO es gratis para el documento completo:
   agregado ÖFBL); el único sin ningún dato ni siquiera agregado por confirmar es un caso a revisar
   si se retoma Austria.
 
+## 14. Bélgica — el canal más abierto del proyecto hasta ahora, sin login y scriptable por API
+
+Tercer país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17), inmediatamente después
+de Austria. La **Centrale des bilans** del Banco Nacional de Bélgica (`consult.cbso.nbb.be`) resultó
+ser, hasta ahora, el registro mercantil más fácil de todo el proyecto:
+
+- **Gratis, sin login, Y con una API JSON pública** — no hace falta ni un browser real:
+  `.../api/rs-consult/published-deposits?enterpriseNumber=<BCE>` lista todos los depósitos de una
+  entidad, y `.../api/external/broker/public/deposits/pdf/<id>` baja cada PDF directo con `curl`. Es
+  un nivel más abierto que Companies House (UK) o Unternehmensregister (Alemania), que sí necesitan
+  navegación real en algún punto del flujo.
+- **Esto permitió series MUY largas en poco tiempo**: Club Brugge (35 ejercicios, 1999-2025),
+  Standard Liège (31), Union Saint-Gilloise (28) y Westerlo (27) — las series más profundas
+  encontradas en cualquier país hasta ahora, salvo Reino Unido (cricket).
+- **El nombre del club casi nunca es la razón social legal, y puede haber homónimos con turnover en
+  blanco**: hay que buscar por el número de empresa (BCE) correcto, y cuando existan varias
+  entidades con nombres parecidos, comparar el campo de turnover (Omzet) del depósito más reciente
+  de cada una antes de elegir — la entidad real del fútbol profesional tiene turnover real, las
+  otras (asociación histórica, sociedad patrimonial del estadio) lo dejan en blanco. Confirmado con
+  3 casos: Club Brugge operaba como "De Klokke" hasta 2011; la entidad real de Zulte Waregem se
+  llama "Grensverleggend NV"; OH Leuven tiene 2 entidades homónimas sin turnover real además de la
+  BV correcta.
+- **Techo de disponibilidad real, no de búsqueda**: 1999 es el año más antiguo con PDF disponible en
+  la Centrale des bilans para cualquier entidad consultada — no vale la pena buscar más atrás ahí.
+- **Deloitte Pro League Report**: la propia Pro League/Deloitte publican un estudio socioeconómico
+  agregado de toda la liga (5 ediciones bajadas, 2019-2023) — mismo patrón de "agregado de liga
+  entera" que funcionó con la DFL alemana y la ÖFBL austríaca, aunque acá es un estudio, no un
+  Bilanz+GuV por club.
+- Con esto, los 16 clubes de la Pro League belga 2025/26 quedaron cubiertos con datos reales.
+
 ## Cómo mantener este skill
 
 Actualizar esta sección la primera vez que un país nuevo produzca un hallazgo real de metodología
