@@ -399,6 +399,13 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   como una entidad legal separada de POSCO o si es un departamento interno sin personería propia —
   si tiene entidad propia, no está claro por qué nunca depositó nada en DART.
 
+## Lokomotiva (sourcing de Croacia, sesión 2026-09-17, decisión de Guido, no pregunta al club)
+
+- **¿Vale la pena pagar Scribd para 2 ejercicios?**: se identificaron los ejercicios 2024 y 2025 del
+  club, pero están alojados en Scribd, que exige cuenta/login para descargar (URLs exactas en
+  `fuentes/Croacia/Lokomotiva.md`). Si Guido quiere pagar/crear la cuenta él mismo, ahí están los
+  links; si no, el club queda sin datos por ahora.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
