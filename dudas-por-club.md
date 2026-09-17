@@ -311,6 +311,19 @@ distintas, y conviene hacer las dos porque cualquiera de las dos que salga bien 
   物販 no está en ninguna edición de ese documento, así que es una estimación del analista o viene de
   una fuente que la nota no cita. No cargarlo sin identificar de dónde sale.
 
+## CA Osasuna (sourcing de LaLiga, sesión 2026-09-16, no bloqueó la descarga pero queda sin confirmar)
+
+- **¿Qué período cubre cada PDF descargado?**: los informes de auditoría encontrados están fechados
+  "a 30 de junio" de 2022/2023/2024 (año fiscal jul-jun), pero una noticia del propio sitio de
+  Osasuna dice que el club "cierra sus cuentas a 31 de diciembre de 2025" (año calendario). No se
+  pudo confirmar si el club cambió de ejercicio económico en el medio, y si cambió, qué período
+  exacto cubre cada uno de los 3 PDFs bajados (`Clubes/España/CA Osasuna/`) — a quién preguntarle:
+  prensa deportiva navarra, o directo al club vía su área de socios.
+- **`auditoria2022.pdf` — ¿es el informe de auditoría completo o un fragmento de la Memoria
+  Oficial?**: no se pudo verificar porque el PDF está escaneado sin capa de texto. Antes de mapear
+  cualquier cifra de este archivo, OCRearlo (ver `CLAUDE.md`, sección de OCR con Tesseract) y
+  confirmar que trae balance + cuenta de resultados, no solo texto narrativo.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

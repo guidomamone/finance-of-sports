@@ -157,17 +157,59 @@ sección "Transparência"/"SAF"/"Governança").
 - **Repositorios de federación estadual**: buenísima fuente alternativa cuando el club no lo cuelga
   directo. `futebolpaulista.com.br/Repositorio/Institucional/<año>/<Club>.pdf` (y variantes de
   nombre) aloja laudos de auditoria de TODOS los clubes del Campeonato Paulista, no solo los SAF —
-  confirmado para Ituano, Mirassol, y aparecen ahí también São Paulo FC, Corinthians, Guarani, Ponte
-  Preta, Botafogo-SP. Mismo patrón en `federacaopr.sfo3.digitaloceanspaces.com` para clubes de Paraná
-  (ya explotado parcialmente para Coritiba). Vale la pena recorrer estos repositorios año por año en
-  vez de buscar club por club cuando el foco es un estado específico.
+  confirmado para Ituano, Mirassol, Guarani, Ponte Preta. Mismo patrón en
+  `federacaopr.sfo3.digitaloceanspaces.com` para clubes de Paraná (ya explotado parcialmente para
+  Coritiba), y en `fgf.com.br/demonstracoes-financeiras-filiados` para clubes de Rio Grande do Sul
+  (confirmado sesión 2026-09-16 con Juventude — ojo, el casing del nombre de archivo por club ahí es
+  inconsistente). Vale la pena recorrer estos repositorios año por año en vez de buscar club por club
+  cuando el foco es un estado específico.
+  - **PERO el sitio propio del club suele tener una serie más profunda y más prolija que el
+    repositorio de la federación** (sesión 2026-09-16): Palmeiras (2017-2025), Corinthians
+    (2019-2025 en su propia sección de transparencia) y São Paulo FC (su CDN llega hasta 2006)
+    superan largo a lo que ofrece `futebolpaulista.com.br` para esos mismos clubes. Revisar primero
+    a fondo la sección "Transparência"/"Governança" del sitio oficial (no solo la home, el menú
+    completo) antes de conformarse con el mirror de la federación.
+  - **El listado de directorio del repositorio paulista está bloqueado por Cloudflare vía `curl`
+    (403/challenge JS), pero un archivo individual con el nombre exacto sí descarga bien (200,
+    cacheado)** — la forma de descubrir el nombre exacto sin poder listar el directorio es
+    `WebSearch site:futebolpaulista.com.br ... .pdf`, no adivinar el nombre del club a mano (solo
+    funciona para el año más reciente).
+  - **La carpeta-año de la URL no garantiza que ESE sea el ejercicio del documento**: un archivo de
+    São Paulo FC vivía en `Institucional/2023/1402169_BALANÇOSPFC_2018_2.pdf` pero el "2018" del
+    nombre era un número de radicado/protocolo, no el ejercicio — el contenido real era 2022/2023.
+    Verificar siempre las fechas DENTRO del documento, nunca solo por la carpeta o el nombre de
+    archivo.
 - **Cloudflare bloquea varios dominios oficiales** (ej. Vasco da Gama, Sport Recife) — antes de
   descartar, buscar el mismo PDF mirrorado en otro dominio (ej. un portal de noticias o un sitio de
-  socios que republicó el mismo documento) en vez de pelear con el bloqueo directo.
-- Dead-ends confirmados de esta sesión (sin lead nuevo, no rabbit-holear más sin uno): América
-  Mineiro, Náutico, Sport Recife (DNS roto en el subdominio de transparencia), Vitória (URL de
-  transparencia devolvió 404), Criciúma (solo balance de 2013 encontrado), Ceará, Fortaleza
-  (navegación por menú JS, no hay links planos de PDF en el HTML), Juventude, Marília.
+  socios que republicó el mismo documento) en vez de pelear con el bloqueo directo. **Si no hay
+  mirror, un browser real sí puede pasar el challenge donde `curl` da 403/`cf-mitigated:
+  challenge`** (confirmado con Sport Recife, sesión 2026-09-16): una vez cargada la página en el
+  Browser pane, usar `fetch()` + `Blob` + `<a download>` desde la consola de la página para bajar el
+  archivo (comparando el tamaño en bytes contra el original) — `curl` sigue fallando aunque ya se
+  tenga la URL exacta en la mano, así que no vale la pena reintentarlo ahí.
+- **Un botón de descarga de "transparencia" clickeado por un browser automatizado puede disparar un
+  redirect a un sitio de terceros sin relación** (Vitória → `rcdespanyol.com`, sesión 2026-09-16) —
+  mismo patrón ya visto con SIIS Colombia (sección 2). No es un bloqueo real del club: extraer el
+  `href` real vía JS del DOM en vez de clickear el botón.
+- **El PDF real puede estar escondido dentro de un `<iframe src="about:blank"
+  data-src="...docs.google.com/viewer?url=<pdf real>">` con lazy loading** — hay que revisar el
+  `outerHTML` completo de la página, no solo los `<a href>` visibles ni el `.src` actual del iframe
+  (que arranca en blanco hasta que se scrollea a la vista).
+- **Comparar el tamaño en bytes de un PDF entre dos mirrors/fuentes es una forma barata y confiable
+  de confirmar que es el mismo documento** (usado repetidamente sesión 2026-09-16 para desambiguar
+  Santos/Guarani y sitio propio vs. mirror de la federación en Corinthians) — más rápido que releer
+  el texto completo cada vez.
+- **Un dead-end de una sesión anterior puede haberse destrabado solo porque la URL se movió, sin que
+  cambiara nada regulatorio** (sesión 2026-09-16: de los 5 dead-ends reintentados con un ángulo
+  nuevo, 4 — Vitória, Ceará, Fortaleza, Sport Recife — se resolvieron encontrando el portal en una
+  URL/subdominio distinto al que había fallado antes). Vale la pena reintentar periódicamente los
+  dead-ends viejos con una búsqueda fresca, no tratarlos como permanentes salvo que el bloqueo sea
+  estructural (forma jurídica, regulador inexistente).
+- Dead-ends que siguen sin lead nuevo (no rabbit-holear más sin uno): América Mineiro, Náutico,
+  Criciúma (solo balance de 2013 encontrado), Marília. **Juventude** es un dead-end parcial: solo se
+  encontró el ejercicio 2020 (vía el repositorio de la Federação Gaúcha), y prensa reporta que el
+  club no publicó su demonstração de 2024 dentro del plazo legal — la pregunta directa al club está
+  en `dudas-por-club.md`.
 
 ## 4. Uruguay — bloqueado, no reintentar con los mismos 3 ángulos
 
@@ -439,9 +481,36 @@ canal de la FCA resultó incluso mejor:
 
 **Escocia** es el mismo Companies House, con números `SC` (Celtic = `SC003487`).
 
-**Qué queda**: los 92 clubes de Premier + EFL, los 9 condados de cricket restantes (ya identificados
-en el CSV), el resto de Premiership Rugby, la Super League de rugby league. No hay nada que
-investigar en ninguno de esos, es ejecutar el mismo procedimiento.
+**Actualizado (sesión 2026-09-16): los 20 clubes de la Premier League 2025/26 ya están cubiertos**
+(los 10 que faltaban — Bournemouth, Brentford, Brighton, Burnley, Crystal Palace, Fulham, Leeds,
+Nottingham Forest, Sunderland, Wolves — se bajaron esa sesión). Dos gotchas nuevos que costó
+encontrar:
+
+- **La entidad correcta a veces es una HOLDING separada de la operativa, y el nombre no siempre lo
+  delata.** Crystal Palace no está bajo "CPFC Limited" sino bajo `CPFC 2010 Limited` (n° 07206409);
+  Burnley no está bajo la sociedad histórica `Burnley Football & Athletic Company, Limited`
+  (00054222) sino bajo `Burnley FC Holdings Limited` (n° 08335231). El indicio para elegir bien:
+  filtrar candidatos por SIC "93120 Activities of sport clubs", comparar cuál presenta `Group of
+  companies' accounts` (consolidado, lo que conviene) en vez de solo `Full accounts`, y cruzar los
+  directores listados con los dueños conocidos del club por prensa (Steve Parish/Josh
+  Harris/Woody Johnson para Palace, Alan Pace/ALK Capital para Burnley) antes de asumir que la
+  primera coincidencia de nombre es la correcta.
+- **Un club con historia de administración judicial puede tener DOS entidades en Companies House,
+  y el historial de la nueva no llega más atrás de su año de incorporación.** Leeds United tiene una
+  entidad vieja disuelta (`Leeds United Association Football Club Limited (The)`, n° 00170600,
+  dissolved 2019) y la actual (06233875, incorporada 2007) — el filing history de la actual no
+  cubre nada anterior a 2013. Si en el futuro se agrega un club de la EFL con pasado de
+  administración/liquidación (ej. Portsmouth, Bury), buscar ambas entidades antes de concluir que
+  "no hay historial viejo".
+- **La fecha de cierre de ejercicio puede cambiar dentro de la misma serie de un club** (no es un
+  error de transcripción): Wolves y Nottingham Forest cerraban el 31 de mayo y pasaron al 30 de
+  junio en su presentación más reciente; Burnley pasó del 30 de junio al 31 de julio en 2020. Antes
+  de cargar al sitio un ejercicio de transición, chequear si cubre 12 o 13 meses.
+
+**Qué queda de Reino Unido**: los clubes de la EFL (segunda a cuarta división), los 9 condados de
+cricket restantes (ya identificados en el CSV), el resto de Premiership Rugby, la Super League de
+rugby league, y profundizar el histórico (años extra) de los 20 clubes de Premier ya cubiertos. No
+hay nada que investigar en ninguno de esos, es ejecutar el mismo procedimiento.
 
 ## 10. Estados Unidos — la SEC, para los deportes que NO son fútbol
 

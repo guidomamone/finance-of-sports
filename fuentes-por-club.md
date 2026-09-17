@@ -169,16 +169,32 @@ nada a `data/*.js` todavía (eso queda para una sesión de onboarding futura, si
 
 - [Athletico Paranaense](fuentes/Brasil/Athletico Paranaense.md) — 2 ejercicios reales (2024-2025), no es SAF — Último chequeo: 2026-09-12
 - [Atletico Goianiense](fuentes/Brasil/Atletico Goianiense.md) — 1 ejercicio real (2024-2025) — **CARGADO al sitio: Ejercicio 2025, columna Consolidado** — Último chequeo: 2026-09-13
+- [Atlético Mineiro](fuentes/Brasil/Atletico Mineiro.md) — SAF, 3 ejercicios reales (2023-2025), sin cargar aún — Último chequeo: 2026-09-16
 - [Bahia](fuentes/Brasil/Bahia.md) — SAF + associação, 4 ejercicios reales combinados — Último chequeo: 2026-09-12
 - [Botafogo](fuentes/Brasil/Botafogo.md) — 4 ejercicios reales SAF (2022-2025) + associação — **CARGADO al sitio: Ejercicio 2024 (SAF, columna Controladora)** — Último chequeo: 2026-09-13
 - [Botafogo-SP](fuentes/Brasil/Botafogo-SP.md) — 5 ejercicios reales (2019-2024), no confundir con RJ — Último chequeo: 2026-09-12
+- [Ceará](fuentes/Brasil/Ceara.md) — 8 ejercicios reales (2018-2025), sin cargar aún; dead-end viejo destrabado, el portal cambió de subdominio — Último chequeo: 2026-09-16
 - [Chapecoense](fuentes/Brasil/Chapecoense.md) — 3 ejercicios reales (2016-17, 2020-21), no es SAF — Último chequeo: 2026-09-12
+- [Corinthians](fuentes/Brasil/Corinthians.md) — 8 ejercicios reales (2016-2025, salto en 2018), no es SAF, sin cargar aún — Último chequeo: 2026-09-16
 - [Coritiba](fuentes/Brasil/Coritiba.md) — 2 ejercicios reales (2022-2024) — Último chequeo: 2026-09-12
 - [Cruzeiro](fuentes/Brasil/Cruzeiro.md) — 4 ejercicios reales, serie completa 2022-2025 — **CARGADO al sitio: Ejercicio 2025 (SAF)** — Último chequeo: 2026-09-13
+- [Flamengo](fuentes/Brasil/Flamengo.md) — 2 ejercicios reales (2024-2025), sin cargar aún; 2022-2023 pendientes (portal SPA bloquea la extracción automática) — Último chequeo: 2026-09-16
+- [Fluminense](fuentes/Brasil/Fluminense.md) — 16 ejercicios reales, serie completa 2010-2025, sin cargar aún — Último chequeo: 2026-09-16
+- [Fortaleza](fuentes/Brasil/Fortaleza.md) — SAF 2025 + associação 2018-2025 (11 ejercicios), sin cargar aún; dead-end viejo destrabado — Último chequeo: 2026-09-16
 - [Gremio](fuentes/Brasil/Gremio.md) — 1 ejercicio real (2023-2024), no es SAF — **CARGADO al sitio: Ejercicio 2024** — Último chequeo: 2026-09-13
+- [Guarani](fuentes/Brasil/Guarani.md) — 2 ejercicios reales (2023-2025), en recuperación judicial, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [Internacional](fuentes/Brasil/Internacional.md) — 19 ejercicios reales, serie completa 2007-2025, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
 - [Ituano](fuentes/Brasil/Ituano.md) — 1 ejercicio real (2024), no es SAF — Último chequeo: 2026-09-12
+- [Juventude](fuentes/Brasil/Juventude.md) — 1 ejercicio real (2020, escaneado), sin cargar aún; 2024 sin publicar según prensa (ver dudas-por-club.md) — Último chequeo: 2026-09-16
 - [Mirassol](fuentes/Brasil/Mirassol.md) — 1 ejercicio real (2024), no es SAF todavía — Último chequeo: 2026-09-12
+- [Palmeiras](fuentes/Brasil/Palmeiras.md) — 8 ejercicios reales, serie completa 2017-2025, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [Ponte Preta](fuentes/Brasil/Ponte Preta.md) — 3 ejercicios reales (2021-2024), no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [RB Bragantino](fuentes/Brasil/RB Bragantino.md) — 2 ejercicios reales (2019, 2024) vía Wayback Machine, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [Santos](fuentes/Brasil/Santos.md) — 3 ejercicios reales (2020-2021, 2023-2025), no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [São Paulo](<fuentes/Brasil/São Paulo.md>) — 5 ejercicios reales, serie 2018-2024, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [Sport Recife](fuentes/Brasil/Sport Recife.md) — 6 ejercicios reales (2019-2025), sin cargar aún; Cloudflare destrabado con browser real — Último chequeo: 2026-09-16
 - [Vasco da Gama](fuentes/Brasil/Vasco da Gama.md) — 3 ejercicios reales vía mirrors (2022-2024) — Último chequeo: 2026-09-12
+- [Vitória](fuentes/Brasil/Vitoria.md) — 1 ejercicio real (2025), sin cargar aún; dead-end viejo destrabado, la URL se había movido — Último chequeo: 2026-09-16
 - [Notas generales de Brasil](fuentes/Brasil/_notas-generales.md)
 
 ### Colombia
@@ -352,16 +368,26 @@ sociedad limitada obligada a depositar cuentas auditadas) y, para los clubes de 
 **registro de mutuales de la FCA** — ver [Notas generales de Inglaterra](fuentes/Inglaterra/_notas-generales.md),
 que es el archivo a leer antes de tocar cualquier club británico.
 
+- [AFC Bournemouth](fuentes/Inglaterra/AFC Bournemouth.md) — 2 ejercicios reales (2023/24-2024/25), 14 disponibles — Último chequeo: 2026-09-16
 - [Arsenal](fuentes/Inglaterra/Arsenal.md) — 2 ejercicios reales descargados (2023/24-2024/25), 18 disponibles — Último chequeo: 2026-09-13
 - [Aston Villa](fuentes/Inglaterra/Aston Villa.md) — 1 ejercicio real (2024/25), 8 disponibles — Último chequeo: 2026-09-13
+- [Brentford](fuentes/Inglaterra/Brentford.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles — Último chequeo: 2026-09-16
+- [Brighton & Hove Albion](fuentes/Inglaterra/Brighton & Hove Albion.md) — 2 ejercicios reales (2023/24-2024/25), 18 disponibles — Último chequeo: 2026-09-16
+- [Burnley](fuentes/Inglaterra/Burnley.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles; cuentas de la holding (Burnley FC Holdings Limited), no de la sociedad operativa — Último chequeo: 2026-09-16
 - [Chelsea](fuentes/Inglaterra/Chelsea.md) — 1 ejercicio real (2024/25), 12 disponibles — Último chequeo: 2026-09-13
+- [Crystal Palace](fuentes/Inglaterra/Crystal Palace.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; cuentas de la holding (CPFC 2010 Limited) — Último chequeo: 2026-09-16
 - [Everton](fuentes/Inglaterra/Everton.md) — 2 ejercicios reales (2023/24-2024/25), 6 disponibles — Último chequeo: 2026-09-13
+- [Fulham](fuentes/Inglaterra/Fulham.md) — 2 ejercicios reales (2023/24-2024/25), 20 disponibles — Último chequeo: 2026-09-16
+- [Leeds United](fuentes/Inglaterra/Leeds United.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles — Último chequeo: 2026-09-16
 - [Liverpool](fuentes/Inglaterra/Liverpool.md) — 2 ejercicios reales (2023/24-2024/25), 16 disponibles — Último chequeo: 2026-09-13
 - [Manchester City](fuentes/Inglaterra/Manchester City.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; cuentas individuales, no del grupo — Último chequeo: 2026-09-13
 - [Manchester United](fuentes/Inglaterra/Manchester United.md) — 20-F 2024/25 real, **sin escanear (HTML)**, ingresos £666,5 M ya verificados — Último chequeo: 2026-09-13
 - [Newcastle United](fuentes/Inglaterra/Newcastle United.md) — 1 ejercicio real (2024/25), 14 disponibles — Último chequeo: 2026-09-13
+- [Nottingham Forest](fuentes/Inglaterra/Nottingham Forest.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles — Último chequeo: 2026-09-16
+- [Sunderland](fuentes/Inglaterra/Sunderland.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles — Último chequeo: 2026-09-16
 - [Tottenham Hotspur](fuentes/Inglaterra/Tottenham Hotspur.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles — Último chequeo: 2026-09-13
 - [West Ham United](fuentes/Inglaterra/West Ham United.md) — 1 ejercicio real (2024/25), 9 disponibles — Último chequeo: 2026-09-13
+- [Wolverhampton Wanderers](fuentes/Inglaterra/Wolverhampton Wanderers.md) — 2 ejercicios reales (2023/24-2024/25), 24 disponibles — Último chequeo: 2026-09-16
 - [Bath Rugby](fuentes/Inglaterra/Bath Rugby.md) — **rugby union (Premiership)** — 2 ejercicios reales, ingresos £23,3 M verificados, 16 disponibles — Último chequeo: 2026-09-13
 - [Harlequins](fuentes/Inglaterra/Harlequins.md) — **rugby union (Premiership)** — 1 ejercicio real (2022/23), 13 disponibles; los 2 últimos son cuentas abreviadas, verificar — Último chequeo: 2026-09-13
 - [Leicester Tigers](fuentes/Inglaterra/Leicester Tigers.md) — **rugby union (Premiership)** — 2 ejercicios reales, 12 disponibles — Último chequeo: 2026-09-13
@@ -393,13 +419,22 @@ destrabarlos.
 - [FC Barcelona](<fuentes/España/FC Barcelona.md>) — CARGADO (Ejercicio 2024/25), 22 ejercicios reales disponibles (2003-2025, serie 1978-2003 identificada, sin bajar) — Último chequeo: 2026-09-13
 - [Atlético de Madrid](<fuentes/España/Atlético de Madrid.md>) — CARGADO (Ejercicio 2024/25), 12 ejercicios reales disponibles (2013-2025) — Último chequeo: 2026-09-13
 - [Athletic Club](<fuentes/España/Athletic Club.md>) — CARGADO (Ejercicio 2024/25), 4 ejercicios reales disponibles (2021-2025) — Último chequeo: 2026-09-13
-- [Real Sociedad](<fuentes/España/Real Sociedad.md>) — sin PDFs, cuentas gateadas a accionistas — Último chequeo: 2026-09-13
+- [Real Sociedad](<fuentes/España/Real Sociedad.md>) — sin PDFs, cuentas gateadas a accionistas; Registro Mercantil confirma que el depósito 2024/25 existe, pero el PDF completo queda detrás de un informe pago — Último chequeo: 2026-09-16
 - [Sevilla FC](<fuentes/España/Sevilla FC.md>) — CARGADO (Ejercicio 2024/25), 4 ejercicios reales disponibles (2021-2025) + 1 borrador rechazado sin usar — Último chequeo: 2026-09-13
 - [Valencia CF](<fuentes/España/Valencia CF.md>) — CARGADO (Ejercicio 2024/25), 2 ejercicios reales disponibles (2023-2025) — Último chequeo: 2026-09-13
 - [Villarreal CF](<fuentes/España/Villarreal CF.md>) — CARGADO (Ejercicio 2023/24, único ejercicio real disponible en el archivo) — Último chequeo: 2026-09-13
 - [Real Betis](<fuentes/España/Real Betis.md>) — CARGADO (Ejercicio 2024/25), 5 ejercicios reales disponibles (2019-2025, con huecos) — Último chequeo: 2026-09-13
 - [Celta de Vigo](<fuentes/España/Celta de Vigo.md>) — CARGADO (Ejercicio 2024/25 individual), 4 ejercicios reales disponibles (2018-2025, con huecos) — Último chequeo: 2026-09-13
 - [Deportivo Alavés](<fuentes/España/Deportivo Alavés.md>) — CARGADO (Ejercicio 2024/25), 9 ejercicios reales disponibles, serie completa 2016-2025 — Último chequeo: 2026-09-13
+- [Girona FC](<fuentes/España/Girona FC.md>) — 2 ejercicios reales descargados (2019-20, 2024-25, con huecos), sin cargar aún — Último chequeo: 2026-09-16
+- [CA Osasuna](<fuentes/España/CA Osasuna.md>) — 3 PDFs descargados, sin cargar (período fiscal sin confirmar, ver dudas-por-club.md) — Último chequeo: 2026-09-16
+- [RCD Mallorca](<fuentes/España/RCD Mallorca.md>) — 1 ejercicio real descargado (2024/25), sin cargar aún — Último chequeo: 2026-09-16
+- [Rayo Vallecano](<fuentes/España/Rayo Vallecano.md>) — 1 ejercicio real descargado (2024/25, auditoría con salvedades), sin cargar aún — Último chequeo: 2026-09-16
+- [Getafe CF](<fuentes/España/Getafe CF.md>) — 2 ejercicios reales descargados (2023-2025), sin cargar aún — Último chequeo: 2026-09-16
+- [RCD Espanyol](<fuentes/España/RCD Espanyol.md>) — 2 ejercicios reales descargados (2023-2025), sin cargar aún — Último chequeo: 2026-09-16
+- [Elche CF](<fuentes/España/Elche CF.md>) — 2 ejercicios reales descargados (2023-2025), sin cargar aún — Último chequeo: 2026-09-16
+- [Levante UD](<fuentes/España/Levante UD.md>) — 1 ejercicio real descargado (2024/25 consolidado), sin cargar aún — Último chequeo: 2026-09-16
+- [Real Oviedo](<fuentes/España/Real Oviedo.md>) — 1 ejercicio real descargado (2024/25), sin cargar aún — Último chequeo: 2026-09-16
 - [Notas generales de España](fuentes/España/_notas-generales.md)
 
 ---

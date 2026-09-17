@@ -39,9 +39,43 @@ forma voluntaria/parcial aunque no reciban subvención pública que los obligue.
   `pdftotext` simplemente no encontró texto por un bug. Estos van a necesitar el flujo de Tesseract
   documentado en `CLAUDE.md` cuando llegue la sesión de mapeo/transcripción.
 - Candidato pendiente de explorar en una sesión futura (no estaba en la lista original de 10/11 pero
-  surgió como mención en resultados de búsqueda): **Getafe CF, RCD Mallorca, RC Deportivo, SD
-  Ponferradina, Real Zaragoza** — los 5 tienen página propia de "Ley de Transparencia" confirmada por
-  búsqueda (mismo patrón que Betis/Alavés/Villarreal), sin explorar en profundidad todavía.
+  surgió como mención en resultados de búsqueda): **RC Deportivo, SD Ponferradina, Real Zaragoza** —
+  los 3 tienen página propia de "Ley de Transparencia" confirmada por búsqueda (mismo patrón que
+  Betis/Alavés/Villarreal), sin explorar en profundidad todavía. (Getafe CF y RCD Mallorca, que
+  estaban en esta misma lista, ya se cargaron en la sesión 2026-09-16 — ver sus fichas.)
+- **`statics-maker.llt-services.com/<código-3-letras>/documents/<fecha-subida>/<uuid>-<n>.pdf` — el
+  CMS de transparencia MÁS COMPARTIDO encontrado hasta ahora en LaLiga (sesión 2026-09-16).** Mismo
+  host, mismo patrón de URL, para AL MENOS: Girona (`/gir/`), RCD Mallorca (`/mll/`), Rayo Vallecano
+  (`/ray/`), Getafe (`/get/`), Elche (`/elc/`), Levante (`/lev/`), Real Oviedo (`/ovi/`) — 7 de los 9
+  clubes barridos esta sesión. Es un host de archivos puro, sin anti-bot: `curl` con un User-Agent de
+  navegador normal alcanza siempre (probado con los 7 códigos de club, siempre 200). La fecha en la
+  URL es la fecha de SUBIDA del archivo, no el ejercicio que cubre — hay que confirmar el ejercicio
+  por el texto interno del PDF (cuando tiene capa de texto) o por el texto del link en la página que
+  lo linkea, nunca asumir por la fecha de la URL sola (pasó con Girona: un archivo subido en 2023-09
+  resultó ser el ejercicio 2019-20). Vale la pena, ante un club nuevo de LaLiga con anti-bot en su
+  propio dominio, probar directamente si tiene una carpeta en este host (buscando
+  `site:statics-maker.llt-services.com "<club>"` o el nombre exacto del club en Google) antes de
+  pelearse con el dominio propio.
+- **`files.proyectoclubes.com` — otro CDN compartido de transparencia (visto en Mallorca, Rayo
+  Vallecano y Real Oviedo para documentos NO financieros — estatutos, reglamentos), pero devolvió
+  timeout de conexión (no 403, no bloqueo confirmado) al intentar bajar un PDF financiero de Real
+  Oviedo (`files.proyectoclubes.com/oviedo/202201/19102746ro-ccaa-20-21-auditadas.pdf`) en la sesión
+  2026-09-16, dos intentos.** Puede ser un problema de red temporal (como el de archive.org
+  "Temporarily Offline" ya documentado abajo) — reintentar en una sesión futura antes de asumir que es
+  un dead-end del club.
+- **RCD Espanyol: la URL corta `rcdespanyol.com/es/transparencia/` está rota — devuelve un loop
+  infinito de redirects 302 a sí misma con `curl`, y el browser también la reporta como fallida (sesión
+  2026-09-16).** No es un bloqueo anti-bot: es que el club movió la página a una URL más larga,
+  `rcdespanyol.com/es/transparencia-compliance-canaleticoycomunicaciones`, y dejó un alias roto en la
+  corta. Ante cualquier club cuya URL de transparencia ya documentada empiece a fallar, probar primero
+  si cambiaron la URL (buscar "[club] transparencia" de nuevo) antes de asumir un bloqueo nuevo.
+- **Registro Mercantil vía agregadores comerciales (einforma.com, axesor, etc.) — sirve para
+  CONFIRMAR que un depósito de cuentas existe (gratis, sin login), pero el PDF completo del depósito
+  siempre está detrás de un "informe" de pago (sesión 2026-09-16, probado con Real Sociedad).** Mismo
+  patrón que el OMPIC marroquí: útil como señal de que vale la pena insistir (o pagar) por un club que
+  parece bloqueado por todos los demás ángulos, pero no resuelve el sourcing por sí solo. La vía más
+  barata sin explorar todavía es pedir la "publicidad mercantil" directo en `registradores.org` en vez
+  del informe comercial del agregador.
 
 ## Cómo mantener esta nota
 

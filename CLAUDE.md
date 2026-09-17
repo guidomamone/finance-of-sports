@@ -290,3 +290,10 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   no queda ninguna". El chequeo confiable: `grep -n 'CARACTER' archivo` (sin
   capturar contexto con un cuantificador de caracteres, solo el número de
   línea) y revisar cada línea completa a mano.
+- **Varios agentes de sourcing en paralelo (subagentes del `Agent` tool) pueden compartir el mismo
+  Browser pane** (sesión 2026-09-16, barrido de LaLiga en simultáneo con Brasil): una pestaña se
+  navegó sola a un sitio de otro agente en medio de la búsqueda. No es un bug del portal que se
+  estaba investigando. La vuelta que funcionó: cada agente abre su propia pestaña con `tabs_create`
+  al arrancar y fija ese `tabId` explícito en cada llamada del Browser tool, en vez de operar sobre
+  "la pestaña activa" por defecto. Si se lanzan sourcing agents en paralelo que usan el browser,
+  decírselo en el prompt.
