@@ -1372,10 +1372,18 @@ window.CLUB_SELECTOR = (function(){
   function render(){
     var wrap = $('cdWrap');
     if(!wrap) return;
+    // Los dos cards se ARMAN primero y se cuelgan después. Agregarlos de a uno hacía
+    // que un error dibujando el segundo dejara el primero colgado y el segundo no,
+    // o sea media pantalla que parecía una decisión de diseño en vez de un bug.
+    var cols;
+    try {
+      cols = [card(0), el('div', 'cd-vs', 'VS'), card(1)];
+    } catch(err){
+      console.error('[selector] no se pudieron dibujar los cards', err);
+      return;
+    }
     wrap.innerHTML = '';
-    wrap.appendChild(card(0));
-    wrap.appendChild(el('div', 'cd-vs', 'VS'));
-    wrap.appendChild(card(1));
+    cols.forEach(function(c){ wrap.appendChild(c); });
     renderPie();
     renderResultado();
   }
@@ -1413,7 +1421,16 @@ window.CLUB_SELECTOR = (function(){
     var l = lado[i];
     var caja = el('div', 'cd-elegido');
     var ids = clubesDe(l);
-    var unClub = ids.length === 1 && paresDe(l).length === 1 ? ids[0] : null;
+    // "ESTE LADO ES UN CLUB" SE DECIDE POR LO QUE ES EL BLOQUE, NO CONTANDO CLUBES.
+    // Contando (ids.length === 1) parecía equivalente y no lo es: una temporada de
+    // liga puede tener UN solo equipo con datos cargados — el Brasileirão Série A
+    // 2025 tiene uno, Mirassol — y ahí el lado seguía siendo una liga, pero el card
+    // lo trataba como un club y le pedía `bloques[0].pares`, que en un bloque de
+    // liga no existe. TypeError, y como render() va agregando los tres hijos de a
+    // uno, el card B desaparecía dejando A y el VS. Bug real, encontrado por Guido
+    // comparando la liga argentina contra la brasilera.
+    var soloClubes = l.bloques.length === 1 && l.bloques[0].kind === 'clubes';
+    var unClub = (soloClubes && ids.length === 1 && paresDe(l).length === 1) ? ids[0] : null;
 
     var fila = el('div', 'cd-sujeto');
     fila.appendChild(el('span', 'cd-crest', unClub ? initials(nameOf(unClub)) : '🧩'));
@@ -1456,6 +1473,12 @@ window.CLUB_SELECTOR = (function(){
   function selectorDeAnio(i){
     var l = lado[i];
     var b = l.bloques[0];
+    // La invariante que lo hace posible, escrita: un solo bloque, de clubes, con un
+    // solo par. Si alguna vez deja de cumplirse, esto devuelve el texto de siempre
+    // en vez de tirar y llevarse el card puesto.
+    if(!b || b.kind !== 'clubes' || !b.pares || !b.pares.length){
+      return el('p', 'cd-anios', t('sel.card.years', 'Ejercicios') + ': ' + textoAnios(l));
+    }
     var id = b.pares[0][0];
     var fila = el('label', 'cd-anio');
     fila.appendChild(el('span', null, t('fuentes.ejercicio', 'Ejercicio')));
@@ -1550,8 +1573,15 @@ window.CLUB_SELECTOR = (function(){
       th.appendChild(el('span', 'cd-letra chica', LETRAS[i]));
       th.appendChild(el('span', 'cd-res-n', tt.nombre));
       // La fórmula abajo del nombre: con un agregador por bloque, el encabezado solo
-      // no alcanza para saber qué se está mirando.
-      if(tt.partes.length > 1 || tt.n > 1) th.appendChild(el('span', 'cd-res-m', tt.formula));
+      // no alcanza para saber qué se está mirando. Va SIEMPRE que haya una liga de
+      // por medio, aunque sea de un solo ejercicio: hoy el Brasileirão Série A 2025
+      // tiene un único club con balance cargado (Mirassol), y "Brasileirão Série A
+      // 2025: 114,1 M USD" a secas se lee como lo que factura la liga entera. Con
+      // `promedio(Brasileirão Série A 2025)` y "1 de 1 ejercicio" al lado, se lee lo
+      // que es. Los otros lados solo la muestran cuando suman más de una cosa,
+      // porque `suma(Real Madrid)` es ruido.
+      var hayLiga = (activos[i].bloques || []).some(function(b){ return b.kind === 'liga'; });
+      if(hayLiga || tt.partes.length > 1 || tt.n > 1) th.appendChild(el('span', 'cd-res-m', tt.formula));
       th.appendChild(el('span', 'cd-res-m', tt.conDato + ' ' + t('sel.of', 'de') + ' '
         + nEjercicios(tt.n) + ' · ' + rangoAnios(tt)));
       trh.appendChild(th);
