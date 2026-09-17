@@ -324,6 +324,17 @@ distintas, y conviene hacer las dos porque cualquiera de las dos que salga bien 
   cualquier cifra de este archivo, OCRearlo (ver `CLAUDE.md`, sección de OCR con Tesseract) y
   confirmar que trae balance + cuenta de resultados, no solo texto narrativo.
 
+## Borussia Mönchengladbach (sourcing de Alemania, sesión 2026-09-17, no bloqueó la descarga pero queda sin confirmar)
+
+- **¿Qué opera la GmbH que aparece en Unternehmensregister?**: la prensa alemana da por sentado que
+  el club sigue siendo 100% e.V. sin escindir su fútbol profesional, pero Unternehmensregister
+  muestra una sociedad activa ("Borussia VfL 1900 Mönchengladbach GmbH", HRB 5742) con
+  Jahresabschluss real y 21 páginas de histórico. No se pudo confirmar si esa GmbH es la operadora
+  del fútbol profesional o de otra unidad de negocio del club (inmobiliaria, merchandising, el
+  estadio) antes de que se pudiera bajar el PDF (quedó pendiente por un corte de tooling, ver
+  `fuentes/Alemania/Borussia Mönchengladbach.md`) — a quién preguntarle: el propio club, o releer el
+  PDF completo cuando se baje (el objeto social debería aclararlo en las primeras páginas).
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

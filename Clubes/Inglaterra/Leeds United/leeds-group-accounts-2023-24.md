@@ -1,0 +1,2272 @@
+
+--- pág. 1 ---
+
+COMPANY REGISTRATION NUMBER: 06233875
+
+Leeds United Footbal! Club Limited
+Consolidated Financial Statements
+
+For the year ended
+30 June 2024
+
+FRIDAY
+
+*ADZB81KO*
+A15
+
+28/03/2025 #283
+COMPANIES HOUSE
+
+--- pág. 2 ---
+
+Leeds United Football Club Limited
+Financial Statements
+
+Year ended 30 June 2024
+
+Contents Page
+Officers and professional advisers 1
+Strategic report 2
+Directors’ report 6
+Independent auditor's report to the members 10
+Consolidated statement of comprehensive income 13
+Consolidated statement of financial position 14
+Company statement of financial position 15
+Consolidated statement of changes in equity 16
+Company statement of changes in equity 17
+Consolidated statement of cash flows 18
+
+Notes to the financial statements 19
+
+
+--- pág. 3 ---
+
+Leeds United Football Club Limited
+
+Officers and Professional Advisers
+
+The board of directors
+
+Registered office
+
+Auditor
+
+Bankers
+
+Solicitors
+
+A Kinnear
+
+P V Marathe
+
+PS Lowy
+
+Mr R Cline-Thomas
+
+Elland Road
+Leeds
+LS$11 0ES
+
+Gibson Booth
+
+Chartered Accountants & Statutory Auditors
+New Court
+
+Abbey Road North
+
+Shepley
+
+Huddersfield
+
+HD8 8BJ
+
+Barclays Bank ple
+69 Albion Street
+Leeds
+
+LS1 5AA
+
+DLA Piper UK LLP
+Elshaw House
+
+51 Carver Street
+Sheffield
+
+$1 4FT
+
+
+--- pág. 4 ---
+
+Leeds United Football! Club Limited
+Strategic Report
+
+Year ended 30 June 2024
+
+Business review and principal activities
+The principal activity of the group during the period was that of professional football club and associated activities.
+
+The Board's long-term strategy is to establish the Leeds United as a leading, financially sustainable, Premier League club by
+delivering success on the pitch and increasing the scale and engagement of the club's global fan base.
+
+Season Review
+
+Following the club's relegation to the Championship at the end of the 2022/23 campaign, minority owners' 49ers Enterprises
+assumed full control of the Group from Aser Ventures, with Paraag Marathe becoming Chairman. The immediate objectives
+were to stabilise the Group financially and construct a squad which had the capability to make an immediate return to the
+Premier League. .
+
+The task commenced by securing proven Championship promotion coaching leadership in the appointment of Daniel Farke as
+First Team Manager. Upon relegation the Board planned for the inevitable high squad churn. Tyler Adams and Tyler Roberts
+were sold to AFC Bournemouth and Birmingham City respectively, whilst 11 players left due to their contracts expiring or
+through triggering relegation loan clauses. Ethan Ampadu, Karl Darlow, Ilia Gruev, Glen Kamara and Joel Piroe arrived at the
+Club in permanent transfers, whilst Jaidon Anthony, Joe Rodon and Djed Spence joined on loan.
+
+Despite uncertainty around the squad whilst the transfer window remained open, for the first month of the season, the Club lost
+just once in eight games and a subsequent run stretching from the end of October to the beginning of December then saw the
+Club pick up 19 points from a possible 21 available.
+
+In the January transfer window Djed Spence returned to Tottenham Hotspur, whilst Luke Ayling, Lewis Bate, Darko Gyabi and
+lan Poveda left the Club on loan. Luis Sinisterra was sold to AFC Bournemouth. Connor Roberts arrived at Leeds United in a
+loan deal from Premier League outfit Burnley to strengthen the Club's promotion push.
+
+At the start of 2024, Farke led Leeds to a 15-match unbeaten run but the Club ended the season with 90 points, a total that
+would normally have secured automatic promotion. Accordingly, the Club entered the Play-Offs and defeated Norwich City in
+the semi-final over two-legs, but suffered a 1-0 defeat against Southampton in the Play-Off Final at Wembley, meaning the Club
+would remain in the Championship for the 2024/25 season.
+
+Commercially the Group continued to thrive. BOXT became Principal Partner of the Club. AMT and Flamingo Land were also
+introduced as back of shirt and sleeve sponsors, whilst Premier League partnerships with Cadbury's, Hisense and JD Sporis
+were renewed. The Season Ticket waiting list grew above 25,000, ticket and membership sales again broke records as
+supporters continued their unwavering support, whilst the Club also enjoyed a high-profile pre-season fixture against
+Manchester United in Oslo, Norway.
+
+Principal risks and uncertainties
+
+The primary risk facing the group remains the divisional status of the First Team due to the impact on key revenue streams,
+however the club is confident that it has built a commercial and player trading model that can optimise the chances of a return to
+the top-flight at the second attempt.
+
+The Group is exposed to financial risk in the form of exchange rate risk, interest rate risk and cash flow risk. To manage these
+issues then the Group utilises fixed rate borrowing where available, takes steps to mitigate exposure to foreign currency
+exposure on player transactions and closely manages cash flow. Credit checks and other appropriate financial due diligence are
+performed prior to entering new material contracts.
+
+Commercial risks include the negotiation and pricing of broadcast contracts, ticketing demand and the renewal of commercial
+agreements on similar or improved terms. The Board is in contact regularly throughout the year to monitor these risks whilst the
+day-to-day management of operational risks is delegated to the executive management team.
+
+
+--- pág. 5 ---
+
+Leeds United Football Club Limited
+Strategic Report (continued)
+
+Year ended 30 June 2024
+
+Key performance indicators
+The performance of the team is monitored by publicly available league tables. In addition, the playing operations are managed
+
+by squad value growth and player trading metrics.
+
+The commercial operations of the Group are monitored against detailed budgets and competitive benchmarking to assess the
+business progression and comparative performance. The Club successfully operated within the EFL's Financial Fair Play
+
+regulations.
+
+The group saw a decrease in turnover from £190m to £128m driven by a reduction in Central Distributions which fell from
+£94.1m to £51.0m. This was a direct result of relegation from the Premier League at the end of the 22/23 season. Ticketing
+revenues increased by 2% from £29.9m to £30.7m and merchandise sales grew by 5.8% from £24.0m to £25.4m. Other
+commercial revenue streams comprising mainly sponsorship, advertising and other events decreased by £8.8m falling from
+£18.3m to £9.5m, reflecting the Clubs league status.
+
+The strong commercial performance continues to illustrate the potential of Leeds United being the only club in the United
+Kingdom's third biggest metropolitan area. This should prove a structural competitive advantage that can be leveraged to
+secure Premier League status over the long term. °
+
+Simultaneously the Clubs prudent financial management and development of a squad with depth and youth mean that it has the
+capability to sustain a prolonged period in the Championship without altering its long-term trajectory.
+
+
+--- pág. 6 ---
+
+Leeds United Football Club Limited
+Strategic Report (continued)
+
+Year ended 30 June 2024
+
+Section 172 Companies Act 2006 statement
+
+Section 172 (1) of the Companies Act 2006 requires the directors of a company to act in the way they each consider, in good
+faith, would be most likely to promote the success of the Group for the benefit of its members as a whole, and in doing so have
+regard to matters including:
+
+(a) The likely consequences of any decision in the long term;
+
+(b) The interests of the company’s employees;
+
+(c) The need to foster the company's business relationships with suppliers, customers and others;
+
+(d) The impact of the company’s operations on the community and the environment;
+
+(e) The desirability of the company to maintain a reputation for high standards of business conduct; and
+(f) The need to act fairly between the members of the company.
+
+With respect to this the Board meets regularly to discuss the ongoing strategic direction of the group with specific focus on;
+
+Long term consequences
+
+* Consolidating our business model by building the Leeds United brand globally to create revenue streams in partnerships,
+digital and merchandising that make the Group less dependent on matchday income.
+
+° Developing talent through our youth academy through optimising scouting and coaching whilst creating pathways to the
+First Team that can build a long term technical and financial competitive advantages.
+
+. Optimising the use of proprietary performance data analytics to create a long term technical competitive advantage.
+
+. Utilising the stadium to its full advantage through other mass sporting and music events plus leveraging our reputation as
+one of Yorkshire's leading conferencing and banqueting venues remains a core strategy.
+
+° Working alongside the Leeds United Foundation to promote improving the health and wellbeing of all members of the
+community, both in the city of Leeds and beyond.
+
+. The Group's adherence to EFLs Financial Fair Play rules ensures sustainable, responsible and transparent spending.
+
+The interest of employees
+
+. The working environment is important to the directors both from a health and safety perspective but also in putting
+equality, diversity, inclusion and wellbeing at the heart of its operations. The Group has dedicated members of staff to
+ensure that all employees remain physically and emotionally safe and well and that the diversity of the workforce
+accurately reflects the community that the Group serves.
+
+. Policies are in place and significant training is undertaken to ensure that the Group has a fair and robust recruitment
+process and that a culture of equality and diversity is maintained.
+
+. There is an ongoing review process to ensure that the gender pay gap is addressed and that equal pay is applied fairly
+and consistently.
+
+The interest of other stakeholders
+
+° Fans: Leeds United is built on it's supporter base and every decision made by the club has supporters at its core. We are
+proud of our flourishing Supporters Advisory Board and our growing number of international supporters clubs which meet
+regularly with members of the board to shape the direction of the club and discuss key issues affecting fans
+
+. _Partners: our table of commercial partners continues to grow and are key to building the financial sustainability of the club
+and facilitating the growth of the fan base
+
+. Suppliers: we view are suppliers as partners and ensure they not only deliver competitive value to the business but also
+share our core values
+
+The Community
+
+The financial year ending June 2024 for the Leeds United Foundation has been a period of growth, with the charity
+outperforming both its budget and prior year results in terms of turnover, operating profit and overall financial contribution. Whilst
+there were some increases in staffing and administrative expenses, the Foundation's overall financial health remained strong,
+with an income increase of 9% and a contribution increase of 12.5% compared to previous year.
+
+In turn the Foundation increased its activity across our three key areas: Participation, Education and Health and Wellbeing,
+expanding our outreach and engagement particularly within local communities and underrepresented groups. We delivered
+positive outcomes for circa 70,000 participants and developed new sustainable programmes and partnerships, setting the stage
+for future growth into 2025. .
+
+The following sets out some of the highlights and metrics achieved during the year against our three areas of work:
+Participation:
+
+We engaged 10,237 participants across our programmes, delivering 50 soccer schools, 36 grassroots clubs and 26 soccer
+camps. We held 7 skill centres per week and expanded the Skill Centre outreach in Wakefield and Leeds.
+
+In our women's football pathway, highlights included working with 20 elite players and 500 girls involved in the "Go-Ahead"
+programme, progressing 6 players to the Girls Academy and 2 to Leeds United Women and being awarded an outstanding
+
+
+--- pág. 7 ---
+
+Leeds United Football Club Limited
+Strategic Report (continued)
+
+Year ended 30 June 2024
+
+rating in the FA audit for the Emerging Talent Centre.
+
+Our Active Through Football programme went from strength to strength with 626 participants engaged in 30 weekly sessions.
+We delivered 135 football boots and kits via donation schemes and had 297 participants involved in the refugee world cup. As
+part of this programme, we delivered our second Iftar event at Elland Road, welcoming 300 guests.
+
+Education:
+
+In our Educational work, we engaged over 25,000 primary school children in 74 partner schools across the region. We delivered
+126 educational activations,11,000 face-to-face sessions and 238 targeted interventions, including health, self-esteem, and
+racism workshops and engaged over 660 children through our Network Rail safety assemblies. Our Primary Stars programme
+continued to be successful engaging 7,444 children from 192 primary schools across Leeds.
+
+In our secondary education work we reached 2,598 participants across 12 schools, with 459 targeted interventions and focused
+on engaging disabled participants and girls, reaching 320 and 383 respectively. In addition, we delivered 39 Positive Choices
+session working with over 10,000 students.
+
+Health and Wellbeing
+
+6,634 participants engaged in veteran, dementia, and health-focused sessions and we delivered mental health workshops in
+partnership with NHS and Yorkshire Sport.
+
+In our disability work we expanded our Ability Counts programme, engaging 4 teams, 10 schools, and delivering 13 holiday
+courses and focused on progression pathways for disabled football players, including new funding to support more sessions.
+
+Equality and Diversity
+Ensuring equality, diversity and inclusion are at the heart of Leeds United is a strategic priority. We endeavour to ensure that all
+stakeholders of the Club fee! an equal sense of belonging in a manner which is fair and free from discrimination.
+
+Some key initiatives from 2023-24 were;
+
+° A Disability Advisory Group was set up, comprising of members of the public representing a wide range of disabilities.
+They have consulted on the Club's Access Statement and matchday access issues.
+
+. The Club launched its first season ticket holder survey held to assess diversity of fans gaining 4,840 responses.
+
+. Extensive training was delivered to staff in EDI awareness, disability awareness and fanguage and correct terminology.
+
+Safeguarding
+
+. A Vulnerable Customer Policy has been developed, under FCA guidance, to provide best in class customer service.
+
+° First team safeguarding training was rolled out to increase their awareness and ability to identify and report concerns.
+° Paul Stewart has visited and trained Academy and senior staff in safeguarding and his own lived experiences.
+
+High standards
+° The group is committed to paying the right amount of tax, in the right place and on a timely basis in accordance with tax
+
+laws.
+° The group is committed to ensuring there is transparency in our business and in our approach to tackling modern slavery
+
+within both our business and our supply chains.
+
+Act fairly between members
+: The Board contains a mixture of representation from be raps investors combined with the Chief Executive Officer.
+23 Dec 202
+
+This report was approved by the board of directors ON ou... eee and signed on behalf of the board by:
+
+LAF.
+
+Angus Kinnear (Dec 23, 2024, 2:45pm)
+
+A Kinnear
+Director
+
+Registered office:
+Elland Road
+Leeds
+
+LS11 OES
+
+
+--- pág. 8 ---
+
+Leeds United Football Club Limited
+Directors’ Report
+
+Year ended 30 June 2024
+
+The directors present their report and the financial statements of the group for the year ended 30 June 2024.
+
+Directors
+The directors who served the company during the year were as follows:
+
+A Kinnear
+
+P V Marathe
+
+PSLow .
+
+Mr R Cline-Thomas (Appointed 25 September 2023)
+A Radrizzani (Resigned 25 September 2023)
+M Marinelli (Resigned 25 September 2023)
+S Mencucci (Resigned 25 September 2023)
+
+Mr R Cline Thomas resigned as a director on 23 July 2024. E Schneur and A N Schwartzberg were appointed on 23 July 2024.
+
+Dividends
+The directors do not recommend the payment of a dividend.
+
+
+--- pág. 9 ---
+
+Leeds United Football Club Limited
+Directors’ Report (continued)
+
+Year ended 30 June 2024
+
+Greenhouse gas emissions and energy consumption
+For the purposes of the Companies (Directors' Report), the group is a large and is required to report on its UK energy use and
+the associated greenhouse gas emissions.
+
+Emissions in tonnes
+
+2023-24 2022-23
+Electricity ; 1,191 1,317
+Gas 854 832
+Transport fuels 185 74
+Gross annual total 2,230 2,223
+Total consumption in kWh 10,264,474 (2023: 10,744,387).
+Emissions in tonnes
+2023-24 2022-23
+Per £000,000 of revenue 17 12
+Per number of employees 1 1
+
+Method of Calculation for Emissions .
+Our energy data has been calculated by energy consultants using the information taken from our detailed monthly consumption
+
+statements.
+
+Principal measures taken to increase energy efficiency
+The group recognises its responsibility to proactively limit its impact on the environment and reduce its carbon footprint.
+
+In March 2023, we established our environmental policy which aims to improve the Club's environmental footprint, including the
+organising of events and management of facilities. Environmental policy, activities and objectives are centrally managed by the
+Facilities Team, in coordination with nominated champions and responsible persons across the club, with senior management
+holding overall accountability.
+
+Our ongoing environmental activities continue to build upon our progress in recent years, including across energy efficiency,
+single-use plastics, waste management, low-carbon food and biodiversity.
+
+Recent highlights include:
+
+° The club has been supplied by 100% renewable energy since June 2023.
+
+. Energy usage at the stadium and academy is intelligently controlled, with a systematic LED lighting upgrade and energy
+efficiency programme in place.
+
+. Several large gas kitchen appliances were upgraded to electric 'A' Rated, reducing natural gas consumption along with
+the carcinogens produced when using gas fired appliances.
+
+° Following the implementation of the Building Management System the Group are now able to control heating and
+
+ventilation instantly and remotely across all areas of the stadium and training ground.
+
+Completion of Energy Savings Opportunity Scheme Regulations Phase 3 report.
+
+All waste is segregated and sorted off-site for recycling and processing, with residual waste used to generate energy.
+
+The cups used at Elland Road are either made from paper or are reusable plastic cups which are washed for reuse.
+
+Locally sourced, vegetarian and vegan food options available on the Elland Road concourse.
+
+Remedial works undertaken at the training ground on the Thorp Arch Pond to increase rainfall capacity integrated
+
+biodiversity improvements.
+
+. Participation in the relaunched EFL Green Clubs scheme for 2024/25
+
+Employment of disabled persons
+
+Applications for employment by disabled persons are always fully considered. In event of members of staff becoming disabled,
+every opportunity is made to ensure their employment with the company continues and that appropriate training is arranged. It is
+the policy of the company that the training, career development and promotion of disabled persons should, as far as possible,
+be identical to that of other employees.
+
+
+--- pág. 10 ---
+
+Leeds United Football Club Limited
+Directors’ Report (continued)
+
+Year ended 30 June 2024
+
+Employee involvement
+The company's employment policies are designed to attract, retain and motivate the best people. The company involves
+
+employees at all levels of the organisation through a broad base of regular communication, meetings and briefing sessions to
+understand current performance and communicate future developments.
+
+Employee engagement
+
+The health and safety of our employees is a primary focus and ensuring that each employee, to the extent that they are able, is
+fully able to work remotely has been successfully implemented. The working environment is important to the directors both from
+a health and safety perspective and a holistic one. The club has dedicated members of staff to ensure that all employees remain
+physically and emotionally safe and well.
+
+Policies are in place and significant training is undertaken to ensure that the club has a fair and robust recruitment process and
+that a culture of equality and diversity is maintained. There is an ongoing review process to ensure that the gender pay gap is
+addressed and that equal pay is applied fairly and consistently.
+
+Financial instruments
+
+The company's financial instruments comprise of borrowings such as secured and unsecured loans and advanced receipts in
+respect of the ordinary activities of the club, cash and liquid resources, finance leases and various other items such as trade
+debtors and trade creditors that also arise directly from its operations.
+
+Financial risk management and exposure to risk
+
+In order to minimise financial risk, the directors of the company have taken the decision not to engage in trades of a speculative
+nature. At the year end the company had no foreign currency exposure. Other risks and uncertainties may arise dependent on
+the performance of the football team.
+
+Cash flow
+The company continues to ensure that cash flows are closely monitored on a daily basis and reviews its overall financial
+
+requirements on an annual basis. This policy will be maintained for the foreseeable future.
+
+Qualifying indemnity provision
+
+The Company has granted an indemnity to its directors against liability in respect of proceedings brought by third parties,
+subject to the conditions set out in the Companies Act 2006. Such qualifying third party indemnity provision remains in force as
+at the date of approving the directors’ report.
+
+Disclosure of information in the strategic report
+Details about future developments are included in the strategic report.
+
+Directors’ responsibilities statement
+The directors are responsible for preparing the strategic report, directors' report and the financial statements in accordance with
+
+applicable law and regulations.
+
+Company law requires the directors to prepare financial statements for each financial year. Under that law the directors have
+elected to prepare the financial statements in accordance with United Kingdom Generally Accepted Accounting Practice (United
+Kingdom Accounting Standards and applicable law). Under company law the directors must not approve the financial
+statements unless they are satisfied that they give a true and fair view of the state of affairs of the group and the company and
+the profit or loss of the group for that period.
+
+In preparing these financial statements, the directors are required to: -
+° select suitable accounting policies and then apply them consistently;
+e make judgments and accounting estimates that are reasonable and prudent;
+
+e state whether applicable UK Accounting Standards have been followed, subject to any material departures disclosed and
+explained in the financial statements;
+
+e prepare the financial statements on the going concern basis unless it is inappropriate to presume that the company will
+continue in business.
+
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the company's
+transactions and disclose with reasonable accuracy at any time the financial position of the company and enable them to ensure
+that the financial statements comply with the Companies Act 2006. They are also responsible for safeguarding the assets of the
+company and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.
+
+
+--- pág. 11 ---
+
+Leeds United Football Club Limited
+Directors’ Report (continued)
+
+Year ended 30 June 2024
+
+Auditor
+Each of the persons who is a director at the date of approval of this report confirms that:
+
+° so far as they are aware, there is no relevant audit information of which the group and the company's auditor is unaware;
+and
+
+e they have taken all steps that they ought to have taken as a director to make themselves aware of any relevant audit
+
+information and to establish that the group and the company's auditor is aware of that information.
+23 Dec 2024
+
+This report was approved by the board of directors ON 00.00... eee and signed on behalf of the board by:
+
+a
+
+Angus Kinnear (Dec 23, 2024, 2:45pm)
+
+A Kinnear
+Director
+
+Registered office:
+Elland Road
+Leeds
+
+LS11 0ES
+
+
+--- pág. 12 ---
+
+Leeds United Football Club Limited
+
+Independent Auditor's Report to the Members of Leeds United Football Club Limited
+
+‘Year ended 30 June 2024
+
+Opinion
+
+We have audited the financial statements of Leeds United Football Club Limited (the ‘parent company’) and its subsidiaries (the
+‘group') for the year ended 30 June 2024 which comprise the consolidated statement of comprehensive income, consolidated
+statement of financial position, company statement of financial position, consolidated statement of changes in equity, company
+statement of changes in equity, consolidated statement of cash flows and the related notes, including a summary of significant
+accounting policies. The financial reporting framework that has been applied in their preparation is applicable law and United
+Kingdom Accounting Standards, including FRS 102 The Financial Reporting Standard applicable in the UK and Republic of
+Ireland (United Kingdom Generally Accepted Accounting Practice).
+
+In our opinion the financial statements:
+
+e give a true and fair view of the state of the group's and of the parent company's affairs as at 30 June 2024 and of the
+group's loss for the year then ended;
+
+e have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice;
+
+e have been prepared in accordance with the requirements of the Companies Act 2006.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable law. Our
+responsibilities under those standards are further described in the auditor's responsibilities for the audit of the financial
+statements section of our report. We are independent of the group in accordance with the ethical requirements that are relevant
+to our audit of the financial statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical
+responsibilities in accordance with these requirements. We believe that the audit evidence we have obtained is sufficient and
+appropriate to provide a basis for our opinion.
+
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting in the
+preparation of the financial statements is appropriate.
+
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions that,
+individually or collectively, may cast significant doubt on the group's or the parent company's ability to continue as a going
+concern for a period of at least twelve months from when the financial statements are authorised for issue.
+
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant sections
+of this report.
+
+Other information
+
+The other information comprises the information included in the annual report, other than the financial statements and our
+auditor’s report thereon. The directors are responsible for the other information. Our opinion on the financial statements does
+not cover the other information and, except to the extent otherwise explicitly stated in our report, we do not express any form of
+assurance conclusion thereon.
+
+In connection with our audit of the financial statements, our responsibility is to read the other information and, in doing so,
+consider whether the other information is materially inconsistent with the financial statements or our knowledge obtained in the
+audit or otherwise appears to be materially misstated. if we identify such material inconsistencies or apparent material
+misstatements, we are required to determine whether there is a material misstatement in the financial statements or a material
+misstatement of the other information. If, based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact.
+
+We have nothing to report in this regard.
+
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+
+e the information given in the strategic report and the directors' report for the financial year for which the financial
+statements are prepared is consistent with the financial statements; and
+
+e the strategic report and the directors' report have been prepared in accordance with applicable legal requirements.
+
+10
+
+--- pág. 13 ---
+
+Leeds United Football Club Limited
+
+Independent Auditor's Report to the Members of Leeds United Football Club Limited (continued)
+
+Year ended 30 June 2024
+
+Matters on which we are required to report by exception
+In the light of the knowledge and understanding of the group and the parent company and its environment obtained in the
+course of the audit, we have not identified material misstatements in the strategic report or the directors’ report.
+
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires us to report
+to you if, in our opinion:
+
+° adequate accounting records have not been kept by the parent company, or returns adequate for our audit have not been
+received from branches not visited by us; or
+
+e the parent company financial statements are not in agreement with the accounting records and returns; or
+e certain disclosures of directors’ remuneration specified by law are not made; or
+
+e we have not received all the information and explanations we require for our audit.
+
+Responsibilities of directors
+
+As explained more fully in the directors’ responsibilities statement, the directors are responsible for the preparation of the
+financial statements and for being satisfied that they give a true and fair view, and for such internal contro! as the directors
+determine is necessary to enable the preparation of financial statements that are free from material misstatement, whether due
+
+to fraud or error.
+
+In preparing the financial statements, the directors are responsible for assessing the group's and the parent company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of
+accounting unless the directors either intend to liquidate the group or the parent company or to cease operations, or have no
+realistic alternative but to do so.
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material
+misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion. Reasonable assurance is
+a high level of assurance, but is not a guarantee that an audit conducted in accordance with ISAs (UK) will always detect a
+material misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or
+in the aggregate, they could reasonably be expected to influence the economic decisions of users taken on the basis of these
+financial statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in line with our
+responsibilities, outlined above, to detect material misstatements in respect of irregularities, including fraud. The extent to which
+our procedures are capable of detecting irregularities, including fraud is detailed below:
+
+Based on our understanding of the company and industry, we identified that the principal risks of non-compliance with laws and
+regulations related to UK tax legislation, and we considered the extent to which non-compliance might have a material effect on
+the financial statements. We also considered those laws and regulations that have a direct impact on the financial statements
+such as the Companies Act 2006. We evaluated management's incentives and opportunities for fraudulent manipulation of the
+financial statements, and determined that the principal risks were related to management bias through manipulation of
+accounting estimates or posting inappropriate journal entries. Audit procedures performed by the engagement team included:
+
+° discussions with management including consideration of known or suspected instances of non-compliance with laws,
+regulation and fraud;
+
+challenging assumptions and judgements made by management in their significant accounting estimates;
+
+testing of non-purchase and sales ledger bank transactions;
+
+testing the appropriateness of journal entries;
+
+testing of purchase invoice authorisations.
+
+Because of the inherent limitations of an audit, there is a risk that we will fail to detect all irregularities, including those leading to
+a material misstatement in the financial statements or non-compliance with regulation. This risk increases the more that
+compliance with a law or regulation is removed from events and transactions reflected in the financial statements, as we will be
+less likely to become aware of instances of non-compliance. The risk is also greater regarding irregularities occurring due to
+fraud rather than error, as fraud involves intentional concealment, forgery, collusion, omission or misrepresentation.
+
+11
+
+--- pág. 14 ---
+
+Leeds United Football Club Limited
+
+Independent Auditor's Report to the Members of Leeds United Football Club Limited (continued)
+
+Year ended 30 June 2024
+
+A further description of our responsibilities for the audit of the financial statements is located on the Financial Reporting
+Council's website at www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report.
+
+Use of our report
+
+This report is made solely to the company's members, as a body, in accordance with chapter 3 of part 16 of the Companies Act
+2006. Our audit work has been undertaken so that we might state to the company's members those matters we are required to
+state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume
+responsibility to anyone other than the company and the company's members as a body, for our audit work, for this report, or for
+the opinions we have formed.
+
+PRD Cum:
+
+ANISEIF HASSE PER SARGr-SHSEMdry Auditor)
+
+For and on behalf of
+
+Gibson Booth
+
+Chartered Accountants & Statutory Auditors
+New Court
+
+Abbey Road North
+
+Shepley
+
+Huddersfield
+
+HD8 8BJ
+
+23 Dec 2024
+
+12
+
+--- pág. 15 ---
+
+Leeds United Football Club Limited
+Consolidated Statement of Comprehensive Income
+
+Year ended 30 June 2024
+
+Turnover
+
+Cost of sales
+
+Gross profit
+
+Administrative expenses
+
+Operating loss
+
+Gain on disposai of players’ registrations
+
+Interest receivable and similar income
+Interest payable and similar expenses
+
+Loss before taxation
+
+Tax on loss
+
+Loss for the financial year and total comprehensive income
+
+All the activities of the group are from continuing operations.
+
+Note
+
+11
+
+2024 2023
+£ £
+127,558,280 189,683,547
+(26,243,272) (20,577,557)
+101,315,008 169,105,990
+
+(177,568,583)
+
+(275,080,123)
+
+(76,253,575)
+
+33,694,289
+3,395,256
+(21,647,455)
+
+(105,974,133)
+
+73,345,427
+11,909,865
+(12,985,289)
+
+(60,811,485)
+
+(33,704,130)
+
+(60,811,485)
+
+(33,704,130)
+
+The notes on pages 19 to 32 form part of these financial statements.
+
+13
+
+--- pág. 16 ---
+
+Leeds United Football Club Limited
+
+Consolidated Statement of Financial Position
+
+30 June 2024
+2024 - 2023
+Note £ £
+
+Fixed assets
+Intangible assets excluding negative goodwill 140,487,651 204,631,564
+Negative goodwill (34,582,431) -
+intangible assets 12 105,905,220 204,631,564
+Tangible assets 13 54,982,919 22,414,231
+
+160,888,139 227,045,795
+Current assets
+Stocks 15 4,791,268 10,276,398
+Debtors: due within one year 16 36,634,708 11,493,218
+Debtors: due after more than one year 16 §3,423,044 5,077,474
+Cash at bank and in hand 5,008,994 1,560,857
+
+99,858,014 28,407,947
+
+Creditors: amounts falling due within one year 17. = (182,532,026) (204,441,679)
+Net current liabilities (82,674,012) (176,033,732)
+Total assets less current liabilities 78,214,127 51,012,063
+Creditors: amounts falling due after more than one year 18 (91,944,318) (144,666,869)
+Net liabilities (13,730,191) (93,654,806)
+Capital and reserves
+Called up share capita! 22 52,936,742 52,936,742
+Share premium account 23 33,704,662 33,704,662
+Unrealised profit reserve 23 (2,937,902) 10,066,563
+Profit and loss account 23 (97,433,693) (190,362,773)
+
+Shareholders deficit
+
+These financial statements were approved by the board of directors and authorised for issue on
+
+on behaif of the board by:
+
+LAF.
+
+Angus Kinnear (Dec 23, 2024, 2:45pm)
+A Kinnear
+Director
+
+Company registration number: 06233875
+
+(13,730,191)
+
+(93,654,806)
+
+23 Dec 2024
+
+The notes on pages 19 to 32 form part of these financial statements.
+
+and are signed
+
+14
+
+--- pág. 17 ---
+
+Leeds United Footbal! Club Limited
+
+Company Statement of Financial Position
+
+30 June 2024
+2024 2023
+Note £ £
+Fixed assets ‘
+Intangible assets 12 140,487,651 204,631,565
+Tangible assets 13 21,692,257 - 21,685,836
+Investments 14 5 4
+162,179,913 226,317,405
+Current assets
+Stocks 15 4,748,585 10,230,271
+Debtors: due within one year 16 34,455,245 11,360,366
+Debtors: due after more than one year 16 53,423,044 5,077,474
+Cash at bank and in hand 4,806,524 1,539,522
+97,433,398 28,207,633
+Creditors: amounts falling due within one year 17 (195,511,182) (213,105,924)
+Net current liabilities (98,077,784) (184,898,291)
+Total assets less current liabilities 64,102,129 41,419,114
+Creditors: amounts falling due after more than one year 18 (91,944,318) (144,666,869)
+Net liabilities (27,842,189) (103,247,755)
+Capital and reserves
+Called up share capital 22 52,936,742 52,936,742
+Share premium account 23 33,704,662 33,704,662
+Unrealised profit reserve 23 (2,937,902) 10,066,563
+Profit and loss account 23. (111,545,691) (199,955,722)
+
+Shareholders deficit
+
+The loss for the financial year of the parent company was £65,330,534 (2023: £36,991 ,554).
+
+These financial statements were approved by the board of directors and authorised for issue on
+
+on behalf of the board by:
+
+AF.
+
+Angus Kinnear (Dec 23, 2024, 2:45pm)
+
+A Kinnear
+Director
+
+Company registration number: 06233875
+
+(27,842,189)
+
+(27,842,190)
+
+23 Dec 2024
+
+The notes on pages 19 to 32 form part of these financial statements.
+
+, and are signed
+
+15
+
+--- pág. 18 ---
+
+Leeds United Football Club Limited
+
+Consolidated Statement of Changes in Equity
+
+Year ended 30 June 2024
+
+Att July 2022
+
+Loss for the year
+
+Other comprehensive income for the year:
+Revaluation of financial liability to fair
+value
+Notional interest charged on financial
+liability
+
+Total comprehensive income for the year
+
+At 30 June 2023
+
+Loss for the year
+
+Other comprehensive income for the year:
+Revaluation of financial asset to fair value
+Notional interest charged on financial
+
+asset
+Revaluation of financial liability to fair
+
+value
+Notional interest charged on financial
+liability
+Total comprehensive income for the year
+Capital contribution
+
+Total investments by and distributions to
+owners
+
+At 30 June 2024
+
+Called up Share premium
+
+Unrealised Profit and loss
+
+share capital account profit reserve account Total
+£ £ £ £ £
+
+52,936,742 33,704,662 4,929,739 (151,521,819) (59,950,676)
+
+(33,704,130) (33,704,130)
+
+- — 11,788,576 — (11,788,576) -
+
+- - (6,651,752) 6,651,752 -
+
+- - 5,136,824 (38,840,954) (33,704,130)
+
+52,936,742 33,704,662 10,066,563 (190,362,773) (93,654,806)
+
+(60,811,485) (60,811,485)
+
+- - (8,818,968) 8,818,968 -
+
+- - 339,825 (339,825) -
+
+- - 2,764,718 (2,764,718) -
+
+- - (7,290,040) 7,290,040 -
+
+- — (13,004,465) (47,807,020) (60,811,485)
+
+- - — 140,736,100 140,736,100
+
+- - -— 140,736,100 140,736,100
+
+52,936,742 33,704,662 (2,937,902) (97,433,693) (13,730,191)
+
+The notes on pages 19 to 32 form part of these financial statements.
+
+16
+
+--- pág. 19 ---
+
+Leeds United Football Club Limited
+
+Company Statement of Changes in Equity
+
+Year ended 30 June 2024
+
+At 1 July 2022
+
+Loss for the year
+
+Other comprehensive income for the year:
+Revaluation of financial liability to fair
+value
+Notional interest charged on financial
+liability
+
+Total comprehensive income for the year
+
+At 30 June 2023
+
+Loss for the year
+
+Other comprehensive income for the year:
+Revaluation of financial asset to fair value
+Notional interest charged on financial
+asset
+Revaluation of financial liability to fair
+value
+Notional interest charged on financial
+liability
+
+Total comprehensive income for the year
+
+Capital contribution
+
+Total investments by and distributions to
+owners
+
+At 30 June 2024
+
+Called up Share premium Unrealised Profit and loss
+
+share capital account _ profit reserve account Total
+
+£ £ £ £ £
+52,936,742 33,704,662 4,929,739 (157,827,344) (66,256,201)
+(36,991,554) (36,991,554)
+= - 11,788,576 (11,788,576) _
+- - (6,651,752) 6,651,752 -
+- - 5,136,824 (42,128,378) (36,991,554)
+§2,936,742 33,704,662 10,066,563 (199,955,722) (1 03,247,755)
+(65,330,534) (65,330,534)
+- - (8,818,968) 8,818,968 ~-
+- - 339,825 (339,825) -
+- - 2,764,718 (2,764,718) -
+- - (7,290,040) 7,290,040 -
+- - (13,004,465) (52,326,069) (65,330,534)
+- - ~ 140,736,100 140,736,100
+- - -— 140,736,100 140,736,100
+52,936,742 33,704,662 (2,937,902) (111,545,691) (27,842,189)
+
+The notes on pages 19 to 32 form part of these financial statements.
+
+17
+
+--- pág. 20 ---
+
+Leeds United Football Club Limited
+Consolidated Statement of Cash Flows
+
+Year ended 30 June 2024
+
+Cash flows from operating activities
+Loss for the financial year
+
+Adjustments for:
+
+Depreciation of tangible assets
+
+Amortisation of intangible assets
+
+impairment of intangible assets
+
+(Loss)/gain on disposal of players’ registrations
+Interest receivable and similar income
+
+Interest payable and similar expenses
+
+Gains on disposal of tangible assets
+
+Accrued income
+
+Changes in:
+
+Stocks
+
+Trade and other debtors
+Trade and other creditors
+
+Cash generated from operations
+
+Interest paid
+Interest received
+
+Net cash used in operating activities
+
+Cash flows from investing activities
+Purchase of tangible assets
+
+Proceeds from sale of tangible assets
+Purchase of intangible assets
+Proceeds from sale of intangible assets
+
+Net cash used in investing activities
+
+Cash flows from financing activities
+Proceeds from borrowings
+
+Repayments of borrowings
+
+Proceeds from loans from group undertakings
+Repayments of loans from group undertakings
+Payments of finance lease liabilities
+
+Proceeds from loans from related parties
+Capital contribution
+
+Net cash from financing activities
+
+Net increase/(decrease) in cash and cash equivalents
+Cash and cash equivalents at beginning of year
+
+Cash and cash equivalents at end of year
+
+2024
+£
+
+(60,811,485)
+
+2023
+£
+
+(33,704,130)
+
+4,855,857 4,629,405
+59,590,307 81,136,170
+7,475,305 20,347,359
+(33,694,289) (73,345,427)
+(3,395,256) -
+21,647,455 5,484,006
+(100) -
+(27,443,849) (10,532,289)
+5,485,129 (8,010,947)
+(13,993,741) (1,729,691)
+(50,650,921) 10,096,219
+(90,935,588) (5,629,325)
+(1,510,400) (4,769,028)
+290,712 -
+(92,155,276) (10,398,353)
+(4,759,579) (2,958,741)
+10,922 21,544
+(84,222,177) (84,296,699)
+17,217,640 86,601,071
+(71,753,194) (632,825)
+33,468,086 15,700,995
+(24,075,229) (12,801,771)
+21,856,160 5,152,000
+(4,583,391) (10,354,803)
+(45,119) (348,939)
+- 10,648,000
+440,736,100 -
+167,356,607 7,995,482
+3,448,137 (3,035,696)
+1,560,857 4,596,553
+5,008,994 1,560,857
+
+The notes on pages 19 to 32 form part of these financial statements.
+
+18
+
+--- pág. 21 ---
+
+Leeds United Football Club Limited
+Notes to the Financial Statements
+
+Year ended 30 June 2024
+
+1. General information
+
+The company is a private company limited by shares, registered in England and Wales. The address of the registered
+office is Elland Road, Leeds, LS11 OES. The nature of the company's operations and principal activities are that of a
+professional football club and all associated activities.
+
+2. Statement of compliance
+
+These financial statements have been prepared in compliance with FRS 102, ‘The Financial Reporting Standard
+applicable in the UK and the Republic of Ireland’ and the Companies Act 2006.
+
+3. Accounting policies
+
+Basis of preparation ,
+
+The financial statements have been prepared on the historical cost basis, as modified by the revaluation of certain
+financial liabilities measured at fair value. The financial statements are prepared in sterling, which is the functional
+currency of the entity. The significant accounting policies consistently applied in the preparation of these financial
+statements are set out below.
+
+Going concern
+
+At 30 June 2024 the group had net liabilities of £13,730,191 (2023: £93,654,806) and net current liabilities (after adjusting
+for debtors due after more than one year) of £136,097,056 (2023: £181,111,206). The directors have prepared and
+reviewed forecasts and, as part of their assessment of the going concern status of the company, in order to ensure the
+group meets debts as they fall due for a period of no less than twelve months from approval of the financial statements.
+As a result, the directors consider that it is appropriate to prepare the accounts on the going concern basis.
+
+Consolidation
+The financial statements consolidate the financial statements of Leeds United Football Club Limited and all of its
+
+subsidiary undertakings.
+The results of subsidiaries acquired or disposed of during the year are included from or to the date that control passes.
+
+The parent company has applied the exemption contained in section 408 of the Companies Act 2006 and has not
+presented its individual profit and oss account.
+
+Judgements and key sources of estimation uncertainty
+
+The preparation of the financial statements requires management to make judgements, estimates and assumptions that
+affect the amounts reported. These estimates and judgements are continually reviewed and are based on experience and
+other factors, including expectations of future events that are believed to be reasonable under the circumstances.
+
+Key sources of estimation uncertainty
+
+Accounting estimates and assumptions are made concerning the future and, by their nature, will rarely equal the related
+actual outcome. The key assumptions and other sources of estimation uncertainty that have a significant risk of causing a
+material adjustment to the carrying amounts of assets and liabilities within the next financial year are as follows:
+
+Financia! instruments
+
+A discount rate is applied to long term debts on which interest below market rates are charged to restate the balances to
+fair value. The discount rate has been selected with reference to the expected commercial rate for a loan with similar
+terms. The discount rate is reviewed annually and adjusted where necessary. The carrying amount of the financial
+instruments are included in note 21.
+
+Useful economic lives of intangible and tangible assets
+
+The annual amortisation and depreciation charge for intangible and tangible assets is sensitive to changes in the
+estimated useful economic lives and residual values of the assets. The useful economic lives and residual values are
+re-assessed annually. They are amended when necessary to reflect current estimates, based on technological
+advancement, future investments, economic utilisation and the physical condition of the assets. See notes 12 and 13 for
+the carrying amount of the intangible and tangible assets respectively, and note 3 for the amortisation and depreciation
+rates used for each class of assets.
+
+19
+
+--- pág. 22 ---
+
+Leeds United Football Club Limited
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+3. Accounting policies (continued)
+Judgements and key sources of estimation uncertainty (continued)
+
+Significant judgements
+
+The judgements (apart from those involving estimations) that management has made in the process of applying the
+entity's accounting policies and that have the most significant effect on the amounts recognised in the financial
+statements are as follows:
+
+Impairment of intangible and tangible fixed assets
+The directors review the carrying amount of all intangible and tangible fixed assets at the year end and consider whether
+any impairment of these assets is required. See notes 12 and 13 for details of any impairments.
+
+Valuation of a freehold property
+When assessing the valuation of the freehold property, management engages independent valuers, who are not
+connected to the company, who have used the depreciated replacement cost method for fair value.
+
+Revenue recognition
+
+Turnover represents income receivable from football and related commercial activities, exclusive of VAT. Gate receipts
+and other match day revenue are recognised as the games are played. The club also receives central distributions from
+the Football League and a solidarity payment from the Premier League that are beyond the direct contro! of the officers of
+the club. These distributions are recognised evenly over the course of the financial year.
+
+Revenue derived from season tickets is credited to income in the period to which it relates. Amounts received in advance
+are credited to deferred income in the balance sheet.
+
+Sponsorship, advertising and simitar commercial income is recognised over the duration of the respective contracts.
+Amounts received in advance are credited to deferred income in the balance sheet.
+
+Facility fees received for live coverage or highlights are taken when earned.
+
+Taxation
+
+The taxation expense represents the aggregate amount of current and deferred tax recognised in the reporting period.
+Tax is recognised in profit or loss, except to the extent that it relates to items recognised in other comprehensive income
+or directly in equity. In this case, tax is recognised in other comprehensive income or directly in equity, respectively.
+
+Current tax is recognised on taxable profit for the current and past periods. Current tax is measured at the amounts of tax
+expected to pay or recover using the tax rates and laws that have been enacted or substantively enacted at the reporting
+date.
+
+Deferred tax is recognised in respect of all timing differences at the reporting date. Unrelieved tax losses and other
+deferred tax assets are recognised to the extent that it is probable that they will be recovered against the reversal of
+deferred tax liabilities or other future taxable profits. Deferred tax is measured using the tax rates and laws that have
+been enacted
+
+Foreign currencies
+
+Foreign currency transactions are initially recorded in the functional currency, by applying the average exchange rate as
+at the date of the transaction. Monetary assets and liabilities denominated in foreign currencies are translated at the
+exchange rate ruling at the reporting date, with any gains or losses being taken to the profit and loss account.
+
+20
+
+--- pág. 23 ---
+
+Leeds United Football Club Limited
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+3. Accounting policies (continued)
+
+Intangible assets - goodwill
+
+Costs incurred whilst the Club was in administration in 2007/08 were capitalised as goodwill and are being amortised in
+equal instalments over 50 years based on the longevity of the club and the strength of the brand. Goodwill is reviewed
+annually to ensure that it is not impaired.
+
+Goodwill has also arisen on business acquisitions and represents the excess of the cost of the acquisition over the
+company's interest in the net amount of the identifiable assets, liabilities and contingent liabilities of the acquired
+business. Goodwill is measured at cost less accumulated amortisation and accumulated impairment losses. It is
+amortised on a straight-line basis over its useful life which the directors consider to be 5 years.
+
+Negative goodwill is also recognised where the net amount of identifiable assets, liabilities and provisions for contingent
+liabilities exceeds the cost of the business acquisition. The excess is recognised in profit or loss based on the fair value of
+the non-monetary assets acquired in the period expected to be benefitted. The freehold property is not depreciated and
+therefore no negative goodwill is recognised in the statement of comprehensive income.
+
+Intangible assets - player registrations
+
+The costs associated with the acquisition of players’ registrations are capitalised as intangible fixed assets and amortised,
+in equal annual instalments, over the period of the respective players’ contract. The transfer fee levy refund received
+during the year is credited against additions to intangible assets. Players’ registrations are written down for impairment
+when the carrying amount exceeds the amount recoverable through use or sale.
+
+Intangible assets - trademarks
+Expenditure on trademarks is capitalised in intangible fixed assets and amortised in equal annual instalments over 10
+
+years.
+
+Intangible assets - computer software
+Expenditure on computer software is capitalised in intangible fixed assets and amortised in equal annual instalments over
+
+2 to 7 years.
+
+Intangible assets are initially recorded at cost, and are subsequently stated at cost less any accumulated amortisation
+and impairment losses. Any intangible assets carried at revalued amounts, are recorded at the fair value at the date of
+revaluation, as determined by reference to an active market, less any subsequent accumulated amortisation and
+subsequent accumulated impairment losses.
+
+Intangible assets acquired as part of a business combination are only recognised separately from goodwill when they
+arise from contractual or other legal rights, are separable, the expected future economic benefits are probable and the
+cost or value can be measured reliably.
+
+Tangible assets
+Tangible assets are initially recorded at cost, and subsequently stated at cost less any accumulated depreciation and
+
+impairment losses.
+
+Depreciation
+Depreciation is calculated so as to write off the cost or valuation of an asset, less its residual value, over the useful
+economic life of that asset as follows:
+
+Leasehold land and buildings - 5 - 34 years straight line
+Alterations and improvements - 2 - 20 years straight line
+Fixtures and fittings - 2 - 20 years straight line
+
+Assets under the course of construction are not depreciated until they are brought into productive use.
+
+Freehold property is not depreciated as the lessee is required to keep the property in a continual state of sound repair.
+Accordingly, the directors consider that the life of the property is so long and the residual value, based on prices
+prevailing at the time of acquisition, is so high that any depreciation would be insignificant.
+
+21
+
+--- pág. 24 ---
+
+Leeds United Football Club Limited
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+3. Accounting policies (continued)
+
+Investments in subsidiary undertakings
+Investments in subsidiary undertakings comprise the company’s investment in shares and are stated at cost less any
+provision for impairment.
+
+Impairment of fixed assets
+
+A review for indicators of impairment is carried out at each reporting date, with the recoverable amount being estimated
+where such indicators exist. Where the carrying value exceeds the recoverable amount, the asset is impaired
+accordingly. Prior impairments are also reviewed for possible reversal at each reporting date.
+
+Stocks
+Stocks are measured at the lower of cost and estimated selling price less costs to complete and sell. Cost includes all
+costs of purchase, costs of conversion and other costs incurred in bringing the stock to its present location and condition.
+
+Leases
+Assets under finance leases contracts are capitalised at their fair value on the inception of the lease and depreciated over
+their estimated useful life. Finance charges are allocated evenly over the period of the lease in proportion to the capital
+
+amount outstanding. :
+Operating lease rentals are charged to profit and loss in equal amounts over the term of the lease.
+
+Financial instruments
+A financial asset or a financial liability is recognised only when the entity becomes a party to the contractual provisions of
+
+the instrument.
+
+Basic financial instruments are initially recognised at the transaction price, unless the arrangement constitutes a financing
+transaction, where it is recognised at the present value of the future payments discounted at a market rate of interest for
+a similar debt instrument.
+
+Debt instruments are subsequently measured at amortised cost.
+
+Pension costs
+
+For defined contribution schemes the pension cost charged in the year represents contributions payable by the group to
+various pension schemes. For defined benefit schemes the expected cost of providing pensions, as calculated
+periodically by professionally qualified actuaries, is charged to the profit and loss account so as to spread the cost over
+the service lives of employees in such a way that the pension cost is a substantially level percentage of current and
+expected future pensionable payroll.
+
+Signing-on fees
+
+Signing-on fees represent a normal part of the employment cost of the player and as such are to be charged to the profit
+and loss account over the term of the contract, except in the circumstances of a player disposal. In that case, any
+remaining signing-on fees due are allocated in full against the profit on disposal of players’ registrations in the year in
+which the player disposal is made.
+
+4. Turnover
+
+Turnover arises from:
+
+2024 2023
+£ £
+Gate receipts 30,633,661 29,921,168
+Television and broadcasting income 2,626,275 17,442,130
+Merchandising income 25,410,723 24,017,167
+Central distributions 51,017,155 94,102,405
+Other commercial revenue 9,496,047 18,302,149
+Catering income 8,314,712 5,736,823
+Educational services §9,707 161,705
+
+127,558,280 189,683,547
+
+22
+
+--- pág. 25 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+4.
+
+Turnover (continued)
+
+The whole of the turnover is attributable to the principal activity of the group wholly undertaken in the United Kingdom.
+
+Operating loss
+
+Operating profit or loss is stated after charging/crediting:
+
+2024 2023
+£ £
+Amortisation of intangible assets §9,590,307 81,136,170
+Depreciation of tangible assets 4,855,858 4,629,405
+Impairment of intangible assets recognised in:
+
+Administrative expenses 7,475,304 20,347,360
+Gains on disposal of tangible assets (100) -
+Impairment of trade debtors 480 24,990
+Foreign exchange differences (1,080,413) (1,456,150)
+Operating lease costs 2,649,057 1,354,366
+Auditor's remuneration
+
+2024 2023
+£ £
+Fees payable for the audit of the financial statements 27,778 22,000
+Fees payable to the company's auditor for other services:
+Audit-related assurance services 8,550 9,000
+Taxation compliance services 24,705 22,690
+Other assurance services 11,722 10,100
+Other non-audit services - 6,660
+44,977 48,450
+Staff costs
+The average number of persons employed by the group during the year, including the directors, amounted to:
+2024 2023
+No. No.
+Full-time playing staff 56 58
+Apprentices 21 17
+Football team management 44 44
+Management/administration 166 156
+Casual match day staff 1,119 914
+1,406 1,189
+The aggregate payroll costs incurred during the year, relating to the above, were:
+2024 2023
+£ £
+Wages and salaries 73,952,221 129,397,614
+Social security costs 9,797,841 16,211,403
+Other pension costs ; 280,374 248,079
+84,030,436 145,857,096
+
+Included in wages and salaries are redundancy and ex-gratia payments of £160,828 (2023: £9,523,474).
+
+23
+
+--- pág. 26 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+10.
+
+11,
+
+Directors’ remuneration
+
+The directors' aggregate remuneration in respect of qualifying services was:
+
+2024 2023
+£ £
+Remuneration 381,978 4,339,795
+Company contributions to defined benefit pension plans 18,821 17,618
+400,799 1,357,413
+
+The remuneration of the highest paid director in respect of qualifying services is £381,978 (2023: £1,399,795) for
+aggregate remuneration and £18,821 (2023: £17,618) for company contributions to defined contribution pension plans.
+
+The aggregate remuneration comprised: £522,195 of base remuneration for the year ending June 2023; salary back pay
+for the three years ending June 2022, 2021 and 2020; delayed bonus payments for promotion from the Championship;
+two years of Premier League retention/positional bonuses; and recognition for securing equity investment.
+
+The number of directors who are accruing benefits under defined contribution pension schemes was one (2023 - one).
+
+Interest receivable and similar income
+
+2024 2023
+£ £
+Interest receivable and similar income 3,395,256 11,909,865
+
+Other interest receivable and similar income includes £2,764,718 (2023: £11,788,576) relating to the revaluation to fair
+value of the financial liability described in note 21 and £339,825 (2023: £nil) relating to the unwinding of the discount of
+the financial asset described in note 21. ,
+
+Interest payable and similar expenses
+
+2024 2023
+£ £
+Interest on obligations under finance leases contracts 21,933 24,697
+Other interest payable and similar charges 21,625,522 12,960,592
+
+21,647,455 12,985,289
+
+Other interest payable and similar charges includes £8,818,968 (2023: £nil) relating to the revaluation to fair value of the
+financial asset described in note 21 and £7,290,040 (2023: £6,651,752) relating to the unwinding of the discount of the
+financial liability described in note 21.
+
+Tax on loss
+
+Reconciliation of tax income
+
+The tax assessed on the loss on ordinary activities for the year is higher than (2023: higher than) the standard rate of
+corporation tax in the UK of 25% (2023: 20.50%).
+
+2024 2023
+£ £
+Loss on ordinary activities before taxation (60,811,485) (33,704,130)
+Loss on ordinary activities by rate of tax (15,202,872) (6,909,347)
+Effect of expenses not deductible for tax purposes 574,666 (16,783)
+Effect of capital allowances and depreciation 725,865 457,812
+Unused tax losses : 15,794,200 6,720,424
+Other timing differences (1,891,859) (252,106)
+
+Tax on loss -
+
+24
+
+--- pág. 27 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+11. Tax on loss (continued)
+
+Factors that may affect future tax income
+
+The company has losses of approximately £291 million (2023: £240 million) to carry forward against future profits.
+
+12. Intangible assets
+
+Group
+
+Cost
+
+At 1 Jul 2023
+Additions
+
+Disposals
+Acquisitions through
+business
+combinations
+
+At 30 Jun 2024
+
+Amortisation
+
+At 1 Jul 2023
+Charge for the year
+Disposals
+Impairment losses
+
+At 30 Jun 2024
+
+Carrying amount
+At 30 Jun 2024
+
+At 30 Jun 2023
+
+Company
+
+Cost
+
+At 1 July 2023
+Additions
+Disposals
+
+At 30 June 2024
+
+Amortisation
+
+At 1 July 2023
+Charge for the year
+Disposals
+Impairment losses
+
+At 30 June 2024
+
+Carrying amount
+At 30 June 2024
+
+At 30 June 2023
+
+Negative Computer Player
+goodwill Goodwill Trademarks software registrations Total
+£ £ £ £ £
+
+- 6,403,883 60,229 865,585 381,771,631 389,101,328
+
+- - - 160,817 38,206,445 38,367,262
+- - - — (139,169,011) (139,169,011)
+(34,582,431) - - - - (34,582,431)
+(34,582,431) 6,403,883 -60,229 1,026,402 280,809,065 253,717,148
+- 2,314,421 25,264 532,474 181,597,605 184,469,764
+
+- 119,948 4,983 106,526 59,358,850 59,590,307
+- - - - (103,723,448) (103,723,448)
+
+- - - - 7,475,305 7,475,305
+
+- 2,434,369 30,247 639,000 144,708,312 147,811,928
+(34,582,431) 3,969,514 29,982 387,402 136,100,753 105,905,220
+- 4,089,462 34,965 333,111 200,174,026 204,631,564
+
+Computer Player
+Goodwill Trademarks software registrations Total
+£ £ £ £ £
+
+5,984,321 60,229 865,585 381,771,631 388,681,766
+
+- - 160,817 38,206,445 38,367,262
+- - - (139,169,011) (139,169,011)
+
+5,984,321 60,229 1,026,402 280,809,065 287,880,017
+
+1,894,859 25,264 532,474 181,597,605 184,050,202
+
+119,948 4,983 106,526 59,358,850 59,590,307
+- - - (103,723,448) (103,723,448)
+
+- - _ 7,475,305 7,475,305
+
+2,014,807 30,247 639,000 144,708,312 147,392,366
+
+3,969,514 29,982 387,402 136,100,753 140,487,651
+
+4,089,462 34,965 333,111 200,174,026 204,631,564
+
+A total of £7,475,305 (2023: £20,347,359) has been charged to the profit and loss in respect of an impairment following a
+review of the First Team Squad.
+
+25
+
+--- pág. 28 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+13. Tangible assets
+
+Group
+
+Cost
+
+At 1 July 2023
+
+Additions
+
+Disposals
+
+Acquisitions through business
+combinations
+
+Disposals through business
+combinations
+
+Transfers
+
+At 30 June 2024
+
+Depreciation
+
+At 1 July 2023
+
+Charge for the year
+Disposals
+
+Disposals through business
+combinations
+
+Transfers
+
+At 30 June 2024
+
+Carrying amount
+At 30 June 2024
+
+At 30 June 2023
+Company
+
+Cost
+
+At 1 July 2023
+Additions
+Transfers
+
+At 30 June 2024
+
+Depreciation
+
+At 1 July 2023
+Charge for the year
+Transfers
+
+At 30 June 2024
+
+Carrying amount
+At 30 June 2024
+
+At 30 June 2023
+
+Fixtures,
+Freehold Leasehold land Alterations and fittings and
+property and buildings improvements equipment Total
+£ £ £ £ £
+- 4,562,678 28,844,468 18,328,945 §1,736,091
+- - 1,774,062 2,985,517 4,759,579
+- - - (33,648) (33,648)
+45,200,000 - - - 45,200,000
+- (4,471,680) (26,116,686) ~ (30,588,366)
+- - 370,394 (370,394) -
+45,200,000 90,998 4,872,238 20,910,420 71,073,656
+- 1,854,060 16,113,393 11,354,407 29,321,860
+- 210,632 2,629,156 2,016,070 4,855,858
+- - - (22,826) (22,826)
+- (2,045,374) (16,018,781) ~ (18,064,155)
+- - 22,040 (22,040) -
+- 19,318 2,745,808 13,325,611 16,090,737
+45,200,000 71,680 2,126,430 7,584,809 54,982,919
+- 2,708,618 12,731,075 6,974,538 22,414,231
+Leasehold land Alterations and Fixtures, fittings
+and buildings improvements and equipment Total
+£ £ £ £
+3,723,348 27,348,947 16,717,527 47,789,822
+- 1,774,062 2,956,559 4,730,621
+- 370,395 (370,395) -
+3,723,348 29,493,404 19,303,691 §2,520,443
+1,255,214 15,019,932 9,828,839 26,103,985
+171,425 2,566,650 1,986,126 4,724,201
+- 22,040 (22,040) -
+1,426,639 17,608,622 11,792,925 30,828,186
+2,296,709 11,884,782 7,510,766 21,692,257
+2,468, 134 12,329,015 6,888,688 21,685,837
+
+The directors have reviewed the carrying amount of both the tangible and intangible assets and are satisfied that they are
+not impaired other than as described in note 12.
+
+On 27 March 2024 a freehold property was acquired. £2,426,307 of leasehold land and buildings and £10,097,906 of
+alterations and improvements were already assets of the group, and as part of the transaction, these assets were
+disposed of and included as an acquisition through business combinations to agree to the valuation of the freehold
+
+property.
+
+26
+
+--- pág. 29 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+13.
+
+14.
+
+Tangible assets (continued)
+Finance leases contracts
+
+Included within the carrying value of tangible assets are the following amounts relating to assets held under finance
+leases agreements:
+
+Group Fixtures, fittings
+. and equipment
+£
+
+At 30 June 2024 1,069,364
+
+At 30 June 2023 . 1,736,410
+
+Company Fixtures, fittings
+
+and equipment
+
+At 30 June 2024 1,596,357
+
+At 30 June 2023 1,736,410
+Investments
+
+The group has no investments.
+
+Company Shares in group
+undertakings
+£
+Cost
+At 1 July 2023 4
+Additions 1
+At 30 June 2024 5
+
+Impairment
+At 1 July 2023 and 30 June 2024
+
+Carrying amount
+At 30 June 2024
+
+At 30 June 2023
+
+Lalo
+
+The parent company owns 100% of the ordinary share capital in the following companies, all of which are incorporated in
+England and Wales:
+
+Principal activity
+
+Leeds United Conference and Events Limited Conferencing and events
+‘ facilities
+
+Leeds United Media Limited Digital media and online
+advertising
+
+Leeds United College Limited Educational services
+Leeds United Women Football Club Limited Football club
+Elland Road Limited (from 27 March 2024) Investment property
+
+27
+
+--- pág. 30 ---
+
+Leeds United Football Club Limited
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+15. Stocks
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Goods held for resale 4,791,268 10,276,398 4,748,585 10,230,271
+16. Debtors
+Debtors falling due within one year are as follows:
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Trade debtors 9,181,384 3,712,481 8,756,979 3,487,570
+Amounts owed by group undertakings - - 357,361 213,855
+Prepayments and accrued income 4,863,717 4,758,546 4,657,375 4,650,130
+Transfer fee debtors 19,470,640 1,268,281 19,470,640 1,268,281
+Other debtors 3,118,967 1,753,910 1,212,890 1,740,530
+36,634,708 11,493,218 34,455,245 11,360,366
+Debtors falling due after one year are as follows:
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Prepayments and accrued income 3,940,281 4,187,500 3,940,281 4,187,500
+Transfer fee debtors 49,482,763 889,974 49,482,763 889,974
+53,423,044 5,077,474 §3,423,044 §,077,474
+17. Creditors: amounts falling due within one year
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Other loans 36,842,045 41,605,740 36,842,045 41,605,740
+Trade creditors 7,742,157 19,607,784 7,414,550 19,078,349
+Amounts owed to group undertakings - 5,178,136 14,088,162 14,831,327
+Accruals and deferred income 50,392,008 44,313,416 49,862,326 44,089,990
+Social security and other taxes 11,877,907 7,762,351 11,665,005 7,539,460
+Obligations under finance leases contracts 335,120 325,437 335,120 325,437
+Transfer fee creditors 73,918,064 73,613,689 73,901,917 73,613,689
+Amounts owed to related parties - 10,648,904 - 10,648,904
+Other creditors 1,424,725 1,386,222 1,402,057 1,373,028
+182,532,026 204,441,679 195,511,182 213,105,924
+
+Included in accruals and deferred income are £22,384,687 (2023: £15,044,328) representing advance payment of tickets
+and sponsorship that would only become a liability of the company should it fail to fulfil all of its fixtures for future
+
+seasons.
+
+Obligations under finance leases are secured on the related assets.
+
+The other loans of £36,842,045 (2023: £41,605,740) are secured on the parachute payments of the 2024/25 season.
+
+28
+
+--- pág. 31 ---
+
+Leeds United Football Club Limited °
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+18. Creditors: amounts falling due after more than one year
+
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Amounts owed to group undertakings 22,450,000 - 22,450,000 -
+Accruals and deferred income 517,391 4,667,211 517,391 4,667,211
+Obligations under finance leases contracts 670,370 725,172 670,370 725,172
+Transfer fee creditors 68,058,669 116,108,456 68,058,669 116,108,456
+Pension 247,888 298,066 247,888 298,066
+Amounts owed to related parties - 22,867,964 - 22,867,964
+91,944,318 144,666,869 91,944,318 144,666,869
+
+Obligations under finance leases are secured on related assets.
+See note 29 for interest rate and repayment date of the amounts owed to group undertakings.
+19. Finance leases contracts
+
+The total future minimum lease payments under finance leases contracts are as follows:
+
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Not later than 1 year 329,723 366,922 329,723 366,922
+Later than 1 year and not later than 5 years 675,813 743,973 675,813 743,973
+1,005,536 1,110,895 1,005,536 1,110,895
+Less: future finance charges (46) (60,286) (45) (60,286)
+Present value of minimum lease payments 1,005,490 1,050,609 1,005,491 1,050,609
+
+20. Employee benefits
+
+Defined contribution schemes
+
+Certain professional footballing staff are members of the Football League Players Retirement Income Scheme, a
+non-contributory defined contribution scheme. In addition the company operates a defined contribution scheme open to
+all other employees. Costs of all defined contribution schemes, totalling £113,714 (2023: £108,298), have been charged
+to the profit and loss account in the period.
+
+Defined benefit scheme
+
+Certain other professional footballing staff are members of the Football League Limited Pension and Life Assurance
+Scheme ("FLLPLAS"), a defined benefit scheme. Under section 28 of FRS 102 the FLLPLAS would be treated as a
+defined benefit multi-employer scheme. The assets of the scheme are held separately from those of the company, being
+invested with insurance companies. Sufficient information is not available for full disclosure.
+
+Following a review of the Minimum Funding Requirement ("MFR") of the FLLPLAS, accrual of benefits of the final salary
+section of the scheme was suspended as at 31 August 1999. In light of the exceptional circumstances affecting the
+scheme, the trustees of the scheme commissioned an independent actuary's report on the MFR position and a
+substantial deficit was identified. Under the Pensions Act 1985, participating employers will be required to contribute to
+the deficiency. The latest actuarial valuation of the scheme was carried out as at 1 September 2020. The allocation of the
+deficit under this valuation is repayable at £9,552 per month effective from 1 September 2022.
+
+29
+
+--- pág. 32 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+21.
+
+22.
+
+23.
+
+Financial instruments
+The carrying amount for each category of financial instrument is as follows:
+
+Financial assets measured at fair value through profit or loss
+
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Financial assets measured at fair value through
+profit or loss 46,520,857 46,520,857
+
+Financial liabilities measured at fair value through profit or loss
+
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Financial liabilities measured at fair value
+through profit or loss 134,455,617 128,982,368 134,455,617 128,982,368
+
+A financial asset of £46,520,857 (2023: £nil) relates to transfer fee debtors. The debtors are recognised at the present
+value of future payments discounted at a market rate of interest for a similar debit instrument, deemed to be 6%, resulting
+in a fair value adjustment of £8,818,968 (2023: f£nil). The deemed interest receivable of £339,825 (2023: fnil) is
+recognised in interest receivable and transferred to the unrealised profit reserve. The financial asset is included in
+transfer fee debtors and is is repayable in fine with the transfer agreements.
+
+A financial liability of £134,455,617 (2023: £128,982,368) relates to transfer fee creditors. The creditors are recognised at
+the present value of future payments discounted at a market rate of interest for a similar debt instrument, deemed to be
+6%, resulting in a fair value adjustment of £2,764,718 (2023: £11,788,576). The deemed interest payable of £7,290,040
+(2023: £6,651,752) is recognised in interest payable and transferred to the unrealised profit reserve. This financial liabitity
+is included in in transfer fee creditors and is repayable in line with the transfer agreements.
+
+Called up share capital
+
+Issued, called up and fully paid
+
+2024 2023
+No. £ No. £
+Ordinary A shares of £1 each - - 27,630,245 27,630,245
+Ordinary B shares of £1 each - - 11,000,000 11,000,000
+Ordinary A1 shares of £1 each - - 14,306,497 14,306,497
+Ordinary shares of £1 each 52,936,742 §2,936,742 - -
+52,936,742 52,936,742 52,936,742 52,936,742
+
+On 25 September 2023 the company reclassified 14,306,497 A1 ordinary shares. 27,630,245 A ordinary shares and
+11,000,000 B ordinary shares all into ordinary shares.
+
+Reserves
+
+Share premium account - This reserve records the amount above the nominal value received for shares sold, less
+transaction costs.
+
+Unrealised profit reserve - This reserve records movements in the fair value of financial instruments.
+
+Profit and loss account - This reserve records retained earnings and accumulated losses.
+
+30
+
+--- pág. 33 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+24.
+
+25.
+
+26.
+
+27.
+
+Analysis of changes in net debt
+
+At 1 Jul 2023 Cash flows At 30 Jun 2024
+
+£ £ £
+Cash at bank and in hand 1,560,857 3,448,137 5,008,994
+Debt due within one year (47,109,313) 9,932,146 (37,177,167)
+Debt due after one year (725,172) (22,395,198) (23,120,370)
+
+(46,273,628) (9,014,915) (55,288,543)
+
+Business combinations
+Acquisition of Elland Road Limited
+
+The fair value of consideration paid in relation to the acquisition of Elland Road Limited is as follows:
+
+£
+Cash 1
+The fair value of amounts recognised at the acquisition date in relation to Elland Road Limited are as follows:
+Fair value
+£
+Tangible assets acquired 32,675,787
+Other debtors acquired 1,923,065
+Cash and cash equivalents acquired 655
+Other creditors assumed (17,075)
+34,582,432
+Goodwill on acquisition (34,582,431)
+1
+Operating leases
+The total future minimum lease payments under non-cancellable operating leases are as follows:
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Not later than 1 year 2,648,870 2,649,057 2,648,870 2,649,057
+Later than 1 year and not iater than 5 years 7,525,595 9,221,497 7,525,595 9,221,497
+Later than 5 years 12,509,000 12,842,000 12,509,000 12,842,000
+22,683,465 24,712,554 22,683,465 24,712,554
+
+Contingencies
+
+Under the terms of the financial provisions relating to transfer of player registrations, future payments of up to £9,580,109
+(2023: £6,456,484) may be payable dependent on the club's promotion to (2023: retention of) the FA Premier League
+status and/or players appearances for the club. Promotion to (2023: retention of) FA Premier League status may also
+incur bonuses payable of £19,247,061 (2023: £21,857,912) conditional on the performance of both players and football
+management throughout the 2024/25 season.
+
+At the year end there were a number of legal claims outstanding against the company. These claims are being
+challenged by the directors and so there is significant uncertainty over their outcome. For this reason no provision has
+been included.
+
+31
+
+--- pág. 34 ---
+
+Leeds United Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+Year ended 30 June 2024
+
+28.
+
+29.
+
+Related party transactions
+
+Key management personnel include all persons that have authority and responsibility for planning, directing and
+controlling the activities of the company. The total compensation paid to key management personnel for services
+provided to the company was £819,568 (2023: £2,464,983).
+
+Entities with control over the company
+
+2024 2022
+£ £
+Creditors ; 22,450,000 5,178,133
+Interest payable 3,580,173 50,791
+Management charges payable - 1,200,000
+Debtors - 3,683
+Management charges receivable 1,211,900 -
+Capital contributions 140,736,100 -
+Rent payable 423,836 -
+
+Creditors includes:
+*  £22,450,000 (2023: £22,867,964) is repayable in April 2026, attracts an interest rate of 6% and is listed on The
+
+International Stock Exchange. Total advances in the period were £nil (2023: Enil).
+
+¢ A loan of £43,601,701 (2023: £6,600,904) with advances during the year of £35,000,000 (2023: £6,600,000) and
+repaid during the year £nit (2023: £1,000,658). Interest of 5% (2023: 5%) was waived during the year. This balance
+was converted into a capital contribution in September 2023.
+
+* £4,276,685 (2023: £4,048,000) is a loan that is unsecured, interest free and repayable on demand. This balance
+was convetted into a capital contribution in September 2023.
+
+The total capital contributions, from a shareholder, made during the year of £140,736,100 comprised of: £28,300,000 and
+£24,000,000 in August 2023; £65,648,000 in September 2023; £2,000,000 in October 2023; £6,000,000 in February
+2024; £3,000,000 in April 2024; £8,000,000 in May 2024; and £3,788,100 in June 2024.
+
+Other related parties
+
+2024 2022
+£ £
+Management charges payable - 200,000
+Sales - 35,398
+Purchases - (170,000)
+Creditor 186,843 34,410,543
+Interest payable - 1,370,346
+Rent payable 1,276,174 1,700,000
+
+The company has taken advantage of the exemption in section 33 of FRS 102 not to disclose transactions with wholly
+owned subsidiary undertakings.
+
+Controlling party
+
+Aser Group Holding Pte Limited, a company registered in Singapore, was the ultimate parent company, A Radrizzani was
+the ultimate controlling party and Greenfield Investment Pte Limited was the immediate parent company until 25
+September 2023. On 25 September 2023 the 49ers Enterprises Global Footba!l Group LLC, a company registered in
+USA, purchased the remaining share capital of Leeds United Football Club Limited and became the immediate parent
+
+company.
+
+The largest and smallest group in which the results of the company are consolidated is Leeds United Football Club
+Limited, the consolidated financial statements of which are available from Elland Road, Leeds, LS11 OES.
+
+32

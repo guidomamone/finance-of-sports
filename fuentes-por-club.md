@@ -357,6 +357,46 @@ un pago que un agente no puede completar).
 - [Raja Casablanca](fuentes/Marruecos/Raja Casablanca.md) — SAS con Marsa Maroc al 60%, no consolida; pista OMPIC sin cerrar — Último chequeo: 2026-09-13
 - [Notas generales de Marruecos](fuentes/Marruecos/_notas-generales.md)
 
+### Alemania
+
+**Primer país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-16/17), recorrida en
+orden alfabético.** Los 18 clubes de la Bundesliga 2025/26 quedaron cubiertos entre dos canales:
+Unternehmensregister (el "Companies House alemán") para los que tienen sociedad propia, y el
+Finanzkennzahlen de la DFL (un solo PDF con los 18 clubes por ejercicio) para los que no. Ver
+`fuentes/Alemania/_notas-generales.md` y la sección 12 del skill de sourcing para el detalle
+completo.
+
+- [Borussia Dortmund](<fuentes/Alemania/Borussia Dortmund.md>) — 7 ejercicios reales (2018/19-2024/25), Geschäftsbericht completo, sin cargar aún — Último chequeo: 2026-09-17
+- [Bayern Munich](<fuentes/Alemania/Bayern Munich.md>) — 4 ejercicios reales vía comunicado de la Junta, sin cargar aún — Último chequeo: 2026-09-17
+- [RB Leipzig](<fuentes/Alemania/RB Leipzig.md>) — 12 ejercicios reales, serie completa 2014-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [TSG Hoffenheim](<fuentes/Alemania/TSG Hoffenheim.md>) — 6 ejercicios reales descargados de 16 confirmados, sin cargar aún — Último chequeo: 2026-09-17
+- [Bayer Leverkusen](<fuentes/Alemania/Bayer Leverkusen.md>) — dead-end estructural (exención §264 HGB, socio único Bayer AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
+- [VfL Wolfsburg](<fuentes/Alemania/VfL Wolfsburg.md>) — dead-end estructural (exención §264 HGB, socio único Volkswagen AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
+- [Hamburger SV](<fuentes/Alemania/Hamburger SV.md>) — 4 ejercicios reales de 2 entidades (Fußball AG & Co. KGaA + e.V. matriz, no confundir) — Último chequeo: 2026-09-17
+- [Borussia Mönchengladbach](<fuentes/Alemania/Borussia Mönchengladbach.md>) — entidad real confirmada (GmbH activa), PDF pendiente de bajar (corte de tooling), duda de perímetro en dudas-por-club.md — Último chequeo: 2026-09-17
+- [Werder Bremen](<fuentes/Alemania/Werder Bremen.md>) — entidad confirmada, PDF pendiente de bajar — Último chequeo: 2026-09-17
+- [Eintracht Frankfurt](<fuentes/Alemania/Eintracht Frankfurt.md>) — entidad y filing confirmados, PDF pendiente de bajar — Último chequeo: 2026-09-17
+- [VfB Stuttgart](<fuentes/Alemania/VfB Stuttgart.md>) — entidad confirmada, PDF pendiente de bajar — Último chequeo: 2026-09-17
+- [1. FC Köln](<fuentes/Alemania/1. FC Köln.md>) — entidad y filing confirmados, PDF pendiente de bajar — Último chequeo: 2026-09-17
+- [FC Augsburg](<fuentes/Alemania/FC Augsburg.md>) — entidad y filing confirmados, PDF pendiente de bajar — Último chequeo: 2026-09-17
+- [1. FC Union Berlin](<fuentes/Alemania/1. FC Union Berlin.md>) — 100% e.V., balance real solo para socios, solo el agregado de la DFL — Último chequeo: 2026-09-17
+- [SC Freiburg](<fuentes/Alemania/SC Freiburg.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
+- [1. FSV Mainz 05](<fuentes/Alemania/1. FSV Mainz 05.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
+- [FC St. Pauli](<fuentes/Alemania/FC St. Pauli.md>) — 100% e.V., balance real solo para socios, solo el agregado de la DFL — Último chequeo: 2026-09-17
+- [1. FC Heidenheim](<fuentes/Alemania/1. FC Heidenheim.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
+- DFL Finanzkennzahlen — 7 ejercicios agregados (2018-2024) con Bilanz+GuV de los 18 clubes a la vez, en `Clubes/Alemania/_DFL-Finanzkennzahlen/` — Último chequeo: 2026-09-17
+- [Notas generales de Alemania](<fuentes/Alemania/_notas-generales.md>)
+
+### Arabia Saudita
+
+**Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada
+de dead-end estructural: varios clubes de la Saudi Pro League son sociedades anónimas CERRADAS
+controladas por el PIF (fondo soberano) desde la reforma de 2023 — mismo patrón que Chile OTODP o
+Sudáfrica (Pty) Ltd, donde la forma jurídica bloquea la publicación sin depender de cuánto se
+busque. NO es una conclusión verificada con la metodología del proyecto (REGLA 2 de este archivo) —
+si en el futuro se retoma, confirmar primero si algún club (o su controlante) cotiza en la Tadawul
+(bolsa saudí) antes de asumir que es dead-end total.
+
 ### Nigeria
 
 - [Notas generales de Nigeria](fuentes/Nigeria/_notas-generales.md) — dead-end a nivel liga completa (NPFL), clubes mayormente estatales sin registro CAC
