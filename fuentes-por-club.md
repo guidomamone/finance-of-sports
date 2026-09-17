@@ -558,6 +558,31 @@ y la sección 19 (propuesta) del skill de sourcing.
 - [Toulouse FC](<fuentes/Francia/Toulouse FC.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
 - [Notas generales de Francia](<fuentes/Francia/_notas-generales.md>)
 
+### Grecia
+
+**Noveno país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El ΓΕΜΗ
+(`publicity.businessportal.gr`) resultó gratis, sin login y descargable directo con `curl` — mejor
+canal del proyecto junto con Bélgica/Dinamarca. Los 14 clubes de la Super League Greece 2025/26
+cubiertos con documentos oficiales reales, sin ningún dead-end — el primer país del proyecto con
+100% de la liga top cubierta con un solo canal. Ver `fuentes/Grecia/_notas-generales.md` y la
+sección 20 del skill de sourcing.
+
+- [Olympiacos](<fuentes/Grecia/Olympiacos.md>) — 10 ejercicios 2015/16-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Panathinaikos](<fuentes/Grecia/Panathinaikos.md>) — 10 ejercicios 2015/16-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [AEK Athens](<fuentes/Grecia/AEK Athens.md>) — 9 ejercicios 2016/17-2024/25, ver dudas de archivos duplicados en dudas-por-club.md — Último chequeo: 2026-09-17
+- [AEL Larissa](<fuentes/Grecia/AEL Larissa.md>) — 10 ejercicios 2015/16-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [PAOK](<fuentes/Grecia/PAOK.md>) — 8 ejercicios 2016/17-2024/25 (falta 2017/18), sin cargar aún — Último chequeo: 2026-09-17
+- [Atromitos](<fuentes/Grecia/Atromitos.md>) — 9 ejercicios 2015/16-2024/25 (falta 2017/18), sin cargar aún — Último chequeo: 2026-09-17
+- [OFI Crete](<fuentes/Grecia/OFI Crete.md>) — 8 ejercicios 2017/18-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Levadiakos](<fuentes/Grecia/Levadiakos.md>) — 8 ejercicios 2017/18-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Panetolikos](<fuentes/Grecia/Panetolikos.md>) — 8 ejercicios 2015/16-2024/25 (faltan 2018/19 y 2020/21), sin cargar aún — Último chequeo: 2026-09-17
+- [Aris](<fuentes/Grecia/Aris.md>) — 7 ejercicios 2018/19-2024/25 (falta 2019/20), sin cargar aún — Último chequeo: 2026-09-17
+- [Asteras Tripolis](<fuentes/Grecia/Asteras Tripolis.md>) — 7 ejercicios 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Volos NFC](<fuentes/Grecia/Volos NFC.md>) — 7 ejercicios 2018/19-2024/25 (toda su vida), sin cargar aún — Último chequeo: 2026-09-17
+- [Panserraikos](<fuentes/Grecia/Panserraikos.md>) — 5 ejercicios 2020/21-2024/25 (refundación tras liquidación, ver duda de perímetro en dudas-por-club.md), sin cargar aún — Último chequeo: 2026-09-17
+- [Kifisia](<fuentes/Grecia/Kifisia.md>) — 4 ejercicios 2021/22-2024/25 (toda su vida), sin cargar aún — Último chequeo: 2026-09-17
+- [Notas generales de Grecia](<fuentes/Grecia/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada

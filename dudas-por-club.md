@@ -435,6 +435,31 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   hasta 2025) — no se confirmó si trae un desglose por segmento que aísle a Lyon, o si hace falta
   cruzarlo con el bilan individual de la SASP vía el agregado DNCG para tener el perímetro correcto.
 
+## Grecia — huecos genuinos sin explicación encontrada (sourcing, sesión 2026-09-17, no son preguntas para el club, son pendientes técnicos)
+
+- **Aris**: falta el ejercicio FY2019/20 pese a continuidad en el resto de los años — no se encontró
+  ningún depósito en el ΓΕΜΗ para ese año.
+- **Atromitos**: falta el ejercicio FY2017/18, mismo patrón.
+- **Panetolikos**: faltan FY2018/19 y FY2020/21 — el único club griego con dos huecos.
+- **PAOK**: falta el ejercicio FY2017/18.
+
+## AEK Athens (sourcing de Grecia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Cuál de las dos versiones del ejercicio 2021/22 usar?**: hay dos archivos depositados,
+  `Notes_IFRS_2022` y `FS_orthi_epanalipsi_2022` ("orthi epanalipsi" = repetición/corrección), sin
+  que el nombre del archivo aclare cuál es la versión final a usar.
+- **2 archivos sin fecha de ejercicio confirmada**: `AEK_oikonomika_stoixeia.pdf` y
+  `AEK_oikonomikes_katastaseis.pdf` (los IDs de ΓΕΜΗ más antiguos de la ficha del club) — falta
+  abrirlos y confirmar a qué ejercicio corresponden.
+
+## Panserraikos (sourcing de Grecia, sesión 2026-09-17, no bloqueó la descarga pero queda sin confirmar)
+
+- **¿El perímetro societario es el mismo si se completa la serie histórica?**: la entidad activa es
+  una refundación de 2020 tras la liquidación de la ΠΑΕ anterior (y existió una tercera entidad
+  "1964" ya borrada del registro). Si en el futuro se busca completar la serie más atrás de 2020,
+  hay que confirmar primero si esos balances viejos corresponden al mismo perímetro del club actual
+  o a la entidad liquidada.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
