@@ -111,75 +111,10 @@ consulta puntual, nunca lectura de corrido.
   .crest.sm{width:20px;height:20px;font-size:8px;border-width:1px;}
   .crest.on-light{border-color:rgba(0,0,0,.12);}
 
-  /* `hidden` pierde contra un `display` explícito: sin estas 3 reglas, esconder la
-     franja de recientes o alternar árbol/resultados con `el.hidden = true` no hace
-     nada, porque `.sel-recents{display:flex}` y `.sel-cols{display:grid}` ganan.
-     Bug real, visto en la primera prueba en el navegador: la franja "RECIENTES"
-     aparecía vacía en la primera visita. */
-  .sel-recents[hidden], .sel-results[hidden], .sel-cols[hidden]{display:none;}
   .sel-backdrop{position:fixed;inset:0;background:rgba(7,29,63,.45);z-index:80;display:none;}
   .sel-backdrop.open{display:block;}
-  .sel-panel{position:fixed;z-index:90;top:64px;left:50%;transform:translateX(-50%);width:min(1120px,calc(100vw - 24px));
-             max-height:calc(100vh - 96px);background:var(--card);border:1px solid var(--border);border-radius:12px;
-             box-shadow:0 18px 48px rgba(7,29,63,.3);display:none;flex-direction:column;overflow:hidden;}
-  .sel-panel.open{display:flex;}
-  .sel-search{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--border);}
-  .sel-search input{flex:1;border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:15px;outline:none;font-family:inherit;}
-  .sel-search input:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(10,43,92,.1);}
-  .kbd{font-size:10.5px;color:var(--muted);border:1px solid var(--border);border-radius:4px;padding:2px 5px;background:#fafaf8;white-space:nowrap;}
-  .sel-close{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--border);
-             font-size:13px;color:var(--text);cursor:pointer;line-height:1;padding:10px 13px;border-radius:8px;font-weight:600;font-family:inherit;}
-  .sel-close:hover{background:#f2f2ef;border-color:var(--azul);}
-  .sel-recents{padding:9px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px;flex-wrap:wrap;background:#fbfbf9;}
-  .sel-recents .r-label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;}
-  .r-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);background:#fff;border-radius:999px;
-          padding:3px 9px 3px 4px;font-size:12px;cursor:pointer;color:var(--text);font-family:inherit;}
-  .r-chip:hover{border-color:var(--azul);background:#eef2f9;}
-  /* Miller columns: los 5 niveles a la vista en desktop, uno por vez en móvil. */
-  .sel-cols{display:grid;grid-template-columns:126px 162px 172px 210px 1fr;min-height:0;flex:1;overflow:hidden;}
-  .sel-col{border-right:1px solid var(--border);overflow-y:auto;min-height:0;display:flex;flex-direction:column;}
-  .sel-col:last-child{border-right:none;}
-  .sel-col-head{position:sticky;top:0;background:#fbfbf9;border-bottom:1px solid var(--border);padding:7px 10px;
-                font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;z-index:2;}
-  .sel-row{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:none;border:none;font:inherit;
-           padding:8px 10px;cursor:pointer;color:var(--text);border-bottom:1px solid #f2f2ef;}
-  .sel-row:hover{background:#eef2f9;}
-  .sel-row.sel{background:var(--azul);color:#fff;}
-  .sel-row.sel .r-meta,.sel-row.sel .r-sub{color:#c3d2ea;}
-  .sel-row.disabled{opacity:.42;cursor:not-allowed;}
-  .sel-row.disabled:hover{background:none;}
-  .r-main{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.25;}
-  .r-name{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .r-sub{display:block;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .r-meta{font-size:10.5px;color:var(--muted);flex-shrink:0;margin-left:6px;font-variant-numeric:tabular-nums;}
-  .r-arrow{font-size:10px;color:#b8b8b3;flex-shrink:0;}
-  .sel-row.sel .r-arrow{color:#fff;}
-  .sel-row.all{background:#fbfbf9;}
-  .sel-row.all .r-name{font-weight:700;}
-  .sel-row.all.sel{background:var(--azul);}
-  /* Los 4 estados de calidad del dato. Mismos nombres que devuelve clubQuality()
-     en data/sources-view.js: full | mixed | placeholder | empty. */
-  .q-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-  .q-dot.full{background:var(--green);}
-  .q-dot.mixed{background:var(--oro);}
-  .q-dot.placeholder{background:#c4c4bf;}
-  .q-dot.empty{background:transparent;border:1px dashed #c4c4bf;}
-  .sel-results{overflow-y:auto;flex:1;min-height:0;}
-  .res-group{padding:6px 14px 2px;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
-             font-weight:800;background:#fbfbf9;border-bottom:1px solid var(--border);}
-  .sel-empty{padding:34px 14px;text-align:center;color:var(--muted);font-size:13.5px;line-height:1.6;}
   .sel-foot{border-top:1px solid var(--border);padding:8px 14px;display:flex;align-items:center;gap:14px;
             background:#fbfbf9;font-size:11.5px;color:var(--muted);flex-wrap:wrap;}
-  .legend-item{display:inline-flex;align-items:center;gap:5px;}
-  .sel-foot .spacer{flex:1;}
-  .foot-close{background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px 14px;
-              font-size:12.5px;font-weight:600;color:var(--text);cursor:pointer;margin-left:12px;font-family:inherit;}
-  .foot-close:hover{background:var(--azul);color:#fff;border-color:var(--azul);}
-  .sel-crumbs{display:none;gap:4px;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);flex-wrap:wrap;background:#fbfbf9;}
-  .crumb{background:none;border:none;font:inherit;font-size:12px;color:var(--azul);cursor:pointer;padding:2px 4px;border-radius:4px;}
-  .crumb:hover{background:#eef2f9;}
-  .crumb.cur{color:var(--text);font-weight:700;}
-  .crumb-sep{color:#c4c4bf;font-size:10px;}
 
   @media (max-width:900px){
     /* EL NAV PASA A SU PROPIA FILA (Versión 137). El botón de club mide ~210px contra
@@ -193,58 +128,12 @@ consulta puntual, nunca lectura de corrido.
     nav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
     nav button{font-size:12.5px;padding:7px 10px;}
     .logo{min-width:0;overflow:hidden;}
-    /* Una columna por vez + breadcrumb clickeable. El nav del header ya se recorta
-       abajo de ~850px (to-do 9), así que el panel no puede empeorar eso: en móvil
-       el botón de club se estira y el resto cede espacio antes que él. */
-    .sel-cols{grid-template-columns:1fr;}
-    .sel-col{display:none;border-right:none;}
-    .sel-col.active-pane{display:flex;}
-    .sel-crumbs{display:flex;}
-    .sel-panel{top:8px;max-height:calc(100vh - 16px);}
+    /* El nav del header ya se recorta abajo de ~850px (to-do 26): en móvil el botón
+       de club se estira y el resto cede espacio antes que él. */
     .cb-wrap{min-width:0;flex:1;display:flex;justify-content:flex-end;}
     .club-btn{min-width:0;flex:1;max-width:210px;}
-    /* Si algo tiene que salir por falta de espacio, que sea el texto informativo,
-       nunca la salida: el conteo se esconde antes que "Cerrar sin cambiar". */
-    .sel-foot{gap:8px;}
-    .sel-foot .spacer{display:none;}
-    .sel-foot .foot-count{display:none;}
-    .foot-close{margin-left:auto;padding:10px 14px;}
   }
 
-  /* ---------- COLD START: la portada de la primera visita (Versión 137) ---------- */
-  .hero{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;
-        border-radius:14px;padding:38px 30px 30px;margin-bottom:28px;}
-  .hero[hidden]{display:none;}
-  .hero h1{font-size:29px;margin:0 0 8px;color:#fff;}
-  .hero p{color:#bfcde6;font-size:14.5px;margin:0 0 22px;max-width:600px;line-height:1.55;}
-  .hero .hero-foot{font-size:12px;color:#8fa3c4;margin:22px 0 0;}
-  .hero .hero-error{background:rgba(181,55,43,.25);border:1px solid #e08d84;color:#ffd9d4;
-                    border-radius:8px;padding:9px 12px;font-size:13px;margin:14px 0 0;}
-  .hero .hero-error[hidden]{display:none;}
-  .hero-search{display:flex;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:4px 4px 4px 14px;max-width:560px;}
-  .hero-search input{flex:1;border:none;outline:none;font-size:15.5px;padding:11px 0;background:none;font-family:inherit;color:var(--text);}
-  .hero-search button{background:var(--oro);color:var(--azul-dark);border:none;border-radius:7px;
-                      padding:11px 16px;font-weight:800;font-size:13.5px;cursor:pointer;white-space:nowrap;font-family:inherit;}
-  .hero-quick{margin-top:22px;}
-  .hero-quick .hq-label{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#8fa3c4;font-weight:800;margin-bottom:10px;}
-  .hq-row{display:flex;gap:8px;flex-wrap:wrap;}
-  .hq-club{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
-           color:#fff;border-radius:9px;padding:7px 12px 7px 7px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;}
-  .hq-club:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
-  .hq-club .hq-sub{font-weight:400;color:#a8b8d4;font-size:11.5px;}
-  .hq-league{background:none;border:1px solid rgba(255,255,255,.25);color:#cfdaec;border-radius:999px;
-             padding:6px 13px;font-size:12.5px;cursor:pointer;font-family:inherit;}
-  .hq-league:hover{border-color:var(--oro);color:var(--oro);}
-  /* La vía de vuelta a la portada, arriba del árbol del selector. */
-  .sel-home{padding:8px 14px;border-bottom:1px solid var(--border);background:#fbfbf9;}
-  .sel-home[hidden]{display:none;}
-  .sel-home button{background:none;border:none;font:inherit;font-size:12.5px;color:var(--azul);cursor:pointer;
-                   padding:2px 0;text-decoration:underline;text-underline-offset:2px;}
-  .sel-home button:hover{color:var(--azul-dark);}
-  @media (max-width:900px){
-    .hero{padding:26px 18px 22px;}
-    .hero h1{font-size:23px;}
-  }
   /* ======================================================================
      COMPARACIÓN ENTRE CLUBES (Versión 137). Un solo modelo cubre los 3 casos que
      pidió Guido (1 vs 1, N clubes, y club vs. promedio de liga): `subjects` es una
@@ -647,11 +536,133 @@ consulta puntual, nunca lectura de corrido.
   /* `display:flex` de una clase le gana al `display:none` que el navegador le da a
      [hidden]: sin esta regla, #vsSinClub se ve aunque esté hidden. */
   .fin-sel[hidden]{display:none;}
-  /* El aviso de "no se pudo cargar el club" salió de adentro del #coldHero (Versión 144),
-     así que ya no hereda su paleta oscura: acá va la versión sobre fondo claro. */
+  /* El aviso de "no se pudo cargar el club" vivía adentro del hero del cold start
+     (borrado en la Versión 146) y heredaba su paleta oscura: acá va sobre fondo claro. */
   .aviso-error{background:#fdecea;border:1px solid #e08d84;color:#8c2b21;border-radius:8px;
                padding:9px 12px;font-size:13px;margin:14px 0 0;}
   .aviso-error[hidden]{display:none;}
+
+  /* ===== EL SELECTOR PASO A PASO (Versión 146) =====
+     Reemplaza al panel de Miller columns. Un modal con los pasos apilados: el
+     resuelto se encoge a una línea, el actual se abre, los de abajo esperan.
+     Viene del prototipo 4 (etapa 3 del merge). */
+  .sel-modal{position:fixed;inset:0;z-index:90;display:none;align-items:flex-start;justify-content:center;
+             padding:34px 16px;overflow-y:auto;}
+  .sel-modal.open{display:flex;}
+  .modal-panel{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;border-radius:14px;
+               width:100%;max-width:760px;padding:18px 20px 22px;box-shadow:0 24px 60px rgba(7,29,63,.45);}
+  .modal-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .modal-h{font-size:20px;font-weight:800;flex:1;margin:0;}
+  .modal-x{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:8px;
+           width:30px;height:30px;font-size:15px;line-height:1;cursor:pointer;font-family:inherit;}
+  .modal-x:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
+  .modal-busca{display:flex;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:4px 4px 4px 14px;margin-bottom:16px;}
+  .modal-busca input{flex:1;border:none;outline:none;font-size:15px;padding:10px 0;background:none;font-family:inherit;color:var(--text);}
+  .modal-busca .lupa{color:var(--muted);font-size:15px;}
+
+  /* Un card por paso, con sus tres estados: resuelto, actual y pendiente.
+     `color` explícito: el panel de afuera es azul con texto blanco, y sin esto
+     cualquier texto del card que no traiga color propio nace blanco sobre blanco. */
+  .paso{background:var(--card);color:var(--text);border-radius:12px;margin-bottom:10px;overflow:hidden;
+        border:1px solid transparent;}
+  .paso.pendiente{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff;}
+  .paso.ahora{border-color:var(--oro);box-shadow:0 8px 24px rgba(7,29,63,.25);}
+  .paso-head{display:flex;align-items:center;gap:11px;padding:11px 14px;}
+  .paso-n{width:22px;height:22px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11.5px;
+          font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .paso.ahora .paso-n{background:var(--oro);color:var(--azul-dark);}
+  .paso.pendiente .paso-n{background:rgba(255,255,255,.12);color:#a8b8d4;}
+  .paso-ht{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1;}
+  .paso-t{font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted);}
+  .paso.pendiente .paso-t{color:#8fa3c4;}
+  .paso-v{font-size:15px;font-weight:700;color:var(--text);}
+  .paso-change{background:none;border:1px solid var(--border);color:var(--azul);border-radius:7px;
+               padding:4px 10px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;}
+  .paso-change:hover{border-color:var(--azul);background:#eef2f9;}
+  .paso-body{padding:2px 14px 14px;}
+  .paso-vacio{color:var(--muted);font-size:13.5px;margin:6px 0;}
+  .paso-ayuda{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
+
+  /* Las opciones. Grilla que se acomoda sola: en desktop entran 2 o 3 por fila, en
+     un teléfono queda una columna, sin una sola media query. */
+  .op-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
+  .op-grid.clubes{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));max-height:340px;overflow-y:auto;}
+  .op{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:#fff;border:1px solid var(--border);
+      border-radius:9px;padding:10px 12px;font-family:inherit;font-size:14px;cursor:pointer;color:var(--text);}
+  .op:hover{border-color:var(--azul);background:#eef2f9;}
+  .op.off{opacity:.45;cursor:not-allowed;}
+  .op.off:hover{border-color:var(--border);background:#fff;}
+  /* La casilla. Cada paso es multi-selección, y una casilla lo dice sin explicarlo:
+     un botón que se pinta al tocarlo se lee como un radio. */
+  .op-check{width:17px;height:17px;border-radius:5px;border:1.5px solid var(--border);flex:0 0 auto;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;background:#fff;}
+  .op.on{border-color:var(--azul);background:#eef2f9;}
+  .op.on .op-check{background:var(--azul);border-color:var(--azul);}
+  .op.off .op-check{opacity:.5;}
+  .op-icon{font-size:17px;flex:0 0 auto;}
+  .op-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
+            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .op-txt{display:flex;flex-direction:column;min-width:0;flex:1;}
+  /* El label ENVUELVE en vez de cortarse con puntos suspensivos: el modal mide
+     760px y "Fútbol americano" quedaba en "Fútbol …". Un nombre cortado en una
+     lista de opciones es peor que una fila de dos renglones. */
+  .op-label{font-weight:600;line-height:1.25;}
+  .op-sub{font-size:11.5px;color:var(--muted);}
+  /* flex:0 0 auto + margin-left: sin esto el meta se encimaba con un label largo
+     ("Automovilismo · próximamente"), porque nowrap no reserva su propio lugar. */
+  .op-meta{font-size:11.5px;color:var(--muted);white-space:nowrap;flex:0 0 auto;margin-left:auto;padding-left:6px;}
+  /* Misma trampa de siempre: display:flex de una clase le gana al display:none que
+     el navegador le da a [hidden]. Sin esto, la .sel-foot vacía que sobrevive para
+     js/comparar-clubes.js se dibuja como una franja blanca al pie del modal. */
+  .sel-foot[hidden]{display:none;}
+
+  .paso-todos-fila{display:flex;gap:8px;margin-bottom:9px;flex-wrap:wrap;}
+  .paso-todos{background:#fff;border:1px solid var(--azul);color:var(--azul);border-radius:7px;padding:5px 11px;
+              font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .paso-todos.on, .paso-todos:hover{background:var(--azul);color:#fff;}
+  .paso-nada{background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 11px;
+             font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .paso-nada:hover{border-color:var(--red);color:var(--red);}
+
+  /* El pie de cada paso: confirmar, o decidir después. "Elegir más tarde" está en
+     todos los pasos, y por eso ninguno dice "opcional": todos lo son. */
+  .paso-pie{display:flex;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;}
+  .paso-ok{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:8px;
+           padding:9px 16px;font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
+  .paso-ok:hover{background:var(--azul-dark);}
+  .paso-ok.off{background:#eef2f9;color:var(--muted);border-color:var(--border);cursor:not-allowed;}
+  .paso-skip{background:none;border:none;color:var(--azul);font-family:inherit;font-size:13px;
+             cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
+  .paso-skip:hover{color:var(--azul-dark);}
+
+  /* El paso del ejercicio: una fila por club, con su año al lado. La regla que lo
+     ordena es que un ejercicio nunca aparece suelto, siempre cuelga de su club. */
+  .armado{display:flex;flex-direction:column;gap:9px;max-height:390px;overflow-y:auto;}
+  .arm-fila{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:#fff;}
+  .arm-cab{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+  .arm-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
+             display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .arm-n{font-size:14.5px;font-weight:700;}
+  .arm-anio{display:flex;align-items:center;gap:7px;margin-bottom:6px;}
+  .arm-anio select{flex:1;font-family:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--border);
+                   border-radius:8px;background:#fff;color:var(--text);cursor:pointer;}
+  .arm-x{background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;width:28px;height:28px;
+         font-size:15px;line-height:1;cursor:pointer;flex:0 0 auto;}
+  .arm-x:hover{border-color:var(--red);color:var(--red);}
+  .arm-mas{background:none;border:none;color:var(--azul);font-family:inherit;font-size:12.5px;cursor:pointer;
+           text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
+
+  /* El promedio de una liga, comparando: reemplaza al "+" de la columna de ligas. */
+  .cmp-ligas{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);}
+
+  /* El card final: dice qué se eligió y lo confirma. */
+  .paso.resultado .paso-n{background:var(--green);color:#fff;}
+  .res-msg{font-size:15.5px;font-weight:700;margin:0 0 4px;}
+  .res-sub{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 12px;max-width:620px;}
+
+  @media (max-width:900px){
+    .sel-modal{padding:12px 8px;}
+  }
 </style>
 </head>
 <body>
@@ -726,88 +737,57 @@ consulta puntual, nunca lectura de corrido.
   </div>
 </header>
 
-<!-- ===================== PANEL DEL SELECTOR DE CLUB (Versión 137) =====================
-     Miller columns (Deporte › Región › País › Liga › Equipo) con búsqueda arriba. La
-     jerarquía es OPCIONAL, no un peaje: el 90% de las visitas ya tiene un club en la
-     cabeza, y escribir "boca" tiene que llegar en un paso. El árbol es para explorar.
-     Todo el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
-     `data/leagues.js` + `data/club-leagues.js`; no se carga ningún `data/<club>-data.js`
-     para dibujarlo (son 41 clubes en el panel y 0 archivos de datos bajados). -->
+<!-- ===================== EL SELECTOR DE CLUB (Versión 146) =====================
+     Un modal con los pasos apilados: Deporte › Región › País › Clubes › Ejercicio,
+     una pregunta por vez, y el buscador arriba como atajo para el que ya sabe qué
+     club quiere. Reemplaza al panel de Miller columns de la Versión 137 (cinco
+     columnas y ~67 opciones a la vez). Es la etapa 3 del merge del prototipo 4;
+     el handoff está en `Prototyping/Selector/MERGE-A-PRODUCCION.md`.
+
+     TODO el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
+     `data/leagues.js` + `data/club-leagues.js`; NO se baja ningún
+     `data/<club>-data.js` para dibujarlo (41 clubes en el modal, 0 archivos).
+
+     LOS IDS QUE NO SE PUEDEN RENOMBRAR: `clubPanel` (con su clase `open`),
+     `addBanner`, `confirmBar`, `cfSel`, `cmpCancel`, `cmpOk` y la `.sel-foot` los
+     busca `js/comparar-clubes.js` para su modo "agregar rival". Por eso el modal
+     los conserva y ese archivo no se tocó en esta etapa; se retiran juntos en la
+     etapa 5, cuando los dos cards sean la comparación. -->
 <div class="sel-backdrop" id="clubBackdrop"></div>
-<div class="sel-panel" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
-  <!-- Se llena desde js/comparar-clubes.js cuando el panel se abre en modo comparar. -->
-  <div class="add-banner" id="addBanner" hidden></div>
-  <div class="sel-search">
-    <input id="selQ" type="text" autocomplete="off" spellcheck="false"
-           data-i18n-placeholder="selector.search.ph"
-           placeholder="Buscá un club, una liga o un país…  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
-    <span class="kbd">esc</span>
-    <!-- Salida visible N° 1 (arriba a la derecha). NO un × gris de 20px sin caja. -->
-    <button class="sel-close" id="selClose">&#10005;<span data-i18n="selector.close">Cerrar</span></button>
+<div class="sel-modal" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h2 class="modal-h" id="modalTitulo" data-i18n="sel.modal.club">Elegí el club</h2>
+      <button type="button" class="modal-x" id="modalX" data-i18n-title="selector.close.esc" title="Cerrar sin elegir (Esc)">&#10005;</button>
+    </div>
+
+    <!-- Se llena desde js/comparar-clubes.js cuando el modal se abre para comparar. -->
+    <div class="add-banner" id="addBanner" hidden></div>
+
+    <!-- El atajo: quien ya sabe qué club quiere no recorre los cinco pasos. -->
+    <div class="modal-busca">
+      <span class="lupa" aria-hidden="true">&#128269;</span>
+      <input id="modalQ" type="text" autocomplete="off" spellcheck="false"
+             data-i18n-placeholder="selector.search.ph"
+             placeholder="Buscá un club, una liga o un país&#8230;  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
+    </div>
+
+    <div id="modalResultados" hidden></div>
+    <div id="modalWrap"></div>
+
+    <div class="confirm-bar" id="confirmBar" hidden>
+      <div class="cf-sel" id="cfSel"></div>
+      <button class="cf-cancel" id="cmpCancel" data-i18n="cmp.cancel">Cancelar</button>
+      <button class="cf-ok" id="cmpOk" data-i18n="cmp.ok">Ver comparación</button>
+    </div>
+    <!-- Vacía y escondida: js/comparar-clubes.js la busca por selector para taparla
+         mientras la barra de confirmación está a la vista. Se va con él. -->
+    <div class="sel-foot" hidden></div>
   </div>
-  <div class="sel-home" id="selHomeWrap" hidden>
-    <button id="selHome" data-i18n="selector.home">&#8592; Ver la portada con todos los clubes</button>
-  </div>
-  <div class="sel-recents" id="selRecentsWrap" hidden>
-    <span class="r-label" data-i18n="selector.recents">Recientes</span>
-    <div id="selRecents" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
-  </div>
-  <div class="sel-crumbs" id="selCrumbs"></div>
-  <div class="sel-results" id="selResults" hidden></div>
-  <div class="sel-cols" id="selCols">
-    <div class="sel-col" data-level="0"><div class="sel-col-head" data-i18n="selector.col.sport">Deporte</div><div id="selColSport"></div></div>
-    <div class="sel-col" data-level="1"><div class="sel-col-head" data-i18n="selector.col.region">Región</div><div id="selColRegion"></div></div>
-    <div class="sel-col" data-level="2"><div class="sel-col-head" data-i18n="selector.col.country">País</div><div id="selColCountry"></div></div>
-    <div class="sel-col" data-level="3"><div class="sel-col-head" data-i18n="selector.col.league">Liga</div><div id="selColLeague"></div></div>
-    <div class="sel-col active-pane" data-level="4"><div class="sel-col-head" data-i18n="selector.col.club">Equipo</div><div id="selColClub"></div></div>
-  </div>
-  <div class="confirm-bar" id="confirmBar" hidden>
-    <div class="cf-sel" id="cfSel"></div>
-    <button class="cf-cancel" id="cmpCancel" data-i18n="cmp.cancel">Cancelar</button>
-    <button class="cf-ok" id="cmpOk" data-i18n="cmp.ok">Ver comparación</button>
-  </div>
-  <div class="sel-foot">
-    <span class="legend-item"><i class="q-dot full"></i> <span data-i18n="selector.legend.full">Balance oficial</span></span>
-    <span class="legend-item"><i class="q-dot mixed"></i> <span data-i18n="selector.legend.mixed">Parcial / mixto</span></span>
-    <span class="legend-item"><i class="q-dot placeholder"></i> <span data-i18n="selector.legend.placeholder">Placeholder</span></span>
-    <span class="legend-item"><i class="q-dot empty"></i> <span data-i18n="selector.legend.empty">Sin datos todavía</span></span>
-    <span class="spacer"></span>
-    <span class="foot-count" id="selFootCount"></span>
-    <!-- Salida visible N° 2 (abajo a la derecha): es donde cae el pulgar en un teléfono,
-         y el texto aclara que salir de ahí no te deja en otro club. -->
-    <button class="foot-close" id="selFootClose" data-i18n="selector.close.nochange">Cerrar sin cambiar</button>
-  </div>
+</div>
 </div>
 
 <main>
-
-  <!-- ===== COLD START (Versión 137) =====
-       Lo que ve alguien que llega por primera vez. Antes el sitio abría directo en Boca,
-       con un <select> chico en un header azul: quien no sabía que el sitio era multi-club
-       no tenía forma de enterarse. Acá la elección de club es LA tarea de la pantalla, y
-       eso resuelve el arranque en frío de una. Elegido un club queda guardado en
-       localStorage y las visitas siguientes entran derecho a su club; para volver acá hay
-       un "Ver la portada" arriba del panel del selector (decisión de Guido: que la
-       pantalla de exploración no quede inalcanzable para siempre después del primer click).
-       El nav y las secciones se esconden mientras no haya club: no hay nada que navegar
-       hasta que se elija uno, y un tab que lleva a una vista vacía es peor que no estar. -->
-  <div class="hero" id="coldHero" hidden>
-    <h1 data-i18n="hero.title">Los números reales de tu club</h1>
-    <p data-i18n="hero.sub">Ingresos, gastos, deuda y mercado de pases, sacados del balance oficial de cada club, con la fuente de cada cifra a la vista.</p>
-    <div class="hero-search">
-      <input id="heroQ" type="text" autocomplete="off" data-i18n-placeholder="hero.search.ph" placeholder="Buscá tu club…  ej. Boca, Racing, Barcelona, Kashima">
-      <button id="heroGo" data-i18n="hero.search.go">Buscar</button>
-    </div>
-    <div class="hero-quick">
-      <div class="hq-label" data-i18n="hero.quick.clubs">O empezá por uno de estos</div>
-      <div class="hq-row" id="heroClubs"></div>
-    </div>
-    <div class="hero-quick">
-      <div class="hq-label" data-i18n="hero.quick.leagues">O mirá qué hay cargado de cada liga</div>
-      <div class="hq-row" id="heroLeagues"></div>
-    </div>
-    <p class="hero-foot" id="heroFoot"></p>
-  </div>
 
   <!-- INICIO -->
   <section id="inicio" class="active">
@@ -1347,44 +1327,44 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '145';</script>
-<script src="data/lang/langs.js?v=145"></script>
-<script src="js/i18n.js?v=145"></script>
-<script src="data/clubs.js?v=145"></script>
+<script>window.ASSET_V = '147';</script>
+<script src="data/lang/langs.js?v=147"></script>
+<script src="js/i18n.js?v=147"></script>
+<script src="data/clubs.js?v=147"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=145"></script>
+<script src="data/club-index.js?v=147"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=145"></script>
-<script src="data/club-leagues.js?v=145"></script>
-<script src="data/category-map.js?v=145"></script>
-<script src="data/site-labels.js?v=145"></script>
-<script src="data/currency-map.js?v=145"></script>
-<script src="data/sources-view.js?v=145"></script>
+<script src="data/leagues.js?v=147"></script>
+<script src="data/club-leagues.js?v=147"></script>
+<script src="data/category-map.js?v=147"></script>
+<script src="data/site-labels.js?v=147"></script>
+<script src="data/currency-map.js?v=147"></script>
+<script src="data/sources-view.js?v=147"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=145"></script>
-<script src="js/finanzas-render.js?v=145"></script>
+<script src="js/finanzas-calc.js?v=147"></script>
+<script src="js/finanzas-render.js?v=147"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=145"></script>
+<script src="js/selector.js?v=147"></script>
 <!-- js/comparar-clubes.js (Versión 137): la comparación ENTRE CLUBES (no confundir con
      "Comparar Gestiones", que compara dos presidencias del mismo club). La unidad
      comparable es (club, ejercicio), y un solo modelo cubre los 3 casos: 1 vs 1, N
      clubes, y club contra el promedio de su liga. Ver su cabecera. -->
-<script src="js/comparar-clubes.js?v=145"></script>
+<script src="js/comparar-clubes.js?v=147"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1411,7 +1391,7 @@ consulta puntual, nunca lectura de corrido.
   // resultado operativo, etc.) pero a partir de listas de líneas (revenueLines/expenseLines)
   // en vez de campos fijos, porque cada club tiene una cantidad distinta de rubros reales.
   // Versión 137: el sitio YA NO abre en un club por default. Si el visitante nunca
-  // eligió uno, `currentClub` es null y se muestra la portada (#coldHero): abrir
+  // eligió uno, `currentClub` es null y se muestra la portada (la bifurcación de #inicio): abrir
   // siempre en Boca era la razón principal por la que nadie se enteraba de que el
   // sitio es multi-club. Si ya eligió alguna vez, entra derecho a SU club, que es lo
   // que guardó el selector en localStorage. El `'boca'` que estaba acá era el último
@@ -1600,10 +1580,8 @@ consulta puntual, nunca lectura de corrido.
   const TABS_SIN_CLUB = ['inicio', 'vs', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
-    // El #coldHero de la Versión 137 ya no se muestra nunca: lo reemplazó la bifurcación.
-    // El markup sigue en el DOM porque js/selector.js le engancha listeners por id; los dos
-    // se van juntos en la etapa 3, cuando ese archivo se reemplace entero.
-    document.getElementById('coldHero').hidden = true;
+    // El #coldHero de la Versión 137 se borró en la Versión 146, junto con el panel de
+    // columnas que lo llenaba: la portada es la bifurcación de #inicio.
     document.getElementById('mainNav').style.display = '';
     document.querySelectorAll('main > section').forEach(sec => { sec.style.display = ''; });
 

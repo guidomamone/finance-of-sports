@@ -48,6 +48,32 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+33. QUÉ VA A MOSTRAR INICIO CUANDO HAYA DATA. Idea de Guido, 2026-09-16, contestando la pregunta
+    que dejó abierta la etapa 2 del merge (¿Inicio es SOLO la bifurcación, como el prototipo, o
+    lleva contenido abajo?): lleva contenido, pero no el que tiene hoy. La idea es que Inicio
+    deje **rankings prearmados** — clubes por ingresos, los clubes de la Premier rankeados,
+    cosas así — para que alguien que llega por primera vez vea de qué va el sitio sin tener que
+    elegir nada primero. O sea: la bifurcación arriba (la pregunta), y abajo una vidriera del
+    contenido, no los KPIs del club activo.
+
+    POR QUÉ NO SE HACE YA: hace falta masa crítica de datos. Hoy 34 de los 41 clubes tienen UN
+    solo ejercicio cargado, y de las 8 ligas con temporadas, 4 tienen una sola. Un "ranking de
+    la Premier" no existe todavía: no hay ningún club inglés cargado.
+
+    MIENTRAS TANTO, abajo de la bifurcación quedaron los KPIs y los 3 gráficos del club activo
+    (`#inicioClub`, solo visible cuando hay club). No es lo que va a ir ahí, es lo que había y
+    no se tiró. Ojo con una duplicación que ya existe y conviene resolver cuando se haga esto:
+    "Ingresos por año" y "Gastos por año" de Inicio muestran casi lo mismo que el `trendChart`
+    de Finanzas.
+
+    OJO CON EL COSTO DE CARGA: un ranking obliga a bajar el `data/<club>-data.js` de cada club
+    del ranking, y el sitio los carga por demanda justamente para no pagar 41 archivos por
+    visita. Es la misma tensión que la sección 5.5 de `Prototyping/Selector/MERGE-A-PRODUCCION.md`
+    anota para el constructor de la mezcla. Si el ranking se precalcula en build time (un
+    `data/rankings.js` generado por una herramienta de `tools/`), el problema desaparece — pero
+    entonces hay que acordarse de regenerarlo en cada onboarding, como ya pasa con
+    `fuentes.html` y con la sección generada de `ESTADO.md`.
+
 32. LLEVAR EL PROTOTIPO 4 A PRODUCCIÓN. El punto 28 ("decidir qué selector va al sitio") se
     resolvió el 2026-09-15: de los cuatro prototipos gana el 4, y lo que queda es el merge, que es
     grande — toca la portada, la navegación, el selector de club y el comparador.
@@ -102,17 +128,6 @@ perdieron sino que se descartaron:
     OJO CON `tools/audit.js`: hoy no lo detecta. Un ejercicio sin gastos cierra perfecto contra su
     propio total de ingresos, que es exactamente el tipo de error que `audit.js` existe para
     encontrar. Vale un chequeo nuevo ahí también.
-
-29. BUG DEL SITIO PUBLICADO, encontrado por Guido el 2026-09-14 probando el prototipo, y arreglado
-    SOLO en la copia del prototipo (`Prototyping/Selector/Archive/prototipo-inicio-selector.js`, patch (d) del generador). En
-    `renderCols()` (js/selector.js:~290), la columna LIGA lista `Object.keys(LEAGUES)` filtrado
-    solo por DEPORTE cuando no hay país elegido, así que al elegir una región siguen apareciendo
-    las ligas de los otros continentes: elegís Europa › España, volvés a cambiar la región a Asia,
-    y LaLiga sigue en la columna. La selección sí se limpia; la lista no se filtra. El arreglo es
-    una línea (`regionOfCountry(lg.country) === sel.region`) y se puede llevar a `js/selector.js`
-    independientemente del merge del punto 32. OJO: ese merge reemplaza `js/selector.js` entero, así
-    que este punto desaparece con él — arreglarlo ahora solo vale si el merge se va a demorar, y en
-    ese caso sí conviene, porque el bug está hoy en el sitio publicado.
 
 25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
     misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·
