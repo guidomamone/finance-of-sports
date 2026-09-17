@@ -377,6 +377,28 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   desglosaron esa inversión asociada. El accionista ya vendió su parte, así que no es urgente, pero
   queda como pista sin agotar para una sesión futura.
 
+## Daejeon Hana Citizen (sourcing de Corea del Sur, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Por qué se corta el 사업보고서 después de FY2019?**: el club se reestructuró con la entrada de
+  Hana Financial Group en 2020. No se confirmó si desde entonces existe disclosure bajo otra figura
+  societaria (la entidad nueva podría tener otra razón social en DART) — a quién preguntarle: buscar
+  primero en DART con el nombre de la nueva entidad antes de preguntarle al club.
+
+## Ulsan HD (sourcing de Corea del Sur, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Por qué esta filial de HD Hyundai no deposita informe de auditoría en DART?**: la entidad
+  existe en el registro pero con 0 informes en 10 años, a diferencia de Jeonbuk Hyundai Motors
+  (filial de un grupo del mismo tamaño, que sí deposita). ¿Hay alguna exención societaria — socio
+  único que garantiza la deuda, similar al §264b del HGB alemán (sección 12 del skill)? — a quién
+  preguntarle: no hace falta preguntarle al club, se puede confirmar revisando la estructura
+  societaria de HD Hyundai en una sesión futura.
+
+## Pohang Steelers (sourcing de Corea del Sur, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **¿Es realmente una sociedad separada con CIF propio?**: no se confirmó si Pohang Steelers opera
+  como una entidad legal separada de POSCO o si es un departamento interno sin personería propia —
+  si tiene entidad propia, no está claro por qué nunca depositó nada en DART.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

@@ -464,6 +464,28 @@ reestructuraciones 2023-2025 que puede volver cotizante a un accionista que hoy 
 - [Guangzhou Evergrande](<fuentes/China/Guangzhou Evergrande.md>) — histórico, ya NO juega en la CSL — 5 ejercicios anuales reales 2015-2019 + semestral 2020, único club chino que cotizó (NEEQ:834338), ver duda sobre si cargarlo en dudas-por-club.md — Último chequeo: 2026-09-17
 - [Notas generales de China](<fuentes/China/_notas-generales.md>)
 
+### Corea del Sur
+
+**Quinto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El **DART**
+(`dart.fss.or.kr`, el regulador de mercado surcoreano) funcionó como un canal real tipo EDGAR/SEC
+para los clubes propiedad de chaebols que cotizan — hay que buscar la razón social legal de la
+entidad operadora (ej. "지에스스포츠"), nunca el nombre público del club. Ver
+`fuentes/Corea del Sur/_notas-generales.md` y la sección 16 del skill de sourcing.
+
+- [FC Seoul](<fuentes/Corea del Sur/FC Seoul.md>) — 10 ejercicios reales, serie completa FY2016-2025 (GS Sports/GS Group), sin cargar aún — Último chequeo: 2026-09-17
+- [Jeju SK](<fuentes/Corea del Sur/Jeju SK.md>) — 10 ejercicios reales, serie completa FY2016-2025 (SK Group, ex Jeju United), sin cargar aún — Último chequeo: 2026-09-17
+- [Daejeon Hana Citizen](<fuentes/Corea del Sur/Daejeon Hana Citizen.md>) — 4 ejercicios reales (FY2016-2019), se corta al reestructurarse con Hana Financial en 2020, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
+- [Jeonbuk Hyundai Motors](<fuentes/Corea del Sur/Jeonbuk Hyundai Motors.md>) — 2 ejercicios reales (FY2024-2025, únicos disponibles), Hyundai Motor Company — Último chequeo: 2026-09-17
+- [Ulsan HD](<fuentes/Corea del Sur/Ulsan HD.md>) — semi-dead-end, entidad existe en DART pero sin informes de auditoría en 10 años, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
+- [Pohang Steelers](<fuentes/Corea del Sur/Pohang Steelers.md>) — dead-end, entidad no aparece en DART, POSCO no la desglosa — Último chequeo: 2026-09-17
+- [Daegu FC](<fuentes/Corea del Sur/Daegu FC.md>) — dead-end estructural (시민구단, club ciudadano sin fines de lucro) — Último chequeo: 2026-09-17
+- [Gwangju FC](<fuentes/Corea del Sur/Gwangju FC.md>) — dead-end estructural (시민구단) — Último chequeo: 2026-09-17
+- [FC Anyang](<fuentes/Corea del Sur/FC Anyang.md>) — dead-end estructural (시민구단) — Último chequeo: 2026-09-17
+- [Gangwon FC](<fuentes/Corea del Sur/Gangwon FC.md>) — dead-end estructural (도민구단, club provincial) — Último chequeo: 2026-09-17
+- [Suwon FC](<fuentes/Corea del Sur/Suwon FC.md>) — dead-end estructural (시민구단) — Último chequeo: 2026-09-17
+- [Gimcheon Sangmu](<fuentes/Corea del Sur/Gimcheon Sangmu.md>) — dead-end estructural (사단법인 sin fines de lucro, club del ejército) — Último chequeo: 2026-09-17
+- [Notas generales de Corea del Sur](<fuentes/Corea del Sur/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada
