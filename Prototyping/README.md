@@ -1,97 +1,71 @@
-# Prototyping — los prototipos del selector
+# Prototyping — por qué el selector es como es
 
-**Nada de esta carpeta es el sitio.** Ningún archivo de acá se linkea desde
-`index.html` ni se sirve como parte de la experiencia real: son maquetas para
-decidir cómo se elige un club antes de tocar el código de producción.
+**Acá no queda ningún prototipo.** Quedan dos documentos, y este archivo explica
+qué fueron y por qué se conservan.
 
-Se mudó todo acá el 2026-09-14, a pedido de Guido, para que no se mezcle con el
-modelo real. Antes vivían en la raíz del repo y sus generadores en `tools/`.
-
----
-
-## Ya hay un ganador: el prototipo 4
-
-El 2026-09-15 se cerró la decisión (era el **punto 28** de `TODO.md`, ahora
-resuelto). Gana el **prototipo 4**, y lo que falta es llevarlo a producción, que es
-un merge grande.
+Entre el 2026-09-14 y el 2026-09-15 se probaron **cuatro** formas distintas de
+resolver la misma pantalla: cómo elige un club el que llega al sitio. Los cuatro
+corrían con los datos y el motor reales. Ganó el 4, y entre el 2026-09-15 y el
+2026-09-17 se llevó a producción en seis etapas (Versiones 143 a 155). Terminado
+el merge, los archivos se borraron: **la historia vive en git**, y lo que sigue
+acá es lo único que hace falta leer sin desenterrarla.
 
 ```
-Selector/
-  MERGE-A-PRODUCCION.md   ← EMPEZÁ POR ACÁ si venís a hacer el merge
-  prototipo-cards.html    ← el ganador, generado
-  build-prototipo-cards.js
-  prototipo-cards-selector.js
-  prototipo-pasos-datos-inventados.js   ⚠️ datos falsos, ver abajo
-  Archive/                ← los tres que perdieron
-```
-
-**`Selector/MERGE-A-PRODUCCION.md` es el documento que importa.** Explica el
-prototipo entero, qué cambia respecto del sitio publicado archivo por archivo, un
-plan de merge por etapas, las decisiones abiertas y los gotchas. Está escrito para
-una sesión que no vivió ninguna de estas.
-
-```
-http://localhost:8971/Prototyping/Selector/prototipo-cards.html
+Prototyping/
+  README.md                      ← esto: por qué perdieron los otros tres
+  Selector/MERGE-A-PRODUCCION.md ← qué es el prototipo 4 y cómo se merged
 ```
 
 ---
 
-## Los cuatro prototipos, y por qué ganó el 4
+## Los cuatro, y por qué perdió cada uno
 
-Los cuatro corren con los **datos y el motor reales** del sitio (mismos `js/`,
-`data/`, mismo `computeYearGeneric()`), y los cuatro exponen la misma API pública
-que `js/selector.js`, así que `index.html` no se entera de cuál está cargado.
+**Esta tabla es el motivo por el que esta carpeta sigue existiendo.** Sin ella,
+dentro de seis meses alguien propone "y si el selector fuera dos columnas con el
+árbol adentro de cada una" sin saber que ya se probó, se miró y se descartó.
 
-| | Archivo | Idea | Por qué no |
-|---|---|---|---|
-| **1** | `Archive/prototipo-inicio-selector.html` | El selector de columnas de hoy (Deporte › Región › País › Liga › Equipo), metido en la portada en vez de atrás de un click. | ~67 opciones y 5 decisiones simultáneas en la primera pantalla. |
-| **2** | `Archive/prototipo-pasos.html` | Un card por paso, apilados, una decisión por vez. 7 pasos, multi-selección, grupos. | Comparar obligaba a pasar por el selector dos veces, y de ahí salía una casuística que nadie quería contestar. |
-| **3** | `Archive/prototipo-duelo.html` | Dos columnas, Equipo A contra Equipo B, cada una con el árbol entero adentro. | La portada abría con dos árboles de cinco niveles a la vez: el mismo exceso de información que el 2 vino a corregir, duplicado. |
-| **4** | `Selector/prototipo-cards.html` | **GANADOR.** Inicio pregunta ("ver un club" o "comparar dos"); los dos cards viven en una pestaña Comparar y se llenan desde un modal con los pasos del 2. Un lado es una suma de bloques, cada uno con su año y su agregador. | — |
+| | Idea | Por qué no |
+|---|---|---|
+| **1** | El selector de columnas (Deporte › Región › País › Liga › Equipo) metido en la portada en vez de atrás de un click. | ~67 opciones y 5 decisiones simultáneas en la primera pantalla. |
+| **2** | Un card por paso, apilados, una decisión por vez. 7 pasos, multi-selección, grupos. | Comparar obligaba a pasar por el selector dos veces, y de ahí salía una casuística que nadie quería contestar. |
+| **3** | Dos columnas, Equipo A contra Equipo B, cada una con el árbol entero adentro. | La portada abría con dos árboles de cinco niveles a la vez: el mismo exceso de información que el 2 vino a corregir, duplicado. |
+| **4** | **GANADOR.** Inicio pregunta ("ver un club" o "comparar dos"); los dos cards viven en una pestaña Comparar y se llenan desde un modal con los pasos del 2. Un lado es una suma de bloques, cada uno con su año y su agregador. | — |
 
-El 4 se quedó con lo mejor de los otros tres: la forma de dos cards del 3, los pasos
-del 2 y el árbol del 1 comprimido en esos pasos. Y sacó lo que sobraba: el paso
-"contra qué comparar" del 2 (lo contesta el otro card) y la pantalla partida al
-medio para el que viene por un club solo.
+El 4 se quedó con lo mejor de los otros tres: la forma de dos cards del 3, los
+pasos del 2 y el árbol del 1 comprimido en esos pasos. Y sacó lo que sobraba: el
+paso "contra qué comparar" del 2 (lo contesta el otro card) y la pantalla partida
+al medio para el que viene por un club solo.
 
-## Cómo se regeneran
+## Qué se borró, y dónde está
 
-Los `.html` están **generados**: no se editan a mano, se sobrescriben. Cada uno sale
-de `index.html` más un puñado de reemplazos con ancla, y si un ancla no aparece el
-generador FALLA en vez de escribir un archivo a medias.
+Los cuatro `.html` eran **generados** desde `index.html` por cuatro scripts con
+reemplazos por ancla. Cuando el merge borró el `#coldHero` y el panel de columnas
+de `index.html`, los cuatro generadores empezaron a fallar — por diseño: fallan en
+vez de escribir un archivo a medias. O sea que los `.html` quedaron congelados y
+sin forma de regenerarse: 572 KB que ya no describían ni el sitio ni una propuesta
+viva.
+
+Para verlos andando otra vez hay que volver a un commit anterior al borrado:
 
 ```bash
-node Prototyping/Selector/build-prototipo-cards.js
-node Prototyping/Selector/Archive/build-prototipo-inicio.js
-node Prototyping/Selector/Archive/build-prototipo-pasos.js
-node Prototyping/Selector/Archive/build-prototipo-duelo.js
+git log --oneline -- Prototyping/
+git show <commit>:Prototyping/Selector/prototipo-cards.html > /tmp/proto.html
 ```
 
-Cada `.html` lleva un `<base href>` que apunta a la RAÍZ del repo, para que TODA
-ruta relativa (los `<script src>` de `js/` y `data/`, y también las que arma el JS en
-tiempo de ejecución: `loadClubData()` e `I18N.load()`) siga resolviendo bien. Los de
-`Selector/` llevan `../../` y los de `Archive/`, `../../../`.
+## ⚠️ Y los datos inventados, que se fueron con ellos
 
-La lógica de los prototipos 2, 3 y 4 NO se genera: vive en
-`Archive/prototipo-pasos-selector.js`, `Archive/prototipo-duelo-selector.js` y
-`Selector/prototipo-cards-selector.js`, escritos a mano. La del 1 sí: es una copia
-parcheada de `js/selector.js`, y el diff entre las dos ES su propuesta.
-
----
-
-## ⚠️ Los datos inventados
-
-`Selector/prototipo-pasos-datos-inventados.js` rellena de mentira los ejercicios
+`prototipo-pasos-datos-inventados.js` rellenaba de mentira los ejercicios
 2016-2025 de los 18 clubes de Argentina y Brasil, con ascensos y descensos
-inventados, para poder probar la interfaz sin que la falta de datos reales limite el
-diseño.
+inventados, para poder probar la interfaz sin que la falta de datos reales
+limitara el diseño. Lo cargaban los prototipos 2, 3 y 4.
 
-**Lo cargan los prototipos 2, 3 y 4. El 1 no, y el sitio tampoco.**
+Se borró con ellos (era el **punto 30** de `TODO.md`), y con un motivo extra al de
+la limpieza: **esta carpeta se deploya**. No hay `netlify.toml` ni `_redirects`, y
+Netlify publica la raíz del repo, así que `financeofsports.com/Prototyping/...`
+servía esos números inventados a cualquiera que tuviera la URL. Tenían su franja
+roja y nadie estaba linkeado a ellos, pero un sitio cuyo argumento entero es que
+sus números son verificables no puede servir números falsos desde su dominio.
 
-Las 5 condiciones que lo mantienen contenido están escritas en `CONVENCIONES.md` y
-la más importante es la última: **estos números no se copian a `data/` nunca**. El
-día que uno de esos clubes publique su balance real, se carga leyendo el documento.
-Mientras el archivo exista, cualquier captura de los prototipos 2, 3 y 4 tiene
-números falsos — por eso su franja de arriba es roja y lo dice.
-
-Se borra cuando el merge termine (**punto 30 de `TODO.md`**).
+**La regla que los contenía sigue valiendo para cualquier relleno futuro, y está
+en `CONVENCIONES.md`: esos números no se copian a `data/` nunca.** Si mañana uno
+de esos clubes publica su balance de 2019, se carga leyendo el documento.

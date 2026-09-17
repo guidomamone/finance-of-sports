@@ -48,6 +48,42 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
+    2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
+    conviene revisar cuando haya más datos o más uso.
+
+    (a) **MÓVIL, más allá de que entre.** Los dos cards apilan y el modal funciona a
+        375px —verificado, sin desborde horizontal— pero nadie diseñó la experiencia
+        en un teléfono. Decisión de Guido durante el prototipado: primero desktop.
+        Ojo que la to-do 26 (el `.header-right` a 375px) sigue abierta y es de antes.
+
+    (b) **NO HAY GRUPOS GUARDADOS.** Armar "mis 6 brasileños" en el constructor de la
+        mezcla se pierde al cerrar el modal. Si el caso aparece seguido, es lo primero
+        que pide el modelo de bloques.
+
+    (c) **UN BLOQUE DE CLUBES EN LA MEZCLA TIENE UN SOLO AÑO PARA TODO EL BLOQUE**
+        ("el más reciente de cada uno", o un cierre puntual). El detalle
+        ejercicio-por-club solo existe en la rama Clubes. Se hizo así para que cada
+        fila del constructor no se volviera un formulario; si hace falta, es donde
+        crece.
+
+    (d) **EL APORTE DE CADA BLOQUE NO SE MUESTRA EN EL CONSTRUCTOR.** Dice "6
+        ejercicios", no "489 M". Es a propósito: el aporte en plata obliga a bajar el
+        `data/<club>-data.js` de cada club MIENTRAS elegís, que es justo lo que el
+        selector evita (son 41 archivos y el sitio los carga por demanda). Hoy los
+        baja recién al apretar "Comparar". Misma tensión que la to-do 33.
+
+    (e) **UN LADO PUEDE SUMAR UN PROMEDIO CON UNA SUMATORIA.** Se avisa en pantalla,
+        no se prohíbe. Decisión explícita de Guido: "suma peras con manzanas pero no
+        es mi tema, yo tengo que dar la funcionalidad".
+
+    (f) **LOS DATOS SON FLACOS PARA LO QUE LA INTERFAZ YA PERMITE.** 34 de los 41
+        clubes tienen UN solo ejercicio cargado, y de las 8 ligas con temporadas, 4
+        tienen una sola. Comparar la liga argentina contra la brasilera hoy es 5
+        clubes contra 1 (Mirassol). La interfaz lo dice —los chips muestran cuántos
+        equipos tiene cada temporada, y el resultado muestra la fórmula y el conteo—
+        pero el número sigue siendo pobre hasta que haya más balances cargados.
+
 33. QUÉ VA A MOSTRAR INICIO CUANDO HAYA DATA. Idea de Guido, 2026-09-16, contestando la pregunta
     que dejó abierta la etapa 2 del merge (¿Inicio es SOLO la bifurcación, como el prototipo, o
     lleva contenido abajo?): lleva contenido, pero no el que tiene hoy. La idea es que Inicio
@@ -73,40 +109,6 @@ perdieron sino que se descartaron:
     `data/rankings.js` generado por una herramienta de `tools/`), el problema desaparece — pero
     entonces hay que acordarse de regenerarlo en cada onboarding, como ya pasa con
     `fuentes.html` y con la sección generada de `ESTADO.md`.
-
-32. LLEVAR EL PROTOTIPO 4 A PRODUCCIÓN. El punto 28 ("decidir qué selector va al sitio") se
-    resolvió el 2026-09-15: de los cuatro prototipos gana el 4, y lo que queda es el merge, que es
-    grande — toca la portada, la navegación, el selector de club y el comparador.
-
-    **TODO LO QUE HACE FALTA PARA PLANEARLO ESTÁ EN `Prototyping/Selector/MERGE-A-PRODUCCION.md`**,
-    escrito para una sesión que no vivió ninguna de estas: qué es el prototipo, el modelo de datos,
-    qué cambia archivo por archivo, un plan por etapas, las decisiones abiertas y los gotchas. No
-    repetirlo acá: esa es la fuente.
-
-    El resumen de una línea, para saber de qué se trata sin abrir nada: Inicio pasa a preguntar
-    "¿ver un club o comparar dos?"; el árbol de 5 columnas se vuelve un modal paso a paso; y un lado
-    de una comparación pasa a ser una SUMA DE BLOQUES (una liga-temporada, un puñado de clubes),
-    cada uno con su propio agregador, promedio o sumatoria.
-
-    LA DECISIÓN QUE HAY QUE TOMAR ANTES DE ESCRIBIR UNA LÍNEA, y que cambia todo lo demás: qué pasa
-    con `js/comparar-clubes.js`, que contesta la misma pregunta de otra manera y que el prototipo
-    reemplaza funcionalmente. Las tres salidas están en la sección 6 de ese documento; la
-    recomendación es que el prototipo lo reemplace, por etapas.
-
-    La etapa 1 del plan es independiente de todo el resto y mejora el sitio de hoy: Finanzas sin
-    club muestra el card del selector en vez de tablas vacías y un banner que miente.
-
-30. BORRAR LOS DATOS INVENTADOS cuando termine el merge del punto 32.
-    `Prototyping/Selector/prototipo-pasos-datos-inventados.js`
-    (Versión 152) rellena de mentira los ejercicios 2016-2025 de los 18 clubes de Argentina y
-    Brasil, con ascensos y descensos inventados, para poder probar la interfaz. Lo cargan los
-    prototipos 2, 3 y 4. Existe con 5
-    condiciones escritas en `CONVENCIONES.md`, y la última es que NUNCA se copia a `data/`: si
-    mañana uno de esos clubes publica su balance de 2019, se carga leyendo el documento, no
-    promoviendo este relleno. Ya se aprobó el selector (gana el prototipo 4), así que el día que el merge termine este archivo y su
-    `<script>` en los generadores de `Prototyping/` se borran en el mismo movimiento. Mientras
-    exista, cualquier captura de los prototipos 2, 3 y 4 tiene números falsos: la franja roja de
-    arriba lo dice, pero conviene no pegar esas capturas en ningún lado sin la franja.
 
 25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
     misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·

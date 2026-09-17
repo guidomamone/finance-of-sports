@@ -1,13 +1,39 @@
-# Prototipo 4 — el selector que va a producción
+# Prototipo 4 — el selector que HOY ES el sitio
 
-**Este archivo existe para una sesión futura que no vivió ninguna de las sesiones
-anteriores.** Lo que sigue es todo lo que hace falta para entender qué es el
-prototipo 4, en qué se diferencia del sitio publicado, y cómo planear el merge.
-El merge es grande: toca la portada, la navegación, el selector de club y el
-comparador. No es un copy-paste.
+> ## ✅ EL MERGE TERMINÓ (2026-09-17, Versiones 143 a 155)
+>
+> **Esto ya no es un plan: es lo que está publicado.** Se escribió el 2026-09-15
+> como handoff, cuando el prototipo 4 acababa de ganar y faltaba llevarlo a
+> producción; se dejó casi intacto porque explica el MODELO mejor que ningún otro
+> archivo del repo, y ese modelo es el que corre hoy en `js/selector.js`.
+>
+> **Cómo leerlo ahora:**
+> - Las secciones **0, 3 y 5** (el modelo, la bifurcación, un lado como suma de
+>   bloques, y lo que deliberadamente no hace) siguen siendo verdad palabra por
+>   palabra. Son la razón por la que este archivo no se borró.
+> - Las secciones **1, 2 y 9** hablan de archivos que ya no existen: el prototipo
+>   se borró al terminar. Ver `Prototyping/README.md`.
+> - Las secciones **4, 6 y 7** eran el plan del merge. Se cumplieron; abajo de cada
+>   una está qué pasó de verdad.
+> - La sección **8** (los gotchas) sigue siendo la más útil de todas: son trampas
+>   del repo, no del prototipo, y cada una costó tiempo real.
+> - Lo que quedó pendiente NO está acá: está en `TODO.md`, que es la única lista.
 
-Se escribió el 2026-09-15, al final de la sesión que lo terminó (Versiones 156, 157
-y 158 del `CHANGELOG.md`).
+## Qué se hizo, en seis etapas
+
+| Etapa | Versión | Qué entró |
+|---|---|---|
+| 1 | 143 | Finanzas abre con el card del selector en vez de tablas vacías. |
+| 2 | 144-145 | Inicio pasa a ser la bifurcación; nace la pestaña Comparar; la comparación se muda ahí; `applyClubMode()` deja de esconder el nav. |
+| 3 | 146-147 | El modal paso a paso reemplaza al panel de 5 columnas. Muere el `#coldHero` y el to-do 29. |
+| 4 | 148-151 | El paso "¿qué querés medir?" con sus tres ramas, el lado como suma de bloques, y los dos cards con su resultado. |
+| 5 | 152-154 | Se borra `js/comparar-clubes.js`; sus 6 indicadores, sus notas, sus reglas y la composición de ingresos se conservan en el selector. El buscador encuentra ligas. Cae el to-do 31. |
+| 6 | 155 | Se borran los prototipos y los datos inventados (to-do 30). |
+
+La etapa que iba a ser la 6 (i18n) no existió como etapa: cada fase dejó sus
+claves en `data/lang/en.js` al cerrar, así que nunca hubo deuda que saldar.
+
+---
 
 ---
 
@@ -133,6 +159,13 @@ una estimación de tiempo.
 
 ## 5. Lo que el prototipo NO hace, y hay que decidir
 
+> **Los 6 puntos siguen siendo verdad del sitio publicado**, salvo el 3, que se
+> resolvió al revés de como estaba escrito: la tabla de resultados NO quedó simple,
+> se le sumaron los 2 indicadores, las notas, las reglas y la composición de
+> ingresos que tenía la vista vieja. Del 4 (móvil) hay una parte hecha: los cards
+> apilan y el modal entra a 375px sin desborde, verificado; lo que sigue sin
+> diseñarse es el móvil como experiencia.
+
 1. **Un bloque de clubes en la MEZCLA tiene un solo año para todo el bloque** ("el
    más reciente de cada uno", o un cierre puntual). El detalle ejercicio-por-club
    solo existe en la rama Clubes. Se hizo así para que cada fila de la tabla no se
@@ -156,6 +189,14 @@ una estimación de tiempo.
    tema, yo tengo que dar la funcionalidad"*.
 
 ## 6. La decisión grande: qué pasa con `js/comparar-clubes.js`
+
+> **RESUELTO: ganó la (a), con una condición de Guido — "conservar las barras".**
+> El archivo se borró entero en la etapa 5. Lo que hacía mejor se mudó a
+> `js/selector.js`: los 6 indicadores (no 4) con sus notas, las 3 reglas de
+> comparabilidad escritas en pantalla, y la composición de ingresos. Los dos
+> ratios —masa salarial/ingresos e ingreso por socio— no se agregan sumando:
+> se acumulan sus dos insumos por separado, y solo de los ejercicios que informan
+> LOS DOS, y el ratio se arma con los totales del lado.
 
 El prototipo y ese archivo contestan la misma pregunta de dos maneras. Antes de
 escribir una línea de merge, hay que resolver esto, porque cambia todo lo demás:

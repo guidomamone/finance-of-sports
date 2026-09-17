@@ -172,32 +172,44 @@ se reescribe, no se acumula.
   un plan pago ("próximamente"), y con la decisión de ir todo gratis ya no está
   esperando nada. Pendiente de decidir con Guido si se saca la pestaña o se
   reescribe el texto.
-- UI: SELECTOR JERÁRQUICO DE CLUB en el header (Versión 137, reemplaza al
-  `<select>` plano de 41 opciones): un botón con el club activo que abre un panel
-  Deporte > Región > País > Liga > Equipo, con búsqueda por texto arriba, punto de
-  calidad del dato por club, recientes, y dos salidas visibles. Se abre con
-  Ctrl/Cmd+K. Vive en `js/selector.js` y se alimenta de `clubs.js` +
-  `club-index.js` + `leagues.js` + `club-leagues.js`, sin bajar ningún archivo de
-  club. `populateClubSelect()` ya no existe.
-- COLD START (Versión 137): el sitio YA NO abre en Boca. Sin club elegido muestra
-  una portada (`#coldHero`) con el buscador grande, los 8 clubes con más
-  ejercicios cargados y un chip por liga; el nav y las secciones quedan
-  escondidos. Elegido un club queda en `localStorage` y las visitas siguientes
-  entran derecho a él, por el mismo camino que un click en el selector. Se vuelve
-  a la portada con "Ver la portada" arriba del panel. Consecuencia: `boca-data.js`
-  ya no se carga eager (son 78 KB menos en la primera carga) y no queda ningún
-  club por default en el código.
-- COMPARACIÓN ENTRE CLUBES (Versión 137, `js/comparar-clubes.js`, no confundir con
-  "Comparar Gestiones", que compara 2 presidencias del mismo club): la unidad
-  comparable es (CLUB, EJERCICIO), así que cada barra lleva su año y "River 20/21
-  vs. River 24/25" son dos sujetos, no una feature aparte. Un solo modelo cubre
-  1 vs 1, N clubes y club contra el promedio de su liga; el modo se deduce de la
-  lista. Vista por default: barras horizontales, un bloque por indicador, escala
-  POR indicador, más "Composición de ingresos" al 100%; la tabla queda detrás de
-  un toggle. Fuerza USD y Formato simplificado, y lo dice en pantalla. Muestra
-  "sin dato" (no 0) cuando la fuente no informa deuda, masa salarial o socios.
-  4 avisos: sesgo del benchmark, ejercicios de años distintos, divisiones
-  distintas, y presupuesto contra balance.
+- UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
+  de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
+  plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →
+  Región → País → Clubes → Ejercicio de cada club. El resuelto se encoge a una
+  línea con lo que elegiste y un "Cambiar"; ninguno es obligatorio ("Elegir más
+  tarde" está en todos, por eso ninguno dice "opcional"). Arriba, el buscador:
+  el que ya sabe qué quiere escribe "boca" o "primera div" y llega en un paso —
+  busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con el botón de club
+  del header, desde Inicio o desde el card de Finanzas. Vive en `js/selector.js`
+  y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
+  `club-leagues.js`, sin bajar ningún archivo de club.
+- LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
+  Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre
+  el selector y aterriza en Finanzas) o "quiero comparar dos clubes o ligas" (va
+  a la pestaña Comparar). Abajo, si hay club, su resumen — los KPIs y los 3
+  gráficos. Sin club elegido se ven Inicio, Comparar, Finanzas y Mi Cuenta;
+  Fuentes aparece recién cuando hay uno. El club queda en `localStorage` y las
+  visitas siguientes entran derecho a él. Ningún club se carga eager.
+- COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
+  que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un
+  LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:
+
+      { kind:'liga',   league:'ar-primera', years:[2025],             agg:'promedio'|'suma' }
+      { kind:'clubes', pares:[['boca',2025], ['river',null]],         agg:'promedio'|'suma' }
+
+  De ahí sale el caso que lo motivó, de Guido: "promedio de clubes colombianos +
+  sumatoria de 6 clubes brasileros" contra Real Madrid. Los cards se llenan con el
+  MISMO modal, que para este camino gana un paso 4 ("¿qué querés medir?": Ligas /
+  Clubes / Mezcla — las dos primeras son atajos de un bloque, la mezcla es el
+  modelo completo). Por eso el card no tiene toggle Promedio/Sumatoria: muestra la
+  FÓRMULA. `año === null` es "el ejercicio más reciente de ESE club"; en un bloque
+  de liga el año NO puede ser null, define quiénes la integraban.
+  El resultado son 6 indicadores, una fila cada uno con su barra a escala DENTRO
+  de su indicador, más la composición de ingresos al 100% y las salvedades. Fuerza
+  USD y Formato simplificado, y lo dice en pantalla. Muestra "sin dato" (no 0)
+  cuando la fuente no informa. Los números salen de `computeYearGeneric()`, el
+  motor real. Vive todo en `js/selector.js`: `js/comparar-clubes.js` (la bandeja de
+  chips de la Versión 137) se borró en la Versión 152.
 - Toggle de moneda nativa/USD y toggle "Formato del club"/"Formato simplificado"
   (este último es el default). El toggle "Año a año"/"Por gestión" está OCULTO
   desde la Versión 112 (pedido de Guido), código y datos intactos.
@@ -262,25 +274,19 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `Prototyping/`: los 4 prototipos del selector de club. **YA HAY GANADOR**: el
-  prototipo 4, decidido el 2026-09-15 (era el to-do 28). Vive en
-  `Prototyping/Selector/` junto a `MERGE-A-PRODUCCION.md`, que es el documento que
-  explica qué es, qué cambia respecto del sitio publicado archivo por archivo, y
-  cómo encarar el merge — está escrito para una sesión que no vivió ninguna de
-  estas, y es por donde hay que empezar (to-do 32). Los otros tres quedaron en
-  `Prototyping/Selector/Archive/`, con el README de `Prototyping/` explicando por
-  qué perdió cada uno. NADA de esa carpeta es el sitio: no se linkea desde
-  `index.html` ni se sirve como parte de la experiencia real, y corre con los datos
-  y el motor REALES.
-  QUÉ PROPONE EL GANADOR, en tres líneas: Inicio pasa a preguntar "¿ver un club o
-  comparar dos?"; el árbol de 5 columnas se vuelve un modal paso a paso; y un lado
-  de una comparación pasa a ser una SUMA DE BLOQUES (una liga-temporada, un puñado
-  de clubes), cada uno con su propio agregador, promedio o sumatoria.
-  **`Selector/prototipo-pasos-datos-inventados.js`** rellena de mentira los
-  ejercicios 2016-2025 de los 18 clubes de Argentina y Brasil. Ningún número que
-  salga de ahí es real, no vive en `data/`, ninguna auditoría lo ve, y cada
-  ejercicio inventado se anuncia en pantalla. Las 5 condiciones que lo contienen
-  están en `CONVENCIONES.md`; se borra cuando termine el merge (to-do 30).
+- `Prototyping/`: **28 KB y dos archivos `.md`, ningún prototipo.** Entre el
+  2026-09-14 y el 15 se probaron cuatro formas de resolver la pantalla de elegir
+  club; ganó el 4 y entre el 15 y el 17 se llevó a producción en seis etapas
+  (Versiones 143-155). Terminado el merge se borraron los 4 `.html` generados, los
+  4 generadores, los 4 `-selector.js` y los datos inventados: la historia está en
+  git. Sobreviven `README.md` (la tabla de POR QUÉ PERDIERON los prototipos 1, 2 y
+  3 — es lo que evita que alguien los vuelva a proponer) y
+  `Selector/MERGE-A-PRODUCCION.md`, marcado como cerrado, que sigue siendo la mejor
+  explicación escrita del modelo que hoy corre en `js/selector.js`.
+  OJO, LO QUE SE APRENDIÓ AL BORRARLOS: esa carpeta SE DEPLOYA. No hay
+  `netlify.toml` ni `_redirects`, y Netlify publica la raíz del repo, así que
+  `financeofsports.com/Prototyping/...` servía los ejercicios inventados de 18
+  clubes a cualquiera con la URL. Vale para cualquier cosa que se deje en el repo.
 - `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.

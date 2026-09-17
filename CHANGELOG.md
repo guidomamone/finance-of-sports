@@ -1455,3 +1455,114 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   "Cotización oficial de cierre" donde su club ya declara `fxSource: document_close`). Se regeneró
   con `node tools/generate-fuentes-page.js`: no cambia ningún número, solo la procedencia del tipo
   de cambio, que ahora dice lo que dicen los datos.
+
+## Versión 143: Finanzas abre con el selector, no con tablas vacías
+
+- Etapa 1 del merge del prototipo 4 (to-do 32). Es la única independiente del resto.
+- `#finSelector`, un card debajo del subtítulo de Finanzas: con club, una línea con "Cambiar de
+  club"; sin club, `#finanzas.sin-club` esconde todo lo demás y queda solo el selector. Antes, sin
+  club, esa pantalla eran tablas vacías y un banner de "dato placeholder" que además mentía.
+- `renderFinSelector()` en `js/selector.js`, colgado de `renderButton()`: el punto que el sitio ya
+  llama en cada cambio de club activo.
+- ASSET_V 142 → 143.
+
+## Versión 144-145: Inicio pregunta, y la comparación tiene su propia pestaña
+
+- Etapa 2. Inicio deja de ser una pantalla de trabajo: es la bifurcación (`#bifurca`), dos opciones
+  grandes. "Ver un club" abre el selector y aterriza en Finanzas; "comparar dos" va a la pestaña
+  nueva.
+- Nace la sección `#vs` ("Comparar") con su botón en el nav. El id es `vs` y no `comparar`, que ya
+  lo usa "Comparar Gestiones" (dos presidencias del mismo club).
+- La comparación entre clubes (`#cmpCta`, `#compareCard`, `#mixCard`) se muda de `#inicio` a `#vs`.
+  Mudanza de markup: `js/comparar-clubes.js` escribe por id y no se entera.
+- Los KPIs y los 3 gráficos de Inicio quedan abajo de la pregunta, dentro de `#inicioClub`, y solo
+  cuando hay club.
+- `applyClubMode()` deja de esconder el nav entero: se ven siempre Inicio, Comparar, Finanzas y Mi
+  Cuenta; Fuentes aparece con club. Si la pestaña activa se esconde, vuelve a Inicio.
+- Muere el `#coldHero` como pantalla (su markup sobrevive hasta la 146). `#clubLoadError` sale de
+  adentro y estrena estilo sobre fondo claro: adentro del hero, un club que no cargaba fallaba en
+  silencio.
+- Regla `.fin-sel[hidden]`: `display:flex` de una clase le gana al `display:none` de `[hidden]`.
+- ASSET_V 143 → 145.
+
+## Versión 146-147: el modal paso a paso reemplaza al panel de 5 columnas
+
+- Etapa 3, la más grande: `js/selector.js` reescrito entero.
+- El panel de Miller columns (Deporte › Región › País › Liga › Equipo, ~67 opciones a la vez) pasa
+  a ser un modal con los pasos apilados: Deporte → Región → País → Clubes → Ejercicio. El resuelto
+  se encoge a una línea con un "Cambiar"; "Elegir más tarde" está en todos.
+- Misma API pública, así que `index.html` y `js/comparar-clubes.js` no cambiaron.
+- Puente con la comparación vieja: abierto desde ella, el paso de clubes prende y apaga sujetos con
+  `CLUB_COMPARE.toggleClub()`. El promedio de liga, que era el "+" de la columna de ligas, se mudó
+  abajo de los clubes: no se perdió ninguna función.
+- Se borra el `#coldHero` y todo el CSS del panel y del hero: `index.html` de 141,6 KB a 133,9 KB.
+- **To-do 29 resuelto**: el bug de la columna LIGA sin filtrar por región muere con el panel. En el
+  modal, "Cambiar" un paso invalida los de abajo.
+- ASSET_V 145 → 147.
+
+## Versión 148-151: un lado es una suma de bloques, y los dos cards
+
+- Etapa 4. Nace el paso 4, "¿QUÉ QUERÉS MEDIR?", que bifurca en Ligas / Clubes / Mezcla. Solo
+  aparece viniendo de un card de Comparar.
+- **UN LADO PASA A SER UNA SUMA DE BLOQUES**, cada uno con SU agregador (promedio o sumatoria).
+  Ligas y Clubes son atajos que producen un lado de un solo bloque; la mezcla es el modelo completo.
+  Un motor, tres puertas de entrada.
+- Por eso el card no tiene toggle Promedio/Sumatoria: muestra la FÓRMULA
+  (`promedio(LaLiga 2025) + suma(3 clubes)`), y avisa cuando mezcla las dos.
+- La rama Ligas muestra las temporadas como chips CON CUÁNTOS EQUIPOS tenía cada una: sin ese dato,
+  "la liga creció" mezcla plata con aritmética.
+- El resultado: una fila por indicador con su barra, a escala dentro de su indicador, más las
+  salvedades (años distintos, presupuestos, lados desparejos, "un club sin el dato no suma cero").
+- **BUG, encontrado por Guido** comparando la liga argentina contra la brasilera: el card decidía
+  "este lado es un club" CONTANDO clubes, y el Brasileirão Série A 2025 tiene un solo equipo con
+  datos (Mirassol). El card le pedía `bloques[0].pares`, que un bloque de liga no tiene → TypeError,
+  y como `render()` colgaba los tres hijos de a uno, el card B desaparecía dejando el A y el VS.
+  Ahora la condición mira `kind === 'clubes'`, `render()` arma los dos cards antes de colgarlos, y
+  la fórmula del lado se muestra siempre que haya una liga, aunque sea de un solo ejercicio.
+- ASSET_V 147 → 151.
+
+## Versión 152-154: se retira la comparación de chips, y se conserva lo que hacía mejor
+
+- Etapa 5. **Se borra `js/comparar-clubes.js` entero** (870 líneas) y con él la bandeja de chips, el
+  botón "Comparar" del header, la tarjeta de Inicio, el banner y la barra de confirmación del modal,
+  sus 6 call sites, ~11 KB de CSS y 88 claves de i18n huérfanas. Los dos cards son la única forma de
+  comparar.
+- Lo que hacía mejor se conserva en `js/selector.js`: los **6 indicadores** (vuelven "Masa salarial
+  / Ingresos" e "Ingreso por socio"), sus notas, las **3 reglas de comparabilidad** escritas en
+  pantalla, y la **composición de ingresos**.
+- Los dos ratios NO se agregan sumando: se acumulan sus dos insumos por separado, y solo de los
+  ejercicios que informan LOS DOS, y el ratio se arma con los totales del lado. Promediar el
+  porcentaje de un club chico con el de uno grande da un número que no describe a ninguno.
+- La composición de ingresos mejora: antes un promedio de liga no tenía mezcla propia porque
+  promediaba porcentajes; ahora los rubros se suman en USD antes de sacar el porcentaje.
+- **EL BUSCADOR ENCUENTRA LIGAS** (lo levantó Guido: "puse 'primera div' y no me trajo Primera
+  División"). El placeholder prometía "un club, una liga o un país" y solo devolvía clubes. Busca
+  por `name` y `full`, agrupa en Ligas / Clubes, y una liga elegida así aterriza en el paso de la
+  temporada: sin temporada no es un sujeto.
+- **TO-DO 31 RESUELTO, en las dos mitades de la pantalla.** Los 10 clubes japoneses publicaban
+  "Gastos 0,0 M USD" y un resultado igual a los ingresos, porque la J.League publica el ingreso de
+  cada club y no su estructura de costos. Ahora los KPIs de Finanzas dicen "Sin dato" y la tabla
+  explica por qué, en vez de listar los rubros en cero.
+- `tools/audit.js`: `js/comparar-clubes.js` sale de la lista del chequeo i18n.
+- ASSET_V 151 → 154. `fuentes.html` regenerado (arrastraba ASSET_V 142).
+
+## Versión 155: se borran los prototipos y los datos inventados
+
+- Etapa 6, la última del merge. **To-do 30 y to-do 32 cerrados.**
+- Se borran los 4 `.html` generados, los 4 generadores, los 4 `-selector.js` y
+  `prototipo-pasos-datos-inventados.js`: `Prototyping/` baja de 996 KB a 28 KB.
+- Motivo extra al de la limpieza: **esa carpeta se deploya**. No hay `netlify.toml` ni `_redirects`,
+  y Netlify publica la raíz del repo, así que `financeofsports.com/Prototyping/...` servía los
+  ejercicios inventados de 18 clubes a cualquiera con la URL.
+- Los 4 generadores ya no funcionaban: fallan buscando anclas de `index.html` que las etapas 3 y 5
+  borraron. Es su diseño (fallan en vez de escribir a medias), pero dejaba 572 KB de `.html`
+  congelados.
+- Sobreviven los 2 `.md`: `Prototyping/README.md`, reescrito para que sea la tabla de por qué
+  perdieron los prototipos 1, 2 y 3 —lo que evita volver a proponerlos— y
+  `Selector/MERGE-A-PRODUCCION.md`, marcado como cerrado, que sigue siendo la mejor explicación del
+  modelo que hoy corre.
+- La etapa de i18n que el plan tenía como 6ª nunca existió: cada fase dejó sus claves en
+  `data/lang/en.js` al cerrar.
+- **To-do 34 nuevo**: las 6 cosas que el merge dejó abiertas a propósito (móvil, grupos guardados,
+  el año por bloque en la mezcla, el aporte en plata, promedio + sumatoria, y que los datos son
+  flacos para lo que la interfaz ya permite).

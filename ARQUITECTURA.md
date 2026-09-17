@@ -34,6 +34,22 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   (ingresos/gastos por línea, mercado de pases, resultados deportivos,
   títulos), cada uno con comentarios explicando qué es real y qué es
   placeholder.
+- js/selector.js: ELEGIR Y COMPARAR, que desde la Versión 152 son lo mismo y
+  viven juntos (93 KB, el archivo más grande de `js/`). Tres cosas adentro:
+  (1) el MODAL PASO A PASO que reemplazó al panel de 5 columnas — Deporte →
+  Región → País → [¿qué querés medir?] → cuál(es) → año y agregador — más el
+  buscador, que encuentra clubes Y ligas; (2) LOS DOS CARDS de la pestaña
+  Comparar, donde cada card es un LADO y un lado es una SUMA DE BLOQUES
+  (`{kind:'liga', league, years[], agg}` o `{kind:'clubes', pares[], agg}`),
+  cada bloque con su propio agregador; (3) EL CÁLCULO de esos lados, que
+  siempre pasa por `computeYearGeneric()` — la cascada del resultado no se
+  reimplementa nunca por afuera. Se alimenta solo de `clubs.js` +
+  `club-index.js` + `leagues.js` + `club-leagues.js`: dibuja los 41 clubes sin
+  bajar un solo `data/<club>-data.js`, y recién baja los que hagan falta al
+  apretar "Comparar". La explicación larga del modelo está en
+  `Prototyping/Selector/MERGE-A-PRODUCCION.md`, secciones 0, 3 y 5.
+  `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
+  se borró en la Versión 152 y lo que hacía mejor está acá adentro.
 - fuentes-por-club.md: ÍNDICE (desde la sesión 2026-09-13, antes tenía todo
   el contenido inline — dejó de escalar con decenas de clubes) de una línea
   por club con su estado y fecha de último chequeo, cada una linkeando a

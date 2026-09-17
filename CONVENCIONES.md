@@ -15,20 +15,30 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
-- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152). El proyecto existe porque sus
-  números son verificables, así que un archivo de datos de mentira es lo más peligroso que se le
-  puede agregar. Se permite UNO, con estas 5 condiciones, y el día que se rompa cualquiera hay que
-  borrarlo: (1) NO vive en `data/` — es `Prototyping/Selector/prototipo-pasos-datos-inventados.js`, en la carpeta de
-  prototipos, con "inventados" en el nombre; (2) lo cargan SOLO los prototipos 2 y 3, que no están
-  linkeados desde ningún lado, nunca `index.html`; (3) ninguna herramienta lo ve: `tools/audit.js` y
-  `auditAll()` leen `data/*.js`, así que no puede ensuciar una verificación; (4) cada ejercicio
-  inventado se declara solo — `inventado:true` en su meta, una entrada en `sources{}` con
-  `type:'placeholder'` (que hace que el propio sitio muestre su aviso de "número inventado, no es
-  real"), cada rubro terminado en "(inventado)" y la marca "· INVENTADO" al lado del año en todo
-  el prototipo; (5) NO se copia a `data/` jamás: el día que ese club publique su balance real se
-  carga leyendo el documento, no promoviendo el relleno. Pedido de Guido ("el tener datos
-  incompletos me limita la creatividad") con la condición que él mismo puso: "documentar bien lo
-  que estamos tocando para no arrastrar balances inventados".
+- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el
+  único que existía se borró). El proyecto existe porque sus números son verificables, así que un
+  archivo de datos de mentira es lo más peligroso que se le puede agregar. **Hoy no hay ninguno.**
+  Si vuelve a hacer falta uno para prototipar —el caso real fue Guido pidiendo "el tener datos
+  incompletos me limita la creatividad", con la condición que él mismo puso: "documentar bien lo que
+  estamos tocando para no arrastrar balances inventados"— se permite UNO, con estas 6 condiciones, y
+  el día que se rompa cualquiera hay que borrarlo:
+  (1) NO vive en `data/`, y lleva "inventados" en el nombre;
+  (2) lo carga SOLO la página que lo necesita, que no está linkeada desde ningún lado, nunca
+      `index.html`;
+  (3) ninguna herramienta lo ve: `tools/audit.js` y `auditAll()` leen `data/*.js`, así que no puede
+      ensuciar una verificación;
+  (4) cada ejercicio inventado se declara solo — `inventado:true` en su meta, una entrada en
+      `sources{}` con `type:'placeholder'`, cada rubro terminado en "(inventado)" y la marca
+      "· INVENTADO" al lado del año en todos lados;
+  (5) NO se copia a `data/` jamás: el día que ese club publique su balance real se carga leyendo el
+      documento, no promoviendo el relleno;
+  (6) **NO QUEDA EN EL REPO MÁS ALLÁ DE LA SESIÓN QUE LO NECESITA** (condición nueva, Versión 155,
+      y la que faltaba). El repo SE DEPLOYA ENTERO: no hay `netlify.toml` ni `_redirects`, Netlify
+      publica la raíz, así que cualquier archivo trackeado es alcanzable por URL en
+      `financeofsports.com`. El relleno de los prototipos estuvo servido públicamente tres días sin
+      que nadie se diera cuenta. Tenía su franja roja y nadie estaba linkeado a él, pero un sitio
+      cuyo argumento entero es que sus números son verificables no puede servir números falsos desde
+      su dominio. Vale para cualquier cosa que se deje en el repo "por las dudas".
 - QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta).
   Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
   buckets de "Formato simplificado", el tipo y el nivel de cada fuente, y la procedencia de cada
@@ -52,13 +62,23 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   cambia por temporada. Un campo `clubs[id].league` con "la liga de hoy" está prohibido: sería una
   segunda verdad sobre el mismo hecho. En el árbol del selector, un club aparece bajo cada liga en
   la que tiene un ejercicio cargado.
-- "SIN DATO" NO ES CERO EN LA COMPARACIÓN ENTRE CLUBES (Versión 137). `js/comparar-clubes.js`
-  muestra "sin dato" y no "0.0 M USD" cuando la fuente no informa un indicador: deuda (los dos
-  campos en null, o los dos en CERO EXACTO, que es como lo escriben los presupuestos), masa
-  salarial que el documento no desglosa, o un club sin padrón de socios publicado. Un cero se lee
-  como un dato, y "Deuda neta: 0.0" se lee como "este club no debe nada". OJO, esto es un criterio
-  de ESA VISTA: el dato sigue diciendo 0 en el archivo del club y otras vistas lo publican como 0
-  (ver to-do 23(a) de `TODO.md`). El criterio general sigue abierto en la to-do 20(h).
+- "SIN DATO" NO ES CERO (Versión 137 para la comparación, ampliado en la 152 a la ficha de
+  Finanzas). Un cero se lee como un dato, y este sitio no muestra datos que no tiene. Se muestra
+  "sin dato" y no "0,0 M USD" cuando la fuente no informa: deuda (los dos campos en null, o los dos
+  en CERO EXACTO, que es como lo escriben los presupuestos), masa salarial que el documento no
+  desglosa, un club sin padrón de socios publicado, y GASTOS — los 10 clubes japoneses tienen
+  `expenseLines: []` y `officialTotalExpenses: null` porque la J.League publica el ingreso de cada
+  club y no su estructura de costos. El resultado del ejercicio cae con los gastos: es el final de
+  una cascada que arranca ahí.
+  LO QUE COSTÓ ENTENDER (to-do 31, abierto desde la Versión 137 y cerrado en la 152): esto no es un
+  criterio de UNA vista. Mientras lo aplicó solo la comparación, la ficha de Finanzas de Cerezo
+  Osaka decía "Gastos 0,0 M USD" y "Resultado neto +38,1 M USD" en el cuerpo de letra más grande de
+  la página — ese club no ganó 38 millones, simplemente no sabemos qué gastó. Y arreglar solo los
+  KPIs dejaba la tabla de abajo diciendo "Total Gastos 0,0" en la misma pantalla: media pantalla
+  honesta es peor que ninguna, porque el visitante no sabe a cuál creerle. **Si aparece una vista
+  nueva que muestre estos indicadores, aplica igual.**
+  OJO, esto es un criterio de la VISTA: el dato sigue diciendo 0 en el archivo del club. El criterio
+  general sigue abierto en la to-do 20(h).
 - NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde
@@ -66,9 +86,13 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   falle con un alert deja la página congelada EN CADA VISITA, sin poder siquiera elegir otro. Los
   errores se cuentan por `console.error` y se muestran en un aviso dentro de la página.
 - TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js` (Versión 137). El
-  chequeo `i18n-incompleto` recorre una lista fija de archivos; `js/selector.js` y
-  `js/comparar-clubes.js` no estaban, así que sus 95 claves nuevas eran invisibles y el chequeo
-  pasaba en verde mientras el visitante de habla inglesa leía castellano.
+  chequeo `i18n-incompleto` recorre una lista fija de archivos; cuando nació `js/selector.js` no
+  estaba, así que sus claves nuevas eran invisibles y el chequeo pasaba en verde mientras el
+  visitante de habla inglesa leía castellano. Y al revés (Versión 155): cuando un archivo de esa
+  lista SE BORRA, hay que sacarlo, o el chequeo entero revienta con ENOENT y deja de correr.
+  COROLARIO (Versión 155): las claves que quedan huérfanas al borrar una feature se borran de
+  `data/lang/en.js` en el mismo movimiento — el merge del selector dejó 88. El audit no las detecta:
+  cuenta las que FALTAN, no las que sobran.
 - LA LIGA DE UN EJERCICIO ES LA DEL CIERRE (Versión 132, decidido por Guido). Cuando un ejercicio
   cruza dos torneos (los argentinos cierran el 30/6 y la temporada va de febrero a diciembre), en
   `data/club-leagues.js` se anota la división en la que estaba el club EL DÍA QUE CERRÓ EL BALANCE.

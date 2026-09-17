@@ -5577,3 +5577,125 @@ Sí conviene, antes del primer deploy real:
    - [Presupuesto y balances oficiales de Boca](https://www.bocajuniors.com.ar/club/presupuesto)
 3. Definir la lista final de 10-15 métricas para el MVP y escribir su definición y unidad de medida, para mantener el sitio consistente y neutral desde el día uno.
    - Sin link externo. Usar la sección "Lista extensiva de qué analizar" de este mismo documento.
+
+---
+
+## Versiones 143-155 — El merge del prototipo 4: de cuatro maquetas a un solo selector
+
+**Qué se hizo.** Llevar a producción el prototipo 4 del selector, que había ganado
+el 2026-09-15. Seis etapas, cada una commiteada y verificada sola, entre el
+2026-09-15 y el 2026-09-17. El resultado: Inicio pasó a ser una pregunta, el panel
+de 5 columnas pasó a ser un modal paso a paso, la comparación pasó a ser dos cards
+donde cada lado es una suma de bloques, y `js/comparar-clubes.js` desapareció.
+
+**Por qué en etapas y no de una.** El merge tocaba la portada, la navegación, el
+selector de club y el comparador a la vez. Guido eligió revisar fase por fase, y
+esa decisión se pagó sola dos veces: encontró un bug real que yo no había visto, y
+levantó un hueco del buscador que estaba ahí desde la Versión 137.
+
+### Las tres decisiones de fondo
+
+**1. Qué pasa con `js/comparar-clubes.js`.** Era la pregunta que el handoff dejaba
+abierta, y la que cambiaba todo lo demás: ese archivo y el prototipo contestaban la
+misma pregunta de dos maneras. Las salidas eran (a) el prototipo lo reemplaza, (b)
+conviven, (c) el prototipo entra solo para el camino "un club". Guido eligió **(a),
+con una condición: "conservar las barras"**. Eso resultó ser la instrucción exacta
+que hacía falta: no "borralo" sino "borralo sin perder lo que hacía bien". Al
+retirarlo, lo que se mudó a `js/selector.js` fueron los 6 indicadores (el prototipo
+tenía 4), sus notas, las 3 reglas de comparabilidad escritas en pantalla, y la
+composición de ingresos.
+
+Y ahí apareció un problema que el prototipo no había tenido que resolver: **dos de
+esos 6 indicadores son RATIOS** (masa salarial/ingresos, ingreso por socio), y un
+ratio no se agrega como un monto. Sumar porcentajes no significa nada, y
+promediarlos tampoco: el 30% de un club de 40 M y el 30% de uno de 1.400 M no
+promedian a "el 30% de estos dos". La salida fue acumular los DOS insumos por
+separado (`wages` y `revenueConWages`, `socios` y `revenueConSocios`), contarlos
+solo de los ejercicios que informan los dos, y armar el ratio recién con los
+totales del lado.
+
+**2. Qué pasa con el contenido de Inicio.** El prototipo escondía los KPIs y los
+3 gráficos del club activo, y esconder contenido real sin que nadie lo pida no es
+una decisión que me corresponda. Los dejé abajo de la bifurcación y lo planteé.
+Guido contestó con algo mejor que un sí o un no: *"mi idea con Inicio es cuando
+tengamos mucha data, deja prearmados ranking de clubes por ingresos, los clubes de
+la premier rankeados, cosas así. como para que el usuario nuevo pueda ver de qué va
+el contenido"*. O sea que Inicio sí lleva contenido, pero no el que tiene: una
+vidriera, no el resumen del club activo. Quedó como **to-do 33**, con lo que hace
+falta para que sea posible (hoy 34 de 41 clubes tienen un solo ejercicio) y el
+costo de carga a resolver.
+
+**3. Qué pasa con `Prototyping/`.** Terminado el merge, la carpeta tenía 996 KB de
+maquetas que ya no se podían ni regenerar: los 4 generadores fallaban buscando
+anclas de `index.html` que las etapas 3 y 5 habían borrado. Al mirarla para
+decidir apareció algo que nadie había pensado: **esa carpeta se deploya**. No hay
+`netlify.toml` ni `_redirects`, Netlify publica la raíz del repo, así que
+`financeofsports.com/Prototyping/Selector/prototipo-cards.html` servía los
+ejercicios inventados de 18 clubes a cualquiera con la URL. Tenían franja roja y
+nadie estaba linkeado a ellos, pero es un sitio cuyo argumento entero es que sus
+números son verificables. Guido eligió borrar todo menos los dos `.md`.
+
+Lo que se conserva no es nostalgia: el `README.md` es la tabla de **por qué
+perdieron los prototipos 1, 2 y 3**, y eso es lo que evita que dentro de seis
+meses alguien proponga "y si el selector fuera dos columnas con el árbol adentro"
+sin saber que ya se probó. La condición nueva quedó escrita en `CONVENCIONES.md`
+como la sexta del dato inventado: no queda en el repo más allá de la sesión que lo
+necesita.
+
+### Los dos hallazgos de Guido
+
+**El card B que se esfumaba.** Comparando la liga argentina contra la brasilera, al
+llenar el lado B el card desaparecía y quedaban el A y el "VS". Con Real Madrid
+andaba. La causa: el card decidía "este lado es un club" CONTANDO clubes
+(`ids.length === 1`), y el Brasileirão Série A 2025 **tiene un solo equipo con
+balance cargado** (Mirassol). El lado seguía siendo una liga, pero el card lo
+trataba como un club y le pedía `bloques[0].pares`, que un bloque de liga no tiene.
+TypeError.
+
+Lo que hace que valga contarlo no es el bug sino el síntoma: `render()` colgaba los
+tres hijos de a uno, así que al reventar el segundo card quedaba **media pantalla
+dibujada**, que se lee como una decisión de diseño y no como un error. Se
+arreglaron las tres capas: la condición mira el `kind` del bloque, `render()` arma
+los dos cards antes de colgar ninguno, y el selector de año valida su invariante y
+degrada en vez de tirar.
+
+Y probándolo apareció un problema que no era de código sino del número: el
+resultado decía "Brasileirão Série A 2025: 114,1 M USD" a secas, que se lee como lo
+que factura la liga entera cuando es un club. Ahora la fórmula
+(`promedio(Brasileirão Série A 2025)`) se muestra siempre que haya una liga de por
+medio, aunque sea de un solo ejercicio.
+
+**El buscador que no encontraba ligas.** *"En el buscador puse 'primera div' y no me
+trajo primera división de argentina, así que busqué con el flow"*. El placeholder
+prometía "un club, **una liga** o un país" desde la Versión 137, y el buscador solo
+devolvía clubes — el nombre de la liga entraba en la búsqueda como un atributo de
+sus clubes, no como algo elegible. Con un lado que puede SER una liga, el hueco
+pasó de cosmético a real. Ahora busca por `name` y por `full`, agrupa en Ligas /
+Clubes, y una liga elegida así aterriza en el paso de la temporada, porque una liga
+sin temporada no es un sujeto.
+
+### El to-do 31, y por qué media pantalla honesta es peor que ninguna
+
+El merge arrastró el arreglo del to-do 31, abierto desde la Versión 137: los 10
+clubes japoneses publicaban "Gastos 0,0 M USD" y un resultado igual a los ingresos,
+porque la J.League publica el ingreso de cada club y no su estructura de costos.
+Cerezo Osaka no ganó 38 millones: no sabemos qué gastó.
+
+Al arreglar los KPIs de Finanzas quedó a la vista lo que el to-do no decía: **la
+tabla de abajo seguía diciendo "Total Gastos 0,0" en la misma pantalla**. El to-do
+afirmaba que la tabla "ya lo hace bien (muestra guiones)", y los guiones eran solo
+de la columna de porcentajes. Arreglar una mitad y no la otra deja al visitante sin
+saber a cuál creerle, que es peor que el estado anterior. Se arreglaron las dos, y
+el criterio quedó reescrito en `CONVENCIONES.md`: "sin dato no es cero" no es un
+criterio de una vista.
+
+### Lo que salió mal de mi lado
+
+Borrando el CSS de la comparación vieja usé un ancla de corte que apareció mucho
+más abajo de lo que suponía y me llevé puestos 20 KB de CSS legítimo — las tablas,
+los cards y los gráficos del sitio entero. Se recuperó restaurando `index.html` del
+commit anterior y rehaciendo el trabajo de esa fase, así que no quedó rastro en lo
+commiteado, pero costó tiempo. La lección quedó en el método, no en un archivo:
+toda borradura por rango lleva un tope de bytes esperado y falla si se pasa, y el
+script escribe después de cada paso y no todo al final, para que un ancla rota no
+tire abajo el trabajo que ya había salido bien.
