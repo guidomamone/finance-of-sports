@@ -619,6 +619,32 @@ bolsa en 2005. La entidad operativa (Futbol A.Ş.) se constituyó el 21 de abril
 De paso se completó la serie completa 2015/16-2024/25, así que el hueco que motivaba la pregunta ya
 no existe. Ver `fuentes/Turquía/Trabzonspor.md`.)*
 
+## Polissya (sourcing de Ucrania, sesión 2026-09-18, no bloqueó la descarga pero queda sin confirmar)
+
+- **Dos EDRPOU candidatos**: 40372249 (la empresa comunal confirmada) y 44547377 (sin relación
+  aclarada) — confirmar cuál corresponde a los PDF descargados antes de cargar los datos.
+
+## Obolon (sourcing de Ucrania, sesión 2026-09-18, pregunta real, no bloqueó nada)
+
+- **¿El PDF financiero de 2025 es del club de fútbol o de la cervecera ПрАТ "ОБОЛОНЬ" (EDRPOU
+  05391057)?**: comparten sitio/patrocinio pero podrían ser entidades legales distintas — confirmar
+  antes de cargar cualquier cifra.
+
+## Kolos Kovalivka (sourcing de Ucrania, sesión 2026-09-18, pregunta real para el club)
+
+- **¿Por qué solo publica un informe de procedimientos acordados, no el paquete completo?**: el
+  sitio propio solo tiene ese informe (sobre información adicional), no el balance/resultados/flujo
+  completo, a diferencia del resto del país. No está claro si el club no llega al umbral de
+  "empresa mediana" que obliga a publicar por el art. 14, o si simplemente no publicó el resto —
+  vale la pena preguntarles directo si Guido quiere el paquete completo.
+
+## Dynamo Kyiv / Zorya / Kryvbas (sourcing de Ucrania, sesión 2026-09-18, pregunta real para los 3 clubes)
+
+- **¿Por qué ninguno tiene sección de transparencia financiera?**: la mayoría del resto de la liga
+  sí publica por el art. 14 de la Ley de Contabilidad, pero estos 3 no tienen ninguna señal de
+  bloqueo técnico, simplemente no hay sección — candidatos directos para un "reach out" a los
+  clubes preguntando dónde publican (si lo hacen) su balance auditado.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

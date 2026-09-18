@@ -30,6 +30,13 @@ Clubes/**/*.xhtml
 Clubes/**/*.docx
 Clubes/**/*.xml
 
+# Mismo criterio para las imágenes (sourcing de Ucrania, sesión 2026-09-18):
+# SK Poltava publica su balance como fotos/escaneos JPG en vez de PDF. Mismo
+# principio: documento fuente crudo queda local.
+Clubes/**/*.jpg
+Clubes/**/*.jpeg
+Clubes/**/*.png
+
 # LAS TRANSCRIPCIONES DE FUENTE NO OFICIAL NO SE TRACKEAN (2026-09-17). El repo
 # entero se deploya —no hay netlify.toml ni _redirects, Netlify publica la raíz—
 # así que todo archivo trackeado queda servido en financeofsports.com. Para un
