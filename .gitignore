@@ -22,6 +22,14 @@ Clubes/**/*.tif
 Clubes/**/*.tiff
 Clubes/**/*.xhtml
 
+# Mismo criterio para los formatos que trae la Sbírka listin checa (registro
+# or.justice.cz, sourcing de República Checa, sesión 2026-09-17): algunos
+# depósitos vienen como .docx o como XML/iXBRL puro en vez de PDF. Chicos en
+# este caso (13-49 KB), pero el criterio no depende del tamaño: es documento
+# fuente crudo, no la transcripción.
+Clubes/**/*.docx
+Clubes/**/*.xml
+
 # LAS TRANSCRIPCIONES DE FUENTE NO OFICIAL NO SE TRACKEAN (2026-09-17). El repo
 # entero se deploya —no hay netlify.toml ni _redirects, Netlify publica la raíz—
 # así que todo archivo trackeado queda servido en financeofsports.com. Para un

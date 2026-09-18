@@ -546,6 +546,30 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   ningún archivo web consultado (Wayback los trunca a 5 MB) — el club podría resolverlo resubiendo
   los PDFs a su sitio.
 
+## Slovan Liberec (sourcing de República Checa, sesión 2026-09-17, sospecha técnica, no es duda para el club)
+
+- **17 años sin depósito (2006-2021) en una entidad que sí deposita el resto de la serie**: se
+  sospecha que el filtro de búsqueda por texto "účetní závěrka" puede estar dejando afuera un tipo
+  de "listina" (documento) distinto en el registro, no que sea un dead-end real de esos años —
+  retomar con otros filtros antes de asumir que el hueco es genuino.
+
+## Slovácko (sourcing de República Checa, sesión 2026-09-17, misma sospecha que Slovan Liberec)
+
+- **Serie muy discontinua (10 de ~25 ejercicios posibles)** — mismo tipo de sospecha que Slovan
+  Liberec: podría ser un problema del filtro de búsqueda usado, no falta real de depósitos.
+
+## Dukla Praha (sourcing de República Checa, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **Faltan justo los 2 ejercicios más recientes (2024-25)**: posible atraso de depósito (todavía no
+  se presentó), no un hueco histórico — vale la pena reintentar en una sesión futura sin asumir que
+  no existen.
+
+## República Checa — depósitos duplicados sin abrir (sourcing, sesión 2026-09-17, pendiente técnico)
+
+- Varios pares de depósitos del mismo ejercicio sin abrir para confirmar si son idénticos o una
+  corrección del otro: Slavia Praha (1998, 2002, 2022), Bohemians Praha 1905 (2012), Mladá Boleslav
+  (2011-12).
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
