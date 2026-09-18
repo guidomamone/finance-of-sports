@@ -755,6 +755,30 @@ del depósito estatal, no límite de búsqueda). Ver `fuentes/Rusia/_notas-gener
 - [Sochi](<fuentes/Rusia/Sochi.md>) — auditoría 2021-2025 + notas 4/5, sin cargar aún — Último chequeo: 2026-09-18
 - [Notas generales de Rusia](<fuentes/Rusia/_notas-generales.md>)
 
+### Suiza
+
+**Decimosexto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). Zefix es
+un dead-end estructural de país**: solo identidad básica gratis, el Código de Obligaciones suizo no
+exige depósito público de cuentas anuales salvo sociedades cotizantes/de interés público. 6 de 12
+clubes tienen disclosure propio real (FC Thun con la serie más profunda, 13 documentos 2011/12-2024);
+los otros 6 quedaron cubiertos solo por el agregado de la SFL (Swiss Football League, licencia
+UEFA). Ver `fuentes/Suiza/_notas-generales.md` y la sección 27 (propuesta) del skill de sourcing.
+
+- [Thun](<fuentes/Suiza/Thun.md>) — 13 documentos, 2011/12-2024 (falta 2017, ver duda en dudas-por-club.md), sin cargar aún — Último chequeo: 2026-09-17
+- [Basel](<fuentes/Suiza/Basel.md>) — 18 documentos, 17 ejercicios 2005-2021 (dead-end propio desde 2022), sin cargar aún — Último chequeo: 2026-09-17
+- [St. Gallen](<fuentes/Suiza/St. Gallen.md>) — 9 documentos, 7 ejercicios 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Luzern](<fuentes/Suiza/Luzern.md>) — 7 documentos, 7 ejercicios 2017/18-2024/25 (rescatados de Wayback), sin cargar aún — Último chequeo: 2026-09-17
+- [Young Boys](<fuentes/Suiza/Young Boys.md>) — 6 documentos, ejercicios 2018, 2020-2024 (falta 2019, ver duda), sin cargar aún — Último chequeo: 2026-09-17
+- [Zürich](<fuentes/Suiza/Zurich.md>) — dead-end propio, solo agregado SFL (5 años), ver duda de Geschäftsbericht 2011 en Yumpu — Último chequeo: 2026-09-17
+- [Sion](<fuentes/Suiza/Sion.md>) — dead-end propio, solo agregado SFL (5 años) — Último chequeo: 2026-09-17
+- [Servette](<fuentes/Suiza/Servette.md>) — dead-end propio, solo agregado SFL (5 años) — Último chequeo: 2026-09-17
+- [Lausanne-Sport](<fuentes/Suiza/Lausanne-Sport.md>) — dead-end propio, solo agregado SFL (4 de 5 años) — Último chequeo: 2026-09-17
+- [Lugano](<fuentes/Suiza/Lugano.md>) — dead-end propio, solo agregado SFL (5 años) — Último chequeo: 2026-09-17
+- [Grasshopper](<fuentes/Suiza/Grasshopper.md>) — dead-end propio, solo agregado SFL (4 de 5 años) — Último chequeo: 2026-09-17
+- [Winterthur](<fuentes/Suiza/Winterthur.md>) — dead-end propio, solo agregado SFL (1 solo año, 2023) — Último chequeo: 2026-09-17
+- Agregado SFL Finanzzahlen — 5 ejercicios (2021-2025) con Bilanz+GuV de los clubes con licencia UEFA cada año, en `Clubes/Suiza/_SFL-Finanzzahlen/` — Último chequeo: 2026-09-17
+- [Notas generales de Suiza](<fuentes/Suiza/_notas-generales.md>)
+
 ### Arabia Saudita
 
 **Saltado a pedido de Guido (sesión 2026-09-16), sin investigar en profundidad.** Sospecha fundada

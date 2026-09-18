@@ -588,6 +588,22 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 - **2021 y 2022 no tienen ningún documento** (ni auditoría ni notas), a diferencia del resto de la
   serie 2023-2025 — evaluar si vale la pena perseguir esos 2 años puntuales en una sesión futura.
 
+## Young Boys (sourcing de Suiza, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **Falta el ejercicio 2019**: existe el dato de referencia mencionado en el post de 2020, pero no
+  se ubicó el documento/post propio de 2019 en ningún canal.
+
+## Thun (sourcing de Suiza, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
+
+- **Hueco en el ejercicio 2017** entre 2016/17 y 2018 — podría ser un año de transición de ejercicio
+  fiscal (de temporada a año calendario), no confirmado.
+
+## Zürich (sourcing de Suiza, sesión 2026-09-17, pregunta de criterio, no bloqueante)
+
+- **El Geschäftsbericht 2011 existe en Yumpu (subido por la cuenta oficial del club) pero tiene la
+  descarga deshabilitada** — se puede leer online pero no bajar. Decisión de Guido si vale la pena
+  perseguirlo (buscar el PDF original en Wayback Machine) o dejarlo así.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
