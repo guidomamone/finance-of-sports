@@ -604,6 +604,19 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   descarga deshabilitada** — se puede leer online pero no bajar. Decisión de Guido si vale la pena
   perseguirlo (buscar el PDF original en Wayback Machine) o dejarlo así.
 
+## Kocaelispor (sourcing de Turquía, sesión 2026-09-18, pregunta real para el club)
+
+- **¿La entidad del documento de 2019 (Kocaelispor Kulübü Derneği) es la misma que ascendió a la
+  Süper Lig 2025/26?**: el club tuvo un historial reciente de refundaciones/dificultades
+  institucionales — antes de comparar series o cargar cualquier dato, confirmar si es la misma
+  entidad legal o si hubo una refundación en el medio.
+
+## Trabzonspor (sourcing de Turquía, sesión 2026-09-18, no bloqueó nada, solo sin cerrar)
+
+- **¿Cuándo salió a bolsa exactamente?**: el prospecto 2025 sugiere que ya cotizaba antes, pero no
+  se encontró el año exacto de la IPO original en Borsa İstanbul — relevante para saber si el hueco
+  2017-2021 de la serie es real o si la entidad emisora cambió de forma legal en el medio.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*

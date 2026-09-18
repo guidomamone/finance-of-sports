@@ -1037,6 +1037,35 @@ no vale la pena insistir sin ese paso previo.
 - Con esto, ningún club de la Super League 2025/26 quedó totalmente sin datos, aunque la mitad
   depende solo del agregado de liga (menos profundo que un balance propio).
 
+## 28. Turquía — los 4 grandes cotizan DIRECTO como club-asociación, caso único en el proyecto
+
+Decimoséptimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18, sesión
+INCOMPLETA por el Browser pane caído — ver gotcha abajo, retomar cuando esté disponible).
+Galatasaray, Fenerbahçe, Beşiktaş y Trabzonspor son un caso que no había aparecido en ningún otro
+país: el club-asociación (dernek) mismo cotiza directo en Borsa İstanbul, sin necesidad de una
+holding/sociedad anónima separada como Juventus/Ajax/Man Utd/Eagle Football Group. Esto los sujeta
+directo a la obligación de disclosure de **KAP** (Kamuyu Aydınlatma Platformu, `kap.org.tr`) — el
+equivalente turco a EDGAR/HKEXnews, gratis, con series largas y auditadas.
+
+- **Galatasaray: serie completa 2012/13-2024/25 (13 ejercicios)** — el mejor resultado del país.
+- **KAP tiene un gotcha de tooling real**: la URL de resumen de un emisor es fetchable por
+  `curl`/WebFetch (SSR), pero el LISTADO de disclosures individuales de cada ejercicio se arma con
+  botones React sin `href` real — no hay forma de sacar el link de descarga sin un browser real
+  renderizando JS. Además, el filtro de fecha por defecto muestra solo 1 año y no se puede ampliar
+  por parámetros de URL. Sin browser disponible, KAP queda bloqueado a pesar de ser gratis.
+- **Los clubes chicos son dernek sin obligación de mercado de capitales** — algunos publican "Mali
+  Tablolar" (estados financieros) en su propio sitio por mandato de licencia TFF/UEFA, mismo patrón
+  que Croacia/Italia/Países Bajos/Portugal, pero mucho menos consistente: de los 13 clubes chicos
+  investigados, solo 6 dieron algo, y ninguno con más de 4 ejercicios.
+- **Gotcha nuevo, apareció 2 veces**: un servidor puede responder 200 con `Content-Type` de PDF pero
+  el archivo real es "Java serialization data" corrupto (no un PDF válido) — verificar siempre con
+  `pdfinfo`/abrir el archivo antes de dar una descarga por buena, no confiar en el código HTTP ni el
+  Content-Type declarado.
+- **El Browser pane puede caerse por sesiones enteras** (timeouts de 300s en cada `preview_start`/
+  `navigate`, confirmado con reintentos espaciados) — cuando esto pasa, documentarlo explícitamente
+  como bloqueo de TOOLING (no del portal) y seguir con lo que sí se pueda hacer por `curl`/WebFetch,
+  dejando anotado qué quedó pendiente de retomar con browser.
+
 ## Cómo mantener este skill
 
 Actualizar esta sección la primera vez que un país nuevo produzca un hallazgo real de metodología
