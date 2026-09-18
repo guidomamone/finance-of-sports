@@ -611,11 +611,13 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   institucionales — antes de comparar series o cargar cualquier dato, confirmar si es la misma
   entidad legal o si hubo una refundación en el medio.
 
-## Trabzonspor (sourcing de Turquía, sesión 2026-09-18, no bloqueó nada, solo sin cerrar)
+## Trabzonspor
 
-- **¿Cuándo salió a bolsa exactamente?**: el prospecto 2025 sugiere que ya cotizaba antes, pero no
-  se encontró el año exacto de la IPO original en Borsa İstanbul — relevante para saber si el hueco
-  2017-2021 de la serie es real o si la entidad emisora cambió de forma legal en el medio.
+*(RESUELTO, sesión 2026-09-18: el propio İzahname 2025 dice textualmente que "Trabzonspor Sportif
+Yatırım ve Futbol İşletmeciliği A.Ş., payları 2005 yılında halka arz edilmiş olup..." — salió a
+bolsa en 2005. La entidad operativa (Futbol A.Ş.) se constituyó el 21 de abril de 2004 en Trabzon.
+De paso se completó la serie completa 2015/16-2024/25, así que el hueco que motivaba la pregunta ya
+no existe. Ver `fuentes/Turquía/Trabzonspor.md`.)*
 
 ## Otros clubes (si se agregan más adelante)
 

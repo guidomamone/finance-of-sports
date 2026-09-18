@@ -785,22 +785,24 @@ UEFA). Ver `fuentes/Suiza/_notas-generales.md` y la sección 27 (propuesta) del 
 grandes (Galatasaray/Fenerbahçe/Beşiktaş/Trabzonspor) son un caso único: el club-asociación cotiza
 DIRECTO en Borsa İstanbul, sujeto a disclosure de KAP (kap.org.tr) — excelente canal, series largas.
 El resto son dernek sin obligación de mercado de capitales; algunos publican "Mali Tablolar" en su
-sitio propio por mandato de licencia TFF/UEFA. **Sesión incompleta**: el Browser pane estuvo caído
-toda la sesión, bloqueando completar KAP para 3 de los 4 grandes y 2 clubes (Gençlerbirliği,
-Samsunspor) sin ni siquiera empezar — retomar cuando el browser esté disponible. Ver
+sitio propio por mandato de licencia TFF/UEFA. Los 4 grandes quedaron con series completas
+(Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor) tras un seguimiento que retomó cuando el Browser
+pane volvió a andar (el corte de la primera sesión fue transitorio). Ver
 `fuentes/Turquía/_notas-generales.md` y la sección 28 (propuesta) del skill de sourcing.
 
 - [Galatasaray](<fuentes/Turquía/Galatasaray.md>) — 13 ejercicios, serie completa 2012/13-2024/25, sin cargar aún — Último chequeo: 2026-09-18
-- [Fenerbahçe](<fuentes/Turquía/Fenerbahçe.md>) — 12 ejercicios 2012/13-2023/24 (falta 2024/25, retomar con browser), sin cargar aún — Último chequeo: 2026-09-18
-- [Beşiktaş](<fuentes/Turquía/Beşiktaş.md>) — 17 ejercicios 2005/06-2023/24 (faltan 2014/15, 2018/19), sin cargar aún — Último chequeo: 2026-09-18
-- [Trabzonspor](<fuentes/Turquía/Trabzonspor.md>) — 1 ejercicio completo (2015/16) + prospecto + 3 informes parciales, serie muy incompleta (retomar con browser), sin cargar aún — Último chequeo: 2026-09-18
+- [Fenerbahçe](<fuentes/Turquía/Fenerbahçe.md>) — 13 ejercicios, serie completa 2012/13-2024/25, sin cargar aún — Último chequeo: 2026-09-18
+- [Beşiktaş](<fuentes/Turquía/Beşiktaş.md>) — 19 ejercicios, serie completa 2005/06-2023/24 sin huecos, sin cargar aún — Último chequeo: 2026-09-18
+- [Trabzonspor](<fuentes/Turquía/Trabzonspor.md>) — 10 ejercicios, serie completa 2015/16-2024/25 sin huecos, sin cargar aún — Último chequeo: 2026-09-18
 - [Alanyaspor](<fuentes/Turquía/Alanyaspor.md>) — 4 ejercicios (2020, 2021, 2022-2023, 2025), sin cargar aún — Último chequeo: 2026-09-18
 - [Gaziantep FK](<fuentes/Turquía/Gaziantep FK.md>) — 4 tablas de un ejercicio sin identificar, sin cargar aún — Último chequeo: 2026-09-18
 - [Kasımpaşa](<fuentes/Turquía/Kasımpaşa.md>) — 1 documento (dictamen de auditor, ejercicio sin identificar), sin cargar aún — Último chequeo: 2026-09-18
 - [Fatih Karagümrük](<fuentes/Turquía/Fatih Karagümrük.md>) — 1 ejercicio (2021/22), sin cargar aún — Último chequeo: 2026-09-18
 - [Kocaelispor](<fuentes/Turquía/Kocaelispor.md>) — 1 ejercicio (2019), ver duda de continuidad de entidad en dudas-por-club.md — Último chequeo: 2026-09-18
 - [İstanbul Başakşehir](<fuentes/Turquía/İstanbul Başakşehir.md>) — 1 ejercicio (2019), sin cargar aún — Último chequeo: 2026-09-18
-- [Antalyaspor](<fuentes/Turquía/Antalyaspor.md>) — página confirmada, bloqueada por JS (retomar con browser), nada bajado — Último chequeo: 2026-09-18
+- [Antalyaspor](<fuentes/Turquía/Antalyaspor.md>) — dead-end confirmado, links rotos entre oct-2023 y abr-2024, ni el sitio ni Wayback tienen el PDF, nada bajado — Último chequeo: 2026-09-18
+- [Gençlerbirliği](<fuentes/Turquía/Gençlerbirliği.md>) — chequeo superficial, sin sección de mali tablolar visible, nada bajado — Último chequeo: 2026-09-18
+- [Samsunspor](<fuentes/Turquía/Samsunspor.md>) — chequeo superficial, sin sección de mali tablolar visible, nada bajado — Último chequeo: 2026-09-18
 - [Konyaspor](<fuentes/Turquía/Konyaspor.md>) — página confirmada, URL inestable, nada bajado — Último chequeo: 2026-09-18
 - [Göztepe](<fuentes/Turquía/Göztepe.md>) — nada encontrado, no confirmado como dead-end estructural — Último chequeo: 2026-09-18
 - [Kayserispor](<fuentes/Turquía/Kayserispor.md>) — nada encontrado, sitio no respondió — Último chequeo: 2026-09-18

@@ -1,7 +1,9 @@
 # Notas generales — Turquía (Süper Lig)
 
-**Decimoséptimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18,
-continuación de un intento anterior cortado por rate-limit de sesión).**
+**Decimoséptimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18 y su
+continuación, misma fecha — la primera se cortó por rate-limit, la segunda por el Browser pane
+caído toda la sesión; esta tercera sesión, también 2026-09-18, empezó confirmando que el Browser
+pane ya respondía y pudo completar casi todo lo que había quedado pendiente).**
 
 ## Los 18 clubes de la Süper Lig 2025/26 (confirmado por búsqueda al arrancar la sesión)
 
@@ -10,10 +12,11 @@ Antalyaspor, İstanbul Başakşehir, Beşiktaş, Eyüpspor, Fatih Karagümrük, 
 Gaziantep FK, Gençlerbirliği, Göztepe, Kasımpaşa, Kayserispor, Kocaelispor, Konyaspor, Çaykur
 Rizespor, Samsunspor, Trabzonspor.
 
-**Nota**: Gençlerbirliği y Samsunspor quedaron SIN archivo propio ni intento documentado en esta
-sesión — se agotó el tiempo antes de llegar a ellos. Son los dos pendientes de arrancar de cero en
-la próxima sesión de Turquía (ver también `TODO.md`, no editado por esta sesión — avisar a Guido en
-el reporte).
+**Nota**: Gençlerbirliği y Samsunspor ya tienen archivo propio (`fuentes/Turquía/Gençlerbirliği.md`,
+`fuentes/Turquía/Samsunspor.md`, creados sesión 2026-09-18) pero con solo un chequeo superficial —
+ningún sitio oficial de ninguno de los dos tiene una sección de tipo "Mali Tablolar" visible en el
+menú principal, pero no se agotaron los ángulos (rutas directas, Wayback, prensa). Quedan como
+pendiente de profundizar, no como dead-end confirmado.
 
 ## El patrón que domina el país: dos niveles de transparencia muy distintos
 
@@ -57,22 +60,48 @@ estados financieros de la FEDERACIÓN misma, no un índice de sus clubes afiliad
   sesión). Sin browser, el único atajo es buscar bildirim IDs específicos ya indexados por Google —
   funciona para casos sueltos, no para reconstruir una serie completa.
 
-## El browser tool estuvo CAÍDO toda esta sesión
+## El browser tool estuvo CAÍDO toda la sesión anterior — en ESTA sesión (2026-09-18, continuación)
+## volvió a funcionar normalmente
 
-Todo intento de `preview_start`/`navigate`/`computer` dio timeout de 300s ("the browser extension,
-CDP, Apple Events may be stuck or unresponsive"), incluso después de cerrar pestañas, esperar, y
-reintentar varias veces a lo largo de la sesión. No parece ser un problema de KAP en particular
-(pasó igual al intentar abrir cualquier URL). Esto bloqueó:
+La sesión anterior documentó timeouts de 300s en todo intento de `preview_start`/`navigate`/
+`computer`. Esta sesión arrancó confirmando el estado con un `preview_start` simple a
+`kap.org.tr` — respondió al primer intento, sin timeout, y se mantuvo estable durante las 2+ horas
+de trabajo que siguieron (decenas de navegaciones dentro de KAP, Antalyaspor, Wayback Machine,
+Bing). **Conclusión: fue un problema transitorio de esa sesión puntual, no algo estructural del
+entorno** — no hace falta ningún workaround especial, solo confirmar el estado al arrancar (como
+ya recomendaba la nota anterior).
 
-- Completar los huecos de Beşiktaş (2015, 2019) y de Fenerbahçe (2025) en KAP.
-- Reconstruir la serie de Trabzonspor en KAP (el club con peor cobertura de los 4 grandes).
-- Extraer las URLs reales de Antalyaspor y Konyaspor (links renderizados por JS).
-- Pasar el WAF/Cloudflare de `bjk.com.tr` y `fenerbahce.org` (ambos dieron HTTP 403 también a
-  `curl`/WebFetch con distintos User-Agents).
+Con el browser disponible, esta sesión pudo:
+- Completar los huecos de Beşiktaş (2014/15, 2018/19) y de Fenerbahçe (2024/25) en KAP.
+- **Reconstruir la serie COMPLETA de Trabzonspor en KAP: 2015/16-2024/25, 10 ejercicios sin ningún
+  hueco** — el club pasó de ser el de peor cobertura de los 4 grandes a tener serie completa.
+- Confirmar que Antalyaspor es un **dead-end genuino** (no un problema de JS/renderizado como se
+  sospechaba — ver `fuentes/Turquía/Antalyaspor.md`).
+- Resolver la duda de `dudas-por-club.md` sobre el año de IPO de Trabzonspor (2005, confirmado
+  leyendo el propio İzahname ya descargado).
+- Un primer chequeo superficial (no exhaustivo) de Gençlerbirliği y Samsunspor, sin hallazgos.
 
-**Recomendación para la próxima sesión de Turquía**: arrancar confirmando que el browser tool
-responde ANTES de asumir que hace falta re-explorar todo desde cero — la mayoría de los pendientes
-de esta sesión son "vuelve a andar con browser", no "no existe la fuente".
+**Gotcha de UI nuevo de KAP, específico del formulario "Detailed Search"**: los desplegables
+(Companies, Date Interval, calendarios de Start/End Date) son visualmente muy inconsistentes con
+clicks automatizados — el mismo click en las mismas coordenadas a veces abre el desplegable/
+calendario esperado y a veces lo cierra todo (incluido el acordeón padre "Company and Date
+Criterias"), sin patrón 100% predecible. Lo que SÍ funcionó de forma confiable: (1) para
+seleccionar una empresa, usar `find` + click por `ref` en el texto del nombre completo de la
+empresa en vez de intentar clickear el checkbox por coordenada; (2) para navegar el calendario,
+click en el ícono de calendario (no en el texto de la fecha) para abrirlo, click en el header
+"<Mes> <Año>" para pasar a la grilla de años, click en el año, click en el mes, click en el día —
+cada paso con un `wait` de ~0.5-1s antes de la screenshot de verificación (sin el wait, la UI
+muestra un estado a medio renderizar que lleva a clickear en el lugar equivocado); (3) el rango de
+fechas tiene un límite duro de 1 año exacto — hay que hacer una búsqueda por año calendario para
+cubrir series largas, no se puede pedir todo de una.
+
+**Gotcha nuevo de KAP: formato de disclosure "Financial Report" cambió con el tiempo.** Para
+ejercicios de ~2015-2016 (los más viejos revisados esta sesión), un solo período de Financial
+Report aparece como 5 bildirim separados (Statement of Financial Position, Profit or Loss, Cash
+Flow, Statement of Changes in Equity, Notes) — pero los 5 apuntan al MISMO archivo PDF (confirmado
+comparando SHA-256, idéntico en los 5). Para ejercicios más recientes (2017 en adelante en los
+casos vistos) es un solo bildirim con el juego completo. No hace falta bajar los 5 cuando aparece
+el formato viejo, con uno alcanza.
 
 ## Otros dos canales propios encontrados, con URLs legibles por año (buen patrón a imitar)
 
@@ -87,19 +116,32 @@ En cambio `cdn.trabzonspor.org.tr/trabzonspor_<hash-hex-32>.pdf` es un hash tota
 ningún componente legible — solo sirve para rescatar documentos ya indexados por buscadores, no
 para explorar sistemáticamente.
 
-## Un gotcha nuevo de esta sesión: PDFs "corruptos" servidos como "Java serialization data"
+## El gotcha de PDFs "corruptos" servidos como "Java serialization data": CAUSA RAÍZ encontrada y
+## resuelta esta sesión (2026-09-18, continuación)
 
-Dos descargas separadas en esta sesión (Fenerbahçe 31-05-2025 heredado del intento anterior, y un
-faaliyet raporu de Trabzonspor bajado en esta misma sesión) resultaron, al chequear con `file`, ser
-"Java serialization data, version 5" en vez de PDF — mismo patrón las dos veces. Sospecha: alguna
-respuesta de error/anti-bot de estos sitios (o de KAP) devuelve ese formato en vez de un HTML de
-error normal, y quien las descargó (¿un proxy?, ¿el propio servidor bajo carga?) las guardó sin
-chequear el content-type. **Moraleja para cualquier descarga en serie de este país**: correr `file`
-sobre cada PDF bajado antes de darlo por bueno, no asumir que un HTTP 200 con tamaño razonable
-significa que el contenido es el esperado.
+La sesión anterior había detectado el síntoma (PDFs de KAP que `file` reporta como "Java
+serialization data, version 5") sin encontrar la causa. **Causa raíz confirmada esta sesión: NO es
+un error/anti-bot — es el formato real en el que el endpoint
+`kap.org.tr/en/api/file/download/<hash>` sirve el archivo cuando se lo pide con `curl` directo
+(sin las cookies/headers de sesión de un browser real).** El servidor envuelve el PDF real dentro
+de una serialización Java de un `byte[]` (header fijo `AC ED 00 05 75 72 00 02 5B 42 ...`, luego un
+int de 4 bytes con el largo, y recién ahí el contenido real) — un `curl` normal descarga ese
+wrapper completo sin poder interpretarlo, un browser real con las cookies correctas en cambio
+recibe el PDF crudo con `Content-Type: application/pdf`.
+
+**Solución que funcionó en TODAS las descargas de esta sesión** (Fenerbahçe 2024/25, Beşiktaş
+2014/15 y 2018/19, los 10 ejercicios de Trabzonspor): en vez de `curl`, usar `fetch()` dentro del
+Browser pane (misma sesión/cookies), convertir la respuesta a base64 en JS, y del lado de Bash
+buscar el offset del magic byte `%PDF` (`25 50 44 46`) en los bytes decodificados y recortar desde
+ahí hasta el final del buffer — el resto es el PDF completo y válido (confirmado con `pdfinfo` en
+las 13 descargas de esta sesión, sin un solo caso corrupto). Cuando el PDF final supera ~500 KB en
+base64, el resultado del `javascript_tool` se trunca automáticamente en varios chunks guardados en
+un mismo archivo JSON de `tool-results/` — hay que concatenar el campo `text` de TODOS los
+elementos del array antes de decodificar, no solo el primero (afecta a archivos base64 de más de
+~1.5M caracteres aprox.).
 
 ## Cómo mantener esta nota
 
 Actualizar si aparece un canal nuevo que sirva para más de un club (ej. si la TFF resulta tener
-algún índice agregado que hoy no se encontró), o si se confirma/descarta la sospecha del gotcha de
-"Java serialization data". Última sesión: 2026-09-18.
+algún índice agregado que hoy no se encontró). Última sesión: 2026-09-18 (segunda continuación,
+browser pane ya funcionando).

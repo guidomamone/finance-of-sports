@@ -13,19 +13,25 @@
   tanto para WebFetch como para `curl`** con cualquier User-Agent probado en esta sesión — necesita
   browser real con JS.
 
-## Qué se bajó (sesión 2026-09-18, continuación de intento previo cortado por rate-limit)
+## Qué se bajó (sesión 2026-09-18, continuación — browser tool ya funcionando)
 
-**17 ejercicios de 19 posibles, 2005/06-2023/24**, en `Clubes/Turquía/Beşiktaş/`:
-`besiktas-futbol-bilanco-31-05-2006.pdf` a `...-31-05-2024.pdf`. Descargados de KAP en la sesión
-anterior. Verificados en esta sesión: los 17 son PDF válidos.
+**19 ejercicios, 2005/06-2023/24, serie COMPLETA sin huecos**, en `Clubes/Turquía/Beşiktaş/`:
+`besiktas-futbol-bilanco-31-05-2006.pdf` a `...-31-05-2024.pdf`. Los 17 ya existentes venían de la
+sesión anterior (verificados). Los dos huecos se completaron en esta sesión navegando KAP:
 
-**Faltan 2014/15 (cierre 31-05-2015) y 2018/19 (cierre 31-05-2019).** Con el browser tool caído
-toda esta sesión no se pudo re-navegar KAP para completar esos dos huecos, ni pasar el WAF de
-`bjk.com.tr/sirketlerimiz/futbol_as/genel_kurul_toplantilari`, que por lo visto en el snippet de
-búsqueda SÍ tiene esos dos años listados.
+- **2014/15 (cierre 31-05-2015)**: en este ejercicio KAP todavía usaba el formato viejo de
+  disclosure — el "Financial Report" del período viene partido en 5 bildirim separados (Statement
+  of Financial Position, Profit or Loss, Cash Flow, Statement of Changes in Equity, Notes), cada
+  uno con su propio ID pero **los 5 apuntan al mismo archivo real** (confirmado comparando SHA-256:
+  idéntico en los 5). Basta bajar uno solo. Filed 31.07.2015, archivo `BJKAS 31052015.pdf` (69
+  páginas) → guardado como `besiktas-futbol-bilanco-31-05-2015.pdf`.
+- **2018/19 (cierre 31-05-2019)**: ya en formato moderno (1 solo bildirim con el juego completo).
+  Filed 09.08.2019, archivo `BJK FUTBOL - 31 05 2019 - KONSOLIDE .pdf` (61 páginas) → guardado como
+  `besiktas-futbol-bilanco-31-05-2019.pdf`.
+
+No hizo falta pasar el WAF de `bjk.com.tr` — KAP solo alcanzó con el Browser pane funcionando.
 
 ## Dudas / pendientes
 
-- **Pendiente completar 2014/15 y 2018/19** — requiere sesión con browser tool funcionando,
-  cualquiera de los dos canales (KAP con rango de fechas ajustado, o `bjk.com.tr` pasando el WAF).
+- Ninguna. Serie completa 2005/06-2023/24 (19 ejercicios).
 - Último chequeo: 2026-09-18.
