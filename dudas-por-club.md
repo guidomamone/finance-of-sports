@@ -570,6 +570,24 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   corrección del otro: Slavia Praha (1998, 2002, 2022), Bohemians Praha 1905 (2012), Mladá Boleslav
   (2011-12).
 
+## Akhmat Grozny (sourcing de Rusia, sesión 2026-09-17/18, pregunta real para el club)
+
+- **¿Por qué nunca depositó el dictamen de auditor?**: el registro lo marca `requiredAz: true`
+  (legalmente obligado) para los 5 ejercicios 2021-2025, pero nunca lo hizo — solo hay notas al
+  balance de 2025. Vale la pena preguntarle directo al club si existe por otro canal o si hay un
+  problema de auditoría de fondo.
+
+## Spartak Moscow (sourcing de Rusia, sesión 2026-09-17/18, no bloqueó nada, solo sin cerrar)
+
+- **`2025-poyasneniya.pdf` (notas al balance) tiene solo 1 página / 7 KB**, sospechosamente chico
+  comparado con las notas de otros clubes (cientos de KB a varios MB) — revisar el contenido antes
+  de usarlo como fuente, podría estar truncado o ser solo una carátula.
+
+## Rubin Kazan (sourcing de Rusia, sesión 2026-09-17/18, no bloqueó nada, solo sin cerrar)
+
+- **2021 y 2022 no tienen ningún documento** (ni auditoría ni notas), a diferencia del resto de la
+  serie 2023-2025 — evaluar si vale la pena perseguir esos 2 años puntuales en una sesión futura.
+
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
