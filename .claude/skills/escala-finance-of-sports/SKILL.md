@@ -87,9 +87,19 @@ Formato de cada fila: **qué**, **a qué volumen se rompe** (con el número, no 
 | `data/currency-map.js` | 18 KB hoy | combinación moneda×fecha, compartida entre clubes | sub-lineal, no es cuello proporcional |
 | `data/leagues.js`, `category-map.js`, `site-labels.js`, `sources-view.js` | fijos | catálogo/taxonomía | no crecen con clubes |
 
-OJO CON EL NÚMERO "~38 KB", que circuló en dos auditorías y en `ESTADO.md` y **es falso**: medido
-archivo por archivo el 2026-09-20, el payload eager son **79,7 KB** en 8 archivos. Medilo, no lo
-copies.
+TRES NÚMEROS DISTINTOS, y una sesión se confundió entre ellos el 2026-09-20: los **~38 KB** de acá
+arriba son la suma de los TRES archivos que escalan, que es lo que dice esta línea y está bien. El
+payload eager COMPLETO son 8 archivos, **79,7 KB sin comprimir**. Y como viaja de verdad son **29,3
+KB**, porque Netlify sirve comprimido. Al citar uno, decí cuál.
+
+**REGLA QUE SALIÓ DE EQUIVOCARSE (2026-09-20): proyectá sobre el COMPRIMIDO, no sobre bytes crudos.**
+Todos estos archivos son filas casi idénticas, que es exactamente lo que gzip aplasta. Dos
+propuestas de "ahorro" de esa sesión se cayeron al medirlas comprimidas: acortar los `reportType`
+de `club-index.js` a códigos de una letra ahorra **60 bytes** (4%), no los 91 KB que sugería el
+cálculo crudo, y sacar `reportingCurrency`/`fiscalYearStart` de `clubs.js` ahorra **3,0 KB a 1000
+clubes**, no 49. El comentario de `tools/generate-club-index.js` que ya decía esto ("son 7 strings
+que se repiten miles de veces, o sea justo lo que gzip aplasta a casi nada") tenía razón, y la
+sesión lo iba a revertir sin haberlo leído.
 
 **Estado: `club-leagues.js` RESUELTO (Versión 164), los otros dos vigentes.** Quedan `clubs.js`
 (sacar `reportingCurrency`/`fiscalYearStart` al archivo de cada club) y `club-index.js`, que es el

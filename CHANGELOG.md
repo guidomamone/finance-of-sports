@@ -1779,14 +1779,17 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   las ligas). Lo que sirvió fue sacarla del camino eager y ponerla detrás de UNA frontera async, el
   `abrirModal()` de `js/selector.js`. Los 6 helpers siguen síncronos: volverlos async obligaría a
   volver async cada función de render del modal.
-- AHORRO REAL, medido y sin redondear para arriba: 1,2 KB hoy (79,7 KB a 78,5 KB de payload eager),
-  porque el archivo de helpers se quedó con la prosa de las reglas. Lo que cambió es que ese archivo
+- AHORRO REAL, medido y sin redondear para arriba: 1,2 KB sin comprimir hoy (79,7 KB a 78,5 KB de
+  payload eager), porque el archivo de helpers se quedó con la prosa de las reglas. Lo que cambió es que ese archivo
   pasó a ser de tamaño FIJO en vez de crecer por ejercicio. Los 11,1 KB de datos se bajan al abrir
   el modal.
 - LA PROYECCIÓN QUE MOTIVABA EL PUNTO ESTABA INFLADA 5x: el archivo era 65% comentarios, y las filas
   de datos son 28 B/ejercicio, no 164. A 5000 ejercicios son ~137 KB de datos, no ~800 KB.
-- OTRO NÚMERO VIEJO CORREGIDO: el payload eager no es "~38 KB" como decían `ESTADO.md`, el to-do
-  22(d) y la auditoría de escala. Medido archivo por archivo: 79,7 KB en 8 archivos.
+- SOBRE EL "~38 KB" QUE CIRCULABA: no era un error, era otra cosa. Es la suma de los TRES archivos
+  eager que escalan (`clubs.js` + `club-index.js` + `club-leagues.js` = 37,3 KB), que es lo que dice
+  el skill de escala. El payload eager COMPLETO son 8 archivos: 79,7 KB sin comprimir, y **29,3 KB
+  como viajan de verdad** (Netlify los sirve comprimidos). Los tres números miden cosas distintas y
+  conviene decir cuál se está usando.
 - BUG REAL EN EL CAMINO: el cargador leía `window.clubs`, que es `undefined` porque `data/clubs.js`
   declara `const clubs`, o sea un global léxico y no una propiedad de `window`. Es el mismo bug de
   la Versión 96. La lista de países salía vacía y no se pedía ningún archivo, en silencio.

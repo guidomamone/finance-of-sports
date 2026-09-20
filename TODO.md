@@ -274,9 +274,16 @@ perdieron sino que se descartaron:
         (eager, ~405 B/club, ~395 KB proyectado a 1000 clubes). La otra mitad de este punto,
         `club-leagues.js`, se resolvió en la Versión 164: sus filas viven ahora en
         `data/club-leagues/<iso2>.js` y se bajan al abrir el selector, no en la primera visita.
-        OJO CON EL NÚMERO VIEJO: este punto decía "~38 KB hoy" de payload eager y **no era cierto**.
-        Medido archivo por archivo el 2026-09-20: son **79,7 KB** en 8 archivos (78,5 después de la
-        164). Cualquier proyección que se haga acá se mide, no se copia.
+        TRES NÚMEROS DISTINTOS, y conviene no confundirlos (medidos el 2026-09-20): los "~38 KB"
+        de este punto son la suma de los TRES archivos que escalan, no del payload eager. El payload
+        eager completo son 8 archivos, **79,7 KB sin comprimir** (78,5 después de la 164) y **29,3 KB
+        como viajan de verdad**, porque Netlify los sirve comprimidos.
+        Y MEDIDO EL 2026-09-20, ESTE PUNTO NO RINDE: sacar `reportingCurrency` y `fiscalYearStart`
+        de `clubs.js` ahorra **3,0 KB comprimidos a 1000 clubes** (28,0 a 25,0 KB en una simulación
+        con nombres, países y monedas variados), contra un riesgo que el plan de remediación marca
+        como MEDIO-ALTO porque toca el selector para todos los visitantes. Además `fiscalYearStart`
+        NO se puede mover al archivo del club: `js/selector.js:212` lo lee para etiquetar ejercicios
+        ANTES de cargar ningún club. Ver las notas del punto 3 en `PLAN-REMEDIACION-ESCALA.md`.
     (h) NUEVO (Versión 159): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
         tiene debounce ni límite de resultados — filtra y reconstruye el DOM completo en cada
         tecla. Invisible a 41 clubes, jank probable a 1000-3000. Debounce ~150-200ms + top-N con

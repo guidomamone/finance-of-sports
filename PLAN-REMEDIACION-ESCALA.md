@@ -555,8 +555,11 @@ esté reflejada ahí antes de que alguien lo ejecute.
   1. `club-leagues.js` era **65% comentarios**. Las filas de datos son **28 B/ejercicio**, no 164.
      La proyección de ~800 KB a 5000 ejercicios es en realidad ~137 KB de datos. El problema existía,
      pero era 5x más chico.
-  2. El payload eager NO es "~38 KB" (lo decían `ESTADO.md`, el to-do 22(d) y
-     `auditorias/2026-09-17-escala.md`). Medido archivo por archivo: **79,7 KB** en 8 archivos.
+  2. **CORRECCIÓN, del mismo día**: dije que el "~38 KB" de esos tres documentos era falso, y no lo
+     era. Es la suma de los TRES archivos eager que escalan (37,3 KB), que es exactamente lo que
+     dice el skill de escala. Lo que pasa es que hay TRES números y hay que decir cuál se usa: 37,3
+     KB los tres que escalan, **79,7 KB** el payload eager completo (8 archivos) sin comprimir, y
+     **29,3 KB** como viaja de verdad, porque Netlify sirve comprimido.
   3. El ahorro de HOY es **1,2 KB**, no 13,6: el archivo de helpers se quedó con la prosa de las
      reglas. Lo que cambió es que pasó a ser de tamaño FIJO en vez de crecer por ejercicio.
 - **BUG REAL EN EL CAMINO**: el cargador leía `window.clubs`, que es `undefined`, porque
@@ -619,8 +622,10 @@ completas):
 - OJO CON `window.X` CONTRA `X` PELADO: `data/clubs.js` declara `const clubs`, o sea un global
   léxico que NO es propiedad de `window`. `window.clubs` da `undefined`. Ya costó un bug en el punto
   9 y este punto mueve campos justamente entre esos archivos.
-- El payload eager real es 78,5 KB en 8 archivos, no "~38 KB": ese número circulaba en tres
-  documentos y era falso. Medilo antes de proyectar. Ver auditorias/2026-09-17-escala.md hallazgo 3 y
+- TRES NÚMEROS DE PAYLOAD EAGER, no uno: 37,3 KB los tres archivos que escalan (de ahí el "~38 KB"
+  del skill, que está bien), 78,5 KB los 8 archivos eager sin comprimir, y 29,3 KB como viajan de
+  verdad. **Proyectá siempre sobre el comprimido**: estos archivos son filas casi idénticas, que es
+  justo lo que gzip aplasta, así que una proyección sobre bytes crudos exagera por 3x o más. Ver auditorias/2026-09-17-escala.md hallazgo 3 y
 .claude/skills/escala-finance-of-sports/SKILL.md sección B para el contexto completo.
 
 TU TAREA (dos fases, no ejecutes la fase 2 sin aprobación explícita de Guido):
