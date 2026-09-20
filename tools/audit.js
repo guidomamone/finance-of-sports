@@ -89,6 +89,11 @@ function loadEngine() {
   const files = [
     'data/clubs.js', 'data/category-map.js', 'data/currency-map.js',
     'data/sources-view.js', 'data/club-leagues.js', 'data/site-labels.js',
+    // Versión 164: las filas de club-leagues se partieron en un archivo por país, que
+    // en el navegador se cargan al abrir el selector. Acá no hay selector, así que se
+    // cargan todos, siempre: la auditoría tiene que ver la tabla completa.
+    ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter(f => f.endsWith('.js')).sort()
+      .map(f => 'data/club-leagues/' + f),
     ...fs.readdirSync(path.join(ROOT, 'data')).filter(f => f.endsWith('-data.js')).sort().map(f => 'data/' + f),
     'js/finanzas-calc.js',
   ];

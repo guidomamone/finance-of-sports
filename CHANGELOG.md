@@ -1765,3 +1765,34 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   conteo da 569 en vez de los 530 reales y aparece un choque fantasma de "Notas" en 39 países. Se
   excluyen por el destino del link, que empieza con `_`.
 - `node tools/audit.js`: 0 P0, 0 P1, 44 P2, 9 P3 (uno más, la línea agregada).
+
+## Versión 164: `club-leagues` se parte por país y sale del camino eager (punto 9 del plan de escala)
+
+- Las filas de `data/club-leagues.js` se mudaron a `data/club-leagues/<iso2>.js` (6 archivos, uno
+  por país), cada uno autoregistrándose con `Object.assign` en la misma tabla, el patrón de
+  `sources{}`/`gestionesByClub{}` de la Versión 101. `data/club-leagues.js` quedó con las reglas,
+  los 6 helpers y el cargador, sin un solo dato.
+- SE ELIGIÓ POR PAÍS Y NO POR LIGA, con el invariante verificado: sobre los 41 clubes, ninguno juega
+  una liga de otro país.
+- LO QUE DE VERDAD CAMBIÓ NO ES CÓMO SE PARTE SINO CUÁNDO SE CARGA. Partir por país no compraba
+  lazy-load: el selector necesita la tabla entera para dibujarse (`ligasConClubes()` recorre todas
+  las ligas). Lo que sirvió fue sacarla del camino eager y ponerla detrás de UNA frontera async, el
+  `abrirModal()` de `js/selector.js`. Los 6 helpers siguen síncronos: volverlos async obligaría a
+  volver async cada función de render del modal.
+- AHORRO REAL, medido y sin redondear para arriba: 1,2 KB hoy (79,7 KB a 78,5 KB de payload eager),
+  porque el archivo de helpers se quedó con la prosa de las reglas. Lo que cambió es que ese archivo
+  pasó a ser de tamaño FIJO en vez de crecer por ejercicio. Los 11,1 KB de datos se bajan al abrir
+  el modal.
+- LA PROYECCIÓN QUE MOTIVABA EL PUNTO ESTABA INFLADA 5x: el archivo era 65% comentarios, y las filas
+  de datos son 28 B/ejercicio, no 164. A 5000 ejercicios son ~137 KB de datos, no ~800 KB.
+- OTRO NÚMERO VIEJO CORREGIDO: el payload eager no es "~38 KB" como decían `ESTADO.md`, el to-do
+  22(d) y la auditoría de escala. Medido archivo por archivo: 79,7 KB en 8 archivos.
+- BUG REAL EN EL CAMINO: el cargador leía `window.clubs`, que es `undefined` porque `data/clubs.js`
+  declara `const clubs`, o sea un global léxico y no una propiedad de `window`. Es el mismo bug de
+  la Versión 96. La lista de países salía vacía y no se pedía ningún archivo, en silencio.
+- Verificado: los 6 helpers dan salida byte a byte idéntica a la de antes del cambio (mismo hash
+  SHA-1 de `leaguesOfClub` para los 41 clubes, y `clubsOfLeague`/`leagueYears`/`clubsOfLeagueYear`
+  iguales liga por liga). Antes de abrir el modal la tabla está vacía y no se bajó ningún archivo de
+  país; al abrirlo se bajan los 6 y quedan los 41 clubes. Modal recorrido paso a paso con dos
+  regiones y dos países (Argentina 11 clubes, España 10, 21 en el paso de clubes). 0 recursos
+  fallidos, `auditAll()` en 222 checks, `node tools/audit.js` en 0 P0 / 0 P1. `ASSET_V` a 164.

@@ -44,7 +44,8 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   cada bloque con su propio agregador; (3) EL CÁLCULO de esos lados, que
   siempre pasa por `computeYearGeneric()` — la cascada del resultado no se
   reimplementa nunca por afuera. Se alimenta solo de `clubs.js` +
-  `club-index.js` + `leagues.js` + `club-leagues.js`: dibuja los 41 clubes sin
+  `club-index.js` + `leagues.js` + `club-leagues/<iso2>.js` (estos últimos lazy,
+  se bajan al abrir el modal): dibuja los 41 clubes sin
   bajar un solo `data/<club>-data.js`, y recién baja los que hagan falta al
   apretar "Comparar". La explicación larga del modelo está en
   `Prototyping/Selector/MERGE-A-PRODUCCION.md`, secciones 0, 3 y 5.

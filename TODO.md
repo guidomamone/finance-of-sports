@@ -267,25 +267,20 @@ perdieron sino que se descartaron:
     909 son los dos lados del spread del mismo día y los dos están bien.
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
-    de esta corrida). (a), (b), (c), (e), (f) y (g) resueltos, se borran de acá. Siguen abiertos, en
-    el orden en que aparecen:
-    (d) `clubs.js` sigue sin adelgazar del todo: `club-index.js` (Versión 129) ya resolvió la mitad
-        que necesitaba el selector, pero `reportingCurrency`/`fiscalYearStart` siguen solo en
-        `clubs.js` (eager). AMPLIADO (Versión 159): el problema real no es solo `clubs.js`, es que
-        `index.html` carga eager 8 archivos de `data/`, y el que más crece no es `clubs.js` sino
-        `club-leagues.js` (crece por EJERCICIO, no por club: ~803 KB proyectado a 5000 ejercicios,
-        contra ~395 KB de `clubs.js` a 1000 clubes). Sumados, el payload eager pasa de ~38 KB hoy a
-        ~1,4 MB proyectado. Mover el detalle completo de `club-leagues.js` a lazy-load por
-        país/liga, y terminar de adelgazar `clubs.js`.
+    de esta corrida). (a), (b), (c), (e), (f), (g) e (i) resueltos, se borran de acá. Siguen
+    abiertos, en el orden en que aparecen:
+    (d) `clubs.js` sigue sin adelgazar: `club-index.js` (Versión 129) ya resolvió la mitad que
+        necesitaba el selector, pero `reportingCurrency`/`fiscalYearStart` siguen solo en `clubs.js`
+        (eager, ~405 B/club, ~395 KB proyectado a 1000 clubes). La otra mitad de este punto,
+        `club-leagues.js`, se resolvió en la Versión 164: sus filas viven ahora en
+        `data/club-leagues/<iso2>.js` y se bajan al abrir el selector, no en la primera visita.
+        OJO CON EL NÚMERO VIEJO: este punto decía "~38 KB hoy" de payload eager y **no era cierto**.
+        Medido archivo por archivo el 2026-09-20: son **79,7 KB** en 8 archivos (78,5 después de la
+        164). Cualquier proyección que se haga acá se mide, no se copia.
     (h) NUEVO (Versión 159): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
         tiene debounce ni límite de resultados — filtra y reconstruye el DOM completo en cada
         tecla. Invisible a 41 clubes, jank probable a 1000-3000. Debounce ~150-200ms + top-N con
         "mostrar más".
-    (i) NUEVO (Versión 159): `data/club-leagues.js` (241 líneas hoy) es un archivo único con una
-        sección por club, mantenido a mano "una vez por temporada" según su propio comentario —
-        mismo patrón que tenía `fuentes-por-club.md` antes de partirse, un escalón más adelante.
-        No urgente todavía; decidir el split (por país o liga) antes de que deje de ser viable
-        repasarlo de una sentada.
 
 35. NUEVO (sesión 2026-09-20, al partir `fuentes-por-club.md` en índice de países +
     `fuentes/_indice/<País>.md`): automatizar el mantenimiento de ese índice con

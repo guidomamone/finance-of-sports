@@ -83,17 +83,29 @@ Formato de cada fila: **qué**, **a qué volumen se rompe** (con el número, no 
 |---|---|---|---|
 | `data/clubs.js` | 405 B/club | club | ~395 KB a 1000 clubes |
 | `data/club-index.js` | 173 B/club | club | ~168 KB a 1000 clubes |
-| `data/club-leagues.js` | 164 B/ejercicio | **ejercicio, no club** | ~803 KB a 5000 ejercicios (crece ~5x más rápido que los dos de arriba) |
+| `data/club-leagues.js` | **ya no crece: es tamaño fijo** (Versión 164) | ninguno | las filas se fueron a `data/club-leagues/<iso2>.js`, que se cargan al abrir el selector y no en la primera visita |
 | `data/currency-map.js` | 18 KB hoy | combinación moneda×fecha, compartida entre clubes | sub-lineal, no es cuello proporcional |
 | `data/leagues.js`, `category-map.js`, `site-labels.js`, `sources-view.js` | fijos | catálogo/taxonomía | no crecen con clubes |
 
-Suma de los tres que sí escalan: **~38 KB hoy → ~1,4 MB proyectado (37x)**, bajado por cada
-visitante antes de elegir un club. **Estado: vigente, ampliado el 2026-09-17** — la auditoría del
-2026-09-13 solo había mirado `clubs.js`. Recomendación: adelgazar `clubs.js` (sacar
-`reportingCurrency`/`fiscalYearStart` al archivo de cada club) y generar un índice liviano de
-`club-leagues.js` (solo temporadas/conteos por liga) separado del detalle completo, que se carga lazy
-por país/liga cuando el usuario entra a esa vista del selector — mismo mecanismo que
-`loadClubData()`.
+OJO CON EL NÚMERO "~38 KB", que circuló en dos auditorías y en `ESTADO.md` y **es falso**: medido
+archivo por archivo el 2026-09-20, el payload eager son **79,7 KB** en 8 archivos. Medilo, no lo
+copies.
+
+**Estado: `club-leagues.js` RESUELTO (Versión 164), los otros dos vigentes.** Quedan `clubs.js`
+(sacar `reportingCurrency`/`fiscalYearStart` al archivo de cada club) y `club-index.js`, que es el
+punto 3 del plan de remediación.
+
+LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los otros dos:
+  1. **La proyección estaba inflada 5x por los comentarios.** El archivo era 65% comentarios: las
+     filas de datos son 28 B/ejercicio, no 164. A 5000 ejercicios son ~137 KB de datos, no ~800 KB.
+     Antes de dimensionar un cuello por regla de tres, medí cuánto de ese archivo son datos.
+  2. **El eje que importaba no era "cómo partirlo" sino "cuándo se carga".** Partir por país no
+     compraba lazy-load, porque el selector necesita la tabla entera para dibujarse
+     (`ligasConClubes()` recorre todas las ligas). Lo que sirvió fue sacarlo del camino eager
+     entero, detrás de UNA frontera async en `abrirModal()`.
+  3. **El ahorro de HOY es 1,2 KB, no 13,6.** El archivo de helpers se quedó con la prosa que
+     explica las reglas. Lo que cambió no es el tamaño de hoy: es que ese archivo pasó a ser de
+     tamaño FIJO en vez de crecer por ejercicio.
 
 ### C. Runtime del navegador, sin límite
 
@@ -165,12 +177,13 @@ por país/liga cuando el usuario entra a esa vista del selector — mismo mecani
 
 ### F. Documentación "una sección por club" en archivo único, más allá de `fuentes-por-club.md`
 
-- **`data/club-leagues.js`**: 241 líneas hoy, una entrada por club con TODOS sus años inline. Su
-  propio comentario de cabecera describe un proceso manual ("una vez por temporada, mirando ascensos
-  y descensos") sobre el archivo entero. Es la misma forma que tenía `fuentes-por-club.md` antes de
-  partirse, un escalón más adelante en el tiempo. **Nuevo, no urgente todavía** (85 ejercicios se
-  repasan en minutos) — decidir el split (por país o por liga) ANTES de que deje de ser viable
-  repasarlo de una sentada, no después.
+- **`data/club-leagues.js`**: **RESUELTO (Versión 164)**. Se partió en `data/club-leagues/<iso2>.js`,
+  uno por país, cada uno autoregistrándose con `Object.assign` en la misma tabla (el patrón de
+  `sources{}`/`gestionesByClub{}` de la Versión 101). El repaso anual de ascensos y descensos pasa a
+  ser el de UN país. El archivo original quedó con las reglas y los 6 helpers, sin un dato.
+  SE ELIGIÓ POR PAÍS Y NO POR LIGA, y se verificó el invariante que lo permite: sobre los 41 clubes,
+  CERO juegan una liga de otro país, así que la carpeta de un país tiene todo lo que hace falta para
+  contestar tanto "las ligas de este club" como "los clubes de esta liga".
 - `dudas-por-club.md` (537 líneas): mismo patrón, hoy chico, sin cruzar ningún umbral. Vigilar.
 - Cabeceras de `data/<club>-data.js`: NO es un caso de este problema — ya es 1 archivo por club.
 

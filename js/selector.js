@@ -372,8 +372,20 @@ window.CLUB_SELECTOR = (function(){
 
   // Abrir el modal. `i` es el card que lo pide (0 o 1) y `desde` a dónde va lo
   // elegido: 'finanzas' carga un club, 'vs' llena ese card.
+  // LA ÚNICA FRONTERA ASYNC DEL SELECTOR (Versión 164). Las filas de
+  // `data/club-leagues/<iso2>.js` ya no vienen en la primera visita: se bajan acá,
+  // antes de dibujar. Se puso el await en la apertura y no adentro de los 6 helpers
+  // a propósito: si los helpers devolvieran promesas habría que volver async cada
+  // función de render del modal, y son muchas. Acá es una sola.
+  // `loadClubLeagues()` cachea su promesa, así que reabrir el modal no vuelve a
+  // pedir nada. Si un archivo de país falla, la promesa igual resuelve (avisa por
+  // consola) y el modal abre sin esas ligas, en vez de no abrir.
   function abrirModal(i, desde){
     if(!inited) return;
+    window.loadClubLeagues().then(function(){ abrirModalYa(i, desde); });
+  }
+
+  function abrirModalYa(i, desde){
     hideCoach();
     origen = desde || 'finanzas';
     modalLado = i || 0;

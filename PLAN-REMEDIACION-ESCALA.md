@@ -52,7 +52,7 @@ escrito. Si te toca ejecutar alguno de los dos, agregalo a `TODO.md` como parte 
 | 3 | 8 | Chequeo automático de colisión en `Clubes/<País>/<Club>/` | ✅ Hecho (Versión 161, sesión 2026-09-20) |
 | 4 | 2 | `fuentes.html` con página propia por club | ✅ Hecho (Versión 162, sesión 2026-09-20) |
 | 5 | 7 | Reforzar la alarma de colisión de `clubId` al momento de sourcing | ✅ Hecho (Versión 163, sesión 2026-09-20) |
-| 6 | 9 | Partir `data/club-leagues.js` (por país o liga) | ⬜ Pendiente |
+| 6 | 9 | Partir `data/club-leagues.js` (por país o liga) | ✅ Hecho (Versión 164, sesión 2026-09-20) |
 | 7 | 3 | Adelgazar el payload eager (`clubs.js`/`club-index.js`, sobre la base del punto 9) | ⬜ Pendiente |
 | 8 | 4 | Debounce + límite de resultados en el buscador del selector | ⬜ Pendiente |
 
@@ -530,8 +530,51 @@ del punto 3 (el siguiente en la tabla de orden) para que la convención de archi
 esté reflejada ahí antes de que alguien lo ejecute.
 ```
 
-**Notas de ejecución:** _(completar acá cuando se haga — anotá especialmente la convención de
-archivos elegida, la va a necesitar el punto 3)_
+**Notas de ejecución** (sesión 2026-09-20, Versión 164 de `CHANGELOG.md`):
+
+- **LA CONVENCIÓN DE ARCHIVOS, que es lo que el punto 3 necesita de acá**:
+  `data/club-leagues/<iso2>.js`, uno por país, en minúscula, con el mismo código de 2 letras que usa
+  `clubs[].country`. Cada uno hace `window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};`
+  y después `Object.assign(window.CLUB_LEAGUE_BY_YEAR, { ... })`. No redeclaran nada y el orden de
+  carga no importa. Es el patrón que `sources{}` y `gestionesByClub{}` ya usaban desde la Versión
+  101, documentado en la cabecera de `data/clubs.js`.
+  **EL CARGADOR ES `window.loadClubLeagues()`**, en `data/club-leagues.js`: cachea su promesa, saca
+  la lista de países de `clubs{}` (nada que mantener a mano) y usa `allSettled`, así que un país sin
+  archivo avisa por consola y el resto sigue.
+- **POR PAÍS Y NO POR LIGA**, con el invariante verificado en vez de asumido: sobre los 41 clubes,
+  CERO juegan una liga de otro país. Eso es lo que hace que la partición por país sirva para los 6
+  helpers a la vez, tanto "las ligas de este club" como "los clubes de esta liga".
+- **EL EJE QUE IMPORTABA NO ERA "CÓMO PARTIRLO" SINO "CUÁNDO SE CARGA", y esto vale para el punto 3.**
+  Partir por país NO compra lazy-load: el selector necesita la tabla ENTERA para dibujarse
+  (`ligasConClubes()`, `js/selector.js:867`, recorre TODAS las ligas y para cada una pregunta quiénes
+  la integran), así que un cargador "por país elegido" terminaría bajando los mismos 6 archivos. Lo
+  que sirvió fue medir QUIÉN usa la tabla: solo `js/selector.js`, en 4 llamadas, y recién cuando se
+  abre el modal. `init()` solo engancha listeners. O sea que alcanzó con UNA frontera async en
+  `abrirModal()`, y los 6 helpers siguieron síncronos.
+- **TRES NÚMEROS DEL PLAN Y DE LA AUDITORÍA QUE RESULTARON FALSOS**, medidos acá:
+  1. `club-leagues.js` era **65% comentarios**. Las filas de datos son **28 B/ejercicio**, no 164.
+     La proyección de ~800 KB a 5000 ejercicios es en realidad ~137 KB de datos. El problema existía,
+     pero era 5x más chico.
+  2. El payload eager NO es "~38 KB" (lo decían `ESTADO.md`, el to-do 22(d) y
+     `auditorias/2026-09-17-escala.md`). Medido archivo por archivo: **79,7 KB** en 8 archivos.
+  3. El ahorro de HOY es **1,2 KB**, no 13,6: el archivo de helpers se quedó con la prosa de las
+     reglas. Lo que cambió es que pasó a ser de tamaño FIJO en vez de crecer por ejercicio.
+- **BUG REAL EN EL CAMINO**: el cargador leía `window.clubs`, que es `undefined`, porque
+  `data/clubs.js` declara `const clubs`, o sea un global LÉXICO y no una propiedad de `window`. La
+  lista de países salía vacía y no se pedía ni un archivo, en silencio, con el modal abriendo igual
+  (sin ligas). Es exactamente el bug de la Versión 96 ya documentado en `CONVENCIONES.md`, con otro
+  identificador. **Si el punto 3 mueve campos entre archivos de `data/`, va a pisar esto de nuevo.**
+- **Verificación**: snapshot de los 6 helpers ANTES del cambio (corrido en Node contra el archivo de
+  `git HEAD`) y DESPUÉS (corrido en el navegador): idénticos, incluido el mismo hash SHA-1 de
+  `leaguesOfClub` para los 41 clubes. Antes de abrir el modal, la tabla tiene 0 clubes y no se bajó
+  ningún archivo de país; al abrirlo se bajan los 6 y quedan los 41, con 8 ligas con clubes, igual
+  que antes. Modal recorrido paso a paso: 2 regiones, países con sus conteos (Argentina 11, Brasil 7,
+  Colombia 2, España 10) y el paso de clubes con los 21 de Argentina + España. 0 recursos fallidos,
+  `auditAll()` en 41 clubes / 222 checks / 0 que no cierran, `node tools/audit.js` en 0 P0 / 0 P1.
+- **`ASSET_V` a 164**, constante y los 13 tags. Durante la sesión se usó `164a` para esquivar la
+  caché del entorno.
+- **Ojo, el audit atajó un olvido**: `asset-v-sin-subir` (P1) saltó cuando había cambios en `js/` y
+  `data/` sin tocar `index.html`. Funcionó exactamente como tenía que funcionar.
 
 ---
 
@@ -561,9 +604,23 @@ TODOS los visitantes. Probar bien en preview antes de aprobar.
 Contexto: en finance-of-sports, index.html carga eager (siempre, antes de elegir club) 8 archivos
 de data/: clubs.js, club-index.js, leagues.js, club-leagues.js, category-map.js, site-labels.js,
 currency-map.js, sources-view.js. De esos, clubs.js y club-index.js crecen linealmente con la
-cantidad de clubes. club-leagues.js ya se partió en el punto anterior de este plan (revisá sus
-Notas de ejecución en PLAN-REMEDIACION-ESCALA.md antes de arrancar, para saber qué convención de
-archivos y qué índice liviano quedó). Ver auditorias/2026-09-17-escala.md hallazgo 3 y
+cantidad de clubes. club-leagues.js ya se partió en el punto anterior de este plan.
+
+AJUSTE 2026-09-20, con lo que de verdad quedó del punto 9 (leé igual sus Notas de ejecución
+completas):
+- La convención es `data/club-leagues/<iso2>.js`, uno por país, cada uno con
+  `window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {}` + `Object.assign(...)`. NO quedó
+  ningún "índice liviano" de ligas, que es lo que este prompt asumía: no hizo falta.
+- El cargador es `window.loadClubLeagues()` (en `data/club-leagues.js`), que cachea su promesa y
+  saca la lista de países de `clubs{}`. Si adelgazás `clubs.js`, NO le saques `country`: este
+  cargador lo lee.
+- La frontera async está en `abrirModal()` de `js/selector.js`, y es UNA sola. Si este punto agrega
+  otra carga lazy que el selector necesite, sumala AHÍ en vez de volver async un helper.
+- OJO CON `window.X` CONTRA `X` PELADO: `data/clubs.js` declara `const clubs`, o sea un global
+  léxico que NO es propiedad de `window`. `window.clubs` da `undefined`. Ya costó un bug en el punto
+  9 y este punto mueve campos justamente entre esos archivos.
+- El payload eager real es 78,5 KB en 8 archivos, no "~38 KB": ese número circulaba en tres
+  documentos y era falso. Medilo antes de proyectar. Ver auditorias/2026-09-17-escala.md hallazgo 3 y
 .claude/skills/escala-finance-of-sports/SKILL.md sección B para el contexto completo.
 
 TU TAREA (dos fases, no ejecutes la fase 2 sin aprobación explícita de Guido):

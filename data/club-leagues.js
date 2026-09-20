@@ -23,8 +23,33 @@
 // acordarse de él.
 //
 // Las filas son los ejercicios REALES de cada club (los placeholder no juegan
-// ningún torneo). Al cargar un ejercicio nuevo hay que agregar su fila acá: la
+// ningún torneo). Al cargar un ejercicio nuevo hay que agregar su fila: la
 // auditoría avisa si falta.
+//
+// DÓNDE ESTÁN LAS FILAS, DESDE LA VERSIÓN 164: en `data/club-leagues/<iso2>.js`,
+// un archivo por país, cada uno autoregistrándose en la misma tabla con
+// `Object.assign` (el mismo patrón que `sources{}` y `gestionesByClub{}` desde la
+// Versión 101). Este archivo quedó con las REGLAS y los 6 helpers, sin un solo
+// dato. Dos motivos, y el segundo pesa más:
+//   1. El repaso anual de ascensos y descensos pasa a ser el de UN país.
+//   2. LAS FILAS YA NO SE BAJAN EN LA PRIMERA VISITA. Se cargan al abrir el
+//      selector, que es el único lugar del sitio que las usa.
+//
+// POR QUÉ SE CARGAN TODOS LOS PAÍSES JUNTOS Y NO SOLO EL QUE HAGA FALTA: el
+// selector necesita la tabla ENTERA para dibujarse. `ligasConClubes()`
+// (`js/selector.js`) recorre TODAS las ligas y para cada una pregunta quiénes la
+// integran, así que un cargador "por país elegido" terminaría bajando los mismos
+// archivos, con un cargador más que mantener encima. Lo que se ganó no es partir
+// la carga: es MOVERLA de la primera visita, donde nadie las necesita, a la
+// apertura del modal.
+//
+// POR QUÉ LOS 6 HELPERS SIGUEN SIENDO SÍNCRONOS: hay UNA sola frontera async, el
+// `abrirModal()` de `js/selector.js`, que espera la carga antes de dibujar nada.
+// Si en vez de eso los helpers devolvieran promesas, habría que volver async cada
+// función de render del modal. OJO SI SE AGREGA UN CONSUMIDOR NUEVO: tiene que
+// asegurarse de que `loadClubLeagues()` ya resolvió. Con la tabla vacía los
+// helpers no tiran error, devuelven listas vacías, que es peor, porque se lee
+// como "este club no jugó nunca en ninguna liga".
 //
 // ESTADO: 82 de las 85 filas verificadas, cada bloque con la fuente contra la que
 // se chequeó. Las 3 que faltan son presupuestos (Boca 2027, Racing 2026 y 2027):
@@ -56,104 +81,61 @@
 // una temporada.
 // ============================================================================
 
-const CLUB_LEAGUE_BY_YEAR = {
-  // ---- ARGENTINA (cierre de ejercicio: 30/6 y 31/8) ----
-  // Verificado el 13/9/2026: temporadas 2022, 2023, 2024 y 2025 de Primera División contra sus
-  // páginas de Wikipedia (cubren Estudiantes, Unión, Rosario Central, Independiente, Instituto,
-  // River, Boca, San Lorenzo 2024, Racing 2024 y Vélez 2024); Argentinos Juniors contra su propia
-  // página y la de la B Nacional 2016-17. Vélez, San Lorenzo y Racing en todos los años con
-  // balance: confirmado por Guido, que conoce el dato (13/9/2026).
-  //
-  // SUB-REGLA DE "LA CATEGORÍA AL CIERRE", para los ejercicios que cierran entre dos torneos:
-  // vale la categoría de la temporada EN CURSO o recién terminada a la fecha de cierre. Importa
-  // una sola vez acá, y es el caso de Argentinos: su ejercicio jul-2015/jun-2016 se jugó entero en
-  // Primera (el descenso se definió al terminar el torneo 2016, en mayo), así que ese ejercicio es
-  // Primera aunque al 30/6/2016 el club ya estuviera descendido para el torneo siguiente. Leerlo al
-  // revés pondría como "B Nacional" un año cuyos ingresos son 100% de Primera.
-  argentinosjuniors: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primeranacional', 2018: 'ar-primera', 2019: 'ar-primera' },
-  // El único de los 11 que cambió de categoría en el período cargado: descendió al terminar el
-  // torneo de transición 2016 y jugó la B Nacional 2016-17, que ganó (terminó el 30/7/2017, o sea
-  // que al cierre del ejercicio 2017 todavía estaba en curso). Volvió a Primera para 2017-18.
-  boca: { 2025: 'ar-primera', 2027: null },          // 2027 es el presupuesto jul-2026/jun-2027: cierra en el futuro
-  estudianteslp: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
-  independiente: { 2024: 'ar-primera' },
-  instituto: { 2024: 'ar-primera' },              // ascendido para 2023, ya en Primera al cierre
-  racing: { 2009: 'ar-primera', 2010: 'ar-primera', 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera', 2026: null, 2027: null },
-  // 2026 y 2027 son presupuestos: el de 2027 cierra en el futuro, y el de 2026 (cerrado el
-  // 30/6/2026) no se verificó contra la temporada, así que queda en null como cualquier otro
-  // dato sin chequear.
-  river: { 2024: 'ar-primera' },
-  rosariocentral: { 2023: 'ar-primera' },
-  sanlorenzo: { 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2024: 'ar-primera' },
-  union: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
-  velez: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
+// ============================================================================
+// LA TABLA, y quién la llena. Nace VACÍA: la llenan los
+// `data/club-leagues/<iso2>.js` cuando alguien llama a `loadClubLeagues()`.
+// ============================================================================
+window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
-  // ---- BRASIL (cierre de ejercicio: 31/12) ----
-  // Verificado el 13/9/2026 contra las páginas de temporada de Wikipedia: Série A 2024 y 2025,
-  // Série B 2024 y 2025. El ejercicio es el año calendario, así que coincide con la temporada.
-  atleticogoianiense: { 2025: 'br-serieB' },   // descendido de la Série A 2024
-  botafogo: { 2024: 'br-serieA' },             // campeón 2024
-  coritiba: { 2024: 'br-serieB' },             // descendido de la Série A 2023
-  cruzeiro: { 2025: 'br-serieA' },
-  gremio: { 2024: 'br-serieA' },
-  ituano: { 2024: 'br-serieB' },
-  mirassol: { 2024: 'br-serieB' },             // ascendió a la Série A para 2025
-
-  // ---- COLOMBIA (cierre de ejercicio: 31/12) ----
-  // Verificado el 13/9/2026 contra "2025 Categoría Primera A season" (Wikipedia).
-  envigado: { 2025: 'co-primeraA' },           // descendió al terminar 2025
-  oncecaldas: { 2025: 'co-primeraA' },
-
-  // ---- ESPAÑA (cierre de ejercicio: 30/6) ----
-  // Verificado el 13/9/2026 contra "2024-25 La Liga" y "2023-24 La Liga" (Wikipedia). El
-  // ejercicio cierra el 30/6 y coincide con la temporada, sin ambigüedad.
-  athleticclub: { 2025: 'es-laliga' },
-  atleticomadrid: { 2025: 'es-laliga' },
-  celtavigo: { 2025: 'es-laliga' },
-  deportivoalaves: { 2025: 'es-laliga' },
-  fcbarcelona: { 2025: 'es-laliga' },
-  realbetis: { 2025: 'es-laliga' },
-  realmadrid: { 2025: 'es-laliga' },
-  sevillafc: { 2025: 'es-laliga' },
-  valenciacf: { 2025: 'es-laliga' },
-  villarrealcf: { 2024: 'es-laliga' },         // temporada 2023/24
-
-  // ---- JAPÓN (cierre de ejercicio: 31/12) ----
-  // Verificado el 13/9/2026 contra "2025 J1 League" (Wikipedia): los 10 clubes cargados
-  // jugaron J1 en 2025.
-  cerezoosaka: { 2025: 'jp-j1' },
-  fctokyo: { 2025: 'jp-j1' },
-  gambaosaka: { 2025: 'jp-j1' },
-  kashimaantlers: { 2025: 'jp-j1' },
-  kawasakifrontale: { 2025: 'jp-j1' },
-  nagoyagrampus: { 2025: 'jp-j1' },
-  sanfreccehiroshima: { 2025: 'jp-j1' },
-  urawareddiamonds: { 2025: 'jp-j1' },
-  visselkobe: { 2025: 'jp-j1' },
-  yokohamafmarinos: { 2025: 'jp-j1' },
-
-  // ---- MÉXICO (cierre de ejercicio: 31/12) ----
-  // Verificado el 13/9/2026 contra "2024-25 Liga MX season" (Wikipedia). Liga MX viene con
-  // los mismos 18 clubes desde 2020-21.
-  clubamerica: { 2025: 'mx-ligamx' },
-};
+// Los países salen de `clubs{}`, que es eager y ya está cargado, así que sumar un
+// club de un país nuevo no obliga a tocar ninguna lista acá: solo a crear su
+// `data/club-leagues/<iso2>.js`. Si ese archivo falta se avisa por consola y el
+// resto sigue (`allSettled` y no `all`): un país sin tabla deja a sus clubes
+// fuera del árbol de ligas, que es degradar, no romper. `node tools/audit.js`
+// cuenta las filas que faltan, así que el pendiente igual queda a la vista.
+let _clubLeaguesPromise = null;
+function loadClubLeagues(){
+  if(_clubLeaguesPromise) return _clubLeaguesPromise;
+  // OJO CON `clubs` SIN `window.` (bug real de esta sesión, y el mismo de la Versión 96):
+  // `data/clubs.js` lo declara con `const`, así que es un global LÉXICO y NO una propiedad
+  // de `window`. `window.clubs` da `undefined`, la lista de países salía vacía y este
+  // cargador no pedía ni un archivo, en silencio. El identificador pelado sí lo encuentra,
+  // tanto en el navegador como en el contexto de `vm` de tools/audit.js.
+  const tabla = (typeof clubs !== 'undefined' && clubs) || window.clubs || {};
+  const paises = [...new Set(Object.values(tabla)
+    .map(c => (c.country || '').toLowerCase()).filter(Boolean))].sort();
+  if(!paises.length) console.error('[club-leagues] no se pudo leer clubs{}: el selector va a quedar sin ligas');
+  _clubLeaguesPromise = Promise.allSettled(paises.map(p => new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = 'data/club-leagues/' + p + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    s.onload = resolve;
+    s.onerror = () => reject(new Error(p));
+    document.head.appendChild(s);
+  }))).then(rs => {
+    const faltan = rs.filter(r => r.status === 'rejected').map(r => r.reason.message);
+    if(faltan.length) console.error('[club-leagues] no se pudo cargar: ' + faltan.join(', ') +
+      '. Los clubes de esos países no van a aparecer bajo ninguna liga.');
+  });
+  return _clubLeaguesPromise;
+}
+window.loadClubLeagues = loadClubLeagues;
 
 // leagueAt(clubId, year): la liga de ESE ejercicio, o null si todavía no se
 // verificó. Devolver null a propósito y no un fallback a "la liga de hoy": un
 // ejercicio de hace 10 años puede ser de otra categoría, y contestar con la
 // actual sería inventar el dato que este archivo existe para no inventar.
 function leagueAt(clubId, year){
-  return ((CLUB_LEAGUE_BY_YEAR[clubId] || {})[year]) || null;
+  return ((window.CLUB_LEAGUE_BY_YEAR[clubId] || {})[year]) || null;
 }
 
 // Cuántas filas faltan verificar, para que la auditoría lo cuente sin recorrer
 // los datos por su cuenta.
 function clubLeagueCoverage(){
   let total = 0, cargadas = 0;
-  for(const clubId of Object.keys(CLUB_LEAGUE_BY_YEAR)){
-    for(const year of Object.keys(CLUB_LEAGUE_BY_YEAR[clubId])){
+  for(const clubId of Object.keys(window.CLUB_LEAGUE_BY_YEAR)){
+    for(const year of Object.keys(window.CLUB_LEAGUE_BY_YEAR[clubId])){
       total++;
-      if(CLUB_LEAGUE_BY_YEAR[clubId][year]) cargadas++;
+      if(window.CLUB_LEAGUE_BY_YEAR[clubId][year]) cargadas++;
     }
   }
   return { total, cargadas, faltan: total - cargadas };
@@ -176,15 +158,15 @@ function clubLeagueCoverage(){
 // TODO agregado de liga: promedio, mediana, ranking, "cuánto generaba la liga en
 // 2022". Devuelve clubIds, alfabético por id para que el orden sea estable.
 function clubsOfLeagueYear(leagueId, year){
-  return Object.keys(CLUB_LEAGUE_BY_YEAR)
-    .filter(clubId => CLUB_LEAGUE_BY_YEAR[clubId][year] === leagueId)
+  return Object.keys(window.CLUB_LEAGUE_BY_YEAR)
+    .filter(clubId => window.CLUB_LEAGUE_BY_YEAR[clubId][year] === leagueId)
     .sort();
 }
 
 // En qué ejercicios jugó un club una liga dada. Descendente, el más nuevo
 // primero (mismo criterio que el `<select>` de Año del sitio).
 function yearsOfClubInLeague(clubId, leagueId){
-  const rows = CLUB_LEAGUE_BY_YEAR[clubId] || {};
+  const rows = window.CLUB_LEAGUE_BY_YEAR[clubId] || {};
   return Object.keys(rows)
     .filter(year => rows[year] === leagueId)
     .map(Number)
@@ -198,7 +180,7 @@ function yearsOfClubInLeague(clubId, leagueId){
 // puede no estar cargado en un contexto de Node sin el catálogo: en ese caso
 // cae a orden alfabético por id).
 function leaguesOfClub(clubId){
-  const rows = CLUB_LEAGUE_BY_YEAR[clubId] || {};
+  const rows = window.CLUB_LEAGUE_BY_YEAR[clubId] || {};
   const ids = [...new Set(Object.keys(rows).map(y => rows[y]).filter(Boolean))];
   const cat = (typeof LEAGUES !== 'undefined') ? LEAGUES : null;
   ids.sort((a, b) => {
@@ -214,8 +196,8 @@ function leaguesOfClub(clubId){
 // que NO es "los clubes de la liga". Un agregado que use esto en vez de
 // `clubsOfLeagueYear()` está mezclando ejercicios de temporadas distintas.
 function clubsOfLeague(leagueId){
-  return Object.keys(CLUB_LEAGUE_BY_YEAR)
-    .filter(clubId => Object.values(CLUB_LEAGUE_BY_YEAR[clubId]).includes(leagueId))
+  return Object.keys(window.CLUB_LEAGUE_BY_YEAR)
+    .filter(clubId => Object.values(window.CLUB_LEAGUE_BY_YEAR[clubId]).includes(leagueId))
     .sort();
 }
 
@@ -223,8 +205,8 @@ function clubsOfLeague(leagueId){
 // Es la lista de años elegibles para un benchmark de liga.
 function leagueYears(leagueId){
   const years = new Set();
-  Object.keys(CLUB_LEAGUE_BY_YEAR).forEach(clubId => {
-    const rows = CLUB_LEAGUE_BY_YEAR[clubId];
+  Object.keys(window.CLUB_LEAGUE_BY_YEAR).forEach(clubId => {
+    const rows = window.CLUB_LEAGUE_BY_YEAR[clubId];
     Object.keys(rows).forEach(year => { if(rows[year] === leagueId) years.add(Number(year)); });
   });
   return [...years].sort((a, b) => b - a);
@@ -235,7 +217,7 @@ function leagueYears(leagueId){
 // pero un club nuevo nace así, y sin esto quedaría invisible en el árbol: el
 // selector lo muestra en una fila aparte del país, "sin liga verificada".
 function clubsWithoutVerifiedLeague(){
-  return Object.keys(CLUB_LEAGUE_BY_YEAR)
-    .filter(clubId => !Object.values(CLUB_LEAGUE_BY_YEAR[clubId]).some(Boolean))
+  return Object.keys(window.CLUB_LEAGUE_BY_YEAR)
+    .filter(clubId => !Object.values(window.CLUB_LEAGUE_BY_YEAR[clubId]).some(Boolean))
     .sort();
 }

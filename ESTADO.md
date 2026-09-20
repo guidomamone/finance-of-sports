@@ -103,7 +103,8 @@ se reescribe, no se acumula.
   año (lo levantó Guido). En el árbol, un club aparece bajo CADA liga en la que
   tiene un ejercicio cargado: nada que actualizar por temporada, ningún campo que
   pueda mentir. `clubs{}` gana `sport`, que sí es intrínseco del club.
-- LIGA POR EJERCICIO (Versión 132): `data/club-leagues.js` dice en qué categoría
+- LIGA POR EJERCICIO (Versión 132, partido por país en la 164):
+  `data/club-leagues/<iso2>.js` dice en qué categoría
   jugó cada club en cada ejercicio, que es distinto de en cuál juega hoy
   (Mirassol 2024 es Série B y Mirassol 2025 Série A). Es un archivo aparte y no
   un campo adentro de cada club, decisión de Guido: junto se actualiza una vez
@@ -117,6 +118,14 @@ se reescribe, no se acumula.
   primer y segundo escalón argentino son `ar-primera` y `ar-primeranacional`, y
   NO el `ar-lpf` del prompt del selector: esa categoría cambió de organizador
   tres veces en el período cargado, y el id nombra el escalón, que no cambia.
+  DESDE LA VERSIÓN 164 SON 6 ARCHIVOS, uno por país, cada uno autoregistrándose
+  en la misma tabla, y `data/club-leagues.js` quedó con las reglas y los 6
+  helpers, sin un dato. Dos motivos: el repaso anual de ascensos y descensos pasa
+  a ser el de UN país, y las filas dejaron de bajarse en la primera visita (se
+  cargan al abrir el selector, que es el único lugar del sitio que las usa).
+  Hay UNA sola frontera async, `abrirModal()` de `js/selector.js`: los 6 helpers
+  siguen siendo síncronos a propósito, porque volverlos async obligaría a volver
+  async cada función de render del modal.
 - ÍNDICE LIVIANO DE CLUBES (Versión 129, ampliado en la 146): `data/club-index.js`,
   GENERADO, con lo que hay que mostrar de un club ANTES de entrar a él (nombre,
   país, calidad del dato, cuántos ejercicios, el más reciente, y desde la Versión
