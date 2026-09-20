@@ -267,6 +267,9 @@ se reescribe, no se acumula.
   (transversal y periódica, distinta de la verificación de onboarding y de `auditAll()`). El skill
   es el procedimiento; `auditorias/<fecha>.md` es el reporte de cada corrida, y cada uno diffea
   contra el anterior para no repetir la misma lista hasta que nadie la lea.
+- `.claude/skills/escala-finance-of-sports/SKILL.md`: el mapa de puntos calientes de escala (qué
+  se rompe entre 200 y 3000 clubes, y con qué número), separado de la auditoría de rutina porque
+  es el contenido de UN eje (`escala`) y crece con cada sesión de sourcing/onboarding.
 - `tools/audit.js`: auditoría determinista del proyecto entero (datos, escala,
   código, docs), agrupada en P0/P1/P2/P3. `--json` para la lista completa,
   `--quiet` para usarlo como gate antes de un push. `tools/audit-ignore.json`
@@ -297,10 +300,11 @@ se reescribe, no se acumula.
   decisión. Solo hace falta para entender el "por qué" de algo viejo.
 - `CLAUDE.md`: instrucciones permanentes del proyecto (dónde guardar PDFs, qué
   skill leer antes de qué tarea, qué preguntarle a Guido antes de asumir).
-- `.claude/skills/`: 5 skills propios (start-session-finance-of-sports-project,
-  club-sourcing, club-data-mapping, club-or-year-onboarding,
-  auditoria-finance-of-sports). Con la sesión abierta en `finance-of-sports/` se
-  autodescubren y se invocan por nombre; ver CLAUDE.md.
+- `.claude/skills/`: 6 skills propios (start-session-finance-of-sports-project,
+  club-data-mapping, club-or-year-onboarding, club-sourcing,
+  auditoria-finance-of-sports, escala-finance-of-sports). Se autodescubren cuando
+  la sesión abre directo en `finance-of-sports/`; ver CLAUDE.md para el caso en
+  que no.
 - `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44

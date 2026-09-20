@@ -106,4 +106,4 @@ hoy sin una razón identificable, el que está mal es el script, no el índice.
 
 Al terminar, seguí el cierre de sesión de siempre (`ESTADO.md`, `TODO.md`, `CHANGELOG.md`, y la
 sección de herramientas del skill `start-session-finance-of-sports-project`, que lista los scripts
-de `tools/` y hay que sumarle este). Esto resuelve el to-do 23.
+de `tools/` y hay que sumarle este). Esto resuelve el to-do 35.

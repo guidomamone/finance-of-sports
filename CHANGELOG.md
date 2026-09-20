@@ -1643,7 +1643,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   "Perú" y las carpetas no, la única inconsistencia de tilde que quedaba en un nombre de país.
 - Actualizados `CLAUDE.md`, `ARQUITECTURA.md`, `ESTADO.md`, `TODO.md`, `COMO-CORRE-EL-PROYECTO.html`
   y los 4 skills que citaban el índice.
-- To-do 23 nuevo: automatizar el índice con `tools/generate-fuentes-index.js`. El prompt
+- To-do 35 nuevo: automatizar el índice con `tools/generate-fuentes-index.js`. El prompt
   autocontenido para esa sesión quedó en `PROMPT-generador-indice-fuentes.md`.
 - Bug aparte, encontrado al correr los generadores como verificación de cierre:
   `tools/generate-fuentes-page.js --check` venía diciendo "fuentes.html quedó DESACTUALIZADO"
@@ -1651,3 +1651,25 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   antes de comparar no contemplaba el `</span>` que el markup mete entre el texto y la fecha, así
   que no matcheaba nunca y la única diferencia real (la fecha de generación) contaba como cambio.
   `fuentes.html` no estaba desactualizado: sus 89 documentos coinciden con los datos.
+
+## Versión 159 — Auditoría de escala (eje `escala`, pedido explícito de Guido) y skill nueva
+
+- Re-corrida completa del mapa de escala de la Versión 128 (`auditorias/2026-09-13-escala.md`)
+  contra el estado actual: 3 cuellos resueltos (`clubId` sin país, comentario de `index.html`,
+  selector jerárquico), 3 vigentes sin cambios (`fuentes.html` sin partir, `clubs.js` sin
+  adelgazar del todo, `auditAll()` en serie), 4 nuevos que la corrida anterior no podía ver
+  todavía: `fuentes-por-club.md` (el índice de sourcing, no su contenido) ya cruzó su propio
+  umbral de partición; el payload eager de `index.html` es 8 archivos y el que más crece es
+  `club-leagues.js`, no `clubs.js`; el buscador del selector no tiene debounce ni límite de
+  resultados; y el backlog de transcripción en `Clubes/` corre ~8x más rápido que la carga real.
+  Reporte completo: `auditorias/2026-09-17-escala.md`. To-do 22 actualizado con los hallazgos
+  vigentes y nuevos.
+- Skill nueva: `.claude/skills/escala-finance-of-sports/`, dedicada al mapa de puntos calientes de
+  escala y su metodología, separada de `auditoria-finance-of-sports` (que sigue siendo el
+  procedimiento genérico de los 5 ejes) porque el mapa es grande y cambia con cada sesión de
+  sourcing/onboarding. `CLAUDE.md` y el eje `escala` de `auditoria-finance-of-sports` apuntan a
+  ella.
+- NOTA (agregada al reconciliar con `main`): el hallazgo 1 de este trabajo (partir
+  `fuentes-por-club.md`) se resolvió en paralelo, en `main`, con la misma Versión 158 — otra
+  sesión lo hizo el mismo día sin que las dos se vieran. Se renumeró esta entrada a 159 para no
+  chocar, y el to-do 22(g) se marcó resuelto apuntando al commit de `main`.

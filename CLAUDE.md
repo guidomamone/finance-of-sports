@@ -74,7 +74,7 @@ pedido de Guido: "la idea es hacer reach out a clubes y preguntarles") en vez
 de asumir un criterio o dejarla perdida en un comentario de código — es la
 lista que Guido usa para escribirles directo a los clubes.
 
-Este proyecto tiene 5 skills en `.claude/skills/`. Según la tarea, leerlos es
+Este proyecto tiene 6 skills en `.claude/skills/`. Según la tarea, leerlos es
 OBLIGATORIO, no opcional:
 
 - `start-session-finance-of-sports-project`: el checklist de arranque y de cierre
@@ -92,12 +92,17 @@ OBLIGATORIO, no opcional:
   portales específicos ya descubiertos).
 - `auditoria-finance-of-sports`: si la tarea es una auditoría de rutina del
   proyecto entero (Versión 123).
+- `escala-finance-of-sports`: **si la tarea es un chequeo de escala/capacidad** (qué se rompe
+  cuando el proyecto pasa de 50 a 200-3000 clubes cargados) — pedido explícito de Guido antes de
+  un cambio grande, o como contenido del eje `escala` al correr `auditoria-finance-of-sports`
+  (Versión 159). Distinto de una auditoría de datos: no mira si un número está bien, mira si el
+  archivo/estructura que lo guarda o lo muestra va a aguantar el volumen.
 
 CÓMO LLEGAR A ELLOS. Esto depende de dónde se abrió la sesión, y lo que decía acá
 antes dejó de ser cierto (corregido en la Versión 124):
 
 - **Sesión abierta directamente en `finance-of-sports/`**, que es lo normal desde
-  la Versión 120: los 5 aparecen solos en la lista de skills disponibles y se
+  la Versión 120: los 6 aparecen solos en la lista de skills disponibles y se
   invocan por nombre. NO hace falta abrirlos con el Read tool.
 - **Sesión abierta en la carpeta de arriba (`Website propio/`)**: este es un repo
   Git separado anidado ahí, y el descubrimiento automático puede no llegar hasta
