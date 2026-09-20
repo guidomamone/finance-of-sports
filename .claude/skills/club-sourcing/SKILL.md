@@ -39,8 +39,11 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   portal exacto, y por qué falló — nunca alcanza con "no se encontró". Ver `fuentes/Uruguay/
   _notas-generales.md` como ejemplo del nivel de detalle esperado.
 - **Guardar los hallazgos**: PDFs en `Clubes/<País>/<Club>/` (mismo nivel que `Clubes/Argentina/`),
-  documentación en `fuentes/<País>/<Club>.md` (con su línea en el índice de `fuentes-por-club.md`) —
-  ver `CLAUDE.md` para la convención completa de carpetas.
+  documentación en `fuentes/<País>/<Club>.md`, con su línea en el índice de su país
+  (`fuentes/_indice/<País>.md`) — ver `CLAUDE.md` para la convención completa de carpetas.
+  **Trabajá siempre sobre el archivo de TU país**: es lo que permite que dos sesiones de sourcing
+  corran en paralelo sin pisarse. `fuentes-por-club.md` (el índice de países) se toca solo al
+  terminar, y solo si cambiaron los números de ese país.
 - **Antes de cargar cualquier PDF encontrado en un país nuevo al sitio**, releer `club-data-mapping`
   sección 5 (conversión a USD) y sección 14 (`grossDebt`) — ambas asumen implícitamente el criterio
   argentino de "moneda homogénea"/RT6, que puede no aplicar en otro país con otra normativa contable.

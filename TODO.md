@@ -27,7 +27,7 @@ perdieron sino que se descartaron:
   América, los 5 brasileños con PDF listo, los años extra de España, y el barrido colombiano).
   Mismo criterio que el primer punto: buscar y cargar documentos es el trabajo del proyecto, no
   una lista de pendientes. **No se perdió nada**: qué hay descargado y qué falta de cada club vive
-  en `fuentes/<País>/<Club>.md` y en el índice `fuentes-por-club.md`, que es donde se mira antes
+  en `fuentes/<País>/<Club>.md` y en el índice de su país `fuentes/_indice/<País>.md`, que es donde se mira antes
   de empezar; las preguntas abiertas que dejaron (el tipo de cambio doble de Ollamani, el PAT de
   Once Caldas, las 3 cifras de Deportes Tolima, el presupuesto por año calendario de Instituto)
   están en `dudas-por-club.md` y en el archivo de fuentes de cada club.
@@ -301,6 +301,15 @@ perdieron sino que se descartaron:
     (f) `auditAll()` carga los clubes en SERIE (`for` con `await`): 114 ms con 41, pero ~30 s a 1000
         clubes con latencia real, y es lo que hay que correr antes de cada push de datos. Tandas
         paralelas con `Promise.all`.
+
+23. NUEVO (sesión 2026-09-20, al partir `fuentes-por-club.md` en índice de países +
+    `fuentes/_indice/<País>.md`): automatizar el mantenimiento de ese índice con
+    `tools/generate-fuentes-index.js`, mismo patrón que `tools/generate-club-index.js`. Hoy los 3
+    números de cada país (clubes trackeados, con documento, chequeo más viejo) se escribieron una
+    vez con un script de un solo uso y se mantienen a mano. **El prompt completo y autocontenido
+    para esa sesión está en `PROMPT-generador-indice-fuentes.md`**, con el criterio de clasificación
+    ya decidido, las dos listas de regex, y los 12 casos que hubo que resolver a mano. No es
+    urgente: el índice se toca una vez por sesión de sourcing y son 44 líneas.
 
 8. Reemplazar el email placeholder del formulario de contacto
    (contacto@bocaennumeros.example) por uno real antes de publicar.

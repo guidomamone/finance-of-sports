@@ -50,12 +50,16 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   `Prototyping/Selector/MERGE-A-PRODUCCION.md`, secciones 0, 3 y 5.
   `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
   se borró en la Versión 152 y lo que hacía mejor está acá adentro.
-- fuentes-por-club.md: ÍNDICE (desde la sesión 2026-09-13, antes tenía todo
-  el contenido inline — dejó de escalar con decenas de clubes) de una línea
-  por club con su estado y fecha de último chequeo, cada una linkeando a
-  `fuentes/<País>/<Club>.md`, que es donde vive el contenido real (links a
-  documentos oficiales, notas de prensa, qué se probó y qué falta). Revisar
-  el índice antes de asumir que no hay fuentes nuevas para un club.
+- fuentes-por-club.md: ÍNDICE DE PAÍSES (desde la sesión 2026-09-20; antes era
+  una línea por club, y antes de la 2026-09-13 tenía todo el contenido inline —
+  cada nivel dejó de escalar a su turno). Una línea por país con cuántos clubes
+  trackea, cuántos tienen documento encontrado y la fecha del chequeo más viejo,
+  linkeando a `fuentes/_indice/<País>.md`, que tiene una línea por club, que a su
+  vez linkea a `fuentes/<País>/<Club>.md`, donde vive el contenido real (links a
+  documentos oficiales, notas de prensa, qué se probó y qué falta). Revisar el
+  índice del país antes de asumir que no hay fuentes nuevas para un club. El
+  archivo por país es además lo que permite sourcear dos países en paralelo sin
+  conflictos de merge.
 - CHANGELOG.md: resumen corto (unas pocas líneas) de qué cambió en cada
   versión. Empezar acá para "¿cuándo se cargó/cambió tal cosa?".
 - finance-of-sports-project.md (misma carpeta que este HTML): historia narrativa

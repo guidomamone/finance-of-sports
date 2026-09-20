@@ -379,7 +379,7 @@ Antes de abrir un PDF nuevo con el Read tool, probar `pdftotext -layout archivo.
 devuelve texto real (no basura ni vacío), es MUCHO más barato en tokens que renderizar página por
 página como imagen. Si `pdftotext` da vacío o basura, el PDF es un escaneo puro y hay que usar el
 Read tool sobre las páginas como imágenes — ver el registro por documento de qué tipo es cada uno en
-`fuentes/Argentina/Racing.md` (ver el índice en `fuentes-por-club.md`), ya tiene el resultado de
+`fuentes/Argentina/Racing.md` (ver el índice en `fuentes/_indice/Argentina.md`), ya tiene el resultado de
 probar los ~24 documentos del archivo oficial de Racing.
 
 **Si el escaneo aparece torcido (inclinado en diagonal)**: leer así arrastra error acumulado hacia

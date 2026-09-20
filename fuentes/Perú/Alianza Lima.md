@@ -3,7 +3,7 @@
 - **Hit fuerte, ahora con 6 ejercicios consecutivos (2019-2024).** A los 2 ya encontrados
   (`estado-financiero-2019.pdf`, `estado-financiero-2022.pdf`) se sumaron en esta sesión
   `estado-financiero-2020.pdf`, `estado-financiero-2021.pdf`, `estado-financiero-2023.pdf` y
-  `estado-financiero-2024.pdf`, todos en `Clubes/Peru/Alianza Lima/` — mismo tipo de documento
+  `estado-financiero-2024.pdf`, todos en `Clubes/Perú/Alianza Lima/` — mismo tipo de documento
   ("Estados Financieros"/"Estado de Situación Financiera" auditado bajo NIA), bajados de la misma
   carpeta de transparencia (clubalianzalima.com.pe/static/media/uploads/transparencia/), pero OJO:
   el patrón de nombre de archivo NO es uniforme entre años — hubo que probar varias variantes por

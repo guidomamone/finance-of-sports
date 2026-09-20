@@ -297,11 +297,15 @@ se reescribe, no se acumula.
   decisión. Solo hace falta para entender el "por qué" de algo viejo.
 - `CLAUDE.md`: instrucciones permanentes del proyecto (dónde guardar PDFs, qué
   skill leer antes de qué tarea, qué preguntarle a Guido antes de asumir).
-- `.claude/skills/`: 3 skills propios (club-sourcing, club-data-mapping,
-  club-or-year-onboarding). NO se autodescubren (repo anidado), hay que leerlos a
-  mano; ver CLAUDE.md.
-- `fuentes-por-club.md` + `fuentes/<País>/<Club>.md`: qué se buscó, qué se
-  encontró y qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF.
+- `.claude/skills/`: 5 skills propios (start-session-finance-of-sports-project,
+  club-sourcing, club-data-mapping, club-or-year-onboarding,
+  auditoria-finance-of-sports). Con la sesión abierta en `finance-of-sports/` se
+  autodescubren y se invocan por nombre; ver CLAUDE.md.
+- `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` (una
+  línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
+  qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
+  países, 530 clubes trackeados, 339 con documento encontrado (de los cuales 41
+  están cargados al sitio).
 - `dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
 ---

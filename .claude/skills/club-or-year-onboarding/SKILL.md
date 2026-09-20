@@ -726,7 +726,7 @@ mantengamos esa info pero no subamos info incompleta"): **no se cargó nada al s
 presupuesto — ni el año calendario tal cual (rompería el modelo de datos), ni una mitad de temporada
 sola (sería un ejercicio incompleto, y el sitio no tiene forma de marcar "esto es solo 6 meses" sin
 que se lea como un ejercicio completo raro). El documento y el hallazgo quedan documentados en
-`fuentes/Argentina/Instituto.md` (ver el índice en `fuentes-por-club.md`) para que si en el futuro aparece el Presupuesto 2024 o
+`fuentes/Argentina/Instituto.md` (ver el índice en `fuentes/_indice/Argentina.md`) para que si en el futuro aparece el Presupuesto 2024 o
 2026 del mismo club, se pueda completar una de las 2 temporadas y recién ahí cargarla.
 
 **Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la

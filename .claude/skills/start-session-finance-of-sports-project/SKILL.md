@@ -25,7 +25,7 @@ permanentes. Esto es el procedimiento.
 | 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 73 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 64 KB |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB |
-| 7 | `fuentes-por-club.md` | antes de salir a buscar PDFs: mirá qué ya se probó | 33 KB |
+| 7 | `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 

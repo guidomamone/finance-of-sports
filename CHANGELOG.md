@@ -1622,3 +1622,26 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   PDF puntual sigue sin transcribir — necesita que alguien lo vuelva a descargar.
 - (Ver también CLAUDE.md, gotcha nuevo sobre `pdfinfo | grep` y bytes NUL en metadata, encontrado
   en el mismo tramo con los PDF de clubes chinos.)
+
+## Versión 158: `fuentes-por-club.md` se parte por país (índice de países + `fuentes/_indice/`)
+
+- `fuentes-por-club.md` pasa de tener una línea por club (570 líneas, 940 en total, ~97 KB) a ser
+  solo un índice de PAÍSES de 132 líneas / 10 KB: una línea por país con cuántos clubes trackea,
+  cuántos tienen documento encontrado, y la fecha del chequeo más viejo, ordenadas alfabéticamente.
+- El detalle línea-por-club se movió a `fuentes/_indice/<País>.md`, 44 archivos nuevos (el más
+  grande, Argentina, 81 líneas). Mismo formato de línea de siempre, links reescritos a `../`.
+  `fuentes/<País>/<Club>.md` no se tocó.
+- Motivo además del tamaño: con un archivo por país, dos sesiones o agentes sourceando países
+  distintos no comparten ningún archivo, así que no pueden generar conflictos de merge (ya había
+  pasado con dos agentes en paralelo sobre el archivo único).
+- REGLA 4 nueva en `fuentes-por-club.md` con el criterio; REGLAS 1 y 3 reescritas para apuntar al
+  archivo del país. Se documenta también qué cuenta como "con documento encontrado" (incluye
+  agregados de liga con desglose por club como la DNCG; no cuenta lo inaccesible por pago/captcha).
+- Migración verificada: 569 líneas-bullet antes y después, 0 perdidas, 0 duplicadas, 0 links rotos.
+  Los 530 clubes del índice coinciden exactamente con los 530 `fuentes/<País>/<Club>.md` en disco.
+- Se corrigió `fuentes/Peru/` → `fuentes/Perú/` y `Clubes/Peru/` → `Clubes/Perú/`: el índice decía
+  "Perú" y las carpetas no, la única inconsistencia de tilde que quedaba en un nombre de país.
+- Actualizados `CLAUDE.md`, `ARQUITECTURA.md`, `ESTADO.md`, `TODO.md`, `COMO-CORRE-EL-PROYECTO.html`
+  y los 4 skills que citaban el índice.
+- To-do 23 nuevo: automatizar el índice con `tools/generate-fuentes-index.js`. El prompt
+  autocontenido para esa sesión quedó en `PROMPT-generador-indice-fuentes.md`.

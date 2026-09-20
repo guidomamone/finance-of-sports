@@ -42,17 +42,30 @@ Guido deja links a documentos oficiales o notas de prensa antes de que se
 carguen al sitio. Si hay algo ahí que `ESTADO.md` todavía no menciona como
 cargado, es trabajo pendiente.
 
-Desde la sesión 2026-09-13, `fuentes-por-club.md` es solo un ÍNDICE (una
-línea por club, agrupado por país, con estado resumido + fecha de último
-chequeo) — dejó de escalar como archivo único a medida que se sumaron
-decenas de clubes. El contenido real de cada club (links, qué se probó, qué
-falta) vive en su propio archivo `fuentes/<País>/<Club>.md`, seguí el link
-del índice para verlo. Un `fuentes/<País>/_notas-generales.md` por país
-junta notas que no son de un club específico (metodología del barrido,
-contexto regulatorio, etc.). Al agregar una fuente nueva para un club: si ya
-tiene archivo en `fuentes/`, editar ESE archivo (y actualizar su línea en el
-índice si cambió el estado/fecha); si es un club nuevo sin archivo todavía,
-crear `fuentes/<País>/<Club>.md` y agregar su línea al índice.
+El sourcing está partido en TRES niveles, cada uno porque el anterior dejó de
+escalar al sumarse decenas de clubes y después decenas de países:
+
+1. `fuentes-por-club.md` — índice de PAÍSES y nada más (una línea por país:
+   cuántos clubes trackeados, cuántos con documento encontrado, fecha del
+   chequeo más viejo). Se partió así en la sesión 2026-09-20, cuando tenía 570
+   líneas-club y ~97 KB.
+2. `fuentes/_indice/<País>.md` — una línea por club de ese país, con estado
+   resumido + fecha de último chequeo. Es lo que hasta el 2026-09-20 vivía
+   adentro de `fuentes-por-club.md`.
+3. `fuentes/<País>/<Club>.md` — el contenido real de cada club (links, qué se
+   probó, qué falta). Se partió así en la sesión 2026-09-13. Un
+   `fuentes/<País>/_notas-generales.md` por país junta notas que no son de un
+   club específico (metodología del barrido, contexto regulatorio, etc.).
+
+Al agregar una fuente nueva para un club: si ya tiene archivo en `fuentes/`,
+editar ESE archivo (y actualizar su línea en `fuentes/_indice/<País>.md` si
+cambió el estado/fecha); si es un club nuevo sin archivo todavía, crear
+`fuentes/<País>/<Club>.md` y agregar su línea al índice de su país. La línea del
+país en `fuentes-por-club.md` se toca solo si cambió alguno de sus números.
+
+**Un archivo por país es también lo que evita que dos sesiones se pisen**: dos
+agentes sourceando países distintos al mismo tiempo no comparten ningún archivo.
+Con el índice único eso ya causó conflictos de merge reales.
 
 Si al leer un documento fuente queda una pregunta genuina sin respuesta (algo
 que no se puede inferir con confianza de la fuente ni de los criterios ya
