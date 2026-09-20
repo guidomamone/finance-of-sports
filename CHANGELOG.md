@@ -1645,3 +1645,9 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   y los 4 skills que citaban el índice.
 - To-do 23 nuevo: automatizar el índice con `tools/generate-fuentes-index.js`. El prompt
   autocontenido para esa sesión quedó en `PROMPT-generador-indice-fuentes.md`.
+- Bug aparte, encontrado al correr los generadores como verificación de cierre:
+  `tools/generate-fuentes-page.js --check` venía diciendo "fuentes.html quedó DESACTUALIZADO"
+  todos los días sin que hubiera cambiado ningún dato. El regex que borra la fecha del footer
+  antes de comparar no contemplaba el `</span>` que el markup mete entre el texto y la fecha, así
+  que no matcheaba nunca y la única diferencia real (la fecha de generación) contaba como cambio.
+  `fuentes.html` no estaba desactualizado: sus 89 documentos coinciden con los datos.

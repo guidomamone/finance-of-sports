@@ -271,7 +271,9 @@ function main() {
 
   // La fecha del footer cambia todos los días: comparar sin ella, si no
   // `--check` daría "desactualizado" cada día aunque no haya cambiado un dato.
-  const sinFecha = s => String(s).replace(/Generado desde los datos del sitio el \d{4}-\d{2}-\d{2}/, '');
+  // El `</span>` del medio es parte del markup del footer: sin él, el regex no
+  // matchea nunca y `--check` falla todos los días aunque no cambie ningún dato.
+  const sinFecha = s => String(s).replace(/Generado desde los datos del sitio el<\/span>\s*\d{4}-\d{2}-\d{2}/, '');
 
   if (viejo != null && sinFecha(viejo) === sinFecha(nuevo)) {
     console.log('fuentes.html ya está al día.');
