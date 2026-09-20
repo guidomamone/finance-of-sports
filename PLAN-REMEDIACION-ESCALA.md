@@ -50,7 +50,7 @@ escrito. Si te toca ejecutar alguno de los dos, agregalo a `TODO.md` como parte 
 | 1 | 1 | Partir `fuentes-por-club.md` por país | ✅ Hecho (commit `a211594` de `main`) |
 | 2 | 5 | Paralelizar `auditAll()` | ✅ Hecho (Versión 160, sesión 2026-09-20) |
 | 3 | 8 | Chequeo automático de colisión en `Clubes/<País>/<Club>/` | ✅ Hecho (Versión 161, sesión 2026-09-20) |
-| 4 | 2 | `fuentes.html` con página propia por club | ⬜ Pendiente |
+| 4 | 2 | `fuentes.html` con página propia por club | ✅ Hecho (Versión 162, sesión 2026-09-20) |
 | 5 | 7 | Reforzar la alarma de colisión de `clubId` al momento de sourcing | ⬜ Pendiente |
 | 6 | 9 | Partir `data/club-leagues.js` (por país o liga) | ⬜ Pendiente |
 | 7 | 3 | Adelgazar el payload eager (`clubs.js`/`club-index.js`, sobre la base del punto 9) | ⬜ Pendiente |
@@ -326,7 +326,53 @@ start-session-finance-of-sports-project). ANTES de terminar, actualizá PLAN-REM
 marcá este punto como Hecho y completá sus "Notas de ejecución".
 ```
 
-**Notas de ejecución:** _(completar acá cuando se haga)_
+**Notas de ejecución** (sesión 2026-09-20, Versión 162 de `CHANGELOG.md`):
+
+- **Se partió por CLUB, no por país**, que es lo que pedía el to-do 22(c) viejo. El club es la
+  unidad que el visitante busca y la única que puede rankear sola en un buscador: partir por país
+  dejaba 6 páginas grandes y ningún club con URL propia, que era el objetivo entero.
+- **Archivos generados**: `fuentes/<clubId>.html` (41), `fuentes.html` como índice (una fila por
+  club con su conteo y el link, sin contenido de fuentes) y `sitemap.xml`. El índice bajó de 86,5 KB
+  a 14,5 KB; cada página de club pesa ~6,5 KB y el visitante se baja una sola.
+- **El path**: `fuentes/`, la misma carpeta donde ya viven las notas de sourcing. No colisionan
+  porque las notas están siempre un nivel más abajo (`fuentes/<País>/<Club>.md`) y las páginas son
+  archivos en el nivel de arriba. El generador solo mira `.html` del nivel de arriba, nunca entra a
+  las subcarpetas de país.
+- **DOS COSAS QUE EL PROMPT NO CONTEMPLABA y hubo que agregar**. (1) Borrar las páginas huérfanas:
+  con N archivos, un club que se saca o que cambia de `clubId` deja su `.html` ahí y Netlify lo
+  sigue sirviendo con datos fantasma, porque publica la raíz del repo entera. (2) `--check` tiene
+  que comparar los 43 archivos y distinguir falta / quedó viejo / sobra, no uno solo.
+- **`sitemap.xml` sin `<lastmod>`**, a propósito: una fecha que cambia todos los días haría que
+  `--check` diga "desactualizado" cada día sin que cambie un dato, que es exactamente el bug del
+  footer que arregló el commit `411beaf`. El fix de ese commit se confirmó vigente antes de empezar,
+  como pedía el prompt, y sigue ahí.
+- **BUG REAL ENCONTRADO EN LA VERIFICACIÓN, y es el motivo por el que no alcanzaba con correr el
+  generador**: `I18N.load()` arma el src del diccionario como `data/lang/<code>.js`, relativo al
+  DOCUMENTO. Desde `fuentes/boca.html` eso pedía `fuentes/data/lang/en.js`, 404, y la página se
+  quedaba en castellano con el sitio en inglés. No se veía rota porque el `onerror` de `I18N.load()`
+  degrada a castellano a propósito: se veía en el idioma equivocado. Se agregó `window.I18N_BASE`
+  ('' en la raíz, '../' en `fuentes/`), con la regla escrita en `CONVENCIONES.md`. **Estas son las
+  primeras páginas del proyecto que no viven en la raíz**, por eso nunca había aparecido.
+- **Punto ciego de i18n cerrado**: el chequeo `i18n-incompleto` de `tools/audit.js` escaneaba
+  `index.html` y una lista fija de `js/`, pero no `tools/generate-fuentes-page.js`, que también
+  emite `data-i18n`. Una clave nueva de estas páginas era invisible al chequeo. Ya está en la lista,
+  y la regla de `CONVENCIONES.md` se amplió de "todo archivo de `js/` que llame a `t()`" a todo
+  archivo que emita claves, incluido el que genera HTML.
+- **SEO** (el prompt pedía decir si mejora): sí, y era el objetivo original de `fuentes.html` según
+  su propia cabecera ("una URL propia es rankeable y el crawler no depende de JS"). Hasta acá los 41
+  clubes compartían una sola URL, así que ninguno podía rankear por su nombre. Se sumó `sitemap.xml`
+  (aprobado por Guido) porque el repo no tiene ni sitemap ni `robots.txt`: sin él, el índice era el
+  único camino del crawler a las 41 páginas nuevas.
+- **Verificación**: `--check` limpio; `node tools/audit.js` en 0 P0 / 0 P1 (44 P2, 8 P3, igual que
+  antes); `auditAll()` en 41 clubes / 222 checks / 0 que no cierran; índice y páginas de club
+  abiertas en el navegador, traduciendo bien al inglés; los links de la ficha de Finanzas apuntando
+  a `fuentes/boca.html` y a `fuentes.html`; 0 recursos fallidos en la carga del sitio; y el barrido
+  de huérfanas probado a mano creando una página falsa (`--check` la reporta como "sobra" y sale con
+  1, el generador la borra).
+- **`ASSET_V` de 155 a 162**, la constante y los 13 tags juntos. Durante la sesión se subió a `162a`
+  para esquivar la caché del entorno (el fix de `i18n.js` llegó después de que el navegador ya
+  hubiera cacheado `js/i18n.js?v=162`, que es el gotcha de `CLAUDE.md` en vivo) y se dejó en `162`
+  al terminar.
 
 ---
 
@@ -573,6 +619,21 @@ en este plan ni en la auditoría original — no borrar entradas viejas, solo ag
   cualquier punto que diga "confirmá que el audit sigue igual" tiene que sacar su línea de base
   CORRIENDO el comando al empezar, no leyéndola de un archivo de documentación. Es el mismo tipo
   de dato que el plan ya pide confirmar para los números de línea de `index.html`.
+- **2026-09-20, ejecutando el punto 2: las 613 notas internas de `fuentes/` están publicadas.**
+  Están trackeadas en git y el repo se deploya entero, así que se leen en
+  `financeofsports.com/fuentes/<País>/<Club>.md`; 37 de ellas mencionan a Guido por nombre o
+  contexto de trabajo interno. Es el mismo problema de `note` contra `publicNote` de la Versión 127,
+  pero a nivel archivo, y la misma lección que `CLAUDE.md` ya escribió sobre `Prototyping/`. Se
+  volvió más urgente con este punto, porque las páginas públicas por club ahora viven en esa misma
+  carpeta y `sitemap.xml` la linkea, o sea que un crawler tiene motivo para entrar. Quedó como to-do
+  37 en `TODO.md`, con las tres salidas posibles. NO se resolvió acá: es decisión de Guido.
+- **2026-09-20, ejecutando el punto 2: una página fuera de la raíz rompe supuestos que nadie sabía
+  que existían.** El proyecto nunca había tenido una página que no viviera en la raíz, así que
+  `I18N.load()` podía armar paths relativos al documento sin que nadie lo notara. Si algún punto que
+  sigue agrega archivos fuera de la raíz (el punto 9 va a crear `data/club-leagues/<país>.js`),
+  revisá TODO cargador dinámico antes de darlo por bueno: `loadClubData()` e `I18N.load()` son los
+  dos que arman src a mano. Un `<script src>` estático no alcanza como prueba, porque ese lleva su
+  `../` escrito y carga bien mientras el inyectado en runtime falla.
 - **2026-09-20, ejecutando el punto 8: un chequeo nuevo que da 0 hallazgos no prueba que funcione.**
   Mismo problema que la rama de error del punto 5, un escalón peor: un chequeo preventivo nace dando
   cero por definición, así que "corrí el audit y sigue igual" es compatible con haber escrito una

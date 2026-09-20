@@ -267,11 +267,8 @@ perdieron sino que se descartaron:
     909 son los dos lados del spread del mismo día y los dos están bien.
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
-    de esta corrida). (a), (b), (e), (f) y (g) resueltos, se borran de acá. Siguen abiertos, en el
-    orden en que aparecen:
-    (c) `fuentes.html` sigue siendo una sola página: 86,5 KB hoy con ~90 documentos, ~1,9 MB
-        proyectado a 1000 clubes (~2 docs/club). Partir por país arriba de ~300 documentos, con un
-        índice — mismo generador (`tools/generate-fuentes-page.js`) con un loop más.
+    de esta corrida). (a), (b), (c), (e), (f) y (g) resueltos, se borran de acá. Siguen abiertos, en
+    el orden en que aparecen:
     (d) `clubs.js` sigue sin adelgazar del todo: `club-index.js` (Versión 129) ya resolvió la mitad
         que necesitaba el selector, pero `reportingCurrency`/`fiscalYearStart` siguen solo en
         `clubs.js` (eager). AMPLIADO (Versión 159): el problema real no es solo `clubs.js`, es que
@@ -309,6 +306,20 @@ perdieron sino que se descartaron:
     158 el mismo día). Opciones: (a) renumerar el bloque de prototipos a una serie propia sin
     "Versión" (ej. "Prototipo 4 — paso 3"), que es lo que en realidad son; (b) dejarlo y anotar el
     duplicado al principio del archivo. Decide Guido: toca ~17 entradas históricas.
+
+37. NUEVO (sesión 2026-09-20, apareció al partir `fuentes.html` por club). **Las 613 notas internas
+    de sourcing de `fuentes/` están publicadas.** Están trackeadas en git, y el repo se deploya
+    entero (no hay `netlify.toml` ni `_redirects`, Netlify publica la raíz), así que cualquiera con
+    la URL lee `financeofsports.com/fuentes/<País>/<Club>.md`. **37 de esas notas mencionan a Guido
+    por nombre** o contexto de trabajo interno ("PDF a Guido si tiene acceso de otra red", "a pedido
+    de Guido"). Es el mismo problema que la Versión 127 resolvió para `note` contra `publicNote`,
+    pero a nivel archivo, y la misma lección que `CLAUDE.md` ya escribió sobre `Prototyping/`.
+    OJO, SE VOLVIÓ MÁS URGENTE CON LA VERSIÓN 162: ahora las páginas públicas por club viven en esa
+    misma carpeta (`fuentes/<clubId>.html`) y `sitemap.xml` las linkea, así que un crawler tiene
+    motivo para entrar a `/fuentes/`. Salidas posibles, decide Guido: un `robots.txt`, destrackear
+    las notas (siguen en disco, como ya se hace con los PDFs y con
+    `Clubes/Argentina/River/estados-contables-leads/`), o limpiarlas de contenido interno. Las tres
+    son distintas: solo destrackear las saca de verdad, `robots.txt` es una pedida, no un candado.
 
 8. Reemplazar el email placeholder del formulario de contacto
    (contacto@bocaennumeros.example) por uno real antes de publicar.

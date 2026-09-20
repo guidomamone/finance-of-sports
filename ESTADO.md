@@ -154,10 +154,18 @@ se reescribe, no se acumula.
   final de Finanzas hay una ficha con el documento del ejercicio que se está
   mirando (link incluido), su tipo y nivel de fuente, el tipo de cambio usado CON
   su procedencia, y las salvedades; la pestaña Fuentes lista los documentos del
-  club seleccionado; y `fuentes.html` es el listado completo del sitio, una tabla
-  de País, Equipo, Fuente y Notas (89 documentos, 41 clubes), página
-  propia y estática para prensa y buscadores, que GENERA
-  `node tools/generate-fuentes-page.js`: no se edita a mano.
+  club seleccionado; y afuera del sitio hay una PÁGINA ESTÁTICA POR CLUB,
+  `fuentes/<clubId>.html`, con los documentos de ESE club (link, tipo y nivel de
+  fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
+  salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
+  por club con su conteo y el link a su página, sin contenido de fuentes adentro.
+  Las 41 páginas, el índice y `sitemap.xml` los GENERA
+  `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
+  la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
+  POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
+  unidad que el visitante busca y la única que puede rankear sola en un buscador.
+  Hasta la 162 los 41 clubes compartían una URL de 86,5 KB; ahora el índice pesa
+  14,5 KB y cada visitante se baja solo la página del club que mira.
   OJO CON QUÉ SE MUESTRA: `note` es INTERNA y no se renderiza nunca; lo que ve el
   visitante es `publicNote` (17 de 89 documentos) más las salvedades que
   `sourceCaveats()` deriva de los datos. Ver `CONVENCIONES.md` y

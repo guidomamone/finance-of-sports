@@ -753,6 +753,17 @@ function checkHigiene(api) {
   // i18n: una clave usada y no definida degrada al castellano en silencio.
   const usadas = new Set();
   for (const m of html.matchAll(/data-i18n(?:-title)?="([^"]+)"/g)) usadas.add(m[1]);
+  // Versión 162: `tools/generate-fuentes-page.js` también EMITE atributos data-i18n, para
+  // `fuentes.html` y para las N páginas por club. No estaba en ningún escaneo, así que una
+  // clave nueva de esas páginas quedaba invisible: el chequeo pasaba en verde mientras el
+  // visitante de habla inglesa las leía en castellano. Es la misma regla que ya existía para
+  // los archivos de `js/` que llaman a `t()`, extendida a quien genera HTML.
+  // Se saltean las claves interpoladas (`data-i18n="${...}"`): el valor real se arma en
+  // runtime, igual que las que terminan en "." más abajo.
+  {
+    const gen = fs.readFileSync(path.join(ROOT, 'tools/generate-fuentes-page.js'), 'utf8');
+    for (const m of gen.matchAll(/data-i18n(?:-title)?="([^"$]+)"/g)) usadas.add(m[1]);
+  }
   // Versión 137: se suma js/selector.js (js/comparar-clubes.js estuvo en esta lista
   // hasta la Versión 152, cuando ese archivo se borró). Sin esto el chequeo
   // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no

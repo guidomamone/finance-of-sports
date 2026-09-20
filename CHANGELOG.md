@@ -1712,3 +1712,37 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Línea de base: 0 hallazgos hoy. Se ejercitó a propósito con dos carpetas temporales para
   confirmar que los dos avisos salen de verdad, y se corrió una copia del repo sin `Clubes/` para
   confirmar que no rompe: 0 P0, 0 P1, 44 P2, 8 P3 en los tres casos.
+
+## Versión 162: `fuentes.html` se parte en una página por club, más sitemap (punto 2 del plan de escala)
+
+- `tools/generate-fuentes-page.js` pasa de generar 1 archivo a generar 43: `fuentes/<clubId>.html`
+  (41, una por club, con solo sus documentos), `fuentes.html` (ahora el índice: una fila por club
+  con su conteo y el link, sin contenido de fuentes) y `sitemap.xml`. El índice baja de 86,5 KB a
+  14,5 KB y cada visitante se baja solo la página del club que mira.
+- Se partió por CLUB y no por país, que es lo que pedía el to-do 22(c): el club es la unidad que el
+  visitante busca y la única que puede rankear sola en un buscador. Hasta acá los 41 compartían una
+  URL, así que ninguno podía rankear por su nombre.
+- El generador BORRA las páginas huérfanas (un club que deja de existir o que cambia de `clubId`):
+  sin eso, Netlify seguiría sirviendo una página con datos fantasma, porque publica la raíz del
+  repo entera. `--check` compara los 43 archivos y avisa cuál falta, cuál quedó viejo y cuál sobra.
+- `sitemap.xml` va SIN `<lastmod>` a propósito: una fecha que cambia todos los días haría que
+  `--check` reporte desactualizado cada día sin que cambie un dato, que es el bug que ya tuvo el
+  footer de esta página (commit `411beaf`).
+- La ficha de Finanzas ahora linkea a la página del club y abajo a "Ver fuentes de otros equipos".
+  Un club sin ningún documento cargado no tiene página generada, así que en ese caso se muestra
+  solo el link al índice.
+- BUG REAL ENCONTRADO Y CORREGIDO EN EL CAMINO: `I18N.load()` armaba el src del diccionario
+  relativo al documento, así que las páginas de `fuentes/` pedían `fuentes/data/lang/en.js`, se
+  comían un 404 y se quedaban en castellano aunque el visitante tuviera el sitio en inglés. No se
+  veía rota porque el `onerror` degrada a castellano a propósito. Ahora el src lleva
+  `window.I18N_BASE` adelante. Regla nueva en `CONVENCIONES.md`.
+- PUNTO CIEGO CERRADO: el chequeo `i18n-incompleto` de `tools/audit.js` no miraba
+  `tools/generate-fuentes-page.js`, que también emite `data-i18n`. Una clave nueva de esas páginas
+  era invisible. Ya está en la lista, y la regla de `CONVENCIONES.md` se amplió de "todo archivo de
+  `js/` que llame a `t()`" a todo archivo que emita claves, incluido el que genera HTML.
+- 6 claves nuevas en `data/lang/en.js` (`th.docs`, `fuentes.page.intro3`, `fuentes.club.intro`,
+  `fuentes.card.others`, `fuentes.doc`, `fuentes.docs`) y se borró `fuentes.card.all`, que quedó
+  huérfana, por la regla de la Versión 155. `ASSET_V` de 155 a 162, constante y los 13 tags.
+- Verificado: `--check` limpio, `node tools/audit.js` en 0 P0 / 0 P1, `auditAll()` en 222 checks
+  con 0 que no cierran, índice y páginas de club renderizando y traduciendo en el navegador, links
+  de la ficha apuntando donde corresponde, y el barrido de huérfanas probado a mano.

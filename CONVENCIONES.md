@@ -85,11 +85,24 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   que el club elegido se guarda en `localStorage` y se carga solo al abrir el sitio, un club que
   falle con un alert deja la página congelada EN CADA VISITA, sin poder siquiera elegir otro. Los
   errores se cuentan por `console.error` y se muestran en un aviso dentro de la página.
+- UNA PÁGINA FUERA DE LA RAÍZ TIENE QUE DECLARAR `window.I18N_BASE` (Versión 162, bug real de esta
+  sesión). `I18N.load()` arma el src del diccionario como `data/lang/<code>.js`, y eso es relativo al
+  DOCUMENTO, no a `js/i18n.js`. Las primeras páginas del proyecto que no viven en la raíz son las de
+  fuentes por club (`fuentes/<clubId>.html`): pedían `fuentes/data/lang/en.js`, se comían un 404 y se
+  quedaban en castellano aunque el visitante tuviera el sitio en inglés. Peor todavía, el `onerror`
+  de `I18N.load()` degrada a castellano a propósito, así que no se veía rota, se veía en el idioma
+  equivocado. Ahora el src lleva `window.I18N_BASE` adelante ('' en la raíz, '../' en `fuentes/`).
+  Los `<script src>` estáticos NO alcanzan: esos ya llevaban su `../` y cargaban bien, el que fallaba
+  era el inyectado en runtime. Mismo tipo de trampa que `loadClubData()`.
 - TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js` (Versión 137). El
   chequeo `i18n-incompleto` recorre una lista fija de archivos; cuando nació `js/selector.js` no
   estaba, así que sus claves nuevas eran invisibles y el chequeo pasaba en verde mientras el
   visitante de habla inglesa leía castellano. Y al revés (Versión 155): cuando un archivo de esa
   lista SE BORRA, hay que sacarlo, o el chequeo entero revienta con ENOENT y deja de correr.
+  AMPLIADO (Versión 162): la regla no es solo para `js/`, es para TODO archivo que emita claves de
+  i18n, incluido el que GENERA HTML. `tools/generate-fuentes-page.js` escribe `data-i18n` en
+  `fuentes.html` y en las 41 páginas por club, y no estaba en ningún escaneo: una clave nueva de esas
+  páginas era invisible para el chequeo. Ya está en la lista.
   COROLARIO (Versión 155): las claves que quedan huérfanas al borrar una feature se borran de
   `data/lang/en.js` en el mismo movimiento — el merge del selector dejó 88. El audit no las detecta:
   cuenta las que FALTAN, no las que sobran.

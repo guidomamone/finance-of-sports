@@ -113,18 +113,30 @@
   // Carga el archivo de un idioma por convención (data/lang/<code>.js), igual
   // que loadClubData(). Devuelve una Promise. El castellano no tiene archivo.
   // --------------------------------------------------------------------------
+  // `window.I18N_BASE` es lo que hay que anteponer para llegar a la raíz del sitio desde
+  // la página que está corriendo. Vale '' (o queda sin definir) en todo lo que vive en la
+  // raíz, y '../' en las páginas de fuentes por club (`fuentes/<clubId>.html`, Versión
+  // 162), que son las primeras del proyecto que NO están en la raíz.
+  // POR QUÉ HIZO FALTA: este src es relativo al DOCUMENTO, no a js/i18n.js. Los <script>
+  // estáticos de esas páginas ya llevan su `../` escrito, así que i18n.js cargaba bien, y
+  // el síntoma era solamente que el diccionario no llegaba: la página se quedaba en
+  // castellano aunque el visitante tuviera el sitio en inglés, pidiendo
+  // `fuentes/data/lang/en.js` y comiéndose un 404 en silencio (el onerror de acá abajo
+  // degrada a castellano a propósito, así que ni siquiera se veía roto).
+  // SI ALGÚN DÍA SE AGREGA OTRA PÁGINA FUERA DE LA RAÍZ, tiene que declarar su I18N_BASE.
   I18N.load = function (code) {
     if (code === SOURCE_LANG) return Promise.resolve();
     if (I18N.strings[code]) return Promise.resolve();
     if (I18N._loading[code]) return I18N._loading[code];
 
+    var base = window.I18N_BASE || '';
     I18N._loading[code] = new Promise(function (resolve) {
       var s = document.createElement('script');
-      s.src = 'data/lang/' + code + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = base + 'data/lang/' + code + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
       s.onload = function () { resolve(); };
       s.onerror = function () {
         // Un idioma que no carga no puede romper el sitio: se queda en castellano.
-        console.warn('[i18n] no se pudo cargar data/lang/' + code + '.js, sigo en castellano');
+        console.warn('[i18n] no se pudo cargar ' + base + 'data/lang/' + code + '.js, sigo en castellano');
         resolve();
       };
       document.head.appendChild(s);

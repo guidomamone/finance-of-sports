@@ -854,9 +854,23 @@
     return Object.keys(meta).filter(y => meta[y].sourceId === sourceId).map(y => meta[y]);
   }
 
+  // DOS LINKS Y NO UNO (Versión 162, punto 2 del plan de escala). Hasta acá el único link
+  // iba a `fuentes.html`, que era la página con los documentos de TODOS los clubes. Ahora
+  // cada club tiene la suya (`fuentes/<clubId>.html`, generada por
+  // tools/generate-fuentes-page.js) y `fuentes.html` es el índice, así que el visitante que
+  // está mirando un club va primero a SU página, y el índice queda como la salida hacia el
+  // resto.
+  // OJO: un club sin ningún documento cargado NO tiene página generada (el generador solo
+  // escribe las de los clubes que aparecen en sources{}), así que en ese caso se muestra
+  // solo el link al índice. Linkear una página que no existe sería un 404 servido por
+  // Netlify, que publica la raíz del repo tal cual.
   function linkTodasLasFuentes(){
-    return `<p style="margin:14px 0 0;font-size:14px;"><a href="fuentes.html">${
-      t('fuentes.card.all', 'Ver todas las fuentes del sitio')} →</a></p>`;
+    const tiene = Object.keys(sources).some(id => sources[id].clubId === currentClub);
+    const otros = `<a href="fuentes.html">${t('fuentes.card.others', 'Ver fuentes de otros equipos')} →</a>`;
+    if(!tiene) return `<p style="margin:14px 0 0;font-size:14px;">${otros}</p>`;
+    return `<p style="margin:14px 0 0;font-size:14px;"><a href="fuentes/${currentClub}.html">${
+      t('fuentes.card.club', 'Ver todos los documentos de este club')} →</a></p>` +
+      `<p style="margin:6px 0 0;font-size:14px;">${otros}</p>`;
   }
 
   function renderFuentesCard(){
