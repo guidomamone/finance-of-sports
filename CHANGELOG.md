@@ -1673,3 +1673,22 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `fuentes-por-club.md`) se resolvió en paralelo, en `main`, con la misma Versión 158 — otra
   sesión lo hizo el mismo día sin que las dos se vieran. Se renumeró esta entrada a 159 para no
   chocar, y el to-do 22(g) se marcó resuelto apuntando al commit de `main`.
+
+## Versión 160 — `auditAll()` carga los clubes en tandas paralelas (punto 5 del plan de escala)
+
+- `auditAll()` (`index.html`) pasa de un `for` con `await` adentro (41 requests en fila) a tandas
+  de 25 con `Promise.allSettled`. Es el primer punto ejecutado de `PLAN-REMEDIACION-ESCALA.md`
+  (orden 2) y cierra el to-do 22(f), vigente desde hacía dos auditorías de escala seguidas.
+- Verificado antes y después con los mismos 41 clubes: 222 checks cierran, 0 que no cierran, 0
+  warnings de fx, 0 clubes que no cargaron. 78 ms en serie contra 38 ms en frío en tandas, sobre
+  localhost.
+- Camino de error probado aparte, con dos clubes falsos que dan 404 en la misma tanda: los dos
+  quedan atribuidos a su propio id en `clubesQueNoCargaron` y en el `console.error`, y los otros
+  41 siguen dando sus 222 checks. `allSettled` y no `all` justamente por eso: con `all`, el
+  primer fallo aborta la tanda entera.
+- `node tools/audit.js` sigue en 0 P0 / 0 P1.
+- De paso, tres conteos que habían quedado viejos: `ESTADO.md` y el skill de arranque decían 58/9
+  y 52/7 P2/P3 de `tools/audit.js`; los reales son 44 y 8. El punto D del skill
+  `escala-finance-of-sports` queda marcado como resuelto, con la propiedad que hay que preservar
+  si alguien lo vuelve a tocar (ningún `data/<club>-data.js` loguea, y las verificaciones corren
+  después de la carga, no intercaladas).

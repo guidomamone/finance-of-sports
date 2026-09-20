@@ -267,8 +267,8 @@ perdieron sino que se descartaron:
     909 son los dos lados del spread del mismo día y los dos están bien.
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
-    de esta corrida). (a), (b) y (e) resueltos, se borran de acá. Siguen abiertos, en el orden en
-    que aparecen:
+    de esta corrida). (a), (b), (e), (f) y (g) resueltos, se borran de acá. Siguen abiertos, en el
+    orden en que aparecen:
     (c) `fuentes.html` sigue siendo una sola página: 86,5 KB hoy con ~90 documentos, ~1,9 MB
         proyectado a 1000 clubes (~2 docs/club). Partir por país arriba de ~300 documentos, con un
         índice — mismo generador (`tools/generate-fuentes-page.js`) con un loop más.
@@ -280,13 +280,6 @@ perdieron sino que se descartaron:
         contra ~395 KB de `clubs.js` a 1000 clubes). Sumados, el payload eager pasa de ~38 KB hoy a
         ~1,4 MB proyectado. Mover el detalle completo de `club-leagues.js` a lazy-load por
         país/liga, y terminar de adelgazar `clubs.js`.
-    (f) `auditAll()` sigue cargando los clubes en SERIE (`for` con `await`, confirmado sin cambios
-        en `index.html:1850`): 114 ms con 41, ~30 s proyectado a 1000 con latencia real, y es lo que
-        hay que correr antes de cada push de datos. Segunda auditoría seguida que lo encuentra sin
-        resolver. Tandas paralelas con `Promise.all`.
-    (g) RESUELTO (Versión 158 de `main`, sesión en paralelo del 2026-09-20, commit `a211594`):
-        `fuentes-por-club.md` se partió en índice de PAÍSES + `fuentes/_indice/<País>.md` (una
-        línea por club), exactamente el split que este punto pedía. Se borra.
     (h) NUEVO (Versión 159): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
         tiene debounce ni límite de resultados — filtra y reconstruye el DOM completo en cada
         tecla. Invisible a 41 clubes, jank probable a 1000-3000. Debounce ~150-200ms + top-N con

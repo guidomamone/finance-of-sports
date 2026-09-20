@@ -138,8 +138,8 @@ se reescribe, no se acumula.
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
   ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 58 P2,
-  9 P3 (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 44 P2,
+  8 P3 (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
   tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
@@ -147,7 +147,9 @@ se reescribe, no se acumula.
   página audita SOLO Boca (6 de los 222 checks). Para auditar TODO hay que
   forzar la carga de los 41 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
-  los clubes que nadie está mirando.
+  los clubes que nadie está mirando. Desde la Versión 160 los carga en tandas
+  paralelas de 25 y no de a uno, para que siga siendo viable correrlo cuando los
+  clubes sean cientos.
 - FUENTES (Versión 126, revisada en la 127): cada número cita su documento. Al
   final de Finanzas hay una ficha con el documento del ejercicio que se está
   mirando (link incluido), su tipo y nivel de fuente, el tipo de cambio usado CON

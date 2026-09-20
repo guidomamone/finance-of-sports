@@ -1850,9 +1850,29 @@ consulta puntual, nunca lectura de corrido.
     const ids = Object.keys(clubs);
     const failedToLoad = [];
     console.log(`[auditoría] cargando los ${ids.length} clubes...`);
-    for(const id of ids){
-      try { await loadClubData(id); }
-      catch(e){ failedToLoad.push(id); console.error(`[auditoría] no se pudo cargar ${id}:`, e.message); }
+    // EN TANDAS PARALELAS, NO DE A UNO (Versión 160). Antes era un `for` con `await` adentro, o
+    // sea 41 requests en fila: 114 ms hoy, pero decenas de segundos a 1000 clubes con latencia
+    // real de red, y esto es lo que hay que correr antes de CADA push que toque datos.
+    // EL TAMAÑO DE TANDA ES UN TECHO, NO UN OBJETIVO: el navegador ya limita a ~6 conexiones
+    // simultáneas por origen, así que 25 no compra más paralelismo de red que 6. Sirve para no
+    // inyectar 3000 `<script>` de una el día que el proyecto tenga ese volumen.
+    // `allSettled` Y NO `all`: con `all`, el primer club que falla aborta la tanda entera y se
+    // pierde el resultado de los otros 24. Así cada club reporta lo suyo, igual que el try/catch
+    // por iteración que había antes, y `failedToLoad` conserva el mismo orden determinista.
+    // OJO SI ALGÚN DÍA UN data/<club>-data.js LOGUEA ALGO: hoy ninguno lo hace (el único
+    // `console.` de `data/` está en `currency-map.js`, que no es de club) y las dos
+    // verificaciones corren DESPUÉS de que terminó toda la carga, así que cargar en paralelo no
+    // puede entremezclar mensajes de dos clubes. Un data file que loguee rompe esa propiedad y
+    // tendría que prefijar su propio id.
+    const TANDA = 25;
+    for(let i = 0; i < ids.length; i += TANDA){
+      const tanda = ids.slice(i, i + TANDA);
+      const res = await Promise.allSettled(tanda.map(id => loadClubData(id)));
+      res.forEach((r, j) => {
+        if(r.status !== 'rejected') return;
+        failedToLoad.push(tanda[j]);
+        console.error(`[auditoría] no se pudo cargar ${tanda[j]}:`, r.reason && r.reason.message);
+      });
     }
 
     // Se interceptan console.log/error para CONTAR, pero se deja pasar todo a la

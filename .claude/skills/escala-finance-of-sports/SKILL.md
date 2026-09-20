@@ -111,10 +111,18 @@ por país/liga cuando el usuario entra a esa vista del selector — mismo mecani
   motor real (`vm`), sin operación cuadrática.
 - `tools/generate-club-index.js`, `tools/generate-fuentes-page.js`: mismo patrón, un pase sobre los
   archivos de club. Sano.
-- **`auditAll()` (en el navegador, NO en `tools/`)**: `for (const id of ids) { await
-  loadClubData(id); }`, en serie. 114 ms con 41 clubes → ~30 s proyectado a 1000 con latencia real de
-  red. Es el chequeo obligatorio antes de cada push de datos. **Vigente hace dos auditorías
-  seguidas** — recomendación sin cambios: `Promise.all` en tandas de ~20-30.
+- **`auditAll()` (en el navegador, NO en `tools/`)**: **RESUELTO en la Versión 160**, después de
+  estar vigente dos auditorías seguidas. Cargaba los clubes en serie (`for` con `await` adentro):
+  114 ms con 41 clubes, ~30 s proyectado a 1000 con latencia real de red, y es el chequeo
+  obligatorio antes de cada push de datos. Ahora carga en tandas de 25 con `Promise.allSettled`
+  (78 ms → 38 ms en frío con los 41 de hoy, sobre localhost). El tamaño de tanda es un TECHO, no un
+  objetivo: el navegador ya limita a ~6 conexiones simultáneas por origen, así que 25 no compra más
+  paralelismo de red que 6, sirve para no inyectar miles de `<script>` de una sola vez.
+  LO QUE HAY QUE CUIDAR SI ESTO SE TOCA DE NUEVO: cargar en paralelo no entremezcla los mensajes de
+  consola de dos clubes por dos razones, y las dos hay que preservarlas. Una, ningún
+  `data/<club>-data.js` loguea nada al ejecutarse (el único `console.` de `data/` está en
+  `currency-map.js`, que no es de club). Dos, `verifyTieOuts()`/`checkFxSanity()` corren DESPUÉS de
+  que terminó toda la carga, no intercaladas.
 
 ### E. Namespacing / IDs
 
