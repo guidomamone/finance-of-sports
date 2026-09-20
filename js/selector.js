@@ -382,7 +382,16 @@ window.CLUB_SELECTOR = (function(){
   // consola) y el modal abre sin esas ligas, en vez de no abrir.
   function abrirModal(i, desde){
     if(!inited) return;
-    window.loadClubLeagues().then(function(){ abrirModalYa(i, desde); });
+    window.loadClubLeagues().then(function(){
+      // El texto buscable incluye el nombre de las ligas de cada club, así que no
+      // se puede armar antes de que la tabla esté cargada: se invalida acá para que
+      // se rearme con las ligas adentro la primera vez que alguien escriba.
+      invalidarIndiceBusqueda();
+      // Cada apertura arranca con el tope puesto: si alguien apretó "Mostrar más" en
+      // una sesión anterior del modal, no tiene por qué arrastrarlo a la siguiente.
+      verTodosResultados(false);
+      abrirModalYa(i, desde);
+    });
   }
 
   function abrirModalYa(i, desde){
@@ -907,10 +916,19 @@ window.CLUB_SELECTOR = (function(){
         caja.appendChild(chips);
       }
     } else {
-      var grid2 = el('div', 'op-grid clubes');
-      ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){ return !!clubs[id]; })).forEach(function(id){
+      // MISMO TOPE QUE EL BUSCADOR (Versión 165), pero con una diferencia que no se
+      // puede saltear: acá el visitante está SELECCIONANDO, así que los clubes que ya
+      // marcó van primero y nunca quedan escondidos detrás del tope. Esconderle algo
+      // que marcó se leería como que se le borró.
+      // OJO, ESTO NO ALCANZA A 1000 CLUBES: una grilla para elegir a ojo deja de
+      // servir mucho antes por legibilidad, no por jank. Lo que va a necesitar es su
+      // propio buscador, que es una feature aparte (ver TODO.md).
+      var todosIds = ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){ return !!clubs[id]; }));
+      var marcados = todosIds.filter(function(id){ return mezclaTmp.ids.indexOf(id) >= 0; });
+      var resto = todosIds.filter(function(id){ return mezclaTmp.ids.indexOf(id) < 0; });
+      grillaConTope(marcados.concat(resto), caja, function(id){
         var co = window.COUNTRIES[countryOf(id)] || {};
-        grid2.appendChild(opcionBtn({
+        return opcionBtn({
           id:id, crest:initials(nameOf(id)), label:nameOf(id),
           sub:(co.flag || '') + ' ' + t(co.key, co.name || ''),
           meta:nEjercicios(yearsOf(id).length)
@@ -918,9 +936,8 @@ window.CLUB_SELECTOR = (function(){
           var i = mezclaTmp.ids.indexOf(cid);
           if(i >= 0) mezclaTmp.ids.splice(i, 1); else mezclaTmp.ids.push(cid);
           renderModal();
-        }));
-      });
-      caja.appendChild(grid2);
+        });
+      }, renderModal);
     }
 
     var pie = el('div', 'paso-pie');
@@ -1739,6 +1756,62 @@ window.CLUB_SELECTOR = (function(){
   // EL BUSCADOR. El atajo de un paso para el que ya sabe qué club quiere:
   // escribir "boca" y tocarlo, sin recorrer los cinco pasos.
   // ---------------------------------------------------------------------------
+  // ---------------------------------------------------------------------------
+  // EL BUSCADOR A ESCALA (Versión 165). Tres cosas, y ninguna cambia qué encuentra:
+  //
+  // 1. TOPE DE RESULTADOS. La grilla pintaba un botón por cada club que matcheara,
+  //    con su propio listener. Con 41 es invisible; con 1000-3000, escribir una
+  //    letra reconstruye cientos de nodos. Se muestran TOPE_RESULTADOS y el resto
+  //    queda detrás de "Mostrar más", con el conteo real al lado para que el
+  //    visitante sepa que hay más y cuántos (esconder sin decirlo se lee como "no
+  //    está").
+  // 2. CACHÉ DEL TEXTO BUSCABLE. El filtro llamaba a `ligasDe(id)` para CADA club
+  //    en CADA tecla, y esa función ordena las ligas del club cada vez. A 3000
+  //    clubes eso pesa más que el DOM. Ahora el texto de cada club (nombre + país +
+  //    ligas, ya normalizado) se arma una vez y se guarda.
+  // 3. DEBOUNCE, que NO está acá sino en el listener (ver `init()`). Es a propósito:
+  //    esta función también se llama desde adentro de sí misma al elegir un club o
+  //    una liga, justo después de vaciar el input, y esas llamadas tienen que correr
+  //    YA. Debouncear la función en vez del evento dejaría los resultados viejos en
+  //    pantalla mientras `confirmar()` cambia de club.
+  // ---------------------------------------------------------------------------
+  var TOPE_RESULTADOS = 30;
+  var mostrarTodos = false;      // lo prende "Mostrar más", se apaga en cada búsqueda nueva
+  function verTodosResultados(v){ mostrarTodos = !!v; }
+  var textoBuscable = null;      // { clubId: 'nombre pais ligas' }, normalizado
+
+  // Se arma una vez por sesión de modal. Se invalida al cargar la tabla de ligas
+  // (Versión 164, `loadClubLeagues()`), porque hasta entonces `ligasDe()` devuelve
+  // vacío y el texto quedaría sin las ligas adentro.
+  function indiceBusqueda(){
+    if(textoBuscable) return textoBuscable;
+    textoBuscable = {};
+    Object.keys(window.CLUB_INDEX || {}).forEach(function(id){
+      if(!clubs[id]) return;
+      var co = window.COUNTRIES[countryOf(id)];
+      var ligasTxt = ligasDe(id).map(function(l){ return (window.LEAGUES[l] || {}).name || ''; }).join(' ');
+      textoBuscable[id] = norm(nameOf(id)) + ' ' + norm(co ? t(co.key, co.name) : '') + ' ' + norm(ligasTxt);
+    });
+    return textoBuscable;
+  }
+  function invalidarIndiceBusqueda(){ textoBuscable = null; }
+
+  // La grilla de clubes con tope: devuelve el <div> y, si sobran, el botón.
+  function grillaConTope(ids, caja, hazBoton, repintar){
+    var visibles = mostrarTodos ? ids : ids.slice(0, TOPE_RESULTADOS);
+    var grid = el('div', 'op-grid clubes');
+    visibles.forEach(function(id){ grid.appendChild(hazBoton(id)); });
+    caja.appendChild(grid);
+    if(ids.length > visibles.length){
+      var b = el('button', 'sel-mas');
+      b.type = 'button';
+      b.textContent = t('sel.mostrarmas', 'Mostrar más') +
+        ' (' + visibles.length + '/' + ids.length + ')';
+      b.addEventListener('click', function(){ mostrarTodos = true; (repintar || renderBusqueda)(); });
+      caja.appendChild(b);
+    }
+  }
+
   function renderBusqueda(){
     var q = norm($('modalQ').value.trim());
     var caja = $('modalResultados');
@@ -1791,20 +1864,15 @@ window.CLUB_SELECTOR = (function(){
       }
     }
 
-    var clubesHit = ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){
-      if(!clubs[id]) return false;
-      var co = window.COUNTRIES[countryOf(id)];
-      var ligasTxt = ligasDe(id).map(function(l){ return (window.LEAGUES[l] || {}).name || ''; }).join(' ');
-      return norm(nameOf(id)).indexOf(q) >= 0
-          || (co && norm(t(co.key, co.name)).indexOf(q) >= 0)
-          || norm(ligasTxt).indexOf(q) >= 0;
+    var txt = indiceBusqueda();
+    var clubesHit = ordenados(Object.keys(txt).filter(function(id){
+      return txt[id].indexOf(q) >= 0;
     }));
     if(clubesHit.length){
       if(origen === 'vs') caja.appendChild(el('p', 'busca-grupo', t('sel.busca.clubes', 'Clubes')));
-      var gc = el('div', 'op-grid clubes');
-      clubesHit.forEach(function(id){
+      grillaConTope(clubesHit, caja, function(id){
         var co = window.COUNTRIES[countryOf(id)];
-        gc.appendChild(opcionBtn({
+        return opcionBtn({
           id:id, crest:initials(nameOf(id)), label:nameOf(id),
           sub:co ? co.flag + ' ' + t(co.key, co.name) : '',
           meta:nEjercicios(yearsOf(id).length)
@@ -1815,9 +1883,8 @@ window.CLUB_SELECTOR = (function(){
           $('modalQ').value = '';
           renderBusqueda();
           confirmar();   // sin destino: el que corresponda al origen
-        }));
+        });
       });
-      caja.appendChild(gc);
       hits += clubesHit.length;
     }
 
@@ -1991,7 +2058,23 @@ window.CLUB_SELECTOR = (function(){
     $('clubBtn').addEventListener('click', function(){ open(false); });
     $('modalX').addEventListener('click', close);
     $('clubBackdrop').addEventListener('click', close);
-    $('modalQ').addEventListener('input', renderBusqueda);
+    // DEBOUNCE ACÁ Y NO ADENTRO DE renderBusqueda() (Versión 165): esa función
+    // también se llama desde adentro de sí misma al elegir un club o una liga,
+    // después de vaciar el input, y esas llamadas tienen que correr YA. Si se
+    // debounceara la función, los resultados viejos quedarían en pantalla mientras
+    // `confirmar()` cambia de club.
+    // 160 ms: por debajo de eso no ahorra teclas reales, por arriba se empieza a
+    // sentir el retraso al escribir.
+    var debQ = null;
+    $('modalQ').addEventListener('input', function(){
+      clearTimeout(debQ);
+      debQ = setTimeout(function(){
+        // Una consulta nueva vuelve a mostrar el tope: si alguien apretó "Mostrar
+        // más" buscando "bo", no tiene por qué arrastrar eso a la búsqueda siguiente.
+        verTodosResultados(false);
+        renderBusqueda();
+      }, 160);
+    });
     var cx = $('coachX');
     if(cx) cx.addEventListener('click', function(e){ e.stopPropagation(); hideCoach(); });
 

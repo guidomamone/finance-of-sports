@@ -266,6 +266,7 @@ window.I18N.strings.en = {
   "th.country": "Country",
   "th.team": "Team",
   "th.docs": "Documents",
+  "sel.mostrarmas": "Show more",
   "fuentes.page.intro3": "Each club has its own page with its documents and its caveats. Go into the one you care about.",
   "fuentes.club.intro": "Every figure for this club on the site comes from one of these documents.",
   "fuentes.card.others": "See sources for other teams",

@@ -53,8 +53,8 @@ escrito. Si te toca ejecutar alguno de los dos, agregalo a `TODO.md` como parte 
 | 4 | 2 | `fuentes.html` con página propia por club | ✅ Hecho (Versión 162, sesión 2026-09-20) |
 | 5 | 7 | Reforzar la alarma de colisión de `clubId` al momento de sourcing | ✅ Hecho (Versión 163, sesión 2026-09-20) |
 | 6 | 9 | Partir `data/club-leagues.js` (por país o liga) | ✅ Hecho (Versión 164, sesión 2026-09-20) |
-| 7 | 3 | Adelgazar el payload eager (`clubs.js`/`club-index.js`, sobre la base del punto 9) | ⬜ Pendiente |
-| 8 | 4 | Debounce + límite de resultados en el buscador del selector | ⬜ Pendiente |
+| 7 | 3 | Adelgazar el payload eager (`clubs.js`/`club-index.js`, sobre la base del punto 9) | ⏸️ Pospuesto (2026-09-20): medido, paga 3 KB comprimidos |
+| 8 | 4 | Debounce + límite de resultados en el buscador del selector | ✅ Hecho (Versión 165, sesión 2026-09-20) |
 
 **Por qué este orden** (razonamiento completo en el chat con Guido del 2026-09-18, resumen acá): 5 y
 8 son baratos y aislados, entran primero. 2 es independiente de todo el resto (usa `sources{}`, no
@@ -651,7 +651,37 @@ marcá este punto como Hecho, completá sus "Notas de ejecución", y revisá el 
 siguiente) por si algo de esto cambia qué datos lee js/selector.js en su buscador.
 ```
 
-**Notas de ejecución:** _(completar acá cuando se haga)_
+**Notas de ejecución** (sesión 2026-09-20): **POSPUESTO, decisión de Guido sobre estas mediciones.**
+
+- **NO SE IMPLEMENTÓ NADA.** El punto cuesta un refactor que este mismo plan marca MEDIO-ALTO (toca
+  el selector para todos los visitantes) y paga, medido, **3,0 KB comprimidos a 1000 clubes**.
+- **LA MEDICIÓN, para que nadie la tenga que rehacer** (todo gzip -9, que es como Netlify sirve):
+
+  | | sin comprimir | en el cable |
+  |---|---|---|
+  | Acortar `reportType` en `club-index.js` | −1,8 KB | **−60 B (4%)** |
+  | Sacar `reportingCurrency` + `fiscalYearStart` de `clubs.js`, a 1000 clubes | −48 KB | **−3,0 KB (10%)** |
+
+  Los 3,0 KB salen de simular 1000 clubes con nombres, países y monedas VARIADOS (28,0 a 25,0 KB
+  comprimidos), no de duplicar las 41 filas de hoy, que comprimen a nada y darían un número falso.
+- **LA PREMISA DEL PROMPT ERA INCORRECTA EN SU MITAD**: dice que los dos campos "solo hacen falta con
+  el club YA cargado". `fiscalYearStart` NO: `js/selector.js:212` lo lee para decidir si un ejercicio
+  se etiqueta "2024" o "2023/2024", en el paso en que el visitante elige el año, ANTES de bajar
+  ningún archivo de club. Moverlo al `data/<club>-data.js` obligaría al selector a bajar los 41
+  archivos para escribir una etiqueta, que es justo lo que el selector existe para evitar. Si alguna
+  vez se retoma, el destino correcto de ese campo es `club-index.js` (generado), no el archivo del
+  club.
+- **UNA PROPUESTA QUE SE CAYÓ SOLA, y la lección que dejó**: esta sesión propuso acortar los
+  `reportType` de `club-index.js` a códigos de una letra como "el ahorro grande". El comentario de
+  `tools/generate-club-index.js` (línea ~233) ya argumentaba en contra, con razón: "son 7 strings
+  que se repiten miles de veces, o sea justo lo que gzip aplasta a casi nada". **Leé los comentarios
+  del archivo que vas a cambiar antes de proponer revertir lo que dicen.**
+- **REGLA QUE QUEDÓ ESCRITA** en `.claude/skills/escala-finance-of-sports/SKILL.md`: proyectá sobre
+  el COMPRIMIDO, no sobre bytes crudos. Estos archivos son filas casi idénticas y una proyección
+  cruda exagera por 3x o más. El to-do 22(d) se cerró con este mismo criterio.
+- **QUÉ HARÍA FALTA PARA REABRIRLO**: que el payload eager comprimido pase a ser un problema
+  observable (hoy son 29,3 KB los 8 archivos juntos), o que aparezca un campo eager que NO comprima
+  bien, o sea que varíe de verdad club por club.
 
 ---
 
@@ -701,7 +731,34 @@ ANTES de terminar, actualizá PLAN-REMEDIACION-ESCALA.md: marcá este punto como
 explícitamente en el resumen de cierre, no asumas que lo va a notar solo.
 ```
 
-**Notas de ejecución:** _(completar acá cuando se haga)_
+**Notas de ejecución** (sesión 2026-09-20, Versión 165 de `CHANGELOG.md`):
+
+- **EL DEBOUNCE VA EN EL LISTENER, NO EN LA FUNCIÓN**, y esto el prompt no lo contemplaba.
+  `renderBusqueda()` se llama desde TRES lugares: el `input` y dos veces desde adentro de sí misma,
+  al elegir un club o una liga, justo después de hacer `$('modalQ').value = ''`. Esas dos tienen que
+  correr en el mismo tick: si se debouncea la función, los resultados viejos quedan en pantalla
+  mientras `confirmar()` cambia de club. 160 ms.
+- **Tope de 30** con "Mostrar más" y el conteo real al lado ("30/34"): esconder sin decir cuántos
+  hay se lee como "no está". Se resetea en cada consulta nueva Y en cada apertura del modal (lo
+  segundo se agregó al probar: el flag es de módulo y se arrastraba de una sesión del modal a la
+  siguiente).
+- **Caché del texto buscable**, que no estaba en el prompt y era el costo real: el filtro llamaba a
+  `ligasDe(id)` para CADA club en CADA tecla, y esa función ordena las ligas del club cada vez. A
+  3000 clubes eso pesa más que el DOM. Se invalida cuando resuelve `loadClubLeagues()` (punto 9),
+  porque antes de eso el texto quedaría sin las ligas adentro.
+- **La grilla del constructor de mezcla** lleva el mismo tope, pero con los marcados SIEMPRE
+  primero y visibles: ahí el visitante está seleccionando, y esconderle algo que marcó se lee como
+  que se le borró. El botón "Mostrar más" repinta con `renderModal()` y no con `renderBusqueda()`,
+  por eso `grillaConTope()` recibe qué repintar.
+- **LO QUE NO RESUELVE, y quedó como to-do 38**: esa grilla a 1000 clubes va a seguir sin servir
+  aunque no haga jank, porque es una lista para elegir a ojo. Necesita su propio buscador, que es
+  una feature y no una optimización.
+- **Verificación en el navegador**: 0 resultados en el tick del tecleo y 30 tras el debounce;
+  "Mostrar más" revela los 34 y el botón desaparece; una consulta nueva vuelve al tope (22 hits, sin
+  botón); elegir un club desde el buscador limpia los resultados en el mismo tick, vacía el input y
+  deja el club activo; la grilla de mezcla muestra 30/41 y un club marcado que estaba en la posición
+  40 pasa a la 0. `node tools/audit.js` en 0 P0 / 0 P1, los dos generadores con `--check` limpio, 0
+  recursos fallidos.
 
 ---
 
@@ -717,6 +774,15 @@ en este plan ni en la auditoría original — no borrar entradas viejas, solo ag
   cualquier punto que diga "confirmá que el audit sigue igual" tiene que sacar su línea de base
   CORRIENDO el comando al empezar, no leyéndola de un archivo de documentación. Es el mismo tipo
   de dato que el plan ya pide confirmar para los números de línea de `index.html`.
+- **2026-09-20, ejecutando el punto 3: proyectar sobre bytes crudos exagera por 3x o más, y esta
+  sesión se comió el error.** Todos los archivos de `data/` son filas casi idénticas, o sea justo lo
+  que gzip aplasta, y Netlify sirve comprimido. Dos "ahorros" se cayeron al medirlos en el cable:
+  acortar los `reportType` de `club-index.js` ahorra 60 bytes (4%), no 91 KB, y sacar
+  `reportingCurrency`/`fiscalYearStart` de `clubs.js` ahorra 3,0 KB a 1000 clubes, no 49. Peor: el
+  comentario de `tools/generate-club-index.js` YA decía esto ("son 7 strings que se repiten miles de
+  veces, o sea justo lo que gzip aplasta a casi nada") y la sesión propuso revertirlo sin haberlo
+  leído. **Leé los comentarios del archivo que vas a cambiar antes de proponer lo contrario de lo
+  que dicen, y medí comprimido.** La regla quedó escrita en el skill de escala.
 - **2026-09-20, ejecutando el punto 2: las 613 notas internas de `fuentes/` están publicadas.**
   Están trackeadas en git y el repo se deploya entero, así que se leen en
   `financeofsports.com/fuentes/<País>/<Club>.md`; 37 de ellas mencionan a Guido por nombre o

@@ -1799,3 +1799,27 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   país; al abrirlo se bajan los 6 y quedan los 41 clubes. Modal recorrido paso a paso con dos
   regiones y dos países (Argentina 11 clubes, España 10, 21 en el paso de clubes). 0 recursos
   fallidos, `auditAll()` en 222 checks, `node tools/audit.js` en 0 P0 / 0 P1. `ASSET_V` a 164.
+
+## Versión 165: debounce y tope de resultados en el selector (punto 4 del plan de escala)
+
+- Debounce de 160 ms en el `input` del buscador del modal. VA EN EL LISTENER Y NO EN
+  `renderBusqueda()`: esa función también se llama desde adentro de sí misma al elegir un club o
+  una liga, justo después de vaciar el input, y esas llamadas tienen que correr en el mismo tick.
+  Debouncear la función dejaría los resultados viejos en pantalla mientras `confirmar()` cambia de
+  club.
+- Tope de 30 resultados en la grilla de clubes, con "Mostrar más" y el conteo real al lado
+  ("30/34"). El tope se resetea en cada consulta nueva y en cada apertura del modal.
+- Caché del texto buscable de cada club (nombre + país + ligas, ya normalizado). Antes el filtro
+  llamaba a `ligasDe(id)` para CADA club en CADA tecla, y esa función ordena las ligas del club
+  cada vez. Se invalida al cargar la tabla de ligas (Versión 164).
+- La grilla de "elegir clubes" del constructor de mezcla lleva el mismo tope, pero con los clubes
+  ya marcados SIEMPRE primero y visibles: ahí el visitante está seleccionando, y esconderle algo
+  que marcó se lee como que se le borró.
+- Clave nueva `sel.mostrarmas` en `data/lang/en.js` y estilo `.sel-mas`. `ASSET_V` a 165.
+- Verificado en el navegador: sin resultados en el tick del tecleo y 30 tras el debounce; "Mostrar
+  más" revela los 34 y el botón desaparece; una consulta nueva vuelve al tope; elegir un club desde
+  el buscador limpia los resultados en el mismo tick y deja el club activo; la grilla de mezcla
+  muestra 30/41 y un club marcado que estaba en la posición 40 pasa a la 0. `node tools/audit.js`
+  en 0 P0 / 0 P1, los dos generadores con `--check` limpio, 0 recursos fallidos.
+- **Con esto quedan cerrados los 8 puntos de `PLAN-REMEDIACION-ESCALA.md`** (7 hechos y el punto 3
+  descartado con mediciones).

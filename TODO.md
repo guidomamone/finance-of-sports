@@ -38,6 +38,12 @@ perdieron sino que se descartaron:
   repos — se movió a `CLAUDE.md`, que se lee en cada sesión, que es donde sirve.
 - **Los 3 cards de presupuesto en un tab propio** (era 10): era un "evaluar si vale la pena", y la
   respuesta es que no.
+- **Adelgazar el payload eager de `data/`** (era 22(d)). Decisión de Guido del 2026-09-20, sobre
+  mediciones: sacar `reportingCurrency`/`fiscalYearStart` de `clubs.js` ahorra **3,0 KB comprimidos
+  a 1000 clubes**, y acortar los `reportType` de `club-index.js` ahorra **60 bytes**, contra un
+  refactor que toca el selector para todos los visitantes. No rinde. Las mediciones completas y qué
+  haría falta para reabrirlo están en las notas del punto 3 de `PLAN-REMEDIACION-ESCALA.md`. La
+  mitad que SÍ rendía de ese punto (`club-leagues.js`) se hizo en la Versión 164.
 - **El corte free/paid y el paywall** (eran 5 y 6). Decisión de Guido del 2026-09-14: **por ahora
   el sitio va todo gratis**. No hay corte que definir ni cuentas/suscripciones que construir, así
   que no son pendientes. El día que se revise, la arquitectura ya charlada está en
@@ -267,27 +273,9 @@ perdieron sino que se descartaron:
     909 son los dos lados del spread del mismo día y los dos están bien.
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
-    de esta corrida). (a), (b), (c), (e), (f), (g) e (i) resueltos, se borran de acá. Siguen
-    abiertos, en el orden en que aparecen:
-    (d) `clubs.js` sigue sin adelgazar: `club-index.js` (Versión 129) ya resolvió la mitad que
-        necesitaba el selector, pero `reportingCurrency`/`fiscalYearStart` siguen solo en `clubs.js`
-        (eager, ~405 B/club, ~395 KB proyectado a 1000 clubes). La otra mitad de este punto,
-        `club-leagues.js`, se resolvió en la Versión 164: sus filas viven ahora en
-        `data/club-leagues/<iso2>.js` y se bajan al abrir el selector, no en la primera visita.
-        TRES NÚMEROS DISTINTOS, y conviene no confundirlos (medidos el 2026-09-20): los "~38 KB"
-        de este punto son la suma de los TRES archivos que escalan, no del payload eager. El payload
-        eager completo son 8 archivos, **79,7 KB sin comprimir** (78,5 después de la 164) y **29,3 KB
-        como viajan de verdad**, porque Netlify los sirve comprimidos.
-        Y MEDIDO EL 2026-09-20, ESTE PUNTO NO RINDE: sacar `reportingCurrency` y `fiscalYearStart`
-        de `clubs.js` ahorra **3,0 KB comprimidos a 1000 clubes** (28,0 a 25,0 KB en una simulación
-        con nombres, países y monedas variados), contra un riesgo que el plan de remediación marca
-        como MEDIO-ALTO porque toca el selector para todos los visitantes. Además `fiscalYearStart`
-        NO se puede mover al archivo del club: `js/selector.js:212` lo lee para etiquetar ejercicios
-        ANTES de cargar ningún club. Ver las notas del punto 3 en `PLAN-REMEDIACION-ESCALA.md`.
-    (h) NUEVO (Versión 159): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
-        tiene debounce ni límite de resultados — filtra y reconstruye el DOM completo en cada
-        tecla. Invisible a 41 clubes, jank probable a 1000-3000. Debounce ~150-200ms + top-N con
-        "mostrar más".
+    de esta corrida). (a), (b), (c), (e), (f), (g), (h) e (i) resueltos y (d) descartado, se borran
+    de acá. **Con esto quedan cerrados los 8 puntos de `PLAN-REMEDIACION-ESCALA.md`.** Lo que sigue
+    abierto de escala:
 
 35. NUEVO (sesión 2026-09-20, al partir `fuentes-por-club.md` en índice de países +
     `fuentes/_indice/<País>.md`): automatizar el mantenimiento de ese índice con
@@ -308,6 +296,14 @@ perdieron sino que se descartaron:
     158 el mismo día). Opciones: (a) renumerar el bloque de prototipos a una serie propia sin
     "Versión" (ej. "Prototipo 4 — paso 3"), que es lo que en realidad son; (b) dejarlo y anotar el
     duplicado al principio del archivo. Decide Guido: toca ~17 entradas históricas.
+
+38. NUEVO (sesión 2026-09-20, al ponerle tope a las grillas del selector). **La grilla de "elegir
+    clubes" del constructor de mezcla necesita su propio buscador.** Hoy lista todos los clubes para
+    marcar a ojo; desde la Versión 165 muestra 30 con "Mostrar más" y los ya marcados arriba, así
+    que deja de hacer jank, pero eso NO arregla el problema de fondo: a 1000 clubes una grilla para
+    elegir a ojo no sirve aunque sea rápida. Lo que necesita es un campo de filtro propio, como el
+    del modal. Es una feature, no una optimización, por eso no entró en el punto 4 del plan de
+    escala. Ver `js/selector.js`, la rama `else` de la grilla de mezcla.
 
 37. NUEVO (sesión 2026-09-20, apareció al partir `fuentes.html` por club). **Las 613 notas internas
     de sourcing de `fuentes/` están publicadas.** Están trackeadas en git, y el repo se deploya
