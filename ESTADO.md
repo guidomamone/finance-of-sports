@@ -139,7 +139,7 @@ se reescribe, no se acumula.
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
   ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
   y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 44 P2,
-  8 P3 (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
+  9 P3 (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
   tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones

@@ -1746,3 +1746,22 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Verificado: `--check` limpio, `node tools/audit.js` en 0 P0 / 0 P1, `auditAll()` en 222 checks
   con 0 que no cierran, índice y páginas de club renderizando y traduciendo en el navegador, links
   de la ficha apuntando donde corresponde, y el barrido de huérfanas probado a mano.
+
+## Versión 163: la colisión de `clubId` se avisa al sourcear, no al cargar (punto 7 del plan de escala)
+
+- `checkColisionSourcing()` nueva en `tools/audit.js`: lee los 44 `fuentes/_indice/<País>.md` y
+  reporta P3 cuando un club que se está sourceando coincide en nombre con un `clubId` heredado sin
+  país ya cargado, o sea antes de transcribir nada. `checkClubIds()` avisaba recién cuando el club
+  que colisiona ya estaba cargado, que es cuando migrar cuesta tres cosas a la vez.
+- Hoy ese P3 da 0 y calla. Se ejercitó a mano agregando un club de prueba a un índice para
+  confirmar que dispara con el mensaje correcto.
+- SE MIDIÓ ANTES DE DISEÑARLO, y cambió el diseño: sobre los 530 clubes trackeados, la comparación
+  exacta de nombres da 3 pares entre países (Everton, Nacional, Olimpia); por primera palabra da
+  119 clubes en 23 grupos, casi todos "Deportivo", "Atlético", "FC" y "Unión". O sea que NO hace
+  falta lista de excepciones para nombres genéricos: hace falta no hacer matching difuso. Esos 3
+  pares van en UNA línea agregada, no una por par, porque no está cargado ninguno de los dos.
+- GOTCHA DE PARSEO que costaba un falso positivo grande: el patrón de línea de club matchea
+  también `- [Notas generales de X](../X/_notas-generales.md)`, una por país. Sin excluirlas el
+  conteo da 569 en vez de los 530 reales y aparece un choque fantasma de "Notas" en 39 países. Se
+  excluyen por el destino del link, que empieza con `_`.
+- `node tools/audit.js`: 0 P0, 0 P1, 44 P2, 9 P3 (uno más, la línea agregada).

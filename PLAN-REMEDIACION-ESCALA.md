@@ -51,7 +51,7 @@ escrito. Si te toca ejecutar alguno de los dos, agregalo a `TODO.md` como parte 
 | 2 | 5 | Paralelizar `auditAll()` | ✅ Hecho (Versión 160, sesión 2026-09-20) |
 | 3 | 8 | Chequeo automático de colisión en `Clubes/<País>/<Club>/` | ✅ Hecho (Versión 161, sesión 2026-09-20) |
 | 4 | 2 | `fuentes.html` con página propia por club | ✅ Hecho (Versión 162, sesión 2026-09-20) |
-| 5 | 7 | Reforzar la alarma de colisión de `clubId` al momento de sourcing | ⬜ Pendiente |
+| 5 | 7 | Reforzar la alarma de colisión de `clubId` al momento de sourcing | ✅ Hecho (Versión 163, sesión 2026-09-20) |
 | 6 | 9 | Partir `data/club-leagues.js` (por país o liga) | ⬜ Pendiente |
 | 7 | 3 | Adelgazar el payload eager (`clubs.js`/`club-index.js`, sobre la base del punto 9) | ⬜ Pendiente |
 | 8 | 4 | Debounce + límite de resultados en el buscador del selector | ⬜ Pendiente |
@@ -426,7 +426,43 @@ ANTES de terminar, actualizá PLAN-REMEDIACION-ESCALA.md: marcá este punto como
 "Notas de ejecución".
 ```
 
-**Notas de ejecución:** _(completar acá cuando se haga)_
+**Notas de ejecución** (sesión 2026-09-20, Versión 163 de `CHANGELOG.md`):
+
+- **Se midió ANTES de diseñar, y el número cambió el diseño.** Sobre los 530 clubes trackeados:
+  comparación EXACTA de nombres, 3 pares entre países (Everton Chile/Inglaterra, Nacional
+  Portugal/Uruguay, Olimpia Honduras/Paraguay). Por primera palabra ("muy parecidos", como sugería
+  el prompt), 119 clubes en 23 grupos, dominados por "Deportivo" (10), "FC" (17), "Atlético" (6),
+  "Independiente" (4), "Unión" (4).
+- **Respuesta a la pregunta del prompt sobre la lista de excepciones: NO hace falta, y el motivo es
+  que la comparación exacta ya evita el problema.** El ruido de los nombres genéricos aparece solo
+  si se hace matching difuso; la salida correcta es no hacerlo, no mantener una lista para tolerarlo.
+- **REFRAMEADO, y es lo importante de este punto.** El chequeo tal como estaba especificado (P3 por
+  cada par de nombres iguales entre países) habría sido 3 líneas permanentes sobre clubes que no
+  están cargados y que quizá nunca lo estén, y encima casi redundantes: desde la Versión 129 un club
+  NUEVO ya nace con el país en el id, así que un "Everton" que entrara mañana sería `everton-cl` sin
+  que nadie avise nada. Lo que sí vale es el caso accionable: **un club trackeado que vuelve ambiguo
+  uno de los 41 `clubId` heredados SIN país**, porque ese es el que obliga a una migración de tres
+  frentes (archivo, id, prefijo de cada sourceId) y conviene decidirlo antes de transcribir. Ese
+  conjunto hoy es 0, medido, no asumido.
+- **Qué quedó**: `checkColisionSourcing()` en `tools/audit.js`, con dos salidas. P3
+  `clubid-amenazado-por-sourcing`, uno por caso accionable (hoy ninguno). P3
+  `nombres-repetidos-sourcing`, UNA línea agregada con los pares entre clubes de los que no está
+  cargado ninguno (hoy los 3). Un nombre que salió en el primero se excluye del segundo, porque la
+  frase "ninguno está cargado" sería falsa justo para él.
+- **GOTCHA DE PARSEO, que es lo que más fácil se vuelve a pisar**: el patrón de línea de club
+  (`^- \[([^\]]+)\]`) matchea también `- [Notas generales de X](../X/_notas-generales.md)`, que hay
+  una por país. Sin excluirlas, el conteo da **569 clubes en vez de 530** y aparece un choque
+  fantasma de "Notas" en 39 países, que fue el grupo más grande de la primera corrida del análisis.
+  Se excluyen por el DESTINO del link (empieza con `_`), no por el texto, que cambia de país a país.
+  La confirmación de que el criterio es el correcto es que el conteo da exactamente los 530 de
+  `ESTADO.md`.
+- **Verificación**: `node tools/audit.js` en 0 P0, 0 P1, 44 P2, 9 P3 (uno más que antes, la línea
+  agregada). Como el P3 accionable nace en cero, se ejercitó a mano agregando `- [Racing Club]` al
+  índice de España: disparó con el mensaje correcto ("renombrar 'racing' a 'racing-ar' primero") y
+  Racing desapareció de la línea agregada, que es el comportamiento buscado. El índice se restauró
+  (`git status` limpio).
+- **No se agregó to-do a `TODO.md`**: el prompt lo pedía solo si el punto no se resolvía en la misma
+  sesión.
 
 ---
 

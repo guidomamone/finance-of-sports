@@ -482,6 +482,93 @@ function checkClubIds(api) {
   }
 }
 
+// --- D12c: colisión de clubId adelantada al SOURCING (Versión 163) ----------
+// checkClubIds() avisa cuando un id heredado sin país deja de ser inequívoco, pero recién
+// cuando el club que colisiona YA ESTÁ CARGADO en clubs{}. Para entonces renombrar el
+// viejo cuesta tres cosas (el archivo data/<id>-data.js, el clubId y el prefijo de cada
+// sourceId) y encima ya se transcribió el documento del club nuevo. Esto mira el escalón
+// anterior: los clubes que alguien está SOURCEANDO, que viven en fuentes/_indice/<País>.md
+// desde la Versión 158, y avisa el día que uno de ellos empieza a amenazar a un id pelado.
+//
+// QUÉ SE REPORTA Y QUÉ NO, que es la parte que se midió antes de escribirlo:
+//   - Comparación EXACTA del nombre normalizado, nunca difusa. Medido sobre los 530 clubes
+//     trackeados: exacta da 3 pares entre países (Everton, Nacional, Olimpia); por primera
+//     palabra da 119 clubes en 23 grupos, casi todos "Deportivo", "Atlético", "FC" y
+//     "Unión". O sea que el ruido que preocupaba no se resuelve con una lista de
+//     excepciones, se resuelve no haciendo matching difuso. Por eso no hay lista.
+//   - El P3 que importa es el club trackeado que volvería AMBIGUO un id pelado ya cargado:
+//     ese es el que obliga a una migración. Hoy son 0 y el chequeo calla, que es lo
+//     correcto.
+//   - Los pares entre dos clubes trackeados (ninguno cargado) van en UNA línea agregada,
+//     no una por par: no obligan a nada hoy, y desde la Versión 129 un club nuevo ya nace
+//     con el país en el id.
+const INDICE_FUENTES = path.join(ROOT, 'fuentes/_indice');
+
+// `clubs{}` guarda el país como código ISO ('AR'), y `fuentes/_indice/` lo nombra completo
+// ('Argentina.md'), así que hay que traducir para poder compararlos. Es el mismo mapa que
+// tiene tools/generate-fuentes-page.js. Si un club tiene un código que no está acá, se usa
+// el código tal cual: no va a coincidir con ningún índice, o sea que el chequeo se calla en
+// vez de inventar un choque.
+const PAIS_CLUB = {
+  AR: 'Argentina', BR: 'Brasil', CL: 'Chile', CO: 'Colombia', EC: 'Ecuador',
+  ES: 'España', JP: 'Japón', MX: 'México', PE: 'Perú', UY: 'Uruguay',
+};
+
+function checkColisionSourcing(api) {
+  if (!fs.existsSync(INDICE_FUENTES)) return;
+
+  const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  // Una línea de club del índice es `- [Nombre](../<País>/<Club>.md) — estado — fecha`.
+  // OJO: el mismo patrón matchea `- [Notas generales de X](../X/_notas-generales.md)`, que
+  // hay una por país. Sin excluirlas el conteo da 569 en vez de los 530 clubes reales y
+  // aparece un choque fantasma de "Notas" en 39 países. Se excluyen por el DESTINO del
+  // link, que empieza con `_`, no por el texto, que cambia de país a país.
+  const trackeados = [];
+  for (const f of fs.readdirSync(INDICE_FUENTES).filter(f => f.endsWith('.md')).sort()) {
+    const pais = f.replace(/\.md$/, '');
+    for (const line of fs.readFileSync(path.join(INDICE_FUENTES, f), 'utf8').split('\n')) {
+      const m = line.match(/^- \[([^\]]+)\]\(<?([^)>]+)>?\)/);
+      if (!m) continue;
+      if (path.basename(m[2]).startsWith('_')) continue;
+      trackeados.push({ pais, nombre: m[1], n: norm(m[1]) });
+    }
+  }
+  if (!trackeados.length) return;
+
+  // Los 41 ids heredados son los únicos que una colisión obliga a migrar: un id que ya
+  // termina en país no se vuelve ambiguo nunca.
+  const pelados = Object.keys(api.clubs).filter(id => !/-[a-z]{2}$/.test(id));
+  const yaReportados = new Set();
+  for (const id of pelados) {
+    const c = api.clubs[id];
+    const paisClub = PAIS_CLUB[c.country] || c.country;
+    const nombre = c.displayName || c.name || '';
+    for (const t of trackeados) {
+      if (t.pais === paisClub || t.n !== norm(nombre)) continue;
+      yaReportados.add(t.n);
+      add('P3', 'clubid-amenazado-por-sourcing', `se está sourceando "${t.nombre}" (${t.pais}) y coincide con '${id}' (${paisClub}), que tiene id heredado sin país. Si ese club se llega a cargar, hay que renombrar '${id}' a '${id}-${(c.country || 'xx').toLowerCase()}' primero: el id nombra data/${id}-data.js y prefija cada uno de sus sourceId. Conviene decidirlo ANTES de transcribir nada`);
+    }
+  }
+
+  // Pares entre clubes que todavía no está cargado ninguno de los dos.
+  const porNombre = {};
+  for (const t of trackeados) (porNombre[t.n] = porNombre[t.n] || []).push(t);
+  const pares = [];
+  for (const k of Object.keys(porNombre).sort()) {
+    // Un nombre que ya salió en el P3 de arriba NO se repite acá: ese caso sí tiene un club
+    // cargado detrás, así que la frase "ninguno está cargado" sería falsa justo para él.
+    if (yaReportados.has(k)) continue;
+    const paises = [...new Set(porNombre[k].map(t => t.pais))];
+    if (paises.length < 2) continue;
+    pares.push(`${porNombre[k][0].nombre} (${paises.join(' / ')})`);
+  }
+  if (pares.length) {
+    add('P3', 'nombres-repetidos-sourcing', `${pares.length} ${pares.length === 1 ? 'nombre de club trackeado se repite' : 'nombres de club trackeados se repiten'} en países distintos: ${pares.join(', ')}. No obliga a nada hoy (ninguno está cargado, y desde la Versión 129 un club nuevo ya nace con el país en el id): es para que el día que se carguen no se elija un id pelado`);
+  }
+}
+
 // --- D12b: carpetas de Clubes/<País>/<Club>/ (Versión 160) ------------------
 // OJO CON QUÉ PUEDE Y QUÉ NO PUEDE DETECTAR ESTO, porque el punto del plan de escala que lo
 // pidió lo planteaba de otra manera. La idea original era "avisar si dos clubes del mismo país
@@ -891,6 +978,7 @@ function main() {
   checkFuentesPublicas(api);
   checkClubIds(api);
   checkCarpetasClubes();
+  checkColisionSourcing(api);
   checkLigasPorEjercicio(api);
   checkCategorizacion(api);
   checkEscala(api);

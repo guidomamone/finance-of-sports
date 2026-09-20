@@ -81,7 +81,7 @@ ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igua
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en 5 segundos y sale con código 1 si hay P0 o P1. Hoy: 0 P0, 0 P1, 44 P2, 8 P3 (to-do 20).
+Corre en 5 segundos y sale con código 1 si hay P0 o P1. Hoy: 0 P0, 0 P1, 44 P2, 9 P3 (to-do 20).
 
 Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
 el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en

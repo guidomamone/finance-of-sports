@@ -131,6 +131,18 @@ por país/liga cuando el usuario entra a esa vista del selector — mismo mecani
   marca cualquier club nuevo sin país (P2). No requiere más trabajo salvo mantenerlo — es el modelo a
   copiar para el resto de esta lista: un chequeo automático que avisa en el momento en que migrar
   deja de ser prematuro, en vez de migrar todo por las dudas.
+  **ADELANTADO AL SOURCING EN LA VERSIÓN 163**: `checkColisionSourcing()` lee los 44
+  `fuentes/_indice/<País>.md` y avisa (P3) cuando un club que alguien está SOURCEANDO coincide con
+  un id pelado ya cargado, o sea antes de transcribir nada. Hoy da 0 y calla.
+  LO QUE SE MIDIÓ Y CONVIENE NO REDESCUBRIR: sobre los 530 clubes trackeados, la comparación EXACTA
+  de nombres da 3 pares entre países (Everton, Nacional, Olimpia); por primera palabra da 119 clubes
+  en 23 grupos, casi todos "Deportivo", "Atlético", "FC" y "Unión". O sea que el ruido de los
+  nombres genéricos NO se arregla con una lista de excepciones, se arregla no haciendo matching
+  difuso. Y el conjunto accionable (un trackeado que amenaza un id pelado) es 0, no 3: los 3 pares
+  son entre clubes que no está cargado ninguno.
+  GOTCHA DE PARSEO: el regex de línea de club matchea también `- [Notas generales de X](../X/
+  _notas-generales.md)`, una por país. Sin excluirlas el conteo da 569 en vez de 530 y aparece un
+  choque fantasma de "Notas" en 39 países. Se excluyen por el destino del link (empieza con `_`).
 - **Carpetas `Clubes/<País>/<Club>/`**: namespaced por país, sin colisión hoy (verificado sobre las
   336 carpetas en disco: 0 duplicados normalizados dentro de un país, y 0 nombres repetidos ni
   siquiera entre países, porque las carpetas usan el nombre largo, "Racing Club" contra "Racing
