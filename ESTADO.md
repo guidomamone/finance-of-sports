@@ -57,6 +57,10 @@ se reescribe, no se acumula.
   `main` del repo de GitHub. Dominio propio desde 2026-09-13:
   **financeofsports.com** (ver to-do 7: falta renombrar el repo en GitHub y
   re-linkearlo en Netlify, eso lo tiene que hacer Guido).
+- ANALYTICS: Cloudflare Web Analytics desde la Versión 166 (snippet en el `<head>`
+  de `index.html`) — visitas, pageviews, referrers y país, sin cookies ni banner de
+  consentimiento. No mide funnel/eventos (para eso, Mixpanel queda como opción
+  futura si hace falta).
 - YA NO HAY EJERCICIOS PLACEHOLDER (Versión 138, pedido de Guido: "quita los
   ejercicios que sean placeholder, antes tenían sentido, hoy no"). Se borraron los 9
   que quedaban, todos de Boca (7) y River (2): cinco eran placeholder puro con rubros

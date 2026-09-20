@@ -1823,3 +1823,14 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   en 0 P0 / 0 P1, los dos generadores con `--check` limpio, 0 recursos fallidos.
 - **Con esto quedan cerrados los 8 puntos de `PLAN-REMEDIACION-ESCALA.md`** (7 hechos y el punto 3
   descartado con mediciones).
+
+## Versión 166: Cloudflare Web Analytics
+
+- Snippet de Cloudflare Web Analytics (`beacon.min.js` con token propio) agregado en el `<head>` de
+  `index.html`, antes de `</head>`. Da visitas, pageviews, referrers y país por visitante sin
+  cookies ni banner de consentimiento; no requiere pasar el DNS del dominio por Cloudflare (se
+  instaló como snippet JS, no como sitio proxeado). Dashboard en Cloudflare, Analytics → Web
+  Analytics.
+- Verificado en producción: el deploy de Netlify sirve el script (chequeado con `curl` sobre
+  `financeofsports.com`), y el dashboard de Cloudflare registró visitas reales tras cargar el sitio
+  en un navegador.
