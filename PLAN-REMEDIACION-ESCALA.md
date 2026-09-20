@@ -49,7 +49,7 @@ escrito. Si te toca ejecutar alguno de los dos, agregalo a `TODO.md` como parte 
 |---|---|---|---|
 | 1 | 1 | Partir `fuentes-por-club.md` por país | ✅ Hecho (commit `a211594` de `main`) |
 | 2 | 5 | Paralelizar `auditAll()` | ✅ Hecho (Versión 160, sesión 2026-09-20) |
-| 3 | 8 | Chequeo automático de colisión en `Clubes/<País>/<Club>/` | ⬜ Pendiente |
+| 3 | 8 | Chequeo automático de colisión en `Clubes/<País>/<Club>/` | ✅ Hecho (Versión 161, sesión 2026-09-20) |
 | 4 | 2 | `fuentes.html` con página propia por club | ⬜ Pendiente |
 | 5 | 7 | Reforzar la alarma de colisión de `clubId` al momento de sourcing | ⬜ Pendiente |
 | 6 | 9 | Partir `data/club-leagues.js` (por país o liga) | ⬜ Pendiente |
@@ -198,6 +198,11 @@ se corriera en un entorno sin los PDFs descargados) sin que el script rompa.
 
 Entregame el plan (dónde va la función, qué reporta, la decisión de alcance) antes de tocar código.
 
+AJUSTE 2026-09-20 (al ejecutarlo): dos cosas que este prompt decía mal. (1) `checkClubIds()` es una
+función de primer nivel de `tools/audit.js`, no está adentro de `checkEscala`. (2) La regla de
+desambiguación NO está en `CONVENCIONES.md`: vive en la REGLA 3 de `fuentes-por-club.md` y en la
+sección E del skill de escala, que son las dos que hay que tocar.
+
 FASE 2 — Con aprobación explícita: implementalo, correlo (node tools/audit.js) y confirmá que sigue
 en 0 P0/P1 (no debería agregar ninguno, solo P2 si encuentra algo, y hoy no debería encontrar nada).
 AJUSTE 2026-09-20 (punto 5): la línea de base real de `node tools/audit.js` hoy es 0 P0, 0 P1, 44
@@ -209,7 +214,49 @@ sesión que lo resuelve. ANTES de terminar, actualizá PLAN-REMEDIACION-ESCALA.m
 como Hecho y completá sus "Notas de ejecución".
 ```
 
-**Notas de ejecución:** _(completar acá cuando se haga)_
+**Notas de ejecución** (sesión 2026-09-20, Versión 161 de `CHANGELOG.md`):
+
+- **LO PRIMERO, porque cambia qué es este punto**: la colisión que el prompt pedía detectar NO es
+  detectable por construcción. Un filesystem no admite dos carpetas con el mismo nombre en el mismo
+  directorio, así que el segundo club cae ADENTRO de la carpeta del primero, en silencio, y después
+  no queda ningún estado que distinga "dos clubes compartiendo carpeta" de "un club con muchos
+  documentos". Por eso esto NO cierra la asimetría con el punto 7 como decía el plan:
+  `checkClubIds()` sí puede avisar antes del daño, porque dos ids conviven sin problema en un objeto
+  JS y dos nombres de carpeta no. Contra la colisión exacta la única defensa sigue siendo la REGLA 3
+  de `fuentes-por-club.md`, aplicada a mano al crear la carpeta.
+- **Qué se hizo entonces**: `checkCarpetasClubes()` en `tools/audit.js` (después de `checkClubIds()`,
+  registrada en `main()` entre ese y `checkLigasPorEjercicio`) detecta la CASI-colisión, que además
+  es el error más probable de los dos: dos carpetas del mismo país que normalizan al mismo nombre
+  (sin acentos, minúsculas, sin separadores), o sea el mismo club transcripto dos veces con dos
+  grafías y sus documentos partidos entre las dos. P2, code `carpeta-club-duplicada`.
+- **Extra aprobado por Guido, del mismo pase de lectura**: P2 `carpeta-sin-pais` si una carpeta de
+  club cuelga directo de `Clubes/` sin país en el medio, que `CLAUDE.md` prohíbe explícitamente y
+  que no vigilaba nadie. Se detecta por contenido y no por nombre: una carpeta de PAÍS tiene
+  subcarpetas adentro, una de CLUB tiene los documentos sueltos.
+- **La decisión de alcance que el prompt pedía decidir: TODO `Clubes/` en disco, no solo `clubs{}`.**
+  Son 336 carpetas contra 41 (12%), y sobre todo la duplicación nace al SOURCEAR, mucho antes de que
+  el club entre a `clubs{}`. El costo, medido: de las 336 carpetas solo **129 tienen algún archivo
+  trackeado en git**, las otras 207 existen solo en la máquina de Guido (son las que todavía no
+  tienen transcripción `.md`, y los PDFs están en `.gitignore`), así que en un clone limpio el
+  chequeo ve menos. No alcanza para achicar el alcance: degrada bien (menos cobertura, nunca un
+  hallazgo falso).
+- **`Clubes/` ausente**: `return` silencioso, sin hallazgo. Que no estén las transcripciones no es un
+  defecto del proyecto, y un "no se pudo chequear" en cada corrida es ruido que entrena a ignorar la
+  lista, que ya tiene 8 P3 permanentes.
+- **Verificación**. Línea de base: 0 hallazgos, y `node tools/audit.js` queda en 0 P0, 0 P1, 44 P2,
+  8 P3, idéntico a antes. Como un chequeo que no encuentra nada no prueba nada (misma lección que el
+  punto 5), se ejercitó a propósito creando dos carpetas temporales: `Clubes/Argentina/Atlético
+  Tucumán` (contra la real `Atletico Tucuman`) y `Clubes/ZZ-Prueba/balance-2024.md`. Los dos avisos
+  salieron con el texto correcto, y las carpetas se borraron (`git status` limpio). El camino de
+  "`Clubes/` no existe" se probó aparte, copiando el repo sin esa carpeta al scratchpad: corre sin
+  romper y da los mismos 0 P0 / 0 P1.
+- **Docs**: REGLA 3 de `fuentes-por-club.md` y sección E del skill `escala-finance-of-sports`
+  actualizadas, las dos diciendo explícitamente qué cubre el chequeo y qué no.
+  NO se tocó `CONVENCIONES.md`, contra lo que decía el prompt: la regla no vive ahí (ver el ajuste
+  anotado en el prompt de este punto). Duplicarla habría creado la segunda verdad que el proyecto
+  evita en todos lados.
+- **No se agregó to-do a `TODO.md`**: el prompt lo pedía solo si el punto no se resolvía en la misma
+  sesión, y se resolvió.
 
 ---
 
@@ -526,6 +573,13 @@ en este plan ni en la auditoría original — no borrar entradas viejas, solo ag
   cualquier punto que diga "confirmá que el audit sigue igual" tiene que sacar su línea de base
   CORRIENDO el comando al empezar, no leyéndola de un archivo de documentación. Es el mismo tipo
   de dato que el plan ya pide confirmar para los números de línea de `index.html`.
+- **2026-09-20, ejecutando el punto 8: un chequeo nuevo que da 0 hallazgos no prueba que funcione.**
+  Mismo problema que la rama de error del punto 5, un escalón peor: un chequeo preventivo nace dando
+  cero por definición, así que "corrí el audit y sigue igual" es compatible con haber escrito una
+  función que no detecta nada. La vuelta barata: crear a mano el caso que tiene que encontrar
+  (carpetas temporales, con `trap` para borrarlas pase lo que pase), confirmar que el aviso sale con
+  el texto correcto, y recién ahí confiar en el cero. **Vale para el punto 7, que es otro chequeo
+  preventivo que va a nacer en cero.**
 - **2026-09-20, ejecutando el punto 5: el camino de error de `auditAll()` no lo ejercita ninguna
   corrida normal.** Con los 41 clubes cargando bien, la rama del `catch` (ahora la de
   `status === 'rejected'`) nunca corre, así que "el resumen da igual que antes" NO prueba que el

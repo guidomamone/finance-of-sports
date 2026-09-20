@@ -51,6 +51,14 @@ de cada club (primera línea, `- **Deporte**:`) y, cuando no es fútbol, tambié
 en el nombre del archivo. Se eligió así para no migrar los 41 clubes de fútbol ya cargados y no tocar
 los paths que ya citan docs y skills.
 
+DESDE LA VERSIÓN 161 HAY UN CHEQUEO AUTOMÁTICO PARCIAL, y conviene saber qué parte cubre.
+`checkCarpetasClubes()` en `tools/audit.js` recorre las carpetas de `Clubes/<País>/` y avisa (P2)
+cuando dos del mismo país normalizan al mismo nombre, o sea el mismo club transcripto dos veces con
+dos grafías. Lo que NO puede detectar, por construcción, es la colisión exacta que esta regla
+previene: un filesystem no admite dos carpetas con el mismo nombre en el mismo directorio, así que
+el segundo club cae adentro de la carpeta del primero sin dejar rastro. Contra ESO la única defensa
+sigue siendo esta regla, aplicada a mano al crear la carpeta.
+
 ---
 
 **REGLA 4 (sesión 2026-09-20)**: el detalle línea-por-club NO vive más en este archivo, vive en

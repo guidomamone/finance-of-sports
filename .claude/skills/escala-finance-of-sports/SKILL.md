@@ -131,10 +131,25 @@ por país/liga cuando el usuario entra a esa vista del selector — mismo mecani
   marca cualquier club nuevo sin país (P2). No requiere más trabajo salvo mantenerlo — es el modelo a
   copiar para el resto de esta lista: un chequeo automático que avisa en el momento en que migrar
   deja de ser prematuro, en vez de migrar todo por las dudas.
-- **Carpetas `Clubes/<País>/<Club>/`**: namespaced por país, sin colisión hoy. Riesgo latente (no
-  urgente): dos clubes del MISMO país con el mismo nombre corto en ligas/deportes distintos
-  colisionarían en la misma carpeta — `fuentes-por-club.md` ya tiene la regla escrita para cuando
-  pase (desambiguar en el nombre del archivo), pero es reactiva, no hay chequeo automático todavía.
+- **Carpetas `Clubes/<País>/<Club>/`**: namespaced por país, sin colisión hoy (verificado sobre las
+  336 carpetas en disco: 0 duplicados normalizados dentro de un país, y 0 nombres repetidos ni
+  siquiera entre países, porque las carpetas usan el nombre largo, "Racing Club" contra "Racing
+  Santander"). **Parcialmente cubierto desde la Versión 161** por `checkCarpetasClubes()` en
+  `tools/audit.js`.
+  LO QUE HAY QUE ENTENDER ANTES DE PEDIR MÁS COBERTURA ACÁ, porque este mapa lo planteaba mal: la
+  colisión exacta NO es detectable por construcción. Un filesystem no admite dos carpetas con el
+  mismo nombre en el mismo directorio, así que el segundo club cae ADENTRO de la carpeta del primero
+  y no queda estado que distinga eso de un club con muchos documentos. O sea que esto NO es el
+  equivalente de `checkClubIds()` para carpetas: ese sí avisa antes del daño, porque dos ids
+  conviven en un objeto JS. Lo que el chequeo nuevo sí detecta es la casi-colisión, que es el error
+  más probable de los dos: dos carpetas del mismo país que normalizan igual ("Atlético Goianiense" y
+  "Atletico Goianiense"), o sea un club transcripto dos veces con sus documentos partidos al medio.
+  De yapa detecta una carpeta de club colgando directo de `Clubes/` sin país en el medio, que
+  `CLAUDE.md` prohíbe y que no vigilaba nadie.
+  ALCANCE: escanea el disco entero y no solo `clubs{}`, porque la duplicación nace al sourcear, no
+  al cargar el club al sitio (336 carpetas contra 41). Contra: de esas 336, solo 129 tienen algún
+  archivo trackeado en git, así que en un clone limpio revisa menos. Degrada bien, nunca da un
+  hallazgo falso, y si `Clubes/` no existe se sale callado.
 
 ### F. Documentación "una sección por club" en archivo único, más allá de `fuentes-por-club.md`
 

@@ -482,6 +482,70 @@ function checkClubIds(api) {
   }
 }
 
+// --- D12b: carpetas de Clubes/<País>/<Club>/ (Versión 160) ------------------
+// OJO CON QUÉ PUEDE Y QUÉ NO PUEDE DETECTAR ESTO, porque el punto del plan de escala que lo
+// pidió lo planteaba de otra manera. La idea original era "avisar si dos clubes del mismo país
+// comparten nombre corto y sus carpetas chocan". Eso NO es detectable por construcción: un
+// filesystem no admite dos carpetas con el mismo nombre en el mismo directorio, así que el
+// segundo club cae ADENTRO de la carpeta del primero, en silencio, y después no queda ningún
+// estado que distinga "dos clubes compartiendo carpeta" de "un club con muchos documentos".
+// Por eso NO es el equivalente de checkClubIds() para carpetas: ese sí avisa antes del daño,
+// porque dos ids conviven sin problema en un objeto JS y dos nombres de carpeta no.
+//
+// Lo que SÍ se puede detectar, y es el error más probable de los dos, es la casi-colisión: dos
+// carpetas del mismo país cuyos nombres normalizan igual. O sea el mismo club transcripto dos
+// veces con dos grafías ("Atlético Goianiense" y "Atletico Goianiense"), con sus documentos
+// partidos entre las dos carpetas y ninguna señal de que pasó.
+//
+// ALCANCE: escanea TODO Clubes/ en disco, no solo los clubes que ya están en clubs{}. Son 336
+// carpetas contra 41 (12%), y sobre todo la duplicación nace al SOURCEAR, mucho antes de que el
+// club entre al sitio. El costo es que el árbol en disco no es el mismo en toda máquina (de las
+// 336 carpetas, 129 tienen algún archivo trackeado en git; el resto son transcripciones que
+// todavía no existen y PDFs, que están en .gitignore), así que en un clone limpio esto revisa
+// menos carpetas. Degrada bien: menos carpetas escaneadas es menos cobertura, nunca un hallazgo
+// falso.
+const CLUBES_DIR = path.join(ROOT, 'Clubes');
+
+function checkCarpetasClubes() {
+  // Sin Clubes/ no hay nada que chequear y eso NO es un defecto del proyecto (pasa en cualquier
+  // clone sin las transcripciones locales). Se sale callado a propósito: un hallazgo de "no se
+  // pudo chequear" en cada corrida es ruido que entrena a ignorar la lista.
+  if (!fs.existsSync(CLUBES_DIR)) return;
+
+  const subdirs = dir => fs.readdirSync(dir, { withFileTypes: true })
+    .filter(d => d.isDirectory() && !d.name.startsWith('.'))
+    .map(d => d.name).sort();
+
+  // Sin acentos, en minúscula y sin separadores: es lo que hace que "Atlético Goianiense" y
+  // "Atletico Goianiense" colapsen al mismo string, que es justo el par que buscamos.
+  const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  const paises = subdirs(CLUBES_DIR);
+
+  for (const pais of paises) {
+    const porNombre = {};
+    for (const club of subdirs(path.join(CLUBES_DIR, pais))) {
+      (porNombre[norm(club)] = porNombre[norm(club)] || []).push(club);
+    }
+    for (const k of Object.keys(porNombre).sort()) {
+      if (porNombre[k].length < 2) continue;
+      add('P2', 'carpeta-club-duplicada', `Clubes/${pais}/: ${porNombre[k].map(c => `"${c}"`).join(' y ')} son carpetas distintas que normalizan al mismo nombre. O es el mismo club transcripto dos veces con dos grafías, y sus documentos quedaron partidos entre las dos, o son dos clubes distintos que hay que desambiguar en el nombre de la carpeta (REGLA 3 de fuentes-por-club.md)`);
+    }
+  }
+
+  // CLAUDE.md prohíbe una carpeta de club colgando directo de Clubes/, sin país en el medio.
+  // Se detecta por el contenido y no por el nombre: una carpeta de PAÍS tiene subcarpetas de
+  // club adentro, una de CLUB tiene los documentos sueltos.
+  for (const pais of paises) {
+    const docs = fs.readdirSync(path.join(CLUBES_DIR, pais), { withFileTypes: true })
+      .filter(d => d.isFile() && /\.(md|pdf)$/i.test(d.name))
+      .map(d => d.name).sort();
+    if (!docs.length) continue;
+    add('P2', 'carpeta-sin-pais', `Clubes/${pais}/ tiene ${docs.length} documento(s) sueltos (${docs.slice(0, 3).join(', ')}${docs.length > 3 ? ', ...' : ''}) en vez de subcarpetas de club. Si es un club, le falta la carpeta de país en el medio: la convención es Clubes/<País>/<Club>/, nunca una carpeta de club al nivel de arriba (ver CLAUDE.md)`);
+  }
+}
+
 // --- D13: qué de las fuentes se le muestra al visitante (Versión 127) -------
 // `sources[].note` es una nota INTERNA: una sesión se la escribe a la siguiente, con
 // rutas del repo, cómo se leyó el PDF y qué quedó pendiente. En la Versión 126 se
@@ -815,6 +879,7 @@ function main() {
   checkFxProcedencia(api);
   checkFuentesPublicas(api);
   checkClubIds(api);
+  checkCarpetasClubes();
   checkLigasPorEjercicio(api);
   checkCategorizacion(api);
   checkEscala(api);

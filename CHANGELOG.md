@@ -1674,7 +1674,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   sesión lo hizo el mismo día sin que las dos se vieran. Se renumeró esta entrada a 159 para no
   chocar, y el to-do 22(g) se marcó resuelto apuntando al commit de `main`.
 
-## Versión 160 — `auditAll()` carga los clubes en tandas paralelas (punto 5 del plan de escala)
+## Versión 160: `auditAll()` carga los clubes en tandas paralelas (punto 5 del plan de escala)
 
 - `auditAll()` (`index.html`) pasa de un `for` con `await` adentro (41 requests en fila) a tandas
   de 25 con `Promise.allSettled`. Es el primer punto ejecutado de `PLAN-REMEDIACION-ESCALA.md`
@@ -1692,3 +1692,23 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `escala-finance-of-sports` queda marcado como resuelto, con la propiedad que hay que preservar
   si alguien lo vuelve a tocar (ningún `data/<club>-data.js` loguea, y las verificaciones corren
   después de la carga, no intercaladas).
+
+## Versión 161: chequeo de carpetas duplicadas en `Clubes/` (punto 8 del plan de escala)
+
+- `checkCarpetasClubes()` nueva en `tools/audit.js`: recorre `Clubes/<País>/` y reporta P2 cuando
+  dos carpetas del mismo país normalizan al mismo nombre (sin acentos, minúsculas, sin
+  separadores), o sea un club transcripto dos veces con dos grafías y sus documentos partidos
+  entre las dos. Segundo hallazgo del mismo pase: una carpeta de club colgando directo de
+  `Clubes/` sin país en el medio, que `CLAUDE.md` prohíbe y que no vigilaba nadie.
+- CORRECCIÓN AL PLANTEO DEL PUNTO, que pedía "el equivalente de `checkClubIds()` para carpetas":
+  la colisión exacta NO es detectable por construcción. Un filesystem no admite dos carpetas con
+  el mismo nombre en el mismo directorio, así que el segundo club cae adentro de la carpeta del
+  primero sin dejar rastro. Contra eso sigue valiendo solo la REGLA 3 de `fuentes-por-club.md`,
+  aplicada a mano. Lo escrito quedó en el comentario de la función, en esa regla y en la sección E
+  del skill de escala.
+- Alcance: el disco entero (336 carpetas) y no solo `clubs{}` (41), porque la duplicación nace al
+  sourcear, antes de que el club llegue al sitio. Si `Clubes/` no existe, el chequeo se sale
+  callado en vez de reportar que no pudo correr.
+- Línea de base: 0 hallazgos hoy. Se ejercitó a propósito con dos carpetas temporales para
+  confirmar que los dos avisos salen de verdad, y se corrió una copia del repo sin `Clubes/` para
+  confirmar que no rompe: 0 P0, 0 P1, 44 P2, 8 P3 en los tres casos.
