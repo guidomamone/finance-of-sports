@@ -5756,3 +5756,97 @@ sin querer a sí misma: dos sesiones concurrentes son, ellas mismas, un caso má
 bien con una sola persona/agente trabajando y se rompe con más de uno en simultáneo", la misma
 familia de problema que el hallazgo 0 de la conversación con Guido (los dos agentes de sourcing
 pisándose en el archivo único, la semana anterior a este mismo trabajo).
+
+---
+
+# Versiones 160-165: ejecutar el plan de remediación de escala, y tres números que estaban mal
+
+**La sesión del 2026-09-20 (segunda del día) ejecutó `PLAN-REMEDIACION-ESCALA.md` completo**: los 8
+puntos que la auditoría de escala de la Versión 159 había dejado abiertos. Siete se hicieron y uno
+se descartó con mediciones. El detalle de qué hizo cada uno está en `CHANGELOG.md` (160 a 165) y en
+las "Notas de ejecución" de cada punto del propio plan. Acá va lo que no entra en un changelog: lo
+que se aprendió, que en buena medida fue que varias premisas del plan estaban mal.
+
+## El plan proponía partir archivos; el problema casi siempre era otro
+
+**Punto 9 (`club-leagues.js`).** El plan pedía partirlo por país o por liga para poder cargarlo
+lazy. Partirlo por país resultó correcto para el MANTENIMIENTO (el repaso anual de ascensos y
+descensos pasa a ser el de un país), pero no compraba nada de lazy-load: `ligasConClubes()` recorre
+TODAS las ligas y para cada una pregunta quiénes la integran, así que un cargador "por país elegido"
+habría bajado los mismos archivos igual. Lo que sirvió fue una pregunta distinta: **quién usa esta
+tabla, y cuándo**. La respuesta, medida, fue "solo `js/selector.js`, en 4 llamadas, y recién cuando
+se abre el modal". O sea que alcanzó con mover la carga entera detrás de UNA frontera async en
+`abrirModal()`, dejando los 6 helpers síncronos. Volverlos async habría obligado a volver async cada
+función de render del modal.
+
+**Punto 8 (colisión de carpetas).** El plan lo planteaba como "el equivalente de `checkClubIds()`
+para las carpetas de `Clubes/`". No es implementable: un filesystem no admite dos carpetas con el
+mismo nombre en el mismo directorio, así que el segundo club cae adentro de la carpeta del primero
+sin dejar rastro. Lo que sí se puede detectar, y es el error más probable de los dos, es la
+casi-colisión: dos carpetas del mismo país que normalizan al mismo nombre, o sea un club transcripto
+dos veces con dos grafías y sus documentos partidos al medio.
+
+**Punto 7 (colisión de `clubId` al sourcear).** Medir primero cambió el diseño. Sobre los 530 clubes
+trackeados, la comparación exacta de nombres da 3 pares entre países; por primera palabra da 119
+clubes de puro "Deportivo", "Atlético" y "FC". La pregunta del prompt era si hacía falta una lista de
+excepciones para los nombres genéricos, y la respuesta fue que el ruido se evita no haciendo matching
+difuso, no manteniendo una lista. Y el conjunto que de verdad importa (un club trackeado que volvería
+ambiguo uno de los 41 ids heredados) es 0, no 3.
+
+## El error propio: proyectar sobre bytes crudos
+
+El punto 3 pedía adelgazar el payload eager sacando `reportingCurrency`/`fiscalYearStart` de
+`clubs.js`. La sesión midió, encontró que el término dominante estaba en otro lado (el campo `yrs` de
+`club-index.js`, que crece por ejercicio) y propuso acortar los `reportType` a códigos de una letra
+como "el ahorro grande": 157 KB a 66 KB proyectados.
+
+**Estaba mal, y el propio repo ya lo decía.** El comentario de `tools/generate-club-index.js`
+argumentaba desde hacía versiones que esos strings se guardan completos a propósito, "son 7 strings
+que se repiten miles de veces, o sea justo lo que gzip aplasta a casi nada, y un código propio
+costaría una tabla de traducción y un archivo ilegible para ahorrar bytes que el transporte ya
+ahorra". Medido en el cable: acortarlos ahorra **60 bytes**. Y sacar los dos campos de `clubs.js`
+ahorra **3,0 KB a 1000 clubes**, no 49. El punto 3 se descartó por eso: cuesta un refactor de riesgo
+MEDIO-ALTO que toca el selector para todos los visitantes, y paga 3 KB.
+
+La misma sesión también declaró "falso" un número que no lo era: los "~38 KB" de payload eager que
+citaban `ESTADO.md`, el to-do 22(d) y el skill de escala. Son la suma de los TRES archivos que
+escalan, que es exactamente lo que el skill dice. Hay tres números distintos (37,3 KB los tres que
+escalan, 79,7 KB los 8 archivos eager sin comprimir, 29,3 KB como viajan) y la sesión mezcló dos, y
+propagó la "corrección" a cuatro documentos antes de darse cuenta. Quedaron dos reglas escritas en
+`.claude/skills/escala-finance-of-sports/SKILL.md`: **proyectá sobre el comprimido**, y **leé los
+comentarios del archivo que vas a cambiar antes de proponer lo contrario de lo que dicen**.
+
+## Dos bugs reales, los dos del mismo tipo
+
+**`I18N.load()` armaba el path del diccionario relativo al documento** (punto 2). Las páginas de
+fuentes por club son las primeras del proyecto que no viven en la raíz, así que pedían
+`fuentes/data/lang/en.js`, se comían un 404 y se quedaban en castellano con el sitio en inglés. No se
+veía rota: el `onerror` degrada a castellano a propósito, así que se veía en el idioma equivocado.
+Se agregó `window.I18N_BASE`.
+
+**El cargador de `club-leagues` leía `window.clubs`, que es `undefined`** (punto 9), porque
+`data/clubs.js` declara `const clubs`, o sea un global léxico que no es propiedad de `window`. La
+lista de países salía vacía y no se pedía ni un archivo, en silencio, con el modal abriendo igual
+pero sin ligas. Es exactamente el bug de la Versión 96, con otro identificador y cinco años de
+comentarios de por medio explicándolo.
+
+Los dos comparten forma: **un camino que falla en silencio porque el código ya tenía una degradación
+elegante puesta para otra cosa.** La moraleja operativa de la sesión fue verificar el estado real
+(¿se bajó el archivo?, ¿está la clave en el diccionario?) en vez de mirar si la pantalla "se ve bien".
+
+## Un chequeo nuevo que da cero no prueba nada
+
+Los puntos 7 y 8 agregan chequeos preventivos a `tools/audit.js`, y los dos nacen reportando cero,
+que es lo correcto. Pero "corrí el audit y sigue igual" es compatible con haber escrito una función
+que no detecta nada. Los dos se ejercitaron a mano creando el caso que tienen que encontrar (carpetas
+temporales con `trap` para borrarlas, un club de prueba en un índice de sourcing) y confirmando que
+el aviso sale con el texto correcto. Lo mismo valió para el camino de error de `auditAll()` en el
+punto 5, que ninguna corrida normal ejercita porque los 41 clubes cargan bien.
+
+## Lo que quedó abierto
+
+Tres cosas que aparecieron ejecutando el plan y no eran parte de él: las 613 notas internas de
+sourcing de `fuentes/` están publicadas en el dominio y 37 mencionan a Guido por nombre (to-do 37);
+la grilla de "elegir clubes" del constructor de mezcla necesita su propio buscador, que es una
+feature y no una optimización (to-do 38); y el punto 3 podría reabrirse si alguna vez aparece un
+campo eager que no comprima bien, o sea que varíe de verdad club por club.

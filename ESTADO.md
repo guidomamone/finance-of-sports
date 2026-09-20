@@ -201,7 +201,14 @@ se reescribe, no se acumula.
   busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con el botón de club
   del header, desde Inicio o desde el card de Finanzas. Vive en `js/selector.js`
   y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
-  `club-leagues.js`, sin bajar ningún archivo de club.
+  `club-leagues/<iso2>.js`, sin bajar ningún archivo de club. Esos últimos NO son
+  eager desde la Versión 164: se bajan al abrir el modal, que es el único lugar
+  que los usa, detrás de una sola frontera async en `abrirModal()`.
+  DESDE LA VERSIÓN 165 el buscador tiene debounce de 160 ms (en el listener, no
+  en `renderBusqueda()`, que también se llama a sí misma y tiene que correr en el
+  acto), tope de 30 resultados con "Mostrar más" y el conteo real, y una caché del
+  texto buscable de cada club. La grilla de "elegir clubes" del constructor de
+  mezcla lleva el mismo tope, con los ya marcados siempre primero.
 - LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
   Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre
   el selector y aterriza en Finanzas) o "quiero comparar dos clubes o ligas" (va
