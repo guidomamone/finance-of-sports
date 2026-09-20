@@ -82,7 +82,7 @@ OBLIGATORIO, no opcional:
 - `escala-finance-of-sports`: **si la tarea es un chequeo de escala/capacidad** (qué se rompe
   cuando el proyecto pasa de 50 a 200-3000 clubes cargados) — pedido explícito de Guido antes de
   un cambio grande, o como contenido del eje `escala` al correr `auditoria-finance-of-sports`
-  (Versión 158). Distinto de una auditoría de datos: no mira si un número está bien, mira si el
+  (Versión 159). Distinto de una auditoría de datos: no mira si un número está bien, mira si el
   archivo/estructura que lo guarda o lo muestra va a aguantar el volumen.
 
 CÓMO LLEGAR A ELLOS. Esto depende de dónde se abrió la sesión, y lo que decía acá

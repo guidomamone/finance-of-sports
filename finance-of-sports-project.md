@@ -5700,7 +5700,7 @@ toda borradura por rango lleva un tope de bytes esperado y falla si se pasa, y e
 script escribe después de cada paso y no todo al final, para que un ancla rota no
 tire abajo el trabajo que ya había salido bien.
 
-## Versión 158 — Generalizar la lección de `fuentes-por-club.md`: una skill para "qué se rompe con volumen"
+## Versión 159 — Generalizar la lección de `fuentes-por-club.md`: una skill para "qué se rompe con volumen"
 
 Guido pidió algo puntual: auditar escala, no datos, y esta vez con un objetivo explícito — 1000 a
 3000 clubes, ~5 ejercicios cada uno — en vez de "cientos" en abstracto. Y pidió generalizar un
@@ -5743,3 +5743,16 @@ de la skill genérica la volvería, con el tiempo, un archivo sobre un eje disfr
 cinco. La propia skill de auditoría ya tenía la regla escrita para este caso ("si el archivo crece
 tanto que no se lee en dos minutos, andá a otro lado"); solo hacía falta aplicársela a sí misma antes
 de que el eje `escala` la desbordara.
+
+**Posdata, al reconciliar con `main` tres días después:** el hallazgo 1 de este mismo trabajo —
+partir `fuentes-por-club.md` — se resolvió en paralelo en otra sesión, en `main`, el 2026-09-20, sin
+que ninguna de las dos supiera de la otra. Las dos sesiones eligieron el mismo número de versión
+(158) para cambios distintos, lo cual es exactamente el tipo de colisión que YA estaba documentado
+como riesgo (`CLAUDE.md`, el párrafo sobre abrir una sesión en el repo equivocado) pero un escalón
+más sutil: acá el repo era el correcto, el problema fue trabajar la MISMA rama lógica (`main`) desde
+dos worktrees sin que cada sesión supiera de la otra. La recomendación que Guido pidió por chat
+después de esto —generalizar la lección de un archivo que se rompe con volumen— terminó aplicándose
+sin querer a sí misma: dos sesiones concurrentes son, ellas mismas, un caso más de "algo que funciona
+bien con una sola persona/agente trabajando y se rompe con más de uno en simultáneo", la misma
+familia de problema que el hallazgo 0 de la conversación con Guido (los dos agentes de sourcing
+pisándose en el archivo único, la semana anterior a este mismo trabajo).

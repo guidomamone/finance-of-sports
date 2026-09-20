@@ -265,7 +265,7 @@ perdieron sino que se descartaron:
     hallazgo "Unión 2024 usa 890,50 cuando la tabla dice 909" era real pero mal diagnosticado: un
     Anexo de moneda extranjera valúa activos al comprador y pasivos al vendedor, así que 890,50 y
     909 son los dos lados del spread del mismo día y los dos están bien.
-22. MAPA DE ESCALA (Versión 128, ampliado en la 158 — ver `.claude/skills/escala-finance-of-sports/`
+22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
     de esta corrida). (a), (b) y (e) resueltos, se borran de acá. Siguen abiertos, en el orden en
     que aparecen:
@@ -274,7 +274,7 @@ perdieron sino que se descartaron:
         índice — mismo generador (`tools/generate-fuentes-page.js`) con un loop más.
     (d) `clubs.js` sigue sin adelgazar del todo: `club-index.js` (Versión 129) ya resolvió la mitad
         que necesitaba el selector, pero `reportingCurrency`/`fiscalYearStart` siguen solo en
-        `clubs.js` (eager). AMPLIADO (Versión 158): el problema real no es solo `clubs.js`, es que
+        `clubs.js` (eager). AMPLIADO (Versión 159): el problema real no es solo `clubs.js`, es que
         `index.html` carga eager 8 archivos de `data/`, y el que más crece no es `clubs.js` sino
         `club-leagues.js` (crece por EJERCICIO, no por club: ~803 KB proyectado a 5000 ejercicios,
         contra ~395 KB de `clubs.js` a 1000 clubes). Sumados, el payload eager pasa de ~38 KB hoy a
@@ -284,15 +284,14 @@ perdieron sino que se descartaron:
         en `index.html:1850`): 114 ms con 41, ~30 s proyectado a 1000 con latencia real, y es lo que
         hay que correr antes de cada push de datos. Segunda auditoría seguida que lo encuentra sin
         resolver. Tandas paralelas con `Promise.all`.
-    (g) NUEVO (Versión 158): `fuentes-por-club.md`, el ÍNDICE de sourcing (no el contenido por
-        club, que ya se partió), ya cruzó el umbral de partición que se le fijó a `fuentes.html`
-        (~300): hoy son 468 líneas-club en 39 países, 80 KB. Mismo patrón que ya funcionó una vez:
-        partir en `fuentes/_indice/<País>.md` + un índice de países en `fuentes-por-club.md`.
-    (h) NUEVO (Versión 158): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
+    (g) RESUELTO (Versión 158 de `main`, sesión en paralelo del 2026-09-20, commit `a211594`):
+        `fuentes-por-club.md` se partió en índice de PAÍSES + `fuentes/_indice/<País>.md` (una
+        línea por club), exactamente el split que este punto pedía. Se borra.
+    (h) NUEVO (Versión 159): el buscador del selector (`js/selector.js:1982`, `renderBusqueda`) no
         tiene debounce ni límite de resultados — filtra y reconstruye el DOM completo en cada
         tecla. Invisible a 41 clubes, jank probable a 1000-3000. Debounce ~150-200ms + top-N con
         "mostrar más".
-    (i) NUEVO (Versión 158): `data/club-leagues.js` (241 líneas hoy) es un archivo único con una
+    (i) NUEVO (Versión 159): `data/club-leagues.js` (241 líneas hoy) es un archivo único con una
         sección por club, mantenido a mano "una vez por temporada" según su propio comentario —
         mismo patrón que tenía `fuentes-por-club.md` antes de partirse, un escalón más adelante.
         No urgente todavía; decidir el split (por país o liga) antes de que deje de ser viable

@@ -1623,7 +1623,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - (Ver también CLAUDE.md, gotcha nuevo sobre `pdfinfo | grep` y bytes NUL en metadata, encontrado
   en el mismo tramo con los PDF de clubes chinos.)
 
-## Versión 158 — Auditoría de escala (eje `escala`, pedido explícito de Guido) y skill nueva
+## Versión 159 — Auditoría de escala (eje `escala`, pedido explícito de Guido) y skill nueva
 
 - Re-corrida completa del mapa de escala de la Versión 128 (`auditorias/2026-09-13-escala.md`)
   contra el estado actual: 3 cuellos resueltos (`clubId` sin país, comentario de `index.html`,
@@ -1640,3 +1640,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   procedimiento genérico de los 5 ejes) porque el mapa es grande y cambia con cada sesión de
   sourcing/onboarding. `CLAUDE.md` y el eje `escala` de `auditoria-finance-of-sports` apuntan a
   ella.
+- NOTA (agregada al reconciliar con `main`): el hallazgo 1 de este trabajo (partir
+  `fuentes-por-club.md`) se resolvió en paralelo, en `main`, con la misma Versión 158 — otra
+  sesión lo hizo el mismo día sin que las dos se vieran. Se renumeró esta entrada a 159 para no
+  chocar, y el to-do 22(g) se marcó resuelto apuntando al commit de `main`.
