@@ -872,7 +872,14 @@ const velezFiscalYearMeta = {
   // Ejercicio 2015 (N°105): único cargado vía OCR de un PDF de baja resolución — ver comentario en
   // velezExpenseLinesByYear.2015 y en la cabecera del archivo para la metodología de verificación.
   2015: {
-    currency:'ARS', fx:8.988, fxSource:'unknown',
+    // fx VERIFICADO (to-do 21a, 2026-09-20): lo declara el Anexo VI del propio balance
+    // ("Activos y pasivos en moneda extranjera"), 8,9880 en la columna "cambio vigente" de las
+    // líneas en US$. La Nota 2.a) dice explícitamente que se usa el tipo comprador para activos y
+    // el vendedor para pasivos, así que 8,9880 es el comprador: mismo criterio que los otros 9
+    // ejercicios de Vélez y que el resto de los clubes.
+    // La to-do 21(a) daba esto por imposible ("la transcripción de esos 2 escaneos no preservó la
+    // columna de cambio vigente"). Era cierto cuando se escribió; ya no lo es.
+    currency:'ARS', fx:8.988, fxSource:'document_close',
     sourceId:'velez-balance-2014-15',
     reportType:'official_balance_sheet',
     gestionId:'gamez',
@@ -894,7 +901,9 @@ const velezFiscalYearMeta = {
   // velezExpenseLinesByYear.2017).
   // Ejercicio 2016 (N°106): también vía OCR, sin ruido detectado (todas las sumas cerraron exacto).
   2016: {
-    currency:'ARS', fx:14.94, fxSource:'unknown',
+    // fx VERIFICADO (to-do 21a, 2026-09-20): Anexo VI del propio balance, 14,94 en la columna
+    // "cambio vigente". Comprador, ver 2015.
+    currency:'ARS', fx:14.94, fxSource:'document_close',
     sourceId:'velez-balance-2015-16',
     reportType:'official_balance_sheet',
     gestionId:'gamez',

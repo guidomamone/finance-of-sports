@@ -259,25 +259,22 @@ perdieron sino que se descartaron:
         hay que chequear antes si su balance trae la nota de costos por naturaleza, que sería mejor
         que el bolsón. NINGUNO de los dos cambios mueve un número: cambian bajo qué fila se muestra.
 
-21. TIPOS DE CAMBIO SIN PROCEDENCIA VERIFICADA. Los 2 que quedan salen listados por
-    `node tools/audit.js`, no hace falta buscarlos a mano:
-    (a) 5 ejercicios con `fxSource:'unknown'`: San Lorenzo 2015/2016/2017 y Vélez 2015/2016. Los de
-        Vélez no se pudieron confirmar porque la transcripción de esos 2 escaneos no preservó la
-        columna de cambio vigente (los otros 9 años de Vélez SÍ se verificaron uno por uno contra su
-        Anexo VI). Los de San Lorenzo, porque sus PDFs 2014-15, 2015-16 y 2016-17 nunca se
-        transcribieron a `.md`, contra la regla del proyecto: transcribirlos es el paso que además
-        resuelve esto. OJO: San Lorenzo y Vélez tienen EXACTAMENTE los mismos valores en 2015
-        (8,988) y 2016 (14,94), así que puede haber una copia entre clubes detrás.
-    (b) 5 cotizaciones de mercado escritas en el archivo de Argentinos Juniors en vez de `FX_CLOSE`.
-        Mientras las use un solo club no duplican nada; se mueven a la tabla al confirmar la fecha
-        exacta de cierre de cada una. ANTES DE MOVERLAS hay que confirmar que de verdad sean de
-        mercado y no del propio documento: los 4 de Unión estaban marcados así y resultaron salir de
-        su Anexo V (ver Versión 140), o sea que el rótulo estaba mal, no el número.
-    RESUELTO (Versión 140): Unión. Sus 4 tipos de cambio estaban etiquetados `market_close` y los 4
-    salen del Anexo V de su propio balance, lado Activo/Créditos. Pasaron a `document_close`. El
-    hallazgo "Unión 2024 usa 890,50 cuando la tabla dice 909" era real pero mal diagnosticado: un
-    Anexo de moneda extranjera valúa activos al comprador y pasivos al vendedor, así que 890,50 y
-    909 son los dos lados del spread del mismo día y los dos están bien.
+21. TIPOS DE CAMBIO SIN PROCEDENCIA VERIFICADA. Queda UNO, y `node tools/audit.js` lo lista:
+    (b) 5 cotizaciones de mercado escritas en el archivo de Argentinos Juniors en vez de `FX_CLOSE`
+        (2015, 2016, 2017, 2018, 2019). Mientras las use un solo club no duplican nada; se mueven a
+        la tabla al confirmar la fecha exacta de cierre de cada una. ANTES DE MOVERLAS hay que
+        confirmar que de verdad sean de mercado y no del propio documento: los 4 de Unión estaban
+        marcados así y resultaron salir de su Anexo V (ver Versión 140), o sea que el rótulo estaba
+        mal, no el número.
+    RESUELTO (a) en la Versión 169: los 5 ejercicios con `fxSource:'unknown'` (San Lorenzo
+    2015/2016/2017, Vélez 2015/2016) resultaron los 5 `document_close`, verificados uno por uno
+    contra el Anexo de moneda extranjera de su propio balance. **La to-do daba los 5 por
+    bloqueados y los 2 motivos ya no eran ciertos**: decía que los PDFs de San Lorenzo "nunca se
+    transcribieron" (están transcriptos desde el 2026-09-17) y que la transcripción de Vélez "no
+    preservó la columna de cambio vigente" (su Anexo VI la tiene). La sospecha de una copia entre
+    clubes también quedó descartada: los dos cierran el 30 de junio, así que les toca la misma
+    cotización oficial y coincidir es lo esperado.
+
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
     de esta corrida). (a), (b), (c), (e), (f), (g), (h) e (i) resueltos y (d) descartado, se borran

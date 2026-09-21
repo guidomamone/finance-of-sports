@@ -420,7 +420,11 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:98.234570, officialTotalExpenses:124.426832, officialPAT:-45.744341,
   },
   2017: {
-    currency:'ARS', fx:16.53, fxSource:'unknown', sourceId:'sanlorenzo-memoria-y-balance-2016-17',
+    // fx VERIFICADO (to-do 21a, 2026-09-20): lo declara el Anexo II del propio balance,
+    // "Activos y pasivos en moneda extranjera", 16,5300 del lado Activo (hoja 1). La hoja 2
+    // (Pasivo) dice 16,6300: son los dos lados del spread del mismo día, mismo caso que Unión
+    // (Versión 140). Se usa el comprador, igual que en el resto de los clubes.
+    currency:'ARS', fx:16.53, fxSource:'document_close', sourceId:'sanlorenzo-memoria-y-balance-2016-17',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:795.167813, cash:4.426903,
     profitOnPlayerSales:0, assetSales:0, netInterest:30.027161, tax:0,
@@ -430,7 +434,9 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:775.354479, officialTotalExpenses:804.945023, officialPAT:0.436617,
   },
   2016: {
-    currency:'ARS', fx:14.94, fxSource:'unknown', sourceId:'sanlorenzo-memoria-y-balance-2015-16',
+    // fx VERIFICADO (to-do 21a, 2026-09-20): Anexo III del propio balance, 14,9400 del lado
+    // Activo (Créditos US$) contra 15,0400 del lado Pasivo. Comprador, ver 2017.
+    currency:'ARS', fx:14.94, fxSource:'document_close', sourceId:'sanlorenzo-memoria-y-balance-2015-16',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:295.282497, cash:0.516489,
     // Resultados financieros y por tenencia dio POSITIVO este ejercicio ($93.428.003) — no es un
@@ -441,7 +447,13 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:442.764613, officialTotalExpenses:502.814732, officialPAT:33.377884,
   },
   2015: {
-    currency:'ARS', fx:8.9880, fxSource:'unknown', sourceId:'sanlorenzo-memoria-y-balance-2014-15',
+    // fx VERIFICADO (to-do 21a, 2026-09-20): Anexo III del propio balance, 8,9880 del lado
+    // Activo (Caja y bancos / Créditos US$) contra 9,0880 del lado Pasivo. Comprador, ver 2017.
+    // OJO, la sospecha que dejó la to-do 21(a) de que pudiera haber una copia desde Vélez (que
+    // tiene el MISMO 8,988 en 2015 y el mismo 14,94 en 2016) queda descartada: los dos clubes
+    // cierran el 30 de junio, así que les corresponde la misma cotización oficial de cierre.
+    // Coincidir es lo esperado, no la señal de una copia.
+    currency:'ARS', fx:8.9880, fxSource:'document_close', sourceId:'sanlorenzo-memoria-y-balance-2014-15',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:155.775046, cash:0.304329,
     profitOnPlayerSales:0, assetSales:0, netInterest:-33.122045, tax:0,

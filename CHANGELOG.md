@@ -1887,3 +1887,22 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   Versión 167. El bug volvió tres veces (140, 152, 167) porque la regla decía QUÉ mostrar y no DÓNDE
   vive el test: ahora dice que va en una función compartida (`informaDeuda()`, `deudaNoDesglosada()`)
   y nunca en línea adentro de un render.
+
+## Versión 169: los 5 tipos de cambio sin procedencia resultaron los 5 declarados por su propio balance
+
+- **To-do 21(a) cerrado.** San Lorenzo 2015/2016/2017 y Vélez 2015/2016 pasan de
+  `fxSource:'unknown'` a `'document_close'`, verificados uno por uno contra el Anexo de moneda
+  extranjera de su propio balance: San Lorenzo 8,9880 / 14,9400 / 16,5300 (Anexo III y II, lado
+  Activo) y Vélez 8,9880 / 14,94 (Anexo VI). En los dos clubes el lado Pasivo declara el vendedor
+  (9,0880 / 15,0400 / 16,6300), que es el mismo spread ya documentado con Unión en la Versión 140.
+- **Los 2 motivos por los que la to-do daba esto por bloqueado ya no eran ciertos**: los PDFs de San
+  Lorenzo sí están transcriptos (desde el 2026-09-17) y la transcripción de Vélez sí conserva la
+  columna de cambio vigente. Queda anotado en la to-do para que no se repita el diagnóstico viejo.
+- Descartada la sospecha de una copia de fx entre San Lorenzo y Vélez: los dos cierran el 30 de
+  junio, así que la misma cotización oficial es lo esperado.
+- Ningún número se movió: `fx` no cambió, solo su procedencia declarada. `auditAll()` sigue en 41
+  clubes / 222 checks / 0 no cierran / 0 warnings.
+- `node tools/audit.js` baja de 44 P2 / 9 P3 a **39 P2 / 8 P3**: desaparecen el grupo
+  `fx-sin-procedencia` (5) y el P3 `fx-procedencia-pendiente`.
+- `ASSET_V` a 169, `fuentes.html` + sus 41 páginas + `sitemap.xml` regenerados (la ficha de fuente
+  de esos 5 ejercicios ahora declara de dónde sale su tipo de cambio).
