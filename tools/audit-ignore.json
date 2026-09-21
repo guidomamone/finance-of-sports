@@ -4,5 +4,35 @@
     "code": "_ejemplo_no_activo",
     "match": "_ejemplo_no_activo",
     "motivo": "Entrada de ejemplo, no silencia nada. Copiala para agregar una real."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "racing 2009 ingreso \"Desafectación de previsiones y provisiones (extraordinario)\"",
+    "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo 'Otras secciones deportivas y otros ingresos'. El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "racing 2009 ingreso \"Condonaciones (extraordinario)\"",
+    "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo 'Otras secciones deportivas y otros ingresos'. El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "racing 2010 ingreso \"Desafectación de previsiones (extraordinario)\"",
+    "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo 'Otras secciones deportivas y otros ingresos'. El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "racing 2012 ingreso \"Desafectación de Previsiones y Provisiones (extraordinario)\"",
+    "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo 'Otras secciones deportivas y otros ingresos'. El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "racing 2014 ingreso \"Desafectación de Previsiones y Provisiones (extraordinario)\"",
+    "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo 'Otras secciones deportivas y otros ingresos'. El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
+  },
+  {
+    "code": "balance-sin-pat",
+    "match": "clubamerica 2025",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/clubamerica-data.js."
   }
 ]

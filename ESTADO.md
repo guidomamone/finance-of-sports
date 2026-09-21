@@ -144,15 +144,15 @@ se reescribe, no se acumula.
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 222 checks, 0
+  cada `fx` caiga en un rango plausible para su moneda. Hoy son 228 checks, 0
   mismatches, 0 warnings.
   COMPLEMENTO, DESDE LA VERSIÓN 122: `node tools/audit.js` audita en Node lo que un
   total correcto NO delata (ejercicios que no tienen ningún total contra qué
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
   ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 44 P2,
-  9 P3 (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 20 P2, 8 P3 y 6
+  silenciados con su motivo en `tools/audit-ignore.json` (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
   tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones

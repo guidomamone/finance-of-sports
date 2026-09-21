@@ -89,6 +89,17 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   ya computado), los dos en `js/finanzas-render.js`. Una vista nueva que muestre deuda llama a uno
   de esos dos; si necesita un test que todavía no existe, se escribe como función aparte y la usan
   todas, nunca en línea.
+- INGRESO EXTRAORDINARIO: SE QUEDA EN `exceptional_items` (decisión de Guido, 2026-09-20, to-do
+  20(d) cerrado). Las 5 líneas de ingreso extraordinario de Racing (2009, 2010, 2012, 2014:
+  desafectaciones de previsiones y condonaciones) usan `exceptional_items`, que es una categoría de
+  la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario
+  con fila propia en Formato simplificado, que eran 4 ediciones chicas y no movía ningún número— y
+  Guido decidió dejarlo como está.
+  LO QUE HAY QUE SABER ANTES DE "ARREGLARLO": la consecuencia está aceptada, no pasada por alto. En
+  Formato simplificado esas líneas caen bajo "Otras secciones deportivas y otros ingresos"; el total
+  del ejercicio cierra igual (el motor suma por monto, no por bucket) y Formato del club las muestra
+  con su `rawLabel` textual, que dice "(extraordinario)". Los 5 hallazgos están silenciados en
+  `tools/audit-ignore.json` con este motivo escrito. **No recategorizar sin volver a preguntarle.**
 - NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde

@@ -208,8 +208,17 @@ function checkTieOuts(api) {
     if (ym.officialTotalExpenses != null) cmp('Expenses', Math.abs(c.expenses + c.nonCash), Math.abs(ym.officialTotalExpenses));
     if (ym.officialPAT != null) cmp('PAT', c.pat, ym.officialPAT);
 
-    if (REPORT_TYPES_BALANCE.includes(ym.reportType) && ym.officialPAT == null) {
-      add('P2', 'balance-sin-pat', `${ref(clubId, year)}: es un balance real pero no declara officialPAT, el resultado del ejercicio no se verifica`);
+    // OJO CON LA CONDICIÓN, Y POR QUÉ NO ALCANZA CON "es un balance y no tiene PAT" (to-do 20(a),
+    // 2026-09-20). Este chequeo tiraba 11 hallazgos y 10 eran de la misma clase y no eran
+    // accionables: los 10 clubes de la J.League publican el INGRESO de cada club y no su
+    // estructura de costos, así que tienen `officialTotalExpenses: null`. Un ejercicio del que no
+    // se publican los gastos NO PUEDE tener un resultado que cargar — pedirle el PAT es pedirle un
+    // número que no existe en ninguna fuente, y el hallazgo iba a reaparecer en cada corrida para
+    // siempre, creciendo con cada club japonés nuevo. Ahora solo se reporta cuando el documento SÍ
+    // publica ingresos y gastos: ahí el resultado existe, y que falte es un hueco de carga real.
+    if (REPORT_TYPES_BALANCE.includes(ym.reportType) && ym.officialPAT == null &&
+        ym.officialTotalRevenue != null && ym.officialTotalExpenses != null) {
+      add('P2', 'balance-sin-pat', `${ref(clubId, year)}: declara ingresos y gastos oficiales pero no officialPAT, el resultado del ejercicio no se verifica`);
     }
   }
   add('P3', 'cobertura', `Cobertura: ${conCheck} ejercicios con al menos un total oficial, ${sinCheck} sin ninguno`);

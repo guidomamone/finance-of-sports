@@ -933,6 +933,38 @@ responder, no de memoria):
   que impuestos y moratoria van ahí en la mayoría de los precedentes, y es la única opción posible
   dado que el documento no discrimina cargas sociales de fútbol vs. resto en esta fila combinada).
 
+## 18. Una fuente que publica INGRESOS y no gastos: qué se carga, qué queda en `null`, y qué NO se inventa
+
+Aparece cada vez que la fuente no es el club sino su liga o su controladora, y ya pasó con dos
+formas distintas. Es un caso de mapeo, no un hueco de carga: **un `null` acá es el dato correcto.**
+
+**Caso A — la liga publica un renglón por club (los 10 de la J.League).** El informe de gestión de
+la J.League da el INGRESO de cada club y 3 líneas de desglose, y su estructura de costos solo
+existe a nivel división. Entonces: `officialTotalRevenue` con el número, y
+`officialTotalExpenses: null` + `officialPAT: null`. **Sin gastos publicados no hay resultado que
+cargar**, y pedirle el PAT a estos ejercicios es pedir un número que no existe en ninguna fuente.
+Ya se re-verificó con 3 fuentes independientes que el desglose por club no está publicado en ningún
+lado (`fuentes/Japón/_notas-generales.md`); lo que queda son 2 preguntas abiertas en
+`dudas-por-club.md`, una a la liga y otra a los clubes, no trabajo de mapeo.
+
+**Caso B — la controladora reporta un SEGMENTO, no el club (Club América dentro de Ollamani).** Un
+segmento IFRS 8 informa "utilidad del segmento", que **no es el resultado neto**: no le imputa
+costos financieros ni impuestos, y además puede agrupar al club con otro negocio (acá, el Estadio
+Banorte). Entonces: los totales que SON una identidad aritmética del segmento se cargan
+(`officialTotalRevenue`, `officialTotalExpenses`), y `officialPAT` queda en `null`. Cargar la
+utilidad del segmento como PAT publicaría un "Resultado neto" que ningún documento afirma.
+
+**Consecuencia en la vista, que es la parte que se olvida:** un ejercicio así muestra "Sin dato" en
+Gastos y en Resultado neto, no `$0` — ver la regla "SIN DATO NO ES CERO" en `CONVENCIONES.md`. La
+cascada arranca en los gastos y se lleva el resultado con ella.
+
+**Y en la auditoría:** `tools/audit.js` ya no reporta `balance-sin-pat` cuando
+`officialTotalExpenses` es `null`, justamente porque ese caso no es accionable (se arregló el
+2026-09-20, to-do 20(a): el chequeo tiraba 11 hallazgos y 10 eran este caso). Si cargás un club de
+una liga que publica solo ingresos, no hace falta silenciar nada: el script ya lo entiende.
+
+---
+
 ## Cómo mantener este skill
 
 Este skill se lee UNA VEZ al empezar a mapear un balance/presupuesto nuevo, y se ACTUALIZA al

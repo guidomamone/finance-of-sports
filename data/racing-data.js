@@ -1008,6 +1008,28 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null, // pre-Blanco (asumió 2013), presidencia no verificada — ver comentario arriba
     grossDebt:18.393, cash:1.993, profitOnPlayerSales:0, assetSales:0, netInterest:-0.042, tax:0,
+    // TOTALES OFICIALES CARGADOS EL 2026-09-20 (to-do 20(e)). Hasta acá estos 3 ejercicios eran
+    // los únicos REALES del sitio sin ningún número de control: `verifyTieOuts()` no tenía contra
+    // qué compararlos, así que un dígito mal transcripto en cualquiera de sus líneas no lo hubiera
+    // detectado nadie, nunca.
+    // EN QUÉ MONEDA VAN: estos 3 ejercicios están guardados en USD ya-convertido (ver el comentario
+    // de cabecera y la excepción documentada en club-data-mapping §5), así que los totales van
+    // también en USD, dividiendo el número impreso en pesos por el MISMO fx con el que se
+    // convirtió cada línea. Eso no vuelve circular el chequeo: como todas las líneas usan ese
+    // mismo fx, la división es exacta y lo que se verifica sigue siendo lo que importa — que la
+    // SUMA de las líneas transcriptas reproduzca el total que imprime el documento.
+    // officialTotalExpenses QUEDA EN null A PROPÓSITO, no es un olvido: el "TOTAL DE GASTOS" que
+    // imprime el Estado de Recursos y Gastos de estos balances NO tiene el mismo alcance que
+    // `expenses + nonCash` del sitio (deja afuera amortizaciones y cargos extraordinarios, y no lo
+    // hace igual en los 3 años). Es exactamente el caso que club-data-mapping §6.4 manda NO forzar:
+    // un check automático contra un número que significa otra cosa se ve como "no cierra" por una
+    // diferencia de definición, no de datos. La verificación se hizo por el camino fuerte, que es
+    // el PAT — un solo número inambiguo que no depende de cómo agrupe el documento.
+    // Recursos: "TOTAL DE RECURSOS" $78.209.061 + "Total Recursos Extraordinarios" $9.195.840
+    // (el Estado los imprime separados) = $87.404.901. PAT: "RESULTADO FINAL (Ganancia)" $2.687.137.
+    // Verificado con computeYearGeneric(): PAT calculado 0,704000 contra 0,703439 impreso, o sea
+    // $2.143 ARS sobre $87 millones — es el redondeo de guardar las líneas con 3 decimales de M USD.
+    officialTotalRevenue:22.880864, officialTotalExpenses:null, officialPAT:0.703439,
   },
   2010: {
     currency:'USD', fx:3.98, fxSource:'market_approx',
@@ -1015,6 +1037,29 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     grossDebt:26.459, cash:0.713, profitOnPlayerSales:0, assetSales:0, netInterest:-0.612, tax:0,
+    // TOTALES OFICIALES CARGADOS EL 2026-09-20 (to-do 20(e)). Hasta acá estos 3 ejercicios eran
+    // los únicos REALES del sitio sin ningún número de control: `verifyTieOuts()` no tenía contra
+    // qué compararlos, así que un dígito mal transcripto en cualquiera de sus líneas no lo hubiera
+    // detectado nadie, nunca.
+    // EN QUÉ MONEDA VAN: estos 3 ejercicios están guardados en USD ya-convertido (ver el comentario
+    // de cabecera y la excepción documentada en club-data-mapping §5), así que los totales van
+    // también en USD, dividiendo el número impreso en pesos por el MISMO fx con el que se
+    // convirtió cada línea. Eso no vuelve circular el chequeo: como todas las líneas usan ese
+    // mismo fx, la división es exacta y lo que se verifica sigue siendo lo que importa — que la
+    // SUMA de las líneas transcriptas reproduzca el total que imprime el documento.
+    // officialTotalExpenses QUEDA EN null A PROPÓSITO, no es un olvido: el "TOTAL DE GASTOS" que
+    // imprime el Estado de Recursos y Gastos de estos balances NO tiene el mismo alcance que
+    // `expenses + nonCash` del sitio (deja afuera amortizaciones y cargos extraordinarios, y no lo
+    // hace igual en los 3 años). Es exactamente el caso que club-data-mapping §6.4 manda NO forzar:
+    // un check automático contra un número que significa otra cosa se ve como "no cierra" por una
+    // diferencia de definición, no de datos. La verificación se hizo por el camino fuerte, que es
+    // el PAT — un solo número inambiguo que no depende de cómo agrupe el documento.
+    // Recursos: "TOTAL DE RECURSOS" $72.936.813 + Extraordinarios $370.152 = $73.306.965. PAT:
+    // "RESULTADO FINAL (Pérdida)" -$9.714.118. Verificado: PAT -2,439000 contra -2,440733, $6.898 ARS.
+    // OJO, DIFERENCIA INTERNA DEL PROPIO DOCUMENTO: el Anexo imprime "Total Recursos Ordinarios"
+    // $74.533.299, que NO es el "TOTAL DE RECURSOS" $72.936.813 del Estado de Recursos y Gastos.
+    // Las líneas cargadas reproducen el del ESTADO, que es el número del cuerpo principal.
+    officialTotalRevenue:18.418835, officialTotalExpenses:null, officialPAT:-2.440733,
   },
   2011: {
     currency:'USD', fx:4.27, fxSource:'market_approx',
@@ -1022,6 +1067,33 @@ const racingFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     grossDebt:24.395, cash:0.542, profitOnPlayerSales:0, assetSales:0, netInterest:-0.942, tax:0,
+    // TOTALES OFICIALES CARGADOS EL 2026-09-20 (to-do 20(e)). Hasta acá estos 3 ejercicios eran
+    // los únicos REALES del sitio sin ningún número de control: `verifyTieOuts()` no tenía contra
+    // qué compararlos, así que un dígito mal transcripto en cualquiera de sus líneas no lo hubiera
+    // detectado nadie, nunca.
+    // EN QUÉ MONEDA VAN: estos 3 ejercicios están guardados en USD ya-convertido (ver el comentario
+    // de cabecera y la excepción documentada en club-data-mapping §5), así que los totales van
+    // también en USD, dividiendo el número impreso en pesos por el MISMO fx con el que se
+    // convirtió cada línea. Eso no vuelve circular el chequeo: como todas las líneas usan ese
+    // mismo fx, la división es exacta y lo que se verifica sigue siendo lo que importa — que la
+    // SUMA de las líneas transcriptas reproduzca el total que imprime el documento.
+    // officialTotalExpenses QUEDA EN null A PROPÓSITO, no es un olvido: el "TOTAL DE GASTOS" que
+    // imprime el Estado de Recursos y Gastos de estos balances NO tiene el mismo alcance que
+    // `expenses + nonCash` del sitio (deja afuera amortizaciones y cargos extraordinarios, y no lo
+    // hace igual en los 3 años). Es exactamente el caso que club-data-mapping §6.4 manda NO forzar:
+    // un check automático contra un número que significa otra cosa se ve como "no cierra" por una
+    // diferencia de definición, no de datos. La verificación se hizo por el camino fuerte, que es
+    // el PAT — un solo número inambiguo que no depende de cómo agrupe el documento.
+    // Recursos: "TOTAL DE RECURSOS" $108.779.778, sin extraordinarios este ejercicio (el Estado
+    // imprime "Total Recursos Extraordinarios" $0). PAT: $267.202. Verificado: 0,063000 contra
+    // 0,062577, o sea $1.808 ARS.
+    // OJO CON EL RÓTULO, ES EL CASO QUE club-data-mapping §6.3 usa de ejemplo Y ES ESTE EJERCICIO:
+    // el Estado dice "RESULTADO FINAL (Pérdida)" y el número es POSITIVO (+$267.202); el Estado de
+    // Evolución del Patrimonio Neto, en el mismo balance, lo llama "(Superavit)". El rótulo quedó
+    // de la plantilla del año anterior (2010 sí fue pérdida). Manda el número, no el rótulo.
+    // Mismo caso que el Anexo de 2010: el Anexo dice "Total Recursos Ordinarios" $109.729.244
+    // contra los $108.779.778 del Estado. Las líneas reproducen el del Estado.
+    officialTotalRevenue:25.475358, officialTotalExpenses:null, officialPAT:0.062577,
   },
   // Ejercicio N° 110 (1°/11/2011 al 31/10/2012, ver comentario completo junto a
   // racingRevenueLinesByYear[2012]). PRE-Blanco (`gestionId:null`, presidente Gastón Federico

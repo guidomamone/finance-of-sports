@@ -764,6 +764,20 @@ consulta puntual, nunca lectura de corrido.
 
 <main>
 
+  <!-- EL AVISO DE "NO SE PUDO CARGAR EL CLUB" VIVE ACÁ, ARRIBA DE LAS SECCIONES, Y NO ADENTRO
+       DE UNA (to-do 40, auditoría de código del 2026-09-20). Historia corta: nació adentro del
+       #coldHero, la Versión 144 lo movió a #inicio cuando ese hero dejó de mostrarse, y ahí
+       seguía teniendo el mismo problema con otra cara. `selectClub()` lo destapa cuando el
+       data/<club>-data.js de un club no se puede bajar, pero `#inicio` está en `display:none`
+       mientras el visitante mira otra pestaña, así que el aviso quedaba con `hidden=false` y
+       `offsetParent === null`: invisible. Y el lugar MÁS probable para cambiar de club es el
+       botón del header estando parado en Finanzas, o sea justo el caso que no se veía — el
+       visitante apretaba "Racing", la pantalla seguía mostrando Boca, y no había ninguna
+       explicación en ningún lado. Verificado forzando un 404 con CLUB_DATA_SCRIPT_OVERRIDE.
+       Acá adentro de <main> y afuera de toda <section> se ve pase lo que pase, y hereda el
+       ancho de la página sin CSS nuevo. -->
+  <p class="aviso-error" id="clubLoadError" hidden></p>
+
   <!-- INICIO -->
   <section id="inicio" class="active">
     <!-- INICIO = LA PREGUNTA (Versión 144, etapa 2 del merge del prototipo 4).
@@ -790,10 +804,6 @@ consulta puntual, nunca lectura de corrido.
         </button>
       </div>
     </div>
-
-    <!-- Salió de adentro del #coldHero (Versión 144): ese hero ya no se muestra nunca, y
-         con el aviso adentro un club que no carga fallaba en silencio. -->
-    <p class="aviso-error" id="clubLoadError" hidden></p>
 
     <!-- El resumen del club activo. `hidden` mientras no haya club: sin uno son 4 KPIs en
          "Sin dato" y 3 gráficos vacíos, que es peor que no estar. Lo destapa applyClubMode(). -->
@@ -1265,39 +1275,39 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '169';</script>
-<script src="data/lang/langs.js?v=169"></script>
-<script src="js/i18n.js?v=169"></script>
-<script src="data/clubs.js?v=169"></script>
+<script>window.ASSET_V = '170';</script>
+<script src="data/lang/langs.js?v=170"></script>
+<script src="js/i18n.js?v=170"></script>
+<script src="data/clubs.js?v=170"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=169"></script>
+<script src="data/club-index.js?v=170"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=169"></script>
-<script src="data/club-leagues.js?v=169"></script>
-<script src="data/category-map.js?v=169"></script>
-<script src="data/site-labels.js?v=169"></script>
-<script src="data/currency-map.js?v=169"></script>
-<script src="data/sources-view.js?v=169"></script>
+<script src="data/leagues.js?v=170"></script>
+<script src="data/club-leagues.js?v=170"></script>
+<script src="data/category-map.js?v=170"></script>
+<script src="data/site-labels.js?v=170"></script>
+<script src="data/currency-map.js?v=170"></script>
+<script src="data/sources-view.js?v=170"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=169"></script>
-<script src="js/finanzas-render.js?v=169"></script>
+<script src="js/finanzas-calc.js?v=170"></script>
+<script src="js/finanzas-render.js?v=170"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=169"></script>
+<script src="js/selector.js?v=170"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1465,6 +1475,12 @@ consulta puntual, nunca lectura de corrido.
       return Promise.resolve();
     }
     return loadClubData(newClub).then(() => {
+      // Se apaga el aviso de un intento anterior que falló. Hace falta desde el to-do 40: el
+      // aviso dejó de vivir adentro de #inicio y pasó a <main>, así que ya no se "esconde solo"
+      // al cambiar de pestaña — sin esto, un error de red viejo quedaría en pantalla al lado de
+      // los datos del club que SÍ cargó, diciendo lo contrario de lo que el visitante está viendo.
+      const avisoPrevio = document.getElementById('clubLoadError');
+      if(avisoPrevio) avisoPrevio.hidden = true;
       currentClub = newClub;
       applyClubMode();
       refreshAllForClub();

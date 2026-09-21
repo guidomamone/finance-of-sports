@@ -980,7 +980,19 @@ documentados, listos para una sesión de onboarding futura.)*
   excede los 375px), pero se deja abierto hasta que Guido lo mire.
 - Nada de esto mueve un número: `auditAll()` sigue en 41 clubes, 222 checks, 0 que no cierran.
 
-## Versión 143: prototipo de un Inicio en frío donde el selector ES la portada
+> **ESTAS 17 ENTRADAS NO SON VERSIONES DEL SITIO.** Son los pasos del prototipado del selector
+> (2026-09-14 al 15), que se hizo en `Prototyping/` sin tocar el sitio en producción: cuatro
+> prototipos distintos de la pantalla de elegir club, de los que ganó el 4. Estaban numeradas
+> "Versión 143" a "Versión 159", los MISMOS números que después usó la serie real del merge a
+> producción, que arranca más abajo con "Versión 143: Finanzas abre con el selector". Renumeradas
+> el 2026-09-20 (to-do 36, decisión de Guido) porque citar "la Versión 158" era ambiguo y porque
+> dos sesiones distintas llegaron a elegir el número 158 el mismo día buscando el más alto del
+> archivo. La serie vigente del proyecto nunca se tocó: sigue siendo consecutiva y es la única que
+> numera versiones del sitio. Por qué los prototipos no la merecían: ningún archivo de producción
+> cambió en estos 17 pasos, y los 4 prototipos se borraron al terminar el merge (ver
+> `Prototyping/README.md`, que conserva por qué perdieron el 1, el 2 y el 3).
+
+## Prototipo del selector — paso 1: prototipo de un Inicio en frío donde el selector ES la portada
 
 - NUEVO `prototipo-inicio-selector.html` (no se deploya, no lo linkea ninguna página): la primera
   visita, en vez del card con buscador chico, abre con el **selector jerárquico desplegado en la
@@ -1001,7 +1013,7 @@ documentados, listos para una sesión de onboarding futura.)*
   lo único nuevo a decidir es el layout.
 - Nada del sitio cambió: `index.html` intacto, `node tools/audit.js` igual (0 P0, 0 P1).
 
-## Versión 144: el prototipo de portada suma el ejercicio al selector
+## Prototipo del selector — paso 2: el prototipo de portada suma el ejercicio al selector
 
 - En la columna EQUIPO cada club trae ahora un `<select>` con sus ejercicios, del más reciente al
   más viejo ("Presupuesto 2026/2027", "Balance 2024/2025", y año suelto para los clubes de
@@ -1021,7 +1033,7 @@ documentados, listos para una sesión de onboarding futura.)*
   partía el nombre del club ("Argentinos Juni…", medido a 390px).
 - `js/selector.js` y el resto del sitio siguen intactos; `node tools/audit.js` sin cambios.
 
-## Versión 145: 5 correcciones al prototipo de portada, una de ellas es un bug del sitio
+## Prototipo del selector — paso 3: 5 correcciones al prototipo de portada, una de ellas es un bug del sitio
 
 - BUG DEL SITIO PUBLICADO, encontrado por Guido probando el prototipo: al elegir una REGIÓN, la
   columna Liga seguía listando las ligas de todos los países, así que después de cambiar de región
@@ -1044,7 +1056,7 @@ documentados, listos para una sesión de onboarding futura.)*
   Los dos cambios tienen su gemelo pendiente en `data/lang/en.js` (`hero.sub`, `selector.search.ph`).
 - "O empezá por uno de estos" pasó de 8 clubes a 3.
 
-## Versión 146: el índice liviano ahora lista los ejercicios, y la portada se queda en la página
+## Prototipo del selector — paso 4: el índice liviano ahora lista los ejercicios, y la portada se queda en la página
 
 CAMBIO REAL DEL SITIO (lo único de esta sesión que sale del prototipo):
 
@@ -1079,7 +1091,7 @@ PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
   selector y el párrafo de abajo.
 - Y se esconde "Ver la portada con todos los clubes": la portada ya no es otra pantalla.
 
-## Versión 147: el prototipo se puede volver a la primera visita
+## Prototipo del selector — paso 5: el prototipo se puede volver a la primera visita
 
 - Botón "Volver a la primera visita" en la franja roja del prototipo (pedido de Guido). Borra las
   4 claves que el sitio guarda en el navegador — el club elegido, los recientes, el cartelito del
@@ -1089,7 +1101,7 @@ PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
 - Vive en la franja del prototipo y no en el sitio a propósito: no es una feature, es el banco de
   pruebas. El sitio no tiene backend, así que "primera visita" son exactamente esas claves.
 
-## Versión 148: un segundo prototipo de selector, de a un paso por vez
+## Prototipo del selector — paso 6: un segundo prototipo de selector, de a un paso por vez
 
 - NUEVO `prototipo-pasos.html` + `prototipo-pasos-selector.js` + `tools/build-prototipo-pasos.js`.
   El prototipo 1 (`prototipo-inicio-*`) queda intacto: son dos visualizaciones para comparar, no
@@ -1117,7 +1129,7 @@ PROTOTIPO (`prototipo-inicio-selector.html`), 7 pedidos de Guido:
   muchos clicks obvios le ganan a uno que obliga a pensar — y la divulgación progresiva de
   Higgins (`better_onboarding.md`).
 
-## Versión 149: el prototipo 2 pasa a multi-selección, todo paso se puede ignorar, y comparar deja de ser opcional
+## Prototipo del selector — paso 7: el prototipo 2 pasa a multi-selección, todo paso se puede ignorar, y comparar deja de ser opcional
 
 Cuatro reglas nuevas de Guido, todas dentro de `prototipo-pasos.html` (el sitio no se tocó):
 
@@ -1144,7 +1156,7 @@ Cuatro reglas nuevas de Guido, todas dentro de `prototipo-pasos.html` (el sitio 
 - `Business Books/` agregado al `.gitignore`: este repo es público y deploya a Netlify, así que
   commitear esos resúmenes los publicaría en internet.
 
-## Versión 150: grupos en el prototipo 2 — sumar clubes y ligas y medirlos contra otro grupo
+## Prototipo del selector — paso 8: grupos en el prototipo 2 — sumar clubes y ligas y medirlos contra otro grupo
 
 Tres pedidos de Guido, todos dentro de `prototipo-pasos.html` (el sitio no se tocó):
 
@@ -1174,7 +1186,7 @@ Tres pedidos de Guido, todos dentro de `prototipo-pasos.html` (el sitio no se to
   `?v=`, así que el navegador servía el JS viejo de su caché con el HTML nuevo y se depuraba un bug
   ya arreglado (la trampa que documenta `CLAUDE.md`). Ahora llevan la fecha de modificación.
 
-## Versión 151: el paso 7 del prototipo 2 — contra qué comparar, y la página que dejó de moverse sola
+## Prototipo del selector — paso 9: el paso 7 del prototipo 2 — contra qué comparar, y la página que dejó de moverse sola
 
 Tres pedidos de Guido, todos dentro de `prototipo-pasos.html`:
 
@@ -1201,7 +1213,7 @@ Tres pedidos de Guido, todos dentro de `prototipo-pasos.html`:
   Resultado: la comparación contra otro ejercicio se perdía en silencio. `hidden` no impide que el
   listener corra, así que ahora se clickea igual.
 
-## Versión 152: datos inventados para el prototipo 2, encerrados con llave
+## Prototipo del selector — paso 10: datos inventados para el prototipo 2, encerrados con llave
 
 - NUEVO `prototipo-pasos-datos-inventados.js`: rellena los ejercicios 2016-2025 de los 18 clubes de
   ARGENTINA y BRASIL que hay cargados, con ascensos y descensos inventados entre primera y segunda
@@ -1228,7 +1240,7 @@ Tres pedidos de Guido, todos dentro de `prototipo-pasos.html`:
   que usa Boca) hacía que los ejercicios aparecieran en el selector y no adentro de Finanzas.
 - El sitio no se tocó: `index.html`, `js/` y `data/` intactos, `node tools/audit.js` en 0 P0, 0 P1.
 
-## Versión 153: el paso 7 se agrupa por tipo de rival, y el paso 5 deja de decidir por vos
+## Prototipo del selector — paso 11: el paso 7 se agrupa por tipo de rival, y el paso 5 deja de decidir por vos
 
 Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 
@@ -1261,7 +1273,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `var` lo dejaba en `undefined` y la comparación contra un promedio no llegaba a dibujarse nunca.
   Y `comoGrupo` se preguntaba DESPUÉS de meter el lado en la lista, con lo cual siempre daba true.
 
-## Versión 154: los prototipos se mudan a `Prototyping/`, y nace el tercero (dos columnas, A contra B)
+## Prototipo del selector — paso 12: los prototipos se mudan a `Prototyping/`, y nace el tercero (dos columnas, A contra B)
 
 - **TODO LO DE PROTOTIPOS VIVE AHORA EN `Prototyping/`**, con su propio `README.md` (pedido de
   Guido: "no mezclemos nada con los archivos que están en producción"). Se movieron los 5 archivos
@@ -1296,7 +1308,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   commitear desde entonces; lo que decidieron ya está construido en `js/selector.js`, y las dos
   referencias que quedaban apuntando a ellos en `TODO.md` se corrigieron.
 
-## Versión 155: el árbol vuelve al prototipo 3, adentro de las dos columnas
+## Prototipo del selector — paso 13: el árbol vuelve al prototipo 3, adentro de las dos columnas
 
 - **VUELVE LA NAVEGACIÓN POR DEPORTE › REGIÓN › PAÍS › LIGA › EQUIPO** al prototipo 3
   (`Prototyping/prototipo-duelo-selector.js`), pedido de Guido: "en el prototipo 3 se perdió lo de
@@ -1334,7 +1346,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   Finanzas (la tabla de abajo sí muestra guiones): queda anotado como to-do 31, sin tocar.
 - Arreglado de paso "Cierre 2026 (1 clubes)" en el desplegable de ejercicio de un conjunto.
 
-## Versión 156: prototipo 4 — dos cards vacíos, y los pasos del 2 adentro de un modal
+## Prototipo del selector — paso 14: prototipo 4 — dos cards vacíos, y los pasos del 2 adentro de un modal
 
 - **NUEVO `Prototyping/prototipo-cards.html`**, pedido de Guido después de probar el 3: "no me
   gusta el prototipo 3. Quiero ver un prototipo 4: Inicio comienza con un card como el attached
@@ -1365,7 +1377,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   del prototipo 2 ocupaba el ancho de la página y el modal mide 760px, así que "Fútbol americano"
   quedaba en "Fútbol ...".
 
-## Versión 157: el prototipo 4 arranca preguntando, y los dos cards se mudan a una pestaña
+## Prototipo del selector — paso 15: el prototipo 4 arranca preguntando, y los dos cards se mudan a una pestaña
 
 - **INICIO ES AHORA UNA PREGUNTA DE DOS OPCIONES** (pedido de Guido): "quiero ver un club en
   particular" contra "quiero comparar dos clubes o ligas". Hasta acá los dos cards eran la portada,
@@ -1397,7 +1409,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - La navegación entre pestañas se hace APRETANDO el botón del nav, no repitiendo las clases
   `active` del `<script>` de index.html: reimplementarla es garantizarse dos verdades.
 
-## Versión 158: un lado deja de tener un agregador y pasa a ser una suma de bloques
+## Prototipo del selector — paso 16: un lado deja de tener un agregador y pasa a ser una suma de bloques
 
 - **EL PASO 4 DEL PROTOTIPO 4 ES AHORA UNA BIFURCACIÓN DE TRES**: 🏆 Ligas enteras, 👕 Clubes, 🧩 Una
   mezcla. De lo que se elija ahí dependen los pasos 5 y 6, así que la lista de pasos dejó de ser una
@@ -1433,7 +1445,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - "X de Y lo informan" en la tabla de resultados ahora cuenta PARTES del lado, no ejercicios: con un
   agregador por bloque, "2 de 8" mezclaba dos unidades en la misma frase.
 
-## Versión 159: gana el prototipo 4, y queda documentado para el merge
+## Prototipo del selector — paso 17: gana el prototipo 4, y queda documentado para el merge
 
 - **DECIDIDO EL PUNTO 28**: de los cuatro prototipos del selector, el que va al sitio es el 4. Lo
   que queda es el merge a producción, que es grande y pasó a ser el **to-do 32**.
@@ -1906,3 +1918,39 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `fx-sin-procedencia` (5) y el P3 `fx-procedencia-pendiente`.
 - `ASSET_V` a 169, `fuentes.html` + sus 41 páginas + `sitemap.xml` regenerados (la ficha de fuente
   de esos 5 ejercicios ahora declara de dónde sale su tipo de cambio).
+
+## Versión 170: Racing 2009-2011 dejan de ser inverificables, y la auditoría deja de pedir lo que no existe
+
+- **To-do 20(e) cerrado.** Los 3 ejercicios reales que no tenían NINGÚN número de control ahora
+  cargan `officialTotalRevenue` y `officialPAT`, leídos del Estado de Recursos y Gastos de cada
+  balance: 2009 $78.209.061 + $9.195.840 de extraordinarios y resultado +$2.687.137; 2010
+  $72.936.813 + $370.152 y −$9.714.118; 2011 $108.779.778 y +$267.202. Van en USD (estos 3 están
+  guardados en USD ya-convertido, excepción documentada en `club-data-mapping` §5), dividiendo por
+  el mismo fx de cada línea. `auditAll()` pasa de 222 a **228 checks**, los 6 nuevos cierran.
+- `officialTotalExpenses` queda en `null` a propósito en los 3: el "TOTAL DE GASTOS" impreso no
+  tiene el mismo alcance que `expenses + nonCash` del sitio y no lo agrupa igual año a año. Es el
+  caso que `club-data-mapping` §6.4 manda NO forzar; la verificación se hizo por PAT, que es el
+  número inambiguo.
+- Dos rarezas del propio documento quedaron anotadas en el archivo: el Anexo de 2010 y el de 2011
+  imprimen un "Total Recursos Ordinarios" distinto del "TOTAL DE RECURSOS" del Estado (las líneas
+  reproducen el del Estado), y el Estado de 2011 rotula "RESULTADO FINAL (Pérdida)" sobre un número
+  POSITIVO — el rótulo quedó de la plantilla del año anterior.
+- **To-do 20(a) cerrado, arreglando el chequeo y no los datos.** `balance-sin-pat` tiraba 11
+  hallazgos y 10 eran clubes de la J.League, que publica el ingreso de cada club y no su estructura
+  de costos: sin gastos publicados no hay resultado que cargar. Ahora el chequeo solo dispara cuando
+  el documento publica ingresos Y gastos. El hallazgo 11 (Club América) se silencia con su motivo:
+  su "utilidad del segmento" IFRS 8 no es el resultado neto del club. Regla nueva en
+  `club-data-mapping` §18.
+- **To-do 20(d) cerrado por decisión de Guido:** las 5 líneas de ingreso extraordinario de Racing se
+  quedan en `exceptional_items`. Silenciadas en `tools/audit-ignore.json` y la decisión, con su
+  consecuencia aceptada, escrita en `CONVENCIONES.md`.
+- **To-do 40 cerrado.** `#clubLoadError` se mudó de `#inicio` a `<main>`, arriba de las secciones,
+  así que el aviso de "no se pudieron cargar los datos de X" se ve desde cualquier pestaña. Se le
+  agregó apagado explícito al cargar un club bien, que antes no hacía falta porque se escondía solo
+  al cambiar de sección.
+- **To-do 36 cerrado.** Las 17 entradas del prototipado del selector pasan de "Versión 143-159" a
+  "Prototipo del selector — paso 1-17", con una nota que explica por qué. Ya no hay dos bloques con
+  los mismos números y la serie vigente del proyecto queda como la única que numera versiones.
+- **To-do 9 cerrado** sin trabajo: no se reproducía desde que se agregó `.table-scroll`.
+- `node tools/audit.js` pasa de 39 P2 / 8 P3 a **20 P2 / 8 P3** (6 silenciados con motivo escrito).
+  `ASSET_V` a 170.

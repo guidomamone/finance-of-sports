@@ -132,19 +132,6 @@ perdieron sino que se descartaron:
     entonces hay que acordarse de regenerarlo en cada onboarding, como ya pasa con
     `fuentes.html` y con la sección generada de `ESTADO.md`.
 
-40. NUEVO (auditoría de código del 2026-09-20, `auditorias/2026-09-20.md`). **El aviso de "no se
-    pudieron cargar los datos de X" es invisible desde Finanzas.** Cuando el `data/<club>-data.js`
-    de un club no se puede bajar, `selectClub()` (`index.html:1487`) degrada bien: no usa `alert()`,
-    vuelve al club anterior, deja la página usable y escribe el motivo en `#clubLoadError`. El
-    problema es DÓNDE: `#clubLoadError` vive adentro de `#inicio`, y el lugar más probable para
-    cambiar de club es el botón del header estando parado en Finanzas. Verificado en el navegador
-    forzando un 404 con `CLUB_DATA_SCRIPT_OVERRIDE`: con `#finanzas` a la vista el aviso queda con
-    `hidden=false` pero `offsetParent === null`. O sea: el visitante aprieta "Racing", la pantalla
-    sigue mostrando Boca, y no hay ninguna explicación en ningún lado.
-    No está mal hoy —hace falta un error de red o un deploy incompleto para dispararlo— pero es
-    exactamente el caso para el que se escribió el aviso. El arreglo natural es que el aviso aparezca
-    donde el visitante está mirando en vez de en una sección fija.
-
 26. MOBILE, y es una REGRESIÓN del selector de la Versión 137. A 375px de ancho, `.header-right`
     mide 480px dentro de los 347px disponibles: el botón Comparar queda cortado y los de contacto
     e idioma quedan FUERA de la pantalla, con la página entera scrolleando de costado
@@ -200,64 +187,53 @@ perdieron sino que se descartaron:
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
 
-20. NUEVO (Versión 122-123): los 59 hallazgos de la primera auditoría (`node tools/audit.js`).
-    Ninguno es P0 ni P1 (los 222 tie-outs cierran), son todos riesgo o limpieza. El reporte completo,
-    con el eje de juicio de esa corrida, está en `auditorias/2026-09-13.md`. Por grupo:
-    (a) 11 balances REALES sin `officialPAT` (los 10 de Japón + Club América): tienen
-        officialTotalRevenue/Expenses pero no el resultado del ejercicio, así que ese número no lo
-        verifica nadie. Chequear si el documento lo trae impreso y cargarlo.
-    (b) RESUELTO EN SU MAYOR PARTE (Versión 141). Eran 11 ejercicios con el catch-all arriba del
-        40%; quedan 3 (instituto 2024 Gastos 42%, velez 2016 y 2017 Ingresos 49% y 43%). Los 8 que
-        se fueron eran el mismo problema con dos caras: la fuente no desglosa, y el sitio lo
-        mostraba en una fila que sugería que sí sabíamos qué era. Los 7 japoneses y `river 2024`
-        pasaron al bucket "sin desglosar por la fuente", que lo dice. Para Japón se re-verificó
-        antes (3 fuentes independientes) que el desglose por club NO existe en ningún lado: ver
-        `fuentes/Japón/_notas-generales.md`. Lo que queda de Japón ya no es una tarea de código
-        sino dos preguntas, una a la liga y otra a los clubes, anotadas en `dudas-por-club.md`. Los 3 que quedan son de clubes cuyo documento SÍ podría
-        tener más detalle, hay que ir al documento.
+20. LOS HALLAZGOS DE AUDITORÍA QUE SIGUEN ABIERTOS (vienen de la primera corrida, Versión 122-123,
+    `auditorias/2026-09-13.md`). Ninguno es P0 ni P1: los 228 tie-outs cierran. **Quedan 4** — (a),
+    (d), (e) y (g) se cerraron; su historia está en `CHANGELOG.md`.
+
+    (b) 3 ejercicios con el catch-all arriba del 40%, y NO son el mismo caso (desglose medido el
+        2026-09-20, por eso está acá y no hay que volver a calcularlo):
+        · **instituto 2024 Gastos (42%)** — dos líneas explican 31 de esos 42 puntos: "Comisiones y
+          acuerdos de rescisión" (19,6%) y "Diversos" (11,0%). La primera es identificable y
+          específica de fútbol (comisiones de representantes + acuerdos de rescisión de contrato):
+          es la única de las tres que tiene un arreglo claro, darle una categoría propia o sumarla
+          a un bucket existente. "Diversos" es literalmente lo que dice el documento y no se puede
+          mejorar sin volver al balance a buscar si lo abre en algún anexo.
+        · **velez 2016 Ingresos (49%) y velez 2017 Ingresos (43%)** — el 100% del catch-all es
+          `other_income`, y son 5 líneas identificables las dos veces: "Por servicios de enseñanza"
+          + "Subsidios estatales a la educación" (Vélez tiene colegio: 20,2% en 2016 y 22,5% en
+          2017, o sea que es la mitad del catch-all y es UN negocio real, no un cajón de sastre),
+          "Otros derechos de fútbol profesional", "Derechos de formación" y "Uso del estadio".
+        DECISIÓN PENDIENTE DE GUIDO: agregar filas nuevas a Formato simplificado (candidatas:
+        "Educación" y "Alquiler de estadio") tiene el costo de que esas filas aparecen para TODOS
+        los clubes, la mayoría en $0 — que es la regla de la Versión 53, las rows son siempre las
+        mismas entre clubes. Vale la pena si el rubro se repite en otros clubes, no si es solo
+        Vélez.
+
     (c) 16 líneas con el signo opuesto al de su sección y peso real (deducciones sobre la receita de
         los clubes brasileños, "Costo de desarrollo de jugadores propios (reclasificación)" de Vélez
-        2015/2016/2017). Probablemente todas correctas: confirmar contra el documento y, recién ahí,
-        silenciarlas en `tools/audit-ignore.json` con el motivo escrito.
-    (d) 5 líneas de INGRESO de Racing (2009, 2010, 2012, 2014) categorizadas como `exceptional_items`,
-        que es una categoría de la taxonomía de GASTOS. Suman bien al total, pero caen al catch-all.
-        Decidir: ¿se agrega una categoría de ingreso extraordinario, o se reubican esas líneas?
-    (e) Racing 2009/2010/2011: ejercicios reales sin ningún total oficial cargado. Son los 3 que se
-        cargaron con el proceso viejo en USD ya convertido (ver to-do 1).
-    (f) RESUELTO (Versión 140). `river 2024` tenía sus 8 líneas de gasto en `other_expenses`, o
-        sea el 80% en el catch-all y "Salarios y primas" en $0. Su Anexo VIII desglosa POR DESTINO
-        (qué área gastó) y no por naturaleza, así que los sueldos están adentro de cada área. Se
-        mapeó cada destino al bucket de destino que ya existe, siguiendo línea por línea el
-        precedente de Boca 2025: el catch-all quedó en 0% y el 53% que no se puede desglosar está
-        en la fila "Fútbol profesional (sin desglosar por la fuente)", que lo dice. Ni un peso se
-        movió. LO QUE FALTA es UNA celda: fila "Sueldos y cargas sociales" x columna "Fútbol
-        profesional" del Anexo VIII (páginas 59-62 del PDF). El día que se lea y verifique, esa
-        porción pasa a `wages_squad`.
-    (g) RESUELTO EN SU MAYOR PARTE (Versión 135): de los 5 literales de `clubId` quedan 2, y los 2
-        son a propósito. El Presupuesto Financiero y el de Inversiones de Boca 2026/27 estaban
-        escritos a mano como HTML adentro de este archivo (133 líneas) con un `isBoca2027`
-        decidiendo si se mostraban ellos o la versión genérica; ahora son datos en
-        `data/boca-data.js` y los renderiza el mismo código que usa cualquier club. Los 2 que
-        quedaban: `let currentClub = 'boca'`, que se fue con el cold start de la Versión 137
-        (ahora nace en null y el club sale de localStorage), y el `isBoca2027` de los 3 cards de
-        torneo, que Guido decidió dejar como está porque es una feature que hoy solo tiene Boca.
-        O sea que queda UNO, y es a propósito.
-    (h) LO MÁS IMPORTANTE, y es una decisión de Guido, no una corrección mecánica (sale del eje de
-        juicio de `auditorias/2026-09-13.md`): el sitio hoy muestra IGUAL dos cosas distintas — "la
-        fuente reporta cero" y "la fuente no lo desglosa". Un club japonés muestra Televisión = $0
-        con la mitad de sus ingresos en el catch-all, porque el documento de la J.League solo publica
-        3 líneas por club (sponsors, entradas y un bolsón que junta merchandising, distribución de
-        liga, transferencias, academia y femenino; el desglose existe solo a nivel división). Un
-        periodista que compare Gamba Osaka con Real Madrid lee que uno no cobra televisación. Mismo
-        problema, distinto origen, en `river 2024`: sus 8 rubros de gasto están todos en
-        `other_expenses` con etiquetas por SECTOR ("Fútbol profesional" = 78.835 M, el 80% de los
-        gastos, con los sueldos adentro), la misma trampa de "costos por destino, no por naturaleza"
-        ya documentada con Coritiba (club-data-mapping §1, regla de la Versión 38). Las 2 opciones
-        que propone el reporte: usar `lump_football_operations`/`lump_football_operations_expense`
-        (que ya existen y se muestran como "sin desglosar por la fuente") en vez del catch-all
-        genérico, y mostrar "—" en vez de "$0" en los buckets que la fuente no reporta. Para River
-        hay que chequear antes si su balance trae la nota de costos por naturaleza, que sería mejor
-        que el bolsón. NINGUNO de los dos cambios mueve un número: cambian bajo qué fila se muestra.
+        2015/2016/2017). Probablemente todas correctas: confirmar contra la transcripción `.md` (NO
+        contra el PDF, ya están todas transcriptas) y recién ahí silenciarlas en
+        `tools/audit-ignore.json` con el motivo escrito.
+
+    (f) RESUELTO EN SU MAYOR PARTE (Versión 140). `river 2024` tenía sus 8 líneas de gasto en
+        `other_expenses`; se mapeó cada destino al bucket que ya existía y el catch-all quedó en 0%.
+        LO QUE FALTA es UNA celda: fila "Sueldos y cargas sociales" x columna "Fútbol profesional"
+        del Anexo VIII (páginas 59-62 del PDF, y la transcripción `.md` ya existe). El día que se lea
+        y verifique, esa porción pasa de la fila "Fútbol profesional (sin desglosar por la fuente)"
+        a `wages_squad`.
+
+    (h) LO MÁS IMPORTANTE, y es una decisión de Guido, no una corrección mecánica: el sitio hoy
+        muestra IGUAL dos cosas distintas — "la fuente reporta cero" y "la fuente no lo desglosa".
+        Un club japonés muestra Televisión = $0 con la mitad de sus ingresos en el catch-all, porque
+        el documento de la J.League solo publica 3 líneas por club. Un periodista que compare Gamba
+        Osaka con Real Madrid lee que uno no cobra televisación. Mismo problema, distinto origen, en
+        `river 2024`, cuyos rubros están etiquetados por SECTOR. Las 2 opciones, NINGUNA de las
+        cuales mueve un número (cambian bajo qué fila se muestra): usar
+        `lump_football_operations`/`_expense` (que ya existen y se muestran como "sin desglosar por
+        la fuente") en vez del catch-all genérico, y mostrar "—" en vez de "$0" en los buckets que
+        la fuente no reporta. Es la misma decisión que ya se tomó para la deuda en la Versión 167,
+        aplicada a los rubros.
 
 21. TIPOS DE CAMBIO SIN PROCEDENCIA VERIFICADA. Queda UNO, y `node tools/audit.js` lo lista:
     (b) 5 cotizaciones de mercado escritas en el archivo de Argentinos Juniors en vez de `FX_CLOSE`
@@ -290,17 +266,6 @@ perdieron sino que se descartaron:
     ya decidido, las dos listas de regex, y los 12 casos que hubo que resolver a mano. No es
     urgente: el índice se toca una vez por sesión de sourcing y son 44 líneas.
 
-36. NUEVO (sesión 2026-09-20): `CHANGELOG.md` tiene el rango de versiones **143-159 duplicado**.
-    Hay dos bloques que usan los mismos números: uno de los prototipos del selector (hasta
-    "Versión 159: gana el prototipo 4") y otro del merge a producción, que reinicia en "Versión
-    143: Finanzas abre con el selector". La serie vigente (…155 → 156 y 157 de transcripción → 158
-    → 159) sigue siendo consecutiva y correcta, así que esto no rompe nada hoy: el costo es que
-    citar "la Versión 158" es ambiguo, y que la próxima sesión que busque el número más alto para
-    numerar el suyo se puede confundir (ya pasó en esta sesión: dos sesiones distintas eligieron
-    158 el mismo día). Opciones: (a) renumerar el bloque de prototipos a una serie propia sin
-    "Versión" (ej. "Prototipo 4 — paso 3"), que es lo que en realidad son; (b) dejarlo y anotar el
-    duplicado al principio del archivo. Decide Guido: toca ~17 entradas históricas.
-
 38. NUEVO (sesión 2026-09-20, al ponerle tope a las grillas del selector). **La grilla de "elegir
     clubes" del constructor de mezcla necesita su propio buscador.** Hoy lista todos los clubes para
     marcar a ojo; desde la Versión 165 muestra 30 con "Mostrar más" y los ya marcados arriba, así
@@ -308,13 +273,3 @@ perdieron sino que se descartaron:
     elegir a ojo no sirve aunque sea rápida. Lo que necesita es un campo de filtro propio, como el
     del modal. Es una feature, no una optimización, por eso no entró en el punto 4 del plan de
     escala. Ver `js/selector.js`, la rama `else` de la grilla de mezcla.
-
-9. MOBILE: las tablas largas del presupuesto oficial de Boca en pantallas angostas.
-   La otra mitad de este punto (el header, que abajo de 900px aplastaba el `nav` a 0px de
-   ancho y hacía desaparecer las 4 pestañas) se resolvió en la Versión 137: el header
-   envuelve y el nav se lleva su propia fila.
-   OJO ANTES DE EMPEZAR (medido el 2026-09-14): esto YA NO SE REPRODUCE como está escrito. Con
-   Boca 2026/27 a 375px y todos los acordeones del Presupuesto de Inversiones abiertos, NINGÚN
-   elemento de `#finanzas` supera el ancho de la pantalla — el wrapper `.table-scroll` que se
-   agregó después cubre estas tablas. El problema de móvil que sí se reproduce hoy es el header,
-   y es el punto 26. Este punto se puede cerrar; quedó porque Guido todavía no lo miró.
