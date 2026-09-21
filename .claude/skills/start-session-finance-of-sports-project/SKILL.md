@@ -18,20 +18,25 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 23 KB |
-| 2 | `CONVENCIONES.md` | **siempre** | 25 KB |
-| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 28 KB |
-| 3 | `ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 8 KB |
-| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 73 KB |
-| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 64 KB |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB |
+| 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 30 KB |
+| 2 | `CONVENCIONES.md` | **siempre** | 38 KB |
+| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 21 KB |
+| 3 | `ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 10 KB |
+| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 79 KB |
+| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 63 KB |
+| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 91 KB |
 | 7 | `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
+
+**Los KB de esta tabla los chequea `node tools/audit.js`** (`doc-peso-desfasado`, P3, agregado en
+la auditoría de docs del 2026-09-20): existen para decidir qué abrir y qué no, así que un número
+desactualizado no es cosmético — cuando se midió, `club-sourcing` decía 33 KB y pesaba 91, y
+`CHANGELOG.md` decía 68 y pesaba 189. Si el chequeo se queja, actualizá el número acá.
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 
-- `finance-of-sports-project.md` (447 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
+- `finance-of-sports-project.md` (482 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
-- `CHANGELOG.md` (68 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
+- `CHANGELOG.md` (190 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
 Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 

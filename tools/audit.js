@@ -434,6 +434,52 @@ function checkLigasPorEjercicio(api) {
   }
 }
 
+// --- D16: los KB que la guía de arranque promete (Versión 171) --------------
+// POR QUÉ ESTO ES UN CHEQUEO Y NO UN DETALLE COSMÉTICO. La tabla de
+// `.claude/skills/start-session-finance-of-sports-project/SKILL.md` §1 existe
+// para una sola cosa: que una sesión decida QUÉ ABRIR y qué no, antes de
+// gastar el token de abrirlo. Un número 3 veces más chico que el archivo real
+// hace exactamente lo contrario de lo que la tabla promete. Medido en la
+// auditoría de docs del 2026-09-20: `club-sourcing` decía 33 KB y pesaba 91, y
+// `CHANGELOG.md` decía 68 y pesaba 189 — los dos archivos que más conviene NO
+// abrir de corrido, anunciados como si fueran livianos.
+// Es P3 porque no rompe nada y no publica un número malo; sale igual en cada
+// corrida porque el desfasaje vuelve solo (los docs crecen todas las sesiones).
+function checkPesoDocs() {
+  const SKILL = '.claude/skills/start-session-finance-of-sports-project/SKILL.md';
+  const abs = path.join(ROOT, SKILL);
+  if (!fs.existsSync(abs)) return;
+  const texto = fs.readFileSync(abs, 'utf8');
+  // Cada fila de la tabla y cada bullet de "lo que NO hace falta leer" nombra un
+  // archivo entre backticks y su peso en KB. Los `.claude/skills/<x>` sin
+  // `/SKILL.md` se resuelven al SKILL.md, que es lo que se lee.
+  // OJO CON EL `[^\n]` Y NO `[^|\n]`: en la tabla de §1 el nombre del archivo y su
+  // peso están en CELDAS DISTINTAS de la misma fila, o sea que hay pipes en el medio.
+  // La primera versión de esta regex los prohibía y el chequeo NO DISPARABA NUNCA. Se
+  // detectó rompiendo un número a propósito y viendo que no se quejaba — si tocás esta
+  // regex, volvé a hacer esa prueba antes de darla por buena: un chequeo que no dispara
+  // se ve exactamente igual que un proyecto sano.
+  const re = /`([A-Za-z0-9_.\/-]+\.md|\.claude\/skills\/[a-z0-9-]+)`[^\n]*?\(?(\d+) KB/g;
+  const vistos = new Set();
+  let m;
+  while ((m = re.exec(texto)) !== null) {
+    let rel = m[1];
+    const prometido = Number(m[2]);
+    if (rel.startsWith('.claude/skills/') && !rel.endsWith('.md')) rel += '/SKILL.md';
+    if (vistos.has(rel)) continue;
+    vistos.add(rel);
+    const f = path.join(ROOT, rel);
+    if (!fs.existsSync(f)) continue;
+    const real = Math.round(fs.statSync(f).size / 1024);
+    // 25% de margen: los docs crecen de a poco todas las sesiones y no tiene
+    // sentido quejarse por 2 KB. Lo que importa es el orden de magnitud.
+    if (prometido > 0 && Math.abs(real - prometido) / prometido > 0.25) {
+      add('P3', 'doc-peso-desfasado',
+        `${rel}: la guía de arranque dice ${prometido} KB y pesa ${real} KB — ese número es para decidir si abrirlo o no`);
+    }
+  }
+}
+
 // --- D14: el espacio de nombres de clubId (Versión 129) --------------------
 // `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
 // (`data/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
@@ -996,6 +1042,7 @@ function main() {
   checkLigasPorEjercicio(api);
   checkCategorizacion(api);
   checkEscala(api);
+  checkPesoDocs();
   checkHigiene(api);
 
   if (JSON_OUT) console.log(JSON.stringify({ findings, silenciados }, null, 2));

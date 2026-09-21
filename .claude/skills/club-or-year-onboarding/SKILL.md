@@ -324,9 +324,14 @@ del bloque de Finanzas o arriba, no repetida card por card:
   banner por ejercicio, con el título/URL/nota de `sources{}` (`data/clubs.js`) cuando el dato NO es
   oficial (prensa, réplica no oficial, placeholder). Para años oficiales se esconde (el propio
   ejercicio siendo "año a año" con reportType official ya implica fuente primaria).
-- `#finanzasClubSourceNote` (al final del bloque de cards de Finanzas,
-  `finanzasClubSourceText[clubId]` + `renderClubSourceNote()`): UN resumen por club, no por card,
-  de dónde salen los datos de ESE club en general.
+- LA FICHA DE FUENTE al final del bloque de cards de Finanzas: el documento del ejercicio que se
+  está mirando, con su link, tipo y nivel de fuente, el tipo de cambio usado CON su procedencia, y
+  las salvedades que `sourceCaveats()` deriva de los datos.
+  ESTE PUNTO DECÍA OTRA COSA Y YA NO ERA CIERTA: hablaba de `#finanzasClubSourceNote`,
+  `finanzasClubSourceText[clubId]` y `renderClubSourceNote()` — un texto fijo escrito a mano con 3
+  entradas (Boca, Racing, River), o sea que un club nuevo no mostraba nada. Lo reemplazó la ficha
+  por ejercicio de la Versión 126/127, que sale de `sources{}` y no hay que escribirle una entrada
+  a cada club.
 - La pestaña **Fuentes** (`#fuentes`, HTML estático): el detalle completo, documento por documento,
   para quien quiera profundizar.
 

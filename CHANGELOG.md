@@ -1954,3 +1954,29 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - **To-do 9 cerrado** sin trabajo: no se reproducía desde que se agregó `.table-scroll`.
 - `node tools/audit.js` pasa de 39 P2 / 8 P3 a **20 P2 / 8 P3** (6 silenciados con motivo escrito).
   `ASSET_V` a 170.
+
+## Versión 171: auditorías de rutina de los ejes `docs` y `tokens` — se cierra la rotación
+
+- Dos corridas más el mismo día (`auditorias/2026-09-20-docs.md` y `-tokens.md`), a pedido de Guido.
+  **Con estas se completó la vuelta entera** `datos` → `escala` → `codigo` → `docs` → `tokens`. El
+  próximo eje vuelve a `datos`.
+- **Eje `docs`.** Se encontraron y corrigieron 3 lugares que citaban en presente código borrado:
+  `CONVENCIONES.md` decía que los cards de presupuesto usan `noDataMsg()` 54 líneas después de
+  decir que esa función se borró; `club-data-mapping` §12 citaba `revenueDetailOrLeaf()` y
+  `revenueComponentTuple()` (motor Boca-only, Versión 102); `club-or-year-onboarding` describía la
+  nota de fuente vieja (`renderClubSourceNote()`, reemplazada en la 126/127).
+- Se actualizó la tabla de pesos de `start-session-finance-of-sports-project` §1: decía 33 KB para
+  `club-sourcing` (pesa 91) y 68 KB para `CHANGELOG.md` (pesa 189), justo los dos archivos que más
+  conviene no abrir de corrido.
+- `tools/audit.js` gana `doc-peso-desfasado` (P3): compara cada KB prometido contra el archivo real
+  y avisa si se desvía más de 25%. Probado rompiendo un número a propósito — la primera versión de
+  su regex prohibía el `|` y no disparaba nunca, con la tabla en celdas separadas por pipes.
+- Se midió y quedó registrado que la duplicación de datos de club YA está resuelta
+  (`generate-club-index.js`, Versión 128): no hay trabajo pendiente ahí y el próximo eje `docs` no
+  tiene que volver a medirlo.
+- **Eje `tokens`.** El piso de una sesión son 119 KB (~30 mil tokens) antes de mirar código, y ~260
+  KB si además es onboarding de un club. El hallazgo no es el tamaño: es que lo más caro son las
+  premisas vencidas de la to-do (tres casos medidos hoy: 21(a), 25 y 20(a)).
+- Regla nueva en `CONVENCIONES.md`: cuando una tarea se cierra y el motivo por el que estaba trabada
+  resultó falso, eso se escribe — es la única señal de que los otros puntos pueden estar igual.
+- Ninguna de las dos corridas agregó puntos a la to-do.

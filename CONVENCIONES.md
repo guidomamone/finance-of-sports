@@ -100,6 +100,19 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   del ejercicio cierra igual (el motor suma por monto, no por bucket) y Formato del club las muestra
   con su `rawLabel` textual, que dice "(extraordinario)". Los 5 hallazgos están silenciados en
   `tools/audit-ignore.json` con este motivo escrito. **No recategorizar sin volver a preguntarle.**
+- UNA PREMISA VENCIDA EN LA TO-DO SE ESCRIBE AL CERRAR EL PUNTO (auditoría del eje `tokens`,
+  2026-09-20). Cuando una tarea se resuelve y el motivo por el que estaba trabada resultó FALSO, no
+  alcanza con borrar el punto: hay que dejar escrito que la premisa estaba vencida, en la entrada de
+  `CHANGELOG.md` y, si el punto sigue vivo en parte, en el propio `TODO.md`.
+  POR QUÉ, con los casos que lo motivaron: la to-do 21(a) daba 5 tipos de cambio por irrecuperables
+  con dos motivos y los dos estaban vencidos (los PDFs de San Lorenzo "nunca se transcribieron" —
+  lo están desde el 2026-09-17; la transcripción de Vélez "no preservó la columna de cambio
+  vigente" — su Anexo VI la tiene). Se resolvieron leyendo archivos que ya estaban en disco. La
+  to-do 25 mandaba a revisar `renderFinanzasStatsFromComputed`, borrada en la Versión 102.
+  Una premisa vencida no hace perder la tarea: **la hace parecer más cara de lo que es, y por eso
+  queda al fondo de la lista para siempre.** Escribirlo es la única señal de que los OTROS puntos
+  de la lista también pueden estar en la misma situación — fue así como, después del primer caso,
+  se encontró el segundo.
 - NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde
@@ -360,7 +373,9 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   cualquier club/ejercicio seleccionado. Si ese ejercicio puntual tiene el dato (hoy: Boca
   2027 para los 3; Racing 2026 y 2027 para los 3 también, con menos desglose que Boca en
   Inversiones), lo muestra; si no (balances auditados, placeholders), dice explícito por qué
-  no hay (función compartida `noDataMsg()`), en vez de esconder el card. Los 3 se repintan
+  no hay, en vez de esconder el card. (Ese texto lo arma hoy cada render de card: la función
+  compartida `noDataMsg()` que hacía esto se borró, ver el punto de más arriba en este mismo
+  archivo — este párrafo la seguía citando en presente.) Los 3 se repintan
   juntos cada vez que cambia club/año/gestión. ACTUALIZADO (Versión 135): los datos de los 3
   viven en el `data/<club>-data.js` de cada club, en `presupuestoSupuestosByYear` /
   `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, indexados por `[year]`. Antes

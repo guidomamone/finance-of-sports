@@ -509,11 +509,16 @@ sigue abajo ya aplica hoy a los 3 clubes:
 
 - Un bucket que agrupa una sola `normalizedCategory` con una sola línea real: `items` = esa línea
   con su propio desglose (`line.items`) si lo tiene, o una fila `[line.rawLabel, line.amountNative]`
-  si no, igual que ya hace `revenueDetailOrLeaf()` para Boca (nunca dejar el bucket sin nada que
-  mostrar al abrirlo, aunque sea solo la confirmación de qué línea es).
+  si no (nunca dejar el bucket sin nada que mostrar al abrirlo, aunque sea solo la confirmación de
+  qué línea es). OJO SI VENÍS DE UNA VERSIÓN VIEJA DE ESTE PÁRRAFO: decía "igual que ya hace
+  `revenueDetailOrLeaf()` para Boca", y esa función NO EXISTE MÁS — era del motor Boca-only que se
+  borró en la Versión 102. Hoy lo hace `bucketize()` (`js/finanzas-calc.js`) para todos los clubes
+  por igual, Boca incluida.
 - Un bucket que suma VARIAS `revenueLines`/`expenseLines` (mismo `normalizedCategory` repetido, o el
   catch-all "Otros"/"Otras secciones..."): `items` = una tupla `[rawLabel, amountNative, line.items
-  || null]` por cada línea que aporta a la suma, mismo patrón que `revenueComponentTuple()`.
+  || null]` por cada línea que aporta a la suma. (Este párrafo decía "mismo patrón que
+  `revenueComponentTuple()`": otra función del motor Boca-only borrado en la Versión 102. El patrón
+  vive hoy adentro de `bucketize()`.)
 - Nunca inventar un número nuevo para armar el desglose: reusar por referencia los mismos
   `revenueLines`/`expenseLines`/`items` que ya alimentan "Formato del club", el desglose de Formato
   Simplificado tiene que ser trazable 1:1 a esos datos, no una aproximación ni un resumen.
