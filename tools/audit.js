@@ -480,6 +480,47 @@ function checkPesoDocs() {
   }
 }
 
+// --- D17: .md de la raíz que netlify.toml NO saca del deploy (Versión 176) --
+// POR QUÉ ESTO ES UN CHEQUEO Y NO ALGO QUE SE MIRA A OJO. netlify.toml (Versión
+// 173) explica su propia razón de ser con un caso real: `financeofsports.com/
+// CLAUDE.md` devolvía 200 hasta que se armó el `rm -f` que lo saca del artefacto
+// de deploy. La Versión 175 encontró un SEGUNDO caso del mismo problema
+// (PROMPT-generador-indice-fuentes.md, creado en la misma sesión que escribió esa
+// advertencia, nunca sumado a la lista) — o sea que "acordate de agregarlo" ya
+// falló al menos una vez y no hay ninguna razón para confiar en que no vuelva a
+// pasar. Esto no decide qué es interno: eso lo sigue diciendo un humano. Compara
+// los .md de la raíz contra el `rm -f` de netlify.toml y lo que sobra queda
+// como hallazgo, para que la decisión sea explícita (silenciarlo en
+// tools/audit-ignore.json si es a propósito) en vez de un archivo que nadie
+// miró nunca llegar a producción.
+// P2 y no P1: nada de esto está MAL servido hoy (nada de esto se pusheó
+// todavía), pero va a quedar publicado en cuanto se pushee si nadie lo revisa
+// antes.
+function checkDeployInterno() {
+  const netlifyPath = path.join(ROOT, 'netlify.toml');
+  if (!fs.existsSync(netlifyPath)) return;
+  const toml = fs.readFileSync(netlifyPath, 'utf8');
+
+  // Solo los `rm -f <archivos> || true` cubren un .md SUELTO de la raíz: un
+  // `rm -rf <carpeta>` saca una carpeta entera (fuentes/, auditorias/,
+  // Prototyping/), no compite con esta lista porque un archivo de la raíz no
+  // puede vivir "adentro" de esas carpetas.
+  const excluidos = new Set();
+  for (const m of toml.matchAll(/rm -f ([^\n|]+?)\s*\|\|\s*true/g)) {
+    m[1].trim().split(/\s+/).forEach(f => excluidos.add(f));
+  }
+
+  const rootMd = fs.readdirSync(ROOT, { withFileTypes: true })
+    .filter(d => d.isFile() && d.name.endsWith('.md'))
+    .map(d => d.name).sort();
+
+  for (const f of rootMd) {
+    if (excluidos.has(f)) continue;
+    add('P2', 'doc-interno-no-excluido',
+      `${f}: .md de la raíz que netlify.toml no saca del deploy. Si es un documento interno, sumalo al 'rm -f' de netlify.toml; si el contenido es para el visitante, dejá una entrada en tools/audit-ignore.json con el motivo`);
+  }
+}
+
 // --- D14: el espacio de nombres de clubId (Versión 129) --------------------
 // `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
 // (`data/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
@@ -1043,6 +1084,7 @@ function main() {
   checkCategorizacion(api);
   checkEscala(api);
   checkPesoDocs();
+  checkDeployInterno();
   checkHigiene(api);
 
   if (JSON_OUT) console.log(JSON.stringify({ findings, silenciados }, null, 2));

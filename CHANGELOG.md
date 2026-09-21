@@ -2098,3 +2098,21 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `info-adicional-todos-abiertos-borrar-luego.md`); la de este changelog queda como histórica.
 - El script sumado a la sección de herramientas de `ESTADO.md` y del skill
   `start-session-finance-of-sports-project`.
+
+## Versión 176: `tools/audit.js` avisa si un .md nuevo de la raíz no está cubierto por netlify.toml
+
+- **Chequeo nuevo, `doc-interno-no-excluido` (P2).** Surgió de un hallazgo lateral de la sesión del
+  to-do 35: `PROMPT-generador-indice-fuentes.md` no estaba en el `rm -f` de `netlify.toml` y se
+  hubiera publicado en `financeofsports.com/PROMPT-generador-indice-fuentes.md` — la misma falla que
+  `netlify.toml` existe para evitar (`CLAUDE.md`, Versión 173), repetida una vez más sobre un archivo
+  creado en la misma sesión que escribió esa advertencia. "Acordarse de sumarlo a la lista" ya falló
+  al menos dos veces, así que ahora lo chequea una máquina: compara los `.md` de la raíz contra el
+  `rm -f` de `netlify.toml` y reporta cada uno que falta.
+- **No decide qué es interno**, eso lo sigue diciendo un humano: el hallazgo solo señala que un .md
+  no está cubierto, y `tools/audit-ignore.json` sirve para marcar el que sea público a propósito.
+- **Corrido hoy contra el repo, dio 8**: `ARQUITECTURA.md`, `CHANGELOG.md`, `CONVENCIONES.md`,
+  `ESTADO.md`, `PLAN-REMEDIACION-ESCALA.md`, `QUE-ES-REAL-historico.md`, `TODO.md`,
+  `fuentes-por-club.md`. Ninguno se agregó al `rm -f` ni se silenció: queda para que Guido decida
+  cuál es contenido para el visitante y cuál es interno, archivo por archivo. Mientras tanto no
+  bloquea nada (P2, `--quiet` sigue en verde) porque nada de esto llegó a producción todavía — el
+  repo local sigue sin pushear desde antes de que `netlify.toml` existiera.
