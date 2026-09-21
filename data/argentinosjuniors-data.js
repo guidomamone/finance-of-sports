@@ -76,8 +76,14 @@
 //
 // FX: la fuente no declara tipo de cambio propio en ningún año (ninguno de los 3 balances reales
 // tiene Anexo de moneda extranjera para pesos/dólares, solo notas puntuales de partidas en U$S/EUR
-// sueltas) — se mantiene el dólar vendedor BNA de cierre de cada 30/6 ya investigado (datos.gob.ar/
-// series): $9,085 (2015), $15,2 (2016), $16,8 (2017), $28,85 (2018), $42,45 (2019).
+// sueltas) — se usa el dólar vendedor BNA de cierre de cada 30/6 (datos.gob.ar/series).
+// DESDE EL 2026-09-20 (to-do 21(b)) esos 5 números NO se escriben acá: son cotizaciones de MERCADO,
+// o sea un dato del mercado y no de este club, así que viven en `FX_CLOSE` (data/currency-map.js) y
+// cada ejercicio las referencia con `fxRef:'ARS@<año>-06-30'`. Es la regla de la Versión 125: lo que
+// declara un documento va literal en el archivo del club; lo que es cotización pública se dice una
+// vez en la tabla. Mientras las usaba un solo club no duplicaban nada, pero era el estado del que
+// nace la duplicación — el cierre del real al 31/12/2024 había llegado a estar copiado en 5
+// archivos antes de que existiera la tabla.
 //
 // Gestión: Cristian Malaspina, presidente desde 2015 (confirmado por búsqueda), reelecto en
 // diciembre de 2019 y de nuevo en 2023. DUDA ABIERTA (ver dudas-por-club.md): no se confirmó el
@@ -258,7 +264,7 @@ const argentinosJuniorsFiscalYearMeta = {
     // años), gastos solo a nivel de las 4 categorías agregadas (Anexo V no desglosa el año
     // comparativo). SUPERÁVIT/DÉFICIT real: DÉFICIT $67.509.882 ARS (antes decía, con las cifras
     // restated, $228.557.786 — completamente distinto).
-    currency:'ARS', fx:9.085, fxSource:'market_close', sourceId:'argentinosjuniors-balance-2015-2016',
+    currency:'ARS', fxRef:'ARS@2015-06-30', sourceId:'argentinosjuniors-balance-2015-2016',
     reportType:'official_balance_sheet', gestionId:null, // ver duda abierta en dudas-por-club.md
     grossDebt:200.426712, cash:1.105450,
     profitOnPlayerSales:0, assetSales:0, netInterest:-10.513566, tax:0,
@@ -273,7 +279,7 @@ const argentinosJuniorsFiscalYearMeta = {
     // ($105.043.957 = 77.570.507+10.757.903+10.397.525+6.318.022), $20.000 (0,02%) por encima del
     // total impreso por el propio documento ($105.023.957) — diferencia inmaterial, documentada,
     // no inventada.
-    currency:'ARS', fx:15.2, fxSource:'market_close', sourceId:'argentinosjuniors-balance-2015-2016',
+    currency:'ARS', fxRef:'ARS@2016-06-30', sourceId:'argentinosjuniors-balance-2015-2016',
     reportType:'official_balance_sheet', gestionId:'malaspina',
     grossDebt:239.269605, cash:1.381149,
     profitOnPlayerSales:0, assetSales:0, netInterest:-8.989351, tax:0,
@@ -283,7 +289,7 @@ const argentinosJuniorsFiscalYearMeta = {
     // Balance 2016-2017 (Ejercicio N°113), año "actual" de ese archivo — detalle completo de
     // Anexo IV/V, cruzado contra la columna comparativa del balance 2017-2018 (coincide exacto en
     // Total del Pasivo y en los totales de Recursos/Gastos). SUPERÁVIT real: $30.812.797 ARS.
-    currency:'ARS', fx:16.8, fxSource:'market_close', sourceId:'argentinosjuniors-balance-2016-2017',
+    currency:'ARS', fxRef:'ARS@2017-06-30', sourceId:'argentinosjuniors-balance-2016-2017',
     reportType:'official_balance_sheet', gestionId:'malaspina',
     grossDebt:235.072669, cash:0.991633,
     profitOnPlayerSales:0, assetSales:0, netInterest:-7.260078, tax:0,
@@ -293,7 +299,7 @@ const argentinosJuniorsFiscalYearMeta = {
     // Balance 2017-2018 (Ejercicio N°114), año "actual" de ese archivo — detalle completo de
     // Anexo IV/V. SUPERÁVIT real: $318.336.988 ARS (antes decía, con las cifras restated,
     // $495.815.894 — completamente distinto, esto es lo que disparó el hallazgo del bug).
-    currency:'ARS', fx:28.85, fxSource:'market_close', sourceId:'argentinosjuniors-balance-2017-2018',
+    currency:'ARS', fxRef:'ARS@2018-06-30', sourceId:'argentinosjuniors-balance-2017-2018',
     reportType:'official_balance_sheet', gestionId:'malaspina',
     grossDebt:232.933684, cash:0.837555,
     profitOnPlayerSales:0, assetSales:0, netInterest:-19.947296, tax:0,
@@ -303,7 +309,7 @@ const argentinosJuniorsFiscalYearMeta = {
     // NO tocado en el fix — sigue viniendo de presentacion-asamblea-2018-2019.pdf (ver comentario
     // de cabecera: al ser el año más reciente de esa presentación, su columna probablemente ya es
     // ~nominal, pero no hay balance auditado real de este ejercicio descargado para confirmarlo).
-    currency:'ARS', fx:42.45, fxSource:'market_close', sourceId:'argentinosjuniors-presentacion-asamblea-2015-2019',
+    currency:'ARS', fxRef:'ARS@2019-06-30', sourceId:'argentinosjuniors-presentacion-asamblea-2015-2019',
     reportType:'official_balance_sheet', gestionId:'malaspina',
     grossDebt:247.566408, cash:0,
     profitOnPlayerSales:0, assetSales:0, netInterest:54.110381, tax:0,

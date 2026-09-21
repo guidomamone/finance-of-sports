@@ -1,0 +1,52 @@
+# ============================================================================
+# netlify.toml — qué se PUBLICA, que no es lo mismo que qué se guarda.
+#
+# POR QUÉ EXISTE (2026-09-20, decisión de Guido). Hasta hoy este archivo no
+# existía y Netlify publicaba la raíz del repo tal cual, así que TODO archivo
+# trackeado quedaba servido en financeofsports.com/<su ruta>. Eso incluía las
+# notas internas de sourcing, el diario narrativo del proyecto y las
+# instrucciones de trabajo: `financeofsports.com/CLAUDE.md` devolvía 200.
+#
+# EL PRIMER INTENTO FUE DESTRACKEARLOS, Y ESTABA MAL. Sacaba los archivos del
+# deploy, sí, pero también de GitHub, o sea que se perdía el respaldo remoto de
+# semanas de trabajo. Lo levantó Guido: "si pierdo la mac pierdo semanas de
+# trabajo".
+#
+# Y LA ALTERNATIVA OBVIA TAMPOCO ALCANZA: hacer el repo PRIVADO controla quién
+# entra a github.com/guidomamone/finance-of-sports, no qué sirve Netlify. Con el
+# repo privado, financeofsports.com/CLAUDE.md seguiría devolviendo 200 igual.
+# Son dos problemas independientes y hacen falta dos soluciones distintas.
+#
+# ESTO RESUELVE LA PUBLICACIÓN, Y SOLO ESA: todo se trackea (respaldo completo
+# en GitHub, historial incluido) y lo interno se BORRA DEL ARTEFACTO DE DEPLOY
+# antes de publicar. El repo en disco y en GitHub no se toca: `command` corre
+# sobre el clon efímero que Netlify hace para cada build.
+#
+# QUÉ NO HACE FALTA LISTAR: Netlify ya no publica archivos ni carpetas que
+# empiezan con punto, así que `.claude/skills/` (que sí está trackeado, con las
+# 98 menciones a Guido de los 6 skills) NUNCA estuvo publicado — verificado en
+# producción, devuelve 404. Tampoco hace falta listar los `*.pdf`, que siguen
+# fuera por `.gitignore` por peso, no por privacidad.
+#
+# SI AGREGÁS UN DOCUMENTO INTERNO NUEVO en la raíz, sumalo acá abajo. El criterio
+# es el mismo que separa `note` de `publicNote` desde la Versión 127: lo que se
+# escribió PARA Guido no se publica; lo que describe el proyecto, sí.
+# ============================================================================
+
+[build]
+  publish = "."
+
+  # `|| true` en cada línea a propósito: un `rm` que no encuentra su archivo NO
+  # tiene que voltear el deploy entero. Si esto falla, Netlify deja publicada la
+  # versión anterior del sitio (no hay caída), pero el cambio no sale — mirar el
+  # log del deploy, que imprime la cuenta de abajo.
+  command = """
+    echo '--- sacando documentos internos del artefacto de deploy ---'
+    rm -f CLAUDE.md finance-of-sports-project.md dudas-por-club.md || true
+    rm -f info-adicional-todos-abiertos-borrar-luego.md || true
+    find fuentes -name '*.md' -delete || true
+    rm -rf auditorias Prototyping || true
+    echo "quedan $(find . -name '*.md' -not -path './Clubes/*' -not -path './node_modules/*' | wc -l) .md publicables fuera de Clubes/"
+    echo "paginas de fuentes que SI se publican: $(ls fuentes/*.html 2>/dev/null | wc -l)"
+    true
+  """

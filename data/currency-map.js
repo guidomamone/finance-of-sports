@@ -195,6 +195,22 @@ const FX_SOURCE = {
 // un cierre oficial.
 const FX_CLOSE = {
   'ARS@2014-06-30': { fx: 8.15,    source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2014' },
+  // Las 5 de abajo vivían escritas a mano en data/argentinosjuniors-data.js (to-do 21(b),
+  // movidas el 2026-09-20). Son la MISMA serie que la de 2014 de arriba — dólar vendedor BNA de
+  // cierre, investigada en datos.gob.ar/series — así que su lugar es acá y no adentro de un club.
+  // ANTES DE MOVERLAS SE CONFIRMÓ QUE DE VERDAD SON DE MERCADO, que es lo que el to-do pedía: los
+  // 3 balances auditados de Argentinos no declaran ningún tipo de cambio propio (no tienen Anexo
+  // de moneda extranjera, solo notas con partidas en U$S/EUR ya convertidas a pesos, sin la
+  // columna de cambio vigente). No es el caso de Unión, que estaba mal rotulado y sí salía de su
+  // Anexo V (Versión 140).
+  // OJO, NO CONTRADICEN a los `document_close` de San Lorenzo y Vélez para esas mismas fechas
+  // (8,988 en 2015 y 14,94 en 2016): esos son el COMPRADOR que declara cada documento y estos son
+  // el VENDEDOR del mercado. Son los dos lados del spread, no dos versiones del mismo número.
+  'ARS@2015-06-30': { fx: 9.085,   source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2015' },
+  'ARS@2016-06-30': { fx: 15.2,    source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2016' },
+  'ARS@2017-06-30': { fx: 16.8,    source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2017' },
+  'ARS@2018-06-30': { fx: 28.85,   source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2018' },
+  'ARS@2019-06-30': { fx: 42.45,   source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2019' },
   'ARS@2024-06-30': { fx: 909,     source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2024' },
   'ARS@2025-06-30': { fx: 1203,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2025' },
   'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },

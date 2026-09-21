@@ -55,35 +55,8 @@ Clubes/Argentina/River/estados-contables-leads/
 # parte del sitio.
 Business Books/
 
-# LAS NOTAS INTERNAS DE SOURCING NO SE TRACKEAN (to-do 37, sesión 2026-09-20).
-# Mismo problema que arriba, a nivel archivo: `fuentes/<País>/<Club>.md` y
-# `fuentes/_indice/<País>.md` son 613 archivos de notas de trabajo (qué se
-# probó, qué se descartó, qué falta pedir), y al estar trackeados quedaban
-# servidos en financeofsports.com/fuentes/<País>/<Club>.md. 37 de ellos
-# mencionan a Guido por nombre o contexto de trabajo interno ("PDF a Guido si
-# tiene acceso de otra red", "a pedido de Guido"). Es la misma distinción que
-# la Versión 127 hizo entre `note` (interna, no se renderiza nunca) y
-# `publicNote`, pero para archivos enteros.
-# SE VOLVIÓ URGENTE CON LA VERSIÓN 162: las páginas públicas por club viven en
-# ESTA MISMA carpeta (`fuentes/<clubId>.html`) y `sitemap.xml` las linkea, así
-# que un crawler tiene motivo para entrar a /fuentes/ y desde ahí puede llegar
-# al resto. Un robots.txt no alcanza: es un pedido, no un candado — le dice al
-# buscador que no indexe, pero el archivo se sigue sirviendo a cualquiera que
-# tenga la URL. Destrackear es lo único que los saca de verdad.
-# OJO CON EL PATRÓN: es *.md y NO la carpeta entera, justamente porque los 41
-# `fuentes/<clubId>.html` generados por tools/generate-fuentes-page.js SÍ son
-# parte del sitio y tienen que seguir viajando.
-# Los archivos siguen en la máquina de Guido y se usan igual en cada sesión de
-# sourcing; lo único que cambia es que no se publican.
-fuentes/**/*.md
 
-# LOS 3 DOCUMENTOS INTERNOS DE LA RAÍZ NO SE TRACKEAN (to-do 39, decisión de Guido del
-# 2026-09-20: opción (b) de las tres que se le presentaron). Mismo criterio que las notas
-# de sourcing de acá arriba y que `note` vs. `publicNote` de la Versión 127: **lo que se
-# escribió PARA Guido no se publica; lo que describe el proyecto, sí.**
-#   · finance-of-sports-project.md — 481 KB de narrativa interna, 224 menciones a Guido.
-#   · CLAUDE.md — sus instrucciones de trabajo, 16 menciones.
-#   · dudas-por-club.md — las preguntas sin contestar que piensa hacerles a los clubes.
+— las preguntas sin contestar que piensa hacerles a los clubes.
 # Los que SIGUEN trackeados a propósito (son documentación legítima del proyecto, no
 # cocina): ESTADO.md, ARQUITECTURA.md, CONVENCIONES.md, CHANGELOG.md, TODO.md,
 # QUE-ES-REAL-historico.md, PLAN-REMEDIACION-ESCALA.md, fuentes-por-club.md y
@@ -94,3 +67,16 @@ fuentes/**/*.md
 finance-of-sports-project.md
 CLAUDE.md
 dudas-por-club.md
+
+# LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
+# reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).
+# EL ERROR QUE CORRIGE: destrackear resolvía la publicación al precio de perder el
+# respaldo. Guido lo levantó con la pregunta correcta — "si pierdo la mac pierdo semanas
+# de trabajo". Y la alternativa que propuso, hacer el repo privado, **no alcanza sola**:
+# la privacidad del repo controla quién entra a github.com/guidomamone/finance-of-sports,
+# NO qué sirve Netlify. Con el repo privado, financeofsports.com/CLAUDE.md seguiría
+# devolviendo 200 igual (chequeado en producción el 2026-09-20: da 200 hoy).
+# LA SOLUCIÓN REAL es `netlify.toml`: todo se trackea (respaldo completo en GitHub) y lo
+# interno se borra del artefacto de deploy antes de publicar. Ver ese archivo para la
+# lista exacta y el porqué de cada línea.
+# Por eso acá abajo NO hay ninguna regla para `.md` internos: es a propósito.

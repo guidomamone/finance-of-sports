@@ -2021,3 +2021,33 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - `node tools/audit.js` pasa de 20 P2 / 8 P3 a **2 P2 / 8 P3** (23 silenciados con motivo). Los 2
   que quedan son el catch-all de Vélez, diferido por Guido. `auditAll()` sigue en 228 checks, 0 no
   cierran. `ASSET_V` a 172.
+
+## Versión 173: lo interno se saca en el deploy, no del repo — y las 5 cotizaciones van a la tabla
+
+- **Se revierte el destrackeo de las Versiones 167 y 172 y se resuelve bien.** Lo levantó Guido:
+  *"si pierdo la mac pierdo semanas de trabajo"*. Tenía razón — destrackear sacaba los archivos del
+  sitio Y del respaldo en GitHub. Y la alternativa que propuso, hacer el repo privado, **no alcanza
+  sola**: la privacidad del repo controla quién entra a GitHub, no qué sirve Netlify (verificado en
+  producción: `financeofsports.com/CLAUDE.md` devuelve 200 hoy).
+- **`netlify.toml` nuevo**, el primero del proyecto. Todo vuelve a estar trackeado —los 3 documentos
+  de la raíz y las 613 notas de sourcing— y el deploy borra lo interno del artefacto antes de
+  publicar. Simulado sobre una copia del repo: `index.html`, `data/` (49), `js/` (4) y las 41
+  páginas `fuentes/<club>.html` intactas; los internos, fuera.
+- **CORRECCIÓN A UN HALLAZGO DE ESTA MISMA SESIÓN: los 6 skills nunca estuvieron publicados.** Se
+  habían reportado como expuestos (98 menciones a Guido). Netlify no publica archivos ni carpetas
+  que empiezan con punto, así que `.claude/skills/` devuelve 404 en producción. Se verificó con
+  `curl` antes de tocarlos; no hacía falta destrackearlos y no se hizo.
+- **To-do 21(b) cerrado, y con esto el punto 21 entero.** Las 5 cotizaciones de Argentinos Juniors
+  (2015-2019) pasan de estar escritas a mano en su archivo a `FX_CLOSE`, referenciadas con `fxRef`.
+  Antes de moverlas se confirmó que de verdad son de mercado, que es lo que el to-do pedía: sus 3
+  balances auditados no declaran tipo de cambio propio (no tienen Anexo de moneda extranjera, solo
+  notas con partidas ya convertidas). No contradicen los `document_close` de San Lorenzo y Vélez
+  para esas mismas fechas: 9,085 es el vendedor de mercado y 8,988 el comprador que declara cada
+  documento — los dos lados del spread.
+- Tres archivos (`CLAUDE.md`, `ESTADO.md`, `CONVENCIONES.md`) afirmaban "no hay `netlify.toml` ni
+  `_redirects`". Corregidos en el acto, que es la regla que dejó el eje `docs` de la Versión 171.
+- `info-adicional-todos-abiertos-borrar-luego.md` nuevo, a pedido de Guido: contexto por punto
+  abierto para sesiones futuras, temporal. **Lo más importante que contiene: la premisa del to-do 33
+  está vencida.** Medido contra `data/club-leagues/`, hay 3 rankings de liga viables hoy (J1 2025
+  con 10 clubes, LaLiga 2025 con 9, Primera Argentina 2024 con 8), no cero.
+- `node tools/audit.js` en 0 P0 / 0 P1 / 2 P2 / 7 P3. `ASSET_V` a 173.

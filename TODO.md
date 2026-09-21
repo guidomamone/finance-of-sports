@@ -54,6 +54,15 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+> **HAY CONTEXTO EXTRA EN `info-adicional-todos-abiertos-borrar-luego.md`** (sesión 2026-09-20, a
+> pedido de Guido). Ese archivo tiene, por punto, lo que una sesión futura va a necesitar y no está
+> acá: la tabla de cuántos clubes tiene cargados cada liga-temporada (que **desmiente la premisa del
+> punto 33**: hay 3 rankings viables hoy, no cero), qué campos tiene `clubs{}` para el tema de los
+> escudos, dónde está la grilla de mezcla, y por qué el catch-all de Vélez es en realidad una
+> pregunta sobre el techo del modelo. **Es temporal: Guido lo trabaja y lo borra**, y lo que
+> sobreviva se muda al punto que corresponda o a un skill.
+
+
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.
@@ -194,22 +203,6 @@ perdieron sino que se descartaron:
           cualquier fila nueva aparece en los 41, la mayoría en $0. Rinde si el rubro se repite
           entre clubes; no rinde si es solo Vélez. Lo mismo para una fila de "Educación", que es la
           otra mitad del catch-all de Vélez.
-
-21. TIPOS DE CAMBIO SIN PROCEDENCIA VERIFICADA. Queda UNO, y `node tools/audit.js` lo lista:
-    (b) 5 cotizaciones de mercado escritas en el archivo de Argentinos Juniors en vez de `FX_CLOSE`
-        (2015, 2016, 2017, 2018, 2019). Mientras las use un solo club no duplican nada; se mueven a
-        la tabla al confirmar la fecha exacta de cierre de cada una. ANTES DE MOVERLAS hay que
-        confirmar que de verdad sean de mercado y no del propio documento: los 4 de Unión estaban
-        marcados así y resultaron salir de su Anexo V (ver Versión 140), o sea que el rótulo estaba
-        mal, no el número.
-    RESUELTO (a) en la Versión 169: los 5 ejercicios con `fxSource:'unknown'` (San Lorenzo
-    2015/2016/2017, Vélez 2015/2016) resultaron los 5 `document_close`, verificados uno por uno
-    contra el Anexo de moneda extranjera de su propio balance. **La to-do daba los 5 por
-    bloqueados y los 2 motivos ya no eran ciertos**: decía que los PDFs de San Lorenzo "nunca se
-    transcribieron" (están transcriptos desde el 2026-09-17) y que la transcripción de Vélez "no
-    preservó la columna de cambio vigente" (su Anexo VI la tiene). La sospecha de una copia entre
-    clubes también quedó descartada: los dos cierran el 30 de junio, así que les toca la misma
-    cotización oficial y coincidir es lo esperado.
 
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
