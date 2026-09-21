@@ -316,6 +316,13 @@ se reescribe, no se acumula.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
+- `tools/generate-fuentes-index.js` (Versión 175): regenera la sección "Índice de
+  países" de `fuentes-por-club.md` desde los `fuentes/_indice/<País>.md`. Corrélo
+  después de una sesión de sourcing, NO edites esas líneas a mano. `--check` avisa
+  si quedó vieja, `--debug` muestra la clasificación club por club. Cuando no puede
+  decidir si un club tiene documento (la prosa matchea señales de los dos lados, o
+  de ninguno) ABORTA en vez de adivinar: la decisión va a mano a `OVERRIDES`, adentro
+  del script. Hoy hay 12, de la corrida original del 2026-09-20.
 - `Prototyping/`: **28 KB y dos archivos `.md`, ningún prototipo.** Entre el
   2026-09-14 y el 15 se probaron cuatro formas de resolver la pantalla de elegir
   club; ganó el 4 y entre el 15 y el 17 se llevó a producción en seis etapas
@@ -356,7 +363,8 @@ se reescribe, no se acumula.
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
   países, 530 clubes trackeados, 339 con documento encontrado (de los cuales 41
-  están cargados al sitio).
+  están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
+  mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
 **YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `finance-of-sports-project.md`, `dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**

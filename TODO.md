@@ -210,11 +210,33 @@ perdieron sino que se descartaron:
     de acá. **Con esto quedan cerrados los 8 puntos de `PLAN-REMEDIACION-ESCALA.md`.** Lo que sigue
     abierto de escala:
 
-35. NUEVO (sesión 2026-09-20, al partir `fuentes-por-club.md` en índice de países +
-    `fuentes/_indice/<País>.md`): automatizar el mantenimiento de ese índice con
-    `tools/generate-fuentes-index.js`, mismo patrón que `tools/generate-club-index.js`. Hoy los 3
-    números de cada país (clubes trackeados, con documento, chequeo más viejo) se escribieron una
-    vez con un script de un solo uso y se mantienen a mano. **El prompt completo y autocontenido
-    para esa sesión está en `PROMPT-generador-indice-fuentes.md`**, con el criterio de clasificación
-    ya decidido, las dos listas de regex, y los 12 casos que hubo que resolver a mano. No es
-    urgente: el índice se toca una vez por sesión de sourcing y son 44 líneas.
+36. EVALUAR JEV (TypeSafe, modelo `jev-latest`, docs.typesafe.ai) PARA CATEGORIZAR RUBROS
+    AUTOMÁTICAMENTE, cuando el proyecto llegue a **200 clubes cargados** (charlado con Guido el
+    2026-09-21, sesión que descubrió esta API). Es el piso del rango de escala que ya usa
+    `escala-finance-of-sports` (200-3000 clubes) — a ~5 ejercicios por club son ~1000 balances y,
+    a un orden de 12 líneas de rubro por balance, unas 12.000 categorizaciones manuales.
+
+    QUÉ ES: Jev es un modelo "System One" — no genera texto, evalúa un `state` (un texto) contra
+    preguntas tipadas (`Choice`/`Score`/`Noul`) y devuelve una opción + probabilidades +
+    confianza calibrada, todas las preguntas en paralelo, sin parsear nada. Encaja con
+    `club-data-mapping` porque categorizar una línea de rubro YA ES una pregunta de `Choice`: el
+    `state` es la línea (`rawLabel` + monto + nota del documento), el `criteria` son las mismas
+    categorías que ya están en `REVENUE_CATEGORY_LABELS`/`EXPENSE_CATEGORY_LABELS`
+    (`data/category-map.js`) — no hay que inventar taxonomía nueva.
+
+    EL PLAN: las líneas que vuelven con confianza alta se cargan directo a
+    `revenueLines`/`expenseLines`; las de confianza baja se anotan SOLAS en `dudas-por-club.md`
+    en vez de perderse o quedar mal categorizadas sin que nadie lo note — que es justo lo que le
+    pasó a Racing (ver ahí "Categorización interna inconsistente, Ejercicios 2009/2010/2012/2014":
+    5 líneas de ingresos etiquetadas con una categoría de gasto, encontrado recién en una
+    auditoría posterior).
+
+    POR QUÉ NO AHORA: a 41 clubes, la mayoría con 1 solo ejercicio, categorizar a mano (leyendo el
+    balance ya transcripto en una sesión de Claude) sigue siendo más rápido que integrar y
+    VALIDAR una API nueva — el volumen no lo justifica todavía.
+
+    ANTES DE INTEGRARLO EN SERIO (aunque ya se haya llegado a 200 clubes): correr un piloto contra
+    balances YA cargados y verificados (Boca, River) y medir si la confianza que devuelve está
+    bien calibrada en la práctica — no asumirlo de la documentación. Y esto no reemplaza el OCR:
+    Jev necesita texto como `state`, así que el paso de `pdftoppm` + Tesseract (ver CLAUDE.md,
+    "Cada PDF nuevo") sigue haciendo falta igual.

@@ -152,6 +152,17 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
+- `node tools/generate-fuentes-index.js` (Versión 175) — regenera, desde los propios
+  `fuentes/_indice/<País>.md`, la sección "Índice de países" de `fuentes-por-club.md`: la línea de
+  cada país con sus 3 números (clubes trackeados, cuántos con documento, chequeo más antiguo) y el
+  párrafo de totales. Corrélo después de CUALQUIER sesión de sourcing, en vez de actualizar la línea
+  del país a mano. `--check` avisa si quedó vieja; `--debug` imprime la clasificación club por club.
+  **Lo que hay que saber antes de usarlo**: "con documento encontrado" no es un campo, es prosa libre
+  del agente de sourcing, así que se infiere con dos listas de regex (señales de SÍ / señales de NO).
+  Cuando una línea matchea señales de los dos lados o de ninguno, el script ABORTA en vez de
+  adivinar, y la decisión se toma a mano leyendo el `fuentes/<País>/<Club>.md` y se escribe en
+  `OVERRIDES`, adentro del script, con el motivo. Hoy hay 12 overrides, de la corrida original. Si
+  aborta, no es un bug: es el diseño.
 
 ---
 

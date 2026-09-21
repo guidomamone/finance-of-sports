@@ -407,8 +407,8 @@ TU TAREA (dos fases, no ejecutes la fase 2 sin aprobación explícita de Guido):
 
 FASE 1 — Proponé, no ejecutes. Diseñá una función nueva para tools/audit.js que:
 - Lea todos los fuentes/_indice/<País>.md.
-- Extraiga el nombre de cada club (mismo regex que usa PROMPT-generador-indice-fuentes.md para
-  detectar líneas de club, si ese generador ya existe consultalo para no duplicar criterio).
+- Extraiga el nombre de cada club (mismo regex que usa tools/generate-fuentes-index.js para
+  detectar líneas de club — ya existe, consultalo para no duplicar criterio).
 - Detecte nombres de club iguales o muy parecidos (normalizados: sin acentos, minúsculas) en países
   DISTINTOS, y reporte un P3 informativo (no P2 — todavía no está cargado al sitio, es solo un aviso
   temprano) sugiriendo qué id con país convendría usar si algún día se carga.

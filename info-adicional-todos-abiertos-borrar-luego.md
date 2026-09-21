@@ -9,8 +9,8 @@ lo borre — lo que sobreviva se muda al punto de `TODO.md` que corresponda o a 
 internos.
 
 Los puntos van en el mismo orden que `TODO.md`. **Solo están los que ganan algo con esto**; los que
-ya tienen todo lo que hace falta escrito en su propio punto (el 35, que tiene su prompt completo en
-`PROMPT-generador-indice-fuentes.md`, y el 22, que tiene su skill) no aparecen acá.
+ya tienen todo lo que hace falta escrito en su propio punto (el 22, que tiene su skill) no aparecen
+acá.
 
 ---
 

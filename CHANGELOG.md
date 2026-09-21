@@ -2072,3 +2072,29 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Claves nuevas `sel.mezcla.buscaph` y `sel.mezcla.nohits`, con su traducción en `data/lang/en.js`.
 - `auditAll()` en 41 clubes / 228 checks / 0 que no cierran, `node tools/audit.js` en 0 P0 / 0 P1.
   `ASSET_V` a 174, `fuentes.html` y las 41 páginas de club regeneradas por el bump.
+
+## Versión 175: el índice de países de `fuentes-por-club.md` se genera, no se escribe
+
+- **To-do 35 cerrado.** `tools/generate-fuentes-index.js` nuevo: regenera la sección "Índice de
+  países" de `fuentes-por-club.md` (las 44 líneas de país con sus 3 números, más el párrafo de
+  totales) desde los propios `fuentes/_indice/<País>.md`. Hasta ahora esos números se habían
+  escrito una vez con un script de un solo uso y se mantenían a mano después de cada sesión de
+  sourcing. `--check` avisa si quedó vieja, `--debug` imprime la clasificación club por club.
+- "Con documento encontrado" no es un campo sino prosa libre del agente de sourcing, así que se
+  infiere con dos listas de regex (señales de SÍ / señales de NO), las mismas de la corrida
+  original del 2026-09-20. Cuando una línea matchea señales de los DOS lados, o de ninguna, el
+  script ABORTA con el detalle en vez de adivinar: la decisión se toma a mano y se escribe en
+  `OVERRIDES`, adentro del script, con el motivo. Los 12 conflictos de la corrida original quedaron
+  ahí. El script también avisa si un override ya no matchea ninguna línea, o si un país con clubes
+  no tiene ninguna fecha de "Último chequeo".
+- No usa marcadores START/END como `generate-club-index.js`: se ancla en el heading `## Índice de
+  países` y en el bloque contiguo de líneas `- [`, para no tener que tocar el archivo al estrenarlo.
+- Verificado: corrido sobre el estado actual del repo da 44 países / 530 clubes / 339 con documento
+  —los tres números que ya estaban escritos— con `git diff` vacío, 0 líneas ambiguas y los 12
+  overrides usados. Probado además que el camino de escritura restaura el archivo byte por byte
+  después de ensuciarlo a mano.
+- `PROMPT-generador-indice-fuentes.md` borrado: era el brief de esta sesión y ya cumplió. Se
+  actualizaron sus dos referencias vivas (`PLAN-REMEDIACION-ESCALA.md`, que ahora manda al script, e
+  `info-adicional-todos-abiertos-borrar-luego.md`); la de este changelog queda como histórica.
+- El script sumado a la sección de herramientas de `ESTADO.md` y del skill
+  `start-session-finance-of-sports-project`.
