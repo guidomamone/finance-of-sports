@@ -113,6 +113,21 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   queda al fondo de la lista para siempre.** Escribirlo es la única señal de que los OTROS puntos
   de la lista también pueden estar en la misma situación — fue así como, después del primer caso,
   se encontró el segundo.
+- "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" (to-do 20(h), Versión 172, decisión de
+  Guido). Es la misma familia que "SIN DATO NO ES CERO" de más arriba, pero un nivel más abajo: no
+  en los KPIs, sino en cada fila de Formato simplificado.
+  LA REGLA, implementada en `bucketize()` (`js/finanzas-calc.js`): **si una sección tiene un bolsón
+  "sin desglosar por la fuente" (`lump_football_operations`/`_expense`) CON PLATA ADENTRO, cualquier
+  otra fila que dé cero se muestra "—", no $0.** Esa plata puede estar adentro del bolsón, así que
+  el cero es un "no sabemos". Un club que SÍ desglosa todo y no vendió jugadores sigue mostrando
+  "Venta de Jugadores $0", porque ahí el cero es real: sin bolsón no hay ambigüedad. El catch-all
+  queda afuera de la marca a propósito — que dé cero significa que todas las líneas encontraron su
+  fila, que es información buena.
+  EL CASO QUE LO MOTIVÓ: Gamba Osaka mostraba "Televisión $0" con 5.074 de sus 8.817 M JPY en el
+  bolsón, porque el informe de la J.League publica 3 líneas por club y el desglose existe solo a
+  nivel división. Un periodista que comparaba Gamba con Real Madrid leía que un club de primera
+  japonesa no cobra derechos de televisación.
+  NO MUEVE NINGÚN NÚMERO: las filas marcadas valen 0, los totales son idénticos.
 - NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde

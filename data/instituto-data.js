@@ -69,23 +69,50 @@ const institutoExpenseLinesByYear = {
     // Sede 170,658677 + Colegio 979,100475 + Tienda 71,134791 = 1.435,840818).
     { rawLabel:'Remuneraciones y cargas (Fútbol Profesional)', normalizedCategory:'wages_squad', amountNative:-2501.512775, disclosureLevel:'detailed' },
     { rawLabel:'Remuneraciones y cargas (Básquet/La Agustina/Sede/Colegio/Tienda)', normalizedCategory:'youth_other_sports_expense', amountNative:-1435.840818, disclosureLevel:'detailed' },
-    // Resto de Anexo V (Total 2024, sin desglose por sector — no son filas de personal, no aplica el
-    // criterio de columna Fútbol Profesional de arriba).
-    { rawLabel:'Seguros', normalizedCategory:'other_expenses', amountNative:-7.003365, disclosureLevel:'detailed' },
+    // RESTO DE ANEXO V, DESGLOSADO POR SECTOR (corregido el 2026-09-20, to-do 20(b)).
+    // ACÁ DECÍA "sin desglose por sector — no son filas de personal, no aplica el criterio de
+    // columna Fútbol Profesional de arriba", Y ERA FALSO: el Anexo V tiene las 6 columnas
+    // (FUTBOL / BASQUET / LA AGUSTINA / SEDE / COLEGIO / TIENDA) para TODAS sus filas, no solo
+    // para las de personal. Con el desglose sin usar, 2.425,8 M ARS que el propio balance
+    // atribuye a sectores no-fútbol quedaban en el catch-all "Otros gastos", que se llevaba el
+    // 42% del ejercicio y no decía nada. Es el criterio de club-data-mapping §14 (Vélez), que
+    // este archivo ya aplicaba a Remuneraciones y a Honorarios y no al resto.
+    // NINGÚN PESO SE MUEVE: `other_expenses` y `youth_other_sports_expense` son las dos gasto
+    // operativo en efectivo y las dos suman a `otherExpenses` en computeYearGeneric().
+    // Las 5 filas que son 100% de un solo sector no-fútbol van enteras; las 3 mixtas se parten
+    // en la columna FUTBOL y la suma del resto, y cada par cierra exacto contra el total impreso
+    // de su fila.
+    { rawLabel:'Seguros (Colegio)', normalizedCategory:'youth_other_sports_expense', amountNative:-7.003365, disclosureLevel:'detailed' },
     { rawLabel:'Honorarios (Básquet/La Agustina/Sede/Colegio)', normalizedCategory:'youth_other_sports_expense', amountNative:-1118.866174, disclosureLevel:'detailed' },
-    { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-1836.924723, disclosureLevel:'detailed' },
-    { rawLabel:'Mantenimiento de bienes de uso', normalizedCategory:'other_expenses', amountNative:-872.440443, disclosureLevel:'detailed' },
-    { rawLabel:'Vigilancia sede', normalizedCategory:'other_expenses', amountNative:-91.516356, disclosureLevel:'detailed' },
-    { rawLabel:'Servicios de energía, agua, gas, etc.', normalizedCategory:'other_expenses', amountNative:-118.439462, disclosureLevel:'detailed' },
+    // Diversos: FUTBOL 1.123,895617 + (Básquet 264,516282 + La Agustina 207,123376 + Sede
+    // 142,326601 + Colegio 73,671180 + Tienda 25,391667 = 713,029106) = 1.836,924723 impreso.
+    // La columna FUTBOL se queda en el catch-all porque el Anexo no la abre más: "Diversos" es
+    // literalmente lo que dice el documento y no hay dónde ir a buscar el detalle.
+    { rawLabel:'Diversos (Fútbol Profesional)', normalizedCategory:'other_expenses', amountNative:-1123.895617, disclosureLevel:'detailed' },
+    { rawLabel:'Diversos (Básquet/La Agustina/Sede/Colegio/Tienda)', normalizedCategory:'youth_other_sports_expense', amountNative:-713.029106, disclosureLevel:'detailed' },
+    // Mantenimiento: FUTBOL 167,652401 + (La Agustina 403,420203 + Sede 155,621600 + Colegio
+    // 145,746239 = 704,788042) = 872,440443 impreso.
+    { rawLabel:'Mantenimiento de bienes de uso (Fútbol Profesional)', normalizedCategory:'other_expenses', amountNative:-167.652401, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento de bienes de uso (La Agustina/Sede/Colegio)', normalizedCategory:'youth_other_sports_expense', amountNative:-704.788042, disclosureLevel:'detailed' },
+    { rawLabel:'Vigilancia sede (Sede)', normalizedCategory:'youth_other_sports_expense', amountNative:-91.516356, disclosureLevel:'detailed' },
+    // Servicios: FUTBOL 13,240852 + (La Agustina 76,165275 + Sede 16,249603 + Colegio 6,010492 +
+    // Tienda 6,773240 = 105,198610) = 118,439462 impreso.
+    { rawLabel:'Servicios de energía, agua, gas, etc. (Fútbol Profesional)', normalizedCategory:'other_expenses', amountNative:-13.240852, disclosureLevel:'detailed' },
+    { rawLabel:'Servicios de energía, agua, gas, etc. (La Agustina/Sede/Colegio/Tienda)', normalizedCategory:'youth_other_sports_expense', amountNative:-105.198610, disclosureLevel:'detailed' },
     { rawLabel:'Gastos generales por eventos deportivos', normalizedCategory:'match_organisation_expense', amountNative:-895.612298, disclosureLevel:'detailed' },
     { rawLabel:'Viajes y concentraciones', normalizedCategory:'match_organisation_expense', amountNative:-1022.310864, disclosureLevel:'detailed' },
-    { rawLabel:'Compras de mercadería', normalizedCategory:'other_expenses', amountNative:-669.262280, disclosureLevel:'detailed' },
+    { rawLabel:'Compras de mercadería (Tienda)', normalizedCategory:'youth_other_sports_expense', amountNative:-669.262280, disclosureLevel:'detailed' },
     // Comisiones/rescisiones de pases: en `other_expenses`, NO en `player_amortisation` (precedente
     // de Racing, ver club-data-mapping sección 13 — Boca tampoco mezcla comisiones ahí).
+    // RE-CONFIRMADO el 2026-09-20 contra el Anexo V: esta fila es 100% de la columna FUTBOL
+    // (3.284.765.346 y cero en las otras cinco), o sea que NO hay un desglose por sector que
+    // aprovechar como en las filas de arriba. Se queda donde está, y es la línea que sola explica
+    // 19,6% de los gastos del ejercicio: el catch-all de Instituto no baja de ahí sin cambiar el
+    // criterio de comisiones, que es una decisión ya tomada para todo el sitio.
     { rawLabel:'Comisiones y acuerdos de rescisión', normalizedCategory:'other_expenses', amountNative:-3284.765346, disclosureLevel:'detailed' },
-    { rawLabel:'Limpieza y vigilancia', normalizedCategory:'other_expenses', amountNative:-22.460193, disclosureLevel:'detailed' },
+    { rawLabel:'Limpieza y vigilancia (Sede)', normalizedCategory:'youth_other_sports_expense', amountNative:-22.460193, disclosureLevel:'detailed' },
     { rawLabel:'Compras y préstamos de jugadores', normalizedCategory:'player_amortisation', amountNative:-213.545381, disclosureLevel:'detailed' },
-    { rawLabel:'Vigilancia La Agustina', normalizedCategory:'other_expenses', amountNative:-112.503089, disclosureLevel:'detailed' },
+    { rawLabel:'Vigilancia La Agustina (La Agustina)', normalizedCategory:'youth_other_sports_expense', amountNative:-112.503089, disclosureLevel:'detailed' },
     // Anexo IV, "Gastos Generales de Administración" (1.919,810448 M total impreso).
     { rawLabel:'Remuneraciones y cargas (administración)', normalizedCategory:'admin_general_expense', amountNative:-136.389896, disclosureLevel:'detailed' },
     { rawLabel:'Honorarios (administración)', normalizedCategory:'admin_general_expense', amountNative:-201.457618, disclosureLevel:'detailed' },

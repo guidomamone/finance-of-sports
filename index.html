@@ -203,6 +203,10 @@ consulta puntual, nunca lectura de corrido.
   /* "Sin dato" no es un número: no va en el mismo cuerpo ni en el mismo peso que una
      cifra, para que no se lea como una (Versión 152, to-do 31). */
   .stat .value.nodato{font-size:17px;font-weight:400;color:var(--muted);font-style:italic;}
+  /* to-do 20(h): fila de Formato simplificado cuyo cero es un "no sabemos" porque la fuente
+     agrupa esa plata en un bolsón sin desglosar. El "—" ya lo escribe buildNativeSectionHtml();
+     esto solo lo atenúa para que no compita visualmente con las filas que sí tienen dato. */
+  .mini-table tr.pl-nodato td, table tr.pl-nodato td{color:var(--muted);}
   .stat .value.pos{color:var(--green);}
   .stat .value.neg{color:var(--red);}
   /* Qué ejercicio es cada stat de Inicio (Versión 140). Antes iba en un `title` (tooltip),
@@ -1275,39 +1279,39 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '170';</script>
-<script src="data/lang/langs.js?v=170"></script>
-<script src="js/i18n.js?v=170"></script>
-<script src="data/clubs.js?v=170"></script>
+<script>window.ASSET_V = '172';</script>
+<script src="data/lang/langs.js?v=172"></script>
+<script src="js/i18n.js?v=172"></script>
+<script src="data/clubs.js?v=172"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=170"></script>
+<script src="data/club-index.js?v=172"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=170"></script>
-<script src="data/club-leagues.js?v=170"></script>
-<script src="data/category-map.js?v=170"></script>
-<script src="data/site-labels.js?v=170"></script>
-<script src="data/currency-map.js?v=170"></script>
-<script src="data/sources-view.js?v=170"></script>
+<script src="data/leagues.js?v=172"></script>
+<script src="data/club-leagues.js?v=172"></script>
+<script src="data/category-map.js?v=172"></script>
+<script src="data/site-labels.js?v=172"></script>
+<script src="data/currency-map.js?v=172"></script>
+<script src="data/sources-view.js?v=172"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=170"></script>
-<script src="js/finanzas-render.js?v=170"></script>
+<script src="js/finanzas-calc.js?v=172"></script>
+<script src="js/finanzas-render.js?v=172"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=170"></script>
+<script src="js/selector.js?v=172"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

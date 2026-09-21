@@ -76,3 +76,21 @@ Business Books/
 # Los archivos siguen en la máquina de Guido y se usan igual en cada sesión de
 # sourcing; lo único que cambia es que no se publican.
 fuentes/**/*.md
+
+# LOS 3 DOCUMENTOS INTERNOS DE LA RAÍZ NO SE TRACKEAN (to-do 39, decisión de Guido del
+# 2026-09-20: opción (b) de las tres que se le presentaron). Mismo criterio que las notas
+# de sourcing de acá arriba y que `note` vs. `publicNote` de la Versión 127: **lo que se
+# escribió PARA Guido no se publica; lo que describe el proyecto, sí.**
+#   · finance-of-sports-project.md — 481 KB de narrativa interna, 224 menciones a Guido.
+#   · CLAUDE.md — sus instrucciones de trabajo, 16 menciones.
+#   · dudas-por-club.md — las preguntas sin contestar que piensa hacerles a los clubes.
+# Los que SIGUEN trackeados a propósito (son documentación legítima del proyecto, no
+# cocina): ESTADO.md, ARQUITECTURA.md, CONVENCIONES.md, CHANGELOG.md, TODO.md,
+# QUE-ES-REAL-historico.md, PLAN-REMEDIACION-ESCALA.md, fuentes-por-club.md y
+# PROMPT-generador-indice-fuentes.md.
+# OJO, CONSECUENCIA ACEPTADA: `CLAUDE.md` deja de viajar al remoto, así que un clon nuevo
+# del repo NO trae las instrucciones del proyecto y hay que copiarlas a mano. Los archivos
+# siguen en la máquina de Guido; lo único que se pierde es el respaldo en GitHub.
+finance-of-sports-project.md
+CLAUDE.md
+dudas-por-club.md

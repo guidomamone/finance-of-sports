@@ -54,22 +54,6 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-39. NUEVO (sesión 2026-09-20, apareció al resolver el 37). **Los 12 `.md` de la raíz del proyecto
-    están publicados igual que lo estaban las notas de `fuentes/`**, y por el mismo motivo: el repo
-    se deploya entero. Cualquiera puede leer `financeofsports.com/TODO.md`,
-    `financeofsports.com/CLAUDE.md` y `financeofsports.com/finance-of-sports-project.md` (447 KB de
-    narrativa interna, con el razonamiento de cada decisión y a Guido por nombre en todo el
-    archivo). La lista completa: `ARQUITECTURA.md`, `CHANGELOG.md`, `CLAUDE.md`, `CONVENCIONES.md`,
-    `ESTADO.md`, `PLAN-REMEDIACION-ESCALA.md`, `PROMPT-generador-indice-fuentes.md`,
-    `QUE-ES-REAL-historico.md`, `TODO.md`, `dudas-por-club.md`, `finance-of-sports-project.md`,
-    `fuentes-por-club.md`.
-    NO SE RESOLVIÓ CON EL 37 A PROPÓSITO: el 37 estaba scopeado a `fuentes/` y esto es una decisión
-    aparte, porque no todos son iguales. `finance-of-sports-project.md`, `CLAUDE.md` y
-    `dudas-por-club.md` son claramente internos; `ESTADO.md` o `ARQUITECTURA.md` podrían incluso
-    servir como documentación pública del proyecto si esa fuera la intención. Decide Guido, archivo
-    por archivo o en bloque. El mecanismo ya está escrito y probado: una regla en `.gitignore` más
-    `git rm --cached`, igual que se hizo con las 613 notas de sourcing (Versión 167).
-
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.
@@ -187,53 +171,29 @@ perdieron sino que se descartaron:
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
 
-20. LOS HALLAZGOS DE AUDITORÍA QUE SIGUEN ABIERTOS (vienen de la primera corrida, Versión 122-123,
-    `auditorias/2026-09-13.md`). Ninguno es P0 ni P1: los 228 tie-outs cierran. **Quedan 4** — (a),
-    (d), (e) y (g) se cerraron; su historia está en `CHANGELOG.md`.
+20. LO ÚNICO QUE QUEDA DE LOS HALLAZGOS DE AUDITORÍA (primera corrida, Versión 122-123). De los
+    8 subpuntos originales quedó **medio**, y es una decisión que Guido difirió a propósito. Todo lo
+    demás está cerrado; la historia está en `CHANGELOG.md`.
 
-    (b) 3 ejercicios con el catch-all arriba del 40%, y NO son el mismo caso (desglose medido el
-        2026-09-20, por eso está acá y no hay que volver a calcularlo):
-        · **instituto 2024 Gastos (42%)** — dos líneas explican 31 de esos 42 puntos: "Comisiones y
-          acuerdos de rescisión" (19,6%) y "Diversos" (11,0%). La primera es identificable y
-          específica de fútbol (comisiones de representantes + acuerdos de rescisión de contrato):
-          es la única de las tres que tiene un arreglo claro, darle una categoría propia o sumarla
-          a un bucket existente. "Diversos" es literalmente lo que dice el documento y no se puede
-          mejorar sin volver al balance a buscar si lo abre en algún anexo.
-        · **velez 2016 Ingresos (49%) y velez 2017 Ingresos (43%)** — el 100% del catch-all es
-          `other_income`, y son 5 líneas identificables las dos veces: "Por servicios de enseñanza"
-          + "Subsidios estatales a la educación" (Vélez tiene colegio: 20,2% en 2016 y 22,5% en
-          2017, o sea que es la mitad del catch-all y es UN negocio real, no un cajón de sastre),
-          "Otros derechos de fútbol profesional", "Derechos de formación" y "Uso del estadio".
-        DECISIÓN PENDIENTE DE GUIDO: agregar filas nuevas a Formato simplificado (candidatas:
-        "Educación" y "Alquiler de estadio") tiene el costo de que esas filas aparecen para TODOS
-        los clubes, la mayoría en $0 — que es la regla de la Versión 53, las rows son siempre las
-        mismas entre clubes. Vale la pena si el rubro se repite en otros clubes, no si es solo
-        Vélez.
-
-    (c) 16 líneas con el signo opuesto al de su sección y peso real (deducciones sobre la receita de
-        los clubes brasileños, "Costo de desarrollo de jugadores propios (reclasificación)" de Vélez
-        2015/2016/2017). Probablemente todas correctas: confirmar contra la transcripción `.md` (NO
-        contra el PDF, ya están todas transcriptas) y recién ahí silenciarlas en
-        `tools/audit-ignore.json` con el motivo escrito.
-
-    (f) RESUELTO EN SU MAYOR PARTE (Versión 140). `river 2024` tenía sus 8 líneas de gasto en
-        `other_expenses`; se mapeó cada destino al bucket que ya existía y el catch-all quedó en 0%.
-        LO QUE FALTA es UNA celda: fila "Sueldos y cargas sociales" x columna "Fútbol profesional"
-        del Anexo VIII (páginas 59-62 del PDF, y la transcripción `.md` ya existe). El día que se lea
-        y verifique, esa porción pasa de la fila "Fútbol profesional (sin desglosar por la fuente)"
-        a `wages_squad`.
-
-    (h) LO MÁS IMPORTANTE, y es una decisión de Guido, no una corrección mecánica: el sitio hoy
-        muestra IGUAL dos cosas distintas — "la fuente reporta cero" y "la fuente no lo desglosa".
-        Un club japonés muestra Televisión = $0 con la mitad de sus ingresos en el catch-all, porque
-        el documento de la J.League solo publica 3 líneas por club. Un periodista que compare Gamba
-        Osaka con Real Madrid lee que uno no cobra televisación. Mismo problema, distinto origen, en
-        `river 2024`, cuyos rubros están etiquetados por SECTOR. Las 2 opciones, NINGUNA de las
-        cuales mueve un número (cambian bajo qué fila se muestra): usar
-        `lump_football_operations`/`_expense` (que ya existen y se muestran como "sin desglosar por
-        la fuente") en vez del catch-all genérico, y mostrar "—" en vez de "$0" en los buckets que
-        la fuente no reporta. Es la misma decisión que ya se tomó para la deuda en la Versión 167,
-        aplicada a los rubros.
+    (b) **VÉLEZ 2016 (49%) y 2017 (43%) de Ingresos, el catch-all.** Instituto ya salió de acá
+        (Versión 172: su Anexo V sí tenía desglose por sector y bajó de 42% a 27%). Vélez no, y es
+        otro problema: el 100% de su catch-all es `other_income` y son 5 líneas identificables las
+        dos veces — "Por servicios de enseñanza" + "Subsidios estatales a la educación" (**Vélez
+        tiene colegio**: 20,2% en 2016 y 22,5% en 2017, o sea la mitad del catch-all y un negocio
+        real), "Otros derechos de fútbol profesional", "Derechos de formación" y "Uso del estadio".
+        Ese desglose ya está MEDIDO, no hay que volver a calcularlo.
+        DECISIÓN DE GUIDO (2026-09-20): **está de acuerdo en agregar una fila de estadio, pero
+        quiere tratar el tema con profundidad en una sesión propia, así que NO se implementó.**
+        DOS COSAS QUE HAY QUE RESOLVER EN ESA SESIÓN, y por eso no alcanzaba con agregarla y listo:
+        · Guido la nombró **"Gastos de Estadio"**, que es una fila de GASTOS, y el problema de Vélez
+          está del lado de los INGRESOS (su línea es "Uso del estadio", alquiler del estadio, un
+          ingreso). Hay que aclarar si quiere las dos filas, solo la de ingresos, o si el tema es
+          más amplio de lo que este punto cubre.
+        · Y está el costo que hace que valga la pena pensarlo: por la regla de la Versión 53, las
+          filas de Formato simplificado son SIEMPRE las mismas para todos los clubes, así que
+          cualquier fila nueva aparece en los 41, la mayoría en $0. Rinde si el rubro se repite
+          entre clubes; no rinde si es solo Vélez. Lo mismo para una fila de "Educación", que es la
+          otra mitad del catch-all de Vélez.
 
 21. TIPOS DE CAMBIO SIN PROCEDENCIA VERIFICADA. Queda UNO, y `node tools/audit.js` lo lista:
     (b) 5 cotizaciones de mercado escritas en el archivo de Argentinos Juniors en vez de `FX_CLOSE`

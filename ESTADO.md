@@ -151,8 +151,10 @@ se reescribe, no se acumula.
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
   ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 20 P2, 8 P3 y 6
-  silenciados con su motivo en `tools/audit-ignore.json` (ver to-do 20). Desde la Versión 125 audita además la PROCEDENCIA de cada
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **2 P2**, 8 P3 y 23
+  silenciados con su motivo en `tools/audit-ignore.json`. Los 2 que quedan son el mismo
+  hallazgo (el catch-all de Vélez 2016 y 2017), diferido por Guido a una sesión propia
+  (to-do 20(b)). Desde la Versión 125 audita además la PROCEDENCIA de cada
   tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones

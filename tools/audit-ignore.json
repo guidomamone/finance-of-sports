@@ -34,5 +34,40 @@
     "code": "balance-sin-pat",
     "match": "clubamerica 2025",
     "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/clubamerica-data.js."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "botafogo 2024 ingreso \"Deduções sobre a receita",
+    "motivo": "VERIFICADO contra Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md (to-do 20(c), 2026-09-20). La DRE lo imprime como 'Deduções sobre a receita ... (55.051)', entre paréntesis, que es la notación contable brasilera para negativo. Es una deducción real sobre la receita bruta (impostos, direito de arena), no un signo dado vuelta."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "coritiba 2024 ingreso \"(-) Tributos sobre receitas",
+    "motivo": "VERIFICADO contra Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md (to-do 20(c), 2026-09-20). Impreso '(3.501.142)' en dos lugares del documento (DRE y nota), entre paréntesis. Deducción real."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "cruzeiro 2025 ingreso \"Impostos e contribuições",
+    "motivo": "VERIFICADO contra Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md (to-do 20(c), 2026-09-20). Impreso '(-) Impostos e contribuições/ Vendas canceladas (49.669)': lleva el signo menos explícito ADEMÁS de los paréntesis. Deducción real."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "ituano 2024 ingreso \"(-) Impostos Incidentes",
+    "motivo": "VERIFICADO contra Clubes/Brasil/Ituano/relatorio-auditoria-2024.md (to-do 20(c), 2026-09-20). Impreso '(-) Impostos Incidentes s/ Vendas e Serviços (1.071.240,15)', con el menos explícito y entre paréntesis. Deducción real."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "envigado 2025 ingreso \"Devoluciones, rebajas y descuentos",
+    "motivo": "VERIFICADO POR ARITMÉTICA contra Clubes/Colombia/Envigado/estados-financieros-2025.md (to-do 20(c), 2026-09-20). ES EL ÚNICO DE LOS CINCO QUE NO TRAE PARÉNTESIS NI SIGNO: la nota de ingresos lista 'Devoluciones rebajas y descuentos 6.956.359.533' como un número positivo más de la lista. Se resolvió sumando la nota entera: los 17 rubros dan 43.845.339.915 y el 'Total Ingresos de actividades ordinarias' impreso es 36.888.980.382. La resta da EXACTO al peso (43.845.339.915 - 6.956.359.533 = 36.888.980.382); sumarlo se va 13.912.719.066 de largo. O sea que el documento lo imprime en positivo y lo resta en el total. La política contable de la Nota dice lo mismo: los ingresos se reconocen netos de 'rebajas, descuentos comerciales y similares'."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "gasto \"Costo de desarrollo de jugadores propios (reclasificación)\"",
+    "motivo": "VERIFICADO contra Clubes/Argentina/Velez Sarsfield/balance-general-2024.md, Nota 1.g y Anexo III (to-do 20(c), 2026-09-20). ESTA ENTRADA CUBRE LOS 11 EJERCICIOS DE VÉLEZ (2015 a 2025): es la MISMA línea repetida, con un solo motivo. No es un gasto con el signo dado vuelta: es un CRÉDITO contra los gastos del ejercicio. El costo de formar jugadores propios se capitaliza en el intangible 'Plantel profesional de fútbol' en vez de quedar como gasto del período, y el Anexo lo imprime negativo por eso — ej. 2024: '(5.536.859.420)'. Como los gastos se guardan en negativo, el crédito entra en POSITIVO, que es justo lo que el chequeo marca. Ya estaba descrito en club-data-mapping §15, que documenta el bug de verifyTieOuts() que este mismo crédito destapó."
+  },
+  {
+    "code": "clubid-hardcodeado",
+    "match": "isBoca2027",
+    "motivo": "DECISIÓN DE GUIDO (to-do 20(g), cerrado el 2026-09-20, reafirmada ese día). Es el ÚNICO literal de clubId que queda en el código y se queda a propósito: gatea los 3 cards de torneo, una feature que hoy tiene UN club y UN ejercicio (Boca 2026/27). Generalizarla ahora significa inventar un esquema de datos sobre un solo caso, que es como se diseña mal; el costo de dejarla es una línea de deuda conocida y anotada. EL DÍA QUE UN SEGUNDO CLUB TRAIGA DESGLOSE POR TORNEO, ahí se generaliza, con dos casos reales adelante — y ese día hay que BORRAR esta entrada, no ampliarla. Los otros 4 literales que tenía el proyecto se fueron en las Versiones 135 y 137."
   }
 ]

@@ -838,6 +838,19 @@ no alcanza) — y correr Tesseract sobre la imagen ya rotada. Si además la pág
 reducido, puede hacer falta subir el DPI del render ANTES de rotar (900dpi en vez de 300-450) para
 que el texto tenga suficiente resolución tras la rotación.
 
+**CASO REAL DE LO QUE CUESTA NO CHEQUEAR LA ROTACIÓN (River 2024, Anexo VIII, resuelto el
+2026-09-20).** Una sesión anterior intentó transcribir esa matriz (30 conceptos x 8 áreas, páginas
+59-62), encontró "diferencias no explicadas al sumar celdas individuales", y escribió en la
+transcripción que no se transcribía "para evitar publicar cifras potencialmente incorrectas",
+recomendando re-abrir el PDF con zoom. La decisión de no publicar fue la correcta; el diagnóstico
+no. **Las 4 páginas están rotadas 90°**, y OCRearlas sin enderezar mezcla columnas de filas
+distintas — que es exactamente el síntoma que se describía. Con `--psm 0` (3 segundos) se ve
+`Rotate: 90` en las cuatro; rotando y re-OCReando, las filas salen limpias y **reconcilian exacto**
+contra su total impreso. El to-do quedó abierto meses por un chequeo de 3 segundos que no se hizo.
+MORALEJA, y por eso esto está acá arriba y no en una nota al pie: **si las celdas de una tabla
+escaneada no reconcilian, chequeá la rotación ANTES de concluir que el OCR no sirve.** Una matriz
+que no cierra por rotación se ve igual que una que no cierra por mala calidad de escaneo.
+
 **Mejor que adivinar `90` vs `-90` a mano: Tesseract mismo detecta el ángulo (OSD, "Orientation and
 Script Detection"), rápido (menos de 1 segundo por página) y confiable en la práctica sobre ~5.000
 páginas de la transcripción masiva de la Versión 156** — `tesseract page-NN.png - --psm 0` devuelve

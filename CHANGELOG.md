@@ -1980,3 +1980,44 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Regla nueva en `CONVENCIONES.md`: cuando una tarea se cierra y el motivo por el que estaba trabada
   resultó falso, eso se escribe — es la única señal de que los otros puntos pueden estar igual.
 - Ninguna de las dos corridas agregó puntos a la to-do.
+
+## Versión 172: el sitio deja de decir que un club japonés no cobra televisación
+
+- **To-do 20(h) cerrado, decisión de Guido: se hacen los dos cambios.** `bucketize()` marca `unknown`
+  toda fila de Formato simplificado que dé cero **cuando su sección tiene un bolsón "sin desglosar
+  por la fuente" con plata adentro**, y `buildNativeSectionHtml()` la pinta "—" en vez de $0, valor
+  y porcentaje. Gamba Osaka pasa de "Televisión $0" a "Televisión —", con sus 33,8 M USD de bolsón
+  a la vista. Un club que SÍ desglosa todo sigue mostrando $0 donde el cero es real (verificado con
+  Estudiantes, que muestra "Estadio 0.0" porque ese cero existe). **Ningún total cambia.** La otra
+  mitad del punto (usar `lump_*` en vez del catch-all genérico) ya estaba hecha en la Versión 141.
+- **To-do 20(f) cerrado.** Se recuperó la celda "Sueldos y cargas sociales" x "Fútbol profesional"
+  del Anexo VIII de River: **$12.889.436.305**, el 16,3% de esa columna, que pasa de la fila "sin
+  desglosar por la fuente" a `wages_squad`. La sesión anterior no había podido: las 4 páginas del
+  Anexo están **rotadas 90°** en el escaneo, y OCRearlas sin enderezar mezcla columnas — que era
+  exactamente el síntoma ("diferencias no explicadas") que la hizo abortar. Verificado por tres
+  caminos: la fila suma exacto contra su total impreso, la fila de totales del Anexo coincide exacto
+  con los 8 valores por área ya cargados, y una segunda fila al azar también cierra.
+- **To-do 20(c) cerrado.** Los 16 hallazgos de signo invertido resultaron los 16 correctos, cada uno
+  verificado contra su transcripción y silenciado con el motivo escrito. Cuatro son deducciones
+  brasileñas impresas entre paréntesis; **Envigado fue el único que no traía ni paréntesis ni signo**
+  y se resolvió sumando la nota entera: los 17 rubros dan 43.845.339.915 y el total impreso es
+  36.888.980.382, o sea que se resta, exacto al peso. Los 11 de Vélez son la misma línea repetida:
+  un crédito por capitalizar el costo de formar jugadores propios, no un gasto con el signo dado
+  vuelta.
+- **To-do 20(b), mitad cerrada.** El Anexo V de Instituto SÍ desglosa por sector (FUTBOL / BASQUET /
+  LA AGUSTINA / SEDE / COLEGIO / TIENDA) en TODAS sus filas, no solo en las de personal — el archivo
+  decía lo contrario. Con el desglose sin usar, 2.425,8 M ARS que el propio balance atribuye a
+  sectores no-fútbol quedaban en el catch-all: **de 42% a 27%**. Lo que queda ahí es "Comisiones y
+  acuerdos de rescisión" (19,6%, 100% de la columna FUTBOL, se queda por la decisión ya tomada sobre
+  comisiones) y "Diversos" de fútbol, que el Anexo no abre más.
+- **To-do 20(g) cerrado** por decisión de Guido: `isBoca2027` se queda. Silenciado con el motivo y
+  con la condición para reabrirlo (el día que un segundo club traiga desglose por torneo).
+- **To-do 39 cerrado**, opción (b) de Guido: se destrackean `finance-of-sports-project.md`,
+  `CLAUDE.md` y `dudas-por-club.md`. Los otros 9 `.md` de la raíz siguen trackeados a propósito, son
+  documentación del proyecto. Consecuencia aceptada y anotada: un clon nuevo del repo ya no trae
+  `CLAUDE.md`.
+- Reglas nuevas: "la fuente reporta cero" vs. "no lo desglosa" en `CONVENCIONES.md`, y el caso de la
+  rotación de River en `club-data-mapping` §15.
+- `node tools/audit.js` pasa de 20 P2 / 8 P3 a **2 P2 / 8 P3** (23 silenciados con motivo). Los 2
+  que quedan son el catch-all de Vélez, diferido por Guido. `auditAll()` sigue en 228 checks, 0 no
+  cierran. `ASSET_V` a 172.

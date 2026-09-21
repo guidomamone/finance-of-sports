@@ -120,7 +120,14 @@
   // total de la columna Actual) — 5 celdas por fila en vez de 4: Rubro, Actual, % Actual,
   // Presupuesto, % Presupuesto.
   function buildNativeSectionHtml(sectionLabel, curList, prevList, meta, prevMeta, targetCurrency, groupPrefix){
-    const findPrevVal = (label) => { if(!prevList) return null; const m = prevList.find(x => x.label === label); return m ? m.value : null; };
+    const findPrevRow = (label) => { if(!prevList) return null; return prevList.find(x => x.label === label) || null; };
+    const findPrevVal = (label) => { const m = findPrevRow(label); return m ? m.value : null; };
+    // to-do 20(h): `unknown` lo pone bucketize() cuando la sección tiene un bolsón "sin desglosar
+    // por la fuente" con plata adentro y esta fila da cero — o sea que el cero es un "no sabemos",
+    // no un cero. Se pinta "—", el mismo carácter que ya usa la tabla para "no hay columna
+    // anterior", y el % también, porque un porcentaje de un dato que no existe no significa nada.
+    const celdaValor = (row, val) => row && row.unknown ? '—' : fmtDisplay(val);
+    const celdaPct = (row, val, tot) => row && row.unknown ? '—' : fmtPctOfTotal(val, tot);
     // El total tiene que estar calculado ANTES de generar el HTML de cada fila (para poder mostrar
     // el % de cada una contra el total ya cerrado), antes se acumulaba fila por fila en el mismo
     // paso en el que se generaba su HTML, así que ninguna fila conocía el total final todavía.
@@ -130,24 +137,25 @@
       const curVal = nativeDisplayVal(c.value, meta, targetCurrency);
       const prevRaw = findPrevVal(c.label);
       const prevVal = prevRaw !== null ? nativeDisplayVal(prevRaw, prevMeta, targetCurrency) : null;
-      const pctCell = `<td>${fmtPctOfTotal(curVal, total)}</td>`;
-      const prevPctCell = `<td>${prevVal !== null && totalPrev !== null ? fmtPctOfTotal(prevVal, totalPrev) : '—'}</td>`;
+      const prevRow = findPrevRow(c.label);
+      const pctCell = `<td>${celdaPct(c, curVal, total)}</td>`;
+      const prevPctCell = `<td>${prevVal !== null && totalPrev !== null ? celdaPct(prevRow, prevVal, totalPrev) : '—'}</td>`;
       if(c.items && c.items.length){
         const rowId = groupPrefix+'-'+i;
         const itemsHtml = renderBreakdownRows(c.items, rowId, 0, meta, targetCurrency, total);
         return `<tr class="pl-clickable" onclick="toggleRevenueBreakdown('${rowId}', this)">
           <td><span class="pl-arrow">&#9656;</span>${tLabel(c.label)}</td>
-          <td>${fmtDisplay(curVal)}</td>
+          <td>${celdaValor(c, curVal)}</td>
           ${pctCell}
-          <td>${prevVal !== null ? fmtDisplay(prevVal) : '—'}</td>
+          <td>${prevVal !== null ? celdaValor(prevRow, prevVal) : '—'}</td>
           ${prevPctCell}
         </tr>` + itemsHtml;
       }
-      return `<tr>
+      return `<tr${c.unknown ? ' class="pl-nodato"' : ''}>
         <td>${tLabel(c.label)}</td>
-        <td>${fmtDisplay(curVal)}</td>
+        <td>${celdaValor(c, curVal)}</td>
         ${pctCell}
-        <td>${prevVal !== null ? fmtDisplay(prevVal) : '—'}</td>
+        <td>${prevVal !== null ? celdaValor(prevRow, prevVal) : '—'}</td>
         ${prevPctCell}
       </tr>`;
     }).join('');

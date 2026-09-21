@@ -120,7 +120,26 @@ const riverExpenseLinesByYear = {
   // La celda que hace falta es UNA: fila "Sueldos y cargas sociales" x columna "Fútbol
   // profesional". El día que se lea y verifique, esa porción sale de acá y pasa a `wages_squad`.
   2024: [
-    { rawLabel:'Fútbol profesional', normalizedCategory:'lump_football_operations_expense', amountNative:-78835.612406, disclosureLevel:'not_disclosed' },
+    // SUELDOS SEPARADOS DEL BOLSÓN (to-do 20(f), cerrado el 2026-09-20). La columna "Fútbol
+    // profesional" del Anexo VIII eran $78.835,612406 M en una sola línea "sin desglosar por la
+    // fuente". Su fila "Sueldos y cargas sociales" se recuperó del PDF y son $12.889.436.305, o
+    // sea el 16,3% de esa columna: pasa a `wages_squad` y el resto sigue en el bolsón.
+    // CÓMO SE RECUPERÓ, que es lo que la sesión anterior no pudo: las 4 páginas del Anexo (59-62)
+    // están ROTADAS 90° en el escaneo — es la tabla ancha impresa en horizontal que describe
+    // club-data-mapping §15. OCRearlas sin enderezar mezcla columnas, y eso explica las
+    // "diferencias no explicadas al sumar celdas individuales" que hicieron abortar el intento
+    // anterior. `tesseract --psm 0` las detecta (Rotate: 90 las cuatro); rotando con PIL y
+    // OCReando con `-l spa --psm 3` las filas salen limpias.
+    // VERIFICADO POR TRES CAMINOS antes de cargar, ninguno opcional:
+    //   1. La fila "Sueldos y cargas sociales" suma sus 8 columnas EXACTO contra su total impreso
+    //      ($34.379.825.390): 12.889.436.305 + 3.405.232.275 + 4.234.845.701 + 5.736.749.179 +
+    //      4.243.771.322 + 796.893.287 + 2.962.006.039 + 110.891.282.
+    //   2. La fila "Totales al 31/08/2024" del Anexo coincide EXACTO con los 8 valores por área
+    //      que este archivo ya tenía cargados desde la Versión 140 — o sea que el orden de
+    //      columnas del OCR es el correcto y la primera ES "Fútbol profesional".
+    //   3. Una segunda fila al azar ("Transporte") también cierra exacto contra su total impreso.
+    { rawLabel:'Fútbol profesional — Sueldos y cargas sociales', normalizedCategory:'wages_squad', amountNative:-12889.436305, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional — resto (sin desglosar por la fuente)', normalizedCategory:'lump_football_operations_expense', amountNative:-65946.176101, disclosureLevel:'not_disclosed' },
     { rawLabel:'Educación', normalizedCategory:'youth_other_sports_expense', amountNative:-4112.960939, disclosureLevel:'detailed' },
     { rawLabel:'Deportes', normalizedCategory:'youth_other_sports_expense', amountNative:-5640.127149, disclosureLevel:'detailed' },
     { rawLabel:'Administración', normalizedCategory:'admin_general_expense', amountNative:-10887.796621, disclosureLevel:'detailed' },

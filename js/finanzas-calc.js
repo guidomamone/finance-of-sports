@@ -316,14 +316,34 @@
   // agrupe en los MISMOS buckets que el balance, en vez de quedar con sus rawLabel crudos (que no
   // encontraban match contra las filas de Formato Simplificado, mostrando "—" en casi todas las
   // filas salvo el total, bug real reportado por Guido).
+  // "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" (to-do 20(h), Versión 172, decisión
+  // de Guido). Las dos cosas se mostraban igual: un $0.
+  // EL CASO QUE LO MOTIVÓ: Gamba Osaka mostraba "Televisión $0" con 5.074 de sus 8.817 M JPY en el
+  // bolsón `lump_football_operations`, porque el informe de la J.League publica 3 líneas por club
+  // (sponsors, entradas, y un bolsón que junta merchandising, distribución de liga, transferencias,
+  // academia y femenino) y el desglose existe solo a nivel división. Un periodista que comparaba
+  // Gamba con Real Madrid leía que un club de primera japonesa no cobra derechos de televisación.
+  // LA REGLA: si la sección tiene un bolsón "sin desglosar por la fuente" CON PLATA ADENTRO,
+  // entonces cualquier otra fila que dé cero es un "no sabemos", no un cero — esa plata puede estar
+  // adentro del bolsón. Esas filas se marcan `unknown` y se pintan "—" en vez de $0.
+  // POR QUÉ ES CORRECTO SER CONSERVADOR ACÁ: un club que SÍ desglosa todo y no vendió jugadores
+  // muestra "Venta de Jugadores $0", y ese cero es real y se sigue mostrando — sin bolsón no hay
+  // ambigüedad. La marca solo aparece cuando la propia fuente admitió que agrupa.
+  // EL CATCH-ALL QUEDA AFUERA a propósito: que dé cero significa que todas las líneas encontraron
+  // su fila, que es información buena, no un dato faltante.
+  // NO MUEVE NINGÚN NÚMERO: las filas marcadas valen 0, así que el total de la sección es idéntico.
   function bucketize(lines, buckets, catchAllLabel){
     const bucketed = new Set(buckets.flatMap(b => b.cats));
+    const LUMPS = ['lump_football_operations', 'lump_football_operations_expense'];
+    const hayBolson = lines.some(l => LUMPS.includes(l.normalizedCategory) && l.amountNative !== 0);
     const rows = buckets
       .map(b => {
         const matches = lines.filter(l => b.cats.includes(l.normalizedCategory));
         const value = matches.reduce((s,l) => s + l.amountNative, 0);
         const items = matches.length ? matches.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
-        return { label:b.label, value, items, hideIfZero:b.hideIfZero };
+        const esBolson = b.cats.some(c => LUMPS.includes(c));
+        return { label:b.label, value, items, hideIfZero:b.hideIfZero,
+                 unknown: hayBolson && value === 0 && !esBolson };
       })
       .filter(row => !(row.hideIfZero && row.value === 0));
     const restLines = lines.filter(l => !bucketed.has(l.normalizedCategory));
