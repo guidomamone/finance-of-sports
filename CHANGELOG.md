@@ -1834,3 +1834,34 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Verificado en producción: el deploy de Netlify sirve el script (chequeado con `curl` sobre
   `financeofsports.com`), y el dashboard de Cloudflare registró visitas reales tras cargar el sitio
   en un navegador.
+
+## Versión 167: el KPI de deuda deja de publicar un cero que ninguna fuente dice, y el aviso de deuda se traduce
+
+- **To-do 25.** `renderFinanzasStatsGeneric()` publicaba "Deuda neta · 0,0 M USD" en el cuerpo de
+  letra más grande de la ficha para cualquier ejercicio cuyo documento no desglosa deuda ni caja,
+  mientras el aviso de la tabla de abajo (misma pantalla) decía que ese cero no significa nada. El
+  test de "no desglosado" existía sólo adentro de `renderDebtBlockGeneric()`. Se extrajo a
+  `deudaNoDesglosada(c)`, compartida por las dos, y el KPI ahora muestra "Sin dato" con el mismo
+  criterio que ya usaban `Gastos` y `Resultado neto`.
+- Alcance real, más grande que el presupuesto de Boca que motivó el to-do: también los 10 clubes
+  japoneses, Club América, Once Caldas y Mirassol, que informan ingresos pero no deuda ni caja,
+  publicaban deuda neta 0,0.
+- La rama de Boca que el to-do mandaba a chequear (`renderFinanzasStatsFromComputed`) ya no existe:
+  se fue con el motor genérico de la Versión 102, sobrevive sólo citada en comentarios.
+- **To-do 27.** `debtDisclosureNote()` (`js/finanzas-calc.js`) armaba sus mensajes como template
+  literals en castellano, así que con el sitio en inglés el aviso salía en castellano. Pasa por
+  `t()` con placeholders `{a}`/`{b}`; 2 claves nuevas en `data/lang/en.js` (no 3: "sólo el actual" y
+  "sólo el anterior" son el mismo texto). `t()` local nuevo en `js/finanzas-calc.js`.
+- **To-do 8.** El mailto del formulario de contacto pasa del placeholder
+  `contacto@bocaennumeros.example` a `guidomamone91@gmail.com`.
+- **To-do 37.** Las 613 notas internas de sourcing (`fuentes/<País>/<Club>.md` y
+  `fuentes/_indice/<País>.md`) se destrackean: estaban servidas en
+  `financeofsports.com/fuentes/<País>/<Club>.md` y 37 mencionan a Guido por nombre. Regla nueva en
+  `.gitignore` (`fuentes/**/*.md`, que deja afuera los 41 `fuentes/<clubId>.html` generados, que sí
+  son parte del sitio). Los archivos siguen en disco y se usan igual.
+- `ASSET_V` a 167 (la 166 ya estaba tomada por el snippet de Cloudflare Analytics), 13 tags más la
+  constante; `fuentes.html`, sus 41 páginas y `sitemap.xml` regenerados.
+- Verificado en el navegador: Boca 2026/27 muestra "Sin dato"/"No data" y su aviso en los dos
+  idiomas; Boca 2025 (balance real con deuda) sigue mostrando 26,6 M USD y sin aviso; Gamba Osaka
+  pasa a "Sin dato". `auditAll()` en 41 clubes · 222 checks · 0 no cierran · 0 warnings, y
+  `node tools/audit.js` en 0 P0 / 0 P1.

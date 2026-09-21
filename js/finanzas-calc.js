@@ -408,10 +408,27 @@
   // así que acá solo se avisa cuando el dato es oficial pero el 0/0 es sospechoso. Nunca hay que
   // dejar que un hincha lea "Deuda: $0" y asuma que el club no tiene deuda cuando en realidad es
   // un dato no publicado.
+  // i18n (to-do 27): estos mensajes se armaban como texto plano en castellano, sin pasar por
+  // `t()`, así que con el sitio en inglés el único aviso de la ficha de deuda salía igual en
+  // castellano. El scan de i18n de `tools/audit.js` no lo detecta y no puede: mira atributos
+  // `data-i18n` y llamadas a `t()`, y esto era un template literal armado en JS. Lo encontró una
+  // mirada a la pantalla.
+  // POR QUÉ CON PLACEHOLDERS Y NO PARTIENDO LA FRASE: `I18N.t()` traduce una clave entera y no
+  // sabe de pedazos, así que armar el mensaje concatenando fragmentos traducibles congela el orden
+  // de palabras del castellano. Con `{a}`/`{b}` la frase entera es una sola unidad traducible y
+  // cada idioma pone la etiqueta del ejercicio donde le corresponde.
+  // SON 2 CLAVES Y NO 3: el mensaje de "solo el ejercicio actual" y el de "solo el anterior" son
+  // el mismo texto con otra etiqueta adentro, así que comparten clave.
+  // `t()` local: mismo one-liner que js/finanzas-render.js y js/selector.js.
+  function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
+  function fillNote(s, a, b){ return s.replace('{a}', a).replace('{b}', b); }
+
   function debtDisclosureNote(curUndisclosed, curLabel, prevUndisclosed, prevLabel){
-    if(curUndisclosed && prevUndisclosed) return `⚠️ Ni el documento de ${curLabel} ni el de ${prevLabel} desglosan deuda ni caja en su resumen, el $0 que ves en esas columnas NO significa que la deuda sea cero, es un dato no disponible todavía.`;
-    if(curUndisclosed) return `⚠️ El documento de ${curLabel} no desglosa deuda ni caja en su resumen, el $0 que ves en esa columna NO significa que la deuda sea cero, es un dato no disponible todavía.`;
-    if(prevUndisclosed) return `⚠️ El documento de ${prevLabel} no desglosa deuda ni caja en su resumen, el $0 que ves en esa columna NO significa que la deuda sea cero, es un dato no disponible todavía.`;
+    const both = t('finanzas.debt.note.both', '⚠️ Ni el documento de {a} ni el de {b} desglosan deuda ni caja en su resumen, el $0 que ves en esas columnas NO significa que la deuda sea cero, es un dato no disponible todavía.');
+    const one  = t('finanzas.debt.note.one',  '⚠️ El documento de {a} no desglosa deuda ni caja en su resumen, el $0 que ves en esa columna NO significa que la deuda sea cero, es un dato no disponible todavía.');
+    if(curUndisclosed && prevUndisclosed) return fillNote(both, curLabel, prevLabel);
+    if(curUndisclosed) return fillNote(one, curLabel, '');
+    if(prevUndisclosed) return fillNote(one, prevLabel, '');
     return '';
   }
 

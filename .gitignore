@@ -54,3 +54,25 @@ Clubes/Argentina/River/estados-contables-leads/
 # publicaría en internet. Son resúmenes de obras de terceros, y además no son
 # parte del sitio.
 Business Books/
+
+# LAS NOTAS INTERNAS DE SOURCING NO SE TRACKEAN (to-do 37, sesión 2026-09-20).
+# Mismo problema que arriba, a nivel archivo: `fuentes/<País>/<Club>.md` y
+# `fuentes/_indice/<País>.md` son 613 archivos de notas de trabajo (qué se
+# probó, qué se descartó, qué falta pedir), y al estar trackeados quedaban
+# servidos en financeofsports.com/fuentes/<País>/<Club>.md. 37 de ellos
+# mencionan a Guido por nombre o contexto de trabajo interno ("PDF a Guido si
+# tiene acceso de otra red", "a pedido de Guido"). Es la misma distinción que
+# la Versión 127 hizo entre `note` (interna, no se renderiza nunca) y
+# `publicNote`, pero para archivos enteros.
+# SE VOLVIÓ URGENTE CON LA VERSIÓN 162: las páginas públicas por club viven en
+# ESTA MISMA carpeta (`fuentes/<clubId>.html`) y `sitemap.xml` las linkea, así
+# que un crawler tiene motivo para entrar a /fuentes/ y desde ahí puede llegar
+# al resto. Un robots.txt no alcanza: es un pedido, no un candado — le dice al
+# buscador que no indexe, pero el archivo se sigue sirviendo a cualquiera que
+# tenga la URL. Destrackear es lo único que los saca de verdad.
+# OJO CON EL PATRÓN: es *.md y NO la carpeta entera, justamente porque los 41
+# `fuentes/<clubId>.html` generados por tools/generate-fuentes-page.js SÍ son
+# parte del sitio y tienen que seguir viajando.
+# Los archivos siguen en la máquina de Guido y se usan igual en cada sesión de
+# sourcing; lo único que cambia es que no se publican.
+fuentes/**/*.md

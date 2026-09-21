@@ -353,6 +353,29 @@
   // plRows/renderPLTable. Los nombres "...Generic" de las funciones de abajo quedaron del período en
   // que coexistían con un motor Boca-only propio (ya no existe); no se renombraron para no arrastrar
   // un cambio cosmético de riesgo innecesario sobre esta migración.
+  // ¿El documento de ESTE ejercicio desglosa deuda y caja? Deuda bruta = Caja = 0 EXACTO en un
+  // documento oficial no es una deuda real de cero (un club de primera división con las dos en
+  // cero no existe): es un documento que no lo publica, típicamente un presupuesto, que proyecta
+  // ingresos y egresos y no trae estado de situación patrimonial. `computeYearGeneric()` escribe
+  // `meta.grossDebt || 0`, así que el caso "null" y el caso "cero" llegan acá iguales y este test
+  // cubre los dos. Placeholder/pending_official quedan afuera: ya tienen su propio banner arriba
+  // de Finanzas.
+  //
+  // VIVE ACÁ, COMPARTIDA, A PROPÓSITO (to-do 25). Este test estaba escrito adentro de
+  // renderDebtBlockGeneric y NO en renderFinanzasStatsGeneric, así que la ficha de Finanzas se
+  // contradecía sola: el KPI publicaba "Deuda neta · 0,0 M USD" en el cuerpo de letra más grande
+  // de la página y, unos centímetros más abajo, el aviso que arma esta misma función decía que ese
+  // cero no significa que la deuda sea cero. Es el MISMO bug que la Versión 140 arregló en Inicio
+  // (ver informaDeuda(), más abajo en este archivo). Mientras el test esté en un solo lugar y los
+  // dos lo llamen, no pueden volver a desincronizarse.
+  function deudaNoDesglosada(c){
+    if(!c) return false;
+    const rt = (c.meta || {}).reportType;
+    if(rt === 'placeholder' || rt === 'pending_official') return false;
+    return c.grossDebt === 0 && c.cash === 0;
+  }
+
+
   function renderDebtBlockGeneric(cur, prev, containerId){
     document.getElementById(containerId+'CurLabel').textContent = cur.yearLabel;
     document.getElementById(containerId+'PrevLabel').textContent = prev ? prev.yearLabel : '—';
@@ -375,8 +398,8 @@
     }).join('');
     // Misma regla general que renderDebtBlock (Boca): un año oficial (no placeholder) con
     // Deuda bruta = Caja = 0 es un documento que no desglosa deuda, no una deuda real de cero.
-    const curUndisclosed = cur.meta.reportType !== 'placeholder' && cur.meta.reportType !== 'pending_official' && cur.grossDebt === 0 && cur.cash === 0;
-    const prevUndisclosed = !!prev && prev.meta.reportType !== 'placeholder' && prev.meta.reportType !== 'pending_official' && prev.grossDebt === 0 && prev.cash === 0;
+    const curUndisclosed = deudaNoDesglosada(cur);
+    const prevUndisclosed = deudaNoDesglosada(prev);
     document.getElementById('finanzasDebtNote').textContent = debtDisclosureNote(curUndisclosed, cur.yearLabel, prevUndisclosed, prev ? prev.yearLabel : '');
   }
 
@@ -414,6 +437,9 @@
     const sinGastos = !(cur.expenseLines || []).length
                    && (cur.meta || {}).officialTotalExpenses == null
                    && !cur.expenses && !cur.nonCash;
+    // to-do 25: mismo criterio que `sinGastos` acá arriba y que la tabla de deuda de abajo — un
+    // cero que la fuente no publica no se muestra como cero.
+    const sinDeuda = deudaNoDesglosada(cur);
     const extraStat = extraTotal !== undefined
       ? `<div class="stat"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
       : '';
@@ -422,7 +448,7 @@
       <div class="stat"><div class="label">${t('section.expenses','Gastos')}</div><div class="value${sinGastos ? ' nodato' : ''}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
       ${sinGastos ? '' : extraStat}
       <div class="stat"><div class="label">${t('stat.pat','Resultado neto')}</div><div class="value ${sinGastos ? 'nodato' : (cur.pat>=0?'pos':'neg')}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmount(patDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">${t('stat.netdebt.short','Deuda neta')}</div><div class="value">${fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
+      <div class="stat"><div class="label">${t('stat.netdebt.short','Deuda neta')}</div><div class="value${sinDeuda ? ' nodato' : ''}">${sinDeuda ? t('stat.nodata','Sin dato') : fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
     `;
   }
 

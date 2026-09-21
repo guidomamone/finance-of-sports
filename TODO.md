@@ -54,6 +54,22 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+39. NUEVO (sesión 2026-09-20, apareció al resolver el 37). **Los 12 `.md` de la raíz del proyecto
+    están publicados igual que lo estaban las notas de `fuentes/`**, y por el mismo motivo: el repo
+    se deploya entero. Cualquiera puede leer `financeofsports.com/TODO.md`,
+    `financeofsports.com/CLAUDE.md` y `financeofsports.com/finance-of-sports-project.md` (447 KB de
+    narrativa interna, con el razonamiento de cada decisión y a Guido por nombre en todo el
+    archivo). La lista completa: `ARQUITECTURA.md`, `CHANGELOG.md`, `CLAUDE.md`, `CONVENCIONES.md`,
+    `ESTADO.md`, `PLAN-REMEDIACION-ESCALA.md`, `PROMPT-generador-indice-fuentes.md`,
+    `QUE-ES-REAL-historico.md`, `TODO.md`, `dudas-por-club.md`, `finance-of-sports-project.md`,
+    `fuentes-por-club.md`.
+    NO SE RESOLVIÓ CON EL 37 A PROPÓSITO: el 37 estaba scopeado a `fuentes/` y esto es una decisión
+    aparte, porque no todos son iguales. `finance-of-sports-project.md`, `CLAUDE.md` y
+    `dudas-por-club.md` son claramente internos; `ESTADO.md` o `ARQUITECTURA.md` podrían incluso
+    servir como documentación pública del proyecto si esa fuera la intención. Decide Guido, archivo
+    por archivo o en bloque. El mecanismo ya está escrito y probado: una regla en `.gitignore` más
+    `git rm --cached`, igual que se hizo con las 613 notas de sourcing (Versión 167).
+
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.
@@ -116,19 +132,6 @@ perdieron sino que se descartaron:
     entonces hay que acordarse de regenerarlo en cada onboarding, como ya pasa con
     `fuentes.html` y con la sección generada de `ESTADO.md`.
 
-25. BUG, encontrado el 2026-09-14 probando el punto 9. La ficha de Finanzas se contradice a sí
-    misma en un ejercicio de presupuesto. Para Boca 2026/27 el KPI de arriba dice "Deuda neta ·
-    0,0 M USD" en el cuerpo de letra más grande de la página, y unos centímetros más abajo el
-    aviso dice "el documento no desglosa deuda ni caja en su resumen, el $0 que ves NO significa
-    que la deuda sea cero". Un presupuesto no trae estado de situación patrimonial, así que ese
-    cero no existe en ningún documento. Es el MISMO bug que la Versión 140 arregló en Inicio, en
-    la otra pestaña: la TABLA de deuda (`renderDebtBlockGeneric`, js/finanzas-render.js:361) ya
-    tiene la lógica de "0/0 oficial = dato no desglosado" y por eso escribe el aviso; el KPI
-    (`renderFinanzasStatsGeneric`, misma línea 396) no la tiene y publica el 0,0 igual. Chequear
-    también la rama de Boca (`renderFinanzasStatsFromComputed`), que es un camino aparte.
-    El precedente exacto de cómo se resolvió en Inicio: `informaDeuda()` + el stat "Sin dato",
-    js/finanzas-render.js:1012 y 1096.
-
 26. MOBILE, y es una REGRESIÓN del selector de la Versión 137. A 375px de ancho, `.header-right`
     mide 480px dentro de los 347px disponibles: el botón Comparar queda cortado y los de contacto
     e idioma quedan FUERA de la pantalla, con la página entera scrolleando de costado
@@ -143,15 +146,6 @@ perdieron sino que se descartaron:
     (b) Achicar el botón en móvil escondiendo el "Estás viendo" (`.cb-eyebrow`) y el "Cambiar"
         (`.cb-change`), dejando escudo + nombre + caret. Menos alto, pero el botón pierde la
         instrucción de qué hace.
-
-27. i18n: `debtDisclosureNote()` (js/finanzas-calc.js:411) arma sus 3 mensajes como texto plano en
-    castellano, sin pasar por `t()`, así que con el sitio en inglés el aviso de deuda sale en
-    castellano. Son 3 líneas hermanas y hay que sumar sus keys a `data/lang/en.js`. Se barrió el
-    resto de `js/` con dos patrones distintos (literales con acentos, y strings que van a
-    textContent/innerHTML sin `t()`): es el único lugar que quedó, no hay más. OJO para el día que
-    se agregue otro idioma: el scan de i18n de `tools/audit.js` mira atributos `data-i18n` y
-    llamadas a `t()`, así que un template literal armado en JS no lo detecta — esto lo encontró
-    una mirada a la pantalla, no la herramienta.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
     (a) RESUELTO (Versión 140). Inicio mostraba "DEUDA NETA ACTUAL: 0,0 M USD" para Boca y
@@ -304,23 +298,6 @@ perdieron sino que se descartaron:
     elegir a ojo no sirve aunque sea rápida. Lo que necesita es un campo de filtro propio, como el
     del modal. Es una feature, no una optimización, por eso no entró en el punto 4 del plan de
     escala. Ver `js/selector.js`, la rama `else` de la grilla de mezcla.
-
-37. NUEVO (sesión 2026-09-20, apareció al partir `fuentes.html` por club). **Las 613 notas internas
-    de sourcing de `fuentes/` están publicadas.** Están trackeadas en git, y el repo se deploya
-    entero (no hay `netlify.toml` ni `_redirects`, Netlify publica la raíz), así que cualquiera con
-    la URL lee `financeofsports.com/fuentes/<País>/<Club>.md`. **37 de esas notas mencionan a Guido
-    por nombre** o contexto de trabajo interno ("PDF a Guido si tiene acceso de otra red", "a pedido
-    de Guido"). Es el mismo problema que la Versión 127 resolvió para `note` contra `publicNote`,
-    pero a nivel archivo, y la misma lección que `CLAUDE.md` ya escribió sobre `Prototyping/`.
-    OJO, SE VOLVIÓ MÁS URGENTE CON LA VERSIÓN 162: ahora las páginas públicas por club viven en esa
-    misma carpeta (`fuentes/<clubId>.html`) y `sitemap.xml` las linkea, así que un crawler tiene
-    motivo para entrar a `/fuentes/`. Salidas posibles, decide Guido: un `robots.txt`, destrackear
-    las notas (siguen en disco, como ya se hace con los PDFs y con
-    `Clubes/Argentina/River/estados-contables-leads/`), o limpiarlas de contenido interno. Las tres
-    son distintas: solo destrackear las saca de verdad, `robots.txt` es una pedida, no un candado.
-
-8. Reemplazar el email placeholder del formulario de contacto
-   (contacto@bocaennumeros.example) por uno real antes de publicar.
 
 9. MOBILE: las tablas largas del presupuesto oficial de Boca en pantallas angostas.
    La otra mitad de este punto (el header, que abajo de 900px aplastaba el `nav` a 0px de

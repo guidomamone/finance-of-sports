@@ -278,10 +278,9 @@ se reescribe, no se acumula.
   por idioma, a propósito: "El deporte en Números" en castellano, "Finance of
   Sports" en inglés (clave `site.name`, `data/lang/en.js`), que es además el
   dominio. Antes decía "Tu club en números", que ya no era cierto: el sitio dejó
-  de ser solo de fútbol de clubes argentinos hace rato. QUEDA ABIERTO solo el mail
-  del formulario de contacto, todavía el placeholder
-  `contacto@bocaennumeros.example`, que además referencia una marca ya abandonada
-  dos renames atrás. Ver to-do 8.
+  de ser solo de fútbol de clubes argentinos hace rato. El mail del formulario de
+  contacto dejó de ser el placeholder `contacto@bocaennumeros.example` en la
+  Versión 167: hoy el mailto va a `guidomamone91@gmail.com`.
 
 ---
 
@@ -335,6 +334,14 @@ se reescribe, no se acumula.
   auditoria-finance-of-sports, escala-finance-of-sports). Se autodescubren cuando
   la sesión abre directo en `finance-of-sports/`; ver CLAUDE.md para el caso en
   que no.
+- NO SE TRACKEAN, DESDE LA VERSIÓN 167, las notas internas de sourcing: los 613
+  `fuentes/<País>/<Club>.md` y `fuentes/_indice/<País>.md` estaban servidos en
+  `financeofsports.com/fuentes/<País>/<Club>.md` porque el repo se deploya entero, y
+  37 de ellos mencionan a Guido por nombre. Regla en `.gitignore`: `fuentes/**/*.md`,
+  que deja afuera a propósito los 41 `fuentes/<clubId>.html` generados, que SÍ son
+  parte del sitio y siguen viajando. Los `.md` siguen en disco y se usan igual. OJO:
+  los 12 `.md` de la RAÍZ (`TODO.md`, `CLAUDE.md`, `finance-of-sports-project.md`…)
+  siguen publicados por el mismo motivo — es la to-do 39, y es decisión de Guido.
 - `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44

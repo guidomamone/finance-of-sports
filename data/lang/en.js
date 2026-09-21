@@ -63,6 +63,8 @@ window.I18N.strings.en = {
   "cuenta.title": "My Account",
   "finanzas.charts.sub": "The same numbers as above, as charts: how revenue and costs moved across financial years, and which lines the club actually lives on.",
   "finanzas.charts.title": "Charts",
+  "finanzas.debt.note.both": "\u26a0\ufe0f Neither the {a} document nor the {b} one breaks out debt or cash in its summary. The $0 you see in those columns does NOT mean debt is zero \u2014 it is data that has not been published yet.",
+  "finanzas.debt.note.one": "\u26a0\ufe0f The {a} document does not break out debt or cash in its summary. The $0 you see in that column does NOT mean debt is zero \u2014 it is data that has not been published yet.",
   "finanzas.debt.sub": "How much the club owes third parties (gross debt), how much cash it has on hand, and the difference between the two (net debt).",
   "finanzas.debt.title": "Debt",
   "finanzas.fmt.club": "Club's own format",
