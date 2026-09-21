@@ -815,6 +815,13 @@ window.CLUB_SELECTOR = (function(){
   // el bloque tiene sustancia. La plata aparece al comparar.
   var mezclaAbierto = null;   // 'liga' | 'clubes' | null — el panel de agregar
   var mezclaTmp = { league:null, years:[], ids:[] };
+  // ESTADO PROPIO DEL PANEL, NO COMPARTIDO CON EL BUSCADOR DEL MODAL (Versión 174).
+  // `mostrarTodos` (abajo, en la zona del buscador) es de módulo y lo miran TODAS las
+  // grillas con tope: si esta grilla lo prendiera, abrir "Mostrar más" acá dejaría el
+  // buscador del modal ya expandido sin que nadie lo pidiera. Mismo criterio para el
+  // texto del filtro: es de este panel, no del modal.
+  var mezclaQ = '';           // lo que hay escrito en el filtro de la grilla de clubes
+  var mezclaTodos = false;    // lo prende el "Mostrar más" de esa grilla, y sólo ese
 
   function cuerpoMezcla(){
     var caja = el('div', 'armado mezcla');
@@ -869,6 +876,10 @@ window.CLUB_SELECTOR = (function(){
       b.addEventListener('click', function(){
         mezclaAbierto = o[0];
         mezclaTmp = { league:null, years:[], ids:[] };
+        // Un panel nuevo arranca sin filtro y con el tope puesto, igual que `mezclaTmp`
+        // arranca vacío: lo que se escribió para armar el bloque anterior no se hereda.
+        mezclaQ = '';
+        mezclaTodos = false;
         renderModal();
       });
       fila.appendChild(b);
@@ -919,25 +930,91 @@ window.CLUB_SELECTOR = (function(){
       // MISMO TOPE QUE EL BUSCADOR (Versión 165), pero con una diferencia que no se
       // puede saltear: acá el visitante está SELECCIONANDO, así que los clubes que ya
       // marcó van primero y nunca quedan escondidos detrás del tope. Esconderle algo
-      // que marcó se leería como que se le borró.
-      // OJO, ESTO NO ALCANZA A 1000 CLUBES: una grilla para elegir a ojo deja de
-      // servir mucho antes por legibilidad, no por jank. Lo que va a necesitar es su
-      // propio buscador, que es una feature aparte (ver TODO.md).
+      // que marcó se leería como que se le borró la selección.
+      //
+      // Y CON SU PROPIO FILTRO (Versión 174), porque el tope arregla el jank y no el
+      // problema de fondo: a 1000 clubes una grilla para elegir a ojo no sirve aunque
+      // sea rápida. Tres cosas propias de acá, y ninguna es un descuido:
+      //
+      // 1. LOS YA MARCADOS NO SE FILTRAN NUNCA. Van primero, matcheen o no el texto:
+      //    el filtro achica sólo el "resto", por lo mismo que el tope no los toca.
+      // 2. NO BUSCA LIGAS, a diferencia del buscador del modal (donde una liga es un
+      //    lado posible). Acá sólo se eligen clubes y cada botón imprime nombre +
+      //    país, así que el filtro mira exactamente eso: `indiceClubPais()`, no
+      //    `indiceBusqueda()`, que trae los nombres de las ligas adentro.
+      // 3. EL INPUT SE CREA ACÁ. El #modalQ del modal principal no existe en este
+      //    panel: el constructor de mezcla es otro modal, a propósito (ver el
+      //    comentario arriba de esta función). Por eso su texto y su "Mostrar más"
+      //    viven en estado propio del panel: renderModal() rehace este DOM entero en
+      //    cada tilde, y sin ese estado el filtro se borraría al marcar un club.
+      var busca = el('div', 'modal-busca');
+      var lupa = el('span', 'lupa', '\uD83D\uDD0D');
+      lupa.setAttribute('aria-hidden', 'true');
+      var inp = document.createElement('input');
+      inp.type = 'text';
+      inp.autocomplete = 'off';
+      inp.spellcheck = false;
+      inp.placeholder = t('sel.mezcla.buscaph', 'Filtrá por club o país…');
+      inp.value = mezclaQ;
+      busca.appendChild(lupa);
+      busca.appendChild(inp);
+      caja.appendChild(busca);
+
+      // La grilla se repinta SOLA, sin pasar por renderModal(): si el panel entero se
+      // rehiciera en cada tecla, el input moriría con él y se perdería el foco a la
+      // primera letra.
+      var wrap = el('div', 'mz-grilla');
+      caja.appendChild(wrap);
+
       var todosIds = ordenados(Object.keys(window.CLUB_INDEX).filter(function(id){ return !!clubs[id]; }));
-      var marcados = todosIds.filter(function(id){ return mezclaTmp.ids.indexOf(id) >= 0; });
-      var resto = todosIds.filter(function(id){ return mezclaTmp.ids.indexOf(id) < 0; });
-      grillaConTope(marcados.concat(resto), caja, function(id){
-        var co = window.COUNTRIES[countryOf(id)] || {};
-        return opcionBtn({
-          id:id, crest:initials(nameOf(id)), label:nameOf(id),
-          sub:(co.flag || '') + ' ' + t(co.key, co.name || ''),
-          meta:nEjercicios(yearsOf(id).length)
-        }, mezclaTmp.ids.indexOf(id) >= 0, function(cid){
-          var i = mezclaTmp.ids.indexOf(cid);
-          if(i >= 0) mezclaTmp.ids.splice(i, 1); else mezclaTmp.ids.push(cid);
-          renderModal();
+      var pintarGrilla = function(){
+        wrap.innerHTML = '';
+        var q = norm(mezclaQ.trim());
+        var txt = indiceClubPais();
+        var marcados = todosIds.filter(function(id){ return mezclaTmp.ids.indexOf(id) >= 0; });
+        var resto = todosIds.filter(function(id){
+          return mezclaTmp.ids.indexOf(id) < 0 && (!q || (txt[id] || '').indexOf(q) >= 0);
         });
-      }, renderModal);
+        // El tope se cuenta sobre marcados + resto, igual que antes: los marcados van
+        // primero, así que nunca son ellos los que quedan detrás de "Mostrar más".
+        grillaConTope(marcados.concat(resto), wrap, function(id){
+          var co = window.COUNTRIES[countryOf(id)] || {};
+          return opcionBtn({
+            id:id, crest:initials(nameOf(id)), label:nameOf(id),
+            sub:(co.flag || '') + ' ' + t(co.key, co.name || ''),
+            meta:nEjercicios(yearsOf(id).length)
+          }, mezclaTmp.ids.indexOf(id) >= 0, function(cid){
+            var i = mezclaTmp.ids.indexOf(cid);
+            if(i >= 0) mezclaTmp.ids.splice(i, 1); else mezclaTmp.ids.push(cid);
+            renderModal();
+          });
+        }, pintarGrilla, { ver:mezclaTodos, expandir:function(){ mezclaTodos = true; } });
+        // El aviso va aunque haya marcados arriba: si no, escribir cualquier cosa deja
+        // en pantalla sólo lo ya tildado y se lee como que el filtro no hizo nada.
+        // Pero un marcado que SÍ matchea cuenta como resultado: con "boca" escrito y
+        // Boca tildado, el club está ahí en pantalla y decir "ningún club con ese
+        // nombre" arriba de él es simplemente falso.
+        var matcheaAlgunMarcado = marcados.some(function(id){
+          return (txt[id] || '').indexOf(q) >= 0;
+        });
+        if(q && !resto.length && !matcheaAlgunMarcado){
+          wrap.appendChild(el('p', 'paso-vacio',
+            t('sel.mezcla.nohits', 'Ningún club con ese nombre. Probá con menos letras.')));
+        }
+      };
+      pintarGrilla();
+
+      // Mismo debounce que el buscador del modal (160 ms) y por el mismo motivo.
+      var debMz = null;
+      inp.addEventListener('input', function(){
+        clearTimeout(debMz);
+        var v = inp.value;
+        debMz = setTimeout(function(){
+          mezclaQ = v;
+          mezclaTodos = false;   // consulta nueva, tope puesto de nuevo
+          pintarGrilla();
+        }, 160);
+      });
     }
 
     var pie = el('div', 'paso-pie');
@@ -1794,11 +1871,34 @@ window.CLUB_SELECTOR = (function(){
     });
     return textoBuscable;
   }
-  function invalidarIndiceBusqueda(){ textoBuscable = null; }
+
+  // EL OTRO ÍNDICE: NOMBRE + PAÍS, SIN LIGAS (Versión 174). Es el que filtra la grilla
+  // de "elegir clubes" del constructor de mezcla. No puede reusar `textoBuscable`
+  // porque ese incluye los nombres de las ligas de cada club, y en esa grilla cada
+  // botón imprime nombre + país nada más: filtrar por un texto que no está escrito en
+  // ninguna parte del botón devuelve clubes que parecen no tener nada que ver.
+  // Cacheado por el mismo motivo que el otro (a 3000 clubes, normalizar en cada tecla
+  // pesa más que el DOM), y se invalida junto con él porque el país va traducido.
+  var textoClubPais = null;   // { clubId: 'nombre pais' }, normalizado
+  function indiceClubPais(){
+    if(textoClubPais) return textoClubPais;
+    textoClubPais = {};
+    Object.keys(window.CLUB_INDEX || {}).forEach(function(id){
+      if(!clubs[id]) return;
+      var co = window.COUNTRIES[countryOf(id)];
+      textoClubPais[id] = norm(nameOf(id)) + ' ' + norm(co ? t(co.key, co.name) : '');
+    });
+    return textoClubPais;
+  }
+  function invalidarIndiceBusqueda(){ textoBuscable = null; textoClubPais = null; }
 
   // La grilla de clubes con tope: devuelve el <div> y, si sobran, el botón.
-  function grillaConTope(ids, caja, hazBoton, repintar){
-    var visibles = mostrarTodos ? ids : ids.slice(0, TOPE_RESULTADOS);
+  // `estado` (Versión 174) es opcional y sirve para que una grilla traiga su PROPIO
+  // "mostrar todos" — `{ ver:bool, expandir:fn }` — en vez del `mostrarTodos` de
+  // módulo, que es de acá y lo comparten todas las grillas que no pasen nada.
+  function grillaConTope(ids, caja, hazBoton, repintar, estado){
+    var todos = estado ? !!estado.ver : mostrarTodos;
+    var visibles = todos ? ids : ids.slice(0, TOPE_RESULTADOS);
     var grid = el('div', 'op-grid clubes');
     visibles.forEach(function(id){ grid.appendChild(hazBoton(id)); });
     caja.appendChild(grid);
@@ -1807,7 +1907,10 @@ window.CLUB_SELECTOR = (function(){
       b.type = 'button';
       b.textContent = t('sel.mostrarmas', 'Mostrar más') +
         ' (' + visibles.length + '/' + ids.length + ')';
-      b.addEventListener('click', function(){ mostrarTodos = true; (repintar || renderBusqueda)(); });
+      b.addEventListener('click', function(){
+        if(estado) estado.expandir(); else mostrarTodos = true;
+        (repintar || renderBusqueda)();
+      });
       caja.appendChild(b);
     }
   }

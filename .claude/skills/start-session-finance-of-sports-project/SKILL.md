@@ -79,7 +79,7 @@ Por qué importa: los clubes se cargan por demanda, así que una carga normal de
 Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible.
 
 **Correlo siempre antes de pushear algo que toque datos.** El resultado esperado hoy es 41 clubes,
-222 checks, 0 que no cierran, 0 warnings.
+228 checks, 0 que no cierran, 0 warnings.
 
 **`node tools/audit.js` es el otro lado de lo mismo** (Versión 122). `auditAll()` verifica que cada
 ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igual: ejercicios sin

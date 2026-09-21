@@ -465,6 +465,14 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
   del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
   el stat con su total), no recalcular aparte.
+- OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` (Versión 174).
+  `grillaConTope()` la usan varias grillas distintas, y su `mostrarTodos` es una
+  variable de módulo: si una grilla nueva la prende, "Mostrar más" queda apretado
+  también en las otras sin que nadie lo haya pedido. Una grilla nueva trae su
+  PROPIO estado y se lo pasa como `estado` (`{ver, expandir}`) — así lo hace la
+  grilla de "elegir clubes" del constructor de Mezcla, con `mezclaTodos`. Mismo
+  criterio para el texto de cualquier buscador nuevo: propio del panel donde vive,
+  nunca compartido con el `#modalQ` del modal principal.
 - OJO Chart.js: el script tag pinea la versión exacta de cdnjs
   (`https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js`).
   La Versión 22 corrigió un 404 real acá (la versión vieja, 4.4.4, nunca

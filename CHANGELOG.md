@@ -2051,3 +2051,24 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   está vencida.** Medido contra `data/club-leagues/`, hay 3 rankings de liga viables hoy (J1 2025
   con 10 clubes, LaLiga 2025 con 9, Primera Argentina 2024 con 8), no cero.
 - `node tools/audit.js` en 0 P0 / 0 P1 / 2 P2 / 7 P3. `ASSET_V` a 173.
+
+## Versión 174: la grilla de "elegir clubes" de Mezcla tiene su propio filtro
+
+- **To-do 38 cerrado.** La grilla de clubes del constructor de Mezcla suma un campo de filtro
+  propio (`panelAgregar()` en `js/selector.js`), con el mismo markup y CSS que el buscador del
+  modal (`.modal-busca`) pero creado dentro del panel: el `#modalQ` del modal principal no existe
+  ahí, porque el constructor es otro modal a propósito.
+- El filtro busca por nombre de club + país, y NO por liga: índice nuevo `indiceClubPais()`,
+  separado de `indiceBusqueda()` (que incluye ligas) porque esta grilla imprime nombre + país en
+  cada botón y nada más. Se invalida junto con el otro al abrir el modal.
+- Los clubes ya marcados siguen arriba y nunca los filtra el texto; sólo se achica la lista de
+  "resto". El aviso de "ningún club con ese nombre" aparece cuando no matchea ni un marcado.
+- El texto del filtro y su "Mostrar más" viven en estado propio del panel (`mezclaQ`,
+  `mezclaTodos`), no en el `mostrarTodos` de módulo que comparten las demás grillas: expandir acá
+  ya no deja expandido el buscador del modal, ni al revés. `grillaConTope()` acepta ahora un
+  `estado` opcional `{ver, expandir}` para eso.
+- La grilla se repinta sin pasar por `renderModal()`, así el input no muere en cada tecla; el
+  texto sobrevive igual a los repintados completos que dispara marcar un club.
+- Claves nuevas `sel.mezcla.buscaph` y `sel.mezcla.nohits`, con su traducción en `data/lang/en.js`.
+- `auditAll()` en 41 clubes / 228 checks / 0 que no cierran, `node tools/audit.js` en 0 P0 / 0 P1.
+  `ASSET_V` a 174, `fuentes.html` y las 41 páginas de club regeneradas por el bump.

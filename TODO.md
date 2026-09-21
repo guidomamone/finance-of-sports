@@ -218,11 +218,3 @@ perdieron sino que se descartaron:
     para esa sesión está en `PROMPT-generador-indice-fuentes.md`**, con el criterio de clasificación
     ya decidido, las dos listas de regex, y los 12 casos que hubo que resolver a mano. No es
     urgente: el índice se toca una vez por sesión de sourcing y son 44 líneas.
-
-38. NUEVO (sesión 2026-09-20, al ponerle tope a las grillas del selector). **La grilla de "elegir
-    clubes" del constructor de mezcla necesita su propio buscador.** Hoy lista todos los clubes para
-    marcar a ojo; desde la Versión 165 muestra 30 con "Mostrar más" y los ya marcados arriba, así
-    que deja de hacer jank, pero eso NO arregla el problema de fondo: a 1000 clubes una grilla para
-    elegir a ojo no sirve aunque sea rápida. Lo que necesita es un campo de filtro propio, como el
-    del modal. Es una feature, no una optimización, por eso no entró en el punto 4 del plan de
-    escala. Ver `js/selector.js`, la rama `else` de la grilla de mezcla.

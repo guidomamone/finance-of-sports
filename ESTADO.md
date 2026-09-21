@@ -159,7 +159,7 @@ se reescribe, no se acumula.
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
   solo pueden revisar lo que está en memoria, así que una carga normal de la
-  página audita SOLO Boca (6 de los 222 checks). Para auditar TODO hay que
+  página audita SOLO Boca (6 de los 228 checks). Para auditar TODO hay que
   forzar la carga de los 41 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
   los clubes que nadie está mirando. Desde la Versión 160 los carga en tandas
@@ -214,7 +214,11 @@ se reescribe, no se acumula.
   en `renderBusqueda()`, que también se llama a sí misma y tiene que correr en el
   acto), tope de 30 resultados con "Mostrar más" y el conteo real, y una caché del
   texto buscable de cada club. La grilla de "elegir clubes" del constructor de
-  mezcla lleva el mismo tope, con los ya marcados siempre primero.
+  mezcla lleva el mismo tope, con los ya marcados siempre primero, y DESDE LA
+  VERSIÓN 174 su propio campo de filtro: mismo look que el buscador de arriba,
+  pero busca sólo por nombre de club + país (no por liga, que en esa grilla no se
+  imprime en ninguna parte), no toca nunca a los ya marcados, y lleva su propio
+  estado de texto y de "Mostrar más", separado del buscador del modal.
 - LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
   Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre
   el selector y aterriza en Finanzas) o "quiero comparar dos clubes o ligas" (va
