@@ -79,6 +79,16 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   nueva que muestre estos indicadores, aplica igual.**
   OJO, esto es un criterio de la VISTA: el dato sigue diciendo 0 en el archivo del club. El criterio
   general sigue abierto en la to-do 20(h).
+  Y LA LECCIÓN DE MECANISMO (Versión 167, tercera vez que aparece el mismo bug: la 140 en Inicio, la
+  152 en Gastos/Resultado, la 167 en Deuda neta): **el test de "la fuente no informa esto" va en UNA
+  función compartida, no escrito adentro de cada función de render.** Las tres veces la causa fue la
+  misma — una vista tenía el test y la de al lado no, así que la misma pantalla se contradecía sola:
+  el KPI publicaba "Deuda neta · 0,0 M USD" y tres centímetros abajo el aviso decía que ese cero no
+  significa nada. Hoy hay dos helpers y hay que usarlos: `informaDeuda(clubId, year)` para Inicio
+  (trabaja sobre `fiscalYearMeta`) y `deudaNoDesglosada(c)` para Finanzas (trabaja sobre el objeto
+  ya computado), los dos en `js/finanzas-render.js`. Una vista nueva que muestre deuda llama a uno
+  de esos dos; si necesita un test que todavía no existe, se escribe como función aparte y la usan
+  todas, nunca en línea.
 - NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde

@@ -1865,3 +1865,25 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   idiomas; Boca 2025 (balance real con deuda) sigue mostrando 26,6 M USD y sin aviso; Gamba Osaka
   pasa a "Sin dato". `auditAll()` en 41 clubes · 222 checks · 0 no cierran · 0 warnings, y
   `node tools/audit.js` en 0 P0 / 0 P1.
+
+## Versión 168: auditoría de rutina, eje `codigo`
+
+- Tercera auditoría de rutina (`auditorias/2026-09-20.md`), eje `codigo` por rotación (`datos`
+  2026-09-13 → `escala` 2026-09-17 → `codigo`). Próximo eje: `docs`.
+- Capa 1 sin novedades: los mismos 44 P2 y 9 P3 que la corrida del 17, `auditAll()` en 41 clubes /
+  222 checks / 0 no cierran, los dos generadores con `--check` limpio.
+- 4 de los 5 chequeos del eje pasan limpio, medidos en el navegador: 0 charts huérfanos tras 20
+  ciclos de toggle; 350 `addEventListener` contra 350 `removeEventListener`, 0 fugas netas;
+  `loadClubData()` rechaza bien un archivo 404 y los 3 llamadores lo manejan; los toggles combinados
+  no derivan (Boca 2025 vuelve al mismo valor tras ~30 ciclos, y ARS = USD × 1.203, el fx declarado).
+- Verificado además lo que dejaron las versiones nuevas: 3 aperturas del modal en el mismo tick
+  piden 6 archivos de liga y no 18 (el cache de `_clubLeaguesPromise` de la Versión 164), y el tope
+  de la 165 muestra "Mostrar más (30/41)".
+- Hallazgo P2 nuevo, **to-do 40**: `#clubLoadError` vive adentro de `#inicio`, así que el aviso de
+  club que no carga es invisible para el visitante parado en Finanzas.
+- Hallazgos P3 nuevos, solo en el reporte: la frontera async de `abrirModal()` no tiene estado de
+  carga, y el beacon de Cloudflare reintenta ~6 veces por pageview en localhost (no es del sitio).
+- `CONVENCIONES.md`: la regla "SIN DATO NO ES CERO" se extiende con la lección de mecanismo de la
+  Versión 167. El bug volvió tres veces (140, 152, 167) porque la regla decía QUÉ mostrar y no DÓNDE
+  vive el test: ahora dice que va en una función compartida (`informaDeuda()`, `deudaNoDesglosada()`)
+  y nunca en línea adentro de un render.

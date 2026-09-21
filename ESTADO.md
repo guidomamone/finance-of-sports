@@ -295,7 +295,9 @@ se reescribe, no se acumula.
 - `.claude/skills/auditoria-finance-of-sports/SKILL.md` + `auditorias/`: la auditoría de rutina
   (transversal y periódica, distinta de la verificación de onboarding y de `auditAll()`). El skill
   es el procedimiento; `auditorias/<fecha>.md` es el reporte de cada corrida, y cada uno diffea
-  contra el anterior para no repetir la misma lista hasta que nadie la lea.
+  contra el anterior para no repetir la misma lista hasta que nadie la lea. Van 3 corridas:
+  `2026-09-13` (eje `datos`), `2026-09-17-escala` (eje `escala`) y `2026-09-20` (eje `codigo`).
+  **El próximo eje es `docs`** (la rotación es `datos` → `escala` → `codigo` → `docs` → `tokens`).
 - `.claude/skills/escala-finance-of-sports/SKILL.md`: el mapa de puntos calientes de escala (qué
   se rompe entre 200 y 3000 clubes, y con qué número), separado de la auditoría de rutina porque
   es el contenido de UN eje (`escala`) y crece con cada sesión de sourcing/onboarding.

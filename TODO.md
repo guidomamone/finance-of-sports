@@ -132,6 +132,19 @@ perdieron sino que se descartaron:
     entonces hay que acordarse de regenerarlo en cada onboarding, como ya pasa con
     `fuentes.html` y con la sección generada de `ESTADO.md`.
 
+40. NUEVO (auditoría de código del 2026-09-20, `auditorias/2026-09-20.md`). **El aviso de "no se
+    pudieron cargar los datos de X" es invisible desde Finanzas.** Cuando el `data/<club>-data.js`
+    de un club no se puede bajar, `selectClub()` (`index.html:1487`) degrada bien: no usa `alert()`,
+    vuelve al club anterior, deja la página usable y escribe el motivo en `#clubLoadError`. El
+    problema es DÓNDE: `#clubLoadError` vive adentro de `#inicio`, y el lugar más probable para
+    cambiar de club es el botón del header estando parado en Finanzas. Verificado en el navegador
+    forzando un 404 con `CLUB_DATA_SCRIPT_OVERRIDE`: con `#finanzas` a la vista el aviso queda con
+    `hidden=false` pero `offsetParent === null`. O sea: el visitante aprieta "Racing", la pantalla
+    sigue mostrando Boca, y no hay ninguna explicación en ningún lado.
+    No está mal hoy —hace falta un error de red o un deploy incompleto para dispararlo— pero es
+    exactamente el caso para el que se escribió el aviso. El arreglo natural es que el aviso aparezca
+    donde el visitante está mirando en vez de en una sección fija.
+
 26. MOBILE, y es una REGRESIÓN del selector de la Versión 137. A 375px de ancho, `.header-right`
     mide 480px dentro de los 347px disponibles: el botón Comparar queda cortado y los de contacto
     e idioma quedan FUERA de la pantalla, con la página entera scrolleando de costado
