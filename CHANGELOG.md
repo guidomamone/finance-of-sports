@@ -2140,3 +2140,13 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - `fuentes.html` y las 41 páginas de `fuentes/` regeneradas: llevan el ASSET_V adentro, así que
   dejarlas en 174 era justo la mezcla de versiones que la regla existe para evitar. El diff de las
   42 es solo eso más la fecha de generación.
+- **Bug aparte, encontrado justo al regenerar esas páginas**: `tools/generate-fuentes-page.js`
+  armaba la fecha del pie con `new Date().toISOString()`, que es siempre UTC, así que una corrida
+  nocturna escribía "Generado desde los datos del sitio el <mañana>" — un día que todavía no pasó
+  para quien lee la página. Ahora se arma de los getters locales. NO es el mismo bug que el del
+  `--check` (commit 411beaf): aquel era un falso positivo al comparar, este es un día equivocado
+  impreso en la página, y como `sinFecha` ignora el pie al comparar, no se delataba solo.
+- OJO CON EL EFECTO DIFERIDO: `--check` y el escritor comparan con `sinFecha`, o sea que una
+  diferencia de SOLO fecha nunca dispara una reescritura (deliberado, evita churn diario). Por eso
+  las 42 páginas ya escritas siguen diciendo la fecha vieja hasta la próxima regeneración por un
+  cambio de contenido real; ahí se corrigen solas.

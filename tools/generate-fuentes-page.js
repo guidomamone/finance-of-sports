@@ -239,7 +239,24 @@ function construir(api) {
   const totalPaises = new Set(filas.map(f => f.pais)).size;
   const conLink = filas.filter(f => f.s.url).length;
 
-  const hoy = new Date().toISOString().slice(0, 10);
+  // LA FECHA DEL PIE ES LOCAL, NO UTC (Versión 178). Acá decía
+  // `new Date().toISOString().slice(0, 10)`, y `toISOString()` es SIEMPRE UTC: generar
+  // estas páginas a las 20:24 de un 21 en EDT (o a las 21:24 en Argentina) escribía
+  // "Generado desde los datos del sitio el 2026-09-22", un día que todavía no pasó para
+  // quien la lee. Le pasaba a cualquier corrida nocturna, o sea a buena parte de las
+  // sesiones de este proyecto, y el síntoma es especialmente feo acá: es la página cuyo
+  // argumento entero es que sus datos son verificables.
+  // NO es el mismo bug que el del `--check` (commit 411beaf, y ver `sinFecha` más abajo):
+  // aquel era un falso positivo de la comparación, este es un día equivocado impreso en
+  // la página. `sinFecha` ignora el pie al comparar, así que este error no se delataba
+  // solo: se veía únicamente leyendo el HTML generado.
+  // Se arma de los getters LOCALES en vez de `toISOString()` porque no hay forma de
+  // pedirle a `toISOString()` la fecha local sin sumarle el offset a mano, que es más
+  // fácil de escribir al revés que esto.
+  const _d = new Date();
+  const hoy = _d.getFullYear() + '-' +
+    String(_d.getMonth() + 1).padStart(2, '0') + '-' +
+    String(_d.getDate()).padStart(2, '0');
   // El ASSET_V sale de index.html, no se escribe a mano acá: si esta página pidiera una
   // versión distinta de js/i18n.js que el sitio, un visitante podría recibir el motor
   // viejo de su caché en una página y el nuevo en la otra. Ver la regla de ASSET_V en
