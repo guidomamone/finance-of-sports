@@ -2116,3 +2116,27 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   cuál es contenido para el visitante y cuál es interno, archivo por archivo. Mientras tanto no
   bloquea nada (P2, `--quiet` sigue en verde) porque nada de esto llegó a producción todavía — el
   repo local sigue sin pushear desde antes de que `netlify.toml` existiera.
+
+## Versión 177 — Cuántos equipos tuvo la liga, por temporada (to-do 23(b))
+
+- `LEAGUE_SIZE_BY_YEAR` nuevo: (liga, ejercicio) -> cuántos equipos jugaron esa liga ese año, con
+  `leagueSizeAt(liga, año)` y `leagueSizeCoverage()`. Las reglas en `data/club-leagues.js`, las
+  filas en los mismos `data/club-leagues/<iso2>.js` autoregistrados, o sea el mismo cargador
+  (`loadClubLeagues()`) y ni un pedido de red nuevo.
+- **`LEAGUES[].totalClubs` ELIMINADO** de las 8 ligas de `data/leagues.js`, no llenado: un número
+  suelto por liga es el mismo error que la regla "no existe ninguna arista club -> liga sin año"
+  prohíbe para la membresía. La Primera argentina pasó de 20 a 30 equipos en el período cargado,
+  así que ese número es falso en casi todas las temporadas. No tenía ningún consumidor.
+- 3 liga-temporadas verificadas contra Wikipedia, las 3 que habilitan un ranking: `jp-j1` 2025 = 20,
+  `es-laliga` 2025 (temporada 2024/25) = 20, `ar-primera` 2024 = 28. Cada una con su fuente y fecha
+  anotadas en el archivo de su país.
+- El caso argentino queda atado por escrito: el ejercicio 2024 cierra el 30/6 (o el 31/8, River) con
+  el Campeonato de Primera División 2024 en curso, y la otra competencia de ese año calendario (Copa
+  de la Liga Profesional 2024) la jugaron los mismos 28, así que el número no depende de cómo se lea.
+- **Ninguna vista lo usa todavía, a propósito**: esto sienta el dato, el consumidor (el "N de M" del
+  aviso de sesgo del benchmark) es el to-do 23(c)/33.
+- `CONVENCIONES.md`, `ESTADO.md` y las cabeceras de `data/leagues.js` y `data/club-leagues.js`
+  actualizados. ASSET_V 174 -> 177, constante + los 13 tags literales de `index.html`.
+- `fuentes.html` y las 41 páginas de `fuentes/` regeneradas: llevan el ASSET_V adentro, así que
+  dejarlas en 174 era justo la mezcla de versiones que la regla existe para evitar. El diff de las
+  42 es solo eso más la fecha de generación.

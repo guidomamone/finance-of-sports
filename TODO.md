@@ -148,11 +148,6 @@ perdieron sino que se descartaron:
         el último que informe deuda para la deuda) y escribe cuál es abajo del número, en vez de
         esconderlo en un tooltip. Los presupuestos siguen escribiendo `grossDebt:0, cash:0` en sus
         datos, pero ninguna vista los publica ya como si fueran un cero real.
-    (b) `LEAGUES[].totalClubs` está en `null` en las 8 ligas, así que el aviso de sesgo del
-        benchmark dice "sale de los 5 clubes cargados" y no puede decir "5 de 20". OJO al
-        cargarlo: la cantidad de equipos de una liga TAMBIÉN cambia por temporada (Primera
-        División de Argentina pasó de 20 a 30 en el período cargado), así que el dato va por
-        año, no como un número suelto. Mismo problema que tenía la membresía.
     (c) LA VISTA DE LIGA (pedido de Guido, "podemos separarlo en sesiones pero guardámelo en un
         to-do gigante"). Elegir una liga o un país entero en el selector hoy solo filtra la
         columna Equipo; el prototipo de la Versión 137 (ya borrado) tenía además un "Ranking de

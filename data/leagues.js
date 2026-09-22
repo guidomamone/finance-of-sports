@@ -108,25 +108,32 @@ const COUNTRIES = {
 // `tier`: el escalón (1 = primera división). Es lo que hace comparable un
 // ascenso/descenso entre países sin tener que conocer el nombre de cada liga.
 //
-// `totalClubs`: cuántos equipos juega la liga, para poder decir "N de M clubes
-// de esta liga tienen ejercicio cargado" (el sesgo del benchmark). Va en `null`
-// mientras nadie lo haya verificado, y con `null` el sitio NO muestra ese
-// número ni la fila de "X clubes más de esta liga": dice solo cuántos tiene
-// cargados, que es lo que sabe. OJO, y es el mismo problema que la membresía:
-// la cantidad de equipos de una liga TAMBIÉN cambia por temporada (Primera
-// División de Argentina pasó de 20 a 30 equipos en el período cargado), así que
-// cuando se verifique, el dato va por año, no como un número suelto. Anotado en
-// la to-do de `index.html`.
+// ACÁ NO HAY UN `totalClubs`, Y ES A PROPÓSITO (Versión 177, to-do 23(b)). Hubo
+// uno: un número suelto por liga, en `null` en las 8 desde que se creó el
+// catálogo, pensado para poder decir "N de M clubes de esta liga tienen ejercicio
+// cargado" (el sesgo del benchmark). Se SACÓ en vez de llenarse, porque es el
+// mismo error que la regla de arriba prohíbe para la membresía, un escalón más
+// arriba: la cantidad de equipos CAMBIA POR TEMPORADA — la Primera División
+// argentina pasó de 20 a 30 dentro del período cargado — así que un número por
+// liga es falso en casi todas las temporadas y no hay forma de saber en cuál no.
+// Dejarlo en `null` al lado de la tabla buena era peor que sacarlo: es el campo
+// fácil de llenar, y la próxima sesión lo habría llenado ahí.
+//
+// EL DATO VIVE EN `LEAGUE_SIZE_BY_YEAR` (`data/club-leagues.js` para las reglas,
+// `data/club-leagues/<iso2>.js` para las filas), que es (liga, ejercicio) ->
+// cuántos equipos, y se consulta con `leagueSizeAt(liga, año)`. Hoy hay 3
+// liga-temporadas verificadas (`jp-j1` 2025, `es-laliga` 2025, `ar-primera`
+// 2024); las demás devuelven `null` y el sitio no afirma nada, que es lo correcto.
 // ---------------------------------------------------------------------------
 const LEAGUES = {
-  'ar-primera':        { name:'Primera División',      full:'Primera División de Argentina',       country:'AR', sport:'futbol', tier:1, totalClubs:null },
-  'ar-primeranacional':{ name:'Primera Nacional',      full:'Primera Nacional de Argentina',       country:'AR', sport:'futbol', tier:2, totalClubs:null },
-  'br-serieA':         { name:'Brasileirão Série A',   full:'Campeonato Brasileiro Série A',       country:'BR', sport:'futbol', tier:1, totalClubs:null },
-  'br-serieB':         { name:'Brasileirão Série B',   full:'Campeonato Brasileiro Série B',       country:'BR', sport:'futbol', tier:2, totalClubs:null },
-  'co-primeraA':       { name:'Primera A',             full:'Categoría Primera A',                 country:'CO', sport:'futbol', tier:1, totalClubs:null },
-  'es-laliga':         { name:'LaLiga',                full:'Primera División de España',          country:'ES', sport:'futbol', tier:1, totalClubs:null },
-  'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1, totalClubs:null },
-  'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1, totalClubs:null },
+  'ar-primera':        { name:'Primera División',      full:'Primera División de Argentina',       country:'AR', sport:'futbol', tier:1 },
+  'ar-primeranacional':{ name:'Primera Nacional',      full:'Primera Nacional de Argentina',       country:'AR', sport:'futbol', tier:2 },
+  'br-serieA':         { name:'Brasileirão Série A',   full:'Campeonato Brasileiro Série A',       country:'BR', sport:'futbol', tier:1 },
+  'br-serieB':         { name:'Brasileirão Série B',   full:'Campeonato Brasileiro Série B',       country:'BR', sport:'futbol', tier:2 },
+  'co-primeraA':       { name:'Primera A',             full:'Categoría Primera A',                 country:'CO', sport:'futbol', tier:1 },
+  'es-laliga':         { name:'LaLiga',                full:'Primera División de España',          country:'ES', sport:'futbol', tier:1 },
+  'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1 },
+  'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1 },
 };
 
 // ---------------------------------------------------------------------------

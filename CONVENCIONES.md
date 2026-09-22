@@ -58,9 +58,14 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   `clubsOfLeagueYear(liga, ejercicio)`: si una función nueva necesita "los clubes de la liga L" sin
   año, está mal planteada. Para NAVEGAR sí existe `clubsOfLeague(L)` sin año, y su conteo significa
   "clubes con al menos un ejercicio cargado acá", que NO es "los clubes de la liga" y el sitio no
-  puede afirmar lo segundo. Por lo mismo `LEAGUES[].totalClubs` está en null: ese número también
-  cambia por temporada. Un campo `clubs[id].league` con "la liga de hoy" está prohibido: sería una
-  segunda verdad sobre el mismo hecho. En el árbol del selector, un club aparece bajo cada liga en
+  puede afirmar lo segundo. LA REGLA SUBE UN ESCALÓN (Versión 177): el TAMAÑO de la liga tampoco
+  puede ser un número suelto, porque también cambia por temporada, así que `LEAGUES[].totalClubs`
+  se eliminó en vez de llenarse y el dato vive en `LEAGUE_SIZE_BY_YEAR` (liga, ejercicio) ->
+  cuántos equipos, en los mismos `data/club-leagues/<iso2>.js`, y se lee con `leagueSizeAt(liga,
+  año)`. Un "N de M" solo se puede escribir si el M no es null Y el N salió de
+  `clubsOfLeagueYear()`, o el N y el M serían de temporadas distintas. Un campo
+  `clubs[id].league` con "la liga de hoy" está prohibido: sería una segunda verdad sobre el
+  mismo hecho. En el árbol del selector, un club aparece bajo cada liga en
   la que tiene un ejercicio cargado.
 - "SIN DATO" NO ES CERO (Versión 137 para la comparación, ampliado en la 152 a la ficha de
   Finanzas). Un cero se lee como un dato, y este sitio no muestra datos que no tiene. Se muestra

@@ -29,7 +29,7 @@
 // DÓNDE ESTÁN LAS FILAS, DESDE LA VERSIÓN 164: en `data/club-leagues/<iso2>.js`,
 // un archivo por país, cada uno autoregistrándose en la misma tabla con
 // `Object.assign` (el mismo patrón que `sources{}` y `gestionesByClub{}` desde la
-// Versión 101). Este archivo quedó con las REGLAS y los 6 helpers, sin un solo
+// Versión 101). Este archivo quedó con las REGLAS y los helpers, sin un solo
 // dato. Dos motivos, y el segundo pesa más:
 //   1. El repaso anual de ascensos y descensos pasa a ser el de UN país.
 //   2. LAS FILAS YA NO SE BAJAN EN LA PRIMERA VISITA. Se cargan al abrir el
@@ -43,7 +43,8 @@
 // la carga: es MOVERLA de la primera visita, donde nadie las necesita, a la
 // apertura del modal.
 //
-// POR QUÉ LOS 6 HELPERS SIGUEN SIENDO SÍNCRONOS: hay UNA sola frontera async, el
+// POR QUÉ LOS HELPERS SIGUEN SIENDO SÍNCRONOS (vale para los de membresía y para
+// `leagueSizeAt()`): hay UNA sola frontera async, el
 // `abrirModal()` de `js/selector.js`, que espera la carga antes de dibujar nada.
 // Si en vez de eso los helpers devolvieran promesas, habría que volver async cada
 // función de render del modal. OJO SI SE AGREGA UN CONSUMIDOR NUEVO: tiene que
@@ -139,6 +140,74 @@ function clubLeagueCoverage(){
     }
   }
   return { total, cargadas, faltan: total - cargadas };
+}
+
+// ============================================================================
+// EL TAMAÑO DE LA LIGA: (liga, ejercicio) -> cuántos equipos la jugaron.
+// Versión 177, to-do 23(b).
+//
+// POR QUÉ NO ES UN CAMPO DE `data/leagues.js`. Ahí existía `LEAGUES[].totalClubs`,
+// un número suelto por liga, en `null` en las 8 desde que se creó el catálogo. Se
+// sacó en esta misma versión, no se llenó: es exactamente el error que la cabecera
+// de `data/leagues.js` prohíbe para la membresía, un escalón más arriba. La
+// cantidad de equipos CAMBIA POR TEMPORADA — la Primera División argentina pasó de
+// 20 a 30 equipos dentro del período que el sitio tiene cargado (2009 a 2027) — así
+// que un solo número por liga es falso en todas las temporadas menos una, y no hay
+// forma de saber en cuál. El dato tiene la misma forma que la membresía, así que
+// vive al lado y con la misma regla: SIEMPRE con el año.
+//
+// POR QUÉ ACÁ Y NO EN UN ARCHIVO NUEVO: viaja en los mismos
+// `data/club-leagues/<iso2>.js`, con el mismo `Object.assign` autoregistrado, y por
+// lo tanto en el MISMO cargador (`loadClubLeagues()`). Cero pedidos de red nuevos,
+// cero cargadores nuevos que mantener, y el repaso anual de una temporada
+// (ascensos, descensos y cuántos equipos quedaron) se hace de una sola pasada por
+// el archivo de ese país, que es el trabajo que en la práctica se hace junto.
+//
+// CÓMO SE EDITA, y es la misma regla que la membresía: NO se escribe de memoria ni
+// se deduce de cuántos clubes tenemos cargados. Se mira la temporada en Wikipedia
+// (o la fuente que corresponda), se anota el número, y se deja escrito contra qué
+// se verificó y en qué fecha, arriba del bloque del país. Una liga-temporada que
+// nadie verificó simplemente NO tiene entrada acá; `leagueSizeAt()` devuelve null y
+// el sitio no dice nada, que es lo correcto. Rellenarla a ojo sería justo el dato
+// inventado que todo este archivo existe para no inventar.
+//
+// EL AÑO ES EL DEL EJERCICIO, no el de la temporada, igual que en
+// `CLUB_LEAGUE_BY_YEAR`: la clave es la que usa el sitio para un ejercicio, y se
+// resuelve con la MISMA regla de "la categoría al cierre" de la cabecera. Así
+// `es-laliga: {2025: 20}` es la temporada 2024/25 (el ejercicio español cierra el
+// 30/6/2025) y `ar-primera: {2024: 28}` es el torneo de 2024 (los ejercicios
+// argentinos de ese año cierran el 30/6 o el 31/8, con ese torneo en curso). Si no
+// fuera así, esta tabla y la de membresía se indexarían distinto y cruzarlas —
+// que es TODO lo que se va a hacer con ella — daría cualquier cosa.
+//
+// PARA QUÉ VA A SERVIR (todavía no la usa nadie, y eso es a propósito: el to-do
+// 23(b) era sentar el dato, el consumidor es el 23(c)/33): poder decir "5 de 20
+// clubes de esta liga tienen ejercicio cargado" en vez de solo "5 clubes
+// cargados". Es el aviso de sesgo del benchmark: 5 de 20 es una muestra, 5 de 5
+// es la liga entera, y hoy el sitio no puede distinguirlas.
+// ============================================================================
+window.LEAGUE_SIZE_BY_YEAR = window.LEAGUE_SIZE_BY_YEAR || {};
+
+// Cuántos equipos jugaron esa liga ese ejercicio, o null si nadie lo verificó.
+// null y no un fallback a "el tamaño de hoy" ni a "los que tenemos cargados",
+// por el mismo motivo que `leagueAt()`: contestar con otra cosa sería inventar.
+// OJO AL CONSUMIRLA: un `N de M` solo se puede escribir si esto NO es null, y el
+// N tiene que salir de `clubsOfLeagueYear(liga, año)` — el conteo con año. Con
+// `clubsOfLeague()` (sin año) el N y el M serían de temporadas distintas.
+function leagueSizeAt(leagueId, year){
+  const v = (window.LEAGUE_SIZE_BY_YEAR[leagueId] || {})[year];
+  return (typeof v === 'number') ? v : null;
+}
+
+// Cuántas liga-temporadas tienen tamaño verificado, para que la auditoría lo
+// cuente sin recorrer los datos por su cuenta (mismo rol que
+// `clubLeagueCoverage()` para la membresía).
+function leagueSizeCoverage(){
+  let cargadas = 0;
+  for(const leagueId of Object.keys(window.LEAGUE_SIZE_BY_YEAR)){
+    cargadas += Object.keys(window.LEAGUE_SIZE_BY_YEAR[leagueId]).length;
+  }
+  return { cargadas };
 }
 
 // ============================================================================

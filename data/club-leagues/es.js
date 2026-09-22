@@ -31,3 +31,26 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   valenciacf: { 2025: 'es-laliga' },
   villarrealcf: { 2024: 'es-laliga' },         // temporada 2023/24
 });
+
+// ---------------------------------------------------------------------------
+// CUÁNTOS EQUIPOS TUVO LA LIGA cada ejercicio (ver la cabecera de
+// `data/club-leagues.js`, sección "EL TAMAÑO DE LA LIGA", para qué significa y
+// cómo se edita). El ejercicio español cierra el 30/6 y coincide con la
+// temporada, así que la clave 2025 es la temporada 2024/25.
+//
+// Verificado el 21/9/2026 contra "2024-25 La Liga" (Wikipedia, en.wikipedia.org),
+// que lo dice con todas las letras: "A total of twenty teams contest the league,
+// including seventeen sides from the 2023-24 season and three promoted from the
+// 2023-24 Segunda División". El infobox declara 380 partidos, consistente con 20
+// equipos ida y vuelta (20 x 19).
+//
+// OJO AL AGREGAR 2024: el ejercicio 2024 (temporada 2023/24, que hoy usa
+// villarrealcf) todavía NO está acá. Son 20 también, pero no se escribe hasta
+// verificarlo contra "2023-24 La Liga": la regla del archivo es que un número sin
+// chequear no entra, aunque parezca obvio.
+// ---------------------------------------------------------------------------
+window.LEAGUE_SIZE_BY_YEAR = window.LEAGUE_SIZE_BY_YEAR || {};
+
+Object.assign(window.LEAGUE_SIZE_BY_YEAR, {
+  'es-laliga': { 2025: 20 },
+});

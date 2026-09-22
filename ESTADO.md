@@ -99,7 +99,7 @@ se reescribe, no se acumula.
   (6 deportes, 6 regiones, 6 países, 8 ligas con su escalón). NO tiene membresía
   a propósito, y esa es la regla de arquitectura más importante que salió de esta
   versión: NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO. La membresía vive solo
-  en `data/club-leagues.js`, y sus 6 helpers nuevos son el único camino para
+  en `data/club-leagues.js`, y sus 6 helpers de membresía son el único camino para
   preguntarla: `clubsOfLeagueYear()` para TODO agregado de liga, `leaguesOfClub()`
   para el árbol, más los de navegación. Un campo `clubs[id].league` con "la liga de
   hoy" habría sido una segunda verdad sobre el mismo hecho, y encima inútil para
@@ -123,13 +123,26 @@ se reescribe, no se acumula.
   NO el `ar-lpf` del prompt del selector: esa categoría cambió de organizador
   tres veces en el período cargado, y el id nombra el escalón, que no cambia.
   DESDE LA VERSIÓN 164 SON 6 ARCHIVOS, uno por país, cada uno autoregistrándose
-  en la misma tabla, y `data/club-leagues.js` quedó con las reglas y los 6
+  en la misma tabla, y `data/club-leagues.js` quedó con las reglas y los
   helpers, sin un dato. Dos motivos: el repaso anual de ascensos y descensos pasa
   a ser el de UN país, y las filas dejaron de bajarse en la primera visita (se
   cargan al abrir el selector, que es el único lugar del sitio que las usa).
-  Hay UNA sola frontera async, `abrirModal()` de `js/selector.js`: los 6 helpers
+  Hay UNA sola frontera async, `abrirModal()` de `js/selector.js`: los helpers
   siguen siendo síncronos a propósito, porque volverlos async obligaría a volver
   async cada función de render del modal.
+- CUÁNTOS EQUIPOS TUVO LA LIGA (Versión 177, to-do 23(b)): `LEAGUE_SIZE_BY_YEAR`,
+  (liga, ejercicio) -> número de equipos, se lee con `leagueSizeAt(liga, año)`.
+  Viaja en los MISMOS `data/club-leagues/<iso2>.js` y en el mismo cargador, así
+  que no agrega ni un pedido de red. Antes esto iba a ser `LEAGUES[].totalClubs`,
+  un número suelto por liga: se ELIMINÓ el campo en vez de llenarlo, porque la
+  cantidad de equipos cambia por temporada (la Primera argentina pasó de 20 a 30
+  en el período cargado) y un solo número por liga es falso en casi todas. HOY
+  hay 3 liga-temporadas verificadas contra Wikipedia, que son las 3 que habilitan
+  un ranking: `jp-j1` 2025 = 20, `es-laliga` 2025 (temporada 2024/25) = 20,
+  `ar-primera` 2024 = 28. El resto devuelve null y el sitio no afirma nada.
+  TODAVÍA NO LA USA NINGUNA VISTA, a propósito: el consumidor (el "N de M clubes
+  de esta liga tienen ejercicio cargado", o sea el aviso de sesgo del benchmark)
+  es el to-do 23(c)/33. Con los datos de hoy daría 8 de 28, 9 de 20 y 10 de 20.
 - ÍNDICE LIVIANO DE CLUBES (Versión 129, ampliado en la 146): `data/club-index.js`,
   GENERADO, con lo que hay que mostrar de un club ANTES de entrar a él (nombre,
   país, calidad del dato, cuántos ejercicios, el más reciente, y desde la Versión
