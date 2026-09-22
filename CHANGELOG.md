@@ -2256,3 +2256,17 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   (`netlify.toml`), así que no hay cambio en el sitio.
 - Verificado: `node tools/audit.js` 0 P0 y 0 P1; `generate-fuentes-page.js --check`,
   `generate-fuentes-index.js --check` y `generate-club-index.js --check` los tres al día.
+
+## Versión 181: dos altas en TODO.md, sin tocar el sitio
+
+- **To-do 39 nuevo**: evaluar reemplazar el círculo de iniciales con color de marca (Versiones
+  178-180) por lo que hace soccerassociation con la identidad de cada club. Pedido de Guido al
+  cerrar el to-do 37. Antes de definir alcance hay que ver qué hace esa página en concreto — si
+  termina siendo un escudo-imagen, vuelve a cruzar la pregunta de derechos/hosting del 23(e)
+  original.
+- El to-do 23(c) (vista de liga) suma una etapa de research y prototipo ANTES de tocar el motor
+  real: mirar cómo otras páginas (deportivas y no deportivas) comunican "qué se puede hacer acá"
+  con rankings y números, escribir una recomendación, y armar un prototipo HTML en `Prototyping/`
+  para que Guido lo vea antes de cualquier cambio al sitio — no quedó como entrada propia acá
+  porque no cierra nada, solo cambia CÓMO se va a encarar esa sesión.
+- Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`.

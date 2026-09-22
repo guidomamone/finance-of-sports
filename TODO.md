@@ -231,3 +231,12 @@ perdieron sino que se descartaron:
     bien calibrada en la práctica — no asumirlo de la documentación. Y esto no reemplaza el OCR:
     Jev necesita texto como `state`, así que el paso de `pdftoppm` + Tesseract (ver CLAUDE.md,
     "Cada PDF nuevo") sigue haciendo falta igual.
+
+39. EVALUAR REEMPLAZAR EL CÍRCULO DE INICIALES CON COLOR DE MARCA (`brandColor`, Versiones
+    178-180) por lo que hace soccerassociation con la identidad de cada club. Pedido de Guido,
+    2026-09-22, al terminar el trabajo de color por club (to-dos 23(e)/37).
+    ANTES DE DEFINIR ALCANCE: pedirle a Guido que muestre o linkee qué hace exactamente esa
+    página — no asumirlo de memoria ni de nombre. Si termina siendo un escudo como imagen (no
+    un color), esto vuelve a cruzarse con la pregunta de derechos y hosting que ya quedó
+    anotada en el punto 23(e) original: el repo se deploya entero, así que una imagen se
+    serviría desde el dominio propio, que es justo lo que un club puede objetar.
