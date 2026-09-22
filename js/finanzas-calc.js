@@ -699,11 +699,10 @@
   // `inicioStackedSeriesForClub()` y `inicioDeudaSeriesForClub()`. Inicio dejó de mostrar
   // el club activo. Están en git antes de la 184 si hacen falta.
   //
-  // LO QUE QUEDÓ SIN CONSUMIDOR Y NO SE BORRÓ, a propósito y como decisión explícita (ver
-  // to-do 43): `allYearsRangeForClub()` y `yearKindForClub()`, unas líneas más arriba. Son
-  // helpers genéricos del motor, no de Inicio, y `yearKindForClub()` es además la única
-  // rama del código que distingue `placeholder` de `pending_official`, que `ESTADO.md`
-  // documenta como estados válidos a propósito. Borrarlos es una decisión de Guido, no un
-  // efecto colateral de haber sacado una pantalla.
+  // LO QUE QUEDÓ SIN CONSUMIDOR Y NO SE BORRÓ, decisión explícita de Guido (2026-09-22,
+  // to-do 43, cerrado): `allYearsRangeForClub()` y `yearKindForClub()`, unas líneas más
+  // arriba. Son helpers genéricos del motor, no de Inicio, y `yearKindForClub()` es además
+  // la única rama del código que distingue `placeholder` de `pending_official`, que
+  // `ESTADO.md` documenta como estados válidos a propósito. Se quedan.
 
 

@@ -2478,3 +2478,27 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Verificado en el navegador, en inglés: el `<select>` de ejercicio de Boca (Budget/Balance) y de
   Racing (Budget and balance sheet, todas las combinaciones) ya no muestra nada en castellano; en
   castellano, idéntico a antes. `node tools/audit.js`: 0 P0, 0 P1 (igual que antes de esta sesión).
+
+## Versión 188: el header móvil ya no desborda a 375px, y 3 decisiones de Guido sin código
+
+- **To-do 26 cerrado, opción (a).** `.header-right` (moneda, botón de club, contacto, idioma) ya
+  no comparte una sola fila sin envolver: dentro del breakpoint de 900px pasa a ser su propia fila
+  completa (`flex-basis:100%`, antes compartía fila con `.logo` y el 100% de sus hijos era 100%
+  de ese ancho angosto, no de la pantalla — el primer intento truncaba el nombre del club) y el
+  botón de club, adentro, se queda con esa fila para él solo. Verificado en el navegador a 375px:
+  `document.documentElement.scrollWidth` pasa de 494 a 383 (los 8px que quedan son un desborde
+  previo de 1 carácter en "Mi Cuenta" del nav, ajeno a este to-do, no se tocó). A 800px y en
+  desktop, sin cambios.
+- **To-do 43 cerrado: se quedan.** Decisión de Guido — `allYearsRangeForClub()` y
+  `yearKindForClub()` (`js/finanzas-calc.js`) siguen sin consumidor pero no se borran. El comentario
+  que los explica se actualizó para que ninguna sesión futura vuelva a hacer la misma pregunta.
+- **To-do 23(f) cerrado: la premisa estaba vencida.** El botón "Comparar" del header no abre
+  ningún panel de elegir club — funciona sin club activo desde la Versión 144 (`applyClubMode()`,
+  `TABS_SIN_CLUB`). Verificado en frío (localStorage vacío): Comparar se abre directo con sus dos
+  cards vacíos. El punto se escribió en la Versión 137, antes de ese cambio, y nunca se actualizó.
+- **To-do 40 cerrado: se deja como está.** Decisión de Guido — el nav queda Inicio · Comparar ·
+  Ligas · Finanzas · Fuentes · Mi Cuenta, sin renombrar.
+- `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: el peso de `TODO.md` en la
+  tabla de arranque, 19 KB → 14 KB (los 4 puntos cerrados en esta versión lo achicaron).
+- ASSET_V 187 → 188, constante y los 15 `<script src>`; `fuentes.html` y las 41 páginas de club
+  regeneradas. `node tools/audit.js`: 0 P0, 0 P1.

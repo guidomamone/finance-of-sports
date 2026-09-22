@@ -128,10 +128,25 @@ consulta puntual, nunca lectura de corrido.
     nav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
     nav button{font-size:12.5px;padding:7px 10px;}
     .logo{min-width:0;overflow:hidden;}
-    /* El nav del header ya se recorta abajo de ~850px (to-do 26): en móvil el botón
-       de club se estira y el resto cede espacio antes que él. */
-    .cb-wrap{min-width:0;flex:1;display:flex;justify-content:flex-end;}
-    .club-btn{min-width:0;flex:1;max-width:210px;}
+    /* TO-DO 26, RESUELTO (decisión de Guido, opción a): a 375px .header-right medía
+       480px contra 347px disponibles y desbordaba de costado (scrollWidth 494 contra
+       375, medido en el navegador) — el botón de club (hasta 210px) más moneda/
+       contacto/idioma no entraban en una sola fila. En vez de seguir achicando el
+       botón (la otra opción, que le sacaba el "Estás viendo"/"Cambiar"), se le da su
+       propia fila completa: `order` lo saca del flujo para que moneda+contacto+idioma
+       queden juntos arriba (su orden relativo en el HTML), y flex-basis:100% lo manda
+       a una fila propia abajo. Costo aceptado: el header sticky crece (138px → 181px,
+       ~22% de la pantalla en un iPhone), pero nada queda cortado ni fuera de pantalla. */
+    /* flex-basis:100%: sin esto header-right comparte la fila con .logo (que ya usa
+       ~184px de los 347px de contenido), así que le quedan ~155px — y el 100% de
+       cb-wrap de acá abajo es 100% de ESE ancho angosto, no de la página entera, que es
+       como el botón de club terminaba con el nombre cortado ("Cr…") en vez de en su
+       propia fila de ancho completo. Con flex-basis:100% header-right pasa a ser su
+       propia fila (mismo patrón que ya usa `nav` con width:100%, dos reglas más abajo),
+       y recién ahí el 100% de cb-wrap es el ancho real de la pantalla. */
+    .header-right{flex-basis:100%;flex-wrap:wrap;justify-content:flex-end;}
+    .cb-wrap{min-width:0;flex-basis:100%;order:99;display:flex;justify-content:flex-end;}
+    .club-btn{min-width:0;flex:1;max-width:none;}
   }
 
   /* Composición de ingresos al 100%: compara la MEZCLA (cuánto depende cada club de
@@ -1364,41 +1379,41 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '187';</script>
-<script src="data/lang/langs.js?v=187"></script>
-<script src="js/i18n.js?v=187"></script>
-<script src="data/clubs.js?v=187"></script>
+<script>window.ASSET_V = '188';</script>
+<script src="data/lang/langs.js?v=188"></script>
+<script src="js/i18n.js?v=188"></script>
+<script src="data/clubs.js?v=188"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=187"></script>
+<script src="data/club-index.js?v=188"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=187"></script>
-<script src="data/club-leagues.js?v=187"></script>
-<script src="data/category-map.js?v=187"></script>
-<script src="data/site-labels.js?v=187"></script>
-<script src="data/currency-map.js?v=187"></script>
-<script src="data/sources-view.js?v=187"></script>
+<script src="data/leagues.js?v=188"></script>
+<script src="data/club-leagues.js?v=188"></script>
+<script src="data/category-map.js?v=188"></script>
+<script src="data/site-labels.js?v=188"></script>
+<script src="data/currency-map.js?v=188"></script>
+<script src="data/sources-view.js?v=188"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=187"></script>
-<script src="js/finanzas-render.js?v=187"></script>
+<script src="js/finanzas-calc.js?v=188"></script>
+<script src="js/finanzas-render.js?v=188"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=187"></script>
-<script src="data/destacados.js?v=187"></script>
-<script src="js/liga.js?v=187"></script>
+<script src="js/selector.js?v=188"></script>
+<script src="data/destacados.js?v=188"></script>
+<script src="js/liga.js?v=188"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>

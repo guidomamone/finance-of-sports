@@ -64,27 +64,6 @@ perdieron sino que se descartaron:
 > sobreviva se muda al punto que corresponda o a un skill.
 
 
-43. DOS HELPERS DEL MOTOR QUEDARON SIN CONSUMIDOR Y NO SE BORRARON, a propósito:
-    `allYearsRangeForClub()` y `yearKindForClub()` (`js/finanzas-calc.js`). Los usaba el
-    render de Inicio, que se borró en la Versión 184 con el to-do 33. No se fueron con él
-    por dos motivos: son helpers GENÉRICOS del motor (el rango completo de ejercicios de un
-    club, y de qué tipo es cada uno), no de esa pantalla; y `yearKindForClub()` es la única
-    rama del código que distingue `placeholder` de `pending_official`, que `ESTADO.md`
-    documenta como estados válidos aunque hoy no los use ningún club. Borrarlos es una
-    decisión, no un efecto colateral. **Es de Guido**: si la respuesta es que no van a
-    volver a hacer falta, son ~35 líneas menos.
-    DE PASO, cuando se mire esto: `chart.nodata` y `selector.year.many` en `data/lang/en.js`
-    no tienen ninguna referencia en el código y son ANTERIORES a esta sesión (las 13 que
-    murieron con Inicio sí se borraron en la 184).
-
-40. REVISAR LOS NOMBRES DE LAS PESTAÑAS DEL NAV, todas juntas. Pedido de Guido, 2026-09-22,
-    al decidir que la pestaña nueva se llamara "Ligas" y que Finanzas quedara como Finanzas.
-    Hoy el nav dice Inicio · Comparar · Ligas · Finanzas · Fuentes · Mi Cuenta, y el par
-    Ligas/Finanzas no dice que uno es de ligas y el otro de clubes. En la charla salieron
-    "Finanzas de liga" / "Finanzas de club", que se descartó por ahora porque renombrar toca
-    el nav, `data/lang/en.js` y varios `data-i18n`. No es urgente: es una pasada de copy
-    sobre las 6, no un arreglo de una.
-
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.
@@ -92,7 +71,7 @@ perdieron sino que se descartaron:
     (a) **MÓVIL, más allá de que entre.** Los dos cards apilan y el modal funciona a
         375px —verificado, sin desborde horizontal— pero nadie diseñó la experiencia
         en un teléfono. Decisión de Guido durante el prototipado: primero desktop.
-        Ojo que la to-do 26 (el `.header-right` a 375px) sigue abierta y es de antes.
+        La to-do 26 (el `.header-right` a 375px) ya se resolvió (Versión 188).
 
     (b) **NO HAY GRUPOS GUARDADOS.** Armar "mis 6 brasileños" en el constructor de la
         mezcla se pierde al cerrar el modal. Si el caso aparece seguido, es lo primero
@@ -123,21 +102,6 @@ perdieron sino que se descartaron:
         equipos tiene cada temporada, y el resultado muestra la fórmula y el conteo—
         pero el número sigue siendo pobre hasta que haya más balances cargados.
 
-26. MOBILE, y es una REGRESIÓN del selector de la Versión 137. A 375px de ancho, `.header-right`
-    mide 480px dentro de los 347px disponibles: el botón Comparar queda cortado y los de contacto
-    e idioma quedan FUERA de la pantalla, con la página entera scrolleando de costado
-    (`document.documentElement.scrollWidth` 494 contra 375, medido en el navegador). La causa es
-    aritmética: el botón de club son 210px contra los ~104px del `<select>` que reemplazó, y con
-    el select la fila entraba por 1px. `.header-inner` envuelve (eso se arregló en la 137) pero
-    `.header-right` es `flex-wrap:nowrap` + `flex-shrink:0`, así que no cede.
-    DECISIÓN DE GUIDO, por eso no se arregló solo: las dos salidas cuestan algo distinto.
-    (a) Dejar que `.header-right` envuelva y darle al botón de club su propio renglón — probado en
-        el navegador, `scrollWidth` vuelve a 375 y entra todo, pero el header es `sticky` y pasa
-        de 138px a 181px, o sea 22% de la pantalla fija en un teléfono.
-    (b) Achicar el botón en móvil escondiendo el "Estás viendo" (`.cb-eyebrow`) y el "Cambiar"
-        (`.cb-change`), dejando escudo + nombre + caret. Menos alto, pero el botón pierde la
-        instrucción de qué hace.
-
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
     (a) RESUELTO (Versión 140). Inicio mostraba "DEUDA NETA ACTUAL: 0,0 M USD" para Boca y
         "Último resultado" con la cifra del PRESUPUESTO. Causa: `renderInicioStats()` usaba "el
@@ -150,11 +114,6 @@ perdieron sino que se descartaron:
         ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
         por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
         moneda y año. Decisión de Guido si se abre.
-    (f) El botón "Comparar" del header, sin club elegido, abre el panel para ELEGIR club en vez
-        de para comparar. Es correcto (no se puede comparar contra nada), pero el botón no lo
-        explica: podría estar deshabilitado con el motivo, o directamente escondido en la
-        portada.
-
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.

@@ -20,7 +20,7 @@ permanentes. Esto es el procedimiento.
 |---|---|---|---|
 | 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 38 KB |
 | 2 | `CONVENCIONES.md` | **siempre** | 44 KB |
-| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 19 KB |
+| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 14 KB |
 | 3 | `ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 10 KB |
 | 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 80 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 69 KB |
