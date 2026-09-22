@@ -2398,3 +2398,33 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   elegido Inicio sigue sin mostrar nada de ese club. `auditAll()` 41 clubes / 228 checks / 0 que no
   cierran / 0 warnings; `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día; cero
   `ReferenceError` en consola.
+
+## Versión 185: la deducción negativa ya no se pierde en "Composición de ingresos" (to-do 41)
+
+- `mezclaDe()` (`js/selector.js`) filtraba `r.value > 0` y tiraba enteros los buckets
+  negativos reales: Botafogo 2024, Cruzeiro 2025 y Envigado 2025 informan ingreso bruto y
+  una línea de deducciones aparte que cae en el catch-all y queda negativa. El card
+  "Composición de ingresos" de Comparar calculaba sus porcentajes sobre ese total inflado
+  (119,7 M USD contra 114,1 oficiales para Cruzeiro, ~5% de error). Filtro cambiado a
+  `r.value !== 0`, mismo criterio que ya usaba `tools/generate-rankings.js` para el mismo
+  dato (Versión 182).
+- `cardMezcla()` reescrito para que la barra apilada represente la deducción: los rubros
+  positivos se escalan al bruto (mismo % que mostraban antes del bug) y la deducción se
+  dibuja como una franja rayada roja (`.mix-seg-neg`, reusa `--red`) superpuesta al final de
+  la barra, no como un segmento más de la pila — un stacked bar no tiene forma honesta de
+  apilar un segmento negativo. El número al costado de cada barra pasa a ser el NETO (suma
+  de todos los rubros, positivos y negativos), que es el dato correcto. Leyenda nueva
+  ("Deducciones sobre el ingreso bruto") solo cuando aplica.
+- La decisión de cómo dibujar la deducción se le preguntó a Guido en el chat antes de
+  tocar el render: la solución de la pestaña Ligas para el mismo problema (barras de un
+  color sólido) no aplicaba acá sin perder el propósito del card, que es justamente mostrar
+  la composición.
+- `cmp.mix.deducciones` nueva en `data/lang/en.js`.
+- ASSET_V 184 → 185, constante y los 15 `<script src>`; `fuentes.html` y las 41 páginas de
+  club regeneradas.
+- Verificado en el navegador: Comparar con Cruzeiro (Balance 2025) contra Boca (Presupuesto
+  2026/2027) — el total de Cruzeiro en "Composición de ingresos" pasa a ser 114,1 M USD (no
+  119,7), con la franja de deducción visible al final de su barra y el tooltip mostrando
+  "Otras secciones deportivas y otros ingresos: −5,6 M USD". Confirmado por consola que
+  Botafogo 2024 y Envigado 2025 también cierran ahora (`mezclaNeto === revenue` en los tres).
+  `node tools/audit.js`: 0 P0, 0 P1.

@@ -258,6 +258,7 @@ window.I18N.strings.en = {
   "cmp.m.permember.note": "Only for clubs that publish their membership count.",
   "cmp.mix.title": "Revenue mix",
   "cmp.mix.sub": "Where each one's money comes from. Bars at 100%, to compare the mix rather than the size; the total is on the side.",
+  "cmp.mix.deducciones": "Deductions from gross revenue (subtracted from the total)",
   "cmp.rules": "Everything in <b>USD</b> (the comparison ignores the currency toggle on purpose) and in <b>simplified format</b>, the only taxonomy comparable across clubs from different countries. Each subject shows <b>its own financial year</b>, written next to each bar: clubs do not close on the same day nor have the same years loaded.",
   // --- Cards de torneo del presupuesto de Boca 2026/27 (Versión 138) ---
   // Solo el CHROME. Los rubros de las tablas ("Premios Grupales", "Remuneraciones BICA,

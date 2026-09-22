@@ -85,29 +85,13 @@ perdieron sino que se descartaron:
     el nav, `data/lang/en.js` y varios `data-i18n`. No es urgente: es una pasada de copy
     sobre las 6, no un arreglo de una.
 
-41. `mezclaDe()` (js/selector.js) FILTRA LA COMPOSICIÓN POR `> 0` Y TIRA LOS BUCKETS
-    NEGATIVOS, que son reales. Encontrado el 2026-09-22 al escribir
-    `tools/generate-rankings.js`, que tenía el mismo bug y se arregló ahí (Versión 182).
-    Botafogo 2024, Cruzeiro 2025 y Envigado 2025 reportan ingreso BRUTO y después una línea
-    de deducciones (`Deduções sobre a receita`, `Impostos e contribuições`, `Devoluciones,
-    rebajas y descuentos`) que cae en el catch-all y lo deja negativo. Consecuencia en la
-    pestaña Comparar: el card "Composición de ingresos" calcula sus porcentajes sobre un
-    total inflado (119,7 M USD en vez de 114,1 para Cruzeiro, o sea ~5% de error en cada
-    barra) y la deducción no se ve en ninguna parte. Son 3 clubes de 41, por eso no es P0,
-    pero el arreglo es una línea: filtrar `!== 0` en vez de `> 0`. LO QUE HAY QUE DECIDIR,
-    y es lo que lo hace más que una línea: qué dibuja una barra apilada al 100% cuando uno
-    de sus segmentos es negativo. El ranking de la pestaña Ligas esquivó el problema
-    mostrando barras de un color sólido.
-
-42. LO QUE TODAVÍA NO SE TRADUCE Y SÍ DEBERÍA. La cabecera de `data/lang/en.js` ya lista dos
-    (los buckets de Formato simplificado y los avisos por tipo de reporte); la pestaña Ligas
-    sumó una tercera visible: `tierLabel()` (`data/leagues.js`) devuelve "1ª división" /
-    "2ª división" en castellano duro, y ahora se ve en la grilla de ligas de esa pestaña
-    además de en el selector. Cuarta: `ejercicioLabel()` (`js/finanzas-calc.js`) arma
-    "Balance 2024/2025" / "Presupuesto 2026" / "Ejercicio 2023/2024", que aparece en
-    Finanzas, en la tabla de Ligas y en los tooltips. Ninguna rompe nada —el sitio degrada
-    a castellano— pero un visitante en inglés ve castellano en medio de una tabla en inglés.
-    Es una sola pasada para las 4, no cuatro tareas.
+44. OTRO TEXTO SIN TRADUCIR, MISMO PATRÓN QUE EL TO-DO 42 QUE SE CERRÓ EN ESTA SESIÓN
+    (encontrado al verificar ese punto en el navegador, en inglés): `anioDropdownSuffix()`
+    (`js/finanzas-calc.js`) arma el sufijo " (Presupuesto)" / " (Balance)" / " (Presupuesto
+    y Balance)" / " (Placeholder)" del `<select>` de ejercicio de Finanzas, en castellano
+    duro — no pasa por `ejercicioLabel()` (que ya traduce desde el to-do 42), es una función
+    aparte con su propio texto. No se tocó en esa pasada porque no era uno de los 4 puntos
+    que pidió Guido explícitamente.
 
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que

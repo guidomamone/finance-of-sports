@@ -1490,7 +1490,13 @@ window.CLUB_SELECTOR = (function(){
     var meta = window.yearMetaFor(id, year);
     return rows.map(function(r){
       return { label:r.label, value: window.toDisplayValue(r.value, meta, 'USD') };
-    }).filter(function(r){ return r.value > 0; });
+    // OJO: se descartan los CEROS exactos (una fila en 0 no dibuja nada), pero NO
+    // los negativos. Botafogo 2024, Cruzeiro 2025 y Envigado 2025 reportan ingreso
+    // BRUTO y una línea de deducciones que cae en el catch-all y queda negativa —
+    // filtrar por `> 0` (to-do 41) tiraba ese rubro entero y el total de la mezcla
+    // quedaba inflado ~5% en esos 3 clubes. Mismo criterio que ya usa
+    // `tools/generate-rankings.js` para el mismo dato.
+    }).filter(function(r){ return r.value !== 0; });
   }
 
   // UN BLOQUE: se suman sus ejercicios y, si el agregador es promedio, se divide por
@@ -1917,9 +1923,16 @@ window.CLUB_SELECTOR = (function(){
       'De dónde sale la plata de cada uno. Barras al 100%, para comparar la mezcla y no el tamaño; el total va al costado.')));
 
     var usados = {};
+    var hayDeducciones = false;
     tots.forEach(function(tt, i){
-      var labels = Object.keys(tt.mezcla).filter(function(l){ return tt.mezcla[l] > 0; });
-      var total = labels.reduce(function(acc, l){ return acc + tt.mezcla[l]; }, 0);
+      var positivos = Object.keys(tt.mezcla).filter(function(l){ return tt.mezcla[l] > 0; });
+      var negativos = Object.keys(tt.mezcla).filter(function(l){ return tt.mezcla[l] < 0; });
+      // BRUTO: la suma de los rubros positivos. Es sobre lo que se escala la barra,
+      // así cada rubro sigue ocupando el mismo % "normal" que ocupaba antes del
+      // to-do 41. NETO: la suma de TODOS los rubros (positivos y negativos), que es
+      // el ingreso real — el mismo total que ya usa `verifyTieOuts()`.
+      var bruto = positivos.reduce(function(acc, l){ return acc + tt.mezcla[l]; }, 0);
+      var neto = positivos.concat(negativos).reduce(function(acc, l){ return acc + tt.mezcla[l]; }, 0);
       var fila = el('div', 'mix-row');
 
       var nombre = el('div', 'mix-name');
@@ -1931,16 +1944,33 @@ window.CLUB_SELECTOR = (function(){
       fila.appendChild(nombre);
 
       var barra = el('div', 'mix-bar');
-      labels.sort(function(a, b){ return tt.mezcla[b] - tt.mezcla[a]; }).forEach(function(lbl){
+      positivos.sort(function(a, b){ return tt.mezcla[b] - tt.mezcla[a]; }).forEach(function(lbl){
         usados[lbl] = true;
         var seg = el('div', 'mix-seg');
-        seg.style.width = (tt.mezcla[lbl] / total * 100) + '%';
+        seg.style.width = (bruto ? tt.mezcla[lbl] / bruto * 100 : 0) + '%';
         seg.style.background = colorDeRubro(lbl);
-        seg.title = lbl + ': ' + Math.round(tt.mezcla[lbl] / total * 100) + '%';
+        seg.title = lbl + ': ' + Math.round(tt.mezcla[lbl] / bruto * 100) + '%';
         barra.appendChild(seg);
       });
+      // LA DEDUCCIÓN (to-do 41): un rubro real, pero negativo (Botafogo 2024,
+      // Cruzeiro 2025, Envigado 2025 informan ingreso bruto y una línea de
+      // deducciones aparte). Una barra apilada no tiene forma de representar un
+      // segmento negativo apilándolo — se dibuja como una franja rayada que
+      // "muerde" el final de la barra, superpuesta sobre la última porción del
+      // bruto, en vez de sumarse como un segmento más. El número al costado sigue
+      // siendo el NETO, que es el dato correcto.
+      if(bruto && negativos.length){
+        hayDeducciones = true;
+        var negAbs = negativos.reduce(function(acc, l){ return acc - tt.mezcla[l]; }, 0);
+        var neg = el('div', 'mix-seg mix-seg-neg');
+        neg.style.width = Math.min(100, negAbs / bruto * 100) + '%';
+        neg.title = negativos.map(function(lbl){
+          return lbl + ': −' + Math.abs(tt.mezcla[lbl]).toFixed(1) + ' M USD';
+        }).join(' · ');
+        barra.appendChild(neg);
+      }
       fila.appendChild(barra);
-      fila.appendChild(el('div', 'mix-val', total ? total.toFixed(1) + ' M USD' : '—'));
+      fila.appendChild(el('div', 'mix-val', neto ? neto.toFixed(1) + ' M USD' : '—'));
       caja.appendChild(fila);
     });
 
@@ -1954,6 +1984,13 @@ window.CLUB_SELECTOR = (function(){
       sp.appendChild(document.createTextNode(lbl));
       leyenda.appendChild(sp);
     });
+    if(hayDeducciones){
+      var spNeg = el('span');
+      spNeg.appendChild(el('i', 'mix-legend-neg'));
+      spNeg.appendChild(document.createTextNode(
+        t('cmp.mix.deducciones', 'Deducciones sobre el ingreso bruto (se restan del total)')));
+      leyenda.appendChild(spNeg);
+    }
     caja.appendChild(leyenda);
     return caja;
   }
