@@ -2578,3 +2578,13 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - ASSET_V 189 → 192 (se saltea 190/191, que no tocaban `js/`/`data/`), constante y los 15
   `<script src>`; `fuentes.html` y las 41 páginas de club regeneradas (`checkGenerados()` lo pedía
   como P1, ya resuelto). `node tools/audit.js`: 0 P0, 0 P1.
+
+## Versión 193: to-do 39 en pausa con research hecho, to-do 40 en pausa
+
+- To-do 39: el research de `auditorias/2026-09-22-camiseta-vs-circulo-selector.md` (ilustración de
+  camiseta por club vs. el círculo de `brandColor`) queda citado en `TODO.md` con su recomendación
+  (generador paramétrico, no réplica manual; piloto acotado sobre los ~27 clubes con color
+  repetido antes de barrer los 41; la pregunta de derechos sigue abierta para Guido). Decisión de
+  Guido: no retomar antes de ~un mes.
+- To-do 40 (CMS sin código): mismo criterio, en pausa ~un mes.
+- Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`.

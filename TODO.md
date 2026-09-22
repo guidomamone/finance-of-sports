@@ -134,6 +134,7 @@ perdieron sino que se descartaron:
     cuesta plata, y haría que cada visitante pida la config antes de ver una tabla.
     ANTES DE ARRANCAR: preguntarle a Guido QUÉ querría editar desde ahí. Si es solo el orden y el
     nombre de las filas, el archivo de configuración solo ya alcanza y el CMS es de más.
+    EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
 
 42. ASIMETRÍA QUE DEJÓ LA VERSIÓN 189: Ingresos tiene fila "Educación", Gastos no. El gasto del
     colegio de un club cae hoy dentro de "Otras secciones deportivas (juvenil, otros deportes,
@@ -192,10 +193,17 @@ perdieron sino que se descartaron:
     "Cada PDF nuevo") sigue haciendo falta igual.
 
 39. EVALUAR REEMPLAZAR EL CÍRCULO DE INICIALES CON COLOR DE MARCA (`brandColor`, Versiones
-    178-180) por lo que hace soccerassociation con la identidad de cada club. Pedido de Guido,
-    2026-09-22, al terminar el trabajo de color por club (to-dos 23(e)/37).
-    ANTES DE DEFINIR ALCANCE: pedirle a Guido que muestre o linkee qué hace exactamente esa
-    página — no asumirlo de memoria ni de nombre. Si termina siendo un escudo como imagen (no
-    un color), esto vuelve a cruzarse con la pregunta de derechos y hosting que ya quedó
-    anotada en el punto 23(e) original: el repo se deploya entero, así que una imagen se
-    serviría desde el dominio propio, que es justo lo que un club puede objetar.
+    178-180) por una ilustración de camiseta por club, como hace soccerassociation (mostrado por
+    Guido: para Vélez blanca con V celeste/azul, para Boca azul con franja amarilla — planas, sin
+    sponsor ni escudo). Pedido de Guido, 2026-09-22, al terminar el trabajo de color por club
+    (to-dos 23(e)/37).
+    RESEARCH YA HECHO, no repetirlo: `auditorias/2026-09-22-camiseta-vs-circulo-selector.md`. En
+    síntesis — el argumento a favor es real (27 de 39 clubes compiten por dos familias de color
+    hoy, el patrón los distinguiría donde el color solo no alcanza), pero quedan 2 cosas para
+    Guido antes de tocar código: (a) confirmar que un generador PARAMÉTRICO (nunca réplica manual
+    club por club, que ya fue el error que se corrigió una vez con los escudos) es el camino; (b)
+    la pregunta de derechos — una ilustración plana sin sponsor ni escudo probablemente pesa
+    distinto que una imagen oficial, pero el research no la puede cerrar solo. Si avanza, la
+    recomendación es un PILOTO ACOTADO sobre esos ~27 clubes de los clusters de color repetido
+    (no barrer los 41 de una), para probar legibilidad real a 24px antes de comprometerse.
+    EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
