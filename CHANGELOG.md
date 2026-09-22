@@ -2150,3 +2150,41 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   diferencia de SOLO fecha nunca dispara una reescritura (deliberado, evita churn diario). Por eso
   las 42 páginas ya escritas siguen diciendo la fecha vieja hasta la próxima regeneración por un
   cambio de contenido real; ahí se corrigen solas.
+
+## Versión 178 — Cada club se muestra con SU color, no con el azul del sitio
+
+- To-do 23(e), con el alcance recortado a propósito: **solo color, no escudos-imagen** (una imagen
+  hay que alojarla en el dominio propio, que es justo lo que un club puede objetar).
+- `clubs[id].brandColor` nuevo en `data/clubs.js`: un hex por club, **39 de los 41**, verificado uno
+  por uno contra su propia fuente — `theme-color`/CSS del sitio oficial del club donde lo declara
+  (River #E30520, Vélez #0061A8, San Lorenzo #00325A, Independiente #EC1C24, Estudiantes #E41815,
+  Ituano #E2041A), el infobox de Wikipedia en el idioma del país para el resto, y la `クラブカラー`
+  que cada club declara —dato oficial de la J.League— para los 10 japoneses.
+- **2 clubes quedaron SIN color a propósito, y el campo es opcional por eso**: `realmadrid` y
+  `oncecaldas`. Los dos porque el color que los identifica es el BLANCO ("El color que identifica al
+  club es el blanco", el Blanco Blanco) y un círculo blanco no se ve contra el fondo blanco del
+  modal. Siguen con el azul del sitio, que es el fallback: un color equivocado se lee peor que
+  ninguno. Decisión de Guido, en la misma consulta que resolvió los otros 3 casos dudosos: Sevilla
+  (camiseta blanca, va con su rojo de marca #F43333), Rosario Central (bastones azul y amarillo en
+  partes iguales, gana el azul del escudo #0A3D72) y Valencia (camiseta blanca, va con el naranja
+  del murciélago #E23C07).
+- `pintarCrest()` en `js/selector.js`: pinta el círculo en los 4 lugares donde existe (`.op-crest`
+  de la fila del modal, `.arm-crest` del paso "ejercicio de cada club", `.cd-crest` del card de
+  Comparar, `#cbCrest` del header) y, sin `brandColor`, RESETEA los estilos en vez de no hacer nada
+  — `#cbCrest` es un solo nodo que se reusa en cada cambio de club, y sin el reset el visitante se
+  quedaba con el color del club anterior.
+- El color de las INICIALES se calcula, no se guarda: `textoSobre()` usa la luminancia relativa de
+  WCAG y deja blanco mientras llegue a 4:1, negro cuando no. Dos reglas que se probaron y se
+  descartaron, medidas en el navegador sobre los 39: un umbral fijo de luminancia dejaba blanco
+  sobre el celeste de Racing y el de Kawasaki a 2,8:1 (ilegible), y "siempre el color de más
+  contraste" partía a la familia de los rojos al medio (Independiente y Unión en negro, River y
+  Estudiantes en blanco, con dos décimas de diferencia). Piso real que quedó: 4,11:1.
+- Los colores muy claros (Club América, Mirassol) llevan un aro interno por `box-shadow`, no por
+  `border`, para no cambiar el tamaño del círculo.
+- ASSET_V 177 -> 178, constante + los 13 tags literales de `index.html`; `fuentes.html` y las 41
+  páginas de `fuentes/` regeneradas, que lo llevan adentro.
+- `clubs.js` pasa de ~404 a ~480 bytes por club (el campo + su comentario de cabecera), y es
+  eager: es el precio del color en cada pageview.
+- Verificado: `auditAll()` 41 clubes / 228 checks / 0 que no cierran, `node tools/audit.js` 0 P0 y
+  0 P1, y los 4 círculos mirados en el navegador (incluido el fallback de Real Madrid entrando
+  DESPUÉS de un club con color).

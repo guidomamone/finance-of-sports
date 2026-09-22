@@ -140,6 +140,54 @@ window.CLUB_SELECTOR = (function(){
     var w = String(name || '').replace(/[^A-Za-zÀ-ÿ ]/g, '').split(/\s+/).filter(Boolean);
     return (w.slice(0, 2).map(function(x){ return x[0]; }).join('') || '··').toUpperCase();
   }
+  // EL CÍRCULO DE INICIALES, PINTADO CON EL COLOR DEL CLUB (Versión 178, to-do 23(e)).
+  // `brandColor` es opcional a propósito (ver la cabecera de data/clubs.js: un club sin un
+  // color primario claro no lo lleva), así que `pintarCrest` tiene que saber VOLVER al azul
+  // del sitio, no solo pintar: `#cbCrest` es UN solo nodo del header que se reusa en cada
+  // cambio de club, y sin el reset el visitante se queda con el color del club anterior.
+  function brandOf(id){ return (clubs[id] && clubs[id].brandColor) || null; }
+
+  // Luminancia relativa (fórmula de WCAG 2.x): con qué color se leen las iniciales arriba del
+  // fondo. NO se puede hardcodear blanco — el amarillo de Club América y el de Villarreal lo
+  // borran — ni por club, que sería el mismo dato dos veces y se desincroniza al primer ajuste.
+  function luminancia(hex){
+    var h = String(hex || '').replace('#', '');
+    if(h.length !== 6) return 1;
+    var c = [0, 2, 4].map(function(i){
+      var v = parseInt(h.slice(i, i + 2), 16) / 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+  }
+  // La regla es "blancas mientras se lean, negras cuando no": iniciales blancas salvo que el
+  // contraste contra el fondo baje de 4:1 (la razón de WCAG), y ahí negras. Las dos
+  // alternativas que se probaron y NO sirven:
+  //   - Un umbral de luminancia a ojo (0,35) dejaba blanco sobre el celeste de Racing y el de
+  //     Kawasaki Frontale a 2,8:1, ilegible, cuando en negro dan 6,8:1.
+  //   - "Siempre el color que más contraste dé" parte a la familia de los rojos al medio: los
+  //     rojos de los clubes caen justo en el cruce (4,3 contra 4,7), así que Independiente y
+  //     Unión quedaban con iniciales NEGRAS y River, Estudiantes y Argentinos —del mismo rojo,
+  //     a dos puntos de diferencia— con blancas. Se veía como un error, no como una regla.
+  // El piso real que quedó, medido sobre los 39 clubes con color, es 4,11:1 (Atlético
+  // Goianiense; después Athletic Club 4,26 y Grêmio 4,32): abajo de los 4,5 de WCAG para
+  // texto chico, pero son dos iniciales en negrita y la alternativa era oscurecerles el
+  // color de marca, que es justo lo que este campo no puede hacer.
+  function textoSobre(hex){
+    return 1.05 / (luminancia(hex) + 0.05) >= 4 ? '#fff' : '#111';
+  }
+
+  function pintarCrest(span, id){
+    var c = brandOf(id);
+    if(!c){ span.style.background = ''; span.style.color = ''; span.style.boxShadow = ''; return span; }
+    span.style.background = c;
+    span.style.color = textoSobre(c);
+    // Un color muy claro (el amarillo de Club América, Villarreal o Mirassol) se confunde con
+    // el fondo blanco de la fila: el aro va por dentro (box-shadow y no border) para no
+    // cambiar el tamaño del círculo ni empujar el texto de al lado.
+    span.style.boxShadow = luminancia(c) > 0.6 ? 'inset 0 0 0 1px rgba(0,0,0,.22)' : '';
+    return span;
+  }
+
   function norm(s){ return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
   function tiene(k, id){ return st[k].sel.indexOf(id) >= 0; }
   function alternar(k, id){
@@ -447,7 +495,10 @@ window.CLUB_SELECTOR = (function(){
     b.type = 'button';
     b.appendChild(el('span', 'op-check', marcado ? '✓' : ''));
     if(op.icon) b.appendChild(el('span', 'op-icon', op.icon));
-    else if(op.crest) b.appendChild(el('span', 'op-crest', op.crest));
+    // `op.crest` solo lo llevan las opciones de CLUB (las de país/liga/deporte traen `op.icon`),
+    // así que acá `op.id` es siempre un clubId; para cualquier otra cosa brandOf() da null y el
+    // círculo queda como estaba.
+    else if(op.crest) b.appendChild(pintarCrest(el('span', 'op-crest', op.crest), op.id));
     var txt = el('span', 'op-txt');
     txt.appendChild(el('span', 'op-label', op.label));
     if(op.sub) txt.appendChild(el('span', 'op-sub', op.sub));
@@ -738,7 +789,7 @@ window.CLUB_SELECTOR = (function(){
     orden.forEach(function(id){
       var fila = el('div', 'arm-fila');
       var cab = el('div', 'arm-cab');
-      cab.appendChild(el('span', 'arm-crest', initials(nameOf(id))));
+      cab.appendChild(pintarCrest(el('span', 'arm-crest', initials(nameOf(id))), id));
       cab.appendChild(el('span', 'arm-n', nameOf(id)));
       fila.appendChild(cab);
 
@@ -1529,7 +1580,9 @@ window.CLUB_SELECTOR = (function(){
     var unClub = (soloClubes && ids.length === 1 && paresDe(l).length === 1) ? ids[0] : null;
 
     var fila = el('div', 'cd-sujeto');
-    fila.appendChild(el('span', 'cd-crest', unClub ? initials(nameOf(unClub)) : '🧩'));
+    // Un lado que NO es un club solo (una liga, un país, una mezcla) va con el 🧩 y sin color:
+    // el color es del club, y un lado de varios no tiene uno.
+    fila.appendChild(pintarCrest(el('span', 'cd-crest', unClub ? initials(nameOf(unClub)) : '🧩'), unClub));
     var txt = el('span', 'cd-op-txt');
     txt.appendChild(el('span', 'cd-sujeto-n', l.nombre));
     var co = unClub ? window.COUNTRIES[countryOf(unClub)] : null;
@@ -2115,12 +2168,14 @@ window.CLUB_SELECTOR = (function(){
     if(!crest) return;
     if(!id){
       crest.textContent = '?';
+      pintarCrest(crest, null);   // soltar el club también le saca su color al botón
       name.textContent = t('header.club.none', 'Elegí tu club');
       eyebrow.textContent = t('header.club.eyebrow.none', 'Todavía sin elegir');
       $('clubBtn').title = t('header.club.btn.none', 'Elegí un club para ver sus números (Ctrl+K)');
       return;
     }
     crest.textContent = initials(nameOf(id));
+    pintarCrest(crest, id);
     name.textContent = nameOf(id);
     eyebrow.textContent = t('header.club.eyebrow', 'Estás viendo');
     var co = window.COUNTRIES[countryOf(id)];

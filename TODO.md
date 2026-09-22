@@ -162,10 +162,6 @@ perdieron sino que se descartaron:
         ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
         por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
         moneda y año. Decisión de Guido si se abre.
-    (e) ESCUDOS. Los 41 clubes se muestran con un círculo azul con sus iniciales. Los escudos
-        reales, o al menos el color de cada club, harían el selector y las barras mucho más
-        legibles; son 41 datos que hay que verificar uno por uno (un color equivocado se lee
-        peor que ninguno) y, si son imágenes, hay que ver el tema de derechos.
     (f) El botón "Comparar" del header, sin club elegido, abre el panel para ELEGIR club en vez
         de para comparar. Es correcto (no se puede comparar contra nada), pero el botón no lo
         explica: podría estar deshabilitado con el motivo, o directamente escondido en la

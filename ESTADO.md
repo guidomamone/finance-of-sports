@@ -150,7 +150,8 @@ se reescribe, no se acumula.
   eso vive adentro de `data/<club>-data.js`, que es justamente lo que no se carga
   hasta que el visitante elige ese club: con la página recién abierta, `clubs{}`
   tiene 41 entradas y `sources{}` tiene 3, todas de Boca. Son 7 KB para los 41
-  clubes contra los ~366 bytes POR CLUB de `clubs.js`. Su consumidor es el
+  clubes contra los ~480 bytes POR CLUB de `clubs.js` (eran ~404 antes de que la
+  Versión 178 le sumara `brandColor` y su comentario de cabecera). Su consumidor es el
   selector jerárquico, que desde la Versión 137 EXISTE: es de acá que salen el
   punto de calidad y el conteo de ejercicios de cada fila del panel, sin bajar un
   solo archivo de club. `yrs` se agregó para que el selector pueda además ofrecer
@@ -232,6 +233,19 @@ se reescribe, no se acumula.
   pero busca sólo por nombre de club + país (no por liga, que en esa grilla no se
   imprime en ninguna parte), no toca nunca a los ya marcados, y lleva su propio
   estado de texto y de "Mostrar más", separado del buscador del modal.
+  DESDE LA VERSIÓN 178 el círculo de iniciales de cada club va en SU color, no en el
+  azul del sitio: `clubs[id].brandColor` (`data/clubs.js`), un hex verificado club
+  por club contra su propia fuente. Pinta en los 4 lugares donde ese círculo existe
+  (la fila del modal, el paso de "ejercicio de cada club", el card de Comparar y el
+  botón de club del header), siempre por la misma `pintarCrest()` de
+  `js/selector.js`, que además decide el color de las INICIALES por contraste —
+  blancas mientras lleguen a 4:1 contra el fondo, negras cuando no (el celeste de
+  Racing, el amarillo de Club América) — y le pone un aro interno a los colores muy
+  claros, que contra el fondo blanco de la fila se perderían. Son 39 de los 41: el
+  campo es opcional a propósito y Real Madrid y Once Caldas NO lo tienen, porque el
+  color que los identifica es el blanco y un círculo blanco no se ve; esos dos se
+  quedan con el azul del sitio, que es el fallback. Los escudos como IMAGEN siguen
+  sin hacerse (derechos y hosting, el repo se deploya entero).
 - LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
   Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre
   el selector y aterriza en Finanzas) o "quiero comparar dos clubes o ligas" (va

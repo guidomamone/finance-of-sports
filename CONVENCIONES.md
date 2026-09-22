@@ -470,6 +470,19 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
   del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
   el stat con su total), no recalcular aparte.
+- REGLA DEL COLOR DE CADA CLUB (Versión 178, decisión de Guido al cerrar el to-do
+  23(e)): `clubs[id].brandColor` es el color del club en el círculo de iniciales, y
+  **es opcional a propósito — un club sin un color primario claro y sin ambigüedad se
+  queda SIN el campo, con el azul del sitio, y eso no es un pendiente.** Un color
+  equivocado se lee peor que ninguno. Lo mismo vale al agregar un club nuevo: si no
+  se pudo verificar su color contra una fuente propia (sitio oficial, infobox de
+  Wikipedia del país, o el color oficial que declare su liga), se deja sin `brandColor`
+  en vez de copiar el de otro club del mismo país o elegir a ojo. Hoy los 2 sin color
+  son Real Madrid y Once Caldas, los dos porque el color que los identifica es el
+  blanco y un círculo blanco no se ve contra el fondo blanco del modal. Dos cosas que
+  NO se hacen acá: guardar el color de las iniciales (lo calcula `textoSobre()` por
+  contraste) y usar escudos como imagen (derechos y hosting: el repo se deploya entero,
+  así que la imagen se serviría desde el dominio propio).
 - OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` (Versión 174).
   `grillaConTope()` la usan varias grillas distintas, y su `mostrarTodos` es una
   variable de módulo: si una grilla nueva la prende, "Mostrar más" queda apretado
