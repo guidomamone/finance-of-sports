@@ -958,7 +958,7 @@ function checkCategorizacion(api) {
       add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en 'wages_squad' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
     }
     for (const [sec, lines, buckets, catchAll] of [
-      ['Ingresos', rev, api.REVENUE_BUCKETS, 'Otras secciones deportivas y otros ingresos'],
+      ['Ingresos', rev, api.REVENUE_BUCKETS, 'Otros ingresos'],
       ['Gastos', exp, api.EXPENSE_BUCKETS, 'Otros gastos'],
     ]) {
       if (!lines.length) continue;

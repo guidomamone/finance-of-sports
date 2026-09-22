@@ -90,7 +90,7 @@
     if(!overlay) return null;
     if(simplifyFormat){
       return {
-        ingresos: bucketize(overlay.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otras secciones deportivas y otros ingresos'),
+        ingresos: bucketize(overlay.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos'),
         gastos: bucketize(overlay.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos'),
       };
     }
@@ -277,14 +277,56 @@
   // bucket normal en $0 (ej. "Venta de Jugadores" cuando un club no vendió nadie ese año): esos SÍ se
   // siguen mostrando en $0, porque son categorías reales, no un artefacto de implementación como el
   // bolsón sin desglosar.
+  // ===========================================================================
+  // EL INTERRUPTOR DE ABONOS (Versión 189, pedido explícito de Guido al decidir la fusión:
+  // "necesito que el proceso también contemple que mañana tal vez reversione la decisión de meter
+  // abonos dentro de Estadio. quiero tener la flexibilidad sin necesidad de tocar todo, que
+  // aparezcan mil bugs y sea un lío").
+  //
+  // EN `true` (hoy): "Estadio" es UNA fila con las 3 formas de monetizar el estadio —
+  // recaudación partido a partido + abonos de temporada + uso/alquiler del estadio fuera del
+  // fútbol— y el acordeón de esa fila las separa con el rawLabel de cada club.
+  // EN `false`: vuelve la fila "Abonos" propia, en su posición histórica (6ta, entre "Premios" y
+  // "Venta de Jugadores"), y "Estadio" se queda solo con recaudación + uso/alquiler.
+  //
+  // PARA REVERTIR NO HACE FALTA TOCAR NINGÚN ARCHIVO DE DATOS: la categoría `season_tickets` de
+  // cada club es la misma en los dos escenarios, lo único que cambia es en qué fila se muestra.
+  // Los 3 lugares que podrían quedar desincronizados ya están cubiertos a propósito:
+  //   1. `INICIO_INGRESOS_BUCKETS` (más abajo en este archivo) conserva el color de 'Abonos' y el
+  //      de 'Estadio: recaudación de partidos' aunque hoy no se usen.
+  //   2. `data/site-labels.js` y `data/lang/en.js` conservan las claves i18n de las dos filas.
+  //   3. `data/rankings/<liga>.js` SÍ hornea el nombre de cada fila, así que después de cambiar
+  //      este booleano hay que correr `node tools/generate-rankings.js`. Si te olvidás,
+  //      `node tools/audit.js` lo marca como P1 (`generados-desactualizados`), no pasa silencioso.
+  // O sea: revertir = cambiar `true` por `false` acá + correr ese comando. Nada más.
+  // ===========================================================================
+  const ABONOS_DENTRO_DE_ESTADIO = true;
+
+  // Versión 189: "Estadio: recaudación de partidos" pasa a llamarse "Estadio" a secas y absorbe
+  // abonos y el uso/alquiler del estadio (ver el interruptor de arriba). Se suman además 2 filas
+  // nuevas de ingresos —"Educación" y "Otras secciones deportivas"— que son el espejo, del lado de
+  // Ingresos, de las filas que la Versión 53 ya había creado del lado de Gastos: hasta acá las 4
+  // categorías que no son fútbol profesional (`other_sports`, `youth_football`, `womens_football`,
+  // `other_income`) caían ENTERAS al catch-all, así que el colegio de Vélez (20% de sus ingresos) o
+  // el básquet de Boca no se veían en ninguna fila. El relevamiento que lo midió, club por club,
+  // está en `auditorias/2026-09-22-catchall-no-futbol.md`.
+  // Y el catch-all pasa de "Otras secciones deportivas y otros ingresos" a "Otros ingresos" a
+  // secas: con una fila real llamada "Otras secciones deportivas" arriba, el nombre viejo del
+  // catch-all quedaba a un renglón de distancia de su casi homónimo (decisión de Guido:
+  // "se me hacen muy parecidos 'otros' y 'otras' al lado del otro"). De paso queda simétrico con
+  // Gastos, cuyo catch-all ya era "Otros gastos" a secas.
   const GENERIC_SIMPLIFIED_REVENUE_BUCKETS = [
     {label:'Cuotas Sociales', cats:['member_dues']},
     {label:'Comercial / Sponsors', cats:['sponsorship_commercial']},
-    {label:'Estadio: recaudación de partidos', cats:['matchday_competition']},
+    {label:'Estadio', cats: ABONOS_DENTRO_DE_ESTADIO
+      ? ['matchday_competition','season_tickets','stadium_other']
+      : ['matchday_competition','stadium_other']},
     {label:'Televisión', cats:['broadcasting']},
     {label:'Premios por competencias', cats:['competition_bonus']},
-    {label:'Abonos', cats:['season_tickets']},
+    ...(ABONOS_DENTRO_DE_ESTADIO ? [] : [{label:'Abonos', cats:['season_tickets']}]),
     {label:'Venta de Jugadores', cats:['player_sales']},
+    {label:'Educación', cats:['education']},
+    {label:'Otras secciones deportivas', cats:['other_sports','youth_football','womens_football']},
     {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations'], hideIfZero:true},
   ];
 
@@ -375,7 +417,7 @@
     ];
     return {
       resultLabel:'Resultado neto',
-      ingresos: bucketize(cur.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otras secciones deportivas y otros ingresos'),
+      ingresos: bucketize(cur.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos'),
       gastos: bucketize(cur.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos'),
       extraRows,
     };
@@ -686,12 +728,19 @@
   const INICIO_INGRESOS_BUCKETS = [
     {label:'Cuotas Sociales', color:'#0a2b5c'},
     {label:'Comercial / Sponsors', color:'#f2b705'},
-    {label:'Estadio: recaudación de partidos', color:'#1b7a3d'},
+    {label:'Estadio', color:'#1b7a3d'},
     {label:'Televisión', color:'#8a5cf6'},
     {label:'Premios por competencias', color:'#2b8a99'},
     {label:'Abonos', color:'#e07b39'},
     {label:'Venta de Jugadores', color:'#b5372b'},
+    {label:'Educación', color:'#c98a00'},
+    {label:'Otras secciones deportivas', color:'#4a7c9e'},
     {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
+    {label:'Otros ingresos', color:'#6b6b6b'},
+    // Las 2 de abajo NO se usan mientras ABONOS_DENTRO_DE_ESTADIO sea true (ver el interruptor
+    // arriba en este archivo): se conservan para que revertir esa decisión no requiera volver a
+    // elegir colores. 'Abonos' de arriba tampoco se usa hoy, mismo motivo.
+    {label:'Estadio: recaudación de partidos', color:'#1b7a3d'},
     {label:'Otras secciones deportivas y otros ingresos', color:'#6b6b6b'},
   ];
   // ACÁ VIVÍAN LAS 4 COSAS QUE ALIMENTABAN LOS GRÁFICOS DE INICIO, y ya no existen

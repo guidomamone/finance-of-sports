@@ -72,10 +72,10 @@ const riverRevenueLinesByYear = {
     { rawLabel:'Estadio', normalizedCategory:'matchday_competition', amountNative:13365.876231, disclosureLevel:'detailed', items:[
       ['Concesiones', 2710.815855], ['Ingresos Museo', 4624.600585], ['Alquileres', 5758.259768], ['Estacionamiento', 272.200023],
     ]},
-    { rawLabel:'Educación', normalizedCategory:'other_income', amountNative:4132.081787, disclosureLevel:'detailed', items:[
+    { rawLabel:'Educación', normalizedCategory:'education', amountNative:4132.081787, disclosureLevel:'detailed', items:[
       ['Instituto de enseñanza', 2926.467892], ['Subsidios estatales', 1205.613895],
     ]},
-    { rawLabel:'Deportes y otras actividades', normalizedCategory:'other_income', amountNative:1519.239655, disclosureLevel:'detailed', items:[
+    { rawLabel:'Deportes y otras actividades', normalizedCategory:'other_sports', amountNative:1519.239655, disclosureLevel:'detailed', items:[
       ['Abonos y aranceles varios', 1313.513553], ['Escuela de fútbol', 108.42522], ['Publicidad', 97.300882],
     ]},
     { rawLabel:'Socios', normalizedCategory:'member_dues', amountNative:49959.532899, disclosureLevel:'detailed', items:[

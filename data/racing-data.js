@@ -168,7 +168,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros ingresos deportivos', normalizedCategory:'other_income', amountNative:0.19, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de jugadores', normalizedCategory:'player_sales', amountNative:10.587, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.132, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos colegio', normalizedCategory:'other_income', amountNative:0.155, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos colegio', normalizedCategory:'education', amountNative:0.155, disclosureLevel:'detailed' },
     { rawLabel:'Desafectación de previsiones y provisiones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:2.355, disclosureLevel:'detailed' },
     { rawLabel:'Condonaciones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:0.053, disclosureLevel:'detailed' },
   ],
@@ -183,7 +183,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros ingresos deportivos', normalizedCategory:'other_income', amountNative:0.138, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de jugadores', normalizedCategory:'player_sales', amountNative:2.549, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.137, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos colegio', normalizedCategory:'other_income', amountNative:0.343, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos colegio', normalizedCategory:'education', amountNative:0.343, disclosureLevel:'detailed' },
     { rawLabel:'Desafectación de previsiones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:0.093, disclosureLevel:'detailed' },
   ],
   2011: [
@@ -197,7 +197,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros ingresos deportivos', normalizedCategory:'other_income', amountNative:0.158, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de jugadores', normalizedCategory:'player_sales', amountNative:4.844, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.151, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos colegio', normalizedCategory:'other_income', amountNative:0.673, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos colegio', normalizedCategory:'education', amountNative:0.673, disclosureLevel:'detailed' },
   ],
   // Ejercicio N° 110 (1°/11/2011 al 31/10/2012, PRE-Blanco, presidente Gastón Federico Cogorno,
   // `gestionId:null` mismo criterio que 2009/2010/2011) — `balance2012.pdf`, balance real
@@ -227,7 +227,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:0.992412 },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:64.297016 },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.760321 },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:3.224299 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:3.224299 },
     { rawLabel:'Desafectación de Previsiones y Provisiones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:1.000000 },
   ],
   // Ejercicio N° 111 (1°/11/2012 al 31/10/2013) — `balance2013.pdf`, balance real
@@ -255,7 +255,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:1.505573 },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:63.588544 },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.651300 },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:3.737282 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:3.737282 },
   ],
   // Ejercicio N° 112 (1°/11/2013 al 31/8/2014, irregular de 10 meses, gestión Blanco) —
   // `balance2014.pdf`, balance real. Este es el par del presupuesto 2013/2014
@@ -285,7 +285,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:1.522769 },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:136.156527 },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:0.805942 },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:4.127896 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:4.127896 },
     { rawLabel:'Desafectación de Previsiones y Provisiones (extraordinario)', normalizedCategory:'exceptional_items', amountNative:1.000000 },
   ],
   // Ejercicio N° 114 (1°/9/2015 al 31/8/2016, gestión Blanco) — `balance2016.pdf`, balance real.
@@ -319,7 +319,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:12.372951 },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:175.030692 },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:1.891514 },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:9.858772 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:9.858772 },
   ],
   // Ejercicio N° 113 (1°/9/2014 al 31/8/2015, gestión Blanco) — `balance2015.pdf`, balance real
   // (`reportType:'official_balance_sheet'`, sin presupuesto propio en el archivo para este mismo
@@ -348,7 +348,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:3.448025 },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:83.417474 },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:1.326368 },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:7.056754 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:7.056754 },
   ],
   // Ejercicio N° 115 (1°/9/2016 al 31/8/2017, gestión Blanco) — `balance2017.pdf`, balance real
   // (`reportType:'official_balance_sheet'`, sin presupuesto propio en el archivo para este mismo
@@ -377,7 +377,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:58.202349 },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:206.087866 },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:5.181522 },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:13.322324 },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:13.322324 },
   ],
   // Ejercicio 2017/2018 (Ejercicio N° 116, 1°/9/2017 al 31/8/2018, gestión Blanco) — balance real
   // cargado en la Versión 64 (OCR de `balance2018.pdf`, escaneo de 36 páginas sin inclinación, no
@@ -399,7 +399,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:109.042661, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:970.845312, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:6.711866, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:20.546519, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:20.546519, disclosureLevel:'detailed' },
   ],
   // Ejercicio 2018/2019 (1°/9/2018 al 31/8/2019, gestión Blanco) — `presupuesto2018-19.pdf`,
   // PRESUPUESTO-ONLY (sin balance real cargado todavía para este ejercicio en el archivo de Racing,
@@ -430,7 +430,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Pub. y Esponsorización Futbol', normalizedCategory:'sponsorship_commercial', amountNative:100.000000 },
     { rawLabel:'Cesión de Jugadores (Transf. / Prést.)', normalizedCategory:'player_sales', amountNative:602.950000 },
     { rawLabel:'Ingresos por Prop. Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:10.968650 },
-    { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:19.000000 },
+    { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_sports', amountNative:19.000000 },
     { rawLabel:'Cobranza de ingresos por Socios y Abonados', normalizedCategory:'member_dues', amountNative:404.494000 },
     { rawLabel:'Cobranza de Otros Ingresos Ordinarios', normalizedCategory:'other_income', amountNative:85.700000 },
     { rawLabel:'Cobranza de Rentas Financieras Ordinarias', normalizedCategory:'other_income', amountNative:91.960000 },
@@ -456,7 +456,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:367.059521, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:509.331575, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:11.957092, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:52.341120, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:52.341120, disclosureLevel:'detailed' },
   ],
   // Ejercicio 2020/2021 (Ejercicio N° 119, irregular de 10 meses: 1°/9/2020 al 30/6/2021, gestión
   // Blanco) — ejercicio de transición para pasar el cierre de agosto a junio (ver comentario de
@@ -480,7 +480,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros Ingresos Deportivos', normalizedCategory:'other_income', amountNative:469.722665, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de Jugadores', normalizedCategory:'player_sales', amountNative:855.871189, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:3.561719, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos Colegio', normalizedCategory:'other_income', amountNative:50.935566, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos Colegio', normalizedCategory:'education', amountNative:50.935566, disclosureLevel:'detailed' },
   ],
   // 2024 en adelante: amountNative en ARS MILLONES NATIVOS (Versión 32 — ver comentario de cabecera).
   // Fuente: racing-balance-2023-24.md, Anexo III "Recursos ordinarios" (columna "2024", año
@@ -495,7 +495,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros ingresos diversos', normalizedCategory:'other_income', amountNative:8519.14145, disclosureLevel:'detailed' },
     { rawLabel:'Otros ingresos deportivos', normalizedCategory:'other_income', amountNative:3942.938917, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de jugadores', normalizedCategory:'player_sales', amountNative:27684.959835, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos colegio', normalizedCategory:'other_income', amountNative:896.608057, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos colegio', normalizedCategory:'education', amountNative:896.608057, disclosureLevel:'detailed' },
   ],
   // Fuente: racing-balance-2024-25.md, Anexo III (columna "2025", año corriente de ESE balance,
   // pág. 29) — suma exacta a $87.399.617.009, el TOTAL DE RECURSOS ORDINARIOS impreso.
@@ -509,7 +509,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Otros ingresos deportivos', normalizedCategory:'other_income', amountNative:6557.543132, disclosureLevel:'detailed' },
     { rawLabel:'Transferencia de jugadores', normalizedCategory:'player_sales', amountNative:13515.889164, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Sede Villa del Parque', normalizedCategory:'other_income', amountNative:121.928016, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos colegio', normalizedCategory:'other_income', amountNative:1486.329395, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos colegio', normalizedCategory:'education', amountNative:1486.329395, disclosureLevel:'detailed' },
   ],
   // Fuente: racing-presupuesto-2025-26.md, tabla "PRESUPUESTO FINANCIERO DE INGRESOS Y EGRESOS"
   // (columna TOTAL PERÍODO). Suma exacta a $123.297.209.473, el TOTAL INGRESOS DE FONDOS DEL
@@ -534,7 +534,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:1152.906397, disclosureLevel:'detailed' },
     { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:14863.072662, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:23789.84136, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_income', amountNative:2289.790438, disclosureLevel:'detailed', items:[
+    { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:2289.790438, disclosureLevel:'detailed', items:[
       ['Cobranzas de otras actividades deportivas', 599.188852], ['Cobranzas de instituciones educativas', 1690.601585],
     ]},
     { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:6950.531967, disclosureLevel:'detailed', items:[
@@ -557,7 +557,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:1551.494, disclosureLevel:'detailed' },
     { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:13778.918428, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:36786.392109, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_income', amountNative:4359.330552, disclosureLevel:'detailed', items:[
+    { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:4359.330552, disclosureLevel:'detailed', items:[
       ['Cobranzas de otras actividades deportivas', 1151.782091], ['Cobranzas de instituciones educativas', 3207.548462],
     ]},
     { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:8942.65347, disclosureLevel:'detailed', items:[
@@ -1390,7 +1390,7 @@ const racingPresupuestoOverlayByYear = {
       { rawLabel:'Cesión de Jugadores (Transf. / Prést.)', normalizedCategory:'player_sales', amountNative:85.802408 },
       { rawLabel:'Ingresos por Prop. Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:6.125000 },
       { rawLabel:'Otros Ingresos de Gestión por Futbol', normalizedCategory:'other_income', amountNative:11.790000 },
-      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:2.590000 },
+      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_sports', amountNative:2.590000 },
       { rawLabel:'Ingresos por Socios', normalizedCategory:'member_dues', amountNative:47.300000 },
       { rawLabel:'Ingresos Varios Sede', normalizedCategory:'other_income', amountNative:4.953750 },
       { rawLabel:'Ingresos por Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:9.350000 },
@@ -1444,7 +1444,7 @@ const racingPresupuestoOverlayByYear = {
       { rawLabel:'Cesión de Jugadores (Transf. / Prést.)', normalizedCategory:'player_sales', amountNative:59.825000 },
       { rawLabel:'Ingresos por Prop. Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:9.000000 },
       { rawLabel:'Otros Ingresos de Gestión por Futbol', normalizedCategory:'other_income', amountNative:13.400000 },
-      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:3.700000 },
+      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_sports', amountNative:3.700000 },
       { rawLabel:'Ingresos por Socios', normalizedCategory:'member_dues', amountNative:155.500000 },
       { rawLabel:'Ingresos Varios Sede', normalizedCategory:'other_income', amountNative:10.400000 },
       { rawLabel:'Ingresos por Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:26.300000 },
@@ -1502,7 +1502,7 @@ const racingPresupuestoOverlayByYear = {
       { rawLabel:'Otros Ingresos Deportivos Fútbol Profesional', normalizedCategory:'other_income', amountNative:40.0 },
       { rawLabel:'Cesión de Jugadores (Transferencias / Préstamos)', normalizedCategory:'player_sales', amountNative:454.66 },
       { rawLabel:'Ingresos por Propiedad Industrial / Intelectual cedida en Explotación', normalizedCategory:'other_income', amountNative:18.0 },
-      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_income', amountNative:14.1 },
+      { rawLabel:'Cobranza de Ingresos de Otras Secciones Deportivas', normalizedCategory:'other_sports', amountNative:14.1 },
       { rawLabel:'Ingresos por Socios', normalizedCategory:'member_dues', amountNative:225.0 },
       { rawLabel:'Ingresos Varios Sede', normalizedCategory:'other_income', amountNative:30.0 },
       { rawLabel:'Ingresos por Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:66.0 },
@@ -1557,7 +1557,7 @@ const racingPresupuestoOverlayByYear = {
       { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:7.960000 },
       { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:18.000000 },
       { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:634.152050 },
-      { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_income', amountNative:76.100000, items:[
+      { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:76.100000, items:[
         ['Cobranzas de otras actividades deportivas', 29.700000], ['Cobranzas de instituciones educativas', 46.400000],
       ]},
       { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:78.600000, items:[

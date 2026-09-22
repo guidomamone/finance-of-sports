@@ -18,7 +18,7 @@ window.RANKINGS["br-serieB"] = {
     clubs: [
       { id:"atleticogoianiense", revenue:14.303, reportType:"official_balance_sheet",
         sourceId:"atleticogoianiense-demonstracoes-2024-2025",
-        mix:[["Cuotas Sociales",0.185],["Comercial / Sponsors",1.604],["Estadio: recaudación de partidos",0.182],["Televisión",2.778],["Premios por competencias",0.531],["Venta de Jugadores",6.844],["Otras secciones deportivas y otros ingresos",2.179]] },
+        mix:[["Cuotas Sociales",0.185],["Comercial / Sponsors",1.604],["Estadio",0.182],["Televisión",2.778],["Premios por competencias",0.531],["Venta de Jugadores",6.844],["Otros ingresos",2.179]] },
     ],
   },
   2024: {
@@ -26,13 +26,13 @@ window.RANKINGS["br-serieB"] = {
     clubs: [
       { id:"coritiba", revenue:14.05, reportType:"official_balance_sheet",
         sourceId:"coritiba-demonstracoes-2024",
-        mix:[["Cuotas Sociales",5.102],["Comercial / Sponsors",2.931],["Estadio: recaudación de partidos",0.582],["Televisión",1.575],["Venta de Jugadores",2.907],["Otras secciones deportivas y otros ingresos",0.953]] },
+        mix:[["Cuotas Sociales",5.102],["Comercial / Sponsors",2.931],["Estadio",0.582],["Televisión",1.575],["Venta de Jugadores",2.907],["Otros ingresos",0.953]] },
       { id:"mirassol", revenue:9.583, reportType:"official_balance_sheet",
         sourceId:"mirassol-relatorio-auditoria-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.583]] },
       { id:"ituano", revenue:4.722, reportType:"official_balance_sheet",
         sourceId:"ituano-relatorio-auditoria-2024",
-        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",1.329],["Estadio: recaudación de partidos",0.412],["Televisión",2.243],["Venta de Jugadores",0.27],["Otras secciones deportivas y otros ingresos",0.416]] },
+        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",1.329],["Estadio",0.412],["Televisión",2.243],["Venta de Jugadores",0.27],["Otros ingresos",0.416]] },
     ],
   },
 };

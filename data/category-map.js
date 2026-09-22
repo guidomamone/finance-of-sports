@@ -16,6 +16,7 @@ const REVENUE_CATEGORIES = [
   'member_dues',              // cuotas sociales / socios
   'season_tickets',           // abonos
   'matchday_competition',     // recaudación de entradas (Versión 46: ya NO incluye premios, ver competition_bonus)
+  'stadium_other',            // uso del estadio FUERA del partido: alquiler para recitales/eventos, concesiones del estadio, licitación de palcos (Versión 189). NO es recaudación: comparte la fila "Estadio" de Formato simplificado con matchday_competition y season_tickets, pero se guarda aparte para no decir que un alquiler de recital fue venta de entradas — y para que el día que "Estadio" se vuelva a partir en filas, la distinción siga estando en el dato.
   'broadcasting',             // televisación / derechos de TV
   'competition_bonus',        // premios/bonos por avance de ronda o participación en un torneo (Versión 46, separado de matchday_competition para poder igualar la fila "Premios por competencias" que ya usa Boca)
   'sponsorship_commercial',   // sponsors, merchandising, canjes
@@ -23,6 +24,7 @@ const REVENUE_CATEGORIES = [
   'other_sports',             // básquet, otros deportes
   'youth_football',           // fútbol juvenil / derechos de formación
   'womens_football',          // fútbol femenino
+  'education',                // colegio/escuela del club: aranceles de enseñanza y subsidios estatales a la educación (Versión 189). Es un negocio no futbolístico con fila propia — hasta la 188 caía al catch-all y era, por ejemplo, el 20% de los ingresos de Vélez sin aparecer en ninguna fila. NO incluye escuelas/academias de fútbol (eso es youth_football) ni departamentos de educación física (eso es other_sports).
   'other_income',             // diversos, intereses ganados, partidas sueltas
   'lump_football_operations', // bolsón sin desglosar (ver nota arriba)
 ];
@@ -31,6 +33,7 @@ const REVENUE_CATEGORY_LABELS = {
   member_dues: 'Cuotas sociales',
   season_tickets: 'Abonos',
   matchday_competition: 'Recaudación de entradas',
+  stadium_other: 'Estadio: uso y alquiler',
   broadcasting: 'Televisación / derechos de TV',
   competition_bonus: 'Premios por competencias',
   sponsorship_commercial: 'Comercial / sponsors',
@@ -38,6 +41,7 @@ const REVENUE_CATEGORY_LABELS = {
   other_sports: 'Otros deportes',
   youth_football: 'Fútbol juvenil',
   womens_football: 'Fútbol femenino',
+  education: 'Educación',
   other_income: 'Otros ingresos',
   lump_football_operations: 'Fútbol profesional (sin desglosar por la fuente)',
 };

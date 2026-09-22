@@ -14,7 +14,9 @@
 // data/realmadrid-data.js para el detalle completo.
 //
 // Categorización de Ingresos (cifra de negocios, 2 líneas):
-// - "Ingresos deportivos" -> matchday_competition.
+// - "Ingresos deportivos" -> ABIERTA en sus 5 componentes de la Nota 21.4 en la Versión 189 (antes
+//   entraba entera como matchday_competition, que era incorrecto — ver el comentario largo en
+//   athleticclubRevenueLinesByYear).
 // - "Ingresos por abonados y socios" -> season_tickets (mezcla abonos+cuotas, el documento no las
 //   separa, mismo criterio que el resto de los clubes españoles cargados esta sesión).
 // - "Otros ingresos de explotación" + "Imputación de subvenciones" + "Otros Resultados" -> other_income.
@@ -54,7 +56,26 @@
 
 const athleticclubRevenueLinesByYear = {
   2025: [
-    { rawLabel:'Ingresos deportivos', normalizedCategory:'matchday_competition', amountNative:139.462259, disclosureLevel:'detailed' },
+    // VERSIÓN 189, CORRECCIÓN DE UNA CATEGORIZACIÓN QUE ESTABA MAL: hasta acá la línea
+    // "Ingresos deportivos" (139,46 M€, el 82% de los ingresos del club) entraba entera como
+    // `matchday_competition`, o sea "recaudación de partidos" — y NO lo es: la Nota 21.4 de las
+    // propias cuentas la abre en 5 conceptos, y el más grande de los 5 son los derechos de
+    // TELEVISIÓN. Con la categorización vieja el sitio mostraba "Televisión 0,0" para el Athletic,
+    // que cobra 72,7 M€ de retransmisión, y el 82% de su negocio bajo una fila de entradas.
+    // Se destapó al fusionar la fila "Estadio" (que pasó a mostrar 97% de los ingresos del club,
+    // un número absurdo en pantalla), pero el error es anterior a esa fusión.
+    // LAS 5 LÍNEAS SALEN LITERAL DE LA NOTA 21.4 y suman EXACTO el total viejo:
+    // 38,981106 + 8,847445 + 4,244512 + 72,713424 + 14,675772 = 139,462259. Ningún total se mueve.
+    // Ver Clubes/España/Athletic Club/cuentas-anuales-2024-2025.md, línea 1740 en adelante.
+    { rawLabel:'Ingresos por competición', normalizedCategory:'competition_bonus', amountNative:38.981106, disclosureLevel:'detailed',
+      items:[['Liga',3.725443],['Copa',3.044278],['UEFA',31.992810],['Otros',0.218576]] },
+    { rawLabel:'Ingresos por retransmisión', normalizedCategory:'broadcasting', amountNative:72.713424, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos de comercialización y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:14.675772, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos San Mamés VIP Area', normalizedCategory:'stadium_other', amountNative:8.847445, disclosureLevel:'detailed' },
+    // "Eventos y otros" queda en other_income y NO en stadium_other a propósito: la nota aclara
+    // que incluye la final de la UEFA Europa League jugada en San Mamés (que sí es uso del
+    // estadio), pero el rótulo dice "y otros" y el documento no abre cuánto es cada cosa.
+    { rawLabel:'Eventos y otros (incluye la final de la UEFA Europa League en San Mamés)', normalizedCategory:'other_income', amountNative:4.244512, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos por abonados y socios', normalizedCategory:'season_tickets', amountNative:26.937099, disclosureLevel:'detailed' },
     { rawLabel:'Otros ingresos de explotación', normalizedCategory:'other_income', amountNative:3.922252, disclosureLevel:'detailed' },
     { rawLabel:'Imputación de subvenciones de inmovilizado no financiero y otras', normalizedCategory:'other_income', amountNative:0.157316, disclosureLevel:'detailed' },

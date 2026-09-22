@@ -18,7 +18,7 @@ window.RANKINGS["br-serieA"] = {
     clubs: [
       { id:"cruzeiro", revenue:114.114, reportType:"official_balance_sheet",
         sourceId:"cruzeiro-informativo-financeiro-2025",
-        mix:[["Cuotas Sociales",9.27],["Comercial / Sponsors",60.316],["Estadio: recaudación de partidos",12.618],["Televisión",32.074],["Venta de Jugadores",5.418],["Otras secciones deportivas y otros ingresos",-5.583]] },
+        mix:[["Cuotas Sociales",9.27],["Comercial / Sponsors",60.316],["Estadio",12.618],["Televisión",32.074],["Venta de Jugadores",5.418],["Otras secciones deportivas",0.337],["Otros ingresos",-5.92]] },
     ],
   },
   2024: {
@@ -26,10 +26,10 @@ window.RANKINGS["br-serieA"] = {
     clubs: [
       { id:"botafogo", revenue:107.34, reportType:"official_balance_sheet",
         sourceId:"botafogo-demonstracoes-2024",
-        mix:[["Cuotas Sociales",7.852],["Comercial / Sponsors",20.262],["Estadio: recaudación de partidos",7.033],["Televisión",16.308],["Premios por competencias",41.585],["Venta de Jugadores",15.962],["Otras secciones deportivas y otros ingresos",-1.661]] },
+        mix:[["Cuotas Sociales",7.852],["Comercial / Sponsors",20.262],["Estadio",7.033],["Televisión",16.308],["Premios por competencias",41.585],["Venta de Jugadores",15.962],["Otras secciones deportivas",0.303],["Otros ingresos",-1.963]] },
       { id:"gremio", revenue:99.32, reportType:"official_balance_sheet",
         sourceId:"gremio-demonstracoes-2023-2024",
-        mix:[["Cuotas Sociales",15.995],["Comercial / Sponsors",13.556],["Estadio: recaudación de partidos",1.937],["Televisión",28.845],["Venta de Jugadores",17.005],["Otras secciones deportivas y otros ingresos",21.982]] },
+        mix:[["Cuotas Sociales",15.995],["Comercial / Sponsors",13.556],["Estadio",1.937],["Televisión",28.845],["Venta de Jugadores",17.005],["Otras secciones deportivas",0.164],["Otros ingresos",21.818]] },
     ],
   },
 };
