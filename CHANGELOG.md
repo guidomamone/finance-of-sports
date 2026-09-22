@@ -2554,3 +2554,27 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   dos veces, bug preexistente), 42 (Ingresos tiene fila "Educación" y Gastos no).
 - `auditAll()`: 41 clubes, 228 checks, 0 que no cierran, 0 warnings de fx. `node tools/audit.js`:
   0 P0, 0 P1. ASSET_V 188 → 189, los 4 generados al día.
+
+## Versión 192: la vidriera de Inicio deja de dibujar sus gráficos dos veces
+
+- **To-do 41 cerrado.** `grafico()` (`js/liga.js`) creaba el `<canvas>` de forma síncrona pero
+  pintaba el `Chart` adentro de un `setTimeout`, y ese callback volvía a buscar el canvas con
+  `document.getElementById(canvasId)` en vez de usar la referencia que la misma llamada ya tenía.
+  Al cargar Inicio, `LIGA_VIEW.refresh()` se llama dos veces muy cerca una de otra (la explícita de
+  `index.html` y la que dispara `I18N.init()` al detectar el idioma del navegador): el segundo
+  `matarCharts('dest')` corría ANTES de que el `setTimeout` del primer render llegara a poblar
+  `instancias.dest`, así que no destruía nada — y como los `canvasId` se repiten
+  (`vidChart0`..`vidChart3`), el `getElementById` del primer batch, deferido, terminaba
+  encontrando el canvas NUEVO del segundo batch y los dos Chart.js competían por el mismo
+  elemento: "Canvas is already in use" × 4 en cada carga.
+- Arreglado usando la referencia `cv` (el canvas que esa llamada creó) en vez de re-consultar el
+  DOM por id, más un `Chart.getChart(cv)` defensivo antes de pintar — destruye cualquier chart que
+  ya esté atado a ESE canvas puntual, sin depender solo del array `instancias`. Mismo `grafico()`
+  sirve a la pestaña Ligas y a la vidriera de Inicio; los dos se probaron.
+- Verificado en el navegador (pestaña nueva, sin el historial de consola de pruebas previas):
+  carga en frío con el idioma del navegador en inglés — 0 errores de "Canvas is already in use"
+  (antes, 4 en cada carga). Tres cambios de idioma seguidos después, tampoco. Los 4 gráficos de
+  Inicio y el de la pestaña Ligas renderizan bien en las dos pasadas.
+- ASSET_V 189 → 192 (se saltea 190/191, que no tocaban `js/`/`data/`), constante y los 15
+  `<script src>`; `fuentes.html` y las 41 páginas de club regeneradas (`checkGenerados()` lo pedía
+  como P1, ya resuelto). `node tools/audit.js`: 0 P0, 0 P1.

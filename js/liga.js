@@ -318,10 +318,26 @@ window.LIGA_VIEW = (function(){
       }
     };
 
+    // TO-DO 41, RESUELTO: acá decía `document.getElementById(canvasId)` en vez de usar
+    // `cv` (el canvas que esta misma llamada ya creó y agregó al DOM unas líneas arriba).
+    // Con dos renders de Inicio pisándose (pasa al cargar la página: la explícita de
+    // `LIGA_VIEW.refresh()` en index.html y la que dispara `I18N.init()` al detectar el
+    // idioma del navegador, MUY cerca una de la otra) el `matarCharts('dest')` del
+    // segundo render corría ANTES de que el `setTimeout` del primero llegara a poblar
+    // `instancias.dest` — así que no había nada que destruir todavía. Y como los 4
+    // `canvasId` se repiten ('vidChart0'..'vidChart3'), el `getElementById` del primer
+    // batch, deferido, terminaba encontrando el canvas NUEVO del segundo batch (el viejo
+    // ya se había reemplazado en el DOM) y los dos intentaban pintar Chart.js sobre el
+    // mismo elemento: "Canvas is already in use". Usar `cv` en vez de re-consultar el DOM
+    // ata cada Chart al canvas que ESTA llamada creó — si ese canvas ya se reemplazó,
+    // simplemente no está en el documento y no compite con nada. El `Chart.getChart(cv)`
+    // es la segunda red: por si alguna vez SÍ es el mismo canvas reusado, lo destruye
+    // antes de pintar encima en vez de confiar solo en `instancias`.
     setTimeout(function(){
-      var ctx = document.getElementById(canvasId);
-      if(!ctx) return;
-      nueva(donde, new Chart(ctx.getContext('2d'), {
+      if(!cv.isConnected) return;
+      var previo = Chart.getChart(cv);
+      if(previo) previo.destroy();
+      nueva(donde, new Chart(cv.getContext('2d'), {
         type:'bar',
         data:{
           labels: filas.map(function(f){ return nombreDe(f.id); }),

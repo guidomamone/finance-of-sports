@@ -135,15 +135,6 @@ perdieron sino que se descartaron:
     ANTES DE ARRANCAR: preguntarle a Guido QUÉ querría editar desde ahí. Si es solo el orden y el
     nombre de las filas, el archivo de configuración solo ya alcanza y el CMS es de más.
 
-41. EL GRÁFICO DE LA VIDRIERA DE INICIO SE DIBUJA DOS VECES (encontrado de paso el 2026-09-22, NO
-    lo causó la Versión 189 — `js/liga.js` no se tocó). La consola tira 4 errores en cada carga:
-    `Canvas is already in use. Chart with ID 'N' must be destroyed before the canvas with ID
-    'vidChartN' can be reused`. `index.html` llama `LIGA_VIEW.refresh()` en DOS lugares (líneas
-    1675 y 1960), y aunque `renderDestacados()` arranca con `matarCharts('dest')`, las instancias
-    de la primera pasada no se están destruyendo. Efecto visible posible: los 4 gráficos de
-    rankings de la portada pueden quedar en blanco. Es un bug de ciclo de vida de Chart.js, no de
-    datos.
-
 42. ASIMETRÍA QUE DEJÓ LA VERSIÓN 189: Ingresos tiene fila "Educación", Gastos no. El gasto del
     colegio de un club cae hoy dentro de "Otras secciones deportivas (juvenil, otros deportes,
     básquet)" — es lo que hace Independiente con "Centro Educativo (gasto)" e Instituto con sus
