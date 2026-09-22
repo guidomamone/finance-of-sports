@@ -2707,3 +2707,21 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   internos sueltos en la raíz).
 - `auditAll()`: 41 clubes, 228 checks, 0 que no cierran, 0 warnings de FX. Los 4 generadores, al día.
 - Sin ASSET_V nuevo: los cambios en `index.html`, `js/` y `data/` son todos de comentario.
+
+## Versión 197 — `Admin/ARQUITECTURA.md` puesta al día (to-do 45)
+
+### Cambiado
+- `Admin/ARQUITECTURA.md` no mencionaba nada de las Versiones 162-184: `js/liga.js`, `js/i18n.js` +
+  `data/lang/`, `data/rankings/<liga>.js` + `tools/generate-rankings.js`, `data/destacados.js`,
+  `data/leagues.js` + `data/club-leagues.js`/`data/club-leagues/<iso2>.js`, `fuentes.html` + sus 41
+  páginas por club + `sitemap.xml` (generadas por `tools/generate-fuentes-page.js`,
+  `tools/generate-fuentes-index.js` para la sección de índice de `fuentes/README.md`), ni `ASSET_V`
+  — la convención de caché de todo el proyecto, que no aparecía ni una vez. Cada archivo nuevo se
+  verificó contra el disco (cabecera del archivo real, no el nombre) antes de describirlo. La
+  sección del motor genérico (`computeYearGeneric()`) no se tocó: seguía correcta.
+- Peso de `Admin/ARQUITECTURA.md` en la tabla §1 de `start-session-finance-of-sports-project`:
+  9 KB → 17 KB.
+
+### Resultado
+- `node tools/audit.js`: **0 P0, 0 P1, 0 P2, 7 P3**, sin `doc-peso-desfasado` para `ARQUITECTURA.md`.
+- Sin cambios de código ni de datos: no hace falta ASSET_V nuevo ni regenerar nada.

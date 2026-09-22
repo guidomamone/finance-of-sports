@@ -64,14 +64,6 @@ perdieron sino que se descartaron:
     SERVIDO en producción** (`financeofsports.com/COMO-CORRE-EL-PROYECTO.html` devolvía 200): era
     `.html` en la raíz, y el `rm -f` de `netlify.toml` solo listaba `.md`. Ya no.
 
-45. ACTUALIZAR `Admin/ARQUITECTURA.md` (mismo origen: se confirmó que es documentación viva y se
-    mudó a `Admin/`, pero no se actualizó). No menciona `js/liga.js`, `js/i18n.js`,
-    `data/rankings/`, `data/destacados.js`, `data/lang/`, `fuentes.html` ni
-    `tools/generate-rankings.js`, y no dice nada de `ASSET_V`. Son las Versiones 162-184. Importa
-    más que un doc cualquiera porque el skill de arranque la manda leer justo cuando alguien va a
-    tocar el motor o agregar un club, que es cuando esos archivos están en el medio.
-
-
 46. CHEQUEO DE RUTAS MUERTAS EN `tools/audit.js` (salió de la reorganización de la Versión 196).
     Un chequeo que recorra los archivos VIVOS (`CLAUDE.md`, `index.html`, `js/`, `tools/`,
     `data/`, los 6 skills y los `.md` de `Admin/` menos los históricos) buscando rutas de archivo
