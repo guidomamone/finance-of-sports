@@ -16,7 +16,7 @@ window.RANKINGS["mx-ligamx"] = {
     leagueSize: null,
     clubs: [
       { id:"clubamerica", revenue:155.722, reportType:"official_balance_sheet",
-        sourceId:"clubamerica-ollamani-2025", yearLabel:"Balance 2025",
+        sourceId:"clubamerica-ollamani-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",155.722]] },
     ],
   },

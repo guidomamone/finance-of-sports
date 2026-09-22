@@ -78,7 +78,11 @@ window.CLUB_SELECTOR = (function(){
 
   var api = {
     getClub: function(){ return null; },
-    pickClub: function(){ return Promise.resolve(); }
+    pickClub: function(){ return Promise.resolve(); },
+    // Versión 183: qué hacer cuando lo elegido es una LIGA y no un club. El
+    // default no hace nada a propósito — si index.html no lo cablea, elegir una
+    // liga no rompe, simplemente no navega.
+    pickLeague: function(){}
   };
 
   var inited = false;
@@ -100,8 +104,18 @@ window.CLUB_SELECTOR = (function(){
   // Los bloques que se están armando: el paso 5 los CREA y el paso 6 (o el
   // constructor de la mezcla) los edita. Al confirmar, son el lado.
   var bloques = [];
+  // ¿EL VISITANTE TOCÓ LOS CHIPS DE TEMPORADA, o está mirando el prellenado?
+  // (Versión 183.) `pararseEnLiga()` preselecciona la temporada MÁS RECIENTE, que
+  // casi siempre es la que MENOS clubes tiene: la Primera argentina tiene 5 en
+  // 2025 y 8 en 2024, porque los balances tardan en publicarse. La pestaña Ligas
+  // elige sola la de más clubes, así que sin esta distinción la misma página abría
+  // en 2024 llegando por el nav y en 2025 llegando por el selector. Con el flag,
+  // un prellenado que nadie tocó deja decidir a la vista, y una temporada elegida
+  // a mano se respeta. NO se cambió el prellenado en sí: Comparar sigue igual.
+  var ligaAnioTocado = false;
 
   function reset(){
+    ligaAnioTocado = false;
     CLAVES.forEach(function(k){ st[k] = { sel:[], resuelto:false, saltado:false }; });
     bloques = [];
     mezclaAbierto = null;
@@ -395,8 +409,18 @@ window.CLUB_SELECTOR = (function(){
   function pasosActivos(){
     var out = PASOS_FILTRO.slice();
     // Viniendo por "quiero ver un club en particular" no hay nada que bifurcar: ese
-    // camino es de clubes por definición, y preguntarlo sería un peaje.
-    if(origen === 'finanzas') return out.concat([PASO_CLUBES, PASO_CLUB_ANIO]);
+    // camino es de clubes por definición, y preguntarlo sería un peaje. El paso
+    // "¿Qué querés medir?" sigue sin aparecer acá, a propósito.
+    if(origen === 'finanzas'){
+      // VERSIÓN 183: salvo que el visitante YA haya elegido una liga desde el
+      // buscador. Hasta acá eso era imposible —el buscador solo ofrecía ligas en
+      // el camino de Comparar— porque no existía ninguna pantalla de liga; ahora
+      // existe (la pestaña Ligas), así que el camino tiene que poder terminar
+      // ahí. Sin esta rama, `pararseEnLiga()` dejaba el estado marcado con una
+      // liga y los pasos mostrando clubes, que es un modal que se contradice.
+      if(st.tipo.sel[0] === 'liga') return out.concat([PASO_LIGAS, PASO_LIGA_ANIO]);
+      return out.concat([PASO_CLUBES, PASO_CLUB_ANIO]);
+    }
     out.push(PASO_TIPO);
     var tipo = st.tipo.sel[0];
     if(tipo === 'liga')   return out.concat([PASO_LIGAS, PASO_LIGA_ANIO]);
@@ -761,6 +785,13 @@ window.CLUB_SELECTOR = (function(){
         c.type = 'button';
         if(!n){ c.disabled = true; c.title = t('sel.liga.sindatos', 'Ningún club de esa temporada tiene datos cargados'); }
         else c.addEventListener('click', function(){
+          ligaAnioTocado = true;
+          // EN EL CAMINO QUE TERMINA EN LA PESTAÑA LIGAS, UNA SOLA TEMPORADA
+          // (Versión 183): un ranking es (liga, UN ejercicio), así que marcar dos
+          // no significa nada y confirmar tomaría la primera, en silencio. En
+          // Comparar sí son varias, porque ahí el bloque las SUMA (o promedia) y
+          // el card lo dice con la fórmula.
+          if(origen !== 'vs'){ b.years = [y]; renderModal(); return; }
           var i = b.years.indexOf(y);
           if(i >= 0) b.years.splice(i, 1); else b.years.push(y);
           renderModal();
@@ -768,8 +799,14 @@ window.CLUB_SELECTOR = (function(){
         chips.appendChild(c);
       });
       fila.appendChild(chips);
-      var agg = selectorAgg(b);
-      if(agg) fila.appendChild(agg);
+      // EL AGREGADOR (Promedio / Suma) ES UNA PREGUNTA DE COMPARAR, no del camino
+      // que termina en la pestaña Ligas (Versión 183). Un ranking no promedia ni
+      // suma la liga: la lista club por club. Mostrar el control ahí sería ofrecer
+      // una decisión que no cambia nada de lo que el visitante va a ver.
+      if(origen === 'vs'){
+        var agg = selectorAgg(b);
+        if(agg) fila.appendChild(agg);
+      }
       caja.appendChild(fila);
     });
     return caja;
@@ -1193,6 +1230,31 @@ window.CLUB_SELECTOR = (function(){
       return card;
     }
 
+    // ELEGISTE UNA LIGA Y NO VENÍS DE COMPARAR (Versión 183): lo que querías ver es
+    // la liga, no el primer club de la liga por orden alfabético. Este botón es el
+    // to-do 23(c) entero, y sale ANTES de las dos líneas de abajo a propósito: esas
+    // dicen "5 ejercicios de 5 clubes. promedio(Primera División 2025)", que es el
+    // vocabulario de Comparar. Un ranking no promedia nada, así que acá esa frase
+    // no describe lo que el visitante va a ver.
+    // Solo con UN bloque de liga: una mezcla de bloques no es una liga.
+    if(origen === 'finanzas' && bloques.length === 1 && bloques[0].kind === 'liga'){
+      var lgId = bloques[0].league;
+      var lgN = (window.LEAGUES[lgId] || {}).name || lgId;
+      body.appendChild(el('p', 'res-msg', lgN));
+      body.appendChild(el('p', 'res-sub', t('sel.liga.res',
+        'Vas a ver el ranking de ingresos de sus clubes, en un ejercicio. Vas a poder cambiar el ejercicio ahí mismo.')));
+      var aLiga = el('button', 'paso-ok', t('sel.toliga', 'Ver el ranking de ingresos de') + ' ' + lgN);
+      aLiga.type = 'button';
+      aLiga.addEventListener('click', function(){ confirmar('liga'); });
+      body.appendChild(aLiga);
+      // NO se ofrece además "ver los números de <primer club>": con una liga
+      // elegida, el primer club por orden alfabético no es nadie en particular
+      // (sería "Athletic Club" para LaLiga), y la propia pantalla de la liga lleva
+      // a cualquiera de sus clubes con un click en su fila.
+      card.appendChild(body);
+      return card;
+    }
+
     body.appendChild(el('p', 'res-msg', bloques.map(nombreBloque).join(' + ')));
     body.appendChild(el('p', 'res-sub', nEjercicios(pares.length) + ' ' + t('sel.of', 'de') + ' '
       + nClubes(ids.length) + '. ' + formulaDe(l) + '.'));
@@ -1283,6 +1345,26 @@ window.CLUB_SELECTOR = (function(){
     var ids = clubesDe({ bloques:bloques });
     if(!ids.length) return;
     destino = destino || origen;
+
+    // LA PESTAÑA LIGAS (Versión 183, to-do 23(c)). Hasta acá, elegir una liga y
+    // confirmar terminaba en Finanzas DEL PRIMER CLUB de esa liga: la liga se
+    // usaba como filtro para llegar a un club, y no había ninguna pantalla que
+    // fuera sobre la liga. Ahora hay, y este es el único camino que lleva a ella
+    // desde el selector.
+    // El bloque tiene que ser UNO y de tipo liga: una mezcla de bloques no es una
+    // liga, es un sujeto armado a mano, y eso ya tiene su pantalla (Comparar).
+    if(destino === 'liga'){
+      var b = bloques[0];
+      if(!b || b.kind !== 'liga') return;
+      // El AÑO que se manda es el primero elegido; si no se eligió ninguno, se
+      // manda null y la vista elige el suyo (el ejercicio con más clubes, que casi
+      // nunca es el más reciente). El selector de ejercicio vive en esa pantalla,
+      // así que no hace falta resolverlo acá.
+      var y = (ligaAnioTocado && b.years && b.years.length) ? b.years[0] : null;
+      close();
+      api.pickLeague(b.league, y);
+      return;
+    }
 
     if(destino === 'vs'){
       lado[modalLado] = ladoDesde(JSON.parse(JSON.stringify(bloques)));
@@ -1983,9 +2065,14 @@ window.CLUB_SELECTOR = (function(){
     // la etapa 4 ("puse 'primera div' y no me trajo Primera División, así que busqué
     // con el flow"). Una liga es un lado posible, así que tiene que poder elegirse
     // igual que un club.
-    // Solo en el camino de Comparar: Finanzas muestra un club por vez.
+    // HASTA LA VERSIÓN 182 ESTO ESTABA LIMITADO AL CAMINO DE COMPARAR, con el
+    // motivo "Finanzas muestra un club por vez". Era cierto y dejó de serlo: desde
+    // la Versión 183 una liga tiene su propia pantalla (la pestaña Ligas), así que
+    // buscar "LaLiga" desde el botón del header tiene que encontrarla igual que
+    // desde Comparar. Buscar una liga y que el buscador conteste con sus 9 clubes
+    // era justo el síntoma que el to-do 23(c) describía.
     var hits = 0;
-    if(origen === 'vs'){
+    {
       var ligas = ligasConClubes().filter(function(lid){
         var lg = window.LEAGUES[lid];
         var co = window.COUNTRIES[lg.country];
@@ -2212,6 +2299,10 @@ window.CLUB_SELECTOR = (function(){
     if(inited) return;
     api.getClub  = hooks.getClub  || api.getClub;
     api.pickClub = hooks.pickClub || api.pickClub;
+    // Versión 183: el selector no sabe navegar ni cargar un ranking, igual que no
+    // sabe renderizar un club. index.html le pasa qué hacer cuando se eligió una
+    // liga, y este archivo solo decide CUÁNDO se eligió una.
+    api.pickLeague = hooks.pickLeague || api.pickLeague;
 
     $('clubBtn').addEventListener('click', function(){ open(false); });
     $('modalX').addEventListener('click', close);

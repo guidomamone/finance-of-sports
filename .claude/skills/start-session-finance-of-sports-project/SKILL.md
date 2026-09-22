@@ -18,14 +18,14 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 30 KB |
-| 2 | `CONVENCIONES.md` | **siempre** | 38 KB |
-| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 16 KB |
+| 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 38 KB |
+| 2 | `CONVENCIONES.md` | **siempre** | 44 KB |
+| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 19 KB |
 | 3 | `ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 10 KB |
-| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 79 KB |
-| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 63 KB |
+| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 80 KB |
+| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 69 KB |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 91 KB |
-| 7 | `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
+| 7 | `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 11 KB + 2-8 KB por país |
 
 **Los KB de esta tabla los chequea `node tools/audit.js`** (`doc-peso-desfasado`, P3, agregado en
 la auditoría de docs del 2026-09-20): existen para decidir qué abrir y qué no, así que un número
@@ -36,7 +36,7 @@ desactualizado no es cosmético — cuando se midió, `club-sourcing` decía 33 
 
 - `finance-of-sports-project.md` (482 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
-- `CHANGELOG.md` (190 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
+- `CHANGELOG.md` (223 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
 Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 
@@ -86,7 +86,12 @@ ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igua
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en 5 segundos y sale con código 1 si hay P0 o P1. Hoy: 0 P0, 0 P1, 44 P2, 9 P3 (to-do 20).
+Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-22): 0 P0, 0 P1, 10 P2, 7 P3.
+De los 10 P2, 2 son el catch-all de Vélez (to-do 20(b)) y 8 son los `.md` de la raíz que
+`netlify.toml` no saca del deploy (to-do 39). **Desde la Versión 183 también chequea que los 4
+generadores estén al día** (`checkGenerados()`, P1): si tocaste `js/` o `data/` y subiste
+`ASSET_V`, hay que regenerar `fuentes.html` y sus 41 páginas, porque ese generador LEE `ASSET_V`
+de `index.html`.
 
 Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
 el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en
@@ -152,6 +157,10 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
+- `node tools/generate-rankings.js` (Versión 182) — precalcula el ranking de ingresos de cada
+  liga-ejercicio en `data/rankings/<liga>.js`, uno por liga. Corrélo después de cargar un club o
+  un ejercicio. `--check` avisa si quedó viejo (y `audit.js` lo corre solo, como P1), `--print`
+  imprime los rankings para verificarlos contra la fuente. Es lo que alimenta la pestaña Ligas.
 - `node tools/generate-fuentes-index.js` (Versión 175) — regenera, desde los propios
   `fuentes/_indice/<País>.md`, la sección "Índice de países" de `fuentes-por-club.md`: la línea de
   cada país con sus 3 números (clubes trackeados, cuántos con documento, chequeo más antiguo) y el

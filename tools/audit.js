@@ -526,6 +526,40 @@ function checkDeployInterno() {
   }
 }
 
+// --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
+// El proyecto tiene 4 generadores y los 4 dependen de que alguien se acuerde de
+// correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
+// sesión encontró el caso más silencioso de todos: `generate-fuentes-page.js`
+// LEE `ASSET_V` de index.html y lo escribe en las 42 páginas de fuentes, así que
+// cualquier subida de ASSET_V las desactualiza a todas — sin tocar un solo dato,
+// sin que nada se vea roto, y dejando al visitante con el JS nuevo en el sitio y
+// el viejo de su caché en la página de fuentes, que es EXACTAMENTE el estado en
+// el que la Versión 125 tiró `ReferenceError` en toda la página.
+//
+// Cuesta 0,2s para los 4 (cada uno levanta su propio proceso). Medido.
+//
+// P1 y no P2: lo que queda desfasado está PUBLICADO. Un `data/rankings/` viejo
+// publica el ingreso de un club con el balance del año pasado; una página de
+// fuentes vieja pide un asset que ya no existe; una sección generada de ESTADO.md
+// vieja le miente a la próxima sesión sobre qué hay cargado.
+const GENERADORES = [
+  ['generate-rankings.js',      'data/rankings/',                      'rankings-desfasado'],
+  ['generate-fuentes-page.js',  'fuentes.html y las 41 páginas de club', 'fuentes-desfasada'],
+  ['generate-club-index.js',    'la sección generada de ESTADO.md',    'club-index-desfasado'],
+  ['generate-fuentes-index.js', 'el índice de fuentes-por-club.md',    'fuentes-indice-desfasado'],
+];
+function checkGenerados() {
+  for (const [script, que, code] of GENERADORES) {
+    if (!fs.existsSync(path.join(ROOT, 'tools', script))) continue;
+    try {
+      execSync(`node tools/${script} --check`, { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+    } catch (e) {
+      const detalle = String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 220);
+      add('P1', code, `${que} quedó desactualizado. Corré: node tools/${script}${detalle ? ' — ' + detalle : ''}`);
+    }
+  }
+}
+
 // --- D18: los rankings precalculados (Versión 182, to-dos 23(c) y 33) ------
 // POR QUÉ ESTE CHEQUEO ES LA CONDICIÓN PARA QUE `data/rankings/` PUEDA EXISTIR.
 // Ese directorio es lo único del proyecto que guarda NÚMEROS DE PLATA copiados
@@ -552,13 +586,6 @@ function checkRankings(api) {
     return;
   }
 
-  try {
-    execSync('node tools/generate-rankings.js --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
-  } catch (e) {
-    const detalle = String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ');
-    add('P1', 'rankings-desfasado',
-      `data/rankings/ ya no coincide con los data/<club>-data.js: ${detalle || 'corré node tools/generate-rankings.js'}`);
-  }
 
   // LA LISTA CURADA DE INICIO (`data/destacados.js`). Es el único archivo de
   // esta feature que se edita a mano, así que es el único que puede apuntar a
@@ -1181,6 +1208,7 @@ function main() {
   checkCarpetasClubes();
   checkColisionSourcing(api);
   checkLigasPorEjercicio(api);
+  checkGenerados();
   checkRankings(api);
   checkCategorizacion(api);
   checkEscala(api);

@@ -164,7 +164,11 @@ se reescribe, no se acumula.
   total correcto NO delata (ejercicios que no tienen ningún total contra qué
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
-  ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
+  ramas por club en el código), MÁS, desde la Versión 183, que los 4 generadores estén al
+  día (`checkGenerados()`, P1): corre el `--check` de cada uno en 0,2 s. Salió de un
+  problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
+  subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
+  roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
   y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **10 P2**, 7 P3 y 23
   silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-22; este
   párrafo decía "2 P2, 8 P3", que era de varias versiones atrás). De los 10 P2, 2 son el
@@ -213,6 +217,18 @@ se reescribe, no se acumula.
   un plan pago ("próximamente"), y con la decisión de ir todo gratis ya no está
   esperando nada. Pendiente de decidir con Guido si se saca la pestaña o se
   reescribe el texto.
+- PESTAÑA LIGAS (Versión 183, to-do 23(c)): el ranking de ingresos de los clubes de
+  una liga en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así
+  que NO baja ningún `data/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB
+  que costaría en vivo). Barras verticales ascendentes en el `brandColor` de cada club
+  con el número escrito arriba, tabla con puesto/club/ingresos/ejercicio/documento, y
+  salvedades derivadas del dato. TRES REGLAS QUE LA ORDENAN: el ejercicio está siempre
+  escrito y es cambiable (un ranking es (liga, EJERCICIO), nunca (liga)); el default es
+  el ejercicio con MÁS clubes y no el más reciente, porque los balances tardan en
+  publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe, que hoy es en
+  3 de 27 liga-temporadas. Se llega por el nav (estado frío: la grilla de las 8 ligas)
+  o eligiendo una liga en el selector, que hasta acá terminaba en Finanzas del primer
+  club de esa liga por orden alfabético. No necesita club activo.
 - UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
   de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
   plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →

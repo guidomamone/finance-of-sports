@@ -16,7 +16,7 @@ window.RANKINGS["ar-primeranacional"] = {
     leagueSize: null,
     clubs: [
       { id:"argentinosjuniors", revenue:11.595, reportType:"official_balance_sheet",
-        sourceId:"argentinosjuniors-balance-2016-2017", yearLabel:"Balance 2016/2017",
+        sourceId:"argentinosjuniors-balance-2016-2017",
         mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.963],["Estadio: recaudación de partidos",0.083],["Televisión",2.092],["Venta de Jugadores",4.339],["Otras secciones deportivas y otros ingresos",2.609]] },
     ],
   },

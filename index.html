@@ -665,6 +665,73 @@ consulta puntual, nunca lectura de corrido.
   .cd-bar{display:block;height:6px;background:#eef2f9;border-radius:3px;margin-top:6px;overflow:hidden;max-width:260px;}
   .cd-bar-in{display:block;height:100%;background:var(--azul);}
   .cd-bar-in.neg{background:var(--red);}
+  /* ======================================================================
+     PESTAÑA LIGAS (Versión 183, to-do 23(c)). El ranking de ingresos de una
+     liga en un ejercicio. Reusa el lenguaje visual de la pestaña Comparar
+     (`.cd-*`): card blanco sobre el fondo, tabla con la cabecera subrayada en
+     azul, salvedades en gris chico abajo.
+     ====================================================================== */
+  #ligaWrap{max-width:1000px;}
+  .liga-vacio{color:var(--muted);font-size:13.5px;margin:0 0 18px;}
+  /* ESTADO FRÍO: la grilla de las 8 ligas. Se llega acá por el botón del nav sin
+     haber elegido nada, y una pantalla vacía sería peor que una lista. */
+  .liga-frio{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;}
+  .liga-frio-t{margin:0 0 12px;font-weight:700;font-size:15px;}
+  .liga-frio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
+  .liga-frio-btn{display:flex;align-items:center;gap:9px;flex-wrap:wrap;text-align:left;
+    background:#fff;border:1px solid var(--border);border-radius:8px;padding:10px 12px;cursor:pointer;
+    font:inherit;color:inherit;transition:.15s;}
+  .liga-frio-btn:hover{border-color:var(--azul);background:#f6f9ff;}
+  .liga-frio-flag{font-size:18px;line-height:1;}
+  .liga-frio-n{font-weight:700;font-size:14px;}
+  .liga-frio-m{flex-basis:100%;color:var(--muted);font-size:11.5px;}
+  /* ENCABEZADO: título = métrica + sujeto + ejercicio, subtítulo = cobertura y
+     unidad, los dos en prosa (convención de Our World in Data). */
+  .liga-head{margin-bottom:18px;}
+  .liga-head-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+  .liga-h{margin:0;font-size:20px;}
+  .liga-flag{font-size:20px;}
+  .liga-sub{color:var(--muted);font-size:13px;margin:6px 0 0;line-height:1.5;max-width:720px;}
+  .liga-sub.chico{font-size:12px;margin-top:4px;}
+  .liga-anio{display:flex;align-items:center;gap:7px;flex-shrink:0;}
+  .liga-anio-l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
+  .liga-anio select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--border);border-radius:7px;background:#fff;}
+  /* EL GRÁFICO. Alto fijo y no aspect-ratio: con 20 clubes los nombres del eje X
+     se rotan y necesitan lugar propio, que un alto proporcional al ancho no da
+     en una pantalla angosta. */
+  .liga-chart-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 16px 10px;margin-bottom:18px;}
+  .liga-chart-head{display:flex;justify-content:flex-start;}
+  .liga-chart-y{font-size:11px;color:var(--muted);font-weight:700;}
+  .liga-chart-box{position:relative;height:360px;}
+  /* LA TABLA. Es donde el club chico sigue siendo legible: en LaLiga la barra de
+     Alavés es 1/18 de la de Real Madrid, su fila se lee igual que las demás. */
+  .liga-tabla-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 16px;margin-bottom:18px;overflow-x:auto;}
+  .liga-tabla{width:100%;border-collapse:collapse;}
+  .liga-tabla th, .liga-tabla td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);white-space:nowrap;}
+  .liga-tabla thead th{border-bottom:2px solid var(--azul);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  .liga-tabla tfoot td{border-bottom:none;font-weight:700;padding-top:12px;}
+  .liga-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;}
+  .liga-col-n{width:34px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  /* El cuadradito del color de marca del club (Versión 178), la misma idea que el
+     círculo de iniciales del selector pero al tamaño de una fila de tabla. */
+  .liga-pin{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:8px;vertical-align:middle;}
+  .liga-club-link{background:none;border:none;padding:0;font:inherit;font-weight:600;color:var(--azul);cursor:pointer;text-align:left;}
+  .liga-club-link:hover{text-decoration:underline;}
+  .liga-col-ej{color:var(--muted);font-size:12.5px;}
+  .liga-col-doc{font-size:12px;}
+  /* El tipo de documento NO es decoración: en la Primera 2024 el puesto 1 es una
+     copia no oficial y el 7 es un presupuesto. Los dos se marcan en color. */
+  .liga-doc{color:var(--muted);}
+  .liga-doc.presu{color:#9a6b00;font-weight:700;}
+  .liga-doc.nooficial{color:#9a6b00;font-weight:700;}
+  .liga-doc-link{margin-left:8px;color:var(--azul);font-size:11.5px;}
+  .liga-avisos{margin-top:4px;}
+  .liga-avisos h3{font-size:14px;margin:0 0 7px;}
+  .liga-avisos p{color:var(--muted);font-size:12px;line-height:1.55;margin:0 0 5px;}
+  @media (max-width:720px){
+    .liga-chart-box{height:300px;}
+    .liga-head-top{align-items:flex-start;}
+  }
   .cd-avisos{margin-top:14px;}
   .cd-avisos p{color:var(--muted);font-size:12px;line-height:1.5;margin:0 0 5px;}
 
@@ -691,6 +758,11 @@ consulta puntual, nunca lectura de corrido.
            (dos presidencias del MISMO club, escondida del nav desde la Versión 56). Son dos
            cosas distintas y el id no se puede pisar; lo que el visitante lee sí dice "Comparar". -->
       <button data-section="vs" data-i18n="nav.vs">Comparar</button>
+      <!-- LIGAS (Versión 183, to-do 23(c)). Va ANTES de Finanzas a propósito: el par se
+           lee de lo general a lo particular, la liga y después el club. Se llama "Ligas"
+           y no "Finanzas de liga" por decisión de Guido (2026-09-22), que además dejó
+           anotado revisar los nombres de todo el nav a futuro (to-do 40). -->
+      <button data-section="liga" data-i18n="nav.liga">Ligas</button>
       <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>
       <button data-section="fuentes" data-i18n="nav.fuentes">Fuentes</button>
       <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
@@ -861,6 +933,17 @@ consulta puntual, nunca lectura de corrido.
     <!-- El resultado. Fuera del bloque de arriba porque es lo que se mira, no un control. -->
     <div class="cd-resultado" id="cdResultado" hidden></div>
 
+  </section>
+
+  <!-- LIGAS (Versión 183, to-do 23(c)). El ranking de ingresos de los clubes de una liga
+       en UN ejercicio. Lo llena entero js/liga.js desde `data/rankings/<liga>.js`
+       (precalculado, Versión 182): esta vista NO baja ningún data/<club>-data.js.
+       NO necesita club activo — una liga no es un club — así que está en TABS_SIN_CLUB
+       y su botón del nav se ve siempre. -->
+  <section id="liga">
+    <h1 data-i18n="liga.title">Ligas</h1>
+    <p class="subtitle" data-i18n="liga.pagesub">Cuánto factura cada club de una liga, en el mismo ejercicio. Es la única forma de que dos números de clubes distintos signifiquen lo mismo: mismo año, misma moneda, misma taxonomía.</p>
+    <div id="ligaWrap"></div>
   </section>
 
   <!-- FINANZAS -->
@@ -1281,39 +1364,40 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '179';</script>
-<script src="data/lang/langs.js?v=179"></script>
-<script src="js/i18n.js?v=179"></script>
-<script src="data/clubs.js?v=179"></script>
+<script>window.ASSET_V = '183';</script>
+<script src="data/lang/langs.js?v=183"></script>
+<script src="js/i18n.js?v=183"></script>
+<script src="data/clubs.js?v=183"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=179"></script>
+<script src="data/club-index.js?v=183"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=179"></script>
-<script src="data/club-leagues.js?v=179"></script>
-<script src="data/category-map.js?v=179"></script>
-<script src="data/site-labels.js?v=179"></script>
-<script src="data/currency-map.js?v=179"></script>
-<script src="data/sources-view.js?v=179"></script>
+<script src="data/leagues.js?v=183"></script>
+<script src="data/club-leagues.js?v=183"></script>
+<script src="data/category-map.js?v=183"></script>
+<script src="data/site-labels.js?v=183"></script>
+<script src="data/currency-map.js?v=183"></script>
+<script src="data/sources-view.js?v=183"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=179"></script>
-<script src="js/finanzas-render.js?v=179"></script>
+<script src="js/finanzas-calc.js?v=183"></script>
+<script src="js/finanzas-render.js?v=183"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=179"></script>
+<script src="js/selector.js?v=183"></script>
+<script src="js/liga.js?v=183"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1530,7 +1614,10 @@ consulta puntual, nunca lectura de corrido.
   // el card del selector (Versión 143). Y si el visitante estaba parado en una pestaña que
   // acaba de esconderse (volvió a la portada desde Fuentes), se lo devuelve a Inicio en vez
   // de dejarlo mirando una sección sin botón.
-  const TABS_SIN_CLUB = ['inicio', 'vs', 'finanzas', 'cuenta'];
+  // 'liga' entra acá (Versión 183): la pestaña Ligas es sobre una LIGA, no sobre el club
+  // activo, así que funciona igual de bien sin ninguno elegido — de hecho su estado frío
+  // (la grilla de las 8 ligas) es una forma perfectamente buena de entrar al sitio.
+  const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
     // El #coldHero de la Versión 137 se borró en la Versión 146, junto con el panel de
@@ -1552,7 +1639,21 @@ consulta puntual, nunca lectura de corrido.
   CLUB_SELECTOR.init({
     getClub: () => currentClub,
     pickClub: selectClub,
+    // Versión 183: elegir una LIGA en el selector aterriza en la pestaña Ligas. Hasta
+    // acá terminaba en Finanzas del primer club de esa liga por orden alfabético, que
+    // es lo que el to-do 23(c) describía como "solo filtra la columna Equipo".
+    pickLeague: (leagueId, year) => LIGA_VIEW.show(leagueId, year).then(() => irASeccion('liga')),
   });
+
+  // La vista de liga tampoco sabe navegar ni cargar un club: se le pasa qué hacer cuando
+  // el visitante clickea una barra o una fila de la tabla, que es ir a Finanzas de ese club.
+  LIGA_VIEW.init({
+    pickClub: selectClub,
+    goFinanzas: () => irASeccion('finanzas'),
+  });
+  // Se dibuja ya, para que llegar por el botón del nav sin haber elegido liga muestre la
+  // grilla de ligas en vez de una sección vacía.
+  LIGA_VIEW.refresh();
 
   // Acá vivía el `CLUB_COMPARE.init()` de js/comparar-clubes.js, borrado en la
   // Versión 152: la comparación es la pestaña Comparar, y su estado vive adentro de
@@ -1842,6 +1943,8 @@ consulta puntual, nunca lectura de corrido.
     // etiquetas quedan en el idioma que hubiera al cargar la página. `refreshFinanzas()`, acá
     // arriba, ya redibuja la ficha de Fuentes de Finanzas.
     renderFuentesClubCard();
+    // La pestaña Ligas también arma todo su contenido en JS (Versión 183).
+    LIGA_VIEW.refresh();
   });
 
   I18N.init().then(renderLangMenu);

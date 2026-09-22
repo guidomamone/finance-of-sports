@@ -63,6 +63,38 @@ perdieron sino que se descartaron:
 > sobreviva se muda al punto que corresponda o a un skill.
 
 
+40. REVISAR LOS NOMBRES DE LAS PESTAÑAS DEL NAV, todas juntas. Pedido de Guido, 2026-09-22,
+    al decidir que la pestaña nueva se llamara "Ligas" y que Finanzas quedara como Finanzas.
+    Hoy el nav dice Inicio · Comparar · Ligas · Finanzas · Fuentes · Mi Cuenta, y el par
+    Ligas/Finanzas no dice que uno es de ligas y el otro de clubes. En la charla salieron
+    "Finanzas de liga" / "Finanzas de club", que se descartó por ahora porque renombrar toca
+    el nav, `data/lang/en.js` y varios `data-i18n`. No es urgente: es una pasada de copy
+    sobre las 6, no un arreglo de una.
+
+41. `mezclaDe()` (js/selector.js) FILTRA LA COMPOSICIÓN POR `> 0` Y TIRA LOS BUCKETS
+    NEGATIVOS, que son reales. Encontrado el 2026-09-22 al escribir
+    `tools/generate-rankings.js`, que tenía el mismo bug y se arregló ahí (Versión 182).
+    Botafogo 2024, Cruzeiro 2025 y Envigado 2025 reportan ingreso BRUTO y después una línea
+    de deducciones (`Deduções sobre a receita`, `Impostos e contribuições`, `Devoluciones,
+    rebajas y descuentos`) que cae en el catch-all y lo deja negativo. Consecuencia en la
+    pestaña Comparar: el card "Composición de ingresos" calcula sus porcentajes sobre un
+    total inflado (119,7 M USD en vez de 114,1 para Cruzeiro, o sea ~5% de error en cada
+    barra) y la deducción no se ve en ninguna parte. Son 3 clubes de 41, por eso no es P0,
+    pero el arreglo es una línea: filtrar `!== 0` en vez de `> 0`. LO QUE HAY QUE DECIDIR,
+    y es lo que lo hace más que una línea: qué dibuja una barra apilada al 100% cuando uno
+    de sus segmentos es negativo. El ranking de la pestaña Ligas esquivó el problema
+    mostrando barras de un color sólido.
+
+42. LO QUE TODAVÍA NO SE TRADUCE Y SÍ DEBERÍA. La cabecera de `data/lang/en.js` ya lista dos
+    (los buckets de Formato simplificado y los avisos por tipo de reporte); la pestaña Ligas
+    sumó una tercera visible: `tierLabel()` (`data/leagues.js`) devuelve "1ª división" /
+    "2ª división" en castellano duro, y ahora se ve en la grilla de ligas de esa pestaña
+    además de en el selector. Cuarta: `ejercicioLabel()` (`js/finanzas-calc.js`) arma
+    "Balance 2024/2025" / "Presupuesto 2026" / "Ejercicio 2023/2024", que aparece en
+    Finanzas, en la tabla de Ligas y en los tooltips. Ninguna rompe nada —el sitio degrada
+    a castellano— pero un visitante en inglés ve castellano en medio de una tabla en inglés.
+    Es una sola pasada para las 4, no cuatro tareas.
+
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.
@@ -148,16 +180,6 @@ perdieron sino que se descartaron:
         el último que informe deuda para la deuda) y escribe cuál es abajo del número, en vez de
         esconderlo en un tooltip. Los presupuestos siguen escribiendo `grossDebt:0, cash:0` en sus
         datos, pero ninguna vista los publica ya como si fueran un cero real.
-    (c) LA VISTA DE LIGA (pedido de Guido, "podemos separarlo en sesiones pero guardámelo en un
-        to-do gigante"). Elegir una liga o un país entero en el selector hoy solo filtra la
-        columna Equipo; el prototipo de la Versión 137 (ya borrado) tenía además un "Ranking de
-        ingresos" con una barra apilada por club. Lo que hay que resolver antes de dibujarlo, y
-        es lo que lo hace una sesión propia: un ranking de liga es (liga, EJERCICIO), así que
-        hay que elegir el año y decir cuántos de sus integrantes tienen ese ejercicio cargado;
-        carga N clubes en paralelo; y mezclar el último ejercicio de cada uno (que es lo que
-        hace el prototipo) compara años distintos sin avisarlo. La infraestructura ya está:
-        `clubsOfLeagueYear()` contesta quiénes integraban la liga ese año, y los 4 avisos de la
-        comparación son los mismos que necesita esta vista.
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
         ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
         por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por

@@ -2307,3 +2307,53 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   sin agregar ni un hallazgo contra el baseline; los 82 desgloses cierran contra su ingreso; los
   totales por liga dan 550,5 M USD (J1 2025), 3.971,8 (LaLiga 2025) y 503,7 (Primera 2024), iguales
   a los calculados a mano contra el motor antes de escribir el generador.
+
+## Versión 183: la pestaña Ligas (tanda 2 de 3, cierra el to-do 23(c))
+
+- **Pestaña nueva "Ligas"** (`<section id="liga">` + `js/liga.js`): el ranking de ingresos de los
+  clubes de una liga en UN ejercicio. Barras verticales ascendentes, cada una en el `brandColor`
+  del club (Versión 178) y con su número escrito arriba; abajo la tabla con puesto, club,
+  ingresos, ejercicio y tipo de documento; abajo de todo las salvedades. Va antes de Finanzas en
+  el nav y está en `TABS_SIN_CLUB`: una liga no necesita club activo.
+- **No baja ni un `data/<club>-data.js`**: lee `data/rankings/<liga>.js` (Versión 182), entre 1 y
+  3,4 KB gzip por liga.
+- **El ejercicio por defecto es el que MÁS clubes tiene, no el más reciente.** Los balances tardan
+  en publicarse, así que el último ejercicio es siempre el más flaco: la Primera argentina abre en
+  2024 (8 clubes) y no en 2025 (5). El selector de ejercicio dice cuántos clubes trae cada año.
+- **"N de M" solo cuando `leagueSizeAt()` lo sabe.** En 24 de las 27 liga-temporadas devuelve
+  `null` y la pantalla dice cuántos clubes tiene cargados y que no está verificado de cuántos son.
+- **Salvedades derivadas del dato, no escritas a mano**: cuántos clubes faltan, cuáles ejercicios
+  son PRESUPUESTOS (San Lorenzo 2024 está 7º en el ranking argentino), cuáles vienen de una copia
+  no oficial (River 2024, que es el 1º), y qué porcentaje del ranking no está desglosado por club
+  (43% en la J1, 29% en la Primera).
+- **Estado frío**: entrar por el nav sin liga elegida muestra la grilla de las 8 ligas. `LEAGUES`
+  es eager, así que no cuesta un pedido de red.
+- Cada barra y cada fila de la tabla llevan a Finanzas de ese club; la columna Documento linkea a
+  `fuentes/<clubId>.html`, que ya existe generado.
+- **El selector ahora puede terminar en una liga** (`js/selector.js`): `confirmar('liga')` nuevo,
+  hook `pickLeague` nuevo, y el card final ofrece "Ver el ranking de ingresos de X".
+- **El buscador del modal ofrece ligas SIEMPRE**, no solo en el camino de Comparar. El motivo que
+  lo limitaba ("Finanzas muestra un club por vez") dejó de ser cierto al existir esta pantalla:
+  buscar "LaLiga" desde el botón del header devolvía sus 9 clubes y no la liga.
+- **`pasosActivos()` respeta `tipo === 'liga'` viniendo de Finanzas.** Sin esto, elegir una liga
+  desde el buscador dejaba el estado marcado con una liga y los pasos mostrando clubes.
+- En el camino que termina en Ligas, el paso de temporada es de **una sola** temporada y **no
+  muestra el agregador** Promedio/Suma: los dos son conceptos de Comparar. Y un prellenado que
+  nadie tocó deja decidir a la vista, para que la misma página no abra en 2024 por el nav y en
+  2025 por el selector.
+- **`tools/audit.js` suma `checkGenerados()`**, que corre el `--check` de los 4 generadores y
+  reporta P1. Salió de un problema real de esta sesión: `generate-fuentes-page.js` LEE `ASSET_V`
+  de `index.html`, así que subirlo desactualiza las 42 páginas de fuentes sin tocar ningún dato y
+  sin que nada se vea roto. Cuesta 0,2 s.
+- **`data/rankings/` dejó de guardar `yearLabel`**: era un string de presentación en castellano
+  ("Balance 2024/2025") y congelarlo lo volvía intraducible. La vista lo arma en runtime con
+  `window.ejercicioLabel()`, que no necesita cargar ningún data file.
+- **ASSET_V 179 → 183**, constante y los 14 `<script src>`; `fuentes.html` y las 41 páginas de
+  club regeneradas por el mismo motivo.
+- `data/lang/en.js`: 33 claves nuevas (`liga.*`, `nav.liga`, `sel.toliga`, `sel.liga.res`).
+- **Inicio no se tocó**: sigue mostrando la bifurcación y el resumen del club activo. Eso es la
+  tanda 3.
+- Verificado en el navegador, en castellano y en inglés: las 8 ligas, el caso de `leagueSizeAt()`
+  en null (Série B), el de un solo club (Liga MX), el flujo entero desde el buscador, y el click
+  de una fila a Finanzas. `auditAll()` 41 clubes / 228 checks / 0 que no cierran / 0 warnings;
+  `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día.

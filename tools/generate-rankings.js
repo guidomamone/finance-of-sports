@@ -181,11 +181,15 @@ function rankingDe(api, leagueId, year) {
       // ejercicio es un PRESUPUESTO (una proyección del club) y no un cierre.
       reportType: c.meta.reportType || null,
       sourceId: c.meta.sourceId || null,
-      // La etiqueta la escribe el MOTOR (`ejercicioLabel()`, vía
-      // `computeYearGeneric()`), no este script: un club de año calendario dice
-      // "Balance 2025" y uno de ejercicio partido "Balance 2024/2025". Guardar
-      // el año pelado obligaría a la vista a reimplementar esa regla.
-      yearLabel: c.yearLabel,
+      // LA ETIQUETA DEL EJERCICIO NO SE GUARDA, A PROPÓSITO, aunque
+      // `computeYearGeneric()` la trae hecha en `c.yearLabel`. Es un string de
+      // PRESENTACIÓN en castellano ("Balance 2024/2025"), y congelarlo acá lo
+      // volvería intraducible: el día que las etiquetas de `ejercicioLabel()`
+      // pasen por `I18N.t()`, este archivo seguiría sirviendo castellano a un
+      // visitante en inglés, y no habría forma de arreglarlo sin regenerar.
+      // Se guarda el DATO (`reportType`) y la vista arma la etiqueta en runtime
+      // con `window.ejercicioLabel()`, que está disponible sin cargar ningún
+      // data file (solo necesita `clubs[id].fiscalYearStart`, que es eager).
       mix,
     });
   }
@@ -241,7 +245,7 @@ function archivoDe(api, leagueId, porAnio) {
     L.push('    clubs: [');
     r.clubs.forEach(f => {
       L.push(`      { id:${JSON.stringify(f.id)}, revenue:${f.revenue}, reportType:${JSON.stringify(f.reportType)},`);
-      L.push(`        sourceId:${JSON.stringify(f.sourceId)}, yearLabel:${JSON.stringify(f.yearLabel)},`);
+      L.push(`        sourceId:${JSON.stringify(f.sourceId)},`);
       L.push(`        mix:[${f.mix.map(m => `[${JSON.stringify(m[0])},${m[1]}]`).join(',')}] },`);
     });
     L.push('    ],');
@@ -282,7 +286,7 @@ function main() {
         let tot = 0;
         r.clubs.forEach((f, i) => {
           tot += f.revenue;
-          console.log(`${String(i + 1).padStart(3)} ${api.clubs[f.id].displayName.padEnd(24)} ${f.revenue.toFixed(1).padStart(9)} M USD  ${f.yearLabel}`);
+          console.log(`${String(i + 1).padStart(3)} ${api.clubs[f.id].displayName.padEnd(24)} ${f.revenue.toFixed(1).padStart(9)} M USD  ${f.reportType}`);
         });
         console.log(`    TOTAL de los cargados: ${tot.toFixed(1)} M USD`);
       }
