@@ -2270,3 +2270,40 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   para que Guido lo vea antes de cualquier cambio al sitio — no quedó como entrada propia acá
   porque no cierra nada, solo cambia CÓMO se va a encarar esa sesión.
 - Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`.
+
+## Versión 182: los rankings de liga, precalculados (tanda 1 de 3 del to-do 23(c)/33)
+
+- **`tools/generate-rankings.js` nuevo**: corre el motor real (`computeYearGeneric()` +
+  `simplifiedReportForClub()` en un contexto de `vm`, mismo loader que `tools/audit.js`) y
+  escribe el ranking de ingresos de cada liga-ejercicio en **`data/rankings/<liga>.js`**, un
+  archivo por liga. 8 ligas, 27 liga-ejercicios, 82 filas de club, 39 KB crudos / **5 KB gzip**.
+- Por qué precalculado y no en vivo: medido archivo por archivo, un ranking en vivo cuesta 18 KB
+  gzip (J1 2025, 10 clubes), 29 KB (LaLiga 2025, 9) y **101 KB (Primera 2024, 8** — Racing trae 16
+  ejercicios y el ranking usa uno). Detrás de un click eso se paga; el ranking de Inicio lo paga
+  todo visitante, incluido el que rebota, y hoy el sitio no baja ni un `data/<club>-data.js` eager.
+- **`data/destacados.js` nuevo**: la lista curada a mano de hasta 10 (liga, ejercicio) para la
+  vidriera de Inicio. Arranca con `jp-j1` 2025, `es-laliga` 2025, `ar-primera` 2024 y `br-serieB`
+  2024. Decisión de Guido: se eligen discrecionalmente, no por una regla de "más de N clubes".
+- **`tools/audit.js` suma `checkRankings()`**, con 5 hallazgos nuevos: `rankings-desfasado` (P1,
+  le pregunta al generador con `--check` en vez de reimplementar la comparación),
+  `rankings-sin-generar` (P1), `destacado-sin-ranking` (P1), `destacado-de-un-club` (P2) y
+  `destacados-de-mas` (P2). Es P1 porque `data/rankings/` es lo único del proyecto que guarda
+  NÚMEROS DE PLATA copiados: un metadato viejo se nota, un ingreso viejo se publica.
+- **Bug encontrado y arreglado en el propio generador**: filtrar la composición por `> 0` tiraba
+  los buckets NEGATIVOS, que son reales — Botafogo 2024, Cruzeiro 2025 y Envigado 2025 reportan
+  ingreso bruto y después una línea de deducciones (`Deduções sobre a receita`, `Impostos e
+  contribuições`, `Devoluciones, rebajas y descuentos`). La composición de Cruzeiro sumaba 119,7 M
+  USD contra un total de 114,1. Ahora se descartan solo los ceros exactos, y el generador **aborta**
+  si el desglose de un club no cierra contra su propio ingreso.
+- Segundo bug del mismo tipo, cazado comparando `--print` contra la ficha de Finanzas:
+  `reportType`/`sourceId`/`yearLabel` se leían de `yearMetaFor()`, que devuelve SOLO moneda y tipo
+  de cambio. Los 82 ejercicios `official_balance_sheet` quedaban etiquetados "Ejercicio 2023/2024"
+  en vez de "Balance 2023/2024". Ahora salen de `computeYearGeneric()`.
+- `ESTADO.md`: los conteos de `audit.js` decían "2 P2, 8 P3" desde hacía varias versiones; medido
+  hoy son 10 P2 y 7 P3, los mismos antes y después de esta tanda.
+- **El sitio no cambió en nada**: ni `index.html` ni `js/` referencian los archivos nuevos todavía,
+  así que no hay ASSET_V nuevo. Las pantallas son las tandas 2 (pestaña Ligas) y 3 (Inicio).
+- Verificado: `node tools/generate-rankings.js --check` al día; `node tools/audit.js` 0 P0 y 0 P1,
+  sin agregar ni un hallazgo contra el baseline; los 82 desgloses cierran contra su ingreso; los
+  totales por liga dan 550,5 M USD (J1 2025), 3.971,8 (LaLiga 2025) y 503,7 (Primera 2024), iguales
+  a los calculados a mano contra el motor antes de escribir el generador.

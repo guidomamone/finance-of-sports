@@ -165,10 +165,12 @@ se reescribe, no se acumula.
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
   escala, desgloses que no cierran contra su propia fila, catch-all dominante,
   ramas por club en el código). Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **2 P2**, 8 P3 y 23
-  silenciados con su motivo en `tools/audit-ignore.json`. Los 2 que quedan son el mismo
-  hallazgo (el catch-all de Vélez 2016 y 2017), diferido por Guido a una sesión propia
-  (to-do 20(b)). Desde la Versión 125 audita además la PROCEDENCIA de cada
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **10 P2**, 7 P3 y 23
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-22; este
+  párrafo decía "2 P2, 8 P3", que era de varias versiones atrás). De los 10 P2, 2 son el
+  catch-all de Vélez 2016 y 2017, diferido por Guido a una sesión propia (to-do 20(b)), y
+  los otros 8 son `doc-interno-no-excluido`: los `.md` de la raíz que `netlify.toml` no
+  saca del deploy, que es decisión de Guido (to-do 39). Desde la Versión 125 audita además la PROCEDENCIA de cada
   tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
@@ -361,6 +363,21 @@ se reescribe, no se acumula.
   decidir si un club tiene documento (la prosa matchea señales de los dos lados, o
   de ninguno) ABORTA en vez de adivinar: la decisión va a mano a `OVERRIDES`, adentro
   del script. Hoy hay 12, de la corrida original del 2026-09-20.
+- `tools/generate-rankings.js` (Versión 182): precalcula el ranking de ingresos de cada
+  liga-ejercicio en `data/rankings/<liga>.js`, uno por liga (8 archivos, 39 KB crudos / 5 KB
+  gzip). Corrélo después de cargar un club o un ejercicio, NO edites esos archivos a mano.
+  `--check` avisa si quedaron viejos y `--print` imprime los rankings en la terminal para
+  verificarlos contra la fuente. POR QUÉ EXISTE: un ranking de liga necesita el ingreso de
+  los N clubes de esa temporada, y calcularlo en vivo cuesta entre 18 KB (J1 2025, 10 clubes)
+  y 101 KB gzip (Primera 2024, 8 clubes, porque Racing y Vélez traen 16 ejercicios cada uno y
+  el ranking usa uno). Detrás de un click eso se paga; en Inicio, que lo ve todo visitante
+  incluido el que rebota, no. **Es el único lugar del proyecto que guarda números de plata
+  copiados de otro lado**, así que `node tools/audit.js` corre su `--check` como **P1**
+  (`rankings-desfasado`): no se puede pushear con el ranking viejo.
+- `data/destacados.js` (Versión 182): la lista CURADA A MANO de hasta 10 (liga, ejercicio)
+  que Inicio muestra como vidriera. Es el único archivo de esta feature que se edita a mano;
+  `audit.js` chequea que cada entrada tenga ranking precalculado (`destacado-sin-ranking`,
+  P1) y avisa si alguna quedó con un solo club.
 - `Prototyping/`: **28 KB y dos archivos `.md`, ningún prototipo.** Entre el
   2026-09-14 y el 15 se probaron cuatro formas de resolver la pantalla de elegir
   club; ganó el 4 y entre el 15 y el 17 se llevó a producción en seis etapas

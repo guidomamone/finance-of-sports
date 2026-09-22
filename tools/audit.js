@@ -526,6 +526,101 @@ function checkDeployInterno() {
   }
 }
 
+// --- D18: los rankings precalculados (Versión 182, to-dos 23(c) y 33) ------
+// POR QUÉ ESTE CHEQUEO ES LA CONDICIÓN PARA QUE `data/rankings/` PUEDA EXISTIR.
+// Ese directorio es lo único del proyecto que guarda NÚMEROS DE PLATA copiados
+// de otro lado: `data/club-index.js` también es generado, pero copia metadatos
+// (cuántos ejercicios, cuál es el más nuevo), y un metadato desactualizado se
+// nota. Un INGRESO desactualizado no se nota: se publica, en la portada, con
+// pinta de verificado. O sea que `data/rankings/` es una segunda verdad sobre
+// exactamente lo que el sitio existe para no equivocar.
+//
+// El seguro es que no se pueda pushear con el archivo viejo. Por eso es P1 y no
+// P2, y por eso `audit.js` no reimplementa la comparación: le PREGUNTA AL
+// GENERADOR (`--check`), que es el único que sabe qué debería decir cada
+// archivo. Dos implementaciones de la misma cuenta serían el problema otra vez,
+// un escalón más arriba.
+//
+// Cuesta ~1s más que el resto de la auditoría porque el generador vuelve a
+// levantar el motor en su propio proceso. Es barato al lado de publicar el
+// ingreso de un club con el balance del año pasado.
+function checkRankings(api) {
+  const dir = path.join(ROOT, 'data/rankings');
+  if (!fs.existsSync(dir)) {
+    add('P1', 'rankings-sin-generar',
+      'data/rankings/ no existe: la pestaña Ligas y los rankings de Inicio no tienen de dónde leer. Corré: node tools/generate-rankings.js');
+    return;
+  }
+
+  try {
+    execSync('node tools/generate-rankings.js --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+  } catch (e) {
+    const detalle = String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ');
+    add('P1', 'rankings-desfasado',
+      `data/rankings/ ya no coincide con los data/<club>-data.js: ${detalle || 'corré node tools/generate-rankings.js'}`);
+  }
+
+  // LA LISTA CURADA DE INICIO (`data/destacados.js`). Es el único archivo de
+  // esta feature que se edita a mano, así que es el único que puede apuntar a
+  // algo que ya no existe: se borra un club, cambia una membresía, y el bloque
+  // de la portada queda vacío o con un ranking de uno. El archivo no puede
+  // chequearse solo, así que lo chequea esto.
+  const destacadosPath = path.join(ROOT, 'data/destacados.js');
+  if (!fs.existsSync(destacadosPath)) {
+    add('P1', 'destacados-sin-archivo',
+      'Falta data/destacados.js: Inicio no sabe qué rankings mostrar');
+    return;
+  }
+
+  const sandbox = { console };
+  sandbox.window = sandbox;
+  const ctx = vm.createContext(sandbox);
+  try {
+    vm.runInContext(fs.readFileSync(destacadosPath, 'utf8'), ctx, { filename: 'data/destacados.js' });
+    for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.js')).sort()) {
+      vm.runInContext(fs.readFileSync(path.join(dir, f), 'utf8'), ctx, { filename: 'data/rankings/' + f });
+    }
+  } catch (e) {
+    add('P1', 'rankings-no-cargan', `data/destacados.js o data/rankings/*.js no se pueden evaluar: ${e.message}`);
+    return;
+  }
+
+  const destacados = sandbox.DESTACADOS || [];
+  const rankings = sandbox.RANKINGS || {};
+
+  // "Hasta 10" es la decisión de Guido del 2026-09-22, y es editorial: una
+  // portada con 20 rankings deja de ser una vidriera. P2 porque nada está MAL,
+  // simplemente dejó de cumplirse el criterio con el que se diseñó la pantalla.
+  if (destacados.length > 10) {
+    add('P2', 'destacados-de-mas',
+      `data/destacados.js tiene ${destacados.length} entradas y el criterio es hasta 10: Inicio se vuelve una lista en vez de una vidriera`);
+  }
+
+  const vistos = new Set();
+  for (const d of destacados) {
+    const clave = `${d.league} ${d.year}`;
+    if (vistos.has(clave)) {
+      add('P2', 'destacado-repetido', `data/destacados.js repite ${clave}: Inicio dibujaría el mismo ranking dos veces`);
+      continue;
+    }
+    vistos.add(clave);
+
+    const nombre = (api.LEAGUES && api.LEAGUES[d.league] ? api.LEAGUES[d.league].name : d.league);
+    const r = (rankings[d.league] || {})[d.year];
+    if (!r) {
+      add('P1', 'destacado-sin-ranking',
+        `data/destacados.js pide ${nombre} ${d.year} pero no hay ranking precalculado para esa liga-ejercicio: ese bloque de Inicio queda vacío`);
+      continue;
+    }
+    // Un "ranking" de un club es una barra sola, y en la portada se lee como si
+    // esa fuera la liga. No se prohíbe (la lista es discrecional), se avisa.
+    if (r.clubs.length < 2) {
+      add('P2', 'destacado-de-un-club',
+        `data/destacados.js pone ${nombre} ${d.year} en la portada con ${r.clubs.length} club cargado: una barra sola no se lee como un ranking`);
+    }
+  }
+}
+
 // --- D14: el espacio de nombres de clubId (Versión 129) --------------------
 // `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
 // (`data/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
@@ -1086,6 +1181,7 @@ function main() {
   checkCarpetasClubes();
   checkColisionSourcing(api);
   checkLigasPorEjercicio(api);
+  checkRankings(api);
   checkCategorizacion(api);
   checkEscala(api);
   checkPesoDocs();
