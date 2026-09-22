@@ -166,9 +166,9 @@
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">Mapa de procesos · finance-of-sports · 13 sep 2026</p>
+  <p class="eyebrow">Mapa de procesos · finance-of-sports · 22 sep 2026 · Versión 199</p>
   <h1>Cómo corre El deporte en Números</h1>
-  <p class="standfirst">Qué es cada archivo del proyecto, los cuatro procesos que lo mueven, y la lista abierta de lo que puede romperse al escalar de 41 clubes a 1000.</p>
+  <p class="standfirst">Qué es cada archivo del proyecto, los procesos que lo mueven, y la lista abierta de lo que puede romperse al escalar de 41 clubes a 1000.</p>
   <p style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.6;color:var(--ink-soft);margin:22px 0 0;max-width:70ch;border-left:3px solid var(--accent);padding-left:16px;">
     <strong style="color:var(--ink);">Para quien audite este documento:</strong> la sección que buscás es
     <a href="#riesgos">RIESGOS DE ESCALA</a>, al final. Es la lista explícita de lo que hoy no escala,
@@ -182,62 +182,71 @@
 <dl class="state">
   <div><dt>Clubes cargados</dt><dd>41</dd></div>
   <div><dt>Países</dt><dd>6</dd></div>
-  <div><dt>Checks de datos</dt><dd>222</dd></div>
-  <div><dt>Documentos fuente</dt><dd>83 <small>transcriptos</small></dd></div>
-  <div><dt>Archivos por club</dt><dd>8</dd></div>
+  <div><dt>Checks de datos</dt><dd>228</dd></div>
+  <div><dt>Documentos fuente</dt><dd>89 <small>transcriptos</small></dd></div>
+  <div><dt>Archivos por club</dt><dd>7 <small>a mano</small></dd></div>
 </dl>
 
 <!-- ============ INVENTARIO ============ -->
 <section class="flow">
   <div class="col">
     <div class="flow-head"><span class="step-no">00</span><h2>Qué es cada cosa</h2></div>
-    <p>El proyecto tiene cuatro clases de archivo, y confundirlas es lo que hace que parezca más complicado de lo que es. <strong>Código</strong> es el sitio. <strong>Datos</strong> son los números de cada club. <strong>Instrucciones</strong> son las reglas que una sesión de trabajo tiene que respetar. <strong>Registro</strong> es lo que ya pasó: no se lee para trabajar, se consulta cuando hace falta.</p>
+    <p>El proyecto tiene cuatro clases de archivo, y confundirlas es lo que hace que parezca más complicado de lo que es. <strong>Código</strong> es el sitio. <strong>Datos</strong> son los números de cada club y las tablas que los hacen comparables entre sí. <strong>Instrucciones</strong> son las reglas que una sesión de trabajo tiene que respetar. <strong>Registro</strong> es lo que ya pasó: no se lee para trabajar, se consulta cuando hace falta.</p>
   </div>
 
   <div class="group">
     <h3>Código · el sitio en sí</h3>
-    <p class="gnote">Archivos estáticos, sin backend y sin build. Se sirven tal cual desde la raíz.</p>
+    <p class="gnote">Archivos estáticos, sin backend y sin build. Se sirven tal cual desde la raíz — salvo los que se generan, que se listan igual acá porque son parte del sitio aunque nadie los edite a mano.</p>
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
-        <tr><td class="mono">index.html</td><td>El HTML, el CSS y el script principal. Arriba de todo lleva un comentario con el estado del proyecto y la to-do list.</td><td class="num">143 KB</td></tr>
-        <tr><td class="mono">js/finanzas-calc.js</td><td>El motor: convierte las líneas de un balance en los totales, los porcentajes y la cascada hasta el resultado neto. Un solo motor para los 41 clubes.</td><td class="num">48 KB</td></tr>
-        <tr><td class="mono">js/finanzas-render.js</td><td>Dibuja: arma las tablas, los gráficos y los números de arriba de cada pestaña.</td><td class="num">91 KB</td></tr>
-        <tr><td class="mono">js/i18n.js</td><td>El selector de idioma. Sumar un idioma es un archivo nuevo, no tocar esto.</td><td class="num">9 KB</td></tr>
+        <tr><td class="mono">index.html</td><td>El HTML, el CSS y el script principal (KPIs, gráficos, Inicio, Comparar, verificación). Ya no lleva ningún comentario con estado o to-do: eso vive en <code>Admin/</code>.</td><td class="num">138 KB</td></tr>
+        <tr><td class="mono">js/finanzas-calc.js</td><td>El motor: convierte las líneas de un balance en los totales, los porcentajes y la cascada hasta el resultado neto. Un solo motor para los 41 clubes, <code>computeYearGeneric()</code>.</td><td class="num">53 KB</td></tr>
+        <tr><td class="mono">js/finanzas-render.js</td><td>Dibuja: arma las tablas, los gráficos y los números de arriba de cada pestaña.</td><td class="num">73 KB</td></tr>
+        <tr><td class="mono">js/selector.js</td><td>El archivo más grande de <code>js/</code>. Elegir club (el modal paso a paso) y Comparar (ligas, clubes o una mezcla de ambos con su propio agregador) viven juntos desde la Versión 152.</td><td class="num">113 KB</td></tr>
+        <tr><td class="mono">js/liga.js</td><td>La pestaña Ligas: el ranking de ingresos de los clubes de una liga en un ejercicio, leído de <code>data/rankings/</code>. Ver <a href="#ligas">paso 06</a>.</td><td class="num">32 KB</td></tr>
+        <tr><td class="mono">js/i18n.js</td><td>El selector de idioma. Sumar un idioma es un archivo de diccionario nuevo, no tocar esto.</td><td class="num">10 KB</td></tr>
+        <tr><td class="mono">fuentes.html<br>+ fuentes/&lt;clubId&gt;.html (41)<br>+ sitemap.xml</td><td>El listado público de documentos fuente, con página propia por club para que un buscador la indexe sin depender de JS. <strong>Se GENERAN</strong>, no se editan — ver <a href="#generadores">paso 05</a>.</td><td class="num">generado</td></tr>
       </tbody>
     </table></div>
   </div>
 
   <div class="group">
     <h3>Datos · los números y su vocabulario</h3>
-    <p class="gnote">Un club es un archivo. El resto son las tablas compartidas que hacen que 41 clubes distintos se puedan comparar entre sí.</p>
+    <p class="gnote">Un club es un archivo. El resto son las tablas compartidas que hacen que 41 clubes distintos se puedan comparar entre sí, más los archivos que las precalculan.</p>
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
-        <tr><td class="mono">data/&lt;club&gt;-data.js</td><td><strong>El archivo más importante del proyecto.</strong> Uno por club: cada línea del balance, su monto, su categoría, el tipo de cambio, la deuda, la caja, y un comentario largo arriba que explica de dónde salió cada número y qué se decidió al cargarlo.</td><td class="num">41 archivos</td></tr>
-        <tr><td class="mono">data/clubs.js</td><td>La lista de clubes: nombre, país, moneda, si su ejercicio cierra en diciembre o a mitad de año. Agregar un club acá lo hace aparecer solo en el selector.</td><td class="num">15 KB</td></tr>
-        <tr><td class="mono">data/category-map.js</td><td>El vocabulario compartido. Traduce "Cuotas Sociales", "Mensalidades de associados" y "Socios" a una misma categoría interna, que es lo que permite comparar un club argentino con uno brasileño.</td><td class="num">5 KB</td></tr>
-        <tr><td class="mono">data/currency-map.js</td><td>Cómo se muestra cada moneda y qué rango de tipo de cambio es plausible para cada una.</td><td class="num">9 KB</td></tr>
+        <tr><td class="mono">data/&lt;club&gt;-data.js</td><td><strong>El archivo más importante del proyecto.</strong> Uno por club: cada línea del balance, su monto, su categoría, el tipo de cambio, la deuda, la caja, y un comentario largo arriba que explica de dónde salió cada número.</td><td class="num">41 archivos<br>891 KB</td></tr>
+        <tr><td class="mono">data/clubs.js</td><td>La identidad de cada club: nombre, país, moneda, mes de cierre, y desde la Versión 178 su <code>brandColor</code> (el color del círculo de iniciales en el selector, verificado contra la fuente del club).</td><td class="num">20 KB</td></tr>
+        <tr><td class="mono">data/category-map.js</td><td>El vocabulario compartido. Traduce "Cuotas Sociales", "Mensalidades de associados" y "Socios" a una misma categoría interna, que es lo que permite comparar un club argentino con uno brasileño.</td><td class="num">7 KB</td></tr>
+        <tr><td class="mono">data/currency-map.js</td><td>Cómo se muestra cada moneda, qué rango de tipo de cambio es plausible para cada una, y <code>FX_CLOSE</code>: las cotizaciones de mercado que un ejercicio referencia en vez de repetir.</td><td class="num">19 KB</td></tr>
         <tr><td class="mono">data/site-labels.js</td><td>Qué etiquetas son del sitio y por lo tanto se traducen. Los rubros que salen del balance de un club nunca se traducen.</td><td class="num">3 KB</td></tr>
-        <tr><td class="mono">data/lang/</td><td>El registro de idiomas y el diccionario inglés.</td><td class="num">10 KB</td></tr>
-        <tr><td class="mono">tools/generate-club-index.js</td><td>Genera desde los datos la lista de "qué es real por club" que va en <code>index.html</code>. Se corre al onboardear; <code>--check</code> avisa si quedó desactualizada.</td><td class="num">nuevo</td></tr>
+        <tr><td class="mono">data/lang/</td><td>El diccionario de cada idioma. El castellano NO tiene archivo propio (es el HTML mismo); el inglés, <code>en.js</code>, tiene sus 379 claves completas.</td><td class="num">28 KB</td></tr>
+        <tr><td class="mono">data/leagues.js</td><td>El CATÁLOGO que navega el selector (6 deportes, 6 regiones, 6 países, 8 ligas). Sin membresía club→liga adentro, a propósito: ver la fila de abajo.</td><td class="num">11 KB</td></tr>
+        <tr><td class="mono">data/club-leagues.js<br>+ club-leagues/&lt;iso2&gt;.js</td><td>En qué categoría jugó cada club CADA ejercicio (no "la liga de hoy"). Un archivo por país, se bajan lazy recién al abrir el selector. 82 de 85 filas verificadas contra su fuente.</td><td class="num">32 KB</td></tr>
+        <tr><td class="mono">data/rankings/&lt;liga&gt;.js</td><td>El ranking de ingresos de cada liga-ejercicio, PRECALCULADO. Alimenta la pestaña Ligas y los rankings de Inicio sin bajar ningún <code>data/&lt;club&gt;-data.js</code>. Ver <a href="#ligas">paso 06</a>.</td><td class="num">8 archivos<br>34 KB</td></tr>
+        <tr><td class="mono">data/destacados.js</td><td>La lista curada a mano (hasta 10) de qué rankings de liga muestra Inicio como vidriera.</td><td class="num">3 KB</td></tr>
+        <tr><td class="mono">tools/generate-*.js</td><td>Los 4 generadores: escriben desde los datos lo que antes se mantenía a mano. Ver <a href="#generadores">paso 05</a>.</td><td class="num">ver 05</td></tr>
       </tbody>
     </table></div>
   </div>
 
   <div class="group">
     <h3>Instrucciones · lo que una sesión tiene que respetar</h3>
-    <p class="gnote">Esto es lo que evita que cada sesión vuelva a decidir de cero cosas que ya se decidieron. Los tres skills no se descubren solos porque este repo está anidado dentro de otro: hay que abrirlos a mano.</p>
+    <p class="gnote">Esto es lo que evita que cada sesión vuelva a decidir de cero cosas que ya se decidieron. Los 6 skills se autodescubren solos al abrir la sesión directo en <code>finance-of-sports/</code>, que desde la Versión 120 es el caso normal — y desde el 2026-09-15 este repo ya ni siquiera vive anidado adentro del sitio profesional de Guido, así que el caso "abrirlos a mano" que valía hasta hace poco dejó de existir.</p>
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
-        <tr><td class="mono">skills/start-session-…-project</td><td>El checklist de arranque y cierre de cualquier sesión: qué leer y en qué orden, qué NO leer, cómo verificar, qué documentar al terminar y la regla de git. Es por acá que se empieza.</td><td class="num">nuevo</td></tr>
-        <tr><td class="mono">CLAUDE.md</td><td>Las reglas permanentes del proyecto: dónde va cada PDF, qué skill leer antes de qué tarea, qué preguntarte antes de asumir algo.</td><td class="num">14 KB</td></tr>
-        <tr><td class="mono">Admin/CONVENCIONES.md</td><td>25 reglas vigentes de datos y de interfaz, varias pedidos explícitos tuyos. Se lee antes de tocar el sitio.</td><td class="num">22 KB</td></tr>
-        <tr><td class="mono">Admin/ARQUITECTURA.md</td><td>Qué hace cada archivo y cómo funciona el motor. Se lee cuando se toca el motor o se agrega un club.</td><td class="num">8 KB</td></tr>
-        <tr><td class="mono">skills/club-sourcing</td><td>Cómo BUSCAR el balance de un club que todavía no tiene nada: qué regulador mirar según el país, y qué caminos ya se probaron y no sirven, para no repetirlos.</td><td class="num">33 KB</td></tr>
-        <tr><td class="mono">skills/club-data-mapping</td><td>Cómo LEER un balance y pasarlo al esquema del sitio: qué categoría le toca a cada rubro, qué tipo de cambio usar, cómo verificar antes de cargar.</td><td class="num">73 KB</td></tr>
-        <tr><td class="mono">skills/club-or-year-onboarding</td><td>Cómo ENCARAR la sesión: qué confirmar con vos antes de arrancar y qué partes del sitio ya existen para reusar.</td><td class="num">64 KB</td></tr>
+        <tr><td class="mono">skills/start-session-…-project</td><td>El checklist de arranque y cierre de cualquier sesión: qué leer y en qué orden, qué NO leer, cómo verificar, qué documentar al terminar y la regla de git. Es por acá que se empieza.</td><td class="num">12 KB</td></tr>
+        <tr><td class="mono">CLAUDE.md</td><td>Las reglas permanentes del proyecto: dónde va cada PDF, qué skill leer antes de qué tarea, qué preguntarte antes de asumir algo. Se carga solo, siempre, no hace falta pedirlo.</td><td class="num">24 KB</td></tr>
+        <tr><td class="mono">Admin/CONVENCIONES.md</td><td>Reglas vigentes de datos y de interfaz, y gotchas de este entorno ya encontrados — varios pedidos explícitos tuyos que no se negocian sin preguntarte. Se lee siempre.</td><td class="num">51 KB</td></tr>
+        <tr><td class="mono">Admin/ARQUITECTURA.md</td><td>Qué hace cada archivo y cómo funciona el motor genérico. Se lee cuando se toca el motor o se agrega un club.</td><td class="num">17 KB</td></tr>
+        <tr><td class="mono">skills/club-sourcing</td><td>Cómo BUSCAR el balance de un club que todavía no tiene nada: qué regulador mirar según el país, y qué caminos ya se probaron y no sirven, para no repetirlos.</td><td class="num">93 KB</td></tr>
+        <tr><td class="mono">skills/club-data-mapping</td><td>Cómo LEER un balance y pasarlo al esquema del sitio: qué categoría le toca a cada rubro, qué tipo de cambio usar, cómo verificar antes de cargar. Incluye el flujo de OCR con Tesseract.</td><td class="num">84 KB</td></tr>
+        <tr><td class="mono">skills/club-or-year-onboarding</td><td>Cómo ENCARAR la sesión de carga: qué confirmar con vos antes de arrancar y qué partes del sitio ya existen para reusar.</td><td class="num">71 KB</td></tr>
+        <tr><td class="mono">skills/auditoria-finance-of-sports</td><td>La auditoría de rutina, periódica y transversal (datos, escala, código, docs, tokens) — distinta de esta verificación de onboarding y de <code>auditAll()</code>.</td><td class="num">11 KB</td></tr>
+        <tr><td class="mono">skills/escala-finance-of-sports</td><td>El mapa de puntos calientes de escala: qué archivo o estructura se rompe entre 200 y 3000 clubes, y con qué número aproximado.</td><td class="num">22 KB</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -248,12 +257,12 @@
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
-        <tr><td class="mono">Admin/CHANGELOG.md</td><td>Qué cambió en cada versión, en pocas líneas. Para "¿cuándo se cargó tal cosa?". La diferencia con el de abajo es qué contesta cada uno: éste contesta QUÉ y CUÁNDO, el otro POR QUÉ.</td><td class="num">68 KB</td></tr>
-        <tr><td class="mono">Admin/finance-of-sports-project.md</td><td><strong>El diario del proyecto.</strong> Versión por versión, el razonamiento completo de cada decisión: qué se probó, qué se descartó y por qué. Sirve para reconstruir el "por qué" de algo viejo, no para trabajar. Son 119 versiones más el "Volumen 0" con el planteo original y las Versiones 1 a 9 del MVP. El nombre quedó de cuando el sitio era solo de Boca.</td><td class="num">447 KB</td></tr>
-        <tr><td class="mono">fuentes/README.md<br>+ fuentes/</td><td>Qué se buscó para cada club, qué se encontró y qué no, con la fecha del último chequeo y el motivo exacto de cada intento fallido. Tres niveles: un índice de 44 países, un índice por país con una línea por club, y 530 archivos, uno por club.</td><td class="num">613 archivos</td></tr>
-        <tr><td class="mono">Admin/Archive/QUE-ES-REAL-historico.md</td><td>La versión escrita a mano de "qué es real por club", congelada el día que esa sección pasó a generarse. No se actualiza más: queda como red de seguridad por si algún dato no estuviera en el archivo de su club.</td><td class="num">16 KB</td></tr>
-        <tr><td class="mono">Admin/dudas-por-club.md</td><td>Las preguntas que quedaron abiertas de verdad, para escribirles a los clubes. No es una lista de pendientes: es una lista de cosas que el documento no aclara.</td><td class="num">19 KB</td></tr>
-        <tr><td class="mono">Clubes/</td><td>Los PDF originales de cada club y su transcripción completa a texto, uno al lado del otro. 83 transcripciones, 8,6 MB.</td><td class="num">450 archivos</td></tr>
+        <tr><td class="mono">Admin/CHANGELOG.md</td><td>Qué cambió en cada versión, en pocas líneas — 172 entradas. Para "¿cuándo se cargó tal cosa?". La diferencia con el de abajo es qué contesta cada uno: éste contesta QUÉ y CUÁNDO, el otro POR QUÉ.</td><td class="num">253 KB</td></tr>
+        <tr><td class="mono">Admin/finance-of-sports-project.md</td><td><strong>El diario del proyecto.</strong> El razonamiento completo de las decisiones que lo ameritan (no todas las versiones tienen entrada propia): qué se probó, qué se descartó y por qué. La más reciente es la de la mudanza a <code>Admin/</code> (Versión 196). Sirve para reconstruir el "por qué" de algo viejo, no para trabajar.</td><td class="num">495 KB</td></tr>
+        <tr><td class="mono">fuentes/README.md<br>+ fuentes/</td><td>Qué se buscó para cada club, qué se encontró y qué no. Tres niveles: un índice de 44 países, un índice por país con una línea por club, y 569 archivos de club, uno por club.</td><td class="num">613 archivos</td></tr>
+        <tr><td class="mono">Admin/Archive/</td><td>Documentos que cumplieron su función entera y pasaron a ser historia: el plan de remediación de escala (7 de 8 puntos hechos) y la versión escrita a mano de "qué es real por club", congelada el día que esa sección empezó a generarse. Cada uno con su banner de versión.</td><td class="num">2 docs<br>76 KB</td></tr>
+        <tr><td class="mono">Admin/dudas-por-club.md</td><td>Las preguntas que quedaron abiertas de verdad, para escribirles a los clubes. No es una lista de pendientes: es una lista de cosas que el documento no aclara.</td><td class="num">48 KB</td></tr>
+        <tr><td class="mono">Clubes/</td><td>El PDF de cada documento fuente y su transcripción completa a texto, uno al lado del otro. No es sólo de los 41 clubes cargados: crece con cada club que <code>club-sourcing</code> encuentra, cargado o no — hoy 336 carpetas de club en 35 países. Los <code>.pdf</code> están en <code>.gitignore</code> por peso (10 GB en disco); lo que viaja al repo son los 1.237 <code>.md</code>.</td><td class="num">145 MB<br>trackeados</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -264,59 +273,67 @@
   <div class="col">
     <div class="flow-head"><span class="step-no">01</span><h2>Arrancar una sesión</h2></div>
     <p>Una sesión llega en frío: no sabe qué clubes hay ni qué criterios ya se decidieron. Lo que importa no es qué archivos existen, sino <strong>cuáles hay que leer siempre y cuáles sólo si la tarea los toca</strong>.</p>
-    <p>Ese orden dejó de ser algo que hay que recordar: está escrito en el skill <code>start-session-finance-of-sports-project</code>. <strong>Alcanza con invocarlo al abrir la sesión y decir en qué te querés enfocar</strong> — el skill aporta el procedimiento (qué leer y en qué orden, qué NO leer, cómo levantar el sitio, cómo verificar, qué documentar al cerrar, la regla de git) y vos aportás la tarea. El skill se autodescubre siempre que la sesión se abra en <code>finance-of-sports/</code> y no en la carpeta de arriba.</p>
+    <p>Ese orden está escrito en el skill <code>start-session-finance-of-sports-project</code>. <strong>Alcanza con invocarlo al abrir la sesión y decir en qué te querés enfocar</strong> — el skill aporta el procedimiento (qué leer y en qué orden, qué NO leer, cómo levantar el sitio, cómo verificar, qué documentar al cerrar, la regla de git) y vos aportás la tarea.</p>
   </div>
 
   <figure>
-    <svg viewBox="0 0 760 290" role="img" aria-label="Una sesión lee 73 KB obligatorios antes de poder actuar; otros 590 KB se consultan sólo si la tarea los toca.">
+    <svg viewBox="0 0 760 300" role="img" aria-label="Una sesión lee 106 KB obligatorios antes de poder actuar; otros 275 KB se consultan sólo si la tarea los toca.">
       <defs>
         <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
       </defs>
 
-      <rect x="8" y="116" width="112" height="52" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-      <text x="64" y="138" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">sesión</text>
-      <text x="64" y="154" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">nueva</text>
+      <rect x="8" y="126" width="112" height="52" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="64" y="148" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">sesión</text>
+      <text x="64" y="164" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">nueva</text>
 
-      <line x1="120" y1="142" x2="188" y2="142" stroke="currentColor" stroke-width="1.5" marker-end="url(#a1)"/>
+      <line x1="120" y1="152" x2="188" y2="152" stroke="currentColor" stroke-width="1.5" marker-end="url(#a1)"/>
 
-      <rect x="190" y="42" width="196" height="200" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
-      <text x="288" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="var(--accent)" font-weight="600">SIEMPRE · 73 KB</text>
+      <rect x="190" y="42" width="196" height="220" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
+      <text x="288" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="var(--accent)" font-weight="600">SIEMPRE · 106 KB</text>
 
-      <rect x="206" y="60" width="164" height="42" rx="2" fill="var(--accent)" opacity=".12"/>
-      <text x="216" y="78" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">index.html: estado</text>
-      <text x="216" y="94" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">y to-do — 51 KB</text>
+      <rect x="206" y="58" width="164" height="28" rx="2" fill="var(--accent)" opacity=".12"/>
+      <text x="216" y="76" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">ESTADO.md — 40 KB</text>
 
-      <rect x="206" y="112" width="164" height="26" rx="2" fill="var(--accent)" opacity=".12"/>
-      <text x="216" y="130" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">CONVENCIONES — 22 KB</text>
+      <rect x="206" y="92" width="164" height="28" rx="2" fill="var(--accent)" opacity=".12"/>
+      <text x="216" y="110" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">CONVENCIONES — 51 KB</text>
 
-      <text x="216" y="166" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">qué hay cargado,</text>
-      <text x="216" y="181" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">qué falta, y las 25</text>
-      <text x="216" y="196" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">reglas que rigen.</text>
-      <text x="216" y="222" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--accent)" font-weight="600">→ ya puede trabajar</text>
+      <rect x="206" y="126" width="164" height="28" rx="2" fill="var(--accent)" opacity=".12"/>
+      <text x="216" y="144" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">TODO.md — 15 KB</text>
 
-      <line x1="386" y1="142" x2="452" y2="142" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55" marker-end="url(#a1)"/>
-      <text x="419" y="134" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si toca</text>
+      <text x="216" y="176" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">qué hay cargado,</text>
+      <text x="216" y="191" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">qué falta, y las reglas</text>
+      <text x="216" y="206" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">que rigen hoy.</text>
+      <text x="216" y="232" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--accent)" font-weight="600">→ ya puede trabajar</text>
 
-      <rect x="454" y="42" width="298" height="200" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55"/>
-      <text x="603" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="currentColor" opacity=".6" font-weight="600">A DEMANDA · 590 KB</text>
+      <line x1="386" y1="152" x2="452" y2="152" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55" marker-end="url(#a1)"/>
+      <text x="419" y="144" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si toca</text>
 
-      <text x="470" y="66" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">3 skills — 171 KB</text>
-      <text x="470" y="82" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si toca datos de un club</text>
-      <text x="470" y="108" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">ARQUITECTURA — 8 KB</text>
-      <text x="470" y="130" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">fuentes-por-club — 10 KB</text>
-      <text x="470" y="152" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">CHANGELOG — 66 KB</text>
-      <text x="470" y="176" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">Proyecto Boca — 447 KB</text>
-      <text x="470" y="192" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">119 versiones + el origen</text>
-      <text x="470" y="218" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".62">613 archivos en fuentes/</text>
+      <rect x="454" y="30" width="298" height="244" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55"/>
+      <text x="603" y="16" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="currentColor" opacity=".6" font-weight="600">A DEMANDA · 275 KB</text>
+
+      <text x="470" y="54" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">ARQUITECTURA — 17 KB</text>
+      <text x="470" y="70" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si tocás el motor o sumás un club</text>
+
+      <text x="470" y="96" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-sourcing — 93 KB</text>
+      <text x="470" y="118" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-data-mapping — 84 KB</text>
+      <text x="470" y="140" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-or-year-onboarding — 71 KB</text>
+      <text x="470" y="156" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si tocás datos de un club</text>
+
+      <text x="470" y="182" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">fuentes/README + índice — 10 KB</text>
+      <text x="470" y="198" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">antes de salir a buscar PDFs</text>
+
+      <text x="470" y="228" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".62">CHANGELOG y el diario NO están</text>
+      <text x="470" y="243" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".62">acá: se consultan puntual, nunca</text>
+      <text x="470" y="258" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".62">de corrido. Ver el recuadro abajo.</text>
     </svg>
-    <figcaption>El bloque sólido es el piso obligatorio de cada sesión: con eso alcanza para trabajar. El punteado se abre sólo cuando la tarea lo pide.</figcaption>
+    <figcaption>El bloque sólido es el piso obligatorio de cada sesión: con eso alcanza para trabajar. El punteado se abre sólo cuando la tarea lo pide, y ni ahí incluye el CHANGELOG ni el diario.</figcaption>
   </figure>
 
   <div class="col">
     <div class="leak solved">
       <h3>Sobre el tamaño de Admin/finance-of-sports-project.md</h3>
-      <p>Son 447 KB y crece una entrada por versión, sin partirse nunca. <strong>Eso está bien y no hay que tocarlo.</strong> Un diario que sólo se agrega y se consulta buscando una palabra no cuesta nada por ser largo: nadie lo lee de punta a punta. Lo que sí importa es que esté en el repo, y desde la Versión 119 lo está entero, origen incluido.</p>
-      <p>Si alguna vez se parte, que sea por año y de forma mecánica, no por criterio. La alternativa que usa la industria para historia de decisiones es un archivo por decisión en vez de un diario, pero cambiar a eso ahora significaría desarmar 119 versiones de narrativa continua para ganar poco.</p>
+      <p>Son 495 KB y crece una entrada por versión que lo amerita, sin partirse nunca. <strong>Eso está bien y no hay que tocarlo.</strong> Un diario que sólo se agrega y se consulta buscando una palabra no cuesta nada por ser largo: nadie lo lee de punta a punta.</p>
+      <p>Si alguna vez se parte, que sea por año y de forma mecánica, no por criterio. Cambiar a un archivo-por-decisión ahora significaría desarmar más de 100 entradas de narrativa continua para ganar poco.</p>
     </div>
   </div>
 </section>
@@ -326,7 +343,7 @@
   <div class="col">
     <div class="flow-head"><span class="step-no">02</span><h2>Onboardear un club</h2></div>
     <p>Es el proceso que más se va a repetir: la meta son ~10 clubes por cada una de 10 regiones, y van 41.</p>
-    <p>El paso 1 es el que menos cuesta y más ahorra: <strong>medir cuánto texto tiene el PDF antes de tocar nada</strong>. Separa un PDF con texto real (barato de leer) de un escaneo (caro: hay que reconocer los caracteres, o leerlo como imagen). Medir los 8 PDFs de Brasil pendientes tardó segundos y confirmó que ninguno es escaneo.</p>
+    <p>El paso 1 es el que menos cuesta y más ahorra: <strong>medir cuánto texto tiene el PDF antes de tocar nada</strong>. Separa un PDF con texto real (barato de leer) de un escaneo (caro: hay que reconocer los caracteres con Tesseract, o leerlo como imagen).</p>
   </div>
 
   <figure>
@@ -365,14 +382,14 @@
 
         <rect x="648" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
         <text x="700" y="66" text-anchor="middle" font-weight="600" fill="currentColor">6 registrar</text>
-        <text x="700" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">clubs.js</text>
-        <text x="700" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">1 línea</text>
+        <text x="700" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">clubs.js +</text>
+        <text x="700" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">club-leagues</text>
 
         <rect x="776" y="44" width="96" height="58" rx="3" fill="var(--good)" opacity=".1"/>
         <rect x="776" y="44" width="96" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
         <text x="824" y="66" text-anchor="middle" font-weight="600" fill="currentColor">7 documentar</text>
-        <text x="824" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">2 archivos</text>
-        <text x="824" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">+ 1 comando</text>
+        <text x="824" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">+ regenerar</text>
+        <text x="824" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">4 archivos</text>
       </g>
 
       <g stroke="currentColor" stroke-width="1.5" marker-end="url(#a2)">
@@ -382,7 +399,7 @@
       </g>
 
       <path d="M60,102 L60,146 L316,146" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a2)" color="var(--accent)"/>
-      <text x="70" y="140" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--accent)">si es escaneo: reconocer caracteres primero, o dejarlo para después</text>
+      <text x="70" y="140" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--accent)">si es escaneo: pdftoppm + Tesseract página por página, antes que leerlo como imagen</text>
 
       <path d="M444,102 L444,190 L188,190" fill="none" stroke="var(--cost)" stroke-width="1.5" marker-end="url(#a2)" color="var(--cost)"/>
       <text x="200" y="184" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">no cierra → volver al documento, nunca ajustar una línea para que cierre</text>
@@ -395,25 +412,21 @@
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Cargar un club toca estos archivos. Los tres primeros son inevitables: son los datos. De los cinco de prosa que había, uno pasó a generarse y dos siguen a mano.</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Cargar un club toca 7 archivos a mano (uno, <code>Admin/dudas-por-club.md</code>, sólo si hace falta) y dispara 4 comandos que regeneran el resto. Ninguno de los 4 se edita a mano nunca — ver el <a href="#generadores">paso 05</a>.</p>
   </div>
   <div class="tbl-wrap"><table class="ledger">
-    <thead><tr><th>Archivo</th><th>Por qué se toca</th><th class="num">¿Evitable?</th></tr></thead>
+    <thead><tr><th>Archivo</th><th>Por qué se toca</th><th class="num">¿Cómo?</th></tr></thead>
     <tbody>
-      <tr><td class="mono">Clubes/&lt;País&gt;/&lt;Club&gt;/…md</td><td>La transcripción del PDF. Se hace ANTES de extraer un solo número, para que cualquier revisión futura lea texto plano en vez de volver a abrir el PDF.</td><td class="num">no</td></tr>
-      <tr><td class="mono">data/&lt;club&gt;-data.js</td><td>Los datos. Es el archivo que el sitio realmente lee.</td><td class="num">no</td></tr>
-      <tr><td class="mono">data/clubs.js</td><td>Una línea: nombre, país, moneda, mes de cierre. Sin esto el club no aparece en el selector.</td><td class="num">no</td></tr>
-      <tr><td class="mono">index.html → "qué es real"</td><td>Ya NO se escribe: se genera con <code>node tools/generate-club-index.js</code>.</td><td class="num">generado</td></tr>
-      <tr><td class="mono">index.html → estado</td><td>El conteo de clubes y países. Todavía a mano.</td><td class="num">sí</td></tr>
-      <tr><td class="mono">Admin/CHANGELOG.md</td><td>La entrada de la versión.</td><td class="num">no</td></tr>
-      <tr><td class="mono">fuentes/&lt;País&gt;/&lt;Club&gt;.md</td><td>Marcar el club como cargado y la fecha del chequeo. Todavía a mano.</td><td class="num">sí</td></tr>
-      <tr><td class="mono">Admin/dudas-por-club.md</td><td>Sólo si el documento dejó una pregunta abierta de verdad.</td><td class="num">no</td></tr>
+      <tr><td class="mono">Clubes/&lt;País&gt;/&lt;Club&gt;/…md</td><td>La transcripción del PDF. Se hace ANTES de extraer un solo número, para que cualquier revisión futura lea texto plano en vez de volver a abrir el PDF.</td><td class="num">a mano</td></tr>
+      <tr><td class="mono">data/&lt;club&gt;-data.js</td><td>Los datos. Es el archivo que el sitio realmente lee.</td><td class="num">a mano</td></tr>
+      <tr><td class="mono">data/clubs.js</td><td>Una línea: nombre, país, moneda, mes de cierre, color de marca. Sin esto el club no aparece en el selector.</td><td class="num">a mano</td></tr>
+      <tr><td class="mono">data/club-leagues/&lt;iso2&gt;.js</td><td>En qué categoría jugó ese ejercicio — la fuente de la pestaña Ligas y del árbol del selector.</td><td class="num">a mano</td></tr>
+      <tr><td class="mono">Admin/CHANGELOG.md</td><td>La entrada de la versión.</td><td class="num">a mano</td></tr>
+      <tr><td class="mono">fuentes/&lt;País&gt;/&lt;Club&gt;.md<br>+ fuentes/_indice/&lt;País&gt;.md</td><td>Marcar el club como cargado y la fecha del chequeo.</td><td class="num">a mano</td></tr>
+      <tr><td class="mono">Admin/dudas-por-club.md</td><td>Sólo si el documento dejó una pregunta abierta de verdad.</td><td class="num">a mano,<br>condicional</td></tr>
+      <tr><td class="mono">Admin/ESTADO.md (CLUB-INDEX)<br>fuentes.html + 41 páginas<br>data/rankings/&lt;liga&gt;.js<br>fuentes/README.md (índice)</td><td>"Qué es real por club", el listado de fuentes, el ranking de su liga y el índice de países — los 4 se regeneran, nunca se escriben.</td><td class="num">4 comandos</td></tr>
     </tbody>
   </table></div>
-
-  <div class="col">
-
-  </div>
 </section>
 
 <!-- ============ 3 ============ -->
@@ -421,12 +434,12 @@
   <div class="col">
     <div class="flow-head"><span class="step-no">03</span><h2>Auditar lo cargado</h2></div>
     <p>El sitio trae su propia auditoría. <strong><code>verifyTieOuts()</code></strong> agarra cada ejercicio cargado, suma los rubros que el sitio tiene guardados, y los compara contra el total que ese balance imprime en papel. Si no coinciden, grita. <strong><code>checkFxSanity()</code></strong> revisa que cada tipo de cambio caiga en un rango plausible para su moneda, porque un tipo de cambio dado vuelta multiplica todo por el número equivocado sin que nada se vea roto.</p>
-    <p>Entre los 41 clubes hay <strong>222 de esas comparaciones</strong>, y hoy cierran las 222.</p>
+    <p>Entre los 41 clubes hay <strong>228 de esas comparaciones</strong>, y hoy cierran las 228.</p>
     <p>El problema era cuándo corrían. Los clubes se bajan recién cuando alguien los elige (eso es lo que hace que el sitio abra rápido), y la auditoría sólo puede revisar lo que está bajado.</p>
   </div>
 
   <figure>
-    <svg viewBox="0 0 780 258" role="img" aria-label="Al abrir el sitio sólo se audita Boca; auditAll fuerza la carga de los 41 clubes y corre los 222 checks.">
+    <svg viewBox="0 0 780 258" role="img" aria-label="Al abrir el sitio sólo se audita Boca; auditAll fuerza la carga de los 41 clubes y corre los 228 checks.">
       <defs>
         <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
       </defs>
@@ -464,19 +477,21 @@
       <rect x="214" y="174" width="402" height="56" rx="3" fill="var(--good)" opacity=".1"/>
       <rect x="214" y="174" width="402" height="56" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
       <text x="415" y="196" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">baja los 41 clubes y corre las 2 verificaciones</text>
-      <text x="415" y="216" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="var(--good)">222 checks ✓  ·  0 fallan</text>
+      <text x="415" y="216" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="var(--good)">228 checks ✓  ·  0 fallan</text>
 
       <line x1="616" y1="202" x2="666" y2="202" stroke="currentColor" stroke-width="1.5" opacity=".5" marker-end="url(#a3)"/>
       <text x="674" y="192" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">resumen</text>
       <text x="674" y="207" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">en consola</text>
       <text x="674" y="222" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">+ devuelto</text>
     </svg>
-    <figcaption>Las dos vías conviven: la visita normal sigue bajando un solo club, así que el sitio abre igual de rápido. La auditoría completa se pide aparte, con <code>?audit=1</code> o llamando <code>auditAll()</code> en la consola.</figcaption>
+    <figcaption>Las dos vías conviven: la visita normal sigue bajando un solo club, así que el sitio abre igual de rápido. La auditoría completa se pide aparte, con <code>?audit=1</code> o llamando <code>auditAll()</code> en la consola. Cargan en tandas paralelas de 25, no de a uno.</figcaption>
   </figure>
 
   <div class="col">
     <p style="color:var(--ink-soft);margin:22px 0 0;"><strong style="color:var(--ink);">Cómo se usa:</strong> abrí <code>financeofsports.com/?audit=1</code> y mirá la consola, o escribí <code>auditAll()</code> ahí mismo. Conviene correrlo antes de cada publicación que toque datos: es lo único que revisa los clubes que nadie está mirando.</p>
-    <p style="color:var(--ink-soft);margin:12px 0 0;">Una trampa que apareció al construirlo y que se va a repetir: el primer intento fue un verificador aparte que recalculaba los totales por su cuenta, y <strong style="color:var(--ink);">marcó 12 errores que no existían</strong> porque su fórmula no contemplaba todo lo que suma el motor real. Quedó como regla en el código: la verificación usa el motor del sitio, nunca una copia.</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;">Una trampa que apareció al construirlo y que se va a repetir: el primer intento fue un verificador aparte que recalculaba los totales por su cuenta, y <strong style="color:var(--ink);">marcó 12 errores que no existían</strong> porque su fórmula no contemplaba todo lo que suma el motor real. Quedó como regla: la verificación usa el motor del sitio, nunca una copia.</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;"><strong style="color:var(--ink);">El complemento, en Node:</strong> <code>node tools/audit.js</code> corre en menos de un segundo y audita lo que un total correcto NO delata (categorías con typo, errores de escala, catch-all dominante, generadores desactualizados y, desde la Versión 198, rutas de archivo entre backticks o en un link Markdown que ya no existen en disco — <code>checkRutasMuertas()</code>, el chequeo que también vigila este mismo documento). Hoy: 0 P0, 0 P1, 0 P2, 7 P3 y 29 hallazgos silenciados con su motivo en <code>tools/audit-ignore.json</code>. <code>--quiet</code> lo vuelve un gate: corta con código de salida 1 si hay algo P0 o P1.</p>
+  </div>
 </section>
 
 <!-- ============ 4 ============ -->
@@ -531,6 +546,118 @@
   </figure>
 </section>
 
+<!-- ============ 5 ============ -->
+<section class="flow" id="generadores">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">05</span><h2>Lo que ya no se escribe a mano</h2></div>
+    <p>Hasta la Versión 122 la única auditoría vivía en el navegador (<code>verifyTieOuts()</code>/<code>checkFxSanity()</code>). Hoy hay además 4 generadores en <code>tools/</code>, cada uno con un único archivo (o carpeta) que le pertenece: si ese archivo existe, salió del generador, nunca de una edición a mano. Los 4 corren en menos de un segundo, y los 4 son un chequeo P1 de <code>node tools/audit.js</code> (<code>checkGenerados()</code>): no se puede pushear con uno desactualizado sin que la auditoría lo grite.</p>
+  </div>
+
+  <div class="tbl-wrap"><table class="ledger">
+    <thead><tr><th>Generador</th><th>Qué escribe</th><th>Cuándo correrlo</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">generate-club-index.js</td><td>La sección "QUÉ ES REAL POR CLUB" de <code>Admin/ESTADO.md</code>.</td><td>Después de onboardear un club.</td></tr>
+      <tr><td class="mono">generate-fuentes-page.js</td><td><code>fuentes.html</code> + las 41 páginas <code>fuentes/&lt;clubId&gt;.html</code> + <code>sitemap.xml</code>. Borra solo la página de un club que deje de existir.</td><td>Después de cargar una fuente nueva, o de subir <code>ASSET_V</code> (lee esa constante de <code>index.html</code>).</td></tr>
+      <tr><td class="mono">generate-rankings.js</td><td><code>data/rankings/&lt;liga&gt;.js</code>, uno por liga (8 archivos), con el motor real.</td><td>Después de cargar un club o un ejercicio nuevo.</td></tr>
+      <tr><td class="mono">generate-fuentes-index.js</td><td>La sección "Índice de países" de <code>fuentes/README.md</code> (44 países, sus 3 números cada uno).</td><td>Después de una sesión de sourcing.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="col">
+    <p style="color:var(--ink-soft);margin:16px 0 0;">Los 4 tienen <code>--check</code>, que no escribe nada y sólo avisa si el archivo generado quedó viejo — es lo que corre <code>tools/audit.js</code> por dentro. <code>generate-fuentes-index.js</code> es el único con un caso que no puede resolver solo: cuando la prosa libre de un agente de sourcing no deja claro si un club tiene documento o no, el script ABORTA en vez de adivinar, y la excepción se anota a mano en <code>OVERRIDES</code>, adentro del script mismo.</p>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section class="flow" id="ligas">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">06</span><h2>Rankings y la pestaña Ligas</h2></div>
+    <p>Comparar los clubes de una liga necesitaba bajar el <code>data/&lt;club&gt;-data.js</code> de cada uno. Para la Primera argentina de 2024 (28 clubes, dos de ellos con más de una docena de ejercicios cargados) eso son <strong>101 KB gzip detrás de un solo click</strong>. En Inicio, que ve todo visitante incluido el que rebota, ese costo no se puede pagar.</p>
+    <p>Desde la Versión 182 el ranking de cada (liga, ejercicio) se precalcula UNA vez con el motor real (<code>computeYearGeneric()</code>, nunca reimplementado) y se guarda en <code>data/rankings/&lt;liga&gt;.js</code> — 1 a 3,4 KB gzip por liga. La pestaña Ligas (<code>js/liga.js</code>) y los rankings curados de Inicio (<code>data/destacados.js</code>) leen ESE archivo, sin bajar ningún club.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 720 168" role="img" aria-label="Calcular el ranking en vivo cuesta 18 a 101 KB gzip; precalculado cuesta 1 a 3,4 KB gzip por liga.">
+      <defs>
+        <marker id="a6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+
+      <text x="8" y="22" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="var(--cost)" opacity=".9" font-weight="600">EN VIVO (descartado)</text>
+      <rect x="8" y="32" width="330" height="50" rx="3" fill="var(--cost)" opacity=".1"/>
+      <rect x="8" y="32" width="330" height="50" rx="3" fill="none" stroke="var(--cost)" stroke-width="2"/>
+      <text x="24" y="53" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">bajar los data/&lt;club&gt;-data.js de la liga</text>
+      <text x="24" y="71" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600" fill="var(--cost)">18 – 101 KB gzip, detrás de un click</text>
+
+      <text x="8" y="106" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="var(--good)" opacity=".9" font-weight="600">PRECALCULADO (Versión 182)</text>
+      <rect x="8" y="116" width="330" height="50" rx="3" fill="var(--good)" opacity=".1"/>
+      <rect x="8" y="116" width="330" height="50" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+      <text x="24" y="137" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">leer data/rankings/&lt;liga&gt;.js</text>
+      <text x="24" y="155" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600" fill="var(--good)">1 – 3,4 KB gzip, hasta en Inicio</text>
+
+      <line x1="360" y1="57" x2="360" y2="141" stroke="currentColor" stroke-width="1" opacity=".25"/>
+      <path d="M360,99 L420,99" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#a6)" opacity=".6"/>
+      <text x="430" y="70" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".8">tres reglas fijan</text>
+      <text x="430" y="86" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".8">CUÁL ranking se ve:</text>
+      <text x="430" y="106" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">· ejercicio siempre explícito</text>
+      <text x="430" y="122" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">· default = más clubes, no más reciente</text>
+      <text x="430" y="138" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">· "N de M" sólo si se sabe (hoy 3 de 27)</text>
+    </svg>
+    <figcaption>Un ranking es siempre (liga, EJERCICIO), nunca "la liga" sola: la composición de una liga cambia de un año a otro. El default es el ejercicio con más clubes cargados, no el más reciente, porque los balances tardan en publicarse.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ 7 ============ -->
+<section class="flow" id="publicar">
+  <div class="col">
+    <div class="flow-head"><span class="step-no">07</span><h2>Publicar: qué se sirve y qué no</h2></div>
+    <p>Todo el repo se trackea en Git — es el respaldo completo en GitHub, y perderlo significaría perder semanas de trabajo. Pero <strong>trackear no es lo mismo que publicar</strong>: Netlify sirve la raíz del repo tal cual, así que hasta la Versión 196 este mismo documento (siendo <code>.html</code> en la raíz) devolvía 200 en <code>financeofsports.com/COMO-CORRE-EL-PROYECTO.html</code>, igual que <code>CLAUDE.md</code> antes de la Versión 173.</p>
+    <p>Dos soluciones que NO servían: destrackear (se pierde el respaldo en GitHub) y hacer el repo privado (controla quién entra a github.com, no qué sirve Netlify — son dos problemas distintos).</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 780 210" role="img" aria-label="El repo se trackea completo; netlify.toml borra Admin/, CLAUDE.md y las notas de fuentes del artefacto de deploy antes de publicar el resto.">
+      <defs>
+        <marker id="a7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+
+      <text x="8" y="22" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="currentColor" opacity=".6" font-weight="600">SE TRACKEA (backup en GitHub, completo)</text>
+      <rect x="8" y="32" width="270" height="86" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="22" y="54" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">Admin/ (todo lo interno)</text>
+      <text x="22" y="72" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">CLAUDE.md</text>
+      <text x="22" y="90" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">fuentes/**/*.md (613)</text>
+      <text x="22" y="108" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">auditorias/, Prototyping/</text>
+
+      <line x1="278" y1="75" x2="332" y2="75" stroke="var(--cost)" stroke-width="1.5" marker-end="url(#a7)"/>
+      <text x="305" y="68" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--cost)">netlify.toml</text>
+
+      <rect x="334" y="32" width="220" height="86" rx="3" fill="var(--cost)" opacity=".1"/>
+      <rect x="334" y="32" width="220" height="86" rx="3" fill="none" stroke="var(--cost)" stroke-width="2"/>
+      <text x="444" y="56" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="currentColor">command, en el</text>
+      <text x="444" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="currentColor">clon efímero del build</text>
+      <text x="444" y="94" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">rm -rf Admin</text>
+      <text x="444" y="109" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">+ rm -f CLAUDE.md + find -delete</text>
+
+      <line x1="554" y1="75" x2="608" y2="75" stroke="var(--good)" stroke-width="1.5" marker-end="url(#a7)"/>
+
+      <rect x="610" y="32" width="162" height="86" rx="3" fill="var(--good)" opacity=".1"/>
+      <rect x="610" y="32" width="162" height="86" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+      <text x="691" y="56" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="currentColor">SE PUBLICA</text>
+      <text x="622" y="76" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".8">index.html, fuentes.html</text>
+      <text x="622" y="92" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".8">+ 41 páginas, js/, data/</text>
+      <text x="622" y="108" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".8">fuentes/*.html (41)</text>
+
+      <text x="8" y="150" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">`|| true` en cada línea: un rm que no encuentra su archivo no tiene que voltear el deploy. Si el command falla, Netlify deja</text>
+      <text x="8" y="166" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">publicada la versión anterior (no hay caída), y el log del deploy imprime la cuenta de qué quedó y qué se borró.</text>
+    </svg>
+    <figcaption>Netlify no publica archivos ni carpetas que empiezan con punto (<code>.claude/skills/</code> nunca estuvo publicado), y los <code>*.pdf</code> quedan afuera por <code>.gitignore</code>, por peso — dos reglas que ya existían y no hacía falta duplicar acá.</figcaption>
+  </figure>
+
+  <div class="col">
+    <p style="color:var(--ink-soft);margin:16px 0 0;"><strong style="color:var(--ink);">Desde la Versión 196, un documento interno nuevo va adentro de <code>Admin/</code> y listo</strong> — no hay que tocar <code>netlify.toml</code>. Hasta la Versión 195 la exclusión era una lista de nombres sueltos de la raíz, y "acordate de sumarlo a la lista" ya había fallado tres veces (la última, <code>COMO-CORRE-EL-PROYECTO.html</code>, porque era <code>.html</code> y el chequeo sólo miraba <code>.md</code>). Si un documento interno queda suelto en la raíz, <code>node tools/audit.js</code> lo caza como <code>doc-interno-no-excluido</code>, y desde la Versión 196 también avisa si <code>Admin/</code> dejara de estar cubierta por el <code>rm -rf</code> (<code>admin-no-excluido</code>, P1) — el chequeo que antes recorría la lista de nombres se hubiera quedado ciego y en verde con los documentos ya movidos a una carpeta, así que se reescribió junto con la mudanza, no después.</p>
+    <p style="color:var(--ink-soft);margin:10px 0 0;"><code>CLAUDE.md</code> es la única excepción: se queda en la raíz porque Claude Code lo carga por convención desde ahí, y se borra en el mismo <code>command</code>.</p>
+  </div>
+</section>
+
 <div class="legend">
   <span><span class="swatch" style="background:var(--accent)"></span> paso barato que evita gasto después</span>
   <span><span class="swatch" style="background:var(--good)"></span> verificado / resuelto</span>
@@ -541,27 +668,32 @@
 <section class="fixes">
   <div class="col" style="margin-bottom:22px;">
     <h2 id="riesgos">Riesgos de escala</h2>
-    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Están ordenados por lo que devuelven sobre lo que cuestan. Lo que se va arreglando sale de la lista: hoy queda uno.</p>
-    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (6 de 222 checks; ahora <code>auditAll()</code> corre los 222 a pedido), la sección "qué es real por club" que se escribía a mano (ahora se genera desde los datos), el <code>if</code> con nombres de club escrito adentro del motor (ahora sale por convención del archivo de cada club), <strong>los tipos de cambio repetidos club por club</strong> (Versión 125: las cotizaciones de mercado se dicen una sola vez en <code>FX_CLOSE</code>, por moneda y fecha de cierre, y cada ejercicio declara además si su tipo de cambio lo dice el documento o salió de afuera, 33 copias de 9 valores pasaron a 9 entradas), y <strong>la pestaña Fuentes</strong> (Versión 126: la tabla de 6 filas y el párrafo por club se reemplazaron por contenido generado de <code>sources{}</code>, más <code>fuentes.html</code>, el listado completo de los 91 documentos con su tipo de cambio y sus salvedades).</p>
+    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Lo que se va arreglando sale de la lista, y para el mapa completo (qué se rompe entre 200 y 3000 clubes, con el número aproximado de cada uno) está <code>.claude/skills/escala-finance-of-sports/</code>, que es donde vive de verdad este eje desde que dejó de caber acá.</p>
+    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (ahora <code>auditAll()</code> corre los 228 a pedido), la sección "qué es real por club" y el listado de fuentes (ahora los 4 generadores del <a href="#generadores">paso 05</a>), los tipos de cambio repetidos club por club (<code>FX_CLOSE</code>, Versión 125), calcular un ranking de liga en vivo (precalculado desde la Versión 182, ver <a href="#ligas">paso 06</a>), y la lista de documentos internos sueltos que había que mantener a mano en <code>netlify.toml</code> (Versión 196, ver <a href="#publicar">paso 07</a>).</p>
   </div>
-
-
-
 
   <div class="fix">
     <div>
-      <h3>La línea de estado de <code>fuentes/</code> sigue a mano</h3>
-      <p><strong>Qué se rompe a escala:</strong> quedó como el último resto de la fuga 1. Cada club tiene un archivo en <code>fuentes/&lt;País&gt;/</code> con una línea de estado y una fecha de último chequeo que se escriben a mano al onboardear. Son 208 archivos hoy. El mismo generador que ya emite el índice de clubes puede emitir también esa línea; el contenido real de cada archivo (qué se probó, qué falló, qué ángulo queda) sigue siendo a mano, porque no es derivable de nada.</p>
+      <h3>El estado de <code>fuentes/&lt;País&gt;/&lt;Club&gt;.md</code> sigue a mano, club por club</h3>
+      <p><strong>Qué se rompe a escala:</strong> desde la Versión 175, <code>generate-fuentes-index.js</code> ya regenera el RESUMEN por país (cuántos clubes, cuántos con documento, fecha más vieja) — eso salió de la lista. Lo que sigue a mano es el contenido de cada uno de los 569 archivos de club: qué se probó, qué falló, la fecha de su último chequeo. No es derivable de nada, así que no hay generador posible; lo que sí puede escalar mejor es el ritmo al que una sesión de sourcing los toca, que hoy es uno por uno.</p>
     </div>
     <div><span class="effort m">sesión propia</span></div>
+  </div>
+
+  <div class="fix">
+    <div>
+      <h3><code>data/*.js</code> crece con cada club, y <code>clubs.js</code> se baja entero siempre</h3>
+      <p><strong>Qué se rompe a escala:</strong> hoy son 891 KB en 41 clubes (~22 KB/club, sólo los archivos de datos). A 1000 clubes proyecta ~21 MB en disco — lo que se baja por visita sigue siendo 1 club (carga por demanda), pero <code>data/clubs.js</code> (identidad + <code>brandColor</code> de cada uno) se carga eager SIEMPRE, y hoy pesa 20 KB. Medido y silenciado con su motivo en <code>tools/audit-ignore.json</code> (P3 <code>proyeccion</code>): no urge, pero es el número a mirar antes de sumar otro campo eager por club.</p>
+    </div>
+    <div><span class="effort m">medir de nuevo a los 200</span></div>
   </div>
 
 </section>
 
 <footer>
-  Medido sobre el repo al 13 sep 2026, Versión 121. 41 clubes · 6 países · 222 checks · 83 transcripciones · 208 archivos en <code>fuentes/</code> · 8,6 MB de documentos fuente.<br>
-  Los números salen de correr el sitio, no de estimarlos: los 222 checks se contaron con <code>auditAll()</code>.<br>
-  Este documento vive también en el repo, como <code>Admin/COMO-CORRE-EL-PROYECTO.html</code>.
+  Medido sobre el repo al 22 sep 2026, Versión 198 (esta actualización es la Versión 199). 41 clubes · 6 países · 228 checks · 89 documentos fuente · 613 archivos en <code>fuentes/</code> · 145 MB trackeados de <code>Clubes/</code>.<br>
+  Los números salen de correr el sitio y <code>node tools/audit.js</code>, no de estimarlos: los 228 checks se contaron con <code>auditAll()</code> en un preview local.<br>
+  Este documento vive en el repo, como <code>Admin/COMO-CORRE-EL-PROYECTO.html</code> — se trackea, no se publica (ver <a href="#publicar">paso 07</a>).
 </footer>
 
 </div>

@@ -54,16 +54,6 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-44. ACTUALIZAR `Admin/COMO-CORRE-EL-PROYECTO.html` (quedó abierto de la reorganización de la
-    Versión 196, donde se decidió que es un documento INTERNO y se mudó a `Admin/`). Está
-    parcialmente vencido: los números que salen de contar archivos siguen bien (41 clubes, 613
-    notas de fuentes, 44 países), pero dice "222 checks" cuando `auditAll()` corre 228, y la
-    Versión más nueva que menciona es la 126 — o sea que no existe nada de las Versiones 127-196
-    (los rankings y la pestaña Ligas, el i18n, `fuentes.html` con página propia por club, los 4
-    generadores, `netlify.toml`, y esta misma reorganización). **Hasta la Versión 196 estuvo
-    SERVIDO en producción** (`financeofsports.com/COMO-CORRE-EL-PROYECTO.html` devolvía 200): era
-    `.html` en la raíz, y el `rm -f` de `netlify.toml` solo listaba `.md`. Ya no.
-
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.

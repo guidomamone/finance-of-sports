@@ -2762,3 +2762,35 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3 (29 silenciados). Las dos ramas del chequeo nuevo
   —backtick y link Markdown— se probaron rompiéndolas a propósito.
 - Sin ASSET_V nuevo: no se tocó `index.html`, `js/` ni `data/`.
+
+## Versión 199 — `Admin/COMO-CORRE-EL-PROYECTO.html` puesto al día (to-do 44)
+
+### Cambiado
+- El documento estaba parcialmente vencido desde antes de la Versión 127: decía "222 checks" en
+  vez de los 228 que corre `auditAll()`, y la versión más nueva que mencionaba era la 126. Cada
+  número (checks, pesos de archivo, entradas de `CHANGELOG.md`, hallazgos de `tools/audit.js`) se
+  verificó contra el repo del día, no se copió de otro documento — incluye `js/selector.js` y
+  `js/liga.js` (antes ausentes), el motor de rankings/pestaña Ligas (paso nuevo "06"), los 4
+  generadores de `tools/` (paso nuevo "05"), y `netlify.toml` + la mudanza a `Admin/` (paso nuevo
+  "07"). Las tablas de la sección "Qué es cada cosa" suman las filas que faltaban: `data/leagues.js`,
+  `data/club-leagues.js` + `club-leagues/<iso2>.js`, `data/rankings/`, `data/destacados.js`,
+  `data/lang/`, y los 2 skills que CLAUDE.md ya listaba pero el documento no
+  (`auditoria-finance-of-sports`, `escala-finance-of-sports`).
+- Corregidas 3 afirmaciones que ya no eran ciertas y no solo viejas: los skills se autodescubren
+  solos (son 6, no 3, y el repo dejó de estar anidado dentro del sitio profesional el 2026-09-15);
+  `index.html` ya no lleva ningún comentario de estado/to-do (se sacó en la Versión 138); y el pie
+  ahora aclara que este documento se trackea pero NO se publica desde la Versión 196 (antes de esa
+  versión sí, por ser `.html` en la raíz).
+- La sección "Riesgos de escala" deja de duplicar el mapa completo: apunta a
+  `.claude/skills/escala-finance-of-sports/SKILL.md`, que es donde vive de verdad ese eje desde que
+  dejó de caber acá, y conserva sólo 2 puntos propios de este documento.
+- Formato y CSS intactos, sin tocar: es una página HTML que Guido lee en el navegador, no se pasó a
+  Markdown.
+
+### Resultado
+- Coordinado con una sesión paralela sobre el mismo working tree (la que hizo la Versión 198): sus
+  números post-commit (172 entradas de `CHANGELOG.md`, 29 silenciados en `tools/audit-ignore.json`,
+  `Clubes/` con 336 carpetas de club en 35 países y no sólo los 41 cargados) se verificaron de nuevo
+  contra el disco antes de usarlos, no se copiaron del aviso.
+- `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3, sin `ruta-muerta` nuevo para este archivo.
+- Sin ASSET_V nuevo: no se tocó `index.html`, `js/` ni `data/`.
