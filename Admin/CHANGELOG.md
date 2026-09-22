@@ -2794,3 +2794,24 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   contra el disco antes de usarlos, no se copiaron del aviso.
 - `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3, sin `ruta-muerta` nuevo para este archivo.
 - Sin ASSET_V nuevo: no se tocó `index.html`, `js/` ni `data/`.
+
+## Versión 200 — Una ruta gitignoreada deja de contar como ruta muerta, y queda el protocolo de trabajo en paralelo
+
+### Arreglado
+- `checkRutasMuertas()` (Versión 198) daba un falso positivo en un worktree recién creado:
+  `data/river-data.js` cita `Clubes/Argentina/River/estados-contables-leads/…md`, que está
+  **gitignoreada** (la fuente no oficial de tuRiver) y por lo tanto existe en el árbol principal y
+  no en un checkout nuevo. La presencia de una ruta ignorada es una propiedad del checkout, no del
+  repo. Ahora el chequeo filtra las candidatas con un solo `git check-ignore` en batch. Verificado:
+  0 P2 en los dos árboles, y sigue cazando una ruta muerta que NO esté ignorada.
+
+### Agregado
+- Regla nueva en `Admin/CONVENCIONES.md`: cómo correr dos sesiones en paralelo (onboarding en
+  `main`, sourcing en un worktree) y por qué no es simétrico — los 2881 PDFs de `Clubes/` no están
+  trackeados, así que un worktree nace sin ninguno y los que se bajen ahí no viajan al mergear.
+  Incluye el criterio de numeración de Versión al mergear y la regla de regenerar, no mergear, los
+  archivos generados.
+- Worktree `sourcing` en `.claude/worktrees/sourcing` (carpeta ya excluida de git), 154 MB.
+
+### Resultado
+- `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3, en `main` y en el worktree. Sin ASSET_V nuevo.

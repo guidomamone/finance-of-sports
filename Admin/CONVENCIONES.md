@@ -15,6 +15,30 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
 
+- DOS SESIONES EN PARALELO: UNA EN `main`, LA OTRA EN UN WORKTREE (Versión 200, pedido de Guido para
+  correr onboarding y sourcing al mismo tiempo). Dos sesiones sobre el MISMO working tree se pisan
+  en silencio: no hay bloqueo de archivos, así que la segunda escritura gana y la primera se pierde
+  sin que nada avise. Pasó el 2026-09-22 con tres sesiones de documentación. La separación es un
+  worktree (`git worktree`), que convierte un clobber invisible en un conflicto de merge visible.
+  - **El ONBOARDING va en `main`, el SOURCING en el worktree.** No es simétrico, y el motivo es
+    `Clubes/`: hay 2881 PDFs y 10 GB ahí, y **ninguno está trackeado** (solo las transcripciones
+    `.md`). Un worktree nace sin un solo PDF. El onboarding necesita el PDF del club que carga, que
+    ya está en el árbol principal; el sourcing los crea. Además el onboarding necesita el preview
+    para `auditAll()`, y `.claude/launch.json` tiene el puerto fijo con `autoPort:false`.
+  - **Un PDF bajado en el worktree NO viaja al mergear**, porque `*.pdf` está en `.gitignore`. Si
+    borrás el worktree, se perdió el documento fuente. Consolidalos con `rsync` al árbol principal
+    ANTES de hacer `git worktree remove`, o simplemente no borres el worktree.
+  - **El número de Versión se decide al MERGEAR, no al escribir.** Las dos ramas van a querer el
+    mismo. El que mergea segundo renumera su entrada; el conflicto al final de `Admin/CHANGELOG.md`
+    es esperable y mecánico.
+  - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `fuentes/README.md`,
+    `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o la sección generada
+    de `Admin/ESTADO.md`, tomá cualquiera de los dos lados, mergeá, y corré el generador que
+    corresponda. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
+  - **Un país por sesión de sourcing.** `fuentes/_indice/<País>.md` y `fuentes/<País>/` son de un
+    solo país a propósito (ver el porqué en `CLAUDE.md`): dos sesiones en países distintos no
+    comparten un solo archivo y no pueden conflictuar.
+
 - DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (Versión 196, pedido de Guido:
   *"the entire project has too many files scattered. i want some order"*). **Todo documento interno
   va adentro de `Admin/`.** Interno = escrito para Guido o para una sesión futura: estado, reglas,

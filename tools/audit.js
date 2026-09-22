@@ -54,6 +54,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 const vm = require('vm');
 const { execSync } = require('child_process');
 
@@ -641,6 +642,25 @@ function checkRutasMuertas() {
       if (!RUTA_EN_TEXTO.test(destino.replace(/^(\.\.?\/)+/, ''))) continue;
       const abs = path.resolve(path.dirname(path.join(ROOT, f)), destino);
       if (!fs.existsSync(abs)) anotar(`${destino} (link)`, f);
+    }
+  }
+
+  // UNA RUTA GITIGNOREADA NO CUENTA (Versión 200). Su presencia no es una propiedad
+  // del repo sino de ESTE checkout: `Clubes/Argentina/River/estados-contables-leads/`
+  // (la fuente no oficial, que se guarda y no se trackea) está en el árbol principal y
+  // NO en un worktree recién creado, así que `data/river-data.js` citándola daba
+  // hallazgo en un lado y no en el otro. Peor que ruidoso: empujaba a "arreglar" el
+  // comentario de un archivo de club que estaba bien. Lo destapó el worktree de
+  // sourcing, que nace sin ninguno de los 2881 PDFs ni de los archivos ignorados.
+  const candidatas = [...porRuta.keys()].filter(r => !r.endsWith(' (link)'));
+  if (candidatas.length) {
+    try {
+      const salida = execFileSync('git', ['check-ignore', '--', ...candidatas],
+        { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+      for (const linea of salida.split('\n')) if (linea.trim()) porRuta.delete(linea.trim());
+    } catch (e) {
+      // exit 1 = ninguna está ignorada, que es el caso normal. Cualquier otro error
+      // (sin git, sin repo) deja el chequeo como estaba: estricto.
     }
   }
 
