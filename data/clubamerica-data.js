@@ -110,7 +110,7 @@
 // Nota de Segmentos usada para revenue/utilidad, en vez de la cifra de la sección MD&A/narrativa que
 // antecede a los EEFF) por ser la más cercana, en jerarquía documental, a los números que se están
 // cargando. Diferencia inmaterial para el toggle de moneda de este sitio, documentada acá en vez de
-// promediada o descartada en silencio (ver dudas-por-club.md si Guido quiere consultarle a Ollamani
+// promediada o descartada en silencio (ver Admin/dudas-por-club.md si Guido quiere consultarle a Ollamani
 // investor relations cuál es la cifra "oficial").
 //
 // ----------------------------------------------------------------------------------------------

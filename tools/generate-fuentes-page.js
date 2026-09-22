@@ -260,7 +260,7 @@ function construir(api) {
   // El ASSET_V sale de index.html, no se escribe a mano acá: si esta página pidiera una
   // versión distinta de js/i18n.js que el sitio, un visitante podría recibir el motor
   // viejo de su caché en una página y el nuevo en la otra. Ver la regla de ASSET_V en
-  // CONVENCIONES.md.
+  // Admin/CONVENCIONES.md.
   const mAsset = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8').match(/window\.ASSET_V\s*=\s*'([^']+)'/);
   const assetV = mAsset ? mAsset[1] : '1';
 

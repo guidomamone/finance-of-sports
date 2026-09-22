@@ -74,7 +74,7 @@
 // deuda vieja) — REGLA (ver `.claude/skills/club-data-mapping/SKILL.md` sección 16): se cargó SOLO
 // la sección Ordinaria, la Extraordinaria es financiamiento/capital, no ingreso o gasto real del
 // ejercicio. "Resultado Ordinario" (no "Saldo Final por Período", que sí mezcla con financiamiento)
-// es el PAT del ejercicio. Pregunta anotada en dudas-por-club.md sobre por qué el club presupuesta
+// es el PAT del ejercicio. Pregunta anotada en Admin/dudas-por-club.md sobre por qué el club presupuesta
 // así en vez de devengado, como sus propios balances auditados.
 // "Impuestos/Moratoria/Cargas sociales" es UNA sola fila combinada en el documento (Pauta N°18) —
 // no se puede separar, se cargó entera como admin_general_expense (ver SKILL.md sección 17 para el
@@ -89,7 +89,7 @@
 // Marcelo Tinelli hasta el 26/12/2023, Marcelo Moretti desde entonces (electo 17/12/2023, asumió
 // 26/12/2023) — se usó Moretti (a cargo al cierre 30/6/2024, mismo criterio que Berlanga/Belloso/
 // Verón en otros clubes), pero por lo parejo de la división de meses queda anotado en
-// dudas-por-club.md, mismo caso que Estudiantes LP 2024.
+// Admin/dudas-por-club.md, mismo caso que Estudiantes LP 2024.
 // FX: el presupuesto no declara tipo de cambio propio (es un documento en ARS puro, sin Anexo de
 // moneda extranjera) — se usó el dólar mayorista de cierre 30/6/2024 ($909), el mismo ya
 // investigado externamente y usado en Instituto/Independiente/Racing 2024 para la misma fecha.
@@ -563,7 +563,7 @@ gestionesByClub.sanlorenzo = {
     // Moretti electo 17/12/2023, asumió 26/12/2023. El Ejercicio 2023/2024 (jul-jun) quedó dividido
     // casi exactamente a la mitad entre Tinelli y Moretti — se usó Moretti (a cargo al cierre
     // 30/6/2024, mismo criterio que Berlanga/Belloso/Verón en otros clubes), con la duda anotada en
-    // dudas-por-club.md por lo pareja que fue la división de meses.
+    // Admin/dudas-por-club.md por lo pareja que fue la división de meses.
     moretti: { nombre:'Moretti (2023-actual)', firstYear:2024, lastYear:2024 },
   };
 

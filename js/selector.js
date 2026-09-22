@@ -238,7 +238,7 @@ window.CLUB_SELECTOR = (function(){
   // que sabe la membresía POR AÑO: "Primera División 2024" no son los mismos
   // equipos que "Primera División 2025", y para la pregunta que motivó todo esto
   // ("¿la liga creció en plata?") mezclar los de un año con los del otro es
-  // comparar dos cosas distintas. Ver CONVENCIONES.md, "no existe ninguna arista
+  // comparar dos cosas distintas. Ver Admin/CONVENCIONES.md, "no existe ninguna arista
   // club -> liga sin año".
   // ---------------------------------------------------------------------------
   function ligasConClubes(){
@@ -2130,7 +2130,7 @@ window.CLUB_SELECTOR = (function(){
             meta:temporadasDe(lid).length + ' ' + t('sel.seasons', 'temporadas')
           }, false, function(id){
             // Una liga NO se confirma de una, a diferencia de un club: sin temporada
-            // no es un sujeto (CONVENCIONES.md, "no existe ninguna arista club ->
+            // no es un sujeto (Admin/CONVENCIONES.md, "no existe ninguna arista club ->
             // liga sin año"). Se deja parado en el paso de la temporada, con la más
             // reciente ya marcada, para que se vea y se pueda cambiar.
             pararseEnLiga(id);

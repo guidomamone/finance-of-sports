@@ -38,8 +38,9 @@ Clubes/**/*.jpeg
 Clubes/**/*.png
 
 # LAS TRANSCRIPCIONES DE FUENTE NO OFICIAL NO SE TRACKEAN (2026-09-17). El repo
-# entero se deploya —no hay netlify.toml ni _redirects, Netlify publica la raíz—
-# así que todo archivo trackeado queda servido en financeofsports.com. Para un
+# entero se deploya —Netlify publica la raíz, y lo que no sale es solo lo que
+# netlify.toml borra del artefacto— así que todo archivo trackeado que no esté en
+# esa lista queda servido en financeofsports.com. Para un
 # balance oficial eso está bien y hasta es coherente con el proyecto: la
 # transcripción de un documento público al lado del link al documento. Para un
 # PDF que se consiguió en una réplica de una comunidad de hinchas (turiver.com,
@@ -56,17 +57,19 @@ Clubes/Argentina/River/estados-contables-leads/
 Business Books/
 
 
-— las preguntas sin contestar que piensa hacerles a los clubes.
-# Los que SIGUEN trackeados a propósito (son documentación legítima del proyecto, no
-# cocina): ESTADO.md, ARQUITECTURA.md, CONVENCIONES.md, CHANGELOG.md, TODO.md,
-# QUE-ES-REAL-historico.md, PLAN-REMEDIACION-ESCALA.md, fuentes-por-club.md y
-# PROMPT-generador-indice-fuentes.md.
-# OJO, CONSECUENCIA ACEPTADA: `CLAUDE.md` deja de viajar al remoto, así que un clon nuevo
-# del repo NO trae las instrucciones del proyecto y hay que copiarlas a mano. Los archivos
-# siguen en la máquina de Guido; lo único que se pierde es el respaldo en GitHub.
-finance-of-sports-project.md
-CLAUDE.md
-dudas-por-club.md
+# ACÁ NO HAY, NI TIENE QUE HABER, NINGUNA REGLA PARA LOS DOCUMENTOS INTERNOS del
+# proyecto (`CLAUDE.md`, `Admin/**`, `dudas-por-club.md`). Se trackean TODOS: el
+# respaldo en GitHub es el punto, y lo que no se publica lo saca `netlify.toml` del
+# artefacto de deploy, no de acá. Ver ese archivo.
+#
+# HASTA LA VERSIÓN 196 SÍ HABÍA TRES REGLAS ACÁ (`finance-of-sports-project.md`,
+# `CLAUDE.md`, `dudas-por-club.md`), restos del intento de destrackear del 2026-09-20
+# que la propia decisión de Guido revirtió unas horas después. Eran inertes (un ignore
+# no desaloja un archivo ya trackeado) pero NO inofensivas: un patrón sin barra matchea
+# en cualquier nivel, así que al mudar los documentos a `Admin/` los tres paths nuevos
+# quedaban ignorados y Git los iba a saltear EN SILENCIO — justo el respaldo que la
+# decisión quiso salvar. Si volvés a agregar una regla por nombre suelto acá, acordate
+# de que también aplica dentro de cualquier carpeta.
 
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).

@@ -4,7 +4,7 @@
 // Ejercicio 2024 (gestión Brito) = REAL, balance auditado real vía réplica de tuRiver.com — ver
 // comentario largo antes de riverRevenueLinesByYear[2024] más abajo. El resto (Ejercicio 2025 y
 // Ejercicio 2021) SIGUE SIENDO PLACEHOLDER: no hay documento oficial cargado para esos ejercicios
-// (ver fuentes-por-club.md). La cobertura de prensa que se encontró al armar el esquema original
+// (ver fuentes/README.md). La cobertura de prensa que se encontró al armar el esquema original
 // tenía cifras ambiguas/contradictorias entre sí (una nota hablaba de "cuota social + abonos"
 // combinados, otra de "entradas y abonos" del estadio remodelado como un número aparte, sin quedar
 // claro si se superponían) — en vez de forzar esos números dudosos a una categoría, se optó por
@@ -198,7 +198,7 @@ const riverPresupuestoOverlayByYear = {};
 // Mercado de pases — placeholder, mismo estilo que los movimientos inventados
 // que ya tenía Boca (Jugador A, Jugador B...) desde el primer MVP: esa
 // sección nunca tuvo datos reales para ningún club todavía (pendiente
-// Transfermarkt, ver finance-of-sports-project.md).
+// Transfermarkt, ver Admin/finance-of-sports-project.md).
 // ---------------------------------------------------------------------------
 const riverPasesData = [
   { gestion:'brito', anio:2024, ventana:'Verano', tipo:'Jugador', nombre:'Jugador R1 (placeholder)', movimiento:'Venta', monto:16.0 },

@@ -244,7 +244,7 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
      cambia nada: el `null` existe para distinguir un club QUE SE MIRÓ Y NO LLEVA COLOR de uno que
      nadie chequeó todavía, que es lo único que evita tener que rebarrer los 200 clubes de mañana
      para averiguar cuál es cuál. Ninguna sesión futura "completa" un `null` a ojo: un color
-     equivocado se lee peor que ninguno (`CONVENCIONES.md`). Y en el otro sentido: **un
+     equivocado se lee peor que ninguno (`Admin/CONVENCIONES.md`). Y en el otro sentido: **un
      `brandColor` no se oscurece ni se retoca para que pase el contraste del círculo** — para eso
      están `textoSobre()` (cambia el TEXTO, no el color del club) y el aro interno de los colores
      claros; si aun así no se lleva, va a `null`. Un club sin `brandColor` y sin `null` lo marca
@@ -319,7 +319,7 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
   confirmar que esta vez NO se vuelve a pedir (debe quedar cacheado en `clubDataLoaded`). Un
   `window.addEventListener('error', ...)` propio durante ese ciclo (en vez de solo leer la consola
   acumulada) es más confiable para no dejar pasar un `ReferenceError` real, ver Versión 51 en
-  `finance-of-sports-project.md` para el detalle de los 2 bugs que este chequeo habría agarrado.
+  `Admin/finance-of-sports-project.md` para el detalle de los 2 bugs que este chequeo habría agarrado.
 
 ## 4. Bug real encontrado en esta sesión, gastosTotal ya viene convertido
 
@@ -822,7 +822,7 @@ Cargar un club o un ejercicio deja **tres archivos generados desactualizados**, 
 publican. No se editan a mano:
 
 ```
-node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de ESTADO.md
+node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO.md
 node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
 node tools/generate-rankings.js        # data/rankings/<liga>.js
 ```

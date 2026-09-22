@@ -12,7 +12,7 @@
 // Clubes/Argentina/Velez Sarsfield/balance-general-{2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015}.{pdf,md}.
 // El club no tiene (hasta donde se relevó) ejercicios previos a 2015 cargados en su archivo
 // institucional (velez.com.ar/elclubesdelossocios/memorias-estados-contables, ver
-// fuentes-por-club.md) — si aparece uno nuevo ahí en el futuro, o se publica el Ejercicio 2026,
+// fuentes/README.md) — si aparece uno nuevo ahí en el futuro, o se publica el Ejercicio 2026,
 // ese sería el próximo candidato natural.
 //
 // SOBRE EL OCR DE 2023/2017/2016/2015 (Versiones 90-93): esos 4 PDF no tienen capa de texto
@@ -188,7 +188,7 @@ const velezRevenueLinesByYear = {
   ],
   2024: [
     { rawLabel:'Cuotas de asociados', normalizedCategory:'member_dues', amountNative:6600.197302, disclosureLevel:'detailed' },
-    // Mismo criterio que 2025 (ver comentario ahí y dudas-por-club.md): no hay categoría propia para
+    // Mismo criterio que 2025 (ver comentario ahí y Admin/dudas-por-club.md): no hay categoría propia para
     // "estadio alquilado para recitales/eventos no deportivos", queda en other_income.
     { rawLabel:'Uso del estadio', normalizedCategory:'stadium_other', amountNative:3204.326259, disclosureLevel:'detailed' },
     // A diferencia de 2025, el Anexo II de este ejercicio no separa "Competencias internacionales" de

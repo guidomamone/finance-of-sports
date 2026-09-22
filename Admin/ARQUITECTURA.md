@@ -7,8 +7,8 @@ Antes vivía dentro del comentario de `index.html`. Se movió acá en la Versió
 114: es referencia que se consulta cuando hace falta (al tocar el motor, al
 agregar un club), no contexto que haga falta leer para retomar el proyecto.
 
-Para el estado del proyecto ver `ESTADO.md`, y para la to-do list `TODO.md`.
-Para las reglas vigentes de UI/datos, ver `CONVENCIONES.md`.
+Para el estado del proyecto ver `Admin/ESTADO.md`, y para la to-do list `Admin/TODO.md`.
+Para las reglas vigentes de UI/datos, ver `Admin/CONVENCIONES.md`.
 
 ---
 
@@ -51,7 +51,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   `Prototyping/Selector/MERGE-A-PRODUCCION.md`, secciones 0, 3 y 5.
   `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
   se borró en la Versión 152 y lo que hacía mejor está acá adentro.
-- fuentes-por-club.md: ÍNDICE DE PAÍSES (desde la sesión 2026-09-20; antes era
+- fuentes/README.md: ÍNDICE DE PAÍSES (desde la sesión 2026-09-20; antes era
   una línea por club, y antes de la 2026-09-13 tenía todo el contenido inline —
   cada nivel dejó de escalar a su turno). Una línea por país con cuántos clubes
   trackea, cuántos tienen documento encontrado y la fecha del chequeo más viejo,
@@ -61,11 +61,11 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   índice del país antes de asumir que no hay fuentes nuevas para un club. El
   archivo por país es además lo que permite sourcear dos países en paralelo sin
   conflictos de merge.
-- CHANGELOG.md: resumen corto (unas pocas líneas) de qué cambió en cada
+- Admin/CHANGELOG.md: resumen corto (unas pocas líneas) de qué cambió en cada
   versión. Empezar acá para "¿cuándo se cargó/cambió tal cosa?".
-- finance-of-sports-project.md (misma carpeta que este HTML): historia narrativa
+- Admin/finance-of-sports-project.md (misma carpeta que este HTML): historia narrativa
   completa versión por versión, desde el MVP original de Boca — el "por
-  qué" detrás de cualquier entrada de CHANGELOG.md que lo amerite.
+  qué" detrás de cualquier entrada de Admin/CHANGELOG.md que lo amerite.
   Lectura opcional para contexto profundo, no necesaria para retomar.
 - Clubes/<País>/<Club>/: TODOS los PDFs fuente (balances, presupuestos,
   memorias) Y sus transcripciones a Markdown, juntos en la misma carpeta,

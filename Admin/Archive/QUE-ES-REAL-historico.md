@@ -1,5 +1,13 @@
 # "Qué es real por club" — la versión escrita a mano (archivo histórico)
 
+> **ARCHIVADO (Versión 196).** Ya estaba marcado como "no es la fuente de verdad y no se actualiza
+> más" desde el 2026-09-13; la Versión 196 solo lo movió a `Admin/Archive/`. Sigue siendo la red de
+> seguridad que describe abajo: si falta un dato en el `data/<club>-data.js` de un club, buscalo acá
+> antes de darlo por perdido, y cuando lo encuentres movelo al archivo del club, no a este.
+>
+> **Las rutas de archivo que se nombran acá adentro son las de antes de la Versión 196**, cuando los
+> documentos vivían en la raíz. Se dejaron como estaban a propósito: es historia, no instrucciones.
+
 Esto es, textual, la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" tal
 como estaba escrita a mano en el comentario de `index.html` hasta la Versión
 120, con 41 clubes cargados.

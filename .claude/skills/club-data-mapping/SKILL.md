@@ -65,7 +65,7 @@ práctica, agregá los que falten cuando aparezcan):
 | Previsiones, amortizaciones intangibles, cargos extraordinarios de fin de ejercicio | `other_amortisation` |
 | Desafectación de previsiones/provisiones, condonaciones, resultado por quiebra | `exceptional_items` |
 | Colegio/escuela del club: aranceles de enseñanza, subsidios estatales a la educación (Versión 189, tiene fila propia "Educación" en Formato simplificado). NO una escuela/academia de FÚTBOL (eso es `youth_football`) ni un departamento de educación física (eso es `other_sports`) | `education` (ingreso) |
-| Uso del estadio fuera del partido: alquiler para recitales/eventos, concesiones del estadio, licitación de palcos (Versión 189). Comparte la fila "Estadio" con `matchday_competition` y `season_tickets`, pero se guarda aparte. **CRITERIO CONSERVADOR**: solo si el rótulo nombra el estadio o una parte de él — un "Alquileres"/"Arrendamientos" genérico NO entra, va a `other_income` y la pregunta a `dudas-por-club.md` | `stadium_other` (ingreso) |
+| Uso del estadio fuera del partido: alquiler para recitales/eventos, concesiones del estadio, licitación de palcos (Versión 189). Comparte la fila "Estadio" con `matchday_competition` y `season_tickets`, pero se guarda aparte. **CRITERIO CONSERVADOR**: solo si el rótulo nombra el estadio o una parte de él — un "Alquileres"/"Arrendamientos" genérico NO entra, va a `other_income` y la pregunta a `Admin/dudas-por-club.md` | `stadium_other` (ingreso) |
 | Secciones y actividades deportivo-recreativas del socio: básquet, tenis, polideportivo, ciudad deportiva, pileta, náutica, colonia de vacaciones, subcomisiones (Versión 189, fila propia "Otras secciones deportivas", espejo de `youth_other_sports_expense`) | `other_sports` (ingreso) |
 | Todo lo demás específico del club (sede social, alquileres genéricos, eventos y salones, hotelería, estacionamiento, actividades varias) | `other_income` / `other_expenses` |
 | Un club que agrupa gruesamente ("fútbol profesional" sin desglosar), ver regla nueva abajo antes de usar esta categoría | `lump_football_operations` (ingreso) / `lump_football_operations_expense` (gasto) |
@@ -595,7 +595,7 @@ de River/Racing:**
   genérico, en vez de una categoría específica, es un trabajo real de re-mapeo, no un cambio
   cosmético de buckets.
 - **Decisión de Guido (Versión 46, presentada con `AskUserQuestion` antes de tocar nada, ver
-  entrada Versión 46 en `finance-of-sports-project.md` para el detalle completo)**: Ingresos de Racing,
+  entrada Versión 46 en `Admin/finance-of-sports-project.md` para el detalle completo)**: Ingresos de Racing,
   SÍ separar (ya implementado: categoría `competition_bonus` nueva, líneas de
   `data/racing-data.js` re-etiquetadas, bucket "Premios por competencias" agregado a
   `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`). Ingresos de River, dejarlo como está por ahora (no se
@@ -614,7 +614,7 @@ posición que le correspondería si Boca tuviera esa misma fila, no al final por
 
 **Categorías-excepción sin equivalente en Boca (hoy: "Fútbol profesional (sin desglosar por la
 fuente)") llevan `hideIfZero:true`**: Guido pidió sacar esa fila de Racing porque estaba en $0 (ver
-Versión 47 en `finance-of-sports-project.md`). Como esa categoría no existe en el vocabulario de Boca,
+Versión 47 en `Admin/finance-of-sports-project.md`). Como esa categoría no existe en el vocabulario de Boca,
 mostrarla en $0 para un club/año que sí tiene todo bien desglosado (como pasa con Racing desde el
 fix de la Versión 38) era una fila extra que rompía la promesa de "exactamente igual que Boca". La
 regla NO es "esconder cualquier fila en $0" (eso rompería la transparencia de mostrar $0 real
@@ -661,7 +661,7 @@ LO QUE ESTO CAMBIA AL CARGAR UN CLUB NUEVO: ver las 3 filas nuevas de la tabla d
 (`education`, `stadium_other`, `other_sports` en ingresos) antes de mandar una línea de colegio,
 polideportivo o alquiler de estadio a `other_income` por descarte. Y ojo con el criterio
 conservador de `stadium_other`: un "Alquileres" genérico NO es el estadio aunque probablemente lo
-sea — va a `other_income` y la duda a `dudas-por-club.md`.
+sea — va a `other_income` y la duda a `Admin/dudas-por-club.md`.
 
 UN ERROR REAL QUE ESTA FUSIÓN DESTAPÓ, y que vale como advertencia general: al juntar las 3
 categorías en "Estadio", Athletic Club pasó a mostrar **97% de sus ingresos en esa fila**. No era
@@ -956,7 +956,7 @@ Guido, con esta misma sesión: "documentar esta decisión. inclusive anotalo com
 preguntarle la lógica de esto a San Lorenzo. o sea, por qué lo hacen así? parecería que no saben
 devengar" — la pregunta ("¿por qué presupuestan en caja separando ordinario/extraordinario en vez
 de un presupuesto económico devengado, como sí tienen sus propios balances auditados?") quedó
-anotada en `dudas-por-club.md`, sección San Lorenzo.
+anotada en `Admin/dudas-por-club.md`, sección San Lorenzo.
 
 Si aparece un presupuesto de OTRO club con esta misma estructura (Ordinario + Extraordinario/
 financiamiento en secciones separadas), aplicar el mismo criterio: solo la parte Ordinaria entra al
@@ -1008,7 +1008,7 @@ existe a nivel división. Entonces: `officialTotalRevenue` con el número, y
 cargar**, y pedirle el PAT a estos ejercicios es pedir un número que no existe en ninguna fuente.
 Ya se re-verificó con 3 fuentes independientes que el desglose por club no está publicado en ningún
 lado (`fuentes/Japón/_notas-generales.md`); lo que queda son 2 preguntas abiertas en
-`dudas-por-club.md`, una a la liga y otra a los clubes, no trabajo de mapeo.
+`Admin/dudas-por-club.md`, una a la liga y otra a los clubes, no trabajo de mapeo.
 
 **Caso B — la controladora reporta un SEGMENTO, no el club (Club América dentro de Ollamani).** Un
 segmento IFRS 8 informa "utilidad del segmento", que **no es el resultado neto**: no le imputa
@@ -1018,7 +1018,7 @@ Banorte). Entonces: los totales que SON una identidad aritmética del segmento s
 utilidad del segmento como PAT publicaría un "Resultado neto" que ningún documento afirma.
 
 **Consecuencia en la vista, que es la parte que se olvida:** un ejercicio así muestra "Sin dato" en
-Gastos y en Resultado neto, no `$0` — ver la regla "SIN DATO NO ES CERO" en `CONVENCIONES.md`. La
+Gastos y en Resultado neto, no `$0` — ver la regla "SIN DATO NO ES CERO" en `Admin/CONVENCIONES.md`. La
 cascada arranca en los gastos y se lleva el resultado con ella.
 
 **Y en la auditoría:** `tools/audit.js` ya no reporta `balance-sin-pat` cuando
@@ -1046,4 +1046,4 @@ terminar esa sesión si:
   `club-or-year-onboarding`), con el documento/página exacto donde se encontró.
 
 No hace falta pedirle permiso a Guido para estas actualizaciones menores, es información viva que
-debería quedar al día sola, igual que la sección generada de `ESTADO.md`.
+debería quedar al día sola, igual que la sección generada de `Admin/ESTADO.md`.

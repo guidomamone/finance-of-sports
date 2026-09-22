@@ -26,12 +26,16 @@ El repo de GitHub es `guidomamone/finance-of-sports` y el dominio
 `financeofsports.com`; el nombre viejo (`numeros-de-boca`) sigue
 redirigiendo.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `finance-of-sports-project.md`, `dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
+
+**DÓNDE PONER UN DOCUMENTO NUEVO (Versión 196).** Si es interno —cualquier cosa escrita para Guido o para una sesión futura: estado, reglas, notas, planes— va adentro de `Admin/`, y no hay que tocar `netlify.toml` ni el `.gitignore`. Si lo dejás suelto en la raíz, se publica: `node tools/audit.js` lo caza (`doc-interno-no-excluido`) y te dice que lo muevas. Hasta la Versión 195 la exclusión era una lista de nombres a mano y ya se había escapado tres veces — la última, `COMO-CORRE-EL-PROYECTO.html`, estuvo servido en producción porque el chequeo solo miraba `.md`. **La extensión no dice nada sobre si un documento es interno.** `CLAUDE.md` es la única excepción que se queda en la raíz, porque Claude Code lo carga por convención desde ahí.
+
+**Y LO QUE ESTÁ CERRADO NO SE BORRA NI SE APILA: se archiva.** `Admin/Archive/` es para documentos que cumplieron su función entera y pasaron a ser historia (ver su `README.md`). Antes de archivar algo, sacale lo que todavía sirve y llevalo a donde se lee: un criterio vivo a `Admin/CONVENCIONES.md` o a la skill que corresponda, un pendiente a `Admin/TODO.md`.
 
 ## Al empezar a trabajar acá
 
-Leé primero `ESTADO.md` (qué hay armado hoy, y qué hay cargado de cada club) y
-`TODO.md` (qué falta hacer, en orden de prioridad). Leelos vos solo, sin que Guido
+Leé primero `Admin/ESTADO.md` (qué hay armado hoy, y qué hay cargado de cada club) y
+`Admin/TODO.md` (qué falta hacer, en orden de prioridad). Leelos vos solo, sin que Guido
 tenga que pedirlo o resumirlo.
 
 Hasta la Versión 137 las dos cosas vivían adentro de un comentario HTML al
@@ -40,21 +44,21 @@ explícito de Guido ("Index NO es el archivo para tener to do. Eso era al inicio
 eran 80 KB de los 183 KB de `index.html`, que además se bajaba cada visitante en
 cada pageview. En `index.html` quedó un puntero de 15 líneas.
 
-Revisá también si hay algo nuevo pegado en `fuentes-por-club.md` — es donde
+Revisá también si hay algo nuevo pegado en `fuentes/README.md` — es donde
 Guido deja links a documentos oficiales o notas de prensa antes de que se
-carguen al sitio. Si hay algo ahí que `ESTADO.md` todavía no menciona como
+carguen al sitio. Si hay algo ahí que `Admin/ESTADO.md` todavía no menciona como
 cargado, es trabajo pendiente.
 
 El sourcing está partido en TRES niveles, cada uno porque el anterior dejó de
 escalar al sumarse decenas de clubes y después decenas de países:
 
-1. `fuentes-por-club.md` — índice de PAÍSES y nada más (una línea por país:
+1. `fuentes/README.md` — índice de PAÍSES y nada más (una línea por país:
    cuántos clubes trackeados, cuántos con documento encontrado, fecha del
    chequeo más viejo). Se partió así en la sesión 2026-09-20, cuando tenía 570
    líneas-club y ~97 KB.
 2. `fuentes/_indice/<País>.md` — una línea por club de ese país, con estado
    resumido + fecha de último chequeo. Es lo que hasta el 2026-09-20 vivía
-   adentro de `fuentes-por-club.md`.
+   adentro de `fuentes/README.md`.
 3. `fuentes/<País>/<Club>.md` — el contenido real de cada club (links, qué se
    probó, qué falta). Se partió así en la sesión 2026-09-13. Un
    `fuentes/<País>/_notas-generales.md` por país junta notas que no son de un
@@ -64,7 +68,7 @@ Al agregar una fuente nueva para un club: si ya tiene archivo en `fuentes/`,
 editar ESE archivo (y actualizar su línea en `fuentes/_indice/<País>.md` si
 cambió el estado/fecha); si es un club nuevo sin archivo todavía, crear
 `fuentes/<País>/<Club>.md` y agregar su línea al índice de su país. La línea del
-país en `fuentes-por-club.md` se toca solo si cambió alguno de sus números.
+país en `fuentes/README.md` se toca solo si cambió alguno de sus números.
 
 **Un archivo por país es también lo que evita que dos sesiones se pisen**: dos
 agentes sourceando países distintos al mismo tiempo no comparten ningún archivo.
@@ -72,7 +76,7 @@ Con el índice único eso ya causó conflictos de merge reales.
 
 Si al leer un documento fuente queda una pregunta genuina sin respuesta (algo
 que no se puede inferir con confianza de la fuente ni de los criterios ya
-documentados en los skills), anotala en `dudas-por-club.md` (Versión 81, a
+documentados en los skills), anotala en `Admin/dudas-por-club.md` (Versión 81, a
 pedido de Guido: "la idea es hacer reach out a clubes y preguntarles") en vez
 de asumir un criterio o dejarla perdida en un comentario de código — es la
 lista que Guido usa para escribirles directo a los clubes.
@@ -124,13 +128,13 @@ Si se hizo algún cambio real al sitio (datos, features, estructura, copy,
 lo que sea), actualizá estos dos archivos para que sigan siendo verdad, SIN que
 Guido tenga que pedirlo explícitamente:
 
-- **`ESTADO.md`**: reflejar lo que cambió. Es un snapshot, no un log: si algo que
+- **`Admin/ESTADO.md`**: reflejar lo que cambió. Es un snapshot, no un log: si algo que
   decía ahí ya no es cierto, se reemplaza o se borra, no se apila una línea nueva
   al lado de la vieja. Su sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" NO
   se escribe a mano: se regenera con `node tools/generate-club-index.js`.
-- **`TODO.md`**: BORRAR lo que se resolvió (no marcarlo como "RESUELTO" y dejarlo
+- **`Admin/TODO.md`**: BORRAR lo que se resolvió (no marcarlo como "RESUELTO" y dejarlo
   ahí, que es como la lista vieja terminó con la mitad de los puntos siendo cosas
-  ya hechas: la historia queda en `CHANGELOG.md`), reordenar si cambió la
+  ya hechas: la historia queda en `Admin/CHANGELOG.md`), reordenar si cambió la
   prioridad, y agregar lo nuevo que haya quedado pendiente. Los números son
   identificadores estables, no prioridad: un punto nuevo toma el siguiente al más
   alto, nunca un hueco libre.
@@ -138,19 +142,19 @@ Guido tenga que pedirlo explícitamente:
 **El historial de versiones no vive con el estado** (hasta la Versión 101 sí,
 estaba adentro del mismo bloque, y dejó de escalar). En cambio:
 
-- Agregar SIEMPRE una entrada nueva a `CHANGELOG.md` (misma carpeta): unas
+- Agregar SIEMPRE una entrada nueva a `Admin/CHANGELOG.md` (misma carpeta): unas
   pocas líneas (Keep a Changelog style — qué cambió, no por qué), no un
   párrafo largo. Esto es obligatorio para cualquier cambio real, chico o
   grande.
-- Agregar además una entrada a `finance-of-sports-project.md` SOLO si el cambio amerita
+- Agregar además una entrada a `Admin/finance-of-sports-project.md` SOLO si el cambio amerita
   contexto narrativo completo (el "por qué", el proceso de investigación, un
   bug real con su causa raíz) — no todos los cambios lo ameritan, un ajuste
-  chico de UI puede quedar solo en `CHANGELOG.md`. Cuando sí amerita, el
-  mismo número de versión de `CHANGELOG.md` identifica la entrada
-  correspondiente en `finance-of-sports-project.md`.
+  chico de UI puede quedar solo en `Admin/CHANGELOG.md`. Cuando sí amerita, el
+  mismo número de versión de `Admin/CHANGELOG.md` identifica la entrada
+  correspondiente en `Admin/finance-of-sports-project.md`.
 
-No dupliques la to-do list en `finance-of-sports-project.md` ni en `CHANGELOG.md`. La
-lista oficial de próximos pasos vive solo en `TODO.md`, para que no haya dos
+No dupliques la to-do list en `Admin/finance-of-sports-project.md` ni en `Admin/CHANGELOG.md`. La
+lista oficial de próximos pasos vive solo en `Admin/TODO.md`, para que no haya dos
 listas que se puedan desincronizar.
 
 ## Estructura de carpetas de documentos fuente: Clubes/<País>/<Club>/ (PDF y transcripción juntos)
@@ -183,9 +187,9 @@ está bien, lo que no escala es una carpeta nueva por club al nivel raíz del
 proyecto.
 
 **OJO CON LO QUE SE TRACKEA, que no es lo mismo que lo que se guarda (2026-09-17).**
-El repo entero se deploya: no hay `netlify.toml` ni `_redirects`, Netlify publica
-la raíz, así que CUALQUIER archivo trackeado queda servido en
-`financeofsports.com/<su ruta>`. Los PDFs no viajan (`*.pdf` está en `.gitignore`),
+El repo entero se deploya: Netlify publica la raíz, así que cualquier archivo
+trackeado queda servido en `financeofsports.com/<su ruta>` salvo que `netlify.toml`
+lo saque del artefacto de deploy (ver arriba: `Admin/` y poco más). Los PDFs no viajan (`*.pdf` está en `.gitignore`),
 pero las transcripciones `.md` sí, y son 106 MB de los 110 MB del repo. Para un
 balance oficial eso está bien y hasta es coherente con el proyecto. Para un
 documento que NO es del dominio del club, no: la carpeta
@@ -301,7 +305,7 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   diálogo nativo bloquea el hilo entero, así que ni los timers ni el `onload` de un
   `<script>` inyectado ni tu propia sonda desde la consola llegan a correr. Se
   destraba navegando con `force:true`. Y la moraleja para el sitio quedó como regla
-  en `CONVENCIONES.md`: ningún camino de error usa `alert()`.
+  en `Admin/CONVENCIONES.md`: ningún camino de error usa `alert()`.
 - **`computer` screenshot da BLANCO si la página está scrolleada**: en este
   entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco
   cada vez que `window.scrollY > 0` en el momento de la captura, no importa

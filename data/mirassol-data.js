@@ -46,7 +46,7 @@
 // Cargar grossDebt:0 con el circulante desconocido afirmaría "este club no tiene
 // deuda", que es justamente lo que el documento NO dice.
 //
-// DUDA ABIERTA, anotada en `dudas-por-club.md`: el Patrimônio Líquido del
+// DUDA ABIERTA, anotada en `Admin/dudas-por-club.md`: el Patrimônio Líquido del
 // documento no cierra consigo mismo (saldo inicial 27.272.986,96 + superávit
 // 4.143.614,12 = 31.416.601,08, pero imprime saldo final 30.267.600,99, una
 // diferencia de 1.149.000,09 sin explicar). Por eso NO se cargó ningún dato
@@ -116,7 +116,7 @@ Object.assign(sources, {
       title:'Relatório de Auditoria Contábil, Exercício 2024',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://mirassolfc.com.br/',
-      note:'PDF oficial (6 páginas, texto nativo), auditoría de ANALYST GESTAO EMPRESARIAL LTDA firmada el 21/5/2025. OJO: no son las demonstrações contábeis en sí, es el informe narrativo del auditor sobre ellas, y cita las cifras en prosa sin desglosar ningún rubro — por eso el club aparece con una sola línea de ingresos y dos de gastos. El monto de "Custos" no está impreso: se despeja de las otras 3 cifras y queda confirmado a 14 decimales por el porcentaje sobre la receita que el propio documento publica. grossDebt/cash sin cargar (el documento nunca publica el total del passivo circulante). El Patrimônio Líquido del documento no cierra consigo mismo, ver dudas-por-club.md. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Mirassol/relatorio-auditoria-contabil-2024.md.',
+      note:'PDF oficial (6 páginas, texto nativo), auditoría de ANALYST GESTAO EMPRESARIAL LTDA firmada el 21/5/2025. OJO: no son las demonstrações contábeis en sí, es el informe narrativo del auditor sobre ellas, y cita las cifras en prosa sin desglosar ningún rubro — por eso el club aparece con una sola línea de ingresos y dos de gastos. El monto de "Custos" no está impreso: se despeja de las otras 3 cifras y queda confirmado a 14 decimales por el porcentaje sobre la receita que el propio documento publica. grossDebt/cash sin cargar (el documento nunca publica el total del passivo circulante). El Patrimônio Líquido del documento no cierra consigo mismo, ver Admin/dudas-por-club.md. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Mirassol/relatorio-auditoria-contabil-2024.md.',
     },
 });
 

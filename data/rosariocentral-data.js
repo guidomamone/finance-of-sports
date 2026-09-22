@@ -27,7 +27,7 @@
 // mismo criterio que Boca/Vélez/Instituto: Total del Pasivo (5.166,386522) - Previsiones
 // (1.037,827336) = 4.128,559186 M.
 //
-// DUDA ABIERTA (ver dudas-por-club.md): el Anexo IV (moneda extranjera) declara DOS cotizaciones de
+// DUDA ABIERTA (ver Admin/dudas-por-club.md): el Anexo IV (moneda extranjera) declara DOS cotizaciones de
 // USD distintas en el MISMO balance — $255,00 del lado del Activo (Caja y bancos) y $268,00 del lado
 // del Pasivo (Acreedores varios fútbol). Se usó $255,00 (la que corresponde a "Caja y bancos", el
 // campo que alimenta `cash`) como fx único del sitio, pero es una aproximación — el club claramente
@@ -153,7 +153,7 @@ Object.assign(sources, {
       title:'Estados Contables (balance auditado), Ejercicio 1°/7/2022 al 30/6/2023',
       type:'official_balance_sheet', reliability:'primary',
       url:'https://rosariocentral.com/wp-content/uploads/2023/10/EECC-Club-Atletico-Rosario-Central-e-Informe-del-auditor-30.06.2023-Firma-FT-1-1-1.pdf',
-      note:'PDF oficial (43 páginas, texto nativo), auditado por Adler, Hasenclever y Asociados S.R.L. (Grant Thornton), informe de fecha 11/10/2023. DÉFICIT real del ejercicio: $(3.107.221.597) ARS. El Anexo IV (moneda extranjera) declara DOS cotizaciones de USD distintas en el mismo balance ($255 lado Activo, $268 lado Pasivo) — se usó $255 (coherente con "Caja y bancos"), ver duda abierta en dudas-por-club.md. Se corrigió una diferencia de $201.178.171 al verificar la suma de Gastos contra el total impreso: la fila "Préstamos" del Anexo VI se había leído con el valor equivocado por desalineación de columnas de pdftotext en una tabla muy ancha — ver comentario completo en data/rosariocentral-data.js.',
+      note:'PDF oficial (43 páginas, texto nativo), auditado por Adler, Hasenclever y Asociados S.R.L. (Grant Thornton), informe de fecha 11/10/2023. DÉFICIT real del ejercicio: $(3.107.221.597) ARS. El Anexo IV (moneda extranjera) declara DOS cotizaciones de USD distintas en el mismo balance ($255 lado Activo, $268 lado Pasivo) — se usó $255 (coherente con "Caja y bancos"), ver duda abierta en Admin/dudas-por-club.md. Se corrigió una diferencia de $201.178.171 al verificar la suma de Gastos contra el total impreso: la fila "Préstamos" del Anexo VI se había leído con el valor equivocado por desalineación de columnas de pdftotext en una tabla muy ancha — ver comentario completo en data/rosariocentral-data.js.',
     },
 });
 

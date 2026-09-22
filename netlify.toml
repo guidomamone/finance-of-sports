@@ -28,9 +28,22 @@
 # producción, devuelve 404. Tampoco hace falta listar los `*.pdf`, que siguen
 # fuera por `.gitignore` por peso, no por privacidad.
 #
-# SI AGREGÁS UN DOCUMENTO INTERNO NUEVO en la raíz, sumalo acá abajo. El criterio
-# es el mismo que separa `note` de `publicNote` desde la Versión 127: lo que se
-# escribió PARA Guido no se publica; lo que describe el proyecto, sí.
+# DÓNDE VA UN DOCUMENTO INTERNO NUEVO (Versión 196): adentro de `Admin/`, y no
+# hace falta tocar este archivo. Hasta la 195 la exclusión era una lista de
+# nombres sueltos de la raíz, o sea que cada documento nuevo había que acordarse
+# de sumarlo acá — y "acordate" ya falló antes en este proyecto. Ahora los
+# documentos internos viven todos en una carpeta y sale una sola línea
+# (`rm -rf Admin`). El criterio de qué es interno no cambió: es el mismo que
+# separa `note` de `publicNote` desde la Versión 127 — lo que se escribió PARA
+# Guido no se publica; lo que describe el proyecto al visitante, sí.
+#
+# `CLAUDE.md` es la única excepción y tiene su propia línea: NO puede mudarse a
+# `Admin/` porque Claude Code lo carga por convención desde la raíz del repo, así
+# que ahí se queda y de ahí se borra en el deploy.
+#
+# Y OJO CON LOS `.html` INTERNOS: `COMO-CORRE-EL-PROYECTO.html` estuvo publicado
+# en producción justamente por eso (es `.html`, estaba en la raíz, y la lista de
+# `rm -f` solo tenía `.md`). Hoy está en `Admin/`, que no discrimina extensión.
 # ============================================================================
 
 [build]
@@ -42,11 +55,12 @@
   # log del deploy, que imprime la cuenta de abajo.
   command = """
     echo '--- sacando documentos internos del artefacto de deploy ---'
-    rm -f CLAUDE.md finance-of-sports-project.md dudas-por-club.md || true
-    rm -f info-adicional-todos-abiertos-borrar-luego.md || true
+    rm -rf Admin || true
+    rm -f CLAUDE.md || true
     find fuentes -name '*.md' -delete || true
     rm -rf auditorias Prototyping || true
     echo "quedan $(find . -name '*.md' -not -path './Clubes/*' -not -path './node_modules/*' | wc -l) .md publicables fuera de Clubes/"
+    echo "documentos internos que sobreviven (tiene que dar 0): $(ls Admin 2>/dev/null | wc -l)"
     echo "paginas de fuentes que SI se publican: $(ls fuentes/*.html 2>/dev/null | wc -l)"
     true
   """

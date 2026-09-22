@@ -38,7 +38,7 @@
 // atrás afecta a los años VIEJOS (2015-2018), no al año base de la restatement. No hay un balance
 // auditado real de 2018/2019 descargado para confirmarlo con certeza (el archivo
 // "balance-2018-2019.pdf" es en realidad la Memoria narrativa, sin cifras) — documentado como
-// incertidumbre en dudas-por-club.md, no se inventó nada nuevo para 2019.
+// incertidumbre en Admin/dudas-por-club.md, no se inventó nada nuevo para 2019.
 //
 // Categorización (misma lógica en los 3 años con detalle completo, 2016/2017/2018): Anexo IV
 // (Recursos) da 4 subtablas (Fútbol profesional, Actividades deportivas y culturales, Socios,
@@ -86,7 +86,7 @@
 // archivos antes de que existiera la tabla.
 //
 // Gestión: Cristian Malaspina, presidente desde 2015 (confirmado por búsqueda), reelecto en
-// diciembre de 2019 y de nuevo en 2023. DUDA ABIERTA (ver dudas-por-club.md): no se confirmó el
+// diciembre de 2019 y de nuevo en 2023. DUDA ABIERTA (ver Admin/dudas-por-club.md): no se confirmó el
 // mes exacto de su primera asunción en 2015 — si fue después del cierre del Ejercicio 2015
 // (30/6/2015), ese año en particular podría no caer bajo su gestión. Se mantiene gestionId:null
 // para 2015 y gestionId:'malaspina' para 2016-2019, mismo criterio que antes del fix.
@@ -265,7 +265,7 @@ const argentinosJuniorsFiscalYearMeta = {
     // comparativo). SUPERÁVIT/DÉFICIT real: DÉFICIT $67.509.882 ARS (antes decía, con las cifras
     // restated, $228.557.786 — completamente distinto).
     currency:'ARS', fxRef:'ARS@2015-06-30', sourceId:'argentinosjuniors-balance-2015-2016',
-    reportType:'official_balance_sheet', gestionId:null, // ver duda abierta en dudas-por-club.md
+    reportType:'official_balance_sheet', gestionId:null, // ver duda abierta en Admin/dudas-por-club.md
     grossDebt:200.426712, cash:1.105450,
     profitOnPlayerSales:0, assetSales:0, netInterest:-10.513566, tax:0,
     officialTotalRevenue:80.697652, officialTotalExpenses:137.693968, officialPAT:-67.509882,
@@ -361,7 +361,7 @@ Object.assign(sources, {
 gestionesByClub.argentinosjuniors = {
     // Confirmado por búsqueda (Versión 95): Cristian Malaspina presidente desde 2015, reelecto en
     // dic-2019 y de nuevo en 2023. Mes exacto de asunción en 2015 sin confirmar (ver duda abierta en
-    // dudas-por-club.md) — por eso el Ejercicio 2015 (30/6/2015) quedó sin gestión asignada
+    // Admin/dudas-por-club.md) — por eso el Ejercicio 2015 (30/6/2015) quedó sin gestión asignada
     // (gestionId:null en data/argentinosjuniors-data.js), y esta entrada arranca en 2016.
     malaspina: { nombre:'Malaspina (2015-actual)', firstYear:2016, lastYear:2019 },
   };

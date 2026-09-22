@@ -761,6 +761,6 @@
   // to-do 43, cerrado): `allYearsRangeForClub()` y `yearKindForClub()`, unas líneas más
   // arriba. Son helpers genéricos del motor, no de Inicio, y `yearKindForClub()` es además
   // la única rama del código que distingue `placeholder` de `pending_official`, que
-  // `ESTADO.md` documenta como estados válidos a propósito. Se quedan.
+  // `Admin/ESTADO.md` documenta como estados válidos a propósito. Se quedan.
 
 

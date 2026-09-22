@@ -4,7 +4,7 @@ Este archivo es tuyo, Guido: un lugar para pegar links a documentos, notas de
 prensa o páginas oficiales cuando encuentres algo útil para un club, aunque
 todavía no tengas tiempo de cargarlo al sitio. No hace falta ningún formato
 especial ni saber programar — un link y una línea de contexto alcanza. Cuando
-tengas varios, decime "che, revisá fuentes-por-club.md" y yo los proceso: los
+tengas varios, decime "che, revisá fuentes/README.md" y yo los proceso: los
 leo, saco los números/categorías reales, y los cargo al sitio con la fuente
 correctamente citada.
 

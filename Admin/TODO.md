@@ -1,7 +1,7 @@
 # TODO — finance-of-sports
 
 Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del proyecto.**
-No la dupliques en `CHANGELOG.md` ni en `finance-of-sports-project.md`, que son historia,
+No la dupliques en `Admin/CHANGELOG.md` ni en `Admin/finance-of-sports-project.md`, que son historia,
 ni en el comentario de ningún archivo de código.
 
 ## Cómo leer esta lista
@@ -12,8 +12,8 @@ ni en el comentario de ningún archivo de código.
   huecos: son los puntos que se resolvieron o se descartaron. Un punto nuevo toma el
   número siguiente al más alto, nunca uno libre.
 - **La prioridad es el ORDEN en que están escritos**, de arriba hacia abajo.
-- **Un punto resuelto se BORRA de acá.** Su historia ya queda en `CHANGELOG.md` y, si
-  ameritaba el porqué, en `finance-of-sports-project.md`. Antes se dejaban marcados como
+- **Un punto resuelto se BORRA de acá.** Su historia ya queda en `Admin/CHANGELOG.md` y, si
+  ameritaba el porqué, en `Admin/finance-of-sports-project.md`. Antes se dejaban marcados como
   "RESUELTO" y la lista terminó con la mitad de los puntos siendo cosas ya hechas.
 
 Sacados el 2026-09-14 por decisión de Guido, para que quede el registro de que no se
@@ -30,7 +30,7 @@ perdieron sino que se descartaron:
   en `fuentes/<País>/<Club>.md` y en el índice de su país `fuentes/_indice/<País>.md`, que es donde se mira antes
   de empezar; las preguntas abiertas que dejaron (el tipo de cambio doble de Ollamani, el PAT de
   Once Caldas, las 3 cifras de Deportes Tolima, el presupuesto por año calendario de Instituto)
-  están en `dudas-por-club.md` y en el archivo de fuentes de cada club.
+  están en `Admin/dudas-por-club.md` y en el archivo de fuentes de cada club.
 - **El dominio y el repo** (era 7). Ya está hecho: el repo de GitHub se llama
   `guidomamone/finance-of-sports` (el nombre viejo redirige) y los push siguen llegando, así que
   Netlify quedó bien linkeado. Lo único de ese punto que había que no perder — que la línea
@@ -42,29 +42,45 @@ perdieron sino que se descartaron:
   mediciones: sacar `reportingCurrency`/`fiscalYearStart` de `clubs.js` ahorra **3,0 KB comprimidos
   a 1000 clubes**, y acortar los `reportType` de `club-index.js` ahorra **60 bytes**, contra un
   refactor que toca el selector para todos los visitantes. No rinde. Las mediciones completas y qué
-  haría falta para reabrirlo están en las notas del punto 3 de `PLAN-REMEDIACION-ESCALA.md`. La
+  haría falta para reabrirlo están en las notas del punto 3 de `Admin/Archive/PLAN-REMEDIACION-ESCALA.md`. La
   mitad que SÍ rendía de ese punto (`club-leagues.js`) se hizo en la Versión 164.
 - **El corte free/paid y el paywall** (eran 5 y 6). Decisión de Guido del 2026-09-14: **por ahora
   el sitio va todo gratis**. No hay corte que definir ni cuentas/suscripciones que construir, así
   que no son pendientes. El día que se revise, la arquitectura ya charlada está en
-  `finance-of-sports-project.md` (sitio estático + capa mínima de backend: Supabase para auth y estado
+  `Admin/finance-of-sports-project.md` (sitio estático + capa mínima de backend: Supabase para auth y estado
   de suscripción, Netlify Functions para el webhook de pagos; no migrar a Next.js).
 
 ---
 
 ## Qué hay que hacer
 
-> **HAY CONTEXTO EXTRA EN `info-adicional-todos-abiertos-borrar-luego.md`** (sesión 2026-09-20, a
-> pedido de Guido). Ese archivo tiene, por punto, lo que una sesión futura va a necesitar y no está
-> acá: la tabla de cuántos clubes tiene cargados cada liga-temporada (que desmentía la premisa del
-> punto 33 — **ese punto ya se cerró en la Versión 184**, y la tabla quedó como el insumo con el que
-> se armó `data/destacados.js`), qué campos tiene `clubs{}` para el tema de los
-> escudos, dónde está la grilla de mezcla, y por qué el catch-all de Vélez es en realidad una
-> pregunta sobre el techo del modelo (**esa sección, la de 20(b), quedó vieja: el punto se cerró en
-> la Versión 189 — el relevamiento que lo resolvió está en
-> `auditorias/2026-09-22-catchall-no-futbol.md`**). **Es temporal: Guido lo trabaja y lo borra**, y
-> lo que sobreviva se muda al punto que corresponda o a un skill.
+44. ACTUALIZAR `Admin/COMO-CORRE-EL-PROYECTO.html` (quedó abierto de la reorganización de la
+    Versión 196, donde se decidió que es un documento INTERNO y se mudó a `Admin/`). Está
+    parcialmente vencido: los números que salen de contar archivos siguen bien (41 clubes, 613
+    notas de fuentes, 44 países), pero dice "222 checks" cuando `auditAll()` corre 228, y la
+    Versión más nueva que menciona es la 126 — o sea que no existe nada de las Versiones 127-196
+    (los rankings y la pestaña Ligas, el i18n, `fuentes.html` con página propia por club, los 4
+    generadores, `netlify.toml`, y esta misma reorganización). **Hasta la Versión 196 estuvo
+    SERVIDO en producción** (`financeofsports.com/COMO-CORRE-EL-PROYECTO.html` devolvía 200): era
+    `.html` en la raíz, y el `rm -f` de `netlify.toml` solo listaba `.md`. Ya no.
 
+45. ACTUALIZAR `Admin/ARQUITECTURA.md` (mismo origen: se confirmó que es documentación viva y se
+    mudó a `Admin/`, pero no se actualizó). No menciona `js/liga.js`, `js/i18n.js`,
+    `data/rankings/`, `data/destacados.js`, `data/lang/`, `fuentes.html` ni
+    `tools/generate-rankings.js`, y no dice nada de `ASSET_V`. Son las Versiones 162-184. Importa
+    más que un doc cualquiera porque el skill de arranque la manda leer justo cuando alguien va a
+    tocar el motor o agregar un club, que es cuando esos archivos están en el medio.
+
+
+46. CHEQUEO DE RUTAS MUERTAS EN `tools/audit.js` (salió de la reorganización de la Versión 196).
+    Un chequeo que recorra los archivos VIVOS (`CLAUDE.md`, `index.html`, `js/`, `tools/`,
+    `data/`, los 6 skills y los `.md` de `Admin/` menos los históricos) buscando rutas de archivo
+    entre backticks que ya no existen en disco. Hoy esa verificación se hizo a mano con un script
+    de una sola corrida: 203 líneas de referencias en 31 archivos, y una sola equivocada habría
+    mandado a una sesión futura a un archivo inexistente sin que nada se queje.
+    **Qué NO tiene que mirar**: `Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md`,
+    `auditorias/` y `Admin/Archive/`, que son historia — una ruta vieja ahí es correcta.
+    Sin esto, la deuda que la 196 limpió se vuelve a juntar sola con la próxima mudanza.
 
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
@@ -149,7 +165,7 @@ perdieron sino que se descartaron:
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
     de esta corrida). (a), (b), (c), (e), (f), (g), (h) e (i) resueltos y (d) descartado, se borran
-    de acá. **Con esto quedan cerrados los 8 puntos de `PLAN-REMEDIACION-ESCALA.md`.** Lo que sigue
+    de acá. **Con esto quedan cerrados los 8 puntos de `Admin/Archive/PLAN-REMEDIACION-ESCALA.md`.** Lo que sigue
     abierto de escala:
 
 36. EVALUAR JEV (TypeSafe, modelo `jev-latest`, docs.typesafe.ai) PARA CATEGORIZAR RUBROS
@@ -167,7 +183,7 @@ perdieron sino que se descartaron:
     (`data/category-map.js`) — no hay que inventar taxonomía nueva.
 
     EL PLAN: las líneas que vuelven con confianza alta se cargan directo a
-    `revenueLines`/`expenseLines`; las de confianza baja se anotan SOLAS en `dudas-por-club.md`
+    `revenueLines`/`expenseLines`; las de confianza baja se anotan SOLAS en `Admin/dudas-por-club.md`
     en vez de perderse o quedar mal categorizadas sin que nadie lo note — que es justo lo que le
     pasó a Racing (ver ahí "Categorización interna inconsistente, Ejercicios 2009/2010/2012/2014":
     5 líneas de ingresos etiquetadas con una categoría de gasto, encontrado recién en una

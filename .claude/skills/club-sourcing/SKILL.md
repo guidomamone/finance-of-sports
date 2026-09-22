@@ -34,7 +34,7 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   la copia archivada de esa MISMA URL en Wayback Machine (usar la CDX API de archive.org para
   encontrar snapshots) antes de descartar el club — sigue siendo el documento del club, solo que
   servido por archive.org en vez de en vivo.
-- **Antes de anotar "no se encontró nada", seguí la REGLA 2 de `fuentes-por-club.md`** (ya
+- **Antes de anotar "no se encontró nada", seguí la REGLA 2 de `fuentes/README.md`** (ya
   documentada ahí, no se repite acá): registrar CADA intento con el detalle de qué se probó, la URL/
   portal exacto, y por qué falló — nunca alcanza con "no se encontró". Ver `fuentes/Uruguay/
   _notas-generales.md` como ejemplo del nivel de detalle esperado.
@@ -42,7 +42,7 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   documentación en `fuentes/<País>/<Club>.md`, con su línea en el índice de su país
   (`fuentes/_indice/<País>.md`) — ver `CLAUDE.md` para la convención completa de carpetas.
   **Trabajá siempre sobre el archivo de TU país**: es lo que permite que dos sesiones de sourcing
-  corran en paralelo sin pisarse. `fuentes-por-club.md` (el índice de países) se toca solo al
+  corran en paralelo sin pisarse. `fuentes/README.md` (el índice de países) se toca solo al
   terminar, y solo si cambiaron los números de ese país.
 - **Un PDF descargado clickeando un link/botón en el Browser pane cae en `~/Downloads` del sistema,
   NO en el proyecto** (a diferencia de `curl`/`fetch()+Blob`, que sí se pueden apuntar directo a
@@ -230,7 +230,7 @@ sección "Transparência"/"SAF"/"Governança").
   Criciúma (solo balance de 2013 encontrado), Marília. **Juventude** es un dead-end parcial: solo se
   encontró el ejercicio 2020 (vía el repositorio de la Federação Gaúcha), y prensa reporta que el
   club no publicó su demonstração de 2024 dentro del plazo legal — la pregunta directa al club está
-  en `dudas-por-club.md`.
+  en `Admin/dudas-por-club.md`.
 
 ## 4. Uruguay — bloqueado, no reintentar con los mismos 3 ángulos
 
@@ -706,7 +706,7 @@ societaria de la que exigir nada: acá SÍ hay sociedades reales, solo que por d
   único club chino que cotizó con disclosure completo (New Third Board / NEEQ, ticker 834338,
   2015-2021) — 5 ejercicios anuales + 1 semestral reales descargados, con cifras de la crisis. Ya no
   juega en la CSL actual (descendió tras el colapso del grupo). Ver la duda para Guido en
-  `dudas-por-club.md` sobre si cargarlo igual como caso histórico.
+  `Admin/dudas-por-club.md` sobre si cargarlo igual como caso histórico.
 - **Gotcha de tooling**: `neeq.com.cn` tiene un WAF que bloquea `curl` incluso con cookies de sesión
   real replicadas. La vuelta que funcionó: `fetch()` dentro de `javascript_tool` — cuando el
   resultado excede el límite de tokens del chat, el contenido completo igual se guarda en un archivo
@@ -731,7 +731,7 @@ en los PDF (cero OCR necesario).
 - **Ser filial de un chaebol que cotiza NO garantiza disclosure**: Ulsan HD (HD Hyundai) tiene
   entidad en DART pero CERO informes de auditoría depositados en 10 años, mientras que Jeonbuk
   Hyundai Motors (mismo tamaño de grupo) sí deposita — posible exención societaria sin confirmar
-  (ver duda en `dudas-por-club.md`). Pohang Steelers (POSCO) directamente no tiene entidad
+  (ver duda en `Admin/dudas-por-club.md`). Pohang Steelers (POSCO) directamente no tiene entidad
   identificable en el registro.
 - **Los clubes "시민구단"/"도민구단" (ciudadanos/provinciales) son dead-end estructural**: son
   sociedades sin fines de lucro fundadas por el municipio/provincia, sin obligación de disclosure —
@@ -763,7 +763,7 @@ para esto (regla general del proyecto).
   udruga misma, así que no es un dead-end, solo una entidad distinta a buscar.
 - **Lokomotiva es el único bloqueo real**: sus 2 ejercicios más recientes están alojados en Scribd
   (login/pago) en vez del sitio propio del club — decisión de Guido si vale la pena, ver
-  `dudas-por-club.md`.
+  `Admin/dudas-por-club.md`.
 - **Wayback Machine estuvo caído durante toda la sesión** para varios huecos puntuales (Dinamo 2023,
   Slaven Belupo 2019-2023) — no es un dead-end confirmado, retomar en una sesión futura cuando el
   servicio esté disponible, antes de asumir que esos ejercicios no existen.
@@ -792,7 +792,7 @@ bilans belga (sección 14), y por el mismo motivo: es una API, no una interfaz w
   `-transicion` en el nombre de archivo, mismo criterio que Wolves/Forest en Inglaterra, sección
   9). FC København y OB tienen perímetro mezclado con otras actividades del grupo controlante
   (eventos, hoteles) — confirmar si el informe desglosa el segmento fútbol antes de cargar (dudas
-  abiertas en `dudas-por-club.md`).
+  abiertas en `Admin/dudas-por-club.md`).
 
 ## 19. Francia — sin registro mercantil abierto, pero la DNCG publica bilanes individuales por club
 
@@ -816,7 +816,7 @@ Bélgica/Dinamarca, el registro mercantil francés NO es abierto de punta a punt
   tiene su holding, Eagle Football Group SA (ex "OL Groupe"), cotizando en Euronext Paris — su
   Document d'Enregistrement Universel (IFRS completo) es descargable directo. Ojo: consolida el
   fútbol de Lyon con otros clubes del mismo grupo (Botafogo, RWD Molenbeek, Crystal Palace hasta
-  2025) — confirmar si desglosa el segmento antes de cargar (duda abierta en `dudas-por-club.md`).
+  2025) — confirmar si desglosa el segmento antes de cargar (duda abierta en `Admin/dudas-por-club.md`).
 - **`recherche-entreprises.api.gouv.fr`**: API pública del gobierno francés, gratis y sin login,
   mejor que el buscador roto de INPI para resolver el SIREN de cualquier entidad — útil como primer
   paso en cualquier sourcing francés futuro (no solo fútbol).
@@ -908,7 +908,7 @@ mejor resultado del proyecto:
   clubes (Vålerenga con 3 entidades activas) quedaron con el perímetro sin resolver del todo.
 - Con esto, los 16 clubes de la Eliteserien 2025/26 tienen al menos algo de disclosure, aunque 2
   (KFUM, Lillestrøm) muestran huecos recientes sin explicar y 1 (Bodø/Glimt) tiene un hueco extraño
-  justo en sus años de título — ver `dudas-por-club.md`.
+  justo en sus años de título — ver `Admin/dudas-por-club.md`.
 
 ## 23. Países Bajos — KvK de pago, pero el mandato de licencia F.04 de la KNVB alcanza igual
 
@@ -936,7 +936,7 @@ Grecia/Noruega.
   variaciones simples del path.
 - **No todos los clubes son BV/NV**: Heracles Almelo y FC Volendam son "Stichting" (fundación sin
   fines de lucro) — confirmar si el criterio de `club-data-mapping` aplica igual antes de mapear
-  (duda abierta en `dudas-por-club.md`).
+  (duda abierta en `Admin/dudas-por-club.md`).
 
 ## 24. Portugal — la mejor cobertura de liga completa hasta ahora, y una tercera red de rescate nueva
 
@@ -964,7 +964,7 @@ proyecto hasta ahora.
 - **Arouca es un caso raro**: se confirmó por metadata de Wayback que 4 ejercicios existieron, pero
   ninguna copia completa sobrevive en ningún archivo consultado — a diferencia de un dead-end por
   falta de disclosure, acá el club SÍ publicó pero la evidencia se perdió. Vale la pena pedirle al
-  club que resuba (ver `dudas-por-club.md`).
+  club que resuba (ver `Admin/dudas-por-club.md`).
 
 ## 25. República Checa — otro registro gratis de primer nivel, y dos formatos nuevos para el `.gitignore`
 
@@ -991,7 +991,7 @@ mejores canales del proyecto junto con Bélgica/Dinamarca/Grecia/Noruega.
   preferir siempre esa vía para descargas en serie, no el browser.
 - **Huecos sospechosos de ser un problema del filtro de búsqueda, no dead-ends reales**: Slovan
   Liberec (17 años sin depósito) y Slovácko (serie muy discontinua) — ver dudas abiertas en
-  `dudas-por-club.md` antes de asumir que esos años no existen.
+  `Admin/dudas-por-club.md` antes de asumir que esos años no existen.
 
 ## 26. Rusia — accesible pese al contexto geopolítico, vía un dominio redirigido
 
@@ -1022,7 +1022,7 @@ accesible desde este entorno:
   sección 14) y Noruega (comparar driftsinntekter, sección 22).
 - Con esto, 15 de 16 clubes de la Premier League rusa 2025/26 quedaron con documentos reales
   (dictamen de auditor y/o notas al balance). Un club (Akhmat Grozny) está legalmente obligado a
-  depositar el dictamen pero nunca lo hizo en 5 años — ver duda en `dudas-por-club.md`.
+  depositar el dictamen pero nunca lo hizo en 5 años — ver duda en `Admin/dudas-por-club.md`.
 
 ## 27. Suiza — Zefix es dead-end de país, pero la mitad de la liga publica voluntariamente
 
@@ -1120,7 +1120,7 @@ solo aplica a los 2 clubes que son sociedades anónimas (Veres ПАТ, Shakhtar 
     el sitio del club directo.
 - **3 dead-ends de disclosure sin explicación técnica** (Dynamo Kyiv, Zorya, Kryvbas): a diferencia
   de la mayoría de la liga, que sí publica por el art. 14, estos 3 no tienen ninguna sección
-  financiera ni señal de bloqueo — candidatos directos para reach-out (ver `dudas-por-club.md`).
+  financiera ni señal de bloqueo — candidatos directos para reach-out (ver `Admin/dudas-por-club.md`).
 - **Un bloqueo de tooling real, no de disclosure**: Oleksandriya (`fco.com.ua`) da 403 incluso con
   browser real, pero Google confirma que el documento existe (indexado) — distinto de un dead-end
   genuino, vale la pena reintentar con otro método (mirror, caché de Google, Wayback) en una sesión

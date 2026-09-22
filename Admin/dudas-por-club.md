@@ -3,14 +3,14 @@
 Este archivo es para anotar preguntas puntuales que quedaron SIN respuesta clara después de leer los
 documentos oficiales de un club — cosas que valdría la pena preguntarle directo al club (prensa,
 área de socios, o quien corresponda) en vez de asumir o inventar un criterio. Complementa a
-`fuentes-por-club.md` (que es sobre DÓNDE está cada documento) y a los comentarios de cada
+`fuentes/README.md` (que es sobre DÓNDE está cada documento) y a los comentarios de cada
 `data/<club>-data.js` (que son sobre CÓMO se categorizó cada línea puntual) — acá van específicamente
 las preguntas abiertas, para no perderlas sueltas en el medio de un comentario de código.
 
 Cómo se agrega algo acá: una sección por club, una línea por pregunta, con el formato:
 
 - **[tema de la pregunta]**: [la pregunta concreta, con la cita/página/documento exacto de donde
-  salió la duda] — a quién preguntarle: [contacto, si ya se investigó uno en `fuentes-por-club.md`].
+  salió la duda] — a quién preguntarle: [contacto, si ya se investigó uno en `fuentes/README.md`].
 
 Antes de agregar una pregunta acá, primero intentar resolverla con lo que ya está disponible (el
 propio documento, otro ejercicio del mismo club, o los criterios ya documentados en
@@ -146,7 +146,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   escaneo de Wayback Machine haya recortado esa página, o que estas versiones "Rectificativas" solo
   incluyan los estados que efectivamente rectifican). Por eso Deuda Neta/Caja quedaron sin cargar
   para esos 3 ejercicios (si sí están para 2025). Vale pedirle al club (o reintentar directo en
-  clubaunion.com.ar cuando el sitio esté online, ver `fuentes-por-club.md`) una copia completa que
+  clubaunion.com.ar cuando el sitio esté online, ver `fuentes/README.md`) una copia completa que
   incluya el Balance General de esos 3 años.
 
 ## Racing Club (hallazgo de esta sesión, no una pregunta para el club)

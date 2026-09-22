@@ -7,13 +7,40 @@ Versión 114 porque son criterios VIGENTES, no historia: el historial se lee una
 vez y se olvida, esto hay que tenerlo a mano cada vez que se toca el sitio.
 
 Cada bullet conserva la versión en la que se decidió, para poder rastrear el
-porqué completo en `CHANGELOG.md` (resumen) o `finance-of-sports-project.md` (narrativa).
+porqué completo en `Admin/CHANGELOG.md` (resumen) o `Admin/finance-of-sports-project.md` (narrativa).
 Las que dicen "pedido explícito de Guido" no son negociables sin preguntarle.
 
 Si una decisión nueva contradice algo de acá, actualizá ESTE archivo en la misma
 sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 ---
+
+- DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (Versión 196, pedido de Guido:
+  *"the entire project has too many files scattered. i want some order"*). **Todo documento interno
+  va adentro de `Admin/`.** Interno = escrito para Guido o para una sesión futura: estado, reglas,
+  pendientes, notas, planes, historia. Si lo dejás suelto en la raíz **se publica**: Netlify sirve
+  la raíz del repo, y lo único que no sale es lo que `netlify.toml` borra del artefacto de deploy —
+  que desde esta versión es `Admin/` entera, con un solo `rm -rf`, en vez de una lista de nombres a
+  la que había que acordarse de sumar cada archivo nuevo. Esa lista ya se escapó tres veces, la
+  última con `COMO-CORRE-EL-PROYECTO.html` servido en producción. `node tools/audit.js` lo caza
+  (`doc-interno-no-excluido`, P2) si te olvidás.
+  - **La extensión no dice nada sobre si un documento es interno.** El chequeo miraba solo `.md` y
+    por eso no vio el `.html` durante semanas. Hoy mira las dos.
+  - **`CLAUDE.md` es la única excepción y se queda en la raíz**, porque Claude Code lo carga por
+    convención desde ahí. Tiene su propia línea en `netlify.toml`.
+  - **Nunca agregues una regla por nombre suelto al `.gitignore` para "no publicar" algo.** Publicar
+    y respaldar son dos problemas distintos (ver la cabecera de `netlify.toml`): el `.gitignore`
+    resuelve el segundo al revés de como se quiere. Y un patrón sin barra matchea en CUALQUIER
+    nivel, así que una regla `FOO.md` también ignora `Admin/FOO.md` — es exactamente la trampa que
+    esta versión desarmó.
+
+- LO QUE ESTÁ CERRADO SE ARCHIVA, NO SE BORRA NI SE APILA (Versión 196). `Admin/Archive/` es para
+  documentos que cumplieron su función entera y pasaron a ser historia: un plan con todos sus puntos
+  cerrados, una sección que ahora se genera desde los datos. **Antes de archivar algo, sacale lo que
+  todavía sirve** y llevalo a donde se lee — un criterio vivo a este archivo o a la skill que
+  corresponda, un pendiente a `Admin/TODO.md`. Si no queda nada que rescatar, probablemente había
+  que borrarlo y no archivarlo. Lo archivado lleva un banner que dice de qué Versión es, porque sus
+  rutas y sus números son los de ese día. Ver `Admin/Archive/README.md`.
 
 - DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el
   único que existía se borró). El proyecto existe porque sus números son verificables, así que un
@@ -108,7 +135,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 - UNA PREMISA VENCIDA EN LA TO-DO SE ESCRIBE AL CERRAR EL PUNTO (auditoría del eje `tokens`,
   2026-09-20). Cuando una tarea se resuelve y el motivo por el que estaba trabada resultó FALSO, no
   alcanza con borrar el punto: hay que dejar escrito que la premisa estaba vencida, en la entrada de
-  `CHANGELOG.md` y, si el punto sigue vivo en parte, en el propio `TODO.md`.
+  `Admin/CHANGELOG.md` y, si el punto sigue vivo en parte, en el propio `Admin/TODO.md`.
   POR QUÉ, con los casos que lo motivaron: la to-do 21(a) daba 5 tipos de cambio por irrecuperables
   con dos motivos y los dos estaban vencidos (los PDFs de San Lorenzo "nunca se transcribieron" —
   lo están desde el 2026-09-17; la transcripción de Vélez "no preservó la columna de cambio
@@ -237,7 +264,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   `club-data-mapping/SKILL.md` secciones 16-17), "Resultado Ordinario" es el PAT del ejercicio.
   Categorización verificada con Guido antes de cargar (ping-pong de preguntas concretas, no
   asumido). Gestión dividida casi a la mitad entre Tinelli y Moretti — se usó Moretti (a cargo al
-  cierre), duda anotada. `verifyTieOuts()` da 243/243 checks, 0 errores, en los 11 clubes. Detalle completo en `finance-of-sports-project.md`.
+  cierre), duda anotada. `verifyTieOuts()` da 243/243 checks, 0 errores, en los 11 clubes. Detalle completo en `Admin/finance-of-sports-project.md`.
 - 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN (Versión 96): (1) Boca (club default)
   aparecía con TODOS los gráficos de Finanzas vacíos en la primera carga de la página, y solo se
   arreglaba solo después de cambiar de club y volver — causa: `pasesDataForClub`/
@@ -257,7 +284,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   de servir. Lo que sigue es el registro del bug original — se reordenaron las 11 `<option>`, con Boca marcado
   `selected` explícito (no es la primera opción alfabética — esa es Argentinos Juniors—, pero
   sigue siendo el club default de la app). `verifyTieOuts()` sigue dando 240/240 checks, 0 errores,
-  en los 11 clubes. Detalle completo en `finance-of-sports-project.md`.
+  en los 11 clubes. Detalle completo en `Admin/finance-of-sports-project.md`.
 - REGLA (Versión 50, Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL
   TOTAL" de al lado, difícil de leer): `ejercicioLabel(year, isPresupuesto)` cambió de firma, antes
   el 2do parámetro era un `suffix` de texto libre agregado AL FINAL ("Ejercicio 2026/2027
@@ -313,7 +340,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   CRITERIO CONSERVADOR PARA `stadium_other`, que conviene no aflojar: solo entra la línea cuyo
   rótulo nombra el estadio o una parte de él. Un "Alquileres" o "Arrendamientos" genérico NO entra
   aunque probablemente sea el estadio — queda en "Otros ingresos" y la pregunta va a
-  `dudas-por-club.md`. Es la diferencia entre lo que el documento dice y lo que suponemos.
+  `Admin/dudas-por-club.md`. Es la diferencia entre lo que el documento dice y lo que suponemos.
 - REGLA HISTÓRICA (Versión 49, pedido explícito de Guido en su momento, VIGENTE HASTA LA VERSIÓN
   189 — se deja escrita porque explica por qué la fila se llamó "Estadio: recaudación de partidos"
   durante 140 versiones): "Estadio" y "Abonos" en Formato
@@ -325,7 +352,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   TODA la temporada (Boca: `r.abonos`; River/Racing: categoría `season_tickets`). Renombrado en
   `simplifiedReportForBoca()` y `GENERIC_SIMPLIFIED_REVENUE_BUCKETS` (mismo valor, solo cambió el
   label). Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
-  `finance-of-sports-project.md`.
+  `Admin/finance-of-sports-project.md`.
 - REGLA REFORZADA (Versión 48, Guido: "urnifica, tienen que ser exactamente iguales los nombres"):
   no alcanza con nombres PARECIDOS entre Boca y el motor genérico, tienen que ser IDÉNTICOS
   carácter por carácter. Bug real encontrado y corregido: Boca usa el label `'Televisión'` (fila
@@ -348,13 +375,13 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   tiene ninguna línea ahí adentro (Guido lo pidió viendo esa fila en $0 para Racing). Un bucket
   NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas) se sigue mostrando igual que en Boca,
   la regla `hideIfZero` es solo para categorías-excepción sin equivalente Boca. Ver
-  `.claude/skills/club-data-mapping/SKILL.md` sección 13 y `finance-of-sports-project.md`.
+  `.claude/skills/club-data-mapping/SKILL.md` sección 13 y `Admin/finance-of-sports-project.md`.
 - REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato simplificado" de CUALQUIER
   club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca
   (`simplifiedReportForBoca()`), no un set separado diseñado para el motor genérico. Si el dato
   fuente de un club no permite categorizar así, consultar a Guido antes de decidir cómo resolverlo,
   nunca improvisar. Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
-  `finance-of-sports-project.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
+  `Admin/finance-of-sports-project.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
   `AskUserQuestion` antes de tocar nada, y ya están resueltas: Racing separó "Estadio: recaudación
   de partidos" de un bucket nuevo "Premios por competencias" (el dato fuente ya los distinguía);
   River se dejó como estaba (su dato no permite separarlo hoy); Gastos se dejó con la
@@ -407,14 +434,14 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   (justo antes de `renderNativePLTable` en el JS) reescribe ese `<colgroup>` cada vez que cambia el
   modo Año a año/Por gestión, en Año a año las columnas 4-6 quedan con ancho EXPLÍCITO `0` (no
   sacadas del colgroup: sacarlas rompe el reparto de espacio porque la fila de encabezado de sección
-  sigue con `colspan="6"`, ver detalle en `finance-of-sports-project.md`) para que Rubro siga siendo la única columna sin
+  sigue con `colspan="6"`, ver detalle en `Admin/finance-of-sports-project.md`) para que Rubro siga siendo la única columna sin
   ancho y se lleve TODO el espacio sobrante, así la tabla usa el 100% del ancho del card en los dos
   modos, sin la franja muerta que salió en un intento intermedio. Si se agrega una columna numérica
   nueva a esta tabla, TIENE que sumarse a los dos ramales de `syncPLTableColgroup` con su propio ancho
   fijo, dejarla sin ancho reintroduce el bug original. La tabla está envuelta en
   `<div class="table-scroll">` (`overflow-x:auto`, `min-width` distinto por modo: 600px en Por gestión,
   320px en Año a año) para que en mobile scrollee en vez de aplastar Rubro. Detalle completo, con las
-  dos vueltas de debugging, en `finance-of-sports-project.md`.
+  dos vueltas de debugging, en `Admin/finance-of-sports-project.md`.
 - REGLA (Versión 38, corrige un bug real de categorización): antes de meter algo adentro de
   `items` (sub-ítems de desglose de un revenueLine/expenseLine), confirmar que esos sub-ítems NO
   tengan cada uno su propia categoría real distinta, si la tienen, van como líneas de PRIMER
@@ -560,4 +587,4 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   nuevo, no asumirlo.
 
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `finance-of-sports-project.md`, `dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**

@@ -125,8 +125,8 @@ es una mala operación, siempre.**
 
 **Sí se puede, y es donde conviene buscar:**
 
-- Duplicación de documentación: el mismo dato de un club vive en `ESTADO.md` (antes el comentario de `index.html`, en
-  la cabecera de su `data/*.js`, en `CHANGELOG.md` y en `fuentes/`. `tools/generate-club-index.js`
+- Duplicación de documentación: el mismo dato de un club vive en `Admin/ESTADO.md` (antes el comentario de `index.html`, en
+  la cabecera de su `data/*.js`, en `Admin/CHANGELOG.md` y en `fuentes/`. `tools/generate-club-index.js`
   ya eliminó una copia; medir cuánta queda.
 - Lo que se lee en CADA sesión (`start-session` §1) contra lo que de verdad se usa.
 - Reabrir un PDF ya transcripto: siempre se usa el `.md`, nunca el PDF de nuevo.
@@ -147,7 +147,7 @@ auditoría deja menos trabajo para la siguiente en vez de la misma lista de siem
 
 Destinos: criterio de categorización/moneda → `club-data-mapping`; proceso de onboarding o
 arquitectura a reusar → `club-or-year-onboarding`; dónde buscar documentos → `club-sourcing`; regla
-de UI/datos ya decidida → `CONVENCIONES.md`; trampa del entorno → `CLAUDE.md`.
+de UI/datos ya decidida → `Admin/CONVENCIONES.md`; trampa del entorno → `CLAUDE.md`.
 
 ---
 
@@ -167,7 +167,7 @@ por si reaparecen en otra forma:
 
 - **Un club sin color NO es un dato faltante si dice `brandColor:null`** (Versión 179). `null` es el
   resultado CERRADO de "se miró y no lleva color" — el que lo identifica es el blanco, o es ambiguo
-  entre dos (ver `CONVENCIONES.md`) — no un pendiente que alguien tenga que completar: completarlo a
+  entre dos (ver `Admin/CONVENCIONES.md`) — no un pendiente que alguien tenga que completar: completarlo a
   ojo es exactamente lo que el criterio prohíbe. Lo que sí es un hallazgo es el campo AUSENTE, y para
   eso ya está `club-sin-color-ni-null` (P3) en el script, así que tampoco hace falta mirarlo a mano.
 
@@ -183,4 +183,4 @@ Si una auditoría encuentra una clase de problema que no está en ningún eje, a
 extendelo. Si un chequeo terminó siendo automatizable, movelo a `tools/audit.js` y sacalo de acá —
 este archivo es para el juicio, no para lo que una máquina hace mejor. Si un falso positivo costó más
 de una vez entenderlo, va a la sección 6. Si el archivo crece tanto que no se lee en dos minutos, es
-señal de que algo debería vivir en `CONVENCIONES.md` (una regla) o en `tools/audit.js` (un chequeo).
+señal de que algo debería vivir en `Admin/CONVENCIONES.md` (una regla) o en `tools/audit.js` (un chequeo).

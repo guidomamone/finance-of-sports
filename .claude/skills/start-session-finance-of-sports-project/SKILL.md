@@ -18,25 +18,25 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | `ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 38 KB |
-| 2 | `CONVENCIONES.md` | **siempre** | 44 KB |
-| 2b | `TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 14 KB |
-| 3 | `ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 10 KB |
-| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 80 KB |
-| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 69 KB |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 91 KB |
-| 7 | `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 11 KB + 2-8 KB por país |
+| 1 | `Admin/ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 38 KB |
+| 2 | `Admin/CONVENCIONES.md` | **siempre** | 48 KB |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 14 KB |
+| 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 9 KB |
+| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 84 KB |
+| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 71 KB |
+| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 92 KB |
+| 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
 
 **Los KB de esta tabla los chequea `node tools/audit.js`** (`doc-peso-desfasado`, P3, agregado en
 la auditoría de docs del 2026-09-20): existen para decidir qué abrir y qué no, así que un número
 desactualizado no es cosmético — cuando se midió, `club-sourcing` decía 33 KB y pesaba 91, y
-`CHANGELOG.md` decía 68 y pesaba 189. Si el chequeo se queja, actualizá el número acá.
+`Admin/CHANGELOG.md` decía 68 y pesaba 189. Si el chequeo se queja, actualizá el número acá.
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 
-- `finance-of-sports-project.md` (482 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
+- `Admin/finance-of-sports-project.md` (488 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
-- `CHANGELOG.md` (223 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
+- `Admin/CHANGELOG.md` (245 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
 Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 
@@ -44,12 +44,12 @@ Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 
 ## 2. Antes de tocar nada: preguntar, no asumir
 
-Las reglas de `CONVENCIONES.md` que dicen "pedido explícito de Guido" no se negocian sin preguntarle.
+Las reglas de `Admin/CONVENCIONES.md` que dicen "pedido explícito de Guido" no se negocian sin preguntarle.
 Si una decisión de esta sesión contradice una de esas, preguntá primero y actualizá el archivo
 después, en la misma sesión.
 
 Si al leer un documento fuente queda una pregunta genuina (algo que no se puede inferir con confianza
-de la fuente ni de los criterios ya documentados), va a `dudas-por-club.md`, no a un comentario
+de la fuente ni de los criterios ya documentados), va a `Admin/dudas-por-club.md`, no a un comentario
 perdido en el código ni a un criterio inventado. Esa es la lista que Guido usa para escribirle
 directo a los clubes.
 
@@ -86,9 +86,9 @@ ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igua
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-22, Versión 189): 0 P0, 0 P1, 8 P2, 7 P3.
-Los 8 P2 son todos los `.md` de la raíz que `netlify.toml` no saca del deploy (to-do 39); los 2 de
-catch-all dominante de Vélez que había hasta la 188 se cerraron con las filas nuevas de Ingresos. **Desde la Versión 183 también chequea que los 4
+Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-22, Versión 196): 0 P0, 0 P1, 0 P2, 7 P3.
+Los 8 P2 que había hasta la 195 eran todos `.md` internos sueltos en la raíz: se cerraron de una
+mudándolos a `Admin/`, que `netlify.toml` saca entera del deploy con un solo `rm -rf`. **Desde la Versión 183 también chequea que los 4
 generadores estén al día** (`checkGenerados()`, P1): si tocaste `js/` o `data/` y subiste
 `ASSET_V`, hay que regenerar `fuentes.html` y sus 41 páginas, porque ese generador LEE `ASSET_V`
 de `index.html`.
@@ -108,25 +108,25 @@ falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetS
 
 Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido lo pida:
 
-1. **`ESTADO.md`**: es un snapshot, no un log. Si algo que decía ya no es cierto, se reemplaza, no
+1. **`Admin/ESTADO.md`**: es un snapshot, no un log. Si algo que decía ya no es cierto, se reemplaza, no
    se apila una línea nueva al lado de la vieja. Su sección "QUÉ ES REAL POR CLUB" se GENERA
    (`node tools/generate-club-index.js`), no se escribe.
-2. **`TODO.md`**: BORRAR lo resuelto (no marcarlo "RESUELTO" y dejarlo, que es como la lista vieja
+2. **`Admin/TODO.md`**: BORRAR lo resuelto (no marcarlo "RESUELTO" y dejarlo, que es como la lista vieja
    terminó con la mitad de los puntos siendo cosas ya hechas), agregar lo que quedó pendiente,
    reordenar si cambió la prioridad. Los números son identificadores estables, no prioridad.
-3. **`CHANGELOG.md`**: SIEMPRE una entrada nueva, aunque el cambio sea chico.
-4. **`finance-of-sports-project.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
+3. **`Admin/CHANGELOG.md`**: SIEMPRE una entrada nueva, aunque el cambio sea chico.
+4. **`Admin/finance-of-sports-project.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
    investigación, un bug real con su causa raíz). Un ajuste de UI no lo amerita.
-5. **`CONVENCIONES.md`**: si se decidió una regla nueva o se contradijo una vieja.
+5. **`Admin/CONVENCIONES.md`**: si se decidió una regla nueva o se contradijo una vieja.
 
-No dupliques la to-do list en `CHANGELOG.md` ni en `finance-of-sports-project.md`: la lista oficial vive sólo en
-`TODO.md`.
+No dupliques la to-do list en `Admin/CHANGELOG.md` ni en `Admin/finance-of-sports-project.md`: la lista oficial vive sólo en
+`Admin/TODO.md`.
 
 **SI TOCASTE DATOS DE UN CLUB, HAY 3 ARCHIVOS GENERADOS QUE HAY QUE REGENERAR** (Versión 184; lo
 chequea `node tools/audit.js` como P1, así que no hace falta acordarse — pero sí saber qué correr):
 
 ```
-node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de ESTADO.md
+node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO.md
 node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
 node tools/generate-rankings.js        # data/rankings/<liga>.js, lo que muestran Inicio y Ligas
 ```
@@ -165,7 +165,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   `sources{}` y los `fiscalYearMeta`. Corrélo después de cargar un club o de tocar una fuente.
   `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.
 - `node tools/generate-club-index.js` — regenera, desde los propios `data/<club>-data.js`, la sección
-  "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md`. Corrélo después de onboardear un club
+  "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `Admin/ESTADO.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
 - `node tools/generate-rankings.js` (Versión 182) — precalcula el ranking de ingresos de cada
@@ -173,7 +173,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   un ejercicio. `--check` avisa si quedó viejo (y `audit.js` lo corre solo, como P1), `--print`
   imprime los rankings para verificarlos contra la fuente. Es lo que alimenta la pestaña Ligas.
 - `node tools/generate-fuentes-index.js` (Versión 175) — regenera, desde los propios
-  `fuentes/_indice/<País>.md`, la sección "Índice de países" de `fuentes-por-club.md`: la línea de
+  `fuentes/_indice/<País>.md`, la sección "Índice de países" de `fuentes/README.md`: la línea de
   cada país con sus 3 números (clubes trackeados, cuántos con documento, chequeo más antiguo) y el
   párrafo de totales. Corrélo después de CUALQUIER sesión de sourcing, en vez de actualizar la línea
   del país a mano. `--check` avisa si quedó vieja; `--debug` imprime la clasificación club por club.
@@ -190,5 +190,5 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
 
 Si en una sesión aparece un paso de arranque, de verificación o de cierre que no está acá, agregalo.
 Si un paso de acá resultó innecesario, sacalo. Este archivo tiene que poder leerse entero en un
-minuto: si crece mucho, es señal de que algo debería vivir en `CONVENCIONES.md` (una regla) o en
-`ARQUITECTURA.md` (cómo funciona algo), no acá (qué hacer y en qué orden).
+minuto: si crece mucho, es señal de que algo debería vivir en `Admin/CONVENCIONES.md` (una regla) o en
+`Admin/ARQUITECTURA.md` (cómo funciona algo), no acá (qué hacer y en qué orden).

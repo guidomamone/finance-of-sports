@@ -40,7 +40,7 @@ Tres preguntas para encontrar un cuello de escala que el mapa de abajo todavía 
 va a seguir cambiando; este criterio es lo que no cambia):
 
 1. **¿Este archivo/estructura se LEE, CARGA o ITERA ENTERO, o solo la porción que hace falta?**
-   `index.html`/`ESTADO.md`/`TODO.md` se leen enteros cada sesión — su tamaño importa. `CHANGELOG.md`
+   `index.html`/`Admin/ESTADO.md`/`Admin/TODO.md` se leen enteros cada sesión — su tamaño importa. `Admin/CHANGELOG.md`
    se consulta con grep — su tamaño casi no importa. Un `data/<club>-data.js` se carga bajo demanda,
    uno por visita — no importa cuántos existan, importa cuánto pesa CADA UNO. La misma pregunta
    aplica en el navegador: `clubs.js`/`club-index.js`/`club-leagues.js` se bajan SIEMPRE, antes de
@@ -50,7 +50,7 @@ va a seguir cambiando; este criterio es lo que no cambia):
    club a secas, con el promedio de ejercicios/club de hoy. Uno que crece por (club, país, división)
    crece más rápido todavía. Mirá la unidad real, no solo "cuántos clubes hay".
 3. **¿Es un archivo único con "una sección por club", mantenido a mano?** Es el patrón que ya rompió
-   una vez (`fuentes-por-club.md` antes de la Versión 137) y el que hay que buscar en cualquier lado
+   una vez (`fuentes/README.md` antes de la Versión 137) y el que hay que buscar en cualquier lado
    nuevo: si hace falta scrollear o repasar entero para actualizar UN club, no escala aunque hoy
    pese poco. El síntoma no es el tamaño en KB, es el proceso de mantenerlo.
 
@@ -70,12 +70,12 @@ Formato de cada fila: **qué**, **a qué volumen se rompe** (con el número, no 
 
 | Qué | Hoy | Se rompe en | Estado |
 |---|---|---|---|
-| `fuentes-por-club.md` (índice de sourcing) | Resuelto (Versión 158 de `main`, 2026-09-20): ahora es un índice de PAÍSES (132 líneas, 10 KB), y el detalle línea-por-club vive en `fuentes/_indice/<País>.md` (44 archivos) | — | **Resuelto**, mismo patrón recomendado acá (partir en `fuentes/_indice/<País>.md` + índice de países), ejecutado en paralelo por otra sesión el mismo día que este mapa se escribió (ver la posdata de la Versión 159 en `finance-of-sports-project.md` para la anécdota de la colisión de números de versión) |
+| `fuentes/README.md` (índice de sourcing) | Resuelto (Versión 158 de `main`, 2026-09-20): ahora es un índice de PAÍSES (132 líneas, 10 KB), y el detalle línea-por-club vive en `fuentes/_indice/<País>.md` (44 archivos) | — | **Resuelto**, mismo patrón recomendado acá (partir en `fuentes/_indice/<País>.md` + índice de países), ejecutado en paralelo por otra sesión el mismo día que este mapa se escribió (ver la posdata de la Versión 159 en `Admin/finance-of-sports-project.md` para la anécdota de la colisión de números de versión) |
 | `fuentes.html` | 14,5 KB (índice) + 41 páginas de ~6,5 KB | ya no crece por documento: el índice crece por CLUB (una fila) y cada página por los documentos de SU club | **RESUELTO (Versión 162).** Se partió por CLUB y no por país: `fuentes/<clubId>.html` una por club, `fuentes.html` como índice de links, más `sitemap.xml`. Se eligió por club en vez de por país porque es la unidad que el visitante busca y la que puede rankear sola en un buscador |
-| `ESTADO.md`, bloque CLUB-INDEX generado | 4,07 KB / 41 clubes (99 B/club) | ~600 clubes cruza el umbral de 60 KB que `tools/audit.js` ya usa para TODO `ESTADO.md` (que además tiene contenido fijo que sí hay que leer siempre) | **Nuevo.** Mover el bloque generado a un archivo separado (referenciado con puntero), mismo mecanismo que liberó a `index.html` de su comentario en la Versión 138 |
+| `Admin/ESTADO.md`, bloque CLUB-INDEX generado | 4,07 KB / 41 clubes (99 B/club) | ~600 clubes cruza el umbral de 60 KB que `tools/audit.js` ya usa para TODO `Admin/ESTADO.md` (que además tiene contenido fijo que sí hay que leer siempre) | **Nuevo.** Mover el bloque generado a un archivo separado (referenciado con puntero), mismo mecanismo que liberó a `index.html` de su comentario en la Versión 138 |
 | `index.html` | 128 KB | Umbral propio 150 KB, sin crecimiento por club desde la Versión 138 | Resuelto, monitoreado por `tools/audit.js` |
-| `CLAUDE.md`, `TODO.md` | 25-27 KB | No crecen por club (prosa de proceso) | Sano |
-| `CHANGELOG.md` / `finance-of-sports-project.md` | 167 KB / 482 KB | Umbrales generosos a propósito (consulta puntual, no lectura entera); el sourcing por lote (país entero en una entrada) amortigua el crecimiento por club | Sano MIENTRAS se mantenga el patrón de "una entrada por lote", no por club individual — vigilar si cambia |
+| `CLAUDE.md`, `Admin/TODO.md` | 25-27 KB | No crecen por club (prosa de proceso) | Sano |
+| `Admin/CHANGELOG.md` / `Admin/finance-of-sports-project.md` | 167 KB / 482 KB | Umbrales generosos a propósito (consulta puntual, no lectura entera); el sourcing por lote (país entero en una entrada) amortigua el crecimiento por club | Sano MIENTRAS se mantenga el patrón de "una entrada por lote", no por club individual — vigilar si cambia |
 
 ### B. Payload eager del navegador (`index.html` carga 8 archivos de `data/` ANTES de elegir club)
 
@@ -101,9 +101,24 @@ clubes**, no 49. El comentario de `tools/generate-club-index.js` que ya decía e
 que se repiten miles de veces, o sea justo lo que gzip aplasta a casi nada") tenía razón, y la
 sesión lo iba a revertir sin haberlo leído.
 
-**Estado: `club-leagues.js` RESUELTO (Versión 164), los otros dos vigentes.** Quedan `clubs.js`
-(sacar `reportingCurrency`/`fiscalYearStart` al archivo de cada club) y `club-index.js`, que es el
-punto 3 del plan de remediación.
+**Estado: `club-leagues.js` RESUELTO (Versión 164). Los otros dos están POSPUESTOS, no pendientes**
+(decisión de Guido del 2026-09-20, sobre las mediciones de arriba: 3,0 KB comprimidos a 1000 clubes
+contra un refactor que toca el selector para TODOS los visitantes). Lo que haría falta para
+reabrirlo: que el payload eager comprimido pase a ser un problema observable —hoy son 29,3 KB los 8
+archivos juntos—, o que aparezca un campo eager que NO comprima bien, o sea que varíe de verdad club
+por club.
+
+**Y SI SE REABRE, LA PREMISA OBVIA ES FALSA EN SU MITAD** (medido el 2026-09-20; esto es lo único
+que había que rescatar del plan de remediación antes de archivarlo, y se pierde fácil porque suena
+razonable). `reportingCurrency` y `fiscalYearStart` NO son los dos "campos que solo hacen falta con
+el club ya cargado": **`js/selector.js` lee `fiscalYearStart` ANTES de bajar ningún archivo de
+club**, para decidir si un ejercicio se etiqueta "2024" o "2023/2024" en el paso en que el visitante
+elige el año. Moverlo al `data/<club>-data.js` obligaría al selector a bajar los 41 archivos para
+escribir una etiqueta — justo lo que el selector existe para evitar. Si alguna vez se retoma, el
+destino correcto de ese campo es `club-index.js` (que es generado), no el archivo del club.
+
+El plan de ejecución que tenía estos puntos (`PLAN-REMEDIACION-ESCALA.md`) se archivó en la Versión
+196, con sus 8 puntos cerrados: está en `Admin/Archive/` si hace falta el detalle histórico.
 
 LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los otros dos:
   1. **La proyección estaba inflada 5x por los comentarios.** El archivo era 65% comentarios: las
@@ -185,7 +200,7 @@ LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los 
   archivo trackeado en git, así que en un clone limpio revisa menos. Degrada bien, nunca da un
   hallazgo falso, y si `Clubes/` no existe se sale callado.
 
-### F. Documentación "una sección por club" en archivo único, más allá de `fuentes-por-club.md`
+### F. Documentación "una sección por club" en archivo único, más allá de `fuentes/README.md`
 
 - **`data/club-leagues.js`**: **RESUELTO (Versión 164)**. Se partió en `data/club-leagues/<iso2>.js`,
   uno por país, cada uno autoregistrándose con `Object.assign` en la misma tabla (el patrón de
@@ -194,7 +209,7 @@ LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los 
   SE ELIGIÓ POR PAÍS Y NO POR LIGA, y se verificó el invariante que lo permite: sobre los 41 clubes,
   CERO juegan una liga de otro país, así que la carpeta de un país tiene todo lo que hace falta para
   contestar tanto "las ligas de este club" como "los clubes de esta liga".
-- `dudas-por-club.md` (537 líneas): mismo patrón, hoy chico, sin cruzar ningún umbral. Vigilar.
+- `Admin/dudas-por-club.md` (537 líneas): mismo patrón, hoy chico, sin cruzar ningún umbral. Vigilar.
 - Cabeceras de `data/<club>-data.js`: NO es un caso de este problema — ya es 1 archivo por club.
 
 ### G. Proceso, no código
@@ -252,7 +267,7 @@ fija para los 41) en vez de seguir sumando filas a Formato simplificado.
 ## Cómo mantener este skill
 
 - **Cuando un hallazgo de esta lista se resuelve**, no se borra la fila: se marca "Resuelto (Versión
-  X)" con una línea, igual que hacen `ESTADO.md`/`TODO.md` con los suyos. Si se acumulan muchas filas
+  X)" con una línea, igual que hacen `Admin/ESTADO.md`/`Admin/TODO.md` con los suyos. Si se acumulan muchas filas
   resueltas y el archivo deja de leerse en dos minutos, ESE es el momento de recortar las más viejas
   a una sola línea en la sección de diff del reporte correspondiente y sacarlas de acá.
 - **Cuando aparece un cuello nuevo**, agregalo a la categoría que corresponda (A-H) con los tres

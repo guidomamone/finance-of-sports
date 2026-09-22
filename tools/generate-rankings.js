@@ -21,7 +21,7 @@
 // vista de liga está detrás de un click, o sea que el visitante la pidió; el
 // ranking de Inicio lo paga TODO visitante, incluido el que rebota. Hoy el
 // sitio no carga ni un solo `data/<club>-data.js` de forma eager, y eso es un
-// logro explícito de la arquitectura (ver ESTADO.md). Un ranking en vivo en
+// logro explícito de la arquitectura (ver Admin/ESTADO.md). Un ranking en vivo en
 // Inicio lo rompe.
 //
 // POR QUÉ UN ARCHIVO POR LIGA y no uno solo: mismo patrón y mismo motivo que

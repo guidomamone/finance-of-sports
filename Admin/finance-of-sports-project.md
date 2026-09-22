@@ -5950,3 +5950,103 @@ estadio, pero el balance no lo dice. Esas 6 quedaron en "Otros ingresos" y la pr
 anotada en `dudas-por-club.md`, que es la lista con la que Guido les escribe a los clubes. Es la
 diferencia entre lo que el documento dice y lo que deducimos, y es la única razón por la que este
 sitio sirve para citarlo.
+
+
+# Versión 196 — Poner orden, y la mina antipersonal que había abajo
+
+Guido abrió la sesión con una frase y once preguntas: *"the entire project has too many files
+scattered. i want some order"*, y después, archivo por archivo, "¿esto qué es?", "¿está
+actualizado?", "¿va a Archive?", "¿va a Admin?". Pidió explícitamente una propuesta primero, sin
+tocar nada. Eso resultó ser lo importante, porque la respuesta correcta a una de esas preguntas era
+"antes de mover nada, hay algo roto".
+
+## Lo que había abajo de la alfombra
+
+Mudar archivos es `git mv`. El trabajo real era averiguar qué se rompía al hacerlo, y la respuesta
+más cara apareció en el `.gitignore`.
+
+El 2026-09-20 hubo una decisión que se revirtió a sí misma en el mismo día. El problema era que
+`financeofsports.com/CLAUDE.md` devolvía 200: el repo entero se deploya, así que todo archivo
+trackeado queda servido. El primer intento fue destrackear los documentos internos. Guido lo
+levantó con la pregunta correcta —*"si pierdo la mac pierdo semanas de trabajo"*— y la solución
+pasó a ser `netlify.toml`, que borra lo interno del artefacto de deploy sin sacarlo de GitHub. Todo
+eso quedó escrito, bien argumentado, en los comentarios de los dos archivos.
+
+Lo que no quedó fue el `.gitignore` limpio. Las tres reglas del intento descartado
+(`finance-of-sports-project.md`, `CLAUDE.md`, `dudas-por-club.md`) siguieron ahí, ocho líneas
+arriba de un comentario que dice, textual, *"acá abajo NO hay ninguna regla para `.md` internos: es
+a propósito"*. Eran inertes: una regla de ignore no desaloja un archivo que ya está en el índice, y
+los tres estaban trackeados. Por eso nadie las vio en dos días.
+
+Dejan de ser inertes en el momento exacto en que el archivo cambia de ruta. Un patrón de gitignore
+sin barra matchea en cualquier nivel, así que `CLAUDE.md` también significa `Admin/CLAUDE.md`. O
+sea: la mudanza que esta sesión venía a hacer habría dejado tres documentos —incluidas las
+instrucciones del proyecto y el diario narrativo de 488 KB, este mismo archivo— fuera de Git **sin
+un solo mensaje de error**, perdiendo justo el respaldo que la decisión del 20 quiso salvar.
+
+Se verificó con `git check-ignore -v` sobre los paths de destino antes de mover nada, y de nuevo
+después de borrar las reglas. Es el tipo de cosa que una propuesta apurada no encuentra, porque no
+hay nada roto hasta que hacés el cambio.
+
+## El segundo hallazgo: la extensión no dice nada
+
+`COMO-CORRE-EL-PROYECTO.html` estaba servido en producción. Es un documento escrito para Guido —una
+de sus secciones se llama "Instrucciones · lo que una sesión tiene que respetar"—, no estaba
+linkeado desde ninguna parte ni en el `sitemap.xml`, pero devolvía 200, igual que `CLAUDE.md` antes
+de la Versión 173.
+
+La causa es una sola línea de criterio. `checkDeployInterno()` de `tools/audit.js` existe
+precisamente para que esto no pase, y está escrito con un comentario largo que explica que
+"acordate de agregarlo a la lista" ya había fallado. Pero el chequeo listaba los `.md` de la raíz,
+y este archivo es `.html`. El chequeo cuya razón de ser era atrapar al que se escapa, no lo vio,
+porque nadie escribió que un documento interno pueda no ser Markdown.
+
+## La reorganización, y por qué no es cosmética
+
+La decisión de Guido fue: `Admin/` para todo lo interno, `Admin/Archive/` para lo cerrado,
+`CLAUDE.md` se queda en la raíz. Lo que eso compra, además del orden:
+
+`netlify.toml` pasa de una lista de nombres sueltos que hay que mantener a mano a un `rm -rf Admin`.
+La clase de bug "agregué un documento y se publicó sin querer" deja de depender de que alguien se
+acuerde. Los 8 hallazgos P2 abiertos de `audit.js` eran exactamente esos `.md` sueltos: quedaron en
+0 con la mudanza, no silenciándolos.
+
+Pero mover los documentos también **habría roto el chequeo que los cuidaba**. `checkDeployInterno()`
+hacía `readdirSync(ROOT)` filtrando `.md`; con los documentos en subcarpetas, ese `readdir` no
+encuentra nada y el chequeo pasa en verde para siempre. Un chequeo vacío se ve idéntico a un
+proyecto sano — el propio archivo lo advierte en otro lado, a propósito de una regex que no
+disparaba nunca. Así que se reescribió con dos invariantes nuevas: que `Admin/` esté cubierta por un
+`rm -rf` (P1: no es un archivo que se escapa, son todos juntos) y que no haya `.md` **ni `.html`**
+sueltos en la raíz fuera de las dos páginas del sitio. Las dos se probaron rompiéndolas a propósito
+antes de darlas por buenas.
+
+## Lo que se rescató antes de archivar
+
+`PLAN-REMEDIACION-ESCALA.md` tenía sus 8 puntos cerrados: 7 hechos, 1 pospuesto. Archivo de manual.
+Pero adentro de las notas del punto pospuesto había una corrección que no estaba en ningún otro
+lado, y que contradice lo que la skill de escala sigue diciendo hoy: la idea de sacar
+`reportingCurrency` y `fiscalYearStart` de `clubs.js` al archivo de cada club **no se puede hacer
+con `fiscalYearStart`**, porque `js/selector.js` lo lee para etiquetar un ejercicio "2024" o
+"2023/2024" ANTES de bajar ningún club. Moverlo obligaría al selector a descargar los 41 archivos
+para escribir una etiqueta, que es literalmente lo que el selector existe para evitar.
+
+Archivar el plan sin mover eso habría dejado la skill mandando a una sesión futura a hacer algo que
+ya se probó falso, con la fuente que lo desmiente guardada en una carpeta que nadie lee. Se movió a
+`escala-finance-of-sports/SKILL.md`, y se verificó contra el código (`js/selector.js:274`, no la
+línea 212 que decía el plan) en vez de copiarlo de memoria. De ahí salió la regla que quedó escrita
+en `CONVENCIONES.md`: antes de archivar algo, sacale lo que todavía sirve; si no hay nada que
+rescatar, probablemente había que borrarlo.
+
+El otro lado de la misma regla: `info-adicional-todos-abiertos-borrar-luego.md` se borró. La
+propuesta inicial decía que 6 de sus 7 secciones tenían contenido vivo, y Guido contestó "ya está
+todo hecho". Tenía razón, y se verificó una por una: `totalClubs` se sacó a propósito en la Versión
+177, `brandColor` ya está en los 41 clubes, el header móvil se cerró en la 188, el catch-all de
+Vélez en la 189. La propuesta había leído las secciones sin chequear si el proyecto ya las había
+pasado por encima.
+
+## Lo que NO se tocó, y por qué
+
+`CHANGELOG.md`, este archivo, `auditorias/` y `Prototyping/` conservan las rutas viejas. Una entrada
+de septiembre que dice `ESTADO.md` era verdad el día que se escribió; corregirle la ruta la
+convierte en una mentira sobre el pasado. Los documentos vivos se actualizan, los históricos se
+anotan: cada archivo archivado lleva un banner que dice de qué Versión son sus rutas.

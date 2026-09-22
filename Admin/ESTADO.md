@@ -6,11 +6,11 @@ deja de ser cierto, se reemplaza, no se apila una línea nueva al lado de la vie
 
 **Lo que NO está acá:**
 
-- **Qué falta hacer** -> `TODO.md`.
-- **Qué cambió y cuándo** -> `CHANGELOG.md`.
-- **Por qué se decidió algo** -> `finance-of-sports-project.md`.
-- **Reglas vigentes y trampas ya encontradas** -> `CONVENCIONES.md`. Leelo siempre.
-- **Cómo funciona cada archivo del motor** -> `ARQUITECTURA.md`.
+- **Qué falta hacer** -> `Admin/TODO.md`.
+- **Qué cambió y cuándo** -> `Admin/CHANGELOG.md`.
+- **Por qué se decidió algo** -> `Admin/finance-of-sports-project.md`.
+- **Reglas vigentes y trampas ya encontradas** -> `Admin/CONVENCIONES.md`. Leelo siempre.
+- **Cómo funciona cada archivo del motor** -> `Admin/ARQUITECTURA.md`.
 
 **Por qué es un archivo y ya no el comentario de `index.html`** (sesión 2026-09-14,
 Versión 138, pedido explícito de Guido: *"Index NO es el archivo para tener to do.
@@ -48,8 +48,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 ## Estado actual
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
-qué se decidió tal cosa?", NO está acá: está en `CHANGELOG.md` (resumen por
-versión, 96 versiones) y en `finance-of-sports-project.md` (narrativa completa). Este bloque
+qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por
+versión, 96 versiones) y en `Admin/finance-of-sports-project.md` (narrativa completa). Este bloque
 se reescribe, no se acumula.
 
 - SITIO: estático puro (HTML + CSS + JS, Chart.js por CDN), sin backend, sin
@@ -76,7 +76,7 @@ se reescribe, no se acumula.
 - DATOS: 41 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
   oficial), de 6 países: Argentina 11, Japón 10, España 10, Brasil 7, Colombia 2,
   México 1. Un solo motor genérico calcula Finanzas para todos (ver
-  `ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
+  `Admin/ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
   El detalle club por club (qué ejercicio, qué fuente, qué es real y qué no) está
   más abajo en "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB", y con más detalle
   todavía en el comentario de cabecera de cada `data/<club>-data.js`.
@@ -94,7 +94,7 @@ se reescribe, no se acumula.
   DESDE LA VERSIÓN 129, el `clubId` de un club NUEVO lleva el país al final
   (`nacional-uy`), porque el id nombra el archivo y prefija cada `sourceId`. Los
   41 de antes quedan como están hasta que alguno se vuelva ambiguo, y
-  `tools/audit.js` avisa justo ese día. Ver `CONVENCIONES.md`.
+  `tools/audit.js` avisa justo ese día. Ver `Admin/CONVENCIONES.md`.
 - TAXONOMÍA DEL SELECTOR (Versión 137): `data/leagues.js` es el CATÁLOGO
   (6 deportes, 6 regiones, 6 países, 8 ligas con su escalón). NO tiene membresía
   a propósito, y esa es la regla de arquitectura más importante que salió de esta
@@ -203,7 +203,7 @@ se reescribe, no se acumula.
   14,5 KB y cada visitante se baja solo la página del club que mira.
   OJO CON QUÉ SE MUESTRA: `note` es INTERNA y no se renderiza nunca; lo que ve el
   visitante es `publicNote` (17 de 89 documentos) más las salvedades que
-  `sourceCaveats()` deriva de los datos. Ver `CONVENCIONES.md` y
+  `sourceCaveats()` deriva de los datos. Ver `Admin/CONVENCIONES.md` y
   `data/sources-view.js`, que además es donde viven las etiquetas de tipo y nivel
   compartidas entre el sitio y el generador. Antes de esto había
   una tabla de 6 filas y un párrafo escritos a mano que se habían quedado en los
@@ -323,7 +323,7 @@ se reescribe, no se acumula.
   TRADUCCIÓN COMPLETA desde la Versión 138: las 204 claves que el sitio usa están
   las 204 en `en.js`, y `fuentes.html` también se traduce sola, con el mismo motor
   y el mismo diccionario (no se genera un archivo por idioma). Lo que NO se traduce
-  es a propósito y ahora es una regla escrita en `CONVENCIONES.md`: los rubros de
+  es a propósito y ahora es una regla escrita en `Admin/CONVENCIONES.md`: los rubros de
   "Formato del club", el título de cada documento, y los nombres de club, de liga y
   de gestión, que salen textuales de la fuente o son nombres propios.
 - CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
@@ -344,7 +344,7 @@ se reescribe, no se acumula.
   el documento va literal en el archivo del club; lo que es cotización pública se
   dice una vez en la tabla y se referencia. Antes esto vivía en prosa, con 10
   redacciones distintas, y 18 de los 89 valores no decían nada. Ver
-  `CONVENCIONES.md` y `club-data-mapping/SKILL.md` sección 5.
+  `Admin/CONVENCIONES.md` y `club-data-mapping/SKILL.md` sección 5.
 - BRANDING: RESUELTO en la Versión 117 (decisión de Guido). La marca es distinta
   por idioma, a propósito: "El deporte en Números" en castellano, "Finance of
   Sports" en inglés (clave `site.name`, `data/lang/en.js`), que es además el
@@ -356,6 +356,29 @@ se reescribe, no se acumula.
 ---
 
 ## Dónde está cada cosa
+
+**La raíz del repo es el SITIO; los documentos internos viven en `Admin/`** (Versión 196). Antes
+estaban todos sueltos arriba, mezclados con `index.html`, y se publicaban salvo que alguien se
+acordara de sumarlos a mano a la lista de `netlify.toml`.
+
+```
+finance-of-sports/
+├── index.html  fuentes.html  sitemap.xml      el sitio
+├── js/  data/  fuentes/  tools/  Clubes/
+├── netlify.toml  .gitignore  .claude/         config
+├── CLAUDE.md                                  se queda acá: Claude Code lo carga desde la raíz
+├── Admin/                                     TODO lo interno. netlify.toml la saca del deploy entera
+│   ├── ESTADO.md  TODO.md  CONVENCIONES.md  ARQUITECTURA.md
+│   ├── CHANGELOG.md  finance-of-sports-project.md  dudas-por-club.md
+│   ├── COMO-CORRE-EL-PROYECTO.html
+│   └── Archive/                               cerrado y congelado, con banner de versión
+├── auditorias/  Prototyping/                  internas también, con su propia línea en netlify.toml
+└── fuentes/README.md                          el índice de países del sourcing (era fuentes-por-club.md)
+```
+
+**Un documento nuevo va en `Admin/` y listo** — no hay que tocar `netlify.toml` ni el `.gitignore`.
+Si queda suelto en la raíz, `node tools/audit.js` lo caza como `doc-interno-no-excluido`. El criterio
+completo está en `Admin/CONVENCIONES.md`.
 
 - `js/i18n.js` + `data/lang/`: el motor de traducción y los diccionarios. Leé
   el comentario de cabecera de `js/i18n.js` antes de agregar un idioma o de
@@ -382,7 +405,7 @@ se reescribe, no se acumula.
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
 - `tools/generate-fuentes-index.js` (Versión 175): regenera la sección "Índice de
-  países" de `fuentes-por-club.md` desde los `fuentes/_indice/<País>.md`. Corrélo
+  países" de `fuentes/README.md` desde los `fuentes/_indice/<País>.md`. Corrélo
   después de una sesión de sourcing, NO edites esas líneas a mano. `--check` avisa
   si quedó vieja, `--debug` muestra la clasificación club por club. Cuando no puede
   decidir si un club tiene documento (la prosa matchea señales de los dos lados, o
@@ -416,13 +439,13 @@ se reescribe, no se acumula.
   `netlify.toml` ni `_redirects`, y Netlify publica la raíz del repo, así que
   `financeofsports.com/Prototyping/...` servía los ejercicios inventados de 18
   clubes a cualquiera con la URL. Vale para cualquier cosa que se deje en el repo.
-- `CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
+- `Admin/CONVENCIONES.md`: reglas permanentes de UI/datos y gotchas ya encontrados.
   LEELO antes de tocar el sitio: son criterios vigentes, varios pedidos
   explícitos de Guido que no se negocian sin preguntarle.
-- `ARQUITECTURA.md`: qué hace cada archivo del proyecto y cómo funciona el motor
+- `Admin/ARQUITECTURA.md`: qué hace cada archivo del proyecto y cómo funciona el motor
   genérico de Finanzas. Leelo cuando toques el motor o agregues un club.
-- `CHANGELOG.md`: qué cambió en cada versión, condensado.
-- `finance-of-sports-project.md`: la narrativa completa, con el razonamiento de cada
+- `Admin/CHANGELOG.md`: qué cambió en cada versión, condensado.
+- `Admin/finance-of-sports-project.md`: la narrativa completa, con el razonamiento de cada
   decisión. Solo hace falta para entender el "por qué" de algo viejo.
 - `CLAUDE.md`: instrucciones permanentes del proyecto (dónde guardar PDFs, qué
   skill leer antes de qué tarea, qué preguntarle a Guido antes de asumir).
@@ -437,17 +460,17 @@ se reescribe, no se acumula.
   37 de ellos mencionan a Guido por nombre. Regla en `.gitignore`: `fuentes/**/*.md`,
   que deja afuera a propósito los 41 `fuentes/<clubId>.html` generados, que SÍ son
   parte del sitio y siguen viajando. Los `.md` siguen en disco y se usan igual. OJO:
-  los 12 `.md` de la RAÍZ (`TODO.md`, `CLAUDE.md`, `finance-of-sports-project.md`…)
+  los 12 `.md` de la RAÍZ (`Admin/TODO.md`, `CLAUDE.md`, `Admin/finance-of-sports-project.md`…)
   siguen publicados por el mismo motivo — es la to-do 39, y es decisión de Guido.
-- `fuentes-por-club.md` (índice de países) → `fuentes/_indice/<País>.md` (una
+- `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
   países, 530 clubes trackeados, 339 con documento encontrado (de los cuales 41
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
-- `dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
+- `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `finance-of-sports-project.md`, `dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
 ---
 

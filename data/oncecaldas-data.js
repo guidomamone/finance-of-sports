@@ -77,7 +77,7 @@
 // número impreso) MENOS el PAT confirmado triple. Esto no es un número
 // inventado a ciegas: es la única incógnita restante despejada de dos
 // anclas 100% sourced (mi pretax línea por línea + el PAT confirmado). Ver
-// dudas-por-club.md para la pregunta pendiente al club/SIIS sobre esta
+// Admin/dudas-por-club.md para la pregunta pendiente al club/SIIS sobre esta
 // diferencia.
 // ============================================================================
 
@@ -161,7 +161,7 @@ const oncecaldasPresupuestoOverlayByYear = {};
 
 // Mercado de pases / resultados deportivos / títulos: sin datos reales cargados todavía para este
 // club (fuera de alcance de esta sesión, que se enfocó en Finanzas del Ejercicio 2025 — ver
-// CHANGELOG.md). Arrays vacíos en vez de placeholders inventados.
+// Admin/CHANGELOG.md). Arrays vacíos en vez de placeholders inventados.
 const oncecaldasPasesData = [];
 const oncecaldasResultadosData = {};
 const oncecaldasTitulosData = [];

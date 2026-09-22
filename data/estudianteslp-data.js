@@ -52,7 +52,7 @@
 // Gestión: Martín Gorostegui (presidente marzo-2021 a abril-2024) cubre 2022 y 2023 con confianza.
 // El balance 2024 (cierre 30/6/2024) está FIRMADO por Juan Sebastián Verón, proclamado presidente el
 // 6/4/2024 — o sea, asumió ~3 meses antes del cierre de este ejercicio. DUDA ABIERTA (ver
-// dudas-por-club.md): Gorostegui presidió la gran mayoría de este ejercicio (jul-2023 a abr-2024),
+// Admin/dudas-por-club.md): Gorostegui presidió la gran mayoría de este ejercicio (jul-2023 a abr-2024),
 // pero es Verón quien firma el balance como Presidente — se cargó gestionId:'veron' (criterio de
 // "quien está a cargo al momento del cierre/firma", mismo usado para Berlanga/Belloso cuando asumen
 // a mitad de ejercicio), pero la mayoría de los meses del ejercicio fueron de Gorostegui, vale
@@ -269,7 +269,7 @@ const estudiantesLPFiscalYearMeta = {
   },
   2024: {
     currency:'ARS', fx:909.00, fxSource:'document_close', sourceId:'estudianteslp-memoria-y-balance-2023-24',
-    reportType:'official_balance_sheet', gestionId:'veron', // ver duda abierta en dudas-por-club.md
+    reportType:'official_balance_sheet', gestionId:'veron', // ver duda abierta en Admin/dudas-por-club.md
     grossDebt:12029.051057, cash:67.946816,
     profitOnPlayerSales:0, assetSales:0, netInterest:534.909348, tax:0,
     // 49648.052256+9.707725+172.145497 / 40626.579372+172.697275.
@@ -324,7 +324,7 @@ Object.assign(sources, {
       id:'estudianteslp-memoria-y-balance-2023-24', clubId:'estudianteslp',
       title:'Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2023 al 30/6/2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (108 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 8/10/2024, firmado por Juan Sebastián Verón como Presidente (proclamado el 6/4/2024, ~3 meses antes del cierre de este ejercicio — Martín Gorostegui presidió la mayoría de los meses de este mismo ejercicio, ver duda abierta en dudas-por-club.md). SUPERÁVIT real: $9.565.538.179 ARS (salto grande por una venta de pases importante: "Transferencias y préstamos de jugadores" $20.177.210.830). Convertido a USD con $909,00 (mismo valor que Racing/Vélez/Instituto para la misma fecha de cierre 30/6/2024).',
+      note:'PDF oficial (108 páginas, texto nativo), auditado por Becher y Asociados S.R.L., informe de fecha 8/10/2024, firmado por Juan Sebastián Verón como Presidente (proclamado el 6/4/2024, ~3 meses antes del cierre de este ejercicio — Martín Gorostegui presidió la mayoría de los meses de este mismo ejercicio, ver duda abierta en Admin/dudas-por-club.md). SUPERÁVIT real: $9.565.538.179 ARS (salto grande por una venta de pases importante: "Transferencias y préstamos de jugadores" $20.177.210.830). Convertido a USD con $909,00 (mismo valor que Racing/Vélez/Instituto para la misma fecha de cierre 30/6/2024).',
     },
 });
 
@@ -333,7 +333,7 @@ gestionesByClub.estudianteslp = {
     gorostegui: { nombre:'Gorostegui (2021-2024)', firstYear:2022, lastYear:2023 },
     // Juan Sebastián Verón, proclamado presidente el 6/4/2024 (sin elecciones, lista única). Firma
     // el balance del Ejercicio 2024 como Presidente — ver duda abierta sobre el criterio de
-    // atribución en dudas-por-club.md (la mayoría de los meses de ese ejercicio fueron de
+    // atribución en Admin/dudas-por-club.md (la mayoría de los meses de ese ejercicio fueron de
     // Gorostegui).
     veron: { nombre:'Verón (2024-actual)', firstYear:2024, lastYear:2024 },
   };

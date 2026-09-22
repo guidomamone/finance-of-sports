@@ -446,7 +446,7 @@ function checkLigasPorEjercicio(api) {
 // gastar el token de abrirlo. Un número 3 veces más chico que el archivo real
 // hace exactamente lo contrario de lo que la tabla promete. Medido en la
 // auditoría de docs del 2026-09-20: `club-sourcing` decía 33 KB y pesaba 91, y
-// `CHANGELOG.md` decía 68 y pesaba 189 — los dos archivos que más conviene NO
+// `Admin/CHANGELOG.md` decía 68 y pesaba 189 — los dos archivos que más conviene NO
 // abrir de corrido, anunciados como si fueran livianos.
 // Es P3 porque no rompe nada y no publica un número malo; sale igual en cada
 // corrida porque el desfasaje vuelve solo (los docs crecen todas las sesiones).
@@ -485,44 +485,59 @@ function checkPesoDocs() {
   }
 }
 
-// --- D17: .md de la raíz que netlify.toml NO saca del deploy (Versión 176) --
+// --- D17: documentos internos que netlify.toml NO saca del deploy (V176) ----
 // POR QUÉ ESTO ES UN CHEQUEO Y NO ALGO QUE SE MIRA A OJO. netlify.toml (Versión
 // 173) explica su propia razón de ser con un caso real: `financeofsports.com/
-// CLAUDE.md` devolvía 200 hasta que se armó el `rm -f` que lo saca del artefacto
-// de deploy. La Versión 175 encontró un SEGUNDO caso del mismo problema
-// (PROMPT-generador-indice-fuentes.md, creado en la misma sesión que escribió esa
-// advertencia, nunca sumado a la lista) — o sea que "acordate de agregarlo" ya
-// falló al menos una vez y no hay ninguna razón para confiar en que no vuelva a
-// pasar. Esto no decide qué es interno: eso lo sigue diciendo un humano. Compara
-// los .md de la raíz contra el `rm -f` de netlify.toml y lo que sobra queda
-// como hallazgo, para que la decisión sea explícita (silenciarlo en
-// tools/audit-ignore.json si es a propósito) en vez de un archivo que nadie
-// miró nunca llegar a producción.
-// P2 y no P1: nada de esto está MAL servido hoy (nada de esto se pusheó
-// todavía), pero va a quedar publicado en cuanto se pushee si nadie lo revisa
-// antes.
+// CLAUDE.md` devolvía 200 hasta que se armó el `rm` que lo saca del artefacto de
+// deploy. Después hubo DOS casos más del mismo problema: la Versión 175 encontró
+// `PROMPT-generador-indice-fuentes.md` (creado en la misma sesión que escribió la
+// advertencia, nunca sumado a la lista), y la reorganización de la Versión 196
+// encontró `COMO-CORRE-EL-PROYECTO.html` SERVIDO EN PRODUCCIÓN — un documento
+// escrito para Guido, que este mismo chequeo no veía porque solo miraba `.md`.
+// O sea: "acordate de agregarlo" ya falló tres veces.
+//
+// QUÉ VERIFICA DESDE LA VERSIÓN 196, que cambió la forma de excluir. Ya no hay una
+// lista de nombres sueltos que mantener: los documentos internos viven todos en
+// `Admin/` y sale una sola línea (`rm -rf Admin`). Así que son dos invariantes:
+//   1. `Admin/` TIENE que estar cubierto por un `rm -rf` de netlify.toml. Si no,
+//      se publica el proyecto entero por dentro. Eso es P1, no P2: no es un
+//      archivo suelto que se escapa, son todos juntos.
+//   2. Ningún documento suelto de la raíz (`.md` o `.html`) fuera de las páginas
+//      del sitio. Su lugar es `Admin/`; la alternativa (sumarlo al `rm -f`) existe
+//      pero es la que ya falló tres veces, así que el hallazgo empuja a mudarlo.
+// El `.html` del punto 2 es la lección de `COMO-CORRE-EL-PROYECTO.html`: la
+// extensión no dice nada sobre si un documento es para el visitante.
 function checkDeployInterno() {
   const netlifyPath = path.join(ROOT, 'netlify.toml');
   if (!fs.existsSync(netlifyPath)) return;
   const toml = fs.readFileSync(netlifyPath, 'utf8');
 
-  // Solo los `rm -f <archivos> || true` cubren un .md SUELTO de la raíz: un
-  // `rm -rf <carpeta>` saca una carpeta entera (fuentes/, auditorias/,
-  // Prototyping/), no compite con esta lista porque un archivo de la raíz no
-  // puede vivir "adentro" de esas carpetas.
   const excluidos = new Set();
   for (const m of toml.matchAll(/rm -f ([^\n|]+?)\s*\|\|\s*true/g)) {
     m[1].trim().split(/\s+/).forEach(f => excluidos.add(f));
   }
+  const carpetasBorradas = new Set();
+  for (const m of toml.matchAll(/rm -rf ([^\n|]+?)\s*\|\|\s*true/g)) {
+    m[1].trim().split(/\s+/).forEach(d => carpetasBorradas.add(d.replace(/\/$/, '')));
+  }
 
-  const rootMd = fs.readdirSync(ROOT, { withFileTypes: true })
-    .filter(d => d.isFile() && d.name.endsWith('.md'))
+  // 1. La carpeta de documentos internos, entera.
+  if (fs.existsSync(path.join(ROOT, 'Admin')) && !carpetasBorradas.has('Admin')) {
+    add('P1', 'admin-no-excluido',
+      'Admin/ existe pero netlify.toml no la saca del deploy: TODOS los documentos internos del proyecto quedarían servidos en financeofsports.com/Admin/... Sumá `rm -rf Admin || true` al command de netlify.toml');
+  }
+
+  // 2. Documentos sueltos en la raíz. Estas dos son las páginas del sitio, no
+  //    documentación: son lo único que legítimamente vive acá con esta extensión.
+  const PAGINAS_DEL_SITIO = new Set(['index.html', 'fuentes.html']);
+  const sueltos = fs.readdirSync(ROOT, { withFileTypes: true })
+    .filter(d => d.isFile() && (d.name.endsWith('.md') || d.name.endsWith('.html')))
     .map(d => d.name).sort();
 
-  for (const f of rootMd) {
-    if (excluidos.has(f)) continue;
+  for (const f of sueltos) {
+    if (PAGINAS_DEL_SITIO.has(f) || excluidos.has(f)) continue;
     add('P2', 'doc-interno-no-excluido',
-      `${f}: .md de la raíz que netlify.toml no saca del deploy. Si es un documento interno, sumalo al 'rm -f' de netlify.toml; si el contenido es para el visitante, dejá una entrada en tools/audit-ignore.json con el motivo`);
+      `${f}: documento suelto en la raíz que netlify.toml no saca del deploy. Si es interno, movelo a Admin/ (no hay que tocar netlify.toml); si el contenido es para el visitante, dejá una entrada en tools/audit-ignore.json con el motivo`);
   }
 }
 
@@ -540,13 +555,13 @@ function checkDeployInterno() {
 //
 // P1 y no P2: lo que queda desfasado está PUBLICADO. Un `data/rankings/` viejo
 // publica el ingreso de un club con el balance del año pasado; una página de
-// fuentes vieja pide un asset que ya no existe; una sección generada de ESTADO.md
+// fuentes vieja pide un asset que ya no existe; una sección generada de Admin/ESTADO.md
 // vieja le miente a la próxima sesión sobre qué hay cargado.
 const GENERADORES = [
   ['generate-rankings.js',      'data/rankings/',                      'rankings-desfasado'],
   ['generate-fuentes-page.js',  'fuentes.html y las 41 páginas de club', 'fuentes-desfasada'],
-  ['generate-club-index.js',    'la sección generada de ESTADO.md',    'club-index-desfasado'],
-  ['generate-fuentes-index.js', 'el índice de fuentes-por-club.md',    'fuentes-indice-desfasado'],
+  ['generate-club-index.js',    'la sección generada de Admin/ESTADO.md',    'club-index-desfasado'],
+  ['generate-fuentes-index.js', 'el índice de fuentes/README.md',    'fuentes-indice-desfasado'],
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {
@@ -657,7 +672,7 @@ function checkRankings(api) {
 // Magdalena). Ya pasa en `fuentes/`, con un Olimpia de Honduras y otro de
 // Paraguay, y ahí no choca solo porque el país es una carpeta.
 //
-// La convención, desde la Versión 129 y escrita en CONVENCIONES.md: todo club
+// La convención, desde la Versión 129 y escrita en Admin/CONVENCIONES.md: todo club
 // NUEVO lleva el país al final del id (`racingsantander-es`). Los 41 de antes
 // quedan como están, listados acá abajo: migrarlos tocaría sus archivos, sus
 // sourceIds y el club guardado en el localStorage de cada visitante, y no
@@ -702,7 +717,7 @@ function checkClubIds(api) {
 
   const sinPais = Object.keys(api.clubs).filter(id => !heredados.has(id) && !/-[a-z]{2}$/.test(id));
   for (const id of sinPais) {
-    add('P2', 'clubid-sin-pais', `el club '${id}' es nuevo y su id no termina en el país (ej. '${id}-${(api.clubs[id].country || 'xx').toLowerCase()}'), que es la convención desde la Versión 129: ver CONVENCIONES.md`);
+    add('P2', 'clubid-sin-pais', `el club '${id}' es nuevo y su id no termina en el país (ej. '${id}-${(api.clubs[id].country || 'xx').toLowerCase()}'), que es la convención desde la Versión 129: ver Admin/CONVENCIONES.md`);
   }
   const heredadosVivos = Object.keys(api.clubs).filter(id => heredados.has(id)).length;
   if (heredadosVivos) {
@@ -845,7 +860,7 @@ function checkCarpetasClubes() {
     }
     for (const k of Object.keys(porNombre).sort()) {
       if (porNombre[k].length < 2) continue;
-      add('P2', 'carpeta-club-duplicada', `Clubes/${pais}/: ${porNombre[k].map(c => `"${c}"`).join(' y ')} son carpetas distintas que normalizan al mismo nombre. O es el mismo club transcripto dos veces con dos grafías, y sus documentos quedaron partidos entre las dos, o son dos clubes distintos que hay que desambiguar en el nombre de la carpeta (REGLA 3 de fuentes-por-club.md)`);
+      add('P2', 'carpeta-club-duplicada', `Clubes/${pais}/: ${porNombre[k].map(c => `"${c}"`).join(' y ')} son carpetas distintas que normalizan al mismo nombre. O es el mismo club transcripto dos veces con dos grafías, y sus documentos quedaron partidos entre las dos, o son dos clubes distintos que hay que desambiguar en el nombre de la carpeta (REGLA 3 de fuentes/README.md)`);
     }
   }
 
@@ -1014,9 +1029,9 @@ function checkEscala(api) {
 
   // UMBRALES POR CÓMO SE LEE EL ARCHIVO, no por tamaño a secas (Versión 140, decisión de
   // Guido después de plantearle el trade-off). Un archivo que se lee ENTERO paga su tamaño
-  // en cada lectura: `index.html` lo baja cada visitante en cada pageview, y `ESTADO.md` y
-  // `TODO.md` los lee entera cada sesión que arranca acá. Esos tienen umbral apretado.
-  // `CHANGELOG.md` y `finance-of-sports-project.md` son de CONSULTA PUNTUAL: se entra con un
+  // en cada lectura: `index.html` lo baja cada visitante en cada pageview, y `Admin/ESTADO.md` y
+  // `Admin/TODO.md` los lee entera cada sesión que arranca acá. Esos tienen umbral apretado.
+  // `Admin/CHANGELOG.md` y `Admin/finance-of-sports-project.md` son de CONSULTA PUNTUAL: se entra con un
   // grep, se lee un bloque y se sale, y para ese uso 459 KB en un archivo cuestan lo mismo
   // que 459 KB repartidos en cinco. Partirlos tendría un costo real y concreto: hoy "¿dónde
   // está la historia?" tiene una respuesta de una palabra, y con CHANGELOG-2026/2027/... cada
@@ -1024,7 +1039,7 @@ function checkEscala(api) {
   // son deliberadamente altos y solo existen para avisar si algún día se van de escala.
   // EL DÍA QUE SÍ HAYA QUE PARTIRLOS no va a ser por el tamaño: va a ser cuando un grep
   // devuelva decenas de bloques irrelevantes, y eso se arregla con un índice, no partiendo.
-  for (const [f, limite] of [['CHANGELOG.md', 400], ['finance-of-sports-project.md', 1200], ['index.html', 150], ['ESTADO.md', 60], ['TODO.md', 60]]) {
+  for (const [f, limite] of [['Admin/CHANGELOG.md', 400], ['Admin/finance-of-sports-project.md', 1200], ['index.html', 150], ['Admin/ESTADO.md', 60], ['Admin/TODO.md', 60]]) {
     const kb = fs.statSync(path.join(ROOT, f)).size / 1024;
     if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir`);
   }

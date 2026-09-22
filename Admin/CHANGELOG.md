@@ -4,10 +4,14 @@ Este archivo es la versión condensada del historial de `finance-of-sports`, ver
 por versión, desde la Versión 10 (cuando el sitio pasó de ser solo de Boca a
 multi-club) hasta hoy. Son bullets terses de qué cambió, no el porqué completo.
 Para el razonamiento narrativo detrás de cualquier entrada (qué se probó, qué se
-descartó, cómo se encontró cada bug) ver `finance-of-sports-project.md`. Para el estado
-actual del proyecto (qué hay armado, qué es real vs. placeholder por club) ver
-`ESTADO.md`, y para la to-do list vigente, `TODO.md` — hasta la Versión 137 las
-dos cosas vivían en un comentario HTML al principio de `index.html`.
+descartó, cómo se encontró cada bug) ver `Admin/finance-of-sports-project.md`. Para el
+estado actual del proyecto (qué hay armado, qué es real vs. placeholder por club) ver
+`Admin/ESTADO.md`, y para la to-do list vigente, `Admin/TODO.md` — hasta la Versión 137
+las dos cosas vivían en un comentario HTML al principio de `index.html`.
+
+**Las rutas que aparecen DENTRO de cada entrada son las de su época.** La Versión 196 mudó
+los documentos internos a `Admin/` y no reescribió el historial: una entrada de septiembre
+que dice `ESTADO.md` era verdad ese día.
 
 ---
 
@@ -2643,3 +2647,63 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`, ni se cargó ningún dato al sitio
   (esto es sourcing, no onboarding — el informe de Rijeka queda documentado y transcripto, no
   cargado a `data/`).
+
+## Versión 196 — Los documentos internos se mudan a `Admin/`, y la exclusión del deploy pasa a ser una sola línea
+
+### Movido
+- `ESTADO.md`, `TODO.md`, `CONVENCIONES.md`, `ARQUITECTURA.md`, `CHANGELOG.md`, `dudas-por-club.md`,
+  `finance-of-sports-project.md` y `COMO-CORRE-EL-PROYECTO.html` → `Admin/`.
+- `PLAN-REMEDIACION-ESCALA.md` y `QUE-ES-REAL-historico.md` → `Admin/Archive/`, con un banner de
+  "archivado" cada uno y un `Admin/Archive/README.md` que explica el criterio (se archiva lo que
+  cumplió su función entera; se borra lo que sobra; se rescata lo vivo antes de archivar).
+- `fuentes-por-club.md` → `fuentes/README.md`, al lado de las notas que indexa.
+- `CLAUDE.md` NO se movió: Claude Code lo carga por convención desde la raíz del repo.
+- La raíz queda con el sitio (`index.html`, `fuentes.html`, `sitemap.xml`, `js/`, `data/`,
+  `tools/`, `fuentes/`, `Clubes/`), su config y `CLAUDE.md`.
+
+### Borrado
+- `info-adicional-todos-abiertos-borrar-luego.md`, que se creó para eso. Sus 7 secciones estaban
+  todas cerradas o ya capturadas: 33/23(c) en la Versión 184, 23(b) en la 177 (`totalClubs` se sacó
+  a propósito), 23(e) con `brandColor` ya en `data/clubs.js`, 26 en la 188, 20(b) en la 189 (el
+  relevamiento quedó en `auditorias/2026-09-22-catchall-no-futbol.md`), y 38 y 34 ya escritos en su
+  punto de `TODO.md`. Se sacó también el puntero que `TODO.md` le tenía.
+
+### Arreglado
+- **`.gitignore`: tres reglas vivas (`finance-of-sports-project.md`, `CLAUDE.md`,
+  `dudas-por-club.md`) eran restos del intento de destrackear del 2026-09-20 que la propia decisión
+  de Guido revirtió.** Inertes mientras los archivos estaban trackeados, pero un patrón sin barra
+  matchea en cualquier nivel: al mudarlos a `Admin/` los tres paths nuevos quedaban ignorados y Git
+  los iba a saltear **en silencio**, perdiendo justo el respaldo que esa decisión quiso salvar.
+  Verificado con `git check-ignore` antes y después.
+- **`COMO-CORRE-EL-PROYECTO.html` estaba servido en producción.** Es `.html`, estaba en la raíz, y
+  el `rm -f` de `netlify.toml` solo listaba `.md`. No está linkeado ni en `sitemap.xml`, pero
+  devolvía 200. Ahora está en `Admin/`.
+- Dos afirmaciones vencidas que decían "no hay `netlify.toml` ni `_redirects`" (en `CLAUDE.md` y en
+  `.gitignore`), de antes de la Versión 173.
+
+### Cambiado
+- `netlify.toml`: el `rm -f` con la lista de nombres sueltos pasa a `rm -rf Admin` + `rm -f
+  CLAUDE.md`. Un documento interno nuevo ya no hay que acordarse de sumarlo acá: alcanza con
+  dejarlo en `Admin/`. Simulado el pruning completo contra el árbol nuevo antes de commitear.
+- `tools/audit.js`, `checkDeployInterno()` reescrito. Antes leía los `.md` de la raíz contra la
+  lista de `rm -f`; con los documentos en subcarpetas ese chequeo se habría quedado **ciego y en
+  verde**. Ahora verifica dos invariantes: que `Admin/` esté cubierta por un `rm -rf` (P1 nuevo,
+  `admin-no-excluido`) y que no haya `.md` **ni `.html`** sueltos en la raíz fuera de `index.html`
+  y `fuentes.html` (P2). Los dos se probaron rompiéndolos a propósito.
+- `tools/generate-club-index.js` escribe `Admin/ESTADO.md`; `tools/generate-fuentes-index.js`
+  escribe `fuentes/README.md`; los límites de peso de `audit.js` apuntan a `Admin/`.
+- 203 líneas de referencias actualizadas en 31 archivos (los 6 skills, `CLAUDE.md`, `index.html`,
+  `js/`, `tools/`, 9 `data/<club>-data.js`). `CHANGELOG.md`, `finance-of-sports-project.md`,
+  `auditorias/` y `Prototyping/` **no** se reescribieron: son historia, y una ruta vieja ahí era
+  verdad el día que se escribió.
+- Rescatado a `.claude/skills/escala-finance-of-sports/SKILL.md` antes de archivar el plan de
+  remediación: mover `fiscalYearStart` al `data/<club>-data.js` **no se puede**, porque
+  `js/selector.js` lo lee antes de bajar ningún club (verificado en `js/selector.js:274`).
+  Sin esto, la skill quedaba mandando a una sesión futura a hacer algo que el plan ya probó falso.
+- Pesos de la tabla de lecturas del skill de arranque actualizados contra los archivos reales.
+
+### Resultado
+- `node tools/audit.js`: **0 P0, 0 P1, 0 P2, 7 P3** (venía de 8 P2 — eran exactamente los `.md`
+  internos sueltos en la raíz).
+- `auditAll()`: 41 clubes, 228 checks, 0 que no cierran, 0 warnings de FX. Los 4 generadores, al día.
+- Sin ASSET_V nuevo: los cambios en `index.html`, `js/` y `data/` son todos de comentario.

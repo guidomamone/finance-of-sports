@@ -1,5 +1,15 @@
 # Plan de remediación de escala — cómo usar este archivo
 
+> **ARCHIVADO (Versión 196).** Los 8 puntos de este plan están cerrados: 7 hechos (Versiones
+> 158-165) y 1 pospuesto por decisión de Guido sobre mediciones. No hay nada pendiente acá, y no se
+> actualiza más. Lo único que tenía valor vivo —que la premisa de mover `fiscalYearStart` al archivo
+> de cada club es FALSA, porque `js/selector.js` lo lee antes de bajar ningún club— se rescató a
+> `.claude/skills/escala-finance-of-sports/SKILL.md` antes de archivar esto. El mapa de escala vigente
+> es esa skill; la lista oficial de pendientes es `Admin/TODO.md`.
+>
+> **Las rutas de archivo que se nombran acá adentro son las de antes de la Versión 196**, cuando los
+> documentos vivían en la raíz. Se dejaron como estaban a propósito: es historia, no instrucciones.
+
 Este archivo es el mapa de ejecución de los hallazgos de `auditorias/2026-09-17-escala.md` /
 `.claude/skills/escala-finance-of-sports/SKILL.md` que todavía están abiertos. Es DISTINTO de
 `TODO.md` (que sigue siendo la única lista oficial de qué está pendiente) y de la skill (que es el

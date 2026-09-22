@@ -2,16 +2,16 @@
 // ============================================================================
 // tools/generate-fuentes-index.js — genera, desde los propios
 // `fuentes/_indice/<País>.md`, la sección "Índice de países" de
-// `fuentes-por-club.md` (la lista de países con sus tres números, más el
+// `fuentes/README.md` (la lista de países con sus tres números, más el
 // párrafo de totales que la encabeza).
 //
 // EL PROBLEMA QUE RESUELVE: desde el split del 2026-09-20 (REGLA 4 de
-// `fuentes-por-club.md`), el detalle línea-por-club vive en un archivo por país
+// `fuentes/README.md`), el detalle línea-por-club vive en un archivo por país
 // y acá quedó solo el índice. Los tres números de cada línea de país —clubes
 // trackeados, cuántos con documento, chequeo más antiguo— se escribieron UNA
 // vez, con un script de un solo uso, y desde entonces se mantenían a mano: o
 // sea, una copia derivada de otro archivo, mantenida por una persona. Es la
-// misma fuga que `generate-club-index.js` cerró para ESTADO.md. Cada sesión de
+// misma fuga que `generate-club-index.js` cerró para Admin/ESTADO.md. Cada sesión de
 // sourcing toca `fuentes/_indice/<País>.md`, y actualizar la línea del país acá
 // es un paso aparte que se puede olvidar sin que nada se rompa visiblemente.
 //
@@ -55,12 +55,12 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const INDICE_DIR = path.join(ROOT, 'fuentes/_indice');
-const DESTINO = path.join(ROOT, 'fuentes-por-club.md');
+const DESTINO = path.join(ROOT, 'fuentes/README.md');
 
 // ---------------------------------------------------------------------------
 // EL CRITERIO DE "CON DOCUMENTO ENCONTRADO"
 //
-// Definición (la que está escrita en `fuentes-por-club.md`; no cambiarla sin
+// Definición (la que está escrita en `fuentes/README.md`; no cambiarla sin
 // avisarle a Guido): existe al menos un documento financiero identificado y
 // ACCESIBLE con cifras de ese club — propio, o un agregado de liga con desglose
 // club por club, como la DNCG francesa — aunque todavía no esté cargado al
@@ -298,7 +298,7 @@ function main() {
     console.log(`\n${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento.`);
   }
 
-  // --- Reemplazo dentro de `fuentes-por-club.md` ---------------------------
+  // --- Reemplazo dentro de `fuentes/README.md` ---------------------------
   //
   // No se usan marcadores tipo CLUB-INDEX:START/END como en
   // `generate-club-index.js`: agregarlos habría sido la primera diferencia
@@ -310,7 +310,7 @@ function main() {
   const original = fs.readFileSync(DESTINO, 'utf8');
   const iSec = original.indexOf('\n## Índice de países\n');
   if (iSec === -1) {
-    console.error('ERROR: no encontré el heading "## Índice de países" en fuentes-por-club.md.');
+    console.error('ERROR: no encontré el heading "## Índice de países" en fuentes/README.md.');
     process.exit(1);
   }
   const jSec = original.indexOf('\n---\n', iSec);
@@ -343,16 +343,16 @@ function main() {
   const nuevo = original.slice(0, iSec) + seccion + original.slice(jSec);
 
   if (nuevo === original) {
-    console.log(`fuentes-por-club.md ya está al día (${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento).`);
+    console.log(`fuentes/README.md ya está al día (${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento).`);
     return;
   }
   if (check) {
-    console.error('fuentes-por-club.md quedó DESACTUALIZADO respecto de los fuentes/_indice/<País>.md. Corré: node tools/generate-fuentes-index.js');
+    console.error('fuentes/README.md quedó DESACTUALIZADO respecto de los fuentes/_indice/<País>.md. Corré: node tools/generate-fuentes-index.js');
     process.exit(1);
   }
 
   fs.writeFileSync(DESTINO, nuevo, 'utf8');
-  console.log(`fuentes-por-club.md actualizado: ${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento.`);
+  console.log(`fuentes/README.md actualizado: ${paises.length} países, ${totalClubes} clubes, ${totalDoc} con documento.`);
 }
 
 main();
