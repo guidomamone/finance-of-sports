@@ -53,6 +53,11 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   balance que lo sugiere), categorizado como `other_income` por no tener una categoría propia. Vale
   confirmar con el club si esto es 100% no-fútbol o si incluye algo de recaudación de entradas
   propia mezclada — cambiaría si esa plata debería ir a `matchday_competition` en cambio.
+  ACTUALIZADO 2026-09-22 (Versión 189): la línea pasó a la categoría nueva `stadium_other` y ahora
+  se muestra dentro de la fila "Estadio", junto con la recaudación de partidos. **La pregunta al
+  club sigue abierta igual**, pero ahora importa menos para el visitante: las dos categorías caen
+  en la misma fila, así que si la respuesta fuera "incluye recaudación", el número visible no se
+  movería — solo cambiaría qué renglón del acordeón la muestra.
 
 ## Rosario Central
 
@@ -648,3 +653,27 @@ no existe. Ver `fuentes/Turquía/Trabzonspor.md`.)*
 ## Otros clubes (si se agregan más adelante)
 
 *(agregar una sección nueva por club acá)*
+
+## Alquileres y arrendamientos sin especificar (pregunta común a 6 clubes)
+
+Salió del relevamiento del 2026-09-22 (`auditorias/2026-09-22-catchall-no-futbol.md`) al crear la
+categoría `stadium_other`. Estos 6 clubes tienen una línea de ingreso por alquiler o arrendamiento
+cuyo rótulo NO dice de qué propiedad se trata, así que no se puede saber si es el estadio (y va a
+la fila "Estadio") o la sede/otra propiedad (y se queda en "Otros ingresos"). Se dejaron todas en
+`other_income`, que es lo conservador, pero varias pesan de verdad:
+
+- **Argentinos Juniors — "Diversos (alquileres, concesiones, etc.)"**: hasta **14,2% de sus
+  ingresos** (Ejercicio 2017), la línea no futbolística más grande de todo el relevamiento después
+  del colegio de Vélez. El balance no la abre. ¿Qué se alquila y cuánto es cada cosa?
+- **Unión de Santa Fe — "Recursos por alquiler de instalaciones"**: crece de 12,1 M a 103,4 M ARS
+  entre ejercicios. ¿Qué instalaciones — el 15 de Abril, el estadio cubierto, La Tatenguita?
+- **Racing — "Ingresos Alquiler"** (9 ejercicios): ¿el Cilindro, o propiedades de la sede?
+- **Rosario Central — "Alquileres" y "Concesiones"**: ¿el Gigante de Arroyito o el complejo?
+- **Envigado — "Arrendamientos"**: ¿el Polideportivo Sur, que además no es propio?
+- **Botafogo — "Locações"** (17,0 M BRL): ¿el Nilton Santos, o inmuebles del club?
+
+Por qué vale preguntarlo y no deducirlo: el estadio es la unidad de negocio que más le interesa a
+un hincha o a un periodista, y meter ahí un alquiler que en realidad es de un local de la sede
+sería inventar. La pregunta concreta para cada club es la misma: *"la línea X de su Estado de
+Recursos y Gastos, ¿corresponde al estadio o a otras propiedades del club? Si es mixta, ¿cuánto es
+cada parte?"*.

@@ -86,9 +86,9 @@ ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igua
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-22): 0 P0, 0 P1, 10 P2, 7 P3.
-De los 10 P2, 2 son el catch-all de Vélez (to-do 20(b)) y 8 son los `.md` de la raíz que
-`netlify.toml` no saca del deploy (to-do 39). **Desde la Versión 183 también chequea que los 4
+Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-22, Versión 189): 0 P0, 0 P1, 8 P2, 7 P3.
+Los 8 P2 son todos los `.md` de la raíz que `netlify.toml` no saca del deploy (to-do 39); los 2 de
+catch-all dominante de Vélez que había hasta la 188 se cerraron con las filas nuevas de Ingresos. **Desde la Versión 183 también chequea que los 4
 generadores estén al día** (`checkGenerados()`, P1): si tocaste `js/` o `data/` y subiste
 `ASSET_V`, hay que regenerar `fuentes.html` y sus 41 páginas, porque ese generador LEE `ASSET_V`
 de `index.html`.

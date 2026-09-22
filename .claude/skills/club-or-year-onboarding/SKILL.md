@@ -98,7 +98,7 @@ Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
 - **`simplifiedReportForGeneric(clubId, year)`** + `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
   `_EXPENSE_BUCKETS`: el "Formato simplificado" para CUALQUIER club (todos usan el motor genérico
   desde la Versión 102, Boca incluida), con `revenueLines`/`expenseLines` + `normalizedCategory`.
-  Agrupa por `normalizedCategory` con un catch-all "Otros". NO hace falta escribir un
+  Agrupa por `normalizedCategory` con un catch-all (hoy "Otros ingresos" / "Otros gastos"). NO hace falta escribir un
   `simplifiedReportFor<Club>` a mano para ningún club — ese patrón existió para Boca
   (`simplifiedReportForBoca`) hasta la Versión 102, cuando se borró junto con el resto de su motor
   Boca-only. Si un club nuevo necesita una categoría que no está en los buckets, agregala a la lista
@@ -161,6 +161,16 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
   agregás la categoría a `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (en
   `js/finanzas-calc.js`), usá el nombre nuevo directo, sin dejar un alias del nombre viejo/temporal
   que probaste primero.
+- **Las filas de Ingresos cambiaron en la Versión 189, y eso cambia cómo se categoriza un club
+  nuevo.** Son: Cuotas Sociales, Comercial / Sponsors, **Estadio** (una sola fila con
+  `matchday_competition` + `season_tickets` + `stadium_other`; el acordeón los separa), Televisión,
+  Premios por competencias, Venta de Jugadores, **Educación** (`education`), **Otras secciones
+  deportivas** (`other_sports` + `youth_football` + `womens_football`), el bolsón sin desglosar, y
+  el catch-all **"Otros ingresos"**. Al mapear un club nuevo: antes de mandar una línea de colegio,
+  polideportivo o uso del estadio a `other_income` por descarte, mirá esas 3 categorías — el
+  criterio de cuál va en cuál está en `club-data-mapping` sección 1 y sección 13. Y si vas a
+  tocar la fusión de abonos, el interruptor es `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js`,
+  no los datos.
 - **Lazy-loading: sumar el club a la carga bajo demanda, NUNCA al `<head>` fijo.** El archivo
   `data/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
   solo tiene `clubs.js`/`category-map.js`/`boca-data.js`/`js/finanzas-calc.js`/

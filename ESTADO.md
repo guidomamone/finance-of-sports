@@ -169,11 +169,11 @@ se reescribe, no se acumula.
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **10 P2**, 7 P3 y 23
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-22; este
-  párrafo decía "2 P2, 8 P3", que era de varias versiones atrás). De los 10 P2, 2 son el
-  catch-all de Vélez 2016 y 2017, diferido por Guido a una sesión propia (to-do 20(b)), y
-  los otros 8 son `doc-interno-no-excluido`: los `.md` de la raíz que `netlify.toml` no
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **8 P2**, 7 P3 y 23
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-22, Versión 189;
+  eran 10 P2 hasta esa versión — los 2 de catch-all dominante de Vélez se cerraron al darle
+  fila propia a "Educación" y al uso del estadio). Los 8 que quedan son todos
+  `doc-interno-no-excluido`: los `.md` de la raíz que `netlify.toml` no
   saca del deploy, que es decisión de Guido (to-do 39). Desde la Versión 125 audita además la PROCEDENCIA de cada
   tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los 89 tipos de cambio con su origen, agrupados por moneda.

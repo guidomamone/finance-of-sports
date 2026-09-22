@@ -5850,3 +5850,103 @@ sourcing de `fuentes/` están publicadas en el dominio y 37 mencionan a Guido po
 la grilla de "elegir clubes" del constructor de mezcla necesita su propio buscador, que es una
 feature y no una optimización (to-do 38); y el punto 3 podría reabrirse si alguna vez aparece un
 campo eager que no comprima bien, o sea que varíe de verdad club por club.
+
+# Versión 189 — El colegio de Vélez, y por qué la mitad del modelo estaba sin terminar
+
+## La pregunta que Guido no quiso contestar todavía, y tenía razón
+
+El to-do 20(b) venía de la primera auditoría: el catch-all de Ingresos de Vélez se llevaba 49% en
+2016 y 43% en 2017. Una sesión anterior le llevó a Guido tres preguntas de diseño (qué fila de
+estadio, cómo tratar el colegio, si hacerlo solo para Vélez o definir un criterio general) y la
+respuesta fue explícita: *"no me hagas tomar decisiones por ahora… necesito saber en qué otros
+clubes pasaría algo similar también. no quiero hacer un flujo solo para Instituto y Vélez"*.
+
+Esa negativa fue la mejor decisión de todo el episodio. El relevamiento que siguió —2.412 líneas de
+`revenueLines`/`expenseLines` de los 41 clubes, 85 ejercicios, clasificadas a mano por club y
+rótulo exacto— dio vuelta las dos premisas sobre las que se venía discutiendo.
+
+## Las dos premisas que estaban mal
+
+**Primera: "esto le pasa a Vélez y a Instituto".** Le pasa a 13 clubes, y entre ellos están **los
+11 argentinos cargados, los 11, sin una sola excepción**. Contra 0 de 10 españoles y 0 de 10
+japoneses. El corte no es por país ni por tamaño: es por forma jurídica. Una asociación civil
+multideportiva —el club social argentino, con colegio, polideportivo, sede y subcomisiones— tiene
+negocios que una sociedad anónima deportiva simplemente no tiene. No era un caso raro: era la forma
+jurídica de un país entero, cargado al 100%.
+
+**Segunda, y más cara: "una fila nueva aparecería en los 41 clubes, la mayoría en $0".** Ese era el
+argumento que venía frenando la decisión, y medido no se sostiene. De los 85 club-ejercicios
+cargados, una fila que junte lo no futbolístico mostraría **plata real en 60**, un "—" en 13 (los
+que tienen bolsón sin desglosar, que la regla `unknown` de la Versión 172 ya cubre) y un `$0`
+literal en **12**. La intuición de que sería mayormente ceros venía de contar clubes en vez de
+club-ejercicios, y los clubes con más ejercicios cargados son justamente los que tienen el negocio.
+
+## El hallazgo de fondo: la Versión 53 se había aplicado a la mitad del modelo
+
+Lo que el relevamiento encontró no fue un problema de Vélez sino una asimetría estructural. Del
+lado de GASTOS existen tres filas —Organización de partidos, Otras secciones deportivas,
+Administración y gastos generales— creadas en la Versión 53 justamente para que el catch-all no se
+comiera lo que no es plantel profesional. Del lado de INGRESOS no había ninguna equivalente: las 7
+filas eran todas de fútbol, y `other_income`, `other_sports`, `youth_football` y `womens_football`
+caían enteras al catch-all. Medido: 27 club-años con catch-all ≥20% del lado de Ingresos, contra 5
+del lado de Gastos.
+
+Eso además corrigió cómo se venía contando el precedente de Instituto (Versión 172). No había
+"recategorizado a categorías sin fila propia": había movido plata a `youth_other_sports_expense`,
+que **sí tiene fila**, y del lado de Gastos. El precedente no decía "recategorizá y listo", decía
+"del lado de Gastos alcanzaba porque la fila ya existía".
+
+## Guido decidió más lejos de lo recomendado, y mejor
+
+La recomendación fue tres filas de ingresos: Estadio (uso y alquiler), Educación, Otras secciones.
+Guido fusionó en vez de sumar: *"tengamos Estadio a secas, y si se presiona en el acordeón de
+estadio, sale el desagregado de ambos"*, y después *"pongamos abonos dentro de Estadio"*. El
+resultado es mejor que la propuesta por tres razones que no estaban en ella: la tabla crece **una
+fila neta** en vez de tres (−1 Abonos, +2 nuevas); el estadio aparece por fin como unidad de
+negocio (35,0% de Boca, un número que ninguna fila mostraba); y resolvió sola la contradicción con
+la regla de la Versión 49, que existía para que nadie creyera que las entradas estaban repartidas
+entre dos filas — ahora no hay dos filas que repartir.
+
+Del nombre de la tercera fila salió la otra corrección: *"se me hacen muy parecidos 'otros' y
+'otras' al lado del otro"*. El choque no era de la fila nueva, era del catch-all, que se llamaba
+"Otras secciones deportivas y otros ingresos" desde siempre y nunca se había alineado con su
+equivalente de Gastos. Pasó a "Otros ingresos" a secas.
+
+## La flexibilidad como requisito explícito
+
+Guido puso una condición que no estaba en ninguna de las tres preguntas: *"necesito que el proceso
+también contemple que mañana tal vez reversione la decisión de meter abonos dentro de Estadio.
+quiero tener la flexibilidad sin necesidad de tocar todo, que aparezcan mil bugs y sea un lío"*.
+
+Resultó barato porque la arquitectura ya ayudaba: las filas son una lista declarativa en un solo
+archivo, y `season_tickets` es la misma categoría en los dos escenarios — o sea que revertir no
+toca ni un archivo de datos. Lo que sí había que blindar eran los tres lugares que se desincronizan
+solos: los colores (pestaña Comparar) y las claves i18n, que van por nombre de fila y se dejaron
+vivas aunque hoy no se usen; y `data/rankings/<liga>.js`, que hornea el nombre de cada fila y hay
+que regenerar (con `audit.js` marcándolo P1 si alguien se olvida). Quedó como
+`ABONOS_DENTRO_DE_ESTADIO`, probado en los dos estados antes de dar la vuelta por terminada.
+
+## El error que el cambio destapó, y la moraleja que deja
+
+Al fusionar, **Athletic Club pasó a mostrar "Estadio = 97% de sus ingresos"**. El primer reflejo
+fue culpar a la fusión. No era: su línea "Ingresos deportivos" (139,5 M€, el 82% del club) estaba
+categorizada entera como `matchday_competition` desde que se cargó, y la Nota 21.4 de sus propias
+cuentas —ya transcripta en el repo— la abre en 5 conceptos de los cuales el mayor son **72,7 M€ de
+televisación**. El sitio venía diciendo "Televisión 0,0" para un club que cobra 72,7 M€ de derechos
+de TV, y nadie lo había visto porque 81% bajo una fila de entradas no llama tanto la atención como
+97%.
+
+La moraleja vale para cualquier fusión futura de categorías: **una fila que agrupa mucho esconde un
+error de categorización; una que agrupa más lo vuelve visible.** Cuando una fila de Formato
+simplificado se lleva un porcentaje absurdo del total, hay que sospechar de la línea más grande que
+tiene adentro antes que del bucket.
+
+## Dónde se paró la implementación, a propósito
+
+`stadium_other` se aplicó a 3 clubes, no a los 10 que el relevamiento había contado. La diferencia
+son las líneas de alquiler cuyo rótulo no dice de qué propiedad se trata: "Diversos (alquileres,
+concesiones, etc.)" de Argentinos Juniors pesa 14,2% de sus ingresos y probablemente sea el
+estadio, pero el balance no lo dice. Esas 6 quedaron en "Otros ingresos" y la pregunta quedó
+anotada en `dudas-por-club.md`, que es la lista con la que Guido les escribe a los clubes. Es la
+diferencia entre lo que el documento dice y lo que deducimos, y es la única razón por la que este
+sitio sirve para citarlo.

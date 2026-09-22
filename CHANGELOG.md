@@ -2524,3 +2524,33 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   que la propia fuente no abre (Racing es el caso extremo: ninguna fila nueva lo mejora).
 - **Nada implementado.** El to-do 20(b) sigue abierto hasta que Guido decida sobre las tres
   alternativas del documento.
+
+## Versión 189: "Estadio" es una fila sola, y el colegio de un club deja de ser "otros"
+
+- **Formato simplificado, Ingresos: "Estadio: recaudación de partidos" pasa a "Estadio" a secas y
+  absorbe los abonos y el uso/alquiler del estadio** (decisión de Guido). Es UNA fila con
+  `matchday_competition` + `season_tickets` + `stadium_other`, y el acordeón las separa con el
+  `rawLabel` de cada club. La fila "Abonos" deja de existir. Boca 2026/27 pasa a mostrar su estadio
+  como el 35,0% del club, un número que antes no estaba en ninguna fila.
+- **Dos filas nuevas de Ingresos: "Educación" y "Otras secciones deportivas"**, espejo de las que
+  la Versión 53 creó del lado de Gastos. El catch-all pasa a **"Otros ingresos"** a secas.
+  Categorías nuevas: `education` y `stadium_other` (`data/category-map.js`).
+- **`ABONOS_DENTRO_DE_ESTADIO`** (`js/finanzas-calc.js`), a pedido de Guido: la fusión de abonos se
+  revierte cambiando `true` por `false` + `node tools/generate-rankings.js`, **sin tocar ningún
+  archivo de datos**. Los colores y las claves i18n de "Abonos" y "Estadio: recaudación de
+  partidos" quedan vivas para eso. Probado en los dos estados.
+- **97 líneas recategorizadas en 10 clubes**, ningún monto tocado. El catch-all de Ingresos: los
+  club-años con ≥20% bajan de 27 a 10; Vélez 2016, de 48,6% a 24,4%. Los 2 hallazgos P2 de
+  `catchall-dominante` se cierran (audit.js: 10 P2 → 8).
+- **Athletic Club, error viejo destapado por la fusión**: "Ingresos deportivos" (139,5 M€, 82% del
+  club) estaba entero en `matchday_competition` y contenía los 72,7 M€ de televisación — el sitio
+  mostraba "Televisión 0,0" para el Athletic. Abierto en los 5 conceptos de la Nota 21.4 de sus
+  cuentas, que suman exacto el mismo total.
+- `CONVENCIONES.md`: la regla de la Versión 49 ("Estadio" y "Abonos" son 2 filas) queda reemplazada
+  y se conserva como historia. Actualizados los 2 skills que nombran las filas, `dudas-por-club.md`
+  (6 clubes con alquileres sin especificar, más la duda vieja de Vélez) y
+  `auditorias/2026-09-22-catchall-no-futbol.md` con lo que se decidió.
+- To-do 20(b) cerrado. Nuevos: 40 (CMS sin código), 41 (la vidriera de Inicio dibuja sus gráficos
+  dos veces, bug preexistente), 42 (Ingresos tiene fila "Educación" y Gastos no).
+- `auditAll()`: 41 clubes, 228 checks, 0 que no cierran, 0 warnings de fx. `node tools/audit.js`:
+  0 P0, 0 P1. ASSET_V 188 → 189, los 4 generados al día.

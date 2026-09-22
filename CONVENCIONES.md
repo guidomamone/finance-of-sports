@@ -268,7 +268,55 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   en `populateFinanzasSelectors`, tanto para Boca como para River/Racing) sigue mostrando el
   estilo largo "Ejercicio AAAA/AAAA (presupuestado)" a propósito, no tiene el problema de espacio
   de la tabla y así el dropdown se ve igual en los 3 clubes.
-- REGLA PERMANENTE (Versión 49, pedido explícito de Guido): "Estadio" y "Abonos" en Formato
+- REGLA PERMANENTE (Versión 189, pedido explícito de Guido, REEMPLAZA a la regla de la Versión 49
+  que decía lo contrario y quedó abajo como historia): **"Estadio" en Formato simplificado es UNA
+  sola fila** que junta las 3 formas que tiene un club de monetizar su estadio — recaudación
+  partido a partido (`matchday_competition`), abonos de temporada (`season_tickets`) y uso o
+  alquiler del estadio fuera del fútbol (`stadium_other`, categoría nueva de esta versión:
+  recitales, eventos, concesiones del estadio, licitación de palcos). **El acordeón de esa fila las
+  separa**, con el `rawLabel` de cada club, así que la distinción no se pierde: deja de ser una
+  fila y pasa a ser un click. Guido: *"tengamos Estadio a secas, y si se presiona en el acordeón de
+  estadio, sale el desagregado"* y *"pongamos abonos dentro de Estadio. O sea, el acordeón de
+  estadio tiene 3 cosas y abonos deja de ser su propia fila"*.
+  POR QUÉ ESTO NO REABRE LA CONFUSIÓN QUE MOTIVÓ LA REGLA DE LA VERSIÓN 49: esa regla existía
+  porque el label viejo ("Entradas / Abonos") sugería que las entradas estaban repartidas entre dos
+  filas. Ahora no hay dos filas que repartir: hay una sola, y el desglose está adentro. Lo que la
+  regla vieja protegía —que el visitante pueda ver cuánto es abono y cuánto es venta por partido—
+  lo sigue dando el acordeón.
+  **CÓMO SE REVIERTE, si Guido cambia de idea**: `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js`
+  pasa a `false` y vuelve la fila "Abonos" en su posición histórica (6ta). **No hay que tocar ningún
+  archivo de datos**: `season_tickets` sigue siendo la misma categoría en los dos escenarios, lo
+  único que cambia es en qué fila se muestra. Sí hay que correr `node tools/generate-rankings.js`
+  después (los rankings hornean el nombre de cada fila) — y si te olvidás, `node tools/audit.js` lo
+  marca como P1. Los colores y las claves i18n de "Abonos" y de "Estadio: recaudación de partidos"
+  se dejaron vivas a propósito para que revertir no obligue a volver a elegirlas.
+- REGLA PERMANENTE (Versión 189): Ingresos tiene 2 filas nuevas, **"Educación"** (`education`) y
+  **"Otras secciones deportivas"** (`other_sports` + `youth_football` + `womens_football`), y el
+  catch-all pasa a llamarse **"Otros ingresos"** a secas. Las dos filas son el espejo, del lado de
+  Ingresos, de lo que la Versión 53 ya había hecho del lado de Gastos: hasta la 188, las 4
+  categorías que no son fútbol profesional caían ENTERAS al catch-all, así que el colegio de Vélez
+  (20% de sus ingresos) no aparecía en ninguna fila. El relevamiento que lo midió club por club
+  está en `auditorias/2026-09-22-catchall-no-futbol.md`: 13 de los 41 clubes tienen negocio no
+  futbolístico con plata ahí, incluidos **los 11 argentinos, los 11**. El catch-all se renombró
+  porque "Otras secciones deportivas y otros ingresos" quedaba a un renglón de su casi homónimo
+  (Guido: *"se me hacen muy parecidos 'otros' y 'otras' al lado del otro"*) — y de paso queda
+  simétrico con Gastos, cuyo catch-all ya era "Otros gastos" a secas.
+  QUÉ VA EN CADA UNA, para no tener que re-decidirlo por club: `education` es el colegio/escuela
+  del club (aranceles de enseñanza, subsidios estatales a la educación), NO una escuela o academia
+  de fútbol (eso es `youth_football`) ni un departamento de educación física (eso es
+  `other_sports`). `other_sports` en Ingresos son las secciones y actividades deportivo-recreativas
+  del socio (básquet, tenis, polideportivo, ciudad deportiva, pileta, náutica, colonia de
+  vacaciones, subcomisiones) — mismo recorte que ya usa `youth_other_sports_expense` del lado de
+  Gastos, que por ejemplo ya tenía la colonia de vacaciones de Estudiantes adentro. Lo que es
+  negocio comercial y no una sección del club (eventos, salones, hotelería, estacionamiento) se
+  queda en `other_income` → "Otros ingresos".
+  CRITERIO CONSERVADOR PARA `stadium_other`, que conviene no aflojar: solo entra la línea cuyo
+  rótulo nombra el estadio o una parte de él. Un "Alquileres" o "Arrendamientos" genérico NO entra
+  aunque probablemente sea el estadio — queda en "Otros ingresos" y la pregunta va a
+  `dudas-por-club.md`. Es la diferencia entre lo que el documento dice y lo que suponemos.
+- REGLA HISTÓRICA (Versión 49, pedido explícito de Guido en su momento, VIGENTE HASTA LA VERSIÓN
+  189 — se deja escrita porque explica por qué la fila se llamó "Estadio: recaudación de partidos"
+  durante 140 versiones): "Estadio" y "Abonos" en Formato
   Simplificado son 2 conceptos DISTINTOS de venta de acceso al estadio, no un mismo concepto
   repartido en 2 filas. "Estadio: recaudación de partidos" = entradas que el club vende PARTIDO POR
   PARTIDO (Boca: `r.exhibicionEspectaculos`; River/Racing: categoría `matchday_competition`).
@@ -288,7 +336,10 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 - REGLA PERMANENTE (Versión 47, extiende la regla de la Versión 46, pedido explícito de Guido: "la
   tabla tiene que quedar exactamente igual ordenada tambien. el orden importa"): el ORDEN de
   `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (River/Racing) tiene que calzar con el
-  orden real de `simplifiedReportForBoca()`, no solo los nombres. Orden de Ingresos: Cuotas
+  orden real de `simplifiedReportForBoca()`, no solo los nombres. ORDEN VIGENTE DESDE LA VERSIÓN
+  189: Cuotas Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Venta de Jugadores,
+  Educación, Otras secciones deportivas, catch-all "Otros ingresos" (con "Abonos" de vuelta en 6ta
+  posición si `ABONOS_DENTRO_DE_ESTADIO` se pone en `false`). Orden anterior, hasta la 188: Cuotas
   Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Abonos, Venta de Jugadores,
   catch-all (label "Abonos" a secas desde la Versión 49, ver bullet más abajo, antes decía
   "Entradas / Abonos"). También: cualquier bucket que NO tenga equivalente en Boca (hoy: "Fútbol profesional

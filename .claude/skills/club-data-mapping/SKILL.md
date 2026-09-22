@@ -64,7 +64,10 @@ práctica, agregá los que falten cuando aparezcan):
 | Amortización/Depreciación de bienes de uso tangibles | `depreciation` |
 | Previsiones, amortizaciones intangibles, cargos extraordinarios de fin de ejercicio | `other_amortisation` |
 | Desafectación de previsiones/provisiones, condonaciones, resultado por quiebra | `exceptional_items` |
-| Todo lo demás específico del club (colegio, sede social, alquileres, actividades varias) | `other_income` / `other_expenses` |
+| Colegio/escuela del club: aranceles de enseñanza, subsidios estatales a la educación (Versión 189, tiene fila propia "Educación" en Formato simplificado). NO una escuela/academia de FÚTBOL (eso es `youth_football`) ni un departamento de educación física (eso es `other_sports`) | `education` (ingreso) |
+| Uso del estadio fuera del partido: alquiler para recitales/eventos, concesiones del estadio, licitación de palcos (Versión 189). Comparte la fila "Estadio" con `matchday_competition` y `season_tickets`, pero se guarda aparte. **CRITERIO CONSERVADOR**: solo si el rótulo nombra el estadio o una parte de él — un "Alquileres"/"Arrendamientos" genérico NO entra, va a `other_income` y la pregunta a `dudas-por-club.md` | `stadium_other` (ingreso) |
+| Secciones y actividades deportivo-recreativas del socio: básquet, tenis, polideportivo, ciudad deportiva, pileta, náutica, colonia de vacaciones, subcomisiones (Versión 189, fila propia "Otras secciones deportivas", espejo de `youth_other_sports_expense`) | `other_sports` (ingreso) |
+| Todo lo demás específico del club (sede social, alquileres genéricos, eventos y salones, hotelería, estacionamiento, actividades varias) | `other_income` / `other_expenses` |
 | Un club que agrupa gruesamente ("fútbol profesional" sin desglosar), ver regla nueva abajo antes de usar esta categoría | `lump_football_operations` (ingreso) / `lump_football_operations_expense` (gasto) |
 
 ### REGLA (agregada Versión 38, corrige un error real): antes de usar `lump_football_operations`, fijate si el documento REALMENTE no desglosa
@@ -627,6 +630,48 @@ de TV'` (motor genérico) para la misma categoría (`broadcasting`): sobrevivió
 sin corregirse porque nunca se comparó letra por letra, solo "se parece". Antes de dar por
 homologado un label, copiarlo LITERAL del código de Boca (copy-paste del string, no reescribirlo de
 memoria), o comparar los dos arrays lado a lado explícitamente.
+
+**ACTUALIZACIÓN VERSIÓN 189 — LEER ESTO ANTES QUE LA REGLA DE LA VERSIÓN 49 DE ABAJO, QUE QUEDÓ
+REEMPLAZADA.** Las filas de Ingresos de Formato simplificado son hoy, en este orden: Cuotas
+Sociales, Comercial / Sponsors, **Estadio**, Televisión, Premios por competencias, Venta de
+Jugadores, **Educación**, **Otras secciones deportivas**, Fútbol profesional (sin desglosar, con
+`hideIfZero`), y el catch-all **"Otros ingresos"**. Tres cambios, todos por decisión explícita de
+Guido en la sesión del 2026-09-22:
+
+1. **"Estadio: recaudación de partidos" pasó a "Estadio" a secas y absorbió los abonos.** Es UNA
+   fila con las 3 formas de monetizar el estadio (`matchday_competition` + `season_tickets` +
+   `stadium_other`), y el acordeón las separa con el `rawLabel` de cada club. La fila "Abonos"
+   dejó de existir. **El interruptor `ABONOS_DENTRO_DE_ESTADIO` (`js/finanzas-calc.js`) revierte
+   esto en una palabra, sin tocar ningún archivo de datos** — `season_tickets` es la misma
+   categoría en los dos escenarios. Si lo cambiás: correr `node tools/generate-rankings.js`
+   después (los rankings hornean el nombre de cada fila; `audit.js` lo marca P1 si te olvidás).
+2. **"Educación" y "Otras secciones deportivas" son filas nuevas**, espejo de las que la Versión 53
+   creó del lado de Gastos. Hasta la 188, `other_sports`/`youth_football`/`womens_football`/
+   `other_income` caían ENTERAS al catch-all: el colegio de Vélez era el 20% de sus ingresos y no
+   aparecía en ninguna fila. El relevamiento completo —qué club tiene qué negocio no futbolístico y
+   cuánto pesa— está en `auditorias/2026-09-22-catchall-no-futbol.md`, y el dato que hay que
+   recordar al cargar un club nuevo es que **esto no es una rareza de 2 clubes: los 11 clubes
+   argentinos cargados, los 11, tienen negocio no futbolístico**, contra 0 de los 10 españoles y
+   0 de los 10 japoneses. El corte es por forma jurídica (asociación civil multideportiva vs.
+   sociedad anónima deportiva), no por país.
+3. **El catch-all pasó a "Otros ingresos"** a secas, porque "Otras secciones deportivas y otros
+   ingresos" quedaba pegado a su casi homónimo. Queda simétrico con "Otros gastos".
+
+LO QUE ESTO CAMBIA AL CARGAR UN CLUB NUEVO: ver las 3 filas nuevas de la tabla de la sección 1
+(`education`, `stadium_other`, `other_sports` en ingresos) antes de mandar una línea de colegio,
+polideportivo o alquiler de estadio a `other_income` por descarte. Y ojo con el criterio
+conservador de `stadium_other`: un "Alquileres" genérico NO es el estadio aunque probablemente lo
+sea — va a `other_income` y la duda a `dudas-por-club.md`.
+
+UN ERROR REAL QUE ESTA FUSIÓN DESTAPÓ, y que vale como advertencia general: al juntar las 3
+categorías en "Estadio", Athletic Club pasó a mostrar **97% de sus ingresos en esa fila**. No era
+culpa de la fusión: su línea "Ingresos deportivos" (139,5 M€, 82% del club) estaba categorizada
+entera como `matchday_competition` desde que se cargó, y la Nota 21.4 de sus propias cuentas la
+abre en 5 conceptos de los cuales el más grande son los 72,7 M€ de TELEVISIÓN. O sea que el sitio
+venía mostrando "Televisión 0,0" para un club que cobra 72,7 M€ de derechos. **MORALEJA: una
+categoría que agrupa mucho esconde el error; una que agrupa más lo hace visible.** Cuando una fila
+de Formato simplificado se lleva un porcentaje absurdo del total, sospechá de la categorización de
+la línea más grande antes que del bucket.
 
 **REGLA PERMANENTE Versión 49 (Guido: "el row Estadio y el row Entradas/Abonos conceptualmente son
 parecidos. Yo quiero que en Estadio esten las entradas que vende el club, y en Abonos los

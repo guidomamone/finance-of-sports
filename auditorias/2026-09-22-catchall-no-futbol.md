@@ -5,8 +5,11 @@
 algo similar también. no quiero hacer un flujo solo para Instituto y Vélez"*. Antes de discutir qué
 fila agregar, hacía falta un relevamiento real y no dos anécdotas.
 
-**No se tocó ni un dato ni una línea de código.** Esto es lectura, medición y recomendación. Las
-tres decisiones quedan abiertas, al final del documento.
+**Las secciones 1 a 6 son el relevamiento tal como se escribió, ANTES de que Guido decidiera**: no
+se había tocado ni un dato ni una línea de código, y las tres decisiones quedaban abiertas. **La
+sección 7, al final, es qué decidió y qué se implementó** (Versión 189, el mismo día). Se deja el
+documento en ese orden a propósito: la recomendación se lee mejor sabiendo que se escribió sin
+conocer la respuesta.
 
 **Cómo se midió (reproducible):** se cargaron los 41 `data/<club>-data.js` en un contexto `vm` de
 Node y se recorrieron TODOS los `revenueLines`/`expenseLines` de TODOS los ejercicios — **2.412
@@ -292,4 +295,65 @@ barato.
 - **(c)** ¿Eje nuevo no-fútbol, o filas caso por caso? *(mi lectura: filas ahora, eje anotado para
   los ~30 clubes sociales)*
 
-Ninguna se implementó. El to-do 20(b) sigue abierto.
+*(Guido las respondió las tres el mismo día. Ver la sección 7, al final, para qué decidió y qué se implementó — el to-do 20(b) quedó cerrado en la Versión 189.)*
+
+---
+
+## 7. LO QUE GUIDO DECIDIÓ, Y QUÉ SE IMPLEMENTÓ (mismo día, Versión 189)
+
+Este documento nació como relevamiento y recomendación. Guido decidió sobre las tres preguntas en
+la misma sesión, así que queda también el registro de qué se hizo, para que nadie lea las
+recomendaciones de arriba como si siguieran abiertas.
+
+**(a) La fila de estadio → ingresos, y UNA sola fila.** Guido fue más lejos que la recomendación:
+*"en vez de 'Estadio: recaudación de partidos' y 'Estadio: uso y alquiler', tengamos Estadio a
+secas, y si se presiona en el acordeón de estadio, sale el desagregado de ambos"*, y después
+*"pongamos abonos dentro de Estadio. O sea, el acordeón de estadio tiene 3 cosas y abonos deja de
+ser su propia fila"*. Resultado: "Estadio" es una fila con `matchday_competition` +
+`season_tickets` + `stadium_other`, el acordeón las separa, y la tabla crece **una sola fila neta**
+(−1 Abonos, +2 nuevas) en vez de tres. La fila de GASTOS de estadio no se hizo, por lo del punto 5:
+esa plata ya se ve bajo "Organización de partidos".
+
+**(b) Dos filas nuevas, no una.** "Educación" quedó como estaba propuesta. "Otras secciones
+deportivas y sociales" no: Guido marcó que chocaba con el catch-all (*"se me hacen muy parecidos
+'otros' y 'otras' al lado del otro"*) y eligió, entre 4 opciones, **"Otras secciones deportivas"**
+—idéntica carácter por carácter a la fila que ya existe del lado de Gastos, como manda la regla de
+la Versión 48— con el catch-all renombrado a **"Otros ingresos"** a secas.
+
+**(c) El eje no-fútbol: no ahora.** Se siguió la recomendación: filas ahora, eje anotado para
+cuando haya ~30 clubes sociales con desglose por sector (hoy son 4).
+
+**Y una cosa que Guido pidió y no estaba en ninguna de las tres preguntas**: que la fusión de
+abonos se pueda revertir sin un rediseño. Quedó como `ABONOS_DENTRO_DE_ESTADIO` en
+`js/finanzas-calc.js` — una palabra, sin tocar ningún archivo de datos, probado en los dos estados.
+
+### Lo que efectivamente se movió
+
+- 97 líneas recategorizadas en 10 clubes, **ningún monto tocado** (`auditAll()`: 41 clubes, 228
+  checks, 0 que no cierran, antes y después).
+- Catch-all de Ingresos: los club-años con ≥20% pasan de **27 a 10**; los ≥40%, de 2 a 0 (los dos
+  hallazgos P2 de `audit.js` se cerraron). Vélez 2016: 48,6% → 24,4%.
+- `stadium_other` se aplicó con un criterio más estrecho que el del relevamiento de arriba: **solo
+  3 clubes**, no 10. Las líneas de alquiler cuyo rótulo no dice qué propiedad es ("Diversos
+  (alquileres, concesiones, etc.)" de Argentinos, 14,2% de sus ingresos; "Recursos por alquiler de
+  instalaciones" de Unión; y 4 más) se quedaron en "Otros ingresos" y **la pregunta quedó anotada
+  en `dudas-por-club.md`**, en vez de suponer que son el estadio. Es la diferencia entre lo que el
+  documento dice y lo que deducimos.
+- Los dos hallazgos laterales del punto 4 siguen ABIERTOS: no se unificó "derechos de formación",
+  y la duda de "Uso del estadio" de Vélez sigue sin respuesta del club (aunque ahora importa menos:
+  las dos categorías candidatas caen en la misma fila).
+
+### Un error viejo que el cambio destapó, y que SÍ se arregló
+
+Al fusionar, **Athletic Club pasó a mostrar "Estadio = 97% de sus ingresos"**. El culpable no era
+la fusión: su línea "Ingresos deportivos" (139,5 M€, el 82% del club) estaba categorizada entera
+como `matchday_competition` desde que se cargó, y la Nota 21.4 de sus propias cuentas la abre en 5
+conceptos de los cuales el mayor son los **72,7 M€ de televisación**. O sea que el sitio venía
+diciendo "Televisión 0,0" para un club que cobra 72,7 M€ de derechos de TV. Se abrió en las 5
+líneas de la nota, que suman exacto el mismo total.
+
+**La moraleja, que vale para la próxima fusión de categorías**: una fila que agrupa mucho esconde
+un error de categorización; una que agrupa más lo vuelve visible. Cuando una fila de Formato
+simplificado se lleva un porcentaje absurdo del total, sospechar de la línea más grande que tiene
+adentro antes que del bucket.
+

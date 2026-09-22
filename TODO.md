@@ -60,8 +60,10 @@ perdieron sino que se descartaron:
 > punto 33 — **ese punto ya se cerró en la Versión 184**, y la tabla quedó como el insumo con el que
 > se armó `data/destacados.js`), qué campos tiene `clubs{}` para el tema de los
 > escudos, dónde está la grilla de mezcla, y por qué el catch-all de Vélez es en realidad una
-> pregunta sobre el techo del modelo. **Es temporal: Guido lo trabaja y lo borra**, y lo que
-> sobreviva se muda al punto que corresponda o a un skill.
+> pregunta sobre el techo del modelo (**esa sección, la de 20(b), quedó vieja: el punto se cerró en
+> la Versión 189 — el relevamiento que lo resolvió está en
+> `auditorias/2026-09-22-catchall-no-futbol.md`**). **Es temporal: Guido lo trabaja y lo borra**, y
+> lo que sobreviva se muda al punto que corresponda o a un skill.
 
 
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
@@ -118,29 +120,38 @@ perdieron sino que se descartaron:
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
 
-20. LO ÚNICO QUE QUEDA DE LOS HALLAZGOS DE AUDITORÍA (primera corrida, Versión 122-123). De los
-    8 subpuntos originales quedó **medio**, y es una decisión que Guido difirió a propósito. Todo lo
-    demás está cerrado; la historia está en `CHANGELOG.md`.
+40. UN CMS PARA QUE GUIDO CAMBIE COSAS SIN CÓDIGO (pregunta suya en la sesión del 2026-09-22, al
+    pedir que la fusión de abonos dentro de "Estadio" se pudiera revertir sin un lío: *"¿se podría
+    hacer un backend así sin necesidad de código yo pueda hacer cambios?"*).
+    LO QUE YA ESTÁ HECHO, y puede alcanzar: la decisión concreta que motivó la pregunta quedó en
+    una constante con nombre (`ABONOS_DENTRO_DE_ESTADIO`, `js/finanzas-calc.js`), con el comentario
+    de qué correr después. Revertirla es cambiar una palabra.
+    LO QUE FALTARÍA, si la pregunta era más amplia: un CMS tipo Decap/Netlify CMS apuntado a un
+    archivo de configuración del repo — le da a Guido una pantalla web con formularios que
+    commitea sola, sin dejar de ser un sitio estático. Es una sesión de trabajo propia más resolver
+    la autenticación.
+    LO QUE NO: un backend con base de datos. Contradice la arquitectura (estática, sin build),
+    cuesta plata, y haría que cada visitante pida la config antes de ver una tabla.
+    ANTES DE ARRANCAR: preguntarle a Guido QUÉ querría editar desde ahí. Si es solo el orden y el
+    nombre de las filas, el archivo de configuración solo ya alcanza y el CMS es de más.
 
-    (b) **VÉLEZ 2016 (49%) y 2017 (43%) de Ingresos, el catch-all.** Instituto ya salió de acá
-        (Versión 172: su Anexo V sí tenía desglose por sector y bajó de 42% a 27%). Vélez no, y es
-        otro problema: el 100% de su catch-all es `other_income` y son 5 líneas identificables las
-        dos veces — "Por servicios de enseñanza" + "Subsidios estatales a la educación" (**Vélez
-        tiene colegio**: 20,2% en 2016 y 22,5% en 2017, o sea la mitad del catch-all y un negocio
-        real), "Otros derechos de fútbol profesional", "Derechos de formación" y "Uso del estadio".
-        Ese desglose ya está MEDIDO, no hay que volver a calcularlo.
-        DECISIÓN DE GUIDO (2026-09-20): **está de acuerdo en agregar una fila de estadio, pero
-        quiere tratar el tema con profundidad en una sesión propia, así que NO se implementó.**
-        DOS COSAS QUE HAY QUE RESOLVER EN ESA SESIÓN, y por eso no alcanzaba con agregarla y listo:
-        · Guido la nombró **"Gastos de Estadio"**, que es una fila de GASTOS, y el problema de Vélez
-          está del lado de los INGRESOS (su línea es "Uso del estadio", alquiler del estadio, un
-          ingreso). Hay que aclarar si quiere las dos filas, solo la de ingresos, o si el tema es
-          más amplio de lo que este punto cubre.
-        · Y está el costo que hace que valga la pena pensarlo: por la regla de la Versión 53, las
-          filas de Formato simplificado son SIEMPRE las mismas para todos los clubes, así que
-          cualquier fila nueva aparece en los 41, la mayoría en $0. Rinde si el rubro se repite
-          entre clubes; no rinde si es solo Vélez. Lo mismo para una fila de "Educación", que es la
-          otra mitad del catch-all de Vélez.
+41. EL GRÁFICO DE LA VIDRIERA DE INICIO SE DIBUJA DOS VECES (encontrado de paso el 2026-09-22, NO
+    lo causó la Versión 189 — `js/liga.js` no se tocó). La consola tira 4 errores en cada carga:
+    `Canvas is already in use. Chart with ID 'N' must be destroyed before the canvas with ID
+    'vidChartN' can be reused`. `index.html` llama `LIGA_VIEW.refresh()` en DOS lugares (líneas
+    1675 y 1960), y aunque `renderDestacados()` arranca con `matarCharts('dest')`, las instancias
+    de la primera pasada no se están destruyendo. Efecto visible posible: los 4 gráficos de
+    rankings de la portada pueden quedar en blanco. Es un bug de ciclo de vida de Chart.js, no de
+    datos.
+
+42. ASIMETRÍA QUE DEJÓ LA VERSIÓN 189: Ingresos tiene fila "Educación", Gastos no. El gasto del
+    colegio de un club cae hoy dentro de "Otras secciones deportivas (juvenil, otros deportes,
+    básquet)" — es lo que hace Independiente con "Centro Educativo (gasto)" e Instituto con sus
+    líneas de Colegio. O sea que el sitio puede mostrar cuánto INGRESA un colegio pero no cuánto
+    CUESTA, y el margen del negocio no se puede leer. Resolverlo es crear `education_expense` y
+    recategorizar esas líneas en ~4 clubes. NO se hizo en la 189 porque Guido decidió solo las
+    filas de Ingresos, y agregar una fila de Gastos sin que la pidiera sería ampliar el alcance
+    solo.
 
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
