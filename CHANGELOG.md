@@ -2463,3 +2463,18 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   "Otras secciones deportivas y otros ingresos: −5,6 M USD". Confirmado por consola que
   Botafogo 2024 y Envigado 2025 también cierran ahora (`mezclaNeto === revenue` en los tres).
   `node tools/audit.js`: 0 P0, 0 P1.
+
+## Versión 187: el sufijo del `<select>` de ejercicio en Finanzas, traducido (cierra el to-do 44)
+
+- **`anioDropdownSuffix()`** (`js/finanzas-calc.js`): las 4 palabras (" (Presupuesto)"/" (Balance)"/
+  " (Presupuesto y Balance)"/" (Placeholder)") pasan por `t()`. Queda como función aparte de
+  `ejercicioLabel()` (que traduce el prefijo del header de la tabla desde el to-do 42), a propósito:
+  comparten concepto pero no texto — "Presupuesto y Balance" y "Placeholder" no tienen equivalente
+  en `ejercicioLabel()`.
+- 4 claves nuevas en `data/lang/en.js` (372 → 376): `ejercicio.dropdown.budget`,
+  `ejercicio.dropdown.budgetAndBalance`, `ejercicio.dropdown.balance`, `ejercicio.dropdown.placeholder`.
+- **ASSET_V 186 → 187**, constante y los 15 `<script src>`; `fuentes.html` y las 41 páginas de club
+  regeneradas.
+- Verificado en el navegador, en inglés: el `<select>` de ejercicio de Boca (Budget/Balance) y de
+  Racing (Budget and balance sheet, todas las combinaciones) ya no muestra nada en castellano; en
+  castellano, idéntico a antes. `node tools/audit.js`: 0 P0, 0 P1 (igual que antes de esta sesión).

@@ -85,14 +85,6 @@ perdieron sino que se descartaron:
     el nav, `data/lang/en.js` y varios `data-i18n`. No es urgente: es una pasada de copy
     sobre las 6, no un arreglo de una.
 
-44. OTRO TEXTO SIN TRADUCIR, MISMO PATRÓN QUE EL TO-DO 42 QUE SE CERRÓ EN ESTA SESIÓN
-    (encontrado al verificar ese punto en el navegador, en inglés): `anioDropdownSuffix()`
-    (`js/finanzas-calc.js`) arma el sufijo " (Presupuesto)" / " (Balance)" / " (Presupuesto
-    y Balance)" / " (Placeholder)" del `<select>` de ejercicio de Finanzas, en castellano
-    duro — no pasa por `ejercicioLabel()` (que ya traduce desde el to-do 42), es una función
-    aparte con su propio texto. No se tocó en esa pasada porque no era uno de los 4 puntos
-    que pidió Guido explícitamente.
-
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.

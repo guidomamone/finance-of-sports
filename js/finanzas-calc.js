@@ -540,11 +540,15 @@
   // "(Balance)", mismo criterio de siempre para `official_balance_sheet`/`unofficial_mirror`
   // (y cualquier otro reportType no listado arriba). Sigue siendo SOLO 4 palabras posibles, nunca
   // una 5ta inventada para un caso puntual.
+  // i18n (to-do 44, mismo patrón que ejercicioLabel() en el to-do 42): las 4 palabras son texto
+  // propio de esta función, no pasan por ejercicioLabel() aunque compartan concepto (ejercicioLabel
+  // dice "Balance"/"Presupuesto" a secas como PREFIJO del header de la tabla; acá es un SUFIJO entre
+  // paréntesis del <select>, y "Presupuesto y Balance"/"Placeholder" no tienen equivalente ahí).
   function anioDropdownSuffix(reportType){
-    if(reportType === 'official_budget') return ' (Presupuesto)';
-    if(reportType === 'official_budget_and_balance') return ' (Presupuesto y Balance)';
-    if(reportType === 'placeholder' || reportType === 'pending_official') return ' (Placeholder)';
-    return ' (Balance)';
+    if(reportType === 'official_budget') return t('ejercicio.dropdown.budget', ' (Presupuesto)');
+    if(reportType === 'official_budget_and_balance') return t('ejercicio.dropdown.budgetAndBalance', ' (Presupuesto y Balance)');
+    if(reportType === 'placeholder' || reportType === 'pending_official') return t('ejercicio.dropdown.placeholder', ' (Placeholder)');
+    return t('ejercicio.dropdown.balance', ' (Balance)');
   }
 
 
