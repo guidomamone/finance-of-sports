@@ -153,6 +153,16 @@ perdieron sino que se descartaron:
     filas de Ingresos, y agregar una fila de Gastos sin que la pidiera sería ampliar el alcance
     solo.
 
+43. "DERECHOS DE FORMACIÓN / MECANISMO DE SOLIDARIDAD" ESTÁ CATEGORIZADO DISTINTO SEGÚN EL CLUB,
+    sin que haya una decisión de diseño detrás — es una inconsistencia pura (hallazgo lateral del
+    relevamiento de la Versión 189, `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i).
+    Mismo concepto económico, dos destinos: visible en `player_sales` ("Venta de Jugadores") para
+    Argentinos, Boca, Envigado, Independiente, Once Caldas, Rosario Central y San Lorenzo; invisible
+    en el catch-all (`youth_football`/`other_income`) para Botafogo, Cruzeiro, Estudiantes, Grêmio,
+    Racing, Unión y Vélez (7,0% de sus ingresos en 2016). Unificarlo a `player_sales` en los 7 del
+    segundo grupo le baja el catch-all a Vélez y a los otros 6 sin tocar ningún total. No es
+    urgente y no depende de ninguna otra decisión.
+
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
     para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
     de esta corrida). (a), (b), (c), (e), (f), (g), (h) e (i) resueltos y (d) descartado, se borran
