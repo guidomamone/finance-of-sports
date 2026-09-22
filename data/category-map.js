@@ -59,6 +59,7 @@ const EXPENSE_CATEGORIES = [
   // cae en el catch-all genérico `other_expenses` para un club/año que sí tiene el desglose
   // disponible en la fuente.
   'match_organisation_expense',     // costo de organizar partidos/participar en competencias (seguridad, viajes, concentración, AFA, tickets, etc.)
+  'education_expense',              // colegio/escuela del club: sueldos docentes, mantenimiento, servicios del área educativa (Versión 194). Espejo, del lado de Gastos, de `education` (ver su comentario arriba) — hasta la 193 caía en `youth_other_sports_expense` o `admin_general_expense` según el club, sin fila propia, así que el sitio podía mostrar cuánto INGRESA un colegio pero no cuánto CUESTA. NO incluye escuelas/academias de fútbol (eso es youth_other_sports_expense) ni educación física del plantel (eso es admin_general_expense o wages_squad según el caso).
   'youth_other_sports_expense',     // fútbol juvenil, femenino, otros deportes, básquet, actividades sociales (todo lo que no es el plantel profesional)
   'admin_general_expense',          // administración, gastos generales, comerciales, impuestos, mantenimiento de sede/estadio (costos NO deportivos)
   'other_expenses',
@@ -73,6 +74,7 @@ const EXPENSE_CATEGORY_LABELS = {
   other_amortisation: 'Otras amortizaciones',
   exceptional_items: 'Ítems excepcionales',
   match_organisation_expense: 'Organización de partidos',
+  education_expense: 'Educación',
   youth_other_sports_expense: 'Otras secciones deportivas (juvenil, otros deportes, básquet)',
   admin_general_expense: 'Administración y gastos generales',
   other_expenses: 'Otros gastos',

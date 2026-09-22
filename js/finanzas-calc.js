@@ -340,11 +340,20 @@
   // mostraba para 2027, que tenía 7). Mapeo real hecho en `data/racing-data.js` (ver comentario ahí
   // antes de `racingExpenseLinesByYear`) y documentado en
   // `.claude/skills/club-data-mapping/SKILL.md` sección 13.
+  // Versión 194 (to-do 42): se agrega "Educación" del lado de Gastos, espejo de la fila que
+  // Ingresos ya tiene desde la Versión 189. Hasta acá el sitio podía mostrar cuánto INGRESA un
+  // colegio de club pero no cuánto CUESTA (esa plata caía en "Otras secciones deportivas" o en
+  // "Administración", según el club), así que no se podía leer el margen del negocio. Recategorizado
+  // en Independiente, Racing y Unión (líneas ya puras, un cambio de categoría) e Instituto (líneas
+  // compuestas del Anexo V que mezclan Colegio con Básquet/Sede/La Agustina/Tienda, partidas usando
+  // la columna COLEGIO que el propio anexo imprime — ver comentario en data/instituto-data.js).
+  // NINGÚN monto cambia, es recategorización pura.
   const GENERIC_SIMPLIFIED_EXPENSE_BUCKETS = [
     {label:'Compra de jugadores', cats:['player_amortisation','player_impairment']},
     {label:'Salarios y primas (plantel y cuerpo técnico)', cats:['wages_squad']},
     {label:'Inversiones (amortizaciones y depreciación)', cats:['depreciation','other_amortisation']},
     {label:'Organización de partidos', cats:['match_organisation_expense']},
+    {label:'Educación', cats:['education_expense']},
     {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', cats:['youth_other_sports_expense']},
     {label:'Administración y gastos generales', cats:['admin_general_expense']},
     {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations_expense'], hideIfZero:true},
@@ -527,7 +536,7 @@
     // verifyTieOuts, de TODO cálculo del sitio: KPI "Gastos", deuda, comparar gestiones), Racing
     // pasó a mostrar SUPERÁVIT en años que en realidad tuvieron déficit real. Detectado por
     // verifyTieOuts() dejando de cerrar en Revenue/Expenses Y en PAT para 2024/2025.
-    const otherExpenses = sumCat(expenseLines, ['other_expenses','lump_football_operations_expense','match_organisation_expense','youth_other_sports_expense','admin_general_expense']);
+    const otherExpenses = sumCat(expenseLines, ['other_expenses','lump_football_operations_expense','match_organisation_expense','education_expense','youth_other_sports_expense','admin_general_expense']);
     const expenses = wages + otherExpenses;
     const ebitda = revenue + expenses;
     const exceptionalItems = sumCat(expenseLines, ['exceptional_items']);

@@ -77,12 +77,14 @@ const independienteExpenseLinesByYear = {
     { rawLabel:'Gastos partidos amistosos', normalizedCategory:'match_organisation_expense', amountNative:-60.245184, disclosureLevel:'detailed' },
     { rawLabel:'Gastos directos derivados de la venta de jugadores', normalizedCategory:'other_expenses', amountNative:-738.442785, disclosureLevel:'detailed' },
     // Resto de departamentos (Anexo V, nivel departamento) — "todo lo que no es plantel
-    // profesional", ver EXPENSE_CATEGORY_LABELS.youth_other_sports_expense.
+    // profesional", ver EXPENSE_CATEGORY_LABELS.youth_other_sports_expense. "Centro Educativo
+    // (gasto)" es la excepción desde la Versión 194 (to-do 42): va a `education_expense`, espejo de
+    // la fila "Centro Educativo" que Ingresos ya tenía en `education` desde la Versión 189.
     { rawLabel:'Fútbol Juvenil (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-1917.566423, disclosureLevel:'detailed' },
     { rawLabel:'Departamento Educación Física (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-711.290588, disclosureLevel:'detailed' },
     { rawLabel:'Complejo de Tenis (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-310.260968, disclosureLevel:'detailed' },
     { rawLabel:'Filial Capital Federal (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-221.044991, disclosureLevel:'detailed' },
-    { rawLabel:'Centro Educativo (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-2324.309805, disclosureLevel:'detailed' },
+    { rawLabel:'Centro Educativo (gasto)', normalizedCategory:'education_expense', amountNative:-2324.309805, disclosureLevel:'detailed' },
     { rawLabel:'Complejo Polideportivo Wilde (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-931.945511, disclosureLevel:'detailed' },
     { rawLabel:'Parque Santo Domingo (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-1723.064013, disclosureLevel:'detailed' },
     { rawLabel:'Estadio (gasto)', normalizedCategory:'youth_other_sports_expense', amountNative:-1889.285004, disclosureLevel:'detailed' },

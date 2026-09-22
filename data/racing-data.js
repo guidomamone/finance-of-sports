@@ -609,11 +609,12 @@ const racingRevenueLinesByYear = {
 //   sub-ítems de otras actividades deportivas E instituciones educativas). Mismo concepto que
 //   "Fútbol Juvenil"+"Otros Deportes"+"Basket" de Boca.
 // - `admin_general_expense`: "Televisión AFA"/"Honorarios órgano fiduciario"/"Honorarios y otras
-//   contribuciones"/"Mantenimiento"/"Sellados, multas y gastos bancarios"/"Colegio"/"Sede Villa del
+//   contribuciones"/"Mantenimiento"/"Sellados, multas y gastos bancarios"/"Sede Villa del
 //   Parque" (2009-2011/2024/2025), "Pago de gastos explotación del estadio"/"Pago de gastos de
 //   comercialización"/"Otros egresos" (2026/2027, incluye sub-ítems de administración/impuestos/
 //   gastos financieros). Mismo concepto que "Administración"+"Gastos Generales"+"Comerciales"+
-//   "Socios"+"Eventuales" de Boca.
+//   "Socios"+"Eventuales" de Boca. "Colegio" (2009-2018, ver abajo) SALIÓ de esta lista en la
+//   Versión 194 (to-do 42): pasó a `education_expense`, que no existía todavía en la Versión 53.
 // - CASO CONSULTADO (Guido eligió la 1ra opción vía AskUserQuestion): "Fútbol profesional"
 //   (2009-2011/2024/2025) y "Pago de otros gastos deportivos fútbol profesional" (2026/2027) son
 //   costos NO salariales del plantel profesional (médico, indumentaria, viajes, pretemporada), la
@@ -655,7 +656,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Honorarios y otras contribuciones', normalizedCategory:'admin_general_expense', amountNative:-0.239, disclosureLevel:'detailed' },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.318, disclosureLevel:'detailed' },
     { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.068, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.251, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-0.251, disclosureLevel:'detailed' },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.491, disclosureLevel:'detailed' },
     { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-1.506, disclosureLevel:'detailed' },
     { rawLabel:'Amortizaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-0.259, disclosureLevel:'detailed' },
@@ -669,7 +670,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-1.735, disclosureLevel:'detailed' },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.41, disclosureLevel:'detailed' },
     { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.124, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.043, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-0.043, disclosureLevel:'detailed' },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.13, disclosureLevel:'detailed' },
     { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-0.167, disclosureLevel:'detailed' },
     { rawLabel:'Amortizaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-0.303, disclosureLevel:'detailed' },
@@ -683,7 +684,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-2.279, disclosureLevel:'detailed' },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.255, disclosureLevel:'detailed' },
     { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.189, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.041, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-0.041, disclosureLevel:'detailed' },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.185, disclosureLevel:'detailed' },
     { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-0.992, disclosureLevel:'detailed' },
     { rawLabel:'Amortizaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-0.316, disclosureLevel:'detailed' },
@@ -704,7 +705,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-11.285320 },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-1.365491 },
     { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-1.252515 },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.198060 },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-0.198060 },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-0.998536 },
     { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-43.047765 },
     { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.442073 },
@@ -729,7 +730,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-13.000589 },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-1.321368 },
     { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-0.331475 },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-1.153084 },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-1.153084 },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1.617500 },
     { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-20.602181 },
     { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.486409 },
@@ -750,7 +751,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-17.848486 },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-2.362159 },
     { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-4.507312 },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.370414 },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-0.370414 },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1.209085 },
     { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-34.347235 },
     { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.578112 },
@@ -770,7 +771,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-49.287058 },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-5.121782 },
     { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-14.797764 },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-1.077987 },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-1.077987 },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-2.845248 },
     { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-19.501483 },
     { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-1.968198 },
@@ -791,7 +792,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Grales. Actividades Deportivas / Soc.', normalizedCategory:'youth_other_sports_expense', amountNative:-31.493115 },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-9.084199 },
     { rawLabel:'Sellados, Multas, Gtos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-3.326824 },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-0.547052 },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-0.547052 },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-1.644146 },
     { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-53.266710 },
     { rawLabel:'Amortizaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-1.683948 },
@@ -811,7 +812,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Actividades Deportivas y Sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-67.837036 },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-6.560212 },
     { rawLabel:'Sellados, Multas y Gastos Bancarios', normalizedCategory:'admin_general_expense', amountNative:-24.037401 },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-1.413230 },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-1.413230 },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-4.879757 },
     { rawLabel:'Costo Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-110.485332 },
     { rawLabel:'Depreciaciones de Bienes de Uso', normalizedCategory:'depreciation', amountNative:-6.073853 },
@@ -832,7 +833,7 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Actividades deportivas y sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-97.925553, disclosureLevel:'detailed' },
     { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-8.374754, disclosureLevel:'detailed' },
     { rawLabel:'Sellados, multas y gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-32.075059, disclosureLevel:'detailed' },
-    { rawLabel:'Colegio', normalizedCategory:'admin_general_expense', amountNative:-2.570500, disclosureLevel:'detailed' },
+    { rawLabel:'Colegio', normalizedCategory:'education_expense', amountNative:-2.570500, disclosureLevel:'detailed' },
     { rawLabel:'Sede Villa del Parque', normalizedCategory:'admin_general_expense', amountNative:-9.166669, disclosureLevel:'detailed' },
     { rawLabel:'Costo transferencia de jugadores', normalizedCategory:'player_amortisation', amountNative:-218.891538, disclosureLevel:'detailed' },
     { rawLabel:'Depreciaciones de bienes de uso', normalizedCategory:'depreciation', amountNative:-7.775936, disclosureLevel:'detailed' },

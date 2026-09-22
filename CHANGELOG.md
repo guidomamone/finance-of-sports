@@ -2588,3 +2588,28 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   Guido: no retomar antes de ~un mes.
 - To-do 40 (CMS sin código): mismo criterio, en pausa ~un mes.
 - Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`.
+
+## Versión 194: "Educación" también del lado de Gastos (cierra el to-do 42)
+
+- `education_expense` nueva en `data/category-map.js`, y fila "Educación" en
+  `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` (`js/finanzas-calc.js`), al lado de "Otras secciones
+  deportivas" — espejo de la fila que Ingresos ya tenía desde la Versión 189. Hasta acá el sitio
+  mostraba cuánto INGRESA un colegio de club pero no cuánto CUESTA, así que no se podía leer el
+  margen del negocio.
+- BUG evitado antes de que llegara a producción: `computeYearGeneric()` sumaba
+  `youth_other_sports_expense`/`admin_general_expense`/etc. a `otherExpenses` a mano por nombre de
+  categoría — el mismo bug que ya había pasado una vez al crear esas 3 categorías en la Versión 53
+  (plata que desaparecía de todo cálculo del sitio, no solo de `verifyTieOuts()`). Se agregó
+  `education_expense` a esa lista. `node tools/audit.js` (`categoria-huerfana`, P0) lo habría
+  cazado igual si se hubiera escapado.
+- Recategorizado, ningún monto tocado: Independiente ("Centro Educativo (gasto)"), Unión
+  ("Departamento para la Actividad Educativa", 2 ejercicios) y Racing ("Colegio", 10 ejercicios
+  2009-2018) tenían líneas ya puras — cambio de categoría solo. Instituto no: sus 6 líneas del
+  Anexo V mezclan Colegio con Básquet/La Agustina/Sede/Tienda en un solo monto por fila, así que se
+  partieron usando la columna COLEGIO que el propio Anexo V imprime (Clubes/Argentina/Instituto/
+  balance-general-2023-2024.md, pág. 17) — no una estimación. Los 6 pares (y el trío de
+  "Remuneraciones y cargas") cierran exacto contra el total impreso de su fila original.
+- `auditAll()`: 41 clubes, 228 checks, 0 que no cierran, 0 warnings — antes y después, ningún total
+  cambió. `node tools/audit.js`: 0 P0, 0 P1.
+- ASSET_V 192 → 194 (se saltea 193, que no tocaba `js/`/`data/`), constante y los 15 `<script src>`;
+  `fuentes.html` y las 41 páginas de club regeneradas.

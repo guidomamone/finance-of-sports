@@ -136,15 +136,6 @@ perdieron sino que se descartaron:
     nombre de las filas, el archivo de configuración solo ya alcanza y el CMS es de más.
     EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
 
-42. ASIMETRÍA QUE DEJÓ LA VERSIÓN 189: Ingresos tiene fila "Educación", Gastos no. El gasto del
-    colegio de un club cae hoy dentro de "Otras secciones deportivas (juvenil, otros deportes,
-    básquet)" — es lo que hace Independiente con "Centro Educativo (gasto)" e Instituto con sus
-    líneas de Colegio. O sea que el sitio puede mostrar cuánto INGRESA un colegio pero no cuánto
-    CUESTA, y el margen del negocio no se puede leer. Resolverlo es crear `education_expense` y
-    recategorizar esas líneas en ~4 clubes. NO se hizo en la 189 porque Guido decidió solo las
-    filas de Ingresos, y agregar una fila de Gastos sin que la pidiera sería ampliar el alcance
-    solo.
-
 43. "DERECHOS DE FORMACIÓN / MECANISMO DE SOLIDARIDAD" ESTÁ CATEGORIZADO DISTINTO SEGÚN EL CLUB,
     sin que haya una decisión de diseño detrás — es una inconsistencia pura (hallazgo lateral del
     relevamiento de la Versión 189, `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i).
