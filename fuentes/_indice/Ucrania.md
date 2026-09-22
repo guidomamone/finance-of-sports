@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Ucrania. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Ucrania/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Decimoctavo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18), el
 ÚLTIMO de la lista.** El hallazgo real no fue un registro mercantil sino el art. 14 de la Ley

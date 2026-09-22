@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Portugal. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Portugal/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Decimotercer país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). La mejor
 cobertura de liga completa lograda hasta ahora**: 17 de 18 clubes con datos reales. Sporting CP dio

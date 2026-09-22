@@ -69,5 +69,35 @@
     "code": "clubid-hardcodeado",
     "match": "isBoca2027",
     "motivo": "DECISIÓN DE GUIDO (to-do 20(g), cerrado el 2026-09-20, reafirmada ese día). Es el ÚNICO literal de clubId que queda en el código y se queda a propósito: gatea los 3 cards de torneo, una feature que hoy tiene UN club y UN ejercicio (Boca 2026/27). Generalizarla ahora significa inventar un esquema de datos sobre un solo caso, que es como se diseña mal; el costo de dejarla es una línea de deuda conocida y anotada. EL DÍA QUE UN SEGUNDO CLUB TRAIGA DESGLOSE POR TORNEO, ahí se generaliza, con dos casos reales adelante — y ese día hay que BORRAR esta entrada, no ampliarla. Los otros 4 literales que tenía el proyecto se fueron en las Versiones 135 y 137."
+  },
+  {
+    "code": "ruta-muerta",
+    "match": "`js/comparar-clubes.js`: no existe",
+    "motivo": "VERIFICADO 2026-09-22 (Versión 198, chequeo `ruta-muerta` nuevo): el archivo se BORRÓ en la Versión 152 y las 3 menciones existen justamente para decirlo — Admin/ARQUITECTURA.md dice 'ya no existe', Admin/ESTADO.md que todo vive en js/selector.js, y js/selector.js que los dos cards son la única forma de comparar desde entonces. No es un puntero roto: es el registro de una vista que se reemplazó. NO 'arreglar' cambiando la ruta."
+  },
+  {
+    "code": "ruta-muerta",
+    "match": "`fuentes/data/lang/en.js`: no existe",
+    "motivo": "VERIFICADO 2026-09-22 (Versión 198): esta ruta se nombra para describir un BUG YA ARREGLADO. Las páginas `fuentes/<clubId>.html` pedían el diccionario relativo a su propia carpeta, o sea `fuentes/data/lang/en.js`, y se comían un 404 en silencio; se resolvió con el `prefijo: '../'` de tools/generate-fuentes-page.js. La ruta no tiene que existir nunca — nombrarla es el punto del comentario."
+  },
+  {
+    "code": "ruta-muerta",
+    "match": "`fuentes/data/lang/langs.js`: no existe",
+    "motivo": "VERIFICADO 2026-09-22 (Versión 198): mismo caso que `fuentes/data/lang/en.js` — el comentario de tools/generate-fuentes-page.js explica que sin el prefijo `../` la página de un club pediría esta ruta, 'que no existe', y se quedaría sin traducir. Es la descripción del bug que ese código evita."
+  },
+  {
+    "code": "ruta-muerta",
+    "match": "`data/lang/es.js`: no existe",
+    "motivo": "VERIFICADO 2026-09-22 (Versión 198): ausencia DELIBERADA y documentada. data/lang/langs.js dice, textual, que 'el castellano es el idioma fuente: no tiene `data/lang/es.js` porque el HTML del sitio ya está escrito en castellano'. Si algún día existiera ese archivo, el hallazgo desaparece solo."
+  },
+  {
+    "code": "ruta-muerta",
+    "match": "`PROMPT-generador-indice-fuentes.md`: no existe",
+    "motivo": "VERIFICADO 2026-09-22 (Versión 198): archivo borrado, citado como HISTORIA en el comentario de checkDeployInterno() de tools/audit.js. Es el segundo caso conocido de un documento interno que se escapó al deploy (Versión 175), y el ejemplo que justifica que ese chequeo exista. Borrar la mención sería borrar el porqué del chequeo."
+  },
+  {
+    "code": "ruta-muerta",
+    "match": "`PROMPT-selector-jerarquico.md`: no existe",
+    "motivo": "VERIFICADO 2026-09-22 (Versión 198): archivo borrado, citado como HISTORIA en la cabecera de data/club-leagues.js para explicar de dónde venía la idea de un campo `league` en clubs{} y por qué se descartó. Mismo criterio que `PROMPT-generador-indice-fuentes.md`."
   }
 ]

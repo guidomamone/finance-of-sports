@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Austria. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Austria/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Segundo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17), tras Alemania
 (Arabia Saudita quedó saltada a pedido de Guido).** El Firmenbuch austríaco existe pero está bloqueado

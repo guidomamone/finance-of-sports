@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Perú. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Perú/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [Alianza Lima](../Perú/Alianza Lima.md) — 6 ejercicios consecutivos reales (2019-2024) — Último chequeo: 2026-09-12
 - [Sporting Cristal](../Perú/Sporting Cristal.md) — sin PDF, S.A. cerrada sin obligación de reporte — Último chequeo: 2026-09-12

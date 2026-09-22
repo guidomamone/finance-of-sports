@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Ecuador. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Ecuador/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 Contexto clave (ver `_notas-generales.md`): a la fecha, NINGÚN club ecuatoriano es todavía una
 S.A.D.P./SAD — el reglamento que habilita la conversión recién se emitió en junio de 2026 y ningún

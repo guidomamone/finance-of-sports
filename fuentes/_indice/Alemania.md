@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Alemania. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Alemania/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Primer país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-16/17), recorrida en
 orden alfabético.** Los 18 clubes de la Bundesliga 2025/26 quedaron cubiertos entre dos canales:

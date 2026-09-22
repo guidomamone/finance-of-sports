@@ -401,6 +401,10 @@ completo está en `Admin/CONVENCIONES.md`.
   código, docs), agrupada en P0/P1/P2/P3. `--json` para la lista completa,
   `--quiet` para usarlo como gate antes de un push. `tools/audit-ignore.json`
   silencia lo YA verificado a mano contra el documento — nunca lo no verificado.
+  Desde la Versión 198 incluye `ruta-muerta` (P2): rutas de archivo nombradas en los archivos
+  VIVOS que ya no existen, entre backticks o como link Markdown. Los históricos
+  (`Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md`, `Admin/Archive/`, `auditorias/`)
+  quedan afuera a propósito: una ruta vieja ahí era verdad el día que se escribió.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.

@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Colombia. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Colombia/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [America de Cali](../Colombia/America de Cali.md) — estados financieros 2025 reales, en reorganización — Último chequeo: 2026-09-12
 - [Atletico Nacional](../Colombia/Atletico Nacional.md) — estados financieros 2025 reales — Último chequeo: 2026-09-12

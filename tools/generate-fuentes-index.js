@@ -205,7 +205,14 @@ function clasificar(club) {
 // Armado de la línea de país, en el formato EXACTO del archivo de hoy.
 // ---------------------------------------------------------------------------
 function linkPais(pais) {
-  const rel = `fuentes/_indice/${pais}.md`;
+  // RELATIVO A `fuentes/`, no a la raíz: el destino de este generador es
+  // `fuentes/README.md`, o sea que vive en la misma carpeta que `_indice/`.
+  // Hasta la Versión 198 decía `fuentes/_indice/...` —correcto cuando el índice
+  // era el viejo fuentes-por-club.md en la raíz, roto desde que la 196 lo movió acá
+  // adentro, porque resolvía a `fuentes/fuentes/_indice/...`. Lo encontró
+  // `checkRutasMuertas()` de tools/audit.js, que resuelve los links Markdown
+  // desde la carpeta del archivo que los contiene.
+  const rel = `_indice/${pais}.md`;
   // Markdown exige `<>` alrededor del destino cuando tiene espacios o paréntesis.
   return /[ ()]/.test(rel) ? `[${pais}](<${rel}>)` : `[${pais}](${rel})`;
 }

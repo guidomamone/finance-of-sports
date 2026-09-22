@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Inglaterra. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Inglaterra/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 Primer país con más de un deporte. El canal es **Companies House** (gratis, sin API key, toda
 sociedad limitada obligada a depositar cuentas auditadas) y, para los clubes de cricket, el

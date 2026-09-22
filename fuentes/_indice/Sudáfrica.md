@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Sudáfrica. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Sudáfrica/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [Kaizer Chiefs](../Sudáfrica/Kaizer Chiefs.md) — (Pty) Ltd, exceptuado de presentar AFS ante CIPC — Último chequeo: 2026-09-13
 - [Orlando Pirates](../Sudáfrica/Orlando Pirates.md) — (Pty) Ltd, mismo dead-end; manual PAIA sin leer (403) — Último chequeo: 2026-09-13

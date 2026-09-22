@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Croacia. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Croacia/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Sexto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El registro
 central croata (RGFI-JAV/FINA) NO es gratis como Bélgica/Alemania — exige cuenta para cualquier

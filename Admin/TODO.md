@@ -64,16 +64,6 @@ perdieron sino que se descartaron:
     SERVIDO en producción** (`financeofsports.com/COMO-CORRE-EL-PROYECTO.html` devolvía 200): era
     `.html` en la raíz, y el `rm -f` de `netlify.toml` solo listaba `.md`. Ya no.
 
-46. CHEQUEO DE RUTAS MUERTAS EN `tools/audit.js` (salió de la reorganización de la Versión 196).
-    Un chequeo que recorra los archivos VIVOS (`CLAUDE.md`, `index.html`, `js/`, `tools/`,
-    `data/`, los 6 skills y los `.md` de `Admin/` menos los históricos) buscando rutas de archivo
-    entre backticks que ya no existen en disco. Hoy esa verificación se hizo a mano con un script
-    de una sola corrida: 203 líneas de referencias en 31 archivos, y una sola equivocada habría
-    mandado a una sesión futura a un archivo inexistente sin que nada se queje.
-    **Qué NO tiene que mirar**: `Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md`,
-    `auditorias/` y `Admin/Archive/`, que son historia — una ruta vieja ahí es correcta.
-    Sin esto, la deuda que la 196 limpió se vuelve a juntar sola con la próxima mudanza.
-
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.

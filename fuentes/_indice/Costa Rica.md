@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Costa Rica. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Costa Rica/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [Alajuelense](../Costa Rica/Alajuelense.md) — sin PDF, informes a socios sin publicar — Último chequeo: 2026-09-13
 - [Saprissa](../Costa Rica/Saprissa.md) — sin PDF, auditado por Grant Thornton pero no público — Último chequeo: 2026-09-13

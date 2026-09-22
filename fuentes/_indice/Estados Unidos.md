@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Estados Unidos. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Estados Unidos/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [Atlanta Braves](<../Estados Unidos/Atlanta Braves.md>) — **béisbol (MLB)** — 10-K 2025 real descargado, 3 ejercicios disponibles — Último chequeo: 2026-09-13
 - [New York Knicks](<../Estados Unidos/New York Knicks.md>) — **básquet (NBA)** — 10-K FY2026 real descargado, comparte documento con los Rangers — Último chequeo: 2026-09-13

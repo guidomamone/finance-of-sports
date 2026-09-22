@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Italia. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Italia/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Décimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El motor acá
 no es un registro mercantil (el Registro delle Imprese es pago, igual que Austria/Croacia) sino la

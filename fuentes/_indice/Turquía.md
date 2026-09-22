@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Turquía. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Turquía/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Decimoséptimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18).** Los 4
 grandes (Galatasaray/Fenerbahçe/Beşiktaş/Trabzonspor) son un caso único: el club-asociación cotiza

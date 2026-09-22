@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Países Bajos. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Países Bajos/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Duodécimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** La KvK
 (Kamer van Koophandel) es de pago (€3,90/documento) — el canal real fue el mandato de licencia F.04

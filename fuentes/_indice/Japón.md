@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Japón. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Japón/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [Cerezo Osaka](<../Japón/Cerezo Osaka.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13
 - [FC Tokyo](<../Japón/FC Tokyo.md>) — CARGADO (Ejercicio 2025) — Último chequeo: 2026-09-13

@@ -2725,3 +2725,40 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 ### Resultado
 - `node tools/audit.js`: **0 P0, 0 P1, 0 P2, 7 P3**, sin `doc-peso-desfasado` para `ARQUITECTURA.md`.
 - Sin cambios de código ni de datos: no hace falta ASSET_V nuevo ni regenerar nada.
+
+## Versión 198 — Chequeo de rutas muertas en `audit.js`, y los dos links que la 196 dejó rotos
+
+### Agregado
+- `checkRutasMuertas()` en `tools/audit.js` (to-do 46, P2 `ruta-muerta`). Recorre los archivos
+  VIVOS —`CLAUDE.md`, `index.html`, `netlify.toml`, `js/`, `tools/`, `data/`, los 6 skills, los
+  `.md` de `Admin/` y `fuentes/_indice/`— buscando rutas que ya no existen, en sus dos formas: la
+  ruta entre backticks y el destino de un link Markdown, que se resuelve relativo a la carpeta del
+  archivo que lo contiene. Los históricos (`Admin/CHANGELOG.md`,
+  `Admin/finance-of-sports-project.md`, `Admin/Archive/`, `auditorias/`, `Prototyping/`) quedan
+  afuera a propósito. Una mención abreviada (`club-data-mapping/SKILL.md` sin el `.claude/skills/`
+  adelante) resuelve por sufijo y no da hallazgo. Corre en 0,37 s con el resto de la auditoría.
+
+### Arreglado — los dos los encontró el chequeo nuevo, en su primera corrida
+- **Los 44 `fuentes/_indice/<País>.md` linkeaban `fuentes-por-club.md`**, renombrado a
+  `fuentes/README.md` en la Versión 196. El barrido a mano de esa versión no los había mirado: eran
+  44 links rotos, uno por país.
+- **`fuentes/README.md` linkeaba sus índices como `fuentes/_indice/<País>.md`**, correcto cuando el
+  archivo estaba en la raíz y roto desde que la 196 lo movió adentro de `fuentes/`, porque resolvía
+  a `fuentes/fuentes/_indice/...`. Arreglado en `linkPais()` de `tools/generate-fuentes-index.js`,
+  que es quien genera esas líneas, y regenerado.
+- `fuentes/_indice/Arabia Saudita.md` citaba la REGLA 2 del índice por su nombre viejo.
+
+### Cambiado
+- 6 entradas nuevas en `tools/audit-ignore.json`, todas verificadas leyendo su contexto: son rutas
+  que este proyecto nombra PARA DECIR QUE NO EXISTEN (comparar-clubes.js borrado en la 152, el 404
+  que las páginas de fuentes tenían antes del `prefijo: '../'`, la ausencia deliberada de un
+  archivo de idioma para el castellano, y dos PROMPT-*.md citados como historia). Se evaluó
+  detectar la negación por contexto y cubría 5 de 7 casos: un chequeo que acierta a veces es peor
+  que uno estricto.
+- El ejemplo `FOO.md` de `Admin/CONVENCIONES.md` pasa a `<NOMBRE>.md`, que el chequeo lee como
+  patrón y no como ruta.
+
+### Resultado
+- `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3 (29 silenciados). Las dos ramas del chequeo nuevo
+  —backtick y link Markdown— se probaron rompiéndolas a propósito.
+- Sin ASSET_V nuevo: no se tocó `index.html`, `js/` ni `data/`.

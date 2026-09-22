@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Corea del Sur. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Corea del Sur/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 **Quinto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El **DART**
 (`dart.fss.or.kr`, el regulador de mercado surcoreano) funcionó como un canal real tipo EDGAR/SEC

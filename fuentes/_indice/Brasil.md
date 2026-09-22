@@ -3,7 +3,7 @@
 Detalle línea-por-club del sourcing de Brasil. El detalle completo de cada club
 (links, qué se probó, qué falta) está en el archivo que linkea cada línea,
 `fuentes/Brasil/<Club>.md`. El índice de países, y las reglas de formato y de
-registro, están en [`fuentes-por-club.md`](../../fuentes-por-club.md).
+registro, están en [`fuentes/README.md`](../README.md).
 
 - [Athletico Paranaense](../Brasil/Athletico Paranaense.md) — 2 ejercicios reales (2024-2025), no es SAF — Último chequeo: 2026-09-12
 - [Atletico Goianiense](../Brasil/Atletico Goianiense.md) — 1 ejercicio real (2024-2025) — **CARGADO al sitio: Ejercicio 2025, columna Consolidado** — Último chequeo: 2026-09-13

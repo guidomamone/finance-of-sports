@@ -31,7 +31,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   - **Nunca agregues una regla por nombre suelto al `.gitignore` para "no publicar" algo.** Publicar
     y respaldar son dos problemas distintos (ver la cabecera de `netlify.toml`): el `.gitignore`
     resuelve el segundo al revés de como se quiere. Y un patrón sin barra matchea en CUALQUIER
-    nivel, así que una regla `FOO.md` también ignora `Admin/FOO.md` — es exactamente la trampa que
+    nivel, así que una regla `<NOMBRE>.md` también ignora `Admin/<NOMBRE>.md` — es exactamente la trampa que
     esta versión desarmó.
 
 - LO QUE ESTÁ CERRADO SE ARCHIVA, NO SE BORRA NI SE APILA (Versión 196). `Admin/Archive/` es para

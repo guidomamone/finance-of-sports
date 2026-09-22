@@ -541,6 +541,117 @@ function checkDeployInterno() {
   }
 }
 
+// --- D18: rutas de archivo que ya no existen (Versión 198, to-do 46) --------
+// POR QUÉ. La reorganización de la Versión 196 movió 11 documentos y actualizó 203
+// referencias en 31 archivos. Esa verificación se hizo con un script de una sola
+// corrida, y una sola referencia olvidada manda a una sesión futura a un archivo que
+// no está, sin que nada se queje. No es hipotético: este chequeo, la primera vez que
+// corrió, encontró 44 archivos (`fuentes/_indice/<País>.md`, uno por país) que
+// seguían linkeando el viejo fuentes-por-club.md, renombrado a `fuentes/README.md` dos
+// versiones antes. El barrido a mano no los había mirado.
+//
+// QUÉ MIRA. Solo archivos VIVOS: los que una sesión lee para saber qué hacer. Quedan
+// afuera a propósito `Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md`,
+// `Admin/Archive/`, `auditorias/` y `Prototyping/`, que son HISTORIA: una entrada de
+// septiembre que nombra `ESTADO.md` era verdad el día que se escribió, y "corregirla"
+// sería falsear el registro.
+//
+// DOS FORMAS DE NOMBRAR UN ARCHIVO, y las dos se chequean: la ruta entre backticks
+// (`data/clubs.js`) y el destino de un link Markdown, que se resuelve relativo a su
+// propio archivo — que es justo como estaban escritos los 44 de arriba.
+//
+// LO QUE NO PUEDE DISTINGUIR SOLO, y por eso hay entradas en audit-ignore.json: este
+// proyecto documenta lo que BORRÓ tanto como lo que tiene ("comparar-clubes.js ya no
+// existe", "no hay un archivo de idioma para el castellano porque es el idioma fuente").
+// Una ruta nombrada para decir que NO está se ve igual que un puntero roto. Se probó
+// detectar la negación por contexto y cubría 5 de 7 casos: un chequeo que acierta a
+// veces es peor que uno estricto, porque no sabés en cuál de los dos estás parado. La
+// decisión va a mano, con el motivo escrito, como el resto de audit-ignore.json.
+const RUTA_EN_TEXTO = /^[A-Za-z0-9_][A-Za-z0-9_./-]*\.(md|js|html|json|toml|xml)$/;
+
+function archivosVivos() {
+  const hay = rel => fs.existsSync(path.join(ROOT, rel));
+  const dir = (d, filtro) => {
+    try {
+      return fs.readdirSync(path.join(ROOT, d)).filter(filtro).map(n => `${d}/${n}`);
+    } catch { return []; }
+  };
+  const js = n => n.endsWith('.js');
+  return [
+    'CLAUDE.md', 'index.html', 'netlify.toml', 'fuentes/README.md',
+    ...dir('js', js), ...dir('tools', n => js(n) || n.endsWith('.json')),
+    ...dir('data', js), ...dir('data/lang', js),
+    ...dir('data/club-leagues', js), ...dir('data/rankings', js),
+    ...dir('.claude/skills', () => true).map(d => `${d}/SKILL.md`),
+    // Admin/ menos los dos históricos. Archive/ no entra: es una subcarpeta.
+    ...dir('Admin', n => n.endsWith('.md') || n.endsWith('.html'))
+      .filter(f => !/CHANGELOG\.md$|finance-of-sports-project\.md$/.test(f)),
+    ...dir('fuentes/_indice', n => n.endsWith('.md')),
+  ].filter(hay);
+}
+
+// Todo path real del repo, y todos sus sufijos: una mención abreviada como
+// `club-data-mapping/SKILL.md` (sin el `.claude/skills/` adelante) es legítima y no
+// tiene que dar hallazgo.
+function sufijosDelRepo() {
+  const todos = [];
+  (function walk(d) {
+    let entradas;
+    try { entradas = fs.readdirSync(path.join(ROOT, d || '.'), { withFileTypes: true }); }
+    catch { return; }
+    for (const e of entradas) {
+      const rel = d ? `${d}/${e.name}` : e.name;
+      if (e.name === '.git' || e.name === 'node_modules' || rel === 'Business Books') continue;
+      if (e.isDirectory()) walk(rel); else todos.push(rel);
+    }
+  })('');
+  const sufijos = new Set();
+  for (const p of todos) {
+    const partes = p.split('/');
+    for (let i = 0; i < partes.length; i++) sufijos.add(partes.slice(i).join('/'));
+  }
+  return sufijos;
+}
+
+function checkRutasMuertas() {
+  const sufijos = sufijosDelRepo();
+  const porRuta = new Map();
+  const anotar = (ruta, archivo) => {
+    if (!porRuta.has(ruta)) porRuta.set(ruta, new Set());
+    porRuta.get(ruta).add(archivo);
+  };
+
+  for (const f of archivosVivos()) {
+    const src = fs.readFileSync(path.join(ROOT, f), 'utf8');
+
+    for (const m of src.matchAll(/`([^`\n]{1,120})`/g)) {
+      const t = m[1].trim();
+      if (!RUTA_EN_TEXTO.test(t)) continue;          // deja afuera prosa, globs, <placeholders>, ${interpolaciones}
+      const primero = t.split('/')[0];
+      if (t.includes('/') && primero.includes('.') && !primero.startsWith('.')) continue;  // financeofsports.com/algo: es una URL
+      if (!sufijos.has(t)) anotar(t, f);
+    }
+
+    // Links Markdown con destino relativo. Se resuelven desde la carpeta del archivo
+    // que los contiene, no desde la raíz.
+    if (!f.endsWith('.md')) continue;
+    for (const m of src.matchAll(/\]\(([^)\s]+)\)/g)) {
+      const destino = m[1].split('#')[0];
+      if (!destino || /^(https?:|mailto:|#|\/)/.test(destino)) continue;
+      if (!RUTA_EN_TEXTO.test(destino.replace(/^(\.\.?\/)+/, ''))) continue;
+      const abs = path.resolve(path.dirname(path.join(ROOT, f)), destino);
+      if (!fs.existsSync(abs)) anotar(`${destino} (link)`, f);
+    }
+  }
+
+  for (const [ruta, archivos] of [...porRuta].sort((a, b) => b[1].size - a[1].size)) {
+    const lista = [...archivos].sort();
+    const muestra = lista.slice(0, 3).join(', ') + (lista.length > 3 ? `, +${lista.length - 3} más` : '');
+    add('P2', 'ruta-muerta',
+      `\`${ruta}\`: no existe, y lo nombran ${lista.length} archivo(s) vivo(s) (${muestra}). Si se renombró, actualizá la referencia; si se nombra para decir que NO existe, dejá una entrada en tools/audit-ignore.json con el motivo`);
+  }
+}
+
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
 // El proyecto tiene 4 generadores y los 4 dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
@@ -1229,6 +1340,7 @@ function main() {
   checkEscala(api);
   checkPesoDocs();
   checkDeployInterno();
+  checkRutasMuertas();
   checkHigiene(api);
 
   if (JSON_OUT) console.log(JSON.stringify({ findings, silenciados }, null, 2));
