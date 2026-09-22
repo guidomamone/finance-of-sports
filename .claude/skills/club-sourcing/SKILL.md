@@ -44,6 +44,20 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   **Trabajá siempre sobre el archivo de TU país**: es lo que permite que dos sesiones de sourcing
   corran en paralelo sin pisarse. `fuentes-por-club.md` (el índice de países) se toca solo al
   terminar, y solo si cambiaron los números de ese país.
+- **Un PDF descargado clickeando un link/botón en el Browser pane cae en `~/Downloads` del sistema,
+  NO en el proyecto** (a diferencia de `curl`/`fetch()+Blob`, que sí se pueden apuntar directo a
+  `Clubes/<País>/<Club>/`): el Browser pane es un navegador de verdad, y una descarga real de
+  sistema operativo no sabe nada de la carpeta del proyecto. Encontrado en la sesión 2026-09-22,
+  cuando 18 PDFs de un barrido de República Checa (y de sesiones de otros países) aparecieron
+  sueltos en `~/Downloads`, algunos ya duplicados por un `curl` posterior que sí había bajado bien a
+  `Clubes/`. **Mové el archivo a `Clubes/<País>/<Club>/` (con `mv`, no `cp`) INMEDIATAMENTE después
+  de la descarga, como parte del mismo paso del subagente** — no lo dejes para una sesión de
+  limpieza aparte, que es exactamente lo que costó tokens y una sesión entera de "encontrar y
+  reidentificar" documentos que ya se habían sourceado bien la primera vez. Si el subagente ya sabe
+  que va a necesitar clickear un botón de descarga (portales sin `curl` viable, ver los gotchas de
+  Cloudflare/challenge JS más abajo en cada país), preferí de entrada `fetch()+Blob+<a download>`
+  desde la consola del Browser pane en vez del click directo: ese método SÍ podés apuntarlo con un
+  nombre de archivo que ya incluya la carpeta destino, y evita el paso extra de mover.
 - **Antes de cargar cualquier PDF encontrado en un país nuevo al sitio**, releer `club-data-mapping`
   sección 5 (conversión a USD) y sección 14 (`grossDebt`) — ambas asumen implícitamente el criterio
   argentino de "moneda homogénea"/RT6, que puede no aplicar en otro país con otra normativa contable.

@@ -2613,3 +2613,33 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   cambió. `node tools/audit.js`: 0 P0, 0 P1.
 - ASSET_V 192 → 194 (se saltea 193, que no tocaba `js/`/`data/`), constante y los 15 `<script src>`;
   `fuentes.html` y las 41 páginas de club regeneradas.
+
+## Versión 195: limpieza de PDFs sueltos en `~/Downloads`, y regla nueva en `club-sourcing`
+
+- Un subagente de sourcing (barrido de República Checa, entre otros países) había clickeado botones
+  de descarga en el Browser pane, que cayeron en `~/Downloads` del sistema en vez de en el proyecto
+  — 26 archivos, todos fuera de `finance-of-sports/`. Revisados uno por uno (nombre de archivo +
+  primera página cuando hacía falta), sin tocar ningún archivo personal de esa carpeta.
+- 18 eran duplicados exactos (MD5, o solo el trailer PDF distinto en 2 casos de Noruega) de
+  documentos que YA estaban bien guardados en `Clubes/<País>/<Club>/`: Portugal (Estrela da
+  Amadora), Bélgica (Club Brugge), Croacia (Istra 1961), Brasil (Ituano), Alemania (RB Leipzig,
+  Bayern Munich), Países Bajos (PSV), Noruega (Rosenborg ×2) y República Checa (Slavia Praha ×8).
+  Movidos a la papelera del sistema (no `rm`: recuperables si hiciera falta).
+- 1 era un dead-end ya documentado (`dncg-saison-2024-2025.pdf`, el anexo de estatutos de la DNCG,
+  no un informe financiero — ya advertido en `fuentes/Francia/_notas-generales.md`), 1 estaba
+  corrupto/truncado y sin forma de identificar el club (ni `qpdf` pudo repararlo), y 6 eran
+  descargas fallidas de 0 bytes (`sport-recife-*`, el mismo bloqueo de Cloudflare que ya documenta
+  `club-sourcing` sección 3). Los 26 movidos a la papelera.
+- El único documento genuinamente nuevo: el informe financiero COMBINADO 2024 de HNK Rijeka
+  (consolida Stadion Kantrida d.o.o., la sociedad del estadio, exigido desde el Pravilnik o
+  licenciranju i financijskoj održivosti de octubre 2024 de la HNS) — distinto del informe
+  individual que ya estaba cargado. Movido a `Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-
+  kombinirani.pdf`, transcripto íntegro (25 páginas, con capa de texto nativa) a su `.md`, y anotado
+  en `fuentes/Croacia/Rijeka.md` y `fuentes/_indice/Croacia.md`.
+- Regla nueva en `.claude/skills/club-sourcing/SKILL.md` sección 0: un PDF descargado clickeando un
+  botón en el Browser pane cae en `~/Downloads` del sistema, no en el proyecto — moverlo a
+  `Clubes/<País>/<Club>/` es parte del mismo paso de la descarga, no una limpieza aparte. Causa raíz
+  de esta versión; sin la regla se iba a repetir con el próximo país sourceado por Browser pane.
+- Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`, ni se cargó ningún dato al sitio
+  (esto es sourcing, no onboarding — el informe de Rijeka queda documentado y transcripto, no
+  cargado a `data/`).
