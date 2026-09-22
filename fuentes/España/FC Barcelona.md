@@ -31,3 +31,6 @@
   `fcbarcelona.es/es/club/transparencia/informacion-legal-institucional-y-economica` (cuentas
   anuales y auditoría del ejercicio más reciente, por separado).
 - Último chequeo: 2026-09-13.
+- Color de marca: `#004D98` — tabla por liga de footylogos (LaLiga), 2° color, exacto, verificado
+  2026-09-21. Es el azul, NO el granate que la tabla lista primero: el azul gana porque va primero
+  en "blaugrana", la lista ordenada del propio club.

@@ -31,3 +31,7 @@
   `sevillafc.es/el-club/la-entidad/ley-de-transparencia` (existe pero renderiza vacío para fetch
   automatizado, es JS-driven — mejor ir directo a la página JGA).
 - Último chequeo: 2026-09-13.
+- Color de marca: `#F43333` — teamcolorcodes (`/sevilla-fc/`), el Red (PANTONE Warm Red C),
+  exacto, verificado 2026-09-21. La tabla de footylogos de LaLiga no incluye al Sevilla. Camiseta
+  blanca con acento fuerte: que se represente con su rojo de marca es decisión de Guido de la
+  Versión 178.

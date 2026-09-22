@@ -248,7 +248,14 @@ se reescribe, no se acumula.
   explícito es lo que distingue "se miró y no lleva color" de "nadie lo chequeó": el
   ausente lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3), y resolver el
   color es desde la Versión 179 un paso del onboarding de cada club nuevo
-  (`club-or-year-onboarding` §3 punto 1b), no una barrida que se repite. Los escudos como IMAGEN siguen
+  (`club-or-year-onboarding` §3 punto 1b), no una barrida que se repite. Desde la
+  Versión 180 los 39 hexes tienen su PROCEDENCIA escrita, una línea por club en
+  `fuentes/<País>/<Club>.md` ("Color de marca: `#XXXXXX` — <fuente>, verificado
+  <fecha>"), el mismo formato con el que la anota un club nuevo: 5 del sitio oficial
+  del club, 20 de la tabla por liga de footylogos, 9 de logotyp.us (los japoneses),
+  2 de teamcolorcodes, 1 del infobox de ja.wikipedia (Cerezo), 1 sin re-verificar
+  porque el sitio del club no responde (Ituano) y 1 que no salió de ninguna fuente
+  externa (Boca, que usa el `--azul` histórico del sitio). Los escudos como IMAGEN siguen
   sin hacerse (derechos y hosting, el repo se deploya entero).
 - LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
   Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre

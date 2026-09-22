@@ -8,4 +8,5 @@
 - Pendiente: años anteriores a 2023 — no buscado en profundidad esta sesión.
 - Contacto: gremio.net/documentos/ (patrón de archivo `DF_Gremio_FBPA_<año>_Publicacao.pdf`).
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#0D80BF` — tabla por liga de footylogos (Brasileirão A), 1er color, exacto,
+  verificado 2026-09-21.

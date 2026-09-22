@@ -11,4 +11,5 @@
 - Contacto: cruzeiro-website-project-documents.s3.us-east-1.amazonaws.com/Documentos+obrigatórios+SITE/FINANCEIRO/
   (mismo bucket, patrón de nombre `[3.1.N] Informativo Financeiro <año>.pdf`).
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#2F529E` — tabla por liga de footylogos (Brasileirão A), 1er color, exacto,
+  verificado 2026-09-21.

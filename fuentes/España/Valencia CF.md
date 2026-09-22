@@ -22,3 +22,6 @@
 - Contacto: `valenciacf.com/accionistas` (no explorado a fondo, próximo paso) y
   `valenciacf.com/public/Attachment/` (patrón de CDN donde viven los PDFs ya encontrados).
 - Último chequeo: 2026-09-13.
+- Color de marca: `#E23C07` — tabla por liga de footylogos (LaLiga), 1er color, exacto, verificado
+  2026-09-21. Camiseta blanca: que se represente con el naranja del murciélago es decisión de
+  Guido de la Versión 178.

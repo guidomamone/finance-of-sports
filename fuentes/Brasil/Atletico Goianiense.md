@@ -8,4 +8,6 @@
 - Contacto: atleticogoianiense.com.br/up/TRANSPARENCIA-26/ (año más reciente);
   atleticogoianiense.com.br/transparencia-2020.html (años anteriores, sin explorar).
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#ED3237` — teamcolorcodes (`/atletico-goianiense-color-codes/`), 1er color de
+  "Primary Colors" (Red, PANTONE PMS 1788 C), exacto, verificado 2026-09-21. No está en la tabla
+  por liga de footylogos del Brasileirão A.

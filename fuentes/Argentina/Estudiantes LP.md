@@ -21,4 +21,5 @@
   histórico no indexado por buscadores).
 - Contacto: no se encontró mail institucional directo; secciones Socios/Contacto del sitio oficial.
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#E41815` — CSS del sitio oficial (`estudiantesdelaplata.com`), verificado
+  2026-09-21. No coincide con la tabla por liga de footylogos, que da #EC1B23.

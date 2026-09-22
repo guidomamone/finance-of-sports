@@ -13,4 +13,5 @@
   los ejercicios anteriores a 2023-24.
 - Contacto: asambleas@clubaindependiente.com.ar (acreditación para asambleas),
   socios@clubaindependiente.com.ar.
-
+- Color de marca: `#EC1C24` — `theme-color` del sitio oficial (`clubaindependiente.com`),
+  verificado 2026-09-21. Coincide exacto con la tabla por liga de footylogos.

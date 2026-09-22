@@ -23,3 +23,6 @@
   club — el resto de categorías y TODOS los costos solo se publican a nivel de división, no por club
   (ver corrección en `_notas-generales.md`). `expenseLinesByYear` vacío a propósito,
   `officialTotalExpenses`/`officialPAT` en `null`.
+- Color de marca: `#E4032E` — paleta de logotyp.us (`/logo/urawa-red-diamonds/`), 1er color,
+  exacto, verificado 2026-09-21. Cae en la クラブカラー declarada, ライトレッド #E6002D (infobox de
+  ja.wikipedia).

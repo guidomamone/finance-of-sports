@@ -18,3 +18,8 @@
   costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#FA1A82` — el infobox de ja.wikipedia, que declara el hex literal (`| カラー =
+  {{color box|#FA1A82}} ピンク`, citando el perfil de la J.League), exacto, verificado 2026-09-21. Es
+  el ÚNICO de los 10 japoneses que NO salió de logotyp.us: su paleta (#2F3289, #B49242, #DC0960)
+  no tiene este rosa. La plantilla de camiseta del mismo artículo lo confirma (`body1 = FA1A82`).
+  Tampoco se usó whatthelogo, que da un tono lavado (#F27CB1).

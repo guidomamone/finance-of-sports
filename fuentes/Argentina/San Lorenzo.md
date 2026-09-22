@@ -33,4 +33,6 @@
   el BID, con otra ubicación no encontrada en esta sesión.
 - Contacto: la página sanlorenzo.com.ar/club/balances ya es el canal de publicación oficial; para pedir
   años faltantes, Prensa/Socios del sitio oficial.
-
+- Color de marca: `#00325A` — `theme-color` del sitio oficial (`sanlorenzo.com.ar`), verificado
+  2026-09-21. Es el desempate (c) de un bicolor azul y rojo en partes iguales; la tabla por liga
+  de footylogos ordena por escudo y da el rojo primero.

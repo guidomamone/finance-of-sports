@@ -35,3 +35,5 @@
   puntual de nombres de archivo en `realbetisbalompie.es/media/files/rbetis/pdf/`, no navegando esa
   página).
 - Último chequeo: 2026-09-13.
+- Color de marca: `#00954C` — tabla por liga de footylogos (LaLiga), 1er color, exacto, verificado
+  2026-09-21.

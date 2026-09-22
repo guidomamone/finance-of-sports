@@ -26,3 +26,5 @@
 - Contacto: `cdn.athletic-club.eus/txoko-utils/` (los PDFs reales) — la página que los lista
   (`athletic-club.eus/.../transparencia/`) está bloqueada para fetch automatizado.
 - Último chequeo: 2026-09-13.
+- Color de marca: `#EE2523` — tabla por liga de footylogos (LaLiga, "Athletic Club Bilbao"), 1er
+  color, exacto, verificado 2026-09-21.

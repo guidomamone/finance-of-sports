@@ -22,3 +22,6 @@
   TODOS los costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#164194` — paleta de logotyp.us (`/logo/f-marinos/`), 1er color, exacto,
+  verificado 2026-09-21. El slug `yokohama-f-marinos` da 404. Cae en la クラブカラー declarada, ブルー
+  #004094 (infobox de ja.wikipedia).

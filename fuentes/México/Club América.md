@@ -65,3 +65,5 @@ El Ejercicio 2024 (`reporte-financiero-ollamani-2024-auditado.pdf`, período ini
 1/2/2024-31/12/2024) sigue SIN cargar a propósito — no es un año calendario completo, y esta sesión
 se limitó a "un solo ejercicio, el más reciente y completo" (ver to-do #15 en `index.html` y
 `dudas-por-club.md` para la pregunta abierta de si vale la pena sumarlo igual).
+- Color de marca: `#FFEB00` — tabla por liga de footylogos (Liga MX), 1er color, exacto,
+  verificado 2026-09-21.

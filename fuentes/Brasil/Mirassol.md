@@ -11,4 +11,6 @@
 - Contacto: futebolpaulista.com.br/Repositorio/Institucional/<año>/ — ver nota general al final de
   esta sección sobre este repositorio, que aloja auditorías de muchos clubes paulistas a la vez.
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#EEED05` — tabla por liga de footylogos (Brasileirão A, "Mirassol FC"), 1er
+  color, exacto, verificado 2026-09-21. Es el amarillo ACTUAL: el azul y blanco que contesta
+  pt.wikipedia fue verdad entre 1964 y 1981.

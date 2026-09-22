@@ -38,4 +38,6 @@
 - Último chequeo: 2026-09-12.
 - Contacto: no se pudo revisar /contacto/ (sitio caído); reintentar en clubaunion.com.ar/contacto/ o
   vía Oficina de Socios (L-V 9-16h).
-
+- Color de marca: `#ED1C24` — tabla por liga de footylogos (Liga Profesional Argentina, "Union
+  Argentina"), 1er color, exacto, verificado 2026-09-21. NO sale del sitio oficial, que declara el
+  rojo default de WordPress.

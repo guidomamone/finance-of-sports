@@ -22,3 +22,7 @@
   costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#11216C` — paleta de logotyp.us (`/logo/tokyo/`), 1er color, exacto, verificado
+  2026-09-21. Los slugs `fc-tokyo` y `tokyo-fc` dan 404. Tricolor resuelto por el desempate (a):
+  la クラブカラー del infobox de ja.wikipedia es una lista ORDENADA que arranca por TOKYO BLUE #000A6E,
+  después TOKYO RED y URBAN GOLD.

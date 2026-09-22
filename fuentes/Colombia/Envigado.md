@@ -27,3 +27,5 @@
   Finanzas renderiza sin errores. Los 9 ejercicios restantes (2016-2024) quedan pendientes a
   propósito para una sesión futura.
 - Último chequeo: 2026-09-13.
+- Color de marca: `#ED7039` — tabla por liga de footylogos (Categoría Primera A), 1er color,
+  exacto, verificado 2026-09-21.

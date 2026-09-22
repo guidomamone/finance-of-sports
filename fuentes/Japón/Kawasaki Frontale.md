@@ -21,3 +21,6 @@
   TODOS los costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#3EA3DC` — paleta de logotyp.us (`/logo/kawasaki-frontale/`), 1er color,
+  exacto, verificado 2026-09-21. Cae en la クラブカラー declarada, サックスブルー #23B1EA (infobox de
+  ja.wikipedia).

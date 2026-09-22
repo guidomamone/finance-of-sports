@@ -24,3 +24,5 @@
   bloquea fetch automatizado, no se pudo enumerar el listado completo de años) — usar Wayback Machine
   sobre las URLs de PDF ya conocidas o descubiertas por búsqueda, no pelear con el bloqueo directo.
 - Último chequeo: 2026-09-13.
+- Color de marca: `#FFD733` — tabla por liga de footylogos (LaLiga), 1er color, exacto, verificado
+  2026-09-21.

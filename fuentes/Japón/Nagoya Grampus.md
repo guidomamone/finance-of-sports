@@ -21,3 +21,7 @@
   costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#D51317` — paleta de logotyp.us (`/logo/nagoya-grampus/`), 3er color, exacto,
+  verificado 2026-09-21. **NO el 1° de la paleta**: logotyp.us lista el negro primero. La クラブカラー
+  del infobox de ja.wikipedia (artículo 名古屋グランパスエイト) es una lista ORDENADA que arranca por
+  グランパスレッド #D80C18.

@@ -52,4 +52,6 @@
   algo de recaudación propia de entradas).
 - Contacto: no se relevó sección de contacto específica; formulario general de velez.com.ar o
   WhatsApp institucional +54 9 11 2266-1000.
-
+- Color de marca: `#0061A8` — `theme-color` del sitio oficial (`velezsarsfield.com.ar`),
+  verificado 2026-09-21. La tabla por liga de footylogos da #0161A8, un dígito distinto: se
+  mantiene el del club.

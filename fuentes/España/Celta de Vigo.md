@@ -17,3 +17,5 @@
 - Contacto: `rccelta.es/app/uploads/` (carpeta donde vive todo, sin índice navegable encontrado
   todavía — se llegó por búsqueda puntual, no por una página de transparencia).
 - Último chequeo: 2026-09-13.
+- Color de marca: `#6DACE5` — tabla por liga de footylogos (LaLiga), 1er color, exacto, verificado
+  2026-09-21.

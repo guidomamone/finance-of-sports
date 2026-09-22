@@ -12,4 +12,5 @@
 - Contacto: federacaopr.sfo3.digitaloceanspaces.com (bucket de la federación); coritiba.com.br,
   sección institucional/balanço anual.
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#005742` — tabla por liga de footylogos (Brasileirão A), 1er color, exacto,
+  verificado 2026-09-21.

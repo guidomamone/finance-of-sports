@@ -10,4 +10,5 @@
 - Presupuesto Financiero de Recursos y Gastos, Ejercicio 2018-2019 (1°/9/2018 al 31/8/2019) — ya cargado en el sitio (Ejercicio 2019, PRESUPUESTO-ONLY, sin balance real todavía). Escaneo puro (9 páginas, sin inclinación), transcripto con el Read tool sobre imágenes — las 2 páginas de tabla estaban en landscape rotado 90° dentro de la página portrait, se rotó la imagen para leerlas (ver nota de proceso en `.claude/skills/club-data-mapping/SKILL.md` sección 9). fx propio del presupuesto: $40 (premisa macro declarada). Transcripción completa en Clubes/Argentina/Racing/racing-presupuesto-2018-19.md.
 - Pendiente: nada del archivo público de Racing (ver nota actualizada arriba) — el único hueco real es el balance/presupuesto de los ejercicios 2022 y 2023, que Racing directamente nunca publicó en su archivo oficial (salta de balance2021.pdf a balance2024.pdf, y de presupuesto2019-20.pdf a presupuesto2025-26.pdf) — no es algo que quedó sin descargar, es un vacío real de la fuente.
 - ~~Hilo de X con el resumen del presupuesto 2025/26~~ — https://x.com/Sacostaracing/status/1944855768127431049 — ya no se usa (reemplazado por el documento oficial de arriba), queda como referencia histórica en sources{} de data/clubs.js.
-
+- Color de marca: `#029CDC` — tabla por liga de footylogos (Liga Profesional Argentina), 1er
+  color, exacto, verificado 2026-09-21.

@@ -30,4 +30,5 @@
   poder completar alguna temporada del Presupuesto 2025 ya transcripto.
 - Contacto: WhatsApp 3512 209813 (L-V 9-21hs), sede Jujuy 2702, Alta Córdoba.
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#DF040B` — tabla por liga de footylogos (Liga Profesional Argentina, "Instituto
+  Cordoba"), 1er color, exacto, verificado 2026-09-21.

@@ -20,3 +20,5 @@
 - Contacto: `atleticodemadrid.com/atm/informacion-economica-financiera` (lista oficial) — el patrón
   de URL de arriba es más rápido que navegar la página.
 - Último chequeo: 2026-09-13.
+- Color de marca: `#E8151E` — tabla por liga de footylogos (LaLiga), 2° color, exacto, verificado
+  2026-09-21. Es el rojo; el 1° de la tabla es el azul del escudo.

@@ -19,3 +19,6 @@
   costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#0E3192` — paleta de logotyp.us (`/logo/gamba-osaka/`), 1er color, exacto,
+  verificado 2026-09-21. Bicolor azul y negro resuelto por el desempate (a): la クラブカラー del infobox
+  de ja.wikipedia es una lista ORDENADA, ブルー #003287 primero y ブラック después.

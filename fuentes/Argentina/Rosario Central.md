@@ -16,4 +16,6 @@
   nueva, posiblemente con login de socio.
 - Contacto: sección Socios (rosariocentral.com/socios/) o Prensa (rosariocentral.com/prensa/);
   WhatsApp institucional +54 9 341 202-1889.
-
+- Color de marca: `#0A3D72` — tabla por liga de footylogos (Liga Profesional Argentina), 2° color,
+  exacto, verificado 2026-09-21. Es el azul, NO el amarillo que la tabla lista primero: bicolor en
+  partes iguales que resolvió Guido en la Versión 178, gana el azul del escudo.

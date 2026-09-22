@@ -2227,3 +2227,32 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   cierran; en el navegador, River (rojo) → Real Madrid (`null`, resetea al azul del sitio) → Racing
   (celeste con iniciales negras), sin errores de consola; y el chequeo P3 probado en negativo,
   sacándole el campo a un club y viéndolo aparecer.
+
+## Versión 180 — La procedencia del color de los 39 clubes que ya lo tenían (to-do 37)
+
+- Los 39 clubes con `brandColor` ya tienen su procedencia escrita en `fuentes/<País>/<Club>.md`,
+  una línea por club, en el formato que la Versión 179 dejó fijado para el onboarding de un club
+  nuevo: `Color de marca: #XXXXXX — <fuente>, verificado AAAA-MM-DD`. Aplicación retroactiva del
+  criterio existente, no un criterio nuevo. Nada en `data/clubs.js`, que es eager.
+- De dónde salió cada hex, identificado y verificado contra la fuente el 2026-09-21: 5 del sitio
+  oficial del club (River por su CSS, Vélez/San Lorenzo/Independiente por `theme-color`,
+  Estudiantes por su CSS), 20 de las tablas por liga de footylogos (11 de Argentina, 5 de
+  Brasil, 8 de LaLiga, Liga MX y Primera A colombiana), 9 de la paleta de logotyp.us (japoneses),
+  2 de teamcolorcodes (Sevilla y Atlético Goianiense, que no están en las tablas de footylogos)
+  y 1 del infobox de ja.wikipedia (Cerezo, el único japonés cuyo rosa #FA1A82 no está en
+  logotyp.us).
+- **`boca` (`#0A2B5C`) documentado como lo que es**: el único de los 39 que NO salió literal de
+  ninguna fuente externa, sino del `--azul` histórico del sitio. Su línea lo dice explícitamente
+  en vez de citar una fuente que no existe.
+- **`ituano` (`#E2041A`) es el único que no se pudo re-verificar**: `ituanofc.com.br` devuelve
+  503 y ningún agregador tiene página del club. Queda registrado así, con la capa 1 (identidad
+  rubro-negra) sí confirmada.
+- Los 10 japoneses llevan además la クラブカラー que declara el club (infobox de ja.wikipedia,
+  citando el perfil de la J.League), que es lo que justifica por qué en Kashima y Nagoya el hex
+  es el 3er color de la paleta y no el 1°, y el desempate de los bicolores de Gamba y FC Tokyo.
+- Ningún hex quedó fuera de la familia que dicta la capa 1 del criterio, así que no se tocó
+  ningún color ni se agregó nada a `dudas-por-club.md`.
+- Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`. `fuentes/**/*.md` no se publica
+  (`netlify.toml`), así que no hay cambio en el sitio.
+- Verificado: `node tools/audit.js` 0 P0 y 0 P1; `generate-fuentes-page.js --check`,
+  `generate-fuentes-index.js --check` y `generate-club-index.js --check` los tres al día.

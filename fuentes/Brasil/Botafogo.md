@@ -15,4 +15,5 @@
   barrido de Sudamérica-no-Argentina.
 - Contacto: botafogo.com.br/download/transparencia/balanco (SAF); static.botafogo.com.br (associação).
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#000000` — tabla por liga de footylogos (Brasileirão A), 1er color, exacto,
+  verificado 2026-09-21. Alvinegro: de sus dos colores gana el que no es blanco.

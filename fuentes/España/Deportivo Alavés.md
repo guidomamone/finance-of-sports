@@ -28,3 +28,5 @@
   histórico en el HTML crudo si se pide con user-agent de navegador) — los PDFs viven en
   `cms.bkndagroup.com/uploads/`.
 - Último chequeo: 2026-09-13.
+- Color de marca: `#0232A0` — tabla por liga de footylogos (LaLiga), 1er color, exacto, verificado
+  2026-09-21.

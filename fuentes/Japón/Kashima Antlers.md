@@ -27,3 +27,7 @@
   costos solo se publican a nivel de división, no por club (CORRECCIÓN a lo que decía el bullet de
   arriba, ver `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#B7183F` — paleta de logotyp.us (`/logo/kashima-antlers/`), 3er color, exacto,
+  verificado 2026-09-21. **NO el 1° de la paleta**: logotyp.us ordena por el escudo y lista el
+  negro primero. Cae en la クラブカラー que declara el club, ディープレッド #B8193F (infobox de ja.wikipedia,
+  citando el perfil de la J.League).

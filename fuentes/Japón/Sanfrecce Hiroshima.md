@@ -20,3 +20,6 @@
   TODOS los costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/
   `officialPAT` en `null`.
+- Color de marca: `#59358C` — paleta de logotyp.us (`/logo/sanfrecce-hiroshima/`), 1er color,
+  exacto, verificado 2026-09-21. Cae en la クラブカラー declarada, 紫 (violeta) #51318F (infobox de
+  ja.wikipedia, artículo サンフレッチェ広島F.C — el título サンフレッチェ広島 es un redirect).

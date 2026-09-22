@@ -37,4 +37,6 @@
 - Contacto: sección "Institucional" del sitio (anuncia cada aprobación de memoria y balance, buena
   fuente para monitorear ejercicios nuevos) — para pedido directo, DM a @AAAJoficial o sección Socios.
 - Último chequeo: 2026-09-12.
-
+- Color de marca: `#E32021` — tabla por liga de footylogos (Liga Profesional Argentina), 1er
+  color, exacto, verificado 2026-09-21. Wikipedia dice explícitamente que el rojo predomina
+  (desempate (b) de bicolores).
