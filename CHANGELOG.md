@@ -2502,3 +2502,25 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   tabla de arranque, 19 KB → 14 KB (los 4 puntos cerrados en esta versión lo achicaron).
 - ASSET_V 187 → 188, constante y los 15 `<script src>`; `fuentes.html` y las 41 páginas de club
   regeneradas. `node tools/audit.js`: 0 P0, 0 P1.
+
+## Relevamiento del negocio no futbolístico (sin número de versión: no toca el sitio)
+
+- `auditorias/2026-09-22-catchall-no-futbol.md`: relevamiento de las 2.412 líneas de
+  `revenueLines`/`expenseLines` de los 41 clubes (85 ejercicios) buscando negocio NO futbolístico,
+  pedido de Guido antes de decidir el to-do 20(b). **13 clubes lo tienen con plata invisible en el
+  catch-all de Ingresos, no 2** — los 11 argentinos cargados (11 de 11), Botafogo y Envigado.
+- El hallazgo de fondo: las 3 filas que la Versión 53 agregó para que el catch-all no se coma lo que
+  no es plantel profesional existen solo del lado de GASTOS. Ingresos tiene 7 filas, todas de fútbol,
+  y `other_income`/`other_sports`/`youth_football`/`womens_football` caen enteras al catch-all. Por
+  eso el precedente de Instituto (Versión 172) no aplica a Vélez: aquel recategorizó a
+  `youth_other_sports_expense`, que SÍ tiene fila.
+- Se midió el costo de la regla de la Versión 53: una fila nueva de ingresos no futbolísticos
+  mostraría plata real en **60 de los 85 club-ejercicios**, "—" en 13 (regla `unknown` de la
+  Versión 172) y `$0` literal en solo 12. La premisa de "la mayoría en $0" que frenaba la decisión
+  no se sostiene.
+- Dos hallazgos laterales, independientes de la decisión: "derechos de formación / mecanismo de
+  solidaridad" está en `player_sales` (fila visible) en 7 clubes y en `youth_football`/`other_income`
+  (catch-all) en otros 7; y el 48% de lo que queda en el catch-all de Ingresos son líneas genéricas
+  que la propia fuente no abre (Racing es el caso extremo: ninguna fila nueva lo mejora).
+- **Nada implementado.** El to-do 20(b) sigue abierto hasta que Guido decida sobre las tres
+  alternativas del documento.
