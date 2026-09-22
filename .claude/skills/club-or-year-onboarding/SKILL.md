@@ -176,8 +176,8 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
      `CLUB_DATA_SCRIPT_OVERRIDE` (cerca de `loadClubData`, en index.html) en vez de volver al mapa
      completo.
   1b. Sumá la entrada de identidad del club a `clubs{}` en `data/clubs.js` (`id`/`name`/
-     `displayName`/`country`/`reportingCurrency`/`fiscalYearStart`, copiá el shape de cualquier
-     club ya cargado). `displayName` (Versión 101) es el nombre CORTO que se muestra en el
+     `displayName`/`country`/`reportingCurrency`/`fiscalYearStart`/`sport`/`brandColor`, copiá el
+     shape de cualquier club ya cargado). `displayName` (Versión 101) es el nombre CORTO que se muestra en el
      dropdown del header — es OBLIGATORIO, `populateClubSelect()` (index.html) arma el `<option>`
      de cada club a partir de este campo y ordena alfabéticamente por él; si falta, tira
      `TypeError` al armar el dropdown para TODOS los clubes, no solo el nuevo. El dropdown en sí ya
@@ -185,6 +185,73 @@ el día uno para cualquier club nuevo, no una limpieza de una sola vez:
      sigue siendo centralizado en `data/clubs.js` — hace falta ANTES de elegir ningún club (el
      dropdown se arma al cargar la página), así que no puede autoregistrarse desde un archivo que
      todavía no se pidió, a diferencia de todo lo del punto 1c.
+     **`brandColor` se resuelve ACÁ, en el onboarding del club nuevo, no después (Versión 179).**
+     Los primeros 41 se hicieron en una barrida de una sola sesión (Versión 178) y esa barrida no
+     se repite: el club #42 entra con su color ya puesto. Un ejercicio nuevo de un club ya cargado
+     NO necesita este paso — `clubs{}` solo se toca cuando el club es nuevo. Dos capas, EN ESTE
+     ORDEN (invertirlo es la trampa del primer bullet de abajo):
+     1. **Identidad primero: ¿de qué color es el club?** Infobox de Wikipedia en el idioma del
+        país, preguntando por los colores ACTUALES *y* si hubo cambios históricos, en el mismo
+        prompt (a `pt.wikipedia`, "¿cuáles son los colores del Mirassol?" contesta azul y blanco,
+        que fue verdad entre 1964 y 1981); o el color que declare oficialmente la liga cuando
+        existe — la `クラブカラー` de la J.League resolvió los 10 japoneses con un fetch cada uno y
+        cero ambigüedad.
+     2. **Recién después el hex**, y se acepta SOLO si cae en la familia que fijó la capa 1. Los
+        dos intentos baratos, que fallan rápido: un `curl` al sitio oficial buscando `theme-color`
+        (6 aciertos en 41 — el resto son apps JS que devuelven un shell vacío, sitios caídos o un
+        WAF) y el wikitext de la plantilla de camiseta (`?action=raw` + `body1`, exacto cuando está
+        lleno, hoy casi siempre vacío). Si no, agregadores: las tablas POR LIGA de footylogos
+        (`/color-codes/<liga>`) resuelven media liga de una sola vez, logotyp.us y teamcolorcodes
+        sirven por club. No gastes fetches en encycolorpedia ni brandfetch (403 los dos) ni en
+        whatthelogo (devuelve tonos lavados: `#F27CB1` para el rosa de Cerezo). Los slugs de
+        logotyp.us y teamcolorcodes son inestables (`f-marinos` anda, `yokohama-f-marinos` 404): si
+        el slug 404ea, leé el hex del snippet de búsqueda en vez de seguir adivinando. footylogos
+        no tiene J.League.
+
+     Cuatro trampas ya pagadas en la barrida de los 41, que son de donde sale ese orden:
+     - **El `theme-color`/CSS del sitio oficial sirve para PRECISAR un color que ya sabés cuál es,
+       nunca para descubrirlo.** El CSS del Real Madrid declara `--rm-color-primary-default:
+       #3E31FA`, un violeta de su design system; el del Sevilla es Bootstrap puro (`--bs-primary:
+       #0d6efd`); el de Unión es el rojo default de WordPress; el de Boca son grises de Webflow. Si
+       el hex del sitio no cae en la familia de la capa 1, se descarta el hex, no la fuente.
+     - **Nunca tomes el primer color de la paleta de un agregador**: están ordenadas por el ESCUDO,
+       y el color del club es el de la CAMISETA. logotyp.us lista a Kashima con el negro primero y
+       el rojo tercero, y a Nagoya igual — de ahí salen unos Antlers negros.
+     - **Bicolor en partes iguales** (San Lorenzo, Rosario Central, Gamba Osaka, FC Tokyo):
+       desempatá en este orden — (a) el club o la liga declara una lista ORDENADA y gana el
+       primero (el caso japonés, muy limpio); (b) Wikipedia dice explícitamente cuál predomina
+       ("con predominancia del primero", Argentinos); (c) el `theme-color` propio (San Lorenzo,
+       `#00325A`); (d) si el otro color es blanco, gana el que no es blanco (Estudiantes,
+       Instituto, Unión). Si no aplica ninguno de los cuatro, es pregunta para Guido (Rosario
+       Central).
+     - **Camiseta blanca con un acento fuerte: no se resuelve buscando más, es decisión de
+       producto.** Fueron 6 de los primeros 41 (River, Vélez, Sevilla, Real Madrid, Valencia, Once
+       Caldas), o sea ~15% de los clubes. Mandala directo a Guido en vez de gastar fetches.
+
+     **Si queda ambiguo, o el color que lo identifica es el blanco: `brandColor: null`, que es un
+     RESULTADO CERRADO, no un pendiente.** `pintarCrest()` (`js/selector.js`) trata el `null` igual
+     que el campo ausente (`if(!c)` → resetea y cae al azul del sitio), así que en pantalla no
+     cambia nada: el `null` existe para distinguir un club QUE SE MIRÓ Y NO LLEVA COLOR de uno que
+     nadie chequeó todavía, que es lo único que evita tener que rebarrer los 200 clubes de mañana
+     para averiguar cuál es cuál. Ninguna sesión futura "completa" un `null` a ojo: un color
+     equivocado se lee peor que ninguno (`CONVENCIONES.md`). Y en el otro sentido: **un
+     `brandColor` no se oscurece ni se retoca para que pase el contraste del círculo** — para eso
+     están `textoSobre()` (cambia el TEXTO, no el color del club) y el aro interno de los colores
+     claros; si aun así no se lleva, va a `null`. Un club sin `brandColor` y sin `null` lo marca
+     `node tools/audit.js` (`club-sin-color-ni-null`, P3).
+
+     **La procedencia del color se anota en `fuentes/<País>/<Club>.md`, NO en `data/clubs.js`**:
+     ese archivo es eager y se baja en CADA pageview (el comentario de cabecera de la Versión 178
+     ya le costó ~2,5 KB), y `fuentes/` no se publica. Con una línea alcanza: `Color de marca:
+     #XXXXXX — <fuente>, verificado AAAA-MM-DD`.
+
+     **Cuánto presupuestar**: un club fácil son segundos; uno dudoso, 2 a 5 fetches y varios
+     minutos (de los primeros 41, ~10 necesitaron más que el camino default, 5 terminaron en
+     pregunta y 2 en `null`). Presupuestá el caso dudoso, no el fácil: la barrida de los 41 tuvo
+     una economía de escala que un club suelto no tiene (una sola tabla de footylogos resolvió 11
+     argentinos de una). Si el club #42 entra junto con otros de su misma liga, arrancá por la
+     tabla de esa liga: salen 10 por el precio de 1. En cualquier caso es barato al lado de
+     transcribir el PDF, que es el resto del onboarding.
   1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` (Versión 101) NO se tocan en
      `data/clubs.js` — se autoregistran al final de tu propio `data/<club>-data.js`, mismo momento
      que el registro en `CLUB_GENERIC_DATA` (punto 2 de abajo), copiando el patrón de cualquier

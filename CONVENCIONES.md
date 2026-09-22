@@ -483,6 +483,16 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   NO se hacen acá: guardar el color de las iniciales (lo calcula `textoSobre()` por
   contraste) y usar escudos como imagen (derechos y hosting: el repo se deploya entero,
   así que la imagen se serviría desde el dominio propio).
+  VERSIÓN 179, dos precisiones que hacen que la barrida de los 41 no haya que repetirla:
+  (1) esa decisión se ESCRIBE, no se deja en blanco — `brandColor:null` es el resultado
+  CERRADO "se miró y no lleva color" y ninguna sesión futura lo completa a ojo, mientras
+  que el campo AUSENTE significa que nadie lo chequeó y lo marca `node tools/audit.js`
+  (`club-sin-color-ni-null`, P3); en pantalla son idénticos, `pintarCrest()` hace `if(!c)`.
+  (2) En el otro sentido: **un `brandColor` no se oscurece ni se retoca para que pase el
+  contraste del círculo** — para eso están `textoSobre()` (cambia el TEXTO, no el color del
+  club) y el aro interno de los colores claros; si aun así no se lleva, va a `null`. El dato
+  del club no se toca, que es justamente lo que el campo promete. El procedimiento para
+  resolver el color de un club NUEVO vive en `club-or-year-onboarding/SKILL.md` §3 punto 1b.
 - OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` (Versión 174).
   `grillaConTope()` la usan varias grillas distintas, y su `mostrarTodos` es una
   variable de módulo: si una grilla nueva la prende, "Mostrar más" queda apretado

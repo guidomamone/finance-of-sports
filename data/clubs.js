@@ -40,14 +40,18 @@
 //     ese; cuando daba solo el nombre del color ("ディープレッド"), se tomó el hex de la paleta
 //     del escudo publicada (logotyp.us / footylogos / teamcolorcodes) que coincide con él.
 //   - **`brandColor` es OPCIONAL, y que falte es una decisión, no un olvido.** Si el club no
-//     tiene un color primario claro y sin ambigüedad, no lleva el campo y el círculo se queda
-//     con el azul del sitio: un color equivocado se lee peor que ninguno. Hoy son 2 de 41, los
-//     dos porque el color que los identifica es el BLANCO y un círculo blanco no se ve contra
-//     el fondo blanco del modal: `realmadrid` y `oncecaldas` (Wikipedia: "El color que
-//     identifica al club es el blanco", el Blanco Blanco). Decisión de Guido del 2026-09-21,
-//     en la misma consulta que resolvió los otros 3 casos dudosos: Sevilla (camiseta blanca,
-//     pero se representa con su rojo de marca), Rosario Central (bastones azul y amarillo en
-//     partes iguales, gana el azul del escudo) y Valencia (camiseta blanca, marca naranja).
+//     tiene un color primario claro y sin ambigüedad, el círculo se queda con el azul del sitio:
+//     un color equivocado se lee peor que ninguno. Esa decisión se ESCRIBE (Versión 179):
+//     `brandColor:null` = "se miró y no lleva color", y nadie lo completa a ojo después; el campo
+//     AUSENTE = nadie lo chequeó, y lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3).
+//     En pantalla son lo mismo (`pintarCrest()` hace `if(!c)`). Hoy los `null` son 2 de 41, los dos
+//     porque el color que los identifica es el BLANCO y un círculo blanco no se ve contra el fondo
+//     blanco del modal. Decisión de Guido del 2026-09-21, en la misma consulta que resolvió los
+//     otros 3 casos dudosos: Sevilla (camiseta blanca, pero se representa con su rojo de marca),
+//     Rosario Central (bastones azul y amarillo en partes iguales, gana el azul del escudo) y
+//     Valencia (camiseta blanca, marca naranja).
+//   - Cómo se resuelve el color de un club NUEVO (identidad primero, hex después, las 4 trampas ya
+//     pagadas y dónde anotar la procedencia): `club-or-year-onboarding/SKILL.md` §3, punto 1b.
 //   - El texto de las iniciales NO se guarda acá: lo decide por contraste `textoSobre()` en
 //     js/selector.js, porque blanco sobre el amarillo de Club América no se lee.
 //
@@ -115,7 +119,8 @@ const clubs = {
   atleticogoianiense: { id:'atleticogoianiense', name:'Atlético Clube Goianiense', displayName:'Atlético Goianiense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED3237' },
   // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
   // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
-  oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
+  oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   envigado: { id:'envigado', name:'Envigado Fútbol Club S.A.', displayName:'Envigado FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED7039' },
   // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
   // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
@@ -124,7 +129,8 @@ const clubs = {
   // index.html). `fiscalYearStart:'07-01'`: los ejercicios de LaLiga corren 1/7 a 30/6, confirmado
   // en cada PDF fuente ("ejercicio anual terminado el 30 de junio de AAAA") — temporada partida,
   // igual que los clubes argentinos (no aplica isCalendarYearClub acá).
-  realmadrid: { id:'realmadrid', name:'Real Madrid Club de Fútbol', displayName:'Real Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
+  realmadrid: { id:'realmadrid', name:'Real Madrid Club de Fútbol', displayName:'Real Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   fcbarcelona: { id:'fcbarcelona', name:'Futbol Club Barcelona', displayName:'FC Barcelona', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#004D98' },
   atleticomadrid: { id:'atleticomadrid', name:'Club Atlético de Madrid, S.A.D.', displayName:'Atlético de Madrid', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E8151E' },
   athleticclub: { id:'athleticclub', name:'Athletic Club', displayName:'Athletic Club', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#EE2523' },

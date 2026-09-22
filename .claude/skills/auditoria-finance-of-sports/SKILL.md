@@ -56,7 +56,7 @@ suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 
 | Eje | Qué mirar, que el script no puede |
 |---|---|
-| `datos` | Los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? ¿El criterio contable es el mismo que en clubes parecidos? |
+| `datos` | Los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? ¿El criterio contable es el mismo que en clubes parecidos? Y el `brandColor` de los clubes nuevos desde la última auditoría: el script solo ve si el campo ESTÁ, no si el hex es de verdad el del club — que sea el del ESCUDO y no el de la camiseta, o un color del design system del sitio oficial, no lo ve nadie más que vos (ver `club-or-year-onboarding` §3 punto 1b). |
 | `escala` | Ver `.claude/skills/escala-finance-of-sports/SKILL.md`: tiene el mapa completo de puntos calientes (con el número en el que se rompe cada uno) y la metodología para actualizarlo. Es una skill aparte porque el mapa es grande y cambia con cada sesión de sourcing/onboarding — meterlo acá bloquearía esta skill genérica. |
 | `codigo` | Con el sitio levantado: consola limpia, re-render que no duplica listeners, charts que se destruyen, `loadClubData()` con un club que falla, toggles combinados (moneda × formato × club × año). |
 | `docs` | Qué dice dos veces lo mismo, qué se lee en cada sesión sin usarse, qué quedó desactualizado respecto de los datos (`node tools/generate-club-index.js --check`). |
@@ -164,6 +164,12 @@ por si reaparecen en otra forma:
 - **Un ingreso negativo o un gasto positivo casi siempre es legítimo** (deducciones sobre a receita
   en Brasil, variación de existencias en España). Solo importa si la línea pesa.
 - **Un ejercicio placeholder tiene sus líneas en cero.** No le "faltan" los sueldos: no tiene datos.
+
+- **Un club sin color NO es un dato faltante si dice `brandColor:null`** (Versión 179). `null` es el
+  resultado CERRADO de "se miró y no lleva color" — el que lo identifica es el blanco, o es ambiguo
+  entre dos (ver `CONVENCIONES.md`) — no un pendiente que alguien tenga que completar: completarlo a
+  ojo es exactamente lo que el criterio prohíbe. Lo que sí es un hallazgo es el campo AUSENTE, y para
+  eso ya está `club-sin-color-ni-null` (P3) en el script, así que tampoco hace falta mirarlo a mano.
 
 Y uno estructural, del propio motor: **`auditAll()` y `verifyTieOuts()` solo ven los clubes cargados
 en memoria.** Cualquier verificación que se escriba en el navegador tiene que forzar la carga primero

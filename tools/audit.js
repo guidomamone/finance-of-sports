@@ -164,6 +164,11 @@ function checkEstructura(api) {
     }
     const cur = api.clubs[id].reportingCurrency;
     if (cur && !api.CURRENCY_META[cur]) add('P2', 'moneda-sin-meta', `${id}: reportingCurrency '${cur}' no está en CURRENCY_META, cae al fallback de currency-map.js`);
+    // Versión 179: `brandColor:null` es el resultado CERRADO de "se miró y no lleva color" (blanco
+    // o ambiguo). El campo AUSENTE es otra cosa: nadie lo chequeó. Los dos se ven igual en pantalla
+    // (`pintarCrest()` hace `if(!c)`), así que sin esta distinción la única forma de saber cuál es
+    // cuál sería rebarrer todos los clubes, que es justo lo que el paso de onboarding evita.
+    if (!('brandColor' in api.clubs[id])) add('P3', 'club-sin-color-ni-null', `${id}: sin brandColor ni brandColor:null en data/clubs.js — no se distingue "se miró y no lleva color" de "nadie lo chequeó" (ver club-or-year-onboarding §3 punto 1b)`);
   }
 
   for (const { clubId, year, ym } of clubYears(api)) {

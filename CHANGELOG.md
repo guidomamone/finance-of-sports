@@ -2188,3 +2188,42 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - Verificado: `auditAll()` 41 clubes / 228 checks / 0 que no cierran, `node tools/audit.js` 0 P0 y
   0 P1, y los 4 círculos mirados en el navegador (incluido el fallback de Real Madrid entrando
   DESPUÉS de un club con color).
+
+## Versión 179 — Resolver el color de un club nuevo es un paso del onboarding, no una barrida que se repite
+
+- **`club-or-year-onboarding/SKILL.md` §3 punto 1b** (el punto donde se escribe la fila del club en
+  `clubs{}`) ahora incluye `sport` y `brandColor` en la lista de campos —le faltaban los dos, de las
+  Versiones 137 y 178— y suma el procedimiento para resolver el color de un club NUEVO. Un ejercicio
+  nuevo de un club ya cargado no lo dispara: `clubs{}` solo se toca cuando el club es nuevo.
+- **La jerarquía de fuentes quedó INVERTIDA respecto de cómo la contó la Versión 178**, y esa es la
+  corrección de fondo. No es "sitio oficial → Wikipedia → liga" sino dos capas: primero la IDENTIDAD
+  del color (infobox de Wikipedia en el idioma del país preguntando por los colores ACTUALES y por
+  cambios históricos, o el color que declare la liga), y recién después el HEX, que se acepta solo si
+  cae en esa familia. De los 41, el sitio oficial dio el hex en 6 casos; el orden viejo invita a la
+  trampa contraria.
+- Cuatro trampas ya pagadas, documentadas con su caso: el `theme-color`/CSS del sitio oficial sirve
+  para precisar un color que ya sabés, no para descubrirlo (Real Madrid declara un violeta de su
+  design system, Sevilla el azul de Bootstrap, Unión el rojo default de WordPress); nunca el primer
+  color de la paleta de un agregador, que ordena por el ESCUDO y no por la camiseta (Kashima y
+  Nagoya salen negros); el desempate de bicolores en 4 pasos; y la camiseta blanca con acento fuerte
+  (~15% de los clubes), que es decisión de producto y va directo a Guido en vez de gastar fetches.
+- **`brandColor: null` explícito** en `realmadrid` y `oncecaldas`, que antes no tenían el campo.
+  `null` = "se miró y NO lleva color" (resultado cerrado, nadie lo completa a ojo después); campo
+  AUSENTE = nadie lo chequeó. En pantalla son idénticos —`pintarCrest()` hace `if(!c)`— así que es
+  cero cambio visible: existe para no tener que rebarrer los clubes de mañana para saber cuál es cuál.
+- **Chequeo nuevo en `tools/audit.js`: `club-sin-color-ni-null` (P3)**, un club de `clubs{}` sin
+  `brandColor` y sin `null`. Es lo que hace que el paso no dependa de que la sesión haya leído el skill.
+- Regla nueva en `CONVENCIONES.md`: **un `brandColor` no se oscurece ni se retoca para que pase el
+  contraste del círculo** — lo arregla `textoSobre()` (el TEXTO) o el aro interno, o se va a `null`.
+- `auditoria-finance-of-sports/SKILL.md`: el eje `datos` suma qué mirar del color que el script no
+  puede (que el hex sea el de la camiseta y no el del escudo), y la sección 6 suma el falso positivo
+  "un club sin color es un dato faltante", que no lo es si dice `null`.
+- ASSET_V 178 → 179, constante + los 13 tags literales; `fuentes.html` y las 41 páginas de `fuentes/`
+  regeneradas, que lo llevan adentro. Lo pidió el propio `audit.js` (`asset-v-sin-subir`, P1), aunque
+  el cambio de `data/clubs.js` sea de comportamiento nulo.
+- To-do 37 nuevo: los 39 clubes que YA tienen color no tienen anotada su procedencia (32 son
+  "agregador" en genérico), y `boca` es el único hex que no salió literal de una fuente.
+- Verificado: `node tools/audit.js` 0 P0 y 0 P1; `auditAll()` 41 clubes / 228 checks / 0 que no
+  cierran; en el navegador, River (rojo) → Real Madrid (`null`, resetea al azul del sitio) → Racing
+  (celeste con iniciales negras), sin errores de consola; y el chequeo P3 probado en negativo,
+  sacándole el campo a un club y viéndolo aparecer.

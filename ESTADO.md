@@ -242,9 +242,13 @@ se reescribe, no se acumula.
   blancas mientras lleguen a 4:1 contra el fondo, negras cuando no (el celeste de
   Racing, el amarillo de Club América) — y le pone un aro interno a los colores muy
   claros, que contra el fondo blanco de la fila se perderían. Son 39 de los 41: el
-  campo es opcional a propósito y Real Madrid y Once Caldas NO lo tienen, porque el
-  color que los identifica es el blanco y un círculo blanco no se ve; esos dos se
-  quedan con el azul del sitio, que es el fallback. Los escudos como IMAGEN siguen
+  campo es opcional a propósito y Real Madrid y Once Caldas llevan `brandColor:null`
+  (Versión 179), porque el color que los identifica es el blanco y un círculo blanco
+  no se ve; esos dos se quedan con el azul del sitio, que es el fallback. El `null`
+  explícito es lo que distingue "se miró y no lleva color" de "nadie lo chequeó": el
+  ausente lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3), y resolver el
+  color es desde la Versión 179 un paso del onboarding de cada club nuevo
+  (`club-or-year-onboarding` §3 punto 1b), no una barrida que se repite. Los escudos como IMAGEN siguen
   sin hacerse (derechos y hosting, el repo se deploya entero).
 - LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
   Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre

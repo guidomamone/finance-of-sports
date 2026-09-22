@@ -231,3 +231,15 @@ perdieron sino que se descartaron:
     bien calibrada en la práctica — no asumirlo de la documentación. Y esto no reemplaza el OCR:
     Jev necesita texto como `state`, así que el paso de `pdftoppm` + Tesseract (ver CLAUDE.md,
     "Cada PDF nuevo") sigue haciendo falta igual.
+
+37. PROCEDENCIA DEL `brandColor` DE LOS 39 YA CARGADOS (deuda que dejó la Versión 178, acotada por
+    la 179). Desde la Versión 179 el color de un club NUEVO se resuelve durante su onboarding y su
+    procedencia se anota en `fuentes/<País>/<Club>.md` (`club-or-year-onboarding` §3 punto 1b). Los
+    39 que ya tienen color NO tienen esa línea: la cabecera de `data/clubs.js` nombra solo los 6
+    que salieron del sitio oficial del club (River, Vélez, San Lorenzo, Independiente, Estudiantes,
+    Ituano), y los otros 32 quedaron como "agregador" en genérico, sin decir cuál ni con qué fecha.
+    No bloquea nada y no urge — el hex está verificado igual — pero mientras no esté, un chequeo
+    futuro de un color dudoso empieza de cero. Si se hace, va en `fuentes/`, NUNCA en `data/clubs.js`,
+    que es eager y se baja en cada pageview. Caso aparte a documentar en la misma pasada: `boca`
+    (`#0A2B5C`) es el ÚNICO hex que no salió literal de una fuente — las dos fuentes daban navys de
+    ESCUDO casi negros (`#182A4E`, `#222E46`) y se usó el `--azul` histórico del sitio.
