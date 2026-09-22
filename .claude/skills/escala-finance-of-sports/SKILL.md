@@ -214,6 +214,20 @@ electo. Un club de otro deporte entra hoy con media taxonomía vacía. No se rom
 clubes, se rompe con la VARIEDAD — mencionado acá porque es la otra dimensión de "escala" que este
 mapa no cubre (cantidad, no diversidad), y conviene no confundir las dos.
 
+### I. El negocio no-futbolístico DENTRO de un club de fútbol (Versión 189/190, to-do 20(b))
+
+Emparentado con H pero distinto: no es un club de OTRO deporte, es un club de fútbol con un colegio,
+un polideportivo o una tienda — el modelo de club social argentino. Hoy se resuelve sumando una fila
+más a Formato simplificado por cada negocio nuevo que aparece (`education`, Versión 189), la misma
+lista para los 41 clubes. Eso escala mal por VARIEDAD de rubros, no por cantidad de clubes: cada fila
+nueva aparece en $0 para todos los que no la tienen. **Decisión de Guido (2026-09-22): no decidir
+ahora, mirarlo evolucionar a medida que se cargan más clubes y deportes.** Medido en el relevamiento
+de la Versión 189 (`auditorias/2026-09-22-catchall-no-futbol.md`): 4 de 41 clubes muestran el patrón
+hoy (Vélez, Instituto, Unión, Estudiantes). Si esto crece bastante más — la sesión de la 189 tiró
+~30 como orden de magnitud para volver a mirarlo, sin que sea un número decidido — es el momento de
+evaluar un eje separado ("Otros negocios del club", con filas propias por club en vez de una lista
+fija para los 41) en vez de seguir sumando filas a Formato simplificado.
+
 ---
 
 ## 3. Cómo correr este chequeo de nuevo
