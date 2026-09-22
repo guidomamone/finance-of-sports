@@ -226,7 +226,7 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       // placeholder, para que `y === yrs.length` siempre y el índice sea un espejo
       // fiel del dato. Filtrar los que no se pueden mostrar es decisión de quien
       // consume (el selector ya sabe que 'placeholder' y 'pending_official' no son
-      // navegables, mismo criterio que `goToFinanzasYear()`).
+      // navegables, mismo criterio que usaba `goToFinanzasYear()`, borrada en la Versión 184).
       //
       // SOBRE EL PESO, que es la objeción obvia a meter esto en un archivo que se
       // baja en cada visita: son ~30 bytes por ejercicio, o sea ~2,5 KB para los 85

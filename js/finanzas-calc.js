@@ -609,8 +609,9 @@
 
   // La gestión "actual" de un club = la que tiene el lastYear más alto.
   // `|| {}` (Versión 112): defensivo contra un club onboardeado sin gestionesByClub[clubId] —
-  // devuelve null en vez de tirar TypeError, ver renderInicioStats() (js/finanzas-render.js) para
-  // el fallback "Sin dato" que consume ese null sin romper Inicio.
+  // devuelve null en vez de tirar TypeError. El consumidor que motivó esa defensa
+  // (`renderInicioStats()`, los KPIs de Inicio) se borró en la Versión 184; los que quedan
+  // (Finanzas y Comparar Gestiones) dependen igual de que esto no explote.
   function currentGestionKey(clubId){
     const gestiones = gestionesByClub[clubId] || {};
     return Object.keys(gestiones).reduce((best,k) => (!best || gestiones[k].lastYear > gestiones[best].lastYear) ? k : best, null);
@@ -664,13 +665,15 @@
     return simplifiedReportForGeneric(clubId, year);
   }
 
-  // Orden y color de cada categoría de "Formato Simplificado" para los gráficos apilados de Inicio.
-  // MISMOS labels que ya arman GENERIC_SIMPLIFIED_*_BUCKETS (ver esas definiciones más arriba en este
-  // archivo) — no se inventa vocabulario nuevo acá, solo se le suma un color fijo a cada categoría
-  // para que el gráfico apilado sea legible. "Fútbol profesional (sin
-  // desglosar por la fuente)" puede faltar en lo que devuelve simplifiedReportForClub() para un
-  // año/club que no la usa (bucketize la filtra si da $0); acá se le da 0 igual si no aparece, un
-  // bucket ausente y un bucket en $0 son lo mismo en una barra apilada (no aporta ninguna porción).
+  // EL COLOR DE CADA CATEGORÍA de "Formato Simplificado". MISMOS labels que ya arman
+  // GENERIC_SIMPLIFIED_*_BUCKETS (ver esas definiciones más arriba en este archivo) — no se
+  // inventa vocabulario nuevo acá, solo se le suma un color fijo a cada categoría.
+  // OJO CON EL NOMBRE, que quedó viejo y conviene no creerle (Versión 184): nació para los
+  // gráficos apilados de Inicio, que YA NO EXISTEN (Inicio es la bifurcación más la vidriera
+  // de rankings de liga). Su único consumidor hoy es `colorDeRubro()` en js/selector.js, que
+  // pinta la composición de ingresos de la pestaña Comparar. Se conserva el nombre para no
+  // tocar ese archivo por una constante; si algún día se renombra, es ahí donde hay que mirar.
+  // Su par de GASTOS (`INICIO_GASTOS_BUCKETS`) se borró en la 184: se quedó sin consumidor.
   const INICIO_INGRESOS_BUCKETS = [
     {label:'Cuotas Sociales', color:'#0a2b5c'},
     {label:'Comercial / Sponsors', color:'#f2b705'},
@@ -682,82 +685,16 @@
     {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
     {label:'Otras secciones deportivas y otros ingresos', color:'#6b6b6b'},
   ];
-  const INICIO_GASTOS_BUCKETS = [
-    {label:'Compra de jugadores', color:'#0a2b5c'},
-    {label:'Salarios y primas (plantel y cuerpo técnico)', color:'#f2b705'},
-    {label:'Inversiones (amortizaciones y depreciación)', color:'#1b7a3d'},
-    {label:'Organización de partidos', color:'#8a5cf6'},
-    {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', color:'#2b8a99'},
-    {label:'Administración y gastos generales', color:'#e07b39'},
-    {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
-    {label:'Otros gastos', color:'#6b6b6b'},
-  ];
-
-  // El año más reciente del rango completo (allYearsRangeForClub) que tenga algún dato real cargado
-  // (Balance o Presupuesto, no importa cuál — ver yearKindForClub), o `null` si el club no tiene
-  // ninguno. Sirve para ordenar los gráficos apilados de Inicio "de mayor a menor según el último
-  // año disponible" (pedido explícito de Guido), no según un orden fijo de categorías.
-  function lastAvailableYearForClub(clubId){
-    const years = allYearsRangeForClub(clubId);
-    for(let i=years.length-1; i>=0; i--){
-      if(yearKindForClub(clubId, years[i]) !== 'blank') return years[i];
-    }
-    return null;
-  }
-
-  // Arma un dataset de Chart.js por bucket (Ingresos o Gastos, según `buckets`/`sectionKey`), en
-  // USD, TODOS los ejercicios del club en orden cronológico sin saltos (allYearsRangeForClub). Un
-  // año "blank" (yearKindForClub) deja `null` en TODOS los buckets ese año (Chart.js no dibuja nada
-  // ahí); un año con dato real lleva el valor de cada bucket (0 si esa categoría no aportó nada ese
-  // año), sin importar si el ejercicio es Balance o Presupuesto — la distinción Balance/Presupuesto
-  // se pinta en la capa de render (color atenuado + tooltip), no acá.
+  // ACÁ VIVÍAN LAS 4 COSAS QUE ALIMENTABAN LOS GRÁFICOS DE INICIO, y ya no existen
+  // (Versión 184, to-do 33): `INICIO_GASTOS_BUCKETS`, `lastAvailableYearForClub()`,
+  // `inicioStackedSeriesForClub()` y `inicioDeudaSeriesForClub()`. Inicio dejó de mostrar
+  // el club activo. Están en git antes de la 184 si hacen falta.
   //
-  // Orden de los buckets (de qué segmento va abajo/arriba de la pila, y en qué orden aparece la
-  // leyenda): NO es el orden fijo de `buckets` (INICIO_INGRESOS_BUCKETS/_GASTOS_BUCKETS), es de
-  // MAYOR a MENOR según el ÚLTIMO ejercicio disponible del club (lastAvailableYearForClub) — mismo
-  // orden para TODOS los años del gráfico (no se reordena año a año), así el segmento más grande
-  // HOY queda siempre abajo de la pila, más fácil de leer. El color de cada categoría sigue fijo
-  // por label (no por posición), para que no cambie de significado entre clubes.
-  function inicioStackedSeriesForClub(clubId, buckets, sectionKey){
-    const years = allYearsRangeForClub(clubId);
-    const kinds = years.map(year => yearKindForClub(clubId, year));
-    const lastYear = lastAvailableYearForClub(clubId);
-    let orderedBuckets = buckets;
-    if(lastYear !== null){
-      const lastRows = simplifiedReportForClub(clubId, lastYear)[sectionKey] || [];
-      const valueForLabel = label => {
-        const row = lastRows.find(r => r.label === label);
-        return row ? Math.abs(row.value) : 0;
-      };
-      orderedBuckets = buckets.slice().sort((a,b) => valueForLabel(b.label) - valueForLabel(a.label));
-    }
-    const datasets = orderedBuckets.map(b => ({ label:b.label, color:b.color, data:[] }));
-    years.forEach((year, i) => {
-      if(kinds[i] === 'blank'){
-        datasets.forEach(d => d.data.push(null));
-        return;
-      }
-      const rows = simplifiedReportForClub(clubId, year)[sectionKey] || [];
-      const meta = yearMetaFor(clubId, year);
-      orderedBuckets.forEach((b, j) => {
-        const row = rows.find(r => r.label === b.label);
-        datasets[j].data.push(Math.abs(toDisplayValue(row ? row.value : 0, meta, currentCurrency)));
-      });
-    });
-    return { years, kinds, datasets };
-  }
+  // LO QUE QUEDÓ SIN CONSUMIDOR Y NO SE BORRÓ, a propósito y como decisión explícita (ver
+  // to-do 43): `allYearsRangeForClub()` y `yearKindForClub()`, unas líneas más arriba. Son
+  // helpers genéricos del motor, no de Inicio, y `yearKindForClub()` es además la única
+  // rama del código que distingue `placeholder` de `pending_official`, que `ESTADO.md`
+  // documenta como estados válidos a propósito. Borrarlos es una decisión de Guido, no un
+  // efecto colateral de haber sacado una pantalla.
 
-  // Serie de Deuda neta (única, no apilada — "Formato simplificado" es un concepto de Ingresos/
-  // Gastos, la deuda no se desglosa por categoría) para el 3er gráfico de Inicio, mismo rango y
-  // mismo criterio de blanco que inicioStackedSeriesForClub.
-  function inicioDeudaSeriesForClub(clubId){
-    const years = allYearsRangeForClub(clubId);
-    const kinds = years.map(year => yearKindForClub(clubId, year));
-    // Nota: NO usa displayFinancialsForClub() a propósito — esa función fuerza USD siempre (la
-    // usa "Comparar Gestiones", que por diseño ignora el toggle de moneda). Acá sí tiene que
-    // respetar `currentCurrency`, el toggle ahora es universal (header, al lado del selector de
-    // club) y aplica también a Inicio.
-    const values = years.map((year, i) => kinds[i] === 'blank' ? null : toDisplayValue(computeYearForClub(clubId, year).netDebt, yearMetaFor(clubId, year), currentCurrency));
-    return { years, kinds, values };
-  }
 

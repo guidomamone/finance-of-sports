@@ -50,7 +50,18 @@ window.LIGA_VIEW = (function(){
   // El (liga, ejercicio) que se está mirando. `null` es el estado frío: la
   // pestaña se puede abrir desde el nav sin haber elegido nada.
   var st = { league:null, year:null };
-  var chartInst = null;
+  // LAS INSTANCIAS DE Chart.js, EN DOS REGISTROS SEPARADOS, y la separación importa:
+  // este módulo dibuja DOS pantallas que conviven (la pestaña Ligas y la vidriera de
+  // Inicio), y repintar una no puede matar los gráficos de la otra — el visitante
+  // volvería a Inicio y encontraría 4 canvas en blanco. Chart.js pisa el canvas si se
+  // crea una instancia sobre otra sin destruirla, así que cada pantalla destruye lo
+  // suyo antes de redibujar. Hasta 11 vivas a la vez (1 + 10).
+  var instancias = { liga: [], dest: [] };
+  function nueva(donde, chart){ instancias[donde].push(chart); return chart; }
+  function matarCharts(donde){
+    instancias[donde].forEach(function(c){ try { c.destroy(); } catch(e){} });
+    instancias[donde] = [];
+  }
 
   function $(id){ return document.getElementById(id); }
   function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
@@ -73,16 +84,21 @@ window.LIGA_VIEW = (function(){
   // función del motor está disponible sin cargar ningún data file: solo necesita
   // `clubs[id].fiscalYearStart`, que es eager. El fallback es el año pelado, que
   // es cierto aunque diga menos.
-  function etiquetaEjercicio(f){
+  function etiquetaEjercicio(f, year){
     return (typeof window.ejercicioLabel === 'function')
-      ? window.ejercicioLabel(st.year, f.reportType, f.id)
-      : String(st.year);
+      ? window.ejercicioLabel(year, f.reportType, f.id)
+      : String(year);
   }
   // "1 club" y no "1 club(es)": el conteo aparece en el subtítulo de la página y
   // en dos salvedades, y el paréntesis se lee como un formulario.
   function nClubes(n){
     return n + ' ' + (n === 1 ? t('liga.club1', 'club') : t('liga.clubN', 'clubes'));
   }
+  // EL BOLSÓN "sin desglosar por la fuente" SE IDENTIFICA POR SU ETIQUETA, que es la
+  // clave con la que el sitio entero matchea los buckets (ver data/site-labels.js).
+  // Si se renombra el bucket en js/finanzas-calc.js hay que renombrarlo acá también:
+  // el aviso degrada a no mostrarse, no rompe nada, pero deja de avisar.
+  var LUMP_LABEL = 'Fútbol profesional (sin desglosar por la fuente)';
   function fmtM(v){
     var abs = Math.abs(v);
     var txt = abs >= 1000 ? (abs / 1000).toFixed(2) + ' MM' : abs.toFixed(1) + ' M';
@@ -159,7 +175,7 @@ window.LIGA_VIEW = (function(){
   function render(){
     var wrap = $('ligaWrap');
     if(!wrap) return;
-    if(chartInst){ chartInst.destroy(); chartInst = null; }
+    matarCharts('liga');
     wrap.innerHTML = '';
     if(!st.league){ wrap.appendChild(estadoFrio()); return; }
 
@@ -172,7 +188,7 @@ window.LIGA_VIEW = (function(){
     }
 
     wrap.appendChild(encabezado(r));
-    wrap.appendChild(grafico(r));
+    wrap.appendChild(grafico(r, st.league, st.year, 'ligaChart', null, 'liga'));
     wrap.appendChild(tabla(r));
     wrap.appendChild(salvedades(r));
   }
@@ -255,16 +271,20 @@ window.LIGA_VIEW = (function(){
 
   // EL GRÁFICO. Chart.js, el mismo que ya usa el resto del sitio; una sola serie
   // con `backgroundColor` como ARRAY, que es como se pinta cada barra de su
-  // color (mismo truco que `drawInicioMetricChart()` en js/finanzas-render.js
-  // usa para atenuar los años de presupuesto).
-  function grafico(r){
+  // propio color de marca.
+  // `canvasId` y `year` explícitos porque esta función la usan DOS pantallas: la
+  // pestaña Ligas (un gráfico, el de `st`) y la vidriera de Inicio (hasta 10, de
+  // ligas y ejercicios distintos, todos vivos a la vez). Depender del estado del
+  // módulo alcanzaba para la primera y no para la segunda.
+  function grafico(r, leagueId, year, canvasId, alto, donde){
     var caja = el('div', 'liga-chart-card');
     var head = el('div', 'liga-chart-head');
     head.appendChild(el('span', 'liga-chart-y', 'M USD'));
     caja.appendChild(head);
     var box = el('div', 'liga-chart-box');
+    if(alto) box.style.height = alto + 'px';
     var cv = document.createElement('canvas');
-    cv.id = 'ligaChart';
+    cv.id = canvasId;
     box.appendChild(cv);
     caja.appendChild(box);
 
@@ -299,14 +319,18 @@ window.LIGA_VIEW = (function(){
     };
 
     setTimeout(function(){
-      var ctx = document.getElementById('ligaChart');
+      var ctx = document.getElementById(canvasId);
       if(!ctx) return;
-      chartInst = new Chart(ctx.getContext('2d'), {
+      nueva(donde, new Chart(ctx.getContext('2d'), {
         type:'bar',
         data:{
           labels: filas.map(function(f){ return nombreDe(f.id); }),
+          // `maxBarThickness`: con 3 clubes (el Brasileirão Série B 2024) Chart.js
+          // reparte todo el ancho entre las 3 barras y salen del tamaño de un
+          // cartel — se lee como una infografía, no como un ranking. Con tope,
+          // un ranking flaco se ve flaco, que es lo que es.
           datasets:[{ label:t('liga.revenue', 'Ingresos'), data: filas.map(function(f){ return f.revenue; }),
-                      backgroundColor: colores, borderWidth:0 }]
+                      backgroundColor: colores, borderWidth:0, maxBarThickness:64 }]
         },
         options:{
           responsive:true, maintainAspectRatio:false, layout:{padding:{top:26}},
@@ -316,7 +340,7 @@ window.LIGA_VIEW = (function(){
               label: function(c){ return fmtM(c.parsed.y); },
               // El tooltip dice el ejercicio DE ESE CLUB. No todos cierran el
               // mismo día, y el encabezado solo dice el año del ranking.
-              afterLabel: function(c){ return etiquetaEjercicio(filas[c.dataIndex]); }
+              afterLabel: function(c){ return etiquetaEjercicio(filas[c.dataIndex], year); }
             } }
           },
           scales:{
@@ -339,14 +363,15 @@ window.LIGA_VIEW = (function(){
           }
         },
         plugins:[etiquetas]
-      });
+      }));
     }, 0);
     return caja;
   }
 
   // EL SALTO AL CLUB. La vista de liga no conoce el nav ni sabe cargar un club:
   // se lo pide al hook que le pasó index.html, igual que hace js/selector.js.
-  var api = { pickClub: function(){ return Promise.resolve(); }, goFinanzas: function(){} };
+  var api = { pickClub: function(){ return Promise.resolve(); },
+              goFinanzas: function(){}, goLiga: function(){} };
   function irAlClub(clubId){
     Promise.resolve(api.pickClub(clubId)).then(function(){ api.goFinanzas(); });
   }
@@ -381,7 +406,7 @@ window.LIGA_VIEW = (function(){
       tr.appendChild(tdc);
 
       tr.appendChild(el('td', 'num', fmtM(f.revenue)));
-      tr.appendChild(el('td', 'liga-col-ej', etiquetaEjercicio(f)));
+      tr.appendChild(el('td', 'liga-col-ej', etiquetaEjercicio(f, st.year)));
 
       // EL TIPO DE DOCUMENTO NO ES DECORACIÓN. En el ranking de la Primera 2024,
       // el puesto 1 (River) es `unofficial_mirror` —una copia no oficial— y el 7
@@ -473,11 +498,10 @@ window.LIGA_VIEW = (function(){
     // sitio entero matchea los buckets (ver data/site-labels.js). Si se renombra
     // el bucket en js/finanzas-calc.js hay que renombrarlo acá, y este aviso
     // degrada a no mostrarse: no rompe nada, pero deja de avisar.
-    var LUMP = 'Fútbol profesional (sin desglosar por la fuente)';
     var tot = 0, lump = 0;
     r.clubs.forEach(function(f){
       tot += f.revenue;
-      f.mix.forEach(function(m){ if(m[0] === LUMP) lump += m[1]; });
+      f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
     });
     if(tot && lump / tot > 0.10){
       out.push(Math.round((lump / tot) * 100) + '% ' + t('liga.cv.lump',
@@ -494,17 +518,112 @@ window.LIGA_VIEW = (function(){
   }
 
   // --------------------------------------------------------------------------
+  // LA VIDRIERA DE INICIO (Versión 184, to-do 33).
+  //
+  // QUÉ REEMPLAZA: hasta acá, abajo de la bifurcación de Inicio iban los KPIs y los
+  // 3 gráficos del club activo — o sea, nada, para el visitante que llega por
+  // primera vez y todavía no eligió club. Decisión de Guido (2026-09-22): "en
+  // Inicio quedan las ligas que dejamos predeterminadas como para mostrar de qué es
+  // capaz y qué tiene la página". Y nada más: el resumen del club se fue del todo,
+  // no se escondió.
+  //
+  // QUÉ SE MUESTRA LO DECIDE `data/destacados.js`, una lista curada A MANO de hasta
+  // 10 pares (liga, ejercicio). NO hay una regla automática del tipo "las ligas con
+  // más de N clubes": lo que hace buena a una vidriera es editorial. `audit.js`
+  // chequea que cada entrada tenga su ranking (`destacado-sin-ranking`, P1).
+  //
+  // EL COSTO: baja un `data/rankings/<liga>.js` por bloque, hoy ~6,5 KB gzip por los
+  // 4. Es el precio de tener números en la portada, y es dos órdenes de magnitud
+  // menos que los ~150 KB que costaría calcular los mismos 4 rankings en vivo desde
+  // los `data/<club>-data.js`. Ningún archivo de club se baja.
+  // --------------------------------------------------------------------------
+  function renderDestacados(){
+    var caja = $('vidriera');
+    if(!caja) return Promise.resolve();
+    var lista = (window.DESTACADOS || []).slice(0, 10);
+    matarCharts('dest');
+    caja.innerHTML = '';
+    if(!lista.length) return Promise.resolve();
+
+    caja.appendChild(el('h2', 'vid-h', t('vid.title', 'Rankings de ingresos por liga')));
+    caja.appendChild(el('p', 'vid-sub', t('vid.sub',
+      'Lo que el sitio tiene cargado hoy, en USD y en Formato simplificado. Cada ranking es de un ejercicio: entrá a la liga para ver otro año.')));
+    var cuerpo = el('div', 'vid-cuerpo');
+    caja.appendChild(cuerpo);
+
+    // Los 4 archivos en paralelo, no de a uno: son independientes y encadenarlos
+    // multiplicaría la latencia por 4 sin ganar nada. Mismo criterio que `auditAll()`
+    // desde la Versión 160.
+    return Promise.all(lista.map(function(d){ return loadRanking(d.league); })).then(function(){
+      lista.forEach(function(d, i){
+        var r = rankingDe(d.league, d.year);
+        // Un destacado que ya no tiene ranking NO dibuja un bloque vacío: se saltea
+        // en silencio. El que avisa es `node tools/audit.js`, que es donde el aviso
+        // sirve — el visitante no puede hacer nada con él.
+        if(!r) return;
+        cuerpo.appendChild(bloqueDestacado(d.league, d.year, r, i));
+      });
+    });
+  }
+
+  function bloqueDestacado(leagueId, year, r, i){
+    var lg = ligaDe(leagueId), co = paisDe(leagueId);
+    var caja = el('div', 'vid-bloque');
+
+    var head = el('div', 'vid-b-head');
+    var h = el('h3', 'vid-b-h');
+    h.appendChild(el('span', 'liga-flag', co.flag || '🏆'));
+    h.appendChild(document.createTextNode(' ' + lg.name + ' · ' + t('liga.exercise', 'Ejercicio') + ' ' + year));
+    head.appendChild(h);
+    var ver = el('button', 'vid-b-ver', t('vid.see', 'Ver la liga') + ' ›');
+    ver.type = 'button';
+    ver.addEventListener('click', function(){
+      // `show()` deja la vista lista; navegar es del que sabe del nav.
+      show(leagueId, year).then(function(){ api.goLiga(); });
+    });
+    head.appendChild(ver);
+    caja.appendChild(head);
+
+    // La misma regla de cobertura que la pestaña, palabra por palabra: "N de M" solo
+    // si `leagueSizeAt()` lo supo cuando se generó el ranking.
+    caja.appendChild(el('p', 'vid-b-sub', r.leagueSize != null
+      ? r.clubs.length + ' ' + t('liga.of', 'de los') + ' ' + r.leagueSize + ' '
+        + t('liga.cover', 'clubes de esa temporada tienen ejercicio cargado.')
+      : nClubes(r.clubs.length) + ' ' + t('liga.coverN', 'con ejercicio cargado. No está verificado cuántos equipos jugaron esa temporada, así que el sitio no dice de cuántos son.')));
+
+    caja.appendChild(grafico(r, leagueId, year, 'vidChart' + i, 260, 'dest'));
+
+    // UNA sola salvedad acá, la que cambia cómo se lee el gráfico: cuánto del
+    // ingreso no está desglosado. El resto de las salvedades están en la pestaña de
+    // la liga, que es donde alguien que quiere el detalle va a ir. Una portada con
+    // seis advertencias abajo de cada gráfico no se lee.
+    var tot = 0, lump = 0;
+    r.clubs.forEach(function(f){
+      tot += f.revenue;
+      f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
+    });
+    if(tot && lump / tot > 0.10){
+      caja.appendChild(el('p', 'vid-b-aviso', '⚠ ' + Math.round((lump / tot) * 100) + '% '
+        + t('liga.cv.lump', 'del ingreso de este ranking no está desglosado por club: la fuente publica el total pero no de dónde sale.')));
+    }
+    return caja;
+  }
+
+  // --------------------------------------------------------------------------
   function init(hooks){
     api.pickClub = (hooks && hooks.pickClub) || api.pickClub;
     api.goFinanzas = (hooks && hooks.goFinanzas) || api.goFinanzas;
+    api.goLiga = (hooks && hooks.goLiga) || api.goLiga;
   }
 
   return {
     init: init,
     show: show,
     // La llama index.html después de un cambio de idioma, igual que
-    // `CLUB_SELECTOR.refresh()`.
-    refresh: render,
+    // `CLUB_SELECTOR.refresh()`. Repinta LAS DOS pantallas: la vidriera de Inicio
+    // también es texto generado en JS.
+    refresh: function(){ render(); renderDestacados(); },
+    renderDestacados: renderDestacados,
     current: function(){ return { league: st.league, year: st.year }; }
   };
 })();

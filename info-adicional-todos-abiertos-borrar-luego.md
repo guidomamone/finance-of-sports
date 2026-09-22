@@ -14,7 +14,13 @@ acá.
 
 ---
 
-## 33 y 23(c) — LOS RANKINGS Y LA VISTA DE LIGA
+## 33 y 23(c) — LOS RANKINGS Y LA VISTA DE LIGA · **LOS DOS CERRADOS (Versiones 182-184)**
+
+> **Esta sección ya no es contexto pendiente: es la historia de cómo se hizo.** El 2026-09-22 se
+> implementaron los dos. `tools/generate-rankings.js` precalcula `data/rankings/<liga>.js`, la
+> pestaña Ligas muestra el ranking de una liga-ejercicio, e Inicio muestra la vidriera de
+> `data/destacados.js` (que arrancó con las 3 liga-temporadas que esta sección identificó, más
+> Série B 2024). Se puede borrar.
 
 **LA PREMISA DEL PUNTO 33 ESTÁ VENCIDA, Y ES LO MÁS IMPORTANTE DE ESTE ARCHIVO.** Dice que no se
 hacen los rankings porque "hace falta masa crítica de datos" y que "un ranking de la Premier no

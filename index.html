@@ -309,14 +309,6 @@ consulta puntual, nunca lectura de corrido.
   .compare-table td.better{font-weight:700;}
   .charts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:6px;}
   .chart-wrap{position:relative;height:270px;margin-top:8px;}
-  /* Leyenda HTML propia de los 2 gráficos apilados de Inicio (Ingresos/Gastos), reemplaza la
-     leyenda nativa de Chart.js (ver renderInicioLegend en js/finanzas-render.js). CSS Grid, no
-     flex-wrap: así las columnas de Ingresos y Gastos empiezan en el mismo x (mismo ancho de card),
-     "alineadas entre sí" — un flex-wrap centrado no lo garantiza porque cada fila tiene un ancho de
-     contenido distinto. */
-  .inicio-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px 12px;margin-top:10px;font-size:12px;color:var(--muted);}
-  .inicio-legend-item{display:flex;align-items:flex-start;gap:6px;line-height:1.3;}
-  .inicio-legend-swatch{width:11px;height:11px;border-radius:3px;flex:0 0 auto;margin-top:2px;}
   /* Antes se dibujaba el "$" a mano dentro del <canvas> (afterDraw de Chart.js) para evitar que
      Chart.js lo rotara 90° (rota siempre el título nativo del eje Y), pero el glyph salía roto en
      el canvas (reportado por Guido, no se veía como un "$"). Un <span> de HTML normal, superpuesto
@@ -404,7 +396,22 @@ consulta puntual, nunca lectura de corrido.
   .bif-s{font-size:13.5px;color:var(--muted);line-height:1.5;}
   .bif-cta{margin-top:9px;font-size:13.5px;font-weight:800;color:var(--azul);}
   /* Separa la pregunta del resumen del club, cuando hay club y los dos conviven. */
-  #inicioClub{margin-top:34px;border-top:1px solid var(--border);padding-top:26px;}
+  /* LA VIDRIERA DE INICIO (Versión 184, to-do 33). Acá estaba `#inicioClub`, el
+     resumen del club activo. */
+  .vidriera{margin-top:34px;border-top:1px solid var(--border);padding-top:26px;}
+  .vid-h{font-size:19px;margin:0 0 4px;}
+  .vid-sub{color:var(--muted);font-size:13px;margin:0 0 20px;line-height:1.5;max-width:760px;}
+  .vid-cuerpo{display:flex;flex-direction:column;gap:26px;}
+  .vid-b-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .vid-b-h{margin:0;font-size:16px;}
+  .vid-b-ver{background:none;border:none;padding:0;font:inherit;font-size:13px;font-weight:600;
+    color:var(--azul);cursor:pointer;flex-shrink:0;}
+  .vid-b-ver:hover{text-decoration:underline;}
+  .vid-b-sub{color:var(--muted);font-size:12.5px;margin:4px 0 10px;line-height:1.5;}
+  /* El aviso de cuánto no está desglosado: es lo único que cambia CÓMO se lee el
+     gráfico, así que es la única salvedad que sube a la portada. El resto vive en la
+     pestaña de la liga. */
+  .vid-b-aviso{color:#9a6b00;font-size:12px;margin:8px 0 0;line-height:1.5;}
   /* `display:flex` de una clase le gana al `display:none` que el navegador le da a
      [hidden]: sin esta regla, un .fin-sel escondido se ve igual. */
   .fin-sel[hidden]{display:none;}
@@ -883,30 +890,16 @@ consulta puntual, nunca lectura de corrido.
       </div>
     </div>
 
-    <!-- El resumen del club activo. `hidden` mientras no haya club: sin uno son 4 KPIs en
-         "Sin dato" y 3 gráficos vacíos, que es peor que no estar. Lo destapa applyClubMode(). -->
-    <div id="inicioClub" hidden>
-      <h1 data-i18n="inicio.title">Datos del club</h1>
-      <p class="subtitle" data-i18n="inicio.sub">Mirá los números de tu club. Ingresos, gastos, deuda, mercado de pases y resultados deportivos de cada gestión, con fuente y fecha.</p>
-      <div class="grid" id="inicioStats"></div>
-
-      <div class="card">
-        <h2 data-i18n="inicio.chart.rev">Ingresos por año</h2>
-        <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioIngresosChart"></canvas></div>
-        <div class="inicio-legend" id="inicioIngresosLegend"></div>
-      </div>
-
-      <div class="card">
-        <h2 data-i18n="inicio.chart.exp">Gastos por año</h2>
-        <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioGastosChart"></canvas></div>
-        <div class="inicio-legend" id="inicioGastosLegend"></div>
-      </div>
-
-      <div class="card">
-        <h2 data-i18n="inicio.chart.debt">Deuda neta por año</h2>
-        <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="inicioDeudaChart"></canvas></div>
-      </div>
-    </div>
+    <!-- LA VIDRIERA (Versión 184, to-do 33). Acá abajo vivían los KPIs y los 3 gráficos
+         del club activo (`#inicioClub`), escondidos mientras no hubiera club — o sea,
+         nada, justo para el visitante que llega por primera vez. Decisión de Guido
+         (2026-09-22): "en Inicio quedan las ligas que dejamos predeterminadas como para
+         mostrar de qué es capaz y qué tiene la página". Los KPIs y los gráficos NO se
+         mudaron a otro lado: se borraron. Los dos de evolución ("Ingresos por año" y
+         "Gastos por año") ya duplicaban al `trendChart` de Finanzas, que es lo que el
+         propio to-do 33 anotaba como "conviene resolver cuando se haga esto".
+         Lo llena `LIGA_VIEW.renderDestacados()` desde `data/destacados.js`. -->
+    <div class="vidriera" id="vidriera"></div>
   </section>
 
   <!-- COMPARAR (Versión 144, etapa 2 del merge del prototipo 4).
@@ -1364,40 +1357,41 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '183';</script>
-<script src="data/lang/langs.js?v=183"></script>
-<script src="js/i18n.js?v=183"></script>
-<script src="data/clubs.js?v=183"></script>
+<script>window.ASSET_V = '184';</script>
+<script src="data/lang/langs.js?v=184"></script>
+<script src="js/i18n.js?v=184"></script>
+<script src="data/clubs.js?v=184"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=183"></script>
+<script src="data/club-index.js?v=184"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=183"></script>
-<script src="data/club-leagues.js?v=183"></script>
-<script src="data/category-map.js?v=183"></script>
-<script src="data/site-labels.js?v=183"></script>
-<script src="data/currency-map.js?v=183"></script>
-<script src="data/sources-view.js?v=183"></script>
+<script src="data/leagues.js?v=184"></script>
+<script src="data/club-leagues.js?v=184"></script>
+<script src="data/category-map.js?v=184"></script>
+<script src="data/site-labels.js?v=184"></script>
+<script src="data/currency-map.js?v=184"></script>
+<script src="data/sources-view.js?v=184"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=183"></script>
-<script src="js/finanzas-render.js?v=183"></script>
+<script src="js/finanzas-calc.js?v=184"></script>
+<script src="js/finanzas-render.js?v=184"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=183"></script>
-<script src="js/liga.js?v=183"></script>
+<script src="js/selector.js?v=184"></script>
+<script src="data/destacados.js?v=184"></script>
+<script src="js/liga.js?v=184"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -1526,8 +1520,6 @@ consulta puntual, nunca lectura de corrido.
     // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club
     // (Versión 125), no en cada cambio de ejercicio como la ficha de Finanzas.
     renderFuentesClubCard();
-    renderInicioStats();
-    renderInicioCharts();
   }
 
   // ---------- SELECTOR JERÁRQUICO DE CLUB (Versión 137) ----------
@@ -1631,7 +1623,9 @@ consulta puntual, nunca lectura de corrido.
     const activo = document.querySelector('#mainNav button.active');
     if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
 
-    document.getElementById('inicioClub').hidden = cold;
+    // Versión 184: acá se escondía `#inicioClub` cuando no había club. Ese bloque ya no
+    // existe — Inicio es la pregunta y la vidriera de rankings, y las dos cosas se ven
+    // igual haya club o no.
 
     CLUB_SELECTOR.renderButton();
   }
@@ -1650,9 +1644,12 @@ consulta puntual, nunca lectura de corrido.
   LIGA_VIEW.init({
     pickClub: selectClub,
     goFinanzas: () => irASeccion('finanzas'),
+    // Versión 184: el "Ver la liga ›" de cada bloque de la vidriera de Inicio.
+    goLiga: () => irASeccion('liga'),
   });
-  // Se dibuja ya, para que llegar por el botón del nav sin haber elegido liga muestre la
-  // grilla de ligas en vez de una sección vacía.
+  // Se dibujan las dos pantallas del módulo: la pestaña (estado frío: la grilla de las 8
+  // ligas, para que llegar por el nav sin liga elegida no muestre una sección vacía) y la
+  // vidriera de Inicio, que es lo primero que ve un visitante nuevo.
   LIGA_VIEW.refresh();
 
   // Acá vivía el `CLUB_COMPARE.init()` de js/comparar-clubes.js, borrado en la
@@ -1799,8 +1796,6 @@ consulta puntual, nunca lectura de corrido.
     btn.classList.add('active');
     currentCurrency = btn.dataset.currency;
     refreshFinanzas();
-    renderInicioStats();
-    renderInicioCharts();
   });
 
   // Arma el toggle [moneda nativa del club / USD] para `clubId`. Un club cuyo `reportingCurrency`
@@ -1854,8 +1849,6 @@ consulta puntual, nunca lectura de corrido.
   });
 
   // ---------- INIT ----------
-  renderInicioStats();
-  renderInicioCharts();
   // REGLA (Versión 56): antes de esto, `populateFinanzasSelectors()` solo se llamaba al CAMBIAR de
   // club (`refreshAllForClub()`), nunca en la carga inicial, así que el `<select id="anioSelect">"
   // se quedaba con las opciones ESTÁTICAS del HTML (arriba en el <body>) hasta el primer cambio de
@@ -1933,8 +1926,6 @@ consulta puntual, nunca lectura de corrido.
     populateFinanzasSelectors(currentClub);
     populateCurrencyToggle(currentClub);
     refreshFinanzas();
-    renderInicioStats();
-    renderInicioCharts();
     applyPasesFilters();
     renderResultados();
     renderTitulosTable();

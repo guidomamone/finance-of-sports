@@ -806,6 +806,27 @@ que se lea como un ejercicio completo raro). El documento y el hallazgo quedan d
 documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa
 columna es diciembre del MISMO año 2025), no un error de transcripción.
 
+## 17. AL TERMINAR: los 3 generados (Versión 184)
+
+Cargar un club o un ejercicio deja **tres archivos generados desactualizados**, y los tres se
+publican. No se editan a mano:
+
+```
+node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de ESTADO.md
+node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
+node tools/generate-rankings.js        # data/rankings/<liga>.js
+```
+
+El tercero es el más nuevo y el más fácil de olvidar porque **no se ve al mirar el club que acabás
+de cargar**: alimenta el ranking de su liga en Inicio y en la pestaña Ligas, o sea otra pantalla.
+Si no lo corrés, esa liga sigue mostrando el ranking sin el club nuevo — un número viejo, publicado,
+con pinta de verificado. Por eso `node tools/audit.js` corre el `--check` de los tres y los reporta
+como **P1** (`checkGenerados()`): no se puede pushear con uno desfasado.
+
+**Y acordate de la fila de `data/club-leagues/<iso2>.js`**: sin ella el club no integra ninguna
+liga, así que no aparece en ningún ranking aunque el generador haya corrido. La auditoría también
+la cuenta (`liga-sin-verificar`, P3).
+
 ## Cómo mantener este skill
 
 Igual que `club-data-mapping`: se actualiza SOLO al terminar una sesión de onboarding, sin pedirle

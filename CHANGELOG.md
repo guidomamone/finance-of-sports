@@ -2357,3 +2357,44 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   en null (Série B), el de un solo club (Liga MX), el flujo entero desde el buscador, y el click
   de una fila a Finanzas. `auditAll()` 41 clubes / 228 checks / 0 que no cierran / 0 warnings;
   `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día.
+
+## Versión 184: Inicio es la pregunta y la vidriera de rankings (tanda 3 de 3, cierra el to-do 33)
+
+- **Inicio deja de mostrar el club activo.** Se borró `#inicioClub` entero: los 4 KPIs y los 3
+  gráficos de evolución. Decisión de Guido (2026-09-22): "en Inicio quedan las ligas que dejamos
+  predeterminadas como para mostrar de qué es capaz y qué tiene la página… nada más, no información
+  del equipo que el usuario tenga por default". No se mudaron a ningún lado; dos de los tres
+  gráficos ya duplicaban al `trendChart` de Finanzas, que sigue donde estaba.
+- **La vidriera**: abajo de la bifurcación, hasta 10 bloques de ranking, uno por entrada de
+  `data/destacados.js` (hoy 4: J1 2025, LaLiga 2024/25, Primera 2024 y Série B 2024). Cada bloque
+  es el encabezado con su "N de M", el gráfico, el aviso de cuánto no está desglosado y un "Ver la
+  liga ›". El resto de las salvedades vive en la pestaña de cada liga: una portada con seis
+  advertencias abajo de cada gráfico no se lee.
+- Los 4 `data/rankings/<liga>.js` se bajan **en paralelo** al pintar Inicio: ~6,5 KB gzip, contra
+  los ~150 KB que costaría calcular los mismos 4 rankings desde los `data/<club>-data.js`. **Sigue
+  sin bajarse ningún archivo de club en la portada.**
+- `js/liga.js` lleva ahora **dos registros separados de instancias de Chart.js** (`liga` y `dest`):
+  las dos pantallas conviven, y repintar una no puede dejar los 4 canvas de la otra en blanco.
+- **BORRADO DE CÓDIGO MUERTO, 430 líneas.** `js/finanzas-render.js` pasa de 1.467 a 1.101 líneas
+  (`renderInicioStats`, `renderInicioCharts` y sus 8 helpers de gráfico, más `informaDeuda`,
+  `ultimoEjercicioCon` y `goToFinanzasYear`); `js/finanzas-calc.js` de 764 a 700
+  (`INICIO_GASTOS_BUCKETS`, `lastAvailableYearForClub`, `inicioStackedSeriesForClub`,
+  `inicioDeudaSeriesForClub`). Se conservan `INICIO_INGRESOS_BUCKETS` (su consumidor real hoy es
+  `colorDeRubro()` de la pestaña Comparar) y, como decisión explícita, `allYearsRangeForClub()` y
+  `yearKindForClub()` — ver el to-do 43.
+- Se limpiaron además las 3 reglas CSS de `.inicio-legend*`, los 5 comentarios que quedaron
+  apuntando a funciones borradas (en `finanzas-calc.js`, `finanzas-render.js`, `liga.js` y
+  `tools/generate-club-index.js`) y **13 claves muertas de `data/lang/en.js`** (`inicio.*`,
+  `stat.*`, `liga.clubs`): 368 → 362, con 3 nuevas (`vid.*`).
+- **ASSET_V 183 → 184**, constante y los 15 `<script src>`; `fuentes.html` y las 41 páginas de club
+  regeneradas, porque su generador lee ASSET_V de `index.html`.
+- `data/destacados.js` pasa a cargarse eager (es la portada, y son ~20 líneas).
+- Las barras llevan `maxBarThickness:64`: con 3 clubes (el Brasileirão Série B 2024) Chart.js
+  repartía todo el ancho entre las 3 y salían del tamaño de un cartel, leyéndose como una
+  infografía y no como un ranking flaco, que es lo que es.
+- Verificado en el navegador, en castellano y en inglés: los 4 bloques dibujan, "Ver la liga ›"
+  aterriza en la pestaña con esa liga y ese ejercicio, un click en una barra lleva a Finanzas de
+  ese club, el cambio de idioma repinta las dos pantallas sin dejar canvas vacíos, y con un club
+  elegido Inicio sigue sin mostrar nada de ese club. `auditAll()` 41 clubes / 228 checks / 0 que no
+  cierran / 0 warnings; `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día; cero
+  `ReferenceError` en consola.

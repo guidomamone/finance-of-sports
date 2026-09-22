@@ -275,13 +275,22 @@ se reescribe, no se acumula.
   porque el sitio del club no responde (Ituano) y 1 que no salió de ninguna fuente
   externa (Boca, que usa el `--azul` histórico del sitio). Los escudos como IMAGEN siguen
   sin hacerse (derechos y hosting, el repo se deploya entero).
-- LA PORTADA ES UNA PREGUNTA (Versión 144, reemplaza al `#coldHero` de la 137).
-  Inicio abre con dos opciones grandes: "quiero ver un club en particular" (abre
-  el selector y aterriza en Finanzas) o "quiero comparar dos clubes o ligas" (va
-  a la pestaña Comparar). Abajo, si hay club, su resumen — los KPIs y los 3
-  gráficos. Sin club elegido se ven Inicio, Comparar, Finanzas y Mi Cuenta;
-  Fuentes aparece recién cuando hay uno. El club queda en `localStorage` y las
-  visitas siguientes entran derecho a él. Ningún club se carga eager.
+- LA PORTADA ES UNA PREGUNTA Y UNA VIDRIERA (Versión 144, reescrita en la 184 con
+  el to-do 33). Inicio abre con dos opciones grandes: "quiero ver un club en
+  particular" (abre el selector y aterriza en Finanzas) o "quiero comparar dos
+  clubes o ligas" (va a la pestaña Comparar). ABAJO, LOS RANKINGS DE LIGA, hasta
+  10, uno por entrada de `data/destacados.js`: cada uno con su "N de M", su
+  gráfico, el aviso de cuánto no está desglosado y un "Ver la liga ›". HASTA LA
+  VERSIÓN 184 abajo iba el resumen del club activo (4 KPIs y 3 gráficos,
+  `#inicioClub`): se BORRÓ, por decisión de Guido — "en Inicio quedan las ligas
+  que dejamos predeterminadas como para mostrar de qué es capaz y qué tiene la
+  página, nada más". Dos de esos 3 gráficos encima duplicaban el `trendChart` de
+  Finanzas. Inicio se ve IGUAL haya club elegido o no. Sin club se ven Inicio,
+  Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El
+  club queda en `localStorage` y las visitas siguientes entran derecho a él.
+  NINGÚN `data/<club>-data.js` SE CARGA EAGER, ni siquiera para la vidriera: los
+  rankings salen de `data/rankings/<liga>.js`, ~6,5 KB gzip por los 4 bloques de
+  hoy, contra ~150 KB que costaría calcularlos desde los archivos de club.
 - COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
   que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un
   LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:

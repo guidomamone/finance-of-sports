@@ -56,12 +56,26 @@ perdieron sino que se descartaron:
 
 > **HAY CONTEXTO EXTRA EN `info-adicional-todos-abiertos-borrar-luego.md`** (sesión 2026-09-20, a
 > pedido de Guido). Ese archivo tiene, por punto, lo que una sesión futura va a necesitar y no está
-> acá: la tabla de cuántos clubes tiene cargados cada liga-temporada (que **desmiente la premisa del
-> punto 33**: hay 3 rankings viables hoy, no cero), qué campos tiene `clubs{}` para el tema de los
+> acá: la tabla de cuántos clubes tiene cargados cada liga-temporada (que desmentía la premisa del
+> punto 33 — **ese punto ya se cerró en la Versión 184**, y la tabla quedó como el insumo con el que
+> se armó `data/destacados.js`), qué campos tiene `clubs{}` para el tema de los
 > escudos, dónde está la grilla de mezcla, y por qué el catch-all de Vélez es en realidad una
 > pregunta sobre el techo del modelo. **Es temporal: Guido lo trabaja y lo borra**, y lo que
 > sobreviva se muda al punto que corresponda o a un skill.
 
+
+43. DOS HELPERS DEL MOTOR QUEDARON SIN CONSUMIDOR Y NO SE BORRARON, a propósito:
+    `allYearsRangeForClub()` y `yearKindForClub()` (`js/finanzas-calc.js`). Los usaba el
+    render de Inicio, que se borró en la Versión 184 con el to-do 33. No se fueron con él
+    por dos motivos: son helpers GENÉRICOS del motor (el rango completo de ejercicios de un
+    club, y de qué tipo es cada uno), no de esa pantalla; y `yearKindForClub()` es la única
+    rama del código que distingue `placeholder` de `pending_official`, que `ESTADO.md`
+    documenta como estados válidos aunque hoy no los use ningún club. Borrarlos es una
+    decisión, no un efecto colateral. **Es de Guido**: si la respuesta es que no van a
+    volver a hacer falta, son ~35 líneas menos.
+    DE PASO, cuando se mire esto: `chart.nodata` y `selector.year.many` en `data/lang/en.js`
+    no tienen ninguna referencia en el código y son ANTERIORES a esta sesión (las 13 que
+    murieron con Inicio sí se borraron en la 184).
 
 40. REVISAR LOS NOMBRES DE LAS PESTAÑAS DEL NAV, todas juntas. Pedido de Guido, 2026-09-22,
     al decidir que la pestaña nueva se llamara "Ligas" y que Finanzas quedara como Finanzas.
@@ -118,7 +132,9 @@ perdieron sino que se descartaron:
         ejercicios", no "489 M". Es a propósito: el aporte en plata obliga a bajar el
         `data/<club>-data.js` de cada club MIENTRAS elegís, que es justo lo que el
         selector evita (son 41 archivos y el sitio los carga por demanda). Hoy los
-        baja recién al apretar "Comparar". Misma tensión que la to-do 33.
+        baja recién al apretar "Comparar". Es la misma tensión que resolvió el to-do 33
+        (Versiones 182-184) precalculando `data/rankings/<liga>.js`: si el aporte de cada
+        bloque hiciera falta, la salida probablemente sea la misma, no bajar los clubes.
 
     (e) **UN LADO PUEDE SUMAR UN PROMEDIO CON UNA SUMATORIA.** Se avisa en pantalla,
         no se prohíbe. Decisión explícita de Guido: "suma peras con manzanas pero no
@@ -130,32 +146,6 @@ perdieron sino que se descartaron:
         clubes contra 1 (Mirassol). La interfaz lo dice —los chips muestran cuántos
         equipos tiene cada temporada, y el resultado muestra la fórmula y el conteo—
         pero el número sigue siendo pobre hasta que haya más balances cargados.
-
-33. QUÉ VA A MOSTRAR INICIO CUANDO HAYA DATA. Idea de Guido, 2026-09-16, contestando la pregunta
-    que dejó abierta la etapa 2 del merge (¿Inicio es SOLO la bifurcación, como el prototipo, o
-    lleva contenido abajo?): lleva contenido, pero no el que tiene hoy. La idea es que Inicio
-    deje **rankings prearmados** — clubes por ingresos, los clubes de la Premier rankeados,
-    cosas así — para que alguien que llega por primera vez vea de qué va el sitio sin tener que
-    elegir nada primero. O sea: la bifurcación arriba (la pregunta), y abajo una vidriera del
-    contenido, no los KPIs del club activo.
-
-    POR QUÉ NO SE HACE YA: hace falta masa crítica de datos. Hoy 34 de los 41 clubes tienen UN
-    solo ejercicio cargado, y de las 8 ligas con temporadas, 4 tienen una sola. Un "ranking de
-    la Premier" no existe todavía: no hay ningún club inglés cargado.
-
-    MIENTRAS TANTO, abajo de la bifurcación quedaron los KPIs y los 3 gráficos del club activo
-    (`#inicioClub`, solo visible cuando hay club). No es lo que va a ir ahí, es lo que había y
-    no se tiró. Ojo con una duplicación que ya existe y conviene resolver cuando se haga esto:
-    "Ingresos por año" y "Gastos por año" de Inicio muestran casi lo mismo que el `trendChart`
-    de Finanzas.
-
-    OJO CON EL COSTO DE CARGA: un ranking obliga a bajar el `data/<club>-data.js` de cada club
-    del ranking, y el sitio los carga por demanda justamente para no pagar 41 archivos por
-    visita. Es la misma tensión que la sección 5.5 de `Prototyping/Selector/MERGE-A-PRODUCCION.md`
-    anota para el constructor de la mezcla. Si el ranking se precalcula en build time (un
-    `data/rankings.js` generado por una herramienta de `tools/`), el problema desaparece — pero
-    entonces hay que acordarse de regenerarlo en cada onboarding, como ya pasa con
-    `fuentes.html` y con la sección generada de `ESTADO.md`.
 
 26. MOBILE, y es una REGRESIÓN del selector de la Versión 137. A 375px de ancho, `.header-right`
     mide 480px dentro de los 347px disponibles: el botón Comparar queda cortado y los de contacto

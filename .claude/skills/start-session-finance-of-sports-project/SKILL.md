@@ -122,8 +122,19 @@ Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido
 No dupliques la to-do list en `CHANGELOG.md` ni en `finance-of-sports-project.md`: la lista oficial vive sólo en
 `TODO.md`.
 
-Si onboardeaste un club, la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `ESTADO.md` se
-GENERA, no se escribe a mano: corré `node tools/generate-club-index.js` (ver sección 7).
+**SI TOCASTE DATOS DE UN CLUB, HAY 3 ARCHIVOS GENERADOS QUE HAY QUE REGENERAR** (Versión 184; lo
+chequea `node tools/audit.js` como P1, así que no hace falta acordarse — pero sí saber qué correr):
+
+```
+node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de ESTADO.md
+node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
+node tools/generate-rankings.js        # data/rankings/<liga>.js, lo que muestran Inicio y Ligas
+```
+
+Y **si subiste `ASSET_V`** —aunque no hayas tocado un solo dato— hay que correr
+`generate-fuentes-page.js` igual: ese generador LEE `ASSET_V` de `index.html` y lo escribe en las 42
+páginas, así que sin eso el visitante recibe el JS nuevo en el sitio y el viejo de su caché en la
+página de fuentes.
 
 ---
 
