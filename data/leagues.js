@@ -143,9 +143,16 @@ const LEAGUES = {
 // ---------------------------------------------------------------------------
 
 // La división en palabras, para el subtítulo de la fila de liga del selector.
+// i18n (to-do 42): solo tier 1 y tier 2 existen hoy en LEAGUES (grep tier:[0-9] confirma), por eso
+// son 2 claves fijas y no una plantilla con placeholder — la ordinal en inglés (1st/2nd/3rd...) no
+// se puede derivar del número como en castellano ("Nª división" vale para cualquier N), así que el
+// fallback para un tier 3+ que todavía no existe se queda en castellano hasta que haga falta.
 function tierLabel(tier){
   if(tier == null) return '';
-  return tier === 1 ? '1ª división' : tier + 'ª división';
+  var t = (window.I18N && window.I18N.t) ? window.I18N.t : function(k, es){ return es; };
+  if(tier === 1) return t('league.tier1', '1ª división');
+  if(tier === 2) return t('league.tier2', '2ª división');
+  return tier + 'ª división';
 }
 
 // Las ligas de un país, ordenadas por escalón (primera arriba) y después por

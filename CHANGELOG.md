@@ -2399,6 +2399,41 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   cierran / 0 warnings; `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día; cero
   `ReferenceError` en consola.
 
+## Versión 186: los 4 últimos textos que se veían en castellano en medio de una tabla en inglés (cierra el to-do 42)
+
+- **`tierLabel()`** (`data/leagues.js`): "1ª división"/"2ª división" ahora pasan por `I18N.t()`
+  (`league.tier1`/`league.tier2`). Solo 2 claves, no una plantilla con placeholder: LEAGUES no
+  tiene hoy ningún tier 3+, y el ordinal en inglés (1st/2nd/3rd...) no se puede derivar del número
+  como en castellano, así que un tier futuro que no existe todavía se queda en castellano hasta
+  que haga falta. Se ve en la grilla de la pestaña Ligas y en el selector.
+- **`ejercicioLabel()`** (`js/finanzas-calc.js`): el prefijo ("Balance"/"Presupuesto"/"Ejercicio")
+  pasa por `t()`, el año se sigue concatenando en JS aparte (`ejercicio.balance`/`ejercicio.budget`/
+  `ejercicio.default`) — mismo orden de palabras en los dos idiomas, así que alcanza con el patrón
+  ya usado en `js/liga.js` (`t('liga.exercise','Ejercicio') + ' ' + year`), sin hacer falta el
+  patrón `{a}`/`{b}` de `debtDisclosureNote()`. Se ve en Finanzas, en la tabla de Ligas y en tooltips.
+- **Los avisos por tipo de reporte** (banner de calidad de dato de Finanzas,
+  `renderDataQualityBannerForCurrentSelection()` en `js/finanzas-render.js`): los 4 mensajes
+  (`pending_official`/`press_estimate`/`unofficial_mirror`/placeholder) pasan a claves enteras
+  (`finanzas.banner.*`), no fragmentos — mismo motivo que `debtDisclosureNote()`.
+- **Los buckets de "Formato simplificado" NO se tocaron: ya estaban traducidos** (`tLabel()` +
+  `data/site-labels.js`, desde la Versión 115). La cabecera de `data/lang/en.js` los seguía
+  listando como pendientes por error; se corrigió el comentario. De paso se sacó "los nombres de
+  gestión" de esa misma lista de pendientes: son apellidos y años reales (`gestionesByClub` en
+  `data/clubs.js`, ej. "Ameal (2019-2023)"), no copy del sitio — mismo criterio que los rubros de
+  "Formato del club", estaban mal clasificados ahí.
+- 9 claves nuevas en `data/lang/en.js` (363 → 372).
+- Encontrado al verificar en el navegador, fuera de los 4 puntos del to-do: `anioDropdownSuffix()`
+  (el sufijo " (Presupuesto)"/" (Balance)" del `<select>` de ejercicio en Finanzas) tiene el mismo
+  problema y no pasa por `ejercicioLabel()`. No se tocó en esta pasada — queda como to-do 44.
+- **ASSET_V 185 → 186**, constante y los 15 `<script src>`; `fuentes.html` y las 41 páginas de
+  club regeneradas. La Versión 185 (to-do 41, otra sesión sobre el mismo working tree) ya había
+  subido ASSET_V a 185 y cubría estos 3 archivos, pero para cuando esta entrada se cerró esa
+  versión ya estaba commiteada — subir de nuevo a 186 es lo correcto para los cambios de ESTA
+  entrada, hechos después de ese commit.
+- Verificado en el navegador, en inglés: ningún texto de los 4 puntos queda en castellano (Ligas,
+  Finanzas, banner de calidad de dato, Formato simplificado); en castellano, todo idéntico a antes.
+  `node tools/audit.js`: 0 P0, 0 P1 (igual que antes de esta sesión).
+
 ## Versión 185: la deducción negativa ya no se pierde en "Composición de ingresos" (to-do 41)
 
 - `mezclaDe()` (`js/selector.js`) filtraba `r.value > 0` y tiraba enteros los buckets

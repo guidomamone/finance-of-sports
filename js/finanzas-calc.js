@@ -184,10 +184,15 @@
   // calendario (`isCalendarYearClub`, ver arriba), el label es solo el prefijo + el año suelto
   // ("Balance 2024"), NUNCA "2023/2024" — ese rango de temporada sería una fecha directamente falsa
   // para un club que cierra su ejercicio el 31/12.
+  // i18n (to-do 42): prefijo + año, mismo orden en castellano e inglés ("Balance 2024/2025" /
+  // "Balance sheet 2024/2025"), así que no hace falta el patrón `{a}`/`{b}` de debtDisclosureNote
+  // de más arriba (pensado para frases donde el orden de las palabras puede cambiar entre idiomas) —
+  // alcanza con traducir el prefijo y concatenar el año en JS, mismo criterio que ya usa
+  // `t('liga.exercise', 'Ejercicio') + ' ' + st.year` en js/liga.js.
   function ejercicioLabel(year, reportType, clubId){
-    const prefix = reportType === 'official_budget' ? 'Presupuesto'
-      : (reportType === 'official_budget_and_balance' || reportType === 'official_balance_sheet') ? 'Balance'
-      : 'Ejercicio';
+    const prefix = reportType === 'official_budget' ? t('ejercicio.budget', 'Presupuesto')
+      : (reportType === 'official_budget_and_balance' || reportType === 'official_balance_sheet') ? t('ejercicio.balance', 'Balance')
+      : t('ejercicio.default', 'Ejercicio');
     if(clubId && isCalendarYearClub(clubId)) return prefix+' '+year;
     return prefix+' '+(year-1)+'/'+year;
   }

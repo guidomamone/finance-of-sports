@@ -15,17 +15,22 @@
 // única clave que cambia el NOMBRE del sitio y no solo su copy. Si el branding
 // definitivo termina siendo otro, se cambia acá y en el HTML. Ver to-do 7 y 8.
 //
-// LO QUE NO ESTÁ TRADUCIDO TODAVÍA (por si alguien se pregunta si falta o si fue
+// LO QUE NO SE TRADUCE, A PROPÓSITO (por si alguien se pregunta si falta o si fue
 // a propósito):
 //   - Los rubros de "Formato del club" en Finanzas: salen textuales del balance
 //     de cada club y NO se traducen nunca, a propósito. Traducir una línea de un
 //     balance argentino sería inventar un dato que el documento no dice.
-//   - Los buckets de "Formato simplificado", los avisos por tipo de reporte y los
-//     nombres de gestión: esos SÍ son strings del sitio y SÍ deberían traducirse.
-//     Están generados en `js/finanzas-render.js`/`js/finanzas-calc.js` y todavía
-//     no pasan por `I18N.t()`. Es el próximo paso natural de esta tarea.
+//   - Los nombres de gestión (`gestionesByClub` en data/clubs.js, ej. "Ameal
+//     (2019-2023)"): son apellidos y años reales, no copy del sitio — mismo
+//     criterio que los rubros de arriba, se corrigió acá al notarlo durante el
+//     to-do 42 (el comentario viejo los listaba como pendientes de traducir por
+//     error).
 //   - El párrafo largo "Calidad de dato por club" de la pestaña Fuentes: se
 //     reescribe seguido y hoy habla casi solo de clubes argentinos.
+//
+// Los buckets de "Formato simplificado" (`data/site-labels.js` + `tLabel()` en
+// js/finanzas-render.js) y los avisos por tipo de reporte (banner de calidad de
+// dato, claves `finanzas.banner.*`) SÍ se traducen — el segundo desde el to-do 42.
 // ============================================================================
 
 window.I18N = window.I18N || {};
@@ -61,6 +66,13 @@ window.I18N.strings.en = {
   "cuenta.empty.title": "Nothing here yet",
   "cuenta.sub": "Accounts and subscriptions, coming soon.",
   "cuenta.title": "My Account",
+  "ejercicio.balance": "Balance sheet",
+  "ejercicio.budget": "Budget",
+  "ejercicio.default": "Financial year",
+  "finanzas.banner.mirror": "Real, audited financial statements (with an independent auditor's report), but downloaded from a fan-community mirror, not the club's official channel",
+  "finanzas.banner.pending": "Financial year not reported by the club yet: no official balance sheet or budget has been loaded for this period yet, we are waiting for Boca to publish it",
+  "finanzas.banner.placeholder": "Placeholder data, a number invented to test the site's design, not real",
+  "finanzas.banner.press": "Data from press coverage, not the club's official document",
   "finanzas.charts.sub": "The same numbers as above, as charts: how revenue and costs moved across financial years, and which lines the club actually lives on.",
   "finanzas.charts.title": "Charts",
   "finanzas.debt.note.both": "\u26a0\ufe0f Neither the {a} document nor the {b} one breaks out debt or cash in its summary. The $0 you see in those columns does NOT mean debt is zero \u2014 it is data that has not been published yet.",
@@ -130,6 +142,8 @@ window.I18N.strings.en = {
   "label.boardA": "Board A:",
   "label.boardB": "Board B:",
   "label.year": "Year:",
+  "league.tier1": "1st division",
+  "league.tier2": "2nd division",
   "modal.cancel": "Cancel",
   "modal.email": "Email (optional)",
   "modal.message": "Message",

@@ -652,13 +652,16 @@
     }
     const src = sources[meta.sourceId];
     banner.style.display = 'block';
+    // i18n (to-do 42): cada aviso es una clave entera, no fragmentos concatenados (mismo motivo que
+    // debtDisclosureNote en js/finanzas-calc.js: son frases donde el orden de las palabras no tiene
+    // por qué coincidir entre idiomas).
     const kind = meta.reportType === 'pending_official'
-      ? 'Ejercicio todavía no informado por el club: no hay balance ni presupuesto oficial cargado todavía para este período, se está esperando que Boca lo publique'
+      ? t('finanzas.banner.pending', 'Ejercicio todavía no informado por el club: no hay balance ni presupuesto oficial cargado todavía para este período, se está esperando que Boca lo publique')
       : meta.reportType === 'press_estimate'
-      ? 'Dato de cobertura de prensa, no el documento oficial del club'
+      ? t('finanzas.banner.press', 'Dato de cobertura de prensa, no el documento oficial del club')
       : meta.reportType === 'unofficial_mirror'
-      ? 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad de hinchas, no del dominio oficial del club'
-      : 'Dato placeholder, número inventado para probar el diseño del sitio, no es real';
+      ? t('finanzas.banner.mirror', 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad de hinchas, no del dominio oficial del club')
+      : t('finanzas.banner.placeholder', 'Dato placeholder, número inventado para probar el diseño del sitio, no es real');
     // Versión 125: el banner ya no repite el documento ni sus salvedades, eso pasó a la ficha
     // de Fuentes del final de la sección, que las muestra para TODOS los ejercicios y no solo
     // para los que tienen algo malo que avisar. Acá queda solo la advertencia, que es su trabajo.
