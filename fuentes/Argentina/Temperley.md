@@ -18,3 +18,27 @@
   Julio 360, Temperley.
 - Último chequeo: 2026-09-12.
 
+## Chequeo 2026-09-22
+
+- **Confirmado el patrón: Temperley publica Memoria pero NO Balance.** La Memoria del ejercicio
+  1/4/2025–31/3/2026 (86 págs) ya estaba descargada como `memoria-ejercicio-2025-26.pdf`; se
+  reverificó su contenido a fondo esta sesión (texto completo + OCR de muestra de páginas del medio
+  y del final): **no tiene ni un Estado de Situación Patrimonial ni un Estado de Recursos y Gastos**.
+  Las 86 páginas son narrativa por área (fútbol, deportes amateurs, obras, Fundación Sueños
+  Celestes, Programa FINES, jardín). Mismo resultado que las 2 memorias anteriores.
+- El post que la publica se llama "Presentación de Memoria **y Balance** para la Asamblea General
+  Ordinaria del 14 de junio de 2026" (`temperley.org.ar/noticias/institucionales/...`), pero linkea
+  **un solo** documento de Drive, que es la Memoria. El Balance no está publicado en ningún lado del
+  sitio.
+- **Documento nuevo descargado**: `informe-gestion-primer-ano-lecchi-2025.pdf` (26 págs, 35 MB) —
+  "Primer año de gestión, presidencia Lecchi, diciembre 2025", vía Drive desde el post
+  `/noticias/institucionales/primer-ano-de-gestion-presidencia-lecchi-diciembre-2025`. Es un
+  **reporte infográfico** (obras, sponsors, fútbol, vida social, una sección "Orden"), no un estado
+  contable — mismo tipo de documento que la presentación de asamblea de All Boys o el infográfico de
+  Talleres. Guardado por si aporta cifras sueltas.
+- Gotcha de tooling: `temperley.org.ar` responde bien a `curl` plano pero **rechaza la conexión**
+  desde el Browser pane y desde WebFetch (ECONNREFUSED al IP 161.129.65.166). Si una sesión futura
+  necesita renderizar JS de ese sitio, va a chocar con esto; por ahora `curl` alcanza.
+- Pendiente: el Balance/Estados Contables de cualquier ejercicio. Pedírselo al club
+  (administracion@temperley.org.ar figura en la portada de la propia Memoria).
+- Último chequeo: 2026-09-22.

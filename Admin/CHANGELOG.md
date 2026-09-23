@@ -2874,3 +2874,31 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   interanual de Girona, los dos verificados contra la fuente).
 - Los 4 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (61 páginas de club),
   `data/rankings/*.js` (12 ligas) y `fuentes/README.md`.
+
+## Versión 202 — Sourcing en paralelo: Liga MX, Série A/B y Primera A completas
+
+### Agregado
+- **México**: los 18 clubes de Liga MX trackeados (eran 2). Atlas con documento vía desglose de
+  operación discontinua IFRS 5 en el Reporte Anual 2019 de TV Azteca; Atlético San Luis vía la nota
+  de empresas del grupo del Atlético de Madrid. El país queda documentado como RESUELTO: el
+  Reglamento de Control Económico exige balances dictaminados (art. 26) y los declara
+  confidenciales (art. 12).
+- **Brasil**: 43 de 43 clubes de Série A/B, todos con documento (eran 28). Ituano pasa de 1 a 15
+  ejercicios en disco, Mirassol de 1 a 12.
+- **Colombia**: 20 de 20 de Primera A, 18 con documento (eran 10). Los 2 sin documento tienen causa
+  societaria escrita, y el de Deportivo Pasto caduca.
+- 418 PDFs en el worktree `sourcing` (gitignoreados, hay que consolidarlos aparte).
+- To-do 47: explicarle al visitante por qué México no muestra casi nada. Es tarea de producto, no
+  de sourcing — la primera vez que el proyecto necesita mostrar una AUSENCIA explicada.
+
+### Cambiado
+- `club-sourcing`: SIIS (Colombia) es una API JSON pública sin login, scripteable entera con curl,
+  con tres correcciones a lo que decía antes (son 3 CIIU y no 1, el nombre del PDF temporal no
+  sigue siempre el patrón, y `documentos_adicionales` viene vacío para 2021+ aunque existan). La
+  Federação Paulista tiene índice JSON 2010-2025. Cae la creencia "SAF publica, asociación no".
+
+### Pendiente
+- `fuentes/README.md` sigue desfasado (P1): el generador ABORTA a propósito porque no puede
+  clasificar algunas líneas nuevas. Hay que resolverlas a mano en `OVERRIDES` del script.
+- Argentina quedó a medias: su agente se cortó por presupuesto de tokens, con las notas por club ya
+  escritas en disco.

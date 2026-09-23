@@ -105,7 +105,42 @@ Ejercicio" a la asamblea de accionistas (Circular 012 de 2022, Superintendencia 
 Colombia) con estados financieros completos, consultable gratis y sin login en el portal SIIS de la
 Superintendencia de Sociedades.
 
-**Procedimiento exacto (confirmado funcionando, seguir estos pasos en orden):**
+**ACTUALIZADO 2026-09-22 — SIIS es una API JSON pública: NO hace falta browser.** El portal es una
+SPA cuyo backend son dos endpoints abiertos (sin login, sin API key, sin captcha), así que todo el
+flujo se scriptea con `curl`. Esto reemplaza el procedimiento de clicks que estaba acá antes (y que
+sigue siendo válido, solo que es mucho más lento). El detalle completo, con los cuerpos de request,
+está en `fuentes/Colombia/_notas-generales.md`; el resumen:
+
+1. **Buscar / enumerar**: `POST siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr/siis_empresas/_search`
+   acepta query DSL de Elasticsearch completo, agregaciones incluidas. Ya no hace falta el NIT: se
+   busca por nombre, y **se puede listar la liga entera de una sola consulta** agregando por
+   `nombreEmpresa.keyword` sobre el CIIU deportivo. Son TRES los CIIU a mirar, no uno: **R9312**
+   (clubes deportivos), **R9319** (otras actividades deportivas) y **R9311** (gestión de
+   instalaciones deportivas) — Boyacá Chicó, La Equidad y Fortaleza CEIF están en R9319.
+   De cada hit se saca `infoEmpresa.num_radicado`, que es la llave del paso 2, más un bloque
+   `financieros` con activos/ingresos/utilidad/ROE/ROA ya calculados.
+2. **Listar los documentos del ejercicio**:
+   `GET .../plantillas-api/documentos-adicionales?numero-radicado=<num_radicado>` devuelve el JSON
+   con "NOTAS EF" / "DICTAMEN DEL REVISOR FISCAL" / "CERTIFICACION EF" y el token de cada uno. Es lo
+   mismo que antes había que clickear en "Ver otros documentos adicionales" de la Vista 360.
+   **Trampa**: el campo `infoEmpresa.documentos_adicionales` que viene en la respuesta de
+   Elasticsearch está desactualizado — viene VACÍO para 2021 en adelante aunque los documentos
+   existan. Usar el endpoint, nunca el campo.
+3. **Bajar**: `subvisor.aspx?Radicado=<token>` PRIMERO (es el que materializa el temporal y el que
+   trae la ruta real), y recién después `GET .../bpmformularios/tmp/<ruta>` con `Referer` al
+   subvisor. **El patrón `tmp/<radicado>/<radicado>.PDF` NO siempre se cumple**: el nombre de
+   archivo a veces es interno y arbitrario (`tmp/2024-01-344261/1wr6f501!.PDF`) — hay que parsearlo
+   del HTML del subvisor, no construirlo (adivinarlo da 404 silencioso).
+4. **No paralelizar más de 1-2 procesos**: con 5 en paralelo el subvisor empieza a devolver HTML sin
+   ninguna ruta de PDF adentro (throttling, no error) y hay que reparar después.
+
+Si un club NO aparece en SIIS, casi siempre hay una causa societaria, no un problema de búsqueda:
+o deposita bajo la razón social de otra sociedad (Águilas Doradas deposita como **TALENTO DORADO
+S.A.**, NIT 900456885), o no es una sociedad comercial (Deportivo Pasto era asociación hasta su
+conversión reciente a S.A.; la sociedad del DIM figura "en liquidación" mientras opera una
+corporación). Ver el archivo de cada club.
+
+**Procedimiento viejo, por browser (sigue funcionando, útil solo si los endpoints cambian):**
 1. Googlear `"[club] S.A. NIT"` para conseguir el número de 9 dígitos — la búsqueda POR NOMBRE en
    SIIS no filtra bien (devuelve miles de resultados irrelevantes o ninguno), hace falta el NIT
    exacto.
@@ -124,19 +159,25 @@ Superintendencia de Sociedades.
    bloqueado por el entorno — mejor `navigate()` directo a la URL del link en vez de clickearlo.
 - El sitio a veces entra en mantenimiento ("Estamos actualizando SIIS...") por minutos — reintentar
   más tarde, no es un dead-end permanente.
-- Ya confirmado con este método: Millonarios, América de Cali, Atlético Nacional, Independiente
-  Santa Fe, Junior de Barranquilla, Deportivo Cali, Deportivo Pereira, Once Caldas, Deportes Tolima,
-  Envigado (estos 3 últimos, sesión 2026-09-13 — 10 clubes colombianos en total). El NIT de un club
-  nuevo se consigue rápido buscando en Google/WebSearch "[club] S.A. NIT" y cruzando con un
-  directorio empresarial (datacreditoempresas.com.co, empresite, informacolombia.com, la-gar.com)
-  cuando el nombre exacto no aparece en los primeros resultados — no hace falta abrir la Cámara de
-  Comercio. Quedan sin explorar (alta probabilidad de que tengan ficha con el mismo patrón):
-  Barranquilla F.C., Atlético Bucaramanga (NIT candidato 890203822, sin confirmar en SIIS), Águilas
-  Doradas (NIT no encontrado todavía), La Equidad, Alianza Petrolera, Patriotas, Boyacá Chicó, Unión
-  Magdalena, Jaguares de Córdoba, y el resto de los ~35 clubes-sociedad que menciona el informe
+- **Con la sesión 2026-09-22 quedan cubiertos 18 de los 20 clubes de la Categoría Primera A**:
+  Millonarios, América de Cali, Atlético Nacional, Independiente Santa Fe, Junior de Barranquilla,
+  Deportivo Cali, Deportivo Pereira, Once Caldas, Deportes Tolima y Envigado (sesiones 2026-09-12 y
+  09-13), más Atlético Bucaramanga, Boyacá Chicó, Alianza FC (ex Alianza Petrolera), La Equidad,
+  Llaneros, Unión Magdalena, Fortaleza CEIF y Águilas Doradas (2026-09-22). **Ya NO hace falta
+  googlear el NIT**: con la API se busca por nombre, o se lista la liga entera agregando por CIIU.
+  Los 2 que faltan no son falta de búsqueda, tienen causa societaria documentada en su archivo —
+  **Independiente Medellín** (la S.A. figura en liquidación y opera una corporación, fuera del
+  perímetro de Supersociedades) y **Deportivo Pasto** (era asociación; se convirtió a S.A. hace
+  poco, así que debería empezar a aparecer — vale reintentar en una sesión futura).
+  Quedan sin explorar, todos con ficha muy probable bajo el mismo patrón, pero son de Primera B o ya
+  fuera de la categoría: Barranquilla F.C., Patriotas Boyacá, Real Cartagena, Cúcuta Deportivo,
+  Atlético Huila, Deportes Quindío, Jaguares, Leones, Orsomarso, Cortuluá, Bogotá F.C., Tigres,
+  Valledupar F.C., Real Santander, Universitario Popayán. El mismo listado incluye clubes de
+  **básquet** (Titanes, Fastbreak, Gigantes de Barranquilla) y de **béisbol** (Los Toros) — o sea que
+  el canal colombiano, como Companies House en Reino Unido, no depende del deporte. El informe
   agregado de Supersociedades
-  (`supersociedades.gov.co/documents/20122/532936/Informe-futbol-pdf.pdf`, útil como cifra de
-  control/lista de candidatos, no da datos por club).
+  (`supersociedades.gov.co/documents/20122/532936/Informe-futbol-pdf.pdf`) sigue sirviendo como
+  cifra de control, no da datos por club.
   - **Envigado es el mejor hallazgo hasta ahora**: SIIS lista 10 ejercicios individuales consecutivos
     (2016-2025) bajo el mismo NIT — solo se bajó 2025 en la sesión 2026-09-13, queda pendiente bajar
     la serie completa si se busca el histórico más largo de Colombia.
@@ -176,14 +217,72 @@ sección "Transparência"/"SAF"/"Governança").
     SIEMPRE el contexto operacional de la primera página de un PDF brasileño antes de asumir a qué
     club pertenece, sobre todo con nombres de club que se repiten entre estados.
 - **Repositorios de federación estadual**: buenísima fuente alternativa cuando el club no lo cuelga
-  directo. `futebolpaulista.com.br/Repositorio/Institucional/<año>/<Club>.pdf` (y variantes de
-  nombre) aloja laudos de auditoria de TODOS los clubes del Campeonato Paulista, no solo los SAF —
-  confirmado para Ituano, Mirassol, Guarani, Ponte Preta. Mismo patrón en
-  `federacaopr.sfo3.digitaloceanspaces.com` para clubes de Paraná (ya explotado parcialmente para
-  Coritiba), y en `fgf.com.br/demonstracoes-financeiras-filiados` para clubes de Rio Grande do Sul
-  (confirmado sesión 2026-09-16 con Juventude — ojo, el casing del nombre de archivo por club ahí es
-  inconsistente). Vale la pena recorrer estos repositorios año por año en vez de buscar club por club
-  cuando el foco es un estado específico.
+  directo, y en la práctica el canal que más clubes destrabó. Confirmados hasta hoy, SEIS estados:
+  - **São Paulo** — `futebolpaulista.com.br`, el más completo de todos: ver el punto siguiente, que
+    es el hallazgo grande de la sesión 2026-09-22.
+  - **Paraná** — `federacaopr.sfo3.digitaloceanspaces.com` (Coritiba, Operário Ferroviário).
+  - **Rio Grande do Sul** — `fgf.com.br/demonstracoes-financeiras-filiados` (Juventude; ojo, el
+    casing del nombre de archivo por club ahí es inconsistente).
+  - **Goiás** — `fgf.esp.br/pt/conteudo/?q=11&sc=11` ("Publicações", paginado `&p=2`…`&p=7`),
+    ejercicios 2021-2025 de ~21 clubes filiados. **NO confundir con `fgf.com.br`, que es el
+    gaúcho**: dos federaciones distintas con la misma sigla.
+  - **Mato Grosso** — `fmfmt.com.br/pt/conteudo/?q=14&sc=11` ("Balanço dos Clubes"). Corre el mismo
+    CMS que el goiano: PDFs en `<dominio>/assets/uploads/<id>.pdf`, y **el prefijo `/pt/` de la URL
+    es obligatorio** — sin él el servidor devuelve 404 seco, no un redirect.
+  - **Santa Catarina** — `fcf.com.br/categoria/financeiro/balancos/`, una página por año (2013-2025,
+    sin 2021) con un link por club. Gotcha: los links de 2013/2014 tienen triple barra
+    (`fcf.com.br///wp-content/...`) y devuelven el HTML de la home con **HTTP 200** — un `curl`
+    "exitoso" que no trae PDF, así que validar siempre con `pdfinfo`.
+  - **Rio de Janeiro (FERJ)** — la ficha del club está en
+    `servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=<id>` (el host `www.fferj.com.br` con la misma
+    ruta devuelve una página vacía de 5 KB). El link es un visor `RenderDoc?caminho=<url encodeada>`:
+    hay que extraer ese parámetro y pegarle a
+    `fferj.azurewebsites.net/admin/AzureStorage/GetDocument?path=...`.
+  - **El patrón NO es universal**: la FAF (Amazonas) tiene página de transparencia pero solo con los
+    balances de la propia federación, ninguno de club; las federaciones de Minas Gerais
+    (`fmf.com.br`) y Pará (`fpfpara.com.br` — no `fpfpa.com.br`) tampoco publican los de sus
+    filiados. Chequear antes de asumir que existe.
+- **La Federação Paulista tiene un índice JSON abierto de TODOS sus clubes, año por año, 2010-2025
+  (sesión 2026-09-22). Esto reemplaza el consejo viejo de descubrir nombres de archivo con
+  `WebSearch site:futebolpaulista.com.br`**, que solo servía para el año más reciente porque los
+  nombres del repositorio son irregulares a propósito (conviven `São Paulo.pdf`, `271A.pdf` y
+  `BALANÇO ITUANO 2020 E PARECER DA AUDITORIA.pdf`).
+  - Años: `GET /Handlers/Institucional/ListaPeriodoFinanca.ashx` → 16 años **contiguos, 2010-2025**.
+  - Clubes y anexos de un año: `GET /Handlers/Institucional/ListaFinanca.ashx?periodoSelecionado=<año>`
+    → `{Codigo, Sucesso, Retorno:[{idClube, nomeClube, anexos:[{anexo, nomeAnexo}]}]}`, donde `anexo`
+    es la ruta relativa al PDF. Un club puede tener 1 anexo o 12.
+  - **Tres comportamientos distintos en el mismo dominio, no confundirlos**: (1) los HANDLERS sí
+    están detrás de Cloudflare — llamarlos con `fetch()` desde el Browser pane con `Financas.aspx`
+    cargada y el header `X-Requested-With: XMLHttpRequest`; (2) el 403 del LISTADO de directorio
+    **no es Cloudflare sino IIS con directory browsing deshabilitado** (corrige lo que decía esta
+    skill): da el mismo 403 desde un browser real, no vale la pena intentarlo; (3) los PDFs
+    individuales bajan con `curl` 200 con solo un User-Agent de navegador, ni siquiera hace falta
+    `Referer` — hay que URL-encodear el path.
+  - **Gotcha de parseo**: el casing de las claves difiere entre los dos handlers
+    (`DataPeriodo` en mayúscula, `idClube`/`nomeClube`/`anexos` en minúscula dentro de `Retorno`).
+    Filtrar por `NomeClube` devuelve vacío sin ningún error.
+  - **Un año ausente para un club NO significa que falte en el repositorio**: el índice tiene los 16
+    años para todos, así que si un club no aparece en un año es que ESE club no presentó. Distinguir
+    las dos cosas al documentar un hueco.
+  - Esto llevó a Ituano de 1 ejercicio a 15 (2010-2024) y a Mirassol de 1 a 12 (2012-2018,
+    2021-2025) en una sola pasada. Queda mucho por explotar: el mismo índice tiene hasta 2010 a
+    Corinthians, Palmeiras, Santos, São Paulo, Ponte Preta, Guarani, RB Bragantino, Botafogo-SP,
+    Portuguesa, Ferroviária y Novorizontino. En 2012 varios clubes subieron `.jpg` en vez de `.pdf`.
+- **Portales de transparencia propios con API JSON**: vale la pena buscar `/api/` en el bundle JS de
+  la página antes de rendirse con un portal que parece vacío. Volta Redonda (Next.js) expone
+  `voltaco.com.br/api/documents` con `fileUrl` pre-firmadas de S3 que `curl` baja directo — pero
+  **caducan a las 24 h** (`X-Amz-Expires=86400`), hay que re-pedir el JSON. Ojo además con la ruta:
+  la versión en portugués `/transparencia/` daba 404 y la viva era `/transparency`.
+- **Gotcha de SPA que hace perder tiempo**: un sitio de club con Vite/React sin fallback 404 devuelve
+  **HTTP 200 con un index.html de ~650 bytes para CUALQUIER ruta** (caso Operário Ferroviário), así
+  que un `curl` a una URL inexistente parece exitoso. Si el HTML que baja es minúsculo y sin links,
+  es una SPA: hay que ir al Browser pane, y a veces el ítem de menú ni siquiera es un `<a>` (en
+  Operário "DFS" es un `<li>` con handler de click). Variante del mismo problema: un servidor que
+  **redirige al home (302) en vez de devolver 404** (Paysandu), así que probar URLs adivinadas exige
+  leer el código HTTP, no el éxito del `curl`.
+- **"SAF publica, asociación no publica" NO se sostiene en Brasil**: Goiás EC (asociación civil)
+  publica desde el ejercicio 2007/08, la serie más larga de Sudamérica en el proyecto; Criciúma,
+  Avaí y Vila Nova también publican sin ser SAF. No usar la forma jurídica para descartar un club.
   - **PERO el sitio propio del club suele tener una serie más profunda y más prolija que el
     repositorio de la federación** (sesión 2026-09-16): Palmeiras (2017-2025), Corinthians
     (2019-2025 en su propia sección de transparencia) y São Paulo FC (su CDN llega hasta 2006)
@@ -226,11 +325,32 @@ sección "Transparência"/"SAF"/"Governança").
   URL/subdominio distinto al que había fallado antes). Vale la pena reintentar periódicamente los
   dead-ends viejos con una búsqueda fresca, no tratarlos como permanentes salvo que el bloqueo sea
   estructural (forma jurídica, regulador inexistente).
-- Dead-ends que siguen sin lead nuevo (no rabbit-holear más sin uno): América Mineiro, Náutico,
-  Criciúma (solo balance de 2013 encontrado), Marília. **Juventude** es un dead-end parcial: solo se
-  encontró el ejercicio 2020 (vía el repositorio de la Federação Gaúcha), y prensa reporta que el
-  club no publicó su demonstração de 2024 dentro del plazo legal — la pregunta directa al club está
-  en `Admin/dudas-por-club.md`.
+- **Dos dead-ends viejos más se destrabaron en la sesión 2026-09-22, y por el mismo motivo en los
+  dos: se estaba adivinando el nombre de archivo en vez de leer un índice.** **América Mineiro**
+  (que esta skill listaba como dead-end) tiene sus PDFs linkeados en el HTML de
+  `americafc.com.br/transparencia`, solo que apuntando a `irp.cdn-website.com` (CDN de Duda) y nunca
+  al dominio del club — por eso `WebSearch site:americafc.com.br` no los encontraba; la regla que
+  sale de ahí es `curl` + `grep '\.pdf'` sobre el HTML crudo antes de dar por perdido un portal que
+  "menciona" las demonstrações. **Criciúma** pasó de "solo un balance de 2013" a **14 ejercicios
+  consecutivos (2012-2025)**, vía la Federação Catarinense y su propio
+  `criciuma.com.br/portal-transparencia`: el error 500 de la sesión anterior venía de adivinar
+  nombres de archivo, no de un bloqueo.
+- Dead-ends que siguen sin lead nuevo (no rabbit-holear más sin uno): Náutico, Marília.
+  **Juventude** es un dead-end parcial: solo se encontró el ejercicio 2020 (vía el repositorio de la
+  Federação Gaúcha), y prensa reporta que el club no publicó su demonstração de 2024 dentro del
+  plazo legal — la pregunta directa al club está en `Admin/dudas-por-club.md`.
+- **El sitio de la SAF puede no ser el sitio del club**, y el link entre los dos suele estar en el
+  pie de página y no en el menú: Athletic Club tiene `athleticclub.com.br` (la asociación, cuya
+  sección "Governança" solo trae cartas-convite) y `acfutebol.com.br` (la SAF, con `/transparencia`
+  y los balances reales). Antes de anotar "no tiene sección financiera", buscar si hay un dominio
+  separado para la SAF.
+- **Un mismo archivo puede estar publicado bajo dos años distintos**: en el repositorio propio de
+  Remo, `balan_o_patrimonial_2019` y `..._2020` tienen md5 idéntico y ambos son al 31/12/2020.
+  Comparar el md5 entre años consecutivos antes de dar por buenos dos ejercicios seguidos.
+- **Gotcha de tooling, no de portal: WebFetch inventa URLs.** Sobre una página larga de índice
+  (Goiás) devolvió una tabla prolija por año en la que varias URLs eran reconstrucciones plausibles
+  pero inexistentes. Sirve para descubrir que una sección existe, nunca como fuente de las rutas
+  exactas a `curl`ear — para eso, `curl` + grep de `href`.
 
 ## 4. Uruguay — bloqueado, no reintentar con los mismos 3 ángulos
 
