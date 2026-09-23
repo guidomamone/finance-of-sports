@@ -34,4 +34,18 @@
   tampoco sirve para recuperar años viejos. El ángulo que queda es pedírselos al club (ver contacto).
 - Contacto: consultasasamblea@clubtalleres.com.ar (mail específico para consultas de la rendición de
   cuentas).
-- Último chequeo: 2026-09-22.
+- **CARGADO 2026-09-23: onboarding inicial del club, 2 ejercicios (`data/talleres-ar-data.js`,
+  `clubId:'talleres-ar'`).** Ejercicios 2024 y 2025, ejercicio CALENDARIO (1/1-31/12).
+  `sourceId`s: `talleres-ar-estados-contables-2024` / `talleres-ar-estados-contables-2025`. Los dos
+  EECC de arriba, transcriptos completos a `estados-contables-2024.md` / `estados-contables-2025.md`
+  (texto nativo, sin OCR). Verificación numérica: revenueLines/expenseLines cierran EXACTOS contra
+  "Total Recursos"/"Total Gastos" impresos y contra el "RESULTADO DEL EJERCICIO - SUPERAVIT" de cada
+  balance (13.196.433.268 ARS en 2024, 562.655.312 ARS en 2025), sin ningún residuo. El tipo de
+  cambio NO está declarado de forma explícita por ninguno de los 2 Anexos de moneda extranjera
+  (Anexo V/VI) — quedó con `fxSource:'market_close'` pendiente de que se agreguen
+  `ARS@2024-12-31`/`ARS@2025-12-31` a `FX_CLOSE` (`data/currency-map.js`).
+  **Color de marca: `#040D2D` (azul marino) — identidad confirmada por es.wikipedia.org (infobox
+  del club, "azul y blanco"/"albiazul", colores inspirados en el Blackburn Rovers, sin cambios
+  históricos), hex vía footylogos.com/es/color-codes/liga-profesional-argentina, verificado
+  2026-09-23.**
+- Último chequeo: 2026-09-23.

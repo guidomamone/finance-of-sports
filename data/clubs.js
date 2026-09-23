@@ -174,6 +174,13 @@ const clubs = {
   'mancity-gb': { id:'mancity-gb', name:'Manchester City Football Club Limited', displayName:'Manchester City', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6CABDD' },
   'everton-gb': { id:'everton-gb', name:'Everton Football Club Company, Limited', displayName:'Everton', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#003399' },
   'tottenham-gb': { id:'tottenham-gb', name:'Tottenham Hotspur Limited', displayName:'Tottenham Hotspur', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000a3c' },
+  // 3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
+  // que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
+  // cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS
+  // (Versión 129), a diferencia de los 11 argentinos de arriba, cargados antes de esa convención.
+  'talleres-ar': { id:'talleres-ar', name:'Club Atlético Talleres Asociación Civil', displayName:'Talleres', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#040D2D' },
+  'newells-ar': { id:'newells-ar', name:"Club Atlético Newell's Old Boys", displayName:"Newell's Old Boys", country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#F42121' },
+  'banfield-ar': { id:'banfield-ar', name:'Club Atlético Banfield', displayName:'Banfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#03953F' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

@@ -780,3 +780,17 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   no reconciliaba exacto contra el neto de la Nota 3 (diferencia de 2.526, sin explicación en el
   documento transcripto); (c) `gestionId:'levy'` (Daniel Levy, Executive Chairman hasta el 4/9/2025)
   en vez de Joe Lewis/ENIC (controlante último), que ningún documento nombra explícitamente.
+- **Newell's Old Boys (`newells-ar`)**, Ejercicio 2018-19: (a) "Complejo Ricardone"
+  ($2,65M, `youth_other_sports_expense`) — la Memoria solo confirma la escrituración del predio ese
+  año, no qué actividad aloja; (b) "Concesiones" ($1,59M) y "Derechos de fútbol" ($2,62M), dentro de
+  Fútbol Profesional, son demasiado genéricos para una categoría propia — cargados en `other_income`.
+  Los 2 montos son chicos frente al total ($775M de ingresos). No se encontró cantidad de socios en
+  ninguna de las 98 páginas.
+- **Banfield (`banfield-ar`)**, Ejercicio 2019-20: (a) "Entradas Grales., Plateas, Palcos y Abonos"
+  ($22,28M) mezcla entrada por partido con abono/season ticket en una sola línea, no separable con
+  este documento — cargada entera a `matchday_competition`; (b) "Formación de Jugadores" ($50,31M) y
+  "Fútbol Amateur - Derechos" ($4,55M) se cargaron a `player_sales` con confianza razonable pero no
+  total — **vale preguntarle al club si son solidarity payments FIFA/derechos de formación puros o
+  otra cosa**. No se encontró cantidad de socios en el documento. Pendiente además (ya anotado en
+  `fuentes/Argentina/Banfield.md`): el 105° Ejercicio (2024-25) solo existe en video de YouTube, y la
+  numeración de ejercicios entre el 116° y el 105° es inconsistente entre los 2 documentos del club.

@@ -32,4 +32,17 @@
   club el 2024-25 reformulado y el presupuesto 2026/27, que son documentos nuevos y concretos.
 - Contacto: contacto@newellsoldboys.com.ar / +54 341 425-4422 (sede, Parque Independencia s/n,
   Rosario). Sección Prensa: newellsoldboys.com.ar/prensa/.
-- Último chequeo: 2026-09-22.
+- **CARGADO AL SITIO 2026-09-23** (Versión 207 en progreso): el Ejercicio 2018-19 (1/7/2018 al
+  30/6/2019) del balance de arriba se transcribió completo a
+  `Clubes/Argentina/Newells Old Boys/memoria-y-balance-2018-2019.md` (98 páginas, texto nativo, sin
+  OCR) y se cargó en `data/newells-ar-data.js`, `sourceId: 'newells-ar-memoria-y-balance-2018-2019'`.
+  `clubId: 'newells-ar'`. Verificación numérica: revenue/expenses/PAT computados cierran contra los
+  3 totales impresos del documento (Superávit Ordinario $205.980.660 + Extraordinario $2.982.903 =
+  Superávit Final $208.963.563) con diferencias de 1-3 pesos sobre cientos de millones (redondeo del
+  propio documento, mismo orden de magnitud que sus propios anexos). El resumen anual 2012-13 sigue
+  sin cargar (narrativo, sin estados contables, ver arriba).
+- Color de marca: `#F42121` — footylogos.com/es/color-codes/liga-profesional-argentina (rojo,
+  primer color listado de la tabla de la Liga Profesional Argentina), identidad de club "rojo y
+  negro" confirmada en el infobox/texto de es.wikipedia.org (Club Atlético Newell's Old Boys, "La
+  Lepra"), verificado 2026-09-23.
+- Último chequeo: 2026-09-23.

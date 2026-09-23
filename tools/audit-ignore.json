@@ -6,6 +6,11 @@
     "motivo": "Entrada de ejemplo, no silencia nada. Copiala para agregar una real."
   },
   {
+    "code": "signo-invertido",
+    "match": "banfield-ar 2020 gasto \"Apropiación de Costos Fútbol Amateur (reversión por capitalización, Nota 4)\"",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Banfield, 2026-09-23). El Anexo V (Sector Fútbol Amateur, 120.335.465,08) se capitaliza ENTERO como Bienes Intangibles (Nota 4: 'costo prorrateado incurrido en el fútbol amateur... con capacidad futura de generar ingresos'), y el Estado de Recursos y Gastos lo revierte con esta línea por el MISMO importe exacto — el Estado de Flujo de Efectivo confirma la capitalización ('Aumento Bienes Intangibles' = 120.335.465,08 exacto). No es un signo dado vuelta: son 2 líneas reales (el costo del sector, negativo, y su reversión por capitalización, positiva), efecto neto CERO en el Estado de Recursos y Gastos, ver comentario de cabecera de data/banfield-ar-data.js."
+  },
+  {
     "code": "categoria-cruzada",
     "match": "racing 2009 ingreso \"Desafectación de previsiones y provisiones (extraordinario)\"",
     "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo el catch-all de Ingresos, que desde la Versión 189 se llama 'Otros ingresos' (antes 'Otras secciones deportivas y otros ingresos'). El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."

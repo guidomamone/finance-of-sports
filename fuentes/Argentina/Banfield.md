@@ -38,4 +38,15 @@
   todos los ejercicios entre el 116° (2019-20) y el 105°... ojo con la numeración, que el club usa
   de forma inconsistente entre esos dos documentos (ver duda en `Admin/dudas-por-club.md`).
 - Contacto: Secretaría/Sede Social — socios@clubabanfield.com.ar, WhatsApp +54 11 5643-7777.
-- Último chequeo: 2026-09-22.
+- **CARGADO AL SITIO (2026-09-23): `banfield-ar-memoria-y-balance-2019-2020`**, el balance 116°
+  Ejercicio (2019-20) descripto arriba, primer ejercicio de Banfield en el sitio (`clubId`
+  `banfield-ar`). Transcripción completa en `Clubes/Argentina/Banfield/memoria-y-balance-2019-2020.md`
+  (58 páginas, texto nativo). Ver `data/banfield-ar-data.js` para el detalle de categorización
+  (reporta por sector/departamento, no por naturaleza de gasto transversal como Racing/River/Unión).
+  RESULTADO FINAL real: $80.173.576,08 ARS (superávit). El documento NO declara tipo de cambio de
+  cierre propio (sin Anexo de moneda extranjera) — pendiente que se agregue `ARS@2020-06-30` a
+  `FX_CLOSE` (`data/currency-map.js`) centralizado.
+- Color de marca: `#03953F` — footylogos.com/es/color-codes/liga-profesional-argentina, verificado
+  2026-09-23. Identidad confirmada primero en es.wikipedia.org (verde y blanco, "el Taladro",
+  colores adoptados en 1904); el hex cae en esa familia de verde.
+- Último chequeo: 2026-09-23.

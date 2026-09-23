@@ -73,10 +73,12 @@ se reescribe, no se acumula.
   y `'pending_official'` siguen existiendo en el código, con su rama en
   `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
   los usa ningún club.
-- DATOS: 61 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
-  oficial), de 8 países: Argentina 11, España 13, Japón 10, Brasil 7, Colombia 7,
-  Alemania 5, Inglaterra 5, México 1. Alemania e Inglaterra son países nuevos desde
-  la Versión 201 (sesión 2026-09-22, GBP moneda nueva). Un solo motor genérico
+- DATOS: 64 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+  oficial), de 8 países: Argentina 14, España 15, Japón 10, Brasil 7, Colombia 7,
+  Alemania 5, Inglaterra 5, México 1. Los 3 argentinos nuevos (Talleres, Newell's Old
+  Boys, Banfield, Versión 207) pasaron de 0 a tener datos reales por primera vez.
+  Alemania e Inglaterra son países nuevos desde la Versión 201 (sesión 2026-09-22, GBP
+  moneda nueva). Un solo motor genérico
   calcula Finanzas para todos (ver
   `Admin/ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
   El detalle club por club (qué ejercicio, qué fuente, qué es real y qué no) está
@@ -118,7 +120,7 @@ se reescribe, no se acumula.
   por temporada mirando ascensos y descensos, repartido hay que acordarse de 41
   lugares. `null` significa "nadie lo verificó todavía", así que el archivo no
   puede afirmar una liga que nadie chequeó, y `node tools/audit.js` cuenta las
-  que faltan. HOY: 82 de 85 verificadas, con la fuente anotada por bloque; las 3
+  que faltan. HOY: 122 de 125 verificadas, con la fuente anotada por bloque; las 3
   que faltan son presupuestos (Boca 2027, Racing 2026 y 2027). CRITERIO cuando un
   ejercicio cruza dos torneos (decidido por Guido): vale la categoría al cierre,
   la misma regla que ya se usa para atribuir la gestión presidencial. Los ids del
@@ -152,7 +154,7 @@ se reescribe, no se acumula.
   146 `yrs`: la LISTA de ejercicios con el reportType de cada uno). Existe porque
   eso vive adentro de `data/<club>-data.js`, que es justamente lo que no se carga
   hasta que el visitante elige ese club: con la página recién abierta, `clubs{}`
-  tiene 61 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 61
+  tiene 64 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 64
   clubes (`data/club-index.js`) contra los ~25,8 KB de `clubs.js` completo (~420
   bytes/club). Su consumidor es el
   selector jerárquico, que desde la Versión 137 EXISTE: es de acá que salen el
@@ -161,9 +163,9 @@ se reescribe, no se acumula.
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 336 checks, 0
-  mismatches, 0 warnings (medido el 2026-09-22, Versión 201, tras onboardear 20
-  clubes nuevos: eran 228).
+  cada `fx` caiga en un rango plausible para su moneda. Hoy son 348 checks, 0
+  mismatches, 0 warnings (medido el 2026-09-23, Versión 207, tras onboardear Talleres/
+  Newell's/Banfield: eran 336).
   COMPLEMENTO, DESDE LA VERSIÓN 122: `node tools/audit.js` audita en Node lo que un
   total correcto NO delata (ejercicios que no tienen ningún total contra qué
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
@@ -173,8 +175,8 @@ se reescribe, no se acumula.
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 9 P3 y 41
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-23, Versión 203). Los 10
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 9 P3 y 42
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-23, Versión 207). Los 10
   `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
   Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
   "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
@@ -187,7 +189,7 @@ se reescribe, no se acumula.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
   solo pueden revisar lo que está en memoria, así que una carga normal de la
   página audita SOLO Boca. Para auditar TODO hay que
-  forzar la carga de los 61 clubes: abrí `?audit=1` o corré `auditAll()` en la
+  forzar la carga de los 64 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
   los clubes que nadie está mirando. Desde la Versión 160 los carga en tandas
   paralelas de 25 y no de a uno, para que siga siendo viable correrlo cuando los
@@ -201,7 +203,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 61 páginas, el índice y `sitemap.xml` los GENERA
+  Las 64 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -472,17 +474,17 @@ completo está en `Admin/CONVENCIONES.md`.
   pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
   sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
-  Los 61 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
+  Los 64 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
   sitio y siguen viajando en el deploy.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 365 con documento encontrado (de los cuales 61
+  países, 571 clubes trackeados, 367 con documento encontrado (de los cuales 64
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 61 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 64 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
 ---
 
@@ -501,18 +503,21 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 61 clubes, 121 ejercicios, 8 países.
+TOTAL: 64 clubes, 125 ejercicios, 8 países.
 
-ARGENTINA (11)
+ARGENTINA (14)
   Argentinos Juniors       5 ejercicios (2014/2015 a 2018/2019), balance, ARS
+  Banfield                 1 ejercicio (2019/2020), balance, ARS
   Boca Juniors             2 ejercicios (2024/2025, 2026/2027), balance + presupuesto, ARS
   Estudiantes de La Plata  4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Independiente            1 ejercicio (2023/2024), balance, ARS
   Instituto ACC            1 ejercicio (2023/2024), balance, ARS
+  Newell's Old Boys        1 ejercicio (2018/2019), balance, ARS
   Racing Club              17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS
   River Plate              1 ejercicio (2023/2024), balance de réplica no oficial, ARS
   Rosario Central          1 ejercicio (2022/2023), balance, ARS
   San Lorenzo              8 ejercicios (2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2023/2024), balance + presupuesto, ARS
+  Talleres                 2 ejercicios (2024 a 2025), balance, ARS
   Unión                    4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Vélez Sarsfield          11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 

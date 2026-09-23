@@ -2974,3 +2974,37 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   como to-do 58 (onboarding, no sourcing) y to-do 59 (2 reclamos directos a clubes que valen la
   pena: Atlanta con 4 balances en Drive que dejaron de compartir, Banfield con un ejercicio
   aprobado solo en video de YouTube).
+
+## Versión 207 — Talleres, Newell's Old Boys y Banfield: los primeros 3 de la 58, los 3 sin OCR
+
+### Datos
+- **Talleres (Córdoba), club nuevo (`talleres-ar`) → 2 ejercicios completos**: Estados Contables
+  2024 y 2025 (ejercicio CALENDARIO, no temporada), transcriptos íntegros y cargados. Cierran
+  exactos contra el "RESULTADO DEL EJERCICIO - SUPERAVIT" impreso de cada balance. El documento
+  netea "Transferencias de Derechos Económicos" antes de imprimir el total, a diferencia de Boca/
+  Racing — se cargó neto para no romper el tie-out, con el bruto/costo/gastos como `items` del
+  desglose. Ninguno de los 2 Anexos de moneda extranjera declara un TC de cierre real: se agregaron
+  `ARS@2024-12-31`/`ARS@2025-12-31` a `FX_CLOSE` (dólar mayorista BCRA, última rueda de cada año).
+- **Newell's Old Boys, club nuevo (`newells-ar`) → 1 ejercicio**: Memoria y Balance 2018-19,
+  transcripción de 98 páginas, cierra exacto contra Superávit Ordinario + Extraordinario
+  (Donaciones, Nota 13) = Superávit Final $208.963.563. TC declarado por el propio Anexo I
+  ($41,50/$43,50 comprador/vendedor).
+- **Banfield, club nuevo (`banfield-ar`) → 1 ejercicio**: Memoria y Balance 116° Ejercicio
+  (2019-20), transcripción de 58 páginas. Reporta por sector/departamento (no por naturaleza de
+  gasto transversal como el resto de los clubes argentinos) — cada Anexo de sector se categorizó
+  línea por línea. El Anexo XI ("Gastos Impositivos y Financieros") estaba sumado dentro de "Total
+  Gastos" del propio documento, se sacó y se reclasificó a `netInterest`. Cierra exacto contra el
+  Resultado Final ($80.173.576,08) y el Total del Activo ($1.253.147.745,78). Se agregó
+  `ARS@2020-06-30` a `FX_CLOSE` (el documento no declara TC propio).
+- Los 3 clubes suman `brandColor` (investigado contra Wikipedia + footylogos), entrada en
+  `data/club-leagues/ar.js` (Primera División en los 4 ejercicios) y su página en `fuentes.html`.
+  El sitio pasa de 61 a 64 clubes, 348 checks de `verifyTieOuts()`/`checkFxSanity()`, 0 mismatches.
+
+### Proceso
+- Onboardeados con 3 agentes en paralelo (uno por club), coordinados para no tocar archivos
+  compartidos (`data/clubs.js`, `category-map.js`, `currency-map.js`, `club-leagues/ar.js`,
+  `fuentes/_indice/Argentina.md`) durante la carga — esa integración se hizo centralizada al final,
+  sobre los 3 reportes.
+- `tools/audit.js` marcó 1 P2 real (`signo-invertido` en Banfield 2020, "Apropiación de Costos
+  Fútbol Amateur"): verificado contra el documento (capitalización de Nota 4 revertida por el mismo
+  importe, efecto neto cero) y silenciado en `tools/audit-ignore.json` con el motivo.

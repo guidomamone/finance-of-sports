@@ -214,8 +214,17 @@ const FX_CLOSE = {
   'ARS@2017-06-30': { fx: 16.8,    source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2017' },
   'ARS@2018-06-30': { fx: 28.85,   source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2018' },
   'ARS@2019-06-30': { fx: 42.45,   source: 'market_close', label: 'Dólar oficial vendedor BNA al 30/6/2019' },
+  // Sesión 2026-09-23 (onboarding de Banfield): ninguno de los 2 balances de Talleres ni el de
+  // Banfield declara un TC de cierre propio confiable (ver comentario de cabecera de cada
+  // data/<club>-data.js), así que las 3 entradas de abajo son cierres de mercado, dólar mayorista
+  // BCRA (serie de Rava Bursátil, misma fuente que ya usan las entradas de 2024/2025 de arriba).
+  'ARS@2020-06-30': { fx: 70.46,   source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2020' },
   'ARS@2024-06-30': { fx: 909,     source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2024' },
   'ARS@2025-06-30': { fx: 1203,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2025' },
+  // Última rueda de cada año: el mercado mayorista no operó el 31/12 en ninguno de los 2 años
+  // (30/12/2024 y 29/12/2025 fueron las últimas ruedas efectivas, confirmado contra Rava).
+  'ARS@2024-12-31': { fx: 1032,    source: 'market_close', label: 'Dólar mayorista BCRA, última rueda de 2024 (30/12/2024)' },
+  'ARS@2025-12-31': { fx: 1457,    source: 'market_close', label: 'Dólar mayorista BCRA, última rueda de 2025 (29/12/2025)' },
   'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },
   'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },
   'COP@2025-12-31': { fx: 3757.08, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025' },

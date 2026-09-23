@@ -4,13 +4,13 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Primera División (AR) — 17 ejercicio(s) con ranking:
-//   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 8 club(es) cargado(s), de 28.
+//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 9 club(es) cargado(s), de 28.
 //   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2019: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -40,6 +40,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"velez", revenue:60.143, reportType:"official_balance_sheet",
         sourceId:"velez-balance-2024-25",
         mix:[["Cuotas Sociales",11.65],["Comercial / Sponsors",2.774],["Estadio",12.971],["Televisión",5.66],["Venta de Jugadores",15.657],["Educación",6.217],["Otros ingresos",5.215]] },
+      { id:"talleres-ar", revenue:50.216, reportType:"official_balance_sheet",
+        sourceId:"talleres-ar-estados-contables-2025",
+        mix:[["Cuotas Sociales",13.307],["Comercial / Sponsors",5.588],["Estadio",4.53],["Televisión",5.398],["Venta de Jugadores",15.76],["Otras secciones deportivas",0.147],["Otros ingresos",5.486]] },
       { id:"estudianteslp", revenue:49.764, reportType:"official_balance_sheet",
         sourceId:"estudianteslp-memoria-y-balance-2024-25",
         mix:[["Cuotas Sociales",9.368],["Comercial / Sponsors",1.625],["Estadio",1.648],["Televisión",5.12],["Premios por competencias",6.945],["Venta de Jugadores",12.581],["Educación",1.79],["Otras secciones deportivas",1.737],["Otros ingresos",8.949]] },
@@ -57,6 +60,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"racing", revenue:73.012, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2023-24",
         mix:[["Cuotas Sociales",12.776],["Comercial / Sponsors",4.693],["Estadio",6.426],["Televisión",3.409],["Venta de Jugadores",30.457],["Educación",0.986],["Otros ingresos",14.265]] },
+      { id:"talleres-ar", revenue:64.779, reportType:"official_balance_sheet",
+        sourceId:"talleres-ar-estados-contables-2024",
+        mix:[["Cuotas Sociales",14.918],["Comercial / Sponsors",3.886],["Estadio",8.939],["Televisión",4.176],["Venta de Jugadores",25.828],["Otras secciones deportivas",0.145],["Otros ingresos",6.887]] },
       { id:"estudianteslp", revenue:54.818, reportType:"official_balance_sheet",
         sourceId:"estudianteslp-memoria-y-balance-2023-24",
         mix:[["Cuotas Sociales",6.563],["Comercial / Sponsors",0.706],["Estadio",1.243],["Televisión",3.283],["Premios por competencias",6.403],["Venta de Jugadores",26.656],["Educación",1.527],["Otras secciones deportivas",1.561],["Otros ingresos",6.878]] },
@@ -128,6 +134,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"velez", revenue:19.573, reportType:"official_balance_sheet",
         sourceId:"velez-balance-2019-20",
         mix:[["Cuotas Sociales",4.97],["Comercial / Sponsors",2.077],["Estadio",0.929],["Televisión",3.186],["Venta de Jugadores",2.569],["Educación",3.798],["Otros ingresos",2.043]] },
+      { id:"banfield-ar", revenue:10.017, reportType:"official_balance_sheet",
+        sourceId:"banfield-ar-memoria-y-balance-2019-2020",
+        mix:[["Cuotas Sociales",0.9],["Comercial / Sponsors",0.393],["Estadio",0.316],["Televisión",2.336],["Venta de Jugadores",2.662],["Educación",0.398],["Otras secciones deportivas",0.33],["Otros ingresos",2.682]] },
     ],
   },
   2019: {
@@ -142,6 +151,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"velez", revenue:20.889, reportType:"official_balance_sheet",
         sourceId:"velez-balance-2018-19",
         mix:[["Cuotas Sociales",6.092],["Comercial / Sponsors",1.854],["Estadio",2.585],["Televisión",3.451],["Venta de Jugadores",0.486],["Educación",4.578],["Otros ingresos",1.843]] },
+      { id:"newells-ar", revenue:18.678, reportType:"official_balance_sheet",
+        sourceId:"newells-ar-memoria-y-balance-2018-2019",
+        mix:[["Cuotas Sociales",2.321],["Comercial / Sponsors",1.502],["Estadio",3.04],["Televisión",2.894],["Venta de Jugadores",6.867],["Educación",0.175],["Otras secciones deportivas",0.45],["Otros ingresos",1.429]] },
     ],
   },
   2018: {

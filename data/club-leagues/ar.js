@@ -47,6 +47,16 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   sanlorenzo: { 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2024: 'ar-primera' },
   union: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
   velez: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
+  // 3 clubes nuevos (sesión 2026-09-23, onboarding de Talleres/Newell's/Banfield). Ninguno se
+  // verificó contra Wikipedia línea por línea (mismo nivel de confianza que "conoce el dato" de
+  // arriba, no una fuente primaria citada): Talleres jugó Copa Libertadores/Sudamericana los 2 años
+  // (confirmado por sus propios ingresos "Copas internacionales" en data/talleres-ar-data.js, algo
+  // que solo pasa jugando Primera); Newell's nunca descendió en toda su historia (hecho público muy
+  // conocido del fútbol argentino); Banfield 2019-20 lo confirma el propio balance ("CONSIDERACIONES
+  // REGLAMENTARIAS A.F.A./SAF", tratando la afiliación a la Superliga como vigente ese ejercicio).
+  'talleres-ar': { 2024: 'ar-primera', 2025: 'ar-primera' },
+  'newells-ar': { 2019: 'ar-primera' },
+  'banfield-ar': { 2020: 'ar-primera' },
 });
 
 // ---------------------------------------------------------------------------

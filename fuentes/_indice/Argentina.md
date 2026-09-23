@@ -15,7 +15,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Atlanta](../Argentina/Atlanta.md) — sin PDF, superávit citado sin PDF adjunto — Último chequeo: 2026-09-12
 - [Atlético Tucumán](../Argentina/Atletico Tucuman.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Atlético de Rafaela](../Argentina/Atlético de Rafaela.md) — sin PDF, cifras solo confirmadas por prensa — Último chequeo: 2026-09-22
-- [Banfield](../Argentina/Banfield.md) — sin PDFs, pendiente todo
+- [Banfield](../Argentina/Banfield.md) — cargado, 1 balance real (116° Ejercicio, 2019-20)
 - [Barracas Central](../Argentina/Barracas Central.md) — sin PDFs, estructura institucional poco desarrollada — Último chequeo: 2026-09-22
 - [Belgrano](../Argentina/Belgrano.md) — 2 memorias descargadas, sin datos financieros cargables — Último chequeo: 2026-09-22
 - [Boca Juniors](../Argentina/Boca.md) — cargado, presupuesto 2027 y balance 2025 reales
@@ -50,7 +50,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Lanús](../Argentina/Lanus.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Los Andes](../Argentina/Los Andes.md) — 13 balances escaneados descargados, sin OCR aún — Último chequeo: 2026-09-12
 - [Mitre (Santiago del Estero)](<../Argentina/Mitre (Santiago del Estero).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
-- [Newell's Old Boys](../Argentina/Newells Old Boys.md) — sin PDFs, portal de socios gateado
+- [Newell's Old Boys](../Argentina/Newells Old Boys.md) — cargado, 1 balance real (Ejercicio 2018-19)
 - [Nueva Chicago](../Argentina/Nueva Chicago.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Patronato (Paraná)](<../Argentina/Patronato (Paraná).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Platense](../Argentina/Platense.md) — sin PDF del balance, solo cifras narrativas — Último chequeo: 2026-09-22
@@ -65,7 +65,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [San Miguel](../Argentina/San Miguel.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [San Telmo](../Argentina/San Telmo.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Sarmiento](../Argentina/Sarmiento.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
-- [Talleres](../Argentina/Talleres.md) — 1 reporte infográfico, sin cifras cargables
+- [Talleres](../Argentina/Talleres.md) — cargado, 2 balances reales (Ejercicios 2024 y 2025)
 - [Temperley](../Argentina/Temperley.md) — 3 memorias narrativas, sin datos financieros — Último chequeo: 2026-09-22
 - [Tigre](../Argentina/Tigre.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Tristán Suárez](../Argentina/Tristán Suárez.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
