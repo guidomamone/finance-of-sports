@@ -130,7 +130,7 @@ Guido tenga que pedirlo explícitamente:
 
 - **`Admin/ESTADO.md`**: reflejar lo que cambió. Es un snapshot, no un log: si algo que
   decía ahí ya no es cierto, se reemplaza o se borra, no se apila una línea nueva
-  al lado de la vieja. Su sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" NO
+  al lado de la vieja. Su sección "QUÉ ES REAL POR CLUB" NO
   se escribe a mano: se regenera con `node tools/generate-club-index.js`.
 - **`Admin/TODO.md`**: BORRAR lo que se resolvió (no marcarlo como "RESUELTO" y dejarlo
   ahí, que es como la lista vieja terminó con la mitad de los puntos siendo cosas

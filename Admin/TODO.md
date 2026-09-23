@@ -88,15 +88,15 @@ perdieron sino que se descartaron:
     el selector.
 
 
-48. DEJAR `node tools/audit.js` EN VERDE DESPUÉS DEL MERGE DE LA VERSIÓN 202. Quedó en 0 P0, **1 P1
-    y 10 P2**, y los P2 son nuevos: aparecieron al juntarse el sourcing de 3 países con el
-    onboarding de 20 clubes, o sea que nadie los miró todavía.
-    - El P1 es `fuentes-indice-desfasado`: `fuentes/README.md` no refleja los números nuevos
-      (Brasil pasa a 43/43, Colombia a 20/18, México a 18/2). **El generador ABORTA a propósito**
-      porque no puede clasificar solo algunas líneas nuevas — no es un bug, es el diseño. Se
-      resuelve leyendo esas líneas y escribiendo la decisión en `OVERRIDES`, adentro de
-      `tools/generate-fuentes-index.js`, con el motivo. Sesión corta.
-    - Los 10 P2 hay que leerlos uno por uno antes de silenciar ninguno.
+53. RIVER: BUSCAR LA FUENTE OFICIAL (pedido de Guido, 2026-09-23). El ejercicio 2023/2024 cargado
+    (balance con informe de auditoría independiente) es REAL, pero se consiguió en una réplica no
+    oficial de la comunidad (tuRiver.com), marcado `reliability:'secondary_mirror'` — ver
+    `data/river-data.js` y `fuentes/Argentina/River.md`. Objetivo: buscar/confirmar el mismo balance (u
+    otro ejercicio) por un canal oficial de River (riverplate.com, cariverplate.com.ar, prensa oficial,
+    boletín de socios) y, si aparece, reemplazar la fuente o sumarla como respaldo. Es sourcing puntual
+    de un club — usar `club-sourcing` (sección 0) y `club-data-mapping` si hay que recategorizar algo
+    al cambiar de fuente. NO es un problema de datos inventados: el balance en sí es real, lo que
+    cambiaría es solo la procedencia.
 
 49. RETOMAR EL SOURCING DE ARGENTINA, que quedó a mitad. Su agente se cortó por presupuesto de
     tokens el 2026-09-22, no por haber terminado. Lo que alcanzó a escribir está commiteado, así
@@ -121,6 +121,41 @@ perdieron sino que se descartaron:
       reporta trimestralmente. Es el segundo caso mexicano del patrón Ollamani y el canal ya está
       probado, pero **abre liga y deporte nuevos**: es decisión de Guido, no se hace solo.
 
+52. METODOLOGÍA DE SOURCING: ÁNGULOS Y CUÁNDO ESCALAR (pedido de Guido, 2026-09-23). `club-sourcing`
+    (1266 líneas) ya documenta gotchas país por país, pero no estructura tres cosas: (a) qué ángulos
+    probar 1ª, 2ª, 3ª+ vez para un club antes de darlo por agotado, en vez de que un agente insista con
+    un canal que ya se probó y no rinde; (b) cómo un agente sabe que OTRA sesión ya probó tal ángulo en
+    tal club — hoy depende de leer entero `fuentes/<País>/<Club>.md`, que no está pensado como changelog
+    de intentos; (c) el corte entre "este club necesita una sesión dedicada porque es difícil de
+    encontrar" y "hay que escribirle al club directo" (comparte infraestructura de mail con el to-do 51).
+    Requiere leer el skill completo y destilar el patrón que ya usan, sin nombrarlo, las 29 secciones de
+    país. Sesión propia, en frío — no mezclarla con sourcing en caliente el mismo día.
+
+57. REORDENAR LOS 6 SKILLS: DEJARON DE SER SKILL, SON CHANGELOG (pedido de Guido, 2026-09-23).
+    `club-sourcing` (1266 líneas), `club-data-mapping` (1049) y `club-or-year-onboarding` (885) mezclan
+    criterio vigente con anécdotas versionadas ("Versión X, sesión tal fecha..."). Separar: lo que sigue
+    siendo criterio activo se queda en el skill, lo que ya es historia (una decisión tomada una vez, un
+    bug ya resuelto que no repite patrón) se resume fuerte o se manda a `Admin/CHANGELOG.md`/
+    `Admin/Archive/`. Incluye el rewrite de `club-sourcing` que salga del to-do 52 — mejor una sola
+    pasada sobre ese archivo que dos. Candidato a partirse en 2-3 sesiones, una por skill grande, para no
+    volarse el contexto de arranque de una sola.
+
+51. PROCESO DE EMAIL A CLUBES (pedido de Guido, 2026-09-23). Hoy `Admin/dudas-por-club.md` junta
+    preguntas abiertas por club pero no hay ningún paso de "convertir esto en un mail". Diseñar: (1)
+    criterio de cuándo una duda amerita mail (no todas — algunas se resuelven solas con más sourcing);
+    (2) Claude redacta el borrador; (3) Guido hace QA sobre el borrador antes de que salga; (4) envío —
+    NO puede ser desatendido, cada envío necesita confirmación explícita de Guido en el momento (regla
+    de la plataforma, no negociable, no es algo que se pueda aprobar de antemano para todo un lote). Se
+    beneficia de que el to-do 52 ya haya definido el criterio de "cuándo escribirle al club directo" por
+    sourcing difícil, que es la otra fuente de mails además de las dudas de categorización.
+
+56. EVALUAR PARTIR EL EJE "DATOS" DE LA AUDITORÍA POR PAÍS (pedido de Guido, 2026-09-23). El eje
+    `datos` de `auditoria-finance-of-sports` (uno de los 5 que rotan, ver skill sección "Capa 3") lee
+    club por club buscando lo que un total correcto no delata — crece linealmente con la cantidad de
+    clubes cargados (hoy 61, el to-do 36 ya proyecta 200-3000). Evaluar si partirlo por país (una
+    corrida por país en vez de una corrida de todo el proyecto) evita que una auditoría se vuelva
+    demasiado larga para terminar en una sesión. No urgente a 61 clubes; conviene resolverlo antes de
+    que sí lo sea, no cuando ya esté rota.
 
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que

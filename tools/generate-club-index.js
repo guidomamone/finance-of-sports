@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/generate-club-index.js — genera, desde los propios datos, la sección
-// "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `Admin/ESTADO.md`.
+// "QUÉ ES REAL POR CLUB" de `Admin/ESTADO.md` (hasta la Versión 202 se llamaba "...Y QUÉ ES
+// PLACEHOLDER, POR CLUB" — desde la Versión 138 no queda ningún ejercicio placeholder cargado,
+// así que esa mitad del título describía algo que ya no existe; ver to-do 54).
 //
 // EL PROBLEMA QUE RESUELVE (la "fuga 1" del mapa de procesos): esa sección se
 // escribía a mano, un párrafo por club, y decía lo mismo que el comentario de
@@ -144,7 +146,7 @@ function buildIndex({ clubs, sources, generic }) {
   }
 
   const lines = [];
-  lines.push('QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB');
+  lines.push('QUÉ ES REAL POR CLUB');
   lines.push('GENERADO AUTOMÁTICAMENTE — no editar a mano. Se regenera con:');
   lines.push('    node tools/generate-club-index.js');
   lines.push('');

@@ -146,6 +146,22 @@ const OVERRIDES = {
   'Portugal|Arouca': { doc: false, motivo: '4 ejercicios existen pero truncados en Wayback, no usables' },
   'Suiza|Basel': { doc: true, motivo: '18 documentos 2005-2021' },
   'España|Real Sociedad': { doc: false, motivo: 'el depósito existe, el PDF queda detrás de un informe pago' },
+
+  // 13 CONFLICTOS de la corrida del 2026-09-23 (to-do 48), tras sumarse el sourcing
+  // de Brasil/Colombia/México de la Versión 201-202.
+  'Brasil|Amazonas': { doc: true, motivo: 'balanços resumidos sin auditar, 2022-2024, rescatados de Wayback' },
+  'Brasil|America Mineiro': { doc: true, motivo: 'dead-end viejo destrabado, 3 ejercicios 2023-2025 vía CDN del sitio oficial' },
+  'Brasil|Criciúma': { doc: true, motivo: 'dead-end destrabado, 14 ejercicios consecutivos 2012-2025' },
+  'Brasil|Ferroviária': { doc: true, motivo: '2010-2018 + 2021-2025, faltan solo 2019 y 2020' },
+  'Brasil|Novorizontino': { doc: true, motivo: '15 ejercicios vía repositorio de la Federação Paulista' },
+  'Brasil|Operário Ferroviário': { doc: true, motivo: '2024 y 2025 con documento, faltan 2023 y anteriores' },
+  'Brasil|Vila Nova': { doc: true, motivo: '4 ejercicios auditados 2022-2025 vía repositorio FGF-GO' },
+  'Colombia|Deportivo Pasto': { doc: false, motivo: 'SIN DOCUMENTO explícito: era asociación, nunca estuvo en SIIS' },
+  'Colombia|Independiente Medellin': { doc: false, motivo: 'SIN DOCUMENTO explícito: la S.A. está en liquidación, fuera del perímetro de Supersociedades' },
+  'México|Atlas': { doc: true, motivo: 'PDF encontrado: P&L condensado 2018/2019 vía operación discontinua IFRS 5 de TV Azteca' },
+  'México|Chivas Guadalajara': { doc: false, motivo: 'sin PDF explícito: sociedad privada, no cotiza' },
+  'México|Mazatlán FC': { doc: false, motivo: 'sin cifras explícito: TV Azteca nunca desglosó el segmento fútbol' },
+  'México|Monterrey': { doc: false, motivo: 'sin PDF/sin cifras explícito: el 20-F de FEMSA no lo menciona' },
 };
 
 // ---------------------------------------------------------------------------

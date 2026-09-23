@@ -131,19 +131,6 @@
   }
   .group .gnote{color:var(--ink-soft);font-size:14.5px;margin:0 0 12px;max-width:68ch;}
 
-  .fixes{border-top:2px solid var(--ink);padding-top:34px;}
-  .fix{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:22px 0;border-bottom:1px solid var(--rule-soft);}
-  @media (min-width:760px){.fix{grid-template-columns:minmax(0,1fr) 140px;gap:24px;align-items:start;}}
-  .fix h3{font-size:17px;font-weight:600;margin:0 0 5px;letter-spacing:-.01em;}
-  .fix p{margin:0;color:var(--ink-soft);font-size:15px;}
-  .effort{
-    font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.05em;
-    padding:4px 9px;border-radius:2px;display:inline-block;white-space:nowrap;
-  }
-  .effort.s{background:var(--good-soft);color:var(--good);}
-  .effort.m{background:var(--accent-soft);color:var(--accent);}
-  .effort.done{background:var(--good-soft);color:var(--good);font-weight:600;}
-
   .legend{
     display:flex;flex-wrap:wrap;gap:18px;
     font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:var(--ink-faint);
@@ -168,15 +155,7 @@
 <header class="mast">
   <p class="eyebrow">Mapa de procesos · finance-of-sports · 22 sep 2026 · Versión 199</p>
   <h1>Cómo corre El deporte en Números</h1>
-  <p class="standfirst">Qué es cada archivo del proyecto, los procesos que lo mueven, y la lista abierta de lo que puede romperse al escalar de 41 clubes a 1000.</p>
-  <p style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.6;color:var(--ink-soft);margin:22px 0 0;max-width:70ch;border-left:3px solid var(--accent);padding-left:16px;">
-    <strong style="color:var(--ink);">Para quien audite este documento:</strong> la sección que buscás es
-    <a href="#riesgos">RIESGOS DE ESCALA</a>, al final. Es la lista explícita de lo que hoy no escala,
-    con lo ya arreglado y lo que sigue abierto. El objetivo es encontrar los problemas AHORA, con 41
-    clubes, y no cuando sean 1000. Si ves algo que no está en esa lista, eso es exactamente lo que
-    hace falta: la lista está armada desde lo que apareció trabajando, no desde una revisión
-    sistemática del código.
-  </p>
+  <p class="standfirst">Qué es cada archivo del proyecto y los procesos que lo mueven.</p>
 </header>
 
 <dl class="state">
@@ -663,32 +642,6 @@
   <span><span class="swatch" style="background:var(--good)"></span> verificado / resuelto</span>
   <span><span class="swatch" style="background:var(--cost)"></span> donde se concentra el costo</span>
 </div>
-
-<!-- ============ fixes ============ -->
-<section class="fixes">
-  <div class="col" style="margin-bottom:22px;">
-    <h2 id="riesgos">Riesgos de escala</h2>
-    <p style="color:var(--ink-soft);margin:10px 0 0;"><strong style="color:var(--ink);">Esta es la lista de lo que no escala.</strong> Cada punto es algo que funciona hoy con 41 clubes y que, al objetivo de ~1000, deja de funcionar o se vuelve imposible de mantener. Lo que se va arreglando sale de la lista, y para el mapa completo (qué se rompe entre 200 y 3000 clubes, con el número aproximado de cada uno) está <code>.claude/skills/escala-finance-of-sports/</code>, que es donde vive de verdad este eje desde que dejó de caber acá.</p>
-    <p style="color:var(--ink-soft);margin:14px 0 0;">Ya salieron de acá, por resueltos: la auditoría que sólo revisaba el club abierto (ahora <code>auditAll()</code> corre los 228 a pedido), la sección "qué es real por club" y el listado de fuentes (ahora los 4 generadores del <a href="#generadores">paso 05</a>), los tipos de cambio repetidos club por club (<code>FX_CLOSE</code>, Versión 125), calcular un ranking de liga en vivo (precalculado desde la Versión 182, ver <a href="#ligas">paso 06</a>), y la lista de documentos internos sueltos que había que mantener a mano en <code>netlify.toml</code> (Versión 196, ver <a href="#publicar">paso 07</a>).</p>
-  </div>
-
-  <div class="fix">
-    <div>
-      <h3>El estado de <code>fuentes/&lt;País&gt;/&lt;Club&gt;.md</code> sigue a mano, club por club</h3>
-      <p><strong>Qué se rompe a escala:</strong> desde la Versión 175, <code>generate-fuentes-index.js</code> ya regenera el RESUMEN por país (cuántos clubes, cuántos con documento, fecha más vieja) — eso salió de la lista. Lo que sigue a mano es el contenido de cada uno de los 569 archivos de club: qué se probó, qué falló, la fecha de su último chequeo. No es derivable de nada, así que no hay generador posible; lo que sí puede escalar mejor es el ritmo al que una sesión de sourcing los toca, que hoy es uno por uno.</p>
-    </div>
-    <div><span class="effort m">sesión propia</span></div>
-  </div>
-
-  <div class="fix">
-    <div>
-      <h3><code>data/*.js</code> crece con cada club, y <code>clubs.js</code> se baja entero siempre</h3>
-      <p><strong>Qué se rompe a escala:</strong> hoy son 891 KB en 41 clubes (~22 KB/club, sólo los archivos de datos). A 1000 clubes proyecta ~21 MB en disco — lo que se baja por visita sigue siendo 1 club (carga por demanda), pero <code>data/clubs.js</code> (identidad + <code>brandColor</code> de cada uno) se carga eager SIEMPRE, y hoy pesa 20 KB. Medido y silenciado con su motivo en <code>tools/audit-ignore.json</code> (P3 <code>proyeccion</code>): no urge, pero es el número a mirar antes de sumar otro campo eager por club.</p>
-    </div>
-    <div><span class="effort m">medir de nuevo a los 200</span></div>
-  </div>
-
-</section>
 
 <footer>
   Medido sobre el repo al 22 sep 2026, Versión 198 (esta actualización es la Versión 199). 41 clubes · 6 países · 228 checks · 89 documentos fuente · 613 archivos en <code>fuentes/</code> · 145 MB trackeados de <code>Clubes/</code>.<br>

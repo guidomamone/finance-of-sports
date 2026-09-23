@@ -80,7 +80,7 @@ se reescribe, no se acumula.
   calcula Finanzas para todos (ver
   `Admin/ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
   El detalle club por club (qué ejercicio, qué fuente, qué es real y qué no) está
-  más abajo en "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB", y con más detalle
+  más abajo en "QUÉ ES REAL POR CLUB", y con más detalle
   todavía en el comentario de cabecera de cada `data/<club>-data.js`.
 - PRESUPUESTOS, POR CLUB (Versión 135): los 3 cards que solo aparecen para un
   ejercicio con presupuesto (Supuestos, Presupuesto Financiero, Presupuesto de
@@ -173,14 +173,15 @@ se reescribe, no se acumula.
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, **10 P2**, 7 P3 y 31
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-22, Versión 201, tras
-  onboardear 20 clubes nuevos: 336 ejercicios×check, 3 P0 y 3 P1 reales encontrados y corregidos en
-  la propia carga — 2 categorías cruzadas, 2 items que no cerraban contra su fila, y el ASSET_V sin
-  subir). Los 10 P2 son todos `catch-all dominante`: clubes cuyo documento fuente no desglosa más
-  de lo que ya está cargado (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y
-  2 españoles con "Ingresos accesorios y otros de gestión corriente" sin partir) — no es un error de
-  carga, es el techo real de lo que declara cada balance. Desde la Versión 125 audita además la
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 9 P3 y 41
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-23, Versión 203). Los 10
+  `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
+  Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
+  "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
+  comentario de cabecera de cada `data/<club>-data.js` — no es un error de carga, es el techo real de
+  lo que declara cada balance — y quedaron silenciados. El P1 `fuentes-indice-desfasado` de esa misma
+  corrida (13 clubes que el generador no podía clasificar solo) se resolvió con `OVERRIDES` en
+  `tools/generate-fuentes-index.js`. Desde la Versión 125 audita además la
   PROCEDENCIA de cada tipo de cambio, no solo que exista y sea plausible, y `node tools/audit.js --fx`
   imprime los tipos de cambio con su origen, agrupados por moneda.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
@@ -475,7 +476,7 @@ completo está en `Admin/CONVENCIONES.md`.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 530 clubes trackeados, 339 con documento encontrado (de los cuales 61
+  países, 571 clubes trackeados, 365 con documento encontrado (de los cuales 61
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
@@ -485,7 +486,7 @@ completo está en `Admin/CONVENCIONES.md`.
 ---
 
 ===== CLUB-INDEX:START (generado por tools/generate-club-index.js, no editar a mano) =====
-QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB
+QUÉ ES REAL POR CLUB
 GENERADO AUTOMÁTICAMENTE — no editar a mano. Se regenera con:
     node tools/generate-club-index.js
 

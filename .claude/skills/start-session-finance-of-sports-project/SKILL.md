@@ -165,7 +165,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   `sources{}` y los `fiscalYearMeta`. Corrélo después de cargar un club o de tocar una fuente.
   `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.
 - `node tools/generate-club-index.js` — regenera, desde los propios `data/<club>-data.js`, la sección
-  "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" de `Admin/ESTADO.md`. Corrélo después de onboardear un club
+  "QUÉ ES REAL POR CLUB" de `Admin/ESTADO.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
 - `node tools/generate-rankings.js` (Versión 182) — precalcula el ranking de ingresos de cada

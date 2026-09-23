@@ -109,5 +109,55 @@
     "code": "salto-interanual",
     "match": "girona-es: revenue salta de",
     "motivo": "VERIFICADO 2026-09-22 (onboarding de Girona FC): es un salto REAL, no un error de unidad. El ejercicio 2019/2020 (26,9 M EUR) es de Segunda División, recién descendido; el ejercicio 2024/2025 (143,9 M EUR) es de LaLiga con clasificación a la UEFA Champions League por el 3er puesto de 2023/24 — el club escaló 2 categorías y jugó competición europea entre un ejercicio y otro. Los dos años tienen su propio tie-out exacto contra el total impreso de su propio documento."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "depcali-co 2025 Ingresos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): ya se extrajeron del catch-all las 3 categorías reales que la Nota 22 \"Otros Ingresos\" del balance sí distinguía (ver comentario de cabecera de data/depcali-co-data.js y club-data-mapping SKILL.md sección 1). Lo que queda es justo lo que el documento agrupa sin más desglose, no una categorización pendiente."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "espanyol-es 2024 Ingresos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): \"Ingresos accesorios y otros de gestión corriente\" es una línea `disclosureLevel:'summary'` de las Cuentas Anuales, sin desglose adicional en ningún lado del documento (ver comentario de cabecera de data/espanyol-es-data.js)."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "girona-es 2020 Ingresos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): misma \"Ingresos accesorios y otros de gestión corriente\" que espanyol-es, `disclosureLevel:'summary'` — la nota de club-data-mapping y el comentario de cabecera de data/girona-es-data.js ya documentan que es una línea MUY grande sin desglose en la fuente."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "koln-de 2024 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): \"sonstige betriebliche Aufwendungen\" no tiene desglose numérico en el Anhang, solo un comentario narrativo en el Lagebericht (ver comentario de cabecera de data/koln-de-data.js). Mismo criterio para el ejercicio 2025, entrada aparte."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "koln-de 2025 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): mismo caso que koln-de 2024 — \"sonstige betriebliche Aufwendungen\" sin desglose numérico en el Anhang, ver comentario de cabecera de data/koln-de-data.js."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "stuttgart-de 2023 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): \"Sonstige betriebliche Aufwendungen\" (GuV renglón 8, el más grande del gasto: ~34% en 2023) no tiene ningún desglose numerado en el Anhang, solo menciones de que incluye efectos de conversión de moneda extranjera. Catch-all grande pero genuino — ver comentario de cabecera de data/stuttgart-de-data.js. Mismo criterio para 2024, entrada aparte."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "stuttgart-de 2024 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): mismo caso que stuttgart-de 2023 — \"Sonstige betriebliche Aufwendungen\" (~32% del gasto) sin desglose numerado en el Anhang, ver comentario de cabecera de data/stuttgart-de-data.js."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "werderbremen-de 2023 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): el comentario de cabecera de data/werderbremen-de-data.js documenta que el Anhang 5.12 de 2023/2024 solo identifica un componente extraordinario del lado de INGRESOS (ya promovido a línea propia), no de gastos — el resto de \"Sonstige betriebliche Aufwendungen\" queda sin partir porque el documento no lo separa."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "werderbremen-de 2024 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): mismo caso que werderbremen-de 2023 — el Anhang 5.12 de ese ejercicio no identifica ningún componente extraordinario del lado de gastos, ver comentario de cabecera de data/werderbremen-de-data.js."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "werderbremen-de 2025 Gastos",
+    "motivo": "VERIFICADO 2026-09-23 (to-do 48): a diferencia de 2023/2024, acá el Anhang 5.12 SÍ identifica un componente extraordinario (TEUR 860, costos de emisión del bono Werder-Anleihe 2025/2030) y ya se promovió a línea propia `other_expenses` — el resto del catch-all queda sin partir porque el documento no da más detalle, ver comentario de cabecera de data/werderbremen-de-data.js."
   }
 ]

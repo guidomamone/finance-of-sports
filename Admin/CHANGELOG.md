@@ -2899,3 +2899,26 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 
 ### Pendiente
 - Pasó a `Admin/TODO.md`, puntos 48, 49 y 50 (la lista de pendientes vive solo ahí).
+
+## Versión 203 — Limpieza rápida: audit.js en verde, título de ESTADO.md y Riesgos de escala afuera
+
+### Arreglado
+- `node tools/audit.js` vuelve a 0 P0/P1/P2 (to-do 48). El P1 `fuentes-indice-desfasado` se resolvió
+  agregando 13 `OVERRIDES` a `tools/generate-fuentes-index.js` (7 clubes de Brasil, 2 de Colombia y 4
+  de México que el sourcing de la Versión 201-202 dejó ambiguos) y corriendo el generador:
+  `fuentes/README.md` pasa a 44 países, 571 clubes, 365 con documento. Los 10 P2
+  `catchall-dominante` (3 españoles, 3 alemanes) se verificaron uno por uno contra el comentario de
+  cabecera de cada `data/<club>-data.js` — todos son el techo real de lo que desglosa su documento
+  fuente, no una categorización pendiente — y se silenciaron en `tools/audit-ignore.json` con el
+  motivo de cada uno.
+
+### Cambiado
+- La sección de `Admin/ESTADO.md` que genera `tools/generate-club-index.js` pasa a llamarse "QUÉ ES
+  REAL POR CLUB" (to-do 54). Desde la Versión 138 no queda ningún ejercicio placeholder cargado, así
+  que la mitad vieja del título ("...Y QUÉ ES PLACEHOLDER") no describía nada; 4 de los 7 lugares que
+  la nombraban ya usaban la forma corta de manera informal, ahora es una sola.
+
+### Quitado
+- La sección "Riesgos de escala" de `Admin/COMO-CORRE-EL-PROYECTO.html` (to-do 55, pedido de Guido).
+  Duplicaba lo que ya vive completo en el skill `escala-finance-of-sports`. Se sacó junto con el
+  callout de cabecera que apuntaba a ella y la CSS que quedó huérfana (`.fixes`, `.fix`, `.effort`).
