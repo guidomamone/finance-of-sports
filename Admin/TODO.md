@@ -54,6 +54,40 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+47. EXPLICARLE AL VISITANTE POR QUÉ MÉXICO NO MUESTRA CASI NADA (pedido de Guido, 2026-09-22:
+    *"estoy seguro de que muchos usuarios van a querer ver méxico en detalle y hay que explicar
+    por qué no se muestra nada"*). **No es una tarea de sourcing: el sourcing ya está hecho y dio
+    lo que podía dar.** Los 18 clubes de Liga MX están trackeados uno por uno y el país quedó
+    documentado como RESUELTO, no como pendiente — el detalle club por club está en
+    `fuentes/_indice/México.md` y en cada `fuentes/México/<Club>.md`.
+
+    LA RAZÓN DE FONDO, que es lo que hay que poder decir en pantalla: el Reglamento de Control
+    Económico de la Liga MX **exige** estados financieros dictaminados (art. 26) y en el mismo
+    texto **los declara confidenciales** (art. 12), vía el sistema SICE. O sea que los balances
+    existen, están auditados, y la liga decide no publicarlos. No es que el proyecto no los
+    encontró: es que nadie fuera de la liga puede verlos. Se suma que en México no hay registro
+    mercantil útil (el RPC inscribe actos, no balances; los estados financieros van al SAT y son
+    reservados) y que en el listado completo de emisoras de la BMV hay un solo club de fútbol.
+
+    LO QUE SÍ SE PUDO, y conviene mostrar como excepción y no como regla: Club América vía el
+    segmento "Fútbol" de Ollamani S.A.B. (cotiza en la BMV), Atlas vía el desglose de operación
+    discontinua IFRS 5 en el Reporte Anual 2019 de TV Azteca, y Atlético San Luis vía la nota de
+    empresas del grupo de las cuentas anuales del Atlético de Madrid. Los dos últimos son cifras
+    parciales, no balances completos.
+
+    LA TAREA, entonces, es de PRODUCTO: dónde y cómo se le dice esto al visitante que entra
+    buscando su club. Un club trackeado-sin-documento hoy simplemente no existe en el sitio, así
+    que el que busca Chivas no encuentra ni el club ni el motivo. Hay que decidir si eso se
+    resuelve con una vista de liga que liste los clubes sin datos con su razón, con una ficha
+    mínima por club, o con una nota de cobertura por país. **Es la primera vez que el proyecto
+    necesita mostrar una AUSENCIA explicada, y no va a ser la última**: el mismo problema vuelve
+    con cualquier liga cuyo regulador exige y no publica. Conviene resolverlo genérico.
+
+    OJO CON UN EFECTO LATERAL: hoy el sitio es "los clubes que tienen datos". Si se listan clubes
+    sin datos, hay que cuidar que no parezcan cargados ni que ensucien rankings, comparaciones o
+    el selector.
+
+
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.

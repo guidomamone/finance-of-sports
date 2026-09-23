@@ -654,6 +654,33 @@ no existe. Ver `fuentes/Turquía/Trabzonspor.md`.)*
 
 *(agregar una sección nueva por club acá)*
 
+## Independiente Medellín (sourcing de Colombia, sesión 2026-09-22, bloquea el club entero)
+
+- **¿Qué entidad presenta hoy los estados financieros del club, y ante quién?** Es el único club de
+  la Primera A 2025 que no aparece por ninguna vía en SIIS (Supersociedades): ni por nombre, ni por
+  NIT candidato (890900575), ni en el listado completo de entidades con CIIU deportivo
+  (R9311/R9312/R9319), que esta sesión se recorrió entero. Los directorios empresariales listan
+  `DEPORTIVO INDEPENDIENTE MEDELLIN S.A.` como **"en liquidación"**, mientras que la entidad que
+  opera se presenta como **Corporación Deportiva Independiente Medellín**. Si es una corporación y
+  no una sociedad, queda estructuralmente fuera del perímetro de Supersociedades, que es el único
+  canal del país — y entonces el club nunca va a tener balance público salvo que lo publique por su
+  cuenta (su sitio no tiene ninguna sección de transparencia, menú completo revisado). La pregunta
+  concreta: *"¿la Corporación Deportiva Independiente Medellín presenta estados financieros ante
+  algún organismo de control? ¿Dónde se pueden consultar los del último ejercicio?"* — a quién
+  preguntarle: info@dimoficial.com (el único contacto administrativo publicado).
+
+## Águilas Doradas / Talento Dorado S.A. (sourcing de Colombia, sesión 2026-09-22, no bloqueó nada)
+
+- **¿El perímetro de Talento Dorado S.A. es solo el club de fútbol?** Los estados financieros del
+  club se depositan en SIIS bajo **TALENTO DORADO S.A.** (NIT 900456885, Rionegro, Antioquia), que
+  es la sociedad dueña del club. Pero la misma sociedad figura también como dueña del equipo de
+  **futsal** Águilas Doradas. No se abrieron los PDF esta sesión (es sourcing puro), así que queda
+  sin confirmar si los estados mezclan las dos actividades o si el futsal es inmaterial. Hay que
+  chequearlo en la nota de contexto operacional antes de cargar cualquier cifra — mismo criterio de
+  perímetro que ya se aplicó a Ollamani/Club América y a MSG Sports.
+
+
+
 ## Alquileres y arrendamientos sin especificar (pregunta común a 6 clubes)
 
 Salió del relevamiento del 2026-09-22 (`auditorias/2026-09-22-catchall-no-futbol.md`) al crear la

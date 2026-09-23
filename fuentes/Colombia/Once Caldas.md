@@ -12,8 +12,16 @@
   del 02-ago-2012 de la Superintendencia de Sociedades), aunque la Vista 360 muestra 0 "procesos
   activos" listados en su ficha — posible desactualización de ese contador puntual, no del estado
   real de la sociedad.
-  - Hay historial de al menos 2 ejercicios más en SIIS (2024, y anteriores) sin explorar todavía —
-    quedan pendientes para una sesión futura si se quiere serie histórica.
+  - **RESUELTO el 2026-09-22: no eran "al menos 2", son 9 ejercicios más.** SIIS tiene los 10
+    cortes 2016-2025 bajo el mismo NIT, cada uno con sus 3 documentos (NOTAS EF, DICTAMEN DEL
+    REVISOR FISCAL, CERTIFICACION EF), y se bajaron los 9 que faltaban con el flujo por API
+    documentado en `fuentes/Colombia/_notas-generales.md` (sin browser, todo `curl`).
+    - **Sin abrir todavía** — esta sesión es sourcing puro. Vale especialmente la pena revisarlos
+      acá: el PDF de 2025 resultó ser solo las NOTAS (sin el Estado de Situación Financiera ni el
+      Estado de Resultado Integral primarios como tabla aparte), lo que obligó a usar un residuo
+      para el impuesto y dejó una duda abierta en `Admin/dudas-por-club.md`. Si algún ejercicio
+      anterior sí trae los estados primarios completos, serviría para validar el criterio que se
+      usó en 2025.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 890801447); oncecaldas.co.
 - **CARGADO al sitio (sesión 2026-09-13, Ejercicio 2025 únicamente)**: ver `data/oncecaldas-data.js`.
   El PDF `estados-financieros-2025.pdf` (a pesar del nombre) son las NOTAS a los estados financieros
@@ -26,4 +34,4 @@
   Superintendencia Financiera de Colombia) — el documento no declara su propio tipo de cambio.
   Verificado en navegador: `verifyTieOuts()` cierra los 3 checks (Revenue/Expenses/PAT), Finanzas
   renderiza sin errores.
-- Último chequeo: 2026-09-13.
+- Último chequeo: 2026-09-22.

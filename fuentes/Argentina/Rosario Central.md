@@ -10,10 +10,21 @@
   Gastos). DÉFICIT real: $(3.107.221.597) ARS. Se encontró y corrigió un error de lectura de $201M
   (una fila desalineada por el layout de pdftotext) verificando la suma contra el total impreso —
   ver `data/rosariocentral-data.js`. La Memoria (36 págs) es narrativa, no se usó.
-- Pendiente: ejercicios 2023-24 y 2024-25 (ambos aprobados en asamblea, el patrón de URL de 2023 no se
-  repite para años posteriores, todas las variantes probadas dan 404) y todo lo anterior a 2022-23. El
-  club tiene una "Sede Virtual" (rosariocentral.miclub.info) que probablemente tenga la versión más
-  nueva, posiblemente con login de socio.
+- **Estados Contables, Ejercicio 2024-25 (cierre 30/6/2025) — ENCONTRADO 2026-09-22.** 41 págs,
+  **ESCANEO sin capa de texto** (`pdftotext` devuelve vacío; va a necesitar el flujo de OCR del
+  proyecto). Verificado por OCR de la pág. 3: "Composición de la Comisión Directiva y Comisión
+  Revisora de cuentas al 30 de junio de 2025", presidente Gonzalo Luis Belloso. Trae el ejercicio
+  2024 reexpresado en moneda de cierre 30/6/2025 como comparativo. URL oficial:
+  `rosariocentral.com/wp-content/uploads/2025/10/Balance.pdf` — nombre genérico, sin año ni club,
+  imposible de adivinar. Descargado en
+  `Clubes/Argentina/Rosario Central/estados-contables-2024-2025.pdf`.
+- Pendiente: ejercicio 2023-24, y todo lo anterior a 2022-23. Lo probado y fallido esta sesión:
+  (1) el patrón `uploads/2024/<mes>/{Balance,balance,EECC,Memoria}.pdf` con 4 meses candidatos —
+  todos 404; (2) las secciones `/institucional/` y `/prensa/` del sitio vivo no contienen NINGÚN
+  link a `.pdf`; (3) el índice de Wayback Machine del dominio no devuelve PDFs con nombre de
+  balance/memoria. La "Sede Virtual" (rosariocentral.miclub.info) sigue sin probarse y es el ángulo
+  que queda, posiblemente con login de socio.
+- Último chequeo: 2026-09-22.
 - Contacto: sección Socios (rosariocentral.com/socios/) o Prensa (rosariocentral.com/prensa/);
   WhatsApp institucional +54 9 341 202-1889.
 - Color de marca: `#0A3D72` — tabla por liga de footylogos (Liga Profesional Argentina), 2° color,
