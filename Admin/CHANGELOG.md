@@ -2898,7 +2898,4 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   Federação Paulista tiene índice JSON 2010-2025. Cae la creencia "SAF publica, asociación no".
 
 ### Pendiente
-- `fuentes/README.md` sigue desfasado (P1): el generador ABORTA a propósito porque no puede
-  clasificar algunas líneas nuevas. Hay que resolverlas a mano en `OVERRIDES` del script.
-- Argentina quedó a medias: su agente se cortó por presupuesto de tokens, con las notas por club ya
-  escritas en disco.
+- Pasó a `Admin/TODO.md`, puntos 48, 49 y 50 (la lista de pendientes vive solo ahí).

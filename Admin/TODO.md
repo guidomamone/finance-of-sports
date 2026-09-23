@@ -88,6 +88,40 @@ perdieron sino que se descartaron:
     el selector.
 
 
+48. DEJAR `node tools/audit.js` EN VERDE DESPUÉS DEL MERGE DE LA VERSIÓN 202. Quedó en 0 P0, **1 P1
+    y 10 P2**, y los P2 son nuevos: aparecieron al juntarse el sourcing de 3 países con el
+    onboarding de 20 clubes, o sea que nadie los miró todavía.
+    - El P1 es `fuentes-indice-desfasado`: `fuentes/README.md` no refleja los números nuevos
+      (Brasil pasa a 43/43, Colombia a 20/18, México a 18/2). **El generador ABORTA a propósito**
+      porque no puede clasificar solo algunas líneas nuevas — no es un bug, es el diseño. Se
+      resuelve leyendo esas líneas y escribiendo la decisión en `OVERRIDES`, adentro de
+      `tools/generate-fuentes-index.js`, con el motivo. Sesión corta.
+    - Los 10 P2 hay que leerlos uno por uno antes de silenciar ninguno.
+
+49. RETOMAR EL SOURCING DE ARGENTINA, que quedó a mitad. Su agente se cortó por presupuesto de
+    tokens el 2026-09-22, no por haber terminado. Lo que alcanzó a escribir está commiteado, así
+    que se retoma leyendo `fuentes/_indice/Argentina.md` y viendo qué líneas tienen
+    `Último chequeo: 2026-09-22` (esas ya se hicieron) y cuáles no. Quedaban ~51 clubes trackeados
+    sin documento, priorizando Primera División y Primera Nacional, más los ejercicios más nuevos
+    de Rosario Central, Independiente, Instituto, River y Boca.
+
+50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR (de la Versión 202). Todos tienen el camino
+    escrito, solo falta ejecutarlos:
+    - **Ejercicios disponibles en SIIS que quedaron sin bajar por throttling** (Colombia): Boyacá
+      Chicó 2021-2025 es el de mayor margen, más Once Caldas 2021-2024 y Bucaramanga 2021. El
+      límite real es 1-2 procesos en paralelo, más que eso devuelve HTML sin PDF en silencio.
+    - **León y Pachuca (México) dieron HTTP 403** a `curl`, que es bloqueo de WAF y NO dead-end
+      confirmado. Vale reintentarlos desde el Browser pane.
+    - **Pumas y Tigres (México)**: solicitud por la Plataforma Nacional de Transparencia a la UNAM
+      y a la UANL por lo que le transfieren al club. El INAI ya obligó a la UNAM una vez
+      (resolución de enero 2022), así que el precedente existe.
+    - **León se está vendiendo** (80% forzado por la regla anti-multipropiedad): si el comprador es
+      un vehículo cotizante, se abre la ventana Ollamani. Rechequear cuando cierre la operación.
+    - **`DIABLOS` en la BMV**: Diablos Rojos del México (béisbol) cotiza desde diciembre 2024 y
+      reporta trimestralmente. Es el segundo caso mexicano del patrón Ollamani y el canal ya está
+      probado, pero **abre liga y deporte nuevos**: es decisión de Guido, no se hace solo.
+
+
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
     conviene revisar cuando haya más datos o más uso.
