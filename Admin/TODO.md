@@ -88,12 +88,39 @@ perdieron sino que se descartaron:
     el selector.
 
 
-49. RETOMAR EL SOURCING DE ARGENTINA, que quedó a mitad. Su agente se cortó por presupuesto de
-    tokens el 2026-09-22, no por haber terminado. Lo que alcanzó a escribir está commiteado, así
-    que se retoma leyendo `fuentes/_indice/Argentina.md` y viendo qué líneas tienen
-    `Último chequeo: 2026-09-22` (esas ya se hicieron) y cuáles no. Quedaban ~51 clubes trackeados
-    sin documento, priorizando Primera División y Primera Nacional, más los ejercicios más nuevos
-    de Rosario Central, Independiente, Instituto, River y Boca.
+58. ONBOARDEAR LOS EJERCICIOS QUE EL BARRIDO DEL 2026-09-22 YA ENCONTRÓ Y DESCARGÓ, de clubes que
+    ya están cargados o que pasan de 0 a tener datos reales por primera vez (no es sourcing, es
+    transcripción + mapeo — ver `club-data-mapping` y `club-or-year-onboarding`). Todos los PDFs ya
+    están bajados, con el detalle completo en el `fuentes/Argentina/<Club>.md` de cada uno — no hace
+    falta volver a buscar nada:
+    - **Rosario Central, Ejercicio 2024-25** (cierre 30/6/2025, club YA cargado): 1 PDF de 41 págs,
+      **ESCANEO** — necesita el flujo de OCR (Tesseract, ver CLAUDE.md "Cada PDF nuevo").
+    - **Independiente, Ejercicio N°122 (2025-26, club YA cargado)**: 2 documentos — la Memoria (150
+      págs, texto nativo) y los Estados Contables (54 págs, **ESCANEO**). Este segundo trae además
+      el Ejercicio 121 (2024-25) como columna comparativa, así que esas cifras también quedan
+      disponibles aunque el PDF propio del 121 siga sin aparecer.
+    - **Talleres (Córdoba), club SIN datos hoy → 2 ejercicios completos**: Estados Contables 2024 y
+      2025 (ejercicio año calendario), 53-56 págs cada uno, **texto nativo, sin OCR**. El más fácil
+      de los 4: pasa el club de 0 a 2 ejercicios de una sola sesión.
+    - **Newell's Old Boys, club SIN datos hoy → 1 ejercicio**: Memoria y Balance 2018-19, 98 págs,
+      **texto nativo**. Único ejercicio disponible (la URL tenía un solo snapshot en Wayback, no
+      hay más años escondidos ahí).
+    - **Banfield, club SIN datos hoy → 1 ejercicio**: Memoria y Balance 116° Ejercicio (2019-20),
+      58 págs, **texto nativo**.
+    - **Gimnasia y Esgrima (La Plata), club SIN datos hoy → HASTA 3 ejercicios + 3 presupuestos**:
+      136° (2022-23), 137° (2023-24) y 138° (2024-25), 28-31 págs cada balance, **texto nativo**,
+      más sus 3 presupuestos con desglose mensual. El de mayor volumen de los 4, pero también el de
+      mejor calidad de fuente (nada de OCR en ningún documento).
+    Empezar por Talleres o Gimnasia y Esgrima LP (texto nativo, 0 fricción de OCR) antes que Rosario
+    Central/Independiente (que sí necesitan el paso de Tesseract).
+
+59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
+    CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
+    to-do 51, proceso de email a clubes). Casos concretos que salieron del barrido del 2026-09-22:
+    Atlanta tenía 4 balances reales (2013-2016) en Drive, hoy con el compartir revocado — pedirle al
+    club que los vuelva a compartir es gratis y rápido. Banfield tiene el 105° Ejercicio (2024-25)
+    aprobado pero solo publicado en video de YouTube, nunca como PDF. Ver el detalle completo en
+    `fuentes/Argentina/Atlanta.md` y `fuentes/Argentina/Banfield.md`.
 
 50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR (de la Versión 202). Todos tienen el camino
     escrito, solo falta ejecutarlos:

@@ -2951,3 +2951,26 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   commits atrás (Versión 166, 2026-09-20 — Guido no pushea seguido), y ninguno de los 610 archivos
   de club menciona a Guido por nombre hoy. Reescrito para que diga lo mismo que `netlify.toml` y el
   resto de `ESTADO.md`.
+
+## Versión 206 — El barrido de Argentina (to-do 49) ya estaba terminado, y nadie se había dado cuenta
+
+### Investigado
+- El to-do 49 decía "quedaban ~51 clubes sin documento" citando la fecha del índice
+  (`fuentes/_indice/Argentina.md`), que el agente del 2026-09-22 nunca llegó a sincronizar antes de
+  cortarse por presupuesto. Leyendo cada `fuentes/Argentina/<Club>.md` a mano (no solo la fecha del
+  índice) apareció la imagen real: **44 de 46 clubes candidatos ya estaban barridos con hallazgos
+  reales documentados**, solo que con formatos de sección distintos (`## Chequeo`, `## Lo nuevo`, o
+  simplemente bullets con "ENCONTRADO 2026-09-22") que un primer chequeo automático con un patrón
+  único no detectaba. Solo 2 clubes habían quedado genuinamente sin tocar (Chaco For Ever y
+  Gimnasia y Tiro (Salta), sin dominio anotado en su momento) — se barrieron hoy: 0 documentos en
+  los dos, dominios sin sección institucional visible y 0 PDFs en Wayback. **El barrido de
+  Argentina queda cerrado**, el to-do 49 sale de la lista.
+- `fuentes/_indice/Argentina.md` se sincronizó con la fecha real de cada chequeo (estaba mostrando
+  `2026-09-12` en 44 líneas que ya tenían trabajo del `2026-09-22`).
+- Efecto colateral bueno: la relectura destapó **6 ejercicios reales ya descargados y nunca
+  cargados al sitio** — 3 de un club (Gimnasia y Esgrima LP) que hoy no tiene ningún dato, más 1
+  cada uno de Talleres y Newell's (también sin datos hoy) y de Banfield, más 2 ejercicios nuevos de
+  clubes ya cargados (Rosario Central 2024-25, Independiente N°122 2025-26). Pasa a `Admin/TODO.md`
+  como to-do 58 (onboarding, no sourcing) y to-do 59 (2 reclamos directos a clubes que valen la
+  pena: Atlanta con 4 balances en Drive que dejaron de compartir, Banfield con un ejercicio
+  aprobado solo en video de YouTube).
