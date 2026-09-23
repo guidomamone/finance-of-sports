@@ -6050,3 +6050,64 @@ pasado por encima.
 de septiembre que dice `ESTADO.md` era verdad el día que se escribió; corregirle la ruta la
 convierte en una mentira sobre el pasado. Los documentos vivos se actualizan, los históricos se
 anotan: cada archivo archivado lleva un banner que dice de qué Versión son sus rutas.
+
+# Versión 201 — 20 clubes en una sesión, con 5 agentes en paralelo y la libra esterlina
+
+Guido pidió onboardear 20 equipos, todos sus años, un viernes con dos sesiones corriendo a la vez:
+esta en `main`, otra sourceando en el worktree. El pedido incluía elegir los clubes. La decisión que
+más importó no fue la de mapeo de datos, fue la de arquitectura de la sesión: con 20 clubes en 4
+países, hacerlo secuencial (leer, categorizar, verificar, cargar, uno por uno) hubiera sido un día
+entero. La sesión se convirtió en 5 agentes en paralelo, uno por país, cada uno con una consigna
+explícita de qué archivos podía tocar y cuáles no — para que 5 sesiones escribiendo al mismo árbol
+en simultáneo no repitieran el problema que motivó el worktree de sourcing (dos escrituras al mismo
+archivo, la segunda gana en silencio). Cada agente de país delegó a su vez un sub-agente por club
+(sin que se lo pidieran), así que terminaron corriendo 18 sesiones de Claude a la vez sobre el mismo
+repo. Funcionó porque la consigna de "qué archivo podés tocar" se cumplió: cada club escribe SOLO su
+propio `data/<club>-data.js`, y los archivos compartidos (`data/clubs.js`, `data/currency-map.js`,
+`data/leagues.js`) quedaron reservados para la integración final, hecha a mano, secuencial, después
+de que los 20 reportaran.
+
+## Por qué 20 y no otro número
+
+Los primeros candidatos fueron clubes belgas y daneses con 15-35 años de balance cada uno, ya
+descargados y transcriptos por el sourcing de semanas anteriores. Se descartaron: 20 clubes con un
+promedio de 20 años cada uno son ~400 ejercicios, cada uno con 10-15 líneas de rubro para
+categorizar a mano contra el documento — una escala que sacrifica la precisión que el proyecto pide
+por velocidad. Se eligieron en cambio clubes con 1-3 años ya transcriptos, el mismo patrón que 34 de
+los 41 clubes ya cargados. El primer plan sumaba solo 18 (un error de suma propio, detectado recién
+al correr `generate-club-index.js` y ver "59 clubes" en vez de "61"): los últimos 2 (Elche CF y CA
+Osasuna) salieron de revisar qué más había ya descargado en `Clubes/España/` sin cargar.
+
+## El tipo de cambio que el BCE no publica
+
+Inglaterra no solo era país nuevo, era moneda nueva: la libra esterlina no tenía entrada en
+`CURRENCY_META` ni en `FX_CLOSE`. El BCE publica el cierre diario de 30 monedas contra el EUR, GBP
+incluida, pero nunca contra el USD directo — así que la única forma de conseguir "GBP por 1 USD" sin
+salirse de la fuente que el proyecto ya usa (Cierre BCE, no un agregador de terceros) es cruzar dos
+cotizaciones del MISMO boletín: EUR/USD y GBP/EUR. `1,0852 ÷ 0,85365 = 1,2712` USD por libra al
+31/5/2024, por ejemplo. Dos de las 8 fechas nuevas cayeron en fin de semana (31/5/2025 fue sábado, 30
+de junio de 2024 fue domingo) — el BCE no publica esos días, así que se usó el boletín del viernes
+anterior, mismo criterio que ya usaba `BRL@2025-12-31` (boletín del 30/12 para un 31 sin cotización).
+Los PDF del BCE en sí resultaron un obstáculo aparte: `WebFetch` no podía decodificar el stream
+comprimido del PDF, pero el archivo SÍ quedaba guardado en disco — leerlo con el Read tool (que sí
+decodifica PDFs) resolvió lo que la herramienta de fetch no podía.
+
+## Lo que encontró la auditoría, y por qué importa que la encontrara
+
+`node tools/audit.js` encontró 3 P0 reales antes del push, ninguno detectado a ojo en las sesiones de
+carga: 2 categorías cruzadas entre taxonomías (un gasto de Santa Fe con una categoría de ingresos, 2
+ingresos de Werder Bremen con una categoría de gastos) que rompían el tie-out de Santa Fe por
+exactamente el monto de la línea mal puesta, y un tercer caso más sutil en Werder Bremen: una
+categoría de gasto VÁLIDA (`exceptional_items`) que el motor excluye a propósito de `expenses` (la
+suma aparte, directo al resultado operativo) — la categoría estaba bien elegida y el número
+igualmente rompía el tie-out, porque `officialTotalExpenses` se había puesto igual al total impreso
+sin saber que esa categoría vive fuera de la fórmula que el sitio compara. Se resolvió recategorizando
+a `other_expenses` en vez de ajustar el meta field, para no dejar una trampa idéntica esperando al
+próximo club alemán que use esa categoría.
+
+También encontró 2 catch-alls que no eran del documento, eran de la carga: Junior de Barranquilla
+tenía 36,7 M COP de "Utilidad en venta de derechos deportivos" enterrados en un catch-all de "Otros
+ingresos" en vez de en `player_sales` — visible en el propio desglose de la nota, solo que nadie lo
+había separado. Ninguno de los 20 reportes de los sub-agentes había marcado esto como duda: los dos
+casos pasaron el tie-out (la plata estaba bien sumada) pero categorizada mal, que es exactamente el
+tipo de error que un total correcto no delata y que este chequeo existe para cazar.

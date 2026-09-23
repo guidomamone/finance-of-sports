@@ -23,17 +23,26 @@
     está haciendo) una transición de ejercicio económico de julio-junio a año calendario, con este
     informe cubriendo el período intermedio de transición (jul-dic 2022) — sin confirmar, ver duda
     abajo.
-- **Duda genuina, candidata a `dudas-por-club.md`**: la página de transparencia lista informes de
-  auditoría "a 30 de junio de 2022/2023/2024" (fiscal year jul-jun, como las S.A.D.) PERO un artículo
-  de prensa de la propia web del club (`osasuna.es/en/noticia151`) dice "Osasuna cierra sus cuentas a
-  31 de diciembre de 2025" (año calendario). No se pudo determinar con confianza en esta sesión si el
-  club cambió su ejercicio económico de jul-jun a ene-dic en algún punto entre 2022 y 2025, y si es
-  así, qué período exacto cubre cada PDF de esta lista (¿se salteó un semestre, se solapan, o el
-  "intermedios2022" es justamente el stub de transición?). Antes de mapear cualquier ejercicio de
-  Osasuna, confirmar esto — posiblemente valga la pena escribirle directo al club.
+- **Duda PARCIALMENTE resuelta (sesión 2026-09-22)**: se confirmó leyendo el texto interno de
+  `auditoria2022.pdf` y `auditoria2024.pdf` (ambos SÍ tienen capa de texto real, a diferencia de lo que
+  decía esta nota — "escaneado sin capa de texto" era la premisa vencida) que los DOS cubren ejercicio
+  jul-jun: "del 1 de julio de 2021 al 30 de junio de 2022" y "del 1 de julio de 2023 al 30 de junio de
+  2024" respectivamente, literal en la carátula. Lo que SIGUE sin confirmar es si el club cambió a año
+  calendario DESPUÉS de 2024 (el artículo `osasuna.es/en/noticia151` sobre el cierre a 31/12/2025 puede
+  ser real para un ejercicio de TRANSICIÓN posterior a los 2 cargados acá, no una contradicción) — no
+  bloquea la carga de 2022/2024, pero si se carga un ejercicio 2025+ de Osasuna en el futuro, confirmar
+  el período exacto antes de asumir jul-jun.
 - Pendiente: la sección "MEMORIAS ANUALES" del sitio (títulos vistos en el `get_page_text` pero sin
   link de descarga confirmado en esta sesión — puede necesitar expandir un acordeón con clicks reales
   en vez de `find`) y la sección "C) TRANSPARENCIA ECONÓMICO-FINANCIERA" (no explorada a fondo, puede
   tener más PDFs bajo links genéricos "Descargar" no identificados por texto en esta sesión).
 - Contacto: `osasuna.es/en/transparency`.
-- Último chequeo: 2026-09-16.
+- **CARGADO al sitio (sesión 2026-09-22, Ejercicios 2021/2022 y 2023/2024)**: ver
+  `data/osasuna-es-data.js`. El ejercicio 2021/2022 tuvo varias cifras de la Nota 16.1 con coma en vez
+  de punto de miles por un error de OCR/extracción (ej. "541,994" en vez de "541.994") — corregidas
+  verificando que la fila cerrara exacta contra el total impreso de esa nota. El ejercicio 2023/2024
+  desglosa ingresos/gastos con sub-letras directo en la Cuenta de Pérdidas y Ganancias, mucho más fino
+  que 2021/2022. Los 2 años llevan `es-laliga` (Primera División sin descenso). Verificado con `node`:
+  cierra exacto (2023/24) y con ruido de redondeo de 1-2 EUR sobre decenas de millones (2021/22).
+  Color de marca: `#D91A21` (rojo, "Los Rojillos") — teamcolorcodes.com, verificado 2026-09-22.
+- Último chequeo: 2026-09-22.

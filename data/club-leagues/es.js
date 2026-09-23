@@ -30,6 +30,28 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   sevillafc: { 2025: 'es-laliga' },
   valenciacf: { 2025: 'es-laliga' },
   villarrealcf: { 2024: 'es-laliga' },         // temporada 2023/24
+
+  // Verificado el 22/9/2026 contra "2023-24 La Liga", "2024-25 La Liga", "2019-20 Segunda División"
+  // y "2023-24 RCD Espanyol season" (Wikipedia/UEFA). Getafe jugó LaLiga los 2 ejercicios cargados,
+  // sin ambigüedad. Girona 2019/20 (cierre 30/6/2020) jugó Segunda División (descendido al cierre de
+  // 2018/19) -> 'es-segunda'. Espanyol 2023/24 (cierre 30/6/2024) también jugó Segunda División
+  // (descendido al cierre de 2022/23, ascendido recién en el playoff de junio de 2024, ya sobre el
+  // final del propio ejercicio 2023/24) -> 'es-segunda'.
+  'getafe-es': { 2024: 'es-laliga', 2025: 'es-laliga' },
+  // Versión de esta sesión: 'es-segunda' se agregó al catálogo (data/leagues.js), así que estos 3
+  // ejercicios en Segunda YA NO quedan afuera de la tabla, tienen su fila propia.
+  'girona-es': { 2020: 'es-segunda', 2025: 'es-laliga' },
+  'espanyol-es': { 2024: 'es-segunda', 2025: 'es-laliga' },
+
+  // Verificado el 22/9/2026 contra "2021-22 CA Osasuna season"/"2023-24 CA Osasuna season" y el
+  // propio documento de Osasuna (Nota 6, "instalaciones de Tajonar... 1ª división" al 30/6/2022):
+  // Osasuna jugó Primera División los 2 ejercicios cargados, sin descenso.
+  'osasuna-es': { 2022: 'es-laliga', 2024: 'es-laliga' },
+  // Elche descendió al cierre de 2022/23 y jugó Segunda División en los 2 ejercicios cargados
+  // (2023/24 y 2024/25) — el propio presupuesto 2025/26 del club (cifra de negocios proyectada de
+  // 58,3 M, el triple de 2024/25) confirma el ascenso recién para la temporada SIGUIENTE, fuera del
+  // rango cargado.
+  'elche-es': { 2024: 'es-segunda', 2025: 'es-segunda' },
 });
 
 // ---------------------------------------------------------------------------

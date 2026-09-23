@@ -11,23 +11,23 @@ sociedad limitada obligada a depositar cuentas auditadas) y, para los clubes de 
 que es el archivo a leer antes de tocar cualquier club británico.
 
 - [AFC Bournemouth](../Inglaterra/AFC Bournemouth.md) — 2 ejercicios reales (2023/24-2024/25), 14 disponibles — Último chequeo: 2026-09-16
-- [Arsenal](../Inglaterra/Arsenal.md) — 2 ejercicios reales descargados (2023/24-2024/25), 18 disponibles — Último chequeo: 2026-09-13
+- [Arsenal](../Inglaterra/Arsenal.md) — CARGADO (Ejercicios 2024, 2025), 18 disponibles en total — Último chequeo: 2026-09-22
 - [Aston Villa](../Inglaterra/Aston Villa.md) — 1 ejercicio real (2024/25), 8 disponibles — Último chequeo: 2026-09-13
 - [Brentford](../Inglaterra/Brentford.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles — Último chequeo: 2026-09-16
 - [Brighton & Hove Albion](../Inglaterra/Brighton & Hove Albion.md) — 2 ejercicios reales (2023/24-2024/25), 18 disponibles — Último chequeo: 2026-09-16
 - [Burnley](../Inglaterra/Burnley.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles; cuentas de la holding (Burnley FC Holdings Limited), no de la sociedad operativa — Último chequeo: 2026-09-16
 - [Chelsea](../Inglaterra/Chelsea.md) — 1 ejercicio real (2024/25), 12 disponibles — Último chequeo: 2026-09-13
 - [Crystal Palace](../Inglaterra/Crystal Palace.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; cuentas de la holding (CPFC 2010 Limited) — Último chequeo: 2026-09-16
-- [Everton](../Inglaterra/Everton.md) — 2 ejercicios reales (2023/24-2024/25), 6 disponibles — Último chequeo: 2026-09-13
+- [Everton](../Inglaterra/Everton.md) — CARGADO (Ejercicios 2024, 2025), 6 disponibles en total — Último chequeo: 2026-09-22
 - [Fulham](../Inglaterra/Fulham.md) — 2 ejercicios reales (2023/24-2024/25), 20 disponibles — Último chequeo: 2026-09-16
 - [Leeds United](../Inglaterra/Leeds United.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles — Último chequeo: 2026-09-16
-- [Liverpool](../Inglaterra/Liverpool.md) — 2 ejercicios reales (2023/24-2024/25), 16 disponibles — Último chequeo: 2026-09-13
-- [Manchester City](../Inglaterra/Manchester City.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; cuentas individuales, no del grupo — Último chequeo: 2026-09-13
+- [Liverpool](../Inglaterra/Liverpool.md) — CARGADO (Ejercicios 2024, 2025), 16 disponibles en total — Último chequeo: 2026-09-22
+- [Manchester City](../Inglaterra/Manchester City.md) — CARGADO (Ejercicios 2024, 2025), 15 disponibles en total; cuentas individuales, no del grupo — Último chequeo: 2026-09-22
 - [Manchester United](../Inglaterra/Manchester United.md) — 20-F 2024/25 real, **sin escanear (HTML)**, ingresos £666,5 M ya verificados — Último chequeo: 2026-09-13
 - [Newcastle United](../Inglaterra/Newcastle United.md) — 1 ejercicio real (2024/25), 14 disponibles — Último chequeo: 2026-09-13
 - [Nottingham Forest](../Inglaterra/Nottingham Forest.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles — Último chequeo: 2026-09-16
 - [Sunderland](../Inglaterra/Sunderland.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles — Último chequeo: 2026-09-16
-- [Tottenham Hotspur](../Inglaterra/Tottenham Hotspur.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles — Último chequeo: 2026-09-13
+- [Tottenham Hotspur](../Inglaterra/Tottenham Hotspur.md) — CARGADO (Ejercicios 2024, 2025), 12 disponibles en total — Último chequeo: 2026-09-22
 - [West Ham United](../Inglaterra/West Ham United.md) — 1 ejercicio real (2024/25), 9 disponibles — Último chequeo: 2026-09-13
 - [Wolverhampton Wanderers](../Inglaterra/Wolverhampton Wanderers.md) — 2 ejercicios reales (2023/24-2024/25), 24 disponibles — Último chequeo: 2026-09-16
 - [Bath Rugby](../Inglaterra/Bath Rugby.md) — **rugby union (Premiership)** — 2 ejercicios reales, ingresos £23,3 M verificados, 16 disponibles — Último chequeo: 2026-09-13

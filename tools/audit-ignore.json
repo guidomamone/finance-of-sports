@@ -99,5 +99,15 @@
     "code": "ruta-muerta",
     "match": "`PROMPT-selector-jerarquico.md`: no existe",
     "motivo": "VERIFICADO 2026-09-22 (Versión 198): archivo borrado, citado como HISTORIA en la cabecera de data/club-leagues.js para explicar de dónde venía la idea de un campo `league` en clubs{} y por qué se descartó. Mismo criterio que `PROMPT-generador-indice-fuentes.md`."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "santafe-co 2025 ingreso \"Ajuste de reconciliación contra el total impreso de la Nota 21",
+    "motivo": "VERIFICADO 2026-09-22 (onboarding de Independiente Santa Fe): la Nota 21 (Ingresos) del propio documento suma $2.294.550.661 MÁS que el total que el mismo documento imprime como oficial, aunque cada línea individual reconcilia exacta contra su propia variación 2024→2025 — es un error de cuadre de LA FUENTE, no de la transcripción ni un signo dado vuelta. Se cargó el total impreso (más fiel a lo declarado por el club) con esta línea de ajuste negativa explícita, en vez de esconder la diferencia prorrateada entre las demás líneas."
+  },
+  {
+    "code": "salto-interanual",
+    "match": "girona-es: revenue salta de",
+    "motivo": "VERIFICADO 2026-09-22 (onboarding de Girona FC): es un salto REAL, no un error de unidad. El ejercicio 2019/2020 (26,9 M EUR) es de Segunda División, recién descendido; el ejercicio 2024/2025 (143,9 M EUR) es de LaLiga con clasificación a la UEFA Champions League por el 3er puesto de 2023/24 — el club escaló 2 categorías y jugó competición europea entre un ejercicio y otro. Los dos años tienen su propio tie-out exacto contra el total impreso de su propio documento."
   }
 ]

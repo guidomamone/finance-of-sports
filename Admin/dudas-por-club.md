@@ -316,18 +316,20 @@ distintas, y conviene hacer las dos porque cualquiera de las dos que salga bien 
   物販 no está en ninguna edición de ese documento, así que es una estimación del analista o viene de
   una fuente que la nota no cita. No cargarlo sin identificar de dónde sale.
 
-## CA Osasuna (sourcing de LaLiga, sesión 2026-09-16, no bloqueó la descarga pero queda sin confirmar)
+## CA Osasuna
 
-- **¿Qué período cubre cada PDF descargado?**: los informes de auditoría encontrados están fechados
-  "a 30 de junio" de 2022/2023/2024 (año fiscal jul-jun), pero una noticia del propio sitio de
-  Osasuna dice que el club "cierra sus cuentas a 31 de diciembre de 2025" (año calendario). No se
-  pudo confirmar si el club cambió de ejercicio económico en el medio, y si cambió, qué período
-  exacto cubre cada uno de los 3 PDFs bajados (`Clubes/España/CA Osasuna/`) — a quién preguntarle:
-  prensa deportiva navarra, o directo al club vía su área de socios.
-- **`auditoria2022.pdf` — ¿es el informe de auditoría completo o un fragmento de la Memoria
-  Oficial?**: no se pudo verificar porque el PDF está escaneado sin capa de texto. Antes de mapear
-  cualquier cifra de este archivo, OCRearlo (ver `CLAUDE.md`, sección de OCR con Tesseract) y
-  confirmar que trae balance + cuenta de resultados, no solo texto narrativo.
+*(RESUELTO en gran parte, sesión 2026-09-22, al cargar los ejercicios 2021/2022 y 2023/2024: los dos
+PDFs SÍ tienen capa de texto real (la premisa "escaneado sin capa de texto" del sourcing del
+2026-09-16 estaba vencida) y los dos son el informe de auditoría + cuentas anuales completo (balance,
+cuenta de pérdidas y ganancias, memoria), no un fragmento — se confirmó leyendo el texto interno de
+cada uno, con período jul-jun literal en la carátula: "1 de julio de 2021 al 30 de junio de 2022" y
+"1 de julio de 2023 al 30 de junio de 2024". Ver `data/osasuna-es-data.js`.
+
+Lo que SIGUE abierto: si el club cambió a ejercicio CALENDARIO después de 2024 — la noticia de
+`osasuna.es/en/noticia151` sobre un cierre a 31/12/2025 puede ser real para un ejercicio de
+TRANSICIÓN posterior a los 2 ya cargados (no contradice lo confirmado acá). Si se carga un ejercicio
+2025 o posterior de Osasuna, confirmar el período exacto antes de asumir jul-jun — a quién
+preguntarle: prensa deportiva navarra, o directo al club vía su área de socios.)*
 
 ## Borussia Mönchengladbach
 
@@ -677,3 +679,77 @@ un hincha o a un periodista, y meter ahí un alquiler que en realidad es de un l
 sería inventar. La pregunta concreta para cada club es la misma: *"la línea X de su Estado de
 Recursos y Gastos, ¿corresponde al estadio o a otras propiedades del club? Si es mixta, ¿cuánto es
 cada parte?"*.
+
+## Onboarding de 20 clubes nuevos (Colombia, España, Alemania, Inglaterra — sesión 2026-09-22)
+
+Dudas que quedaron de cargar los 20 clubes de esta sesión (Colombia: América de Cali, Atlético
+Nacional, Deportivo Cali, Independiente Santa Fe, Junior de Barranquilla; España: Getafe, Girona,
+Espanyol, Elche, Osasuna; Alemania: Köln, Eintracht Frankfurt, Werder Bremen, Augsburg, Stuttgart;
+Inglaterra: Arsenal, Liverpool, Manchester City, Everton, Tottenham Hotspur). Los tie-outs de los 20
+cierran (exactos o con ruido de redondeo de pocas unidades sobre millones, documentado en cada
+archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que algo no cierre.
+
+- **América de Cali (`americadecali-co`)**: "Derechos deportivos" y "Amortizaciones" aparecen como 2
+  conceptos separados dentro de Costos deportivos — ¿son 2 hechos económicos distintos o el mismo
+  contado 2 veces? Se cargaron ambos como `player_amortisation` por prudencia. Además, "Gasto de
+  ventas" (Nota 22) tiene un residuo de $346 M sin desglosar línea por línea.
+- **Deportivo Cali (`depcali-co`)**: `tax` es un residuo (pretax propio menos PAT confirmado por
+  SIIS), no una cifra impresa directamente — ¿por qué el documento no imprime el desglose completo
+  corriente/diferido como una cifra final única, a diferencia de los demás clubes colombianos de
+  esta tanda?
+- **Independiente Santa Fe (`santafe-co`)**: la Nota 21 (Ingresos) suma $2.294.550.661 MÁS que el
+  total impreso por el propio documento, aunque cada línea individual reconcilia contra su propia
+  variación 2024→2025 — es un error de cuadre de la FUENTE (se cargó el total impreso, con una línea
+  de ajuste explícita visible). Además, el nombre del Representante Legal salió parcialmente
+  ilegible en el OCR de la certificación ("LUIS ?DUARDO MENDEZ B.") — usar `gestionId:'actual'`
+  hasta confirmar.
+- **Getafe CF (`getafe-es`)**: "Ingresos LNFP" (330K€ 2024, 361K€ 2025) — ¿es distribución de TV,
+  solidaridad, u otro concepto de la liga? Se cargó como `other_income` por descarte.
+- **Girona FC (`girona-es`)**: "Ingresos accesorios y otros de gestión corriente" es una línea
+  enorme sin desglose (43% del revenue en 2019/20, 22% en 2024/25) — ¿derechos de TV agrupados?
+  ¿ingresos comerciales del City Football Group? Categorizado como `other_income` por descarte.
+- **1. FC Köln (`koln-de`)**: "Abschreibungen auf Finanzanlagen und auf Wertpapiere des
+  Umlaufvermögens" (TEUR 3.000, 2024/25 — deterioro de la participación en SK Gaming Beteiligungs
+  GmbH) se sumó a `netInterest` por su posición en el esquema §275 Abs. 2 HGB (dentro del bloque de
+  Finanzergebnis), no a `expenseLines` — ¿Guido prefiere otro tratamiento?
+- **FC Augsburg (`augsburg-de`)**: "Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung"
+  (reversión anual de un pasivo de primera consolidación, ítem puramente contable) se cargó como
+  `other_income` a falta de un campo dedicado — **¿el sitio debería tener un meta field propio para
+  ítems no-operativos de consolidación en los Konzernabschluss alemanes?** Probablemente se repita en
+  otros clubes con subsidiarias no 100%-propias.
+- **Eintracht Frankfurt (`eintrachtfrankfurt-de`)**: (a) "Frauen und Jugendfußball" combinado en una
+  sola línea (7,6 M EUR) sin poder separar `womens_football` de `youth_football` — cargado como
+  `other_income`; (b) "Transfer" (comisiones de agentes + fees, mezcla costos de compra Y venta de
+  jugadores, 26-39 M EUR) no tiene categoría propia distinta de `player_amortisation` (que es
+  específicamente para amortizar el plantel propio) — cargado como `other_expenses`. **¿Vale la pena
+  una categoría `player_transaction_costs` separada?**
+- **VfB Stuttgart (`stuttgart-de`)**: "Handel und Sonstiges" (el rubro de revenue que más creció:
+  57,5M→81,1M→109,5M EUR) mezcla merchandising con venta NETA de jugadores sin desglose exacto (el
+  Anhang confirma que el ingreso de transferencias está "unter den Umsatzerlöse ausgewiesen" pero sin
+  decir en qué renglón) — cargado como `lump_football_operations` en vez de `player_sales`,
+  consecuencia: "Venta de Jugadores" muestra $0 en Formato Simplificado pese a ventas reales (Endo,
+  Mavropanos, Sosa 2023). **Pedirle a VfB Stuttgart el desglose exacto.**
+- **Arsenal (`arsenal-gb`)**: (a) "Share of joint venture operating loss" (participación en el
+  resultado de Arsenal Broadband Limited, −£1,9-1,7M) no encaja en ningún campo de `fiscalYearMeta` —
+  se cargó como `revenueLine` `other_income` negativa a falta de un campo para "resultado de
+  sociedades vinculadas por método de participación"; (b) staff costs sin desglose por área (todo a
+  `wages_squad`), infla el ratio salarios/ingresos frente a clubes que sí separan.
+- **Everton (`everton-gb`)**: "Profit on disposal of investments" 2025 (£49,2M, venta de Everton FC
+  Women Ltd y Goodison Park Stadium Ltd A LA MATRIZ Roundhouse — deconsolidación intragrupo, no venta
+  de jugadores ni de activos operativos) se cargó en `assetSales` a falta de una categoría para
+  "ganancia por reestructuración corporativa/deconsolidación".
+- **Manchester City (`mancity-gb`)**: (a) employee costs sin desglose por área, todo a `wages_squad`;
+  (b) una celda ambigua de "profit/loss on disposal PP&E" 2023-24 se reconstruyó cruzando contra
+  2024-25 (tie-out cierra, pero vale revisar el PDF original si hay dudas); (c) `netInterest` tomado
+  del Statement of P&L primario y no de las Notas 9/10 (hay una discrepancia real entre ambos, por
+  FX/derivados, sin investigar la razón contable exacta); (d) `grossDebt:0` es un cero REAL — la
+  deuda del term loan de City Football Group no está en el perímetro de esta sociedad (Manchester
+  City Football Club Limited, cuentas individuales, no las consolidadas del grupo).
+- **Tottenham Hotspur (`tottenham-gb`)**: (a) "Commercial" (Nota 2) mezcla Sponsorship/Merchandising/
+  ingresos no futbolísticos del estadio (NFL, conciertos, F1 Drive, stadium tours) sin reconciliar
+  exacto contra el total de la nota — no se promovió nada a `stadium_other`, el rótulo real es
+  "Commercial"; (b) "Amortisation, impairments and other net football trading income and
+  expenditure" se cargó como una sola línea a `player_amortisation` porque el desglose de la Nota 4
+  no reconciliaba exacto contra el neto de la Nota 3 (diferencia de 2.526, sin explicación en el
+  documento transcripto); (c) `gestionId:'levy'` (Daniel Levy, Executive Chairman hasta el 4/9/2025)
+  en vez de Joe Lewis/ENIC (controlante último), que ningún documento nombra explícitamente.

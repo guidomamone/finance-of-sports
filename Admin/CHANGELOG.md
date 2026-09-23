@@ -2815,3 +2815,62 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 
 ### Resultado
 - `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3, en `main` y en el worktree. Sin ASSET_V nuevo.
+
+## Versión 201 — 20 clubes nuevos, 2 países nuevos (Alemania e Inglaterra) y la libra esterlina
+
+### Agregado
+- 20 clubes nuevos, todos sus ejercicios ya transcriptos en `Clubes/` (ninguno requirió sourcing
+  nuevo): 5 colombianos (América de Cali, Atlético Nacional, Deportivo Cali, Independiente Santa Fe,
+  Junior de Barranquilla, Ejercicio 2025 cada uno), 5 españoles (Getafe CF, Girona FC, RCD Espanyol,
+  Elche CF, CA Osasuna, 2 ejercicios cada uno salvo Girona), y 10 en 2 países completamente nuevos:
+  Alemania (1. FC Köln, Eintracht Frankfurt, Werder Bremen, FC Augsburg, VfB Stuttgart, Bundesliga) e
+  Inglaterra (Arsenal, Liverpool, Manchester City, Everton, Tottenham Hotspur, Premier League).
+  61 clubes, 121 ejercicios, 8 países (antes 41, 85, 6).
+- **Libra esterlina (GBP), moneda nueva**: `CURRENCY_META`/`FX_PLAUSIBLE_RANGE` en
+  `data/currency-map.js`, y 8 entradas nuevas en `FX_CLOSE` (5 GBP + 3 EUR de fechas que no
+  existían), todas cierres BCE — para GBP, cruzando GBP/EUR × EUR/USD del mismo boletín BCE, porque
+  el BCE no publica GBP/USD directo. 2 de las 8 caen en fin de semana (sin cotización BCE ese día
+  exacto): se usó el boletín del viernes anterior, mismo criterio que ya usaba `BRL@2025-12-31`.
+- 2 ligas de 2° escalón nuevas en el catálogo (`data/leagues.js`): `es-segunda` y `de-2bundesliga`
+  (mismo criterio que `ar-primeranacional`/`br-serieB`), para que Elche/Girona/Espanyol/Köln no
+  queden sin fila en `data/club-leagues.js` en los ejercicios que jugaron en Segunda.
+- `data/club-leagues/de.js` y `data/club-leagues/gb.js`, archivos nuevos (Alemania e Inglaterra).
+
+### Arreglado (encontrado por `node tools/audit.js` al cargar los 20 clubes, antes de pushear)
+- 2 líneas mal categorizadas con una categoría de la taxonomía equivocada (una de gasto de Santa Fe
+  usando `sponsorship_commercial`, que es solo de ingresos; 2 de ingreso de Werder Bremen usando
+  `exceptional_items`, que es solo de gastos) — esto rompía el tie-out de Santa Fe 2025 por $144 mil
+  COP exactos (P0) y no rompía números en Werder Bremen pero sí generaba ruido de auditoría.
+- 1 línea de gasto de Werder Bremen 2025 usando `exceptional_items` correctamente en la taxonomía
+  pero rompiendo el tie-out igual: el motor (`computeYearGeneric()`) excluye a propósito esa
+  categoría de `expenses`/`nonCash` (la suma aparte, directo a `operatingProfit`) — recategorizada a
+  `other_expenses` en vez de ajustar `officialTotalExpenses` para no crear una trampa igual la
+  próxima vez que alguien use esa categoría.
+- 2 items de Eintracht Frankfurt ("Spielbetrieb Lizenzfußball", 2024 y 2025) con una suma que no
+  cerraba contra su propia fila — el desglose de la Nota 19 es "im Wesentlichen" (sustancial, no
+  completo), así que se sacaron los items en vez de dejar un desglose parcial engañoso.
+- 2 catch-alls dominantes reales (no del documento, de la carga): Junior de Barranquilla tenía
+  "Utilidad en venta de derechos deportivos" (36,7 M COP) enterrada en un catch-all de "Otros
+  ingresos" en vez de en `player_sales`; Deportivo Cali tenía venta/préstamo de derechos deportivos,
+  escuela de fútbol y cuotas de sostenimiento en el mismo catch-all en vez de sus categorías reales.
+  Promovidas a líneas propias, mismo criterio que club-data-mapping sección 1.
+
+### Documentado
+- 15 dudas nuevas en `Admin/dudas-por-club.md`, una sección por país, para preguntas de
+  categorización que ningún documento ni búsqueda resuelve (ver el archivo). Ninguna bloquea el tie-
+  out, todas están explícitamente marcadas como decisión razonable a falta de mejor información.
+- La duda vieja de CA Osasuna ("¿qué período cubre cada PDF?") quedó RESUELTA para los 2 ejercicios
+  cargados (jul-jun confirmado leyendo el texto interno) — lo que sigue abierto es si el club cambió
+  a año calendario DESPUÉS de 2024, que no bloquea nada de lo cargado.
+
+### Resultado
+- ASSET_V 194 → 201 (los 15 `<script src>` estáticos actualizados a mano, más la constante).
+- `auditAll()` en el navegador: 61 clubes, 336 checks, 0 mismatches, 0 warnings de fx, 0 clubes que
+  no cargaron.
+- `node tools/audit.js`: 0 P0, 0 P1, 10 P2 (todos catch-all dominante, techo real de disclosure de
+  cada documento — 6 alemanes con "Sonstige betriebliche Aufwendungen" sin partir más, 2 españoles
+  con "Ingresos accesorios..." sin partir más, y los 2 colombianos de arriba que sí se pudieron
+  mejorar), 7 P3, 31 silenciados (2 nuevos: el ajuste de reconciliación de Santa Fe 2025 y el salto
+  interanual de Girona, los dos verificados contra la fuente).
+- Los 4 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (61 páginas de club),
+  `data/rankings/*.js` (12 ligas) y `fuentes/README.md`.

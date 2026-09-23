@@ -88,13 +88,15 @@ const COUNTRIES = {
   AR: { name:'Argentina', key:'country.AR', flag:'🇦🇷', region:'sudamerica' },
   BR: { name:'Brasil',    key:'country.BR', flag:'🇧🇷', region:'sudamerica' },
   CO: { name:'Colombia',  key:'country.CO', flag:'🇨🇴', region:'sudamerica' },
+  DE: { name:'Alemania',  key:'country.DE', flag:'🇩🇪', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
+  GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
 };
 
 // ---------------------------------------------------------------------------
-// LIGAS. Las 8 que aparecen en `CLUB_LEAGUE_BY_YEAR`, ni una más: una liga sin
+// LIGAS. Las que aparecen en `CLUB_LEAGUE_BY_YEAR`, ni una más: una liga sin
 // ningún ejercicio cargado no tiene nada que mostrar.
 //
 // `id`: `<iso2 minúscula>-<slug>`. Los dos escalones argentinos son
@@ -131,7 +133,13 @@ const LEAGUES = {
   'br-serieA':         { name:'Brasileirão Série A',   full:'Campeonato Brasileiro Série A',       country:'BR', sport:'futbol', tier:1 },
   'br-serieB':         { name:'Brasileirão Série B',   full:'Campeonato Brasileiro Série B',       country:'BR', sport:'futbol', tier:2 },
   'co-primeraA':       { name:'Primera A',             full:'Categoría Primera A',                 country:'CO', sport:'futbol', tier:1 },
+  'de-bundesliga':     { name:'Bundesliga',            full:'Fußball-Bundesliga',                  country:'DE', sport:'futbol', tier:1 },
+  // 2ª división (Versión de esta sesión, onboarding de Köln 2024/25 y Elche 2023/24-2024/25): mismo
+  // criterio que ar-primeranacional/br-serieB, el id nombra el escalón.
+  'de-2bundesliga':    { name:'2. Bundesliga',         full:'2. Fußball-Bundesliga',               country:'DE', sport:'futbol', tier:2 },
   'es-laliga':         { name:'LaLiga',                full:'Primera División de España',          country:'ES', sport:'futbol', tier:1 },
+  'es-segunda':        { name:'Segunda División',      full:'Segunda División de España',          country:'ES', sport:'futbol', tier:2 },
+  'gb-premierleague':  { name:'Premier League',        full:'Premier League',                      country:'GB', sport:'futbol', tier:1 },
   'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1 },
   'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1 },
 };

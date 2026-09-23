@@ -78,6 +78,9 @@ const CURRENCY_META = {
   // de yenes) directo, y esos montos ya leen en un orden de magnitud razonable como "millones"
   // (ej. un club grande factura ~¥8.000-15.000 M) — scale:1, mismo criterio que BRL/PEN/EUR/MXN.
   JPY: { scale: 1, unitSuffix: 'M' },          // Japón
+  // Inglaterra (5 clubes Premier League + Alemania Bundesliga, sesión 2026-09-22): la libra ronda
+  // ~1-1,5 USD, mismo orden de magnitud que EUR — scale:1.
+  GBP: { scale: 1, unitSuffix: 'M' },          // Inglaterra
 };
 
 // Fallback para cualquier código ISO sin entrada propia todavía: nunca
@@ -221,6 +224,24 @@ const FX_CLOSE = {
   // Placeholder, no cotización: la J.League no declara ninguna en su Club
   // Licensing Report y los 10 clubes de Japón salen de ese mismo documento.
   'JPY@2025-12-31': { fx: 150,     source: 'placeholder',  label: 'Referencia redonda de ¥150 por USD; el documento de la J.League no declara ninguna' },
+  // Sesión 2026-09-22 (onboarding de Getafe/Girona/Espanyol, Köln/Eintracht Frankfurt/Werder
+  // Bremen/Augsburg/Stuttgart, Arsenal/Liverpool/Man City/Everton/Tottenham). Ninguno de estos
+  // documentos declara su propio tipo de cambio a USD, así que las 8 entradas de abajo son cierres
+  // BCE, calculados como EUR/USD publicado por el BCE (para EUR, directo) o cruzando GBP/EUR ×
+  // EUR/USD del mismo boletín BCE (para GBP, que el BCE no publica contra USD directo).
+  'EUR@2020-06-30': { fx: 0.8930, source: 'market_close', label: 'Cierre BCE al 30/6/2020 (1 EUR = 1,1198 USD)' },
+  'EUR@2022-06-30': { fx: 0.9627, source: 'market_close', label: 'Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD)' },
+  'EUR@2023-06-30': { fx: 0.9203, source: 'market_close', label: 'Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD)' },
+  // El 31/12/2023 es domingo, sin cotización BCE: se usa el boletín del viernes anterior, mismo
+  // criterio que ya usa 'BRL@2025-12-31' de arriba (boletín del 30/12 para un 31 sin cotización).
+  'EUR@2023-12-31': { fx: 0.9050, source: 'market_close', label: 'Cierre BCE del viernes 29/12/2023 (el 31 es domingo, sin cotización) (1 EUR = 1,1050 USD)' },
+  'EUR@2024-12-31': { fx: 0.9626, source: 'market_close', label: 'Cierre BCE al 31/12/2024 (1 EUR = 1,0389 USD)' },
+  'GBP@2024-05-31': { fx: 0.7866, source: 'market_close', label: 'Cierre BCE al 31/5/2024, cruzando GBP/EUR (0,85365) × EUR/USD (1,0852) (1 GBP ≈ 1,2712 USD)' },
+  // El 31/5/2025 es sábado, sin cotización BCE: se usa el boletín del viernes anterior.
+  'GBP@2025-05-31': { fx: 0.7419, source: 'market_close', label: 'Cierre BCE del viernes 30/5/2025 (el 31 es sábado, sin cotización), cruzando GBP/EUR (0,84120) × EUR/USD (1,1339) (1 GBP ≈ 1,3480 USD)' },
+  // El 30/6/2024 es domingo, sin cotización BCE: se usa el boletín del viernes anterior.
+  'GBP@2024-06-30': { fx: 0.7906, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando GBP/EUR (0,84638) × EUR/USD (1,0705) (1 GBP ≈ 1,2648 USD)' },
+  'GBP@2025-06-30': { fx: 0.7299, source: 'market_close', label: 'Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD)' },
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
@@ -270,6 +291,8 @@ const FX_PLAUSIBLE_RANGE = {
                           // valor >1,15 acá, casi seguro está invertido (ver el bug de España arriba).
   MXN: [15, 25],         // México
   JPY: [100, 180],       // Japón
+  GBP: [0.6, 0.95],      // Inglaterra — GBP por 1 USD; la libra rondó 1,05-1,45 USD en las últimas
+                          // dos décadas, así que el inverso (lo que va acá) ronda 0,69-0,95.
 };
 
 // checkFxSanity(): recorre todo lo que haya en window.CLUB_GENERIC_DATA y avisa por consola

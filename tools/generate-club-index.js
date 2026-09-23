@@ -98,8 +98,9 @@ const REPORT_LABEL = {
 };
 
 const COUNTRY_NAME = {
-  AR: 'Argentina', BR: 'Brasil', CL: 'Chile', CO: 'Colombia', EC: 'Ecuador',
-  ES: 'España', JP: 'Japón', MX: 'México', PE: 'Perú', UY: 'Uruguay',
+  AR: 'Argentina', BR: 'Brasil', CL: 'Chile', CO: 'Colombia', DE: 'Alemania',
+  EC: 'Ecuador', ES: 'España', GB: 'Inglaterra', JP: 'Japón', MX: 'México',
+  PE: 'Perú', UY: 'Uruguay',
 };
 
 function fmtYears(years, clubEntry) {

@@ -140,6 +140,40 @@ const clubs = {
   realbetis: { id:'realbetis', name:'Real Betis Balompié, S.A.D.', displayName:'Real Betis', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00954C' },
   celtavigo: { id:'celtavigo', name:'Real Club Celta de Vigo, S.A.D.', displayName:'Celta de Vigo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6DACE5' },
   deportivoalaves: { id:'deportivoalaves', name:'Deportivo Alavés, S.A.D.', displayName:'Deportivo Alavés', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0232A0' },
+  // 5 clubes colombianos nuevos (sesión 2026-09-22, Ejercicio 2025 cada uno), mismo criterio de
+  // ejercicio/moneda que Envigado/Once Caldas de arriba.
+  'americadecali-co': { id:'americadecali-co', name:'América de Cali S.A. En Reorganización', displayName:'América de Cali', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B00000' },
+  'atlnacional-co': { id:'atlnacional-co', name:'Atlético Nacional S.A.', displayName:'Atlético Nacional', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#00953B' },
+  'depcali-co': { id:'depcali-co', name:'Club Profesional Deportivo Cali S.A.', displayName:'Deportivo Cali', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#2A975E' },
+  'santafe-co': { id:'santafe-co', name:'Independiente Santa Fe S.A. En Reorganización', displayName:'Independiente Santa Fe', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED1E26' },
+  'junior-co': { id:'junior-co', name:'Club Deportivo Popular Junior F.C. S.A.', displayName:'Junior de Barranquilla', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B21117' },
+  // 3 clubes españoles nuevos (sesión 2026-09-22, 2 ejercicios cada uno salvo Girona), mismo
+  // criterio de ejercicio/moneda que los 10 españoles de arriba.
+  'getafe-es': { id:'getafe-es', name:'Getafe Club de Fútbol, S.A.D.', displayName:'Getafe CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#005999' },
+  'girona-es': { id:'girona-es', name:'Girona Futbol Club, S.A.D.', displayName:'Girona FC', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#CF0C29' },
+  'espanyol-es': { id:'espanyol-es', name:'R.C.D. Espanyol de Barcelona, S.A.D.', displayName:'RCD Espanyol', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#007fc8' },
+  'elche-es': { id:'elche-es', name:'Elche Club de Fútbol, S.A.D.', displayName:'Elche CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#05642C' },
+  'osasuna-es': { id:'osasuna-es', name:'Club Atlético Osasuna', displayName:'CA Osasuna', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D91A21' },
+  // Alemania (sesión 2026-09-22): PAÍS NUEVO, 5 clubes de Bundesliga. `fiscalYearStart:'07-01'`
+  // (ejercicio 1/7-30/6, igual que España) para los 4 primeros; VfB Stuttgart es la excepción, su
+  // ejercicio es año CALENDARIO (confirmado en el propio documento, ver data/stuttgart-de-data.js).
+  'koln-de': { id:'koln-de', name:'1. FC Köln GmbH & Co. KGaA', displayName:'1. FC Köln', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
+  'eintrachtfrankfurt-de': { id:'eintrachtfrankfurt-de', name:'Eintracht Frankfurt Fußball Aktiengesellschaft', displayName:'Eintracht Frankfurt', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E1000F' },
+  'werderbremen-de': { id:'werderbremen-de', name:'SV Werder Bremen GmbH & Co. KGaA', displayName:'Werder Bremen', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1D9053' },
+  'augsburg-de': { id:'augsburg-de', name:'Fußball-Club Augsburg 1907 GmbH & Co. KGaA', displayName:'FC Augsburg', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#BA3733' },
+  // `brandColor:null` (no ausente): se miró (de.wikipedia.org, "Vereinsfarben: Weiß-Rot") y NO
+  // lleva color, el que lo identifica es el blanco.
+  'stuttgart-de': { id:'stuttgart-de', name:'VfB Stuttgart 1893 AG', displayName:'VfB Stuttgart', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // Inglaterra (sesión 2026-09-22): PAÍS NUEVO, LIBRA ESTERLINA (GBP) MONEDA NUEVA, 5 clubes de
+  // Premier League, 2 ejercicios cada uno (2023/24 y 2024/25). `fiscalYearStart` varía por club
+  // (a diferencia de España/Alemania, cada club inglés cierra en una fecha distinta, confirmada
+  // en su propio documento): Arsenal/Liverpool cierran 31 de mayo (`'06-01'`), Manchester
+  // City/Everton/Tottenham cierran 30 de junio (`'07-01'`).
+  'arsenal-gb': { id:'arsenal-gb', name:'Arsenal Holdings Limited', displayName:'Arsenal', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#EF0107' },
+  'liverpool-gb': { id:'liverpool-gb', name:'The Liverpool Football Club and Athletic Grounds Limited', displayName:'Liverpool', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#C8102E' },
+  'mancity-gb': { id:'mancity-gb', name:'Manchester City Football Club Limited', displayName:'Manchester City', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6CABDD' },
+  'everton-gb': { id:'everton-gb', name:'Everton Football Club Company, Limited', displayName:'Everton', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#003399' },
+  'tottenham-gb': { id:'tottenham-gb', name:'Tottenham Hotspur Limited', displayName:'Tottenham Hotspur', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000a3c' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

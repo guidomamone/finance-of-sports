@@ -19,7 +19,16 @@
   - Se descartó `https://statics-maker.llt-services.com/get/documents/2026/04/06/...pdf` (el link más
     reciente de la lista): resultó ser un documento de una sola página sobre comisiones a
     agentes/intermediarios (art. 77 bis Reglamento Licencia UEFA), no cuentas anuales.
-- Pendiente: confirmar por OCR el ejercicio exacto de los dos PDF bajados (nombrados por inferencia de
-  fecha de subida, no por contenido interno) y ejercicios anteriores a 2023-24.
+- Pendiente: ejercicios anteriores a 2023-24.
 - Contacto: `getafecf.com/ley-de-transparencia-sad`.
-- Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-22, clubId `getafe-es`).** Los 2 ejercicios confirmaron por contenido
+  interno ser 2023/2024 (cierre 30/6/2024) y 2024/2025 (cierre 30/6/2025), sin ambigüedad — la duda
+  de "confirmar por OCR el ejercicio exacto" quedó resuelta al transcribir. Los dos PDF vinieron con
+  la tabla de la cuenta de pérdidas y ganancias con etiquetas y números en bloques separados (gotcha
+  de extracción del escaneo, no del contenido); se reordenó verificando cada subtotal impreso, y los
+  2 ejercicios reconciliaron EXACTOS en todos los niveles (Revenue, Expenses, profitOnPlayerSales,
+  netInterest, tax, PAT) contra el Estado de Cambios en el Patrimonio Neto. FX: `EUR@2024-06-30` y
+  `EUR@2025-06-30` (cierre BCE, ya en `data/currency-map.js`, el documento no declara TC propio).
+  Color de marca: `#005999` — Wikipedia en español (azul, "los Azulones") + teamcolorcodes.com,
+  verificado 2026-09-22.
+- Último chequeo: 2026-09-22.

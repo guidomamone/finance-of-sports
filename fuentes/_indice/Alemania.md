@@ -20,11 +20,11 @@ completo.
 - [VfL Wolfsburg](<../Alemania/VfL Wolfsburg.md>) — dead-end estructural (exención §264 HGB, socio único Volkswagen AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [Hamburger SV](<../Alemania/Hamburger SV.md>) — 4 ejercicios reales de 2 entidades (Fußball AG & Co. KGaA + e.V. matriz, no confundir) — Último chequeo: 2026-09-17
 - [Borussia Mönchengladbach](<../Alemania/Borussia Mönchengladbach.md>) — 4 ejercicios reales (2021-2024), confirmado real filer con serie completa desde 2006, sin cargar aún — Último chequeo: 2026-09-17
-- [Werder Bremen](<../Alemania/Werder Bremen.md>) — 3 ejercicios reales (2022/23-2024/25), sin cargar aún — Último chequeo: 2026-09-17
-- [Eintracht Frankfurt](<../Alemania/Eintracht Frankfurt.md>) — 2 ejercicios reales (2023/24-2024/25), sin cargar aún — Último chequeo: 2026-09-17
-- [VfB Stuttgart](<../Alemania/VfB Stuttgart.md>) — 2 ejercicios reales (2023-2024), sin cargar aún — Último chequeo: 2026-09-17
-- [1. FC Köln](<../Alemania/1. FC Köln.md>) — 2 ejercicios reales (2023/24-2024/25), sin cargar aún — Último chequeo: 2026-09-17
-- [FC Augsburg](<../Alemania/FC Augsburg.md>) — 2 ejercicios reales (2023/24-2024/25), sin cargar aún — Último chequeo: 2026-09-17
+- [Werder Bremen](<../Alemania/Werder Bremen.md>) — CARGADO (Ejercicios 2023, 2024, 2025) — Último chequeo: 2026-09-22
+- [Eintracht Frankfurt](<../Alemania/Eintracht Frankfurt.md>) — CARGADO (Ejercicios 2024, 2025) — Último chequeo: 2026-09-22
+- [VfB Stuttgart](<../Alemania/VfB Stuttgart.md>) — CARGADO (Ejercicios 2023, 2024, año calendario) — Último chequeo: 2026-09-22
+- [1. FC Köln](<../Alemania/1. FC Köln.md>) — CARGADO (Ejercicios 2024, 2025) — Último chequeo: 2026-09-22
+- [FC Augsburg](<../Alemania/FC Augsburg.md>) — CARGADO (Ejercicios 2024, 2025) — Último chequeo: 2026-09-22
 - [1. FC Union Berlin](<../Alemania/1. FC Union Berlin.md>) — 100% e.V., balance real solo para socios, solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [SC Freiburg](<../Alemania/SC Freiburg.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [1. FSV Mainz 05](<../Alemania/1. FSV Mainz 05.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
