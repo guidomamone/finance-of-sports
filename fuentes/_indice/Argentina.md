@@ -57,7 +57,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Quilmes Atlético Club](../Argentina/Quilmes Atlético Club.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-12
 - [Racing Club](../Argentina/Racing.md) — cargado, 14 balances + 7 presupuestos completos
 - [Racing Club (Córdoba, Nueva Italia)](<../Argentina/Racing Club (Córdoba, Nueva Italia).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-12
-- [River Plate](../Argentina/River.md) — cargado, Ejercicio 2024 real (fuente no-primaria)
+- [River Plate](../Argentina/River.md) — cargado, Ejercicio 2024 real (fuente no-primaria); canal oficial IGJ identificado pero requiere trámite pago de Guido — Último chequeo: 2026-09-23
 - [Rosario Central](../Argentina/Rosario Central.md) — cargado, Ejercicio 2022-23 real
 - [San Lorenzo de Almagro](../Argentina/San Lorenzo.md) — cargado, 7 ejercicios reales (2011-2017) + presupuesto — Último chequeo: 2026-09-12
 - [San Martín (San Juan)](<../Argentina/San Martín (San Juan).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-12

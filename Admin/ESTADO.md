@@ -465,14 +465,15 @@ completo está en `Admin/CONVENCIONES.md`.
   auditoria-finance-of-sports, escala-finance-of-sports). Se autodescubren cuando
   la sesión abre directo en `finance-of-sports/`; ver CLAUDE.md para el caso en
   que no.
-- NO SE TRACKEAN, DESDE LA VERSIÓN 167, las notas internas de sourcing: los 613
-  `fuentes/<País>/<Club>.md` y `fuentes/_indice/<País>.md` estaban servidos en
-  `financeofsports.com/fuentes/<País>/<Club>.md` porque el repo se deploya entero, y
-  37 de ellos mencionan a Guido por nombre. Regla en `.gitignore`: `fuentes/**/*.md`,
-  que deja afuera a propósito los 61 `fuentes/<clubId>.html` generados, que SÍ son
-  parte del sitio y siguen viajando. Los `.md` siguen en disco y se usan igual. OJO:
-  los 12 `.md` de la RAÍZ (`Admin/TODO.md`, `CLAUDE.md`, `Admin/finance-of-sports-project.md`…)
-  siguen publicados por el mismo motivo — es la to-do 39, y es decisión de Guido.
+- LAS NOTAS INTERNAS DE SOURCING (`fuentes/<País>/<Club>.md`, 610, y
+  `fuentes/_indice/<País>.md`, 44) SÍ SE TRACKEAN — esta línea decía lo contrario hasta la
+  Versión 204 y ya no era cierto: hubo una regla en `.gitignore` (`fuentes/**/*.md`) desde la
+  Versión 167, pero Guido la revirtió 6 versiones después (Versión 173, "si pierdo la mac
+  pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
+  sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
+  interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
+  Los 61 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
+  sitio y siguen viajando en el deploy.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44

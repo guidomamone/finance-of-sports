@@ -2922,3 +2922,32 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - La sección "Riesgos de escala" de `Admin/COMO-CORRE-EL-PROYECTO.html` (to-do 55, pedido de Guido).
   Duplicaba lo que ya vive completo en el skill `escala-finance-of-sports`. Se sacó junto con el
   callout de cabecera que apuntaba a ella y la CSS que quedó huérfana (`.fixes`, `.fix`, `.effort`).
+
+## Versión 204 — River: el canal oficial existe, pero es un trámite de Guido, no una búsqueda
+
+### Investigado
+- To-do 53 (pedido de Guido): se buscó una fuente oficial para reemplazar el balance de River
+  2023/2024, hoy cargado desde un mirror no oficial (tuRiver.com, `reliability:'secondary_mirror'`).
+  `riverplate.com` ya estaba descartado de una sesión anterior (7 años de "Memoria" narrativa, nunca
+  estados contables). Encontrado: River es una asociación civil inscripta en la IGJ (CUIT
+  `30-52674844-8`), y la IGJ tiene un trámite público real, "informe de balances presentados", que
+  devolvería el estado contable oficial — pero exige TAD con clave fiscal AFIP o Mi Argentina (la
+  identidad de una persona) y tiene costo. **Es una gestión para Guido, no un sourcing que un agente
+  pueda completar solo.** Documentado en `fuentes/Argentina/River.md` con el link del trámite y el
+  CUIT, para cuando Guido decida iniciarlo. El to-do 53 sale de la lista: la parte buscable ya se
+  buscó.
+
+## Versión 205 — ESTADO.md decía que fuentes/**/*.md no se trackea, y hace 32 versiones que no es así
+
+### Arreglado
+- Un párrafo de `Admin/ESTADO.md` decía "NO SE TRACKEAN, DESDE LA VERSIÓN 167" sobre las notas de
+  sourcing (`fuentes/<País>/<Club>.md`, `fuentes/_indice/<País>.md`) — hallado revisando el estado
+  del repo antes de armar la próxima sesión de sourcing. Cierto en su momento (regla en
+  `.gitignore`), pero Guido revirtió esa regla 6 versiones después (Versión 173, "si pierdo la mac
+  pierdo semanas de trabajo") a favor del mecanismo que sigue vigente: todo se trackea, y
+  `netlify.toml` saca lo interno del artefacto de deploy. El párrafo nunca se actualizó y quedó
+  contradiciendo la explicación correcta que el propio archivo ya tiene más abajo. NO es un problema
+  de privacidad activo: verificado con `git ls-remote`, el repo público en GitHub todavía está 43
+  commits atrás (Versión 166, 2026-09-20 — Guido no pushea seguido), y ninguno de los 610 archivos
+  de club menciona a Guido por nombre hoy. Reescrito para que diga lo mismo que `netlify.toml` y el
+  resto de `ESTADO.md`.

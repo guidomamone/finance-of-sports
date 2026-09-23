@@ -88,16 +88,6 @@ perdieron sino que se descartaron:
     el selector.
 
 
-53. RIVER: BUSCAR LA FUENTE OFICIAL (pedido de Guido, 2026-09-23). El ejercicio 2023/2024 cargado
-    (balance con informe de auditoría independiente) es REAL, pero se consiguió en una réplica no
-    oficial de la comunidad (tuRiver.com), marcado `reliability:'secondary_mirror'` — ver
-    `data/river-data.js` y `fuentes/Argentina/River.md`. Objetivo: buscar/confirmar el mismo balance (u
-    otro ejercicio) por un canal oficial de River (riverplate.com, cariverplate.com.ar, prensa oficial,
-    boletín de socios) y, si aparece, reemplazar la fuente o sumarla como respaldo. Es sourcing puntual
-    de un club — usar `club-sourcing` (sección 0) y `club-data-mapping` si hay que recategorizar algo
-    al cambiar de fuente. NO es un problema de datos inventados: el balance en sí es real, lo que
-    cambiaría es solo la procedencia.
-
 49. RETOMAR EL SOURCING DE ARGENTINA, que quedó a mitad. Su agente se cortó por presupuesto de
     tokens el 2026-09-22, no por haber terminado. Lo que alcanzó a escribir está commiteado, así
     que se retoma leyendo `fuentes/_indice/Argentina.md` y viendo qué líneas tienen
