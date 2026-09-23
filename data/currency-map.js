@@ -225,6 +225,9 @@ const FX_CLOSE = {
   // (30/12/2024 y 29/12/2025 fueron las últimas ruedas efectivas, confirmado contra Rava).
   'ARS@2024-12-31': { fx: 1032,    source: 'market_close', label: 'Dólar mayorista BCRA, última rueda de 2024 (30/12/2024)' },
   'ARS@2025-12-31': { fx: 1457,    source: 'market_close', label: 'Dólar mayorista BCRA, última rueda de 2025 (29/12/2025)' },
+  // Sesión 2026-09-23 (onboarding de Gimnasia y Esgrima LP): el presupuesto 2025-26 (año standalone,
+  // sin balance real todavía) no declara TC propio y no tiene un balance pareado del que tomarlo.
+  'ARS@2026-06-30': { fx: 1482,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2026' },
   'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },
   'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },
   'COP@2025-12-31': { fx: 3757.08, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025' },

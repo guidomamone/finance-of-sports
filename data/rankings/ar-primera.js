@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Primera División (AR) — 17 ejercicio(s) con ranking:
-//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 9 club(es) cargado(s), de 28.
-//   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+// Primera División (AR) — 18 ejercicio(s) con ranking:
+//   2026: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 10 club(es) cargado(s), de 28.
+//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -28,6 +29,14 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ar-primera"] = {
+  2026: {
+    leagueSize: null,
+    clubs: [
+      { id:"gimnasiaesgrima-ar", revenue:22.227, reportType:"official_budget",
+        sourceId:"gimnasiaesgrima-ar-presupuesto-2025-2026",
+        mix:[["Cuotas Sociales",6.624],["Comercial / Sponsors",1.625],["Estadio",1.963],["Televisión",4.034],["Premios por competencias",0.044],["Venta de Jugadores",5.075],["Educación",1.311],["Otras secciones deportivas",1.085],["Otros ingresos",0.468]] },
+    ],
+  },
   2025: {
     leagueSize: null,
     clubs: [
@@ -46,6 +55,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"estudianteslp", revenue:49.764, reportType:"official_balance_sheet",
         sourceId:"estudianteslp-memoria-y-balance-2024-25",
         mix:[["Cuotas Sociales",9.368],["Comercial / Sponsors",1.625],["Estadio",1.648],["Televisión",5.12],["Premios por competencias",6.945],["Venta de Jugadores",12.581],["Educación",1.79],["Otras secciones deportivas",1.737],["Otros ingresos",8.949]] },
+      { id:"gimnasiaesgrima-ar", revenue:27.317, reportType:"official_budget_and_balance",
+        sourceId:"gimnasiaesgrima-ar-balance-2024-2025",
+        mix:[["Cuotas Sociales",5.588],["Comercial / Sponsors",0.821],["Estadio",2.26],["Televisión",4.05],["Premios por competencias",0.041],["Venta de Jugadores",6.229],["Educación",1.112],["Otras secciones deportivas",0.509],["Otros ingresos",6.707]] },
       { id:"union", revenue:22.74, reportType:"official_balance_sheet",
         sourceId:"union-memoria-y-balance-119",
         mix:[["Cuotas Sociales",4.979],["Comercial / Sponsors",1.074],["Estadio",1.261],["Televisión",3.27],["Premios por competencias",2.03],["Venta de Jugadores",5.751],["Educación",2.588],["Otras secciones deportivas",0.544],["Otros ingresos",1.242]] },
@@ -72,6 +84,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"independiente", revenue:42.861, reportType:"official_balance_sheet",
         sourceId:"independiente-memoria-y-balance-2023-24",
         mix:[["Cuotas Sociales",15.229],["Comercial / Sponsors",4.373],["Estadio",8.291],["Televisión",3.185],["Venta de Jugadores",5.319],["Educación",2.175],["Otras secciones deportivas",0.661],["Otros ingresos",3.628]] },
+      { id:"gimnasiaesgrima-ar", revenue:23.807, reportType:"official_budget_and_balance",
+        sourceId:"gimnasiaesgrima-ar-balance-2023-2024",
+        mix:[["Cuotas Sociales",4.217],["Comercial / Sponsors",0.692],["Estadio",1.077],["Televisión",2.663],["Premios por competencias",0.32],["Venta de Jugadores",5.6],["Educación",1.141],["Otras secciones deportivas",0.524],["Otros ingresos",7.575]] },
       { id:"union", revenue:22.777, reportType:"official_balance_sheet",
         sourceId:"union-estados-contables-118-2023-24",
         mix:[["Cuotas Sociales",3.927],["Comercial / Sponsors",0.409],["Estadio",0.538],["Televisión",2.67],["Premios por competencias",0.082],["Venta de Jugadores",11.246],["Educación",2.559],["Otras secciones deportivas",0.404],["Otros ingresos",0.943]] },
@@ -95,6 +110,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"estudianteslp", revenue:29.85, reportType:"official_balance_sheet",
         sourceId:"estudianteslp-memoria-y-balance-2022-23",
         mix:[["Cuotas Sociales",6.832],["Comercial / Sponsors",0.794],["Estadio",1.188],["Televisión",3.639],["Premios por competencias",5.434],["Venta de Jugadores",2.771],["Educación",2.055],["Otras secciones deportivas",1.682],["Otros ingresos",5.455]] },
+      { id:"gimnasiaesgrima-ar", revenue:20.402, reportType:"official_balance_sheet",
+        sourceId:"gimnasiaesgrima-ar-balance-2022-2023",
+        mix:[["Cuotas Sociales",4.342],["Comercial / Sponsors",0.696],["Estadio",1.486],["Televisión",3.008],["Premios por competencias",1.585],["Venta de Jugadores",4.122],["Educación",1.122],["Otras secciones deportivas",0.635],["Otros ingresos",3.408]] },
       { id:"union", revenue:19.952, reportType:"official_balance_sheet",
         sourceId:"union-memoria-y-balance-117",
         mix:[["Cuotas Sociales",3.651],["Comercial / Sponsors",0.728],["Estadio",0.71],["Televisión",2.966],["Premios por competencias",0.455],["Venta de Jugadores",7.117],["Educación",2.655],["Otras secciones deportivas",0.461],["Otros ingresos",1.21]] },

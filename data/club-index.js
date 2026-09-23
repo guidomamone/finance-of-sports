@@ -41,6 +41,7 @@ window.CLUB_INDEX = {
   "fctokyo": {"n":"FC Tokyo","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "gambaosaka": {"n":"Gamba Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "getafe-es": {"n":"Getafe CF","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "gimnasiaesgrima-ar": {"n":"Gimnasia y Esgrima (La Plata)","c":"AR","q":"full","y":4,"last":2026,"yrs":[[2026,"official_budget"],[2025,"official_budget_and_balance"],[2024,"official_budget_and_balance"],[2023,"official_balance_sheet"]]},
   "girona-es": {"n":"Girona FC","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "gremio": {"n":"Grêmio","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "independiente": {"n":"Independiente","c":"AR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},

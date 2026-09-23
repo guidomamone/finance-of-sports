@@ -92,19 +92,16 @@ perdieron sino que se descartaron:
     ya están cargados o que pasan de 0 a tener datos reales por primera vez (no es sourcing, es
     transcripción + mapeo — ver `club-data-mapping` y `club-or-year-onboarding`). Todos los PDFs ya
     están bajados, con el detalle completo en el `fuentes/Argentina/<Club>.md` de cada uno — no hace
-    falta volver a buscar nada. Talleres, Newell's Old Boys y Banfield (los 3 de texto nativo, sin
-    OCR) se cargaron en la Versión 207 (2026-09-23) — quedan los 2 que sí necesitan Tesseract y
-    Gimnasia y Esgrima LP:
+    falta volver a buscar nada. Talleres, Newell's Old Boys y Banfield (Versión 207) y Gimnasia y
+    Esgrima LP (Versión 208, 3 balances + 2 ejercicios duales Presupuesto+Balance + 1 presupuesto
+    standalone) se cargaron el 2026-09-23 — quedan los 2 que sí necesitan Tesseract, los dos de
+    clubes YA cargados:
     - **Rosario Central, Ejercicio 2024-25** (cierre 30/6/2025, club YA cargado): 1 PDF de 41 págs,
       **ESCANEO** — necesita el flujo de OCR (Tesseract, ver CLAUDE.md "Cada PDF nuevo").
     - **Independiente, Ejercicio N°122 (2025-26, club YA cargado)**: 2 documentos — la Memoria (150
       págs, texto nativo) y los Estados Contables (54 págs, **ESCANEO**). Este segundo trae además
       el Ejercicio 121 (2024-25) como columna comparativa, así que esas cifras también quedan
       disponibles aunque el PDF propio del 121 siga sin aparecer.
-    - **Gimnasia y Esgrima (La Plata), club SIN datos hoy → HASTA 3 ejercicios + 3 presupuestos**:
-      136° (2022-23), 137° (2023-24) y 138° (2024-25), 28-31 págs cada balance, **texto nativo**,
-      más sus 3 presupuestos con desglose mensual. Texto nativo, 0 fricción de OCR — el más fácil de
-      los 3 que quedan.
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del

@@ -3008,3 +3008,30 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - `tools/audit.js` marcó 1 P2 real (`signo-invertido` en Banfield 2020, "Apropiación de Costos
   Fútbol Amateur"): verificado contra el documento (capitalización de Nota 4 revertida por el mismo
   importe, efecto neto cero) y silenciado en `tools/audit-ignore.json` con el motivo.
+
+## Versión 208 — Gimnasia y Esgrima (La Plata): el 4° club nuevo del to-do 58, y el 2° ejercicio dual del sitio
+
+### Datos
+- **Gimnasia y Esgrima LP, club nuevo (`gimnasiaesgrima-ar`) → 3 balances reales + 2 ejercicios
+  duales Presupuesto+Balance + 1 presupuesto standalone**: 136° (2022-23), 137° (2023-24) y 138°
+  (2024-25), más el presupuesto 2025-26 (todavía sin balance real). El hallazgo de sourcing (el
+  balance vive en un PDF separado de la Memoria, que sí es puramente narrativa) ya estaba
+  documentado; esta sesión transcribió los 9 documentos (8 vía `pdftotext`, 1 vía Tesseract OCR —
+  el único escaneado, 3 págs) y los mapeó.
+- Los 3 presupuestos vienen empaquetados con el balance del ejercicio ANTERIOR (aprobados en la
+  misma asamblea), no con el propio: cruzando por ejercicio real, 2 de los 3 resultaron ser el
+  presupuesto del MISMO ejercicio que un balance real ya cargado — el 2° caso del sitio (después de
+  Racing) del mecanismo de "ejercicio dual" (`club-or-year-onboarding` SKILL.md sección 11):
+  balance real primario + columna "Presupuesto" de comparación, cerrando ambas columnas contra su
+  propio total impreso. El 3° presupuesto (2025-26) no tiene balance pareado (es el ejercicio más
+  reciente, todavía sin publicar) — se cargó standalone.
+- Corrección durante la integración: la primera versión reusaba el `fx` `document_close` del
+  balance pareado para los 2 overlays. Etiquetar así el TC del presupuesto mentía la procedencia —
+  `document_close` es específicamente "el balance lo declara", y el presupuesto no declara nada. Se
+  corrigió a `fxSource:'market_close'`, referenciando `FX_CLOSE` a la fecha de cierre de cada
+  ejercicio (`ARS@2024-06-30`/`ARS@2025-06-30`, ya existían de otro club). Se agregó
+  `ARS@2026-06-30` (1.482, dólar mayorista BCRA vía Rava) para el presupuesto standalone.
+- `verifyTieOuts()`/`auditAll()`: 359 checks, 0 mismatches, 0 warnings (eran 348). Sitio pasa de 64
+  a 65 clubes. `brandColor:null` (camiseta blanca con banda azul marino, mismo bucket que
+  River/Vélez/Sevilla). Liga confirmada Primera División en los 4 ejercicios (sin descenso desde
+  ~2015, según en.wikipedia.org).

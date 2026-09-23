@@ -181,6 +181,12 @@ const clubs = {
   'talleres-ar': { id:'talleres-ar', name:'Club Atlético Talleres Asociación Civil', displayName:'Talleres', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#040D2D' },
   'newells-ar': { id:'newells-ar', name:"Club Atlético Newell's Old Boys", displayName:"Newell's Old Boys", country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#F42121' },
   'banfield-ar': { id:'banfield-ar', name:'Club Atlético Banfield', displayName:'Banfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#03953F' },
+  // Gimnasia y Esgrima (La Plata), club nuevo (sesión 2026-09-23, to-do 58): 3 balances reales +
+  // presupuestos, 2 de ellos cargados como overlay de un ejercicio dual (ver
+  // data/gimnasiaesgrima-ar-data.js). `brandColor:null` (no ausente): camiseta blanca con banda
+  // azul marino, el que lo identifica es el blanco — mismo bucket que River/Vélez/Sevilla/Real
+  // Madrid/Valencia/Once Caldas, confirmado en.wikipedia.org.
+  'gimnasiaesgrima-ar': { id:'gimnasiaesgrima-ar', name:'Club de Gimnasia y Esgrima La Plata', displayName:'Gimnasia y Esgrima (La Plata)', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

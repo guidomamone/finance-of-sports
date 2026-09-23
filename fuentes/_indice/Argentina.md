@@ -38,7 +38,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Ferro Carril Oeste](../Argentina/Ferro Carril Oeste.md) — 2 balances reales descargados, sin cargar aún — Último chequeo: 2026-09-12
 - [Ferrocarril Midland](../Argentina/Ferrocarril Midland.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Gimnasia y Esgrima (Jujuy)](<../Argentina/Gimnasia y Esgrima (Jujuy).md>) — publicación solo física, sin PDFs — Último chequeo: 2026-09-22
-- [Gimnasia y Esgrima (La Plata)](../Argentina/Gimnasia y Esgrima LP.md) — 4 memorias descargadas, sin datos financieros cargables
+- [Gimnasia y Esgrima (La Plata)](../Argentina/Gimnasia y Esgrima LP.md) — cargado, 3 balances reales + 2 presupuestos overlay + 1 presupuesto standalone (Ejercicios 2023-2026)
 - [Gimnasia y Esgrima (Mendoza)](../Argentina/Gimnasia y Esgrima Mendoza.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Gimnasia y Tiro (Salta)](<../Argentina/Gimnasia y Tiro (Salta).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-23
 - [Godoy Cruz](../Argentina/Godoy Cruz.md) — 1 balance escaneado descargado, sin OCR aún — Último chequeo: 2026-09-12

@@ -794,3 +794,12 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   otra cosa**. No se encontró cantidad de socios en el documento. Pendiente además (ya anotado en
   `fuentes/Argentina/Banfield.md`): el 105° Ejercicio (2024-25) solo existe en video de YouTube, y la
   numeración de ejercicios entre el 116° y el 105° es inconsistente entre los 2 documentos del club.
+- **Gimnasia y Esgrima LP (`gimnasiaesgrima-ar`)**, Ejercicios 2023-24 y 2024-25: "Incremento Valor
+  Jugadores FP" ($2.900,94M en 2024; $2.051,11M en 2025), fila nueva desde 2024 sin sub-ítems ni nota
+  que la explique, distinta de "Ventas Jugadores" (que existe aparte). Por el nombre podría ser una
+  revaluación no-cash del valor de jugadores formados en el club (el balance 2023 menciona
+  capitalizar el costo de formación al firmar el primer contrato profesional), pero no hay forma de
+  confirmarlo con lo que dice el documento — cargada a `other_income` a falta de mejor categoría.
+  **Vale preguntarle al club qué es exactamente esta línea.** Tampoco se encontró cantidad de socios
+  en ninguno de los 9 documentos, y el Ejercicio 2022-23 (136°) quedó sin gestión asignada (la
+  Comisión Directiva cambió a mediados de ese ejercicio, sin fecha exacta de asunción).

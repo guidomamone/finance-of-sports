@@ -57,6 +57,9 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'talleres-ar': { 2024: 'ar-primera', 2025: 'ar-primera' },
   'newells-ar': { 2019: 'ar-primera' },
   'banfield-ar': { 2020: 'ar-primera' },
+  // Confirmado vía en.wikipedia.org ("2025 Club de Gimnasia y Esgrima La Plata season": 2025 fue su
+  // 11ma temporada consecutiva en Primera, sin descenso desde ~2015) — cubre los 4 ejercicios.
+  'gimnasiaesgrima-ar': { 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera', 2026: 'ar-primera' },
 });
 
 // ---------------------------------------------------------------------------
