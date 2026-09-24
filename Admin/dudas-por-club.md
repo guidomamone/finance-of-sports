@@ -149,6 +149,48 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   clubaunion.com.ar cuando el sitio esté online, ver `fuentes/README.md`) una copia completa que
   incluya el Balance General de esos 3 años.
 
+## Independiente (Ejercicio N°122, 2025-26, sesión 2026-09-23)
+
+- **Ejercicio N°121 (2024-25) NO cargado a propósito** (decisión de Guido, confirmada antes de
+  arrancar esta sesión): sus cifras solo existen como columna comparativa DENTRO del documento del
+  122 (reexpresada a la fecha de cierre del 122, no a la suya propia) y como cifras de prensa —
+  ninguna de las 2 es el documento propio del 121, que todavía no está publicado por el club (ver
+  to-do 59 en `Admin/TODO.md`, pedírselo directo). Si en algún momento aparece el PDF propio del
+  121, cargarlo como ejercicio real de pleno derecho, no como lo que ya tenemos acá.
+- **Qué torneo(s) cubre exactamente "Otras Competiciones" del Anexo D (Fútbol Profesional)**: el
+  Estado de Recursos y Gastos de este ejercicio separa "RECAUDACIONES PARTIDOS" bajo el encabezado
+  explícito "PARTIDOS COPA ARGENTINA, COPA SUPERLIGA Y COPA SUDAMERICANA" (con el desglose fino de
+  entradas/TV/publicidad/plateas) de una sección aparte "OTRAS COMPETICIONES" que da solo un
+  ingreso/gasto lump (2.792,306789 M / 20,781644 M de ingresos/gastos, 2026) sin desglosar por
+  naturaleza. No quedó claro si "Otras Competiciones" es el torneo doméstico (Liga Profesional,
+  que por volumen de partidos debería ser la mayor fuente de recaudación, no una fracción chica) o
+  algo más acotado (amistosos, Trofeo de Campeones). Se cargó a `matchday_competition` por default
+  conservador (mismo criterio que "recaudación de entradas sin separar premios"), pero valdría
+  confirmar con el club/auditor qué agrupa exactamente esa fila — a quién preguntarle:
+  socios@clubaindependiente.com.ar o el contador que firma el balance (Dr. Walter Hugo Rivero).
+- **Por qué "Estadio" y "Parque Santo Domingo" no tienen línea de INGRESO en el Anexo V este año**
+  (ambos ejercicios, 2026 y 2025, muestran "-"), cuando el 120° Ejercicio (2023-24) sí tenía una
+  línea real "Estadio (concesiones, no recaudación de partidos)" con plata (72,525021 M). Hipótesis
+  no confirmada en el comentario de `data/independiente-data.js`: esa recaudación podría estar
+  embebida este año dentro de "Publicidad y concesiones" del Anexo D (Fútbol Profesional) en vez de
+  quedar como línea de departamento aparte — no se pudo confirmar con lo que dice el documento.
+
+## Rosario Central (Ejercicio 2024-25, sesión 2026-09-23)
+
+- **"Ingresos por ventas tiendas" / "Costo de mercadería vendida"** (3.880,59M / 2.673,79M): venta
+  minorista de indumentaria/merchandising del club, sin categoría propia en `category-map.js` hoy
+  (cargadas a `other_income`/`other_expenses`) — candidatas a `merchandise_sales`/
+  `cost_of_goods_sold` si más clubes reportan una tienda con este volumen (no es solo Rosario
+  Central: Talleres también tenía una línea de tienda neta de costo en la Versión 207).
+- **"Ingresos fútbol profesional" (2.732,08M) y "Gastos de fútbol profesional" (5.308,77M)**: líneas
+  residuales sin más desglose en el documento (a diferencia de TV/entradas/sponsors, que sí tienen
+  fila propia) — vale preguntarle al club qué componen específicamente.
+- **"Gastos bancarios y financieros" (889,62M)**: categorizado como `admin_general_expense`
+  (comisiones/gastos operativos, distinto del resultado financiero ya separado en `netInterest`),
+  sin certeza total de que no incluya algo de naturaleza financiera pura.
+- **"Servicios de terceros" (1.438,05M)**: ambiguo entre honorarios profesionales y servicios
+  operativos tercerizados, fue a `other_expenses`.
+
 ## Racing Club (hallazgo de esta sesión, no una pregunta para el club)
 
 - **Categorización interna inconsistente, Ejercicios 2009/2010/2012/2014**: 5 líneas de revenue

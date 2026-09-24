@@ -10,14 +10,22 @@
   Gastos). DÉFICIT real: $(3.107.221.597) ARS. Se encontró y corrigió un error de lectura de $201M
   (una fila desalineada por el layout de pdftotext) verificando la suma contra el total impreso —
   ver `data/rosariocentral-data.js`. La Memoria (36 págs) es narrativa, no se usó.
-- **Estados Contables, Ejercicio 2024-25 (cierre 30/6/2025) — ENCONTRADO 2026-09-22.** 41 págs,
-  **ESCANEO sin capa de texto** (`pdftotext` devuelve vacío; va a necesitar el flujo de OCR del
-  proyecto). Verificado por OCR de la pág. 3: "Composición de la Comisión Directiva y Comisión
-  Revisora de cuentas al 30 de junio de 2025", presidente Gonzalo Luis Belloso. Trae el ejercicio
-  2024 reexpresado en moneda de cierre 30/6/2025 como comparativo. URL oficial:
-  `rosariocentral.com/wp-content/uploads/2025/10/Balance.pdf` — nombre genérico, sin año ni club,
-  imposible de adivinar. Descargado en
-  `Clubes/Argentina/Rosario Central/estados-contables-2024-2025.pdf`.
+- **Estados Contables, Ejercicio 2024-25 (cierre 30/6/2025) — ENCONTRADO 2026-09-22, CARGADO al
+  sitio en sesión posterior.** 41 págs. **CORRECCIÓN: la nota anterior decía "escaneo sin capa de
+  texto" y estaba mal** — verificado con `pdftotext -layout`, el documento SÍ tiene texto nativo
+  completo (172.616 caracteres en 41 páginas, muy por encima del umbral de ~1 char/página que
+  distingue un escaneo real). No hizo falta OCR. Pág. 3: "Composición de la Comisión Directiva y
+  Comisión Revisora de cuentas al 30 de junio de 2025", presidente Gonzalo Luis Belloso (sigue en el
+  cargo, gestión extendida a `lastYear:2025`). Trae el ejercicio 2024 reexpresado en moneda de cierre
+  30/6/2025 como comparativo (no usado para cargar datos, ver club-data-mapping sección 6 regla 5).
+  URL oficial: `rosariocentral.com/wp-content/uploads/2025/10/Balance.pdf` — nombre genérico, sin año
+  ni club, imposible de adivinar. Descargado en
+  `Clubes/Argentina/Rosario Central/estados-contables-2024-2025.pdf`, transcripto completo a
+  `estados-contables-2024-2025.md`. Anexo V/VI agrupa en 6 departamentos (menos granular que el
+  ejercicio 2022-23, que tenía 12+). fx: USD 1.165 (Anexo IV, lado Activo/Créditos — consistente en
+  sus 3 líneas, sin la ambigüedad que tuvo 2022-23). DÉFICIT real: $(13.410.007.536) ARS. Verificación
+  numérica cierra exacto (revenue exacto, expense con $1 de redondeo del propio documento, resultado
+  final exacto al peso) — ver comentario de cabecera de `data/rosariocentral-data.js`.
 - Pendiente: ejercicio 2023-24, y todo lo anterior a 2022-23. Lo probado y fallido esta sesión:
   (1) el patrón `uploads/2024/<mes>/{Balance,balance,EECC,Memoria}.pdf` con 4 meses candidatos —
   todos 404; (2) las secciones `/institucional/` y `/prensa/` del sitio vivo no contienen NINGÚN

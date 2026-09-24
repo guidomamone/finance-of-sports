@@ -3035,3 +3035,36 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   a 65 clubes. `brandColor:null` (camiseta blanca con banda azul marino, mismo bucket que
   River/Vélez/Sevilla). Liga confirmada Primera División en los 4 ejercicios (sin descenso desde
   ~2015, según en.wikipedia.org).
+
+## Versión 209 — Rosario Central e Independiente suman un 2do ejercicio cada uno, cierra el to-do 58
+
+### Datos
+- **Rosario Central, Ejercicio 2024-25 (cierre 30/6/2025)**: la nota de sourcing decía "escaneo sin
+  capa de texto" — resultó ser texto nativo completo, corregido en `fuentes/Argentina/Rosario
+  Central.md`. Déficit real $(13.410.007.536) ARS, cierra exacto contra los totales impresos. `fx`
+  1.165 (Anexo IV, lado Activo/Créditos, sin ambigüedad esta vez a diferencia del ejercicio 2022-23
+  ya cargado).
+- **Independiente, Ejercicio N°122 (2025-26, cierre 30/6/2026)**: 2 documentos, con el desglose fino
+  (Anexo D) cambiado de lugar respecto del ejercicio anterior — este año vive en
+  `estados-contables-2025-2026.pdf` (fuente subseteada sin ToUnicode en la mayoría de sus 54
+  páginas, resuelto renderizando a imagen y leyendo visualmente, no con OCR crudo), mientras que la
+  Memoria de 150 páginas es puramente narrativa. Superávit real $1.778.079.629 ARS, verificado
+  además contra los 5 anchors del Informe de Tesorería que ya tenía `fuentes/Argentina/
+  Independiente.md` de la sesión de sourcing — los 5 reconcilian exacto. `fx` 1.500 (Anexo II, lado
+  deuda, unánime en las 4 líneas de pasivo en USD).
+- **Ejercicio N°121 de Independiente (2024-25) NO se cargó**, decisión explícita de Guido: sus
+  únicas fuentes disponibles son la columna comparativa del 122 (reexpresada a otra fecha de
+  cierre) y cifras de prensa, ninguna de las 2 es el documento propio del club. Queda como to-do 59
+  (pedírselo directo) y documentado en `Admin/dudas-por-club.md`.
+- `verifyTieOuts()`/`auditAll()`: 365 checks, 0 mismatches (eran 359). **Con esto se cierra el to-do
+  58 completo**: los 6 ejercicios que el barrido de Argentina del 2026-09-22 encontró y descargó
+  (Talleres, Newell's, Banfield, Gimnasia y Esgrima LP, y los 2 de esta versión) están todos
+  cargados o su ausencia está documentada y justificada.
+
+### Proceso
+- Se corrigió un override obsoleto en `tools/generate-fuentes-index.js`
+  ('Argentina|Gimnasia y Esgrima (La Plata)': doc:false) que había quedado sin actualizar desde la
+  Versión 208 — un override manda SIEMPRE sobre la clasificación automática, así que
+  `fuentes/README.md` venía subcontando ese club en "con documento encontrado" sin que ningún
+  chequeo lo detectara (el script solo avisa de overrides "sobrantes", no de overrides con un valor
+  desactualizado para una línea que sigue existiendo).

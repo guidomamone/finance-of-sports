@@ -78,7 +78,10 @@ se reescribe, no se acumula.
   Alemania 5, Inglaterra 5, México 1. Los 4 argentinos nuevos (Talleres, Newell's Old
   Boys, Banfield — Versión 207 — y Gimnasia y Esgrima LP — Versión 208, con 2
   ejercicios duales Presupuesto+Balance y un presupuesto standalone) pasaron de 0 a
-  tener datos reales por primera vez. Alemania e Inglaterra son países nuevos desde
+  tener datos reales por primera vez. Rosario Central e Independiente, ya cargados,
+  sumaron un 2do ejercicio cada uno (2024-25 y N°122/2025-26 respectivamente, Versión
+  209) — con esto se cierra el to-do 58 completo (los 6 ejercicios que el barrido del
+  2026-09-22 encontró y descargó). Alemania e Inglaterra son países nuevos desde
   la Versión 201 (sesión 2026-09-22, GBP moneda nueva). Un solo motor genérico
   calcula Finanzas para todos (ver
   `Admin/ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
@@ -121,7 +124,7 @@ se reescribe, no se acumula.
   por temporada mirando ascensos y descensos, repartido hay que acordarse de 41
   lugares. `null` significa "nadie lo verificó todavía", así que el archivo no
   puede afirmar una liga que nadie chequeó, y `node tools/audit.js` cuenta las
-  que faltan. HOY: 126 de 129 verificadas, con la fuente anotada por bloque; las 3
+  que faltan. HOY: 128 de 131 verificadas, con la fuente anotada por bloque; las 3
   que faltan son presupuestos (Boca 2027, Racing 2026 y 2027). CRITERIO cuando un
   ejercicio cruza dos torneos (decidido por Guido): vale la categoría al cierre,
   la misma regla que ya se usa para atribuir la gestión presidencial. Los ids del
@@ -164,9 +167,9 @@ se reescribe, no se acumula.
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 359 checks, 0
-  mismatches, 0 warnings (medido el 2026-09-23, Versión 208, tras onboardear Gimnasia y
-  Esgrima LP: eran 348).
+  cada `fx` caiga en un rango plausible para su moneda. Hoy son 365 checks, 0
+  mismatches, 0 warnings (medido el 2026-09-23, Versión 209, tras sumar los ejercicios
+  nuevos de Rosario Central e Independiente: eran 359).
   COMPLEMENTO, DESDE LA VERSIÓN 122: `node tools/audit.js` audita en Node lo que un
   total correcto NO delata (ejercicios que no tienen ningún total contra qué
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
@@ -177,7 +180,7 @@ se reescribe, no se acumula.
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
   y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 8 P3 y 42
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-23, Versión 208). Los 10
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-23, Versión 209). Los 10
   `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
   Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
   "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
@@ -480,7 +483,7 @@ completo está en `Admin/CONVENCIONES.md`.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 367 con documento encontrado (de los cuales 65
+  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 65
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
@@ -504,7 +507,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 65 clubes, 129 ejercicios, 8 países.
+TOTAL: 65 clubes, 131 ejercicios, 8 países.
 
 ARGENTINA (15)
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
@@ -512,12 +515,12 @@ ARGENTINA (15)
   Boca Juniors                   2 ejercicios (2024/2025, 2026/2027), balance + presupuesto, ARS
   Estudiantes de La Plata        4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Gimnasia y Esgrima (La Plata)  4 ejercicios (2022/2023 a 2025/2026), balance + presupuesto y balance + presupuesto, ARS
-  Independiente                  1 ejercicio (2023/2024), balance, ARS
+  Independiente                  2 ejercicios (2023/2024, 2025/2026), balance, ARS
   Instituto ACC                  1 ejercicio (2023/2024), balance, ARS
   Newell's Old Boys              1 ejercicio (2018/2019), balance, ARS
   Racing Club                    17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS
   River Plate                    1 ejercicio (2023/2024), balance de réplica no oficial, ARS
-  Rosario Central                1 ejercicio (2022/2023), balance, ARS
+  Rosario Central                2 ejercicios (2022/2023, 2024/2025), balance, ARS
   San Lorenzo                    8 ejercicios (2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2023/2024), balance + presupuesto, ARS
   Talleres                       2 ejercicios (2024 a 2025), balance, ARS
   Unión                          4 ejercicios (2021/2022 a 2024/2025), balance, ARS

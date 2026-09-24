@@ -44,7 +44,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Godoy Cruz](../Argentina/Godoy Cruz.md) — 1 balance escaneado descargado, sin OCR aún — Último chequeo: 2026-09-12
 - [Güemes (Santiago del Estero)](<../Argentina/Güemes (Santiago del Estero).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Huracán](../Argentina/Huracan.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
-- [Independiente](../Argentina/Independiente.md) — cargado, Ejercicio 2023-24 real
+- [Independiente](../Argentina/Independiente.md) — cargado, Ejercicios 2023-24 y 2025-26 (N°122) reales; el N°121 (2024-25) queda pendiente, todavía no publicado por el club
 - [Independiente Rivadavia (Mendoza)](../Argentina/Independiente Rivadavia.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Instituto](../Argentina/Instituto.md) — cargado, Ejercicio 2023-24 real — Último chequeo: 2026-09-12
 - [Lanús](../Argentina/Lanus.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
@@ -58,7 +58,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Racing Club](../Argentina/Racing.md) — cargado, 14 balances + 7 presupuestos completos
 - [Racing Club (Córdoba, Nueva Italia)](<../Argentina/Racing Club (Córdoba, Nueva Italia).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [River Plate](../Argentina/River.md) — cargado, Ejercicio 2024 real (fuente no-primaria); canal oficial IGJ identificado pero requiere trámite pago de Guido — Último chequeo: 2026-09-23
-- [Rosario Central](../Argentina/Rosario Central.md) — cargado, Ejercicio 2022-23 real
+- [Rosario Central](../Argentina/Rosario Central.md) — cargado, Ejercicios 2022-23 y 2024-25 reales; falta el 2023-24
 - [San Lorenzo de Almagro](../Argentina/San Lorenzo.md) — cargado, 7 ejercicios reales (2011-2017) + presupuesto — Último chequeo: 2026-09-12
 - [San Martín (San Juan)](<../Argentina/San Martín (San Juan).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [San Martín (Tucumán)](<../Argentina/San Martín (Tucumán).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22

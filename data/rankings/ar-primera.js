@@ -4,8 +4,8 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Primera División (AR) — 18 ejercicio(s) con ranking:
-//   2026: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2026: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), de 28.
 //   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -32,6 +32,9 @@ window.RANKINGS["ar-primera"] = {
   2026: {
     leagueSize: null,
     clubs: [
+      { id:"independiente", revenue:71.617, reportType:"official_balance_sheet",
+        sourceId:"independiente-estados-contables-2025-26",
+        mix:[["Cuotas Sociales",18.38],["Comercial / Sponsors",7.267],["Estadio",11.518],["Televisión",4.192],["Venta de Jugadores",17.799],["Educación",2.284],["Otras secciones deportivas",1.921],["Otros ingresos",8.256]] },
       { id:"gimnasiaesgrima-ar", revenue:22.227, reportType:"official_budget",
         sourceId:"gimnasiaesgrima-ar-presupuesto-2025-2026",
         mix:[["Cuotas Sociales",6.624],["Comercial / Sponsors",1.625],["Estadio",1.963],["Televisión",4.034],["Premios por competencias",0.044],["Venta de Jugadores",5.075],["Educación",1.311],["Otras secciones deportivas",1.085],["Otros ingresos",0.468]] },
@@ -55,6 +58,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"estudianteslp", revenue:49.764, reportType:"official_balance_sheet",
         sourceId:"estudianteslp-memoria-y-balance-2024-25",
         mix:[["Cuotas Sociales",9.368],["Comercial / Sponsors",1.625],["Estadio",1.648],["Televisión",5.12],["Premios por competencias",6.945],["Venta de Jugadores",12.581],["Educación",1.79],["Otras secciones deportivas",1.737],["Otros ingresos",8.949]] },
+      { id:"rosariocentral", revenue:39.476, reportType:"official_balance_sheet",
+        sourceId:"rosariocentral-estados-contables-2024-25",
+        mix:[["Cuotas Sociales",15.331],["Comercial / Sponsors",2.682],["Estadio",5.775],["Televisión",5.016],["Venta de Jugadores",1.93],["Otras secciones deportivas",0.951],["Otros ingresos",7.79]] },
       { id:"gimnasiaesgrima-ar", revenue:27.317, reportType:"official_budget_and_balance",
         sourceId:"gimnasiaesgrima-ar-balance-2024-2025",
         mix:[["Cuotas Sociales",5.588],["Comercial / Sponsors",0.821],["Estadio",2.26],["Televisión",4.05],["Premios por competencias",0.041],["Venta de Jugadores",6.229],["Educación",1.112],["Otras secciones deportivas",0.509],["Otros ingresos",6.707]] },

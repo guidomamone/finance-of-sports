@@ -135,7 +135,6 @@ const SENAL_NO = [
 // ---------------------------------------------------------------------------
 const OVERRIDES = {
   'Argentina|Belgrano': { doc: false, motivo: 'memorias descargadas, pero sin datos financieros' },
-  'Argentina|Gimnasia y Esgrima (La Plata)': { doc: false, motivo: 'memorias descargadas, pero sin datos financieros' },
   'Argentina|Temperley': { doc: false, motivo: 'memorias narrativas' },
   'Brasil|Ceará': { doc: true, motivo: 'dead-end viejo destrabado, 8 ejercicios reales' },
   'Brasil|Fortaleza': { doc: true, motivo: 'dead-end viejo destrabado, 11 ejercicios' },

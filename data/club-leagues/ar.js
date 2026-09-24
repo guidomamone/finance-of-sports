@@ -36,14 +36,14 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // que al cierre del ejercicio 2017 todavía estaba en curso). Volvió a Primera para 2017-18.
   boca: { 2025: 'ar-primera', 2027: null },          // 2027 es el presupuesto jul-2026/jun-2027: cierra en el futuro
   estudianteslp: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
-  independiente: { 2024: 'ar-primera' },
+  independiente: { 2024: 'ar-primera', 2026: 'ar-primera' },
   instituto: { 2024: 'ar-primera' },              // ascendido para 2023, ya en Primera al cierre
   racing: { 2009: 'ar-primera', 2010: 'ar-primera', 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera', 2026: null, 2027: null },
   // 2026 y 2027 son presupuestos: el de 2027 cierra en el futuro, y el de 2026 (cerrado el
   // 30/6/2026) no se verificó contra la temporada, así que queda en null como cualquier otro
   // dato sin chequear.
   river: { 2024: 'ar-primera' },
-  rosariocentral: { 2023: 'ar-primera' },
+  rosariocentral: { 2023: 'ar-primera', 2025: 'ar-primera' },
   sanlorenzo: { 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2024: 'ar-primera' },
   union: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
   velez: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2018: 'ar-primera', 2019: 'ar-primera', 2020: 'ar-primera', 2021: 'ar-primera', 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },

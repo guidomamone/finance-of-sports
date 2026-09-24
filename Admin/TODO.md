@@ -88,28 +88,17 @@ perdieron sino que se descartaron:
     el selector.
 
 
-58. ONBOARDEAR LOS EJERCICIOS QUE EL BARRIDO DEL 2026-09-22 YA ENCONTRÓ Y DESCARGÓ, de clubes que
-    ya están cargados o que pasan de 0 a tener datos reales por primera vez (no es sourcing, es
-    transcripción + mapeo — ver `club-data-mapping` y `club-or-year-onboarding`). Todos los PDFs ya
-    están bajados, con el detalle completo en el `fuentes/Argentina/<Club>.md` de cada uno — no hace
-    falta volver a buscar nada. Talleres, Newell's Old Boys y Banfield (Versión 207) y Gimnasia y
-    Esgrima LP (Versión 208, 3 balances + 2 ejercicios duales Presupuesto+Balance + 1 presupuesto
-    standalone) se cargaron el 2026-09-23 — quedan los 2 que sí necesitan Tesseract, los dos de
-    clubes YA cargados:
-    - **Rosario Central, Ejercicio 2024-25** (cierre 30/6/2025, club YA cargado): 1 PDF de 41 págs,
-      **ESCANEO** — necesita el flujo de OCR (Tesseract, ver CLAUDE.md "Cada PDF nuevo").
-    - **Independiente, Ejercicio N°122 (2025-26, club YA cargado)**: 2 documentos — la Memoria (150
-      págs, texto nativo) y los Estados Contables (54 págs, **ESCANEO**). Este segundo trae además
-      el Ejercicio 121 (2024-25) como columna comparativa, así que esas cifras también quedan
-      disponibles aunque el PDF propio del 121 siga sin aparecer.
-
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
     to-do 51, proceso de email a clubes). Casos concretos que salieron del barrido del 2026-09-22:
     Atlanta tenía 4 balances reales (2013-2016) en Drive, hoy con el compartir revocado — pedirle al
     club que los vuelva a compartir es gratis y rápido. Banfield tiene el 105° Ejercicio (2024-25)
-    aprobado pero solo publicado en video de YouTube, nunca como PDF. Ver el detalle completo en
-    `fuentes/Argentina/Atlanta.md` y `fuentes/Argentina/Banfield.md`.
+    aprobado pero solo publicado en video de YouTube, nunca como PDF. Independiente tiene el
+    Ejercicio N°121 (2024-25) aprobado en asamblea el 26/11/2025 (prensa reportó sus cifras) pero sin
+    PDF propio publicado en ningún canal — solo existe como columna comparativa reexpresada dentro
+    del documento del N°122 (2025-26, ya cargado, Versión 209), que Guido decidió no usar como fuente
+    del 121 (ver `Admin/dudas-por-club.md`). Ver el detalle completo en `fuentes/Argentina/Atlanta.md`,
+    `fuentes/Argentina/Banfield.md` y `fuentes/Argentina/Independiente.md`.
 
 50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR (de la Versión 202). Todos tienen el camino
     escrito, solo falta ejecutarlos:
