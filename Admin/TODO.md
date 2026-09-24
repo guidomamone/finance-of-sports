@@ -100,22 +100,6 @@ perdieron sino que se descartaron:
     del 121 (ver `Admin/dudas-por-club.md`). Ver el detalle completo en `fuentes/Argentina/Atlanta.md`,
     `fuentes/Argentina/Banfield.md` y `fuentes/Argentina/Independiente.md`.
 
-50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR (de la Versión 202). Todos tienen el camino
-    escrito, solo falta ejecutarlos:
-    - **Ejercicios disponibles en SIIS que quedaron sin bajar por throttling** (Colombia): Boyacá
-      Chicó 2021-2025 es el de mayor margen, más Once Caldas 2021-2024 y Bucaramanga 2021. El
-      límite real es 1-2 procesos en paralelo, más que eso devuelve HTML sin PDF en silencio.
-    - **León y Pachuca (México) dieron HTTP 403** a `curl`, que es bloqueo de WAF y NO dead-end
-      confirmado. Vale reintentarlos desde el Browser pane.
-    - **Pumas y Tigres (México)**: solicitud por la Plataforma Nacional de Transparencia a la UNAM
-      y a la UANL por lo que le transfieren al club. El INAI ya obligó a la UNAM una vez
-      (resolución de enero 2022), así que el precedente existe.
-    - **León se está vendiendo** (80% forzado por la regla anti-multipropiedad): si el comprador es
-      un vehículo cotizante, se abre la ventana Ollamani. Rechequear cuando cierre la operación.
-    - **`DIABLOS` en la BMV**: Diablos Rojos del México (béisbol) cotiza desde diciembre 2024 y
-      reporta trimestralmente. Es el segundo caso mexicano del patrón Ollamani y el canal ya está
-      probado, pero **abre liga y deporte nuevos**: es decisión de Guido, no se hace solo.
-
 52. METODOLOGÍA DE SOURCING: ÁNGULOS Y CUÁNDO ESCALAR (pedido de Guido, 2026-09-23). `club-sourcing`
     (1266 líneas) ya documenta gotchas país por país, pero no estructura tres cosas: (a) qué ángulos
     probar 1ª, 2ª, 3ª+ vez para un club antes de darlo por agotado, en vez de que un agente insista con
@@ -151,6 +135,24 @@ perdieron sino que se descartaron:
     corrida por país en vez de una corrida de todo el proyecto) evita que una auditoría se vuelva
     demasiado larga para terminar en una sesión. No urgente a 61 clubes; conviene resolverlo antes de
     que sí lo sea, no cuando ya esté rota.
+
+50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR, DE COLOMBIA Y MÉXICO (de la Versión 202).
+    Todos tienen el camino escrito, solo falta ejecutarlos:
+    - **Ejercicios disponibles en SIIS que quedaron sin bajar por throttling** (Colombia): Boyacá
+      Chicó 2021-2025 es el de mayor margen, más Once Caldas 2021-2024 y Bucaramanga 2021. El
+      límite real es 1-2 procesos en paralelo, más que eso devuelve HTML sin PDF en silencio.
+    - **León y Pachuca (México) dieron HTTP 403** a `curl`, que es bloqueo de WAF y NO dead-end
+      confirmado. Vale reintentarlos desde el Browser pane.
+    - **Pumas y Tigres (México)**: solicitud por la Plataforma Nacional de Transparencia a la UNAM
+      y a la UANL por lo que le transfieren al club. El INAI ya obligó a la UNAM una vez
+      (resolución de enero 2022), así que el precedente existe.
+    - **León se está vendiendo** (80% forzado por la regla anti-multipropiedad): si el comprador es
+      un vehículo cotizante, se abre la ventana Ollamani. Rechequear cuando cierre la operación.
+    - **`DIABLOS` en la BMV**: Diablos Rojos del México (béisbol) cotiza desde diciembre 2024 y
+      reporta trimestralmente. Es el segundo caso mexicano del patrón Ollamani y el canal ya está
+      probado, pero **abre liga y deporte nuevos**: es decisión de Guido, no se hace solo.
+    EN PAUSA (decisión de Guido, 2026-09-23): no es prioridad ahora, retomar más adelante sin fecha
+    fija.
 
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
