@@ -3150,3 +3150,33 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   más expuesta a volver a acumular historia sin criterio nuevo.
 - Pendiente (to-do 57, parte 3 de 3): `club-or-year-onboarding/SKILL.md` (885 líneas), mismo
   criterio, sesión aparte.
+
+## Versión 213 — `club-or-year-onboarding` separa criterio de historia, cierra el to-do 57 (3 de 3)
+
+### Docs
+- `.claude/skills/club-or-year-onboarding/SKILL.md` — mismo criterio ya aplicado a `club-sourcing`
+  (Versión 211) y `club-data-mapping` (Versión 212): las reglas/arquitectura vigentes y los ejemplos
+  pedagógicos que ilustran cómo aplicarlas (las 4 trampas de `brandColor` de la sección 3, el caso
+  Instituto de la sección 15) se quedan; la envoltura narrativa versionada ("Versión X, sesión tal
+  fecha", citas largas de Guido que solo daban color) se corta o se comprime al hecho seco.
+- La sección 14 (header de "Estado de resultados") era la más expuesta: relataba 3 rondas de ajuste
+  sobre el mismo problema, "1ra ronda... 2da ronda... 3ra ronda", con citas textuales de cada una —
+  quedó en 3 reglas finales con una frase de contexto cada una, sin el paso a paso.
+- Reducción real pero moderada (885 → 857 líneas, ~72,8 → ~67,5 KB): la sección 3 (arquitectura de
+  archivos para un club nuevo) es, de lejos, la más larga y la más citada por número/§ desde fuera
+  del skill (~10 lugares solo para "§3 punto 1b", la metodología de `brandColor`) y se mantuvo casi
+  intacta a propósito — comprimirla de más habría dejado el skill sin su única documentación de
+  cómo resolver el color de un club nuevo.
+- Ninguna sección se renombró ni se fusionó (siguen siendo 0-15, 17, 16 — la rareza de que la 17
+  aparezca antes que la 16 ya existía y se dejó así), así que las citas cruzadas por número/§ desde
+  `tools/audit.js`, `js/finanzas-calc.js`, `js/finanzas-render.js`, `Admin/CONVENCIONES.md`,
+  `Admin/ESTADO.md`, `data/clubs.js`, `data/racing-data.js`, `data/gimnasiaesgrima-ar-data.js`,
+  `data/instituto-data.js`, `data/stuttgart-de-data.js`, `data/augsburg-de-data.js`,
+  `data/club-leagues/gb.js` y varios `fuentes/<País>/<Club>.md` siguen apuntando a la sección
+  correcta. `node tools/audit.js` sigue en 0 P0/P1/P2.
+- Sección "Cómo mantener este skill" reescrita con el mismo bloque de criterio explícito que ya
+  tienen los otros 2 skills (qué se queda, qué se comprime, qué va a `Admin/CHANGELOG.md`/
+  `Admin/Archive/`), señalando el patrón "1ra ronda... 2da ronda..." como la señal de que una
+  sección se está volviendo changelog otra vez.
+- **Con esto se cierra el to-do 57 completo** (las 3 partes: `club-sourcing` Versión 211,
+  `club-data-mapping` Versión 212, `club-or-year-onboarding` acá) — se borra de `Admin/TODO.md`.
