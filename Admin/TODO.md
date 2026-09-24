@@ -100,15 +100,17 @@ perdieron sino que se descartaron:
     del 121 (ver `Admin/dudas-por-club.md`). Ver el detalle completo en `fuentes/Argentina/Atlanta.md`,
     `fuentes/Argentina/Banfield.md` y `fuentes/Argentina/Independiente.md`.
 
-57. REORDENAR LOS 6 SKILLS: DEJARON DE SER SKILL, SON CHANGELOG (pedido de Guido, 2026-09-23).
-    `club-sourcing` (1415 líneas, tras el to-do 52), `club-data-mapping` (1049) y
-    `club-or-year-onboarding` (885) mezclan criterio vigente con anécdotas versionadas ("Versión X,
-    sesión tal fecha..."). Separar: lo que sigue siendo criterio activo se queda en el skill, lo que ya
-    es historia (una decisión tomada una vez, un bug ya resuelto que no repite patrón) se resume fuerte
-    o se manda a `Admin/CHANGELOG.md`/`Admin/Archive/`. El to-do 52 (sección 0.1-0.3 de
-    `club-sourcing`, metodología de ángulos y escalada) YA ESTÁ HECHO y no hace falta reabrirlo — este
-    to-do reordena las 29 secciones de país existentes, no la sección 0. Candidato a partirse en 2-3
-    sesiones, una por skill grande, para no volarse el contexto de arranque de una sola.
+57. REORDENAR LOS SKILLS QUE QUEDAN: DEJARON DE SER SKILL, SON CHANGELOG (pedido de Guido,
+    2026-09-23). `club-data-mapping` (1049 líneas) y `club-or-year-onboarding` (885) mezclan criterio
+    vigente con anécdotas versionadas ("Versión X, sesión tal fecha..."). Separar: lo que sigue siendo
+    criterio activo se queda en el skill, lo que ya es historia (una decisión tomada una vez, un bug ya
+    resuelto que no repite patrón) se resume fuerte o se manda a `Admin/CHANGELOG.md`/`Admin/Archive/`.
+    **`club-sourcing` (las 29 secciones de país) YA ESTÁ HECHO** (Versión 211, mismo criterio aplicado
+    sección por sección — ver `Admin/CHANGELOG.md`). El to-do 52 (sección 0.1-0.3 de `club-sourcing`,
+    metodología de ángulos y escalada) también YA ESTÁ HECHO de antes y no hace falta reabrirlo.
+    Quedan 2 de 3: `club-data-mapping` y `club-or-year-onboarding`, cada uno su propia sesión (mismo
+    criterio de separación que ya se aplicó a `club-sourcing`, documentado en su sección "Cómo
+    mantener este skill").
 
 51. PROCESO DE EMAIL A CLUBES (pedido de Guido, 2026-09-23). Hoy `Admin/dudas-por-club.md` junta
     preguntas abiertas por club pero no hay ningún paso de "convertir esto en un mail". Diseñar: (1)

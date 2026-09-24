@@ -3092,3 +3092,32 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - No se tocaron las 29 secciones de país (eso es alcance del to-do 57) ni el formato de
   `fuentes/_indice/<País>.md` que parsea `tools/generate-fuentes-index.js` — verificado que el
   snapshot nuevo vive en el archivo de club, que ese script ni abre.
+
+## Versión 211 — Las 29 secciones de país de `club-sourcing` separan criterio de historia (to-do 57, parte 1 de 3)
+
+### Docs
+- `.claude/skills/club-sourcing/SKILL.md` — pasada completa sobre las 29 secciones de país (sección
+  0 NO se tocó, ya estaba hecha en la Versión 210). Se aplicó el criterio pedido por Guido: canal/
+  regulador, cómo usarlo, gotchas de portal reutilizables, categoría legal y "Último chequeo: <fecha>"
+  se quedan; la envoltura narrativa ("sesión 2026-09-17", "Enésimo país de la lista de 30 mejores
+  ligas del mundo", "esta sesión") se corta o se comprime a la fecha sola.
+- El hallazgo más grande: las 18 secciones de la barrida "30 mejores ligas del mundo" (12 a 29,
+  Alemania a Ucrania) repetían casi textual la misma oración de apertura ("Enésimo país de la lista
+  de 30 mejores ligas del mundo, sesión 2026-09-17...") — se cortó de las 18, sin perder ningún dato
+  técnico (URLs, entidades, gotchas de formato). Colombia (sección 2) y Brasil (sección 3) tenían la
+  mayor densidad de tags `(sesión 2026-09-XX)` sueltos dentro de gotchas por lo demás válidos — se
+  quitaron los tags, se conservó el gotcha. Los enumerados largos de "qué clubes puntuales quedaron
+  cubiertos" (Colombia tenía 18 nombres propios) se comprimieron a un conteo con puntero a
+  `fuentes/_indice/<País>.md`, que ya tiene el detalle club por club.
+- La mayoría del contenido de las 29 secciones YA ERA criterio vigente (URLs, pasos de portal,
+  gotchas de entidad/formato/rate-limit) y no narrativa — por eso el archivo bajó poco de tamaño
+  (115 → 112 KB, 1415 → ~1394 líneas): el objetivo no era achicarlo, era que lo que queda sea
+  legible como metodología y no como bitácora de sesión.
+- Sección "Cómo mantener este skill" reescrita para decir EXPLÍCITAMENTE el criterio de separación
+  (qué se queda, qué se comprime, qué va a `Admin/CHANGELOG.md`/`Admin/Archive/`), para que una
+  sesión futura no vuelva a mezclar historia con criterio al agregar un país nuevo.
+- Verificado sin `grep`: ninguna sección se renombró ni se fusionó (siguen siendo 1-29 en el mismo
+  orden), así que las citas cruzadas por número (`Admin/TODO.md`, `fuentes/<País>/<Club>.md`,
+  `CLAUDE.md`) siguen apuntando a la sección correcta. `node tools/audit.js` sigue en 0 P0/P1/P2.
+- Pendiente (to-do 57, partes 2 y 3): `club-data-mapping/SKILL.md` (1049 líneas) y
+  `club-or-year-onboarding/SKILL.md` (885 líneas), mismo criterio, sesiones separadas.

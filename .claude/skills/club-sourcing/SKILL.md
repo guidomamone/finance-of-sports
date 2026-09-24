@@ -215,13 +215,13 @@ sin ambigüedad:
   `Admin/TODO.md` o en la nota del club) en vez de hacerlo a medias adentro de una sesión que tiene
   otro objetivo.
 
-## 1. Chile — CMF, la fuente más confiable encontrada hasta ahora
+## 1. Chile — CMF
 
 Los clubes chilenos organizados como Sociedad Anónima Deportiva Profesional (SADP) que ADEMÁS son
 "emisores de valores" (RVEMI) ante la CMF (Comisión para el Mercado Financiero, cmfchile.cl) publican
-Estados Financieros Consolidados trimestrales/anuales bajo IFRS, descargables en PDF — este es,
-hasta ahora, el canal más prolijo y completo de todo el barrido sudamericano (series de 16-17 años
-consecutivos para Universidad Católica/Universidad de Chile/Colo-Colo).
+Estados Financieros Consolidados trimestrales/anuales bajo IFRS, descargables en PDF. Canal prolijo y
+completo: series de 16-17 años consecutivos para Universidad Católica/Universidad de Chile/Colo-Colo.
+Último chequeo: 2026-09.
 
 - **Cómo navegar la CMF**: el portal solo sirve el documento cuando se navega la ficha de la entidad
   con clics reales (`institucional/mercados/entidad.php?rut=...&pestania=3`, pestaña "Información
@@ -247,18 +247,18 @@ consecutivos para Universidad Católica/Universidad de Chile/Colo-Colo).
     un emisor directo: `apiws.bolsadesantiago.com/ifrs/newobtenerpdf.asp?nemo=<NEMOTECNICO>` — útil
     como atajo rápido para el año más reciente, no para el histórico completo.
 
-## 2. Colombia — Supersociedades (SIIS), sorpresa positiva de la sesión 2026-09
+## 2. Colombia — Supersociedades (SIIS)
 
 Varios clubes colombianos organizados como S.A. deben presentar un "Informe Periódico de Fin de
 Ejercicio" a la asamblea de accionistas (Circular 012 de 2022, Superintendencia Financiera de
 Colombia) con estados financieros completos, consultable gratis y sin login en el portal SIIS de la
 Superintendencia de Sociedades.
 
-**ACTUALIZADO 2026-09-22 — SIIS es una API JSON pública: NO hace falta browser.** El portal es una
-SPA cuyo backend son dos endpoints abiertos (sin login, sin API key, sin captcha), así que todo el
-flujo se scriptea con `curl`. Esto reemplaza el procedimiento de clicks que estaba acá antes (y que
-sigue siendo válido, solo que es mucho más lento). El detalle completo, con los cuerpos de request,
-está en `fuentes/Colombia/_notas-generales.md`; el resumen:
+**SIIS es una API JSON pública: NO hace falta browser.** El portal es una SPA cuyo backend son dos
+endpoints abiertos (sin login, sin API key, sin captcha), así que todo el flujo se scriptea con
+`curl` — mucho más rápido que navegar la SPA a clicks (ese procedimiento por browser sigue
+funcionando si los endpoints cambian, ver más abajo). El detalle completo, con los cuerpos de
+request, está en `fuentes/Colombia/_notas-generales.md`; el resumen:
 
 1. **Buscar / enumerar**: `POST siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr/siis_empresas/_search`
    acepta query DSL de Elasticsearch completo, agregaciones incluidas. Ya no hace falta el NIT: se
@@ -308,29 +308,22 @@ corporación). Ver el archivo de cada club.
    bloqueado por el entorno — mejor `navigate()` directo a la URL del link en vez de clickearlo.
 - El sitio a veces entra en mantenimiento ("Estamos actualizando SIIS...") por minutos — reintentar
   más tarde, no es un dead-end permanente.
-- **Con la sesión 2026-09-22 quedan cubiertos 18 de los 20 clubes de la Categoría Primera A**:
-  Millonarios, América de Cali, Atlético Nacional, Independiente Santa Fe, Junior de Barranquilla,
-  Deportivo Cali, Deportivo Pereira, Once Caldas, Deportes Tolima y Envigado (sesiones 2026-09-12 y
-  09-13), más Atlético Bucaramanga, Boyacá Chicó, Alianza FC (ex Alianza Petrolera), La Equidad,
-  Llaneros, Unión Magdalena, Fortaleza CEIF y Águilas Doradas (2026-09-22). **Ya NO hace falta
-  googlear el NIT**: con la API se busca por nombre, o se lista la liga entera agregando por CIIU.
-  Los 2 que faltan no son falta de búsqueda, tienen causa societaria documentada en su archivo —
-  **Independiente Medellín** (la S.A. figura en liquidación y opera una corporación, fuera del
-  perímetro de Supersociedades) y **Deportivo Pasto** (era asociación; se convirtió a S.A. hace
-  poco, así que debería empezar a aparecer — vale reintentar en una sesión futura).
-  Quedan sin explorar, todos con ficha muy probable bajo el mismo patrón, pero son de Primera B o ya
-  fuera de la categoría: Barranquilla F.C., Patriotas Boyacá, Real Cartagena, Cúcuta Deportivo,
-  Atlético Huila, Deportes Quindío, Jaguares, Leones, Orsomarso, Cortuluá, Bogotá F.C., Tigres,
-  Valledupar F.C., Real Santander, Universitario Popayán. El mismo listado incluye clubes de
-  **básquet** (Titanes, Fastbreak, Gigantes de Barranquilla) y de **béisbol** (Los Toros) — o sea que
-  el canal colombiano, como Companies House en Reino Unido, no depende del deporte. El informe
-  agregado de Supersociedades
+- **18 de los 20 clubes de la Categoría Primera A cubiertos** (detalle club por club en
+  `fuentes/_indice/Colombia.md`). **Ya NO hace falta googlear el NIT**: con la API se busca por
+  nombre, o se lista la liga entera agregando por CIIU. Los 2 que faltan no son falta de búsqueda,
+  tienen causa societaria documentada en su archivo — **Independiente Medellín** (la S.A. figura en
+  liquidación y opera una corporación, fuera del perímetro de Supersociedades) y **Deportivo Pasto**
+  (era asociación; se convirtió a S.A. hace poco, así que debería empezar a aparecer — vale
+  reintentar en una sesión futura). Quedan sin explorar, todos con ficha muy probable bajo el mismo
+  patrón, los clubes de Primera B. El mismo padrón incluye clubes de **básquet** y **béisbol** — o
+  sea que el canal colombiano, como Companies House en Reino Unido, no depende del deporte. El
+  informe agregado de Supersociedades
   (`supersociedades.gov.co/documents/20122/532936/Informe-futbol-pdf.pdf`) sigue sirviendo como
   cifra de control, no da datos por club.
-  - **Envigado es el mejor hallazgo hasta ahora**: SIIS lista 10 ejercicios individuales consecutivos
-    (2016-2025) bajo el mismo NIT — solo se bajó 2025 en la sesión 2026-09-13, queda pendiente bajar
-    la serie completa si se busca el histórico más largo de Colombia.
-  - **Gotcha nuevo confirmado (sesión 2026-09-13): la URL final del PDF
+  - **Envigado tiene el histórico más profundo encontrado en Colombia**: SIIS lista 10 ejercicios
+    individuales consecutivos (2016-2025) bajo el mismo NIT — solo se bajó 2025, queda pendiente
+    bajar la serie completa si se busca el histórico más largo del país.
+  - **Gotcha confirmado: la URL final del PDF
     (`.../bpmformularios/tmp/<radicado>/<radicado>.PDF`) a veces devuelve 404 en un `curl` directo
     aunque el navegador la sirva 200 OK.** Dos causas identificadas, arreglar en este orden: (1) el
     servidor parece necesitar que el navegador visite primero
@@ -339,16 +332,14 @@ corporación). Ver el archivo de cada club.
     RECIÉN DESPUÉS lanzar el `curl` a la URL `.../tmp/...PDF`; (2) además, mandar un `User-Agent` de
     navegador real y un header `Referer` apuntando a
     `.../bpmformularios/subvisor.aspx?Radicado=<token>` (`curl -A "Mozilla/5.0 ..." -e "<subvisor
-    url>"`) — sin esto también puede devolver 404 incluso con el paso (1) hecho. Con ambos pasos,
-    los 9 PDFs de los 3 clubes de esta sesión bajaron bien.
-  - **Gotcha de tooling, no del portal**: en esta sesión el sitio SIIS disparó varios pop-ups a sitios
-    de terceros sin relación (directinfo.ma, orcjamaica.com, servicio.indecopi.gob.pe) al clickear
-    ciertos elementos (ej. "Ver otros documentos adicionales") — parecen anuncios/redirects
-    inyectados en el entorno de testing, no arriesgan el hallazgo: simplemente cerrar la pestaña
-    nueva y volver a seleccionar la pestaña original de SIIS (`tabs_select`), reintentar el click si
-    hizo falta, y seguir. No confundir con un error real del portal.
+    url>"`) — sin esto también puede devolver 404 incluso con el paso (1) hecho.
+  - **Gotcha de tooling, no del portal**: el sitio SIIS puede disparar pop-ups a sitios de terceros
+    sin relación al clickear ciertos elementos (ej. "Ver otros documentos adicionales") — parecen
+    anuncios/redirects inyectados en el entorno de testing, no arriesgan el hallazgo: cerrar la
+    pestaña nueva, volver a seleccionar la pestaña original de SIIS (`tabs_select`), reintentar el
+    click si hizo falta, y seguir. No confundir con un error real del portal.
 
-## 3. Brasil — el país con mejor cobertura, gracias a la Lei do SAF
+## 3. Brasil — muy buena cobertura, gracias a la Lei do SAF
 
 Los clubes convertidos a SAF (Sociedade Anônima do Futebol, Lei 14.193/2021) publican "Demonstrações
 Financeiras" auditadas anualmente, casi siempre colgadas directo en el propio sitio del club (buscar
@@ -367,8 +358,7 @@ sección "Transparência"/"SAF"/"Governança").
     club pertenece, sobre todo con nombres de club que se repiten entre estados.
 - **Repositorios de federación estadual**: buenísima fuente alternativa cuando el club no lo cuelga
   directo, y en la práctica el canal que más clubes destrabó. Confirmados hasta hoy, SEIS estados:
-  - **São Paulo** — `futebolpaulista.com.br`, el más completo de todos: ver el punto siguiente, que
-    es el hallazgo grande de la sesión 2026-09-22.
+  - **São Paulo** — `futebolpaulista.com.br`, el más completo de todos: ver el punto siguiente.
   - **Paraná** — `federacaopr.sfo3.digitaloceanspaces.com` (Coritiba, Operário Ferroviário).
   - **Rio Grande do Sul** — `fgf.com.br/demonstracoes-financeiras-filiados` (Juventude; ojo, el
     casing del nombre de archivo por club ahí es inconsistente).
@@ -391,8 +381,8 @@ sección "Transparência"/"SAF"/"Governança").
     balances de la propia federación, ninguno de club; las federaciones de Minas Gerais
     (`fmf.com.br`) y Pará (`fpfpara.com.br` — no `fpfpa.com.br`) tampoco publican los de sus
     filiados. Chequear antes de asumir que existe.
-- **La Federação Paulista tiene un índice JSON abierto de TODOS sus clubes, año por año, 2010-2025
-  (sesión 2026-09-22). Esto reemplaza el consejo viejo de descubrir nombres de archivo con
+- **La Federação Paulista tiene un índice JSON abierto de TODOS sus clubes, año por año, 2010-2025.
+  Esto reemplaza el consejo viejo de descubrir nombres de archivo con
   `WebSearch site:futebolpaulista.com.br`**, que solo servía para el año más reciente porque los
   nombres del repositorio son irregulares a propósito (conviven `São Paulo.pdf`, `271A.pdf` y
   `BALANÇO ITUANO 2020 E PARECER DA AUDITORIA.pdf`).
@@ -433,7 +423,7 @@ sección "Transparência"/"SAF"/"Governança").
   publica desde el ejercicio 2007/08, la serie más larga de Sudamérica en el proyecto; Criciúma,
   Avaí y Vila Nova también publican sin ser SAF. No usar la forma jurídica para descartar un club.
   - **PERO el sitio propio del club suele tener una serie más profunda y más prolija que el
-    repositorio de la federación** (sesión 2026-09-16): Palmeiras (2017-2025), Corinthians
+    repositorio de la federación**: Palmeiras (2017-2025), Corinthians
     (2019-2025 en su propia sección de transparencia) y São Paulo FC (su CDN llega hasta 2006)
     superan largo a lo que ofrece `futebolpaulista.com.br` para esos mismos clubes. Revisar primero
     a fondo la sección "Transparência"/"Governança" del sitio oficial (no solo la home, el menú
@@ -452,38 +442,29 @@ sección "Transparência"/"SAF"/"Governança").
   descartar, buscar el mismo PDF mirrorado en otro dominio (ej. un portal de noticias o un sitio de
   socios que republicó el mismo documento) en vez de pelear con el bloqueo directo. **Si no hay
   mirror, un browser real sí puede pasar el challenge donde `curl` da 403/`cf-mitigated:
-  challenge`** (confirmado con Sport Recife, sesión 2026-09-16): una vez cargada la página en el
+  challenge`** (confirmado con Sport Recife): una vez cargada la página en el
   Browser pane, usar `fetch()` + `Blob` + `<a download>` desde la consola de la página para bajar el
   archivo (comparando el tamaño en bytes contra el original) — `curl` sigue fallando aunque ya se
   tenga la URL exacta en la mano, así que no vale la pena reintentarlo ahí.
 - **Un botón de descarga de "transparencia" clickeado por un browser automatizado puede disparar un
-  redirect a un sitio de terceros sin relación** (Vitória → `rcdespanyol.com`, sesión 2026-09-16) —
-  mismo patrón ya visto con SIIS Colombia (sección 2). No es un bloqueo real del club: extraer el
-  `href` real vía JS del DOM en vez de clickear el botón.
+  redirect a un sitio de terceros sin relación** (Vitória → `rcdespanyol.com`) — mismo patrón ya
+  visto con SIIS Colombia (sección 2). No es un bloqueo real del club: extraer el `href` real vía JS
+  del DOM en vez de clickear el botón.
 - **El PDF real puede estar escondido dentro de un `<iframe src="about:blank"
   data-src="...docs.google.com/viewer?url=<pdf real>">` con lazy loading** — hay que revisar el
   `outerHTML` completo de la página, no solo los `<a href>` visibles ni el `.src` actual del iframe
   (que arranca en blanco hasta que se scrollea a la vista).
 - **Comparar el tamaño en bytes de un PDF entre dos mirrors/fuentes es una forma barata y confiable
-  de confirmar que es el mismo documento** (usado repetidamente sesión 2026-09-16 para desambiguar
-  Santos/Guarani y sitio propio vs. mirror de la federación en Corinthians) — más rápido que releer
-  el texto completo cada vez.
-- **Un dead-end de una sesión anterior puede haberse destrabado solo porque la URL se movió, sin que
-  cambiara nada regulatorio** (sesión 2026-09-16: de los 5 dead-ends reintentados con un ángulo
-  nuevo, 4 — Vitória, Ceará, Fortaleza, Sport Recife — se resolvieron encontrando el portal en una
-  URL/subdominio distinto al que había fallado antes). Vale la pena reintentar periódicamente los
-  dead-ends viejos con una búsqueda fresca, no tratarlos como permanentes salvo que el bloqueo sea
-  estructural (forma jurídica, regulador inexistente).
-- **Dos dead-ends viejos más se destrabaron en la sesión 2026-09-22, y por el mismo motivo en los
-  dos: se estaba adivinando el nombre de archivo en vez de leer un índice.** **América Mineiro**
-  (que esta skill listaba como dead-end) tiene sus PDFs linkeados en el HTML de
-  `americafc.com.br/transparencia`, solo que apuntando a `irp.cdn-website.com` (CDN de Duda) y nunca
-  al dominio del club — por eso `WebSearch site:americafc.com.br` no los encontraba; la regla que
-  sale de ahí es `curl` + `grep '\.pdf'` sobre el HTML crudo antes de dar por perdido un portal que
-  "menciona" las demonstrações. **Criciúma** pasó de "solo un balance de 2013" a **14 ejercicios
-  consecutivos (2012-2025)**, vía la Federação Catarinense y su propio
-  `criciuma.com.br/portal-transparencia`: el error 500 de la sesión anterior venía de adivinar
-  nombres de archivo, no de un bloqueo.
+  de confirmar que es el mismo documento** (usado para desambiguar Santos/Guarani y sitio propio vs.
+  mirror de la federación en Corinthians) — más rápido que releer el texto completo cada vez.
+- **Un dead-end viejo puede haberse destrabado solo porque la URL se movió, sin que cambiara nada
+  regulatorio** (Vitória, Ceará, Fortaleza, Sport Recife, América Mineiro, Criciúma se destrabaron
+  así). Vale la pena reintentar periódicamente los dead-ends viejos con una búsqueda fresca, no
+  tratarlos como permanentes salvo que el bloqueo sea estructural (forma jurídica, regulador
+  inexistente). Dos causas típicas de que un dead-end viejo se destrabe: (1) el club movió el PDF a
+  un CDN externo (`irp.cdn-website.com`, no el dominio propio) — `curl` + `grep '\.pdf'` sobre el
+  HTML crudo antes de dar por perdido un portal que "menciona" las demonstrações; (2) se estaba
+  adivinando el nombre de archivo en vez de leer un índice de la federación estadual.
 - Dead-ends que siguen sin lead nuevo (no rabbit-holear más sin uno): Náutico, Marília.
   **Juventude** es un dead-end parcial: solo se encontró el ejercicio 2020 (vía el repositorio de la
   Federação Gaúcha), y prensa reporta que el club no publicó su demonstração de 2024 dentro del
@@ -518,18 +499,17 @@ Confirmado, 3 ángulos distintos, los 3 bloqueados — **no reintentar con estos
 
 ## 5. Ecuador — ningún club es todavía S.A.D.P./SAD; Supercias no aplica hasta que eso cambie
 
-**Corrección importante de la sesión 2026-09-13, sobre la primera versión de esta sección (que
-asumía Supercias como la vía correcta "en teoría"): el problema no era solo el autocomplete, era que
-Supercias estructuralmente no regula a estos clubes todavía.** Los clubes profesionales
-ecuatorianos obtienen personería jurídica vía el Ministerio del Deporte (Acuerdo Ministerial), como
-"sociedades civiles sin fines de lucro" — no como "compañías" bajo la Ley de Compañías que sí regula
-Supercias. La figura de S.A.D.P./SAD (Sociedad Anónima Deportiva) es LEGAL desde hace tiempo en
-teoría, pero recién se volvió operativa en la práctica: reforma a la Ley Orgánica del Deporte
-publicada 11-feb-2026, reglamento de la Superintendencia de Compañías emitido 23/24-jun-2026, y a
-agosto de 2026 solo UN club de todo el país (9 de Octubre, categoría inferior) había presentado
-documentación para INICIAR (no completar) el trámite — ningún club grande de Serie A lo completó
-todavía (Barcelona SC lo está "analizando", proceso estimado 12-18 meses). Ver
-`fuentes/Ecuador/_notas-generales.md` para la cronología completa con fuentes de prensa.
+**Supercias estructuralmente no regula a estos clubes todavía — no es un problema de portal.** Los
+clubes profesionales ecuatorianos obtienen personería jurídica vía el Ministerio del Deporte (Acuerdo
+Ministerial), como "sociedades civiles sin fines de lucro" — no como "compañías" bajo la Ley de
+Compañías que sí regula Supercias. La figura de S.A.D.P./SAD (Sociedad Anónima Deportiva) es LEGAL
+desde hace tiempo en teoría, pero recién se volvió operativa en la práctica: reforma a la Ley
+Orgánica del Deporte publicada 11-feb-2026, reglamento de la Superintendencia de Compañías emitido
+23/24-jun-2026, y a agosto de 2026 solo UN club de todo el país (9 de Octubre, categoría inferior)
+había presentado documentación para INICIAR (no completar) el trámite — ningún club grande de Serie
+A lo completó todavía (Barcelona SC lo está "analizando", proceso estimado 12-18 meses). Ver
+`fuentes/Ecuador/_notas-generales.md` para la cronología completa con fuentes de prensa. Último
+chequeo: 2026-09-13.
 
 **Implicación práctica para sourcing**: mientras un club no complete su conversión a SAD, buscarlo en
 el portal "Consulta de Compañías" de Supercias es un callejón sin salida estructural, no un problema
@@ -541,13 +521,13 @@ complete la conversión a SAD (chequear con `"[club] se convierte en sociedad an
 prensa antes de ir directo a Supercias), a partir de ese momento sí pasaría a estar regulado por
 Supercias y este portal volvería a ser relevante.
 
-**Qué SÍ funcionó esta sesión, sin depender de Supercias ni de la figura SAD**: varios clubes
+**Qué SÍ funciona, sin depender de Supercias ni de la figura SAD**: varios clubes
 publican voluntariamente, como sociedad civil, reportes de rendición de cuentas a sus socios en su
 propio sitio oficial — Deportivo Cuenca colgó en agosto de 2026 un "informe presidencial" (dos PDFs
 vía links de Google Drive en una nota de prensa propia) con movimientos bancarios e impuestos
 pagados; LDU Quito tiene una sección `/transparencia/` fija con estados financieros de su club social
 consolidado (aunque mezclado con colegio/country club, ver `fuentes/Ecuador/LDU Quito.md`). Ojo: esto
-es voluntario y poco común — la mayoría de los clubes chequeados esta sesión (Barcelona SC, Emelec,
+es voluntario y poco común — la mayoría de los clubes chequeados (Barcelona SC, Emelec,
 Independiente del Valle, Aucas, Delfín SC, Universidad Católica, El Nacional, Macará, Mushuc Runa,
 Técnico Universitario, Orense SC) NO tienen ninguna sección equivalente — pero vale la pena revisar
 el sitio oficial de cada club (menú completo, no solo rutas típicas `/transparencia/`) antes de
@@ -560,8 +540,7 @@ completo — releer `club-data-mapping/SKILL.md` antes de decidir si encajan en 
 Estos 4 países no tuvieron (todavía) un hallazgo de nivel "regulador que aplica a todos los clubes"
 como Chile/Colombia/Brasil — lo encontrado hasta ahora fue caso por caso, ver la ficha de cada club
 en `fuentes/<País>/<Club>.md`:
-- **Perú**: barrido de 12 clubes adicionales (sesión 2026-09-13, además de los 3 ya conocidos)
-  confirmó un patrón consistente: la enorme mayoría de los clubes de Liga 1 son **asociaciones
+- **Perú**: 15 clubes chequeados en total. Patrón consistente: la enorme mayoría de los clubes de Liga 1 son **asociaciones
   civiles sin fines de lucro** (Melgar, Cienciano, Sport Boys, Cusco FC, ADT, Alianza Atlético,
   Deportivo Municipal, Comerciantes Unidos, Sport Huancayo, Binacional — todos confirmados vía SUNAT/
   datosperu.org con tipo societario "Asociación"), sin obligación legal de publicar nada. Los pocos
@@ -600,7 +579,7 @@ en `fuentes/<País>/<Club>.md`:
     A diferencia de Colombia (Supersociedades en reorganización SÍ expone estados financieros
     completos), el sistema concursal peruano NO es un canal de estados financieros, solo de
     trazabilidad legal del proceso. FBC Melgar tiene un proceso concursal similar desde 2012 (deuda
-    con SUNAT) pero no se ubicó su expediente exacto esta sesión — de encontrarse, esperar el mismo
+    con SUNAT) pero no se ubicó su expediente exacto todavía — de encontrarse, esperar el mismo
     resultado (dead-end) salvo evidencia en contrario.
 - **Paraguay**: Olimpia/Cerro Porteño/Libertad — sin regulador tipo CMF/Supersociedades identificado,
   sin sección de transparencia financiera en ninguno de los 3 sitios oficiales, dead-end sin lead
@@ -610,11 +589,11 @@ en `fuentes/<País>/<Club>.md`:
   societario nacional con portal público (mismo patrón que Colombia/Ecuador) antes de ir club por
   club.
 
-## 7. CONCACAF (Norte/Centroamérica/Caribe) — la región más difícil, un hallazgo real inesperado en México
+## 7. CONCACAF (Norte/Centroamérica/Caribe) — la región más pobre en disclosure, un hallazgo real en México
 
-Barrido inicial de 2026-09-13, 10+ clubes entre México, Costa Rica, Honduras, Panamá, Guatemala,
-Jamaica y MLS (Estados Unidos). Confirma que esta es, hasta ahora, la región más pobre en disclosure
-público de todo el proyecto — con UNA excepción real que vale la pena explotar más en el futuro.
+México, Costa Rica, Honduras, Panamá, Guatemala, Jamaica y MLS (Estados Unidos). Región pobre en
+disclosure público en general — con UNA excepción real que vale la pena explotar más (México, ver
+abajo). Último chequeo: 2026-09-13.
 
 - **México — Club América es, de hecho, un caso "CMF/Supersociedades" oculto**: el 31/01/2024,
   Grupo Televisa escindió su negocio de fútbol (Club América) + Estadio Azteca (ahora Banorte) +
@@ -650,7 +629,7 @@ público de todo el proyecto — con UNA excepción real que vale la pena explot
 - **Jamaica — lead sin cerrar, el más prometedor de la región después de México**: la Companies Act
   2004 jamaiquina exige balance + P&L + dictamen de auditor a TODA compañía (no solo bursátiles), y
   el Companies Office of Jamaica tiene un portal de búsqueda pública con pedido de "certified
-  documents" pagos. No se pudo confirmar en esta sesión si esos documentos incluyen los estados
+  documents" pagos. No se pudo confirmar todavía si esos documentos incluyen los estados
   financieros depositados (vs. solo actos societarios) por una limitación de TOOLING (browser
   compartido con otra tarea en paralelo, pestañas cerrándose solas) — no un bloqueo real del sitio.
   Waterhouse FC Limited ya confirmado como entidad registrada candidata. Retomar con browser dedicado
@@ -664,15 +643,12 @@ público de todo el proyecto — con UNA excepción real que vale la pena explot
   Forbes/Sportico por club son estimaciones de mercado, NUNCA un estado financiero auditado — no usar
   como fuente bajo ningún concepto.
 
-## 8. África — primer barrido (sesión 2026-09-13), 0 clubes con PDF real, pero Marruecos abre una
-## pista regulatoria concreta
+## 8. África — 0 clubes con PDF real, pero Marruecos abre una pista regulatoria concreta
 
-Primer intento de sourcing fuera de Sudamérica. Se probaron 4 países (Sudáfrica primero, por tener
-la infraestructura de registro corporativo más desarrollada del continente; después Egipto,
-Marruecos y Nigeria) con varios ángulos genuinos cada uno — 0 PDFs reales conseguidos en esta
-sesión, pero cada dead-end quedó documentado a fondo (ver `fuentes/<País>/_notas-generales.md` de
-cada uno) para que una sesión futura no repita el camino. Detalle completo por país abajo; acá solo
-el resumen que importa para decidir por dónde seguir.
+Sudáfrica, Egipto, Marruecos y Nigeria chequeados, cada uno con varios ángulos genuinos — 0 PDFs
+reales conseguidos, pero cada dead-end quedó documentado a fondo (ver
+`fuentes/<País>/_notas-generales.md` de cada uno) para que una sesión futura no repita el camino.
+Último chequeo: 2026-09-13.
 
 - **Sudáfrica — dead-end ESTRUCTURAL (no reintentar sin un dato nuevo)**: los clubes de la PSL están
   constituidos como "(Pty) Ltd" (private companies), y la Sección 33 de la Companies Act
@@ -719,12 +695,12 @@ Ningún club africano (de los investigados en ningún país) cotiza en ninguna b
 existe ningún club de fútbol africano listado directamente en bolsa (a diferencia de casos europeos
 como Ajax o Borussia Dortmund) — confirmado con una búsqueda específica de este punto.
 
-## 9. Reino Unido — Companies House, el mejor canal del proyecto, y sirve para CUALQUIER deporte
+## 9. Reino Unido — Companies House, sirve para CUALQUIER deporte
 
-Primer barrido 2026-09-13. Toda sociedad limitada británica está obligada por la Companies Act 2006
-a depositar cuentas anuales auditadas, y **Companies House las publica enteras, gratis, sin login,
-sin API key y sin límite** — un `curl` con User-Agent de navegador alcanza. No hay equivalente al
-`auth`/`send` de la CMF chilena, al Referer del SIIS colombiano ni al pago del OMPIC marroquí.
+Toda sociedad limitada británica está obligada por la Companies Act 2006 a depositar cuentas anuales
+auditadas, y **Companies House las publica enteras, gratis, sin login, sin API key y sin límite** —
+un `curl` con User-Agent de navegador alcanza. No hay equivalente al `auth`/`send` de la CMF chilena,
+al Referer del SIIS colombiano ni al pago del OMPIC marroquí. Último chequeo: 2026-09-16.
 
 Como la obligación es por forma jurídica y no por deporte, de un solo barrido salieron 24 entidades
 de 4 deportes: 10 clubes de fútbol (9 Premier League + Celtic en Escocia), 4 de rugby union
@@ -760,7 +736,7 @@ canal de la FCA resultó incluso mejor:
 - Listar (JSON, sin login): `https://mutuals.fca.org.uk/Documents/GetSocietiesDocument?societyId=<id>`.
   **Gotcha de parseo**: devuelve dos formas distintas según la sociedad, a veces un array pelado y a
   veces `{sEcho, iTotalRecords, aaData}`. Si no se contemplan las dos, el listado sale vacío sin
-  error (en esta sesión 6 condados dieron "0 memorias" hasta arreglarlo).
+  error (6 condados dieron "0 memorias" hasta arreglarlo).
 - Bajar: `https://mutuals.fca.org.uk/Documents/Download/<docId>`.
 - **Atajo de descubrimiento**: el padrón COMPLETO de las 32.430 sociedades registradas está como CSV
   abierto en `https://fcastoragemprprod.blob.core.windows.net/societylist/SocietyList.csv`. Filtrando
@@ -771,10 +747,7 @@ canal de la FCA resultó incluso mejor:
 
 **Escocia** es el mismo Companies House, con números `SC` (Celtic = `SC003487`).
 
-**Actualizado (sesión 2026-09-16): los 20 clubes de la Premier League 2025/26 ya están cubiertos**
-(los 10 que faltaban — Bournemouth, Brentford, Brighton, Burnley, Crystal Palace, Fulham, Leeds,
-Nottingham Forest, Sunderland, Wolves — se bajaron esa sesión). Dos gotchas nuevos que costó
-encontrar:
+**Los 20 clubes de la Premier League 2025/26 están cubiertos.** Dos gotchas que costó encontrar:
 
 - **La entidad correcta a veces es una HOLDING separada de la operativa, y el nombre no siempre lo
   delata.** Crystal Palace no está bajo "CPFC Limited" sino bajo `CPFC 2010 Limited` (n° 07206409);
@@ -818,7 +791,7 @@ como descarte rápido) → `https://data.sec.gov/submissions/CIK<cik a 10 dígit
 - Los documentos son **HTML con texto real**, no escaneos: cero OCR. El más barato de procesar de
   todos los canales del proyecto.
 - El mismo canal sirve para clubes que no son de EE.UU.: Manchester United plc presenta un 20-F,
-  así que es el único club inglés de esta sesión que NO hay que OCRear.
+  así que es el único club inglés del proyecto que NO hay que OCRear.
 - **Gotcha**: la SEC devuelve **HTTP 403** si el `User-Agent` no identifica a quien consulta. Un UA
   de navegador común NO alcanza (sí alcanza en Companies House); hay que mandar el formato que pide
   la SEC, `Nombre contacto@dominio`.
@@ -835,13 +808,10 @@ locally`. No es un problema del PDF ni del OCR: el sandbox bloquea esa ruta. Hay
 imágenes al directorio de scratchpad de la sesión y OCRear desde ahí. Se pierde bastante tiempo
 buscándole la vuelta si uno cree que el PDF está roto.
 
-## 12. Alemania — Unternehmensregister + DFL Finanzkennzahlen, la mejor cobertura de liga completa
-## del proyecto hasta ahora
+## 12. Alemania — Unternehmensregister + DFL Finanzkennzahlen
 
-Primer barrido (sesión 2026-09-16/17), dentro de una lista más larga de las 30 mejores ligas del
-mundo por consenso general, recorrida en orden alfabético. Alemania resultó tener DOS canales
-oficiales que juntos cubren los 18 clubes de la Bundesliga sin excepción, algo que no había pasado
-en ningún otro país del proyecto:
+Alemania tiene DOS canales oficiales que juntos cubren los 18 clubes de la Bundesliga sin excepción.
+Último chequeo: 2026-09-17.
 
 - **Unternehmensregister** (`unternehmensregister.de`, gratis, sin login) es el equivalente alemán
   de Companies House: toda sociedad (GmbH, AG, KGaA) debe depositar su Jahresabschluss
@@ -895,9 +865,8 @@ en ningún otro país del proyecto:
 
 ## 13. Austria — Firmenbuch bloqueado por pago, pero la liga entera publica un agregado gratis
 
-Segundo país de la lista de "30 mejores ligas del mundo" recorrida en orden alfabético (sesión
-2026-09-17), inmediatamente después de Alemania. A diferencia de Alemania, el registro mercantil
-austríaco NO es gratis para el documento completo:
+A diferencia de Alemania, el registro mercantil austríaco NO es gratis para el documento completo.
+Último chequeo: 2026-09-17.
 
 - **Firmenbuch** (`justizonline.gv.at`, y su índice de eventos `evi.gv.at`): la búsqueda de la
   sociedad y sus datos básicos (razón social, capital, directores, fecha exacta de cada depósito de
@@ -921,20 +890,17 @@ austríaco NO es gratis para el documento completo:
   agregado ÖFBL); el único sin ningún dato ni siquiera agregado por confirmar es un caso a revisar
   si se retoma Austria.
 
-## 14. Bélgica — el canal más abierto del proyecto hasta ahora, sin login y scriptable por API
+## 14. Bélgica — sin login y scriptable por API
 
-Tercer país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17), inmediatamente después
-de Austria. La **Centrale des bilans** del Banco Nacional de Bélgica (`consult.cbso.nbb.be`) resultó
-ser, hasta ahora, el registro mercantil más fácil de todo el proyecto:
+La **Centrale des bilans** del Banco Nacional de Bélgica (`consult.cbso.nbb.be`) es gratis, sin
+login, y con API JSON pública — no hace falta ni un browser real:
+`.../api/rs-consult/published-deposits?enterpriseNumber=<BCE>` lista todos los depósitos de una
+entidad, y `.../api/external/broker/public/deposits/pdf/<id>` baja cada PDF directo con `curl`. Es
+un nivel más abierto que Companies House (UK) o Unternehmensregister (Alemania), que sí necesitan
+navegación real en algún punto del flujo. Último chequeo: 2026-09-17.
 
-- **Gratis, sin login, Y con una API JSON pública** — no hace falta ni un browser real:
-  `.../api/rs-consult/published-deposits?enterpriseNumber=<BCE>` lista todos los depósitos de una
-  entidad, y `.../api/external/broker/public/deposits/pdf/<id>` baja cada PDF directo con `curl`. Es
-  un nivel más abierto que Companies House (UK) o Unternehmensregister (Alemania), que sí necesitan
-  navegación real en algún punto del flujo.
-- **Esto permitió series MUY largas en poco tiempo**: Club Brugge (35 ejercicios, 1999-2025),
-  Standard Liège (31), Union Saint-Gilloise (28) y Westerlo (27) — las series más profundas
-  encontradas en cualquier país hasta ahora, salvo Reino Unido (cricket).
+- **Series muy largas**: Club Brugge (35 ejercicios, 1999-2025), Standard Liège (31), Union
+  Saint-Gilloise (28) y Westerlo (27).
 - **El nombre del club casi nunca es la razón social legal, y puede haber homónimos con turnover en
   blanco**: hay que buscar por el número de empresa (BCE) correcto, y cuando existan varias
   entidades con nombres parecidos, comparar el campo de turnover (Omzet) del depósito más reciente
@@ -953,10 +919,9 @@ ser, hasta ahora, el registro mercantil más fácil de todo el proyecto:
 
 ## 15. China — mayormente dead-end por diseño societario, pero NO es un dead-end de liga completa
 
-Cuarto país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17), primero donde el
-resultado fue casi todo dead-end. Distinto de Nigeria (sección 8), donde no hay ni estructura
-societaria de la que exigir nada: acá SÍ hay sociedades reales, solo que por diseño (accionista
-único, sin obligación de depósito) casi ninguna genera disclosure público.
+Distinto de Nigeria (sección 8), donde no hay ni estructura societaria de la que exigir nada: en
+China SÍ hay sociedades reales, solo que por diseño (accionista único, sin obligación de depósito)
+casi ninguna genera disclosure público. Último chequeo: 2026-09-17.
 
 - **El ángulo que sí funciona, cuando funciona, es el mismo de México/Ollamani (sección 7) y
   EEUU/SEC (sección 10): rastrear si el accionista CONTROLANTE del club cotiza en alguna bolsa**
@@ -984,11 +949,10 @@ societaria de la que exigir nada: acá SÍ hay sociedades reales, solo que por d
 
 ## 16. Corea del Sur — DART funciona como un EDGAR/SEC coreano, para los clubes de chaebol
 
-Quinto país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). Mismo patrón que
-México/Ollamani (sección 7) y EEUU/SEC (sección 10): varios clubes de la K League 1 son filiales
-directas de conglomerados surcoreanos (chaebols) que cotizan, y el regulador de mercado —
-**DART** (`dart.fss.or.kr`, Financial Supervisory Service) — es gratis, sin login, con texto nativo
-en los PDF (cero OCR necesario).
+Mismo patrón que México/Ollamani (sección 7) y EEUU/SEC (sección 10): varios clubes de la K League 1
+son filiales directas de conglomerados surcoreanos (chaebols) que cotizan, y el regulador de mercado
+— **DART** (`dart.fss.or.kr`, Financial Supervisory Service) — es gratis, sin login, con texto nativo
+en los PDF (cero OCR necesario). Último chequeo: 2026-09-17.
 
 - **Buscar SIEMPRE por la razón social legal de la entidad operadora, nunca el nombre público del
   club** — mismo gotcha que Alemania (razón social vs. nombre de fantasía): "에프씨서울" (el nombre
@@ -1012,12 +976,11 @@ en los PDF (cero OCR necesario).
 
 ## 17. Croacia — sin registro central gratis, pero el mandato de licenciamiento de la liga alcanza
 
-Sexto país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). A diferencia de Alemania/
-Austria/Bélgica, el registro mercantil central croata (**RGFI-JAV**, operado por FINA,
-`rgfi.fina.hr`) NO es gratis: exige cuenta (usuario+contraseña+reCAPTCHA) para ver o descargar
-cualquier documento. El único dato abierto sin login es un CSV de balances *abreviados* de empresas
-micro/pequeñas en `data.gov.hr` — ningún club HNL entra ahí (facturan demasiado). No crear cuenta
-para esto (regla general del proyecto).
+A diferencia de Alemania/Austria/Bélgica, el registro mercantil central croata (**RGFI-JAV**, operado
+por FINA, `rgfi.fina.hr`) NO es gratis: exige cuenta (usuario+contraseña+reCAPTCHA) para ver o
+descargar cualquier documento. El único dato abierto sin login es un CSV de balances *abreviados* de
+empresas micro/pequeñas en `data.gov.hr` — ningún club HNL entra ahí (facturan demasiado). No crear
+cuenta para esto (regla general del proyecto). Último chequeo: 2026-09-17.
 
 - **El canal real que SÍ funcionó fue sourcing directo club por club en el sitio propio de cada
   uno**, sostenido por el mandato de licenciamiento de la HNS (Hrvatski nogometni savez): los 10
@@ -1037,11 +1000,11 @@ para esto (regla general del proyecto).
   Slaven Belupo 2019-2023) — no es un dead-end confirmado, retomar en una sesión futura cuando el
   servicio esté disponible, antes de asumir que esos ejercicios no existen.
 
-## 18. Dinamarca — el mejor canal del proyecto junto con Bélgica, y una idea reutilizable
+## 18. Dinamarca — mismo patrón que Bélgica, y una idea reutilizable
 
-Séptimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). La API pública de la
-Erhvervsstyrelsen (danés: el registro mercantil estatal) resultó tan buena como la Centrale des
-bilans belga (sección 14), y por el mismo motivo: es una API, no una interfaz web para humanos.
+La API pública de la Erhvervsstyrelsen (el registro mercantil estatal danés) es tan buena como la
+Centrale des bilans belga (sección 14), y por el mismo motivo: es una API, no una interfaz web para
+humanos. Último chequeo: 2026-09-17.
 
 - **`distribution.virk.dk/offentliggoerelser` es un Elasticsearch público, gratis, sin login y sin
   bloqueo de Cloudflare** — se busca por `cvrNummer` y cada resultado trae la URL directa del
@@ -1065,8 +1028,8 @@ bilans belga (sección 14), y por el mismo motivo: es una API, no una interfaz w
 
 ## 19. Francia — sin registro mercantil abierto, pero la DNCG publica bilanes individuales por club
 
-Octavo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). A diferencia de
-Bélgica/Dinamarca, el registro mercantil francés NO es abierto de punta a punta:
+A diferencia de Bélgica/Dinamarca, el registro mercantil francés NO es abierto de punta a punta.
+Último chequeo: 2026-09-17.
 
 - **`data.inpi.fr`** tiene la ficha de identidad de cada sociedad (SIREN, forma jurídica, capital,
   auditor) 100% pública y gratis, pero la lista de "Comptes annuels" depositados exige resolver un
@@ -1096,15 +1059,14 @@ Bélgica/Dinamarca, el registro mercantil francés NO es abierto de punta a punt
   DNCG (no un balance propio descargado aparte) — suficiente para cargar, pero sin la profundidad
   individual de Bélgica/Dinamarca.
 
-## 20. Grecia — el primer país con el 100% de la liga top cubierta con un solo canal
+## 20. Grecia — 100% de la liga top cubierta con un solo canal
 
-Noveno país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). El **ΓΕΜΗ** (Γενικό
-Εμπορικό Μητρώο, el registro mercantil general griego, `publicity.businessportal.gr`) funcionó al
-mismo nivel que Bélgica/Dinamarca: gratis, sin login, sin captcha, con descarga directa por API
-(`/api/download/financial/<id>?companyId=<ΓΕΜΗ>`) — ni siquiera hace falta un click de navegador
-real, a diferencia de Alemania/UK. Resultado: **los 14 clubes de la Super League Greece 2025/26
-quedaron cubiertos con documentos reales, sin ningún dead-end** — la primera vez en el proyecto que
-una liga top entera se cubre al 100% con un solo canal.
+El **ΓΕΜΗ** (Γενικό Εμπορικό Μητρώο, el registro mercantil general griego,
+`publicity.businessportal.gr`) funciona al mismo nivel que Bélgica/Dinamarca: gratis, sin login, sin
+captcha, con descarga directa por API (`/api/download/financial/<id>?companyId=<ΓΕΜΗ>`) — ni
+siquiera hace falta un click de navegador real, a diferencia de Alemania/UK. Los 14 clubes de la
+Super League Greece 2025/26 quedaron cubiertos con documentos reales, sin ningún dead-end. Último
+chequeo: 2026-09-17.
 
 - **Buscar por razón social o "ΠΑΕ + nombre" no siempre alcanza**: varios clubes (Panathinaikos,
   Panetolikos, PAOK, Volos, Kifisia) necesitaron variantes de búsqueda para encontrar la ΠΑΕ
@@ -1122,12 +1084,12 @@ una liga top entera se cubre al 100% con un solo canal.
 
 ## 21. Italia — no es un registro mercantil, es la obligación de licencia UEFA
 
-Décimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). El Registro delle
-Imprese italiano es **pago** para terceros (tarjeta de crédito, tarifas del decreto MISE 2007) —
-mismo patrón que Austria/Croacia, no el de Bélgica/Dinamarca/Grecia. Pero acá el registro mercantil
-no hizo falta: el motor real es la obligación de disclosure del **Manuale delle Licenze UEFA**, que
-lleva a la mayoría de los clubes a publicar voluntariamente su bilancio en la sección
-"trasparenza"/"licenze-uefa" de su propio sitio, cotización aparte.
+El Registro delle Imprese italiano es **pago** para terceros (tarjeta de crédito, tarifas del
+decreto MISE 2007) — mismo patrón que Austria/Croacia, no el de Bélgica/Dinamarca/Grecia. Pero acá
+el registro mercantil no hace falta: el motor real es la obligación de disclosure del **Manuale
+delle Licenze UEFA**, que lleva a la mayoría de los clubes a publicar voluntariamente su bilancio en
+la sección "trasparenza"/"licenze-uefa" de su propio sitio, cotización aparte. Último chequeo:
+2026-09-17.
 
 - **Hallazgo transversal, aplicable a cualquier país nuevo con clubes que jueguen competiciones
   UEFA**: antes de asumir que hace falta un registro mercantil o una bolsa, chequear si el club
@@ -1150,11 +1112,10 @@ lleva a la mayoría de los clubes a publicar voluntariamente su bilancio en la s
   Udinese) — vale la pena probar Wayback Machine antes de descartar, no asumir dead-end por un 404
   directo.
 
-## 22. Noruega — el mejor canal del proyecto hasta ahora, con un gotcha real de URL no documentada
+## 22. Noruega — canal excelente, con un gotcha real de URL no documentada
 
-Undécimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). El
-**Regnskapsregisteret** del Brønnøysundregistrene (el registro central noruego) es, hasta ahora, el
-mejor resultado del proyecto:
+El **Regnskapsregisteret** del Brønnøysundregistrene (el registro central noruego). Último chequeo:
+2026-09-17.
 
 - **`data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/<organisasjonsnummer>/<año>`
   descarga por `curl` directo, sin login, sin captcha, sin pago**, con series de hasta 18 ejercicios
@@ -1181,10 +1142,9 @@ mejor resultado del proyecto:
 
 ## 23. Países Bajos — KvK de pago, pero el mandato de licencia F.04 de la KNVB alcanza igual
 
-Duodécimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). La Kamer van
-Koophandel (KvK, el registro mercantil neerlandés) confirma el patrón de pago por documento
-(€3,90/documento, tarifa 2026) — mismo grupo que Austria/Croacia/Italia, no el de Bélgica/Dinamarca/
-Grecia/Noruega.
+La Kamer van Koophandel (KvK, el registro mercantil neerlandés) confirma el patrón de pago por
+documento (€3,90/documento, tarifa 2026) — mismo grupo que Austria/Croacia/Italia, no el de
+Bélgica/Dinamarca/Grecia/Noruega. Último chequeo: 2026-09-17.
 
 - **El canal real fue el mandato de licencia F.04 de la KNVB** (la federación neerlandesa): obliga
   a cada club a publicar su jaarverslag en su propio sitio, y la KNVB mantiene un PDF-índice por
@@ -1207,11 +1167,9 @@ Grecia/Noruega.
   fines de lucro) — confirmar si el criterio de `club-data-mapping` aplica igual antes de mapear
   (duda abierta en `Admin/dudas-por-club.md`).
 
-## 24. Portugal — la mejor cobertura de liga completa hasta ahora, y una tercera red de rescate nueva
+## 24. Portugal — muy buena cobertura de liga completa, y una tercera red de rescate reutilizable
 
-Decimotercer país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). 17 de 18 clubes
-de la Primeira Liga 2025/26 quedaron con datos reales — la mejor cobertura de liga completa del
-proyecto hasta ahora.
+17 de 18 clubes de la Primeira Liga 2025/26 quedaron con datos reales. Último chequeo: 2026-09-17.
 
 - **Sporting CP dio 26 ejercicios ININTERRUMPIDOS (1999-2024/25)** — Club Brugge (Bélgica, sección
   14) tiene 35 ejercicios nominales pero con "correction" y algún hueco de por medio; Sporting es
@@ -1237,18 +1195,18 @@ proyecto hasta ahora.
 
 ## 25. República Checa — otro registro gratis de primer nivel, y dos formatos nuevos para el `.gitignore`
 
-Decimocuarto país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). `or.justice.cz`
-(la Sbírka listin, parte del registro público checo) funcionó para los 16 de 16 clubes de la Chance
-Liga 2025/26 — gratis, sin login, sin captcha, PDFs con texto nativo (cero OCR). Se suma al grupo de
-mejores canales del proyecto junto con Bélgica/Dinamarca/Grecia/Noruega.
+`or.justice.cz` (la Sbírka listin, parte del registro público checo) funciona para los 16 de 16
+clubes de la Chance Liga 2025/26 — gratis, sin login, sin captcha, PDFs con texto nativo (cero OCR).
+Mismo grupo de mejores canales del proyecto que Bélgica/Dinamarca/Grecia/Noruega. Último chequeo:
+2026-09-17.
 
 - **100% scripteable por `curl` puro, sin browser**: con un cookie-jar temporal por documento
   alcanza — no hizo falta ni un solo click de navegador real. Sesión con más ejercicios
-  descargados por club de todo el país hasta ahora: Karviná con 34 documentos.
+  descargados por club de todo el país: Karviná con 34 documentos.
 - **Casi todos los clubes son a.s. (akciová společnost), salvo Pardubice**, que sigue siendo z.s.
   (spolek, asociación sin fines de lucro) y aun así deposita cuentas — no asumir que la forma
   jurídica "asociación" bloquea el disclosure sin confirmar primero en el registro.
-- **Dos formatos nuevos que el `.gitignore` no contemplaba, agregados esta sesión**: algunos
+- **Dos formatos que el `.gitignore` no contemplaba**: algunos
   depósitos vienen como `.docx` (Viktoria Plzeň) o como XML/iXBRL puro (Jablonec) en vez de PDF —
   mismo criterio que TIFF/XHTML de Dinamarca (sección 18): documento fuente crudo queda local,
   aunque sea chico (13-49 KB en este caso, el criterio no depende del tamaño). Antes de commitear
@@ -1264,9 +1222,8 @@ mejores canales del proyecto junto con Bélgica/Dinamarca/Grecia/Noruega.
 
 ## 26. Rusia — accesible pese al contexto geopolítico, vía un dominio redirigido
 
-Decimoquinto país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17/18). Contrario a lo
-esperado por el aislamiento de varios servicios rusos desde 2022, el registro financiero SÍ resultó
-accesible desde este entorno:
+Contrario a lo esperado por el aislamiento de varios servicios rusos desde 2022, el registro
+financiero SÍ es accesible desde este entorno. Último chequeo: 2026-09-18.
 
 - **`bo.nalog.ru` redirige (HTTP 302) a un dominio nuevo, `bo.nalog.gov.ru`, que carga perfecto**:
   HTTP 200, sin captcha, sin login, con una API JSON pública 100% scripteable por `curl` — mismo
@@ -1295,12 +1252,11 @@ accesible desde este entorno:
 
 ## 27. Suiza — Zefix es dead-end de país, pero la mitad de la liga publica voluntariamente
 
-Decimosexto país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). **Zefix** (el
-índice central de sociedades suizas) es un dead-end estructural CONFIRMADO, no por falta de
-búsqueda: solo da identidad básica gratis, y el Código de Obligaciones suizo no exige depósito
-público de cuentas anuales salvo para sociedades cotizantes o de "interés público" (ningún club de
-la Super League cotiza). La API pública de Zefix devuelve 401 sin credenciales pedidas por email —
-no vale la pena insistir sin ese paso previo.
+**Zefix** (el índice central de sociedades suizas) es un dead-end estructural CONFIRMADO, no por
+falta de búsqueda: solo da identidad básica gratis, y el Código de Obligaciones suizo no exige
+depósito público de cuentas anuales salvo para sociedades cotizantes o de "interés público" (ningún
+club de la Super League cotiza). La API pública de Zefix devuelve 401 sin credenciales pedidas por
+email — no vale la pena insistir sin ese paso previo. Último chequeo: 2026-09-17.
 
 - **6 de 12 clubes publican voluntariamente en su propio sitio** (Basel, St. Gallen, Luzern, Thun,
   Young Boys) — mismo patrón de "publicación voluntaria" ya visto en Ecuador (Deportivo Cuenca,
@@ -1325,13 +1281,15 @@ no vale la pena insistir sin ese paso previo.
 
 ## 28. Turquía — los 4 grandes cotizan DIRECTO como club-asociación, caso único en el proyecto
 
-Decimoséptimo país de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18, sesión
-INCOMPLETA por el Browser pane caído — ver gotcha abajo, retomar cuando esté disponible).
+**PENDIENTE DE RETOMAR: sesión incompleta por el Browser pane caído** (ver gotcha abajo) — no dar
+por agotado Turquía sin volver a intentar KAP con browser disponible.
+
 Galatasaray, Fenerbahçe, Beşiktaş y Trabzonspor son un caso que no había aparecido en ningún otro
 país: el club-asociación (dernek) mismo cotiza directo en Borsa İstanbul, sin necesidad de una
 holding/sociedad anónima separada como Juventus/Ajax/Man Utd/Eagle Football Group. Esto los sujeta
 directo a la obligación de disclosure de **KAP** (Kamuyu Aydınlatma Platformu, `kap.org.tr`) — el
-equivalente turco a EDGAR/HKEXnews, gratis, con series largas y auditadas.
+equivalente turco a EDGAR/HKEXnews, gratis, con series largas y auditadas. Último chequeo:
+2026-09-18.
 
 - **Galatasaray: serie completa 2012/13-2024/25 (13 ejercicios)** — el mejor resultado del país.
 - **KAP tiene un gotcha de tooling real**: la URL de resumen de un emisor es fetchable por
@@ -1373,12 +1331,11 @@ equivalente turco a EDGAR/HKEXnews, gratis, con series largas y auditadas.
 
 ## 29. Ucrania — no es un registro mercantil, es la ley de contabilidad la que obliga a publicar
 
-Decimoctavo y último país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18,
-durante la guerra iniciada en 2022 — sourcing puro de datos financieros públicos, sin ninguna
-interacción con los clubes). El registro estatal ucraniano (`usr.minjust.gov.ua`) es solo de
-identidad, no sirve balances. **SMIDA** (НКЦПФР, el regulador de valores) sí es un canal real, pero
-solo aplica a los 2 clubes que son sociedades anónimas (Veres ПАТ, Shakhtar ПрАТ) — el resto son
-ТОВ (LLC), estructuralmente fuera de SMIDA.
+Sourcing puro de datos financieros públicos, sin ninguna interacción con los clubes. El registro
+estatal ucraniano (`usr.minjust.gov.ua`) es solo de identidad, no sirve balances. **SMIDA** (НКЦПФР,
+el regulador de valores) sí es un canal real, pero solo aplica a los 2 clubes que son sociedades
+anónimas (Veres ПАТ, Shakhtar ПрАТ) — el resto son ТОВ (LLC), estructuralmente fuera de SMIDA.
+Último chequeo: 2026-09-18.
 
 - **El canal que de verdad abrió el país fue el art. 14 de la Ley ucraniana de Contabilidad**: toda
   empresa "mediana"/"grande" (sea cual sea su forma jurídica) debe publicar su estado financiero
@@ -1407,9 +1364,31 @@ sospecha de dead-end estructural sin confirmar).
 
 ## Cómo mantener este skill
 
-Actualizar esta sección la primera vez que un país nuevo produzca un hallazgo real de metodología
-(un regulador que aplica a todos los clubes de ese país, un gotcha de navegación que costó
-descubrir) — no hace falta una entrada por cada club individual, eso vive en `fuentes/<País>/
-<Club>.md`. Si un ángulo ya documentado acá como "bloqueado" se destraba en el futuro (ej. Uruguay
-consigue un pedido de acceso a información pública), actualizar esa sección en vez de dejarla
-desactualizada diciendo que sigue bloqueado.
+Actualizar la sección del país correspondiente la primera vez que produzca un hallazgo real de
+metodología (un regulador que aplica a todos los clubes de ese país, un gotcha de navegación que
+costó descubrir) — no hace falta una entrada por cada club individual, eso vive en
+`fuentes/<País>/<Club>.md`. Si un ángulo ya documentado acá como "bloqueado" se destraba en el futuro
+(ej. Uruguay consigue un pedido de acceso a información pública), actualizar esa sección en vez de
+dejarla desactualizada diciendo que sigue bloqueado.
+
+**Este es un skill de criterio, no un changelog (pedido de Guido, to-do 57, 2026-09-23).** Al
+agregar o editar una sección de país, separar tres cosas:
+
+- **Se queda en el skill** (tal cual o resumido): el canal/regulador en sí y cómo usarlo (URLs,
+  parámetros, forma exacta del formulario), gotchas de portal que pueden repetirse (rate limits,
+  formatos de archivo raros, captchas, bloqueos de WAF, entidad equivocada vs. entidad correcta), la
+  categoría legal que determina si un club PUEDE tener balance público, y una fecha de "Último
+  chequeo" (importa para saber si conviene revalidar).
+- **Se comprime a una línea o se corta**: la envoltura de historia — "en la sesión del X, un agente
+  encontró Y" se convierte en el hecho seco ("País: hallazgo, verificado fecha"). El PROCESO de cómo
+  se llegó a un hallazgo (qué se probó y falló antes) solo vale la pena conservarlo si es un patrón
+  repetible en OTRO club del mismo país; si es anecdótico de un club puntual, va al archivo de ese
+  club (`fuentes/<País>/<Club>.md`), no acá. Un enumerado largo de "qué clubes puntuales quedaron
+  cubiertos" tampoco va acá completo: un conteo (`X de Y clubes`) alcanza, el detalle club por club
+  ya vive en `fuentes/_indice/<País>.md`.
+- **Va a `Admin/CHANGELOG.md` o `Admin/Archive/`**: decisiones tomadas una vez que ya están cerradas
+  y no van a volver a discutirse, bugs de tooling ya resueltos que no van a repetirse en otro país.
+  Antes de archivar algo, sacarle lo que todavía sirve como criterio.
+
+Una sección de país que empieza a acumular "sesión 2026-XX-XX" repetidas, o "N-ésimo país de tal
+barrido", es la señal de que se está volviendo changelog otra vez — cortarlo ahí, no dejarlo crecer.
