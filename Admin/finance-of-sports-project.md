@@ -6111,3 +6111,72 @@ ingresos" en vez de en `player_sales` — visible en el propio desglose de la no
 había separado. Ninguno de los 20 reportes de los sub-agentes había marcado esto como duda: los dos
 casos pasaron el tie-out (la plata estaba bien sumada) pero categorizada mal, que es exactamente el
 tipo de error que un total correcto no delata y que este chequeo existe para cazar.
+
+# Versión 210 — Sourcing pasa de "catálogo de gotchas" a tener un proceso: la escalera de ángulos
+
+`club-sourcing/SKILL.md` llevaba 29 secciones de país documentando qué funcionó y qué no, pero nunca
+había respondido tres preguntas de Guido (pedido textual, 2026-09-23): cuándo un agente tiene que
+dejar de insistir con un club, cómo una sesión nueva sabe qué probó una sesión vieja sin releer 610
+archivos de prosa libre, y cuándo la respuesta correcta es escribirle al club en vez de seguir
+buscando. La consigna explícita fue "sesión de diseño, en frío": no sourcear nada nuevo, destilar el
+patrón de lo que YA había pasado esa misma semana.
+
+## Por qué "destilar", no "inventar"
+
+El material estaba fresco y bien documentado: dos clubes (Chaco For Ever, Gimnasia y Tiro Salta)
+cerrados el mismo día con el mismo criterio implícito de "3 ángulos reales agotados, nada más que
+probar" — pero uno de los dos, Gimnasia y Tiro, se dejó A PROPÓSITO sin cerrar del todo porque
+quedaba una sección del sitio sin abrir. Ese par es el experimento natural que separó "agotar una
+familia de ángulo" de "haber tirado varios intentos": el criterio de STOP no salió de pensarlo en
+abstracto, salió de notar qué distinguía a los dos casos.
+
+El segundo patrón, más caro: Talleres y Gimnasia y Esgrima La Plata habían sido dados por perdidos en
+sesiones viejas ("solo memorias narrativas") y una sesión posterior encontró el balance real al lado,
+en un post de prensa distinto del que aloja la Memoria. La lectura fácil ("el club no publica
+balance") no era falsa por mala fe, era falsa porque nadie había mirado el post de al lado. De ahí
+salió la regla más contraintuitiva de la 0.1: "memoria narrativa confirmada" NO es señal de dead-end,
+es señal de que falta seguir mirando dentro del MISMO sitio.
+
+## La pregunta que Guido no dejó que se inventara sola
+
+El número exacto de "cuántos ángulos alcanzan antes de parar" se le preguntó directo, en vez de
+asumirlo — el propio pedido lo marcaba como una llamada de costo/producto, no algo derivable de los
+ejemplos. Guido eligió "agotar las familias a fondo, sin tope fijo de intentos", pero pidió además
+saber qué hacen los agentes de research reales para tomar esa misma decisión, con una advertencia
+explícita: sus tokens son más limitados que los de una cuenta de Anthropic, así que la respuesta no
+podía ser "investigar más a fondo" como excusa para gastar más. La respuesta corta que ya se sabía
+sin research nuevo: los agentes de research de producción (incluido el multi-agent researcher que
+Anthropic documentó de sí mismo) no usan un contador de pasos, usan una señal de rendimientos
+decrecientes — seguir mientras el próximo intento trae información nueva, parar cuando dos intentos
+seguidos repiten lo que ya se sabía. Esa señal es la que quedó escrita como el mecanismo concreto de
+"cuándo una familia está agotada", y se usó además para justificar por qué el guessing de nombres de
+archivo (la técnica que originalmente motivó el pedido de Guido — "un agente que gasta presupuesto de
+tokens adivinando patrones sin fin") necesita un tope explícito que las demás familias no necesitan:
+es la única técnica sin una señal de redundancia natural que la frene sola.
+
+## El formato de "ya se probó esto", sin agregar una base de datos
+
+La segunda pieza (0.2) tenía una restricción dura: este proyecto es estático de punta a punta, así
+que la solución no podía ser una herramienta nueva, tenía que ser una convención de escritura. Se
+resolvió con una sola línea `**Ángulos**` al principio de cada archivo de club, snapshot (se
+reemplaza, no se apila) en vez de log — el mismo patrón que `Admin/ESTADO.md` ya usa para el resto
+del proyecto, aplicado acá por primera vez a nivel de un archivo individual en vez de a nivel de todo
+el sitio. Antes de escribirlo se verificó `tools/generate-fuentes-index.js` entero: ese script parsea
+`fuentes/_indice/<País>.md` con regex sobre texto libre, pero nunca abre `fuentes/<País>/<Club>.md` —
+así que la convención nueva no tiene forma de romper ese generador, y no hizo falta tocarlo.
+Explícitamente no retroactiva: forzar la línea en los ~610 archivos existentes sería la clase de
+barrida masiva que el to-do 57 (reordenar los 6 skills, separar criterio de historia) va a encarar
+como pasada propia — acá solo se estableció la convención para lo que se toque de acá en adelante.
+
+## El criterio de escalar, con los 3 casos que lo separaron
+
+La tercera pieza (0.3) se armó cruzando tres clubes que a simple vista parecen el mismo tipo de
+bloqueo ("no se puede conseguir el PDF") pero necesitan una respuesta distinta cada uno: Atlanta
+(el documento estuvo público y el compartir de Drive se revocó — pedirle al club que lo vuelva a
+compartir es gratis), Banfield (el club subió una presentación en YouTube en vez de PDF — el
+documento existe, solo que en el formato que no sirve) y River (un trámite real ante la IGJ que
+existe y funcionaría, pero exige la clave fiscal AFIP de una persona real y tiene costo en dinero).
+Los tres "fallan" en el sourcing automatizado, pero solo los dos primeros ameritan el mail del to-do
+51 — el tercero es una decisión de costo que le toca a Guido, no algo que una sesión pueda resolver
+insistiendo. Separar esos tres es lo que evita que el to-do 51 (proceso de mail a clubes, sesión
+aparte) herede un criterio de disparo mal calibrado.

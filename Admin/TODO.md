@@ -100,33 +100,28 @@ perdieron sino que se descartaron:
     del 121 (ver `Admin/dudas-por-club.md`). Ver el detalle completo en `fuentes/Argentina/Atlanta.md`,
     `fuentes/Argentina/Banfield.md` y `fuentes/Argentina/Independiente.md`.
 
-52. METODOLOGÍA DE SOURCING: ÁNGULOS Y CUÁNDO ESCALAR (pedido de Guido, 2026-09-23). `club-sourcing`
-    (1266 líneas) ya documenta gotchas país por país, pero no estructura tres cosas: (a) qué ángulos
-    probar 1ª, 2ª, 3ª+ vez para un club antes de darlo por agotado, en vez de que un agente insista con
-    un canal que ya se probó y no rinde; (b) cómo un agente sabe que OTRA sesión ya probó tal ángulo en
-    tal club — hoy depende de leer entero `fuentes/<País>/<Club>.md`, que no está pensado como changelog
-    de intentos; (c) el corte entre "este club necesita una sesión dedicada porque es difícil de
-    encontrar" y "hay que escribirle al club directo" (comparte infraestructura de mail con el to-do 51).
-    Requiere leer el skill completo y destilar el patrón que ya usan, sin nombrarlo, las 29 secciones de
-    país. Sesión propia, en frío — no mezclarla con sourcing en caliente el mismo día.
-
 57. REORDENAR LOS 6 SKILLS: DEJARON DE SER SKILL, SON CHANGELOG (pedido de Guido, 2026-09-23).
-    `club-sourcing` (1266 líneas), `club-data-mapping` (1049) y `club-or-year-onboarding` (885) mezclan
-    criterio vigente con anécdotas versionadas ("Versión X, sesión tal fecha..."). Separar: lo que sigue
-    siendo criterio activo se queda en el skill, lo que ya es historia (una decisión tomada una vez, un
-    bug ya resuelto que no repite patrón) se resume fuerte o se manda a `Admin/CHANGELOG.md`/
-    `Admin/Archive/`. Incluye el rewrite de `club-sourcing` que salga del to-do 52 — mejor una sola
-    pasada sobre ese archivo que dos. Candidato a partirse en 2-3 sesiones, una por skill grande, para no
-    volarse el contexto de arranque de una sola.
+    `club-sourcing` (1415 líneas, tras el to-do 52), `club-data-mapping` (1049) y
+    `club-or-year-onboarding` (885) mezclan criterio vigente con anécdotas versionadas ("Versión X,
+    sesión tal fecha..."). Separar: lo que sigue siendo criterio activo se queda en el skill, lo que ya
+    es historia (una decisión tomada una vez, un bug ya resuelto que no repite patrón) se resume fuerte
+    o se manda a `Admin/CHANGELOG.md`/`Admin/Archive/`. El to-do 52 (sección 0.1-0.3 de
+    `club-sourcing`, metodología de ángulos y escalada) YA ESTÁ HECHO y no hace falta reabrirlo — este
+    to-do reordena las 29 secciones de país existentes, no la sección 0. Candidato a partirse en 2-3
+    sesiones, una por skill grande, para no volarse el contexto de arranque de una sola.
 
 51. PROCESO DE EMAIL A CLUBES (pedido de Guido, 2026-09-23). Hoy `Admin/dudas-por-club.md` junta
     preguntas abiertas por club pero no hay ningún paso de "convertir esto en un mail". Diseñar: (1)
     criterio de cuándo una duda amerita mail (no todas — algunas se resuelven solas con más sourcing);
     (2) Claude redacta el borrador; (3) Guido hace QA sobre el borrador antes de que salga; (4) envío —
     NO puede ser desatendido, cada envío necesita confirmación explícita de Guido en el momento (regla
-    de la plataforma, no negociable, no es algo que se pueda aprobar de antemano para todo un lote). Se
-    beneficia de que el to-do 52 ya haya definido el criterio de "cuándo escribirle al club directo" por
-    sourcing difícil, que es la otra fuente de mails además de las dudas de categorización.
+    de la plataforma, no negociable, no es algo que se pueda aprobar de antemano para todo un lote).
+    **El criterio de CUÁNDO disparar un mail por sourcing difícil ya está definido** (to-do 52,
+    `club-sourcing/SKILL.md` sección 0.3): documento CONFIRMADO que existe pero no descargable (prensa
+    con cifras, video en vez de PDF, compartir revocado — ver Independiente/Banfield/Atlanta) sí
+    amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo regulatorio
+    estructural, no. Esta sesión diseña el PROCESO del envío en sí (redacción, QA, confirmación), no el
+    criterio de disparo, que ya está resuelto.
 
 56. EVALUAR PARTIR EL EJE "DATOS" DE LA AUDITORÍA POR PAÍS (pedido de Guido, 2026-09-23). El eje
     `datos` de `auditoria-finance-of-sports` (uno de los 5 que rotan, ver skill sección "Capa 3") lee

@@ -3068,3 +3068,27 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `fuentes/README.md` venía subcontando ese club en "con documento encontrado" sin que ningún
   chequeo lo detectara (el script solo avisa de overrides "sobrantes", no de overrides con un valor
   desactualizado para una línea que sigue existiendo).
+
+## Versión 210 — Metodología de sourcing: escalera de ángulos, snapshot de intentos y criterio de escalada (to-do 52)
+
+### Docs
+- `.claude/skills/club-sourcing/SKILL.md`, sección 0 ampliada con tres subsecciones nuevas (91 → 115
+  KB): **0.1** la escalera de familias de ángulo (sitio oficial → regulador del país si existe →
+  Wayback CDX del dominio completo → búsqueda web → prensa como confirmación) con el criterio de
+  STOP (agotar cada familia aplicable A FONDO, no un número fijo de intentos; el guessing de nombres
+  de archivo es una técnica acotada de la familia 1, no una familia en sí); **0.2** la convención de
+  escritura `**Ángulos**` al principio de cada `fuentes/<País>/<Club>.md` (snapshot que se reemplaza,
+  no se apila, mismo criterio que `Admin/ESTADO.md`) para que una sesión nueva vea de un vistazo qué
+  ya se probó sin leer la prosa completa — no retroactivo, se gana club por club al tocarlo; **0.3**
+  las 5 señales para decidir entre dead-end sin mail, candidato a mail (to-do 51), bloqueo
+  estructural CERRADO, gestión de Guido (canal que exige identidad/pago de una persona real, ej.
+  IGJ/River) o sesión dedicada aparte.
+- Destilado de casos reales de la sesión 2026-09-22/23, no inventado en abstracto: Chaco For Ever y
+  Gimnasia y Tiro (Salta) para el criterio de STOP (uno agotado de verdad, el otro a propósito no
+  cerrado); Talleres y Gimnasia y Esgrima LP para "memoria narrativa no es señal de que no hay
+  balance"; Independiente N°122 para el paso 0 de reconocer texto extraído basura antes de confiar
+  en él; Rosario Central para no asumir ciego una nota de sourcing vieja; Atlanta/Banfield/River
+  para las 3 señales de escalada distintas (mail, bloqueo estructural, gestión de Guido).
+- No se tocaron las 29 secciones de país (eso es alcance del to-do 57) ni el formato de
+  `fuentes/_indice/<País>.md` que parsea `tools/generate-fuentes-index.js` — verificado que el
+  snapshot nuevo vive en el archivo de club, que ese script ni abre.

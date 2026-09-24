@@ -66,6 +66,155 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   excepción es un pedido puntual (un club concreto, o un ejercicio suelto de un club ya conocido): eso
   se corre directo en la sesión actual, sin preguntar y sin worktree.
 
+### 0.1 La escalera de ángulos, y cuándo parar
+
+Un club sin nada cargado no es "buscar hasta encontrar o hasta cansarse": es una escalera de
+ÁNGULOS que se agotan EN ORDEN, cada uno A FONDO antes de pasar al siguiente. Lo que importa no es
+"cuántos intentos" sino "cuántas familias de ángulo DISTINTAS, cada una llevada hasta su límite
+natural" — probar 3 variaciones del mismo canal (3 nombres de archivo parecidos en el mismo sitio)
+no son 3 ángulos, es 1 ángulo probado 3 veces.
+
+**Las familias, en el orden en que conviene probarlas:**
+
+1. **Fuente oficial del club** — el sitio propio, MENÚ COMPLETO (no solo la home ni la primera
+   sección que parezca obvia, tipo "Transparencia"). Si es WordPress, además del menú, buscar posts
+   de asamblea/balance/ejercicio vía `wp-json/wp/v2/search?search=<término>` y abrir CADA resultado
+   — el documento real puede colgar de un post cuyo título no menciona "balance" para nada.
+   **"Encontré la Memoria y es puramente narrativa" NO es señal de que el club no publica un
+   balance real** — es señal de que hay que seguir mirando DENTRO del sitio, no de pasar a la
+   familia 2. Gimnasia y Esgrima (La Plata) es el caso que lo prueba: 4 memorias narrativas
+   quedaron confirmadas durante sesiones enteras, y el balance real vivía en un PDF SEPARADO,
+   colgado del mismo post de convocatoria a asamblea que la memoria. Talleres tiene el mismo
+   patrón: el EECC real cuelga de una nota de prensa cuyo título no menciona ni "balance" ni
+   "estados contables". Antes de dar un club por agotado en esta familia, mirar el post o la
+   sección DE AL LADO de donde ya se encontró algo, no solo lo ya encontrado.
+2. **El canal país/regulador ya documentado en este skill** (secciones 1-29 de acá abajo), si existe
+   uno para ese país. Consultarlo es SIEMPRE prioritario a seguir adivinando en el sitio del club:
+   es la fuente con mejor relación señal/costo de todo el proyecto (CMF, SIIS, Companies House,
+   Unternehmensregister, etc.).
+3. **Wayback Machine, CDX API sobre el DOMINIO COMPLETO** del club (`matchType=domain`), no solo la
+   URL puntual que se sospecha. Sirve para dos cosas: recuperar un documento que el sitio vivo movió
+   o borró, y como señal fuerte de ausencia total — "0 PDFs archivados nunca en todo el dominio"
+   (Chaco For Ever, Gimnasia y Tiro Salta) es mucha más evidencia que "no encontré nada en la
+   home".
+4. **Búsqueda web dirigida** (`filetype:pdf`, nombre + "estados contables"/"balance"/"memoria" +
+   año, nombre + "asamblea"). Complementaria, no sustituye a las 3 de arriba — un club puede indexar
+   mal y tener igual el documento colgado en su sitio.
+5. **Prensa**, solo para CONFIRMAR que el documento existe cuando no se lo encuentra descargable en
+   ningún lado (nunca como fuente en sí — ver la primera regla de esta sección). Si prensa cita
+   cifras concretas de una asamblea reciente, es señal de que el documento SÍ existe y vale la pena
+   seguir buscándolo o escalar a mail (ver 0.3) — no de que el club es un dead-end.
+
+**Adivinar nombres de archivo es una TÉCNICA de la familia 1, no una familia aparte, y tiene tope
+explícito**: cubrir el espacio de variación plausible UNA vez (ej. Talleres: 7 meses candidatos × 3
+años, todos 404) y parar ahí. Sin un dato nuevo (un nombre real encontrado en otro lado, un patrón
+confirmado en algún año), seguir inventando variantes del mismo patrón es exactamente el síntoma que
+motivó esta tarea: gastar presupuesto de tokens sin acercarse al documento.
+
+**Señal de "seguir profundizando" vs. "pasar a la próxima familia": si el próximo intento sigue
+trayendo información nueva, seguir; si no, parar.** Es el mismo criterio que usan la mayoría de los
+agentes de research (incluido el "multi-agent researcher" que Anthropic documentó de su propio
+funcionamiento interno): no hay un número mágico de pasos fijo, se sigue mientras cada paso nuevo
+agrega señal, y se corta cuando dos intentos seguidos devuelven lo mismo que ya se sabía —
+redundancia es la señal de que la familia está agotada, no un contador. Acá eso se traduce concreto:
+si la 2ª variante de búsqueda web no trae nada que la 1ª ya no haya traído, no hace falta una 3ª —
+pasar a la próxima familia o cerrar directamente.
+
+**STOP — cuándo documentar dead-end y dejar de buscar**: cuando TODAS las familias aplicables a ese
+club (no todas existen para todo país: si no hay regulador documentado para el país, esa familia no
+aplica y no cuenta contra el club) se agotaron A FONDO, no a medias. "A fondo" en la familia 1
+significa el menú COMPLETO del sitio, no la home; en la familia 3, la CDX API del dominio completo,
+no una URL sospechada. Chaco For Ever y Gimnasia y Tiro (Salta) (sesión 2026-09-23) son el ejemplo
+de cada extremo: al primero se lo cerró bien — sitio sin sección institucional confirmado, CDX en 0,
+2 búsquedas dirigidas sin nada, las 3 familias aplicables agotadas de verdad. Al segundo NO se lo
+cerró, a propósito: quedó "Noticias Institucionales" sin abrir del todo en el sitio oficial, así que
+la familia 1 no estaba agotada todavía — se documentó como pendiente con el próximo paso concreto, no
+como dead-end.
+
+### 0.2 Dejar registro rápido de qué ya se probó — sin tener que leer la prosa completa
+
+Hoy, saber si YA se probó tal ángulo en tal club exige leer entero `fuentes/<País>/<Club>.md`, que es
+prosa libre — y prosa libre se puede leer mal. Pasó de verdad: un chequeo automático sobre 44 clubes
+de Argentina (sesión 2026-09-23) clasificó mal 6 de ellos como "nunca tocados" porque buscaba un
+encabezado literal (`## Chequeo <fecha>`) que no todos los archivos usan (`## Lo nuevo (<fecha>)`,
+bullets sueltos con "ENCONTRADO <fecha>" son formatos igual de válidos y ya usados en este mismo
+skill). Si una lectura cuidadosa se equivocó, un agente que arranca en frío tiene el mismo riesgo —
+y el costo no es solo confusión, es tiempo y tokens re-buscando algo que ya estaba resuelto.
+
+**La convención, desde esta sesión: una línea `**Ángulos**` al PRINCIPIO de cada
+`fuentes/<País>/<Club>.md`, justo debajo del título**, con el estado de cada familia de la escalera
+de 0.1 que aplique a ese club. Es una convención de escritura, no una herramienta ni una base de
+datos nueva — este proyecto es deliberadamente estático de punta a punta. Formato, una familia por
+segmento separado con `·`:
+
+    **Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: agotado (0 PDFs)
+    · búsqueda web: agotado (sin resultados) · regulador/país: no aplica — 2026-09-23
+
+Estados posibles: `agotado (<qué encontró o no>)`, `parcial — <qué falta concretamente>` (como
+Gimnasia y Tiro Salta: "sitio oficial: parcial — falta abrir Noticias Institucionales completa"),
+`no aplica` (el país no tiene canal regulador documentado, o la familia no corresponde a este club),
+o `no intentado` (todavía no se llegó a esa familia). **Es un SNAPSHOT, no un log — se REEMPLAZA en
+cada sesión que toca el club, no se apila una línea vieja al lado de la nueva**, mismo criterio que
+ya sigue `Admin/ESTADO.md` con el resto del proyecto. La prosa de abajo (las secciones
+`## Chequeo <fecha>` o el formato libre que ya use cada archivo) sigue siendo el lugar del detalle
+completo y no cambia de ninguna forma; la línea de arriba es solo el TL;DR que una sesión nueva lee
+primero, antes de decidir por dónde seguir.
+
+**Esto NO es retroactivo.** No hay que salir a agregarle esta línea a los ~610 archivos de
+`fuentes/<País>/<Club>.md` que ya existen — eso es trabajo de re-lectura masiva, exactamente lo que
+el to-do 57 va a encarar como pasada propia. La regla es: todo club NUEVO la lleva desde el primer
+chequeo, y todo club EXISTENTE la gana la próxima vez que una sesión lo toque (lo lee a fondo o le
+agrega algo) — nunca una barrida aparte solo para agregarla.
+
+**Esto tampoco toca el formato de `fuentes/_indice/<País>.md`.** Ese archivo SÍ lo parsea
+`tools/generate-fuentes-index.js` con una regex sobre el texto libre de cada línea
+(`SENAL_SI`/`SENAL_NO` adentro del script) — cualquier cambio ahí hay que probarlo con `--debug`
+antes de tocar nada. La línea `**Ángulos**` vive en el archivo de club, que ese script ni siquiera
+abre, así que no hay riesgo de romper el generador.
+
+### 0.3 Cuándo escalar: sesión dedicada, mail al club, gestión de Guido, o simplemente el próximo club
+
+Agotada la escalera de 0.1 sin encontrar el documento, la pregunta siguiente no es "seguir
+insistiendo": es cuál de estos 5 caminos corresponde. Son señales concretas derivadas de casos
+reales de esta sesión, no un árbol de decisión — la mayoría de los clubes caen limpio en uno solo,
+sin ambigüedad:
+
+- **Dead-end real, 0 señal de que el documento exista (ni prensa, ni video, ni mención) → próximo
+  club, sin mail.** Chaco For Ever, Gimnasia y Tiro (Salta) una vez agotada la familia 1: ningún
+  rastro de que el club publique ni haya publicado nunca nada. Escribirle a un club así tiene bajo
+  valor esperado (no hay ninguna confirmación de que algo exista del otro lado) — no amerita el mail
+  del to-do 51. Revisar de nuevo más adelante, sin fecha fija (mismo criterio que ya usa este skill
+  con los dead-ends de Brasil, sección 3: varios se destrabaron solos meses después, por una URL
+  nueva, sin que cambiara nada regulatorio).
+- **Documento CONFIRMADO que existe pero no está descargable en ningún canal digital → candidato a
+  mail (to-do 51), Guido decide y aprueba cada envío.** Señales de "confirmado": prensa cita cifras
+  concretas de una asamblea reciente (Independiente, Ejercicio N°121), el club subió una
+  presentación en VIDEO en vez de PDF (Banfield, 105° Ejercicio), o el documento estuvo público y el
+  compartir se revocó (Atlanta, los 4 Drive de 2013-2016). En los tres casos pedirle al club que
+  publique/resuba lo que YA tiene es barato para el club y de alto valor esperado — lo que separa
+  esto del punto anterior es la CONFIRMACIÓN de existencia, no el esfuerzo ya invertido buscando.
+- **Bloqueo estructural confirmado en una fuente primaria (ley, reglamento, estatuto societario) →
+  CERRADO, no pendiente, sin mail.** Liga MX/SICE (confidencialidad por reglamento, to-do 47), Costa
+  Rica/FEDEFUT, Sudáfrica (exención de la Companies Act), Chile/OTODP: acá no hay PDF que destrabar
+  con más mail o más sesión — el regulador mismo lo prohíbe o lo exime. Documentarlo como RESUELTO
+  (con la cita legal exacta) en vez de dejarlo como "pendiente" en ningún índice: es trabajo
+  terminado, no trabajo que falta. Reabrir solo si cambia la regulación (mismo patrón que ya usa
+  Ecuador, sección 5: buscar `"[club] se convierte en sociedad anónima deportiva"` antes de asumir
+  que sigue bloqueado para siempre).
+- **Canal identificado pero exige la identidad o el medio de pago de una PERSONA real → gestión de
+  Guido, no una tarea de sourcing.** River/IGJ (clave fiscal AFIP nivel 2+, con costo), Marruecos/
+  OMPIC, Austria/Firmenbuch, Francia/INPI (captcha+cuenta), Países Bajos/KvK (pago por documento): un
+  agente no puede crear una cuenta ni pagar. Documentar el canal exacto y los pasos (como ya hace
+  `fuentes/Argentina/River.md`) y PARAR ahí — no es un dead-end de sourcing, es una decisión de
+  costo/tiempo que le toca a Guido, y no se resuelve insistiendo desde una sesión.
+- **Lead real pero que necesita mucho trabajo sostenido en UN club → sesión dedicada aparte, no
+  adentro de un barrido de país.** Jamaica (portal de pago por documento certificado, browser
+  dedicado), Colombia/SIIS con el histórico completo de Envigado (10 ejercicios, 1 solo bajado):
+  cuando destrabar un club exige un procedimiento de varios pasos que no cabe en el tiempo de un
+  barrido de decenas de clubes, marcarlo explícitamente como candidato a sesión propia (en
+  `Admin/TODO.md` o en la nota del club) en vez de hacerlo a medias adentro de una sesión que tiene
+  otro objetivo.
+
 ## 1. Chile — CMF, la fuente más confiable encontrada hasta ahora
 
 Los clubes chilenos organizados como Sociedad Anónima Deportiva Profesional (SADP) que ADEMÁS son
