@@ -3121,3 +3121,32 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `CLAUDE.md`) siguen apuntando a la sección correcta. `node tools/audit.js` sigue en 0 P0/P1/P2.
 - Pendiente (to-do 57, partes 2 y 3): `club-data-mapping/SKILL.md` (1049 líneas) y
   `club-or-year-onboarding/SKILL.md` (885 líneas), mismo criterio, sesiones separadas.
+
+## Versión 212 — Las 19 secciones de `club-data-mapping` separan criterio de historia (to-do 57, parte 2 de 3)
+
+### Docs
+- `.claude/skills/club-data-mapping/SKILL.md` — mismo criterio de separación ya aplicado a
+  `club-sourcing` en la Versión 211 (ver la sección "Cómo mantener este skill" de ese archivo, y la
+  versión nueva de la de acá): el criterio de categorización/conversión, el árbol de decisión y los
+  ejemplos pedagógicos que ilustran CÓMO aplicar una regla (el deskew de la sección 9 con el
+  presupuesto 2019-20 de Racing, el OCR con Tesseract de la sección 15 con Vélez) se quedan; la
+  envoltura de historia ("en la sesión del X, Guido/un agente encontró Y") se comprime al hecho seco.
+- La reducción fue chica a propósito (1049 → 1041 líneas): la mayoría del contenido YA era criterio
+  vigente, no relleno narrativo — el objetivo era separar, no achicar a cualquier costo, mismo
+  aprendizaje que dejó la Versión 211. Los recortes reales: el ejemplo de Racing 2025/26 en la
+  sección 1 (lump_football_operations), el tamaño de la discrepancia de FX en la sección 5, el
+  párrafo de corrección meta de la sección 12 (decía "pendiente" 20 versiones después de que el
+  código ya lo resolvía), y el cierre de la sección 13 (Boca 2025 sin desglose de 3 filas). Se
+  eliminó por completo un párrafo de la sección 13 sobre caché de `read_console_messages`: era un
+  gotcha de tooling sin relación con categorización, y ya está documentado en `CLAUDE.md`.
+- Ninguna sección se renombró ni se fusionó (siguen siendo 0-18 más "Cómo mantener este skill"),
+  así que las citas cruzadas por número desde `CLAUDE.md`, `Admin/CONVENCIONES.md`,
+  `Admin/ESTADO.md`, `js/finanzas-calc.js`, `tools/audit.js`, `club-or-year-onboarding/SKILL.md` y
+  varios `Clubes/<País>/<Club>/*.md` siguen apuntando a la sección correcta. `node tools/audit.js`
+  sigue en 0 P0/P1/P2.
+- Sección "Cómo mantener este skill" ganó el mismo bloque de criterio explícito que ya tiene
+  `club-sourcing` (qué se queda, qué se comprime, qué va a `Admin/CHANGELOG.md`/`Admin/Archive/`),
+  con la sección 13 (10+ rondas de ajuste versionadas de "Formato Simplificado") señalada como la
+  más expuesta a volver a acumular historia sin criterio nuevo.
+- Pendiente (to-do 57, parte 3 de 3): `club-or-year-onboarding/SKILL.md` (885 líneas), mismo
+  criterio, sesión aparte.

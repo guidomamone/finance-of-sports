@@ -81,15 +81,13 @@ es un bolsón, es una tabla con jerarquía de dos niveles, y cada línea de abaj
 real identificable (entradas → `matchday_competition`, TV → `broadcasting`, marketing →
 `sponsorship_commercial`, etc.).
 
-Error real cometido y corregido: al cargar Racing 2025/26 y 2026/27 (Versión 32), estas 9 líneas se
-guardaron como `items` (sub-ítems de desglose, ver sección 4) DENTRO de una única línea de primer
-nivel categorizada `lump_football_operations`, visualmente correcto en "Formato del club" (el
-desglegable mostraba las 9 líneas igual), pero funcionalmente roto para cualquier cálculo por
-`normalizedCategory`: "Formato simplificado" mostraba Televisión/Comercial/Venta de jugadores en
-$0, porque esa plata estaba **enterrada adentro de `items`**, un campo que `sumCat()` /
-`computeYearGeneric()` NUNCA mira (solo suma por `normalizedCategory` de las líneas de PRIMER
-NIVEL). Guido lo encontró abriendo el PDF y viendo la línea "COBROS POR RETRANSMISION Y DERECHOS DE
-TV" con monto propio, cuando el sitio mostraba $0 en Televisión.
+**Ejemplo real de este error** (Racing 2025/26 y 2026/27, Versión 32): esas 9 líneas se guardaron
+como `items` (sub-ítems de desglose, ver sección 4) DENTRO de una única línea de primer nivel
+`lump_football_operations`, visualmente correcto en "Formato del club" pero funcionalmente roto para
+cualquier cálculo por `normalizedCategory`: "Formato simplificado" mostraba Televisión/Comercial/
+Venta de jugadores en $0, porque esa plata estaba **enterrada adentro de `items`**, un campo que
+`sumCat()`/`computeYearGeneric()` NUNCA mira (solo suma por `normalizedCategory` de las líneas de
+PRIMER NIVEL).
 
 **Regla concreta**: si vas a meter algo adentro de `items` (en vez de como línea de primer nivel),
 preguntate primero si esos sub-ítems tienen cada uno una categoría REAL distinta entre sí. Si la
@@ -128,10 +126,9 @@ Esto varió entre clubes ya cargados, y es intencional, no es una inconsistencia
   102): el balance auditado reporta las líneas brutas de transferencias/rescisión (ingreso) y sus
   costos asociados (gasto) como líneas ordinarias de `revenueLines`/`expenseLines`
   (`normalizedCategory:'player_sales'` para las de ingreso), SIN netear — mismo criterio que Racing,
-  reflejando que la pág. 76 del balance las trata como Recursos/Gastos ordinarios, no aparte. Hasta
-  la Versión 102 el sitio SÍ las neteaba a mano en "Ganancia por venta de jugadores"
-  (`meta.profitOnPlayerSales`), con un comentario que decía que esa era "la convención del resto del
-  sitio" — resultó ser incorrecto (ningún otro club migrado hace ese neteo), se corrigió.
+  reflejando que la pág. 76 del balance las trata como Recursos/Gastos ordinarios, no aparte. (Hasta
+  la Versión 102 el sitio neteaba esto a mano en `meta.profitOnPlayerSales`; se corrigió porque
+  ningún otro club migrado hace ese neteo.)
 
 Regla general: mirá primero si el DOCUMENTO FUENTE neteo o no. Si no neteo, no netees vos tampoco,
 replicar la estructura real del club es más importante que uniformar entre clubes (para eso
@@ -180,11 +177,10 @@ Qué tipo de cambio usar, en orden de preferencia:
    cambio que el propio club usó para convertir sus partidas en USD/EUR a pesos en ESE balance,
    usarlo es más fiel a la fuente que buscar una cotización de mercado por tu cuenta, y evita que
    dos números del mismo documento (el que vos calculás con tu fx vs. el que el club ya convirtió
-   con el suyo) no coincidan. Encontrado real: Racing balance 2023-24 declaraba $909 al 30/6/2024
-   (se venía usando $912, una cotización externa de Rava Bursátil); Racing balance 2024-25
-   declaraba $1.196 al 30/6/2025 (se venía usando $1.203); River balance 2023-24 declaraba $950,50
-   al 31/8/2024 (se venía usando $953,50). Diferencias chicas (~0,3-0,6%) pero la fuente primaria
-   gana. Si el documento declara varios tipos de cambio por MONEDA (ej. River: USD $950,50, EUR
+   con el suyo) no coincidan. Ejemplo del tamaño de la diferencia: Racing 2023-24 declaraba $909 al
+   30/6/2024 contra los $912 de una cotización externa (Rava Bursátil) que se venía usando; River
+   2023-24 declaraba $950,50 contra $953,50. Diferencias chicas (~0,3-0,6%), pero la fuente primaria
+   gana siempre. Si el documento declara varios tipos de cambio por MONEDA (ej. River: USD $950,50, EUR
    $1.049,54, CHF $1.122,36), usá el de USD — el toggle de cualquier club sigue siendo SIEMPRE
    [moneda nativa <-> USD] (ver sección 5 y `data/currency-map.js`), nunca modela multi-moneda por
    partida ni un 3er destino directo. Solo caé a las reglas 1-3 de abajo si el documento NO declara ningún tipo de cambio
@@ -292,8 +288,7 @@ club guardaron `fx` como "cuántos USD vale 1 EUR" (ej. `1.172`, la cifra que cu
 devuelve para "EUR USD exchange rate") — el sentido INVERSO al que espera `toDisplayValue()`
 (`js/finanzas-calc.js`), que siempre asume "unidades de moneda nativa por 1 USD" (mismo sentido que
 ARS, COP, BRL, MXN, JPY: ej. ARS ~1000 por USD, no "0,001 USD por 1 ARS"). Con el sentido invertido,
-el toggle a USD habría mostrado un valor ~37% más alto que el real para los 10 clubes — se encontró
-y corrigió recién al mergear, releyendo cada archivo a mano.
+el toggle a USD habría mostrado un valor ~37% más alto que el real para los 10 clubes.
 
 **Por qué es fácil de cometer**: para monedas fuertes (EUR, GBP) la forma "natural" de buscar y
 pensar el tipo de cambio es "1 EUR = X USD" (EUR es la moneda "grande"), lo opuesto a monedas como
@@ -305,7 +300,7 @@ va en el segundo sentido, sin excepción por moneda.
 plausible por moneda, ej. EUR: 0,7-1,15) y tira un `console.warn` si algo parece invertido o con el
 orden de magnitud equivocado. No reemplaza la verificación manual (`verifyTieOuts()` sigue siendo el
 chequeo real de que los TOTALES cierran), pero hubiera marcado el bug de España de inmediato en vez
-de necesitar una relectura completa al mergear. Si onboardeás una moneda nueva sin entrada en
+de necesitar una relectura completa a mano. Si onboardeás una moneda nueva sin entrada en
 `FX_PLAUSIBLE_RANGE`, agregala (mismo criterio que `CURRENCY_META`) — un rango ausente simplemente
 no se chequea, no rompe nada.
 
@@ -367,9 +362,9 @@ No asumas que "los PDFs de este club tienen texto extraíble" solo porque fue ci
 que ya se cargaron, verificalo por año/documento con `pdftotext archivo.pdf - | wc -c` dividido
 por la cantidad de páginas (`pdfinfo archivo.pdf`). Si da ~1 char/página, es un escaneo sin capa de
 texto, necesita el Read tool sobre imágenes de página (mucho más caro en tokens), no
-`pdftotext`+Python. Ya pasó que una nota de sesión anterior decía "todos estos PDFs tienen texto
-extraíble" y era cierto solo para 3 de los 24 documentos del archivo, quedó corregido, pero
-volvé a medir en vez de confiar en una nota vieja sin re-verificar contra el archivo real.
+`pdftotext`+Python. Ya pasó que una nota vieja daba por sentado "todos estos PDFs tienen texto
+extraíble" y era cierto solo para 3 de los 24 documentos del archivo — volvé a medir siempre, no
+confíes en una nota sin re-verificar contra el archivo real.
 
 ## 9. Leer un PDF fuente: texto nativo vs. OCR con el Read tool, y cómo destranquear (deskew) un escaneo torcido
 
@@ -497,31 +492,22 @@ reclasificado, pero no había forma de auditar de qué campo(s) nativo(s) salió
 sin cambiar de toggle y buscar a mano. Guido lo pidió como su forma de controlar el trabajo de
 categorización: cada fila de Formato Simplificado tiene que poder abrirse y mostrar la cuenta.
 
-**CORRECCIÓN (esta sesión, encontrado auditando el skill contra el código real): esto YA ESTÁ
-implementado también para River/Racing, no está pendiente.** Esta sección decía "implementado por
-ahora SOLO para Boca... River/Racing siguen con `items:null`, pendiente" durante ~20 versiones
-después de que dejó de ser cierto — `bucketize()` (`js/finanzas-calc.js`) arma `items` para cada
-bucket desde la Versión 42 (el comentario del propio código, justo arriba de `bucketize()`, dice
-"ACORDEÓN DE CONTROL (Versión 42, extiende a River/Racing la regla de la Versión 40, ver
-club-data-mapping SKILL.md sección 12)" — un session pasado hizo el trabajo y dejó un puntero de
-vuelta a ESTA sección, pero nadie actualizó la sección en sí). Regla para el futuro: cuando un
-comentario de código diga "ver SKILL.md sección N" para marcar que resolvió algo que esa sección
-tenía como pendiente, ESE es el momento de volver acá y sacar el "pendiente" — no alcanza con que el
-código lo diga, alguien tiene que cerrar el loop en el skill también. El criterio de acordeón que
-sigue abajo ya aplica hoy a los 3 clubes:
+Esto aplica hoy a los 3 clubes por igual: `bucketize()` (`js/finanzas-calc.js`) arma `items` para
+cada bucket desde la Versión 42, que extendió a River/Racing la regla de acordeón que la Versión 40
+había creado solo para Boca. **Regla de mantenimiento**: cuando un comentario de código diga "ver
+SKILL.md sección N" para marcar que resolvió un pendiente de esa sección, ese es el momento de volver
+acá y sacar el "pendiente" — no alcanza con que el código lo diga, alguien tiene que cerrar el loop en
+el skill también (pasó acá: el código quedó al día en la Versión 42 y esta sección siguió diciendo
+"pendiente" ~20 versiones más). El criterio de acordeón:
 
 - Un bucket que agrupa una sola `normalizedCategory` con una sola línea real: `items` = esa línea
   con su propio desglose (`line.items`) si lo tiene, o una fila `[line.rawLabel, line.amountNative]`
   si no (nunca dejar el bucket sin nada que mostrar al abrirlo, aunque sea solo la confirmación de
-  qué línea es). OJO SI VENÍS DE UNA VERSIÓN VIEJA DE ESTE PÁRRAFO: decía "igual que ya hace
-  `revenueDetailOrLeaf()` para Boca", y esa función NO EXISTE MÁS — era del motor Boca-only que se
-  borró en la Versión 102. Hoy lo hace `bucketize()` (`js/finanzas-calc.js`) para todos los clubes
-  por igual, Boca incluida.
+  qué línea es). Lo hace `bucketize()` (`js/finanzas-calc.js`) para todos los clubes por igual, Boca
+  incluida.
 - Un bucket que suma VARIAS `revenueLines`/`expenseLines` (mismo `normalizedCategory` repetido, o el
   catch-all "Otros"/"Otras secciones..."): `items` = una tupla `[rawLabel, amountNative, line.items
-  || null]` por cada línea que aporta a la suma. (Este párrafo decía "mismo patrón que
-  `revenueComponentTuple()`": otra función del motor Boca-only borrado en la Versión 102. El patrón
-  vive hoy adentro de `bucketize()`.)
+  || null]` por cada línea que aporta a la suma.
 - Nunca inventar un número nuevo para armar el desglose: reusar por referencia los mismos
   `revenueLines`/`expenseLines`/`items` que ya alimentan "Formato del club", el desglose de Formato
   Simplificado tiene que ser trazable 1:1 a esos datos, no una aproximación ni un resumen.
@@ -635,8 +621,7 @@ memoria), o comparar los dos arrays lado a lado explícitamente.
 REEMPLAZADA.** Las filas de Ingresos de Formato simplificado son hoy, en este orden: Cuotas
 Sociales, Comercial / Sponsors, **Estadio**, Televisión, Premios por competencias, Venta de
 Jugadores, **Educación**, **Otras secciones deportivas**, Fútbol profesional (sin desglosar, con
-`hideIfZero`), y el catch-all **"Otros ingresos"**. Tres cambios, todos por decisión explícita de
-Guido en la sesión del 2026-09-22:
+`hideIfZero`), y el catch-all **"Otros ingresos"**. Tres cambios, decisión de Guido (2026-09-22):
 
 1. **"Estadio: recaudación de partidos" pasó a "Estadio" a secas y absorbió los abonos.** Es UNA
    fila con las 3 formas de monetizar el estadio (`matchday_competition` + `season_tickets` +
@@ -693,10 +678,10 @@ completa?"), nunca a un label combinado tipo "Entradas / Abonos" que sugiera que
 importa.
 
 **HOMOLOGACIÓN DE GASTOS DE RACING, HECHA EN LA VERSIÓN 52 (pedido explícito de Guido: "homologar
-egresos en racing a como lo tiene Boca")**: hasta la Versión 51, esta sección decía que el lado de
-Gastos se había dejado "solo renombrado" (ver párrafo "Decisión de Guido" arriba, todavía vigente
-para el resto del detalle), sin re-categorizar ninguna línea real. Eso cambió en la Versión 52, solo
-para el bucket "Compra de jugadores" (`player_amortisation`/`player_impairment`):
+egresos en racing a como lo tiene Boca")**: hasta entonces, el lado de Gastos de Racing solo tenía
+los buckets renombrados (sin re-categorizar ninguna línea real, ver "Decisión de Guido" arriba). Eso
+cambió en la Versión 52, solo para el bucket "Compra de jugadores"
+(`player_amortisation`/`player_impairment`):
 
 - Reetiquetadas a `player_amortisation` (antes `other_expenses`, ver comentario completo en
   `data/racing-data.js` justo antes de `racingExpenseLinesByYear`): "Costo transferencia de
@@ -784,35 +769,20 @@ Formato Simplificado, no si esa plata efectivamente CUENTA para `expenses`/`ebit
 siempre con `verifyTieOuts()` en el navegador (no alcanza con `node --check`, que solo valida
 sintaxis) después de agregar una categoría nueva.
 
-**TAMBIÉN encontrado en esta sesión, nada que ver con la categorización pero real**: `read_console_messages`
-del navegador puede devolver una MEZCLA de mensajes de una versión vieja del script (cacheada por el
-navegador) con la nueva, incluso navegando a una URL "fresca" en una tab nueva, si el servidor local
-ya sirvió esa URL antes en la misma sesión del navegador. Señal de alerta: los números de
-`verifyTieOuts()` no cambian nada después de editar código que debería cambiarlos. Se confirmó
-comparando `computeYearGeneric.toString()` en la consola contra el archivo real en disco (server
-`curl`), y se resolvió abriendo un servidor en un PUERTO nuevo (no solo una tab nueva) para forzar un
-origen sin caché.
-
 **Boca 2025 NO recibió el desglose de 3 filas en esta ronda** (quedó como to-do explícito, RESUELTO
-en la Versión 102): en su momento, un intento de reconstrucción a mano (separar la porción salarial
-de cada línea mixta de `nativeFinancialsBoca[2025].gastos`) dio una diferencia de ~$4.500 M ARS
-contra `otherExpenses` real, señal de un error de reconciliación no resuelto — se descartó por el
-riesgo de ensuciar un balance auditado real sin un chequeo automatizado que lo confirme. La Versión
-102 (migración de Boca al motor genérico) sí lo resolvió, volviendo a los anexos ORIGINALES del
-balance (`Clubes/Argentina/Boca/memoria-y-balance-2024-25.md`, Anexos IX y XI-XVIII) en vez de
-intentar re-derivar la separación desde `nativeFinancialsBoca` (que ya venía sin ese nivel de
-detalle) o desde `yearsRaw[2025].wages` (el total agregado, sin desglose por departamento). Cada
-departamento (Fútbol profesional, Estadio, Educación física, Fútbol juvenil, Básquet, Casa Amarilla,
-Médico, y las 11 gerencias de "Gastos de estructura operativa") tiene su PROPIA línea "Remuneraciones
-y cargas sociales" separada del resto en el `.md` transcripto — sumar esas 9 líneas de sueldo dio
-EXACTO el mismo total ($67.869,732365 M) que el sitio ya usaba, confirmando la reconciliación sin
-inventar ningún número. Ver `data/boca-data.js` (`bocaExpenseLinesByYear[2025]`, cada departamento
-partido en 2 líneas top-level "X — Remuneraciones y cargas sociales" / "X — Otros gastos
-operativos") y el comentario de cabecera de ese archivo para el detalle completo. Lección para el
-próximo caso similar: cuando una estructura "nativa" de display no alcanza para categorizar
-correctamente, la solución no es forzar la categorización sobre esa estructura ni colapsarla a algo
-más genérico — es volver al documento fuente transcripto y buscar el nivel de detalle que sí
-distinga lo que hace falta, antes de asumir que no existe.
+en la Versión 102): un intento de reconstrucción a mano (separar la porción salarial de cada línea
+mixta de `nativeFinancialsBoca[2025].gastos`) dio una diferencia de ~$4.500 M ARS contra
+`otherExpenses` real, y se descartó por el riesgo de ensuciar un balance auditado real sin un chequeo
+que lo confirme. Se resolvió volviendo a los anexos ORIGINALES del balance
+(`Clubes/Argentina/Boca/memoria-y-balance-2024-25.md`, Anexos IX y XI-XVIII), donde cada departamento
+(Fútbol profesional, Estadio, Educación física, Fútbol juvenil, Básquet, Casa Amarilla, Médico, y las
+11 gerencias de "Gastos de estructura operativa") tiene su PROPIA línea "Remuneraciones y cargas
+sociales" separada del resto — sumar esas 9 líneas dio EXACTO el mismo total ($67.869,732365 M) que
+el sitio ya usaba. Ver `data/boca-data.js` (`bocaExpenseLinesByYear[2025]`) para el detalle completo.
+**Lección para el próximo caso similar**: cuando una estructura "nativa" de display no alcanza para
+categorizar correctamente, la solución no es forzar la categorización sobre esa estructura ni
+colapsarla a algo más genérico — es volver al documento fuente transcripto y buscar el nivel de
+detalle que sí distinga lo que hace falta, antes de asumir que no existe.
 
 ## 14. `grossDebt`: el criterio de qué línea usar es POR CLUB, no universal — y un balance que
 desglosa gastos por sector/departamento se puede (y conviene) separar por columna, no solo por fila
@@ -1047,3 +1017,25 @@ terminar esa sesión si:
 
 No hace falta pedirle permiso a Guido para estas actualizaciones menores, es información viva que
 debería quedar al día sola, igual que la sección generada de `Admin/ESTADO.md`.
+
+**Este es un skill de criterio, no un changelog (pedido de Guido, to-do 57, 2026-09-23, mismo
+criterio ya aplicado a `club-sourcing`).** Al agregar o editar cualquier sección, separar tres cosas:
+
+- **Se queda en el skill** (tal cual o resumido): la regla de categorización/conversión en sí, el
+  árbol de decisión para un rubro o un `fx` ambiguo, y un ejemplo real cuando ilustra CÓMO aplicar la
+  regla (ej. el flujo de OCR con Tesseract de la sección 15 usa Vélez como caso guía, el deskew de la
+  sección 9 usa el presupuesto 2019-20 de Racing) — esos ejemplos pedagógicos no son historia a
+  cortar, son parte del criterio.
+- **Se comprime a una línea o se corta**: la envoltura de historia — "en la sesión del X, Guido/un
+  agente encontró Y" se convierte en el hecho seco ("Y, encontrado en tal caso"). El detalle de CÓMO
+  se llegó a un hallazgo (qué se probó y falló antes) solo vale la pena conservarlo si es un patrón
+  repetible en OTRO club/documento; si es anecdótico de una sesión puntual sin lección generalizable
+  (un gotcha de tooling ya cubierto en otro lado, un bug ya cerrado sin regla nueva), se corta.
+- **Va a `Admin/CHANGELOG.md` o `Admin/Archive/`**: decisiones tomadas una vez que ya están cerradas y
+  no van a volver a discutirse, bugs ya resueltos que no van a repetirse. Antes de archivar algo,
+  sacarle lo que todavía sirve como criterio (la regla permanente que dejó, no el debugging).
+
+Una sección que empieza a acumular "Versión X, sesión tal fecha, Guido dijo textual..." una tras otra
+sin que cada una agregue una regla NUEVA es la señal de que se está volviendo changelog — la sección
+13 es la más expuesta a esto (10+ rondas de ajuste versionadas), cortarlo ahí antes de que seguir
+sumando rondas la vuelva ilegible.
