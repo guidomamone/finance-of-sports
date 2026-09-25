@@ -11,6 +11,31 @@
     "motivo": "VERIFICADO (onboarding de Deportivo Pereira, 2026-09-25). Devolución real de ventas/servicios, línea negativa impresa por el propio documento como contra-revenue — mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes."
   },
   {
+    "code": "no-cierra",
+    "match": "bayernmunich-de 2024 Revenue",
+    "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). La fuente (comunicado oficial \"Jahresabschluss der Saison\", no el Geschäftsbericht completo con Anhang) redondea cada una de las 6 líneas de revenue a 1 decimal (100.000 €) — sumarlas puede diferir hasta ±0,1 M€ del total, también redondeado a 1 decimal. Ver comentario de cabecera de data/bayernmunich-de-data.js."
+  },
+  {
+    "code": "no-cierra",
+    "match": "bayernmunich-de 2025 Revenue",
+    "motivo": "Mismo caso que 2024 de este club (ver entrada arriba) — redondeo a 1 decimal de la fuente."
+  },
+  {
+    "code": "no-cierra",
+    "match": "bayernmunich-de 2025 PAT",
+    "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). netInterest/tax se reconstruyeron como residuales a partir de EBITDA/EBT/Jahresüberschuss ya redondeados a 1 decimal en la fuente (no hay Finanzergebnis/Steuern impresos como línea propia) — el redondeo acumulado da ±0,1 M€. Ver comentario de cabecera de data/bayernmunich-de-data.js y Admin/dudas-por-club.md."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "bayernmunich-de 2024 Gastos",
+    "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). La fuente (comunicado oficial, no el Geschäftsbericht completo) da solo 2 líneas de gasto sin más desglose (\"Betriebliche Aufwendungen\" y \"Materialaufwand\"), ninguna de las 2 mapea a una categoría específica de la taxonomía del sitio — van a \"Otros gastos\" por falta de detalle en la fuente, no por error de categorización. Ver comentario de cabecera de data/bayernmunich-de-data.js."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "bayernmunich-de 2025 Gastos",
+    "motivo": "Mismo caso que 2024 de este club (ver entrada arriba)."
+  },
+  {
     "code": "catchall-dominante",
     "match": "pontepreta-br 2024 Gastos",
     "motivo": "REVISADO (onboarding de Ponte Preta, 2026-09-25): mismo caso que otros clubes de este proyecto (Volta Redonda, Chapecoense) — exceptional_items no tiene fila propia en Formato Simplificado y cae al catch-all 'Otros gastos'. El ajuste extraordinario 'Depreciação/Contingência/Pept/CNRD' (-22,168 M, ligado a un pasivo laboral nuevo de 2024) es grande frente al total de gastos ordinarios del club (50,522 M), lo que empuja el catch-all a 42% — no es un error de categorización."

@@ -225,6 +225,13 @@ const clubs = {
   // `brandColor:null` (no ausente): se miró (de.wikipedia.org, "Vereinsfarben: Weiß-Rot") y NO
   // lleva color, el que lo identifica es el blanco.
   'stuttgart-de': { id:'stuttgart-de', name:'VfB Stuttgart 1893 AG', displayName:'VfB Stuttgart', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // 3 clubes grandes de Bundesliga (sesión 2026-09-25, onboarding en paralelo con otros agentes):
+  // Bayern Munich, Borussia Dortmund, RB Leipzig, los 3 con 2 ejercicios reales (2023/24, 2024/25).
+  // brandColor: los 3 son colores tradicionales muy conocidos, verificados contra la ficha de
+  // colores de camiseta de cada club (Wikipedia/footylogos) — ver fuentes/Alemania/<Club>.md.
+  'bayernmunich-de': { id:'bayernmunich-de', name:'FC Bayern München AG', displayName:'Bayern Munich', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DC052D' },
+  'dortmund-de': { id:'dortmund-de', name:'Borussia Dortmund GmbH & Co. KGaA', displayName:'Borussia Dortmund', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FDE100' },
+  'rbleipzig-de': { id:'rbleipzig-de', name:'RasenBallsport Leipzig GmbH', displayName:'RB Leipzig', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0741' },
   // Inglaterra (sesión 2026-09-22): PAÍS NUEVO, LIBRA ESTERLINA (GBP) MONEDA NUEVA, 5 clubes de
   // Premier League, 2 ejercicios cada uno (2023/24 y 2024/25). `fiscalYearStart` varía por club
   // (a diferencia de España/Alemania, cada club inglés cierra en una fecha distinta, confirmada

@@ -57,4 +57,18 @@ confirmar snapshots antiguos. Retomar en el futuro: la serie completa probableme
 IPO (2000) o al menos a mediados de los 2000, a juzgar por el precedente de Arsenal en Companies
 House (18 ejercicios, ver `fuentes/Inglaterra/Arsenal.md`).
 
-- Último chequeo: 2026-09-17.
+## Onboarding (sesión 2026-09-25)
+
+**CARGADO al sitio**: Ejercicios 2024 (2023/24) y 2025 (2024/25), ambos desde
+`geschaeftsbericht-2024-25.pdf` (que trae el ejercicio 2023/24 completo como columna comparativa —
+válido porque son cuentas HGB nominales en EUR sin reexpresión, ver `data/dortmund-de-data.js`). Se
+usó el nivel HGB KGaA standalone ("Annual Financial Statements"), no el IFRS Group consolidado,
+por consistencia con el resto de clubes alemanes ya cargados. Los 5 ejercicios más viejos
+(2018/19-2022/23) quedan sin cargar (prioridad de esta sesión: los 2 más recientes).
+
+Color de marca: `#FDE100` (amarillo tradicional "Borussia", bicolor amarillo/negro con el amarillo
+como color de identidad primario — mismo criterio que cualquier bicolor con predominancia declarada
+por el propio club/hinchada) — ampliamente documentado, no requirió desambiguación, verificado
+2026-09-25.
+
+- Último chequeo: 2026-09-25 (chequeo anterior: 2026-09-17).
