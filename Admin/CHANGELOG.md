@@ -15,6 +15,34 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 222 — 3 países sudamericanos nuevos (Chile, Perú) y evaluación de Ecuador: Colo-Colo, Universidad de Chile, Universidad Católica, Alianza Lima
+
+- De 92 a 96 clubes cargados, 178 a 193 ejercicios. Prioridad explícita de Guido: Sudamérica primero.
+  3 sesiones en paralelo (worktrees aislados) sobre el pool ya transcripto sin cargar: **Chile**
+  (`colocolo-cl` 2022-2024, `udechile-cl` 2022-2024, `catolica-cl` 2022-2024 — los 3 con serie
+  completa 2009/2010-2025 ya transcripta, se cargaron los 3 años más recientes de cada uno) y
+  **Perú** (`alianzalima-pe`, los 6 ejercicios consecutivos disponibles, 2019-2024).
+- Chile país nuevo: `cl-primera` en `data/leagues.js`, `data/club-leagues/cl.js` nuevo. Perú país
+  nuevo: `pe-liga1`, `data/club-leagues/pe.js` nuevo.
+- `FX_CLOSE` nuevo: `PEN@2022/2023/2024-12-31` (BCRP interbancario / TC contable SBS). Los 3 balances
+  chilenos NO declaran TC propio y su tipo de cambio (dólar observado SII, día hábil más cercano al
+  31/12) quedó `fx` LITERAL con `fxSource:'market_approx'` en cada archivo de club, no centralizado
+  en `FX_CLOSE` — la regla ya escrita en `data/currency-map.js` reserva esa tabla para cotizaciones
+  EXACTAS (`market_close`), justo para que nadie reuse una aproximación creyendo que es un cierre
+  oficial.
+- **Ecuador evaluado y descartado, a propósito**: LDU Quito 2022 (el único documento disponible
+  consolida colegio + country club, CERO líneas de fútbol — la "Comisión Especial de Fútbol" aparece
+  solo como saldo a cobrar) y Deportivo Cuenca (solo un historial de pagos SRI/IESS y un informe de
+  caja de un semestre, sin resultado devengado contra qué hacer tie-out) no llegan al estándar de
+  calidad del sitio. Ninguno de los dos se cargó; ambos documentados en `fuentes/Ecuador/` y
+  `Admin/dudas-por-club.md` con preguntas concretas para un futuro reach-out.
+- Las 3 sesiones se integraron a mano a `main` (no un merge de historia divergente: cada worktree
+  había arrancado de un commit ~55-61 versiones viejo, sin la migración a `Admin/`, sin `brandColor`,
+  con `totalClubs` todavía en `data/leagues.js` — se extrajo el contenido sustantivo de cada diff y
+  se reaplicó a mano contra las convenciones vigentes de HOY, no las de la base vieja de cada
+  worktree). `node tools/audit.js` y `auditAll()` en el navegador, 0 P0/P1/P2, 96 clubes, 551 checks,
+  0 mismatches, 0 warnings de fx, 0 clubes sin cargar.
+
 ## Versión 221 — 7 clubes nuevos (4to batch de 10 PDF transcriptos pendientes, prioridad Sudamérica): Millonarios, Deportivo Pereira, Guarani, Ponte Preta, RCD Mallorca, Real Oviedo, Rayo Vallecano
 
 - De 85 a 92 clubes cargados. Pedido explícito: prioridad Sudamérica, España como respaldo si no

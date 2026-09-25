@@ -13,6 +13,7 @@
 // ============================================================================
 
 window.CLUB_INDEX = {
+  "alianzalima-pe": {"n":"Alianza Lima","c":"PE","q":"full","y":6,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "americadecali-co": {"n":"América de Cali","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "americamineiro-br": {"n":"América Mineiro","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "argentinosjuniors": {"n":"Argentinos Juniors","c":"AR","q":"full","y":5,"last":2019,"yrs":[[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"]]},
@@ -28,10 +29,12 @@ window.CLUB_INDEX = {
   "banfield-ar": {"n":"Banfield","c":"AR","q":"full","y":1,"last":2020,"yrs":[[2020,"official_balance_sheet"]]},
   "boca": {"n":"Boca Juniors","c":"AR","q":"full","y":2,"last":2027,"yrs":[[2027,"official_budget"],[2025,"official_balance_sheet"]]},
   "botafogo": {"n":"Botafogo","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
+  "catolica-cl": {"n":"Universidad Católica","c":"CL","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "celtavigo": {"n":"Celta de Vigo","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "cerezoosaka": {"n":"Cerezo Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "chapecoense-br": {"n":"Chapecoense","c":"BR","q":"full","y":1,"last":2021,"yrs":[[2021,"official_balance_sheet"]]},
   "clubamerica": {"n":"Club América","c":"MX","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "colocolo-cl": {"n":"Colo-Colo","c":"CL","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "corinthians-br": {"n":"Corinthians","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "coritiba": {"n":"Coritiba","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "cruzeiro": {"n":"Cruzeiro","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
@@ -93,6 +96,7 @@ window.CLUB_INDEX = {
   "stuttgart-de": {"n":"VfB Stuttgart","c":"DE","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "talleres-ar": {"n":"Talleres","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "tottenham-gb": {"n":"Tottenham Hotspur","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "udechile-cl": {"n":"Universidad de Chile","c":"CL","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "union": {"n":"Unión","c":"AR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "unionmagdalena-co": {"n":"Unión Magdalena","c":"CO","q":"full","y":1,"last":2018,"yrs":[[2018,"official_balance_sheet"]]},
   "urawareddiamonds": {"n":"Urawa Red Diamonds","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

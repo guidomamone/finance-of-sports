@@ -73,23 +73,26 @@ se reescribe, no se acumula.
   y `'pending_official'` siguen existiendo en el código, con su rama en
   `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
   los usa ningún club.
-- DATOS: 92 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
-  oficial), de 8 países: Argentina 16, España 18, Japón 10, Brasil 27, Colombia 10,
-  Alemania 5, Inglaterra 5, México 1. 30 de esos 92 clubes se sumaron en 4 sesiones de
-  onboarding en paralelo de PDF transcriptos pendientes (Versiones 217, 219, 220 y 221,
-  2026-09-24/25), el detalle club por club de cada tanda está en `Admin/CHANGELOG.md`
-  (no se repite acá para que esta sección no crezca sin límite). Ninguna abrió país
-  nuevo de infraestructura — Brasil/Colombia/Argentina/España ya estaban cargados.
-  Desde la Versión 217 los clubes nuevos nacen con el país en el `clubId` (ej.
-  `americamineiro-br`, `corinthians-br`, `millonarios-co`), convención de la Versión
-  129 que hasta ahí no se venía aplicando a los clubes que se agregaban
-  (`tools/audit.js` lo empezó a chequear recién en la Versión 217, `clubid-sin-pais`).
-  Rosario Central e Independiente, ya cargados, sumaron un 2do ejercicio cada uno
-  (2024-25 y N°122/2025-26 respectivamente, Versión 209) — con esto se cierra el to-do
-  58 completo (los 6 ejercicios que el barrido del 2026-09-22 encontró y descargó).
-  Alemania e Inglaterra son países nuevos desde la Versión 201 (sesión 2026-09-22, GBP
-  moneda nueva). Un solo motor genérico calcula Finanzas para todos (ver
-  `Admin/ARQUITECTURA.md`); no queda ningún club con motor propio desde la Versión 102.
+- DATOS: 96 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+  oficial), de 10 países: Argentina 16, España 18, Japón 10, Brasil 27, Colombia 10,
+  Alemania 5, Inglaterra 5, México 1, Chile 3, Perú 1. 34 de esos 96 clubes se sumaron
+  en 5 sesiones de onboarding en paralelo de PDF transcriptos pendientes (Versiones 217,
+  219, 220, 221 y 222, 2026-09-24/25), el detalle club por club de cada tanda está en
+  `Admin/CHANGELOG.md` (no se repite acá para que esta sección no crezca sin límite).
+  Chile y Perú son países nuevos desde la Versión 222 (Colo-Colo, Universidad de Chile,
+  Universidad Católica y Alianza Lima) — Ecuador se evaluó en la misma sesión y se
+  descartó a propósito, ningún documento disponible llega al estándar de calidad (ver
+  `Admin/dudas-por-club.md`). Desde la Versión 217 los clubes nuevos nacen con el país
+  en el `clubId` (ej. `americamineiro-br`, `corinthians-br`, `millonarios-co`),
+  convención de la Versión 129 que hasta ahí no se venía aplicando a los clubes que se
+  agregaban (`tools/audit.js` lo empezó a chequear recién en la Versión 217,
+  `clubid-sin-pais`). Rosario Central e Independiente, ya cargados, sumaron un 2do
+  ejercicio cada uno (2024-25 y N°122/2025-26 respectivamente, Versión 209) — con esto
+  se cierra el to-do 58 completo (los 6 ejercicios que el barrido del 2026-09-22
+  encontró y descargó). Alemania e Inglaterra son países nuevos desde la Versión 201
+  (sesión 2026-09-22, GBP moneda nueva). Un solo motor genérico calcula Finanzas para
+  todos (ver `Admin/ARQUITECTURA.md`); no queda ningún club con motor propio desde la
+  Versión 102.
   El detalle club por club (qué ejercicio, qué fuente, qué es real y qué no) está
   más abajo en "QUÉ ES REAL POR CLUB", y con más detalle
   todavía en el comentario de cabecera de cada `data/<club>-data.js`.
@@ -223,7 +226,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 92 páginas, el índice y `sitemap.xml` los GENERA
+  Las 96 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -500,17 +503,17 @@ completo está en `Admin/CONVENCIONES.md`.
   pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
   sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
-  Los 92 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
+  Los 96 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
   sitio y siguen viajando en el deploy.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 92
+  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 96
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 92 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 96 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
 ---
 
@@ -529,7 +532,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 92 clubes, 178 ejercicios, 8 países.
+TOTAL: 96 clubes, 193 ejercicios, 10 países.
 
 ARGENTINA (16)
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
@@ -577,6 +580,11 @@ BRASIL (27)
   Vasco da Gama         1 ejercicio (2023), balance, BRL
   Vitória               1 ejercicio (2025), balance, BRL
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
+
+CHILE (3)
+  Colo-Colo             3 ejercicios (2022 a 2024), balance, CLP, sin deuda/caja
+  Universidad Católica  3 ejercicios (2022 a 2024), balance, CLP
+  Universidad de Chile  3 ejercicios (2022 a 2024), balance, CLP
 
 COLOMBIA (10)
   América de Cali         1 ejercicio (2025), balance, COP
@@ -638,6 +646,9 @@ JAPÓN (10)
 
 MÉXICO (1)
   Club América  1 ejercicio (2025), balance, MXN, sin deuda/caja
+
+PERÚ (1)
+  Alianza Lima  6 ejercicios (2019 a 2024), balance, PEN
 
 ===== CLUB-INDEX:END =====
 
