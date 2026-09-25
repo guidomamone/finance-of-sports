@@ -3180,3 +3180,44 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   sección se está volviendo changelog otra vez.
 - **Con esto se cierra el to-do 57 completo** (las 3 partes: `club-sourcing` Versión 211,
   `club-data-mapping` Versión 212, `club-or-year-onboarding` acá) — se borra de `Admin/TODO.md`.
+
+## Versión 214 — 17 PDF sourceados sin transcribir se transcriben (solo transcripción, sin mapeo de datos)
+
+- Barrido de `Clubes/**` en busca de carpetas con PDF pero cero `.md`: dio 165 carpetas (varios
+  cientos de PDF), la mayoría de países sourceados en sesiones recientes (Italia, Ucrania, Suiza,
+  Noruega, República Checa, Países Bajos, Rusia, Portugal, Colombia, Grecia, Turquía) y nunca
+  transcriptos. Esta sesión transcribió 17, elegidos por tamaño manejable (documentos chicos o con
+  capa de texto nativa, no los de 60-300+ páginas o 100+ MB que quedan para una sesión de
+  transcripción masiva dedicada, como la de las Versiones 156-157): Brasil (Amazonas x2, Operário
+  Ferroviário x2), México (reglamento de Control Económico de LIGA MX), Turquía (Kocaelispor,
+  İstanbul Başakşehir), Ucrania (Kolos Kovalivka, Obolon), Rusia (Akhmat Grozny), Italia (Hellas
+  Verona x2, Cremonese), Noruega (Oslo KFUM x2), Portugal (Tondela) y Argentina (All Boys). 10 vía
+  `pdftotext -layout` (texto nativo), 7 vía OCR con Tesseract (páginas escaneadas).
+- **Gotcha nuevo, no cubierto por CLAUDE.md hasta ahora**: `Clubes/Ucrania/Kolos Kovalivka/
+  kolos-auditor-info-adicional-2025.pdf` tiene capa de texto, pero es mojibake — `pdffonts` muestra
+  fuentes Helvetica/WinAnsi no embebidas y sin mapa ToUnicode, así que `pdftotext` devuelve texto
+  latino sin sentido en vez del cirílico real (ej. "ТОВ «АУДИТОРСЬКА»" sale como
+  `TOB (AyAI4TOPCbKA`). Un `pdftotext` que "funciona" (no vacío, no tira error) no alcanza para
+  confiar en la capa de texto: si el idioma esperado es cirílico/no-latino y el resultado sale en
+  caracteres latinos irreconocibles, es mojibake, no texto real — hay que tratarlo como escaneado y
+  pasar a OCR. Se resolvió así (Tesseract, `-l ukr`) y se transcribió completo.
+- **Hallazgo real, no de proceso**: `Clubes/Rusia/Akhmat Grozny/2025-poyasneniya.pdf` transcribe
+  perfecto (texto nativo limpio) pero NO es la información financiera de Akhmat Grozny — es la
+  plantilla legal en blanco ("Приложение № 8 к ФСБУ 4/2023", generada desde la base de datos legal
+  KonsultantPlus) del formulario de notas al balance, sin un solo valor cargado. El sourcing de este
+  club trajo el formulario equivocado; falta volver a buscar el documento real.
+- **OCR con calidad mala en tablas de 2+ columnas, marcado en el propio `.md`, no arreglado a mano**
+  (regla del proceso: no inventar números que el OCR no puede leer con confianza): `Clubes/Brasil/
+  Amazonas/balancos-2022-2023.md` (balance y balancete a 2 columnas, filas mezcladas incluso tras
+  la corrección de rotación), las páginas 4-5 de ambos `Clubes/Noruega/KFUM/aarsregnskap-osloKFUM-
+  2018/2019.md` (el formulario oficial de Brønnøysundregistrene salió mezclado, pero el mismo dato
+  aparece limpio más adelante en el propio documento, en el "Balanse" del club) y varias páginas de
+  `Clubes/Argentina/All Boys/asamblea-general-ordinaria-2024-presentacion.md` (diapositivas con
+  logos/fotos, esperable en una presentación — las 2 diapositivas con datos económicos sí salieron
+  legibles). Ninguno de estos 4 archivos debería usarse para cargar datos sin volver a chequear esas
+  páginas contra el PDF.
+- Alcance explícito de esta sesión: SOLO transcripción, cero mapeo de datos a `data/*.js`. Ningún
+  club de los de arriba pasa a estar "cargado al sitio" — siguen en 65 clubes/131 ejercicios (ver
+  `Admin/ESTADO.md`). Quedan ~148 carpetas más sin transcribir, la mayoría de las mismas 11
+  países; no es un to-do nuevo, es trabajo de sourcing/transcripción normal, mismo criterio que
+  sacó de la lista los puntos de "buscar y cargar" en la Versión 138.

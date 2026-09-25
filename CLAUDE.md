@@ -348,3 +348,12 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   al arrancar y fija ese `tabId` explícito en cada llamada del Browser tool, en vez de operar sobre
   "la pestaña activa" por defecto. Si se lanzan sourcing agents en paralelo que usan el browser,
   decírselo en el prompt.
+- **`pdftotext` puede devolver texto que "funciona" (no vacío, sin error) pero es MOJIBAKE, no el
+  contenido real** (encontrado transcribiendo `Clubes/Ucrania/Kolos Kovalivka/kolos-auditor-
+  info-adicional-2025.pdf`, Versión 214): el PDF tenía capa de texto, pero sus fuentes eran
+  Helvetica/WinAnsi no embebidas y sin mapa ToUnicode (confirmable con `pdffonts`), así que
+  `pdftotext` devolvía caracteres latinos sin sentido (`TOB (AyAI4TOPCbKA`) en vez del cirílico real
+  (`ТОВ «АУДИТОРСЬКА»`). La señal: si el idioma esperado del documento es no-latino (cirílico,
+  griego, etc.) y `pdftotext` devuelve caracteres latinos, no asumas que "no tiene texto que
+  aportar" ni that el documento está en otro idioma — es mojibake. Tratarlo como escaneado (OCR con
+  Tesseract, en el idioma real del documento) en vez de confiar en esa capa de texto rota.

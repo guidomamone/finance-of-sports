@@ -29,6 +29,16 @@ respaldándolos en 2021-2024.
 
 El único PDF descargado confirmado `PDF document` real vía `pdfinfo` (372 KB).
 
+**CORRECCIÓN (2026-09-24, sesión de transcripción, Versión 214): `2025-poyasneniya.pdf` NO son las
+notas explicativas de Akhmat, es la PLANTILLA LEGAL EN BLANCO** ("Приложение № 8 к ФСБУ 4/2023",
+generada desde la base de datos legal KonsultantPlus) del formulario de notas al balance — ningún
+valor cargado, ningún dato del club. Transcripción completa en
+`Clubes/Rusia/Akhmat Grozny/2025-poyasneniya.md` confirma que las 21 páginas son el formulario
+modelo, no el documento real de 2025. **Efecto: Akhmat Grozny sigue sin ningún documento real
+descargado**, ni auditor ni notas — hay que volver a `bo.nalog.gov.ru` a confirmar si el archivo
+correcto está en otro endpoint/nombre, o si el portal en verdad no tiene más que la plantilla para
+este club en 2025.
+
 ## Dudas / pendientes
 
 - **Candidato fuerte para `dudas-por-club.md`**: el club está legalmente obligado (`requiredAz:
