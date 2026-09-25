@@ -1253,3 +1253,38 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   "Otros ingresos"/"Costos deportivos" de esos 3 años quedan como una sola línea sin categorizar
   (`lump_football_operations`/`lump_football_operations_expense`). Re-OCRear esas páginas de Notas
   en una sesión futura para completar la categorización fina de esos 3 ejercicios.
+
+## LDU Quito, Ecuador — evaluación de onboarding (NO CARGADO), sesión 2026-09-25
+
+- **¿Existe un Estado de Resultados/Situación Financiera de la actividad de fútbol profesional en
+  sí, separado del club social?** El único documento público encontrado
+  (`Clubes/Ecuador/LDU Quito/`, descargado de ldu.org.ec/transparencia/) es el "Consolidado Unidad
+  Educativa-Country Club y Sede Social" — 2 segmentos (colegio; country club/sede social), sin
+  ninguna línea de fútbol (sin TV, sin recaudación de entradas/abonos, sin venta de jugadores, sin
+  sponsors). La "Comisión Especial de Fútbol" aparece en el balance solo como saldo a cobrar
+  (~$2,56 M entre activo corriente y no corriente), nunca consolidada. Pregunta para el club (o para
+  ldu.org.ec/estados-financieros/, el visor tipo flipbook mensual que la sesión de sourcing de
+  2026-09-13 no llegó a inspeccionar a fondo): ¿quién audita/publica el resultado del primer equipo
+  de fútbol, y dónde?
+- **¿Por qué el club social consolida educación + country club pero NO fútbol, si legalmente LDU
+  Quito sigue siendo una asociación civil (ninguna S.A.D.P. ecuatoriana está operativa todavía, ver
+  `fuentes/Ecuador/_notas-generales.md`)?** Si el club social y el "dueño" del fútbol profesional son
+  la misma persona jurídica hoy (no puede haber una S.A.D.P. separada si la figura no existe aún en
+  Ecuador), ¿por qué el fútbol se reporta aparte con solo un saldo intercompany? ¿Hay una fundación o
+  comisión con estados contables propios que sí se puedan conseguir?
+
+## Club Deportivo Cuenca, Ecuador — evaluación de onboarding (NO CARGADO), sesión 2026-09-25
+
+- **¿Existe un balance/estado de resultados devengado auditado del ejercicio 2025 completo (o de
+  algún ejercicio anterior), más allá del informe de caja de enero-junio 2026?** Los 2 documentos
+  encontrados (`Clubes/Ecuador/Deportivo Cuenca/`, vía nota de prensa del propio club) son: una
+  serie histórica de pagos SRI/IESS (2021-2026, sin ingresos/gastos operativos) y un informe de caja
+  de 4 cuentas bancarias de solo el primer semestre de 2026 (no el ejercicio completo, y mezcla
+  financiamiento con operación). Ninguno alcanza para tie-out contra un Resultado del ejercicio.
+- **"Remuneraciones y obligaciones de plantilla" (USD 1.091.286) vs. "Sueldos y remuneraciones" (USD
+  92.981)**: el informe de movimientos bancarios (pág. 3) lista ambas como líneas de salida
+  SEPARADAS, sin aclarar la diferencia entre las dos categorías salariales. ¿La primera es plantel
+  profesional y la segunda personal administrativo/no futbolístico? ¿O es una está en base devengado
+  y la otra en pagos de caja del semestre? (pregunta ya anotada por la sesión de sourcing del
+  2026-09-13, se repite acá porque sigue sin resolver y sería relevante si en el futuro aparece un
+  documento cargable de este club).

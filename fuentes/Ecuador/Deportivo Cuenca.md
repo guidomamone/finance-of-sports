@@ -38,4 +38,20 @@
     esquema existente (pensado para estados contables devengados) o si necesita un tratamiento
     aparte — anotar la duda en `dudas-por-club.md` si no queda claro.
 - Contacto/fuente: nota de prensa del propio club (arriba), Google Drive del club (links en la nota).
-- Último chequeo: 2026-09-13.
+- **Actualización 2026-09-25 (sesión de onboarding/data-mapping) — CONFIRMADO, no se carga.** Se
+  releyeron los 2 documentos completos con la lupa de `club-data-mapping/SKILL.md`. Confirma lo que
+  ya anticipaba la nota de sourcing: ninguno de los 2 es un estado contable devengado del EJERCICIO
+  COMPLETO. `informe-sri-iess-ene-jun-2026.md` es solo una serie histórica de PAGOS a organismos
+  tributarios/previsionales (2021-2026), sin ningún ingreso ni gasto operativo — no aporta líneas para
+  `revenueLines`/`expenseLines`. `informe-presidencia-movimientos-bancarios-ene-jun-2026.md` es un
+  informe de CAJA (movimiento de 4 cuentas bancarias) de solo el primer semestre de 2026, no el
+  ejercicio completo, y mezcla financiamiento (préstamos recibidos/pagados) con operación en la misma
+  tabla — el propio documento aclara que el saldo final "no debe interpretarse como el cierre
+  definitivo del año". No hay un total de Resultado del ejercicio (superávit/déficit) contra el cual
+  hacer tie-out, ni Estado de Situación Financiera (activo/pasivo/patrimonio). Cargar esto como
+  `revenueLines`/`expenseLines` de un "Ejercicio 2026" sería publicar un ejercicio parcial e
+  incompleto disfrazado de balance — exactamente lo que CLAUDE.md ("Precisión antes que velocidad")
+  pide evitar. **DECISIÓN: no se crea `data/deportivocuenca-ec-data.js` con estos documentos.**
+  Preguntas genuinas (incluida la ya anotada por la sesión de sourcing sobre "Remuneraciones y
+  obligaciones de plantilla" vs. "Sueldos y remuneraciones") anotadas en `Admin/dudas-por-club.md`.
+- Último chequeo: 2026-09-25.
