@@ -18,7 +18,7 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | `Admin/ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 38 KB |
+| 1 | `Admin/ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 48 KB |
 | 2 | `Admin/CONVENCIONES.md` | **siempre** | 48 KB |
 | 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 23 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |

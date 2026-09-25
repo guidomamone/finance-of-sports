@@ -60,6 +60,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Confirmado vía en.wikipedia.org ("2025 Club de Gimnasia y Esgrima La Plata season": 2025 fue su
   // 11ma temporada consecutiva en Primera, sin descenso desde ~2015) — cubre los 4 ejercicios.
   'gimnasiaesgrima-ar': { 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera', 2026: 'ar-primera' },
+  // Ferro Carril Oeste (Versión 220, sesión 2026-09-24): fuentes encontradas se contradicen entre sí
+  // sobre la categoría exacta de estos 2 ejercicios (Primera B Metropolitana/Nacional/Torneo Federal
+  // A, ninguna de las cuales tiene liga propia en el catálogo hoy) — queda en `null`, sin verificar,
+  // en vez de adivinar.
+  'ferrocarriloeste-ar': { 2022: null, 2023: null },
 });
 
 // ---------------------------------------------------------------------------

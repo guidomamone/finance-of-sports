@@ -39,4 +39,16 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'athleticoparanaense-br': { 2024: 'br-serieA', 2025: 'br-serieB' }, // descendido de la Série A al cierre de 2024 (18°), 2° en la Série B 2025, vuelve a la A en 2026
   'vitoria-br': { 2025: 'br-serieA' }, // 15° de 20
   'rbbragantino-br': { 2019: 'br-serieB', 2024: 'br-serieA' }, // campeón de la Série B 2019 (ascenso), 16° en la Série A 2024
+  // Verificado el 2026-09-24 (onboarding, Versión 220) contra Wikipedia en inglés (temporadas 2021,
+  // 2023, 2024 y 2025 de cada club). Ejercicio = año calendario, coincide con la temporada.
+  'corinthians-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
+  'palmeiras-br': { 2024: 'br-serieA', 2025: 'br-serieA' }, // 2° en 2024
+  'saopaulo-br': { 2023: 'br-serieA', 2024: 'br-serieA' },
+  'santos-br': { 2024: 'br-serieB', 2025: 'br-serieA' }, // descendido por primera vez en su historia al cierre de 2023; campeón de la Série B 2024, vuelve a la A en 2025
+  'internacional-br': { 2024: 'br-serieA', 2025: 'br-serieA' }, // clasificó a Libertadores los 2 años
+  'fluminense-br': { 2024: 'br-serieA', 2025: 'br-serieA' }, // clasificó a Libertadores 2026 por el resultado de 2025
+  'fortaleza-br': { 2025: 'br-serieA' }, // descendido al cierre de 2025 (jugó la Série A completa ese año)
+  'bahia-br': { 2024: 'br-serieA', 2025: 'br-serieA' }, // clasificó a Libertadores los 2 años
+  'chapecoense-br': { 2021: 'br-serieA' }, // ascendido en 2020, descendido al cierre de 2021
+  'vascodagama-br': { 2023: 'br-serieA' }, // ascendido en 2022, primera temporada completa de vuelta en Série A
 });

@@ -133,6 +133,20 @@ const clubs = {
   'athleticoparanaense-br': { id:'athleticoparanaense-br', name:'Club Athletico Paranaense', displayName:'Athletico Paranaense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#CE181E' },
   'vitoria-br': { id:'vitoria-br', name:'Esporte Clube Vitória', displayName:'Vitória', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF1100' },
   'rbbragantino-br': { id:'rbbragantino-br', name:'Red Bull Bragantino Futebol Ltda.', displayName:'RB Bragantino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // 10 clubes nuevos (Versión 220, 3er batch de PDF transcriptos pendientes, sesión 2026-09-24):
+  // mismo motor genérico, mismo país/moneda. `brandColor:null` en Bahia (tricolor en partes
+  // iguales, sin predominancia declarada por ninguna fuente) y São Paulo (camiseta titular blanca
+  // dominante, mismo criterio que RB Bragantino) — ver `fuentes/Brasil/<Club>.md` para el detalle.
+  'corinthians-br': { id:'corinthians-br', name:'Sport Club Corinthians Paulista', displayName:'Corinthians', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'palmeiras-br': { id:'palmeiras-br', name:'Sociedade Esportiva Palmeiras', displayName:'Palmeiras', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#035F30' },
+  'saopaulo-br': { id:'saopaulo-br', name:'São Paulo Futebol Clube', displayName:'São Paulo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'santos-br': { id:'santos-br', name:'Santos Futebol Clube', displayName:'Santos', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'internacional-br': { id:'internacional-br', name:'Sport Club Internacional', displayName:'Internacional', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E5050F' },
+  'fluminense-br': { id:'fluminense-br', name:'Fluminense Football Club', displayName:'Fluminense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#870A28' },
+  'fortaleza-br': { id:'fortaleza-br', name:'Fortaleza EC SAF', displayName:'Fortaleza', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
+  'bahia-br': { id:'bahia-br', name:'Esporte Clube Bahia S.A.F.', displayName:'Bahia', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'chapecoense-br': { id:'chapecoense-br', name:'Associação Chapecoense de Futebol', displayName:'Chapecoense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1B552A' },
+  'vascodagama-br': { id:'vascodagama-br', name:'Vasco da Gama Sociedade Anônima do Futebol', displayName:'Vasco da Gama', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
   // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
   // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
@@ -204,6 +218,9 @@ const clubs = {
   // azul marino, el que lo identifica es el blanco — mismo bucket que River/Vélez/Sevilla/Real
   // Madrid/Valencia/Once Caldas, confirmado en.wikipedia.org.
   'gimnasiaesgrima-ar': { id:'gimnasiaesgrima-ar', name:'Club de Gimnasia y Esgrima La Plata', displayName:'Gimnasia y Esgrima (La Plata)', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  // Ferro Carril Oeste, club nuevo (Versión 220, 3er batch de PDF transcriptos pendientes, sesión
+  // 2026-09-24): 2 balances reales (Ejercicios 118 y 119, 2021-22 y 2022-23).
+  'ferrocarriloeste-ar': { id:'ferrocarriloeste-ar', name:'Club Ferro Carril Oeste', displayName:'Ferro Carril Oeste', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#156538' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

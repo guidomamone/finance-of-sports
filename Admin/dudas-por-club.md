@@ -1003,3 +1003,131 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 - Se sabe que existen al menos 2 documentos más del club en Wayback Machine (balance 2022 y un año
   sin identificar todavía) que no se bajaron esta sesión — quedan para una sesión futura de
   sourcing/transcripción.
+
+## Corinthians (`corinthians-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **"Premiações, Fiel Torcedor, Loterias e Outras"** (2024 solamente, el documento 2025 SÍ separa
+  estos 4 conceptos): mezcla premios deportivos, programa de socios-hinchas, lotería (Timemania) y
+  otros ingresos sin desglose. Se cargó entera a `other_income`. **Vale pedirle al club el desglose
+  retroactivo 2024**, ya que 2025 muestra que el dato existe internamente.
+- **"Custo com vendas e aquisição de atletas"** (2024) y **"Despesa na cessão de atletas"** (2025):
+  sin nota propia de detalle en ninguno de los 2 balances — se asumieron como comisiones/costos de
+  transacción (`other_expenses`) sin confirmación documental de su composición exacta.
+
+## Palmeiras (`palmeiras-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **"Acordos e despesas legais e judiciais"** (2024, R$73,910 mil, ~47% de la columna "Despesas
+  gerais e administrativas" de fútbol profesional): un monto grande y puntual dentro de un rubro
+  administrativo genérico. Se dejó en `admin_general_expense` por no haber un ítem `exceptional_items`
+  ya establecido para Palmeiras (a diferencia de Corinthians/Botafogo/Atlético Mineiro). Podría
+  ameritar reclasificación a `exceptional_items` en una sesión futura si se confirma que es un litigio
+  puntual no recurrente.
+- **`grossDebt`** (línea "Empréstimos e financiamentos") es chica frente a "Antecipação de contratos"
+  (factoring de recibíveis futuros, R$452-633 M según el año), que el propio balance categoriza
+  aparte del préstamo bancario — documentado en el comentario de cabecera para que no se asuma que
+  `grossDebt` captura toda la deuda financiera real del club.
+
+## São Paulo (`saopaulo-br`), Brasil — onboarding 2023/2024, sesión 2026-09-24
+
+- **"Direitos de transmissão de TV/Premiações"** (línea combinada, sin desglose en ningún balance —
+  a diferencia de Flamengo/Botafogo, que sí separan TV de premios): material, ~35-40% del bloque
+  "Futebol profissional" (R$259,4 M en 2023 / R$239,4 M en 2024). Cargada entera a `broadcasting`.
+  Un desglose real necesitaría venir del club.
+
+## Santos (`santos-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **Deuda financiera sin línea 100% pura**: la Nota 11 "Empréstimos e Antecipação de recebíveis"
+  mezcla préstamos bancarios reales con factoring contra cuotas futuras de la Federação Paulista
+  (2024: R$129,591 M; 2025: R$94,338 M). Es la línea más angosta disponible, pero no es deuda
+  bancaria pura — documentado en el comentario de cabecera.
+- **Caja extremadamente baja** (R$170 mil en 2024, R$295 mil en 2025): no es error de transcripción
+  — el propio Relatório da Administração dedica varios párrafos a la crisis de liquidez del club
+  (déficit financiero de R$62 M a fines de 2023). Vale la pena que se lea en el sitio como hallazgo
+  real, no como un número sospechoso.
+- **"Receitas com manutenção e frequência"** se categorizó como `member_dues` por ser lo más cercano
+  a cuota social (ligada al Programa "Sócio Rei", Nota 7.1), pero el documento no lo llama
+  explícitamente "cuota social" — inferencia razonable, no 100% certera.
+
+## Internacional (`internacional-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **"Realização da cessão por direito de exploração"** (~R$19,5 M/año, cargada a `other_income`):
+  ligada a un contrato de 2012 de construcción/operación del Complexo Beira-Rio, pero no queda claro
+  por qué amortizar ese pasivo genera un INGRESO en el resultado en vez de reducir un activo — el
+  documento no lo explica.
+- **"Estacionamento"** (línea chica, cargada conservadoramente a `other_income`): probablemente
+  estacionamiento del Beira-Rio en día de partido, pero el rótulo no nombra el estadio explícitamente,
+  así que por el criterio conservador de `stadium_other` no se categorizó ahí.
+- Las Notas 22 y 23 del balance 2025 no suman exacto contra su propio subtotal impreso (diferencias
+  de R$20 mil y R$1 mil) — no se pudo identificar qué línea puntual tiene el error de redondeo del
+  propio documento.
+
+## Fluminense (`fluminense-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **Opinión de auditoría CON SALVEDAD en 2025** (BDO, firmada 30/4/2026): la Administración decidió
+  NO reconocer un ajuste contable por la recompra parcial de derechos vendidos a la Liga Forte União,
+  que según el auditor subestima resultado/patrimonio en R$110,427 M. Es la explicación más probable
+  de una "regularización" que menciona la prensa (otempo.com.br, junio 2026, citando un aviso de la
+  Anresf) — pero el documento cargado nunca menciona a la Anresf y su fecha es POSTERIOR a la nota de
+  prensa. **Pregunta abierta: ¿existe una versión posterior/corregida en transparenciafluminense.com.br?**
+  Vale la pena rechequear en una sesión futura.
+
+## Fortaleza (`fortaleza-br`), Brasil — onboarding 2025, sesión 2026-09-24
+
+- **"Luvas"** (línea de ingreso, R$1,133 M, Nota 17): sin categoría clara — cargada a `other_income`.
+  Podría ser un ingreso tipo bono de fichaje, valdría confirmarlo con el club.
+- **"Multas rescisórias de atletas"**: aparece simétrica en ingresos (2,227 M) y gastos (12,682 M) —
+  cargada a `other_income`/`other_expenses` en vez de forzarla a `player_sales`/`player_amortisation`,
+  por tratarse de penalidades contractuales, no ventas/amortización. Confirmar si se repite en
+  ejercicios futuros del club.
+
+## Bahia (`bahia-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **"Sócios e bilheteria" nunca se separan** en ninguna nota de ningún año, pese a que la Nota
+  17(b) del balance 2025 confirma que son 2 flujos de ingreso reales y distintos. Se cargó la línea
+  combinada a `matchday_competition`, lo que deja "Cuotas Sociales" en $0 para Bahia en Formato
+  Simplificado. Vale la pena pedirle al club el desglose.
+- **Amortización de pases 2024 no viene desglosada** en el balance tal cual se presentó ese año (la
+  Nota 16 "Custo das Atividades" solo tiene 4 líneas sin una de "Amortização" separada), aunque el
+  flujo de caja confirma que existe (R$98,430 mil de amortización no-efectivo). Se usó como proxy la
+  línea "Custos com negociação" (R$97,272 mil, muy cercana), inferida cruzando contra la propia
+  reexpresión que el balance 2025 hace de 2024 (Nota 2.20) — documentado como inferencia, no lectura
+  literal del documento 2024 tal cual se presentó.
+
+## Chapecoense (`chapecoense-br`), Brasil — onboarding 2021, sesión 2026-09-24
+
+- **Inconsistencia real del propio documento entre 3 lecturas del resultado del ejercicio**: la
+  Demonstração do Superávit/Déficit impresa (pág. 7, imagen dentro de un PDF de texto nativo) dice
+  -R$59,564 M; el Estado de Flujo de Efectivo dice -R$59,184 M; y la suma de las Notas explicativas
+  detalladas (cada una reconciliando exacta contra su propio subtotal) da -R$59,872 M. Las 3 caen
+  dentro de ~1% entre sí — ver el comentario extenso de cabecera de `data/chapecoense-br-data.js`
+  ("INCONSISTENCIA DE FUENTE") para el detalle completo. Se usó -59,872 como `officialPAT` (el valor
+  que reconcilia con los datos efectivamente cargados) en vez del titular de la pág. 7, para que
+  `verifyTieOuts()`/`tools/audit.js` no fallen por un defecto real del documento. **Candidato fuerte a
+  mail al club** (o a la Federação Catarinense) pidiendo una versión corregida o una aclaración.
+- La tabla de "Empréstimos" del Passivo (pág. 6, también imagen) muestra 10,837 M circulante para
+  2021, pero la Nota 18 (texto nativo, con desglose verificable por institución financiera) muestra
+  8,310 M — se usó la cifra de la Nota 18 para `grossDebt`, mismo criterio que el resto del archivo
+  (preferir texto nativo con desglose sobre una imagen sin desglose).
+
+## Vasco da Gama (`vascodagama-br`), Brasil — onboarding 2023, sesión 2026-09-24
+
+- **HALLAZGO IMPORTANTE, afecta el alcance de esta carga**: el documento que se esperaba usar para
+  2024 (`dre-balanco-patrimonial-2024.md`, "Vasco da Gama SAF DRE e Balanço Patrimonial 2024") resultó
+  ser, al leerlo completo, el balance de la **associação CRVG** (Club de Regatas Vasco da Gama,
+  entidad SOCIAL separada de la SAF, dueña de solo el 30% de las acciones de la SAF por equivalencia
+  patrimonial) — NO el balance de la SAF. Por eso esta sesión cargó un solo ejercicio (2023, auditado,
+  de `demonstracoes-contabeis-2023.md`) en vez de los 2 planeados. **Falta re-sourcear el balance
+  2024 real de la SAF** (la URL oficial sigue bloqueada por Cloudflare, ver `fuentes/Brasil/Vasco da
+  Gama.md`) o esperar a que se publique un 2025 auditado.
+- La línea "PECLD" de Gastos generales y administrativas del ejercicio 2023 salió con OCR degradado
+  ("PECLD 20 (3.229)") — se reconstruyó por reconciliación como un crédito de +0,020 M (no el -3,229
+  que sugería el OCR), impacto inmaterial (0,03% de G&A) pero vale una relectura manual del PDF en
+  algún momento.
+
+## Ferro Carril Oeste (`ferrocarriloeste-ar`), Argentina — onboarding Ejercicios 118/119 (2021-22, 2022-23), sesión 2026-09-24
+
+- **"Recupero Decreto 1212/03"** (línea grande en los 2 ejercicios, $82,6 M y $184,0 M): el Decreto
+  1212/03 es el régimen de retención de la AFA sobre ingresos de fútbol para aportes de seguridad
+  social, pero ninguno de los 2 balances explica qué es exactamente este mecanismo de "recupero". Se
+  cargó conservadoramente a `other_income`. Vale la pena preguntarle al club o a la AFA de qué se
+  trata exactamente antes de recategorizarlo.

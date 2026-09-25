@@ -37,4 +37,14 @@
 - Contacto: `palmeiras.com.br/balancetes-e-demonstrativos-financeiros/`;
   `futebolpaulista.com.br/Repositorio/Institucional/<año>/Palmeiras.pdf` (mirror de la federación,
   confirmado igual para 2024).
-- Último chequeo: 2026-09-16.
+- **Cargado al sitio (sesión 2026-09-24)**: 2 ejercicios, `clubId` `palmeiras-br`, en
+  `data/palmeiras-br-data.js` — 2024 (de `demonstracoes-financeiras-2023-2024.pdf`, superávit real de
+  R$198.183 mil, año de venta grande de jugadores: Endrick al Real Madrid, Luis Guilherme al West
+  Ham) y 2025 (de `demonstracoes-financeiras-2024-2025.pdf`, superávit récord de R$292.395 mil,
+  impulsado por vice-campeonato del Brasileirão/Libertadores y la primera Copa do Mundo de Clubes
+  FIFA). DRE auditada segmentada en 4 columnas (Futebol profissional/feminino/de base + Clube social)
+  los 2 años — ver comentario de cabecera del archivo de datos para el detalle completo. Gestión:
+  Leila Pereira, presidió los 2 ejercicios completos (triênio 2022/2024, reelecta 2025/2027).
+- **Color de marca**: `#035F30` (verde oscuro) — de la infobox de pt.wikipedia.org (colores del kit,
+  verde + blanco secundario), consistente con "Verdão", verificado 2026-09-24.
+- Último chequeo: 2026-09-24.

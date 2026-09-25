@@ -67,4 +67,21 @@
 - Contacto: no se relevó sección de contacto específica del sitio (dominio caído); redes o Secretaría
   del club.
 - Último chequeo: 2026-09-22.
-
+- **ONBOARDING (2026-09-24): 2 ejercicios cargados a `data/ferrocarriloeste-ar-data.js`** — Ejercicio
+  118 (2021-22, `estados-contables-ejercicio-118-2021-22.pdf`, superávit real $256.901.915,58) y
+  Ejercicio 119 (2022-23, `balance-ejercicio-119-2022-23.pdf`, superávit real $712.927.771,84,
+  impulsado por una venta/préstamo grande de jugadores, $459,76 M ARS homogéneos, que no existía
+  como línea propia el año anterior). Ninguno de los 2 balances declara su propio tipo de cambio de
+  cierre — se usó dólar mayorista de referencia BCRA (Comunicación A 3500, serie oficial vía
+  apis.datos.gob.ar): $125,215 al 30/6/2022 y $256,675 al 30/6/2023. Estas 2 cotizaciones NO se
+  agregaron a `data/currency-map.js` (`FX_CLOSE`) esta sesión — quedaron como `fx` literal en el
+  archivo del club, con nota para migrarlas cuando se sume esa entrada al archivo compartido.
+  **Duda genuina anotada para Admin/dudas-por-club.md**: la naturaleza exacta de "Recupero Decreto
+  1212/03" (línea grande en ambos ejercicios, $82,58 M y $183,95 M) — el Decreto 1212/03 es un
+  régimen de percepción/retención de la AFA sobre ingresos de fútbol profesional para cargas
+  sociales, pero el balance no explica qué es específicamente este "recupero". Se cargó como
+  `other_income` (catch-all conservador) hasta que se confirme.
+  **Color de marca: `#156538` (verde)** — Ferro Carril Oeste es "El Verde"/"Verdolaga", verde y
+  blanco. Regla de desempate (blanco pierde frente a un color no-blanco):  gana el verde. Hex
+  confirmado con 2 fuentes independientes (logotyp.us, football-logos.cc), ambas listan `#156538`.
+  Verificado 2026-09-24.

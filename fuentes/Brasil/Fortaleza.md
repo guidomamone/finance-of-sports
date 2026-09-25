@@ -27,4 +27,14 @@
   `balancos-anuais-associacao/` — conviene extraer los links con JS (`document.documentElement.
   outerHTML.match(/\.pdf/)`) en cada sub-página en vez de asumir el patrón de URL a mano.
 - Contacto: transparencia.fortaleza1918.com.br/portal-saf/ y /portal-associacao/.
-- Último chequeo: 2026-09-16.
+- **Cargado (2026-09-24)**: ejercicio 2025 de la SAF (`demonstracoes-contabeis-saf-2025.md`, el
+  paquete completo auditado, NO los balancetes de Fortes Contábil), en `data/fortaleza-br-data.js`.
+  1 solo ejercicio. La SAF no tiene columna Controladora/Consolidado (a diferencia de Botafogo/
+  Atlético Mineiro): no tiene subsidiárias propias, una sola columna de cifras. Tie-out exacto contra
+  el "Prejuízo do exercício" impreso (-120,141 M BRL). Ver el comentario de cabecera de
+  `data/fortaleza-br-data.js` para el detalle completo de categorización y verificación.
+- Color de marca: `#FF0000` — Wikipedia pt (plantilla de camiseta, campo `corpo1` del kit titular),
+  verificado 2026-09-24. Fortaleza es tricolor (azul/blanco/rojo, "Tricolor de Aço"), sin
+  predominancia declarada explícita en el texto del artículo; se usó el color del torso de la
+  camiseta titular como desempate (cae en la familia confirmada por la capa de identidad).
+- Último chequeo: 2026-09-24.

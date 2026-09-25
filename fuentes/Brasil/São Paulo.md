@@ -35,3 +35,34 @@
   `futebolpaulista.com.br/Repositorio/Institucional/<año>/` (mirror de la federación, usado para
   2024).
 - Último chequeo: 2026-09-16.
+
+## Estado de carga (2026-09-24)
+
+- **2 ejercicios cargados en `data/saopaulo-br-data.js`** (clubId `saopaulo-br`): **2023** (de
+  `demonstracoes-financeiras-2022-2023.pdf`, exercício corrente de ese documento) y **2024** (de
+  `demonstracoes-financeiras-2023-2024.pdf`, exercício corrente de ese documento). Ambos años
+  reconciliaron EXACTO contra "TOTAL DAS RECEITAS OPERACIONAIS"/"Déficit do exercício" impresos —
+  ver el comentario de cabecera de `data/saopaulo-br-data.js` para el detalle completo de
+  categorización, FX y verificación.
+- El documento 2022-2023 es formato "publicación legal" (layout de diario, 4 columnas) — la
+  transcripción `.md` existente intercala filas del Balanço y la DRE de forma poco confiable para
+  extraer números exactos. Para esta carga se re-extrajo el texto de las páginas 3, 7 y 8 del PDF
+  con `pdftotext -layout` (preserva la grilla de columnas), que sí permitió reconciliar cada fila
+  contra los subtotales impresos. Si se vuelve a necesitar ese documento a futuro, preferir esa
+  técnica (`pdftotext -layout -f <página> -l <página> archivo.pdf -`) antes que confiar en la
+  transcripción `.md` para números exactos.
+- **Duda genuina sin resolver** (candidata a `Admin/dudas-por-club.md`): el rubro "Direitos de
+  transmissão de TV/Premiações" combina derechos de TV (broadcasting) y premios por competencia
+  (competition_bonus) en una sola línea, sin desglosar en ningún otro lugar del balance — a
+  diferencia de Flamengo/Botafogo, que sí las separan. Es una línea grande (~35-40% del bloque
+  "Futebol profissional" los 2 años: R$259,441 M en 2023, R$239,421 M en 2024). Se categorizó como
+  `broadcasting` completa (asumiendo que los derechos de TV son el componente mayor), sin desglosar
+  a `competition_bonus`. Valdría la pena preguntarle al club el split real.
+- **Color de marca: `null`** — São Paulo FC es tricolor (vermelho/branco/preto, "Tricolor
+  Paulista"), pero la camiseta titular es predominantemente BLANCA (confirmado en el infobox de
+  pt.wikipedia.org: `corpo1 = FFFFFF`), con rojo y negro como acentos (franja/vivos). Mismo caso que
+  River/Vélez/Sevilla/Real Madrid/Valencia/Once Caldas (`club-or-year-onboarding` sección 3, "camisa
+  blanca con acento fuerte: no se resuelve buscando más, es decisión de producto") — se dejó
+  `brandColor: null` en vez de forzar blanco o adivinar entre rojo/negro. Verificado 2026-09-24.
+- Falta cargar (pendiente para una sesión futura): 2018, 2019, 2020 (parcial), 2021, 2022 —
+  documentos ya descargados en `Clubes/Brasil/São Paulo/`, no transcriptos/mapeados todavía.

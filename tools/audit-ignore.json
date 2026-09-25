@@ -6,6 +6,91 @@
     "motivo": "Entrada de ejemplo, no silencia nada. Copiala para agregar una real."
   },
   {
+    "code": "signo-invertido",
+    "match": "bahia-br 2024 ingreso \"Impostos e contribuições incidentes",
+    "motivo": "VERIFICADO (onboarding de Bahia, 2026-09-24). Deducción real de impuestos sobre la receita, impresa negativa por el propio balance en los 2 ejercicios — mismo tratamiento que el resto de los clubes brasileños ya cargados (Botafogo, América Mineiro, etc.). Tie-out cierra exacto con este signo."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "bahia-br 2025 ingreso \"Impostos e contribuições incidentes",
+    "motivo": "Misma línea/criterio que 2024 de este club (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "chapecoense-br 2021 ingreso \"Deduções Tributárias e Sindicais\"",
+    "motivo": "VERIFICADO (onboarding de Chapecoense, 2026-09-24). Deducción real de impuestos/sindicato sobre la receita, mismo tratamiento que el resto de los clubes brasileños."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "corinthians-br 2024 ingreso \"Impostos e contribuições (dedução, segmento futebol)\"",
+    "motivo": "VERIFICADO (onboarding de Corinthians, 2026-09-24). Deducción real de impuestos, mismo tratamiento que el resto de los clubes brasileños."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "corinthians-br 2024 gasto \"Rateio das despesas administrativas",
+    "motivo": "VERIFICADO (onboarding de Corinthians, 2026-09-24). Crédito real de la Nota 17 que cancela la línea espejo del mismo gasto registrada en el segmento fútbol — el balance reporta 2 segmentos (fútbol / clube social) y esta línea evita duplicar el gasto administrativo compartido. No es un signo dado vuelta, ver comentario de cabecera de data/corinthians-br-data.js."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "corinthians-br 2025 ingreso \"Impostos e contribuições (dedução)\"",
+    "motivo": "Mismo criterio que el resto de las deducciones fiscales de este lote (ver entradas de Corinthians/Bahia/Chapecoense arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "corinthians-br 2025 ingreso \"Outras deduções sobre a receita\"",
+    "motivo": "Mismo criterio que el resto de las deducciones fiscales de este lote."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "fortaleza-br 2025 ingreso \"Deduções sobre a receita",
+    "motivo": "VERIFICADO (onboarding de Fortaleza, 2026-09-24). Deducción real de INSS/ISS/direito de arena/repasse LFU sobre la receita, impresa negativa por el propio balance."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "internacional-br 2024 ingreso \"Dedução de direitos de televisionamento/marketing\"",
+    "motivo": "VERIFICADO (onboarding de Internacional, 2026-09-24). Deducción real sobre la receita de TV/marketing, impresa negativa por el propio balance."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "internacional-br 2024 gasto \"Recuperação de custos\"",
+    "motivo": "VERIFICADO (onboarding de Internacional, 2026-09-24). Crédito real, la propia nota del balance lo describe como 'ganho nas renegociações com atletas e empresas' — no es un signo dado vuelta, ver comentario de cabecera de data/internacional-br-data.js."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "internacional-br 2025 ingreso \"Dedução de direitos de televisionamento/marketing\"",
+    "motivo": "Misma línea/criterio que 2024 de este club (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "internacional-br 2025 ingreso \"Dedução de premiação\"",
+    "motivo": "Deducción real sobre premios, mismo criterio que el resto de las deducciones de este club."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "internacional-br 2025 gasto \"Recuperação de custos\"",
+    "motivo": "Misma línea/criterio que 2024 de este club (ver entrada arriba: 'ganho nas renegociações com atletas e empresas')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "saopaulo-br 2023 gasto \"Transferência para custo de formação de atletas",
+    "motivo": "VERIFICADO (onboarding de São Paulo, 2026-09-24). Reclasificación real de la Nota 9.2 del propio balance (transferencia hacia el costo de formación de atletas, dentro del mismo bloque de gastos) — no es un signo dado vuelta."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "vascodagama-br 2023 ingreso \"Deduções sobre a receita",
+    "motivo": "VERIFICADO (onboarding de Vasco da Gama, 2026-09-24). Deducción real de impuestos sobre la receita, mismo tratamiento que el resto de los clubes brasileños."
+  },
+  {
+    "code": "outlier-liga",
+    "match": "voltaredonda-br 2024: 2.0 M USD contra una mediana de 81.7 M USD en BR",
+    "motivo": "VERIFICADO, no es error de escala: Volta Redonda es un club chico de Série C (campeón 2024, ver data/voltaredonda-br-data.js, cargado en la Versión 217) y la mediana de la liga BR se disparó al sumar en las Versiones 219/220 varios de los clubes más grandes del país (Flamengo, Corinthians, Palmeiras, Internacional, etc., todos con revenue de cientos de millones de USD). Es la mediana la que se movió, no el dato de Volta Redonda, que ya estaba verificado con tie-out exacto en su propia carga."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "chapecoense-br 2021 Gastos",
+    "motivo": "REVISADO (onboarding de Chapecoense, 2026-09-24): el 42% del catch-all responde al nivel de detalle real disponible en el documento (2 líneas del DRE sin Nota propia — Materiais y Tributárias, ver comentario de cabecera — más el gasto extraordinario del accidente aéreo). No es un error de categorización, es el techo de lo que el balance de un club en crisis financiera aguda (2 meses antes de pedir Recuperação Judicial) permite desglosar."
+  },
+  {
     "code": "categoria-cruzada",
     "match": "atleticomineiro-br 2024 ingreso \"Custo de mercadorias e produtos",
     "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). El propio balance agrupa esta línea dentro de 'Deduções da receita' (costo de las camisetas vendidas, neteado contra el ingreso de merchandising), así que se cargó como línea negativa dentro de revenueLines usando 'admin_general_expense' (misma categoría que Botafogo usa para 'Custo venda de mercadoria', ver data/botafogo-data.js) — cruce de taxonomía intencional, monto inmaterial (0,2%-0,7% del revenue), no un error."

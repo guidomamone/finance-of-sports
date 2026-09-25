@@ -35,7 +35,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Estudiantes (Buenos Aires / Caseros)](<../Argentina/Estudiantes (Buenos Aires - Caseros).md>) — sin PDFs, dominio comprometido con spam — Último chequeo: 2026-09-22
 - [Estudiantes de La Plata](../Argentina/Estudiantes LP.md) — cargado, 4 ejercicios reales (2022-2025) — Último chequeo: 2026-09-12
 - [Estudiantes de Río Cuarto](../Argentina/Estudiantes Rio Cuarto.md) — club recién ascendido, sin PDFs — Último chequeo: 2026-09-22
-- [Ferro Carril Oeste](../Argentina/Ferro Carril Oeste.md) — 2 balances reales descargados, sin cargar aún — Último chequeo: 2026-09-12
+- [Ferro Carril Oeste](../Argentina/Ferro Carril Oeste.md) — CARGADO AL SITIO (`ferrocarriloeste-ar`, Ejercicios 118-119, 2021-22 y 2022-23) — Último chequeo: 2026-09-24
 - [Ferrocarril Midland](../Argentina/Ferrocarril Midland.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Gimnasia y Esgrima (Jujuy)](<../Argentina/Gimnasia y Esgrima (Jujuy).md>) — publicación solo física, sin PDFs — Último chequeo: 2026-09-22
 - [Gimnasia y Esgrima (La Plata)](../Argentina/Gimnasia y Esgrima LP.md) — cargado, 3 balances reales + 2 presupuestos overlay + 1 presupuesto standalone (Ejercicios 2023-2026)

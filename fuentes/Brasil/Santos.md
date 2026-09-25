@@ -29,3 +29,31 @@
   `futebolpaulista.com.br/Repositorio/Institucional/<año>/Santos.pdf` (mirror, confirmado idéntico
   para 2024).
 - Último chequeo: 2026-09-16.
+
+## Onboarding (2026-09-24)
+
+- **2 ejercicios cargados en `data/santos-br-data.js`** (clubId `santos-br`): 2024 (de
+  `demonstracoes-financeiras-2023-2024.md`, columna "exercício corrente" de ESE documento, nunca la
+  comparativa) y 2025 (de `demonstracoes-financeiras-2024-2025.md`, ídem). Confirmado en la carátula
+  de ambos PDF: "exercício social findo em 31 de dezembro de 2024/2025" — año calendario,
+  `fiscalYearStart:'01-01'`.
+- Los 2 `.md` se leyeron coherentes, sin mojibake (texto nativo DocuSign, portugués legible de punta
+  a punta) — no aplicó el gotcha de CLAUDE.md sobre fuentes no embebidas (ese caso era cirílico sin
+  ToUnicode, acá no hay ese problema).
+- Tie-out verificado con Node, exacto los 2 años: 2024 revenue 379,070 M BRL / expenses -411,303 M
+  BRL / PAT -105,206 M BRL (déficit real); 2025 revenue 624,922 M BRL / expenses -628,410 M BRL / PAT
+  -79,396 M BRL (déficit real, segundo año consecutivo).
+- FX: ninguno de los 2 documentos declara tipo de cambio de cierre propio (solo política contable
+  genérica) — PTAX BCB vía `FX_CLOSE`: BRL@2024-12-31 (6,1923) y BRL@2025-12-31 (5,5024).
+- grossDebt = Nota 11 "Empréstimos e Antecipação de recebíveis" (2024: 129,591 M BRL; 2025: 94,338 M
+  BRL). cash = "Caixa e equivalentes de caixa" (2024: 0,170 M BRL; 2025: 0,295 M BRL) — valores muy
+  chicos, reflejan la crisis de liquidez que el propio Relatório da Administração 2024 documenta en
+  detalle (déficit financeiro de R$62 M a fines de 2023).
+- Gestión: Marcelo Pirilo Teixeira (2024-2026), confirmado directo en la firma de ambos balances —
+  cubre los 2 ejercicios cargados.
+- **Color de marca: #000000 — pt.wikipedia.org (Santos Futebol Clube, infobox "Cores": "branco e
+  preto (alvinegro)" desde el 31/3/1913), mismo criterio que Botafogo (también alvinegro, mismo hex).
+  Blanco descartado por ser el color no-distintivo (mismo criterio que River/Vélez), negro confirmado
+  como el acento identificador consistente. Verificado 2026-09-24.**
+- Pendiente sin cargar: 2020-2021 (escaneo sin capa de texto, transcripción a Markdown pendiente vía
+  OCR) y 2022/2023 standalone (no buscados esta sesión).

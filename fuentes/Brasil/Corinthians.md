@@ -42,4 +42,14 @@
 - Contacto: `corinthians.com.br/clube/transparencia/demonstracoes-financeiras-e-balancetes-patrimoniais`;
   `futebolpaulista.com.br/Repositorio/Institucional/<año>/` (mirror de la federación, usado solo
   para 2017).
-- Último chequeo: 2026-09-16.
+- **Cargado al sitio (sesión 2026-09-24)**: 2 ejercicios, `clubId` `corinthians-br`, en
+  `data/corinthians-br-data.js` — 2024 (de `demonstracoes-financeiras-2023-2024.pdf`, déficit real de
+  R$181.766 mil, DRE auditada segmentada en Futebol/Clube social) y 2025 (de
+  `demonstracoes-financeiras-2024-2025.pdf`, prejuízo real de R$143.441 mil, DRE ya consolidada en un
+  solo cuerpo — ver comentario de cabecera del archivo de datos para el detalle completo de
+  categorización, tipo de cambio y verificación de tie-out). Gestión: Augusto Melo (2024, hasta su
+  afastamento) / Osmar Stábile (2025, interino desde 28/05, efectivado 25/08).
+- **Color de marca**: `#000000` (negro) — Corinthians es "Alvinegro" (negro y blanco, confirmado por
+  el propio apodo en pt.wikipedia.org), mismo criterio ya usado para Botafogo/Atlético Mineiro/
+  Operário Ferroviário (otros clubes negro-y-blanco ya cargados en el sitio), verificado 2026-09-24.
+- Último chequeo: 2026-09-24.

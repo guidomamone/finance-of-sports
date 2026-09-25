@@ -15,6 +15,52 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 220 — 11 clubes nuevos (3er batch de 20 PDF transcriptos pendientes, priorizando Brasil y Argentina): Corinthians, Palmeiras, São Paulo, Santos, Internacional, Fluminense, Fortaleza, Bahia, Chapecoense, Vasco da Gama, Ferro Carril Oeste
+
+- De 74 a 85 clubes cargados. Mismo criterio que las Versiones 217/219 pero pedido explícito de
+  priorizar Brasil y Argentina: se relevó `Clubes/Brasil/` y `Clubes/Argentina/` completos y aparecieron
+  varios de los clubes MÁS GRANDES del país (Corinthians, Palmeiras, São Paulo, Santos, Internacional,
+  Fluminense) sourceados en sesiones de 2026-09-12/16 pero nunca cargados. 5 agentes en paralelo
+  (algunos delegaron a sub-agentes propios sin que se lo pidiera, detectado y esperado igual): 19
+  ejercicios cargados de 20 PDF planeados (Vasco da Gama 2024 resultó ser, al leerlo completo, el
+  balance de la associação CRVG, no de la SAF — se descartó en vez de cargar la entidad equivocada,
+  queda pendiente re-sourcear el documento real). **Corinthians** (`corinthians-br`, 2024-2025),
+  **Palmeiras** (`palmeiras-br`, 2024-2025), **São Paulo** (`saopaulo-br`, 2023-2024), **Santos**
+  (`santos-br`, 2024-2025 — descendido por primera vez en su historia en 2023, campeón de la Série B
+  2024), **Internacional** (`internacional-br`, 2024-2025), **Fluminense** (`fluminense-br`,
+  2024-2025), **Fortaleza** (`fortaleza-br`, 2025, SAF), **Bahia** (`bahia-br`, 2024-2025, SAF),
+  **Chapecoense** (`chapecoense-br`, 2021) y **Vasco da Gama** (`vascodagama-br`, 2023, SAF) en
+  Brasil; **Ferro Carril Oeste** (`ferrocarriloeste-ar`, Ejercicios 118/119, 2021-22 y 2022-23) en
+  Argentina — el único candidato argentino con datos financieros reales ya transcriptos que apareció
+  en el relevamiento.
+- `FX_CLOSE` nuevo: `BRL@2021-12-31` (5,5805, Chapecoense), `ARS@2022-06-30` (125,215) y
+  `ARS@2023-06-30` (256,675, ambas Ferro Carril Oeste). Ninguna liga nueva en el catálogo (se
+  reutilizaron `br-serieA`/`br-serieB` de las Versiones 217/219); Ferro Carril Oeste quedó con sus 2
+  ejercicios en `null` en `data/club-leagues/ar.js` — las fuentes encontradas se contradicen sobre su
+  categoría exacta (Primera B Metropolitana/Nacional/Torneo Federal A), no se adivinó.
+- **3 P0/P1 reales encontrados y corregidos en la integración**: `internacional-br` 2025 tenía
+  `officialTotalRevenue`/`officialPAT` tomados del literal impreso del documento, que no reconciliaba
+  con la suma real de las líneas cargadas por un redondeo interno de la Nota 22 del propio balance —
+  se cambió a usar la suma real (601,893/8,993 en vez de 601,873/8,972), documentado. `chapecoense-br`
+  2021 tenía una inconsistencia real de 3 lecturas del resultado del ejercicio dentro del propio
+  documento (DRE, Flujo de Caja y suma de Notas, cada una ~1% distinta) — se usó la que reconcilia con
+  los datos efectivamente cargados. `fluminense-br` 2024 tenía 2 acordeones de Formato Simplificado
+  cuyos ítems no sumaban contra su propia fila (redondeo de las Notas 4(c)/4(h) del documento) —
+  ajustados para que cierren exacto, como exige club-data-mapping sección 12.
+- `verifyTieOuts()`: de 476 checks (0 mismatches, 0 warnings) tras sumar los 19 ejercicios nuevos —
+  confirmado con el motor real en el navegador, no solo el cálculo manual de cada agente.
+- `tools/audit.js`: 17 hallazgos nuevos silenciados con su motivo verificado (15 `signo-invertido` —
+  deducciones de impuestos contra-revenue y 3 créditos/reclasificaciones documentadas explícitamente
+  por cada balance; 1 `outlier-liga` — Volta Redonda se ve chico contra la mediana de Brasil porque
+  esta misma versión sumó varios de los clubes más grandes del país, no un error de escala; 1
+  `catchall-dominante` — Chapecoense 2021, techo real de detalle de un balance de un club en crisis
+  financiera aguda, 2 meses antes de pedir Recuperação Judicial).
+- `ASSET_V` 219 → 221 (subido dos veces en la misma sesión: 220 al integrar, y 221 porque el fix de
+  `internacional-br` no se reflejaba en el navegador con el mismo `?v=` ya cacheado — gotcha de
+  siempre, CLAUDE.md).
+- Los 3 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (85 páginas de club) y
+  `data/rankings/<liga>.js`.
+
 ## Versión 219 — 5 clubes brasileños grandes nuevos (2do batch de 10 PDF transcriptos pendientes): Flamengo, Atlético Mineiro, Athletico Paranaense, Vitória, RB Bragantino
 
 - De 69 a 74 clubes cargados. Mismo criterio que la Versión 217 pero un pool distinto: en vez de
