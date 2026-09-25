@@ -11,14 +11,14 @@ encontrado hasta ahora en el proyecto: gratis, sin login, con una API JSON scrip
 (sin necesitar browser) — permitió series de hasta 35 ejercicios por club. Ver
 `fuentes/Bélgica/_notas-generales.md` y la sección 14 del skill de sourcing.
 
-- [Anderlecht](<../Bélgica/Anderlecht.md>) — 15 ejercicios reales, serie 2011-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [Anderlecht](<../Bélgica/Anderlecht.md>) — 15 ejercicios reales, serie 2011-2025 — **2025 cargado** (`anderlecht-be`), resto sin cargar — Último chequeo: 2026-09-25
 - [Antwerp](<../Bélgica/Antwerp.md>) — 14 ejercicios reales, serie 2012-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [Cercle Brugge](<../Bélgica/Cercle Brugge.md>) — 11 ejercicios reales, serie completa 2015-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [Charleroi](<../Bélgica/Charleroi.md>) — 25 ejercicios reales, serie 2001-2025, sin cargar aún — Último chequeo: 2026-09-17
-- [Club Brugge](<../Bélgica/Club Brugge.md>) — 35 ejercicios reales, serie 1999-2025 (entidad "De Klokke" hasta 2011), sin cargar aún — Último chequeo: 2026-09-17
+- [Club Brugge](<../Bélgica/Club Brugge.md>) — 35 ejercicios reales, serie 1999-2025 (entidad "De Klokke" hasta 2011) — **2025 cargado** (`clubbrugge-be`, versión consolidada), resto sin cargar — Último chequeo: 2026-09-25
 - [Dender EH](<../Bélgica/Dender EH.md>) — 15 ejercicios reales con huecos, sin cargar aún — Último chequeo: 2026-09-17
-- [Genk](<../Bélgica/Genk.md>) — 19 ejercicios reales, serie 2007-2025, sin cargar aún — Último chequeo: 2026-09-17
-- [Gent](<../Bélgica/Gent.md>) — 26 ejercicios reales, serie 2005-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [Genk](<../Bélgica/Genk.md>) — 19 ejercicios reales, serie 2007-2025 — **2025 cargado** (`genk-be`), resto sin cargar — Último chequeo: 2026-09-25
+- [Gent](<../Bélgica/Gent.md>) — 26 ejercicios reales, serie 2005-2025 — **2025 cargado** (`gent-be`, versión individual, no hay consolidado para este año), resto sin cargar — Último chequeo: 2026-09-25
 - [Mechelen](<../Bélgica/Mechelen.md>) — 20 ejercicios reales, serie 2007-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [OH Leuven](<../Bélgica/OH Leuven.md>) — 9 ejercicios reales, serie completa 2017-2025 (entidad correcta confirmada por turnover, hay 2 entidades homónimas sin usar), sin cargar aún — Último chequeo: 2026-09-17
 - [RAAL La Louvière](<../Bélgica/RAAL La Louvière.md>) — 8 ejercicios reales, serie 2018-2025, sin cargar aún — Último chequeo: 2026-09-17

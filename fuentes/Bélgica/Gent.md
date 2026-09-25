@@ -34,3 +34,19 @@ Nombre confirmado en la API (`enterpriseName: "KONINKLIJKE ATHLETIEK ASSOCIATIE 
 Voetbalafdeling"`) en los 26 depósitos, mismo BCE en toda la serie pese al cambio de forma jurídica.
 
 - Último chequeo: 2026-09-17.
+
+## Cargado al sitio (2026-09-25, onboarding de Bélgica como país nuevo)
+
+Se cargó el ejercicio 2025 (1/7/2024-30/6/2025), versión individual — no hay
+consolidado depositado para 2023/2024/2025 (sí para 2017-2022, ver arriba), así que
+no aplica la preferencia por consolidado de este onboarding para este club/año.
+`clubId`: `gent-be`. A diferencia de Anderlecht/Genk, el Jaarverslag de este filing
+sí trae comentario cuantitativo por línea del P&L (pág. 42), lo que permitió una
+categorización algo más fundamentada — ver el comentario de cabecera de
+`data/gent-be-data.js` para el detalle completo y el tie-out verificado. Color de
+marca: `#004794` (azul, encycolorpedia.com/schemecolor.com, confirmado contra la
+identidad azul/blanco de Wikipedia — se usó el acento no blanco), verificado
+2026-09-25.
+
+Pendiente para una sesión futura: el resto de la serie 2005-2024 (incluidos los años
+con consolidado, 2017-2022) sigue transcripta en `Clubes/Bélgica/Gent/` y sin cargar.

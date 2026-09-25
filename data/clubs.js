@@ -305,6 +305,14 @@ const clubs = {
   'dinamozagreb-hr': { id:'dinamozagreb-hr', name:'Građanski nogometni klub Dinamo', displayName:'Dinamo Zagreb', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1D3A8D' },
   'hajduksplit-hr': { id:'hajduksplit-hr', name:'HNK Hajduk s.d.d.', displayName:'Hajduk Split', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#21409A' },
   'rijeka-hr': { id:'rijeka-hr', name:'Hrvatski nogometni klub Rijeka s.d.d.', displayName:'Rijeka', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#38A1CE' },
+  // Bélgica (sesión de esta tanda): PAÍS NUEVO, 4 clubes de la Pro League, 1 ejercicio cada uno
+  // (2024/2025, cierra 30/6). brandColor verificado con Wikipedia (colores oficiales del infobox)
+  // + teamcolorcodes.com/schemecolor.com/logotyp.us para el hex — mismo criterio que River: bicolor
+  // con blanco, se usa el acento NO blanco (Club Brugge es azul/negro sin blanco, se usó el azul).
+  'clubbrugge-be': { id:'clubbrugge-be', name:'Club Brugge NV', displayName:'Club Brugge', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0078BF' },
+  'anderlecht-be': { id:'anderlecht-be', name:'Royal Sporting Club Anderlecht NV', displayName:'Anderlecht', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#4C2484' },
+  'genk-be': { id:'genk-be', name:'K. Racing Club Genk 322 VZW', displayName:'Genk', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00468F' },
+  'gent-be': { id:'gent-be', name:'K.A.A. Gent NV', displayName:'Gent', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#004794' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

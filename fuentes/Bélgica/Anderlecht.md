@@ -26,3 +26,18 @@ ANDERLECHT"`) para los 15 depósitos, y turnover del ejercicio 2024/25 (~EUR 111
 reportado por prensa (footnews.be, "Anderlecht bénéficiaire pour la deuxième année consécutive").
 
 - Último chequeo: 2026-09-17.
+
+## Cargado al sitio (2026-09-25, onboarding de Bélgica como país nuevo)
+
+Se cargó el ejercicio 2025 (1/7/2024-30/6/2025), única versión disponible (individual,
+no hay consolidado para este club). `clubId`: `anderlecht-be`. La categorización de
+"Omzet" y "Andere bedrijfsopbrengsten" quedó gruesa (`lump_football_operations` /
+`player_sales`) porque las notas 6.10 del propio filing (desglose de la cifra de
+negocios) no tienen ningún valor cargado por el club — ver la pregunta anotada en
+`Admin/dudas-por-club.md`. Ver `data/anderlecht-be-data.js` para el detalle completo
+y el tie-out verificado. Color de marca: `#4C2484` (violeta, schemecolor.com,
+confirmado contra la identidad "paars-wit"/púrpura-blanco de Wikipedia — se usó el
+acento no blanco), verificado 2026-09-25.
+
+Pendiente para una sesión futura: el resto de la serie 2011-2024 sigue transcripta
+en `Clubes/Bélgica/Anderlecht/` y sin cargar.

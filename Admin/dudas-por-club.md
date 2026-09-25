@@ -1525,3 +1525,17 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Zagreb (888.330€, ver `data/dinamozagreb-hr-data.js`) y probablemente en los otros 2 clubes croatas
   con la misma plantilla — si se carga un 4to club croata en el futuro, confirmar si el patrón se
   repite antes de asumir que es el criterio fijo del país.
+
+## Bélgica (Club Brugge, Anderlecht, Genk, Gent) — onboarding 2024/25, país nuevo, sesión 2026-09-25
+
+- **"Andere bedrijfsopbrengsten" (otros ingresos operativos) mezcla plusvalía de venta de jugadores
+  con recupero de retención impositiva sobre sueldos ("bedrijfsvoorheffing"), sin desglose propio**:
+  el mismo patrón aparece en los 3 clubes con ejercicio individual (Anderlecht, Genk, Gent) — la
+  plantilla contable belga (código NBB) agrupa ambos conceptos en una sola línea, y el propio
+  Jaarverslag de cada club solo aclara en texto narrativo que el componente MAYORITARIO es la
+  plusvalía de pases, sin dar el monto exacto de la porción de recupero impositivo. Se categorizó la
+  línea completa como `player_sales` por ser el componente mayoritario declarado, pero es una
+  aproximación, no una separación exacta. Adicionalmente, "Omzet" (Turnover) tampoco separa
+  ticketing/sponsors/TV en ningún desglose disponible en estos 3 documentos — a diferencia de Club
+  Brugge, que sí trae ese desglose (usa la versión consolidada). Si algún club belga publica en el
+  futuro un informe con más desglose, revisar si se puede separar estas líneas con más precisión.

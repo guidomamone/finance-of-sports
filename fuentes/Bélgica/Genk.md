@@ -25,3 +25,19 @@ Events" (turnover mucho menor, filings hasta 2019/20 según búsqueda externa) p
 entidad correcta es la vereniging 0434.825.462, no la NV de horeca.
 
 - Último chequeo: 2026-09-17.
+
+## Cargado al sitio (2026-09-25, onboarding de Bélgica como país nuevo)
+
+Se cargó el ejercicio 2025 (1/7/2024-30/6/2025), única versión disponible (individual,
+no hay consolidado — es una vereniging/VZW, no una NV). `clubId`: `genk-be`. Esquema
+VOL-VZW (distinto de Anderlecht/Gent, NV/VOL-kap): tiene una línea propia "Lidgeld,
+schenkingen, legaten en subsidies" (cuotas+donaciones+subsidios) que se categorizó
+como `member_dues`, y movimientos de reservas libres de impuesto/impuesto diferido
+por 7.225.620 EUR de plusvalías de transferencias diferidas a ejercicios futuros (ver
+comentario de cabecera de `data/genk-be-data.js`). Ver ese archivo para el detalle
+completo y el tie-out verificado. Color de marca: `#00468F` (azul, logotyp.us,
+confirmado contra la identidad "blauw-wit"/azul-blanco de Wikipedia — se usó el
+acento no blanco), verificado 2026-09-25.
+
+Pendiente para una sesión futura: el resto de la serie 2007-2024 sigue transcripta
+en `Clubes/Bélgica/Genk/` y sin cargar.

@@ -86,6 +86,7 @@ const REGIONS = [
 // ---------------------------------------------------------------------------
 const COUNTRIES = {
   AR: { name:'Argentina', key:'country.AR', flag:'🇦🇷', region:'sudamerica' },
+  BE: { name:'Bélgica',   key:'country.BE', flag:'🇧🇪', region:'europa' },
   BR: { name:'Brasil',    key:'country.BR', flag:'🇧🇷', region:'sudamerica' },
   CL: { name:'Chile',     key:'country.CL', flag:'🇨🇱', region:'sudamerica' },
   CO: { name:'Colombia',  key:'country.CO', flag:'🇨🇴', region:'sudamerica' },
@@ -134,6 +135,10 @@ const COUNTRIES = {
 const LEAGUES = {
   'ar-primera':        { name:'Primera División',      full:'Primera División de Argentina',       country:'AR', sport:'futbol', tier:1 },
   'ar-primeranacional':{ name:'Primera Nacional',      full:'Primera Nacional de Argentina',       country:'AR', sport:'futbol', tier:2 },
+  // Bélgica (onboarding de Club Brugge/Anderlecht/Genk/Gent, esta sesión): temporada jul-jun, cierra
+  // 30/6, mismo criterio que España/Alemania/Países Bajos. Nombre sin sponsor ("Pro League" es el
+  // nombre de la competencia en sí, no lleva sponsor en el nombre oficial actual).
+  'be-proleague':      { name:'Pro League',            full:'Pro League de Bélgica',                country:'BE', sport:'futbol', tier:1 },
   'br-serieA':         { name:'Brasileirão Série A',   full:'Campeonato Brasileiro Série A',       country:'BR', sport:'futbol', tier:1 },
   'br-serieB':         { name:'Brasileirão Série B',   full:'Campeonato Brasileiro Série B',       country:'BR', sport:'futbol', tier:2 },
   // 3ª división (Versión 217, onboarding de Volta Redonda 2024, campeón de esa edición): mismo
