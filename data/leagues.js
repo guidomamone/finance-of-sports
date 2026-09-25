@@ -94,6 +94,7 @@ const COUNTRIES = {
   GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
+  NL: { name:'Países Bajos', key:'country.NL', flag:'🇳🇱', region:'europa' },
   PE: { name:'Perú',      key:'country.PE', flag:'🇵🇪', region:'sudamerica' },
 };
 
@@ -156,6 +157,9 @@ const LEAGUES = {
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
   'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1 },
   'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1 },
+  // Países Bajos (onboarding de Ajax/PSV/Feyenoord/AZ, esta sesión): temporada jul-jun, cierra 30/6,
+  // mismo criterio que España/Alemania. Nombre sin sponsor (regla de cabecera de este archivo).
+  'nl-eredivisie':     { name:'Eredivisie',             full:'Eredivisie de los Países Bajos',      country:'NL', sport:'futbol', tier:1 },
   'pe-liga1':          { name:'Liga 1',                full:'Liga 1 de Perú',                      country:'PE', sport:'futbol', tier:1 },
 };
 

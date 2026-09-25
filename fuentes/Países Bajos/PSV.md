@@ -19,7 +19,23 @@ La propia página de archivo dice explícitamente que cubre "tot en met het seiz
 el sitio oficial — series más viejas (pre-2016/17) no están enlistadas ahí, no se buscaron fuera
 de esa página en esta sesión.
 
+## Qué se cargó al sitio (sesión de onboarding de Países Bajos)
+
+**2 ejercicios cargados** (los más recientes de los 9 bajados): 2023/24 y 2024/25, en
+`data/psv-nl-data.js` (`clubId: 'psv-nl'`). Transcripciones completas vía `pdftotext -layout` en
+`Clubes/Países Bajos/PSV/jaarverslag-2023-24.md` y `jaarverslag-2024-25.md`. Tie-out verificado
+exacto contra los 2 documentos y contra el motor real del sitio (`node tools/audit.js`, sin
+hallazgos de descuadre). A diferencia de Ajax, PSV desglosa el resultado de transferencias en sus 3
+componentes brutos (Vergoedingssommen/Afschrijving/Bijzondere waardeverminderingen), así que se
+cargó como líneas propias (`player_sales`/`player_amortisation`/`player_impairment`) en vez de un
+neto en meta. Color de marca: `#ED1C24` (rojo) — footylogos.com (color-codes/psv-eindhoven),
+verificado 2026-09-25.
+
+Quedan 7 ejercicios sin cargar del archivo ya bajado (2016/17-2022/23) — candidato a profundizar en
+una sesión futura de histórico.
+
 ## Dudas / pendientes
 
-- Ninguna abierta. Buen resultado, sin gaps en el rango cubierto.
-- Último chequeo: 2026-09-17.
+- Ninguna abierta de sourcing. Buen resultado, sin gaps en el rango cubierto.
+- Cargar los 7 ejercicios 2016/17-2022/23 ya bajados pero sin transcribir/cargar.
+- Último chequeo: 2026-09-17. Carga al sitio: 2026-09-25.
