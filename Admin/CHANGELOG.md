@@ -15,6 +15,39 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 223 — 15 clubes nuevos, Inglaterra (14) + España (Levante UD): Aston Villa, Bournemouth, Brentford, Brighton, Burnley, Chelsea, Crystal Palace, Fulham, Leeds United, Newcastle United, Nottingham Forest, Sunderland, West Ham, Wolves, Levante
+
+- De 96 a 111 clubes cargados, 193 a 218 ejercicios. Sesión continuación de la Versión 222 (mismo
+  pedido de Guido de agotar el pool de PDF ya transcriptos, prioridad Sudamérica agotada, siguió por
+  España/Inglaterra). Ningún país nuevo — Inglaterra pasa de 5 a 19 clubes, España de 18 a 19.
+- **4 agentes en worktrees aislados, 2 se cortaron a mitad de tarea por el límite semanal de uso**
+  (uno había escrito 4 de 5 clubes sin registrarlos en `clubs.js`; el otro había delegado toda la
+  investigación a 5 sub-agentes propios y nunca llegó a escribir un archivo). Se rescató el trabajo a
+  mano en los 2 casos: para el primero, se completó lo que faltaba (brandColor, registro,
+  club-leagues); para el segundo, se escribieron los 5 `data/<club>-data.js` directamente con el
+  research ya verificado que los sub-agentes habían entregado. Los otros 2 agentes (Sunderland+3 y
+  Brighton) terminaron solos sin problemas — Brighton fue el único que verificó de entrada estar
+  sobre un commit reciente de `main`, evitando el problema que costó tiempo en la Versión 222.
+- **1 P0 real encontrado y corregido en la integración**: `chelsea-gb` 2025 tenía
+  `officialTotalExpenses` incluyendo por error un ítem `exceptional_items` (£50,2M, settlement UEFA
+  por Financial Sustainability Regulations) — mismo patrón ya documentado desde Botafogo, el motor
+  excluye exceptional_items de ese chequeo.
+- **1 corrección de `fx`**: Wolves 2024-25 usaba una aproximación (`GBP@2025-05-31`) cuando la
+  cotización EXACTA del día de cierre real (`GBP@2025-06-30`) ya estaba cargada en el catálogo.
+- `gb-championship` es liga nueva (2ª división inglesa): Sunderland (2 ejercicios) y Leeds United (2
+  ejercicios) jugaron ahí, no en Premier League — verificado contra el propio documento de cada club
+  y WebSearch, no asumido. `FX_CLOSE` nuevo: `GBP@2024-07-31`/`GBP@2025-07-31` (cierre de ejercicio
+  de Sunderland y Burnley, 31/7, distinto del 30/6 o 31/5 del resto).
+- **Limitaciones genuinas documentadas, no errores de carga** (detalle completo en
+  `Admin/dudas-por-club.md`): Aston Villa (cuentas individuales sin NINGÚN activo intangible ni
+  compraventa de jugadores — el costo del plantel vive en otra entidad del grupo NSWE no depositada
+  en Companies House, 93% de sus gastos operativos quedó como `lump_football_operations_expense`);
+  Wolves 2024-25 es un período de transición de 13 meses (cambio de fecha de cierre de ejercicio);
+  Fulham 2025 tiene un valor de "Gate Receipts" forzado por el total (posible error de OCR); Chelsea
+  tiene "Cost of sales" sin desglose de wages y un gap de £1,6M sin explicar entre el P&L y sus notas
+  de amortización de pases; Crystal Palace y Fulham quedan con `brandColor:null` (franjas rojo/azul
+  sin predominancia declarada, camiseta blanca, respectivamente, mismo bucket que Levante/River).
+
 ## Versión 222 — 3 países sudamericanos nuevos (Chile, Perú) y evaluación de Ecuador: Colo-Colo, Universidad de Chile, Universidad Católica, Alianza Lima
 
 - De 92 a 96 clubes cargados, 178 a 193 ejercicios. Prioridad explícita de Guido: Sudamérica primero.

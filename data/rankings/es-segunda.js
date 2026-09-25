@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Segunda División (ES) — 3 ejercicio(s) con ranking:
-//   2025: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -23,6 +23,9 @@ window.RANKINGS["es-segunda"] = {
       { id:"elche-es", revenue:24.087, reportType:"official_balance_sheet",
         sourceId:"elche-es-cuentas-anuales-2024-25",
         mix:[["Comercial / Sponsors",3.549],["Estadio",3.11],["Televisión",7.451],["Premios por competencias",2.339],["Venta de Jugadores",5.489],["Otras secciones deportivas",0.06],["Otros ingresos",2.089]] },
+      { id:"levante-es", revenue:19.078, reportType:"official_balance_sheet",
+        sourceId:"levante-es-cuentas-anuales-consolidadas-2024-25",
+        mix:[["Comercial / Sponsors",4.505],["Estadio",3.407],["Televisión",7.733],["Premios por competencias",2.035],["Otros ingresos",1.399]] },
     ],
   },
   2024: {
