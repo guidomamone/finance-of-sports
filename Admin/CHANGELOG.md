@@ -3221,3 +3221,30 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   `Admin/ESTADO.md`). Quedan ~148 carpetas más sin transcribir, la mayoría de las mismas 11
   países; no es un to-do nuevo, es trabajo de sourcing/transcripción normal, mismo criterio que
   sacó de la lista los puntos de "buscar y cargar" en la Versión 138.
+- Se agrega el to-do 60 a `Admin/TODO.md`: re-chequear a mano las 4 transcripciones con OCR de mala
+  calidad de esta sesión antes de usarlas para cargar datos.
+
+## Versión 215 — 19 PDF más se transcriben (2do barrido, mismo alcance que la Versión 214)
+
+- Continuación directa de la Versión 214: 19 PDF más de las mismas carpetas sin transcribir,
+  completando 5 clubes enteros y dejando avanzado un 6°. Brasil (América Futebol Clube x3, Volta
+  Redonda x4), Turquía (Gaziantep FK, las 4 planillas: flujo de caja, situación financiera, estado
+  de resultados, cambios en el patrimonio), Rusia (Dínamo Majachkalá x3) y Portugal (Estrela da
+  Amadora x3) quedan con TODOS sus PDF transcriptos; Colombia (Unión Magdalena) suma 2 de 3 (ver
+  abajo). 13 vía `pdftotext -layout`, 6 vía OCR con Tesseract.
+- **Descarga rota, no transcribible**: `Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-
+  2021.pdf` no es un PDF — es una página HTML "The URL you requested has been blocked" guardada con
+  extensión `.pdf`, de un intento de descarga de una sesión anterior que `fuentes/Colombia/Union
+  Magdalena.md` ni siquiera mencionaba. Se dejó sin transcribir y se corrigió la nota de sourcing
+  con el hallazgo; hace falta volver a descargarlo del origen real.
+- **Verificación cruzada del hallazgo de la Versión 214** (la plantilla en blanco de Akhmat Grozny):
+  se le pidió al agente de Dínamo Majachkalá chequear lo mismo sobre su propio
+  `2025-poyasneniya.pdf` (mismo nombre de archivo, mismo tipo de documento, mismo país) — en este
+  caso SÍ es el documento real, con cifras y firmas del club, no una plantilla. Confirma que el
+  problema de Akhmat Grozny fue puntual de ese club, no un patrón del canal ruso en general.
+- Más OCR de calidad mala encontrado y marcado inline (no corregido a mano): 2 de las 4 planillas de
+  Gaziantep FK con un dígito de más/de menos entre el detalle de una fila y su propio total impreso;
+  las tablas numéricas densas (páginas rotadas) de `Dínamo Majachkalá/2025-poyasneniya.md`; y las 3
+  transcripciones de Estrela da Amadora, con cifras de Balanço/Demonstração de Resultados degradadas
+  o perdidas en varias páginas (texto narrativo sí confiable en las 3). Se suman al to-do 60.
+- Mismo alcance que la Versión 214: SOLO transcripción, cero mapeo a `data/*.js`.

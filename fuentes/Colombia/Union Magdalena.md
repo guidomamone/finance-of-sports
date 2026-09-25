@@ -20,5 +20,10 @@
   vía para los ejercicios sin documento sería pedírselos directo. Dado que SIIS confirma que la
   sociedad sí presentó el formulario esos años, la pregunta al club sería por el paquete completo.
 - **Sin abrir todavía**: sourcing puro, no se verificó el contenido del PDF.
+- **`Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2021.pdf` está roto** (encontrado en la
+  sesión de transcripción del 2026-09-24, Versión 214): no es un PDF, es una página HTML de "The URL
+  you requested has been blocked" guardada con extensión `.pdf` — una descarga fallida de una sesión
+  anterior no documentada acá (esta nota no menciona ningún intento de 2021). Hay que volver a
+  descargarlo desde el origen real, no transcribirlo tal cual está.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 891700992); unionmagdalena.com.co.
 - Último chequeo: 2026-09-22.

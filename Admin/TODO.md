@@ -54,6 +54,34 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+60. RE-CHEQUEAR A MANO LAS TRANSCRIPCIONES CON OCR DE MALA CALIDAD ANTES DE USARLAS PARA CARGAR
+    DATOS (Versión 214, ampliado en la 215, sesiones de transcripción del 2026-09-24). El OCR salió
+    con tablas mezcladas, dígitos sueltos mal leídos o zonas ilegibles — ya marcado dentro de cada
+    `.md`, pero ninguno debería usarse para mapear datos al sitio sin volver a mirar esas páginas
+    contra el PDF original primero:
+    - `Clubes/Brasil/Amazonas/balancos-2022-2023.md` — balance y balancete a 2 columnas, filas
+      mezcladas incluso después de la corrección de rotación.
+    - `Clubes/Noruega/KFUM/aarsregnskap-osloKFUM-2018.md` y `...-2019.md` — el formulario oficial de
+      Brønnøysundregistrene (págs. 4-5 de ambos) salió mezclado, pero el mismo dato aparece limpio
+      más adelante en el propio documento, en el "Balanse" del club — usar esa parte, no la del
+      formulario oficial.
+    - `Clubes/Argentina/All Boys/asamblea-general-ordinaria-2024-presentacion.md` — varias
+      diapositivas con logos/fotos salieron ilegibles (esperable en una presentación); las 2
+      diapositivas con datos económicos sí salieron legibles, son las únicas usables de este PDF.
+    - `Clubes/Turquía/Gaziantep FK/gaziantepfk-nakit-akis-tablosu.md` y `...-gelir-tablosu.md` —
+      dígitos sueltos con discrepancia entre el detalle y su propio total en la misma tabla
+      (15.108.708 vs 18.108.708 en el primero; 68.070.170 vs 688.070.170 en el segundo), marcado
+      inline en vez de corregido a mano.
+    - `Clubes/Rusia/Dynamo Makhachkala/2025-poyasneniya.md` — a diferencia del caso Akhmat Grozny
+      (que era una plantilla en blanco), este SÍ tiene datos reales del club, pero las tablas
+      numéricas densas de las págs. 1-12 (intangibles, bienes de uso, inversiones financieras,
+      inventarios, cuentas por cobrar) salieron muy degradadas por rotación de página; las notas
+      narrativas de las págs. 13-18 sí son confiables.
+    - `Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md`, `...-2023-24.md` y
+      `...-2021-22.md` — las 3 tienen tablas de Balanço/Demonstração de Resultados degradadas o
+      directamente perdidas por el OCR (en `...-2023-24.md` la pág. 4 salió en blanco y las cifras
+      de las págs. 5-6 casi no se recuperaron); el texto narrativo de las 3 sí es confiable.
+
 47. EXPLICARLE AL VISITANTE POR QUÉ MÉXICO NO MUESTRA CASI NADA (pedido de Guido, 2026-09-22:
     *"estoy seguro de que muchos usuarios van a querer ver méxico en detalle y hay que explicar
     por qué no se muestra nada"*). **No es una tarea de sourcing: el sourcing ya está hecho y dio
