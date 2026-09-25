@@ -15,6 +15,40 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 225 — 3 países europeos nuevos (10 clubes): Croacia, Bélgica, Dinamarca
+
+- De 121 a 131 clubes cargados, 238 a 248 ejercicios. Pedido de Guido esta vez sin prioridad de país
+  ("de donde sea, cualquier año, repetir club o no, no importa") — con Sudamérica/España/Inglaterra
+  ya agotados (Versiones 222-223) y buena parte de Alemania/Países Bajos cubierta (Versión 224), se
+  abrieron 3 países europeos más en 3 agentes paralelos: **Croacia** (Dinamo Zagreb, Hajduk Split,
+  Rijeka — ejercicio 2024, ya en euros porque Croacia adoptó el euro el 1/1/2023), **Bélgica** (Club
+  Brugge, Anderlecht, Genk, Gent — ejercicio 2024/25) y **Dinamarca** (FC København, Brøndby, FC
+  Midtjylland — DKK moneda nueva del sitio).
+- **Los 3 agentes se cortaron por el límite de sesión a mitad de tarea** (no el límite semanal esta
+  vez), cada uno en distinto grado de avance: Croacia y Bélgica llegaron a escribir los 3-4 archivos
+  de datos completos y las notas de fuentes, solo faltaba `Admin/dudas-por-club.md` pese a que varios
+  comentarios ya la referenciaban ("ver duda anotada..."); Dinamarca llegó solo a 2 de 3 clubes, sin
+  ningún registro (clubs.js/leagues.js/moneda nueva/club-leagues). Se completó todo a mano.
+- **4 P0 reales encontrados y corregidos en Bélgica**, los 4 con la MISMA causa que Chelsea (Versión
+  223): `officialTotalExpenses` incluía por error el neto de `exceptional_items` en los 4 clubes
+  (Anderlecht, Club Brugge, Genk, Gent) — la plantilla contable belga (NBB) reporta casi siempre una
+  línea "Voorzieningen voor risico's en kosten"/"Niet-recurrente bedrijfs(kosten/opbrengsten)" que el
+  motor excluye de ese chequeo. Corregido en los 4 casos.
+- **1 P0 real en Dinamarca, causa distinta**: Brøndby 2020 tenía un sub-ítem "Bestyrelseshonorar"
+  transcripto como -499 en vez de -0,499 (typo de decimal en la transcripción original, no un error
+  de mapeo), atrapado por el chequeo `items-no-cierran` de `node tools/audit.js`.
+- **DKK es moneda nueva** (`CURRENCY_META`/`FX_PLAUSIBLE_RANGE`/3 entradas `FX_CLOSE` en
+  `data/currency-map.js`, cruzando DKK/EUR × EUR/USD del BCE, mismo método que ya usa el sitio para
+  GBP) — la corona danesa está fijada al euro (ERM II) desde 1982, así que no es una moneda volátil.
+- **FC Midtjylland usa el ejercicio 2018/19, no uno más reciente**: sus balances desde 2022/23 en
+  adelante reportan la Resultatopgørelse desde "Bruttofortjeneste" (Revenue ya neteado contra Cost of
+  Sales), sin desglosar Revenue bruto en ningún lado del documento — un formato legal danés que
+  protege el detalle comercial pero que le impide a este sitio separar Revenue de Expenses de verdad.
+  2018/19 sí reporta Nettoomsætning como línea propia, así que se usó ese año en su lugar.
+- 3 nuevas ligas en el catálogo: `hr-hnl`, `be-proleague`, `dk-superliga`. Ninguno de los 10 clubes
+  necesitó verificación de descenso salvo Brøndby (Superliga los 2 tramos de su ejercicio calendario
+  2020, 4° y luego campeón) — confirmado contra Wikipedia, no asumido.
+
 ## Versión 224 — Países Bajos país nuevo (4 clubes) + 6 clubes alemanes grandes: Ajax, PSV, Feyenoord, AZ, Bayern Munich, Borussia Dortmund, RB Leipzig, TSG Hoffenheim, Hamburger SV, Borussia Mönchengladbach
 
 - De 111 a 121 clubes cargados, 218 a 238 ejercicios. Con Sudamérica/España/Inglaterra ya agotados
