@@ -41,4 +41,12 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'werderbremen-de':       { 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'augsburg-de':           { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'stuttgart-de':          { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
+  // Sesión 2026-09-25: TSG Hoffenheim (7° puesto 2023/24, 15° puesto 2024/25, sin descenso).
+  'hoffenheim-de':         { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  // Hamburger SV: 2. Bundesliga los 2 ejercicios (asciende a Bundesliga recién para 2025/26, fuera
+  // de los 2 ejercicios cargados — ver comentario de cabecera de data/hamburgersv-de-data.js).
+  'hamburgersv-de':        { 2024: 'de-2bundesliga', 2025: 'de-2bundesliga' },
+  // Borussia Mönchengladbach: ejercicio CALENDARIO. Bundesliga (1ª división) los 2 ejercicios, sin
+  // descenso (14° puesto temporada 2023/24, que cubre ambos años calendario cargados).
+  'monchengladbach-de':    { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
 });
