@@ -1235,3 +1235,21 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   `other_expenses` (catch-all) por no tener con qué separarla en sub-categorías más útiles para
   "Formato Simplificado". Vale la pena preguntarle al club (o revisar si la Memoria Anual, que sí
   tiene texto narrativo, la detalla en algún párrafo) qué compone este rubro.
+
+## Alianza Lima (Perú, onboarding financiero, sesión 2026-09-25)
+
+- **Nota "Gastos deportivos: Servicios" (S/ 9-15M/año, el 2do rubro más grande de esa Nota después
+  de Personal, en los EEFF 2019-2021): ¿qué compone este bloque?** La Nota no lo abre más — podría
+  ser viajes/concentración/seguridad para partidos (lo que llevó a categorizarlo como
+  `match_organisation_expense` en `data/alianzalima-pe-data.js`), pero también podría incluir
+  servicios médicos tercerizados, comisiones de intermediación por fichajes, u otros conceptos que
+  en otro club de este sitio caen en categorías distintas. Vale la pena preguntarle al club/auditor
+  qué compone específicamente esta línea antes de confiar en la categorización actual para
+  comparaciones entre clubes.
+- **Pendiente de transcripción, no es una pregunta al club**: los EEFF 2022, 2023 y 2024 de este
+  club (`Clubes/Perú/Alianza Lima/estado-financiero-2022.md`, `-2023.md`, `-2024.md`) solo tienen
+  transcriptos los 4 estados financieros principales, no las Notas de desglose (que si existen,
+  deberían ser equivalentes a las Notas 14-16 que sí están transcriptas en 2019-2021). Por eso
+  "Otros ingresos"/"Costos deportivos" de esos 3 años quedan como una sola línea sin categorizar
+  (`lump_football_operations`/`lump_football_operations_expense`). Re-OCRear esas páginas de Notas
+  en una sesión futura para completar la categorización fina de esos 3 ejercicios.

@@ -996,6 +996,31 @@ cascada arranca en los gastos y se lleva el resultado con ella.
 2026-09-20, to-do 20(a): el chequeo tiraba 11 hallazgos y 10 eran este caso). Si cargás un club de
 una liga que publica solo ingresos, no hace falta silenciar nada: el script ya lo entiende.
 
+## 19. Primer club de Perú (Alianza Lima): academias/franquicias/concesionarios
+
+Al cargar Alianza Lima (6 ejercicios, 2019-2024) aparecieron rubros NIIF que ningún club argentino
+tenía, y ninguno encajaba limpio en la tabla de la sección 1:
+
+- **"Ingresos por derechos de formación y transferencias"** → `player_sales` (mismo criterio que
+  "Transferencia de Jugadores" de Racing).
+- **"Franquicias de academias"** (franquiciar la marca/metodología "Academia [Club]" a un tercero
+  que la opera, cobrando un canon — ver Nota NIIF15 del club) → `youth_football`: es negocio de
+  fútbol juvenil, aunque el ingreso sea un canon de franquicia y no una cuota de alumno.
+- **"Academias de fútbol Y vóley"** (operación propia, mixta con OTRO deporte, sin poder separar la
+  porción de cada uno) → `other_sports`, mismo criterio que "no forzar una separación que el dato no
+  permite" del resto de este skill.
+- **"Ingresos por participación en torneos internacionales/nacionales"**, cuando el club los reporta
+  como línea propia SEPARADA de la taquilla (que va aparte) → `competition_bonus`, extendiendo la
+  regla ya existente en la sección 1 (ahí decía "premios por avance de ronda/campeonato", esto es lo
+  mismo: plata de la federación/confederación por participar, no plata de boletería).
+- **"Concesionarios" (del estadio, fuera del día de partido)** → `stadium_other` ("uso del estadio
+  fuera del partido", Versión 189): comparte la fila "Estadio" de Formato simplificado con
+  matchday_competition/season_tickets, sin decir que es recaudación de entradas.
+- **"Servicios" dentro de "Gastos deportivos"** (bloque grande, S/ 9-15M/año, sin más desglose en la
+  Nota): se categorizó como `match_organisation_expense` a falta de otra opción mejor, mismo espíritu
+  que cualquier categorización "mejor aproximación disponible, no una certeza" de este skill — quedó
+  como pregunta abierta en `Admin/dudas-por-club.md` porque el tamaño lo amerita.
+
 ---
 
 ## Cómo mantener este skill

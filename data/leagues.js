@@ -94,6 +94,7 @@ const COUNTRIES = {
   GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
+  PE: { name:'Perú',      key:'country.PE', flag:'🇵🇪', region:'sudamerica' },
 };
 
 // ---------------------------------------------------------------------------
@@ -151,6 +152,7 @@ const LEAGUES = {
   'gb-premierleague':  { name:'Premier League',        full:'Premier League',                      country:'GB', sport:'futbol', tier:1 },
   'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1 },
   'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1 },
+  'pe-liga1':          { name:'Liga 1',                full:'Liga 1 de Perú',                      country:'PE', sport:'futbol', tier:1 },
 };
 
 // ---------------------------------------------------------------------------

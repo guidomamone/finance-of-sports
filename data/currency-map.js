@@ -243,6 +243,14 @@ const FX_CLOSE = {
   // Placeholder, no cotización: la J.League no declara ninguna en su Club
   // Licensing Report y los 10 clubes de Japón salen de ese mismo documento.
   'JPY@2025-12-31': { fx: 150,     source: 'placeholder',  label: 'Referencia redonda de ¥150 por USD; el documento de la J.League no declara ninguna' },
+  // Perú (Alianza Lima, onboarding inicial del país): los EEFF 2019-2021 SÍ declaran su propio tipo de
+  // cambio de cierre (Nota "Riesgo de tipo de cambio", promedio ponderado SBS compra/venta) y van como
+  // fx literal + fxSource:'document_close' en data/alianzalima-pe-data.js, NO acá. Los EEFF 2022-2024
+  // transcriptos para este club no incluyen esa nota (la transcripción llegó solo hasta los 3 estados
+  // principales, no a las notas), así que estos 3 son cotizaciones de mercado investigadas aparte.
+  'PEN@2022-12-31': { fx: 3.8105, source: 'market_close', label: 'TC Interbancario BCRP, promedio compra/venta del 30/12/2022 (último día hábil del año: el 31/12/2022 fue sábado)' },
+  'PEN@2023-12-31': { fx: 3.709,  source: 'market_close', label: 'Tipo de cambio contable SBS (promedio compra/venta) al cierre del ejercicio 2023' },
+  'PEN@2024-12-31': { fx: 3.764,  source: 'market_close', label: 'Tipo de cambio contable SBS (promedio compra/venta) al cierre del ejercicio 2024' },
   // Sesión 2026-09-22 (onboarding de Getafe/Girona/Espanyol, Köln/Eintracht Frankfurt/Werder
   // Bremen/Augsburg/Stuttgart, Arsenal/Liverpool/Man City/Everton/Tottenham). Ninguno de estos
   // documentos declara su propio tipo de cambio a USD, así que las 8 entradas de abajo son cierres

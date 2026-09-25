@@ -190,6 +190,10 @@ const clubs = {
   'colocolo-cl': { id:'colocolo-cl', name:'Blanco y Negro S.A.', displayName:'Colo-Colo', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'udechile-cl': { id:'udechile-cl', name:'Azul Azul S.A.', displayName:'Universidad de Chile', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#022F87' },
   'catolica-cl': { id:'catolica-cl', name:'Cruzados S.A.D.P.', displayName:'Universidad Católica', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0071B9' },
+  // Perú, primer club del país (onboarding 2026-09-25). fiscalYearStart:'01-01': año calendario
+  // (los EEFF dicen "Al 31 de diciembre de AAAA"), mismo criterio que Brasil/Colombia/Chile.
+  // reportingCurrency:'PEN', ya soportado en CURRENCY_META (data/currency-map.js, scale:1).
+  'alianzalima-pe': { id:'alianzalima-pe', name:'Club Alianza Lima', displayName:'Alianza Lima', country:'PE', reportingCurrency:'PEN', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#192745' },
   // 5 clubes colombianos nuevos (sesión 2026-09-22, Ejercicio 2025 cada uno), mismo criterio de
   // ejercicio/moneda que Envigado/Once Caldas de arriba.
   'americadecali-co': { id:'americadecali-co', name:'América de Cali S.A. En Reorganización', displayName:'América de Cali', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B00000' },
