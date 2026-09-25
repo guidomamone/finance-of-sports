@@ -12,10 +12,10 @@ KNVB por temporada como mapa — mismo patrón que Croacia (HNS) e Italia (licen
 quedó en dead-end total. Ver `fuentes/Países Bajos/_notas-generales.md` y la sección 23 (propuesta)
 del skill de sourcing.
 
-- [Ajax](<../Países Bajos/Ajax.md>) — 11 ejercicios 2013/14-2024/25 (falta 2017/18), sin cargar aún — Último chequeo: 2026-09-17
-- [PSV](<../Países Bajos/PSV.md>) — 9 ejercicios, serie completa 2016/17-2024/25, sin cargar aún — Último chequeo: 2026-09-17
-- [Feyenoord](<../Países Bajos/Feyenoord.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
-- [AZ](<../Países Bajos/AZ.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Ajax](<../Países Bajos/Ajax.md>) — 11 ejercicios 2013/14-2024/25 (falta 2017/18), **2 más recientes (2023/24, 2024/25) cargados** — Último chequeo: 2026-09-17, carga: 2026-09-25
+- [PSV](<../Países Bajos/PSV.md>) — 9 ejercicios, serie completa 2016/17-2024/25, **2 más recientes (2023/24, 2024/25) cargados** — Último chequeo: 2026-09-17, carga: 2026-09-25
+- [Feyenoord](<../Países Bajos/Feyenoord.md>) — 7 ejercicios, serie completa 2018/19-2024/25, **2 más recientes (2023/24, 2024/25) cargados** — Último chequeo: 2026-09-17, carga: 2026-09-25
+- [AZ](<../Países Bajos/AZ.md>) — 7 ejercicios, serie completa 2018/19-2024/25, **2 más recientes (2023/24, 2024/25) cargados** — Último chequeo: 2026-09-17, carga: 2026-09-25
 - [FC Twente](<../Países Bajos/FC Twente.md>) — 7 ejercicios, serie completa 2018/19-2024/25, sin cargar aún — Último chequeo: 2026-09-17
 - [FC Groningen](<../Países Bajos/FC Groningen.md>) — 16 ejercicios, serie completa 2009/10-2024/25, ver duda de dos entidades en dudas-por-club.md — Último chequeo: 2026-09-17
 - [FC Utrecht](<../Países Bajos/FC Utrecht.md>) — 7 ejercicios 2017/18-2024/25 (falta 2019/20), sin cargar aún — Último chequeo: 2026-09-17

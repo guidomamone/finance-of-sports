@@ -31,8 +31,22 @@ Además de los jaarverslagen completos, `ajax.nl/media/` aloja informes semestra
 ("halfjaarlijkse financiële verslaglegging") de dic-2019 a dic-2025 — no descargados (no es el
 ejercicio anual completo), quedan como complemento si se necesita un cierre a mitad de año.
 
+## Qué se cargó al sitio (sesión de onboarding de Países Bajos)
+
+**2 ejercicios cargados** (los más recientes de los 11 bajados): 2023/24 y 2024/25, en
+`data/ajax-nl-data.js` (`clubId: 'ajax-nl'`). Transcripciones completas vía `pdftotext -layout`
+(PDF con capa de texto nativa) en `Clubes/Países Bajos/Ajax/jaarverslag-2023-24.md` y
+`jaarverslag-2024-25.md`. Tie-out verificado exacto contra los 2 documentos (Bedrijfsresultaat,
+Resultaat vóór/na belastingen) y contra el motor real del sitio (`node tools/audit.js`, sin
+hallazgos de descuadre). Color de marca: `#DA121A` (rojo) — footylogos.com
+(color-codes/ajax-amsterdam), verificado 2026-09-25.
+
+Quedan 8 ejercicios sin cargar del archivo ya bajado (2013/14 a 2022/23, falta 2017/18) — candidato
+a profundizar en una sesión futura de histórico.
+
 ## Dudas / pendientes
 
 - Profundizar 1998-2012 si Guido quiere la serie completa desde el IPO — requiere explorar
   `archief.ajax.nl` o pedir acceso a `financialfilings.com`.
-- Último chequeo: 2026-09-17.
+- Cargar los 8 ejercicios 2013/14-2022/23 (falta 2017/18) ya bajados pero sin transcribir/cargar.
+- Último chequeo: 2026-09-17. Carga al sitio: 2026-09-25.

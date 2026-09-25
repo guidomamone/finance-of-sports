@@ -276,6 +276,14 @@ const clubs = {
   // Ferro Carril Oeste, club nuevo (Versión 220, 3er batch de PDF transcriptos pendientes, sesión
   // 2026-09-24): 2 balances reales (Ejercicios 118 y 119, 2021-22 y 2022-23).
   'ferrocarriloeste-ar': { id:'ferrocarriloeste-ar', name:'Club Ferro Carril Oeste', displayName:'Ferro Carril Oeste', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#156538' },
+  // Países Bajos (sesión de esta tanda): PAÍS NUEVO, 4 clubes de Eredivisie, 2 ejercicios cada uno
+  // (2023/2024 y 2024/2025, ambos cierran 30/6). brandColor verificado contra footylogos.com
+  // (color-codes/eredivisie): los 4 clubes tienen rojo como color primario listado (no el blanco
+  // ni el negro que también llevan en el escudo/indumentaria).
+  'ajax-nl': { id:'ajax-nl', name:'AFC Ajax N.V.', displayName:'Ajax', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DA121A' },
+  'psv-nl': { id:'psv-nl', name:'PSV N.V.', displayName:'PSV', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
+  'feyenoord-nl': { id:'feyenoord-nl', name:'Feyenoord Rotterdam N.V.', displayName:'Feyenoord', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
+  'az-nl': { id:'az-nl', name:'AZ Holding B.V.', displayName:'AZ', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#CA0008' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

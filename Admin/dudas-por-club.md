@@ -1414,3 +1414,25 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Operating expenses/Player trading/Interest, solo Tax y el resultado neto. ¿Preferís reflejar la
   cifra restated (73.369) en su lugar, ya que es la que BDO LLP considera la correcta con
   retrospectiva completa? Ver el comentario extenso en `data/brighton-gb-data.js`.
+
+## Países Bajos (Ajax, PSV, Feyenoord, AZ) — onboarding 2023/24-2024/25, país nuevo, sesión 2026-09-25
+
+- **Feyenoord — línea "Partnerships, business seats, units en boarding" (Netto-omzet, nota 3.1)**:
+  45,238M€ en 2024/25 (39,593M€ en 2023/24), ~20-28% del ingreso operativo, mezcla en una sola línea
+  sponsors/valla publicitaria (`sponsorship_commercial`) con paquetes de temporada premium tipo
+  business-seats/units (que en Ajax y PSV son `season_tickets`) — el documento no la desglosa en
+  ningún lado (a diferencia de Ajax, que sí separa "Seizoenkaarten" de "Business-seats en
+  skybox-plaatsen" como líneas propias). Se cargó entera como `sponsorship_commercial` (el rótulo
+  "Partnerships" lidera y "boarding" es publicidad, pero la porción de "business seats/units" bien
+  podría ser mayoritariamente `season_tickets`). ¿Feyenoord puede aclarar qué proporción de esa línea
+  corresponde a cada concepto? Ver comentario de cabecera de `data/feyenoord-nl-data.js`.
+- **AZ — línea "Verhuur spelers en detachering personeel"** (0,698M€/0,687M€, chica): mezcla ingreso
+  por cesión/préstamo de jugadores con secondment de personal, sin desglose — se cargó a
+  `other_income` por ser mixta y chica, en vez de forzarla a `player_sales`. No amerita mail (monto
+  irrelevante), queda anotado por si alguna sesión futura encuentra el desglose en otro documento.
+- **Los 4 clubes son sociedades cotizantes/holdings sin negocio no-futbolístico** (a diferencia de
+  los clubes argentinos, que son asociaciones civiles multideportivas): "Cuotas Sociales",
+  "Educación" y "Otras secciones deportivas" dan $0 en Formato Simplificado para los 4 — confirmado
+  que es correcto (no un hueco de categorización) al no encontrar en ningún jaarverslag/jaarrekening
+  una línea de colegio, polideportivo o cuota de socio — son sociedades anónimas/holdings (N.V./B.V.),
+  no clubes-asociación con membresía que paga cuota.
