@@ -15,6 +15,40 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 219 — 5 clubes brasileños grandes nuevos (2do batch de 10 PDF transcriptos pendientes): Flamengo, Atlético Mineiro, Athletico Paranaense, Vitória, RB Bragantino
+
+- De 69 a 74 clubes cargados. Mismo criterio que la Versión 217 pero un pool distinto: en vez de
+  ampliar a países nuevos, se relevó `Clubes/Brasil/` completo y aparecieron varios clubes GRANDES
+  ya transcriptos en sesiones de sourcing de 2026-09-12/16 (antes de la Versión 214) pero nunca
+  onboardeados — cero infraestructura de país/moneda nueva (Brasil ya soportado), mayor valor por
+  documento. 4 agentes en paralelo, mismo protocolo de no tocar `clubs.js`/`category-map.js`/
+  `currency-map.js`: **Flamengo** (`flamengo-br`, 2024-2025, associação — no SAF), **Atlético
+  Mineiro** (`atleticomineiro-br`, 2023-2025, SAF — 2023 es un "stub period" de solo 3,5 meses desde
+  la constitución de la SAF, no un año completo), **Athletico Paranaense** (`athleticoparanaense-br`,
+  2024-2025, descendido a la Série B en 2024), **Vitória** (`vitoria-br`, 2025) y **RB Bragantino**
+  (`rbbragantino-br`, 2019 y 2024, única Ltda del lote — el PDF de 2019 era vectorial sin capa de
+  texto real, verificado con más cuidado).
+- `FX_CLOSE` nuevo: `BRL@2019-12-31` (4,0307). 2 ligas nuevas en el catálogo de la Versión 217
+  reutilizadas (`br-serieA`, `br-serieB`), sin ligas nuevas esta vez.
+- **2 P0 reales encontrados y corregidos en la integración**: `atleticomineiro-br` 2024 y 2025 no
+  cerraban en Expenses (`officialTotalExpenses` incluía por error el ítem `exceptional_items`
+  —"Resultado equivalência patrimonial"—, que el motor excluye a propósito de ese check desde
+  Botafogo). Se corrigió restando el monto exacto del ítem en cada año, documentado en el comentario
+  de `data/atleticomineiro-br-data.js`. Ningún otro P0.
+- `verifyTieOuts()`: de 389 a 419 checks, 0 mismatches, 0 warnings — los 10 ejercicios nuevos
+  reconcilian exacto contra el motor real (`auditAll()` en el navegador), no solo contra el cálculo
+  manual de cada agente.
+- `tools/audit.js`: 18 hallazgos nuevos silenciados con su motivo verificado (10 `categoria-cruzada`
+  — ingresos extraordinarios en `exceptional_items`, mismo patrón ya aceptado de Racing, y un COGS
+  neteado contra revenue con `admin_general_expense`, mismo patrón de Botafogo; 8 `signo-invertido`
+  — deducciones de impuestos contra-revenue; 2 `salto-interanual` — el stub period 2023 de Atlético
+  Mineiro y los 5 años sin cargar entre los 2 ejercicios de RB Bragantino, ambos explicados).
+- `ASSET_V` 218 → 219 (se editaron `data/clubs.js` y `data/currency-map.js`, ambos eager-loaded) —
+  el número 218 quedó tomado por una sesión concurrente (ver la entrada de arriba, detectada durante
+  esta integración sin conflicto real).
+- Los 3 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (74 páginas de club) y
+  `data/rankings/<liga>.js`.
+
 ## Versión 218 — Pipeline de outreach (Etapa 1) probado de punta a punta
 
 - Guido creó la cuenta de Resend, verificó `outreach.financeofsports.com` (DNS en Netlify DNS: DKIM,

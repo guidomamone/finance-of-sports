@@ -49,4 +49,27 @@
   2025) es un salto de calidad adicional o si la prensa se refería a años anteriores a 2019.
 - Contacto: redbullbragantino.com.br/balanco/<archivo> (ya no sirve en vivo, usar Wayback);
   web.archive.org/web/2*/https://www.redbullbragantino.com.br/balanco/*.
-- Último chequeo: 2026-09-16.
+- **CARGADO (sesión 2026-09-24): 2 ejercicios al sitio, `data/rbbragantino-br-data.js`, clubId
+  `rbbragantino-br`** — 2019 (balanco-2019.pdf, gotcha de tooling: PDF vectorial sin capa de texto,
+  Balanço patrimonial reconstruido cruzando subtotales, ver comentario de cabecera del archivo de
+  datos) y 2024 (balanco-2024-auditado-fev2025.pdf, BDO, texto nativo limpio pero transcripción sin
+  Notas explicativas). Los 2 años CIERRAN EXACTO (revenue+expenses+netInterest+tax = PAT impreso,
+  dígito por dígito) contra la DRE de cada documento. `Receita Líquida` cargada como
+  `lump_football_operations` (la fuente no desglosa ingresos en ningún nivel disponible). FX: 2024
+  usa `BRL@2024-12-31` (6,1923, ya en FX_CLOSE); 2019 usa `BRL@2019-12-31` (4,0307, PTAX venda de
+  cierre BCB, investigado vía API Olinda esta sesión — TODAVÍA PENDIENTE de agregar a
+  `data/currency-map.js` FX_CLOSE).
+- **Color de marca: `null`** (investigado 2026-09-24). Colores de origen (1928): preto e branco. Tras
+  el rebrand Red Bull (2019/2020), el kit HOME actual (infobox pt.wikipedia, plantilla Info/Clube de
+  futebol: `corpo1=FFFFFF`, `calções1=FF0000`, `meias1=FFFFFF`) es camiseta BLANCA con acento rojo
+  solo en el short — mismo caso "camiseta blanca con acento fuerte" que River/Vélez/Sevilla/Real
+  Madrid/Valencia/Once Caldas (`club-or-year-onboarding` sección 3): blanco domina la prenda
+  principal, no se fuerza un hex.
+- **Duda genuina para `Admin/dudas-por-club.md`**: "Custo do departamento de futebol" (la línea de
+  gasto más grande, 66-73% del total según el año) probablemente mezcla sueldos del plantel con
+  amortización de derechos federativos de atletas (la Demonstração dos fluxos de caixa 2024 muestra
+  "Depreciação e amortização" 110,770 M BRL como ajuste no-caja y "Aquisição de direitos federativos
+  de atletas" -114,046 M BRL como capex, señal de que el club capitaliza y amortiza pases) — sin las
+  Notas explicativas (no transcriptas, ver arriba) no se pudo separar, se cargó todo a `wages_squad`.
+  Si en el futuro se consigue/transcribe el PDF completo con Notas, revisar este split.
+- Último chequeo: 2026-09-24.

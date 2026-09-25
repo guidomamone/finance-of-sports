@@ -32,4 +32,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'americamineiro-br': { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' }, // descendido de la Série A al cierre de 2023
   'operarioferroviario-br': { 2024: 'br-serieB', 2025: 'br-serieB' },
   'voltaredonda-br': { 2024: 'br-serieC', 2025: 'br-serieB' }, // campeón de la Série C 2024, ascendido a la Série B para 2025
+  // Verificado el 2026-09-24 (onboarding, Versión 219) contra Wikipedia en inglés (temporadas 2019,
+  // 2023, 2024 y 2025 de cada club). Ejercicio = año calendario, coincide con la temporada.
+  'flamengo-br': { 2024: 'br-serieA', 2025: 'br-serieA' }, // 3° en 2024, campeón 2025
+  'atleticomineiro-br': { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' }, // clasificó a Libertadores 2023, a Sudamericana 2025
+  'athleticoparanaense-br': { 2024: 'br-serieA', 2025: 'br-serieB' }, // descendido de la Série A al cierre de 2024 (18°), 2° en la Série B 2025, vuelve a la A en 2026
+  'vitoria-br': { 2025: 'br-serieA' }, // 15° de 20
+  'rbbragantino-br': { 2019: 'br-serieB', 2024: 'br-serieA' }, // campeón de la Série B 2019 (ascenso), 16° en la Série A 2024
 });

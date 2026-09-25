@@ -73,18 +73,22 @@ se reescribe, no se acumula.
   y `'pending_official'` siguen existiendo en el código, con su rama en
   `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
   los usa ningún club.
-- DATOS: 69 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
-  oficial), de 8 países: Argentina 15, España 15, Japón 10, Brasil 10, Colombia 8,
-  Alemania 5, Inglaterra 5, México 1. Los 4 clubes nuevos de la Versión 217 (onboarding
-  en paralelo de 10 PDF transcriptos pendientes, sesión 2026-09-24): América Mineiro
-  (3 ejercicios, 2023-2025), Operário Ferroviário (2 ejercicios, 2024-2025) y Volta
-  Redonda (2 ejercicios, 2024-2025) en Brasil, y Unión Magdalena (1 ejercicio, 2018) en
-  Colombia — los 4 con el mismo motor genérico, sin ningún club/país nuevo de
-  infraestructura (Brasil y Colombia ya estaban cargados). Desde esta versión los
-  clubes nuevos nacen con el país en el `clubId` (`americamineiro-br`,
-  `operarioferroviario-br`, `voltaredonda-br`, `unionmagdalena-co`), convención de la
-  Versión 129 que hasta acá no se venía aplicando a los clubes que se agregaban
-  (`tools/audit.js` lo empezó a chequear recién en esta sesión, `clubid-sin-pais`).
+- DATOS: 74 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+  oficial), de 8 países: Argentina 15, España 15, Japón 10, Brasil 15, Colombia 8,
+  Alemania 5, Inglaterra 5, México 1. Los 9 clubes nuevos de las Versiones 217 y 218
+  (2 sesiones de onboarding en paralelo de PDF transcriptos pendientes, ambas
+  2026-09-24), todos brasileños salvo Unión Magdalena: **Versión 217** — América
+  Mineiro (3 ejercicios, 2023-2025), Operário Ferroviário (2 ejercicios, 2024-2025) y
+  Volta Redonda (2 ejercicios, 2024-2025) en Brasil, y Unión Magdalena (1 ejercicio,
+  2018) en Colombia. **Versión 219** — Flamengo (2 ejercicios, 2024-2025), Atlético
+  Mineiro (3 ejercicios, 2023-2025, "stub period" 2023 de solo 3,5 meses desde la
+  constitución de la SAF), Athletico Paranaense (2 ejercicios, 2024-2025), Vitória (1
+  ejercicio, 2025) y RB Bragantino (2 ejercicios, 2019 y 2024). Los 9 con el mismo
+  motor genérico, sin ningún club/país nuevo de infraestructura (Brasil y Colombia ya
+  estaban cargados). Desde la Versión 217 los clubes nuevos nacen con el país en el
+  `clubId` (ej. `americamineiro-br`, `flamengo-br`), convención de la Versión 129 que
+  hasta ahí no se venía aplicando a los clubes que se agregaban (`tools/audit.js` lo
+  empezó a chequear recién en la Versión 217, `clubid-sin-pais`).
   Rosario Central e Independiente, ya cargados, sumaron un 2do ejercicio cada uno
   (2024-25 y N°122/2025-26 respectivamente, Versión 209) — con esto se cierra el to-do
   58 completo (los 6 ejercicios que el barrido del 2026-09-22 encontró y descargó).
@@ -132,7 +136,7 @@ se reescribe, no se acumula.
   por temporada mirando ascensos y descensos, repartido hay que acordarse de 41
   lugares. `null` significa "nadie lo verificó todavía", así que el archivo no
   puede afirmar una liga que nadie chequeó, y `node tools/audit.js` cuenta las
-  que faltan. HOY: 136 de 139 verificadas, con la fuente anotada por bloque; las 3
+  que faltan. HOY: 146 de 149 verificadas, con la fuente anotada por bloque; las 3
   que faltan son presupuestos (Boca 2027, Racing 2026 y 2027). CRITERIO cuando un
   ejercicio cruza dos torneos (decidido por Guido): vale la categoría al cierre,
   la misma regla que ya se usa para atribuir la gestión presidencial. Los ids del
@@ -166,7 +170,7 @@ se reescribe, no se acumula.
   146 `yrs`: la LISTA de ejercicios con el reportType de cada uno). Existe porque
   eso vive adentro de `data/<club>-data.js`, que es justamente lo que no se carga
   hasta que el visitante elige ese club: con la página recién abierta, `clubs{}`
-  tiene 69 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 69
+  tiene 74 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 74
   clubes (`data/club-index.js`) contra los ~25,8 KB de `clubs.js` completo (~420
   bytes/club). Su consumidor es el
   selector jerárquico, que desde la Versión 137 EXISTE: es de acá que salen el
@@ -175,7 +179,7 @@ se reescribe, no se acumula.
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 389 checks, 0
+  cada `fx` caiga en un rango plausible para su moneda. Hoy son 419 checks, 0
   mismatches, 0 warnings (medido el 2026-09-24, Versión 217, tras sumar los 8
   ejercicios nuevos de América Mineiro/Operário Ferroviário/Volta Redonda/Unión
   Magdalena: eran 365).
@@ -188,10 +192,16 @@ se reescribe, no se acumula.
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 8 P3 y 49
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-24, Versión 217; 7 de
-  esos 49 son de esta versión: 4 `signo-invertido` y 3 `catchall-dominante` de América Mineiro/Volta
-  Redonda, todos verificados contra el documento fuente, ver el archivo para el detalle). Los 10
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 8 P3 y 67
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-24, Versión 219; 18 de
+  esos 67 son de las Versiones 217/218: 4 `signo-invertido` + 3 `catchall-dominante` de América
+  Mineiro/Volta Redonda (Versión 217), y 10 `categoria-cruzada` + 8 `signo-invertido` + 2
+  `salto-interanual` de Atlético Mineiro/Athletico Paranaense/Flamengo/Vitória/RB Bragantino
+  (Versión 219) — 2 de los P0 de esta última tanda eran reales (Atlético Mineiro 2024/2025:
+  `officialTotalExpenses` incluía por error un ítem `exceptional_items` que el motor excluye del
+  check de Gastos, corregido restando ese monto — ver comentario en `data/atleticomineiro-br-
+  data.js`), el resto son categorizaciones legítimas verificadas contra el documento fuente, ver el
+  archivo para el detalle). Los 10
   `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
   Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
   "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
@@ -204,7 +214,7 @@ se reescribe, no se acumula.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
   solo pueden revisar lo que está en memoria, así que una carga normal de la
   página audita SOLO Boca. Para auditar TODO hay que
-  forzar la carga de los 69 clubes: abrí `?audit=1` o corré `auditAll()` en la
+  forzar la carga de los 74 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
   los clubes que nadie está mirando. Desde la Versión 160 los carga en tandas
   paralelas de 25 y no de a uno, para que siga siendo viable correrlo cuando los
@@ -218,7 +228,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 69 páginas, el índice y `sitemap.xml` los GENERA
+  Las 74 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -495,17 +505,17 @@ completo está en `Admin/CONVENCIONES.md`.
   pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
   sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
-  Los 69 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
+  Los 74 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
   sitio y siguen viajando en el deploy.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 69
+  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 74
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 69 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 74 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
 ---
 
@@ -524,7 +534,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 69 clubes, 139 ejercicios, 8 países.
+TOTAL: 74 clubes, 149 ejercicios, 8 países.
 
 ARGENTINA (15)
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
@@ -543,16 +553,21 @@ ARGENTINA (15)
   Unión                          4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Vélez Sarsfield                11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 
-BRASIL (10)
+BRASIL (15)
   América Mineiro       3 ejercicios (2023 a 2025), balance, BRL
+  Athletico Paranaense  2 ejercicios (2024 a 2025), balance, BRL
   Atlético Goianiense   1 ejercicio (2025), balance, BRL
+  Atlético Mineiro      3 ejercicios (2023 a 2025), balance, BRL
   Botafogo              1 ejercicio (2024), balance, BRL
   Coritiba              1 ejercicio (2024), balance, BRL
   Cruzeiro              1 ejercicio (2025), balance, BRL
+  Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Grêmio                1 ejercicio (2024), balance, BRL
   Ituano                1 ejercicio (2024), balance, BRL
   Mirassol              1 ejercicio (2024), balance, BRL, sin deuda/caja
   Operário Ferroviário  2 ejercicios (2024 a 2025), balance, BRL
+  RB Bragantino         2 ejercicios (2019, 2024), balance, BRL
+  Vitória               1 ejercicio (2025), balance, BRL
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
 
 COLOMBIA (8)

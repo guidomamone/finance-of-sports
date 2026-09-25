@@ -16,3 +16,17 @@
   en la URL).
 - Último chequeo: 2026-09-12.
 
+## Cargado (sesión 2026-09-24)
+
+- **2 ejercicios cargados en `data/athleticoparanaense-br-data.js`** (`clubId:
+  'athleticoparanaense-br'`): 2024 (Superávit R$23,439 M) y 2025 (primer DÉFICIT real desde que hay
+  balances cargados, -R$58,134 M). Columna Controladora (no Consolidado). Ver el comentario de
+  cabecera del archivo de datos para la categorización completa y la verificación de tie-out.
+- **Color de marca: #CE181E — teamcolorcodes.com ("Athletico Red"), confirmado contra pt.wikipedia.org
+  (infobox: "suas cores tradicionais são o vermelho e o preto", rubro-negro), verificado 2026-09-24.**
+  Bicolor rojo-negro en partes iguales (franjas verticales alternadas) — se desempató a favor del
+  rojo porque "rubro" (rojo) es el primer componente del propio apodo "Rubro-Negro" del club, y
+  porque teamcolorcodes.com lista el rojo primero en su tabla de códigos (aunque su texto introductorio
+  dice "Black and Red" en ese orden — señal mixta, se priorizó el nombre del club sobre el orden de
+  un agregador de terceros).
+

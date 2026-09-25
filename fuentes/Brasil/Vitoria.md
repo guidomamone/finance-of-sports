@@ -25,3 +25,22 @@
   como referencia rápida si hiciera falta un dato intra-anual.
 - Contacto: ecvitoria.com.br/transparencia/demonstracao-financeira/.
 - Último chequeo: 2026-09-16.
+
+## Cargado (sesión 2026-09-24)
+
+- **1 ejercicio cargado en `data/vitoria-br-data.js`** (`clubId: 'vitoria-br'`): 2025 (Déficit
+  -R$25,418 M). Columna Individual/Controladora (no Consolidado). El club reporta patrimonio neto
+  NEGATIVO ("Passivo a descoberto") de -R$300,309 M al cierre — ver comentario de cabecera del
+  archivo de datos. Se encontró y documentó una inconsistencia real entre la Nota 29 y la propia DRE
+  del balance auditado (ver `Admin/dudas-por-club.md`, sección de este club, y el comentario de
+  cabecera de `data/vitoria-br-data.js`).
+- **Color de marca: #FF1100 — footylogos.com/color-codes/vitoria ("Bright Red"), confirmado contra
+  pt.wikipedia.org (infobox: "o vermelho foi substituído... consolidándose o rubro-negro como padrão
+  cromático oficial") y logos.fandom.com (escudo: mitad superior roja, mitad inferior negra, con
+  monograma "ECV" blanco), verificado 2026-09-24.** El club es bicolor rojo-negro ("rubro-negro" / Leão
+  da Barra), NO tricolor como se asumía al iniciar la tarea — Wikipedia en portugués no menciona un
+  tercer color de identidad (el blanco del escudo es solo el borde/monograma, no un color de camiseta
+  propio). Se desempató a favor del rojo por el mismo criterio que Athletico Paranaense: "rubro" es el
+  primer componente del apodo "Rubro-Negro", y el escudo tiene el rojo en la mitad SUPERIOR (más
+  prominente visualmente).
+

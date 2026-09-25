@@ -27,4 +27,20 @@
   complemento igual que la associação de Botafogo, no reemplaza a la SAF.
 - Contacto: atletico.com.br/informacoes-relatorios/ (PDFs reales); atletico.com.br/institucional/
   portal-da-transparencia/portal-da-transparencia-saf/ (portal).
-- Último chequeo: 2026-09-16.
+- **CARGADO (2026-09-24)**: los 3 ejercicios (2023, 2024, 2025) en `data/atleticomineiro-br-data.js`
+  (`clubId: 'atleticomineiro-br'`), columna Controladora (la SAF standalone, mismo criterio que
+  Botafogo). Ver el comentario de cabecera de ese archivo para la categorización completa, la
+  aclaración de que 2023 cubre solo 14/set-31/dic/2023 (no un año completo), y el cambio de
+  presidencia confirmado entre 2024 (Bruno Muzzi) y 2025 (Pedro Daniel).
+- **Duda de CVM resuelta** (ver el comentario de cabecera de `data/atleticomineiro-br-data.js`): la
+  relación con la CVM es por el AVM FII (fundo de investimento imobiliário dueño de la Arena MRV,
+  una CONTROLADA, no la SAF) y por una emisión real de debêntures de la propia SAF (60.000
+  debêntures de R$1.000 nominal, emitidas 25/09/2024, quirografárias, 3,50% a.a., vencimiento
+  25/09/2027) — probablemente bajo oferta restrita (Instrução CVM 476), no confirmado el número
+  exacto de instrução en el documento.
+- **Color de marca: #000000 (negro)** — Wikipedia en portugués confirma "preto e branco" como
+  colores tradicionales ("Alvinegro mineiro"), uniforme titular predominantemente negro; con el otro
+  color siendo blanco, gana el que no es blanco (criterio de desempate de
+  `club-or-year-onboarding` sección 3). Cruzado con teamcolorcodes.com (#000000). Verificado
+  2026-09-24.
+- Último chequeo: 2026-09-24.

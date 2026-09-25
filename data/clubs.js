@@ -124,6 +124,15 @@ const clubs = {
   'americamineiro-br': { id:'americamineiro-br', name:'América Futebol Clube', displayName:'América Mineiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007242' },
   'operarioferroviario-br': { id:'operarioferroviario-br', name:'Operário Ferroviário Esporte Clube', displayName:'Operário Ferroviário', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'voltaredonda-br': { id:'voltaredonda-br', name:'Volta Redonda Futebol Clube', displayName:'Volta Redonda', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // 5 clubes nuevos (Versión 219, 2do batch de PDF transcriptos pendientes, sesión 2026-09-24):
+  // mismo motor genérico, mismo país/moneda. `brandColor:null` en RB Bragantino: camiseta titular
+  // blanca dominante, mismo criterio que River/Vélez/Once Caldas — ver `fuentes/Brasil/<Club>.md`
+  // para el detalle de cada investigación de color.
+  'flamengo-br': { id:'flamengo-br', name:'Clube de Regatas do Flamengo', displayName:'Flamengo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
+  'atleticomineiro-br': { id:'atleticomineiro-br', name:'Clube Atlético Mineiro SAF', displayName:'Atlético Mineiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'athleticoparanaense-br': { id:'athleticoparanaense-br', name:'Club Athletico Paranaense', displayName:'Athletico Paranaense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#CE181E' },
+  'vitoria-br': { id:'vitoria-br', name:'Esporte Clube Vitória', displayName:'Vitória', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF1100' },
+  'rbbragantino-br': { id:'rbbragantino-br', name:'Red Bull Bragantino Futebol Ltda.', displayName:'RB Bragantino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
   // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
   // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.

@@ -904,3 +904,102 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   que el resto de las líneas de este ejercicio (que reconciliaron exacto, sin ningún residuo). **Vale
   preguntarle al club (o a la Dimayor directamente) qué contrato es este** antes de confiar en la
   categorización si en el futuro se carga otro ejercicio del mismo club y aparece de nuevo.
+
+## Atlético Mineiro (`atleticomineiro-br`), Brasil — onboarding 2023/2024/2025, sesión 2026-09-24
+
+- **"Outras receitas atividades esportivas" (Timemania)**: la Nota de revenue dice "substancialmente"
+  es receita de Timemania (lotería federal de clubes brasileños), sin confirmar si es el 100% o si
+  incluye algo más. El monto creció mucho año a año (0,196 M en 2023 -stub period-, 11,223 M en 2024,
+  77,064 M en 2025 — un salto de 7x en un solo año) sin que el documento explique el salto. Se cargó
+  entero a `other_income` los 3 años. **Vale preguntarle al club qué explica el salto 2024→2025** (¿un
+  cambio en el reparto de Timemania entre clubes? ¿otro ítem sumado a esa línea que el rótulo no
+  refleja?) antes de asumir que es 100% comparable entre años.
+  - Nota adicional: revisando cifras oficiales de Timemania (distribución entre ~80 clubes
+    beneficiarios, reparto según performance/audiencia), un salto de 7x en un solo año para un único
+    club es estadísticamente inusual para una lotería con reglas de reparto relativamente estables.
+    Reforzaría la hipótesis de que la línea "Outras receitas atividades esportivas" 2025 incluye algo
+    más que Timemania pura (quizás una porción de la cesión de derechos de transmisión de la Nota 26a,
+    o un ajuste puntual) — no se pudo confirmar en el documento disponible. Mantener la pregunta.
+- **CVM / debêntures**: resuelto en gran parte (ver comentario de cabecera de
+  `data/atleticomineiro-br-data.js` y `fuentes/Brasil/Atletico Mineiro.md`) — la SAF emitió 60.000
+  debêntures reales (R$60M nominal) el 25/09/2024, quirografárias, 3,50% a.a., vencimiento 25/09/2027.
+  Lo que NO se confirmó en el documento es bajo qué instrução CVM exacta se hizo la oferta
+  (probablemente Instrução CVM 476, oferta restrita a investidores profissionais, pero es una
+  inferencia por patrón — no está escrito en el balance). Si se necesita el dato exacto, habría que
+  buscarlo en el próprio instrumento de emissão de debêntures (escritura), no en las demonstrações
+  financeiras.
+- **"Custo com atletas negociados"** (Nota "Custo com atividades esportivas", crece de -1,567 M en
+  2023 a -66,898 M en 2024 y baja a -30,979 M en 2025): el documento no explica qué compone esta línea
+  más allá del nombre (¿comisiones de intermediarios? ¿pérdida contable en la venta -valor libro del
+  pase vs. precio de venta-? ¿indemnizaciones a jugadores salientes?). Se cargó conservador a
+  `other_expenses` (no a `player_amortisation`, que ya tiene su propia línea "Amortização dos direitos
+  econômicos" separada). El salto 2024 (66,898 M, año con las ventas de Cristian Pavón, Jemerson y
+  otros según la Nota 26 de "Outras receitas operacionais") sugiere que puede estar correlacionado con
+  el volumen de ventas de ese año — vale la pena preguntarle al club el desglose exacto si se vuelve a
+  tocar este club.
+- **Cambio de presidencia sin nota de prensa**: se confirmó por firma en el propio balance (Bruno
+  Muzzi firma 2023 y 2024, Pedro Daniel firma el Relatório Integrado 2025) pero no se buscó
+  externamente la fecha exacta de la transición ni el motivo — si se necesita esa precisión (ej. para
+  `gestionesByClub` con fecha de asunción), haría falta una búsqueda de prensa aparte.
+- No se encontró una cifra total de sócios/sócio torcedor en ninguno de los 3 documentos
+  (`memberCountByClub['atleticomineiro-br'] = null`).
+
+## Athletico Paranaense (`athleticoparanaense-br`) y Vitória (`vitoria-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
+
+- **Athletico Paranaense — "Custo das Operações de Eventos" (Nota 19, -3,085 M en 2024, -10,116 M en
+  2025) y "Custo de Transmissão" (Nota 19, solo 2025, -0,404 M)**: se cargaron a `admin_general_expense`
+  por descarte (no hay categoría más específica para "costo de operar eventos no futbolísticos en la
+  Arena" ni para "costo de producir la transmisión propia"), pero no se confirmó con el club qué
+  actividades concretas componen "Operações de Eventos" (¿recitales? ¿alquiler de la Arena a
+  terceros?) — el salto de 3,085 M a 10,116 M en un año (+228%) no tiene explicación en el documento.
+- **Vitória — "Premiações e outras" (Nota 23, 32,404 M en 2025, ~18% del revenue del segmento
+  futebol)**: la nota (d) dice que mezcla "premiações recebidas... pela participação e/ou pela
+  qualificação em fases seguintes da Copa do Brasil e Copa Nordeste" CON "recebimentos ligados ao
+  programa de sócio torcedor", sin desglosar cuánto es cada concepto. Se cargó la línea entera como
+  `competition_bonus` (por ser el concepto "básico" según la redacción de la nota), pero
+  conceptualmente una porción debería ir a `member_dues`. Vale la pena preguntarle al club el
+  desglose exacto entre premios deportivos y cuotas de socio-hincha si se vuelve a tocar este club o
+  se carga un ejercicio nuevo con la misma estructura.
+- **Vitória — inconsistencia real entre la Nota 29 y la DRE impresa** (ver el comentario de cabecera
+  completo en `data/vitoria-br-data.js`): la Nota 29 declara que desde 2025 las transações com
+  atletas y su costo directo ("Custo das transações com atletas", -10,208 M) se reconocen juntos en
+  "Outras receitas e despesas" del segmento clube social, pero el total que imprime esa nota
+  (43,514 M) NO coincide con lo que imprime la DRE para esa misma línea (53,724 M) — la diferencia
+  exacta (10,208 M) coincide con el "Custo das transações com atletas". Cruzando con la Nota 27
+  (Despesas diretas, segmento futebol) se confirmó que esa diferencia está efectivamente sumada
+  dentro de "Diretas" (-92,391 M impreso vs. -82,183 M que da la propia Nota 27 sin ese costo). Se
+  cargó siguiendo la DRE real (que es la que reconcilia con el Déficit final auditado), no la
+  redacción literal de la Nota 29(a) — pero esto es una inconsistencia interna real del documento
+  auditado (no un error de transcripción de esta sesión), y valdría la pena preguntarle al club/al
+  auditor (RSM Brasil) cuál de las 2 lecturas es la correcta para la próxima vez que se publique un
+  balance con la misma estructura.
+- **Vitória — "Premiações e outras" también incluye, según la nota (d), la aclaración de que "durante
+  o ano de 2024 o Clube atingiu marca de 42 mil sócios"** — no se cargó como `memberCountByClub`
+  (queda `null`) porque es un umbral alcanzado durante 2024, no un conteo puntual al cierre de 2025
+  (el ejercicio cargado). Si se necesita esta cifra con precisión, valdría la pena pedirle al club el
+  conteo de sócios activos al 31/12/2025 exacto.
+- Ninguno de los 2 clubes confirma fecha de elección/mandato del presidente que firma el balance
+  (Mario Celso Petraglia en Athletico Paranaense, Fabio Rios Mota en Vitória) — `gestionId:
+  'sinconfirmar'` en los 2, mismo criterio que el resto de los clubes brasileños cargados hasta
+  ahora. No se encontró cifra de socios de Athletico Paranaense en ningún documento
+  (`memberCountByClub['athleticoparanaense-br'] = null`).
+
+## RB Bragantino (`rbbragantino-br`), Brasil — onboarding 2019/2024, sesión 2026-09-24
+
+- **"Custo do departamento de futebol"** (línea grande, ambos años) casi con certeza mezcla sueldos
+  del plantel con amortización de derechos económicos de jugadores, pero el balance no trae las
+  Notas explicativas que la desagreguen (solo el Balanço/DRE primarios se transcribieron) — se
+  cargó entera a una sola categoría sin poder separar la porción salarial de la porción de
+  amortización. **Vale pedirle al club (o buscar si existe una versión con notas completas) el
+  desglose real de esta línea**, sobre todo para 2024 (año con plantel más caro, post-recompra por
+  Red Bull).
+- **2019: la tabla del Passivo (circulante/não circulante) se reconstruyó por orden de impresión
+  cruzando contra los subtotales**, no confirmando cada rubro contra su propio rótulo — el PDF
+  original era vectorial sin capa de texto real (ver comentario de cabecera de
+  `data/rbbragantino-br-data.js` y el gotcha en `fuentes/Brasil/RB Bragantino.md`). El DRE (de donde
+  sale el tie-out de Revenue/Expenses/PAT) sí cerró exacto, así que el riesgo queda acotado a
+  `grossDebt`/`cash` de ESE año puntual, no a los ingresos/gastos. Si en el futuro aparece una copia
+  más legible del PDF de 2019, vale la pena re-verificar esas 2 cifras.
+- Se sabe que existen al menos 2 documentos más del club en Wayback Machine (balance 2022 y un año
+  sin identificar todavía) que no se bajaron esta sesión — quedan para una sesión futura de
+  sourcing/transcripción.

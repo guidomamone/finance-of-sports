@@ -6,6 +6,96 @@
     "motivo": "Entrada de ejemplo, no silencia nada. Copiala para agregar una real."
   },
   {
+    "code": "categoria-cruzada",
+    "match": "atleticomineiro-br 2024 ingreso \"Custo de mercadorias e produtos",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). El propio balance agrupa esta línea dentro de 'Deduções da receita' (costo de las camisetas vendidas, neteado contra el ingreso de merchandising), así que se cargó como línea negativa dentro de revenueLines usando 'admin_general_expense' (misma categoría que Botafogo usa para 'Custo venda de mercadoria', ver data/botafogo-data.js) — cruce de taxonomía intencional, monto inmaterial (0,2%-0,7% del revenue), no un error."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "atleticomineiro-br 2025 ingreso \"Custo de mercadorias e produtos",
+    "motivo": "Misma línea/criterio que 2024 (ver esa entrada arriba)."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "athleticoparanaense-br 2024 ingreso \"Doações/bonificações\"",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Athletico Paranaense, 2026-09-24). Ingreso extraordinario/no recurrente sin categoría propia en REVENUE_CATEGORIES, cargado a 'exceptional_items' — MISMO criterio ya aceptado para Racing (ver las entradas 'categoria-cruzada' de Racing 2009/2010 más abajo en este archivo, decisión de Guido documentada en club-data-mapping SKILL.md sección 13): el total del ejercicio cierra igual (el motor suma por monto, no por bucket), y en Formato Simplificado cae al catch-all de Ingresos, consecuencia aceptada."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "athleticoparanaense-br 2024 ingreso \"Receitas judiciais\"",
+    "motivo": "Mismo criterio que 'Doações/bonificações' 2024 de este club (ver entrada arriba): ingreso extraordinario sin categoría propia, exceptional_items, mismo patrón aceptado de Racing."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "athleticoparanaense-br 2024 ingreso \"Outras receitas não operacionais\"",
+    "motivo": "Mismo criterio que 'Doações/bonificações' 2024 de este club (ver entrada arriba)."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "athleticoparanaense-br 2025 ingreso \"Doações/bonificações\"",
+    "motivo": "Mismo criterio que el ejercicio 2024 de este club (ver entradas arriba)."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "athleticoparanaense-br 2025 ingreso \"Receitas judiciais\"",
+    "motivo": "Mismo criterio que el ejercicio 2024 de este club (ver entradas arriba). Nota: este año el monto es más grande (R$32,267 M) por un cobro judicial puntual — igual sigue siendo un ingreso extraordinario genuino, no un error."
+  },
+  {
+    "code": "categoria-cruzada",
+    "match": "athleticoparanaense-br 2025 ingreso \"Outras receitas não operacionais\"",
+    "motivo": "Mismo criterio que el ejercicio 2024 de este club (ver entradas arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "athleticoparanaense-br 2024 ingreso \"(-) Impostos e deduções da receita\"",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Athletico Paranaense, 2026-09-24). Deducción real de impuestos sobre la receita bruta, impresa negativa por el propio balance — mismo tratamiento que 'Deduções sobre a receita' de Botafogo. El tie-out del ejercicio cierra exacto con este signo."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "athleticoparanaense-br 2025 ingreso \"(-) Impostos e deduções da receita\"",
+    "motivo": "Misma línea/criterio que 2024 (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "atleticomineiro-br 2023 ingreso \"(-) Impostos e contribuições\"",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). Deducción real de impuestos/contribuições sobre la receita, impresa negativa por el propio balance en los 3 ejercicios — mismo tratamiento que Botafogo/América Mineiro. Tie-out cierra exacto con este signo en los 3 años."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "atleticomineiro-br 2024 ingreso \"(-) Impostos e contribuições\"",
+    "motivo": "Misma línea/criterio que 2023 (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "atleticomineiro-br 2025 ingreso \"(-) Impostos e contribuições",
+    "motivo": "Misma línea/criterio que 2023 (ver entrada arriba). El monto (-50,637) tiene un ajuste de redondeo de R$0,100 M documentado en el propio rawLabel y en el comentario de cabecera del archivo, para que la suma cierre contra el subtotal impreso de 'Deduções da receita' (-55,124)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "flamengo-br 2024 ingreso \"Impostos e contribuições + Direito de arena",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Flamengo, 2026-09-24). Deducción real de impuestos + direito de arena sobre la receita, impresa negativa por el propio balance — mismo tratamiento que Botafogo/América Mineiro/Atlético Mineiro. Tie-out cierra exacto con este signo en los 2 años."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "flamengo-br 2025 ingreso \"Impostos e contribuições + Direito de arena",
+    "motivo": "Misma línea/criterio que 2024 (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "vitoria-br 2025 ingreso \"(-) Impostos e contribuições\"",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Vitória, 2026-09-24). Deducción real de impuestos sobre la receita, impresa negativa por el propio balance — mismo tratamiento que el resto de los clubes brasileños cargados. Tie-out del ejercicio cierra exacto con este signo."
+  },
+  {
+    "code": "salto-interanual",
+    "match": "atleticomineiro-br: revenue salta de 15.6 M USD (2023) a 93.7 M USD (2024)",
+    "motivo": "VERIFICADO, no es error de unidad: el ejercicio 2023 de Atlético Mineiro SAF cubre SOLO 14/set/2023 a 31/dic/2023 (~3,5 meses, el 'stub period' desde la constitución de la SAF), confirmado literal en el propio DRE del balance 2023 — no un año completo. Documentado en detalle en el comentario de cabecera de data/atleticomineiro-br-data.js. El salto es real y estructural (duración distinta del ejercicio), no un error de carga."
+  },
+  {
+    "code": "salto-interanual",
+    "match": "rbbragantino-br: revenue salta de 9.7 M USD (2019) a 81.7 M USD (2024)",
+    "motivo": "VERIFICADO, no es error de unidad: son 5 años de diferencia entre los 2 únicos ejercicios cargados (no consecutivos), período en el que Red Bull invirtió fuertemente en el club (ascenso a la Série A, sponsors, plantel) — crecimiento real documentado en fuentes/Brasil/RB Bragantino.md, no un salto interanual entre años consecutivos."
+  },
+  {
     "code": "signo-invertido",
     "match": "americamineiro-br 2023 ingreso \"(-) Deduções da receita bruta",
     "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Línea de deducción de impuestos/INSS/Sindicato sobre la receita bruta, impresa por el propio balance con signo negativo dentro del bloque de Receitas — es contra-revenue real (mismo tratamiento que 'Deduções sobre a receita' de Botafogo), no un signo dado vuelta. El tie-out completo del ejercicio (revenueLines suma exacta contra el total impreso, revenue+expenses+netInterest = PAT oficial) cierra con este signo, ver comentario de cabecera de data/americamineiro-br-data.js."
