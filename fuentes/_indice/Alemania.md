@@ -12,9 +12,9 @@ Finanzkennzahlen de la DFL (un solo PDF con los 18 clubes por ejercicio) para lo
 `fuentes/Alemania/_notas-generales.md` y la sección 12 del skill de sourcing para el detalle
 completo.
 
-- [Borussia Dortmund](<../Alemania/Borussia Dortmund.md>) — 7 ejercicios reales (2018/19-2024/25), Geschäftsbericht completo, sin cargar aún — Último chequeo: 2026-09-17
-- [Bayern Munich](<../Alemania/Bayern Munich.md>) — 4 ejercicios reales vía comunicado de la Junta, sin cargar aún — Último chequeo: 2026-09-17
-- [RB Leipzig](<../Alemania/RB Leipzig.md>) — 12 ejercicios reales, serie completa 2014-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [Borussia Dortmund](<../Alemania/Borussia Dortmund.md>) — CARGADO (Ejercicios 2024, 2025; hay 5 más viejos 2018/19-2022/23 transcriptos, sin cargar) — Último chequeo: 2026-09-25
+- [Bayern Munich](<../Alemania/Bayern Munich.md>) — CARGADO (Ejercicios 2024, 2025; hay 2 más viejos transcriptos, sin cargar) — Último chequeo: 2026-09-25
+- [RB Leipzig](<../Alemania/RB Leipzig.md>) — CARGADO (Ejercicios 2024, 2025; hay serie 2014-2022/23 transcripta, sin cargar) — Último chequeo: 2026-09-25
 - [TSG Hoffenheim](<../Alemania/TSG Hoffenheim.md>) — CARGADO (Ejercicios 2024, 2025), 16 ejercicios reales disponibles en el archivo (serie completa 2009-2025), 14 sin cargar — Último chequeo: 2026-09-25
 - [Bayer Leverkusen](<../Alemania/Bayer Leverkusen.md>) — dead-end estructural (exención §264 HGB, socio único Bayer AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [VfL Wolfsburg](<../Alemania/VfL Wolfsburg.md>) — dead-end estructural (exención §264 HGB, socio único Volkswagen AG), solo el agregado de la DFL — Último chequeo: 2026-09-17

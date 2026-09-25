@@ -57,4 +57,16 @@ Confirmados por WebSearch pero no descargados (por priorización de tiempo, no p
   resolver (dominio caído) durante esta sesión — no reintentar por ese lado, buscar la URL directa en
   `fcbayern.com` en su lugar.
 
-- Último chequeo: 2026-09-17.
+## Onboarding (sesión 2026-09-25)
+
+**CARGADO al sitio**: Ejercicios 2024 (2023/24) y 2025 (2024/25), desde `jahresabschluss-2023-24.pdf`
+y `jahresabschluss-2024-25.pdf` (ver `data/bayernmunich-de-data.js` para el mapeo completo y las
+decisiones tomadas — nivel de cuentas Einzelabschluss AG, netInterest/tax reconstruidos como
+residuales por falta de desglose en la fuente, ver duda abierta en `Admin/dudas-por-club.md`).
+`jahresabschluss-2020-21.md` y `presseinformation-jhv-2022-23.md` quedan sin cargar (prioridad de
+esta sesión: los 2 ejercicios más recientes).
+
+Color de marca: `#DC052D` (rojo tradicional de Bayern Munich) — color ampliamente documentado
+(Wikipedia/footylogos), no requirió desambiguación, verificado 2026-09-25.
+
+- Último chequeo: 2026-09-25 (chequeo anterior: 2026-09-17).

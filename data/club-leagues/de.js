@@ -31,6 +31,20 @@
 //   - VfB Stuttgart: 2° puesto en la temporada 2023/24 (ejercicio calendario
 //     2023 y 2024 la cubren, sin descenso), confirmado además por el propio
 //     Lagebericht del ejercicio 2023 ("nach dem 16. Spieltag... dritter Platz").
+//
+// Agregados 2026-09-25 (3 clubes grandes, 2 ejercicios cada uno): Bayern Munich, Borussia
+// Dortmund, RB Leipzig — ninguno descendió nunca, 1ª división los 2 ejercicios. Verificado
+// contra Wikipedia (en.wikipedia.org/wiki/2023–24_Bundesliga y .../2024–25_Bundesliga), no
+// asumido solo por ser clubes habituales de Bundesliga:
+//   - Bayern Munich: 2° puesto 2023/24 (campeón Bayer Leverkusen, invicto), campeón 2024/25
+//     (82 puntos).
+//   - Borussia Dortmund: 5° puesto 2023/24 (con final de Champions League esa misma temporada
+//     pese a la floja campaña de liga); 4° puesto 2024/25 (57 puntos, confirmado además por el
+//     propio Annual Report 2024/2025: "fourth-place Bundesliga finish", clasificó directo a la
+//     fase de liga de la Champions 2025/26).
+//   - RB Leipzig: quedó afuera de competencias europeas en 2023/24 (por primera vez desde
+//     2017); 7° puesto 2024/25 (51 puntos, confirmado por el propio Lagebericht 2024/2025: "51
+//     Punkten auf dem 7. Tabellenplatz", la peor posición final desde el ascenso a 1ª).
 // ============================================================================
 
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
@@ -49,4 +63,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Borussia Mönchengladbach: ejercicio CALENDARIO. Bundesliga (1ª división) los 2 ejercicios, sin
   // descenso (14° puesto temporada 2023/24, que cubre ambos años calendario cargados).
   'monchengladbach-de':    { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
+  'bayernmunich-de':       { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  'dortmund-de':           { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  'rbleipzig-de':          { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
 });

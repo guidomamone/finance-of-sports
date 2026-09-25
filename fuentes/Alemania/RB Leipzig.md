@@ -48,4 +48,26 @@ Ver el procedimiento completo, con los gotchas de `payload` de un solo uso y la 
 _notas-generales.md` sección 1. Búsqueda: razón social exacta "RasenBallsport Leipzig GmbH" en
 `unternehmensregister.de`.
 
-- Último chequeo: 2026-09-17.
+## Onboarding (sesión 2026-09-25)
+
+**CARGADO al sitio**: Ejercicios 2024 (2023/24) y 2025 (2024/25), ambos desde
+`jahresabschluss-2024-25.pdf` (que trae 2023/24 completo como columna comparativa — válido, cuentas
+HGB nominales sin reexpresión). Ver `data/rbleipzig-de-data.js` para el mapeo completo.
+
+**CORRECCIÓN a la nota de arriba** ("otros 7.292" en el resumen del Umsatzerlöse 2024/25): esa cifra
+efectivamente ERA la correcta — una relectura de la transcripción durante el onboarding la había
+leído mal como "71.292" (un "1" de más), lo que no reconciliaba contra el Umsatzerlöse total de la
+GuV (454.952 miles €). Cruzar contra esta nota de sourcing (`fuentes/Alemania/RB Leipzig.md`, que ya
+tenía el valor correcto desde el sourcing original) resolvió la discrepancia sin necesidad de volver
+al PDF. Moraleja para sesiones futuras: si una tabla no reconcilia durante el onboarding, chequear
+primero si `fuentes/<País>/<Club>.md` ya tiene el número anotado de una lectura anterior, antes de
+asumir que la fuente está mal o de reabrir el PDF.
+
+La serie 2014-2022/23 (10 ejercicios) queda sin cargar (prioridad de esta sesión: los 2 más
+recientes); `jahresabschluss-2018-stub.md` es un ejercicio de transición corto (6 meses), no usar
+sin evaluar cómo tratar un ejercicio parcial.
+
+Color de marca: `#DD0741` (rojo tradicional de RB Leipzig sobre blanco, mismo criterio que
+River/Vélez: se usa el acento no-blanco) — ampliamente documentado, verificado 2026-09-25.
+
+- Último chequeo: 2026-09-25 (chequeo anterior: 2026-09-17).

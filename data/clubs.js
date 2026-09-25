@@ -225,14 +225,17 @@ const clubs = {
   // `brandColor:null` (no ausente): se miró (de.wikipedia.org, "Vereinsfarben: Weiß-Rot") y NO
   // lleva color, el que lo identifica es el blanco.
   'stuttgart-de': { id:'stuttgart-de', name:'VfB Stuttgart 1893 AG', displayName:'VfB Stuttgart', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  // 3 clubes alemanes nuevos (sesión 2026-09-25, 2 ejercicios cada uno: 2023/24 y 2024/25 salvo
-  // Mönchengladbach, ejercicio CALENDARIO). Colores: footylogos.com.
+  // 6 clubes alemanes nuevos (sesión 2026-09-25, 2 ejercicios cada uno: 2023/24 y 2024/25 salvo
+  // Mönchengladbach, ejercicio CALENDARIO). Colores: footylogos.com/Wikipedia.
   'hoffenheim-de': { id:'hoffenheim-de', name:'TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH', displayName:'TSG Hoffenheim', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1966A6' },
   // Hamburger SV: se carga la Fußball AG (entidad de fútbol profesional), no el e.V. (club social) —
   // ver comentario de cabecera de data/hamburgersv-de-data.js.
   'hamburgersv-de': { id:'hamburgersv-de', name:'HSV Fußball AG & Co. KGaA', displayName:'Hamburger SV', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#041E42' },
   // Borussia Mönchengladbach: ejercicio CALENDARIO (01/01-31/12), confirmado en el propio documento.
   'monchengladbach-de': { id:'monchengladbach-de', name:'Borussia VfL 1900 Mönchengladbach GmbH', displayName:'Borussia Mönchengladbach', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#00963A' },
+  'bayernmunich-de': { id:'bayernmunich-de', name:'FC Bayern München AG', displayName:'Bayern Munich', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DC052D' },
+  'dortmund-de': { id:'dortmund-de', name:'Borussia Dortmund GmbH & Co. KGaA', displayName:'Borussia Dortmund', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FDE100' },
+  'rbleipzig-de': { id:'rbleipzig-de', name:'RasenBallsport Leipzig GmbH', displayName:'RB Leipzig', country:'DE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0741' },
   // Inglaterra (sesión 2026-09-22): PAÍS NUEVO, LIBRA ESTERLINA (GBP) MONEDA NUEVA, 5 clubes de
   // Premier League, 2 ejercicios cada uno (2023/24 y 2024/25). `fiscalYearStart` varía por club
   // (a diferencia de España/Alemania, cada club inglés cierra en una fecha distinta, confirmada

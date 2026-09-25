@@ -1483,3 +1483,31 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   "Sonstige betriebliche Erträge" positiva de magnitud similar). Si se consigue releer el PDF original
   (la página de la GuV, entre Personalaufwand y "11. Ergebnis nach Steuern"), valdría la pena separar
   los 2 componentes con precisión. Ver el comentario extenso en `data/monchengladbach-de-data.js`.
+
+## Bayern Munich (Alemania) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **`netInterest`/`tax` reconstruidos como RESIDUALES, no leídos de una línea propia**: la fuente
+  cargada es el comunicado oficial anual "Jahresabschluss der Saison <año>" (fcbayern.com), un
+  resumen de 7 páginas con Balance y GuV condensados — a diferencia de Werder Bremen/Köln/RB Leipzig
+  (Konzernabschluss/Jahresabschluss completo con Anhang notarial vía unternehmensregister.de), Bayern
+  no deposita ahí porque su AG no está obligada (no cotiza en bolsa). El documento solo imprime
+  EBITDA/EBT/Jahresüberschuss, sin desglosar el resultado financiero ni el impuesto a las ganancias
+  como líneas propias. Se reconstruyeron por diferencia (netInterest = EBT − (EBITDA−Abschreibungen);
+  tax = Jahresüberschuss − EBT), y el total cierra bien (≤0,1 M€ de diferencia, redondeo del propio
+  documento a 1 decimal) — pero es una aproximación, no una lectura directa. Pregunta para Bayern (o
+  para una sesión futura que consiga el Jahresabschluss completo con Anhang, si existe alguno
+  públicamente accesible pese a no cotizar): ¿cuál es el desglose real de "Finanzergebnis"/"Steuern
+  vom Einkommen und vom Ertrag" de la AG Einzelabschluss para los ejercicios 2023/24 y 2024/25?
+- **Nivel de cuentas (Einzelabschluss vs. Konzern) da 2 pares de cifras oficiales distintas para el
+  mismo ejercicio** (908,1 M€ vs. 951,5 M€ de Umsatz 2023/24, por ejemplo) — se usó el Einzelabschluss
+  porque es el único con desglose de ingresos/gastos por rubro (ver comentario de cabecera de
+  `data/bayernmunich-de-data.js`). Si Guido prefiere el Konzern (que incluye Allianz Arena München
+  Stadion GmbH y el resto de subsidiarias, más representativo del "negocio Bayern" completo) habría
+  que resignar el desglose por `normalizedCategory`, ya que el documento no lo da a ese nivel.
+- **`verifyTieOuts()` marca 3 checks de este club como "NO CIERRA" (diferencia de 0,1 M€)**: Revenue
+  2024, Revenue 2025 y Resultado neto (PAT) 2025 — verificado en el navegador el 2026-09-25. No es un
+  error de carga: la fuente redondea cada cifra a 1 decimal (100.000 €), así que 6 líneas de revenue
+  independientemente redondeadas pueden sumar hasta ±0,1 M€ distinto de un total también redondeado.
+  Los otros 3 checks (Expenses de los 2 años, PAT 2024) sí cierran exacto. Documentado en el
+  comentario de cabecera de `data/bayernmunich-de-data.js` para que ninguna sesión futura lo confunda
+  con un bug — la pregunta de si conseguir un documento con más precisión sigue abierta arriba.
