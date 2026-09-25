@@ -105,15 +105,19 @@ perdieron sino que se descartaron:
 
     LA TAREA, entonces, es de PRODUCTO: dónde y cómo se le dice esto al visitante que entra
     buscando su club. Un club trackeado-sin-documento hoy simplemente no existe en el sitio, así
-    que el que busca Chivas no encuentra ni el club ni el motivo. Hay que decidir si eso se
-    resuelve con una vista de liga que liste los clubes sin datos con su razón, con una ficha
-    mínima por club, o con una nota de cobertura por país. **Es la primera vez que el proyecto
-    necesita mostrar una AUSENCIA explicada, y no va a ser la última**: el mismo problema vuelve
-    con cualquier liga cuyo regulador exige y no publica. Conviene resolverlo genérico.
+    que el que busca Chivas no encuentra ni el club ni el motivo. **DECISIÓN DE GUIDO (2026-09-25):
+    un tooltip** — el ícono típico de círculo con signo de interrogación adentro, en el card de
+    México (confirmar en la sesión que lo implemente CUÁL card exacto: candidato más probable es la
+    fila/card de México en el paso "País" del selector, pero no está verificado contra la UI real —
+    no asumir sin mirar `js/selector.js` primero), con el texto explicando la razón de fondo (el
+    reglamento de la Liga MX exige Y prohíbe publicar a la vez) resumida en 2-3 líneas. Reemplaza a
+    las otras opciones que se habían planteado (vista de liga con lista de ausencias, ficha mínima
+    por club, nota de cobertura por país) — más simple, no agrega una vista nueva.
 
-    OJO CON UN EFECTO LATERAL: hoy el sitio es "los clubes que tienen datos". Si se listan clubes
-    sin datos, hay que cuidar que no parezcan cargados ni que ensucien rankings, comparaciones o
-    el selector.
+    OJO CON UN EFECTO LATERAL: hoy el sitio es "los clubes que tienen datos". Si el tooltip aparece
+    en un lugar donde México ya se ve listado/clickeable, hay que cuidar que no parezca que tiene
+    datos cargados ni que ensucie rankings, comparaciones o el selector — el tooltip explica una
+    ausencia, no reemplaza tener el club cargado.
 
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
