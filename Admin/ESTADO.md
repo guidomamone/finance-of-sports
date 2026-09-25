@@ -73,13 +73,19 @@ se reescribe, no se acumula.
   y `'pending_official'` siguen existiendo en el código, con su rama en
   `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
   los usa ningún club.
-- DATOS: 111 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
-  oficial), de 10 países: Argentina 16, España 19, Japón 10, Brasil 27, Colombia 10,
-  Alemania 5, Inglaterra 19, México 1, Chile 3, Perú 1. 49 de esos 111 clubes se
-  sumaron en 6 sesiones de onboarding en paralelo de PDF transcriptos pendientes
-  (Versiones 217, 219, 220, 221, 222 y 223, 2026-09-24/25), el detalle club por club de
-  cada tanda está en `Admin/CHANGELOG.md` (no se repite acá para que esta sección no
-  crezca sin límite). La Versión 223 fue casi toda Inglaterra (14 clubes nuevos: Aston
+- DATOS: 121 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+  oficial), de 11 países: Argentina 16, España 19, Japón 10, Brasil 27, Colombia 10,
+  Alemania 11, Inglaterra 19, México 1, Chile 3, Perú 1, Países Bajos 4. 59 de esos 121
+  clubes se sumaron en 7 sesiones de onboarding en paralelo de PDF transcriptos
+  pendientes (Versiones 217, 219, 220, 221, 222, 223 y 224, 2026-09-24/25), el detalle
+  club por club de cada tanda está en `Admin/CHANGELOG.md` (no se repite acá para que
+  esta sección no crezca sin límite). La Versión 224 agotó Sudamérica/España/Inglaterra
+  y siguió en Europa continental: Países Bajos país nuevo (Ajax, PSV, Feyenoord, AZ —
+  las transcripciones no existían todavía, se generaron en la misma sesión vía
+  `pdftotext`, ver el comentario de esa versión en `Admin/CHANGELOG.md`) y 6 clubes
+  alemanes grandes más (Bayern Munich, Borussia Dortmund, RB Leipzig, TSG Hoffenheim,
+  Hamburger SV, Borussia Mönchengladbach — Alemania ya estaba cargada, sin país nuevo).
+  La Versión 223 fue casi toda Inglaterra (14 clubes nuevos: Aston
   Villa, Bournemouth, Brentford, Brighton, Burnley, Chelsea, Crystal Palace, Fulham,
   Leeds United, Newcastle United, Nottingham Forest, Sunderland, West Ham, Wolves) más
   Levante UD (España) — ningún país nuevo, Inglaterra y España ya estaban cargados.
@@ -230,7 +236,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 111 páginas, el índice y `sitemap.xml` los GENERA
+  Las 121 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -507,17 +513,17 @@ completo está en `Admin/CONVENCIONES.md`.
   pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
   sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
-  Los 111 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
+  Los 121 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
   sitio y siguen viajando en el deploy.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 111
+  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 121
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 111 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 121 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
 ---
 
@@ -536,7 +542,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 111 clubes, 218 ejercicios, 10 países.
+TOTAL: 121 clubes, 238 ejercicios, 11 países.
 
 ARGENTINA (16)
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
@@ -602,12 +608,18 @@ COLOMBIA (10)
   Once Caldas             1 ejercicio (2025), balance, COP, sin deuda/caja
   Unión Magdalena         1 ejercicio (2018), balance, COP
 
-ALEMANIA (5)
-  1. FC Köln           2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Eintracht Frankfurt  2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  FC Augsburg          2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  VfB Stuttgart        2 ejercicios (2023 a 2024), balance, EUR
-  Werder Bremen        3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
+ALEMANIA (11)
+  1. FC Köln                2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  Bayern Munich             2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
+  Borussia Dortmund         2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
+  Borussia Mönchengladbach  2 ejercicios (2023 a 2024), balance, EUR
+  Eintracht Frankfurt       2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  FC Augsburg               2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  Hamburger SV              2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
+  RB Leipzig                2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
+  TSG Hoffenheim            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  VfB Stuttgart             2 ejercicios (2023 a 2024), balance, EUR
+  Werder Bremen             3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
 
 ESPAÑA (19)
   Athletic Club       1 ejercicio (2024/2025), balance, EUR
@@ -665,6 +677,12 @@ JAPÓN (10)
 
 MÉXICO (1)
   Club América  1 ejercicio (2025), balance, MXN, sin deuda/caja
+
+NL (4)
+  Ajax       2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  AZ         2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  Feyenoord  2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  PSV        2 ejercicios (2023/2024 a 2024/2025), balance, EUR
 
 PERÚ (1)
   Alianza Lima  6 ejercicios (2019 a 2024), balance, PEN

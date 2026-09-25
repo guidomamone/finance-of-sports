@@ -15,6 +15,35 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 224 — Países Bajos país nuevo (4 clubes) + 6 clubes alemanes grandes: Ajax, PSV, Feyenoord, AZ, Bayern Munich, Borussia Dortmund, RB Leipzig, TSG Hoffenheim, Hamburger SV, Borussia Mönchengladbach
+
+- De 111 a 121 clubes cargados, 218 a 238 ejercicios. Con Sudamérica/España/Inglaterra ya agotados
+  (Versiones 222-223), esta sesión siguió a pedido de Guido "más en Europa": Alemania (país ya
+  cargado, 6 clubes nuevos) y Países Bajos (país nuevo, 4 clubes) en 3 agentes paralelos.
+- **Hallazgo real de esta sesión**: para Países Bajos, los PDFs de Ajax/PSV/Feyenoord/AZ NO estaban
+  transcriptos todavía (a diferencia de lo asumido al arrancar) — el agente los transcribió él mismo
+  vía `pdftotext -layout` (los 8 documentos tenían capa de texto nativa, sin necesidad de OCR) antes
+  de mapear ningún dato, siguiendo la regla de CLAUDE.md. País nuevo en `data/leagues.js`
+  (`nl-eredivisie`), `data/club-leagues/nl.js` nuevo.
+- Los 6 clubes alemanes se sumaron a Bundesliga/2.Bundesliga ya cargada (Köln, Eintracht Frankfurt,
+  Augsburg, Stuttgart, Werder Bremen), sin infraestructura nueva. **3 casos de fuente de mala
+  calidad, reconstruidos con cuidado, no descartados**: Hamburger SV (tabla de GuV/Bilanz garbled en
+  la conversión PDF→Markdown, reconstruida cruzando el Lagebericht narrativo — `tax` quedó como plug
+  contra el Jahresüberschuss real impreso, `grossDebt`/`cash` no se cargaron por no poder
+  confirmarse); TSG Hoffenheim (Konzern-GuV con 3 líneas de resultado por la "atypisch stille
+  Beteiligung" de Dietmar Hopp, duda abierta sobre qué línea usar como `officialPAT`); Borussia
+  Mönchengladbach (GuV incompleta, sin fila de resultado financiero — se combinó con "Sonstige
+  betriebliche Erträge" y se documentó como simplificación).
+- **Bayern Munich, único con discrepancia visible en `verifyTieOuts()` del navegador**: la fuente
+  cargada es el comunicado oficial anual (no el Geschäftsbericht completo con Anhang notarial),
+  redondeado a 1 decimal en cada línea — sumar componentes puede diferir hasta ±0,1 M€ del total
+  impreso, también redondeado. 3 entradas verificadas en `tools/audit-ignore.json` (Revenue 2024,
+  Revenue 2025, PAT 2025); `node tools/audit.js` da 0 P0/P1/P2 porque SÍ consulta ese archivo, pero
+  `verifyTieOuts()` del navegador no tiene mecanismo de excepciones y va a seguir marcando estos 3
+  checks como "NO CIERRA" — es un artefacto de redondeo de la fuente, no un error de carga.
+- Hamburger SV jugó 2. Bundesliga los 2 ejercicios (asciende recién en 2025/26). El resto de los 9
+  clubes de esta sesión se mantuvo en su primera división todo el período cargado.
+
 ## Versión 223 — 15 clubes nuevos, Inglaterra (14) + España (Levante UD): Aston Villa, Bournemouth, Brentford, Brighton, Burnley, Chelsea, Crystal Palace, Fulham, Leeds United, Newcastle United, Nottingham Forest, Sunderland, West Ham, Wolves, Levante
 
 - De 96 a 111 clubes cargados, 193 a 218 ejercicios. Sesión continuación de la Versión 222 (mismo
