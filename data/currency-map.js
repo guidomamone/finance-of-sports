@@ -232,6 +232,7 @@ const FX_CLOSE = {
   'ARS@2026-06-30': { fx: 1482,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2026' },
   'BRL@2019-12-31': { fx: 4.0307,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2019' },
   'BRL@2021-12-31': { fx: 5.5805,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2021' },
+  'BRL@2022-12-31': { fx: 5.2177,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, 30/12/2022 (último día hábil del año; 31/12 cayó sábado)' },
   'BRL@2023-12-31': { fx: 4.8413,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2023 (último día hábil del año; 30 y 31/12 cayeron sábado y domingo)' },
   'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },
   'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },

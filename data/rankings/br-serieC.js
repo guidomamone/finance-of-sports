@@ -3,7 +3,8 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série C (BR) — 1 ejercicio(s) con ranking:
+// Brasileirão Série C (BR) — 2 ejercicio(s) con ranking:
+//   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -12,6 +13,14 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieC"] = {
+  2025: {
+    leagueSize: null,
+    clubs: [
+      { id:"guarani-br", revenue:11.553, reportType:"official_balance_sheet",
+        sourceId:"guarani-br-demonstracoes-2024-2025",
+        mix:[["Cuotas Sociales",0.385],["Comercial / Sponsors",0.332],["Televisión",2.599],["Premios por competencias",0.044],["Venta de Jugadores",7.657],["Otros ingresos",0.536]] },
+    ],
+  },
   2024: {
     leagueSize: null,
     clubs: [

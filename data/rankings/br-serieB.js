@@ -3,9 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série B (BR) — 3 ejercicio(s) con ranking:
+// Brasileirão Série B (BR) — 5 ejercicio(s) con ranking:
 //   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -46,15 +48,37 @@ window.RANKINGS["br-serieB"] = {
       { id:"coritiba", revenue:14.05, reportType:"official_balance_sheet",
         sourceId:"coritiba-demonstracoes-2024",
         mix:[["Cuotas Sociales",5.102],["Comercial / Sponsors",2.931],["Estadio",0.582],["Televisión",1.575],["Venta de Jugadores",2.907],["Otros ingresos",0.953]] },
+      { id:"pontepreta-br", revenue:12.863, reportType:"official_balance_sheet",
+        sourceId:"pontepreta-br-balanco-2023-2024",
+        mix:[["Comercial / Sponsors",0.419],["Estadio",0.224],["Televisión",9.909],["Premios por competencias",0.061],["Venta de Jugadores",1.776],["Otras secciones deportivas",0.167],["Otros ingresos",0.307]] },
       { id:"mirassol", revenue:9.583, reportType:"official_balance_sheet",
         sourceId:"mirassol-relatorio-auditoria-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.583]] },
+      { id:"guarani-br", revenue:7.561, reportType:"official_balance_sheet",
+        sourceId:"guarani-br-demonstracoes-2023-2024",
+        mix:[["Cuotas Sociales",0.376],["Comercial / Sponsors",1.075],["Televisión",3.468],["Premios por competencias",0.019],["Venta de Jugadores",1.639],["Otros ingresos",0.983]] },
       { id:"operarioferroviario-br", revenue:4.894, reportType:"official_balance_sheet",
         sourceId:"operarioferroviario-br-demonstracoes-2024",
         mix:[["Cuotas Sociales",0.646],["Comercial / Sponsors",1.257],["Estadio",0.525],["Televisión",2.177],["Otras secciones deportivas",0.067],["Otros ingresos",0.222]] },
       { id:"ituano", revenue:4.722, reportType:"official_balance_sheet",
         sourceId:"ituano-relatorio-auditoria-2024",
         mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",1.329],["Estadio",0.412],["Televisión",2.243],["Venta de Jugadores",0.27],["Otros ingresos",0.416]] },
+    ],
+  },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"pontepreta-br", revenue:6.687, reportType:"official_balance_sheet",
+        sourceId:"pontepreta-br-balanco-2022-2023",
+        mix:[["Comercial / Sponsors",0.805],["Estadio",0.205],["Televisión",3.312],["Premios por competencias",0.089],["Venta de Jugadores",0.511],["Otras secciones deportivas",0.165],["Otros ingresos",1.6]] },
+    ],
+  },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"pontepreta-br", revenue:8.595, reportType:"official_balance_sheet",
+        sourceId:"pontepreta-br-balanco-2021-2022",
+        mix:[["Comercial / Sponsors",0.466],["Estadio",0.175],["Televisión",2.673],["Venta de Jugadores",4.396],["Otras secciones deportivas",0.101],["Otros ingresos",0.784]] },
     ],
   },
   2019: {

@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Segunda División (ES) — 3 ejercicio(s) con ranking:
-//   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -17,6 +17,9 @@ window.RANKINGS["es-segunda"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"realoviedo-es", revenue:29.491, reportType:"official_balance_sheet",
+        sourceId:"realoviedo-es-cuentas-anuales-2024-25",
+        mix:[["Comercial / Sponsors",10.337],["Estadio",5.941],["Televisión",8.484],["Premios por competencias",2.312],["Otros ingresos",2.418]] },
       { id:"elche-es", revenue:24.087, reportType:"official_balance_sheet",
         sourceId:"elche-es-cuentas-anuales-2024-25",
         mix:[["Comercial / Sponsors",3.549],["Estadio",3.11],["Televisión",7.451],["Premios por competencias",2.339],["Venta de Jugadores",5.489],["Otras secciones deportivas",0.06],["Otros ingresos",2.089]] },

@@ -52,6 +52,12 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // 58,3 M, el triple de 2024/25) confirma el ascenso recién para la temporada SIGUIENTE, fuera del
   // rango cargado.
   'elche-es': { 2024: 'es-segunda', 2025: 'es-segunda' },
+  // Verificado el 2026-09-25 (onboarding, Versión 221) contra Wikipedia en inglés ("2024-25 La
+  // Liga", "2024-25 Real Oviedo season"). Real Oviedo jugó Segunda 2024/25 completa (3° en la
+  // liga regular, ascendió recién por el playoff de junio 2025, para la temporada SIGUIENTE).
+  'rcdmallorca-es': { 2025: 'es-laliga' }, // 10° de 20
+  'rayovallecano-es': { 2025: 'es-laliga' }, // 8° de 20
+  'realoviedo-es': { 2025: 'es-segunda' },
 });
 
 // ---------------------------------------------------------------------------

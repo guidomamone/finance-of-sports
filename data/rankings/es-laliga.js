@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // LaLiga (ES) — 3 ejercicio(s) con ranking:
-//   2025: 12 club(es) cargado(s), de 20.
+//   2025: 14 club(es) cargado(s), de 20.
 //   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -44,6 +44,9 @@ window.RANKINGS["es-laliga"] = {
       { id:"celtavigo", revenue:107.021, reportType:"official_balance_sheet",
         sourceId:"celtavigo-cuentas-anuales-individual-2024-25",
         mix:[["Comercial / Sponsors",19.61],["Estadio",7.177],["Televisión",54.25],["Premios por competencias",4.442],["Otros ingresos",21.543]] },
+      { id:"rcdmallorca-es", revenue:88.524, reportType:"official_balance_sheet",
+        sourceId:"rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25",
+        mix:[["Comercial / Sponsors",14.763],["Estadio",12.538],["Televisión",51.98],["Premios por competencias",5.775],["Otros ingresos",3.468]] },
       { id:"espanyol-es", revenue:84.385, reportType:"official_balance_sheet",
         sourceId:"espanyol-es-cuentas-anuales-2024-25",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",80.354],["Otros ingresos",4.031]] },
@@ -53,6 +56,9 @@ window.RANKINGS["es-laliga"] = {
       { id:"getafe-es", revenue:71.155, reportType:"official_balance_sheet",
         sourceId:"getafe-es-cuentas-anuales-2024-25",
         mix:[["Comercial / Sponsors",8.475],["Estadio",3.614],["Televisión",53.857],["Premios por competencias",1.993],["Otros ingresos",3.216]] },
+      { id:"rayovallecano-es", revenue:68.522, reportType:"official_balance_sheet",
+        sourceId:"rayovallecano-es-informe-auditoria-cuentas-anuales-2024-25",
+        mix:[["Comercial / Sponsors",8.984],["Estadio",3.699],["Televisión",50.641],["Premios por competencias",2.333],["Otros ingresos",2.866]] },
     ],
   },
   2024: {

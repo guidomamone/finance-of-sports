@@ -29,7 +29,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Fortaleza](../Brasil/Fortaleza.md) — CARGADO AL SITIO (`fortaleza-br`, SAF 2025): associação 2018-2025 sin cargar (balancetes sin auditar, calidad insuficiente) — Último chequeo: 2026-09-24
 - [Goiás](../Brasil/Goias.md) — 16 ejercicios (2007/08-2017, 2021-2025) del portal propio + FGF-GO; hueco 2018-2020 (404 real) — Último chequeo: 2026-09-22
 - [Gremio](../Brasil/Gremio.md) — 1 ejercicio real (2023-2024), no es SAF — **CARGADO al sitio: Ejercicio 2024** — Último chequeo: 2026-09-13
-- [Guarani](../Brasil/Guarani.md) — 2 ejercicios reales (2023-2025), en recuperación judicial, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [Guarani](../Brasil/Guarani.md) — CARGADO AL SITIO (`guarani-br`, 2024-2025), en recuperación judicial, no es SAF — Último chequeo: 2026-09-25
 - [Internacional](../Brasil/Internacional.md) — CARGADO AL SITIO (`internacional-br`, 2024-2025): 19 ejercicios reales, serie completa 2007-2025, no es SAF — Último chequeo: 2026-09-24
 - [Ituano](../Brasil/Ituano.md) — 15 ejercicios (2010-2024, sin huecos) vía el índice JSON de la Federação Paulista; falta 2025 (descendió a Série C) — Último chequeo: 2026-09-22
 - [Juventude](../Brasil/Juventude.md) — 1 ejercicio real (2020, escaneado), sin cargar aún; 2024 sin publicar según prensa (ver dudas-por-club.md) — Último chequeo: 2026-09-16
@@ -38,7 +38,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Operário Ferroviário](<../Brasil/Operario Ferroviario.md>) — CARGADO AL SITIO (`operarioferroviario-br`): 2024 (Federação Paranaense) y 2025 (sitio propio); faltan 2023 y anteriores — Último chequeo: 2026-09-24
 - [Palmeiras](../Brasil/Palmeiras.md) — CARGADO AL SITIO (`palmeiras-br`, 2024-2025): 8 ejercicios reales, serie completa 2017-2025, no es SAF — Último chequeo: 2026-09-24
 - [Paysandu](../Brasil/Paysandu.md) — 4 ejercicios (2021, 2023-2025); auditoría 2025 CON RESSALVAS y divergencias reportadas por prensa — Último chequeo: 2026-09-22
-- [Ponte Preta](../Brasil/Ponte Preta.md) — 3 ejercicios reales (2021-2024), no es SAF, sin cargar aún — Último chequeo: 2026-09-16
+- [Ponte Preta](../Brasil/Ponte Preta.md) — CARGADO AL SITIO (`pontepreta-br`, 2022-2024), no es SAF — Último chequeo: 2026-09-25
 - [RB Bragantino](../Brasil/RB Bragantino.md) — CARGADO AL SITIO (`rbbragantino-br`): 2 ejercicios reales (2019, 2024) vía Wayback Machine, no es SAF — Último chequeo: 2026-09-24
 - [Remo](../Brasil/Remo.md) — 7 ejercicios (2019-2025); 2019-2024 del bucket del sitio nuevo, 2025 recuperado de Wayback — Último chequeo: 2026-09-22
 - [Santos](../Brasil/Santos.md) — CARGADO AL SITIO (`santos-br`, 2024-2025): 3 ejercicios reales encontrados (2020-2021, 2023-2025), no es SAF — Último chequeo: 2026-09-24

@@ -25,3 +25,15 @@
   agotó exhaustivamente el dominio propio del club).
 - Contacto: `futebolpaulista.com.br/Repositorio/Institucional/<año>/`.
 - Último chequeo: 2026-09-16.
+- **Cargado en el sitio (2026-09-25):** 3 ejercicios, `data/pontepreta-br-data.js` (`clubId`:
+  `pontepreta-br`). 2022 desde `balanco-2021-2022.pdf` (Déficit R$4,53 M), 2023 desde
+  `balanco-2022-2023.pdf` (Déficit R$15,17 M, el mayor de los 3), 2024 desde
+  `balanco-2023-2024.pdf` (Superávit R$7,00 M, incl. un ajuste extraordinario de R$22,17 M
+  ligado a un pasivo nuevo de acuerdos laborales — "Pept/CNRD"). `BRL@2022-12-31` (R$5,2177,
+  PTAX BCB del 30/12/2022) todavía no está centralizado en `data/currency-map.js`, se cargó como
+  `fx` literal en el archivo del club — pendiente agregarlo a `FX_CLOSE`. Ver el comentario de
+  cabecera del archivo de datos para el detalle completo de categorización, tie-out y grossDebt.
+- **Color de marca: `#000000` (negro) — Team Color Codes, confirmando Wikipedia en portugués
+  ("suas cores são o preto e o branco"). Bicolor negro/blanco sin desempate explícito del club:
+  se usó el criterio de `club-or-year-onboarding` SKILL.md sección 3 ("si el otro color es
+  blanco, gana el que no es blanco"), verificado 2026-09-25.**

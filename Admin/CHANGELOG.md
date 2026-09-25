@@ -15,6 +15,39 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 221 — 7 clubes nuevos (4to batch de 10 PDF transcriptos pendientes, prioridad Sudamérica): Millonarios, Deportivo Pereira, Guarani, Ponte Preta, RCD Mallorca, Real Oviedo, Rayo Vallecano
+
+- De 85 a 92 clubes cargados. Pedido explícito: prioridad Sudamérica, España como respaldo si no
+  alcanzaba. El pool limpio de Sudamérica ya transcripto y sin cargar dio 8 ejercicios (Colombia:
+  **Millonarios** `millonarios-co` 2025; **Deportivo Pereira** `deportivopereira-co` 2025, "en
+  reorganización de oficio". Brasil: **Guarani** `guarani-br` 2024-2025, en recuperación judicial;
+  **Ponte Preta** `pontepreta-br` 2022-2024) — faltaron 2 para 10, completados con España
+  (**RCD Mallorca** `rcdmallorca-es`, **Real Oviedo** `realoviedo-es`, **Rayo Vallecano**
+  `rayovallecano-es`, los 3 ejercicio 2024/25).
+- **Descartado a propósito, no por error**: Deportes Tolima (Colombia) — una sesión de sourcing
+  anterior ya había encontrado 3 cifras de resultado neto en conflicto (SIIS, la Nota 18(3) del
+  propio documento, y la suma de líneas) sin poder reconciliar ninguna, y decidió explícitamente no
+  cargarlo (`Admin/dudas-por-club.md`). Se respetó esa decisión en vez de forzar un número. También
+  se descartaron los `informe-gestion` narrativos de Millonarios (2023/2024, cifras en prosa con
+  inconsistencias internas menores) y 2 documentos ecuatorianos (uno de caja no devengado, otro que
+  mezcla el club de fútbol con actividades no deportivas) por no llegar al estándar de calidad.
+- `FX_CLOSE` nuevo: `BRL@2022-12-31` (5,2177, Ponte Preta). Ninguna liga nueva en el catálogo.
+- **3 P0 reales encontrados y corregidos en la integración**, los 3 con la misma causa:
+  `officialTotalExpenses` incluía por error un ítem `exceptional_items` que el motor excluye de ese
+  check desde Botafogo — `millonarios-co` 2025 (provisión por contingencia laboral de un exjugador),
+  `deportivopereira-co` 2025 (gastos de ejercicios anteriores) y `pontepreta-br` 2024 (un ajuste
+  extraordinario ligado a un pasivo laboral nuevo, además reconstruido de un dígito perdido por el
+  OCR — ver `Admin/dudas-por-club.md`). Corregidos restando el monto exacto en cada caso.
+- `verifyTieOuts()`: de 506 checks (0 mismatches, 0 warnings) tras sumar los 10 ejercicios nuevos —
+  confirmado con el motor real en el navegador.
+- `tools/audit.js`: 2 hallazgos nuevos silenciados (1 `signo-invertido`, 1 `catchall-dominante`,
+  ambos verificados contra el documento fuente) + el `outlier-liga` de Volta Redonda reescrito con un
+  `match` que ya no depende del valor exacto de la mediana (que se mueve cada vez que se suman más
+  clubes brasileños grandes).
+- Los 3 generadores corridos: `Admin/ESTADO.md` (comprimida la sección "DATOS" para que no siga
+  creciendo sin límite en cada tanda — el detalle club por club de cada versión ya vive acá, no hace
+  falta repetirlo ahí), `fuentes.html` (92 páginas de club) y `data/rankings/<liga>.js`.
+
 ## Versión 220 — 11 clubes nuevos (3er batch de 20 PDF transcriptos pendientes, priorizando Brasil y Argentina): Corinthians, Palmeiras, São Paulo, Santos, Internacional, Fluminense, Fortaleza, Bahia, Chapecoense, Vasco da Gama, Ferro Carril Oeste
 
 - De 74 a 85 clubes cargados. Mismo criterio que las Versiones 217/219 pero pedido explícito de

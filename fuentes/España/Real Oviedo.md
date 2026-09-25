@@ -17,3 +17,16 @@
   de 2020-21.
 - Contacto: `realoviedo.es/ley-de-transparencia`.
 - Último chequeo: 2026-09-16.
+
+## Cargado a Finanzas (2026-09-25)
+
+- Ejercicio 2024/25 cargado en `data/realoviedo-es-data.js` (`clubId: 'realoviedo-es'`), a partir de
+  `Clubes/España/Real Oviedo/cuentas-anuales-2024-2025.md` — mucho menos ruido de OCR que Mallorca
+  (cada fila y su número quedaron en la misma línea de la transcripción), reconcilió exacto (con
+  redondeo ≤2 EUR) contra "Resultado del ejercicio" (-5.578.650), impreso tanto en la Cuenta de
+  P&G como en el Balance. Pérdida neta del ejercicio, consistente con la nota de prensa citada al
+  encontrar el documento (pérdidas de 5,5M€).
+- Color de marca: `#0033A0` (azul) — Wikipedia en español declara "Azul y Blanco" con el azul en
+  PANTONE 286C, hex convertido de ese Pantone (crispedge.com, icolorpalette.com), verificado
+  2026-09-25.
+- Pendiente sigue igual: ejercicios 2021-22 a 2023-24, y reintentar 2020-21.

@@ -35,3 +35,10 @@
   federación año por año para esos huecos en una sesión futura.
 - Contacto: `guaranifc.com.br/governanca/`; `futebolpaulista.com.br/Repositorio/Institucional/<año>/`.
 - Último chequeo: 2026-09-16.
+- **Cargado en el sitio (2026-09-25):** 2 ejercicios, `data/guarani-br-data.js` (`clubId`:
+  `guarani-br`). 2024 desde `demonstracoes-financeiras-2023-2024.pdf` (Déficit R$412 mil), 2025
+  desde `demonstracoes-financeiras-2024-2025.pdf` (Superávit R$8.077 mil). Ver el comentario de
+  cabecera del archivo de datos para el detalle completo de categorización, tie-out y grossDebt.
+- **Color de marca: `#006C51` (verde) — Team Color Codes (fuente secundaria, confirmando el
+  criterio de identidad de Wikipedia en portugués: "cores branca... e verde", camisa verde desde
+  1916), verificado 2026-09-25.**

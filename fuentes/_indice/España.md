@@ -23,13 +23,13 @@ destrabarlos.
 - [Deportivo Alavés](<../España/Deportivo Alavés.md>) — CARGADO (Ejercicio 2024/25), 9 ejercicios reales disponibles, serie completa 2016-2025 — Último chequeo: 2026-09-13
 - [Girona FC](<../España/Girona FC.md>) — CARGADO (Ejercicios 2019/20 y 2024/25, con hueco 2020-21 a 2023-24) — Último chequeo: 2026-09-22
 - [CA Osasuna](<../España/CA Osasuna.md>) — CARGADO (Ejercicios 2022, 2024) — Último chequeo: 2026-09-22
-- [RCD Mallorca](<../España/RCD Mallorca.md>) — 1 ejercicio real descargado (2024/25), sin cargar aún — Último chequeo: 2026-09-16
-- [Rayo Vallecano](<../España/Rayo Vallecano.md>) — 1 ejercicio real descargado (2024/25, auditoría con salvedades), sin cargar aún — Último chequeo: 2026-09-16
+- [RCD Mallorca](<../España/RCD Mallorca.md>) — CARGADO AL SITIO (`rcdmallorca-es`, 2024/25) — Último chequeo: 2026-09-25
+- [Rayo Vallecano](<../España/Rayo Vallecano.md>) — CARGADO AL SITIO (`rayovallecano-es`, 2024/25, auditoría con salvedades) — Último chequeo: 2026-09-25
 - [Getafe CF](<../España/Getafe CF.md>) — CARGADO (Ejercicios 2023/24 y 2024/25) — Último chequeo: 2026-09-22
 - [RCD Espanyol](<../España/RCD Espanyol.md>) — CARGADO (Ejercicios 2023/24 y 2024/25) — Último chequeo: 2026-09-22
 - [Elche CF](<../España/Elche CF.md>) — CARGADO (Ejercicios 2024, 2025) — Último chequeo: 2026-09-22
 - [Levante UD](<../España/Levante UD.md>) — 1 ejercicio real descargado (2024/25 consolidado), sin cargar aún — Último chequeo: 2026-09-16
-- [Real Oviedo](<../España/Real Oviedo.md>) — 1 ejercicio real descargado (2024/25), sin cargar aún — Último chequeo: 2026-09-16
+- [Real Oviedo](<../España/Real Oviedo.md>) — CARGADO AL SITIO (`realoviedo-es`, 2024/25, Segunda División) — Último chequeo: 2026-09-25
 - [Notas generales de España](../España/_notas-generales.md)
 
 ---

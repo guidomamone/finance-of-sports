@@ -7,6 +7,16 @@
   },
   {
     "code": "signo-invertido",
+    "match": "deportivopereira-co 2025 ingreso \"Devoluciones en ventas y servicios\"",
+    "motivo": "VERIFICADO (onboarding de Deportivo Pereira, 2026-09-25). Devolución real de ventas/servicios, línea negativa impresa por el propio documento como contra-revenue — mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "pontepreta-br 2024 Gastos",
+    "motivo": "REVISADO (onboarding de Ponte Preta, 2026-09-25): mismo caso que otros clubes de este proyecto (Volta Redonda, Chapecoense) — exceptional_items no tiene fila propia en Formato Simplificado y cae al catch-all 'Otros gastos'. El ajuste extraordinario 'Depreciação/Contingência/Pept/CNRD' (-22,168 M, ligado a un pasivo laboral nuevo de 2024) es grande frente al total de gastos ordinarios del club (50,522 M), lo que empuja el catch-all a 42% — no es un error de categorización."
+  },
+  {
+    "code": "signo-invertido",
     "match": "bahia-br 2024 ingreso \"Impostos e contribuições incidentes",
     "motivo": "VERIFICADO (onboarding de Bahia, 2026-09-24). Deducción real de impuestos sobre la receita, impresa negativa por el propio balance en los 2 ejercicios — mismo tratamiento que el resto de los clubes brasileños ya cargados (Botafogo, América Mineiro, etc.). Tie-out cierra exacto con este signo."
   },
@@ -82,8 +92,8 @@
   },
   {
     "code": "outlier-liga",
-    "match": "voltaredonda-br 2024: 2.0 M USD contra una mediana de 81.7 M USD en BR",
-    "motivo": "VERIFICADO, no es error de escala: Volta Redonda es un club chico de Série C (campeón 2024, ver data/voltaredonda-br-data.js, cargado en la Versión 217) y la mediana de la liga BR se disparó al sumar en las Versiones 219/220 varios de los clubes más grandes del país (Flamengo, Corinthians, Palmeiras, Internacional, etc., todos con revenue de cientos de millones de USD). Es la mediana la que se movió, no el dato de Volta Redonda, que ya estaba verificado con tie-out exacto en su propia carga."
+    "match": "voltaredonda-br 2024: 2.0 M USD contra una mediana de",
+    "motivo": "VERIFICADO, no es error de escala: Volta Redonda es un club chico de Série C (campeón 2024, ver data/voltaredonda-br-data.js, cargado en la Versión 217) y la mediana de la liga BR sigue moviéndose cada vez que este proyecto suma más clubes brasileños grandes (Flamengo, Corinthians, Palmeiras, Internacional, etc., todos con revenue de cientos de millones de USD) — por eso el `match` de esta entrada NO incluye el valor exacto de la mediana, para no tener que reescribirla cada vez que cambie. Es la mediana la que se mueve, no el dato de Volta Redonda, que ya estaba verificado con tie-out exacto en su propia carga."
   },
   {
     "code": "catchall-dominante",

@@ -1131,3 +1131,77 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   social, pero ninguno de los 2 balances explica qué es exactamente este mecanismo de "recupero". Se
   cargó conservadoramente a `other_income`. Vale la pena preguntarle al club o a la AFA de qué se
   trata exactamente antes de recategorizarlo.
+
+## RCD Mallorca (`rcdmallorca-es`), Real Oviedo (`realoviedo-es`) y Rayo Vallecano (`rayovallecano-es`), España — onboarding Ejercicio 2024/25, sesión 2026-09-25
+
+- **RCD Mallorca — "Cesiones" (233.000€, dentro de "Otros ingresos")**: es ingreso por préstamo de
+  jugadores a otros clubes (cesión con o sin cargo), conceptualmente más cerca de `player_sales` que
+  del catch-all `other_income` donde quedó cargado. Getafe (mismo formato INFUT) SÍ la promovió a
+  `player_sales` propia en su sesión de carga; acá se dejó en el catch-all por no reabrir ese criterio
+  sin confirmar con Guido si conviene unificarlo retroactivamente entre los clubes españoles ya
+  cargados. Vale la pena decidir un criterio único y aplicarlo parejo.
+- **Real Oviedo — "Deterioro y resultado por enajenaciones" (2.771.029€) sin la palabra "jugadores"
+  en su rótulo**: a diferencia de Mallorca/Rayo Vallecano (que sí dicen explícito "traspaso de
+  jugadores"/"transferencia de jugadores"), este documento solo dice "Beneficios procedentes del
+  inmovilizado e ingresos excepcionales"/"Pérdidas procedentes del inmovilizado y gastos
+  excepcionales". Se cargó igual a `profitOnPlayerSales` por ocupar la misma posición del P&L INFUT
+  estándar (y porque el inmovilizado intangible deportivo — derechos de jugadores — es la partida de
+  baja más plausible para un club de este tamaño), pero no está 100% confirmado que sea
+  exclusivamente venta de jugadores y no incluya, por ejemplo, una venta de inmovilizado material.
+  Confirmar con la Nota de "Inmovilizado" completa del documento (no transcripta en detalle esta
+  sesión) o con el club.
+- **Rayo Vallecano — salvedad de auditoría (AUDRIA, S.L.)**: opinión CON SALVEDADES por la falta de
+  tasación independiente del derecho de uso sobre el Campo de Fútbol de Vallecas (Convenio con la
+  Comunidad de Madrid, 5/7/2019). Pregunta abierta: ¿figura ese derecho de uso en el Activo No
+  Corriente del Balance (bajo qué línea) o está directamente sin reconocer? Ninguna línea
+  transcripta del Balance se llama explícitamente "derecho de concesión"/"derecho de uso del
+  estadio" — sería necesario revisar la Memoria completa (Nota 6, citada en la salvedad) para
+  confirmarlo. No afecta los datos de Finanzas cargados (ingresos/gastos/PAT del ejercicio), solo la
+  composición del activo no corriente, que este sitio no carga en detalle.
+- **Rayo Vallecano — `netInterest` reconstruido por residuo, no por lectura directa**: la sección de
+  Resultado Financiero de la Cuenta de Pérdidas y Ganancias perdió sus números en la extracción del
+  PDF (quedaron solo las etiquetas "13. Ingresos financieros"/"14. Gastos financieros"/etc., sin
+  cifra). El valor cargado (-43.409,90€) sale de restar 2 anclas confirmadas por partida doble
+  (Resultado del ejercicio impreso 2 veces, menos Resultado de Explotación reconciliado exacto, menos
+  el neto de la Nota de Impuesto sobre beneficios) — matemáticamente sólido, pero valdría la pena
+  releer manualmente la página 10 del PDF original (no el `.md`) para confirmar el desglose
+  Ingresos/Gastos financieros/Diferencias de cambio línea por línea, en vez de depender del residuo.
+
+## Millonarios (`millonarios-co`), Colombia — onboarding 2025, sesión 2026-09-25
+
+- **Nota 23 "Costo Deportivo y de Ventas"** agrupa en una sola línea ($45.741 M) el costo del
+  personal del plantel profesional JUNTO con el personal de tienda/academias, sin desglose
+  disponible en el documento. Se cargó entera a `wages_squad`, lo que probablemente sobreestima
+  levemente el salario real del plantel. Vale pedirle al club el desglose por sector.
+
+## Deportivo Pereira (`deportivopereira-co`), Colombia — onboarding 2025, sesión 2026-09-25
+
+- **"Ingreso por actualización derecho DIMAYOR"** ($4.428,43 M, 17% del revenue): es una
+  revalorización estatutaria NO efectiva del derecho de afiliación a la DIMAYOR (atada a 10.000
+  SMLV), no ingreso operativo real de venta de entradas/TV/sponsors. Se cargó a `other_income`
+  porque omitirla rompe la reconciliación contra el resultado impreso, pero mostrarla mezclada con
+  ingresos operativos reales en la misma fila del sitio es discutible — vale la pena revisarlo si
+  se repite en otro club colombiano.
+- **"Trayectoria deportiva"** ($2.854,79 M, ~11% de los gastos): bonos de fichaje pagados
+  nominalmente a jugadores/técnicos según su trayectoria. Categorizada `wages_squad`; podría
+  argumentarse `player_amortisation` en cambio.
+- **"Regalías"** ($573,46 M, ingreso): no está claro de qué es esta regalía — categorizada
+  `sponsorship_commercial` por descarte. Vale confirmar con el club.
+- **Gotcha de tooling nuevo**: el PDF de este club tiene texto nativo, pero TODAS las tablas
+  numéricas están embebidas como imagen (captura de Excel) dentro del PDF — la transcripción
+  `.md` salió en blanco para esas tablas. Se resolvió re-renderizando las páginas puntuales a
+  300dpi y leyendo las tablas directo de la imagen. Si aparece otro documento de Supersociedades
+  con el mismo patrón (texto nativo + tablas como imagen), aplicar el mismo método antes de asumir
+  que el documento no tiene datos.
+
+## Ponte Preta (`pontepreta-br`), Brasil — onboarding 2022/2023/2024, sesión 2026-09-25
+
+- **2024 — línea "Depreciação/Contingência/Pept/CNRD" reconstruida, no leída limpia**: el documento
+  imprime "(2.168.194)" para esta línea, que NO reconcilia contra el Superávit final. Sumando
+  "22.168.194" (mismos dígitos con un "2" al principio que el OCR parece haber perdido) SÍ
+  reconcilia exacto, y coincide de forma independiente con un pasivo NUEVO del balance ese año
+  ("Acordos trabalhistas-Pept e CNRD", R$20,9 M, R$0 en 2023). Se cargó -22.168.194 como
+  `exceptional_items`, documentado en detalle en el comentario de cabecera de
+  `data/pontepreta-br-data.js`. Es una reconstrucción con buena evidencia cruzada, no un número
+  leído limpio — vale la pena confirmarlo releyendo el PDF original a mayor resolución, o
+  preguntándole al club la naturaleza exacta de este cargo de R$22,2 M.

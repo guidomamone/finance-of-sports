@@ -147,12 +147,18 @@ const clubs = {
   'bahia-br': { id:'bahia-br', name:'Esporte Clube Bahia S.A.F.', displayName:'Bahia', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'chapecoense-br': { id:'chapecoense-br', name:'Associação Chapecoense de Futebol', displayName:'Chapecoense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1B552A' },
   'vascodagama-br': { id:'vascodagama-br', name:'Vasco da Gama Sociedade Anônima do Futebol', displayName:'Vasco da Gama', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  // 2 clubes nuevos (Versión 221, 4to batch de PDF transcriptos pendientes, sesión 2026-09-25,
+  // prioridad Sudamérica): mismo motor genérico.
+  'guarani-br': { id:'guarani-br', name:'Guarani Futebol Clube', displayName:'Guarani', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006C51' },
+  'pontepreta-br': { id:'pontepreta-br', name:'Associação Atlética Ponte Preta', displayName:'Ponte Preta', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
   // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
   // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
   oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   envigado: { id:'envigado', name:'Envigado Fútbol Club S.A.', displayName:'Envigado FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED7039' },
   'unionmagdalena-co': { id:'unionmagdalena-co', name:'Unión Magdalena S.A.', displayName:'Unión Magdalena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'millonarios-co': { id:'millonarios-co', name:'Azul y Blanco Millonarios FC S.A.', displayName:'Millonarios', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#293378' },
+  'deportivopereira-co': { id:'deportivopereira-co', name:'Deportivo Pereira F.C. S.A.', displayName:'Deportivo Pereira', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0013' },
   // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
   // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
   // moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por
@@ -185,6 +191,13 @@ const clubs = {
   'espanyol-es': { id:'espanyol-es', name:'R.C.D. Espanyol de Barcelona, S.A.D.', displayName:'RCD Espanyol', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#007fc8' },
   'elche-es': { id:'elche-es', name:'Elche Club de Fútbol, S.A.D.', displayName:'Elche CF', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#05642C' },
   'osasuna-es': { id:'osasuna-es', name:'Club Atlético Osasuna', displayName:'CA Osasuna', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D91A21' },
+  // 3 clubes nuevos (Versión 221, 4to batch de PDF transcriptos pendientes, sesión 2026-09-25,
+  // completando a 10 tras agotar el pool limpio de Sudamérica). `brandColor:null` en Rayo
+  // Vallecano: camiseta blanca dominante con franja diagonal roja, mismo bucket que River/Vélez/
+  // Sevilla/Real Madrid.
+  'rcdmallorca-es': { id:'rcdmallorca-es', name:'Real Club Deportivo Mallorca, S.A.D.', displayName:'RCD Mallorca', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E20613' },
+  'realoviedo-es': { id:'realoviedo-es', name:'Real Oviedo, S.A.D.', displayName:'Real Oviedo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0033A0' },
+  'rayovallecano-es': { id:'rayovallecano-es', name:'Rayo Vallecano de Madrid, S.A.D.', displayName:'Rayo Vallecano', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   // Alemania (sesión 2026-09-22): PAÍS NUEVO, 5 clubes de Bundesliga. `fiscalYearStart:'07-01'`
   // (ejercicio 1/7-30/6, igual que España) para los 4 primeros; VfB Stuttgart es la excepción, su
   // ejercicio es año CALENDARIO (confirmado en el propio documento, ver data/stuttgart-de-data.js).

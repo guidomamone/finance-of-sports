@@ -36,7 +36,7 @@ desactualizado no es cosmético — cuando se midió, `club-sourcing` decía 33 
 
 - `Admin/finance-of-sports-project.md` (488 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
-- `Admin/CHANGELOG.md` (245 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
+- `Admin/CHANGELOG.md` (307 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
 Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 

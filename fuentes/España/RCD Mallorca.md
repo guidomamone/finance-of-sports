@@ -20,3 +20,17 @@
   sesión).
 - Contacto: `rcdmallorca.es/en/ley-de-transparencia`.
 - Último chequeo: 2026-09-16.
+
+## Cargado a Finanzas (2026-09-25)
+
+- Ejercicio 2024/25 cargado en `data/rcdmallorca-es-data.js` (`clubId: 'rcdmallorca-es'`), a partir
+  de la transcripción confirmada como escaneo con OCR (ver arriba): el PDF SÍ resultó tener el
+  contenido completo, transcripto en `Clubes/España/RCD Mallorca/
+  cuentas-anuales-informe-gestion-2024-2025.md`. La Cuenta de Pérdidas y Ganancias venía con las
+  etiquetas de fila separadas de sus números por el OCR — reconciliado exacto contra la Nota 31.1
+  "Cifra de negocios por categoría de actividades" y el resto de subtotales impresos (ver
+  comentario de cabecera del archivo de datos para el detalle completo).
+- Color de marca: `#E20613` (rojo) — Wikipedia en español confirma rojo como color predominante de
+  la camiseta (negro es secundario, en pantalón/medias desde 1933), hex verificado en
+  teamcolorcodes.com/rcd-mallorca-colors/ (PANTONE 2035 C), verificado 2026-09-25.
+- Pendiente sigue igual: ejercicios 2019-20 a 2023-24.

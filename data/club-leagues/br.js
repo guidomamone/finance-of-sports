@@ -51,4 +51,8 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'bahia-br': { 2024: 'br-serieA', 2025: 'br-serieA' }, // clasificó a Libertadores los 2 años
   'chapecoense-br': { 2021: 'br-serieA' }, // ascendido en 2020, descendido al cierre de 2021
   'vascodagama-br': { 2023: 'br-serieA' }, // ascendido en 2022, primera temporada completa de vuelta en Série A
+  // Verificado el 2026-09-25 (onboarding, Versión 221) contra Wikipedia en inglés (temporadas 2022,
+  // 2023, 2024 y 2025).
+  'guarani-br': { 2024: 'br-serieB', 2025: 'br-serieC' }, // descendido de la Série B al cierre de 2024
+  'pontepreta-br': { 2022: 'br-serieB', 2023: 'br-serieB', 2024: 'br-serieB' }, // descendido de la Série B al cierre de 2024, campeón de la Série C 2025 (fuera del rango cargado)
 });

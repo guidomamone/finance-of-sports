@@ -73,26 +73,17 @@ se reescribe, no se acumula.
   y `'pending_official'` siguen existiendo en el código, con su rama en
   `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
   los usa ningún club.
-- DATOS: 85 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
-  oficial), de 8 países: Argentina 16, España 15, Japón 10, Brasil 25, Colombia 8,
-  Alemania 5, Inglaterra 5, México 1. Los 20 clubes nuevos de 3 sesiones de onboarding
-  en paralelo de PDF transcriptos pendientes (Versiones 217, 219 y 220, todas
-  2026-09-24), todos brasileños salvo Unión Magdalena y Ferro Carril Oeste (Colombia y
-  Argentina): **Versión 217** — América Mineiro (3 ejercicios, 2023-2025), Operário
-  Ferroviário (2, 2024-2025) y Volta Redonda (2, 2024-2025) en Brasil, y Unión
-  Magdalena (1, 2018) en Colombia. **Versión 219** — Flamengo (2, 2024-2025), Atlético
-  Mineiro (3, 2023-2025, "stub period" 2023 de solo 3,5 meses desde la constitución de
-  la SAF), Athletico Paranaense (2, 2024-2025), Vitória (1, 2025) y RB Bragantino (2,
-  2019 y 2024). **Versión 220** — Corinthians, Palmeiras, São Paulo, Santos,
-  Internacional, Fluminense, Bahia (2 ejercicios c/u), Fortaleza, Chapecoense, Vasco da
-  Gama (1 c/u) en Brasil, y Ferro Carril Oeste (2) en Argentina — el pool de clubes
-  brasileños GRANDES (sourceados en sesiones de 2026-09-12/16, nunca cargados hasta
-  ahora). Los 20 con el mismo motor genérico, sin ningún país nuevo de infraestructura
-  (Brasil/Colombia/Argentina ya estaban cargados). Desde la Versión 217 los clubes
-  nuevos nacen con el país en el `clubId` (ej. `americamineiro-br`, `flamengo-br`,
-  `corinthians-br`), convención de la Versión 129 que hasta ahí no se venía aplicando
-  a los clubes que se agregaban (`tools/audit.js` lo
-  empezó a chequear recién en la Versión 217, `clubid-sin-pais`).
+- DATOS: 92 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+  oficial), de 8 países: Argentina 16, España 18, Japón 10, Brasil 27, Colombia 10,
+  Alemania 5, Inglaterra 5, México 1. 30 de esos 92 clubes se sumaron en 4 sesiones de
+  onboarding en paralelo de PDF transcriptos pendientes (Versiones 217, 219, 220 y 221,
+  2026-09-24/25), el detalle club por club de cada tanda está en `Admin/CHANGELOG.md`
+  (no se repite acá para que esta sección no crezca sin límite). Ninguna abrió país
+  nuevo de infraestructura — Brasil/Colombia/Argentina/España ya estaban cargados.
+  Desde la Versión 217 los clubes nuevos nacen con el país en el `clubId` (ej.
+  `americamineiro-br`, `corinthians-br`, `millonarios-co`), convención de la Versión
+  129 que hasta ahí no se venía aplicando a los clubes que se agregaban
+  (`tools/audit.js` lo empezó a chequear recién en la Versión 217, `clubid-sin-pais`).
   Rosario Central e Independiente, ya cargados, sumaron un 2do ejercicio cada uno
   (2024-25 y N°122/2025-26 respectivamente, Versión 209) — con esto se cierra el to-do
   58 completo (los 6 ejercicios que el barrido del 2026-09-22 encontró y descargó).
@@ -140,7 +131,7 @@ se reescribe, no se acumula.
   por temporada mirando ascensos y descensos, repartido hay que acordarse de 41
   lugares. `null` significa "nadie lo verificó todavía", así que el archivo no
   puede afirmar una liga que nadie chequeó, y `node tools/audit.js` cuenta las
-  que faltan. HOY: 163 de 168 verificadas, con la fuente anotada por bloque; las 5
+  que faltan. HOY: 173 de 178 verificadas, con la fuente anotada por bloque; las 5
   que faltan son 3 presupuestos (Boca 2027, Racing 2026 y 2027) y los 2 ejercicios de
   Ferro Carril Oeste (fuentes contradictorias sobre la categoría exacta, ver
   `data/club-leagues/ar.js`). CRITERIO cuando un
@@ -176,7 +167,7 @@ se reescribe, no se acumula.
   146 `yrs`: la LISTA de ejercicios con el reportType de cada uno). Existe porque
   eso vive adentro de `data/<club>-data.js`, que es justamente lo que no se carga
   hasta que el visitante elige ese club: con la página recién abierta, `clubs{}`
-  tiene 85 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 85
+  tiene 92 entradas y `sources{}` tiene 3, todas de Boca. Son ~10 KB para los 92
   clubes (`data/club-index.js`) contra los ~25,8 KB de `clubs.js` completo (~420
   bytes/club). Su consumidor es el
   selector jerárquico, que desde la Versión 137 EXISTE: es de acá que salen el
@@ -185,7 +176,7 @@ se reescribe, no se acumula.
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 476 checks, 0
+  cada `fx` caiga en un rango plausible para su moneda. Hoy son 506 checks, 0
   mismatches, 0 warnings (medido el 2026-09-24, Versión 217, tras sumar los 8
   ejercicios nuevos de América Mineiro/Operário Ferroviário/Volta Redonda/Unión
   Magdalena: eran 365).
@@ -198,23 +189,14 @@ se reescribe, no se acumula.
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 8 P3 y 84
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-24, Versión 220). 35 de
-  esos 84 son de las 3 sesiones de onboarding de PDF pendientes: 7 de la Versión 217 (4
-  `signo-invertido` + 3 `catchall-dominante`, América Mineiro/Volta Redonda), 10 de la Versión 219
-  (`categoria-cruzada`/`signo-invertido`/`salto-interanual`, Atlético Mineiro/Athletico
-  Paranaense/Flamengo/Vitória/RB Bragantino — 2 de los P0 de esa tanda eran reales: `atleticomineiro-
-  br` 2024/2025 tenía `officialTotalExpenses` incluyendo por error un ítem `exceptional_items` que el
-  motor excluye del check de Gastos, corregido restando ese monto), y 17 de la Versión 220 (15
-  `signo-invertido` + 1 `outlier-liga` + 1 `catchall-dominante`, los 11 clubes de Corinthians a Ferro
-  Carril Oeste — acá también 3 P0/P1 reales: `internacional-br` 2025 tenía `officialTotalRevenue`/
-  `officialPAT` tomados del literal impreso en vez de la suma real de líneas cargadas —corregido para
-  usar la suma real, ver `data/internacional-br-data.js`—, `chapecoense-br` 2021 tenía una
-  inconsistencia real de 3 lecturas del resultado en el propio documento —se usó la que reconcilia
-  con los datos cargados, ver `data/chapecoense-br-data.js`—, y `fluminense-br` 2024 tenía 2
-  acordeones de Formato Simplificado cuyos ítems no sumaban contra su propia fila por redondeo del
-  documento, ajustados). El resto son categorizaciones legítimas verificadas contra el documento
-  fuente, ver el archivo para el detalle. Los 10
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 8 P3 y 86
+  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-25, Versión 221). ~40 de
+  esos 86 son de las 4 sesiones de onboarding de PDF pendientes (Versiones 217/219/220/221) —
+  categorizaciones legítimas verificadas contra el documento fuente, y un puñado de P0 reales
+  encontrados y corregidos en la integración de cada tanda (típicamente `officialTotalExpenses`
+  incluyendo por error un ítem `exceptional_items` que el motor excluye de ese check). El detalle
+  club por club de qué se silenció y por qué está en `Admin/CHANGELOG.md`, entrada de cada versión,
+  y en el propio `tools/audit-ignore.json`. Los 10
   `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
   Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
   "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
@@ -227,7 +209,7 @@ se reescribe, no se acumula.
   OJO CON LA COBERTURA: los clubes se cargan por demanda, y estas 2 funciones
   solo pueden revisar lo que está en memoria, así que una carga normal de la
   página audita SOLO Boca. Para auditar TODO hay que
-  forzar la carga de los 85 clubes: abrí `?audit=1` o corré `auditAll()` en la
+  forzar la carga de los 92 clubes: abrí `?audit=1` o corré `auditAll()` en la
   consola. CORRELO ANTES DE CADA PUSH QUE TOQUE DATOS, es lo único que revisa
   los clubes que nadie está mirando. Desde la Versión 160 los carga en tandas
   paralelas de 25 y no de a uno, para que siga siendo viable correrlo cuando los
@@ -241,7 +223,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 85 páginas, el índice y `sitemap.xml` los GENERA
+  Las 92 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -518,17 +500,17 @@ completo está en `Admin/CONVENCIONES.md`.
   pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
   sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
-  Los 85 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
+  Los 92 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
   sitio y siguen viajando en el deploy.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 85
+  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 92
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 85 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 92 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
 ---
 
@@ -547,7 +529,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 85 clubes, 168 ejercicios, 8 países.
+TOTAL: 92 clubes, 178 ejercicios, 8 países.
 
 ARGENTINA (16)
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
@@ -567,7 +549,7 @@ ARGENTINA (16)
   Unión                          4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Vélez Sarsfield                11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 
-BRASIL (25)
+BRASIL (27)
   América Mineiro       3 ejercicios (2023 a 2025), balance, BRL
   Athletico Paranaense  2 ejercicios (2024 a 2025), balance, BRL
   Atlético Goianiense   1 ejercicio (2025), balance, BRL
@@ -582,11 +564,13 @@ BRASIL (25)
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
   Grêmio                1 ejercicio (2024), balance, BRL
+  Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
   Ituano                1 ejercicio (2024), balance, BRL
   Mirassol              1 ejercicio (2024), balance, BRL, sin deuda/caja
   Operário Ferroviário  2 ejercicios (2024 a 2025), balance, BRL
   Palmeiras             2 ejercicios (2024 a 2025), balance, BRL
+  Ponte Preta           3 ejercicios (2022 a 2024), balance, BRL
   RB Bragantino         2 ejercicios (2019, 2024), balance, BRL
   Santos                2 ejercicios (2024 a 2025), balance, BRL
   São Paulo             2 ejercicios (2023 a 2024), balance, BRL
@@ -594,13 +578,15 @@ BRASIL (25)
   Vitória               1 ejercicio (2025), balance, BRL
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
 
-COLOMBIA (8)
+COLOMBIA (10)
   América de Cali         1 ejercicio (2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
   Deportivo Cali          1 ejercicio (2025), balance, COP
+  Deportivo Pereira       1 ejercicio (2025), balance, COP
   Envigado FC             1 ejercicio (2025), balance, COP
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
+  Millonarios             1 ejercicio (2025), balance, COP
   Once Caldas             1 ejercicio (2025), balance, COP, sin deuda/caja
   Unión Magdalena         1 ejercicio (2018), balance, COP
 
@@ -611,7 +597,7 @@ ALEMANIA (5)
   VfB Stuttgart        2 ejercicios (2023 a 2024), balance, EUR
   Werder Bremen        3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
 
-ESPAÑA (15)
+ESPAÑA (18)
   Athletic Club       1 ejercicio (2024/2025), balance, EUR
   Atlético de Madrid  1 ejercicio (2024/2025), balance, EUR
   CA Osasuna          2 ejercicios (2021/2022, 2023/2024), balance, EUR
@@ -621,9 +607,12 @@ ESPAÑA (15)
   FC Barcelona        1 ejercicio (2024/2025), balance, EUR
   Getafe CF           2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Girona FC           2 ejercicios (2019/2020, 2024/2025), balance, EUR
+  Rayo Vallecano      1 ejercicio (2024/2025), balance, EUR
   RCD Espanyol        2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  RCD Mallorca        1 ejercicio (2024/2025), balance, EUR
   Real Betis          1 ejercicio (2024/2025), balance, EUR
   Real Madrid         1 ejercicio (2024/2025), balance, EUR
+  Real Oviedo         1 ejercicio (2024/2025), balance, EUR
   Sevilla FC          1 ejercicio (2024/2025), balance, EUR
   Valencia CF         1 ejercicio (2024/2025), balance, EUR
   Villarreal CF       1 ejercicio (2023/2024), balance, EUR

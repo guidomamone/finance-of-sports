@@ -92,7 +92,7 @@ aunque todavía no esté cargado al sitio. No cuenta un documento confirmado per
 - [Brasil](_indice/Brasil.md) — 43 clubes, 43 con documento — Chequeo más antiguo: 2026-09-12
 - [Chile](_indice/Chile.md) — 16 clubes, 5 con documento — Chequeo más antiguo: 2026-09-12
 - [China](_indice/China.md) — 17 clubes, 1 con documento — Chequeo más antiguo: 2026-09-17
-- [Colombia](_indice/Colombia.md) — 20 clubes, 18 con documento — Chequeo más antiguo: 2026-09-12
+- [Colombia](_indice/Colombia.md) — 20 clubes, 18 con documento — Chequeo más antiguo: 2026-09-13
 - [Corea del Sur](<_indice/Corea del Sur.md>) — 12 clubes, 4 con documento — Chequeo más antiguo: 2026-09-17
 - [Costa Rica](<_indice/Costa Rica.md>) — 3 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Croacia](_indice/Croacia.md) — 10 clubes, 9 con documento — Chequeo más antiguo: 2026-09-17

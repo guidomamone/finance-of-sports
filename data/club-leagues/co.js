@@ -31,4 +31,8 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Verificado el 2026-09-24 (onboarding, Versión 217) contra "2018 Categoría Primera B season"
   // (Wikipedia): subcampeón del Torneo Águila 2018, ascendido a Primera A para 2019.
   'unionmagdalena-co': { 2018: 'co-primeraB' },
+  // Verificado el 2026-09-25 (onboarding, Versión 221) — se enfrentaron entre sí en la Primera A
+  // 2025 (Apertura y Clausura), confirma que los 2 jugaron esa categoría ese año.
+  'millonarios-co': { 2025: 'co-primeraA' },
+  'deportivopereira-co': { 2025: 'co-primeraA' },
 });
