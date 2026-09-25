@@ -32,3 +32,8 @@ OCR de la página 2 del PDF 2024/25: `CPFC 2010 Limited / Contents of the Consol
 Statements for the Year Ended 30 June 2025`. Entidad y período confirmados, no asumidos.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/crystalpalace-gb-data.js`
+  (clubId `crystalpalace-gb`). Tie-out exacto. Premier League los 2 ejercicios (10° y 12°,
+  primera FA Cup de la historia del club en 2024-25). `brandColor` sin resolver — franjas
+  rojo/azul desde 1973, sin predominancia declarada, mismo caso que Levante (ver
+  `Admin/dudas-por-club.md`).

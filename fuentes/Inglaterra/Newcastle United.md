@@ -23,3 +23,9 @@ OCR de la página 2: `Newcastle United Limited / Financial statements for the ye
 Company information`.
 
 - Último chequeo: 2026-09-13.
+- **CARGADO al sitio (2026-09-25)**: único ejercicio disponible, 2024-25, `data/newcastle-gb-data.js`
+  (clubId `newcastle-gb`). Tie-out exacto. Premier League. Incluye 2 ganancias no operativas por
+  reorganización societaria intra-grupo (venta de una subsidiaria y sale-and-leaseback de mejoras
+  del estadio a una sociedad hermana, PZ Holdings Ltd) — la valuación del sale-and-leaseback está
+  sujeta a revisión de la Premier League y podría ajustarse retroactivamente (ver
+  `Admin/dudas-por-club.md`).

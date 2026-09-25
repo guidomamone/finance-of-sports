@@ -28,3 +28,7 @@ OCR de la página 2 del PDF 2024/25: `Leeds United Football Club Limited / Conso
 Statements / Year ended 30 June 2025`. Entidad y período confirmados, no asumidos.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/leeds-gb-data.js`
+  (clubId `leeds-gb`). Tie-out exacto. Championship los 2 ejercicios (verificado con WebSearch y
+  contra el propio documento) — el ascenso a Premier League es resultado del ejercicio 2025, para
+  la temporada 2025-26, no cargada.

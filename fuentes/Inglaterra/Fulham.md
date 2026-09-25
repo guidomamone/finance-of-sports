@@ -26,3 +26,8 @@ OCR de la página con el índice del PDF 2024/25: `INDEPENDENT AUDITOR'S REPORT 
 FULHAM FOOTBALL CLUB LIMITED`. Entidad confirmada, no asumida.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/fulham-gb-data.js`
+  (clubId `fulham-gb`). Premier League los 2 ejercicios. Cuentas STANDALONE (no de grupo): el
+  CAPEX/financiamiento del Riverside Stand vive en una compañía hermana, fuera de este documento.
+  "Gate Receipts" 2025 tiene un valor forzado por el total (posible error de OCR, ver
+  `Admin/dudas-por-club.md`).

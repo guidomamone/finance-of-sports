@@ -1323,6 +1323,74 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   ya visto en otros documentos de este tipo. Vale la pena confirmar contra el PDF original si se
   quiere citar este ejercicio con más certeza.
 
+## Newcastle United (Inglaterra) — onboarding 2024-25, sesión 2026-09-25
+
+- **% exacto de propiedad PIF/Reuben Brothers tras la salida de Amanda Staveley**: el balance no lo
+  declara (solo dice que PIF es la "ultimate controlling party"), solo prensa secundaria confirma
+  ~85%/~15%. Si Guido quiere precisión legal, habría que chequear el registro de PSC (persons with
+  significant control) de Companies House para Newcastle United Limited.
+- **"Profit on disposal of tangible fixed assets" (£128,975m, sale-and-leaseback de St James' Park a
+  PZ Holdings Ltd) está sujeto a revisión de la Premier League**: la Nota 3 del documento dice
+  explícito que si la valuación de mercado de la Premier League difiere de los £172,1m usados, "the
+  directors may need to adjust the sales price which would result in a profit or loss on disposals
+  reported in the 2026 accounts" — este número podría cambiar retroactivamente en el balance 2025-26.
+
+## Crystal Palace (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **`brandColor` sin resolver**: camiseta a franjas verticales rojo y azul desde 1973 ("Red and
+  Blues"), sin que ninguna fuente consultada (footylogos, Wikipedia) declare cuál de los dos
+  predomina — mismo caso que Levante. Quedó `brandColor:null`. Candidatos si Guido quiere elegir:
+  azul `#1B458F`/`#0055A5` o rojo `#C4122E`/`#EE2E24` (distintas fuentes dan valores levemente
+  distintos, siempre en la misma familia).
+- **`firstYear` de la gestión Parish/Blitzer-Harris/Textor**: no verificado con certeza (Blitzer/
+  Harris entraron ~2015, Textor como mayoritario ~2021) — se usó un solo `gestionId` sin firstYear
+  preciso por prudencia.
+
+## Fulham (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **"Gate Receipts" 2025 con valor forzado por el total**: la transcripción OCR trae un número que no
+  reconcilia contra Turnover total menos las otras 4 líneas — se usó el valor matemáticamente forzado
+  (15,010), consistente con un patrón de error OCR 1↔4 ya visto en el documento 2023-24 del mismo
+  club. Confirmar contra el PDF original, pág. 24, columna 2025, antes de citar esta cifra con más
+  confianza.
+- **`grossDebt`**: la única partida "deuda-like" es un préstamo del dueño sin interés y "repayable
+  on demand" (Amounts due to immediate parent company: £44,398m en 2024, £0 en 2025, convertido a
+  equity). Se usó tal cual, pero es discutible tratarlo como deuda financiera real dado que no
+  devenga interés — decisión pendiente de Guido si se quiere un criterio distinto para este tipo de
+  préstamo intra-grupo.
+- **"Compensation" (£0,873m 2024 / £4,013m 2025, creciendo)**: "sums from collaboration agreements
+  with other Clubs and remediation of lost income" — categorizado como `other_income` a falta de
+  mejor opción. Vale la pena confirmar si está relacionado a la obra del Riverside Stand.
+
+## Leeds United (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **Amortización de intangibles no-jugador con reversión de "negative goodwill" en 2025**: en 2024 la
+  amortización no-jugador (goodwill/trademarks/software) suma +£0,231457m (normal), pero en 2025 la
+  reversión de negative goodwill (-£0,921580m) supera esa suma y da un CRÉDITO neto de -£0,651431m.
+  Se absorbió en el catch-all `other_expenses` en vez de crear una línea con signo positivo
+  (antinatural en un array de gastos) — ¿está bien este criterio para casos futuros con negative
+  goodwill?
+- **Atribución de gestión en FY2024 (cambio de dueño a mitad de año)**: Aser/Radrizzani controlaron
+  ~3 meses, 49ers Enterprises los ~9 restantes y al cierre — se usó un solo `gestionId` (49ers) en
+  vez de partir el ejercicio en dos gestiones. ¿Confirma este criterio?
+
+## Chelsea (Inglaterra) — onboarding 2024-25, sesión 2026-09-25
+
+- **"Cost of sales" (£428,673m) sin desglose de wages vs. resto**: a diferencia de Everton/Arsenal,
+  Chelsea no tiene una línea "Staff costs" propia en ninguna nota. Se cargó el total a `wages_squad`
+  por ser la aproximación más fiel al texto narrativo ("principally... increased cost of sales
+  including player wages"), pero es discutible — la Nota 8 "Employees" da un costo total de personal
+  del grupo (£359,265m) que mezcla plantel (133 personas) con administración/comercial (929
+  personas), sin costo por área, así que tampoco resuelve el problema con precisión.
+- **Gap no explicado (£1,646m, 0,7%) entre el P&L y las notas de amortización/deterioro de pases**:
+  el P&L imprime -224,344 para esa columna combinada; la Nota 6 desglosa amortización (213,893) +
+  deterioro (12,097) = 225,990. Se usó el número del P&L porque es el único que hace cerrar el
+  resultado exacto — el origen de la diferencia no está explicado en el documento.
+- **`grossDebt`**: Chelsea no tiene ninguna línea de deuda bancaria — se usó `grossDebt:0`, excluyendo
+  los £396,135m de "transfer fee payables" (trade creditors por pases) siguiendo el criterio estricto
+  de la sección 14 del skill. Muchos análisis de finanzas de fútbol tratan esos payables como deuda
+  económica real — decisión pendiente si Guido prefiere ese criterio alternativo.
+
 ## Levante UD (España) — onboarding 2024-25, sesión 2026-09-25
 
 - **`brandColor` sin resolver**: el kit es a mitades verticales azul y granate ("azulgrana", mismo

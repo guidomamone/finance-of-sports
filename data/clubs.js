@@ -250,6 +250,15 @@ const clubs = {
   'bournemouth-gb': { id:'bournemouth-gb', name:'AFC Bournemouth Limited', displayName:'AFC Bournemouth', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D6171C' },
   'brentford-gb': { id:'brentford-gb', name:'Brentford FC Ltd', displayName:'Brentford', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E30613' },
   'burnley-gb': { id:'burnley-gb', name:'Burnley FC Holdings Limited', displayName:'Burnley', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'08-01', sport:'futbol', brandColor:'#5F0041' },
+  // 5 clubes ingleses más (onboarding 2026-09-25, mismo pool de PDF transcriptos). brandColor
+  // verificado contra footylogos.com/chelseafc.com, salvo Crystal Palace (ver duda en
+  // Admin/dudas-por-club.md: franjas rojo/azul desde 1973, sin predominancia declarada, mismo caso
+  // que Levante) y Fulham (camiseta blanca, mismo bucket que River/Vélez/Sevilla/Real Madrid).
+  'newcastle-gb': { id:'newcastle-gb', name:'Newcastle United Limited', displayName:'Newcastle United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#231F20' },
+  'crystalpalace-gb': { id:'crystalpalace-gb', name:'CPFC 2010 Limited', displayName:'Crystal Palace', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'fulham-gb': { id:'fulham-gb', name:'Fulham Football Club Limited', displayName:'Fulham', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'leeds-gb': { id:'leeds-gb', name:'Leeds United Football Club Limited', displayName:'Leeds United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'chelsea-gb': { id:'chelsea-gb', name:'Chelsea FC Holdings Limited', displayName:'Chelsea', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0033A0' },
   // 3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
   // que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
   // cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS

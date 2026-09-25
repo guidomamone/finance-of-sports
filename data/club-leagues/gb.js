@@ -55,4 +55,14 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'bournemouth-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'brentford-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'burnley-gb':     { 2024: 'gb-premierleague', 2025: 'gb-championship' },
+  // 5 clubes más: Newcastle, Crystal Palace, Fulham y Chelsea jugaron Premier League en todos sus
+  // ejercicios cargados (confirmado en el propio documento de cada uno). Leeds es la excepción:
+  // Championship los 2 ejercicios cargados (2023-24 y 2024-25), ascendió a Premier League recién
+  // para la temporada 2025-26 (no cargada), confirmado con WebSearch y en el propio documento
+  // ("would remain in the Championship for the 2024/25 season").
+  'newcastle-gb':      { 2025: 'gb-premierleague' },
+  'crystalpalace-gb':  { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  'fulham-gb':         { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  'leeds-gb':          { 2024: 'gb-championship',  2025: 'gb-championship' },
+  'chelsea-gb':        { 2025: 'gb-premierleague' },
 });
