@@ -15,11 +15,11 @@ completo.
 - [Borussia Dortmund](<../Alemania/Borussia Dortmund.md>) — 7 ejercicios reales (2018/19-2024/25), Geschäftsbericht completo, sin cargar aún — Último chequeo: 2026-09-17
 - [Bayern Munich](<../Alemania/Bayern Munich.md>) — 4 ejercicios reales vía comunicado de la Junta, sin cargar aún — Último chequeo: 2026-09-17
 - [RB Leipzig](<../Alemania/RB Leipzig.md>) — 12 ejercicios reales, serie completa 2014-2025, sin cargar aún — Último chequeo: 2026-09-17
-- [TSG Hoffenheim](<../Alemania/TSG Hoffenheim.md>) — 16 ejercicios reales, serie completa 2009-2025, sin cargar aún — Último chequeo: 2026-09-17
+- [TSG Hoffenheim](<../Alemania/TSG Hoffenheim.md>) — CARGADO (Ejercicios 2024, 2025), 16 ejercicios reales disponibles en el archivo (serie completa 2009-2025), 14 sin cargar — Último chequeo: 2026-09-25
 - [Bayer Leverkusen](<../Alemania/Bayer Leverkusen.md>) — dead-end estructural (exención §264 HGB, socio único Bayer AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
 - [VfL Wolfsburg](<../Alemania/VfL Wolfsburg.md>) — dead-end estructural (exención §264 HGB, socio único Volkswagen AG), solo el agregado de la DFL — Último chequeo: 2026-09-17
-- [Hamburger SV](<../Alemania/Hamburger SV.md>) — 4 ejercicios reales de 2 entidades (Fußball AG & Co. KGaA + e.V. matriz, no confundir) — Último chequeo: 2026-09-17
-- [Borussia Mönchengladbach](<../Alemania/Borussia Mönchengladbach.md>) — 4 ejercicios reales (2021-2024), confirmado real filer con serie completa desde 2006, sin cargar aún — Último chequeo: 2026-09-17
+- [Hamburger SV](<../Alemania/Hamburger SV.md>) — CARGADO (Ejercicios 2024, 2025, entidad Fußball AG), 2 ejercicios más del e.V. matriz sin cargar (no corresponde, ver nota) — Último chequeo: 2026-09-25
+- [Borussia Mönchengladbach](<../Alemania/Borussia Mönchengladbach.md>) — CARGADO (Ejercicios 2023, 2024, año calendario), 2 ejercicios más disponibles (2021, 2022) sin cargar — Último chequeo: 2026-09-25
 - [Werder Bremen](<../Alemania/Werder Bremen.md>) — CARGADO (Ejercicios 2023, 2024, 2025) — Último chequeo: 2026-09-22
 - [Eintracht Frankfurt](<../Alemania/Eintracht Frankfurt.md>) — CARGADO (Ejercicios 2024, 2025) — Último chequeo: 2026-09-22
 - [VfB Stuttgart](<../Alemania/VfB Stuttgart.md>) — CARGADO (Ejercicios 2023, 2024, año calendario) — Último chequeo: 2026-09-22

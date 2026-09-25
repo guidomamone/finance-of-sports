@@ -54,4 +54,27 @@ bajar los ejercicios 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
 2007 y 2006 (15 años más), no bajados por priorización de tiempo dentro de esta sesión. Mismo
 procedimiento que los 4 ya bajados.
 
-- Último chequeo: 2026-09-17.
+## Carga a `data/monchengladbach-de-data.js` (sesión 2026-09-25)
+
+Cargados los 2 ejercicios más recientes YA BAJADOS: 2023 (`jahresabschluss-2023.md`) y 2024
+(`jahresabschluss-2024-completo.md`) — se usó el archivo `-completo`, NO el
+`-aufsichtsratsbericht-nachtrag` (confirmado: es el informe narrativo del consejo de vigilancia, no
+el balance, tal cual ya decía la nota de arriba). Color de marca: `#00963A` (verde, footylogos.com),
+verificado 2026-09-25.
+
+Ejercicio CALENDARIO (01/01-31/12), a diferencia del resto de los clubes alemanes ya cargados
+(01/07-30/06) — usa `fxRef` contra `EUR@2023-12-31`/`EUR@2024-12-31` (ya existían en `FX_CLOSE`).
+
+**La tabla de GuV de los 2 ejercicios llegó INCOMPLETA en la transcripción** (saltan varias filas
+completas: Umsatzerlöse, Sonstige betriebliche Erträge, Abschreibungen, Sonstige betriebliche
+Aufwendungen, resultado financiero y Steuern vom Einkommen no sobrevivieron como filas de tabla).
+Se reconstruyó cruzando el Lagebericht (que narra el movimiento interanual de cada partida en TEUR)
+y el Konzern-Anlagenspiegel (que sí sobrevivió completo, con la columna "Abschreibung des
+Geschäftsjahres" separando Spielerwerte de Sachanlagen/Konzessionen). Quedó una duda real sin
+resolver — la separación entre "Sonstige betriebliche Erträge" y el resultado financiero neto (ver
+comentario de cabecera de `data/monchengladbach-de-data.js` y `Admin/dudas-por-club.md`).
+
+Quedan 2 ejercicios ya bajados sin cargar (2021, 2022) y 15 años más sin bajar (2006-2020, ver
+sección de arriba).
+
+- Último chequeo: 2026-09-25.

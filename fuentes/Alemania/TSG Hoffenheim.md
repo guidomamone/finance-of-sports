@@ -42,11 +42,30 @@ Jahresabschluss individual para los 3 ejercicios más antiguos (sin Konzern toda
 Fußball-Spielbetriebs GmbH, Sinsheim — Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum
 30.06.2025" con dictamen del auditor referido explícitamente al "Konzern" (grupo, sociedad + filiales).
 
-## Nada pendiente
+## Nada pendiente en sourcing
 
 Serie completa. El bloqueo de tooling mencionado en una nota anterior de esta misma sesión (el
 Browser pane sin renderizar, que impedía el click "real" que exige la Sicherheitsabfrage de
 Unternehmensregister) se resolvió al abrir una pestaña nueva del navegador — ver
 `fuentes/Alemania/_notas-generales.md` sección 1 y 5.
 
-- Último chequeo: 2026-09-17.
+## Carga a `data/hoffenheim-de-data.js` (sesión 2026-09-25)
+
+Cargados los 2 ejercicios más recientes: 2023/24 (clave 2024) y 2024/25 (clave 2025), los 2
+Konzernabschluss. Color de marca: `#1966A6` (azul, footylogos.com), verificado 2026-09-25.
+
+La tabla de GuV de `konzernabschluss-2023-24.md` llegó con las columnas de la Bilanz-Passiva y de la
+Konzern-GuV desalineadas/intercaladas por el proceso de conversión PDF→Markdown — se reconstruyó
+cruzando el Konzernanhang y el Lagebericht (ver comentario de cabecera de
+`data/hoffenheim-de-data.js` para el detalle línea por línea). `konzernabschluss-2024-25.md` llegó
+con la tabla perfectamente alineada, y su columna comparativa (2023/24) coincidió EXACTA con la
+reconstrucción hecha a mano — confirma que estaba bien.
+
+Estructura de capital con una "atypisch stille Beteiligung" (participación societaria atípica) de
+Dietmar Hopp que complica la definición de `officialPAT` (3 líneas de resultado distintas en el
+Konzern-GuV) — ver duda abierta en `Admin/dudas-por-club.md`.
+
+Quedan 14 ejercicios sin cargar (2009/10 a 2022/23) — la serie más profunda del proyecto, con mucho
+margen para una sesión futura que quiera profundizar la historia de este club.
+
+- Último chequeo: 2026-09-25.

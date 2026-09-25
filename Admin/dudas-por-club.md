@@ -1436,3 +1436,50 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   que es correcto (no un hueco de categorización) al no encontrar en ningún jaarverslag/jaarrekening
   una línea de colegio, polideportivo o cuota de socio — son sociedades anónimas/holdings (N.V./B.V.),
   no clubes-asociación con membresía que paga cuota.
+
+## TSG Hoffenheim (Alemania) — onboarding 2023/24-2024/25, sesión 2026-09-25
+
+- **`officialPAT` con la "atypisch stille Beteiligung" de Dietmar Hopp**: el Konzern-GuV tiene 3
+  líneas de resultado final, no 1 (14. Konzernjahresüberschuss, resultado consolidado total; 15. auf
+  andere Gesellschafter entfallender Gewinn/Verlust, la porción asignada al partner silencioso vía la
+  Zweckgesellschaft; 16. Konzernverlust, el que se traslada a la Bilanz). Se cargó `officialPAT` =
+  línea 16 (Konzernverlust, el cierre real de la Bilanz), con `tax` absorbiendo TODO lo "por debajo
+  de la línea" (Steuern vom Einkommen + sonstige Steuern + la asignación al partner silencioso + la
+  asignación a otros socios) — mismo criterio que ya usa Stuttgart para su NCI real. El precedente de
+  Augsburg/Eintracht Frankfurt (usar el resultado ANTES de nicht beherrschende Anteile) no calzaba
+  acá porque la asignación al partner silencioso no es un simple % de propiedad de una subsidiaria,
+  es una cláusula contractual de absorción de pérdidas que por sí sola transforma un resultado
+  operativo+financiero de -23,4M en un consolidado de +1,3M (2023/24). ¿Preferís en cambio usar la
+  línea 14 (Konzernjahresüberschuss, antes de toda asignación a terceros, criterio Augsburg/
+  Frankfurt)? Ver el comentario extenso en `data/hoffenheim-de-data.js`.
+
+## Hamburger SV (Alemania) — onboarding 2023/24-2024/25, sesión 2026-09-25
+
+- **Tabla de GuV/Bilanz garbled en los 2 ejercicios**: la conversión PDF→Markdown de
+  `fussball-ag-jahresabschluss-2023-24.md`/`-2024-25.md` mezcló dígitos y separadores de miles en
+  varias filas clave (ej. "10.ErgebnisnachSteuem 0080[.......247327649"). Se reconstruyó cruzando el
+  Lagebericht ("iii) Ertragslage", que narra cada componente en TEUR) contra los pocos números
+  limpios que sobrevivieron (Umsatzerlöse, Materialaufwand, Personalaufwand, Jahresüberschuss). El
+  campo `tax` de cada año es un PLUG (Steuern vom Einkommen + sonstige Steuern combinados, sin poder
+  separarlos — la fila de impuesto a las ganancias quedó ilegible en los 2 ejercicios) calculado por
+  diferencia contra el Jahresüberschuss real impreso. `grossDebt`/`cash` NO se cargaron para ningún
+  año porque el Bilanz-Passiva/Aktiva llegó igual de garbled y no se pudo reconstruir con confianza.
+  Si en algún momento se consigue releer el PDF original (páginas 4-6 de cada ejercicio), valdría la
+  pena confirmar el desglose exacto de Steuern vom Einkommen/sonstige Steuern y cargar grossDebt/cash.
+  Ver el comentario extenso en `data/hamburgersv-de-data.js`.
+
+## Borussia Mönchengladbach (Alemania) — onboarding 2023-2024, sesión 2026-09-25
+
+- **Separación entre "Sonstige betriebliche Erträge" y el resultado financiero neto (Finanzergebnis)
+  sin poder confirmarse**: la tabla de GuV de `jahresabschluss-2023.md`/`jahresabschluss-2024-
+  completo.md` no incluye estas 2 filas (ni ninguna cifra de Zinsen/Finanzergebnis), y el
+  Lagebericht de ninguno de los 2 años las menciona en prosa (a diferencia de Werder/Köln/Hoffenheim/
+  Hamburgo, que sí narran ambas). Por diferencia contra "11. Ergebnis nach Steuern" (el único ancla
+  exacta que sobrevivió), el COMBINADO de las 2 partidas da TEUR ~615 (2023) y TEUR ~104 (2024) —
+  montos chicos (0,3%/0,06% del revenue), pero la separación entre las 2 es una incógnita real. Se
+  cargó el combinado ENTERO como revenue "Sonstige betriebliche Erträge" (other_income) y
+  `netInterest:0` para los 2 años, documentado como simplificación reconocida (Borussia carga ~62-63M€
+  de deuda bancaria, así que es probable que el Finanzergebnis real sea negativo, compensado por una
+  "Sonstige betriebliche Erträge" positiva de magnitud similar). Si se consigue releer el PDF original
+  (la página de la GuV, entre Personalaufwand y "11. Ergebnis nach Steuern"), valdría la pena separar
+  los 2 componentes con precisión. Ver el comentario extenso en `data/monchengladbach-de-data.js`.
