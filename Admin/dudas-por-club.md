@@ -1399,3 +1399,18 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   (rojo/azul en franjas, sin desempate posible con las 4 reglas del skill). Quedó `brandColor:null`
   en `data/clubs.js`. Candidatos de hex si Guido quiere elegir uno: azul `#005CA5` / granate `#B4053F`
   (footylogos.com).
+
+## Brighton & Hove Albion (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **Restatement del ejercicio 2024 (impuesto diferido), ¿usar la cifra original o la restated?** El
+  documento del ejercicio 2024/25 (Nota 27, "Prior period adjustment") reconoce retroactivamente un
+  activo por impuesto diferido de £22.897k que el balance de 2023/24 no había reconocido, lo que sube
+  el resultado neto de ESE ejercicio de £56.065m (como se depositó originalmente en Companies House,
+  19/12/2024) a £73.369m (columna "2024 (As restated)" del documento de 2025). Se cargó la cifra
+  ORIGINAL (56.065), tal cual el propio documento del ejercicio 2023/24 la declaró — mismo criterio
+  de "cada ejercicio usa su propio documento primario" que ya rige para las reexpresiones por
+  inflación de los balances argentinos, aunque este caso es distinto (una corrección de error
+  contable real, no una reexpresión por poder adquisitivo). La corrección NO afecta Turnover/
+  Operating expenses/Player trading/Interest, solo Tax y el resultado neto. ¿Preferís reflejar la
+  cifra restated (73.369) en su lugar, ya que es la que BDO LLP considera la correcta con
+  retrospectiva completa? Ver el comentario extenso en `data/brighton-gb-data.js`.

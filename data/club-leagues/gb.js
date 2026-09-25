@@ -65,4 +65,8 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fulham-gb':         { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'leeds-gb':          { 2024: 'gb-championship',  2025: 'gb-championship' },
   'chelsea-gb':        { 2025: 'gb-premierleague' },
+  // Brighton & Hove Albion: Premier League los 2 ejercicios, confirmado por el propio documento de
+  // cada ejercicio (Strategic Report: "finishing in 11th position" en 2023/24, "finishing in 8th
+  // position" en 2024/25).
+  'brighton-gb':       { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
 });

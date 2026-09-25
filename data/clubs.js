@@ -259,6 +259,7 @@ const clubs = {
   'fulham-gb': { id:'fulham-gb', name:'Fulham Football Club Limited', displayName:'Fulham', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'leeds-gb': { id:'leeds-gb', name:'Leeds United Football Club Limited', displayName:'Leeds United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'chelsea-gb': { id:'chelsea-gb', name:'Chelsea FC Holdings Limited', displayName:'Chelsea', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0033A0' },
+  'brighton-gb': { id:'brighton-gb', name:'The Brighton and Hove Albion Football Club Limited', displayName:'Brighton', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#005DAA' },
   // 3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
   // que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
   // cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS
