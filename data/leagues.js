@@ -92,6 +92,7 @@ const COUNTRIES = {
   DE: { name:'Alemania',  key:'country.DE', flag:'🇩🇪', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
   GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
+  HR: { name:'Croacia',   key:'country.HR', flag:'🇭🇷', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
   NL: { name:'Países Bajos', key:'country.NL', flag:'🇳🇱', region:'europa' },
@@ -155,6 +156,11 @@ const LEAGUES = {
   // de su ascenso vía playoff para 2025/26): mismo criterio que ar-primeranacional/br-serieB/
   // de-2bundesliga/es-segunda, el id nombra el escalón.
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
+  // Croacia (onboarding de Dinamo Zagreb/Hajduk Split/Rijeka, 2026-09-25): ejercicio CALENDARIO
+  // (cierra 31/12), a diferencia de la temporada de la liga en sí (jul-jun) — el id nombra el
+  // escalón, no la temporada. Nombre sin sponsor (regla de cabecera de este archivo): la liga se
+  // llama comercialmente "SuperSport HNL" hoy, pero el nombre de la competencia es HNL.
+  'hr-hnl':            { name:'HNL',                    full:'Hrvatska nogometna liga',             country:'HR', sport:'futbol', tier:1 },
   'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1 },
   'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1 },
   // Países Bajos (onboarding de Ajax/PSV/Feyenoord/AZ, esta sesión): temporada jul-jun, cierra 30/6,

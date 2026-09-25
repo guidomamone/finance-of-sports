@@ -1511,3 +1511,17 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Los otros 3 checks (Expenses de los 2 años, PAT 2024) sí cierran exacto. Documentado en el
   comentario de cabecera de `data/bayernmunich-de-data.js` para que ninguna sesión futura lo confunda
   con un bug — la pregunta de si conseguir un documento con más precisión sigue abierta arriba.
+
+## Croacia (Dinamo Zagreb, Hajduk Split, Rijeka) — onboarding 2024, país nuevo, sesión 2026-09-25
+
+- **"Članarine" (cuotas de socios) agrupado dentro de "Prihodi od ulaznica" (ingresos de entradas)**:
+  la plantilla oficial de reporte financiero que exige la HNS (Federación de Fútbol de Croacia) pone
+  las cuotas de socios como una sub-línea DENTRO del bloque de ingresos de entradas/abonos, no como
+  categoría separada — a diferencia del criterio argentino, donde "Cuotas Sociales" es un bloque
+  propio, independiente de la recaudación de entradas. Se mapeó como `member_dues` de todos modos
+  (traducción literal del rótulo), pero es una categorización con incertidumbre genuina: ¿la HNS la
+  agrupa ahí porque conceptualmente el club la trata como una forma de acceso al estadio (una
+  membresía que incluye entrada), o es solo una cuestión de formato del formulario? Aparece en Dinamo
+  Zagreb (888.330€, ver `data/dinamozagreb-hr-data.js`) y probablemente en los otros 2 clubes croatas
+  con la misma plantilla — si se carga un 4to club croata en el futuro, confirmar si el patrón se
+  repite antes de asumir que es el criterio fijo del país.

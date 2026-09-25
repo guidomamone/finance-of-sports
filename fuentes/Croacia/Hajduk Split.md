@@ -27,4 +27,6 @@
   constante `DEFAULT_URL` (formato `hajduk.hr/sadrzaj/pdf/<archivo real>.pdf`) para bajar el PDF
   de verdad con `curl`. Confirmado con los 8 ejercicios.
 - **Pendiente**: nada más allá de lo anotado arriba (2017 sin PDF, 2021 corrupto de origen).
+- **CARGADO al sitio (2026-09-25)**: ejercicio 2024, `data/hajduksplit-hr-data.js` (clubId
+  `hajduksplit-hr`). Tie-out exacto.
 - Último chequeo: 2026-09-17.

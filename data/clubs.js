@@ -295,6 +295,16 @@ const clubs = {
   'psv-nl': { id:'psv-nl', name:'PSV N.V.', displayName:'PSV', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
   'feyenoord-nl': { id:'feyenoord-nl', name:'Feyenoord Rotterdam N.V.', displayName:'Feyenoord', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
   'az-nl': { id:'az-nl', name:'AZ Holding B.V.', displayName:'AZ', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#CA0008' },
+  // Croacia (onboarding 2026-09-25): PAÍS NUEVO, 3 clubes de HNL, ejercicio 2024 (año CALENDARIO,
+  // fiscalYearStart:'01-01' — confirmado en cada documento fuente: "za godinu koja završava na dan
+  // 31. prosinca 2024."). reportingCurrency:'EUR' (Croacia adoptó el euro el 1/1/2023, el ejercicio
+  // 2024 es 100% en euros). brandColor verificado vía schemecolor.com/brandpalettes (Dinamo: azul de
+  // su escudo/camiseta, "Hermes" en la paleta; Hajduk: camiseta blanca dominante con acento azul,
+  // mismo criterio que River — se usó el azul #21409A de su indumentaria; Rijeka: camiseta
+  // blanca/azul con la cruz celeste característica, se usó ese azul #38A1CE).
+  'dinamozagreb-hr': { id:'dinamozagreb-hr', name:'Građanski nogometni klub Dinamo', displayName:'Dinamo Zagreb', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1D3A8D' },
+  'hajduksplit-hr': { id:'hajduksplit-hr', name:'HNK Hajduk s.d.d.', displayName:'Hajduk Split', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#21409A' },
+  'rijeka-hr': { id:'rijeka-hr', name:'Hrvatski nogometni klub Rijeka s.d.d.', displayName:'Rijeka', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#38A1CE' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

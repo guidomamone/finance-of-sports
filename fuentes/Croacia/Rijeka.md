@@ -21,3 +21,8 @@
 - Último chequeo: 2026-09-22 (el informe combinado apareció como archivo suelto en `~/Downloads`,
   dejado ahí por un subagente de sourcing anterior; se movió a esta carpeta y se transcribió recién
   ahora — ver CHANGELOG).
+- **CARGADO al sitio (2026-09-25)**: ejercicio 2024, `data/rijeka-hr-data.js` (clubId `rijeka-hr`).
+  Se usó el informe COMBINADO (HNK Rijeka s.d.d. + Stadion Kantrida d.o.o., la sociedad que
+  administra el estadio y factura las entradas) en vez del individual, exigido desde octubre de
+  2024 por el Pravilnik o licenciranju de la HNS — el individual habría subestimado el revenue
+  real del club (las entradas se facturan a través de la subsidiaria). Tie-out exacto.
