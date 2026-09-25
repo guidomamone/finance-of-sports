@@ -120,7 +120,7 @@ Ninguna sesión de Claude Code puede crear cuentas ni tocar DNS por su cuenta �
    — NUNCA se trackea):
    ```
    export RESEND_API_KEY="re_xxxxxxxx"
-   export OUTREACH_FROM_EMAIL="Guido Mamone <contacto@outreach.financeofsports.com>"
+   export OUTREACH_FROM_EMAIL="Guido Mamone <info@outreach.financeofsports.com>"
    ```
 
 Hasta que estos 4 pasos estén hechos, el pipeline de redacción/revisión funciona igual (los

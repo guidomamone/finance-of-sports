@@ -15,6 +15,25 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 218 — Pipeline de outreach (Etapa 1) probado de punta a punta
+
+- Guido creó la cuenta de Resend, verificó `outreach.financeofsports.com` (DNS en Netlify DNS: DKIM,
+  SPF vía 2 CNAME, MX para Receiving, DMARC `p=none` correctamente en `_dmarc.outreach`, no en la
+  raíz) y generó la API key. `Admin/outreach/.env` creado (gitignoreado).
+- Corrección de diseño: el `from` queda en `info@outreach.financeofsports.com`, no
+  `contacto@outreach.…` como decía el borrador original del skill — decisión de Guido, actualizado
+  en `club-outreach/SKILL.md`. Se evaluó y se descartó usar la raíz (`info@financeofsports.com`):
+  mantiene la reputación de envío aislada del dominio principal, a propósito.
+  (`financeofsports.com`, sin subdominio, seguía sin verificar en Resend — no era una opción real,
+  además de no convenir.)
+- **Prueba real, no solo revisión de código**: un mail de prueba escrito directo en
+  `Admin/outreach/aprobados/`, Guido corrió `tools/outreach-send.js` desde su propia terminal (nunca
+  una sesión de Claude Code), llegó a su Gmail, y el archivo se archivó solo en
+  `Admin/outreach/enviados/`. La Etapa 1 queda lista para usarse con un club de verdad.
+- Detectada sesión concurrente en el mismo working tree (la de la Versión 217, todavía onboardeando
+  más clubes brasileños al cerrar esta entrada) — sin conflicto real, pero confirma que sigue siendo
+  un riesgo vivo del proyecto (ver `CLAUDE.md`).
+
 ## Versión 217 — 4 clubes nuevos (10 PDF transcriptos onboardeados en paralelo): América Mineiro, Operário Ferroviário, Volta Redonda (Brasil) y Unión Magdalena (Colombia)
 
 - De 65 a 69 clubes cargados. 4 agentes en paralelo (uno por club, sin tocar `data/clubs.js`/

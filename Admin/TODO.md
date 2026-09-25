@@ -139,20 +139,20 @@ perdieron sino que se descartaron:
     en la Etapa 1 de ese diseño (sin regla de disparo automática todavía, Guido sigue decidiendo
     cuándo escribir) — la Etapa 0 (statu quo manual) se salteó a pedido de Guido.
 
-    **Bloqueado en Guido, no en una sesión de Claude Code** (ninguna sesión puede crear cuentas ni
-    tocar DNS): (a) ✅ cuenta en Resend creada 2026-09-24 (conectada con GitHub, sigue en free por
-    ahora); (b) ✅ subdominio `outreach.financeofsports.com` verificado 2026-09-24 (DNS en Netlify
-    DNS — DKIM, SPF vía 2 CNAME, DMARC `p=none` en `_dmarc.outreach`, no en la raíz); (c) activar
-    `Receiving` en ese subdominio (feature nativo de Resend, reenvía a Gmail sin forwarding manual a
-    nivel DNS) — pendiente; (d) generar la API key (`API keys` → `Create API Key`, scope de solo
-    envío) y ponerla en `Admin/outreach/.env` (gitignoreado) — pendiente. Ver
-    `club-outreach/SKILL.md` sección 2 para el detalle exacto de cada paso.
+    **Infraestructura, estado real:** (a) ✅ cuenta en Resend creada 2026-09-24 (conectada con
+    GitHub, sigue en free por ahora); (b) ✅ subdominio `outreach.financeofsports.com` verificado
+    2026-09-24 (DNS en Netlify DNS — DKIM, SPF vía 2 CNAME, DMARC `p=none` en `_dmarc.outreach`, no
+    en la raíz); (c) `Receiving` activado (MX agregado, propagación confirmada por `dig` desde 3
+    resolvers distintos) — el dashboard de Resend tardó en reflejarlo como verificado pero la
+    infraestructura ya estaba bien; (d) ✅ API key generada y en `Admin/outreach/.env`
+    (gitignoreado), `from` = `info@outreach.financeofsports.com`.
 
-    **Ya construido, listo para usar en cuanto lo de arriba esté hecho**: la cola de archivos
-    (`Admin/outreach/cola/` → `aprobados/` → `enviados/`), `Admin/outreach/contactos.json` (solo el
-    contacto de cada club — el historial de envíos vive en los propios archivos de `enviados/`, no
-    se duplica en ningún índice), y `tools/outreach-send.js` (el script que Guido corre a mano para
-    mandar lo aprobado).
+    **✅ PIPELINE PROBADO DE PUNTA A PUNTA, 2026-09-25**: mail de prueba escrito directo en
+    `Admin/outreach/aprobados/`, Guido corrió `tools/outreach-send.js` desde su terminal, llegó a su
+    Gmail, y el archivo se archivó solo en `Admin/outreach/enviados/`. La Etapa 1 está lista para
+    usarse con clubes de verdad — ver `club-outreach/SKILL.md` sección 1 para el flujo completo
+    (candidatos → redactar en `cola/` → Guido aprueba moviendo a `aprobados/` → Guido corre el
+    script).
 
     **Check-in programado para 2026-10-24** (30 días desde que arrancó la Etapa 1): evaluar si
     conviene prender la Etapa 2 (regla de disparo automática — 3 preguntas acumuladas O 90 días — y
