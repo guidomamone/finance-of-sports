@@ -36,5 +36,28 @@
   sección país arriba); bolsadequito.com/index.php/listado-de-emisores (a revisar directamente, no
   se encontró a LDU Quito mencionado en resultados de búsqueda pero tampoco se navegó el listado
   completo).
-- Último chequeo: 2026-09-13.
+- **Actualización 2026-09-25 (sesión de onboarding/data-mapping, no de sourcing nueva) — CONFIRMADO,
+  no se carga.** Se releyeron a fondo los 3 archivos ya descargados en
+  `Clubes/Ecuador/LDU Quito/`. Primero, un hallazgo de catalogación: `ESTADO-DE-SITUACION-FINANCIERA-
+  DICIEMBRE-2022.md` y `CUIDADO-club-civil-no-SADP-situacion-financiera-2022.md` son BYTE-IDÉNTICOS
+  (mismo PDF, la única diferencia es el nombre de archivo citado en la línea 3 de la transcripción) —
+  no son 2 documentos distintos, es 1 solo balance con 2 copias/nombres. El tercer archivo
+  (`CUIDADO-club-civil-no-SADP-resultados-2022.md`, el Estado de Resultados Integrales, vía OCR) es
+  el único documento nuevo.
+  Segundo, y más importante: la lectura del Estado de Resultados CONFIRMA con evidencia directa la
+  hipótesis de la nota de arriba (no es solo una diferencia de "estándar contable", es una diferencia
+  de ALCANCE). El documento tiene exactamente 2 segmentos — "Unidad Educativa" (Ingresos 2.238.788,
+  Superávit 255.033) y "Country Club y Sede Social" (Ingresos 1.387.267, Déficit -210.077) — y CERO
+  líneas de fútbol: ninguna de Televisión, recaudación de entradas/abonos, venta de jugadores,
+  sponsors o premios por competencia aparece en ningún lado del documento. En el Estado de Situación
+  Financiera, "Comisión Especial de Fútbol" (el vehículo que sí corre el fútbol profesional) aparece
+  SOLO como saldos a cobrar (activos corrientes y no corrientes, ~$2,56 M en total) — nunca
+  consolidada línea por línea. Es decir: este balance/resultado es real, está firmado y es público,
+  pero deliberadamente EXCLUYE el fútbol profesional, que es justamente lo que este sitio necesitaría
+  mostrar. Cargarlo como "las finanzas de LDU Quito" publicaría una imagen materialmente engañosa (un
+  club de Libertadores con ingresos de ~$3,6 M, 100% colegio/country club, $0 de fútbol).
+  **DECISIÓN: no se crea `data/lduquito-ec-data.js` con este documento.** Ecuador NO se agrega a
+  `data/leagues.js`/`data/clubs.js` en esta sesión (no hay ningún club ecuatoriano con documento
+  cargable todavía). Pregunta genuina anotada en `Admin/dudas-por-club.md`.
+- Último chequeo: 2026-09-25.
 
