@@ -15,6 +15,56 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 227 — 20 transcripts más (15 clubes nuevos + 7 ejercicios), sin dead-ends esta vez
+
+- De 146 a 161 clubes cargados, 269 a 291 ejercicios. Pedido de Guido: "20 más" (misma sesión que la
+  Versión 226). A diferencia de la tanda anterior, esta vez se priorizó a propósito PAÍSES YA
+  CARGADOS (Bélgica/Dinamarca/Croacia) — un agente Explore encontró que esos 3 países tenían series
+  históricas completas ya transcriptas y sentadas sin cargar en `Clubes/`, así que los 20 candidatos
+  salieron de ahí para minimizar scaffolding nuevo. Trabajo repartido en 5 agentes paralelos, mismo
+  esquema de límites (no tocar archivos compartidos) que la Versión 226. **Ninguno de los 20 resultó
+  dead-end esta vez.**
+- **15 clubes NUEVOS**: Bélgica +7 (Standard Liège, Union Saint-Gilloise —campeona 2024/25, primer
+  título desde 1934/35—, Westerlo, Zulte Waregem, Sint-Truiden, Cercle Brugge, Dender EH), Dinamarca
+  +5 (FC Fredericia 2019, FC Nordsjælland 2024, Randers FC 2022/23, Vejle 2024, SønderjyskE 2022),
+  Croacia +3 (Istra 1961, Varaždin, Gorica).
+- **7 ejercicios nuevos de 4 clubes ya cargados**: Los Andes 2019/20 (Ejercicio 104), RB Leipzig
+  2021/22, Bayern Munich 2022/23 (mismo caso de fuente agregada que 2020/21: solo 4 cifras, sin
+  desglose de GuV), Botafogo — el de Río, NO Botafogo-SP — 2023 y 2025 (con corrección de errores
+  reales de OCR encontrados y corregidos antes de cargar: dígitos transpuestos en 3 líneas), Cruzeiro
+  2022 (campeón Série B, ascenso) y 2023 (14° en Série A, primer año de vuelta).
+- **2 P0 reales encontrados y corregidos en la integración** (ambos por aplicar mal el patrón
+  "Chelsea" de `exceptional_items`, que en `computeYearGeneric()` solo se excluye de `expenses` del
+  lado de GASTOS, nunca de `revenue`): Zulte Waregem 2025 tenía `officialTotalRevenue` restándole un
+  ingreso `exceptional_items` (diferencia de 2,63M EUR); Dender EH 2025 tenía `officialTotalExpenses`
+  SIN restarle un gasto `exceptional_items` (diferencia de 37 mil EUR). Además, 2 líneas de INGRESO
+  (Zulte Waregem, Botafogo 2023) estaban categorizadas `exceptional_items`, que es una categoría de
+  la taxonomía de GASTOS y no existe del lado de Ingresos (`categoria-cruzada`, P2) — recategorizadas
+  a `other_income`.
+- **2 clubes quedaron sin fila en `data/club-leagues/*.js` a propósito**: Zulte Waregem jugó
+  Challenger Pro League (2ª división belga) en el ejercicio cargado, la ganó y ascendió recién para
+  2025/26; FC Fredericia jugó Nordic Bet Ligaen (1. Division, 2ª división danesa) en 2019, ascendió a
+  Superliga recién para 2025/26. Ninguna liga de 2do escalón belga/danesa existe en el catálogo
+  todavía — se dejó sin fila en vez de forzarlas a `be-proleague`/`dk-superliga`.
+- **7 entradas nuevas a `FX_CLOSE`** (`data/currency-map.js`): `DKK@2019-12-31`, `DKK@2022-06-30`,
+  `DKK@2023-06-30` (esta última sourceada DIRECTO del Danmarks Nationalbank, no cruzada vía BCE — más
+  precisa cuando está disponible). Y una liga nueva: `ar-primerab` ya existía (Versión 226), se
+  reusó para Los Andes 2020.
+- **14 hallazgos nuevos verificados y silenciados en `tools/audit-ignore.json`**: 5
+  `signo-invertido` (deducciones fiscales brasileñas + una variación de existencias belga, todas
+  líneas negativas legítimas) y 9 `catchall-dominante` (Standard Liège/Union SG/Westerlo/Sint-Truiden/
+  Cercle Brugge/Dender EH: ninguno completó la Nota 6.10 belga de desglose de Omzet; SønderjyskE:
+  exención §32 danesa, mismo caso que FC Midtjylland; Cruzeiro 2023: ingreso financiero/patrimonial
+  extraordinario real, sin categoría mejor disponible).
+- ASSET_V 227 → 228 (constante Y los 15 `<script src>` estáticos, `index.html`), 3 generadores
+  corridos al final. `node tools/audit.js`: 0 P0, 0 P1, 1 P2 (intencional, ver arriba), 8 P3.
+  `auditAll()` en el navegador: 842 checks (3 no cierran, los mismos de Bayern Munich 2024/2025 ya
+  conocidos, nada nuevo), 0 warnings de fx, 0 clubes que no cargaron.
+- ~30 preguntas nuevas en `Admin/dudas-por-club.md` (catch-alls grandes sin desglose completo en la
+  fuente en varios clubes belgas, sospecha de `player_sales` sin confirmar en 2 clubes "feeder" —
+  Sint-Truiden/DMM, Cercle Brugge/Monaco—, un restatement de Botafogo 2024 sin resolver) — detalle
+  completo ahí, sección "2da tanda de 20 transcripts más".
+
 ## Versión 226 — 20 transcripts al azar, sin prioridad de país (15 clubes nuevos + 5 ejercicios)
 
 - De 131 a 146 clubes cargados, 248 a 269 ejercicios. Pedido de Guido: elegir 20 transcripciones ya

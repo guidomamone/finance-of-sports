@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Bundesliga (DE) — 4 ejercicio(s) con ranking:
+// Bundesliga (DE) — 5 ejercicio(s) con ranking:
 //   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -79,6 +80,9 @@ window.RANKINGS["de-bundesliga"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"bayernmunich-de", revenue:888.08, reportType:"official_balance_sheet",
+        sourceId:"bayernmunich-de-jahresabschluss-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",888.08]] },
       { id:"rbleipzig-de", revenue:428.949, reportType:"official_balance_sheet",
         sourceId:"rbleipzig-de-jahresabschluss-2023",
         mix:[["Comercial / Sponsors",9.131],["Fútbol profesional (sin desglosar por la fuente)",340.353],["Otros ingresos",79.465]] },
@@ -91,6 +95,14 @@ window.RANKINGS["de-bundesliga"] = {
       { id:"werderbremen-de", revenue:130.478, reportType:"official_balance_sheet",
         sourceId:"werderbremen-de-konzernabschluss-2023",
         mix:[["Comercial / Sponsors",43.187],["Estadio",30.481],["Televisión",41.549],["Venta de Jugadores",5.701],["Otros ingresos",9.559]] },
+    ],
+  },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"rbleipzig-de", revenue:359.936, reportType:"official_balance_sheet",
+        sourceId:"rbleipzig-de-jahresabschluss-2022",
+        mix:[["Comercial / Sponsors",2.347],["Fútbol profesional (sin desglosar por la fuente)",265.29],["Otros ingresos",92.299]] },
     ],
   },
   2021: {

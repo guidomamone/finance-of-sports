@@ -71,7 +71,10 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Los Andes (misma sesión): Ejercicio N°105 (cerrado 30/6/2021), confirmado vía WhoScored que
   // jugó la Primera B Metropolitana 2020/2021 — 3er escalón, ver 'ar-primerab' agregado a
   // data/leagues.js en esta misma integración.
-  'losandes-ar': { 2021: 'ar-primerab' },
+  // 2020 (2da tanda, misma sesión, "20 más"): confirmado vía Wikipedia (descendido de la Primera B
+  // Nacional al cierre de 2018-19, jugó la B Metropolitana 2019-20, temporada cancelada por la
+  // pandemia sin definir ascenso — mismo 3er escalón que 2021).
+  'losandes-ar': { 2020: 'ar-primerab', 2021: 'ar-primerab' },
 });
 
 // ---------------------------------------------------------------------------

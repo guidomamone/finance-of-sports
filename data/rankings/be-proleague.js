@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Pro League (BE) — 1 ejercicio(s) con ranking:
-//   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -30,12 +30,30 @@ window.RANKINGS["be-proleague"] = {
       { id:"gent-be", revenue:95.124, reportType:"official_balance_sheet",
         sourceId:"gent-be-jaarrekening-2025",
         mix:[["Venta de Jugadores",51.168],["Fútbol profesional (sin desglosar por la fuente)",43.956]] },
+      { id:"unionsg-be", revenue:68.88, reportType:"official_balance_sheet",
+        sourceId:"unionsg-be-jaarrekening-2025",
+        mix:[["Venta de Jugadores",24.28],["Fútbol profesional (sin desglosar por la fuente)",17.616],["Otros ingresos",26.984]] },
+      { id:"standardliege-be", revenue:52.237, reportType:"official_balance_sheet",
+        sourceId:"standardliege-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",23.973],["Otros ingresos",28.264]] },
+      { id:"cerclebrugge-be", revenue:51.246, reportType:"official_balance_sheet",
+        sourceId:"cerclebrugge-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",22.628],["Otros ingresos",28.618]] },
+      { id:"sinttruiden-be", revenue:42.405, reportType:"official_balance_sheet",
+        sourceId:"sinttruiden-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",23.647],["Otros ingresos",18.758]] },
       { id:"mechelen-be", revenue:39.248, reportType:"official_balance_sheet",
         sourceId:"mechelen-be-jaarrekening-2025",
         mix:[["Venta de Jugadores",10.005],["Fútbol profesional (sin desglosar por la fuente)",24.485],["Otros ingresos",4.758]] },
+      { id:"westerlo-be", revenue:36.017, reportType:"official_balance_sheet",
+        sourceId:"westerlo-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",16.846],["Otros ingresos",19.17]] },
       { id:"charleroi-be", revenue:34.933, reportType:"official_balance_sheet",
         sourceId:"charleroi-be-jaarrekening-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",29.051],["Otros ingresos",5.882]] },
+      { id:"dender-be", revenue:10.739, reportType:"official_balance_sheet",
+        sourceId:"dender-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.341],["Otros ingresos",2.398]] },
     ],
   },
 };

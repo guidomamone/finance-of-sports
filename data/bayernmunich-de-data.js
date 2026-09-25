@@ -1,14 +1,25 @@
 // ============================================================================
 // data/bayernmunich-de-data.js — FC Bayern München AG (Alemania, Bundesliga).
 //
-// 3 ejercicios cargados: 2020/21, 2023/24, 2024/25. Fuente de los 2 más recientes: el comunicado
-// oficial anual "Jahresabschluss der Saison <año>" que el club publica en fcbayern.com
+// 4 ejercicios cargados: 2020/21, 2022/23, 2023/24, 2024/25. Fuente de 2023/24 y 2024/25: el
+// comunicado oficial anual "Jahresabschluss der Saison <año>" que el club publica en fcbayern.com
 // (media@fcbayern.com), NO el Geschäftsbericht completo con Anhang notarial — es un resumen oficial
 // de 7 páginas con el Balance y la GuV condensados, publicado por el propio club (no un tercero), así
 // que se trata como fuente primaria (reliability:'primary'), aunque con menos desglose que el
 // Konzernabschluss completo de Werder Bremen/Köln. Transcripciones completas en
-// Clubes/Alemania/Bayern Munich/jahresabschluss-<año>.md. Queda un presseinformation-jhv-2022-23.md
-// más viejo, todavía sin cargar.
+// Clubes/Alemania/Bayern Munich/jahresabschluss-<año>.md.
+//
+// EJERCICIO 2022/23 (presseinformation-jhv-2022-23.md): PESE AL NOMBRE DEL ARCHIVO, es el mismo tipo
+// de comunicado oficial que 2020/21 (4 páginas: Bilanz condensado del Konzern Y del Einzelabschluss,
+// más Kennzahlen Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss de cada nivel, más una tabla
+// histórica de 10 años) — NO trae el desglose de GuV por rubro ("Komponenten der Gewinn- und
+// Verlustrechnung im Einzelabschluss") que sí tienen los comunicados de 2023/24 y 2024/25. Se
+// confirmó ANTES de mapear (pedido explícito de la consigna) que el documento efectivamente no tiene
+// ese nivel de detalle — es igual de "chico" que 2020/21, solo que además de traer el Konzern trae el
+// Einzelabschluss (2020/21 solo traía Konzern). Mismo criterio de club-data-mapping SKILL.md sección
+// 13 que ya usa 2020/21: se cargó con el máximo detalle que el documento permite (1 línea de ingreso
+// sin desglosar + 2 de gasto derivadas matemáticamente), usando el nivel Einzelabschluss AG (no
+// Konzern) para ser consistente con 2023/24 y 2024/25 — ver "NIVEL DE CUENTAS ELEGIDO" abajo.
 //
 // EJERCICIO 2020/21 (jahresabschluss-2020-21.md): documento MUCHO MÁS CHICO que los otros 2 (2
 // páginas, no 7) — SOLO trae el Konzern (nunca el Einzelabschluss con el desglose de GuV por rubro
@@ -120,6 +131,48 @@
 // Se cargó una gestión propia 'rummenigge', acotada a firstYear/lastYear:2021 (solo el año
 // confirmado por esta carga, sin extender el rango a ejercicios no verificados en esta sesión).
 // ---------------------------------------------------------------------------
+// EJERCICIO 2022/23 — categorización (documento SIN desglose, mismo caso que 2020/21, ver nota de
+// cabecera):
+//
+// El documento da 4 cifras POR NIVEL (Konzern Y Einzelabschluss, a diferencia de 2020/21 que solo
+// traía Konzern). Se usó el nivel EINZELABSCHLUSS AG (Umsatz 817,3; EBITDA 153,4; Gewinn vor Steuern
+// [EBT] 35,5; Jahresüberschuss 22,6), no el Konzern (Umsatz 854,2; EBITDA 187,4; EBT 54,5;
+// Jahresüberschuss 35,7) — mismo criterio que 2023/24 y 2024/25 (ver "NIVEL DE CUENTAS ELEGIDO"
+// arriba: el desglose de GuV por rubro, cuando existe, solo está disponible para el Einzelabschluss,
+// así que se usa ese nivel de cuentas de forma consistente en los 3 ejercicios que sí tienen ese
+// nivel, aunque este ejercicio puntual no llegue a tener el desglose).
+//
+// revenueLines es UNA sola línea 'lump_football_operations' con el Umsatz Einzelabschluss completo
+// (817,3) — el documento no da NINGÚN desglose por rubro en ningún nivel, mismo argumento que 2020/21.
+//
+// expenseLines tiene 2 líneas, ambas DERIVADAS matemáticamente de las 4 cifras (mismo método que
+// 2020/21, misma aproximación documentada para la 2da línea — combina D&A con resultado financiero
+// neto porque el documento no los separa):
+// 1. 'Aufwendungen vor Abschreibungen' (lump_football_operations_expense) = Umsatz - EBITDA =
+//    817,3 - 153,4 = 663,9.
+// 2. 'Abschreibungen und Zinsergebnis kombiniert' (depreciation) = EBITDA - EBT = 153,4 - 35,5 =
+//    117,9 — mismo argumento que 2020/21 (D&A es casi con certeza el componente dominante del gap,
+//    netInterest:0 es la aproximación más chica posible, no un hecho confirmado; pregunta abierta en
+//    `Admin/dudas-por-club.md`, mismo ítem que 2020/21).
+//
+// tax = Jahresüberschuss - EBT = 22,6 - 35,5 = -12,9 (residual directo, no aproximación).
+//
+// TIE-OUT: revenue(817,3) - expenses(663,9+117,9=781,8) + netInterest(0) + tax(-12,9) = 22,6, EXACTO
+// contra el Jahresüberschuss Einzelabschluss impreso.
+//
+// FX: cierre BCE del 30/6/2023, 'EUR@2023-06-30' YA EXISTÍA en FX_CLOSE (data/currency-map.js, de
+// una sesión anterior de onboarding de clubes españoles/alemanes/ingleses).
+//
+// Sin nota de deuda financiera separada de otros pasivos en ninguno de los 2 niveles (Verbindlichkeiten
+// 198,4 Einzelabschluss / 208,7 Konzern, sin desglosar) — no se cargó grossDebt/cash, mismo criterio
+// que 2020/21, 2023/24 y 2024/25 (ninguno de los 4 ejercicios de este club tiene grossDebt/cash).
+//
+// Gestión: Oliver Kahn fue Vorstandsvorsitzender (CEO) desde 2021 hasta su salida el 25/5/2023 —
+// cubre la gran mayoría del ejercicio 2022/23 (01.07.2022-30.06.2023); Jan-Christian Dreesen asumió
+// recién el 1/6/2023, últimas 4 semanas del ejercicio. Se cargó una gestión propia 'kahn', acotada a
+// firstYear/lastYear:2023 (predominancia de Kahn en el ejercicio, mismo criterio que "rummenigge" de
+// 2020/21 — solo el año confirmado por esta carga).
+// ---------------------------------------------------------------------------
 // ============================================================================
 
 const bayernmunichDeRevenueLinesByYear = {
@@ -127,6 +180,11 @@ const bayernmunichDeRevenueLinesByYear = {
   // desglose por rubro (ver comentario de cabecera).
   2021: [
     { rawLabel:'Umsatz (Konzern, ohne Aufteilung nach Erlösquelle — das Dokument bringt nur den Gesamtwert)', normalizedCategory:'lump_football_operations', amountNative:643.9, disclosureLevel:'aggregated' },
+  ],
+  // Ejercicio 2023 (01.07.2022-30.06.2023). Fuente: presseinformation-jhv-2022-23.md — Einzelabschluss
+  // AG, sin desglose por rubro (ver comentario de cabecera).
+  2023: [
+    { rawLabel:'Umsatz (Einzelabschluss AG, ohne Aufteilung nach Erlösquelle — das Dokument bringt nur den Gesamtwert)', normalizedCategory:'lump_football_operations', amountNative:817.3, disclosureLevel:'aggregated' },
   ],
   // Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: jahresabschluss-2023-24.md, pág. 2.
   2024: [
@@ -155,6 +213,12 @@ const bayernmunichDeExpenseLinesByYear = {
     { rawLabel:'Aufwendungen vor Abschreibungen (Konzern; aus Umsatz 643,9 - EBITDA 98,4 errechnet)', normalizedCategory:'lump_football_operations_expense', amountNative:-545.5, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen und Zinsergebnis kombiniert (Konzern; aus EBITDA 98,4 - Gewinn vor Steuern 5,0 errechnet — das Dokument trennt Abschreibungen nicht vom Zinsergebnis, siehe Kommentar)', normalizedCategory:'depreciation', amountNative:-93.4, disclosureLevel:'aggregated' },
   ],
+  // Ejercicio 2023: 2 líneas derivadas matemáticamente de Umsatz/EBITDA/EBT del Einzelabschluss AG
+  // (ver comentario de cabecera para el detalle completo de la aproximación en la 2da línea).
+  2023: [
+    { rawLabel:'Aufwendungen vor Abschreibungen (Einzelabschluss AG; aus Umsatz 817,3 - EBITDA 153,4 errechnet)', normalizedCategory:'lump_football_operations_expense', amountNative:-663.9, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen und Zinsergebnis kombiniert (Einzelabschluss AG; aus EBITDA 153,4 - Gewinn vor Steuern 35,5 errechnet — das Dokument trennt Abschreibungen nicht vom Zinsergebnis, siehe Kommentar)', normalizedCategory:'depreciation', amountNative:-117.9, disclosureLevel:'aggregated' },
+  ],
   2024: [
     { rawLabel:'Gesamtpersonalaufwand', normalizedCategory:'wages_squad', amountNative:-396.5, disclosureLevel:'aggregated_residual' },
     { rawLabel:'Betriebliche Aufwendungen', normalizedCategory:'other_expenses', amountNative:-325.0, disclosureLevel:'aggregated_residual' },
@@ -182,6 +246,17 @@ const bayernmunichDeFiscalYearMeta = {
     // Jahresüberschuss 1,9 - EBT 5,0 = -3,1.
     netInterest:0, tax:-3.1, profitOnPlayerSales:0, assetSales:0,
     officialTotalRevenue:643.9, officialTotalExpenses:638.9, officialPAT:1.9,
+  },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'bayernmunich-de-jahresabschluss-2023',
+    reportType:'official_balance_sheet',
+    gestionId:'kahn',
+    // netInterest:0 y la línea 'depreciation' de -117,9 combinan D&A + resultado financiero, ver
+    // comentario de cabecera (aproximación documentada, el documento no los separa). tax = residual:
+    // Jahresüberschuss 22,6 - EBT 35,5 = -12,9.
+    netInterest:0, tax:-12.9, profitOnPlayerSales:0, assetSales:0,
+    officialTotalRevenue:817.3, officialTotalExpenses:781.8, officialPAT:22.6,
   },
   2024: {
     currency:'EUR', fxRef:'EUR@2024-06-30',
@@ -224,6 +299,12 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     note:'Comunicado oficial anual del club (fcbayern.com, Direktion Medien, Digital und Kommunikation), SOLO 2 páginas — mucho más chico que los comunicados de 2023/24 y 2024/25 (7 páginas): trae solo el Konzern (Bilanz condensado + Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss), sin el desglose de GuV por rubro del Einzelabschluss que sí tienen los otros 2 ejercicios. revenueLines/expenseLines se cargaron con el máximo detalle que el documento permite (1 línea de ingreso sin desglosar, 2 de gasto derivadas matemáticamente de las 4 cifras impresas) — ver comentario de cabecera de data/bayernmunich-de-data.js para el detalle completo de la aproximación (la línea de depreciation combina D&A con el resultado financiero neto, que el documento no separa). Sin nota de deuda financiera (no se cargó grossDebt/cash, mismo criterio que 2023/24 y 2024/25). Convertido a USD con el cierre BCE del 30/6/2021 (1 EUR = 1,1884 USD), consultado en esta sesión vía api.frankfurter.dev — no está en FX_CLOSE compartido todavía. Transcripción completa en Clubes/Alemania/Bayern Munich/jahresabschluss-2020-21.md.',
   },
+  'bayernmunich-de-jahresabschluss-2023': {
+    id:'bayernmunich-de-jahresabschluss-2023', clubId:'bayernmunich-de',
+    title:'Jahresabschluss der Saison 2022/23',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Comunicado oficial anual del club (fcbayern.com, Direktion Medien und Kommunikation), 4 páginas — pese al nombre del archivo ("presseinformation"), es el mismo tipo de comunicado que jahresabschluss-2020-21.md: trae Bilanz condensado (Aktiva/Passiva) del Konzern Y del Einzelabschluss AG, más Kennzahlen Umsatz/EBITDA/Gewinn vor Steuern/Jahresüberschuss de cada nivel y una tabla histórica de 10 años, pero SIN el desglose de GuV por rubro que sí tienen 2023/24 y 2024/25. revenueLines/expenseLines se cargaron con el máximo detalle que el documento permite (1 línea de ingreso sin desglosar, 2 de gasto derivadas matemáticamente de las 4 cifras del Einzelabschluss AG) — ver comentario de cabecera de data/bayernmunich-de-data.js para el detalle completo de la aproximación (la línea de depreciation combina D&A con el resultado financiero neto, que el documento no separa). Sin nota de deuda financiera (no se cargó grossDebt/cash, mismo criterio que 2020/21, 2023/24 y 2024/25). Oliver Kahn fue Vorstandsvorsitzender casi todo el ejercicio (hasta el 25/5/2023); Jan-Christian Dreesen asumió el 1/6/2023, últimas semanas del ejercicio. Transcripción completa en Clubes/Alemania/Bayern Munich/presseinformation-jhv-2022-23.md.',
+  },
   'bayernmunich-de-jahresabschluss-2024': {
     id:'bayernmunich-de-jahresabschluss-2024', clubId:'bayernmunich-de',
     title:'Jahresabschluss der Saison 2023/24',
@@ -241,6 +322,7 @@ Object.assign(sources, {
 gestionesByClub['bayernmunich-de'] = {
   actual: { nombre:'Gestión actual (Jan-Christian Dreesen, Vorstandsvorsitzender)', firstYear:2024, lastYear:2025 },
   rummenigge: { nombre:'Karl-Heinz Rummenigge (Vorstandsvorsitzender)', firstYear:2021, lastYear:2021 },
+  kahn: { nombre:'Oliver Kahn (Vorstandsvorsitzender, hasta el 25/5/2023)', firstYear:2023, lastYear:2023 },
 };
 
 memberCountByClub['bayernmunich-de'] = null;

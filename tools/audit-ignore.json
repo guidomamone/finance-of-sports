@@ -57,6 +57,76 @@
   },
   {
     "code": "signo-invertido",
+    "match": "botafogo 2023 ingreso \"Deduções sobre a receita",
+    "motivo": "VERIFICADO (onboarding de Botafogo(Rio) 2023, 2da tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos por el propio documento (Nota 16.9), mismo tratamiento que las deducciones ya aceptadas de otros clubes brasileños. Tie-out exacto contra officialTotalRevenue."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "botafogo 2025 ingreso \"Deduções sobre a receita",
+    "motivo": "Mismo caso que 2023 de este club (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "cruzeiro 2022 ingreso \"Impostos e contribuições\"",
+    "motivo": "VERIFICADO (onboarding de Cruzeiro 2022, 2da tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos, mismo tratamiento que 2024/2025 ya cargados de este club. Tie-out exacto."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "cruzeiro 2023 ingreso \"Impostos e contribuições\"",
+    "motivo": "Mismo caso que 2022 de este club (ver entrada arriba)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "zultewaregem-be 2025 ingreso \"Voorraad goederen in bewerking",
+    "motivo": "VERIFICADO (onboarding de Zulte Waregem, 2da tanda de 20 transcripts, 2026-09-25). Variación de existencias impresa como línea negativa (disminución de bienes en curso) por el propio esquema contable belga, no un signo dado vuelta. Tie-out exacto contra officialTotalRevenue."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "cerclebrugge-be 2025 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Cercle Brugge, 2da tanda de 20 transcripts, 2026-09-25). \"Andere bedrijfsopbrengsten\" (24,4M EUR, 56% del revenue) casi sin desglose en la Nota 6.10 del propio documento (solo 1.619 EUR de subsidios identificados) — límite de la fuente. Ver Admin/dudas-por-club.md (sospecha razonable de player_sales por ser feeder de AS Monaco, sin confirmación textual)."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "cerclebrugge-be 2025 Gastos",
+    "motivo": "VERIFICADO (onboarding de Cercle Brugge, 2da tanda de 20 transcripts, 2026-09-25). \"Niet-recurrente bedrijfskosten\" (6,0M EUR, 17% del gasto) sin explicación textual en el documento — límite de la fuente, no error de categorización."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "cruzeiro 2023 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Cruzeiro 2023, 2da tanda de 20 transcripts, 2026-09-25). Impulsado por un ingreso financiero/patrimonial extraordinario real (reducción de deuda de R$181.913 mil vía Plano de Recuperação Judicial del Cruzeiro Associação) y la venta de 20% de la participación en la LFU (R$192.780 mil) — ninguno tiene categoría de \"venta de intangible no-jugador\" mejor disponible hoy."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "sinttruiden-be 2025 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Sint-Truiden, 2da tanda de 20 transcripts, 2026-09-25). \"Andere bedrijfsopbrengsten\" (16,0M EUR, 44% del revenue) solo desglosa subsidios (3,3M); el resto (12,7M) sin explicación textual — límite de la fuente. Ver Admin/dudas-por-club.md (sospecha de player_sales por dueño japonés Spacenine/DMM, sin confirmación textual)."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "sinttruiden-be 2025 Gastos",
+    "motivo": "VERIFICADO (onboarding de Sint-Truiden, 2da tanda de 20 transcripts, 2026-09-25). \"Niet-recurrente bedrijfskosten\" (2,3M EUR, 7,4% del gasto) sin explicación en el documento — límite de la fuente."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "sonderjyske-dk 2022 Ingresos",
+    "motivo": "VERIFICADO (onboarding de SønderjyskE, 2da tanda de 20 transcripts, 2026-09-25). El documento usa la exención §32 de la Årsregnskabsloven danesa: la Resultatopgørelse arranca directo en \"Bruttofortjeneste\" (ya neto), sin desglose de Nettoomsætning disponible en ningún lado — mismo patrón documentado en club-data-mapping sección 20 (FCN/Randers/Vejle tienen el mismo límite de fuente)."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "standardliege-be 2025 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Standard Liège, 2da tanda de 20 transcripts, 2026-09-25). \"Autres produits d'exploitation\" (23,05M EUR, 52% del revenue) solo desglosa el 33% (subsidios estatales, 7,5M) — el resto sin explicación textual, límite de la fuente."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "unionsg-be 2025 Gastos",
+    "motivo": "VERIFICADO (onboarding de Union Saint-Gilloise, 2da tanda de 20 transcripts, 2026-09-25). Split exacto de \"Autres charges d'exploitation\" (266.065 EUR) entre impuestos y otros se perdió en el alineamiento OCR de la Nota 6.10 (pág. 25 del PDF) — candidato a re-verificar contra el PDF original, no bloqueante hoy."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "westerlo-be 2025 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Westerlo, 2da tanda de 20 transcripts, 2026-09-25). Ninguno de los clubes belgas de esta tanda completó la Nota 6.10 de \"Uitsplitsing per bedrijfscategorie\" del Omzet — línea entera a lump_football_operations/other_income por límite de la fuente, mismo patrón que Charleroi/Anderlecht/Mechelen/Antwerp ya aceptados."
+  },
+  {
+    "code": "signo-invertido",
     "match": "deportivopereira-co 2025 ingreso \"Devoluciones en ventas y servicios\"",
     "motivo": "VERIFICADO (onboarding de Deportivo Pereira, 2026-09-25). Devolución real de ventas/servicios, línea negativa impresa por el propio documento como contra-revenue — mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes."
   },

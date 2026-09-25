@@ -21,13 +21,17 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Verificado el 13/9/2026 contra las páginas de temporada de Wikipedia: Série A 2024 y 2025,
   // Série B 2024 y 2025. El ejercicio es el año calendario, así que coincide con la temporada.
   atleticogoianiense: { 2025: 'br-serieB' },   // descendido de la Série A 2024
-  botafogo: { 2024: 'br-serieA' },             // campeón 2024
+  // 2023 y 2025 (2da tanda, misma sesión, "20 más"): 5° y 6° respectivamente, Série A completa
+  // los 2 años, sin descenso (confirmado vía Wikipedia).
+  botafogo: { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },             // campeón 2024
   // 2023 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): jugó la Série A completa
   // 2023, descendido recién al cierre de esa temporada (confirmado por prensa: Gazeta Esportiva/
   // Banda B, derrota vs. Fluminense 25/11/2023).
   coritiba: { 2023: 'br-serieA', 2024: 'br-serieB' },             // descendido de la Série A 2023
   // 2024 (misma sesión): 9° lugar en la Série A 2024, verificado vía Wikipedia.
-  cruzeiro: { 2024: 'br-serieA', 2025: 'br-serieA' },
+  // 2022 y 2023 (2da tanda, misma sesión): campeón de la Série B 2022 (ascenso), 14° en la
+  // Série A 2023, primer año de vuelta (confirmado vía Wikipedia).
+  cruzeiro: { 2022: 'br-serieB', 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
   gremio: { 2024: 'br-serieA' },
   ituano: { 2024: 'br-serieB' },
   mirassol: { 2024: 'br-serieB' },             // ascendió a la Série A para 2025

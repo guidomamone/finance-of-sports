@@ -1693,3 +1693,107 @@ Arrendamento" (pasivo de leasing IFRS16, R$11,59M) — valdría confirmar con el
 Relacionadas" lleva interés (deuda real) o es aporte de capital de trabajo sin costo. Además, el
 archivo fuente completo tiene también los ejercicios 2019/2020 y 2022/2023 (5 en total) — solo se
 cargó 2024 en esta tanda, los otros 2 quedan pendientes.
+
+## 2da tanda de 20 transcripts más (misma sesión, 2026-09-25) — 22 ejercicios nuevos, sin dead-ends
+
+Segunda ronda del mismo pedido de Guido ("20 más"). A diferencia de la primera tanda, los 20
+candidatos esta vez salieron de países YA cargados con series históricas completas ya transcriptas y
+sin cargar (Bélgica/Dinamarca/Croacia), así que ninguno resultó dead-end.
+
+**Cruzeiro (Brasil)**: (1) ¿conviene migrar el ejercicio 2022 a la versión "Reapresentado" del propio
+documento de 2023 (-R$55.071 mil en vez de los -R$24.642 mil originales cargados)? Es solo un cambio
+de criterio contable en el reconocimiento de la combinación de negocios de la SAF (reconoció ~R$668-
+698M de pasivo/intangibles adicionales no registrados originalmente), no un hecho económico distinto.
+
+**Standard Liège (Bélgica)**: "Autres produits d'exploitation" (23,05M EUR, 52% del revenue) solo
+desglosa el 33% (subsidios estatales, 7,5M) — el resto sin explicación textual en el documento.
+
+**Union Saint-Gilloise (Bélgica)**: (1) "Subsides d'exploitation" (10,07M EUR) inusualmente grande
+comparado con pares del mismo tamaño (Standard Liège 7,5M con revenue mayor, Antwerp 11,7M con
+revenue mucho mayor) — ¿a qué corresponde exactamente? (2) Resto de "Autres produits d'exploitation"
+(12,85M) y el split exacto de "Autres charges d'exploitation" (266.065 EUR) se perdieron en el
+alineamiento OCR de la Nota 6.10 (pág. 25 del PDF) — candidato a re-verificar contra el PDF original.
+
+**Westerlo (Bélgica)**: split exacto de "Andere bedrijfskosten" (307.928 EUR) entre impuestos y otros
+sin explicar (mismo problema de alineamiento OCR que Union SG); residuo de redondeo de EUR 3.058 en
+la conciliación de amortización de activos.
+
+**Zulte Waregem (Bélgica)**: (1) residuo de "Andere bedrijfsopbrengsten" (1,38M EUR, ~7,5% del
+revenue) sin explicar en ningún lado del documento. (2) Posible venta del "laatste commerciële
+ruimte" (2,63M EUR) mencionada en el jaarverslag (pág. 45) sin que el documento ate el monto exacto a
+esa operación — categorizado conservador como `other_income` (no `exceptional_items`, ver corrección
+de categoría en el CHANGELOG de esta versión).
+
+**Sint-Truiden/STVV (Bélgica)**: (1) "Andere bedrijfsopbrengsten" (16,0M EUR, 44% del revenue —
+35% del revenue TOTAL sin desglosar) — dado que el club es propiedad del grupo japonés Spacenine/DMM
+(conocido por desarrollar y vender jugadores hacia Europa/Japón), es PLAUSIBLE que sea total o
+parcialmente resultado de transferencias, pero no hay confirmación textual — se cargó conservador
+como `other_income`, no `player_sales`. (2) "Niet-recurrente bedrijfskosten" (2,3M EUR) sin explicar.
+
+**Cercle Brugge (Bélgica)**: "Andere bedrijfsopbrengsten" (24,4M EUR, 56% del revenue) casi sin
+desglose (solo 1.619 EUR de subsidios identificados) — el club es propiedad de AS Monaco (feeder),
+mismo tipo de sospecha razonable de `player_sales` sin confirmación textual que Sint-Truiden, cargado
+conservador. Nota 6.14 revela una condonación de deuda CONDICIONAL de 52,8M EUR de Monaco (fuera de
+balance, no cargada) y plusvalías de transferencias de 6,6M EUR del mercado de verano 2025 (hecho
+posterior al cierre de este ejercicio, no cargado).
+
+**Dender EH (Bélgica)**: (1) "Overige bedrijfsopbrengsten" residual de 1,93M EUR (~21% del revenue)
+es un valor IMPLÍCITO (despejado de la fórmula de "Brutomarge" del esquema VZW abreviado, que no lo
+imprime como línea propia en ningún lado) — composición real sin confirmar. (2) No se pudo confirmar
+si los EUR 1,67M de altas de "Immateriële vaste activa" son derechos federativos de jugadores (a
+diferencia de otros clubes belgas donde el documento sí lo confirma explícito) — la amortización
+quedó combinada en `depreciation` en vez de separar `player_amortisation`. (3) Nota de continuidad:
+desde 2025-26 parte de la actividad pasa a "NV Dender Foot" (sociedad hermana), un ejercicio futuro
+de esta VZW puede representar cada vez menos del negocio real del club.
+
+**FC Fredericia (Dinamarca)**: ninguna duda crítica — el presidente 2019 (Morten Rahbek Hansen) está
+confirmado con título explícito en el documento, a diferencia de varios clubes belgas de esta tanda.
+
+**FC Nordsjælland (Dinamarca)**: (1) discrepancia de 1,49M DKK en D&A sin explicar (2 notas de
+amortización no reconcilian exacto contra el total impreso del income statement, ~3,3% de diferencia
+no explicada en ningún lado del documento). (2) ¿Existe una versión con desglose de Nettoomsætning
+(el balance público usa la exención §32 danesa, sin desglosar revenue)?
+
+**Randers FC y Vejle (Dinamarca)**: tratamiento de "kapitalandele i tilknyttede virksomheder"
+(resultado de subsidiarias 100%/65%-controladas: Randers FC Jobakademi/Business Park Randers/Randers
+Sports College; VB Plus ApS de Vejle) sumado a `netInterest` por ser línea financiera/no-operativa —
+el modelo del sitio no tiene un campo meta dedicado para "resultado de participaciones", se usó el
+más cercano disponible.
+
+**SønderjyskE (Dinamarca)**: (1) formato muy agregado (exención §32, todo en `lump_football_operations`)
+no es comparable 1:1 con Silkeborg/Viborg/AGF que sí tienen desglose — ¿conviene cargar además un
+ejercicio 2013-2021 (con .md disponible) que sí desglose Nettoomsætning, mismo criterio que se usó
+para elegir 2018/19 en FC Midtjylland? (2) `grossDebt` excluye conservadoramente "Gæld til
+tilknyttede virksomheder" (11,76M DKK, deuda con partes relacionadas) y "Anden gæld" de corto plazo
+(11,23M DKK, rótulo ambiguo) — podría revisarse. (3) El documento tiene una nota de cambio de clase
+contable (§32→1.division desde jul-2021) que en una primera lectura parece contradecir que el club
+jugó Superliga completa ESE ejercicio — la lectura aceptada es que la nota describe el régimen
+vigente AL MOMENTO DE LA FIRMA (cuando el descenso ya estaba confirmado), no la liga jugada durante
+el ejercicio; vale una segunda revisión si aparece duda real sobre la clasificación de liga.
+
+**Istra 1961 (Croacia)**: (1) "Ostali neposlovni prihodi" neto (438.955 EUR, ~10% del revenue) sin
+explicar en ninguna Bilješka de las páginas leídas — cargado en `assetSales` (campo meta reutilizado)
+solo para que el PAT cierre. (2) El auditor tiene un párrafo de "Isticanje pitanja" remitiendo a la
+Bilješka 22 (litigios judiciales en curso) sin cuantificar. (3) `grossDebt`/`cash` NO se cargaron
+(quedan en 0 por default) — la Bilanca es un escaneo que no se llegó a OCRear esta sesión.
+
+**Gorica (Croacia)**: (1) dentro de "Komercijalni prihodi" (79.158 EUR), 10.000 EUR (0,28% del
+revenue) no se pudieron atribuir con confianza a un sub-ítem específico por gaps de OCR. (2)
+`grossDebt` quedó como PISO (solo "Prekoračenja po bankovnim računima", 126.510 EUR) — la
+reconciliación de pasivos no cerró exacta contra las líneas identificables en la transcripción (gap
+de ~610.000 EUR sin explicar); valdría re-verificar contra el PDF renderizado como imagen.
+
+**Botafogo (Río de Janeiro)**: (1) el balance de 2025 REEXPRESA el Prejuízo de 2024 en R$266.817 mil,
+distinto de los R$299.983 mil ya cargados en `botafogoFiscalYearMeta[2024]` (diferencia exacta
+R$33.167 mil, por reclasificación de venta de intangibles) — decidir en una sesión futura si conviene
+actualizar el 2024 cargado al valor reexpresado, o dejar cada ejercicio con el número que su propio
+documento de origen declaró en su momento. (2) Nota 19 "Outras despesas operacionais" de 2023
+(R$64.117 mil: parcelamentos tributarios PERSE/Profut + Regime Centralizado de Execuções + dívida
+BFR) es deuda LEGADO de la associação transferida a la SAF en el acuerdo de accionistas, categorizada
+`other_expenses` — confirmar el criterio, puede repetirse en otros clubes brasileños con la misma
+transición associação→SAF. (3) Gestión (presidente) de la SAF sigue sin confirmar para los 3
+ejercicios cargados (2023/2024/2025).
+
+**Bayern Munich 2022/23**: mismo pedido que ya existía para 2020/21 — ¿existe un Jahresabschluss/
+Geschäftsbericht más completo (con desglose real de GuV por rubro) para este ejercicio también? El
+documento cargado (`presseinformation-jhv-2022-23.md`) es tan agregado como el de 2020/21.

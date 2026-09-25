@@ -1021,6 +1021,49 @@ tenía, y ninguno encajaba limpio en la tabla de la sección 1:
   que cualquier categorización "mejor aproximación disponible, no una certeza" de este skill — quedó
   como pregunta abierta en `Admin/dudas-por-club.md` porque el tamaño lo amerita.
 
+## 20. Balance danés que usa la exención § 32 (Bruttofortjeneste, sin Revenue desglosado): cargar
+todo a `lump_football_operations`, no forzar una categorización que el documento no permite
+
+Encontrado en la sesión de onboarding de FC Nordsjælland/Randers FC/Vejle (2026-09-25, 3 de 6+
+clubes daneses cargados hasta ahora): la Årsregnskabsloven danesa (§ 32) permite a una sociedad
+reportar el estado de resultados mostrando solo **"Bruttofortjeneste"** (Gross profit) — un número
+YA NETO de Nettoomsætning (revenue) + otros ingresos operativos - costos externos, sin desglosar
+ninguno de esos 3 componentes por separado en ningún lado del documento (ni en el cuerpo del estado
+de resultados, ni en una nota, ni en el texto de política contable, que solo explica QUÉ compone el
+neto, no CUÁNTO es cada parte). A diferencia de fckobenhavn-dk/silkeborg-dk/agf-dk (que sí tienen
+Nota 2 "Revenue" con el desglose completo entradas/TV/sponsors/merchandising), estos 3 balances no
+dejan ninguna vía para separar el revenue en categorías.
+
+**Regla**: cuando el balance usa esta exención (reconocible por el propio texto de política contable
+citando "årsregnskabslovens § 32" o describiendo el Gross profit como neto de costos externos), TODO
+el revenue va como una única línea `lump_football_operations` por el valor de "Bruttofortjeneste" —
+no hay ningún criterio razonable para forzar un desglose que el documento no permite (mismo espíritu
+que la regla de la sección 1 sobre `lump_football_operations`, extendido acá al caso más extremo: ni
+siquiera hay un encabezado de grupo con líneas numeradas debajo, es un solo número). Sí se puede
+seguir desglosando Gastos (Personaleomkostninger/Staff costs y Af-/nedskrivninger/D&A SIEMPRE se
+reportan aparte en estos balances, con sus propias notas de roll-forward de activos que permiten
+separar `player_amortisation` de `depreciation` cruzando el roll-forward de "Transferrettigheder"/
+"Kontraktrettigheder" contra el de PP&E, ver los 3 archivos de esta sesión para el detalle exacto de
+cómo cruzar cada roll-forward contra el total impreso).
+
+**Efecto práctico en "Formato simplificado"**: para estos clubes, la fila "Fútbol profesional (sin
+desglosar por la fuente)" NO está en $0 (que sería la señal de alerta de la sección 1 de arriba), va
+a tener prácticamente el 100% del revenue — es el comportamiento CORRECTO acá, no un error de carga,
+porque el propio balance del club no permite ver más. Documentar esto en el comentario de cabecera
+del archivo (con la cita textual de la nota de política contable que confirma el § 32), y anotarlo
+como pregunta en `Admin/dudas-por-club.md` por si existe una versión más desglosada del informe (uso
+interno del club, no público) que permita mejorar la carga en el futuro.
+
+**"Indtægter/Resultat af kapitalandele i tilknyttede virksomheder" (resultado de subsidiarias por el
+método de la participación) → `netInterest`, no revenue**: encontrado en randers-dk (3 subsidiarias:
+un centro de empleo, un parque de negocios, un colegio deportivo) y vejle-dk (VB Plus ApS, grupos de
+networking empresarial) — ambos presentan esta línea ENTRE el resultado operativo y "Finansielle
+indtægter"/"Finansielle omkostninger", como una línea más del bloque financiero del propio documento.
+Aunque no es interés/diferencia de cambio en sentido literal, es resultado no-operativo de
+inversiones, así que sigue el mismo criterio de la sección 2 de este skill ("cualquier resultado
+financiero/no operativo va a `netInterest`, no como línea") — documentar en el comentario que ese
+neto incluye este concepto, para que quede claro que no es 100% "intereses" en sentido estricto.
+
 ---
 
 ## Cómo mantener este skill

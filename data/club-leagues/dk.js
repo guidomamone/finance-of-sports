@@ -35,4 +35,12 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'agf-dk':         { 2021: 'dk-superliga' },
   'silkeborg-dk':   { 2024: 'dk-superliga' },
   'viborg-dk':      { 2024: 'dk-superliga' },
+  // 2da tanda de Dinamarca (misma sesión, "20 más"), verificado por WebSearch/Wikipedia caso por
+  // caso. FC Fredericia queda AFUERA a propósito: el ejercicio cargado (2019) lo jugó en la Nordic
+  // Bet Ligaen (1. Division, 2do escalón) — ascendió a Superliga recién para 2025/26, no hay liga
+  // de 2do escalón danesa en el catálogo todavía.
+  'sonderjyske-dk':    { 2022: 'dk-superliga' }, // relegado recién para la temporada SIGUIENTE (2022/23)
+  'nordsjaelland-dk':  { 2024: 'dk-superliga' },
+  'randers-dk':        { 2023: 'dk-superliga' }, // 6° puesto
+  'vejle-dk':           { 2024: 'dk-superliga' }, // relegado recién al cierre de 2024/25 (fuera del ejercicio calendario 2024)
 });

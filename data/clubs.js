@@ -345,6 +345,26 @@ const clubs = {
   'amazonas-br': { id:'amazonas-br', name:'Amazonas Futebol Clube', displayName:'Amazonas', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' },
   'juventude-br': { id:'juventude-br', name:'Esporte Clube Juventude', displayName:'Juventude', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#009846' },
   'botafogosp-br': { id:'botafogosp-br', name:'Botafogo Futebol S.A. - SAF', displayName:'Botafogo-SP', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // 2da tanda de 15 clubes nuevos (misma sesión 2026-09-25, "20 más"): países ya cargados otra vez
+  // a propósito (Bélgica/Dinamarca/Croacia), descubiertos porque estos 3 países tenían series
+  // históricas completas ya transcriptas y sin cargar, sentadas en `Clubes/`. Ningún dead-end esta
+  // vez (los 20 candidatos, entre clubes nuevos y ejercicios de clubes ya cargados, cerraron los
+  // 20). Detalle completo, club por club, en `Admin/CHANGELOG.md`.
+  'standardliege-be': { id:'standardliege-be', name:'Standard de Liège SA', displayName:'Standard Liège', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0000' },
+  'unionsg-be': { id:'unionsg-be', name:'Royale Union Saint-Gilloise SRL', displayName:'Union Saint-Gilloise', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFE000' },
+  'westerlo-be': { id:'westerlo-be', name:'KVC Westerlo BV', displayName:'Westerlo', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFDD00' },
+  'zultewaregem-be': { id:'zultewaregem-be', name:'Grensverleggend NV (SV Zulte Waregem)', displayName:'Zulte Waregem', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D30240' },
+  'sinttruiden-be': { id:'sinttruiden-be', name:'Koninklijke Sint-Truidense Voetbalvereniging', displayName:'Sint-Truiden', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD13A' },
+  'cerclebrugge-be': { id:'cerclebrugge-be', name:'Cercle Brugge KSV', displayName:'Cercle Brugge', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#60B22C' },
+  'dender-be': { id:'dender-be', name:'Football Club Verbroedering Dender EH VZW', displayName:'Dender EH', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1D29' },
+  'fredericia-dk': { id:'fredericia-dk', name:'Fodbold Club Fredericia 1991', displayName:'FC Fredericia', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B3000B' },
+  'nordsjaelland-dk': { id:'nordsjaelland-dk', name:'FC Nordsjælland A/S', displayName:'FC Nordsjælland', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
+  'randers-dk': { id:'randers-dk', name:'Randers FC A/S', displayName:'Randers FC', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'vejle-dk': { id:'vejle-dk', name:'VB Alliancen A/S', displayName:'Vejle', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#CF043C' },
+  'sonderjyske-dk': { id:'sonderjyske-dk', name:'Sønderjyske Fodbold A/S', displayName:'SønderjyskE', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1A5899' },
+  'istra-hr': { id:'istra-hr', name:'Nogometni klub Istra 1961 sportsko dioničko društvo', displayName:'Istra 1961', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007B33' },
+  'varazdin-hr': { id:'varazdin-hr', name:'Nogometni klub Varaždin sportsko dioničko društvo za obavljanje sportskih djelatnosti', displayName:'Varaždin', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'gorica-hr': { id:'gorica-hr', name:'Hrvatski Nogometni klub GORICA s.d.d.', displayName:'Gorica', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

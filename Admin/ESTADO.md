@@ -73,10 +73,19 @@ se reescribe, no se acumula.
   y `'pending_official'` siguen existiendo en el código, con su rama en
   `yearKindForClub()`/`anioDropdownSuffix()`: son estados válidos, simplemente hoy no
   los usa ningún club.
-- DATOS: 146 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
+- DATOS: 161 clubes cargados con al menos un ejercicio REAL (balance o presupuesto
   oficial), de 14 países: Argentina 18, España 19, Japón 10, Brasil 32, Colombia 10,
-  Alemania 11, Inglaterra 19, México 1, Chile 3, Perú 1, Países Bajos 4, Croacia 5,
-  Bélgica 7, Dinamarca 6. La Versión 226 (2026-09-25) onboardeó 20 transcripts ya hechos y
+  Alemania 11, Inglaterra 19, México 1, Chile 3, Perú 1, Países Bajos 4, Croacia 8,
+  Bélgica 14, Dinamarca 11. La Versión 227 (2026-09-25) siguió el mismo pedido de Guido
+  ("20 más") con una 2da tanda: esta vez los 20 candidatos salieron de PAÍSES YA CARGADOS
+  (Bélgica/Dinamarca/Croacia) con series históricas completas ya transcriptas y sin cargar
+  — 15 clubes nuevos (Standard Liège, Union Saint-Gilloise, Westerlo, Zulte Waregem,
+  Sint-Truiden, Cercle Brugge, Dender EH — Bélgica; FC Fredericia, FC Nordsjælland,
+  Randers FC, Vejle, SønderjyskE — Dinamarca; Istra 1961, Varaždin, Gorica — Croacia) más
+  7 ejercicios nuevos de 4 clubes ya cargados (Los Andes 2019/20, RB Leipzig 2021/22,
+  Bayern Munich 2022/23, Botafogo(Río) 2023+2025, Cruzeiro 2022+2023). SIN dead-ends esta
+  vez (los 20 cerraron los 20, con 2 P0 reales encontrados y corregidos en la integración —
+  detalle en `Admin/CHANGELOG.md`). La Versión 226 (mismo día) onboardeó 20 transcripts ya hechos y
   sin cargar, elegidos SIN prioridad de país (pedido de Guido: "20 transcripts que no hayan
   sido onboardeados, no me importa un orden específico"), en 5 agentes paralelos + 1 de
   reemplazo: 15 clubes NUEVOS (Osijek, Slaven Belupo — Croacia; AGF, Silkeborg IF, Viborg
@@ -206,10 +215,10 @@ se reescribe, no se acumula.
   un ejercicio puntual ("Balance 2024/2025") sin bajar nada.
 - VERIFICACIÓN AUTOMÁTICA: `verifyTieOuts()` exige que cada ejercicio con total
   oficial conocido cierre contra el documento impreso, y `checkFxSanity()` que
-  cada `fx` caiga en un rango plausible para su moneda. Hoy son 779 checks (3 no
+  cada `fx` caiga en un rango plausible para su moneda. Hoy son 842 checks (3 no
   cierran, los mismos ±0,1 M€ de redondeo de Bayern Munich 2024/2025 ya documentados
-  y silenciados, nada nuevo de esta tanda), 0 warnings de fx (medido el 2026-09-25,
-  Versión 226, tras la tanda de 20 transcripts al azar).
+  y silenciados, nada nuevo de esta tanda ni de la anterior), 0 warnings de fx (medido
+  el 2026-09-25, Versión 227, tras la 2da tanda de 20 transcripts).
   COMPLEMENTO, DESDE LA VERSIÓN 122: `node tools/audit.js` audita en Node lo que un
   total correcto NO delata (ejercicios que no tienen ningún total contra qué
   compararse, categorías con typo o prestadas de la otra taxonomía, errores de
@@ -219,11 +228,14 @@ se reescribe, no se acumula.
   problema real: `tools/generate-fuentes-page.js` LEE `ASSET_V` de `index.html`, así que
   subirlo desactualiza las 42 páginas de fuentes sin tocar un dato y sin que nada se vea
   roto. Carga `js/finanzas-calc.js` en un contexto de `vm`
-  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 0 P2, 8 P3 y 100
-  silenciados con su motivo en `tools/audit-ignore.json` (medido el 2026-09-25, Versión 226, tras
-  la tanda de 20 transcripts al azar — 10 hallazgos nuevos silenciados: 7 deducciones fiscales
-  verificadas y 3 catch-all dominante por límite real de la fuente, ver `Admin/CHANGELOG.md`). ~40 de
-  esos 100 son de las 4 sesiones de onboarding de PDF pendientes (Versiones 217/219/220/221) —
+  y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 1 P2 (intencional: 2
+  ejercicios sin fila de liga porque jugaron un 2do escalón sin catálogo todavía, Zulte Waregem
+  2025 y FC Fredericia 2019), 8 P3 y 114 silenciados con su motivo en `tools/audit-ignore.json`
+  (medido el 2026-09-25, Versión 227, tras la 2da tanda de 20 transcripts — 14 hallazgos nuevos
+  silenciados: 5 deducciones fiscales/variaciones de existencias verificadas y 9 catch-all
+  dominante por límite real de la fuente; y 2 P0 reales encontrados y corregidos en la
+  integración, ver `Admin/CHANGELOG.md`). ~40 de esos 114 son de las 4 sesiones de onboarding de
+  PDF pendientes (Versiones 217/219/220/221) —
   categorizaciones legítimas verificadas contra el documento fuente, y un puñado de P0 reales
   encontrados y corregidos en la integración de cada tanda (típicamente `officialTotalExpenses`
   incluyendo por error un ítem `exceptional_items` que el motor excluye de ese check). El detalle
@@ -561,7 +573,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 146 clubes, 269 ejercicios, 14 países.
+TOTAL: 161 clubes, 291 ejercicios, 14 países.
 
 ARGENTINA (18)
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
@@ -573,7 +585,7 @@ ARGENTINA (18)
   Godoy Cruz                     1 ejercicio (2019/2020), balance, ARS
   Independiente                  2 ejercicios (2023/2024, 2025/2026), balance, ARS
   Instituto ACC                  1 ejercicio (2023/2024), balance, ARS
-  Los Andes                      1 ejercicio (2020/2021), balance, ARS
+  Los Andes                      2 ejercicios (2019/2020 a 2020/2021), balance, ARS
   Newell's Old Boys              1 ejercicio (2018/2019), balance, ARS
   Racing Club                    17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS
   River Plate                    1 ejercicio (2023/2024), balance de réplica no oficial, ARS
@@ -583,14 +595,21 @@ ARGENTINA (18)
   Unión                          4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Vélez Sarsfield                11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 
-BE (7)
-  Anderlecht   1 ejercicio (2024/2025), balance, EUR
-  Antwerp      1 ejercicio (2024/2025), balance, EUR
-  Charleroi    1 ejercicio (2024/2025), balance, EUR
-  Club Brugge  1 ejercicio (2024/2025), balance, EUR
-  Genk         1 ejercicio (2024/2025), balance, EUR
-  Gent         1 ejercicio (2024/2025), balance, EUR
-  Mechelen     1 ejercicio (2024/2025), balance, EUR
+BE (14)
+  Anderlecht            1 ejercicio (2024/2025), balance, EUR
+  Antwerp               1 ejercicio (2024/2025), balance, EUR
+  Cercle Brugge         1 ejercicio (2024/2025), balance, EUR
+  Charleroi             1 ejercicio (2024/2025), balance, EUR
+  Club Brugge           1 ejercicio (2024/2025), balance, EUR
+  Dender EH             1 ejercicio (2024/2025), balance, EUR
+  Genk                  1 ejercicio (2024/2025), balance, EUR
+  Gent                  1 ejercicio (2024/2025), balance, EUR
+  Mechelen              1 ejercicio (2024/2025), balance, EUR
+  Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
+  Standard Liège        1 ejercicio (2024/2025), balance, EUR
+  Union Saint-Gilloise  1 ejercicio (2024/2025), balance, EUR
+  Westerlo              1 ejercicio (2024/2025), balance, EUR
+  Zulte Waregem         1 ejercicio (2024/2025), balance, EUR
 
 BRASIL (32)
   Amazonas              1 ejercicio (2024), balance, BRL
@@ -599,13 +618,13 @@ BRASIL (32)
   Atlético Goianiense   1 ejercicio (2025), balance, BRL
   Atlético Mineiro      3 ejercicios (2023 a 2025), balance, BRL
   Bahia                 2 ejercicios (2024 a 2025), balance, BRL
-  Botafogo              1 ejercicio (2024), balance, BRL
+  Botafogo              3 ejercicios (2023 a 2025), balance, BRL
   Botafogo-SP           1 ejercicio (2024), balance, BRL
   Ceará                 2 ejercicios (2024 a 2025), balance, BRL
   Chapecoense           2 ejercicios (2017, 2021), balance, BRL
   Corinthians           2 ejercicios (2024 a 2025), balance, BRL
   Coritiba              2 ejercicios (2023 a 2024), balance, BRL
-  Cruzeiro              2 ejercicios (2024 a 2025), balance, BRL
+  Cruzeiro              4 ejercicios (2022 a 2025), balance, BRL
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
@@ -645,24 +664,29 @@ COLOMBIA (10)
 
 ALEMANIA (11)
   1. FC Köln                2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Bayern Munich             3 ejercicios (2020/2021, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Bayern Munich             4 ejercicios (2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Borussia Dortmund         2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
   Borussia Mönchengladbach  2 ejercicios (2023 a 2024), balance, EUR
   Eintracht Frankfurt       2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   FC Augsburg               2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Hamburger SV              2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
-  RB Leipzig                3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
+  RB Leipzig                4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
   TSG Hoffenheim            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   VfB Stuttgart             2 ejercicios (2023 a 2024), balance, EUR
   Werder Bremen             3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
 
-DK (6)
-  AGF             1 ejercicio (2020/2021), balance, DKK
-  Brøndby         1 ejercicio (2020), balance, DKK, sin deuda/caja
-  FC København    1 ejercicio (2024), balance, DKK, sin deuda/caja
-  FC Midtjylland  1 ejercicio (2018/2019), balance, DKK, sin deuda/caja
-  Silkeborg IF    1 ejercicio (2024), balance, DKK
-  Viborg FF       1 ejercicio (2023/2024), balance, DKK
+DK (11)
+  AGF              1 ejercicio (2020/2021), balance, DKK
+  Brøndby          1 ejercicio (2020), balance, DKK, sin deuda/caja
+  FC Fredericia    1 ejercicio (2019), balance, DKK
+  FC København     1 ejercicio (2024), balance, DKK, sin deuda/caja
+  FC Midtjylland   1 ejercicio (2018/2019), balance, DKK, sin deuda/caja
+  FC Nordsjælland  1 ejercicio (2024), balance, DKK
+  Randers FC       1 ejercicio (2022/2023), balance, DKK
+  Silkeborg IF     1 ejercicio (2024), balance, DKK
+  SønderjyskE      1 ejercicio (2021/2022), balance, DKK
+  Vejle            1 ejercicio (2024), balance, DKK
+  Viborg FF        1 ejercicio (2023/2024), balance, DKK
 
 ESPAÑA (19)
   Athletic Club       1 ejercicio (2024/2025), balance, EUR
@@ -706,12 +730,15 @@ INGLATERRA (19)
   West Ham United          1 ejercicio (2024/2025), balance, GBP
   Wolverhampton Wanderers  2 ejercicios (2023/2024 a 2024/2025), balance, GBP
 
-HR (5)
+HR (8)
   Dinamo Zagreb  1 ejercicio (2024), balance, EUR
+  Gorica         1 ejercicio (2025), balance, EUR
   Hajduk Split   1 ejercicio (2024), balance, EUR
+  Istra 1961     1 ejercicio (2025), balance, EUR, sin deuda/caja
   Osijek         1 ejercicio (2025), balance, EUR
   Rijeka         1 ejercicio (2024), balance, EUR
   Slaven Belupo  1 ejercicio (2025), balance, EUR
+  Varaždin       1 ejercicio (2025), balance, EUR
 
 JAPÓN (10)
   Cerezo Osaka         1 ejercicio (2025), balance, JPY, sin deuda/caja

@@ -292,10 +292,17 @@ const FX_CLOSE = {
   // Dinamarca (onboarding de FC København/Brøndby/FC Midtjylland, sesión 2026-09-25): mismo método
   // de cruce GBP/EUR × EUR/USD ya usado arriba, con DKK/EUR × EUR/USD.
   'DKK@2019-06-30': { fx: 6.5585, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2019 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4636) × EUR/USD (1,1380) (1 DKK ≈ 0,1525 USD)' },
+  // FC Fredericia (2da tanda, misma sesión): mismo método de cruce.
+  'DKK@2019-12-31': { fx: 6.6508, source: 'market_close', label: 'Cierre BCE al 31/12/2019, cruzando DKK/EUR (7,4715) × EUR/USD (1,1234) (1 DKK ≈ 0,1504 USD)' },
   'DKK@2020-12-31': { fx: 6.0638, source: 'market_close', label: 'Cierre BCE al 31/12/2020, cruzando DKK/EUR (7,4409) × EUR/USD (1,2271) (1 DKK ≈ 0,1650 USD)' },
   // AGF y Viborg FF (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar), mismo método
   // de cruce DKK/EUR × EUR/USD del boletín BCE.
   'DKK@2021-06-30': { fx: 6.2573, source: 'market_close', label: 'Cierre BCE al 30/6/2021, cruzando DKK/EUR (7,4362) × EUR/USD (1,1884) (1 DKK ≈ 0,1598 USD)' },
+  // SønderjyskE (2da tanda, misma sesión).
+  'DKK@2022-06-30': { fx: 7.0980, source: 'market_close', label: 'Cierre BCE al 30/6/2022, cruzando DKK/EUR (7,4362) × EUR/USD (1,0477) (1 DKK ≈ 0,1409 USD)' },
+  // Randers FC (2da tanda, misma sesión): cotización DIRECTA DKK/USD del Danmarks Nationalbank
+  // (banco central danés), no una cruzada BCE — fuente más precisa cuando está disponible.
+  'DKK@2023-06-30': { fx: 6.8089, source: 'market_close', label: 'Cierre Danmarks Nationalbank al 30/6/2023, cotización directa DKK/USD (1 DKK ≈ 0,1469 USD)' },
   'DKK@2024-06-30': { fx: 6.9664, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4575) × EUR/USD (1,0705) (1 DKK ≈ 0,1435 USD)' },
   'DKK@2024-12-31': { fx: 7.1786, source: 'market_close', label: 'Cierre BCE al 31/12/2024, cruzando DKK/EUR (7,4578) × EUR/USD (1,0389) (1 DKK ≈ 0,1393 USD)' },
 };

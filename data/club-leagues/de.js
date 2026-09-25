@@ -64,9 +64,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // descenso (14° puesto temporada 2023/24, que cubre ambos años calendario cargados).
   'monchengladbach-de':    { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
   // 2021 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): campeón de la 2020/21
-  // Bundesliga (9° título consecutivo), verificado vía Wikipedia/Bundesliga.com.
-  'bayernmunich-de':       { 2021: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  // Bundesliga (9° título consecutivo), verificado vía Wikipedia/Bundesliga.com. 2023 (2da tanda,
+  // misma sesión): campeón también de la 2022/23 Bundesliga (11° título consecutivo).
+  'bayernmunich-de':       { 2021: 'de-bundesliga', 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'dortmund-de':           { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
-  // 2023 (misma sesión): 3° en la 2022/23 Bundesliga, clasificó a Champions League.
-  'rbleipzig-de':          { 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  // 2022 (2da tanda, misma sesión) y 2023 (misma sesión): RB Leipzig es Bundesliga desde su ascenso
+  // en 2016/17, sin descenso nunca — 2022/23 terminó 3°, Champions League.
+  'rbleipzig-de':          { 2022: 'de-bundesliga', 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
 });

@@ -4,9 +4,9 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série A (BR) — 5 ejercicio(s) con ranking:
-//   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -25,6 +25,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"palmeiras-br", revenue:295.959, reportType:"official_balance_sheet",
         sourceId:"palmeiras-br-demonstracoes-2025",
         mix:[["Cuotas Sociales",26.3],["Comercial / Sponsors",43.046],["Estadio",25.304],["Televisión",32.728],["Premios por competencias",57.965],["Venta de Jugadores",109.445],["Otras secciones deportivas",0.163],["Otros ingresos",1.009]] },
+      { id:"botafogo", revenue:247.129, reportType:"official_balance_sheet",
+        sourceId:"botafogo-demonstracoes-2025",
+        mix:[["Cuotas Sociales",9.536],["Comercial / Sponsors",28.412],["Estadio",7.5],["Televisión",20.205],["Premios por competencias",48.904],["Venta de Jugadores",135.338],["Otras secciones deportivas",0.231],["Otros ingresos",-2.998]] },
       { id:"fluminense-br", revenue:180.271, reportType:"official_balance_sheet",
         sourceId:"fluminense-br-demonstracoes-2025",
         mix:[["Cuotas Sociales",14.585],["Comercial / Sponsors",14.238],["Estadio",6.524],["Televisión",105.421],["Venta de Jugadores",42.414],["Otras secciones deportivas",0.639],["Otros ingresos",-3.549]] },
@@ -110,6 +113,12 @@ window.RANKINGS["br-serieA"] = {
       { id:"saopaulo-br", revenue:138.178, reportType:"official_balance_sheet",
         sourceId:"saopaulo-br-demonstracoes-2023",
         mix:[["Cuotas Sociales",12.888],["Comercial / Sponsors",15.184],["Estadio",30.173],["Televisión",53.589],["Venta de Jugadores",24.936],["Otras secciones deportivas",2.04],["Otros ingresos",-0.632]] },
+      { id:"botafogo", revenue:110.98, reportType:"official_balance_sheet",
+        sourceId:"botafogo-demonstracoes-2023",
+        mix:[["Cuotas Sociales",5.818],["Comercial / Sponsors",13.943],["Estadio",10.029],["Televisión",19.083],["Premios por competencias",12.648],["Venta de Jugadores",17.093],["Otras secciones deportivas",0.047],["Otros ingresos",32.32]] },
+      { id:"cruzeiro", revenue:86.197, reportType:"official_balance_sheet",
+        sourceId:"cruzeiro-informativo-financeiro-2023",
+        mix:[["Cuotas Sociales",6.413],["Comercial / Sponsors",12.475],["Estadio",5.912],["Televisión",21.013],["Venta de Jugadores",3.731],["Otras secciones deportivas",0.496],["Otros ingresos",36.157]] },
       { id:"vascodagama-br", revenue:71.33, reportType:"official_balance_sheet",
         sourceId:"vascodagama-br-demonstracoes-2023",
         mix:[["Cuotas Sociales",6.568],["Comercial / Sponsors",11.902],["Estadio",5.478],["Televisión",20.386],["Premios por competencias",4.098],["Venta de Jugadores",25.559],["Otras secciones deportivas",0.265],["Otros ingresos",-2.926]] },

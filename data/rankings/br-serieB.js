@@ -7,7 +7,7 @@
 //   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -83,6 +83,9 @@ window.RANKINGS["br-serieB"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"cruzeiro", revenue:28.122, reportType:"official_balance_sheet",
+        sourceId:"cruzeiro-informativo-financeiro-2022",
+        mix:[["Cuotas Sociales",5.812],["Comercial / Sponsors",8.235],["Estadio",6.121],["Televisión",5.502],["Venta de Jugadores",2.919],["Otras secciones deportivas",0.184],["Otros ingresos",-0.652]] },
       { id:"pontepreta-br", revenue:8.595, reportType:"official_balance_sheet",
         sourceId:"pontepreta-br-balanco-2021-2022",
         mix:[["Comercial / Sponsors",0.466],["Estadio",0.175],["Televisión",2.673],["Venta de Jugadores",4.396],["Otras secciones deportivas",0.101],["Otros ingresos",0.784]] },

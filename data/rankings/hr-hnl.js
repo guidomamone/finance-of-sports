@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // HNL (HR) — 2 ejercicio(s) con ranking:
-//   2025: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -22,6 +22,15 @@ window.RANKINGS["hr-hnl"] = {
       { id:"slavenbelupo-hr", revenue:6.683, reportType:"official_balance_sheet",
         sourceId:"slavenbelupo-hr-financijsko-izvjesce-2025",
         mix:[["Cuotas Sociales",0.049],["Comercial / Sponsors",2.138],["Estadio",0.357],["Televisión",1.107],["Premios por competencias",2.202],["Venta de Jugadores",0.26],["Otros ingresos",0.571]] },
+      { id:"varazdin-hr", revenue:6.034, reportType:"official_balance_sheet",
+        sourceId:"varazdin-hr-financijsko-izvjesce-2025",
+        mix:[["Comercial / Sponsors",1.715],["Estadio",0.652],["Televisión",1.195],["Premios por competencias",1.749],["Otros ingresos",0.723]] },
+      { id:"istra-hr", revenue:5.084, reportType:"official_balance_sheet",
+        sourceId:"istra-hr-financijsko-izvjesce-2025",
+        mix:[["Comercial / Sponsors",0.834],["Estadio",0.595],["Televisión",1.053],["Premios por competencias",2.202],["Otros ingresos",0.401]] },
+      { id:"gorica-hr", revenue:4.751, reportType:"official_balance_sheet",
+        sourceId:"gorica-hr-financijsko-izvjesce-2025",
+        mix:[["Cuotas Sociales",0.137],["Comercial / Sponsors",0.507],["Estadio",0.239],["Televisión",0.824],["Premios por competencias",1.132],["Venta de Jugadores",0.575],["Otros ingresos",1.337]] },
     ],
   },
   2024: {
