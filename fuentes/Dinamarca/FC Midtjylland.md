@@ -27,4 +27,10 @@ societaria Aktieselskab).
 
 Ninguna.
 
+- **CARGADO al sitio (2026-09-25)**: ejercicio 2018/19 (NO el más reciente disponible), `data/
+  midtjylland-dk-data.js` (clubId `midtjylland-dk`). Se usó este año, no 2022/23-2024, porque los
+  balances más recientes reportan desde "Bruttofortjeneste" (Revenue neto de Cost of Sales) sin
+  desglosar Revenue bruto en ningún lado — 2018/19 sí separa Nettoomsætning como línea propia.
+  Tie-out exacto.
+
 - Último chequeo: 2026-09-17.

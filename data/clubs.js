@@ -313,6 +313,14 @@ const clubs = {
   'anderlecht-be': { id:'anderlecht-be', name:'Royal Sporting Club Anderlecht NV', displayName:'Anderlecht', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#4C2484' },
   'genk-be': { id:'genk-be', name:'K. Racing Club Genk 322 VZW', displayName:'Genk', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00468F' },
   'gent-be': { id:'gent-be', name:'K.A.A. Gent NV', displayName:'Gent', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#004794' },
+  // Dinamarca (sesión de esta tanda): PAÍS NUEVO, DKK MONEDA NUEVA (ver data/currency-map.js), 3
+  // clubes de la Superliga, cada uno con el ejercicio más reciente que permitiera separar Revenue de
+  // Expenses de verdad (ver comentario de cabecera de cada archivo — FC Midtjylland usa 2019 en vez
+  // de un año más reciente porque sus balances 2022+ netean Revenue contra Cost of Sales en una sola
+  // línea "Bruttofortjeneste", sin desglose disponible). brandColor: footylogos.com/Wikipedia.
+  'fckobenhavn-dk': { id:'fckobenhavn-dk', name:'F.C. København P/S', displayName:'FC København', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#375197' },
+  'brondby-dk': { id:'brondby-dk', name:'Brøndbyernes I.F. Fodbold A/S', displayName:'Brøndby', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFD100' },
+  'midtjylland-dk': { id:'midtjylland-dk', name:'FC Midtjylland A/S', displayName:'FC Midtjylland', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#B60C28' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

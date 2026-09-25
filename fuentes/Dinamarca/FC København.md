@@ -56,4 +56,10 @@ hovedbankforbindelsen [...] PARKEN Sport & Entertainment A/S".
 - **¿Vale la pena bajar F.C. København Kvindefodbold A/S (CVR 44 66 69 36)** como perímetro
   alternativo/complementario? No se bajó en esta sesión (fuera de alcance: fútbol femenino).
 
+- **CARGADO al sitio (2026-09-25)**: ejercicio 2024, `data/fckobenhavn-dk-data.js` (clubId
+  `fckobenhavn-dk`, primer club de Dinamarca — país nuevo, DKK moneda nueva). Se usó la entidad
+  standalone de fútbol masculino (F.C. København P/S, constituida 2023), no la holding
+  consolidada PARKEN Sport & Entertainment A/S (perímetro mezclado con estadio/retail/fútbol
+  femenino). Tie-out exacto.
+
 - Último chequeo: 2026-09-17.

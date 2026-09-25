@@ -1539,3 +1539,22 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   ticketing/sponsors/TV en ningún desglose disponible en estos 3 documentos — a diferencia de Club
   Brugge, que sí trae ese desglose (usa la versión consolidada). Si algún club belga publica en el
   futuro un informe con más desglose, revisar si se puede separar estas líneas con más precisión.
+
+## Dinamarca (FC København, Brøndby, FC Midtjylland) — onboarding, país nuevo, sesión 2026-09-25
+
+- **FC København — "TV- og præmie-indtægter" mezcla derechos de TV con premios por competencia, sin
+  desglose**: se categorizó como `broadcasting` (TV listado primero en el rótulo, y el salto de
+  110.836 t.kr. en 2024 a 477.453 t.kr. en 2023 —año de fase de grupos de Champions League— es
+  consistente con que la porción de TV/UEFA domina), pero es una aproximación, no una certeza.
+- **FC København y Brøndby — "Ejendomsudlejning"/"Udlejning erhvervsejendom" (alquiler de
+  inmuebles/propiedad comercial) categorizado como `other_income`, no `stadium_other`**: a diferencia
+  de las líneas de F&B/eventos (que sí se cargaron como `stadium_other` por estar en la sede propia),
+  estos rótulos no nombran el estadio ni una parte de él — se aplicó el criterio conservador de
+  `club-data-mapping` sección 1. Si en el futuro se confirma que el inmueble alquilado es parte del
+  propio estadio (Parken/Brøndby Stadion), recategorizar a `stadium_other`.
+- **Brøndby 2020 — "Entré-, TV- og præmieindtægter" categorizado como `broadcasting`, no
+  `matchday_competition`**: la línea mezcla entradas + TV + premios en un solo monto, y 2020 fue un
+  año con la mayoría de los partidos a puertas cerradas por COVID-19 (el club recibió compensación
+  estatal por "pérdida de organizador"), así que la porción de recaudación de entradas fue mínima ese
+  año específico — decisión puntual de 2020, no un criterio general para reusar en otro ejercicio de
+  este club si se carga uno con público normal.

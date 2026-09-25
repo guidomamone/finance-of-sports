@@ -12,9 +12,9 @@ gratis, sin login, sin bloqueo de Cloudflare, y scripteable con curl — los 12 
 `fuentes/Dinamarca/_notas-generales.md` y la sección 18 del skill de sourcing.
 
 - [AGF](<../Dinamarca/AGF.md>) — 30 ejercicios reales, serie completa 1995-2025/26, sin cargar aún — Último chequeo: 2026-09-17
-- [Brøndby](<../Dinamarca/Brøndby.md>) — 30 ejercicios reales, serie completa 1995-2025, sin cargar aún — Último chequeo: 2026-09-17
-- [FC København](<../Dinamarca/FC København.md>) — 30 ejercicios del consolidado PARKEN S&E + 3 de la entidad de fútbol standalone (desde 2023), ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
-- [FC Midtjylland](<../Dinamarca/FC Midtjylland.md>) — 17 ejercicios reales, serie completa 2008/09-2024/25, sin cargar aún — Último chequeo: 2026-09-17
+- [Brøndby](<../Dinamarca/Brøndby.md>) — 30 ejercicios reales, serie completa 1995-2025; CARGADO al sitio (`brondby-dk`, ejercicio 2020) — Último chequeo: 2026-09-17
+- [FC København](<../Dinamarca/FC København.md>) — 30 ejercicios del consolidado PARKEN S&E + 3 de la entidad de fútbol standalone (desde 2023); CARGADO al sitio (`fckobenhavn-dk`, ejercicio 2024, entidad standalone) — Último chequeo: 2026-09-17
+- [FC Midtjylland](<../Dinamarca/FC Midtjylland.md>) — 17 ejercicios reales, serie completa 2008/09-2024/25; CARGADO al sitio (`midtjylland-dk`, ejercicio 2018/19) — Último chequeo: 2026-09-17
 - [FC Fredericia](<../Dinamarca/FC Fredericia.md>) — 22 ejercicios reales, serie completa 2004-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [FC Nordsjælland](<../Dinamarca/FC Nordsjælland.md>) — 26 ejercicios reales, serie completa 2000-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [OB](<../Dinamarca/OB.md>) — 30 ejercicios reales, perímetro mezclado con otras actividades del grupo, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17

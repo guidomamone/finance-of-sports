@@ -81,6 +81,11 @@ const CURRENCY_META = {
   // Inglaterra (5 clubes Premier League + Alemania Bundesliga, sesión 2026-09-22): la libra ronda
   // ~1-1,5 USD, mismo orden de magnitud que EUR — scale:1.
   GBP: { scale: 1, unitSuffix: 'M' },          // Inglaterra
+  // Dinamarca (FC København/Brøndby/FC Midtjylland, moneda NUEVA para el sitio, sesión 2026-09-25):
+  // la corona danesa ronda ~6,5-7,5 DKK por USD, mismo orden de magnitud que ARS/CLP/COP NO — está
+  // fijada al euro (ERM II, tasa central 7,46038 DKK = 1 EUR desde 1982) y el equivalente en USD
+  // queda en el mismo orden que EUR/GBP/BRL — scale:1, mismo criterio.
+  DKK: { scale: 1, unitSuffix: 'M' },          // Dinamarca
 };
 
 // Fallback para cualquier código ISO sin entrada propia todavía: nunca
@@ -273,6 +278,11 @@ const FX_CLOSE = {
   // clubes ingleses cargados hasta ahora).
   'GBP@2024-07-31': { fx: 0.7793, source: 'market_close', label: 'Cierre BCE al 31/7/2024, cruzando GBP/EUR (0,84380) × EUR/USD (1,0828) (1 GBP ≈ 1,2832 USD)' },
   'GBP@2025-07-31': { fx: 0.7556, source: 'market_close', label: 'Cierre BCE al 31/7/2025, cruzando GBP/EUR (0,86490) × EUR/USD (1,1446) (1 GBP ≈ 1,3235 USD)' },
+  // Dinamarca (onboarding de FC København/Brøndby/FC Midtjylland, sesión 2026-09-25): mismo método
+  // de cruce GBP/EUR × EUR/USD ya usado arriba, con DKK/EUR × EUR/USD.
+  'DKK@2019-06-30': { fx: 6.5585, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2019 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4636) × EUR/USD (1,1380) (1 DKK ≈ 0,1525 USD)' },
+  'DKK@2020-12-31': { fx: 6.0638, source: 'market_close', label: 'Cierre BCE al 31/12/2020, cruzando DKK/EUR (7,4409) × EUR/USD (1,2271) (1 DKK ≈ 0,1650 USD)' },
+  'DKK@2024-12-31': { fx: 7.1786, source: 'market_close', label: 'Cierre BCE al 31/12/2024, cruzando DKK/EUR (7,4578) × EUR/USD (1,0389) (1 DKK ≈ 0,1393 USD)' },
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
@@ -324,6 +334,9 @@ const FX_PLAUSIBLE_RANGE = {
   JPY: [100, 180],       // Japón
   GBP: [0.6, 0.95],      // Inglaterra — GBP por 1 USD; la libra rondó 1,05-1,45 USD en las últimas
                           // dos décadas, así que el inverso (lo que va acá) ronda 0,69-0,95.
+  DKK: [5, 8],           // Dinamarca — fijada al euro (ERM II, ~7,46 DKK = 1 EUR desde 1982), así
+                          // que el rango sigue de cerca al de EUR/USD histórico (0,7-1,15) cruzado
+                          // por ~7,46: nunca se aleja mucho de 6-8 DKK por USD.
 };
 
 // checkFxSanity(): recorre todo lo que haya en window.CLUB_GENERIC_DATA y avisa por consola

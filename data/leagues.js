@@ -91,6 +91,7 @@ const COUNTRIES = {
   CL: { name:'Chile',     key:'country.CL', flag:'🇨🇱', region:'sudamerica' },
   CO: { name:'Colombia',  key:'country.CO', flag:'🇨🇴', region:'sudamerica' },
   DE: { name:'Alemania',  key:'country.DE', flag:'🇩🇪', region:'europa' },
+  DK: { name:'Dinamarca', key:'country.DK', flag:'🇩🇰', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
   GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
   HR: { name:'Croacia',   key:'country.HR', flag:'🇭🇷', region:'europa' },
@@ -154,6 +155,10 @@ const LEAGUES = {
   // 2ª división (Versión de esta sesión, onboarding de Köln 2024/25 y Elche 2023/24-2024/25): mismo
   // criterio que ar-primeranacional/br-serieB, el id nombra el escalón.
   'de-2bundesliga':    { name:'2. Bundesliga',         full:'2. Fußball-Bundesliga',               country:'DE', sport:'futbol', tier:2 },
+  // Dinamarca (onboarding de FC København/Brøndby/FC Midtjylland, esta sesión): temporada jul-jun,
+  // pero los 3 clubes cargados reportan en ejercicio CALENDARIO (FC Midtjylland es la excepción,
+  // cierra 30/6) — el id nombra el escalón, no la temporada ni el ejercicio contable de cada club.
+  'dk-superliga':      { name:'Superliga',              full:'Danish Superliga',                    country:'DK', sport:'futbol', tier:1 },
   'es-laliga':         { name:'LaLiga',                full:'Primera División de España',          country:'ES', sport:'futbol', tier:1 },
   'es-segunda':        { name:'Segunda División',      full:'Segunda División de España',          country:'ES', sport:'futbol', tier:2 },
   'gb-premierleague':  { name:'Premier League',        full:'Premier League',                      country:'GB', sport:'futbol', tier:1 },
