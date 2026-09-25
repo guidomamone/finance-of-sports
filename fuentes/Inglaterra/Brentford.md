@@ -24,3 +24,8 @@ Consolidated Financial Statements for the Year Ended 30 June 2025`. Entidad y pe
 asumidos.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/brentford-gb-data.js`
+  (clubId `brentford-gb`). Premier League los 2 ejercicios (16° y 10°). OJO 2023-24: la Nota de
+  intereses pagados imprime un total que no reconcilia con sus propios componentes — se usó la
+  suma de los 2 componentes (el único valor que hace cerrar "Loss before taxation"), ver
+  comentario de cabecera de `data/brentford-gb-data.js`.

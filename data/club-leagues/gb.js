@@ -45,4 +45,14 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'sunderland-gb':       { 2024: 'gb-championship',  2025: 'gb-championship' },
   'westham-gb':          { 2025: 'gb-premierleague' },
   'wolves-gb':           { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  // 4 clubes ingleses más: Aston Villa (solo 2025 cargado), Bournemouth y Brentford jugaron Premier
+  // League en todos sus ejercicios cargados (confirmado en el propio documento de cada uno, no
+  // asumido). Burnley es la excepción: 2024 Premier League (recién ascendido, descendió 19°), 2025
+  // Championship (recién descendido, ascendió de nuevo terminando 2°) — confirmado también en el
+  // propio documento ("Turnover has decreased... due to the Club competing in the Championship,
+  // compared to the Premier League").
+  'astonvilla-gb':  { 2025: 'gb-premierleague' },
+  'bournemouth-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  'brentford-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  'burnley-gb':     { 2024: 'gb-premierleague', 2025: 'gb-championship' },
 });

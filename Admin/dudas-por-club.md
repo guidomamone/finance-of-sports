@@ -1299,6 +1299,30 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   para este ejercicio, o alcanza con la documentación interna? Cualquier comparación año a año entre
   2024 (12 meses) y 2025 (13 meses) va a sobreestimar el crecimiento real de este club.
 
+## Aston Villa (Inglaterra) — onboarding 2024-25, sesión 2026-09-25
+
+- **Limitación estructural genuina, no un error de carga**: a diferencia de TODOS los demás clubes
+  ingleses cargados, esta entidad (`Aston Villa Football Club Limited`, cuentas individuales, no
+  consolidadas) no tiene NINGÚN activo intangible en su balance ni reporta ninguna línea de
+  amortización/deterioro/venta de pases — cero mención de compraventa de jugadores en todo el
+  documento. El costo del plantel profesional casi con certeza vive en otra entidad del grupo NSWE
+  (NSWE UK Limited / NSWE Sports Limited), que no deposita cuentas separadas en Companies House. El
+  93,2% de "Operating expenses" (£404M de £433M) no tiene ningún desglose y se cargó como
+  `lump_football_operations_expense`. Consecuencia visible: el sitio va a mostrar para Aston Villa
+  "Salarios y primas"/"Compra de jugadores" con muy poca representación real, aunque el Revenue y el
+  Resultado neto SÍ sean correctos. No hay nada que preguntarle al club — es la estructura societaria
+  real, documentada así en el propio balance auditado — pero vale la pena que quien lea este club en
+  el sitio sepa que el desglose de gastos es menos confiable que el de otros clubes ingleses.
+
+## Brentford (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **Ejercicio 2023-24, Nota de intereses pagados con un total que no reconcilia**: el documento
+  imprime un total de intereses pagados (£6,020M) que no coincide con la suma de sus propios 2
+  componentes desglosados. Se usó £5,020M (la suma exacta de los 2 componentes, y el único valor que
+  hace cerrar "Loss before taxation" contra el total impreso) — mismo patrón de error de imprenta/OCR
+  ya visto en otros documentos de este tipo. Vale la pena confirmar contra el PDF original si se
+  quiere citar este ejercicio con más certeza.
+
 ## Levante UD (España) — onboarding 2024-25, sesión 2026-09-25
 
 - **`brandColor` sin resolver**: el kit es a mitades verticales azul y granate ("azulgrana", mismo

@@ -34,3 +34,9 @@ Moor`. Directores coinciden con la propiedad conocida del club (Alan Pace / ALK 
 confirmada, no asumida.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/burnley-gb-data.js`
+  (clubId `burnley-gb`). Tie-out exacto. Único de los 5 clubes ingleses onboardeados en esta
+  sesión que NO jugó Premier League los 2 años: 2023-24 Premier League (19°, descendió),
+  2024-25 Championship (2°, ascendió de nuevo) — confirmado en el propio documento, no asumido.
+  Cierre de ejercicio 31/7 (no 30/6 como el resto): `FX_CLOSE` nuevo, GBP@2024-07-31 y
+  GBP@2025-07-31.

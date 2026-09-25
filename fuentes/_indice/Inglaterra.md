@@ -10,12 +10,12 @@ sociedad limitada obligada a depositar cuentas auditadas) y, para los clubes de 
 **registro de mutuales de la FCA** — ver [Notas generales de Inglaterra](../Inglaterra/_notas-generales.md),
 que es el archivo a leer antes de tocar cualquier club británico.
 
-- [AFC Bournemouth](../Inglaterra/AFC Bournemouth.md) — 2 ejercicios reales (2023/24-2024/25), 14 disponibles — Último chequeo: 2026-09-16
+- [AFC Bournemouth](../Inglaterra/AFC Bournemouth.md) — 2 ejercicios reales (2023/24-2024/25), 14 disponibles; CARGADOS al sitio (`bournemouth-gb`) — Último chequeo: 2026-09-16
 - [Arsenal](../Inglaterra/Arsenal.md) — CARGADO (Ejercicios 2024, 2025), 18 disponibles en total — Último chequeo: 2026-09-22
-- [Aston Villa](../Inglaterra/Aston Villa.md) — 1 ejercicio real (2024/25), 8 disponibles — Último chequeo: 2026-09-13
-- [Brentford](../Inglaterra/Brentford.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles — Último chequeo: 2026-09-16
+- [Aston Villa](../Inglaterra/Aston Villa.md) — 1 ejercicio real (2024/25), 8 disponibles; CARGADO al sitio (`astonvilla-gb`) — Último chequeo: 2026-09-13
+- [Brentford](../Inglaterra/Brentford.md) — 2 ejercicios reales (2023/24-2024/25), 12 disponibles; CARGADOS al sitio (`brentford-gb`) — Último chequeo: 2026-09-16
 - [Brighton & Hove Albion](../Inglaterra/Brighton & Hove Albion.md) — 2 ejercicios reales (2023/24-2024/25), 18 disponibles — Último chequeo: 2026-09-16
-- [Burnley](../Inglaterra/Burnley.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles; cuentas de la holding (Burnley FC Holdings Limited), no de la sociedad operativa — Último chequeo: 2026-09-16
+- [Burnley](../Inglaterra/Burnley.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles; cuentas de la holding (Burnley FC Holdings Limited), no de la sociedad operativa; CARGADOS al sitio (`burnley-gb`) — Último chequeo: 2026-09-16
 - [Chelsea](../Inglaterra/Chelsea.md) — 1 ejercicio real (2024/25), 12 disponibles — Último chequeo: 2026-09-13
 - [Crystal Palace](../Inglaterra/Crystal Palace.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; cuentas de la holding (CPFC 2010 Limited) — Último chequeo: 2026-09-16
 - [Everton](../Inglaterra/Everton.md) — CARGADO (Ejercicios 2024, 2025), 6 disponibles en total — Último chequeo: 2026-09-22

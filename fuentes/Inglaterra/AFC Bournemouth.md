@@ -24,3 +24,5 @@ OCR de la página 2 del PDF 2024/25: `AFC BOURNEMOUTH LIMITED` en el índice de 
 Report`, `Directors' Report`). Entidad confirmada, no asumida.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/bournemouth-gb-data.js`
+  (clubId `bournemouth-gb`). Tie-out exacto. Premier League los 2 ejercicios (12° y 9° puesto).

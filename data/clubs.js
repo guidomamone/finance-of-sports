@@ -244,6 +244,12 @@ const clubs = {
   'westham-gb': { id:'westham-gb', name:'West Ham United Football Club Limited', displayName:'West Ham United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#7C2C3B' },
   'wolves-gb': { id:'wolves-gb', name:'Wolverhampton Wanderers Football Club (1986) Limited', displayName:'Wolverhampton Wanderers', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#FDB913' },
   'levante-es': { id:'levante-es', name:'Levante Unión Deportiva, S.A.D. y Sociedades Dependientes', displayName:'Levante UD', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  // 4 clubes ingleses más (onboarding 2026-09-25, mismo pool de PDF transcriptos). brandColor
+  // verificado contra footylogos.com.
+  'astonvilla-gb': { id:'astonvilla-gb', name:'Aston Villa Football Club Limited', displayName:'Aston Villa', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#480024' },
+  'bournemouth-gb': { id:'bournemouth-gb', name:'AFC Bournemouth Limited', displayName:'AFC Bournemouth', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D6171C' },
+  'brentford-gb': { id:'brentford-gb', name:'Brentford FC Ltd', displayName:'Brentford', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E30613' },
+  'burnley-gb': { id:'burnley-gb', name:'Burnley FC Holdings Limited', displayName:'Burnley', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'08-01', sport:'futbol', brandColor:'#5F0041' },
   // 3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
   // que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
   // cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS

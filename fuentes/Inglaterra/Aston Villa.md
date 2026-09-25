@@ -22,3 +22,11 @@ OCR de la página 2: `Aston Villa Football Club Limited / Company Information / 
 W R Edens...`.
 
 - Último chequeo: 2026-09-13.
+- **CARGADO al sitio (2026-09-25)**: único ejercicio 2024-25 (30/6/2025), `data/astonvilla-gb-data.js`
+  (clubId `astonvilla-gb`). Premier League. **LIMITACIÓN GENUINA**: esta entidad (cuentas
+  individuales, no consolidadas) no reporta NINGÚN activo intangible ni compraventa de jugadores —
+  el costo del plantel casi con certeza vive en otra entidad del grupo NSWE, no depositada en
+  Companies House. El 93,2% de "Operating expenses" (£404M) quedó como lump sin desglosar
+  (`lump_football_operations_expense`), ver duda en `Admin/dudas-por-club.md`. El ejercicio
+  anterior (comparativo del mismo documento) es un período de 13 meses, no comparable, no se
+  cargó.
