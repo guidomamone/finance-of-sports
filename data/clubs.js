@@ -235,6 +235,15 @@ const clubs = {
   'mancity-gb': { id:'mancity-gb', name:'Manchester City Football Club Limited', displayName:'Manchester City', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6CABDD' },
   'everton-gb': { id:'everton-gb', name:'Everton Football Club Company, Limited', displayName:'Everton', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#003399' },
   'tottenham-gb': { id:'tottenham-gb', name:'Tottenham Hotspur Limited', displayName:'Tottenham Hotspur', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000a3c' },
+  // 5 clubes nuevos (onboarding 2026-09-25, pool de PDF ya transcriptos): Nottingham Forest,
+  // Sunderland, West Ham, Wolves (Inglaterra) y Levante (España, país ya cargado). brandColor
+  // verificado contra footylogos.com salvo Levante (ver duda en Admin/dudas-por-club.md: kit
+  // mitades azul/granate sin predominancia declarada, mismo caso que Crystal Palace).
+  'nottinghamforest-gb': { id:'nottinghamforest-gb', name:'Nottingham Forest Football Club Limited', displayName:'Nottingham Forest', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DD0000' },
+  'sunderland-gb': { id:'sunderland-gb', name:'Sunderland Association Football Club, Limited (The)', displayName:'Sunderland', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'08-01', sport:'futbol', brandColor:'#EB172B' },
+  'westham-gb': { id:'westham-gb', name:'West Ham United Football Club Limited', displayName:'West Ham United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#7C2C3B' },
+  'wolves-gb': { id:'wolves-gb', name:'Wolverhampton Wanderers Football Club (1986) Limited', displayName:'Wolverhampton Wanderers', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#FDB913' },
+  'levante-es': { id:'levante-es', name:'Levante Unión Deportiva, S.A.D. y Sociedades Dependientes', displayName:'Levante UD', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   // 3 clubes argentinos nuevos (sesión 2026-09-23, to-do 58 — barrido de sourcing del 2026-09-22
   // que descargó los PDFs, onboardeados en 3 agentes en paralelo): los 3 pasan de "sin nada
   // cargado" a tener ejercicios reales. `clubId` con sufijo de país porque son clubes NUEVOS

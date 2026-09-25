@@ -269,6 +269,10 @@ const FX_CLOSE = {
   // El 30/6/2024 es domingo, sin cotización BCE: se usa el boletín del viernes anterior.
   'GBP@2024-06-30': { fx: 0.7906, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando GBP/EUR (0,84638) × EUR/USD (1,0705) (1 GBP ≈ 1,2648 USD)' },
   'GBP@2025-06-30': { fx: 0.7299, source: 'market_close', label: 'Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD)' },
+  // Sunderland (onboarding 2026-09-25, cierre de ejercicio 31/7, distinto del 30/6 del resto de los
+  // clubes ingleses cargados hasta ahora).
+  'GBP@2024-07-31': { fx: 0.7793, source: 'market_close', label: 'Cierre BCE al 31/7/2024, cruzando GBP/EUR (0,84380) × EUR/USD (1,0828) (1 GBP ≈ 1,2832 USD)' },
+  'GBP@2025-07-31': { fx: 0.7556, source: 'market_close', label: 'Cierre BCE al 31/7/2025, cruzando GBP/EUR (0,86490) × EUR/USD (1,1446) (1 GBP ≈ 1,3235 USD)' },
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay

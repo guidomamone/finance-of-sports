@@ -32,4 +32,17 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'mancity-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'everton-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'tottenham-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  // 4 clubes nuevos: Nottingham Forest, West Ham y Wolves jugaron Premier League los 2 ejercicios
+  // (verificado contra "2023-24 Premier League" y "2024-25 Premier League", Wikipedia: ninguno de
+  // los 3 aparece en las listas de descendidos de esos 2 años — 2023/24: Luton/Burnley/Sheffield
+  // United; 2024/25: Leicester/Ipswich/Southampton). Sunderland es el caso distinto: ascendió a la
+  // Premier League recién para 2025/26 (vía playoff, jugado en mayo de 2025, POSTERIOR al cierre de
+  // su ejercicio 2024/25) — sus 2 ejercicios cargados (2024 y 2025, cierre 31/7) fueron enteros en
+  // el Championship, confirmado por el propio Strategic Report de cada documento. El ejercicio
+  // "2025" de Wolves cubre 13 meses (1/6/2024-30/6/2025, cambio de fecha de cierre de ejercicio)
+  // pero cae enteramente dentro de la temporada 2024/25 de Premier League, sin ambigüedad de liga.
+  'nottinghamforest-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  'sunderland-gb':       { 2024: 'gb-championship',  2025: 'gb-championship' },
+  'westham-gb':          { 2025: 'gb-premierleague' },
+  'wolves-gb':           { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
 });

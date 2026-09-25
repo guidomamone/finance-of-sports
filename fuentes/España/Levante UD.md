@@ -18,3 +18,8 @@
   2024-25 si existe por separado.
 - Contacto: `levanteud.com/es/transparencia`.
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: único ejercicio disponible, 2024-25, `data/levante-es-data.js`
+  (clubId `levante-es`). Tie-out exacto. Jugado en Segunda División (el ascenso vía playoff, en
+  junio de 2025, fue el RESULTADO de este mismo ejercicio, para la temporada 2025/26). `brandColor`
+  sin resolver — kit a mitades azul/granate sin predominancia declarada, mismo caso que Crystal
+  Palace (ver `Admin/dudas-por-club.md`).

@@ -58,6 +58,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'rcdmallorca-es': { 2025: 'es-laliga' }, // 10° de 20
   'rayovallecano-es': { 2025: 'es-laliga' }, // 8° de 20
   'realoviedo-es': { 2025: 'es-segunda' },
+  // Levante UD, club nuevo: ejercicio 2024/25 (cierre 30/6/2025) jugado en Segunda División — el
+  // ascenso a Primera fue el RESULTADO de este mismo ejercicio (playoff de junio de 2025, para la
+  // temporada 2025/26), confirmado por la propia memoria consolidada del club. Mismo patrón que
+  // Sunderland en Inglaterra.
+  'levante-es': { 2025: 'es-segunda' },
 });
 
 // ---------------------------------------------------------------------------

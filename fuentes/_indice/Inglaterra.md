@@ -25,11 +25,11 @@ que es el archivo a leer antes de tocar cualquier club británico.
 - [Manchester City](../Inglaterra/Manchester City.md) — CARGADO (Ejercicios 2024, 2025), 15 disponibles en total; cuentas individuales, no del grupo — Último chequeo: 2026-09-22
 - [Manchester United](../Inglaterra/Manchester United.md) — 20-F 2024/25 real, **sin escanear (HTML)**, ingresos £666,5 M ya verificados — Último chequeo: 2026-09-13
 - [Newcastle United](../Inglaterra/Newcastle United.md) — 1 ejercicio real (2024/25), 14 disponibles — Último chequeo: 2026-09-13
-- [Nottingham Forest](../Inglaterra/Nottingham Forest.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles — Último chequeo: 2026-09-16
-- [Sunderland](../Inglaterra/Sunderland.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles — Último chequeo: 2026-09-16
+- [Nottingham Forest](../Inglaterra/Nottingham Forest.md) — 2 ejercicios reales (2023/24-2024/25), 13 disponibles; CARGADOS al sitio (`nottinghamforest-gb`) — Último chequeo: 2026-09-16
+- [Sunderland](../Inglaterra/Sunderland.md) — 2 ejercicios reales (2023/24-2024/25), 15 disponibles; CARGADOS al sitio (`sunderland-gb`) — Último chequeo: 2026-09-16
 - [Tottenham Hotspur](../Inglaterra/Tottenham Hotspur.md) — CARGADO (Ejercicios 2024, 2025), 12 disponibles en total — Último chequeo: 2026-09-22
-- [West Ham United](../Inglaterra/West Ham United.md) — 1 ejercicio real (2024/25), 9 disponibles — Último chequeo: 2026-09-13
-- [Wolverhampton Wanderers](../Inglaterra/Wolverhampton Wanderers.md) — 2 ejercicios reales (2023/24-2024/25), 24 disponibles — Último chequeo: 2026-09-16
+- [West Ham United](../Inglaterra/West Ham United.md) — 1 ejercicio real (2024/25), 9 disponibles; CARGADO al sitio (`westham-gb`) — Último chequeo: 2026-09-13
+- [Wolverhampton Wanderers](../Inglaterra/Wolverhampton Wanderers.md) — 2 ejercicios reales (2023/24-2024/25), 24 disponibles; CARGADOS al sitio (`wolves-gb`) — Último chequeo: 2026-09-16
 - [Bath Rugby](../Inglaterra/Bath Rugby.md) — **rugby union (Premiership)** — 2 ejercicios reales, ingresos £23,3 M verificados, 16 disponibles — Último chequeo: 2026-09-13
 - [Harlequins](../Inglaterra/Harlequins.md) — **rugby union (Premiership)** — 1 ejercicio real (2022/23), 13 disponibles; los 2 últimos son cuentas abreviadas, verificar — Último chequeo: 2026-09-13
 - [Leicester Tigers](../Inglaterra/Leicester Tigers.md) — **rugby union (Premiership)** — 2 ejercicios reales, 12 disponibles — Último chequeo: 2026-09-13

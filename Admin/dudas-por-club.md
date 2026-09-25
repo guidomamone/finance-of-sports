@@ -1288,3 +1288,22 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   y la otra en pagos de caja del semestre? (pregunta ya anotada por la sesión de sourcing del
   2026-09-13, se repite acá porque sigue sin resolver y sería relevante si en el futuro aparece un
   documento cargable de este club).
+
+## Wolverhampton Wanderers (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
+
+- **El ejercicio "2025" cubre 13 meses, no 12** (1/6/2024 a 30/6/2025): la compañía cambió su fecha de
+  cierre de ejercicio de 31 de mayo a 30 de junio, y el documento disponible es el período de
+  transición completo, no un año calendario normal. Se cargó igual (la alternativa era dejar a Wolves
+  con un solo ejercicio real), documentado en detalle en el comentario de cabecera de
+  `data/wolves-gb-data.js`. Pregunta para Guido: ¿preferís una nota visible de "13 meses" en el sitio
+  para este ejercicio, o alcanza con la documentación interna? Cualquier comparación año a año entre
+  2024 (12 meses) y 2025 (13 meses) va a sobreestimar el crecimiento real de este club.
+
+## Levante UD (España) — onboarding 2024-25, sesión 2026-09-25
+
+- **`brandColor` sin resolver**: el kit es a mitades verticales azul y granate ("azulgrana", mismo
+  patrón de nombre que Barcelona pero con las mitades invertidas), sin que ninguna fuente consultada
+  (footylogos, Wikipedia) declare cuál de los dos predomina — mismo caso que Crystal Palace
+  (rojo/azul en franjas, sin desempate posible con las 4 reglas del skill). Quedó `brandColor:null`
+  en `data/clubs.js`. Candidatos de hex si Guido quiere elegir uno: azul `#005CA5` / granate `#B4053F`
+  (footylogos.com).

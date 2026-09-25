@@ -30,3 +30,7 @@ CLUB (1986) LIMITED`, directores `J F Bowater`, `J Gough`, `Y Shi` (resigned 19/
 Company number 01989823 confirmado en la misma página.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 (12 meses) y 2024-25 (PERÍODO DE TRANSICIÓN
+  DE 13 MESES, 1/6/2024-30/6/2025 — la compañía cambió su fecha de cierre de 31/5 a 30/6, ver
+  comentario de cabecera de `data/wolves-gb-data.js` y duda anotada en `Admin/dudas-por-club.md`),
+  ambos con tie-out exacto. Premier League los 2 ejercicios.

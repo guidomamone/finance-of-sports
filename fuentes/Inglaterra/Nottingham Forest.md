@@ -29,3 +29,7 @@ LIMITED / COMPANY INFORMATION / Directors Mr. N Randall K.C., Mr. S Kominakis (A
 conocido del club (grupo Evangelos Marinakis). Entidad confirmada, no asumida.
 
 - Último chequeo: 2026-09-16.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/nottinghamforest-gb-data.js`
+  (clubId `nottinghamforest-gb`). Tie-out exacto contra el propio documento en los 2 años. Premier
+  League los 2 ejercicios (verificado contra Wikipedia). `fx` vía `FX_CLOSE` (GBP@2024-06-30/2025-06-30,
+  ya existentes).

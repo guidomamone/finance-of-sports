@@ -22,3 +22,5 @@ OCR de la página 2: `WEST HAM UNITED FOOTBALL CLUB LIMITED / ANNUAL REPORT AND 
 For the year ended 31 May 2025`.
 
 - Último chequeo: 2026-09-13.
+- **CARGADO al sitio (2026-09-25)**: único ejercicio disponible, 2024-25, `data/westham-gb-data.js`
+  (clubId `westham-gb`). Tie-out exacto contra el propio documento. Premier League (verificado).

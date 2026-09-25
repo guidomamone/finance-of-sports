@@ -28,7 +28,7 @@ destrabarlos.
 - [Getafe CF](<../España/Getafe CF.md>) — CARGADO (Ejercicios 2023/24 y 2024/25) — Último chequeo: 2026-09-22
 - [RCD Espanyol](<../España/RCD Espanyol.md>) — CARGADO (Ejercicios 2023/24 y 2024/25) — Último chequeo: 2026-09-22
 - [Elche CF](<../España/Elche CF.md>) — CARGADO (Ejercicios 2024, 2025) — Último chequeo: 2026-09-22
-- [Levante UD](<../España/Levante UD.md>) — 1 ejercicio real descargado (2024/25 consolidado), sin cargar aún — Último chequeo: 2026-09-16
+- [Levante UD](<../España/Levante UD.md>) — 1 ejercicio real descargado (2024/25 consolidado); CARGADO al sitio (`levante-es`) — Último chequeo: 2026-09-16
 - [Real Oviedo](<../España/Real Oviedo.md>) — CARGADO AL SITIO (`realoviedo-es`, 2024/25, Segunda División) — Último chequeo: 2026-09-25
 - [Notas generales de España](../España/_notas-generales.md)
 
