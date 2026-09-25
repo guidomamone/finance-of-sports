@@ -24,4 +24,11 @@
   desde la ficha, no por URL directa); atajo Bolsa de Santiago para el año más reciente:
   apiws.bolsadesantiago.com/ifrs/newobtenerpdf.asp?nemo=COLO+COLO.
 - Último chequeo: 2026-09-12.
+- **CARGADO al sitio (2026-09-25)**: ejercicios 2024, 2023 y 2022 en `data/colocolo-cl-data.js`
+  (clubId `colocolo-cl`), verificados tie-out exacto (revenue/expenses/PAT) contra los totales
+  impresos de cada documento. Fuente: `sourceId` `colocolo-cl-estados-financieros-2024/2023/2022`
+  (ver `data/clubs.js` → `sources`). Tipo de cambio: dólar observado de cierre (`fx` literal,
+  `fxSource:'market_approx'` en el propio archivo del club, ninguno de los 3 documentos declara TC
+  propio). Quedan 2009-2021 y 2025 sin cargar (fuera de alcance de esta sesión). Ver duda anotada en
+  `Admin/dudas-por-club.md` sobre el rechazo inicial del balance 2024 en la junta de accionistas.
 

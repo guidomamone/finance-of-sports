@@ -23,4 +23,15 @@
   sección de inversionistas propia equivalente a la de Cruzados (el único PDF propio encontrado ahí,
   de 2017, ya no resuelve).
 - Último chequeo: 2026-09-12.
+- **CARGADOS AL SITIO (2026-09-25):** 3 ejercicios reales, `data/udechile-cl-data.js`
+  (clubId `udechile-cl`, sufijo de país por convención): 2024
+  (`udechile-cl-estados-financieros-2024`), 2023 (`udechile-cl-estados-financieros-2023`) y 2022
+  (`udechile-cl-estados-financieros-2022`). Los 3 verificados con tie-out exacto (revenue, gastos y
+  Ganancia/Pérdida final reconstruyen el total impreso del documento, con una diferencia de redondeo
+  de 0,001 M CLP en el revenue de 2022 atribuible al propio documento, no a la carga — ver comentario
+  de cabecera de `data/udechile-cl-data.js`). Ninguno de los 3 balances declara tipo de cambio propio
+  de cierre (solo análisis de sensibilidad +/-10%, sin publicar el valor puntual), así que se usó el
+  dólar observado SII de mercado, `fx` literal con `fxSource:'market_approx'` en el propio archivo
+  del club. Pendiente: 2010-2021 y 2025 de la serie ya descargada (ver arriba) todavía no se cargaron
+  al sitio.
 

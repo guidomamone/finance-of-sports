@@ -1205,3 +1205,33 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   `data/pontepreta-br-data.js`. Es una reconstrucción con buena evidencia cruzada, no un número
   leído limpio — vale la pena confirmarlo releyendo el PDF original a mayor resolución, o
   preguntándole al club la naturaleza exacta de este cargo de R$22,2 M.
+
+## Colo-Colo (Blanco y Negro) — onboarding de Chile, sesión 2026-09-25, no bloqueó la carga
+
+- **¿Qué cambió en el balance 2024 entre el rechazo de la junta de abril 2025 y la versión que
+  finalmente circuló?**: según `fuentes/Chile/Colo-Colo (Blanco y Negro).md`, los accionistas
+  rechazaron inicialmente el balance por el tratamiento contable del contrato con DG Medios, y la
+  CMF debió intervenir antes de que se aprobara una versión. Se cargó el PDF que finalmente circuló
+  (el único disponible), pero no se confirmó contra prensa de la época si el rechazo implicó un
+  restatement de las cifras de Ingresos/TV/Publicidad o solo una nota/salvedad adicional. Vale la
+  pena, si Guido quiere citar este ejercicio con más confianza, revisar cooperativa.cl/latercera.com
+  de esa fecha (abril-mayo 2025) antes de tratarlo como un balance sin objeciones.
+
+## Universidad Católica (Cruzados) — onboarding Finanzas 2022-2024 (Chile)
+
+- **"Ingresos por Derechos de TV" separado de "Ingresos por A.N.F.P."**: la Nota 19 de los 3
+  balances (2022/2023/2024) reporta 2 líneas de TV distintas. El documento aclara con nota al pie
+  que "Ingresos por A.N.F.P." es la porción de derechos de televisación que la ANFP rinde
+  mensualmente por el contrato colectivo ("mandato a nombre propio"), pero NO explica de dónde sale
+  la segunda línea ("Ingresos por Derechos de TV") ni por qué es tan volátil entre ejercicios
+  ($3.030.675 M$ en 2022, $217.415 M$ en 2024, sin relación aparente con la posición en la tabla o la
+  participación en copas internacionales de cada año). Se cargaron las dos como `broadcasting`
+  (mismo bucket, ambas son TV), pero valdría la pena confirmar con el club/CMF si esa segunda línea
+  es reventa internacional, un contrato aparte, o algo distinto — a quién preguntarle:
+  cruzados.cl/inversionistas/ o la propia área de finanzas del club.
+- **"Gastos de Operación" (Nota 20, Composición de Costo de Ventas) sin ningún desglose disponible**:
+  es la 2da línea más grande de Costo de Ventas después de Remuneraciones (M$4.554.467 en 2024, 25%
+  del Costo de Ventas total), y ninguna otra nota del balance la abre más — se cargó completa como
+  `other_expenses` (catch-all) por no tener con qué separarla en sub-categorías más útiles para
+  "Formato Simplificado". Vale la pena preguntarle al club (o revisar si la Memoria Anual, que sí
+  tiene texto narrativo, la detalla en algún párrafo) qué compone este rubro.

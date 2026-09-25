@@ -87,6 +87,7 @@ const REGIONS = [
 const COUNTRIES = {
   AR: { name:'Argentina', key:'country.AR', flag:'🇦🇷', region:'sudamerica' },
   BR: { name:'Brasil',    key:'country.BR', flag:'🇧🇷', region:'sudamerica' },
+  CL: { name:'Chile',     key:'country.CL', flag:'🇨🇱', region:'sudamerica' },
   CO: { name:'Colombia',  key:'country.CO', flag:'🇨🇴', region:'sudamerica' },
   DE: { name:'Alemania',  key:'country.DE', flag:'🇩🇪', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
@@ -135,6 +136,9 @@ const LEAGUES = {
   // 3ª división (Versión 217, onboarding de Volta Redonda 2024, campeón de esa edición): mismo
   // criterio que br-serieB, el id nombra el escalón.
   'br-serieC':         { name:'Brasileirão Série C',   full:'Campeonato Brasileiro Série C',       country:'BR', sport:'futbol', tier:3 },
+  // Chile (onboarding Colo-Colo/U. de Chile/U. Católica, 2026-09-25): temporada calendario (cierra
+  // 31/12), sin la ambigüedad de un ejercicio partido en 2 torneos, mismo criterio que Brasil/Japón.
+  'cl-primera':        { name:'Primera División',      full:'Primera División de Chile',           country:'CL', sport:'futbol', tier:1 },
   'co-primeraA':       { name:'Primera A',             full:'Categoría Primera A',                 country:'CO', sport:'futbol', tier:1 },
   // 2ª división (Versión 217, onboarding de Unión Magdalena 2018, subcampeón/ascendido esa edición).
   'co-primeraB':       { name:'Primera B',             full:'Categoría Primera B',                 country:'CO', sport:'futbol', tier:2 },

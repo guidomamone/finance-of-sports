@@ -177,6 +177,19 @@ const clubs = {
   realbetis: { id:'realbetis', name:'Real Betis Balompié, S.A.D.', displayName:'Real Betis', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00954C' },
   celtavigo: { id:'celtavigo', name:'Real Club Celta de Vigo, S.A.D.', displayName:'Celta de Vigo', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6DACE5' },
   deportivoalaves: { id:'deportivoalaves', name:'Deportivo Alavés, S.A.D.', displayName:'Deportivo Alavés', country:'ES', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0232A0' },
+  // Chile (onboarding 2026-09-25): primer país sudamericano con moneda propia CLP (scale:1000, ver
+  // data/currency-map.js). fiscalYearStart:'01-01': los 3 son sociedades anónimas cerradas/abiertas
+  // que reportan EEFF IFRS en año calendario (1/1 a 31/12), igual que Brasil/Colombia, no un
+  // ejercicio partido como los clubes argentinos/españoles.
+  // Los 3 clubes de Chile llevan el país al final del id (convención desde la Versión 129,
+  // CONVENCIONES.md: `<clubId>-<iso2>`), a diferencia de los 41 clubes heredados de arriba. Clave
+  // entre comillas porque un id con guion no es una key JS válida sin comillas. brandColor: color
+  // identificador del club verificado contra footylogos.com (Colo-Colo negro de su camiseta, no el
+  // azul/dorado del escudo; U de Chile y Católica el azul de su camiseta pese a ser predominantemente
+  // blanca, mismo criterio que River con su franja roja).
+  'colocolo-cl': { id:'colocolo-cl', name:'Blanco y Negro S.A.', displayName:'Colo-Colo', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'udechile-cl': { id:'udechile-cl', name:'Azul Azul S.A.', displayName:'Universidad de Chile', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#022F87' },
+  'catolica-cl': { id:'catolica-cl', name:'Cruzados S.A.D.P.', displayName:'Universidad Católica', country:'CL', reportingCurrency:'CLP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0071B9' },
   // 5 clubes colombianos nuevos (sesión 2026-09-22, Ejercicio 2025 cada uno), mismo criterio de
   // ejercicio/moneda que Envigado/Once Caldas de arriba.
   'americadecali-co': { id:'americadecali-co', name:'América de Cali S.A. En Reorganización', displayName:'América de Cali', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#B00000' },
