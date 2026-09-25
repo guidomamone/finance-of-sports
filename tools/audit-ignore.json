@@ -7,6 +7,56 @@
   },
   {
     "code": "signo-invertido",
+    "match": "botafogosp-br 2024 ingreso \"Impostos Incidentes sobre Receitas (TEF)\"",
+    "motivo": "VERIFICADO (onboarding de Botafogo-SP, tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos por el propio documento (Nota 21), mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes brasileños. Tie-out exacto contra officialTotalRevenue."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "ceara-br 2025 ingreso \"(-) Impostos (dedução da receita bruta)\"",
+    "motivo": "VERIFICADO (onboarding de Ceará, tanda de 20 transcripts, 2026-09-25). Deducción de la receita bruta impresa como línea negativa por el propio documento. Tie-out exacto contra officialTotalRevenue (2024 y 2025)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "ceara-br 2025 ingreso \"(-) Outras deduções da receita bruta\"",
+    "motivo": "Mismo caso que la entrada anterior de este club (deducción fiscal impresa como línea negativa)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "chapecoense-br 2017 ingreso \"Deduções Tributárias e Sindicais\"",
+    "motivo": "VERIFICADO (onboarding de Chapecoense 2017, tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos, mismo tratamiento que el ejercicio 2021 ya cargado de este club. Tie-out exacto contra officialTotalRevenue."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "charleroi-be 2025 gasto \"Prélèvement sur les réserves immunisées\"",
+    "motivo": "VERIFICADO (onboarding de Charleroi, tanda de 20 transcripts, 2026-09-25). Crédito no-efectivo (desafectación de reservas inmunizadas) dentro de Gastos, `exceptional_items` — mismo patrón que el crédito equivalente ya aceptado de Club Brugge/Anderlecht. Tie-out exacto contra officialTotalExpenses (excluyendo exceptional_items, criterio ya usado para esos clubes)."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "cruzeiro 2024 ingreso \"Impostos e contribuições / Vendas canceladas\"",
+    "motivo": "VERIFICADO (onboarding de Cruzeiro 2024, tanda de 20 transcripts, 2026-09-25). Deducción impresa por el propio documento (Nota 25) dentro de Receita operacional líquida, mismo tratamiento que el ejercicio 2025 ya cargado de este club. Tie-out exacto contra officialTotalRevenue."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "sportrecife-br 2025 ingreso \"Deduções de receita (INSS Patronal, 5%)\"",
+    "motivo": "VERIFICADO (onboarding de Sport Recife, tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa por el propio documento (Nota 18/DRE). Tie-out exacto contra officialTotalRevenue."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "antwerp-be 2025 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Antwerp, tanda de 20 transcripts, 2026-09-25). \"Andere bedrijfsopbrengsten\" (46,46M EUR) no tiene desglose completo en la Nota 6.10 del propio documento (el club solo completó el sub-detalle de subsidios operativos, 11,68M de los 46,46M) — límite de la fuente, no de la categorización. Pregunta abierta en Admin/dudas-por-club.md."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "antwerp-be 2025 Gastos",
+    "motivo": "VERIFICADO (onboarding de Antwerp, tanda de 20 transcripts, 2026-09-25). \"Omzet\" (Nota 6.10, ticketing/sponsors/TV) no fue completada por el club en este filing — límite de la fuente. Ver comentario de cabecera de data/antwerp-be-data.js."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "coritiba 2023 Ingresos",
+    "motivo": "VERIFICADO (onboarding de Coritiba 2023, tanda de 20 transcripts, 2026-09-25). La línea dominante es la cesión del 20% de los derechos comerciales del Brasileirão a Liga Forte União (R$152M de R$216,65M), un ingreso extraordinario real sin categoría propia mejor disponible en la taxonomía hoy. Ver Admin/dudas-por-club.md y Admin/TODO.md."
+  },
+  {
+    "code": "signo-invertido",
     "match": "deportivopereira-co 2025 ingreso \"Devoluciones en ventas y servicios\"",
     "motivo": "VERIFICADO (onboarding de Deportivo Pereira, 2026-09-25). Devolución real de ventas/servicios, línea negativa impresa por el propio documento como contra-revenue — mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes."
   },

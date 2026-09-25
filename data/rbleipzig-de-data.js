@@ -1,11 +1,25 @@
 // ============================================================================
 // data/rbleipzig-de-data.js — RasenBallsport Leipzig GmbH (Alemania, Bundesliga).
 //
-// 2 ejercicios REALES (2023/24, 2024/25), Jahresabschluss (HGB) bajado de unternehmensregister.de
-// (registro mercantil oficial alemán), auditado por EY GmbH & Co. KG. Transcripciones completas en
-// Clubes/Alemania/RB Leipzig/jahresabschluss-<ejercicio>.md. Hay una serie más larga 2014-2022/23
-// también transcripta, sin cargar (prioridad de esta sesión: los 2 ejercicios más recientes) — y un
+// 3 ejercicios REALES (2022/23, 2023/24, 2024/25), Jahresabschluss (HGB) bajado de
+// unternehmensregister.de (registro mercantil oficial alemán), auditado por EY GmbH & Co. KG.
+// Transcripciones completas en Clubes/Alemania/RB Leipzig/jahresabschluss-<ejercicio>.md. Hay una
+// serie más larga 2014-2021/22 también transcripta, sin cargar todavía — y un
 // jahresabschluss-2018-stub.md que es un stub incompleto, correctamente excluido, NO USAR.
+//
+// EJERCICIO 2022/23 (jahresabschluss-2022-23.md): mismo tipo de documento y mismo nivel de detalle
+// que 2023/24 y 2024/25 (Jahresabschluss HGB completo, Lagebericht + Bilanz + GuV + Anhang,
+// auditado por EY), CON UNA DIFERENCIA ESTRUCTURAL real en el Anhang 4.1 (Umsatzerlöse): este
+// ejercicio desglosa por Tätigkeitsbereich en SOLO 3 categorías (Spielbetrieb, Handel, Sonstigem —
+// 313.227+8.403+54.861=376.491 TEUR, reconcilia exacto contra el Umsatzerlöse total de la GuV,
+// 376.490.670,75 EUR), NO 4 como 2023/24 y 2024/25 (que además separan "Transfer- u. Leihgeschäft").
+// El propio documento explica por qué probablemente no hace falta la categoría separada ese año:
+// "Transfererträge im abgelaufenen Geschäftsjahr waren geringer als im Vorjahr" (Lagebericht,
+// Ertragslage) — sin una línea de transferencias grande, quedó dentro de "Sonstigem" sin separar.
+// Se categorizó iguel que en 2023/24-2024/25 para las categorías que SÍ existen (Spielbetrieb ->
+// lump_football_operations, Handel -> sponsorship_commercial), y 'Sonstigem' -> other_income
+// (incluye lo que en otros ejercicios sería Transfer- u. Leihgeschäft, sin poder separarlo — el
+// documento no lo desglosa este año, no se fuerza una separación que el dato no tiene).
 //
 // GmbH (no KGaA/AG): entidad única, sin distinción Einzel-/Konzernabschluss como Bayern/Dortmund —
 // mismo nivel de cuentas para ambos ejercicios, sin ambigüedad de qué nivel usar.
@@ -47,7 +61,15 @@
 // club-data-mapping SKILL.md sección 6.2.
 //
 // Moneda: EUR. Ningún ejercicio declara TC propio a USD → fxRef contra FX_CLOSE
-// (data/currency-map.js): 'EUR@2024-06-30' y 'EUR@2025-06-30' YA EXISTEN.
+// (data/currency-map.js): 'EUR@2023-06-30', 'EUR@2024-06-30' y 'EUR@2025-06-30' YA EXISTEN, no
+// hizo falta agregar nada para 2022/23 tampoco.
+//
+// 2022/23 también reconcilia EXACTO: netInterest = Finanzergebnis (Sonstige Zinsen 1,696404 -
+// Zinsen und ähnliche Aufwendungen 4,727726 = -3,031322). tax = Steuern vom Einkommen und vom
+// Ertrag (0,662665) + Sonstige Steuern (0,358534) = 1,021199 (guardado como tax:-1.021199, mismo
+// signo que los otros 2 ejercicios). revenue(394,761484) - expenses(385,366929) + netInterest
+// (-3,031322) + tax(-1,021199) = 5,342034, EXACTO contra el Jahresüberschuss impreso
+// (5.342.033,84 EUR).
 //
 // gestionId: 'actual' en los 2 ejercicios — Florian Hopp (CFO) y Johann Plenge (CSO) constantes;
 // cambió el Geschäftsführer Sport (Max Eberl hasta 5/10/2023, vacante, Marcel Schäfer desde
@@ -55,6 +77,15 @@
 // ============================================================================
 
 const rbleipzigDeRevenueLinesByYear = {
+  // Ejercicio 2023 (01.07.2022-30.06.2023). Fuente: jahresabschluss-2022-23.md, pág. 5 (GuV) y pág.
+  // 8 (Anhang 4.1, SOLO 3 categorías este ejercicio, ver comentario de cabecera).
+  2023: [
+    { rawLabel:'Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)', normalizedCategory:'lump_football_operations', amountNative:313.227, disclosureLevel:'aggregated_residual' },
+    { rawLabel:'Umsatzerlöse aus Handel', normalizedCategory:'sponsorship_commercial', amountNative:8.403, disclosureLevel:'detailed' },
+    { rawLabel:'Umsatzerlöse aus Sonstigem (incluye Transfer- u. Leihgeschäft, sin línea propia este ejercicio, ver comentario de cabecera)', normalizedCategory:'other_income', amountNative:54.861, disclosureLevel:'aggregated_residual' },
+    { rawLabel:'Erhöhung des Bestands an unfertigen Leistungen', normalizedCategory:'other_income', amountNative:0.304598, disclosureLevel:'detailed' },
+    { rawLabel:'Sonstige betriebliche Erträge', normalizedCategory:'other_income', amountNative:17.966216, disclosureLevel:'aggregated_residual' },
+  ],
   // Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: jahresabschluss-2024-25.md, columna comparativa
   // "1. Juli 2023 bis 30. Juni 2024" (pág. 5, GuV; pág. 8, Anhang 4.1 Umsatzerlöse — reconcilia exacto).
   2024: [
@@ -78,6 +109,16 @@ const rbleipzigDeRevenueLinesByYear = {
 };
 
 const rbleipzigDeExpenseLinesByYear = {
+  2023: [
+    { rawLabel:'Materialaufwand (Aufwendungen für bezogene Waren)', normalizedCategory:'other_expenses', amountNative:-2.494307, disclosureLevel:'detailed' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-190.816780, disclosureLevel:'aggregated_residual', items:[
+      ['Löhne und Gehälter', -183.105578], ['Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung', -7.711202],
+    ]},
+    { rawLabel:'Abschreibungen auf Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-88.034010, disclosureLevel:'detailed' },
+    { rawLabel:'Abschreibungen auf sonstige immaterielle Vermögensgegenstände', normalizedCategory:'other_amortisation', amountNative:-1.151991, disclosureLevel:'detailed' },
+    { rawLabel:'Abschreibungen auf Sachanlagen', normalizedCategory:'depreciation', amountNative:-5.200372, disclosureLevel:'detailed' },
+    { rawLabel:'Sonstige betriebliche Aufwendungen', normalizedCategory:'other_expenses', amountNative:-97.669468, disclosureLevel:'aggregated_residual' },
+  ],
   2024: [
     { rawLabel:'Materialaufwand (Aufwendungen für bezogene Waren)', normalizedCategory:'other_expenses', amountNative:-2.436, disclosureLevel:'detailed' },
     { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-200.693, disclosureLevel:'aggregated_residual', items:[
@@ -101,6 +142,14 @@ const rbleipzigDeExpenseLinesByYear = {
 };
 
 const rbleipzigDeFiscalYearMeta = {
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'rbleipzig-de-jahresabschluss-2023',
+    reportType:'official_balance_sheet',
+    gestionId:'actual',
+    netInterest:-3.031322, tax:-1.021199, profitOnPlayerSales:0, assetSales:0,
+    officialTotalRevenue:394.761484, officialTotalExpenses:385.366929, officialPAT:5.342034,
+  },
   2024: {
     currency:'EUR', fxRef:'EUR@2024-06-30',
     sourceId:'rbleipzig-de-jahresabschluss-2024',
@@ -133,6 +182,12 @@ window.CLUB_GENERIC_DATA['rbleipzig-de'] = {
 };
 
 Object.assign(sources, {
+  'rbleipzig-de-jahresabschluss-2023': {
+    id:'rbleipzig-de-jahresabschluss-2023', clubId:'rbleipzig-de',
+    title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2022 bis zum 30.06.2023',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Jahresabschluss (HGB) bajado de unternehmensregister.de (registro mercantil oficial alemán), auditado por EY GmbH & Co. KG. Jahresüberschuss de EUR 5.342.033,84 sobre Umsatzerlöse+Bestandsveränderungen+sonstige Erträge de EUR 394.761.484,18. El Anhang 4.1 (Umsatzerlöse) de este ejercicio SOLO desglosa 3 categorías (Spielbetrieb/Handel/Sonstigem), a diferencia de 2023/24 y 2024/25 que agregan una 4ta ("Transfer- u. Leihgeschäft") — el propio Lagebericht dice que los ingresos por transferencias fueron menores que el año anterior, y quedaron sin línea propia dentro de "Sonstigem" (ver comentario de cabecera de rbleipzig-de-data.js). Ejercicio de transición en la Geschäftsführung: Oliver Mintzlaff (CEO) hasta el 14/11/2022, Max Eberl (Geschäftsführer Sport) desde el 1/12/2022; Florian Hopp (CFO) y Johann Plenge (CSO) constantes en los 3 ejercicios cargados de este club. Transcripción completa en Clubes/Alemania/RB Leipzig/jahresabschluss-2022-23.md.',
+  },
   'rbleipzig-de-jahresabschluss-2024': {
     id:'rbleipzig-de-jahresabschluss-2024', clubId:'rbleipzig-de',
     title:'Jahresabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024',
@@ -148,7 +203,7 @@ Object.assign(sources, {
 });
 
 gestionesByClub['rbleipzig-de'] = {
-  actual: { nombre:'Gestión actual (Florian Hopp, CFO — Red Bull GmbH, accionista único)', firstYear:2024, lastYear:2025 },
+  actual: { nombre:'Gestión actual (Florian Hopp, CFO — Red Bull GmbH, accionista único)', firstYear:2023, lastYear:2025 },
 };
 
 memberCountByClub['rbleipzig-de'] = null;

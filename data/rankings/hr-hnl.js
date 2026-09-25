@@ -3,7 +3,8 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// HNL (HR) — 1 ejercicio(s) con ranking:
+// HNL (HR) — 2 ejercicio(s) con ranking:
+//   2025: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -12,6 +13,17 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["hr-hnl"] = {
+  2025: {
+    leagueSize: null,
+    clubs: [
+      { id:"osijek-hr", revenue:22.101, reportType:"official_balance_sheet",
+        sourceId:"osijek-hr-financijsko-izvjesce-2025",
+        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",12.111],["Estadio",1.337],["Televisión",1.005],["Premios por competencias",2.329],["Otros ingresos",5.28]] },
+      { id:"slavenbelupo-hr", revenue:6.683, reportType:"official_balance_sheet",
+        sourceId:"slavenbelupo-hr-financijsko-izvjesce-2025",
+        mix:[["Cuotas Sociales",0.049],["Comercial / Sponsors",2.138],["Estadio",0.357],["Televisión",1.107],["Premios por competencias",2.202],["Venta de Jugadores",0.26],["Otros ingresos",0.571]] },
+    ],
+  },
   2024: {
     leagueSize: null,
     clubs: [

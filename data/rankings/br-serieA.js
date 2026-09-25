@@ -3,11 +3,12 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série A (BR) — 4 ejercicio(s) con ranking:
-//   2025: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+// Brasileirão Série A (BR) — 5 ejercicio(s) con ranking:
+//   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -51,6 +52,12 @@ window.RANKINGS["br-serieA"] = {
       { id:"vitoria-br", revenue:43.002, reportType:"official_balance_sheet",
         sourceId:"vitoria-br-demonstracoes-2025",
         mix:[["Comercial / Sponsors",6.93],["Estadio",1.65],["Televisión",20.819],["Premios por competencias",5.889],["Venta de Jugadores",9.629],["Otros ingresos",-1.914]] },
+      { id:"ceara-br", revenue:40.264, reportType:"official_balance_sheet",
+        sourceId:"ceara-br-demonstracoes-2025",
+        mix:[["Cuotas Sociales",4.211],["Comercial / Sponsors",7.403],["Estadio",4.348],["Televisión",17.446],["Premios por competencias",1.079],["Venta de Jugadores",10.283],["Otras secciones deportivas",0.098],["Otros ingresos",-4.606]] },
+      { id:"sportrecife-br", revenue:31.656, reportType:"official_balance_sheet",
+        sourceId:"sportrecife-br-demonstracoes-2025",
+        mix:[["Cuotas Sociales",3.022],["Comercial / Sponsors",8.603],["Estadio",3.577],["Televisión",16.122],["Venta de Jugadores",1.201],["Otros ingresos",-0.868]] },
     ],
   },
   2024: {
@@ -89,6 +96,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"rbbragantino-br", revenue:81.749, reportType:"official_balance_sheet",
         sourceId:"rbbragantino-br-balanco-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",68.67],["Otros ingresos",13.079]] },
+      { id:"cruzeiro", revenue:55.989, reportType:"official_balance_sheet",
+        sourceId:"cruzeiro-informativo-financeiro-2024",
+        mix:[["Cuotas Sociales",5.239],["Comercial / Sponsors",11.825],["Estadio",8.247],["Televisión",22.297],["Venta de Jugadores",10.846],["Otras secciones deportivas",1.241],["Otros ingresos",-3.706]] },
       { id:"bahia-br", revenue:44.984, reportType:"official_balance_sheet",
         sourceId:"bahia-br-demonstracoes-2024",
         mix:[["Comercial / Sponsors",9.22],["Estadio",13.433],["Televisión",18.214],["Venta de Jugadores",5.764],["Otros ingresos",-1.647]] },
@@ -103,6 +113,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"vascodagama-br", revenue:71.33, reportType:"official_balance_sheet",
         sourceId:"vascodagama-br-demonstracoes-2023",
         mix:[["Cuotas Sociales",6.568],["Comercial / Sponsors",11.902],["Estadio",5.478],["Televisión",20.386],["Premios por competencias",4.098],["Venta de Jugadores",25.559],["Otras secciones deportivas",0.265],["Otros ingresos",-2.926]] },
+      { id:"coritiba", revenue:44.751, reportType:"official_balance_sheet",
+        sourceId:"coritiba-demonstracoes-2022-2023",
+        mix:[["Cuotas Sociales",4.46],["Comercial / Sponsors",1.527],["Estadio",0.793],["Televisión",6.925],["Venta de Jugadores",0.657],["Otros ingresos",30.388]] },
       { id:"americamineiro-br", revenue:38.807, reportType:"official_balance_sheet",
         sourceId:"americamineiro-br-demonstracoes-2023",
         mix:[["Comercial / Sponsors",6.791],["Estadio",0.65],["Televisión",15.058],["Venta de Jugadores",12.896],["Otros ingresos",3.413]] },
@@ -117,6 +130,14 @@ window.RANKINGS["br-serieA"] = {
       { id:"chapecoense-br", revenue:10.948, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2020-2021",
         mix:[["Cuotas Sociales",0.767],["Comercial / Sponsors",0.91],["Estadio",0.07],["Televisión",7.453],["Premios por competencias",0.345],["Venta de Jugadores",0.776],["Otros ingresos",0.627]] },
+    ],
+  },
+  2017: {
+    leagueSize: null,
+    clubs: [
+      { id:"chapecoense-br", revenue:29.581, reportType:"official_balance_sheet",
+        sourceId:"chapecoense-br-demonstracoes-2017",
+        mix:[["Cuotas Sociales",4.192],["Comercial / Sponsors",3.253],["Estadio",1.246],["Televisión",11.445],["Premios por competencias",3.09],["Venta de Jugadores",3.415],["Otros ingresos",2.94]] },
     ],
   },
 };

@@ -1,13 +1,25 @@
 // ============================================================================
 // data/cruzeiro-data.js — Cruzeiro Esporte Clube SAF (Belo Horizonte, MG, Brasil).
-// 1 ejercicio cargado: 2025 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12/2025 — ver
+// 2 ejercicios cargados: 2025 y 2024 (ejercicio social = AÑO CALENDARIO completo, 1°/1 a 31/12 — ver
 // clubs.js, fiscalYearStart:'01-01', isCalendarYearClub() en js/finanzas-calc.js).
 //
-// Fuente: "Informativo Financeiro 2025" (Demonstrações Financeiras), exercícios findos em
+// Fuente 2025: "Informativo Financeiro 2025" (Demonstrações Financeiras), exercícios findos em
 // 31/12/2025 e 2024, bajado del bucket S3 propio del club
 // (cruzeiro-website-project-documents.s3.us-east-1.amazonaws.com). PDF con texto nativo,
 // transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md. A diferencia de
 // Botafogo, este documento NO separa Controladora/Consolidado — una sola columna de valores.
+//
+// Fuente 2024: "Informativo Financeiro" (Demonstrações Financeiras) da SAF Cruzeiro, exercícios
+// findos em 31/12/2024 e 2023 (documento DISTINTO del de 2025, con su propio comparativo 2023 no
+// cargado). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.md. Mismo
+// criterio de moneda/escala. Categorización rubro por rubro comparada palabra por palabra contra el
+// ejercicio 2025 ya cargado (club-or-year-onboarding SKILL.md sección 9): donde el rótulo coincide
+// exacto, misma normalizedCategory; donde el documento 2024 agrupa distinto (ej. "Patrocínio e
+// publicidade" en una sola línea, vs. "Patrocínio"/"Publicidade" separadas en 2025), se cargó tal
+// cual lo reporta ESE documento, misma categoría de destino igual. La numeración de Notas de este
+// documento tiene una inconsistencia propia entre su índice (26-30) y sus encabezados de cuerpo
+// (25-29, un desfasaje de 1 que arrastra el propio PDF) — los comentarios de abajo usan la
+// numeración del CUERPO (la que efectivamente encabeza cada nota).
 //
 // ESCALA: valores originales "em milhares de reais" (miles de reales), acá en MILLONES de BRL
 // nativos (dividir por 1.000, mismo criterio que Grêmio/Botafogo).
@@ -74,6 +86,70 @@
 // Gestión: no se confirmó con la profundidad que exige club-data-mapping SKILL.md sección 7 quién
 // preside la SAF Cruzeiro — gestionId queda con una entrada mínima "sin confirmar", mismo criterio
 // que Botafogo.
+//
+// ---------------------------------------------------------------------------------------------
+// EJERCICIO 2024 (informativo-financeiro-2024.md) — categorización y verificación
+// ---------------------------------------------------------------------------------------------
+// Nota 25 (Receita operacional líquida, columna 31/12/2024): 'Bilheteria' -> matchday_competition;
+// 'Programa sócio torcedor' -> member_dues; 'Patrocínio e publicidade' (UNA sola línea en este
+// documento, a diferencia de 2025 que las separa) -> sponsorship_commercial; 'Direitos de
+// transmissão fixos e premiações por performance' -> broadcasting; 'Receitas com royalties e
+// licenciamento' -> sponsorship_commercial; 'Outros' -> other_income; '(-) Impostos e
+// contribuições/Vendas canceladas' -> other_income (deducción). Sub-nota (iii) 'Mecanismo de
+// solidariedade e outros' promovida a líneas de primer nivel, mismo criterio que 2025: 'Mecanismo de
+// solidariedade' -> youth_football (7.684); 'Cessão temporária' -> player_sales (3.182);
+// 'Rescisão contratual' y 'Outros' de esa sub-nota son $0 en 2024 (solo tuvieron valor en la columna
+// comparativa 2023), no se cargó línea para ellos.
+// Nota 26 (Custos das atividades esportivas): mismo mapeo que 2025 rubro por rubro donde el rótulo
+// coincide ('Salários, direito de imagem, encargos e benefícios' -> wages_squad; 'Amortizações do
+// intangível' -> player_amortisation; 'Baixa do ativo intangível' -> player_impairment;
+// 'Depreciação' -> depreciation; 'Serviços de assessoria e consultoria' -> admin_general_expense;
+// 'Manutenção geral' -> admin_general_expense; 'Taxas de legalização de jogadores'/'Outros custos' ->
+// other_expenses); 'Custos diretos e indiretos com jogos'/'Custos com viagens e
+// hospedagens'/'Custos com alimentação'/'Direito de Arena' -> match_organisation_expense (2024 no
+// desglosa 'Fretamentos e Passagens' ni 'Segurança e vigilância' como líneas propias, a diferencia de
+// 2025 — quedan implícitas en las líneas de arriba de esta misma categoría).
+// Nota 27 (Despesas gerais e administrativas): 'Salários, encargos e benefícios'/'Serviços
+// contratados de terceiros'/'Outros' -> admin_general_expense; 'Amortizações' -> other_amortisation
+// (mismo criterio que 2025). 'Despesas comerciais'/'Rescisão de contratos comerciais'/'Assessores –
+// Venda de Direitos' son $0 en 2024 (solo en la columna comparativa 2023), no se cargó línea.
+// Nota 28 (Outras receitas (despesas), debajo del resultado operativo): 'Receita de transferência de
+// atletas' -> player_sales; 'Baixa do custo de atletas pela venda de direitos intangíveis' ->
+// player_amortisation; 'Outras receitas' -> other_income; 'Outras despesas' -> other_expenses;
+// 'Baixa de ativo imobilizado' (línea nueva, no presente en 2025) -> other_expenses, mismo criterio
+// de catch-all que el resto de bajas/ajustes chicos sin categoría propia. 'Receita na venda de
+// direitos intangíveis' y 'Provisão para demandas judiciais' son $0 en 2024 (LFU y la provisión de
+// RJ fueron eventos de 2023), no se cargó línea.
+//
+// ESCALA de esta nota, importante para no repetir el error: el documento imprime valores "em
+// milhares de reais" con separador de miles brasileño (punto). Un valor de 3 dígitos SIN separador
+// (ej. "331", "874", "7", "228", "16") es 0,331/0,874/0,007/0,228/0,016 MILLONES, no 331/874/etc.
+// millones — se verificó explícitamente sumando cada nota contra su propio subtotal impreso antes de
+// cargar (ver abajo), que es lo que atrapó este error en el primer intento de esta sesión.
+//
+// Verificación (a mano, antes de cargar, cada nota contra su propio subtotal impreso):
+// - Nota 25: 51.069+32.439+57.860+138.072+10.866+15.365+1.920 = 307.591 (Total receita operacional
+//   bruta impreso) − 24.878 = 282.713 = RECEITA OPERACIONAL LIQUIDA impresa. ✓
+// - Nota 26: suma de las 12 líneas = 395.089 = Custo das atividades esportivas impreso. ✓
+// - Nota 27: 13.367+12.358+26.644+12.549 = 64.918 = Despesas G&A impresas. ✓
+// - Nota 28: −32.886+0.007+63.978−0.228−0.016 = 30.855 = Outras receitas/despesas impresas. ✓
+// - revenueLines[2024] suma 346.698 M BRL (282.713 de Nota 25 + 63.978 player_sales + 0.007
+//   other_income de Nota 28). expenseLines[2024] suma −493.137 M BRL (395.089 Nota 26 + 64.918 Nota
+//   27 + 32.886+0.228+0.016 de Nota 28, todo en negativo). 346.698 − 493.137 = −146.439 = "LUCRO
+//   (PREJUÍZO) ANTES DO RESULTADO FINANCEIRO" impreso, EXACTO (sin redondeo esta vez, a diferencia de
+//   2025). + netInterest (−23.469, Nota 29: Receita financeira 6.568 − Despesa financeira 30.037) =
+//   −169.908 = "LUCRO (PREJUÍZO) DO EXERCICIO" impreso, EXACTO. officialPAT se cargó con este mismo
+//   número exacto (−169.908, coincide con la reconstrucción propia, no hizo falta usar el impreso
+//   por separado).
+//
+// grossDebt 2024 = "Títulos emitidos" circulante (28.082) + não circulante (9.247) = 37.329 M BRL,
+// mismo criterio que 2025 (única línea de deuda financiera clásica del pasivo). cash 2024 = "Caixa e
+// equivalentes de caixa" (7.024 M BRL), sin sumar "Aplicações financeiras e recursos vinculados"
+// (10.650), mismo criterio estricto que 2025.
+//
+// FX 2024: BRL/USD PTAX de cierre 31/12/2024 = R$6,1923 (venda), ya estaba en FX_CLOSE
+// (data/currency-map.js, 'BRL@2024-12-31') de una carga de otro club — se reusó esa entrada
+// compartida, no se agregó una nueva. El documento de Cruzeiro no declara un tipo de cambio propio.
 // ============================================================================
 
 const cruzeiroRevenueLinesByYear = {
@@ -91,6 +167,19 @@ const cruzeiroRevenueLinesByYear = {
     { rawLabel:'Impostos e contribuições / Vendas canceladas', normalizedCategory:'other_income', amountNative:-49.669, disclosureLevel:'detailed' },
     { rawLabel:'Receita de transferência de atletas', normalizedCategory:'player_sales', amountNative:28.364, disclosureLevel:'detailed' },
     { rawLabel:'Outras receitas (Nota 29)', normalizedCategory:'other_income', amountNative:0.360, disclosureLevel:'detailed' },
+  ],
+  2024: [
+    { rawLabel:'Bilheteria', normalizedCategory:'matchday_competition', amountNative:51.069, disclosureLevel:'detailed' },
+    { rawLabel:'Programa sócio torcedor', normalizedCategory:'member_dues', amountNative:32.439, disclosureLevel:'detailed' },
+    { rawLabel:'Patrocínio e publicidade', normalizedCategory:'sponsorship_commercial', amountNative:57.860, disclosureLevel:'detailed' },
+    { rawLabel:'Direitos de transmissão fixos e premiações por performance', normalizedCategory:'broadcasting', amountNative:138.072, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:7.684, disclosureLevel:'detailed' },
+    { rawLabel:'Cessão temporária (empréstimo de atletas)', normalizedCategory:'player_sales', amountNative:3.182, disclosureLevel:'detailed' },
+    { rawLabel:'Receitas com royalties e licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:15.365, disclosureLevel:'detailed' },
+    { rawLabel:'Outros (receita operacional bruta)', normalizedCategory:'other_income', amountNative:1.920, disclosureLevel:'detailed' },
+    { rawLabel:'Impostos e contribuições / Vendas canceladas', normalizedCategory:'other_income', amountNative:-24.878, disclosureLevel:'detailed' },
+    { rawLabel:'Receita de transferência de atletas', normalizedCategory:'player_sales', amountNative:63.978, disclosureLevel:'detailed' },
+    { rawLabel:'Outras receitas (Nota 28)', normalizedCategory:'other_income', amountNative:0.007, disclosureLevel:'detailed' },
   ],
 };
 
@@ -119,6 +208,27 @@ const cruzeiroExpenseLinesByYear = {
     { rawLabel:'Baixa do custo de atletas pela venda de direitos intangíveis', normalizedCategory:'player_amortisation', amountNative:-7.324, disclosureLevel:'detailed' },
     { rawLabel:'Outras despesas (Nota 29)', normalizedCategory:'other_expenses', amountNative:-0.533, disclosureLevel:'detailed' },
   ],
+  2024: [
+    { rawLabel:'Salários, direito de imagem, encargos e benefícios', normalizedCategory:'wages_squad', amountNative:-200.355, disclosureLevel:'detailed' },
+    { rawLabel:'Custos diretos e indiretos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-20.788, disclosureLevel:'detailed' },
+    { rawLabel:'Amortizações do intangível (atletas)', normalizedCategory:'player_amortisation', amountNative:-82.317, disclosureLevel:'detailed' },
+    { rawLabel:'Serviços de assessoria e consultoria', normalizedCategory:'admin_general_expense', amountNative:-0.331, disclosureLevel:'detailed' },
+    { rawLabel:'Baixa do ativo intangível (Nota 26)', normalizedCategory:'player_impairment', amountNative:-8.375, disclosureLevel:'detailed' },
+    { rawLabel:'Custos com viagens e hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-47.867, disclosureLevel:'detailed' },
+    { rawLabel:'Custos com alimentação', normalizedCategory:'match_organisation_expense', amountNative:-5.707, disclosureLevel:'detailed' },
+    { rawLabel:'Depreciação', normalizedCategory:'depreciation', amountNative:-4.601, disclosureLevel:'detailed' },
+    { rawLabel:'Direito de Arena (custo)', normalizedCategory:'match_organisation_expense', amountNative:-6.881, disclosureLevel:'detailed' },
+    { rawLabel:'Manutenção geral', normalizedCategory:'admin_general_expense', amountNative:-15.787, disclosureLevel:'detailed' },
+    { rawLabel:'Taxas de legalização de jogadores', normalizedCategory:'other_expenses', amountNative:-0.874, disclosureLevel:'detailed' },
+    { rawLabel:'Outros custos (atividades esportivas)', normalizedCategory:'other_expenses', amountNative:-1.206, disclosureLevel:'detailed' },
+    { rawLabel:'Salários, encargos e benefícios (G&A)', normalizedCategory:'admin_general_expense', amountNative:-13.367, disclosureLevel:'detailed' },
+    { rawLabel:'Serviços contratados de terceiros (G&A)', normalizedCategory:'admin_general_expense', amountNative:-12.358, disclosureLevel:'detailed' },
+    { rawLabel:'Amortizações (G&A)', normalizedCategory:'other_amortisation', amountNative:-26.644, disclosureLevel:'detailed' },
+    { rawLabel:'Outros (G&A)', normalizedCategory:'admin_general_expense', amountNative:-12.549, disclosureLevel:'detailed' },
+    { rawLabel:'Baixa do custo de atletas pela venda de direitos intangíveis', normalizedCategory:'player_amortisation', amountNative:-32.886, disclosureLevel:'detailed' },
+    { rawLabel:'Outras despesas (Nota 28)', normalizedCategory:'other_expenses', amountNative:-0.228, disclosureLevel:'detailed' },
+    { rawLabel:'Baixa de ativo imobilizado (Nota 28)', normalizedCategory:'other_expenses', amountNative:-0.016, disclosureLevel:'detailed' },
+  ],
 };
 
 const cruzeiroFiscalYearMeta = {
@@ -143,6 +253,25 @@ const cruzeiroFiscalYearMeta = {
     // ~R$1.000 de redondeo del propio documento, ver comentario de cabecera).
     officialTotalRevenue:627.899, officialTotalExpenses:698.305, officialPAT:-114.900,
   },
+  2024: {
+    currency:'BRL', fxRef:'BRL@2024-12-31',
+    sourceId:'cruzeiro-informativo-financeiro-2024',
+    reportType:'official_balance_sheet',
+    gestionId:'sinconfirmar',
+    // grossDebt = "Títulos emitidos" circulante (28.082) + não circulante (9.247) — única línea de
+    // deuda financiera clásica del balance 2024 (mismo criterio que 2025). cash = "Caixa e
+    // equivalentes de caixa" (Nota 3), sin sumar aplicações financeiras (10.650).
+    grossDebt:37.329, cash:7.024,
+    profitOnPlayerSales:0, assetSales:0,
+    // netInterest = "Receitas (despesas) financeiras líquidas" (Nota 29): Receita financeira 6.568 -
+    // Despesa financeira 30.037.
+    netInterest:-23.469, tax:0,
+    // officialTotalRevenue/officialTotalExpenses = suma verificada de revenueLines/expenseLines
+    // (346.698 / 493.137 M BRL, ver comentario de cabecera). officialPAT = "LUCRO (PREJUÍZO) DO
+    // EXERCICIO" impreso (-169.908, prejuízo/pérdida) — coincide EXACTO con la reconstrucción propia
+    // (346.698 - 493.137 - 23.469 = -169.908), sin redondeo.
+    officialTotalRevenue:346.698, officialTotalExpenses:493.137, officialPAT:-169.908,
+  },
 };
 
 const cruzeiroPresupuestoOverlayByYear = {};
@@ -166,12 +295,18 @@ Object.assign(sources, {
       id:'cruzeiro-informativo-financeiro-2025', clubId:'cruzeiro',
       title:'Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercícios Findos em 31 de Dezembro de 2025 e de 2024',
       type:'official_balance_sheet', reliability:'primary',
-      note:'PDF oficial (52 páginas, texto nativo), bajado del bucket S3 propio del club (cruzeiro-website-project-documents.s3.us-east-1.amazonaws.com). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md. 2025 fue un ejercicio de DÉFICIT real (Prejuízo de R$114,900 mil), aunque menor que el déficit de 2024 (R$169,908 mil) del mismo documento comparativo. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024), investigado externamente. El club tiene también informativo-financeiro-2022.pdf/2023.pdf/2024.pdf descargados pero no cargados esta sesión (se priorizó "widen clubs" por sobre más años del mismo club).',
+      note:'PDF oficial (52 páginas, texto nativo), bajado del bucket S3 propio del club (cruzeiro-website-project-documents.s3.us-east-1.amazonaws.com). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md. 2025 fue un ejercicio de DÉFICIT real (Prejuízo de R$114,900 mil), aunque menor que el déficit de 2024 (R$169,908 mil) del mismo documento comparativo. Convertido a USD con el PTAX BCB de cierre 31/12/2025 (R$5,5024), investigado externamente. El club tiene también informativo-financeiro-2022.pdf/2023.pdf descargados pero no cargados esta sesión.',
+    },
+  'cruzeiro-informativo-financeiro-2024': {
+      id:'cruzeiro-informativo-financeiro-2024', clubId:'cruzeiro',
+      title:'Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercícios Findos em 31 de Dezembro de 2024 e de 2023',
+      type:'official_balance_sheet', reliability:'primary',
+      note:'PDF oficial, texto nativo, documento DISTINTO del informativo-financeiro-2025 (con su propio comparativo 2023, no cargado). Transcripción completa en Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.md. 2024 fue un ejercicio de DÉFICIT real (Prejuízo de R$169,908 mil), mayor que el déficit de 2025 (R$114,900 mil). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923), ya presente en FX_CLOSE de data/currency-map.js de una carga anterior de otro club.',
     },
 });
 
 gestionesByClub.cruzeiro = {
-    sinconfirmar: { nombre:'SAF Cruzeiro (gestión no confirmada en detalle)', firstYear:2025, lastYear:2025 },
+    sinconfirmar: { nombre:'SAF Cruzeiro (gestión no confirmada en detalle)', firstYear:2024, lastYear:2025 },
   };
 
 memberCountByClub.cruzeiro = null;

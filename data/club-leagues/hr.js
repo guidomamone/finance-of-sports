@@ -42,4 +42,8 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'dinamozagreb-hr': { 2024: 'hr-hnl' },
   'hajduksplit-hr':  { 2024: 'hr-hnl' },
   'rijeka-hr':       { 2024: 'hr-hnl' },
+  // Osijek/Slaven Belupo (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar):
+  // ejercicio calendario 2025, jugaron HNL completa ese año (Wikipedia, sin descenso).
+  'osijek-hr':       { 2025: 'hr-hnl' },
+  'slavenbelupo-hr': { 2025: 'hr-hnl' },
 });

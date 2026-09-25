@@ -15,6 +15,69 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 226 — 20 transcripts al azar, sin prioridad de país (15 clubes nuevos + 5 ejercicios)
+
+- De 131 a 146 clubes cargados, 248 a 269 ejercicios. Pedido de Guido: elegir 20 transcripciones ya
+  hechas y sin cargar, "no me importa un orden específico" — se armó una lista de ~51 candidatos
+  (agente Explore recorriendo `Clubes/` completo contra los 131 `data/*.js` ya cargados) y se
+  eligieron 20 priorizando países YA cargados (para minimizar scaffolding nuevo: moneda, liga,
+  brandColor de un país entero) y balance de clubes nuevos vs. ejercicios nuevos de clubes ya
+  cargados. Trabajo repartido en 5 agentes en paralelo (4 clubes cada uno), cada uno con el límite
+  explícito de NO tocar archivos compartidos (`clubs.js`/`category-map.js`/`currency-map.js`/
+  `club-leagues/*`/`Admin/*`/`fuentes/*`) para poder correr en simultáneo sin pisarse — solo crear/
+  editar su propio `data/<club>-data.js` y reportar los snippets para integrar después. Integración
+  centralizada (clubs.js, FX_CLOSE, club-leagues, generadores, audit) hecha en un solo paso al final.
+- **3 de los 20 candidatos elegidos al azar resultaron dead-ends sin estados contables reales**
+  (encontrado por los propios agentes ANTES de escribir ningún dato, sin inventar nada):
+  **Temperley** (`memoria-ejercicio-2025-26.md`) y **Belgrano** (`memoria-anual-2020.md`) son
+  "Memoria" narrativa institucional pura, sin una sola tabla de Recursos/Gastos — confirmado también
+  contra `fuentes/Argentina/Temperley.md` de una sesión de sourcing anterior, que ya documentaba el
+  mismo hallazgo para Temperley. **Palestino** (`estados-financieros-2018.md`) es un estado
+  financiero INTERMEDIO de 6 meses (jun-2019, con comparativo jun-2018), sin el Estado de Resultados
+  del ejercicio ANUAL 2018 completo — mismo caso que Instituto (`club-or-year-onboarding` §15). Se
+  reemplazaron por **Botafogo-SP, Juventude y Amazonas** (los 3 con DRE/P&L real verificado).
+- **15 clubes NUEVOS**: Croacia +2 (Osijek, Slaven Belupo — ejercicio calendario 2025), Dinamarca +3
+  (AGF 2020/21, Silkeborg IF 2024, Viborg FF 2024), Bélgica +3 (Charleroi, Mechelen, Antwerp —
+  ejercicio 2024/25, mismo tipo de documento jaarrekening/comptes annuels que los 4 ya cargados),
+  Brasil +5 (Ceará 2024-2025, Sport Recife 2025, Amazonas 2024, Juventude 2020, Botafogo-SP 2024 —
+  este último es la SAF de Ribeirão Preto, NO el Botafogo de Río ya cargado), Argentina +2 (Godoy
+  Cruz 2019/20, Los Andes 2020/21 — 3er escalón, `ar-primerab` nueva en el catálogo de ligas).
+- **5 ejercicios nuevos de clubes ya cargados**: Cruzeiro 2024 (déficit real mayor al de 2025),
+  Coritiba 2023 (ejercicio parcial, la SAF recién quedó operacional a mitad de año — 2022 no se
+  cargó, sin actividad real), Chapecoense 2017 (post-tragedia LaMia, resultado financiero positivo
+  por los intereses de las donaciones recibidas), Bayern Munich 2020/21 (fuente mucho más chica que
+  2023/24-2024/25: solo 4 cifras agregadas, D&A y resultado financiero combinados en una sola línea
+  aproximada por no poder separarlos), RB Leipzig 2022/23 (Anhang 4.1 con 3 categorías de Umsatz en
+  vez de las 4 de los otros 2 ejercicios, sin línea propia de transferencias ese año).
+- **1 P0 real encontrado y corregido en la integración**: Sport Recife 2025 tenía la Nota 21
+  ("Outras Despesas/Receitas Operacionais", -R$35.739 mil) categorizada `exceptional_items`, que el
+  motor (`computeYearGeneric()`) suma DESPUÉS de `expenses` (junto a `nonCash`, no antes) — pero esa
+  línea es parte del "Superávit/déficit operacional ANTES do resultado financeiro" que imprime el
+  propio DRE, mismo nivel que Custos/Despesas administrativas. Recategorizada a `other_expenses`.
+- **10 hallazgos nuevos verificados y silenciados en `tools/audit-ignore.json`**: 7 `signo-invertido`
+  (deducciones fiscales impresas como línea negativa dentro de Ingresos — Botafogo-SP, Ceará ×2,
+  Chapecoense, Sport Recife — y un crédito de `exceptional_items` en Charleroi, mismo patrón que
+  Anderlecht/Club Brugge) y 3 `catchall-dominante` (Antwerp Ingresos/Gastos — Nota 6.10 belga sin
+  completar por el club; Coritiba Ingresos — la cesión del 20% de los derechos comerciales del
+  Brasileirão a Liga Forte União, R$152M de R$216,65M, sin categoría propia mejor disponible hoy).
+- **6 entradas nuevas a `FX_CLOSE`** (`data/currency-map.js`): `EUR@2025-12-31`, `DKK@2021-06-30`,
+  `DKK@2024-06-30` (promovida desde un `market_approx` mal etiquetado — el agente que la cargó la
+  había calculado exacto vía SDMX del BCE, pero la marcó `market_approx` solo porque no podía tocar
+  `currency-map.js`, no porque fuera una aproximación real), `BRL@2017-12-31`, `BRL@2020-12-31`,
+  `ARS@2021-06-30`. Y una liga nueva en el catálogo: `ar-primerab` (Primera B Metropolitana, 3er
+  escalón argentino, tier:3).
+- **ASSET_V 226 → 227** (constante Y los 15 `<script src>` estáticos, `index.html`), 3 generadores
+  corridos al final (`generate-club-index.js`, `generate-fuentes-page.js`, `generate-rankings.js`).
+  `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 8 P3, 100 silenciados. `auditAll()` en el navegador: 779
+  checks (3 no cierran, los mismos ±0,1 M€ de redondeo de Bayern Munich 2024/2025 ya conocidos y
+  silenciados, nada nuevo de esta tanda), 0 warnings de fx, 0 clubes que no cargaron.
+- Corregido `fuentes/Brasil/Amazonas.md`: decía que ninguno de los 2 PDFs de Amazonas tenía estado
+  de resultados — cierto para `balancos-2022-2023.pdf` (mala calidad de OCR, ver to-do 60), falso
+  para `balanco-patrimonial-2024.pdf`, que sí trae una DRE de 7 líneas que reconcilia exacto.
+- ~25 preguntas nuevas en `Admin/dudas-por-club.md` (categorización de rubros sin desglose completo
+  en la fuente, un grossDebt ambiguo, brandColor ambiguo de Sport Recife) — detalle completo ahí,
+  sección "Tanda de 20 transcripts al azar".
+
 ## Versión 225 — 3 países europeos nuevos (10 clubes): Croacia, Bélgica, Dinamarca
 
 - De 121 a 131 clubes cargados, 238 a 248 ejercicios. Pedido de Guido esta vez sin prioridad de país

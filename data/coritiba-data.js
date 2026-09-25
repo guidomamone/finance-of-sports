@@ -4,13 +4,39 @@
 // tiene Capital social subscrito (no "Patrimonio Social" de associação) y la DRE
 // informa "Lucro/(Prejuízo) por ação". Ejercicio social = ANO CALENDÁRIO
 // (1/1/2024 a 31/12/2024), ver `fiscalYearStart:'01-01'` en data/clubs.js.
-// 1 ejercicio cargado: 2024.
+// 2 ejercicios cargados: 2023 y 2024.
 //
-// FUENTE: `Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.pdf` (36
+// FUENTE 2024: `Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.pdf` (36
 // páginas, texto nativo, vía pdftotext -layout), firmado por Docusign,
 // transcripción completa en `demonstracoes-financeiras-2024.md` en la misma
 // carpeta. Trae Balanços patrimoniais, DRE, resultado abrangente, mutações do PL,
 // fluxos de caixa y Notas Explicativas 1-28.
+//
+// FUENTE 2023: `Clubes/Brasil/Coritiba/demonstracoes-contabeis-2022-2023.pdf`
+// (publicidade legal, Diário Indústria&Comércio, texto nativo vía pdftotext
+// -layout), transcripción completa en `demonstracoes-contabeis-2022-2023.md`
+// en la misma carpeta. 2 ejercicios cargados: 2023 y 2024.
+//
+// SOBRE 2022 (por qué NO se cargó): este documento también trae la columna
+// comparativa 2022, pero la Coritiba SAF recién se constituyó el 3/2/2022 y
+// quedó operacional desde el 1/7/2023 (drop-down de la operación desde el
+// Coritiba Foot Ball Club, la associação). La DRE 2022 de la SAF muestra "-"
+// (sin dato) en RECEITA OPERACIONAL LÍQUIDA y en CUSTOS OPERACIONAIS: solo
+// tuvo Administrativas e Marketing (10.359) y Resultado Financeiro (6.022),
+// con Prejuízo de apenas R$16.381. No es un ejercicio de operación real del
+// club, es solo la sociedad recién constituida sin actividad — cargar esto
+// como "revenueLines/expenseLines" de un año mostraría $0 de ingresos para
+// Coritiba en 2022, que sería engañoso (el club SÍ operó fútbol en 2022, pero
+// a través del Coritiba Foot Ball Club, cuyos estados contables no son los que
+// trae este documento). No se cargó ningún ejercicio 2022.
+//
+// EL EJERCICIO 2023 EN SÍ TAMBIÉN ES UN PERÍODO PARCIAL (jul-dic 2023): la
+// propia Nota 20 lo aclara ("As receitas operacionais contemplam o período de
+// julho a dezembro de 2023"), por la misma transferencia de operación del
+// 1/7/2023. Se cargó igual como "Ejercicio 2023" completo (es el único dato
+// disponible con ese year key, y el propio documento lo presenta como el
+// resultado del ejercicio social 2023) — la salvedad de período parcial queda
+// documentada acá y en `sources{}`.
 //
 // EJERCICIO MUY MALO: PREJUÍZO de R$ 139.402.626 sobre una receita líquida de
 // R$ 87.002.707 (el club gastó 2,5 veces lo que ingresó), y cerró con PATRIMÔNIO
@@ -96,9 +122,115 @@
 // Gestión: el documento está firmado digitalmente vía Docusign y no identifica a
 // un presidente en el texto extraíble. No se confirmó ninguna gestión, se cargó
 // una entrada genérica (SKILL.md sección 7).
+//
+// ---------------------------------------------------------------------------
+// EJERCICIO 2023 (demonstracoes-contabeis-2022-2023.md) — categorización:
+//
+// El documento estructura los costos en 2 notas separadas: Nota 21 "Custos
+// Operacionais do Futebol" (por natureza, 10 líneas) y Nota 22 "Despesas
+// administrativas e de Marketing" (10 líneas) — DISTINTO de la numeración de
+// notas del documento 2024 (ahí Nota 22 era personal/costos y Nota 23 era
+// administrativas). Mismo criterio de fondo: fútbol -> categoría de fútbol,
+// administrativo -> admin_general_expense, salvo Impuestos/Tasas que SIEMPRE
+// van a admin_general_expense sin importar el sector (SKILL.md sección 17),
+// igual que ya se hizo con las 2 líneas "Impostos e taxas (futebol/
+// administrativo)" del ejercicio 2024.
+//
+// - INGRESOS (Nota 20, Receitas Operacionais Brutas): mismo mapeo que 2024
+//   línea por línea ('Direitos de Transmissão de TV'->broadcasting,
+//   'Mensalidades de Sócios' y 'Patrimoniais'->member_dues, 'Transações de
+//   Atletas'->player_sales, 'Competições/Bilheteria'->matchday_competition,
+//   'Patrocínios/Subvenção' y 'Venda de Mercadorias'->sponsorship_commercial,
+//   'Outras Receitas'->other_income). Deducciones ('Tributos sobre Receitas',
+//   'Taxas Federativas e Direito de Arena') -> other_income NEGATIVO, mismo
+//   criterio que 2024: hace que revenueLines sume la RECEITA OPERACIONAL
+//   LÍQUIDA impresa (64.616.238).
+// - CUSTOS OPERACIONAIS DO FUTEBOL (Nota 21, por natureza): 'Pessoal,
+//   Benefícios e Encargos sociais' y 'Direito de Uso de Imagem' ->
+//   wages_squad; 'Despesas com Jogos', 'Serviços de Terceiros', 'Viagens e
+//   Estadias', 'Material Esportivo' y 'Energia Elétrica, Gás, Água e
+//   Telefonia' (esta última SOLO en su versión "futebol" de esta nota, la
+//   versión "administrativo" de la Nota 22 va a admin_general_expense) ->
+//   match_organisation_expense; 'Gastos com Cessão Temporária de Atletas' ->
+//   player_amortisation; 'Impostos e Taxas' -> admin_general_expense (regla
+//   fija, sección 17); 'Outros Custos' -> other_expenses.
+// - RESTO DE CUSTOS OPERACIONAIS (fuera de la Nota 21, forman parte del
+//   subtotal impreso "(92.413.676)" junto con Futebol Profissional +
+//   Categorias de Base): 'Custos das Mercadorias Vendidas' ->
+//   admin_general_expense (mismo criterio que 2024); 'Amortização de Direitos
+//   Econômicos de Atletas' -> player_amortisation (mismo criterio que 2024);
+//   'Formação de Atletas' es un CRÉDITO/reversão (293.017, impreso SIN
+//   paréntesis, reduce el total de costos en vez de sumarle) -> se cargó como
+//   línea `youth_other_sports_expense` con amountNative POSITIVO (+0.293017),
+//   simétrico al criterio ya usado del lado de Ingresos para las deducciones
+//   negativas de la Nota 20.
+// - DESPESAS ADMINISTRATIVAS E DE MARKETING (Nota 22, 10 líneas) ->
+//   admin_general_expense todas (incluida 'Impostos e Taxas' administrativo,
+//   regla fija sección 17).
+// - OUTRAS (DESPESAS)/RECEITAS OPERACIONAIS (Nota 23): a diferencia de 2024
+//   (una sola línea agregada `other_expenses`), acá el propio texto de la
+//   Nota SÍ desglosa 2 montos exactos: una RECEITA de R$159.180.000 líquida
+//   de la provisión TEF de R$7.145.600 (= R$152.034.400) por ceder el 20% de
+//   los derechos comerciales del Campeonato Brasileiro a LCP vía la Liga
+//   Forte União (cesión de 2025 a 2074, 50 años) — Nota 26 da el detalle
+//   completo —, y una DESPESA de R$65.872.826 por pagos para saldar deudas
+//   viejas del Coritiba Foot Ball Club (recuperación judicial, parcelamentos
+//   tributarios, empréstimos). 152.034.400 - 65.872.826 = 86.161.574, exacto
+//   contra la línea neta impresa en la DRE. Se cargaron LAS 2 por separado (no
+//   una sola neta) para no perder la información real del desglose: la
+//   receita -> other_income (+152.034400), la despesa -> other_expenses
+//   (-65.872826).
+// - RESULTADO FINANCEIRO LÍQUIDO (Nota 24) -> NO va como línea, neteado a
+//   `netInterest` (-0.359721): Receitas Financeiras 2.472189 - Despesas
+//   Financeiras 2.831910.
+//
+// grossDebt 2023 = 0: el documento NO tiene ninguna nota de "Empréstimos e
+// financiamentos" (a diferencia de 2024, Nota 13) — el Passivo circulante +
+// não circulante de 2023 solo trae Fornecedores/Obrigações trabalhistas y
+// tributárias/Entidades Desportivas/Outras obrigações/Receitas a apropriar,
+// ningún préstamo financiero. cash = 'Caixa e equivalentes de caixa' (Nota 4)
+// = 11.830.912.
+//
+// FX 2023: BRL/USD PTAX de cierre, boletín del 29/12/2023 (4,8413, último día
+// hábil de 2023) — ya está en FX_CLOSE (data/currency-map.js), se referencia
+// con fxRef, el documento no declara tipo de cambio propio.
+//
+// VERIFICACIÓN (tie-out): revenueLines suma 216.650638 (Nota 20 líquida
+// 64.616238 + la receita de la Nota 23, 152.034400). expenseLines suma
+// 181.599149 en valor absoluto (CUSTOS OPERACIONAIS 92.413676 + Despesas
+// Administrativas 23.312648 + la despesa de la Nota 23, 65.872826, con un
+// redondeo de R$1 heredado del propio documento). 216.650638 - 181.599149 -
+// 0.359721 (netInterest) = 34.691768, contra el LUCRO DO EXERCÍCIO impreso de
+// 34.691767 — diferencia de R$1, dentro de la tolerancia de verifyTieOuts()
+// (0,01 M) y documentada, no ajustada a mano.
+//
+// PERÍODO PARCIAL: los resultados de 2023 corresponden solo a jul-dic 2023
+// (ver nota arriba, "SOBRE 2022"), no a un año calendario completo — la Nota
+// 20 lo aclara explícitamente. officialTotalRevenue/officialTotalExpenses/
+// officialPAT reflejan igual los montos IMPRESOS por el documento para "o
+// exercício 2023", que es lo que el propio Coritiba SAF declara como su
+// resultado del ejercicio.
+//
+// Gestión 2023: mismo caso que 2024 (documento firmado sin identificar
+// presidente en el texto extraíble), se extendió el rango de la entrada
+// genérica `sinconfirmar` para cubrir 2023-2024.
+// ---------------------------------------------------------------------------
 // ============================================================================
 
 const coritibaRevenueLinesByYear = {
+  2023: [
+    { rawLabel:'Direitos de Transmissão de TV', normalizedCategory:'broadcasting', amountNative:33.523841, disclosureLevel:'detailed' },
+    { rawLabel:'Mensalidades de Sócios', normalizedCategory:'member_dues', amountNative:12.909871, disclosureLevel:'detailed' },
+    { rawLabel:'Patrimoniais', normalizedCategory:'member_dues', amountNative:8.682417, disclosureLevel:'detailed' },
+    { rawLabel:'Patrocínios/Subvenção', normalizedCategory:'sponsorship_commercial', amountNative:7.347865, disclosureLevel:'detailed' },
+    { rawLabel:'Competições/Bilheteria', normalizedCategory:'matchday_competition', amountNative:3.840888, disclosureLevel:'detailed' },
+    { rawLabel:'Transações de Atletas', normalizedCategory:'player_sales', amountNative:3.181675, disclosureLevel:'detailed' },
+    { rawLabel:'Outras Receitas', normalizedCategory:'other_income', amountNative:1.079841, disclosureLevel:'detailed' },
+    { rawLabel:'Venda de Mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.046513, disclosureLevel:'detailed' },
+    { rawLabel:'(-) Tributos sobre Receitas', normalizedCategory:'other_income', amountNative:-3.775655, disclosureLevel:'detailed' },
+    { rawLabel:'(-) Taxas Federativas e Direito de Arena', normalizedCategory:'other_income', amountNative:-2.221018, disclosureLevel:'detailed' },
+    { rawLabel:'Receita com cessão de 20% dos direitos comerciais à LCP/Liga Forte União (líquida da provisão do TEF de R$7.145.600)', normalizedCategory:'other_income', amountNative:152.034400, disclosureLevel:'aggregated' },
+  ],
   2024: [
     { rawLabel:'Mensalidades de associados', normalizedCategory:'member_dues', amountNative:22.097260, disclosureLevel:'detailed' },
     { rawLabel:'Transações de atletas', normalizedCategory:'player_sales', amountNative:18.003566, disclosureLevel:'detailed' },
@@ -114,6 +246,32 @@ const coritibaRevenueLinesByYear = {
 };
 
 const coritibaExpenseLinesByYear = {
+  2023: [
+    { rawLabel:'Pessoal, Benefícios e Encargos sociais (futebol)', normalizedCategory:'wages_squad', amountNative:-44.494312, disclosureLevel:'detailed' },
+    { rawLabel:'Direito de Uso de Imagem', normalizedCategory:'wages_squad', amountNative:-18.875392, disclosureLevel:'detailed' },
+    { rawLabel:'Amortização de Direitos Econômicos de Atletas', normalizedCategory:'player_amortisation', amountNative:-13.235967, disclosureLevel:'detailed' },
+    { rawLabel:'Serviços de Terceiros (administrativo)', normalizedCategory:'admin_general_expense', amountNative:-12.684620, disclosureLevel:'detailed' },
+    { rawLabel:'Pagamento de dívidas do Coritiba Foot Ball Club (recuperação judicial, parcelamentos tributários, empréstimos e serviços contratados)', normalizedCategory:'other_expenses', amountNative:-65.872826, disclosureLevel:'aggregated' },
+    { rawLabel:'Pessoal, Benefícios e Encargos Sociais (administrativo)', normalizedCategory:'admin_general_expense', amountNative:-6.197082, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos com Cessão Temporária de Atletas', normalizedCategory:'player_amortisation', amountNative:-4.498408, disclosureLevel:'detailed' },
+    { rawLabel:'Viagens e Estadias', normalizedCategory:'match_organisation_expense', amountNative:-3.762917, disclosureLevel:'detailed' },
+    { rawLabel:'Despesas com Jogos', normalizedCategory:'match_organisation_expense', amountNative:-2.837899, disclosureLevel:'detailed' },
+    { rawLabel:'Serviços de Terceiros (futebol)', normalizedCategory:'match_organisation_expense', amountNative:-2.338279, disclosureLevel:'detailed' },
+    { rawLabel:'Despesas Administrativa com Liga Forte', normalizedCategory:'admin_general_expense', amountNative:-1.083150, disclosureLevel:'detailed' },
+    { rawLabel:'Outras Despesas Administrativas', normalizedCategory:'admin_general_expense', amountNative:-1.150626, disclosureLevel:'detailed' },
+    { rawLabel:'Material Esportivo', normalizedCategory:'match_organisation_expense', amountNative:-0.950161, disclosureLevel:'detailed' },
+    { rawLabel:'Energia Elétrica, Gás, Água e Telefonia (administrativo)', normalizedCategory:'admin_general_expense', amountNative:-0.553767, disclosureLevel:'detailed' },
+    { rawLabel:'Conservação de Bens Patrimoniais', normalizedCategory:'admin_general_expense', amountNative:-0.777025, disclosureLevel:'detailed' },
+    { rawLabel:'Energia Elétrica, Gás, Água e Telefonia (futebol)', normalizedCategory:'match_organisation_expense', amountNative:-0.497097, disclosureLevel:'detailed' },
+    { rawLabel:'Materiais de Almoxarifado', normalizedCategory:'admin_general_expense', amountNative:-0.341869, disclosureLevel:'detailed' },
+    { rawLabel:'Impostos e Taxas (futebol)', normalizedCategory:'admin_general_expense', amountNative:-0.405673, disclosureLevel:'detailed' },
+    { rawLabel:'Outros Custos (futebol)', normalizedCategory:'other_expenses', amountNative:-0.785037, disclosureLevel:'detailed' },
+    { rawLabel:'Impostos e Taxas (administrativo)', normalizedCategory:'admin_general_expense', amountNative:-0.241472, disclosureLevel:'detailed' },
+    { rawLabel:'Outras Despesas Administrativas — Multas e Honorários / Encargos Legais', normalizedCategory:'admin_general_expense', amountNative:-0.136110, disclosureLevel:'detailed' },
+    { rawLabel:'Propaganda, Publicidade e Eventos', normalizedCategory:'admin_general_expense', amountNative:-0.146927, disclosureLevel:'detailed' },
+    { rawLabel:'Custos das Mercadorias Vendidas', normalizedCategory:'admin_general_expense', amountNative:-0.025550, disclosureLevel:'detailed' },
+    { rawLabel:'Formação de Atletas (reversão/crédito no exercício)', normalizedCategory:'youth_other_sports_expense', amountNative:0.293017, disclosureLevel:'detailed' },
+  ],
   2024: [
     { rawLabel:'Pessoal, benefícios e encargos sociais (futebol)', normalizedCategory:'wages_squad', amountNative:-56.065075, disclosureLevel:'detailed' },
     { rawLabel:'Pessoal, benefícios e encargos sociais (administrativo)', normalizedCategory:'admin_general_expense', amountNative:-32.419142, disclosureLevel:'detailed' },
@@ -144,6 +302,27 @@ const coritibaExpenseLinesByYear = {
 };
 
 const coritibaFiscalYearMeta = {
+  2023: {
+    currency:'BRL', fxRef:'BRL@2023-12-31',
+    sourceId:'coritiba-demonstracoes-2022-2023',
+    reportType:'official_balance_sheet',
+    gestionId:'sinconfirmar',
+    // grossDebt = 0: el documento no tiene nota de Empréstimos e financiamentos
+    // para 2023 (a diferencia de 2024). cash = Caixa e equivalentes (Nota 4).
+    grossDebt:0, cash:11.830912,
+    profitOnPlayerSales:0, assetSales:0,
+    // netInterest = RESULTADO FINANCEIRO LÍQUIDO (Nota 24): receitas financeiras
+    // 2.472189 - despesas financeiras 2.831910.
+    netInterest:-0.359721, tax:0,
+    // officialTotalRevenue = RECEITA OPERACIONAL LÍQUIDA (Nota 20, 64.616238) +
+    // la receita de la Nota 23 (152.034400) = 216.650638. officialTotalExpenses
+    // = CUSTOS OPERACIONAIS (92.413676) + Administrativas e Marketing
+    // (23.312648) + la despesa de la Nota 23 (65.872826) = 181.599150.
+    // officialPAT = LUCRO DO EXERCÍCIO impreso. Ver comentario de cabecera para
+    // el detalle completo del tie-out (diferencia de R$1 vs. la suma propia,
+    // dentro de tolerancia).
+    officialTotalRevenue:216.650638, officialTotalExpenses:181.599150, officialPAT:34.691767,
+  },
   2024: {
     currency:'BRL', fxRef:'BRL@2024-12-31',
     sourceId:'coritiba-demonstracoes-2024',
@@ -182,6 +361,13 @@ window.CLUB_GENERIC_DATA.coritiba = {
 };
 
 Object.assign(sources, {
+  'coritiba-demonstracoes-2022-2023': {
+      id:'coritiba-demonstracoes-2022-2023', clubId:'coritiba',
+      title:'Demonstrações Contábeis, Exercícios findos em 31 de dezembro de 2023 e 2022 (publicidade legal, Diário Indústria&Comércio)',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://coritiba.com.br/',
+      note:'Publicação legal en el Diário Indústria&Comércio (12-14/4/2024, texto nativo) con Balanços patrimoniais, DRE, resultado abrangente, mutações do PL, fluxos de caixa y Notas Explicativas 1-27 de la Coritiba SAF. Se cargó el ejercicio 2023 (Lucro de R$34.691.767 sobre uma receita líquida de R$64.616.238). NO se cargó 2022: la SAF recién se constituyó el 3/2/2022 y quedó operacional desde el 1/7/2023 (la DRE 2022 muestra "-" en ingresos y costos operacionais, solo Prejuízo de R$16.381 de una sociedad sin actividad todavía). El ejercicio 2023 en sí es también un período PARCIAL (jul-dic 2023, aclarado explícitamente por la propia Nota 20), por la transferencia de operación del Coritiba Foot Ball Club a la SAF. Los costos se cargaron desde la Nota 21 "Custos Operacionais do Futebol" (por natureza) y la Nota 22 "Despesas administrativas e de Marketing" (distinta numeración de notas que el documento 2024). La Nota 23 ("Outras despesas/receitas operacionais") se desglosó en 2 líneas reales (receita de R$152.034.400 por ceder el 20% de los derechos comerciales del Campeonato Brasileiro a LCP vía la Liga Forte União, y despesa de R$65.872.826 por saldar deudas viejas del Coritiba Foot Ball Club) en vez de cargarla neta como una sola línea. grossDebt = 0 (sin nota de Empréstimos e financiamentos en este documento). Convertido a USD con el PTAX BCB de cierre del 29/12/2023 (R$4,8413). Transcripción completa en Clubes/Brasil/Coritiba/demonstracoes-contabeis-2022-2023.md.',
+    },
   'coritiba-demonstracoes-2024': {
       id:'coritiba-demonstracoes-2024', clubId:'coritiba',
       title:'Demonstrações Contábeis, Exercícios findos em 31 de dezembro de 2024 e 2023',
@@ -192,8 +378,9 @@ Object.assign(sources, {
 });
 
 gestionesByClub.coritiba = {
-    // El documento está firmado por Docusign y no identifica presidente en el texto.
-    sinconfirmar: { nombre:'Gestión actual', firstYear:2024, lastYear:2024 },
+    // Los 2 documentos (2023 y 2024) están firmados/publicados sin identificar
+    // presidente en el texto extraíble.
+    sinconfirmar: { nombre:'Gestión actual', firstYear:2023, lastYear:2024 },
   };
 
 memberCountByClub.coritiba = null; // no se encontró una cifra confiable en esta sesión

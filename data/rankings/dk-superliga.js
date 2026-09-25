@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Superliga (DK) — 3 ejercicio(s) con ranking:
-//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+// Superliga (DK) — 4 ejercicio(s) con ranking:
+//   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -20,6 +21,20 @@ window.RANKINGS["dk-superliga"] = {
       { id:"fckobenhavn-dk", revenue:105.106, reportType:"official_balance_sheet",
         sourceId:"fckobenhavn-aarsrapport-2024",
         mix:[["Comercial / Sponsors",25.76],["Estadio",16.217],["Televisión",15.44],["Venta de Jugadores",40.113],["Otros ingresos",7.577]] },
+      { id:"silkeborg-dk", revenue:21.61, reportType:"official_balance_sheet",
+        sourceId:"silkeborg-aarsrapport-2024",
+        mix:[["Comercial / Sponsors",4.064],["Estadio",2.258],["Televisión",3.503],["Premios por competencias",1.797],["Venta de Jugadores",8.545],["Otros ingresos",1.443]] },
+      { id:"viborg-dk", revenue:19.048, reportType:"official_balance_sheet",
+        sourceId:"viborg-aarsrapport-2024",
+        mix:[["Venta de Jugadores",8.14],["Fútbol profesional (sin desglosar por la fuente)",10.908]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"agf-dk", revenue:30.096, reportType:"official_balance_sheet",
+        sourceId:"agf-aarsrapport-2020-21",
+        mix:[["Comercial / Sponsors",12.213],["Estadio",3.061],["Televisión",5.541],["Venta de Jugadores",4.577],["Otros ingresos",4.704]] },
     ],
   },
   2020: {

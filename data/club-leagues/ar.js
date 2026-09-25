@@ -65,6 +65,13 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // A, ninguna de las cuales tiene liga propia en el catálogo hoy) — queda en `null`, sin verificar,
   // en vez de adivinar.
   'ferrocarriloeste-ar': { 2022: null, 2023: null },
+  // Godoy Cruz (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): Ejercicio N°72
+  // (1/7/2019-30/6/2020), Wikipedia confirma temporada 2019-20 completa en Primera División.
+  'godoycruz-ar': { 2020: 'ar-primera' },
+  // Los Andes (misma sesión): Ejercicio N°105 (cerrado 30/6/2021), confirmado vía WhoScored que
+  // jugó la Primera B Metropolitana 2020/2021 — 3er escalón, ver 'ar-primerab' agregado a
+  // data/leagues.js en esta misma integración.
+  'losandes-ar': { 2021: 'ar-primerab' },
 });
 
 // ---------------------------------------------------------------------------

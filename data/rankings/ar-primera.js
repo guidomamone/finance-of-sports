@@ -10,7 +10,7 @@
 //   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -161,6 +161,9 @@ window.RANKINGS["ar-primera"] = {
       { id:"banfield-ar", revenue:10.017, reportType:"official_balance_sheet",
         sourceId:"banfield-ar-memoria-y-balance-2019-2020",
         mix:[["Cuotas Sociales",0.9],["Comercial / Sponsors",0.393],["Estadio",0.316],["Televisión",2.336],["Venta de Jugadores",2.662],["Educación",0.398],["Otras secciones deportivas",0.33],["Otros ingresos",2.682]] },
+      { id:"godoycruz-ar", revenue:8.724, reportType:"official_balance_sheet",
+        sourceId:"godoycruz-ar-estados-contables-2019-20",
+        mix:[["Cuotas Sociales",0.333],["Comercial / Sponsors",0.434],["Estadio",0.368],["Televisión",3.733],["Venta de Jugadores",2.488],["Educación",0.455],["Otras secciones deportivas",0.052],["Otros ingresos",0.86]] },
     ],
   },
   2019: {

@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Pro League (BE) — 1 ejercicio(s) con ranking:
-//   2025: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -24,9 +24,18 @@ window.RANKINGS["be-proleague"] = {
       { id:"genk-be", revenue:120.668, reportType:"official_balance_sheet",
         sourceId:"genk-be-jaarrekening-2025",
         mix:[["Cuotas Sociales",15.803],["Venta de Jugadores",65.583],["Fútbol profesional (sin desglosar por la fuente)",39.282]] },
+      { id:"antwerp-be", revenue:105.265, reportType:"official_balance_sheet",
+        sourceId:"antwerp-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",50.81],["Otros ingresos",54.455]] },
       { id:"gent-be", revenue:95.124, reportType:"official_balance_sheet",
         sourceId:"gent-be-jaarrekening-2025",
         mix:[["Venta de Jugadores",51.168],["Fútbol profesional (sin desglosar por la fuente)",43.956]] },
+      { id:"mechelen-be", revenue:39.248, reportType:"official_balance_sheet",
+        sourceId:"mechelen-be-jaarrekening-2025",
+        mix:[["Venta de Jugadores",10.005],["Fútbol profesional (sin desglosar por la fuente)",24.485],["Otros ingresos",4.758]] },
+      { id:"charleroi-be", revenue:34.933, reportType:"official_balance_sheet",
+        sourceId:"charleroi-be-jaarrekening-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",29.051],["Otros ingresos",5.882]] },
     ],
   },
 };

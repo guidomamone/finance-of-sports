@@ -224,6 +224,9 @@ const FX_CLOSE = {
   // data/<club>-data.js), así que las 3 entradas de abajo son cierres de mercado, dólar mayorista
   // BCRA (serie de Rava Bursátil, misma fuente que ya usan las entradas de 2024/2025 de arriba).
   'ARS@2020-06-30': { fx: 70.46,   source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2020' },
+  // Sesión 2026-09-25 (onboarding de Los Andes, tanda de 20 transcripts al azar): verificado
+  // contra nota de Ámbito Financiero del mismo día, no solo la serie BCRA sola.
+  'ARS@2021-06-30': { fx: 95.72,   source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2021' },
   'ARS@2022-06-30': { fx: 125.215, source: 'market_close', label: 'Dólar mayorista de referencia BCRA (Comunicación A 3500) al 30/6/2022' },
   'ARS@2023-06-30': { fx: 256.675, source: 'market_close', label: 'Dólar mayorista de referencia BCRA (Comunicación A 3500) al 30/6/2023' },
   'ARS@2024-06-30': { fx: 909,     source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2024' },
@@ -235,7 +238,11 @@ const FX_CLOSE = {
   // Sesión 2026-09-23 (onboarding de Gimnasia y Esgrima LP): el presupuesto 2025-26 (año standalone,
   // sin balance real todavía) no declara TC propio y no tiene un balance pareado del que tomarlo.
   'ARS@2026-06-30': { fx: 1482,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2026' },
+  // Sesión 2026-09-25 (onboarding de Chapecoense 2017 y Juventude 2020, tanda de 20 transcripts
+  // al azar): PTAX consultado vía la API Olinda del propio Banco Central do Brasil.
+  'BRL@2017-12-31': { fx: 3.3080,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2017 (último día hábil del año)' },
   'BRL@2019-12-31': { fx: 4.0307,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2019' },
+  'BRL@2020-12-31': { fx: 5.1967,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2020' },
   'BRL@2021-12-31': { fx: 5.5805,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2021' },
   'BRL@2022-12-31': { fx: 5.2177,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, 30/12/2022 (último día hábil del año; 31/12 cayó sábado)' },
   'BRL@2023-12-31': { fx: 4.8413,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2023 (último día hábil del año; 30 y 31/12 cayeron sábado y domingo)' },
@@ -243,8 +250,12 @@ const FX_CLOSE = {
   'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },
   'COP@2018-12-31': { fx: 3249.75, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia / Banco de la República) al 31/12/2018' },
   'COP@2025-12-31': { fx: 3757.08, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025' },
+  // Sesión 2026-09-25 (onboarding de Bayern Munich 2020/21, tanda de 20 transcripts al azar).
+  'EUR@2021-06-30': { fx: 0.8415,  source: 'market_close', label: 'Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD)' },
   'EUR@2024-06-30': { fx: 0.9337,  source: 'market_close', label: 'Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD)' },
   'EUR@2025-06-30': { fx: 0.8532,  source: 'market_close', label: 'Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD)' },
+  // Osijek/Slaven Belupo (Croacia, ejercicio calendario 2025, onboarding sesión 2026-09-25).
+  'EUR@2025-12-31': { fx: 0.8511,  source: 'market_close', label: 'Cierre BCE al 31/12/2025 (1 EUR = 1,1750 USD)' },
   // Placeholder, no cotización: la J.League no declara ninguna en su Club
   // Licensing Report y los 10 clubes de Japón salen de ese mismo documento.
   'JPY@2025-12-31': { fx: 150,     source: 'placeholder',  label: 'Referencia redonda de ¥150 por USD; el documento de la J.League no declara ninguna' },
@@ -282,6 +293,10 @@ const FX_CLOSE = {
   // de cruce GBP/EUR × EUR/USD ya usado arriba, con DKK/EUR × EUR/USD.
   'DKK@2019-06-30': { fx: 6.5585, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2019 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4636) × EUR/USD (1,1380) (1 DKK ≈ 0,1525 USD)' },
   'DKK@2020-12-31': { fx: 6.0638, source: 'market_close', label: 'Cierre BCE al 31/12/2020, cruzando DKK/EUR (7,4409) × EUR/USD (1,2271) (1 DKK ≈ 0,1650 USD)' },
+  // AGF y Viborg FF (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar), mismo método
+  // de cruce DKK/EUR × EUR/USD del boletín BCE.
+  'DKK@2021-06-30': { fx: 6.2573, source: 'market_close', label: 'Cierre BCE al 30/6/2021, cruzando DKK/EUR (7,4362) × EUR/USD (1,1884) (1 DKK ≈ 0,1598 USD)' },
+  'DKK@2024-06-30': { fx: 6.9664, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4575) × EUR/USD (1,0705) (1 DKK ≈ 0,1435 USD)' },
   'DKK@2024-12-31': { fx: 7.1786, source: 'market_close', label: 'Cierre BCE al 31/12/2024, cruzando DKK/EUR (7,4578) × EUR/USD (1,0389) (1 DKK ≈ 0,1393 USD)' },
 };
 

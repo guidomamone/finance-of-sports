@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Bundesliga (DE) — 3 ejercicio(s) con ranking:
+// Bundesliga (DE) — 4 ejercicio(s) con ranking:
 //   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -78,6 +79,9 @@ window.RANKINGS["de-bundesliga"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"rbleipzig-de", revenue:428.949, reportType:"official_balance_sheet",
+        sourceId:"rbleipzig-de-jahresabschluss-2023",
+        mix:[["Comercial / Sponsors",9.131],["Fútbol profesional (sin desglosar por la fuente)",340.353],["Otros ingresos",79.465]] },
       { id:"stuttgart-de", revenue:240.467, reportType:"official_balance_sheet",
         sourceId:"stuttgart-de-konzernabschluss-2023",
         mix:[["Comercial / Sponsors",33.607],["Estadio",39.608],["Televisión",62.714],["Fútbol profesional (sin desglosar por la fuente)",89.588],["Otros ingresos",14.951]] },
@@ -87,6 +91,14 @@ window.RANKINGS["de-bundesliga"] = {
       { id:"werderbremen-de", revenue:130.478, reportType:"official_balance_sheet",
         sourceId:"werderbremen-de-konzernabschluss-2023",
         mix:[["Comercial / Sponsors",43.187],["Estadio",30.481],["Televisión",41.549],["Venta de Jugadores",5.701],["Otros ingresos",9.559]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"bayernmunich-de", revenue:765.181, reportType:"official_balance_sheet",
+        sourceId:"bayernmunich-de-jahresabschluss-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",765.181]] },
     ],
   },
 };

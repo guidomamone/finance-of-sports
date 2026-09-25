@@ -29,4 +29,9 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'anderlecht-be': { 2025: 'be-proleague' },
   'genk-be':       { 2025: 'be-proleague' },
   'gent-be':       { 2025: 'be-proleague' },
+  // Charleroi/Mechelen/Antwerp (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar):
+  // los 3 jugaron Pro League completa en el ejercicio 2024/2025, sin descenso.
+  'charleroi-be':  { 2025: 'be-proleague' },
+  'mechelen-be':   { 2025: 'be-proleague' },
+  'antwerp-be':    { 2025: 'be-proleague' },
 });

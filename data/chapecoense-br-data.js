@@ -5,13 +5,21 @@
 // clubId 'chapecoense-br' (CON GUIÓN, bracket notation en clubs{}/CLUB_GENERIC_DATA/
 // gestionesByClub/memberCountByClub, mismo criterio que banfield-ar/flamengo-br).
 //
-// 1 ejercicio cargado: 2021 (año calendario, 1°/1 a 31/12/2021 — CONFIRMADO por el propio documento:
-// "BALANÇO PATRIMONIAL... EM 31 DE DEZEMBRO DE 2021 E 2020" y "DEMONSTRAÇÃO DO SUPERÁVIT/(DÉFICIT)
-// DO EXERCÍCIO EM 31 DE DEZEMBRO DE 2021 E 2020", Nota 3 "Aprovação das Demonstrações Financeiras":
-// "as demonstrações financeiras da Controladora e Consolidado para o exercício findo em 31 de
-// dezembro de 2021 foram autorizadas para a emissão pelo Conselho Deliberativo em 31 de maio de
-// 2022". Se cargó la columna 2021 ("año corriente" del documento), NO la columna comparativa 2020,
-// siguiendo club-data-mapping sección 6.5.
+// 2 ejercicios cargados: 2017 y 2021 (ambos año calendario, 1°/1 a 31/12).
+//
+// 2021 CONFIRMADO por el propio documento: "BALANÇO PATRIMONIAL... EM 31 DE DEZEMBRO DE 2021 E
+// 2020" y "DEMONSTRAÇÃO DO SUPERÁVIT/(DÉFICIT) DO EXERCÍCIO EM 31 DE DEZEMBRO DE 2021 E 2020", Nota 3
+// "Aprovação das Demonstrações Financeiras": "as demonstrações financeiras da Controladora e
+// Consolidado para o exercício findo em 31 de dezembro de 2021 foram autorizadas para a emissão pelo
+// Conselho Deliberativo em 31 de maio de 2022". Se cargó la columna 2021 ("año corriente" del
+// documento), NO la columna comparativa 2020, siguiendo club-data-mapping sección 6.5.
+//
+// 2017 CONFIRMADO por su propio documento standalone (un solo año, no comparativo): "DEMONSTRAÇÕES
+// FINANCEIRAS FINDAS EM 31/12/2017", Nota 3 "Aprovação das Demonstrações Financeiras": "as
+// demonstrações financeiras da Controladora e Consolidado para o exercício findo em 31 de dezembro
+// de 2017 foram autorizadas para a emissão pela diretoria em 10 de abril de 2018". Se cargó la
+// columna 2017 (año corriente), NO la columna comparativa 2016 (sección 6.5). No hay documento propio
+// para 2016 todavía, así que ese año NO se cargó (solo existe como comparativo de este documento).
 //
 // FUENTE: "Demonstrações Financeiras da Controladora e Consolidado em conjunto com as Notas
 // Explicativas, findas em 31/12/2021 e 31/12/2020" — descargado de fcf.com.br (Federação
@@ -176,9 +184,110 @@
 //
 // memberCountByClub: null — no se encontró una cifra de sócios/associados en el documento (sólo el
 // ingreso de 'Programa Sócio Torcedor', sin cantidad total de socios impresa).
+//
+// ---------------------------------------------------------------------------
+// EJERCICIO 2017 (demonstracoes-financeiras-2017.md) — categorización:
+//
+// Documento SIN inconsistencia de fuente (a diferencia de 2021): DRE, Nota 19 (Receita) y Notas
+// 20-26 (Despesas/Outros Resultados) reconcilian EXACTO entre sí (texto nativo en todo el
+// documento, sin páginas-imagen). Mismo criterio de fondo que 2021: Notas de detalle -> categorías
+// reales; 'Outras Receitas'/'Outras Despesas' (Nota 26, "Outros Resultados Operacionais") se
+// cargaron como líneas de revenueLines/expenseLines (no aparte), mismo patrón que 2021.
+//
+// INGRESOS (Nota 19 "Composição da Receita Líquida" + Nota 26 "Outras Receitas"): mismo mapeo
+// conceptual que 2021 línea por línea ('Receita de Transmissão'->broadcasting, 'Bilheteria'->
+// matchday_competition, 'Patrocínio' y 'Royalties/Direito de Uso de Marca'->sponsorship_commercial,
+// 'Receita de Negociação de Atletas'->player_sales, 'Programa Sócio Torcedor'->member_dues,
+// 'Time-Mania'/'Receitas Diversas'/'Doações/PAF'->other_income, 'Receitas Federações' [nota (f):
+// "valores recebidos em decorrência da participação na Copa do Brasil, Copa SulAmericana e do
+// Campeonato Brasileiro"]->competition_bonus, 'Deduções Tributárias e Sindicais'->other_income
+// NEGATIVO). 'Outras Receitas' (Nota 26: Dividendos Recebidos, Indenizações de Seguros Recebidas,
+// Outras Receitas Não Operacionais, Recuperação de Despesas, Reversão de Provisão, Venda de
+// Imobilizado) -> other_income todas, catch-all sin ninguna lo bastante grande para categoría
+// propia (mismo criterio 2021).
+//
+// GASTOS:
+// - 'Despesas com Pessoal' (Nota 20): a diferencia de 2021 (donde 'Despesas com Transf. Jogadores'
+//   era solo 0,3% del total y se dejó dentro de los items de wages_squad), acá 'Custo Transf.
+//   Jogadores' es 10.931.989 de 48.592.556 — 22,5% del total, DEMASIADO grande para dejarlo
+//   enterrado en items sin categoría propia (club-data-mapping sección 1, regla de la Versión 38:
+//   promover a línea de primer nivel un sub-ítem con categoría real distinta y peso significativo).
+//   Se PROMOVIÓ a su propia línea `player_amortisation` (-10.931989). El resto de la Nota 20
+//   (Ordenados e Salários, Premiação, Impostos [cargas sociales sobre nómina, se pegan al sueldo
+//   por club-data-mapping sección 17], Indenizações, Aluguel, Alimentação, Despesas Médicas,
+//   Seguros, Outros Gastos c/ Pessoal) se mantuvo como UNA línea `wages_squad` (-37.660567) con
+//   items de desglose.
+// - 'Direito de Imagem' (Nota 23) -> wages_squad (mismo criterio 2021).
+// - 'Despesa com Materiais' y 'Serviços Terceiros' (SIN nota propia en este documento — a
+//   diferencia de 2021, donde "Terceiros - Futebol e Comissões" SÍ tenía nota propia que
+//   explicitaba "gastos com comissão e intermediação" y se categorizó other_expenses): sin ese
+//   desglose acá, no hay evidencia de que 'Serviços Terceiros' sea específicamente comisiones de
+//   transferencias, así que se cargó como admin_general_expense (servicios de terceros genéricos),
+//   el default más conservador ante la ambigüedad — quedó como pregunta abierta.
+// - 'Despesa com Manutenção' (Nota 21) -> admin_general_expense, con items.
+// - 'Gastos com Jogos e Competições' (Nota 22) -> match_organisation_expense.
+// - 'Depreciação e Bens Pq Valor' (sin nota propia) -> depreciation (mismo criterio 2021).
+// - 'Gerais e Administrativas' (Nota 24) -> admin_general_expense, con items (se omitieron
+//   'Contribuição Sindical' y 'Academia', ambas en $0 en 2017).
+// - 'Despesas Tributárias' (sin nota propia) -> admin_general_expense (impuestos, sección 17).
+// - 'Outras Despesas' (Nota 26): 'Despesas diversas' y 'Custo dos Bens Patrimoniais Vendidos' ->
+//   other_expenses (catch-all chico); 'Contingência Processos' (7.710.137, el 70% del total de
+//   Outras Despesas, una provisión por litigios/procesos judiciales) -> exceptional_items, no
+//   operativo/no recurrente; 'Acidente Aéreo Chapecoense' (1.843.707, gastos ligados a la tragedia
+//   de LaMia 2016 que siguieron devengándose en 2017) -> exceptional_items, mismo caso de manual que
+//   2021; 'Premiação do Ano p/pgto pôster' (1.355.000, distinta de la 'Premiação' ordinaria de
+//   plantel ya cargada en la Nota 20) -> other_expenses, concepto no identificado con certeza
+//   (posible premio/bono ligado a una campaña de pósters, no aclarado por el documento) — queda como
+//   pregunta abierta. 'Complementar Seguro' quedó en $0 en 2017 (solo tuvo monto en 2016), se omitió.
+//
+// netInterest = Resultado Financeiro (Nota 25: Receitas Financeiras 3.117933 - Despesas Financeiras
+// 0.207475) = +2.910458 M BRL — POSITIVO este año (a diferencia de 2021), impulsado por
+// "Aplicações Financeiras" de fondos recibidos tras la tragedia de 2016. tax = 0 (misma exención de
+// entidad sin fines de lucro que 2021, Nota 4.8a). profitOnPlayerSales = assetSales = 0 (todo bruto
+// en revenueLines/expenseLines, sin netear).
+//
+// grossDebt = 0: el propio Relatório da Administração (pág. 7) dice explícito "Endividamento: Clube
+// sem dívidas bancárias". La única obligación grande del pasivo ('Contrato de Concessão de
+// Direitos'/'Total Contas a Pagar', Nota 06, 44.362.653) es RECEITA DIFERIDA (luvas y contratos de
+// TV/patrocinio cobrados por adelantado, reconocidos en resultado a medida que se devengan), NO
+// deuda financiera — no se contó como grossDebt. cash = 'Caixa e Equivalentes de Caixa' (Nota 5,
+// Controladora 2017) = 8.340897.
+//
+// FX: mismo caso que 2021 — Nota 4.2 no declara un tipo de cambio numérico propio. Se usó PTAX de
+// cierre (venda) del Banco Central do Brasil, boletín del 29/12/2017 (último día hábil del año; 30 y
+// 31/12/2017 cayeron sábado y domingo): R$3,3080, consultado en esta sesión vía la API pública del
+// BCB (olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo). Promovido a
+// 'BRL@2017-12-31' en FX_CLOSE (data/currency-map.js) en la integración de esta misma sesión.
+//
+// Gestión: la propia "Mensagem do Presidente" (pág. 4 del .md) del documento de 2017 identifica a
+// Plinio David De Nes Filho como Presidente de la Associação Chapecoense de Futebol durante ESE
+// ejercicio — a diferencia de 2021 (firmado por un presidente distinto, tras el cambio de diciembre
+// 2021), acá SÍ hay una identificación directa y contemporánea al ejercicio. Se cargó una gestión
+// propia 'plinio-denes' con firstYear/lastYear:2017 (solo el año confirmado por este documento, sin
+// asumir el rango completo de su mandato).
+// ---------------------------------------------------------------------------
 // ============================================================================
 
 const chapecoenseBrRevenueLinesByYear = {
+  2017: [
+    { rawLabel:'Receita de Transmissão', normalizedCategory:'broadcasting', amountNative:37.859111, disclosureLevel:'detailed' },
+    { rawLabel:'Bilheteria', normalizedCategory:'matchday_competition', amountNative:4.120692, disclosureLevel:'detailed' },
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:9.239816, disclosureLevel:'detailed' },
+    { rawLabel:'Receita de Negociação de Atletas', normalizedCategory:'player_sales', amountNative:11.298182, disclosureLevel:'detailed' },
+    { rawLabel:'Programa Sócio Torcedor', normalizedCategory:'member_dues', amountNative:13.868568, disclosureLevel:'detailed' },
+    { rawLabel:'Time-Mania', normalizedCategory:'other_income', amountNative:0.201120, disclosureLevel:'detailed' },
+    { rawLabel:'Royalties/Direito de Uso de Marca', normalizedCategory:'sponsorship_commercial', amountNative:1.521739, disclosureLevel:'detailed' },
+    { rawLabel:'Receitas Diversas', normalizedCategory:'other_income', amountNative:1.346781, disclosureLevel:'detailed' },
+    { rawLabel:'Doações/PAF', normalizedCategory:'other_income', amountNative:10.125631, disclosureLevel:'detailed' },
+    { rawLabel:'Receitas Federações (Copa do Brasil/Sul-Americana/Brasileirão)', normalizedCategory:'competition_bonus', amountNative:10.220073, disclosureLevel:'detailed' },
+    { rawLabel:'Deduções Tributárias e Sindicais', normalizedCategory:'other_income', amountNative:-5.256351, disclosureLevel:'detailed' },
+    { rawLabel:'Dividendos Recebidos', normalizedCategory:'other_income', amountNative:0.014573, disclosureLevel:'detailed' },
+    { rawLabel:'Indenizações de Seguros Recebidas', normalizedCategory:'other_income', amountNative:0.500000, disclosureLevel:'detailed' },
+    { rawLabel:'Outras Receitas Não Operacionais', normalizedCategory:'other_income', amountNative:0.020178, disclosureLevel:'detailed' },
+    { rawLabel:'Recuperação de Despesas', normalizedCategory:'other_income', amountNative:0.251953, disclosureLevel:'detailed' },
+    { rawLabel:'Reversão de Provisão', normalizedCategory:'other_income', amountNative:2.500000, disclosureLevel:'detailed' },
+    { rawLabel:'Venda de Imobilizado', normalizedCategory:'other_income', amountNative:0.020490, disclosureLevel:'detailed' },
+  ],
   2021: [
     { rawLabel:'Receita de Transmissão', normalizedCategory:'broadcasting', amountNative:41.593, disclosureLevel:'detailed' },
     { rawLabel:'Bilheteria', normalizedCategory:'matchday_competition', amountNative:0.392, disclosureLevel:'detailed' },
@@ -199,6 +308,47 @@ const chapecoenseBrRevenueLinesByYear = {
 };
 
 const chapecoenseBrExpenseLinesByYear = {
+  2017: [
+    { rawLabel:'Despesas com Pessoal (exceto Custo Transf. Jogadores)', normalizedCategory:'wages_squad', amountNative:-37.660567, disclosureLevel:'detailed', items:[
+      ['Ordenados e Salários', -22.078499],
+      ['Premiação', -9.501117],
+      ['Impostos (encargos sobre a folha)', -2.775954],
+      ['Indenizações', -0.862384],
+      ['Aluguel', -0.047160],
+      ['Alimentação', -0.020891],
+      ['Despesas Médicas', -0.830591],
+      ['Seguros', -0.782221],
+      ['Outros Gastos c/ Pessoal', -0.761750],
+    ] },
+    { rawLabel:'Custo Transf. Jogadores', normalizedCategory:'player_amortisation', amountNative:-10.931989, disclosureLevel:'detailed' },
+    { rawLabel:'Direito de Imagem', normalizedCategory:'wages_squad', amountNative:-12.359605, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos com Jogos e Competições', normalizedCategory:'match_organisation_expense', amountNative:-10.420885, disclosureLevel:'detailed' },
+    { rawLabel:'Serviços Terceiros', normalizedCategory:'admin_general_expense', amountNative:-6.819750, disclosureLevel:'aggregate' },
+    { rawLabel:'Gerais e Administrativas', normalizedCategory:'admin_general_expense', amountNative:-3.145019, disclosureLevel:'detailed', items:[
+      ['Multas e Indenizações', -0.029909],
+      ['Propaganda e Publicidade', -0.997213],
+      ['Gastos Logísticos', -1.137576],
+      ['Provisões Contingência', -0.037044],
+      ['Doações/Ajudas de Custo', -0.126994],
+      ['Água, Luz e Telefone', -0.130782],
+      ['Despesas Bancárias', -0.141326],
+      ['Mensalidades/Periódicos', -0.065955],
+      ['Demais Gastos', -0.478221],
+    ] },
+    { rawLabel:'Contingência Processos', normalizedCategory:'exceptional_items', amountNative:-7.710137, disclosureLevel:'detailed' },
+    { rawLabel:'Despesa com Manutenção', normalizedCategory:'admin_general_expense', amountNative:-1.443115, disclosureLevel:'detailed', items:[
+      ['Manutenção Imobilizado', -0.105108],
+      ['Manutenção Terceiros', -0.813551],
+      ['Manutenção Intangível', -0.524456],
+    ] },
+    { rawLabel:'Acidente Aéreo Chapecoense', normalizedCategory:'exceptional_items', amountNative:-1.843707, disclosureLevel:'detailed' },
+    { rawLabel:'Premiação do Ano p/pgto pôster', normalizedCategory:'other_expenses', amountNative:-1.355000, disclosureLevel:'detailed' },
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.942911, disclosureLevel:'aggregate' },
+    { rawLabel:'Despesa com Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.675831, disclosureLevel:'aggregate' },
+    { rawLabel:'Depreciação e Bens Pq Valor', normalizedCategory:'depreciation', amountNative:-0.575004, disclosureLevel:'aggregate' },
+    { rawLabel:'Custo dos Bens Patrimoniais Vendidos', normalizedCategory:'other_expenses', amountNative:-0.025135, disclosureLevel:'detailed' },
+    { rawLabel:'Despesas diversas', normalizedCategory:'other_expenses', amountNative:-0.022097, disclosureLevel:'detailed' },
+  ],
   2021: [
     { rawLabel:'Despesas com Pessoal', normalizedCategory:'wages_squad', amountNative:-46.456, disclosureLevel:'detailed', items:[
       ['Ordenados e Salários', -19.730],
@@ -250,6 +400,26 @@ const chapecoenseBrExpenseLinesByYear = {
 };
 
 const chapecoenseBrFiscalYearMeta = {
+  2017: {
+    currency:'BRL', fxRef:'BRL@2017-12-31',
+    sourceId:'chapecoense-br-demonstracoes-2017',
+    reportType:'official_balance_sheet',
+    gestionId:'plinio-denes',
+    // grossDebt = 0: "Endividamento: Clube sem dívidas bancárias" (Relatório da Administração, pág.
+    // 7). cash = 'Caixa e Equivalentes de Caixa' (Nota 5, Controladora).
+    grossDebt:0, cash:8.340897,
+    profitOnPlayerSales:0, assetSales:0,
+    // netInterest = Receitas Financeiras (3.117933) + Despesas Financeiras (-0.207475), Nota 25,
+    // Controladora. POSITIVO este año (a diferencia de 2021).
+    netInterest:2.910458, tax:0,
+    // officialTotalRevenue = suma de revenueLines (97.852554). officialTotalExpenses = suma de
+    // expenseLines EXCLUYENDO 'Contingência Processos' y 'Acidente Aéreo Chapecoense'
+    // (exceptional_items, -9.553844 combinadas) = 86.376908 — mismo criterio que 2021 (exceptional_items
+    // no entra en el total "expenses" que usa el motor, entra aparte en el PAT). officialPAT =
+    // SUPERAVIT DO EXERCÍCIO impreso: 97.852554 - 86.376908 - 9.553844 (exceptional_items) +
+    // 2.910458 (netInterest) = 4.832260, contra el 4.832261 impreso (diferencia de R$1, redondeo).
+    officialTotalRevenue:97.852554, officialTotalExpenses:86.376908, officialPAT:4.832261,
+  },
   2021: {
     currency:'BRL', fxRef:'BRL@2021-12-31',
     sourceId:'chapecoense-br-demonstracoes-2020-2021',
@@ -298,6 +468,13 @@ window.CLUB_GENERIC_DATA['chapecoense-br'] = {
 };
 
 Object.assign(sources, {
+  'chapecoense-br-demonstracoes-2017': {
+    id:'chapecoense-br-demonstracoes-2017', clubId:'chapecoense-br',
+    title:'Demonstrações Financeiras (Controladora e Consolidado) findas em 31/12/2017',
+    type:'official_balance_sheet', reliability:'primary',
+    url:'https://www.chapecoense.com',
+    note:'PDF oficial standalone (un solo ejercicio, no comparativo con otros PDF ya cargados), texto nativo en todo el documento, sin páginas-imagen (a diferencia del documento 2020-2021). Se cargó la columna Controladora 2017 (año corriente), NO Consolidado ni la columna comparativa 2016. Superávit de R$4.832.261 sobre receita líquida de R$94.545.361, con Resultado Financeiro POSITIVO (+R$2.910.458, apalancado por aplicações financeiras de fondos recibidos tras la tragedia de LaMia de 2016). Sin inconsistencia de fuente (a diferencia del documento 2021): DRE y Notas explicativas reconcilian exacto entre sí. Se promovió "Custo Transf. Jogadores" (22,5% de la Nota 20 "Despesas com Pessoal") a línea propia player_amortisation en vez de dejarla enterrada en wages_squad. grossDebt = 0 ("Clube sem dívidas bancárias", Relatório da Administração). Convertido a USD con el PTAX BCB de cierre del 29/12/2017 (R$3,3080, último día hábil del año), investigado en esta sesión vía la API pública del BCB — no está en FX_CLOSE compartido todavía. Transcripción completa en Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2017.md.',
+  },
   'chapecoense-br-demonstracoes-2020-2021': {
     id:'chapecoense-br-demonstracoes-2020-2021', clubId:'chapecoense-br',
     title:'Demonstrações Financeiras da Controladora e Consolidado em conjunto com as Notas Explicativas, findas em 31/12/2021 e 31/12/2020',
@@ -309,6 +486,7 @@ Object.assign(sources, {
 
 gestionesByClub['chapecoense-br'] = {
   sinconfirmar: { nombre:'Gestión sin confirmar en detalle (cambio de Conselho Administrativo el 14/12/2021; balance firmado por Nei Roque Mohr, Presidente)', firstYear:2021, lastYear:2021 },
+  'plinio-denes': { nombre:'Plinio David De Nes Filho', firstYear:2017, lastYear:2017 },
 };
 
 memberCountByClub['chapecoense-br'] = null; // no se encontró una cifra de sócios/associados en el documento

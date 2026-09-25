@@ -321,6 +321,30 @@ const clubs = {
   'fckobenhavn-dk': { id:'fckobenhavn-dk', name:'F.C. København P/S', displayName:'FC København', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#375197' },
   'brondby-dk': { id:'brondby-dk', name:'Brøndbyernes I.F. Fodbold A/S', displayName:'Brøndby', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFD100' },
   'midtjylland-dk': { id:'midtjylland-dk', name:'FC Midtjylland A/S', displayName:'FC Midtjylland', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#B60C28' },
+  // Tanda de 15 clubes nuevos (sesión 2026-09-25, "onboardear 20 transcripts al azar"): 2 más de
+  // Croacia, 3 más de Dinamarca, 3 más de Bélgica (los 3 países ya venían de la tanda de arriba),
+  // 5 de Brasil (país ya cargado) y 2 de Argentina (país ya cargado). De los 20 candidatos
+  // elegidos al azar, 3 resultaron dead-ends sin estados contables reales (Temperley: solo
+  // Memoria narrativa sin balance; Belgrano: ídem; Palestino: solo un estado financiero
+  // intermedio de 6 meses, sin P&L anual) y se reemplazaron por otros 3 (Botafogo-SP, Juventude,
+  // Amazonas). Las 3 preguntas quedaron en Admin/dudas-por-club.md. brandColor: Wikipedia del
+  // idioma del país primero (identidad), hex después (footylogos/teamcolorcodes/wikitext de kit
+  // template) — ver el detalle por club en `fuentes/<País>/<Club>.md`.
+  'osijek-hr': { id:'osijek-hr', name:'Nogometni klub Osijek, sportsko dioničko društvo', displayName:'Osijek', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'slavenbelupo-hr': { id:'slavenbelupo-hr', name:'Nogometni klub Slaven Belupo', displayName:'Slaven Belupo', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0000FF' },
+  'agf-dk': { id:'agf-dk', name:'AGF A/S', displayName:'AGF', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'silkeborg-dk': { id:'silkeborg-dk', name:'Silkeborg IF A/S', displayName:'Silkeborg IF', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#EF0000' },
+  'viborg-dk': { id:'viborg-dk', name:'Viborg F.F. Prof. Fodbold A/S', displayName:'Viborg FF', country:'DK', reportingCurrency:'DKK', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009A44' },
+  'charleroi-be': { id:'charleroi-be', name:'R. Charleroi S.C.', displayName:'Charleroi', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0A0A0A' },
+  'mechelen-be': { id:'mechelen-be', name:'KV Mechelen', displayName:'Mechelen', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD700' },
+  'antwerp-be': { id:'antwerp-be', name:'Royal Antwerp F.C.', displayName:'Antwerp', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
+  'ceara-br': { id:'ceara-br', name:'Ceará Sporting Club', displayName:'Ceará', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'sportrecife-br': { id:'sportrecife-br', name:'Sport Club do Recife', displayName:'Sport Recife', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'godoycruz-ar': { id:'godoycruz-ar', name:'Club Deportivo Godoy Cruz Antonio Tomba', displayName:'Godoy Cruz', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0000FF' },
+  'losandes-ar': { id:'losandes-ar', name:'Club Atlético Los Andes', displayName:'Los Andes', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'amazonas-br': { id:'amazonas-br', name:'Amazonas Futebol Clube', displayName:'Amazonas', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' },
+  'juventude-br': { id:'juventude-br', name:'Esporte Clube Juventude', displayName:'Juventude', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#009846' },
+  'botafogosp-br': { id:'botafogosp-br', name:'Botafogo Futebol S.A. - SAF', displayName:'Botafogo-SP', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

@@ -18,10 +18,14 @@
     económico-financieros, firmado digitalmente el 04/08/2025 por el Diretor Presidente y la
     contadora.
   - `balancos-2022-2023.pdf` (6 pp) — balanços patrimoniais al 31/12/2022 y al 31/12/2023.
-- **Qué NO hay**: ejercicio 2025, ningún relatório de auditoria, ninguna DRE completa con apertura
-  de receitas/despesas. Con lo que hay se puede armar el balance (activo/pasivo/patrimônio líquido)
-  pero **no un estado de resultados**, así que antes de onboardearlo hay que releer
-  `club-data-mapping` y decidir si un club con solo balanço entra en el esquema del sitio.
+- **CORRECCIÓN (sesión 2026-09-25, onboarding, tanda de 20 transcripts al azar): esto decía que no
+  había DRE, y era cierto solo para `balancos-2022-2023.pdf` (el que además tiene mala calidad de
+  OCR, ver `Admin/TODO.md` punto 60).** `balanco-patrimonial-2024.pdf` SÍ trae una DRE de 7 líneas
+  (Receitas/Custos/Superávit ou Déficit) que reconcilia EXACTO contra el "Déficits líquido do
+  período" impreso — se cargó como `data/amazonas-br-data.js`, ejercicio 2024. Qué SIGUE faltando:
+  ejercicio 2025, ningún relatório de auditoria, ninguna nota explicativa que permita desglosar
+  "Receita de Atividades Esportivas"/"Custo das atividades Esportivas" más allá de la cifra
+  agregada (ver `Admin/dudas-por-club.md`).
 - **Tercer ángulo probado y descartado: la Federação Amazonense de Futebol (FAF)** —
   `fafamazonas.com.br/site/pagina/transparencia/` existe y publica bastante (balanços 2020-2025,
   DRE, fluxo de caixa, notas explicativas, parecer do conselho fiscal), pero **todo es de la propia

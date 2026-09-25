@@ -136,6 +136,9 @@ const COUNTRIES = {
 const LEAGUES = {
   'ar-primera':        { name:'Primera División',      full:'Primera División de Argentina',       country:'AR', sport:'futbol', tier:1 },
   'ar-primeranacional':{ name:'Primera Nacional',      full:'Primera Nacional de Argentina',       country:'AR', sport:'futbol', tier:2 },
+  // 3er escalón (onboarding de Los Andes, sesión 2026-09-25): mismo criterio que br-serieC/
+  // co-primeraB, el id nombra el escalón.
+  'ar-primerab':       { name:'Primera B Metropolitana', full:'Primera B Metropolitana de Argentina', country:'AR', sport:'futbol', tier:3 },
   // Bélgica (onboarding de Club Brugge/Anderlecht/Genk/Gent, esta sesión): temporada jul-jun, cierra
   // 30/6, mismo criterio que España/Alemania/Países Bajos. Nombre sin sponsor ("Pro League" es el
   // nombre de la competencia en sí, no lleva sponsor en el nombre oficial actual).

@@ -1558,3 +1558,138 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   estatal por "pérdida de organizador"), así que la porción de recaudación de entradas fue mínima ese
   año específico — decisión puntual de 2020, no un criterio general para reusar en otro ejercicio de
   este club si se carga uno con público normal.
+
+## Tanda de 20 transcripts al azar (sesión 2026-09-25) — 17 clubes/ejercicios nuevos + 3 ediciones
+
+Pedido de Guido: elegir 20 transcripciones ya hechas y sin cargar, sin orden particular, y
+onboardearlas. De los 20 elegidos al azar, 3 resultaron dead-ends sin estados contables reales
+(Temperley: solo Memoria narrativa institucional, sin un solo monto de Recursos/Gastos, confirmado
+también en `fuentes/Argentina/Temperley.md` de una sesión de sourcing anterior; Belgrano: mismo
+caso, solo Memoria, el PAT agregado se menciona en prosa pero sin ningún desglose por rubro;
+Palestino: el documento es un estado financiero INTERMEDIO de 6 meses con comparativo, sin el
+Estado de Resultados del ejercicio anual 2018 completo) y se reemplazaron por otros 3 (Botafogo-SP,
+Juventude, Amazonas).
+
+**Osijek (Croacia)**: "Troškovi za nenogometne djelatnosti" (1.769.335 EUR) mapeado a
+`admin_general_expense` por descarte — no confirmado qué actividad exacta es (posiblemente ligada a
+FM 20 d.o.o., la sociedad del estadio).
+
+**Slaven Belupo (Croacia)**: (1) "Prihodi od ulaznica" (303.770 EUR) combina entradas de liga y
+abonos anuales en una sola cifra, sin poder aislar la porción de abonos. (2) "Komercijalni prihodi
+od članstva" (41.777 EUR) mapeado a `member_dues`, pero el rótulo literal dice "ingreso COMERCIAL de
+la membresía" — genuina incertidumbre sobre si es cuota social o un ingreso comercial distinto.
+
+**AGF (Dinamarca)**: (1) "Entré- og tv-indtægter" (34.673 DKK, entradas+TV combinadas) categorizado
+como `broadcasting` por descarte, sin desglose real en la fuente. (2) `grossDebt` se cargó como
+4.627 (solo "Leasingforpligtelser", pasivo de leasing IFRS16) porque no hay ninguna línea de
+préstamo bancario explícita — podría no ser lo que se considera "deuda" para este club.
+
+**Silkeborg IF (Dinamarca)**: `grossDebt:0` — no hay línea de deuda financiera/bancaria en el
+balance; existe "Payables to shareholders and management" (14.048 DKK) que podría discutirse como
+deuda relacionada, pero el documento no la etiqueta como préstamo.
+
+**Viborg FF (Dinamarca)**: (1) "Vareforbrug" (-32,37M DKK) mezcla costo de mercadería y costos de
+cesión/préstamo de jugadores sin separar montos. (2) "Andre driftsomkostninger" (-1,26M DKK) sin
+monto propio identificable para separar de `other_expenses`, pese a que la nota de política contable
+la asocia conceptualmente a transferencias/venta de activos. (3) "Nettoomsætning" (75,99M DKK) no
+tiene ningún desglose numérico matchday/TV/comercial en ningún Note del documento (a diferencia de
+FC København, que sí lo tiene) — si aparece un documento con más detalle, se podría separar de
+`lump_football_operations`.
+
+**Charleroi (Bélgica)**: (1) "Autres produits d'exploitation" (5.018.673 EUR, ~17% del revenue) sin
+desglose en ningún lado del documento (ni la Nota C-cap 6.10 ni el rapport de gestion la explican) —
+candidato a preguntarle al club qué compone esta línea. (2) Gestión/presidencia sin confirmar para
+el ejercicio 2024/25 — el listado de administradores no marca un cargo de "Président" para ninguno,
+`gestionId` quedó `null`.
+
+**Mechelen (Bélgica)**: (1) el residuo de "Andere bedrijfsopbrengsten" (8,54M de 12,6M EUR)
+categorizado `player_sales` por inferencia del Jaarverslag ("gerealiseerde netto transferresultaten"
+mencionado como causa principal de la mejora del resultado), no confirmado como cifra explícita. (2)
+la interpretación del intangible "Concessies, octrooien..." como derechos de inscripción de
+jugadores capitalizados es la interpretación estándar para clubes belgas VOL-kap, pero no está
+confirmada explícitamente por el documento — si es incorrecta, `player_amortisation`/`depreciation`
+deberían reconsiderarse.
+
+**Antwerp (Bélgica)**: (1) ¿qué compone "Andere bedrijfsopbrengsten" (46,46M EUR) más allá de los
+11,68M de subsidios operativos declarados? ¿incluye plusvalía por venta de jugadores del ejercicio
+(hubo bajas de pases por 31,6M EUR a costo)? (2) el desglose de "Omzet" (Nota 6.10, ticketing/
+sponsors/TV) no fue completado por el club en este filing.
+
+**Ceará (Brasil)**: (1) "Venda de direitos de participação" (2024, R$60,1M — venta de 5% de los
+direitos de transmissão da LFF a un fondo, recomprado en marzo/2025) categorizado `other_income` por
+ser una operación patrimonial one-off, pero conceptualmente es monetización de derechos de TV —
+podría discutirse `broadcasting` en su lugar. (2) "Receitas com Eventos" categorizado `other_income`
+(criterio conservador), podría ser `stadium_other` si son eventos en el estadio propio. (3) "Sócio
+Torcedor/Tributos/Outros" 2024 quedó agregado en una sola línea combinada porque el `pdftotext` de la
+Nota 24 vino con esas 3 filas desalineadas y no se pudieron desagregar con certeza — el total sí es
+exacto, solo se perdió granularidad para esas 3 líneas menores de 2024.
+
+**Sport Recife (Brasil)**: (1) Nota 21 "Outras (Despesas)/Receitas Operacionais" 2025: los 3
+sub-ítems impresos (Liga Forte União -24.993, Despesas com provisão para contingências -97.459,
+Outras receitas 75.756, en R$ mil) suman -46.696, pero el propio DRE imprime -35.739 para esa misma
+línea — diferencia de R$10.957 mil (~6,3%) no explicada por redondeo. Se usó el -35.739 del DRE (la
+cifra que reconcilia exacto contra el déficit auditado). ¿Cuál de las 3 cifras está mal, o falta un
+4to componente no impreso? (2) el footnote "(i)" junto a "Outras receitas/(despesas)" no tiene texto
+en la transcripción, sin explicar. (3) brandColor ambiguo (rubro-negro: el cuerpo del artículo de
+Wikipedia dice "preto e encarnado" pero el infobox estructurado dice "rubro-negro" al revés) — quedó
+`null`, se puede consultar a Guido si se quiere resolver.
+
+**Godoy Cruz (Argentina)**: (1) "Ingresos Varios AFA" cargado a `other_income`, no está claro si es
+TV/premios/otro concepto (ya hay línea separada de TV). (2) "Ingreso Fútbol Amateur"/gasto espejo
+cargado a `youth_football`/`youth_other_sports_expense`, asumido como categorías inferiores. (3)
+"Ingreso por Rescisión de Contrato" e "Ingreso por Derechos de Tanteo" cargados a `player_sales`,
+"derecho de tanteo" es una figura sin precedente claro en otros clubes cargados. (4) "Cargas
+Sociales" (línea standalone de Gastos, sin desglose por sector) cargada a `wages_squad`, asumido que
+es del plantel.
+
+**Los Andes (Argentina)**: (1) "futbol" (línea de ingreso, sin más contexto) cargada a
+`matchday_competition`, asumido como recaudación (hay una línea separada "Ingresos Afa"). (2)
+"Ingresos Afa" cargada a `broadcasting`, asumido como distribución de TV/AFA, no confirmado. Además,
+hay una serie completa 1993-2020/21 transcripta y SIN CARGAR en `Clubes/Argentina/Los Andes/` — solo
+se cargó el Ejercicio 105 (2020-21) de esta tanda, el resto queda para una sesión futura.
+
+**Coritiba (Brasil, ejercicio 2023 agregado)**: `node tools/audit.js` marca que el catch-all "Otros
+ingresos" se lleva 68% del total 2023 — es la línea de la cesión del 20% de los derechos comerciales
+del Brasileirão a Liga Forte União (R$152M de R$216,65M), sin categoría propia mejor disponible. No
+es un error, pero vale la pena revisar si en el futuro se agrega una categoría tipo "ingreso
+extraordinario/venta de derechos" al esquema compartido.
+
+**Chapecoense (Brasil, ejercicio 2017 agregado)**: (1) "Serviços Terceiros" (R$6.819.750, sin nota
+propia en este documento puntual) cargado a `admin_general_expense` por default conservador — no hay
+evidencia de que sea comisión de transferencias (a diferencia del ejercicio 2021 ya cargado, que sí
+tenía nota explícita). (2) "Premiação do Ano p/pgto pôster" (R$1.355.000, dentro de "Outras
+Despesas") cargado a `other_expenses` — concepto no aclarado por el documento.
+
+**Bayern Munich (Alemania, ejercicio 2020/21 agregado)**: ¿existe un Jahresabschluss/Geschäftsbericht
+más completo de 2020/21 (con el Einzelabschluss y su desglose de GuV por rubro, como sí tienen
+2023/24 y 2024/25)? El documento transcripto es mucho más chico que los otros 2 ejercicios ya
+cargados (2 páginas, solo 4 cifras agregadas: Umsatz/EBITDA/EBT/Jahresüberschuss), y D&A quedó
+combinado con resultado financiero neto en una sola línea aproximada por no poder separarlos con los
+datos disponibles.
+
+**RB Leipzig (Alemania, ejercicio 2022/23 agregado)**: "Sonstigem" (54,861M EUR, catch-all de la Nota
+4.1) probablemente incluye algo de ingreso por transferencias sin poder separarlo — el Anhang 4.1 de
+este ejercicio solo desglosa 3 categorías (Spielbetrieb/Handel/Sonstigem) en vez de las 4 que sí
+tienen 2023/24 y 2024/25 (que separan "Transfer- u. Leihgeschäft" aparte).
+
+**Amazonas (Brasil)**: el documento fuente (`balanco-patrimonial-2024.md`) no tiene ninguna nota que
+permita desglosar "Receita de Atividades Esportivas" ni "Custo das atividades Esportivas" — quedaron
+como `lump_football_operations`/`lump_football_operations_expense` enteros. Preguntarle al club si
+existe una versión con notas explicativas. Además, `fuentes/Brasil/Amazonas.md` decía hasta esta
+sesión que estos documentos "no tienen estado de resultados" — eso es cierto para
+`balancos-2022-2023.pdf` (mala calidad de OCR, ya excluido) pero FALSO para `balanco-patrimonial-
+2024.pdf`, que sí trae una DRE completa que reconcilia exacto — corregido en esta sesión.
+
+**Juventude (Brasil)**: (1) "Receitas Patrimoniais" (categorizada `other_income`, conservador) — ¿es
+alquiler del Estádio Alfredo Jaconi? (2) la línea de gasto más grande ("Remuneração, Benefícios,
+Encargos e amortização de direitos e de custos de formação", 22,55M BRL, 60% del costo de plantel)
+mezcla sueldos con amortización de pases sin poder separarlos — pedirle al club el desglose. (3)
+"Receita Loteria Esportiva" no tiene categoría propia, se usó `other_income` — evaluar si amerita
+categoría nueva si aparece en más clubes brasileños.
+
+**Botafogo-SP (Brasil)**: `grossDebt` es ambiguo — no hay línea "Empréstimos e Financiamentos". Se
+usó "Partes Relacionadas" (préstamos del accionista controlante, R$53,59M) en vez de "Obrigações com
+Arrendamento" (pasivo de leasing IFRS16, R$11,59M) — valdría confirmar con el club/auditor si "Partes
+Relacionadas" lleva interés (deuda real) o es aporte de capital de trabajo sin costo. Además, el
+archivo fuente completo tiene también los ejercicios 2019/2020 y 2022/2023 (5 en total) — solo se
+cargó 2024 en esta tanda, los otros 2 quedan pendientes.

@@ -29,4 +29,10 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fckobenhavn-dk': { 2024: 'dk-superliga' },
   'brondby-dk':     { 2020: 'dk-superliga' },
   'midtjylland-dk': { 2019: 'dk-superliga' },
+  // AGF/Silkeborg/Viborg (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): los 3
+  // jugaron 3F Superliga completa en el ejercicio cargado (confirmado contra el propio informe de
+  // gestión de cada documento, sin descenso).
+  'agf-dk':         { 2021: 'dk-superliga' },
+  'silkeborg-dk':   { 2024: 'dk-superliga' },
+  'viborg-dk':      { 2024: 'dk-superliga' },
 });

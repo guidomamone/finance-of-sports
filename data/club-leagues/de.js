@@ -63,7 +63,10 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Borussia Mönchengladbach: ejercicio CALENDARIO. Bundesliga (1ª división) los 2 ejercicios, sin
   // descenso (14° puesto temporada 2023/24, que cubre ambos años calendario cargados).
   'monchengladbach-de':    { 2023: 'de-bundesliga', 2024: 'de-bundesliga' },
-  'bayernmunich-de':       { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  // 2021 (onboarding sesión 2026-09-25, tanda de 20 transcripts al azar): campeón de la 2020/21
+  // Bundesliga (9° título consecutivo), verificado vía Wikipedia/Bundesliga.com.
+  'bayernmunich-de':       { 2021: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
   'dortmund-de':           { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
-  'rbleipzig-de':          { 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
+  // 2023 (misma sesión): 3° en la 2022/23 Bundesliga, clasificó a Champions League.
+  'rbleipzig-de':          { 2023: 'de-bundesliga', 2024: 'de-bundesliga', 2025: 'de-bundesliga' },
 });
