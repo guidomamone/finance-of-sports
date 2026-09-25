@@ -81,7 +81,7 @@ pedido de Guido: "la idea es hacer reach out a clubes y preguntarles") en vez
 de asumir un criterio o dejarla perdida en un comentario de código — es la
 lista que Guido usa para escribirles directo a los clubes.
 
-Este proyecto tiene 6 skills en `.claude/skills/`. Según la tarea, leerlos es
+Este proyecto tiene 7 skills en `.claude/skills/`. Según la tarea, leerlos es
 OBLIGATORIO, no opcional:
 
 - `start-session-finance-of-sports-project`: el checklist de arranque y de cierre
@@ -97,6 +97,11 @@ OBLIGATORIO, no opcional:
   todavía no tiene nada cargado**, antes de que exista ningún documento para
   mapear (qué regulador o canal público chequear según el país, gotchas de
   portales específicos ya descubiertos).
+- `club-outreach`: **si la tarea es escribirle un mail de verdad a un club** (pedirle un documento,
+  una aclaración de categorización) — el proceso de redactar, revisar y mandar sin que cada envío
+  pase por aprobación en el chat (Resend, no Gmail). No es el criterio de CUÁNDO amerita un mail
+  (eso vive en `club-sourcing` 0.3 y en `Admin/dudas-por-club.md`), es el CÓMO se manda de ahí en
+  más.
 - `auditoria-finance-of-sports`: si la tarea es una auditoría de rutina del
   proyecto entero (Versión 123).
 - `escala-finance-of-sports`: **si la tarea es un chequeo de escala/capacidad** (qué se rompe

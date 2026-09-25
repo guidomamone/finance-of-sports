@@ -71,6 +71,15 @@ Business Books/
 # decisión quiso salvar. Si volvés a agregar una regla por nombre suelto acá, acordate
 # de que también aplica dentro de cualquier carpeta.
 
+# EXCEPCIÓN A LO DE ARRIBA: CREDENCIALES, no documentos internos (Versión 216). La regla de "todo
+# se trackea, lo interno se saca en el deploy" es sobre DOCUMENTOS — nada de eso aplica a una
+# credencial real. Admin/outreach/.env tiene la API key de Resend que usa `tools/outreach-send.js`
+# (ver `.claude/skills/club-outreach/SKILL.md`): si se trackeara, quedaría en el historial de git
+# para siempre (llegue o no a publicarse por Netlify), recuperable aunque se borre después. Esto NO
+# es una excepción a "no hace falta gitignore para lo interno" — es una categoría distinta
+# (secreto, no documento) que nunca entra a git, con o sin `Admin/`.
+Admin/outreach/.env
+
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).
 # EL ERROR QUE CORRIGE: destrackear resolvía la publicación al precio de perder el

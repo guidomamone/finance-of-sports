@@ -845,3 +845,62 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   **Vale preguntarle al club qué es exactamente esta línea.** Tampoco se encontró cantidad de socios
   en ninguno de los 9 documentos, y el Ejercicio 2022-23 (136°) quedó sin gestión asignada (la
   Comisión Directiva cambió a mediados de ese ejercicio, sin fecha exacta de asunción).
+
+## América Mineiro (`americamineiro-br`), Brasil — onboarding 2023/2024/2025, sesión 2026-09-24
+
+- **"Outras receitas operacionais"** (Consolidado: +R$55,2M en 2024, +R$31,7M en 2025, ~30-53% del
+  revenue de esos 2 años): ítem grande que ningún balance desglosa en sub-ítems. Coincide en magnitud
+  con la caída de "Receitas com transferência de atletas" fuera de "Receita operacional líquida" a
+  partir de 2024 (el balance 2024 reexpresó su comparativo 2023 quitándole R$61,3M de esa línea), y el
+  club tiene de fondo un contrato de inversión con la Liga Forte União (LFU) sobre "Direitos de
+  Participação" (Direitos de Arena + Propriedades Comerciais) con instrumentos financieros derivados
+  asociados (Nota 7 del balance 2024). **Vale preguntarle al club si esta línea es efectivamente
+  ingreso relacionado a transferencias/derechos de jugadores** (en cuyo caso debería recategorizarse a
+  `player_sales` en vez de `other_income`) **o si es otra cosa** (ganancia por la renegociación de
+  derechos de participación con el inversor LFU, revaluación de instrumentos financieros, etc.). Se
+  cargó conservador a `other_income` en los 3 años (2023 no tiene esta línea).
+- **"Receitas de transmissão e de imagem e desempenho"** (línea combinada, presente en los 3 años,
+  entre 22% y 32% del revenue): título mezcla TV/derechos de transmisión ("transmissão", confirmado
+  por la Nota de receitas a realizar que detalla un contrato de TV con la Liga Forte Futebol) con
+  "imagem e desempenho" (¿derechos de imagen? ¿premios por desempeño deportivo?), sin desglose en
+  ningún balance. Se cargó entera a `broadcasting` por ser el término dominante del título. **Vale
+  preguntarle al club qué proporción es TV pura vs. imagen/desempeño** — si "desempenho" resultara ser
+  premios por rendimiento deportivo, una porción debería ir a `competition_bonus` en cambio.
+- **"Receitas com atividades sociais da entidade"** (línea chica, 0,4%-2,9% del revenue según el año):
+  no queda claro si es cuota de socios (`member_dues`) o ingreso de eventos/actividades sociales
+  genéricas del club (que es multideportivo, no solo fútbol). Se cargó a `other_income` por default
+  conservador. Impacto bajo en los totales, no urgente.
+- **Depreciações e amortizações, 2024/2025**: en 2023 se pudo desagregar en `player_amortisation`
+  (amortización de atletas) vs. `depreciation` (inmuebles) cruzando la Nota 20 con la Demonstração do
+  Fluxo de Caixa (cierra exacto). En 2024 ese mismo cruce NO cierra (el flujo de caja trae R$9,26M en
+  3 ítems de D&A, pero la Nota 21 solo imprime -R$5.431.895 para la línea combinada) — hay de por
+  medio un ajuste "Ajuste intangível adequação NBC ITG 2003" (-R$9.720.361, contra patrimonio
+  directo, no por resultado) que probablemente rompe la correspondencia. En 2025 el balance ni
+  siquiera trae una línea de D&A separada (todo cae dentro de "Despesas administrativas", sin
+  desglose). Se dejó la línea combinada de 2024 entera en `depreciation` sin forzar el split. **No es
+  necesariamente una pregunta para el club** (es más bien releer los balances 2024/2025 con más
+  detalle, o cruzar contra las notas de Imobilizado/Intangível de cada año), pero queda como pendiente
+  técnico si se quiere mayor precisión en el bucket "Compra de jugadores" de Formato Simplificado.
+- **Resultado operacional antes do resultado financeiro, balance 2025, pág. 10 del PDF**: imprime
+  -R$58.842.916, que NO reconcilia ni con la Nota 23 ("Divulgação adicional do resultado", que suma
+  por segmento a -R$53.842.916) ni con el Superávit/Déficit final (-R$60.354.558, que solo cierra si
+  se parte de -R$53.842.916 + Resultado financeiro -R$6.511.643). Se usó -R$53.842.916 (el valor que
+  reconcilia por dos caminos independientes) por considerarlo un typo de imprenta en esa celda
+  puntual — no se cargó ninguna línea directamente de esta cifra, así que no afecta los datos
+  cargados, solo se documenta por si alguien vuelve a este balance y se pregunta por la discrepancia.
+- **Gestión/presidencia**: el balance 2023 nombra a Alencar Magalhães da Silveira Junior como
+  "Presidente do Conselho de Administração", pero no se confirmó que sea el mismo cargo/persona en
+  2024 y 2025 (o si el cargo relevante para la SAF es otro, ej. un CEO/Diretor distinto del Conselho
+  de Administração de la associação) — `gestionesByClub['americamineiro-br']` quedó con una entrada
+  genérica "sin confirmar" para los 3 años. No se encontró cantidad de socios en ninguno de los 3
+  documentos (`memberCountByClub['americamineiro-br'] = null`).
+
+## Unión Magdalena (`unionmagdalena-co`), Colombia — onboarding 2018, sesión 2026-09-24
+
+- **"Amortización de Ingreso Dimayor"** (Nota 24, $239,521 M COP): el estado financiero 2018 nombra
+  esta línea junto a "Participación Dimayor" pero nunca explica el concepto (probablemente
+  reconocimiento diferido de un contrato plurianual con la Dimayor). Se cargó a `broadcasting`, mismo
+  bucket que "Participación Dimayor", por ser lo más cercano disponible — pero con más incertidumbre
+  que el resto de las líneas de este ejercicio (que reconciliaron exacto, sin ningún residuo). **Vale
+  preguntarle al club (o a la Dimayor directamente) qué contrato es este** antes de confiar en la
+  categorización si en el futuro se carga otro ejercicio del mismo club y aparece de nuevo.

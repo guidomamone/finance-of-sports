@@ -132,7 +132,12 @@ const LEAGUES = {
   'ar-primeranacional':{ name:'Primera Nacional',      full:'Primera Nacional de Argentina',       country:'AR', sport:'futbol', tier:2 },
   'br-serieA':         { name:'Brasileirão Série A',   full:'Campeonato Brasileiro Série A',       country:'BR', sport:'futbol', tier:1 },
   'br-serieB':         { name:'Brasileirão Série B',   full:'Campeonato Brasileiro Série B',       country:'BR', sport:'futbol', tier:2 },
+  // 3ª división (Versión 217, onboarding de Volta Redonda 2024, campeón de esa edición): mismo
+  // criterio que br-serieB, el id nombra el escalón.
+  'br-serieC':         { name:'Brasileirão Série C',   full:'Campeonato Brasileiro Série C',       country:'BR', sport:'futbol', tier:3 },
   'co-primeraA':       { name:'Primera A',             full:'Categoría Primera A',                 country:'CO', sport:'futbol', tier:1 },
+  // 2ª división (Versión 217, onboarding de Unión Magdalena 2018, subcampeón/ascendido esa edición).
+  'co-primeraB':       { name:'Primera B',             full:'Categoría Primera B',                 country:'CO', sport:'futbol', tier:2 },
   'de-bundesliga':     { name:'Bundesliga',            full:'Fußball-Bundesliga',                  country:'DE', sport:'futbol', tier:1 },
   // 2ª división (Versión de esta sesión, onboarding de Köln 2024/25 y Elche 2023/24-2024/25): mismo
   // criterio que ar-primeranacional/br-serieB, el id nombra el escalón.

@@ -7,6 +7,41 @@
   },
   {
     "code": "signo-invertido",
+    "match": "americamineiro-br 2023 ingreso \"(-) Deduções da receita bruta",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Línea de deducción de impuestos/INSS/Sindicato sobre la receita bruta, impresa por el propio balance con signo negativo dentro del bloque de Receitas — es contra-revenue real (mismo tratamiento que 'Deduções sobre a receita' de Botafogo), no un signo dado vuelta. El tie-out completo del ejercicio (revenueLines suma exacta contra el total impreso, revenue+expenses+netInterest = PAT oficial) cierra con este signo, ver comentario de cabecera de data/americamineiro-br-data.js."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "americamineiro-br 2025 ingreso \"(-) Deduções da receita bruta",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Misma línea que el ejercicio 2023 (ver esa entrada arriba), mismo criterio: deducción real, contra-revenue, tie-out cierra exacto con este signo."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "americamineiro-br 2023 gasto \"Apropriação despesas intangível",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Es un CRÉDITO de reclasificación (capitalización de costos de formación de juveniles hacia el activo intangible), impreso positivo por el propio balance dentro del bloque de despesas — mismo patrón que la reversión de Banfield 2020 (ver entrada de arriba). El tie-out del ejercicio 2023 cierra exacto con este signo, ver comentario de cabecera de data/americamineiro-br-data.js."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "voltaredonda-br 2024 gasto \"Ganho Mensuração a Valor Justo",
+    "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Volta Redonda, 2026-09-24). Ganancia real por revalúo a valor justo de 2 inmuebles del club (Nota 9 del balance auditado 2024), un ítem no operativo/no recurrente categorizado 'exceptional_items' — mismo tratamiento que 'Resultado de equivalência patrimonial' de Botafogo, solo que acá el resultado es una GANANCIA (positivo) en vez de una pérdida. El 134% sobre la sección de Gastos es alto solo porque el total de Gastos de ese ejercicio es chico (R$11,9 M) y esta ganancia no-operativa es grande en comparación (R$6,8 M); el tie-out completo (revenue+expenses+netInterest+exceptional_items = PAT oficial, R$7.263.691,88 exacto) cierra con este signo, ver comentario de cabecera de data/voltaredonda-br-data.js."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "americamineiro-br 2024 Ingresos",
+    "motivo": "REVISADO (onboarding de América Mineiro, 2026-09-24), NO silenciado por descarte: es una limitación real de la fuente, ya documentada como duda abierta en Admin/dudas-por-club.md. 'Outras receitas operacionais' (R$55,2 M en 2024) es una línea grande sin desglose en ningún balance del club (ni 2023 ni 2024 la abren; podría incluir venta de jugadores, que en 2024 'desapareció' del cuerpo principal de Receitas), cargada conservadoramente a other_income en vez de asumir player_sales sin evidencia. Si en el futuro aparece una Nota que la desglose, recategorizar y sacar esta entrada."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "americamineiro-br 2025 Ingresos",
+    "motivo": "Misma causa que el ejercicio 2024 (ver esa entrada arriba): 'Outras receitas operacionais' (R$31,7 M en 2025) sin desglose en el balance, cargada conservadoramente a other_income, duda abierta en Admin/dudas-por-club.md."
+  },
+  {
+    "code": "catchall-dominante",
+    "match": "voltaredonda-br 2024 Gastos",
+    "motivo": "REVISADO (onboarding de Volta Redonda, 2026-09-24): mismo caso que el signo-invertido de 'Ganho Mensuração a Valor Justo' de arriba. exceptional_items no tiene fila propia en Formato Simplificado (cae al catch-all 'Otros gastos', ver hallazgo P3 categoria-sin-bucket) y esta ganancia no-operativa grande frente a un total de Gastos chico hace que el catch-all muestre un 134% — no es un error de categorización, es el límite conocido de no tener una fila dedicada para ítems excepcionales."
+  },
+  {
+    "code": "signo-invertido",
     "match": "banfield-ar 2020 gasto \"Apropiación de Costos Fútbol Amateur (reversión por capitalización, Nota 4)\"",
     "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Banfield, 2026-09-23). El Anexo V (Sector Fútbol Amateur, 120.335.465,08) se capitaliza ENTERO como Bienes Intangibles (Nota 4: 'costo prorrateado incurrido en el fútbol amateur... con capacidad futura de generar ingresos'), y el Estado de Recursos y Gastos lo revierte con esta línea por el MISMO importe exacto — el Estado de Flujo de Efectivo confirma la capitalización ('Aumento Bienes Intangibles' = 120.335.465,08 exacto). No es un signo dado vuelta: son 2 líneas reales (el costo del sector, negativo, y su reversión por capitalización, positiva), efecto neto CERO en el Estado de Recursos y Gastos, ver comentario de cabecera de data/banfield-ar-data.js."
   },

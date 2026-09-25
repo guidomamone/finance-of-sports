@@ -27,4 +27,9 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   gremio: { 2024: 'br-serieA' },
   ituano: { 2024: 'br-serieB' },
   mirassol: { 2024: 'br-serieB' },             // ascendió a la Série A para 2025
+  // Verificado el 2026-09-24 (onboarding, Versión 217) contra Wikipedia en inglés (temporadas 2023,
+  // 2024 y 2025 de cada club). Ejercicio = año calendario, coincide con la temporada.
+  'americamineiro-br': { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' }, // descendido de la Série A al cierre de 2023
+  'operarioferroviario-br': { 2024: 'br-serieB', 2025: 'br-serieB' },
+  'voltaredonda-br': { 2024: 'br-serieC', 2025: 'br-serieB' }, // campeón de la Série C 2024, ascendido a la Série B para 2025
 });

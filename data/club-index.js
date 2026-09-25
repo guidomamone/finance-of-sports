@@ -14,6 +14,7 @@
 
 window.CLUB_INDEX = {
   "americadecali-co": {"n":"América de Cali","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "americamineiro-br": {"n":"América Mineiro","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "argentinosjuniors": {"n":"Argentinos Juniors","c":"AR","q":"full","y":5,"last":2019,"yrs":[[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"]]},
   "arsenal-gb": {"n":"Arsenal","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "athleticclub": {"n":"Athletic Club","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
@@ -57,6 +58,7 @@ window.CLUB_INDEX = {
   "nagoyagrampus": {"n":"Nagoya Grampus","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "newells-ar": {"n":"Newell's Old Boys","c":"AR","q":"full","y":1,"last":2019,"yrs":[[2019,"official_balance_sheet"]]},
   "oncecaldas": {"n":"Once Caldas","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "operarioferroviario-br": {"n":"Operário Ferroviário","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "osasuna-es": {"n":"CA Osasuna","c":"ES","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "racing": {"n":"Racing Club","c":"AR","q":"mixed","y":17,"last":2027,"yrs":[[2027,"official_budget"],[2026,"official_budget"],[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_budget_and_balance"],[2019,"official_budget"],[2018,"official_budget_and_balance"],[2017,"official_balance_sheet"],[2016,"official_budget_and_balance"],[2015,"official_balance_sheet"],[2014,"official_budget_and_balance"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"]]},
   "realbetis": {"n":"Real Betis","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
@@ -71,11 +73,13 @@ window.CLUB_INDEX = {
   "talleres-ar": {"n":"Talleres","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "tottenham-gb": {"n":"Tottenham Hotspur","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "union": {"n":"Unión","c":"AR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "unionmagdalena-co": {"n":"Unión Magdalena","c":"CO","q":"full","y":1,"last":2018,"yrs":[[2018,"official_balance_sheet"]]},
   "urawareddiamonds": {"n":"Urawa Red Diamonds","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "valenciacf": {"n":"Valencia CF","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "velez": {"n":"Vélez Sarsfield","c":"AR","q":"full","y":11,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"]]},
   "villarrealcf": {"n":"Villarreal CF","c":"ES","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "visselkobe": {"n":"Vissel Kobe","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "voltaredonda-br": {"n":"Volta Redonda","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "werderbremen-de": {"n":"Werder Bremen","c":"DE","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "yokohamafmarinos": {"n":"Yokohama F. Marinos","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
 };

@@ -128,18 +128,43 @@ perdieron sino que se descartaron:
     del 121 (ver `Admin/dudas-por-club.md`). Ver el detalle completo en `fuentes/Argentina/Atlanta.md`,
     `fuentes/Argentina/Banfield.md` y `fuentes/Argentina/Independiente.md`.
 
-51. PROCESO DE EMAIL A CLUBES (pedido de Guido, 2026-09-23). Hoy `Admin/dudas-por-club.md` junta
-    preguntas abiertas por club pero no hay ningún paso de "convertir esto en un mail". Diseñar: (1)
-    criterio de cuándo una duda amerita mail (no todas — algunas se resuelven solas con más sourcing);
-    (2) Claude redacta el borrador; (3) Guido hace QA sobre el borrador antes de que salga; (4) envío —
-    NO puede ser desatendido, cada envío necesita confirmación explícita de Guido en el momento (regla
-    de la plataforma, no negociable, no es algo que se pueda aprobar de antemano para todo un lote).
-    **El criterio de CUÁNDO disparar un mail por sourcing difícil ya está definido** (to-do 52,
-    `club-sourcing/SKILL.md` sección 0.3): documento CONFIRMADO que existe pero no descargable (prensa
-    con cifras, video en vez de PDF, compartir revocado — ver Independiente/Banfield/Atlanta) sí
-    amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo regulatorio
-    estructural, no. Esta sesión diseña el PROCESO del envío en sí (redacción, QA, confirmación), no el
-    criterio de disparo, que ya está resuelto.
+51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
+    tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
+    diseño original de este punto ("Claude redacta, Guido aprueba en el chat, envío por Gmail")
+    quedaba pegado para siempre a confirmar cada mail uno por uno — es una regla de la plataforma de
+    chat, no de Gmail, y ningún scope de conector la evita. La salida es sacar el paso de ENVÍO
+    (nada más) afuera de cualquier sesión de chat: Resend + subdominio propio + una cola de
+    archivos que Guido revisa, con el envío disparado por Guido desde su propia terminal. Proceso
+    completo documentado en `.claude/skills/club-outreach/SKILL.md` (skill nuevo). Arranca directo
+    en la Etapa 1 de ese diseño (sin regla de disparo automática todavía, Guido sigue decidiendo
+    cuándo escribir) — la Etapa 0 (statu quo manual) se salteó a pedido de Guido.
+
+    **Bloqueado en Guido, no en una sesión de Claude Code** (ninguna sesión puede crear cuentas ni
+    tocar DNS): (a) ✅ cuenta en Resend creada 2026-09-24 (conectada con GitHub, sigue en free por
+    ahora); (b) ✅ subdominio `outreach.financeofsports.com` verificado 2026-09-24 (DNS en Netlify
+    DNS — DKIM, SPF vía 2 CNAME, DMARC `p=none` en `_dmarc.outreach`, no en la raíz); (c) activar
+    `Receiving` en ese subdominio (feature nativo de Resend, reenvía a Gmail sin forwarding manual a
+    nivel DNS) — pendiente; (d) generar la API key (`API keys` → `Create API Key`, scope de solo
+    envío) y ponerla en `Admin/outreach/.env` (gitignoreado) — pendiente. Ver
+    `club-outreach/SKILL.md` sección 2 para el detalle exacto de cada paso.
+
+    **Ya construido, listo para usar en cuanto lo de arriba esté hecho**: la cola de archivos
+    (`Admin/outreach/cola/` → `aprobados/` → `enviados/`), `Admin/outreach/contactos.json` (solo el
+    contacto de cada club — el historial de envíos vive en los propios archivos de `enviados/`, no
+    se duplica en ningún índice), y `tools/outreach-send.js` (el script que Guido corre a mano para
+    mandar lo aprobado).
+
+    **Check-in programado para 2026-10-24** (30 días desde que arrancó la Etapa 1): evaluar si
+    conviene prender la Etapa 2 (regla de disparo automática — 3 preguntas acumuladas O 90 días — y
+    cadencia de follow-up/cooldown, documentadas pero no activas todavía en el skill). Ver
+    `Admin/outreach/checkin-2026-10-24.md` para qué mirar exactamente. Hay una tarea programada
+    (`club-outreach-checkin`) que va a preguntarlo esa fecha, más el archivo como respaldo.
+
+    **El criterio de CUÁNDO un club amerita un mail sigue siendo el mismo, sin cambios** (to-do 52,
+    `club-sourcing/SKILL.md` sección 0.3): documento CONFIRMADO que existe pero no descargable
+    (prensa con cifras, video en vez de PDF, compartir revocado — ver Independiente/Banfield/Atlanta)
+    sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
+    regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
 56. EVALUAR PARTIR EL EJE "DATOS" DE LA AUDITORÍA POR PAÍS (pedido de Guido, 2026-09-23). El eje
     `datos` de `auditoria-finance-of-sports` (uno de los 5 que rotan, ver skill sección "Capa 3") lee

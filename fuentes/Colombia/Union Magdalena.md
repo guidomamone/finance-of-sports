@@ -19,11 +19,26 @@
 - Ángulo que queda pendiente: el club no tiene sección de transparencia en su sitio, así que la única
   vía para los ejercicios sin documento sería pedírselos directo. Dado que SIIS confirma que la
   sociedad sí presentó el formulario esos años, la pregunta al club sería por el paquete completo.
-- **Sin abrir todavía**: sourcing puro, no se verificó el contenido del PDF.
 - **`Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2021.pdf` está roto** (encontrado en la
   sesión de transcripción del 2026-09-24, Versión 214): no es un PDF, es una página HTML de "The URL
   you requested has been blocked" guardada con extensión `.pdf` — una descarga fallida de una sesión
   anterior no documentada acá (esta nota no menciona ningún intento de 2021). Hay que volver a
   descargarlo desde el origen real, no transcribirlo tal cual está.
+- **Ejercicio 2018 CARGADO al sitio (`data/unionmagdalena-data.js`), sesión 2026-09-24.**
+  `estados-financieros-2018.md` (texto nativo, trae el Estado de Situación Financiera y el Estado de
+  Resultado Integral primarios completos) + `certificacion-ef-2018.md` (OCR, solo firmantes, sin
+  total propio) — tie-out exacto contra el "Utilidad del Ejercicio" impreso ($285,742 M COP), sin
+  ningún residuo. El ejercicio 2021 (dictamen del revisor fiscal) sigue SOURCEADO pero SIN
+  transcribir ni cargar — queda pendiente para una sesión futura, y el PDF roto de arriba es
+  justamente ese documento, hay que re-descargarlo antes de poder transcribirlo.
+- **Color de marca: `null` (ambigüedad genuina, no chequeada a medias)** — verificado 2026-09-24.
+  Apodo "Ciclón Bananero"/"Los Samarios". Infobox de es.wikipedia.org/wiki/Unión_Magdalena declara
+  "Azul, Blanco y Rojo" (tricolor, inspirado en la bandera del Magdalena); la camiseta titular es
+  roja con rayas verticales azules (inspirada en San Lorenzo de Almagro), la alternativa es azul, la
+  suplente blanca — ningún color domina con claridad sobre los otros dos, y a diferencia de San
+  Lorenzo (que se desempató con su propio `theme-color`), el sitio oficial (unionmagdalena.com.co) no
+  devolvió `theme-color` ni contenido utilizable. Sin una fuente que ordene o marque predominancia,
+  `brandColor:null` (Sección 3 de `club-or-year-onboarding/SKILL.md`: "si el color que lo identifica
+  es ambiguo, `null`, que es un resultado cerrado, no un pendiente").
 - Contacto: siis.ia.supersociedades.gov.co (NIT 891700992); unionmagdalena.com.co.
-- Último chequeo: 2026-09-22.
+- Último chequeo: 2026-09-24.

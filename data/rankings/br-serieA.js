@@ -3,9 +3,10 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série A (BR) — 2 ejercicio(s) con ranking:
+// Brasileirão Série A (BR) — 3 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -30,6 +31,14 @@ window.RANKINGS["br-serieA"] = {
       { id:"gremio", revenue:99.32, reportType:"official_balance_sheet",
         sourceId:"gremio-demonstracoes-2023-2024",
         mix:[["Cuotas Sociales",15.995],["Comercial / Sponsors",13.556],["Estadio",1.937],["Televisión",28.845],["Venta de Jugadores",17.005],["Otras secciones deportivas",0.164],["Otros ingresos",21.818]] },
+    ],
+  },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"americamineiro-br", revenue:38.807, reportType:"official_balance_sheet",
+        sourceId:"americamineiro-br-demonstracoes-2023",
+        mix:[["Comercial / Sponsors",6.791],["Estadio",0.65],["Televisión",15.058],["Venta de Jugadores",12.896],["Otros ingresos",3.413]] },
     ],
   },
 };

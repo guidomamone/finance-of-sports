@@ -39,4 +39,17 @@
 - Contacto: https://voltaco.com.br/transparency (y su API `https://voltaco.com.br/api/documents`);
   https://servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=134;
   https://www.fferj.com.br/CentralDocumentos.
-- Último chequeo: 2026-09-22.
+- **Cargado (2026-09-24): 2 ejercicios (2024 y 2025) en `data/voltaredonda-data.js`.** 2024 sale de
+  `balanco-2024.md` (OCR, con un dígito mal leído en la Nota 13.1(iii) corregido cruzando contra la
+  columna comparativa 2024 de `demonstracoes-financeiras-2025.md`, ver comentario de cabecera del
+  archivo de datos). 2025 sale de `demonstracoes-financeiras-2025.md` (primaria), con
+  `dre-2025.md`/`parecer-auditoria-externa-2025.md` como complementarios (mismo dato más granular /
+  dictamen de auditoría sin salvedades sobre revenue-expense). Tie-out de los 2 años cierra exacto
+  (revenue, expenses, netInterest, PAT) contra los totales impresos.
+- **Color de marca: NO se cargó (`brandColor: null`).** Wikipedia (pt) y prensa deportiva confirman
+  tricolor preto/amarelo/branco ("las mismas cores da cidade"), camisa titular a rayas
+  predominantemente preto e amarelo — sin fuente que declare cuál de los 2 colores de la franja
+  predomina (blanco es claramente terciario). Verificado 2026-09-24.
+- Pendiente: ejercicios 2023 y anteriores (ver arriba, portal propio sin histórico y FERJ con un
+  solo balance).
+- Último chequeo: 2026-09-24.

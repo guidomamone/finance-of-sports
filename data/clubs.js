@@ -117,11 +117,19 @@ const clubs = {
   ituano: { id:'ituano', name:'Ituano Futebol Clube', displayName:'Ituano', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E2041A' },
   coritiba: { id:'coritiba', name:'Coritiba Sociedade Anônima do Futebol - SAF', displayName:'Coritiba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#005742' },
   atleticogoianiense: { id:'atleticogoianiense', name:'Atlético Clube Goianiense', displayName:'Atlético Goianiense', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED3237' },
+  // 3 clubes nuevos (Versión 217, onboarding en paralelo de 10 PDF transcriptos pendientes): mismo
+  // motor genérico, mismo país/moneda que los de arriba. `brandColor:null` en 2 de los 3 no es
+  // ausencia: se investigó y quedó ambiguo (bicolor sin predominancia clara declarada por ninguna
+  // fuente) — ver `fuentes/Brasil/<Club>.md` para el detalle de cada investigación.
+  'americamineiro-br': { id:'americamineiro-br', name:'América Futebol Clube', displayName:'América Mineiro', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007242' },
+  'operarioferroviario-br': { id:'operarioferroviario-br', name:'Operário Ferroviário Esporte Clube', displayName:'Operário Ferroviário', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'voltaredonda-br': { id:'voltaredonda-br', name:'Volta Redonda Futebol Clube', displayName:'Volta Redonda', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   // Colombia: ejercicio fiscal es año calendario (1-ene a 31-dic), moneda nativa COP (ver
   // data/currency-map.js y fuentes/Colombia/*.md sobre el tipo de cambio TRM usado).
   // `brandColor:null` (no ausente): se miró y NO lleva color, el que lo identifica es el blanco.
   oncecaldas: { id:'oncecaldas', name:'Once Caldas S.A. En Reorganización', displayName:'Once Caldas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   envigado: { id:'envigado', name:'Envigado Fútbol Club S.A.', displayName:'Envigado FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED7039' },
+  'unionmagdalena-co': { id:'unionmagdalena-co', name:'Unión Magdalena S.A.', displayName:'Unión Magdalena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
   // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
   // moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por

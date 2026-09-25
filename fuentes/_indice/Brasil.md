@@ -6,7 +6,7 @@ Detalle línea-por-club del sourcing de Brasil. El detalle completo de cada club
 registro, están en [`fuentes/README.md`](../README.md).
 
 - [Amazonas](../Brasil/Amazonas.md) — solo balanços resumidos sin auditar (2022-2024) rescatados de Wayback; dominio oficial caído — Último chequeo: 2026-09-22
-- [America Mineiro](<../Brasil/America Mineiro.md>) — dead-end viejo destrabado: 3 ejercicios (2023-2025) del sitio oficial vía CDN irp.cdn-website.com — Último chequeo: 2026-09-22
+- [America Mineiro](<../Brasil/America Mineiro.md>) — CARGADO AL SITIO (`americamineiro-br`): 3 ejercicios (2023-2025) del sitio oficial vía CDN irp.cdn-website.com — Último chequeo: 2026-09-24
 - [Athletic Club](<../Brasil/Athletic Club.md>) — 3 ejercicios (2023-2025) del sitio de la SAF (acfutebol.com.br), distinto del sitio del club — Último chequeo: 2026-09-22
 - [Athletico Paranaense](../Brasil/Athletico Paranaense.md) — 2 ejercicios reales (2024-2025), no es SAF — Último chequeo: 2026-09-12
 - [Atletico Goianiense](../Brasil/Atletico Goianiense.md) — 1 ejercicio real (2024-2025) — **CARGADO al sitio: Ejercicio 2025, columna Consolidado** — Último chequeo: 2026-09-13
@@ -35,7 +35,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Juventude](../Brasil/Juventude.md) — 1 ejercicio real (2020, escaneado), sin cargar aún; 2024 sin publicar según prensa (ver dudas-por-club.md) — Último chequeo: 2026-09-16
 - [Mirassol](../Brasil/Mirassol.md) — 12 ejercicios (2012-2018, 2021-2025) vía el índice JSON de la Federação Paulista; faltan 2019 y 2020 — Último chequeo: 2026-09-22
 - [Novorizontino](../Brasil/Novorizontino.md) — 15 ejercicios (2010, 2013-2025) vía repositorio de la Federação Paulista; sitio oficial sin sección financiera — Último chequeo: 2026-09-22
-- [Operário Ferroviário](<../Brasil/Operario Ferroviario.md>) — 2024 (Federação Paranaense) y 2025 (sitio propio); faltan 2023 y anteriores — Último chequeo: 2026-09-22
+- [Operário Ferroviário](<../Brasil/Operario Ferroviario.md>) — CARGADO AL SITIO (`operarioferroviario-br`): 2024 (Federação Paranaense) y 2025 (sitio propio); faltan 2023 y anteriores — Último chequeo: 2026-09-24
 - [Palmeiras](../Brasil/Palmeiras.md) — 8 ejercicios reales, serie completa 2017-2025, no es SAF, sin cargar aún — Último chequeo: 2026-09-16
 - [Paysandu](../Brasil/Paysandu.md) — 4 ejercicios (2021, 2023-2025); auditoría 2025 CON RESSALVAS y divergencias reportadas por prensa — Último chequeo: 2026-09-22
 - [Ponte Preta](../Brasil/Ponte Preta.md) — 3 ejercicios reales (2021-2024), no es SAF, sin cargar aún — Último chequeo: 2026-09-16
@@ -47,5 +47,5 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Vasco da Gama](../Brasil/Vasco da Gama.md) — 3 ejercicios reales vía mirrors (2022-2024) — Último chequeo: 2026-09-12
 - [Vila Nova](<../Brasil/Vila Nova.md>) — 4 ejercicios auditados (2022-2025) vía repositorio FGF-GO; sitio propio bloqueado por Cloudflare — Último chequeo: 2026-09-22
 - [Vitória](../Brasil/Vitoria.md) — 1 ejercicio real (2025), sin cargar aún; dead-end viejo destrabado, la URL se había movido — Último chequeo: 2026-09-16
-- [Volta Redonda](<../Brasil/Volta Redonda.md>) — 2025 completo (portal propio) y balanço 2024 (FERJ); no hay archivo histórico público — Último chequeo: 2026-09-22
+- [Volta Redonda](<../Brasil/Volta Redonda.md>) — CARGADO AL SITIO (`voltaredonda-br`): 2025 completo (portal propio) y balanço 2024 (FERJ); no hay archivo histórico público — Último chequeo: 2026-09-24
 - [Notas generales de Brasil](../Brasil/_notas-generales.md)

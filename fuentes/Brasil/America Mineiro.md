@@ -26,3 +26,15 @@
   snapshots viejos de Wayback de esa misma página, no se probó).
 - Contacto: americafc.com.br/transparencia (links reales bajo `irp.cdn-website.com/05448cb5/files/uploaded/`).
 - Último chequeo: 2026-09-22.
+- **Cargado (sesión 2026-09-24)**: los 3 ejercicios (2023, 2024, 2025) en `data/americamineiro-data.js`,
+  columna Consolidado (AFC + SAF). Ver comentario de cabecera de ese archivo para el detalle completo
+  de categorización, tipo de cambio y verificación de tie-out, y `Admin/dudas-por-club.md` (sección
+  América Mineiro) para las dudas genuinas que quedaron abiertas (la línea grande "Outras receitas
+  operacionais" de 2024/2025, entre otras).
+- **Color de marca: #007242 — declarado en el CSS del sitio oficial (americafc.com.br, `theme`
+  aparece 2 veces en el HTML servido), verificado 2026-09-24.** Identidad confirmada primero en
+  pt.wikipedia.org/wiki/América_Futebol_Clube_(Belo_Horizonte): verde y blanco desde la fundación
+  (1912), negro incorporado en 1913 — un paréntesis de una década (1933-1942) con uniforme rojo de
+  protesta, sin vigencia hoy. footylogos.com declara un verde algo distinto (#016738) para el mismo
+  club, misma familia de color (verde oscuro) — se prefirió el hex propio del sitio oficial del club
+  por ser más preciso para SU identidad puntual, no un agregador genérico.

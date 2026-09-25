@@ -28,4 +28,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'depcali-co': { 2025: 'co-primeraA' },
   'santafe-co': { 2025: 'co-primeraA' },
   'junior-co': { 2025: 'co-primeraA' },
+  // Verificado el 2026-09-24 (onboarding, Versión 217) contra "2018 Categoría Primera B season"
+  // (Wikipedia): subcampeón del Torneo Águila 2018, ascendido a Primera A para 2019.
+  'unionmagdalena-co': { 2018: 'co-primeraB' },
 });

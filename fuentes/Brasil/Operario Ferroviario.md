@@ -40,4 +40,20 @@
   https://cdn.fanbase.com.br/fanhub/operario/docs/transparencia/;
   https://federacaopr.com.br/documentos/;
   https://federacaopr.sfo3.digitaloceanspaces.com/wp-content/uploads/<año>/<mes>/<id>/Operario-<año>.pdf.
-- Último chequeo: 2026-09-22.
+- **Color de marca: `#000000` (negro)** — pt.wikipedia.org/wiki/Operário_Ferroviário_Esporte_Clube
+  (infobox: "preto e branco", decidido en 1933; camiseta negra con franjas blancas, short y medias
+  negras — negro domina la descripción del uniforme, blanco es solo detalle/franja) + confirmado
+  con hex exacto #000000 en brandcolorcode.com/operario-ferroviario-esporte-clube (paleta: negro
+  #000000, blanco #FFFFFF, plata #B3B2B2, oro #D6B469 — se usó el negro por ser el color no-blanco
+  dominante, mismo criterio que Estudiantes/Instituto/Unión). Verificado 2026-09-24.
+- **CARGADO (2026-09-24): 2 ejercicios en `data/operarioferroviario-data.js`** — 2024 (déficit de
+  R$246 mil) y 2025 (superávit de R$52 mil), motor genérico, revenueLines/expenseLines
+  categorizadas contra `data/category-map.js`, FX = PTAX BCB de cierre (`BRL@2024-12-31`/
+  `BRL@2025-12-31`, ya en `data/currency-map.js`). Tie-out verificado: revenue exacto los 2 años,
+  expenses con diferencia de R$1-2 mil (redondeo del propio documento, no error de carga), PAT
+  reconcilia dentro de la tolerancia del sitio (<0,01 M) los 2 años. Ver el comentario de cabecera
+  del archivo de datos para el detalle completo (incluye un aviso: la Nota 14 "Custos e despesas"
+  del PDF 2024 no reconcilia con la propia DRE de ese mismo documento — se usó el subtotal de la
+  DRE, no el de la Nota). `gestionId` quedó `sinconfirmar` los 2 años (firma de presidente Juarez
+  Costa Pinto solo visible en el PDF 2025, sin confirmar para todo 2024).
+- Último chequeo: 2026-09-24.

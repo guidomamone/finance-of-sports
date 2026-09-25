@@ -15,6 +15,71 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 217 — 4 clubes nuevos (10 PDF transcriptos onboardeados en paralelo): América Mineiro, Operário Ferroviário, Volta Redonda (Brasil) y Unión Magdalena (Colombia)
+
+- De 65 a 69 clubes cargados. 4 agentes en paralelo (uno por club, sin tocar `data/clubs.js`/
+  `category-map.js`/`currency-map.js` para no pisarse) onboardearon los 10 PDF ya transcriptos
+  (Versiones 214/215) que estaban limpios de OCR y sin cargar: **América Mineiro** (`americamineiro-br`,
+  3 ejercicios: 2023-2025), **Operário Ferroviário** (`operarioferroviario-br`, 2024-2025), **Volta
+  Redonda** (`voltaredonda-br`, 2024-2025, 4 documentos) y **Unión Magdalena** (`unionmagdalena-co`,
+  2018). Ninguno necesitó infraestructura de país nueva (Brasil y Colombia ya estaban cargados).
+- Los 4 nacen con el país en el `clubId` (convención de la Versión 129, que hasta ahora no se venía
+  aplicando a los clubes nuevos — `tools/audit.js` lo empezó a chequear recién esta sesión,
+  `clubid-sin-pais`).
+- 2 ligas nuevas en el catálogo (`data/leagues.js`): `br-serieC` (Volta Redonda, campeón 2024) y
+  `co-primeraB` (Unión Magdalena, subcampeón 2018) — ambas con su fila en `data/club-leagues/<iso2>.js`,
+  ninguna liga-temporada quedó sin verificar.
+- `FX_CLOSE` nuevo en `data/currency-map.js`: `BRL@2023-12-31` (4,8413) y `COP@2018-12-31` (3249,75),
+  investigados vía API oficial del Banco Central do Brasil y TRM oficial de la Superintendencia
+  Financiera de Colombia respectivamente.
+- `verifyTieOuts()`: de 365 a 389 checks, 0 mismatches, 0 warnings — cada ejercicio nuevo cierra exacto
+  contra el total impreso de su propio documento, confirmado con el motor real (`auditAll()`) además
+  del cálculo manual de cada agente.
+- `tools/audit.js`: 7 hallazgos nuevos (4 `signo-invertido`, 3 `catchall-dominante`) verificados uno
+  por uno contra el documento fuente y silenciados con su motivo en `tools/audit-ignore.json` — ninguno
+  es un error de carga, son líneas reales (deducciones contra-revenue, un crédito de reclasificación,
+  una ganancia por revalúo de inmuebles categorizada `exceptional_items`, y 2 catch-alls de Ingresos
+  grandes por una línea sin desglosar en el propio balance de América Mineiro, ya anotada en
+  `Admin/dudas-por-club.md`).
+- Encontrado y corregido un dígito de OCR mal leído en `Clubes/Brasil/Volta Redonda/balanco-2024.md`
+  (Nota 13.1(iii)), cruzando contra la columna comparativa de texto nativo del balance 2025.
+- `ASSET_V` 209 → 217 (se editaron `data/clubs.js` y `data/currency-map.js`, ambos eager-loaded).
+- Los 3 generadores corridos: `Admin/ESTADO.md` (sección QUÉ ES REAL POR CLUB), `fuentes.html` (69
+  páginas de club) y `data/rankings/<liga>.js` (incluidos los 2 rankings nuevos, `br-serieC` y
+  `co-primeraB`).
+
+---
+
+## Versión 216 — Proceso de email a clubes rediseñado, Etapa 1 (to-do 51)
+
+- Skill nuevo `club-outreach`: reemplaza el diseño original del to-do 51 ("Claude redacta, Guido
+  aprueba en el chat, envío por Gmail") por un pipeline que saca el paso de ENVÍO afuera de
+  cualquier sesión de chat — la restricción de aprobación mensaje-por-mensaje es de la plataforma,
+  no de Gmail, y ningún scope de conector la evita. Decisión de Guido tras comparar Gmail/MCP, APIs
+  transaccionales, no-code y agentes dedicados; arranca directo en la Etapa 1 (subdominio + Resend +
+  cola de revisión, sin regla de disparo automática), salteando la Etapa 0 manual.
+- `Admin/outreach/` nuevo: `contactos.json` (SOLO el email de contacto por club — nada de historial
+  de envíos duplicado, eso ya vive en los nombres/contenido de los propios archivos), `cola/` →
+  `aprobados/` → `enviados/` (la cola de revisión de borradores), `checkin-2026-10-24.md` (qué
+  evaluar en el check-in de 30 días antes de prender la Etapa 2).
+- `tools/outreach-send.js` nuevo: manda los `.md` aprobados vía la API de Resend y los archiva en
+  `enviados/`. Lo corre Guido desde su propia terminal — ninguna sesión de Claude Code lo ejecuta, ni
+  por pedido explícito en el chat, porque hacerlo ahí adentro es la misma aprobación
+  mensaje-por-mensaje que este diseño existe para evitar.
+- `.gitignore`: nueva regla para `Admin/outreach/.env` (la API key de Resend) — única excepción real
+  a "lo interno se trackea todo", porque es una credencial, no un documento.
+- `club-sourcing/SKILL.md`: nueva instrucción en la sección 0 — si aparece el email de contacto de un
+  club al buscar su documento, anotarlo en `Admin/outreach/contactos.json` si es gratis hacerlo en el
+  momento. Oportunista, no obligatorio: `club-outreach` lo busca igual al redactar si no está.
+- `CLAUDE.md`: pasa de 6 a 7 skills en la lista obligatoria.
+- Guido creó la cuenta de Resend el mismo día (conectada con GitHub) — falta verificar el
+  subdominio, activar `Receiving` para las respuestas, y generar la API key.
+- To-do 51 de `Admin/TODO.md` reescrito con el estado real: qué ya está construido, qué está
+  bloqueado en que Guido cree la cuenta de Resend y verifique el subdominio, y la fecha del
+  check-in.
+
+---
+
 ## Versión 10 — El sitio empezó a ser multi-club (River y Racing agregados)
 
 - Sitio pasa de ser solo de Boca a multi-club: se agregan River Plate y Racing con un esquema de datos normalizado (`data/clubs.js`, `category-map.js`, `river-data.js`, `racing-data.js`).

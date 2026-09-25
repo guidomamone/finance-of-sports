@@ -1,0 +1,8 @@
+{
+  "_schema": "Admin/outreach/contactos.json — SOLO contactos de clubes (email de una persona, dato que no puede vivir en fuentes/ porque esas páginas se publican). Se escribe al momento de redactar un mail para ese club, no antes — ver .claude/skills/club-outreach/SKILL.md sección 1. El historial de envíos NO se duplica acá: vive en los propios archivos de Admin/outreach/enviados/ (el nombre de archivo ya tiene la fecha, el contenido tiene club/to/subject). Esta clave _schema es documentación embebida, no un club — nunca se trata como uno.",
+  "_campos": {
+    "email": "string",
+    "source": "string — de dónde salió (ej. 'prensa@ en el sitio oficial', 'nota de prensa 2026-09-20')",
+    "date": "YYYY-MM-DD — cuándo se guardó"
+  }
+}

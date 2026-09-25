@@ -24,5 +24,5 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Llaneros](../Colombia/Llaneros.md) — 9 ejercicios (2016-2020, 2022-2025) vía SIIS; cambia de NIIF plenas a pymes en 2020; 2021 sin documento — Último chequeo: 2026-09-22
 - [Millonarios](../Colombia/Millonarios.md) — 3 ejercicios reales (2022-2025) — Último chequeo: 2026-09-12
 - [Once Caldas](../Colombia/Once Caldas.md) — CARGADO (Ejercicio 2025); 5 ejercicios más (2016-2020) ya en disco, faltan 2021-2024, disponibles — Último chequeo: 2026-09-22
-- [Union Magdalena](<../Colombia/Union Magdalena.md>) — 2 ejercicios (2018, 2021) vía SIIS; 2016-2017 y 2019-2020 confirmados SIN documento depositado — Último chequeo: 2026-09-22
+- [Union Magdalena](<../Colombia/Union Magdalena.md>) — CARGADO AL SITIO (`unionmagdalena-co`, 2018): 2021 vía SIIS sourceado pero sin transcribir/cargar; 2016-2017 y 2019-2020 confirmados SIN documento depositado — Último chequeo: 2026-09-24
 - [Notas generales de Colombia](../Colombia/_notas-generales.md)

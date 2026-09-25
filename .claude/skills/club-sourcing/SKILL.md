@@ -44,6 +44,12 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   **Trabajá siempre sobre el archivo de TU país**: es lo que permite que dos sesiones de sourcing
   corran en paralelo sin pisarse. `fuentes/README.md` (el índice de países) se toca solo al
   terminar, y solo si cambiaron los números de ese país.
+- **Si en el camino de buscar un documento aparece un email de contacto del club** (prensa@,
+  secretaría@, relaciones institucionales — en el sitio oficial, una nota de prensa, un formulario de
+  contacto) y guardarlo no cuesta nada extra, anotarlo en `Admin/outreach/contactos.json` (`email`,
+  `source`, `date`). Esto es oportunista, no una obligación a recordar: `club-outreach` busca el
+  contacto igual al momento de escribir si no está guardado, así que no hace falta ir a buscarlo
+  a propósito en una sesión de sourcing que no lo necesita.
 - **Un PDF descargado clickeando un link/botón en el Browser pane cae en `~/Downloads` del sistema,
   NO en el proyecto** (a diferencia de `curl`/`fetch()+Blob`, que sí se pueden apuntar directo a
   `Clubes/<País>/<Club>/`): el Browser pane es un navegador de verdad, y una descarga real de
@@ -192,7 +198,8 @@ sin ambigüedad:
   presentación en VIDEO en vez de PDF (Banfield, 105° Ejercicio), o el documento estuvo público y el
   compartir se revocó (Atlanta, los 4 Drive de 2013-2016). En los tres casos pedirle al club que
   publique/resuba lo que YA tiene es barato para el club y de alto valor esperado — lo que separa
-  esto del punto anterior es la CONFIRMACIÓN de existencia, no el esfuerzo ya invertido buscando.
+  esto del punto anterior es la CONFIRMACIÓN de existencia, no el esfuerzo ya invertido buscando. El
+  proceso de escribir y mandar ese mail de verdad es `club-outreach`, no este skill.
 - **Bloqueo estructural confirmado en una fuente primaria (ley, reglamento, estatuto societario) →
   CERRADO, no pendiente, sin mail.** Liga MX/SICE (confidencialidad por reglamento, to-do 47), Costa
   Rica/FEDEFUT, Sudáfrica (exención de la Companies Act), Chile/OTODP: acá no hay PDF que destrabar
