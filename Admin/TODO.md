@@ -242,44 +242,6 @@ perdieron sino que se descartaron:
     por pata es chico — el resultado es direccional, no estadísticamente robusto — para que no se
     sobre-interprete una diferencia chica como definitiva.
 
-47. EXPLICARLE AL VISITANTE POR QUÉ MÉXICO NO MUESTRA CASI NADA (pedido de Guido, 2026-09-22:
-    *"estoy seguro de que muchos usuarios van a querer ver méxico en detalle y hay que explicar
-    por qué no se muestra nada"*). **No es una tarea de sourcing: el sourcing ya está hecho y dio
-    lo que podía dar.** Los 18 clubes de Liga MX están trackeados uno por uno y el país quedó
-    documentado como RESUELTO, no como pendiente — el detalle club por club está en
-    `fuentes/_indice/México.md` y en cada `fuentes/México/<Club>.md`.
-
-    LA RAZÓN DE FONDO, que es lo que hay que poder decir en pantalla: el Reglamento de Control
-    Económico de la Liga MX **exige** estados financieros dictaminados (art. 26) y en el mismo
-    texto **los declara confidenciales** (art. 12), vía el sistema SICE. O sea que los balances
-    existen, están auditados, y la liga decide no publicarlos. No es que el proyecto no los
-    encontró: es que nadie fuera de la liga puede verlos. Se suma que en México no hay registro
-    mercantil útil (el RPC inscribe actos, no balances; los estados financieros van al SAT y son
-    reservados) y que en el listado completo de emisoras de la BMV hay un solo club de fútbol.
-
-    LO QUE SÍ SE PUDO, y conviene mostrar como excepción y no como regla: Club América vía el
-    segmento "Fútbol" de Ollamani S.A.B. (cotiza en la BMV), Atlas vía el desglose de operación
-    discontinua IFRS 5 en el Reporte Anual 2019 de TV Azteca, y Atlético San Luis vía la nota de
-    empresas del grupo de las cuentas anuales del Atlético de Madrid. Los dos últimos son cifras
-    parciales, no balances completos.
-
-    LA TAREA, entonces, es de PRODUCTO: dónde y cómo se le dice esto al visitante que entra
-    buscando su club. Un club trackeado-sin-documento hoy simplemente no existe en el sitio, así
-    que el que busca Chivas no encuentra ni el club ni el motivo. **DECISIÓN DE GUIDO (2026-09-25):
-    un tooltip** — el ícono típico de círculo con signo de interrogación adentro, en el card de
-    México (confirmar en la sesión que lo implemente CUÁL card exacto: candidato más probable es la
-    fila/card de México en el paso "País" del selector, pero no está verificado contra la UI real —
-    no asumir sin mirar `js/selector.js` primero), con el texto explicando la razón de fondo (el
-    reglamento de la Liga MX exige Y prohíbe publicar a la vez) resumida en 2-3 líneas. Reemplaza a
-    las otras opciones que se habían planteado (vista de liga con lista de ausencias, ficha mínima
-    por club, nota de cobertura por país) — más simple, no agrega una vista nueva.
-
-    OJO CON UN EFECTO LATERAL: hoy el sitio es "los clubes que tienen datos". Si el tooltip aparece
-    en un lugar donde México ya se ve listado/clickeable, hay que cuidar que no parezca que tiene
-    datos cargados ni que ensucie rankings, comparaciones o el selector — el tooltip explica una
-    ausencia, no reemplaza tener el club cargado.
-
-
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
     to-do 51, proceso de email a clubes). **EN PAUSA hasta 2026-09-30 (decisión de Guido, 2026-09-26)**:

@@ -15,6 +15,30 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 242 — tooltip "?" en México, explica por qué el país casi no tiene clubes (cierra el to-do 47)
+
+- **El paso "País" del selector (`js/selector.js`)**: la fila de México, además del flag y "1 club",
+  ahora lleva un círculo "?" (`op.info` en `PASOS_FILTRO`, sección `country`). Hover en desktop,
+  click/tap en mobile (donde no existe hover) — un bocadillo de 2-3 líneas explica que el Reglamento
+  de Control Económico de la Liga MX exige balances auditados (art. 26) Y en el mismo texto los
+  declara confidenciales (art. 12): los balances existen, nadie fuera de la liga puede verlos. Menciona
+  a Club América (el único club mexicano cargado, vía el segmento "Fútbol" de Ollamani en la BMV) como
+  excepción parcial. El tooltip explica una ausencia, no reemplaza tener el club: no toca el conteo
+  "1 club" ni ningún ranking.
+- **El bocadillo NO cuelga del botón "?"**: `.paso` recorta con `overflow:hidden` (para sus esquinas
+  redondeadas), así que un bocadillo posicionado como descendiente se cortaba apenas el botón quedaba
+  cerca del borde de la card — le pasaba justo a México, la última fila de Países. Se resolvió con un
+  único `<div class="op-info-float">` (`position:fixed`) colgado de `document.body`, reposicionado con
+  `getBoundingClientRect()` en cada apertura (`mostrarInfo()`), que esquiva cualquier `overflow` ajeno
+  en el camino. Un solo bocadillo abierto a la vez; se cierra clickeando afuera o si el paso se
+  repinta (`cerrarInfosAbiertas()` en `renderModal()`/`close()`).
+- 2 claves nuevas en `data/lang/en.js`: `sel.country.mx.info`, `sel.info.aria`.
+- `ASSET_V` 240 → 241 (se tocó `js/selector.js` y `js/styles.css`), constante y los 15 `<script src>`;
+  `fuentes.html` y sus 161 páginas de club regeneradas.
+- Verificado en el navegador, en los dos idiomas y en mobile (375px): el tooltip se ve completo (no
+  recortado), no selecciona México al abrirse, y seleccionar la fila (fuera del "?") sigue marcando el
+  país con normalidad. `node tools/audit.js`: 0 P0, 0 P1, 0 P2 (igual que antes de esta sesión).
+
 ## Versión 241 — brandColor al onboarding, eje `datos` de la auditoría por país, sentinel de liga sin catálogo (to-dos 56 y 64)
 
 - **`club-or-year-onboarding/SKILL.md`**: nuevo paso en el checklist de cierre — un club NUEVO

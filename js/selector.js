@@ -343,7 +343,11 @@ window.CLUB_SELECTOR = (function(){
                  .localeCompare(t(window.COUNTRIES[b].key, window.COUNTRIES[b].name), 'es');
         }).map(function(cid){
           return { id:cid, icon:window.COUNTRIES[cid].flag,
-                   label:t(window.COUNTRIES[cid].key, window.COUNTRIES[cid].name), meta:nClubes(cuenta[cid]) };
+                   label:t(window.COUNTRIES[cid].key, window.COUNTRIES[cid].name), meta:nClubes(cuenta[cid]),
+                   // to-do 47: México aparece con muy pocos clubes (hoy 1, América) y no es un hueco
+                   // de sourcing sin resolver: la Liga MX exige balances auditados Y los declara
+                   // confidenciales en el mismo reglamento. El tooltip explica la ausencia, no la tapa.
+                   info: cid === 'MX' ? t('sel.country.mx.info', 'Los balances de los clubes de Liga MX existen: el reglamento de la liga exige presentarlos auditados (art. 26), pero el mismo reglamento los declara confidenciales (art. 12). Por eso el sitio no puede mostrarlos. Excepción parcial: Club América, que reporta resultados dentro del grupo que cotiza en bolsa.') : null };
         });
       }
     }
@@ -526,6 +530,7 @@ window.CLUB_SELECTOR = (function(){
     $('clubBackdrop').classList.remove('open');
     $('clubBtn').setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    cerrarInfosAbiertas();
   }
 
   // ---------------------------------------------------------------------------
@@ -547,7 +552,64 @@ window.CLUB_SELECTOR = (function(){
     if(op.meta) b.appendChild(el('span', 'op-meta', op.meta));
     if(op.disabled) b.disabled = true;
     else b.addEventListener('click', function(){ onClick(op.id); });
+    // `op.info` es el círculo "?" de explicación (to-do 47: por qué México casi no
+    // tiene clubes). Va FUERA de `b`, nunca adentro: `b` ya es un <button>, y un
+    // <button> no puede anidar otro. Envolver los dos en `.op-cell` es lo que le
+    // permite a `.op-info` quedar clickeable por su cuenta sin también seleccionar
+    // el país al tocarlo.
+    if(op.info){
+      var cell = el('div', 'op-cell');
+      cell.appendChild(b);
+      cell.appendChild(infoBtn(op.info));
+      return cell;
+    }
     return b;
+  }
+
+  // El botón "?" de info: hover en desktop, click/tap en mobile (donde no existe
+  // hover). El bocadillo NO es descendiente del botón: `.paso` tiene
+  // `overflow:hidden` (para las esquinas redondeadas de la card), así que un
+  // bocadillo posicionado adentro se recorta apenas el botón queda cerca del borde
+  // de la card (le pasó a México, la última fila de Países). Un único bocadillo
+  // `position:fixed` colgado de `document.body`, reposicionado con
+  // `getBoundingClientRect()` en cada apertura, esquiva cualquier `overflow`
+  // ajeno en el camino.
+  var infoTipEl = null, infoAbierto = null; // infoAbierto: el botón pineado por click, o null
+  function infoTip(){
+    if(!infoTipEl){
+      infoTipEl = el('div', 'op-info-float');
+      document.body.appendChild(infoTipEl);
+    }
+    return infoTipEl;
+  }
+  function mostrarInfo(btn, texto){
+    var tip = infoTip();
+    tip.textContent = texto;
+    tip.style.display = 'block';
+    var r = btn.getBoundingClientRect();
+    var w = tip.offsetWidth || 230;
+    var left = Math.min(Math.max(8, r.right - w), window.innerWidth - w - 8);
+    tip.style.top = (r.bottom + 6) + 'px';
+    tip.style.left = left + 'px';
+  }
+  function ocultarInfo(){ if(infoTipEl) infoTipEl.style.display = 'none'; }
+  // Llamado desde `renderModal()`: si el paso se repinta (se eligió otra opción,
+  // se cambió de paso), el botón pineado ya no existe, así que el bocadillo
+  // flotante tiene que cerrarse con él en vez de quedar huérfano en pantalla.
+  function cerrarInfosAbiertas(){ infoAbierto = null; ocultarInfo(); }
+
+  function infoBtn(texto){
+    var info = el('button', 'op-info', '?');
+    info.type = 'button';
+    info.setAttribute('aria-label', t('sel.info.aria', 'Por qué'));
+    info.addEventListener('mouseenter', function(){ mostrarInfo(info, texto); });
+    info.addEventListener('mouseleave', function(){ if(infoAbierto !== info) ocultarInfo(); });
+    info.addEventListener('click', function(ev){
+      ev.stopPropagation();
+      if(infoAbierto === info){ infoAbierto = null; ocultarInfo(); }
+      else { infoAbierto = info; mostrarInfo(info, texto); }
+    });
+    return info;
   }
 
   // El resumen de un paso ya resuelto. Tres estados, y los tres se leen distinto a
@@ -564,6 +626,7 @@ window.CLUB_SELECTOR = (function(){
   function renderModal(){
     var wrap = $('modalWrap');
     if(!wrap) return;
+    cerrarInfosAbiertas(); // el paso se repinta: el botón "?" pineado, si había uno, ya no existe
     wrap.innerHTML = '';
     var actual = pasoActual();
 
@@ -2403,6 +2466,10 @@ window.CLUB_SELECTOR = (function(){
         isOpen() ? close() : open(false);
       }
     });
+    // Cierra el tooltip "?" (op.info) si el click fue afuera de él. El propio botón
+    // ya corta la propagación en su handler, así que este listener solo ve clicks
+    // ajenos.
+    document.addEventListener('click', cerrarInfosAbiertas);
 
     inited = true;
     renderButton();

@@ -21,7 +21,7 @@ permanentes. Esto es el procedimiento.
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 44 KB |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
 | 2 | `Admin/CONVENCIONES.md` | **siempre** | 53 KB |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 50 KB |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 33 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |
 | 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 89 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 67 KB |
