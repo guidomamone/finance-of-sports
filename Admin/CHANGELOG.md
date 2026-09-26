@@ -15,6 +15,35 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 228 — inventario completo de pendientes de sourcing/onboarding
+
+- Pedido explícito de Guido: "hace la lista entera de pdfs que faltan transcribir y de
+  transcripciones que faltan y ponelos en un mismo to-do así la siguiente sesión no tiene que hacer
+  de detective". Archivo nuevo `Admin/inventario-pendiente.md` (~33 KB): 1 barrido determinístico del
+  filesystem (PDFs sin `.md`, 2047 archivos en 15 países) + 2 agentes Explore en paralelo (América/
+  Asia y Europa, cruzando `Admin/ESTADO.md` CLUB-INDEX contra cada `.md` de `Clubes/` y la cabecera de
+  cada `data/<clubId>-data.js`) para las transcripciones ya hechas y sin cargar (~570 archivos).
+- **Hallazgo más grande**: Colo-Colo/Universidad Católica/Universidad de Chile tienen cada uno hasta
+  17 años de EEFF IFRS ya transcriptos (2009/2010-2025), pero solo 3 (2022-2024) están cargados —
+  ~41 ejercicios-año sin usar, verificado directo con `grep` de las claves de año en cada data.js, no
+  asumido del índice.
+- Bélgica (~280 archivos) y Dinamarca (~110) concentran el grueso de "ejercicio nuevo de club ya
+  cargado": los 14 clubes belgas y 10 daneses tienen series históricas completas (hasta 33 años en
+  Club Brugge) pero solo 1 ejercicio cargado cada uno.
+- 20 documentos nuevos identificados y descartados con motivo verificado (sumados a los ya conocidos
+  de `Admin/TODO.md` punto 60): entidad equivocada (Real Betis: Fundación en vez de la S.A.D.; Vasco/
+  Botafogo: associação social en vez de la SAF; FC København: holding PSE consolidada; Akhmat Grozny:
+  plantilla regulatoria en blanco, ni siquiera es del club), versión rechazada por el propio club
+  (Sevilla FC borrador 2022/23), sociedad sin actividad real (Coritiba SAF 2022), período parcial
+  (Osasuna intermedio, Gaziantep FK, Ecuador Deportivo Cuenca), y más casos de "solo Memoria sin
+  balance" en Argentina (Ferro Carril Oeste, Gimnasia y Esgrima LP, Unión, San Lorenzo, Racing, All
+  Boys).
+- Queda 1 to-do explícito sin resolver dentro del archivo: extraer del documento agregado de la
+  J.League (texto en japonés, ~60 clubes en una sola tabla) la lista de clubes japoneses no
+  cargados todavía — nadie llegó a procesarlo esta sesión.
+- `Admin/TODO.md` punto 61 apunta a este archivo con los números resumidos, sin duplicar el detalle.
+  No se tocó ningún `data/*.js` ni `ASSET_V` — es trabajo puramente de documentación/sourcing.
+
 ## Versión 227 — 20 transcripts más (15 clubes nuevos + 7 ejercicios), sin dead-ends esta vez
 
 - De 146 a 161 clubes cargados, 269 a 291 ejercicios. Pedido de Guido: "20 más" (misma sesión que la

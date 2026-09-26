@@ -54,6 +54,27 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+61. INVENTARIO COMPLETO DE PENDIENTES DE SOURCING/ONBOARDING, PARA NO TENER QUE VOLVER A BUSCAR
+    (pedido explícito de Guido, 2026-09-25: "hace la lista entera de pdfs que faltan transcribir y
+    de transcripciones que faltan y ponelos en un mismo to-do así la siguiente sesión no tiene que
+    hacer de detective"). El detalle completo, archivo por archivo, está en
+    `Admin/inventario-pendiente.md` — no se repite acá para no duplicar. En números: **2047 PDFs sin
+    transcribir** en 15 países (grueso en países 100% nuevos: Noruega 369, República Checa 351,
+    Grecia 242, más 194 en Brasil y 184 en Colombia de clubes/años no cargados) y **~570
+    transcripciones `.md` ya hechas pero sin cargar al sitio**, repartidas en 3 categorías: ejercicio
+    nuevo de un club ya cargado (el grueso: Bélgica ~280 archivos y Dinamarca ~110 solas, con España/
+    Alemania/Croacia/Argentina/Brasil/Colombia sumando el resto), club nuevo con `.md` ya listo en un
+    país ya cargado (Chile es el hallazgo más grande de todos: ~41 años sin cargar entre Colo-Colo/
+    Universidad Católica/Universidad de Chile, además de Deportes Tolima en Colombia y 3 clubes más
+    en Bélgica/Dinamarca/Croacia), y país 100% nuevo con `.md` ya listo (Corea del Sur, China,
+    Austria, Escocia, Italia, Francia, Portugal, Rusia, Ucrania, Turquía). El archivo también trae
+    una sección de "por dónde empezar" (Chile primero, después Bélgica/Dinamarca, después España/
+    Alemania) y una lista de ~20 documentos ya descartados con el motivo verificado (entidad
+    equivocada, período parcial, solo memoria narrativa, mala calidad de OCR), para no perder tiempo
+    re-investigando lo mismo. Queda un to-do explícito sin resolver dentro de ese archivo (sección
+    4): extraer del documento agregado de la J.League la lista completa de clubes japoneses, texto
+    en japonés, nadie llegó a hacerlo todavía.
+
 60. RE-CHEQUEAR A MANO LAS TRANSCRIPCIONES CON OCR DE MALA CALIDAD ANTES DE USARLAS PARA CARGAR
     DATOS (Versión 214, ampliado en la 215, sesiones de transcripción del 2026-09-24). El OCR salió
     con tablas mezcladas, dígitos sueltos mal leídos o zonas ilegibles — ya marcado dentro de cada

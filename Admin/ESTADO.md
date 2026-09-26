@@ -553,6 +553,11 @@ completo está en `Admin/CONVENCIONES.md`.
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
+- `Admin/inventario-pendiente.md` (Versión 228): foto completa de PDFs sin transcribir y
+  transcripciones `.md` ya hechas pero sin cargar, país por país y club por club, con una sección de
+  "por dónde empezar" y otra de descartados con motivo — para no tener que rehacer el barrido de
+  `Clubes/` cada sesión. Es una FOTO puntual, no se regenera sola: borrar la línea de lo que se vaya
+  onboardeando.
 
 **YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 131 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
 
