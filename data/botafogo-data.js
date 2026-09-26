@@ -69,7 +69,9 @@
 // - 'Venda de mercadorias'/'Licenciamento'/'Patrocínios'/'Publicidade em placas'/'Mídias digitais' ->
 //   sponsorship_commercial (categoría que ya incluye merchandising).
 // - 'Cessão temporária' (préstamos de jugadores) -> player_sales; 'Mecanismo de Solidariedade'
-//   (recibido, Nota 20.6) -> youth_football, igual que Grêmio.
+//   (recibido, Nota 20.6) -> player_sales (to-do 43: unificado con Argentinos/Boca/Envigado/
+//   Independiente/Once Caldas/Rosario Central/San Lorenzo, mismo concepto económico — derechos de
+//   formación/mecanismo de solidaridad por venta de jugadores formados en el club).
 // - 'Cessão definitiva de atletas' (Nota 24.1, venta de jugadores) -> player_sales.
 // - 'Deduções sobre a receita' (impuestos específicos del fútbol + direito de arena + otras, Nota 20)
 //   -> other_income (línea negativa, contra-revenue, no atribuible a una sola categoría de arriba).
@@ -267,7 +269,7 @@ const botafogoRevenueLinesByYear = {
     { rawLabel:'Licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:2.147, disclosureLevel:'detailed' },
     { rawLabel:'Cessão definitiva de atletas', normalizedCategory:'player_sales', amountNative:78.698, disclosureLevel:'detailed' },
     { rawLabel:'Cessão temporária', normalizedCategory:'player_sales', amountNative:4.053, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:0.227, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:0.227, disclosureLevel:'detailed' },
     { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:23.524, disclosureLevel:'detailed' },
     { rawLabel:'Aluguel de estádio (Locações do estádio Nilton Santos)', normalizedCategory:'stadium_other', amountNative:10.626, disclosureLevel:'detailed' },
     { rawLabel:'Operação em estádio - Eventos', normalizedCategory:'stadium_other', amountNative:4.261, disclosureLevel:'detailed' },
@@ -289,7 +291,7 @@ const botafogoRevenueLinesByYear = {
     { rawLabel:'Camisa 7 (programa Sócio Torcedor)', normalizedCategory:'member_dues', amountNative:48.620, disclosureLevel:'detailed' },
     { rawLabel:'Licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:3.177, disclosureLevel:'detailed' },
     { rawLabel:'Cessão temporária (empréstimo de atletas)', normalizedCategory:'player_sales', amountNative:2.488, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de Solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:1.874, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de Solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:1.874, disclosureLevel:'detailed' },
     { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:66.379, disclosureLevel:'detailed' },
     { rawLabel:'Locações', normalizedCategory:'other_income', amountNative:17.040, disclosureLevel:'detailed' },
     { rawLabel:'Operação em estádio', normalizedCategory:'matchday_competition', amountNative:7.193, disclosureLevel:'detailed' },
@@ -313,7 +315,7 @@ const botafogoRevenueLinesByYear = {
     { rawLabel:'Camisa 6 (aportes de torcedores para el Centro de Treinamento)', normalizedCategory:'member_dues', amountNative:0.460, disclosureLevel:'detailed' },
     { rawLabel:'Licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:3.500, disclosureLevel:'detailed' },
     { rawLabel:'Cessão temporária', normalizedCategory:'player_sales', amountNative:11.324, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:1.272, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:1.272, disclosureLevel:'detailed' },
     { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:60.646, disclosureLevel:'detailed' },
     { rawLabel:'Locações do estádio Nilton Santos', normalizedCategory:'stadium_other', amountNative:7.502, disclosureLevel:'detailed' },
     { rawLabel:'Operação de estádio', normalizedCategory:'matchday_competition', amountNative:4.902, disclosureLevel:'detailed' },

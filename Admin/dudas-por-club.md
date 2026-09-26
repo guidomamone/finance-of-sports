@@ -78,6 +78,21 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   cargó `gestionId:'veron'` (criterio de "quien firma/está a cargo al cierre", igual que
   Berlanga/Belloso), pero vale confirmar con Guido si prefiere el criterio de "quien presidió más
   meses" para casos como este, que daría Gorostegui en cambio.
+- **to-do 43 (unificar "derechos de formación/mecanismo de solidaridad" a `player_sales`), sesión
+  2026-09-26: no se encontró una línea equivalente para recategorizar.** El to-do (originado en
+  `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i) lista a Estudiantes entre los 7 clubes
+  con este concepto "escondido" en `youth_football`/`other_income`, pero la única línea de
+  `data/estudianteslp-data.js` en `youth_football` es "Recursos fútbol infantil/amateur" — se revisó
+  el texto de los 4 balances (`Clubes/Argentina/Estudiantes LP/*.md`) y esa línea es ingreso
+  operativo de la Escuela de Fútbol Infantil/divisiones amateur (aranceles, sponsors puntuales:
+  "Mains Sponsors Futbol Infantil"), no cobros de FIFA training compensation/mecanismo de
+  solidaridad por transferencias — un concepto distinto que en Boca/Racing/Vélez/etc. sí tiene su
+  propia línea explícita ("Cobros de derechos de formación y mecanismo de solidaridad", "Derechos de
+  formación"). No se recategorizó nada de Estudiantes en esta sesión para no mezclar ingreso de
+  programa juvenil con venta/transferencia de jugadores. Pregunta para Guido: ¿el balance de
+  Estudiantes simplemente no separa esa plata (queda mezclada dentro de "Transferencias y préstamos
+  de jugadores", ya en `player_sales`), o el club de verdad no la recibe/no es significativa? Si hay
+  un desglose que esta sesión no encontró, avisar para completar el to-do.
 
 ## Argentinos Juniors
 
@@ -148,6 +163,19 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   para esos 3 ejercicios (si sí están para 2025). Vale pedirle al club (o reintentar directo en
   clubaunion.com.ar cuando el sitio esté online, ver `fuentes/README.md`) una copia completa que
   incluya el Balance General de esos 3 años.
+- **to-do 43 (unificar "derechos de formación/mecanismo de solidaridad" a `player_sales`), sesión
+  2026-09-26: mismo caso que Estudiantes LP, no se encontró línea equivalente.** El to-do lista a
+  Unión entre los 7 clubes con este concepto "escondido" en el catch-all, pero la única línea de
+  `data/union-data.js` en `youth_football` es "Ingresos Fútbol Amateur" — revisando las memorias del
+  club (`Clubes/Argentina/Union/*.md`), el Departamento de Fútbol Amateur es la estructura de
+  divisiones inferiores/pensión, y su línea de ingresos no tiene ninguna mención a mecanismo de
+  solidaridad o derechos de formación por jugadores transferidos. De hecho Unión YA tiene una línea
+  separada para eso, "Otros recursos por derechos sobre jugadores" (`player_sales` en los 4
+  ejercicios) — es la lectura más probable de dónde vive esta plata, así que es posible que el
+  to-do ya esté resuelto de facto para este club y el catch-all que motivó el hallazgo original sea
+  otra cosa. No se recategorizó nada de Unión en esta sesión (mover "Ingresos Fútbol Amateur" entero
+  a `player_sales` mezclaría ingreso real de programa juvenil con venta de jugadores). Confirmar con
+  Guido si esto cierra el caso de Unión o si hace falta volver a la fuente.
 
 ## Independiente (Ejercicio N°122, 2025-26, sesión 2026-09-23)
 

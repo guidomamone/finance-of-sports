@@ -49,7 +49,8 @@
 //   ventas (mismos 3 números que imprime la Nota 22-d, con `items` para no perder el desglose).
 // - 'Venda de Atletas' (Nota 25, ex-Nota 22 hasta el cambio de norma de 2024) -> player_sales.
 // - 'Mecanismo de Solidariedade' (Nota 25-b: FIFA training compensation por jugadores formados en el
-//   club que se transfieren después) -> youth_football (derechos de formación).
+//   club que se transfieren después) -> player_sales (to-do 43: unificado con Argentinos/Boca/
+//   Envigado/Independiente/Once Caldas/Rosario Central/San Lorenzo, mismo concepto económico).
 // - 'Valor justo (cessão de crédito Arena Porto-Alegrense)' -> other_income: ganancia NO recurrente
 //   de único ejercicio por la adquisición a descuento de un crédito judicial contra la operadora del
 //   estadio (Nota 6-e, detalle completo ahí) — no hay categoría "exceptional_items" del lado ingreso
@@ -100,7 +101,7 @@ const gremioRevenueLinesByYear = {
       ['Vendas Grêmio Mania', 22.150], ['Devoluções de vendas', -0.417], ['Impostos sobre vendas', -3.167],
     ]},
     { rawLabel:'Venda de Atletas', normalizedCategory:'player_sales', amountNative:105.303, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de Solidariedade', normalizedCategory:'youth_football', amountNative:1.017, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de Solidariedade', normalizedCategory:'player_sales', amountNative:1.017, disclosureLevel:'detailed' },
     { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:0.011, disclosureLevel:'detailed' },
     { rawLabel:'Recuperação de Despesas', normalizedCategory:'other_income', amountNative:15.523, disclosureLevel:'detailed' },
     { rawLabel:'Valor justo (cessão de crédito Arena Porto-Alegrense, Nota 6-e)', normalizedCategory:'other_income', amountNative:88.995, disclosureLevel:'detailed' },

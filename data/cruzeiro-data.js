@@ -42,8 +42,8 @@
 //   canceladas' (deducción) -> other_income.
 // - Sub-nota (iii) 'Mecanismo de solidariedade e outros' SE PROMOVIÓ a 3 líneas de primer nivel
 //   (mismo criterio que Racing, club-data-mapping SKILL.md sección 1: cada sub-ítem tiene categoría
-//   real distinta) — 'Mecanismo de solidariedade' (recebido) -> youth_football; 'Cessão temporária'
-//   -> player_sales; 'Outros' (de esa sub-nota) -> other_income.
+//   real distinta) — 'Mecanismo de solidariedade' (recebido) -> player_sales (to-do 43, unificado);
+//   'Cessão temporária' -> player_sales; 'Outros' (de esa sub-nota) -> other_income.
 // - Nota 27 (Custo das atividades esportivas): 'Salários, direito de imagem, encargos e benefícios'
 //   -> wages_squad; 'Amortizações do intangível' -> player_amortisation; 'Baixa do ativo intangível'
 //   -> player_impairment (deterioro, distinto de la amortización regular); 'Custos diretos e
@@ -97,7 +97,7 @@
 // licenciamento' -> sponsorship_commercial; 'Outros' -> other_income; '(-) Impostos e
 // contribuições/Vendas canceladas' -> other_income (deducción). Sub-nota (iii) 'Mecanismo de
 // solidariedade e outros' promovida a líneas de primer nivel, mismo criterio que 2025: 'Mecanismo de
-// solidariedade' -> youth_football (7.684); 'Cessão temporária' -> player_sales (3.182);
+// solidariedade' -> player_sales (7.684, to-do 43); 'Cessão temporária' -> player_sales (3.182);
 // 'Rescisão contratual' y 'Outros' de esa sub-nota son $0 en 2024 (solo tuvieron valor en la columna
 // comparativa 2023), no se cargó línea para ellos.
 // Nota 26 (Custos das atividades esportivas): mismo mapeo que 2025 rubro por rubro donde el rótulo
@@ -170,8 +170,8 @@
 // 'Transferência de atletas e mecanismo de solidariedade' promovida a líneas de primer nivel (mismo
 // criterio que 2024/2025): 'Rescisão contratual' -> player_sales (compensación por rescisión
 // unilateral de contrato de un jugador, mismo espíritu que "Cessão temporária"); 'Venda de direitos
-// econômicos de atletas' -> player_sales; 'Mecanismo de solidariedade' -> youth_football; 'Cessão
-// temporária' -> player_sales; 'Outros' -> other_income.
+// econômicos de atletas' -> player_sales; 'Mecanismo de solidariedade' -> player_sales (to-do 43,
+// unificado); 'Cessão temporária' -> player_sales; 'Outros' -> other_income.
 // Nota 16 (Custos do Futebol): mismo mapeo rubro por rubro que 2024/2025 ('Salários...' ->
 // wages_squad; 'Custos diretos e indiretos com jogos'/'Custos com viagens e hospedagens'/'Custos com
 // alimentação'/'Direito de Arena'/'Manutenção geral' -> ojo, en ESTE documento 'Manutenção geral' se
@@ -251,7 +251,7 @@
 // promovida a líneas de primer nivel, igual que 2023: 'Rescisão contratual' (rescisión unilateral
 // del atleta Vitor Hugo Roque Ferreira) -> player_sales; 'Venda de direitos econômicos de atletas'
 // (Igor Thiago + Jadsom) -> player_sales; 'Mecanismo de solidariedade' (venta de Fabrício Bruno) ->
-// youth_football; 'Outros' -> other_income.
+// player_sales (to-do 43, unificado); 'Outros' -> other_income.
 // Nota 16 (Custos do Futebol, 108.703 este documento — DISTINTO de los 108.227 "reapresentado" que
 // muestra la columna comparativa del documento 2023, ver nota de arriba): mismo mapeo rubro por
 // rubro que 2023/2024 ('Salários...' -> wages_squad; 'Custos diretos e indiretos com jogos'/'Custos
@@ -298,7 +298,7 @@ const cruzeiroRevenueLinesByYear = {
     { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:280.010, disclosureLevel:'detailed' },
     { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:26.403, disclosureLevel:'detailed' },
     { rawLabel:'Direitos de transmissão fixos e premiações por performance', normalizedCategory:'broadcasting', amountNative:176.486, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:1.855, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:1.855, disclosureLevel:'detailed' },
     { rawLabel:'Cessão temporária (empréstimo de atletas)', normalizedCategory:'player_sales', amountNative:1.449, disclosureLevel:'detailed' },
     { rawLabel:'Outros (mecanismo de solidariedade e outros)', normalizedCategory:'other_income', amountNative:3.596, disclosureLevel:'detailed' },
     { rawLabel:'Royalties e licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:25.470, disclosureLevel:'detailed' },
@@ -312,7 +312,7 @@ const cruzeiroRevenueLinesByYear = {
     { rawLabel:'Programa sócio torcedor', normalizedCategory:'member_dues', amountNative:32.439, disclosureLevel:'detailed' },
     { rawLabel:'Patrocínio e publicidade', normalizedCategory:'sponsorship_commercial', amountNative:57.860, disclosureLevel:'detailed' },
     { rawLabel:'Direitos de transmissão fixos e premiações por performance', normalizedCategory:'broadcasting', amountNative:138.072, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:7.684, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:7.684, disclosureLevel:'detailed' },
     { rawLabel:'Cessão temporária (empréstimo de atletas)', normalizedCategory:'player_sales', amountNative:3.182, disclosureLevel:'detailed' },
     { rawLabel:'Receitas com royalties e licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:15.365, disclosureLevel:'detailed' },
     { rawLabel:'Outros (receita operacional bruta)', normalizedCategory:'other_income', amountNative:1.920, disclosureLevel:'detailed' },
@@ -327,7 +327,7 @@ const cruzeiroRevenueLinesByYear = {
     { rawLabel:'Direitos de transmissão fixos e premiações por performance', normalizedCategory:'broadcasting', amountNative:101.728, disclosureLevel:'detailed' },
     { rawLabel:'Rescisão contratual (transferência de atletas)', normalizedCategory:'player_sales', amountNative:0.108, disclosureLevel:'detailed' },
     { rawLabel:'Venda de direitos econômicos de atletas', normalizedCategory:'player_sales', amountNative:16.809, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:2.401, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:2.401, disclosureLevel:'detailed' },
     { rawLabel:'Cessão temporária (empréstimo de atletas)', normalizedCategory:'player_sales', amountNative:1.148, disclosureLevel:'detailed' },
     { rawLabel:'Outros (transferência de atletas e mecanismo de solidariedade)', normalizedCategory:'other_income', amountNative:0.248, disclosureLevel:'detailed' },
     { rawLabel:'Receitas com royalties e licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:11.813, disclosureLevel:'detailed' },
@@ -343,7 +343,7 @@ const cruzeiroRevenueLinesByYear = {
     { rawLabel:'Direitos de transmissão fixos e premiações por performance', normalizedCategory:'broadcasting', amountNative:28.710, disclosureLevel:'detailed' },
     { rawLabel:'Rescisão contratual (transferência de atletas)', normalizedCategory:'player_sales', amountNative:10.800, disclosureLevel:'detailed' },
     { rawLabel:'Venda de direitos econômicos de atletas', normalizedCategory:'player_sales', amountNative:4.431, disclosureLevel:'detailed' },
-    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'youth_football', amountNative:0.962, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidariedade (recebido)', normalizedCategory:'player_sales', amountNative:0.962, disclosureLevel:'detailed' },
     { rawLabel:'Outros (transferência de atletas e mecanismo de solidariedade)', normalizedCategory:'other_income', amountNative:0.040, disclosureLevel:'detailed' },
     { rawLabel:'Receitas com royalties e licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:14.153, disclosureLevel:'detailed' },
     { rawLabel:'Outros (receita operacional bruta)', normalizedCategory:'other_income', amountNative:0.180, disclosureLevel:'detailed' },

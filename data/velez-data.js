@@ -57,6 +57,11 @@
 // jugadores y cuerpo técnico" es casi 100% de la columna Fútbol Profesional (12.637,171532 de
 // 12.639,230993 M), se cargó completa en wages_squad sin separar el resto (2,059461 M, 0,00002% del
 // total) para no sumar una línea que redondea a $0.
+//
+// 'Derechos de formación' (los 11 ejercicios) -> player_sales (to-do 43, unificado con
+// Argentinos/Boca/Envigado/Independiente/Once Caldas/Rosario Central/San Lorenzo): hasta ahora
+// estaba en other_income, catch-all, mismo concepto económico (derechos de formación/mecanismo de
+// solidaridad por jugadores formados en el club) que ya vive en player_sales para esos otros clubes.
 
 const velezRevenueLinesByYear = {
   // Anexo II "Recursos ordinarios", columna "Totales 2025". Todo en ARS MILLONES (pesos oficiales /
@@ -72,7 +77,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:30.885549, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:34.525329, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:19.132577, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:3.385100, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:3.385100, disclosureLevel:'detailed' },
   ],
   2016: [
     { rawLabel:'Cuotas de asociados', normalizedCategory:'member_dues', amountNative:90.974353, disclosureLevel:'detailed' },
@@ -84,7 +89,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:62.647502, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:46.122021, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:26.608439, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:25.375934, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:25.375934, disclosureLevel:'detailed' },
   ],
   2017: [
     { rawLabel:'Cuotas de asociados', normalizedCategory:'member_dues', amountNative:115.047952, disclosureLevel:'detailed' },
@@ -96,7 +101,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:54.162741, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:60.936738, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:35.032464, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:13.362909, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:13.362909, disclosureLevel:'detailed' },
   ],
   2018: [
     { rawLabel:'Cuotas de asociados', normalizedCategory:'member_dues', amountNative:153.494530, disclosureLevel:'detailed' },
@@ -108,7 +113,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:60.847435, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:74.142554, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:44.130538, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:2.457832, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:2.457832, disclosureLevel:'detailed' },
     { rawLabel:'Donaciones recibidas', normalizedCategory:'other_income', amountNative:1.035933, disclosureLevel:'detailed' },
   ],
   2019: [
@@ -121,7 +126,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:45.141933, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:117.802168, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:75.661460, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:20.402751, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:20.402751, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:11.999658, disclosureLevel:'detailed' },
     { rawLabel:'Donaciones recibidas', normalizedCategory:'other_income', amountNative:0.352516, disclosureLevel:'detailed' },
   ],
@@ -135,7 +140,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:43.217713, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:160.558025, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:106.288568, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:30.262049, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:30.262049, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:10.580707, disclosureLevel:'detailed' },
     // Segundo ejercicio con este subsidio COVID (mismo criterio que 2021).
     { rawLabel:'Subsidio A.T.P.', normalizedCategory:'other_income', amountNative:24.838569, disclosureLevel:'detailed' },
@@ -152,7 +157,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:229.077761, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:197.047963, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:145.790042, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:84.149417, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:84.149417, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:19.290314, disclosureLevel:'detailed' },
     // Subsidio estatal COVID (Programa de Asistencia de Emergencia al Trabajo y la Producción,
     // vigente 2020-2021) — no hay categoría propia para esto, mismo criterio que "Subsidios
@@ -169,7 +174,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:8.940503, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:369.032741, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:236.161678, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:40.347905, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:40.347905, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:9.714572, disclosureLevel:'detailed' },
   ],
   2023: [
@@ -182,7 +187,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:296.588854, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:757.857966, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:513.318469, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:111.683227, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:111.683227, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:15.129878, disclosureLevel:'detailed' },
     { rawLabel:'Donaciones recibidas', normalizedCategory:'other_income', amountNative:204.126110, disclosureLevel:'detailed' },
   ],
@@ -200,7 +205,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:7.311804, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:2569.003983, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:2192.799366, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:806.039590, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:806.039590, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:659.914609, disclosureLevel:'detailed' },
     { rawLabel:'Donaciones recibidas', normalizedCategory:'other_income', amountNative:1323.965100, disclosureLevel:'detailed' },
   ],
@@ -223,7 +228,7 @@ const velezRevenueLinesByYear = {
     { rawLabel:'Otros derechos de fútbol profesional', normalizedCategory:'other_income', amountNative:3096.485362, disclosureLevel:'detailed' },
     { rawLabel:'Por servicios de enseñanza', normalizedCategory:'education', amountNative:4492.414151, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios estatales a la educación', normalizedCategory:'education', amountNative:2943.636937, disclosureLevel:'detailed' },
-    { rawLabel:'Derechos de formación', normalizedCategory:'other_income', amountNative:1185.388266, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de formación', normalizedCategory:'player_sales', amountNative:1185.388266, disclosureLevel:'detailed' },
     { rawLabel:'Recuperos', normalizedCategory:'other_income', amountNative:198.781676, disclosureLevel:'detailed' },
     { rawLabel:'Donaciones recibidas', normalizedCategory:'other_income', amountNative:1294.058437, disclosureLevel:'detailed' },
     { rawLabel:'Ganancia reservada para obras de infraestructura', normalizedCategory:'other_income', amountNative:-549.202485, disclosureLevel:'detailed' },

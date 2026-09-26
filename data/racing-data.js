@@ -531,7 +531,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Cobros por marketing y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:13712.624218, disclosureLevel:'detailed' },
     { rawLabel:'Cobros por ventas de jugadores', normalizedCategory:'player_sales', amountNative:32475.995078, disclosureLevel:'detailed' },
     { rawLabel:'Cobros por préstamos de jugadores', normalizedCategory:'player_sales', amountNative:387.4, disclosureLevel:'detailed' },
-    { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:1152.906397, disclosureLevel:'detailed' },
+    { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:1152.906397, disclosureLevel:'detailed' },
     { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:14863.072662, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:23789.84136, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:2289.790438, disclosureLevel:'detailed', items:[
@@ -554,7 +554,7 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Cobros por marketing y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:12914.651805, disclosureLevel:'detailed' },
     { rawLabel:'Cobros por ventas de jugadores', normalizedCategory:'player_sales', amountNative:38271.865599, disclosureLevel:'detailed' },
     { rawLabel:'Cobros por préstamos de jugadores', normalizedCategory:'player_sales', amountNative:504.875, disclosureLevel:'detailed' },
-    { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:1551.494, disclosureLevel:'detailed' },
+    { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:1551.494, disclosureLevel:'detailed' },
     { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:13778.918428, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:36786.392109, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:4359.330552, disclosureLevel:'detailed', items:[
@@ -1555,7 +1555,7 @@ const racingPresupuestoOverlayByYear = {
       ]},
       { rawLabel:'Cobros por ventas de jugadores', normalizedCategory:'player_sales', amountNative:1122.345000 },
       { rawLabel:'Cobros por préstamos de jugadores', normalizedCategory:'player_sales', amountNative:10.950000 },
-      { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'youth_football', amountNative:7.960000 },
+      { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:7.960000 },
       { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:18.000000 },
       { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:634.152050 },
       { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:76.100000, items:[

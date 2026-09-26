@@ -242,42 +242,6 @@ perdieron sino que se descartaron:
     por pata es chico — el resultado es direccional, no estadísticamente robusto — para que no se
     sobre-interprete una diferencia chica como definitiva.
 
-63. PARTIR EL BLOQUE CLUB-INDEX DE `Admin/ESTADO.md` A UN ARCHIVO PROPIO, ANTES DE QUE
-    `tools/audit.js` LO MARQUE SOLO (auditoría de escala del 2026-09-26,
-    `auditorias/2026-09-26-escala.md` hallazgo 3). El umbral de 60 KB para TODO `Admin/ESTADO.md`
-    ya está fijado en `tools/audit.js`; hoy (161 clubes) el archivo pesa 55,98 KB, de los cuales
-    43,3 KB son prosa fija y 12,35 KB son el bloque `CLUB-INDEX:START`...`CLUB-INDEX:END` generado
-    por `node tools/generate-club-index.js` (76,7 B/club). Con esos números el umbral se cruza en
-    ~218 clubes — 40-50 clubes más al ritmo actual, no en "~600" como decía la proyección vieja del
-    mapa de escala. Mover el bloque a un archivo separado (ej. `Admin/ESTADO-clubes.md`), generado
-    igual por el mismo script, con un puntero de una línea en `Admin/ESTADO.md` — mismo mecanismo
-    que liberó a `index.html` de su comentario interno en la Versión 138.
-
-64. DOS `brandColor` PROBABLEMENTE MAL Y UN HUECO DE CATÁLOGO DE LIGAS, DE LA AUDITORÍA DE DATOS DEL
-    2026-09-26 (`auditorias/2026-09-26.md`; ver también to-do 56, que es el problema de fondo del que
-    salió esto). Ninguno de los tres se corrigió en la sesión porque los tres piden un juicio que la
-    sesión no pudo cerrar sola:
-    - **`godoycruz-ar`**: `data/clubs.js` tiene `brandColor:'#0000FF'` (azul saturado). Wikipedia y el
-      sitio del club coinciden en que el color de Godoy Cruz es "celeste" (un azul cielo, no un azul
-      puro) — el HUE probablemente esté mal, no solo el tono exacto. Hace falta mirar el escudo
-      directamente para poner el hex correcto (no se pudo bajar el SVG de Wikimedia Commons desde
-      esta sesión, sin acceso a red general).
-    - **`fortaleza-br`**: tiene `brandColor:'#FF0000'` (rojo), pero el club es tricolor declarado
-      (azul, rojo y blanco — homenaje a la bandera francesa), el mismo tipo de caso que
-      `saopaulo-br` y `bahia-br`, que SÍ tienen `brandColor:null` por ser tricolores ambiguos.
-      Inconsistente con el criterio ya aplicado a esos dos: o se decide que el rojo de Fortaleza es
-      defendible (confirmar cuál de los tres predomina en la práctica) o se pasa a `null` igual que
-      sus pares.
-    - **`liga-sin-fila` (P2 de `tools/audit.js`, sale en cada corrida)**: `fredericia-dk` 2019 y
-      `zultewaregem-be` 2025 no tienen fila en `data/club-leagues.js` A PROPÓSITO — los dos jugaron
-      su ejercicio cargado en la segunda división de su país (Nordic Bet Ligaen / Challenger Pro
-      League), y esas divisiones todavía no están en el catálogo de ligas. Ya está bien documentado
-      inline en `data/club-leagues/dk.js` y `data/club-leagues/be.js`, así que no hace falta
-      reinvestigarlo — pero el chequeo lo va a seguir marcando en TODA auditoría futura hasta que se
-      resuelva de alguna forma: agregar las 2 ligas de segundo escalón al catálogo (con lo que
-      implique para el selector mostrarlas), o enseñarle al chequeo a reconocer una exclusión
-      documentada en vez de dejarlo silenciado a mano para siempre.
-
 47. EXPLICARLE AL VISITANTE POR QUÉ MÉXICO NO MUESTRA CASI NADA (pedido de Guido, 2026-09-22:
     *"estoy seguro de que muchos usuarios van a querer ver méxico en detalle y hay que explicar
     por qué no se muestra nada"*). **No es una tarea de sourcing: el sourcing ya está hecho y dio
@@ -501,16 +465,6 @@ perdieron sino que se descartaron:
     ANTES DE ARRANCAR: preguntarle a Guido QUÉ querría editar desde ahí. Si es solo el orden y el
     nombre de las filas, el archivo de configuración solo ya alcanza y el CMS es de más.
     EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
-
-43. "DERECHOS DE FORMACIÓN / MECANISMO DE SOLIDARIDAD" ESTÁ CATEGORIZADO DISTINTO SEGÚN EL CLUB,
-    sin que haya una decisión de diseño detrás — es una inconsistencia pura (hallazgo lateral del
-    relevamiento de la Versión 189, `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i).
-    Mismo concepto económico, dos destinos: visible en `player_sales` ("Venta de Jugadores") para
-    Argentinos, Boca, Envigado, Independiente, Once Caldas, Rosario Central y San Lorenzo; invisible
-    en el catch-all (`youth_football`/`other_income`) para Botafogo, Cruzeiro, Estudiantes, Grêmio,
-    Racing, Unión y Vélez (7,0% de sus ingresos en 2016). Unificarlo a `player_sales` en los 7 del
-    segundo grupo le baja el catch-all a Vélez y a los otros 6 sin tocar ningún total. No es
-    urgente y no depende de ninguna otra decisión.
 
 36. EVALUAR JEV (TypeSafe, modelo `jev-latest`, docs.typesafe.ai) PARA CATEGORIZAR RUBROS
     AUTOMÁTICAMENTE, cuando el proyecto llegue a **200 clubes cargados** (charlado con Guido el

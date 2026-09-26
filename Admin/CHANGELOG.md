@@ -15,6 +15,55 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 240 — unificar "derechos de formación / mecanismo de solidaridad" a `player_sales` (to-do 43)
+
+- Recategorizadas a `player_sales` las líneas de ingreso que representan derechos de
+  formación/mecanismo de solidaridad FIFA (plata cobrada por jugadores formados en el club y
+  transferidos después) en 5 de los 7 clubes que el to-do 43 listaba con este concepto escondido en
+  el catch-all: Botafogo (3 ejercicios, "Mecanismo de solidariedade (recebido)"), Cruzeiro (4
+  ejercicios, mismo rótulo), Grêmio (1 ejercicio, "Mecanismo de Solidariedade"), Racing (3
+  ejercicios, "Cobros de derechos de formación y mecanismo de solidaridad") y Vélez (los 11
+  ejercicios cargados, "Derechos de formación"). Estaban en `youth_football`/`other_income`, ahora
+  en `player_sales`, mismo destino que ya usan Argentinos/Boca/Envigado/Independiente/Once
+  Caldas/Rosario Central/San Lorenzo para el mismo concepto — pura reclasificación, ningún monto
+  tocado.
+- **Estudiantes de La Plata y Unión (Santa Fe) NO se tocaron**: revisando sus balances fuente, la
+  única línea de `youth_football` de cada uno ("Recursos fútbol infantil/amateur" en Estudiantes,
+  "Ingresos Fútbol Amateur" en Unión) es ingreso operativo de la escuela/departamento de fútbol
+  amateur del club, no cobros de mecanismo de solidaridad — un concepto distinto que en estos 2
+  clubes no tiene una línea propia identificable en el documento (Unión ya tiene "Otros recursos por
+  derechos sobre jugadores" en `player_sales`, que probablemente ya cubre esto). Forzar la
+  recategorización habría mezclado ingreso real de programa juvenil con venta de jugadores. Quedó
+  documentado como pregunta abierta en `Admin/dudas-por-club.md` (secciones Estudiantes de La Plata y
+  Unión).
+- Verificación: `node tools/audit.js` (P0 0, P1 0 tras regenerar rankings/índice/fuentes) y
+  `auditAll()`/`verifyTieOuts()` en el navegador — mismo baseline de siempre (842 checks cierran, 3
+  no cierran — el caso ya documentado de Bayern Munich —, 0 warnings de fx) antes y después del
+  cambio, ningún total se movió.
+- `ASSET_V` 238 → 239 (se tocaron 5 `data/<club>-data.js`); regenerados
+  `data/rankings/{ar-primera,br-serieA,br-serieB}.js`, `fuentes.html` + sus 161 páginas de club y
+  `sitemap.xml`.
+
+## Versión 239 — se parte el bloque CLUB-INDEX de `Admin/ESTADO.md` a un archivo propio (to-do 63)
+
+- `Admin/ESTADO.md` se acercaba al umbral de 60 KB que usa `tools/audit.js` (55,98 KB a 161 clubes,
+  de los cuales 12,35 KB eran el bloque `CLUB-INDEX:START`...`CLUB-INDEX:END` generado por
+  `node tools/generate-club-index.js`) — a ese ritmo el umbral se cruzaba en ~218 clubes, 40-50 más
+  que al momento de la auditoría de escala del 2026-09-26 que lo detectó.
+- El bloque se movió a `Admin/ESTADO-clubes.md`, archivo nuevo, con un puntero de una línea en
+  `Admin/ESTADO.md` donde vivía — mismo mecanismo que liberó a `index.html` de su comentario interno
+  en la Versión 138. `Admin/ESTADO.md` bajó a 44,47 KB; `Admin/ESTADO-clubes.md` pesa 12,97 KB.
+- `tools/generate-club-index.js` ahora escribe en `Admin/ESTADO-clubes.md`, no en `Admin/ESTADO.md`
+  (los marcadores se mantuvieron como texto plano, mismo criterio que en la migración de la Versión
+  138). `node tools/generate-club-index.js --check` confirma que quedó al día.
+- Referencias actualizadas en `CLAUDE.md`, `Admin/CONVENCIONES.md`, `Admin/COMO-CORRE-EL-PROYECTO.html`
+  y en los skills `start-session-finance-of-sports-project`, `club-or-year-onboarding`,
+  `club-data-mapping`, `auditoria-finance-of-sports` y `escala-finance-of-sports` (esta última marca
+  el punto caliente correspondiente como RESUELTO). Sacada la entrada de `tools/audit-ignore.json`
+  que silenciaba `Admin/ESTADO-clubes.md` como "nombre propuesto, todavía no existe": ya existe.
+- `node tools/audit.js`: P0 0, P1 0 (los P1 que aparecen en una corrida en paralelo son de datos sin
+  commitear de otra sesión concurrente en el mismo working tree, no de este cambio).
+
 ## Versión 238 — CSS de `index.html` a `js/styles.css` (to-do 65)
 
 - Sacado el bloque `<style>` inline de `index.html` (754 líneas, líneas 31-786) a
