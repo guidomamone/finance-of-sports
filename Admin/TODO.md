@@ -84,37 +84,6 @@ perdieron sino que se descartaron:
     dejada acá para que no se pierda — no implica que el corte free/paid deba reabrirse, cuentas sin
     paywall es una combinación nueva que este proyecto no había considerado hasta ahora.
 
-69. HAY TRABAJO REAL SIN COMMITEAR DESDE VARIAS SESIONES CONCURRENTES DEL 2026-09-26 — REVISAR Y
-    COMMITEAR ANTES DE SEGUIR, NO DESCARTAR NADA A CIEGAS. Detectado en la auditoría de escala de esa
-    fecha (mismo fenómeno que ya documenta la memoria de sesión "sesiones-concurrentes-mismo-working-
-    tree": git status se puede ensuciar solo a mitad de sesión porque hay más de una sesión de Claude
-    Code trabajando sobre este mismo working tree al mismo tiempo). Estado verificado ese día:
-    `node tools/audit.js` da P0 0 / P1 0 — nada roto — así que esto es housekeeping, no una
-    emergencia, pero cuanto más tiempo quede así, más difícil es reconstruir qué sesión escribió qué.
-
-    QUÉ QUEDÓ SIN COMMITEAR (verificado con `git status`, después de la Versión 232 que sí se
-    commiteó): modificados — `Admin/ARQUITECTURA.md`, `Admin/CHANGELOG.md` (entradas 233-236),
-    `Admin/CONVENCIONES.md`, `Admin/ESTADO.md`, `Admin/TODO.md`, `CLAUDE.md`,
-    `.claude/skills/club-outreach/SKILL.md`, `.claude/skills/club-sourcing/SKILL.md`,
-    `.claude/skills/start-session-finance-of-sports-project/SKILL.md`,
-    `fuentes/Argentina/Banfield.md`, `tools/audit.js` — y sin trackear —
-    `auditorias/2026-09-26.md`, `-codigo.md`, `-docs.md`, `-escala.md`, `-tokens.md` (los 5 ejes de
-    una auditoría de rutina completa, más la corrida de escala pedida aparte). Todo esto es la
-    auditoría de rutina completa del 2026-09-26 (rotación `datos`→`escala`→`codigo`→`docs`→`tokens`,
-    Versiones 230-236 de `Admin/CHANGELOG.md`) más una decisión de Guido sobre partir el eje `datos`
-    por país (to-do 56). Nada de esto se perdió, está todo en el working tree — es pura falta de
-    `git add`/`git commit`, ninguna sesión llegó a cerrar con el paso de git de
-    `start-session-finance-of-sports-project/SKILL.md`.
-
-    POR QUÉ NO LO COMMITEÉ YO DIRECTAMENTE: hay trabajo de AL MENOS 2-3 sesiones distintas mezclado
-    (mío, el de la auditoría completa de rutina, posiblemente más) — commitear a ciegas junta el
-    trabajo de todas en un solo commit sin que nadie lo haya revisado junto, y el propio
-    `Admin/CHANGELOG.md` de este proyecto tiene un precedente de números de versión duplicados por
-    esto mismo (ver la Versión 229/218, "hay varias sesiones concurrentes trabajando sobre el mismo
-    working tree ahora mismo"). Mejor que lo revise y lo commitee quien agarre este to-do, con
-    `git status`/`git diff` fresco en el momento (puede haber cambiado desde que se escribió esto) y
-    separando en 1 o más commits con sentido, no necesariamente todo junto.
-
 68. PESTAÑA LIGAS: TRES MEJORAS PEDIDAS POR GUIDO (2026-09-26, mismo día que se agregó el botón
     "Volver a Ligas" y las cards por continente de `estadoFrio()` — Versión 232). Las tres tocan
     `js/liga.js`, que es el módulo entero de la pestaña. Ninguna se implementó todavía, es solo el
