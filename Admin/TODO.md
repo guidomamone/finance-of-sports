@@ -558,37 +558,3 @@ perdieron sino que se descartaron:
     recomendación es un PILOTO ACOTADO sobre esos ~27 clubes de los clusters de color repetido
     (no barrer los 41 de una), para probar legibilidad real a 24px antes de comprometerse.
     EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
-
-65. SEPARAR EL CSS INLINE DE `index.html` A UN `.css` PROPIO, PARA ABARATAR EDICIONES DE ESTILO EN
-    TOKENS (surgió de una conversación con Guido el 2026-09-26 sobre por qué sus pedidos de UI
-    salen caros en tokens — no es un pedido de cambio visual en sí, es tooling/arquitectura). Hoy
-    `index.html` pesa 142 KB / 2072 líneas y tiene un único bloque `<style>` embebido (arranca
-    ~línea 340) con todo el CSS del sitio. El JS YA está separado en `js/*.js` desde antes de este
-    punto — el CSS es lo único que sigue mezclado con el markup.
-
-    QUÉ RESUELVE: un pedido de estilo puro (color, padding, tamaño de fuente, border-radius —
-    ejemplo real usado para explicárselo a Guido: `.btn-primary`/`.btn-secondary`, líneas 349-350)
-    hoy obliga a ubicarse dentro del archivo de 142 KB completo; con el CSS en su propio archivo
-    (ej. `js/styles.css`), esas ediciones tocan un archivo bastante más chico y más rápido de leer/
-    grepear.
-
-    QUÉ NO RESUELVE, para no sobre-vender el cambio cuando se retome: un pedido que mueve un
-    elemento de una sección a otra de la página sigue tocando `index.html` (es estructura, no
-    estilo); un pedido de lógica de render (ej. "usá barras en vez de pie chart") YA vive en
-    `js/finanzas-render.js` desde antes y no pasa por este split para nada — este punto achica un
-    subconjunto de pedidos (estilo puro), no todos los pedidos de UI.
-
-    DEPENDENCIAS Y PARALELISMO, para quien priorice esta lista: ninguna dependencia — no depende
-    de ningún otro punto de esta lista ni bloquea a ninguno. Toca `index.html` (le saca el bloque
-    `<style>`) y crea un archivo nuevo; no pisa `data/`, `fuentes/`, `Clubes/` ni ningún archivo
-    específico de club, así que se puede hacer en paralelo con cualquier tarea de sourcing,
-    onboarding o auditoría en curso sin riesgo de conflicto de merge (mismo criterio de
-    partición por archivo que ya usa el proyecto para sourcing, ver más arriba en este documento).
-    Es chico y autocontenido: una sesión corta alcanza.
-
-    OJO AL EJECUTARLO: sumarle `?v=` al `<link>` del CSS nuevo, igual que ya llevan los
-    `<script src>` propios (ver CLAUDE.md, gotchas de `ASSET_V`) — cambiar el link sin bumpear
-    `ASSET_V`/los demás tags es peor que no tocar nada, mismo bug que ya pasó una vez migrando
-    `fx`. Verificar en el navegador que el sitio se vea IGUAL antes/después del split (screenshot
-    o `javascript_tool` chequeando que la regla se aplicó) antes de cerrar la sesión, con el mismo
-    cuidado de caché de `index.html`/pestaña nueva que ya documenta ese párrafo.

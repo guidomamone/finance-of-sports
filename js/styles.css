@@ -1,0 +1,754 @@
+  :root{
+    --azul:#0a2b5c;
+    --azul-dark:#071d3f;
+    --oro:#f2b705;
+    --bg:#f7f7f5;
+    --card:#ffffff;
+    --text:#1c1c1c;
+    --muted:#6b6b6b;
+    --border:#e3e3e0;
+    --green:#1b7a3d;
+    --red:#b5372b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+  header{background:var(--azul);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,.15);}
+  .header-inner{max-width:1280px;margin:0 auto;display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;padding:10px 14px;gap:8px;}
+  .logo{display:flex;align-items:center;gap:7px;font-weight:700;font-size:15px;white-space:nowrap;flex-shrink:0;}
+  .logo .dot{width:10px;height:10px;background:var(--oro);border-radius:50%;flex-shrink:0;}
+  nav{display:flex;flex-wrap:nowrap;gap:0;min-width:0;}
+  nav button{background:none;border:none;color:#dbe3f0;font-size:12px;padding:7px 7px;cursor:pointer;border-radius:6px;transition:.15s;font-weight:500;white-space:nowrap;}
+  nav button:hover{background:rgba(255,255,255,.08);color:#fff;}
+  nav button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
+  .header-right{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+  /* Toggle de moneda universal (header, al lado del selector de club): mismo `.segmented` de
+     siempre pero con los colores del header (fondo transparente + texto blanco, en vez del
+     fondo blanco + azul de `.segmented` normal, pensado para cards sobre fondo claro) — mismo
+     criterio visual que ya usa `nav button.active` (dorado) para su propio estado activo. */
+  .header-currency-toggle{border:1px solid rgba(255,255,255,.3);border-radius:6px;}
+  .header-currency-toggle button{background:transparent;color:#fff;padding:5px 10px;font-size:12px;font-weight:500;}
+  .header-currency-toggle button.active{background:var(--oro);color:var(--azul-dark);font-weight:700;}
+  /* ======================================================================
+     SELECTOR JERÁRQUICO DE CLUB (Versión 137). Reemplaza al <select id="clubSelect">
+     plano, que con 41 clubes ya era incómodo y al objetivo de 1000 es inusable.
+     Deporte › Región › País › Liga › Equipo, con búsqueda por texto encima.
+
+     TRES DECISIONES DE UX QUE SON PEDIDOS EXPLÍCITOS DE GUIDO, no pulido:
+     (1) El botón del header tiene que LEERSE COMO UN CONTROL: borde dorado,
+         eyebrow "ESTÁS VIENDO" y la palabra "Cambiar" visible. La versión
+         anterior del prototipo era un pill azul sobre header azul con una
+         flechita, y se leía como un título ("si yo llego al site en frío, no me
+         termina de quedar claro cómo elegir y/o cambiar de equipo").
+     (2) SALIR DEL PANEL TIENE QUE SER UN BOTÓN VISIBLE, en los dos modos: "Esc o
+         clickear afuera es LA ÚNICA manera en la que el usuario puede salir de
+         ese selector. Es mala UX". En móvil es peor todavía: no hay tecla Esc y
+         el panel ocupa casi toda la pantalla. Hay DOS salidas visibles (arriba a
+         la derecha "✕ Cerrar", abajo a la derecha "Cerrar sin cambiar"); Esc y el
+         backdrop quedan como atajos para quien los conoce, nunca como el camino.
+     (3) El punto de color de calidad del dato va en la fila, ANTES de entrar al
+         club: que nadie descubra recién adentro que eligió un placeholder. Sale
+         de `data/club-index.js` (campo `q`), que lo deriva de `sources{}` — no es
+         un campo tipeado a mano que se pueda desincronizar del dato real.
+     ====================================================================== */
+  .cb-wrap{position:relative;flex-shrink:0;}
+  .club-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1.5px solid var(--oro);
+            color:#fff;border-radius:9px;padding:4px 8px 4px 5px;cursor:pointer;font:inherit;text-align:left;min-width:196px;}
+  .club-btn:hover{background:rgba(242,183,5,.2);}
+  .club-btn .cb-txt{display:flex;flex-direction:column;line-height:1.2;min-width:0;flex:1;}
+  .club-btn .cb-eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:.09em;color:#a8b8d4;font-weight:700;}
+  .club-btn .cb-name{font-size:13.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .club-btn .cb-change{font-size:10.5px;font-weight:800;color:var(--oro);white-space:nowrap;background:rgba(242,183,5,.15);
+                       border-radius:5px;padding:4px 6px;}
+  /* Coach mark de primera visita: un solo cartel, no un tour de varios pasos. Se
+     va al primer click y no vuelve (flag en localStorage). */
+  .coach{position:absolute;top:calc(100% + 9px);right:0;background:var(--oro);color:var(--azul-dark);
+         font-size:11.5px;font-weight:700;padding:6px 9px;border-radius:7px;white-space:nowrap;z-index:60;
+         box-shadow:0 4px 14px rgba(0,0,0,.25);}
+  .coach::before{content:'';position:absolute;top:-5px;right:26px;border-left:6px solid transparent;
+                 border-right:6px solid transparent;border-bottom:6px solid var(--oro);}
+  .coach-x{cursor:pointer;opacity:.55;margin-left:3px;font-weight:400;}
+  .coach[hidden]{display:none;}
+  /* El escudo es un círculo con las iniciales. El azul de acá es el FALLBACK: desde la
+     Versión 178 cada club pinta el suyo con su `brandColor` (data/clubs.js), por JS y en
+     línea, así que este `background` queda para los clubes que no tienen color verificado
+     (hoy Real Madrid y Once Caldas, los dos de camiseta blanca). El color de las iniciales
+     tampoco es este `#fff` para todos: lo decide por contraste `textoSobre()` en
+     js/selector.js. Los escudos como IMAGEN siguen sin hacerse (derechos y hosting).
+     En la comparación, en cambio, cada sujeto lleva un color asignado POR POSICIÓN
+     (1º, 2º...), que es dato de la vista y no del club — eso no cambió. */
+  .crest{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+         font-size:9.5px;font-weight:800;color:#fff;letter-spacing:-.02em;background:var(--azul);
+         border:1.5px solid rgba(255,255,255,.45);}
+  .crest.sm{width:20px;height:20px;font-size:8px;border-width:1px;}
+  .crest.on-light{border-color:rgba(0,0,0,.12);}
+
+  .sel-backdrop{position:fixed;inset:0;background:rgba(7,29,63,.45);z-index:80;display:none;}
+  .sel-backdrop.open{display:block;}
+
+  @media (max-width:900px){
+    /* EL NAV PASA A SU PROPIA FILA (Versión 137). El botón de club mide ~210px contra
+       los ~104px del <select> que reemplazó, así que en una sola fila el `nav` quedaba
+       aplastado a 0px de ancho y las 4 pestañas desaparecían sin aviso (medido en el
+       navegador: nav.getBoundingClientRect().width === 0 a 614px de ancho). Es la to-do 9
+       del comentario de arriba, que este cambio hacía urgente. Se resuelve dejando que
+       el header envuelva y mandando el nav a una segunda fila completa, en vez de
+       esconderlo: son las 4 secciones del sitio y no hay otra forma de llegar a ellas. */
+    .header-inner{flex-wrap:wrap;}
+    nav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
+    nav button{font-size:12.5px;padding:7px 10px;}
+    .logo{min-width:0;overflow:hidden;}
+    /* TO-DO 26, RESUELTO (decisión de Guido, opción a): a 375px .header-right medía
+       480px contra 347px disponibles y desbordaba de costado (scrollWidth 494 contra
+       375, medido en el navegador) — el botón de club (hasta 210px) más moneda/
+       contacto/idioma no entraban en una sola fila. En vez de seguir achicando el
+       botón (la otra opción, que le sacaba el "Estás viendo"/"Cambiar"), se le da su
+       propia fila completa: `order` lo saca del flujo para que moneda+contacto+idioma
+       queden juntos arriba (su orden relativo en el HTML), y flex-basis:100% lo manda
+       a una fila propia abajo. Costo aceptado: el header sticky crece (138px → 181px,
+       ~22% de la pantalla en un iPhone), pero nada queda cortado ni fuera de pantalla. */
+    /* flex-basis:100%: sin esto header-right comparte la fila con .logo (que ya usa
+       ~184px de los 347px de contenido), así que le quedan ~155px — y el 100% de
+       cb-wrap de acá abajo es 100% de ESE ancho angosto, no de la página entera, que es
+       como el botón de club terminaba con el nombre cortado ("Cr…") en vez de en su
+       propia fila de ancho completo. Con flex-basis:100% header-right pasa a ser su
+       propia fila (mismo patrón que ya usa `nav` con width:100%, dos reglas más abajo),
+       y recién ahí el 100% de cb-wrap es el ancho real de la pantalla. */
+    .header-right{flex-basis:100%;flex-wrap:wrap;justify-content:flex-end;}
+    .cb-wrap{min-width:0;flex-basis:100%;order:99;display:flex;justify-content:flex-end;}
+    .club-btn{min-width:0;flex:1;max-width:none;}
+  }
+
+  /* Composición de ingresos al 100%: compara la MEZCLA (cuánto depende cada club de
+     TV vs. socios vs. venta de pases), que es la pregunta interesante, sin que la
+     tape la diferencia de tamaño entre Real Madrid y Unión. */
+  .mix-row{display:grid;grid-template-columns:170px 1fr 92px;align-items:center;gap:10px;margin-bottom:9px;}
+  .mix-name{display:flex;align-items:center;gap:7px;font-size:12.5px;min-width:0;}
+  /* Las tres se fueron con el bloque de la comparación vieja (Versión 152) y la
+     composición de ingresos las seguía usando: sin ellas el nombre y el ejercicio
+     se dibujaban pegados ("Boca Juniors2027"). */
+  .mbar-txt{display:flex;flex-direction:column;line-height:1.22;min-width:0;}
+  .mbar-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;}
+  .mbar-yr{font-size:9.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .mix-bar{height:22px;border-radius:4px;display:flex;overflow:hidden;background:#f2f2ef;position:relative;}
+  .mix-seg{height:100%;}
+  /* La deducción (to-do 41): no es un segmento más de la pila, es una franja
+     rayada superpuesta que "muerde" el final de la barra — así se distingue de
+     un rubro real a primera vista, sin inventar un color nuevo (reusa --red, el
+     mismo que ya marca negativos en el resto de Comparar). */
+  .mix-seg-neg{position:absolute;top:0;right:0;height:100%;
+    background:repeating-linear-gradient(45deg,var(--red),var(--red) 4px,rgba(181,55,43,.5) 4px,rgba(181,55,43,.5) 8px);}
+  .mix-val{font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);}
+  .mix-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted);}
+  .mix-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:-1px;}
+  .mix-legend i.mix-legend-neg{background:repeating-linear-gradient(45deg,var(--red),var(--red) 3px,rgba(181,55,43,.5) 3px,rgba(181,55,43,.5) 6px);}
+
+  @media (max-width:900px){
+    .mix-row{grid-template-columns:104px 1fr 72px;}
+  }
+
+  .disclaimer{background:var(--azul-dark);color:#c9d4e6;font-size:12.5px;text-align:center;padding:6px 12px;}
+  main{max-width:1160px;margin:0 auto;padding:28px 20px 80px;}
+  section{display:none;}
+  section.active{display:block;animation:fade .2s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+  h1{font-size:26px;margin:0 0 6px;}
+  h2{font-size:20px;margin:0 0 16px;}
+  .subtitle{color:var(--muted);font-size:14.5px;margin-bottom:22px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:32px;}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:32px;}
+  .controls label{font-size:13px;color:var(--muted);margin-right:4px;}
+  select{padding:8px 10px;border-radius:6px;border:1px solid var(--border);background:#fff;font-size:14px;}
+  /* Ancho fijo (Versión 43, pedido de Guido): sin esto, el <select> de "Año" se achica o agranda
+     según el club/ejercicio elegido, porque un <select> nativo mide su ancho por el texto de la
+     OPCIÓN seleccionada, no por la más larga de la lista. 300px alcanza para la etiqueta más larga
+     de los 3 clubes ("Ejercicio 2025/2026 (esperando datos)", Boca), medida en el navegador
+     (~282.5px incluida la flecha nativa) más margen. REGLA: si se agrega un año/label más largo a
+     futuro, medir de nuevo contra este ancho antes de asumir que sigue alcanzando. */
+  #anioSelect{width:300px;max-width:100%;}
+  /* Mismo criterio que #anioSelect de arriba (Versión 44, mismo pedido de Guido extendido a
+     "Gestión"): sin ancho fijo, el <select> se achica o agranda según el club (el ancho natural de
+     un <select> sigue a la opción MÁS LARGA de su lista actual, no a la seleccionada). 200px
+     alcanza para la más larga de los 3 clubes ("Riquelme (2023-actual)", Boca, ~188px medido en el
+     navegador) más margen. Misma regla: si se agrega una gestión con nombre más largo, medir de
+     nuevo antes de asumir que 200px sigue alcanzando. */
+  #gestionSelect{width:200px;max-width:100%;}
+  .segmented{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+  .segmented button{border:none;background:#fff;padding:8px 16px;font-size:13.5px;cursor:pointer;color:var(--text);}
+  .segmented button.active{background:var(--azul);color:#fff;}
+  #contactBtn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:7px 11px;cursor:pointer;font-size:15px;line-height:1;}
+  #contactBtn:hover{background:rgba(255,255,255,.1);}
+  /* Selector de idioma (Versión 115). Un botón de globo + menú desplegable, NO una
+     tira de botones por idioma: el nav ya se recorta abajo de ~850px (to-do 9), así
+     que el costo de ancho del selector tiene que ser constante, no crecer con cada
+     idioma nuevo que se agregue a `data/lang/langs.js`. */
+  .lang-wrap{position:relative;flex-shrink:0;}
+  #langBtn{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:6px;padding:6px 9px;cursor:pointer;font-size:12px;line-height:1;display:flex;align-items:center;gap:5px;font-weight:600;}
+  #langBtn:hover{background:rgba(255,255,255,.1);}
+  #langBtn .lang-globe{font-size:14px;line-height:1;}
+  #langMenu{position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.18);padding:4px;min-width:150px;z-index:60;}
+  #langMenu button{display:block;width:100%;text-align:left;background:none;border:none;padding:8px 10px;font-size:13.5px;color:var(--text);cursor:pointer;border-radius:6px;white-space:nowrap;}
+  #langMenu button:hover{background:#f2f2ef;}
+  #langMenu button.active{background:var(--azul);color:#fff;font-weight:700;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px;}
+  .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;}
+  .stat .label{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .stat .value{font-size:22px;font-weight:700;margin-top:4px;}
+  /* "Sin dato" no es un número: no va en el mismo cuerpo ni en el mismo peso que una
+     cifra, para que no se lea como una (Versión 152, to-do 31). */
+  .stat .value.nodato{font-size:17px;font-weight:400;color:var(--muted);font-style:italic;}
+  /* to-do 20(h): fila de Formato simplificado cuyo cero es un "no sabemos" porque la fuente
+     agrupa esa plata en un bolsón sin desglosar. El "—" ya lo escribe buildNativeSectionHtml();
+     esto solo lo atenúa para que no compita visualmente con las filas que sí tienen dato. */
+  .mini-table tr.pl-nodato td, table tr.pl-nodato td{color:var(--muted);}
+  .stat .value.pos{color:var(--green);}
+  .stat .value.neg{color:var(--red);}
+  /* Qué ejercicio es cada stat de Inicio (Versión 140). Antes iba en un `title` (tooltip),
+     así que en un teléfono no existía: "Último resultado" no decía de qué año era. */
+  .stat .stat-sub{font-size:11.5px;color:var(--muted);margin-top:3px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em;}
+  tr:last-child td{border-bottom:none;}
+  .neg-num{color:var(--red);}
+  .pl-bold td{font-weight:700;}
+  .pl-shade td{background:#f2f2ef;}
+  .pl-highlight td{background:#eef3fa;}
+  .pl-clickable{cursor:pointer;}
+  .pl-clickable:hover td{background:#f5f8fc;}
+  .pl-arrow{display:inline-block;width:14px;color:var(--muted);font-size:10px;}
+  .pl-spacer td{padding:0;height:18px;border:none;background:transparent;}
+  .pl-breakdown-row td{background:#fafbfc;border-bottom:1px dashed #ececec;font-size:12.5px;color:var(--muted);padding-top:5px;padding-bottom:5px;}
+  .pl-section-head td{font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:transparent;border-bottom:2px solid var(--azul);padding-top:16px;padding-bottom:4px;}
+  /* Un ejercicio sin overlay de Presupuesto (la mayoría) no tiene nada que mostrar en las columnas
+     4 y 5, se ocultan con esta clase y la columna Rubro se estira sola para ocupar el ancho libre
+     (ver colgroup de abajo). Col. 3 ("% del total" de la col. 2) se agregó en la Versión 31 y se
+     muestra SIEMPRE, por eso el corte es nth-child(n+4) (oculta la 4ta EN ADELANTE). ACTUALIZADO
+     Versión 60: col. 4 pasó de ser una sola columna "Presupuesto" a 2 (Presupuesto + su propio
+     % del total, pedido de Guido: "dos columnas que sean % del total"), pero como nth-child(n+4) ya
+     oculta "la 4ta en adelante" (no una cantidad fija), la regla no necesitó tocarse — sigue
+     ocultando exactamente lo que corresponde sin importar si son 1, 2 o más columnas extra. */
+  #finanzasPLTable.pl-hide-compare th:nth-child(n+4), #finanzasPLTable.pl-hide-compare td:nth-child(n+4){display:none;}
+  /* REGLA (Versión 39, bug real reportado por Guido con captura: la columna del ejercicio arrancaba
+     en un % distinto del ancho de la tabla según el club/formato mostrado, ej. 41% en "Formato del
+     club" de Boca vs. 47% en "Formato simplificado", medido en el navegador con getBoundingClientRect
+    , porque #finanzasPLTable no tenía table-layout:fixed y el ancho de la columna Rubro se
+     recalculaba solo, según el largo del texto más largo de esa tabla puntual. Con table-layout:fixed
+     + el <colgroup> de arriba, las columnas 2-6 (numéricas) tienen SIEMPRE el mismo ancho fijo en
+     píxeles pase lo que pase en Rubro (que se lleva el resto del ancho y ella sola se estira/wrappea),
+     así que arrancan siempre en el mismo lugar, sin importar cuán largo sea el rubro más largo de
+     ese club/año/formato puntual, y sin importar si son 3 columnas visibles (año a año) o 6 (por
+     gestión). Si se agrega una columna nueva a esta tabla en el futuro, la REGLA es: sumarle su
+     <col style="width:...px"> al colgroup (nunca dejarla sin ancho fijo), de lo contrario vuelve el
+     mismo bug. Todas las columnas numéricas van siempre alineadas a la derecha, sea cual sea el modo
+     (antes solo la col. 2 lo hacía en "Año a año", nunca en "Por gestión", inconsistencia de paso,
+     corregida acá de una).
+     BUG REAL #2 (mismo día, encontrado por Guido: "quedó horrible, no usa todo el ancho del card"):
+     ocultar el <td>/<th> de las columnas 4-6 con la regla de arriba SÍ libera su espacio, pero un
+     <col> con `display:none` en el <colgroup> NO, probado en el navegador con getBoundingClientRect:
+     agregar `display:none` a esos <col> no cambió en nada el ancho de Rubro, seguía tan angosto como
+     con los <col> visibles. En "table-layout:fixed" el ancho de columna lo fija el <col>, y ocultarlo
+     con CSS no hace que el motor de layout libere ese ancho, a diferencia de una celda oculta. Único
+     fix confiable: que esas columnas NO EXISTAN en el <colgroup> en modo "Año a año", no que existan
+     ocultas. Por eso `syncPLTableColgroup()` (ver función en JS, arriba de `renderNativePLTable`)
+     REESCRIBE el `<colgroup>` entero según el modo, en vez de dejarlo fijo en HTML y ocultar
+     columnas por CSS. ACTUALIZADO Versión 57/59/60 (el resto del párrafo es historia, ya no la
+     lectura actual): el criterio para reescribir el colgroup pasó de "Año a año vs. Por gestión" a
+     "el ejercicio tiene overlay de Presupuesto o no" (Versión 57), y las columnas Var./Var.% se
+     sacaron de la tabla del todo (Versión 59, ver `buildNativeSectionHtml`). En la Versión 60 se
+     agregó una 2da columna de "% del total" (para Presupuesto) Y se angostaron los anchos numéricos
+     existentes (100/65px → 84/54px) para que las 5 columnas totales entren sin scroll horizontal
+     (pedido de Guido: "desliza las columnas apenas a la izquierda para que no haya que scrollear.
+     esto tambien deberia ser regla" — REGLA: toda columna nueva que se agregue a esta tabla a
+     futuro tiene que angostar las existentes en la misma medida que agranda el total, no solo
+     sumarse encima). Hoy son 3 `<col>` sin overlay (Rubro + 2 numéricas) y 5 con overlay (Rubro +
+     4), no 3/6 como decía este párrafo originalmente. Los anchos finales (84/54, no 78/40 como en un
+     primer intento) salieron de verificar en el navegador con scrollWidth/clientWidth: 78/40 hacía
+     que el propio CONTENIDO de la celda (el header "PRESUPUESTO" en mayúsculas, o "100%") desbordara
+     su columna aunque la tabla en sí no excediera el contenedor — ver el comentario de
+     `overflow-wrap:break-word` más abajo para el fix complementario. */
+  /* El wrapper `.table-scroll` (overflow-x:auto) es la salida para pantallas angostas donde ni
+     siquiera las columnas numéricas realmente visibles + un Rubro legible entran, scrollea horizontal
+     en vez de aplastar las columnas y romper la regla de arriba. El `min-width` de la tabla depende
+     de si el ejercicio tiene overlay de Presupuesto: con overlay necesita lugar para 4 columnas
+     numéricas (276px, Versión 60: 84+54+84+54) + Rubro; sin overlay solo necesita 2 (138px) + Rubro,
+     así que su mínimo es más chico, si usáramos el mismo min-width en los dos casos, el caso sin
+     overlay (la mayoría de los ejercicios) forzaría scroll en mobile sin necesidad. */
+  .table-scroll{overflow-x:auto;}
+  #finanzasPLTable{table-layout:fixed;min-width:600px;}
+  #finanzasPLTable.pl-hide-compare{min-width:300px;}
+  #finanzasPLTable th:nth-child(n+2), #finanzasPLTable td:nth-child(n+2){text-align:right;}
+  #finanzasPLTable th:nth-child(3), #finanzasPLTable td:nth-child(3), #finanzasPLTable th:nth-child(5), #finanzasPLTable td:nth-child(5){color:var(--muted);}
+  /* BUG REAL (Versión 60, encontrado en el navegador con getBoundingClientRect/scrollWidth mientras
+     se verificaba el fix de "desliza las columnas... para que no haya que scrollear"): con columnas
+     numéricas angostas (54-84px), un header de una sola palabra en mayúsculas (`text-transform:
+     uppercase` de arriba) como "PRESUPUESTO" no entra en una sola línea y, sin este fix, DESBORDA la
+     celda en vez de cortar — eso por sí solo empujaba el ancho real de la tabla más allá del
+     contenedor y forzaba scroll horizontal, aunque el <colgroup>/table-layout:fixed dijeran otra
+     cosa (el ancho de columna no evita que el CONTENIDO de una celda desborde, son dos mecanismos
+     distintos). Fix: `overflow-wrap:break-word` en los `<th>` de esta tabla, así una palabra que no
+     entra se parte en dos líneas en vez de desbordar. Confirmado en el navegador (1280px de ancho):
+     scrollWidth del wrapper `.table-scroll` volvió a ser igual a su clientWidth (antes 1091 vs 1078,
+     una tabla con overlay de Presupuesto forzaba 13px de scroll de más). */
+  #finanzasPLTable th{overflow-wrap:break-word;}
+  .waterfall-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:16px;}
+  .waterfall-step{flex:1 1 110px;padding:9px 8px;text-align:center;}
+  .waterfall-step .label{font-size:10px;line-height:1.25;}
+  .waterfall-step .value{font-size:12.5px;margin-top:3px;word-break:break-all;}
+  .waterfall-op{flex:0 0 auto;font-size:17px;font-weight:700;color:var(--muted);}
+  .waterfall-result{background:#eef3fa;border-color:var(--azul);}
+  .source-note{font-size:12px;color:var(--muted);margin-top:8px;}
+  .compare-table td.better{font-weight:700;}
+  .charts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:6px;}
+  .chart-wrap{position:relative;height:270px;margin-top:8px;}
+  /* Antes se dibujaba el "$" a mano dentro del <canvas> (afterDraw de Chart.js) para evitar que
+     Chart.js lo rotara 90° (rota siempre el título nativo del eje Y), pero el glyph salía roto en
+     el canvas (reportado por Guido, no se veía como un "$"). Un <span> de HTML normal, superpuesto
+     arriba a la izquierda del área del gráfico, evita todo el lío de fuentes/transform del canvas:
+     es texto de verdad, se ve exactamente como en el resto de la página. */
+  .chart-axis-dollar{position:absolute;top:2px;left:6px;font-size:12px;font-weight:600;color:var(--muted);z-index:2;pointer-events:none;}
+  .chart-caption{font-size:13px;color:var(--muted);}
+  footer{background:var(--azul-dark);color:#c9d4e6;padding:26px 20px;font-size:13px;text-align:center;}
+  footer a{color:var(--oro);}
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:200;padding:20px;}
+  .modal-overlay.open{display:flex;}
+  .modal-box{background:#fff;border-radius:10px;padding:24px;max-width:440px;width:100%;}
+  .modal-box label{display:block;font-size:13px;color:var(--muted);margin-bottom:2px;}
+  .modal-box input,.modal-box select,.modal-box textarea{width:100%;padding:9px;margin:4px 0 14px;border:1px solid var(--border);border-radius:6px;font-family:inherit;font-size:14px;}
+  .modal-actions{display:flex;gap:10px;justify-content:flex-end;}
+  .btn-secondary{padding:9px 16px;border-radius:6px;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:14px;}
+  .btn-primary{padding:9px 16px;border-radius:6px;border:none;background:var(--azul);color:#fff;cursor:pointer;font-weight:600;font-size:14px;}
+
+  details.accordion{border:1px solid var(--border);border-radius:8px;margin-bottom:8px;overflow:hidden;background:#fff;}
+  details.accordion>summary{cursor:pointer;padding:11px 14px;font-weight:700;font-size:13.5px;list-style:none;background:#eef1f6;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  details.accordion>summary::-webkit-details-marker{display:none;}
+  details.accordion>summary::after{content:'+';font-size:16px;color:var(--muted);flex-shrink:0;}
+  details.accordion[open]>summary::after{content:'\2212';}
+  details.accordion .accordion-body{padding:12px 14px;}
+  details.accordion.nested{margin-left:0;border-color:#e9e9e6;margin-bottom:6px;}
+  details.accordion.nested>summary{background:#f7f7f5;font-size:12.5px;font-weight:600;padding:8px 12px;}
+  /* El ::after (+/−) es un 3er hijo flex además de los 2 <span>, con justify-content:space-between
+     el monto (2do hijo) quedaba "flotando" a una distancia distinta del borde derecho en cada fila
+     (según cuánto medía el label), no alineado. Ancho fijo para el label (crece/achica) y para el
+     monto (siempre el mismo ancho, alineado a la derecha) resuelve la alineación entre filas. */
+  details.accordion.nested>summary>span:first-child{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  details.accordion.nested>summary>span:last-child{flex:0 0 130px;text-align:right;}
+  details.accordion.nested details.accordion.nested>summary{background:#fbfbfa;font-size:12px;}
+  .mini-table{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:2px;table-layout:fixed;}
+  .mini-table td{padding:4px 8px;border-bottom:1px solid #f1f1ee;word-wrap:break-word;}
+  .mini-table td.amount{text-align:right;white-space:nowrap;width:130px;}
+  .mini-table tr.subtotal-row td{font-weight:700;background:#f4f4f1;}
+  .mini-table tr.total-row td{font-weight:700;background:#e9edf3;}
+  .mini-table tr.subhead td{font-style:italic;color:var(--muted);font-size:11px;padding-top:8px;background:transparent;border-bottom:none;}
+  .mini-table tr.neg-row td{color:var(--red);}
+  /* La fila que explica por qué no hay gastos, en vez de una lista de rubros en 0. */
+  .pl-nodata td{color:var(--muted);font-size:12.5px;font-style:italic;line-height:1.5;padding:10px 12px;}
+  .premisas-list{font-size:13.5px;color:var(--text);line-height:1.7;margin:0 0 12px;padding-left:20px;}
+  .premisas-list li{margin-bottom:4px;}
+  .premisas-h{font-size:13px;font-weight:700;margin:14px 0 4px;}
+  .premisas-h:first-child{margin-top:0;}
+
+  /* ===== EL SELECTOR DENTRO DE FINANZAS (Versión 143) =====
+     Sin club elegido, Finanzas era la peor pantalla del sitio: tablas vacías, selectores
+     de Año sin opciones, y el banner amarillo de "dato placeholder" encima, que además
+     miente — no hay un dato inventado, no hay ningún dato. Ahora esa pantalla es UNA
+     cosa: el selector. Con club elegido el mismo card se encoge a una línea, porque ya
+     no es la tarea sino cómo se cambia de club.
+     Viene del prototipo 4 (`Prototyping/Selector/MERGE-A-PRODUCCION.md`, etapa 1 del plan
+     de merge). Es la única etapa independiente de todo el resto: no toca js/selector.js
+     ni el modelo de datos, así que el botón de acá abre el panel de columnas de hoy. */
+  #finanzas.sin-club > *:not(h1):not(.subtitle):not(.fin-sel){display:none !important;}
+  .fin-sel{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;
+           margin-bottom:18px;display:flex;align-items:center;gap:13px;flex-wrap:wrap;}
+  .fin-sel.vacio{border-style:dashed;border-color:var(--azul);background:#f3f7ff;}
+  .fin-sel-ico{width:38px;height:38px;border-radius:50%;background:var(--azul);color:#fff;font-size:13px;
+               font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .fin-sel-txt{display:flex;flex-direction:column;min-width:0;flex:1;}
+  .fin-sel-t{font-size:16px;font-weight:800;}
+  .fin-sel-s{font-size:12.5px;color:var(--muted);}
+  .fin-sel-btn{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:9px;padding:10px 16px;
+               font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
+  .fin-sel-btn:hover{background:var(--azul-dark);}
+  .fin-sel-btn.alt{background:none;color:var(--azul);}
+  .fin-sel-btn.alt:hover{background:#eef2f9;color:var(--azul-dark);}
+
+  /* ===== INICIO = LA PREGUNTA (Versión 144) =====
+     Dos opciones grandes y nada más arriba de todo: es la primera pantalla y la única
+     decisión que se toma en ella. Viene del prototipo 4, etapa 2 del plan de merge. */
+  .bifurca h1{font-size:30px;margin:0 0 6px;}
+  .bif-lead{color:var(--muted);font-size:15px;margin:0 0 24px;max-width:700px;line-height:1.55;}
+  .bif-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;max-width:900px;}
+  .bif-op{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;
+          background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px 24px;
+          font-family:inherit;color:var(--text);cursor:pointer;}
+  .bif-op:hover{border-color:var(--azul);box-shadow:0 10px 30px rgba(7,29,63,.12);transform:translateY(-1px);}
+  .bif-ico{width:44px;height:44px;border-radius:12px;background:#eef2f9;color:var(--azul);font-size:21px;
+           display:flex;align-items:center;justify-content:center;margin-bottom:5px;}
+  .bif-t{font-size:19px;font-weight:800;line-height:1.25;}
+  .bif-s{font-size:13.5px;color:var(--muted);line-height:1.5;}
+  .bif-cta{margin-top:9px;font-size:13.5px;font-weight:800;color:var(--azul);}
+  /* Separa la pregunta del resumen del club, cuando hay club y los dos conviven. */
+  /* LA VIDRIERA DE INICIO (Versión 184, to-do 33). Acá estaba `#inicioClub`, el
+     resumen del club activo. */
+  .vidriera{margin-top:34px;border-top:1px solid var(--border);padding-top:26px;}
+  .vid-h{font-size:19px;margin:0 0 4px;}
+  .vid-sub{color:var(--muted);font-size:13px;margin:0 0 20px;line-height:1.5;max-width:760px;}
+  .vid-cuerpo{display:flex;flex-direction:column;gap:26px;}
+  .vid-b-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .vid-b-h{margin:0;font-size:16px;}
+  .vid-b-ver{background:none;border:none;padding:0;font:inherit;font-size:13px;font-weight:600;
+    color:var(--azul);cursor:pointer;flex-shrink:0;}
+  .vid-b-ver:hover{text-decoration:underline;}
+  .vid-b-sub{color:var(--muted);font-size:12.5px;margin:4px 0 10px;line-height:1.5;}
+  /* El aviso de cuánto no está desglosado: es lo único que cambia CÓMO se lee el
+     gráfico, así que es la única salvedad que sube a la portada. El resto vive en la
+     pestaña de la liga. */
+  .vid-b-aviso{color:#9a6b00;font-size:12px;margin:8px 0 0;line-height:1.5;}
+  /* `display:flex` de una clase le gana al `display:none` que el navegador le da a
+     [hidden]: sin esta regla, un .fin-sel escondido se ve igual. */
+  .fin-sel[hidden]{display:none;}
+  /* El aviso de "no se pudo cargar el club" vivía adentro del hero del cold start
+     (borrado en la Versión 146) y heredaba su paleta oscura: acá va sobre fondo claro. */
+  .aviso-error{background:#fdecea;border:1px solid #e08d84;color:#8c2b21;border-radius:8px;
+               padding:9px 12px;font-size:13px;margin:14px 0 0;}
+  .aviso-error[hidden]{display:none;}
+
+  /* ===== EL SELECTOR PASO A PASO (Versión 146) =====
+     Reemplaza al panel de Miller columns. Un modal con los pasos apilados: el
+     resuelto se encoge a una línea, el actual se abre, los de abajo esperan.
+     Viene del prototipo 4 (etapa 3 del merge). */
+  .sel-modal{position:fixed;inset:0;z-index:90;display:none;align-items:flex-start;justify-content:center;
+             padding:34px 16px;overflow-y:auto;}
+  .sel-modal.open{display:flex;}
+  .modal-panel{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;border-radius:14px;
+               width:100%;max-width:760px;padding:18px 20px 22px;box-shadow:0 24px 60px rgba(7,29,63,.45);}
+  .modal-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .modal-h{font-size:20px;font-weight:800;flex:1;margin:0;}
+  .modal-x{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:8px;
+           width:30px;height:30px;font-size:15px;line-height:1;cursor:pointer;font-family:inherit;}
+  .modal-x:hover{background:rgba(242,183,5,.22);border-color:var(--oro);}
+  .modal-busca{display:flex;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:4px 4px 4px 14px;margin-bottom:16px;}
+  .modal-busca input{flex:1;border:none;outline:none;font-size:15px;padding:10px 0;background:none;font-family:inherit;color:var(--text);}
+  .modal-busca .lupa{color:var(--muted);font-size:15px;}
+
+  /* Un card por paso, con sus tres estados: resuelto, actual y pendiente.
+     `color` explícito: el panel de afuera es azul con texto blanco, y sin esto
+     cualquier texto del card que no traiga color propio nace blanco sobre blanco. */
+  .paso{background:var(--card);color:var(--text);border-radius:12px;margin-bottom:10px;overflow:hidden;
+        border:1px solid transparent;}
+  .paso.pendiente{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff;}
+  .paso.ahora{border-color:var(--oro);box-shadow:0 8px 24px rgba(7,29,63,.25);}
+  .paso-head{display:flex;align-items:center;gap:11px;padding:11px 14px;}
+  .paso-n{width:22px;height:22px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11.5px;
+          font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .paso.ahora .paso-n{background:var(--oro);color:var(--azul-dark);}
+  .paso.pendiente .paso-n{background:rgba(255,255,255,.12);color:#a8b8d4;}
+  .paso-ht{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1;}
+  .paso-t{font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted);}
+  .paso.pendiente .paso-t{color:#8fa3c4;}
+  .paso-v{font-size:15px;font-weight:700;color:var(--text);}
+  .paso-change{background:none;border:1px solid var(--border);color:var(--azul);border-radius:7px;
+               padding:4px 10px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;}
+  .paso-change:hover{border-color:var(--azul);background:#eef2f9;}
+  .paso-body{padding:2px 14px 14px;}
+  .paso-vacio{color:var(--muted);font-size:13.5px;margin:6px 0;}
+  /* "Mostrar más" del buscador y del constructor de mezcla (Versión 165). */
+  .sel-mas{
+    display:block;margin:10px auto 2px;padding:7px 16px;border:1px solid var(--border);
+    border-radius:8px;background:var(--card);color:var(--azul);font-size:13.5px;
+    font-weight:600;cursor:pointer;
+  }
+  .sel-mas:hover{background:var(--bg);}
+  .paso-ayuda{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
+
+  /* Las opciones. Grilla que se acomoda sola: en desktop entran 2 o 3 por fila, en
+     un teléfono queda una columna, sin una sola media query. */
+  .op-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
+  .op-grid.clubes{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));max-height:340px;overflow-y:auto;}
+  .op{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:#fff;border:1px solid var(--border);
+      border-radius:9px;padding:10px 12px;font-family:inherit;font-size:14px;cursor:pointer;color:var(--text);}
+  .op:hover{border-color:var(--azul);background:#eef2f9;}
+  .op.off{opacity:.45;cursor:not-allowed;}
+  .op.off:hover{border-color:var(--border);background:#fff;}
+  /* La casilla. Cada paso es multi-selección, y una casilla lo dice sin explicarlo:
+     un botón que se pinta al tocarlo se lee como un radio. */
+  .op-check{width:17px;height:17px;border-radius:5px;border:1.5px solid var(--border);flex:0 0 auto;
+            display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;background:#fff;}
+  .op.on{border-color:var(--azul);background:#eef2f9;}
+  .op.on .op-check{background:var(--azul);border-color:var(--azul);}
+  .op.off .op-check{opacity:.5;}
+  .op-icon{font-size:17px;flex:0 0 auto;}
+  .op-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
+            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .op-txt{display:flex;flex-direction:column;min-width:0;flex:1;}
+  /* El label ENVUELVE en vez de cortarse con puntos suspensivos: el modal mide
+     760px y "Fútbol americano" quedaba en "Fútbol …". Un nombre cortado en una
+     lista de opciones es peor que una fila de dos renglones. */
+  .op-label{font-weight:600;line-height:1.25;}
+  .op-sub{font-size:11.5px;color:var(--muted);}
+  /* flex:0 0 auto + margin-left: sin esto el meta se encimaba con un label largo
+     ("Automovilismo · próximamente"), porque nowrap no reserva su propio lugar. */
+  .op-meta{font-size:11.5px;color:var(--muted);white-space:nowrap;flex:0 0 auto;margin-left:auto;padding-left:6px;}
+
+  .paso-todos-fila{display:flex;gap:8px;margin-bottom:9px;flex-wrap:wrap;}
+  .paso-todos{background:#fff;border:1px solid var(--azul);color:var(--azul);border-radius:7px;padding:5px 11px;
+              font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .paso-todos.on, .paso-todos:hover{background:var(--azul);color:#fff;}
+  .paso-nada{background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 11px;
+             font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .paso-nada:hover{border-color:var(--red);color:var(--red);}
+
+  /* El pie de cada paso: confirmar, o decidir después. "Elegir más tarde" está en
+     todos los pasos, y por eso ninguno dice "opcional": todos lo son. */
+  .paso-pie{display:flex;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;}
+  .paso-ok{background:var(--azul);color:#fff;border:1px solid var(--azul);border-radius:8px;
+           padding:9px 16px;font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;}
+  .paso-ok:hover{background:var(--azul-dark);}
+  .paso-ok.off{background:#eef2f9;color:var(--muted);border-color:var(--border);cursor:not-allowed;}
+  .paso-skip{background:none;border:none;color:var(--azul);font-family:inherit;font-size:13px;
+             cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
+  .paso-skip:hover{color:var(--azul-dark);}
+
+  /* El paso del ejercicio: una fila por club, con su año al lado. La regla que lo
+     ordena es que un ejercicio nunca aparece suelto, siempre cuelga de su club. */
+  .armado{display:flex;flex-direction:column;gap:9px;max-height:390px;overflow-y:auto;}
+  .arm-fila{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:#fff;}
+  .arm-cab{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+  .arm-crest{width:24px;height:24px;border-radius:50%;background:var(--azul);color:#fff;font-size:9px;font-weight:800;
+             display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .arm-n{font-size:14.5px;font-weight:700;}
+  .arm-anio{display:flex;align-items:center;gap:7px;margin-bottom:6px;}
+  .arm-anio select{flex:1;font-family:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--border);
+                   border-radius:8px;background:#fff;color:var(--text);cursor:pointer;}
+  .arm-x{background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;width:28px;height:28px;
+         font-size:15px;line-height:1;cursor:pointer;flex:0 0 auto;}
+  .arm-x:hover{border-color:var(--red);color:var(--red);}
+  .arm-mas{background:none;border:none;color:var(--azul);font-family:inherit;font-size:12.5px;cursor:pointer;
+           text-decoration:underline;text-underline-offset:3px;padding:2px 0;}
+
+  /* El promedio de una liga, comparando: reemplaza al "+" de la columna de ligas. */
+  .cmp-ligas{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);}
+
+  /* El card final: dice qué se eligió y lo confirma. */
+  .paso.resultado .paso-n{background:var(--green);color:#fff;}
+  .res-msg{font-size:15.5px;font-weight:700;margin:0 0 4px;}
+  .res-sub{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 12px;max-width:620px;}
+
+  /* ===== EL PASO 4 Y SUS RAMAS (Versión 148) =====
+     Tres opciones grandes, no una grilla de filtros: es una bifurcación. */
+  .op-grid.tipo{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+  .op-grid.tipo .op{flex-direction:column;align-items:flex-start;gap:5px;padding:14px;}
+  .op-grid.tipo .op-check{display:none;}
+  .op-grid.tipo .op-icon{font-size:24px;}
+  .op-grid.tipo .op-label{font-size:15px;font-weight:800;}
+  .op-grid.tipo .op-meta{margin-left:0;}
+
+  /* La rama Ligas: temporadas como chips, con cuántos equipos tenía cada una. Sin
+     ese dato, "la liga creció" mezcla plata con aritmética. */
+  .arm-fila.total{background:#f3f7ff;border-color:#c9d8f2;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .arm-ico{font-size:17px;}
+  .arm-chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .arm-chip{background:#fff;border:1px solid var(--border);color:var(--text);border-radius:999px;padding:5px 12px;
+            font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+  .arm-chip:hover{border-color:var(--azul);background:#eef2f9;}
+  .arm-chip.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .arm-chip.off{opacity:.4;cursor:not-allowed;}
+  .arm-vacio{font-size:12.5px;color:var(--muted);}
+  .agg-fila{display:flex;align-items:center;gap:7px;margin-top:9px;flex-wrap:wrap;}
+  .agg-lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);}
+  .agg-btn{background:#fff;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 11px;
+           font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;}
+  .agg-btn:hover{border-color:var(--azul);color:var(--azul);}
+  .agg-btn.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+
+  /* El constructor de la mezcla, con forma de tabla dinámica: una fila por parte,
+     con qué es, de qué año, cómo se agrega y qué entra. */
+  .mz-fila{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;
+           padding:9px 11px;background:#fff;flex-wrap:wrap;}
+  .mz-num{width:20px;height:20px;border-radius:50%;background:#eef2f9;color:var(--azul);font-size:11px;font-weight:800;
+          display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .mz-que{display:flex;flex-direction:column;min-width:150px;flex:1;}
+  .mz-n{font-size:14px;font-weight:700;}
+  .mz-s{font-size:11.5px;color:var(--muted);}
+  .mz-anio select{font-family:inherit;font-size:12.5px;padding:6px 7px;border:1px solid var(--border);
+                  border-radius:7px;background:#fff;color:var(--text);cursor:pointer;}
+  .mz-agg{display:flex;gap:5px;}
+  .mz-entra{font-size:11.5px;color:var(--muted);font-weight:700;white-space:nowrap;}
+  .mz-x{background:none;border:none;color:var(--muted);font-size:17px;line-height:1;cursor:pointer;padding:0 3px;}
+  .mz-x:hover{color:var(--red);}
+  .mz-formula{margin:4px 0 0;font-size:12.5px;color:var(--azul);font-weight:700;}
+  .mz-add{display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;}
+  .mz-add-btn{background:#fff;border:1px dashed var(--azul);color:var(--azul);border-radius:9px;padding:9px 14px;
+              font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;}
+  .mz-add-btn:hover{background:#eef2f9;}
+  .mz-panel{border:1px solid var(--azul);border-radius:10px;padding:12px;background:#f3f7ff;margin-top:4px;}
+  .mz-panel-t{margin:0 0 9px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);}
+  .mz-panel .op-grid{max-height:220px;overflow-y:auto;}
+  .res-warn{background:#fdf6e3;border:1px solid #f0d98a;border-radius:9px;padding:9px 11px;font-size:12.5px;
+            line-height:1.5;color:#7a5c00;margin:0 0 12px;}
+
+  /* ===== LOS DOS CARDS DE COMPARAR (Versión 148) =====
+     Arrancan VACÍOS: el card vacío es un botón grande y nada más, así la pantalla
+     abre con una pregunta en vez de con un árbol de cinco niveles por lado. */
+  .cd-wrap{display:grid;grid-template-columns:1fr 44px 1fr;gap:10px;align-items:stretch;
+           background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);
+           border-radius:14px;padding:20px;margin-bottom:0;}
+  .cd-vs{align-self:center;text-align:center;font-size:13px;font-weight:800;color:#8fa3c4;letter-spacing:.08em;}
+  .cd-col{background:var(--card);color:var(--text);border-radius:12px;border:1px solid transparent;overflow:hidden;
+          display:flex;flex-direction:column;}
+  .cd-col.con{border-color:var(--oro);}
+  .cd-head{display:flex;align-items:center;gap:9px;padding:11px 13px;border-bottom:1px solid var(--border);}
+  .cd-letra{width:22px;height:22px;border-radius:50%;background:var(--azul);color:#fff;font-size:11.5px;font-weight:800;
+            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .cd-letra.chica{display:inline-flex;width:19px;height:19px;font-size:10.5px;margin-right:7px;vertical-align:1px;}
+  .cd-titulo{font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted);flex:1;}
+  .cd-x{background:none;border:none;color:var(--muted);font-size:19px;line-height:1;cursor:pointer;padding:0 3px;}
+  .cd-x:hover{color:var(--red);}
+  /* El botón ocupa el alto del card entero, para que apretar "en cualquier parte
+     del card" haga lo que el visitante espera. */
+  .cd-vacio{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+            background:none;border:2px dashed var(--border);border-radius:11px;margin:11px;padding:30px 18px;
+            font-family:inherit;color:var(--text);cursor:pointer;text-align:center;}
+  .cd-vacio:hover{border-color:var(--azul);background:#f3f7ff;}
+  .cd-vacio-mas{width:34px;height:34px;border-radius:50%;background:var(--azul);color:#fff;font-size:21px;line-height:1;
+                display:flex;align-items:center;justify-content:center;margin-bottom:3px;}
+  .cd-vacio-t{font-size:16px;font-weight:800;}
+  .cd-vacio-s{font-size:12.5px;color:var(--muted);max-width:280px;line-height:1.45;}
+  .cd-elegido{padding:13px;}
+  .cd-sujeto{display:flex;align-items:center;gap:11px;margin-bottom:12px;}
+  .cd-crest{width:34px;height:34px;border-radius:50%;background:var(--azul);color:#fff;font-size:12px;font-weight:800;
+            display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .cd-op-txt{display:flex;flex-direction:column;min-width:0;}
+  .cd-op-s{font-size:11.5px;color:var(--muted);}
+  .cd-sujeto-n{font-size:17px;font-weight:800;}
+  .cd-otro{margin-left:auto;background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;
+           padding:5px 9px;font-family:inherit;font-size:11.5px;font-weight:700;cursor:pointer;flex:0 0 auto;}
+  .cd-otro:hover{border-color:var(--azul);color:var(--azul);}
+  /* La fórmula en lugar de un toggle Promedio/Sumatoria: con un agregador por
+     bloque, un botón único ya no puede decir cómo se mide este lado. */
+  .cd-formula{margin:0 0 10px;font-size:12px;color:var(--azul);font-weight:700;line-height:1.45;}
+  .cd-anio{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted);font-weight:700;}
+  .cd-anio select{flex:1;font-family:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--border);
+                  border-radius:8px;background:#fff;color:var(--text);cursor:pointer;}
+  .cd-anios{margin:0;font-size:12px;color:var(--muted);font-weight:700;}
+  .cd-pie{background:linear-gradient(160deg,var(--azul-dark),var(--azul-dark));border-radius:0 0 14px 14px;
+          margin-top:-14px;padding:0 20px 20px;margin-bottom:22px;}
+  .cd-go{background:var(--oro);color:var(--azul-dark);border:none;border-radius:10px;padding:12px 22px;
+         font-family:inherit;font-size:14.5px;font-weight:800;cursor:pointer;}
+  .cd-go:hover{filter:brightness(1.07);}
+  .cd-go.off{background:rgba(255,255,255,.12);color:#8fa3c4;cursor:not-allowed;}
+
+  /* El resultado: una barra por lado en cada indicador, a escala DENTRO de su
+     indicador y no entre indicadores (misma regla que la comparación de hoy). */
+  .cd-resultado{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:26px;}
+  .cd-resultado[hidden]{display:none;}
+  .cd-res-head h2{margin:0 0 4px;font-size:20px;}
+  .cd-res-sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
+  .cd-cargando{color:var(--muted);font-size:13.5px;margin:0;}
+  .cd-tabla{width:100%;border-collapse:collapse;}
+  .cd-tabla th, .cd-tabla td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+  .cd-tabla thead th{border-bottom:2px solid var(--azul);}
+  .cd-res-n{font-size:14.5px;font-weight:700;}
+  .cd-res-m{display:block;font-size:11.5px;color:var(--muted);font-weight:400;margin-top:3px;}
+  .cd-ind{font-size:13px;color:var(--muted);font-weight:700;width:210px;}
+  /* La nota de cada indicador: sin ella "Gastos" no dice que incluye amortizaciones,
+     y una "Deuda neta" negativa se lee como un error en vez de como más caja que deuda. */
+  .cd-ind-nota{display:block;font-size:11px;font-weight:400;line-height:1.35;margin-top:3px;}
+  /* Las 3 reglas de comparabilidad, que se dicen y no solo se aplican. */
+  .cd-reglas{font-size:12px;color:var(--muted);margin:0 0 18px;line-height:1.5;}
+  .cd-mix{margin-top:22px;padding-top:18px;border-top:1px solid var(--border);}
+  .cd-mix h3{font-size:16px;margin:0 0 4px;}
+  .cd-num{font-size:17px;font-weight:800;display:block;}
+  .cd-num.neg{color:var(--red);}
+  .cd-nodato{color:var(--muted);font-size:13px;font-style:italic;}
+  .cd-bar{display:block;height:6px;background:#eef2f9;border-radius:3px;margin-top:6px;overflow:hidden;max-width:260px;}
+  .cd-bar-in{display:block;height:100%;background:var(--azul);}
+  .cd-bar-in.neg{background:var(--red);}
+  /* ======================================================================
+     PESTAÑA LIGAS (Versión 183, to-do 23(c)). El ranking de ingresos de una
+     liga en un ejercicio. Reusa el lenguaje visual de la pestaña Comparar
+     (`.cd-*`): card blanco sobre el fondo, tabla con la cabecera subrayada en
+     azul, salvedades en gris chico abajo.
+     ====================================================================== */
+  #ligaWrap{max-width:1000px;}
+  .liga-vacio{color:var(--muted);font-size:13.5px;margin:0 0 18px;}
+  /* ESTADO FRÍO: la grilla de las 8 ligas. Se llega acá por el botón del nav sin
+     haber elegido nada, y una pantalla vacía sería peor que una lista. */
+  .liga-frio{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;}
+  .liga-frio-t{margin:0 0 12px;font-weight:700;font-size:15px;}
+  /* Un card por continente (Versión 2026-09-26): cada uno con su título y su
+     propia grilla, para que "Sudamérica" no se mezcle visualmente con "Asia". */
+  .liga-frio-cont{margin-bottom:20px;}
+  .liga-frio-cont:last-child{margin-bottom:0;}
+  .liga-frio-cont-t{margin:0 0 10px;font-size:12px;font-weight:700;text-transform:uppercase;
+    letter-spacing:.05em;color:var(--muted);border-bottom:1px solid var(--border);padding-bottom:6px;}
+  .liga-frio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
+  .liga-frio-btn{display:flex;align-items:center;gap:9px;flex-wrap:wrap;text-align:left;
+    background:#fff;border:1px solid var(--border);border-radius:8px;padding:10px 12px;cursor:pointer;
+    font:inherit;color:inherit;transition:.15s;}
+  .liga-frio-btn:hover{border-color:var(--azul);background:#f6f9ff;}
+  .liga-frio-flag{font-size:18px;line-height:1;}
+  .liga-frio-n{font-weight:700;font-size:14px;}
+  .liga-frio-m{flex-basis:100%;color:var(--muted);font-size:11.5px;}
+  /* EL BOTÓN DE VOLVER, arriba de la liga elegida. Mismo lenguaje visual que
+     `.liga-club-link` (texto azul sin fondo), para no sumar un tercer estilo de
+     botón a la pestaña. */
+  .liga-volver{display:inline-flex;align-items:center;gap:4px;background:none;border:none;
+    padding:0;margin:0 0 14px;font:inherit;font-size:13px;font-weight:700;color:var(--azul);cursor:pointer;}
+  .liga-volver:hover{text-decoration:underline;}
+  /* ENCABEZADO: título = métrica + sujeto + ejercicio, subtítulo = cobertura y
+     unidad, los dos en prosa (convención de Our World in Data). */
+  .liga-head{margin-bottom:18px;}
+  .liga-head-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+  .liga-h{margin:0;font-size:20px;}
+  .liga-flag{font-size:20px;}
+  .liga-sub{color:var(--muted);font-size:13px;margin:6px 0 0;line-height:1.5;max-width:720px;}
+  .liga-sub.chico{font-size:12px;margin-top:4px;}
+  .liga-anio{display:flex;align-items:center;gap:7px;flex-shrink:0;}
+  .liga-anio-l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
+  .liga-anio select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--border);border-radius:7px;background:#fff;}
+  /* EL GRÁFICO. Alto fijo y no aspect-ratio: con 20 clubes los nombres del eje X
+     se rotan y necesitan lugar propio, que un alto proporcional al ancho no da
+     en una pantalla angosta. */
+  .liga-chart-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 16px 10px;margin-bottom:18px;}
+  .liga-chart-head{display:flex;justify-content:flex-start;}
+  .liga-chart-y{font-size:11px;color:var(--muted);font-weight:700;}
+  .liga-chart-box{position:relative;height:360px;}
+  /* LA TABLA. Es donde el club chico sigue siendo legible: en LaLiga la barra de
+     Alavés es 1/18 de la de Real Madrid, su fila se lee igual que las demás. */
+  .liga-tabla-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 16px;margin-bottom:18px;overflow-x:auto;}
+  .liga-tabla{width:100%;border-collapse:collapse;}
+  .liga-tabla th, .liga-tabla td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);white-space:nowrap;}
+  .liga-tabla thead th{border-bottom:2px solid var(--azul);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  .liga-tabla tfoot td{border-bottom:none;font-weight:700;padding-top:12px;}
+  .liga-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;}
+  .liga-col-n{width:34px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  /* El cuadradito del color de marca del club (Versión 178), la misma idea que el
+     círculo de iniciales del selector pero al tamaño de una fila de tabla. */
+  .liga-pin{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:8px;vertical-align:middle;}
+  .liga-club-link{background:none;border:none;padding:0;font:inherit;font-weight:600;color:var(--azul);cursor:pointer;text-align:left;}
+  .liga-club-link:hover{text-decoration:underline;}
+  .liga-col-ej{color:var(--muted);font-size:12.5px;}
+  .liga-col-doc{font-size:12px;}
+  /* El tipo de documento NO es decoración: en la Primera 2024 el puesto 1 es una
+     copia no oficial y el 7 es un presupuesto. Los dos se marcan en color. */
+  .liga-doc{color:var(--muted);}
+  .liga-doc.presu{color:#9a6b00;font-weight:700;}
+  .liga-doc.nooficial{color:#9a6b00;font-weight:700;}
+  .liga-doc-link{margin-left:8px;color:var(--azul);font-size:11.5px;}
+  .liga-avisos{margin-top:4px;}
+  .liga-avisos h3{font-size:14px;margin:0 0 7px;}
+  .liga-avisos p{color:var(--muted);font-size:12px;line-height:1.55;margin:0 0 5px;}
+  @media (max-width:720px){
+    .liga-chart-box{height:300px;}
+    .liga-head-top{align-items:flex-start;}
+  }
+  .cd-avisos{margin-top:14px;}
+  .cd-avisos p{color:var(--muted);font-size:12px;line-height:1.5;margin:0 0 5px;}
+
+  @media (max-width:900px){
+    .sel-modal{padding:12px 8px;}
+    /* Los dos cards se apilan y el VS queda en el medio. */
+    .cd-wrap{grid-template-columns:1fr;}
+    .cd-vs{padding:4px 0;}
+    .cd-tabla .cd-ind{width:auto;}
+  }

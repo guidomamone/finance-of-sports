@@ -15,6 +15,21 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 238 — CSS de `index.html` a `js/styles.css` (to-do 65)
+
+- Sacado el bloque `<style>` inline de `index.html` (754 líneas, líneas 31-786) a
+  `js/styles.css` nuevo, referenciado con `<link rel="stylesheet" href="js/styles.css?v=238">`,
+  mismo criterio de `?v=` que los `<script src>` propios. `index.html` bajó de 142 KB a 84 KB;
+  `js/styles.css` pesa 57 KB. El JS ya estaba separado desde antes — el CSS era lo último
+  mezclado con el markup.
+- `ASSET_V` subido de 231 a 238 (la constante y los 15 tags, no uno solo — ver CLAUDE.md gotcha
+  de caché) para invalidar el CSS nuevo en el navegador de cualquier visitante con la página
+  vieja cacheada.
+- Corrido `node tools/generate-fuentes-page.js` porque ese generador lee `ASSET_V` de
+  `index.html` (161 páginas de club + `fuentes.html` + `sitemap.xml` regenerados con `v=238`).
+- Verificado en el navegador (desktop y mobile, Inicio y Finanzas) que el sitio se ve idéntico
+  antes/después del split. `node tools/audit.js`: P0 0, P1 0 (igual que antes del cambio).
+
 ## Versión 237 — chequeo de git post-auditorías + 2 to-dos nuevos (saved searches, commit pendiente)
 
 - `tools/audit-ignore.json`: 2 entradas nuevas para `ruta-muerta` (`Admin/ESTADO-clubes.md` y
