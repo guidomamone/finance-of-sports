@@ -44,6 +44,11 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   **Trabajá siempre sobre el archivo de TU país**: es lo que permite que dos sesiones de sourcing
   corran en paralelo sin pisarse. `fuentes/README.md` (el índice de países) se toca solo al
   terminar, y solo si cambiaron los números de ese país.
+- **Si el hallazgo es un video (presentación en YouTube en vez de PDF) o una nota de prensa,
+  guardar la URL EXACTA, no solo el título** (encontrado 2026-09-26: `fuentes/Argentina/
+  Banfield.md` describía el video del 105° Ejercicio con su título pero sin el link, y hubo que
+  volver a buscarlo con `WebSearch` cuando hizo falta para `club-outreach`). Un título alcanza para
+  que Guido lo reconozca, pero no para que una sesión futura lo abra sin volver a buscarlo.
 - **Si en el camino de buscar un documento aparece un email de contacto del club** (prensa@,
   secretaría@, relaciones institucionales — en el sitio oficial, una nota de prensa, un formulario de
   contacto) y guardarlo no cuesta nada extra, anotarlo en `Admin/outreach/contactos.json` (`email`,

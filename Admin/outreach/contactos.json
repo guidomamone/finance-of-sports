@@ -4,5 +4,10 @@
     "email": "string",
     "source": "string — de dónde salió (ej. 'prensa@ en el sitio oficial', 'nota de prensa 2026-09-20')",
     "date": "YYYY-MM-DD — cuándo se guardó"
+  },
+  "velez": {
+    "email": "prensa@velezsarsfield.com.ar",
+    "source": "WebSearch, snippet de velez.com.ar/prensa — el email en la página está ofuscado (protección de Cloudflare), no se pudo confirmar leyendo el HTML directo. Verificar antes del primer envío si hay dudas.",
+    "date": "2026-09-26"
   }
 }

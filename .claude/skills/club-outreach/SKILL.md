@@ -39,10 +39,32 @@ Sin regla de disparo automática todavía — Guido sigue decidiendo cuándo esc
 cambia respecto del modelo viejo es SOLO el canal de envío (Resend en vez de Gmail) y que el envío
 ya no necesita aprobación mensaje-por-mensaje en el chat una vez que Guido corre el script.
 
-**Candidatos** (de dónde sale "a este club le escribimos"): preguntas acumuladas en
-`Admin/dudas-por-club.md` para ese club, o un club marcado "candidato a mail" por `club-sourcing`
-0.3 (documento confirmado que existe pero no descargable). Guido (o una sesión, si Guido lo pide)
-decide cuándo un club está listo — no hay umbral automático en esta etapa.
+**Candidatos, y la regla de exhaustividad** (a pedido de Guido, 2026-09-26): un club recién está
+listo para el PRIMER mail cuando se agotó esto, no antes:
+
+1. **Sourcing de al menos los últimos 5 ejercicios** de ese club (metodología de `club-sourcing`,
+   escalera de ángulos de la sección 0.1-0.3) — cada uno de esos 5 tiene que haber llegado a alguno
+   de sus estados finales: encontrado y onboardeado, dead-end confirmado (sin mail), candidato a
+   mail (documento confirmado pero no descargable), o bloqueo estructural (sin mail). No alcanza con
+   haber chequeado el ejercicio más reciente.
+2. **Onboarding de lo que se haya encontrado** en ese barrido — un PDF nuevo transcripto pero sin
+   mapear a `data/*.js` todavía no cuenta como "hecho": mapearlo primero, porque el mapeo suele
+   generar sus propias dudas de categorización que también hay que incluir en el mail.
+
+Recién ahí se compila TODO lo que quedó abierto — preguntas de `Admin/dudas-por-club.md` MÁS
+años/documentos marcados "candidato a mail" en `club-sourcing` 0.3 — en UN SOLO mail. **Nunca mandar
+apenas aparece la primera duda y dejar el resto para "otro mail después"**: la idea es agotar todo
+en un solo approach, no ir de a un pedido por vez a lo largo de varios meses — le cuesta más
+atención al club (varios mails sueltos en vez de uno bien armado) y quema el margen de paciencia más
+rápido.
+
+**Documentos que solo existen como video** (ej. Banfield, 105° Ejercicio — YouTube en vez de PDF):
+Guido puede mirarlo él mismo y sacar notas o capturas — cuenta como fuente igual que un PDF, se
+transcribe a `.md` en la carpeta del club como cualquier otro documento (con una nota de que la
+fuente es un video, más el link exacto). Si el video tiene las cifras reales, no hace falta mail por
+ese punto — se onboardea directo. Si NO las tiene (solo la lectura/ceremonia, sin números en
+pantalla), sigue siendo candidato a mail, pero el cuerpo tiene que decir explícitamente que se miró
+el video y no traía las cifras — nunca simular que no se buscó.
 
 **Redactar** (una sesión de Claude Code, con el Write tool):
 
@@ -70,6 +92,13 @@ decide cuándo un club está listo — no hay umbral automático en esta etapa.
   proyecto — corto, directo, sin sonar a plantilla. Un mail por club, nunca un mismo texto calcado
   mandado a varios clubes la misma semana (ver blind spot de "señal de spam por parecido" en el doc
   de comparación).
+- **Cierre obligatorio en TODO mail** (regla de Guido, 2026-09-26): antes de la firma, invitar a
+  pasarse por el sitio dejando en claro que está en construcción — algo en la línea de "Los invito a
+  pasarse por financeofsports.com cuando quieran, todavía estamos trabajando en conseguir más datos
+  y en organizar mejor la página, así que es un trabajo en progreso por ahora." No hace falta
+  calcarlo palabra por palabra (variar la redacción entre mails, ver el blind spot de arriba), pero
+  esas dos ideas —invitación al sitio + expectativa de que es early/está en construcción— van
+  siempre, sin excepción.
 - Avisarle a Guido en el chat que el borrador está listo en `cola/`, con el path exacto.
 
 **Revisar y aprobar** (Guido, con los archivos): lee el `.md` en `cola/` (por Finder, `cat`, o
@@ -129,7 +158,9 @@ mensaje claro pidiendo las variables de entorno.
 
 ## 3. Candidatos: quién alimenta la cola
 
-Dos fuentes, ya documentadas en otros skills — este skill no las duplica, solo las consume:
+Dos fuentes, ya documentadas en otros skills — este skill no las duplica, solo las consume. Esto es
+de dónde SALEN las preguntas; la regla de CUÁNDO ya está lista una para mandarse (los 5 ejercicios
+agotados, todo bundleado en un solo mail) vive en la sección 1.
 
 - **`Admin/dudas-por-club.md`**: preguntas de categorización/desglose sin resolver. Cuando una
   sesión de `club-data-mapping`/`club-or-year-onboarding` anota una pregunta ahí, no hace falta

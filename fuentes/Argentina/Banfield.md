@@ -32,10 +32,19 @@
   adjunto. `informe-gestion-2015.pdf` aparece en el índice de Wayback pero su snapshot devuelve HTML,
   no el PDF.
 - Pendiente: 105° Ejercicio (2024-25, 1/7/2024 a 30/6/2025), aprobado en Asamblea General Ordinaria
-  del 18/12/2025 — el club subió una PRESENTACIÓN EN VIDEO a YouTube ("Memoria y Balance - 105°
-  Ejercicio - Año 2025", enero 2026) en vez de un PDF. No sirve como fuente descargable bajo el
-  criterio del proyecto, pero confirma que el documento existe: pedírselo al club. También faltan
-  todos los ejercicios entre el 116° (2019-20) y el 105°... ojo con la numeración, que el club usa
+  del 18/12/2025 — la nota original de esta sesión decía que el club había subido una PRESENTACIÓN
+  EN VIDEO a YouTube ("Memoria y Balance - 105° Ejercicio - Año 2025", enero 2026) en vez de un PDF.
+  **EXISTENCIA DEL VIDEO SIN CONFIRMAR (2026-09-26)**: ni un `WebSearch` (que devolvió un falso
+  positivo, un video de agricultura sin relación) ni una búsqueda manual de Guido en YouTube
+  encontraron el video real. Puede que exista y no sea indexable con esos términos (canal privado,
+  nombre distinto, subido como "no listado"), o puede que la nota original haya sido un error y el
+  club en realidad no publicó nada del 105°. Antes de escribirle al club dando el video por hecho,
+  conviene una vuelta más de sourcing: revisar el canal oficial de YouTube de Banfield directo
+  (no por buscador), y la nota de prensa del club sobre la Asamblea del 18/12/2025 por si cita un
+  link. Si no aparece, el mail a `socios@clubabanfield.com.ar` tiene que preguntar en general por el
+  105° Ejercicio (memoria y balance, en cualquier formato), no asumir que existe un video puntual
+  que después no se puede señalar. También faltan todos los
+  ejercicios entre el 116° (2019-20) y el 105°... ojo con la numeración, que el club usa
   de forma inconsistente entre esos dos documentos (ver duda en `Admin/dudas-por-club.md`).
 - Contacto: Secretaría/Sede Social — socios@clubabanfield.com.ar, WhatsApp +54 11 5643-7777.
 - **CARGADO AL SITIO (2026-09-23): `banfield-ar-memoria-y-balance-2019-2020`**, el balance 116°
