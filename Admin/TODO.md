@@ -54,6 +54,225 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+70. "SAVED SEARCHES" — GUARDAR LAS BÚSQUEDAS DE CADA USUARIO EN SU CUENTA (pedido de Guido,
+    2026-09-26: *"me gusta que las búsquedas que hace alguien queden guardadas como Saved Searches.
+    Para eso sirve lo de que se hagan cuenta. En su cuenta van a poder ver sus saved searches."*).
+    Es la primera razón de PRODUCTO concreta para que exista una cuenta de usuario en el sitio — hasta
+    ahora las cuentas solo se habían charlado como mecanismo del corte free/paid (ver la entrada
+    descartada "El corte free/paid y el paywall" al principio de este archivo: **decisión de Guido,
+    2026-09-14, el sitio va todo gratis, sin cuentas/suscripciones**). Esto es distinto: no es un
+    paywall, es que el visitante pueda volver a ver búsquedas que ya hizo. Antes de tocar código hace
+    falta resolver, con Guido:
+    - **Qué es exactamente "una búsqueda" acá.** El selector (`js/selector.js`) no tiene un concepto
+      de "búsqueda" como objeto — hoy es una secuencia de pasos (país → club → año, o el constructor
+      de mezcla con varios bloques) que termina en una vista de Finanzas o una comparación. Guardar
+      "la búsqueda" probablemente signifique guardar el estado final (qué club/ejercicio, o qué
+      combinación de bloques de la mezcla) de forma que se pueda RE-ABRIR después, no un historial de
+      texto tipeado en el buscador (eso ya se loggea agregado, sin identificar usuario, en el Worker
+      de la Versión 216 — ver to-do 67, que es telemetría propia para Guido, no algo que el usuario
+      vea en su cuenta).
+    - **Qué proveedor de cuentas.** El proyecto ya evaluó Supabase para auth en la charla del corte
+      free/paid (ver `Admin/finance-of-sports-project.md`) — sitio estático + capa mínima de backend
+      (Supabase para auth y estado, Netlify Functions si hace falta un webhook). Esa arquitectura ya
+      pensada probablemente sirva de base para esto también, aunque el motivo ahora sea otro (guardar
+      búsquedas, no cortar acceso) — confirmar con Guido si sigue siendo la elección o si algo cambió
+      desde esa charla.
+    - **Alcance de la Versión 1**: ¿guardar automáticamente cada búsqueda, o un botón explícito
+      "Guardar esta búsqueda"? ¿Hay un límite de cuántas guarda cada usuario? Ninguna de las dos
+      preguntas está resuelta, preguntarle a Guido antes de diseñar la tabla de datos.
+    EN PAUSA, sin fecha: es una idea de producto todavía sin priorizar contra el resto de esta lista,
+    dejada acá para que no se pierda — no implica que el corte free/paid deba reabrirse, cuentas sin
+    paywall es una combinación nueva que este proyecto no había considerado hasta ahora.
+
+69. HAY TRABAJO REAL SIN COMMITEAR DESDE VARIAS SESIONES CONCURRENTES DEL 2026-09-26 — REVISAR Y
+    COMMITEAR ANTES DE SEGUIR, NO DESCARTAR NADA A CIEGAS. Detectado en la auditoría de escala de esa
+    fecha (mismo fenómeno que ya documenta la memoria de sesión "sesiones-concurrentes-mismo-working-
+    tree": git status se puede ensuciar solo a mitad de sesión porque hay más de una sesión de Claude
+    Code trabajando sobre este mismo working tree al mismo tiempo). Estado verificado ese día:
+    `node tools/audit.js` da P0 0 / P1 0 — nada roto — así que esto es housekeeping, no una
+    emergencia, pero cuanto más tiempo quede así, más difícil es reconstruir qué sesión escribió qué.
+
+    QUÉ QUEDÓ SIN COMMITEAR (verificado con `git status`, después de la Versión 232 que sí se
+    commiteó): modificados — `Admin/ARQUITECTURA.md`, `Admin/CHANGELOG.md` (entradas 233-236),
+    `Admin/CONVENCIONES.md`, `Admin/ESTADO.md`, `Admin/TODO.md`, `CLAUDE.md`,
+    `.claude/skills/club-outreach/SKILL.md`, `.claude/skills/club-sourcing/SKILL.md`,
+    `.claude/skills/start-session-finance-of-sports-project/SKILL.md`,
+    `fuentes/Argentina/Banfield.md`, `tools/audit.js` — y sin trackear —
+    `auditorias/2026-09-26.md`, `-codigo.md`, `-docs.md`, `-escala.md`, `-tokens.md` (los 5 ejes de
+    una auditoría de rutina completa, más la corrida de escala pedida aparte). Todo esto es la
+    auditoría de rutina completa del 2026-09-26 (rotación `datos`→`escala`→`codigo`→`docs`→`tokens`,
+    Versiones 230-236 de `Admin/CHANGELOG.md`) más una decisión de Guido sobre partir el eje `datos`
+    por país (to-do 56). Nada de esto se perdió, está todo en el working tree — es pura falta de
+    `git add`/`git commit`, ninguna sesión llegó a cerrar con el paso de git de
+    `start-session-finance-of-sports-project/SKILL.md`.
+
+    POR QUÉ NO LO COMMITEÉ YO DIRECTAMENTE: hay trabajo de AL MENOS 2-3 sesiones distintas mezclado
+    (mío, el de la auditoría completa de rutina, posiblemente más) — commitear a ciegas junta el
+    trabajo de todas en un solo commit sin que nadie lo haya revisado junto, y el propio
+    `Admin/CHANGELOG.md` de este proyecto tiene un precedente de números de versión duplicados por
+    esto mismo (ver la Versión 229/218, "hay varias sesiones concurrentes trabajando sobre el mismo
+    working tree ahora mismo"). Mejor que lo revise y lo commitee quien agarre este to-do, con
+    `git status`/`git diff` fresco en el momento (puede haber cambiado desde que se escribió esto) y
+    separando en 1 o más commits con sentido, no necesariamente todo junto.
+
+68. PESTAÑA LIGAS: TRES MEJORAS PEDIDAS POR GUIDO (2026-09-26, mismo día que se agregó el botón
+    "Volver a Ligas" y las cards por continente de `estadoFrio()` — Versión 232). Las tres tocan
+    `js/liga.js`, que es el módulo entero de la pestaña. Ninguna se implementó todavía, es solo el
+    pedido con contexto para que quien lo agarre no tenga que redescubrir cómo funciona el módulo.
+
+    (a) **BREAKDOWN DE MÁS DATOS POR LIGA, NO SOLO INGRESOS — PERO ARRANCAR CON INGRESOS ESTÁ BIEN**.
+        Guido: *"quiero que para cada página de liga haya un break no solo de ingresos, sino de
+        otros datos. Por ahora, solo los ingresos de Formato Simplificado. Pero me gusta que
+        arranque al principio con ingresos."* Es decir: la pestaña Ligas hoy es 100% ranking de
+        INGRESOS (ver la cabecera de `js/liga.js`, "LA REGLA QUE ORDENA TODO ESTE ARCHIVO"). Guido
+        confirma que empezar por ingresos fue la elección correcta, pero la visión de fondo es que
+        el ranking de una liga eventualmente muestre OTRAS métricas también (no especificó cuáles —
+        candidatos obvios del propio "Formato Simplificado" que ya existe para el club individual:
+        gastos, resultado neto/PAT, deuda neta — preguntarle a Guido cuál quiere primero cuando se
+        agarre esto, no asumir).
+
+        POR QUÉ NO ES TRIVIAL: el dato de cada liga-ejercicio no se calcula en vivo, viene
+        precalculado en `data/rankings/<liga>.js` por `tools/generate-rankings.js` (ver la cabecera
+        de `js/liga.js`, "DE DÓNDE SALEN LOS NÚMEROS") — el generador hoy solo extrae `revenue` de
+        `computeYearGeneric()` (`js/finanzas-calc.js`) para cada club de la liga, no las demás
+        métricas que ese motor ya calcula (`computeYearGeneric()` sí devuelve gastos y resultado
+        neto, se puede confirmar mirando su return). Agregar una métrica nueva implica: extender
+        `tools/generate-rankings.js` para guardar también ese campo por club-año, y en `js/liga.js`
+        algún selector de métrica en la vista de liga (con Ingresos como default/primera opción,
+        que es justo lo que Guido pidió mantener) que redibuje `grafico()` y `tabla()` con la
+        métrica elegida en vez de asumir siempre `f.revenue`.
+
+    (b) **% DEL TOTAL EN EL GRÁFICO DE BARRAS DE CADA CLUB**. Guido: *"quisiera que en el gráfico
+        de barras de revenue de cada club haya una leyenda con el % del total."* Hoy `grafico()` en
+        `js/liga.js` ya dibuja un valor arriba de cada barra (plugin `ligaValueLabels`, el número
+        en M/MM USD — ver la cabecera del archivo, "EL NÚMERO VA ESCRITO ARRIBA DE CADA BARRA").
+        Agregar ahí (o al lado, a definir con Guido si reemplaza o acompaña al valor en USD — su
+        pedido dice "leyenda con el %", que suena a ACOMPAÑAR, no reemplazar) qué porcentaje del
+        total de esa liga-ejercicio representa el club de esa barra. El total ya se calcula en
+        `tabla()` (variable `total`, sumando `r.clubs`) y en `salvedades()` (variable `tot`) — se
+        puede reusar esa misma cuenta en vez de recalcularla una tercera vez.
+
+        OJO: `grafico()` la usan DOS pantallas (la pestaña Ligas y la vidriera de Inicio,
+        `bloqueDestacado()`) — un cambio en el plugin de etiquetas se ve en las dos automáticamente,
+        no hace falta tocarlas por separado, pero sí hay que revisar que se vea bien en el tamaño
+        chico de la vidriera (260px de alto, contra 360px de la pestaña — ver los dos `alto`
+        distintos que le pasan a `grafico()`).
+
+    (c) **ORDENAR LAS LIGAS DE UN MISMO PAÍS POR DIVISIÓN (1ª, 2ª, 3ª, 4ª), NO ALFABÉTICO POR
+        NOMBRE, CUANDO HAY MÁS DE UNA CARGADA**. Esto es una corrección puntual sobre lo que se
+        acaba de cambiar en la Versión 232 (mismo día): la grilla de `estadoFrio()` ahora agrupa
+        las ligas por continente y, pedido explícito de esa sesión, ordena alfabéticamente país y
+        LIGA dentro de cada card (`ligasDePaisAlfa()`, ordena por `ligaDe(a).name.localeCompare(...)`).
+        Guido revisó el resultado y corrigió: *"que se ordenen las ligas según 1ra división, 2da,
+        3ra, 4ta para los casos en los que tenemos datos de más de una división del mismo país. Ojo
+        que no me refiero solo al nombre de la liga, me refiero a la categoría."* — el caso real que
+        lo delata: Argentina hoy sale "Primera B Metropolitana (3ª), Primera División (1ª), Primera
+        Nacional (2ª)" en ese orden porque alfabéticamente "B" < "D" < "N", que se lee raro para
+        cualquiera que conozca el fútbol argentino.
+
+        EL FIX: en `ligasDePaisAlfa()` (`js/liga.js`), cambiar el criterio de orden de
+        `.name.localeCompare(...)` a `LEAGUES[lid].tier` ascendente (con el nombre como desempate
+        si dos ligas del mismo país compartieran tier, caso hoy inexistente pero barato de cubrir).
+        `tier` ya existe en `data/leagues.js` para cada liga (1 = primera división) y es EXACTAMENTE
+        lo que usaba el criterio viejo de `estadoFrio()` antes de la Versión 232 (`(A.tier - B.tier)
+        || A.name.localeCompare(...)`, ver el diff de esa versión si hace falta el criterio exacto).
+        NO TOCAR lo demás de la Versión 232: el agrupado por continente y el orden alfabético de
+        PAÍS dentro de cada continente quedan igual — Guido corrigió específicamente el orden de
+        LIGA dentro de un país, no el resto de la reorganización.
+
+67. EVALUAR MIXPANEL PARA TRACKEAR LA SECUENCIA COMPLETA DEL SELECTOR, DESDE QUE SE ABRE HASTA QUE
+    SE ELIGE UN CLUB (pedido de Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el
+    selector"*). Solo quedó charlado en una sesión de consejo, nada de código tocado todavía ni
+    cuenta de Mixpanel creada.
+
+    POR QUÉ NO ALCANZA LO QUE YA HAY: el logging propio de la Versión 216 (Worker + KV,
+    `square-sky-ca25.guidomamone91.workers.dev`, hooks en `js/selector.js`) solo cuenta hits/miss de
+    término buscado y pares elegidos en Comparar — son contadores sueltos, no la secuencia de
+    interacción (abrir selector → tipear/navegar → elegir país → elegir club → [elegir año]) que
+    Guido quiere ver ahora. Y Cloudflare Web Analytics (Versión 166) solo mide pageviews/referrers a
+    nivel de página, tampoco sirve para esto.
+
+    LA RECOMENDACIÓN DE LA SESIÓN DE CONSEJO: Mixpanel es la herramienta correcta para un funnel de
+    eventos como este. Al volumen de tráfico de este sitio, instrumentando a mano solo los pasos del
+    funnel (no el Autocapture de Mixpanel, que loguea cada click/scroll de la página entera y sí
+    puede inflar el conteo sin darse cuenta), el free tier (1.000.000 eventos/mes gratis, después
+    USD 0,00028/evento — ver `docs.mixpanel.com/docs/pricing`) alcanza de sobra. No hace falta migrar
+    ni duplicar lo que ya da Cloudflare Web Analytics (pageviews/referrers agregados, cookieless, sin
+    tope): la propuesta es mantener los dos — Cloudflare para tráfico agregado, Mixpanel solo para el
+    funnel del selector — en vez de que Mixpanel reemplace a Cloudflare.
+
+    LO QUE FALTA DECIDIR/HACER, para quien retome esto: (a) confirmar con Guido qué pasos exactos del
+    funnel valen la pena loguear como evento (mirar `js/selector.js` primero, no asumir la secuencia
+    desde acá — el selector es jerárquico país→club→año, ver to-do 34); (b) crear la cuenta de
+    Mixpanel; (c) instrumentar esos eventos puntuales en `js/selector.js` (mismo lugar que ya tiene
+    los 2 hooks de la Versión 216); (d) confirmar que el snippet/SDK de Mixpanel no choca con la
+    convención de `ASSET_V`/`?v=` de scripts propios (ver CLAUDE.md, gotchas de caché) si se sirve
+    como script propio en vez de vía CDN de Mixpanel.
+
+66. TEST DE COSTO/CALIDAD DE TRANSCRIPCIÓN PDF→MD: SONNET vs HAIKU vs UNA API EXTERNA (pedido
+    explícito de Guido, 2026-09-26: "quiero medir token usage punta a punta de 5 clubes con vos, 5
+    con haiku y 5 con una api"). Motivación: transcribir un PDF a `.md` (ver CLAUDE.md, "Cada PDF
+    nuevo") hoy corre siempre con el modelo por defecto de la sesión (Sonnet, pensado para prosa/
+    decisiones, no para OCR mecánico) — la sospecha es que un modelo más barato, o una API
+    especializada en documentos, hace lo mismo por menos costo/tiempo sin perder precisión. Con 2047
+    PDFs pendientes en `Admin/inventario-pendiente.md`, el ahorro por documento importa multiplicado.
+
+    QUÉ SE MIDE, por corrida: costo en USD (unidad común entre proveedores — los tokens de Sonnet/
+    Haiku no son comparables 1:1 contra lo que cobre una API que factura por página o por imagen),
+    tiempo de reloj, y CALIDAD bajo el mismo criterio para las 3 patas (ver abajo) — nunca declarar
+    ganador solo por costo si no pasó el mismo control de calidad.
+
+    LAS 3 PATAS:
+    (a) **Sonnet, como hoy** — la sesión de Claude Code hace la transcripción directamente (vía Read
+        tool sobre imágenes de página, o leyendo el output de Tesseract si ya corrió, igual que
+        siempre).
+    (b) **Haiku 4.5** — delegarlo a un subagente del `Agent` tool con `model: "haiku"`, mismo insumo y
+        misma consigna que (a).
+    (c) **Una API externa especializada** — candidato default: **Gemini (2.5 Flash o 2.0 Flash, API
+        de Google AI Studio)**, multimodal y barato, capaz de tomar las páginas del PDF como imagen y
+        devolver el `.md` en un solo paso. **BLOQUEANTE**: hace falta que Guido tenga una API key de
+        Google AI Studio antes de correr esta pata — si no existe todavía cuando se agarre este
+        to-do, pedírsela primero, no improvisar con otra cosa. Alternativa si Gemini rinde mal o
+        Guido prefiere otra cosa: una API de OCR dedicada (Mistral OCR, Google Document AI, AWS
+        Textract) — más específica pero factura por página y probablemente necesite un paso propio
+        para armar el formato final (marcas de página, tablas Markdown) que Gemini haría de un tiro.
+
+    MISMO INSUMO PARA LAS 3 PATAS, PARA QUE LA COMPARACIÓN SEA JUSTA: correr primero el paso gratis
+    de siempre (pdftotext → si no da texto real, Tesseract vía `pdftoppm -png -r 300` + `tesseract -l
+    spa --psm 6`, ver CLAUDE.md y `club-data-mapping` sección 15) — esto es igual para las 3 y no
+    cuenta como costo de IA. Lo que se compara es específicamente el paso de "OCR crudo/imagen de
+    página → `.md` final verificado", que es donde hoy se va el token spend.
+
+    SELECCIÓN DE LOS 15 PDFs (5 por pata): sacarlos de la Sección 1 de `Admin/inventario-pendiente.md`
+    (PDFs sin transcribir), elegidos para que las 3 patas no queden con dificultad despareja —
+    ordenar los 15 candidatos por cantidad de páginas (o por lo que se vea a ojo de dificultad: texto
+    real vs escaneado, tablas rotadas, idioma) y repartirlos round-robin entre las 3 patas (1º a
+    Sonnet, 2º a Haiku, 3º a la API, 4º a Sonnet, ...) en vez de asignar al azar sin ese cuidado.
+    Preferir un cluster parejo (ej. el trío certificación+dictamen+estados financieros de Colombia,
+    misma sección, mismo patrón en los 10 clubes) sobre mezclar países muy distintos entre sí, para
+    que la varianza de dificultad no tape la diferencia real entre modelos.
+
+    CONTROL DE CALIDAD, IGUAL PARA LAS 3: elegir de antemano ~15-20 cifras numéricas repartidas por
+    el documento y chequearlas a mano contra el PDF original (no contra el `.md` de otra pata) — si
+    alguna sale mal, el costo de corregirla (re-correr o arreglar a mano) SE SUMA al costo de esa
+    pata, no se descarta. "Punta a punta" significa que una pata barata pero que necesitó varias
+    correcciones manuales no gana solo por el número de tokens de la primera pasada. Si el documento
+    tiene un total conocido de prensa/oficial, correr también el chequeo de `verifyTieOuts()`.
+
+    CÓMO REGISTRAR EL COSTO: para Sonnet y Haiku, aislar el uso de tokens de esa tarea puntual (no el
+    de la sesión entera — por eso conviene correr cada PDF, en las 3 patas, como su propio subagente
+    del `Agent` tool, para poder leer el reporte de uso que devuelve al terminar sin que se mezcle con
+    otra cosa; `mcp__ccd_session_mgmt__get_usage` es la alternativa si hace falta más detalle). Para
+    la API externa, lo que devuelva el response de uso, o el precio publicado del proveedor por
+    página/imagen si no reporta tokens. Convertir todo a USD al final para poder comparar.
+
+    DÓNDE DEJAR EL RESULTADO: un archivo nuevo, `Admin/test-costo-transcripcion.md` (adentro de
+    `Admin/`, no en la raíz — ver CLAUDE.md "dónde poner un documento nuevo"), con una tabla de las 15
+    corridas (PDF, páginas, pata, USD, tiempo, cifras chequeadas OK/mal) y un resumen de 3-4 líneas al
+    final con el promedio por pata y la recomendación. Avisar explícitamente en ese resumen que n=5
+    por pata es chico — el resultado es direccional, no estadísticamente robusto — para que no se
+    sobre-interprete una diferencia chica como definitiva.
+
 61. INVENTARIO COMPLETO DE PENDIENTES DE SOURCING/ONBOARDING, PARA NO TENER QUE VOLVER A BUSCAR
     (pedido explícito de Guido, 2026-09-25: "hace la lista entera de pdfs que faltan transcribir y
     de transcripciones que faltan y ponelos en un mismo to-do así la siguiente sesión no tiene que
@@ -74,6 +293,51 @@ perdieron sino que se descartaron:
     re-investigando lo mismo. Queda un to-do explícito sin resolver dentro de ese archivo (sección
     4): extraer del documento agregado de la J.League la lista completa de clubes japoneses, texto
     en japonés, nadie llegó a hacerlo todavía.
+
+63. PARTIR EL BLOQUE CLUB-INDEX DE `Admin/ESTADO.md` A UN ARCHIVO PROPIO, ANTES DE QUE
+    `tools/audit.js` LO MARQUE SOLO (auditoría de escala del 2026-09-26,
+    `auditorias/2026-09-26-escala.md` hallazgo 3). El umbral de 60 KB para TODO `Admin/ESTADO.md`
+    ya está fijado en `tools/audit.js`; hoy (161 clubes) el archivo pesa 55,98 KB, de los cuales
+    43,3 KB son prosa fija y 12,35 KB son el bloque `CLUB-INDEX:START`...`CLUB-INDEX:END` generado
+    por `node tools/generate-club-index.js` (76,7 B/club). Con esos números el umbral se cruza en
+    ~218 clubes — 40-50 clubes más al ritmo actual, no en "~600" como decía la proyección vieja del
+    mapa de escala. Mover el bloque a un archivo separado (ej. `Admin/ESTADO-clubes.md`), generado
+    igual por el mismo script, con un puntero de una línea en `Admin/ESTADO.md` — mismo mecanismo
+    que liberó a `index.html` de su comentario interno en la Versión 138.
+
+62. RE-MEDIR EL PAYLOAD EAGER COMPRIMIDO DE `index.html` EN LA PRÓXIMA AUDITORÍA DE ESCALA, NO
+    ESPERAR A 1000 CLUBES (auditoría de escala del 2026-09-26, hallazgo 2). Los 10 archivos que
+    `index.html` carga antes de elegir club pesan hoy 49,7 KB comprimidos (161 clubes), contra 29,3
+    KB el 2026-09-17 (41 clubes) — 1,7x en 9 días. Sigue sin ameritar el refactor pospuesto el
+    2026-09-20 (sacar `reportingCurrency`/`fiscalYearStart` de `clubs.js` seguía dando solo 3,0 KB
+    de ahorro a 1000 clubes, y `fiscalYearStart` lo necesita el selector antes de bajar el club). Pero
+    si en la próxima corrida el comprimido ya pasó de ~80-100 KB, ahí sí conviene diseñar el split
+    real de `clubs.js`/`club-index.js` en vez de seguir postergando con el mismo argumento.
+
+64. DOS `brandColor` PROBABLEMENTE MAL Y UN HUECO DE CATÁLOGO DE LIGAS, DE LA AUDITORÍA DE DATOS DEL
+    2026-09-26 (`auditorias/2026-09-26.md`; ver también to-do 56, que es el problema de fondo del que
+    salió esto). Ninguno de los tres se corrigió en la sesión porque los tres piden un juicio que la
+    sesión no pudo cerrar sola:
+    - **`godoycruz-ar`**: `data/clubs.js` tiene `brandColor:'#0000FF'` (azul saturado). Wikipedia y el
+      sitio del club coinciden en que el color de Godoy Cruz es "celeste" (un azul cielo, no un azul
+      puro) — el HUE probablemente esté mal, no solo el tono exacto. Hace falta mirar el escudo
+      directamente para poner el hex correcto (no se pudo bajar el SVG de Wikimedia Commons desde
+      esta sesión, sin acceso a red general).
+    - **`fortaleza-br`**: tiene `brandColor:'#FF0000'` (rojo), pero el club es tricolor declarado
+      (azul, rojo y blanco — homenaje a la bandera francesa), el mismo tipo de caso que
+      `saopaulo-br` y `bahia-br`, que SÍ tienen `brandColor:null` por ser tricolores ambiguos.
+      Inconsistente con el criterio ya aplicado a esos dos: o se decide que el rojo de Fortaleza es
+      defendible (confirmar cuál de los tres predomina en la práctica) o se pasa a `null` igual que
+      sus pares.
+    - **`liga-sin-fila` (P2 de `tools/audit.js`, sale en cada corrida)**: `fredericia-dk` 2019 y
+      `zultewaregem-be` 2025 no tienen fila en `data/club-leagues.js` A PROPÓSITO — los dos jugaron
+      su ejercicio cargado en la segunda división de su país (Nordic Bet Ligaen / Challenger Pro
+      League), y esas divisiones todavía no están en el catálogo de ligas. Ya está bien documentado
+      inline en `data/club-leagues/dk.js` y `data/club-leagues/be.js`, así que no hace falta
+      reinvestigarlo — pero el chequeo lo va a seguir marcando en TODA auditoría futura hasta que se
+      resuelva de alguna forma: agregar las 2 ligas de segundo escalón al catálogo (con lo que
+      implique para el selector mostrarlas), o enseñarle al chequeo a reconocer una exclusión
+      documentada en vez de dejarlo silenciado a mano para siempre.
 
 60. RE-CHEQUEAR A MANO LAS TRANSCRIPCIONES CON OCR DE MALA CALIDAD ANTES DE USARLAS PARA CARGAR
     DATOS (Versión 214, ampliado en la 215, sesiones de transcripción del 2026-09-24). El OCR salió
@@ -191,13 +455,58 @@ perdieron sino que se descartaron:
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-56. EVALUAR PARTIR EL EJE "DATOS" DE LA AUDITORÍA POR PAÍS (pedido de Guido, 2026-09-23). El eje
-    `datos` de `auditoria-finance-of-sports` (uno de los 5 que rotan, ver skill sección "Capa 3") lee
-    club por club buscando lo que un total correcto no delata — crece linealmente con la cantidad de
-    clubes cargados (hoy 61, el to-do 36 ya proyecta 200-3000). Evaluar si partirlo por país (una
-    corrida por país en vez de una corrida de todo el proyecto) evita que una auditoría se vuelva
-    demasiado larga para terminar en una sesión. No urgente a 61 clubes; conviene resolverlo antes de
-    que sí lo sea, no cuando ya esté rota.
+56. PARTIR EL EJE "DATOS" DE LA AUDITORÍA POR PAÍS + MOVER `brandColor` AL ONBOARDING — **DECIDIDO
+    por Guido el 2026-09-26, sesión de consejo (sin implementar, es el registro de la decisión para
+    quien lo agarre)**. Historial: pedido de Guido 2026-09-23; escalado con evidencia concreta el
+    2026-09-26 (`auditorias/2026-09-26.md` — la corrida de `datos` de esa mañana no pudo completar el
+    chequeo de `brandColor` sobre los 120 clubes nuevos desde el 2026-09-20, hizo un spot-check de
+    ~10 y encontró 2 con error real: `godoycruz-ar` y `fortaleza-br`, ver to-do 64). Mismo día, sesión
+    de consejo aparte (sin tocar código ni skills, solo investigación) evaluó 4+1 opciones y midió la
+    realidad actual antes de recomendar. Guido eligió DOS, que son complementarias, no alternativas:
+
+    **(a) Partir el eje `datos` de `auditoria-finance-of-sports/SKILL.md` por país**, en vez de una
+    corrida de todo el proyecto de una. Tocar: `.claude/skills/auditoria-finance-of-sports/SKILL.md`
+    sección "Capa 3" (la fila `datos` de la tabla) — describir que la corrida se elige por país, no
+    por el proyecto entero. Falta decidir el mecanismo de "a qué país le toca": el precedente que ya
+    existe en el proyecto para este mismo problema (qué está más desactualizado y por dónde
+    conviene arrancar) es `fuentes/README.md`, que trackea por país "N clubes, M con documento —
+    Chequeo más antiguo: FECHA" para sourcing — extender un campo análogo ("última auditoría de
+    datos: FECHA") a `fuentes/_indice/<País>.md` o al índice de `fuentes/README.md` sigue el mismo
+    patrón en vez de inventar uno nuevo. Tamaños reales medidos el 2026-09-26 para calibrar el
+    alcance de una corrida por país: Brasil (el más grande) tiene 32 clubes, España y Reino Unido 19
+    cada uno, Argentina 18 — todos muy por debajo de los 120 que no entraron en una sesión.
+
+    **(b) Mover la verificación de `brandColor` contra el escudo real AL ONBOARDING**, no a la
+    auditoría periódica. Tocar: `.claude/skills/club-or-year-onboarding/SKILL.md` (agregar el chequeo
+    al checklist de cierre de onboarding de un club nuevo) y, en consecuencia, achicar lo que la fila
+    `datos` de `auditoria-finance-of-sports/SKILL.md` pide revisar en cada corrida (ya no haría falta
+    pedir `brandColor` de "los clubes nuevos desde la última auditoría", porque cada uno ya se
+    verificó una vez al cargarlo). Por qué separado de (a): es un chequeo de 1 escudo contra 1 hex,
+    no se beneficia de mirar muchos clubes juntos (a diferencia de categorización/catch-all, que sí
+    se benefician de comparar patrones entre clubes — ver Versión 189, encontrado mirando 41 clubes
+    juntos). Se pierde la segunda mirada tardía, pero elimina el backlog de raíz: nunca se acumulan
+    120 clubes sin revisar si cada uno se revisó el día que se cargó.
+
+    **DEPENDENCIA entre (a) y (b), para priorizar el orden**: implementar (b) primero achica el
+    alcance de lo que (a) necesita cubrir por corrida (categorización/catch-all/tie-outs de fuente
+    quedan, `brandColor` ya no) — no es obligatorio hacerlo en ese orden, pero hacerlo reduce el
+    trabajo de diseñar (a). Son independientes en el sentido de que ninguna bloquea a la otra: se
+    pueden implementar en cualquier orden o en paralelo.
+
+    **LO QUE LA SESIÓN DE CONSEJO DESCARTÓ, con evidencia medida, para que no se reabra sin razón
+    nueva**: tocar `tools/audit.js` (Capa 1 determinística, la corrida de comandos). Medido en frío
+    el 2026-09-26: 0,56-0,58s de CPU a 161 clubes (0,93s/0,65s/0,65s de wall time en 3 corridas),
+    contra 0,28s a 41 clubes el 2026-09-17 — creció 2,1x mientras los clubes crecían 3,9x (exponente
+    ~0,53, sub-lineal). Proyectado con esa misma curva: ~0,65s a 200 clubes, ~1,5s a 1.000, **~2,8s
+    incluso en el techo de 3.000 clubes del to-do 36**. El script nunca fue el cuello de botella — el
+    problema es exclusivamente el tiempo de LECTURA MANUAL del eje de juicio, no de CPU. Por la misma
+    razón se descartó una versión "incremental/cacheada" del script (comparar qué cambió para
+    saltear una re-lectura): agregaría código para optimizar algo que ya tarda menos de 1 segundo.
+
+    **Relacionado pero SEPARADO, no confundir**: to-do 36 (JEV para categorizar rubros
+    automáticamente a 200 clubes) ataca la automatización de la categorización en sí, no la
+    organización de cuándo se revisa — es complementario a (a)/(b), no un sustituto (JEV no
+    categoriza `brandColor`, categoriza rubros financieros).
 
 50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR, DE COLOMBIA Y MÉXICO (de la Versión 202).
     Todos tienen el camino escrito, solo falta ejecutarlos:
@@ -256,13 +565,6 @@ perdieron sino que se descartaron:
         pero el número sigue siendo pobre hasta que haya más balances cargados.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
-    (a) RESUELTO (Versión 140). Inicio mostraba "DEUDA NETA ACTUAL: 0,0 M USD" para Boca y
-        "Último resultado" con la cifra del PRESUPUESTO. Causa: `renderInicioStats()` usaba "el
-        último ejercicio de la gestión actual" como sinónimo de "el estado actual del club". Ahora
-        cada stat pide el último ejercicio QUE TENGA SU DATO (el último balance para el resultado,
-        el último que informe deuda para la deuda) y escribe cuál es abajo del número, en vez de
-        esconderlo en un tooltip. Los presupuestos siguen escribiendo `grossDebt:0, cash:0` en sus
-        datos, pero ninguna vista los publica ya como si fueran un cero real.
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
         ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
         por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
@@ -298,10 +600,12 @@ perdieron sino que se descartaron:
     urgente y no depende de ninguna otra decisión.
 
 22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
-    para el mapa completo con su metodología, y `auditorias/2026-09-17-escala.md` para el reporte
-    de esta corrida). (a), (b), (c), (e), (f), (g), (h) e (i) resueltos y (d) descartado, se borran
-    de acá. **Con esto quedan cerrados los 8 puntos de `Admin/Archive/PLAN-REMEDIACION-ESCALA.md`.** Lo que sigue
-    abierto de escala:
+    para el mapa completo con su metodología, y `auditorias/2026-09-26-escala.md` para el reporte
+    de la corrida más reciente, con 161 clubes contra los 41 de la corrida anterior). (a)-(i) del
+    plan original resueltos o descartados — quedan cerrados los 8 puntos de
+    `Admin/Archive/PLAN-REMEDIACION-ESCALA.md`. Lo que sigue abierto de escala, de la corrida del
+    2026-09-26: ver to-do 62 (re-medir payload eager comprimido) y 63 (partir el bloque CLUB-INDEX
+    de `Admin/ESTADO.md`, más urgente — margen de 40-50 clubes al ritmo actual).
 
 36. EVALUAR JEV (TypeSafe, modelo `jev-latest`, docs.typesafe.ai) PARA CATEGORIZAR RUBROS
     AUTOMÁTICAMENTE, cuando el proyecto llegue a **200 clubes cargados** (charlado con Guido el
@@ -349,3 +653,37 @@ perdieron sino que se descartaron:
     recomendación es un PILOTO ACOTADO sobre esos ~27 clubes de los clusters de color repetido
     (no barrer los 41 de una), para probar legibilidad real a 24px antes de comprometerse.
     EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
+
+65. SEPARAR EL CSS INLINE DE `index.html` A UN `.css` PROPIO, PARA ABARATAR EDICIONES DE ESTILO EN
+    TOKENS (surgió de una conversación con Guido el 2026-09-26 sobre por qué sus pedidos de UI
+    salen caros en tokens — no es un pedido de cambio visual en sí, es tooling/arquitectura). Hoy
+    `index.html` pesa 142 KB / 2072 líneas y tiene un único bloque `<style>` embebido (arranca
+    ~línea 340) con todo el CSS del sitio. El JS YA está separado en `js/*.js` desde antes de este
+    punto — el CSS es lo único que sigue mezclado con el markup.
+
+    QUÉ RESUELVE: un pedido de estilo puro (color, padding, tamaño de fuente, border-radius —
+    ejemplo real usado para explicárselo a Guido: `.btn-primary`/`.btn-secondary`, líneas 349-350)
+    hoy obliga a ubicarse dentro del archivo de 142 KB completo; con el CSS en su propio archivo
+    (ej. `js/styles.css`), esas ediciones tocan un archivo bastante más chico y más rápido de leer/
+    grepear.
+
+    QUÉ NO RESUELVE, para no sobre-vender el cambio cuando se retome: un pedido que mueve un
+    elemento de una sección a otra de la página sigue tocando `index.html` (es estructura, no
+    estilo); un pedido de lógica de render (ej. "usá barras en vez de pie chart") YA vive en
+    `js/finanzas-render.js` desde antes y no pasa por este split para nada — este punto achica un
+    subconjunto de pedidos (estilo puro), no todos los pedidos de UI.
+
+    DEPENDENCIAS Y PARALELISMO, para quien priorice esta lista: ninguna dependencia — no depende
+    de ningún otro punto de esta lista ni bloquea a ninguno. Toca `index.html` (le saca el bloque
+    `<style>`) y crea un archivo nuevo; no pisa `data/`, `fuentes/`, `Clubes/` ni ningún archivo
+    específico de club, así que se puede hacer en paralelo con cualquier tarea de sourcing,
+    onboarding o auditoría en curso sin riesgo de conflicto de merge (mismo criterio de
+    partición por archivo que ya usa el proyecto para sourcing, ver más arriba en este documento).
+    Es chico y autocontenido: una sesión corta alcanza.
+
+    OJO AL EJECUTARLO: sumarle `?v=` al `<link>` del CSS nuevo, igual que ya llevan los
+    `<script src>` propios (ver CLAUDE.md, gotchas de `ASSET_V`) — cambiar el link sin bumpear
+    `ASSET_V`/los demás tags es peor que no tocar nada, mismo bug que ya pasó una vez migrando
+    `fx`. Verificar en el navegador que el sitio se vea IGUAL antes/después del split (screenshot
+    o `javascript_tool` chequeando que la regla se aplicó) antes de cerrar la sesión, con el mismo
+    cuidado de caché de `index.html`/pestaña nueva que ya documenta ese párrafo.

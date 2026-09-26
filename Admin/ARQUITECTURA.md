@@ -96,9 +96,9 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   siempre pasa por `computeYearGeneric()` — la cascada del resultado no se
   reimplementa nunca por afuera. Se alimenta solo de `clubs.js` +
   `club-index.js` + `leagues.js` + `club-leagues/<iso2>.js` (estos últimos lazy,
-  se bajan al abrir el modal): dibuja los 41 clubes sin
-  bajar un solo `data/<club>-data.js`, y recién baja los que hagan falta al
-  apretar "Comparar". La explicación larga del modelo está en
+  se bajan al abrir el modal): dibuja todos los clubes cargados (161 al
+  2026-09-26) sin bajar un solo `data/<club>-data.js`, y recién baja los que
+  hagan falta al apretar "Comparar". La explicación larga del modelo está en
   `Prototyping/Selector/MERGE-A-PRODUCCION.md`, secciones 0, 3 y 5.
   `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
   se borró en la Versión 152 y lo que hacía mejor está acá adentro.

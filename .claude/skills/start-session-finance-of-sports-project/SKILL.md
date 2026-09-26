@@ -18,14 +18,18 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | `Admin/ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 48 KB |
-| 2 | `Admin/CONVENCIONES.md` | **siempre** | 48 KB |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 23 KB |
+| 1 | `Admin/ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 56 KB |
+| 2 | `Admin/CONVENCIONES.md` | **siempre** | 53 KB |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 50 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |
-| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 84 KB |
-| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 71 KB |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 112 KB |
+| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 89 KB |
+| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 67 KB |
+| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 113 KB |
 | 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
+
+(Pesos re-medidos 2026-09-26, `wc -c`. `Admin/ESTADO.md` está a 4 KB del umbral de 60 KB que usa
+`tools/audit.js` — ver to-do 63 de `Admin/TODO.md`, ya hay un plan para achicarlo antes de que lo
+cruce.)
 
 **Los KB de esta tabla los chequea `node tools/audit.js`** (`doc-peso-desfasado`, P3, agregado en
 la auditoría de docs del 2026-09-20): existen para decidir qué abrir y qué no, así que un número
@@ -78,20 +82,24 @@ tipo de cambio caiga en un rango plausible).
 Por qué importa: los clubes se cargan por demanda, así que una carga normal de la página audita SOLO
 Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible.
 
-**Correlo siempre antes de pushear algo que toque datos.** El resultado esperado hoy es 41 clubes,
-228 checks, 0 que no cierran, 0 warnings.
+**Correlo siempre antes de pushear algo que toque datos.** El número de clubes y de checks sube con
+cada sesión de onboarding (161 clubes / 842 checks al 2026-09-26), así que no es ese total el que hay
+que comparar: es que "no cierran" y "warnings" no crezcan sin explicación. Hoy hay 3 checks que no
+cierran (Bayern Munich, Revenue y PAT 2025 — la única fuente es un comunicado de prensa que redondea a
+1 decimal, documentado en `data/bayernmunich-de-data.js`) y 0 warnings de fx. Un "no cierra" nuevo que
+no tenga ya un comentario en el `data/<club>-data.js` correspondiente es el que amerita parar.
 
 **`node tools/audit.js` es el otro lado de lo mismo** (Versión 122). `auditAll()` verifica que cada
 ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igual: ejercicios sin
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-22, Versión 196): 0 P0, 0 P1, 0 P2, 7 P3.
-Los 8 P2 que había hasta la 195 eran todos `.md` internos sueltos en la raíz: se cerraron de una
-mudándolos a `Admin/`, que `netlify.toml` saca entera del deploy con un solo `rm -rf`. **Desde la Versión 183 también chequea que los 4
-generadores estén al día** (`checkGenerados()`, P1): si tocaste `js/` o `data/` y subiste
-`ASSET_V`, hay que regenerar `fuentes.html` y sus 41 páginas, porque ese generador LEE `ASSET_V`
-de `index.html`.
+Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-26, 161 clubes): 0 P0,
+0 P1, 2 P2, 9 P3 (ver `auditorias/2026-09-26.md` para el detalle de cada uno). El número exacto sube y
+baja con cada sesión — lo que importa es que siga en 0 P0/P1, no el conteo de P2/P3. **Desde la
+Versión 183 también chequea que los 4 generadores estén al día** (`checkGenerados()`, P1): si tocaste
+`js/` o `data/` y subiste `ASSET_V`, hay que regenerar `fuentes.html` y sus páginas de club (161 hoy),
+porque ese generador LEE `ASSET_V` de `index.html`.
 
 Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
 el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en

@@ -284,9 +284,28 @@ function checkCategorias(api) {
   }
 }
 
+// Vocabulario de deducción fiscal SOBRE INGRESOS, en los idiomas de los países
+// ya cargados (pt-BR, es). No es una lista inventada para esta corrida: es la
+// generalización de 20+ entradas ya verificadas a mano una por una en
+// tools/audit-ignore.json (auditoría de tokens del 2026-09-26) y del propio
+// CLAUDE.md/sección 6 ("Un ingreso negativo... casi siempre es legítimo:
+// deducciones sobre a receita en Brasil"). Cada club brasileño nuevo trae 1-3
+// líneas de este tipo (impuestos/contribuciones sobre la receita bruta, según
+// exige la propia norma contable de allá) y hasta hoy cada una se volvía a
+// investigar y a silenciar a mano — mismo texto, mismo motivo, un club distinto.
+// SOLO cubre el lado INGRESO: del lado gasto los casos verificados son todos
+// distintos entre sí (rateo de gastos, recuperación de costos, revalúos), así
+// que ahí NO hay patrón que generalizar y siguen yendo a revisión caso a caso.
+// Si aparece un caso nuevo que matchea el texto pero NO es una deducción fiscal
+// real, la salida es la de siempre: agregarlo a mano a `tools/audit-ignore.json`
+// no alcanza (ya está fuera del P2) — hay que angostar este regex.
+const DEDUCCION_FISCAL_INGRESO_RE = /imposto|tribut[oaã]|dedu[çc][aã]o|deduc(ci[oó]n|tion)|reten[cç][ãa]o|retenci[oó]n|devolu(ç[ãa]o|ci[oó]n)|rebaja/i;
+const esDeduccionFiscalIngresoConocida = label => DEDUCCION_FISCAL_INGRESO_RE.test(label || '');
+
 // --- D6/D7/D8: higiene de las líneas ---------------------------------------
 function checkLineas(api) {
   let signosMenores = 0;
+  let deduccionesFiscalesConocidas = 0;
   for (const { clubId, year, rev, exp } of clubYears(api)) {
     // Un ingreso negativo o un gasto positivo casi siempre es legítimo (deducciones
     // sobre la receita en Brasil, variación de existencias en España). Lo que NO es
@@ -298,7 +317,11 @@ function checkLineas(api) {
         if (!l.amountNative || Math.sign(l.amountNative) === esperado) continue;
         const peso = Math.abs(l.amountNative) / total;
         if (peso > 0.02) {
-          add('P2', 'signo-invertido', `${ref(clubId, year)} ${sec} "${l.rawLabel}": ${l.amountNative} (${(peso * 100).toFixed(1)}% de la sección) — confirmar que es una deducción real y no un signo dado vuelta`);
+          if (sec === 'ingreso' && esDeduccionFiscalIngresoConocida(l.rawLabel)) {
+            deduccionesFiscalesConocidas++;
+          } else {
+            add('P2', 'signo-invertido', `${ref(clubId, year)} ${sec} "${l.rawLabel}": ${l.amountNative} (${(peso * 100).toFixed(1)}% de la sección) — confirmar que es una deducción real y no un signo dado vuelta`);
+          }
         } else {
           signosMenores++;
         }
@@ -332,6 +355,9 @@ function checkLineas(api) {
   }
   if (signosMenores) {
     add('P3', 'signos-menores', `${signosMenores} líneas con el signo opuesto al de su sección, todas por debajo del 2% del total (deducciones, variaciones de existencias y similares). Se listan solo las que pesan.`);
+  }
+  if (deduccionesFiscalesConocidas) {
+    add('P3', 'dedu-fiscal-conocida', `${deduccionesFiscalesConocidas} línea(s) de ingreso con signo invertido cuyo texto matchea vocabulario de deducción fiscal ya verificado en otros clubes (imposto/tributo/dedução/retención/devolución) — no se listan una por una porque el patrón, no el club, ya está confirmado. Si alguna resulta NO ser una deducción real, angostar DEDUCCION_FISCAL_INGRESO_RE en tools/audit.js.`);
   }
 }
 
@@ -539,6 +565,55 @@ function checkDeployInterno() {
     if (PAGINAS_DEL_SITIO.has(f) || excluidos.has(f)) continue;
     add('P2', 'doc-interno-no-excluido',
       `${f}: documento suelto en la raíz que netlify.toml no saca del deploy. Si es interno, movelo a Admin/ (no hay que tocar netlify.toml); si el contenido es para el visitante, dejá una entrada en tools/audit-ignore.json con el motivo`);
+  }
+}
+
+// --- D17b: el párrafo que explica netlify.toml, copiado en 3 archivos, con -
+//     números que se desincronizan (auditoría de docs, 2026-09-26) ----------
+// POR QUÉ. `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/CONVENCIONES.md` explican los
+// tres la misma mecánica de netlify.toml ("YA NO ES CIERTO DESDE EL 2026-09-20:
+// AHORA SÍ HAY netlify.toml...") con el mismo párrafo copiado a mano, y cada uno
+// nombra cuántas páginas `fuentes/<clubId>.html` se publican y cuántas notas
+// `fuentes/**/*.md` quedan afuera del deploy. Un crecimiento de clubes actualiza
+// esos números en UN archivo (el que tocó la sesión que cargó el club) y dos
+// quedan atrás — encontrado de verdad el 2026-09-26: `CONVENCIONES.md` seguía
+// diciendo "41 páginas" / "613 notas" mientras `CLAUDE.md` ya decía 161/655.
+// QUÉ VERIFICA: en cada archivo que tenga el párrafo, que sus dos números
+// coincidan con el conteo real de `fuentes/*.html` y `fuentes/**/*.md`.
+function checkParrafoNetlifyDuplicado() {
+  const ARCHIVOS = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/CONVENCIONES.md'];
+  const ANCLA = 'AHORA SÍ HAY `netlify.toml`';
+  let realPaginas = 0, realNotas = 0;
+  try {
+    realPaginas = fs.readdirSync(path.join(ROOT, 'fuentes')).filter(f => f.endsWith('.html')).length;
+  } catch (e) { return; }
+  const contarMd = (dir) => {
+    let n = 0;
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (e.isDirectory()) n += contarMd(path.join(dir, e.name));
+      else if (e.name.endsWith('.md')) n++;
+    }
+    return n;
+  };
+  try { realNotas = contarMd(path.join(ROOT, 'fuentes')); } catch (e) { /* sin fuentes/, no aplica */ }
+
+  for (const rel of ARCHIVOS) {
+    const abs = path.join(ROOT, rel);
+    if (!fs.existsSync(abs)) continue;
+    const texto = fs.readFileSync(abs, 'utf8');
+    const idx = texto.indexOf(ANCLA);
+    if (idx === -1) continue; // este archivo no (más) tiene el párrafo — no es un error
+    const parrafo = texto.slice(idx, idx + 600);
+    const mPaginas = parrafo.match(/Las (\d+) páginas/);
+    const mNotas = parrafo.match(/las (\d+) notas/);
+    if (mPaginas && Number(mPaginas[1]) !== realPaginas) {
+      add('P2', 'doc-parrafo-netlify-desfasado',
+        `${rel}: el párrafo de netlify.toml dice "${mPaginas[1]} páginas fuentes/<clubId>.html" pero hoy hay ${realPaginas} — mismo párrafo copiado en ${ARCHIVOS.join(', ')}, actualizalo en los 3`);
+    }
+    if (mNotas && Number(mNotas[1]) !== realNotas) {
+      add('P2', 'doc-parrafo-netlify-desfasado',
+        `${rel}: el párrafo de netlify.toml dice "${mNotas[1]} notas de fuentes/**/*.md" pero hoy hay ${realNotas} — mismo párrafo copiado en ${ARCHIVOS.join(', ')}, actualizalo en los 3`);
+    }
   }
 }
 
@@ -1360,6 +1435,7 @@ function main() {
   checkEscala(api);
   checkPesoDocs();
   checkDeployInterno();
+  checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
   checkHigiene(api);
 

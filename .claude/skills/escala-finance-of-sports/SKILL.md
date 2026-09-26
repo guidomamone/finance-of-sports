@@ -62,7 +62,7 @@ más de un archivo de club por visita.
 
 ---
 
-## 2. El mapa de puntos calientes (actualizado 2026-09-17, ver `auditorias/2026-09-17-escala.md`)
+## 2. El mapa de puntos calientes (actualizado 2026-09-26, ver `auditorias/2026-09-26-escala.md`)
 
 Formato de cada fila: **qué**, **a qué volumen se rompe** (con el número, no "no escala"), **estado**.
 
@@ -72,25 +72,40 @@ Formato de cada fila: **qué**, **a qué volumen se rompe** (con el número, no 
 |---|---|---|---|
 | `fuentes/README.md` (índice de sourcing) | Resuelto (Versión 158 de `main`, 2026-09-20): ahora es un índice de PAÍSES (132 líneas, 10 KB), y el detalle línea-por-club vive en `fuentes/_indice/<País>.md` (44 archivos) | — | **Resuelto**, mismo patrón recomendado acá (partir en `fuentes/_indice/<País>.md` + índice de países), ejecutado en paralelo por otra sesión el mismo día que este mapa se escribió (ver la posdata de la Versión 159 en `Admin/finance-of-sports-project.md` para la anécdota de la colisión de números de versión) |
 | `fuentes.html` | 14,5 KB (índice) + 41 páginas de ~6,5 KB | ya no crece por documento: el índice crece por CLUB (una fila) y cada página por los documentos de SU club | **RESUELTO (Versión 162).** Se partió por CLUB y no por país: `fuentes/<clubId>.html` una por club, `fuentes.html` como índice de links, más `sitemap.xml`. Se eligió por club en vez de por país porque es la unidad que el visitante busca y la que puede rankear sola en un buscador |
-| `Admin/ESTADO.md`, bloque CLUB-INDEX generado | 4,07 KB / 41 clubes (99 B/club) | ~600 clubes cruza el umbral de 60 KB que `tools/audit.js` ya usa para TODO `Admin/ESTADO.md` (que además tiene contenido fijo que sí hay que leer siempre) | **Nuevo.** Mover el bloque generado a un archivo separado (referenciado con puntero), mismo mecanismo que liberó a `index.html` de su comentario en la Versión 138 |
-| `index.html` | 128 KB | Umbral propio 150 KB, sin crecimiento por club desde la Versión 138 | Resuelto, monitoreado por `tools/audit.js` |
+| `Admin/ESTADO.md`, bloque CLUB-INDEX generado | 12,35 KB / 161 clubes (76,7 B/club, medido 2026-09-26) | **~218 clubes** cruza el umbral de 60 KB de TODO `Admin/ESTADO.md` — la proyección de "~600 clubes" de la corrida anterior estaba mal: asumía la prosa fija constante, pero esa prosa ya son 43,3 de los 60 KB de presupuesto (medido 2026-09-26), dejando solo ~16,7 KB para el bloque generado. Al ritmo actual (161 clubes el 2026-09-26, eran 41 el 2026-09-17) faltan 40-50 clubes, no cientos | **Vigente, más urgente que antes.** Mover el bloque generado a un archivo separado (referenciado con puntero), mismo mecanismo que liberó a `index.html` de su comentario en la Versión 138. Ver `auditorias/2026-09-26-escala.md` hallazgo 3 |
+| `index.html` | 141,4 KB (2026-09-26; era 128 KB el 2026-09-17) | Umbral propio 150 KB (92% hoy), sin crecimiento por club desde la Versión 138 — el crecimiento de estos 9 días es por FEATURES (selector, i18n, mezcla), no por los 120 clubes nuevos | Vigilar el umbral, pero no es un cuello de volumen de clubes — no hay número de clubes que lo dispare. Anotarlo para el eje `codigo` de la próxima auditoría de rutina, no para este mapa |
 | `CLAUDE.md`, `Admin/TODO.md` | 25-27 KB | No crecen por club (prosa de proceso) | Sano |
 | `Admin/CHANGELOG.md` / `Admin/finance-of-sports-project.md` | 167 KB / 482 KB | Umbrales generosos a propósito (consulta puntual, no lectura entera); el sourcing por lote (país entero en una entrada) amortigua el crecimiento por club | Sano MIENTRAS se mantenga el patrón de "una entrada por lote", no por club individual — vigilar si cambia |
 
-### B. Payload eager del navegador (`index.html` carga 8 archivos de `data/` ANTES de elegir club)
+### B. Payload eager del navegador (`index.html` carga 10 archivos de `data/` ANTES de elegir club)
 
-| Archivo | Hoy | Unidad | Proyección |
+Subió de 8 a 10 archivos desde la corrida anterior: se sumaron `data/lang/langs.js` (i18n) y
+`data/destacados.js` (rankings curados de Inicio). Ninguno de los dos escala por club — `langs.js`
+crece por idioma disponible (hoy 2), `destacados.js` tiene un tope editorial de 10 entradas — así que
+no cambian ninguna proyección, pero hay que contarlos al sumar el total.
+
+| Archivo | Hoy (2026-09-26, 161 clubes) | Unidad | Proyección a 1000 clubes |
 |---|---|---|---|
-| `data/clubs.js` | 405 B/club | club | ~395 KB a 1000 clubes |
-| `data/club-index.js` | 173 B/club | club | ~168 KB a 1000 clubes |
+| `data/clubs.js` | 341 B/club raw (bajó de 405 B/club a 41 clubes) | club | ~341 KB raw / ~89 KB gzip (26,4% de compresión medido hoy) |
+| `data/club-index.js` | 149 B/club raw (bajó de 173) | club | ~149 KB raw / ~23 KB gzip (15,3% de compresión medido hoy) |
 | `data/club-leagues.js` | **ya no crece: es tamaño fijo** (Versión 164) | ninguno | las filas se fueron a `data/club-leagues/<iso2>.js`, que se cargan al abrir el selector y no en la primera visita |
-| `data/currency-map.js` | 18 KB hoy | combinación moneda×fecha, compartida entre clubes | sub-lineal, no es cuello proporcional |
-| `data/leagues.js`, `category-map.js`, `site-labels.js`, `sources-view.js` | fijos | catálogo/taxonomía | no crecen con clubes |
+| `data/currency-map.js` | 30,3 KB hoy (18 KB a 41 clubes) | combinación moneda×fecha, compartida entre clubes | sub-lineal, no es cuello proporcional (creció 1,7x mientras los clubes crecían 3,9x) |
+| `data/leagues.js` | 16,4 KB hoy | catálogo de ligas, crece con países/divisiones | no proporcional a clubes |
+| `data/category-map.js`, `data/site-labels.js`, `data/sources-view.js`, `data/lang/langs.js`, `data/destacados.js` | fijos | catálogo/taxonomía/curaduría | no crecen con clubes |
 
-TRES NÚMEROS DISTINTOS, y una sesión se confundió entre ellos el 2026-09-20: los **~38 KB** de acá
-arriba son la suma de los TRES archivos que escalan, que es lo que dice esta línea y está bien. El
-payload eager COMPLETO son 8 archivos, **79,7 KB sin comprimir**. Y como viaja de verdad son **29,3
-KB**, porque Netlify sirve comprimido. Al citar uno, decí cuál.
+TRES NÚMEROS DISTINTOS, y una sesión se confundió entre ellos el 2026-09-20: los KB de arriba de
+`clubs.js`/`club-index.js` son los DOS archivos que escalan por club — no confundir con el payload
+eager COMPLETO (hoy 10 archivos, **164,0 KB sin comprimir / 49,7 KB comprimido**, medido 2026-09-26;
+era 8 archivos, 79,7 KB / 29,3 KB el 2026-09-17). Al citar un número, decí cuál de los tres es.
+
+**ACTUALIZACIÓN 2026-09-26: el comprimido ya subió 1,7x (29,3→49,7 KB) mientras los clubes subían
+3,9x (41→161).** Sigue siendo chico en términos absolutos y no amerita acción todavía, pero es la
+métrica que más rápido se mueve de este mapa — medirla de nuevo en la PRÓXIMA corrida de este eje
+(no esperar a que lleguen los 1000 clubes) es más barato que dejar que sorprenda. Proyección con la
+tasa de compresión de hoy: solo `clubs.js` + `club-index.js` ya suman ~112 KB comprimidos a 1000
+clubes, así que el total probablemente ronde 150-165 KB comprimidos ahí — bastante más que "un
+problema observable" si se llega sin haber vuelto a mirar. Ver `auditorias/2026-09-26-escala.md`
+hallazgo 2.
 
 **REGLA QUE SALIÓ DE EQUIVOCARSE (2026-09-20): proyectá sobre el COMPRIMIDO, no sobre bytes crudos.**
 Todos estos archivos son filas casi idénticas, que es exactamente lo que gzip aplasta. Dos
@@ -134,18 +149,22 @@ LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los 
 
 ### C. Runtime del navegador, sin límite
 
-- **Buscador del selector (`js/selector.js:1982`, `renderBusqueda`)**: sin debounce, filtra
-  `Object.keys(CLUB_INDEX)` completo en cada tecla, sin límite de resultados mostrados. A 41 clubes
-  invisible; a 1000-3000, cada tecla puede reconstruir cientos de nodos DOM con listener propio.
-  **Vigente, nuevo** (el selector jerárquico no existía en la auditoría de escala anterior).
-  Recomendación: debounce ~150-200ms + top-N con "mostrar más".
-- **Grid de clubes de un país en el constructor de mezcla (línea ~899)**: mismo patrón, sin
-  buscador de por medio — todo el país se renderiza de una.
+- **Buscador del selector y grid de país en el constructor de mezcla**: **RESUELTO** (confirmado
+  2026-09-26, versión exacta sin identificar — buscar `TOPE_RESULTADOS` en `git log -S` si hace
+  falta el número). `js/selector.js` tiene `grillaConTope(ids, caja, hazBoton, repintar, estado)`
+  (línea ~2093), un solo helper reusado por el buscador (`renderBusqueda`) Y por la grilla de país
+  del constructor de mezcla (línea ~1085) — los dos casos que este mapa marcaba como problema.
+  Tope de 30 resultados (`TOPE_RESULTADOS`) con expansión "Mostrar más" bajo demanda, debounce en el
+  input (ver comentario "Versión 165" en el código), y el texto normalizado para buscar se cachea una
+  sola vez por sesión de modal (`indiceBusqueda()`/`indiceClubPais()`) en vez de recalcularse en cada
+  tecla. Los propios comentarios del código ya razonan en términos de "a 3000 clubes", así que se
+  resolvió con el volumen objetivo en mente, no solo el síntoma de hoy.
 
 ### D. Scripts de `tools/` — confirmado que escalan bien (no gastar tiempo acá)
 
-- `tools/audit.js`: 0,28 s con 41 clubes → ~5-7 s proyectado a 1000. Un solo pase in-memory con el
-  motor real (`vm`), sin operación cuadrática.
+- `tools/audit.js`: 0,28 s con 41 clubes → 0,96 s con 161 (2026-09-26) → creciendo sub-linealmente
+  (3,9x clubes, ~2,1-3,4x tiempo según se mida CPU o wall). Proyección a 1000 sigue en el orden de
+  segundos. Un solo pase in-memory con el motor real (`vm`), sin operación cuadrática.
 - `tools/generate-club-index.js`, `tools/generate-fuentes-page.js`: mismo patrón, un pase sobre los
   archivos de club. Sano.
 - **`auditAll()` (en el navegador, NO en `tools/`)**: **RESUELTO en la Versión 160**, después de
@@ -163,7 +182,9 @@ LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los 
 
 ### E. Namespacing / IDs
 
-- **`clubId` sin país**: resuelto como MECANISMO, no como migración completa. `checkClubIds()` en
+- **`clubId` sin país**: resuelto como MECANISMO, no como migración completa. Confirmado 2026-09-26:
+  siguen siendo 41 clubes con id heredado (el mismo número que a 41 clubes en total el 2026-09-17) —
+  cero clubes nuevos de los 120 sumados desde entonces nacieron sin país en el id. `checkClubIds()` en
   `tools/audit.js` detecta el momento exacto en que un id heredado deja de ser inequívoco (P2) y
   marca cualquier club nuevo sin país (P2). No requiere más trabajo salvo mantenerlo — es el modelo a
   copiar para el resto de esta lista: un chequeo automático que avisa en el momento en que migrar
@@ -203,9 +224,12 @@ LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los 
 ### F. Documentación "una sección por club" en archivo único, más allá de `fuentes/README.md`
 
 - **`data/club-leagues.js`**: **RESUELTO (Versión 164)**. Se partió en `data/club-leagues/<iso2>.js`,
-  uno por país, cada uno autoregistrándose con `Object.assign` en la misma tabla (el patrón de
-  `sources{}`/`gestionesByClub{}` de la Versión 101). El repaso anual de ascensos y descensos pasa a
-  ser el de UN país. El archivo original quedó con las reglas y los 6 helpers, sin un dato.
+  uno por país (14 archivos, 80 KB en disco, 2026-09-26), cada uno autoregistrándose con
+  `Object.assign` en la misma tabla (el patrón de `sources{}`/`gestionesByClub{}` de la Versión 101).
+  El repaso anual de ascensos y descensos pasa a ser el de UN país. El archivo original quedó con las
+  reglas y los 6 helpers, sin un dato. **Confirmado sano a 289 filas (2026-09-26, era 241 a 41
+  clubes)**: 6 siguen en `null` sin verificar y 2 ejercicios reales sin fila — son huecos de DATO
+  (`liga-sin-verificar`/`liga-sin-fila` en `tools/audit.js`), no señal de que el split esté forzando.
   SE ELIGIÓ POR PAÍS Y NO POR LIGA, y se verificó el invariante que lo permite: sobre los 41 clubes,
   CERO juegan una liga de otro país, así que la carpeta de un país tiene todo lo que hace falta para
   contestar tanto "las ligas de este club" como "los clubes de esta liga".
@@ -214,12 +238,14 @@ LO QUE SE APRENDIÓ RESOLVIENDO `club-leagues.js`, y que conviene aplicar a los 
 
 ### G. Proceso, no código
 
-- **Backlog de transcripción (`Clubes/`)**: 1234 archivos `.md` en 18 países, para 41 clubes
-  efectivamente cargados — Bélgica sola tiene 315. No es un cuello de arquitectura (un directorio
-  por club no colisiona ni pesa como problema), es un aviso de ritmo: la fase de
-  sourcing+transcripción ya corre ~8x más rápido que la carga real al sitio. El cuello real para
-  llegar a 1000-3000 clubes no va a ser ningún archivo de este repo — va a ser el trabajo de sesión
-  de mapear y verificar cada balance uno por uno (ver `club-data-mapping`).
+- **Backlog de transcripción (`Clubes/`)**: **la brecha se está cerrando, no agrandando** (medido
+  2026-09-26). A 41 clubes cargados (2026-09-17) había 336 carpetas y 1.234 `.md` para 41 clubes
+  efectivamente cargados (8,2x y 30x). Hoy, con 161 cargados, hay 363 carpetas y 1.297 `.md` (2,25x y
+  8,05x) — la fase de carga real le ganó terreno a la de sourcing en 9 días, al revés de lo que decía
+  esta fila antes. Sigue sin ser un cuello de arquitectura (un directorio por club no colisiona ni
+  pesa como problema); sigue siendo un aviso de RITMO, solo que ahora en la dirección contraria: el
+  cuello para llegar a 1000-3000 clubes cargados sigue siendo el trabajo de sesión de mapear y
+  verificar cada balance uno por uno (ver `club-data-mapping`), no la falta de material ya sourceado.
 
 ### H. Techo del modelo (no es un cuello de volumen, es de alcance)
 
@@ -234,14 +260,15 @@ mapa no cubre (cantidad, no diversidad), y conviene no confundir las dos.
 Emparentado con H pero distinto: no es un club de OTRO deporte, es un club de fútbol con un colegio,
 un polideportivo o una tienda — el modelo de club social argentino. Hoy se resuelve sumando una fila
 más a Formato simplificado por cada negocio nuevo que aparece (`education`, Versión 189), la misma
-lista para los 41 clubes. Eso escala mal por VARIEDAD de rubros, no por cantidad de clubes: cada fila
-nueva aparece en $0 para todos los que no la tienen. **Decisión de Guido (2026-09-22): no decidir
-ahora, mirarlo evolucionar a medida que se cargan más clubes y deportes.** Medido en el relevamiento
-de la Versión 189 (`auditorias/2026-09-22-catchall-no-futbol.md`): 4 de 41 clubes muestran el patrón
-hoy (Vélez, Instituto, Unión, Estudiantes). Si esto crece bastante más — la sesión de la 189 tiró
-~30 como orden de magnitud para volver a mirarlo, sin que sea un número decidido — es el momento de
-evaluar un eje separado ("Otros negocios del club", con filas propias por club en vez de una lista
-fija para los 41) en vez de seguir sumando filas a Formato simplificado.
+lista para todos los clubes cargados. Eso escala mal por VARIEDAD de rubros, no por cantidad de
+clubes: cada fila nueva aparece en $0 para todos los que no la tienen. **Decisión de Guido
+(2026-09-22): no decidir ahora, mirarlo evolucionar a medida que se cargan más clubes y deportes.**
+Medido en el relevamiento de la Versión 189 (`auditorias/2026-09-22-catchall-no-futbol.md`): 4 de 41
+clubes mostraban el patrón (9,8%). **Actualizado 2026-09-26: 16 de 161 (9,9%)** — mismo ritmo
+proporcional, no se aceleró. Si esto crece bastante más — la sesión de la 189 tiró ~30 como orden de
+magnitud para volver a mirarlo, sin que sea un número decidido — al ritmo actual eso ronda los ~300
+clubes cargados. Ahí es el momento de evaluar un eje separado ("Otros negocios del club", con filas
+propias por club en vez de una lista fija) en vez de seguir sumando filas a Formato simplificado.
 
 ---
 

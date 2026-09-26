@@ -15,6 +15,116 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 237 — chequeo de git post-auditorías + 2 to-dos nuevos (saved searches, commit pendiente)
+
+- `tools/audit-ignore.json`: 2 entradas nuevas para `ruta-muerta` (`Admin/ESTADO-clubes.md` y
+  `Admin/test-costo-transcripcion.md`, ambos nombres de archivo PROPUESTOS dentro de to-dos
+  existentes, todavía no creados a propósito — no son punteros rotos).
+- `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: la tabla de pesos de la
+  sección 1 estaba desactualizada en casi todos sus renglones (crecieron entre 41 y 161 clubes);
+  re-medida con `wc -c` y actualizada entera. Esto apagó el P3 `doc-peso-desfasado` que había
+  disparado `tools/audit.js` sobre `Admin/TODO.md`.
+- `Admin/TODO.md`: dos to-dos nuevos. **70**, pedido de producto de Guido: guardar las búsquedas de
+  cada usuario como "Saved Searches", visibles en su cuenta — primera razón de producto para tener
+  cuentas de usuario (distinta del corte free/paid ya descartado el 2026-09-14, que sigue
+  descartado). **69**: hay trabajo real de varias sesiones concurrentes del 2026-09-26 (la rotación
+  completa de auditoría, Versiones 230-236, más 5 reportes en `auditorias/`) sin commitear — nada
+  roto (`tools/audit.js` sigue en P0 0 / P1 0), pero mezclado entre sesiones y sin revisar junto
+  todavía, así que se deja para que alguien lo revise y commitee con criterio en vez de hacerlo a
+  ciegas.
+
+## Versión 236 — decisión de Guido: partir el eje `datos` por país + mover `brandColor` al onboarding
+
+- Sesión de consejo (sin tocar código ni skills): midió en frío `tools/audit.js` — 0,56-0,58s CPU a
+  161 clubes contra 0,28s a 41 (2026-09-17), sub-lineal (exponente ~0,53), proyectado ~2,8s incluso
+  a 3.000 clubes (techo del to-do 36). **El script nunca fue el cuello de botella** — el problema es
+  exclusivamente el tiempo de lectura MANUAL del eje de juicio `datos`, que ya se rompió el
+  2026-09-26 (120 clubes nuevos sin poder revisar `brandColor`, spot-check de solo ~10).
+- Comparó 4 opciones (partir por país, dejarlo como está, incremental/cacheado en el script, mover
+  el chequeo al onboarding) contra el precedente ya existente en el proyecto (`fuentes/README.md`
+  trackea staleness por país para sourcing con el mismo patrón que haría falta acá).
+- **Guido decidió dos, complementarias**: (a) partir el eje `datos` por país (`auditoria-finance-of-
+  sports/SKILL.md`, Capa 3) y (b) mover la verificación de `brandColor` al cierre del onboarding
+  (`club-or-year-onboarding/SKILL.md`), en vez de a la auditoría periódica. Descartado tocar
+  `tools/audit.js` (no hace falta, medido). Registrado en **to-do 56** con el contexto completo,
+  la dependencia entre (a) y (b), y los tamaños reales por país (Brasil 32, España/Reino Unido 19,
+  Argentina 18) para calibrar el alcance de una corrida — sin implementar todavía.
+
+## Versión 235 — auditoría de tokens (161 clubes, eje `tokens`), cierra la tercera vuelta de la rotación
+
+- `auditorias/2026-09-26-tokens.md`, corrida completa del eje `tokens`, contra la línea de base
+  `2026-09-20-tokens.md` (41 clubes). El piso de arranque obligatorio creció 49% (119→179 KB)
+  mientras el proyecto creció 3,9x en clubes (41→161) — sub-lineal, sano, misma conclusión que ya
+  sacó `escala` hoy para `index.html` (crece por feature, no por club). Las dos pilas de tarea
+  (onboarding, sourcing) crecieron más (+29% y +39%) porque `club-data-mapping`/`club-sourcing`
+  acumularon los criterios de las docenas de clubes nuevos — no se recortó nada ahí, cada criterio
+  existe por un error real que costó encontrarlo.
+- **`tools/audit.js`**: `checkLineas()` generaliza el chequeo `signo-invertido` para reconocer, del
+  lado ingreso, el vocabulario de deducción fiscal ya verificado 31 veces en clubes brasileños/
+  hispanohablantes (imposto/tributo/dedução/retención/devolución) — nuevo agregado
+  `P3 dedu-fiscal-conocida` en vez de pedir una entrada nueva de `tools/audit-ignore.json` por cada
+  club que repite el mismo patrón. Probado con `git stash` sacando y devolviendo una entrada real
+  (`cruzeiro 2024`) para confirmar que el chequeo viejo SÍ la pedía y el nuevo no. "Silenciados"
+  bajó de 114 a 83 — no por dejar de verificar nada, sino porque esas 31 entradas dejaron de hacer
+  falta.
+- `start-session-finance-of-sports-project/SKILL.md`: corregido el peso prometido de `Admin/TODO.md`
+  (23→32 KB, `doc-peso-desfasado`).
+- **Borrado to-do 23(a)** de `Admin/TODO.md`: estaba marcado RESUELTO desde la Versión 140 citando
+  `renderInicioStats()`, función borrada en la Versión 184 — llevaba ~92 versiones sin borrarse,
+  contra la propia regla del proyecto de no dejar puntos resueltos marcados en vez de sacados.
+- Corrida en paralelo con `docs` (Versión 234) y el mismo día que `datos`/`escala`/`código`
+  (231-233): con las cinco, se cierra la tercera vuelta completa de la rotación.
+
+## Versión 234 — auditoría de docs (161 clubes, eje `docs`), corrida en paralelo con `tokens`
+
+- `auditorias/2026-09-26-docs.md`, corrida completa del eje `docs` (la anterior era
+  `2026-09-20-docs.md`, 41 clubes).
+- **Encontrado y corregido en el momento**: el párrafo que explica qué borra `netlify.toml` del
+  deploy estaba copiado a mano en `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/CONVENCIONES.md` — la
+  copia de `CONVENCIONES.md` tenía los números de antes del crecimiento a 161 clubes (41 páginas /
+  613 notas) y describía el mecanismo de forma vieja (lista de archivos sueltos en vez de "la
+  carpeta `Admin/` entera", que es lo que hace `netlify.toml` de verdad desde la Versión 196).
+  Corregida, alineada con `CLAUDE.md`. La copia de `Admin/ESTADO.md` tenía la misma redacción vieja
+  (sus números ya estaban al día por la auditoría de `datos` de hoy) — corregida también al
+  mergear los hallazgos de esta corrida.
+- **`tools/audit.js` gana `checkParrafoNetlifyDuplicado()`** (P2, `doc-parrafo-netlify-desfasado`):
+  compara las 3 copias del párrafo contra el conteo real de `fuentes/*.html` y `fuentes/**/*.md`,
+  probado rompiendo un número a propósito antes de darlo por bueno.
+- Dos snapshots vencidos en `start-session-finance-of-sports-project/SKILL.md` §4 (el "resultado
+  esperado" de `auditAll()`/`tools/audit.js` seguía citando 41 clubes y datos del 2026-09-22,
+  incluyendo "0 que no cierran" cuando hoy hay 3 ya explicados por redondeo de fuente): reescritos
+  con los números de hoy y un criterio que no vuelve a vencer solo (compara contra la explicación ya
+  documentada en el data-file, no contra un total fijo).
+- Mismo patrón en `Admin/ARQUITECTURA.md` ("dibuja los 41 clubes...", corregido a "todos los clubes
+  cargados (161 al 2026-09-26)").
+- Reconfirmado sin cambios: el patrón "cita código ya borrado" (hallazgo estrella del 2026-09-20) no
+  reapareció en las 9 funciones chequeadas, y la duplicación de datos de club sigue resuelta.
+
+## Versión 233 — auditoría de código (161 clubes, eje `codigo`), reverifica la Versión 232 el mismo día
+
+- `auditorias/2026-09-26-codigo.md`, corrida completa del eje `codigo` de
+  `auditoria-finance-of-sports`, pedida fuera de rotación (la última corrida de este eje era
+  `2026-09-20.md`, 41 clubes). Los 5 chequeos del skill, todos limpios: consola (solo el beacon de
+  Cloudflare ya conocido y 3 avisos de `bayernmunich-de` ya explicados), `Chart.instances` estable
+  (6→6) sobre 15 ciclos de navegación y 10 de toggles, listeners netos en `window`/`document` en
+  1/1 (balanceado), `loadClubData()` con un club forzado a 404 sigue mostrando el aviso visible
+  desde Finanzas (to-do 40 de la corrida anterior, confirmado que sigue arreglado), y 0 deriva en
+  10 ciclos de moneda×formato sobre Boca 2025.
+- **La Versión 232 (pestaña Ligas, botón de volver, cards por continente) se revisó el mismo día que
+  se commiteó**: 15 ciclos completos de entrar/salir de una liga no dejaron cargando ningún chart
+  huérfano ni agregaron un listener neto a `window`/`document`. Sin hallazgos.
+- **Gotcha de entorno nuevo en `CLAUDE.md`**: el propio `index.html` (no solo sus `<script src>`) se
+  puede quedar cacheado entero en el navegador de esta sesión — una pestaña nueva siguió leyendo
+  `ASSET_V` viejo. Único fix que funcionó: un query string en la URL de nivel superior (`/?cb=...`),
+  no en un `<script src>`.
+- Aparte, no de código: se notó que el `to-do 40` de `Admin/TODO.md` se reusó para dos temas
+  distintos en momentos distintos (el aviso de error de carga, cerrado en la Versión 172, y después
+  el CMS sin código) — contradice la convención de no reusar números liberados. Anotado para el
+  próximo eje `docs`, sin acción en esta corrida.
+- Corridas concurrentes el mismo día: `auditorias/2026-09-26.md` (`datos`, Versión 231) y
+  `auditorias/2026-09-26-escala.md` (`escala`, Versión 230, otra sesión). Con las tres, faltan
+  `docs` y `tokens` para cerrar la tercera vuelta completa de la rotación.
+
 ## Versión 232 — pestaña Ligas: botón de volver, cards por continente
 
 - `js/liga.js`: al elegir una liga no había forma de volver al estado frío (la grilla de ligas) más
@@ -94,8 +204,10 @@ que dice `ESTADO.md` era verdad ese día.
 - `club-sourcing/SKILL.md`: nueva instrucción — guardar la URL exacta de un video/nota de prensa,
   no solo el título (el gap se encontró de verdad: `fuentes/Argentina/Banfield.md` tenía el título
   del video del 105° Ejercicio pero no el link).
-- `fuentes/Argentina/Banfield.md`: agregado el link real del video
-  (`youtube.com/watch?v=0CW5sF2NSGg`, encontrado con `WebSearch`).
+- `fuentes/Argentina/Banfield.md`: intento de agregar el link del video vía `WebSearch`
+  (`youtube.com/watch?v=0CW5sF2NSGg`) **corregido el mismo día** — Guido confirmó que ese resultado
+  era un falso positivo (un video sobre agricultura, sin relación), no el video real. Revertido a
+  "link sin confirmar, buscar a mano" en vez de dejar una URL incorrecta citada como fuente.
 - Nota aparte, no de esta sesión: `Admin/CHANGELOG.md` tiene DOS entradas "Versión 216" (esta de
   `club-outreach` — ya renumerada por otra sesión a la 218 — y una de "logging de búsquedas y
   comparaciones" agregada después). Detectado, no corregido acá: hay varias sesiones concurrentes

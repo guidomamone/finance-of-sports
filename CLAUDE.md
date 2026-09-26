@@ -26,7 +26,7 @@ El repo de GitHub es `guidomamone/finance-of-sports` y el dominio
 `financeofsports.com`; el nombre viejo (`numeros-de-boca`) sigue
 redirigiendo.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 41 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 655 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 161 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
 
 **DÓNDE PONER UN DOCUMENTO NUEVO (Versión 196).** Si es interno —cualquier cosa escrita para Guido o para una sesión futura: estado, reglas, notas, planes— va adentro de `Admin/`, y no hay que tocar `netlify.toml` ni el `.gitignore`. Si lo dejás suelto en la raíz, se publica: `node tools/audit.js` lo caza (`doc-interno-no-excluido`) y te dice que lo muevas. Hasta la Versión 195 la exclusión era una lista de nombres a mano y ya se había escapado tres veces — la última, `COMO-CORRE-EL-PROYECTO.html`, estuvo servido en producción porque el chequeo solo miraba `.md`. **La extensión no dice nada sobre si un documento es interno.** `CLAUDE.md` es la única excepción que se queda en la raíz, porque Claude Code lo carga por convención desde ahí.
 
@@ -302,6 +302,15 @@ de los skills de `.claude/skills/`) se lee siempre, sea cual sea la tarea.
   entre navegaciones); si el error es sospechosamente el mismo que uno ya
   arreglado, volvé a chequear el estado real en vez de confiar en la lectura
   de consola.
+  **NUEVO (auditoría de código, Versión 231→232, 2026-09-26): el propio `index.html` se puede quedar
+  cacheado ENTERO, no solo sus `<script src>`.** Encontrado auditando en vivo justo cuando otra
+  sesión pisó `ASSET_V` de 228 a 231: una pestaña nueva (`tabs_create`) seguía leyendo
+  `window.ASSET_V === '228'` — o sea, ni siquiera pedía el HTML de nuevo, cache de la respuesta a
+  `/` misma. La única forma que funcionó de forzar un fetch real del documento: navegar con un query
+  string en la URL de nivel superior, no en un `<script src>` (`http://localhost:8971/?cb=<lo que
+  sea>`). Confirmalo con `window.ASSET_V` (o cualquier otro global reciente) antes y después de
+  agregar el query string si sospechás que estás mirando un `index.html` viejo pese a haber abierto
+  pestaña nueva.
 - **Un diálogo nativo abierto (`alert`/`confirm`) congela TAMBIÉN las herramientas
   de debug** (sesión 2026-09-13, Versión 137, costó una hora). Si `javascript_tool`
   empieza a dar timeout, si un `setTimeout` de 300 ms no resuelve, o si un

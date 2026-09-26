@@ -274,7 +274,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 131 páginas, el índice y `sitemap.xml` los GENERA
+  Las 161 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -566,7 +566,7 @@ completo está en `Admin/CONVENCIONES.md`.
   `Clubes/` cada sesión. Es una FOTO puntual, no se regenera sola: borrar la línea de lo que se vaya
   onboardeando.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY los documentos internos (`CLAUDE.md`, `Admin/finance-of-sports-project.md`, `Admin/dudas-por-club.md`, las 613 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`). O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 131 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, sigue publicándose salvo que lo agregues a esa lista.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 655 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 161 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, va adentro de `Admin/` si es interno (no hace falta tocar este archivo); si lo dejás suelto en la raíz, se publica.**
 
 ---
 
