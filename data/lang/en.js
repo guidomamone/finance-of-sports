@@ -158,6 +158,7 @@ window.I18N.strings.en = {
   "modal.send": "Send",
   "modal.sub": "Questions, suggestions or data to improve the site. You can stay anonymous.",
   "modal.title": "Contact",
+  "liga.back": "Back to Leagues",
   "liga.caveats": "Caveats",
   "liga.club": "Club",
   "liga.club1": "club",

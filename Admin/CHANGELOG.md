@@ -15,6 +15,93 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 232 — pestaña Ligas: botón de volver, cards por continente
+
+- `js/liga.js`: al elegir una liga no había forma de volver al estado frío (la grilla de ligas) más
+  que el nav, que además la reconstruye de cero. Nuevo botón "‹ Volver a Ligas" arriba de la liga
+  elegida (`botonVolver()`), que solo resetea `st` y vuelve a renderizar — no navega, así que no
+  pierde la posición de scroll.
+- `estadoFrio()` (la grilla de las ligas, pedido explícito de Guido, 2026-09-26): pasó de una grilla
+  plana ordenada por tier+nombre a un card por continente (`REGIONS`, mismo orden editorial que usa
+  el selector jerárquico), y dentro de cada card, país y liga en orden alfabético (`paisesDeRegionAlfa()`,
+  `ligasDePaisAlfa()`) — a diferencia del selector, acá no hay ningún tier a la vista que justifique
+  ordenar por escalón primero.
+- CSS nuevo en `index.html`: `.liga-frio-cont`/`.liga-frio-cont-t` (el card y su título de
+  continente) y `.liga-volver` (mismo lenguaje visual que `.liga-club-link`, texto azul sin fondo).
+- `data/lang/en.js`: clave nueva `liga.back`.
+- `ASSET_V` 229 → 231 (231 para no pisar la 230 de la auditoría de escala concurrente) y
+  `node tools/generate-fuentes-page.js` corrido de nuevo por el bump.
+
+## Versión 231 — auditoría de datos (161 clubes, eje `datos`), se cierra la segunda vuelta de la rotación
+
+- `auditorias/2026-09-26.md`, corrida completa del eje `datos` de `auditoria-finance-of-sports`,
+  contra la última corrida de este eje (`2026-09-13.md`, 41 clubes). Los 7 grupos de P2 de esa línea
+  de base (to-do 20, 8 subpuntos) están todos cerrados; `tools/audit.js` bajó de 52 P2/7 P3 a 2 P2/9
+  P3 pese a que el proyecto casi se cuadruplicó.
+- **P1 arreglado en el momento**: `fuentes.html` y sus 161 páginas de club habían quedado atrás de
+  `data/clubs.js`. `node tools/generate-fuentes-page.js` las regeneró (297 documentos en total).
+- **Dos números stale corregidos** en `CLAUDE.md` y `Admin/ESTADO.md`: decían "41 páginas
+  `fuentes/<clubId>.html`" y "613 notas de `fuentes/**/*.md`" desde que el proyecto tenía 41 clubes;
+  ahora dicen 161 y 655 (conteo real).
+- **Hallazgo principal del eje de juicio**: la verificación de `brandColor` contra el escudo real de
+  los clubes nuevos desde la última corrida (120, de 41 a 161) no se pudo cubrir entera en una
+  sesión. Un spot-check de ~10 encontró 2 casos con problema (`godoycruz-ar`: azul saturado en vez
+  de celeste; `fortaleza-br`: rojo elegido para un club tricolor declarado, inconsistente con
+  `saopaulo-br`/`bahia-br` que sí quedaron en `null` por el mismo motivo). Quedan ~108 clubes sin
+  ninguna verificación. **to-do 56** (partir el eje `datos` por país, pedido de Guido 2026-09-23)
+  pasa de "no urgente" a tener evidencia concreta; **to-do 64** nuevo con los 2 `brandColor` a
+  corregir y el hueco de catálogo de ligas de segunda división (`liga-sin-fila`, ya documentado
+  a propósito en `data/club-leagues/dk.js` y `be.js`, pero sigue marcando en cada corrida).
+- Corrida concurrente el mismo día: `auditorias/2026-09-26-escala.md` (Versión 230, otra sesión). Los
+  dos reportes se referencian entre sí para no duplicar mediciones.
+
+## Versión 230 — auditoría de escala (161 clubes, eje `escala`)
+
+- `auditorias/2026-09-26-escala.md`, corrida completa del eje `escala` de
+  `.claude/skills/escala-finance-of-sports/`, la primera desde el 2026-09-17 (41→161 clubes en 9
+  días). Resueltos desde la corrida anterior: buscador del selector y grid de país del constructor
+  de mezcla (`grillaConTope()`, tope 30 + debounce + índice de texto cacheado); `auditAll()` en
+  tandas se reconfirma sin cambios.
+- Hallazgo nuevo, el más urgente del reporte: `Admin/ESTADO.md` va a cruzar su umbral de 60 KB en
+  ~218 clubes (40-50 clubes más al ritmo actual), no en "~600" como proyectaba el mapa viejo — la
+  proyección anterior asumía la prosa fija constante, y hoy esa prosa sola ya son 43,3 de los 60 KB
+  de presupuesto. To-do 63 nuevo: mover el bloque `CLUB-INDEX` generado a un archivo separado.
+- Payload eager de `index.html` (10 archivos desde que se sumaron `data/lang/langs.js` y
+  `data/destacados.js`): comprimido subió de 29,3 a 49,7 KB en 9 días (1,7x, mientras los clubes
+  subían 3,9x). Sigue sin ameritar el refactor pospuesto el 2026-09-20, pero to-do 62 nuevo: re-medir
+  en la próxima corrida en vez de esperar a 1000 clubes.
+- Confirmado sano sin cambios de fondo: `clubId` heredado (41, sin crecer), `data/club-leagues.js`
+  (289 filas, partido por país), backlog de transcripción en `Clubes/` (la brecha con lo cargado se
+  achica, no se agranda: 2,25x carpetas y 8,05x `.md` contra 8,2x y 30x el 2026-09-17), catch-all
+  no-futbolístico (16/161 clubes, 9,9%, mismo ritmo que el 9,8% de la Versión 189), `tools/audit.js`
+  (0,96 s con 161 clubes, sub-lineal).
+- `.claude/skills/escala-finance-of-sports/SKILL.md` actualizada con todos los números de esta
+  corrida. `Admin/TODO.md`: to-do 22 apunta al reporte nuevo; agregados 62 y 63.
+
+## Versión 229 — club-outreach: regla de exhaustividad, cierre obligatorio, video como fuente
+
+- `club-outreach/SKILL.md` (pedido de Guido, 2026-09-26), tres reglas nuevas:
+  - **Exhaustividad**: un club recién está listo para el primer mail cuando se agotó el sourcing de
+    al menos sus últimos 5 ejercicios y se onboardeó lo que se haya encontrado — recién ahí se
+    compilan TODAS las dudas/candidatos-a-mail pendientes en UN SOLO mail, nunca uno por pregunta a
+    lo largo de varios meses.
+  - **Cierre obligatorio**: todo mail invita a pasarse por financeofsports.com y deja en claro que
+    el sitio está en construcción (variando la redacción exacta entre mails).
+  - **Video como fuente**: un documento que solo existe como presentación en YouTube (ej. Banfield,
+    105° Ejercicio) es válido si Guido lo mira y saca las cifras a mano — mismo tratamiento que un
+    PDF. Si el video no tiene números reales, el mail lo dice explícitamente en vez de simular que
+    no se buscó.
+- `club-sourcing/SKILL.md`: nueva instrucción — guardar la URL exacta de un video/nota de prensa,
+  no solo el título (el gap se encontró de verdad: `fuentes/Argentina/Banfield.md` tenía el título
+  del video del 105° Ejercicio pero no el link).
+- `fuentes/Argentina/Banfield.md`: agregado el link real del video
+  (`youtube.com/watch?v=0CW5sF2NSGg`, encontrado con `WebSearch`).
+- Nota aparte, no de esta sesión: `Admin/CHANGELOG.md` tiene DOS entradas "Versión 216" (esta de
+  `club-outreach` — ya renumerada por otra sesión a la 218 — y una de "logging de búsquedas y
+  comparaciones" agregada después). Detectado, no corregido acá: hay varias sesiones concurrentes
+  trabajando sobre el mismo working tree ahora mismo, y renumerar historia ya commiteada le
+  corresponde a una decisión de Guido, no a un arreglo de paso.
+
 ## Versión 228 — inventario completo de pendientes de sourcing/onboarding
 
 - Pedido explícito de Guido: "hace la lista entera de pdfs que faltan transcribir y de

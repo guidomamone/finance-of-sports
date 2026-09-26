@@ -180,6 +180,7 @@ window.LIGA_VIEW = (function(){
     if(!st.league){ wrap.appendChild(estadoFrio()); return; }
 
     var r = rankingDe(st.league, st.year);
+    wrap.appendChild(botonVolver());
     if(!r){
       wrap.appendChild(el('p', 'liga-vacio', t('liga.nodata',
         'Todavía no hay ningún ejercicio cargado de esta liga.')));
@@ -197,26 +198,65 @@ window.LIGA_VIEW = (function(){
   // puede llegar por el nav sin haber elegido nada. En vez de una pantalla vacía
   // o de un "elegí algo", se ofrecen las ligas que existen: `LEAGUES` es eager,
   // así que esto no cuesta ni un pedido de red.
+  //
+  // AGRUPADO POR CONTINENTE (pedido explícito de Guido, 2026-09-26), en el mismo
+  // orden declarado de `REGIONS` que usa el selector jerárquico (js/selector.js) —
+  // no alfabético, es un orden editorial. Dentro de cada card, país y liga van
+  // alfabéticos: a diferencia del selector, acá no hay ningún tier a la vista que
+  // justifique ordenar por escalón primero.
+  function paisesDeRegionAlfa(regionId){
+    return Object.keys(window.COUNTRIES || {})
+      .filter(function(cid){ return window.COUNTRIES[cid].region === regionId; })
+      .sort(function(a, b){
+        var A = window.COUNTRIES[a], B = window.COUNTRIES[b];
+        return t(A.key, A.name).localeCompare(t(B.key, B.name), 'es', {sensitivity:'base'});
+      });
+  }
+  function ligasDePaisAlfa(cid){
+    return Object.keys(window.LEAGUES || {})
+      .filter(function(lid){ return window.LEAGUES[lid].country === cid; })
+      .sort(function(a, b){ return ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'}); });
+  }
+  function botonLiga(lid){
+    var lg = ligaDe(lid), co = paisDe(lid);
+    var b = el('button', 'liga-frio-btn');
+    b.type = 'button';
+    b.appendChild(el('span', 'liga-frio-flag', co.flag || '🏆'));
+    b.appendChild(el('span', 'liga-frio-n', lg.name));
+    b.appendChild(el('span', 'liga-frio-m',
+      (co.key ? t(co.key, co.name) : '') + ' · ' + (window.tierLabel ? window.tierLabel(lg.tier) : '')));
+    b.addEventListener('click', function(){ show(lid); });
+    return b;
+  }
   function estadoFrio(){
     var caja = el('div', 'liga-frio');
     caja.appendChild(el('p', 'liga-frio-t', t('liga.pick', 'Elegí una liga')));
-    var grid = el('div', 'liga-frio-grid');
-    Object.keys(window.LEAGUES || {}).sort(function(a, b){
-      var A = ligaDe(a), B = ligaDe(b);
-      return (A.tier - B.tier) || A.name.localeCompare(B.name, 'es', {sensitivity:'base'});
-    }).forEach(function(lid){
-      var lg = ligaDe(lid), co = paisDe(lid);
-      var b = el('button', 'liga-frio-btn');
-      b.type = 'button';
-      b.appendChild(el('span', 'liga-frio-flag', co.flag || '🏆'));
-      b.appendChild(el('span', 'liga-frio-n', lg.name));
-      b.appendChild(el('span', 'liga-frio-m',
-        (co.key ? t(co.key, co.name) : '') + ' · ' + (window.tierLabel ? window.tierLabel(lg.tier) : '')));
-      b.addEventListener('click', function(){ show(lid); });
-      grid.appendChild(b);
+
+    (window.REGIONS || []).forEach(function(reg){
+      var paises = paisesDeRegionAlfa(reg.id).filter(function(cid){ return ligasDePaisAlfa(cid).length; });
+      if(!paises.length) return;
+
+      var cont = el('div', 'liga-frio-cont');
+      cont.appendChild(el('h3', 'liga-frio-cont-t', t(reg.key, reg.name)));
+      var grid = el('div', 'liga-frio-grid');
+      paises.forEach(function(cid){
+        ligasDePaisAlfa(cid).forEach(function(lid){ grid.appendChild(botonLiga(lid)); });
+      });
+      cont.appendChild(grid);
+      caja.appendChild(cont);
     });
-    caja.appendChild(grid);
+
     return caja;
+  }
+
+  // EL BOTÓN DE VOLVER. Antes de esto no había forma de salir de una liga elegida
+  // más que el nav (que además pierde el estado frío con las cards, no vuelve a
+  // mostrarlas). Pedido explícito de Guido, 2026-09-26.
+  function botonVolver(){
+    var b = el('button', 'liga-volver', '‹ ' + t('liga.back', 'Volver a Ligas'));
+    b.type = 'button';
+    b.addEventListener('click', function(){ st.league = null; st.year = null; render(); });
+    return b;
   }
 
   // EL ENCABEZADO. Convención tomada de Our World in Data: el título es la
