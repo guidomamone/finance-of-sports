@@ -32,8 +32,9 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
     mismo. El que mergea segundo renumera su entrada; el conflicto al final de `Admin/CHANGELOG.md`
     es esperable y mecánico.
   - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `fuentes/README.md`,
-    `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o la sección generada
-    de `Admin/ESTADO.md`, tomá cualquiera de los dos lados, mergeá, y corré el generador que
+    `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o
+    `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX, aparte de `Admin/ESTADO.md` desde la Versión 239),
+    tomá cualquiera de los dos lados, mergeá, y corré el generador que
     corresponda. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
   - **Un país por sesión de sourcing.** `fuentes/_indice/<País>.md` y `fuentes/<País>/` son de un
     solo país a propósito (ver el porqué en `CLAUDE.md`): dos sesiones en países distintos no

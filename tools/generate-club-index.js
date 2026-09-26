@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/generate-club-index.js — genera, desde los propios datos, la sección
-// "QUÉ ES REAL POR CLUB" de `Admin/ESTADO.md` (hasta la Versión 202 se llamaba "...Y QUÉ ES
+// "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md` (hasta la Versión 202 se llamaba "...Y QUÉ ES
 // PLACEHOLDER, POR CLUB" — desde la Versión 138 no queda ningún ejercicio placeholder cargado,
 // así que esa mitad del título describía algo que ya no existe; ver to-do 54).
+//
+// DESDE LA VERSIÓN 239 (to-do 63) el destino es `Admin/ESTADO-clubes.md`, un archivo propio, y ya
+// no `Admin/ESTADO.md`: el bloque pesaba 12,35 KB de los 55,98 KB de ese archivo (161 clubes),
+// cerca del umbral de 60 KB que usa `tools/audit.js` (a ese ritmo, ~218 clubes). Mismo mecanismo
+// que sacó la to-do list de `index.html` en la Versión 138: el bloque generado se muda a un
+// archivo propio y queda un puntero de una línea donde vivía.
 //
 // EL PROBLEMA QUE RESUELVE (la "fuga 1" del mapa de procesos): esa sección se
 // escribía a mano, un párrafo por club, y decía lo mismo que el comentario de
@@ -26,7 +32,7 @@
 // índice contesta "qué hay"; el archivo del club contesta "por qué".
 //
 // USO:
-//   node tools/generate-club-index.js           reescribe la sección en Admin/ESTADO.md
+//   node tools/generate-club-index.js           reescribe la sección en Admin/ESTADO-clubes.md
 //   node tools/generate-club-index.js --check   no escribe; sale con código 1 si
 //                                               la sección quedó desactualizada
 //                                               (sirve para chequear antes de un push)
@@ -37,13 +43,15 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-// Versión 138: el destino es Admin/ESTADO.md. Hasta la 137 esta sección vivía dentro del
-// comentario HTML de index.html; se movió junto con el resto del estado y la to-do list.
-const ESTADO = path.join(ROOT, 'Admin/ESTADO.md');
+// Versión 138: el destino pasó a ser Admin/ESTADO.md (hasta la 137 esta sección vivía dentro del
+// comentario HTML de index.html). Versión 239: el destino es Admin/ESTADO-clubes.md, un archivo
+// propio — ver el comentario de cabecera del script.
+const ESTADO = path.join(ROOT, 'Admin/ESTADO-clubes.md');
 const CLUB_INDEX_FILE = path.join(ROOT, 'data/club-index.js');
-// Los marcadores se mantuvieron como texto plano al mudar la sección a Admin/ESTADO.md, aunque
-// ahí un comentario HTML ya no rompería nada: cambiarlos habría obligado a tocar el
-// archivo a mano justo en la migración, que es cuando más fácil se rompe algo.
+// Los marcadores se mantuvieron como texto plano en las dos mudanzas (a Admin/ESTADO.md en la
+// Versión 138, a Admin/ESTADO-clubes.md en la 239), aunque un comentario HTML no rompería nada
+// ahí: cambiarlos habría obligado a tocar el archivo a mano justo en la migración, que es cuando
+// más fácil se rompe algo.
 const START = '===== CLUB-INDEX:START (generado por tools/generate-club-index.js, no editar a mano) =====';
 const END = '===== CLUB-INDEX:END =====';
 
@@ -278,7 +286,7 @@ function main() {
   const html = fs.readFileSync(ESTADO, 'utf8');
   const i = html.indexOf(START), j = html.indexOf(END);
   if (i === -1 || j === -1) {
-    console.error(`ERROR: no encontré los marcadores en Admin/ESTADO.md.\n  ${START}\n  ${END}`);
+    console.error(`ERROR: no encontré los marcadores en Admin/ESTADO-clubes.md.\n  ${START}\n  ${END}`);
     process.exit(1);
   }
 
@@ -286,17 +294,17 @@ function main() {
   const next = '\n' + generated + '\n';
 
   if (current === next) {
-    console.log(`Admin/ESTADO.md ya está al día (${Object.keys(data.generic).length} clubes).`);
+    console.log(`Admin/ESTADO-clubes.md ya está al día (${Object.keys(data.generic).length} clubes).`);
     generarClubIndex(data, check);
     return;
   }
   if (check) {
-    console.error('Admin/ESTADO.md quedó DESACTUALIZADO respecto de los datos. Corré: node tools/generate-club-index.js');
+    console.error('Admin/ESTADO-clubes.md quedó DESACTUALIZADO respecto de los datos. Corré: node tools/generate-club-index.js');
     process.exit(1);
   }
 
   fs.writeFileSync(ESTADO, html.slice(0, i + START.length) + next + html.slice(j), 'utf8');
-  console.log(`Admin/ESTADO.md actualizado: ${Object.keys(data.generic).length} clubes.`);
+  console.log(`Admin/ESTADO-clubes.md actualizado: ${Object.keys(data.generic).length} clubes.`);
   generarClubIndex(data, check);
 }
 

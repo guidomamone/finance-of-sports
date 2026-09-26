@@ -34,11 +34,13 @@ redirigiendo.
 
 ## Al empezar a trabajar acá
 
-Leé primero `Admin/ESTADO.md` (qué hay armado hoy, y qué hay cargado de cada club) y
-`Admin/TODO.md` (qué falta hacer, en orden de prioridad). Leelos vos solo, sin que Guido
-tenga que pedirlo o resumirlo.
+Leé primero `Admin/ESTADO.md` (qué hay armado hoy) y `Admin/TODO.md` (qué falta hacer, en
+orden de prioridad). Leelos vos solo, sin que Guido tenga que pedirlo o resumirlo. El detalle de
+qué hay cargado de cada club vive aparte, en `Admin/ESTADO-clubes.md` (Versión 239, generado por
+`node tools/generate-club-index.js`) — se partió de `Admin/ESTADO.md` cuando ese archivo se acercó
+al umbral de 60 KB que usa `tools/audit.js`.
 
-Hasta la Versión 137 las dos cosas vivían adentro de un comentario HTML al
+Hasta la Versión 137 `Admin/ESTADO.md` y `Admin/TODO.md` vivían adentro de un comentario HTML al
 principio de `index.html`. Se movieron a archivos propios el 2026-09-14, a pedido
 explícito de Guido ("Index NO es el archivo para tener to do. Eso era al inicio"):
 eran 80 KB de los 183 KB de `index.html`, que además se bajaba cada visitante en
@@ -46,7 +48,7 @@ cada pageview. En `index.html` quedó un puntero de 15 líneas.
 
 Revisá también si hay algo nuevo pegado en `fuentes/README.md` — es donde
 Guido deja links a documentos oficiales o notas de prensa antes de que se
-carguen al sitio. Si hay algo ahí que `Admin/ESTADO.md` todavía no menciona como
+carguen al sitio. Si hay algo ahí que `Admin/ESTADO-clubes.md` todavía no menciona como
 cargado, es trabajo pendiente.
 
 El sourcing está partido en TRES niveles, cada uno porque el anterior dejó de
@@ -135,8 +137,8 @@ Guido tenga que pedirlo explícitamente:
 
 - **`Admin/ESTADO.md`**: reflejar lo que cambió. Es un snapshot, no un log: si algo que
   decía ahí ya no es cierto, se reemplaza o se borra, no se apila una línea nueva
-  al lado de la vieja. Su sección "QUÉ ES REAL POR CLUB" NO
-  se escribe a mano: se regenera con `node tools/generate-club-index.js`.
+  al lado de la vieja. El detalle "QUÉ ES REAL POR CLUB" vive en `Admin/ESTADO-clubes.md`
+  (Versión 239) y NO se escribe a mano: se regenera con `node tools/generate-club-index.js`.
 - **`Admin/TODO.md`**: BORRAR lo que se resolvió (no marcarlo como "RESUELTO" y dejarlo
   ahí, que es como la lista vieja terminó con la mitad de los puntos siendo cosas
   ya hechas: la historia queda en `Admin/CHANGELOG.md`), reordenar si cambió la

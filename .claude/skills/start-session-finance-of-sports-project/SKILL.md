@@ -18,7 +18,8 @@ permanentes. Esto es el procedimiento.
 
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
-| 1 | `Admin/ESTADO.md`: qué hay armado hoy, y qué hay cargado de cada club | **siempre** | 56 KB |
+| 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 44 KB |
+| 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
 | 2 | `Admin/CONVENCIONES.md` | **siempre** | 53 KB |
 | 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 50 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |
@@ -27,9 +28,10 @@ permanentes. Esto es el procedimiento.
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 113 KB |
 | 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
 
-(Pesos re-medidos 2026-09-26, `wc -c`. `Admin/ESTADO.md` está a 4 KB del umbral de 60 KB que usa
-`tools/audit.js` — ver to-do 63 de `Admin/TODO.md`, ya hay un plan para achicarlo antes de que lo
-cruce.)
+(Pesos re-medidos 2026-09-26, `wc -c`. Hasta la Versión 239 `Admin/ESTADO.md` incluía el bloque
+CLUB-INDEX y pesaba 56 KB, a 4 KB del umbral de 60 KB que usa `tools/audit.js` — to-do 63, ya
+cerrado: el bloque generado se partió a `Admin/ESTADO-clubes.md`, mismo mecanismo que sacó la to-do
+list de `index.html` en la Versión 138. Con eso los dos archivos quedan lejos del umbral de nuevo.)
 
 **Los KB de esta tabla los chequea `node tools/audit.js`** (`doc-peso-desfasado`, P3, agregado en
 la auditoría de docs del 2026-09-20): existen para decidir qué abrir y qué no, así que un número
@@ -117,8 +119,8 @@ falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetS
 Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido lo pida:
 
 1. **`Admin/ESTADO.md`**: es un snapshot, no un log. Si algo que decía ya no es cierto, se reemplaza, no
-   se apila una línea nueva al lado de la vieja. Su sección "QUÉ ES REAL POR CLUB" se GENERA
-   (`node tools/generate-club-index.js`), no se escribe.
+   se apila una línea nueva al lado de la vieja. El detalle "QUÉ ES REAL POR CLUB" vive en
+   `Admin/ESTADO-clubes.md` (Versión 239) y se GENERA (`node tools/generate-club-index.js`), no se escribe.
 2. **`Admin/TODO.md`**: BORRAR lo resuelto (no marcarlo "RESUELTO" y dejarlo, que es como la lista vieja
    terminó con la mitad de los puntos siendo cosas ya hechas), agregar lo que quedó pendiente,
    reordenar si cambió la prioridad. Los números son identificadores estables, no prioridad.
@@ -134,7 +136,7 @@ No dupliques la to-do list en `Admin/CHANGELOG.md` ni en `Admin/finance-of-sport
 chequea `node tools/audit.js` como P1, así que no hace falta acordarse — pero sí saber qué correr):
 
 ```
-node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO.md
+node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO-clubes.md
 node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
 node tools/generate-rankings.js        # data/rankings/<liga>.js, lo que muestran Inicio y Ligas
 ```
@@ -173,7 +175,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   `sources{}` y los `fiscalYearMeta`. Corrélo después de cargar un club o de tocar una fuente.
   `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.
 - `node tools/generate-club-index.js` — regenera, desde los propios `data/<club>-data.js`, la sección
-  "QUÉ ES REAL POR CLUB" de `Admin/ESTADO.md`. Corrélo después de onboardear un club
+  "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
 - `node tools/generate-rankings.js` (Versión 182) — precalcula el ranking de ingresos de cada

@@ -1084,7 +1084,7 @@ terminar esa sesión si:
   `club-or-year-onboarding`), con el documento/página exacto donde se encontró.
 
 No hace falta pedirle permiso a Guido para estas actualizaciones menores, es información viva que
-debería quedar al día sola, igual que la sección generada de `Admin/ESTADO.md`.
+debería quedar al día sola, igual que la sección generada de `Admin/ESTADO-clubes.md`.
 
 **Este es un skill de criterio, no un changelog (pedido de Guido, to-do 57, 2026-09-23, mismo
 criterio ya aplicado a `club-sourcing`).** Al agregar o editar cualquier sección, separar tres cosas:

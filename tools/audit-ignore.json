@@ -7,13 +7,8 @@
   },
   {
     "code": "ruta-muerta",
-    "match": "Admin/ESTADO-clubes.md",
-    "motivo": "VERIFICADO 2026-09-26 (to-do 63, auditoría de escala): es un nombre de archivo PROPUESTO dentro de Admin/TODO.md, para cuando alguien parta el bloque CLUB-INDEX de Admin/ESTADO.md — todavía no se creó a propósito, el to-do describe el split, no lo ejecuta. No es un puntero roto a algo que existió: es la mención de algo que va a existir."
-  },
-  {
-    "code": "ruta-muerta",
     "match": "Admin/test-costo-transcripcion.md",
-    "motivo": "VERIFICADO 2026-09-26 (to-do 66, test de costo/calidad de transcripción): es el nombre de archivo PROPUESTO donde ese to-do pide dejar el resultado del piloto Sonnet/Haiku/API — todavía no se corrió el piloto, así que el archivo no existe a propósito. Mismo caso que Admin/ESTADO-clubes.md arriba."
+    "motivo": "VERIFICADO 2026-09-26 (to-do 66, test de costo/calidad de transcripción): es el nombre de archivo PROPUESTO donde ese to-do pide dejar el resultado del piloto Sonnet/Haiku/API — todavía no se corrió el piloto, así que el archivo no existe a propósito."
   },
   {
     "code": "signo-invertido",

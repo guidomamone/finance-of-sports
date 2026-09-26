@@ -125,7 +125,8 @@ es una mala operación, siempre.**
 
 **Sí se puede, y es donde conviene buscar:**
 
-- Duplicación de documentación: el mismo dato de un club vive en `Admin/ESTADO.md` (antes el comentario de `index.html`, en
+- Duplicación de documentación: el mismo dato de un club vive en `Admin/ESTADO-clubes.md` (antes el comentario de
+  `index.html`, y antes de la Versión 239 el bloque CLUB-INDEX de `Admin/ESTADO.md`), en
   la cabecera de su `data/*.js`, en `Admin/CHANGELOG.md` y en `fuentes/`. `tools/generate-club-index.js`
   ya eliminó una copia; medir cuánta queda.
 - Lo que se lee en CADA sesión (`start-session` §1) contra lo que de verdad se usa.

@@ -772,7 +772,7 @@ Cargar un club o un ejercicio deja **tres archivos generados desactualizados**, 
 publican. No se editan a mano:
 
 ```
-node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO.md
+node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO-clubes.md
 node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
 node tools/generate-rankings.js        # data/rankings/<liga>.js
 ```
