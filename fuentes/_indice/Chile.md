@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Chile. El detalle completo de cada club
 `fuentes/Chile/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 - [Audax Italiano](../Chile/Audax Italiano.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
 - [Cobreloa](../Chile/Cobreloa.md) — OTODP, solo memoria y presupuesto proyectado — Último chequeo: 2026-09-12
 - [Colo-Colo (Blanco y Negro)](<../Chile/Colo-Colo (Blanco y Negro).md>) — 17 ejercicios reales, serie completa 2009-2025; 2022-2024 CARGADOS al sitio (`colocolo-cl`) — Último chequeo: 2026-09-12

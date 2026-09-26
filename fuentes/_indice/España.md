@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de España. El detalle completo de cada clu
 `fuentes/España/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Primer barrido de España (sesión 2026-09-13).** A diferencia de Sudamérica, España no tiene un
 regulador único que centralice balances — cada club S.A.D. publica (o no) por su cuenta. Ver
 `fuentes/España/_notas-generales.md` para los patrones de bloqueo anti-bot encontrados y cómo

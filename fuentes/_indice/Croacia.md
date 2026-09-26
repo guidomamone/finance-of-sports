@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Croacia. El detalle completo de cada clu
 `fuentes/Croacia/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Sexto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El registro
 central croata (RGFI-JAV/FINA) NO es gratis como Bélgica/Alemania — exige cuenta para cualquier
 acceso. El canal real fue sourcing directo club por club, sostenido por el mandato de licenciamiento

@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Turquía. El detalle completo de cada cl
 `fuentes/Turquía/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Decimoséptimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-18).** Los 4
 grandes (Galatasaray/Fenerbahçe/Beşiktaş/Trabzonspor) son un caso único: el club-asociación cotiza
 DIRECTO en Borsa İstanbul, sujeto a disclosure de KAP (kap.org.tr) — excelente canal, series largas.

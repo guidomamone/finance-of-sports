@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Perú. El detalle completo de cada club
 `fuentes/Perú/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 - [Alianza Lima](../Perú/Alianza Lima.md) — 6 ejercicios consecutivos reales (2019-2024); CARGADOS al sitio (`alianzalima-pe`) — Último chequeo: 2026-09-12
 - [Sporting Cristal](../Perú/Sporting Cristal.md) — sin PDF, S.A. cerrada sin obligación de reporte — Último chequeo: 2026-09-12
 - [Universitario de Deportes](../Perú/Universitario de Deportes.md) — sin PDF, proceso concursal INDECOPI confirmado dead-end (solo historial procesal) — Último chequeo: 2026-09-13

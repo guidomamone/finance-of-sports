@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Colombia. El detalle completo de cada cl
 `fuentes/Colombia/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 - [Aguilas Doradas](<../Colombia/Aguilas Doradas.md>) — serie completa 2016-2025 (10 ejercicios) vía SIIS; deposita como TALENTO DORADO S.A., no con su nombre deportivo — Último chequeo: 2026-09-22
 - [Alianza FC](<../Colombia/Alianza FC.md>) — 8 ejercicios (2016, 2019-2025) vía SIIS; ex Alianza Petrolera, hoy Valledupar; 2017-2018 sin documento en SIIS — Último chequeo: 2026-09-22
 - [America de Cali](../Colombia/America de Cali.md) — CARGADO (Ejercicio 2025), en reorganización, años anteriores a 2024 pendientes en SIIS — Último chequeo: 2026-09-22

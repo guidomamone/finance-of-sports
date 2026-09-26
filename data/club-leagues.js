@@ -22,6 +22,25 @@
 // filas siguen en null, así que el pendiente está a la vista y no hace falta
 // acordarse de él.
 //
+// TERCER VALOR POSIBLE, DISTINTO DE `null` Y DE UN ID REAL: el string
+// `'liga-no-catalogada'` (Versión 233, to-do 64c). Significa "SÍ se verificó en
+// qué liga jugó este ejercicio, pero esa liga todavía no existe en
+// `data/leagues.js`" — no es lo mismo que `null` (nadie lo miró) y escribir
+// `null` acá sería mentir esa otra cosa. Casos reales: `fredericia-dk` 2019 (jugó
+// la Nordic Bet Ligaen, 2do escalón danés) y `zultewaregem-be` 2025 (Challenger
+// Pro League, 2do escalón belga) — ninguna de las dos ligas está en el catálogo
+// porque hoy el sitio no tiene ningún otro club de 2da división de esos países
+// (decisión de Guido, 2026-09-26: no vale la pena sumar una liga al catálogo, con
+// lo que implica para el selector, por un solo club-ejercicio cada una — más
+// tiene sentido cuando/si aparece un segundo caso del mismo escalón). Es un
+// string y no `null` A PROPÓSITO: `clubLeagueCoverage()` lo cuenta como
+// verificado (evita que quede pendiente para siempre en el P3 de filas sin
+// verificar) pero, al no matchear ningún id real de `LEAGUES`, ninguna función de
+// membresía lo agrupa bajo ninguna liga — se comporta como `null` para el
+// selector, sin mentir "nadie lo verificó" en la auditoría. Si el día de mañana
+// se agrega la liga real al catálogo, el string se reemplaza por su id, sin más
+// cambios.
+//
 // Las filas son los ejercicios REALES de cada club (los placeholder no juegan
 // ningún torneo). Al cargar un ejercicio nuevo hay que agregar su fila: la
 // auditoría avisa si falta.

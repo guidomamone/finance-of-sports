@@ -15,6 +15,36 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 241 — brandColor al onboarding, eje `datos` de la auditoría por país, sentinel de liga sin catálogo (to-dos 56 y 64)
+
+- **`club-or-year-onboarding/SKILL.md`**: nuevo paso en el checklist de cierre — un club NUEVO
+  verifica su `brandColor` contra el escudo real (Browser pane) antes de cerrar la sesión, una sola
+  vez, no en cada auditoría periódica. Existía el proceso para ELEGIR el hex (sección 3, por texto:
+  Wikipedia/`theme-color`/agregadores) pero nunca una verificación VISUAL contra el escudo, y esa
+  falta dejó pasar los 2 errores de abajo.
+- Corregidos con ese chequeo nuevo: `godoycruz-ar` `#0000FF` (azul saturado) → `#0070D0` (celeste
+  real, muestreado por píxel del escudo de Wikimedia); `fortaleza-br` `#FF0000` → `null` (tricolor
+  declarado azul/rojo/blanco sin predominancia, mismo criterio que `saopaulo-br`/`bahia-br`).
+  Documentado en `fuentes/Argentina/Godoy Cruz.md` y `fuentes/Brasil/Fortaleza.md`.
+- **`auditoria-finance-of-sports/SKILL.md`**, eje `datos`: ahora se corre POR PAÍS, no sobre el
+  proyecto entero (Brasil 32 clubes, España/Reino Unido 19, Argentina 18 — la escala real medida el
+  2026-09-26, muy por debajo de los 120 que no entraron en una sola corrida). `brandColor` sale de
+  este eje: ya se verifica en el onboarding (punto anterior), así que la auditoría periódica no
+  vuelve a pedirlo. Mecanismo de "a qué país le toca": campo nuevo **Última auditoría de datos:
+  AAAA-MM-DD** en cada `fuentes/_indice/<País>.md` (44 archivos), mismo patrón que "Último chequeo"
+  de sourcing — REGLA 5 nueva en `fuentes/README.md`.
+- **Sentinel `'liga-no-catalogada'`** en `data/club-leagues.js`: un tercer valor posible además de
+  `null` y un id real, para un ejercicio cuya liga SÍ se verificó pero todavía no está en el catálogo
+  (`data/leagues.js`). Aplicado a `fredericia-dk` 2019 (Nordic Bet Ligaen) y `zultewaregem-be` 2025
+  (Challenger Pro League) — decisión de Guido: no sumar las 2 ligas de segundo escalón al catálogo
+  por un solo club-ejercicio cada una. Se comporta como `null` para el selector (no matchea ninguna
+  liga real) pero cuenta como verificado en `clubLeagueCoverage()`, así que no queda pendiente para
+  siempre. El P2 `liga-sin-fila` de `tools/audit.js` deja de marcar estos 2 casos.
+- `node tools/audit.js`: P0 0, P1 0, P2 0 (bajó de 1, era `liga-sin-fila`) tras este cambio.
+- To-dos 56 y 64 cerrados en `Admin/TODO.md` (implementados, no solo decididos).
+- `ASSET_V` 239 → 240 (se tocaron `data/clubs.js` y `data/club-leagues.js`); regenerados
+  `fuentes.html` + sus 161 páginas de club y `sitemap.xml`.
+
 ## Versión 240 — unificar "derechos de formación / mecanismo de solidaridad" a `player_sales` (to-do 43)
 
 - Recategorizadas a `player_sales` las líneas de ingreso que representan derechos de

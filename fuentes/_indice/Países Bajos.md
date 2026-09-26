@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Países Bajos. El detalle completo de ca
 `fuentes/Países Bajos/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Duodécimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** La KvK
 (Kamer van Koophandel) es de pago (€3,90/documento) — el canal real fue el mandato de licencia F.04
 de la KNVB, que obliga a cada club a publicar su jaarverslag en su propio sitio, con un índice de la

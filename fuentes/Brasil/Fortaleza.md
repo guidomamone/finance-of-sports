@@ -33,8 +33,13 @@
   Atlético Mineiro): no tiene subsidiárias propias, una sola columna de cifras. Tie-out exacto contra
   el "Prejuízo do exercício" impreso (-120,141 M BRL). Ver el comentario de cabecera de
   `data/fortaleza-br-data.js` para el detalle completo de categorización y verificación.
-- Color de marca: `#FF0000` — Wikipedia pt (plantilla de camiseta, campo `corpo1` del kit titular),
-  verificado 2026-09-24. Fortaleza es tricolor (azul/blanco/rojo, "Tricolor de Aço"), sin
-  predominancia declarada explícita en el texto del artículo; se usó el color del torso de la
-  camiseta titular como desempate (cae en la familia confirmada por la capa de identidad).
-- Último chequeo: 2026-09-24.
+- **Color de marca: `null`** (corregido 2026-09-26, ver `Admin/TODO.md` to-do 64) — el hex anterior
+  (`#FF0000`, cargado 2026-09-24) rompía el mismo criterio que ya se aplicó a sus pares tricolores
+  `saopaulo-br`/`bahia-br`: Fortaleza es tricolor declarado (azul, rojo y blanco, homenaje a la
+  bandera francesa, "Tricolor de Aço") y Wikipedia en inglés/español no declara predominancia de
+  ninguno de los 3 ("The club's colors are red, blue and white", sin orden ni énfasis). El escudo
+  real (Wikimedia, verificado en Browser pane 2026-09-26) confirma el mismo split en tercios
+  azul/blanco/rojo que São Paulo y Bahia — "usar el color del torso de la camiseta como desempate"
+  fue el error: esa regla es para BICOLOR con blanco (sección 3 de `club-or-year-onboarding`), acá
+  hay 2 colores no-blancos empatados, mismo caso que Bahia. `brandColor: null`.
+- Último chequeo: 2026-09-26.

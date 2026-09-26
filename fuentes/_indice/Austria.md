@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Austria. El detalle completo de cada clu
 `fuentes/Austria/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Segundo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17), tras Alemania
 (Arabia Saudita quedó saltada a pedido de Guido).** El Firmenbuch austríaco existe pero está bloqueado
 por login+pago (misma clase de barrera que el OMPIC marroquí) — el hallazgo real es el agregado de

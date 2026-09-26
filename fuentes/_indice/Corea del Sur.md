@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Corea del Sur. El detalle completo de ca
 `fuentes/Corea del Sur/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Quinto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** El **DART**
 (`dart.fss.or.kr`, el regulador de mercado surcoreano) funcionó como un canal real tipo EDGAR/SEC
 para los clubes propiedad de chaebols que cotizan — hay que buscar la razón social legal de la

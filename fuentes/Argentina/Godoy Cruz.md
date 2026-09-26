@@ -30,3 +30,14 @@ desde una página viva.
 
 - **Resultado: 0 documentos nuevos.** El único post institucional relevante es "Godoy Cruz realizó su Asamblea de Socios", sin adjunto. Wayback: 0 PDFs archivados en el dominio. Sigue en pie lo ya anotado: 1 balance escaneado descargado, pendiente de OCR.
 - Último chequeo: 2026-09-22.
+
+## Color de marca (corregido 2026-09-26, ver `Admin/TODO.md` to-do 64)
+
+- `data/clubs.js` tenía `brandColor:'#0000FF'` (azul saturado, hue ~240°) desde la barrida original de
+  los 41 clubes — nunca se verificó contra el escudo real. Wikipedia (es/en) declara "Azul y blanco"
+  sin más precisión, así que la capa de identidad no alcanzaba para descartar el error.
+- Verificado en Browser pane 2026-09-26 contra el escudo real
+  (`en.wikipedia.org/wiki/File:Godoy_Cruz_Antonio_Tomba.png`): el color dominante del escudo (muestreo
+  de píxeles vía canvas, ~13.400 px de la muestra) es `rgb(0,112,208)` = `#0070D0`, un celeste/azul
+  cielo saturado (hue ~205°), no el azul violáceo de `#0000FF`. Corregido a `brandColor:'#0070D0'`.
+- Último chequeo: 2026-09-26.

@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de México. El detalle completo de cada clu
 `fuentes/México/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 - [Club América](<../México/Club América.md>) — CARGADO al sitio (Ejercicio 2025) vía segmento "Fútbol" de Ollamani S.A.B. (BMV), ver `data/clubamerica-data.js`; Ejercicio 2024 (11 meses, período inicial) descargado pero sin cargar — Último chequeo: 2026-09-13
 - [Atlas](<../México/Atlas.md>) — PDF encontrado: fue subsidiaria de TV Azteca (BMV) hasta jul-2019 y su venta a Orlegi la volvió operación discontinua IFRS 5, con P&L condensado 2018/2019 y activos netos dispuestos en el Reporte Anual 2019; sin nada desde 2020 — Último chequeo: 2026-09-22
 - [Atlético San Luis](<../México/Atlético San Luis.md>) — documento encontrado (parcial): filial 88,14% del Atlético de Madrid, con capital/reservas/resultado por ejercicio desde 2018-19 en las cuentas anuales del Atleti ya bajadas en `Clubes/España/`; consolidadas del Atleti no publicadas — Último chequeo: 2026-09-22

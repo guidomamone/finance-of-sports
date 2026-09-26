@@ -61,6 +61,16 @@ sigue siendo esta regla, aplicada a mano al crear la carpeta.
 
 ---
 
+**REGLA 5 (sesión 2026-09-26, to-do 56)**: el eje `datos` de `auditoria-finance-of-sports/SKILL.md`
+se corre POR PAÍS, no sobre el proyecto entero (`fuentes/README.md` §"Capa 3" de ese skill). Cada
+`fuentes/_indice/<País>.md` tiene, al principio del archivo, un campo **Última auditoría de datos:
+AAAA-MM-DD** (mismo mecanismo que "Último chequeo" de sourcing, pero para la auditoría de datos, no
+para encontrar documentos) — actualizalo con la fecha del día cada vez que corras ese eje sobre ese
+país. Es el campo que usa quien arranca una auditoría para decidir a qué país le toca: el país con la
+fecha más vieja (o "nunca").
+
+---
+
 **REGLA 4 (sesión 2026-09-20)**: el detalle línea-por-club NO vive más en este archivo, vive en
 `fuentes/_indice/<País>.md`, uno por país. Acá quedó solo el índice de países. Es el mismo split
 que en la sesión 2026-09-13 movió el detalle de cada club a `fuentes/<País>/<Club>.md`, un nivel

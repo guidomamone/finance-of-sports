@@ -787,6 +787,24 @@ como **P1** (`checkGenerados()`): no se puede pushear con uno desfasado.
 liga, así que no aparece en ningún ranking aunque el generador haya corrido. La auditoría también
 la cuenta (`liga-sin-verificar`, P3).
 
+**Y si el club es NUEVO (no un ejercicio nuevo de uno ya cargado): chequeá el `brandColor` elegido
+contra el escudo real, antes de cerrar la sesión.** El proceso de la sección 3 (punto 1b) resuelve el
+hex por TEXTO (infobox de Wikipedia, `theme-color`, agregadores como footylogos/teamcolorcodes) sin
+mirar nunca el escudo en sí — y esa falta de verificación visual dejó pasar 2 errores reales que una
+auditoría posterior encontró recién a ojo, mirando el escudo (`godoycruz-ar`: `#0000FF` azul saturado
+en vez del celeste real del escudo; `fortaleza-br`: `#FF0000` rojo puro para un club tricolor que
+debía ir a `null` como sus pares `saopaulo-br`/`bahia-br` — ver `Admin/TODO.md` to-do 64 para el
+detalle de los dos). Antes de cerrar el onboarding: abrí el escudo real (Wikimedia Commons, sitio
+oficial) en el Browser pane y confirmá a ojo que el HUE del `brandColor` elegido cae en la misma
+familia — no hace falta que el hex sea idéntico al del escudo (la fuente de identidad sigue siendo la
+CAMISETA, no el escudo, ver sección 3), pero un hue claramente distinto (azul violáceo vs. celeste,
+rojo puro vs. un club multicolor) es la señal de que el paso de texto se equivocó, y hay que revisar
+de nuevo con el proceso de la sección 3. **Este chequeo se hace UNA VEZ, al cargar el club — no es
+parte de ninguna auditoría periódica futura** (decisión de Guido, to-do 56: el eje `datos` de
+`auditoria-finance-of-sports/SKILL.md` ya no vuelve a pedir `brandColor` de "los clubes nuevos desde
+la última auditoría"), porque a diferencia de categorización/catch-all (que sí se benefician de mirar
+muchos clubes juntos) es una comparación 1 a 1 que no gana nada de esperar a acumular un lote.
+
 ## Cómo mantener este skill
 
 Se actualiza SOLO al terminar una sesión de onboarding, sin pedirle permiso a Guido, si:

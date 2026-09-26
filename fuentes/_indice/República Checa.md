@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de República Checa. El detalle completo de
 `fuentes/República Checa/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Decimocuarto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).**
 `or.justice.cz` (Sbírka listin) funcionó para los 16 de 16 clubes de la Chance Liga 2025/26 — gratis,
 sin login, sin captcha, con texto nativo en los PDF, al nivel de Bélgica/Dinamarca/Grecia/Noruega.

@@ -5,5 +5,7 @@ Detalle línea-por-club del sourcing de Escocia. El detalle completo de cada clu
 `fuentes/Escocia/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 - [Celtic](../Escocia/Celtic.md) — 1 ejercicio real (2024/25), 6 disponibles — Último chequeo: 2026-09-13
 - [Notas generales de Escocia](../Escocia/_notas-generales.md) — mismo Companies House que Inglaterra, números `SC`

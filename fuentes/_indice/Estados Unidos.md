@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Estados Unidos. El detalle completo de c
 `fuentes/Estados Unidos/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 - [Atlanta Braves](<../Estados Unidos/Atlanta Braves.md>) — **béisbol (MLB)** — 10-K 2025 real descargado, 3 ejercicios disponibles — Último chequeo: 2026-09-13
 - [New York Knicks](<../Estados Unidos/New York Knicks.md>) — **básquet (NBA)** — 10-K FY2026 real descargado, comparte documento con los Rangers — Último chequeo: 2026-09-13
 - [New York Rangers](<../Estados Unidos/New York Rangers.md>) — **hockey sobre hielo (NHL)** — mismo 10-K de MSG Sports que los Knicks — Último chequeo: 2026-09-13

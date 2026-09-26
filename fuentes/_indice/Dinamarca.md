@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de Dinamarca. El detalle completo de cada c
 `fuentes/Dinamarca/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Séptimo país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17). El mejor canal
 del proyecto junto con Bélgica**: la API pública de la Erhvervsstyrelsen (`distribution.virk.dk`) es
 gratis, sin login, sin bloqueo de Cloudflare, y scripteable con curl — los 12 clubes de la Superliga

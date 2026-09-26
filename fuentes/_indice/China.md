@@ -5,6 +5,8 @@ Detalle línea-por-club del sourcing de China. El detalle completo de cada club
 `fuentes/China/<Club>.md`. El índice de países, y las reglas de formato y de
 registro, están en [`fuentes/README.md`](../README.md).
 
+**Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
+
 **Cuarto país nuevo de la lista de "30 mejores ligas del mundo" (sesión 2026-09-17).** Mayormente
 dead-end por diseño societario (accionista único, sin obligación de depósito), pero no es un
 dead-end de liga completa como Nigeria — sí hay sociedades reales, y la CSL viene de una ola de

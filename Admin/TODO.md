@@ -332,59 +332,6 @@ perdieron sino que se descartaron:
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-56. PARTIR EL EJE "DATOS" DE LA AUDITORÍA POR PAÍS + MOVER `brandColor` AL ONBOARDING — **DECIDIDO
-    por Guido el 2026-09-26, sesión de consejo (sin implementar, es el registro de la decisión para
-    quien lo agarre)**. Historial: pedido de Guido 2026-09-23; escalado con evidencia concreta el
-    2026-09-26 (`auditorias/2026-09-26.md` — la corrida de `datos` de esa mañana no pudo completar el
-    chequeo de `brandColor` sobre los 120 clubes nuevos desde el 2026-09-20, hizo un spot-check de
-    ~10 y encontró 2 con error real: `godoycruz-ar` y `fortaleza-br`, ver to-do 64). Mismo día, sesión
-    de consejo aparte (sin tocar código ni skills, solo investigación) evaluó 4+1 opciones y midió la
-    realidad actual antes de recomendar. Guido eligió DOS, que son complementarias, no alternativas:
-
-    **(a) Partir el eje `datos` de `auditoria-finance-of-sports/SKILL.md` por país**, en vez de una
-    corrida de todo el proyecto de una. Tocar: `.claude/skills/auditoria-finance-of-sports/SKILL.md`
-    sección "Capa 3" (la fila `datos` de la tabla) — describir que la corrida se elige por país, no
-    por el proyecto entero. Falta decidir el mecanismo de "a qué país le toca": el precedente que ya
-    existe en el proyecto para este mismo problema (qué está más desactualizado y por dónde
-    conviene arrancar) es `fuentes/README.md`, que trackea por país "N clubes, M con documento —
-    Chequeo más antiguo: FECHA" para sourcing — extender un campo análogo ("última auditoría de
-    datos: FECHA") a `fuentes/_indice/<País>.md` o al índice de `fuentes/README.md` sigue el mismo
-    patrón en vez de inventar uno nuevo. Tamaños reales medidos el 2026-09-26 para calibrar el
-    alcance de una corrida por país: Brasil (el más grande) tiene 32 clubes, España y Reino Unido 19
-    cada uno, Argentina 18 — todos muy por debajo de los 120 que no entraron en una sesión.
-
-    **(b) Mover la verificación de `brandColor` contra el escudo real AL ONBOARDING**, no a la
-    auditoría periódica. Tocar: `.claude/skills/club-or-year-onboarding/SKILL.md` (agregar el chequeo
-    al checklist de cierre de onboarding de un club nuevo) y, en consecuencia, achicar lo que la fila
-    `datos` de `auditoria-finance-of-sports/SKILL.md` pide revisar en cada corrida (ya no haría falta
-    pedir `brandColor` de "los clubes nuevos desde la última auditoría", porque cada uno ya se
-    verificó una vez al cargarlo). Por qué separado de (a): es un chequeo de 1 escudo contra 1 hex,
-    no se beneficia de mirar muchos clubes juntos (a diferencia de categorización/catch-all, que sí
-    se benefician de comparar patrones entre clubes — ver Versión 189, encontrado mirando 41 clubes
-    juntos). Se pierde la segunda mirada tardía, pero elimina el backlog de raíz: nunca se acumulan
-    120 clubes sin revisar si cada uno se revisó el día que se cargó.
-
-    **DEPENDENCIA entre (a) y (b), para priorizar el orden**: implementar (b) primero achica el
-    alcance de lo que (a) necesita cubrir por corrida (categorización/catch-all/tie-outs de fuente
-    quedan, `brandColor` ya no) — no es obligatorio hacerlo en ese orden, pero hacerlo reduce el
-    trabajo de diseñar (a). Son independientes en el sentido de que ninguna bloquea a la otra: se
-    pueden implementar en cualquier orden o en paralelo.
-
-    **LO QUE LA SESIÓN DE CONSEJO DESCARTÓ, con evidencia medida, para que no se reabra sin razón
-    nueva**: tocar `tools/audit.js` (Capa 1 determinística, la corrida de comandos). Medido en frío
-    el 2026-09-26: 0,56-0,58s de CPU a 161 clubes (0,93s/0,65s/0,65s de wall time en 3 corridas),
-    contra 0,28s a 41 clubes el 2026-09-17 — creció 2,1x mientras los clubes crecían 3,9x (exponente
-    ~0,53, sub-lineal). Proyectado con esa misma curva: ~0,65s a 200 clubes, ~1,5s a 1.000, **~2,8s
-    incluso en el techo de 3.000 clubes del to-do 36**. El script nunca fue el cuello de botella — el
-    problema es exclusivamente el tiempo de LECTURA MANUAL del eje de juicio, no de CPU. Por la misma
-    razón se descartó una versión "incremental/cacheada" del script (comparar qué cambió para
-    saltear una re-lectura): agregaría código para optimizar algo que ya tarda menos de 1 segundo.
-
-    **Relacionado pero SEPARADO, no confundir**: to-do 36 (JEV para categorizar rubros
-    automáticamente a 200 clubes) ataca la automatización de la categorización en sí, no la
-    organización de cuándo se revisa — es complementario a (a)/(b), no un sustituto (JEV no
-    categoriza `brandColor`, categoriza rubros financieros).
-
 50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR, DE COLOMBIA Y MÉXICO (de la Versión 202).
     Todos tienen el camino escrito, solo falta ejecutarlos:
     - **Ejercicios disponibles en SIIS que quedaron sin bajar por throttling** (Colombia): Boyacá

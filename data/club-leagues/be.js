@@ -35,14 +35,16 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'mechelen-be':   { 2025: 'be-proleague' },
   'antwerp-be':    { 2025: 'be-proleague' },
   // 2da tanda de Bélgica (misma sesión, "20 más"): los 6 jugaron Pro League completa 2024/25,
-  // Union SG salió CAMPEÓN (primer título desde 1934/35). Zulte Waregem queda AFUERA a propósito:
-  // ese ejercicio (2024/25) lo jugó en Challenger Pro League (2ª división, la ganó, ascendió recién
-  // para 2025/26) — no hay liga de 2do escalón belga en el catálogo todavía, así que no tiene fila
-  // acá en vez de forzarlo a `be-proleague`.
+  // Union SG salió CAMPEÓN (primer título desde 1934/35).
   'standardliege-be': { 2025: 'be-proleague' },
   'unionsg-be':       { 2025: 'be-proleague' }, // campeón 2024/25
   'westerlo-be':      { 2025: 'be-proleague' },
   'sinttruiden-be':   { 2025: 'be-proleague' },
   'cerclebrugge-be':  { 2025: 'be-proleague' },
   'dender-be':        { 2025: 'be-proleague' },
+  // Zulte Waregem: ese ejercicio (2024/25) lo jugó en Challenger Pro League (2ª división, la ganó,
+  // ascendió recién para 2025/26), no en `be-proleague`. No hay liga de 2do escalón belga en el
+  // catálogo todavía (un solo club-ejercicio no lo justifica, ver `data/club-leagues.js` cabecera
+  // para el sentinel `'liga-no-catalogada'` y to-do 64c de `Admin/TODO.md`).
+  'zultewaregem-be':  { 2025: 'liga-no-catalogada' },
 });
