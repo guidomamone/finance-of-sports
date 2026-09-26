@@ -15,6 +15,24 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 243 — tres mejoras a la pestaña Ligas (cierra el to-do 68)
+
+- **Orden por división, no alfabético** (`ligasDePaisAlfa()`, `js/liga.js`): cuando un país tiene
+  más de una liga cargada, la grilla de `estadoFrio()` ahora las ordena por `LEAGUES[lid].tier`
+  ascendente (nombre como desempate), en vez de `.name.localeCompare(...)`. Corrige el caso
+  argentino, que salía "Primera B Metropolitana (3ª), Primera División (1ª), Primera Nacional (2ª)".
+- **% del total en el gráfico de barras**: el plugin `ligaValueLabels` de `grafico()` ahora escribe,
+  debajo del valor en M/MM USD de cada barra, el `(N%)` que esa barra representa del total de la
+  liga-ejercicio — se ve tanto en la pestaña Ligas como en la vidriera de Inicio, que comparten la
+  función. Reusa la cuenta del total (`totalDe(r)`, nueva), la misma que ya usaban `tabla()` y
+  `salvedades()`.
+- **Desglose de ingresos por categoría, por club**: debajo de la tabla del ranking, un bloque nuevo
+  (`desglose()`) muestra la composición de cada club en las categorías de Formato simplificado
+  (Comercial/Sponsors, Estadio, Televisión, etc.), siempre visible y sin toggle — Guido corrigió el
+  pedido original ("que se halle scrolleando", no al click). El dato ya estaba precalculado: `mix`
+  en `data/rankings/<liga>.js` viene de la Versión 182, hasta ahora solo se leía para el aviso del
+  bolsón sin desglosar. No hizo falta tocar `tools/generate-rankings.js`.
+
 ## Versión 242 — tooltip "?" en México, explica por qué el país casi no tiene clubes (cierra el to-do 47)
 
 - **El paso "País" del selector (`js/selector.js`)**: la fila de México, además del flag y "1 club",

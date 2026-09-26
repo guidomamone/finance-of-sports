@@ -757,6 +757,19 @@
   .liga-doc.presu{color:#9a6b00;font-weight:700;}
   .liga-doc.nooficial{color:#9a6b00;font-weight:700;}
   .liga-doc-link{margin-left:8px;color:var(--azul);font-size:11.5px;}
+  /* EL DESGLOSE POR CATEGORÍA (to-do 68(a)). Sin toggle: va siempre visible, un
+     bloque por club, ordenado igual que la tabla del ranking. */
+  .liga-desglose-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:18px;}
+  .liga-desglose-h{font-size:14px;margin:0 0 6px;}
+  .liga-desglose-sub{color:var(--muted);font-size:12px;margin:0 0 14px;line-height:1.5;max-width:720px;}
+  .liga-desglose-club{padding:10px 0;border-top:1px solid var(--border);}
+  .liga-desglose-club:first-child{border-top:none;padding-top:0;}
+  .liga-desglose-club-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+  .liga-desglose-club-total{margin-left:auto;font-weight:700;font-variant-numeric:tabular-nums;font-size:13px;}
+  /* padding-left de la fila: alinea con el nombre del club, después del pin (9px) y su gap (8px). */
+  .liga-desglose-fila{display:flex;justify-content:space-between;gap:14px;padding:3px 0 3px 17px;font-size:12.5px;}
+  .liga-desglose-cat{color:var(--muted);}
+  .liga-desglose-val{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;}
   .liga-avisos{margin-top:4px;}
   .liga-avisos h3{font-size:14px;margin:0 0 7px;}
   .liga-avisos p{color:var(--muted);font-size:12px;line-height:1.55;margin:0 0 5px;}

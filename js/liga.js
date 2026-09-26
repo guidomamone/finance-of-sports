@@ -65,6 +65,15 @@ window.LIGA_VIEW = (function(){
 
   function $(id){ return document.getElementById(id); }
   function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
+  // TRADUCE UNA ETIQUETA DE BUCKET, mismo mecanismo que `tLabel()` en
+  // js/finanzas-render.js: solo las etiquetas de Formato simplificado están en
+  // `data/site-labels.js` (`SITE_LABEL_KEYS`); cualquier otra pasa de largo
+  // intacta. El `mix` de cada club (`data/rankings/<liga>.js`) sale siempre de
+  // esos mismos buckets, así que en la práctica todas matchean.
+  function tLabel(label){
+    var key = (window.SITE_LABEL_KEYS || {})[label];
+    return key ? t(key, label) : label;
+  }
   function el(tag, cls, txt){
     var n = document.createElement(tag);
     if(cls) n.className = cls;
@@ -99,6 +108,13 @@ window.LIGA_VIEW = (function(){
   // Si se renombra el bucket en js/finanzas-calc.js hay que renombrarlo acá también:
   // el aviso degrada a no mostrarse, no rompe nada, pero deja de avisar.
   var LUMP_LABEL = 'Fútbol profesional (sin desglosar por la fuente)';
+  // EL TOTAL DE LOS CARGADOS. Una sola cuenta, reusada por `grafico()` (el % de
+  // cada barra), `tabla()` (la fila de total) y `salvedades()`/`bloqueDestacado()`
+  // (el % del bolsón sin desglosar) — a propósito para no recalcular la misma
+  // suma cuatro veces con cuatro variables de nombre distinto.
+  function totalDe(r){
+    return r.clubs.reduce(function(s, f){ return s + f.revenue; }, 0);
+  }
   function fmtM(v){
     var abs = Math.abs(v);
     var txt = abs >= 1000 ? (abs / 1000).toFixed(2) + ' MM' : abs.toFixed(1) + ' M';
@@ -191,6 +207,7 @@ window.LIGA_VIEW = (function(){
     wrap.appendChild(encabezado(r));
     wrap.appendChild(grafico(r, st.league, st.year, 'ligaChart', null, 'liga'));
     wrap.appendChild(tabla(r));
+    wrap.appendChild(desglose(r));
     wrap.appendChild(salvedades(r));
   }
 
@@ -212,10 +229,21 @@ window.LIGA_VIEW = (function(){
         return t(A.key, A.name).localeCompare(t(B.key, B.name), 'es', {sensitivity:'base'});
       });
   }
+  // ORDEN POR DIVISIÓN (1ª, 2ª, 3ª...), no alfabético por nombre, cuando un país
+  // tiene más de una liga cargada — corrección de Guido sobre la Versión 232:
+  // alfabético dejaba "Primera B Metropolitana (3ª), Primera División (1ª),
+  // Primera Nacional (2ª)" en ese orden porque "B" < "D" < "N", que se lee raro
+  // para cualquiera que conozca el fútbol argentino. `tier` (data/leagues.js,
+  // 1 = primera división) es el mismo criterio que ya usaba `estadoFrio()`
+  // antes de la Versión 232. Nombre como desempate si dos ligas del mismo país
+  // compartieran tier (no pasa hoy, pero es gratis cubrirlo).
   function ligasDePaisAlfa(cid){
     return Object.keys(window.LEAGUES || {})
       .filter(function(lid){ return window.LEAGUES[lid].country === cid; })
-      .sort(function(a, b){ return ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'}); });
+      .sort(function(a, b){
+        return (ligaDe(a).tier - ligaDe(b).tier)
+          || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
+      });
   }
   function botonLiga(lid){
     var lg = ligaDe(lid), co = paisDe(lid);
@@ -341,18 +369,34 @@ window.LIGA_VIEW = (function(){
 
     // El total arriba de cada barra. Ver la cabecera: sin esto, en LaLiga la
     // mitad de las barras son un hilo y no se puede leer ningún número.
+    // Y, pedido de Guido (to-do 68(b)), el % que esa barra representa del total
+    // de la liga-ejercicio, ACOMPAÑANDO el valor en USD, no reemplazándolo — una
+    // segunda línea más chica debajo del valor. `total` se calcula una sola vez
+    // acá afuera del `forEach`, reusando `totalDe()` (la misma cuenta de
+    // `tabla()`/`salvedades()`), no adentro de cada barra.
+    var total = totalDe(r);
     var etiquetas = {
       id:'ligaValueLabels',
       afterDatasetsDraw: function(chart){
         var c = chart.ctx, meta = chart.getDatasetMeta(0);
         c.save();
-        c.font = '600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
-        c.fillStyle = '#1c1c1c';
         c.textAlign = 'center';
-        c.textBaseline = 'bottom';
         meta.data.forEach(function(bar, i){
           var v = filas[i].revenue;
-          c.fillText(v >= 1000 ? (v / 1000).toFixed(2) + ' MM' : v.toFixed(1), bar.x, bar.y - 4);
+          var pct = total ? Math.round((v / total) * 100) : null;
+          c.textBaseline = 'bottom';
+          c.font = '600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
+          c.fillStyle = '#1c1c1c';
+          c.fillText(v >= 1000 ? (v / 1000).toFixed(2) + ' MM' : v.toFixed(1),
+            bar.x, bar.y - (pct != null ? 14 : 4));
+          if(pct != null){
+            // "(31%)" y no "31% del total": con hasta 20 barras finas rotadas
+            // 45° (una liga entera), una frase larga se pisa con la etiqueta
+            // del vecino. El paréntesis solo, corto, no lo hace.
+            c.font = '500 9px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
+            c.fillStyle = '#6b6b6b';
+            c.fillText('(' + pct + '%)', bar.x, bar.y - 4);
+          }
         });
         c.restore();
       }
@@ -389,7 +433,7 @@ window.LIGA_VIEW = (function(){
                       backgroundColor: colores, borderWidth:0, maxBarThickness:64 }]
         },
         options:{
-          responsive:true, maintainAspectRatio:false, layout:{padding:{top:26}},
+          responsive:true, maintainAspectRatio:false, layout:{padding:{top:34}},
           plugins:{
             legend:{display:false},
             tooltip:{ callbacks:{
@@ -445,9 +489,8 @@ window.LIGA_VIEW = (function(){
     var thead = el('thead'); thead.appendChild(trh); tb.appendChild(thead);
 
     var tbody = el('tbody');
-    var total = 0;
+    var total = totalDe(r);
     r.clubs.forEach(function(f, i){
-      total += f.revenue;
       var tr = el('tr');
       tr.appendChild(el('td', 'liga-col-n', String(i + 1)));
 
@@ -503,6 +546,55 @@ window.LIGA_VIEW = (function(){
     return caja;
   }
 
+  // EL DESGLOSE POR CATEGORÍA (to-do 68(a), pedido de Guido: solo INGRESOS, nada
+  // de gastos/resultado/deuda). Las categorías son las de Formato simplificado
+  // que ya se ven en la ficha individual de cada club (`REVENUE_CATEGORY_LABELS`,
+  // agrupadas en `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`, js/finanzas-calc.js).
+  //
+  // EL DATO YA ESTABA PRECALCULADO: `f.mix` (`data/rankings/<liga>.js`) es
+  // exactamente esto, guardado por `tools/generate-rankings.js` desde la
+  // Versión 182 — hasta ahora solo se leía para el aviso del bolsón "sin
+  // desglosar" en `salvedades()`/`bloqueDestacado()`. No hizo falta tocar el
+  // generador.
+  //
+  // SIN TOGGLE: Guido corrigió el pedido original ("que se halle scrolleando",
+  // no al click) — va siempre visible, debajo de la tabla, en el mismo orden
+  // descendente por ingreso. El % de cada fila es del ingreso DE ESE CLUB (no
+  // del total de la liga, que es el % que ya muestra el gráfico — dos preguntas
+  // distintas: "cuánto pesa este club en la liga" vs "de qué está hecho el
+  // ingreso de este club").
+  function desglose(r){
+    var caja = el('div', 'liga-desglose-card');
+    caja.appendChild(el('h3', 'liga-desglose-h', t('liga.breakdown', 'Desglose de ingresos por categoría')));
+    caja.appendChild(el('p', 'liga-desglose-sub', t('liga.breakdown.sub',
+      'La composición de cada club, en las mismas categorías de Formato simplificado que se ven en su ficha individual de Finanzas.')));
+
+    r.clubs.forEach(function(f){
+      var bloque = el('div', 'liga-desglose-club');
+      var head = el('div', 'liga-desglose-club-head');
+      var pin = el('span', 'liga-pin');
+      pin.style.background = clubDe(f.id).brandColor || '#0a2b5c';
+      head.appendChild(pin);
+      var a = el('button', 'liga-club-link', nombreDe(f.id));
+      a.type = 'button';
+      a.addEventListener('click', function(){ irAlClub(f.id); });
+      head.appendChild(a);
+      head.appendChild(el('span', 'liga-desglose-club-total', fmtM(f.revenue)));
+      bloque.appendChild(head);
+
+      f.mix.forEach(function(m){
+        var pct = f.revenue ? Math.round((m[1] / f.revenue) * 100) : 0;
+        var fila = el('div', 'liga-desglose-fila');
+        fila.appendChild(el('span', 'liga-desglose-cat', tLabel(m[0])));
+        fila.appendChild(el('span', 'liga-desglose-val', fmtM(m[1]) + ' · ' + pct + '%'));
+        bloque.appendChild(fila);
+      });
+      caja.appendChild(bloque);
+    });
+
+    return caja;
+  }
+
   // LAS SALVEDADES. Mismo criterio que la pestaña Comparar: dos números grandes
   // uno al lado del otro parecen comparables aunque no lo sean, así que lo que
   // los hace no comparables se escribe, no se deja implícito. El modelo es la
@@ -554,9 +646,8 @@ window.LIGA_VIEW = (function(){
     // sitio entero matchea los buckets (ver data/site-labels.js). Si se renombra
     // el bucket en js/finanzas-calc.js hay que renombrarlo acá, y este aviso
     // degrada a no mostrarse: no rompe nada, pero deja de avisar.
-    var tot = 0, lump = 0;
+    var tot = totalDe(r), lump = 0;
     r.clubs.forEach(function(f){
-      tot += f.revenue;
       f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
     });
     if(tot && lump / tot > 0.10){
@@ -653,9 +744,8 @@ window.LIGA_VIEW = (function(){
     // ingreso no está desglosado. El resto de las salvedades están en la pestaña de
     // la liga, que es donde alguien que quiere el detalle va a ir. Una portada con
     // seis advertencias abajo de cada gráfico no se lee.
-    var tot = 0, lump = 0;
+    var tot = totalDe(r), lump = 0;
     r.clubs.forEach(function(f){
-      tot += f.revenue;
       f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
     });
     if(tot && lump / tot > 0.10){

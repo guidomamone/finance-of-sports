@@ -159,6 +159,8 @@ window.I18N.strings.en = {
   "modal.sub": "Questions, suggestions or data to improve the site. You can stay anonymous.",
   "modal.title": "Contact",
   "liga.back": "Back to Leagues",
+  "liga.breakdown": "Revenue breakdown by category",
+  "liga.breakdown.sub": "The composition of each club, in the same simplified-format categories shown on its own Finances page.",
   "liga.caveats": "Caveats",
   "liga.club": "Club",
   "liga.club1": "club",

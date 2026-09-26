@@ -297,18 +297,28 @@ se reescribe, no se acumula.
   un plan pago ("próximamente"), y con la decisión de ir todo gratis ya no está
   esperando nada. Pendiente de decidir con Guido si se saca la pestaña o se
   reescribe el texto.
-- PESTAÑA LIGAS (Versión 183, to-do 23(c)): el ranking de ingresos de los clubes de
-  una liga en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así
-  que NO baja ningún `data/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB
-  que costaría en vivo). Barras verticales ascendentes en el `brandColor` de cada club
-  con el número escrito arriba, tabla con puesto/club/ingresos/ejercicio/documento, y
-  salvedades derivadas del dato. TRES REGLAS QUE LA ORDENAN: el ejercicio está siempre
-  escrito y es cambiable (un ranking es (liga, EJERCICIO), nunca (liga)); el default es
-  el ejercicio con MÁS clubes y no el más reciente, porque los balances tardan en
-  publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe, que hoy es en
-  3 de 27 liga-temporadas. Se llega por el nav (estado frío: la grilla de las 8 ligas)
-  o eligiendo una liga en el selector, que hasta acá terminaba en Finanzas del primer
-  club de esa liga por orden alfabético. No necesita club activo.
+- PESTAÑA LIGAS (Versión 183, to-do 23(c); ampliada en la Versión 243, to-do 68):
+  el ranking de ingresos de los clubes de una liga en UN ejercicio. Vive en
+  `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún
+  `data/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB que costaría en
+  vivo). Barras verticales ascendentes en el `brandColor` de cada club, con el
+  valor en M/MM USD y, debajo, el % que esa barra representa del total de la
+  liga-ejercicio (Versión 243) escritos arriba de cada barra; tabla con
+  puesto/club/ingresos/ejercicio/documento; DEBAJO DE LA TABLA, un desglose de
+  ingresos por categoría de Formato simplificado de cada club (Versión 243, el
+  dato ya estaba precalculado en `mix` desde la Versión 182 — solo se usaba para
+  el aviso del bolsón sin desglosar), SIEMPRE VISIBLE y sin toggle: pedido
+  explícito de Guido, "que se halle scrolleando"; y salvedades derivadas del dato.
+  TRES REGLAS QUE LA ORDENAN: el ejercicio está siempre escrito y es cambiable
+  (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con
+  MÁS clubes y no el más reciente, porque los balances tardan en publicarse; y el
+  "N de M" solo se escribe si `leagueSizeAt()` lo sabe. Se llega por el nav
+  (estado frío: la grilla de ligas agrupadas por continente — Versión 232 — con
+  país y liga alfabéticos y, cuando un país tiene más de una liga cargada, la
+  liga ordenada por DIVISIÓN, `tier` ascendente, no alfabético por nombre —
+  Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
+  Finanzas del primer club de esa liga por orden alfabético. No necesita club
+  activo.
 - UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
   de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
   plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →
