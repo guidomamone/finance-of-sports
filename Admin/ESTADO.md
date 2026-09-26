@@ -60,7 +60,14 @@ se reescribe, no se acumula.
 - ANALYTICS: Cloudflare Web Analytics desde la Versión 166 (snippet en el `<head>`
   de `index.html`) — visitas, pageviews, referrers y país, sin cookies ni banner de
   consentimiento. No mide funnel/eventos (para eso, Mixpanel queda como opción
-  futura si hace falta).
+  futura si hace falta). Desde la Versión 216, además, un Worker + KV propios
+  (`square-sky-ca25.guidomamone91.workers.dev` → KV namespace `FOS_LOGS`, cuenta de
+  Cloudflare de Guido, free tier) loggean texto libre que Web Analytics no puede: qué
+  se tipea en el buscador (con o sin resultado) y qué par de clubes se elige en
+  Comparar. Se lee directo del dashboard de Cloudflare (KV Pairs), sin reporte propio.
+  Gateado por hostname en `js/selector.js`: solo manda datos si `location.hostname ===
+  'financeofsports.com'`, así que probar el sitio en preview local no ensucia las
+  cuentas reales.
 - YA NO HAY EJERCICIOS PLACEHOLDER (Versión 138, pedido de Guido: "quita los
   ejercicios que sean placeholder, antes tenían sentido, hoy no"). Se borraron los 9
   que quedaban, todos de Boca (7) y River (2): cinco eran placeholder puro con rubros

@@ -3711,3 +3711,28 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   transcripciones de Estrela da Amadora, con cifras de Balanço/Demonstração de Resultados degradadas
   o perdidas en varias páginas (texto narrativo sí confiable en las 3). Se suman al to-do 60.
 - Mismo alcance que la Versión 214: SOLO transcripción, cero mapeo a `data/*.js`.
+
+## Versión 216 — logging de búsquedas y comparaciones (Worker + KV propios)
+
+- Motivación de Guido: tipeó "BILBAO" en el buscador esperando encontrar Athletic Club y no lo
+  encontró — quiere ver esos casos antes de decidir si hace falta un alias. Cloudflare Web Analytics
+  (Versión 166) no sirve para esto: solo mide pageviews/referrers, no texto libre tipeado.
+- Worker propio (`square-sky-ca25.guidomamone91.workers.dev`, cuenta de Cloudflare de Guido) + KV
+  namespace `FOS_LOGS`, ambos en el free tier (100k requests/día, 1k writes/día — el tráfico del
+  sitio no se acerca). El Worker guarda contadores simples: `search:hit:<término>` /
+  `search:miss:<término>` (búsqueda tuvo o no resultado) y `compare:<a> __vs__ <b>` (par de lados
+  elegido en Comparar, alfabetizado para que A-vs-B y B-vs-A sumen al mismo contador). Se lee
+  directo desde el dashboard de Cloudflare (KV Pairs), sin reporte propio que mantener.
+- Dos hooks nuevos en `js/selector.js`: `renderBusqueda()` (línea ~2187) loggea la búsqueda con un
+  debounce propio de 900ms (más largo que el de renderBusqueda en sí, Versión 165, para no mandar
+  "b", "bi", "bil…" de una misma búsqueda como términos separados); `confirmar('vs')` (línea ~1386)
+  loggea el par SOLO cuando los dos lados ya están puestos (un lado solo no es una comparación
+  todavía).
+- **Gateado por hostname a propósito** (`logEvent()`, línea ~79): si `location.hostname !==
+  'financeofsports.com'`, no manda nada. Sin esto, cualquier sesión de trabajo probando el buscador
+  en preview local ensuciaría las cuentas reales — confirmado en el navegador: tipear "BILBAO" en
+  local no genera ningún request al Worker, y el mismo flujo en producción si lo genera. La única
+  forma en que un test deja rastro es pegándole directo al Worker por fuera del sitio (pasó una vez,
+  a mano, para confirmar que el binding KV funcionaba — esa entrada de prueba quedó marcada para que
+  Guido la borre).
+- `ASSET_V` a 229.

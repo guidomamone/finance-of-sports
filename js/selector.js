@@ -76,6 +76,23 @@ window.CLUB_SELECTOR = (function(){
   var LS_RECENTS = 'fos_recent_clubs';
   var LS_COACH   = 'fos_coach_club';
 
+  // LOGGING DE BÚSQUEDAS Y COMPARACIONES (Versión 216). Worker + KV propios
+  // (`Admin/CHANGELOG.md`), NO Cloudflare Web Analytics: ese solo mide
+  // pageviews/referrers, no puede loggear texto libre tipeado en el buscador.
+  // Gateado por hostname A PROPÓSITO: cualquier sesión de trabajo (preview
+  // local, `financeofsports.com` visitado a mano para debug) NO es un
+  // visitante real, y sin este freno esas pruebas ensucian las cuentas.
+  var LOG_ENDPOINT = 'https://square-sky-ca25.guidomamone91.workers.dev';
+  function logEvent(payload){
+    if(location.hostname !== 'financeofsports.com') return;
+    try{
+      var data = JSON.stringify(payload);
+      if(navigator.sendBeacon) navigator.sendBeacon(LOG_ENDPOINT, data);
+      else fetch(LOG_ENDPOINT, { method:'POST', body:data, keepalive:true });
+    }catch(e){}
+  }
+  var logBusquedaTimer = null;
+
   var api = {
     getClub: function(){ return null; },
     pickClub: function(){ return Promise.resolve(); },
@@ -1369,6 +1386,11 @@ window.CLUB_SELECTOR = (function(){
     if(destino === 'vs'){
       lado[modalLado] = ladoDesde(JSON.parse(JSON.stringify(bloques)));
       stGuardado[modalLado] = { st:JSON.parse(JSON.stringify(st)), bloques:JSON.parse(JSON.stringify(bloques)) };
+      // Se loggea recién con LOS DOS lados puestos: un solo lado no es una
+      // comparación todavía, es la mitad de una (Versión 216).
+      if(lado[0] && lado[1]){
+        logEvent({ type:'compare', a:lado[0].nombre, b:lado[1].nombre });
+      }
       mostrando = false;
       close();
       render();
@@ -2172,6 +2194,15 @@ window.CLUB_SELECTOR = (function(){
       caja.appendChild(el('p', 'paso-vacio',
         t('sel.nohits', 'Ningún club, liga ni país con ese nombre. Probá con menos letras.')));
     }
+
+    // Se loggea con un debounce PROPIO, más largo que el de renderBusqueda()
+    // (Versión 165): loggear en cada tecla mandaría "b", "bi", "bil"… de un
+    // mismo "bilbao" como búsquedas separadas. Este timer se reinicia en cada
+    // letra nueva y solo dispara si el visitante se quedó quieto 900ms.
+    clearTimeout(logBusquedaTimer);
+    logBusquedaTimer = setTimeout(function(){
+      logEvent({ type:'search', q:q, hits:hits > 0 });
+    }, 900);
   }
 
   // Elegir una liga desde el buscador: los pasos quedan marcados con su camino y el
