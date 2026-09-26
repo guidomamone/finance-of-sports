@@ -89,27 +89,27 @@ perdieron sino que se descartaron:
     `js/liga.js`, que es el módulo entero de la pestaña. Ninguna se implementó todavía, es solo el
     pedido con contexto para que quien lo agarre no tenga que redescubrir cómo funciona el módulo.
 
-    (a) **BREAKDOWN DE MÁS DATOS POR LIGA, NO SOLO INGRESOS — PERO ARRANCAR CON INGRESOS ESTÁ BIEN**.
-        Guido: *"quiero que para cada página de liga haya un break no solo de ingresos, sino de
-        otros datos. Por ahora, solo los ingresos de Formato Simplificado. Pero me gusta que
-        arranque al principio con ingresos."* Es decir: la pestaña Ligas hoy es 100% ranking de
-        INGRESOS (ver la cabecera de `js/liga.js`, "LA REGLA QUE ORDENA TODO ESTE ARCHIVO"). Guido
-        confirma que empezar por ingresos fue la elección correcta, pero la visión de fondo es que
-        el ranking de una liga eventualmente muestre OTRAS métricas también (no especificó cuáles —
-        candidatos obvios del propio "Formato Simplificado" que ya existe para el club individual:
-        gastos, resultado neto/PAT, deuda neta — preguntarle a Guido cuál quiere primero cuando se
-        agarre esto, no asumir).
+    (a) **BREAKDOWN DE INGRESOS POR CATEGORÍA DE FORMATO SIMPLIFICADO, NO OTRAS MÉTRICAS**
+        (alcance confirmado por Guido, 2026-09-26: **solo ingresos** — nada de gastos, resultado
+        neto ni deuda, esos quedan afuera de este punto). Es decir: la pestaña Ligas hoy rankea
+        clubes por el TOTAL de ingresos de cada uno (ver la cabecera de `js/liga.js`, "LA REGLA QUE
+        ORDENA TODO ESTE ARCHIVO"); lo que falta es abrir ESE total en las categorías de "Formato
+        Simplificado" que ya existen para el club individual (TV, taquilla, sponsoring, venta de
+        jugadores, etc. — ver `REVENUE_CATEGORY_LABELS` en `data/category-map.js`), para que se vea
+        de qué está hecho el ingreso de cada club dentro de la liga, no solo el número total.
 
         POR QUÉ NO ES TRIVIAL: el dato de cada liga-ejercicio no se calcula en vivo, viene
         precalculado en `data/rankings/<liga>.js` por `tools/generate-rankings.js` (ver la cabecera
-        de `js/liga.js`, "DE DÓNDE SALEN LOS NÚMEROS") — el generador hoy solo extrae `revenue` de
-        `computeYearGeneric()` (`js/finanzas-calc.js`) para cada club de la liga, no las demás
-        métricas que ese motor ya calcula (`computeYearGeneric()` sí devuelve gastos y resultado
-        neto, se puede confirmar mirando su return). Agregar una métrica nueva implica: extender
-        `tools/generate-rankings.js` para guardar también ese campo por club-año, y en `js/liga.js`
-        algún selector de métrica en la vista de liga (con Ingresos como default/primera opción,
-        que es justo lo que Guido pidió mantener) que redibuje `grafico()` y `tabla()` con la
-        métrica elegida en vez de asumir siempre `f.revenue`.
+        de `js/liga.js`, "DE DÓNDE SALEN LOS NÚMEROS") — el generador hoy solo extrae el TOTAL
+        `revenue` de `computeYearGeneric()` (`js/finanzas-calc.js`) para cada club de la liga, no el
+        desglose por categoría que ese motor ya calcula (`computeYearGeneric()` devuelve
+        `revenueLines`/el breakdown por categoría en Formato Simplificado, se puede confirmar
+        mirando su return). Implica: extender `tools/generate-rankings.js` para guardar también ese
+        desglose por categoría, por club-año; y en `js/liga.js`, alguna forma de mostrarlo por
+        club dentro de la vista de liga (candidato obvio: expandir/expandir-al-click cada barra o
+        fila de la tabla para revelar su propio desglose, en vez de un selector que reemplace la
+        vista entera — a confirmar con Guido el patrón de interacción exacto cuando se agarre esto,
+        no asumirlo).
 
     (b) **% DEL TOTAL EN EL GRÁFICO DE BARRAS DE CADA CLUB**. Guido: *"quisiera que en el gráfico
         de barras de revenue de cada club haya una leyenda con el % del total."* Hoy `grafico()` en
@@ -242,27 +242,6 @@ perdieron sino que se descartaron:
     por pata es chico — el resultado es direccional, no estadísticamente robusto — para que no se
     sobre-interprete una diferencia chica como definitiva.
 
-61. INVENTARIO COMPLETO DE PENDIENTES DE SOURCING/ONBOARDING, PARA NO TENER QUE VOLVER A BUSCAR
-    (pedido explícito de Guido, 2026-09-25: "hace la lista entera de pdfs que faltan transcribir y
-    de transcripciones que faltan y ponelos en un mismo to-do así la siguiente sesión no tiene que
-    hacer de detective"). El detalle completo, archivo por archivo, está en
-    `Admin/inventario-pendiente.md` — no se repite acá para no duplicar. En números: **2047 PDFs sin
-    transcribir** en 15 países (grueso en países 100% nuevos: Noruega 369, República Checa 351,
-    Grecia 242, más 194 en Brasil y 184 en Colombia de clubes/años no cargados) y **~570
-    transcripciones `.md` ya hechas pero sin cargar al sitio**, repartidas en 3 categorías: ejercicio
-    nuevo de un club ya cargado (el grueso: Bélgica ~280 archivos y Dinamarca ~110 solas, con España/
-    Alemania/Croacia/Argentina/Brasil/Colombia sumando el resto), club nuevo con `.md` ya listo en un
-    país ya cargado (Chile es el hallazgo más grande de todos: ~41 años sin cargar entre Colo-Colo/
-    Universidad Católica/Universidad de Chile, además de Deportes Tolima en Colombia y 3 clubes más
-    en Bélgica/Dinamarca/Croacia), y país 100% nuevo con `.md` ya listo (Corea del Sur, China,
-    Austria, Escocia, Italia, Francia, Portugal, Rusia, Ucrania, Turquía). El archivo también trae
-    una sección de "por dónde empezar" (Chile primero, después Bélgica/Dinamarca, después España/
-    Alemania) y una lista de ~20 documentos ya descartados con el motivo verificado (entidad
-    equivocada, período parcial, solo memoria narrativa, mala calidad de OCR), para no perder tiempo
-    re-investigando lo mismo. Queda un to-do explícito sin resolver dentro de ese archivo (sección
-    4): extraer del documento agregado de la J.League la lista completa de clubes japoneses, texto
-    en japonés, nadie llegó a hacerlo todavía.
-
 63. PARTIR EL BLOQUE CLUB-INDEX DE `Admin/ESTADO.md` A UN ARCHIVO PROPIO, ANTES DE QUE
     `tools/audit.js` LO MARQUE SOLO (auditoría de escala del 2026-09-26,
     `auditorias/2026-09-26-escala.md` hallazgo 3). El umbral de 60 KB para TODO `Admin/ESTADO.md`
@@ -273,15 +252,6 @@ perdieron sino que se descartaron:
     mapa de escala. Mover el bloque a un archivo separado (ej. `Admin/ESTADO-clubes.md`), generado
     igual por el mismo script, con un puntero de una línea en `Admin/ESTADO.md` — mismo mecanismo
     que liberó a `index.html` de su comentario interno en la Versión 138.
-
-62. RE-MEDIR EL PAYLOAD EAGER COMPRIMIDO DE `index.html` EN LA PRÓXIMA AUDITORÍA DE ESCALA, NO
-    ESPERAR A 1000 CLUBES (auditoría de escala del 2026-09-26, hallazgo 2). Los 10 archivos que
-    `index.html` carga antes de elegir club pesan hoy 49,7 KB comprimidos (161 clubes), contra 29,3
-    KB el 2026-09-17 (41 clubes) — 1,7x en 9 días. Sigue sin ameritar el refactor pospuesto el
-    2026-09-20 (sacar `reportingCurrency`/`fiscalYearStart` de `clubs.js` seguía dando solo 3,0 KB
-    de ahorro a 1000 clubes, y `fiscalYearStart` lo necesita el selector antes de bajar el club). Pero
-    si en la próxima corrida el comprimido ya pasó de ~80-100 KB, ahí sí conviene diseñar el split
-    real de `clubs.js`/`club-index.js` en vez de seguir postergando con el mismo argumento.
 
 64. DOS `brandColor` PROBABLEMENTE MAL Y UN HUECO DE CATÁLOGO DE LIGAS, DE LA AUDITORÍA DE DATOS DEL
     2026-09-26 (`auditorias/2026-09-26.md`; ver también to-do 56, que es el problema de fondo del que
@@ -307,34 +277,6 @@ perdieron sino que se descartaron:
       resuelva de alguna forma: agregar las 2 ligas de segundo escalón al catálogo (con lo que
       implique para el selector mostrarlas), o enseñarle al chequeo a reconocer una exclusión
       documentada en vez de dejarlo silenciado a mano para siempre.
-
-60. RE-CHEQUEAR A MANO LAS TRANSCRIPCIONES CON OCR DE MALA CALIDAD ANTES DE USARLAS PARA CARGAR
-    DATOS (Versión 214, ampliado en la 215, sesiones de transcripción del 2026-09-24). El OCR salió
-    con tablas mezcladas, dígitos sueltos mal leídos o zonas ilegibles — ya marcado dentro de cada
-    `.md`, pero ninguno debería usarse para mapear datos al sitio sin volver a mirar esas páginas
-    contra el PDF original primero:
-    - `Clubes/Brasil/Amazonas/balancos-2022-2023.md` — balance y balancete a 2 columnas, filas
-      mezcladas incluso después de la corrección de rotación.
-    - `Clubes/Noruega/KFUM/aarsregnskap-osloKFUM-2018.md` y `...-2019.md` — el formulario oficial de
-      Brønnøysundregistrene (págs. 4-5 de ambos) salió mezclado, pero el mismo dato aparece limpio
-      más adelante en el propio documento, en el "Balanse" del club — usar esa parte, no la del
-      formulario oficial.
-    - `Clubes/Argentina/All Boys/asamblea-general-ordinaria-2024-presentacion.md` — varias
-      diapositivas con logos/fotos salieron ilegibles (esperable en una presentación); las 2
-      diapositivas con datos económicos sí salieron legibles, son las únicas usables de este PDF.
-    - `Clubes/Turquía/Gaziantep FK/gaziantepfk-nakit-akis-tablosu.md` y `...-gelir-tablosu.md` —
-      dígitos sueltos con discrepancia entre el detalle y su propio total en la misma tabla
-      (15.108.708 vs 18.108.708 en el primero; 68.070.170 vs 688.070.170 en el segundo), marcado
-      inline en vez de corregido a mano.
-    - `Clubes/Rusia/Dynamo Makhachkala/2025-poyasneniya.md` — a diferencia del caso Akhmat Grozny
-      (que era una plantilla en blanco), este SÍ tiene datos reales del club, pero las tablas
-      numéricas densas de las págs. 1-12 (intangibles, bienes de uso, inversiones financieras,
-      inventarios, cuentas por cobrar) salieron muy degradadas por rotación de página; las notas
-      narrativas de las págs. 13-18 sí son confiables.
-    - `Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md`, `...-2023-24.md` y
-      `...-2021-22.md` — las 3 tienen tablas de Balanço/Demonstração de Resultados degradadas o
-      directamente perdidas por el OCR (en `...-2023-24.md` la pág. 4 salió en blanco y las cifras
-      de las págs. 5-6 casi no se recuperaron); el texto narrativo de las 3 sí es confiable.
 
 47. EXPLICARLE AL VISITANTE POR QUÉ MÉXICO NO MUESTRA CASI NADA (pedido de Guido, 2026-09-22:
     *"estoy seguro de que muchos usuarios van a querer ver méxico en detalle y hay que explicar
@@ -376,7 +318,9 @@ perdieron sino que se descartaron:
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
-    to-do 51, proceso de email a clubes). Casos concretos que salieron del barrido del 2026-09-22:
+    to-do 51, proceso de email a clubes). **EN PAUSA hasta 2026-09-30 (decisión de Guido, 2026-09-26)**:
+    el pipeline (51) está probado de punta a punta pero todavía no se usó con ningún club real — no
+    retomar antes de esa fecha. Casos concretos que salieron del barrido del 2026-09-22:
     Atlanta tenía 4 balances reales (2013-2016) en Drive, hoy con el compartir revocado — pedirle al
     club que los vuelva a compartir es gratis y rápido. Banfield tiene el 105° Ejercicio (2024-25)
     aprobado pero solo publicado en video de YouTube, nunca como PDF. Independiente tiene el
@@ -567,14 +511,6 @@ perdieron sino que se descartaron:
     Racing, Unión y Vélez (7,0% de sus ingresos en 2016). Unificarlo a `player_sales` en los 7 del
     segundo grupo le baja el catch-all a Vélez y a los otros 6 sin tocar ningún total. No es
     urgente y no depende de ninguna otra decisión.
-
-22. MAPA DE ESCALA (Versión 128, ampliado en la 159 — ver `.claude/skills/escala-finance-of-sports/`
-    para el mapa completo con su metodología, y `auditorias/2026-09-26-escala.md` para el reporte
-    de la corrida más reciente, con 161 clubes contra los 41 de la corrida anterior). (a)-(i) del
-    plan original resueltos o descartados — quedan cerrados los 8 puntos de
-    `Admin/Archive/PLAN-REMEDIACION-ESCALA.md`. Lo que sigue abierto de escala, de la corrida del
-    2026-09-26: ver to-do 62 (re-medir payload eager comprimido) y 63 (partir el bloque CLUB-INDEX
-    de `Admin/ESTADO.md`, más urgente — margen de 40-50 clubes al ritmo actual).
 
 36. EVALUAR JEV (TypeSafe, modelo `jev-latest`, docs.typesafe.ai) PARA CATEGORIZAR RUBROS
     AUTOMÁTICAMENTE, cuando el proyecto llegue a **200 clubes cargados** (charlado con Guido el
