@@ -21,13 +21,34 @@
 //
 // Si la liga que hace falta todavía no está cacheada, bajarla primero:
 //   node tools/fetch-brand-color-reference.mjs <slug-liga-footylogos> <nombre-local>
+//
+// Sin coincidencias (o liga no cacheada) queda anotado en
+// tools/brand-color-reference/misses.jsonl (pedido de Guido, 2026-09-27) --
+// para que él revise ese archivo de vez en cuando y decida qué liga nueva
+// vale la pena cachear, en vez de que cada sesión se tope con el mismo hueco
+// sin dejar rastro. Ver también --misses.
 // ============================================================================
 
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const refDir = resolve(projectRoot, 'tools', 'brand-color-reference');
+const missesPath = resolve(refDir, 'misses.jsonl');
+
+function logMiss(reason, query, liga) {
+  mkdirSync(refDir, { recursive: true });
+  appendFileSync(missesPath, JSON.stringify({ ts: new Date().toISOString(), query, liga: liga ?? null, reason }) + '\n', 'utf8');
+}
+
+function printMisses() {
+  if (!existsSync(missesPath)) { console.log('Sin misses registrados todavía.'); return; }
+  const lines = readFileSync(missesPath, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l));
+  const seen = new Map();
+  for (const l of lines) seen.set(`${l.query}${l.liga ? ' --liga ' + l.liga : ''}`, l);
+  console.log(`${seen.size} búsqueda(s) distintas sin resultado (${lines.length} intentos en total):\n`);
+  for (const [key, l] of seen) console.log(`  "${key}" -- ${l.reason} (última vez: ${l.ts.slice(0, 10)})`);
+}
 
 function normalize(s) {
   return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -49,6 +70,8 @@ function main() {
   const soloLiga = ligaFlag >= 0 ? args[ligaFlag + 1] : null;
   const query = args.find((a, i) => !a.startsWith('--') && args[i - 1] !== '--liga');
 
+  if (args.includes('--misses')) return printMisses();
+
   if (args.includes('--list-ligas')) {
     const ligas = listLigas();
     if (!ligas.length) console.log('Sin ligas cacheadas todavía. Correr tools/fetch-brand-color-reference.mjs primero.');
@@ -60,22 +83,26 @@ function main() {
   }
 
   if (!query) {
-    console.error('Uso: node tools/lookup-brand-color.js "<nombre del club>" [--liga <nombre>] [--json]\n   o: node tools/lookup-brand-color.js --list-ligas');
+    console.error('Uso: node tools/lookup-brand-color.js "<nombre del club>" [--liga <nombre>] [--json]\n   o: node tools/lookup-brand-color.js --list-ligas\n   o: node tools/lookup-brand-color.js --misses');
     process.exit(1);
   }
 
   const ligas = soloLiga ? [soloLiga] : listLigas();
   if (!ligas.length) {
     console.error('Sin ligas cacheadas -- correr tools/fetch-brand-color-reference.mjs primero.');
+    logMiss('sin ninguna liga cacheada todavía', query, soloLiga);
+    console.error('(quedó anotado en tools/brand-color-reference/misses.jsonl -- avisale a Guido para que lo prepopule)');
     process.exit(1);
   }
 
   const q = normalize(query);
   const matches = [];
+  let ligaFaltante = false;
   for (const liga of ligas) {
     const path = resolve(refDir, `${liga}.json`);
     if (!existsSync(path)) {
       console.error(`Liga '${liga}' no está cacheada (no existe ${path.replace(projectRoot + '/', '')}).`);
+      ligaFaltante = true;
       continue;
     }
     const data = loadLiga(liga);
@@ -84,6 +111,10 @@ function main() {
       if (hay) matches.push({ liga, ...club });
     }
   }
+  if (ligaFaltante && soloLiga) {
+    logMiss(`liga '${soloLiga}' pedida explícitamente pero no está cacheada`, query, soloLiga);
+    console.error('(quedó anotado en tools/brand-color-reference/misses.jsonl -- avisale a Guido para que lo prepopule)');
+  }
 
   if (json) {
     console.log(JSON.stringify(matches, null, 2));
@@ -91,6 +122,10 @@ function main() {
   }
   if (!matches.length) {
     console.log(`Sin coincidencias para "${query}" en: ${ligas.join(', ')}. Puede que la liga del club todavía no esté cacheada.`);
+    if (!ligaFaltante) {
+      logMiss('sin coincidencias en ninguna liga cacheada', query, soloLiga);
+      console.log('(quedó anotado en tools/brand-color-reference/misses.jsonl -- avisale a Guido para que lo prepopule, o puede que el club no esté en footylogos)');
+    }
     return;
   }
   for (const m of matches) {

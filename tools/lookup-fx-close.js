@@ -13,22 +13,29 @@
 // Si la fecha/moneda no está en la serie local (no se corrió
 // fetch-fx-reference.mjs para esa moneda, o la fecha es más vieja que el rango
 // bajado), lo dice explícito -- NUNCA inventa un número ni cae a un valor por
-// default.
+// default. CUALQUIER caso de estos queda anotado en
+// tools/fx-reference/misses.jsonl (pedido de Guido, 2026-09-27): la idea es
+// que él pueda revisar ese archivo de vez en cuando y correr
+// fetch-fx-reference.mjs para la moneda/rango que haga falta, en vez de que
+// cada sesión se tope con el mismo hueco por separado sin dejar rastro.
 //
 // USO:
 //   node tools/lookup-fx-close.js 2018-10-31                cotización + fxRef listo para pegar
-//   node tools/lookup-fx-close.js 2018-10-31 --currency ARS  (ARS es el default hoy, única serie bajada)
+//   node tools/lookup-fx-close.js 2018-10-31 --currency ARS  (ARS es el default; ver --list-monedas)
 //   node tools/lookup-fx-close.js 2018-10-31 --json
+//   node tools/lookup-fx-close.js --list-monedas             qué monedas hay cacheadas
+//   node tools/lookup-fx-close.js --misses                   huecos pendientes de prepopular
 //
 // No llama a ninguna API -- lee el archivo local. Si ese archivo no existe o
 // está desactualizado para la fecha que hace falta, correr primero:
 //   node tools/fetch-fx-reference.mjs
 // ============================================================================
 
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const projectRoot = resolve(import.meta.dirname, '..');
+const missesPath = resolve(projectRoot, 'tools', 'fx-reference', 'misses.jsonl');
 
 const CURRENCIES = {
   ARS: { file: 'ars-usd.json', fuente: 'Dólar mayorista BCRA' },
@@ -36,13 +43,20 @@ const CURRENCIES = {
   COP: { file: 'cop-usd.json', fuente: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)' },
 };
 
+function logMiss(reason, currency, date) {
+  mkdirSync(resolve(projectRoot, 'tools', 'fx-reference'), { recursive: true });
+  appendFileSync(missesPath, JSON.stringify({ ts: new Date().toISOString(), currency, date, reason }) + '\n', 'utf8');
+}
+
 function parseArgs() {
   const args = process.argv.slice(2);
   const date = args.find((a) => !a.startsWith('--'));
   const curFlag = args.indexOf('--currency');
   const currency = curFlag >= 0 ? args[curFlag + 1] : 'ARS';
   const json = args.includes('--json');
-  return { date, currency, json };
+  const misses = args.includes('--misses');
+  const listMonedas = args.includes('--list-monedas');
+  return { date, currency, json, misses, listMonedas };
 }
 
 function loadSeries(currency) {
@@ -66,10 +80,30 @@ function findClose(series, dateStr) {
   return null;
 }
 
+function printMisses() {
+  if (!existsSync(missesPath)) { console.log('Sin misses registrados todavía.'); return; }
+  const lines = readFileSync(missesPath, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l));
+  const seen = new Map();
+  for (const l of lines) {
+    const key = `${l.currency}@${l.date ?? '?'}`;
+    seen.set(key, l); // se queda con el más reciente por combinación
+  }
+  console.log(`${seen.size} hueco(s) distintos pendientes de prepopular (${lines.length} intentos en total):\n`);
+  for (const [key, l] of seen) console.log(`  ${key} -- ${l.reason} (última vez: ${l.ts.slice(0, 10)})`);
+}
+
 function main() {
-  const { date, currency, json } = parseArgs();
+  const { date, currency, json, misses, listMonedas } = parseArgs();
+  if (misses) return printMisses();
+  if (listMonedas) {
+    for (const [code, cfg] of Object.entries(CURRENCIES)) {
+      const path = resolve(projectRoot, 'tools', 'fx-reference', cfg.file);
+      console.log(existsSync(path) ? `${code}: ${cfg.fuente} (cacheada)` : `${code}: ${cfg.fuente} (configurada, sin bajar -- correr fetch-fx-reference.mjs)`);
+    }
+    return;
+  }
   if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-    console.error('Uso: node tools/lookup-fx-close.js YYYY-MM-DD [--currency ARS] [--json]');
+    console.error('Uso: node tools/lookup-fx-close.js YYYY-MM-DD [--currency ARS] [--json]\n   o: node tools/lookup-fx-close.js --list-monedas\n   o: node tools/lookup-fx-close.js --misses');
     process.exit(1);
   }
   let data;
@@ -77,15 +111,23 @@ function main() {
     data = loadSeries(currency);
   } catch (err) {
     console.error(err.message);
+    logMiss(err.message, currency, date);
+    console.error(`\n(quedó anotado en tools/fx-reference/misses.jsonl -- avisale a Guido para que lo prepopule)`);
     process.exit(1);
   }
   if (date < data.rangeFrom || date > data.rangeTo) {
-    console.error(`${date} está fuera del rango bajado (${data.rangeFrom} a ${data.rangeTo}). Correr de nuevo tools/fetch-fx-reference.mjs con --from/--to si hace falta una fecha fuera de ese rango.`);
+    const reason = `fuera de rango (bajado: ${data.rangeFrom} a ${data.rangeTo})`;
+    console.error(`${date} está ${reason}. Correr de nuevo tools/fetch-fx-reference.mjs con --from/--to si hace falta una fecha fuera de ese rango.`);
+    logMiss(reason, currency, date);
+    console.error(`(quedó anotado en tools/fx-reference/misses.jsonl -- avisale a Guido para que lo prepopule)`);
     process.exit(1);
   }
   const found = findClose(data.series, date);
   if (!found) {
+    const reason = 'sin cotización ni en los 10 días hábiles anteriores';
     console.error(`No se encontró cotización para ${date} ni en los 10 días hábiles anteriores -- revisar a mano.`);
+    logMiss(reason, currency, date);
+    console.error(`(quedó anotado en tools/fx-reference/misses.jsonl -- avisale a Guido para que lo prepopule)`);
     process.exit(1);
   }
   if (json) {

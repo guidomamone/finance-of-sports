@@ -204,6 +204,15 @@ Qué tipo de cambio usar, en orden de preferencia:
    puntos (ej. Racing 2026-27: "$1.505 para julio 2026 y $1.870 para junio 2027") en vez de un
    promedio único, promedialos vos (mismo criterio que ya usa Boca 2027: inicio+cierre / 2).
 
+**Antes de salir a buscar en la web una cotización de mercado (reglas 1 y 2 de arriba), probá
+`node tools/lookup-fx-close.js <fecha> --currency ARS|BRL|COP` (to-do 91, 2026-09-27)** — busca
+LOCAL contra una serie histórica ya bajada de la fuente oficial (BCRA/BCB/TRM, `tools/fx-reference/`)
+y te devuelve el `fx`/`fxSource`/`label` listos para pegar en `FX_CLOSE`, sin fetch. Si la moneda
+que necesitás no es ninguna de esas 3, o la fecha cae fuera del rango bajado, el script lo dice
+explícito y lo anota en `tools/fx-reference/misses.jsonl` — avisale a Guido (él corre
+`tools/fetch-fx-reference.mjs` para agregar esa moneda/rango) en vez de recién ahí salir a buscar en
+la web vos.
+
 ### Cómo se ESCRIBE esa procedencia en el archivo (Versión 125): `fxSource` y `fxRef`
 
 Las 4 reglas de arriba ya no se cuentan en un comentario: cada ejercicio declara de dónde salió su

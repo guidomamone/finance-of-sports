@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 264 — to-do 91 cierra el loop: skills apuntan a las herramientas nuevas, y un "miss" queda registrado para que Guido lo prepopule
+
+- `club-data-mapping/SKILL.md` sección 5 y `club-or-year-onboarding/SKILL.md` sección 3 punto 1b:
+  ambas apuntan ahora a `tools/lookup-fx-close.js`/`tools/lookup-brand-color.js` ANTES de salir a
+  buscar en la web — sin esto, las herramientas del to-do 91 quedaban sin que ninguna sesión supiera
+  que existen.
+- `tools/lookup-fx-close.js` y `tools/lookup-brand-color.js`: cualquier búsqueda sin resultado (moneda
+  no configurada, fecha fuera de rango, liga no cacheada, club no encontrado) queda anotada en
+  `tools/{fx-reference,brand-color-reference}/misses.jsonl` (pedido de Guido, 2026-09-27) — el mensaje
+  en consola le dice a la sesión que avise, para que Guido pueda revisar el archivo de vez en cuando y
+  correr el fetcher correspondiente en vez de que cada sesión se tope con el mismo hueco sin dejar
+  rastro. Nuevo flag `--misses` en los dos scripts para ver el resumen (deduplicado) sin abrir el
+  JSONL a mano.
+
 ## Versión 263 — to-do 91 ampliado: 3 monedas (no solo ARS) y 5 ligas (no solo 3), a pedido de Guido
 
 - `tools/fetch-fx-reference.mjs` ahora baja 3 series, no solo ARS — las 3 monedas con más clubes ya

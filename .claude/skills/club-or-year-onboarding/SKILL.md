@@ -195,8 +195,15 @@ limpieza de una sola vez:
         que fue verdad entre 1964 y 1981); o el color que declare oficialmente la liga cuando
         existe — la `クラブカラー` de la J.League resolvió los 10 japoneses con un fetch cada uno y
         cero ambigüedad.
-     2. **Recién después el hex**, y se acepta SOLO si cae en la familia que fijó la capa 1. Los
-        dos intentos baratos, que fallan rápido: un `curl` al sitio oficial buscando `theme-color`
+     2. **Recién después el hex**, y se acepta SOLO si cae en la familia que fijó la capa 1. **Antes
+        de pedirle la tabla a footylogos, probá `node tools/lookup-brand-color.js "<club>"` (to-do
+        91, 2026-09-27)** — busca LOCAL contra ligas que ya se cachearon (`tools/lookup-brand-color.js
+        --list-ligas` dice cuáles; hoy Argentina/Colombia/Brasil/España/Inglaterra), 0 fetches. Si no
+        aparece (liga no cacheada, o el club no está en footylogos), lo dice y lo anota en
+        `tools/brand-color-reference/misses.jsonl` — avisale a Guido (corre
+        `tools/fetch-brand-color-reference.mjs <liga> <nombre>` para cachear una liga nueva) en vez
+        de recién ahí salir a fetchear vos. Recién si la liga no está ni va a estar cacheada pronto,
+        los dos intentos baratos que fallan rápido: un `curl` al sitio oficial buscando `theme-color`
         (6 aciertos en 41 — el resto son apps JS que devuelven un shell vacío, sitios caídos o un
         WAF) y el wikitext de la plantilla de camiseta (`?action=raw` + `body1`, exacto cuando está
         lleno, hoy casi siempre vacío). Si no, agregadores: las tablas POR LIGA de footylogos
