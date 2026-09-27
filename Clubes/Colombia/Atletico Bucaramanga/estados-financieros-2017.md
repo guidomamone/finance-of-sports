@@ -1,5 +1,3 @@
-> **⚠️ INCOMPLETA (2026-09-26, to-do 66 / `Admin/test-costo-transcripcion.md`)**: a esta transcripción (hecha por Haiku 4.5 como parte de un test de costo) le faltan páginas del PDF original -- ver el chequeo estructural en `Admin/test-costo-transcripcion.md`. NO USAR para cargar datos al sitio hasta completar las páginas faltantes contra el PDF.
-
 # Estados Financieros - Atlético Bucaramanga 2017
 
 --- pág. 1 ---
@@ -465,7 +463,7 @@ El saldo de la cuenta ingreso por actividades es ordinarias es el siguiente.
 
 Comprende los valores recibidos y causados como resultado de las actividades desarrolladas en cumplimiento de su objeto social, por los conceptos de derechos de Televisión, patrocinio, publicidad y propaganda, venta de taquilla y premios recibidos por logros y metas de objetivos trazados durante el año 2017.
 
---- pág. 14 ---
+--- pág. 18 ---
 
 ## NOTA 15– COSTOS
 
@@ -488,7 +486,7 @@ El saldo de la cuenta costo de ventas es el siguiente.
 | | Gastos de Viaje | $266,611 | $248,029 | 7.5% |
 | | Intangibles | $373,265 | $542,044 | -31.1% |
 | | Diversos | $146,003 | $484,934 | -69.9% |
-| | Total | $ 6,524,588 | $ 5,276,880 | |
+| | Total | $ 6,524,586 | $ 5,276,880 | |
 
 Comprende los gastos causados y pagados en el desarrollo principal del objeto social de la empresa y se registran sobre la base de causación durante el período comprendido entre el 1 de enero y 31 de diciembre de 2017.
 
@@ -505,7 +503,7 @@ El saldo de la cuenta de otros ingresos es el siguiente.
 
 Comprende los ingresos provenientes de ajuste al peso al cierre del período.
 
---- pág. 15 ---
+--- pág. 19 ---
 
 ## NOTA 17– GASTOS DE ADMINISTACION
 
@@ -516,7 +514,7 @@ El saldo de la cuenta de gastos de administración es el siguiente.
 | Párrafo NIIF PYMES | Concepto | Diciembre 31 de 2017 | Diciembre 31 de 2016 | Variación |
 |---|---|---|---|---|
 | NIC 1.78 d 4.11 a | Gastos de Administración | | |
-| 5.11 b | Gastos de personal | $68,421 | $79,003 | 11.9% |
+| 5.11 b | Gastos de personal | $88,421 | $79,003 | 11.9% |
 | | Honorarios | $12,050 | $27,100 | -55.5% |
 | | Impuestos | $34,553 | $7,206 | 379.5% |
 | | Arrendamientos | $1,320 | $0 | 100.0% |
@@ -524,14 +522,14 @@ El saldo de la cuenta de gastos de administración es el siguiente.
 | | Seguros | $32,029 | $27,868 | 14.9% |
 | | Servicio vigilancia | $115 | $0 | 100.0% |
 | | Procesamiento electrónico | $2,920 | $0 | 100.0% |
-| | Publicidad propaganda | $35 | $9,280 | -99.6% |
+| | Publicidad propaganda | $35 | $9,260 | -99.6% |
 | | Servicios públicos | $935 | $1,381 | -32.3% |
 | | Otros servicios | $0 | $225 | -100.0% |
 | | Correo portes y telegramas | $582 | $483 | 20.4% |
-| | Gastos notariales y legales | $9,677 | $3,836 | 65.8% |
+| | Gastos notariales y legales | $9,677 | $5,836 | 65.8% |
 | | Mantenimiento y reparaciones | $5,293 | $4,282 | 23.6% |
-| | Gastos de viaje | $28,939 | $25,993 | 11.3% |
-| | Depreciaciones | $42,878 | [ilegible] | 166.6% |
+| | Gastos de viaje | $28,938 | $25,993 | 11.3% |
+| | Depreciaciones | $42,878 | $16,086 | 166.6% |
 | | Gastos varios | $736 | $9,229 | -92.0% |
 | | Total | $ 260,481 | $ 224,546 | |
 
@@ -541,7 +539,7 @@ Los gastos diversos: bajo esta denominación registramos los gastos por diferent
 
 Comprende los gastos causados y pagados en el desarrollo de la empresa y se registran sobre la base de causación durante el período comprendido entre el 1 de enero al 31 de diciembre de 2017. Las variaciones del año 2017 al 2017 debe al incremento salarial y de honorarios.
 
---- pág. 16 ---
+--- pág. 20 ---
 
 ## NOTA 18 – COSTOS FINANCIEROS
 
@@ -571,7 +569,7 @@ El saldo de la cuenta de otros gastos es el siguiente.
 |---|---|---|---|---|
 | 5.5. b | Costos Financieros | | |
 | | Costas y procesos judiciales | $10,206 | $157,170 | -93.5% |
-| | Impuestos asumidos | $5,899 | $32,338 | -81.9% |
+| | Impuestos asumidos | $5,869 | $32,338 | -81.9% |
 | | Otros | $0 | $1,137 | -100.0% |
 | | Indemnizaciones | $0 | $50,000 | -100.0% |
 | | Multas, sanciones y litigios | $0 | $11,018 | -100.0% |
@@ -582,7 +580,7 @@ Registra el valor de los gastos pagados o causados por concepto de servicios rec
 
 Registra el valor de los gastos pagados o causados originados en impuestos o tasas de carácter obligatorio a favor del Estado diferentes al concepto de renta y complementarios, a pagar por el año 2017 y 2016.
 
---- pág. 17 ---
+--- pág. 21 ---
 
 ## 13. Aprobación de los estados financieros
 
@@ -600,5 +598,3 @@ T.P. N°. 78280-T
 Carmen Elisa Padilla Peñaloza
 Contador Publico
 T.P. N°.131496-T
-
---- pág. 21 ---

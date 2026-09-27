@@ -15,6 +15,25 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 254 — completadas las 4 transcripciones incompletas del test de costo (to-do 71)
+
+- `Clubes/Colombia/{Envigado/estados-financieros-2024,2023, Atletico Bucaramanga/estados-financieros-2017, Alianza FC/estados-financieros-2024}.md`:
+  completadas y verificadas página por página contra el PDF (texto nativo o imagen según el
+  documento), warning `⚠️ INCOMPLETA` sacado de los 4. Los 4 terminan ahora en el número de página
+  real del PDF (17/21/30/46) sin huecos.
+- El chequeo estructural original (conteo de páginas) subestimaba el problema: en Alianza FC y
+  Bucaramanga las páginas "faltantes" en realidad estaban transcriptas pero con las marcas de
+  página corridas (páginas reales fusionadas bajo menos marcas de las que corresponden); en
+  Envigado sí faltaba texto real, incluyendo bloques que Haiku había reemplazado directamente por
+  un comentario placeholder (`[Complex tax reconciliation table...]`) en vez de transcribir, y una
+  tabla de ~150 filas con etiquetas/montos desalineados. Se corrigieron además ~10 dígitos mal
+  leídos por el OCR original, verificados contra la imagen o el subtotal impreso.
+- **Pendiente para otra sesión, fuera del alcance de este to-do**: en `Envigado/estados-financieros-2023.md`
+  quedan más placeholders del mismo tipo (líneas ~246, 249, 306, 333, 822 — obligaciones
+  financieras, beneficios a empleados, movimientos de capital, depreciación) y las marcas de página
+  de sus primeras ~15-20 páginas (y las de `2024.md`) también vienen corridas — no se tocó por
+  estar fuera del rango pedido. Ver to-do 86.
+
 ## Versión 253 — Club Almagro (Argentina, Primera Nacional): club nuevo, 6 ejercicios reales (2018-2023)
 
 - `data/almagro-ar-data.js` nuevo: 6 balances auditados reales (Ejercicios 80-85, cierre 31/10 de

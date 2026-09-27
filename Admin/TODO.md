@@ -54,6 +54,20 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+86. TERMINAR DE LIMPIAR `Clubes/Colombia/Envigado/estados-financieros-2023.md` Y `2024.md`, que
+    quedaron con problemas del mismo origen que el to-do 71 (test de costo de transcripción de
+    Haiku) pero FUERA del rango que ese to-do pedía arreglar (encontrado al resolverlo, 2026-09-27):
+    - `2023.md` tiene más bloques reemplazados por un comentario placeholder en vez de transcriptos
+      de verdad (líneas ~246, 249, 306, 333, 822 — obligaciones financieras, beneficios a
+      empleados, movimientos de capital, depreciación).
+    - Las marcas de página de las primeras ~15-20 páginas de `2023.md` y de `2024.md` vienen
+      corridas (páginas reales del PDF fusionadas bajo menos marcas `--- pág. N ---` de las que
+      corresponden), mismo síntoma que ya se corrigió en el rango 18-46/18-30 de esos mismos
+      archivos.
+    Mismo criterio que el to-do 71: releer contra el PDF (texto nativo, Envigado sí tiene capa de
+    texto en gran parte del documento) y completar/renumerar sin re-transcribir todo de cero. NO
+    usar estos 2 documentos para cargar datos hasta terminar esta limpieza.
+
 85. RECORRER EL PROCESO DE ONBOARDING PUNTO POR PUNTO Y VER QUÉ SE PUEDE HACER MÁS EFICIENTE Y/O
     DELEGAR A OTRA IA (pedido de Guido, 2026-09-27: *"ya sé que hay uno o dos puntos de JEV, ponelo
     como otro punto"* — distinto de 36 y 74, que son específicos a categorizar rubros con JEV). Esto
@@ -279,21 +293,6 @@ perdieron sino que se descartaron:
     los 2 hooks de la Versión 216); (d) confirmar que el snippet/SDK de Mixpanel no choca con la
     convención de `ASSET_V`/`?v=` de scripts propios (ver CLAUDE.md, gotchas de caché) si se sirve
     como script propio en vez de vía CDN de Mixpanel.
-
-71. COMPLETAR LAS 4 TRANSCRIPCIONES DE LA PATA HAIKU QUE QUEDARON CON PÁGINAS FALTANTES (del test de
-    costo del to-do 66, ver `Admin/test-costo-transcripcion.md`). Cada archivo tiene una advertencia
-    al principio marcando el problema — no usarlos para cargar datos hasta completarlos:
-    - `Clubes/Colombia/Envigado/estados-financieros-2024.md` — faltan las páginas 18 a 29 completas
-      (12 de 30 páginas del PDF, ~40% del documento).
-    - `Clubes/Colombia/Envigado/estados-financieros-2023.md` — faltan las páginas 24, 33 y 38 sueltas,
-      la 40-42 quedó colapsada en una sola marca, y la marca de la página 31 está duplicada.
-    - `Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md` — faltan las páginas 18 a 20.
-    - `Clubes/Colombia/Alianza FC/estados-financieros-2024.md` — las páginas 15 a 17 quedaron
-      colapsadas en una sola marca en vez de una por página.
-    Completarlos releyendo el PDF original y agregando las páginas que faltan en su lugar (mismo
-    criterio de transcripción de CLAUDE.md, "Cada PDF nuevo"), no re-transcribir el documento entero
-    de cero. Los otros 26 documentos del test (10 Gemini + 10 Sonnet + 6 de Haiku) están completos y
-    ya se pueden usar para onboarding normal.
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del

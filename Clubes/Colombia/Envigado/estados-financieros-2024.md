@@ -1,5 +1,3 @@
-> **⚠️ INCOMPLETA (2026-09-26, to-do 66 / `Admin/test-costo-transcripcion.md`)**: a esta transcripción (hecha por Haiku 4.5 como parte de un test de costo) le faltan páginas del PDF original -- ver el chequeo estructural en `Admin/test-costo-transcripcion.md`. NO USAR para cargar datos al sitio hasta completar las páginas faltantes contra el PDF.
-
 # Envigado Fútbol Club S.A. - Estados Financieros
 
 ## Políticas contables y notas explicativas a los Estados Financieros
@@ -594,8 +592,8 @@ El gasto de impuesto a las ganancias comprende:
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Impuesto de renta y complementarios | 2.056.675.000 | 11.495.001.910 |
-| Impuesto diferido | 1.430.177.003 | (2.575.303.534) |
+| Impuesto de renta y complementarios | 2.056.875.000 | 11.495.001.910 |
+| Impuesto diferido | 1.430.177.003 | (2.575.303.634) |
 | Total impuesto a las ganancias | 3.487.052.003 | 8.919.698.276 |
 
 La conciliación entre la ganancia contable y el gasto por impuesto de renta es la siguiente:
@@ -603,46 +601,65 @@ La conciliación entre la ganancia contable y el gasto por impuesto de renta es 
 | Concepto | 2024 | 2023 |
 |---|---|---|
 | Ganancia contable antes de impuesto sobre la renta | 9.608.886.493 | 25.158.490.785 |
-| 1 Diferencias permanentes que aumentan la renta líquida | - | - |
-| Pérdidas o gastos no deducibles | 86.353.754 | 72.880.392 |
-| 2 Donaciones que no cumplen los requisitos legales | 2.608.000 | 7.423.852 |
-| Activos depreciables que se han excedido del límite máximo | 16.072.243 | 33.032.346 |
-| 3 Costos que se guardan relación de causalidad y necesidad con la actividad | 52.760.502 | 64.073.502 |
-| (+) Otros activos no deducibles de naturaleza permanente | 177.219.578 | 41.028.954 |
-| (+) Otros gastos no deducibles | 57.145.164 | 57.536.676 |
-| Pérdidas y gastos no deducibles | 431.561.371 | 296.055.632 |
-| 2 Diferencias temporales deducibles | 1.470.724.313 | 7.582.550.287 |
-| 3 Diferencias temporales imponibles que aumentan la renta líquida | (6.465.145.945) | (391.975.537) |
-| Renta líquida gravable estimada | 5.875.785.714 | 32.838.296.669 |
-| Tasa de impuesto de renta | 35% | 35% |
-| Provisión impuesto de renta | 2.056.875.000 | 11.493.403.910 |
-| Provisión impuesto ganancias ocasional | - | 1.598.000 |
-| (-) Retenciones en la fuente que practicaron | (380.758.370) | (373.058.705) |
-| (-) Autoeretenciones | (235.444.000) | (881.447.285) |
-| (-) Anticipos de impuesto de renta vigencia anterior | (46.072.243) | (3.032.346) |
-| (=) Saldos a favor | 2.750.552.447 | 57.536.676 |
-| Pérdidas y gastos no deducibles reconocidos | 57.145.164 | 57.536.676 |
-| (+) Diferencias temporales imponibles que aumentan la renta líquida | 177.219.578 | 41.028.954 |
-| (+) Anticipo de impuesto de renta vigencia anterior | (4.634.844.000) | (2.336.054.000) |
-| (Saldo a favor) Impuestos corrientes por pagar | (3.214.181.370) | 8.103.631.910 |
+| 1 Diferencias permanentes que aumentan la renta líquida | | |
+| Pérdidas y gastos no deducibles | | |
+| (+) Deducciones de Impuestos (GMF, entre otros) | 86.353.754 | 72.860.392 |
+| (+) Donaciones que no cumplan los requisitos legales | 2.000.000 | 7.423.852 |
+| (+) Gastos de vigencias anteriores | 16.072.245 | 33.032.346 |
+| (+) Impuestos, Multas, Sanciones no deducibles | 92.760.630 | 84.075.502 |
+| (+) Gastos que no guardan relación de causalidad y necesidad con la actividad productora de renta | 177.219.578 | 41.026.864 |
+| (+) Otros gastos no deducibles de naturaleza permanente | 57.145.164 | 57.636.676 |
+| Pérdidas y gastos no deducibles (subtotal) | 431.551.371 | 296.055.632 |
+| 2 Diferencias que surgen entre la aplicación de la norma fiscal y la norma contable | | |
+| Gastos por depreciación que han excedido El Límite Máximo Fiscal | | |
+| (+) Propiedades, planta y equipo | (179.226.518) | 16.750.017 |
+| Gastos por depreciación que no han excedido el límite máximo fiscal | | |
+| (+) Mejora en propiedad arrendada | - | (129.139.472) |
+| Otras diferencias temporales deducibles | | |
+| (-) Recuperación de provisiones | - | (38.757.000) |
+| (+) Provisión contable no deducible fiscalmente | - | 350.000.000 |
+| Otras diferencias temporales deducibles (subtotal) | | (5.677.053) |
 
---- pág. 12 ---
+---
+
+--- pág. 19 ---
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| (+) Pérdidas por diferencia en cambio | 1.470.724.313 | 7.582.550.287 |
-| 3 Diferencias temporales imponibles que aumentan la renta líquida | (6.465.145.945) | (391.975.537) |
+| (+) Pérdidas por diferencia en cambio | 1.470.724.313 | 7.582.550.297 |
+| 3 Diferencias temporales imponibles que aumentan la renta líquida | | |
+| (-) Ganancia por diferencia en cambio | (5.455.149.945) | (391.976.537) |
 | Renta líquida gravable estimada | 5.876.785.714 | 32.838.296.669 |
 | Tasa de impuesto de renta | 35% | 35% |
 | Provisión impuesto de renta | 2.056.875.000 | 11.493.403.910 |
-| Provisión impuesto ganancias ocasional | - | 1.598.000 |
-| (-) Retenciones en la fuente que practicaron | (380.758.370) | (373.058.705) |
-| (-) Autoeretenciones | (235.444.000) | (881.447.285) |
-| (-) Anticipos de impuesto de renta vigencia anterior | (46.072.243) | (3.032.346) |
-| (=) Saldos a favor | 2.750.552.447 | 57.536.676 |
-| (-) Recuperación de provisiones contables no fiscales | 431.561.371 | 296.055.632 |
-| Demanda por diferencia en cambio | (1.909.302.481) | (1.137.181.788) |
-| Diferencias consideradas importantes | (2.655.274.632) | 2.175.474.426 |
+| Provisión impuesto ganancia ocasional | - | 1.598.000 |
+| (-) Retenciones en la fuente que le practicaron | (380.768.370) | (373.068.705) |
+| (-) Autorretenciones | (255.444.000) | (681.447.295) |
+| (-) Anticipo de impuesto de renta vigencia anterior | (4.634.844.000) | (2.336.854.000) |
+| (Saldo a favor) Impuestos corrientes por pagar | (3.214.181.370) | 8.103.631.910 |
+
+A continuación se detalla la conciliación entre la utilidad contable y el impuesto de renta, expresada también como tasa efectiva:
+
+| Concepto | Valor 2024 | Tasa 2024 | Valor 2023 | Tasa 2023 |
+|---|---|---|---|---|
+| Utilidad antes de impuesto sobre la renta | 9.608.886.493 | | 25.158.490.785 | |
+| Impuesto sobre la utilidad contable | 3.363.110.273 | 35.00% | 8.805.471.775 | 35.00% |
+| Más (menos): partidas permanentes | | | | |
+| Deducciones de Impuestos (GMF, Patrimonio Vehículos, Entre Otros) | 30.223.814 | 0.31% | 25.501.137 | 0.10% |
+| Donaciones que no cumplan los requisitos legales | 700.000 | 0.01% | 2.598.348 | 0.01% |
+| Gastos de vigencias anteriores | 5.624.916 | 0.06% | 11.561.321 | 0.05% |
+| Impuestos, Multas, Sanciones, Intereses Moratorios y Las Condenas No Deducibles | 32.466.220 | 0.34% | 29.426.426 | 0.12% |
+| Gastos que no guardan relación de causalidad y necesidad con la actividad productora de renta | 62.026.852 | 0.65% | 14.359.402 | 0.06% |
+| Otros gastos no deducibles de naturaleza permanente | 20.000.808 | 0.21% | 20.172.837 | 0.08% |
+| Mas: Partidas deducibles temporales | | 0.00% | | |
+| Propiedades, planta y equipo | - | 0.00% | 5.862.506 | 0.02% |
+| Otras provisiones asociadas a pasivos de monto o fecha inciertos | - | 0.00% | 122.500.000 | 0.49% |
+| Perdidas por diferencia en cambio | 514.753.510 | 5.36% | 2.653.892.604 | 10.55% |
+| Menos: Recuperación de provisiones contables no fiscales | - | 0.00% | (13.564.950) | -0.05% |
+| Mejora en propiedad arrendada | (62.729.282) | -0.65% | (45.198.815) | -0.18% |
+| Otras diferencias temporales deducibles | - | 0.00% | (1.986.969) | -0.01% |
+| Ganancia por diferencia en cambio | (1.909.302.481) | -19.87% | (137.191.788) | -0.55% |
+| Impuesto de renta del año | 2.056.874.630 | 21.41% | 11.493.403.834 | 45.68% |
 
 Disposiciones legales aplicables al impuesto sobre la renta, renta presuntiva y gravamen a los dividendos:
 
@@ -657,60 +674,69 @@ b. La tarifa del impuesto sobre la renta correspondiente a dividendos o particip
 
 | Concepto | INCRNGO (*) | Gravado |
 |---|---|---|
-| Año gravable 2016 y anteriores, se debe practicar retención por la parte gravada como sigue: 20% obligados a presentar declaración, 33% no obligados a presentar declaración (20% si supera 1400 UVT) | N/A | - |
+| Año gravable 2016 y anteriores, se debe practicar retención por la parte gravada como sigue: 20% obligados a presentar declaración, 33% no obligados a presentar declaración (20% si supera 1400 UVT) | N/A | |
+| Dividendos recibidos de sociedades extranjeras a las personas naturales residentes y sociedades nacionales | N/A | |
+| SIMPLE: Utilidad respecto a Ingresos gravados en el SIMPLE. El valor por detraer será el componente simple nacional | Operan las retenciones de la Ley 2277/22. Personas naturales residentes: 0 – 1090 UVT 0%, 1090 UVT en adelante 15% | Tarifas art. 240 ET: 33% 2019, 32% 2020, 31% 2022, 35% 2023 en adelante |
 
-| Concepto | INCRNGO (*) | Gravado |
-|---|---|---|
-| Dividendos recibidos de sociedades extranjeras a las personas naturales residentes y sociedades nacionales: | N/A | - |
-| Operan las relaciones de la Tarifa art. 240 ET Tarifa art. 240 ET |  |  |
-| Utilidad respecto a Ingresos gravados en el SIMPLE Personas naturales residentes 0 – 1090 UVT Personas naturales no residentes | Tarifa art. 240 ET | 33% 2019 32% 2020 32% 2021 35% 2023 En adelante |
+(*) INCRNGO – Ingreso No Constitutivo de Renta Ni Ganancia Ocasional
+
+---
+
+--- pág. 20 ---
 
 c. De acuerdo con la Ley 2277 de 2022 "reforma tributaria para la igualdad y la justicia social" y el Decreto 1103 de 2023 las tarifas aplicables a los dividendos y su retención con respecto a las utilidades que se distribuyan en calidad de exigibles son las siguientes:
 
 | Concepto | INCRNGO (*) | Gravado |
 |---|---|---|
-| Año gravable 2016 y anteriores, se debe practicar retención por la parte gravada como sigue: 20% obligados a presentar declaración, 33% no obligados a presentar declaración (20% si supera 1400 UVT) | N/A | - |
+| Año gravable 2016 y anteriores, se debe practicar retención por la parte gravada como sigue: 20% obligados a presentar declaración, 33% no obligados a presentar declaración (20% si supera 1400 UVT) | N/A | |
+| Tarifa de retención en la fuente sobre dividendos que se distribuyan a partir 1º. enero de 2023 con cargo a utilidades a partir del 1º. enero de 2017, y que no se hayan decretado a partir del 31 diciembre de 2022 a sociedades nacionales | 10% Retención trasladable al beneficiario final | |
+| Sociedades, entidades extranjeras y establecimientos permanentes | 20% | Tarifas art. 240 ET: 33% 2019, 32% 2020, 31% 2022, 35% 2023 en adelante |
+| Personas naturales residentes | 0 – 1090 UVT 0%, 1090 UVT en adelante 15% | |
+| Personas naturales no residentes | 20% | |
 
-| Concepto | INCRNGO (*) | Gravado |
-|---|---|---|
-| Tarifa de retención en la fuente sobre dividendos que se distribuyan a partir 1º. enero de 2023 con cargo a utilidades a partir del 1º. enero de 2017, y que no se hayan decretado a partir del 31 de diciembre de 2022 a sociedades nacionales Sociedades, entidades extranjeras y establecimientos permanentes Personas naturales residentes | Retención trasladable al beneficiario final | Tarifas art. 240 ET 33% 2019 32% 2020 32% 2022 35% 2023 En adelante |
+(*) INCRNGO - Ingreso No Constitutivo de Renta Ni Ganancia Ocasional
 
 d. Las tarifas en materia de dividendos son las siguientes:
 
 | Concepto | Gravado | INCRNGO (*) |
 |---|---|---|
 | Sociedades nacionales | Tarifas art. 240 ET | 10% Retención trasladable al beneficiario final |
-| Sociedades, entidades extranjeras y establecimientos permanentes | 33% 2019 32% 2020 32% 2022 35% 2023 | 20% |
-| Personas naturales residentes | 0% – 1090 UVT 1090 UVT en adelante 15% | 0% – 1090 UVT 10% 1090 UVT en adelante 15% |
-| Personas naturales no residentes | 35% 2023 En adelante | Adelante |
+| Sociedades, entidades extranjeras y establecimientos permanentes | 33% 2019, 32% 2020, 31% 2022, 35% 2023 en adelante | 20% |
+| Personas naturales residentes | (tarifas art. 240 ET) | 0% de 0 – 1090 UVT, 10% de 1090 UVT en adelante |
+| Personas naturales no residentes | | 15% |
 
-e. Las pérdidas fiscales obtenidas a partir del año gravable 2017 se pueden compensar con las rentas líquidas ordinarias que se obtengan en los doce periodos gravables siguientes, sin límite en las cuentas a compensar (Art. 147 ET). Las pérdidas acumuladas al 31 de diciembre de 2016 reajustadas en el Índice de Inflación hasta el 31 de diciembre de 2016 de acuerdo para evitar la doble tributación y la CAN (Comunidad Andina de Naciones).
+e. Las pérdidas fiscales obtenidas a partir del año gravable 2017 se pueden compensar con las rentas líquidas ordinarias que se obtengan en los doce períodos gravables siguientes, sin límite en las cuantías a compensar (Art. 147 ET). Las pérdidas acumuladas a 31 de diciembre de 2016 reajustadas en el índice de inflación hasta el 31 de diciembre de 2016 de renta y CREE, no se someten al término de compensación previsto en el Art. 147 ET, ni serán reajustadas fiscalmente y se debe considerar la fórmula del numeral 5 Art. 290 ET (Régimen de transición).
 
 f. Hay límites para las deducciones: de intereses en proporción al patrimonio líquido respecto de préstamos con vinculados económicos, amortización de crédito mercantil por adquisición de acciones y valor residual para depreciación por reducción de saldos, entre otros.
 
 g. La tarifa de ganancias ocasionales para 2024 y 2023 es del 15%.
 
-h. A partir de 2017, los contribuyentes del impuesto sobre la renta que perciban rentas de fuente extranjera, sujetas a impuestos sobre la renta en el país de origen, pueden descontar tales valores del impuesto sobre la renta, y de su sobretasa, hasta salotario. El valor del descuento en ningún caso podrá ser mayor al impuesto de renta liquidado. Estas reglas deben verificarse con las de la CAN (Comunidad Andina de Naciones).
+h. A partir de 2017, los contribuyentes del impuesto sobre la renta que perciban rentas de fuente extranjera, sujetas a impuestos sobre la renta en el país de origen, pueden descontar tales valores del impuesto sobre la renta, y de su sobretasa, hasta agotarlo. El valor del descuento en ningún caso podrá ser mayor al impuesto de renta liquidado. Estas reglas deben verificarse con respecto a los países con los cuales Colombia tiene un acuerdo para evitar la doble tributación y la CAN (Comunidad Andina de Naciones).
 
---- pág. 13 ---
+---
+
+--- pág. 21 ---
 
 ## Nuevas disposiciones a partir del año 2023 y 2024
 
 ### Límite a los beneficios y estímulos tributarios
 
-Para las sociedades nacionales y sus asimiladas, los establecimientos permanentes de entidades del exterior y las personas jurídicas extranjeras con o sin residencia en el país con contribuyentes del impuesto sobre la renta y complementarios, el valor de los ingresos no constitutivos de renta ni ganancia ocasional, deducciones especiales, rentas exentas y descuentos tributarios no podrá exceder el 3% anual de su renta líquida ordinaria antes de detraer las deducciones especiales contempladas. Los rubros que se limitarán al 3% de la renta líquida serán los siguientes beneficios y estímulos:
+Para las sociedades nacionales y sus asimiladas, los establecimientos permanentes de entidades del exterior y las personas jurídicas extranjeras con o sin residencia en el país, contribuyentes del impuesto sobre la renta y complementarios, el valor de los ingresos no constitutivos de renta ni ganancia ocasional, deducciones especiales, rentas exentas y descuentos tributarios no podrá exceder el 3% anual de su renta líquida ordinaria antes de detraer las deducciones especiales contempladas.
+
+Los rubros que se limitarán al 3% de la renta líquida serán los siguientes beneficios y estímulos:
 
 - Deducción contribución a educación de los empleados
 - Deducción financiación de los estudios de trabajadores
 - Deducción contratación de trabajadores víctimas de violencia
 - Deducción gastos para la conservación de bienes de intereses cultural
 - Deducción inversión en infraestructura de espectáculos públicos
-- Rentas exentas utilizadas repartidas en acciones al trabajador
+- Rentas exentas utilidades repartidas en acciones al trabajador
+- Descuentos inversiones en control, conservación y mejoramiento del medio ambiente
 - Descuentos becas por impuestos
 
 ### Ganancia ocasional
 
-Fíjese en veinte por ciento (20%) la tarifa sobre las ganancias ocasionales de las sociedades anónimas, de las sociedades limitadas, que enajenen activos fijos mantenidos por más de dos años
+Fíjase en veinte por ciento (20%) la tarifa sobre las ganancias ocasionales de las sociedades anónimas, de las sociedades limitadas, que enajenen activos fijos mantenidos por más de dos años.
 
 ### Tasa de Tributación Depurada
 
@@ -720,47 +746,55 @@ Se establece una tasa mínima de tributación para los contribuyentes del impues
 |---|---|---|
 | Utilidad depurada = | | |
 | Utilidad contable antes de impuestos | 9.608.886.493 | 25.158.490.785 |
-| Más: Diferencias permanentes | 431.560.314 | 296.055.632 |
+| Mas: Diferencias permanentes | 431.550.314 | 296.055.632 |
 | Menos: Ingresos no constitutivos de renta ni ganancia ocasional | - | - |
-| Menos: Ganancias ocasionales netas | - | - |
+| Menos: El método de participación patrimonial | - | - |
+| Menos: Las ganancias ocasionales netas | - | - |
+| Menos: Rentas exentas | - | - |
 | Menos: Compensación de pérdidas fiscales, y excesos de renta presuntiva | - | - |
-| Utilidad depurada | 10.040.436.807 | 25.454.546.415 |
-| Menos: | | |
-| Más: Impuesto neto de renta | 2.053.574.630 | 11.493.403.910 |
-| Impuesto de renta depurado | 2.053.574.630 | 11.493.403.910 |
-| TTD | 21.41% | 45.15% |
+| Utilidad depurada | 10.040.436.807 | 25.454.546.416 |
+| Impuesto de renta depurado = | | |
+| Mas: Impuesto neto de renta | 2.053.874.630 | 11.493.403.910 |
+| Impuesto de renta depurado | 2.053.874.630 | 11.493.403.910 |
+| TTD | 21,41% | 45,15% |
 
-La tasa mínima se denominará tasa de tributación depurada (TTD), la cual no puede ser inferior al 15% y será el resultado de dividir el Impuesto Depurado (ID) sobre la Utilidad Depurada (UD)
+La tasa mínima se denominará tasa de tributación depurada (TTD), la cual no puede ser inferior al 15% y será el resultado de dividir el impuesto depurado (ID) sobre la utilidad depurada (UD).
 
-Los contribuyentes residentes fiscales en Colombia cuyos estados financieros sean objeto de consolidación, combinación o cualquiera otra denominación que se le de, por su sumatoria de los Impuestos Depurados (ZID) de cada contribuyente residente fiscal en Colombia deberá realizarse el siguiente procedimiento: Calcular la Tasa de Tributación Depurada del Grupo (TTDG) dividiendo la sumatoria de los Impuestos Depurados (ZID) de cada contribuyente residente fiscal en Colombia cuyo estado financiero sea objeto de consolidación.
+--- pág. 22 ---
+
+Los contribuyentes residentes fiscales en Colombia cuyos estados financieros sean objeto de consolidación, combinación o cualquiera otra denominación que se le dé, en Colombia deberán realizar el siguiente procedimiento: Calcular la Tasa de Tributación Depurada del Grupo (TTDG) dividiendo la sumatoria de los Impuestos Depurados (ΣID) de cada contribuyente residente fiscal en Colombia objeto de consolidación, combinación o cualquiera otra denominación que se le dé, por la sumatoria de la Utilidad Depurada (ΣUD) de cada contribuyente residente fiscal en Colombia cuyos estados financieros son objeto de consolidación.
 
 No están sujetos a la Tasa de Tributación Depurada:
 
-a. Los contribuyentes cuyos estados financieros no sean objeto de consolidación y su Utilidad Depurada (UD) sea igual o menor a cero, o para los contribuyentes cuyos estados financieros sean objeto de consolidación la sumatoria de la Utilidad Depurada sea igual o menor a cero; b) Las sociedades que se constituyeron como Zonas Económicas y Sociales -ZESE durante el período en el cual su tarifa del impuesto sobre la renta sea del cero por ciento (0%); c)
+a. Los contribuyentes cuyos estados financieros no sean objeto de consolidación y su Utilidad Depurada (UD) sea igual o menor a cero, o para los contribuyentes cuyos estados financieros sean objeto de consolidación y la sumatoria de la Utilidad Depurada sea igual o menor a cero; b) Las sociedades que se constituyeron como Zonas Económicas y Sociales Especiales -ZESE durante el período en el cual su tarifa de impuesto sobre la renta sea del cero por ciento (0%);
 
-## Nota 15. Activo y pasivo por impuesto diferido
+b. Las sociedades que aplican el incentivo tributario de las zonas más afectadas por el conflicto armado -ZOMAC.
+
+## Nota 15. Activo y pasivo por Impuesto diferido
 
 El siguiente corresponde al detalle del cálculo del impuesto diferido originado por las diferencias temporarias:
 
-| Concepto | Diferencia Temporaria | Tasa | Impuesto diferido 2024 |
-|---|---|---|---|
-| Bancos moneda extranjera | 3.323.302 | 35% | 1.163.156 |
-| Pasivos financieros y cuentas por pagar | 10.213.229 | 35% | 3.574.630 |
-| Provisiones | 400.000.000 | 35% | 140.000.000 |
-| Cuentas por cobrar | 520.270.605 | 35% | 182.094.712 |
-| Cartera depreciada | 126.223.030 | 35% | 11.383.155 |
-| Flota y equipo de transporte | 125.625.000 | 35% | 43.988.750 |
-| Terrenos (Valor Razonable) | 972.925.000 | 19% | - |
-| Total | | | 382.690.433 |
+| Concepto | Diferencia Temporaria | Tasa | Impuesto diferido (35%) | Impuesto diferido (15%) |
+|---|---|---|---|---|
+| Bancos moneda extranjera | 3.323.302 | 35% | 1.163.156 | - |
+| Pasivos financieros y cuentas por pagar | 10.213.229 | 35% | 3.574.630 | - |
+| Provisiones | 400.000.000 | 35% | 140.000.000 | - |
+| Cuentas por cobrar | 520.270.605 | 35% | 182.094.712 | - |
+| Mejoras en propiedad ajena | 33.969.100 | 35% | 11.889.185 | - |
+| Flota y equipo de transporte | 125.625.000 | 35% | 43.968.750 | - |
+| Terrenos (Valor Razonable) | 972.925.000 | 15% | - | 145.938.750 |
+| Total | | | 382.690.433 | 145.938.750 |
 
-| Concepto | Diferencia Temporaria | Tasa | Impuesto diferido 2024 |
-|---|---|---|---|
-| Pasivos financieros y cuentas por pagar | 388.434.035 | 35% | - |
-| Provisiones | 400.000.000 | 35% | 140.000.000 |
-| Cuentas por cobrar | 4.906.685.797 | 35% | 1.717.333.379 |
-| Terrenos (Valor Razonable) | 1.153.600.000 | 15% | - |
-| Flota y equipo de transporte | 338.620.519 | 35% | 118.587.217 |
-| Total | | | 1.975.920.596 |
+Cifras al cierre de 2023, para comparación:
+
+| Concepto | Diferencia Temporaria | Tasa | Impuesto diferido (35%) | Impuesto diferido (15%) |
+|---|---|---|---|---|
+| Pasivos financieros y cuentas por pagar | 388.434.025 | 35% | - | 135.951.909 |
+| Provisiones | 400.000.000 | 35% | 140.000.000 | - |
+| Cuentas por cobrar | 4.906.666.797 | 35% | 1.717.333.379 | - |
+| Terrenos (Valor Razonable) | 1.153.600.000 | 15% | - | 173.040.000 |
+| Propiedades, planta y equipo | 338.820.619 | 35% | 118.587.217 | - |
+| Total | | | 1.975.920.596 | 308.991.909 |
 
 ## Nota 16. Beneficios a empleados
 
@@ -768,14 +802,14 @@ Las obligaciones laborales de la Compañía comprenden:
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Retenciones y aportes de nómina | 154.166.284 | 125.878.014 |
+| Retenciones y aportes de nómina | 154.166.294 | 129.878.014 |
 | Salarios por pagar | - | 7.431.279 |
-| Cesantías | 306.242.719 | 265.708.023 |
-| Prima de servicios | 45.518.597 | 76.011.043 |
-| Intereses sobre las cesantías | 25.269.792 | 29.413.331 |
-| Total | 544.197.402 | 509.441.880 |
+| Cesantías | 306.242.719 | 266.708.023 |
+| Vacaciones | 48.518.597 | 76.011.043 |
+| Intereses sobre las cesantías | 35.269.792 | 29.413.531 |
+| Total | 544.197.402 | 509.441.890 |
 
---- pág. 14 ---
+--- pág. 23 ---
 
 ## Nota 17. Provisiones
 
@@ -784,7 +818,8 @@ El movimiento de las provisiones por los años 2024 y 2023 es el siguiente:
 | Concepto | Demandas | Laborales | Total |
 |---|---|---|---|
 | Saldo inicial al 31 de diciembre de 2022 | - | 75.000.000 | 75.000.000 |
-| Aumento (disminución) de las provisiones existentes | 300.000.000 | 25.000.000 | 325.000.000 |
+| Aumento (disminución) de las provisiones existentes | - | 25.000.000 | 25.000.000 |
+| Nuevas provisiones | 300.000.000 | - | 300.000.000 |
 | Saldo final al 31 de diciembre de 2023 | 300.000.000 | 100.000.000 | 400.000.000 |
 | Aumento (disminución) de las provisiones existentes | - | - | - |
 | Saldo final al 31 de diciembre de 2024 | 300.000.000 | 100.000.000 | 400.000.000 |
@@ -815,6 +850,10 @@ Todas las acciones son igualmente elegibles para recibir dividendos y reembolsos
 | Valor nominal unitario de las acciones | 1.000 | 1.000 |
 | Valor nominal total de las acciones | 1.500.000.000 | 1.500.000.000 |
 
+---
+
+--- pág. 24 ---
+
 ## Nota 19. Reservas
 
 Envigado Fútbol Club S.A. está obligado a apropiar como reserva legal el 10% de sus utilidades netas, hasta que el saldo de la reserva sea equivalente como mínimo al 50% del capital suscrito. La reserva no es distribuible antes de la liquidación del Club, pero puede utilizarse para reducir pérdidas. Son de libre disponibilidad por la Asamblea General de Accionistas las apropiaciones realizadas en exceso del 50% mencionado.
@@ -833,25 +872,25 @@ Los ingresos de actividades ordinarias incluyen:
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Matrículas | 55.640.000 | 45.170.000 |
-| Mensualidades | 896.687.050 | 633.741.530 |
-| Participación y becas Escuela Iniciación | 1.888.800.000 | - |
-| Taquilla (1) | 1.188.000.000 | - |
-| Abonados | - | - |
-| Venta de derechos deportivos (2) | 23.157.200 | 28.104.000 |
-| Préstamo de derechos deportivo | 7.274.918.474 | 44.352.240.528 |
-| Contribución de solidaridad (3) | 1.587.955.000 | 817.114.000 |
-| Arbitraje, patrocinio | 1.838.974.316 | 888.524.922 |
-| Publicidad y propaganda | 150.000.000 | 500.000.000 |
-| Dimayor | 2.144.548.512 | 759.151.402 |
-| Federación colombiana de futbol | - | 5.640.000.000 |
-| Patrocinio | 534.413.827 | 640.000.000 |
-| Cuotas de sostenimiento | 3.251.534.413 | 1.579.253.358 |
-| Arrendamientos | 1.136.092.339 | 1.746.281.892 |
-| Otros y financieros | 925.000.000 | 162.100.840 |
-| Otras actividades de servicios | 42.127.836 | 334.404.586 |
-| Devoluciones, rebajas y descuentos | 433.193.278 | 1.000.000.000 |
-| Total Ingresos de actividades ordinarias | 2.952.325.830 | 59.729.522.027 |
+| Matrículas | 56.640.000 | 45.170.000 |
+| Mensualidades | 986.687.050 | 833.741.530 |
+| Participación y becas Escuela Iniciación | 368.800.000 | - |
+| Taquilla (1) | 1.171.660.000 | 576.033.000 |
+| Abonados | 93.157.200 | 48.104.000 |
+| Venta de derechos deportivos (2) | 7.274.619.474 | 44.362.240.528 |
+| Préstamo de derechos deportivo | 1.567.856.000 | 817.114.000 |
+| Contribución de solidaridad (3) | 1.838.674.316 | 888.524.922 |
+| Reconocimiento deportivo | - | 500.000.000 |
+| Publicidad y propaganda | 150.000.000 | 759.151.402 |
+| Dimayor | 6.144.848.613 | 5.738.631.556 |
+| Federación colombiana de futbol | 534.413.827 | 440.000.000 |
+| Patrocinio | 3.251.634.413 | 1.579.253.358 |
+| Cuotas de sostenimiento | 1.196.092.939 | 1.746.281.692 |
+| Arrendamientos | 225.000.000 | 152.100.840 |
+| Venta de mercancías | 42.137.836 | 334.404.586 |
+| Otras actividades de servicios | 433.193.278 | 1.000.000.000 |
+| Devoluciones rebajas y descuentos | (2.962.325.830) | (21.229.387) |
+| Total Ingresos de actividades ordinarias | 22.373.089.116 | 59.799.522.027 |
 
 (1) Durante el año 2024 se jugaron 40 partidos de liga en la fase todos contra todos y 8 de Copa con público (en 2023 40 fase todos contra todos, 2 de Copa con público).
 
@@ -859,7 +898,7 @@ Los ingresos de actividades ordinarias incluyen:
 
 (3) Durante el 2024 se recibieron 7 importes por contribución de solidaridad, (3 para el 2023).
 
---- pág. 15 ---
+--- pág. 25 ---
 
 ## Nota 21. Gastos de administración y Gastos equipo de fútbol
 
@@ -868,215 +907,222 @@ El detalle de los gastos de administración incluye:
 | Concepto | 2024 | 2023 |
 |---|---|---|
 | Gastos Administrativos | | |
-| Sueldos | 709.680.603 | 628.666.324 |
+| Sueldos | 709.580.603 | 628.666.324 |
 | Viáticos | 500.000 | 1.080.941 |
-| Incapacidades | 1.348.851 | 468.596 |
-| Transporte | 6.542.876 | 6.498.959 |
-| Cesantías | 13.964.400 | 10.587.531 |
-| Intereses a las cesantías | 64.509.605 | 57.310.663 |
-| Prima de servicios | 69.256.701 | 56.932.888 |
-| Vacaciones | 63.678.407 | 56.265.888 |
-| Gastos de movilidad | 31.830.000 | 51.283.319 |
-| Bonificaciones | 15.896.000 | 15.852.857 |
-| Dotación y suministro | 290.299.925 | 35.412.547 |
-| Dotación y suministro | 1.788.138 | 4.120.773 |
+| Incapacidades | 1.348.851 | 468.666 |
+| Auxilio de transporte | 13.964.400 | 10.587.631 |
+| Cesantías | 64.509.606 | 57.310.663 |
+| Intereses a las cesantías | 7.621.104 | 6.089.896 |
+| Prima de servicios | 63.878.407 | 56.265.888 |
+| Vacaciones | 31.830.000 | 51.983.319 |
+| Gastos de movilidad | 16.908.000 | 15.652.657 |
+| Bonificaciones | 230.899.995 | 35.412.847 |
+| Dotación y suministro | 1.798.138 | 4.120.773 |
 | Indemnizaciones laborales | 2.500.000 | 6.353.424 |
-| Gastos Servicios personal | 323.714 | 610.000 |
-| Gastos deportivos y recreación | 4.540.000 | 2.045.000 |
-| Aportes A.R.L. | 16.112.000 | 2.568.000 |
-| Aportes E.P.S. | 35.080.595 | 24.694.814 |
-| Aportes a fondos y pensiones | 89.636.734 | 85.708.078 |
-| Caja de compensación | 23.849.600 | 27.966.200 |
-| Aportes al I.C.B.F. | 12.001.800 | 9.092.800 |
-| SENA | 7.640.900 | 6.062.100 |
-| Gastos médicos y drogas | 8.001.900 | 6.062.100 |
-| [ilegible] | 274.100 | 945.000 |
-| Total Gastos de personal | 1.540.781.607 | 1.035.006.721 |
+| Capacitación al personal | 485.714 | 610.000 |
+| Gastos deportivos y recreación | 4.340.000 | 2.045.000 |
+| Aportes A.R.L. | 15.112.000 | 5.001.600 |
+| Aportes E.P.S. | 35.080.595 | 24.664.814 |
+| Aportes a fondos y pensiones | 89.696.794 | 85.706.078 |
+| Caja de compensación | 29.849.600 | 27.986.200 |
+| Aportes al I.C.B.F. | 12.001.800 | 9.092.900 |
+| Aportes al Sena | 8.001.900 | 6.062.100 |
+| Gastos médicos y drogas | 274.100 | 845.000 |
+| Total Gastos de personal | 1.340.181.607 | 1.036.006.721 |
 | Revisoría fiscal | 68.004.000 | 60.237.000 |
-| Consultoría Asesoría jurídica | 30.570.000 | 30.000.000 |
+| Consultoría Asesoría jurídica | 32.784.000 | 26.250.000 |
 | Asesoría financiera | 25.400.000 | 22.500.000 |
-| Asesoría técnica | 27.906.238 | 28.806.896 |
-| Otros | - | - |
-| Total Honorarios | 154.084.238 | 145.539.502 |
+| Asesoría técnica | 27.906.238 | 29.806.899 |
+| Otros | - | 6.795.603 |
+| Total Honorarios | 154.094.238 | 145.589.502 |
 | Industria y comercio | 140.300.100 | 67.614.467 |
 | Gravamen movimiento financiero | 155.946.475 | 146.547.137 |
-| IVA descontable | 201.640.747 | 221.093.481 |
+| Iva descontable | 201.840.747 | 221.093.481 |
 | Impuesto al consumo | 351.419 | 698.776 |
-| Otras municipales | - | - |
-| Impuesto telefónico | - | - |
-| Otros | - | - |
+| Impuesto saludable | 142.610 | - |
+| Impuesto telefónico | 63.558 | - |
+| Otros | 5.208.900 | 4.638.100 |
 | Total Impuestos | 503.853.809 | 440.591.961 |
 | Construcciones y edificaciones | 38.347.680 | 32.947.719 |
-| Maquinaria y equipo | 1.612.398 | 2.646.845 |
-| Equipo de computación y común | 15.654.935 | 18.077.895 |
+| Maquinaria y equipo | 1.612.399 | 2.646.849 |
+| Equipo de computación y comunicación | 19.554.935 | 18.077.895 |
 | Total Arrendamientos | 59.515.014 | 53.672.463 |
 | Contribuciones | 3.152.000 | - |
 | Total Contribuciones y afiliaciones | 3.152.000 | - |
-| Cumplimiento | - | 594.274 |
-| Seguro desempeño | - | 2.742.934 |
-| Seguros | - | 3.327.208 |
-| Asistencia técnica | 3.635.556 | 5.501.845 |
-| Procesamiento electrónico de datos | 628.707 | 1.990.000 |
-| Acueducto y alcantarillado | 120.706.458 | 225.215.712 |
-| Energía eléctrica | 8.651.265 | 5.854.393 |
-| Teléfono | 6.742.176 | 5.497.343 |
+| Cumplimiento | - | 584.274 |
+| Sustracción y hurto | - | 2.742.934 |
+| Total Seguros | - | 3.327.208 |
+| Aseo y vigilancia | 3.695.656 | 5.501.645 |
+| Asistencia técnica | 629.707 | 1.990.000 |
+| Procesamientos electrónicos | 7.426.363 | 6.393.221 |
+| Teléfono | 6.742.176 | 5.497.349 |
 | Correo portes y telegramas | 484.580 | 1.147.875 |
-| Transporte fletes y acarreos | 3.280.000 | 5.152.120 |
-| Internet | 5.474.922 | 2.650.815 |
-| Sports EFC | - | - |
+| Transporte fletes y acarreos | 3.260.000 | 6.152.120 |
+| Internet | 6.474.922 | 2.650.815 |
 | Total Servicios | 28.713.404 | 29.333.025 |
-| Notariales | 1.005.815 | 1.007.868 |
+| Notariales | 1.005.816 | - |
 | Registro mercantil | 2.928.000 | 2.680.200 |
-| Trámites y licencias | 8.070.600 | 1.617.631 |
-| Suscripciones | 12.007.415 | 4.298.131 |
-| Construcciones y edificaciones | 2.767.500 | 2.419.505 |
+| Trámites y licencias | 8.073.600 | 1.617.931 |
+| Total Gastos legales | 12.007.416 | 4.298.131 |
 
---- pág. 16 ---
+--- pág. 26 ---
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Maquinaria y equipo | 582.000 | 1.670.000 |
-| Equipo de oficina | 280.750 | 2.282.804 |
-| Equipo de computación y comunicación | 920.790 | 12.283.245 |
-| Construcciones y edificaciones | 22.923.316 | - |
-| Maquinaria y equipos | 5.283.295 | 14.233.174 |
-| Mantenimiento y reparaciones | 26.020.848 | 20.883.685 |
-| Instalaciones eléctricas | - | 14.233.174 |
-| Reparaciones locativas | - | 1.759.261 |
+| Construcciones y edificaciones | 2.767.500 | 2.419.505 |
+| Maquinaria y equipo | 400.000 | 1.570.000 |
+| Equipo de oficina | 920.750 | 2.282.804 |
+| Equipo de computación y comuna | 22.532.598 | 14.611.577 |
+| Total Mantenimiento y reparaciones | 26.620.848 | 20.883.886 |
+| Instalaciones eléctricas | - | 14.233.124 |
+| Reparaciones locativas | - | 1.759.961 |
 | Total Adecuación e instalación | - | 15.993.085 |
-| Alojamiento y manutención | 2.385.923 | 3.899.214 |
-| Pasajes aéreos | 19.872.861 | 33.827.616 |
-| Total Gastos de viaje | 13.288.784 | 37.426.830 |
-| Maquinaria y equipo | 44.510.480 | 62.130.865 |
-| Equipo de computación | 77.173.475 | 41.738.084 |
-| Equipo médico científico | 25.032.277 | 25.032.082 |
-| Flota y equipo de transporte | - | 1.170.227 |
-| Mejoras en propiedades ajenas | - | 50.250.017 |
+| Alojamiento y manutención | 2.395.923 | 3.599.214 |
+| Pasajes aéreos | 10.872.861 | 33.827.616 |
+| Total Gastos de viaje | 13.268.784 | 37.426.830 |
+| Maquinaria y equipo | 44.910.480 | 62.130.865 |
+| Equipo de oficina | 77.173.476 | 41.738.064 |
+| Equipo de computación | 25.032.277 | 25.082.082 |
+| Equipo médico científico | - | 11.170.227 |
+| Flota y equipo de transporte | - | 50.250.017 |
+| Mejoras en propiedades ajenas | - | 16.587.047 |
 | Total Depreciaciones | 147.116.233 | 206.958.302 |
 | Cargos diferidos | 52.928.528 | 105.060.105 |
-| Otros | - | 5.620.000 |
+| Otros | - | 9.620.000 |
 | Total Amortizaciones | 52.928.528 | 114.680.105 |
-| Comisiones | - | - |
-| Libros y suscripciones | 660.000 | 655.500 |
-| Elementos de aseo y cafetería | 8.418.207 | 13.770.244 |
-| Útiles papelería y fotocopias | 12.286.688 | 6.157.318 |
-| Combustible y lubricantes | 24.362.189 | 20.816.374 |
-| Taxis y buses | 313.583 | 787.025 |
-| Apoyo movilidad | 7.296.000 | 6.200.000 |
-| Casino y restaurante | 10.323.801 | 1.181.030 |
-| Parqueadores y peajes | 400.000 | 532.834 |
-| Gastos no deducibles | 2.253.156 | 600.000 |
-| Total Diversos | 63.042.127 | 58.548.577 |
-| Total gastos administrativos | 2.604.456.008 | 2.177.406.896 |
+| Comisiones | - | 655.500 |
+| Libros y suscripciones | 650.000 | 580.000 |
+| Gastos de representación | 8.418.207 | 13.770.244 |
+| Elementos de aseo y cafetería | 12.956.668 | 6.157.316 |
+| Útiles papelería y fotocopias | 24.303.199 | 20.616.374 |
+| Combustible y lubricantes | 313.553 | 787.095 |
+| Taxis y buses | 2.778.422 | 3.680.300 |
+| Apoyo movilidad | 10.323.801 | 1.181.030 |
+| Casino y restaurante | 645.121 | 19.888.184 |
+| Parqueaderos y peajes | 400.000 | 532.634 |
+| Gastos no deducibles | 2.253.156 | 800.000 |
+| Total Diversos | 63.042.127 | 68.648.677 |
+| Total gastos administrativos | 2.404.494.008 | 2.177.409.896 |
 
 El detalle de los gastos equipo de fútbol incluye:
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
 | Gastos equipo de fútbol | | |
-| Salario integral | 1.925.086.534 | 715.120.135 |
-| Sueldos | 3.398.925.117 | 2.940.999.586 |
-| Básico aprendiz | 368.202.255 | 278.905.563 |
-| Viáticos | 4.706.025 | 14.976.745 |
-| Incapacidades | 25.362.665 | 114.176.460 |
-| Auxilio de transporte | 135.933.200 | 106.518.402 |
-| Cesantías | 312.640.501 | 292.505.053 |
-| Intereses sobre cesantías | 12.937.715 | 25.147.500 |
+| Salario integral | 1.926.066.634 | 715.120.135 |
+| Sueldos | 3.358.925.117 | 2.940.969.566 |
+| Básico aprendiz | 4.118.367 | 2.865.289 |
+| Viáticos | 4.709.025 | 14.974.743 |
+| Incapacidades | 25.962.665 | 114.198.450 |
+| Auxilio de transporte | 136.933.200 | 106.518.402 |
+| Cesantías | 312.440.901 | 292.609.053 |
+| Intereses sobre cesantías | 32.937.715 | 25.147.500 |
 | Prima de servicios | 312.452.080 | 270.110.467 |
-| Vacaciones | - | - |
-| Auxilios | 426.075.373 | 286.030.872 |
-| Bonificaciones | 382.134.099 | 213.127.804 |
-| Dotación y suministro | 319.858.633 | 382.649.333 |
-| Indemnizaciones laborales | 987.904.672 | 380.260.379 |
-| Capacitación al personal | 40.341.882 | 898.000 |
-| Gastos deportivos | 2.895.000 | 9.330.000 |
-| Aportes E.P.S. | 118.344.000 | 91.798.000 |
-| Aportes a fondos y pensiones | 158.180.283 | 81.372.119 |
-| Caja de compensación | 58.791.800 | 147.340.800 |
-| Aportes al I.C.B.F. | 40.296.200 | 78.180.800 |
-| Aportes al SENA | 35.194.500 | 17.410.800 |
+| Vacaciones | 426.075.373 | 296.030.872 |
+| Auxilios | 382.134.099 | 213.127.804 |
+| Bonificaciones | 299.703.022 | 363.836.844 |
+| Dotación y suministro | 987.904.675 | 380.260.379 |
+| Indemnizaciones laborales | 174.699.342 | 467.052.629 |
+| Capacitación al personal | 40.941.882 | 885.000 |
+| Gastos deportivos | 2.895.000 | 9.390.000 |
+| Aportes A.R.L. | 118.344.000 | 91.798.000 |
+| Aportes E.P.S. | 158.190.283 | 81.372.119 |
+| Aportes a fondos y pensiones | 641.046.006 | 452.428.921 |
+| Caja de compensación | 210.777.800 | 147.340.800 |
+| Aportes al I.C.B.F. | 52.790.400 | 26.099.000 |
+| Aportes al Sena | 35.194.500 | 17.410.600 |
 | Gastos médicos y drogas | 193.638.248 | 305.957.878 |
-| Total Gastos de personal | 9.838.380.334 | 7.535.504.451 |
-| Consultoría | 91.520.831 | 76.058.735 |
-| Asesoría jurídica | 273.737.139 | 350.935.120 |
-| Asesoría técnica | 109.693.895 | 21.880.000 |
-| Otros | - | - |
-| Total Honorarios | 474.951.666 | 452.683.658 |
-| Industria y Comercio | 1.189.000 | - |
-| A la propiedad raíz | 7.384.000 | 6.805.820 |
-| De vehículos | 986.516 | - |
-| De espectáculos públicos | 58.088.100 | 58.125.444 |
-| Prodeporte | - | 1.500.000 |
-| Impuesto salaúdable | 30.397.022 | - |
-| Estampilla UE | 627.613 | - |
-| Impuesto al consumo | 1.093.735 | - |
-| Total Impuestos | 108.375.824 | 96.573.596 |
-| Construcciones y edificaciones | 1.111.634.491 | 857.594.574 |
-| Muebles y enseres | 35.420.105 | 24.267.722 |
-| Total Arrendamientos | 1.148.104.597 | 881.857.698 |
-| Contribuciones | 15.200.000 | 16.240.000 |
-| Afiliaciones y sostenimiento | 145.335.470 | 137.249.187 |
-| Total Contribuciones y afiliaciones | 153.535.470 | 153.489.187 |
-| Cumplimiento | - | - |
-| Vida colectiva | - | 138.970 |
-| Seguros auto | 11.174.541 | 35.427.581 |
-| Total Seguros | 11.174.541 | 58.702.230 |
-| Aseo y vigilancia | 9.505.797 | 4.127.363 |
-| Procesamiento electrónico de datos | 120.706.456 | 225.215.712 |
-| Acueducto y alcantarillado | 8.618.515 | 6.127.363 |
-| Energía eléctrica | 818.516 | 1.981.555 |
-| Teléfono | 6.327.045 | 7.102.821 |
-| Correo portes y telegramas | 234.510 | 859.193 |
-| Transporte fletes y acarreos | 117.915.420 | 53.137.631 |
-| Internet y publicidad | 1.485.194 | 14.028.432 |
-| Sports EFC | 5.707.293 | 8.112.556 |
-| Total Servicios | 256.716.651 | 324.488.377 |
-| Trámites y licencias | 21.447.359 | 264.015.865 |
-| Total Gastos legales | 21.447.359 | 264.015.865 |
-| Terrenos | 122.534.330 | - |
-| Construcciones y edificaciones | 16.235.247 | 1.533.788.825 |
-| Maquinaria y equipo | 9.325.574 | 11.302.442 |
-| Equipo de oficina | 2.338.391 | 72.800 |
-| Equipo de computación y comunicación | 3.325.827 | 2.777.799 |
-| Flota de transporte | 883.193 | 583.193 |
-| Flota y equipo de transporte | 21.656.915 | 33.524.009 |
-| Instalaciones eléctricas | 177.108.540 | 1.630.755.059 |
-| Reparaciones locativas | 19.501.376 | 43.564.373 |
-| Total Adecuación e instalación | 41.999.136 | 92.218.296 |
-| Alojamiento y manutención | 616.797.431 | 608.551.820 |
-| Pasajes aéreos | 247.255.481 | 255.462.927 |
-| Total Gastos de viaje (1) | 1.083.063.592 | 894.114.747 |
-| Cargos diferidos | 417.414.974 | - |
-| Total Gastos amortización | 417.414.974 | - |
-| Comisiones | 108.827.656 | 2.358.368.707 |
-| Gastos de representación | 79.088.965 | 66.397.607 |
-| Elementos de aseo y cafetería | 11.735.740 | 3.333.522 |
-| Útiles papelería y fotocopias | 44.491.773 | 38.892.001 |
-| Combustible y lubricantes | 23.037.613 | 17.409.139 |
-| Taxis y buses | 34.323.238 | 18.137.519 |
-| Estampillas | 34.623.386 | 15.278.738 |
-| Casino y restaurante (2) | 342.780.500 | 52.837.474 |
-| Parqueadores y peajes | 9.057.847 | 5.478.525 |
-| Apoyo movilidad | - | 830.460 |
-| Logística | 154.880.000 | 122.715.600 |
+| Total Gastos de personal | 9.838.880.334 | 7.335.504.451 |
+| Consultoría | 91.520.631 | 76.058.738 |
 
---- pág. 17 ---
+--- pág. 27 ---
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Arbitraje | 253.342.162 | 235.437.001 |
-| Transporte | 2.368.600 | 3.793.001 |
-| Defensa civil | 44.388.706 | 35.308.822 |
-| Divisiones menores (3) | 608.150.345 | 510.323.905 |
-| Derechos deportivos (4) | 308.422.380 | 4.109.170.008 |
-| Bonificaciones | 106.441.055 | 376.616.911 |
+| Asesoría jurídica | 273.737.139 | 350.905.120 |
+| Asesoría técnica | 109.693.896 | 21.880.000 |
+| Otros | - | 3.840.000 |
+| Total Honorarios | 474.951.666 | 452.683.858 |
+| Industria y Comercio | 1.189.000 | - |
+| A la propiedad raíz | 7.384.000 | 6.805.820 |
+| De vehículos | 996.516 | - |
+| De espectáculos públicos | 58.088.100 | 59.125.444 |
+| Prodeporte | - | 1.500.000 |
+| Impuesto al consumo | 30.397.022 | - |
+| Impuesto saludable | 627.613 | - |
+| Estampilla IUE | 7.519.858 | - |
+| Impuesto al consumo | 177.715 | 29.242.732 |
+| Total Impuestos | 106.379.824 | 96.673.996 |
+| Construcciones y edificaciones | 1.111.684.491 | 857.594.974 |
+| Muebles y enseres | 36.420.106 | 24.262.722 |
+| Total Arrendamientos | 1.148.104.597 | 881.857.696 |
+| Contribuciones | 18.200.000 | 16.240.000 |
+| Afiliaciones y sostenimiento | 145.338.470 | 137.249.187 |
+| Total Contribuciones y afiliaciones | 163.538.470 | 153.489.187 |
+| Cumplimiento | - | 138.970 |
+| Vida colectiva | 11.174.541 | 39.427.581 |
+| Sustracción y hurto | - | 17.135.679 |
+| Total Seguros | 11.174.541 | 56.702.230 |
+| Aseo y vigilancia | 9.805.797 | 4.127.363 |
+| Procesamiento electrónico de datos | 120.706.456 | 225.219.712 |
+| Acueducto y alcantarillado | 208.700 | 188.400 |
+| Energía eléctrica | 819.516 | 1.981.565 |
+| Teléfono | 6.327.045 | 7.102.621 |
+| Correo portes y telegramas | 234.510 | 859.193 |
+| Transporte fletes y acarreos | 117.919.420 | 53.137.631 |
+| Propaganda y publicidad | 1.486.194 | 14.029.432 |
+| Internet | 6.707.293 | 8.112.956 |
+| Sports EFC | 2.501.730 | 9.709.504 |
+| Total Servicios | 266.716.661 | 324.468.377 |
+| Trámites y licencias | 21.447.959 | 264.016.866 |
+| Total Gastos legales | 21.447.959 | 264.016.866 |
+| Terrenos | 122.934.390 | 47.904.990 |
+| Construcciones y edificaciones | 16.295.247 | 1.533.789.825 |
+| Maquinaria y equipo | 9.326.574 | 11.302.442 |
+| Equipo de oficina | 2.338.391 | 72.800 |
+| Equipo de computación y comunicación | 3.535.827 | 2.777.799 |
+| Equipo médico científico | 983.193 | 983.193 |
+| Flota y equipo de transporte | 21.694.918 | 33.924.009 |
+| Total Mantenimiento y reparaciones | 177.108.540 | 1.630.755.058 |
+| Instalaciones eléctricas | 18.501.376 | 49.664.375 |
+| Reparaciones locativas | 23.497.760 | 32.553.921 |
+| Total Adecuación e instalación | 41.999.136 | 82.218.296 |
+| Alojamiento y manutención | 815.797.431 | 608.651.820 |
+| Pasajes aéreos | 247.256.461 | 285.462.927 |
+| Total Gastos de viaje (1) | 1.063.053.892 | 894.114.747 |
+| Cargos diferidos | 417.414.974 | - |
+| Total Gastos amortización | 417.414.974 | - |
+| Comisiones | 106.627.656 | 2.358.366.707 |
+| Gastos de representación | 79.086.965 | 66.367.607 |
+| Elementos de aseo y cafetería | 11.729.740 | 3.338.622 |
+| Útiles papelería y fotocopias | 44.491.773 | 38.892.001 |
+| Combustible y lubricantes | 23.037.613 | 17.409.139 |
+| Taxis y buses | 34.623.358 | 18.137.519 |
+| Estampillas | 26.902.761 | 56.645.683 |
+| Casino y restaurante (2) | 342.760.500 | 312.637.474 |
+| Parqueaderos y peajes | 9.057.847 | 8.478.526 |
+| Apoyo movilidad | 6.700.000 | 830.460 |
+| Logística | 154.880.000 | 122.715.600 |
+
+--- pág. 28 ---
+
+| Concepto | 2024 | 2023 |
+|---|---|---|
+| Arbitraje | 263.646.300 | 235.437.001 |
+| Transporte | 2.308.500 | 6.799.001 |
+| Defensa civil | 44.389.704 | 33.353.691 |
+| Divisiones menores (3) | 605.150.345 | 510.329.905 |
+| Derechos deportivos (4) | 306.422.380 | 4.109.170.008 |
+| Bonificaciones | 106.441.065 | 376.616.911 |
 | Gastos no deducibles | 54.892.010 | 56.805.151 |
-| Total Diversos | 2.223.148.517 | 8.332.331.008 |
+| Total Diversos | 2.223.148.517 | 8.332.331.006 |
 | Deterioro de clientes | - | 1.373.000.000 |
-| Provisión cartera | 23.508.092 | 3.099.217.928 |
-| Demandas laborales | - | 300.000.000 |
-| Total Provisiones | 23.508.092 | 3.449.217.928 |
-| Total gastos equipo de fútbol | 15.877.525.293 | 25.327.033.598 |
+| Total deterioro | - | 1.373.000.000 |
+| Provisión cartera | 23.606.092 | 3.099.217.928 |
+| Demandas No laborales | - | 300.000.000 |
+| Demandas laborales | - | 50.000.000 |
+| Total Provisiones | 23.606.092 | 3.449.217.928 |
+| Total gastos equipo de fútbol | 15.977.525.203 | 25.327.033.696 |
 
 (1) Corresponden a los gastos de viaje de los jugadores y cuerpo técnico.
 
@@ -1093,21 +1139,21 @@ El detalle de los otros ingresos y gastos incluye:
 | Concepto | 2024 | 2023 |
 |---|---|---|
 | Otros ingresos | | |
-| Arrendamientos | 15.388.750 | 6.412.400 |
+| Arrendamientos | 15.389.760 | 6.412.400 |
 | Comisiones | 8.319.122 | - |
-| Venta de PPVE | 400.000 | - |
-| Recuperaciones | 3.137.081.847 | 131.877.110 |
-| Participación videojuegos | - | 3.788.885 |
-| Diversos | 8.559.854 | 1.593.212 |
-| Total | 3.159.730.333 | 143.671.707 |
+| Venta de PPyE | 400.000 | - |
+| Recuperaciones | 3.137.061.647 | 131.877.110 |
+| Participación videojuegos | - | 3.798.985 |
+| Diversos | 8.559.854 | 1.583.212 |
+| Total | 3.169.730.383 | 143.671.707 |
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
 | Otros gastos | | |
 | Costos y gastos de ejercicios anteriores | 15.071.195 | 33.032.346 |
 | Impuestos asumidos | 21.465.110 | 27.064.232 |
-| Multas, sanciones y litigios | 71.304.520 | 52.819.232 |
-| Gastos diversos | 2.020.235 | 2.455.870 |
+| Multas, sanciones y litigios | 71.304.520 | 59.819.820 |
+| Gastos diversos | 2.020.235 | 7.455.378 |
 | Total | 110.662.053 | 127.371.795 |
 
 ## Nota 23. Ingresos y costos financieros
@@ -1123,37 +1169,42 @@ El detalle de los ingresos y costos financieros incluyen:
 | Descuentos comerciales | - | - |
 | Total | 6.313.663.215 | 2.920.559.371 |
 
+---
+
+--- pág. 29 ---
+
 | Concepto | 2024 | 2023 |
 |---|---|---|
 | Costos financieros | | |
-| Gastos bancarios | 23.355.201 | 2.486.556 |
-| Comisiones | 57.433.546 | 37.224.170 |
-| Intereses | 880.033.668 | 2.581.098.393 |
-| Diferencia en cambio | 1.807.990.848 | 2.186.175.992 |
+| Gastos bancarios | 2.155.501 | 2.485.558 |
+| Comisiones | 57.426.646 | 37.224.170 |
+| Intereses | 580.084.310 | 34.119.477 |
+| Diferencia en cambio | 1.607.590.948 | 2.186.175.992 |
 | Diferencia en cambio no realizada | 1.470.724.312 | 7.582.550.297 |
 | Descuentos comerciales | 1.784.000 | 1.279.432 |
-| Total | 3.719.755.717 | 9.843.834.926 |
+| Total | 3.719.765.717 | 9.843.834.926 |
 
 Los intereses recibidos corresponden a:
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Banco BSVA | 88.689.058,00 | 205.062.127 |
-| BSVA Asset Management S.A. | 45.818.357,16 | 77.627.162 |
-| Fondo de Inversión Colectiva Progresión | 134.372.004,34 | 253.614.127 |
-| Ms Entertainment Law CH | 41.151.531,50 | 37.426.521 |
-| Club Atlético Newell's Old Boy | 415.087,00 | - |
-| Valero y Asociados S.A.S | 13.136.718,00 | 60.192.222 |
-| Total intereses recibidos | 326.583.063,48 | 635.522.259 |
+| Banco BBVA | 88.669.058,00 | 205.062.127 |
+| BBVA Asset Management S.A. | 48.818.367,14 | 77.627.162 |
+| Fondo de Inversión Colectiva Progresión | 134.372.004,34 | 255.614.127 |
+| Banco Coomeva SA | 41.151.831,00 | 37.426.621 |
+| Ms Entertaiment Law CH | 415.087,00 | - |
+| Club Atlético Newell's Old Boy | 13.156.716,00 | - |
+| Valero y Asociados S.A.S | - | 60.192.222 |
+| Total ingresos recibidos | 326.583.063,48 | 635.922.259 |
 
 Los intereses pagados corresponden a:
 
 | Concepto | 2024 | 2023 |
 |---|---|---|
-| Obligaciones financieras | 388.038.800 | 1.659.317 |
-| Intereses mora DIAN | 211.981.000 | 5.340.000 |
+| Obligaciones financieras | 368.038.800 | 1.659.317 |
+| Intereses mora DIAN | 211.991.000 | 6.340.000 |
 | Otros intereses | 54.510 | 26.120.159 |
-| Total intereses pagados | 880.084.310 | 34.119.476 |
+| Total intereses pagados | 580.084.310 | 34.119.476 |
 
 ## Nota 24. Transacciones y saldos con partes relacionadas
 
@@ -1177,7 +1228,7 @@ Al 31 de diciembre de 2023 la Compañía presentó en los estados financieros en
 
 | Rubro del estado de situación financiera | Importe presentado 2023 | Reclasificación | Nuevo saldo 2023 |
 |---|---|---|---|
-| Cuentas comerciales y otras cuentas por cobrar corrientes | 25.342.302.821 | 10.831.747.500 | 14.510.555.121 |
+| Cuentas comerciales y otras cuentas por cobrar corrientes | 25.342.302.621 | 10.831.747.500 | 14.510.555.121 |
 | Cuentas comerciales y otras cuentas por cobrar no corrientes | 0 | 10.831.747.500 | 10.831.747.500 |
 
 ## Nota 26. Hechos ocurridos después del período sobre el que se informa

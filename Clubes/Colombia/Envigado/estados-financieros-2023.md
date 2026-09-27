@@ -1,5 +1,3 @@
-> **⚠️ INCOMPLETA (2026-09-26, to-do 66 / `Admin/test-costo-transcripcion.md`)**: a esta transcripción (hecha por Haiku 4.5 como parte de un test de costo) le faltan páginas del PDF original -- ver el chequeo estructural en `Admin/test-costo-transcripcion.md`. NO USAR para cargar datos al sitio hasta completar las páginas faltantes contra el PDF.
-
 # Estados Financieros Envigado Fútbol Club S.A.
 ## Al 31 de diciembre de 2023
 
@@ -890,12 +888,11 @@ El saldo de las cuentas por pagar al 31 de diciembre de 2023 y 2022 comprenden:
 | | Corriente | No corriente |
 |---|---|---|
 | | 2023 | 2022 | 2023 | 2022 |
-| Costos y gastos por pagar | 2.582.748.943 | 1.212.394.379 | 1.732.459.316 | - |
-| Acreencias (1) | 157.221.652 | 45.303.454 | - | - |
+| Acreedores (1) | 2.582.748.943 | 1.212.394.379 | 1.732.459.316 | - |
+| Retención en la fuente | 157.221.652 | 45.303.454 | - | - |
 | Impuesto a las ventas | - | 65.391.244 | - | - |
-| Otros | 615.681.471 | 239.521.164 | - | 767.392.984 |
-| Pagos anticipados | 3.355.652.066 | 1.552.610.241 | 1.732.459.316 | 767.392.984 |
-| **Subtotal** | | | | |
+| Otros - Pagos anticipados | 615.681.471 | 239.521.164 | - | 767.392.984 |
+| **Subtotal** | **3.355.652.066** | **1.562.610.241** | **1.732.459.316** | **767.392.984** |
 
 (1) Al 31 de diciembre de 2023 el saldo de acredores incluye saldos en moneda extranjera por valor total de US$ 963.188,80 (en 2022 - US$ 25.397,27). El ajuste por actualización al tipo de cambio de cierre del año 2023 generó gasto neto por diferencia en cambio por valor de 87.885.000 (en 2022 gasto neto de 80.938.615).
 
@@ -907,12 +904,10 @@ Al 31 de diciembre de 2023 y 2022, el saldo beneficios empleados incluye:
 |---|---|---|
 | Aportes a la seguridad social | 129.878.014 | 101.657.108 |
 | Sueldos | 7.431.279 | 333.002.847 |
-| Cesantías acumuladas | 268.945.196 | 246.058.362 |
-| Intereses sobre cesantías | 29.413.531 | 40.262.543 |
-| Vacaciones acumuladas | 76.011.043 | 62.909.255 |
+| Cesantías consolidadas | 266.708.023 | 248.095.904 |
+| Intereses sobre cesantías | 29.413.531 | 30.262.543 |
+| Vacaciones consolidadas | 76.011.043 | 62.909.255 |
 | **Subtotal** | **509.441.890** | **775.927.657** |
-
---- pág. 31 ---
 
 ### Nota 15. Pasivos por impuestos
 
@@ -921,8 +916,7 @@ El saldo de impuestos por pagar incluye al 31 de diciembre de:
 | | 2023 | 2022 |
 |---|---|---|
 | Impuesto de renta | 8.103.631.910 | 1.763.171.000 |
-
-**Total** | **8.103.631.910** | **1.763.171.000** |
+| **Total** | **8.103.631.910** | **1.763.171.000** |
 
 El gasto de impuesto a la renta comprende:
 
@@ -930,13 +924,81 @@ El gasto de impuesto a la renta comprende:
 |---|---|---|
 | Impuesto de renta | 11.495.001.910 | 3.690.453.993 |
 | Impuesto de renta años anteriores | - | 10.397.000 |
-| Subtotal impuesto de renta corriente | (3.780.850.997) | 3.790.850.997 |
+| Subtotal impuesto de renta corriente | - | 3.700.850.997 |
 | Impuesto Diferido | (2.575.303.634) | 744.403.909 |
-| | **6.819.698.276** | **4.445.254.906** |
+| | **8.919.698.276** | **4.445.254.906** |
 
-[Complex tax reconciliation table showing calculations between book income and tax base, with various adjustments and the effective tax rate of 45.68%]
+---
 
 --- pág. 32 ---
+
+La conciliación entre la ganancia contable y el gasto por impuesto de renta de los años 2023 y 2022 es la siguiente:
+
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Ganancia contable antes de impuesto sobre la renta | 25.158.490.785 | 12.013.776.030 |
+| 1 Diferencias permanentes que aumentan la renta líquida | | |
+| Pérdidas y gastos no deducibles | | |
+| (+) Deducciones de Impuestos (GMF, entre otros) | 72.860.392 | 61.044.968 |
+| (+) Donaciones que no cumplan los requisitos legales | 7.423.852 | 600.000 |
+| (+) Gastos de vigencias anteriores | 33.032.346 | 17.690.119 |
+| (+) Impuestos, Multas, Sanciones no deducibles | 84.075.502 | 95.797.137 |
+| (+) Gastos que no guardan relación de causalidad y necesidad con la actividad productora de renta | 41.026.864 | 50.794.000 |
+| (+) Otros gastos no deducibles de naturaleza permanente | 57.636.676 | 201.351.889 |
+| Pérdidas y gastos no deducibles (subtotal) | 296.055.632 | 427.278.113 |
+| 2 Diferencias que surgen entre la aplicación de la norma fiscal y la norma contable | | |
+| Gastos por depreciación que han excedido El Límite Máximo Fiscal | | |
+| (+) Propiedades, planta y equipo | 16.750.017 | 123.846.213 |
+| Gastos por depreciación que no han excedido el límite máximo fiscal | | |
+| (+) Mejora en propiedad arrendada | (129.139.472) | 123.846.213 |
+| Otras diferencias temporales deducibles | | |
+| (-) Recuperación de provisiones | (38.757.000) | 15.629.996 |
+| (+) Provisión contable no deducible fiscalmente | 350.000.000 | - |
+| Otras diferencias temporales deducibles (subtotal) | (5.677.053) | - |
+| (+) Perdidas por diferencia en cambio | 7.582.550.297 | 2.516.893 |
+| 3 Diferencias temporales imponibles que aumentan la renta líquida | | |
+| (-) Ganancia por diferencia en cambio | (391.976.537) | 1.870.632.491 |
+| Renta líquida gravable estimada | 32.838.296.669 | 10.544.154.762 |
+| Tasa de impuesto de renta | 35% | 35% |
+| Provisión impuesto de renta | 11.493.403.910 | 3.690.454.000 |
+| Provisión impuesto ganancia ocasional | 1.598.000 | - |
+| (-) Retenciones en la fuente que le practicaron | 373.068.705 | 285.473.000 |
+| (-) Autorretenciones | 681.447.295 | 228.302.000 |
+| (-) Anticipo de impuesto de renta vigencia anterior | 2.336.854.000 | 1.413.508.000 |
+| Impuestos corrientes por pagar | 8.103.631.910 | 1.763.171.000 |
+
+A continuación, se muestra la conciliación por la tasa efectiva de tributación entre la diferencia por la ganancia (pérdida) antes de impuestos multiplicado por la tasa impositiva y el resultado después de impuestos:
+
+| Concepto | Valor 2023 | Tasa 2023 | Valor 2022 | Tasa 2022 |
+|---|---|---|---|---|
+| Ganancia contable antes de impuesto sobre la renta | 25.158.490.785 | | 12.013.776.030 | |
+| Impuesto sobre la utilidad contable | 8.805.471.851 | 35,00% | 4.204.821.611 | 35,00% |
+| 1 Diferencias permanentes que aumentan la renta líquida | | | | |
+| Pérdidas y gastos no deducibles | | | | |
+| (+) Deducciones de Impuestos (GMF entre otros) | 25.501.137 | 0,10% | 21.365.739 | 0,18% |
+| (+) Donaciones que no cumplan los requisitos legales | 2.598.348 | 0,01% | 210.000 | 0,00% |
+| (+) Gastos de vigencias anteriores | 11.561.321 | 0,05% | 6.191.542 | 0,05% |
+| (+) Impuestos Multas Sanciones no deducibles | 29.426.426 | 0,12% | 33.528.998 | 0,28% |
+| (+) Gastos que no guardan relación de causalidad y necesidad con la actividad productora de renta | 14.359.402 | 0,06% | 17.777.730 | 0,15% |
+| (+) Otros gastos no deducibles de naturaleza permanente | 20.172.837 | 0,08% | 70.473.161 | 0,59% |
+| Pérdidas y gastos no deducibles (subtotal) | 103.619.471 | 0,41% | 149.547.170 | 1,25% |
+| 2 Diferencias que surgen entre la aplicación de la norma fiscal y la norma contable | | | | |
+| Gastos por depreciación que han excedido El Límite Máximo Fiscal | | | | |
+| (+) Propiedades planta y equipo | 5.862.506 | 0,02% | 43.346.175 | 0,36% |
+| Gastos por depreciación que no han excedido el límite máximo fiscal | | | | |
+| (-) Mejora en propiedad arrendada | (45.198.815) | (0,18%) | - | 0,00% |
+| Otras diferencias temporales deducibles | | | | |
+| (-) Recuperación de provisiones | (13.564.950) | (0,05%) | (53.420.499) | -0,44% |
+| (+) Provisión contable no deducible fiscalmente | 122.500.000 | 0,49% | - | 0,00% |
+| Otras diferencias temporales deducibles | (1.986.969) | (0,01%) | - | 0,00% |
+| (+) Perdidas por diferencia en cambio | 2.653.892.604 | 10,55% | 880.913 | 0,01% |
+| 3 Diferencias temporales imponibles que aumentan la renta líquida | | | | |
+| (-) Ganancia por diferencia en cambio | (137.191.788) | (0,55%) | (654.721.372) | -5,45% |
+| Impuesto de renta del año | 11.493.403.910 | 45,68% | 3.690.453.997 | 30,72% |
+
+---
+
+--- pág. 33 ---
 
 ### 15.1. Disposiciones legales aplicables al impuesto sobre la renta, renta presuntiva y gravamen a los dividendos durante 2023 y 2022:
 
@@ -964,7 +1026,7 @@ d) Hasta el 31 de diciembre de 2023 la tarifa del impuesto sobre la renta corres
 
 (*) INCRNGO = Ingreso No Constitutivo de Renta Ni Ganancia Ocasional
 
----pág. 33 ---
+--- pág. 34 ---
 
 e) De acuerdo con la Ley 2277 de 2022 "reforma tributaria para la igualdad y la justicia social" y el Decreto 1103 de 2023 las tarifas aplicables a los dividendos y su retención con respecto a las utilidades que se distribuyan en calidad de exigibles son las siguientes:
 
@@ -993,7 +1055,7 @@ i) La tarifa de ganancias ocasionales para 2023 es del 15% y 2022 era del 10%.
 
 j) A partir de 2017, los contribuyentes del impuesto sobre la renta que perciban rentas de fuente extranjera, sujetas a impuestos sobre la renta en el país de origen, pueden descontar tales valores del impuesto sobre la renta, y de su sobretasa, hasta agotarlo. El valor del descuento en ningún caso podrá ser mayor al impuesto de renta liquidado. Estas reglas deben verificarse con respecto a los países con los cuales Colombia tiene un acuerdo para evitar la doble tributación y la CAN (Comunidad Andina de Naciones).
 
---- pág. 34 ---
+--- pág. 35 ---
 
 ### Nuevas disposiciones a partir del año 2023:
 
@@ -1027,7 +1089,7 @@ a. Los contribuyentes cuyos estados financieros no sean objeto de consolidación
 
 b. Las sociedades constituidas bajo la 1429 de 2010.
 
---- pág. 35 ---
+--- pág. 36 ---
 
 ### Tarifas de renta
 
@@ -1063,7 +1125,7 @@ Es deducible el cien por ciento (100%) de los impuestos, tasas y contribuciones,
 
 Por su parte, el Impuesto de Industria y Comercio si será deducible, pero se elimina el descuento tributario del 50% del impuesto pagado.
 
---- pág. 36 ---
+--- pág. 37 ---
 
 ### Ganancia ocasional:
 
@@ -1086,16 +1148,37 @@ Siempre que la conducta no constituya otro delito sancionado con pena mayor, el 
 
 | Concepto | Diferencia temporaria | Tasa | 2022 Impuesto diferido Activo | Pasivo |
 |---|---|---|---|---|
-| Pasivos financieros y cuentas por pagar | 3.616.863 | 35% | - | [value] |
+| Pasivos financieros y cuentas por pagar | 2.516.893 | 35% | 880.913 | - |
 | Provisiones | 75.000.000 | 35% | 26.250.000 | - |
-| Cuentas por cobrar | 2.675.500.000 | 35% | - | 936.440.337 |
+| Cuentas por cobrar | 2.675.543.820 | 35% | - | 936.440.337 |
 | Terrenos (Valor Razonable) | 1.153.600.000 | 15% | - | 173.040.000 |
 | Propiedades, planta y equipo | 494.261.532 | 35% | 172.991.536 | - |
 | **Total** | | | **200.122.449** | **1.109.480.337** |
 
 Los impuestos diferidos originados por las diferencias temporarias al 31 de diciembre de 2023 y 2022 han sido determinados de la siguiente manera:
 
---- pág. 37 ---
+---
+
+--- pág. 38 ---
+
+Las variaciones generadas en el reconocimiento del activo y el pasivo por impuesto diferido se muestran a continuación:
+
+| Concepto | Activo 2023 | Pasivo 2023 | Activo 2022 | Pasivo 2022 |
+|---|---|---|---|---|
+| Saldo inicial | 200.122.449 | 1.109.480.337 | 257.853.529 | 422.807.508 |
+| Aumento por variaciones en las diferencias | 1.775.798.147 | - | - | 628.992.829 |
+| Disminución por variaciones en las diferencias | - | 800.488.428 | 57.731.080 | - |
+| Aumento por cambios en políticas contables y errores no contabilizados retroactivamente | - | - | - | 57.680.000 |
+| Saldo final | 1.975.920.596 | 308.991.909 | 200.122.449 | 1.109.480.337 |
+
+El saldo reconocido en el resultado, en el otro resultado integral y en otros componentes del patrimonio se muestra a continuación:
+
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Resultados del período | (2.575.303.634) | 744.403.909 |
+| Otro resultado integral | - | - |
+| Otros componentes del patrimonio | (982.941) | - |
+| Total | (2.576.286.575) | 744.403.909 |
 
 ### Nota 17. Otras Provisiones
 
@@ -1103,7 +1186,7 @@ El movimiento de las otras provisiones para el año 2023 y 2022 es el siguiente:
 
 | | Laborales | Otros | Total |
 |---|---|---|---|
-| Saldo final al 31/12/2022 | 75.000.000 | 300.000.000 | 400.000.000 |
+| Saldo final al 31/12/2022 | 75.000.000 | - | 75.000.000 |
 | Aumento de provisiones existentes | 25.000.000 | 300.000.000 | 325.000.000 |
 | Saldo final al 31/12/2023 | 100.000.000 | 300.000.000 | 400.000.000 |
 
@@ -1172,99 +1255,324 @@ Los ingresos de actividades ordinarias incluyen:
 
 5. En el transcurso del año 2022 se suscribió contrato con el INDER Envigado para el suministro de boletería.
 
---- pág. 39 ---
+--- pág. 40 ---
 
 ### Nota 20. Gastos de administración y Gastos equipo de fútbol
 
 El detalle de los gastos de administración incluye:
 
-[Large detailed table with multiple categories of administrative and personnel expenses for 2023 and 2022]
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Gastos Administrativos | | |
+| Sueldos | 628.666.324 | 645.227.210 |
+| Viáticos | 1.080.941 | 250.000 |
+| Incapacidades | 468.666 | - |
+| Auxilio de transporte | 10.587.631 | 9.549.518 |
+| Cesantías | 57.310.663 | 55.964.281 |
+| Intereses a las cesantías | 6.089.896 | 6.635.410 |
+| Prima de servicios | 56.265.888 | 55.296.744 |
+| Vacaciones | 51.983.319 | 49.144.968 |
+| Auxilios | 15.652.657 | 21.428.333 |
+| Bonificaciones | 35.412.847 | 7.000.000 |
+| Dotación y suministro | 4.120.773 | 1.104.950 |
+| Indemnizaciones laborales | 6.353.424 | - |
+| Capacitación al personal | 610.000 | 568.706 |
+| Gastos deportivos y recreación | 2.045.000 | 3.360.000 |
+| Aportes A.R.L. | 5.001.600 | 3.710.430 |
+| Aportes E.P.S. | 24.664.814 | 21.855.926 |
+| Aportes a fondos y pensiones | 85.706.078 | 73.617.088 |
+| Caja de compensación | 27.986.200 | 22.548.300 |
+| Aportes al I.C.B.F. | 9.092.900 | 7.009.900 |
+| Aportes al Sena | 6.062.100 | 4.650.800 |
+| Gastos médicos y drogas | 845.000 | 15.604.759 |
+| Total Gastos de personal | 1.036.006.721 | 1.004.527.323 |
+| Revisoría fiscal | 60.237.000 | 53.070.000 |
+| Consultoría | 26.250.000 | - |
+| Asesoría jurídica | - | 7.500.000 |
+| Asesoría financiera | 22.500.000 | 15.000.000 |
+| Asesoría técnica | 29.806.899 | 29.856.874 |
+| Otros | 6.795.603 | 20.662.267 |
+| Total Honorarios | 145.589.502 | 126.089.141 |
+| Industria y comercio | 67.614.467 | 64.940.397 |
+| Gravamen movimiento financiero | 146.547.137 | 122.089.936 |
+| Iva descontable (1) | 221.093.481 | 189.366.666 |
+| Impuesto al consumo | 698.776 | 939.188 |
+| Otros | 4.638.100 | 4.860.800 |
+| Total Impuestos | 440.591.962 | 382.196.987 |
+| Construcciones y edificaciones | 32.947.719 | 37.641.059 |
+| Maquinaria y equipo | 2.646.849 | - |
+| Equipo de computación y comunicación | 18.077.895 | 14.932.264 |
+| Otros | - | 614.995 |
+| Total Arrendamientos | 53.672.463 | 53.188.318 |
+| Cumplimiento | 584.274 | - |
+| Sustracción y hurto | 2.742.934 | 2.282.065 |
+
+--- pág. 41 ---
+
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Total Seguros | 3.327.208 | 2.282.065 |
+| Aseo y vigilancia | 5.501.645 | 2.304.046 |
+| Asistencia técnica | 1.990.000 | 2.341.000 |
+| Procesamientos electrónicos | 6.393.221 | 1.435.797 |
+| Teléfono | 5.497.349 | 6.321.445 |
+| Correo portes y telegramas | 1.147.875 | 1.173.066 |
+| Transporte fletes y acarreos | 6.152.120 | 1.758.000 |
+| Internet | 2.650.815 | 334.204 |
+| Total Servicios | 29.333.025 | 15.667.558 |
+| Notariales | - | 12.433.673 |
+| Registro mercantil | 2.680.200 | 2.401.500 |
+| Trámites y licencias | 1.617.931 | 2.896.622 |
+| Total Gastos legales | 4.298.131 | 17.731.795 |
+| Construcciones y edificaciones | 2.419.505 | 2.111.500 |
+| Maquinaria y equipo | 1.570.000 | 396.611 |
+| Equipo de oficina | 2.282.804 | 2.648.703 |
+| Equipo de computación y comuna | 14.611.577 | 22.932.725 |
+| Flota y equipo de transporte | - | 56.500 |
+| Total Mantenimiento y reparaciones | 20.883.886 | 28.146.039 |
+| Instalaciones eléctricas | 14.233.124 | 1.384.000 |
+| Reparaciones locativas | 1.759.961 | - |
+| Total Adecuación e instalación | 15.993.085 | 1.384.000 |
+| Alojamiento y manutención | 3.599.214 | 9.963.226 |
+| Pasajes aéreos | 33.827.616 | 33.771.552 |
+| Pasajes terrestres | - | 1.191.200 |
+| Total Gastos de viaje | 37.426.830 | 44.925.978 |
+| Maquinaria y equipo | 62.130.865 | 57.680.788 |
+| Equipo de oficina | 41.738.064 | 16.636.446 |
+| Equipo de computación | 25.082.082 | 22.856.282 |
+| Equipo médico científico | 11.170.227 | - |
+| Flota y equipo de transporte | 50.250.017 | 66.999.996 |
+| Mejoras en propiedades ajenas | 16.587.047 | 194.837.544 |
+| Total Depreciaciones | 206.958.302 | 359.011.056 |
+| Cargos diferidos | 105.060.105 | 72.523.917 |
+| Otros | 9.620.000 | - |
+| Total Amortizaciones | 114.680.105 | 72.523.917 |
+| Comisiones | 655.500 | - |
+| Libros y suscripciones | 580.000 | 399.900 |
+| Gastos de representación | 13.770.244 | 25.280.892 |
+| Elementos de aseo y cafetería | 6.157.316 | 3.401.570 |
+| Útiles papelería y fotocopias | 20.616.374 | 14.490.366 |
+| Combustible y lubricantes | 787.095 | - |
+| Taxis y buses | 3.680.300 | 5.572.076 |
+| Apoyo movilidad | 1.181.030 | 468.688 |
+| Casino y restaurante | 19.888.184 | 16.356.641 |
+| Parqueaderos y peajes | 532.632 | - |
+| Gastos no deducibles | 800.000 | 72.882.140 |
+| Total Diversos | 68.648.675 | 138.852.273 |
+| Total gastos administrativos | 2.177.409.896 | 2.246.526.450 |
 
 El detalle de los gastos equipo de fútbol incluye:
 
-[Another large detailed table showing football team equipment and related expenses for 2023 and 2022]
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Gastos equipo de fútbol | | |
+| Salario integral | 715.120.135 | 1.420.393.132 |
+| Sueldos | 2.940.969.566 | 2.585.843.614 |
+| Básico aprendiz | 2.865.289 | 6.520.000 |
+| Viáticos | 14.974.743 | 660.000 |
+| Incapacidades | 114.198.450 | 11.556.098 |
+| Auxilio de transporte | 106.518.402 | 94.215.051 |
+| Cesantías | 292.609.053 | 247.547.056 |
+| Intereses sobre cesantías | 25.147.500 | 28.896.003 |
+| Prima de servicios | 270.110.467 | 245.117.394 |
 
---- pág. 40-42 ---
+--- pág. 42 ---
 
-[More detailed expense tables and notes continuing with various expense categories]
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Vacaciones | 296.030.872 | 252.835.338 |
+| Auxilios | 213.127.804 | 308.459.055 |
+| Bonificaciones | 363.836.844 | 281.052.335 |
+| Dotación y suministro | 380.260.379 | 254.826.573 |
+| Indemnizaciones laborales | 467.052.629 | 9.026.000 |
+| Capacitación al personal | 885.000 | 5.315.512 |
+| Gastos deportivos | 9.390.000 | 2.872.101 |
+| Aportes A.R.L. | 91.798.000 | 86.792.676 |
+| Aportes E.P.S. | 81.372.119 | 110.602.781 |
+| Aportes a fondos y pensiones | 452.428.921 | 489.630.898 |
+| Caja de compensación | 147.340.800 | 164.570.051 |
+| Aportes al I.C.B.F. | 26.099.000 | 40.540.700 |
+| Aportes al Sena | 17.410.600 | 27.054.000 |
+| Gastos médicos y drogas | 305.957.878 | 329.496.886 |
+| Total Gastos de personal | 7.335.504.451 | 7.003.823.254 |
+| Consultoría | 76.058.738 | 64.917.179 |
+| Asesoría jurídica | 350.905.120 | 261.258.428 |
+| Asesoría técnica | 21.880.000 | 23.255.128 |
+| Honorarios médicos | - | 4.200.000 |
+| Otros | 3.840.000 | 425.000 |
+| Total Honorarios | 452.683.858 | 354.055.735 |
+| A la propiedad raíz | 6.805.820 | 6.022.380 |
+| De vehículos | - | 413.000 |
+| De espectáculos públicos | 59.125.444 | 58.103.000 |
+| Prodeporte | 1.500.000 | - |
+| Impuesto al consumo | 29.242.732 | 15.069.016 |
+| Total Impuestos | 96.673.996 | 79.607.396 |
+| Construcciones y edificaciones | 857.594.974 | 734.958.660 |
+| Muebles y enseres | 24.262.722 | 25.520.994 |
+| Equipo de cómputo y comunicación | - | 400.000 |
+| Total Arrendamientos | 881.857.693 | 760.879.654 |
+| Contribuciones | 16.240.000 | 15.320.000 |
+| Afiliaciones y sostenimiento | 137.249.187 | 161.884.297 |
+| Total Contribuciones y afiliaciones | 153.489.187 | 177.204.297 |
+| Cumplimiento | 138.970 | - |
+| Vida colectiva | 39.427.581 | 39.531.972 |
+| Sustracción y hurto | 17.135.679 | 12.323.662 |
+| Responsabilidad civil y extras | - | 3.540.008 |
+| Total Seguros | 56.702.230 | 55.395.642 |
+| Aseo y vigilancia | 4.127.363 | 2.817.055 |
+| Procesamiento electrónico de datos | 225.219.712 | - |
+| Acueducto y alcantarillado | 188.400 | 306.651 |
+| Energía eléctrica | 1.981.565 | 820.085 |
+| Teléfono | 7.102.621 | 8.726.950 |
+| Correo portes y telegramas | 859.193 | 1.646.773 |
+| Transporte fletes y acarreos | 53.137.631 | 51.971.905 |
+| Propaganda y publicidad (1) | 14.029.432 | 163.125.379 |
+| Internet | 8.112.956 | 6.656.258 |
+| Sports EFC | 9.709.505 | - |
+| Otros | - | 600.000 |
+| Total Servicios | 324.468.377 | 236.671.056 |
+| Trámites y licencias | 264.016.866 | 8.949.243 |
+| Total Gastos legales | 264.016.866 | 8.949.243 |
+| Terrenos | 47.904.990 | 80.652.403 |
+| Construcciones y edificaciones (1) | 1.533.789.825 | 14.863.618 |
+| Maquinaria y equipo | 11.302.442 | 7.051.681 |
+| Equipo de oficina | 72.800 | 2.299.900 |
+| Equipo de computación y comunicación | 2.777.799 | 5.459.942 |
+| Equipo médico científico | 983.193 | - |
+| Flota y equipo de transporte | 33.924.009 | 18.525.403 |
+| Total Mantenimiento y reparaciones | 1.630.755.058 | 128.852.947 |
+| Instalaciones eléctricas | 49.664.375 | 7.591.337 |
+| Reparaciones locativas | 32.553.921 | 36.210.962 |
+| Total Adecuación e instalación | 82.218.296 | 43.802.299 |
+
+--- pág. 43 ---
+
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Alojamiento y manutención | 608.651.819 | 494.556.154 |
+| Pasajes aéreos | 285.462.927 | 188.794.418 |
+| Pasajes terrestres | - | 13.360.177 |
+| Total Gastos de viaje (2) | 894.114.746 | 696.710.749 |
+| Comisiones | 2.358.366.706 | 1.335.966.076 |
+| Gastos de representación | 66.367.606 | 35.528.870 |
+| Elementos de aseo y cafetería | 3.338.621 | 3.981.755 |
+| Útiles papelería y fotocopias | 38.892.000 | 32.683.087 |
+| Combustibles y lubricantes | 17.409.138 | 16.063.315 |
+| Taxis y buses | 18.137.518 | 13.329.639 |
+| Estampillas | 56.645.682 | 70.564.148 |
+| Casino y restaurante (3) | 312.637.473 | 266.158.017 |
+| Parqueaderos y peajes | 8.478.525 | 6.418.970 |
+| Apoyo movilidad | 830.474 | - |
+| Logística | 122.715.600 | 105.313.600 |
+| Arbitraje | 235.437.000 | 241.503.000 |
+| Transporte | 6.799.000 | 2.558.500 |
+| Defensa civil | 33.353.690 | 33.102.500 |
+| Divisiones menores (4) | 510.329.904 | 557.047.433 |
+| Derechos deportivos (5) | 4.109.170.007 | 1.166.775.195 |
+| Bonificaciones | 376.616.916 | 422.049.002 |
+| Gastos no deducibles | 56.805.150 | 128.426.064 |
+| Total Diversos | 8.332.331.010 | 4.437.469.171 |
+| Deterioro de clientes | 1.373.000.000 | 36.286 |
+| Total deterioro | 1.373.000.000 | 36.286 |
+| Provisión cartera | 3.099.217.927 | - |
+| Demandas No laborales | 300.000.000 | - |
+| Demandas laborales | 50.000.000 | - |
+| Total Provisiones | 3.449.217.927 | - |
+| Total gastos equipo de fútbol | 25.327.033.696 | 13.983.457.729 |
+
+(1) Corresponde al cambio del sustrato de la gramilla y al suministro e instalación de la grama sintética del estadio.
+
+(2) Corresponden a los gastos de viaje de los jugadores y cuerpo técnico.
+
+(3) Corresponde a los refrigerios y/o alimentación en torno a los eventos deportivos.
+
+(4) Corresponden a apoyo de vivienda, movilización, educación, médicos y alimentación de los menores pertenecientes a las fuerzas básicas.
+
+(5) Valores que corresponden a los derechos deportivos por los jugadores, sobresalen los correspondientes a Henry Mosquera, Jhon Anderson Banguera y Carlos Ordoñez.
 
 ### Nota 21. Ingresos y costos financieros, netos
 
 El detalle de los ingresos y costos financieros incluyen:
 
-| | 2023 | 2022 |
+| Concepto | 2023 | 2022 |
 |---|---|---|
-| **Ingresos financieros** | | |
-| Intereses | (1) | 635.922.259 | 270.325.564 |
-| Bonificación | | 1.891.656.262 | 798.373.272 |
-| Diferencia en cambio no realizada | | 391.273.981 | 1.870.632.491 |
-| Descuentos comerciales condicionados | | 2.203.874 | 309.500 |
-| Otros | | - | - |
-| **Total ingresos financieros** | | **2.920.569.371** | **2.939.640.827** |
-| **Costos financieros** | | |
-| Gastos bancarios | (2) | 2.485.558 | 2.015.624 |
-| Intereses | | 34.119.476 | 63.785.119 |
-| Comisiones bancarias | | 37.224.170 | 30.005.955 |
-| Diferencia en cambio | | 2.186.175.992 | 80.938.615 |
-| Diferencia en cambio no realizada | | 7.582.550.297 | 2.516.893 |
-| Descuentos financieros | | 1.279.432 | 3.716.852 |
-| **Total Costo Financiero** | | **9.843.834.926** | **182.979.058** |
-| **Total Ingreso (costo) financiero neto** | | **(6.923.275.555)** | **2.756.661.769** |
+| Ingresos financieros | | |
+| Intereses (1) | 635.922.259 | 270.325.564 |
+| Diferencia en cambio | 1.891.956.256 | 798.373.272 |
+| Diferencia en cambio no realizada | 391.276.981 | 1.870.632.491 |
+| Descuentos comerciales condicionados | 1.403.874 | - |
+| Otros | - | 309.500 |
+| Total Ingresos financieros | 2.920.559.371 | 2.939.640.827 |
+
+--- pág. 44 ---
+
+| Concepto | 2023 | 2022 |
+|---|---|---|
+| Costos financieros | | |
+| Gastos bancarios | 2.485.558 | 2.015.624 |
+| Intereses (2) | 34.119.476 | 63.785.119 |
+| Comisiones bancarias | 37.224.170 | 30.005.955 |
+| Diferencia en cambio | 2.186.175.992 | 80.938.615 |
+| Diferencia en cambio no realizada | 7.582.550.297 | 2.516.893 |
+| Descuentos financieros | 1.279.432 | 3.716.852 |
+| Total Costo Financiero | 9.843.834.926 | 182.979.058 |
+| Total Ingreso (costo) financiero neto | (6.923.275.555) | 2.756.661.769 |
 
 (1) Los intereses se discriminan de la siguiente manera:
 
-| | 2023 | 2022 |
+| Concepto | 2023 | 2022 |
 |---|---|---|
 | ALL-RAYYAN SC Sport Club | - | 750.210 |
 | Banco BBVA | 205.062.127 | 119.407.583 |
-| BanColombia | 77.667.163 | 44.685.611 |
+| BBVA Asset Management S.A. | 77.627.163 | 4.075.166 |
 | América de Cali | - | 1.017.520 |
 | Fondo de Inversión Colectiva Progresión | 255.614.127 | 58.667.275 |
 | Banco Coomeva SA | 37.426.621 | 66.070.310 |
-| Valero y Asociados S.A.S | 62.192.222 | 20.337.500 |
+| Valero y Asociados S.A.S. | 62.192.222 | - |
 | Club Sport Emelec | - | 20.337.500 |
-| **Total ingresos recibidos** | **635.922.259** | **270.325.564** |
+| Total ingresos recibidos | 635.922.259 | 270.325.564 |
 
 (2) Los intereses pagados corresponden a:
 
-| | 2023 | 2022 |
+| Concepto | 2023 | 2022 |
 |---|---|---|
 | Obligaciones financieras | 1.623.498 | 57.262.371 |
 | Intereses mora DIAN | 6.340.000 | 243.000 |
 | Otros intereses | 26.120.159 | 6.279.748 |
-| **Total intereses pagados** | **34.119.476** | **63.785.119** |
+| Total intereses pagados | 34.119.476 | 63.785.119 |
 
 ### Nota 22. Otros ingresos y gastos
 
-**Otros ingresos**
+Otros ingresos
 
-| | 2023 | 2022 |
+| Concepto | 2023 | 2022 |
 |---|---|---|
 | Utilidad en venta de propiedad | - | 2.050.000 |
-| Arrendamientos | 6.412.400 | 352.611.488 |
+| Arrendamientos | 6.412.400 | - |
 | Recuperaciones (1) | 131.877.110 | 352.611.488 |
-| Participación videojuegos | 3.798.985 | 1.908.948 |
+| Participación videojuegos | 3.798.985 | - |
 | Mensajería | 1.561.796 | 1.908.948 |
-| Aprovechamientos | - | 3.252.258 |
+| Aprovechamientos | - | 3.227.261 |
 | Ajuste al peso | 21.415 | 60.561 |
-| Otros ingresos | 143.671.706 | 359.856.258 |
-| **Total Otros ingresos** | **143.671.706** | **359.856.256** |
+| Total Otros ingresos | 143.671.706 | 359.858.258 |
 
-**Otros gastos**
+Otros gastos
 
-| | 2023 | 2022 |
+| Concepto | 2023 | 2022 |
 |---|---|---|
 | Pérdida en venta y retiro de activos fijos | - | 4.925.747 |
 | Costos y gastos de ejercicios | 33.032.346 | 17.690.118 |
 | Impuestos asumidos | 27.064.252 | 20.186.138 |
-| Demandas laborales | - | - |
+| Demandas laborales | - | 7.400 |
 | Multas sanciones y litigios | 59.819.820 | 75.610.999 |
-| Fletes y viáticos | 7.423.852 | 610.000 |
+| Donaciones | 7.423.852 | 600.000 |
 | Ajuste al peso | 31.526 | 28.442 |
-| Otros | 127.371.796 | 160.816.844 |
-| **Total Otros gastos** | **127.371.796** | **160.816.844** |
+| Otros | - | 41.768.000 |
+| Total Otros gastos | 127.371.796 | 160.816.844 |
 
 Los valores más representativos corresponden al pago de incapacidades, recuperación provisión sobre demanda cerrada por menor valor, reintegros de gastos por arrendamiento asumidos por algunos empleados, reintegro del seguro de la Escuela de Iniciación.
+
+--- pág. 45 ---
 
 ### Nota 23. Transacciones con partes relacionadas
 

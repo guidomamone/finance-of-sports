@@ -1,5 +1,3 @@
-> **⚠️ INCOMPLETA (2026-09-26, to-do 66 / `Admin/test-costo-transcripcion.md`)**: a esta transcripción (hecha por Haiku 4.5 como parte de un test de costo) le faltan páginas del PDF original -- ver el chequeo estructural en `Admin/test-costo-transcripcion.md`. NO USAR para cargar datos al sitio hasta completar las páginas faltantes contra el PDF.
-
 # ALIANZA FC SA - Estados Financieros a Diciembre 31 de 2024
 
 NIT 800115610
@@ -23,7 +21,7 @@ Cifras expresadas en pesos colombianos
 | Inventarios | 180,000 | 180,000 | NOTA 8 |
 | Anticipos y avances | 1,544,989,426 | 701,806,687 | NOTA 9 |
 | Otros activos | 5,552,492,729 | 5,503,326,063 | NOTA 10 |
-| **Total activo corriente** | **15,519,015,224** | **12,062,851,322** | |
+| **Total activo corriente** | **16,519,015,224** | **12,062,851,322** | |
 | **Activo No Corriente** | | | |
 | Inversiones no corriente | 0 | 0 | NOTA 6 |
 | Propiedades planta y equipos | 1,764,054,948 | 1,573,257,896 | NOTA 11 |
@@ -93,9 +91,9 @@ Cifras expresadas en pesos colombianos
 | **Otros ingresos** | 1,482,315,216 | 130,486,351 | NOTA 27 |
 | Gastos de administración | 5,032,716,572 | 5,600,156,039 | NOTA 29 |
 | Gastos de ventas | 12,327,615,136 | 4,943,266,197 | NOTA 29 |
-| Otros gastos | 632,925,170 | 853,984,495 | NOTA 29 |
+| Otros gastos | 632,925,170 | 863,984,495 | NOTA 29 |
 | **Utilidad (Pérdida) operativa** | **2,668,909,150** | **2,897,214,269** | |
-| **Ingresos financieros** | 10,074,536 | 15,567,010 | NOTA 27 |
+| **Ingresos financieros** | 10,074,536 | 16,567,010 | NOTA 27 |
 | Gastos financieros | 287,914,809 | 174,855,447 | NOTA 29 |
 | **Costo Financiero Neto** | **-277,840,273** | **-158,288,437** | |
 | **Utilidad (Pérdida) antes de impuestos de renta** | 2,391,068,877 | 2,738,925,832 | |
@@ -299,6 +297,10 @@ La empresa reconoce como cuentas comerciales y otras cuantas por cobrar los dere
 
 La empresa no cuenta con este rubro
 
+---
+
+--- pág. 9 ---
+
 ## NOTA 7: Activos por impuestos corrientes
 
 | Partida | 31/12/2024 | 31/12/2023 |
@@ -327,7 +329,7 @@ La empresa reconoce como anticipos y avances aquellos pagos efectuados antes de 
 
 ---
 
---- pág. 9 ---
+--- pág. 10 ---
 
 | Partida | 31/12/2024 | 31/12/2023 |
 |--------|---|---|
@@ -355,7 +357,7 @@ La empresa reconoce como activos intangibles aquellos recursos identificables de
 
 ---
 
---- pág. 10 ---
+--- pág. 11 ---
 
 | Partida | 31/12/2024 | 31/12/2023 |
 |--------|---|---|
@@ -385,6 +387,10 @@ La empresa reconoce como cuentas comerciales y otras cuantas por pagar corriente
 |--------|---|---|
 | Pasivos por Impuestos Corrientes | 1,187,847,115 | 606,370,378 |
 
+---
+
+--- pág. 12 ---
+
 Estos corresponden a las obligaciones tributarias derivadas del impuesto de renta y otras contribuciones, calculadas sobre la utilidad fiscal del período y pendientes de pago a la fecha de los estados financieros. Su liquidación se realiza dentro de los plazos establecidos por la legislación vigente.
 
 ## NOTA 17: Beneficios a empleados
@@ -405,10 +411,6 @@ La empresa reconoce los anticipos y avances recibidos como pasivos hasta el mome
 
 ## NOTA 19: Otros Pasivos
 
----
-
---- pág. 11 ---
-
 | Partida | 31/12/2024 | 31/12/2023 |
 |--------|---|---|
 | Otros Pasivos | 0 | 0 |
@@ -416,6 +418,10 @@ La empresa reconoce los anticipos y avances recibidos como pasivos hasta el mome
 La empresa no cuenta con este rubro
 
 ## NOTA 20: Obligaciones Financieras
+
+---
+
+--- pág. 13 ---
 
 | Partida | 31/12/2024 | 31/12/2023 |
 |--------|---|---|
@@ -449,7 +455,7 @@ La empresa reconoce los saldos diferidos de acuerdo con las normas contables apl
 
 ---
 
---- pág. 12 ---
+--- pág. 14 ---
 
 de la empresa.
 
@@ -476,6 +482,10 @@ El capital social de la empresa está conformado por las aportaciones realizadas
 
 La empresa presenta el resultado del ejercicio conforme a las normas contables aplicables, diferenciando entre la utilidad o pérdida operacional, que corresponde al resultado generado por la actividad principal antes de considerar ingresos y gastos financieros, impuestos y otros rubros extraordinarios, y la utilidad o pérdida neta, que representa el resultado final del período después de aplicar todos los ingresos y gastos, incluidos los impuestos y otros ajustes. Adicionalmente, se incluyen otros resultados integrales que afectan el patrimonio, como revaluaciones, ajustes por conversión de moneda extranjera o cambios en instrumentos financieros. Estos resultados reflejan el desempeño financiero de la empresa y su capacidad para generar valor a lo largo del período contable.
 
+---
+
+--- pág. 15 ---
+
 ## NOTA 26: Dividendos o participacion
 
 | Partida | 31/12/2024 | 31/12/2023 |
@@ -490,7 +500,7 @@ La empresa no cuenta con este rubro
 |--------|---|---|
 | Ingresos de actividades ordinarias | 19,179,850,812 | 14,174,134,649 |
 | Otros ingresos | 1,482,315,216 | 130,486,351 |
-| Ingresos financieros | 10,074,536 | 15,567,010 |
+| Ingresos financieros | 10,074,536 | 16,567,010 |
 | Otros ingresos | 1,492,389,752 | 147,053,361 |
 
 La empresa reconoce sus ingresos de acuerdo con las normas contables aplicables, distinguiendo entre ingresos operacionales provenientes de su actividad principal y otros ingresos derivados de actividades secundarias.
@@ -507,13 +517,13 @@ La empresa no cuenta con este rubro
 
 ---
 
---- pág. 13 ---
+--- pág. 16 ---
 
 | Partida | 31/12/2024 | 31/12/2023 |
 |--------|---|---|
 | Gastos de administración | 5,032,716,572 | 5,600,156,039 |
 | Gastos de ventas | 12,327,615,136 | 4,943,266,197 |
-| Otros gastos | 632,925,170 | 853,984,495 |
+| Otros gastos | 632,925,170 | 863,984,495 |
 | Gastos financieros | 287,914,809 | 174,855,447 |
 | Gastos impuesto de renta y cree | 1,058,488,204 | 1,051,401,000 |
 | Gastos | 19,339,659,891 | 12,633,663,178 |
@@ -540,7 +550,7 @@ la nota queda en blanco para anotaciones o aclaraciones puntuales
 
 ---
 
---- pág. 14 ---
+--- pág. 17 ---
 
 Los estados financieros y las notas que los acompañan fueron aprobados por el representante legal.
 
@@ -556,9 +566,3 @@ T.P 279270
 Alonso Rueda Gualdron
 Revisor Fiscal
 T.P TP 24551
-
----
-
---- pág. 15-17 ---
-
-[Últimas páginas contienen solo firmas y espacio en blanco]
