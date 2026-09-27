@@ -54,6 +54,26 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+87. SEPARAR LA PROSA DE `club-sourcing/SKILL.md` QUE APLICA A UN SOLO PAÍS, EN VEZ DE QUE VIVA TODA
+    EN EL MISMO ARCHIVO (pedido de Guido, 2026-09-27: *"un agente cuya tarea es buscar clubs de
+    argentina, no tiene por qué leer qué pasa en Grecia"*). El skill tiene 29 secciones numeradas
+    (`## 1. Chile` a `## 29. Ucrania`) con el canal/regulador y los gotchas de CADA país, más las
+    secciones generales (`0`, `0.1`, `0.1b`, `0.2`, `0.3`) que sí aplican siempre. Un agente
+    sourceando Argentina carga las 29 igual, sin necesitar 28 de ellas.
+
+    IDEA DE GUIDO: que el skill diga algo como *"en `<archivo/carpeta>` están los aprendizajes de
+    País1, País2, ..., PaísN — leé el archivo del país que te toca buscar"*, en vez de que todo viva
+    en un solo `SKILL.md`. Ya hay precedente de esta partición en el proyecto: `fuentes/<País>/
+    <Club>.md` (un archivo por país, ver `CLAUDE.md`) se partió exactamente por este motivo —
+    escalar a más países sin que cada sesión cargue el contenido de todos.
+
+    ANTES DE TOCAR EL SKILL (mismo criterio ya establecido: no editar `SKILL.md` sin avisar):
+    pensar el mecanismo concreto con Guido — ¿una carpeta `club-sourcing/paises/<País>.md` con un
+    índice corto en el `SKILL.md` principal que diga qué país vive en cuál archivo? ¿Mover las
+    secciones 1-29 tal cual, o reescribirlas? — y confirmar que las secciones generales (0-0.3, la
+    escalera y el criterio de escalado) siguen siendo el único contenido que CUALQUIER sesión de
+    sourcing tiene que leer siempre, sea cual sea el país.
+
 86. TERMINAR DE LIMPIAR `Clubes/Colombia/Envigado/estados-financieros-2023.md` Y `2024.md`, que
     quedaron con problemas del mismo origen que el to-do 71 (test de costo de transcripción de
     Haiku) pero FUERA del rango que ese to-do pedía arreglar (encontrado al resolverlo, 2026-09-27):

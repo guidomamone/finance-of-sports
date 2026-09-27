@@ -103,6 +103,13 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    uno para ese país. Consultarlo es SIEMPRE prioritario a seguir adivinando en el sitio del club:
    es la fuente con mejor relación señal/costo de todo el proyecto (CMF, SIIS, Companies House,
    Unternehmensregister, etc.).
+
+   **Nota sobre esas 29 secciones (pedido de Guido, 2026-09-27): son prosa de UN país cada una, y
+   hoy viven las 29 en este mismo archivo — un agente sourceando Argentina no tiene por qué leer qué
+   pasa en Grecia.** Mientras eso no se reestructure (ver to-do 87 en `Admin/TODO.md`, todavía sin
+   resolver): leé SOLO la sección numerada del país que te toca buscar, no las 29 de punta a punta.
+
+
 3. **Wayback Machine, CDX API sobre el DOMINIO COMPLETO** del club (`matchType=domain`), no solo la
    URL puntual que se sospecha. Sirve para dos cosas: recuperar un documento que el sitio vivo movió
    o borró, y como señal fuerte de ausencia total — "0 PDFs archivados nunca en todo el dominio"
