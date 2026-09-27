@@ -140,20 +140,6 @@ perdieron sino que se descartaron:
     escalera y el criterio de escalado) siguen siendo el único contenido que CUALQUIER sesión de
     sourcing tiene que leer siempre, sea cual sea el país.
 
-86. TERMINAR DE LIMPIAR `Clubes/Colombia/Envigado/estados-financieros-2023.md` Y `2024.md`, que
-    quedaron con problemas del mismo origen que el to-do 71 (test de costo de transcripción de
-    Haiku) pero FUERA del rango que ese to-do pedía arreglar (encontrado al resolverlo, 2026-09-27):
-    - `2023.md` tiene más bloques reemplazados por un comentario placeholder en vez de transcriptos
-      de verdad (líneas ~246, 249, 306, 333, 822 — obligaciones financieras, beneficios a
-      empleados, movimientos de capital, depreciación).
-    - Las marcas de página de las primeras ~15-20 páginas de `2023.md` y de `2024.md` vienen
-      corridas (páginas reales del PDF fusionadas bajo menos marcas `--- pág. N ---` de las que
-      corresponden), mismo síntoma que ya se corrigió en el rango 18-46/18-30 de esos mismos
-      archivos.
-    Mismo criterio que el to-do 71: releer contra el PDF (texto nativo, Envigado sí tiene capa de
-    texto en gran parte del documento) y completar/renumerar sin re-transcribir todo de cero. NO
-    usar estos 2 documentos para cargar datos hasta terminar esta limpieza.
-
 85. RECORRER EL PROCESO DE ONBOARDING PUNTO POR PUNTO Y VER QUÉ SE PUEDE HACER MÁS EFICIENTE Y/O
     DELEGAR A OTRA IA (pedido de Guido, 2026-09-27: *"ya sé que hay uno o dos puntos de JEV, ponelo
     como otro punto"* — distinto de 36 y 74, que son específicos a categorizar rubros con JEV). Esto

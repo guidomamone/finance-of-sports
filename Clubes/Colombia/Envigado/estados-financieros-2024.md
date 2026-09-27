@@ -57,6 +57,8 @@ Se incluye dentro del efectivo todos los dineros que la Compañía tiene disponi
 
 Se incluyen como equivalentes al efectivo las inversiones con vencimiento menor a tres meses, de gran liquidez y que se destinan para cumplir compromisos de pago a corto plazo; las cuales se valoran a los precios de mercado.
 
+--- pág. 3 ---
+
 ### 3.3. Instrumentos financieros
 
 #### 3.3.1. Inversiones (Otros activos financieros)
@@ -87,7 +89,7 @@ Los proveedores y cuentas por pagar corresponden a obligaciones pactadas en cond
 
 Los activos financieros se retiran de los estados financieros cuando los derechos contractuales a recibir los flujos de efectivo del activo expiran o cuando el activo financiero y sustancialmente todos los riesgos y beneficios han sido transferidos. Usualmente, esto ocurre cuando se recibe el dinero o el producto de la liquidación del instrumento o por el pago del saldo deudor.
 
---- pág. 3 ---
+--- pág. 4 ---
 
 Si Envigado Fútbol Club S.A. no transfiere ni retiene sustancialmente todos los riesgos y ventajas inherentes a la propiedad, y continúa reteniendo el control del activo transferido, reconoce su participación en el activo y la obligación asociada por los montos que tiene que pagar; si retiene sustancialmente todos los riesgos y ventajas inherentes, reconoce el activo y cuando reciba el dinero de un tercero o producto de la liquidación del instrumento o por el pago del saldo deudor.
 
@@ -114,6 +116,8 @@ Los inventarios se evalúan para determinar el deterioro de valor en cada fecha 
 ### 3.5. Propiedades, planta y equipo
 
 Los elementos de propiedad, planta y equipo son medidos inicialmente al costo, el cual incluye el precio de compra, neto de descuentos y rebajas, más todos los costos directamente atribuibles a la ubicación del activo en el lugar y en las condiciones necesarias para que pueda operar de la forma prevista por la Compañía.
+
+--- pág. 5 ---
 
 Envigado Fútbol Club, mide posteriormente a su adquisición los terrenos bajo el modelo de revaluación, correspondiente a su valor razonable en el momento de la revaluación, menos el valor acumulado de las pérdidas por deterioro de valor que haya sufrido el activo y revisa la depreciación de forma prospectiva, para reflejar las nuevas expectativas. Los demás activos se miden al costo menos la depreciación acumulada y cualquier pérdida por deterioro del valor acumulado; la depreciación se reconoce sobre la base de líneas rectas.
 
@@ -144,7 +148,7 @@ Estos derechos se reconocen al costo menos la amortización acumulada, se amorti
 
 Los gastos en que se incurre internamente sobre activos intangibles se reconocen en resultados cuando se incurren; las amortizaciones del período se incluyen en los gastos de administración.
 
---- pág. 4 ---
+--- pág. 6 ---
 
 ### 3.7. Licencias
 
@@ -171,6 +175,8 @@ Los pagos del arrendamiento se reparten entre la carga financiera y la reducció
 
 Para los activos mantenidos en arrendamiento financiero, se les aplica las políticas de la misma forma que para los activos que son propiedad de Envigado Fútbol Club S.A. El resto de los arrendamientos se tratan como arrendamientos operativos, procediendo a reconocer las cuotas pactadas en el resultado del período de la forma lineal a lo largo del plazo del arrendamiento.
 
+--- pág. 7 ---
+
 ### 3.10. Impuesto a las ganancias
 
 El gasto de impuesto a las ganancias reconocido en los resultados del período incluye la suma de los impuestos corrientes por concepto del impuesto sobre la renta y complementarios y el impuesto diferido. El impuesto de la renta se calcula con base en la renta líquida, usando las leyes tributarias promulgadas y vigentes a la fecha de cierre anual, lo cual difiere del resultado contable reflejado en los estados financieros.
@@ -195,7 +201,7 @@ Los beneficios de corto plazo incluyen salarios, cesantías, vacaciones, prima l
 
 Estos beneficios son reconocidos en la medida en que el empleado presta sus servicios a Envigado Fútbol Club S.A. y se miden por el valor establecido en las normas laborales y/o en los acuerdos individuales establecidos entre el empleado y Envigado Fútbol Club S.A.
 
---- pág. 5 ---
+--- pág. 8 ---
 
 #### 3.11.2. Beneficios post-empleo
 
@@ -227,6 +233,8 @@ Se registran como reservas las apropiaciones autorizadas por la Asamblea General
 
 Los ingresos se miden por referencia al valor razonable del pago recibido o por recibir de los bienes suministrados o los servicios proporcionados por Envigado Fútbol Club S.A. neto de rebajas, descuentos comerciales y similares. La política contable para cada grupo de ingresos es la siguiente:
 
+--- pág. 9 ---
+
 #### 3.15.1. Ingresos por venta de derechos deportivos
 
 El reconocimiento de los ingresos estará atado a la transferencia de los beneficios, control y riesgos inherentes de los derechos sobre jugadores, ello de forma independiente al flujo de efectivo pactado dentro del precio de venta; por lo tanto, se deberá revisar el procedimiento legal involucrado y la formalización de la cesión de dichos derechos (económicos y/o federativos) para indicar la porción en que se efectarán los resultados del ejercicio por la transacción.
@@ -250,6 +258,8 @@ Los ingresos recibidos por la recaudación de los derechos de televisión se rec
 #### 3.15.5. Ingresos por préstamo de jugadores
 
 Los ingresos recibidos por el rescudo de los préstamos de jugadores, siempre y cuando se trate de arrendamientos de tipo operativo, se reconocen en la medida que éstos se encuentren realizados y percibidos; estos ingresos provienen del pago de otros clubes por el préstamo del pase de jugadores sobre los cuales aún se retiene el control como riesgos y beneficios significativos.
+
+--- pág. 10 ---
 
 #### 3.15.6. Ingresos por solidaridad y derechos económicos poseídos tras segundas ventas
 
@@ -279,7 +289,7 @@ En esta categoría se incluye todo lo relacionado con recuperación de costos y 
 
 No se considerarán ingresos aquellos valores que correspondan a un reintegro de un gasto realizado en el mismo período contable los cuales deben ser reconocidos como un menor valor del gasto correspondiente. Sin embargo, si el gasto fue realizado en períodos anteriores se llevará al ingreso su recuperación.
 
---- pág. 6 ---
+--- pág. 11 ---
 
 ### 3.15.10. Subvenciones y donaciones
 
@@ -311,6 +321,8 @@ Las estimaciones más significativas corresponden a:
 
 Se considera la situación de cada deudor a la fecha del estado financiero, así como sus características, vencimientos, dificultades financieras, ambiente económico en el que se desenvuelven, entre otros. Envigado Fútbol Club S.A. posee información financiera actualizada de cada uno de sus clientes. Basado en dichos análisis e información, para cada deudor, se realiza la estimación de los flujos futuros esperados a recibir.
 
+--- pág. 12 ---
+
 El deterioro de valor de los deudores puede modificarse en un futuro por situaciones económicas y leyes de mercado que afecten los deudores y su futuro pago.
 
 ### 4.2. Deterioro de activos no financieros
@@ -341,7 +353,7 @@ c) Datos cuantitativos resumidos acerca de su exposición al riesgo al cierre 20
 
 d) Las concentraciones de riesgo.
 
---- pág. 7 ---
+--- pág. 13 ---
 
 ### 5.1. Riesgo de liquidez
 
@@ -367,7 +379,7 @@ Envigado Fútbol Club S.A. monitocea continuamente los saldos expuestos al riesg
 
 Envigado Fútbol Club S.A. mantiene ciertas cuentas por cobrar que se encuentra en mora pero que no se han considerado deterioradas.
 
---- pág. 8 ---
+--- pág. 14 ---
 
 ### 5.5. Políticas y procedimientos de administración de capital
 
@@ -413,7 +425,7 @@ Las cuentas comerciales y otras cuentas por cobrar comprenden:
 | (+) Deudores del exterior no corrientes | (1) | 5.415.873.750 | 10.831.747.500 |
 | Total | 22.752.272.328 | 25.342.302.621 |
 
---- pág. 9 ---
+--- pág. 15 ---
 
 1) Las cuentas por cobrar a clientes incluyen al 31 de diciembre de 2024 saldos en dólares por valor de USD 3.268.571 (en 2023 - USD USD 7.994.843,51) y en euros por valor de € 589.842. El ajuste por actualización al tipo de cambio de cierre del año 2024 generó gasto por diferencia en cambio por valor de $ 4.386.396.133 (en 2023 gastos de $ 7.582.210.817), los cables fueron reconocidos como gastos financieros.
 
@@ -461,7 +473,7 @@ El saldo de las propiedades, planta y equipo al 31 de diciembre comprende:
 | Depreciación acumulada | (1.513.557.715) | (1.358.622.882) |
 | Total | 2.196.822.202 | 2.231.159.334 |
 
---- pág. 10 ---
+--- pág. 16 ---
 
 El movimiento de las propiedades, planta y equipo por los años 2024 y 2023, es el siguiente:
 
@@ -511,6 +523,8 @@ El movimiento del costo de los activos intangibles para los años 2024 y 2023 es
 | Compras | 169.316.799 | - | 100.000.000 |
 | Bajas | - | 100.000.000 | 40.853.850 |
 | Saldo al 31 de diciembre de 2024 | 414.224.754 | 594.472.500 | 81.053.948 |
+
+--- pág. 17 ---
 
 El movimiento de la amortización acumulada por los años 2024 y 2023 es el siguiente
 
@@ -564,7 +578,7 @@ El saldo de las cuentas por pagar comprende:
 | Menos: parte no corriente | (2) | 731.744.537 | 1.732.459.316 |
 | Total parte corriente | 2.675.743.648 | 3.355.652.068 |
 
---- pág. 11 ---
+--- pág. 18 ---
 
 (1) Al 31 de diciembre de 2024, el saldo de acreedores incluye saldos en dólares por valor total de USD$ 297.004,27 (En 2023 - USD$ 963.168,80) y en euros por valor total de 105.079,60.
 

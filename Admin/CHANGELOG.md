@@ -15,6 +15,37 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 258 — to-do 86: limpieza completa de `Clubes/Colombia/Envigado/estados-financieros-2023.md` y `2024.md`
+
+- `2023.md`: los 5 placeholders en inglés (obligaciones financieras y beneficios a empleados en el
+  Estado de Situación Financiera, firmas del Estado de Resultado Integral, movimientos de capital,
+  tabla de depreciación de Nota 10) reemplazados por la transcripción real, leída de las páginas
+  escaneadas del PDF (render + lectura directa, esas páginas no tienen capa de texto). De paso,
+  varios números mal transcritos en esas mismas tablas (Estado de Situación Financiera, Estado de
+  Resultado Integral) corregidos contra la imagen de la página.
+- `2023.md`: contenido real que faltaba entre página física 15 y 19 del PDF (secciones 3.3.3
+  Obligaciones financieras, 3.3.4 Cuentas comerciales por pagar, 3.3.5 Retiro de activos
+  financieros, y el primer párrafo de 3.3.6 Deterioro de valor de activos financieros — la
+  transcripción original las había saltado y empalmado el resto como si fuera continuación de
+  3.3.2) reconstruido desde el PDF (SÍ tiene capa de texto nativa en esa zona) y agregado en su
+  lugar. Un párrafo duplicado de "reversión de pérdida por deterioro" (pegado dos veces, una de
+  más al final de lo que hoy es la página 18) eliminado.
+- El hueco de páginas 24-25 y el de página 39-40 de `2023.md`: en los dos casos las marcas de
+  página venían con offset (contenido de 2 páginas físicas bajo una sola marca `--- pág. N ---`,
+  sin pérdida de contenido) — confirmado releyendo el PDF y contando marcas contra páginas reales,
+  mismo patrón que Atlético Bucaramanga 2017. Renumeradas ~30 marcas de página (16 a 46) para que
+  cada una refleje la página física real del PDF, sin re-transcribir el texto que ya estaba bien.
+- `2024.md`: el hueco de páginas 12-18 (7 páginas) resultó ser el mismo patrón, pero mucho más
+  extendido — las primeras 11 marcas del documento (todo el escaneo de la Nota 3, la más larga)
+  venían comprimiendo 18 páginas físicas reales bajo 11 marcas, con contenido completo pero sin una
+  marca por página. Confirmado renderizando y haciendo OCR (Tesseract) de las 18 páginas del PDF
+  (este documento es enteramente escaneado, sin capa de texto) y ubicando en el `.md` dónde
+  arrancaba cada página real; sin ningún dato faltante. Marcas 1-18 reconstruidas página por
+  página; 19-30 ya estaban bien.
+- `node tools/check-transcripcion-fidelidad.js` sobre los dos archivos: 0 P1, 0 P2 (quedan algunos
+  P3 de "página corta", señal débil, sin resolver — no ameritan más que revisión humana eventual).
+- `Admin/TODO.md`: to-do 86 borrado (resuelto).
+
 ## Versión 257 — el chequeo de fidelidad de transcripción queda cableado al pipeline, no es un paso suelto
 
 - `tools/mistral-ocr-transcribe.mjs` y `tools/gemini-transcribe.mjs`: corren `check-transcripcion-fidelidad.js`

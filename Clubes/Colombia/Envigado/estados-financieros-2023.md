@@ -227,50 +227,49 @@ Alcaldía de Envigado y otros logos de sponsors
 | Activos corrientes | | | |
 | Efectivo y equivalentes al efectivo | 6 | 5.721.651.500 | 3.453.634.971 |
 | Cuentas comerciales y otras cuentas por cobrar | 7 | 25.342.302.621 | 14.618.055.632 |
-| Inventarios | 8 | 59.844.896 | 58.507.647 |
-| Otros activos no financieros | | 39.560.729 | 97.378.711 |
+| Inventarios | 8 | 59.844.896 | 56.507.647 |
+| Otros activos no financieros | 9 | 39.560.729 | 97.376.711 |
 | **Total activos corrientes** | | 31.163.359.746 | 18.225.574.961 |
 | **Activos no corrientes** | | | |
-| Propiedad, planta y equipo | 10 | 3.231.169.334 | 2.204.279.741 |
+| Propiedades, planta y equipo | 10 | 2.231.159.334 | 2.204.279.241 |
 | Activos intangibles | 11 | 731.684.869 | 173.660.294 |
 | Activos por impuestos diferidos | 16 | 1.975.920.596 | 200.122.449 |
-| **Total activos no corrientes** | | 4.938.784.799 | 2.578.061.983 |
+| **Total activos no corrientes** | | 4.938.764.799 | 2.578.061.983 |
 | **Total activos** | | 36.102.124.545 | 20.803.636.944 |
 | **Pasivos y patrimonio** | | | |
 | **Pasivos corrientes** | | | |
 | Obligaciones financieras | 12 | 72.388.021 | 215.564.317 |
 | Cuentas comerciales por pagar y otras cuentas por pagar | 13 | 3.355.652.066 | 1.562.610.241 |
+| Beneficios a empleados | 14 | 509.441.890 | 775.927.657 |
 | Pasivos por impuestos | 15 | 8.103.631.910 | 1.763.171.000 |
-| **Total pasivos corrientes** | | 11.531.113.897 | 4.317.273.715 |
+| **Total pasivos corrientes** | | 12.041.113.887 | 4.317.273.215 |
 | **Pasivos no corrientes** | | | |
-| Obligaciones financieras | 12 | 49.643.751 | [not visible] |
+| Obligaciones financieras | 12 | - | 49.843.751 |
 | Cuentas comerciales por pagar y otras cuentas por pagar | 13 | 1.732.459.316 | 767.392.984 |
 | Otras provisiones | 17 | 400.000.000 | 75.000.000 |
-| Beneficios a empleados | 14 | [value] | [value] |
-| Pasivos por impuestos diferidos | 16 | 2.441.451.226 | 2.001.717.072 |
-| **Total pasivos no corrientes** | | | 2.001.717.072 |
-| **Total pasivos** | | 4.442.565.112 | 6.318.890.287 |
+| Pasivo por impuestos diferidos | 16 | 308.991.909 | 1.109.480.337 |
+| **Total pasivos no corrientes** | | 2.441.451.225 | 2.001.717.072 |
+| **Total pasivos** | | 14.482.565.112 | 6.318.990.287 |
 | **Patrimonio** | | | |
 | Capital emitido | 18 | 1.500.000.000 | 550.000.000 |
 | Superávit de capital | 18 | 13.313.372 | - |
 | Reservas | 18 | 775.000.000 | 775.000.000 |
-| Ganancias acumuladas | 18 | 1.938.853.982 | 4.437.522.533 |
-| Otro resultado integral | 18 | 1.163.600.000 | 1.153.600.000 |
-| Resultado del ejercicio | 18 | 15.268.797.779 | 6.951.021.124 |
+| Ganancias acumuladas | 18 | 1.938.853.552 | 4.437.525.533 |
+| Otro resultado integral | 18 | 1.153.600.000 | 1.153.600.000 |
+| Ganancia integral del año | | 16.238.792.509 | 7.568.521.124 |
 | **Total patrimonio** | | 21.619.559.433 | 14.484.646.657 |
-| **Total pasivos y patrimonio** | | 36.102.124.545 | 20.803.636.944 |
+| **Total pasivos y patrimonio** | | 36.102.124.546 | 20.803.636.944 |
 
-Rarihiro Alberto Ruiz Londoño
+Ramiro Alberto Ruiz Londoño
 Representante Legal
 (Ver Certificación adjunta)
 
-Mónica Rengifo Polanío
-Contador/a
-T.P. 35836-T
+Mónica Rengifo Polanco
+Contador T.P. 35836-T
 (Ver Certificación adjunta)
 
 Luisa Fernanda León Marulanda
-Revisor Fiscal - T.P No 228500-T
+Revisor Fiscal - T.P No 226500-T
 Designada por Servicios de
 Auditoría y Consultoría de
 Negocios SAS
@@ -288,33 +287,29 @@ Las notas 1 a 25 son parte integral de los Estados Financieros
 
 | Concepto | Notas | 2023 | 2022 |
 |----------|-------|------|------|
-| Ingresos de actividades ordinarias | 19 | 56.799.522.026 | 25.516.756.000 |
-| Costo de ventas | | (2.212.007) | (228.686.974) |
-| **Ganancia bruta** | | 56.797.310.019 | 25.288.057.026 |
-| Otros ingresos | 22 | 60.568.910.021 | 23.288.057.020 |
-| Gasto equipo de fútbol | 20 | (25.327.033.596) | (13.983.457.729) |
-| Gastos de administración | 20 | (1.127.371.796) | (160.616.944) |
-| Otros gastos | 22 | (6.923.275.555) | (2.756.861.769) |
-| Ingreso (costo) financiero neto | 21 | (6.923.275.555) | (2.756.861.769) |
+| Ingresos de actividades ordinarias | 19 | 59.799.522.028 | 25.516.756.000 |
+| Costo de mercancía vendidas | | (229.612.007) | (228.698.974) |
+| **Ganancia bruta** | | 59.569.910.021 | 25.288.057.026 |
+| Otros ingresos | 22 | 143.671.706 | 359.858.258 |
+| Gasto equipo de fútbol | 20 | (25.327.033.696) | (13.983.457.729) |
+| Gastos de administración | 20 | (2.177.409.896) | (2.246.526.450) |
+| Otros gastos | 22 | (127.371.796) | (160.816.844) |
+| Ingreso (costo) financiero neto | 21 | (6.923.275.555) | 2.756.661.769 |
 | **Ganancia antes de impuestos** | | 25.158.490.785 | 12.013.776.030 |
-| Gasto por impuesto a la Renta y Complementarios | 15 | (11.495.001.910) | (3.690.453.993) |
-| Impuestos a la Renta años anteriores | | - | 10.397.000 |
-| Subtotal impuesto de renta corriente | | (3.780.850.997) | 3.790.850.997 |
-| Impuesto Diferido | | (2.575.303.634) | 744.403.909 |
-| **Resultado integral total** | | 16.238.792.509 | 7.558.521.124 |
+| Gasto por impuesto a la Renta y Complementarios | 15 | (11.495.001.910) | (3.700.850.997) |
+| Ingreso (gasto) por impuestos diferidos | 15 | 2.575.303.634 | (744.403.909) |
+| **Resultado integral total** | | 16.238.792.509 | 7.568.521.124 |
 
-[Signatures section]
-
-Rarihiro Alberto Ruiz Londoño
+Ramiro Alberto Ruiz Londoño
 Representante Legal
 (Ver Certificación adjunta)
 
-Mónica Rengifo Polanío
-Contador/a T.P 35836-T
+Mónica Rengifo Polanco
+Contador T.P 35836-T
 (Ver Certificación adjunta)
 
 Luisa Fernanda León Marulanda
-Revisor Fiscal - T.P No 228500-T
+Revisor Fiscal - T.P No 226500-T
 Designada por Servicios de
 Auditoría y Consultoría de
 Negocios SAS
@@ -330,7 +325,21 @@ Las notas 1 a 25 son parte integral de los Estados Financieros
 **(Cifras comparativas con el año comprendido del 1º de enero al 31 de diciembre de 2022)**
 **Expresado en pesos colombianos**
 
-[Detailed table with capital movements showing opening balances, transactions during 2023, and closing balances for various equity components]
+| Concepto | Capital suscrito y pagado | Superávit de capital | Reservas | Ganancias acumuladas | Otros resultados integrales | Ganancia del Ejercicio | Total Patrimonio de los accionistas |
+|----------|---|---|---|---|---|---|---|
+| **Saldo al 1 de enero de 2022** | 550.000.000 | - | 392.250.000 | 4.299.642.175 | 1.153.600.000 | 8.683.150.887 | 15.078.643.062 |
+| Ganancia del período | - | - | - | - | - | 7.568.521.124 | 7.568.521.124 |
+| Apropiaciones | - | - | - | 8.683.150.887 | - | (8.683.150.887) | - |
+| Reservas | - | - | 382.750.000 | (382.750.000) | - | - | - |
+| Dividendos decretados | - | - | - | (8.162.517.529) | - | - | (8.162.517.529) |
+| **Saldo al 31 de diciembre de 2022** | 550.000.000 | - | 775.000.000 | 4.437.525.533 | 1.153.600.000 | 7.568.521.124 | 14.484.646.657 |
+| Ganancia del período | - | - | - | - | - | 16.238.792.509 | 16.238.792.509 |
+| Donaciones | - | 13.313.372 | - | - | - | - | 13.313.372 |
+| Apropiaciones | - | - | - | 7.568.521.124 | - | (7.568.521.124) | - |
+| Aumento capital | 950.000.000 | - | - | (950.000.000) | - | - | - |
+| Reversión Impuesto diferido por adopción NIIF | - | - | - | 982.940 | - | - | 982.940 |
+| Dividendos decretados | - | - | - | (9.118.176.045) | - | - | (9.118.176.042) |
+| **Saldo al 31 de diciembre de 2022** [sic — por los valores, esta fila de cierre corresponde al ejercicio 2023; el documento fuente repite "2022" en la etiqueta de esta última fila] | 1.500.000.000 | 13.313.372 | 775.000.000 | 1.938.853.552 | 1.153.600.000 | 16.238.792.509 | 21.619.559.433 |
 
 --- pág. 13 ---
 
@@ -405,9 +414,9 @@ Las operaciones con monedas extranjeras se convierten a pesos colombianos utiliz
 
 | | Moneda (al cierre) | Dic-23 | Dic-22 |
 |---|---|---|---|
-| Dólar Americano USD | 4.222.05 | 4.310.30 |
+| Dólar Americano USD | 3.822.05 | 4.810.20 |
 | Euro EUR | 4.222.03 | 5.132.96 |
-| Francos Suizos CHF | 4.612.03 | 5.200.2T |
+| Francos Suizos CHF | 4.612.03 | 5.200.21 |
 | | Moneda (promedio) | Dic-23 | Dic-22 |
 | Dólar Americano USD | 4.325.05 | 4.255.44 |
 | Euro EUR | 4.677.00 | 4.300.00 |
@@ -429,11 +438,37 @@ Los CDT's y otros instrumentos de deuda que no cotizan en bolsa se miden al cost
 
 #### 3.3.2. Cuentas comerciales y otras cuentas por cobrar
 
-Las operaciones se realizan con condiciones de crédito normales, y los valores de las cuentas por cobrar no tienen intereses a excepción de las cuentas por cobrar correspondientes a ventas de derechos deportivos, préstamos y contribución de solidaridad en los casos en que los clubes cancelen de manera tardía, y la FIFA de mandato de pago liquidando intereses por mora. Se miden inicialmente en su reconocimiento inicial a su valor nominal neto de los costos incurridos en la transacción; en su medición posterior, se valorán al costo amortizado utilizando el método de interés efectivo.
+Las operaciones se realizan con condiciones de crédito normales, y los valores de las cuentas por cobrar no tienen intereses a excepción de las cuentas por cobrar correspondientes a ventas de derechos deportivos, préstamos y contribución de solidaridad en los casos en que los clubes cancelen de manera tardía, y la FIFA de mandato de pago liquidando intereses por mora. Se miden inicialmente a su precio de transacción; cuando el plazo de pago se amplía más allá de las condiciones de crédito normales, las cuentas por cobrar se miden al costo amortizado utilizando el método de interés efectivo.
 
-Al final de cada período sobre el que se informa, los valores en libros de los deudores comerciales y otros deudores se revisan para determinar si existe alguna evidencia objetiva de que un cliente caerá en incumplimiento de uno o más eventos que ocurrieron después del reconocimiento inicial del activo que tienen impacto en los flujos de efectivo futuros estimados del saldo de la deuda. Las demás cuentas por cobrar se analizan de manera colectiva agrupándolas según características de riesgo crediticio similares.
+Al final de cada período sobre el que se informa, los valores en libros de los deudores comerciales y otros deudores se revisan para determinar si existe alguna evidencia objetiva de que no van a ser recuperables, si es así, se reconoce inmediatamente en resultados una pérdida por deterioro del valor.
 
-Si hay evidencia objetiva de que se ha incurrido en una pérdida por deterioro, se estiman los flujos de efectivo futuros a recuperar mediante un análisis y proyección que, considera la probabilidad de deterioro y la estimación del valor que no se recuperará, basadas en el análisis de todos los factores que afectan en el activo financiero. Cuando el valor presente de los flujos de efectivo futuros estimados es menor al valor en libros del activo financiero, se reconoce una pérdida por deterioro en una subcuenta del activo con cargo al resultado del período.
+#### 3.3.3. Obligaciones financieras
+
+Las obligaciones financieras se reconocen cuando Envigado Fútbol Club S.A. recibe el producto del préstamo, se miden en su reconocimiento inicial a su valor nominal neto de los costos incurridos en la transacción; en su medición posterior, se valoran al costo amortizado con base en la tasa de interés efectiva de la deuda, cualquier diferencia entre cada valoración, se reconoce como gastos financieros.
+
+Las obligaciones financieras se retiran del pasivo cuando se pagan, liquidan, o expiran.
+
+#### 3.3.4. Cuentas comerciales por pagar y otras cuentas por pagar
+
+Los proveedores y cuentas por pagar corresponden a obligaciones pactadas en condiciones de crédito normales y no tienen intereses, se reconocen cuando Envigado Fútbol Club S.A. ha adquirido una obligación generada al recibir los riesgos y beneficios de bienes comprados o al recibir los servicios acordados, midiéndolos por el valor acordado con el proveedor, posteriormente, se miden al costo amortizado utilizando el método de interés efectivo.
+
+#### 3.3.5. Retiro de los activos financieros
+
+Los activos financieros se retiran de los estados financieros cuando los derechos contractuales a recibir los flujos de efectivo del activo expiran o cuando el activo financiero y sustancialmente todos los riesgos y beneficios han sido transferidos. Usualmente, esto ocurre cuando se recibe el dinero producto de la liquidación del instrumento o por el pago del saldo deudor.
+
+Si Envigado Fútbol Club S.A. no transfiere ni retiene substancialmente todos los riesgos y ventajas inherentes a la propiedad, y continúa reteniendo el control del activo transferido, reconoce su participación en el activo y la obligación asociada por los montos que tiene que pagar; si retiene sustancialmente todos los riesgos y ventajas inherentes a la propiedad de un activo financiero transferido, continúa reconociendo el activo financiero y también reconoce un préstamo colateral por los ingresos recibidos.
+
+La diferencia entre el valor en libros del activo financiero y el valor de la contraprestación recibida y por recibir se reconoce en los resultados.
+
+--- pág. 17 ---
+
+#### 3.3.6. Deterioro de valor de los activos financieros
+
+Todos los activos financieros se revisan por deterioro al menos al final de cada año para determinar si existe evidencia objetiva de su deterioro.
+
+Las cuentas por cobrar significativas se consideran para el análisis de deterioro de manera individual cuando están vencidas o cuando existe evidencia objetiva de que un cliente caerá en incumplimiento como resultado de uno o más eventos que ocurrieron después del reconocimiento inicial del activo que tienen impacto en los flujos de efectivo futuros estimados del saldo de la deuda. Las demás cuentas por cobrar se analizan de manera colectiva agrupándolas según características de riesgo crediticio similares.
+
+Si hay evidencia objetiva de que se ha incurrido en una pérdida por deterioro, se estiman los flujos de efectivo futuros a recuperar mediante un análisis y proyección que, considera la probabilidad de deterioro y la estimación del valor que no se recuperará, basados en el análisis de todos los factores que afectan el activo financiero. Cuando el valor presente de los flujos de efectivo futuros estimados a recuperar, descontados utilizando la tasa de interés efectivo original, es menor al valor en libros del activo financiero, se reconoce una pérdida por deterioro en una subcuenta del activo con cargo al resultado de periodo.
 
 Si en un período posterior, el valor de la pérdida por deterioro disminuye como consecuencia de un evento ocurrido después de que el deterioro fue reconocido, la reversión de la pérdida por deterioro se reconoce en resultados.
 
@@ -456,7 +491,7 @@ Para el cálculo de la depreciación de las propiedades, planta y equipo, se uti
   - Equipos de Cómputo y Comunicaciones: 4 años.
   - Equipo de Transporte: la vida útil de los vehículos de uso administrativo es 5 años.
 
---- pág. 17 ---
+--- pág. 18 ---
 
 Actualmente se revisa el valor residual, el método de depreciación y la vida útil de los activos y, si existen cambios significativos, se ajusta la depreciación de forma prospectiva, para reflejar las nuevas expectativas. Los demás activos se miden al costo menos la depreciación acumulada y cualquier pérdida por deterioro del valor acumulada; la depreciación se reconoce sobre la base de línea recta.
 
@@ -489,9 +524,7 @@ Si existe algún indicio de que se ha producido un cambio significativo en la vi
 
 Al cierre de cada año, Envigado Fútbol Club S.A. evalúa si existe algún indicio de deterioro del valor de algún activo individual en la medida en que éste genere flujos de efectivo de manera independiente, o unidades generadoras de efectivo. Si existen indicios de un posible deterioro del valor, se estima y se compara el valor recuperable de cualquier activo efectuado (o unidades generadoras de efectivo) con su valor en libros. Si el valor recuperable estimado es inferior al costo neto en libros del activo (individual o unidad generadora de efectivo), se reduce su valor en libros al valor recuperable estimado y se reconoce una pérdida por deterioro del valor la cual se contabiliza en los resultados como gastos o mediante una disminución del superávit por revaluación de activos en caso de existir.
 
-Si una pérdida por deterioro del valor se revierte posteriormente el valor en libros del activo (o unidad generadora de efectivo) se incrementa hasta la estimación revisada de su valor recuperable, sin superar el valor que habría sido determinado si no se hubiese reconocido ninguna pérdida por deterioro de valor del activo en años anteriores. Una reversión de una pérdida por deterioro de valor se reconoce inmediatamente en resultados.
-
---- pág. 18 ---
+--- pág. 19 ---
 
 Si en un período posterior, el valor de la pérdida por deterioro del valor se revierte en el valor en libros del activo (o unidad generadora de efectivo) se incrementa hasta la estimación revisada de su valor recuperable, sin superar el valor que habría sido determinado si no se hubiese reconocido ninguna pérdida por deterioro de valor del activo en años anteriores. Una reversión de una pérdida por deterioro de valor se reconoce inmediatamente en resultados.
 
@@ -515,7 +548,7 @@ Los activos y pasivos por impuestos diferidos se calculan sobre las diferencias 
 
 Los activos y pasivos por impuestos diferidos se calculan sin descontarse a las tasas fiscales que se espera apliquen en el período de realización respectivo. El impuesto diferido se reconoce en los resultados del período, excepto cuando se trata de partidas que se reconocen en el patrimonio o en otro resultado integral, en cuyo caso, el impuesto también se reconoce en el patrimonio o en otro resultado integral, respectivamente.
 
---- pág. 19 ---
+--- pág. 20 ---
 
 El impuesto diferido activo solo se reconoce en la medida en que sea probable la existencia de beneficios tributarios futuros contra los que se puedan usar las diferencias temporarias que lo generan. Lo anterior, se determina con base en las proyecciones de Envigado Fútbol Club S.A., sobre los resultados futuros ajustados por partidas significativas que se concilien para el resultado fiscal y por los límites en el uso de pérdidas fiscales u otros activos fiscales pendientes de aplicar.
 
@@ -543,7 +576,7 @@ Las provisiones a largo plazo se miden al valor presente de los desembolsos que 
 
 Las contingencias de ganancias a favor de Envigado Fútbol Club S.A. no se reconocen hasta tanto se tenga la certeza de obtener un beneficio económico.
 
---- pág. 20 ---
+--- pág. 21 ---
 
 ### 3.12. Capital emitido
 
@@ -571,7 +604,7 @@ Las ventas que se realicen con un plazo para el recaudo superior a 180 días se 
 
 Las transacciones realizadas en moneda extranjera afectarán los ingresos reconocidos con base en la tasa de cierre publicada por el Banco de la República del día que se concrete la transacción, posteriormente cuenta por cobrar (instrumento financiero activo y partida monetaria) se ajustará según la tasa de cierre de mes publicada por la autoridad bancaria con contrapartida en los otros ingresos y/o gastos por diferencia en cambio.
 
---- pág. 21 ---
+--- pág. 22 ---
 
 #### 3.14.2. Ingresos por publicidad y auspicios
 
@@ -599,7 +632,7 @@ Los activos contingentes han de ser objeto de evaluación de forma continuada, c
 
 En aquellas otras situaciones donde no existe aún obligación o existe incertidumbre clara sobre el desenlace de un evento (demanda, recurso, etc.), el Club valorará conjuntamente con sus asesores legales o aseguradores la eventualidad de un hecho futuro que pueda desencadenar un beneficio o pérdida para el Club y, en el caso de que exista una probabilidad alta de que se manifieste el desenlace futuro, se proceda a estimar el activo o pasivo contingente resultante.
 
---- pág. 22 ---
+--- pág. 23 ---
 
 #### 3.14.7. Ingresos financieros e intereses
 
@@ -635,7 +668,7 @@ Las donaciones y patrocinios podrán ser reconocidas como ingresos tan pronto co
 
 Envigado Fútbol Club S.A. reconoce sus costos y gastos en la medida en que ocurren los hechos económicos en forma tal que queden registrados sistemáticamente en el período contable correspondiente (devengó), independiente del momento de su pago.
 
---- pág. 23 ---
+--- pág. 24 ---
 
 ### 3.16. Clasificación en activos y pasivos corrientes y no corrientes
 
@@ -669,6 +702,8 @@ La estimación de las provisiones para atender pleitos probables y cuantificable
 
 Para efectos de soportar el reconocimiento contable de los activos por impuesto diferido, se realizan proyecciones fiscales sobre los resultados de operación futuros que pueden cambiar por factores que no están bajo el control de la Compañía.
 
+--- pág. 25 ---
+
 ### Nota 5. Objetivos y política de administración del riesgo
 
 Envigado Fútbol Club S.A. está expuesta a varios riesgos relacionados con instrumentos financieros, como son los riesgos de liquidez, cambiario, de tasa de interés y crédito. La administración de los riesgos financieros de Envigado Fútbol Club S.A. se analiza por la administración en cooperación directa con la Junta Directiva y se enfoca en asegurar los flujos de efectivo de la compañía a corto y a mediano plazo.
@@ -688,7 +723,7 @@ El riesgo de liquidez consiste en que Envigado Fútbol Club S.A. pueda no ser ca
 
 La mayoría de las transacciones de Envigado Fútbol Club S.A. se llevan a cabo en pesos colombianos, las exposiciones a los tipos de cambio surgen de las ventas y compras en el extranjero que básicamente están denominadas en dólares de los Estados Unidos (USD), euros (EUR) y Francos Suizos (CHF).
 
---- pág. 25 ---
+--- pág. 26 ---
 
 Para mitigar la exposición de Envigado Fútbol Club S.A. al riesgo cambiario, se monitorean los flujos de efectivo futuros del activos originados en moneda extranjera, así como los compromisos a futuro en esas monedas siguiendo las políticas de administración de riesgo establecidas. Comprende la administración de riesgo diferencia entre los flujos de efectivo de divisa extranjera a corto plazo (que vencen dentro de 6 meses) de los flujos de efectivo a más largo plazo (que vencen desde de 6 meses). Cuando los montos que se pagarán o se cobrarán en una moneda específica se espera que se compense uno al otro, no se lleva a cabo ninguna otra actividad de cobertura.
 
@@ -716,7 +751,7 @@ b) Proporcionar un retorno adecuado a los accionistas
 
 En esa misma línea, Envigado Fútbol Club S.A. determina sus requerimientos de capital con el fin de mantener una estructura general de financiamiento eficiente mientras evita un apalancamiento excesivo. Considera lo anterior toma en consideración los niveles de subordinación de las diferentes clases de deuda que se mantienen. Además, Envigado Fútbol Club S.A. administra la estructura de capital y se ajusta virtud de los cambios en las condiciones económicas y las características de riesgo de los activos involucrados. Para poder mantener o ajustar la estructura del capital, se ajusta el monto de los dividendos pagados a los accionistas, reducciones de capital, emisión de nuevas acciones o la venta de activos no productivos, entre otros.
 
---- pág. 26 ---
+--- pág. 27 ---
 
 ### Nota 6. Efectivo y equivalentes al efectivo
 
@@ -760,7 +795,7 @@ Las cuentas comerciales y otras cuentas por cobrar comprenden:
 
 (5) El saldo de deterioro acumulado al 31 de diciembre 2023 corresponde a cuentas por cobrar del exterior mayores a 91 días deterioradas.
 
---- pág. 27 ---
+--- pág. 28 ---
 
 El movimiento del deterioro de los deudores para los años 2023 y 2022 es el siguiente: El valor del deterioro del año fue el siguiente:
 
@@ -813,15 +848,42 @@ El detalle del movimiento de los seguros en el siguiente:
 
 El rubro de seguros incluye: Pólizas todo riesgo y seguros obligatorios para vehículos, seguro para las instalaciones de la compañía e póliza de accidentes escolares fuerzas básicas, los cuales se encuentran activos.
 
---- pág. 28 ---
+--- pág. 29 ---
 
 ### Nota 10. Propiedades, planta y equipo
 
-El saldo de los inventarios al 31 de diciembre de 2023 y 2022 incluye:
+El movimiento de las propiedades, planta y equipo para los años 2023 y 2022 es el siguiente:
 
-[Complex depreciation table with multiple asset categories, showing gross values, accumulated depreciation, and net values for both 2023 and 2022]
+| Concepto | Terrenos | Maquinaria y equipo | Equipo de oficina | Equipo de cómputo | Equipo Médico | Vehículos | Mejoras en propiedades ajenas | Total |
+|---|---|---|---|---|---|---|---|---|
+| Saldo al 1/1/2022 | 1.893.000.000 | 362.045.116 | 302.262.040 | 185.946.654 | 37.121.205 | 510.590.000 | 949.755.897 | 4.241.320.912 |
+| Compras | - | 26.361.318 | 13.234.543 | 21.604.448 | 16.779.000 | - | - | 77.979.309 |
+| Retiros | - | - | (3.474.850) | (5.345.034) | - | - | - | (8.819.884) |
+| Saldo al 31/12/2022 | 1.893.600.000 | 388.406.434 | 312.021.733 | 202.206.068 | 53.900.205 | 510.590.000 | 949.755.897 | 4.310.480.337 |
+| Compras | - | 42.959.000 | 83.535.891 | 97.727.980 | 88.655.000 | - | - | 316.296.503 |
+| Retiros | - | (8.215.320) | (26.322.608) | (39.282.168) | - | - | 949.755.897 | (1.023.575.993) |
+| Saldo al 31/12/2023 | 1.893.600.000 | 423.150.114 | 369.235.016 | 260.651.880 | 142.555.205 | 510.590.000 | - | 3.599.782.216 |
 
---- pág. 29 ---
+El movimiento de la depreciación acumulada de los años 2023 y 2022 es el siguiente:
+
+| Concepto | Maquinaria y equipo | Equipo de oficina | Equipo de cómputo | Equipo Médico | Vehículos | Mejoras en propiedades ajenas | Total |
+|---|---|---|---|---|---|---|---|
+| Saldo 1/1/2022 | 162.144.399 | 291.739.270 | 146.769.224 | 18.759.991 | 393.339.987 | 738.331.307 | 1.751.084.178 |
+| Depreciación del año | 57.680.788 | 12.091.096 | 22.856.282 | 4.545.349 | 66.999.996 | 194.837.544 | 359.011.055 |
+| Retiros | - | (3.474.850) | (419.287) | - | | | (3.894.137) |
+| Saldo al 31/12/2022 | 219.825.187 | 300.355.516 | 169.206.219 | 23.305.340 | 460.339.983 | 933.168.851 | 2.106.201.096 |
+| Depreciación del año | 63.474.465 | 60.086.153 | 26.987.551 | 16.587.160 | 50.250.017 | 16.587.051 | 233.972.397 |
+| Retiros | (1.668.975) | (3.418.630) | (11.668.496) | (5.038.608) | - | (949.755.901) | (968.131.980) |
+| Saldo al 31/12/2023 | 281.630.677 | 357.023.039 | 184.525.274 | 34.853.892 | 510.590.000 | - | 1.368.622.882 |
+
+El saldo neto de las propiedades, planta y equipo para los años 2023 y 2022 es el siguiente:
+
+| Costo Neto | Terrenos | Maquinaria y equipo | Equipo de oficina | Equipo de cómputo | Equipo Médico | Vehículos | Mejoras en propiedades ajenas | Total |
+|---|---|---|---|---|---|---|---|---|
+| Saldo al 31/12/2022 | 1.893.600.000 | 168.581.247 | 11.666.217 | 32.999.849 | 30.594.865 | 50.250.017 | 16.587.046 | 2.204.279.241 |
+| Saldo al 31/12/2023 | 1.893.600.000 | 141.519.437 | 12.211.978 | 76.126.606 | 107.701.313 | - | - | 2.231.159.334 |
+
+--- pág. 30 ---
 
 ### Nota 11. Activos intangibles
 
@@ -862,8 +924,6 @@ La amortización de los activos intangibles se reconoció en el estado de result
 | Gasto amortización administración | 114.680.105 | 72.523.917 |
 | Gasto amortización equipo profesional | - | 4.205.832 |
 | **Total** | **114.680.105** | **76.729.546** |
-
---- pág. 30 ---
 
 ### Nota 12. Obligaciones financieras
 
@@ -1204,6 +1264,8 @@ El capital accionario de Envigado Fútbol Club consta de 1.500.000 acciones ordi
 
 Todas las acciones son igualmente elegibles para recibir dividendos y reembolsos de capital y representan un voto en la asamblea de accionistas.
 
+--- pág. 39 ---
+
 #### 18.1. Reservas
 
 #### 18.1.1. Reserva Legal
@@ -1247,6 +1309,8 @@ Los ingresos de actividades ordinarias incluyen:
 
 1. Durante el año 2023 se jugaron 40 partidos de liga en la fase todos contra todos, (en 2022 40 fase todos contra todos y 6 por clasificación cuadrangulares) y 2 de Copa con público.
 
+--- pág. 40 ---
+
 2. Durante el 2023 se reportaron 4 transacciones por venta de derechos deportivos: 0 nacionales y 4 internacionales. (En 2022 se reportaron 2 transacciones: 0 nacionales y 2 internacionales).
 
 3. Durante el 2023 se recibieron 3 importes por contribución de solidaridad, (8 para el 2022).
@@ -1254,8 +1318,6 @@ Los ingresos de actividades ordinarias incluyen:
 4. Desde el 2022 se reactivó la actividad totalmente con Dimayor, superándose los efectos que representó el Covid-19.
 
 5. En el transcurso del año 2022 se suscribió contrato con el INDER Envigado para el suministro de boletería.
-
---- pág. 40 ---
 
 ### Nota 20. Gastos de administración y Gastos equipo de fútbol
 
