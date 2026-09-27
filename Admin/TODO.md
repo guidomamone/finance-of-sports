@@ -114,27 +114,6 @@ perdieron sino que se descartaron:
     tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
     pregunta más chica y puntual. Sin evaluar todavía.
 
-76. EVALUAR UNA HERRAMIENTA DE VERIFICACIÓN DE IDENTIDAD DE ENTIDAD, para el problema de homonimia
-    que se repitió ~5 VECES en la sesión del 2026-09-26 (`Admin/test-barridos.md`) y una vez casi
-    causa un error real de datos: San Martín (Tucumán) confundido con San Martín (San Juan);
-    Independiente confundido con Independiente Rivadavia; y el caso grave, un PDF real y bien
-    formateado de la Cooperativa Eléctrica Limitada de Norberto de la Riestra casi se carga como si
-    fuera del Club Deportivo Riestra, por coincidencia de apellido en el dominio. Pasó con Exa, con
-    búsqueda web genérica, y abriendo el PDF — no es un problema de una sola herramienta, es
-    estructural a cualquier búsqueda que matchee por nombre. Lo que serviría no es más búsqueda, es
-    VERIFICACIÓN: algo que confirme que una razón social encontrada es legalmente la misma entidad
-    que se busca, cruzando un identificador único (CUIT en Argentina, RUC en Perú, etc.), no solo el
-    nombre — categoría "business registry lookup"/verificación de entidad. Sin evaluar todavía, sin
-    cuenta creada.
-
-77. EVALUAR TRANSCRIPCIÓN DE VIDEO/AUDIO PARA CIFRAS FINANCIERAS QUE SOLO EXISTEN HABLADAS (mismo
-    origen que el 76). El caso concreto es Banfield: el 105° Ejercicio se presentó en una asamblea
-    transmitida/grabada, con cifras leídas en voz alta, pero nunca se publicó como PDF — y ningún
-    método de sourcing de hoy busca DENTRO de un video. Categoría de herramienta: transcripción de
-    audio/video con el texto resultante buscable (podría alcanzar con aprovechar los transcripts
-    automáticos que ya genera YouTube, sin necesidad de una API de pago nueva — evaluar esa opción
-    gratis primero). Sin evaluar todavía.
-
 75. EVALUAR FIRECRAWL PARA LOS CASOS BLOQUEADOS POR TOOLING (no por falta de documento) — pedido de
     Guido, 2026-09-26, después del A/B test de Haiku/Exa del mismo día (`Admin/test-barridos.md`).
     Resuelve un problema DISTINTO al de Exa: Exa ayuda a ENCONTRAR una página que no se sabía que

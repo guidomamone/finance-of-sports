@@ -15,6 +15,32 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 270 — to-dos 76 y 77 evaluados: homonimia sin herramienta limpia, video sí rinde gratis
+
+- **To-do 76 (verificación de entidad/homonimia): sin solución automatizable.** Los 3 candidatos
+  reales están bloqueados por diseño — OpenCorporates exige token pago desde la primera consulta
+  (planes desde USD 300/mes), cuitonline.com está detrás de un challenge de Cloudflare, y el propio
+  ARCA/AFIP oficial (gratis, la fuente correcta) pide resolver un captcha en su flujo público — nada
+  de esto se automatiza sin violar la regla de no resolver CAPTCHAs. Conclusión: paso manual, no
+  herramienta — leer el CUIT del documento y confirmarlo a mano contra ARCA cuando haya sospecha de
+  homonimia.
+- **To-do 77 (transcripción de video): SÍ rinde, gratis, sin API paga.** El video puntual de Banfield
+  (105° Ejercicio) sigue sin confirmarse — un `WebSearch` con ese título trae un falso positivo real
+  (Cooperativa Agrícola La Vencedora), mismo hallazgo que ya había descartado la sesión anterior.
+  Prueba de concepto con OTRO club (Independiente, asamblea 24/25 en su canal oficial): la
+  transcripción automática de YouTube capturó el Estado de Situación Patrimonial completo, cifras
+  que coinciden con una nota de prensa ya anotada en `fuentes/Argentina/Independiente.md` — dos
+  fuentes independientes confirmando el mismo número. Herramienta: `yt-dlp` con
+  `--extractor-args "youtube:player_client=android"` (esquiva un bloqueo nuevo de YouTube),
+  encapsulado en `tools/video-transcript-fetch.sh`. Bonus: el Ejercicio 121 de Independiente (el que
+  falta cargar) ya está como columna comparativa en un PDF que YA tenemos descargado
+  (`estados-contables-2025-2026.pdf`) — pendiente de una sesión de onboarding aparte.
+- **Decisión de Guido**: to-do 76 cerrado sin agregar nada a `club-sourcing/SKILL.md` (queda solo
+  como criterio informal, sin paso formalizado). To-do 77 cerrado como manual/puntual, con un
+  alcance más acotado todavía que Reddit/X: `tools/video-transcript-fetch.sh` se corre SOLO cuando
+  el sourcing normal ya dejó anotado un video como lead (no se sale a buscar videos de forma
+  proactiva en cada club). Ambos to-dos borrados de `Admin/TODO.md`.
+
 ## Versión 269 — to-do 80: X/Twitter sí rinde como sourcing en Argentina, pagando un revendedor barato
 
 - Investigado si X tenía un atajo gratis tipo Arctic Shift/PullPush (Reddit, to-do 81): no lo tiene,
