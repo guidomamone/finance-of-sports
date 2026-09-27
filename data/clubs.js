@@ -78,6 +78,13 @@ const clubs = {
   velez:  { id:'velez',  name:'Club Atlético Vélez Sarsfield', displayName:'Vélez Sarsfield', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0061A8' },
   instituto: { id:'instituto', name:'Instituto Atlético Central Córdoba', displayName:'Instituto ACC', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#DF040B' },
   rosariocentral: { id:'rosariocentral', name:'Club Atlético Rosario Central', displayName:'Rosario Central', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0A3D72' },
+  // Almagro: ejercicio económico 1°/11 al 31/10 (los 6 balances cargados cierran todos el
+  // 31/10). Club nuevo, id con sufijo de país ('almagro-ar') por la convención de la
+  // Versión 129 (ver CONVENCIONES.md). brandColor:null a propósito: Wikipedia confirma que
+  // el club es TRICOLOR azul/blanco/negro (apodo "Tricolor"), sin un color que predomine
+  // declarado por el club ni fuente de hex confiable — ver comentario de cabecera de
+  // data/almagro-ar-data.js.
+  'almagro-ar': { id:'almagro-ar', name:'Club Almagro', displayName:'Almagro', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'11-01', sport:'futbol', brandColor:null },
   independiente: { id:'independiente', name:'Club Atlético Independiente', displayName:'Independiente', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#EC1C24' },
   argentinosjuniors: { id:'argentinosjuniors', name:'Asociación Atlética Argentinos Juniors', displayName:'Argentinos Juniors', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E32021' },
   estudianteslp: { id:'estudianteslp', name:'Club Estudiantes de La Plata', displayName:'Estudiantes de La Plata', country:'AR', reportingCurrency:'ARS', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E41815' },

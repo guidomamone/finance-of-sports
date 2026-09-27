@@ -15,6 +15,42 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 253 — Club Almagro (Argentina, Primera Nacional): club nuevo, 6 ejercicios reales (2018-2023)
+
+- `data/almagro-ar-data.js` nuevo: 6 balances auditados reales (Ejercicios 80-85, cierre 31/10 de
+  cada año 2018-2023), motor genérico. Los 6 cierran exacto contra sus propios totales impresos.
+  `clubId` con sufijo de país (`almagro-ar`, convención de la Versión 129 para clubes nuevos).
+- Trampa real del propio documento (2021-2023): "RESULTADO DEL EJERCICIO" es el resultado ANTES
+  del resultado financiero, "RESULTADO FINAL" es DESPUÉS — se cargó siempre el FINAL como
+  `officialPAT`. El caso extremo es 2023: +69,7M de resultado operativo se revierte a -3,2M de
+  PAT final una vez sumado el resultado financiero (-72,9M).
+- `data/currency-map.js`: 6 entradas nuevas a `FX_CLOSE` (`ARS@2018-10-31` a `ARS@2023-10-31`,
+  dólar mayorista BCRA de cierre, serie Rava Bursátil) — no existían cierres de 31/10 previos.
+- `data/clubs.js`: entrada de Almagro (`brandColor:null` — Wikipedia confirma tricolor
+  azul/blanco/negro, no el blanco/violeta asumido al empezar la sesión, sin color que predomine).
+- `data/club-leagues/ar.js`: fila de Almagro, Primera Nacional los 6 ejercicios.
+- `fuentes/Argentina/Almagro.md` + `fuentes/_indice/Argentina.md`: marcados como cargados.
+- Regenerados los 3 generadores (`generate-club-index.js`, `generate-fuentes-page.js`,
+  `generate-rankings.js`) y `ASSET_V` subido a 244.
+- 2 preguntas nuevas en `Admin/dudas-por-club.md` (categorización de "Asignacion Extraordinaria
+  A.F.A." y "Gastos de alimentos", ninguna cubierta al 100% por `club-data-mapping/SKILL.md`).
+
+## Versión 252 — dos herramientas nuevas en `tools/` para el gotcha de Wayback CDX (to-dos 78 y 79)
+
+- `tools/wayback-cdx.mjs`: cliente de la CDX API de Wayback Machine con paginación real
+  (`resumeKey`, no solo la primera página de 1000 filas) y reintento con backoff exponencial ante
+  504/502/503/429 o fallo de red. Si todos los reintentos fallan, tira una excepción — nunca
+  devuelve `[]` en ese caso, para que no se confunda "la consulta falló" con "consulté y no hay
+  nada" (el bug real de la sesión del 2026-09-26, un 504 leído como "dominio sin snapshots").
+  Exporta `queryCdx()` para usar desde otro script y también corre como CLI.
+- `tools/wayback-verify-download.mjs`: descarga una URL de Wayback (con `id_`/`if_`) y verifica
+  integridad antes de guardarla — tamaño exacto de 1.048.576 bytes (la firma conocida de
+  truncamiento en silencio), `pdfinfo` sin error, y `%%EOF` presente. Si algo falla, guarda el
+  archivo con sufijo `.SOSPECHOSO-truncado` en vez de dejarlo pasar como si fuera el documento
+  completo.
+- Validado con un PDF de prueba armado a mano (bueno y truncado a exactamente 1.048.576 bytes) y
+  contra dominios reales (`racingclub.com.ar`, `bocajuniors.com.ar`, `chacaforever.com.ar`).
+
 ## Versión 251 — `COMO-CORRE-EL-PROYECTO.html`: CSS de ancho de texto, prosa sin versionado, y el flujo de terminal completo
 
 - Pedido de Guido: el CSS angostaba todo el texto a 68ch dejando la mitad de la página en blanco

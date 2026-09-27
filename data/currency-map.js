@@ -238,6 +238,17 @@ const FX_CLOSE = {
   // Sesión 2026-09-23 (onboarding de Gimnasia y Esgrima LP): el presupuesto 2025-26 (año standalone,
   // sin balance real todavía) no declara TC propio y no tiene un balance pareado del que tomarlo.
   'ARS@2026-06-30': { fx: 1482,    source: 'market_close', label: 'Dólar mayorista BCRA al 30/6/2026' },
+  // Sesión 2026-09-27 (onboarding de Almagro, cierre de ejercicio 31/10 los 6 años, ninguno de los
+  // 6 balances declara TC propio — no tienen Anexo de moneda extranjera): serie de Rava Bursátil,
+  // mismo criterio/fuente que el resto de las entradas de mercado de esta tabla. 31/10/2020 y
+  // 31/10/2021 cayeron sábado y domingo respectivamente, así que el valor es el de la última rueda
+  // hábil anterior (viernes).
+  'ARS@2018-10-31': { fx: 35.95,   source: 'market_close', label: 'Dólar mayorista BCRA al 31/10/2018' },
+  'ARS@2019-10-31': { fx: 59.67,   source: 'market_close', label: 'Dólar mayorista BCRA al 31/10/2019' },
+  'ARS@2020-10-31': { fx: 78.32,   source: 'market_close', label: 'Dólar mayorista BCRA, última rueda hábil antes del cierre (viernes 30/10/2020, 31/10 cayó sábado)' },
+  'ARS@2021-10-31': { fx: 99.72,   source: 'market_close', label: 'Dólar mayorista BCRA, última rueda hábil antes del cierre (viernes 29/10/2021, 30 y 31/10 cayeron sábado y domingo)' },
+  'ARS@2022-10-31': { fx: 156.91,  source: 'market_close', label: 'Dólar mayorista BCRA al 31/10/2022' },
+  'ARS@2023-10-31': { fx: 350.00,  source: 'market_close', label: 'Dólar mayorista BCRA al 31/10/2023' },
   // Sesión 2026-09-25 (onboarding de Chapecoense 2017 y Juventude 2020, tanda de 20 transcripts
   // al azar): PTAX consultado vía la API Olinda del propio Banco Central do Brasil.
   'BRL@2017-12-31': { fx: 3.3080,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2017 (último día hábil del año)' },

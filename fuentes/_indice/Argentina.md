@@ -11,7 +11,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Agropecuario (Carlos Casares)](<../Argentina/Agropecuario (Carlos Casares).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Aldosivi](../Argentina/Aldosivi.md) — sin PDF; ejercicio 2024 confirmado por prensa (asamblea jul-2025); portal de socios con login detectado (`portal.ourclub.io/aldosivi`) — candidato a mail — Último chequeo: 2026-09-26
 - [All Boys](../Argentina/All Boys.md) — sin PDFs; cambio de comisión directiva (oct-2025), sin confirmación de prensa de balance todavía — Último chequeo: 2026-09-26
-- [Almagro](../Argentina/Almagro.md) — **6 balances auditados reales descargados** (Ejercicios 80-85, 2018-2023) vía Wayback Machine — el chequeo del 2026-09-22 decía "0 PDFs archivados", error de truncamiento ya corregido; candidato directo a onboarding — Último chequeo: 2026-09-26
+- [Almagro](../Argentina/Almagro.md) — **cargado, 6 ejercicios reales (2018-2023, Ejercicios 80-85)** vía Wayback Machine — Último chequeo: 2026-09-27
 - [Almirante Brown](../Argentina/Almirante Brown.md) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Argentinos Juniors](../Argentina/Argentinos Juniors.md) — cargado, 5 ejercicios reales (2015-2019); ejercicios 2019-20 y 2024-25 confirmados, imágenes en i.ibb.co pendientes de descarga con Browser pane — Último chequeo: 2026-09-26
 - [Atlanta](../Argentina/Atlanta.md) — sin PDF; existen varios ejercicios confirmados en total (2013-2025) sin publicar nunca, 4 con Drive de compartir revocado — candidato a mail reforzado — Último chequeo: 2026-09-26

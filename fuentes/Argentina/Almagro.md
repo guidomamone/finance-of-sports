@@ -12,10 +12,15 @@ Guido, no intentar) — 2026-09-26
   al 31/10/2022), `balance-2023.pdf` (Ejercicio 85, al 31/10/2023). Verificados visualmente:
   "BALANCE GENERAL" con Contador Público firmante (Dr. Francisco Lofedote, Mat. T130 F48
   C.P.C.E.C.B.A.), anexos comparativos con el ejercicio anterior — son estados contables reales, no
-  memorias narrativas. `memoria-y-balance-2020.pdf` tiene capa de texto (21 págs); los demás son
-  scans sin OCR (15-18 págs c/u) — van a necesitar Tesseract cuando se transcriban (ver CLAUDE.md
-  sección de PDFs escaneados). NADA de esto está cargado al sitio ni transcripto todavía — es
-  sourcing puro, próximo paso es `club-data-mapping` + transcripción.
+  memorias narrativas. `memoria-y-balance-2020.pdf` tiene capa de texto nativa; los demás 5 se
+  transcribieron con Mistral OCR (marca "ESCANEADO..." en cada `.md`, ya verificados a mano y
+  removible).
+- **LOS 6 EJERCICIOS YA ESTÁN CARGADOS AL SITIO** (2026-09-27, primer club nuevo desde Instituto,
+  6to del motor genérico): los 6 cierran EXACTO contra sus propios totales impresos, incluida la
+  trampa de "RESULTADO DEL EJERCICIO" (operativo) vs. "RESULTADO FINAL" (post resultado financiero,
+  el que se cargó como PAT) en 2021/2022/2023 — ver comentario de cabecera de
+  `data/almagro-data.js` para el detalle completo de categorización. Presidencia: Jorge Julián
+  Romeo 2018-2021, Julio Osvaldo Cucchi 2022-2023 (nóminas impresas en cada balance).
 - Sitio oficial: almagro.club (redirige a clubalmagro.com.ar) — sin sección institucional navegable
   en el sitio VIVO hoy (confirmado de nuevo 2026-09-26: wp-json/wp/v2/search da 404, no hay
   sitemap.xml). Los 6 balances de arriba NO están linkeados desde ninguna página viva actual — se
@@ -25,6 +30,14 @@ Guido, no intentar) — 2026-09-26
   lote de balances atrasados (patrón ya visto dos veces: subieron 2016-2020 juntos en 2021, y
   2021-2023 juntos en 2024).
 - Contacto: prensa@almagro.club, tel. 011 4864-5226, sede Medrano 522, CABA (L-V 8-17h).
+- Color de marca: `brandColor:null` — Wikipedia (es.wikipedia.org/wiki/Club_Almagro, infobox +
+  texto: "fueron adoptados... los colores azul, blanco y negro y con ello adopta el apodo de
+  tricolor") confirma que el club es TRICOLOR azul/blanco/negro, apodo "Tricolor" — NO
+  blanco/violeta como se asumió al empezar el onboarding. Sin un orden de predominancia declarado
+  por el club/liga entre los 3 colores, sin `theme-color` en el sitio oficial (no responde) y sin
+  hex confiable en agregadores (footylogos no lista a Almagro en la tabla de Primera Nacional,
+  teamcolorcodes/logotyp.us no tienen el club), se dejó `null` como resultado cerrado en vez de
+  forzar un color — verificado 2026-09-27.
 
 ## Chequeo 2026-09-26 — 6 balances encontrados vía Wayback CDX (corrige el chequeo de abajo)
 

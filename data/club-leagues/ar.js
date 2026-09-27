@@ -30,6 +30,9 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Primera (el descenso se definió al terminar el torneo 2016, en mayo), así que ese ejercicio es
   // Primera aunque al 30/6/2016 el club ya estuviera descendido para el torneo siguiente. Leerlo al
   // revés pondría como "B Nacional" un año cuyos ingresos son 100% de Primera.
+  // Confirmado por búsqueda web (2026-09-27): Almagro jugó Primera Nacional (ex Primera B
+  // Nacional) de forma corrida en los 6 ejercicios cargados, sin ascenso ni descenso en el medio.
+  'almagro-ar': { 2018: 'ar-primeranacional', 2019: 'ar-primeranacional', 2020: 'ar-primeranacional', 2021: 'ar-primeranacional', 2022: 'ar-primeranacional', 2023: 'ar-primeranacional' },
   argentinosjuniors: { 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primeranacional', 2018: 'ar-primera', 2019: 'ar-primera' },
   // El único de los 11 que cambió de categoría en el período cargado: descendió al terminar el
   // torneo de transición 2016 y jugó la B Nacional 2016-17, que ganó (terminó el 30/7/2017, o sea

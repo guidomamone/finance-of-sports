@@ -124,10 +124,6 @@ perdieron sino que se descartaron:
 
 72. SEGUIMIENTOS DEL BARRIDO DE 40 CLUBES TRADICIONALES DE ARGENTINA (Versión 246, 2026-09-26,
     7 subagentes en paralelo — detalle completo club por club en `fuentes/Argentina/<Club>.md`):
-    - **Almagro, listo para onboarding**: 6 balances auditados reales (Ejercicios 80-85, 2018-2023)
-      ya descargados en `Clubes/Argentina/Almagro/`, club NUEVO para el sitio. Falta transcribir a
-      `.md` (ver CLAUDE.md, "Cada PDF nuevo") y onboardear siguiendo `club-or-year-onboarding`
-      normalmente.
     - **3 pendientes que necesitan Browser pane real** (los subagentes de esta sesión lo evitaron a
       propósito, para no pisarse entre los 7 corriendo en paralelo sobre el mismo pane): Chacarita
       Juniors y Newell's Old Boys, ambos bloqueados por un WAF de Vercel a `curl`/`WebFetch` — no
@@ -157,24 +153,6 @@ perdieron sino que se descartaron:
     audio/video con el texto resultante buscable (podría alcanzar con aprovechar los transcripts
     automáticos que ya genera YouTube, sin necesidad de una API de pago nueva — evaluar esa opción
     gratis primero). Sin evaluar todavía.
-
-78. ARREGLAR EL CLIENTE DE WAYBACK CDX: SE CAE EN SILENCIO CON DOMINIOS GRANDES (no es evaluación de
-    herramienta paga, es un fix de `tools/`). Pasó 3 veces en la sesión del 2026-09-26: la CDX API
-    devolvió 504 Gateway Timeout para `bocajuniors.com.ar` (100k+ URLs archivadas) y para
-    `racingclub.com.ar`/`riverplate.com`, y en un caso (un subagente Haiku) el 504 se interpretó como
-    "0 documentos, dominio no indexado" — un falso negativo con la misma confianza que un resultado
-    real. Falta: un script/función reusable en `tools/` que pagine con `resumeKey`, reintente con
-    backoff ante 504/5xx, y NUNCA reporte "0 resultados" sin distinguir explícitamente entre "consulté
-    y no hay nada" y "la consulta falló". Hoy cada sesión reinventa esto a mano con `curl` suelto.
-
-79. CHEQUEO AUTOMÁTICO DE INTEGRIDAD POST-DESCARGA PARA PDFS DE WAYBACK (no es evaluación de
-    herramienta paga, es un fix de `tools/`). El gotcha de la sesión del 2026-09-26 (una captura de
-    Wayback puede truncarse a exactamente 1.048.576 bytes de forma permanente, sin relación con el
-    `length` que la propia CDX API reporta, ver `club-sourcing/SKILL.md` sección 0.1) hoy se detecta
-    a mano corriendo `pdfinfo`/buscando `%%EOF` — depende de que la sesión se acuerde de chequearlo.
-    Falta: un script en `tools/` que corra automático después de cualquier descarga de Wayback
-    (`id_`/`if_`) y aborte/avise si el archivo no llega a 1.048.576 bytes exactos O si `pdfinfo`
-    falla, en vez de dejar el archivo corrupto silenciosamente en `Clubes/<País>/<Club>/`.
 
 75. EVALUAR FIRECRAWL PARA LOS CASOS BLOQUEADOS POR TOOLING (no por falta de documento) — pedido de
     Guido, 2026-09-26, después del A/B test de Haiku/Exa del mismo día (`Admin/test-barridos.md`).

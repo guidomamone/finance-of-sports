@@ -1836,3 +1836,18 @@ ese ejercicio: nunca se llevó a asamblea, se saltó a propósito, o se va a tra
 en algún momento no anunciado? Ver `fuentes/Argentina/Instituto.md`, Chequeo 2026-09-26. A quién
 preguntarle: WhatsApp 3512 209813 (L-V 9-21hs) o asamblea@institutoacc.com.ar (mail habilitado
 para consultas de la asamblea, según la propia convocatoria).
+
+## Almagro — onboarding, sesión 2026-09-27
+
+**"Asignacion Extraordinaria A.F.A" (Ejercicio 2021, Anexo III, $1.255.158,98)**: el rubro no aclara
+su origen — a diferencia de "Ingreso A.F.A: dcho tv" (que el propio rótulo liga a derechos de TV),
+este solo dice "extraordinaria". Se cargó como `other_income` en vez de `broadcasting` (judgment
+call, no cubierto por el skill de categorización) por no poder confirmar si es un reparto de TV
+excepcional o un aporte de otro tipo (ej. alivio post-pandemia). Ver comentario de cabecera de
+`data/almagro-ar-data.js`. A quién preguntarle: prensa@almagro.club.
+
+**"Gastos de alimentos" (Ejercicio 2018, Anexo V, $3.911.226,61)**: costo de comida del plantel, sin
+precedente explícito en `club-data-mapping/SKILL.md`. Se agrupó con `wages_squad` siguiendo el
+precedente de Racing (sección 13 del skill: costos no salariales del plantel bundle-ados con
+salarios cuando no hay categoría más específica) — confirmar si es el criterio correcto o si
+debería ir a `match_organisation_expense`/`other_expenses`.

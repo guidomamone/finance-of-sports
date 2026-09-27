@@ -1,12 +1,3 @@
-> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver Admin/test-costo-transcripcion.md).** El único
-> error de calidad real que encontramos en el test de comparación fue justo en un documento así: en
-> celdas dañadas/tapadas/rotadas, Mistral no avisa que no está seguro -- devuelve un número con la
-> misma confianza que uno bien leído. Antes de usar este archivo para cargar datos al sitio,
-> verificá a mano contra el PDF cualquier cifra que use (no alcanza con que el tie-out cierre, un
-> total mal leído puede colar igual si no hay una fuente independiente para comparar). Borrar esta
-> nota una vez verificado.
-
-
 --- pág. 1 ---
 
 # CLUB ALMAGRO
