@@ -1,3 +1,10 @@
+**Ángulos**: sitio oficial: agotado (sitio Next.js/SPA sin capa WordPress, menú completo revisado:
+inicio, disciplinas×9, historia, predio, estadio, socios, noticias, arenaceleste, contacto — ninguna
+sección institucional/transparencia/balance) · Wayback CDX: agotado (0 URLs archivadas NUNCA en todo
+el dominio `aaestudiantesriocuarto.com` — dominio muy nuevo) · búsqueda web: agotado, con hallazgo
+de prensa que confirma el documento (ver Chequeo) · regulador/país: no aplica · barrido: 1 (Sonnet)
+— 2026-09-26
+
 # Estudiantes de Río Cuarto
 
 - Sin PDFs oficiales encontrados, sin sección institucional de transparencia/balances. Sitio oficial:
@@ -24,3 +31,24 @@ desde una página viva.
 
 - **Resultado: 0 documentos.** Ni el sitio vivo ni el índice de Wayback Machine del dominio tienen un PDF, Drive o visor embebido con balance/memoria/estados contables.
 - Último chequeo: 2026-09-22.
+
+## Chequeo 2026-09-26 — escalera completa (barrido 1, Sonnet), documento confirmado por prensa, candidato a mail
+
+- **Familia 1 (sitio oficial)**: sitio nuevo hecho en Next.js (no WordPress: `wp-json` redirige a la
+  home, no hay endpoint de búsqueda). Se revisó el menú completo — no existe ninguna sección
+  institucional/transparencia/balances, solo deportiva (disciplinas, plantel, estadio) y comercial
+  (socios vía portal externo `accessfan.ar`, login).
+- **Familia 3 (Wayback CDX, dominio completo)**: re-confirmado, **0 URLs archivadas jamás** para
+  `aaestudiantesriocuarto.com` (dominio recién registrado, consistente con el ascenso reciente del
+  club).
+- **Familia 4/5 (búsqueda web + prensa)**: [puntal.com.ar](https://www.puntal.com.ar/estudiantes-rio-cuarto/estudiantes-llevo-cabo-su-asamblea-extraordinaria-y-renovo-autoridades-n208497)
+  confirma que el club realizó una Asamblea Extraordinaria (nota publicada 28/12/2023) donde "los
+  socios aprobaron por unanimidad el balance y la memoria correspondientes a los ejercicios cerrados
+  al 30 de septiembre del 2023", con informe del órgano de fiscalización y estados contables
+  presentados, en el estadio de básquet Jorge Artundo. Alicio Dagatti fue reelecto presidente
+  (5º mandato). El artículo no menciona cifras ni adjunta el documento.
+- **Conclusión**: documento CONFIRMADO que existe (ejercicio cerrado 30/09/2023, con informe de
+  fiscalización) pero sin ningún canal digital — candidato a mail (`club-outreach`), no dead-end sin
+  señal. Sin email visible en el sitio; contacto vía Instagram @estudiantesrio4 / X @EstudiantesRio4
+  o el domicilio social (ver arriba).
+- Último chequeo: 2026-09-26.

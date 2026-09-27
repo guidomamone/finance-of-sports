@@ -46,6 +46,35 @@ regulador/país: no aplica — 2026-09-26
   Argentina"), 1er color, exacto, verificado 2026-09-21. NO sale del sitio oficial, que declara el
   rojo default de WordPress.
 
+## Chequeo 2026-09-26 (2) — barrido de Wayback CDX de dominio completo, pese a estar "ya cargado": 5 documentos nuevos
+
+Pedido de Guido: repetir sobre los clubes "ya bien cubiertos" la misma técnica que destrabó 4
+documentos nuevos de Boca (Wayback CDX sobre el DOMINIO COMPLETO, no solo la URL puntual que se
+venía mirando) — la lección es que "ya está muy sourceado" no es motivo para saltear esta familia.
+
+- **Balance-114.pdf RECUPERADO COMPLETO** (19 págs, `Clubes/Argentina/Union/balance-114-real.pdf`) —
+  el intento anterior (arriba, "NO se pudo descargar completo... 1.048.576 bytes, archivo corrupto
+  descartado") esta vez sí funcionó al pedir el snapshot `20220423112920` en modo `id_`: bajó
+  13.456.091 bytes, `%%EOF` presente, `pdfinfo` sin errores. Es el Balance real del Ejercicio N°114
+  (2019-20), separado de la Memoria narrativa ya conocida — mismo patrón "balance en archivo aparte
+  de la memoria" que se repite en varios clubes de este proyecto. Pendiente de OCR (es escaneado, sin
+  capa de texto) antes de poder cargarlo.
+- **EECC 2018 nuevo** (17 págs, `eecc-2018.pdf`) — Estados Contables del ejercicio 2018, con capa de
+  texto, encontrado en `wp-content/uploads/2019/08/EECC_30533731917_2018.pdf`.
+- **3 presupuestos 2022 nuevos**, con desglose mensual completo (ene-dic): `presupuesto-economico-2022.pdf`,
+  `presupuesto-financiero-2022.pdf`, `presupuesto-inversiones-2022.pdf` — de
+  `wp-content/uploads/2022/01/`.
+- **Intentado y DESCARTADO (roto, no recuperable con las herramientas de esta sesión)**: la misma
+  carpeta `wp-content/uploads/2019/08/` tiene EECC de 2010 a 2017 más 2021, y un Presupuesto
+  2019-2020 — los 10 archivos, en TODOS los timestamps disponibles en Wayback (solo hay uno por URL,
+  no hay otro para reintentar), se cortan en exactamente 1.048.576 bytes y no abren (`pdfinfo`:
+  "Invalid XRef entry", "Couldn't read xref table"). A diferencia del caso de Almagro (donde SÍ había
+  un segundo timestamp sano), acá no hay ningún otro snapshot de estas URLs puntuales — el corte
+  parece ser un límite duro de esa captura específica, no algo resoluble reintentando. Quedan
+  pendientes, sin descartar que algún día Wayback sirva un snapshot distinto.
+- Todo esto sigue esperando decisión de Guido sobre OCR (Tesseract+Sonnet vs. Gemini) antes de
+  cargarse al sitio — no se OCReó nada en esta sesión.
+
 ## Chequeo 2026-09-26 — sitio oficial de vuelta online, sin Ejercicio N°120 todavía
 
 Sesión de sourcing puro (5 clubes del interior). Tarea liviana: chequear si ya existe un Ejercicio

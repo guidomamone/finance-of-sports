@@ -1,0 +1,19 @@
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf","pata":"haiku","totalTokens":70304,"toolUses":16,"elapsedMs":77192}
+{"pdf":"Clubes/Colombia/Alianza FC/estados-financieros-2016.pdf","pata":"haiku","totalTokens":77320,"toolUses":3,"elapsedMs":81536}
+{"pdf":"Clubes/Colombia/Llaneros/estados-financieros-2022.pdf","pata":"haiku","totalTokens":76619,"toolUses":18,"elapsedMs":83595}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2022.pdf","pata":"haiku","totalTokens":75991,"toolUses":20,"elapsedMs":90272}
+{"pdf":"Clubes/Colombia/Alianza FC/estados-financieros-2019.pdf","pata":"haiku","totalTokens":78912,"toolUses":10,"elapsedMs":136373}
+{"pdf":"Clubes/Colombia/Alianza FC/estados-financieros-2024.pdf","pata":"haiku","totalTokens":88825,"toolUses":7,"elapsedMs":142445}
+{"pdf":"Clubes/Colombia/Aguilas Doradas/estados-financieros-2017.pdf","pata":"sonnet","totalTokens":114943,"toolUses":19,"elapsedMs":165911,"nota":"PDF resultó ser escaneado (sin capa de texto), no como el resto del cluster -- requirio OCR+verificacion visual, no comparable 1:1"}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.pdf","pata":"haiku","totalTokens":96899,"toolUses":5,"elapsedMs":174713}
+{"pdf":"Clubes/Colombia/Alianza FC/estados-financieros-2022.pdf","pata":"sonnet","totalTokens":148099,"toolUses":17,"elapsedMs":244749}
+{"pdf":"Clubes/Colombia/Llaneros/estados-financieros-2017.pdf","pata":"haiku","totalTokens":79673,"toolUses":22,"elapsedMs":271074,"nota":"el propio subagente admite que la estructura de tablas quedo 'desintegrada' por el OCR en paginas 6-36, sin verificacion visual contra el PDF -- candidato fuerte a FALLAR el chequeo de calidad"}
+{"pdf":"Clubes/Colombia/Envigado/estados-financieros-2024.pdf","pata":"haiku","totalTokens":122275,"toolUses":5,"elapsedMs":342902}
+{"pdf":"Clubes/Colombia/Llaneros/estados-financieros-2019.pdf","pata":"sonnet","totalTokens":193068,"toolUses":30,"elapsedMs":440180}
+{"pdf":"Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf","pata":"sonnet","totalTokens":172096,"toolUses":48,"elapsedMs":465054}
+{"pdf":"Clubes/Colombia/Aguilas Doradas/estados-financieros-2025.pdf","pata":"sonnet","totalTokens":196750,"toolUses":49,"elapsedMs":497162,"nota":"otro PDF escaneado de Aguilas Doradas (sin capa de texto), igual que el 2017 -- club sistematicamente escaneado, no representativo del resto del cluster"}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2023.pdf","pata":"sonnet","totalTokens":200232,"toolUses":33,"elapsedMs":517497}
+{"pdf":"Clubes/Colombia/Envigado/estados-financieros-2016.pdf","pata":"sonnet","totalTokens":205805,"toolUses":22,"elapsedMs":527743}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf","pata":"sonnet","totalTokens":199383,"toolUses":23,"elapsedMs":540820}
+{"pdf":"Clubes/Colombia/La Equidad/estados-financieros-2023.pdf","pata":"sonnet","totalTokens":221640,"toolUses":28,"elapsedMs":621498}
+{"pdf":"Clubes/Colombia/Envigado/estados-financieros-2023.pdf","pata":"haiku","totalTokens":144318,"toolUses":6,"elapsedMs":690019,"nota":"el reporte final del subagente vino en ingles (no espanol), y con muy pocas tool_uses (6) para 46 paginas -- posible senal de menor diligencia, chequear con cuidado en la verificacion"}

@@ -1,5 +1,13 @@
 # Agropecuario (Carlos Casares)
 
+**Ángulos**: sitio oficial: agotado (mismo template genérico sin sección institucional ya
+confirmado en el barrido 2026-09-22; esta sesión sumó `wp-json/wp/v2/search` con 5 términos —
+`balance`, `memoria y balance`, `contable`, `asamblea`, `estados contables` — 0 resultados) ·
+Wayback CDX: agotado (0 PDFs archivados en todo el dominio, reconfirmado) · búsqueda web: agotado
+(sin resultados, ninguna cobertura de prensa local ni de asamblea; el club SÍ existe como entidad
+real — "Club Agropecuario Argentino Asociación Civil", CUIT 30-71214816-7 — pero sin rastro de
+balance publicado) · regulador/país: no aplica · barrido: 1 (Haiku+Sonnet) — 2026-09-26
+
 - Sin PDFs oficiales encontrados. Sitio oficial: clubagropecuario.com — mismo template genérico que
   Godoy Cruz/Chacarita/Deportivo Madryn (solo fútbol: jugadores, calendario, historia, estadio), sin
   ninguna sección institucional, de socios ni de transparencia. Club joven (fundado 2011 por el
@@ -26,3 +34,26 @@ desde una página viva.
 
 - **Resultado: 0 documentos.** Ni el sitio vivo ni el índice de Wayback Machine del dominio tienen un PDF, Drive o visor embebido con balance/memoria/estados contables.
 - Último chequeo: 2026-09-22.
+
+## Chequeo 2026-09-26 — barrido 1 (Haiku+Sonnet), verificación
+
+Un subagente Haiku hizo el descubrimiento mecánico (familia 1 + familia 3) y reportó 0 PDFs, sitio
+"enfocado en fútbol sin sección institucional/financiera". Esta sesión (Sonnet) verificó y completó:
+
+- **CDX de Wayback reconfirmado por `curl` directo**: 0 filas para `clubagropecuario.com` con
+  `matchType=domain`. Coincide con Haiku.
+- **`wp-json/wp/v2/search`** con 5 términos: 0 resultados — confirma independientemente lo que Haiku
+  reportó por inspección del sitio (el reporte de Haiku no mencionó haber probado la API de
+  WordPress, solo el crawl de HTML).
+- Búsqueda web dirigida (`"Agropecuario" "Carlos Casares" club asamblea balance`): sin resultados de
+  asamblea o balance; sí confirma que el club es una entidad real y activa (CUIT en registro público,
+  Copa Argentina, prensa local `casareshoy.com.ar` con notas deportivas) pero sin ninguna mención de
+  memoria/balance/asamblea societaria en ningún resultado.
+
+**Clasificación (criterio 0.3): dead-end real, 0 señal de que el documento exista.** Club joven
+(fundado 2011), estructura de socios chica, sin sección institucional en el sitio, sin cobertura de
+prensa de ningún tipo de asamblea o balance, CDX en 0. Las 3 familias aplicables (sitio oficial,
+Wayback CDX, búsqueda web; el regulador/país no aplica) están agotadas a fondo. Próximo club, sin
+mail.
+
+- Último chequeo: 2026-09-26.

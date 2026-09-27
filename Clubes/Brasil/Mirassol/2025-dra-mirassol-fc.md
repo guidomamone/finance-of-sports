@@ -1,0 +1,77 @@
+--- pág. 1 ---
+
+# MIRASSOL FUTEBOL CLUBE
+
+MIRASSOL FUTEBOL CLUBE
+
+DRA - Demonstração dos Resultados Abrangentes
+
+Período: 01/01/2025 a 31/12/2025
+
+(Em milhares de Reais)
+
+2025
+
+Lucro Líquido do Exercício
+
+67.711
+
+Outros Resultados Abrangentes:
+
+-
+
+Resultado Abrangente Total do Período
+
+67.711
+
+MIRASSOL FUTEBOL
+
+CLUBE:51352862000
+
+114
+
+Assinado de forma digital por
+
+MIRASSOL FUTEBOL
+
+CLUBE:51352862000114
+
+Dados: 2026.04.30 16:37:53
+
+-03'00'
+
+MIRASSOL FUTEBOL CLUBE
+
+CNPJ: 51.352.862/0001-14
+
+WESLEN PATRIC LEAL
+
+DOS
+
+SANTOS:48718922805
+
+Assinado de forma digital por
+
+WESLEN PATRIC LEAL DOS
+
+SANTOS:48718922805
+
+Dados: 2026.04.30 16:33:03
+
+-03'00'
+
+WESLEN PATRIC LEAL DOS SANTOS
+
+CONTADOR
+
+CRC: 1SP348561/O-6
+
+CNPJ. 51.352.862/0001-14
+
+Fundado em 1925
+
+ESTÁDIO MUNICIPAL "JOSÉ MARIA DE CAMPOS MAIA"
+
+AV. LAURO LUCHESI,2650 – B.N. SRA. APARECIDA – CEP 15130-000 - MIRASSOL – SP
+
+TEL. (017)3253-4200 – 3242-8060 – e-mail: mirassolfc@hotmail.com

@@ -2,7 +2,8 @@
 
 **Ángulos**: sitio oficial: agotado (44 PDFs archivados entre cahuracan.com + admin/admin2/admin3,
 ninguno financiero) · Wayback CDX: agotado (mismo resultado, dominio completo con subdominios) ·
-búsqueda web: agotado (sin resultados) · regulador/país: no aplica — 2026-09-26
+búsqueda web: agotado (sin resultados) · Exa (barrido 3): **REABRIÓ el club**, ver abajo · regulador/
+país: no aplica · barrido: 3 (Exa) — 2026-09-26
 
 - Sin PDFs oficiales encontrados. Sitio oficial: cahuracan.com (y subdominio admin.cahuracan.com).
   Solo publica comunicados narrativos de asamblea sin adjuntos — confirma que se aprobó Memoria y
@@ -51,7 +52,36 @@ sirve para nada, cualquier ruta "existe". El WordPress real que alimenta el siti
   socios, actas de comisión fiscalizadora y avales de listas electorales.
 - Búsqueda web dirigida (`filetype:pdf` + nombre + balance/estados contables + año): sin resultados
   relevantes, solo noticias deportivas.
-- **Conclusión: dead-end real, sin mail.** No hay ninguna confirmación de prensa/asamblea con cifras
-  concretas (a diferencia de Atlanta) — solo "se aprobó por N votos", que no alcanza como señal fuerte
-  de que valga la pena escribirle al club todavía. Revisar de nuevo sin fecha fija.
+- **Conclusión de esta pasada (mañana del 2026-09-26): dead-end real, sin mail.** No hay ninguna
+  confirmación de prensa/asamblea con cifras concretas (a diferencia de Atlanta) — solo "se aprobó
+  por N votos", que no alcanza como señal fuerte de que valga la pena escribirle al club todavía.
+- Último chequeo: 2026-09-26 (mañana — ver REABIERTO abajo, misma fecha, más tarde).
+
+## Chequeo 2026-09-26 (2) — REABIERTO vía Exa (Test 3 del A/B test, `Admin/test-barridos.md`)
+
+La escalera estándar (sitio oficial + Wayback CDX de `cahuracan.com` + búsqueda web genérica) había
+agotado todo SIN encontrar nada — pero ninguna de esas 3 familias mira sitios de TERCEROS que no
+sean prensa. Una query de búsqueda semántica con Exa (`node tools/exa-search.mjs "balance auditado
+memoria y balance Club Atlético Huracán Argentina"`) encontró 2 cosas nuevas:
+
+1. **`aguantehuracan.com.ar`** — sitio de hinchas (no oficial, no es del club) que en 2010 y 2013
+   publicó desgloses de balance con cifras REALES, línea por línea. Ejemplo textual encontrado: tabla
+   completa del "Balance al 30/6/08" con Activo/Pasivo/Resultado del Ejercicio en 2 versiones
+   (original y corregida) con las diferencias explicadas ítem por ítem — el mismo nivel de detalle
+   que un balance auditado real, publicado por un grupo de socios (no oficial del club, mismo
+   criterio que ya usa este proyecto con turiver.com para River: fuente secundaria/mirror, no
+   primaria, pero con contenido real verificable). **PENDIENTE: revisar `aguantehuracan.com.ar` a
+   fondo** — si publicó esto en 2010/2013, puede tener más ejercicios de esa época.
+2. **Nota de prensa (boscoproducciones.com.ar, mayo 2026)**: "Huracán convoca a una asamblea clave
+   para regularizar balances y renovar toda su conducción" — el orden del día incluye "ratificación
+   de asambleas ordinarias correspondientes a los años 2018, 2019, 2020 y 2022" y "consideración de
+   memorias, inventarios y balances generales de los ejercicios cerrados en noviembre de 2023, 2024
+   y 2025". El club va a tratar y potencialmente publicar 6 ejercicios de historia financiera que hoy
+   no existen en ningún canal digital. **Candidato a mail fuerte** una vez pasada esa asamblea (o
+   antes, para pedir el resultado).
+
+**Reclasificación**: de "dead-end real, sin mail" a "reabierto — candidato a mail fuerte + pendiente
+de explorar `aguantehuracan.com.ar`". Este es el hallazgo que validó, en el Test 3, que Exa encuentra
+canales que la escalera estándar (sitio oficial/Wayback/búsqueda web genérica) estructuralmente no
+puede ver (fan sites, agregadores de noticias chicos).
 - Último chequeo: 2026-09-26.

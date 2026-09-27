@@ -68,3 +68,18 @@ en ningún canal digital — encaja en el criterio de 0.3 ("documento confirmado
 está descargable"). La nueva gestión (asumió dic-2025, activamente denunciando falta de
 transparencia de la anterior) puede ser receptiva a un pedido de publicación.
 - Último chequeo: 2026-09-26.
+
+## Chequeo 2026-09-26 (2) — Exa (Test 3 del A/B test, `Admin/test-barridos.md`): el informe de 120 días SÍ está público
+
+Búsqueda semántica con Exa (`node tools/exa-search.mjs`) encontró lo que la búsqueda web genérica
+no había encontrado: el "informe de gestión de los primeros 120 días" de la gestión Mirkin (ya
+mencionado arriba como "no publicado") en realidad SÍ está colgado, en el sitio de un medio de
+prensa, no en el del club — **descargado y verificado**:
+`https://www.eltucumano.com/adjunto/2026/05/17/informe%20casm.pdf` →
+`Clubes/Argentina/San Martín (Tucumán)/informe-gestion-120-dias-2026.pdf` (52 págs, sano, `pdfinfo`
+sin errores). Es un documento de diagnóstico/denuncia política con cifras sueltas (deudas
+identificadas, no un Estado de Recursos y Gastos auditado completo) — no reemplaza los 2 balances
+todavía sin publicar (jul-2022/jun-2023 y jul-2023/jun-2024), pero es contenido real que antes no
+estaba en la carpeta del club. Pendiente: revisar si trae una sección de estados contables real
+antes de decidir si aporta algo cargable, o si se queda como material de contexto nada más.
+- Último chequeo: 2026-09-26.

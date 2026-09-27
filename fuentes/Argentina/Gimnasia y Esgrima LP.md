@@ -3,6 +3,26 @@
 **Ángulos**: sitio oficial: agotado (chequeo liviano) · Wayback CDX: no aplica (no hace falta, ver
 abajo) · búsqueda web: agotado · regulador/país: no aplica — 2026-09-26.
 
+## Chequeo 2026-09-26 (2) — Wayback CDX de dominio completo pese a estar "ya cargado": Balance del Ejercicio 134 recuperado
+
+Mismo pedido que en Unión: repetir la familia 3 (Wayback CDX, dominio completo) sobre clubes ya
+bien cubiertos, porque "ya está sourceado" no demostró ser motivo válido para saltearla (así
+aparecieron los 4 documentos nuevos de Boca).
+
+- **`Club-de-Gimnasia-y-Esgrima-La-Plata-Balance-Ejercicio-134.pdf` recuperado completo** (30 págs,
+  con capa de texto nativa, `pdfinfo` sin errores) — descargado a
+  `Clubes/Argentina/Gimnasia y Esgrima LP/balance-ejercicio-134-2020-2021.pdf`. Esto CORRIGE lo que
+  decía este archivo hasta hoy: el Ejercicio 134 (2020-21) NO era memoria-sin-balance, es EXACTAMENTE
+  el mismo patrón ya documentado para 136°/137°/138° ("el club publica el Balance como PDF SEPARADO
+  de la Memoria") — la Memoria-del-Ejercicio-134 ya conocida es narrativa, pero el Balance vive en
+  otro archivo que nadie había buscado por separado para este ejercicio en particular.
+- También apareció `Informe-economico-financiero-diciembre-2022.pdf` (informe intermedio, no un
+  balance anual) — descargado pero con el xref dañado (`pdfinfo`: "Internal Error: xref num 3 not
+  found", igual reconstruye 14 páginas); prioridad baja, es solo un corte a mitad de ejercicio.
+- Pendiente: aplicar el mismo chequeo de dominio completo a los ejercicios 132/133/135 que ya estaban
+  marcados pendientes abajo — no se llegó a hacer en esta pasada, quedó acotada a lo que ya aparecía
+  fácil en el listado de PDFs del dominio.
+
 ## Chequeo 2026-09-26 (liviano, pedido explícito): sin ejercicio nuevo
 
 El ejercicio 138° (2024-25, ya cargado) es efectivamente el más reciente: se trató en la Asamblea

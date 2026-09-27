@@ -1,3 +1,12 @@
+**Ángulos**: sitio oficial: agotado (menú completo — Noticias, Partidos, El Club [Historia, Prensa,
+Contacto, Red card], Equipos, Cienciano TV, Hotel Cienciano, Sorteo 4x4 — más `wp-json/wp/v2/search`
+con `balance`/`asamblea`/`ejercicio`/`memoria`/`estados`/`financiero`/`transparencia`: ningún hit
+relevante, solo coincidencias sueltas en notas deportivas) · Wayback CDX: agotado (2 PDFs archivados
+en todo el dominio `cienciano.com`, ninguno financiero — ver detalle abajo) · búsqueda web: agotado
+(`filetype:pdf` sin resultados propios del club) · prensa: confirmado que el único "balance
+financiero" que aparece en prensa reciente es el de la FPF (Federación), no el del club — ver
+detalle · regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09-26
+
 # Cienciano (Club Cienciano del Cusco)
 
 - Sin PDF ni fuente pública identificada. Dead-end estructural: registrado en SUNAT como
@@ -11,4 +20,30 @@
   entradas y contenido de CiencianoTV.
 - Pendiente: todo. Sin lead nuevo identificado esta sesión.
 - Contacto: cienciano.com (sin sección de transparencia).
-- Último chequeo: 2026-09-13.
+- Último chequeo: 2026-09-26.
+
+## Chequeo 2026-09-26 — escalera completa (barrido 1, Sonnet), dead-end real sin señal
+
+- **Familia 1 (sitio oficial)**: menú COMPLETO de cienciano.com revisado (Noticias, Partidos, El
+  Club, Equipos, Cienciano TV, Hotel Cienciano, Sorteo 4x4, footer) — nada institucional. Es
+  WordPress, así que además se corrió `wp-json/wp/v2/search` con 7 términos (`balance`, `asamblea`,
+  `ejercicio`, `memoria`, `estados`, `financiero`, `transparencia`): 0 resultados relevantes —
+  `asamblea` y `financiero` no traen NINGÚN post, y el resto solo trae notas deportivas donde la
+  palabra aparece suelta (ej. "ejercicio" en notas de entrenamiento).
+- **Familia 3 (Wayback CDX, dominio completo)**: `matchType=domain` sobre `cienciano.com` encuentra
+  solo 2 PDFs en toda la historia del dominio: `exencion-de-responsabilidad-cienciano.pdf` (deslinde
+  de responsabilidad, 2020) y `oficio-n-017-tcl-fpf-2021.pdf` (oficio del Tribunal de Control y
+  Disciplina Financiero Fair Play de la FPF, 2021) — ninguno es un balance ni estado financiero del
+  club.
+- **Familia 4 (búsqueda web dirigida)**: `Cienciano "estados financieros" OR balance OR "memoria
+  anual" filetype:pdf` no trae ningún documento del club (solo resultados de otras instituciones sin
+  relación).
+- **Familia 5 (prensa, para confirmar)**: se encontró una nota de Depor sobre la Asamblea de Bases
+  de la FPF donde el gerente de Cienciano, Leonidas Tupayachi, dijo haber votado en contra del
+  "balance financiero" y la memoria anual 2024. Se leyó la nota completa para confirmar de quién es
+  ese balance: **es el balance de la FPF (federación), no el de Cienciano** — Tupayachi cuestiona que
+  el propio informe de la FPF registre "más de 32 millones por cobrar a 1190 sin claridad de
+  cumplimiento". No es evidencia de que Cienciano tenga o publique un balance propio.
+- **Conclusión**: dead-end real, 0 señal de que exista un documento financiero propio de Cienciano —
+  no amerita mail por ahora. Revisar de nuevo sin fecha fija.
+- Último chequeo: 2026-09-26.

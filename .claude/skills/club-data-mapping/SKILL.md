@@ -344,6 +344,15 @@ exacto" de "esto es una estimación razonable".
    mismo concepto pero reexpresado a dos fechas distintas, mezclarlos sería inflar o falsear el
    ejercicio 2024. Regla: para cargar el ejercicio N, andá siempre al balance/presupuesto CUYO año
    corriente ES N, nunca a la columna comparativa de un balance de N+1.
+6. **Si el `.md` empieza con la advertencia "ESCANEADO, TRANSCRIPTO CON MISTRAL OCR"** (de
+   `tools/mistral-ocr-transcribe.mjs`, ver `Admin/test-costo-transcripcion.md`), el chequeo de arriba
+   (1-5) NO alcanza solo: verificá a mano contra el PDF cada cifra que vayas a cargar, no solo que la
+   suma cierre. Encontrado real (test de comparación, 2026-09-26, Llaneros 2016): en una celda
+   dañada/tapada por sombreado del escaneo, Mistral devolvió un TOTAL mal leído con la misma
+   confianza que uno bien leído, sin marcarlo `[ilegible]` ni nada que lo distinga de una cifra
+   correcta. Si el tie-out contra un total conocido de otra fuente independiente cierra igual,
+   confiá; si el "total conocido" sale del mismo documento (no hay fuente independiente), no alcanza
+   con que cierre solo. Borrá la advertencia del `.md` una vez que verificaste.
 
 ## 7. Atribución de gestión: solo si estás seguro
 
@@ -816,6 +825,15 @@ criterio de la sección 6) antes de dar por buena la separación.
 
 ## 15. PDF escaneado sin capa de texto: OCR con Tesseract es mucho más barato que renderizar
 páginas como imágenes con el Read tool — pero verificar fila por fila, no confiar en el OCR crudo
+
+**ACTUALIZADO (Versiones 244-248, 2026-09-26): este flujo de Tesseract es lo que hace un subagente
+de Claude cuando le toca transcribir un PDF — pero desde el to-do 66, transcribir en volumen ya NO
+arranca acá.** El default hoy es mandar el PDF a una API externa desde la terminal de Guido (0 tokens
+de Claude): `node tools/mistral-ocr-transcribe.mjs` primero, `node tools/gemini-transcribe.mjs` para
+lo que salga marcado como escaneo, y recién si Gemini lo rechaza por `RECITATION` le toca a un
+subagente — ahí sí, con el flujo de Tesseract de esta sección. Ver `CLAUDE.md` sección "Cada PDF
+nuevo" y `Admin/test-costo-transcripcion.md` para el criterio completo y por qué. Lo que sigue
+abajo sigue siendo válido tal cual, para cuando el trabajo cae en un subagente.
 
 Encontrado cargando Vélez Sarsfield hacia atrás hasta agotar su archivo completo (Versiones 90-93):
 4 de los 11 ejercicios cargados (2023, 2017, 2016, 2015) resultaron ser PDF escaneados sin capa de

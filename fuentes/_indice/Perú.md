@@ -11,14 +11,14 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Sporting Cristal](../Perú/Sporting Cristal.md) — sin PDF, S.A. cerrada sin obligación de reporte — Último chequeo: 2026-09-12
 - [Universitario de Deportes](../Perú/Universitario de Deportes.md) — sin PDF, proceso concursal INDECOPI confirmado dead-end (solo historial procesal) — Último chequeo: 2026-09-13
 - [FBC Melgar](../Perú/FBC Melgar.md) — sin PDF, asociación civil + concursal INDECOPI sin expediente ubicado — Último chequeo: 2026-09-13
-- [Cienciano](../Perú/Cienciano.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
-- [Sport Boys](../Perú/Sport Boys.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Cienciano](../Perú/Cienciano.md) — sin PDF, dead-end real confirmado (escalera completa agotada, 0 señal propia) — Último chequeo: 2026-09-26
+- [Sport Boys](../Perú/Sport Boys.md) — sin PDF; identificado un Plan de Viabilidad con proyecciones auditables presentado a SUNAT en 2023 (proceso concursal), no público — candidato a SAIP/mail — Último chequeo: 2026-09-26
 - [Universidad Cesar Vallejo](../Perú/Universidad Cesar Vallejo.md) — sin PDF, S.A.C. cerrada sin obligación de reporte — Último chequeo: 2026-09-13
-- [Cusco FC](../Perú/Cusco FC.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
-- [ADT](../Perú/ADT.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
-- [Alianza Atletico](../Perú/Alianza Atletico.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
-- [Deportivo Municipal](../Perú/Deportivo Municipal.md) — sin PDF, asociación civil, dominio oficial caído/squatted — Último chequeo: 2026-09-13
-- [Comerciantes Unidos](../Perú/Comerciantes Unidos.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Cusco FC](../Perú/Cusco FC.md) — sin PDF, dead-end real confirmado (0 capturas en Wayback nunca, 0 señal) — Último chequeo: 2026-09-26
+- [ADT](../Perú/ADT.md) — sin PDF, dead-end real confirmado (0 capturas en Wayback nunca, 0 señal) — Último chequeo: 2026-09-26
+- [Alianza Atletico](../Perú/Alianza Atletico.md) — sin PDF, dead-end real confirmado vía Exa (sin señal de balance propio) — Último chequeo: 2026-09-26
+- [Deportivo Municipal](../Perú/Deportivo Municipal.md) — sin PDF, sitio caído/squatted; prensa 2024-2026 confirma crisis con cifra concreta (S/12M deuda) dicha por el tesorero — candidato a mail — Último chequeo: 2026-09-26
+- [Comerciantes Unidos](../Perú/Comerciantes Unidos.md) — **encontrado vía Exa**: tesis de grado (USAT 2019) con Estado de Situación Financiera real 2013-2015, fuente secundaria académica, descargada — pendiente transcripción/onboarding — Último chequeo: 2026-09-26
 - [Los Chankas](../Perú/Los Chankas.md) — sin PDF, única S.A. (cerrada) del barrido, sin obligación de reporte — Último chequeo: 2026-09-13
-- [Sport Huancayo](../Perú/Sport Huancayo.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
-- [Binacional](../Perú/Binacional.md) — sin PDF, asociación civil sin obligación de reporte — Último chequeo: 2026-09-13
+- [Sport Huancayo](../Perú/Sport Huancayo.md) — sin PDF, dead-end confirmado vía Exa (fuente terciaria: "no hay información financiera disponible") — Último chequeo: 2026-09-26
+- [Binacional](../Perú/Binacional.md) — sin PDF, dead-end para balance público (mucha cobertura de crisis financiera pero sin documento) — candidato débil a mail — Último chequeo: 2026-09-26

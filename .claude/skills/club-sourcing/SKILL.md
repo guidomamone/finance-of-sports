@@ -123,6 +123,20 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    truncado). **Antes de cerrar un club como "0 PDFs en Wayback" por un resultado vacío o
    sospechosamente corto, reintentar con otro timestamp de la misma URL** si la CDX API lista más de
    uno — no asumir que la primera captura que se abrió es representativa de todas.
+
+   **Un club "ya muy sourceado" NO es excusa para saltear la familia 3 — el barrido de dominio
+   completo puede seguir sin haberse corrido nunca en serio.** Encontrado con Boca Juniors
+   (2026-09-26): la nota del club decía "Wayback CDX: no aplica esta sesión (club muy sourceado, no
+   ameritaba)" porque ya tenía presupuesto y balance del año más reciente cargados — pero nadie
+   había corrido nunca el CDX de dominio completo (`matchType=domain`) sobre `bocajuniors.com.ar`.
+   Al correrlo apareció un directorio (`/rebrand/files/`) con 2 balances de ejercicios que llevaban
+   sesiones enteras marcados como "pendientes de encontrar", sin ningún nombre obvio que un intento
+   de adivinar filename hubiera acertado. La lección: "el club ya tiene datos cargados" es una razón
+   para no volver a intentar la familia 1 (sitio oficial) a ciegas otra vez, pero NO dice nada sobre
+   si la familia 3 se agotó — son preguntas distintas. Antes de escribir "no aplica" para Wayback CDX
+   en un club grande ya cargado, confirmar que de verdad se corrió el barrido de dominio completo al
+   menos una vez; si nunca se corrió, es barato hacerlo (una sola llamada a la CDX API) y puede
+   rendir series enteras de años que las otras 4 familias ya habían agotado.
 5. **Prensa**, solo para CONFIRMAR que el documento existe cuando no se lo encuentra descargable en
    ningún lado (nunca como fuente en sí — ver la primera regla de esta sección). Si prensa cita
    cifras concretas de una asamblea reciente, es señal de que el documento SÍ existe y vale la pena
@@ -154,6 +168,58 @@ cerró, a propósito: quedó "Noticias Institucionales" sin abrir del todo en el
 la familia 1 no estaba agotada todavía — se documentó como pendiente con el próximo paso concreto, no
 como dead-end.
 
+### 0.1b Quién ejecuta cada barrido (Sonnet → Exa → Opus) — VALIDADO con A/B test el 2026-09-26
+
+Además de QUÉ familia probar (0.1), importa QUÉ herramienta la corre — escalando en costo a medida
+que el club se resiste. Versión revisada tras el A/B test de la sesión del 2026-09-26
+(`Admin/test-barridos.md`, 23 clubes argentinos, split aleatorio): la versión original de este punto
+proponía Haiku para el descubrimiento mecánico de un club nuevo, con Sonnet verificando después — el
+test lo midió y **costó 30,8% MÁS caro que Sonnet solo** (tokens, tool calls y duración, consistente
+en los 3 lotes probados), porque verificar bien a Haiku exigía rehacer buena parte del trabajo
+(re-descargar lo que dejaba corrupto, profundizar donde se quedaba corto con la misma herramienta,
+corregir cifras mal leídas) — no fue un "sí/no" rápido sobre candidatos sólidos. El caso más grave:
+en un lote, Haiku casi hace que se cargue el balance de una cooperativa eléctrica ajena como si fuera
+del club de fútbol homónimo, por coincidencia de nombre sin verificar el contenido. **Por eso Haiku
+queda afuera de la escalera por defecto** — sigue siendo una opción a mano si en el futuro aparece un
+escenario distinto (un club con miles de candidatos en Wayback CDX para FILTRAR antes de que Sonnet
+mire, tipo Boca/Racing, que no se probó en este test), pero no es la regla.
+
+1. **Club nuevo o 2do barrido**: **Sonnet directo**, la escalera completa de 0.1 (sitio oficial +
+   Wayback CDX de dominio completo + búsqueda web + prensa). Esto incluye reconciliar contra lo ya
+   cargado/documentado en un club que "parece bien cubierto" (¿este PDF es nuevo o el mismo que ya
+   tenemos con otro nombre? ¿el archivo de 838 KB realmente abre o tiene el xref roto?) — así
+   aparecieron 5 documentos nuevos de Unión y 1 de Gimnasia La Plata sobre clubes que se creían
+   agotados, y 4 de Boca vía Wayback CDX de dominio completo nunca corrido en serio antes.
+2. **GATE antes de escalar más**: no pasar a Exa/Opus en cualquier club — solo si HAY SEÑAL de que
+   vale la pena (prensa confirma que el documento existe, es un club grande/tradicional, o el barrido
+   de Sonnet dejó un hilo suelto concreto). Sin señal, cerrar como ya indica 0.3 (dead-end / candidato
+   a mail / pendiente). Motivo: escalar a herramientas pagas en cada uno de los ~400 clubes "sin
+   PDFs" del proyecto no tiene el mismo repago que en un puñado de clubes grandes.
+3. **3er barrido** (con señal, sigue sin nada): **Exa** (búsqueda semántica por contenido, no por
+   nombre de archivo ni palabra clave) — `node tools/exa-search.mjs "<query>"`, necesita
+   `Admin/exa/.env`. **Esta parte SÍ se validó con datos**: en el mismo test, sobre 5 clubes
+   argentinos ya cerrados como dead-end real (escalera de Sonnet agotada a fondo), una sola query de
+   Exa por club reabrió 2 de los 5 — encontró un sitio de hinchas con balances completos que ninguna
+   de las 3 familias estándar puede ver (no es sitio oficial, no está en Wayback del dominio del
+   club, no rankea en búsqueda web genérica) y una nota de prensa con el detalle de una asamblea que
+   va a regularizar 6 ejercicios. Costo mínimo (una llamada HTTP de segundos, sin tokens de modelo
+   de por medio salvo para leer el resultado). **Gotcha confirmado, mismo que ya tenía la búsqueda
+   web genérica**: Exa puede confundir clubes de nombre parecido (2 de 5 queries del test trajeron el
+   club equivocado por homonimia) — filtrar SIEMPRE por dominio/contexto antes de confiar en un
+   resultado, nunca por el título solo.
+4. **4to barrido** (sigue sin nada): **Opus**, SOLO para pensar ángulos nuevos que la escalera de 0.1
+   no contempla — no ejecuta ninguna búsqueda él mismo.
+5. **4.5** (si Opus propuso algo concreto): **Sonnet** ejecuta esa idea.
+6. **5to barrido** (la idea tampoco resultó): documentar como dead-end, siguiendo 0.3.
+
+Un club puede terminar en un número más alto que 5 si aparece trabajo ad hoc extra (un mail que trae
+una pista, una gestión de Guido) — el número no es una medalla, es solo "cuántas rondas de búsqueda
+distintas ya recibió este club".
+
+**Registro**: la línea `**Ángulos**` (0.2) suma un segmento `barrido: N (<quién>)`, ej. `barrido: 2
+(Sonnet)` o `barrido: 3 (Exa)`. Actualizarlo cada vez que una sesión avanza al club un escalón, no
+solo la primera vez.
+
 ### 0.2 Dejar registro rápido de qué ya se probó — sin tener que leer la prosa completa
 
 Hoy, saber si YA se probó tal ángulo en tal club exige leer entero `fuentes/<País>/<Club>.md`, que es
@@ -171,7 +237,8 @@ datos nueva — este proyecto es deliberadamente estático de punta a punta. For
 segmento separado con `·`:
 
     **Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: agotado (0 PDFs)
-    · búsqueda web: agotado (sin resultados) · regulador/país: no aplica — 2026-09-23
+    · búsqueda web: agotado (sin resultados) · regulador/país: no aplica · barrido: 1 (Sonnet)
+    — 2026-09-23
 
 Estados posibles: `agotado (<qué encontró o no>)`, `parcial — <qué falta concretamente>` (como
 Gimnasia y Tiro Salta: "sitio oficial: parcial — falta abrir Noticias Institucionales completa"),

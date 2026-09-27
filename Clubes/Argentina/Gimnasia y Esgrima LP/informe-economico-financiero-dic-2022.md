@@ -1,0 +1,209 @@
+--- pág. 1 ---
+
+![img-0.jpeg](img-0.jpeg)
+
+# DESDE LA COMISIÓN DIRECTIVA DEL CLUB DE GIMNASIA Y ESGRIMA
+LA PLATA INFORMAMOS A SOCIAS, SOCIOS Y SIMPATIZANTES EL
+ESTADO ECONÓMICO Y FINANCIERO DEL CLUB AL MOMENTO DE
+ASUMIR FUNCIONES EL 1° DE DICIEMBRE DE 2022
+
+--- pág. 2 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+**DEUDA TOTAL AL 1/12/2022**
+
+**$2.865.400.000**
+
+![img-1.jpeg](img-1.jpeg)
+
+--- pág. 3 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+## COMPOSICIÓN DE LA DEUDA: $2.865 MM
+
+|  Mutuos y préstamos | 60%  |
+| --- | --- |
+|  Deuda en moneda extranjera por jugadores | 20%  |
+|  Salarios adeudados fútbol profesional | 10%  |
+|  AFIP | 5%  |
+|  Proveedores, día del partido y gastos varios | 5%  |
+
+![img-2.jpeg](img-2.jpeg)
+
+--- pág. 4 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/ 2022
+
+DEUDA MUTUOS / PRÉSTAMOS ASOCIADOS
+
+$1.707.000.000
+
+(MEP)
+
+U$S 3.689.319
+
+(OFICIAL - BNA)
+
+U$S 3.079.405
+
+![img-3.jpeg](img-3.jpeg)
+
+--- pág. 5 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+# **DEUDA FÚTBOL PROFESIONAL POR TRANSFERENCIAS  
+DE JUGADORES EN MONEDA EXTRANJERA**
+
+**$577.306.000**
+
+(MEP)
+
+**U$S 38.720**
+
+(OFICIAL - BNA)
+
+**U$S 2.698.052**
+
+(EURO OFICIAL - BNA)
+
+**€ 538.614**
+
+![img-4.jpeg](img-4.jpeg)
+
+--- pág. 6 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+## COMPOSICIÓN DE LAS DEUDAS EN MONEDA EXTRANJERA POR JUGADORES
+
+|  Equipo / jugador | Deuda en USD | Tipo de cambio | Total en pesos  |
+| --- | --- | --- | --- |
+|  Al-Ettifaq (Alemán) | USD 330.734 | 173,75 | $57.465.122  |
+|  Boston River (Fratta) | USD 40.000 | 173,75 | $6.950.000  |
+|  Olimpia (Sosa) | USD 740.284 | 173,75 | $128.624.506  |
+|  Tembetary (Sosa) | USD 1.054.379 | 173,75 | $183.198.478  |
+|  Gestión y MKT Dep LLC (Piris) | USD 300.000 | 173,75 | $52.125.000  |
+|  Sport Manag. LLC (Soldano) | USD 159.000 | 173,75 | $27.626.250  |
+|  Representación Soldano | USD 38.720 | 316,17 | $12.242.102  |
+|  Olympiacos (Soldano) | USD 493.613 | 178,75 | $88.233.448  |
+|  Club Unión (Soldano) | USD 45.000 | 178,75 | $8.043.750  |
+|  Club Tigre (Cardozo) | USD 73.653 | 173,75 | $12.797.335  |
+|  **USD 3.275.383** |   |  | **$577.305.991**  |
+
+![img-5.jpeg](img-5.jpeg)
+
+--- pág. 7 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+# INHIBICIONES FIFA
+
+IMPIDEN INCORPORAR JUGADORES HASTA QUE SE PAGUE
+
+**$274.400.000**
+
+![img-6.jpeg](img-6.jpeg)
+
+--- pág. 8 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/ 2022
+
+# **DEUDA FÚTBOL PROFESIONAL:**
+**SUELDOS (SEPTIEMBRE Y OCTUBRE) Y PREMIOS (AÑO 2022)**
+
+**$291.000.000**
+
+![img-7.jpeg](img-7.jpeg)
+
+--- pág. 9 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/ 2022
+
+**DEUDA AFIP**
+
+**$137.000.000**
+
+![img-8.jpeg](img-8.jpeg)
+
+--- pág. 10 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/ 2022
+
+**DEUDA CONCURSO PREVENTIVO**
+
+**\$41.680.000**
+
+![img-9.jpeg](img-9.jpeg)
+
+--- pág. 11 ---
+
+# MÁS DEUDAS
+
+IPS $22.175.000
+
+ART $7.690.000
+
+PROVEEDORES $45.139.400
+
+SUELDOS DEPORTES (OCTUBRE 2022) $6.600.500
+
+OPERATIVO POLICIAL $4.029.720
+
+SERVICIOS $5.406.145
+
+PREVISIÓN JUICIOS LABORALES $15.638.650
+
+VARIOS $4.005.220
+
+--- pág. 12 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+## DEUDAS POR GASTOS OPERATIVOS: ORGANIZACIÓN DE PARTIDOS
+
+GRUPO ELECTRÓGENO $1.309.380
+
+AMBULANCIAS $2.421.990
+
+OPERATIVO DE SEGURIDAD $4.029.720
+
+CONCENTRACIÓN TOWER PLAZA $6.493.102
+
+PREVENCIÓN Y CONTROL $2.843.920
+
+ALQUILER VALLAS $3.091.200
+
+SERVICIO DE SONIDO $204.000
+
+OTROS GASTOS $196.300
+
+--- pág. 13 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/ 2022
+
+**CHEQUES EMITIDOS**
+
+**\$16.000.000**
+
+![img-10.jpeg](img-10.jpeg)
+
+--- pág. 14 ---
+
+ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022
+
+# DÉFICIT OPERATIVO MENSUAL - NOV. 2022
+
+$94.000.000
+
+INGRESOS
+
+$106.000.000
+
+EGRESOS
+
+$200.000.000
+
+![img-11.jpeg](img-11.jpeg)

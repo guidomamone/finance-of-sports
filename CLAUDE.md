@@ -233,6 +233,31 @@ numéricas resultó muy confiable en la práctica. Ver
 completo (incluye qué hacer con tablas anchas rotadas 90° en el escaneo, y
 cómo verificar los números del OCR fila por fila antes de cargarlos).
 
+**ACTUALIZADO OTRA VEZ (Versiones 244-248, 2026-09-26): el DEFAULT para transcribir en volumen ya
+no es que la sesión de Claude lo haga, es mandarlo a una API externa barata, corrida por Guido desde
+SU PROPIA terminal — 0 tokens de Claude, sea 1 PDF o sean 2000.** El test completo (30 documentos,
+costo y calidad comparados cifra por cifra) está en `Admin/test-costo-transcripcion.md`; el criterio
+que salió de ese test:
+
+1. **Default: `node tools/mistral-ocr-transcribe.mjs --all`** (Mistral OCR, motor de extracción
+   dedicado, ~$4 cada 1000 páginas). Marca en la consola y con una advertencia adentro del `.md`
+   cuando el PDF es un escaneo — en ese caso, antes de cargar esos datos hace falta verificar a mano
+   contra el PDF (`club-data-mapping` sección 6): es el único caso real donde encontramos que
+   inventa un número con la misma confianza que uno bien leído, en vez de avisar.
+2. **`node tools/gemini-transcribe.mjs --redo-mistral-scanned`** (Gemini 3.8 Flash) para lo que
+   Mistral marcó como escaneo y amerita más cuidado — OJO, no es `--all`: ese flag busca PDFs sin
+   ningún `.md` y se saltea justo los que Mistral ya tocó (aunque los haya marcado escaneados) — en el test manejó escaneos rotados/dañados sin errores. Rechaza
+   ~1 de cada 4 documentos con `finishReason: RECITATION` (falso positivo de copyright de Google,
+   más común en "memorias" narrativas) — no es un problema del documento ni de Mistral.
+3. **Un subagente de Claude** (el flujo de siempre, Tesseract incluido, descripto abajo) para lo que
+   Gemini rechaza por RECITATION, o cualquier caso donde ninguna de las dos APIs alcance. Es el más
+   caro (70.000-290.000 tokens por documento) pero también el más minucioso: cruza sumas entre notas,
+   marca `[ilegible]` en vez de inventar, y corrige ambigüedades de OCR contra el resto del documento.
+
+Las dos APIs necesitan su propia key en `Admin/gemini/.env` / `Admin/mistral/.env` (gitignoreadas,
+mismo criterio que la de Resend) — si no existen todavía, pedírselas a Guido, no asumir que hay que
+usar el flujo de Tesseract de abajo por default.
+
 Qué transcribir: TODO el documento, página por página, en el mismo orden,
 incluyendo tablas (como tablas Markdown o listas alineadas, lo que se lea
 mejor), números exactos tal cual figuran impresos (sin redondear, sin

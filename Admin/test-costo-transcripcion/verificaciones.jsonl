@@ -1,0 +1,10 @@
+{"pdf":"Clubes/Colombia/Alianza FC/estados-financieros-2020.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna (el header 'jun-20' es un defecto de la fuente, no de la transcripcion)","tokensVerificacion":99715}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2018.pdf","pata":"gemini","resultado":"12/12","discrepancias":"ninguna","tokensVerificacion":133473,"nota":"PDF escaneado sin capa de texto, Gemini lo leyo bien de todas formas (multimodal nativo)"}
+{"pdf":"Clubes/Colombia/Aguilas Doradas/estados-financieros-2020.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna"}
+{"pdf":"Clubes/Colombia/La Equidad/estados-financieros-2024.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna","calidadTablas":"bien formadas","tokensVerificacion":112616}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2016.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna","calidadTablas":"bien formadas","tokensVerificacion":104562}
+{"pdf":"Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf","pata":"gemini","resultado":"9/9","discrepancias":"ninguna","calidadTablas":"bien formadas","tokensVerificacion":104561}
+{"pdf":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2024.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna","calidadTablas":"bien formadas","tokensVerificacion":120380}
+{"pdf":"Clubes/Colombia/La Equidad/estados-financieros-2020.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna","calidadTablas":"bien formadas","nota":"PDF escaneado sin capa de texto (50 paginas), Gemini lo maneja bien de todas formas"}
+{"pdf":"Clubes/Colombia/Envigado/estados-financieros-2017.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna","calidadTablas":"bien formadas, un artefacto cosmetico de separador repetido tras salto de pagina, sin afectar datos"}
+{"pdf":"Clubes/Colombia/Envigado/estados-financieros-2020.pdf","pata":"gemini","resultado":"10/10","discrepancias":"ninguna","calidadTablas":"bien formadas incluso tabla compleja de 8 columnas"}

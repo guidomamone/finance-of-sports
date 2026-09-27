@@ -2,10 +2,52 @@
 
 **Ángulos**: sitio oficial: agotado — vistazo rápido 2026-09-26 (`club/presupuesto` sigue mostrando
 los mismos 2 documentos ya cargados, Presupuesto 2026-27 y Balance Ejercicio 121 2024-25; nada de
-Ejercicio 122 2025-26 todavía, esperable recién ~oct-2026) · Wayback CDX: no aplica esta sesión
-(club muy sourceado, no ameritaba) · búsqueda web: agotado — vistazo rápido 2026-09-26 (prensa
-confirma que no hubo asamblea de balance nueva desde oct-2025) · regulador/país: no aplica —
-2026-09-26
+Ejercicio 122 2025-26 todavía, esperable recién ~oct-2026) · Wayback CDX: **parcial — 4 documentos
+nuevos encontrados el 2026-09-26 (Ejercicios 118 y 119, ver abajo), pero 2018/2019/2021/2024 siguen
+sin aparecer en el dominio** · búsqueda web: agotado — vistazo rápido 2026-09-26 (prensa confirma
+que no hubo asamblea de balance nueva desde oct-2025) · regulador/país: no aplica — 2026-09-26
+
+## Chequeo 2026-09-26 (tarde) — Wayback CDX sobre el dominio completo, 4 documentos nuevos
+
+Barrido de la CDX API de `bocajuniors.com.ar` con `matchType=domain` (>100.000 URLs archivadas,
+nunca corrido antes para este club porque se lo daba por "ya muy sourceado" — ver nota vieja de
+Ángulos arriba, que estaba mal). Encontró 4 PDFs reales colgando de `/rebrand/files/`, una ruta que
+no tiene ningún nombre obvio en el sitio vivo de hoy y que ningún intento anterior había adivinado:
+
+- Memoria y Estados Contables, **Ejercicio N° 118 (cerrado 30/06/2022)** —
+  `https://www.bocajuniors.com.ar/rebrand/files/EECC_30525418835_2022.pdf`, snapshot del
+  2023-01-01 (`web.archive.org/web/20230101024644/...`). Período confirmado abriendo la portada del
+  PDF, no solo por el nombre de archivo. Escaneado (sin capa de texto, `pdffonts` solo muestra
+  Helvetica no embebida), 101 páginas. Copia local en
+  `Clubes/Argentina/Boca/eecc-30525418835-2022.pdf`. **Pendiente OCR antes de cargar** — año que
+  faltaba, ver lista de pendientes abajo.
+- Memoria y Balance, **Ejercicio N° 119 (cerrado 30/06/2023), firmado** —
+  `https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf`, snapshot
+  del 2023-11-11. Período confirmado igual, abriendo la portada. Escaneado, sin capa de texto en
+  absoluto (`pdffonts` no lista ninguna fuente), 128 páginas. Copia local en
+  `Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.pdf`. **Pendiente OCR antes de
+  cargar** — año que faltaba.
+- Presupuesto Económico Financiero y de Inversiones, **Ejercicio N° 119 (jul-2022 a jun-2023)** —
+  `https://www.bocajuniors.com.ar/rebrand/files/presupuesto_22_23_completo.pdf`, snapshot del
+  2023-01-01. Con capa de texto real (confirmado con `pdftotext`, no hace falta OCR), 39 páginas.
+  Copia local en `Clubes/Argentina/Boca/presupuesto-22-23-completo.pdf`.
+- Presupuesto Económico Financiero y de Inversiones, **Ejercicio N° 120 (jul-2023 a jun-2024)** —
+  `https://www.bocajuniors.com.ar/rebrand/files/presupuesto_23_24_completo.pdf`, snapshot del
+  2023-10-02. Con capa de texto real, 40 páginas. Copia local en
+  `Clubes/Argentina/Boca/presupuesto-23-24-completo.pdf`.
+
+Se probó también `presupuesto_final_24_25.pdf` (mismo directorio, patrón de nombre consistente): la
+única captura archivada es un 404 (snapshot 2025-04-06) — nunca se llegó a archivar un 200 real de
+ese archivo.
+
+**Con esto, de los balances que faltaban (2018, 2019, 2021, 2022, 2023, 2024), quedan resueltos
+2022 y 2023** (Ejercicios 118 y 119, pendientes solo de OCR — Guido lo va a correr por su cuenta).
+**Siguen sin aparecer en el dominio**: 2018, 2019, 2021 y 2024 — no se encontraron ni con este
+barrido completo, probablemente porque nunca vivieron en `bocajuniors.com.ar` (el balance 2025
+actual, por ejemplo, cuelga de un Google Drive externo, no del dominio propio) o Wayback nunca los
+crawleó. Wayback CDX para este club ya no está "agotado" en el sentido de la escalera de 0.1 — vale
+la pena reintentarlo periódicamente por si se archiva algo nuevo, y probar el mismo patrón de
+directorio (`/rebrand/files/<nombre>.pdf`) con nombres candidatos para los años que faltan.
 
 ## Chequeo 2026-09-26 — vistazo rápido, sin novedades (club ya extensamente sourceado)
 

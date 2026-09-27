@@ -20,7 +20,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Banfield](../Argentina/Banfield.md) — cargado, 1 balance real (116° Ejercicio, 2019-20); 105° (2024-25) confirmado pero el video que se creía suyo pertenece a otro canal — candidato a mail (to-do 59) — Último chequeo: 2026-09-26
 - [Barracas Central](../Argentina/Barracas Central.md) — sin PDFs, estructura institucional poco desarrollada — Último chequeo: 2026-09-22
 - [Belgrano](../Argentina/Belgrano.md) — 2 memorias narrativas sin balance; 2021-2025 confirmados, 100% detrás de login de socio (`socios.belgrano.com.ar`) — candidato a mail fuerte — Último chequeo: 2026-09-26
-- [Boca Juniors](../Argentina/Boca.md) — cargado, presupuesto 2027 y balance 2025 reales; confirmado que no hay balance más nuevo hasta la asamblea de octubre 2026 (Ejercicio 122) — Último chequeo: 2026-09-26
+- [Boca Juniors](../Argentina/Boca.md) — cargado, presupuesto 2027 y balance 2025 reales; balances Ejercicios 118 (2022) y 119 (2023) + presupuestos 119/120 encontrados vía Wayback CDX, pendientes de OCR (los 2 balances) antes de cargar; 2018/2019/2021/2024 siguen sin aparecer — Último chequeo: 2026-09-26
 - [Central Córdoba (Santiago del Estero)](<../Argentina/Central Cordoba SdE.md>) — sin PDF; 2019/20 y 2020/21 confirmados por prensa (2022), sin novedad confirmada 2022-2025 — candidato a mail (más débil) — Último chequeo: 2026-09-26
 - [Central Norte (Salta)](<../Argentina/Central Norte (Salta).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
 - [Chacarita Juniors](../Argentina/Chacarita Juniors.md) — sin PDFs; sitio oficial bloqueado por WAF de Vercel (no era rate-limit), familia 1 sin agotar del todo, retomar con Browser pane — Último chequeo: 2026-09-26

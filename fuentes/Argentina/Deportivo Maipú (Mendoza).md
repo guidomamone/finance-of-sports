@@ -1,5 +1,10 @@
 # Deportivo Maipú (Mendoza)
 
+**Ángulos**: sitio oficial: agotado (sección Socios revisada a fondo, sin PDF) · Wayback CDX: agotado
+(0 PDFs) · búsqueda web: agotado (sin señal de balance en ningún lado) · regulador/país: no aplica ·
+barrido: 1 (Haiku+Sonnet) — 2026-09-26. **Dead-end confirmado, sin mail** (0 señal de que el
+documento exista).
+
 - Sin PDFs oficiales encontrados. Sitio oficial: deportivomaipu.com, con sección "Socios" real
   (>1.900 socios activos, beneficios) revisada a fondo — sin ningún link a PDF de balance/memoria. 0
   PDFs archivados en Wayback Machine para el dominio.
@@ -22,3 +27,14 @@ desde una página viva.
 
 - **Resultado: 0 documentos.** Ni el sitio vivo ni el índice de Wayback Machine del dominio tienen un PDF, Drive o visor embebido con balance/memoria/estados contables.
 - Último chequeo: 2026-09-22.
+
+## Chequeo 2026-09-26 — verificación de barrido 1 (Haiku+Sonnet)
+
+Haiku bajó `distincion-municipal-deportivo-maipu.pdf` (77 KB) como candidato. Verificado con
+`pdftotext`: es una **Resolución del Concejo Deliberante** (autor PEZZUTTI, DUILIO, bloque PJ) para
+"Distinguir y reconocer... al Club Deportivo Maipú por haber obtenido el ascenso al Primera Nacional"
+(2020) — un documento legislativo municipal, cero contenido financiero. Confirmado: no es un falso
+positivo por club equivocado (es del club correcto), pero no sirve para esta búsqueda. **Se borró**
+el archivo. Sin cambios al veredicto: dead-end confirmado, sin ninguna señal (ni prensa, ni sitio, ni
+Wayback) de que el club publique o haya publicado un balance/memoria contable.
+- Último chequeo: 2026-09-26.

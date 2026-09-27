@@ -69,6 +69,114 @@ perdieron sino que se descartaron:
     - **~20 clubes quedaron como candidatos a mail** nuevos (documento confirmado por prensa/asamblea
       pero nunca publicado), que se suman a los 3 que ya tenía el to-do 59 — ver ese punto.
 
+76. EVALUAR UNA HERRAMIENTA DE VERIFICACIÓN DE IDENTIDAD DE ENTIDAD, para el problema de homonimia
+    que se repitió ~5 VECES en la sesión del 2026-09-26 (`Admin/test-barridos.md`) y una vez casi
+    causa un error real de datos: San Martín (Tucumán) confundido con San Martín (San Juan);
+    Independiente confundido con Independiente Rivadavia; y el caso grave, un PDF real y bien
+    formateado de la Cooperativa Eléctrica Limitada de Norberto de la Riestra casi se carga como si
+    fuera del Club Deportivo Riestra, por coincidencia de apellido en el dominio. Pasó con Exa, con
+    búsqueda web genérica, y abriendo el PDF — no es un problema de una sola herramienta, es
+    estructural a cualquier búsqueda que matchee por nombre. Lo que serviría no es más búsqueda, es
+    VERIFICACIÓN: algo que confirme que una razón social encontrada es legalmente la misma entidad
+    que se busca, cruzando un identificador único (CUIT en Argentina, RUC en Perú, etc.), no solo el
+    nombre — categoría "business registry lookup"/verificación de entidad. Sin evaluar todavía, sin
+    cuenta creada.
+
+77. EVALUAR TRANSCRIPCIÓN DE VIDEO/AUDIO PARA CIFRAS FINANCIERAS QUE SOLO EXISTEN HABLADAS (mismo
+    origen que el 76). El caso concreto es Banfield: el 105° Ejercicio se presentó en una asamblea
+    transmitida/grabada, con cifras leídas en voz alta, pero nunca se publicó como PDF — y ningún
+    método de sourcing de hoy busca DENTRO de un video. Categoría de herramienta: transcripción de
+    audio/video con el texto resultante buscable (podría alcanzar con aprovechar los transcripts
+    automáticos que ya genera YouTube, sin necesidad de una API de pago nueva — evaluar esa opción
+    gratis primero). Sin evaluar todavía.
+
+78. ARREGLAR EL CLIENTE DE WAYBACK CDX: SE CAE EN SILENCIO CON DOMINIOS GRANDES (no es evaluación de
+    herramienta paga, es un fix de `tools/`). Pasó 3 veces en la sesión del 2026-09-26: la CDX API
+    devolvió 504 Gateway Timeout para `bocajuniors.com.ar` (100k+ URLs archivadas) y para
+    `racingclub.com.ar`/`riverplate.com`, y en un caso (un subagente Haiku) el 504 se interpretó como
+    "0 documentos, dominio no indexado" — un falso negativo con la misma confianza que un resultado
+    real. Falta: un script/función reusable en `tools/` que pagine con `resumeKey`, reintente con
+    backoff ante 504/5xx, y NUNCA reporte "0 resultados" sin distinguir explícitamente entre "consulté
+    y no hay nada" y "la consulta falló". Hoy cada sesión reinventa esto a mano con `curl` suelto.
+
+79. CHEQUEO AUTOMÁTICO DE INTEGRIDAD POST-DESCARGA PARA PDFS DE WAYBACK (no es evaluación de
+    herramienta paga, es un fix de `tools/`). El gotcha de la sesión del 2026-09-26 (una captura de
+    Wayback puede truncarse a exactamente 1.048.576 bytes de forma permanente, sin relación con el
+    `length` que la propia CDX API reporta, ver `club-sourcing/SKILL.md` sección 0.1) hoy se detecta
+    a mano corriendo `pdfinfo`/buscando `%%EOF` — depende de que la sesión se acuerde de chequearlo.
+    Falta: un script en `tools/` que corra automático después de cualquier descarga de Wayback
+    (`id_`/`if_`) y aborte/avise si el archivo no llega a 1.048.576 bytes exactos O si `pdfinfo`
+    falla, en vez de dejar el archivo corrupto silenciosamente en `Clubes/<País>/<Club>/`.
+
+75. EVALUAR FIRECRAWL PARA LOS CASOS BLOQUEADOS POR TOOLING (no por falta de documento) — pedido de
+    Guido, 2026-09-26, después del A/B test de Haiku/Exa del mismo día (`Admin/test-barridos.md`).
+    Resuelve un problema DISTINTO al de Exa: Exa ayuda a ENCONTRAR una página que no se sabía que
+    existía; Firecrawl ayuda a LEER una página cuando ya se sabe dónde está pero `curl`/`WebFetch` no
+    puede bajarla (WAF, SPA que no renderiza sin JS, bloqueo de red puntual) — renderiza como un
+    navegador real y puede barrer un sitio entero en vez de adivinar rutas una por una.
+
+    **Diseño del test (mismo espíritu que el Test 3 de Exa: contra casos YA confirmados, no contra
+    una muestra al azar)**: los 3 casos de hoy que quedaron bloqueados por TOOLING, no por ausencia
+    de señal — confirmados en `fuentes/Argentina/<Club>.md` de cada uno:
+    - **Chacarita Juniors**: sitio bloqueado por un WAF de Vercel ("Security Checkpoint") a `curl` y
+      `WebFetch` desde el primer intento, sin ceder con espera. No se pudo confirmar el menú completo
+      del sitio — familia 1 de la escalera sigue "parcial", no agotada.
+    - **Newell's Old Boys**: mismo patrón de WAF, bloqueando específicamente `wp-content/uploads` y
+      `wp-json/wp/v2/media|search` — impide confirmar los ejercicios 2023-24 y 2024-25 (reformulado)
+      que ya se sabe que existen por prensa.
+    - **Argentinos Juniors**: 2 imágenes del informe contable 2019-20 alojadas en `i.ibb.co`
+      (`i.ibb.co/gJSBgrV/1a.jpg`, `i.ibb.co/NyhkqSZ/1b.jpg`) que `curl` devuelve con 200 pero cuerpo
+      vacío — parece bloqueo de red del entorno hacia ese host específico, no del sitio en sí.
+
+    **Métrica**: por caso, sí/no consiguió el contenido real que `curl`/`WebFetch` no pudo (binario,
+    no hace falta estadística con n=3 — es una prueba de "¿destraba esto o no?"), más el costo real
+    en créditos de Firecrawl (tiene su propio pricing/cuenta, como Exa) y el tiempo. Si destraba los
+    3, es señal fuerte de que vale la pena sumarlo como herramienta de respaldo en la escalera (0.1)
+    para cuando familia 1 quede "parcial" por bloqueo técnico — NO tocar el skill hasta verlo con
+    datos, mismo criterio que ya se usó con Haiku/Exa.
+
+    **Antes de correrlo**: Guido tiene que crear la cuenta/API key de Firecrawl (mismo patrón que
+    Exa: `Admin/firecrawl/.env`, gitignoreado). EN PAUSA hasta que eso esté listo.
+
+73. CARGAR LOS 2 BALANCES DE BOCA ENCONTRADOS VÍA WAYBACK CDX (Versión 247, 2026-09-26): Ejercicio
+    118 (cerrado 30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado), ambos escaneados sin capa
+    de texto, ya descargados en `Clubes/Argentina/Boca/`. **Guido va a correr el OCR/transcripción
+    por su cuenta desde la terminal** — cuando estén los `.md`, falta el mapeo normal
+    (`club-data-mapping`) y la carga al sitio. Quedan sin encontrar 2018, 2019, 2021 y 2024 — no
+    aparecieron ni en este barrido de dominio completo. Detalle en `fuentes/Argentina/Boca.md`.
+    Aparte, para River: un balance del ejercicio cerrado 31/08/2016 (más viejo que cualquiera de los
+    8 ya cargados) apareció en Scribd, detrás de una suscripción paga — decisión de Guido si vale
+    pagarla, mismo criterio que el trámite de la IGJ ya documentado en `fuentes/Argentina/River.md`.
+
+74. EVALUAR JEV (TypeSafe AI) PARA CATEGORIZAR RUBROS DE INGRESOS/GASTOS EN ONBOARDING (idea de
+    Guido, 2026-09-26, a raíz de la nota de lanzamiento de TypeSafe del 2026-09-15). Motivación: Jev
+    es un modelo "System One" — no genera texto libre, solo clasifica/tipa una entrada no
+    estructurada contra un set fijo de etiquetas, rápido y barato, con probabilidad calibrada por
+    respuesta. Encaja mejor con "a qué categoría de `data/category-map.js` pertenece este rubro" que
+    con sourcing (necesita navegar con libertad) o transcripción (Jev no genera strings, no puede
+    hacer OCR — por eso ese paso se queda en Mistral).
+
+    OJO: la nota es marketing propio de una empresa recién salida de stealth (early access, benchmark
+    contra un promedio que ellos mismos eligieron) — no tomar las cifras de la nota como validadas,
+    probarlo contra el propio criterio del proyecto antes de confiarle nada.
+
+    CÓMO ENCARARLO, si se retoma:
+    - **Backtest primero, sin tocar nada del sitio**: correr Jev sobre rubros de ejercicios YA
+      categorizados a mano (Boca, River, Racing tienen varios años hechos) y comparar contra la
+      categorización real — barato, y valida el producto contra ground truth propio en vez de
+      creerle el benchmark a la nota de lanzamiento.
+    - **Dónde SÍ encaja bien**: rubros que un club ya usó antes (cargar el ejercicio N+1 de un club
+      ya onboardeado, mismo vocabulario de rubros que en N) — clasificación repetitiva de un set
+      cerrado y conocido.
+    - **Dónde NO encaja**: la primera vez que aparece un rubro nuevo o un club/país nuevo — ahí la
+      categorización es una decisión de criterio (ej. la unificación de "derechos de
+      formación"/"mecanismo de solidaridad" del to-do 43), no clasificación mecánica. Sigue siendo
+      trabajo de `club-data-mapping` con Sonnet o de Guido.
+    - **Pipeline de 3 pisos, aprovechando la confianza calibrada** (si de verdad es calibrada):
+      Jev clasifica cada rubro → confianza alta (umbral a definir) se acepta automático → confianza
+      baja pasa a Sonnet con el contexto completo del club → si Sonnet tampoco está seguro, cae en
+      `Admin/dudas-por-club.md` como ya pasa hoy.
+
 70. "SAVED SEARCHES" — GUARDAR LAS BÚSQUEDAS DE CADA USUARIO EN SU CUENTA (pedido de Guido,
     2026-09-26: *"me gusta que las búsquedas que hace alguien queden guardadas como Saved Searches.
     Para eso sirve lo de que se hagan cuenta. En su cuenta van a poder ver sus saved searches."*).

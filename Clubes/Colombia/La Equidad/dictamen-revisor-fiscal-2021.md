@@ -1,0 +1,245 @@
+--- pág. 1 ---
+
+![img-0.jpeg](img-0.jpeg)
+
+**A&C Consultoría y Auditoría Empresarial**
+Entidad Cooperativa
+
+## **Opinión e informe del revisor fiscal**
+
+Señores
+
+Asamblea General de Accionistas
+
+Club Deportivo La Equidad Seguros S.A.
+
+### **Opinión**
+
+1. Hemos auditado los estados financieros del Club Deportivo La Equidad Seguros, que comprenden el estado de situación financiera a 31 de diciembre de 2021, el estado del resultado integral, el estado de cambios en el patrimonio neto y el estado de flujos de efectivo correspondientes al ejercicio terminado en dicha fecha, así como las notas explicativas de los estados financieros que incluyen un resumen de las políticas contables significativas.
+2. En nuestra opinión, los estados financieros adjuntos, que fueron tomados fielmente de los libros, presentan en forma fidedigna, en todos los aspectos materiales, la situación financiera del Club Deportivo La Equidad Seguros a 31 de diciembre de 2021, así como los resultados de sus operaciones y flujos de efectivo correspondientes al ejercicio terminado en dicha fecha, de conformidad con las normas de información financiera (NIF), aplicadas de manera uniforme en relación con el periodo anterior.
+
+### **Fundamento de la opinión**
+
+3. Hemos llevado a cabo nuestra auditoría de conformidad con las normas de aseguramiento de la información (NAI).
+4. Nuestras responsabilidades de acuerdo con dichas normas se describen más adelante en la sección “Responsabilidades del revisor fiscal” de nuestro informe.
+5. Somos independientes del Club Deportivo La Equidad Seguros de conformidad con los requerimientos de ética aplicables a nuestra auditoría de los estados financieros en Colombia y hemos cumplido las demás responsabilidades de ética de conformidad con esos requerimientos.
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+
+Móvil: 310 2534314
+
+Bogotá – Colombia
+
+www.aycempresarial.com
+
+1
+
+--- pág. 2 ---
+
+![img-1.jpeg](img-1.jpeg)
+
+A&C Consultoría y Auditoría Empresarial
+
+Entidad Cooperativa
+
+6. Consideramos que hemos obtenido las informaciones necesarias para cumplir con nuestras funciones y la evidencia de auditoría que hemos obtenido brinda una base suficiente y apropiada para nuestra opinión.
+
+### Asuntos clave de la auditoría
+
+7. Los asuntos clave de la auditoría son aquellos asuntos que, según nuestro juicio profesional, han sido de la mayor significatividad en nuestra auditoría de los estados financieros del periodo actual. Estos asuntos han sido tratados en el contexto de nuestra auditoría de los estados financieros en su conjunto y en la definición de nuestra opinión sobre estos, y no expresamos una opinión por separado sobre esos asuntos.
+
+(a) Derechos deportivos
+
+Evaluamos y verificamos los derechos deportivos de propiedad del Club Deportivo la Equidad Seguros S.A., en particular los siguientes asuntos:
+
+- La política contable sobre derechos deportivos de los jugadores del Club Deportivo, de conformidad con los nuevos marcos normativos para clubes de futbol.
+- Evaluación de la influencia de terceros.
+- Evaluación de transferencias definitivas con carácter oneroso y/o gratuita.
+- Evaluación del reconocimiento, medición posterior, revelación y presentación.
+- Las observaciones y oportunidades de mejoramiento fueron informadas a la administración por esta revisoría fiscal.
+
+(b) Ingresos de operación
+
+Se evaluaron los ingresos de operación por concepto de escuelas de futbol, derechos deportivos y publicidad, donde evaluamos los siguientes aspectos teniendo en cuenta lo reglamentado en el decreto 2420 de 2015 para el grupo 2:
+
+- Reconocimiento
+- Medición
+- Revelación
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+
+Móvil: 310 2534314
+
+Bogotá – Colombia
+
+www.aycempresarial.com
+
+2
+
+--- pág. 3 ---
+
+![img-2.jpeg](img-2.jpeg)
+
+**A&C Consultoría y Auditoría Empresarial**
+Entidad Cooperativa
+
+- Presentación.
+
+# **Responsabilidades de los administradores de la entidad**
+
+8. Los administradores, quienes deben actuar de buena fe, con lealtad y la diligencia de un buen hombre de negocios, son responsables de:
+(a) realizar los esfuerzos conducentes al adecuado desarrollo del objeto social;
+(b) preparar y presentar los estados financieros adjuntos de conformidad con las NIF;
+(c) establecer y mantener un efectivo sistema de control interno en toda la organización, lo que los convierte, por definición, en el ente de control de la entidad, y
+(d) velar por el estricto cumplimiento de las disposiciones legales o estatutarias aplicables, así como de supervisar el proceso de información financiera del Club Deportivo La Equidad Seguros.
+
+9. En la preparación de los estados financieros, los administradores son responsables de la valoración de la capacidad del Club Deportivo La Equidad Seguros de continuar como negocio en marcha, revelando, según corresponda, las cuestiones relacionadas con el negocio en marcha y utilizando la hipótesis de negocio en marcha, excepto si la administración tiene la intención de liquidar la sociedad o de cesar sus operaciones, o bien no exista otra alternativa realista.
+
+10. Los estados financieros fueron debidamente certificados por el representante legal y el contador público que los preparó, en cumplimiento de las normas legales. Con dicha certificación ellos declaran que verificaron previamente las afirmaciones, explícitas e implícitas, en cada uno de los estados financieros, a saber:
+(a) Existencia. Los activos y pasivos del Club Deportivo La Equidad Seguros existen en la fecha de corte y las transacciones registradas se han realizado durante el período.
+(b) Integridad. Todos los hechos y transacciones económicas realizadas han sido reconocidos.
+(c) Derechos y obligaciones. Los activos representan probables
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+Móvil: 310 2534314
+Bogotá – Colombia
+www.aycempresarial.com
+
+3
+
+--- pág. 4 ---
+
+![img-3.jpeg](img-3.jpeg)
+
+A&C Consultoría y Auditoría Empresarial
+
+Entidad Cooperativa
+
+beneficios económicos futuros (derechos) y los pasivos representan probables sacrificios económicos futuros (obligaciones), obtenidos o a cargo del Club Deportivo La Equidad Seguros.
+
+- (d) Valuación. Todos los elementos han sido reconocidos por los montos apropiados y su medición es confiable.
+- (e) Presentación y revelación. Los hechos y las transacciones económicas han sido correctamente clasificados, descritos y revelados.
+
+## Responsabilidades del revisor fiscal
+
+11. Nuestros objetivos, en relación con los estados financieros, son los de obtener seguridad razonable de que:
+
+- (a) en su conjunto estén libres de inexactitud material, debida a fraude o error;
+- (b) el estado de situación financiera y el estado del resultado integral hayan sido tomados fielmente de los libros;
+- (c) el estado de situación financiera presente en forma fidedigna, de conformidad con las normas de información financiera (NIF), la situación financiera al final del periodo auditado;
+- (d) el estado del resultado integral presente en forma fidedigna el resultado de sus operaciones en el periodo auditado;
+- (e) las normas de información financiera (NIF) en el periodo corriente se han aplicado de manera uniforme en relación con el periodo anterior y
+- (f) emitir un informe de auditoría que contenga nuestra opinión, en cumplimiento de las disposiciones legales y estatutarias.
+
+Seguridad razonable es un alto grado de seguridad, pero no garantiza que una auditoría realizada de conformidad con las NAI siempre detecte una inexactitud material cuando existe. Las inexactitudes pueden deberse a fraude o error y se consideran materiales si, individualmente o de forma agregada, puede preverse razonablemente que influyan en las decisiones económicas que los usuarios toman basándose en los estados financieros.
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+
+Móvil: 310 2534314
+
+Bogotá – Colombia
+
+www.aycempresarial.com
+
+4
+
+--- pág. 5 ---
+
+![img-4.jpeg](img-4.jpeg)
+
+A&C Consultoría y Auditoría Empresarial
+
+Entidad Cooperativa
+
+12. Como parte de una auditoría de conformidad con las NAI, aplicamos nuestro juicio profesional y mantuvimos una actitud de escepticismo profesional durante toda la auditoría. También:
+
+(a) Identificamos y valoramos los riesgos de inexactitud material en los estados financieros, debidos a fraude o error, diseñamos y aplicamos pruebas de auditoría para responder a dichos riesgos y obtuvimos evidencia de auditoría suficiente y apropiada que brinden una base para nuestra opinión. El riesgo de no detectar una inexactitud material debida a fraude es más elevado que en el caso de una inexactitud material debida a error, ya que el fraude puede implicar colusión, falsificación, omisiones deliberadas, manifestaciones intencionalmente erróneas o la elusión del control interno.
+(b) Obtuvimos conocimiento del sistema de control interno, con el fin de diseñar y aplicar pruebas de auditoría que sean adecuadas en función de las circunstancias y de expresar una opinión sobre si hay y son adecuadas las medidas de control interno, de conservación y custodia de los bienes de la entidad o de terceros que estén en poder de la entidad.
+(c) Evaluamos lo apropiado de las políticas contables aplicadas y la razonabilidad de las estimaciones contables y la información revelada por la administración.
+(d) Concluimos sobre lo adecuado de la utilización, por la administración, de la hipótesis de negocio en marcha y, basándonos en la evidencia de auditoría obtenida, concluimos que no existe una incertidumbre material relacionada con hechos o con condiciones que pueden generar dudas significativas sobre la capacidad del Club Deportivo La Equidad Seguros para continuar como negocio en marcha. Sin embargo, hechos o condiciones futuros pueden ser causa de que el Club Deportivo La Equidad Seguros deje de ser un negocio en marcha.
+(e) Evaluamos la presentación global, la estructura y el contenido de los estados financieros, incluida la información revelada, y si los estados financieros representan las operaciones celebradas o cumplidas por cuenta de la entidad, las transacciones y hechos subyacentes de un modo que logran la presentación fidedigna.
+(f) Comunicamos a los responsables del gobierno de la entidad en relación con, entre otras cuestiones, el alcance y el momento de
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+
+Móvil: 310 2534314
+
+Bogotá – Colombia
+
+www.aycempresarial.com
+
+5
+
+--- pág. 6 ---
+
+![img-5.jpeg](img-5.jpeg)
+
+A&C Consultoría y Auditoría Empresarial
+
+Entidad Cooperativa
+
+realización de las pruebas de auditoría planificadas y los hallazgos significativos de la auditoría, así como cualquier deficiencia significativa del control interno que identificamos en el transcurso de la auditoría.
+
+(g) También proporcionamos a los responsables del gobierno de la entidad una declaración de que hemos cumplido los requerimientos de ética aplicables en relación con la independencia y nos comunicamos con ellos acerca de todas las relaciones y demás cuestiones de las que se puede esperar razonablemente que pueden afectar a nuestra independencia y, en su caso, las correspondientes salvaguardas.
+
+(h) Entre las cuestiones que han sido objeto de comunicación con los responsables del gobierno de la entidad, determinamos las que han sido de la mayor significatividad en la auditoría de los estados financieros del periodo actual y que son, en consecuencia, los asuntos clave de la auditoría.
+
+### **Informe sobre otros requerimientos legales**
+
+13. En relación con la contabilidad, los libros de comercio, los actos de los administradores y la correspondencia, con base en el resultado y el alcance de mis pruebas practicadas, informo que:
+
+(a) He obtenido las informaciones necesarias para cumplir con mis responsabilidades;
+
+(b) Las operaciones celebradas o cumplidas por cuenta de la entidad y registradas en los libros de comercio, la contabilidad y los actos de los administradores se ajustaron a las disposiciones que regulan la actividad y a la técnica contable, a los estatutos y a las decisiones de la asamblea y el consejo de administración, y
+
+(c) La correspondencia, los comprobantes de las cuentas y los libros de actas y registro de accionistas, en su caso, se llevaron y conservaron debidamente, de conformidad con las normas legales.
+
+14. En relación con el sistema de control interno, con base en el alcance y resultados de las pruebas practicadas, informo que hay y son adecuadas las medidas de control interno y de conservación y custodia de sus bienes y de los de terceros en su poder. En el transcurso del año
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+
+Móvil: 310 2534314
+
+Bogotá – Colombia
+
+www.aycempresarial.com
+
+6
+
+--- pág. 7 ---
+
+![img-6.jpeg](img-6.jpeg)
+
+A&C Consultoría y Auditoría Empresarial
+
+Entidad Cooperativa
+
+informé las principales recomendaciones tendientes a mejorar el sistema de control interno y la administración de riesgos, sobre las cuales la administración ha venido implementando los planes de acción correspondientes.
+
+15. En relación con los aportes al sistema de seguridad social, en atención a lo dispuesto en el artículo 3.2.1.6 del decreto 780 de 2016 y con base en el alcance y resultado de mis pruebas de auditoría, hago constar que el Club Deportivo La Equidad Seguros efectuó en forma correcta y oportuna sus aportes al sistema de seguridad social integral.
+
+16. Revisado el informe de gestión de los administradores, encontré que existe debida concordancia de lo que allí se informa con lo que se presenta los estados financieros adjuntos.
+
+Luis Humberto Ramírez Barrios
+
+T.P. 23.004-T
+
+Delegado de A&C Consultoría y Auditoría Empresarial
+
+Bogotá, D.C., Colombia
+
+16 de marzo de 2022
+
+CDE-049-2021
+
+Carrera 66B No. 42-28. Tels.: 7458864 a 66
+
+Móvil: 310 2534314
+
+Bogotá – Colombia
+
+www.aycempresarial.com
+
+7
+
+![img-7.jpeg](img-7.jpeg)

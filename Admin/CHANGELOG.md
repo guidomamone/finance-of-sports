@@ -15,6 +15,92 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 250 — `COMO-CORRE-EL-PROYECTO.html` remedido entero + sus 4 números clave ya no se tipean a mano
+
+- Pedido de Guido: "hay más clubes, más países, más ligas, se puede hacer que no esté hardcoded eso?",
+  después de notar que el mapa de procesos seguía diciendo "41 clubes · 6 países" con el sitio ya en
+  161 clubes de 14 países — la Versión 249 había agregado la tabla de transcripción sin remedir el
+  resto del documento.
+- **`tools/generate-como-corre-stats.js` (generador nuevo, el 5to de `tools/`)**: recalcula el bloque
+  de cabecera (clubes, países, ligas, documentos fuente) leyendo `data/clubs.js`/`data/leagues.js`/
+  `sources{}` con el mismo criterio de carga por `vm` que ya usan `audit.js` y
+  `generate-fuentes-page.js`. Tiene `--check`. A propósito NO entra en el `checkGenerados()` que
+  bloquea el push (P1): actualiza un documento de referencia interno, no un dato que el sitio
+  publique, y atar la auditoría de datos a este documento sería la dirección equivocada. "Checks de
+  datos" (`verifyTieOuts()`/`checkFxSanity()`) se queda manual a propósito — automatizarlo de verdad
+  exigiría reimplementar esas dos funciones en Node, que es justo lo que `Admin/CONVENCIONES.md`
+  prohíbe.
+- **Todo el resto del documento remedido contra el repo real** (no solo el bloque de cabecera): la
+  tabla de "Código" ya no dice que `index.html` lleva el CSS (se separó a `js/styles.css` en el to-do
+  65, antes de esta versión, pero el documento nunca se actualizó) y suma su fila propia; los pesos de
+  archivo de las tablas Código/Datos/Instrucciones/Registro; los "228 checks"/"41 clubes" de la
+  sección de auditoría, ahora 842/161; el conteo de `audit.js` (0 P0/P1/P2, 9 P3, 83 silenciados).
+- **Sección nueva, "02 Buscar antes de cargar (sourcing)"**, entre "Arrancar sesión" y "Onboardear un
+  club" (que pasa a ser el paso 03; el resto de los pasos corridos +1, 04 a 08). Resume la escalera de
+  5 familias de `club-sourcing` 0.1 (sitio oficial → regulador del país → Wayback CDX de dominio
+  completo → búsqueda dirigida → prensa) y la escalada de QUIÉN la ejecuta validada con el A/B test
+  del 2026-09-26 (Sonnet → gate de señal → Exa → Opus → Sonnet), más las 5 salidas de 0.3 cuando la
+  escalera se agota. Pedido de Guido: "abrime el proceso de sourcing que ahora está más interesante y
+  profundo".
+- **Corregido un flag equivocado, en `CLAUDE.md` y en este mismo documento**: la instrucción decía
+  `node tools/gemini-transcribe.mjs --all` para redoer lo que Mistral marca como escaneo, pero `--all`
+  busca PDFs SIN ningún `.md` y se saltea justo los que Mistral ya tocó — el flag correcto es
+  `--redo-mistral-scanned`. Corregido también el comentario de cabecera de
+  `tools/mistral-ocr-transcribe.mjs`, que seguía describiéndose a sí mismo como "pensado como segunda
+  pasada" (el orden de antes de la Versión 244), contradiciendo el pipeline ya vigente.
+
+## Versión 249 — documentado el pipeline de 3 IAs para transcribir (Mistral → Gemini → Claude)
+
+- Pedido de Guido: que en dos semanas no se olvide quién es Mistral ni por qué hay tres capas.
+  Actualizado en los tres lugares que corresponden, cada uno para su lector: `CLAUDE.md` sección
+  "Cada PDF nuevo" (la regla que lee cualquier sesión al arrancar), `club-data-mapping/SKILL.md`
+  sección 15 (el flujo de Tesseract queda como lo que hace un subagente cuando le toca a él, no como
+  el default), y `Admin/COMO-CORRE-EL-PROYECTO.html` (el mapa de procesos para Guido, nueva tabla en
+  el paso 02 con quién transcribe, cuándo, costo por documento y el límite conocido de cada uno).
+  Ningún archivo repite el detalle completo — los tres apuntan a `Admin/test-costo-transcripcion.md`.
+
+## Versión 248 — `tools/mistral-ocr-transcribe.mjs`: 3 bugs reales y advertencia de escaneo
+
+- **Bug de tablas (crítico)**: el `markdown` de cada página de Mistral OCR trae las tablas como un
+  link-placeholder (`[tbl-0.md](tbl-0.md)`) en vez del contenido — vive aparte en `page.tables[]`.
+  Sin resolverlo, el `.md` quedaba con links rotos y CERO cifras (encontrado en el test de
+  comparación de 10 documentos contra transcripciones ya verificadas, 2026-09-26).
+- **Bug de timeout**: el `AbortController` solo cubría hasta que llegaban los headers de la
+  respuesta, no la lectura completa del cuerpo — un documento colgó el proceso >15 minutos sin
+  cortar. Ahora el mismo `signal` cubre `resp.json()` también.
+- **429 con backoff insuficiente**: un rate-limit real (cuenta sin método de pago cargado) reintentaba
+  cada 2-16s como si fuera un error de red transitorio. Ahora respeta `Retry-After` si viene, y usa un
+  piso de 20s si no.
+- **Detección de escaneo + advertencia inline**: `--all`/`--retry-gemini-failures` marcan cada PDF sin
+  capa de texto real con `[ESCANEADO -- revisar cifras a mano]` en la consola, y el `.md` resultante
+  arranca con una advertencia visible. Motivo: en el único documento escaneado+rotado+dañado del test
+  de comparación, Mistral leyó bien las líneas de detalle pero inventó un TOTAL con la misma
+  confianza que uno correcto, sin marcarlo `[ilegible]` — a diferencia de Gemini o de una
+  transcripción hecha por Claude. Agregada la regla correspondiente a `club-data-mapping/SKILL.md`
+  sección 6, para que el onboarding no confíe solo en el tie-out cuando ve esa advertencia.
+- Resultado tras el fix: 9 de 10 documentos del test de comparación salieron con coincidencia exacta
+  contra la transcripción ya verificada (68 cifras comparadas, 59 coinciden — las 9 diferencias son
+  todas del documento escaneado/dañado de arriba).
+
+## Versión 247 — Wayback CDX de dominio completo encuentra 2 balances de Boca que se creían perdidos
+
+- Pedido de Guido, a raíz de una discusión sobre costo de tokens: reintentar sourcing de balances
+  viejos de Boca y River con las herramientas ya identificadas (Wayback CDX de dominio completo para
+  Boca, variantes del patrón turiver/Backblaze para River).
+- **Boca: 4 documentos nuevos**, encontrados en `/rebrand/files/` de `bocajuniors.com.ar` (ruta sin
+  ningún nombre obvio en el sitio vivo) — Memoria y Estados Contables Ejercicio 118 (cerrado
+  30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado), ambos escaneados y pendientes de OCR;
+  más los Presupuestos de Ejercicio 119 y 120, estos con capa de texto real. Períodos confirmados
+  abriendo la portada de cada PDF, no solo por el nombre de archivo. 2018, 2019, 2021 y 2024 siguen
+  sin aparecer en el dominio. Detalle completo en `fuentes/Argentina/Boca.md`.
+- **River: sin hallazgo nuevo** en el patrón turiver/Backblaze reintentado para otros años. Apareció
+  un balance del ejercicio cerrado 31/08/2016 en Scribd (más viejo que cualquiera ya cargado) pero
+  detrás de una suscripción paga — no descargado, queda como pendiente de decisión de Guido, mismo
+  criterio que el trámite de la IGJ ya documentado.
+- **Actualizado `.claude/skills/club-sourcing/SKILL.md`** (sección 0.1, familia 3): nuevo gotcha —
+  un club "ya muy sourceado" no es excusa para no haber corrido nunca el CDX de dominio completo;
+  la nota de Boca decía "no aplica, club muy sourceado" y ahí mismo estaban estos 2 balances.
+
 ## Versión 246 — barrido de sourcing de los 40 clubes más tradicionales de Argentina (7 agentes en paralelo)
 
 - Pedido de Guido: elegir 40 clubes argentinos "tradicionales" (criterio propio: los 5 grandes de

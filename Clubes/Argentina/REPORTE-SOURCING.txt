@@ -1,0 +1,124 @@
+REPORTE DE SOURCING - DOCUMENTO FINANCIERO CANDIDATOS
+4 CLUBES ARGENTINOS - 26 SEPTIEMBRE 2026
+
+================================================================================
+CLUB 1: MITRE (SANTIAGO DEL ESTERO)
+================================================================================
+
+DOMINIO OFICIAL ENCONTRADO: camitre.com
+
+BÚSQUEDA REALIZADA:
+- Sitio oficial navegado: https://camitre.com/
+  → No contiene links a balance, estados contables, memoria o asamblea
+- Wayback Machine CDX: Sin resultados de PDFs
+- WebSearch directa: "Mitre Santiago del Estero balance filetype:pdf"
+  → No encontró PDFs del club
+- Boletín oficial Santiago del Estero: Acceso limitado (403 Forbidden en archivos)
+- Referencias en prensa (infodelestero.com): Menciona asambleas 2026/2027 pero sin PDFs
+
+PDF/DOCUMENTOS DESCARGADOS: NINGUNO
+
+NOTAS:
+- Club confirmado con sitio operativo
+- Se confirmó asamblea ordinaria 2024/2025 (según infodelestero.com)
+- Documentos no están públicamente disponibles en web
+- SUGERENCIA: Contacto directo con club para solicitar documentos
+
+================================================================================
+CLUB 2: RACING CLUB (CÓRDOBA, NUEVA ITALIA)
+================================================================================
+
+DOMINIO OFICIAL ENCONTRADO: racingcba.com.ar
+
+BÚSQUEDA REALIZADA:
+- Sitio oficial navegado: https://racingcba.com.ar/
+  → Redirect a http://racingcba.com.ar/bienvenido/
+  → Contiene página "asambleas-en-racing/" pero sin PDFs vinculados
+- Wayback Machine CDX: Sin resultados de PDFs
+- WebSearch directa: "Racing Córdoba Nueva Italia balance filetype:pdf"
+  → No encontró PDFs específicos del club
+- Boletín oficial Córdoba: Existe pero bloqueado por CloudFront
+- Referencia en boletinoficial.cba.gov.ar: Menciona asambleas pero sin PDFs públicos
+
+PDF/DOCUMENTOS DESCARGADOS: NINGUNO
+
+NOTAS:
+- Club confirmado con sitio operativo
+- Se confirmó asambleas con lectura de memoria y balance (página asambleas-en-racing)
+- Documentos contacto: adm.racingcba@gmail.com, 0351 352-5777
+- SUGERENCIA: Contacto directo con administración
+
+================================================================================
+CLUB 3: SAN MIGUEL
+================================================================================
+
+DOMINIO OFICIAL ENCONTRADO: clubatleticosanmiguel.com.ar
+
+BÚSQUEDA REALIZADA:
+- Sitio oficial navegado: https://clubatleticosanmiguel.com.ar/
+  → No contiene links a balance, estados contables, memoria o asamblea
+- Wayback Machine CDX: Sin resultados de PDFs
+- WebSearch directa: "San Miguel fútbol balance filetype:pdf"
+  → No encontró PDFs del club (encontró refs a S.A. San Miguel corporativo, no club)
+- Google Drive público: Sin resultados
+- Redes sociales (Instagram @oficial.casm): Sin documentos vinculados
+
+PDF/DOCUMENTOS DESCARGADOS: NINGUNO
+
+NOTAS:
+- Club confirmado con sitio operativo
+- No hay evidencia de documentos públicos en web
+- Cuenta de socios activa (socios.clubatleticosanmiguel.com)
+- SUGERENCIA: Documentos probablemente requieren acceso de socio
+
+================================================================================
+CLUB 4: SAN TELMO
+================================================================================
+
+DOMINIO OFICIAL ENCONTRADO: clubsantelmo.com.ar
+
+BÚSQUEDA REALIZADA:
+- Sitio oficial navegado: https://clubsantelmo.com.ar/
+  → No contiene links a balance, estados contables, memoria o asamblea
+- Wayback Machine CDX: Un resultado (protocolo violencia de género, no financiero)
+  → https://clubsantelmo.com.ar/wp-content/uploads/2024/11/PROTOCOLO-SAN-TELMO-VIOLENCIA-DE-GENERO.pdf
+- WebSearch directa: "San Telmo balance filetype:pdf"
+  → No encontró PDFs financieros del club
+- API WordPress consultado: Posts de noticias pero sin documentos
+- Redes sociales (Instagram @soydetelmo): Sin documentos vinculados
+
+PDF/DOCUMENTOS DESCARGADOS: NINGUNO
+
+NOTAS:
+- Club confirmado con sitio operativo (WordPress)
+- Estructura de carpeta: /wp-content/uploads/ existe pero sin PDFs de balance
+- Contacto: clubsantelmo.com.ar/contacto/
+- SUGERENCIA: Contacto directo con club
+
+================================================================================
+RESUMEN GENERAL
+================================================================================
+
+HALLAZGOS:
+1. Los 4 clubes tienen sitios oficiales activos
+2. CERO documentos financieros encontrados en búsqueda pública
+3. Se confirma que asambleas ocurrieron/ocurren (por referencias en prensa)
+4. Documentos probablemente: No publicados en web, No indexados por buscadores
+5. Pueden estar: Detrás de login de socios, En boletines oficiales no-indexados, No digitalizados
+
+ESTRATEGIAS INTENTADAS:
+✓ Búsqueda de sitios oficiales
+✓ WebFetch de homepages y menús
+✓ Wayback Machine CDX por dominio
+✓ WebSearch filetype:pdf
+✓ Búsqueda en Google Drive público
+✓ Búsqueda en boletines oficiales (provincias)
+✓ Búsqueda en medios deportivos
+✓ Búsqueda en redes sociales
+✓ Acceso a APIs de WordPress
+
+ESTRATEGIAS NO INTENTADAS (para Sonnet):
+- Contacto directo a clubs (requiere comunicación real)
+- Acceso a bases de datos de Inspección de Personas Jurídicas (posiblemente requiere permisos)
+- Búsqueda en repositorios institucionales privados
+- OCR de documentos si aparecen como imágenes

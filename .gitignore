@@ -80,6 +80,20 @@ Business Books/
 # (secreto, no documento) que nunca entra a git, con o sin `Admin/`.
 Admin/outreach/.env
 
+# Misma excepción: Admin/gemini/.env tiene la API key de Gemini que usa `tools/gemini-transcribe.mjs`
+# (promovido a herramienta permanente el 2026-09-26 después del to-do 66, test de costo Sonnet vs
+# Haiku vs API externa) — mismo criterio que la de arriba.
+Admin/gemini/.env
+
+# Misma excepción: Admin/mistral/.env tiene la API key de Mistral OCR que usa
+# `tools/mistral-ocr-transcribe.mjs` (segunda pasada para los PDFs que Gemini rechaza con
+# RECITATION, 2026-09-26).
+Admin/mistral/.env
+
+# Misma excepción: Admin/exa/.env tiene la API key de Exa (búsqueda semántica), evaluada como
+# barrido 3 de sourcing (ver .claude/skills/club-sourcing/SKILL.md sección 0.1b, 2026-09-26).
+Admin/exa/.env
+
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).
 # EL ERROR QUE CORRIGE: destrackear resolvía la publicación al precio de perder el
