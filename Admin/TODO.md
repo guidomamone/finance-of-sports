@@ -94,20 +94,6 @@ perdieron sino que se descartaron:
     que confirme que el recorte no se comió una fila que cambia el resultado final), no ahorrar
     tokens a costa de volver a exponerse a ese error.
 
-88. ¿CONVIENE PARTIR LA LECTURA DE SKILLS ENTRE SESIONES DE ONBOARDING? (candidato del to-do 85,
-    2026-09-27, del onboarding de Almagro). `club-data-mapping/SKILL.md` (89 KB) +
-    `club-or-year-onboarding/SKILL.md` (67 KB) se leen COMPLETOS al empezar cualquier sesión que
-    toque datos financieros de un club — ~150 KB de contexto antes de ver el primer documento, sea
-    la sesión de 1 club o de 10. Pregunta a explorar: ¿tiene sentido que una sesión/agente haga SOLO
-    el mapeo de rubros (lea solo `club-data-mapping`) y otra SOLO la arquitectura/registro del club
-    (lea solo `club-or-year-onboarding`), en vez de que la misma sesión pague el costo fijo de los
-    dos? CONTRA A PESAR ANTES DE INTENTARLO: los dos skills se referencian cruzado todo el tiempo
-    (ej. el `fx` vive en `club-data-mapping` pero se usa al armar el `fiscalYearMeta` que es tema de
-    `club-or-year-onboarding`), así que partir el trabajo en 2 sesiones podría generar más idas y
-    vueltas (o errores por falta de contexto) que lo que ahorra en lectura. Es una pregunta de
-    PROCESO para pensar con Guido, no algo para implementar sin medir primero en un caso real cuánto
-    se ahorra vs. cuánto se pierde en coordinación.
-
 85. RECORRER EL PROCESO DE ONBOARDING PUNTO POR PUNTO Y VER QUÉ SE PUEDE HACER MÁS EFICIENTE Y/O
     DELEGAR A OTRA IA (pedido de Guido, 2026-09-27: *"ya sé que hay uno o dos puntos de JEV, ponelo
     como otro punto"* — distinto de 36 y 74, que son específicos a categorizar rubros con JEV). Esto

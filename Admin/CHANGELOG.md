@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 261 — to-do 88 cerrado por análisis, no por código: no conviene partir la lectura de skills entre sesiones
+
+- Conclusión (2026-09-27): partir la lectura de `club-data-mapping`/`club-or-year-onboarding` entre 2
+  sesiones (una solo mapeo, otra solo arquitectura) no ahorra tokens — los ~150 KB de los dos skills
+  se pagan igual en total, solo se reparten entre dos facturas en vez de una — y agrega un costo nuevo
+  real: el traspaso de decisiones de una sesión a la otra, justo donde ya se coló un error esta misma
+  sesión (el PAT de Almagro 2021-2023 mal leído por un `grep` en vez de por lectura completa). El
+  apalancamiento real ya existe sin inventar nada: onboardear varios clubes en la MISMA sesión, que ya
+  amortiza el costo fijo de los skills entre todos. To-do borrado sin dejar código, la conclusión
+  queda acá.
+
 ## Versión 260 — to-do 92: podada la prosa narrativa acumulada de `club-data-mapping/SKILL.md` (sección 13)
 
 - La sección 13 ("Formato Simplificado" homologado a Boca) venía acumulando "Versión 46... 47... 48...
