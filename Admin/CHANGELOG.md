@@ -15,6 +15,21 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 255 — 5 to-dos nuevos (88-92), candidatos del to-do 85 salidos del onboarding de Almagro y de resolver el to-do 71
+
+- `Admin/TODO.md`: 88 (¿conviene partir la lectura de skills entre sesiones de
+  club-data-mapping/club-or-year-onboarding?), 89 (leer el documento completo es caro pero
+  abaratarlo tiene un riesgo ya confirmado en esta sesión — un total sacado con `grep` para
+  Almagro 2021-2023 estaba mal, se salvó porque igual hubo que leer completo), 90 (falta un
+  chequeo de fidelidad de transcripción que mire contenido, no solo cantidad de páginas — el
+  chequeo de páginas del to-do 71 no agarró ni las marcas corridas ni los placeholders de Haiku),
+  91 (precargar en lote FX_CLOSE y brandColor en vez de buscar uno por uno, con recomendación de
+  arquitectura: la serie histórica completa va a un archivo de referencia fuera de `data/`, nunca
+  al payload eager del sitio), 92 (podar la prosa narrativa de `club-data-mapping/SKILL.md`, 89 KB,
+  aplicando la convención que el propio skill ya tiene escrita mientras no aplica pareja).
+- Ninguno de los 5 es código todavía, son candidatos para que Guido priorice (mismo criterio que
+  pide el to-do 85).
+
 ## Versión 254 — completadas las 4 transcripciones incompletas del test de costo (to-do 71)
 
 - `Clubes/Colombia/{Envigado/estados-financieros-2024,2023, Atletico Bucaramanga/estados-financieros-2017, Alianza FC/estados-financieros-2024}.md`:

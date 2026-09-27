@@ -54,6 +54,86 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+92. PODAR LA PROSA NARRATIVA DE `club-data-mapping/SKILL.md` (candidato del to-do 85, 2026-09-27,
+    surgido de la sesión de onboarding de Almagro). El propio skill ya tiene la convención escrita
+    ("Cómo mantener este skill": separar regla vigente / hecho comprimido a una línea / lo que va al
+    CHANGELOG), pero no se aplicó pareja en sus 20 secciones — la sección 13 en particular acumula
+    "Versión X, Guido dijo textual..." ronda tras ronda sin que cada una agregue una regla nueva, y
+    es buena parte de por qué el archivo pesa 89 KB (se lee ENTERO al empezar cualquier sesión que
+    toque datos financieros, ver to-do 88). Es trabajo de edición, no de código: releer las secciones
+    más historiadas y comprimir la envoltura narrativa a una línea, dejando la regla y los ejemplos
+    pedagógicos intactos. ANTES DE TOCAR EL SKILL: proponerle el texto resultante a Guido y esperar
+    el OK (regla ya establecida para cualquier cambio a `.claude/skills/*/SKILL.md`), no editarlo
+    directo.
+
+91. PRECARGAR TIPOS DE CAMBIO Y BRANDCOLOR EN LOTE, EN VEZ DE BUSCAR UNO POR UNO POR CLUB (candidato
+    del to-do 85, 2026-09-27). Hoy cada club nuevo que no declara su propio `fx` dispara una búsqueda
+    web puntual de la cotización mayorista de SU fecha de cierre (`club-data-mapping/SKILL.md`
+    sección 5) — pasó de nuevo con Almagro, 6 búsquedas para 6 cierres de 31/10 que un archivo
+    histórico completo ya tiene todas juntas. Mismo patrón con `brandColor`
+    (`club-or-year-onboarding` sección 3): una tabla de agregador por LIGA ya resuelve varios clubes
+    de una (el skill lo dice para footylogos), pero solo se aprovecha cuando el onboarding cae justo
+    en un barrido de liga completa, no club por club.
+
+    RECOMENDACIÓN DE ARQUITECTURA (para no repetir el error ya descartado del "adelgazar payload
+    eager" — ver la entrada descartada de este archivo sobre ese to-do): la serie histórica completa
+    NO va a `data/currency-map.js` — ese archivo es eager, se baja en cada pageview, y `FX_CLOSE`
+    tiene que seguir siendo la lista CURADA y chica de cotizaciones que algún club realmente usa, no
+    una serie diaria de años. La serie completa (bajada UNA VEZ de una fuente pública, ej. la API de
+    series históricas del BCRA) vive como archivo de referencia FUERA de lo que el sitio sirve —
+    `tools/fx-reference/ars-usd.json` o similar (no `data/`, para que quede afuera de lo que Netlify
+    publica, mismo criterio que ya saca `Admin/` del deploy) — y un script/función chica
+    (`tools/lookup-fx-close.js`) busca LOCAL contra ese archivo en vez de salir a la web. Cuando una
+    sesión de onboarding necesita una fecha puntual, el script se la da al instante, y RECIÉN AHÍ esa
+    fecha se agrega a `FX_CLOSE` en `currency-map.js` (igual que hoy, pero sin la búsqueda web). Mismo
+    patrón para `brandColor`: una tabla de referencia por liga (`tools/brand-color-reference/
+    <liga>.json`), poblada una sola vez con las tablas de footylogos/teamcolorcodes de esa liga
+    completa, consultada local antes de salir a buscar club por club. Ninguno de los 2 archivos de
+    referencia se sirve al visitante ni se lee en vivo desde el sitio — son insumo de onboarding, no
+    dato de producción.
+
+90. CHEQUEO DE FIDELIDAD DE UNA TRANSCRIPCIÓN QUE MIRE CONTENIDO, NO SOLO CANTIDAD DE PÁGINAS
+    (candidato del to-do 85, encontrado resolviendo el to-do 71, 2026-09-27). El chequeo estructural
+    que marcó las 4 transcripciones de Haiku como incompletas (`Admin/test-costo-transcripcion.md`)
+    solo contaba páginas — y en 2 de los 4 casos (Alianza FC, Bucaramanga) el conteo ya daba bien
+    porque las marcas venían CORRIDAS, no faltantes, mientras que en Envigado el problema real
+    (bloques reemplazados por un comentario placeholder tipo `[Complex tax reconciliation
+    table...]` en vez de transcribirse) tampoco lo agarra un conteo de páginas: el placeholder ocupa
+    una marca de página igual que el contenido real. Falta un chequeo barato (script en `tools/`, no
+    un modelo caro) que detecte patrones de "esto no es una transcripción real" — strings tipo
+    `[Complex...]`/corchetes de resumen, o una densidad de caracteres por página anormalmente baja
+    comparada con el resto del mismo documento — antes de dar una transcripción por buena para
+    onboarding. Distinto del to-do 79 (que chequea integridad del PDF DESCARGADO, en bytes, ANTES de
+    transcribir): esto es fidelidad de la TRANSCRIPCIÓN ya hecha, un paso más adelante en la cadena.
+
+89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
+    (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
+    para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de
+    comisión directiva, dictamen de auditoría, certificación literal) no aporta ningún dato a
+    cargar. Explorar si un recorte previo (anclas tipo "ESTADO DE RESULTADO"/"ANEXO II/III/IV/V")
+    puede ahorrar ese contexto sin perder nada. **OJO CON EL RIESGO, ya se vio en esta misma
+    sesión**: los totales que se armaron con un `grep` rápido (en vez de leer completo) para
+    2021-2023 de Almagro resultaron ser el número EQUIVOCADO ("RESULTADO DEL EJERCICIO" operativo en
+    vez de "RESULTADO FINAL" post-financiero) — el error se detectó solo porque el agente de todos
+    modos tuvo que leer el documento completo para categorizar las líneas. Cualquier recorte que se
+    explore tiene que conservar ese mismo nivel de verificación (ej. un chequeo posterior más barato
+    que confirme que el recorte no se comió una fila que cambia el resultado final), no ahorrar
+    tokens a costa de volver a exponerse a ese error.
+
+88. ¿CONVIENE PARTIR LA LECTURA DE SKILLS ENTRE SESIONES DE ONBOARDING? (candidato del to-do 85,
+    2026-09-27, del onboarding de Almagro). `club-data-mapping/SKILL.md` (89 KB) +
+    `club-or-year-onboarding/SKILL.md` (67 KB) se leen COMPLETOS al empezar cualquier sesión que
+    toque datos financieros de un club — ~150 KB de contexto antes de ver el primer documento, sea
+    la sesión de 1 club o de 10. Pregunta a explorar: ¿tiene sentido que una sesión/agente haga SOLO
+    el mapeo de rubros (lea solo `club-data-mapping`) y otra SOLO la arquitectura/registro del club
+    (lea solo `club-or-year-onboarding`), en vez de que la misma sesión pague el costo fijo de los
+    dos? CONTRA A PESAR ANTES DE INTENTARLO: los dos skills se referencian cruzado todo el tiempo
+    (ej. el `fx` vive en `club-data-mapping` pero se usa al armar el `fiscalYearMeta` que es tema de
+    `club-or-year-onboarding`), así que partir el trabajo en 2 sesiones podría generar más idas y
+    vueltas (o errores por falta de contexto) que lo que ahorra en lectura. Es una pregunta de
+    PROCESO para pensar con Guido, no algo para implementar sin medir primero en un caso real cuánto
+    se ahorra vs. cuánto se pierde en coordinación.
+
 87. SEPARAR LA PROSA DE `club-sourcing/SKILL.md` QUE APLICA A UN SOLO PAÍS, EN VEZ DE QUE VIVA TODA
     EN EL MISMO ARCHIVO (pedido de Guido, 2026-09-27: *"un agente cuya tarea es buscar clubs de
     argentina, no tiene por qué leer qué pasa en Grecia"*). El skill tiene 29 secciones numeradas
