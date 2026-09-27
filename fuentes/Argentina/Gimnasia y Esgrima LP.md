@@ -1,5 +1,22 @@
 # Gimnasia y Esgrima (La Plata)
 
+**Ángulos**: sitio oficial: agotado (chequeo liviano) · Wayback CDX: no aplica (no hace falta, ver
+abajo) · búsqueda web: agotado · regulador/país: no aplica — 2026-09-26.
+
+## Chequeo 2026-09-26 (liviano, pedido explícito): sin ejercicio nuevo
+
+El ejercicio 138° (2024-25, ya cargado) es efectivamente el más reciente: se trató en la Asamblea
+General Ordinaria del 30/10/2025 (post `asamblea-general-ordinaria-2025/`), con un resultado
+GRÁFICO: el **Balance/Estado Contable se aprobó** (superávit $4.022.179.754, pasivo
+$14.173.650.664 ≈ USD 11.6M), pero tanto la **Memoria como el Presupuesto 2025-26 fueron
+RECHAZADOS por unanimidad** en esa misma asamblea (tensión institucional fuerte, hubo incidentes:
+Infobae/El Día cubrieron la asamblea "bochornosa"). Esto NO genera un documento nuevo para cargar:
+el Estado Contable rechazado sigue siendo el mismo 138° que ya está cargado (`balance-2024-2025.pdf`);
+no hay Presupuesto 2025-26 vigente para agregar porque fue rechazado, y el post
+`convocatoria-a-asamblea-general-ordinaria-8/` (que correspondería al ejercicio 139°, 2025-26) todavía
+da 404 — el club no llegó a esa instancia. Nada para cargar esta sesión; volver a chequear cuando
+exista el post -8 o una nueva convocatoria de asamblea (probable oct/nov 2026).
+
 ## Cargado al sitio (2026-09-23): 3 balances + 3 presupuestos, `clubId: 'gimnasiaesgrima-ar'`
 
 Los 9 documentos de la sesión anterior (ver más abajo) quedaron transcriptos y cargados en
@@ -110,4 +127,4 @@ en el archivo `Balance-*.pdf` de al lado. 9 documentos nuevos descargados en
 - El portal de autogestión de socios (autogestion.gimnasia.org.ar) sigue con login y no se probó.
 - Contacto: no se encontró mail institucional directo; sección Socios de gimnasia.org.ar o el portal
   autogestion.gimnasia.org.ar.
-- Último chequeo: 2026-09-23.
+- Último chequeo: 2026-09-26.

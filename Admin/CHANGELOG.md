@@ -15,6 +15,55 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 246 — barrido de sourcing de los 40 clubes más tradicionales de Argentina (7 agentes en paralelo)
+
+- Pedido de Guido: elegir 40 clubes argentinos "tradicionales" (criterio propio: los 5 grandes de
+  AFA + clubes históricos de Buenos Aires, Rosario, Córdoba, Santa Fe, Cuyo y Tucumán) y buscar sus
+  últimos 5 ejercicios fiscales, repartiendo el trabajo en subagentes en paralelo.
+- **Hallazgo principal: 6 balances auditados reales de Almagro** (Ejercicios 80-85, 2018-2023), club
+  nuevo para el sitio, encontrados vía Wayback Machine. El barrido shallow del 2026-09-22 lo había
+  cerrado mal como "0 PDFs archivados" por un gotcha real de truncamiento de capturas grandes de
+  Wayback (>1 MiB) — ahora documentado en `.claude/skills/club-sourcing/SKILL.md`.
+- Ningún otro PDF nuevo descargable en los 39 clubes restantes: 9 ya estaban bien cubiertos sin
+  novedad (Boca, River, Racing, Independiente, Vélez, Estudiantes LP, Gimnasia LP, Unión, Ferro
+  Carril Oeste); ~20 quedaron como **candidatos a mail** (documento confirmado por prensa o asamblea
+  pero nunca publicado digitalmente — detalle club por club en `fuentes/Argentina/<Club>.md`, ver
+  to-do 59/72); 5 como **dead-end real confirmado** (Independiente Rivadavia —dominio actualizado a
+  `csir.com.ar`—, San Martín de San Juan, Quilmes, Huracán, Deportivo Morón); 3 quedaron **bloqueados
+  por motivos técnicos** a retomar con Browser pane (ver to-do 72).
+- Nueva pregunta en `Admin/dudas-por-club.md`: Instituto (Córdoba), el ejercicio 2024-25 nunca se
+  trató en asamblea.
+- Actualizados los 40 `fuentes/Argentina/<Club>.md` tocados (línea `**Ángulos**` + chequeo del día) y
+  `fuentes/_indice/Argentina.md` completo; regenerado `fuentes/README.md` (369 de 571 clubes con
+  documento, +1). `Admin/inventario-pendiente.md` suma la entrada de Almagro.
+
+## Versión 245 — `gemini-transcribe.mjs` pasa a `tools/` con modo lote `--all`
+
+- Guido preguntó cuántos tokens de Claude le costaría pedirme que mande 1000 PDFs a Gemini uno por
+  uno — la respuesta honesta es "bastantes, y no entra en una sola sesión" si lo hago yo archivo por
+  archivo. La solución real es que el script recorra solo: agregado `--all` (busca todos los PDF sin
+  `.md` bajo `Clubes/`, sin tipear ninguna ruta), `--limit N`, `--dir <subcarpeta>`, `--concurrency N`
+  (default 2) y reintento con backoff en 429/5xx. Corre entero desde la terminal de Guido, 0 tokens
+  de Claude sea 1 PDF o sean 2000.
+- Movido de `Admin/test-costo-transcripcion/` (donde nació como parte del to-do 66) a `tools/`, junto
+  con el resto de las herramientas del proyecto (`audit.js`, `generate-rankings.js`, etc.). La API key
+  se movió con él, a `Admin/gemini/.env` (gitignoreada, mismo criterio que la de Resend).
+
+## Versión 244 — test de costo/calidad de transcripción Sonnet vs Haiku vs Gemini (cierra el to-do 66)
+
+- **Resultado en `Admin/test-costo-transcripcion.md`**: 30 PDFs reales de Colombia, 10 por pata.
+  Gemini 3.8 Flash salió más barato ($0,09/doc en promedio, 0 tokens de Claude), más rápido, y el
+  único con verificación independiente 10/10 perfecta. Sonnet fue el más caro (~184k tokens/doc) pero
+  sin errores de completitud. **Haiku, más barato que Sonnet, tuvo 4 de 10 documentos con páginas
+  faltantes o colapsadas pese a reportar "transcripción completa"** — el hallazgo central del test.
+- **Herramienta nueva**: `Admin/test-costo-transcripcion/gemini-transcribe.mjs`, script standalone
+  (corre desde terminal, sin sesión de Claude ni tokens de Claude) para transcribir un PDF vía la API
+  de Gemini. Necesita `Admin/test-costo-transcripcion/.env` con `GEMINI_API_KEY` (gitignoreado, mismo
+  criterio que la key de Resend).
+- **30 transcripciones reales cargadas** a `Clubes/Colombia/<Club>/estados-financieros-<año>.md` —
+  26 completas y usables, 4 (de la pata Haiku) marcadas con una advertencia al principio del archivo
+  por páginas faltantes, pendientes de completar antes de usarse para cargar datos.
+
 ## Versión 243 — tres mejoras a la pestaña Ligas (cierra el to-do 68)
 
 - **Orden por división, no alfabético** (`ligasDePaisAlfa()`, `js/liga.js`): cuando un país tiene

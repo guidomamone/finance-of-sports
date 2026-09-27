@@ -38,10 +38,18 @@ Este archivo solo te ahorra el paso de "¿qué hay y qué falta?", no reemplaza 
 4. **Croacia** (sección 2.1): ~36 ejercicios-año de los 8 clubes ya cargados.
 5. Recién después, los países 100% nuevos con `.md` ya listo (sección 2.3): Corea del Sur (4 clubes,
    26 ejercicios), Austria/Escocia/Italia/Francia/Portugal (1-2 clubes cada uno, series completas).
+6. **Almagro (Argentina)** — 6 balances auditados reales (Ejercicios 80-85, 2018-2023), club NUEVO
+   para el país, encontrados 2026-09-26 vía Wayback Machine. Chico en volumen pero de altísima
+   relación esfuerzo/resultado: ya están bajados, solo falta transcribir a `.md` y onboardear.
 
 ---
 
-## Sección 1 — PDFs sin transcribir todavía (2047 archivos, 15 países)
+## Sección 1 — PDFs sin transcribir todavía (2017 archivos, 15 países)
+
+**Actualizado 2026-09-26**: 30 `estados-financieros-*.pdf` de Colombia se transcribieron como parte
+del test de costo del to-do 66 (`Admin/test-costo-transcripcion.md`) — ver el detalle de cuáles en
+ese archivo. 26 quedaron completos; 4 (pata Haiku) tienen páginas faltantes, marcadas con una
+advertencia en el propio `.md` (to-do 71).
 
 Un PDF "sin transcribir" es uno que no tiene ningún `.md` con el mismo nombre base en su misma
 carpeta. **Antes de transcribir cualquiera de estos, recordá la regla de CLAUDE.md**: pdftotext
@@ -54,7 +62,8 @@ masa, conviene primero abrir 1-2 PDFs de muestra por club y confirmar que son ba
 memorias narrativas) — la sección 3 de este archivo ya tiene varios ejemplos de PDFs que, una vez
 transcriptos, resultaron ser la entidad equivocada o el período equivocado.
 
-### Argentina — 8 PDFs, 5 clubes
+### Argentina — 14 PDFs, 6 clubes
+- **Almagro** (6, nuevos 2026-09-26, barrido de los 40 clubes tradicionales): `balance-2018.pdf` (Ej. 80), `balance-2019.pdf` (Ej. 81), `memoria-y-balance-2020.pdf` (Ej. 82), `balance-2021.pdf` (Ej. 83), `balance-2022.pdf` (Ej. 84), `balance-2023.pdf` (Ej. 85) — todos al 31/10, encontrados vía Wayback CDX (el sitio vivo ya no los sirve, 404). Verificados visualmente como balances auditados reales con Contador Público firmante, no narrativa. **Candidato directo a onboarding**, el hallazgo más grande del barrido.
 - **Banfield** (1): `informe-mercado-de-pases-2026.pdf`
 - **Ferro Carril Oeste** (4): `balance-ejercicio-121-2024-25.pdf`, `memoria-ejercicio-121-2024-25.pdf`, `memoria-y-balance-ejercicio-117-2020-21.pdf`, `memoria-y-balance-ejercicio-122-2025-26.pdf`
 - **Gimnasia y Esgrima LP** (1): `memoria-2022-2023.pdf`
@@ -76,7 +85,7 @@ transcriptos, resultaron ser la entidad equivocada o el período equivocado.
 - **Remo** (18): `balanco-2023.pdf`, `-2024.pdf`, `balanco-patrimonial-2020.pdf`, `demonstracoes-contabeis-2021.pdf`, `-2022.pdf`, `demonstracoes-financeiras-2025.pdf`, `dfc/dmpl/dre-2019.pdf` y `-2020.pdf`, `dre-2022.pdf` a `-2024.pdf`, `parecer-auditoria-2019.pdf`, `relatorio-auditor-independente-2022.pdf`, `relatorio-auditoria-2020.pdf`
 - **Vila Nova** (4): `demonstrativo-financeiro-2022.pdf` … `-2025.pdf`
 
-### Colombia — 184 PDFs, 10 clubes (mismo patrón en todos: certificación EF + dictamen revisor fiscal + estados financieros, un trío por año, 2016-2025 aprox.)
+### Colombia — 154 PDFs, 10 clubes (mismo patrón en todos: certificación EF + dictamen revisor fiscal + estados financieros, un trío por año, 2016-2025 aprox.; eran 184, bajó a 154 el 2026-09-26 al transcribir 30 `estados-financieros-*.pdf` en el test del to-do 66)
 - **Aguilas Doradas** (23), **Alianza FC** (22), **Atletico Bucaramanga** (22), **Boyaca Chico** (7), **Envigado** (26, club ya cargado con otro ejercicio — este es backlog de años previos), **Fortaleza CEIF** (23), **La Equidad** (23), **Llaneros** (23), **Once Caldas** (14, club ya cargado — backlog de años previos), **Union Magdalena** (1: `dictamen-revisor-fiscal-2021.pdf`, club ya cargado con el ejercicio 2018).
   Ver listado completo de nombres de archivo en el scratchpad de la sesión 2026-09-25 si hace falta
   el detalle exacto — el patrón es idéntico en los 10 clubes (`certificacion-ef-YYYY.pdf` +

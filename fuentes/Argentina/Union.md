@@ -1,5 +1,9 @@
 # Unión (Santa Fe)
 
+**Ángulos**: sitio oficial: agotado para Ejercicio N°120 (media library completa revisada, no
+existe todavía) · Wayback CDX: no aplica esta ronda · búsqueda web: no intentado esta ronda ·
+regulador/país: no aplica — 2026-09-26
+
 - Memoria + Balance + Informe de Comisión Revisora de Cuentas, Ejercicio N°114 (2019-20) —
   clubaunion.com.ar/wp-content/uploads/2020/07/ (Memoria-Club-Atletico-Union-Ejercicio-114.pdf +
   Comision-Revisora-de-Cuentas-Ejercicio-No-114-.pdf). La Memoria y el informe de Comisión Revisora se
@@ -41,3 +45,20 @@
 - Color de marca: `#ED1C24` — tabla por liga de footylogos (Liga Profesional Argentina, "Union
   Argentina"), 1er color, exacto, verificado 2026-09-21. NO sale del sitio oficial, que declara el
   rojo default de WordPress.
+
+## Chequeo 2026-09-26 — sitio oficial de vuelta online, sin Ejercicio N°120 todavía
+
+Sesión de sourcing puro (5 clubes del interior). Tarea liviana: chequear si ya existe un Ejercicio
+2025-26 (N°120) publicado, más allá del N°119 (2024-25) ya cargado.
+
+- **`clubaunion.com.ar` está online de nuevo** (HTTP 200 directo, ya no hace falta pasar por
+  Wayback como cuando se cargó el N°119 con el hosting caído).
+  `wp-json/wp/v2/media?search=120`/`ejercicio 120`/`asamblea`/`balance 2026`: sin ningún PDF de un
+  ejercicio nuevo. Filtrando la media library completa por fecha (`after=2025-12-01`, que es
+  cuando se subió el N°119) tampoco aparece nada posterior — los últimos 4 PDFs subidos siguen
+  siendo del N°119 (memoria-y-balance-119, EECC-119, y 2 variantes más, todos 23/12/2025).
+- **Conclusión: no existe Ejercicio N°120 todavía** (esperable: el N°119 cerró 30/6/2025 y se
+  publicó en diciembre 2025, un ejercicio jul-jun más tardaría en aprobarse/publicarse recién hacia
+  fin de 2026). Nada nuevo para cargar. Sigue pendiente lo ya anotado (N°115, ejercicios
+  pre-114, Balance-114 en sí, Estado de Situación Patrimonial de 116/117/118).
+- Último chequeo: 2026-09-26.

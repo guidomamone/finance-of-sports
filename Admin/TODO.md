@@ -54,6 +54,21 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+72. SEGUIMIENTOS DEL BARRIDO DE 40 CLUBES TRADICIONALES DE ARGENTINA (Versión 246, 2026-09-26,
+    7 subagentes en paralelo — detalle completo club por club en `fuentes/Argentina/<Club>.md`):
+    - **Almagro, listo para onboarding**: 6 balances auditados reales (Ejercicios 80-85, 2018-2023)
+      ya descargados en `Clubes/Argentina/Almagro/`, club NUEVO para el sitio. Falta transcribir a
+      `.md` (ver CLAUDE.md, "Cada PDF nuevo") y onboardear siguiendo `club-or-year-onboarding`
+      normalmente.
+    - **3 pendientes que necesitan Browser pane real** (los subagentes de esta sesión lo evitaron a
+      propósito, para no pisarse entre los 7 corriendo en paralelo sobre el mismo pane): Chacarita
+      Juniors y Newell's Old Boys, ambos bloqueados por un WAF de Vercel a `curl`/`WebFetch` — no
+      necesariamente dead-end real, falta confirmar con un navegador de verdad —, y Argentinos
+      Juniors (2 imágenes del informe contable 2019-20 alojadas en `i.ibb.co`, inalcanzables por red
+      desde el entorno de esa sesión).
+    - **~20 clubes quedaron como candidatos a mail** nuevos (documento confirmado por prensa/asamblea
+      pero nunca publicado), que se suman a los 3 que ya tenía el to-do 59 — ver ese punto.
+
 70. "SAVED SEARCHES" — GUARDAR LAS BÚSQUEDAS DE CADA USUARIO EN SU CUENTA (pedido de Guido,
     2026-09-26: *"me gusta que las búsquedas que hace alguien queden guardadas como Saved Searches.
     Para eso sirve lo de que se hagan cuenta. En su cuenta van a poder ver sus saved searches."*).
@@ -113,73 +128,27 @@ perdieron sino que se descartaron:
     convención de `ASSET_V`/`?v=` de scripts propios (ver CLAUDE.md, gotchas de caché) si se sirve
     como script propio en vez de vía CDN de Mixpanel.
 
-66. TEST DE COSTO/CALIDAD DE TRANSCRIPCIÓN PDF→MD: SONNET vs HAIKU vs UNA API EXTERNA (pedido
-    explícito de Guido, 2026-09-26: "quiero medir token usage punta a punta de 5 clubes con vos, 5
-    con haiku y 5 con una api"). Motivación: transcribir un PDF a `.md` (ver CLAUDE.md, "Cada PDF
-    nuevo") hoy corre siempre con el modelo por defecto de la sesión (Sonnet, pensado para prosa/
-    decisiones, no para OCR mecánico) — la sospecha es que un modelo más barato, o una API
-    especializada en documentos, hace lo mismo por menos costo/tiempo sin perder precisión. Con 2047
-    PDFs pendientes en `Admin/inventario-pendiente.md`, el ahorro por documento importa multiplicado.
-
-    QUÉ SE MIDE, por corrida: costo en USD (unidad común entre proveedores — los tokens de Sonnet/
-    Haiku no son comparables 1:1 contra lo que cobre una API que factura por página o por imagen),
-    tiempo de reloj, y CALIDAD bajo el mismo criterio para las 3 patas (ver abajo) — nunca declarar
-    ganador solo por costo si no pasó el mismo control de calidad.
-
-    LAS 3 PATAS:
-    (a) **Sonnet, como hoy** — la sesión de Claude Code hace la transcripción directamente (vía Read
-        tool sobre imágenes de página, o leyendo el output de Tesseract si ya corrió, igual que
-        siempre).
-    (b) **Haiku 4.5** — delegarlo a un subagente del `Agent` tool con `model: "haiku"`, mismo insumo y
-        misma consigna que (a).
-    (c) **Una API externa especializada** — candidato default: **Gemini (2.5 Flash o 2.0 Flash, API
-        de Google AI Studio)**, multimodal y barato, capaz de tomar las páginas del PDF como imagen y
-        devolver el `.md` en un solo paso. **BLOQUEANTE**: hace falta que Guido tenga una API key de
-        Google AI Studio antes de correr esta pata — si no existe todavía cuando se agarre este
-        to-do, pedírsela primero, no improvisar con otra cosa. Alternativa si Gemini rinde mal o
-        Guido prefiere otra cosa: una API de OCR dedicada (Mistral OCR, Google Document AI, AWS
-        Textract) — más específica pero factura por página y probablemente necesite un paso propio
-        para armar el formato final (marcas de página, tablas Markdown) que Gemini haría de un tiro.
-
-    MISMO INSUMO PARA LAS 3 PATAS, PARA QUE LA COMPARACIÓN SEA JUSTA: correr primero el paso gratis
-    de siempre (pdftotext → si no da texto real, Tesseract vía `pdftoppm -png -r 300` + `tesseract -l
-    spa --psm 6`, ver CLAUDE.md y `club-data-mapping` sección 15) — esto es igual para las 3 y no
-    cuenta como costo de IA. Lo que se compara es específicamente el paso de "OCR crudo/imagen de
-    página → `.md` final verificado", que es donde hoy se va el token spend.
-
-    SELECCIÓN DE LOS 15 PDFs (5 por pata): sacarlos de la Sección 1 de `Admin/inventario-pendiente.md`
-    (PDFs sin transcribir), elegidos para que las 3 patas no queden con dificultad despareja —
-    ordenar los 15 candidatos por cantidad de páginas (o por lo que se vea a ojo de dificultad: texto
-    real vs escaneado, tablas rotadas, idioma) y repartirlos round-robin entre las 3 patas (1º a
-    Sonnet, 2º a Haiku, 3º a la API, 4º a Sonnet, ...) en vez de asignar al azar sin ese cuidado.
-    Preferir un cluster parejo (ej. el trío certificación+dictamen+estados financieros de Colombia,
-    misma sección, mismo patrón en los 10 clubes) sobre mezclar países muy distintos entre sí, para
-    que la varianza de dificultad no tape la diferencia real entre modelos.
-
-    CONTROL DE CALIDAD, IGUAL PARA LAS 3: elegir de antemano ~15-20 cifras numéricas repartidas por
-    el documento y chequearlas a mano contra el PDF original (no contra el `.md` de otra pata) — si
-    alguna sale mal, el costo de corregirla (re-correr o arreglar a mano) SE SUMA al costo de esa
-    pata, no se descarta. "Punta a punta" significa que una pata barata pero que necesitó varias
-    correcciones manuales no gana solo por el número de tokens de la primera pasada. Si el documento
-    tiene un total conocido de prensa/oficial, correr también el chequeo de `verifyTieOuts()`.
-
-    CÓMO REGISTRAR EL COSTO: para Sonnet y Haiku, aislar el uso de tokens de esa tarea puntual (no el
-    de la sesión entera — por eso conviene correr cada PDF, en las 3 patas, como su propio subagente
-    del `Agent` tool, para poder leer el reporte de uso que devuelve al terminar sin que se mezcle con
-    otra cosa; `mcp__ccd_session_mgmt__get_usage` es la alternativa si hace falta más detalle). Para
-    la API externa, lo que devuelva el response de uso, o el precio publicado del proveedor por
-    página/imagen si no reporta tokens. Convertir todo a USD al final para poder comparar.
-
-    DÓNDE DEJAR EL RESULTADO: un archivo nuevo, `Admin/test-costo-transcripcion.md` (adentro de
-    `Admin/`, no en la raíz — ver CLAUDE.md "dónde poner un documento nuevo"), con una tabla de las 15
-    corridas (PDF, páginas, pata, USD, tiempo, cifras chequeadas OK/mal) y un resumen de 3-4 líneas al
-    final con el promedio por pata y la recomendación. Avisar explícitamente en ese resumen que n=5
-    por pata es chico — el resultado es direccional, no estadísticamente robusto — para que no se
-    sobre-interprete una diferencia chica como definitiva.
+71. COMPLETAR LAS 4 TRANSCRIPCIONES DE LA PATA HAIKU QUE QUEDARON CON PÁGINAS FALTANTES (del test de
+    costo del to-do 66, ver `Admin/test-costo-transcripcion.md`). Cada archivo tiene una advertencia
+    al principio marcando el problema — no usarlos para cargar datos hasta completarlos:
+    - `Clubes/Colombia/Envigado/estados-financieros-2024.md` — faltan las páginas 18 a 29 completas
+      (12 de 30 páginas del PDF, ~40% del documento).
+    - `Clubes/Colombia/Envigado/estados-financieros-2023.md` — faltan las páginas 24, 33 y 38 sueltas,
+      la 40-42 quedó colapsada en una sola marca, y la marca de la página 31 está duplicada.
+    - `Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md` — faltan las páginas 18 a 20.
+    - `Clubes/Colombia/Alianza FC/estados-financieros-2024.md` — las páginas 15 a 17 quedaron
+      colapsadas en una sola marca en vez de una por página.
+    Completarlos releyendo el PDF original y agregando las páginas que faltan en su lugar (mismo
+    criterio de transcripción de CLAUDE.md, "Cada PDF nuevo"), no re-transcribir el documento entero
+    de cero. Los otros 26 documentos del test (10 Gemini + 10 Sonnet + 6 de Haiku) están completos y
+    ya se pueden usar para onboarding normal.
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
-    to-do 51, proceso de email a clubes). **EN PAUSA hasta 2026-09-30 (decisión de Guido, 2026-09-26)**:
+    to-do 51, proceso de email a clubes). **El barrido de los 40 clubes tradicionales (Versión 246,
+    2026-09-26, ver to-do 72) sumó ~20 candidatos más al mismo patrón** (documento confirmado por
+    prensa o asamblea, nunca publicado) — el detalle de cada uno vive en su
+    `fuentes/Argentina/<Club>.md`, no repetido acá. **EN PAUSA hasta 2026-09-30 (decisión de Guido, 2026-09-26)**:
     el pipeline (51) está probado de punta a punta pero todavía no se usó con ningún club real — no
     retomar antes de esa fecha. Casos concretos que salieron del barrido del 2026-09-22:
     Atlanta tenía 4 balances reales (2013-2016) en Drive, hoy con el compartir revocado — pedirle al

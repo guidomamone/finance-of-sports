@@ -1,5 +1,10 @@
 # Instituto (Córdoba)
 
+**Ángulos**: sitio oficial: agotado para 2024-25 (reconfirmado, sin adjunto — ver Chequeo
+2026-09-22) · parcial para 2025-26: convocatoria a asamblea ya publicada (17/10/2026) pero el
+ejercicio todavía no cerró/aprobó, nada para descargar todavía · Wayback CDX: no aplica esta ronda
+· búsqueda web: no intentado esta ronda · regulador/país: no aplica — 2026-09-26
+
 - Balance General / Estados Contables, Ejercicio N°70 (2023-24) — Drive linkeado desde noticia
   oficial institutoacc.com.ar/index.php/fue-aprobada-la-asamblea-general-ordinaria-y-extraordinaria-superavit-historico/
   (17 págs, estados contables completos, texto nativo). **YA CARGADO en el sitio** (Versión 94,
@@ -44,3 +49,27 @@
 - Último chequeo: 2026-09-22.
 - Color de marca: `#DF040B` — tabla por liga de footylogos (Liga Profesional Argentina, "Instituto
   Cordoba"), 1er color, exacto, verificado 2026-09-21.
+
+## Chequeo 2026-09-26 — 2024-25 sigue sin aparecer, y 2025-26 recién se convocó (nada para bajar todavía)
+
+Sesión de sourcing puro (5 clubes del interior). Tarea puntual: buscar el ejercicio 2024-25 (por si
+se destrabó desde el 2026-09-22) y ver si ya existe algo del 2025-26.
+
+- `wp-json/wp/v2/search` sobre `institutoacc.com.ar` con balance/asamblea/estados
+  contables/ejercicio: mismo resultado que la sesión anterior, sin ningún post nuevo con PDF/Drive
+  adjunto para el ejercicio cerrado 30/6/2025. Sigue confirmado dead-end (biblioteca de medios
+  bloqueada por el plugin de seguridad, sin sitemap).
+- **Hallazgo nuevo: "Convocatoria a Asamblea General Ordinaria 2026"**
+  (`institutoacc.com.ar/index.php/convocatoria-a-asamblea-general-ordinaria-2026/`), publicada
+  ayer (25/09/2026). Fecha de asamblea: sábado 17 de octubre de 2026. **El Orden del Día salta
+  directo al "ejercicio anual cerrado el 30 de junio de 2026"** (el 2025-26) — no menciona en
+  ningún punto el ejercicio 2024-25 que quedó sin presentar. El único adjunto de la convocatoria es
+  un Drive con el Estatuto Social (no financiero).
+  - **Pregunta genuina sin respuesta**: ¿qué pasó con el ejercicio 2024-25? ¿nunca tuvo asamblea
+    propia, se lo saltearon, o se va a tratar retroactivamente en algún momento no anunciado?
+    Anotado en `Admin/dudas-por-club.md`.
+- **Conclusión: nada nuevo para descargar hoy.** El ejercicio 2025-26 recién se va a APROBAR el
+  17/10/2026 — antes de esa fecha no puede existir un PDF público (mismo patrón que siguió el
+  ejercicio 2023-24: el documento apareció recién después de su propia asamblea). Vale la pena que
+  una sesión futura vuelva a mirar este club después del 17/10/2026.
+- Último chequeo: 2026-09-26.

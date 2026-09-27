@@ -566,7 +566,7 @@ completo está en `Admin/CONVENCIONES.md`.
 - `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` (una
   línea por club) → `fuentes/<País>/<Club>.md`: qué se buscó, qué se encontró y
   qué se descartó por club. Mirá ACÁ antes de salir a buscar un PDF. Hoy: 44
-  países, 571 clubes trackeados, 368 con documento encontrado (de los cuales 131
+  países, 571 clubes trackeados, 369 con documento encontrado (de los cuales 131
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
 - `Admin/ESTADO-clubes.md` (Versión 239): el bloque "QUÉ ES REAL POR CLUB", generado por

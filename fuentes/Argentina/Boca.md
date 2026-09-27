@@ -1,5 +1,24 @@
 # Boca Juniors
 
+**Ángulos**: sitio oficial: agotado — vistazo rápido 2026-09-26 (`club/presupuesto` sigue mostrando
+los mismos 2 documentos ya cargados, Presupuesto 2026-27 y Balance Ejercicio 121 2024-25; nada de
+Ejercicio 122 2025-26 todavía, esperable recién ~oct-2026) · Wayback CDX: no aplica esta sesión
+(club muy sourceado, no ameritaba) · búsqueda web: agotado — vistazo rápido 2026-09-26 (prensa
+confirma que no hubo asamblea de balance nueva desde oct-2025) · regulador/país: no aplica —
+2026-09-26
+
+## Chequeo 2026-09-26 — vistazo rápido, sin novedades (club ya extensamente sourceado)
+
+Tarea liviana pedida explícitamente (Boca ya tiene presupuesto 2027 y balance 2025 reales
+cargados). Reconfirmado `bocajuniors.com.ar/club/presupuesto`: sigue linkeando únicamente el
+Presupuesto Ejercicio 123 (2026-27) y la Memoria y Balance del Ejercicio N° 121 (jul-2024 a
+jun-2025) — los dos ya cargados en el sitio, sin nada nuevo. Búsqueda de prensa confirma el mismo
+estado: la Asamblea de Representantes aprobó Ejercicio 121 el 29/10/2025 (superávit $35.581M,
+patrimonio neto $316.270M) y el presupuesto 2025-26 en jun-2025; nada sobre un balance de Ejercicio
+122 (jul-2025 a jun-2026) — coincide con lo ya anotado abajo: ese balance recién se aprueba en la
+asamblea de octubre siguiente al cierre, o sea ~oct-2026. **Nada que cargar todavía, volver a mirar
+en esa fecha.**
+
 - Presupuesto Económico, Financiero y de Inversiones, Ejercicio N° 123 (jul-2026 a jun-2027) — PDF subido directamente, ya cargado en el sitio (Ejercicio 2027). Transcripción completa (37 páginas, palabra por palabra) en Clubes/Argentina/Boca/presupuesto-26-27.md (Versión 30).
 - Memoria y Balance auditado, Ejercicio N° 121 (jul-2024 a jun-2025) — https://www.bocajuniors.com.ar/club/presupuesto (linkea a un Drive) — ya cargado en el sitio (Ejercicio 2025), balance real, no presupuesto. Copia local en finance-of-sports/Clubes/Argentina/Boca/Memoria y Balance 2024-25.pdf.
 - Presupuestos y balances oficiales — https://www.bocajuniors.com.ar/club/presupuesto — la página solo linkea el presupuesto vigente y el balance más reciente (los dos ya cargados arriba), no un archivo histórico. Los balances de 2018, 2019, 2021, 2022, 2023 y 2024 siguen pendientes de encontrar y cargar.

@@ -1,5 +1,14 @@
 # Estudiantes de La Plata
 
+**Ángulos**: sitio oficial: agotado (chequeo liviano) · Wayback CDX: no intentado (no hace falta,
+ver abajo) · búsqueda web: agotado · regulador/país: no aplica — 2026-09-26.
+
+- **Chequeo 2026-09-26 (liviano, pedido explícito): NO hay ejercicio 2025-26 todavía, y no es un
+  gap — el ejercicio 120 (01/07/24-30/06/25, ya cargado) recién se aprobó el 18/10/2025 en la Asamblea
+  General Ordinaria (déficit, primero bajo la gestión actual). El próximo, ejercicio 121
+  (01/07/25-30/06/26), cerró el 30/6/2026 pero su asamblea de aprobación todavía no ocurrió (el
+  patrón del club es asamblea en octubre) — nada que buscar todavía, volver a chequear después de
+  oct-2026.**
 - Memoria y Balance, Ejercicios 2021-22, 2022-23 y 2023-24 — estudiantesdelaplata.com (Memoria y
   Estados Contables), 3 PDFs oficiales reales en `Clubes/Argentina/Estudiantes LP/` (92-108 páginas
   cada uno, texto nativo). **YA CARGADOS en el sitio (Versión 95)**: 9no club del motor genérico.
@@ -20,6 +29,6 @@
 - Pendiente: ejercicios anteriores a 2021-22 (el club tiene más de un siglo, probable archivo
   histórico no indexado por buscadores).
 - Contacto: no se encontró mail institucional directo; secciones Socios/Contacto del sitio oficial.
-- Último chequeo: 2026-09-12.
+- Último chequeo: 2026-09-26.
 - Color de marca: `#E41815` — CSS del sitio oficial (`estudiantesdelaplata.com`), verificado
   2026-09-21. No coincide con la tabla por liga de footylogos, que da #EC1B23.

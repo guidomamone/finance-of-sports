@@ -1,3 +1,8 @@
+**Ángulos**: sitio oficial: agotado (memoria confirmada narrativa, sección noticias/institucionales
+revisada) · Wayback CDX: agotado (27 PDFs del dominio completo, todos revisados) · búsqueda web:
+agotado (prensa confirma cifras pero ningún PDF) · regulador/país: bloqueo (IGJ exige clave fiscal
+AFIP paga, gestión de Guido, no intentar) — 2026-09-26
+
 # Temperley
 
 - Memorias narrativas (SIN estados contables) — temperley.org.ar/socios/memoria-vigente (página
@@ -42,3 +47,41 @@
 - Pendiente: el Balance/Estados Contables de cualquier ejercicio. Pedírselo al club
   (administracion@temperley.org.ar figura en la portada de la propia Memoria).
 - Último chequeo: 2026-09-22.
+
+## Chequeo 2026-09-26 — informe Lecchi revisado, escalera liviana, patrón confirmado
+
+- **(a) `informe-gestion-primer-ano-lecchi-2025.pdf` revisado a fondo** (ya estaba transcripto a
+  `.md` por otra sesión en paralelo — se leyó el `.md` completo, 26 págs / 399 líneas). Confirmado:
+  es un **reporte infográfico de gestión** (Comisión Directiva, Fútbol, Obras, Sueños Celestes, Vida
+  Social, Predio Guernica, Orden institucional, Deportes Amateurs, Sponsors) — **sin un solo cuadro
+  de Estado de Situación Patrimonial ni de Recursos y Gastos**. Sí tiene cifras sueltas en prosa
+  ("Se pagaron $470 millones de deuda exigible heredada", "$100 mil dólares cobrados de GGC", "13
+  juicios heredados, 6 activos hoy") y una mención de que **"Firmado y certificado Balance del
+  ejercicio 2024 (gestión anterior) y en tiempo y forma el primero de la nueva gestión en 2025"** —
+  o sea el club AFIRMA que el balance existe y está certificado, pero no lo adjunta ni linkea acá
+  tampoco. Mismo patrón que las 3 memorias anteriores: se confirma la existencia, nunca el acceso.
+- **(b) Escalera liviana (~20 min) sobre el sitio oficial, buscando el balance en otra sección**:
+  - Wayback CDX del dominio completo (`temperley.org.ar`, `matchType=domain&filter=original:.*\.pdf`)
+    repetido hasta 2026: **27 PDFs en total**, incluidos los 2 que en el chequeo del 22 dieron 403
+    Forbidden al pedirlos directo (`Memoria-2020.pdf`, `Memoria-2019-2020.pdf`) — recuperados vía
+    Wayback (bypasea el bloqueo de bot) y descargados a `Clubes/Argentina/Temperley/` como
+    `memoria-2020.pdf` (44 págs) y `memoria-2019-2020.pdf` (42 págs). Revisados con grep de términos
+    contables (situación patrimonial, recursos y gastos, superávit, déficit, activo, pasivo,
+    patrimonio neto): la única coincidencia es "Activos" en el sentido de "socios activos" (categoría
+    de membresía), no del rubro contable — **confirmado: también son narrativas puras**, ningún dato
+    financiero nuevo. Ningún otro PDF del dominio (protocolos, estatuto, listado de bonos) es
+    financiero.
+  - Búsqueda web dirigida (`temperley.org.ar "balance general" OR "estados contables" filetype:pdf`,
+    `"Club Atlético Temperley" balance superávit déficit millones 2024 2025 prensa`): sin PDF nuevo.
+    Prensa (Diario Conurbano, soloascenso.com.ar) y el propio sitio oficial
+    (`temperley-volvio-a-ser-un-club-sin-deudas`) SÍ citan cifras concretas de una "Reunión Abierta a
+    un Año de Gestión" (diciembre 2025): ingresos proyectados $101,7M, egresos $196,5M — pero sin
+    ningún documento descargable, es prosa de nota de prensa.
+  - **No se encontró el balance en ninguna sección nueva** — la escalera liviana no destapó nada que
+    contradiga el dead-end, lo reconfirma con más cobertura (27/27 PDFs del dominio revisados, no
+    solo los ya conocidos).
+- **Candidato a mail (to-do 51)**: el club afirma por escrito, en un documento oficial propio, que el
+  Balance 2024 y el de 2025 están "firmados y certificados" — señal de existencia tan fuerte como la
+  de Defensores de Belgrano o Independiente. Pedido concreto posible: el Balance certificado del
+  ejercicio 2024 y/o 2025 mencionado en `informe-gestion-primer-ano-lecchi-2025.pdf`, pág. 18.
+- Último chequeo: 2026-09-26.

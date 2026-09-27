@@ -1825,3 +1825,14 @@ ejercicios cargados (2023/2024/2025).
 **Bayern Munich 2022/23**: mismo pedido que ya existía para 2020/21 — ¿existe un Jahresabschluss/
 Geschäftsbericht más completo (con desglose real de GuV por rubro) para este ejercicio también? El
 documento cargado (`presseinformation-jhv-2022-23.md`) es tan agregado como el de 2020/21.
+
+## Instituto (Córdoba) — sourcing, sesión 2026-09-26
+
+**Ejercicio 2024-25 (cerrado 30/6/2025) nunca tuvo asamblea propia**: la "Convocatoria a Asamblea
+General Ordinaria 2026" (institutoacc.com.ar, publicada 25/09/2026, asamblea 17/10/2026) salta
+directo al Orden del Día del ejercicio cerrado el 30 de junio de **2026** — el 2024-25 no aparece
+mencionado en ningún punto, ni en esta convocatoria ni en ninguna encontrada antes. ¿Qué pasó con
+ese ejercicio: nunca se llevó a asamblea, se saltó a propósito, o se va a tratar retroactivamente
+en algún momento no anunciado? Ver `fuentes/Argentina/Instituto.md`, Chequeo 2026-09-26. A quién
+preguntarle: WhatsApp 3512 209813 (L-V 9-21hs) o asamblea@institutoacc.com.ar (mail habilitado
+para consultas de la asamblea, según la propia convocatoria).

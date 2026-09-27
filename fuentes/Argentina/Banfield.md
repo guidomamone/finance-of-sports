@@ -1,5 +1,10 @@
 # Banfield
 
+**Ángulos**: sitio oficial: agotado (wp-json `balance`/`memoria`/`ejercicio` sin novedad) · Wayback
+CDX: agotado (0 PDFs de balance nuevos en 2026, solo los 2 informes de mercado de pases ya
+conocidos) · búsqueda web: agotado (video del 105° sigue sin confirmarse, ver abajo) · regulador/
+país: no aplica — 2026-09-26
+
 - **CORRECCIÓN DE DOMINIO (2026-09-22): el sitio oficial es `clubabanfield.org`, NO
   `clubabanfield.com.ar`.** El `.com.ar` no resuelve (connect timeout, 0 bytes) y por eso los
   barridos automáticos anteriores daban "dominio inalcanzable" para este club. El `.org` responde
@@ -59,3 +64,33 @@
   2026-09-23. Identidad confirmada primero en es.wikipedia.org (verde y blanco, "el Taladro",
   colores adoptados en 1904); el hex cae en esa familia de verde.
 - Último chequeo: 2026-09-23.
+
+## Chequeo 2026-09-26 — foco en 106°/105° Ejercicio, escalera completa
+
+Tarea acotada: no re-sourcear Banfield desde cero, solo confirmar si el 106° Ejercicio (2025-26) ya
+se publicó en PDF, o si el 105° finalmente subió como PDF.
+
+- **CDX de Wayback restringido a 2026** (`matchType=domain&filter=original:.*\.pdf&from=20260101`):
+  solo 2 PDFs archivados este año, los 2 informes de mercado de pases ya conocidos (2024-09 y 2026-03,
+  este último es `informe-mercado-de-pases-2026.pdf`, el mismo que ya está en `Clubes/Argentina/
+  Banfield/` sin revisar y que el brief de esta sesión ya advertía que NO es un balance). **Cero
+  balances nuevos.**
+- **`clubabanfield.org/inicio/balance/CAB-MemoriaBalance2025.pdf` (adivinando el mismo patrón de
+  nombre del 116°) → 404.** No hay carpeta `/inicio/balance/` viva (confirmado ya en la sesión
+  anterior, la URL migró).
+- **`wp-json/wp/v2/search` con `balance`, `ejercicio` y `memoria`**: mismos posts de siempre
+  (asamblea de socios, reforma de estatuto, camisetas 2026) — **ningún post nuevo sobre el 105° ni el
+  106° Ejercicio**, y ninguno de los ya conocidos tiene adjunto.
+- **Video de YouTube: CONFIRMADO que es un falso positivo, no el video real de Banfield.** El video
+  que aparece al buscar `"Memoria y Balance - 105° Ejercicio - Año 2025"` (id `0CW5sF2NSGg`) es de
+  **"Cooperativa Agrícola La Vencedora Ltda"** (confirmado vía YouTube oEmbed, `author_name`), sin
+  ninguna relación con Banfield — coincidencia de título nada más. Es el mismo falso positivo que ya
+  había anotado la sesión del 2026-09-26 anterior (agricultura), ahora identificado con nombre y
+  canal exacto para que una sesión futura no lo vuelva a abrir. **La existencia del video real de
+  Banfield sigue sin confirmarse.**
+- **Resultado: escalera completa (1, 3, 4) agotada de nuevo, sin novedad.** Ni el 106° Ejercicio
+  (2025-26) ni el 105° (2024-25) están publicados en PDF ni en video confirmado. Sigue siendo
+  candidato a mail (to-do 51/59): el mail a `socios@clubabanfield.org` (u `.com.ar`, confirmar cuál
+  responde) debe preguntar en general por el 105° y el 106° Ejercicio en cualquier formato, sin
+  asumir que existe un video puntual — exactamente como ya decía la nota anterior.
+- Último chequeo: 2026-09-26.

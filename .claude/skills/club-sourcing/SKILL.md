@@ -111,6 +111,18 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
 4. **Búsqueda web dirigida** (`filetype:pdf`, nombre + "estados contables"/"balance"/"memoria" +
    año, nombre + "asamblea"). Complementaria, no sustituye a las 3 de arriba — un club puede indexar
    mal y tener igual el documento colgado en su sitio.
+
+   **Gotcha de la familia 3, Wayback CDX, encontrado en el barrido de 40 clubes tradicionales de
+   Argentina (2026-09-26)**: una captura archivada grande puede venir TRUNCADA a exactamente
+   1.048.576 bytes (1 MiB), con el header `wayback content truncated by "length"` — y un PDF
+   truncado a mitad de archivo puede fallar en silencio al abrirlo o parecer vacío, dando la falsa
+   impresión de "0 PDFs archivados" para ese club. El caso real: Almagro había sido cerrado en el
+   barrido del 2026-09-22 como "0 PDFs archivados", y resultó tener 6 balances auditados reales
+   (Ejercicios 80-85, 2018-2023) que solo aparecían al reintentar la MISMA URL con un timestamp CDX
+   distinto de la lista (`cdx.data.length` u otro snapshot cercano en el tiempo suele NO estar
+   truncado). **Antes de cerrar un club como "0 PDFs en Wayback" por un resultado vacío o
+   sospechosamente corto, reintentar con otro timestamp de la misma URL** si la CDX API lista más de
+   uno — no asumir que la primera captura que se abrió es representativa de todas.
 5. **Prensa**, solo para CONFIRMAR que el documento existe cuando no se lo encuentra descargable en
    ningún lado (nunca como fuente en sí — ver la primera regla de esta sección). Si prensa cita
    cifras concretas de una asamblea reciente, es señal de que el documento SÍ existe y vale la pena

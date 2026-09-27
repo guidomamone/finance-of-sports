@@ -1,5 +1,8 @@
 # Ferro Carril Oeste
 
+**Ángulos**: sitio oficial: agotado (117-119, 121, 122 cubiertos; 120 confirmado narrativo-only) ·
+Wayback CDX: agotado · búsqueda web: agotado (sin PDF nuevo) · regulador/país: no aplica — 2026-09-26
+
 - Archivo oficial parcial vía noticias institucionales — ferrocarriloeste.org.ar (dominio inalcanzable
   directo al momento de esta investigación, ver nota de fuentes arriba; todo lo de abajo se bajó vía
   Wayback Machine de las URLs oficiales). Descargados 5 PDFs reales a
@@ -85,3 +88,21 @@
   blanco. Regla de desempate (blanco pierde frente a un color no-blanco):  gana el verde. Hex
   confirmado con 2 fuentes independientes (logotyp.us, football-logos.cc), ambas listan `#156538`.
   Verificado 2026-09-24.
+
+## Chequeo 2026-09-26 — confirmación liviana, sin PDFs nuevos que bajar
+
+Tarea acotada: solo confirmar que no falta ningún ejercicio fácil de conseguir entre 2020 y 2026,
+sin volver a descargar lo ya bajado (117, 118, 119, 121, 122 ya están en `Clubes/Argentina/Ferro
+Carril Oeste/`, y de hecho ya tienen su `.md` transcripto — trabajo de otra sesión/agente en
+paralelo, no de esta). Se releyó el feed RSS del buscador interno del sitio
+(`/search/balance/feed/rss2/`) y se abrieron los 2 posts más nuevos que no estaban en el registro
+anterior:
+
+- `BALANCE APROBADO EN LA ASAMBLEA` (noticia sobre la Asamblea General Ordinaria 2025) — sin PDF
+  adjunto, sin especificar ejercicio.
+- `ASAMBLEA GENERAL ORDINARIA 2026 – CONVOCATORIA` — confirma que la próxima asamblea trata el
+  Ejercicio 122 (ya cargado), y NO menciona ni adjunta nada del Ejercicio 120 (2023-24).
+
+**Resultado: nada nuevo.** El Ejercicio 120 sigue confirmado como puramente narrativo (sin balance
+en PDF en ningún post del sitio). La cobertura 117-119 + 121-122 (todo 2020-21 a 2025-26 salvo el
+120) es la que hay disponible hoy. Último chequeo: 2026-09-26.

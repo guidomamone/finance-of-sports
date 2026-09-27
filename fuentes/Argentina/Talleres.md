@@ -1,5 +1,10 @@
 # Talleres (Córdoba)
 
+**Ángulos**: sitio oficial: agotado (media library completa vía `wp-json/wp/v2/media` filtrada por
+fecha, 2019-2023, 0 EECC — solo 1 infográfico no cargable) · Wayback CDX: no aplica a esta ronda (ya
+agotado en sesión anterior, 0 PDFs archivados en el dominio) · búsqueda web: no intentado esta ronda
+(la media library ya dio evidencia completa) · regulador/país: no aplica — 2026-09-26
+
 - **Estados Contables completos, ejercicios 2024 y 2025 — ENCONTRADOS 2026-09-22, el club pasa de
   "sin cifras cargables" a tener 2 ejercicios auditados reales.** Ambos con capa de texto nativa
   (cero OCR necesario), ejercicio de AÑO CALENDARIO (1/1 a 31/12), no temporada:
@@ -49,3 +54,32 @@
   históricos), hex vía footylogos.com/es/color-codes/liga-profesional-argentina, verificado
   2026-09-23.**
 - Último chequeo: 2026-09-23.
+
+## Chequeo 2026-09-26 — se buscaron ejercicios anteriores a 2024, ninguno cargable nuevo
+
+Sesión de sourcing puro (5 clubes del interior). Tarea puntual y liviana: ver si hay ejercicios
+2020-2023 fáciles de conseguir en el mismo sitio, además de los 2 EECC ya cargados (2024/2025).
+
+- En vez de seguir adivinando nombres de URL (ya agotado en la sesión anterior: 7 meses candidatos
+  × 3 años, todos 404), esta vuelta usó la media library completa de WordPress vía
+  `wp-json/wp/v2/media?media_type=application`, filtrada por rango de fecha (`after`/`before`) —
+  lista TODOS los archivos subidos al sitio en ese período, estén o no linkeados desde algún post.
+  Cubrí 2019 a 2023 completo (varias ventanas solapadas). **0 archivos con patrón EECC/balance
+  encontrados** en ningún año antes de 2024 — la primera vez que aparece algo con "EECC" en el
+  nombre es la subida de abril 2025 (el de 2024, ya cargado). Esto es evidencia más fuerte que la
+  adivinanza de URLs: no es "no se encontró con los nombres que probé", es "no existe
+  NINGÚN archivo subido al sitio en esos años que matchee ese patrón, esté o no linkeado desde
+  algún post".
+- Sí apareció `Asamblea-2023-1-Reporte.pdf` (mayo 2023, 17 págs, Adobe Illustrator) — **mismo
+  formato infográfico que el `asamblea-social-2024.pdf` ya descartado en la Versión 95**: solo
+  porcentajes de composición de ingresos y gráficos de evolución 2015-2022, sin una sola cifra
+  absoluta de un Estado de Recursos y Gastos. No descargado al proyecto (no aporta nada que el
+  `asamblea-social-2024.pdf` ya descartado no mostrara). Confirma que el patrón "reporte
+  infográfico ≠ EECC real" se repite todos los años en este club.
+- **Conclusión: pendiente 2020-2023 queda CERRADO como dead-end**, no como "a seguir buscando". El
+  club aparentemente no publicó EECC en PDF real antes de 2024 (o si lo hizo, no está en la media
+  library del sitio actual, que sí tiene TODO lo demás de esos años). Ángulo que queda, ya
+  documentado desde antes: pedírselo directo por mail a
+  consultasasamblea@clubtalleres.com.ar — no reintentado esta sesión (fuera de alcance: sourcing
+  puro, no outreach).
+- Último chequeo: 2026-09-26.

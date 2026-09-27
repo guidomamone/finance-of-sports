@@ -1,5 +1,11 @@
 # Godoy Cruz
 
+**Ángulos**: sitio oficial: agotado (WordPress — `wp-json/wp/v2/media` y `search` probados con
+balance/contable/legalizado/DPJ/ejercicio/estados, sin PDF financiero nuevo) · Wayback CDX: agotado
+(el índice completo del dominio tiene un solo PDF financiero en toda su historia — el ya bajado) ·
+búsqueda web: agotado (0 PDFs nuevos, pero CONFIRMA un ejercicio adicional que existe — ver Chequeo
+2026-09-26) · regulador/país: no aplica — 2026-09-26
+
 - Estados Contables Entidades Sin Fines de Lucro, Ejercicio cerrado 30/6/2020 —
   clubgodoycruz.com.ar/wp-content/uploads/2021/11/B-BALANCE-2020-LEGALIZADO-PARA-DPJ.pdf (dominio
   inalcanzable directo al momento de esta investigación, descargado vía Wayback Machine de la misma
@@ -30,6 +36,36 @@ desde una página viva.
 
 - **Resultado: 0 documentos nuevos.** El único post institucional relevante es "Godoy Cruz realizó su Asamblea de Socios", sin adjunto. Wayback: 0 PDFs archivados en el dominio. Sigue en pie lo ya anotado: 1 balance escaneado descargado, pendiente de OCR.
 - Último chequeo: 2026-09-22.
+
+## Chequeo 2026-09-26 — se buscaron los ejercicios que faltan (2021-2025), ninguno descargable, pero hay uno CONFIRMADO
+
+Sesión de sourcing puro (5 clubes del interior, este es el único con al menos 1 documento ya
+cargado). Tarea puntual: ver si hay más ejercicios además del único bajado (cierre 30/6/2020).
+
+- `wp-json/wp/v2/media?search=<término>` sobre `clubgodoycruz.com.ar` (además del `search` de
+  posts ya usado en la sesión anterior) probado con balance, contable, legalizado, DPJ, ejercicio,
+  estados — 0 resultados en todos. La CDX API de Wayback sobre el dominio completo (repetida esta
+  sesión) sigue devolviendo un solo PDF financiero en toda la historia del dominio: el mismo
+  `B-BALANCE-2020-LEGALIZADO-PARA-DPJ.pdf` ya descargado.
+- **Hallazgo de prensa: hay al menos un ejercicio más, confirmado, que el club SÍ trató y aprobó en
+  asamblea pero nunca subió como PDF** — el patrón "legalizado para DPJ" del nombre del archivo 2020
+  sugiere que el club legaliza sus balances ante la Dirección de Personas Jurídicas de Mendoza como
+  procedimiento normal, así que es esperable que existan también en papel/trámite los ejercicios
+  intermedios:
+  - Ejercicio julio 2023-junio 2024: Asamblea Ordinaria de Socios en el estadio Feliciano Gambarte,
+    Memoria y Balance aprobados por unanimidad, con superávit de $13.000 millones (ingresos
+    $55.000M, egresos $42.000M) — Doble Amarilla,
+    https://www.dobleamarilla.com.ar/liga-/en-el-gambarte--godoy-cruz-realizo-su-asamblea-ordinaria-con-memoria-y-balance-aprobados_a6771ceb7d508107902973d81.
+  - No se encontró confirmación de prensa específica para los ejercicios 2021, 2022 y 2023 (jul-jun
+    cada uno) en esta pasada — no se profundizó más porque ya alcanza con 1 ejercicio confirmado
+    para justificar un pedido de "todos los que tengan disponibles" en vez de uno puntual.
+- **0 PDFs nuevos encontrados** en ningún canal digital.
+- **Candidato a mail** (ver `club-sourcing` 0.3): este es el candidato MÁS fuerte de los 5 clubes de
+  esta sesión — el club YA publicó un balance en PDF una vez (2020, con legalización real del
+  Consejo de Ciencias Económicas), así que pedirle que suba también 2021-2025 (o que comparta los
+  que tenga) es un pedido de "hacé de nuevo lo que ya hiciste una vez", no algo nuevo para ellos.
+  Decisión de Guido.
+- Último chequeo: 2026-09-26.
 
 ## Color de marca (corregido 2026-09-26, ver `Admin/TODO.md` to-do 64)
 

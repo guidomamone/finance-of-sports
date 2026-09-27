@@ -1,5 +1,11 @@
 # Central Córdoba (Santiago del Estero)
 
+**Ángulos**: sitio oficial: agotado (sitio actual `cacentralcordoba.com`, WordPress —
+`wp-json/wp/v2/search` probado con balance/memoria/contable/asamblea, sin PDF financiero; dos
+dominios en juego, ver detalle abajo) · Wayback CDX: agotado (0 PDFs financieros en ninguno de los
+dos dominios) · búsqueda web: agotado (0 PDFs nuevos; la confirmación de prensa ya existente sigue
+siendo la mejor señal — ver Chequeo 2026-09-26) · regulador/país: no aplica — 2026-09-26
+
 - Sin PDFs oficiales encontrados. Sitio oficial: cacentralcordoba.com (OJO: centralcordoba.com.ar es
   un club DISTINTO, Central Córdoba de Rosario). El sitio no tiene sección de
   institucional/transparencia/balance — solo Historia/Comisión/Fútbol/Socios/Acreditaciones. Prensa
@@ -22,3 +28,26 @@ desde una página viva.
 
 - **Resultado: 0 documentos.** Dos dominios en juego: `cacentralcordoba.com` (el actual, sin nada financiero, 0 PDFs en Wayback) y `centralcordoba.com.ar` (el viejo, que tiene una nota `/noticias/balance-2019` — se abrió: es un balance DEPORTIVO de la temporada, no contable). Wayback del `.com.ar`: 4 PDFs archivados, ninguno financiero.
 - Último chequeo: 2026-09-22.
+
+## Chequeo 2026-09-26 — familia 4 repetida, sin hallazgo nuevo, confirmación de prensa se mantiene
+
+Sesión de sourcing puro (5 clubes del interior). Se repitió `wp-json/wp/v2/search` sobre
+`cacentralcordoba.com` con balance/memoria/contable/asamblea (sin resultados financieros, confirma
+lo ya sabido) y varias búsquedas web dirigidas (`filetype:pdf`, "estados contables", "asamblea
+balance ejercicio"). Un resultado prometedor de búsqueda web ("asamblea agosto 2025... memoria y
+balance...") resultó ser de OTRA organización distinta con nombre parecido, con sede en "La Cumbre,
+Córdoba" (no Santiago del Estero) — descartado, no es este club.
+
+- **Sigue en pie lo ya documentado**: prensa (Doble Amarilla, sesión anterior) confirma que la
+  asamblea de mayo 2022 aprobó los balances de los ejercicios 2019/20 y 2020/21, ambos con
+  superávit. Esta sesión no encontró una confirmación de prensa más reciente (2022-2025) — el club
+  tuvo un salto de perfil enorme en este período (ascenso, Copa Argentina 2024, Sudamericana) que
+  generó mucha cobertura deportiva pero no encontré una nota específica de asamblea/balance
+  posterior a 2022 en esta pasada. Vale la pena que una sesión futura repita la búsqueda enfocada en
+  2023-2025 con más tiempo, o directo en prensa santiagueña local (El Liberal, Nuevo Diario) en vez
+  de búsqueda genérica.
+- **0 PDFs encontrados** en ningún canal digital para ningún ejercicio.
+- **Candidato a mail** (ver `club-sourcing` 0.3): el club ya tiene precedente confirmado de tratar
+  Memoria y Balance en asamblea (2019/20, 2020/21) — pedirle el PDF de cualquiera de los últimos 5
+  ejercicios es razonable. Decisión de Guido.
+- Último chequeo: 2026-09-26.
