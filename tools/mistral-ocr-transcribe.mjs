@@ -30,6 +30,22 @@ const envPath = resolve(projectRoot, 'Admin', 'mistral', '.env');
 const resultsPath = resolve(projectRoot, 'Admin', 'mistral', 'resultados.jsonl');
 const failuresPath = resolve(projectRoot, 'Admin', 'mistral', 'fallidos.jsonl');
 const geminiFailuresPath = resolve(projectRoot, 'Admin', 'gemini', 'fallidos.jsonl');
+const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
+
+// Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito -- placeholders
+// de contenido en inglés (Mistral es un motor de extracción, no un chat, así que esto no debería
+// pasar nunca acá, pero el chequeo es tan barato que no hay motivo para no correrlo igual, gratis) y
+// huecos de página. No bloquea la transcripción si encuentra algo (ni si el chequeo mismo falla) --
+// solo avisa, para que quien corre el lote sepa qué revisar antes de onboardear.
+function checkFidelidad(mdPath) {
+  try {
+    const out = execFileSync(process.execPath, [fidelidadScript, mdPath, '--json'], { encoding: 'utf8' });
+    return JSON.parse(out);
+  } catch (err) {
+    if (err.stdout) { try { return JSON.parse(err.stdout); } catch { /* sigue abajo */ } }
+    return null; // el chequeo mismo falló (pdfinfo ausente, etc.) -- no bloquear la transcripción por esto
+  }
+}
 
 function readEnvKey() {
   const raw = readFileSync(envPath, 'utf8');
@@ -175,6 +191,8 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, ou
 
       const pagesProcessed = json.usage_info?.pages_processed ?? pages.length;
       const costUsd = (pagesProcessed / 1000) * PRICE_PER_1000_PAGES;
+      const fidelidad = checkFidelidad(mdPath);
+      const fidelidadP1 = fidelidad ? fidelidad.findings.filter((f) => f.sev === 'P1').length : null;
 
       const record = {
         ts: new Date().toISOString(),
@@ -185,6 +203,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, ou
         pagesProcessed,
         costUsd: Number(costUsd.toFixed(6)),
         elapsedMs,
+        fidelidadP1,
       };
       appendFileSync(resultsPath, JSON.stringify(record) + '\n', 'utf8');
       return { ok: true, record };
@@ -228,7 +247,7 @@ async function runPool(items, concurrency, worker) {
 }
 
 async function runBatch(pending, apiKey, concurrency, timeoutMs) {
-  let ok = 0, fail = 0, cost = 0, scanned = 0;
+  let ok = 0, fail = 0, cost = 0, scanned = 0, fidelidadAlertas = 0;
   const startAll = Date.now();
   await runPool(pending, concurrency, async (pdfPath) => {
     const scannedFlag = isScanned(pdfPath);
@@ -248,7 +267,9 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
     if (res.ok) {
       ok++;
       cost += res.record.costUsd;
-      console.log(`OK  (${ok + fail}/${pending.length}) ${res.record.pdf} costo=$${res.record.costUsd} t=${(res.record.elapsedMs / 1000).toFixed(1)}s${tag}`);
+      const fTag = res.record.fidelidadP1 ? ` [FIDELIDAD: ${res.record.fidelidadP1} hallazgo(s) P1 -- ver check-transcripcion-fidelidad.js]` : '';
+      if (res.record.fidelidadP1) fidelidadAlertas++;
+      console.log(`OK  (${ok + fail}/${pending.length}) ${res.record.pdf} costo=$${res.record.costUsd} t=${(res.record.elapsedMs / 1000).toFixed(1)}s${tag}${fTag}`);
     } else if (res.skipped) {
       // ya tenía .md
     } else {
@@ -259,6 +280,7 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
   const totalMin = (Date.now() - startAll) / 60000;
   console.log(`\nListo: ${ok} OK, ${fail} fallidos, costo total ~$${cost.toFixed(2)}, ${totalMin.toFixed(1)} min. (${scanned} de ${pending.length} eran escaneados -- revisá esos con más cuidado, ver Admin/test-costo-transcripcion.md sobre por qué)`);
   if (fail > 0) console.log(`Ver detalle de fallos en ${failuresPath.replace(projectRoot + '/', '')}.`);
+  if (fidelidadAlertas > 0) console.log(`${fidelidadAlertas} transcripción(es) con hallazgos P1 de tools/check-transcripcion-fidelidad.js -- correlo de nuevo sobre esos archivos puntuales antes de onboardearlos.`);
 }
 
 async function main() {
@@ -314,6 +336,7 @@ async function main() {
   }
   const r = res.record;
   console.log(`OK ${r.pdf} -> ${r.md} | páginas=${r.pagesProcessed} costo=$${r.costUsd} tiempo=${r.elapsedMs}ms`);
+  if (r.fidelidadP1) console.log(`FIDELIDAD: ${r.fidelidadP1} hallazgo(s) P1 -- correr node tools/check-transcripcion-fidelidad.js "${r.md}" para el detalle antes de onboardear.`);
 }
 
 main().catch((err) => {

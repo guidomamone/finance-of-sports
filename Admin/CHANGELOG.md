@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 257 — el chequeo de fidelidad de transcripción queda cableado al pipeline, no es un paso suelto
+
+- `tools/mistral-ocr-transcribe.mjs` y `tools/gemini-transcribe.mjs`: corren `check-transcripcion-fidelidad.js`
+  automáticamente sobre cada `.md` recién escrito (un `execFileSync` a Node, sin costo — el chequeo no
+  llama a ningún modelo) y avisan en la consola (`[FIDELIDAD: N hallazgo(s) P1 ...]`) si encuentran
+  algo, tanto en modo lote como archivo suelto. Nuevo campo `fidelidadP1` en cada registro de
+  `Admin/{mistral,gemini}/resultados.jsonl`. No bloquea la transcripción — solo marca qué revisar.
+- `CLAUDE.md` (sección "Cada PDF nuevo"): documentado que los pasos 1 y 2 del pipeline ya corren el
+  chequeo solos, y que el paso 3 (subagente de Claude) hay que correrlo a mano al terminar — es el
+  mismo tipo de modelo de chat que produjo el bug original (el test de costo de Haiku), así que ahí el
+  chequeo tiene más chance real de encontrar algo que en Mistral (que es un motor de extracción, no un
+  chat, y no debería caer en este patrón).
+
 ## Versión 256 — `tools/check-transcripcion-fidelidad.js` (to-do 90): chequeo de fidelidad de transcripción por contenido, no solo páginas
 
 - Script nuevo, corre sobre cualquier `.md` bajo `Clubes/` con marcas de página: detecta placeholders

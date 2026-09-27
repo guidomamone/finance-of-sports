@@ -21,6 +21,7 @@
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, unlinkSync } from 'node:fs';
 import { resolve, dirname, basename, extname, join } from 'node:path';
+import { execFileSync } from 'node:child_process';
 
 const MISTRAL_SCANNED_MARKER = 'ESCANEADO, TRANSCRIPTO CON MISTRAL OCR';
 const mistralResultsPath = resolve(import.meta.dirname, '..', 'Admin', 'mistral', 'resultados.jsonl');
@@ -80,6 +81,23 @@ const projectRoot = resolve(import.meta.dirname, '..');
 const envPath = resolve(projectRoot, 'Admin', 'gemini', '.env');
 const resultsPath = resolve(projectRoot, 'Admin', 'gemini', 'resultados.jsonl');
 const failuresPath = resolve(projectRoot, 'Admin', 'gemini', 'fallidos.jsonl');
+const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
+
+// Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito. A diferencia
+// de Mistral (motor de extracción), Gemini SÍ es un modelo de chat -- el mismo tipo de modelo que
+// produjo los placeholders en inglés del test de costo de Haiku (Admin/test-costo-transcripcion.md,
+// to-do 71) -- así que acá el chequeo tiene más chance real de encontrar algo, no es solo una
+// formalidad. No bloquea la transcripción si encuentra algo (ni si el chequeo mismo falla): solo
+// avisa, para revisar antes de onboardear.
+function checkFidelidad(mdPath) {
+  try {
+    const out = execFileSync(process.execPath, [fidelidadScript, mdPath, '--json'], { encoding: 'utf8' });
+    return JSON.parse(out);
+  } catch (err) {
+    if (err.stdout) { try { return JSON.parse(err.stdout); } catch { /* sigue abajo */ } }
+    return null; // el chequeo mismo falló (pdfinfo ausente, etc.) -- no bloquear la transcripción por esto
+  }
+}
 
 function readEnvKey() {
   const raw = readFileSync(envPath, 'utf8');
@@ -182,6 +200,8 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS) {
       const outTok = usage.candidatesTokenCount ?? 0;
       const totalTok = usage.totalTokenCount ?? inTok + outTok;
       const costUsd = (inTok / 1e6) * PRICE_IN_PER_MTOK + (outTok / 1e6) * PRICE_OUT_PER_MTOK;
+      const fidelidad = checkFidelidad(mdPath);
+      const fidelidadP1 = fidelidad ? fidelidad.findings.filter((f) => f.sev === 'P1').length : null;
 
       const record = {
         ts: new Date().toISOString(),
@@ -194,6 +214,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS) {
         costUsd: Number(costUsd.toFixed(6)),
         elapsedMs,
         finishReason: candidate?.finishReason ?? null,
+        fidelidadP1,
       };
       appendFileSync(resultsPath, JSON.stringify(record) + '\n', 'utf8');
       return { ok: true, record };
@@ -236,7 +257,7 @@ async function runPool(items, concurrency, worker) {
 }
 
 async function runBatch(pending, apiKey, concurrency, timeoutMs) {
-  let ok = 0, fail = 0, cost = 0;
+  let ok = 0, fail = 0, cost = 0, fidelidadAlertas = 0;
   const startAll = Date.now();
   await runPool(pending, concurrency, async (pdfPath) => {
     // Red de seguridad: pase lo que pase con este PDF puntual (error de red, PDF corrupto,
@@ -256,7 +277,9 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
     if (res.ok) {
       ok++;
       cost += res.record.costUsd;
-      console.log(`OK  (${ok + fail}/${pending.length}) ${res.record.pdf} costo=$${res.record.costUsd} t=${(res.record.elapsedMs / 1000).toFixed(1)}s`);
+      const fTag = res.record.fidelidadP1 ? ` [FIDELIDAD: ${res.record.fidelidadP1} hallazgo(s) P1 -- ver check-transcripcion-fidelidad.js]` : '';
+      if (res.record.fidelidadP1) fidelidadAlertas++;
+      console.log(`OK  (${ok + fail}/${pending.length}) ${res.record.pdf} costo=$${res.record.costUsd} t=${(res.record.elapsedMs / 1000).toFixed(1)}s${fTag}`);
     } else if (res.skipped) {
       // ya tenía .md, no cuenta
     } else {
@@ -267,6 +290,7 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
   const totalMin = (Date.now() - startAll) / 60000;
   console.log(`\nListo: ${ok} OK, ${fail} fallidos, costo total ~$${cost.toFixed(2)}, ${totalMin.toFixed(1)} min.`);
   if (fail > 0) console.log(`Ver detalle de fallos en ${failuresPath.replace(projectRoot + '/', '')} -- volvé a correr el mismo comando para reintentarlos (se saltea lo que ya tiene .md).`);
+  if (fidelidadAlertas > 0) console.log(`${fidelidadAlertas} transcripción(es) con hallazgos P1 de tools/check-transcripcion-fidelidad.js -- correlo de nuevo sobre esos archivos puntuales antes de onboardearlos.`);
 }
 
 async function main() {
@@ -332,6 +356,7 @@ async function main() {
   }
   const r = res.record;
   console.log(`OK ${r.pdf} -> ${r.md} | in=${r.promptTokenCount} out=${r.candidatesTokenCount} costo=$${r.costUsd} tiempo=${r.elapsedMs}ms finish=${r.finishReason}`);
+  if (r.fidelidadP1) console.log(`FIDELIDAD: ${r.fidelidadP1} hallazgo(s) P1 -- correr node tools/check-transcripcion-fidelidad.js "${r.md}" para el detalle antes de onboardear.`);
 }
 
 main().catch((err) => {

@@ -258,6 +258,17 @@ Las dos APIs necesitan su propia key en `Admin/gemini/.env` / `Admin/mistral/.en
 mismo criterio que la de Resend) — si no existen todavía, pedírselas a Guido, no asumir que hay que
 usar el flujo de Tesseract de abajo por default.
 
+**Los pasos 1 y 2 corren solos `tools/check-transcripcion-fidelidad.js` (to-do 90) sobre cada `.md`
+recién escrito, y avisan en la consola si encuentran algo** — no hace falta acordarse de correrlo
+aparte para esos dos. El chequeo mira CONTENIDO, no solo cantidad de páginas: agarra un bloque
+reemplazado por un resumen en inglés en vez de transcripto (el error real que dejó pasar el test de
+costo de Haiku, ver `Admin/test-costo-transcripcion.md`) y huecos en la numeración de página. Es
+gratis (script de Node puro, sin ninguna llamada a modelo) y no bloquea la transcripción si encuentra
+algo, solo marca qué archivo revisar antes de onboardear. **El paso 3 (subagente de Claude) NO lo
+corre solo** — correlo a mano al terminar (`node tools/check-transcripcion-fidelidad.js
+<archivo.md>`), es la misma clase de modelo (chat, no motor de extracción) que produjo el bug
+original, así que el chequeo tiene más chance real de encontrar algo ahí que en Mistral.
+
 Qué transcribir: TODO el documento, página por página, en el mismo orden,
 incluyendo tablas (como tablas Markdown o listas alineadas, lo que se lea
 mejor), números exactos tal cual figuran impresos (sin redondear, sin
