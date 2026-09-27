@@ -15,6 +15,28 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 256 — `tools/check-transcripcion-fidelidad.js` (to-do 90): chequeo de fidelidad de transcripción por contenido, no solo páginas
+
+- Script nuevo, corre sobre cualquier `.md` bajo `Clubes/` con marcas de página: detecta placeholders
+  de contenido en inglés (bloque entero, ej. `[Complex depreciation table...]`, o cortos dentro de una
+  celda de tabla, ej. `[value]`/`[not visible]`) que reemplazan una transcripción real en vez de
+  hacerla — P1, alta confianza — y huecos en la numeración de páginas contra la cantidad real del PDF
+  hermano (`pdfinfo`) — P2, señal a revisar, no veredicto (ver el punto siguiente). `--json`/`--quiet`,
+  mismo estilo que `tools/audit.js`, pero deliberadamente SEPARADO de ese script (que audita
+  CONSISTENCIA de los datos ya cargados, no fidelidad de una transcripción fuente).
+- Corrida sobre las 2187 transcripciones del repo: 6 P1 (los 5 placeholders + su duplicado de columna
+  ya conocidos de `Clubes/Colombia/Envigado/estados-financieros-2023.md`, ver to-do 86), 7 P2, resto
+  P3 de bajo valor (páginas cortas, en su mayoría carátulas legítimas).
+- **Limitación real encontrada verificándolo contra `Clubes/Colombia/Atletico Bucaramanga/
+  estados-financieros-2017.md`** (que el to-do 71 ya había dado por resuelto): la marca `--- pág. N
+  ---` no siempre es la página FÍSICA N del PDF — ese archivo tiene un offset constante desde temprano
+  en el documento (probablemente páginas de portada/legales sin marca propia), así que un hueco en la
+  numeración de marcas no implica necesariamente contenido faltante — se verificó a mano que las Notas
+  6 a 27 están completas y en orden. Por eso el chequeo de cobertura de páginas quedó en **P2**
+  (revisar), no P1 (bloquear): es evidencia de que algo no cuadra en el rotulado, no un veredicto de
+  contenido faltante. Documentado en la cabecera del script para que no se repita el error de
+  confiarle un P1 a este chequeo puntual.
+
 ## Versión 255 — 5 to-dos nuevos (88-92), candidatos del to-do 85 salidos del onboarding de Almagro y de resolver el to-do 71
 
 - `Admin/TODO.md`: 88 (¿conviene partir la lectura de skills entre sesiones de

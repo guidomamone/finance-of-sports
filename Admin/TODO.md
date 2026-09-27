@@ -92,20 +92,6 @@ perdieron sino que se descartaron:
     referencia se sirve al visitante ni se lee en vivo desde el sitio — son insumo de onboarding, no
     dato de producción.
 
-90. CHEQUEO DE FIDELIDAD DE UNA TRANSCRIPCIÓN QUE MIRE CONTENIDO, NO SOLO CANTIDAD DE PÁGINAS
-    (candidato del to-do 85, encontrado resolviendo el to-do 71, 2026-09-27). El chequeo estructural
-    que marcó las 4 transcripciones de Haiku como incompletas (`Admin/test-costo-transcripcion.md`)
-    solo contaba páginas — y en 2 de los 4 casos (Alianza FC, Bucaramanga) el conteo ya daba bien
-    porque las marcas venían CORRIDAS, no faltantes, mientras que en Envigado el problema real
-    (bloques reemplazados por un comentario placeholder tipo `[Complex tax reconciliation
-    table...]` en vez de transcribirse) tampoco lo agarra un conteo de páginas: el placeholder ocupa
-    una marca de página igual que el contenido real. Falta un chequeo barato (script en `tools/`, no
-    un modelo caro) que detecte patrones de "esto no es una transcripción real" — strings tipo
-    `[Complex...]`/corchetes de resumen, o una densidad de caracteres por página anormalmente baja
-    comparada con el resto del mismo documento — antes de dar una transcripción por buena para
-    onboarding. Distinto del to-do 79 (que chequea integridad del PDF DESCARGADO, en bytes, ANTES de
-    transcribir): esto es fidelidad de la TRANSCRIPCIÓN ya hecha, un paso más adelante en la cadena.
-
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
     para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de
