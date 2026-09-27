@@ -15,6 +15,29 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 265 — to-do 72 cerrado: los 3 pendientes de Browser pane, resueltos con navegador real
+
+- **Chacarita Juniors**: con Browser pane real el sitio carga sin ningún bloqueo (el "Vercel Security
+  Checkpoint" era específico a tráfico automatizado). Se recorrió el menú COMPLETO en vivo — "El
+  Club" solo tiene un Estatuto Social en PDF, ninguna sección de balance/transparencia en ningún
+  lado. Familia 1 queda AGOTADA de verdad, ya no es un problema de herramienta.
+- **Newell's Old Boys**: el sitio se REDISEÑÓ por completo desde el último chequeo — ya no es el
+  WordPress que daba 403 en `wp-content/uploads`, es un sitio nuevo 100% orientado a marketing de
+  socios, sin ninguna sección institucional de documentos (confirmado enumerando TODOS los links de
+  la home vía JS). El endpoint `wp-json` sigue dando 403 incluso con navegador real — no era un
+  bloqueo de herramienta, es un backend viejo que quedó de pie sin exponerse. Familia 1 agotada.
+- **Argentinos Juniors**: las 2 imágenes del informe contable 2019-20 en `i.ibb.co`
+  (`gJSBgrV/1a.jpg`, `NyhkqSZ/1b.jpg`) SÍ se pudieron descargar — el "bloqueo de red" que reportaba
+  la sesión anterior era simplemente `curl` sin `User-Agent`/`Referer` (con esos headers, 200 y
+  bytes reales). Descargadas a `Clubes/Argentina/Argentinos Juniors/informe-contable-2019-20-
+  {resultados,patrimonial}.jpg` y transcriptas completas: son 2 tablas comparativas de gestión
+  (2014-2020, cifras RT6/moneda homogénea, sin desglose de rubros) — confirman un total nuevo para
+  el Ejercicio 2019-20 y revelan que el patrimonio neto de 2014 fue NEGATIVO (-205.849.283), dato que
+  no estaba en ningún otro documento del proyecto. Sigue sin cargarse al sitio (no hay rubros que
+  desglosar), pero ahora es mejor evidencia para pedirle al club el balance auditado completo.
+- To-do 72 borrado (resuelto); su referencia cruzada en el to-do 59 actualizada para no apuntar a un
+  to-do ya cerrado.
+
 ## Versión 264 — to-do 91 cierra el loop: skills apuntan a las herramientas nuevas, y un "miss" queda registrado para que Guido lo prepopule
 
 - `club-data-mapping/SKILL.md` sección 5 y `club-or-year-onboarding/SKILL.md` sección 3 punto 1b:

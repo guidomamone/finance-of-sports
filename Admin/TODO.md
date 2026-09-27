@@ -136,17 +136,6 @@ perdieron sino que se descartaron:
     del skill, no una herramienta puntual — pensarla junto con Guido antes de tocar
     `club-sourcing/SKILL.md` (mismo criterio ya establecido: no editar el skill sin avisar).
 
-72. SEGUIMIENTOS DEL BARRIDO DE 40 CLUBES TRADICIONALES DE ARGENTINA (Versión 246, 2026-09-26,
-    7 subagentes en paralelo — detalle completo club por club en `fuentes/Argentina/<Club>.md`):
-    - **3 pendientes que necesitan Browser pane real** (los subagentes de esta sesión lo evitaron a
-      propósito, para no pisarse entre los 7 corriendo en paralelo sobre el mismo pane): Chacarita
-      Juniors y Newell's Old Boys, ambos bloqueados por un WAF de Vercel a `curl`/`WebFetch` — no
-      necesariamente dead-end real, falta confirmar con un navegador de verdad —, y Argentinos
-      Juniors (2 imágenes del informe contable 2019-20 alojadas en `i.ibb.co`, inalcanzables por red
-      desde el entorno de esa sesión).
-    - **~20 clubes quedaron como candidatos a mail** nuevos (documento confirmado por prensa/asamblea
-      pero nunca publicado), que se suman a los 3 que ya tenía el to-do 59 — ver ese punto.
-
 76. EVALUAR UNA HERRAMIENTA DE VERIFICACIÓN DE IDENTIDAD DE ENTIDAD, para el problema de homonimia
     que se repitió ~5 VECES en la sesión del 2026-09-26 (`Admin/test-barridos.md`) y una vez casi
     causa un error real de datos: San Martín (Tucumán) confundido con San Martín (San Juan);
@@ -297,7 +286,7 @@ perdieron sino que se descartaron:
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
     to-do 51, proceso de email a clubes). **El barrido de los 40 clubes tradicionales (Versión 246,
-    2026-09-26, ver to-do 72) sumó ~20 candidatos más al mismo patrón** (documento confirmado por
+    2026-09-26) sumó ~20 candidatos más al mismo patrón** (documento confirmado por
     prensa o asamblea, nunca publicado) — el detalle de cada uno vive en su
     `fuentes/Argentina/<Club>.md`, no repetido acá. **EN PAUSA hasta 2026-09-30 (decisión de Guido, 2026-09-26)**:
     el pipeline (51) está probado de punta a punta pero todavía no se usó con ningún club real — no

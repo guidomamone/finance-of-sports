@@ -1,10 +1,10 @@
 # Newell's Old Boys
 
-**Ángulos**: sitio oficial: agotado (wp-content/uploads y wp-json dan 403/"Forbidden" vía curl —
-bloqueo de WAF de Vercel, mismo síntoma ya documentado, confirmado de nuevo con y sin distintos
-User-Agent) · Wayback CDX: agotado (dominio completo, 70 URLs .pdf, sin nada nuevo desde el chequeo
-anterior) · búsqueda web: parcial — encontrado un mirror NO oficial (ver abajo) · regulador/país: no
-aplica — 2026-09-26.
+**Ángulos**: sitio oficial: AGOTADO — verificado con Browser pane real 2026-09-27: el sitio se
+REDISEÑÓ por completo (ya no es el WordPress de los chequeos anteriores) y el nuevo sitio no tiene
+NINGUNA sección institucional/documentos en su navegación (ver detalle abajo) · Wayback CDX: agotado
+(dominio completo, 70 URLs .pdf, sin nada nuevo desde el chequeo anterior) · búsqueda web: parcial —
+encontrado un mirror NO oficial (ver abajo) · regulador/país: no aplica — 2026-09-27.
 
 - **Ejercicios 2023-24 y 2024-25: CONFIRMADOS que existen (con drama institucional real de por
   medio), pero NINGUNO descargable en ningún canal accesible desde esta sesión — candidatos a mail
@@ -30,12 +30,21 @@ aplica — 2026-09-26.
     puntual ya documentado — confirmado de nuevo con varios User-Agent de navegador real, incluso un
     archivo público como `Estatuto.pdf` da 403 vía curl); adivinar 20 nombres de archivo candidatos
     bajo `wp-content/uploads/2024/{09,10,11,12}/` da 403 (mismo bloqueo, no 404 real); Wayback CDX
-    del dominio completo sin cambios desde el chequeo anterior. **Esto es un bloqueo de WAF/tooling
-    de ESTA sesión (sin Browser pane), no necesariamente un dead-end real** — una sesión con Browser
-    pane disponible podría acceder al sitio como lo haría un usuario real y merece reintentarlo antes
-    de escalar a mail directamente.
+    del dominio completo sin cambios desde el chequeo anterior.
   - Presupuesto 2026/27 (01/07/26-30/06/27) aprobado en asamblea especial 01/07/2026, foco 72.8% en
     fútbol profesional — mismo problema de acceso, no se encontró el PDF.
+  - **Chequeo 2026-09-27, Browser pane real: el sitio YA NO ES el WordPress de arriba.** El club
+    rediseñó `newellsoldboys.com.ar` por completo — es un sitio nuevo, orientado 100% a marketing de
+    socios (campaña "Sentí el Corazón", categorías de cuota, beneficios), sin ninguna sección
+    institucional de documentos. Se enumeraron TODOS los links de la home vía JS
+    (`document.querySelectorAll('a')`): menú "Institucional" solo tiene Comisión/Historia/Palmarés
+    (anclas en la misma página, sin contenido descargable), y no aparece ningún link a balance,
+    memoria, transparencia ni documento en ningún lugar del sitio. El endpoint `wp-json/wp/v2/media`
+    SIGUE dando 403 incluso con navegador real — no era un bloqueo de herramienta (curl/WebFetch),
+    es un bloqueo real del servidor, probablemente un backend de WordPress viejo que quedó de pie
+    detrás del sitio nuevo pero sin exponerse. **Conclusión: familia 1 queda agotada de verdad, con
+    o sin Browser pane** — el sitio actual no tiene ningún camino de descubrimiento hacia estos 2
+    ejercicios ni el presupuesto 2026/27. Quedan como candidatos a mail (ya estaban marcados así).
 - **Memoria y Balance General, Ejercicio 2018-19 (1/7/2018 a 30/6/2019) — ENCONTRADO 2026-09-22, el
   club pasa de 0 documentos a 1 balance auditado real.** 98 págs, capa de texto nativa (cero OCR),
   con Estado de Situación Patrimonial al 30/6/2019, Estado de Recursos y Gastos, déficit/superávit
@@ -81,4 +90,4 @@ aplica — 2026-09-26.
   primer color listado de la tabla de la Liga Profesional Argentina), identidad de club "rojo y
   negro" confirmada en el infobox/texto de es.wikipedia.org (Club Atlético Newell's Old Boys, "La
   Lepra"), verificado 2026-09-23.
-- Último chequeo: 2026-09-26.
+- Último chequeo: 2026-09-27.

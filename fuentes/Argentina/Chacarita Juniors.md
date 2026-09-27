@@ -1,9 +1,9 @@
 # Chacarita Juniors
 
-**Ángulos**: sitio oficial: parcial — bloqueado por protección anti-bot en TODAS las rutas (ver
-detalle abajo), no se pudo verificar el menú completo en vivo · Wayback CDX: agotado (13 PDFs
-archivados, ninguno financiero, reconfirmado) · búsqueda web: agotado (sin resultados) ·
-regulador/país: no aplica — 2026-09-26
+**Ángulos**: sitio oficial: AGOTADO — verificado con Browser pane real 2026-09-27, menú completo
+sin ninguna sección de balance/memoria/transparencia (ver detalle abajo) · Wayback CDX: agotado
+(13 PDFs archivados, ninguno financiero, reconfirmado) · búsqueda web: agotado (sin resultados) ·
+regulador/país: no aplica — 2026-09-27
 
 - Sin PDFs oficiales encontrados. Sitio oficial: chacaritajuniors.com.ar. Índice completo de Wayback
   Machine del dominio: 13 PDFs archivados, ninguno de balance/memoria (solo estatuto, protocolo
@@ -56,3 +56,25 @@ Checkpoint"):
 - Búsqueda web dirigida (`filetype:pdf` + nombre + "memoria y balance"/"estados contables"): sin
   resultados relevantes.
 - Último chequeo: 2026-09-26.
+
+## Chequeo 2026-09-27 — Browser pane real: familia 1 queda AGOTADA de verdad
+
+Con un navegador real (no `curl`/`WebFetch`) el sitio carga sin ningún bloqueo — el "Vercel Security
+Checkpoint" de los chequeos anteriores es específico a tráfico automatizado sin sesión de navegador,
+no un bloqueo total. Se pudo por fin recorrer el menú COMPLETO en vivo:
+
+- **"El Club"**: Historia, Comisión Directiva, Subcomisiones, Secretarías, Marketing, Prensa,
+  **Estatuto y Reglamentos** (`/el-club/documentos` — un solo documento: "Estatuto Social", PDF de
+  224 KB, nada de balances), Peñas y Filiales, Cultura/Historia/Museo.
+- **"Socios"**: Cómo asociarse, Cuotas mensuales, Información útil, Beneficios — nada institucional.
+- Resto del menú (Fútbol, Actividades, Noticias, Multimedia, Predios, Contacto): sin relación.
+- **"Secretarías" tampoco tiene una de finanzas/tesorería** — las 3 que existen son Mujeres/Género/
+  Niñez, Desarrollo Social e Institucional.
+
+**Conclusión: familia 1 (sitio oficial) queda AGOTADA de verdad, no solo por herramienta.** El sitio
+en vivo simplemente no tiene ninguna sección de transparencia/balance/memoria — no es un problema de
+`curl` vs. navegador, es que el contenido no existe en el menú. Sumado a Wayback (13 PDFs, ninguno
+financiero) y búsqueda web (sin resultados) ya agotados, este club queda como candidato a mail
+directo (pedirle a Comisión Directiva o Secretaría Institucional el balance/memoria si existe) en vez
+de seguir buscando en el sitio.
+- Último chequeo: 2026-09-27.
