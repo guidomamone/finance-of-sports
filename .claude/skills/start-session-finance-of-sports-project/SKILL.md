@@ -25,7 +25,7 @@ permanentes. Esto es el procedimiento.
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |
 | 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 89 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 67 KB |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 113 KB |
+| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB (+ el archivo de tu país en `paises/`, ~2-9 KB cada uno, desde el to-do 87) |
 | 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
 
 (Pesos re-medidos 2026-09-26, `wc -c`. Hasta la Versión 239 `Admin/ESTADO.md` incluía el bloque

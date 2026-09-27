@@ -54,18 +54,6 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-92. PODAR LA PROSA NARRATIVA DE `club-data-mapping/SKILL.md` (candidato del to-do 85, 2026-09-27,
-    surgido de la sesión de onboarding de Almagro). El propio skill ya tiene la convención escrita
-    ("Cómo mantener este skill": separar regla vigente / hecho comprimido a una línea / lo que va al
-    CHANGELOG), pero no se aplicó pareja en sus 20 secciones — la sección 13 en particular acumula
-    "Versión X, Guido dijo textual..." ronda tras ronda sin que cada una agregue una regla nueva, y
-    es buena parte de por qué el archivo pesa 89 KB (se lee ENTERO al empezar cualquier sesión que
-    toque datos financieros, ver to-do 88). Es trabajo de edición, no de código: releer las secciones
-    más historiadas y comprimir la envoltura narrativa a una línea, dejando la regla y los ejemplos
-    pedagógicos intactos. ANTES DE TOCAR EL SKILL: proponerle el texto resultante a Guido y esperar
-    el OK (regla ya establecida para cualquier cambio a `.claude/skills/*/SKILL.md`), no editarlo
-    directo.
-
 91. PRECARGAR TIPOS DE CAMBIO Y BRANDCOLOR EN LOTE, EN VEZ DE BUSCAR UNO POR UNO POR CLUB (candidato
     del to-do 85, 2026-09-27). Hoy cada club nuevo que no declara su propio `fx` dispara una búsqueda
     web puntual de la cotización mayorista de SU fecha de cierre (`club-data-mapping/SKILL.md`
@@ -119,26 +107,6 @@ perdieron sino que se descartaron:
     vueltas (o errores por falta de contexto) que lo que ahorra en lectura. Es una pregunta de
     PROCESO para pensar con Guido, no algo para implementar sin medir primero en un caso real cuánto
     se ahorra vs. cuánto se pierde en coordinación.
-
-87. SEPARAR LA PROSA DE `club-sourcing/SKILL.md` QUE APLICA A UN SOLO PAÍS, EN VEZ DE QUE VIVA TODA
-    EN EL MISMO ARCHIVO (pedido de Guido, 2026-09-27: *"un agente cuya tarea es buscar clubs de
-    argentina, no tiene por qué leer qué pasa en Grecia"*). El skill tiene 29 secciones numeradas
-    (`## 1. Chile` a `## 29. Ucrania`) con el canal/regulador y los gotchas de CADA país, más las
-    secciones generales (`0`, `0.1`, `0.1b`, `0.2`, `0.3`) que sí aplican siempre. Un agente
-    sourceando Argentina carga las 29 igual, sin necesitar 28 de ellas.
-
-    IDEA DE GUIDO: que el skill diga algo como *"en `<archivo/carpeta>` están los aprendizajes de
-    País1, País2, ..., PaísN — leé el archivo del país que te toca buscar"*, en vez de que todo viva
-    en un solo `SKILL.md`. Ya hay precedente de esta partición en el proyecto: `fuentes/<País>/
-    <Club>.md` (un archivo por país, ver `CLAUDE.md`) se partió exactamente por este motivo —
-    escalar a más países sin que cada sesión cargue el contenido de todos.
-
-    ANTES DE TOCAR EL SKILL (mismo criterio ya establecido: no editar `SKILL.md` sin avisar):
-    pensar el mecanismo concreto con Guido — ¿una carpeta `club-sourcing/paises/<País>.md` con un
-    índice corto en el `SKILL.md` principal que diga qué país vive en cuál archivo? ¿Mover las
-    secciones 1-29 tal cual, o reescribirlas? — y confirmar que las secciones generales (0-0.3, la
-    escalera y el criterio de escalado) siguen siendo el único contenido que CUALQUIER sesión de
-    sourcing tiene que leer siempre, sea cual sea el país.
 
 85. RECORRER EL PROCESO DE ONBOARDING PUNTO POR PUNTO Y VER QUÉ SE PUEDE HACER MÁS EFICIENTE Y/O
     DELEGAR A OTRA IA (pedido de Guido, 2026-09-27: *"ya sé que hay uno o dos puntos de JEV, ponelo

@@ -15,6 +15,38 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 260 — to-do 92: podada la prosa narrativa acumulada de `club-data-mapping/SKILL.md` (sección 13)
+
+- La sección 13 ("Formato Simplificado" homologado a Boca) venía acumulando "Versión 46... 47... 48...
+  49... 52... 53..." ronda tras ronda desde que se escribió, sin que cada ronda comprimiera la
+  anterior — 262 líneas, gran parte historia de CÓMO se llegó a cada regla en vez de la regla vigente
+  en sí. Comprimida a 113 líneas: se conservó cada regla permanente (el orden/nombres exactos de las
+  filas de Ingresos y Gastos, `hideIfZero`, Estadio vs. Abonos, los precedentes de Racing para
+  `player_amortisation`/`wages_squad`, la regla de ingeniería de `otherExpenses`/`nonCash` en
+  `computeYearGeneric()`) y los ejemplos pedagógicos reales (Athletic Club, Boca 2025) que ilustran
+  CÓMO aplicar la regla — se cortó la envoltura de citas textuales y "en la ronda tal, Guido pidió...".
+  Archivo completo: 92.632 → 79.607 bytes (-14%).
+- Resto del skill revisado (secciones con más menciones de "Versión N"): la sección 5 (conversión a
+  USD) ya es densa en regla/tabla/ejemplo, no changelog disfrazado — no se tocó.
+
+## Versión 259 — to-do 87: `club-sourcing/SKILL.md` partido en un archivo por país
+
+- Las 28 secciones de país (Chile a Ucrania, sección 11 —gotcha de tooling, no de país— aparte) se
+  movieron a `.claude/skills/club-sourcing/paises/<País>.md`, un archivo por regulador/región,
+  copiadas tal cual (no reescritas) para no perder ningún gotcha en la transcripción. El `SKILL.md`
+  principal quedó con las secciones generales (0, 0.1, 0.1b, 0.2, 0.3), el gotcha de tooling, un
+  índice de países con un link a cada archivo, y "Cómo mantener este skill" actualizado para el nuevo
+  esquema (país nuevo = archivo nuevo + línea al índice, no una sección más acá).
+- Arregladas ~26 referencias cruzadas entre países ("ver sección 7", "sección 14") que hubieran
+  quedado rotas/sin sentido al partir el archivo — reescritas para apuntar al archivo correspondiente
+  (`paises/CONCACAF.md`, etc.), verificado con un script que confirma que no queda ningún "sección N"
+  de país sin resolver.
+- `SKILL.md` principal: 122.978 → 34.121 bytes. Total repartido entre los 29 archivos: ~128 KB (un
+  poco más que el original por los headers/links nuevos de cada archivo — el punto no es pesar menos
+  en total, es que una sesión sourceando un país abra 1 archivo chico en vez del archivo completo).
+- `start-session-finance-of-sports-project/SKILL.md`: corregido el peso declarado de `club-sourcing`
+  en la tabla de arranque (113 KB → 33 KB + el archivo del país).
+
 ## Versión 258 — to-do 86: limpieza completa de `Clubes/Colombia/Envigado/estados-financieros-2023.md` y `2024.md`
 
 - `2023.md`: los 5 placeholders en inglés (obligaciones financieras y beneficios a empleados en el

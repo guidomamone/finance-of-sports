@@ -531,267 +531,118 @@ cierra exacto contra el `value` de la fila padre, no alcanza con que el código 
 pasó (sección 1 de este skill, Versión 38) que un desglose mal armado puede pasar
 `verifyTieOuts()` sin problema y aun así estar mostrando datos incorrectos en pantalla.
 
-## 13. REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato Simplificado" de
-CUALQUIER club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca, nunca
-un set diseñado por separado para el motor genérico
+## 13. REGLA PERMANENTE: "Formato Simplificado" de CUALQUIER club usa el mismo set de categorías,
+el mismo orden y los mismos nombres que Boca — nunca un set diseñado aparte para el motor genérico
 
 El objetivo de "Formato simplificado" es poder comparar clubes entre sí con las MISMAS categorías.
-Guido pidió explícito: "utiliza para todos los Formato Simplificado el formato que tiene Boca y la
-logica." Esto es la fuente de verdad de ese pedido, para cualquier club nuevo o cambio futuro a
-`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`.
+Desde la Versión 102, Boca lee `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`
+(`js/finanzas-calc.js`) en vivo igual que cualquier otro club — no hay 2 fuentes de verdad que
+mantener sincronizadas a mano, un bucket nuevo se agrega en UN SOLO lugar y afecta a todos los
+clubes por igual.
 
-**ACTUALIZADO Versión 102**: hasta esa versión, Boca tenía su PROPIA función
-`simplifiedReportForBoca()`, hand-coded para reproducir a mano estas mismas categorías/orden (porque
-Boca todavía no tenía `normalizedCategory` en sus datos). Esa función se borró: Boca ahora lee
-`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` en vivo, igual que
-cualquier otro club — ya no hay 2 fuentes de verdad que mantener sincronizadas a mano. El resto de
-esta sección (investigación de la Versión 46, reglas 47-49) sigue siendo la razón histórica de POR
-QUÉ estos buckets tienen los nombres/orden que tienen; leerla igual antes de tocar los buckets.
+**Filas de referencia, en este orden exacto (el que arma Boca Ejercicio 2027, la referencia
+canónica):**
+- **Ingresos**: Cuotas Sociales, Comercial / Sponsors, **Estadio** (`matchday_competition` +
+  `season_tickets` + `stadium_other` combinadas en una fila, el acordeón las separa por
+  `rawLabel` — el interruptor `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js` puede separar
+  `season_tickets` de nuevo en su propia fila "Abonos" sin tocar ningún dato, si hiciera falta),
+  Televisión, Premios por competencias, Venta de Jugadores, Educación, Otras secciones deportivas,
+  Fútbol profesional (sin desglosar por la fuente — `hideIfZero:true`, ver más abajo), catch-all
+  **"Otros ingresos"**.
+- **Gastos**: Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones
+  (amortizaciones y depreciación), Organización de partidos, Otras secciones deportivas
+  (juvenil/otros deportes/básquet), Administración y gastos generales, catch-all **"Otros gastos"**.
+  **Estas 7 filas son SIEMPRE las mismas para cualquier club/año**, aunque el documento no permita
+  separar las 3 del medio (Organización de partidos / Otras secciones / Administración): en ese
+  caso esas 3 muestran $0 y el monto real completo cae en "Otros gastos" — mostrar la fila en $0 no
+  es "esconder", es "no hay cómo separar esto todavía" (mismo espíritu que `debtDisclosureNote`
+  cuando falta un dato). Cualquier categoría que se agregue a futuro va en la posición que le
+  correspondería si Boca tuviera esa fila, no al final por comodidad.
 
-**Categorías/lógica de referencia (las que ya usaban `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
-`_EXPENSE_BUCKETS`, calcadas en su momento de la función Boca-only que existía hasta la Versión
-101):**
-- Ingresos: Cuotas Sociales, Comercial / Sponsors, Estadio (recaudación de partidos + Televisión +
-  Premios por competencias, combinados en una sola fila "Estadio (TV y premios incluidos)" cuando
-  el documento fuente no separa esos 3 conceptos, o como 3 filas propias cuando sí los separa),
-  Abonos, Venta de Jugadores, Otras secciones deportivas y otros ingresos (catch-all).
-- Gastos: Compra de jugadores (amortización + deterioro de pases), Salarios y primas (plantel y
-  cuerpo técnico), Inversiones (amortizaciones y depreciación), Otros gastos (catch-all).
+**REGLA NO OPCIONAL: si el documento/dato fuente de un club NO permite categorizar de esta misma
+manera, no decidas solo cómo resolverlo (categoría inventada, catch-all sin avisar, aproximación
+forzada). Consultale a Guido primero, con la discrepancia concreta y las opciones — no en
+abstracto.**
 
-**REGLA NO OPCIONAL: si el documento/dato fuente de un club NO permite separar/categorizar de esta
-misma manera, NO decidas solo cómo resolverlo (inventar una categoría nueva, dejarlo en un
-catch-all sin avisar, forzar una aproximación). Consultale a Guido primero, mostrando exactamente
-qué discrepancia encontraste (con datos concretos, no en abstracto) y qué opciones hay.**
+**Los nombres tienen que ser IDÉNTICOS carácter por carácter contra Boca, "parecido" no alcanza.**
+Bug real que sobrevivió 3 versiones sin corregirse porque nunca se comparó letra por letra:
+`'Televisión'` (Boca) vs. `'Televisión / Derechos de TV'` (motor genérico) para la misma categoría
+(`broadcasting`). Antes de dar un label por homologado, copiarlo LITERAL del código de Boca, no
+reescribirlo de memoria.
 
-**Investigación real hecha en la Versión 46 (evita repetir esta investigación de cero la próxima
-vez que se toque esto), comparando la categorización de Boca contra los datos reales YA cargados
-de River/Racing:**
-- River (único año real hoy: 2024): el 66,7% del revenue vive en UNA sola línea sin desglosar
-  ("Fútbol Profesional", `lump_football_operations`): la plata de recaudación de entradas,
-  Televisión y premios está mezclada ahí adentro, sin `rawLabel`s propios que permitan separarla
-  como hace Boca. La línea etiquetada `matchday_competition` ("Estadio") en realidad son
-  Concesiones/Museo/Alquileres/Estacionamiento, NO recaudación de entradas. `season_tickets` no se
-  usa para River 2024 en absoluto ("Abonos y aranceles varios" está enterrado como sub-ítem de
-  otra categoría). El catch-all de Gastos ("Otros gastos") es ~80% del total.
-- Racing: en `matchday_competition` conviven ventas de entradas y "cobranzas por participación"
-  (premios/bonos por competencia). En los presupuestos 2026/27 el documento fuente SÍ las separa
-  en 2 líneas propias ("Cobranzas por venta de entradas" vs. "Cobranzas por participación"), pero
-  hoy las 2 quedan bajo el mismo bucket. `season_tickets` solo existe (y mapea limpio a "Abonos")
-  en los presupuestos 2026/27, no en los balances cerrados. El catch-all de Gastos ronda 53-77%
-  según el ejercicio (solo `wages_squad` está cubierto con categoría propia; compra de jugadores,
-  gastos de comercialización, administración/impuestos/financieros e inversiones caen todos en
-  "Otros gastos").
-- Conclusión: emparejar Ingresos con la lógica de Boca es factible para Racing (los datos ya
-  separan recaudación de premios en los presupuestos, solo falta re-etiquetar/nueva categoría) pero
-  NO para River con los datos actuales (la fuente real no tiene ese desglose disponible salvo que
-  se vuelva a leer el balance original a buscarlo). Emparejar Gastos con la lógica de Boca (4
-  categorías chicas + catch-all chico) requiere re-categorizar bastantes líneas de
-  `data/racing-data.js`/`data/river-data.js` que hoy están en `other_expenses`/`other_income`
-  genérico, en vez de una categoría específica, es un trabajo real de re-mapeo, no un cambio
-  cosmético de buckets.
-- **Decisión de Guido (Versión 46, presentada con `AskUserQuestion` antes de tocar nada, ver
-  entrada Versión 46 en `Admin/finance-of-sports-project.md` para el detalle completo)**: Ingresos de Racing,
-  SÍ separar (ya implementado: categoría `competition_bonus` nueva, líneas de
-  `data/racing-data.js` re-etiquetadas, bucket "Premios por competencias" agregado a
-  `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`). Ingresos de River, dejarlo como está por ahora (no se
-  reextrajo el balance). Gastos de los 2 clubes, por ahora no re-categorizar (solo se renombraron
-  los buckets existentes para que coincidan con el vocabulario de Boca: "Compra de jugadores",
-  "Salarios y primas (plantel y cuerpo técnico)", "Inversiones (amortizaciones y depreciación)").
+**`hideIfZero:true` es SOLO para categorías sin equivalente en Boca** ("Fútbol profesional, sin
+desglosar por la fuente" es la única hoy): mostrar esa fila en $0 para un club que sí tiene todo
+bien desglosado sería una fila extra rompiendo la promesa de "igual que Boca". No es una regla
+general de "esconder cualquier $0" — "Venta de Jugadores" en $0 (un club que no vendió a nadie ese
+año) se sigue mostrando igual que en Boca. Cuando el bucket sin desglosar SÍ tiene plata real (ej.
+River 2024, 67% del revenue ahí), la fila se muestra normal.
 
-**EXTENDIDO Versión 47 (Guido: "la tabla tiene que quedar exactamente igual ordenada tambien. el
-orden importa")**: no alcanza con que los nombres coincidan, el ORDEN de las filas también tiene
-que calzar con Boca. Orden de referencia de Ingresos (el que arma `simplifiedReportForBoca()` para
-el Ejercicio 2027, el único con el desglose completo): Cuotas Sociales, Comercial / Sponsors,
-Estadio, Televisión, Premios, Abonos, Venta de Jugadores, catch-all. Orden de Gastos:
-Compra de jugadores, Salarios y primas, Inversiones, catch-all. Cualquier categoría que agregues a
-`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` a futuro tiene que insertarse en la
-posición que le correspondería si Boca tuviera esa misma fila, no al final por comodidad.
+**Ejemplo real de por qué combinar categorías esconde errores en vez de mostrarlos ("Estadio"
+combina `matchday_competition`+`season_tickets`+`stadium_other`)**: al hacer esta fusión, Athletic
+Club pasó a mostrar 97% de sus ingresos en "Estadio". No era culpa de la fusión: su línea "Ingresos
+deportivos" (139,5 M€, 82% del club) estaba categorizada entera como `matchday_competition` desde
+que se cargó, cuando la Nota 21.4 de sus propias cuentas la abre en 5 conceptos, el más grande
+72,7 M€ de TELEVISIÓN — el sitio venía mostrando "Televisión 0,0" para un club que cobra esa cifra.
+**Moraleja, útil para cualquier categorización futura: una categoría que agrupa mucho esconde el
+error; una fila con un porcentaje absurdo del total es señal de sospechar de la línea más grande,
+no del bucket.**
 
-**Categorías-excepción sin equivalente en Boca (hoy: "Fútbol profesional (sin desglosar por la
-fuente)") llevan `hideIfZero:true`**: Guido pidió sacar esa fila de Racing porque estaba en $0 (ver
-Versión 47 en `Admin/finance-of-sports-project.md`). Como esa categoría no existe en el vocabulario de Boca,
-mostrarla en $0 para un club/año que sí tiene todo bien desglosado (como pasa con Racing desde el
-fix de la Versión 38) era una fila extra que rompía la promesa de "exactamente igual que Boca". La
-regla NO es "esconder cualquier fila en $0" (eso rompería la transparencia de mostrar $0 real
-cuando corresponde, ej. "Venta de Jugadores" de un club que no vendió a nadie ese año, que Boca
-también muestra en $0): es específica de las categorías que NO tienen equivalente en Boca. Cuando
-ese bucket sí tiene plata real (ej. River 2024, 67% del revenue en "Fútbol Profesional" sin
-desglosar), la fila se sigue mostrando igual que siempre.
+**Estadio vs. Abonos son dos conceptos DISTINTOS de venta de acceso, nunca un label combinado tipo
+"Entradas / Abonos"**: "Estadio" es lo que el club vende PARTIDO POR PARTIDO (walk-up/single-match,
+`matchday_competition`, `r.exhibicionEspectaculos` en Boca); "Abonos" es season tickets, pago
+adelantado por toda la temporada (`season_tickets`, `r.abonos` en Boca). Mapeá cada rubro de acceso
+al estadio a una de las dos con la pregunta "¿esto se paga por partido o por temporada completa?".
 
-**REFORZADO Versión 48 (Guido: "urnifica, tienen que ser exactamente iguales los nombres.
-homologar")**: "parecido" no alcanza, tiene que ser IDÉNTICO carácter por carácter contra
-`simplifiedReportForBoca()`. Bug real encontrado: `'Televisión'` (Boca) vs. `'Televisión / Derechos
-de TV'` (motor genérico) para la misma categoría (`broadcasting`): sobrevivió 3 versiones (44-47)
-sin corregirse porque nunca se comparó letra por letra, solo "se parece". Antes de dar por
-homologado un label, copiarlo LITERAL del código de Boca (copy-paste del string, no reescribirlo de
-memoria), o comparar los dos arrays lado a lado explícitamente.
+**Educación/Otras secciones deportivas no son una rareza de 2 clubes**: el relevamiento completo
+está en `auditorias/2026-09-22-catchall-no-futbol.md` — los 11 clubes argentinos cargados, los 11,
+tienen negocio no futbolístico (colegio, polideportivo, otros deportes) contra 0 de los 10 españoles
+y 0 de los 10 japoneses. El corte es por forma jurídica (asociación civil multideportiva vs.
+sociedad anónima deportiva), no por país — antes de mandar una línea de colegio/polideportivo/
+alquiler de estadio a `other_income` por descarte, revisar si encaja en `education`/`other_sports`/
+`stadium_other` (criterio conservador para esta última: un "Alquileres" genérico NO es el estadio
+aunque probablemente lo sea — va a `other_income` y la duda a `Admin/dudas-por-club.md`).
 
-**ACTUALIZACIÓN VERSIÓN 189 — LEER ESTO ANTES QUE LA REGLA DE LA VERSIÓN 49 DE ABAJO, QUE QUEDÓ
-REEMPLAZADA.** Las filas de Ingresos de Formato simplificado son hoy, en este orden: Cuotas
-Sociales, Comercial / Sponsors, **Estadio**, Televisión, Premios por competencias, Venta de
-Jugadores, **Educación**, **Otras secciones deportivas**, Fútbol profesional (sin desglosar, con
-`hideIfZero`), y el catch-all **"Otros ingresos"**. Tres cambios, decisión de Guido (2026-09-22):
+**Precedentes de categorización de Gastos de Racing (Versiones 52-53), útiles como referencia para
+cualquier club nuevo con esta misma ambigüedad:**
+- "Costo transferencia de jugadores"/"Pago por adquisición de jugadores" → `player_amortisation`
+  (Racing no capitaliza/amortiza como Boca, expensa el costo completo al momento de la operación —
+  aproximación razonable, no hay una amortización real que separar).
+- Comisiones de compraventa de jugadores y CAPEX (compra de bienes de uso) → se quedan en
+  `other_expenses`, NO en `player_amortisation`/`Inversiones`: Boca tampoco separa comisiones
+  dentro de "Compra de jugadores" (ahí sería MENOS fiel, no más homologado), y CAPEX es plata de
+  caja para comprar activos, un concepto distinto de "Inversiones" (amortización + depreciación,
+  cargo contable no-cash) — mezclarlos rompe la comparabilidad.
+- "Fútbol profesional"/"Otros gastos deportivos fútbol profesional" (costos NO salariales del
+  plantel: médico, indumentaria, viajes, pretemporada) → `wages_squad`, no una categoría nueva,
+  porque Boca Ejercicio 2027 mezcla ese mismo tipo de costo dentro de su propio `wages_squad`
+  (`data/boca-data.js`, línea "Fútbol Profesional — Remuneraciones y primas"). OJO: Boca 2025 (el
+  otro ejercicio real, balance auditado) SÍ separa esto en 2 líneas (Remuneraciones / Otros gastos
+  operativos), así que `wages_squad` significa una cosa un poco distinta según el ejercicio de Boca
+  que se tome como referencia — los 2 ejercicios reales de Boca no son 100% consistentes entre sí en
+  este punto, y el criterio de Racing sigue al Ejercicio 2027 por ser la referencia de nombres/orden
+  de esta sección.
 
-1. **"Estadio: recaudación de partidos" pasó a "Estadio" a secas y absorbió los abonos.** Es UNA
-   fila con las 3 formas de monetizar el estadio (`matchday_competition` + `season_tickets` +
-   `stadium_other`), y el acordeón las separa con el `rawLabel` de cada club. La fila "Abonos"
-   dejó de existir. **El interruptor `ABONOS_DENTRO_DE_ESTADIO` (`js/finanzas-calc.js`) revierte
-   esto en una palabra, sin tocar ningún archivo de datos** — `season_tickets` es la misma
-   categoría en los dos escenarios. Si lo cambiás: correr `node tools/generate-rankings.js`
-   después (los rankings hornean el nombre de cada fila; `audit.js` lo marca P1 si te olvidás).
-2. **"Educación" y "Otras secciones deportivas" son filas nuevas**, espejo de las que la Versión 53
-   creó del lado de Gastos. Hasta la 188, `other_sports`/`youth_football`/`womens_football`/
-   `other_income` caían ENTERAS al catch-all: el colegio de Vélez era el 20% de sus ingresos y no
-   aparecía en ninguna fila. El relevamiento completo —qué club tiene qué negocio no futbolístico y
-   cuánto pesa— está en `auditorias/2026-09-22-catchall-no-futbol.md`, y el dato que hay que
-   recordar al cargar un club nuevo es que **esto no es una rareza de 2 clubes: los 11 clubes
-   argentinos cargados, los 11, tienen negocio no futbolístico**, contra 0 de los 10 españoles y
-   0 de los 10 japoneses. El corte es por forma jurídica (asociación civil multideportiva vs.
-   sociedad anónima deportiva), no por país.
-3. **El catch-all pasó a "Otros ingresos"** a secas, porque "Otras secciones deportivas y otros
-   ingresos" quedaba pegado a su casi homónimo. Queda simétrico con "Otros gastos".
+**REGLA DE INGENIERÍA, no solo de nombres — fácil de pisar al agregar una categoría nueva**:
+`computeYearGeneric()` (`js/finanzas-calc.js`) calcula `otherExpenses` (que alimenta
+`expenses`/`ebitda`/`pat`, no solo lo que se MUESTRA) sumando una lista explícita de categorías.
+Agregar una categoría nueva SOLO a `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` no alcanza — hay que
+sumarla explícitamente también a `otherExpenses` (si es gasto operativo en efectivo) o al cálculo
+de `nonCash` (si es no-efectivo) dentro de `computeYearGeneric()`, si no esa plata desaparece del
+cálculo real aunque se siga viendo bien en la tabla. Bug real que esto causó: al crear 3 categorías
+nuevas sin sumarlas a `otherExpenses`, Racing mostró SUPERÁVIT en ejercicios con déficit real
+(`verifyTieOuts()` lo detectó por Expenses/PAT que dejaron de cerrar, $11-52 mil millones ARS de
+diferencia). Verificar siempre con `verifyTieOuts()` en el navegador (no alcanza `node --check`,
+que solo valida sintaxis) después de agregar una categoría.
 
-LO QUE ESTO CAMBIA AL CARGAR UN CLUB NUEVO: ver las 3 filas nuevas de la tabla de la sección 1
-(`education`, `stadium_other`, `other_sports` en ingresos) antes de mandar una línea de colegio,
-polideportivo o alquiler de estadio a `other_income` por descarte. Y ojo con el criterio
-conservador de `stadium_other`: un "Alquileres" genérico NO es el estadio aunque probablemente lo
-sea — va a `other_income` y la duda a `Admin/dudas-por-club.md`.
-
-UN ERROR REAL QUE ESTA FUSIÓN DESTAPÓ, y que vale como advertencia general: al juntar las 3
-categorías en "Estadio", Athletic Club pasó a mostrar **97% de sus ingresos en esa fila**. No era
-culpa de la fusión: su línea "Ingresos deportivos" (139,5 M€, 82% del club) estaba categorizada
-entera como `matchday_competition` desde que se cargó, y la Nota 21.4 de sus propias cuentas la
-abre en 5 conceptos de los cuales el más grande son los 72,7 M€ de TELEVISIÓN. O sea que el sitio
-venía mostrando "Televisión 0,0" para un club que cobra 72,7 M€ de derechos. **MORALEJA: una
-categoría que agrupa mucho esconde el error; una que agrupa más lo hace visible.** Cuando una fila
-de Formato simplificado se lleva un porcentaje absurdo del total, sospechá de la categorización de
-la línea más grande antes que del bucket.
-
-**REGLA PERMANENTE Versión 49 (Guido: "el row Estadio y el row Entradas/Abonos conceptualmente son
-parecidos. Yo quiero que en Estadio esten las entradas que vende el club, y en Abonos los
-Abonos/Season tickets")**: son dos conceptos DISTINTOS de venta de acceso al estadio, no un mismo
-concepto repartido en dos filas, y el label de cada fila tiene que dejarlo claro:
-- **"Estadio: recaudación de partidos"** (o "Estadio (TV y premios incluidos)" en años sin el
-  desglose fino): entradas que el club vende PARTIDO POR PARTIDO (walk-up / single-match tickets),
-  sea el canal de venta que sea. En Boca es `r.exhibicionEspectaculos` (o su desglose 2027). En
-  River/Racing es la categoría `matchday_competition`.
-- **"Abonos"** (a secas, SIN la palabra "Entradas" adelante, sacada en esta versión justamente
-  porque generaba la confusión de que había entradas repartidas entre las dos filas): abonos/season
-  tickets, la plata de quien paga por adelantado un asiento fijo para TODA la temporada (palcos,
-  plateas, cocheras en el caso de Boca), no partido por partido. En Boca es `r.abonos`. En
-  River/Racing es la categoría `season_tickets`.
-
-Si en el futuro se carga un club/ejercicio nuevo, mapeá cada rubro de venta de acceso al estadio a
-UNA de estas dos categorías según esa misma pregunta ("¿esto se paga por partido o por temporada
-completa?"), nunca a un label combinado tipo "Entradas / Abonos" que sugiera que la distinción no
-importa.
-
-**HOMOLOGACIÓN DE GASTOS DE RACING, HECHA EN LA VERSIÓN 52 (pedido explícito de Guido: "homologar
-egresos en racing a como lo tiene Boca")**: hasta entonces, el lado de Gastos de Racing solo tenía
-los buckets renombrados (sin re-categorizar ninguna línea real, ver "Decisión de Guido" arriba). Eso
-cambió en la Versión 52, solo para el bucket "Compra de jugadores"
-(`player_amortisation`/`player_impairment`):
-
-- Reetiquetadas a `player_amortisation` (antes `other_expenses`, ver comentario completo en
-  `data/racing-data.js` justo antes de `racingExpenseLinesByYear`): "Costo transferencia de
-  jugadores" (2009, 2010, 2011, 2024, 2025) y "Pago por adquisición de jugadores" (2026, 2027). Sin
-  esto, "Compra de jugadores" daba $0 para Racing en TODOS los años, aunque el club gastó plata real
-  comprando jugadores, esa plata estaba enterrada en el catch-all "Otros gastos".
-- Dos casos quedaron a propósito SIN re-categorizar, consultados con `AskUserQuestion` antes de
-  decidir (mismo criterio que exige la REGLA NO OPCIONAL de esta sección): "Pago de gastos por
-  compraventa de jugadores" (comisiones/intermediación, 2026/27) y "Egresos extraordinarios (compra
-  de bienes de uso y mejoras, principalmente)" (CAPEX, 2026/27). Guido confirmó dejar los dos en
-  `other_expenses`: el primero porque Boca tampoco separa comisiones de compraventa dentro de su
-  bucket "Compra de jugadores" (que es solo amortización + deterioro de pases), meterlo ahí sería
-  MENOS fiel a Boca, no más homologado; el segundo porque es CAPEX (plata de caja para comprar
-  activos), un concepto distinto de "Inversiones" de Boca (amortización + depreciación, un cargo
-  contable NO-CASH), mezclarlos rompería la comparabilidad en vez de mejorarla.
-- Los buckets "Salarios y primas" e "Inversiones" de Racing ya estaban bien categorizados desde
-  antes de la Versión 52 (`wages_squad`, `depreciation`, `other_amortisation`), no se tocaron.
-- Nota de fondo para cualquier categorización futura de "Compra de jugadores" en un club nuevo:
-  Boca SÍ distingue amortización (cargo contable por capitalizar y depreciar el pase a lo largo del
-  contrato) de deterioro (`playerImpairment`, un cargo por pérdida de valor). Racing no capitaliza,
-  expensa el costo completo de la operación al momento en que ocurre, así que no hay una
-  amortización/deterioro real que separar, todo entra a `player_amortisation` sola. Es una
-  aproximación (mismo espíritu que el resto de este skill: "no siempre hay un mapeo perfecto,
-  documentar la aproximación es mejor que forzar una separación que el dato no tiene").
-
-**SEGUNDA RONDA, VERSIÓN 53 (Guido: "en 'formato simplificado', las rows tienen que ser siempre
-iguales entre clubes, aunque alguna tenga un cero" + "no puede ser que otros gastos tenga 64% del
-total... mirando los rows de Boca, podes crear nuevos y reducir ese 64%")**: la Versión 52 solo
-había resuelto "Compra de jugadores". El resto de "Otros gastos" de Racing seguía siendo, según el
-ejercicio, entre 39% y 64% del total, muy por encima de lo que Boca 2027 (la referencia) muestra en
-su propio catch-all (0%, ver más abajo). Se agregaron 3 categorías nuevas a
-`EXPENSE_CATEGORIES`/`EXPENSE_CATEGORY_LABELS` (`data/category-map.js`), las MISMAS 3 filas que
-Boca ya arma a mano en `otrosGastos2027` (`js/finanzas-calc.js`): `match_organisation_expense`
-("Organización de partidos"), `youth_other_sports_expense` ("Otras secciones deportivas (juvenil,
-otros deportes, básquet)") y `admin_general_expense` ("Administración y gastos generales"). Se
-agregaron como 3 filas nuevas a `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`, en el mismo orden que usa
-Boca, y se re-etiquetaron TODAS las líneas de `data/racing-data.js` que tenían un rubro
-identificable (ver el comentario extenso en ese archivo, justo antes de `racingExpenseLinesByYear`,
-para el mapeo línea por línea completo). Resultado: el catch-all de Racing bajó a 18% (Presupuesto
-2026/27) y 0% (Ejercicio 2024/25, donde SÍ había rubro identificable para el 100% de lo que antes
-era "Otros gastos").
-
-**REGLA PERMANENTE agregada en esta ronda**: las filas de "Formato Simplificado" de Gastos son
-SIEMPRE las mismas 7 (Compra de jugadores / Salarios y primas / Inversiones / Organización de
-partidos / Otras secciones deportivas / Administración y gastos generales / Otros gastos) para
-CUALQUIER club/año que NO tenga el desglose de 3 filas disponible: esos años muestran las 3 filas
-nombradas en $0 y el monto real completo en "Otros gastos", en vez de directamente no mostrar la
-fila (la fila en $0 no es "esconder", es "no tenemos cómo separar esto todavía", mismo espíritu que
-otras zonas del sitio que muestran $0 con una nota cuando el dato real no está disponible, ej.
-`debtDisclosureNote`). Desde la Versión 102 (Boca migrada al motor genérico) hay UN SOLO lugar donde
-agregar un bucket nuevo, `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS`, usado por todos los clubes por igual
-— ya no hace falta mantener 2 motores en paridad.
-
-**CASO CONSULTADO, Guido eligió sumarlo a "Salarios y primas"**: "Fútbol profesional"
-(2009-2011/2024/2025 de Racing) y "Pago de otros gastos deportivos fútbol profesional" (2026/27),
-costos NO salariales del plantel profesional (médico, indumentaria, viajes, pretemporada), la línea
-más grande de todo el catch-all viejo. Se re-etiquetaron a `wages_squad`, no a una categoría nueva,
-porque Boca YA mezcla este mismo tipo de costo dentro de su propio total `wages_squad` para el
-Ejercicio 2027 (`bocaExpenseLinesByYear[2027]` en `data/boca-data.js`, línea "Fútbol Profesional —
-Remuneraciones y primas", incluye Farmacia/Pretemporada/Vigilancia/Canjes junto con
-Remuneraciones/Primas dentro de sus propios `items`, y ESE total completo alimenta `wages_squad`).
-OJO, matiz importante para no repetir la investigación: esto es distinto de Boca 2025 (balance
-auditado real, migrado al motor genérico en la Versión 102), donde cada departamento se partió en 2
-líneas (Remuneraciones / Otros gastos operativos) — ahí `wages_squad` SÍ es una cifra de
-remuneraciones estricta que excluye esos costos operativos (quedan en `admin_general_expense`/
-`youth_other_sports_expense`, ver comentario de cabecera de `data/boca-data.js`) — los 2 ejercicios
-reales de Boca no son 100% consistentes entre sí en este punto puntual, y esta homologación de
-Racing sigue el criterio del Ejercicio 2027 por ser la referencia canónica que ya usa el resto de
-este skill para nombres/orden.
-
-**BUG REAL encontrado al implementar esto, corregido en la misma sesión**: `computeYearGeneric()`
-(`js/finanzas-calc.js`) calculaba `otherExpenses` (que alimenta `expenses`/`ebitda`/`pat`, no solo
-"Formato Simplificado") sumando SOLO `['other_expenses','lump_football_operations_expense']`. Al
-crear las 3 categorías nuevas y re-etiquetar líneas hacia ellas, esa plata quedó AFUERA de
-`otherExpenses` (no solo del catch-all visual, del cálculo real), y Racing pasó a mostrar SUPERÁVIT
-en ejercicios que en realidad tuvieron déficit real (`verifyTieOuts()` lo detectó: Revenue seguía
-cerrando pero Expenses y PAT dejaron de cerrar, con diferencias de $11-52 mil millones ARS según el
-año). Fix: `otherExpenses` ahora suma las 3 categorías nuevas también (son gasto operativo en
-EFECTIVO, igual que `other_expenses`, no no-efectivo como `depreciation`/`player_amortisation`).
-REGLA PARA EL FUTURO: cualquier categoría nueva de gasto que se agregue a `EXPENSE_CATEGORIES` tiene
-que sumarse explícitamente O BIEN a `otherExpenses` (si es gasto operativo en efectivo) O BIEN al
-cálculo de `nonCash` (si es no-efectivo) dentro de `computeYearGeneric()` — agregarla solo a
-`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` no alcanza, ese array solo controla CÓMO SE MUESTRA la plata en
-Formato Simplificado, no si esa plata efectivamente CUENTA para `expenses`/`ebitda`/`pat`. Verificar
-siempre con `verifyTieOuts()` en el navegador (no alcanza con `node --check`, que solo valida
-sintaxis) después de agregar una categoría nueva.
-
-**Boca 2025 NO recibió el desglose de 3 filas en esta ronda** (quedó como to-do explícito, RESUELTO
-en la Versión 102): un intento de reconstrucción a mano (separar la porción salarial de cada línea
-mixta de `nativeFinancialsBoca[2025].gastos`) dio una diferencia de ~$4.500 M ARS contra
-`otherExpenses` real, y se descartó por el riesgo de ensuciar un balance auditado real sin un chequeo
-que lo confirme. Se resolvió volviendo a los anexos ORIGINALES del balance
-(`Clubes/Argentina/Boca/memoria-y-balance-2024-25.md`, Anexos IX y XI-XVIII), donde cada departamento
-(Fútbol profesional, Estadio, Educación física, Fútbol juvenil, Básquet, Casa Amarilla, Médico, y las
-11 gerencias de "Gastos de estructura operativa") tiene su PROPIA línea "Remuneraciones y cargas
-sociales" separada del resto — sumar esas 9 líneas dio EXACTO el mismo total ($67.869,732365 M) que
-el sitio ya usaba. Ver `data/boca-data.js` (`bocaExpenseLinesByYear[2025]`) para el detalle completo.
-**Lección para el próximo caso similar**: cuando una estructura "nativa" de display no alcanza para
-categorizar correctamente, la solución no es forzar la categorización sobre esa estructura ni
-colapsarla a algo más genérico — es volver al documento fuente transcripto y buscar el nivel de
-detalle que sí distinga lo que hace falta, antes de asumir que no existe.
+**Lección de Boca 2025 (no recibió el desglose de 3 filas por re-categorización directa)**: separar
+a mano la porción salarial de una línea mixta ya mostrada dio una diferencia de ~$4.500 M ARS contra
+`otherExpenses` real — se descartó por el riesgo de ensuciar un balance auditado sin un chequeo que
+lo confirme. Se resolvió releyendo los Anexos ORIGINALES del balance (`Clubes/Argentina/Boca/
+memoria-y-balance-2024-25.md`, Anexos IX y XI-XVIII), donde cada departamento SÍ tiene su propia
+línea "Remuneraciones y cargas sociales" separada — sumar esas 9 líneas dio EXACTO el total ya
+usado. **Cuando una estructura nativa de display no alcanza para categorizar bien, la solución no es
+forzar la categorización sobre esa estructura: es volver al documento fuente transcripto y buscar el
+nivel de detalle que sí distinga lo que hace falta.**
 
 ## 14. `grossDebt`: el criterio de qué línea usar es POR CLUB, no universal — y un balance que
 desglosa gastos por sector/departamento se puede (y conviene) separar por columna, no solo por fila

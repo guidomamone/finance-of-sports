@@ -1,0 +1,79 @@
+# Reino Unido — Companies House, sirve para CUALQUIER deporte
+
+Toda sociedad limitada británica está obligada por la Companies Act 2006 a depositar cuentas anuales
+auditadas, y **Companies House las publica enteras, gratis, sin login, sin API key y sin límite** —
+un `curl` con User-Agent de navegador alcanza. No hay equivalente al `auth`/`send` de la CMF chilena,
+al Referer del SIIS colombiano ni al pago del OMPIC marroquí. Último chequeo: 2026-09-16.
+
+Como la obligación es por forma jurídica y no por deporte, de un solo barrido salieron 24 entidades
+de 4 deportes: 10 clubes de fútbol (9 Premier League + Celtic en Escocia), 4 de rugby union
+(Premiership), 4 condados de cricket y 5 escuderías de Fórmula 1.
+
+**Los 3 pasos:**
+1. Buscar: `.../search/companies?q=<nombre>` → `href="/company/<número>"`.
+2. Listar: `.../company/<número>/filing-history` (y `?page=2` para ir más atrás). El parámetro
+   `?category=accounts` **no filtra nada** por `curl`, hay que filtrar por texto uno mismo.
+3. Bajar: `.../company/<número>/filing-history/<transactionId>/document?format=pdf&download=0`.
+   (Host: `find-and-update.company-information.service.gov.uk`.)
+
+**El tipo de presentación dice qué hay adentro, y hay que leerlo:**
+- `Group of companies' accounts` = consolidadas, es lo que conviene.
+- `Full accounts` = una sola sociedad; puede dejar afuera actividad del grupo (Manchester City y
+  Aston Villa presentan así, y su grupo controlante es otra entidad).
+- `Accounts for a medium company` = **puede** venir sin cuenta de resultados, pero no siempre:
+  verificado que Bath Rugby FY2024/25 trae el P&L completo igual. No descartar por la etiqueta, abrir
+  y buscar `TURNOVER`.
+- `Accounts for a dormant company` / `Micro company accounts` = sociedad vacía; la operativa es otra.
+
+**Gotcha central: los PDF de Companies House son ESCANEOS** (`Creator: go-tiff2pdf`), ~1 char/página
+con `pdftotext`. Hay que OCRear con el flujo ya conocido del proyecto pero con `-l eng` en vez de
+`-l spa`; probado a 200 dpi con `--psm 6` y la calidad es muy buena. Se probó pedir el iXBRL original
+(`?format=xhtml` / `?format=xml`, que evitaría el OCR entero): devolvió **HTTP 500**. Vale reintentar
+por sociedad, no contar con eso.
+
+**Los clubes de cricket NO están en Companies House.** Son *registered societies* (número terminado
+en `R`) y depositan en el **Mutuals Public Register de la FCA**. Buscados en Companies House aparecen
+pero con historial de presentaciones VACÍO — no es que no publiquen, es el registro equivocado. El
+canal de la FCA resultó incluso mejor:
+- Buscar: `https://mutuals.fca.org.uk/Search/Search?SearchTerm=<nombre>` → `/Search/Society/<id>`.
+- Listar (JSON, sin login): `https://mutuals.fca.org.uk/Documents/GetSocietiesDocument?societyId=<id>`.
+  **Gotcha de parseo**: devuelve dos formas distintas según la sociedad, a veces un array pelado y a
+  veces `{sEcho, iTotalRecords, aaData}`. Si no se contemplan las dos, el listado sale vacío sin
+  error (6 condados dieron "0 memorias" hasta arreglarlo).
+- Bajar: `https://mutuals.fca.org.uk/Documents/Download/<docId>`.
+- **Atajo de descubrimiento**: el padrón COMPLETO de las 32.430 sociedades registradas está como CSV
+  abierto en `https://fcastoragemprprod.blob.core.windows.net/societylist/SocietyList.csv`. Filtrando
+  por nombre se encuentran todas las de un deporte de una (43 con "cricket").
+- **Estos PDF SÍ tienen capa de texto** (57.000-131.000 caracteres): `pdftotext -layout` y listo, sin
+  OCR. Y el histórico es mucho más profundo que Companies House: Warwickshire tiene 37 memorias desde
+  1993 y Surrey 35 desde 1994 — la serie más larga de todo el proyecto.
+
+**Escocia** es el mismo Companies House, con números `SC` (Celtic = `SC003487`).
+
+**Los 20 clubes de la Premier League 2025/26 están cubiertos.** Dos gotchas que costó encontrar:
+
+- **La entidad correcta a veces es una HOLDING separada de la operativa, y el nombre no siempre lo
+  delata.** Crystal Palace no está bajo "CPFC Limited" sino bajo `CPFC 2010 Limited` (n° 07206409);
+  Burnley no está bajo la sociedad histórica `Burnley Football & Athletic Company, Limited`
+  (00054222) sino bajo `Burnley FC Holdings Limited` (n° 08335231). El indicio para elegir bien:
+  filtrar candidatos por SIC "93120 Activities of sport clubs", comparar cuál presenta `Group of
+  companies' accounts` (consolidado, lo que conviene) en vez de solo `Full accounts`, y cruzar los
+  directores listados con los dueños conocidos del club por prensa (Steve Parish/Josh
+  Harris/Woody Johnson para Palace, Alan Pace/ALK Capital para Burnley) antes de asumir que la
+  primera coincidencia de nombre es la correcta.
+- **Un club con historia de administración judicial puede tener DOS entidades en Companies House,
+  y el historial de la nueva no llega más atrás de su año de incorporación.** Leeds United tiene una
+  entidad vieja disuelta (`Leeds United Association Football Club Limited (The)`, n° 00170600,
+  dissolved 2019) y la actual (06233875, incorporada 2007) — el filing history de la actual no
+  cubre nada anterior a 2013. Si en el futuro se agrega un club de la EFL con pasado de
+  administración/liquidación (ej. Portsmouth, Bury), buscar ambas entidades antes de concluir que
+  "no hay historial viejo".
+- **La fecha de cierre de ejercicio puede cambiar dentro de la misma serie de un club** (no es un
+  error de transcripción): Wolves y Nottingham Forest cerraban el 31 de mayo y pasaron al 30 de
+  junio en su presentación más reciente; Burnley pasó del 30 de junio al 31 de julio en 2020. Antes
+  de cargar al sitio un ejercicio de transición, chequear si cubre 12 o 13 meses.
+
+**Qué queda de Reino Unido**: los clubes de la EFL (segunda a cuarta división), los 9 condados de
+cricket restantes (ya identificados en el CSV), el resto de Premiership Rugby, la Super League de
+rugby league, y profundizar el histórico (años extra) de los 20 clubes de Premier ya cubiertos. No
+hay nada que investigar en ninguno de esos, es ejecutar el mismo procedimiento.
