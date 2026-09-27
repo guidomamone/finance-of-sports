@@ -15,6 +15,26 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 263 — to-do 91 ampliado: 3 monedas (no solo ARS) y 5 ligas (no solo 3), a pedido de Guido
+
+- `tools/fetch-fx-reference.mjs` ahora baja 3 series, no solo ARS — las 3 monedas con más clubes ya
+  cargados en el sitio: **BRL** (BCB, API pública, PTAX de cierre-venda, 4.203 cotizaciones desde
+  2010) y **COP** (datos.gov.co, dataset de la TRM oficial, 6.111 cotizaciones desde 2010) se suman a
+  ARS. Las 2 nuevas verificadas igual que ARS: exacto dígito por dígito contra los valores YA
+  cargados a mano en `FX_CLOSE` para clubes brasileños y colombianos existentes (BRL 2017-2024, COP
+  2018 y 2025). `tools/lookup-fx-close.js` ya las reconoce (`--currency ARS|BRL|COP`).
+- `tools/brand-color-reference/` suma **España** (`laliga`, 18 clubes) e **Inglaterra**
+  (`premier-league`, 18 clubes) a Argentina/Colombia/Brasil — las 2 ligas europeas con más clubes ya
+  cargados (10 españoles, 19 ingleses, ver `club-data-mapping/SKILL.md` sección 13). Japón se probó
+  y no tiene página de liga en footylogos (`j-league`/`j1-league` dan 404) — no es un hueco real: el
+  proyecto ya usa una fuente mejor para Japón, la `クラブカラー` oficial de la J.League (ver
+  `club-or-year-onboarding/SKILL.md` sección 3), no footylogos.
+- Quedan afuera, a propósito, los ~24 países restantes de `club-sourcing/SKILL.md` que hoy tienen
+  pocos o ningún club cargado — seedear una liga entera sin actividad de onboarding encima no ahorra
+  nada todavía. El criterio que queda: cachear una liga cuando el onboarding/sourcing la toca de
+  verdad (`node tools/fetch-brand-color-reference.mjs <slug> <nombre>`, un comando), no
+  preemptivamente las 29.
+
 ## Versión 262 — to-do 91: FX y brandColor precargados en lote, en vez de buscar uno por uno por club
 
 - `tools/fetch-fx-reference.mjs` + `tools/fx-reference/ars-usd.json`: serie histórica completa del

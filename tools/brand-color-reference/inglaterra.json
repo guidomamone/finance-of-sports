@@ -1,0 +1,380 @@
+{
+ "liga": "premier-league",
+ "source": "https://www.footylogos.com/color-codes/premier-league",
+ "fetchedAt": "2026-09-27T21:02:20.613Z",
+ "note": "Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/SKILL.md sección 3 punto 1b para el proceso de decisión.",
+ "clubs": [
+  {
+   "slug": "wolverhampton-wanderers",
+   "name": "wolverhampton wanderers",
+   "swatches": [
+    {
+     "hex": "#231F20",
+     "label": "Black #231F20"
+    },
+    {
+     "hex": "#FDB913",
+     "label": "Orange #FDB913"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "west-ham-united",
+   "name": "west ham united",
+   "swatches": [
+    {
+     "hex": "#7C2C3B",
+     "label": "Burgundy #7C2C3B"
+    },
+    {
+     "hex": "#2DAFE5",
+     "label": "Sky Blue #2DAFE5"
+    },
+    {
+     "hex": "#D6A93A",
+     "label": "Gold #D6A93A"
+    },
+    {
+     "hex": "#F8D742",
+     "label": "Yellow #F8D742"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "tottenham-hotspur",
+   "name": "tottenham hotspur",
+   "swatches": [
+    {
+     "hex": "#132257",
+     "label": "Navy Blue #132257"
+    }
+   ]
+  },
+  {
+   "slug": "sunderland",
+   "name": "sunderland",
+   "swatches": [
+    {
+     "hex": "#EB172B",
+     "label": "Red #EB172B"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#A68A26",
+     "label": "Gold #A68A26"
+    },
+    {
+     "hex": "#D1BF7F",
+     "label": "Pale Gold #D1BF7F"
+    },
+    {
+     "hex": "#211E1E",
+     "label": "Black #211E1E"
+    }
+   ]
+  },
+  {
+   "slug": "nottingham-forest",
+   "name": "nottingham forest",
+   "swatches": [
+    {
+     "hex": "#DD0000",
+     "label": "Red #DD0000"
+    }
+   ]
+  },
+  {
+   "slug": "liverpool-fc",
+   "name": "liverpool fc",
+   "swatches": [
+    {
+     "hex": "#E51C25",
+     "label": "Red #E51C25"
+    }
+   ]
+  },
+  {
+   "slug": "chelsea",
+   "name": "chelsea",
+   "swatches": [
+    {
+     "hex": "#001489",
+     "label": "Dark Blue #001489"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#FF0000",
+     "label": "Red #FF0000"
+    },
+    {
+     "hex": "#DBA111",
+     "label": "Gold #DBA111"
+    },
+    {
+     "hex": "#D1D3D4",
+     "label": "Light Grey #D1D3D4"
+    },
+    {
+     "hex": "#6A7AB5",
+     "label": "Blue #6A7AB5"
+    }
+   ]
+  },
+  {
+   "slug": "crystal-palace",
+   "name": "crystal palace",
+   "swatches": [
+    {
+     "hex": "#0055A5",
+     "label": "Blue #0055A5"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#EE2E24",
+     "label": "Red #EE2E24"
+    },
+    {
+     "hex": "#B7B7B7",
+     "label": "Grey #B7B7B7"
+    },
+    {
+     "hex": "#E4E4E4",
+     "label": "Light grey #E4E4E4"
+    }
+   ]
+  },
+  {
+   "slug": "manchester-city",
+   "name": "manchester city",
+   "swatches": [
+    {
+     "hex": "#6CADDF",
+     "label": "Sky Blue #6CADDF"
+    },
+    {
+     "hex": "#00285E",
+     "label": "Navy Blue #00285E"
+    },
+    {
+     "hex": "#FFC758",
+     "label": "Gold #FFC758"
+    },
+    {
+     "hex": "#D4A11E",
+     "label": "Dark Gold #D4A11E"
+    },
+    {
+     "hex": "#EE3124",
+     "label": "Red #EE3124"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "everton",
+   "name": "everton",
+   "swatches": [
+    {
+     "hex": "#00009E",
+     "label": "Dark Blue #00009E"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "fulham",
+   "name": "fulham",
+   "swatches": [
+    {
+     "hex": "#CC0000",
+     "label": "Red #CC0000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "arsenal",
+   "name": "arsenal",
+   "swatches": [
+    {
+     "hex": "#EF0107",
+     "label": "Red #EF0107"
+    },
+    {
+     "hex": "#DB0007",
+     "label": "Red #DB0007"
+    },
+    {
+     "hex": "#9C824A",
+     "label": "Gold #9C824A"
+    },
+    {
+     "hex": "#023474",
+     "label": "Navy Blue #023474"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "burnley",
+   "name": "burnley",
+   "swatches": [
+    {
+     "hex": "#5F0041",
+     "label": "Claret #5F0041"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "brentford",
+   "name": "brentford",
+   "swatches": [
+    {
+     "hex": "#E30613",
+     "label": "Red #E30613"
+    },
+    {
+     "hex": "#FBB800",
+     "label": "Yellow #FBB800"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#140E0C",
+     "label": "Black #140E0C"
+    },
+    {
+     "hex": "#E8E4D9",
+     "label": "Off White #E8E4D9"
+    }
+   ]
+  },
+  {
+   "slug": "leeds-united",
+   "name": "leeds united",
+   "swatches": [
+    {
+     "hex": "#FFE003",
+     "label": "Yellow #FFE003"
+    },
+    {
+     "hex": "#0060A9",
+     "label": "Dark Blue #0060A9"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "newcastle-united",
+   "name": "newcastle united",
+   "swatches": [
+    {
+     "hex": "#231F20",
+     "label": "Black #231F20"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#BBBDBF",
+     "label": "Grey #BBBDBF"
+    },
+    {
+     "hex": "#F0B83D",
+     "label": "Orange #F0B83D"
+    },
+    {
+     "hex": "#00B6F1",
+     "label": "Blue #00B6F1"
+    },
+    {
+     "hex": "#EF3E2E",
+     "label": "Red #EF3E2E"
+    }
+   ]
+  },
+  {
+   "slug": "brighton-hove",
+   "name": "brighton hove",
+   "swatches": [
+    {
+     "hex": "#005DAA",
+     "label": "Dark Blue #005DAA"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#FDB913",
+     "label": "Orange #FDB913"
+    }
+   ]
+  },
+  {
+   "slug": "manchester-united",
+   "name": "manchester united",
+   "swatches": [
+    {
+     "hex": "#C1040B",
+     "label": "Dark Red #C1040B"
+    },
+    {
+     "hex": "#FFE500",
+     "label": "Yellow #FFE500"
+    },
+    {
+     "hex": "#DA020E",
+     "label": "Red #DA020E"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  }
+ ]
+}

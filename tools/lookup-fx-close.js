@@ -31,7 +31,9 @@ import { resolve } from 'node:path';
 const projectRoot = resolve(import.meta.dirname, '..');
 
 const CURRENCIES = {
-  ARS: { file: 'ars-usd.json' },
+  ARS: { file: 'ars-usd.json', fuente: 'Dólar mayorista BCRA' },
+  BRL: { file: 'brl-usd.json', fuente: 'PTAX de cierre (venda) del Banco Central do Brasil' },
+  COP: { file: 'cop-usd.json', fuente: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)' },
 };
 
 function parseArgs() {
@@ -98,9 +100,10 @@ function main() {
   }
   console.log('');
   console.log('Para pegar en data/currency-map.js, FX_CLOSE:');
+  const fuente = CURRENCIES[currency].fuente;
   const label = found.exact
-    ? `Dólar mayorista BCRA al ${found.date}`
-    : `Dólar mayorista BCRA, última rueda hábil antes del cierre (${found.date}, ${date} no es día hábil)`;
+    ? `${fuente} al ${found.date}`
+    : `${fuente}, última rueda hábil antes del cierre (${found.date}, ${date} no es día hábil)`;
   console.log(`  '${key}': { fx:${found.fx}, source:'market_close', label:'${label}' },`);
   console.log('');
   console.log(`En el archivo del club: fxRef:'${key}'  (ver club-data-mapping/SKILL.md sección 5 para cuándo corresponde market_close vs. document_close).`);

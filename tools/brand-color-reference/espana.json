@@ -1,0 +1,456 @@
+{
+ "liga": "laliga",
+ "source": "https://www.footylogos.com/color-codes/laliga",
+ "fetchedAt": "2026-09-27T21:02:20.432Z",
+ "note": "Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/SKILL.md sección 3 punto 1b para el proceso de decisión.",
+ "clubs": [
+  {
+   "slug": "valencia-cf",
+   "name": "valencia cf",
+   "swatches": [
+    {
+     "hex": "#E23C07",
+     "label": "Bright Red #E23C07"
+    },
+    {
+     "hex": "#FFE524",
+     "label": "Yellow #FFE524"
+    },
+    {
+     "hex": "#0A0909",
+     "label": "Black #0A0909"
+    },
+    {
+     "hex": "#3E93CD",
+     "label": "Blue #3E93CD"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#D69100",
+     "label": "Gold #D69100"
+    }
+   ]
+  },
+  {
+   "slug": "rcd-mallorca",
+   "name": "rcd mallorca",
+   "swatches": [
+    {
+     "hex": "#E2001A",
+     "label": "Crimson Red #E2001A"
+    },
+    {
+     "hex": "#FFE100",
+     "label": "Yellow #FFE100"
+    },
+    {
+     "hex": "#008146",
+     "label": "Dark Green #008146"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "real-sociedad",
+   "name": "real sociedad",
+   "swatches": [
+    {
+     "hex": "#143C8B",
+     "label": "Dark Blue #143C8B"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#E6A514",
+     "label": "Orange #E6A514"
+    },
+    {
+     "hex": "#FFE24A",
+     "label": "Yellow #FFE24A"
+    },
+    {
+     "hex": "#EC1D24",
+     "label": "Red #EC1D24"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "real-oviedo",
+   "name": "real oviedo",
+   "swatches": [
+    {
+     "hex": "#094CA1",
+     "label": "Dark Blue #094CA1"
+    },
+    {
+     "hex": "#FFD200",
+     "label": "Yellow #FFD200"
+    },
+    {
+     "hex": "#E23627",
+     "label": "Red #E23627"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "real-madrid",
+   "name": "real madrid",
+   "swatches": [
+    {
+     "hex": "#FEBE10",
+     "label": "Gold #FEBE10"
+    },
+    {
+     "hex": "#00529F",
+     "label": "Dark Blue #00529F"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#EE324E",
+     "label": "Crimson Red #EE324E"
+    }
+   ]
+  },
+  {
+   "slug": "atletico-madrid",
+   "name": "atletico madrid",
+   "swatches": [
+    {
+     "hex": "#282A6F",
+     "label": "Dark Blue #282A6F"
+    },
+    {
+     "hex": "#E8151E",
+     "label": "Red #E8151E"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#7E4F3A",
+     "label": "Brown #7E4F3A"
+    },
+    {
+     "hex": "#006A3F",
+     "label": "Green #006A3F"
+    }
+   ]
+  },
+  {
+   "slug": "real-betis",
+   "name": "real betis",
+   "swatches": [
+    {
+     "hex": "#00954C",
+     "label": "Dark Green #00954C"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#DE9500",
+     "label": "Orange #DE9500"
+    },
+    {
+     "hex": "#D7013E",
+     "label": "Crimson Red #D7013E"
+    }
+   ]
+  },
+  {
+   "slug": "rayo-vallecano",
+   "name": "rayo vallecano",
+   "swatches": [
+    {
+     "hex": "#E3361D",
+     "label": "Red #E3361D"
+    },
+    {
+     "hex": "#C0AE33",
+     "label": "Gold #C0AE33"
+    },
+    {
+     "hex": "#251900",
+     "label": "Black #251900"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#008A3A",
+     "label": "Forest Green #008A3A"
+    }
+   ]
+  },
+  {
+   "slug": "rcd-espanyol",
+   "name": "rcd espanyol",
+   "swatches": [
+    {
+     "hex": "#0077BD",
+     "label": "Blue #0077BD"
+    },
+    {
+     "hex": "#E01517",
+     "label": "Red #E01517"
+    },
+    {
+     "hex": "#F5D10D",
+     "label": "Yellow #F5D10D"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "White #FEFEFE"
+    }
+   ]
+  },
+  {
+   "slug": "girona-fc",
+   "name": "girona fc",
+   "swatches": [
+    {
+     "hex": "#CF0C29",
+     "label": "Crimson Red #CF0C29"
+    },
+    {
+     "hex": "#FFB700",
+     "label": "Orange #FFB700"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "levante-ud",
+   "name": "levante ud",
+   "swatches": [
+    {
+     "hex": "#B4053F",
+     "label": "Dark Red #B4053F"
+    },
+    {
+     "hex": "#005CA5",
+     "label": "Dark Blue #005CA5"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#DCA43E",
+     "label": "Gold #DCA43E"
+    },
+    {
+     "hex": "#FAC400",
+     "label": "Yellow #FAC400"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "osasuna",
+   "name": "osasuna",
+   "swatches": [
+    {
+     "hex": "#CB2725",
+     "label": "Red #CB2725"
+    },
+    {
+     "hex": "#2C1A69",
+     "label": "Dark Blue #2C1A69"
+    },
+    {
+     "hex": "#AB842C",
+     "label": "Gold #AB842C"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "athletic-club-bilbao",
+   "name": "athletic club bilbao",
+   "swatches": [
+    {
+     "hex": "#EE2523",
+     "label": "Bright Red #EE2523"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "celta-vigo",
+   "name": "celta vigo",
+   "swatches": [
+    {
+     "hex": "#6DACE5",
+     "label": "Sky Blue #6DACE5"
+    },
+    {
+     "hex": "#D50032",
+     "label": "Crimson Red #D50032"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#B19221",
+     "label": "Gold #B19221"
+    }
+   ]
+  },
+  {
+   "slug": "elche-cf",
+   "name": "elche cf",
+   "swatches": [
+    {
+     "hex": "#C5112E",
+     "label": "Dark Red #C5112E"
+    },
+    {
+     "hex": "#1B458F",
+     "label": "Dark Blue #1B458F"
+    },
+    {
+     "hex": "#E6C777",
+     "label": "Tan #E6C777"
+    },
+    {
+     "hex": "#866B10",
+     "label": "Gold #866B10"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#05642C",
+     "label": "Dark Green #05642C"
+    }
+   ]
+  },
+  {
+   "slug": "deportivo-alaves",
+   "name": "deportivo alaves",
+   "swatches": [
+    {
+     "hex": "#0232A0",
+     "label": "Dark Blue #0232A0"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#D9E0E7",
+     "label": "Light Grey #D9E0E7"
+    },
+    {
+     "hex": "#082E86",
+     "label": "Dark Blue #082E86"
+    }
+   ]
+  },
+  {
+   "slug": "villarreal-cf",
+   "name": "villarreal cf",
+   "swatches": [
+    {
+     "hex": "#FFD733",
+     "label": "Yellow #FFD733"
+    },
+    {
+     "hex": "#EE0028",
+     "label": "Crimson Red #EE0028"
+    },
+    {
+     "hex": "#002D56",
+     "label": "Navy Blue #002D56"
+    },
+    {
+     "hex": "#FFFFFC",
+     "label": "White #FFFFFC"
+    },
+    {
+     "hex": "#FFED54",
+     "label": "Yellow #FFED54"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "fc-barcelona",
+   "name": "fc barcelona",
+   "swatches": [
+    {
+     "hex": "#A50044",
+     "label": "Burgundy #A50044"
+    },
+    {
+     "hex": "#004D98",
+     "label": "Blue #004D98"
+    },
+    {
+     "hex": "#EDBB00",
+     "label": "Gold #EDBB00"
+    },
+    {
+     "hex": "#DB0030",
+     "label": "Red #DB0030"
+    },
+    {
+     "hex": "#FFED02",
+     "label": "Yellow #FFED02"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  }
+ ]
+}
