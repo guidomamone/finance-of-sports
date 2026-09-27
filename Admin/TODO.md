@@ -54,6 +54,74 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+85. RECORRER EL PROCESO DE ONBOARDING PUNTO POR PUNTO Y VER QUÉ SE PUEDE HACER MÁS EFICIENTE Y/O
+    DELEGAR A OTRA IA (pedido de Guido, 2026-09-27: *"ya sé que hay uno o dos puntos de JEV, ponelo
+    como otro punto"* — distinto de 36 y 74, que son específicos a categorizar rubros con JEV). Esto
+    es más amplio: repasar CADA paso de la cadena completa — sourcing → descarga → transcripción
+    (Mistral/Gemini/Tesseract/Claude, ver CLAUDE.md "Cada PDF nuevo") → mapeo a categorías
+    (`club-data-mapping`) → verificación de tie-outs → publicación — y para cada uno preguntarse: ¿ya
+    está en su costo/velocidad óptima?, ¿hay una herramienta o modelo más barato/rápido que lo que se
+    usa hoy (no solo JEV, cualquier API o modelo especializado)?, ¿es un paso que de verdad necesita
+    criterio humano/Sonnet o es mecánico? `Admin/COMO-CORRE-EL-PROYECTO.html` (recién reordenado en
+    la Versión 251) documenta el flujo completo tal cual corre hoy y es el punto de partida natural.
+    Resultado esperado: no un cambio de código, sino una lista de candidatos a to-do nuevos (uno por
+    paso que valga la pena optimizar), para que Guido priorice cuáles perseguir.
+
+84. AGREGAR UN ÁNGULO DE SOURCING PARA PÁGINAS DE RECOPILACIÓN DE DATOS Y PÁGINAS DE FANÁTICOS
+    (pedido de Guido, 2026-09-27, mencionando su propia página de datos como ejemplo, y sitios de
+    hinchas que ya aparecen en resultados de Exa). Hoy la escalera de
+    `.claude/skills/club-sourcing/SKILL.md` sección 0.1 no distingue esta categoría de sitio de las
+    demás. A favor: un agregador o un sitio de fanáticos puede tener un PDF re-alojado que el sitio
+    oficial del club ya perdió, o un dato que ningún canal oficial publicó nunca. Por qué no es solo
+    "sumar una fuente más": un sitio de terceros no es la fuente primaria — cualquier cifra encontrada
+    ahí debe tratarse como LEAD, verificable contra el documento original o contra otra fuente
+    independiente antes de cargarse, mismo estándar de cautela que ya existe para prensa. Y hay más
+    riesgo de homonimia/mezcla de entidades en un agregador no oficial que en el sitio de un regulador
+    (mismo problema que el to-do 76). Antes de tocar el skill (recordar: no editar `SKILL.md` sin
+    avisar, proponer el texto y esperar el OK de Guido): definir qué hace a un agregador "confiable
+    como lead" y cómo se marca en `fuentes/<País>/<Club>.md` que un dato viene de ahí y todavía no
+    está verificado contra el original.
+
+83. VER CÓMO QUEDARÍA UN CLUB CON SU PRESUPUESTO EN OTRA LIGA (pedido de Guido, 2026-09-27: ejemplo,
+    ver cómo quedaría Boca con su presupuesto en la liga española). Es una simulación cruzada: tomar
+    el valor ya cargado de un club e insertarlo en el ranking de OTRA liga para mostrar en qué
+    posición quedaría. Reusa la infraestructura de rankings pre-calculados que ya existe (Versiones
+    182-184, y la mejora de Ligas del to-do 68, Versión 243) — no hace falta bajar clubes de la otra
+    liga en vivo. Preguntas a resolver antes de tocar código: (a) qué métrica se usa (ingresos totales
+    parece el candidato obvio dado que 68 ya los muestra por categoría, confirmar con Guido); (b) qué
+    pasa si el club de origen y la liga destino no comparten moneda/año — mismo problema de fondo que
+    el to-do 23(d) (deflactores) y el aviso ya existente de "ejercicios de años distintos"; (c) UI:
+    ¿selector nuevo ("elegí un club, elegí una liga") o un botón dentro de la ficha de cada club
+    ("¿cómo le iría en...")? Sin evaluar todavía.
+
+80. EVALUAR TWITTER/X COMO CAPA DE SOURCING, sobre todo para clubes de Argentina/LatAm (pedido de
+    Guido, 2026-09-27, a raíz de la lista de dead points del to-do 76-79). Varios dirigentes y clubes
+    chicos comunican institucionalmente ahí — ya apareció hoy como canal de contacto (Argentinos
+    Juniors: "DM a @AAAJoficial", anotado en `fuentes/Argentina/Argentinos Juniors.md`) y es plausible
+    que una foto de la planilla del balance o un hilo de asamblea aparezca ahí antes que en cualquier
+    otro canal. El obstáculo real es el costo: la API de lectura de X ya no es gratis, arranca en el
+    orden de cientos de USD/mes para un uso mínimo razonable. **Antes de evaluar pagar esto, confirmar
+    si Exa (que indexa algo de contenido público de X) ya cubre parte del mismo terreno sin costo
+    extra** — evitar pagar dos veces por la misma cobertura. Sin evaluar todavía, sin cuenta creada.
+
+81. EVALUAR REDDIT COMO CAPA DE SOURCING, pero NO para los países que se vienen trabajando ahora
+    (pedido de Guido, 2026-09-27). Reddit es mayormente angloparlante — en fútbol argentino/peruano
+    la conversación vive en foros de hinchas, Facebook y WhatsApp, no ahí (0 hits de Reddit en toda
+    la sesión del 2026-09-26/27, barriendo decenas de clubes). Tiene más sentido para los países
+    angloparlantes YA cargados en el proyecto (Inglaterra, 19 clubes, con subreddits activos por
+    club) — evaluar cuando toque retomar sourcing en esos países, no ahora. Sin evaluar todavía.
+
+82. EVALUAR SI EL FUNNEL DE SOURCING DEBERÍA TENER ARISTAS ESPECÍFICAS POR PAÍS, en vez de una
+    escalera única para todos (pedido de Guido, 2026-09-27, generalizando la distinción que motivó
+    separar los to-dos 80 y 81: Reddit rinde en países angloparlantes y no en LatAm, mismo patrón
+    ya visible en la escalera de `.claude/skills/club-sourcing/SKILL.md` 0.1, donde la familia 2
+    —regulador— ya varía radicalmente por país (CMF en Chile, SIIS en Colombia, IGJ bloqueada en
+    Argentina, nada documentado en Perú). La pregunta a resolver: ¿conviene formalizar un mapa
+    explícito país → ángulos-que-rinden (qué redes sociales, qué tipo de sitio de hinchas, qué
+    idioma de búsqueda) en vez de que cada sesión lo redescubra sola? Es una pregunta de arquitectura
+    del skill, no una herramienta puntual — pensarla junto con Guido antes de tocar
+    `club-sourcing/SKILL.md` (mismo criterio ya establecido: no editar el skill sin avisar).
+
 72. SEGUIMIENTOS DEL BARRIDO DE 40 CLUBES TRADICIONALES DE ARGENTINA (Versión 246, 2026-09-26,
     7 subagentes en paralelo — detalle completo club por club en `fuentes/Argentina/<Club>.md`):
     - **Almagro, listo para onboarding**: 6 balances auditados reales (Ejercicios 80-85, 2018-2023)
@@ -184,28 +252,26 @@ perdieron sino que se descartaron:
     ahora las cuentas solo se habían charlado como mecanismo del corte free/paid (ver la entrada
     descartada "El corte free/paid y el paywall" al principio de este archivo: **decisión de Guido,
     2026-09-14, el sitio va todo gratis, sin cuentas/suscripciones**). Esto es distinto: no es un
-    paywall, es que el visitante pueda volver a ver búsquedas que ya hizo. Antes de tocar código hace
-    falta resolver, con Guido:
-    - **Qué es exactamente "una búsqueda" acá.** El selector (`js/selector.js`) no tiene un concepto
-      de "búsqueda" como objeto — hoy es una secuencia de pasos (país → club → año, o el constructor
-      de mezcla con varios bloques) que termina en una vista de Finanzas o una comparación. Guardar
-      "la búsqueda" probablemente signifique guardar el estado final (qué club/ejercicio, o qué
-      combinación de bloques de la mezcla) de forma que se pueda RE-ABRIR después, no un historial de
-      texto tipeado en el buscador (eso ya se loggea agregado, sin identificar usuario, en el Worker
-      de la Versión 216 — ver to-do 67, que es telemetría propia para Guido, no algo que el usuario
-      vea en su cuenta).
-    - **Qué proveedor de cuentas.** El proyecto ya evaluó Supabase para auth en la charla del corte
-      free/paid (ver `Admin/finance-of-sports-project.md`) — sitio estático + capa mínima de backend
-      (Supabase para auth y estado, Netlify Functions si hace falta un webhook). Esa arquitectura ya
-      pensada probablemente sirva de base para esto también, aunque el motivo ahora sea otro (guardar
-      búsquedas, no cortar acceso) — confirmar con Guido si sigue siendo la elección o si algo cambió
-      desde esa charla.
-    - **Alcance de la Versión 1**: ¿guardar automáticamente cada búsqueda, o un botón explícito
-      "Guardar esta búsqueda"? ¿Hay un límite de cuántas guarda cada usuario? Ninguna de las dos
-      preguntas está resuelta, preguntarle a Guido antes de diseñar la tabla de datos.
-    EN PAUSA, sin fecha: es una idea de producto todavía sin priorizar contra el resto de esta lista,
-    dejada acá para que no se pierda — no implica que el corte free/paid deba reabrirse, cuentas sin
-    paywall es una combinación nueva que este proyecto no había considerado hasta ahora.
+    paywall, es que el visitante pueda volver a ver búsquedas que ya hizo.
+
+    - **Qué es "una búsqueda" — RESUELTO (Guido, 2026-09-27):** es la elección de club(es) hecha en
+      el selector y las comparaciones armadas con ella, no un historial de texto tipeado (eso ya se
+      loggea agregado y sin usuario en el Worker de la Versión 216, ver to-do 67). Se guarda el
+      estado final (qué club/ejercicio, o qué combinación de bloques de la mezcla), reabrible.
+    - **Guardado y favoritos — RESUELTO (Guido, 2026-09-27):** toda búsqueda se guarda SOLA, sin
+      botón. Aparte hay un botón "Favorito" para marcar las que importan. En la cuenta: los
+      favoritos aparecen primero, después el historial completo.
+    - **Proveedor de cuentas — ABIERTO, Guido pidió que yo elija.** Recomiendo Supabase: ya estaba
+      evaluado como base en la charla del corte free/paid (`Admin/finance-of-sports-project.md`,
+      sitio estático + Supabase para auth/estado + Netlify Functions si hace falta un webhook) —
+      reusar esa arquitectura ya pensada es más barato que evaluar un proveedor nuevo, y ningún
+      requisito de esta feature (guardar y marcar favoritos, no cobrar) queda sin cubrir. Si Guido no
+      objeta, queda confirmado acá.
+    LISTO PARA UNA SESIÓN DE DISEÑO (no de código todavía): con el concepto de búsqueda y el
+    comportamiento de guardado ya resueltos, y una recomendación de proveedor sobre la mesa, el
+    próximo paso es una sesión que confirme Supabase (o lo cambie) y diseñe el schema (tabla de
+    búsquedas guardadas: usuario, club(es)/mezcla elegida, fecha, favorito sí/no) antes de tocar
+    código de verdad.
 
 67. EVALUAR MIXPANEL PARA TRACKEAR LA SECUENCIA COMPLETA DEL SELECTOR, DESDE QUE SE ABRE HASTA QUE
     SE ELIGE UN CLUB (pedido de Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el
