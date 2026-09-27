@@ -41,7 +41,7 @@
     font-size:16px; line-height:1.62; -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1120px;margin:0 auto;padding:0 28px 96px;}
-  .col{max-width:68ch;}
+  .col{max-width:none;}
   code{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.9em;}
 
   header.mast{border-bottom:2px solid var(--ink);padding:56px 0 20px;}
@@ -54,7 +54,7 @@
     font-size:clamp(34px,5.2vw,54px);line-height:1.04;letter-spacing:-.022em;
     font-weight:700;margin:0 0 18px;text-wrap:balance;max-width:18ch;
   }
-  .standfirst{font-size:18px;color:var(--ink-soft);margin:0;max-width:62ch;}
+  .standfirst{font-size:18px;color:var(--ink-soft);margin:0;}
 
   .state{
     display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
@@ -109,6 +109,13 @@
   .ledger tr:last-child td{border-bottom:none;}
   .tbl-wrap{overflow-x:auto;}
 
+  .term{
+    background:#16262B;color:#E4EDEE;border-radius:3px;
+    padding:18px 20px;margin:14px 0;overflow-x:auto;
+    font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;line-height:1.75;
+  }
+  .term .rem{color:#7C9096;}
+
   .leak{
     border-left:3px solid var(--cost);background:var(--cost-soft);
     padding:16px 20px;margin:22px 0 0;border-radius:0 3px 3px 0;
@@ -129,7 +136,7 @@
     font-size:11px;letter-spacing:.11em;text-transform:uppercase;
     color:var(--accent);margin:0 0 4px;font-weight:600;
   }
-  .group .gnote{color:var(--ink-soft);font-size:14.5px;margin:0 0 12px;max-width:68ch;}
+  .group .gnote{color:var(--ink-soft);font-size:14.5px;margin:0 0 12px;}
 
   .legend{
     display:flex;flex-wrap:wrap;gap:18px;
@@ -153,7 +160,7 @@
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">Mapa de procesos · finance-of-sports · 26 sep 2026 · Versión 250</p>
+  <p class="eyebrow">Mapa de procesos · finance-of-sports</p>
   <h1>Cómo corre El deporte en Números</h1>
   <p class="standfirst">Qué es cada archivo del proyecto y los procesos que lo mueven.</p>
 </header>
@@ -168,7 +175,7 @@
   <div><dt>Checks de datos</dt><dd>842</dd></div>
   <div><dt>Archivos por club</dt><dd>7 <small>a mano</small></dd></div>
 </dl>
-<p style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:var(--ink-faint);margin:-46px 0 56px;max-width:68ch;">Los 4 primeros números YA NO SE TIPEAN A MANO (Versión 250, ver el pedido de Guido: "hay más clubes, más países, más ligas, se puede hacer que no esté hardcoded eso?") — salen de correr <code>node tools/generate-como-corre-stats.js</code>, que lee <code>data/clubs.js</code>/<code>data/leagues.js</code>/<code>sources{}</code> igual que ya hacen los otros 4 generadores. <strong>"Checks de datos" sigue siendo manual</strong>: automatizarlo de verdad exigiría reimplementar <code>verifyTieOuts()</code>/<code>checkFxSanity()</code> en Node, y ese atajo es justo el que <code>Admin/CONVENCIONES.md</code> prohíbe (una copia simplificada del motor ya dio 12 falsos positivos una vez) — correr <code>auditAll()</code> en un preview y pegar el número acá sigue siendo el procedimiento.</p>
+<p style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:var(--ink-faint);margin:-46px 0 56px;">Los 4 primeros números salen de correr <code>node tools/generate-como-corre-stats.js</code>, que lee <code>data/clubs.js</code>/<code>data/leagues.js</code>/<code>sources{}</code> igual que los otros generadores. <strong>"Checks de datos" sigue siendo manual</strong>: automatizarlo exigiría reimplementar <code>verifyTieOuts()</code>/<code>checkFxSanity()</code> en Node, algo que <code>Admin/CONVENCIONES.md</code> prohíbe (una copia simplificada del motor dio 12 falsos positivos). Correr <code>auditAll()</code> en un preview y pegar el número acá es el procedimiento.</p>
 
 <!-- ============ INVENTARIO ============ -->
 <section class="flow">
@@ -184,10 +191,10 @@
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
         <tr><td class="mono">index.html</td><td>El HTML y el script principal (KPIs, gráficos, Inicio, Comparar, verificación). Ya no lleva ningún comentario con estado o to-do: eso vive en <code>Admin/</code>.</td><td class="num">82 KB</td></tr>
-        <tr><td class="mono">js/styles.css</td><td>Todo el CSS del sitio. Vivía inline adentro de <code>&lt;style&gt;</code> en <code>index.html</code> hasta el to-do 65: separado a su propio archivo con el mismo criterio de caché que el resto de <code>js/</code> (<code>?v=</code> literal en el <code>&lt;link&gt;</code>, no <code>ASSET_V</code> — ver el gotcha de caché de <code>CLAUDE.md</code>).</td><td class="num">60 KB</td></tr>
+        <tr><td class="mono">js/styles.css</td><td>Todo el CSS del sitio, en su propio archivo (no vive inline en <code>index.html</code>), con el mismo criterio de caché que el resto de <code>js/</code> (<code>?v=</code> literal en el <code>&lt;link&gt;</code>, no <code>ASSET_V</code> — ver el gotcha de caché de <code>CLAUDE.md</code>).</td><td class="num">60 KB</td></tr>
         <tr><td class="mono">js/finanzas-calc.js</td><td>El motor: convierte las líneas de un balance en los totales, los porcentajes y la cascada hasta el resultado neto. Un solo motor para los 161 clubes, <code>computeYearGeneric()</code>.</td><td class="num">53 KB</td></tr>
         <tr><td class="mono">js/finanzas-render.js</td><td>Dibuja: arma las tablas, los gráficos y los números de arriba de cada pestaña.</td><td class="num">73 KB</td></tr>
-        <tr><td class="mono">js/selector.js</td><td>El archivo más grande de <code>js/</code>. Elegir club (el modal paso a paso) y Comparar (ligas, clubes o una mezcla de ambos con su propio agregador) viven juntos desde la Versión 152.</td><td class="num">118 KB</td></tr>
+        <tr><td class="mono">js/selector.js</td><td>El archivo más grande de <code>js/</code>. Elegir club (el modal paso a paso) y Comparar (ligas, clubes o una mezcla de ambos con su propio agregador) viven juntos acá.</td><td class="num">118 KB</td></tr>
         <tr><td class="mono">js/liga.js</td><td>La pestaña Ligas: el ranking de ingresos de los clubes de una liga en un ejercicio, leído de <code>data/rankings/</code>. Ver <a href="#ligas">paso 07</a>.</td><td class="num">39 KB</td></tr>
         <tr><td class="mono">js/i18n.js</td><td>El selector de idioma. Sumar un idioma es un archivo de diccionario nuevo, no tocar esto.</td><td class="num">10 KB</td></tr>
         <tr><td class="mono">fuentes.html<br>+ fuentes/&lt;clubId&gt;.html (161)<br>+ sitemap.xml</td><td>El listado público de documentos fuente, con página propia por club para que un buscador la indexe sin depender de JS. <strong>Se GENERAN</strong>, no se editan — ver <a href="#generadores">paso 06</a>.</td><td class="num">generado</td></tr>
@@ -202,7 +209,7 @@
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
         <tr><td class="mono">data/&lt;club&gt;-data.js</td><td><strong>El archivo más importante del proyecto.</strong> Uno por club: cada línea del balance, su monto, su categoría, el tipo de cambio, la deuda, la caja, y un comentario largo arriba que explica de dónde salió cada número.</td><td class="num">161 archivos<br>3,4 MB</td></tr>
-        <tr><td class="mono">data/clubs.js</td><td>La identidad de cada club: nombre, país, moneda, mes de cierre, y desde la Versión 178 su <code>brandColor</code> (el color del círculo de iniciales en el selector, verificado contra la fuente del club).</td><td class="num">54 KB</td></tr>
+        <tr><td class="mono">data/clubs.js</td><td>La identidad de cada club: nombre, país, moneda, mes de cierre, y su <code>brandColor</code> (el color del círculo de iniciales en el selector, verificado contra la fuente del club).</td><td class="num">54 KB</td></tr>
         <tr><td class="mono">data/category-map.js</td><td>El vocabulario compartido. Traduce "Cuotas Sociales", "Mensalidades de associados" y "Socios" a una misma categoría interna, que es lo que permite comparar un club argentino con uno brasileño.</td><td class="num">7 KB</td></tr>
         <tr><td class="mono">data/currency-map.js</td><td>Cómo se muestra cada moneda, qué rango de tipo de cambio es plausible para cada una, y <code>FX_CLOSE</code>: las cotizaciones de mercado que un ejercicio referencia en vez de repetir.</td><td class="num">19 KB</td></tr>
         <tr><td class="mono">data/site-labels.js</td><td>Qué etiquetas son del sitio y por lo tanto se traducen. Los rubros que salen del balance de un club nunca se traducen.</td><td class="num">3 KB</td></tr>
@@ -218,7 +225,7 @@
 
   <div class="group">
     <h3>Instrucciones · lo que una sesión tiene que respetar</h3>
-    <p class="gnote">Esto es lo que evita que cada sesión vuelva a decidir de cero cosas que ya se decidieron. Los 6 skills se autodescubren solos al abrir la sesión directo en <code>finance-of-sports/</code>, que desde la Versión 120 es el caso normal — y desde el 2026-09-15 este repo ya ni siquiera vive anidado adentro del sitio profesional de Guido, así que el caso "abrirlos a mano" que valía hasta hace poco dejó de existir.</p>
+    <p class="gnote">Esto es lo que evita que cada sesión vuelva a decidir de cero cosas que ya se decidieron. Los 7 skills se autodescubren solos al abrir la sesión directo en <code>finance-of-sports/</code>: no hace falta abrirlos a mano con el Read tool.</p>
     <div class="tbl-wrap"><table class="ledger">
       <thead><tr><th>Archivo</th><th>Qué hace</th><th class="num">Peso</th></tr></thead>
       <tbody>
@@ -327,7 +334,7 @@
 <section class="flow" id="sourcing">
   <div class="col">
     <div class="flow-head"><span class="step-no">02</span><h2>Buscar antes de cargar (sourcing)</h2></div>
-    <p>Onboardear (<a href="#onboarding">paso 03</a>) asume que ya hay un PDF. Conseguir ESE PDF es un proceso propio, <code>club-sourcing</code>, y creció mucho desde que era "mirá el sitio del club y si no está, anotalo como pendiente": hoy es una escalera de 5 familias de ángulo que se agotan EN ORDEN, cada una a fondo antes de pasar a la siguiente — y desde el 2026-09-26 (validado con un A/B test real, no a ojo) también escala en QUIÉN la ejecuta, no solo en qué prueba.</p>
+    <p>Onboardear (<a href="#onboarding">paso 03</a>) asume que ya hay un PDF. Conseguir ESE PDF es un proceso propio, <code>club-sourcing</code>: una escalera de 5 familias de ángulo que se agotan EN ORDEN, cada una a fondo antes de pasar a la siguiente — y que además escala en QUIÉN la ejecuta, no solo en qué prueba, validado con un A/B test real.</p>
     <p><strong>Lo que no es sourcing:</strong> "probé 3 variantes del mismo nombre de archivo en el mismo sitio" no son 3 ángulos, es 1 ángulo probado 3 veces. Y "encontré una Memoria narrativa" no es señal de que el club no publica balance real — es señal de seguir mirando DENTRO del sitio antes de pasar a la familia siguiente (Gimnasia y Esgrima La Plata: 4 memorias narrativas confirmadas durante sesiones enteras, y el balance real vivía en un PDF separado, colgado del mismo posteo).</p>
   </div>
 
@@ -343,7 +350,7 @@
   </table></div>
 
   <div class="col">
-    <p style="color:var(--ink-soft);margin:14px 0 0;"><strong style="color:var(--ink);">Un club "ya muy sourceado" no es excusa para saltear la familia 3.</strong> Boca Juniors (2026-09-26): la nota decía "Wayback CDX: no aplica, club muy sourceado" porque ya tenía presupuesto y balance recientes cargados — pero nadie había corrido nunca el CDX de dominio completo sobre <code>bocajuniors.com.ar</code>. Al correrlo apareció <code>/rebrand/files/</code>, con 2 balances que llevaban sesiones enteras como "pendientes de encontrar". "Ya tiene datos cargados" dice que no hace falta reintentar la familia 1 a ciegas; no dice nada sobre si la familia 3 se agotó de verdad.</p>
+    <p style="color:var(--ink-soft);margin:14px 0 0;"><strong style="color:var(--ink);">Un club "ya muy sourceado" no es excusa para saltear la familia 3.</strong> Boca Juniors: la nota decía "Wayback CDX: no aplica, club muy sourceado" porque ya tenía presupuesto y balance recientes cargados — pero nadie había corrido nunca el CDX de dominio completo sobre <code>bocajuniors.com.ar</code>. Al correrlo apareció <code>/rebrand/files/</code>, con 2 balances que llevaban sesiones enteras como "pendientes de encontrar". "Ya tiene datos cargados" dice que no hace falta reintentar la familia 1 a ciegas; no dice nada sobre si la familia 3 se agotó de verdad.</p>
   </div>
 
   <figure>
@@ -351,7 +358,7 @@
       <defs>
         <marker id="a2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
       </defs>
-      <text x="8" y="18" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="currentColor" opacity=".55" font-weight="600">QUIÉN LO CORRE (validado con A/B test, 2026-09-26)</text>
+      <text x="8" y="18" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="currentColor" opacity=".55" font-weight="600">QUIÉN LO CORRE (validado con A/B test)</text>
 
       <rect x="8" y="30" width="140" height="60" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
       <text x="78" y="54" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="currentColor">1. Sonnet</text>
@@ -424,7 +431,7 @@
 <section class="flow" id="onboarding">
   <div class="col">
     <div class="flow-head"><span class="step-no">03</span><h2>Onboardear un club</h2></div>
-    <p>Es el proceso que más se va a repetir: la meta original era ~10 clubes por cada una de 10 regiones (100) — ya superada, van 161 de 14 países. Sourcing (<a href="#sourcing">paso 02</a>) sigue trayendo candidatos nuevos, así que este paso no tiene techo fijo.</p>
+    <p>Es el proceso que más se va a repetir: la meta de referencia es ~10 clubes por cada una de 10 regiones, y ya van 161 de 14 países. Sourcing (<a href="#sourcing">paso 02</a>) sigue trayendo candidatos nuevos, así que este paso no tiene techo fijo.</p>
     <p>El paso 1 es el que menos cuesta y más ahorra: <strong>medir cuánto texto tiene el PDF antes de tocar nada</strong>. Separa un PDF con texto real (barato de leer) de un escaneo (caro: hay que reconocer los caracteres con Tesseract, o leerlo como imagen).</p>
   </div>
 
@@ -494,7 +501,7 @@
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 2, en detalle: quién transcribe, y por qué tres IAs distintas</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Hasta la Versión 243, transcribir significaba que la sesión de Claude leyera el PDF (con Tesseract si era un escaneo) — funciona, pero son 70.000 a 290.000 tokens de Claude por documento, medido en <code>Admin/test-costo-transcripcion.md</code>. Con ~2000 PDFs pendientes en el inventario, eso importa multiplicado. Desde el 2026-09-26 (Versiones 244-248) el default son dos APIs baratas que Guido corre desde SU PROPIA terminal — <strong>0 tokens de Claude</strong>, sea 1 PDF o sean 2000 — con un subagente de Claude como red de contención, no como primera opción.</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">El default para transcribir en volumen es correr dos APIs baratas desde tu propia terminal — <strong>0 tokens de Claude</strong>, sea 1 PDF o sean 2000 — con un subagente de Claude como red de contención, no como primera opción. La alternativa (que una sesión de Claude lea el PDF, con Tesseract si es un escaneo) funciona, pero son 70.000 a 290.000 tokens de Claude por documento, medido en <code>Admin/test-costo-transcripcion.md</code> — con ~2000 PDFs pendientes en el inventario, esa diferencia importa multiplicada.</p>
   </div>
 
   <div class="tbl-wrap"><table class="ledger">
@@ -509,6 +516,25 @@
   <div class="col">
     <p style="color:var(--ink-soft);margin:12px 0 0;">El orden no es arbitrario: Mistral es el más barato y no tiene el filtro de copyright de Gemini, así que absorbe casi todo — hasta lo que Gemini rechazaría. Gemini entra específicamente donde Mistral es más débil (escaneos dañados). Claude es la última red, para lo que ninguna API resuelve sola. El test que llevó a este orden — 30 documentos, comparados cifra por cifra contra una transcripción ya verificada — está completo en <code>Admin/test-costo-transcripcion.md</code>, junto con los 3 bugs reales que salieron en el camino (tablas que Mistral devuelve como link roto en vez de contenido, un timeout que no cortaba, y un rate-limit que reintentaba demasiado rápido).</p>
   </div>
+
+  <div class="col">
+    <h3 style="font-size:18px;margin:26px 0 6px;font-weight:600;">De punta a punta, en una terminal nueva</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Lo que hay que tipear, en orden, arrancando de cero (sin ninguna sesión de Claude Code de por medio).</p>
+  </div>
+  <pre class="term"><code><span class="rem"># 1. pararse en la carpeta del proyecto</span>
+cd /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports
+
+<span class="rem"># 2. confirmar que las API keys están (si falta alguna, pedírsela a Guido)</span>
+ls Admin/mistral/.env Admin/gemini/.env
+
+<span class="rem"># 3. Mistral OCR, el default — esta corrida hace hasta 150 documentos</span>
+node tools/mistral-ocr-transcribe.mjs --all --limit 150
+
+<span class="rem"># 4. Gemini re-hace SOLO lo que Mistral marcó como escaneo</span>
+node tools/gemini-transcribe.mjs --redo-mistral-scanned
+
+<span class="rem"># 5. lo que ni Mistral ni Gemini pudieron: queda para un subagente de Claude</span>
+node tools/gemini-transcribe.mjs --pendientes-claude</code></pre>
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>
@@ -590,7 +616,7 @@
   <div class="col">
     <p style="color:var(--ink-soft);margin:22px 0 0;"><strong style="color:var(--ink);">Cómo se usa:</strong> abrí <code>financeofsports.com/?audit=1</code> y mirá la consola, o escribí <code>auditAll()</code> ahí mismo. Conviene correrlo antes de cada publicación que toque datos: es lo único que revisa los clubes que nadie está mirando.</p>
     <p style="color:var(--ink-soft);margin:12px 0 0;">Una trampa que apareció al construirlo y que se va a repetir: el primer intento fue un verificador aparte que recalculaba los totales por su cuenta, y <strong style="color:var(--ink);">marcó 12 errores que no existían</strong> porque su fórmula no contemplaba todo lo que suma el motor real. Quedó como regla: la verificación usa el motor del sitio, nunca una copia.</p>
-    <p style="color:var(--ink-soft);margin:12px 0 0;"><strong style="color:var(--ink);">El complemento, en Node:</strong> <code>node tools/audit.js</code> corre en menos de un segundo y audita lo que un total correcto NO delata (categorías con typo, errores de escala, catch-all dominante, generadores desactualizados y, desde la Versión 198, rutas de archivo entre backticks o en un link Markdown que ya no existen en disco — <code>checkRutasMuertas()</code>, el chequeo que también vigila este mismo documento). Hoy (161 clubes, 291 ejercicios): 0 P0, 0 P1, 0 P2, 9 P3 y 83 hallazgos silenciados con su motivo en <code>tools/audit-ignore.json</code>. <code>--quiet</code> lo vuelve un gate: corta con código de salida 1 si hay algo P0 o P1.</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;"><strong style="color:var(--ink);">El complemento, en Node:</strong> <code>node tools/audit.js</code> corre en menos de un segundo y audita lo que un total correcto NO delata (categorías con typo, errores de escala, catch-all dominante, generadores desactualizados, y rutas de archivo entre backticks o en un link Markdown que ya no existen en disco — <code>checkRutasMuertas()</code>, el chequeo que también vigila este mismo documento). Hoy (161 clubes, 291 ejercicios): 0 P0, 0 P1, 0 P2, 9 P3 y 83 hallazgos silenciados con su motivo en <code>tools/audit-ignore.json</code>. <code>--quiet</code> lo vuelve un gate: corta con código de salida 1 si hay algo P0 o P1.</p>
   </div>
 </section>
 
@@ -650,17 +676,17 @@
 <section class="flow" id="generadores">
   <div class="col">
     <div class="flow-head"><span class="step-no">06</span><h2>Lo que ya no se escribe a mano</h2></div>
-    <p>Hasta la Versión 122 la única auditoría vivía en el navegador (<code>verifyTieOuts()</code>/<code>checkFxSanity()</code>). Hoy hay además 5 generadores en <code>tools/</code>, cada uno con un único archivo (o carpeta) que le pertenece: si ese archivo existe, salió del generador, nunca de una edición a mano. Los 4 que tocan DATOS DEL SITIO corren en menos de un segundo y son un chequeo P1 de <code>node tools/audit.js</code> (<code>checkGenerados()</code>): no se puede pushear con uno desactualizado sin que la auditoría lo grite. El 5to (<code>generate-como-corre-stats.js</code>, Versión 250) actualiza SOLO este documento de referencia interno, no un dato que el visitante vea — a propósito no está en <code>checkGenerados()</code>, para no bloquear un push de datos por un número atrasado de un documento que ni se publica.</p>
+    <p>Además de la auditoría en el navegador (<code>verifyTieOuts()</code>/<code>checkFxSanity()</code>), hay 5 generadores en <code>tools/</code>, cada uno con un único archivo (o carpeta) que le pertenece: si ese archivo existe, salió del generador, nunca de una edición a mano. Los 4 que tocan DATOS DEL SITIO corren en menos de un segundo y son un chequeo P1 de <code>node tools/audit.js</code> (<code>checkGenerados()</code>): no se puede pushear con uno desactualizado sin que la auditoría lo grite. El 5to (<code>generate-como-corre-stats.js</code>) actualiza SOLO este documento de referencia interno, no un dato que el visitante vea — a propósito no está en <code>checkGenerados()</code>, para no bloquear un push de datos por un número atrasado de un documento que ni se publica.</p>
   </div>
 
   <div class="tbl-wrap"><table class="ledger">
     <thead><tr><th>Generador</th><th>Qué escribe</th><th>Cuándo correrlo</th></tr></thead>
     <tbody>
-      <tr><td class="mono">generate-club-index.js</td><td>La sección "QUÉ ES REAL POR CLUB" de <code>Admin/ESTADO-clubes.md</code> (partida de <code>ESTADO.md</code> en el to-do 63, cuando se acercaba al umbral de 60 KB de este mismo <code>audit.js</code>).</td><td>Después de onboardear un club.</td></tr>
+      <tr><td class="mono">generate-club-index.js</td><td>La sección "QUÉ ES REAL POR CLUB", en <code>Admin/ESTADO-clubes.md</code> (no en <code>ESTADO.md</code>, para no acercarse al umbral de 60 KB que usa <code>audit.js</code>).</td><td>Después de onboardear un club.</td></tr>
       <tr><td class="mono">generate-fuentes-page.js</td><td><code>fuentes.html</code> + las 161 páginas <code>fuentes/&lt;clubId&gt;.html</code> + <code>sitemap.xml</code>. Borra solo la página de un club que deje de existir.</td><td>Después de cargar una fuente nueva, o de subir <code>ASSET_V</code> (lee esa constante de <code>index.html</code>).</td></tr>
       <tr><td class="mono">generate-rankings.js</td><td><code>data/rankings/&lt;liga&gt;.js</code>, uno por liga (22 archivos), con el motor real.</td><td>Después de cargar un club o un ejercicio nuevo.</td></tr>
       <tr><td class="mono">generate-fuentes-index.js</td><td>La sección "Índice de países" de <code>fuentes/README.md</code> (44 países, sus 3 números cada uno).</td><td>Después de una sesión de sourcing.</td></tr>
-      <tr><td class="mono">generate-como-corre-stats.js</td><td>El bloque de números de la cabecera de <strong>este mismo documento</strong> (clubes, países, ligas, documentos fuente). Nuevo en la Versión 250, a pedido de Guido — antes eran 5 números tipeados a mano y se atrasaban con cada tanda de onboarding.</td><td>Después de cargar un club, o antes de releer este documento.</td></tr>
+      <tr><td class="mono">generate-como-corre-stats.js</td><td>El bloque de números de la cabecera de <strong>este mismo documento</strong> (clubes, países, ligas, documentos fuente) — sin esto, se atrasan con cada tanda de onboarding.</td><td>Después de cargar un club, o antes de releer este documento.</td></tr>
     </tbody>
   </table></div>
 
@@ -674,7 +700,7 @@
   <div class="col">
     <div class="flow-head"><span class="step-no">07</span><h2>Rankings y la pestaña Ligas</h2></div>
     <p>Comparar los clubes de una liga necesitaba bajar el <code>data/&lt;club&gt;-data.js</code> de cada uno. Para la Primera argentina de 2024 (28 clubes, dos de ellos con más de una docena de ejercicios cargados) eso son <strong>101 KB gzip detrás de un solo click</strong>. En Inicio, que ve todo visitante incluido el que rebota, ese costo no se puede pagar.</p>
-    <p>Desde la Versión 182 el ranking de cada (liga, ejercicio) se precalcula UNA vez con el motor real (<code>computeYearGeneric()</code>, nunca reimplementado) y se guarda en <code>data/rankings/&lt;liga&gt;.js</code> — 1 a 3,4 KB gzip por liga. La pestaña Ligas (<code>js/liga.js</code>) y los rankings curados de Inicio (<code>data/destacados.js</code>) leen ESE archivo, sin bajar ningún club.</p>
+    <p>El ranking de cada (liga, ejercicio) se precalcula UNA vez con el motor real (<code>computeYearGeneric()</code>, nunca reimplementado) y se guarda en <code>data/rankings/&lt;liga&gt;.js</code> — 1 a 3,4 KB gzip por liga. La pestaña Ligas (<code>js/liga.js</code>) y los rankings curados de Inicio (<code>data/destacados.js</code>) leen ESE archivo, sin bajar ningún club.</p>
   </div>
 
   <figure>
@@ -689,7 +715,7 @@
       <text x="24" y="53" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">bajar los data/&lt;club&gt;-data.js de la liga</text>
       <text x="24" y="71" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600" fill="var(--cost)">18 – 101 KB gzip, detrás de un click</text>
 
-      <text x="8" y="106" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="var(--good)" opacity=".9" font-weight="600">PRECALCULADO (Versión 182)</text>
+      <text x="8" y="106" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="var(--good)" opacity=".9" font-weight="600">PRECALCULADO</text>
       <rect x="8" y="116" width="330" height="50" rx="3" fill="var(--good)" opacity=".1"/>
       <rect x="8" y="116" width="330" height="50" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
       <text x="24" y="137" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">leer data/rankings/&lt;liga&gt;.js</text>
@@ -711,7 +737,7 @@
 <section class="flow" id="publicar">
   <div class="col">
     <div class="flow-head"><span class="step-no">08</span><h2>Publicar: qué se sirve y qué no</h2></div>
-    <p>Todo el repo se trackea en Git — es el respaldo completo en GitHub, y perderlo significaría perder semanas de trabajo. Pero <strong>trackear no es lo mismo que publicar</strong>: Netlify sirve la raíz del repo tal cual, así que hasta la Versión 196 este mismo documento (siendo <code>.html</code> en la raíz) devolvía 200 en <code>financeofsports.com/COMO-CORRE-EL-PROYECTO.html</code>, igual que <code>CLAUDE.md</code> antes de la Versión 173.</p>
+    <p>Todo el repo se trackea en Git — es el respaldo completo en GitHub, y perderlo significaría perder semanas de trabajo. Pero <strong>trackear no es lo mismo que publicar</strong>: Netlify sirve la raíz del repo tal cual, así que sin protección este mismo documento (siendo <code>.html</code> en la raíz) se serviría en <code>financeofsports.com/COMO-CORRE-EL-PROYECTO.html</code>, igual que cualquier archivo interno suelto en la raíz.</p>
     <p>Dos soluciones que NO servían: destrackear (se pierde el respaldo en GitHub) y hacer el repo privado (controla quién entra a github.com, no qué sirve Netlify — son dos problemas distintos).</p>
   </div>
 
@@ -754,7 +780,7 @@
   </figure>
 
   <div class="col">
-    <p style="color:var(--ink-soft);margin:16px 0 0;"><strong style="color:var(--ink);">Desde la Versión 196, un documento interno nuevo va adentro de <code>Admin/</code> y listo</strong> — no hay que tocar <code>netlify.toml</code>. Hasta la Versión 195 la exclusión era una lista de nombres sueltos de la raíz, y "acordate de sumarlo a la lista" ya había fallado tres veces (la última, <code>COMO-CORRE-EL-PROYECTO.html</code>, porque era <code>.html</code> y el chequeo sólo miraba <code>.md</code>). Si un documento interno queda suelto en la raíz, <code>node tools/audit.js</code> lo caza como <code>doc-interno-no-excluido</code>, y desde la Versión 196 también avisa si <code>Admin/</code> dejara de estar cubierta por el <code>rm -rf</code> (<code>admin-no-excluido</code>, P1) — el chequeo que antes recorría la lista de nombres se hubiera quedado ciego y en verde con los documentos ya movidos a una carpeta, así que se reescribió junto con la mudanza, no después.</p>
+    <p style="color:var(--ink-soft);margin:16px 0 0;"><strong style="color:var(--ink);">Un documento interno nuevo va adentro de <code>Admin/</code> y listo</strong> — no hay que tocar <code>netlify.toml</code>. Si un documento interno queda suelto en la raíz, <code>node tools/audit.js</code> lo caza como <code>doc-interno-no-excluido</code>, sea cual sea su extensión, y también avisa si <code>Admin/</code> dejara de estar cubierta por el <code>rm -rf</code> (<code>admin-no-excluido</code>, P1).</p>
     <p style="color:var(--ink-soft);margin:10px 0 0;"><code>CLAUDE.md</code> es la única excepción: se queda en la raíz porque Claude Code lo carga por convención desde ahí, y se borra en el mismo <code>command</code>.</p>
   </div>
 </section>
@@ -766,8 +792,8 @@
 </div>
 
 <footer>
-  Medido sobre el repo al 26 sep 2026, Versión 250. Versión 249 (2026-09-26) había agregado el paso de transcripción (Mistral/Gemini/Claude) sin remedir el resto; esta versión remidió TODO contra el repo real y agregó el paso 02 (sourcing) y el generador del bloque de arriba, a pedido de Guido ("hay más clubes, más países, más ligas, se puede hacer que no esté hardcoded eso?"). 161 clubes · 14 países · 22 ligas · 842 checks · 297 documentos fuente · 615 archivos en <code>fuentes/</code> · ~150 MB trackeados de <code>Clubes/</code>.<br>
-  Los 4 números de arriba salen de <code>node tools/generate-como-corre-stats.js</code> (Versión 250). "Checks de datos" sigue midiéndose a mano con <code>auditAll()</code> en un preview local — ver el porqué en la nota debajo de la cabecera.<br>
+  161 clubes · 14 países · 22 ligas · 842 checks · 297 documentos fuente · 615 archivos en <code>fuentes/</code> · ~150 MB trackeados de <code>Clubes/</code>.<br>
+  Los primeros 4 números de la cabecera salen de <code>node tools/generate-como-corre-stats.js</code>; "Checks de datos" se mide a mano con <code>auditAll()</code> en un preview local (ver el porqué en la nota debajo de la cabecera). El detalle de qué cambió y cuándo vive en <code>Admin/CHANGELOG.md</code>, no acá.<br>
   Este documento vive en el repo, como <code>Admin/COMO-CORRE-EL-PROYECTO.html</code> — se trackea, no se publica (ver <a href="#publicar">paso 08</a>).
 </footer>
 

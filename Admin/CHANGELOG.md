@@ -15,6 +15,26 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 251 — `COMO-CORRE-EL-PROYECTO.html`: CSS de ancho de texto, prosa sin versionado, y el flujo de terminal completo
+
+- Pedido de Guido: el CSS angostaba todo el texto a 68ch dejando la mitad de la página en blanco
+  ("el css es una porquería, hae que todo texto siga utilizando el ancho de la página"); y la prosa
+  entera narraba historia del proyecto ("todo lo que 'desde la versión' o algo con fechas, no me
+  interesa... no me interesa saber que pasaba antes").
+- **CSS**: sacado el `max-width:68ch`/`62ch` de `.col`, `.standfirst` y `.gnote` (y de un par de
+  párrafos con estilo inline) — el texto ahora usa el ancho completo de `.wrap` (1120px), no una
+  columna angosta con dos tercios de la página vacíos al lado.
+- **Prosa reescrita en todo el documento** para describir el estado actual, sin fechas ni números de
+  versión ni "hasta la Versión X"/"desde la Versión Y": la mención de un número de versión puntual se
+  saca del documento porque ya vive en `Admin/CHANGELOG.md`, que es donde corresponde y no se
+  duplica. Afectó la cabecera, las 4 tablas de inventario, las secciones de sourcing/onboarding/
+  auditoría/generadores/rankings/publicación, y el pie.
+- **"El paso 2, en detalle" suma "De punta a punta, en una terminal nueva"**: el script completo de
+  copiar y pegar (`cd` a la carpeta del proyecto, confirmar que las API keys están, Mistral con
+  `--limit`, Gemini con `--redo-mistral-scanned`, y el `--pendientes-claude` final), en un bloque con
+  estilo de terminal (`.term`, nuevo en el CSS) — antes los 2 comandos estaban sueltos en una tabla
+  sin el resto del flujo.
+
 ## Versión 250 — `COMO-CORRE-EL-PROYECTO.html` remedido entero + sus 4 números clave ya no se tipean a mano
 
 - Pedido de Guido: "hay más clubes, más países, más ligas, se puede hacer que no esté hardcoded eso?",
