@@ -81,21 +81,6 @@ perdieron sino que se descartaron:
     Resultado esperado: no un cambio de código, sino una lista de candidatos a to-do nuevos (uno por
     paso que valga la pena optimizar), para que Guido priorice cuáles perseguir.
 
-84. AGREGAR UN ÁNGULO DE SOURCING PARA PÁGINAS DE RECOPILACIÓN DE DATOS Y PÁGINAS DE FANÁTICOS
-    (pedido de Guido, 2026-09-27, mencionando su propia página de datos como ejemplo, y sitios de
-    hinchas que ya aparecen en resultados de Exa). Hoy la escalera de
-    `.claude/skills/club-sourcing/SKILL.md` sección 0.1 no distingue esta categoría de sitio de las
-    demás. A favor: un agregador o un sitio de fanáticos puede tener un PDF re-alojado que el sitio
-    oficial del club ya perdió, o un dato que ningún canal oficial publicó nunca. Por qué no es solo
-    "sumar una fuente más": un sitio de terceros no es la fuente primaria — cualquier cifra encontrada
-    ahí debe tratarse como LEAD, verificable contra el documento original o contra otra fuente
-    independiente antes de cargarse, mismo estándar de cautela que ya existe para prensa. Y hay más
-    riesgo de homonimia/mezcla de entidades en un agregador no oficial que en el sitio de un regulador
-    (mismo problema que el to-do 76). Antes de tocar el skill (recordar: no editar `SKILL.md` sin
-    avisar, proponer el texto y esperar el OK de Guido): definir qué hace a un agregador "confiable
-    como lead" y cómo se marca en `fuentes/<País>/<Club>.md` que un dato viene de ahí y todavía no
-    está verificado contra el original.
-
 83. VER CÓMO QUEDARÍA UN CLUB CON SU PRESUPUESTO EN OTRA LIGA (pedido de Guido, 2026-09-27: ejemplo,
     ver cómo quedaría Boca con su presupuesto en la liga española). Es una simulación cruzada: tomar
     el valor ya cargado de un club e insertarlo en el ranking de OTRA liga para mostrar en qué
@@ -108,23 +93,6 @@ perdieron sino que se descartaron:
     ¿selector nuevo ("elegí un club, elegí una liga") o un botón dentro de la ficha de cada club
     ("¿cómo le iría en...")? Sin evaluar todavía.
 
-80. EVALUAR TWITTER/X COMO CAPA DE SOURCING, sobre todo para clubes de Argentina/LatAm (pedido de
-    Guido, 2026-09-27, a raíz de la lista de dead points del to-do 76-79). Varios dirigentes y clubes
-    chicos comunican institucionalmente ahí — ya apareció hoy como canal de contacto (Argentinos
-    Juniors: "DM a @AAAJoficial", anotado en `fuentes/Argentina/Argentinos Juniors.md`) y es plausible
-    que una foto de la planilla del balance o un hilo de asamblea aparezca ahí antes que en cualquier
-    otro canal. El obstáculo real es el costo: la API de lectura de X ya no es gratis, arranca en el
-    orden de cientos de USD/mes para un uso mínimo razonable. **Antes de evaluar pagar esto, confirmar
-    si Exa (que indexa algo de contenido público de X) ya cubre parte del mismo terreno sin costo
-    extra** — evitar pagar dos veces por la misma cobertura. Sin evaluar todavía, sin cuenta creada.
-
-81. EVALUAR REDDIT COMO CAPA DE SOURCING, pero NO para los países que se vienen trabajando ahora
-    (pedido de Guido, 2026-09-27). Reddit es mayormente angloparlante — en fútbol argentino/peruano
-    la conversación vive en foros de hinchas, Facebook y WhatsApp, no ahí (0 hits de Reddit en toda
-    la sesión del 2026-09-26/27, barriendo decenas de clubes). Tiene más sentido para los países
-    angloparlantes YA cargados en el proyecto (Inglaterra, 19 clubes, con subreddits activos por
-    club) — evaluar cuando toque retomar sourcing en esos países, no ahora. Sin evaluar todavía.
-
 82. EVALUAR SI EL FUNNEL DE SOURCING DEBERÍA TENER ARISTAS ESPECÍFICAS POR PAÍS, en vez de una
     escalera única para todos (pedido de Guido, 2026-09-27, generalizando la distinción que motivó
     separar los to-dos 80 y 81: Reddit rinde en países angloparlantes y no en LatAm, mismo patrón
@@ -135,6 +103,16 @@ perdieron sino que se descartaron:
     idioma de búsqueda) en vez de que cada sesión lo redescubra sola? Es una pregunta de arquitectura
     del skill, no una herramienta puntual — pensarla junto con Guido antes de tocar
     `club-sourcing/SKILL.md` (mismo criterio ya establecido: no editar el skill sin avisar).
+
+93. EVALUAR SI ARGENTINA AMERITA UN ARCHIVO PROPIO EN `paises/` (pedido de Guido, 2026-09-27, al
+    notar que el piloto de Reddit del to-do 81 no tuvo dónde anotar el hallazgo para los clubes
+    argentinos: `paises/Argentina.md` no existe, porque la sección 0 de `SKILL.md` dice que "fuera
+    de Argentina, el criterio ya es distinto" y la deja afuera del esquema país-por-país. La
+    pregunta a resolver: ¿ese criterio separado sigue siendo correcto ahora que Argentina también
+    empieza a acumular hallazgos del tipo "qué ángulo rinde y cuál no" (Reddit, y potencialmente
+    Twitter/X del to-do 80), o conviene darle su propio archivo igual que a los demás países para
+    tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
+    pregunta más chica y puntual. Sin evaluar todavía.
 
 76. EVALUAR UNA HERRAMIENTA DE VERIFICACIÓN DE IDENTIDAD DE ENTIDAD, para el problema de homonimia
     que se repitió ~5 VECES en la sesión del 2026-09-26 (`Admin/test-barridos.md`) y una vez casi
@@ -188,11 +166,12 @@ perdieron sino que se descartaron:
     Exa: `Admin/firecrawl/.env`, gitignoreado). EN PAUSA hasta que eso esté listo.
 
 73. CARGAR LOS 2 BALANCES DE BOCA ENCONTRADOS VÍA WAYBACK CDX (Versión 247, 2026-09-26): Ejercicio
-    118 (cerrado 30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado), ambos escaneados sin capa
-    de texto, ya descargados en `Clubes/Argentina/Boca/`. **Guido va a correr el OCR/transcripción
-    por su cuenta desde la terminal** — cuando estén los `.md`, falta el mapeo normal
-    (`club-data-mapping`) y la carga al sitio. Quedan sin encontrar 2018, 2019, 2021 y 2024 — no
-    aparecieron ni en este barrido de dominio completo. Detalle en `fuentes/Argentina/Boca.md`.
+    118 (cerrado 30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado). **Transcriptos ya
+    (2026-09-26, Mistral OCR, 101 y 128 páginas):** `Clubes/Argentina/Boca/eecc-30525418835-2022.md`
+    y `Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md`. LISTO PARA MAPEO: no falta
+    nada de Guido, solo una sesión normal de `club-data-mapping` que categorice los rubros y cargue
+    los 2 ejercicios al sitio. Quedan sin encontrar 2018, 2019, 2021 y 2024 — no aparecieron ni en
+    este barrido de dominio completo. Detalle en `fuentes/Argentina/Boca.md`.
     Aparte, para River: un balance del ejercicio cerrado 31/08/2016 (más viejo que cualquiera de los
     8 ya cargados) apareció en Scribd, detrás de una suscripción paga — decisión de Guido si vale
     pagarla, mismo criterio que el trámite de la IGJ ya documentado en `fuentes/Argentina/River.md`.

@@ -140,3 +140,18 @@ sección "Transparência"/"SAF"/"Governança").
   (Goiás) devolvió una tabla prolija por año en la que varias URLs eran reconstrucciones plausibles
   pero inexistentes. Sirve para descubrir que una sección existe, nunca como fuente de las rutas
   exactas a `curl`ear — para eso, `curl` + grep de `href`.
+
+## Redes sociales y sitios de fans
+
+**Reddit: HIT en los 2 clubes con subreddit grande, MISS en el más chico — piloto del 2026-09-27,
+to-do 81 de `Admin/TODO.md`.** Con Arctic Shift/PullPush (gratis, sin cuenta — ver `Reino-Unido.md`
+para por qué WebSearch/Exa/la API oficial no sirven), `r/Corinthians` (125k miembros) y
+`r/palmeiras` (75k) dieron HIT real: posts propios discutiendo el "balanço financeiro" oficial de
+2025 con cifras concretas (ej. "Corinthians registra déficit de quase R$ 150 milhões no balanço
+financeiro de 2025"). **Sorpresa: Flamengo, el club más grande de Brasil, no tiene un subreddit
+comparable** — el único match real es `r/flamengolivre`, con apenas 573 miembros, y dio MISS. Esto
+confirma que el tamaño de la fanaticada en la calle NO predice el tamaño de su comunidad en Reddit
+específicamente — hay que chequear el subreddit real (`/api/subreddits/search?subreddit_prefix=` de
+Arctic Shift) antes de asumir que un club grande tiene cobertura ahí. El patrón que sí se sostiene,
+igual que en Inglaterra: subreddits de ~75-125k rinden, uno de <1k no, sin que el idioma sea la
+variable relevante — ver `Reino-Unido.md` para el detalle completo del piloto.

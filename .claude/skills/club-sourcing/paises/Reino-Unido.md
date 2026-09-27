@@ -77,3 +77,27 @@ canal de la FCA resultó incluso mejor:
 cricket restantes (ya identificados en el CSV), el resto de Premiership Rugby, la Super League de
 rugby league, y profundizar el histórico (años extra) de los 20 clubes de Premier ya cubiertos. No
 hay nada que investigar en ninguno de esos, es ejecutar el mismo procedimiento.
+
+## Redes sociales y sitios de fans
+
+**Reddit: SÍ rinde, pero no con WebSearch/Exa ni con la API oficial — piloto del 2026-09-27, to-do
+81 de `Admin/TODO.md`.** `WebSearch` (`site:reddit.com`) y Exa (con `includeDomains` real) no
+devuelven NINGÚN contenido de `reddit.com`, mismo patrón que `twitter.com`/`x.com` (to-do 80) — es
+un límite de esas dos herramientas, no de Reddit. La API oficial de Reddit también está cerrada para
+este uso (solo aprueba apps nuevas con "valid moderation use case", ver to-do 81 para el detalle).
+
+**Lo que sí funcionó: Arctic Shift (`arctic-shift.photon-reddit.com`) y PullPush (`pullpush.io`)**,
+dos archivos comunitarios de Reddit (sucesores de Pushshift) gratis y sin cuenta. Con ellos, 4 de 5
+clubes ingleses dieron HIT real: `r/nffc` (discusión de un filing en Companies House), `r/Everton`
+(post oficial del club anunciando su Annual Report and Accounts real), `r/NUFC` (varios filings de
+Companies House citados con detalle) y `r/Gunners` (un acuerdo de préstamo de Arsenal registrado en
+Companies House). `r/safc` (Sunderland, 6.787 miembros) dio MISS — 0 resultados en 3 términos
+financieros pese a que el subreddit está activo.
+
+**La variable que decide HIT/MISS es el tamaño del subreddit, no que sea un club inglés**: los 4 HIT
+fueron en comunidades de ~22.000 miembros para arriba (nffc 21,9k, Everton 61,7k, NUFC 76k, Gunners
+431k); el único MISS (Sunderland) tiene 6,8k. El mismo patrón se repitió en Brasil y Argentina (ver
+`paises/Brasil.md`) con clubes de subreddits grandes — la hipótesis de que esto es "cosa de países
+angloparlantes" quedó refutada por los datos. Antes de descartar un club por esto, chequear el
+tamaño de su subreddit real (`/api/subreddits/search?subreddit_prefix=` de Arctic Shift), no su
+país.

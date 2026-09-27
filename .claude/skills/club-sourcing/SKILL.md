@@ -144,6 +144,33 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    en un club grande ya cargado, confirmar que de verdad se corrió el barrido de dominio completo al
    menos una vez; si nunca se corrió, es barato hacerlo (una sola llamada a la CDX API) y puede
    rendir series enteras de años que las otras 4 familias ya habían agotado.
+4b. **Agregadores de datos y sitios de fanáticos.** Un sitio de terceros — una página de
+    recopilación de datos armada por un aficionado, un foro/blog de hinchas, una cuenta de
+    estadísticas — puede tener un PDF re-alojado que el sitio oficial del club ya perdió, o una
+    cifra que ningún canal oficial publicó nunca. NO es una fuente primaria (sección 0): cualquier
+    dato encontrado ahí es un LEAD, no un hallazgo cerrado, mismo estándar de cautela que ya existe
+    para prensa y para homonimia de entidades.
+
+    **Confiable como lead** (vale la pena seguirlo): reproduce o linkea un documento identificable
+    como el balance/estado contable REAL del club (PDF completo, escaneo, foto legible de la
+    planilla) Y declara de dónde lo sacó (asamblea puntual, canal oficial, fecha) — el documento se
+    puede verificar de forma independiente aunque el sitio no sea oficial. Ejemplo real (Exa, A/B
+    test 2026-09-26): un sitio de hinchas con "balances completos" que no es oficial ni está en
+    Wayback del club, pero el documento detrás era real.
+
+    **NO confiable, descartar**: el sitio solo muestra cifras ya elaboradas/estimadas por el propio
+    agregador (rankings, cálculos "a ojo") sin documento fuente detrás — eso es opinión de un
+    tercero, no un lead, mismo criterio que ya excluye a la prensa como fuente en sí.
+
+    **Cómo se marca en `fuentes/<País>/<Club>.md`**: nunca como hallazgo cerrado. Una línea así:
+
+        **Lead sin verificar (agregador)**: <sitio/URL> dice tener el balance <ejercicio> — <qué
+        dice concretamente>. Fuente NO oficial, pendiente de verificar contra <documento original /
+        otra fuente independiente> antes de cargar. Encontrado <fecha>.
+
+    No se carga a `Clubes/<País>/<Club>/` ni se categoriza en `club-data-mapping` hasta
+    confirmarlo — mismo gate que ya existe para cualquier PDF no oficial (ver CLAUDE.md, "OJO CON
+    LO QUE SE TRACKEA").
 5. **Prensa**, solo para CONFIRMAR que el documento existe cuando no se lo encuentra descargable en
    ningún lado (nunca como fuente en sí — ver la primera regla de esta sección). Si prensa cita
    cifras concretas de una asamblea reciente, es señal de que el documento SÍ existe y vale la pena

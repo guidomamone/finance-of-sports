@@ -15,6 +15,70 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 269 — to-do 80: X/Twitter sí rinde como sourcing en Argentina, pagando un revendedor barato
+
+- Investigado si X tenía un atajo gratis tipo Arctic Shift/PullPush (Reddit, to-do 81): no lo tiene,
+  y su situación es peor — la API oficial no tiene NINGÚN tier gratis desde 2026 (pay-per-use puro,
+  $0,005/lectura, Enterprise a partir de USD 42.000/mes recién para buscar el archivo completo, no
+  solo los últimos 7 días). Nitter está muerto desde agosto 2026 por cease-and-desist de X;
+  `snscrape`/`twint` rotos sin mantenimiento desde 2023/2024.
+- Guido armó cuenta en **TwitterAPI.io** (revendedor de terceros, $0,15 cada 1.000 tweets, búsqueda
+  de archivo completo real) y se corrió un piloto de 5 casos con `tools/twitterapiio-search.mjs`
+  (nuevo, `Admin/twitterapiio/.env` gitignoreado igual que las demás keys): **4 de 5 HIT** — solo
+  Chaco For Ever y Gimnasia y Tiro (Salta) dieron MISS (mismo resultado que ya tenían agotado en las
+  otras 4 familias). Argentinos Juniors y Atlanta confirmaron cosas ya sabidas; **All Boys aportó un
+  dato nuevo real**: la cuenta oficial confirmó los números de Ejercicio 103, 106, 108 y 112 de su
+  Memoria y Balance (2016-2025), útil para un mail dirigido aunque no sea el documento en sí —
+  anotado en `fuentes/Argentina/All Boys.md`.
+- **Decisión de Guido: manual/puntual, no entra a la escalera rutinaria de `club-sourcing/SKILL.md`**
+  — mismo criterio que Reddit. `tools/twitterapiio-search.mjs` queda para correrlo a mano cuando un
+  club esté agotado en las 4 familias de siempre y tenga cuenta oficial de X activa. To-do 80 cerrado
+  y borrado de `Admin/TODO.md`.
+
+## Versión 268 — to-do 81 cerrado: Reddit rinde como sourcing, pero por tamaño de subreddit, no por país
+
+- Piloto en 3 pasos. (1) `WebSearch`/Exa no llegan a `reddit.com` en absoluto (confirmado con
+  `includeDomains` real y una query de control sin fútbol) — mismo límite de HERRAMIENTA que el
+  to-do 80 con `twitter.com`/`x.com`. (2) La API oficial de Reddit está cerrada para este caso de
+  uso: solo aprueba apps nuevas con "valid moderation use case", y "Reddit for Researchers" exige
+  afiliación universitaria + IRB. (3) Encontrado un ángulo gratis y sin cuenta que sí funciona:
+  **Arctic Shift** (`arctic-shift.photon-reddit.com`) y **PullPush** (`pullpush.io`), archivos
+  comunitarios sucesores de Pushshift.
+- Piloto extendido a 12 clubes con esas dos herramientas (5 Inglaterra + 4 LatAm + 3 Brasil):
+  **4/5 HIT en Inglaterra** (`r/nffc`, `r/Everton`, `r/NUFC`, `r/Gunners` — leads verificables a
+  filings reales de Companies House o al Annual Report oficial; `r/safc`/Sunderland MISS) y
+  **3/7 HIT en LatAm/Brasil** (`r/BocaJuniors`, `r/Corinthians`, `r/palmeiras` — cifras concretas de
+  asamblea/balanço oficial citadas por hinchas; River, Racing, Colo-Colo y el subreddit de Flamengo
+  MISS). **Hallazgo principal: la variable que separa HIT de MISS es el tamaño del subreddit
+  (~20-25k miembros para arriba), no el idioma/país** — la hipótesis original del to-do quedó
+  refutada por los datos (Boca con 31k rinde igual que Everton con 62k; Sunderland con 6,8k no rinde
+  igual que Racing con 1,1k).
+- Nueva sección "Redes sociales y sitios de fans" en `paises/Reino-Unido.md`, `paises/Chile.md` y
+  `paises/Brasil.md` con el hallazgo — primera vez que este criterio se guarda por país.
+- **Decisión de Guido: no entra a la escalera rutinaria de `club-sourcing/SKILL.md`** — muy pocos
+  clubes de fútbol del mundo tienen un subreddit de ~20-25k miembros para arriba, así que no rinde
+  correrlo por default en cada club nuevo. Queda `tools/reddit-archive-search.mjs` (dos subcomandos:
+  `subs <prefijo>` para chequear el tamaño del subreddit antes de nada, `search` para buscar palabras
+  clave con PullPush) para una corrida manual y ocasional cuando un club puntual lo amerite.
+- To-do 93 nuevo (no 90 — ya usado y retirado, corregido tras el aviso de Guido): evaluar si
+  Argentina amerita su propio `paises/Argentina.md`.
+
+## Versión 267 — to-do 84 cerrado: familia 4b (agregadores y sitios de fans) en club-sourcing
+
+- `.claude/skills/club-sourcing/SKILL.md` sección 0.1 suma la familia 4b: criterio de "confiable
+  como lead" (reproduce/linkea el documento real y dice de dónde salió) vs. "descartar" (cifras
+  propias del agregador sin documento fuente), y la línea de marca en `fuentes/<País>/<Club>.md`
+  para un lead sin verificar todavía. No se carga ni categoriza nada hasta confirmarlo contra el
+  original.
+
+## Versión 266 — to-do 80, paso 1: confirmado que Exa no cubre X/Twitter gratis
+
+- 4 queries de prueba con `tools/exa-search.mjs` (2 generales de asambleas/balances mencionando
+  Twitter, 1 puntual sobre Argentinos Juniors/@AAAJoficial, 1 con `site:twitter.com OR site:x.com`
+  explícito): de ~25 resultados, cero URLs directas de `twitter.com`/`x.com` — el único contenido de
+  tweet que apareció fue embebido en un artículo de prensa que Exa ya indexa por su cuenta. Sin
+  cobertura incremental real. Decisión de si pagar la API de X queda para Guido, sin resolver.
+
 ## Versión 265 — to-do 72 cerrado: los 3 pendientes de Browser pane, resueltos con navegador real
 
 - **Chacarita Juniors**: con Browser pane real el sitio carga sin ningún bloqueo (el "Vercel Security

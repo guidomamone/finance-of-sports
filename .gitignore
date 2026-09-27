@@ -94,6 +94,16 @@ Admin/mistral/.env
 # barrido 3 de sourcing (ver .claude/skills/club-sourcing/SKILL.md sección 0.1b, 2026-09-26).
 Admin/exa/.env
 
+# Misma excepción: Admin/firecrawl/.env tiene la API key de Firecrawl (renderiza como navegador
+# real para leer sitios bloqueados por WAF/JS que curl/WebFetch no pueden bajar, to-do 75,
+# 2026-09-27).
+Admin/firecrawl/.env
+
+# Misma excepción: Admin/twitterapiio/.env tiene la API key de TwitterAPI.io (revendedor de la API
+# de X/Twitter, búsqueda de archivo completo mucho más barata que la oficial), evaluada como
+# capa de sourcing en el to-do 80 (2026-09-27).
+Admin/twitterapiio/.env
+
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).
 # EL ERROR QUE CORRIGE: destrackear resolvía la publicación al precio de perder el

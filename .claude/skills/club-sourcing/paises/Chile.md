@@ -29,3 +29,16 @@ completo: series de 16-17 años consecutivos para Universidad Católica/Universi
   - La Bolsa de Santiago tiene un endpoint sin autenticación que sirve el ÚLTIMO estado financiero de
     un emisor directo: `apiws.bolsadesantiago.com/ifrs/newobtenerpdf.asp?nemo=<NEMOTECNICO>` — útil
     como atajo rápido para el año más reciente, no para el histórico completo.
+
+## Redes sociales y sitios de fans
+
+**Reddit: MISS para los clubes chilenos probados, pero por tamaño de subreddit, no por ser Chile**
+— piloto del 2026-09-27, to-do 81 de `Admin/TODO.md`. `WebSearch`/Exa no sirven para este ángulo en
+ningún país (ver `Reino-Unido.md` para el detalle). Con las herramientas que sí llegan a Reddit de
+verdad (Arctic Shift, PullPush — gratis, sin cuenta), `r/colocolo` (706 miembros) y `r/udechile` (5
+miembros, subreddit casi muerto) dieron 0 HIT en varios términos financieros (`balance`, `estados
+financieros`, `financial statements`). El patrón encontrado en Inglaterra y Brasil (ver
+`Brasil.md`) es que el corte real está en el TAMAÑO del subreddit (~20-25k miembros para arriba
+rinde, por debajo no) — ningún club chileno del proyecto tiene un subreddit ni remotamente cerca de
+ese piso, así que el MISS acá es consistente con esa regla, no una excepción por idioma/país. Si en
+el futuro aparece un club chileno con un subreddit grande, vale la pena reintentar.

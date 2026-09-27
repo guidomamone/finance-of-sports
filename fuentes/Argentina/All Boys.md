@@ -61,3 +61,18 @@ reconfirmado) · búsqueda web: agotado (sin resultados nuevos) · regulador/pa�
   fragmento recuperado — no queda claro si el ejercicio 2024-25 se trató ahí o si sigue pendiente.
   Vale la pena revisar de nuevo si el club publica una crónica del punto contable de esa asamblea.
 - Último chequeo: 2026-09-26.
+
+## Chequeo 2026-09-27 — ángulo nuevo (X/Twitter, to-do 80): números de ejercicio confirmados, sin documento
+
+- **barrido: 3 (TwitterAPI.io, no está en la escalera 0.1b — piloto puntual del to-do 80).**
+  `from:caallboys "memoria y balance"` en `@caallboys` trajo la cuenta oficial confirmando por
+  posteo propio la aprobación de la Memoria y Balance en asamblea para los **Ejercicios N° 103
+  (2016), 106 (2019), 108 (2021 y 2022 — dos posts, uno probablemente errata) y 112 (2025)**, más el
+  de octubre 2024 (sin número citado en el texto, coincide con el PDF infográfico ya conocido). Cada
+  post tiene 1-4 fotos adjuntas — revisadas: son fotos de la propia reunión de asamblea (gente
+  sentada), NO fotos de las páginas del balance. **No es un documento nuevo, pero sí un dato nuevo**:
+  ahora hay una numeración de ejercicios confirmada por el club mismo (103 a 112, 2016-2025) que no
+  estaba en este archivo — útil para pedirle al club puntualmente esos números en vez de "el balance"
+  en general, si se escala a mail (to-do 51).
+- No cambia la conclusión de "candidato a mail": sigue sin aparecer el documento descargable en
+  ningún canal (oficial, Wayback, web, ahora tampoco X).
