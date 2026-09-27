@@ -1,0 +1,546 @@
+{
+ "liga": "liga-profesional-argentina",
+ "source": "https://www.footylogos.com/color-codes/liga-profesional-argentina",
+ "fetchedAt": "2026-09-27T20:52:46.935Z",
+ "note": "Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/SKILL.md sección 3 punto 1b para el proceso de decisión.",
+ "clubs": [
+  {
+   "slug": "gimnasia-y-esgrima",
+   "name": "gimnasia y esgrima",
+   "swatches": [
+    {
+     "hex": "#000000",
+     "label": "black #000000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#EBEBEB",
+     "label": "light grey #EBEBEB"
+    }
+   ]
+  },
+  {
+   "slug": "gimnasia-y-esgrima-la-plata",
+   "name": "gimnasia y esgrima la plata",
+   "swatches": [
+    {
+     "hex": "#121A61",
+     "label": "navy blue #121A61"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#039D53",
+     "label": "green #039D53"
+    },
+    {
+     "hex": "#C4C26A",
+     "label": "olive #C4C26A"
+    }
+   ]
+  },
+  {
+   "slug": "river-plate",
+   "name": "river plate",
+   "swatches": [
+    {
+     "hex": "#ED192D",
+     "label": "Red #ED192D"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#231F20",
+     "label": "Black #231F20"
+    }
+   ]
+  },
+  {
+   "slug": "boca-juniors",
+   "name": "boca juniors",
+   "swatches": [
+    {
+     "hex": "#182A4E",
+     "label": "Navy Blue #182A4E"
+    },
+    {
+     "hex": "#F9BB31",
+     "label": "Yellow #F9BB31"
+    }
+   ]
+  },
+  {
+   "slug": "rosario-central",
+   "name": "rosario central",
+   "swatches": [
+    {
+     "hex": "#FCD91F",
+     "label": "yellow #FCD91F"
+    },
+    {
+     "hex": "#0A3D72",
+     "label": "dark blue #0A3D72"
+    }
+   ]
+  },
+  {
+   "slug": "independiente-rivadavia",
+   "name": "independiente rivadavia",
+   "swatches": [
+    {
+     "hex": "#2A1972",
+     "label": "indigo #2A1972"
+    },
+    {
+     "hex": "#FBFBFB",
+     "label": "white #FBFBFB"
+    }
+   ]
+  },
+  {
+   "slug": "independiente",
+   "name": "independiente",
+   "swatches": [
+    {
+     "hex": "#EC1C24",
+     "label": "red #EC1C24"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "tigre-argentina",
+   "name": "tigre argentina",
+   "swatches": [
+    {
+     "hex": "#ED2A3C",
+     "label": "red #ED2A3C"
+    },
+    {
+     "hex": "#1E448D",
+     "label": "blue #1E448D"
+    },
+    {
+     "hex": "#DBA628",
+     "label": "gold #DBA628"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#E4E5E6",
+     "label": "light grey #E4E5E6"
+    },
+    {
+     "hex": "#010101",
+     "label": "black #010101"
+    }
+   ]
+  },
+  {
+   "slug": "velez-sarsfield",
+   "name": "velez sarsfield",
+   "swatches": [
+    {
+     "hex": "#0161A8",
+     "label": "blue #0161A8"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#F7A64F",
+     "label": "orange #F7A64F"
+    }
+   ]
+  },
+  {
+   "slug": "argentinos-juniors",
+   "name": "argentinos juniors",
+   "swatches": [
+    {
+     "hex": "#E32021",
+     "label": "red #E32021"
+    },
+    {
+     "hex": "#00569D",
+     "label": "blue #00569D"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#FBBA23",
+     "label": "gold #FBBA23"
+    }
+   ]
+  },
+  {
+   "slug": "union-argentina",
+   "name": "union argentina",
+   "swatches": [
+    {
+     "hex": "#ED1C24",
+     "label": "red #ED1C24"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "talleres",
+   "name": "talleres",
+   "swatches": [
+    {
+     "hex": "#040D2D",
+     "label": "dark navy blue #040D2D"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#E2E1D8",
+     "label": "light grey #E2E1D8"
+    }
+   ]
+  },
+  {
+   "slug": "aldovisi",
+   "name": "aldovisi",
+   "swatches": [
+    {
+     "hex": "#F3DB26",
+     "label": "yellow #F3DB26"
+    },
+    {
+     "hex": "#3CA26E",
+     "label": "green #3CA26E"
+    },
+    {
+     "hex": "#0A050C",
+     "label": "black #0A050C"
+    }
+   ]
+  },
+  {
+   "slug": "atletico-tucuman",
+   "name": "atletico tucuman",
+   "swatches": [
+    {
+     "hex": "#66ACD7",
+     "label": "light blue #66ACD7"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#C1A15E",
+     "label": "gold #C1A15E"
+    }
+   ]
+  },
+  {
+   "slug": "sarmiento",
+   "name": "sarmiento",
+   "swatches": [
+    {
+     "hex": "#008349",
+     "label": "green #008349"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "san-lorenzo",
+   "name": "san lorenzo",
+   "swatches": [
+    {
+     "hex": "#EA202C",
+     "label": "red #EA202C"
+    },
+    {
+     "hex": "#263A54",
+     "label": "dark blue #263A54"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "white #FEFEFE"
+    },
+    {
+     "hex": "#040607",
+     "label": "black #040607"
+    }
+   ]
+  },
+  {
+   "slug": "racing-club-argentina",
+   "name": "racing club argentina",
+   "swatches": [
+    {
+     "hex": "#029CDC",
+     "label": "light blue #029CDC"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#00273E",
+     "label": "dark blue #00273E"
+    }
+   ]
+  },
+  {
+   "slug": "atletico-platense",
+   "name": "atletico platense",
+   "swatches": [
+    {
+     "hex": "#5C3919",
+     "label": "brown #5C3919"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "estudiantes-la-plata",
+   "name": "estudiantes la plata",
+   "swatches": [
+    {
+     "hex": "#EC1B23",
+     "label": "red #EC1B23"
+    },
+    {
+     "hex": "#FEFDFD",
+     "label": "white #FEFDFD"
+    },
+    {
+     "hex": "#A8976D",
+     "label": "gold #A8976D"
+    }
+   ]
+  },
+  {
+   "slug": "newells-old-boys",
+   "name": "newells old boys",
+   "swatches": [
+    {
+     "hex": "#F42121",
+     "label": "red #F42121"
+    },
+    {
+     "hex": "#141313",
+     "label": "black #141313"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "white #FEFEFE"
+    }
+   ]
+  },
+  {
+   "slug": "lanus",
+   "name": "lanus",
+   "swatches": [
+    {
+     "hex": "#AB2A3E",
+     "label": "burgundy #AB2A3E"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "white #FEFEFE"
+    }
+   ]
+  },
+  {
+   "slug": "belgrano-cordoba",
+   "name": "belgrano cordoba",
+   "swatches": [
+    {
+     "hex": "#00BBF1",
+     "label": "light blue #00BBF1"
+    },
+    {
+     "hex": "#373435",
+     "label": "dark grey #373435"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "white #FEFEFE"
+    }
+   ]
+  },
+  {
+   "slug": "instituto-cordoba",
+   "name": "instituto cordoba",
+   "swatches": [
+    {
+     "hex": "#DF040B",
+     "label": "red #DF040B"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "central-cordoba",
+   "name": "central cordoba",
+   "swatches": [
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "huracan",
+   "name": "huracan",
+   "swatches": [
+    {
+     "hex": "#E30613",
+     "label": "red #E30613"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "defensa-y-justicia",
+   "name": "defensa y justicia",
+   "swatches": [
+    {
+     "hex": "#00722D",
+     "label": "green #00722D"
+    },
+    {
+     "hex": "#FFDD00",
+     "label": "yellow #FFDD00"
+    }
+   ]
+  },
+  {
+   "slug": "deportivo-riestra",
+   "name": "deportivo riestra",
+   "swatches": [
+    {
+     "hex": "#262526",
+     "label": "black #262526"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "banfield",
+   "name": "banfield",
+   "swatches": [
+    {
+     "hex": "#03953F",
+     "label": "green #03953F"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#B4975A",
+     "label": "gold #B4975A"
+    },
+    {
+     "hex": "#000000",
+     "label": "black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "barracas-central",
+   "name": "barracas central",
+   "swatches": [
+    {
+     "hex": "#E30016",
+     "label": "red #E30016"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#009936",
+     "label": "green #009936"
+    }
+   ]
+  },
+  {
+   "slug": "estudiantes-de-rio-cuarto",
+   "name": "estudiantes de rio cuarto",
+   "swatches": [
+    {
+     "hex": "#008BD0",
+     "label": "blue #008BD0"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "white #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "ac-milan",
+   "name": "ac milan",
+   "swatches": [
+    {
+     "hex": "#E4002B",
+     "label": "Crimson Red #E4002B"
+    },
+    {
+     "hex": "#101820",
+     "label": "Black #101820"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  }
+ ]
+}

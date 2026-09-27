@@ -15,6 +15,25 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 262 — to-do 91: FX y brandColor precargados en lote, en vez de buscar uno por uno por club
+
+- `tools/fetch-fx-reference.mjs` + `tools/fx-reference/ars-usd.json`: serie histórica completa del
+  dólar mayorista BCRA (Comunicación A 3500), 5.828 cotizaciones de 2003 a hoy, bajada de la API
+  pública del BCRA. Verificado dígito por dígito contra los 6 valores de `FX_CLOSE` ya cargados a
+  mano para Almagro (31/10/2018 a 31/10/2023): coincide exacto en los 6.
+- `tools/lookup-fx-close.js <fecha>`: busca LOCAL contra esa serie, con fallback al día hábil
+  anterior más cercano si la fecha cae fin de semana/feriado (mismo criterio que ya usa el proyecto a
+  mano), e imprime la entrada lista para pegar en `FX_CLOSE`. 0 búsquedas web.
+- `tools/fetch-brand-color-reference.mjs <liga-footylogos> <nombre>` + `tools/lookup-brand-color.js`:
+  mismo patrón para los swatches de color que footylogos publica por liga. Cacheadas hoy: Argentina
+  (31 clubes), Colombia (21), Brasil (19) — las 3 ligas con más actividad de sourcing/onboarding
+  reciente. Esto NO decide `brandColor`: solo evita el fetch repetido, el proceso completo de
+  `club-or-year-onboarding/SKILL.md` sección 3 punto 1b (identidad primero, después el hex, las 4
+  trampas ya documentadas) sigue aplicando sobre estos datos cacheados.
+- Ninguno de los 2 tipos de archivo de referencia se lee desde `data/` ni se sirve al visitante —
+  viven en `tools/`, son insumo de onboarding. Agregar otra liga o moneda es correr el fetcher de
+  nuevo con otro argumento, no tocar código.
+
 ## Versión 261 — to-do 88 cerrado por análisis, no por código: no conviene partir la lectura de skills entre sesiones
 
 - Conclusión (2026-09-27): partir la lectura de `club-data-mapping`/`club-or-year-onboarding` entre 2

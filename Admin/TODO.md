@@ -54,32 +54,6 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-91. PRECARGAR TIPOS DE CAMBIO Y BRANDCOLOR EN LOTE, EN VEZ DE BUSCAR UNO POR UNO POR CLUB (candidato
-    del to-do 85, 2026-09-27). Hoy cada club nuevo que no declara su propio `fx` dispara una búsqueda
-    web puntual de la cotización mayorista de SU fecha de cierre (`club-data-mapping/SKILL.md`
-    sección 5) — pasó de nuevo con Almagro, 6 búsquedas para 6 cierres de 31/10 que un archivo
-    histórico completo ya tiene todas juntas. Mismo patrón con `brandColor`
-    (`club-or-year-onboarding` sección 3): una tabla de agregador por LIGA ya resuelve varios clubes
-    de una (el skill lo dice para footylogos), pero solo se aprovecha cuando el onboarding cae justo
-    en un barrido de liga completa, no club por club.
-
-    RECOMENDACIÓN DE ARQUITECTURA (para no repetir el error ya descartado del "adelgazar payload
-    eager" — ver la entrada descartada de este archivo sobre ese to-do): la serie histórica completa
-    NO va a `data/currency-map.js` — ese archivo es eager, se baja en cada pageview, y `FX_CLOSE`
-    tiene que seguir siendo la lista CURADA y chica de cotizaciones que algún club realmente usa, no
-    una serie diaria de años. La serie completa (bajada UNA VEZ de una fuente pública, ej. la API de
-    series históricas del BCRA) vive como archivo de referencia FUERA de lo que el sitio sirve —
-    `tools/fx-reference/ars-usd.json` o similar (no `data/`, para que quede afuera de lo que Netlify
-    publica, mismo criterio que ya saca `Admin/` del deploy) — y un script/función chica
-    (`tools/lookup-fx-close.js`) busca LOCAL contra ese archivo en vez de salir a la web. Cuando una
-    sesión de onboarding necesita una fecha puntual, el script se la da al instante, y RECIÉN AHÍ esa
-    fecha se agrega a `FX_CLOSE` en `currency-map.js` (igual que hoy, pero sin la búsqueda web). Mismo
-    patrón para `brandColor`: una tabla de referencia por liga (`tools/brand-color-reference/
-    <liga>.json`), poblada una sola vez con las tablas de footylogos/teamcolorcodes de esa liga
-    completa, consultada local antes de salir a buscar club por club. Ninguno de los 2 archivos de
-    referencia se sirve al visitante ni se lee en vivo desde el sitio — son insumo de onboarding, no
-    dato de producción.
-
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
     para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de

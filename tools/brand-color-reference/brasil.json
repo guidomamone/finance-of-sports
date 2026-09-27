@@ -1,0 +1,358 @@
+{
+ "liga": "brasileirao-a",
+ "source": "https://www.footylogos.com/color-codes/brasileirao-a",
+ "fetchedAt": "2026-09-27T20:53:06.163Z",
+ "note": "Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/SKILL.md sección 3 punto 1b para el proceso de decisión.",
+ "clubs": [
+  {
+   "slug": "clube-de-remo",
+   "name": "clube de remo",
+   "swatches": [
+    {
+     "hex": "#0F141F",
+     "label": "Black #0F141F"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "White #FEFEFE"
+    }
+   ]
+  },
+  {
+   "slug": "mirassol-fc",
+   "name": "mirassol fc",
+   "swatches": [
+    {
+     "hex": "#EEED05",
+     "label": "Yellow #EEED05"
+    },
+    {
+     "hex": "#256C38",
+     "label": "Forest Green #256C38"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "santos-fc",
+   "name": "santos fc",
+   "swatches": [
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#FFCC11",
+     "label": "Yellow #FFCC11"
+    }
+   ]
+  },
+  {
+   "slug": "fluminense",
+   "name": "fluminense",
+   "swatches": [
+    {
+     "hex": "#92062A",
+     "label": "Burgundy #92062A"
+    },
+    {
+     "hex": "#006039",
+     "label": "Dark Green #006039"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "flamengo-crf",
+   "name": "flamengo (crf)",
+   "swatches": [
+    {
+     "hex": "#C52613",
+     "label": "Red #C52613"
+    },
+    {
+     "hex": "#000200",
+     "label": "Black #000200"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "botafogo",
+   "name": "botafogo",
+   "swatches": [
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "vasco-de-gama",
+   "name": "vasco de gama",
+   "swatches": [
+    {
+     "hex": "#231F20",
+     "label": "Black #231F20"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#EE2722",
+     "label": "Bright Red #EE2722"
+    },
+    {
+     "hex": "#F3973A",
+     "label": "Orange #F3973A"
+    },
+    {
+     "hex": "#221E1E",
+     "label": "Black #221E1E"
+    }
+   ]
+  },
+  {
+   "slug": "vitoria",
+   "name": "vitoria",
+   "swatches": [
+    {
+     "hex": "#FF1100",
+     "label": "Bright Red #FF1100"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "rb-bragantino",
+   "name": "rb bragantino",
+   "swatches": [
+    {
+     "hex": "#D2003C",
+     "label": "Crimson Red #D2003C"
+    },
+    {
+     "hex": "#FFCC00",
+     "label": "Yellow #FFCC00"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#001D46",
+     "label": "Black #001D46"
+    },
+    {
+     "hex": "#DADADA",
+     "label": "Light Grey #DADADA"
+    }
+   ]
+  },
+  {
+   "slug": "bahia",
+   "name": "bahia",
+   "swatches": [
+    {
+     "hex": "#006CB5",
+     "label": "Blue #006CB5"
+    },
+    {
+     "hex": "#ED3237",
+     "label": "Red #ED3237"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "White #FEFEFE"
+    },
+    {
+     "hex": "#FEDD22",
+     "label": "Yellow #FEDD22"
+    }
+   ]
+  },
+  {
+   "slug": "atletico-mineiro",
+   "name": "atletico mineiro",
+   "swatches": [
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#FFDD00",
+     "label": "Yellow #FFDD00"
+    }
+   ]
+  },
+  {
+   "slug": "cruzeiro",
+   "name": "cruzeiro",
+   "swatches": [
+    {
+     "hex": "#2F529E",
+     "label": "Blue #2F529E"
+    },
+    {
+     "hex": "#FEFEFE",
+     "label": "White #FEFEFE"
+    }
+   ]
+  },
+  {
+   "slug": "athletico-paranaense",
+   "name": "athletico paranaense",
+   "swatches": [
+    {
+     "hex": "#CF181F",
+     "label": "Red #CF181F"
+    },
+    {
+     "hex": "#231F20",
+     "label": "Black #231F20"
+    }
+   ]
+  },
+  {
+   "slug": "coritiba",
+   "name": "coritiba",
+   "swatches": [
+    {
+     "hex": "#005742",
+     "label": "Dark Green #005742"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#FAD716",
+     "label": "Yellow #FAD716"
+    }
+   ]
+  },
+  {
+   "slug": "corinthians",
+   "name": "corinthians",
+   "swatches": [
+    {
+     "hex": "#ED1C2E",
+     "label": "Red #ED1C2E"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#231F20",
+     "label": "Black #231F20"
+    }
+   ]
+  },
+  {
+   "slug": "sc-internacional",
+   "name": "sc internacional",
+   "swatches": [
+    {
+     "hex": "#E5050F",
+     "label": "Red #E5050F"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "gremio",
+   "name": "gremio",
+   "swatches": [
+    {
+     "hex": "#0D80BF",
+     "label": "Blue #0D80BF"
+    },
+    {
+     "hex": "#1F1A17",
+     "label": "Black #1F1A17"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#ABAAAA",
+     "label": "Grey #ABAAAA"
+    },
+    {
+     "hex": "#93754F",
+     "label": "Brown #93754F"
+    },
+    {
+     "hex": "#F8C300",
+     "label": "Yellow #F8C300"
+    }
+   ]
+  },
+  {
+   "slug": "sao-paulo-spfc",
+   "name": "sao paulo spfc",
+   "swatches": [
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#FE0000",
+     "label": "Bright Red #FE0000"
+    }
+   ]
+  },
+  {
+   "slug": "palmeiras",
+   "name": "palmeiras",
+   "swatches": [
+    {
+     "hex": "#006437",
+     "label": "Dark Green #006437"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  }
+ ]
+}
