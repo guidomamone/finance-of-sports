@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 288 — to-do 94 cerrado: login de Google publicado para visitantes reales
+
+- Google Cloud → OAuth consent screen: la app pasó de modo "Testing" (solo cuentas agregadas a mano)
+  a publicada — cualquier visitante puede loguearse, no solo Guido.
+- Supabase → Authentication → URL Configuration: agregado `https://financeofsports.com/*` a los
+  Redirect URLs permitidos (antes solo tenía el `localhost` de desarrollo).
+- Con esto, "Saved Searches" (to-do 70) queda usable de punta a punta en producción, no solo en local.
+
 ## Versión 287 — footer actualizado: ya no habla de votar en elecciones de club
 
 - `footer.text`/`footer.note` (`index.html` + `data/lang/en.js`) describían el concepto original

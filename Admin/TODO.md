@@ -188,24 +188,6 @@ perdieron sino que se descartaron:
       baja pasa a Sonnet con el contexto completo del club → si Sonnet tampoco está seguro, cae en
       `Admin/dudas-por-club.md` como ya pasa hoy.
 
-94. ANTES DE QUE "SAVED SEARCHES" (to-do 70, cerrado) SEA USABLE POR VISITANTES DE VERDAD, 2
-    CHEQUEOS DE CONFIGURACIÓN EXTERNA que no se pueden resolver escribiendo código, y que
-    nadie más que Guido puede hacer (paneles de Google/Supabase):
-
-    - **Pantalla de consentimiento OAuth de Google, probablemente en modo "Testing".** Un
-      proyecto nuevo en Google Cloud arranca así por default, y en ese modo SOLO pueden loguearse
-      las cuentas que se agreguen a mano como "test users" en el proyecto — cualquier otro
-      visitante real va a ver una pantalla de error de Google, no el login. Hay que publicarla
-      ("Publish app") en Google Cloud → APIs & Services → OAuth consent screen antes de que esto
-      sirva para alguien que no sea Guido. Con los scopes que usa este login (email, profile) no
-      debería exigir el proceso de verificación largo de Google (eso es para scopes sensibles).
-    - **Redirect URLs de Supabase, hoy solo tiene el `localhost` de desarrollo.** Supabase
-      rechaza el regreso del login de Google a cualquier URL que no esté en su lista blanca
-      (Authentication → URL Configuration → Redirect URLs). Antes de deployar, agregar ahí
-      `https://financeofsports.com/*` (y el dominio viejo que redirige, si corresponde).
-    Sin estos dos pasos, el botón de login funciona perfecto en local (probado por Guido,
-    2026-09-27) pero falla para cualquier visitante real del sitio en producción.
-
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
     to-do 51, proceso de email a clubes). **El barrido de los 40 clubes tradicionales (Versión 246,
