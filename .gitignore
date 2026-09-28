@@ -1,5 +1,11 @@
 .DS_Store
 
+# tools/prepare-onboarding.mjs (to-do 105) escribe un briefing.json al lado del .md que procesa --
+# es un archivo de trabajo para arrancar una sesión de onboarding con menos overhead, no un
+# documento fuente ni su transcripción (esas dos SÍ se trackean, ver más abajo). Se regenera en
+# segundos corriendo la tool de nuevo, así que no hace falta ni conservarlo ni publicarlo.
+*.briefing.json
+
 # Source PDFs stay local only (large scans, not needed to serve the site —
 # the site reads from data/*.js, not from these). Their .md transcriptions
 # ARE tracked, since those are small and reusable across sessions.

@@ -51,13 +51,28 @@ function isSeparatorRow(cells) {
 // Un número con 2+ grupos de miles (ej. "1.234.567" o "1,234,567") SOLO puede
 // ser separador de miles, nunca decimal — es la señal inequívoca. Cuenta cuál
 // convención domina en el documento entero.
+//
+// "space" (agregado probando prepare-onboarding.mjs contra un documento noruego real,
+// Rosenborg 2012: "159 113 159") es la 3ra convención real que aparece en el corpus del
+// proyecto -- sin esto, un documento escandinavo (espacio como separador de miles) caía
+// SIEMPRE del lado "eu" o "us" por descarte, aunque ninguno de los dos sea el correcto, y
+// ese numberFormat erróneo terminaba en el briefing sin ninguna señal de que estaba mal.
 function detectNumberFormat(text) {
-  const us = (text.match(/\d{1,3}(,\d{3}){2,}(\.\d{1,2})?/g) || []).length;
-  const eu = (text.match(/\d{1,3}(\.\d{3}){2,}(,\d{1,2})?/g) || []).length;
-  if (us === 0 && eu === 0) return { format: 'ambiguo', evidence: { us, eu } };
-  if (us > eu) return { format: 'us (coma miles, punto decimal)', evidence: { us, eu } };
-  if (eu > us) return { format: 'eu (punto miles, coma decimal)', evidence: { us, eu } };
-  return { format: 'ambiguo', evidence: { us, eu } };
+  const counts = {
+    us: (text.match(/\d{1,3}(,\d{3}){2,}(\.\d{1,2})?/g) || []).length,
+    eu: (text.match(/\d{1,3}(\.\d{3}){2,}(,\d{1,2})?/g) || []).length,
+    space: (text.match(/\d{1,3}( \d{3}){2,}(,\d{1,2})?/g) || []).length,
+  };
+  const labels = {
+    us: 'us (coma miles, punto decimal)',
+    eu: 'eu (punto miles, coma decimal)',
+    space: 'espacio como separador de miles (escandinavo)',
+  };
+  const max = Math.max(counts.us, counts.eu, counts.space);
+  if (max === 0) return { format: 'ambiguo', evidence: counts };
+  const winners = Object.keys(counts).filter((k) => counts[k] === max);
+  if (winners.length > 1) return { format: 'ambiguo', evidence: counts };
+  return { format: labels[winners[0]], evidence: counts };
 }
 
 // Palabras clave de ingresos/gastos, multi-idioma (ES/IT/EN vistos en el
@@ -82,6 +97,15 @@ function isLikelyRelevant(section, columns) {
 
 function isStrongHeading(line) {
   if (/^#{1,6}\s/.test(line)) return true;
+  // BUG REAL encontrado con prepare-onboarding.mjs contra River 2021: un título en negrita de
+  // línea completa ("**Estado de Recursos y Gastos**") es tan claramente un heading como uno con
+  // "#", pero en minúscula/mixto no pasaba el test de ALL-CAPS de abajo -- quedaba en el trail
+  // DÉBIL, y una letra repetida de membrete ("# Club Atlético...") más vieja de la MISMA página o
+  // de la página anterior (el trail no se resetea por página) le ganaba el lugar en el trail
+  // FUERTE, que tiene prioridad. Resultado: la tabla de Recursos y Gastos -- la más importante del
+  // documento -- salía marcada `likelyRelevant:false` porque su `section` terminaba siendo el
+  // bloque de firmas de la página anterior, no su propio título.
+  if (/^\*\*.+\*\*$/.test(line)) return true;
   const letters = line.replace(/[^a-zA-ZÀ-ÿ]/g, '');
   if (letters.length < 4) return false;
   const upper = letters.replace(/[^A-ZÀ-Ý]/g, '');
@@ -194,7 +218,7 @@ if (asJson) {
   const rowCount = output.tables.reduce((n, t) => n + t.rows.length, 0);
   const relevantCount = tables.filter((t) => t.likelyRelevant).length;
   console.log(`${filePath}`);
-  console.log(`  formato numérico detectado: ${numberFormat.format} (evidencia US=${numberFormat.evidence.us} EU=${numberFormat.evidence.eu})`);
+  console.log(`  formato numérico detectado: ${numberFormat.format} (evidencia US=${numberFormat.evidence.us} EU=${numberFormat.evidence.eu} ESPACIO=${numberFormat.evidence.space})`);
   console.log(`  ${tables.length} tablas totales, ${relevantCount} marcadas relevantes`);
   console.log(`  ${output.tables.length} tablas / ${rowCount} filas en la salida${onlyRelevant ? ' (--relevant)' : ''}`);
   const asStr = JSON.stringify(output);

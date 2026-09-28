@@ -25,6 +25,14 @@ import { readFileSync } from 'node:fs';
 
 function parseNumber(raw) {
   let s = String(raw).trim();
+  // BUG REAL encontrado probando prepare-onboarding.mjs contra un documento noruego (Rosenborg
+  // 2012, "159 113 159" con espacio como separador de miles, convención escandinava): sin esto,
+  // parseFloat cortaba en el primer espacio y devolvía 159 en vez de 159113159 -- SIN tirar error
+  // (a diferencia de un valor con letras), así que el bug pasaba desapercibido: el tie-out daba un
+  // "NO CIERRA, diferencia: -1" que parecía un redondeo menor de verdad, cuando en realidad las dos
+  // sumas enteras eran basura truncada. Colapsar espacios ENTRE dígitos antes de todo lo demás
+  // (nunca al principio/final, ahí un espacio no es separador de miles).
+  s = s.replace(/(\d)\s+(?=\d)/g, '$1');
   let negative = false;
   if (/^\(.*\)$/.test(s)) { negative = true; s = s.slice(1, -1); }
   if (s.startsWith('-')) { negative = true; s = s.slice(1); }
