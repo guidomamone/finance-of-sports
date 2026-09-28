@@ -393,6 +393,20 @@ const sources = {
       url:'https://www.bocajuniors.com.ar/club/presupuesto',
       note:'PDF oficial (149 páginas, firmado por Comisión Directiva/Fiscalizadora, con dictamen de auditoría de Becher y Asociados S.R.L. sin salvedades, 10/09/2025), descargado del Google Drive linkeado en la página oficial del club. Cifras en moneda homogénea (reexpresadas a poder adquisitivo del 30/06/2025 según RT 6/17, Nota 2.2 del balance), no nominales del momento de cada operación. "Revenue" del sitio incluye ingresos por venta/rescisión de pases (Versión 102: igual que el propio balance los trata en su Total de Recursos, pág. 76, y que el resto de los clubes del motor genérico); "wages" es la suma real de "Remuneraciones y cargas sociales" de los 9 anexos que la desglosan por departamento (ver comentario de cabecera de data/boca-data.js).',
     },
+  'boca-balance-2021-22': {
+      id:'boca-balance-2021-22', clubId:'boca',
+      title:'Estados Contables auditados, Ejercicio Económico N°118, 1/7/2021 a 30/6/2022',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/rebrand/files/EECC_30525418835_2022.pdf',
+      note:'PDF oficial (101 páginas, escaneado, sin dictamen con salvedades — Becher y Asociados S.R.L., 15/09/2022), no linkeado desde la página vigente del club: encontrado vía Wayback CDX de dominio completo sobre bocajuniors.com.ar (to-do 73, Versión 247, snapshot 2023-01-01), colgando de un directorio /rebrand/files/ sin ningún nombre obvio en el sitio vivo de hoy. Transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md) y verificado íntegramente contra los totales impresos del propio documento (ver comentario de cabecera de data/boca-data.js).',
+    },
+  'boca-balance-2022-23': {
+      id:'boca-balance-2022-23', clubId:'boca',
+      title:'Estados Contables auditados, Ejercicio Económico N°119, 1/7/2022 a 30/6/2023',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf',
+      note:'PDF oficial (128 páginas, escaneado, firmado, sin dictamen con salvedades — Becher y Asociados S.R.L., 08/09/2023), mismo hallazgo que 2021-22 (Wayback CDX de dominio completo, to-do 73, snapshot 2023-11-11, directorio /rebrand/files/). Transcripto con Mistral OCR (Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md) y verificado íntegramente contra los totales impresos del propio documento.',
+    },
 };
 
 // Gestion: un presidente/período por club. Se guarda por club para evitar que
@@ -401,14 +415,13 @@ const sources = {
 const gestionesByClub = {
   boca: {
       riquelme:  { nombre:'Riquelme (2023-actual)', firstYear:2025, lastYear:2027 },
-      ameal:     { nombre:'Ameal (2019-2023)',      firstYear:2021, lastYear:2023 },
+      ameal:     { nombre:'Ameal (2019-2023)',      firstYear:2022, lastYear:2023 },
       angelici:  { nombre:'Angelici (2015-2019)',   firstYear:2018, lastYear:2019 },
-      // Versión 138: `ameal` y `angelici` ya NO tienen ningún ejercicio de Finanzas detrás. Sus
-      // años eran los placeholder de Boca, que se borraron. Se quedan acá porque Mercado de Pases
-      // y Resultados Deportivos siguen agrupando por gestión y tienen filas de las dos, y porque
-      // `finanzasYears`/`finanzasGestiones` de data/boca-data.js ya las excluía del selector de
-      // Finanzas desde la Versión 81. El día que se cargue un balance real de esos años, sus
-      // firstYear/lastYear vuelven a apuntar a algo.
+      // Versión 138: `ameal` y `angelici` ya NO tenían ningún ejercicio de Finanzas detrás (eran los
+      // placeholder de Boca, que se borraron), pero se dejaron porque Mercado de Pases y Resultados
+      // Deportivos siguen agrupando por gestión. Con el to-do 73 (Ejercicios N°118 y N°119, 2022 y
+      // 2023) `ameal` vuelve a tener ejercicios reales de Finanzas, y `firstYear`/`lastYear` ya
+      // apuntan a ellos — `angelici` sigue sin ninguno cargado.
     },
 };
 

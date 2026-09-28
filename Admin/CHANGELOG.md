@@ -15,6 +15,30 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 289 — to-do 73 cerrado: Boca Juniors, Ejercicios 2022 y 2023 (N°118 y N°119) cargados
+
+- `data/boca-data.js`: 2 balances auditados reales nuevos, encontrados vía Wayback CDX el
+  2026-09-26 y transcriptos con Mistral OCR. Categorizados siguiendo el mismo criterio que el
+  Ejercicio 2025 ya cargado (separar wages_squad/player_amortisation/other_expenses por
+  departamento cuando el propio documento desglosa "Remuneraciones y cargas sociales" aparte).
+  Verificado programáticamente (no solo a mano): la suma de cada línea de primer nivel contra sus
+  `items` anidados, y el total de Revenue/Expenses de cada ejercicio contra el Total de
+  Recursos/Total de Gastos impreso en la pág. 32 (2022) y pág. 61 (2023) — cierran EXACTO, sin
+  redondeo, en los dos ejercicios.
+- Ejercicio 2022 (Ejercicio N°118): Revenue $14.279.912.579, Expenses $13.669.793.975, Superávit
+  $461.837.755. fx = $125,03 (USD activo al 30/06/2022, declarado por el propio Anexo III).
+- Ejercicio 2023 (Ejercicio N°119): Revenue $26.178.273.845, Expenses $27.795.138.995, Superávit
+  $1.022.382.735 — con un resultado financiero (RECPAM) positivo de +$2.639.247.885 que revierte un
+  resultado antes del efecto financiero deficitario. fx = $256,30.
+- `data/clubs.js`: 2 entradas nuevas en `sources{}` (`boca-balance-2021-22`, `boca-balance-2022-23`)
+  y `gestionesByClub.boca.ameal` vuelve a tener ejercicios reales de Finanzas (`firstYear:2022,
+  lastYear:2023` — antes apuntaba a los años placeholder que se habían borrado en la Versión 138).
+- `data/club-leagues/ar.js`: fila de Boca 2022/2023, Primera División los dos ejercicios.
+- Verificado en el navegador (`auditAll()`, los 4 KPIs de Finanzas, el acordeón de "Formato
+  simplificado" y "Formato del club" en los dos ejercicios): 866/869 checks cierran, las 3
+  excepciones son las mismas de siempre (redondeo de Bayern Munich, ya documentadas), 0 warnings
+  de fx, 0 clubes sin cargar. `ASSET_V` subido a 289.
+
 ## Versión 288 — to-do 94 cerrado: login de Google publicado para visitantes reales
 
 - Google Cloud → OAuth consent screen: la app pasó de modo "Testing" (solo cuentas agregadas a mano)

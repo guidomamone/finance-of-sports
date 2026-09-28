@@ -148,16 +148,11 @@ perdieron sino que se descartaron:
     tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
     pregunta más chica y puntual. Sin evaluar todavía.
 
-73. CARGAR LOS 2 BALANCES DE BOCA ENCONTRADOS VÍA WAYBACK CDX (Versión 247, 2026-09-26): Ejercicio
-    118 (cerrado 30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado). **Transcriptos ya
-    (2026-09-26, Mistral OCR, 101 y 128 páginas):** `Clubes/Argentina/Boca/eecc-30525418835-2022.md`
-    y `Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md`. LISTO PARA MAPEO: no falta
-    nada de Guido, solo una sesión normal de `club-data-mapping` que categorice los rubros y cargue
-    los 2 ejercicios al sitio. Quedan sin encontrar 2018, 2019, 2021 y 2024 — no aparecieron ni en
-    este barrido de dominio completo. Detalle en `fuentes/Argentina/Boca.md`.
-    Aparte, para River: un balance del ejercicio cerrado 31/08/2016 (más viejo que cualquiera de los
-    8 ya cargados) apareció en Scribd, detrás de una suscripción paga — decisión de Guido si vale
+73. RIVER: UN BALANCE DEL EJERCICIO CERRADO 31/08/2016 (más viejo que cualquiera de los ejercicios
+    ya cargados) apareció en Scribd, detrás de una suscripción paga — decisión de Guido si vale
     pagarla, mismo criterio que el trámite de la IGJ ya documentado en `fuentes/Argentina/River.md`.
+    Quedan sin encontrar, de Boca, los ejercicios 2018, 2019, 2021 y 2024 — no aparecieron ni en el
+    barrido de dominio completo de Wayback CDX del 2026-09-26. Detalle en `fuentes/Argentina/Boca.md`.
 
 74. EVALUAR JEV (TypeSafe AI) PARA CATEGORIZAR RUBROS DE INGRESOS/GASTOS EN ONBOARDING (idea de
     Guido, 2026-09-26, a raíz de la nota de lanzamiento de TypeSafe del 2026-09-15). Motivación: Jev

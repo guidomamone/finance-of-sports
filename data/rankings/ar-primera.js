@@ -7,8 +7,8 @@
 //   2026: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), de 28.
-//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -107,6 +107,9 @@ window.RANKINGS["ar-primera"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"boca", revenue:102.139, reportType:"official_balance_sheet",
+        sourceId:"boca-balance-2022-23",
+        mix:[["Cuotas Sociales",40.517],["Comercial / Sponsors",17.989],["Estadio",29.687],["Venta de Jugadores",8.055],["Otras secciones deportivas",0.648],["Otros ingresos",5.244]] },
       { id:"velez", revenue:40.642, reportType:"official_balance_sheet",
         sourceId:"velez-balance-2022-23",
         mix:[["Cuotas Sociales",8.255],["Comercial / Sponsors",2.423],["Estadio",7.588],["Televisión",3.515],["Venta de Jugadores",11.889],["Educación",4.96],["Otros ingresos",2.013]] },
@@ -127,6 +130,9 @@ window.RANKINGS["ar-primera"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"boca", revenue:114.212, reportType:"official_balance_sheet",
+        sourceId:"boca-balance-2021-22",
+        mix:[["Cuotas Sociales",30.142],["Comercial / Sponsors",28.33],["Estadio",21.575],["Venta de Jugadores",25.971],["Otras secciones deportivas",4.925],["Otros ingresos",3.269]] },
       { id:"velez", revenue:42.495, reportType:"official_balance_sheet",
         sourceId:"velez-balance-2021-22",
         mix:[["Cuotas Sociales",7.071],["Comercial / Sponsors",2.7],["Estadio",6],["Televisión",4.336],["Venta de Jugadores",17.399],["Educación",4.84],["Otros ingresos",0.149]] },
