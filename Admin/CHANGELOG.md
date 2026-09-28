@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 286 — to-do 94: páginas de privacidad y términos, para publicar el login de Google
+
+- `privacidad.html`/`terminos.html` nuevas, en la raíz (contenido para el visitante, no interno —
+  `tools/audit-ignore.json` documenta por qué `doc-interno-no-excluido` no aplica acá). Google
+  exige un home page + link a privacidad + link a términos, los tres en el mismo dominio, antes de
+  poder pasar el proyecto de OAuth de "Testing" a "In production" (Publish app) — ver to-do 94.
+  Explican en criollo qué datos junta el sitio (nada sin login; con login, el email vía Supabase y
+  qué se guarda en "Mi Cuenta") y qué es/no es el sitio (no asesoramiento financiero, las
+  simulaciones de liga son solo por plata). Linkeadas desde el footer de `index.html`.
+
 ## Versión 285 — to-do 83, dos pedidos más: año editable y sumar una liga entera
 
 - **El año de un club recién sumado ahora es un dropdown editable**, adentro de la misma frase

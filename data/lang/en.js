@@ -106,6 +106,8 @@ window.I18N.strings.en = {
   "finanzas.view.year": "Year by year",
   "footer.fuentes": "Every source on the site",
   "footer.note": "MVP · placeholder data · test version",
+  "footer.privacidad": "Privacy",
+  "footer.terminos": "Terms of use",
   "footer.text": "This site does not represent any electoral list or candidacy. Its only goal is to make public data easy to reach, so every member can decide their vote for themselves.",
   "fuentes.tipo.estimate_placeholder": "No document",
   "fuentes.tipo.official_balance_sheet": "Audited financial statements",

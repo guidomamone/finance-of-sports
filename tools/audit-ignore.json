@@ -534,5 +534,15 @@
     "code": "catchall-dominante",
     "match": "werderbremen-de 2025 Gastos",
     "motivo": "VERIFICADO 2026-09-23 (to-do 48): a diferencia de 2023/2024, acá el Anhang 5.12 SÍ identifica un componente extraordinario (TEUR 860, costos de emisión del bono Werder-Anleihe 2025/2030) y ya se promovió a línea propia `other_expenses` — el resto del catch-all queda sin partir porque el documento no da más detalle, ver comentario de cabecera de data/werderbremen-de-data.js."
+  },
+  {
+    "code": "doc-interno-no-excluido",
+    "match": "privacidad.html",
+    "motivo": "VERIFICADO 2026-09-28: es contenido PARA EL VISITANTE (política de privacidad, requerida por Google para publicar el login OAuth de Mi Cuenta, to-do 94), no un documento interno — a propósito en la raíz, linkeado desde el footer de index.html."
+  },
+  {
+    "code": "doc-interno-no-excluido",
+    "match": "terminos.html",
+    "motivo": "VERIFICADO 2026-09-28: es contenido PARA EL VISITANTE (términos de uso, mismo motivo que privacidad.html), no un documento interno — a propósito en la raíz, linkeado desde el footer de index.html."
   }
 ]
