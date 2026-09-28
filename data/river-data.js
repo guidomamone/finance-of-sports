@@ -118,12 +118,18 @@ const riverExpenseLinesByYear = {
   // A diferencia de 2024 (que necesitó recuperar una tabla rotada 90° para separar sueldos), acá
   // la fila "Sueldos y cargas sociales" del Anexo VIII se leyó directo, sin rotar, con su columna
   // "Fútbol profesional" ($524.701710 M) reconciliando exacto contra el total de esa fila.
-  // ERROR DE OCR ENCONTRADO Y CORREGIDO (SKILL.md sección 6.6): Mistral transcribió "Amortización
-  // de software" como $12.336.254, pero el PDF (verificado a mano, pág. 8 impresa/3 real, zoom
-  // sobre la celda) dice $12.326.254 -- dígitos transpuestos (326 vs 336), $10.000 de diferencia
-  // sobre $1.800 millones. Corregido al valor del PDF. Con esa corrección, suma exacta a
-  // $(8.917.836473) M, el "Total gastos ordinarios" impreso (con solo $20 de diferencia residual,
-  // del propio documento, irrelevante).
+  // ERROR DE OCR ENCONTRADO Y CORREGIDO DOS VECES (SKILL.md sección 6.6, to-do 103): Mistral
+  // transcribió "Amortización de software" como $12.336.254. Una corrección a mano anterior lo
+  // cambió a $12.326.254 (arregló el "326 vs 336" pero introdujo un segundo error propio, "254" en
+  // vez de "234", que quedó sin detectar porque el tie-out de esa sesión dio "$20 de diferencia
+  // residual" y se lo atribuyó al documento en vez de sospechar de la propia corrección).
+  // RE-VERIFICADO 2026-09-28 (to-do 103, comparación Mistral vs. Gemini): el valor real, impreso en
+  // el PDF (pág. 8 impresa/3 real, confirmado con zoom sobre la celda Y con `tools/sum-check.mjs`
+  // contra el subtotal de la fila), es $12.326.234 -- Gemini lo transcribió bien a la primera,
+  // Mistral lo tuvo mal en las 2 pasadas (Estado de Recursos y Gastos Y Anexo III.b). Con este valor
+  // la suma cierra EXACTO contra "Subtotal amortizaciones y depreciaciones" ($1.814.445.567), sin
+  // ningún residual -- el "$20 del documento" de la nota anterior no era del documento, era de esta
+  // misma corrección.
   2021: [
     { rawLabel:'Fútbol profesional — Sueldos y cargas sociales', normalizedCategory:'wages_squad', amountNative:-524.701710, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol profesional — resto (sin desglosar por la fuente)', normalizedCategory:'lump_football_operations_expense', amountNative:-3955.164136, disclosureLevel:'not_disclosed' },
@@ -136,7 +142,7 @@ const riverExpenseLinesByYear = {
     { rawLabel:'Museo', normalizedCategory:'admin_general_expense', amountNative:-34.700833, disclosureLevel:'detailed' },
     { rawLabel:'Depreciación de bienes de uso', normalizedCategory:'depreciation', amountNative:-163.395311, disclosureLevel:'detailed' },
     { rawLabel:'Amortización de plantel de jugadores de fútbol', normalizedCategory:'player_amortisation', amountNative:-1638.724022, disclosureLevel:'detailed' },
-    { rawLabel:'Amortización de software', normalizedCategory:'other_amortisation', amountNative:-12.326254, disclosureLevel:'detailed' },
+    { rawLabel:'Amortización de software', normalizedCategory:'other_amortisation', amountNative:-12.326234, disclosureLevel:'detailed' },
   ],
   // ARS millones nativos (Versión 32). Fuente: Anexo VIII, pág. 59-62, fila "Totales al
   // 31/08/2024" por área + Estado de Recursos y Gastos (Depreciación/Amortización, pág. 11). Suma

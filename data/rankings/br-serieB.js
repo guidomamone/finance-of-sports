@@ -5,7 +5,7 @@
 //
 // Brasileirão Série B (BR) — 6 ejercicio(s) con ranking:
 //   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -43,6 +43,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"santos-br", revenue:61.216, reportType:"official_balance_sheet",
         sourceId:"santos-br-demonstracoes-2024",
         mix:[["Cuotas Sociales",4.527],["Comercial / Sponsors",14.391],["Estadio",5.546],["Televisión",8.96],["Venta de Jugadores",20.514],["Otros ingresos",7.279]] },
+      { id:"ceara-br", revenue:26.15, reportType:"official_balance_sheet",
+        sourceId:"ceara-br-demonstracoes-2025",
+        mix:[["Cuotas Sociales",3.69],["Comercial / Sponsors",3.267],["Estadio",2.778],["Televisión",2.765],["Premios por competencias",0.688],["Venta de Jugadores",3.075],["Otras secciones deportivas",0.08],["Otros ingresos",9.806]] },
       { id:"americamineiro-br", revenue:16.835, reportType:"official_balance_sheet",
         sourceId:"americamineiro-br-demonstracoes-2024",
         mix:[["Comercial / Sponsors",2.437],["Estadio",0.293],["Televisión",1.891],["Venta de Jugadores",0.104],["Otros ingresos",12.11]] },

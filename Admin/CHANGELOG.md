@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 298 — to-do 103 cerrado: SEGUNDO error real encontrado en River 2021 "Amortización de software" ($12.326.234, no $12.326.254)
+
+- **`data/river-data.js`, Ejercicio 2021**: el dato que estaba cargado en producción para
+  "Amortización de software" (`-12.326254`, $12.326.254) era en sí mismo un error, distinto del que
+  ya se sabía de Mistral ($12.336.254). El valor real impreso en el PDF es **$12.326.234** —
+  confirmado con zoom sobre la celda y con `tools/sum-check.mjs` contra el subtotal de la fila
+  (cierra EXACTO, sin ningún residual). Corregido en el archivo. `node tools/audit.js` y
+  `auditAll()` corridos después del fix: 0 P0/P1, River 2021 no aparece entre los que no cierran.
+- **Gemini transcribió esta celda bien a la primera** (probado con `tools/gemini-transcribe.mjs`
+  sobre el mismo PDF), lo que originalmente motivó el to-do 103 (comparar Mistral vs. Gemini en
+  escaneos). Es un solo documento, no alcanza para cambiar el DEFAULT del proyecto — sigue abierto
+  como to-do 106, con una muestra más amplia por correr antes de decidir.
+- **ASSET_V 291 → 292** (`index.html`) por el cambio en `data/river-data.js`; regenerados
+  `data/rankings/*.js` (afectado además por el fix de `ceara-br` de la Versión 297),
+  `Admin/ESTADO-clubes.md` y `fuentes.html`/páginas de club.
+
 ## Versión 297 — to-do 104 arreglado (heurística de tabla en `fetch-club-league-reference.mjs`), 2 ligas más cacheadas, y guía de ritmo de onboarding en el skill
 
 - **to-do 104 cerrado**: `tools/fetch-club-league-reference.mjs` tomaba la PRIMERA tabla wikitable de
