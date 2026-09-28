@@ -321,10 +321,46 @@ window.LIGA_VIEW = (function(){
       + ' ' + t('liga.sim.en', 'en') + ' ' + lg.name + ' (' + t('liga.exercise', 'Ejercicio') + ' ' + st.year + ').'));
     caja.appendChild(el('p', 'liga-sim-chico', t('liga.sim.caveat',
       'Solo por ingresos, comparado contra los clubes con ejercicio cargado en el sitio — no es una posición en la tabla real, no hay puntos ni fixture de por medio.')));
+
+    var fila = el('div', 'liga-sim-fila');
+    fila.appendChild(selectorDeLigaSimulada(sim));
     var quitar = el('button', 'liga-sim-quitar', t('liga.sim.quitar', '✕ Quitar simulación'));
     quitar.type = 'button';
     quitar.addEventListener('click', function(){ st.simulado = null; render(); });
-    caja.appendChild(quitar);
+    fila.appendChild(quitar);
+    caja.appendChild(fila);
+    return caja;
+  }
+
+  // EL DROPDOWN DE LIGA (pedido de Guido tras probar el flujo: "brasileirao B o
+  // la liga que sea, debería ser un dropdown que se puede cambiar ahí sin tener
+  // que volver para atrás"). Mismo agrupado por continente que `estadoFrio()`
+  // (reusa `paisesDeRegionAlfa`/`ligasDePaisAlfa`), para poder saltar de
+  // Brasileirão Série A a Série B sin salir de la pantalla — cambiar de liga acá
+  // recalcula la simulación para el MISMO club, no la descarta.
+  function selectorDeLigaSimulada(sim){
+    var caja = el('label', 'liga-sim-liga');
+    caja.appendChild(el('span', 'liga-sim-liga-l', t('liga.sim.probarOtra', 'Probar en otra liga')));
+    var sel = el('select');
+    (window.REGIONS || []).forEach(function(reg){
+      var paises = paisesDeRegionAlfa(reg.id).filter(function(cid){ return ligasDePaisAlfa(cid).length; });
+      if(!paises.length) return;
+      var grp = document.createElement('optgroup');
+      grp.label = t(reg.key, reg.name);
+      paises.forEach(function(cid){
+        ligasDePaisAlfa(cid).forEach(function(lid){
+          var lg = ligaDe(lid), co = paisDe(lid);
+          var o = document.createElement('option');
+          o.value = lid;
+          o.textContent = (co.flag || '🏆') + ' ' + lg.name + ' — ' + (co.key ? t(co.key, co.name) : '');
+          if(lid === st.league) o.selected = true;
+          grp.appendChild(o);
+        });
+      });
+      sel.appendChild(grp);
+    });
+    sel.addEventListener('change', function(){ showConSimulado(sel.value, null, sim.clubId, sim.clubYear); });
+    caja.appendChild(sel);
     return caja;
   }
 
@@ -414,7 +450,17 @@ window.LIGA_VIEW = (function(){
   function botonVolver(){
     var b = el('button', 'liga-volver', '‹ ' + t('liga.back', 'Volver a Ligas'));
     b.type = 'button';
-    b.addEventListener('click', function(){ st.league = null; st.year = null; st.simulado = null; render(); });
+    b.addEventListener('click', function(){
+      // TO-DO 83, ajuste pedido por Guido tras probarlo: si estabas viendo una
+      // simulación, "volver" NO te manda al picker general — te deja elegir OTRA
+      // liga para EL MISMO club, que es lo que en la práctica se quiere hacer
+      // después de ver una ("y en la Serie B?"). Sin esto, había que ir hasta
+      // Finanzas de nuevo y apretar el botón para retomar.
+      var sim = st.simulado;
+      st.league = null; st.year = null; st.simulado = null;
+      pendingSim = sim ? { clubId:sim.clubId, clubYear:sim.clubYear } : null;
+      render();
+    });
     return b;
   }
 

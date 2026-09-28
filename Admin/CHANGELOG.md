@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 282 — to-do 83: 2 ajustes tras probarlo en producción
+
+- **"Volver a Ligas" durante una simulación ya no te saca del flujo**: antes reseteaba todo y había
+  que ir hasta Finanzas de nuevo para retomar; ahora vuelve al picker de ligas CON el mismo club en
+  cola, listo para probar otra. `botonVolver()` restaura `pendingSim` desde `st.simulado`.
+- **Dropdown de liga nuevo** (`selectorDeLigaSimulada()`), visible solo mientras hay una simulación
+  activa, agrupado por continente igual que el picker: cambiar de liga ahí recalcula la simulación
+  para el mismo club sin volver atrás (ej. Brasileirão Série A → Série B en un clic).
+
 ## Versión 281 — to-do 83: "¿cómo le iría este club en otra liga?"
 
 - Simulación por plata (NO predicción deportiva): desde la ficha de Finanzas de un club, botón

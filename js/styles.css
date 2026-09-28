@@ -796,6 +796,11 @@
     padding:5px 10px;font:inherit;font-size:12.5px;font-weight:600;color:#5c4300;cursor:pointer;}
   .liga-sim-quitar:hover, .liga-sim-cancelar:hover{background:#f3e2b8;}
   .liga-sim-cancelar{margin-top:8px;}
+  /* El dropdown de "probar en otra liga" y "Quitar simulación", en una misma fila. */
+  .liga-sim-fila{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .liga-sim-liga{display:flex;align-items:center;gap:7px;}
+  .liga-sim-liga-l{font-size:12px;color:#8a6c1a;text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
+  .liga-sim-liga select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid #c9a34d;border-radius:7px;background:#fff;max-width:260px;}
   /* La fila/bloque insertado, en la tabla y en el desglose: mismo tono ámbar del
      callout, para que sea obvio de un vistazo que no es un club real de la liga. */
   tr.liga-fila-simulada{background:#fff8ea;}
