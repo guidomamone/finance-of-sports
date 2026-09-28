@@ -222,15 +222,22 @@ perdieron sino que se descartaron:
     probadas, debería salir más rápido que cualquiera de los 5 de hoy.
 
     **Recomendaciones concretas, en orden de impacto:**
-    1. **Armar `tools/prepare-onboarding.mjs <club> <año> <archivo.md>`**: un script que corra TODO
-       lo mecánico de una sola vez ANTES de que arranque la sesión de Claude — extraer tablas
-       (`extract-table-rows.mjs`), correr `sum-check.mjs` sobre las Notas con un total impreso
-       detectable, consultar precedente (`suggest-category-precedent.mjs`) para cada rawLabel
-       encontrado, resolver la liga si hace falta (pipeline del to-do 95) — y dejar UN archivo de
-       "briefing" compacto. Hoy Claude orquesta 15-20 llamadas de tool por onboarding, una por una,
-       con razonamiento entre cada una; leer un solo briefing en vez de orquestar todo eso es el
-       ahorro más grande que queda sobre la mesa. NO CONSTRUIDO TODAVÍA — Guido pidió anotarlo antes
-       de que la sesión se comprima, retomarlo en una sesión nueva.
+    1. **`tools/prepare-onboarding.mjs <club> <año> <archivo.md>`, CONSTRUIDO Y PROBADO 2026-09-28**:
+       corre de una sola vez extract-table-rows + sum-check (por SEGMENTO, no por tabla entera:
+       una tabla real tiene varios "Total"/"Subtotal" en cascada) + suggest-category-precedent (si
+       el club ya tiene data) + lookup-club-league (si el club ya tiene entrada en `clubs{}`), y deja
+       UN `<archivo>.briefing.json` al lado del `.md` (gitignoreado, se regenera en segundos).
+       Pensado para correr desde la TERMINAL DE GUIDO, antes de abrir la sesión de Claude — mismo
+       criterio que la transcripción. Probado a fondo contra River 2021, Once Caldas 2024 y un
+       documento noruego real (Rosenborg 2012), encontrando y arreglando 5 bugs reales en el camino
+       (detalle en el commit `99f47bd`): un crash de proceso hijo sin capturar, el tie-out por tabla
+       entera que no chequeaba nada, un Anexo con encabezado de 2 niveles rompiendo sum-check, un
+       heading en negrita que dejaba la tabla MÁS IMPORTANTE de River marcada `likelyRelevant:false`,
+       y `sum-check.mjs`/`isTotalLabel` sin soporte para el formato escandinavo (espacio como
+       separador de miles, "Sum" en vez de "Total"). **TODAVÍA NO conectado a ningún skill** (a
+       pedido explícito de Guido, por si sale algún paso más al seguir probando) — falta: correrlo
+       contra 1-2 documentos más (ideal: uno con moneda/idioma distinto de los 3 ya probados) y
+       recién ahí sumarlo a `club-or-year-onboarding/SKILL.md` y `club-data-mapping/SKILL.md`.
     2. **Agrupar varios años del MISMO club en una sola sesión**, no uno por sesión — el precedente
        de `suggest-category-precedent.mjs` mejora con cada año que se suma (Once Caldas pasó de
        10/11 EXACTO en su 2do año cargado a 11/11 en el 4to), y se evita pagar el arranque en frío

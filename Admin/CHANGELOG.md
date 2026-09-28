@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 299 — to-do 105 #1: `tools/prepare-onboarding.mjs`, construido y probado (todavía sin conectar a ningún skill)
+
+- **Nueva tool, pensada para correr desde la terminal de Guido** (no desde una sesión de Claude):
+  orquesta extract-table-rows + sum-check + suggest-category-precedent + lookup-club-league de una
+  sola vez y deja un `<archivo>.briefing.json` compacto al lado del `.md` (gitignoreado).
+- **5 bugs reales encontrados y arreglados probándola contra 3 documentos reales** (River 2021, Once
+  Caldas 2024, Rosenborg 2012 en noruego): tie-out por tabla entera en vez de por segmento (no
+  chequeaba nada en tablas con varios "Total" en cascada, que es el caso normal), un crash de
+  proceso hijo sin `stdio` capturado, un Anexo con encabezado de 2 niveles rompiendo `sum-check.mjs`,
+  un heading en negrita (`**Estado de Recursos y Gastos**`) que dejaba la tabla MÁS IMPORTANTE de
+  River marcada `likelyRelevant:false` (arreglado en `extract-table-rows.mjs`), y `sum-check.mjs`
+  sin soporte para el formato escandinavo (espacio como separador de miles) ni para "Sum" como
+  palabra de total. Con los 2 últimos arreglados, Rosenborg pasó de 28 a 55 tie-outs cerrando de 82.
+- **Todavía NO conectada a `club-or-year-onboarding`/`club-data-mapping`** a pedido explícito de
+  Guido, para seguir probando antes de fijar el paso en los skills.
+
 ## Versión 298 — to-do 103 cerrado: SEGUNDO error real encontrado en River 2021 "Amortización de software" ($12.326.234, no $12.326.254)
 
 - **`data/river-data.js`, Ejercicio 2021**: el dato que estaba cargado en producción para
