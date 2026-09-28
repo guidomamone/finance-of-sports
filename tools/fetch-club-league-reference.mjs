@@ -64,13 +64,24 @@ function extractTeamsSection(wikitext, sectionNames) {
   return null;
 }
 
-function extractFirstWikitable(sectionText) {
-  const start = sectionText.indexOf('{|');
-  if (start === -1) return null;
-  // busca el '|}' que cierra ESTA tabla (no anida tablas en estas páginas)
-  const end = sectionText.indexOf('|}', start);
-  if (end === -1) return null;
-  return sectionText.slice(start, end);
+function extractAllWikitables(sectionText) {
+  // CORREGIDO 2026-09-28 (to-do 104): antes tomaba solo la PRIMERA tabla de la
+  // sección, y no siempre es el roster (Grecia: la primera es un resumen
+  // "Promoted from/Relegated from" de 2 equipos, el roster real de 14 está en
+  // la SEGUNDA tabla). Ahora se extraen todas las tablas de la sección, y
+  // main() se queda con la que más equipos parsea, no con la primera.
+  const tables = [];
+  let from = 0;
+  while (true) {
+    const start = sectionText.indexOf('{|', from);
+    if (start === -1) break;
+    // busca el '|}' que cierra ESTA tabla (no anida tablas en estas páginas)
+    const end = sectionText.indexOf('|}', start);
+    if (end === -1) break;
+    tables.push(sectionText.slice(start, end));
+    from = end + 2;
+  }
+  return tables;
 }
 
 function cleanWikilinkCell(cell) {
@@ -117,15 +128,30 @@ async function main() {
     console.error(`No encontré ninguna sección ${JSON.stringify(section)} en la página. Probar --section "<nombre exacto>" mirando la página a mano.`);
     process.exit(1);
   }
-  const table = extractFirstWikitable(sec.text);
-  if (!table) {
-    console.error(`Encontré la sección "${sec.name}" pero ninguna tabla wikitable adentro. No escribo nada -- revisar la página a mano.`);
+  const tables = extractAllWikitables(sec.text);
+  if (!tables.length) {
+    console.error(`Encontré la sección "${sec.name}" pero ninguna tabla wikitable adentro (puede ser una plantilla tipo {{#invoke:Sports table}} en vez de wikitext de tabla -- ese caso no lo resuelve esta tool, confirmar a mano). No escribo nada.`);
     process.exit(1);
   }
-  const teams = parseWikitableTeams(table);
+  // Nos quedamos con la tabla que más equipos ÚNICOS parsea, NO con la de más
+  // FILAS (probado con Grecia, to-do 104: la tabla de "Managerial changes" trae
+  // 21 filas pero solo 13 equipos únicos, con nombres de técnico mezclados y
+  // clubes repetidos por cada cambio de DT; la tabla real de "Team" de la
+  // sección trae 14 filas = 14 equipos únicos, sin repetir ninguno -- ese es el
+  // roster, no el que tiene más filas en bruto).
+  let best = { teams: [], uniqueCount: 0 };
+  for (const t of tables) {
+    const teams = parseWikitableTeams(t);
+    const uniqueCount = new Set(teams).size;
+    if (uniqueCount > best.uniqueCount) best = { teams: [...new Set(teams)], uniqueCount };
+  }
+  const teams = best.teams;
   if (!teams.length) {
-    console.error('La tabla se encontró pero no se pudo parsear ningún equipo. No escribo nada -- revisar el wikitext a mano.');
+    console.error(`Encontré ${tables.length} tabla(s) pero no se pudo parsear ningún equipo de ninguna. No escribo nada -- revisar el wikitext a mano.`);
     process.exit(1);
+  }
+  if (tables.length > 1) {
+    console.log(`(${tables.length} tablas encontradas en la sección, me quedé con la de ${teams.length} equipos)`);
   }
 
   mkdirSync(refDir, { recursive: true });

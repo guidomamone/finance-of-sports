@@ -66,6 +66,22 @@ confirmación. Esto es distinto de la sección 11 de `club-data-mapping/SKILL.md
 número puntual es genuinamente ilegible): esa sí amerita frenar y preguntar, porque ahí la duda es
 sobre EL DATO, no sobre si seguir trabajando.
 
+**Agrupar, no repartir en sesiones sueltas (to-do 105, pedido de Guido 2026-09-28: subir el ritmo de
+onboarding rumbo a 2000 PDFs).** Dos ejes distintos, los dos ya probados:
+
+- **Varios ejercicios del MISMO club, en la MISMA sesión, en vez de uno por sesión.** El precedente de
+  `tools/suggest-category-precedent.mjs` (`club-data-mapping` sección 1) mejora con cada año que se
+  suma de ese club — Once Caldas pasó de 10/11 rubros EXACTO en su 2do ejercicio cargado a 11/11 en
+  el 4to — y además se evita pagar de nuevo el arranque en frío de releer los skills y entender la
+  estructura del club. Si Guido pide onboardear un club que tiene más de un ejercicio pendiente,
+  proponer agruparlos en la misma sesión en vez de ir uno por vez.
+- **Clubes DISTINTOS entre sí, en paralelo, con el Agent tool.** No baja tokens totales (cada club
+  sigue costando lo mismo), pero sí baja tiempo de reloj, que es la métrica que importa para una
+  fecha límite. Si se lanzan varios agentes de onboarding en simultáneo y alguno usa el Browser pane
+  (para sourcing de liga/roster, brandColor, etc.), decirle a cada uno que abra su propia pestaña con
+  `tabs_create` y fije ese `tabId` en cada llamada — CLAUDE.md ya documenta que varios agentes
+  paralelos pueden pisarse la pestaña activa si no lo hacen.
+
 ## 2. Arquitectura ya generalizada, no reinventar por club
 
 **"Ya generalizado" no siempre significó "genérico para cualquier `clubId`"**: hasta que se

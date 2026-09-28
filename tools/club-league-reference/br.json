@@ -1,0 +1,72 @@
+{
+  "leagues": {
+    "br-serieA": {
+      "2024": {
+        "wikipediaPage": "2024 Campeonato Brasileiro Série A",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-09-28T20:29:01.355Z",
+        "clubs": [
+          "Athletico Paranaense",
+          "Atlético Goianiense",
+          "Atlético Mineiro",
+          "Bahia",
+          "Botafogo",
+          "Corinthians",
+          "Criciúma",
+          "Cruzeiro",
+          "Cuiabá",
+          "Flamengo",
+          "Fluminense",
+          "Fortaleza",
+          "Grêmio",
+          "Internacional",
+          "Juventude",
+          "Palmeiras",
+          "Red Bull Bragantino",
+          "São Paulo",
+          "Vasco da Gama",
+          "Vitória"
+        ]
+      }
+    },
+    "br-serieB": {
+      "2024": {
+        "wikipediaPage": "2024 Campeonato Brasileiro Série B",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-09-28T20:29:09.336Z",
+        "clubs": [
+          "Amazonas",
+          "Arena da Amazônia",
+          "América Mineiro",
+          "Avaí",
+          "Botafogo-SP",
+          "Brusque",
+          "Hercílio Luz",
+          "Ressacada",
+          "Arena Joinville",
+          "Ceará",
+          "Presidente Vargas",
+          "Chapecoense",
+          "Coritiba",
+          "CRB",
+          "Goiás",
+          "Guarani",
+          "Ituano",
+          "Mirassol",
+          "Novorizontino",
+          "Operário Ferroviário",
+          "Paysandu",
+          "Mangueirão",
+          "Ponte Preta",
+          "Santos",
+          "Estádio do Café",
+          "Sport",
+          "Arena Pernambuco",
+          "Vila Nova"
+        ]
+      }
+    }
+  }
+}

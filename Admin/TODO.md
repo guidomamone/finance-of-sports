@@ -204,18 +204,6 @@ perdieron sino que se descartaron:
     `CLAUDE.md`/`club-data-mapping/SKILL.md` sección 15 (hoy: Mistral primero siempre, Gemini solo
     para lo que Mistral marca como escaneo vía `--redo-mistral-scanned`) — no decidido todavía.
 
-104. `tools/fetch-club-league-reference.mjs` (to-do 95) TOMA LA PRIMERA TABLA WIKITABLE DE LA
-    SECCIÓN, Y NO SIEMPRE ES EL ROSTER — encontrado 2026-09-28 con dos casos reales en la misma
-    ronda de onboardings: (a) Argentina, "2021 Copa de la Liga Profesional" no tiene sección
-    "Teams" en absoluto (usa una plantilla `{{#invoke:Sports table}}` en vez de un wikitable, ver
-    to-do 98/95 anterior); (b) Grecia, "2024–25 Super League Greece" SÍ tiene sección "Teams", pero
-    la PRIMERA tabla ahí es un resumen de "Promoted from / Relegated from" (2 equipos), no el
-    roster completo (14 equipos) — el fetch devolvió solo "Levadiakos" en vez de los 14. Los dos
-    casos se resolvieron a mano (wikitext crudo + búsqueda de texto), sin usar el pipeline
-    automático completo. Evaluar si conviene que el script busque la tabla MÁS GRANDE de la
-    sección en vez de la primera, o alguna otra heurística más robusta — no arreglado todavía,
-    documentado como limitación conocida en `tools/club-league-reference/README.md`.
-
 105. PLAN PARA SUBIR EL RITMO DE ONBOARDING RUMBO A 2000 PDFs ANTES DE FIN DE AÑO (pregunta de
     Guido, 2026-09-28, después de los 5 onboardings de prueba del to-do 98: *"necesito velocidad
     para subir onboardings y de alta calidad. a este ritmo no subo 2000 pdfs antes de fin de año.

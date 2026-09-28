@@ -69,7 +69,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Tanda de 5 clubes brasileños nuevos (onboarding sesión 2026-09-25, tanda de 20 transcripts al
   // azar: Ceará, Sport Recife, Amazonas, Juventude, Botafogo-SP — este último NO es el Botafogo de
   // Río, ya cargado como `botafogo`, es la SAF de Ribeirão Preto).
-  'ceara-br': { 2024: null, 2025: 'br-serieA' }, // 2025 confirmado (rebaixado a la Série B recién para 2026); 2024 sin verificar
+  // 2024 verificado el 2026-09-28 (to-do 104, herramienta ya corregida): Ceará NO aparece en el
+  // roster de "2024 Campeonato Brasileiro Série A" (20 equipos, tools/club-league-reference/
+  // br.json) y SÍ en el de "2024 Campeonato Brasileiro Série B" (28 equipos) -- jugó la B en 2024,
+  // ascendió para 2025.
+  'ceara-br': { 2024: 'br-serieB', 2025: 'br-serieA' }, // 2025 confirmado (rebaixado a la Série B recién para 2026)
   'sportrecife-br': { 2025: 'br-serieA' }, // jugó la Série A completa 2025 (61 partidos, el propio documento), rebaixado para 2026
   'amazonas-br': { 2024: 'br-serieB' }, // ascendido campeón de la Série C 2023
   'juventude-br': { 2020: 'br-serieB' }, // obtuvo el ascenso a la Série A para 2021 (jugó la B en 2020)

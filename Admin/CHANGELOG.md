@@ -15,6 +15,24 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 297 — to-do 104 arreglado (heurística de tabla en `fetch-club-league-reference.mjs`), 2 ligas más cacheadas, y guía de ritmo de onboarding en el skill
+
+- **to-do 104 cerrado**: `tools/fetch-club-league-reference.mjs` tomaba la PRIMERA tabla wikitable de
+  la sección "Teams", que a veces no es el roster (Grecia). Ahora extrae todas las tablas de la
+  sección y se queda con la que tiene más equipos ÚNICOS (no más filas) — probado sin regresión
+  contra Colombia 2016 (sigue en 20) y Noruega 2019 (sigue en 16), y corregido contra Grecia
+  "2024–25 Super League Greece" (ahora trae los 14 reales en vez de 2). La limitación de Argentina
+  (páginas sin wikitable, usan una plantilla Lua) sigue sin resolver, es otro tipo de problema, ver
+  `tools/club-league-reference/README.md`.
+- **2 liga-temporada más cacheadas con la tool ya corregida**: Grecia Super League 2024-25 y Brasil
+  Série A/Série B 2024. De paso se resolvió `ceara-br` 2024 (marcado `null`/"sin verificar"): el
+  roster de Série A 2024 no lo incluye, el de Série B sí — jugó la B en 2024, ascendió para 2025.
+  Corregido en `data/club-leagues/br.js`.
+- **`club-or-year-onboarding/SKILL.md` sección 1**: agregada guía de ritmo (to-do 105, pedido de
+  Guido de subir el ritmo rumbo a 2000 PDFs) — agrupar varios ejercicios del MISMO club en una sola
+  sesión (el precedente de `suggest-category-precedent.mjs` mejora con cada año sumado), y
+  paralelizar clubes DISTINTOS con el Agent tool (baja tiempo de reloj, no tokens).
+
 ## Versión 296 — to-do 50: Pumas/Tigres descartado, DIABLOS explicado y sigue pendiente de Guido
 
 - **Pumas y Tigres (México) descartado**: decisión de Guido, 2026-09-29 ("elijo no hacerlo, me da

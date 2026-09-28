@@ -22,13 +22,24 @@ parsea con wikitext crudo de la API de Wikipedia (mecánico, no un LLM resumiend
 2. **`tools/fetch-club-league-reference.mjs "<título exacto>" <leagueId> <año> --pais <iso2>`** — baja
    el wikitext de esa página, parsea la tabla de equipos, guarda el roster completo en
    `tools/club-league-reference/<iso2>.json`. Si no encuentra una tabla parseable, NO escribe nada
-   (mejor fallar visible que guardar una lista incompleta). **LIMITACIÓN CONOCIDA, sin arreglar
-   (to-do 104)**: toma la PRIMERA tabla wikitable de la sección "Teams", y no siempre es el roster
-   completo — encontrado con Grecia ("2024–25 Super League Greece": la primera tabla ahí es un
-   resumen de "Promoted from/Relegated from" de 2 equipos, no las 14 que juegan la liga) y con
-   Argentina (algunas páginas de temporada no tienen sección "Teams" en absoluto, usan una
-   plantilla `{{#invoke:Sports table}}`). Si el resultado trae menos equipos de los esperados,
-   confirmar a mano contra el wikitext crudo en vez de confiar en el fetch.
+   (mejor fallar visible que guardar una lista incompleta).
+
+   **CORREGIDO 2026-09-28 (to-do 104)**: hasta esta fecha tomaba la PRIMERA tabla wikitable de la
+   sección "Teams", y no siempre era el roster completo — Grecia ("2024–25 Super League Greece") la
+   primera tabla es un resumen de "Promoted from/Relegated from" de 2 equipos. Ahora extrae TODAS las
+   tablas de la sección y se queda con la que tiene más equipos ÚNICOS (no más filas): probado contra
+   el mismo caso de Grecia, la sección trae 4 tablas — la de "Managerial changes" tiene 21 filas pero
+   solo 13 nombres únicos (técnicos y clubes repetidos por cada cambio de DT), mientras que la tabla
+   real de equipos tiene 14 filas = 14 únicos, y ahora es la que se elige. Confirmado sin regresión
+   contra los 2 casos que ya andaban bien (Colombia 2016 sigue en 20, Noruega 2019 sigue en 16).
+
+   **LIMITACIÓN QUE SIGUE SIN RESOLVER, y es otro tipo de problema, no el mismo**: algunas páginas de
+   temporada (Argentina: "2021 Copa de la Liga Profesional", "2026 AFA Liga Profesional de Fútbol")
+   no tienen NINGUNA tabla wikitable en su sección de equipos — usan una plantilla Lua
+   `{{#invoke:Sports table}}` en su lugar, que este parser (wikitext crudo con regex) no puede leer.
+   Eso necesitaría un parser de esa plantilla aparte, no es un ajuste de heurística — queda
+   documentado como algo a confirmar siempre a mano para Argentina, no un bug pendiente de arreglar
+   acá.
 3. **`tools/lookup-club-league.js "<club>" --pais <iso2>`** — busca por nombre (normalizado, como
    `lookup-brand-color.js`) contra los rosters ya cacheados. Si no hay coincidencia, lo anota en
    `misses.jsonl` y dice que hace falta bajar esa liga-temporada con el paso 2.
@@ -66,6 +77,7 @@ hoy.
 
 ## Estado actual
 
-Poblado con 2 liga-temporada de prueba (Colombia Primera A 2016, Noruega Eliteserien 2019) — quedan
-ahí porque están verificadas y no hace daño tenerlas. El resto se puebla con el uso real, liga-
-temporada por liga-temporada, no con un barrido de una vez.
+Poblado con 4 liga-temporada (Colombia Primera A 2016, Noruega Eliteserien 2019, Grecia Super League
+2024-25, Brasil Série A y Série B 2024) — quedan ahí porque están verificadas y no hace daño
+tenerlas. El resto se puebla con el uso real, liga-temporada por liga-temporada, no con un barrido de
+una vez.
