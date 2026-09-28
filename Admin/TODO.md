@@ -172,10 +172,11 @@ perdieron sino que se descartaron:
     Sin estos dos pasos, el botón de login funciona perfecto en local (probado por Guido,
     2026-09-27) pero falla para cualquier visitante real del sitio en producción.
 
-67. VERIFICAR EN PRODUCCIÓN EL FUNNEL DEL SELECTOR QUE YA SE INSTRUMENTÓ EN MIXPANEL (pedido de
-    Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el selector"*; implementado
-    2026-09-28, Versión 277 — ver `Admin/CHANGELOG.md`). **Falta solo el push y mirar que lleguen
-    eventos reales**, no falta diseño ni código.
+67. VERIFICAR EN PRODUCCIÓN, CON UN NAVEGADOR SIN BLOQUEADOR DE TRACKERS, EL FUNNEL DEL SELECTOR
+    YA INSTRUMENTADO EN MIXPANEL (pedido de Guido, 2026-09-26: *"me gustaría ver cómo interactúa la
+    gente con el selector"*; implementado 2026-09-28, Versión 277, con un bug real corregido en la
+    Versión 278 — ver `Admin/CHANGELOG.md` para el detalle de las dos). **Ya no falta código: falta
+    solo confirmar en el navegador de Guido que los eventos llegan.**
 
     QUÉ YA ESTÁ HECHO: cuenta de Mixpanel creada (proyecto "Finance of sports", token en
     `js/selector.js`). 3 eventos instrumentados A MANO (nunca Autocapture, para no inflar el conteo
@@ -184,18 +185,28 @@ perdieron sino que se descartaron:
     da el drop-off por pantalla), `selector_club_chosen` (el momento exacto de "eligió un club", en
     `confirmar()`). Gateados por hostname igual que `logEvent()` de la Versión 216 (una sesión de
     trabajo no es un visitante real) y con `track_pageview:false` a propósito: no duplica lo que ya
-    da gratis Cloudflare Web Analytics (Versión 166). El token de Mixpanel se probó con un POST
-    directo a `api.mixpanel.com/track` y lo aceptó (devolvió `1`) — no es secreto, mismo criterio que
-    la key pública de Supabase.
+    da gratis Cloudflare Web Analytics (Versión 166).
 
-    LO QUE NO SE PUDO VERIFICAR TODAVÍA, y por qué: el browser pane de esta sesión bloquea
-    `cdn.mxpnl.com` (mismo trato que le da a `cloudflareinsights.com`, el beacon de Cloudflare — Chart.js
-    y Supabase, servidos igual, sí cargan bien), así que no se pudo confirmar de punta a punta que el
-    SDK cargado en un navegador real manda los 3 eventos. Además el gateo por hostname bloquea
-    cualquier prueba desde `localhost` a propósito. **Verificar recién en `financeofsports.com` real,
-    después del push**: abrir el selector, elegir un club, y mirar el Live View de Mixpanel — tiene
-    que aparecer `selector_opened` → 1-2 `selector_step_completed` → `selector_club_chosen`, en ese
-    orden, con el `origen` correcto.
+    EL BUG DE LA VERSIÓN 277, YA CORREGIDO: el primer intento cargaba
+    `cdn.mxpnl.com/libs/mixpanel-2-latest.min.js` con un `<script src>` plano (mismo criterio que
+    Chart.js/Supabase) y Guido no vio NINGÚN evento en producción, ni en Brave ni en Chrome. La causa
+    real: Mixpanel necesita su snippet oficial (un stub que define `window.mixpanel` con métodos que
+    ENCOLAN llamadas antes de que la librería real cargue async) — sin eso, `.init()`/`.track()` no
+    quedan bien armados y no hay error visible que lo delate. `index.html` ya tiene el snippet
+    oficial completo (Versión 278). Verificado en preview local que el stub queda bien armado
+    (`window.mixpanel.init` existe de entrada, `.track` aparece apenas corre `.init()`), pero el
+    envío real de punta a punta TODAVÍA no se confirmó desde un navegador de verdad — el browser
+    pane de esta sesión bloquea `cdn.mxpnl.com` (igual que bloquea `cloudflareinsights.com`, el
+    beacon de Cloudflare), así que ese último paso no se puede hacer desde acá.
+
+    APARTE, CONFIRMADO QUE BRAVE (SHIELDS) BLOQUEA `cdn.mxpnl.com` POR DEFAULT — separado del bug de
+    arriba, pero se mezcló con él en el primer intento fallido de Guido. **Para que la próxima
+    prueba sea concluyente, probar en un navegador SIN bloqueador de trackers activo** (Chrome limpio,
+    o Brave con Shields apagado para ese sitio): abrir el selector, elegir un club, y mirar el Live
+    View de Mixpanel — tiene que aparecer `selector_opened` → 1-2 `selector_step_completed` →
+    `selector_club_chosen`, en ese orden, con el `origen` correcto. Si sigue sin aparecer nada
+    incluso sin bloqueador, ahí sí hay otro bug para investigar (revisar Network tab por una request
+    a `cdn.mxpnl.com` o `api-js.mixpanel.com`/`api.mixpanel.com` que falle).
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del

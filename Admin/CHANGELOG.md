@@ -15,6 +15,23 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 278 — to-do 67: fix real — faltaba el snippet oficial de Mixpanel
+
+- La Versión 277 cargaba `cdn.mxpnl.com/libs/mixpanel-2-latest.min.js` con un `<script src>` plano,
+  igual que Chart.js/Supabase. Guido probó en producción (Brave primero, después Chrome) y no llegó
+  NINGÚN evento — ni siquiera `window.mixpanel` quedaba definido con `.init`/`.track` funcionales,
+  sin ningún error visible en consola aparte de un `"mixpanel" object not initialized` genérico.
+  Causa real: Mixpanel necesita el snippet oficial (un stub que define `window.mixpanel` con métodos
+  que ENCOLAN llamadas antes de que la librería real cargue de forma asíncrona) — un script tag
+  plano no alcanza. `index.html` reemplazado con el snippet oficial completo
+  (docs.mixpanel.com/docs/quickstart/install-mixpanel). Verificado en preview local: `window.mixpanel`
+  queda armado con `.init` de entrada, y `.track` aparece disponible apenas corre `.init()` — el envío
+  real solo se pudo confirmar contra la API directamente (`api.mixpanel.com/track` vía curl, Versión
+  277), no todavía desde un browser real con este fix — eso lo confirma Guido en producción.
+- Aparte, confirmado que Brave (Shields) bloquea `cdn.mxpnl.com` por default — separado del bug de
+  arriba, pero compuesto con él en el primer intento fallido: hay que probar en un navegador sin
+  bloqueador de trackers activo para que el resultado sea concluyente.
+
 ## Versión 277 — to-do 67: funnel del selector instrumentado en Mixpanel
 
 - `js/selector.js`: 3 eventos nuevos (`selector_opened`, `selector_step_completed` con
