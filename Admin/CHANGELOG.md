@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 279 — to-do 67 cerrado: confirmado en producción
+
+- Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector
+  llegan al Live View de Mixpanel. To-do 67 cerrado — queda como pendiente aparte, no urgente,
+  armar el reporte de Funnel en la UI de Mixpanel (2-3 pasos, no requiere código).
+
 ## Versión 278 — to-do 67: fix real — faltaba el snippet oficial de Mixpanel
 
 - La Versión 277 cargaba `cdn.mxpnl.com/libs/mixpanel-2-latest.min.js` con un `<script src>` plano,
