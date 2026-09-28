@@ -22,8 +22,27 @@
 // 0 tokens de Claude corriendo esto -- mismo criterio que las 2 tools de
 // transcripción (CLAUDE.md "Cada PDF nuevo").
 //
+// ESTE COMANDO NO ES ESPECÍFICO DE NINGÚN CLUB -- corre sobre CUALQUIER PDF
+// que le pases (el ejemplo de abajo con River es solo para mostrar la
+// sintaxis). El uso real es: cada vez que tengas un PDF nuevo, pasale ESE
+// archivo; o corré --all sobre una carpeta para procesar todo lo pendiente
+// de una vez.
+//
+// SIN TOCAR NADA YA CARGADO (pedido explícito de Guido, 2026-09-29): antes
+// de tocar Mistral o Gemini para NINGÚN documento, este script resuelve
+// club+año y chequea si data/<clubId>-data.js YA tiene ese ejercicio cargado
+// -- si sí, lo salta ENTERO (ni transcribe, ni compara, ni gasta un solo
+// dólar de API) con el mensaje "Ya cargado ... no lo toco". Esto es lo que
+// hace seguro correr `--all` sobre TODO Clubes/: los ~305 ejercicios ya
+// onboardeados y verificados a mano NO se vuelven a mandar a Gemini solo
+// porque nunca existió un archivo de chequeo para ellos -- el criterio es
+// "¿está cargado en el sitio?", no "¿existe tal o cual archivo local?".
+// Corré `--dry-run` primero sobre una carpeta grande si querés ver qué
+// saltearía antes de gastar nada de verdad.
+//
 // USO:
-//   Un solo documento nuevo:
+//   Un solo documento nuevo (ejemplo de sintaxis, no literal -- reemplazá
+//   por el PDF que tengas):
 //     node tools/onboard.mjs "Clubes/Argentina/River/estados-contables-2021-2022.pdf" --club river --year 2022
 //
 //   Si no pasás --club, lo adivina comparando el nombre de la CARPETA del
@@ -34,17 +53,18 @@
 //   Club como a Genk, cuyo nombre legal belga incluye "Racing").
 //
 //   Si no pasás --year, lo saca del NOMBRE DEL ARCHIVO (año de CIERRE si hay
-//   un rango) -- a diferencia del club, esto SÍ se adivina siempre: el único
-//   uso de `year` en prepare-onboarding es la búsqueda de liga cacheada, bajo
-//   riesgo si sale mal.
+//   un rango) -- a diferencia del club, esto SÍ se adivina siempre: además
+//   de la búsqueda de liga cacheada (bajo riesgo si sale mal), ahora TAMBIÉN
+//   decide si un ejercicio ya está cargado -- ver el párrafo de arriba. Si
+//   el nombre del archivo no sugiere ningún año, hay que pasar --year.
 //
-//   Lote (todo lo pendiente bajo Clubes/, o una subcarpeta con --dir):
-//     node tools/onboard.mjs --all [--dir Clubes/Colombia] [--limit 50] [--concurrency 2]
-//   En modo lote, --club/--year no aplican (cada documento adivina el suyo);
-//   se salta un documento cuyo .briefing.json ya sea más nuevo que su .md
-//   (ya procesado y ya coincidía). Un documento con discrepancia sin
-//   resolver se vuelve a listar cada vez que se corre --all (no cuesta
-//   nada, es comparación local) hasta que alguien lo resuelva.
+//   Lote (todo lo que exista bajo Clubes/, o una subcarpeta con --dir --
+//   SÍ es seguro correrlo sobre TODO Clubes/, ver el párrafo de arriba):
+//     node tools/onboard.mjs --all [--dir Clubes/Colombia] [--limit 50]
+//   En modo lote, --club/--year no aplican (cada documento adivina el suyo).
+//   Un documento con discrepancia sin resolver se vuelve a listar cada vez
+//   que se corre --all (no cuesta nada, es comparación local) hasta que
+//   alguien lo resuelva.
 //
 //   --dry-run: no llama a ninguna API ni corre nada, solo muestra qué haría.
 // ============================================================================
@@ -186,6 +206,38 @@ function resolveClubAndYear(pdfPath, club, year) {
   return { clubId, year: resolvedYear };
 }
 
+// BUG REAL DE DISEÑO encontrado por Guido antes de correr esto de verdad: sin este chequeo, un
+// `--all` sobre TODO Clubes/ mandaría a transcribir con Gemini (plata real) cada PDF ya
+// onboardeado y verificado hace tiempo, solo porque nunca existió un .gemini-check.md para esos --
+// el criterio "¿existe el archivo de chequeo?" no distingue "nunca se hizo la comparación" de "está
+// verificado desde antes de que este flujo existiera". El criterio real tiene que ser "¿esta
+// combinación club+año YA tiene datos cargados en el sitio?", no "¿existe tal o cual archivo".
+function loadClubYearData(clubId) {
+  const dataFile = resolve(projectRoot, 'data', `${clubId}-data.js`);
+  if (!existsSync(dataFile)) return null;
+  const sandbox = { console, window: {} };
+  sandbox.window.window = sandbox.window;
+  const ctx = vm.createContext(sandbox);
+  for (const rel of ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js']) {
+    const full = resolve(projectRoot, rel);
+    if (existsSync(full)) vm.runInContext(readFileSync(full, 'utf8'), ctx, { filename: rel });
+  }
+  vm.runInContext(readFileSync(dataFile, 'utf8'), ctx, { filename: `data/${clubId}-data.js` });
+  return vm.runInContext('window.CLUB_GENERIC_DATA', ctx);
+}
+
+function isAlreadyOnboarded(clubId, year) {
+  try {
+    const generic = loadClubYearData(clubId);
+    const clubData = generic && generic[clubId];
+    if (!clubData) return false;
+    const y = String(year);
+    return Boolean((clubData.revenueLinesByYear && clubData.revenueLinesByYear[y]) || (clubData.expenseLinesByYear && clubData.expenseLinesByYear[y]));
+  } catch {
+    return false; // si la carga falla por lo que sea, mejor seguir de largo (falso "no cargado") que frenar por un error de esta tool
+  }
+}
+
 function transcribeIfMissing(pdfPath, mdPath, { dryRun, label, scriptRelPath, extraArgs, alreadyMsg }) {
   if (existsSync(mdPath)) {
     console.log(`  ${alreadyMsg}`);
@@ -208,6 +260,15 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
 
   console.log(`\n=== ${relPdf} ===`);
 
+  // Resolver club/año PRIMERO, antes de tocar ninguna API: es lo único que permite chequear si
+  // esto ya está cargado y verificado, y no tiene sentido gastar en Gemini si la respuesta es sí.
+  const resolved = resolveClubAndYear(pdfPath, club, year);
+  if (!resolved) return;
+  if (isAlreadyOnboarded(resolved.clubId, resolved.year)) {
+    console.log(`  Ya cargado en data/${resolved.clubId}-data.js, ejercicio ${resolved.year} -- no lo toco (ni Mistral ni Gemini).`);
+    return;
+  }
+
   const hasMistral = transcribeIfMissing(pdfPath, mdPath, {
     dryRun, label: 'Transcribiendo con Mistral OCR', scriptRelPath: 'tools/mistral-ocr-transcribe.mjs',
     extraArgs: [], alreadyMsg: 'Ya tiene .md de Mistral, no vuelvo a transcribir.',
@@ -219,7 +280,7 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
 
   if (dryRun) {
     console.log(`  [dry-run] node tools/compare-transcripts.mjs "${mdPath}" "${geminiCheckPath}"`);
-    console.log(`  [dry-run] si coinciden: node tools/prepare-onboarding.mjs <club> <año> "${mdPath}"`);
+    console.log(`  [dry-run] si coinciden: node tools/prepare-onboarding.mjs ${resolved.clubId} ${resolved.year} "${mdPath}"`);
     return;
   }
   if (!hasMistral || !hasGemini) {
@@ -250,8 +311,6 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
   }
 
   console.log('  Mistral y Gemini coinciden -- sigo con las tools de onboarding.');
-  const resolved = resolveClubAndYear(pdfPath, club, year);
-  if (!resolved) return;
   const res = runCapture('tools/prepare-onboarding.mjs', [resolved.clubId, String(resolved.year), mdPath]);
   if (res.code !== 0) {
     console.error(`  prepare-onboarding.mjs falló: ${res.stderr || res.stdout}`);
