@@ -783,6 +783,24 @@
   .liga-avisos{margin-top:4px;}
   .liga-avisos h3{font-size:14px;margin:0 0 7px;}
   .liga-avisos p{color:var(--muted);font-size:12px;line-height:1.55;margin:0 0 5px;}
+  /* TO-DO 83: "¿cómo le iría este club en otra liga?". El callout es EL punto de
+     la feature (la frase "sería el Nº de M"), así que va destacado arriba de
+     todo, no como una salvedad más — fondo ámbar, mismo tono que ya usa
+     `.liga-doc.presu`/`.liga-doc.nooficial` para "esto no es un dato normal de
+     la liga". */
+  .liga-sim-callout{background:#fff8ea;border:1px solid #e3c07a;border-radius:10px;
+    padding:14px 16px;margin-bottom:18px;}
+  .liga-sim-texto{margin:0 0 6px;font-size:14.5px;font-weight:600;color:#5c4300;line-height:1.5;}
+  .liga-sim-chico{margin:0 0 10px;font-size:12px;color:#8a6c1a;line-height:1.5;}
+  .liga-sim-quitar, .liga-sim-cancelar{background:none;border:1px solid #c9a34d;border-radius:6px;
+    padding:5px 10px;font:inherit;font-size:12.5px;font-weight:600;color:#5c4300;cursor:pointer;}
+  .liga-sim-quitar:hover, .liga-sim-cancelar:hover{background:#f3e2b8;}
+  .liga-sim-cancelar{margin-top:8px;}
+  /* La fila/bloque insertado, en la tabla y en el desglose: mismo tono ámbar del
+     callout, para que sea obvio de un vistazo que no es un club real de la liga. */
+  tr.liga-fila-simulada{background:#fff8ea;}
+  .liga-desglose-club.liga-fila-simulada{background:#fff8ea;border-radius:8px;padding-left:10px;padding-right:10px;}
+  .liga-sim-badge{color:#8a5a00;font-size:11px;font-weight:700;margin-left:6px;}
   @media (max-width:720px){
     .liga-chart-box{height:300px;}
     .liga-head-top{align-items:flex-start;}

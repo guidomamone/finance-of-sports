@@ -92,6 +92,7 @@ window.I18N.strings.en = {
   "finanzas.debt.title": "Debt",
   "finanzas.fmt.club": "Club's own format",
   "finanzas.fmt.simple": "Simplified format",
+  "finanzas.ligasim.btn": "How would it fare in another league?",
   "finanzas.pl.sub": "Revenue shows how much money came in and costs show how much went out over this financial year, category by category.",
   "finanzas.pl.title": "Income statement",
   "finanzas.sel.change": "Change club",

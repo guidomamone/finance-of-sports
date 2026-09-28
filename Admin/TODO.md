@@ -81,18 +81,6 @@ perdieron sino que se descartaron:
     Resultado esperado: no un cambio de código, sino una lista de candidatos a to-do nuevos (uno por
     paso que valga la pena optimizar), para que Guido priorice cuáles perseguir.
 
-83. VER CÓMO QUEDARÍA UN CLUB CON SU PRESUPUESTO EN OTRA LIGA (pedido de Guido, 2026-09-27: ejemplo,
-    ver cómo quedaría Boca con su presupuesto en la liga española). Es una simulación cruzada: tomar
-    el valor ya cargado de un club e insertarlo en el ranking de OTRA liga para mostrar en qué
-    posición quedaría. Reusa la infraestructura de rankings pre-calculados que ya existe (Versiones
-    182-184, y la mejora de Ligas del to-do 68, Versión 243) — no hace falta bajar clubes de la otra
-    liga en vivo. Preguntas a resolver antes de tocar código: (a) qué métrica se usa (ingresos totales
-    parece el candidato obvio dado que 68 ya los muestra por categoría, confirmar con Guido); (b) qué
-    pasa si el club de origen y la liga destino no comparten moneda/año — mismo problema de fondo que
-    el to-do 23(d) (deflactores) y el aviso ya existente de "ejercicios de años distintos"; (c) UI:
-    ¿selector nuevo ("elegí un club, elegí una liga") o un botón dentro de la ficha de cada club
-    ("¿cómo le iría en...")? Sin evaluar todavía.
-
 82. EVALUAR SI EL FUNNEL DE SOURCING DEBERÍA TENER ARISTAS ESPECÍFICAS POR PAÍS, en vez de una
     escalera única para todos (pedido de Guido, 2026-09-27, generalizando la distinción que motivó
     separar los to-dos 80 y 81: Reddit rinde en países angloparlantes y no en LatAm, mismo patrón

@@ -326,6 +326,12 @@ se reescribe, no se acumula.
   Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
   Finanzas del primer club de esa liga por orden alfabético. No necesita club
   activo.
+- "¿CÓMO LE IRÍA ESTE CLUB EN OTRA LIGA?" (Versión 281, to-do 83): desde Finanzas, botón que
+  inserta el club activo en el ranking de OTRA liga, por ingresos — simulación, no predicción
+  deportiva. La fila simulada se dibuja distinta (barra translúcida, fondo ámbar, badge) y NUNCA
+  cuenta para los totales/cobertura reales de esa liga. Se guarda solo en Mi Cuenta (to-do 70),
+  mismo mecanismo que cualquier otra búsqueda. Solo disponible en modo "Año a año" (no "Por
+  gestión"): el motor real compara un ejercicio puntual, no un rango.
 - UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
   de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
   plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →

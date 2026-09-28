@@ -35,7 +35,18 @@
   // falta un hash de verdad: alcanza con una clave de texto estable y determinística.
   function stateKey(state) {
     if (state.view === 'vs') return ['vs', JSON.stringify(state.ladoA), JSON.stringify(state.ladoB)].join('|');
+    // to-do 83: "cómo le iría este club en otra liga" — club+año de ORIGEN y
+    // liga+año DESTINO son las 4 partes que identifican una simulación única.
+    if (state.view === 'ligaSim') return ['ligaSim', state.club, state.clubYear, state.league, state.leagueYear].join('|');
     return [state.view, state.club, state.mode, state.year, state.gestion].join('|');
+  }
+
+  // A diferencia de `clubs` (ver el comentario de clubName()), `data/leagues.js`
+  // SÍ asigna `window.LEAGUES` (mismo criterio que usa js/liga.js), así que no
+  // hace falta el `typeof` de guarda: es un global eager, siempre cargado.
+  function leagueName(leagueId) {
+    var lg = (window.LEAGUES || {})[leagueId] || null;
+    return (lg && lg.name) || leagueId;
   }
 
   // `clubs` (data/clubs.js) es un `const` de scope de módulo, NO `window.clubs` — un script
@@ -75,6 +86,16 @@
 
   function labelFor(state) {
     if (state.view === 'vs') return labelForLado(state.ladoA) + ' vs ' + labelForLado(state.ladoB);
+    // to-do 83, el template que pidió Guido: "River 2024/2025 en Liga Española,
+    // ejercicio 2025". El año de la LIGA va como "ejercicio N" (no "N/N+1"):
+    // así es como el sitio ya etiqueta un ranking en js/liga.js (encabezado()),
+    // nunca como temporada — inventar un formato de temporada para ligas acá
+    // sería una segunda convención para la misma cosa.
+    if (state.view === 'ligaSim') {
+      return clubName(state.club) + ' ' + seasonLabel(state.club, state.clubYear) + ' '
+        + t('cuenta.ligasim.en', 'en') + ' ' + leagueName(state.league) + ', '
+        + t('cuenta.ligasim.ejercicio', 'ejercicio') + ' ' + state.leagueYear;
+    }
     if (state.mode === 'gestion') return clubName(state.club) + ', ' + (state.gestion || '');
     return clubName(state.club) + ', ' + seasonLabel(state.club, state.year);
   }

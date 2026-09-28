@@ -15,6 +15,30 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 281 — to-do 83: "¿cómo le iría este club en otra liga?"
+
+- Simulación por plata (NO predicción deportiva): desde la ficha de Finanzas de un club, botón
+  "¿Cómo le iría en otra liga?" → se elige la liga destino → el club se inserta en el ranking real
+  de esa liga-ejercicio, en su posición por ingresos, marcado visualmente distinto (barra
+  translúcida + fila con fondo ámbar + badge "(simulado)"), con un callout arriba que dice la frase
+  ("Con MUSD X, sería el Nº de M en Liga Y"). Nunca cuenta para los totales/coberturas reales de esa
+  liga — la fila simulada es una vista, `window.RANKINGS` no se toca.
+- Mismo motor que `tools/generate-rankings.js` (`computeYearGeneric` + `toDisplayValue` +
+  `simplifiedReportForClub`, `js/finanzas-calc.js`), corrido EN VIVO en el navegador porque el club
+  ya está cargado — sin bajar nada nuevo. Bug real encontrado y corregido en el camino: `reportType`/
+  `sourceId` salen de `computeYearGeneric().meta`, NO de `yearMetaFor()` (mismo gotcha que ya
+  documentaba el generador de rankings, ver su cabecera) — el primer intento los leía mal y la fila
+  simulada mostraba "Ejercicio" en vez de "Balance" y sin tipo de documento.
+- Se guarda en Mi Cuenta (to-do 70) como cualquier otra búsqueda: template pedido por Guido, "River
+  2024/2025 en LaLiga, ejercicio 2025" — `js/cuenta.js` suma un `view:'ligaSim'` nuevo a
+  `stateKey()`/`labelFor()`. El año de la LIGA se etiqueta "ejercicio N" (no "N/N+1"): es como
+  `js/liga.js` ya etiqueta un ranking, inventar un formato de temporada para ligas sería una segunda
+  convención para lo mismo.
+- `js/liga.js` gana `iniciarSimulacion()`/`showConSimulado()` (nuevas, exportadas) y un hook
+  `onSimulado` para que index.html decida guardar — el módulo sigue sin saber de Supabase, mismo
+  principio que ya usaba con `pickClub`/`goFinanzas`. El botón se esconde en modo "Por gestión": la
+  simulación es de UN ejercicio puntual, el motor real no calcula por rango de gestión.
+
 ## Versión 280 — River Plate: 4 balances reales nuevos encontrados vía CNV, y un fix a `wayback-verify-download.mjs`
 
 - **Hallazgo grande, sourcing (pedido explícito de Guido)**: River es emisor regulado por la
