@@ -172,6 +172,38 @@ perdieron sino que se descartaron:
     sí está bien, es la tool la que los confunde. Si se repite este patrón, evaluar si `normalize()`
     necesita distinguir texto entre paréntesis en vez de descartarlo.
 
+102. RIVER (Ejercicio 2024, YA PUBLICADO): "Fútbol Profesional" está entero en
+    `lump_football_operations`, con sus 4 sub-ítems reales (Venta de jugadores, Televisión,
+    Publicidad, Torneos) enterrados solo como `items` — encontrado 2026-09-28 onboardeando el
+    Ejercicio 2021 del mismo club (misma estructura de documento, Anexo VII), NO corregido a
+    pedido de Guido ("si es un error en producción, abrí un to-do para que se revise/evalúe/
+    corrija en el futuro, no lo toques ahora"). Es el mismo patrón que SKILL.md sección 1 ya
+    describe con el ejemplo de Racing (Versión 32): esos 4 conceptos tienen categoría REAL
+    distinta entre sí (`player_sales`/`broadcasting`/`sponsorship_commercial`/`competition_bonus`),
+    no son un bolsón sin desglosar — así que `sumCat()`/`computeYearGeneric()` hoy muestran
+    Televisión/Publicidad/Venta de jugadores en $0 en Formato Simplificado para River, que es el
+    club más visitado del sitio. Los montos exactos (ya verificados, listos para copiar si se
+    decide corregir) están en el comentario de `riverRevenueLinesByYear[2024]`,
+    `data/river-data.js` — los mismos 4 valores que hoy viven como `items` de la línea "Fútbol
+    Profesional". El Ejercicio 2021 (cargado en esta misma sesión) usa el MISMO criterio que 2024
+    (lump, no promovido) a propósito, para no quedar inconsistente entre años mientras esto no se
+    decide — si se corrige 2024, corregir 2021 en el mismo movimiento.
+
+103. EVALUAR SI GEMINI TRANSCRIBE MEJOR QUE MISTRAL LOS ESCANEOS (pedido de Guido, 2026-09-28,
+    disparado por un caso real: onboardeando River Ejercicio 2021, la transcripción de Mistral leyó
+    "Amortización de software" como $12.336.254 cuando el PDF (verificado a mano, zoom sobre la
+    celda) dice $12.326.254 — dígitos transpuestos, 326↔336. Se detectó porque el tie-out no cerraba
+    ($20 de diferencia sobre $1.800 millones, sección 6 de `club-data-mapping/SKILL.md`), no porque
+    Mistral avisara nada raro en esa celda puntual — mismo patrón de riesgo que ya documenta
+    `Admin/test-costo-transcripcion.md` (Mistral no baja la confianza en una celda mal leída).
+    Comparar ese mismo documento (`Clubes/Argentina/River/estados-contables-2020-2021.pdf`)
+    transcripto con `node tools/gemini-transcribe.mjs` contra la transcripción de Mistral ya
+    cargada, cifra por cifra (mismo método que el test original de
+    `Admin/test-costo-transcripcion.md`), para ver si Gemini acierta esa celda y si en general sale
+    mejor o peor en escaneos. Si Gemini rinde mejor, evaluar cambiar el DEFAULT de
+    `CLAUDE.md`/`club-data-mapping/SKILL.md` sección 15 (hoy: Mistral primero siempre, Gemini solo
+    para lo que Mistral marca como escaneo vía `--redo-mistral-scanned`) — no decidido todavía.
+
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada

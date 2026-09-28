@@ -45,7 +45,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // 2026 y 2027 son presupuestos: el de 2027 cierra en el futuro, y el de 2026 (cerrado el
   // 30/6/2026) no se verificó contra la temporada, así que queda en null como cualquier otro
   // dato sin chequear.
-  river: { 2024: 'ar-primera' },
+  // 2021 verificado el 2026-09-28 contra "2021 Copa de la Liga Profesional" (Wikipedia): River
+  // ("RIV") aparece en la Zona A. Esta página usa una plantilla de tabla deportiva sin sección
+  // "Teams" (a diferencia de las ligas que sí trae tools/fetch-club-league-reference.mjs hoy),
+  // así que se confirmó a mano con el wikitext crudo, no con el pipeline automático completo.
+  river: { 2021: 'ar-primera', 2024: 'ar-primera' },
   rosariocentral: { 2023: 'ar-primera', 2025: 'ar-primera' },
   sanlorenzo: { 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2024: 'ar-primera' },
   union: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },

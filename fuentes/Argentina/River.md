@@ -28,9 +28,13 @@ TOTAL DEL ACTIVO, PASIVO CORRIENTE, etc., paginado en la propia página) — sir
 cruzada contra lo que se transcriba del PDF, no como reemplazo del documento.
 
 **Documentos encontrados así (2026-09-28), descargados a `Clubes/Argentina/River/`, TODOS
-legalizados/firmados, TODOS pendientes de transcripción a `.md` todavía**:
-- `estados-contables-2020-2021.pdf` (Ejercicio 120, individual, "EECC 2021 River Plate legalizados
-  (2).pdf", 3,7 MB, 65 pág.) — presentación CNV #3248465.
+legalizados/firmados**:
+- ✅ **`estados-contables-2020-2021.pdf` (Ejercicio 120) — TRANSCRIPTO Y CARGADO** (2026-09-28,
+  ronda de onboardings de prueba de los tools del to-do 98/95). Individual, "EECC 2021 River Plate
+  legalizados (2).pdf", 3,7 MB, 65 pág., presentación CNV #3248465. Transcripción vía Mistral OCR
+  (escaneado, verificado a mano contra el PDF — encontró y corrigió un dígito transpuesto en
+  "Amortización de software", $12.336.254 leído vs. $12.326.254 real). REEMPLAZA el placeholder
+  inventado que tenía este ejercicio desde la Versión 138. Ver `data/river-data.js`.
 - `estados-contables-2020-2021-consolidado.pdf` (mismo ejercicio, versión CONSOLIDADA, "EECC 2021
   River Plate legalizados.pdf", 2,0 MB, 63 pág.) — presentación #3241487. Preferir la individual
   para cargar datos (mismo criterio que ya usan Boca/Racing/el resto), esta queda de respaldo.
