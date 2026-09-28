@@ -534,9 +534,9 @@ ls Admin/mistral/.env Admin/gemini/.env
 <span class="rem"># un documento nuevo</span>
 node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
 
-<span class="rem"># o una carpeta entera de una vez (más de 50 documentos pendientes pide --confirm,</span>
-<span class="rem"># es plata real — ver el aviso que tira el propio comando si pasa de ahí)</span>
-node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;"</code></pre>
+<span class="rem"># o un lote de N (mismo --limit que ya usabas con Mistral; más de 50 sin</span>
+<span class="rem"># --limit pide --confirm, es plata real — ver el aviso del propio comando)</span>
+node tools/onboard.mjs --all --limit 50</code></pre>
 
   <div class="col">
     <p style="margin:18px 0 2px;font-weight:600;">Solo Mistral</p>
@@ -545,7 +545,7 @@ node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;"</code></p
   <pre class="term"><code>node tools/mistral-ocr-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
 
 <span class="rem"># o en lote</span>
-node tools/mistral-ocr-transcribe.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;" [--limit 150]</code></pre>
+node tools/mistral-ocr-transcribe.mjs --all --limit 150</code></pre>
 
   <div class="col">
     <p style="margin:18px 0 2px;font-weight:600;">Solo Gemini</p>
@@ -560,7 +560,7 @@ node tools/mistral-ocr-transcribe.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club
   <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --transcribe-only
 
 <span class="rem"># o en lote</span>
-node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;" --transcribe-only</code></pre>
+node tools/onboard.mjs --all --limit 50 --transcribe-only</code></pre>
 
   <div class="col">
     <p style="margin:18px 0 2px;font-weight:600;">Chequear que Mistral y Gemini coincidan</p>
@@ -578,7 +578,7 @@ node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --check-o
   <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --onboard-only
 
 <span class="rem"># o en lote</span>
-node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;" --onboard-only</code></pre>
+node tools/onboard.mjs --all --limit 50 --onboard-only</code></pre>
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>

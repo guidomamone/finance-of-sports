@@ -58,8 +58,13 @@
 //   decide si un ejercicio ya está cargado -- ver el párrafo de arriba. Si
 //   el nombre del archivo no sugiere ningún año, hay que pasar --year.
 //
-//   Lote (todo lo que exista bajo Clubes/, o una subcarpeta con --dir):
-//     node tools/onboard.mjs --all [--dir Clubes/Colombia] [--limit 50]
+//   Lote, igual de simple que ya era con Mistral solo (--limit corta la
+//   corrida a N documentos, en el mismo orden en que están en Clubes/ --
+//   NO hace falta elegir carpeta ni país, ese es un extra opcional):
+//     node tools/onboard.mjs --all --limit 50
+//   Acotar a una carpeta puntual es opcional, con --dir (ej. --dir
+//   Clubes/Colombia), solo si alguna vez querés limitarte a un club o país
+//   en particular -- para el uso de todos los días alcanza con --limit.
 //   En modo lote, --club/--year no aplican (cada documento adivina el suyo).
 //   Un documento con discrepancia sin resolver se vuelve a listar cada vez
 //   que se corre --all (no cuesta nada, es comparación local) hasta que
@@ -271,6 +276,45 @@ function transcribeIfMissing(pdfPath, mdPath, { dryRun, label, scriptRelPath, ex
   return existsSync(mdPath);
 }
 
+// Cambiar acá cuando se elija/renombre la 3ra API (ver tools/thirdapi-transcribe.mjs).
+const THIRDAPI_SCRIPT = 'tools/thirdapi-transcribe.mjs';
+
+// Gemini rechaza ~1 de cada 4 documentos con `finishReason: RECITATION` (falso positivo de
+// copyright de Google, no un problema del documento -- Admin/test-costo-transcripcion.md). Con el
+// flujo de comparación (Mistral vs. Gemini), un rechazo de Gemini deja a ese documento SIN su 2do
+// chequeo -- pedido de Guido, 2026-09-29: que entre una 3ra API SOLO ahí, como reemplazo de Gemini
+// para ese subconjunto puntual, escribiendo al MISMO archivo (mismo GEMINI_CHECK_SUFFIX) para que
+// compare-transcripts.mjs no tenga que saber ni le importe cuál de las dos lo generó.
+//
+// A diferencia de transcribeIfMissing() (arriba), esto corre a Gemini CAPTURADO (no en vivo) --
+// hace falta leer su salida para saber si el rechazo fue por RECITATION específicamente, antes de
+// decidir si vale la pena probar la 3ra API o si es un fallo de otro tipo (red, rate-limit ya
+// reintentado, key inválida) que otra API tampoco resolvería.
+function transcribeGeminiWithFallback(pdfPath, geminiCheckPath, dryRun) {
+  if (existsSync(geminiCheckPath)) {
+    console.log('  Ya tiene el chequeo de Gemini, no vuelvo a transcribir.');
+    return true;
+  }
+  if (dryRun) {
+    console.log(`  [dry-run] node tools/gemini-transcribe.mjs "${relative(projectRoot, pdfPath)}" --out-suffix ${GEMINI_CHECK_SUFFIX}`);
+    return false;
+  }
+  console.log('  Transcribiendo con Gemini (chequeo en paralelo)...');
+  const res = runCapture('tools/gemini-transcribe.mjs', [pdfPath, '--out-suffix', GEMINI_CHECK_SUFFIX]);
+  if (res.stdout.trim()) console.log('  ' + res.stdout.trim());
+  if (existsSync(geminiCheckPath)) return true;
+
+  if (/RECITATION/i.test(res.stdout + res.stderr)) {
+    console.log('  Gemini rechazó por RECITATION (falso positivo de copyright, no del documento) -- probando con la 3ra API...');
+    const res2 = runCapture(THIRDAPI_SCRIPT, [pdfPath, '--out-suffix', GEMINI_CHECK_SUFFIX]);
+    if (res2.stdout.trim()) console.log('  ' + res2.stdout.trim());
+    if (res2.stderr.trim()) console.log('  ' + res2.stderr.trim());
+    return existsSync(geminiCheckPath);
+  }
+  if (res.stderr.trim()) console.error('  ' + res.stderr.trim());
+  return false;
+}
+
 // El marcador que deja CLAUDE (a mano, con el Edit tool) en el .md CANÓNICO cuando resuelve una
 // discrepancia contra el PDF -- NO lo escribe ninguna tool. Responde la pregunta real de Guido
 // ("¿el script sabe si el match es porque Mistral y Gemini coincidieron solos, o porque Claude
@@ -309,10 +353,7 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true, stage = 'full
       dryRun, label: 'Transcribiendo con Mistral OCR', scriptRelPath: 'tools/mistral-ocr-transcribe.mjs',
       extraArgs: [], alreadyMsg: 'Ya tiene .md de Mistral, no vuelvo a transcribir.',
     });
-    const hasGemini = transcribeIfMissing(pdfPath, geminiCheckPath, {
-      dryRun, label: 'Transcribiendo con Gemini (chequeo en paralelo)', scriptRelPath: 'tools/gemini-transcribe.mjs',
-      extraArgs: ['--out-suffix', GEMINI_CHECK_SUFFIX], alreadyMsg: 'Ya tiene el chequeo de Gemini, no vuelvo a transcribir.',
-    });
+    const hasGemini = transcribeGeminiWithFallback(pdfPath, geminiCheckPath, dryRun);
     if (stage === 'transcribe') return; // --transcribe-only: hasta acá nomás, no compara ni onboardea
     if (dryRun) {
       console.log(`  [dry-run] node tools/compare-transcripts.mjs "${mdPath}" "${geminiCheckPath}"`);
