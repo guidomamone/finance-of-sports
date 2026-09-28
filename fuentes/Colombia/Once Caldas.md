@@ -12,16 +12,19 @@
   del 02-ago-2012 de la Superintendencia de Sociedades), aunque la Vista 360 muestra 0 "procesos
   activos" listados en su ficha — posible desactualización de ese contador puntual, no del estado
   real de la sociedad.
-  - **RESUELTO el 2026-09-22: no eran "al menos 2", son 9 ejercicios más.** SIIS tiene los 10
-    cortes 2016-2025 bajo el mismo NIT, cada uno con sus 3 documentos (NOTAS EF, DICTAMEN DEL
-    REVISOR FISCAL, CERTIFICACION EF), y se bajaron los 9 que faltaban con el flujo por API
-    documentado en `fuentes/Colombia/_notas-generales.md` (sin browser, todo `curl`).
-    - **Sin abrir todavía** — esta sesión es sourcing puro. Vale especialmente la pena revisarlos
-      acá: el PDF de 2025 resultó ser solo las NOTAS (sin el Estado de Situación Financiera ni el
-      Estado de Resultado Integral primarios como tabla aparte), lo que obligó a usar un residuo
-      para el impuesto y dejó una duda abierta en `Admin/dudas-por-club.md`. Si algún ejercicio
-      anterior sí trae los estados primarios completos, serviría para validar el criterio que se
-      usó en 2025.
+  - **CORRECCIÓN (2026-09-28, to-do 50): la nota "RESUELTO el 2026-09-22" de abajo estaba
+    incompleta** — solo se habían bajado 2016-2020 (más el 2025 original), NO los 9 que decía. Los
+    4 años realmente faltantes (**2021, 2022, 2023, 2024**) se bajaron recién en esta sesión, con
+    el mismo flujo de API (radicados 2022-01-250977 a 2025-01-273348, 1 proceso a la vez). Ahora sí
+    los 10 cortes 2016-2025 están completos en `Clubes/Colombia/Once Caldas/`, capa de texto real
+    verificada con `pdftotext` en los 4 nuevos. Pendiente el paso de transcripción completa a `.md`
+    (pipeline Mistral, `CLAUDE.md` "Cada PDF nuevo") para los años sin abrir.
+    - **Sin abrir todavía (salvo 2025)** — esta sesión es sourcing puro. Vale especialmente la pena
+      revisarlos: el PDF de 2025 resultó ser solo las NOTAS (sin el Estado de Situación Financiera
+      ni el Estado de Resultado Integral primarios como tabla aparte), lo que obligó a usar un
+      residuo para el impuesto y dejó una duda abierta en `Admin/dudas-por-club.md`. Si algún
+      ejercicio anterior sí trae los estados primarios completos, serviría para validar el criterio
+      que se usó en 2025.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 890801447); oncecaldas.co.
 - **CARGADO al sitio (sesión 2026-09-13, Ejercicio 2025 únicamente)**: ver `data/oncecaldas-data.js`.
   El PDF `estados-financieros-2025.pdf` (a pesar del nombre) son las NOTAS a los estados financieros

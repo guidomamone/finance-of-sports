@@ -256,23 +256,29 @@ perdieron sino que se descartaron:
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-50. LEADS DE SOURCING YA IDENTIFICADOS Y SIN EXPLOTAR, DE COLOMBIA Y MÉXICO (de la Versión 202).
-    Todos tienen el camino escrito, solo falta ejecutarlos:
-    - **Ejercicios disponibles en SIIS que quedaron sin bajar por throttling** (Colombia): Boyacá
-      Chicó 2021-2025 es el de mayor margen, más Once Caldas 2021-2024 y Bucaramanga 2021. El
-      límite real es 1-2 procesos en paralelo, más que eso devuelve HTML sin PDF en silencio.
-    - **León y Pachuca (México) dieron HTTP 403** a `curl`, que es bloqueo de WAF y NO dead-end
-      confirmado. Vale reintentarlos desde el Browser pane.
-    - **Pumas y Tigres (México)**: solicitud por la Plataforma Nacional de Transparencia a la UNAM
-      y a la UANL por lo que le transfieren al club. El INAI ya obligó a la UNAM una vez
-      (resolución de enero 2022), así que el precedente existe.
-    - **León se está vendiendo** (80% forzado por la regla anti-multipropiedad): si el comprador es
-      un vehículo cotizante, se abre la ventana Ollamani. Rechequear cuando cierre la operación.
-    - **`DIABLOS` en la BMV**: Diablos Rojos del México (béisbol) cotiza desde diciembre 2024 y
-      reporta trimestralmente. Es el segundo caso mexicano del patrón Ollamani y el canal ya está
-      probado, pero **abre liga y deporte nuevos**: es decisión de Guido, no se hace solo.
-    EN PAUSA (decisión de Guido, 2026-09-23): no es prioridad ahora, retomar más adelante sin fecha
-    fija.
+50. LEADS DE SOURCING DE COLOMBIA Y MÉXICO — 2 de 5 puntos ejecutados el 2026-09-28, quedan 3 que
+    necesitan una acción o decisión de Guido:
+    - ✅ **SIIS Colombia**: Boyacá Chicó suma 2021-2025 (8 ejercicios en total), Once Caldas suma
+      2021-2024 (serie completa 2016-2025) — la nota anterior de "resuelto" para Once Caldas estaba
+      incompleta, corregido. Bucaramanga 2021 se investigó a fondo (endpoint + Vista 360 en browser
+      real) y se confirmó que es un hueco REAL de la fuente (la sociedad no depositó ese año), no
+      throttling como se creía. Detalle en `fuentes/Colombia/<Club>.md` de cada uno. **Pendiente el
+      paso de transcripción de los PDFs nuevos** (pipeline Mistral, `CLAUDE.md` "Cada PDF nuevo") —
+      sourcing y transcripción son pasos separados.
+    - ✅ **León y Pachuca (México)**: ya resuelto por el to-do 75 (evaluación de Firecrawl,
+      2026-09-27) — Pachuca se destrabó (sin nada financiero, blindado por el Art. 12 de LIGA MX);
+      León resistió Firecrawl, `/v1/map` Y un Browser pane real, confirmando que es un bloqueo de
+      IP/hosting, no un WAF con challenge. Ver `fuentes/México/León.md` y `Pachuca.md`.
+    - **Pumas y Tigres (México)**: texto de las 2 solicitudes de transparencia (UNAM y UANL) ya
+      redactado — ver el chat de la sesión 2026-09-28 o pedirlo de nuevo. Falta que Guido las
+      presente desde su propia cuenta en la Plataforma Nacional de Transparencia (crear cuenta y
+      presentar la solicitud no es algo que una sesión pueda hacer sola).
+    - **León se está vendiendo, sin cerrar todavía** (rechequeado 2026-09-28): plazo hasta 2027,
+      ~130 propuestas recibidas, ~25 acuerdos de confidencialidad firmados. Candidatos que suenan:
+      "Apollo Group" (si es Apollo Global Management, NYSE `APO`, abriría la ventana Ollamani) y
+      Arturo Lomelí (Clase Azul, privado). Rechequear cuando cierre la operación.
+    - **`DIABLOS` en la BMV**: sigue igual, es decisión de Guido (abre liga y deporte nuevos), no
+      se toca sin su OK.
 
 34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
     2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que

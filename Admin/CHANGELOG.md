@@ -15,6 +15,34 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 276 — to-do 50: SIIS Colombia completado, León/Pachuca ya resueltos, Pumas/Tigres redactado
+
+- Boyacá Chicó suma 2021-2025 (8 ejercicios en total) y Once Caldas completa la serie 2016-2025 (la
+  nota anterior de "resuelto" para Once Caldas estaba incompleta, corregida). Bucaramanga 2021
+  confirmado como hueco real de la fuente (no throttling), verificado con la API y con Vista 360 en
+  browser real. León/Pachuca ya estaban resueltos por el to-do 75. Texto de las 2 solicitudes de
+  transparencia (UNAM/UANL) redactado, sin enviar — le corresponde a Guido presentarlas. `DIABLOS`
+  BMV y la venta de León (sin cerrar) quedan igual, pendientes de Guido/del mercado.
+
+## Versión 275 — Piloto A/B más grande de Firecrawl: 6 clubes de EE.UU. + 6 de Paraguay
+
+- Repetición del piloto (to-do 80, evaluar Firecrawl-desde-el-inicio) con una muestra más grande y
+  sin el sesgo de dueño compartido del piloto anterior: 3 clubes por celda, control vs. tratamiento,
+  2 países. Resultado invertido respecto al piloto chico: tokens prácticamente iguales (+0,5%) y
+  ~35% MÁS tiempo real con Firecrawl-desde-el-inicio — confirma que la política ya escrita en el
+  skill (Firecrawl como respaldo, no como default) es la correcta. Subproducto real: Green Bay
+  Packers (3 Annual Reports auditados FY2016-2022, único equipo de las 4 grandes ligas de propiedad
+  pública) y Sportivo Luqueño (Paraguay, candidato fuerte a mail) quedan documentados junto con el
+  resto de los 12 clubes nuevos.
+
+## Versión 274 — Piloto A/B chico de Firecrawl: 4 clubes nuevos de EE.UU.
+
+- Primer piloto de medición (to-do 80, "¿usar Firecrawl desde el inicio ahorra tokens/tiempo?"):
+  2 clubes control (Toronto Raptors, Miami Heat) vs. 2 tratamiento con Firecrawl-primero (Toronto
+  Maple Leafs, Dallas Mavericks). Resultado aparente de ~20% menos tokens/tiempo, con un sesgo
+  identificado (Raptors/Leafs comparten dueño MLSE/Rogers) — motivó repetir el test más grande
+  (Versión 275). Subproducto: 4 equipos nuevos documentados en `fuentes/Estados Unidos/`.
+
 ## Versión 273 — to-do 75 cerrado: Firecrawl suma a la familia 1 de `club-sourcing/SKILL.md`
 
 - Test contra San Telmo (Argentina), León y Pachuca (México, Grupo Pachuca) — los 3 casos originales
