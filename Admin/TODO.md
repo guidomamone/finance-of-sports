@@ -189,7 +189,6 @@ perdieron sino que se descartaron:
     (lump, no promovido) a propósito, para no quedar inconsistente entre años mientras esto no se
     decide — si se corrige 2024, corregir 2021 en el mismo movimiento.
 
-
 105. PLAN PARA SUBIR EL RITMO DE ONBOARDING RUMBO A 2000 PDFs ANTES DE FIN DE AÑO (pregunta de
     Guido, 2026-09-28, después de los 5 onboardings de prueba del to-do 98: *"necesito velocidad
     para subir onboardings y de alta calidad. a este ritmo no subo 2000 pdfs antes de fin de año.

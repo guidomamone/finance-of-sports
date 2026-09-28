@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 303 — to-do 106, la corrida real: head-to-head Mistral vs. Gemini en 8 escaneos (8 subagentes, ~1.660 celdas), confirma "ninguna es mejor"
+
+- **La corrida ampliada que la Versión 302 (abajo) anticipaba con un solo documento**, ahora hecha
+  de verdad: 8 documentos que Mistral marcó como escaneados (Brasil, Colombia, Grecia y Noruega — 2
+  por país), verificados celda por celda contra el PDF fuente por 8 subagentes en paralelo, uno por
+  documento. Resultado: ningún motor domina — cada uno cometió errores reales que el otro no
+  cometió, en cantidad similar, sobre una tasa de error minúscula (~1.660 celdas comparadas). **No
+  se cambia el DEFAULT Mistral→Gemini** de CLAUDE.md/`club-data-mapping/SKILL.md` sección 15.
+- **2 hallazgos nuevos, ninguno detectable con un chequeo de sumas**: Mistral puede saltearse
+  contenido real SIN NINGUNA advertencia (una columna entera de ratios, en un documento); Gemini
+  puede fabricar un valor en una celda vacía, o "corregir" en silencio un dígito hacia lo que le
+  parece más consistente. Confirma que la verificación manual obligatoria para escaneos sigue
+  siendo necesaria con cualquiera de los dos motores — el chequeo de comparación (`tools/compare-
+  transcripts.mjs`, Versión 302) atrapa un desacuerdo ENTRE los dos, pero no un error en el que
+  ambos coincidan por accidente. Detalle completo en `Admin/test-mistral-gemini-escaneos.md`.
+
 ## Versión 302 — to-do 106 cerrado: "ninguna es mejor" → Mistral+Gemini en paralelo con comparación, no un default
 
 - **to-do 106 (¿conviene cambiar el default Mistral→Gemini?) cerrado con una respuesta distinta a
