@@ -59,15 +59,20 @@ se reescribe, no se acumula.
   re-linkearlo en Netlify, eso lo tiene que hacer Guido).
 - ANALYTICS: Cloudflare Web Analytics desde la Versión 166 (snippet en el `<head>`
   de `index.html`) — visitas, pageviews, referrers y país, sin cookies ni banner de
-  consentimiento. No mide funnel/eventos (para eso, Mixpanel queda como opción
-  futura si hace falta). Desde la Versión 216, además, un Worker + KV propios
+  consentimiento. Desde la Versión 216, además, un Worker + KV propios
   (`square-sky-ca25.guidomamone91.workers.dev` → KV namespace `FOS_LOGS`, cuenta de
   Cloudflare de Guido, free tier) loggean texto libre que Web Analytics no puede: qué
   se tipea en el buscador (con o sin resultado) y qué par de clubes se elige en
   Comparar. Se lee directo del dashboard de Cloudflare (KV Pairs), sin reporte propio.
-  Gateado por hostname en `js/selector.js`: solo manda datos si `location.hostname ===
-  'financeofsports.com'`, así que probar el sitio en preview local no ensucia las
-  cuentas reales.
+  Desde la Versión 277 (to-do 67), Mixpanel (proyecto "Finance of sports", free tier)
+  cubre lo que ninguno de los dos anteriores mide: el FUNNEL del selector, paso a paso,
+  desde que se abre hasta que se elige un club (`selector_opened` /
+  `selector_step_completed` / `selector_club_chosen`, instrumentados a mano en
+  `js/selector.js`, nunca Autocapture). `track_pageview:false` a propósito, para no
+  duplicar lo que ya da Cloudflare. **Pendiente de verificar con tráfico real tras el
+  push** — ver to-do 67. Los 3 sistemas están GATEADOS por hostname en `js/selector.js`:
+  solo mandan datos si `location.hostname === 'financeofsports.com'`, así que probar el
+  sitio en preview local no ensucia ninguna de las tres cuentas.
 - YA NO HAY EJERCICIOS PLACEHOLDER (Versión 138, pedido de Guido: "quita los
   ejercicios que sean placeholder, antes tenían sentido, hoy no"). Se borraron los 9
   que quedaban, todos de Boca (7) y River (2): cinco eran placeholder puro con rubros

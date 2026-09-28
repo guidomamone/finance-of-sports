@@ -172,34 +172,30 @@ perdieron sino que se descartaron:
     Sin estos dos pasos, el botón de login funciona perfecto en local (probado por Guido,
     2026-09-27) pero falla para cualquier visitante real del sitio en producción.
 
-67. EVALUAR MIXPANEL PARA TRACKEAR LA SECUENCIA COMPLETA DEL SELECTOR, DESDE QUE SE ABRE HASTA QUE
-    SE ELIGE UN CLUB (pedido de Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el
-    selector"*). Solo quedó charlado en una sesión de consejo, nada de código tocado todavía ni
-    cuenta de Mixpanel creada.
+67. VERIFICAR EN PRODUCCIÓN EL FUNNEL DEL SELECTOR QUE YA SE INSTRUMENTÓ EN MIXPANEL (pedido de
+    Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el selector"*; implementado
+    2026-09-28, Versión 277 — ver `Admin/CHANGELOG.md`). **Falta solo el push y mirar que lleguen
+    eventos reales**, no falta diseño ni código.
 
-    POR QUÉ NO ALCANZA LO QUE YA HAY: el logging propio de la Versión 216 (Worker + KV,
-    `square-sky-ca25.guidomamone91.workers.dev`, hooks en `js/selector.js`) solo cuenta hits/miss de
-    término buscado y pares elegidos en Comparar — son contadores sueltos, no la secuencia de
-    interacción (abrir selector → tipear/navegar → elegir país → elegir club → [elegir año]) que
-    Guido quiere ver ahora. Y Cloudflare Web Analytics (Versión 166) solo mide pageviews/referrers a
-    nivel de página, tampoco sirve para esto.
+    QUÉ YA ESTÁ HECHO: cuenta de Mixpanel creada (proyecto "Finance of sports", token en
+    `js/selector.js`). 3 eventos instrumentados A MANO (nunca Autocapture, para no inflar el conteo
+    del free tier con cada click/scroll de la página): `selector_opened` (al abrir el modal),
+    `selector_step_completed` (deporte/región/país/club/ejercicio, cada vez que un paso se resuelve —
+    da el drop-off por pantalla), `selector_club_chosen` (el momento exacto de "eligió un club", en
+    `confirmar()`). Gateados por hostname igual que `logEvent()` de la Versión 216 (una sesión de
+    trabajo no es un visitante real) y con `track_pageview:false` a propósito: no duplica lo que ya
+    da gratis Cloudflare Web Analytics (Versión 166). El token de Mixpanel se probó con un POST
+    directo a `api.mixpanel.com/track` y lo aceptó (devolvió `1`) — no es secreto, mismo criterio que
+    la key pública de Supabase.
 
-    LA RECOMENDACIÓN DE LA SESIÓN DE CONSEJO: Mixpanel es la herramienta correcta para un funnel de
-    eventos como este. Al volumen de tráfico de este sitio, instrumentando a mano solo los pasos del
-    funnel (no el Autocapture de Mixpanel, que loguea cada click/scroll de la página entera y sí
-    puede inflar el conteo sin darse cuenta), el free tier (1.000.000 eventos/mes gratis, después
-    USD 0,00028/evento — ver `docs.mixpanel.com/docs/pricing`) alcanza de sobra. No hace falta migrar
-    ni duplicar lo que ya da Cloudflare Web Analytics (pageviews/referrers agregados, cookieless, sin
-    tope): la propuesta es mantener los dos — Cloudflare para tráfico agregado, Mixpanel solo para el
-    funnel del selector — en vez de que Mixpanel reemplace a Cloudflare.
-
-    LO QUE FALTA DECIDIR/HACER, para quien retome esto: (a) confirmar con Guido qué pasos exactos del
-    funnel valen la pena loguear como evento (mirar `js/selector.js` primero, no asumir la secuencia
-    desde acá — el selector es jerárquico país→club→año, ver to-do 34); (b) crear la cuenta de
-    Mixpanel; (c) instrumentar esos eventos puntuales en `js/selector.js` (mismo lugar que ya tiene
-    los 2 hooks de la Versión 216); (d) confirmar que el snippet/SDK de Mixpanel no choca con la
-    convención de `ASSET_V`/`?v=` de scripts propios (ver CLAUDE.md, gotchas de caché) si se sirve
-    como script propio en vez de vía CDN de Mixpanel.
+    LO QUE NO SE PUDO VERIFICAR TODAVÍA, y por qué: el browser pane de esta sesión bloquea
+    `cdn.mxpnl.com` (mismo trato que le da a `cloudflareinsights.com`, el beacon de Cloudflare — Chart.js
+    y Supabase, servidos igual, sí cargan bien), así que no se pudo confirmar de punta a punta que el
+    SDK cargado en un navegador real manda los 3 eventos. Además el gateo por hostname bloquea
+    cualquier prueba desde `localhost` a propósito. **Verificar recién en `financeofsports.com` real,
+    después del push**: abrir el selector, elegir un club, y mirar el Live View de Mixpanel — tiene
+    que aparecer `selector_opened` → 1-2 `selector_step_completed` → `selector_club_chosen`, en ese
+    orden, con el `origen` correcto.
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del

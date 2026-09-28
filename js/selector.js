@@ -93,6 +93,41 @@ window.CLUB_SELECTOR = (function(){
   }
   var logBusquedaTimer = null;
 
+  // FUNNEL DEL SELECTOR EN MIXPANEL (to-do 67, pedido de Guido 2026-09-28: "me gustaría ver
+  // cómo interactúa la gente con el selector"). Instrumentado A MANO, nunca con el Autocapture
+  // de Mixpanel (loguea cada click/scroll de la página entera y puede inflar el conteo de
+  // eventos sin necesidad) — a este volumen de tráfico, los eventos puntuales de acá ni se
+  // acercan al free tier de 1M eventos/mes. `track_pageview:false` a propósito: los
+  // pageviews/referrers ya los da Cloudflare Web Analytics gratis y sin tope (Versión 166), no
+  // hace falta duplicarlos acá. Mismo gateo por hostname que logEvent(), mismo motivo: una
+  // sesión de trabajo (preview local, financeofsports.com visitado a mano para debug) no es un
+  // visitante real. El token NO es secreto (a diferencia de un API Secret): es el mismo tipo de
+  // credencial pública que ya explica el comentario de supabase.js en index.html.
+  var MIXPANEL_TOKEN = '76f860e7f23b4bbd0d19cd4b2a2cb922';
+  var mixpanelReady = false;
+  function mpInit(){
+    if(mixpanelReady) return;
+    if(location.hostname !== 'financeofsports.com') return;
+    if(!window.mixpanel || !window.mixpanel.init) return;
+    window.mixpanel.init(MIXPANEL_TOKEN, { track_pageview:false, persistence:'localStorage' });
+    mixpanelReady = true;
+  }
+  function mpTrack(event, props){
+    if(location.hostname !== 'financeofsports.com') return;
+    mpInit();
+    if(!mixpanelReady) return;
+    try{ window.mixpanel.track(event, props); }catch(e){}
+  }
+  // Centraliza las 5 asignaciones de `resuelto` que había sueltas por el archivo (paso único,
+  // paso con cuerpo propio x2, paso de grilla x2) para no repetir el hook de tracking en cada
+  // una. `saltado` ya existía como concepto (ver comentario de `pieDelPaso`); acá se manda
+  // también a Mixpanel para poder ver drop-off real vs. "elegir más tarde" en el funnel.
+  function marcarResuelto(clave, saltado){
+    st[clave].resuelto = true;
+    st[clave].saltado = !!saltado;
+    mpTrack('selector_step_completed', { step:clave, origen:origen, saltado:!!saltado });
+  }
+
   var api = {
     getClub: function(){ return null; },
     pickClub: function(){ return Promise.resolve(); },
@@ -491,6 +526,7 @@ window.CLUB_SELECTOR = (function(){
     hideCoach();
     origen = desde || 'finanzas';
     modalLado = i || 0;
+    mpTrack('selector_opened', { origen:origen });
 
     // Reabrir un card ya armado no empieza de cero: vuelve a lo que ese card había
     // elegido. "Elegir otro" casi siempre es "cambiar una cosa".
@@ -674,8 +710,7 @@ window.CLUB_SELECTOR = (function(){
               // un filtro, y marcar "ligas Y clubes" es justamente la tercera opción.
               if(p.unico){
                 st[p.clave].sel = [id];
-                st[p.clave].resuelto = true;
-                st[p.clave].saltado = false;
+                marcarResuelto(p.clave, false);
                 bloques = [];
                 renderModal();
                 return;
@@ -738,8 +773,7 @@ window.CLUB_SELECTOR = (function(){
       ok.type = 'button';
       ok.disabled = !listo;
       ok.addEventListener('click', function(){
-        st[p.clave].resuelto = true;
-        st[p.clave].saltado = false;
+        marcarResuelto(p.clave, false);
         renderModal();
       });
       pie.appendChild(ok);
@@ -752,8 +786,7 @@ window.CLUB_SELECTOR = (function(){
             if(b.kind === 'liga') b.years = [ultimaTemporada(b.league)].filter(function(y){ return y != null; });
             else b.pares = b.pares.map(function(par){ return [par[0], null]; });
           });
-          st[p.clave].resuelto = true;
-          st[p.clave].saltado = true;
+          marcarResuelto(p.clave, true);
           renderModal();
         });
         pie.appendChild(reciente);
@@ -767,8 +800,7 @@ window.CLUB_SELECTOR = (function(){
     seguir.type = 'button';
     seguir.disabled = !n;
     seguir.addEventListener('click', function(){
-      st[p.clave].resuelto = true;
-      st[p.clave].saltado = false;
+      marcarResuelto(p.clave, false);
       if(p.alResolver) p.alResolver();
       renderModal();
     });
@@ -779,8 +811,7 @@ window.CLUB_SELECTOR = (function(){
     luego.title = t('sel.later.tip', 'Seguimos sin filtrar por esto. Podés volver cuando quieras.');
     luego.addEventListener('click', function(){
       st[p.clave].sel = [];
-      st[p.clave].resuelto = true;
-      st[p.clave].saltado = true;
+      marcarResuelto(p.clave, true);
       if(p.alResolver) p.alResolver();
       renderModal();
     });
@@ -1463,6 +1494,7 @@ window.CLUB_SELECTOR = (function(){
 
     pushRecent(ids[0]);
     try { localStorage.setItem(LS_CLUB, ids[0]); } catch(e){}
+    mpTrack('selector_club_chosen', { clubId:ids[0], origen:origen });
     close();
     Promise.resolve(api.pickClub(ids[0])).then(function(){
       renderButton();

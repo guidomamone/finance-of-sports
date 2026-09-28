@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 277 — to-do 67: funnel del selector instrumentado en Mixpanel
+
+- `js/selector.js`: 3 eventos nuevos (`selector_opened`, `selector_step_completed` con
+  `{step,origen,saltado}`, `selector_club_chosen` con `{clubId,origen}`), instrumentados a mano (sin
+  Autocapture) y gateados por hostname igual que `logEvent()` de la Versión 216 — no reemplaza ese
+  logging (búsquedas/comparaciones) ni a Cloudflare Web Analytics (pageviews/referrers,
+  `track_pageview:false` a propósito). Las 5 asignaciones sueltas de `resuelto`/`saltado` que había
+  en el archivo se centralizaron en un helper nuevo, `marcarResuelto()`.
+- `index.html`: `<script src="cdn.mxpnl.com/libs/mixpanel-2-latest.min.js">` agregado antes de
+  `js/selector.js`. `ASSET_V` 245→246. Token del proyecto ("Finance of sports" en Mixpanel) va
+  hardcodeado en `js/selector.js`, mismo criterio que la key pública de Supabase: no es secreto.
+  Verificado con un POST directo a `api.mixpanel.com/track` (devolvió `1`, evento aceptado) — el
+  browser pane de esta sesión bloquea `cdn.mxpnl.com` (mismo trato que le da a
+  `cloudflareinsights.com`), así que la carga del SDK en sí no se pudo probar en preview local, solo
+  en producción.
+
 ## Versión 276 — to-do 50: SIIS Colombia completado, León/Pachuca ya resueltos, Pumas/Tigres redactado
 
 - Boyacá Chicó suma 2021-2025 (8 ejercicios en total) y Once Caldas completa la serie 2016-2025 (la
