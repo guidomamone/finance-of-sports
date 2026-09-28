@@ -15,15 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 273 — to-do 75: Firecrawl evaluado, destraba 2 de 3 casos nuevos de tooling
+## Versión 273 — to-do 75 cerrado: Firecrawl suma a la familia 1 de `club-sourcing/SKILL.md`
 
 - Test contra San Telmo (Argentina), León y Pachuca (México, Grupo Pachuca) — los 3 casos originales
   ya se habían resuelto sin Firecrawl en sesiones posteriores. San Telmo: HIT, Firecrawl devolvió el
   menú completo en vivo (sin sección financiera, confirma el dead-end con evidencia directa). Pachuca:
   HIT parcial, `/v1/map` barrió el dominio completo (1.305 URLs), sin nada financiero — consistente
   con el blindaje del Art. 12 de LIGA MX ya documentado. León: MISS, ni Firecrawl ni un Browser pane
-  real pasan el 403 (bloqueo de IP/hosting, no WAF con challenge). Decisión de si sumarlo a la
-  escalera del skill queda para Guido, sin tocar `club-sourcing/SKILL.md` todavía.
+  real pasan el 403 (bloqueo de IP/hosting, no WAF con challenge).
+- Guido decidió sumarlo: `club-sourcing/SKILL.md` sección 0.1 (familia 1) ahora documenta `/v1/scrape`
+  (con `proxy:stealth` si falla el intento básico) para cuando el sitio da 403, y `/v1/map` para
+  confirmar el menú completo de un sitio grande en una sola llamada. Sin gate de "señal" antes de
+  probarlo (a diferencia de Exa) por lo barato que salió (~1 crédito por request).
 
 ## Versión 272 — to-do 70 cerrado: "Saved Searches" funcionando de punta a punta
 

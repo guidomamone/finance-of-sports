@@ -114,58 +114,6 @@ perdieron sino que se descartaron:
     tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
     pregunta más chica y puntual. Sin evaluar todavía.
 
-75. EVALUAR FIRECRAWL PARA LOS CASOS BLOQUEADOS POR TOOLING (no por falta de documento) — pedido de
-    Guido, 2026-09-26, después del A/B test de Haiku/Exa del mismo día (`Admin/test-barridos.md`).
-    Resuelve un problema DISTINTO al de Exa: Exa ayuda a ENCONTRAR una página que no se sabía que
-    existía; Firecrawl ayuda a LEER una página cuando ya se sabe dónde está pero `curl`/`WebFetch` no
-    puede bajarla (WAF, SPA que no renderiza sin JS, bloqueo de red puntual) — renderiza como un
-    navegador real y puede barrer un sitio entero en vez de adivinar rutas una por una.
-
-    **Diseño del test (mismo espíritu que el Test 3 de Exa: contra casos YA confirmados, no contra
-    una muestra al azar)**: los 3 casos de hoy que quedaron bloqueados por TOOLING, no por ausencia
-    de señal — confirmados en `fuentes/Argentina/<Club>.md` de cada uno:
-    - **Chacarita Juniors**: sitio bloqueado por un WAF de Vercel ("Security Checkpoint") a `curl` y
-      `WebFetch` desde el primer intento, sin ceder con espera. No se pudo confirmar el menú completo
-      del sitio — familia 1 de la escalera sigue "parcial", no agotada.
-    - **Newell's Old Boys**: mismo patrón de WAF, bloqueando específicamente `wp-content/uploads` y
-      `wp-json/wp/v2/media|search` — impide confirmar los ejercicios 2023-24 y 2024-25 (reformulado)
-      que ya se sabe que existen por prensa.
-    - **Argentinos Juniors**: 2 imágenes del informe contable 2019-20 alojadas en `i.ibb.co`
-      (`i.ibb.co/gJSBgrV/1a.jpg`, `i.ibb.co/NyhkqSZ/1b.jpg`) que `curl` devuelve con 200 pero cuerpo
-      vacío — parece bloqueo de red del entorno hacia ese host específico, no del sitio en sí.
-
-    **CORRIDO 2026-09-27, con los 3 casos originales ya resueltos sin Firecrawl** (Chacarita/
-    Newell's/Argentinos Juniors se destrabaron solos en sesiones posteriores con Browser pane real —
-    ver sus `fuentes/Argentina/<Club>.md`). Se repitió el test contra 3 casos nuevos, mismo criterio
-    (bloqueados por tooling, no por ausencia de señal): **San Telmo** (Argentina), **León** y
-    **Pachuca** (México, ambos Grupo Pachuca). Resultado, 2 de 3:
-
-    - **San Telmo: HIT.** Firecrawl bypasseó el 403 (1 crédito) y devolvió el menú COMPLETO en vivo —
-      sin ninguna sección de balance/transparencia. No es un documento nuevo, es la MISMA conclusión
-      de antes (dead-end real) pero con evidencia directa del sitio vivo en vez de solo Wayback.
-      Detalle en `fuentes/Argentina/San Telmo.md`.
-    - **Pachuca: HIT parcial.** Firecrawl bypasseó el 403 (1 crédito) y el `/v1/map` devolvió el
-      dominio completo (1.305 URLs): cero páginas financieras/institucionales. Confirma con evidencia
-      directa lo que el Art. 12 del Reglamento de Control Económico FMF/LIGA MX ya anticipaba
-      (confidencialidad regulatoria) — el sitio quedó accesible, pero no había nada que encontrar.
-      Detalle en `fuentes/México/Pachuca.md`.
-    - **León: MISS, y es un MISS informativo.** Ni Firecrawl (`scrape` con proxy `stealth`, ni
-      `/v1/map`) ni un Browser pane real (el mismo método que sí resolvió Chacarita/Newell's)
-      pasaron el 403 — es un bloqueo de IP/hosting (cPanel, "IP Deny rules"), no un WAF con challenge
-      JS. Ningún tooling disponible en el proyecto lo resuelve hoy. Detalle en `fuentes/México/León.md`.
-
-    **Conclusión sobre la herramienta**: Firecrawl SÍ tiene valor real — resuelve bloqueos que ni
-    `curl` ni un Browser pane real destraban (San Telmo), y el `/v1/map` (barrido de dominio completo
-    en una sola llamada, 1.305 URLs de Pachuca) es más rápido que navegar un sitio a mano. Pero NO es
-    magia: no pasa un bloqueo de IP/hosting real (León), y "destrabar el sitio" no equivale a
-    "encontrar el documento" cuando el bloqueo real es regulatorio (Pachuca). Costo: ~1 crédito por
-    `scrape`, el `/v1/map` no consumió crédito visible en la respuesta.
-
-    **Decisión pendiente de Guido**: ¿lo sumamos como familia nueva en la escalera de
-    `club-sourcing/SKILL.md` (0.1), o queda como herramienta manual/puntual para cuando familia 1
-    quede "parcial" por 403 confirmado (mismo patrón que Exa en 0.1b — herramienta de escalón, no de
-    default)? No se tocó el skill todavía.
-
 73. CARGAR LOS 2 BALANCES DE BOCA ENCONTRADOS VÍA WAYBACK CDX (Versión 247, 2026-09-26): Ejercicio
     118 (cerrado 30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado). **Transcriptos ya
     (2026-09-26, Mistral OCR, 101 y 128 páginas):** `Clubes/Argentina/Boca/eecc-30525418835-2022.md`

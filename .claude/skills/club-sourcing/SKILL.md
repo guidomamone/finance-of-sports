@@ -99,6 +99,19 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    patrón: el EECC real cuelga de una nota de prensa cuyo título no menciona ni "balance" ni
    "estados contables". Antes de dar un club por agotado en esta familia, mirar el post o la
    sección DE AL LADO de donde ya se encontró algo, no solo lo ya encontrado.
+
+   **Si el sitio devuelve 403/bloqueo a `curl`/`WebFetch`** (WAF, CDN, IP deny — no confundir con
+   ausencia de contenido), antes de dar la familia 1 por "parcial" probar Firecrawl (to-do 75,
+   validado 2026-09-27, `Admin/firecrawl/.env`): `POST api.firecrawl.dev/v1/scrape` con
+   `{"url":..., "formats":["markdown"]}`, agregando `"proxy":"stealth"` si el intento básico falla.
+   Costo bajo (~1 crédito por request) — no hace falta ningún gate de "señal" antes de probarlo,
+   a diferencia de Exa (ver 0.1b). Para confirmar el MENÚ COMPLETO de un sitio grande de una sola
+   vez, en vez de navegar página por página, usar `POST api.firecrawl.dev/v1/map` (barre el dominio
+   entero y devuelve todas las URLs internas — resolvió Pachuca, 1.305 URLs en una sola llamada).
+   Si Firecrawl también da 403, es señal de un bloqueo de IP/hosting real (ej. cPanel "IP Deny
+   rules"), no un challenge JS — ni un Browser pane real lo resuelve tampoco (confirmado con León,
+   2026-09-27): ahí no vale la pena seguir escalando tooling, pasar a la familia 3 (Wayback) o
+   documentar el bloqueo como confirmado.
 2. **El canal país/regulador ya documentado en este skill** (ver el índice de países más abajo), si
    existe uno para ese país. Consultarlo es SIEMPRE prioritario a seguir adivinando en el sitio del
    club: es la fuente con mejor relación señal/costo de todo el proyecto (CMF, SIIS, Companies
