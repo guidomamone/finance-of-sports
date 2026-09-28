@@ -147,10 +147,30 @@ perdieron sino que se descartaron:
     **Paso 5, tier 0 construido y probado, 2026-09-28: `tools/suggest-category-precedent.mjs`** — si
     un rubro nuevo tiene el mismo texto que uno ya categorizado en un año anterior del MISMO club, lo
     sugiere (EXACTO/PARECIDO/SIN_PRECEDENTE, separado por ingreso/gasto). Sin fallos en un barrido de
-    los 162 clubes; encontró 4 conflictos de categorización reales entre años (no de la tool) en
-    Argentinos Juniors, Estudiantes LP, Mallorca y San Lorenzo, sin revisar todavía. Documentado en
-    `club-data-mapping/SKILL.md` sección 1. Sigue esperando: tier 1 (JEV, cross-club, to-do 99) y
-    tier 2 (categorización sin precedente, siempre Claude).
+    los 162 clubes; encontró 3 conflictos de categorización REALES entre años (no de la tool, ver
+    to-do 101) y 1 falso positivo de la propia tool (colisión de normalización, mismo to-do).
+    Documentado en `club-data-mapping/SKILL.md` sección 1. Sigue esperando: tier 1 (JEV, cross-club,
+    to-do 99) y tier 2 (categorización sin precedente, siempre Claude).
+
+101. CONFLICTOS DE CATEGORIZACIÓN REALES, ENCONTRADOS PROBANDO `tools/suggest-category-precedent.mjs`
+    CONTRA LOS 162 CLUBES (2026-09-28, ver to-do 98). Mismo rubro, mismo lado (ingreso o gasto),
+    categoría DISTINTA entre ejercicios del MISMO club — no es un bug de la tool (ya separa
+    ingreso/gasto), es una inconsistencia real que quedó en los datos ya cargados. Revisar cada uno
+    contra el documento fuente y unificar (o dejar documentado por qué el cambio de categoría entre
+    años es correcto, si lo es):
+    - **Argentinos Juniors** (gasto): "Estadio y predios" -> `match_organisation_expense` en 2015,
+      `admin_general_expense` en 2019.
+    - **Estudiantes LP** (gasto): "Reconocimientos y premios" -> `match_organisation_expense` en
+      2022/2023/2024, `wages_squad` en 2025.
+    - **San Lorenzo** (gasto): "Subsedes" -> `admin_general_expense` en 2011, `other_expenses` en
+      2014.
+
+    **Además, un FALSO positivo de la propia tool, no un conflicto real**: Mallorca marcó
+    "Otros gastos de gestión corriente" (2025) en conflicto, pero son 2 rubros DISTINTOS del
+    documento ("Otros gastos de gestión corriente" y "Otros (gastos de gestión corriente)") que
+    `normalize()` colapsa al mismo texto por sacar los paréntesis — la categorización de Mallorca en
+    sí está bien, es la tool la que los confunde. Si se repite este patrón, evaluar si `normalize()`
+    necesita distinguir texto entre paréntesis en vez de descartarlo.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
