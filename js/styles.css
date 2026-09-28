@@ -818,7 +818,16 @@
     padding:8px 12px;font:inherit;font-size:13.5px;cursor:pointer;border-bottom:1px solid var(--border);}
   .liga-sim-resultado:last-child{border-bottom:none;}
   .liga-sim-resultado:hover{background:#f6f9ff;}
+  /* "Sumar toda una liga" — mismo botón, pero se distingue del de un club
+     suelto (fondo levemente distinto, negrita) para que no se confunda con un
+     club de nombre parecido. */
+  .liga-sim-resultado-liga{background:#f8f5ff;font-weight:600;}
+  .liga-sim-resultado-liga:hover{background:#efe8ff;}
   .liga-sim-sinresultados{margin:0;padding:8px 12px;font-size:12.5px;color:var(--muted);}
+  /* El dropdown de año INLINE, adentro de la frase de cada club simulado
+     ("Boca Juniors (▾2024/2025): con..."). Chico, no rompe el renglón. */
+  .liga-sim-anio-club{font:inherit;font-size:13px;font-weight:600;padding:1px 4px;
+    border:1px solid #c9a34d;border-radius:5px;background:#fff;color:#5c4300;}
   /* La fila/bloque insertado, en la tabla y en el desglose: mismo tono ámbar del
      callout, para que sea obvio de un vistazo que no es un club real de la liga. */
   tr.liga-fila-simulada{background:#fff8ea;}

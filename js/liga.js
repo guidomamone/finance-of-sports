@@ -259,15 +259,23 @@ window.LIGA_VIEW = (function(){
     render();
   }
 
-  // El ejercicio más reciente CARGADO de un club (no el más reciente que
-  // existe: el que ya está en `CLUB_GENERIC_DATA`, que es lo único que se puede
-  // simular sin volver a pedir nada). Lo usa `agregarSimulado()` cuando no se
-  // especifica año — hoy nadie elige el año del club que suma, agrega siempre
-  // el más nuevo, mismo criterio default que ya usa el selector jerárquico.
-  function ultimoAnioDe(clubId){
+  // LOS EJERCICIOS CARGADOS de un club (el que ya está en `CLUB_GENERIC_DATA`,
+  // que es lo único que se puede simular sin volver a pedir nada), descendente.
+  // `agregarSimulado()` sin año explícito usa el primero (el más nuevo) como
+  // default; el dropdown de cada línea del panel (pedido de Guido, "no puedo
+  // cambiar el año del club que agrego") ofrece el resto.
+  function aniosDisponiblesDe(clubId){
     var gd = (window.CLUB_GENERIC_DATA || {})[clubId];
     var years = gd ? Object.keys(gd.revenueLinesByYear || {}).map(Number) : [];
-    return years.length ? Math.max.apply(null, years) : null;
+    return years.sort(function(a, b){ return b - a; });
+  }
+  // "2024/2025", salvo ejercicio calendario — mismo criterio que `seasonLabel()`
+  // en js/cuenta.js, duplicado a propósito (2 líneas, no vale la pena exponer
+  // la función privada de otro archivo por esto). Se usa en el dropdown de año
+  // de cada línea simulada: no necesita el prefijo "Balance"/"Presupuesto" de
+  // `etiquetaEjercicio()`, un dropdown compacto solo necesita distinguir años.
+  function temporadaLabel(clubId, year){
+    return clubDe(clubId).fiscalYearStart === '01-01' ? String(year) : (year - 1) + '/' + year;
   }
 
   // Como `show()`, pero además calcula la(s) fila(s) simulada(s) y las deja en
@@ -313,7 +321,7 @@ window.LIGA_VIEW = (function(){
     if(st.simulados.some(function(s){ return s.clubId === clubId; })) return Promise.resolve();
     var cargar = (typeof loadClubData === 'function') ? loadClubData(clubId) : Promise.resolve();
     return Promise.resolve(cargar).then(function(){
-      var yy = year != null ? year : ultimoAnioDe(clubId);
+      var yy = year != null ? year : aniosDisponiblesDe(clubId)[0];
       var fila = (yy != null) ? filaSimulada(clubId, yy) : null;
       if(!fila){ render(); return; }
       st.simulados.push({ clubId:clubId, clubYear:yy, fila:fila });
@@ -329,6 +337,50 @@ window.LIGA_VIEW = (function(){
   function quitarUnSimulado(clubId){
     st.simulados = st.simulados.filter(function(s){ return s.clubId !== clubId; });
     render();
+  }
+  // Cambiar el ejercicio de UN club ya simulado (pedido de Guido: "puedo elegir
+  // un club pero no puedo cambiar el año"). El club ya está cargado (se agregó
+  // antes), así que recalcular es sincrónico, sin volver a pedir nada.
+  function cambiarAnioSimulado(clubId, newYear){
+    var i = -1;
+    for(var k = 0; k < st.simulados.length; k++){ if(st.simulados[k].clubId === clubId) i = k; }
+    if(i < 0) return;
+    var fila = filaSimulada(clubId, newYear);
+    if(!fila) return;
+    st.simulados[i] = { clubId:clubId, clubYear:newYear, fila:fila };
+    render();
+    api.onSimulado(st.league, st.year, st.simulados.map(function(s){
+      return { club:s.clubId, clubYear:s.clubYear };
+    }));
+  }
+
+  // "SUMAR TODA UNA LIGA" (pedido de Guido: "quedaría muy cool tener toda la
+  // liga argentina y brasilera juntas"). A diferencia de un club suelto, ACÁ NO
+  // HACE FALTA `loadClubData()` de nadie: `data/rankings/<liga>.js` ya trae
+  // cada fila calculada (`{id, revenue, reportType, sourceId, mix}`, el mismo
+  // shape que arma `filaSimulada()`) — insertar una liga entera es tan barato
+  // como insertar un club. Un club que YA está en el ranking real de la liga
+  // que se está mirando (o ya simulado) no se duplica.
+  function agregarLigaCompleta(leagueId, year){
+    return loadRanking(leagueId).then(function(){
+      var yy = (year != null && rankingDe(leagueId, year)) ? Number(year) : anioPorDefecto(leagueId);
+      var origen = rankingDe(leagueId, yy);
+      if(!origen) return;
+      var actual = rankingDe(st.league, st.year);
+      var yaEstan = {};
+      (actual ? actual.clubs : []).forEach(function(f){ yaEstan[f.id] = true; });
+      st.simulados.forEach(function(s){ yaEstan[s.clubId] = true; });
+      origen.clubs.forEach(function(f){
+        if(yaEstan[f.id]) return;
+        yaEstan[f.id] = true;
+        st.simulados.push({ clubId:f.id, clubYear:yy,
+          fila:{ id:f.id, revenue:f.revenue, reportType:f.reportType, sourceId:f.sourceId, mix:f.mix, year:yy, simulado:true } });
+      });
+      render();
+      if(st.simulados.length) api.onSimulado(st.league, st.year, st.simulados.map(function(s){
+        return { club:s.clubId, clubYear:s.clubYear };
+      }));
+    });
   }
 
   // --------------------------------------------------------------------------
@@ -387,10 +439,31 @@ window.LIGA_VIEW = (function(){
     st.simulados.forEach(function(sim){
       var pos = filas.indexOf(sim.fila) + 1;
       var linea = el('div', 'liga-sim-linea');
-      linea.appendChild(el('span', 'liga-sim-texto',
-        nombreDe(sim.clubId) + ' (' + etiquetaEjercicio(sim.fila, sim.clubYear) + '): '
+      var texto = el('span', 'liga-sim-texto');
+      texto.appendChild(document.createTextNode(nombreDe(sim.clubId) + ' ('));
+      // EL AÑO ES UN DROPDOWN, no texto fijo (pedido de Guido: "puedo elegir un
+      // club pero no puedo cambiar el año del club a agregar"). Solo si el club
+      // tiene más de un ejercicio cargado — con uno solo no hay nada que elegir.
+      var years = aniosDisponiblesDe(sim.clubId);
+      if(years.length > 1){
+        var selAnio = document.createElement('select');
+        selAnio.className = 'liga-sim-anio-club';
+        years.forEach(function(y){
+          var o = document.createElement('option');
+          o.value = y;
+          o.textContent = temporadaLabel(sim.clubId, y);
+          if(y === sim.clubYear) o.selected = true;
+          selAnio.appendChild(o);
+        });
+        selAnio.addEventListener('change', function(){ cambiarAnioSimulado(sim.clubId, Number(selAnio.value)); });
+        texto.appendChild(selAnio);
+      } else {
+        texto.appendChild(document.createTextNode(etiquetaEjercicio(sim.fila, sim.clubYear)));
+      }
+      texto.appendChild(document.createTextNode('): '
         + t('liga.sim.con', 'con') + ' ' + fmtM(sim.fila.revenue) + ', '
         + t('liga.sim.seria', 'sería el') + ' ' + pos + '° ' + t('liga.sim.de', 'de') + ' ' + n + '.'));
+      linea.appendChild(texto);
       var quitarUno = el('button', 'liga-sim-quitar-uno', '✕');
       quitarUno.type = 'button';
       quitarUno.title = t('liga.sim.quitarUno', 'Sacar este club de la simulación');
@@ -426,7 +499,7 @@ window.LIGA_VIEW = (function(){
     var input = document.createElement('input');
     input.type = 'text';
     input.className = 'liga-sim-input';
-    input.placeholder = t('liga.sim.buscarPlaceholder', 'Sumar un club a este ranking…');
+    input.placeholder = t('liga.sim.buscarPlaceholder', 'Sumar un club o una liga entera a este ranking…');
     input.value = buscadorQ;
     var resultados = el('div', 'liga-sim-resultados');
 
@@ -448,8 +521,23 @@ window.LIGA_VIEW = (function(){
         b.addEventListener('click', function(){ buscadorQ = ''; agregarSimulado(id, null); });
         resultados.appendChild(b);
       });
-      if(!candidatos.length){
-        resultados.appendChild(el('p', 'liga-sim-sinresultados', t('liga.sim.sinresultados', 'Ningún club coincide.')));
+      // TO-DO 83, tercera parte (pedido de Guido: "quedaría muy cool tener toda
+      // la liga argentina y brasilera juntas... habilitaría ligas" en este mismo
+      // buscador). Excluye la liga que se está mirando: sumarse a sí misma no
+      // significa nada.
+      var candidatosLigas = Object.keys(window.LEAGUES || {}).filter(function(lid){
+        return lid !== st.league && norm(ligaDe(lid).name).indexOf(q) >= 0;
+      }).sort(function(a, b){ return ligaDe(a).name.localeCompare(ligaDe(b).name, 'es'); }).slice(0, 4);
+      candidatosLigas.forEach(function(lid){
+        var co = paisDe(lid);
+        var b = el('button', 'liga-sim-resultado liga-sim-resultado-liga',
+          (co.flag || '🏆') + ' ' + ligaDe(lid).name + ' — ' + t('liga.sim.ligaCompleta', 'liga completa'));
+        b.type = 'button';
+        b.addEventListener('click', function(){ buscadorQ = ''; agregarLigaCompleta(lid, null); });
+        resultados.appendChild(b);
+      });
+      if(!candidatos.length && !candidatosLigas.length){
+        resultados.appendChild(el('p', 'liga-sim-sinresultados', t('liga.sim.sinresultados', 'Ningún club o liga coincide.')));
       }
     }
     input.addEventListener('input', function(){ buscadorQ = input.value; pintarResultados(); });

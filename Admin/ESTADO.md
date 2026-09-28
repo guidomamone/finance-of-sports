@@ -326,11 +326,13 @@ se reescribe, no se acumula.
   Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
   Finanzas del primer club de esa liga por orden alfabético. No necesita club
   activo.
-- SIMULAR CLUBES EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-283, to-do 83) — por ingresos, no
-  predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, botón "¿Cómo le
-  iría en otra liga?" con el club activo; (b) desde CUALQUIER liga, un buscador ("Sumar un club a
-  este ranking…") para insertar uno o más clubes que ni siquiera están cargados (se bajan con
-  `loadClubData()` antes de calcular). Cada club insertado se dibuja distinto (barra translúcida,
+- SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
+  ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, botón
+  "¿Cómo le iría en otra liga?" con el club activo; (b) desde CUALQUIER liga, un buscador ("Sumar un
+  club o una liga entera…") que acepta tanto un club suelto (se baja con `loadClubData()` antes de
+  calcular, y su ejercicio queda editable con un dropdown inline) como una LIGA COMPLETA (inserta
+  TODOS sus clubes de una, reusando `data/rankings/<liga>.js` ya calculado — no baja nada, por eso
+  esos clubes no tienen dropdown de año). Cada club insertado se dibuja distinto (barra translúcida,
   fondo ámbar, badge "(simulado)") y NUNCA cuenta para los totales/cobertura reales de esa liga.
   Mientras hay algo simulado, un dropdown deja cambiar de liga sin perder los clubes, y "Volver a
   Ligas" reabre el picker con ellos en cola en vez de resetear todo. Se guarda solo en Mi Cuenta

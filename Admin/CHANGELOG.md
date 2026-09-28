@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 285 — to-do 83, dos pedidos más: año editable y sumar una liga entera
+
+- **El año de un club recién sumado ahora es un dropdown editable**, adentro de la misma frase
+  ("Racing Club (▾2019/2020): con..."), no texto fijo — pedido de Guido: "puedo elegir un club pero
+  no puedo cambiar el año". Solo aparece si ese club tiene más de un ejercicio cargado.
+- **"Sumar toda una liga" en el mismo buscador** ("quedaría muy cool tener toda la liga argentina y
+  brasilera juntas"): buscar el nombre de una liga (no solo de un club) la inserta ENTERA — todos
+  sus clubes, de una. A diferencia de sumar un club suelto, esto NO baja ningún
+  `data/<club>-data.js`: reusa `data/rankings/<liga>.js`, que ya trae cada fila calculada — insertar
+  10-20 clubes de golpe es tan barato como insertar 1. Por eso esos clubes no tienen el dropdown de
+  año (no se les cargó el detalle por ejercicio, no hay entre qué elegir) — trade-off aceptado a
+  propósito por la diferencia de costo.
+
 ## Versión 284 — fix real: `--redo-mistral-scanned` podía borrar transcripciones sin reemplazo
 
 - **Incidente, 2026-09-28**: Guido corrió `node tools/gemini-transcribe.mjs --redo-mistral-scanned`
