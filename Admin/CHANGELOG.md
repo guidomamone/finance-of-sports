@@ -15,6 +15,23 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 283 — to-do 83, segunda parte: "sumar uno o más equipos" desde Ligas
+
+- Al ver cualquier liga, un buscador nuevo ("Sumar un club a este ranking…") deja insertar cualquier
+  club del sitio — no hace falta venir de Finanzas. A diferencia de ese camino, el club acá NO está
+  cargado: se baja su `data/<club>-data.js` con `loadClubData()` (de index.html, reusada igual que
+  `computeYearGeneric`) antes de poder calcular su ingreso.
+- `st.simulado` (un objeto) pasa a ser `st.simulados` (array) en todo `js/liga.js` — generaliza el
+  camino de la Versión 281/282 en vez de duplicarlo: 1 club sigue siendo el caso normal, solo que
+  ahora es un array de 1. El dropdown de "probar en otra liga" y "Volver a Ligas con el club en cola"
+  ahora llevan TODOS los clubes simulados, no solo uno.
+- Guardado en Mi Cuenta: `state.clubes` es siempre un array (mismo criterio, ni el caso de 1 club
+  guarda distinto). El label reusa el patrón de `labelForLado()` (Comparar): hasta 3 nombres unidos
+  con "+", de ahí para arriba "2 primeros + N más".
+- **Bug real encontrado y corregido en el camino**: `notifyStateChange()` en `js/cuenta.js` validaba
+  `!!state.club`, que con el `state.club` singular ya reemplazado por `state.clubes` daba `false`
+  SIEMPRE — sin el fix, ninguna simulación se hubiera guardado nunca, en silencio, sin error visible.
+
 ## Versión 282 — to-do 83: 2 ajustes tras probarlo en producción
 
 - **"Volver a Ligas" durante una simulación ya no te saca del flujo**: antes reseteaba todo y había

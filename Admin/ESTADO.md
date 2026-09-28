@@ -326,12 +326,17 @@ se reescribe, no se acumula.
   Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
   Finanzas del primer club de esa liga por orden alfabético. No necesita club
   activo.
-- "¿CÓMO LE IRÍA ESTE CLUB EN OTRA LIGA?" (Versión 281, to-do 83): desde Finanzas, botón que
-  inserta el club activo en el ranking de OTRA liga, por ingresos — simulación, no predicción
-  deportiva. La fila simulada se dibuja distinta (barra translúcida, fondo ámbar, badge) y NUNCA
-  cuenta para los totales/cobertura reales de esa liga. Se guarda solo en Mi Cuenta (to-do 70),
-  mismo mecanismo que cualquier otra búsqueda. Solo disponible en modo "Año a año" (no "Por
-  gestión"): el motor real compara un ejercicio puntual, no un rango.
+- SIMULAR CLUBES EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-283, to-do 83) — por ingresos, no
+  predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, botón "¿Cómo le
+  iría en otra liga?" con el club activo; (b) desde CUALQUIER liga, un buscador ("Sumar un club a
+  este ranking…") para insertar uno o más clubes que ni siquiera están cargados (se bajan con
+  `loadClubData()` antes de calcular). Cada club insertado se dibuja distinto (barra translúcida,
+  fondo ámbar, badge "(simulado)") y NUNCA cuenta para los totales/cobertura reales de esa liga.
+  Mientras hay algo simulado, un dropdown deja cambiar de liga sin perder los clubes, y "Volver a
+  Ligas" reabre el picker con ellos en cola en vez de resetear todo. Se guarda solo en Mi Cuenta
+  (to-do 70) como `state.clubes` (siempre array, mismo caso con 1 club o con varios). El botón de
+  Finanzas solo aparece en modo "Año a año" (no "Por gestión"): el motor real compara un ejercicio
+  puntual, no un rango.
 - UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
   de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
   plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →

@@ -783,24 +783,42 @@
   .liga-avisos{margin-top:4px;}
   .liga-avisos h3{font-size:14px;margin:0 0 7px;}
   .liga-avisos p{color:var(--muted);font-size:12px;line-height:1.55;margin:0 0 5px;}
-  /* TO-DO 83: "¿cómo le iría este club en otra liga?". El callout es EL punto de
-     la feature (la frase "sería el Nº de M"), así que va destacado arriba de
-     todo, no como una salvedad más — fondo ámbar, mismo tono que ya usa
+  /* TO-DO 83: "¿cómo le iría este/estos club(es) en otra liga?". `.liga-sim-panel`
+     es el contenedor neutro (siempre visible, aunque no haya nada simulado — ahí
+     vive el buscador de "sumar un club"); `.liga-sim-activa` es la caja ámbar de
+     adentro, SOLO cuando hay algo simulado — mismo tono que ya usa
      `.liga-doc.presu`/`.liga-doc.nooficial` para "esto no es un dato normal de
      la liga". */
-  .liga-sim-callout{background:#fff8ea;border:1px solid #e3c07a;border-radius:10px;
-    padding:14px 16px;margin-bottom:18px;}
-  .liga-sim-texto{margin:0 0 6px;font-size:14.5px;font-weight:600;color:#5c4300;line-height:1.5;}
-  .liga-sim-chico{margin:0 0 10px;font-size:12px;color:#8a6c1a;line-height:1.5;}
-  .liga-sim-quitar, .liga-sim-cancelar{background:none;border:1px solid #c9a34d;border-radius:6px;
+  .liga-sim-panel{margin-bottom:18px;}
+  .liga-sim-activa{background:#fff8ea;border:1px solid #e3c07a;border-radius:10px;
+    padding:14px 16px;margin-top:12px;}
+  .liga-sim-linea{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px;}
+  .liga-sim-texto{margin:0;font-size:14.5px;font-weight:600;color:#5c4300;line-height:1.5;}
+  .liga-sim-chico{margin:2px 0 10px;font-size:12px;color:#8a6c1a;line-height:1.5;}
+  .liga-sim-quitar, .liga-sim-cancelar, .liga-sim-quitar-uno{background:none;border:1px solid #c9a34d;border-radius:6px;
     padding:5px 10px;font:inherit;font-size:12.5px;font-weight:600;color:#5c4300;cursor:pointer;}
-  .liga-sim-quitar:hover, .liga-sim-cancelar:hover{background:#f3e2b8;}
+  .liga-sim-quitar:hover, .liga-sim-cancelar:hover, .liga-sim-quitar-uno:hover{background:#f3e2b8;}
   .liga-sim-cancelar{margin-top:8px;}
+  .liga-sim-quitar-uno{padding:2px 7px;flex-shrink:0;}
   /* El dropdown de "probar en otra liga" y "Quitar simulación", en una misma fila. */
   .liga-sim-fila{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
   .liga-sim-liga{display:flex;align-items:center;gap:7px;}
   .liga-sim-liga-l{font-size:12px;color:#8a6c1a;text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
   .liga-sim-liga select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid #c9a34d;border-radius:7px;background:#fff;max-width:260px;}
+  /* EL BUSCADOR DE "SUMAR UN CLUB" (segunda parte del to-do 83): caja blanca
+     normal, no ámbar — es una acción disponible siempre, no un aviso. */
+  .liga-sim-buscador{position:relative;max-width:360px;}
+  .liga-sim-input{width:100%;box-sizing:border-box;font:inherit;font-size:13.5px;padding:9px 12px;
+    border:1px solid var(--border);border-radius:8px;background:#fff;}
+  .liga-sim-input:focus{outline:none;border-color:var(--azul);}
+  .liga-sim-resultados:empty{display:none;}
+  .liga-sim-resultados{margin-top:4px;border:1px solid var(--border);border-radius:8px;overflow:hidden;
+    background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.06);}
+  .liga-sim-resultado{display:block;width:100%;text-align:left;background:none;border:none;
+    padding:8px 12px;font:inherit;font-size:13.5px;cursor:pointer;border-bottom:1px solid var(--border);}
+  .liga-sim-resultado:last-child{border-bottom:none;}
+  .liga-sim-resultado:hover{background:#f6f9ff;}
+  .liga-sim-sinresultados{margin:0;padding:8px 12px;font-size:12.5px;color:var(--muted);}
   /* La fila/bloque insertado, en la tabla y en el desglose: mismo tono ámbar del
      callout, para que sea obvio de un vistazo que no es un club real de la liga. */
   tr.liga-fila-simulada{background:#fff8ea;}
