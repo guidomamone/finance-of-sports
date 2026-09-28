@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 287 — footer actualizado: ya no habla de votar en elecciones de club
+
+- `footer.text`/`footer.note` (`index.html` + `data/lang/en.js`) describían el concepto original
+  del sitio ("El deporte en Números", ayudar a socios a votar informados) y "MVP · datos
+  placeholder · versión de prueba" — ninguna de las dos cosas es cierta hoy (162 clubes con datos
+  reales, sitio pivotado a comparador financiero). Texto nuevo, mismo criterio que ya usa
+  `terminos.html`: qué es el sitio, de dónde salen los números, que no representa a ningún club/
+  liga/federación.
+
 ## Versión 286 — to-do 94: páginas de privacidad y términos, para publicar el login de Google
 
 - `privacidad.html`/`terminos.html` nuevas, en la raíz (contenido para el visitante, no interno —
