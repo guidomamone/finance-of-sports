@@ -792,7 +792,21 @@ como **P1** (`checkGenerados()`): no se puede pushear con uno desfasado.
 
 **Y acordate de la fila de `data/club-leagues/<iso2>.js`**: sin ella el club no integra ninguna
 liga, así que no aparece en ningún ranking aunque el generador haya corrido. La auditoría también
-la cuenta (`liga-sin-verificar`, P3).
+la cuenta (`liga-sin-verificar`, P3). Sigue siendo a mano y verificado, pero antes de salir a buscar
+en qué liga jugó un club-año, probar el pipeline del to-do 95 (evaluado 2026-09-28: un scraper masivo
+tipo "precargar toda la liga" no rinde con las fuentes disponibles — Wikipedia/TheSportsDB/RSSSF —,
+así que esto es una caché de lo ya buscado, no un reemplazo de la verificación):
+
+1. `node tools/lookup-club-league.js "<club>" --pais <iso2>` — si esa liga-temporada ya está
+   cacheada, ahí está la respuesta.
+2. Si no, `node tools/resolve-wikipedia-season-page.mjs "<liga>" <año>` — encuentra el título EXACTO
+   de la página de esa temporada en Wikipedia (la convención de título varía por liga, sin fórmula
+   fija). No elegir el resultado #1 a ciegas: un nombre ambiguo trae también otros torneos.
+3. `node tools/fetch-club-league-reference.mjs "<título>" <leagueId> <año> --pais <iso2>` — baja el
+   roster completo de esa temporada (wikitext crudo, no HTML renderizado ni un resumen de modelo) y
+   lo cachea en `tools/club-league-reference/<iso2>.json`.
+4. Confirmar el club puntual contra ese roster y recién ahí escribir la fila en
+   `data/club-leagues/<iso2>.js`, con su nota de verificación de siempre.
 
 **Y si el club es NUEVO (no un ejercicio nuevo de uno ya cargado): chequeá el `brandColor` elegido
 contra el escudo real, antes de cerrar la sesión.** El proceso de la sección 3 (punto 1b) resuelve el

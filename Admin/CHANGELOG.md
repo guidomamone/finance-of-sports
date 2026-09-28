@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 294 — to-do 98, paso 5 (tier 0): sugerir categoría por precedente del mismo club, y skills al día
+
+- **`tools/suggest-category-precedent.mjs` nuevo**: si un rubro nuevo tiene el mismo texto que uno ya
+  categorizado en un año anterior del MISMO club, lo sugiere en vez de que Claude decida de cero.
+  Tres niveles (EXACTO/PARECIDO/SIN_PRECEDENTE), nunca escribe datos. Bug real encontrado
+  probándola contra Boca ("Futbol Femenino" es ingreso en un año y gasto en otros, mismo texto) —
+  corregido separando el precedente de ingresos y gastos (antes se mezclaban en un mapa). Barrido
+  completo de los 162 clubes sin fallos; encontró 4 conflictos de categorización reales y genuinos
+  (mismo rubro, mismo lado, categoría distinta entre años) en Argentinos Juniors, Estudiantes LP,
+  Mallorca y San Lorenzo — anotados para revisar en una sesión futura, no tocados hoy.
+- **Skills actualizados con los tools nuevos de esta sesión** (`club-data-mapping`,
+  `club-or-year-onboarding`): `extract-table-rows.mjs`, `sum-check.mjs` y
+  `suggest-category-precedent.mjs` en el flujo de categorización/verificación; el pipeline de 3 tools
+  del to-do 95 (`resolve-wikipedia-season-page.mjs` → `fetch-club-league-reference.mjs` →
+  `lookup-club-league.js`) en el paso de `data/club-leagues/<iso2>.js`.
+
 ## Versión 293 — Once Caldas Ejercicio 2024 cargado: validación real del to-do 98 (y el to-do 95 en simultáneo)
 
 - **to-do 98 validado con un onboarding real**: Once Caldas Ejercicio 2024 (Colombia), usando

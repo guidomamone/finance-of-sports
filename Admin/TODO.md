@@ -144,6 +144,14 @@ perdieron sino que se descartaron:
     Mistral para marcar subtotales salió inconsistente en este mismo documento, sin patrón fijo, así
     que un script no puede inferir la jerarquía solo). Usado y probado en el onboarding de arriba.
 
+    **Paso 5, tier 0 construido y probado, 2026-09-28: `tools/suggest-category-precedent.mjs`** — si
+    un rubro nuevo tiene el mismo texto que uno ya categorizado en un año anterior del MISMO club, lo
+    sugiere (EXACTO/PARECIDO/SIN_PRECEDENTE, separado por ingreso/gasto). Sin fallos en un barrido de
+    los 162 clubes; encontró 4 conflictos de categorización reales entre años (no de la tool) en
+    Argentinos Juniors, Estudiantes LP, Mallorca y San Lorenzo, sin revisar todavía. Documentado en
+    `club-data-mapping/SKILL.md` sección 1. Sigue esperando: tier 1 (JEV, cross-club, to-do 99) y
+    tier 2 (categorización sin precedente, siempre Claude).
+
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
