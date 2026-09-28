@@ -15,6 +15,29 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 304 — `tools/claude-api-transcribe.mjs`: la 3ra API conectada de verdad (Claude, API directa), y el paso 2 del HTML al día
+
+- **`tools/thirdapi-transcribe.mjs` (placeholder de la Versión 301) renombrado a `tools/claude-api-transcribe.mjs`
+  y conectado de verdad**: Guido decidió Claude como 3ra API. Llama a `POST /v1/messages` con el PDF
+  adjunto (`claude-sonnet-5-5`, $2/$10 por MTok) por HTTP crudo con `fetch()` (sin SDK, mismo
+  criterio que Mistral/Gemini: este proyecto no tiene `package.json` ni `node_modules`, a propósito),
+  **streameado** (no una espera simple) porque una transcripción completa puede generar decenas de
+  miles de tokens de salida y a la velocidad normal de generación eso puede tardar varios minutos —
+  una respuesta no streameada se corta sola antes de terminar. Mismo prompt, mismo formato de
+  resultado/fallidos.jsonl y mismo chequeo de fidelidad que `gemini-transcribe.mjs`, para que
+  `tools/onboard.mjs` no tenga que tratarla distinto. `tools/onboard.mjs` actualizado con el nuevo
+  nombre; `Admin/claude-api/.env` (antes `Admin/thirdapi/.env`) sumado a `.gitignore`.
+- **Todavía sin key ni test de calidad propio** — Guido va a abrir la API key de Anthropic
+  (aclarado: es facturación aparte, pago por uso, NO consume los tokens semanales de su plan de
+  Claude Code/Claude.ai) y correr su propia prueba antes de confiar en esto para casos reales.
+- **`Admin/COMO-CORRE-EL-PROYECTO.html`, "El paso 2, en detalle" actualizado**: la tabla y el texto
+  describían el flujo viejo (Gemini solo redoing escaneos, subagente de Claude como única red de
+  contención) — ahora describe el flujo real desde la Versión 302/303: Mistral y Gemini SIEMPRE en
+  paralelo + comparación, Claude API como reemplazo puntual cuando Gemini rechaza por RECITATION, y
+  el subagente completo como última red.
+- **Mergeado `worktree-todo-106-mistral-gemini`** (sesión terminada): el test real de 8 escaneos que
+  fundamenta la Versión 303, con `Admin/test-mistral-gemini-escaneos.md` como detalle completo.
+
 ## Versión 303 — to-do 106, la corrida real: head-to-head Mistral vs. Gemini en 8 escaneos (8 subagentes, ~1.660 celdas), confirma "ninguna es mejor"
 
 - **La corrida ampliada que la Versión 302 (abajo) anticipaba con un solo documento**, ahora hecha

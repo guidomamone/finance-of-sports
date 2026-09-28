@@ -276,8 +276,8 @@ function transcribeIfMissing(pdfPath, mdPath, { dryRun, label, scriptRelPath, ex
   return existsSync(mdPath);
 }
 
-// Cambiar acá cuando se elija/renombre la 3ra API (ver tools/thirdapi-transcribe.mjs).
-const THIRDAPI_SCRIPT = 'tools/thirdapi-transcribe.mjs';
+// 3ra API elegida (2026-09-29): Claude, por API directa de Anthropic -- ver tools/claude-api-transcribe.mjs.
+const THIRDAPI_SCRIPT = 'tools/claude-api-transcribe.mjs';
 
 // Gemini rechaza ~1 de cada 4 documentos con `finishReason: RECITATION` (falso positivo de
 // copyright de Google, no un problema del documento -- Admin/test-costo-transcripcion.md). Con el
