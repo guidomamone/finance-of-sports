@@ -112,6 +112,12 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    rules"), no un challenge JS — ni un Browser pane real lo resuelve tampoco (confirmado con León,
    2026-09-27): ahí no vale la pena seguir escalando tooling, pasar a la familia 3 (Wayback) o
    documentar el bloqueo como confirmado.
+
+   **Portal sin link de descarga directo (botón dispara un flujo JS con token, no una URL fija)**:
+   `grep` los bundles JS que carga la página buscando el endpoint real detrás del botón — suele ser
+   un token temporario (`GetValetKey`/similar) + un segundo endpoint que lo consume. Con eso se baja
+   el archivo con `curl` puro, sin sesión ni login (ver `fuentes/Argentina/River.md` para un caso
+   completo, reusable para cualquier portal con esta forma).
 2. **El canal país/regulador ya documentado en este skill** (ver el índice de países más abajo), si
    existe uno para ese país. Consultarlo es SIEMPRE prioritario a seguir adivinando en el sitio del
    club: es la fuente con mejor relación señal/costo de todo el proyecto (CMF, SIIS, Companies
@@ -121,6 +127,11 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    SOLO el de tu país, no hace falta abrir los 28 restantes.** Antes vivían las 29 secciones juntas
    en este mismo archivo (123 KB); un agente sourceando Argentina no tenía por qué cargar qué pasa en
    Grecia. El índice completo está más abajo, después de la sección 0.3.
+
+   **Si el club emitió deuda pública alguna vez (obligaciones negociables/bonos)**, sumar el
+   organismo de valores del país (CNV en Argentina, CVM en Brasil, CNMV en España, SEC en EE.UU.,
+   etc.) — es un canal distinto del registro de asociaciones civiles/sociedades, con su propio
+   régimen de disclosure, a veces más completo (ver `fuentes/Argentina/River.md`).
 
 
 3. **Wayback Machine, CDX API sobre el DOMINIO COMPLETO** del club (`matchType=domain`), no solo la

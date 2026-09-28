@@ -104,6 +104,10 @@ Admin/firecrawl/.env
 # capa de sourcing en el to-do 80 (2026-09-27).
 Admin/twitterapiio/.env
 
+# Misma excepción: Admin/jev/.env tiene la API key de Jev (TypeSafe AI, docs.typesafe.ai),
+# evaluada para categorizar rubros de ingresos/gastos en onboarding (to-do 74, 2026-09-28).
+Admin/jev/.env
+
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).
 # EL ERROR QUE CORRIGE: destrackear resolvía la publicación al precio de perder el

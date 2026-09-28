@@ -54,6 +54,52 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+97. EL PIPELINE DE TRANSCRIPCIÓN (Mistral/Gemini) NO ACTUALIZA NINGÚN INVENTARIO — evaluar si
+    conviene que lo haga (pregunta de Guido, 2026-09-28). Lo que hay hoy: `tools/mistral-ocr-
+    transcribe.mjs` y `tools/gemini-transcribe.mjs` solo appendean a `Admin/{mistral,gemini}/
+    resultados.jsonl` y `fallidos.jsonl` (qué PDF se transcribió, costo, tiempo) — ninguno de los 2
+    toca `Admin/inventario-pendiente.md`, que es el archivo que responde "¿qué hay transcripto y
+    todavía no cargado al sitio?". Y ese archivo lo dice él mismo en su cabecera: es **"una FOTO, no
+    un archivo vivo"**, armado a mano el 2026-09-25 (barrido de filesystem + 2 agentes Explore) — hoy
+    ya está desactualizado: desde entonces se sumaron Grecia, Italia, Noruega, México, Boyacá Chicó,
+    Once Caldas y Estados Unidos, nada de eso reflejado ahí. EVALUAR (no construir todavía): ¿conviene
+    que los 2 scripts actualicen el inventario (o un archivo más chico/estructurado) cada vez que
+    escriben un `.md` nuevo, en vez de depender de un barrido manual que se desactualiza en días?
+    CONTRA A PESAR: el archivo actual también cruza contra `Admin/ESTADO-clubes.md` y las cabeceras de
+    `data/<clubId>-data.js` para saber qué YA está CARGADO (no solo qué está transcripto) — un update
+    automático del lado de la transcripción sería solo la mitad de la foto.
+
+96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
+    ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
+    pero al final dice 'ver los números de X'... es confuso, no queda claro si va a terminar viendo
+    todos los clubes seleccionados o solo el que dice el botón"*). CHEQUEADO EN VIVO antes de anotar
+    esto: `js/selector.js` línea ~1386 (Versión 106, 2026-09-16, commit `7450c93`) YA tiene, con 2+
+    clubes y camino "Finanzas": un texto arriba del botón ("Finanzas muestra un club por vez, así que
+    vas a ver el primero. Para verlos juntos está Comparar") Y el botón nombra el club exacto ("Ver
+    los números de Almagro", no un "X" genérico) — confirmado en local, debería verse igual en
+    producción. O sea, la ambigüedad LITERAL ya no existe tal cual — pero Guido la sintió de todos
+    modos usando el sitio real, así que la aclaración no está funcionando en la práctica. Hipótesis a
+    evaluar, sin asumir cuál es: (a) jerarquía visual invertida — el texto aclaratorio es chico/gris,
+    el botón es grande/azul, y se lee el botón primero; (b) 2 botones de peso similar (uno primario
+    para 1 club, uno secundario para "llevar los N a Comparar") no resuelve la pregunta real, que es
+    ANTES de llegar a esta pantalla. ANTES DE TOCAR CÓDIGO: preguntarle a Guido en qué pantalla/
+    dispositivo vio la confusión (para descartar mobile o una versión vieja en caché, ver CLAUDE.md
+    gotchas de caché) y qué jerarquía visual preferiría.
+
+95. EVALUAR UN ARCHIVO DE REFERENCIA CON QUÉ LIGA/TEMPORADA JUGÓ CADA CLUB CADA AÑO, EN VEZ DE
+    BUSCARLO ONLINE CADA VEZ (pedido de Guido, 2026-09-28). Mismo patrón que el to-do 91 (FX/
+    brandColor, ya cerrado y andando): hoy, para completar `data/club-leagues/<iso2>.js` (SE EDITA A
+    MANO, ver su propia cabecera) el paso de onboarding busca online en qué liga/división jugó el
+    club ese ejercicio — una búsqueda puntual por club-año que se repite cada vez, en vez de consultar
+    un archivo local. Evaluar precargar esto para TODOS los clubes que ya tenemos en PDF (sourceados o
+    cargados) desde una fuente pública (candidatos: RSSSF, tablas de temporada de Wikipedia, alguna
+    API de datos de fútbol tipo TheSportsDB). Misma arquitectura que el 91: archivo de referencia
+    FUERA de `data/` (no eager, no se sirve al visitante), consultado local antes de salir a buscar.
+    EVALUAR ANTES DE EJECUTAR: cobertura real de la fuente elegida para ligas chicas/países con menos
+    visibilidad (punto débil ya conocido de RSSSF/Wikipedia fuera de las ligas grandes), y que esto no
+    reemplaza la verificación humana del ascenso/descenso al cierre exacto del ejercicio — solo evita
+    la búsqueda repetida, mismo criterio que ya se estableció para el 91.
+
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
     para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de
