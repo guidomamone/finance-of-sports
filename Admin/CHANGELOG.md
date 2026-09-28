@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 291 — to-do 98 (paso 4) y to-do 95: prototipos probados, sin integrar todavía
+
+- **to-do 98, paso 4**: `tools/extract-table-rows.mjs` (prototipo, no integrado a ningún flujo) saca
+  las tablas Markdown de un `.md` transcripto a JSON compacto, sin convertir los números a float.
+  Detecta el separador decimal del documento automáticamente (no por país: Almagro y River/Boca,
+  mismo país, usan formatos distintos). Probado contra 6 documentos de países/formatos distintos,
+  26-96% menos caracteres según el caso. Detalle completo en el to-do 98 de `Admin/TODO.md`.
+- **to-do 95**: evaluado contra un caso difícil (Boyacá Chicó, Colombia) — Wikipedia, TheSportsDB y
+  RSSSF no alcanzan para un scraper masivo tipo "precargar toda la liga", así que no se construyó.
+  En cambio: `tools/lookup-club-league.js` + `tools/club-league-reference/` (vacío), una caché liviana
+  de lo que ya se buscó y confirmó a mano, sin el riesgo del scraper. Detalle en el to-do 95 de
+  `Admin/TODO.md` y en `tools/club-league-reference/README.md`.
+
 ## Versión 290 — limpieza de to-do list: 40 y 39 cerrados por decisión de Guido, 74+36 fusionados, 73 dividido
 
 - **to-do 40 (CMS) cerrado**: la motivación real era ahorrar tokens de sesión, no editar sin código —

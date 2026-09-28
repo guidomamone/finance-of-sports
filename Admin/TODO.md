@@ -104,10 +104,23 @@ perdieron sino que se descartaron:
     categoría nueva, o encaja en una que ya existe con otro nombre?" — eso es una decisión de DISEÑO
     del esquema del sitio, no una clasificación entre opciones fijas.
 
-    **Nada de esto es un cambio de código todavía** — es la lista de candidatos concretos que pedía
-    el to-do 85, para que Guido priorice cuáles construir. El paso 4 (extracción de tablas) es
-    probablemente el de mayor repago inmediato: no depende de sumar Jev ni de rediseñar nada, achica
-    directo cuánto documento tiene que leer Claude en CUALQUIER onboarding, no solo en los repetidos.
+    **PROTOTIPO PROBADO 2026-09-28 (paso 4)**: `tools/extract-table-rows.mjs` (sin integrar a ningún
+    flujo todavía) saca las tablas Markdown de un `.md` transcripto a JSON compacto
+    `{page, section, columns, rows}`, sin convertir los números a float (quedan como string tal cual
+    están impresos — la interpretación numérica sigue siendo de Claude, distintos documentos usan ","
+    o "." como decimal de forma distinta). Probado contra 6 documentos de países/formatos distintos
+    (Argentina x2, Italia, Noruega, Colombia, Estados Unidos): reducción de 26% a 96% según cuánta
+    prosa tiene el documento, y en el caso de Green Bay Packers conservó la tabla real de revenue
+    descartando 350+ líneas de prosa institucional. También detecta AUTOMÁTICAMENTE el separador
+    decimal del documento (2+ grupos de miles = señal inequívoca) — un mapeo por país se habría
+    equivocado: Almagro (Argentina) usa formato "21,597,931.54" mientras River y Boca, mismo país,
+    usan "334.420.749". Marca tablas "likelyRelevant" por palabras clave multi-idioma sin descartar
+    las demás (para no perder datos si el idioma de un país nuevo no está en la lista). Siguiente
+    paso: correr un onboarding real con el JSON en vez del `.md` completo y comparar el resultado.
+
+    El paso 4 (extracción de tablas) es el de mayor repago inmediato: no depende de sumar Jev ni de
+    rediseñar nada, achica directo cuánto documento tiene que leer Claude en CUALQUIER onboarding, no
+    solo en los repetidos.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
@@ -164,6 +177,20 @@ perdieron sino que se descartaron:
     visibilidad (punto débil ya conocido de RSSSF/Wikipedia fuera de las ligas grandes), y que esto no
     reemplaza la verificación humana del ascenso/descenso al cierre exacto del ejercicio — solo evita
     la búsqueda repetida, mismo criterio que ya se estableció para el 91.
+
+    **EVALUADO 2026-09-28, con un caso a propósito difícil (Boyacá Chicó, Colombia, con ascensos y
+    descensos reales 2016-2022): las 3 fuentes candidatas NO alcanzan para un scraper masivo tipo
+    "precargar toda la liga" (el patrón de `tools/brand-color-reference/`).** Wikipedia no tiene tabla
+    temporada-por-temporada para un club así, solo menciones sueltas en prosa. TheSportsDB solo
+    devuelve la liga ACTUAL, sin historial. RSSSF tiene el dato pero con problemas de encoding reales
+    ("Atl�tico") y formato inconsistente entre países — riesgo real de leer mal una fila. **Por eso NO
+    se construyó el scraper.** En cambio quedó armada una arquitectura más chica y sin ese riesgo:
+    `tools/lookup-club-league.js` + `tools/club-league-reference/<iso2>.json` (mismo shape que
+    `data/club-leagues/<iso2>.js`, para copiar directo una vez confirmado) — una CACHÉ de lo que ya se
+    buscó y confirmó a mano, no un reemplazo de la búsqueda ni del proceso de verificación. Se puebla
+    sola, entrada por entrada, a medida que el onboarding normal resuelve cada club-año — no con un
+    barrido. Vacía todavía (recién armada). Detalle del porqué en
+    `tools/club-league-reference/README.md`.
 
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
