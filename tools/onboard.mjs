@@ -271,7 +271,18 @@ function transcribeIfMissing(pdfPath, mdPath, { dryRun, label, scriptRelPath, ex
   return existsSync(mdPath);
 }
 
-function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
+// El marcador que deja CLAUDE (a mano, con el Edit tool) en el .md CANÓNICO cuando resuelve una
+// discrepancia contra el PDF -- NO lo escribe ninguna tool. Responde la pregunta real de Guido
+// ("¿el script sabe si el match es porque Mistral y Gemini coincidieron solos, o porque Claude
+// arregló algo?"): el criterio de "listo para onboardear" sigue siendo el mismo siempre (correr
+// compare-transcripts.mjs de nuevo y que dé match), nunca un flag guardado aparte que se puede
+// desincronizar del contenido real -- pero esta marca, cuando está, le dice a cualquiera que lea el
+// .md (una sesión futura, Guido) que ese match no es casualidad de que las 2 IAs acertaron solas,
+// es la firma de una revisión humana contra el documento. Convención, no mecanismo: buscar este
+// texto (o alguno con este formato) al principio del archivo.
+const RESOLVED_MARKER_REGEX = /DISCREPANCIA MISTRAL\/GEMINI RESUELTA/;
+
+function processOne(pdfPath, { club, year, dryRun, verbose = true, stage = 'full' }) {
   const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   const geminiCheckPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + GEMINI_CHECK_SUFFIX + '.md');
   const relPdf = relative(projectRoot, pdfPath);
@@ -282,30 +293,54 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
   // esto ya está cargado y verificado, y no tiene sentido gastar en Gemini si la respuesta es sí.
   const resolved = resolveClubAndYear(pdfPath, club, year);
   if (!resolved) return;
-  if (isAlreadyOnboarded(resolved.clubId, resolved.year)) {
+  // Este salto es para no GASTAR EN API (Mistral/Gemini) algo ya cargado -- por eso solo aplica a
+  // las etapas que las tocan. `--check-only`/`--onboard-only` son gratis (comparación local +
+  // prepare-onboarding.mjs), y Guido puede querer usarlos a propósito sobre un documento puntual ya
+  // cargado para probar algo (ver cabecera del archivo) -- no tiene sentido bloqueárselo. En modo
+  // lote (`--all`), el filtro de `needsWork` en main() ya saca los ya-cargados ANTES de llegar acá,
+  // así que esto no le cambia nada a esa ruta.
+  if ((stage === 'transcribe' || stage === 'full') && isAlreadyOnboarded(resolved.clubId, resolved.year)) {
     console.log(`  Ya cargado en data/${resolved.clubId}-data.js, ejercicio ${resolved.year} -- no lo toco (ni Mistral ni Gemini).`);
     return;
   }
 
-  const hasMistral = transcribeIfMissing(pdfPath, mdPath, {
-    dryRun, label: 'Transcribiendo con Mistral OCR', scriptRelPath: 'tools/mistral-ocr-transcribe.mjs',
-    extraArgs: [], alreadyMsg: 'Ya tiene .md de Mistral, no vuelvo a transcribir.',
-  });
-  const hasGemini = transcribeIfMissing(pdfPath, geminiCheckPath, {
-    dryRun, label: 'Transcribiendo con Gemini (chequeo en paralelo)', scriptRelPath: 'tools/gemini-transcribe.mjs',
-    extraArgs: ['--out-suffix', GEMINI_CHECK_SUFFIX], alreadyMsg: 'Ya tiene el chequeo de Gemini, no vuelvo a transcribir.',
-  });
+  if (stage === 'transcribe' || stage === 'full') {
+    const hasMistral = transcribeIfMissing(pdfPath, mdPath, {
+      dryRun, label: 'Transcribiendo con Mistral OCR', scriptRelPath: 'tools/mistral-ocr-transcribe.mjs',
+      extraArgs: [], alreadyMsg: 'Ya tiene .md de Mistral, no vuelvo a transcribir.',
+    });
+    const hasGemini = transcribeIfMissing(pdfPath, geminiCheckPath, {
+      dryRun, label: 'Transcribiendo con Gemini (chequeo en paralelo)', scriptRelPath: 'tools/gemini-transcribe.mjs',
+      extraArgs: ['--out-suffix', GEMINI_CHECK_SUFFIX], alreadyMsg: 'Ya tiene el chequeo de Gemini, no vuelvo a transcribir.',
+    });
+    if (stage === 'transcribe') return; // --transcribe-only: hasta acá nomás, no compara ni onboardea
+    if (dryRun) {
+      console.log(`  [dry-run] node tools/compare-transcripts.mjs "${mdPath}" "${geminiCheckPath}"`);
+      console.log(`  [dry-run] si coinciden: node tools/prepare-onboarding.mjs ${resolved.clubId} ${resolved.year} "${mdPath}"`);
+      return;
+    }
+    if (!hasMistral || !hasGemini) {
+      console.error('  Falta alguna de las 2 transcripciones -- no puedo comparar, no sigo con este documento.');
+      return;
+    }
+  } else {
+    // stage 'check' u 'onboard': asume que la transcripción YA se hizo aparte (--transcribe-only,
+    // o a mano). Si falta alguna, no hay nada que comparar todavía.
+    if (!existsSync(mdPath) || !existsSync(geminiCheckPath)) {
+      console.log(`  Falta alguna de las 2 transcripciones -- corré --transcribe-only primero (o node tools/mistral-ocr-transcribe.mjs / gemini-transcribe.mjs a mano).`);
+      return;
+    }
+  }
 
   if (dryRun) {
     console.log(`  [dry-run] node tools/compare-transcripts.mjs "${mdPath}" "${geminiCheckPath}"`);
-    console.log(`  [dry-run] si coinciden: node tools/prepare-onboarding.mjs ${resolved.clubId} ${resolved.year} "${mdPath}"`);
-    return;
-  }
-  if (!hasMistral || !hasGemini) {
-    console.error('  Falta alguna de las 2 transcripciones -- no puedo comparar, no sigo con este documento.');
+    if (stage === 'onboard') console.log(`  [dry-run] si coinciden: node tools/prepare-onboarding.mjs ${resolved.clubId} ${resolved.year} "${mdPath}"`);
     return;
   }
 
+  // El chequeo SIEMPRE se corre de nuevo acá, nunca se confía en un resultado guardado de una
+  // corrida anterior -- así, si Claude editó el .md canónico para resolver una discrepancia, este
+  // mismo comando ve el match apenas se lo vuelve a correr, sin que nadie tenga que avisarle nada.
   const cmp = runCapture('tools/compare-transcripts.mjs', [mdPath, geminiCheckPath, '--json']);
   let cmpResult;
   try { cmpResult = JSON.parse(cmp.stdout); } catch {
@@ -325,10 +360,19 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
     }
     console.log(`  PENDIENTE DE REVISIÓN -- no corro las tools de onboarding todavía. Los 2 archivos quedan`);
     console.log(`  listos (${basename(mdPath)} / ${basename(geminiCheckPath)}) para cuando convoques a Claude a resolverlo contra el PDF.`);
+    console.log(`  Cuando Claude lo resuelva (corrigiendo el .md canónico contra el PDF), que deje al principio del`);
+    console.log(`  archivo: "DISCREPANCIA MISTRAL/GEMINI RESUELTA (ver tools/compare-transcripts.mjs), <fecha>,`);
+    console.log(`  <qué celda cambió y por qué>" -- así el próximo que lea el .md sabe que el match no fue casualidad.`);
     return;
   }
 
-  console.log('  Mistral y Gemini coinciden -- sigo con las tools de onboarding.');
+  const mdContent = readFileSync(mdPath, 'utf8').slice(0, 600);
+  if (RESOLVED_MARKER_REGEX.test(mdContent)) {
+    console.log('  Mistral y Gemini coinciden (marca de resolución a mano encontrada en el .md) -- sigo con las tools de onboarding.');
+  } else {
+    console.log('  Mistral y Gemini coinciden -- sigo con las tools de onboarding.');
+  }
+  if (stage === 'check') return; // --check-only: hasta acá, no onboardea aunque haya dado match
   const res = runCapture('tools/prepare-onboarding.mjs', [resolved.clubId, String(resolved.year), mdPath]);
   if (res.code !== 0) {
     console.error(`  prepare-onboarding.mjs falló: ${res.stderr || res.stdout}`);
@@ -340,6 +384,21 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
 function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
+  // Control de etapa (pedido de Guido, 2026-09-29: poder correr el proceso en partes para probar
+  // algo puntual, no siempre de punta a punta). Sin ninguno de los 3 flags, corre las 4 etapas
+  // seguidas (comportamiento de siempre). Los 3 son excluyentes entre sí.
+  //   --transcribe-only : solo Mistral + Gemini en paralelo. No compara, no onboardea.
+  //   --check-only       : solo compara (asume que las 2 transcripciones ya existen). No onboardea.
+  //   --onboard-only     : compara de nuevo (nunca confía en un resultado viejo) y, si coincide,
+  //                        onboardea. Asume que las 2 transcripciones ya existen.
+  const stage = args.includes('--transcribe-only') ? 'transcribe'
+    : args.includes('--check-only') ? 'check'
+    : args.includes('--onboard-only') ? 'onboard'
+    : 'full';
+  // Las 2 etapas que NO llaman a ninguna API paga (check/onboard son comparación local +
+  // prepare-onboarding.mjs, ambos gratis) no necesitan el tope de costo de abajo -- ese tope existe
+  // específicamente para no disparar Mistral/Gemini de una sobre miles de documentos sin querer.
+  const costsMoney = stage === 'transcribe' || stage === 'full';
 
   if (args.includes('--all')) {
     const dirFlag = args.indexOf('--dir');
@@ -366,7 +425,7 @@ function main() {
     console.log(`${allPdfs.length} PDF encontrados bajo ${dir.replace(projectRoot + '/', '')}, ${needsWork.length} necesitan trabajo.`);
 
     const effectiveLimit = explicitLimit ?? Infinity;
-    if (!confirmed && effectiveLimit > DEFAULT_MAX_PENDING && needsWork.length > DEFAULT_MAX_PENDING) {
+    if (costsMoney && !confirmed && effectiveLimit > DEFAULT_MAX_PENDING && needsWork.length > DEFAULT_MAX_PENDING) {
       console.error(`\n${needsWork.length} documentos pendientes es más de ${DEFAULT_MAX_PENDING} -- cada uno puede disparar Mistral Y Gemini (plata real), así que no corro esto sin que lo confirmes.`);
       console.error(`Pasá --limit <=${DEFAULT_MAX_PENDING} para una tanda más chica, o --confirm si de verdad querés procesar los ${needsWork.length} de una.`);
       process.exit(1);
@@ -377,7 +436,7 @@ function main() {
     const pendingFiles = [];
     for (const pdfPath of toProcess) {
       const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-      processOne(pdfPath, { club: null, year: null, dryRun, verbose: false });
+      processOne(pdfPath, { club: null, year: null, dryRun, verbose: false, stage });
       if (!dryRun && existsSync(mdPath) && !briefingIsFresh(mdPath)) {
         pending++;
         pendingFiles.push(relative(projectRoot, pdfPath));
@@ -402,7 +461,7 @@ function main() {
     console.error(`No existe: ${pdfPath}`);
     process.exit(1);
   }
-  processOne(pdfPath, { club, year, dryRun, verbose: true });
+  processOne(pdfPath, { club, year, dryRun, verbose: true, stage });
 }
 
 main();

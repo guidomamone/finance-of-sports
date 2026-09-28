@@ -31,6 +31,19 @@
 // EXIT CODE: 0 = sin discrepancias de valor, listo para el resto del
 // pipeline mecánico. 1 = al menos una discrepancia, necesita que alguien
 // (Claude, cuando lo convoquen) la resuelva contra el PDF.
+//
+// CÓMO SE RESUELVE UNA DISCREPANCIA (pregunta real de Guido, 2026-09-29: "¿el
+// script sabe si el match es porque coincidieron solas o porque Claude
+// arregló algo?"): el criterio de "listo" es SIEMPRE correr esto de nuevo y
+// que dé match -- nunca un flag guardado aparte, que se puede desincronizar
+// del contenido real. Cuando Claude corrige la celda que estaba mal (contra
+// el PDF, nunca a ciegas) en el .md CANÓNICO, deja al principio del archivo
+// una línea "DISCREPANCIA MISTRAL/GEMINI RESUELTA (ver tools/compare-
+// transcripts.mjs), <fecha>, <qué cambió y por qué>" -- tools/onboard.mjs
+// busca ese texto y, si está, lo dice al confirmar el match. Es una
+// convención para que cualquiera que lea el .md sepa que ese match no es
+// casualidad de que las 2 IAs acertaron solas, no un mecanismo que bloquee
+// nada si falta.
 // ============================================================================
 
 import { execFileSync } from 'node:child_process';
