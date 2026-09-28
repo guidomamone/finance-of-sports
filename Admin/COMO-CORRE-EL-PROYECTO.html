@@ -519,22 +519,66 @@
 
   <div class="col">
     <h3 style="font-size:18px;margin:26px 0 6px;font-weight:600;">De punta a punta, en una terminal nueva</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Lo que hay que tipear, en orden, arrancando de cero (sin ninguna sesión de Claude Code de por medio).</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Lo que hay que tipear, arrancando de cero (sin ninguna sesión de Claude Code de por medio). Separado en bloques independientes — para probar algo puntual no hace falta correr todo de punta a punta, cada bloque de abajo se puede tipear solo.</p>
   </div>
   <pre class="term"><code><span class="rem"># 1. pararse en la carpeta del proyecto</span>
-cd /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports
+cd /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports</code></pre>
 
-<span class="rem"># 2. confirmar que las API keys están (si falta alguna, pedírsela a Guido)</span>
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Proceso completo, de punta a punta</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Mistral → Gemini en paralelo → comparar → onboardear lo que coincida (nativo o ya resuelto a mano). Club y año se adivinan solos por la carpeta/nombre del archivo — si hay ambigüedad, el comando lo dice y pide <code>--club</code>/<code>--year</code> explícito en vez de arriesgar.</p>
+  </div>
+  <pre class="term"><code><span class="rem"># confirmar que las API keys están (si falta alguna, pedírsela a Guido)</span>
 ls Admin/mistral/.env Admin/gemini/.env
 
-<span class="rem"># 3. Mistral OCR, el default — esta corrida hace hasta 150 documentos</span>
-node tools/mistral-ocr-transcribe.mjs --all --limit 150
+<span class="rem"># un documento nuevo</span>
+node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
 
-<span class="rem"># 4. Gemini re-hace SOLO lo que Mistral marcó como escaneo</span>
-node tools/gemini-transcribe.mjs --redo-mistral-scanned
+<span class="rem"># o una carpeta entera de una vez (más de 50 documentos pendientes pide --confirm,</span>
+<span class="rem"># es plata real — ver el aviso que tira el propio comando si pasa de ahí)</span>
+node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;"</code></pre>
 
-<span class="rem"># 5. lo que ni Mistral ni Gemini pudieron: queda para un subagente de Claude</span>
-node tools/gemini-transcribe.mjs --pendientes-claude</code></pre>
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Solo Mistral</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">El default, el más barato, sin el filtro de copyright de Gemini.</p>
+  </div>
+  <pre class="term"><code>node tools/mistral-ocr-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
+
+<span class="rem"># o en lote</span>
+node tools/mistral-ocr-transcribe.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;" [--limit 150]</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Solo Gemini</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;"><code>--out-suffix</code> transcribe a un archivo APARTE (<code>.gemini-check.md</code>), sin pisar el de Mistral — es la transcripción EN PARALELO para comparar, no un reemplazo.</p>
+  </div>
+  <pre class="term"><code>node tools/gemini-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --out-suffix .gemini-check</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Mistral y Gemini en el mismo script</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Las 2 transcripciones en paralelo, sin comparar ni onboardear todavía.</p>
+  </div>
+  <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --transcribe-only
+
+<span class="rem"># o en lote</span>
+node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;" --transcribe-only</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Chequear que Mistral y Gemini coincidan</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Compara por RUBRO, no diff de texto (dos transcripciones fieles pueden diferir en formato sin que importe). No onboardea aunque dé match — solo dice sí/no y, si no, en qué rubros puntuales.</p>
+  </div>
+  <pre class="term"><code>node tools/compare-transcripts.mjs "archivo.md" "archivo.gemini-check.md"
+
+<span class="rem"># o con la misma sintaxis que el resto (adivina club/año, sirve en lote)</span>
+node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --check-only</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Onboardear lo que ya coincide</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Sea porque Mistral y Gemini coincidieron solos, o porque Claude corrigió el <code>.md</code> canónico contra el PDF para resolver una discrepancia. Vuelve a comparar EN EL MOMENTO antes de onboardear — nunca confía en un resultado guardado de una corrida anterior, así que si Claude ya arregló el archivo, esto lo detecta solo, sin que nadie le avise nada.</p>
+  </div>
+  <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --onboard-only
+
+<span class="rem"># o en lote</span>
+node tools/onboard.mjs --all --dir "Clubes/&lt;País&gt;/&lt;Club&gt;" --onboard-only</code></pre>
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>
