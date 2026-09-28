@@ -94,6 +94,7 @@ const COUNTRIES = {
   DK: { name:'Dinamarca', key:'country.DK', flag:'🇩🇰', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
   GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
+  GR: { name:'Grecia',    key:'country.GR', flag:'🇬🇷', region:'europa' },
   HR: { name:'Croacia',   key:'country.HR', flag:'🇭🇷', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
@@ -169,6 +170,10 @@ const LEAGUES = {
   // de su ascenso vía playoff para 2025/26): mismo criterio que ar-primeranacional/br-serieB/
   // de-2bundesliga/es-segunda, el id nombra el escalón.
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
+  // Grecia (onboarding de Panathinaikos, 2026-09-28): temporada jul-jun, ejercicio contable también
+  // jul-jun (cierra 30/6). Nombre sin sponsor (regla de cabecera de este archivo): la liga se llama
+  // comercialmente "Stoiximan Super League" hoy, el nombre de la competencia es Super League Greece.
+  'gr-superleague':    { name:'Super League',           full:'Super League Greece',                 country:'GR', sport:'futbol', tier:1 },
   // Croacia (onboarding de Dinamo Zagreb/Hajduk Split/Rijeka, 2026-09-25): ejercicio CALENDARIO
   // (cierra 31/12), a diferencia de la temporada de la liga en sí (jul-jun) — el id nombra el
   // escalón, no la temporada. Nombre sin sponsor (regla de cabecera de este archivo): la liga se

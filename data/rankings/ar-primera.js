@@ -9,7 +9,7 @@
 //   2024: 10 club(es) cargado(s), de 28.
 //   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -147,6 +147,9 @@ window.RANKINGS["ar-primera"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"river", revenue:92.942, reportType:"official_balance_sheet",
+        sourceId:"river-estados-contables-2020-2021",
+        mix:[["Cuotas Sociales",17.682],["Estadio",0.847],["Educación",3.32],["Otras secciones deportivas",0.803],["Fútbol profesional (sin desglosar por la fuente)",70.29]] },
       { id:"racing", revenue:34.92, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2021",
         mix:[["Cuotas Sociales",4.656],["Comercial / Sponsors",2.943],["Estadio",6.066],["Televisión",3.082],["Venta de Jugadores",8.96],["Educación",0.533],["Otros ingresos",8.68]] },
