@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 301 — to-do 106 cerrado: head-to-head Mistral vs. Gemini en 8 escaneos, no cambia el default
+
+- Corrida ampliada del head-to-head Mistral OCR vs. Gemini 3.8 Flash sobre 8 documentos que Mistral
+  marcó como escaneados (Brasil, Colombia, Grecia y Noruega — 2 documentos por país), verificados
+  celda por celda contra el PDF fuente por 8 subagentes en paralelo. Resultado: ningún motor domina
+  — cada uno cometió errores reales que el otro no cometió, en cantidad similar, sobre una tasa de
+  error minúscula (~1.660 celdas comparadas). **No se cambia el DEFAULT Mistral→Gemini** de
+  CLAUDE.md/`club-data-mapping/SKILL.md` sección 15. Hallazgo nuevo: Mistral puede saltearse
+  contenido real sin ninguna advertencia (una columna entera de ratios en un documento), y Gemini
+  puede fabricar un valor en una celda vacía o "corregir" en silencio un dígito hacia lo que parece
+  más consistente — ninguna de las dos fallas la detecta un chequeo de sumas. Confirma que la
+  verificación manual obligatoria para escaneos sigue siendo necesaria con cualquiera de los dos
+  motores. Detalle completo en `Admin/test-mistral-gemini-escaneos.md`.
+
 ## Versión 300 — to-do 105 #1, ronda 2: `prepare-onboarding.mjs` probado contra portugués/EUR, 3 bugs más en `extract-table-rows.mjs`
 
 - **`extract-table-rows.mjs` no encontraba NINGUNA tabla en un documento sin "|"** (Corinthians

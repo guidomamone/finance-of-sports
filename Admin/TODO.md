@@ -189,21 +189,6 @@ perdieron sino que se descartaron:
     (lump, no promovido) a propósito, para no quedar inconsistente entre años mientras esto no se
     decide — si se corrige 2024, corregir 2021 en el mismo movimiento.
 
-106. EVALUAR SI CONVIENE CAMBIAR EL DEFAULT MISTRAL→GEMINI PARA ESCANEOS, CON UNA MUESTRA MÁS
-    AMPLIA (sigue del to-do 103, cerrado 2026-09-28 con un resultado más grave de lo esperado).
-    El caso puntual que disparó el 103 (River Ejercicio 2021, "Amortización de software") se corrió
-    de punta a punta: Gemini transcribió la celda BIEN a la primera ($12.326.234, confirmado con
-    zoom sobre el PDF y con `tools/sum-check.mjs` contra el subtotal de la fila — cierra EXACTO).
-    Mistral la tuvo mal, pero **la corrección a mano de una sesión anterior también estaba mal**
-    ($12.326.254, un segundo error de transcripción/lectura que nadie detectó porque el tie-out de
-    esa sesión dio "$20 de diferencia residual" y se lo atribuyó al documento en vez de sospechar de
-    la propia corrección) — ya arreglado en `data/river-data.js`, ver Versión 297 de
-    `Admin/CHANGELOG.md`. Es una sola celda de un solo documento, no la comparación "en general"
-    que pedía el 103 original: antes de cambiar el DEFAULT de `CLAUDE.md`/`club-data-mapping/SKILL.md`
-    sección 15, correr el mismo head-to-head (Mistral ya cargado vs. `node tools/gemini-transcribe.mjs`
-    corrido aparte) contra varios de los documentos que Mistral marcó como escaneados
-    (`Admin/mistral/resultados.jsonl`, campo `scanned`), no solo uno.
-
 105. PLAN PARA SUBIR EL RITMO DE ONBOARDING RUMBO A 2000 PDFs ANTES DE FIN DE AÑO (pregunta de
     Guido, 2026-09-28, después de los 5 onboardings de prueba del to-do 98: *"necesito velocidad
     para subir onboardings y de alta calidad. a este ritmo no subo 2000 pdfs antes de fin de año.
