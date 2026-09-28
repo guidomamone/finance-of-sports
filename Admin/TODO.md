@@ -178,19 +178,28 @@ perdieron sino que se descartaron:
     reemplaza la verificación humana del ascenso/descenso al cierre exacto del ejercicio — solo evita
     la búsqueda repetida, mismo criterio que ya se estableció para el 91.
 
-    **EVALUADO 2026-09-28, con un caso a propósito difícil (Boyacá Chicó, Colombia, con ascensos y
-    descensos reales 2016-2022): las 3 fuentes candidatas NO alcanzan para un scraper masivo tipo
-    "precargar toda la liga" (el patrón de `tools/brand-color-reference/`).** Wikipedia no tiene tabla
-    temporada-por-temporada para un club así, solo menciones sueltas en prosa. TheSportsDB solo
-    devuelve la liga ACTUAL, sin historial. RSSSF tiene el dato pero con problemas de encoding reales
-    ("Atl�tico") y formato inconsistente entre países — riesgo real de leer mal una fila. **Por eso NO
-    se construyó el scraper.** En cambio quedó armada una arquitectura más chica y sin ese riesgo:
-    `tools/lookup-club-league.js` + `tools/club-league-reference/<iso2>.json` (mismo shape que
-    `data/club-leagues/<iso2>.js`, para copiar directo una vez confirmado) — una CACHÉ de lo que ya se
-    buscó y confirmó a mano, no un reemplazo de la búsqueda ni del proceso de verificación. Se puebla
-    sola, entrada por entrada, a medida que el onboarding normal resuelve cada club-año — no con un
-    barrido. Vacía todavía (recién armada). Detalle del porqué en
-    `tools/club-league-reference/README.md`.
+    **EVALUADO 2026-09-28, primera pasada equivocada — CORREGIDO el mismo día por Guido.** La primera
+    evaluación miró la página del CLUB (sin tabla temporada-por-temporada para un club chico) y RSSSF
+    (encoding roto, formato inconsistente) y concluyó que un scraper no alcanzaba. Estaba mirando las
+    fuentes equivocadas: la página de la TEMPORADA en Wikipedia (ej.
+    `2025–26 Premier League`, no la del club) SÍ tiene una tabla "Teams" en wikitext estándar de
+    MediaWiki, consistente entre países — confirmado bajando el roster real de Colombia 2016 (20
+    equipos, incluido Boyacá Chicó) y Noruega 2019 (16 equipos, incluido Lillestrøm).
+
+    **SÍ SE CONSTRUYÓ, pipeline de 3 tools, probado de punta a punta**:
+    1. `tools/resolve-wikipedia-season-page.mjs "<liga>" <año>` — encuentra el título exacto de la
+       página de esa temporada (la convención varía por liga, sin fórmula única) vía la API de
+       búsqueda de Wikipedia. No auto-elige el resultado #1: un nombre ambiguo (ej. "Premier League")
+       trae también la canadiense, la rusa, la israelí — hay que confirmar cuál es.
+    2. `tools/fetch-club-league-reference.mjs "<título>" <leagueId> <año> --pais <iso2>` — baja el
+       wikitext (no HTML renderizado, no un resumen de modelo) y guarda el roster completo en
+       `tools/club-league-reference/<iso2>.json`. Si no encuentra tabla parseable, no escribe nada.
+    3. `tools/lookup-club-league.js "<club>" --pais <iso2>` — busca por NOMBRE (no por `clubId`: la
+       mayoría de estos clubes todavía no están onboardeados) contra los rosters cacheados.
+
+    Sigue sin ser fuente de verdad: `data/club-leagues/<iso2>.js` sigue a mano, con su nota de cómo se
+    confirmó cada club-año. Esto solo evita repetir la búsqueda de una liga-temporada ya resuelta.
+    Detalle completo en `tools/club-league-reference/README.md`.
 
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos

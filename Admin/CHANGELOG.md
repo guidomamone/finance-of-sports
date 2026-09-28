@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 292 — to-do 95 corregido: sí se puede automatizar, con las páginas de TEMPORADA de Wikipedia
+
+- La evaluación de la Versión 291 había mirado las fuentes equivocadas (página del club, RSSSF) y
+  concluyó que no alcanzaba. Guido corrigió: la página de la TEMPORADA en Wikipedia (no la del club)
+  tiene una tabla de equipos en wikitext estándar de MediaWiki, parseable de forma mecánica.
+- Pipeline de 3 tools probado de punta a punta: `tools/resolve-wikipedia-season-page.mjs` (encuentra
+  el título exacto), `tools/fetch-club-league-reference.mjs` (baja y cachea el roster completo, sin
+  escribir nada si no encuentra tabla), `tools/lookup-club-league.js` (busca por nombre contra la
+  caché — reescrito, ya no busca por `clubId`). Probado con Colombia 2016 (20 equipos, incluido
+  Boyacá Chicó) y Noruega 2019 (16 equipos, incluido Lillestrøm).
+- Detalle completo en el to-do 95 de `Admin/TODO.md` y en `tools/club-league-reference/README.md`.
+
 ## Versión 291 — to-do 98 (paso 4) y to-do 95: prototipos probados, sin integrar todavía
 
 - **to-do 98, paso 4**: `tools/extract-table-rows.mjs` (prototipo, no integrado a ningún flujo) saca

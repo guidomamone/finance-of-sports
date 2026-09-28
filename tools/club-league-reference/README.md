@@ -1,40 +1,65 @@
 # tools/club-league-reference/ — arquitectura del to-do 95
 
-**Evaluado 2026-09-28, antes de ejecutar nada** (Wikipedia, TheSportsDB, RSSSF): ninguna de las 3
-fuentes candidatas tiene datos temporada-por-temporada lo bastante limpios y uniformes como para un
-scraper masivo tipo "precargar todos los clubes de una liga" (el patrón que sí funciona en
-`tools/brand-color-reference/`). Wikipedia no trae tabla estructurada para clubes chicos (prosa
-suelta), TheSportsDB solo da la liga ACTUAL sin historial, y RSSSF tiene el dato pero con problemas
-de encoding y formato inconsistente entre países — riesgo real de leer mal un carácter o una fila.
-Detalle de la prueba (Boyacá Chicó, Colombia) en la sesión del 2026-09-28.
+**CORREGIDO 2026-09-28** (Guido, mirando https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League):
+la evaluación original de esta sesión había mirado la página del CLUB (sin tabla temporada-por-
+temporada para clubes chicos) y RSSSF (problemas de encoding, formato inconsistente entre países), y
+concluyó que un scraper no alcanzaba. Estaba mirando las fuentes equivocadas: la página de la
+TEMPORADA en Wikipedia (no la del club) tiene una tabla "Teams"/"Clubs" en wikitext estándar de
+MediaWiki (`{| class="wikitable" ... |- ... | [[Club]] ...`), consistente entre países — probado
+bajando el roster real de Colombia 2016 (20 equipos, incluido Boyacá Chicó) y Noruega 2019 (16
+equipos, incluido Lillestrøm), con columnas distintas por liga pero el mismo patrón de tabla. Se
+parsea con wikitext crudo de la API de Wikipedia (mecánico, no un LLM resumiendo — mismo criterio que
+`tools/fetch-brand-color-reference.mjs`), no con HTML renderizado.
 
-**Por eso esto NO es un scraper.** Es una caché de lo que YA se buscó y confirmó, para no repetir la
-búsqueda — mismo objetivo que el to-do 95, con menos riesgo:
+## El pipeline, 3 tools
 
-1. Onboarding de un club-año: si `tools/lookup-club-league.js <clubId> <año> --pais <iso2>` encuentra
-   el dato en caché, lo usa como punto de partida (sigue habiendo que confirmarlo si hay dudas, no es
-   fuente de verdad ciega).
-2. Si no está en caché, se busca online como hoy (WebSearch/WebFetch contra Wikipedia/RSSSF/prensa),
-   y una vez CONFIRMADO el dato se agrega en dos lugares:
-   - Acá (`tools/club-league-reference/<iso2>.json`), sin nota — es solo un atajo para no repetir la
-     búsqueda.
-   - En `data/club-leagues/<iso2>.js`, CON la nota de cómo se confirmó (la convención real del
-     archivo, ver su propia cabecera) — eso sigue siendo a mano, esto no lo reemplaza.
-3. Con el tiempo, cada país acumula temporadas ya resueltas (sobre todo útil cuando dos clubes
-   distintos del proyecto jugaron la MISMA liga-temporada: la segunda búsqueda ya sale gratis).
+1. **`tools/resolve-wikipedia-season-page.mjs "<liga>" <año>`** — busca en Wikipedia y lista
+   candidatos de título exacto de la página de esa temporada (la convención de título varía por liga:
+   "2016 Categoría Primera A season", "2019 Eliteserien", "2025–26 Premier League", sin fórmula
+   única). NO elige solo el resultado #1: un nombre de liga ambiguo puede traer un torneo distinto
+   con nombre parecido (ej. "Premier League" trae también la canadiense, la rusa, la israelí) —
+   confirmar cuál es antes de bajarla.
+2. **`tools/fetch-club-league-reference.mjs "<título exacto>" <leagueId> <año> --pais <iso2>`** — baja
+   el wikitext de esa página, parsea la tabla de equipos, guarda el roster completo en
+   `tools/club-league-reference/<iso2>.json`. Si no encuentra una tabla parseable, NO escribe nada
+   (mejor fallar visible que guardar una lista incompleta).
+3. **`tools/lookup-club-league.js "<club>" --pais <iso2>`** — busca por nombre (normalizado, como
+   `lookup-brand-color.js`) contra los rosters ya cacheados. Si no hay coincidencia, lo anota en
+   `misses.jsonl` y dice que hace falta bajar esa liga-temporada con el paso 2.
 
-## Formato
+**Por qué por NOMBRE y no por `clubId`**: la mayoría de los clubes que esto tiene que cubrir todavía
+no están onboardeados (están sourceados nomás — ver to-do 50, Boyacá Chicó), así que no tienen
+`clubId` asignado. El roster cacheado guarda el nombre tal cual aparece en Wikipedia.
 
-`tools/club-league-reference/<iso2>.json`, mismo shape que el cuerpo de
-`data/club-leagues/<iso2>.js` para poder copiar una entrada confirmada directo de acá para allá:
+**Esto NO es fuente de verdad ni reemplaza la verificación.** `data/club-leagues/<iso2>.js` sigue
+siendo a mano, con su nota de cómo se confirmó cada club-año (ver su propia cabecera) — este roster
+es el punto de partida para no salir a buscar de nuevo una liga-temporada que ya se bajó, nada más.
+Si hay dudas sobre un caso puntual (ej. un club que cambió de nombre entre temporadas, o el criterio
+de "la categoría al cierre" cuando el ejercicio cruza dos torneos), se sigue confirmando a mano como
+hoy.
+
+## Formato de la caché
+
+`tools/club-league-reference/<iso2>.json`:
 
 ```json
 {
-  "boyacachico": { "2016": "co-primeraa", "2017": "co-primerab" }
+  "leagues": {
+    "co-primeraa": {
+      "2016": {
+        "wikipediaPage": "2016 Categoría Primera A season",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-09-28T...",
+        "clubs": ["Alianza Petrolera", "Atlético Bucaramanga", "...", "Boyacá Chicó", "..."]
+      }
+    }
+  }
 }
 ```
 
 ## Estado actual
 
-Vacío — a propósito. Se puebla la primera vez que un onboarding real busque un club-año de ese país
-y lo confirme, no de una vez con un barrido.
+Poblado con 2 liga-temporada de prueba (Colombia Primera A 2016, Noruega Eliteserien 2019) — quedan
+ahí porque están verificadas y no hace daño tenerlas. El resto se puebla con el uso real, liga-
+temporada por liga-temporada, no con un barrido de una vez.
