@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 271 — to-do 70: infraestructura de "Saved Searches" (Supabase + login con Google)
+
+- Proyecto Supabase creado (`qgupzttqsgtidoruipel`); URL y `anon public key` en
+  `Admin/supabase/.env` (no es secreta, a diferencia de los demás `.env` del proyecto).
+- Login con Google configurado de punta a punta: proyecto propio en Google Cloud
+  (`finance-of-sports-login`), pantalla de consentimiento OAuth, Client ID/Secret cargados en
+  Supabase. Verificado con `curl` contra `/auth/v1/settings`: `google: true`.
+- Schema creado y funcionando: tabla `saved_searches` (una fila por combinación de
+  `user_id`+`state_hash` — reabrir la misma búsqueda actualiza en vez de duplicar, decisión de
+  Guido), RLS para que cada usuario solo vea sus propias filas, función `save_search()` que hace el
+  upsert sin resetear `is_favorite`, y los GRANT a `authenticated` (gotcha encontrado en vivo: RLS
+  sola no alcanza, Postgres exige el GRANT de tabla aparte). SQL completo respaldado en
+  `Admin/supabase/schema.sql`.
+- Falta todavía el código del sitio en sí (botón de login, guardado automático desde el selector,
+  pantalla de cuenta) — sigue en el to-do 70.
+
 ## Versión 270 — to-dos 76 y 77 evaluados: homonimia sin herramienta limpia, video sí rinde gratis
 
 - **To-do 76 (verificación de entidad/homonimia): sin solución automatizable.** Los 3 candidatos

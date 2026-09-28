@@ -200,17 +200,27 @@ perdieron sino que se descartaron:
     - **Guardado y favoritos — RESUELTO (Guido, 2026-09-27):** toda búsqueda se guarda SOLA, sin
       botón. Aparte hay un botón "Favorito" para marcar las que importan. En la cuenta: los
       favoritos aparecen primero, después el historial completo.
-    - **Proveedor de cuentas — ABIERTO, Guido pidió que yo elija.** Recomiendo Supabase: ya estaba
-      evaluado como base en la charla del corte free/paid (`Admin/finance-of-sports-project.md`,
-      sitio estático + Supabase para auth/estado + Netlify Functions si hace falta un webhook) —
-      reusar esa arquitectura ya pensada es más barato que evaluar un proveedor nuevo, y ningún
-      requisito de esta feature (guardar y marcar favoritos, no cobrar) queda sin cubrir. Si Guido no
-      objeta, queda confirmado acá.
-    LISTO PARA UNA SESIÓN DE DISEÑO (no de código todavía): con el concepto de búsqueda y el
-    comportamiento de guardado ya resueltos, y una recomendación de proveedor sobre la mesa, el
-    próximo paso es una sesión que confirme Supabase (o lo cambie) y diseñe el schema (tabla de
-    búsquedas guardadas: usuario, club(es)/mezcla elegida, fecha, favorito sí/no) antes de tocar
-    código de verdad.
+    - **Proveedor de cuentas — RESUELTO (Guido, 2026-09-27): Supabase, confirmado.** Guido creó el
+      proyecto (`qgupzttqsgtidoruipel`); URL y `anon public key` guardadas en
+      `Admin/supabase/.env` (NO es secreta, a diferencia de los demás `.env` del proyecto — ver el
+      comentario de cabecera de ese archivo). Verificado con `curl` contra
+      `/auth/v1/settings` que el proyecto responde.
+    - **Login — RESUELTO Y CONFIGURADO (Guido, 2026-09-27): Google, un solo proveedor.** Proyecto
+      propio en Google Cloud (`finance-of-sports-login`), pantalla de consentimiento OAuth
+      configurada, Client ID/Secret generados y cargados en Supabase (Authentication → Providers →
+      Google). Verificado con `curl` contra `/auth/v1/settings`: `google: true`. Login funcional del
+      lado de infraestructura — falta solo el código del sitio que lo use.
+    - **Schema — CREADO Y FUNCIONANDO EN SUPABASE (2026-09-27).** Tabla `saved_searches`
+      (`user_id`, `state` jsonb, `state_hash`, `is_favorite`, `created_at`, `last_opened_at`,
+      única por `user_id`+`state_hash` — reabrir la misma combinación actualiza en vez de duplicar,
+      decisión de Guido), 4 políticas de RLS (cada usuario solo ve/edita sus propias filas), función
+      `save_search(state, state_hash)` que hace el upsert sin resetear `is_favorite`, y los GRANT a
+      `authenticated` (no a `anon` — un visitante sin cuenta no toca esta tabla). Verificado con
+      `curl` + `anon key`: sin sesión, `permission denied` (correcto). SQL completo respaldado en
+      `Admin/supabase/schema.sql`.
+    LISTO PARA EL CÓDIGO DEL SITIO: falta escribir en `index.html` (o el JS que corresponda) el botón
+    de "Iniciar sesión con Google", el hook que llama a `save_search` cada vez que se arma una
+    combinación en el selector, y la pantalla de "tu cuenta" (favoritos primero, historial después).
 
 67. EVALUAR MIXPANEL PARA TRACKEAR LA SECUENCIA COMPLETA DEL SELECTOR, DESDE QUE SE ABRE HASTA QUE
     SE ELIGE UN CLUB (pedido de Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el
