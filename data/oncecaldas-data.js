@@ -1,7 +1,25 @@
 // ============================================================================
 // data/oncecaldas-data.js — Once Caldas S.A. En Reorganización (Manizales,
 // Colombia). Primer club colombiano cargado en finance-of-sports (junto con
-// Envigado, misma sesión). Ejercicios 2024 y 2025 = REALES.
+// Envigado, misma sesión). Ejercicios 2022, 2024 y 2025 = REALES.
+//
+// EJERCICIO 2022 agregado el 2026-09-28 (ronda de 5 onboardings de prueba
+// para los tools nuevos del to-do 98/95). FUENTE:
+// `Clubes/Colombia/Once Caldas/estados-financieros-2022.pdf`, transcripción
+// en `estados-financieros-2022.md`. Formato numérico EU (punto miles, coma
+// decimal) — DISTINTO del que usa el 2024 de este mismo club (formato US),
+// confirma que el separador decimal es por documento/plantilla, no por club
+// ni por país (ver `tools/extract-table-rows.mjs`). A diferencia de 2024,
+// esta Nota 25 SÍ reconcilia exacto: Gastos Extraordinarios ($746,016 M) +
+// Impuesto Diferido, Nota 26 ($610,063 M) + Impuesto de Renta, Nota 27
+// ($2.712,140 M) suman EXACTO el residuo de `tax` (PAT confirmado menos
+// pretax línea por línea) — la Nota 25 de 2024/2025 no tenía esa suerte.
+// `tools/suggest-category-precedent.mjs` sugirió EXACTO 10 de 11 rubros de
+// ingreso y los 5 de gasto consultados (el único SIN_PRECEDENTE, "Ingresos
+// por solidaridad", se categorizó igual que "Solidaridad" de 2025 por
+// criterio, mismo concepto con texto distinto). FX: el documento no declara
+// el propio (a diferencia de 2024) — se usó `tools/lookup-fx-close.js`
+// (TRM oficial al 31/12/2022, agregada a `data/currency-map.js`).
 //
 // EJERCICIO 2024 agregado el 2026-09-28 (to-do 98, validación real del
 // prototipo `tools/extract-table-rows.mjs`: usado para navegar el documento
@@ -138,6 +156,34 @@
 // ============================================================================
 
 const oncecaldasRevenueLinesByYear = {
+  2022: [
+    { rawLabel:'Taquilla - Partidos oficiales', normalizedCategory:'matchday_competition', amountNative:2569.934, disclosureLevel:'detailed' },
+    { rawLabel:'Taquilla - Venta de abonos', normalizedCategory:'season_tickets', amountNative:1824.074, disclosureLevel:'detailed' },
+    { rawLabel:'Venta de derechos deportivos jugadores', normalizedCategory:'player_sales', amountNative:40673.858, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos por solidaridad', normalizedCategory:'player_sales', amountNative:1574.756, disclosureLevel:'detailed' },
+    { rawLabel:'Préstamo derechos deportivos jugadores', normalizedCategory:'player_sales', amountNative:2441.619, disclosureLevel:'detailed' },
+    { rawLabel:'Patrocinio', normalizedCategory:'sponsorship_commercial', amountNative:2670.956, disclosureLevel:'detailed' },
+    { rawLabel:'Publicidad y propaganda', normalizedCategory:'sponsorship_commercial', amountNative:529.345, disclosureLevel:'detailed', items:[
+      ['Vallas publicitarias', 518.540], ['Publicidad en partidos', 10.084], ['Regalías', 0.721],
+    ]},
+    { rawLabel:'DIMAYOR', normalizedCategory:'broadcasting', amountNative:5704.177, disclosureLevel:'detailed', items:[
+      ['Participaciones DIMAYOR', 295.685], ['Derechos TV cerrada', 2268.028], ['Derechos TV internacional', 116.576],
+      ['Fondo equipos no clasificados', 175.660], ['Televisión variable', 868.665], ['Participación transporte', 68.169],
+      ['Participación hospedaje', 289.705], ['Televisión premium', 1404.901], ['Auxilio apoyo logístico', 71.500],
+      ['Apoyo pruebas COVID', 12.920], ['Transmisiones de TV', 132.368],
+    ]},
+    { rawLabel:'Federación Nacional de Fútbol Colombiano', normalizedCategory:'competition_bonus', amountNative:436.000, disclosureLevel:'detailed' },
+    { rawLabel:'Participaciones nacionales e internacionales', normalizedCategory:'competition_bonus', amountNative:0, disclosureLevel:'detailed' },
+    { rawLabel:'Venta de artículos deportivos (neto de devoluciones)', normalizedCategory:'sponsorship_commercial', amountNative:670.162, disclosureLevel:'detailed', items:[
+      ['Venta de artículos deportivos', 674.869], ['Devolución ventas almacén', -4.707],
+    ]},
+    { rawLabel:'Actividades conexas', normalizedCategory:'other_income', amountNative:1.840, disclosureLevel:'detailed' },
+    // $214,305 M = total impreso de "Ingresos No Operacionales" ($6.112,155 M) menos el componente
+    // "Financieros" ($5.897,850 M, va a netInterest).
+    { rawLabel:'Otros ingresos no operacionales (recuperaciones, indemnizaciones, diversos, subvenciones)', normalizedCategory:'other_income', amountNative:214.305, disclosureLevel:'detailed', items:[
+      ['Recuperaciones', 67.600], ['Indemnizaciones', 75.988], ['Ingresos de ejercicios anteriores', 14.387], ['Diversos', 56.330],
+    ]},
+  ],
   2024: [
     { rawLabel:'Taquilla - Partidos oficiales', normalizedCategory:'matchday_competition', amountNative:9214.593, disclosureLevel:'detailed' },
     { rawLabel:'Taquilla - Venta de abonos', normalizedCategory:'season_tickets', amountNative:2822.704, disclosureLevel:'detailed' },
@@ -180,6 +226,28 @@ const oncecaldasRevenueLinesByYear = {
 };
 
 const oncecaldasExpenseLinesByYear = {
+  2022: [
+    { rawLabel:'Costo de Ventas: Venta de artículos deportivos-miscelaneos', normalizedCategory:'other_expenses', amountNative:-384.189, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos de Ventas: Gastos de personal (plantel)', normalizedCategory:'wages_squad', amountNative:-8022.052, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos de Ventas: Derechos deportivos (costo transferencia de jugadores)', normalizedCategory:'player_amortisation', amountNative:-18221.445, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos de Ventas: Organización y logística (honorarios, arrendamientos, servicios, viaje, mantenimiento, adecuación)', normalizedCategory:'match_organisation_expense', amountNative:-1655.423, disclosureLevel:'detailed', items:[
+      ['Mantenimiento y reparaciones', 714.700], ['Gastos de viaje', 479.979], ['Servicios', 224.543], ['Honorarios', 119.018], ['Arrendamientos', 115.243], ['Adecuación e instalación', 1.940],
+    ]},
+    { rawLabel:'Gastos de Ventas: Administración del plantel (impuestos, contribuciones, seguros, legales)', normalizedCategory:'admin_general_expense', amountNative:-829.484, disclosureLevel:'detailed', items:[
+      ['Impuestos', 791.129], ['Seguros', 31.039], ['Contribuciones y afiliaciones', 7.005], ['Gastos legales', 0.311],
+    ]},
+    { rawLabel:'Gastos de Ventas: Depreciación', normalizedCategory:'depreciation', amountNative:-74.900, disclosureLevel:'detailed' },
+    // $1.481,810 M = Provisiones ($30,574 M) + total impreso de "Diversos" ($1.451,236 M).
+    { rawLabel:'Gastos de Ventas: Diversos y provisiones', normalizedCategory:'other_expenses', amountNative:-1481.810, disclosureLevel:'detailed', items:[
+      ['Diversos', 1451.236], ['Provisiones', 30.574],
+    ]},
+    // Nota 22 "Gastos de Administración" ($2.309,739 M impreso; mi propia suma de sub-ítems da
+    // $2.309,240 M, $499 M de diferencia sin explicar en el documento -- se usa el total impreso).
+    { rawLabel:'Gastos de Administración (personal, honorarios, diversos, viaje, arrendamientos, servicios, legales, mantenimiento)', normalizedCategory:'admin_general_expense', amountNative:-2308.097, disclosureLevel:'detailed', items:[
+      ['Gastos de personal', 1959.465], ['Honorarios', 60.400], ['Diversos', 57.769], ['Arrendamientos', 129.596], ['Gastos de viaje', 32.405], ['Servicios', 64.694], ['Gastos legales', 3.016], ['Mantenimiento y reparaciones', 0.136], ['Adecuación e instalación', 0.117],
+    ]},
+    { rawLabel:'Gastos de Administración: Depreciaciones', normalizedCategory:'depreciation', amountNative:-1.642, disclosureLevel:'detailed' },
+  ],
   2024: [
     { rawLabel:'Costo de Ventas: Venta de artículos deportivos-miscelaneos', normalizedCategory:'other_expenses', amountNative:-1276.105, disclosureLevel:'detailed' },
     // Nota 23 "Gastos de Ventas" ($19.085,241 M impreso), promovida por sub-categoría real:
@@ -234,6 +302,25 @@ const oncecaldasExpenseLinesByYear = {
 };
 
 const oncecaldasFiscalYearMeta = {
+  2022: {
+    // El documento NO declara su propio TC de cierre (a diferencia de 2024) -- TRM oficial al
+    // 31/12/2022 vía tools/lookup-fx-close.js, agregada a data/currency-map.js FX_CLOSE.
+    currency:'COP', fxRef:'COP@2022-12-31',
+    sourceId:'oncecaldas-estados-financieros-2022',
+    reportType:'official_balance_sheet',
+    gestionId:'actual',
+    // Financieros (Nota 24, ingreso $5.897,850 M) - Gastos Financieros (dentro de Nota 25, $1.188,649 M).
+    netInterest:4709.201,
+    // tax: RESIDUO (mismo método que 2024/2025) -- pero ACÁ reconcilia EXACTO contra los componentes
+    // que el documento SÍ separa: Gastos Extraordinarios (Nota 25, $746,016 M) + Impuesto Diferido
+    // (Nota 26, $610,063 M) + Impuesto de Renta (Nota 27, $2.712,140 M) = $4.068,219 M, coincide
+    // centavo a centavo con el residuo (PAT confirmado $26.972,965 M menos pretax línea por línea
+    // $31.041,184 M).
+    tax:-4068.219,
+    profitOnPlayerSales:0, assetSales:0,
+    grossDebt:0, cash:0, // no verificado esta sesión, mismo alcance que 2024
+    officialTotalRevenue:59311.026, officialTotalExpenses:32979.043, officialPAT:26972.965,
+  },
   2024: {
     // El documento declara su propio cierre, en prosa dentro de la Nota 24 ("...terminando el año
     // 2023 en $3.822,05 y en el año 2024 a $4.409,15" -- diferencia en cambio). SKILL.md sección 5
@@ -298,6 +385,12 @@ window.CLUB_GENERIC_DATA.oncecaldas = {
 };
 
 Object.assign(sources, {
+  'oncecaldas-estados-financieros-2022': {
+      id:'oncecaldas-estados-financieros-2022', clubId:'oncecaldas',
+      title:'Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2022 y 2021',
+      type:'official_balance_sheet', reliability:'primary',
+      note:'Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). PAT confirmado en la Cuenta de Patrimonio ("Utilidad o pérdida del ejercicio"). Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2022.md.',
+    },
   'oncecaldas-estados-financieros-2024': {
       id:'oncecaldas-estados-financieros-2024', clubId:'oncecaldas',
       title:'Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2024 y 2023',
@@ -321,7 +414,7 @@ Object.assign(sources, {
 // neutra en vez de dejar el objeto vacío, que sí rompía el selector para cualquier club sin ninguna
 // entrada).
 gestionesByClub.oncecaldas = {
-  actual: { nombre:'Gestión actual', firstYear:2024, lastYear:2025 },
+  actual: { nombre:'Gestión actual', firstYear:2022, lastYear:2025 },
 };
 
 memberCountByClub.oncecaldas = null;

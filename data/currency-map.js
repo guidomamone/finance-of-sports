@@ -260,6 +260,7 @@ const FX_CLOSE = {
   'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },
   'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },
   'COP@2018-12-31': { fx: 3249.75, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia / Banco de la República) al 31/12/2018' },
+  'COP@2022-12-31': { fx: 4810.2, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 31/12/2022' },
   'COP@2025-12-31': { fx: 3757.08, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025' },
   // Sesión 2026-09-25 (onboarding de Bayern Munich 2020/21, tanda de 20 transcripts al azar).
   'EUR@2021-06-30': { fx: 0.8415,  source: 'market_close', label: 'Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD)' },
