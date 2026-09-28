@@ -16,9 +16,18 @@
   del club; a septiembre de 2026 negocia con fondos de inversión internacionales por una operación
   valuada en más de USD 100 millones, sin cierre todavía. **Si el comprador resulta ser un vehículo
   cotizante o que emita deuda registrada, se abre la misma ventana que Ollamani/Club América.** Vale la
-  pena rechequear después del cierre de la venta. Segundo ángulo, pendiente: reintentar
-  `clubleon.mx` con el Browser pane (un navegador real suele pasar donde `curl` da 403 — ver el
-  gotcha de Cloudflare de la sección 3 de la skill `club-sourcing`).
+  pena rechequear después del cierre de la venta.
+- **Chequeo 2026-09-27 (to-do 75, evaluación de Firecrawl): el 403 de `clubleon.mx` RESISTIÓ TODO lo
+  que tiene el proyecto, no es un WAF con challenge JS común.** Se probó, en este orden: (1) Firecrawl
+  scrape con proxy `stealth` — llegó al servidor y recibió un 403 real (página cPanel "ERROR 403 -
+  FORBIDDEN" con lenguaje de "IP Deny rules"/permisos de archivo, no un challenge de Cloudflare); (2)
+  Firecrawl `/v1/map` (enumeración de URLs del dominio) — devolvió solo 2 links, señal de que ni
+  siquiera el sitemap es accesible; (3) Browser pane real (el mismo método que destrabó Chacarita y
+  Newell's) — mismo resultado, `403 - FORBIDDEN`. **Es un bloqueo a nivel de IP/hosting (cPanel),
+  no un desafío que un navegador (real o emulado) resuelva** — a diferencia de Chacarita/Newell's, que
+  eran un WAF con challenge. No queda ningún ángulo de tooling más para probar; el camino sigue siendo
+  el de arriba (esperar el cierre de la venta) o, si Guido quiere, probar desde su propia conexión
+  (por si el bloqueo es geográfico/por rango de IP del proveedor de la sesión).
 - **Contexto estructural que aplica a todo México (no repetirlo club por club)**: los 18 clubes de la
   LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
   de Control Económico de la FMF/LIGA MX** los exige por escrito, en año calendario y con fecha límite

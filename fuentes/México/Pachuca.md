@@ -15,6 +15,16 @@
      `Atlético San Luis.md`), donde el club mexicano SÍ es la filial del club europeo que publica.
 - **Ángulo pendiente**: si Grupo Pachuca capitaliza el grupo con un socio cotizante (hoy solo negocia
   la venta de León), la nota de segmentos o de combinación de negocios del comprador sería la ventana.
+- **Chequeo 2026-09-27 (to-do 75, evaluación de Firecrawl): el bloqueo SÍ se destrabó, pero no había
+  nada del otro lado.** A diferencia de `clubleon.mx` (mismo grupo, mismo bloqueo aparente), Firecrawl
+  con proxy `stealth` cargó `tuzos.com.mx` completo (`statusCode:200`, 1 crédito) — no es el mismo
+  bloqueo de infraestructura que León, pese a compartir dueño. El `/v1/map` devolvió el dominio
+  COMPLETO (1.305 URLs) filtrado por `balance|transparencia|financ|memoria|informe`: cero páginas
+  institucionales de esa naturaleza, solo notas de prensa y contenido deportivo/comercial. Confirma
+  con evidencia directa (no solo la cita del reglamento) lo que ya decía `_notas-generales.md`: el
+  Art. 12 del Reglamento de Control Económico FMF/LIGA MX blinda esto, así que aunque el sitio ya es
+  100% accesible no hay nada financiero que cargar — sigue siendo el mismo bloqueo regulatorio, no
+  uno de tooling.
 - **Contexto estructural que aplica a todo México (no repetirlo club por club)**: los 18 clubes de la
   LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
   de Control Económico de la FMF/LIGA MX** los exige por escrito, en año calendario y con fecha límite

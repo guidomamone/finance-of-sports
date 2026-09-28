@@ -1,18 +1,33 @@
 # San Telmo
 
-**Ángulos**: sitio oficial: parcial — bloqueado a scraping directo (HTTP 403 con curl y con
-User-Agent de navegador real), solo explorable vía Wayback · Wayback CDX: agotado (0 PDFs
-financieros en 2 dominios, 25.000+ capturas combinadas) · regulador/país: no aplica · búsqueda web:
-no intentado esta sesión (sin señal que lo amerite) · barrido: 1 (Haiku+Sonnet) — 2026-09-26
+**Ángulos**: sitio oficial: agotado — menú COMPLETO confirmado en vivo vía Firecrawl (bypasseó el
+403 que bloqueaba curl/navegador), sin ninguna sección de balance/memoria/transparencia · Wayback
+CDX: agotado (0 PDFs financieros en 2 dominios, 25.000+ capturas combinadas) · regulador/país: no
+aplica · búsqueda web: no intentado esta sesión (sin señal que lo amerite) · barrido: 2 (Firecrawl)
+— 2026-09-27
 
 - Sin PDFs oficiales encontrados. Sitio oficial: clubsantelmo.com.ar (con un "Departamento de
   Socios" real, sin balance/memoria linkeado) — bloquea requests directas con HTTP 403 incluso con
-  User-Agent de navegador real, así que solo es explorable vía capturas de Wayback Machine. También
-  existe soydetelmo.com.ar, con contenido institucional/histórico similar — no quedó claro cuál es el
-  dominio "primario", ninguno de los dos publica el balance.
+  User-Agent de navegador real. También existe soydetelmo.com.ar, con contenido
+  institucional/histórico similar — no quedó claro cuál es el dominio "primario", ninguno de los dos
+  publica el balance.
 - Pendiente: todos los ejercicios.
 - Contacto: socios@clubsantelmo.com, tel. 4300-8092.
-- Último chequeo: 2026-09-26.
+- Último chequeo: 2026-09-27.
+
+## Chequeo 2026-09-27 — Firecrawl (to-do 75), confirmación con menú completo en vivo
+
+Firecrawl (`api.firecrawl.dev/v1/scrape`) bypasseó el 403 que bloqueaba `curl`/`WebFetch` desde
+siempre en este dominio — devolvió el HTML completo con `statusCode:200`, 1 crédito por request.
+El menú completo del sitio (`FÚTBOL`, `INSTITUCIONAL`, `POLIDEPORTIVO`, `PRENSA`, `SOCIOS`,
+`MARKETING`, `GENERO Y DIVERSIDAD`, `CONTACTO`, `TIENDA`) no tiene NINGUNA entrada de
+balance/memoria/transparencia/estados contables. Se abrió además `INFORMACIÓN AL SOCIO` (la página
+más candidata) — es solo un formulario de débito automático, sin contenido financiero.
+
+**Esto reemplaza la evidencia indirecta de antes (Wayback + Haiku) por confirmación directa del
+sitio vivo**: familia 1 de la escalera de sourcing queda agotada de verdad, no solo por ausencia en
+Wayback. Sigue siendo **dead-end real**, sin cambios en la conclusión — pero ahora con el nivel de
+certeza que antes solo daba un WAF sin resolver.
 
 ## Chequeo 2026-09-22 — barrido automatizado, sin hallazgo
 

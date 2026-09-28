@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 273 — to-do 75: Firecrawl evaluado, destraba 2 de 3 casos nuevos de tooling
+
+- Test contra San Telmo (Argentina), León y Pachuca (México, Grupo Pachuca) — los 3 casos originales
+  ya se habían resuelto sin Firecrawl en sesiones posteriores. San Telmo: HIT, Firecrawl devolvió el
+  menú completo en vivo (sin sección financiera, confirma el dead-end con evidencia directa). Pachuca:
+  HIT parcial, `/v1/map` barrió el dominio completo (1.305 URLs), sin nada financiero — consistente
+  con el blindaje del Art. 12 de LIGA MX ya documentado. León: MISS, ni Firecrawl ni un Browser pane
+  real pasan el 403 (bloqueo de IP/hosting, no WAF con challenge). Decisión de si sumarlo a la
+  escalera del skill queda para Guido, sin tocar `club-sourcing/SKILL.md` todavía.
+
 ## Versión 272 — to-do 70 cerrado: "Saved Searches" funcionando de punta a punta
 
 - **`js/cuenta.js` (nuevo)**: cliente de Supabase, login/logout con Google, y el render de "Mi
