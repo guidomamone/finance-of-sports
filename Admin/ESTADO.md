@@ -292,11 +292,13 @@ se reescribe, no se acumula.
   advertencia, que no aparece cuando el dato es oficial).
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
   trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
-  placeholder según el club. "Mi Cuenta" es un stub sin
-  funcionalidad: es la única parte del sitio que todavía le anuncia al visitante
-  un plan pago ("próximamente"), y con la decisión de ir todo gratis ya no está
-  esperando nada. Pendiente de decidir con Guido si se saca la pestaña o se
-  reescribe el texto.
+  placeholder según el club. "Mi Cuenta" (to-do 70, Versiones 271-272, 2026-09-27) DEJÓ DE SER
+  UN STUB: login con Google vía Supabase y "Saved Searches" reales — cada club/comparación que se
+  mira queda guardado solo (sin botón), con favoritos primero y el resto del historial después.
+  No es un paywall (la decisión de ir todo gratis del 2026-09-14 sigue en pie): es que quien se
+  loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
+  no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
+  modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
 - PESTAÑA LIGAS (Versión 183, to-do 23(c); ampliada en la Versión 243, to-do 68):
   el ranking de ingresos de los clubes de una liga en UN ejercicio. Vive en
   `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún

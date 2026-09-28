@@ -15,6 +15,31 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 272 — to-do 70 cerrado: "Saved Searches" funcionando de punta a punta
+
+- **`js/cuenta.js` (nuevo)**: cliente de Supabase, login/logout con Google, y el render de "Mi
+  Cuenta" (favoritos primero con ★, después el historial, botón de borrar). Sigue el mismo
+  principio que `js/selector.js`: no sabe cómo se renderiza el resto del sitio — recibe `reopen`
+  por `CUENTA.init()` y expone `notifyStateChange()` para que lo llamen desde afuera.
+- **`index.html`**: reemplazado el viejo stub de "Mi Cuenta" (hablaba del plan pago que Guido ya
+  había descartado el 2026-09-14) por la pantalla real. `refreshFinanzas()` avisa a `cuenta.js`
+  cada vez que se asienta club/año/gestión; `reopenSavedSearch()` reabre lo guardado. `ASSET_V` a
+  245 (archivo nuevo + cambios en el motor de Finanzas).
+- **`js/selector.js`**: 2 agregados chicos para la comparación (pestaña "Comparar"/vs) — avisa
+  cuando se confirma una comparación (`aplicar()`), y `reopenComparacion()`/`paresDeLado()` nuevos
+  para reabrirla desde Mi Cuenta con los años ya resueltos (un bloque puede guardar el año en
+  `null` = "el más reciente disponible", que se resuelve recién al calcular — el label
+  "Real Betis, 2025/2026" necesitaba el valor real, no el crudo).
+- **`data/lang/en.js`**: traducciones de lo nuevo; corregido `cuenta.sub`, que había quedado
+  hablando del plan pago viejo en inglés.
+- 3 bugs reales encontrados y arreglados en la sesión de prueba de Guido: el nombre del club salía
+  crudo (`realbetis`) porque el código buscaba `window.clubs` y `clubs` es una variable global
+  común, no una propiedad de `window`; el año de un lado de comparación salía vacío por el mismo
+  motivo de arriba (año sin resolver); y reabrir una comparación mostraba la tabla de resultado
+  pero dejaba los dos cards de arriba vacíos, porque solo se llamaba `aplicar()` y no `render()`.
+- **Pendiente antes de que esto sirva para un visitante real** (no es código, son 2 configuraciones
+  externas): to-do 94 nuevo.
+
 ## Versión 271 — to-do 70: infraestructura de "Saved Searches" (Supabase + login con Google)
 
 - Proyecto Supabase creado (`qgupzttqsgtidoruipel`); URL y `anon public key` en

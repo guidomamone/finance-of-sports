@@ -1867,6 +1867,10 @@ window.CLUB_SELECTOR = (function(){
       renderResultado();
       // La página no se mueve sola: el resultado aparece abajo y el visitante decide
       // si baja. (El scroll automático fue una queja de Guido en el prototipo 2.)
+      // to-do 70, "Saved Searches": js/selector.js no sabe de Supabase ni de cuentas —
+      // solo avisa que una comparación se confirmó, con los dos `lado` tal cual (ya son
+      // JSON puro, ver ladoDesde()). Si no hay sesión, notifyStateChange no hace nada.
+      if(window.CUENTA) window.CUENTA.notifyStateChange({ view:'vs', ladoA:lado[0], ladoB:lado[1] });
     });
   }
 
@@ -2484,6 +2488,24 @@ window.CLUB_SELECTOR = (function(){
     refresh: function(){ renderButton(); render(); if(isOpen()) renderModal(); },
     renderButton: renderButton,
     goHome: goHome,
-    savedClub: savedClub
+    savedClub: savedClub,
+    // to-do 70, "Saved Searches": reabrir una comparación guardada en Mi Cuenta sin pasar por
+    // el modal de pasos — `a`/`b` son los mismos objetos `lado` ({nombre, bloques}) que guardó
+    // notifyStateChange() en aplicar(). index.html todavía tiene que navegar a la pestaña 'vs'.
+    reopenComparacion: function(a, b){
+      lado[0] = a; lado[1] = b;
+      // render() dibuja los dos cards de arriba (#cdWrap) leyendo `lado[i]` directo — sin esto
+      // quedaban vacíos, aunque aplicar() sí mostrara bien la tabla de resultado de abajo
+      // (encontrado por Guido probando la reapertura). aplicar() es aparte porque además
+      // carga de nuevo los data files de los clubes involucrados si hiciera falta.
+      render();
+      aplicar();
+    },
+    // to-do 70: pares [clubId, year] YA RESUELTOS de un lado — un bloque puede guardar el año
+    // en `null` ("el más reciente que haya", ver paresDeBloque()) y ese default se calcula acá
+    // adentro, no en el bloque en sí. js/cuenta.js necesita el año real para el label
+    // ("Real Betis, 2025/2026"), así que pide la versión ya resuelta en vez de leer `bloques`
+    // crudo.
+    paresDeLado: function(l){ return paresDe(l); }
   };
 })();

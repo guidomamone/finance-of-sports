@@ -184,43 +184,23 @@ perdieron sino que se descartaron:
       baja pasa a Sonnet con el contexto completo del club → si Sonnet tampoco está seguro, cae en
       `Admin/dudas-por-club.md` como ya pasa hoy.
 
-70. "SAVED SEARCHES" — GUARDAR LAS BÚSQUEDAS DE CADA USUARIO EN SU CUENTA (pedido de Guido,
-    2026-09-26: *"me gusta que las búsquedas que hace alguien queden guardadas como Saved Searches.
-    Para eso sirve lo de que se hagan cuenta. En su cuenta van a poder ver sus saved searches."*).
-    Es la primera razón de PRODUCTO concreta para que exista una cuenta de usuario en el sitio — hasta
-    ahora las cuentas solo se habían charlado como mecanismo del corte free/paid (ver la entrada
-    descartada "El corte free/paid y el paywall" al principio de este archivo: **decisión de Guido,
-    2026-09-14, el sitio va todo gratis, sin cuentas/suscripciones**). Esto es distinto: no es un
-    paywall, es que el visitante pueda volver a ver búsquedas que ya hizo.
+94. ANTES DE QUE "SAVED SEARCHES" (to-do 70, cerrado) SEA USABLE POR VISITANTES DE VERDAD, 2
+    CHEQUEOS DE CONFIGURACIÓN EXTERNA que no se pueden resolver escribiendo código, y que
+    nadie más que Guido puede hacer (paneles de Google/Supabase):
 
-    - **Qué es "una búsqueda" — RESUELTO (Guido, 2026-09-27):** es la elección de club(es) hecha en
-      el selector y las comparaciones armadas con ella, no un historial de texto tipeado (eso ya se
-      loggea agregado y sin usuario en el Worker de la Versión 216, ver to-do 67). Se guarda el
-      estado final (qué club/ejercicio, o qué combinación de bloques de la mezcla), reabrible.
-    - **Guardado y favoritos — RESUELTO (Guido, 2026-09-27):** toda búsqueda se guarda SOLA, sin
-      botón. Aparte hay un botón "Favorito" para marcar las que importan. En la cuenta: los
-      favoritos aparecen primero, después el historial completo.
-    - **Proveedor de cuentas — RESUELTO (Guido, 2026-09-27): Supabase, confirmado.** Guido creó el
-      proyecto (`qgupzttqsgtidoruipel`); URL y `anon public key` guardadas en
-      `Admin/supabase/.env` (NO es secreta, a diferencia de los demás `.env` del proyecto — ver el
-      comentario de cabecera de ese archivo). Verificado con `curl` contra
-      `/auth/v1/settings` que el proyecto responde.
-    - **Login — RESUELTO Y CONFIGURADO (Guido, 2026-09-27): Google, un solo proveedor.** Proyecto
-      propio en Google Cloud (`finance-of-sports-login`), pantalla de consentimiento OAuth
-      configurada, Client ID/Secret generados y cargados en Supabase (Authentication → Providers →
-      Google). Verificado con `curl` contra `/auth/v1/settings`: `google: true`. Login funcional del
-      lado de infraestructura — falta solo el código del sitio que lo use.
-    - **Schema — CREADO Y FUNCIONANDO EN SUPABASE (2026-09-27).** Tabla `saved_searches`
-      (`user_id`, `state` jsonb, `state_hash`, `is_favorite`, `created_at`, `last_opened_at`,
-      única por `user_id`+`state_hash` — reabrir la misma combinación actualiza en vez de duplicar,
-      decisión de Guido), 4 políticas de RLS (cada usuario solo ve/edita sus propias filas), función
-      `save_search(state, state_hash)` que hace el upsert sin resetear `is_favorite`, y los GRANT a
-      `authenticated` (no a `anon` — un visitante sin cuenta no toca esta tabla). Verificado con
-      `curl` + `anon key`: sin sesión, `permission denied` (correcto). SQL completo respaldado en
-      `Admin/supabase/schema.sql`.
-    LISTO PARA EL CÓDIGO DEL SITIO: falta escribir en `index.html` (o el JS que corresponda) el botón
-    de "Iniciar sesión con Google", el hook que llama a `save_search` cada vez que se arma una
-    combinación en el selector, y la pantalla de "tu cuenta" (favoritos primero, historial después).
+    - **Pantalla de consentimiento OAuth de Google, probablemente en modo "Testing".** Un
+      proyecto nuevo en Google Cloud arranca así por default, y en ese modo SOLO pueden loguearse
+      las cuentas que se agreguen a mano como "test users" en el proyecto — cualquier otro
+      visitante real va a ver una pantalla de error de Google, no el login. Hay que publicarla
+      ("Publish app") en Google Cloud → APIs & Services → OAuth consent screen antes de que esto
+      sirva para alguien que no sea Guido. Con los scopes que usa este login (email, profile) no
+      debería exigir el proceso de verificación largo de Google (eso es para scopes sensibles).
+    - **Redirect URLs de Supabase, hoy solo tiene el `localhost` de desarrollo.** Supabase
+      rechaza el regreso del login de Google a cualquier URL que no esté en su lista blanca
+      (Authentication → URL Configuration → Redirect URLs). Antes de deployar, agregar ahí
+      `https://financeofsports.com/*` (y el dominio viejo que redirige, si corresponde).
+    Sin estos dos pasos, el botón de login funciona perfecto en local (probado por Guido,
+    2026-09-27) pero falla para cualquier visitante real del sitio en producción.
 
 67. EVALUAR MIXPANEL PARA TRACKEAR LA SECUENCIA COMPLETA DEL SELECTOR, DESDE QUE SE ABRE HASTA QUE
     SE ELIGE UN CLUB (pedido de Guido, 2026-09-26: *"me gustaría ver cómo interactúa la gente con el

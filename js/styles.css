@@ -318,6 +318,16 @@
   .btn-secondary{padding:9px 16px;border-radius:6px;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:14px;}
   .btn-primary{padding:9px 16px;border-radius:6px;border:none;background:var(--azul);color:#fff;cursor:pointer;font-weight:600;font-size:14px;}
 
+  /* Mi Cuenta / Saved Searches (to-do 70) */
+  .saved-search-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);}
+  .saved-search-row:last-child{border-bottom:none;}
+  .saved-search-open{flex:1;text-align:left;background:none;border:none;cursor:pointer;font-size:14.5px;color:var(--azul);padding:4px 0;}
+  .saved-search-open:hover{text-decoration:underline;}
+  .saved-search-fav{background:none;border:none;cursor:pointer;font-size:17px;color:var(--border);line-height:1;padding:2px;}
+  .saved-search-fav.active{color:var(--oro);}
+  .saved-search-delete{background:none;border:none;cursor:pointer;font-size:14px;color:var(--muted);line-height:1;padding:2px 4px;}
+  .saved-search-delete:hover{color:#c0392b;}
+
   details.accordion{border:1px solid var(--border);border-radius:8px;margin-bottom:8px;overflow:hidden;background:#fff;}
   details.accordion>summary{cursor:pointer;padding:11px 14px;font-weight:700;font-size:13.5px;list-style:none;background:#eef1f6;display:flex;justify-content:space-between;align-items:center;gap:10px;}
   details.accordion>summary::-webkit-details-marker{display:none;}
