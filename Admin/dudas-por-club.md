@@ -1851,3 +1851,18 @@ precedente explícito en `club-data-mapping/SKILL.md`. Se agrupó con `wages_squ
 precedente de Racing (sección 13 del skill: costos no salariales del plantel bundle-ados con
 salarios cuando no hay categoría más específica) — confirmar si es el criterio correcto o si
 debería ir a `match_organisation_expense`/`other_expenses`.
+
+## River Plate — sourcing vía CNV, sesión 2026-09-28
+
+**¿River cambió su cierre de ejercicio de agosto a diciembre, o es un período de transición?**:
+encontrado en la CNV (`aif2.cnv.gov.ar`, presentación #3525618, filed 15/05/2026) un estado
+contable con Fecha de Cierre 31/12/2025 — los 123 ejercicios anteriores de River siempre cerraron
+31/8. El PDF (`Clubes/Argentina/River/estados-contables-cierre-2025-12-31.pdf`, 15,3 MB) no tiene
+capa de texto en las páginas numéricas, así que no se pudo leer el período exacto que cubre (¿un
+ejercicio irregular set-2024/dic-2025 de ~16 meses, cubriendo lo que hubiera sido el Ejercicio 124
+completo? ¿un ejercicio normal set-2025/dic-2025 que implicaría un Ejercicio 124 corto no
+encontrado?). El acta de asamblea que lo aprueba está adjunta a la misma presentación
+(`acta-asamblea-estados-contables-cierre-2025-12-31.pdf`) y debería aclararlo. Ver
+`fuentes/Argentina/River.md` para el detalle completo del hallazgo. Responderla en la sesión que
+transcriba estos documentos, antes de mapear el ejercicio a `river-data.js` — no asumir el período
+sin leerlo.

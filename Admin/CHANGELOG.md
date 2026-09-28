@@ -15,6 +15,29 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 280 — River Plate: 4 balances reales nuevos encontrados vía CNV, y un fix a `wayback-verify-download.mjs`
+
+- **Hallazgo grande, sourcing (pedido explícito de Guido)**: River es emisor regulado por la
+  Comisión Nacional de Valores desde su primera Obligación Negociable (feb. 2025) y al inscribirse
+  subió varios ejercicios históricos — canal verdaderamente oficial, mejor que cualquier mirror.
+  Descubierto el mecanismo genérico para bajar un adjunto público de `aif2.cnv.gov.ar` sin login
+  (GET a `ValetKeyProvider/GetPublicValetKey` + POST a `blob.cnv.gov.ar/.../DownloadBlob`),
+  documentado en `fuentes/Argentina/River.md` para reusar con cualquier otro emisor argentino.
+- Descargados a `Clubes/Argentina/River/` (no trackeados, `*.pdf` gitignoreado, pendientes de
+  transcripción): Ejercicio 120 (2020-21, individual + consolidado), 121 (2021-22), 122 (2022-23),
+  una copia oficial del 123 (2023-24, ya cargado vía mirror de tuRiver) y un documento con Fecha de
+  Cierre 31/12/2025 — este último con una PREGUNTA ABIERTA (¿cambio de ejercicio fiscal a
+  calendario, o período irregular de transición?) anotada en `Admin/dudas-por-club.md`.
+- Agotadas sin resultado, para los 2 ejercicios que siguen faltando (118 2018-19, 119 2019-20):
+  `cariverplate.com.ar` (dominio viejo, hoy redirige a riverplate.com; sus PDFs archivados en
+  Wayback son memoria narrativa duplicada o anexo DEPORTIVO, no financiero) y Wayback CDX de
+  dominio completo sobre `riverplate.com`. Quedan documentadas con cifras de prensa (La Página
+  Millonaria, Olé, Doble Amarilla) como corroboración, no como fuente primaria.
+- `tools/wayback-verify-download.mjs` (to-do 79): fix a un falso positivo del chequeo `id_`/`if_` —
+  la regex exigía una barra ANTES de `id_`, pero el formato real de Wayback es
+  `/web/<timestamp>id_/<url>` (el `id_` pega contra el timestamp, sin barra previa). Encontrado al
+  usar la herramienta de verdad por primera vez contra un caso real (`cariverplate.com.ar`).
+
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 
 - Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector
