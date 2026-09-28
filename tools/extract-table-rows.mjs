@@ -48,6 +48,62 @@ function isSeparatorRow(cells) {
   return cells.every((c) => /^:?-{2,}:?$/.test(c) || c === '');
 }
 
+// BUG REAL encontrado probando prepare-onboarding.mjs contra Corinthians 2024-25 (portugués,
+// transcripción Mistral de un PDF con capa de texto nativa MUY limpia): el documento entero NO usa
+// tablas Markdown para sus estados financieros -- son líneas de texto plano, una por rubro, sin
+// ningún "|" ("Receita Operacional 19 863.685 776.864": etiqueta, Nota, 2 valores, todo separado
+// por espacios simples). Sin esto, el detector de tablas de arriba encontraba 0 tablas en un
+// documento de 5000+ líneas con datos reales adentro -- fallaba en silencio, no en visible.
+//
+// Reconocer una fila así: escanear desde la DERECHA tomando tokens que parecen un VALOR monetario
+// (dígito + separador de miles/decimal, o entre paréntesis) hasta el primer token que no lo es. Si
+// el token que queda justo a la izquierda de esos valores es una referencia de Nota (entero
+// suelto de 1-3 dígitos, sin separador), se descarta -- no es parte de la etiqueta.
+//
+// A PROPÓSITO exige que el valor tenga un separador (".", "," o paréntesis): un token puramente
+// numérico sin separador (ej. "2025", el año de un encabezado "Nota 2025 2024") NO cuenta como
+// valor -- si no fuera así, esa misma cabecera se leería como una fila de datos más, con "Nota"
+// de etiqueta y el año colado como si fuera un monto. El costo de esta regla: un valor real
+// MENOR A 1000 sin separador de miles (raro en un estado financiero en miles/millones) puede
+// perderse -- aceptable frente al riesgo de leer un año como plata.
+// BUG REAL #2 encontrado con el mismo documento: una SUB-nota tipo "24.1"/"24.2" (Brasil numera
+// sub-ítems de una Nota así) TIENE un separador ("."), así que looksLikeMoneyToken la contaba como
+// un valor más -- "Cessão definitiva de atletas 24.1 107.405 338.421" salía con 3 "valores"
+// (24.1, 107.405, 338.421) en vez de 2, con la sub-nota colada como si fuera plata. La señal que
+// las distingue de un valor real: un separador de miles real agrupa de a 3 dígitos ("107.405"),
+// una sub-nota tiene UN solo dígito después del punto ("24.1").
+function looksLikeSubNoteRef(tok) {
+  return /^\d{1,2}\.\d$/.test(tok);
+}
+
+function looksLikeMoneyToken(tok) {
+  const t = tok.replace(/^\(/, '').replace(/\)$/, '');
+  if (looksLikeSubNoteRef(t)) return false;
+  return /\d/.test(t) && /[.,]/.test(t);
+}
+
+function looksLikeNoteRef(tok) {
+  return /^\d{1,3}$/.test(tok) || looksLikeSubNoteRef(tok);
+}
+
+function parsePlainTextRow(line) {
+  const t = line.trim();
+  if (!t || t.startsWith('|') || t.startsWith('---')) return null;
+  const tokens = t.split(/\s+/);
+  if (tokens.length < 2) return null;
+  let end = tokens.length;
+  const values = [];
+  while (end > 0 && looksLikeMoneyToken(tokens[end - 1])) {
+    values.unshift(tokens[end - 1]);
+    end--;
+  }
+  if (!values.length) return null;
+  if (end > 1 && looksLikeNoteRef(tokens[end - 1])) end--;
+  const rawLabel = tokens.slice(0, end).join(' ').trim();
+  if (!rawLabel || /^[\d.,()%-]+$/.test(rawLabel)) return null;
+  return { rawLabel, values };
+}
+
 // Un número con 2+ grupos de miles (ej. "1.234.567" o "1,234,567") SOLO puede
 // ser separador de miles, nunca decimal — es la señal inequívoca. Cuenta cuál
 // convención domina en el documento entero.
@@ -123,6 +179,18 @@ function looksLikeHeading(line) {
   return true;
 }
 
+// BUG REAL #3 (Corinthians 2024-25): esta letra repetida de membrete ("SPORT CLUB CORINTHIANS
+// PAULISTA...", ALL-CAPS, aparece al pie de CADA página) calificaba como heading FUERTE, y como el
+// trail fuerte nunca se reseteaba por página, bloqueaba PARA SIEMPRE que el trail débil (que sí
+// tenía el título real, "Demonstração do Resultado do Exercício") se llegara a usar -- ninguna
+// página de este documento tiene otro heading fuerte que lo desplace. Y aunque se resolviera eso,
+// la ventana de solo 2 headings es angosta cuando hay varias líneas de metadata entre el título
+// real y la tabla (rango de fechas, moneda, fila "Nota AÑO AÑO") -- acá eran 4, así que el título
+// se perdía igual por pura acumulación. TRAIL_MAX más ancho + resetear en cada salto de página
+// arregla las dos cosas a la vez, sin romper el caso ya arreglado de River (su heading relevante
+// está en la MISMA página que la tabla, no depende de nada de la página anterior).
+const TRAIL_MAX = 5;
+
 const tables = [];
 let page = 1;
 let strongHeadingTrail = [];
@@ -135,6 +203,8 @@ while (i < lines.length) {
   const pageMatch = line.match(/^---\s*pág\.\s*(\d+)\s*---/i);
   if (pageMatch) {
     page = parseInt(pageMatch[1], 10);
+    strongHeadingTrail = [];
+    weakHeadingTrail = [];
     i++;
     continue;
   }
@@ -149,7 +219,7 @@ while (i < lines.length) {
     // Preferir headings "fuertes" (markdown # o ALL-CAPS); si no hay,
     // caer al último texto corto visto, aunque sea prosa suelta.
     const trail = strongHeadingTrail.length ? strongHeadingTrail : weakHeadingTrail;
-    const section = stripBold(trail.slice(-2).join(' / ')) || null;
+    const section = stripBold(trail.join(' / ')) || null;
     strongHeadingTrail = [];
     weakHeadingTrail = [];
 
@@ -191,14 +261,43 @@ while (i < lines.length) {
     continue;
   }
 
+  const plainRow = parsePlainTextRow(line);
+  if (plainRow) {
+    // Junta líneas CONSECUTIVAS que también parsean como fila de texto plano. Exige 2+ para
+    // considerarlo tabla -- una sola línea suelta que matchea (ej. una oración que termina en un
+    // porcentaje, "45,2%") es más probablemente prosa con un número adentro que una tabla real.
+    const blockRows = [plainRow];
+    let j = i + 1;
+    while (j < lines.length && !/^---\s*pág\.\s*\d+\s*---/i.test(lines[j])) {
+      const nextRow = parsePlainTextRow(lines[j]);
+      if (!nextRow) break;
+      blockRows.push(nextRow);
+      j++;
+    }
+    if (blockRows.length >= 2) {
+      const trail = strongHeadingTrail.length ? strongHeadingTrail : weakHeadingTrail;
+      const section = stripBold(trail.join(' / ')) || null;
+      strongHeadingTrail = [];
+      weakHeadingTrail = [];
+      tables.push({
+        page, section, columns: null,
+        rows: blockRows.map((r) => ({ rawLabel: r.rawLabel, values: r.values, bold: false })),
+        likelyRelevant: isLikelyRelevant(section, []),
+      });
+      i = j;
+      continue;
+    }
+    // No llegó a 2 -- cae al tratamiento normal de heading/prosa de abajo, sin avanzar `i`.
+  }
+
   if (looksLikeHeading(line)) {
     const t = line.trim();
     if (isStrongHeading(t)) {
       strongHeadingTrail.push(t);
-      if (strongHeadingTrail.length > 2) strongHeadingTrail.shift();
+      if (strongHeadingTrail.length > TRAIL_MAX) strongHeadingTrail.shift();
     } else {
       weakHeadingTrail.push(t);
-      if (weakHeadingTrail.length > 2) weakHeadingTrail.shift();
+      if (weakHeadingTrail.length > TRAIL_MAX) weakHeadingTrail.shift();
     }
   }
   i++;

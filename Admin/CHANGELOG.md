@@ -15,6 +15,28 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 300 — to-do 105 #1, ronda 2: `prepare-onboarding.mjs` probado contra portugués/EUR, 3 bugs más en `extract-table-rows.mjs`
+
+- **`extract-table-rows.mjs` no encontraba NINGUNA tabla en un documento sin "|"** (Corinthians
+  2024-25: Mistral transcribió un PDF con capa de texto nativa muy limpia como texto corrido en vez
+  de tabla Markdown -- 0 tablas en un documento de 5000+ líneas con datos reales adentro). Agregado
+  un segundo parser (`parsePlainTextRow`) que reconoce "Etiqueta [Nota] Valor1 [Valor2]" en texto
+  plano, escaneando desde la derecha por tokens que parecen un valor monetario real (con separador
+  de miles/decimal) para distinguirlos de una referencia de Nota.
+- **Una sub-nota tipo "24.1"/"24.2" se confundía con un valor real** (ambas tienen un "."), corregido
+  con la señal que las distingue: un separador de miles real agrupa de a 3 dígitos, una sub-nota de
+  a 1.
+- **Un heading FUERTE repetido en cada página (membrete de Corinthians) bloqueaba para siempre el uso
+  del heading DÉBIL real** ("Demonstração do Resultado do Exercício"), porque el trail de headings
+  nunca se reseteaba por página y la ventana de solo 2 headings se llenaba con metadata (fecha,
+  moneda, fila "Nota AÑO AÑO") antes de llegar a la tabla. Arreglado reseteando el trail en cada
+  salto de página y ensanchando la ventana de 2 a 5 (`TRAIL_MAX`).
+- Probado sin regresión contra los 3 documentos de la Versión 299 (River, Once Caldas, Rosenborg) +
+  2 nuevos (Corinthians portugués/BRL en texto plano, AC Milan italiano/EUR con tablas `|`
+  normales) -- 8 bugs reales encontrados y arreglados en total entre las 2 rondas.
+- Sigue sin conectarse a ningún skill (misma razón que la Versión 299): ya cubrió la diversidad de
+  idioma/moneda/formato que hacía falta, queda pendiente que Guido confirme antes de sumarlo.
+
 ## Versión 299 — to-do 105 #1: `tools/prepare-onboarding.mjs`, construido y probado (todavía sin conectar a ningún skill)
 
 - **Nueva tool, pensada para correr desde la terminal de Guido** (no desde una sesión de Claude):

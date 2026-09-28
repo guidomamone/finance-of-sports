@@ -228,16 +228,22 @@ perdieron sino que se descartaron:
        el club ya tiene data) + lookup-club-league (si el club ya tiene entrada en `clubs{}`), y deja
        UN `<archivo>.briefing.json` al lado del `.md` (gitignoreado, se regenera en segundos).
        Pensado para correr desde la TERMINAL DE GUIDO, antes de abrir la sesión de Claude — mismo
-       criterio que la transcripción. Probado a fondo contra River 2021, Once Caldas 2024 y un
-       documento noruego real (Rosenborg 2012), encontrando y arreglando 5 bugs reales en el camino
-       (detalle en el commit `99f47bd`): un crash de proceso hijo sin capturar, el tie-out por tabla
-       entera que no chequeaba nada, un Anexo con encabezado de 2 niveles rompiendo sum-check, un
-       heading en negrita que dejaba la tabla MÁS IMPORTANTE de River marcada `likelyRelevant:false`,
-       y `sum-check.mjs`/`isTotalLabel` sin soporte para el formato escandinavo (espacio como
-       separador de miles, "Sum" en vez de "Total"). **TODAVÍA NO conectado a ningún skill** (a
-       pedido explícito de Guido, por si sale algún paso más al seguir probando) — falta: correrlo
-       contra 1-2 documentos más (ideal: uno con moneda/idioma distinto de los 3 ya probados) y
-       recién ahí sumarlo a `club-or-year-onboarding/SKILL.md` y `club-data-mapping/SKILL.md`.
+       criterio que la transcripción. Probado a fondo contra 5 documentos reales y diversos (River
+       2021 ARS, Once Caldas 2024 COP, Rosenborg 2012 noruego, Corinthians 2024-25 portugués/BRL, AC
+       Milan 2022-23 italiano/EUR), encontrando y arreglando 8 bugs reales en el camino (commits
+       `99f47bd` y el de la ronda portugués/EUR): un crash de proceso hijo sin capturar, el tie-out
+       por tabla entera que no chequeaba nada, un Anexo con encabezado de 2 niveles rompiendo
+       sum-check, un heading en negrita que dejaba la tabla MÁS IMPORTANTE de River marcada
+       `likelyRelevant:false`, `sum-check.mjs`/`isTotalLabel` sin soporte para el formato escandinavo,
+       **0 tablas detectadas en documentos de texto plano sin "|"** (Corinthians -- Mistral a veces
+       transcribe un PDF con capa de texto muy limpia como texto corrido, no como tabla Markdown; se
+       agregó un segundo parser para este formato), una sub-nota tipo "24.1" confundida con un valor
+       real (agrupa de a 1 dígito, no de a 3 como un separador de miles de verdad), y un heading
+       fuerte repetido en CADA página (membrete) que bloqueaba PARA SIEMPRE el uso del heading débil
+       real -- arreglado reseteando el trail de headings por página y ensanchando la ventana de 2 a
+       5. **TODAVÍA NO conectado a ningún skill** (a pedido explícito de Guido) -- ya se cubrió la
+       diversidad de idioma/moneda/formato que hacía falta probar, así que lo que sigue es sumarlo a
+       `club-or-year-onboarding/SKILL.md` y `club-data-mapping/SKILL.md` cuando Guido lo confirme.
     2. **Agrupar varios años del MISMO club en una sola sesión**, no uno por sesión — el precedente
        de `suggest-category-precedent.mjs` mejora con cada año que se suma (Once Caldas pasó de
        10/11 EXACTO en su 2do año cargado a 11/11 en el 4to), y se evita pagar el arranque en frío
