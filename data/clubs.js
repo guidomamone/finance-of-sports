@@ -166,6 +166,12 @@ const clubs = {
   'unionmagdalena-co': { id:'unionmagdalena-co', name:'Unión Magdalena S.A.', displayName:'Unión Magdalena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'millonarios-co': { id:'millonarios-co', name:'Azul y Blanco Millonarios FC S.A.', displayName:'Millonarios', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#293378' },
   'deportivopereira-co': { id:'deportivopereira-co', name:'Deportivo Pereira F.C. S.A.', displayName:'Deportivo Pereira', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0013' },
+  // Boyacá Chicó ("Los Ajedrezados"): camiseta a cuadros (patrón ajedrezado) azul marino y blanco
+  // según Wikipedia (infobox pattern_la1/pattern_b1) -- bicolor en partes iguales, mismo caso que
+  // Almagro (tricolor): sin un color que predomine con claridad, brandColor:null a propósito en
+  // vez de forzar uno de los dos (footylogos da #001356 azul marino como #1, pero es el orden del
+  // escudo, no confirma que domine sobre el blanco en la camiseta a cuadros).
+  'boyacachico-co': { id:'boyacachico-co', name:'Deportivo Boyacá Chicó Futbol Club S.A.', displayName:'Boyacá Chicó', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
   // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
   // moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por

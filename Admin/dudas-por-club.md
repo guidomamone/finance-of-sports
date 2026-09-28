@@ -309,6 +309,18 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   Complementario" (0 o 1.761.301)? Igual que Deportes Tolima arriba, se necesitaría el Estado de
   Resultado Integral primario para confirmar.
 
+## Boyacá Chicó (hallazgo de esta sesión, no bloqueó la carga)
+
+- **Ejercicio 2024, Nota 16 "Ingresos Operacionales": una línea "Menos: Devoluciones" de
+  -$1.726.052.997,15, el 21% del ingreso BRUTO del club**, sin que el documento aclare a qué
+  concepto de ingreso corresponde (no está indentada bajo ninguna línea específica, aparece suelta
+  al final de la tabla). Se cargó como línea propia en `other_income` (negativa,
+  `data/boyacachico-co-data.js`) en vez de forzarla contra un rubro puntual (ej. Derechos de TV, la
+  línea más grande) sin base real para esa atribución. **Pregunta para el club/SIIS**: ¿a qué
+  ingreso corresponde esta devolución/reversión? El PAT del ejercicio reconcilia igual (confirmado
+  doble, ver comentario de cabecera del archivo), así que no bloqueó la carga — pero afecta a qué
+  categoría se le atribuye ese 21% del ingreso bruto en Formato Simplificado.
+
 ## Mirassol Futebol Clube (hallazgo de esta sesión, no bloqueó la carga del resultado, sí la del patrimonio)
 
 - **El Patrimônio Líquido del informe de auditoría 2024 no cierra consigo mismo.** La sección

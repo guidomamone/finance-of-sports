@@ -40,4 +40,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // 2025 (Apertura y Clausura), confirma que los 2 jugaron esa categoría ese año.
   'millonarios-co': { 2025: 'co-primeraA' },
   'deportivopereira-co': { 2025: 'co-primeraA' },
+  // Verificado el 2026-09-28 contra el roster ya cacheado de "2024 Liga DIMAYOR" (bajado durante
+  // el onboarding de Once Caldas, mismo día) -- Boyacá Chicó apareció ahí mismo, sin fetch nuevo.
+  'boyacachico-co': { 2024: 'co-primeraA' },
 });
