@@ -241,7 +241,18 @@ perdieron sino que se descartaron:
        real (agrupa de a 1 dígito, no de a 3 como un separador de miles de verdad), y un heading
        fuerte repetido en CADA página (membrete) que bloqueaba PARA SIEMPRE el uso del heading débil
        real -- arreglado reseteando el trail de headings por página y ensanchando la ventana de 2 a
-       5. **TODAVÍA NO conectado a ningún skill** (a pedido explícito de Guido) -- ya se cubrió la
+       5.
+
+       **`tools/onboard.mjs`, CONSTRUIDO 2026-09-28**: el comando único que pidió Guido -- encadena
+       `mistral-ocr-transcribe.mjs` → `gemini-transcribe.mjs --redo-mistral-scanned` →
+       `prepare-onboarding.mjs`, sin tocar las 2 primeras. `--club` se adivina por nombre de carpeta
+       contra `data/clubs.js` solo si hay 1 coincidencia clara (probado con un caso real ambiguo,
+       "Racing" -> Racing Club + Genk, se niega a adivinar); `--year` se adivina siempre del nombre
+       del archivo. Probado con `--dry-run` contra 4 casos reales, sin tocar ninguna API. `--all` de
+       punta a punta (con llamadas reales a Mistral/Gemini) queda para que Guido lo corra desde su
+       terminal -- el paso de Gemini barre TODO el proyecto, no solo el `--dir` pedido.
+
+       **TODAVÍA NO conectado a ningún skill** (a pedido explícito de Guido) -- ya se cubrió la
        diversidad de idioma/moneda/formato que hacía falta probar, así que lo que sigue es sumarlo a
        `club-or-year-onboarding/SKILL.md` y `club-data-mapping/SKILL.md` cuando Guido lo confirme.
     2. **Agrupar varios años del MISMO club en una sola sesión**, no uno por sesión — el precedente

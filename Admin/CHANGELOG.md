@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 301 — `tools/onboard.mjs`: el comando único (Mistral → Gemini redo → prepare-onboarding)
+
+- **Pedido de Guido**: que correr Mistral/Gemini desde su terminal también dispare las tools nuevas
+  del to-do 105, sin un comando aparte que acordarse de correr. `tools/onboard.mjs` encadena, sin
+  tocarlas, `mistral-ocr-transcribe.mjs` → `gemini-transcribe.mjs --redo-mistral-scanned` →
+  `prepare-onboarding.mjs` (un briefing.json por documento). Uso individual (`<pdf> [--club]
+  [--year]`) o en lote (`--all [--dir] [--limit]`).
+- **`--club` se adivina comparando el nombre de la CARPETA contra `data/clubs.js`, solo si hay UNA
+  coincidencia clara** — probado con un caso real ambiguo ("Racing" matchea tanto a Racing Club
+  como a Genk, cuyo nombre legal en bélgico incluye "Racing"): ahí se niega a adivinar y pide
+  `--club` explícito, en vez de arriesgar cargar bajo el clubId equivocado. `--year` sí se adivina
+  siempre del nombre del archivo (bajo riesgo, solo afecta la búsqueda de liga cacheada).
+- **OJO para cuando se corra `--all` de verdad**: el paso de Gemini (`--redo-mistral-scanned`) barre
+  TODO el proyecto, no solo el `--dir` pedido — no se corrió de punta a punta en esta sesión por
+  eso, queda para que Guido lo tire desde su terminal.
+
 ## Versión 300 — to-do 105 #1, ronda 2: `prepare-onboarding.mjs` probado contra portugués/EUR, 3 bugs más en `extract-table-rows.mjs`
 
 - **`extract-table-rows.mjs` no encontraba NINGUNA tabla en un documento sin "|"** (Corinthians
