@@ -165,6 +165,11 @@ const OVERRIDES = {
   'Estados Unidos|Dallas Mavericks': { doc: false, motivo: 'propiedad privada de la familia Adelson, sin estados contables propios del equipo' },
   'Estados Unidos|Toronto Raptors': { doc: false, motivo: '40-F de Rogers junta 4 equipos de 4 ligas en un solo bloque MLSE, sin desagregar ni al nivel de MLSE siquiera' },
   'Estados Unidos|Miami Heat': { doc: false, motivo: 'la auditoría del Inspector General de Miami-Dade es sobre el contrato de la arena, no un estado contable del club' },
+  'Estados Unidos|Chicago Blackhawks': { doc: false, motivo: 'propiedad privada, sin filings SEC, estadio autofinanciado sin bonos públicos' },
+  'Estados Unidos|Boston Red Sox': { doc: false, motivo: 'propiedad privada, SPAC abandonado antes de presentar cifras, estadio autofinanciado' },
+  'Estados Unidos|Golden State Warriors': { doc: false, motivo: 'propiedad privada, sin filings SEC, arena 100% autofinanciada sin bonos públicos' },
+  'Estados Unidos|Sacramento Kings': { doc: false, motivo: 'el disclosure de los bonos municipales confirma la estructura societaria pero no desglosa montos del club' },
+  'Estados Unidos|Vegas Golden Knights': { doc: false, motivo: 'propiedad privada sin ningún registro en la SEC, arena financiada en privado sin bonos públicos' },
 };
 
 // ---------------------------------------------------------------------------
