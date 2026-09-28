@@ -15,6 +15,25 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 302 — to-do 106 cerrado: "ninguna es mejor" → Mistral+Gemini en paralelo con comparación, no un default
+
+- **to-do 106 (¿conviene cambiar el default Mistral→Gemini?) cerrado con una respuesta distinta a
+  la esperada**: una sesión en worktree corrió el comparativo de punta a punta contra una muestra
+  amplia de documentos y el resultado fue que NINGUNA de las dos es sistemáticamente mejor — cada
+  motor se equivoca en celdas DISTINTAS del mismo documento. Elegir un default no resuelve nada.
+- **Propuesta de Guido, adoptada**: correr Mistral Y Gemini en paralelo para cada documento (acepta
+  el costo 2x) y usar el DESACUERDO entre los dos como la señal de qué necesita revisión humana, en
+  vez de confiar en uno solo. `tools/compare-transcripts.mjs` (nueva) compara ambas transcripciones
+  por rubro — probado contra River 2021 (Mistral vs. la transcripción de Gemini de la Versión
+  298/299): encontró el error ya conocido ("Amortización de software") MÁS otras 18 discrepancias
+  reales en el mismo documento, confirmando el diagnóstico de "ninguna es mejor".
+- **`tools/onboard.mjs` reescrito** con el flujo completo: Mistral → Gemini en paralelo → comparar →
+  si coinciden, `prepare-onboarding.mjs` automático; si no, para ahí y deja los 2 `.md` listos para
+  cuando Guido convoque a Claude a resolverlo (nunca automático). `gemini-transcribe.mjs` sumó
+  `--out-suffix` (mismo patrón que ya tenía `mistral-ocr-transcribe.mjs`) para poder transcribir en
+  paralelo sin pisar el `.md` de Mistral.
+- `*.gemini-check.md` sumado a `.gitignore`, mismo criterio que `*.briefing.json`.
+
 ## Versión 301 — `tools/onboard.mjs`: el comando único (Mistral → Gemini redo → prepare-onboarding)
 
 - **Pedido de Guido**: que correr Mistral/Gemini desde su terminal también dispare las tools nuevas
