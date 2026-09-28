@@ -26,6 +26,37 @@ que dice `ESTADO.md` era verdad ese día.
 - León (venta sin cerrar) y SIIS Colombia/León-Pachuca (ya resueltos) quedan como estaban, solo
   reordenados para separar lo cerrado de lo que sigue en puro monitoreo.
 
+## Versión 295 — ronda de 5 onboardings de prueba de los tools del to-do 98/95, y plan de velocidad (to-do 105)
+
+- **Once Caldas Ejercicios 2022 y 2023 cargados** (Colombia, años nuevos de club ya cargado):
+  ingresos/gastos reconciliados exacto en los dos. `suggest-category-precedent.mjs` sugirió 15/16
+  rubros EXACTO en 2022 y 11/11 en 2023 — el precedente mejora con cada año que se suma.
+- **River Plate Ejercicio 2021 cargado** (Argentina, año nuevo de club grande): reemplaza el
+  placeholder inventado que tenía desde la Versión 138, con el balance auditado real (CNV,
+  individual). Transcripción propia con Mistral OCR encontró y corrigió un dígito transpuesto real
+  contra el PDF ($12.336.254 leído vs. $12.326.254 real, ver to-do 103). Encontró (sin corregir, a
+  pedido de Guido) un bug real en datos YA publicados de 2024 de este mismo club — to-do 102.
+- **Boyacá Chicó cargado** (Colombia, club nuevo): primer ejercicio real de este club. La liga se
+  confirmó contra un roster ya cacheado del onboarding de Once Caldas, cero fetches nuevos.
+- **Panathinaikos cargado** (Grecia, primer país 100% nuevo del sitio): descartó sin usar un archivo
+  mal nombrado cuyo contenido era en realidad el ejercicio 2020, no 2025 — chequeando la fecha del
+  propio documento antes de cargar nada. PAT reconcilia exacto, sin residuo.
+- **Ecuador/LDU Quito evaluado y descartado** (no es un club nuevo cargado): el único documento de
+  resultados disponible consolida escuela y country club, cero líneas de fútbol — ya decidido por
+  una sesión anterior (`fuentes/Ecuador/LDU Quito.md`, 2026-09-25), redescubierto y confirmado.
+- Consolidación: Grecia registrada en `data/leagues.js` (faltaba), 3 generadores corridos, `ASSET_V`
+  290→291, 3 párrafos con conteos de páginas/notas desactualizados corregidos (162→164, 655→671).
+  Estado final: 164 clubes, 305 ejercicios, 0 P0/P1 en `node tools/audit.js`.
+- to-do 101: 3 conflictos de categorización reales (y 1 falso positivo de la propia tool) del
+  barrido de `suggest-category-precedent.mjs` contra los 162 clubes, sin revisar todavía.
+- to-do 104: 2 casos reales donde `fetch-club-league-reference.mjs` toma la tabla wikitable
+  equivocada de Wikipedia (Argentina sin sección "Teams", Grecia con un resumen antes de la real).
+- to-do 105: plan para subir el ritmo de onboarding rumbo a 2000 PDFs antes de fin de año — JEV
+  solo no alcanza (resuelve solo categorización, y ni está prendido todavía), el cuello de botella
+  real es el sourcing de clubes 100% nuevos. Recomendación principal: armar un script
+  `tools/prepare-onboarding.mjs` que corra todo lo mecánico de una sola vez antes de que arranque
+  la sesión de Claude, sin construir todavía.
+
 ## Versión 294 — to-do 98, paso 5 (tier 0): sugerir categoría por precedente del mismo club, y skills al día
 
 - **`tools/suggest-category-precedent.mjs` nuevo**: si un rubro nuevo tiene el mismo texto que uno ya
