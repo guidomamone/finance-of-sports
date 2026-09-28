@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 296 — to-do 50: Pumas/Tigres descartado, DIABLOS explicado y sigue pendiente de Guido
+
+- **Pumas y Tigres (México) descartado**: decisión de Guido, 2026-09-29 ("elijo no hacerlo, me da
+  igual") — las 2 solicitudes de transparencia (UNAM/UANL) ya redactadas no se van a presentar.
+- **DIABLOS (Diablos Rojos del México, béisbol, cotiza en BMV) sigue sin decisión**: se le agregó al
+  to-do la explicación completa (por qué abre liga Y deporte nuevos, y que el proyecto ya tiene
+  contenido de otro deporte sin cargar en `Clubes/` por el piloto de Firecrawl del to-do 75) para que
+  Guido decida con contexto la próxima vez que lo lea.
+- León (venta sin cerrar) y SIIS Colombia/León-Pachuca (ya resueltos) quedan como estaban, solo
+  reordenados para separar lo cerrado de lo que sigue en puro monitoreo.
+
 ## Versión 294 — to-do 98, paso 5 (tier 0): sugerir categoría por precedente del mismo club, y skills al día
 
 - **`tools/suggest-category-precedent.mjs` nuevo**: si un rubro nuevo tiene el mismo texto que uno ya
