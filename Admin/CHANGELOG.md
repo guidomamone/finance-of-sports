@@ -15,6 +15,23 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 290 — limpieza de to-do list: 40 y 39 cerrados por decisión de Guido, 74+36 fusionados, 73 dividido
+
+- **to-do 40 (CMS) cerrado**: la motivación real era ahorrar tokens de sesión, no editar sin código —
+  ya resuelta por el to-do 65 (CSS inline de `index.html` extraído a `js/styles.css`). No hace falta
+  un CMS.
+- **to-do 39 (camiseta vs. círculo) cerrado**: decisión de Guido, no lo va a hacer.
+- **to-dos 74 y 36 fusionados en el 99**: eran el mismo backtest de JEV escrito en 2 lugares. El
+  nuevo plan incorpora la idea de Guido de probarlo onboardeando 2-3 clubes reales de países (y
+  deportes) distintos de la cola de sourcing, en vez de solo contra ejercicios ya categorizados.
+- **to-do 73 dividido**: su núcleo (cargar los 2 balances de Boca) ya estaba cerrado desde la
+  Versión 289; lo que seguía abierto (el balance de River en Scribd, los 4 ejercicios de Boca sin
+  encontrar) pasó a su propio número, el 100, para que no quedara escondido bajo un to-do que ya
+  figuraba como resuelto.
+- to-do 34 actualizado con lo que cambió desde el merge del selector (to-dos 70 y 83) y los números
+  reales de hoy (88 de 162 clubes con un solo ejercicio, antes 34 de 41). to-do 23 pasa a prioridad
+  activa (Guido, 2026-09-29).
+
 ## Versión 289 — to-do 73 cerrado: Boca Juniors, Ejercicios 2022 y 2023 (N°118 y N°119) cargados
 
 - `data/boca-data.js`: 2 balances auditados reales nuevos, encontrados vía Wayback CDX el
