@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Primera A (CO) — 1 ejercicio(s) con ranking:
+// Primera A (CO) — 2 ejercicio(s) con ranking:
 //   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -42,6 +43,14 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportivopereira-co", revenue:6.962, reportType:"official_balance_sheet",
         sourceId:"deportivopereira-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.656],["Estadio",1.521],["Televisión",1.695],["Premios por competencias",0.312],["Venta de Jugadores",0.442],["Otras secciones deportivas",0.271],["Otros ingresos",1.065]] },
+    ],
+  },
+  2024: {
+    leagueSize: null,
+    clubs: [
+      { id:"oncecaldas", revenue:6.117, reportType:"official_balance_sheet",
+        sourceId:"oncecaldas-estados-financieros-2024",
+        mix:[["Comercial / Sponsors",1.106],["Estadio",2.73],["Televisión",1.609],["Premios por competencias",0.154],["Venta de Jugadores",0.419],["Otros ingresos",0.099]] },
     ],
   },
 };

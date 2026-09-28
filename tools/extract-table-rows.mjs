@@ -129,7 +129,20 @@ while (i < lines.length) {
     strongHeadingTrail = [];
     weakHeadingTrail = [];
 
-    let columns = null;
+    // Una tabla real (en este estilo de transcripción) siempre trae su fila
+    // separadora (`| --- | --- |`) pegada al encabezado. Si este bloque NO
+    // tiene ninguna, es la CONTINUACIÓN de la tabla anterior cortada por un
+    // salto de página (con o sin membrete repetido en el medio) — tratar su
+    // primera fila como encabezado sería leer un dato real como si fuera un
+    // nombre de columna. Encontrado real: Once Caldas 2024, Nota 20
+    // (Ingresos), la tabla se corta en "DIMAYOR" y sigue en la página
+    // siguiente con "PARTICIPACIONES FEDERACION COLOMBIANA" sin repetir el
+    // encabezado — sin este chequeo, esa fila se leía como columna.
+    const hasSeparator = tableLines.some((tLine) => isSeparatorRow(splitRow(tLine)));
+    const prevTable = tables[tables.length - 1];
+    const isContinuation = !hasSeparator && prevTable && prevTable.page <= page && page - prevTable.page <= 1;
+
+    let columns = isContinuation ? prevTable.columns : null;
     const rows = [];
     for (const tLine of tableLines) {
       const cells = splitRow(tLine);
@@ -146,7 +159,9 @@ while (i < lines.length) {
       if (!hasContent) continue;
       rows.push({ rawLabel, values, bold });
     }
-    if (rows.length) {
+    if (isContinuation && rows.length) {
+      prevTable.rows.push(...rows);
+    } else if (rows.length) {
       tables.push({ page, section, columns, rows, likelyRelevant: isLikelyRelevant(section, columns) });
     }
     continue;

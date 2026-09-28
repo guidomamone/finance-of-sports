@@ -122,6 +122,28 @@ perdieron sino que se descartaron:
     rediseñar nada, achica directo cuánto documento tiene que leer Claude en CUALQUIER onboarding, no
     solo en los repetidos.
 
+    **ONBOARDING REAL DE PRUEBA HECHO, 2026-09-28: Once Caldas Ejercicio 2024** (club existente, país
+    existente, precedente de categorización ya establecido — el caso "más común de acá en adelante"
+    que describe la intro de este punto). Resultado: 0 P0/P1 en `node tools/audit.js`, ingresos
+    ($26.814,332 M) y gastos ($21.994,867 M) reconciliados EXACTO contra los totales impresos del
+    documento. Sin embargo, encontró un BUG REAL en `extract-table-rows.mjs` (no en Mistral/Gemini,
+    que transcriben fiel página por página a propósito, ver CLAUDE.md): cuando una tabla se corta por
+    un salto de página, a veces la transcripción pega un separador Markdown (`| --- | --- |`) a la
+    fila de CONTINUACIÓN como si fuera un encabezado nuevo — un intento de arreglarlo con una
+    heurística ("sin separador = continuación") resolvió un caso pero no el otro (el "separador
+    fantasma"). NO se va a seguir persiguiendo con más regex: la red de seguridad real es el tie-out
+    obligatorio contra el total impreso (SKILL.md sección 6), que atrapó esto sin problema. **Paso 4
+    queda así: una ayuda real para NAVEGAR el documento (ahorra leer páginas de firmas/dictamen/actas
+    que no aportan nada), no algo para confiar a ciegas en una tabla que cruza un salto de página —
+    ahí conviene leer esa sección puntual a mano, igual que cualquier verificación de tie-out.**
+
+    **Pedido de Guido en el camino: sacar la ARITMÉTICA del tie-out de Claude también** (mismo
+    principio, un nivel más abajo) — `tools/sum-check.mjs`, suma una lista de números (con o sin
+    separador de miles) y compara contra un total, reemplazando la suma mental que antes hacía Claude
+    para cada Nota. Lo que sigue siendo de Claude: decidir QUÉ filas entran en la suma (el bold de
+    Mistral para marcar subtotales salió inconsistente en este mismo documento, sin patrón fijo, así
+    que un script no puede inferir la jerarquía solo). Usado y probado en el onboarding de arriba.
+
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada

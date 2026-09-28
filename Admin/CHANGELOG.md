@@ -15,6 +15,24 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 293 — Once Caldas Ejercicio 2024 cargado: validación real del to-do 98 (y el to-do 95 en simultáneo)
+
+- **to-do 98 validado con un onboarding real**: Once Caldas Ejercicio 2024 (Colombia), usando
+  `tools/extract-table-rows.mjs` para navegar el documento. Ingresos y gastos reconciliados EXACTO
+  contra los totales impresos. Encontró un bug real en el extractor (tabla cortada por salto de
+  página, un separador Markdown mal puesto en la continuación) — no es un bug de Mistral, y no se
+  arregla con más regex: el tie-out obligatorio es la red de seguridad real. Detalle en el to-do 98
+  de `Admin/TODO.md`.
+- **`tools/sum-check.mjs` nuevo** (pedido de Guido en el camino): saca la aritmética de los tie-outs
+  de Claude, sin tocar la parte que sigue siendo juicio (qué filas entran en cada suma).
+- **to-do 95 usado en el mismo onboarding**: `data/club-leagues/co.js` — Once Caldas 2024 confirmado
+  en Categoría Primera A vía el pipeline de Wikipedia (`2024 Liga DIMAYOR`, el título cambió de
+  sponsor respecto de años anteriores).
+- Pregunta nueva a Once Caldas/SIIS en `Admin/dudas-por-club.md`: la Nota 25 (Gastos No
+  Operacionales) del Ejercicio 2024 no reconcilia contra su propio total, mismo patrón ya visto en el
+  Ejercicio 2025 de este club. `tax` cargado como residuo, documentado explícito.
+- `ASSET_V` 289→290 (tocó `data/`), 3 generadores corridos.
+
 ## Versión 292 — to-do 95 corregido: sí se puede automatizar, con las páginas de TEMPORADA de Wikipedia
 
 - La evaluación de la Versión 291 había mirado las fuentes equivocadas (página del club, RSSSF) y

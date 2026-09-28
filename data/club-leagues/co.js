@@ -20,7 +20,11 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Verificado el 13/9/2026 contra "2025 Categoría Primera A season" (Wikipedia).
   envigado: { 2025: 'co-primeraA' },           // descendió al terminar 2025
-  oncecaldas: { 2025: 'co-primeraA' },
+  // 2024 verificado el 2026-09-28 (to-do 95, pipeline nuevo de Wikipedia: tools/resolve-wikipedia-
+  // season-page.mjs + tools/fetch-club-league-reference.mjs) contra "2024 Liga DIMAYOR" (título
+  // vigente de la temporada 2024 en Wikipedia, cambió de sponsor respecto de años anteriores):
+  // roster de 21 equipos de Primera A 2024, Once Caldas incluido.
+  oncecaldas: { 2024: 'co-primeraA', 2025: 'co-primeraA' },
   // Verificado el 22/9/2026 contra "2025 Categoría Primera A season" (Wikipedia): los 5 jugaron
   // la temporada 2025 completa en Primera A (20 equipos participantes ese año).
   'americadecali-co': { 2025: 'co-primeraA' },

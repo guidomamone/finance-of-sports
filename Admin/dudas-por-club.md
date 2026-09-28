@@ -294,6 +294,20 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   ¿qué explica la diferencia entre la "Utilidad contable" de la Nota 15 ($9.846,710 M) y la suma de
   Ingresos/Gastos operativos + financieros de las Notas 20-27 (~$13.446,121 M pretax)? Se necesitaría
   el Estado de Resultado Integral primario (no solo las notas) para confirmar.
+- **Mismo patrón otra vez en el Ejercicio 2024** (cargado 2026-09-28, validación real del to-do 98):
+  la Nota 25 "Gastos No Operacionales" imprime un total de $3.435,595 M que NO reconcilia contra la
+  suma de sus propias líneas (Financieros + Extraordinarios + Impuesto Diferido + Diversos +
+  Impuesto de Renta da ~$3.729 M SIN sumar siquiera el impuesto de renta, ya por encima del total
+  impreso) — y la fila "IMPUESTO DE RENTA Y COMPLEMENTARIO" del documento contradice a su propio
+  detalle: la fila resumen (en negrita) muestra **0**, pero la fila de detalle inmediatamente debajo
+  muestra **1.761.301**. Se cargó igual usando el mismo método de residuo que 2025 (PAT confirmado
+  menos pretax línea por línea, ver `data/oncecaldas-data.js`). A diferencia de 2025, el PAT 2024
+  ($4.112,260 M) NO está confirmado triple: sale de una sola fuente (Cuenta de Patrimonio, fila
+  "Utilidad o pérdida del ejercicio") — el dictamen del revisor fiscal 2024 es una opinión limpia
+  que no narra la cifra (a diferencia del de 2025). **Pregunta para el club/SIIS**: ¿por qué la Nota
+  25 no reconcilia contra su propio total, y cuál es el valor correcto del "Impuesto de Renta y
+  Complementario" (0 o 1.761.301)? Igual que Deportes Tolima arriba, se necesitaría el Estado de
+  Resultado Integral primario para confirmar.
 
 ## Mirassol Futebol Clube (hallazgo de esta sesión, no bloqueó la carga del resultado, sí la del patrimonio)
 
