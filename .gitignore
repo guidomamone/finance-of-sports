@@ -6,6 +6,14 @@
 # segundos corriendo la tool de nuevo, así que no hace falta ni conservarlo ni publicarlo.
 *.briefing.json
 
+# tools/onboard.mjs transcribe con Gemini EN PARALELO a Mistral, a un archivo con este sufijo, SOLO
+# para comparar los dos con tools/compare-transcripts.mjs -- no es la transcripción canónica del
+# club (esa sigue siendo la de Mistral, sin sufijo), es un chequeo de una sola vez. Si coinciden, no
+# aporta nada más allá de la verificación ya hecha; si no coinciden, queda de evidencia hasta que se
+# resuelva a mano, pero tampoco entonces hace falta publicarlo -- documentar la resolución (qué
+# número era el correcto y por qué) va al lugar de siempre, un comentario en data/<club>-data.js.
+*.gemini-check.md
+
 # Source PDFs stay local only (large scans, not needed to serve the site —
 # the site reads from data/*.js, not from these). Their .md transcriptions
 # ARE tracked, since those are small and reusable across sessions.

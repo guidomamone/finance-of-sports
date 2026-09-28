@@ -1,48 +1,52 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/onboard.mjs — el UN comando que reemplaza la rutina de 2-3 pasos de
-// Guido (Mistral, después Gemini para los escaneados, después nada -- ahora
-// las tools del to-do 105 quedaban afuera). Encadena, en este orden:
-//   1. tools/mistral-ocr-transcribe.mjs   -- transcribe el/los PDF nuevos
-//   2. tools/gemini-transcribe.mjs --redo-mistral-scanned -- SIEMPRE se
-//      corre (barre TODO lo marcado escaneado por Mistral que Gemini
-//      todavía no re-hizo, no solo lo de este run -- mismo criterio que ya
-//      usaba Guido a mano)
-//   3. tools/prepare-onboarding.mjs      -- UN briefing.json por documento
+// tools/onboard.mjs — el UN comando que corre TODO el pipeline, pensado para
+// que Guido lo pegue en su terminal y no tenga que tocar nada more. Encadena:
+//   1. tools/mistral-ocr-transcribe.mjs        -- transcribe con Mistral
+//   2. tools/gemini-transcribe.mjs (--out-suffix .gemini-check) -- transcribe
+//      con Gemini EN PARALELO, siempre, no solo para lo marcado escaneado
+//      (a partir de la Versión 302: una sesión en worktree corrió el
+//      comparativo Mistral-vs-Gemini que pedía el to-do 106 y el resultado
+//      fue "ninguna es mejor en general" -- cada motor se equivoca en celdas
+//      DISTINTAS, así que la señal útil no es "cuál elegir de default" sino
+//      "¿están de acuerdo en ESTE documento puntual?")
+//   3. tools/compare-transcripts.mjs           -- ¿coinciden en los números?
+//      - SI coinciden: sigue solo al paso 4, sin pausa.
+//      - Si NO coinciden: PARA ACÁ. No corre prepare-onboarding, no llama a
+//        Claude automáticamente -- deja los 2 .md listos para cuando Guido
+//        convoque a Claude a resolverlo a mano contra el PDF. Los 2 archivos
+//        quedan en el filesystem, nada se borra.
+//   4. tools/prepare-onboarding.mjs            -- UN briefing.json, solo si
+//      el paso 3 dio match.
 //
-// PENSADO PARA CORRER ENTERO DESDE TU TERMINAL, Guido -- 0 tokens de Claude,
-// mismo criterio que las 2 tools de transcripción (CLAUDE.md "Cada PDF
-// nuevo"). El paso 3 es el que agrega esto: antes tenías que abrir Claude
-// para que orqueste extract-table-rows/sum-check/etc. una por una.
+// 0 tokens de Claude corriendo esto -- mismo criterio que las 2 tools de
+// transcripción (CLAUDE.md "Cada PDF nuevo").
 //
 // USO:
-//   Un solo documento nuevo (el caso más común, un ejercicio más de un club
-//   que ya está en el sitio):
+//   Un solo documento nuevo:
 //     node tools/onboard.mjs "Clubes/Argentina/River/estados-contables-2021-2022.pdf" --club river --year 2022
 //
-//   Si no pasás --club, esto intenta adivinarlo comparando el nombre de la
-//   CARPETA del club (`Clubes/<País>/<Carpeta>/archivo.pdf`) contra
-//   `data/clubs.js` -- si hay 1 sola coincidencia clara, la usa (avisando
-//   qué adivinó); si hay 0 o 2+, para y te pide `--club` explícito (nunca
-//   adivina a ciegas un id que ya existe).
+//   Si no pasás --club, lo adivina comparando el nombre de la CARPETA del
+//   club (`Clubes/<País>/<Carpeta>/archivo.pdf`) contra `data/clubs.js` --
+//   solo si hay 1 sola coincidencia clara (avisa qué adivinó); con 0 o 2+
+//   para y pide --club explícito (nunca adivina a ciegas un id que ya
+//   existe -- probado con un caso real: "Racing" matchea tanto a Racing
+//   Club como a Genk, cuyo nombre legal belga incluye "Racing").
 //
-//   Si no pasás --year, lo intenta sacar del NOMBRE DEL ARCHIVO (el año de
-//   CIERRE si hay un rango, ej. "2021-2022" -> 2022) -- a diferencia del
-//   club, esto SÍ se adivina siempre y se avisa como adivinado ("yearGuessed":
-//   true en el briefing): el único uso real de `year` en prepare-onboarding
-//   es la búsqueda de liga cacheada, de bajo riesgo si sale mal (en el peor
-//   caso, 0 coincidencias en vez de la liga correcta -- no corrompe ningún
-//   dato financiero, eso lo sigue verificando Claude/vos contra el documento).
+//   Si no pasás --year, lo saca del NOMBRE DEL ARCHIVO (año de CIERRE si hay
+//   un rango) -- a diferencia del club, esto SÍ se adivina siempre: el único
+//   uso de `year` en prepare-onboarding es la búsqueda de liga cacheada, bajo
+//   riesgo si sale mal.
 //
 //   Lote (todo lo pendiente bajo Clubes/, o una subcarpeta con --dir):
 //     node tools/onboard.mjs --all [--dir Clubes/Colombia] [--limit 50] [--concurrency 2]
 //   En modo lote, --club/--year no aplican (cada documento adivina el suyo);
-//   se salta el paso 3 para un .md cuyo .briefing.json ya sea más nuevo que
-//   él (no re-procesa lo que no cambió).
+//   se salta un documento cuyo .briefing.json ya sea más nuevo que su .md
+//   (ya procesado y ya coincidía). Un documento con discrepancia sin
+//   resolver se vuelve a listar cada vez que se corre --all (no cuesta
+//   nada, es comparación local) hasta que alguien lo resuelva.
 //
-//   --dry-run: no llama a ninguna API ni corre prepare-onboarding, solo
-//   muestra qué haría (qué se transcribiría, qué club/año adivinaría para
-//   cada uno). Útil para revisar un lote grande antes de tirarlo de verdad.
+//   --dry-run: no llama a ninguna API ni corre nada, solo muestra qué haría.
 // ============================================================================
 
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
@@ -51,6 +55,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 
 const projectRoot = resolve(import.meta.dirname, '..');
+const GEMINI_CHECK_SUFFIX = '.gemini-check';
 
 function usage() {
   console.error([
@@ -61,9 +66,8 @@ function usage() {
 }
 
 function runVisible(scriptRelPath, args) {
-  // A diferencia de prepare-onboarding.mjs (que captura todo para decidir qué mostrar), acá
-  // Mistral/Gemini corren con la salida VISIBLE en vivo -- son pasos largos (minutos en --all) y
-  // Guido quiere ver el progreso en su terminal, no esperar a que termine todo para enterarse.
+  // A diferencia de las tools que corren capturado (ver runCapture), Mistral/Gemini corren con la
+  // salida VISIBLE en vivo -- son pasos largos (minutos en --all) y Guido quiere ver el progreso.
   try {
     execFileSync('node', [resolve(projectRoot, scriptRelPath), ...args], { stdio: 'inherit' });
     return { code: 0 };
@@ -104,11 +108,8 @@ function clubFolderName(absPath) {
   return parts.length >= 2 ? parts[1] : null;
 }
 
-// Nunca adivina a ciegas: si hay 0 o 2+ coincidencias, devuelve null y quien llama tiene que pedir
-// --club explícito. Compara contra `name` Y `displayName` de cada club ya en data/clubs.js -- un
-// club que todavía NO está onboardeado (folder sourceado sin clubId todavía) da 0 coincidencias a
-// propósito, no es un bug: para ESE caso no hay nada que adivinar, y prepare-onboarding.mjs ya
-// maneja bien un clubId que no tiene data/<id>-data.js (lo dice, no revienta).
+// Nunca adivina a ciegas: si hay 0 o 2+ coincidencias, devuelve [] y quien llama tiene que pedir
+// --club explícito. Un club que todavía NO está onboardeado da 0 coincidencias a propósito.
 function guessClubId(folderName, clubsTable) {
   if (!folderName) return { matches: [] };
   const target = normalize(folderName);
@@ -121,8 +122,7 @@ function guessClubId(folderName, clubsTable) {
 }
 
 // El año de CIERRE si el nombre trae un rango ("2021-2022" -> 2022, "2022-23" -> 2023), o el único
-// año de 4 dígitos que encuentre. Ver la cabecera del archivo para por qué esto SÍ se adivina
-// siempre (bajo riesgo: solo afecta la búsqueda de liga cacheada en el briefing).
+// año de 4 dígitos que encuentre.
 function guessYear(filename) {
   const range = filename.match(/(\d{4})[-_](\d{2,4})(?!\d)/);
   if (range) {
@@ -153,43 +153,7 @@ function briefingIsFresh(mdPath) {
   return statSync(briefingPath).mtimeMs >= statSync(mdPath).mtimeMs;
 }
 
-function runPrepareOnboarding(mdPath, clubId, year, dryRun) {
-  if (dryRun) {
-    console.log(`  [dry-run] node tools/prepare-onboarding.mjs ${clubId} ${year} "${mdPath}"`);
-    return;
-  }
-  const res = runCapture('tools/prepare-onboarding.mjs', [clubId, String(year), mdPath]);
-  if (res.code !== 0) {
-    console.error(`  prepare-onboarding.mjs falló para ${mdPath}: ${res.stderr || res.stdout}`);
-    return;
-  }
-  // Reimprime el resumen humano de prepare-onboarding.mjs (no le paso --json, así que esto nunca
-  // trae el briefing completo, solo el resumen de consola).
-  console.log(res.stdout);
-}
-
-function processOne(pdfPath, { club, year, dryRun }) {
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-  const relPdf = relative(projectRoot, pdfPath);
-
-  console.log(`\n=== ${relPdf} ===`);
-
-  if (!existsSync(mdPath)) {
-    if (dryRun) {
-      console.log('  [dry-run] node tools/mistral-ocr-transcribe.mjs "' + relPdf + '"');
-    } else {
-      console.log('  Transcribiendo con Mistral OCR...');
-      const res = runVisible('tools/mistral-ocr-transcribe.mjs', [pdfPath]);
-      if (res.code !== 0 && !existsSync(mdPath)) {
-        console.error('  Mistral falló y no quedó .md -- no sigo con este documento.');
-        return;
-      }
-    }
-  } else {
-    console.log('  Ya tiene .md, no vuelvo a transcribir.');
-  }
-
-  // clubId: nunca se adivina en modo lote sin evidencia; folderName siempre se intenta.
+function resolveClubAndYear(pdfPath, club, year) {
   let clubId = club;
   if (!clubId) {
     const clubsTable = loadClubsTable();
@@ -200,13 +164,11 @@ function processOne(pdfPath, { club, year, dryRun }) {
       console.log(`  club adivinado por carpeta ("${folder}"): ${clubId}`);
     } else if (matches.length > 1) {
       console.error(`  "${folder}" matchea ${matches.length} clubes (${matches.join(', ')}) -- pasá --club explícito, no adivino.`);
-      return;
+      return null;
     } else {
-      // 0 coincidencias: probablemente un club todavía no onboardeado. Uso el nombre de carpeta
-      // normalizado como clubId PROVISORIO solo para que prepare-onboarding.mjs tenga algo que
-      // etiquetar -- no es el clubId real que se vaya a usar cuando se onboardee de verdad, y
-      // prepare-onboarding.mjs ya avisa "no existe data/<id>-data.js" en ese caso, así que no hay
-      // riesgo de que esto se confunda con un club ya cargado.
+      // 0 coincidencias: probablemente un club todavía no onboardeado. Nombre de carpeta
+      // normalizado como clubId PROVISORIO, solo para etiquetar -- prepare-onboarding.mjs ya avisa
+      // "no existe data/<id>-data.js" en ese caso, no hay riesgo de confundirlo con uno real.
       clubId = normalize(folder || 'club-nuevo').replace(/\s+/g, '-') || 'club-nuevo';
       console.log(`  "${folder}" no matchea ningún club ya cargado -- club nuevo, uso "${clubId}" como etiqueta provisoria.`);
     }
@@ -217,12 +179,85 @@ function processOne(pdfPath, { club, year, dryRun }) {
     resolvedYear = guessYear(basename(pdfPath));
     if (!resolvedYear) {
       console.error('  No pude adivinar el año del nombre del archivo -- pasá --year explícito.');
-      return;
+      return null;
     }
     console.log(`  año adivinado del nombre del archivo: ${resolvedYear} (sin verificar contra el documento)`);
   }
+  return { clubId, year: resolvedYear };
+}
 
-  runPrepareOnboarding(mdPath, clubId, resolvedYear, dryRun);
+function transcribeIfMissing(pdfPath, mdPath, { dryRun, label, scriptRelPath, extraArgs, alreadyMsg }) {
+  if (existsSync(mdPath)) {
+    console.log(`  ${alreadyMsg}`);
+    return true;
+  }
+  if (dryRun) {
+    const extra = extraArgs.length ? ' ' + extraArgs.join(' ') : '';
+    console.log(`  [dry-run] node ${scriptRelPath} "${relative(projectRoot, pdfPath)}"${extra}`);
+    return false; // en dry-run nunca "existe" de verdad, no sigas a los pasos de después
+  }
+  console.log(`  ${label}...`);
+  runVisible(scriptRelPath, [pdfPath, ...extraArgs]);
+  return existsSync(mdPath);
+}
+
+function processOne(pdfPath, { club, year, dryRun, verbose = true }) {
+  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
+  const geminiCheckPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + GEMINI_CHECK_SUFFIX + '.md');
+  const relPdf = relative(projectRoot, pdfPath);
+
+  console.log(`\n=== ${relPdf} ===`);
+
+  const hasMistral = transcribeIfMissing(pdfPath, mdPath, {
+    dryRun, label: 'Transcribiendo con Mistral OCR', scriptRelPath: 'tools/mistral-ocr-transcribe.mjs',
+    extraArgs: [], alreadyMsg: 'Ya tiene .md de Mistral, no vuelvo a transcribir.',
+  });
+  const hasGemini = transcribeIfMissing(pdfPath, geminiCheckPath, {
+    dryRun, label: 'Transcribiendo con Gemini (chequeo en paralelo)', scriptRelPath: 'tools/gemini-transcribe.mjs',
+    extraArgs: ['--out-suffix', GEMINI_CHECK_SUFFIX], alreadyMsg: 'Ya tiene el chequeo de Gemini, no vuelvo a transcribir.',
+  });
+
+  if (dryRun) {
+    console.log(`  [dry-run] node tools/compare-transcripts.mjs "${mdPath}" "${geminiCheckPath}"`);
+    console.log(`  [dry-run] si coinciden: node tools/prepare-onboarding.mjs <club> <año> "${mdPath}"`);
+    return;
+  }
+  if (!hasMistral || !hasGemini) {
+    console.error('  Falta alguna de las 2 transcripciones -- no puedo comparar, no sigo con este documento.');
+    return;
+  }
+
+  const cmp = runCapture('tools/compare-transcripts.mjs', [mdPath, geminiCheckPath, '--json']);
+  let cmpResult;
+  try { cmpResult = JSON.parse(cmp.stdout); } catch {
+    console.error(`  compare-transcripts.mjs no devolvió JSON parseable: ${cmp.stderr || cmp.stdout}`.slice(0, 500));
+    return;
+  }
+
+  if (!cmpResult.match) {
+    console.log(`  DISCREPANCIA: Mistral y Gemini no coinciden en ${cmpResult.mismatches.length} rubro(s).`);
+    if (verbose) {
+      cmpResult.mismatches.forEach((m) => {
+        console.log(`    "${m.label}" -- Mistral: ${JSON.stringify(m.valuesA)} | Gemini: ${JSON.stringify(m.valuesB)}`);
+      });
+    } else {
+      cmpResult.mismatches.slice(0, 3).forEach((m) => console.log(`    "${m.label}"`));
+      if (cmpResult.mismatches.length > 3) console.log(`    ... y ${cmpResult.mismatches.length - 3} más.`);
+    }
+    console.log(`  PENDIENTE DE REVISIÓN -- no corro las tools de onboarding todavía. Los 2 archivos quedan`);
+    console.log(`  listos (${basename(mdPath)} / ${basename(geminiCheckPath)}) para cuando convoques a Claude a resolverlo contra el PDF.`);
+    return;
+  }
+
+  console.log('  Mistral y Gemini coinciden -- sigo con las tools de onboarding.');
+  const resolved = resolveClubAndYear(pdfPath, club, year);
+  if (!resolved) return;
+  const res = runCapture('tools/prepare-onboarding.mjs', [resolved.clubId, String(resolved.year), mdPath]);
+  if (res.code !== 0) {
+    console.error(`  prepare-onboarding.mjs falló: ${res.stderr || res.stdout}`);
+    return;
+  }
+  console.log(res.stdout);
 }
 
 function main() {
@@ -234,37 +269,29 @@ function main() {
     const dir = resolve(projectRoot, dirFlag >= 0 ? args[dirFlag + 1] : 'Clubes');
     const limitFlag = args.indexOf('--limit');
     const limit = limitFlag >= 0 ? parseInt(args[limitFlag + 1], 10) : Infinity;
-    const concFlag = args.indexOf('--concurrency');
-    const concurrency = concFlag >= 0 ? args[concFlag + 1] : null;
 
-    console.log('--- Paso 1: Mistral OCR (todo lo pendiente) ---');
-    if (dryRun) {
-      console.log(`[dry-run] node tools/mistral-ocr-transcribe.mjs --all --dir ${dir.replace(projectRoot + '/', '')}${concurrency ? ' --concurrency ' + concurrency : ''}`);
-    } else {
-      const mistralArgs = ['--all', '--dir', dir];
-      if (concurrency) mistralArgs.push('--concurrency', concurrency);
-      runVisible('tools/mistral-ocr-transcribe.mjs', mistralArgs);
-    }
-
-    console.log('\n--- Paso 2: Gemini, redo de lo que Mistral marcó escaneado ---');
-    if (dryRun) {
-      console.log('[dry-run] node tools/gemini-transcribe.mjs --redo-mistral-scanned');
-    } else {
-      runVisible('tools/gemini-transcribe.mjs', ['--redo-mistral-scanned']);
-    }
-
-    console.log('\n--- Paso 3: prepare-onboarding.mjs por cada .md (salteando los ya al día) ---');
     let pdfs = findPdfsUnder(dir);
     pdfs = pdfs.slice(0, limit);
+    console.log(`${pdfs.length} PDF encontrados bajo ${dir.replace(projectRoot + '/', '')}.`);
+
     let processed = 0;
+    let pending = 0;
+    const pendingFiles = [];
     for (const pdfPath of pdfs) {
       const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-      if (!existsSync(mdPath)) continue; // no se pudo transcribir (Tesseract a mano, etc.)
-      if (briefingIsFresh(mdPath)) continue;
-      processOne(pdfPath, { club: null, year: null, dryRun });
+      if (briefingIsFresh(mdPath)) continue; // ya procesado y ya coincidía
+      processOne(pdfPath, { club: null, year: null, dryRun, verbose: false });
       processed++;
+      if (!dryRun && existsSync(mdPath) && !briefingIsFresh(mdPath)) {
+        pending++;
+        pendingFiles.push(relative(projectRoot, pdfPath));
+      }
     }
-    console.log(`\n${processed} documento(s) procesados por prepare-onboarding.mjs (de ${pdfs.length} PDF encontrados).`);
+    console.log(`\n${processed} documento(s) tocados.`);
+    if (pending) {
+      console.log(`${pending} quedaron PENDIENTES de revisión (Mistral/Gemini no coincidieron, o falta alguna transcripción):`);
+      pendingFiles.forEach((f) => console.log(`  - ${f}`));
+    }
     return;
   }
 
@@ -279,7 +306,7 @@ function main() {
     console.error(`No existe: ${pdfPath}`);
     process.exit(1);
   }
-  processOne(pdfPath, { club, year, dryRun });
+  processOne(pdfPath, { club, year, dryRun, verbose: true });
 }
 
 main();

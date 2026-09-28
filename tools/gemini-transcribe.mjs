@@ -134,7 +134,12 @@ function findPdfsSinTranscribir(startDir) {
 }
 
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, opts = {}) {
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
+  // `opts.outSuffix` (mismo patrón que ya tiene mistral-ocr-transcribe.mjs): escribe a un archivo
+  // aparte en vez de al `.md` canónico -- lo usa tools/onboard.mjs para transcribir con Gemini EN
+  // PARALELO a Mistral (no como redo de un escaneo), sin pisar el .md de Mistral, así
+  // compare-transcripts.mjs puede comparar los dos.
+  const outSuffix = opts.outSuffix || '';
+  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + outSuffix + '.md');
   // `opts.redo`: --redo-mistral-scanned SÍ quiere pisar un .md que ya existe (el de Mistral).
   // BUG REAL, 2026-09-28: la versión anterior de este flag borraba TODOS los .md del lote entero
   // ANTES de arrancar a procesarlos uno por uno -- si la corrida se cortaba a mitad de camino
@@ -344,9 +349,9 @@ async function main() {
     return;
   }
 
-  const pdfArg = args[0];
+  const pdfArg = args.find((a, idx) => !a.startsWith('--') && args[idx - 1] !== '--out-suffix');
   if (!pdfArg) {
-    console.error('Uso: node tools/gemini-transcribe.mjs <ruta-al-pdf>\n   o: node tools/gemini-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2] [--timeout 150]\n   o: node tools/gemini-transcribe.mjs --redo-mistral-scanned\n   o: node tools/gemini-transcribe.mjs --pendientes-claude');
+    console.error('Uso: node tools/gemini-transcribe.mjs <ruta-al-pdf> [--out-suffix -gemini-check]\n   o: node tools/gemini-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2] [--timeout 150]\n   o: node tools/gemini-transcribe.mjs --redo-mistral-scanned\n   o: node tools/gemini-transcribe.mjs --pendientes-claude');
     process.exit(1);
   }
   const pdfPath = resolve(projectRoot, pdfArg);
@@ -354,7 +359,9 @@ async function main() {
     console.error(`No existe: ${pdfPath}`);
     process.exit(1);
   }
-  const res = await transcribeOne(pdfPath, apiKey, timeoutMs);
+  const suffixFlag = args.indexOf('--out-suffix');
+  const outSuffix = suffixFlag >= 0 ? args[suffixFlag + 1] : '';
+  const res = await transcribeOne(pdfPath, apiKey, timeoutMs, { outSuffix });
   if (res.skipped) {
     console.error(`Ya existe el .md -- no lo piso. Borralo a mano si querés re-correr.`);
     process.exit(1);
