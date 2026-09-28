@@ -378,6 +378,12 @@ const clubs = {
   'istra-hr': { id:'istra-hr', name:'Nogometni klub Istra 1961 sportsko dioničko društvo', displayName:'Istra 1961', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007B33' },
   'varazdin-hr': { id:'varazdin-hr', name:'Nogometni klub Varaždin sportsko dioničko društvo za obavljanje sportskih djelatnosti', displayName:'Varaždin', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'gorica-hr': { id:'gorica-hr', name:'Hrvatski Nogometni klub GORICA s.d.d.', displayName:'Gorica', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
+  // Panathinaikos, primer club griego cargado (2026-09-28, ronda de onboardings de prueba).
+  // Colores VERDE Y BLANCO confirmados (Wikipedia: "green established as the primary colour since
+  // 1910", apodo "Πράσινοι"/"los verdes"), pero sin un hex específico de la sección de FÚTBOL
+  // (footylogos no tiene Grecia cacheada todavía, y las fuentes de color encontradas mezclan con
+  // el club de básquet del mismo nombre) — brandColor:null a propósito en vez de adivinar un tono.
+  'panathinaikos-gr': { id:'panathinaikos-gr', name:'Panathinaikos Athlitikos Omilos P.A.E.', displayName:'Panathinaikos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

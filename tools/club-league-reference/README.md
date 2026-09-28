@@ -22,7 +22,13 @@ parsea con wikitext crudo de la API de Wikipedia (mecánico, no un LLM resumiend
 2. **`tools/fetch-club-league-reference.mjs "<título exacto>" <leagueId> <año> --pais <iso2>`** — baja
    el wikitext de esa página, parsea la tabla de equipos, guarda el roster completo en
    `tools/club-league-reference/<iso2>.json`. Si no encuentra una tabla parseable, NO escribe nada
-   (mejor fallar visible que guardar una lista incompleta).
+   (mejor fallar visible que guardar una lista incompleta). **LIMITACIÓN CONOCIDA, sin arreglar
+   (to-do 104)**: toma la PRIMERA tabla wikitable de la sección "Teams", y no siempre es el roster
+   completo — encontrado con Grecia ("2024–25 Super League Greece": la primera tabla ahí es un
+   resumen de "Promoted from/Relegated from" de 2 equipos, no las 14 que juegan la liga) y con
+   Argentina (algunas páginas de temporada no tienen sección "Teams" en absoluto, usan una
+   plantilla `{{#invoke:Sports table}}`). Si el resultado trae menos equipos de los esperados,
+   confirmar a mano contra el wikitext crudo en vez de confiar en el fetch.
 3. **`tools/lookup-club-league.js "<club>" --pais <iso2>`** — busca por nombre (normalizado, como
    `lookup-brand-color.js`) contra los rosters ya cacheados. Si no hay coincidencia, lo anota en
    `misses.jsonl` y dice que hace falta bajar esa liga-temporada con el paso 2.
