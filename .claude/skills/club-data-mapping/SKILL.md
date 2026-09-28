@@ -325,6 +325,15 @@ exacto" de "esto es una estimación razonable".
 
 ## 6. Verificación antes de cargar (no es opcional)
 
+**Primer paso, siempre, antes de nada de lo de abajo: `node tools/audit.js`** (gratis, sin tokens).
+Ya chequea solo, para cualquier club: que cada `items` sume exacto contra su línea padre
+(`items-no-cierran`), que la escala en USD sea plausible (`escala-implausible`, banda absoluta) y
+que no haya un salto implausible contra los AÑOS ANTERIORES del mismo club (`salto-interanual`) —
+esto último agarra justo el bug de cargar en pesos en vez de en millones. Encontrado real: Boca
+2022/2023 (2026-09-28), un bug de suma y uno de escala, los dos detectables así en vez de a mano.
+Los puntos 1-6 de abajo son el complemento para lo que `audit.js` NO puede ver (que la
+categorización sea la CORRECTA, no solo que sume).
+
 1. Sumá tus propias `revenueLines`/`expenseLines` y confirmá que cierran contra el subtotal que
    imprime el DOCUMENTO fuente para esa misma categoría, no confíes en tu propia suma sin
    cruzarla contra algo externo.

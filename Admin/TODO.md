@@ -54,6 +54,61 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+98. BAJAR EL COSTO EN TOKENS DE CLAUDE DEL ONBOARDING DE UN EJERCICIO NUEVO (candidato del to-do 85,
+    pedido de Guido 2026-09-28: *"sería factible un enfoque en el que se utilicen más scripts que
+    corren en mi computadora y vos solo pienses cuando haga falta?"*). Mismo principio que ya se usó
+    para la transcripción (Mistral/Gemini, CLAUDE.md "Cada PDF nuevo": 0 tokens de Claude corriendo
+    desde la terminal de Guido) — sacar de Claude todo paso MECÁNICO del resto del pipeline, dejarle
+    solo lo que es genuinamente ambiguo. Pensado sobre todo para el caso más común de acá en
+    adelante: un ejercicio NUEVO de un club que YA tiene años cargados (Boca, River, Racing, etc.) —
+    el proyecto va a crecer más por años-de-clubes-existentes que por clubes nuevos.
+
+    **Tabla completa del pipeline: quién hace cada paso HOY, qué podría bajarlo a script/API, y el
+    fallback cuando la opción barata no alcanza.**
+
+    | # | Paso | Quién lo hace HOY | Podría bajarse a (barato/gratis) | Fallback si no alcanza |
+    |---|---|---|---|---|
+    | 1 | Sourcing: encontrar el PDF del club | Claude (Sonnet, a veces escala a Exa/Firecrawl/Opus) | No — necesita criterio para elegir qué mirar, descartar sitios falsos y homónimos (ver to-do 76) | Es la propia escalera de `club-sourcing/SKILL.md` 0.1b: Sonnet → gate de señal → Exa → Opus → Sonnet |
+    | 2 | Descargar el PDF ya encontrado | Ya es mecánico (`curl`, `tools/wayback-verify-download.mjs`) | — (ya es script) | Firecrawl si el sitio bloquea `curl`/WAF |
+    | 3 | Transcribir el PDF a `.md` | Ya es mecánico desde CLAUDE.md Versiones 244-248: Mistral OCR / Gemini, 0 tokens, Guido lo corre desde su terminal | — (ya es script/API) | Un subagente de Claude con Tesseract, solo si Gemini rechaza por `RECITATION` |
+    | 4 | Sacar del `.md` transcripto la lista de rubros con su monto (hoy: Claude lee el documento ENTERO, miles de líneas, para encontrar la tabla de Recursos/Gastos entre actas, firmas y dictámenes que no aportan ningún dato) | Claude | **Propuesta nueva**: un script que parsea las tablas Markdown del `.md` (Mistral las arma bastante regulares) y arma un JSON compacto `{sección, rawLabel, monto, página}`. Claude lee el JSON, no el documento entero | Si el documento tiene una tabla con formato irregular (rotada, mezclada con texto — ver `club-data-mapping` sección 9), el script no arma nada limpio y Claude sigue leyendo el `.md` como hoy |
+    | 5 | Decidir a qué `normalizedCategory` del sitio va cada rubro | Claude, para TODOS los rubros, cada vez | **Tier 0 (script, gratis)**: si el rubro YA apareció con ese texto exacto en un año anterior del MISMO club, copiar la categoría que ya se usó — matchea contra `data/<club>-data.js` ya cargado. **Tier 1 (Jev, cuando se sume, to-do 36/74)**: rubro nuevo en ese club, pero parecido semánticamente a una categoría ya usada en CUALQUIER club | **Tier 2 (Claude)**: rubro genuinamente nuevo, ambiguo, o **la primera categorización de un club/país sin ningún precedente** (ver la explicación larga más abajo, es el caso que de verdad no se puede sacar de Claude) |
+    | 6 | Elegir el tipo de cambio a USD | Claude, leyendo el Anexo de moneda extranjera del balance | El tipo de cambio DECLARADO por el propio documento (la regla preferida siempre, `club-data-mapping` sección 5 regla 0) lo sigue leyendo Claude a mano — es un número puntual en una tabla chica, no vale la pena un script para esto todavía | Si el documento NO declara su propio fx, ya existe `tools/lookup-fx-close.js` (cotización de mercado, local, sin fetch) |
+    | 7 | Verificar que todo cierra (sumas de `items`, escala plausible, salto contra años anteriores) | Hoy: a mano/ad-hoc, cada sesión reinventa el chequeo | **Ya existe y no se estaba usando primero**: `node tools/audit.js` (gratis) — `items-no-cierran`, `escala-implausible`, `salto-interanual` y el resto de los checks. Ver la nota agregada el 2026-09-28 en `club-data-mapping/SKILL.md` sección 6: correrlo ANTES de cualquier verificación a mano | Si `audit.js` marca algo raro, Claude vuelve al documento para esa línea puntual, no para todo el balance |
+    | 8 | Color de marca (`brandColor`), SOLO para un club nuevo, no un año más | Claude, siguiendo `club-or-year-onboarding` sección 3 | Ya existe `tools/lookup-brand-color.js` (busca local contra ligas ya cacheadas) | Si la liga no está cacheada, Claude sale a buscar (Wikipedia/sitio oficial/agregadores), como hoy |
+    | 9 | Publicar (3 generadores + `audit.js`) | Ya es mecánico | — (ya son scripts) | — |
+
+    **Qué significa "la primera categorización de un club/país sin ningún precedente" (paso 5,
+    tier 2) — la parte que de verdad no se puede sacar de Claude, explicada con contexto porque no
+    es obvia:** cada línea de texto de un balance (ej. "Cuotas sociales", "Departamento de fútbol
+    juvenil") tiene que mapearse a una de las ~20 categorías fijas que usa el sitio para poder sumar
+    y comparar clubes entre sí (`normalizedCategory`, la lista completa está en
+    `data/category-map.js`: cosas como `member_dues`, `player_sales`, `wages_squad`). Cuando un club
+    YA tiene años cargados, el año nuevo casi siempre repite las MISMAS palabras que ya se usaron
+    para ESE club — ahí un script puede copiar la decisión vieja sin pensar (el tier 0 de arriba).
+    Pero la PRIMERA vez que aparece un club nuevo — y sobre todo un PAÍS nuevo, con su propio régimen
+    contable, que puede ser bien distinto del argentino — no hay ningún precedente en el sitio para
+    copiar. Ejemplo real, ya documentado en `club-data-mapping` sección 20: los balances daneses
+    pueden usar una exención legal (§ 32 de su ley de balances) que permite mostrar el ingreso ya
+    neteado en un solo número ("Bruttofortjeneste"), sin desglosar nada — no hay forma de que un
+    script adivine eso, hay que LEER la nota de política contable del balance y entender qué está
+    pasando. Ahí Claude tiene que: (a) leer el documento completo y entender la estructura PROPIA de
+    ese club/país (que puede no separar nada, o separar distinto a como separa Argentina); (b)
+    decidir con criterio a qué categoría del sitio corresponde cada rubro, usando de guía la tabla de
+    precedentes de OTROS clubes pero sin que haya un match exacto; (c) si la estructura es rara de
+    verdad, inventar un criterio nuevo y dejarlo ESCRITO en `club-data-mapping/SKILL.md` para que la
+    PRÓXIMA vez que aparezca algo parecido (mismo país, u otro con el mismo problema) ya exista el
+    precedente y ese caso pase a ser tier 0 o tier 1. Por esto un club/país nuevo sale más caro en
+    tokens que un año más de un club conocido, y por esto Jev tampoco alcanza acá todavía: Jev
+    clasifica ENTRE categorías que ya existen, pero la pregunta en este caso es "¿esto necesita una
+    categoría nueva, o encaja en una que ya existe con otro nombre?" — eso es una decisión de DISEÑO
+    del esquema del sitio, no una clasificación entre opciones fijas.
+
+    **Nada de esto es un cambio de código todavía** — es la lista de candidatos concretos que pedía
+    el to-do 85, para que Guido priorice cuáles construir. El paso 4 (extracción de tablas) es
+    probablemente el de mayor repago inmediato: no depende de sumar Jev ni de rediseñar nada, achica
+    directo cuánto documento tiene que leer Claude en CUALQUIER onboarding, no solo en los repetidos.
+
 97. EL PIPELINE DE TRANSCRIPCIÓN (Mistral/Gemini) NO ACTUALIZA NINGÚN INVENTARIO — evaluar si
     conviene que lo haga (pregunta de Guido, 2026-09-28). Lo que hay hoy: `tools/mistral-ocr-
     transcribe.mjs` y `tools/gemini-transcribe.mjs` solo appendean a `Admin/{mistral,gemini}/
