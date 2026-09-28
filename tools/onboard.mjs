@@ -58,13 +58,22 @@
 //   decide si un ejercicio ya está cargado -- ver el párrafo de arriba. Si
 //   el nombre del archivo no sugiere ningún año, hay que pasar --year.
 //
-//   Lote (todo lo que exista bajo Clubes/, o una subcarpeta con --dir --
-//   SÍ es seguro correrlo sobre TODO Clubes/, ver el párrafo de arriba):
+//   Lote (todo lo que exista bajo Clubes/, o una subcarpeta con --dir):
 //     node tools/onboard.mjs --all [--dir Clubes/Colombia] [--limit 50]
 //   En modo lote, --club/--year no aplican (cada documento adivina el suyo).
 //   Un documento con discrepancia sin resolver se vuelve a listar cada vez
 //   que se corre --all (no cuesta nada, es comparación local) hasta que
 //   alguien lo resuelva.
+//
+//   TOPE DE SEGURIDAD (pedido de Guido, 2026-09-29): si hay más de
+//   DEFAULT_MAX_PENDING (50) documentos que todavía necesitan trabajo (ni
+//   cargados en el sitio ni con briefing al día), el comando se NIEGA a
+//   correr sin que se lo confirmes -- cada uno puede disparar Mistral Y
+//   Gemini de una. Pasá `--limit <=50` para una tanda más chica, o
+//   `--confirm` si de verdad querés procesar todos de una. Esto aplica
+//   siempre, con o sin --dir: acotar la carpeta no destraba el tope solo,
+//   sigue haciendo falta uno de los dos flags si la carpeta tiene más de 50
+//   documentos pendientes.
 //
 //   --dry-run: no llama a ninguna API ni corre nada, solo muestra qué haría.
 // ============================================================================
@@ -76,6 +85,10 @@ import vm from 'node:vm';
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const GEMINI_CHECK_SUFFIX = '.gemini-check';
+// Tope de seguridad para --all SIN --limit/--confirm explícito (pedido de Guido, 2026-09-29,
+// "ponele n=50"): más de esto y cada documento pendiente puede disparar Mistral Y Gemini, plata
+// real -- mejor frenar y pedir confirmación explícita que barrer miles de una sola corrida.
+const DEFAULT_MAX_PENDING = 50;
 
 function usage() {
   console.error([
@@ -173,37 +186,42 @@ function briefingIsFresh(mdPath) {
   return statSync(briefingPath).mtimeMs >= statSync(mdPath).mtimeMs;
 }
 
-function resolveClubAndYear(pdfPath, club, year) {
+// Versión SIN console.log -- usada por el conteo de "cuántos documentos hace falta procesar" antes
+// de arrancar un --all (ver DEFAULT_MAX_PENDING más abajo), para no imprimir dos veces los mismos
+// avisos de club/año adivinado (una vez al contar, otra al procesar de verdad).
+function resolveClubAndYearQuiet(pdfPath, club, year) {
   let clubId = club;
   if (!clubId) {
     const clubsTable = loadClubsTable();
     const folder = clubFolderName(pdfPath);
     const { matches } = guessClubId(folder, clubsTable);
-    if (matches.length === 1) {
-      clubId = matches[0];
-      console.log(`  club adivinado por carpeta ("${folder}"): ${clubId}`);
-    } else if (matches.length > 1) {
-      console.error(`  "${folder}" matchea ${matches.length} clubes (${matches.join(', ')}) -- pasá --club explícito, no adivino.`);
-      return null;
-    } else {
-      // 0 coincidencias: probablemente un club todavía no onboardeado. Nombre de carpeta
-      // normalizado como clubId PROVISORIO, solo para etiquetar -- prepare-onboarding.mjs ya avisa
-      // "no existe data/<id>-data.js" en ese caso, no hay riesgo de confundirlo con uno real.
-      clubId = normalize(folder || 'club-nuevo').replace(/\s+/g, '-') || 'club-nuevo';
-      console.log(`  "${folder}" no matchea ningún club ya cargado -- club nuevo, uso "${clubId}" como etiqueta provisoria.`);
-    }
+    if (matches.length === 1) clubId = matches[0];
+    else if (matches.length > 1) return { error: `"${folder}" matchea ${matches.length} clubes (${matches.join(', ')}) -- pasá --club explícito, no adivino.` };
+    else clubId = normalize(folder || 'club-nuevo').replace(/\s+/g, '-') || 'club-nuevo';
   }
-
   let resolvedYear = year;
   if (!resolvedYear) {
     resolvedYear = guessYear(basename(pdfPath));
-    if (!resolvedYear) {
-      console.error('  No pude adivinar el año del nombre del archivo -- pasá --year explícito.');
-      return null;
-    }
-    console.log(`  año adivinado del nombre del archivo: ${resolvedYear} (sin verificar contra el documento)`);
+    if (!resolvedYear) return { error: 'No pude adivinar el año del nombre del archivo -- pasá --year explícito.' };
   }
   return { clubId, year: resolvedYear };
+}
+
+function resolveClubAndYear(pdfPath, club, year) {
+  const res = resolveClubAndYearQuiet(pdfPath, club, year);
+  if (res.error) {
+    console.error(`  ${res.error}`);
+    return null;
+  }
+  if (!club) {
+    const folder = clubFolderName(pdfPath);
+    const clubsTable = loadClubsTable();
+    const { matches } = guessClubId(folder, clubsTable);
+    if (matches.length === 1) console.log(`  club adivinado por carpeta ("${folder}"): ${res.clubId}`);
+    else console.log(`  "${folder}" no matchea ningún club ya cargado -- club nuevo, uso "${res.clubId}" como etiqueta provisoria.`);
+  }
+  if (!year) console.log(`  año adivinado del nombre del archivo: ${res.year} (sin verificar contra el documento)`);
+  return res;
 }
 
 // BUG REAL DE DISEÑO encontrado por Guido antes de correr esto de verdad: sin este chequeo, un
@@ -327,26 +345,45 @@ function main() {
     const dirFlag = args.indexOf('--dir');
     const dir = resolve(projectRoot, dirFlag >= 0 ? args[dirFlag + 1] : 'Clubes');
     const limitFlag = args.indexOf('--limit');
-    const limit = limitFlag >= 0 ? parseInt(args[limitFlag + 1], 10) : Infinity;
+    const explicitLimit = limitFlag >= 0 ? parseInt(args[limitFlag + 1], 10) : null;
+    const confirmed = args.includes('--confirm');
 
-    let pdfs = findPdfsUnder(dir);
-    pdfs = pdfs.slice(0, limit);
-    console.log(`${pdfs.length} PDF encontrados bajo ${dir.replace(projectRoot + '/', '')}.`);
+    const allPdfs = findPdfsUnder(dir);
+    // "Necesita trabajo" = no tiene un briefing al día NI ya está cargado en el sitio -- calculado
+    // ACÁ, antes de procesar nada, para poder frenar si el número es grande (ver DEFAULT_MAX_PENDING
+    // abajo). Encontrado real, 2026-09-29 (Guido, antes de correr esto de verdad): Clubes/ tiene 3358
+    // PDF en total, de los cuales solo ~290 ya están cargados -- un `--all` sin este freno mandaría
+    // los otros ~3068 (sourceados pero nunca onboardeados) a Mistral Y Gemini de una sola vez, plata
+    // real sin que nadie lo haya decidido a propósito.
+    const needsWork = allPdfs.filter((pdfPath) => {
+      const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
+      if (briefingIsFresh(mdPath)) return false;
+      const resolved = resolveClubAndYearQuiet(pdfPath, null, null);
+      if (resolved.error) return true; // no se puede adivinar club/año -- se va a frenar solo al procesarlo, pero cuenta como pendiente
+      return !isAlreadyOnboarded(resolved.clubId, resolved.year);
+    });
 
-    let processed = 0;
+    console.log(`${allPdfs.length} PDF encontrados bajo ${dir.replace(projectRoot + '/', '')}, ${needsWork.length} necesitan trabajo.`);
+
+    const effectiveLimit = explicitLimit ?? Infinity;
+    if (!confirmed && effectiveLimit > DEFAULT_MAX_PENDING && needsWork.length > DEFAULT_MAX_PENDING) {
+      console.error(`\n${needsWork.length} documentos pendientes es más de ${DEFAULT_MAX_PENDING} -- cada uno puede disparar Mistral Y Gemini (plata real), así que no corro esto sin que lo confirmes.`);
+      console.error(`Pasá --limit <=${DEFAULT_MAX_PENDING} para una tanda más chica, o --confirm si de verdad querés procesar los ${needsWork.length} de una.`);
+      process.exit(1);
+    }
+
+    const toProcess = needsWork.slice(0, effectiveLimit === Infinity ? needsWork.length : effectiveLimit);
     let pending = 0;
     const pendingFiles = [];
-    for (const pdfPath of pdfs) {
+    for (const pdfPath of toProcess) {
       const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-      if (briefingIsFresh(mdPath)) continue; // ya procesado y ya coincidía
       processOne(pdfPath, { club: null, year: null, dryRun, verbose: false });
-      processed++;
       if (!dryRun && existsSync(mdPath) && !briefingIsFresh(mdPath)) {
         pending++;
         pendingFiles.push(relative(projectRoot, pdfPath));
       }
     }
-    console.log(`\n${processed} documento(s) tocados.`);
+    console.log(`\n${toProcess.length} documento(s) tocados.`);
     if (pending) {
       console.log(`${pending} quedaron PENDIENTES de revisión (Mistral/Gemini no coincidieron, o falta alguna transcripción):`);
       pendingFiles.forEach((f) => console.log(`  - ${f}`));
