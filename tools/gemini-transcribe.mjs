@@ -19,7 +19,7 @@
 // Corre entero desde tu propia terminal: no necesita ninguna sesión de Claude Code para nada, así que
 // no consume tokens de Claude sea 1 PDF o sean 2000 -- ver la sección de esto en Admin/test-costo-transcripcion.md.
 
-import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, basename, extname, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 
@@ -133,9 +133,19 @@ function findPdfsSinTranscribir(startDir) {
   return out.sort();
 }
 
-async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS) {
+async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, opts = {}) {
   const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-  if (existsSync(mdPath)) {
+  // `opts.redo`: --redo-mistral-scanned SÍ quiere pisar un .md que ya existe (el de Mistral).
+  // BUG REAL, 2026-09-28: la versión anterior de este flag borraba TODOS los .md del lote entero
+  // ANTES de arrancar a procesarlos uno por uno -- si la corrida se cortaba a mitad de camino
+  // (cerrar la terminal, Ctrl+C), quedaban cientos de archivos borrados y sin reemplazo, el
+  // trabajo de Mistral ya hecho perdido de verdad (recuperado a mano con `git restore` porque
+  // no había commit de por medio, pero no iba a haber red de seguridad la próxima vez). El fix:
+  // NO se borra nada por adelantado. Acá abajo directamente no se saltea por `existsSync`, y
+  // `writeFileSync()` (más abajo) ya pisa el archivo solo -- no hace falta un `unlinkSync`
+  // previo. Si esta llamada puntual falla o se corta, el .md de Mistral sigue intacto: recién se
+  // pierde en el mismo instante en que se reemplaza por uno bueno.
+  if (existsSync(mdPath) && !opts.redo) {
     return { skipped: true, pdf: pdfPath };
   }
 
@@ -256,7 +266,7 @@ async function runPool(items, concurrency, worker) {
   });
 }
 
-async function runBatch(pending, apiKey, concurrency, timeoutMs) {
+async function runBatch(pending, apiKey, concurrency, timeoutMs, opts = {}) {
   let ok = 0, fail = 0, cost = 0, fidelidadAlertas = 0;
   const startAll = Date.now();
   await runPool(pending, concurrency, async (pdfPath) => {
@@ -265,7 +275,7 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
     // se anota y se sigue, para que una corrida de 1000 no se corte por el documento #300.
     let res;
     try {
-      res = await transcribeOne(pdfPath, apiKey, timeoutMs);
+      res = await transcribeOne(pdfPath, apiKey, timeoutMs, opts);
     } catch (err) {
       res = { ok: false, pdf: pdfPath, error: String(err?.message ?? err) };
       appendFileSync(
@@ -313,11 +323,10 @@ async function main() {
   if (args.includes('--redo-mistral-scanned')) {
     const pending = findMistralScannedNotYetRedone();
     console.log(`${pending.length} PDFs marcados como escaneados por Mistral y sin re-hacer todavía, procesando con Gemini (concurrencia=${concurrency})`);
-    for (const pdfPath of pending) {
-      const md = pdfPath.slice(0, -4) + '.md';
-      if (existsSync(md)) unlinkSync(md); // se reemplaza la version de Mistral, no queda al lado
-    }
-    await runBatch(pending, apiKey, concurrency, timeoutMs);
+    // NO se borra nada acá (ver el comentario de `transcribeOne`, `opts.redo`): cada .md de
+    // Mistral se pisa recién cuando Gemini termina bien ESE archivo puntual, uno por uno. Cortar
+    // la corrida a la mitad deja a medio hacer, nunca deja a medio BORRAR.
+    await runBatch(pending, apiKey, concurrency, timeoutMs, { redo: true });
     return;
   }
 

@@ -15,6 +15,25 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 284 — fix real: `--redo-mistral-scanned` podía borrar transcripciones sin reemplazo
+
+- **Incidente, 2026-09-28**: Guido corrió `node tools/gemini-transcribe.mjs --redo-mistral-scanned`
+  (Grecia/Italia/Noruega, ~203 PDFs marcados como escaneados por Mistral) y lo cerró a mitad de
+  camino porque "andaba raro". Al cerrarlo, 203 archivos `.md` de Grecia/Italia/Noruega quedaron
+  BORRADOS del working tree, sin ningún reemplazo de Gemini escrito — trabajo de Mistral ya hecho,
+  desaparecido. Recuperado entero con `git checkout -- Clubes/Grecia Clubes/Italia Clubes/Noruega`
+  porque nada se había commiteado todavía (si se hubiera commiteado antes de cerrar la sesión, se
+  perdía de verdad).
+- **Causa raíz, ya arreglada**: `--redo-mistral-scanned` borraba los `.md` de LOS 203 PDFs DEL LOTE
+  ENTERO, de una, ANTES de arrancar a procesarlos uno por uno con Gemini (para evitar el guard
+  `if (existsSync(mdPath)) return skipped` de `transcribeOne()`, que si no los saltea a todos). Con
+  eso, cualquier corte a mitad de la corrida (Ctrl+C, cerrar la terminal) dejaba cientos de archivos
+  borrados sin haber llegado siquiera a intentarlos con Gemini.
+- **El fix**: `transcribeOne()` ahora acepta `opts.redo` — con eso saltea el guard de `existsSync`
+  SIN borrar nada; `writeFileSync()` ya pisa el archivo solo cuando Gemini responde bien. Resultado:
+  un .md solo se pierde en el mismo instante en que se reemplaza por uno bueno, nunca antes. Cortar
+  la corrida a la mitad deja trabajo a medio HACER (algunos redos pendientes), nunca a medio BORRAR.
+
 ## Versión 283 — to-do 83, segunda parte: "sumar uno o más equipos" desde Ligas
 
 - Al ver cualquier liga, un buscador nuevo ("Sumar un club a este ranking…") deja insertar cualquier
