@@ -216,6 +216,48 @@ perdieron sino que se descartaron:
     sección en vez de la primera, o alguna otra heurística más robusta — no arreglado todavía,
     documentado como limitación conocida en `tools/club-league-reference/README.md`.
 
+105. PLAN PARA SUBIR EL RITMO DE ONBOARDING RUMBO A 2000 PDFs ANTES DE FIN DE AÑO (pregunta de
+    Guido, 2026-09-28, después de los 5 onboardings de prueba del to-do 98: *"necesito velocidad
+    para subir onboardings y de alta calidad. a este ritmo no subo 2000 pdfs antes de fin de año.
+    O crees que con JEV ya esta bien?"*). Respuesta corta: **JEV solo NO alcanza** — resuelve una
+    sola cosa (categorizar un rubro nuevo comparándolo contra clubes YA cargados, to-do 99) y ni
+    siquiera está prendido todavía (el gate de integración espera a 200 clubes, hoy 164). El cuello
+    de botella real para volumen es el SOURCING de clubes 100% nuevos (paso 1 del pipeline, to-do
+    98), que sigue siendo 100% criterio de Claude — JEV no lo toca.
+
+    **Dato a favor, para calibrar la fecha**: la ronda de 5 onboardings de hoy anduvo lenta A
+    PROPÓSITO, porque además de cargar datos estaba probando y depurando tools nuevas — encontró y
+    corrigió 5 bugs reales en el camino (mezcla ingreso/gasto en `suggest-category-precedent.mjs`,
+    error de índices en su flag `--side`, 2 casos del fetcher de ligas que toma la tabla
+    equivocada — to-do 104 —, y un dígito transpuesto real de Mistral en River). Ese costo de
+    "pagar la deuda de bugs" ya está pagado una vez; el onboarding #6 en adelante, con las tools ya
+    probadas, debería salir más rápido que cualquiera de los 5 de hoy.
+
+    **Recomendaciones concretas, en orden de impacto:**
+    1. **Armar `tools/prepare-onboarding.mjs <club> <año> <archivo.md>`**: un script que corra TODO
+       lo mecánico de una sola vez ANTES de que arranque la sesión de Claude — extraer tablas
+       (`extract-table-rows.mjs`), correr `sum-check.mjs` sobre las Notas con un total impreso
+       detectable, consultar precedente (`suggest-category-precedent.mjs`) para cada rawLabel
+       encontrado, resolver la liga si hace falta (pipeline del to-do 95) — y dejar UN archivo de
+       "briefing" compacto. Hoy Claude orquesta 15-20 llamadas de tool por onboarding, una por una,
+       con razonamiento entre cada una; leer un solo briefing en vez de orquestar todo eso es el
+       ahorro más grande que queda sobre la mesa. NO CONSTRUIDO TODAVÍA — Guido pidió anotarlo antes
+       de que la sesión se comprima, retomarlo en una sesión nueva.
+    2. **Agrupar varios años del MISMO club en una sola sesión**, no uno por sesión — el precedente
+       de `suggest-category-precedent.mjs` mejora con cada año que se suma (Once Caldas pasó de
+       10/11 EXACTO en su 2do año cargado a 11/11 en el 4to), y se evita pagar el arranque en frío
+       de leer los skills/entender el club de nuevo cada vez.
+    3. **Paralelizar clubes DISTINTOS con subagentes** (Agent tool) — no baja tokens totales, pero sí
+       baja tiempo de reloj, que es la métrica que más importa para la fecha límite.
+    4. **Nunca cortar el tie-out** (`sum-check.mjs`/`node tools/audit.js`) para ganar velocidad — es
+       el paso más barato de todo el pipeline y es el que atrapó los 2 errores reales de hoy (el
+       dígito transpuesto de River, la línea sin atribuir de Boyacá Chicó). Cortarlo es exactamente
+       donde se pierde "alta calidad" a cambio de velocidad.
+    5. **Antes de prometer una fecha, cuantificar la mezcla real de los 2000 PDFs**: ¿cuántos son
+       AÑOS NUEVOS de clubes que ya están en el sitio (rápido, tier 0 ya cubre la mayoría) vs.
+       CLUBES/PAÍSES 100% nuevos (lento, sourcing sigue siendo 100% Claude, ninguna tool de hoy lo
+       resuelve)? La respuesta cambia la estrategia entera — no evaluado todavía.
+
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
