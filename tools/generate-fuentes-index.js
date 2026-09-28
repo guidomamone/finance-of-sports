@@ -161,6 +161,10 @@ const OVERRIDES = {
   'México|Chivas Guadalajara': { doc: false, motivo: 'sin PDF explícito: sociedad privada, no cotiza' },
   'México|Mazatlán FC': { doc: false, motivo: 'sin cifras explícito: TV Azteca nunca desglosó el segmento fútbol' },
   'México|Monterrey': { doc: false, motivo: 'sin PDF/sin cifras explícito: el 20-F de FEMSA no lo menciona' },
+  'Estados Unidos|Toronto Maple Leafs': { doc: false, motivo: 'mismo bundle MLSE/Rogers que Raptors, sin desagregar por equipo' },
+  'Estados Unidos|Dallas Mavericks': { doc: false, motivo: 'propiedad privada de la familia Adelson, sin estados contables propios del equipo' },
+  'Estados Unidos|Toronto Raptors': { doc: false, motivo: '40-F de Rogers junta 4 equipos de 4 ligas en un solo bloque MLSE, sin desagregar ni al nivel de MLSE siquiera' },
+  'Estados Unidos|Miami Heat': { doc: false, motivo: 'la auditoría del Inspector General de Miami-Dade es sobre el contrato de la arena, no un estado contable del club' },
 };
 
 // ---------------------------------------------------------------------------

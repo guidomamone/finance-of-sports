@@ -11,6 +11,10 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [New York Knicks](<../Estados Unidos/New York Knicks.md>) — **básquet (NBA)** — 10-K FY2026 real descargado, comparte documento con los Rangers — Último chequeo: 2026-09-13
 - [New York Rangers](<../Estados Unidos/New York Rangers.md>) — **hockey sobre hielo (NHL)** — mismo 10-K de MSG Sports que los Knicks — Último chequeo: 2026-09-13
 - [LA Galaxy](<../Estados Unidos/LA Galaxy.md>) — fútbol (MLS) — sin PDF, dead-end estructural (single-entity) — Último chequeo: 2026-09-13
+- [Toronto Raptors](<../Estados Unidos/Toronto Raptors.md>) — **básquet (NBA, Canadá)** — sin balance propio; dueño (MLSE) consolidado en Rogers Communications desde jul-2025 vía 40-F, pero revenue solo a nivel MLSE completo (4 equipos + arena), sin desagregar por franquicia — Último chequeo: 2026-09-27
+- [Miami Heat](<../Estados Unidos/Miami Heat.md>) — **básquet (NBA)** — sin balance del club; lead real: auditoría de 2012 del Inspector General de Miami-Dade sobre el contrato de la arena (no es un estado contable del club) — Último chequeo: 2026-09-27
+- [Toronto Maple Leafs](<../Estados Unidos/Toronto Maple Leafs.md>) — **hockey sobre hielo (NHL, Canadá)** — sin balance propio; mismo bundle MLSE que Toronto Raptors (4 equipos mezclados en el 40-F de Rogers, sin desagregar) — Último chequeo: 2026-09-27
+- [Dallas Mavericks](<../Estados Unidos/Dallas Mavericks.md>) — **básquet (NBA)** — sin balance del club; propiedad privada de la familia Adelson (dueña de Las Vegas Sands), confirmado vía DEF 14A pero sin estados contables del equipo — Último chequeo: 2026-09-27
 - [Notas generales de Estados Unidos](<../Estados Unidos/_notas-generales.md>) — el dead-end de la MLS NO se extiende al resto de los deportes: la SEC sí es un canal
 
 **Clubes de África:** Primer barrido de sourcing en el continente (sesión 2026-09-13), 0 clubes con
