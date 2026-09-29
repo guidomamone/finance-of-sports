@@ -50,7 +50,7 @@ function pdfText(pdfPath) {
 }
 
 function pageCount(pdfPath) {
-  const out = execFileSync('pdfinfo', [pdfPath]).toString('latin1');
+  const out = execFileSync('pdfinfo', [pdfPath], { maxBuffer: 256 * 1024 * 1024 }).toString('latin1');
   const m = out.match(/^Pages:\s+(\d+)/m);
   return m ? Number(m[1]) : null;
 }

@@ -82,7 +82,7 @@ const sha1 = (p) => createHash('sha1').update(readFileSync(p)).digest('hex');
 const readJsonl = (p) => (existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : []);
 
 function pageCount(pdf) {
-  const m = execFileSync('pdfinfo', [pdf]).toString('latin1').match(/^Pages:\s+(\d+)/m);
+  const m = execFileSync('pdfinfo', [pdf], { maxBuffer: 256 * 1024 * 1024 }).toString('latin1').match(/^Pages:\s+(\d+)/m);
   return m ? Number(m[1]) : 0;
 }
 
