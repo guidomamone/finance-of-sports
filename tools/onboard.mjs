@@ -162,10 +162,18 @@ function guessClubId(folderName, clubsTable) {
 // El año de CIERRE si el nombre trae un rango ("2021-2022" -> 2022, "2022-23" -> 2023), o el único
 // año de 4 dígitos que encuentre.
 function guessYear(filename) {
+  // BUG REAL (2026-09-29, encontrado al correr las tools de onboarding sobre los 21 documentos del piloto del
+  // inventario): "acta-...-2025-12-31.pdf" se leía como el rango "2025-12" -> 2012, y "jaarrekening-2011-06-30"
+  // como 2006. Una fecha ISO (AAAA-MM-DD) es la fecha de CIERRE: el año es el primero. Y un sufijo de 2 dígitos solo
+  // es "el final de un rango" (2021-22) si es el año siguiente: si no, es otra cosa (un mes, un día).
+  const iso = filename.match(/(?<!\d)(\d{4})[-_](0[1-9]|1[0-2])[-_](0[1-9]|[12]\d|3[01])(?!\d)/);
+  if (iso) return parseInt(iso[1], 10);
   const range = filename.match(/(\d{4})[-_](\d{2,4})(?!\d)/);
   if (range) {
-    const endYear = range[2].length === 2 ? range[1].slice(0, 2) + range[2] : range[2];
-    return parseInt(endYear, 10);
+    const start = parseInt(range[1], 10);
+    if (range[2].length === 4) return parseInt(range[2], 10);
+    const endYear = parseInt(range[1].slice(0, 2) + range[2], 10);
+    if (endYear === start + 1) return endYear;
   }
   const single = filename.match(/(\d{4})/);
   return single ? parseInt(single[1], 10) : null;

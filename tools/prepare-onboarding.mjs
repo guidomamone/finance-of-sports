@@ -178,11 +178,26 @@ function checkTieOuts(tables) {
           continue;
         }
         const addends = addendsRaw;
-        const res = runNode('tools/sum-check.mjs', [...addends, '--target', targetRaw]);
+        const check = (list) => runNode('tools/sum-check.mjs', [...list, '--target', targetRaw]);
+        let res = check(addends);
         const entry = {
           page: table.page, section: table.section, likelyRelevant: table.likelyRelevant, column: col,
           totalLabel: totalRow.rawLabel, target: targetRaw, addendCount: addends.length,
         };
+        // BUG REAL (2026-09-29, corrida de estas tools sobre los 21 documentos del piloto del inventario): un
+        // balance con jerarquía (CIRCULANTE + sus rubros, NÃO CIRCULANTE + sus rubros, TOTAL DO ATIVO) contaba cada
+        // peso DOS veces (subtotal y rubros), y daba una "diferencia" exactamente igual al total: un falso fallo que
+        // hacía pensar que la transcripción estaba mal (Goias, Ferro, São Paulo...). Si sumando todo no cierra, se
+        // prueba también sin las filas en negrita (rubros solos) y solo con las filas en negrita (subtotales solos).
+        // Se acepta solo un cierre EXACTO: con centavos, una coincidencia por casualidad es despreciable.
+        if (!/CIERRA EXACTO/.test(res.stdout)) {
+          const pick = (bold) => segmentRows.filter((r) => Boolean(r.bold) === bold).map((r) => r.values[col]).filter((v) => !isBlankCell(v) && looksNumeric(v));
+          for (const [how, list] of [['sin-subtotales-en-negrita', pick(false)], ['solo-subtotales-en-negrita', pick(true)]]) {
+            if (list.length < 2) continue;
+            const r2 = check(list);
+            if (/CIERRA EXACTO/.test(r2.stdout)) { res = r2; entry.how = how; entry.addendCount = list.length; break; }
+          }
+        }
         if (/CIERRA EXACTO/.test(res.stdout)) {
           entry.closes = true;
         } else {
@@ -190,6 +205,11 @@ function checkTieOuts(tables) {
           if (diffMatch) {
             entry.closes = false;
             entry.diff = diffMatch[1];
+            // Documentos en miles/unidades redondeadas: cada rubro se redondeó por separado, así que el total puede
+            // diferir en ±1 (o unos pocos) sin que haya ningún error. Solo si TODOS los importes son enteros.
+            const diffNum = Math.abs(parseFloat(String(diffMatch[1]).replace(/[^0-9.\-eE]/g, '')));
+            const allInt = [targetRaw, ...addends].every((v) => !/[.,]\d{1,2}\)?\s*$/.test(String(v).trim()) || /[.,]\d{3}\)?\s*$/.test(String(v).trim()));
+            if (allInt && diffNum > 0 && diffNum <= Math.max(1, Math.ceil(addends.length / 2))) { entry.closes = true; entry.how = `redondeo (diferencia ${diffMatch[1]} en ${addends.length} rubros enteros)`; }
           } else {
             entry.error = (res.stderr || res.stdout || 'sum-check.mjs no devolvió resultado reconocible').trim().split('\n').pop();
           }

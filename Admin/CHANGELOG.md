@@ -53,6 +53,16 @@ que dice `ESTADO.md` era verdad ese día.
   (Almagro 2018); texto de PDF roto (Ferro 121, Cuiaba) gastaba Claude en vano; PDFs de 34 MB superaban el límite de
   la API (Temperley: una página de 25 MB se rasteriza a 130 dpi -> 170 KB).
 - Pilotos: 21 documentos de 14 países, todos `listo` (algunos con `reserva`), ~$5,20 de API.
+- **Bugs de las tools de onboarding encontrados corriéndolas (gratis) sobre los 21 documentos del piloto:**
+  - `tools/onboard.mjs` `guessYear()`: una fecha ISO en el nombre (`...-2025-12-31.pdf`) se leía como el rango
+    "2025-12" -> **2012**, y `2011-06-30` como 2006. Efecto real: **26 ejercicios ya cargados** (Bélgica 2025-06-30,
+    Dinamarca, etc.) figuraban como pendientes, así que un `--all` los habría re-transcripto y pagado de nuevo. Corregido
+    (fecha ISO = año de cierre; un sufijo de 2 dígitos solo es rango si es el año siguiente). Cargados en el registro: 276 -> 302.
+  - `tools/prepare-onboarding.mjs` tie-out: en un balance con jerarquía sumaba subtotales Y sus rubros (cada peso dos veces:
+    la "diferencia" daba exactamente el total). Ahora, si no cierra, prueba sin las filas en negrita y solo con ellas
+    (cierre exacto obligatorio), y tolera ±redondeo en documentos de importes enteros. Fallos falsos en los 21: 244 -> 107;
+    los que quedan son totales encadenados/jerárquicos sin negrita (límite conocido), y las cuentas de los documentos cierran a mano.
+
 
 ## Versión 304 — `tools/claude-api-transcribe.mjs`: la 3ra API conectada de verdad (Claude, API directa), y el paso 2 del HTML al día
 
