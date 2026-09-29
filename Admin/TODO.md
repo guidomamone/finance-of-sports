@@ -54,6 +54,18 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+107. PROBAR DE VERDAD `tools/claude-api-transcribe.mjs` (la 3ra API, Claude por API directa,
+    conectada en la Versión 304 — ver `Admin/CHANGELOG.md`), pendiente de que Guido termine de
+    poner la key en `Admin/claude-api/.env`. A diferencia de Mistral/Gemini, esta tool nunca
+    transcribió un documento real todavía — antes de confiar en ella para el caso real (Gemini
+    rechazando por RECITATION), probarla contra al menos 1 documento y verificar: (a) que el `.md`
+    sale bien formado (marcas de página, tablas, sin comentarios propios del modelo colados); (b)
+    que `tools/compare-transcripts.mjs` la puede comparar contra la transcripción de Mistral sin
+    romper; (c) el costo real por documento (la tool ya loguea a `Admin/claude-api/resultados.jsonl`)
+    contra la estimación de ~$0,15–$0,30 que se dio de entrada. Ideal: agarrar un documento real que
+    Gemini ya haya rechazado por RECITATION (`Admin/gemini/fallidos.jsonl`, buscar `RECITATION` en el
+    campo `error`) para probar el caso real, no uno cualquiera.
+
 98. BAJAR EL COSTO EN TOKENS DE CLAUDE DEL ONBOARDING DE UN EJERCICIO NUEVO (candidato del to-do 85,
     pedido de Guido 2026-09-28: *"sería factible un enfoque en el que se utilicen más scripts que
     corren en mi computadora y vos solo pienses cuando haga falta?"*). Mismo principio que ya se usó
