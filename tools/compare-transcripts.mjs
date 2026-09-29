@@ -106,16 +106,49 @@ function buildLabelMap(tables) {
   return map;
 }
 
+// Símbolo de moneda y guion suelto delante de un paréntesis ("$ 3.757,50", "- (384.427)") no cambian el importe.
+const stripDecor = (raw) => String(raw).replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
+
+function sameNumber(rawA, rawB) {
+  const a = parseNumber(stripDecor(rawA));
+  const b = parseNumber(stripDecor(rawB));
+  if (a === null && b === null) return true; // ninguno de los dos parseó -- no es una discrepancia de VALOR
+  if (a === null || b === null) return false; // uno sí y el otro no -- eso sí importa
+  return Math.abs(a - b) > 0.005 ? false : true;
+}
+
+// Una "referencia de nota" es lo que un motor transcribe en la columna "Nota" de un balance (6, 8,
+// 14.1, 17) y el otro se saltea. Es un entero de 1-2 dígitos o un "N.N" de 1-2 dígitos por lado, sin
+// separador de miles -- un importe real casi nunca se ve así.
+const isNoteRef = (raw) => /^\d{1,2}(\.\d{1,2})?$/.test(String(raw).trim());
+const isEmpty = (raw) => String(raw).trim() === '';
+
+// BUG REAL (test de motores, 2026-09-29): un motor que transcribe la columna "Nota" y otro que no
+// producen listas de valores de DISTINTO LARGO para la MISMA fila, y la comparación posicional daba
+// una discrepancia falsa (10-65 por documento) aunque todos los importes coincidieran. Ahora:
+//   1. igual, posición por posición (el caso de siempre);
+//   2. si no, sin celdas vacías y sin referencias de nota, y ahí igual posición por posición;
+//   3. si no, el más corto tiene que ser SUBSECUENCIA del más largo (una columna de más en un lado,
+//      p. ej. una columna de 0 o de un año extra) -- se acepta pero se cuenta como "columnShift".
+// Un dígito mal leído sigue fallando en los tres pasos: eso es lo que esta herramienta tiene que agarrar.
 function valuesEqual(valsA, valsB) {
-  if (valsA.length !== valsB.length) return false;
-  for (let i = 0; i < valsA.length; i++) {
-    const a = parseNumber(valsA[i]);
-    const b = parseNumber(valsB[i]);
-    if (a === null && b === null) continue; // ninguno de los dos parseó -- no es una discrepancia de VALOR
-    if (a === null || b === null) return false; // uno sí y el otro no -- eso sí importa
-    if (Math.abs(a - b) > 0.005) return false;
+  const pairwise = (x, y) => x.length === y.length && x.every((v, i) => sameNumber(v, y[i]));
+  if (pairwise(valsA, valsB)) return { equal: true, how: 'exact' };
+  const clean = (v) => v.filter((x) => !isEmpty(x) && !isNoteRef(x));
+  const cA = clean(valsA);
+  const cB = clean(valsB);
+  if (pairwise(cA, cB)) return { equal: true, how: 'sin-notas' };
+  const [short, long] = cA.length <= cB.length ? [cA, cB] : [cB, cA];
+  if (short.length > 0 && short.length < long.length) {
+    let j = 0;
+    for (const v of short) {
+      while (j < long.length && !sameNumber(v, long[j])) j++;
+      if (j === long.length) return { equal: false };
+      j++;
+    }
+    return { equal: true, how: 'columna-de-mas' };
   }
-  return true;
+  return { equal: false };
 }
 
 function main() {
@@ -137,6 +170,7 @@ function main() {
   const onlyInA = [];
   const onlyInB = [];
   const ambiguous = [];
+  const shifted = [];
 
   for (const key of new Set([...mapA.keys(), ...mapB.keys()])) {
     const a = mapA.get(key);
@@ -146,7 +180,9 @@ function main() {
     if (a.occurrences.length > 1 || b.occurrences.length > 1) { ambiguous.push(a.rawLabel); continue; }
     const occA = a.occurrences[0];
     const occB = b.occurrences[0];
-    if (!valuesEqual(occA.values, occB.values)) {
+    const eq = valuesEqual(occA.values, occB.values);
+    if (eq.how && eq.how !== 'exact') shifted.push(a.rawLabel);
+    if (!eq.equal) {
       mismatches.push({ label: a.rawLabel, pageA: occA.page, valuesA: occA.values, pageB: occB.page, valuesB: occB.values });
     }
   }
@@ -156,6 +192,7 @@ function main() {
     match: mismatches.length === 0,
     mismatches,
     onlyInA: onlyInA.sort(), onlyInB: onlyInB.sort(), ambiguous: ambiguous.sort(),
+    tolerated: shifted.length,
   };
 
   if (asJson) {

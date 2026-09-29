@@ -401,182 +401,58 @@ TOTAL DU PASSIF 10/49 35.437.036
 
 --- pág. 7 ---
 
-N°
+N° BE 0823.379.451 | C 3
 
-BE 0823.379.451
+**COMPTE DE RÉSULTATS**
 
-C3
-
-COMPTE DE REÉSULTATS
-
-Ann.
-
-Ventes et prestations
-
-Chiffre d'affaires 5.10
-En-cours de fabrication, produits finis et commandes
-
-en cours d'exécution: augmentation (réduction)
-
-/G)
-
-Production immobilisée
-
-Autres produits d'exploitation 5.10
-
-Coût des ventes et des prestations
-
-Approvisionnements et marchandises
-
-Achats
-
-Stocks: réduction (augmentation) (#)/(-)
-Services et biens divers
-Rémunérations, charges sociales et pensions
-Amortissements et réductions de valeur sur frais
-d'établissement, sur immobilisations incorporelles et
-corporelles
-Réductions de valeur sur stocks, sur commandes en
-cours d'exécution et sur créances commerciales:
-dotations (reprises) (+/(-)
-Provisions pour risques et charges: dotations
-(utilisations et reprises) (+/(-) 5.10
-Autres charges d'exploitation 5.10
-Charges d'exploitation portées à l'actif au titre de frais
-de restructuration (-)
-
-(+)/(-) 5.10
-
-Bénéfice (Perte) d'exploitation (#)/(-)
-
-Produits financiers
-
-Produits des immobilisations financières
-Produits des actifs circulants
-Autres produits financiers 5.11
-
-Charges financières 5.11
-
-Charges des dettes
-
-Réductions de valeur sur actifs circulants autres que
-stocks, commandes en cours et créances
-commerciales: dotations (reprises) (+/(-)
-Autres charges financières
-
-Bénéfice (Perte) courant(e) avant impôts (#)/(-)
-
-Produits exceptionnels
-
-Reprises d'amortissements et de réductions de valeur
-
-sur immobilisations incorporelles et corporelles
-
-Reprises de réductions de valeur sur immobilisations
-financières
-
-Reprises de provisions pour risques et charges
-
-exceptionnels
-
-Plus-values sur réalisation d'actifs immobilisés
-
-Autres produits exceptionnels 5.11
-
-Charges exceptionnelles
-
-Amortissements et réductions de valeur exceptionnels
-sur frais d'établissement, sur immobilisations
-incorporelles et corporelles
-
-Réductions de valeur sur immobilisations
-
-financières
-
-Provisions pour risques et charges exceptionnels:
-dotations (utilisations) (#)/-)
-Moins-values sur réalisation d'actifs immobilisés
-Autres charges exceptionnelles 5.11
-Charges exceptionnelles portées à l'actif au titre de
-frais de restructuration (-)
-
-Bénéfice (Perte) de l'exercice avant impôts (#)/(-)
-
-Prélèvements sur les impôts différés
-
-Transfert aux impôts différés
-
-Impôts sur le résultat (+/(-) 5.12
-
-Impôts
-
-Codes Exercice Exercice précédent
-70/74 39.147.147
-70 31.775.511
-71
-
-72 57.064
-74 7.314.571
-60/64 43.215.955
-60
-
-600/8
-
-609
-
-61 10.567.581
-62 24.421.769
-630 5.171.003
-631/4 942.704
-635/7
-
-640/8 2.112.899
-649
-
-9901 -4.068.808
-75 53.395
-750 49.353
-751 928
-752/9 3.113
-65 221.406
-650 196.301
-651
-
-652/9 25.105
-9902 -4,236.820
-76 3.181.004
-760
-
-761
-
-762
-
-763
-
-764/9 3.181.004
-66 128.767
-660
-
-661
-
-662 128.767
-663
-
-664/8
-
-669
-
-9903 -1.184.583
-780
-
-680
-
-67/77
-
-670/3
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **Ventes et prestations** | | 70/74 | **39.147.147** | |
+| Chiffre d'affaires | 5.10 | 70 | 31.775.511 | |
+| En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-) | | 71 | | |
+| Production immobilisée | | 72 | 57.064 | |
+| Autres produits d'exploitation | 5.10 | 74 | 7.314.571 | |
+| **Coût des ventes et des prestations** | | 60/64 | **43.215.955** | |
+| Approvisionnements et marchandises | | 60 | | |
+| Achats | | 600/8 | | |
+| Stocks: réduction (augmentation) (+)/(-) | | 609 | | |
+| Services et biens divers | | 61 | 10.567.581 | |
+| Rémunérations, charges sociales et pensions (+)/(-) | 5.10 | 62 | 24.421.769 | |
+| Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | | 630 | 5.171.003 | |
+| Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-) | | 631/4 | 942.704 | |
+| Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-) | 5.10 | 635/7 | | |
+| Autres charges d'exploitation | 5.10 | 640/8 | 2.112.899 | |
+| Charges d'exploitation portées à l'actif au titre de frais de restructuration (-) | | 649 | | |
+| **Bénéfice (Perte) d'exploitation (+)/(-)** | | 9901 | **-4.068.808** | |
+| **Produits financiers** | | 75 | **53.395** | |
+| Produits des immobilisations financières | | 750 | 49.353 | |
+| Produits des actifs circulants | | 751 | 928 | |
+| Autres produits financiers | 5.11 | 752/9 | 3.113 | |
+| **Charges financières** | 5.11 | 65 | **221.406** | |
+| Charges des dettes | | 650 | 196.301 | |
+| Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-) | | 651 | | |
+| Autres charges financières | | 652/9 | 25.105 | |
+| **Bénéfice (Perte) courant(e) avant impôts (+)/(-)** | | 9902 | **-4.236.820** | |
+| **Produits exceptionnels** | | 76 | **3.181.004** | |
+| Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles | | 760 | | |
+| Reprises de réductions de valeur sur immobilisations financières | | 761 | | |
+| Reprises de provisions pour risques et charges exceptionnels | | 762 | | |
+| Plus-values sur réalisation d'actifs immobilisés | | 763 | | |
+| Autres produits exceptionnels | 5.11 | 764/9 | 3.181.004 | |
+| **Charges exceptionnelles** | | 66 | **128.767** | |
+| Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles | | 660 | | |
+| Réductions de valeur sur immobilisations financières | | 661 | | |
+| Provisions pour risques et charges exceptionnels: dotations (utilisations) (+)/(-) | | 662 | 128.767 | |
+| Moins-values sur réalisation d'actifs immobilisés | | 663 | | |
+| Autres charges exceptionnelles | 5.11 | 664/8 | | |
+| Charges exceptionnelles portées à l'actif au titre de frais de restructuration (-) | | 669 | | |
+| **Bénéfice (Perte) de l'exercice avant impôts (+)/(-)** | | 9903 | **-1.184.583** | |
+| **Prélèvements sur les impôts différés** | | 780 | | |
+| **Transfert aux impôts différés** | | 680 | | |
+| **Impôts sur le résultat (+)/(-)** | 5.12 | 67/77 | | |
+| Impôts | | 670/3 | | |
 
 7/41
-
 
 --- pág. 8 ---
 
@@ -853,145 +729,67 @@ Codes Exercice Exercice précédent _ |
 
 --- pág. 13 ---
 
-N° BE 0823.379.451
+N° BE 0823.379.451 | C 5.3.2
 
-C 5.3.2
-
-INSTALLATIONS, MACHINES ET OUTILLAGE
-Valeur d'acquisition au terme de l'exercice
-
-Mutations de l'exercice
-Acquisitions, y compris la production immobilisée
-Cessions et désaffectations
-Transferts d'une rubrique à une autre (#)/(-)
-
-Valeur d'acquisition au terme de l'exercice
-Plus-values au terme de l'exercice
-
-Mutations de l'exercice
-Actées
-Acquises de tiers
-Annulées
-Transférées d'une rubrique à une autre (+)/(-)
-
-Plus-values au terme de l'exercice
-Amortissements et réductions de valeur au terme de l'exercice
-
-Mutations de l'exercice
-Actés
-Repris
-Acquis de tiers
-Annulés à la suite de cessions et désaffectations
-Transférés d'une rubrique à une autre (+)/(-)
-
-Amortissements et réductions de valeur au terme de l'exercice
-
-VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE
-
-Codes Exercice Exercice précédent
-8192P p00 000,00 0,0,
-8162 230.948
-8172
-
-8182
-
-8192 230.948
-8252P p00 000,00 0,0,
-8212
-
-8222
-
-8232
-
-8242
-
-8252
-
-8322P p00 000,00 0,0,
-8272 11.016
-8282
-
-8292 173.415
-8302
-
-8312
-
-8322 184.431
-23 46.517
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **INSTALLATIONS, MACHINES ET OUTILLAGE** | | | |
+| **Valeur d'acquisition au terme de l'exercice** | 8192P | **XXXXXXXXXX** | |
+| **Mutations de l'exercice** | | | |
+| Acquisitions, y compris la production immobilisée | 8162 | 230.948 | |
+| Cessions et désaffectations | 8172 | | |
+| Transferts d'une rubrique à une autre (+)/(-) | 8182 | | |
+| **Valeur d'acquisition au terme de l'exercice** | 8192 | **230.948** | |
+| **Plus-values au terme de l'exercice** | 8252P | **XXXXXXXXXX** | |
+| **Mutations de l'exercice** | | | |
+| Actées | 8212 | | |
+| Acquises de tiers | 8222 | | |
+| Annulées | 8232 | | |
+| Transférées d'une rubrique à une autre (+)/(-) | 8242 | | |
+| **Plus-values au terme de l'exercice** | 8252 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8322P | **XXXXXXXXXX** | |
+| **Mutations de l'exercice** | | | |
+| Actés | 8272 | 11.016 | |
+| Repris | 8282 | | |
+| Acquis de tiers | 8292 | 173.415 | |
+| Annulés à la suite de cessions et désaffectations | 8302 | | |
+| Transférés d'une rubrique à une autre (+)/(-) | 8312 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8322 | **184.431** | |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE** | 23 | **46.517** | |
 
 13/41
 
-
 --- pág. 14 ---
 
-N° BE 0823.379.451
+N° BE 0823.379.451 | C 5.3.3
 
-C 5.3.3
-
-MOBILIER ET MATERIEL ROULANT
-Valeur d'acquisition au terme de l'exercice
-
-Mutations de l'exercice
-Acquisitions, y compris la production immobilisée
-Cessions et désaffectations
-Transferts d'une rubrique à une autre (#)/(-)
-
-Valeur d'acquisition au terme de l'exercice
-Plus-values au terme de l'exercice
-
-Mutations de l'exercice
-Actées
-Acquises de tiers
-Annulées
-Transférées d'une rubrique à une autre (+)/(-)
-
-Plus-values au terme de l'exercice
-Amortissements et réductions de valeur au terme de l'exercice
-
-Mutations de l'exercice
-Actés
-Repris
-Acquis de tiers
-Annulés à la suite de cessions et désaffectations
-Transférés d'une rubrique à une autre (+)/(-)
-
-Amortissements et réductions de valeur au terme de l'exercice
-
-VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE
-
-Codes Exercice Exercice précédent
-8193P 10000000004
-8163 930.901
-8173
-
-8183
-
-8193 930.901
-8253P 10000000004
-8213
-
-8223
-
-8233
-
-8243
-
-8253
-
-8323P 10000000004
-8273 63.039
-8283
-
-8293 614.771
-8303
-
-8313
-
-8323 677.811
-24 253.090
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **MOBILIER ET MATÉRIEL ROULANT** | | | |
+| **Valeur d'acquisition au terme de l'exercice** | 8193P | **XXXXXXXXXX** | |
+| **Mutations de l'exercice** | | | |
+| Acquisitions, y compris la production immobilisée | 8163 | 930.901 | |
+| Cessions et désaffectations | 8173 | | |
+| Transferts d'une rubrique à une autre (+)/(-) | 8183 | | |
+| **Valeur d'acquisition au terme de l'exercice** | 8193 | **930.901** | |
+| **Plus-values au terme de l'exercice** | 8253P | **XXXXXXXXXX** | |
+| **Mutations de l'exercice** | | | |
+| Actées | 8213 | | |
+| Acquises de tiers | 8223 | | |
+| Annulées | 8233 | | |
+| Transférées d'une rubrique à une autre (+)/(-) | 8243 | | |
+| **Plus-values au terme de l'exercice** | 8253 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8323P | **XXXXXXXXXX** | |
+| **Mutations de l'exercice** | | | |
+| Actés | 8273 | 63.039 | |
+| Repris | 8283 | | |
+| Acquis de tiers | 8293 | 614.771 | |
+| Annulés à la suite de cessions et désaffectations | 8303 | | |
+| Transférés d'une rubrique à une autre (+)/(-) | 8313 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8323 | **677.811** | |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE** | 24 | **253.090** | |
 
 14/41
-
 
 --- pág. 15 ---
 
@@ -1550,67 +1348,74 @@ Exercice
 
 --- pág. 21 ---
 
-N° BE 0823.379.451 C 5.7
+N° BE 0823.379.451 | C 5.7
 
-ETAT DU CAPITAL ET STRUCTURE DE L'ACTIONNARIAT
+**ETAT DU CAPITAL ET STRUCTURE DE L'ACTIONNARIAT**
 
-Codes Exercice Exercice précédent
-ETAT DU CAPITAL
-Capital social
-Capital souscrit au terme de l'exercice 100P XXXXKKKKKK
-Capital souscrit au terme de l'exercice 100 10.000.000
-Codes Montants Nombre d'actions
-Modifications au cours de l'exercice
-Constitution de la société 10.000.000 2.000
-Représentation du capital
-Catégories d'actions
-Actions sans désignation de valeur nominale 10.000.000 2.000
-Actions nominatives 8702 XXXXKKKKKK 2.000
-Actions au porteur et/ou dématérialisées 8703 p000, 00,00 0,04
-Codes Montant non appelé Montant appelé non versé
-Capital non libéré
-Capital non appelé 101 7.500.000 XXXXKKKKKK
-Capital appelé, non versé 8712 p000, 00,00 0,04
-Actionnaires redevables de libération
-Roger Vanden Stock 1.425.000 0
-Philippe Collin 375.000 0
-COBOCO, société civile 645.000 0
-Julie Vanden Stock 750.000 0
-Claire Vanden Stock 750.000 0
-Philippe Collin et CORO, société civile de droit commun. 450.000 0
-Alexandre Van Damme 187.500 0
-Etienne Davignon 183.750 0
-Vincent Davignon 3.750 0
-MV CONSTRUCT sprl 750.000 0
-Paul Goosens 375.000 0
-David Mourlon Beernaert 187.500 0
-Samantha Mourlon Beernaert 187.500 0
-Tanguy Mourlon Beernaert 187.500 0
-Emmanuel Van Innis 187.500 0
-HOLDING IMMOTUR SCA 187.500 0
-Oliver Davignon 375.000 0
-Pascal Minne 187.500 0
-NELISSEN GRADE sprl 37.500 0
-Michel Cornelis 37.500 0
-Frans Callewaert 3.750 0
-Willy De Louvien 3.750 0
-Félix Désiron 3.750 0
-Jean Dewinne 3.750 0
-Roger Francq 3.750 0
-Paul Huybens 3.750 0
-HUYLEBROEK SPORTSMED bvba 3.750 0
-Emile Servranckx 3.750 0
-Codes Exercice
-Actions propres
-Détenues par la société elle-même
-Montant du capital détenu 8721
-Nombre d'actions correspondantes 8722
-Détenues par ses filiales
-Montant du capital détenu 8731
-Nombre d'actions correspondantes 8732
-Engagement d'émission d'actions
-Suite à l'exercice de droits de conversion
-Montant des emprunts convertibles en cours 8740
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **ETAT DU CAPITAL** | | | |
+| **Capital social** | | | |
+| Capital souscrit au terme de l'exercice | 100P | XXXXXXXXXX | |
+| Capital souscrit au terme de l'exercice | 100 | 10.000.000 | |
+
+| | Codes | Montants | Nombre d'actions |
+|---|---|---|---|
+| Modifications au cours de l'exercice | | | |
+| Constitution de la société | | 10.000.000 | 2.000 |
+| Représentation du capital | | | |
+| Catégories d'actions | | | |
+| Actions sans désignation de valeur nominale | | 10.000.000 | 2.000 |
+| Actions nominatives | 8702 | XXXXXXXXXX | 2.000 |
+| Actions au porteur et/ou dématérialisées | 8703 | XXXXXXXXXX | |
+
+| | Codes | Montant non appelé | Montant appelé non versé |
+|---|---|---|---|
+| **Capital non libéré** | | | |
+| Capital non appelé | 101 | 7.500.000 | XXXXXXXXXX |
+| Capital appelé, non versé | 8712 | XXXXXXXXXX | |
+| Actionnaires redevables de libération | | | |
+| Roger Vanden Stock | | 1.425.000 | 0 |
+| Philippe Collin | | 375.000 | 0 |
+| COBOCO, société civile | | 645.000 | 0 |
+| Julie Vanden Stock | | 750.000 | 0 |
+| Claire Vanden Stock | | 750.000 | 0 |
+| Philippe Collin et CORO, société civile de droit commun. | | 450.000 | 0 |
+| Alexandre Van Damme | | 187.500 | 0 |
+| Etienne Davignon | | 183.750 | 0 |
+| Vincent Davignon | | 3.750 | 0 |
+| MV CONSTRUCT sprl | | 750.000 | 0 |
+| Paul Goosens | | 375.000 | 0 |
+| David Mourlon Beernaert | | 187.500 | 0 |
+| Samantha Mourlon Beernaert | | 187.500 | 0 |
+| Tanguy Mourlon Beernaert | | 187.500 | 0 |
+| Emmanuel Van Innis | | 187.500 | 0 |
+| HOLDING IMMOTUR SCA | | 187.500 | 0 |
+| Oliver Davignon | | 375.000 | 0 |
+| Pascal Minne | | 187.500 | 0 |
+| NELISSEN GRADE sprl | | 37.500 | 0 |
+| Michel Cornelis | | 37.500 | 0 |
+| Frans Callewaert | | 3.750 | 0 |
+| Willy De Louvien | | 3.750 | 0 |
+| Félix Désiron | | 3.750 | 0 |
+| Jean Dewinne | | 3.750 | 0 |
+| Roger Francq | | 3.750 | 0 |
+| Paul Huybens | | 3.750 | 0 |
+| HUYLEBROEK SPORTSMED bvba | | 3.750 | 0 |
+| Emile Servranckx | | 3.750 | 0 |
+
+| | Codes | Exercice |
+|---|---|---|
+| **Actions propres** | | |
+| Détenues par la société elle-même | | |
+| Montant du capital détenu | 8721 | |
+| Nombre d'actions correspondantes | 8722 | |
+| Détenues par ses filiales | | |
+| Montant du capital détenu | 8731 | |
+| Nombre d'actions correspondantes | 8732 | |
+| **Engagement d'émission d'actions** | | |
+| Suite à l'exercice de droits de conversion | | |
+| Montant des emprunts convertibles en cours | 8740 | |
 
 21/41
 
@@ -2031,145 +1836,56 @@ divulgation des risques ou avantages soit nécessaire pour l'appréciation de la
 
 --- pág. 29 ---
 
-N° BE 0823.379.451
+| N° | BE 0823.379.451 | C 5.14 |
+| :--- | :--- | :--- |
 
-C 5.14
+# RELATIONS AVEC LES ENTREPRISES LIÉES ET LES ENTREPRISES AVEC LESQUELLES IL EXISTE UN LIEN DE PARTICIPATION
 
-RELATIONS AVEC LES ENTREPRISES LIËES ET LES ENTREPRISES AVEC LESQUELLES IL EXISTE UN LIEN DE
+| ENTREPRISES LIÉES | Codes | Exercice | Exercice précédent |
+| :--- | :--- | :--- | :--- |
+| **Immobilisations financières** | 280/1 | **321.987** | |
+| Participations | 280 | 321.987 | |
+| Créances subordonnées | 9271 | | |
+| Autres créances | 9281 | | |
+| **Créances sur les entreprises liées** | 9291 | | |
+| A plus d'un an | 9301 | | |
+| A un an au plus | 9311 | | |
+| **Placements de trésorerie** | 9321 | | |
+| Actions | 9331 | | |
+| Créances | 9341 | | |
+| **Dettes** | 9351 | | |
+| A plus d'un an | 9361 | | |
+| A un an au plus | 9371 | | |
+| **Garanties personnelles et réelles** | | | |
+| Constituées ou irrévocablement promises par l'entreprise pour sûreté de dettes ou d'engagements d'entreprises liées | 9381 | | |
+| Constituées ou irrévocablement promises par des entreprises liées pour sûreté de dettes ou d'engagements de l'entreprise | 9391 | | |
+| **Autres engagements financiers significatifs** | 9401 | | |
+| **Résultats financiers** | | | |
+| Produits des immobilisations financières | 9421 | | |
+| Produits des actifs circulants | 9431 | | |
+| Autres produits financiers | 9441 | 3.113 | |
+| Charges des dettes | 9461 | | |
+| Autres charges financières | 9471 | 25.105 | |
+| **Cession d'actifs immobilisés** | | | |
+| Plus-values réalisées | 9481 | | |
+| Moins-values réalisées | 9491 | | |
+| **ENTREPRISES AVEC UN LIEN DE PARTICIPATION** | | | |
+| **Immobilisations financières** | 282/3 | | |
+| Participations | 282 | | |
+| Créances subordonnées | 9272 | | |
+| Autres créances | 9282 | | |
+| **Créances** | 9292 | **227.883** | |
+| A plus d'un an | 9302 | | |
+| A un an au plus | 9312 | 227.883 | |
+| **Dettes** | 9352 | **98.876** | |
+| A plus d'un an | 9362 | | |
+| A un an au plus | 9372 | 98.876 | |
 
-PARTICIPATION
-
-ENTREPRISES LIËES
-
-Immobilisations financières
-Participations
-Créances subordonnées
-Autres créances
-
-Créances sur les entreprises liées
-A plus d'un an
-A un an au plus
-
-Placements de trésorerie
-Actions
-Créances
-
-Dettes
-A plus d'un an
-A un an au plus
-
-Garanties personnelles et réelles
-Constituées ou irrévocablement promises par l'entreprise pour sûreté
-de dettes ou d'engagements d'entreprises liées
-Constituées ou irrévocablement promises par des entreprises liées
-pour sûreté de dettes ou d'engagements de l'entreprise
-
-Autres engagements financiers significatifs
-
-Résultats financiers
-Produits des immobilisations financières
-Produits des actifs circulants
-Autres produits financiers
-Charges des dettes
-Autres charges financières
-
-Cession d'actifs immobilisés
-Plus-values réalisées
-Moins-values réalisées
-
-ENTREPRISES AVEC UN LIEN DE PARTICIPATION
-
-Immobilisations financières
-Participations
-Créances subordonnées
-Autres créances
-
-Créances
-A plus d'un an
-A un an au plus
-
-Dettes
-A plus d'un an
-A un an au plus
-
-Codes
-
-Exercice
-
-Exercice précédent
-
-280/1
-280
-9271
-9281
-
-ge
-9301
-9311
-
-9321
-9331
-9341
-
-9351
-9361
-9371
-
-9381
-
-9391
-9401
-
-9421
-9431
-9441
-9461
-9471
-
-9481
-9491
-
-282/3
-282
-9272
-9282
-
-9292
-9302
-9312
-
-9352
-9362
-9372
-
-321.987
-321.987
-
-3.113
-
-25.105
-
-227.883
-
-227.883
-98.876
-
-98.876
-
-TRANSACTIONS AVEC DES PARTIES LIËES EFFECTUÊES DANS DES CONDITIONS AUTRES QUE CELLES
-
-DU MARCHÉ
-
-Mention de telles transactions, si elles sont significatives, y compris le montant et indication de la
-nature des rapports avec la partie liée, ainsi que toute autre information sur les transactions qui
-serait nécessaire pour obtenir une meilleure compréhension de la position financière de la
-
-société
-
-Exercice
+| TRANSACTIONS AVEC DES PARTIES LIÉES EFFECTUÉES DANS DES CONDITIONS AUTRES QUE CELLES DU MARCHÉ | Exercice |
+| :--- | :--- |
+| **Mention de telles transactions, si elles sont significatives, y compris le montant et indication de la nature des rapports avec la partie liée, ainsi que toute autre information sur les transactions qui serait nécessaire pour obtenir une meilleure compréhension de la position financière de la société** | |
 
 29/41
-
 
 --- pág. 30 ---
 
@@ -2196,94 +1912,93 @@ sociétés
 
 --- pág. 31 ---
 
-N° BE 0823.379.451 C6
-BILAN SOCIAL
+N° BE 0823.379.451 | C 6
+
+**BILAN SOCIAL**
+
 Numéros des commissions paritaires dont dépend l'entreprise: 145 218 223
-Etat des personnes occupées
-Travailleurs inscrits au registre du personnel
-Codes| 1. Temps plein 2. _ Temps partiel 3. Total (T)outotal | SP. Total (T) ou
-1 : en équivalents total en
-ve cours de Vexeroioe et de temps plein équivalents
-p (ETP) temps plein
-(ETP)
-(exercice) (exercice) (exercice) (exercice précédent)
-Nombre moyen de travailleurs 100 25,5 22,9 35,6 ETP ETP
-Nombre d'heures effectivement
-prestées 101 39.062 16.040 55.102 T T
-Frais de personnel 102 24.004.827 416.942 24.421.769 T T
-Montant des avantages accordés en
-sus du salaire 103 pe 0 0d XXXNNXX 6.093 T T
-R Codes | 1. Temps plein 2. Temps partiel 3. Total en
-A la date de clôture de l'exercice équivalents
-temps plein
-Nombre de travailleurs inscrits au registre du personnel 105 102 92 142,4
-Par type de contrat de travail
-Contrat à durée indéterminée 110 og 31 113
-Contrat à durée déterminée 111 3 61 29,4
-Contrat pour l'exécution d'un travail nettement défini 112
-Contrat de remplacement 113
-Par sexe et niveau d'études
-Hommes 120 82 41 98,2
-de niveau primaire 1200
-de niveau secondaire 1201 82 41 98,2
-de niveau supérieur non universitaire 1202
-de niveau universitaire 1203
-Femmes 121 20 51 44,2
-de niveau primaire 1210
-de niveau secondaire 1211 20 51 44,2
-de niveau supérieur non universitaire 1212
-de niveau universitaire 1213
-Par catégorie professionnelle
-Personnel de direction 130
-Employés 134 86 89 124,6
-Ouvriers 132 16 3 17,8
-Autres 133
+
+**Etat des personnes occupées**
+
+**Travailleurs inscrits au registre du personnel**
+
+| Au cours de l'exercice et de l'exercice précédent | Codes | 1. Temps plein (exercice) | 2. Temps partiel (exercice) | 3. Total (T) ou total en équivalents temps plein (ETP) (exercice) | 3P. Total (T) ou total en équivalents temps plein (ETP) (exercice précédent) |
+|---|---|---|---|---|---|
+| Nombre moyen de travailleurs | 100 | 25,5 | 22,9 | 35,6 ETP | ETP |
+| Nombre d'heures effectivement prestées | 101 | 39.062 | 16.040 | 55.102 T | T |
+| Frais de personnel | 102 | 24.004.827 | 416.942 | 24.421.769 T | T |
+| Montant des avantages accordés en sus du salaire | 103 | XXXXXXX | XXXXXXX | 6.093 T | T |
+
+| A la date de clôture de l'exercice | Codes | 1. Temps plein | 2. Temps partiel | 3. Total en équivalents temps plein |
+|---|---|---|---|---|
+| **Nombre de travailleurs inscrits au registre du personnel** | 105 | 102 | 92 | 142,4 |
+| **Par type de contrat de travail** | | | | |
+| Contrat à durée indéterminée | 110 | 99 | 31 | 113 |
+| Contrat à durée déterminée | 111 | 3 | 61 | 29,4 |
+| Contrat pour l'exécution d'un travail nettement défini | 112 | | | |
+| Contrat de remplacement | 113 | | | |
+| **Par sexe et niveau d'études** | | | | |
+| Hommes | 120 | 82 | 41 | 98,2 |
+| de niveau primaire | 1200 | | | |
+| de niveau secondaire | 1201 | 82 | 41 | 98,2 |
+| de niveau supérieur non universitaire | 1202 | | | |
+| de niveau universitaire | 1203 | | | |
+| Femmes | 121 | 20 | 51 | 44,2 |
+| de niveau primaire | 1210 | | | |
+| de niveau secondaire | 1211 | 20 | 51 | 44,2 |
+| de niveau supérieur non universitaire | 1212 | | | |
+| de niveau universitaire | 1213 | | | |
+| **Par catégorie professionnelle** | | | | |
+| Personnel de direction | 130 | | | |
+| Employés | 134 | 86 | 89 | 124,6 |
+| Ouvriers | 132 | 16 | 3 | 17,8 |
+| Autres | 133 | | | |
 
 31/41
 
-
 --- pág. 32 ---
 
-N° BE 0823.379.451 C6
-Personnel intérimaire et personnes mises à la disposition de l'entreprise
-Codes| 1. _ Personnel 2. _Personnes
-Au cours de l'exercice intérimaire dineeiion de
-l'entreprise
-Nombre moyen de personnes occupées 150
-Nombre d'heures effectivement prestées 151
-Frais pour l'entreprise 152
-Tableau des mouvements du personnel au cours de l'exercice
-Codes | 1. Temps plein 2. Temps partiel 3. Total en
-Entrées équivalents
-temps plein
-Nombre de travailleurs inscrits au registre du personnel au
-cours de l'exercice 205 103 92 143,4
-Par type de contrat de travail
-Contrat à durée indéterminée 210 100 31 114
-Contrat à durée déterminée 211 3 61 29,4
-Contrat pour l'exécution d'un travail nettement défini 212
-Contrat de remplacement 213
-Codes | 1. Temps plein 2. Temps partiel 3. Total en
-Sorties équivalents
-temps plein
-Nombre de travailleurs dont la date de fin de contrat a été
-inscrite au registre du personnel au cours de l'exercice 305 3 3
-Par type de contrat de travail
-Contrat à durée indéterminée 310 3 3
-Contrat à durée déterminée 311
-Contrat pour l'exécution d'un travail nettement défini 312
-Contrat de remplacement 313
-Par motif de fin de contrat
-Pension 340
-Prépension 341
-Licenciement 342 1 1
-Autre motif 343 2 2
-Dont: le nombre de personnes qui continuent, au
-moins à mi-temps, à prester des services au
-profit de l'entreprise comme indépendants 350
+N° BE 0823.379.451 | C 6
+
+**Personnel intérimaire et personnes mises à la disposition de l'entreprise**
+
+| Au cours de l'exercice | Codes | 1. Personnel intérimaire | 2. Personnes mises à la disposition de l'entreprise |
+|---|---|---|---|
+| Nombre moyen de personnes occupées | 150 | | |
+| Nombre d'heures effectivement prestées | 151 | | |
+| Frais pour l'entreprise | 152 | | |
+
+**Tableau des mouvements du personnel au cours de l'exercice**
+
+**Entrées**
+
+| | Codes | 1. Temps plein | 2. Temps partiel | 3. Total en équivalents temps plein |
+|---|---|---|---|---|
+| **Nombre de travailleurs inscrits au registre du personnel au cours de l'exercice** | 205 | 103 | 92 | 143,4 |
+| **Par type de contrat de travail** | | | | |
+| Contrat à durée indéterminée | 210 | 100 | 31 | 114 |
+| Contrat à durée déterminée | 211 | 3 | 61 | 29,4 |
+| Contrat pour l'exécution d'un travail nettement défini | 212 | | | |
+| Contrat de remplacement | 213 | | | |
+
+**Sorties**
+
+| | Codes | 1. Temps plein | 2. Temps partiel | 3. Total en équivalents temps plein |
+|---|---|---|---|---|
+| **Nombre de travailleurs dont la date de fin de contrat a été inscrite au registre du personnel au cours de l'exercice** | 305 | 3 | | 3 |
+| **Par type de contrat de travail** | | | | |
+| Contrat à durée indéterminée | 310 | 3 | | 3 |
+| Contrat à durée déterminée | 311 | | | |
+| Contrat pour l'exécution d'un travail nettement défini | 312 | | | |
+| Contrat de remplacement | 313 | | | |
+| **Par motif de fin de contrat** | | | | |
+| Pension | 340 | | | |
+| Prépension | 341 | | | |
+| Licenciement | 342 | 1 | | 1 |
+| Autre motif | 343 | 2 | | 2 |
+| Dont: le nombre de personnes qui continuent, au moins à mi-temps, à prester des services au profit de l'entreprise comme indépendants | 350 | | | |
 
 32/41
-
 
 --- pág. 33 ---
 
@@ -2515,41 +2230,32 @@ La comptabilité sera tenue en euros.
 
 --- pág. 36 ---
 
-ROYAL SPORTING CLUB ANDERLECHT SA/NV
-Avenue Théo Verbeeck 2
-1070 ANDERLECHT
+**ROYAL SPORTING CLUB ANDERLECHT SA/NV**  
+Avenue Théo Verbeeck 2  
+1070 ANDERLECHT  
 
-TVA BE-0823379451
-RPM Bruxelles
+TVA BE-0823379451  
+RPM Bruxelles  
 
-Rapport du Conseil d'Administration à l'Assemblée Générale
-Ordinaire concernant les comptes annuels au 30 juin 2011
+---
+
+## Rapport du Conseil d'Administration à l'Assemblée Générale Ordinaire concernant les comptes annuels au 30 juin 2011
 
 Mesdames et Messieurs,
 
-Conformément aux articles 95 et 96 du Code des Sociétés, nous avons Fhonneur de vous soumettre
-par la présente notre rapport sur les activités de la société et sur notre gestion durant l'exercice écoulé,
-clôturé au 30 juin 2011.
+Conformément aux articles 95 et 96 du Code des Sociétés, nous avons l'honneur de vous soumettre par la présente notre rapport sur les activités de la société et sur notre gestion durant l'exercice écoulé, clôturé au 30 juin 2011.
 
-Le projet des comptes annuels a été rédigé conformément aux dispositions de l'Arrêté Royal du 30
-janvier 2001 portant l'exécution du Code des Sociétés, notamment livre IL, titre ler concernant les
-comptes annuels des entreprises et conformément aux dispositions particulières légales et
-administratives applicables à lentreprise.
+Le projet des comptes annuels a été rédigé conformément aux dispositions de l'Arrêté Royal du 30 janvier 2001 portant l'exécution du Code des Sociétés, notamment livre II, titre 1er concernant les comptes annuels des entreprises et conformément aux dispositions particulières légales et administratives applicables à l'entreprise.
 
-1. Le développement. les résultats, la position de la société — les risques et les
+### 1. Le développement, les résultats, la position de la société - les risques et les incertitudes
 
-incertitudes
-LL ANALYSE DES COMPTES ANN UELS
-Comparaison avec l'exercice précédent
+#### 1.1. ANALYSE DES COMPTES ANNUELS
 
-Comme il s'agit du premier exercice comptable, il n°y a pas de comparaison possible avec les
-résultats des exercices antérieurs mais il convient de noter que la société a clôturé l'exercice avec une
-perte de l'exercice à affecter de € 1 „184,582,83.
+**Comparaison avec l'exercice précédent**  
+Comme il s'agit du premier exercice comptable, il n'y a pas de comparaison possible avec les résultats des exercices antérieurs mais il convient de noter que la société a clôturé l'exercice avec une perte de l'exercice à affecter de € 1.184.582,83.
 
-Les comptes annuels relatent la situation qui suit
-
-L'exercice clôturé à fin juin 2011 ne reprend les activités que depuis le mois d’octobre 2010 câd, 9
-mois de revenus et de dépenses.
+**Les comptes annuels relatent la situation qui suit :**  
+L'exercice clôturé à fin juin 2011 ne reprend les activités que depuis le mois d'octobre 2010 càd, 9 mois de revenus et de dépenses.
 
 Le bilan et le compte de résultats résumés se présentent comme suit :
 
@@ -2557,38 +2263,42 @@ Le bilan et le compte de résultats résumés se présentent comme suit :
 
 --- pág. 37 ---
 
-Bilan après répartition
-
+**Bilan après répartition**  
 montants en EUR :
 
-ACTIF 30.06.2011 %
-Actifs immobilisés 17.326.012,35 48.89
-Créances à plus d'un an 1.672.820.80 4,72
-Foustotal 18.998.833,15 53.61
-Actifs circulants à un an au plus 16.438,203,16 46.39
-TOTAL DE L'ACTIF 35.437.036,31 100.00
-PASSIF 30.06.2011 %
-Capitaux propres 1.315.417,17 3.71
-[Provisions et impôts différés 128.767,18 0.36
-Dettes à plus d'un an 8.129.210,00 22.94
-Sous-total 9.573.394,35 27.01
-Dettes à un an au plus 16.743.483,34 47.25
-Comptes de régularisation 9.120.158,62 25.74
-TOTAL DU PASSIF 35.437,036,31 100.00
-Compte de résultats 30.06.2011 %
-Chiffre d'affaires 31.775.511,25 81.17
-Autres Produits 1,371.635.35 18.83
-Total Ventes et Prestations 39.147.146,60 100.00
-re de personnel 24,421.768,73 62,38
-JAmortissements 5.171.003,32 13,21
-Autres charges d’exploïtation 13.623.183,00 34.80
-Bénéfice (Perte) d'exploitation -4.068.808,45 -10.39
-ésultat financier -168.011,29 -0.43
-Produits exceptionnels 3.181.004,09 8.13
-Charges exceptionnelles -128.767,18 -0,33
-Impôt sur le résultat
-Bénéfice (Perte) de l'exercice -1.184,582,83 -3.03
-énéfice (perte) de l'exercice à affecter -1.184.582,83 -3.03
+| ACTIF | 30.06.2011 | % |
+| :--- | :--- | :--- |
+| **Actifs immobilisés** | 17.326.012,35 | 48.89 |
+| **Créances à plus d'un an** | 1.672.820,80 | 4.72 |
+| **Sous-total** | 18.998.833,15 | 53.61 |
+| **Actifs circulants à un an au plus** | 16.438.203,16 | 46.39 |
+| **TOTAL DE L'ACTIF** | **35.437.036,31** | **100.00** |
+
+| PASSIF | 30.06.2011 | % |
+| :--- | :--- | :--- |
+| **Capitaux propres** | 1.315.417,17 | 3.71 |
+| **Provisions et impôts différés** | 128.767,18 | 0.36 |
+| **Dettes à plus d'un an** | 8.129.210,00 | 22.94 |
+| **Sous-total** | 9.573.394,35 | 27.01 |
+| **Dettes à un an au plus** | 16.743.483,34 | 47.25 |
+| **Comptes de régularisation** | 9.120.158,62 | 25.74 |
+| **TOTAL DU PASSIF** | **35.437.036,31** | **100.00** |
+
+| Compte de résultats | 30.06.2011 | % |
+| :--- | :--- | :--- |
+| **Chiffre d'affaires** | 31.775.511,25 | 81.17 |
+| **Autres Produits** | 7.371.635,35 | 18.83 |
+| **Total Ventes et Prestations** | **39.147.146,60** | **100.00** |
+| **Frais de personnel** | 24.421.768,73 | 62.38 |
+| **Amortissements** | 5.171.003,32 | 13.21 |
+| **Autres charges d'exploitation** | 13.623.183,00 | 34.80 |
+| **Bénéfice (Perte) d'exploitation** | **-4.068.808,45** | **-10.39** |
+| **Résultat financier** | **-168.011,29** | **-0.43** |
+| **Produits exceptionnels** | 3.181.004,09 | 8.13 |
+| **Charges exceptionnelles** | -128.767,18 | -0.33 |
+| **Impôt sur le résultat** | | |
+| **Bénéfice (Perte) de l'exercice** | **-1.184.582,83** | **-3.03** |
+| **Bénéfice (perte) de l'exercice à affecter** | **-1.184.582,83** | **-3.03** |
 
 37/41
 
@@ -2662,128 +2372,83 @@ Roger Vanden Stock
 
 --- pág. 40 ---
 
-DEGEEST GR
+40/41
 
+DEGEEST Bedrijfsrevisoren / Réviseurs d'entreprises
 KANTOREN TE BRUSSEL EN TE MEISE
 BUREAUX À BRUXELLES ET À MEISE
 
-RAPPORT DU COMMISSAIRE
-A L'ASSEMBLEE GENERALE DES ACTIONNAIRES
-DE LA SOCIETE ANONYME
-«ROYAL SPORTING CLUB ANDERLECHT »
-SUR LES COMPTES ANNUELS POUR L'EXERCICE CLOS
-LE 30 JUIN 2011
+**RAPPORT DU COMMISSAIRE A L'ASSEMBLEE GENERALE DES ACTIONNAIRES DE LA SOCIETE ANONYME « ROYAL SPORTING CLUB ANDERLECHT » SUR LES COMPTES ANNUELS POUR L'EXERCICE CLOS LE 30 JUIN 2011**
 
-Conformément aux dispositions légales et statutaires, nous vous faisons rapport dans le cadre du
-mandat de commissaire. Le rapport inclut notre opinion sur les comptes annuels ainsi que les mentions
-complémentaires requises.
+Conformément aux dispositions légales et statutaires, nous vous faisons rapport dans le cadre du mandat de commissaire. Le rapport inclut notre opinion sur les comptes annuels ainsi que les mentions complémentaires requises.
 
-Attestation sans réserve des comptes annuels
+**Attestation sans réserve des comptes annuels**
 
-Nous avons procédé au contrôle des comptes annuels pour l'exercice clos le 30 JUIN 2011, établis sur
-la base du référentiel comptable applicable en Belgique, dont le total du bilan s’élève à 35.437.036 „31
-€ et dont le compte de résultats se solde par une perte de l'exercice de - 1.184.582,83 €.
-L'établissement des comptes annuels relève de la responsabilité de l’organe de gestion. Cette
-responsabilité comprend : la conception, la mise en place et le suivi d’un contrôle interne relatif à
-établissement et la présentation sincère des comptes annuels ne comportant pas d'anomalies
-significatives, que celles-ci résultent de fraudes ou d'erreurs ; le choix et l'application de règles
-d'évaluation appropriées ainsi que la détermination d’estimations comptables raisonnables au regard
-des circonstances.
+Nous avons procédé au contrôle des comptes annuels pour l'exercice clos le **30 JUIN 2011,** établis sur la base du référentiel comptable applicable en Belgique, dont le total du bilan s'élève à **35.437.036 ,31 €** et dont le compte de résultats se solde par une **perte** de l'exercice de **- 1.184.582,83 €.**
+L'établissement des comptes annuels relève de la responsabilité de l'organe de gestion. Cette responsabilité comprend : la conception, la mise en place et le suivi d'un contrôle interne relatif à l'établissement et la présentation sincère des comptes annuels ne comportant pas d'anomalies significatives, que celles-ci résultent de fraudes ou d'erreurs ; le choix et l'application de règles d'évaluation appropriées ainsi que la détermination d'estimations comptables raisonnables au regard des circonstances.
 
-Notre responsabilité est d'exprimer une opinion sur ces comptes annuels sur la base de notre contrôle.
-Nous avons effectué notre contrôle conformément aux dispositions légales et selon les normes de
-révision applicables en Belgique, telles qu’édictées par l'Institut des Reviseurs d’Entreprises. Ces
-normes de révision requièrent que notre contrôle soit organisé et exécuté de manière à obtenir une
-assurance raisonnable que les comptes annuels ne comportent pas d'anomalies significatives, qu'elles
-résultent de fraudes ou d'erreurs
-
-Conformément aux normes de réviston précitées, nous avons tenu compte de l'organisation de la
-société en matière administrative et comptable ainsi que de ses dispositifs de contrôle interne. Nous
-avons obtenu de l'organe de gestion et des préposés de la société les explications et informations
-requises pour notre contrôle. Nous avons examiné par sondages la justification des montants figurant
-dans les comptes annuels. Nous avons évalué le bien-fondé des règles d'évaluation et le caractère
-raisonnable des estimations comptables significatives faites par la société ainsi que la présentation des
-comptes annuels dans leur ensemble. Nous estimons que ces travaux fournissent une base raisonnable
-à expression de notre opinion.
-
-A notre avis, les comptes annuels clos le 30 juin 2011 donnent une image fidèle du patrimoine, de la
-situation financière et des résultats de la société, conformément au référentiel comptable applicable en
-Belgique.
-
-B
+Notre responsabilité est d'exprimer une opinion sur ces comptes annuels sur la base de notre contrôle. Nous avons effectué notre contrôle conformément aux dispositions légales et selon les normes de révision applicables en Belgique, telles qu'édictées par l'Institut des Reviseurs d'Entreprises. Ces normes de révision requièrent que notre contrôle soit organisé et exécuté de manière à obtenir une assurance raisonnable que les comptes annuels ne comportent pas d'anomalies significatives, qu'elles résultent de fraudes ou d'erreurs
+Conformément aux normes de révision précitées, nous avons tenu compte de l'organisation de la société en matière administrative et comptable ainsi que de ses dispositifs de contrôle interne. Nous avons obtenu de l'organe de gestion et des préposés de la société les explications et informations requises pour notre contrôle. Nous avons examiné par sondages la justification des montants figurant dans les comptes annuels. Nous avons évalué le bien-fondé des règles d'évaluation et le caractère raisonnable des estimations comptables significatives faites par la société ainsi que la présentation des comptes annuels dans leur ensemble. Nous estimons que ces travaux fournissent une base raisonnable à l'expression de notre opinion.
+A notre avis, les comptes annuels clos le **30 juin 2011** donnent une image fidèle du patrimoine, de la situation financière et des résultats de la société, conformément au référentiel comptable applicable en Belgique.
 
 EXPLOITATIEZETEL / SIÈGE D'EXPLOITATION:
+Oude Vilvoordsebaan 21 • B-1860 Meise
+T 00 32 (0)2 425 71 14 F 00 32 (0)2 425 15 41
+MAATSCHAPPELIJKE ZETEL / SIÈGE SOCIAL:
+Rogierlaan 250, B-1030 Brussel • Avenue Rogier 250, B-1030 Bruxelles
+degeest.francois@skynet.be • s.delovinfosse@skynet.be
 
-Oude Vilvoordsebaan 21 « B-1860 Meise
+BTW / TVA: BE 0455 898 812
+RPR / RPM: Brussel/Bruxelles
+Burgerlijke Vennootschap onder de vorm van een BVBA
+Société civile sous forme d'une SPRL
 
-T 00 32(0)24257114 F 00 32 (0)2 425 15 41 sid mhen n ij Ee de
-
-MAATSCHAPPELIJKE ZETEL / SIËGE SOCIAL: RPR / RPM: Brussel/Bruxelles
-
-Roeierlaan 250, B-1030 Brussel * Avenue Rogier 250, B-1030 Bruxelles Burgerlijke Vennootschap onder de vorm van een BVBA
-
-degeest.francois@skynet.be «* s.detovinfosse@skynet.be Société civile sous forme d'une SPRL 40/41
+40/41
 
 --- pág. 41 ---
 
-DE GEE ST Bedrijfsrevisoren
-Réviseurs d'entreprises
+**DEGEEST**  
+Bedrijfsrevisoren  
+Réviseurs d'entreprises  
 
-KANTOREN TE BRUSSEL EN TE MEISE
-BUREAUX À BRUXELLES ET À MEISE
+KANTOREN TE BRUSSEL EN TE MEISE  
+BUREAUX À BRUXELLES ET À MEISE  
 
-RAPPORT DU COMMISSAIRE
-A L'ASSEMBLEE GENERALE DES ACTIONNAIRES
-DE LA SOCIETE ANONYME
-« ROYAL SPORTING CLUB ANDERLECHT »
-SUR LES COMPTES ANNUELS POUR L'EXERCICE CLOS
-LE 30 JUIN 2011
+# RAPPORT DU COMMISSAIRE A L'ASSEMBLEE GENERALE DES ACTIONNAIRES DE LA SOCIETE ANONYME « ROYAL SPORTING CLUB ANDERLECHT » SUR LES COMPTES ANNUELS POUR L'EXERCICE CLOS LE 30 JUIN 2011
 
-Mentions complémentaires
+## Mentions complémentaires
+L'établissement et le contenu du rapport de gestion, ainsi que le respect par la société du Code des sociétés et des statuts, relèvent de la responsabilité de l'organe de gestion.  
+Notre responsabilité est d'inclure dans notre rapport les mentions complémentaires suivantes qui ne sont pas de nature à modifier la portée de l'attestation des comptes annuels:
 
-L’établissement et le contenu du rapport de gestion, ainsi que le respect par la société du Code des
-sociétés et des statuts, relèvent de la responsabilité de lorgane de gestion.
+- Le rapport de gestion traite des informations requises par la loi et concorde avec les comptes annuels. Toutefois, nous ne sommes pas en mesure de nous prononcer sur la description des principaux risques et incertitudes auxquels la société est confrontée, ainsi que de sa situation, de son évolution prévisible ou de l'influence notable de certains faits sur son développement futur. Nous pouvons néanmoins confirmer que les renseignements fournis ne présentent pas d'incohérences manifestes avec les informations dont nous avons connaissance dans le cadre de notre mandat.
 
-Notre responsabilité est d’inclure dans notre rapport les mentions complémentaires suivantes qui ne
-sont pas de nature à modifier la portée de l’attestation des comptes annuels:
+- Sans préjudice d'aspects formels d'importance mineure, la comptabilité est tenue conformément aux dispositions légales et réglementaires applicables en Belgique.
 
-Le rapport de gestion traite des informations requises par la loi et concorde avec les comptes
-annuels. Toutefois, nous ne sommes pas en mesure de nous prononcer sur la description des
-principaux risques et incertitudes auxquels la société est confrontée, ainsi que de sa situation, de
-son évolution prévisible ou de l’influence notable de certains faits sur son développement futur.
-Nous pouvons néanmoins confirmer que les renseignements fournis ne présentent pas
-d’incohérences manifestes avec les informations dont nous avons connaissance dans le cadre de
-notre mandat.
-
-Sans préjudice d’aspects formels d’importance mineure, la comptabilité est tenue conformément
-aux dispositions légales et réglementaires applicables en Belgique.
-
-Nous n’avons pas à vous signaler d’opération conclue ou de décision prise en violation des statuts ou
-du Code des sociétés sauf la remise tardive des comptes annuels et du rapport de gestion ce qui ne
-nous a pas permis de remettre notre rapport 15 jours avant l'assemblée
+Nous n'avons pas à vous signaler d'opération conclue ou de décision prise en violation des statuts ou du Code des sociétés sauf la remise tardive des comptes annuels et du rapport de gestion ce qui ne nous a pas permis de remettre notre rapport 15 jours avant l'assemblée
 
 Meise, le 27 septembre 2011
 
-SPRL DEGEEST, REVISEUR d’'ENTREPRISES
-Commissaire
-Représentée par
+**SPRL DEGEEST, REVISEUR d’ENTREPRISES**  
+**Commissaire**  
+**Représentée par**  
 
-De, 5
-IE >
+[signature]  
+**FRANÇOIS DEGEEST**  
+REVISEUR D’ENTREPRISES  
 
-FRANCOIS DEGEEST
+---
+EXPLOITATIEZETEL / SIÈGE D'EXPLOITATION:  
+Oude Vilvoordsebaan 21 • B-1860 Meise  
+T 00 32 (0)2 425 71 14 F 00 32 (0)2 425 15 41  
+MAATSCHAPPELIJKE ZETEL / SIÈGE SOCIAL:  
+Rogierlaan 250, B-1030 Brussel • Avenue Rogier 250, B-1030 Bruxelles  
+degeest.francois@skynet.be • s.delovinfosse@skynet.be  
 
-REVISEUR D'ENTREPRISES
+BTW / TVA: BE 0455 898 812  
+RPR / RPM: Brussel/Bruxelles  
 
-EXPLOITATIEZETEL / SIËGE D'EXPLOITATION:
+Burgerlijke Vennootschap onder de vorm van een BVBA  
+Société civile sous forme d'une SPRL  
 
-Oude Vilvoordsebaan 21 « B-1860 Meise
-: 2
+41/41
 
-T 00 32(0)2 4257114 F 00 32 (0)2 425 15 41 id les BE 0455 898 S
-
-MAATSCHAPPELIJKE ZETEL / SIËGE SOCIAL: BREMER rss NB LIRENES
-
-Rogierlaan 250, B-1030 Brussel « Avenue Rogier 250, B-1030 Bruxelles Burgerlijke Vennootschap onder de vorm van een BVBA
-
-degeest francois@skynet.be « s.delovinfosse@skynet.be Société civile sous forme d'une SPRL A1/41

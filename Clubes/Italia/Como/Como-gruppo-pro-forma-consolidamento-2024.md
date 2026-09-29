@@ -195,203 +195,174 @@ Mirwan
 
 --- pág. 6 ---
 
-|  Como 1907 - Prospetto Pro-forma di Consolidamento | Como 1907 | Società del Gruppo | Eliminazioni IC | Prospetto Pro-forma di Consolidamento  |
-| --- | --- | --- | --- | --- |
-|  **STATO PATRIMONIALE - ATTIVO** | **30 giugno 2024** | **30 giugno 2024** | **30 giugno 2024** | **30 giugno 2024**  |
-|  **B) IMMOBILIZZAZIONI** |  |  |  |   |
-|  **I Immobilizzazioni immateriali** |  |  |  |   |
-|  1) Costi di impianto e di ampliamento | 1.965 | 49.292 | - | 51.257  |
-|  4) Concessioni, licenze, marchi e diritti simili | 7.232 | 26.465 | - | 33.697  |
-|  7) Diritti pluriennali alle prestazioni calciatori | 34.707.478 | - | - | 34.707.478  |
-|  8) Altre | 1.256.954 | 175.562 | - | 1.432.516  |
-|  **Totale (I)** | **35.973.629** | **251.319** | **-** | **36.224.948**  |
-|  **II Immobilizzazioni materiali** |  |  |  |   |
-|  1) Terreni e fabbricati | - | 6.393.972 | - | 6.393.972  |
-|  2) Impianti e macchinario | 506.616 | 99.022 | - | 605.638  |
-|  3) Attrezzature industriali e commerciali | - | 79.226 | - | 79.226  |
-|  4) Altri beni | 113.411 | 563.064 | - | 676.475  |
-|  5) Immobilizzazioni in corso e accordi | - | 996.382 | - | 996.382  |
-|  **Totale (II)** | **620.027** | **8.131.667** | **-** | **8.751.694**  |
-|  **III Immobilizzazioni finanziarie** |  |  |  |   |
-|  1) Partecipazioni |  |  |  |   |
-|  a) imprese controllate | - | 8.928.000 | (8.821.000) | 107.000  |
-|  2) Crediti |  |  |  |   |
-|  d-bis) verso altri |  |  |  |   |
-|  a) entro l'esercizio successivo | 2.112.567 | 99.828 | - | 2.212.395  |
-|  b) oltre l'esercizio successivo | - | - | - | -  |
-|  **Totale (III)** | **2.112.567** | **9.027.828** | **(8.821.000)** | **2.319.395**  |
-|  **Totale immobilizzazioni** | **36.706.222** | **17.419.814** | **(8.821.000)** | **47.296.030**  |
-|  **C) ATTIVO CIRCOLANTE** |  |  |  |   |
-|  **I Rimanenze** |  |  |  |   |
-|  4) Prodotti finiti e merci | - | 1.228.352 | - | 1.228.352  |
-|  5) Accordi | - | 68.812 | - | 68.812  |
-|  **Totale (I)** | **-** | **1.297.164** | **-** | **1.297.164**  |
-|  **II Crediti** |  |  |  |   |
-|  1) verso clienti |  |  |  |   |
-|  a) entro l'esercizio successivo | 3.817.802 | 204.720 | - | 4.022.521  |
-|  2) verso imprese controllate |  |  |  |   |
-|  a) entro l'esercizio successivo | - | 120.589 | (119.298) | 1.291  |
-|  4) verso controllanti |  |  |  |   |
-|  a) entro l'esercizio successivo | 9.085 | 741.417 | (356.581) | 393.921  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  a) entro l'esercizio successivo | 270.771 | 3.125.620 | (3.317.443) | 78.947  |
-|  5-bis) crediti tributari |  |  |  |   |
-|  a) entro l'esercizio successivo | 1.591.594 | 910.194 | - | 2.501.788  |
-|  5-quater) verso altri |  |  |  |   |
-|  a) entro l'esercizio successivo | 243.387 | 98.292 | - | 341.679  |
-|  6) verso enti settore specifico |  |  |  |   |
-|  a) entro l'esercizio successivo | 1.916.273 | - | - | 1.916.273  |
-|  **Totale (II)** | **7.848.911** | **5.200.831** | **(3.793.323)** | **9.256.419**  |
-|  **IV Disponibilità liquide** |  |  |  |   |
-|  1) Depositi bancari e postali | 3.297.564 | 1.297.428 | - | 4.594.993  |
-|  3) Denaro e valori in cassa | 282 | 7.857 | - | 8.138  |
-|  **Totale (IV)** | **3.297.846** | **1.305.285** | **-** | **4.603.131**  |
-|  **Totale attivo circolante** | **11.146.737** | **7.803.280** | **(3.793.323)** | **15.156.714**  |
-|  **D) RATEI E RISCONTI ATTIVI** |  |  |  |   |
-|  II) Risconti attivi | 828.255 | 87.584 | - | 915.838  |
-|  **TOTALE ATTIVO** | **56.681.234** | **35.301.676** | **(12.614.323)** | **63.368.559**  |
+Como 1907 - Prospetto Pro-forma di Consolidamento
+
+| STATO PATRIMONIALE - ATTIVO | Como 1907 (30 giugno 2024) | Società del Gruppo (30 giugno 2024) | Eliminazioni IC (30 giugno 2024) | Prospetto Pro-forma di Consolidamento (30 giugno 2024) |
+|---|---|---|---|---|
+| **B) IMMOBILIZZAZIONI** | | | | |
+| **I Immobilizzazioni immateriali** | | | | |
+| 1) Costi di impianto e di ampliamento | 1.965 | 49.292 | - | 51.257 |
+| 4) Concessioni, licenze, marchi e diritti simili | 7.232 | 26.465 | - | 33.697 |
+| 7) Diritti pluriennali alle prestazioni calciatori | 34.707.478 | - | - | 34.707.478 |
+| 8) Altre | 1.256.954 | 175.562 | - | 1.432.516 |
+| **Totale (I)** | **35.973.629** | **251.319** | **-** | **36.224.948** |
+| **II Immobilizzazioni materiali** | | | | |
+| 1) Terreni e fabbricati | - | 6.393.972 | - | 6.393.972 |
+| 2) Impianti e macchinario | 506.616 | 99.022 | - | 605.638 |
+| 3) Attrezzature industriali e commerciali | - | 79.226 | - | 79.226 |
+| 4) Altri beni | 113.411 | 563.064 | - | 676.475 |
+| 5) Immobilizzazioni in corso e acconti | - | 996.382 | - | 996.382 |
+| **Totale (II)** | **620.027** | **8.131.667** | **-** | **8.751.694** |
+| **III Immobilizzazioni finanziarie** | | | | |
+| 1) Partecipazioni | | | | |
+| a) imprese controllate | - | 8.928.000 | (8.821.000) | 107.000 |
+| 2) Crediti | | | | |
+| d-bis) verso altri | | | | |
+| a) entro l'esercizio successivo | 2.112.567 | 99.828 | - | 2.212.395 |
+| b) oltre l'esercizio successivo | - | - | - | - |
+| **Totale (III)** | **2.112.567** | **9.027.828** | **(8.821.000)** | **2.319.395** |
+| **Totale immobilizzazioni** | **38.706.222** | **17.410.814** | **(8.821.000)** | **47.296.036** |
+| **C) ATTIVO CIRCOLANTE** | | | | |
+| **I Rimanenze** | | | | |
+| 4) Prodotti finiti e merci | - | 1.228.352 | - | 1.228.352 |
+| 5) Acconti | - | 68.812 | - | 68.812 |
+| **Totale (I)** | **-** | **1.297.164** | **-** | **1.297.164** |
+| **II Crediti** | | | | |
+| 1) verso clienti | | | | |
+| a) entro l'esercizio successivo | 3.817.802 | 204.720 | - | 4.022.521 |
+| 2) verso imprese controllate | | | | |
+| a) entro l'esercizio successivo | - | 120.589 | (119.298) | 1.291 |
+| 4) verso controllanti | | | | |
+| a) entro l'esercizio successivo | 9.085 | 741.417 | (356.581) | 393.921 |
+| 5) verso imprese sottoposte al controllo delle controllanti | | | | |
+| a) entro l'esercizio successivo | 270.771 | 3.125.620 | (3.317.443) | 78.947 |
+| 5-bis) crediti tributari | | | | |
+| a) entro l'esercizio successivo | 1.591.594 | 910.194 | - | 2.501.788 |
+| 5-quater) verso altri | | | | |
+| a) entro l'esercizio successivo | 243.387 | 98.292 | - | 341.679 |
+| 6) verso enti settore specifico | | | | |
+| a) entro l'esercizio successivo | 1.916.273 | - | - | 1.916.273 |
+| **Totale (II)** | **7.848.911** | **5.200.831** | **(3.793.323)** | **9.256.419** |
+| **IV Disponibilità liquide** | | | | |
+| 1) Depositi bancari e postali | 3.297.564 | 1.297.428 | - | 4.594.993 |
+| 3) Denaro e valori in cassa | 282 | 7.857 | - | 8.138 |
+| **Totale (IV)** | **3.297.846** | **1.305.285** | **-** | **4.603.131** |
+| **Totale attivo circolante** | **11.146.757** | **7.803.280** | **(3.793.323)** | **15.156.714** |
+| **D) RATEI E RISCONTI ATTIVI** | | | | |
+| II) Risconti attivi | 828.255 | 87.584 | - | 915.838 |
+| **TOTALE ATTIVO** | **50.681.234** | **25.301.678** | **(12.614.323)** | **63.368.589** |
 
 --- pág. 7 ---
 
-|  Como 1907 - Prospetto Pro-forma di Consolidamento | Como 1907 | Società del Gruppo | Eliminazioni IC | Prospetto Pro-forma di Consolidamento  |
-| --- | --- | --- | --- | --- |
-|  **STATO PATRIMONIALE - PASSIVO** | **30 giugno 2024** | **30 giugno 2024** | **30 giugno 2024** | **30 giugno 2024**  |
-|  **A) PATRIMONIO NETTO** |  |  |  |   |
-|  **I Capitale sociale** | 2.000.000 | 70.000 | (40.000) | 2.030.000  |
-|  **II Riserva da sovrapprezzo azioni** | - | 728.798 | - | 728.798  |
-|  - Riserva per versamenti in c/futuro aumento di capitale | - | 900.000 | (900.000) | -  |
-|  - Riserva Straordinaria | - | 11.690.000 | - | 11.690.000  |
-|  - Riserva per copertura perdite esercizio in corso | 49.698.453 | 8.871.759 | (8.811.759) | 49.758.453  |
-|  **IX Utile (perdita) dell'esercizio** | (47.756.634) | (1.743.202) | - | (49.499.836)  |
-|  **Totale patrimonio netto** | **3.941.818** | **20.517.355** | **(9.751.759)** | **14.707.414**  |
-|  **B) FONDI PER RISCHI E ONERI** |  |  |  |   |
-|  4) altri | 175.655 | - | - | 175.655  |
-|  Fondo di consolidamento per rischi e oneri futuri | - | - | 30.759 | 30.759  |
-|  **Totale fondi per rischi e oneri** | **175.655** | **-** | **30.759** | **206.414**  |
-|  **C) TRATTAM. FINE RAPPORTO LAVORO SUBORDINATO** | 193.898 | 85.494 | - | **279.392**  |
-|  **D) DEBITI** |  |  |  |   |
-|  3) Debiti verso soci per finanziamenti |  |  |  |   |
-|  a) entro l'esercizio successivo | - | 500.000 | - | 500.000  |
-|  6) Accenti | 300 | 598 | - | 898  |
-|  7) Debiti verso fornitori |  |  |  |   |
-|  a) entro l'esercizio successivo | 1.606.964 | 1.388.268 | - | 2.995.233  |
-|  9) Debiti verso imprese controllate |  |  |  |   |
-|  a) entro l'esercizio successivo | - | 52.218 | (52.218) | -  |
-|  11) Debiti verso imprese controllanti |  |  |  |   |
-|  a) entro l'esercizio successivo | 6.029.581 | 1.433.195 | (119.299) | 7.343.477  |
-|  11-bis) Debiti verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  a) entro l'esercizio successivo | 1.995.608 | 689.838 | (2.685.446) | -  |
-|  12) Debiti tributari |  |  |  |   |
-|  a) entro l'esercizio successivo | 1.590.066 | 72.877 | (36.360) | 1.626.583  |
-|  b) oltre l'esercizio successivo | - | 16 | - | 16  |
-|  13) Debiti verso istituti di previdenza e di sicurezza sociale |  |  |  |   |
-|  a) entro l'esercizio successivo | 370.045 | 118.457 | - | 488.501  |
-|  14) Altri debiti |  |  |  |   |
-|  a) entro l'esercizio successivo | 4.521.464 | 443.362 | - | 4.964.826  |
-|  b) oltre l'esercizio successivo | 804.000 | - | - | 804.000  |
-|  15) Debiti verso enti settore specifico |  |  |  |   |
-|  a) entro l'esercizio successivo | 15.550.625 | - | - | 15.550.625  |
-|  b) oltre l'esercizio successivo | 9.647.237 | - | - | 9.647.237  |
-|  **Totale debiti** | **42.115.890** | **4.608.828** | **(2.893.323)** | **43.921.396**  |
-|  **E) RATEI E RISCONTI PASSIVI** |  |  |  |   |
-|  II) Risconti passivi | 4.253.973 | - | - | 4.253.973  |
-|  **TOTALE PASSIVO** | **50.681.234** | **25.301.676** | **(12.614.323)** | **63.368.089**  |
+Como 1907 - Prospetto Pro-forma di Consolidamento
+
+| STATO PATRIMONIALE - PASSIVO | Como 1907 (30 giugno 2024) | Società del Gruppo (30 giugno 2024) | Eliminazioni IC (30 giugno 2024) | Prospetto Pro-forma di Consolidamento (30 giugno 2024) |
+|---|---|---|---|---|
+| **A) PATRIMONIO NETTO** | | | | |
+| I Capitale sociale | 2.000.000 | 70.000 | (40.000) | 2.030.000 |
+| II Riserva da sovrapprezzo azioni | - | 728.798 | - | 728.798 |
+| - Riserva per versamenti in c/futuro aumento di capitale | - | 900.000 | (900.000) | - |
+| - Riserva Straordinaria | - | 11.690.000 | - | 11.690.000 |
+| - Riserva per copertura perdite esercizio in corso | 49.698.453 | 8.871.759 | (8.811.759) | 49.758.453 |
+| IX Utile (perdita) dell'esercizio | (47.756.634) | (1.743.202) | - | (49.499.836) |
+| **Totale patrimonio netto** | **3.941.818** | **20.517.355** | **(9.751.759)** | **14.707.414** |
+| **B) FONDI PER RISCHI E ONERI** | | | | |
+| 4) altri | 175.655 | - | - | 175.655 |
+| Fondo di consolidamento per rischi e oneri futuri | - | - | 30.759 | 30.759 |
+| **Totale fondi per rischi e oneri** | **175.655** | **-** | **30.759** | **206.414** |
+| **C) TRATTAM. FINE RAPPORTO LAVORO SUBORDINATO** | 193.898 | 85.494 | - | 279.392 |
+| **D) DEBITI** | | | | |
+| 3) Debiti verso soci per finanziamenti | | | | |
+| a) entro l'esercizio successivo | - | 500.000 | - | 500.000 |
+| 6) Acconti | 300 | 598 | - | 898 |
+| 7) Debiti verso fornitori | | | | |
+| a) entro l'esercizio successivo | 1.606.964 | 1.388.268 | - | 2.995.233 |
+| 9) Debiti verso imprese controllate | | | | |
+| a) entro l'esercizio successivo | - | 52.218 | (52.218) | - |
+| 11) Debiti verso imprese controllanti | | | | |
+| a) entro l'esercizio successivo | 6.029.581 | 1.433.195 | (119.299) | 7.343.477 |
+| 11-bis) Debiti verso imprese sottoposte al controllo delle controllanti | | | | |
+| a) entro l'esercizio successivo | 1.995.608 | 689.838 | (2.685.446) | - |
+| 12) Debiti tributari | | | | |
+| a) entro l'esercizio successivo | 1.590.066 | 72.877 | (36.360) | 1.626.583 |
+| b) oltre l'esercizio successivo | - | 16 | - | 16 |
+| 13) Debiti verso istituti di previdenza e di sicurezza sociale | | | | |
+| a) entro l'esercizio successivo | 370.045 | 118.457 | - | 488.501 |
+| 14) Altri debiti | | | | |
+| a) entro l'esercizio successivo | 4.521.464 | 443.362 | - | 4.964.826 |
+| b) oltre l'esercizio successivo | 804.000 | - | - | 804.000 |
+| 15) Debiti verso enti settore specifico | | | | |
+| a) entro l'esercizio successivo | 15.550.625 | - | - | 15.550.625 |
+| b) oltre l'esercizio successivo | 9.647.237 | - | - | 9.647.237 |
+| **Totale debiti** | **42.115.890** | **4.698.828** | **(2.893.323)** | **43.921.396** |
+| **E) RATEI E RISCONTI PASSIVI** | | | | |
+| II) Risconti passivi | 4.253.973 | - | - | 4.253.973 |
+| **TOTALE PASSIVO** | **50.681.234** | **25.301.678** | **(12.614.323)** | **63.368.589** |
 
 --- pág. 8 ---
 
 Como 1907 - Prospetto Pro-forma di Consolidamento
 
-Como 1907
-
-Società del Gruppo
-
-Eliminazioni IC
-
-Prospetto Pro-forma di Consolidamento
-
-CONTO ECONOMICO
-
-12 mesi al
-30 giugno 2024
-
-12 mesi al
-30 giugno 2024
-
-12 mesi al
-30 giugno 2024
-
-12 mesi al
-30 giugno 2024
-
-A) VALORE DELLA PRODUZIONE
-
-|  1) Ricavi delle vendite e delle prestazioni |  |  |  |   |
-| --- | --- | --- | --- | --- |
-|  a) ricavi da gare | 992.906 | - | - | 992.906  |
-|  b) abbonamenti | 552.687 | - | - | 552.687  |
-|  2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e firsti | - | 1.228.352 | - | 1.228.352  |
-|  5) Altri ricavi e proventi |  |  |  |   |
-|  a) contributi in conto esercizio | 7.356.392 | - | - | 7.356.392  |
-|  b) sponsorizzazioni | 265.358 | 103.069 | - | 368.427  |
-|  c) proventi pubblicitari | 287.100 | - | - | 287.100  |
-|  d) proventi commerciali e royalties | 100.000 | 847.431 | (536.078) | 411.353  |
-|  e) proventi da cessione diritti televisivi | - | - | - | -  |
-|  f) ricavi cessione temporanea calciatori | - | - | - | -  |
-|  g) plusvalenze cessione diritti prestazioni calciatori | - | - | - | -  |
-|  h) altri proventi da gestione calciatori | - | - | - | -  |
-|  i) altri ricavi e proventi diversi | 260.970 | 2.417.679 | (2.206.723) | 471.926  |
-|  **Totale valore della produzione** | **9.815.414** | **4.596.531** | **(2.742.801)** | **11.669.143**  |
-
-B) COSTI DELLA PRODUZIONE
-
-|  6) Per materie prime, sussidiarie, di consumo | 563.223 | 1.901.940 | (394.263) | 2.070.901  |
-| --- | --- | --- | --- | --- |
-|  7) Per servizi | 12.520.814 | 2.137.679 | (2.033.134) | 12.625.359  |
-|  8) Per godimento di beni di terzi | 593.339 | 407.076 | (14.709) | 985.706  |
-|  9) Per il personale |  |  |  |   |
-|  a) salari e stipendi | 30.392.201 | 1.062.667 | - | 31.454.868  |
-|  b) oneri sociali | 2.733.473 | 329.299 | - | 3.062.772  |
-|  c) trattamento di fine rapporto | 400.195 | 64.464 | - | 464.660  |
-|  10) Ammortamenti e svalutazioni |  |  |  |   |
-|  a) ammortamento delle immobilizzazioni immateriali | 4.746.360 | 28.287 | - | 4.774.648  |
-|  b) ammortamento delle immobilizzazioni materiali | 342.459 | 48.069 | - | 390.528  |
-|  c) altre svalutazioni delle immobilizzazioni | 603.400 | - | 127.521 | 730.922  |
-|  12) Accantonamenti per rischi | 175.655 | - | - | 175.655  |
-|  14) Oneri diversi di gestione |  |  |  |   |
-|  a) oneri da organizzazione competizioni | 627.770 | - | - | 627.770  |
-|  b) costi per acquisizione temporanea prestazione calciatori | 500.000 | - | - | 500.000  |
-|  c) minusvalenze cessione diritti preotaz calciatori | 585.411 | - | - | 585.411  |
-|  d) altri oneri da gestione calciatori | 88.250 | - | - | 88.250  |
-|  e) altri oneri diversi e sopravvenienze passive | 2.712.845 | 358.599 | (428.216) | 2.643.228  |
-|  **Totale costi della produzione** | **57.585.395** | **6.336.658** | **(2.742.801)** | **61.180.078**  |
-|  **Ditterenza fra valore e costi della produzione (A - B)** | **(47.769.982)** | **(1.741.551)** | **-** | **(49.511.533)**  |
-
-C) PROVENTI E ONERI FINANZIARI
-
-|  16) Altri proventi finanziari |  |  |  |   |
-| --- | --- | --- | --- | --- |
-|  d) proventi diversi dai precedenti |  |  |  |   |
-|  - altri proventi diversi | 18.250 | - | - | 18.250  |
-|  17) Interessi e altri oneri finanziari |  |  |  |   |
-|  e) altri oneri finanziari | - | (4) | - | (4)  |
-|  17-bis) Utile e perdite su cambi | 3.793 | (1.646) | - | 2.146  |
-|  **Totale proventi e oneri finanziari** | **22.042** | **(1.650)** | **-** | **20.392**  |
-
-D) RETTIFICHE DI VALORE DI ATTIVITA' FINANZIARIE
-
-|  19) Svalutazioni |  |  |  |   |
-| --- | --- | --- | --- | --- |
-|  a) di partecipazioni | (8.695) | - | - | (8.695)  |
-|  **Totale rettifiche di valore di attività finanziarie** | **(8.695)** | **-** | **-** | **(8.695)**  |
-|  **Risultato prima delle imposte** | **(47.756.634)** | **(1.742.202)** | **-** | **(49.499.830)**  |
-|  20) Imposte sul reddito dell'esercizio |  |  |  |   |
-|  a) imposte correnti | - | - | - | -  |
-|  **Utile (Perdita) del periodo** | **(47.756.634)** | **(1.742.202)** | **-** | **(49.499.830)**  |
+| CONTO ECONOMICO | Como 1907 (12 mesi al 30 giugno 2024) | Società del Gruppo (12 mesi al 30 giugno 2024) | Eliminazioni IC (12 mesi al 30 giugno 2024) | Prospetto Pro-forma di Consolidamento (12 mesi al 30 giugno 2024) |
+|---|---|---|---|---|
+| **A) VALORE DELLA PRODUZIONE** | | | | |
+| 1) Ricavi delle vendite e delle prestazioni | | | | |
+| a) ricavi da gare | 992.906 | - | - | 992.906 |
+| b) abbonamenti | 552.687 | - | - | 552.687 |
+| 2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti | - | 1.228.352 | - | 1.228.352 |
+| 5) Altri ricavi e proventi | | | | |
+| a) contributi in conto esercizio | 7.356.392 | - | - | 7.356.392 |
+| b) sponsorizzazioni | 265.358 | 103.069 | - | 368.427 |
+| c) proventi pubblicitari | 287.100 | - | - | 287.100 |
+| d) proventi commerciali e royalties | 100.000 | 847.431 | (536.078) | 411.353 |
+| e) proventi da cessione diritti televisivi | - | - | - | - |
+| f) ricavi cessione temporanea calciatori | - | - | - | - |
+| g) plusvalenze cessione diritti prestazioni calciatori | - | - | - | - |
+| h) altri proventi da gestione calciatori | - | - | - | - |
+| i) altri ricavi e proventi diversi | 260.970 | 2.417.679 | (2.206.723) | 471.926 |
+| **Totale valore della produzione** | **9.815.414** | **4.596.531** | **(2.742.801)** | **11.669.143** |
+| **B) COSTI DELLA PRODUZIONE** | | | | |
+| 6) Per materie prime, sussidiarie, di consumo | 563.223 | 1.901.940 | (394.263) | 2.070.901 |
+| 7) Per servizi | 12.520.814 | 2.137.679 | (2.033.134) | 12.625.359 |
+| 8) Per godimento di beni di terzi | 593.339 | 407.076 | (14.709) | 985.706 |
+| 9) Per il personale | | | | - |
+| a) salari e stipendi | 30.392.201 | 1.062.667 | - | 31.454.868 |
+| b) oneri sociali | 2.733.473 | 329.299 | - | 3.062.772 |
+| c) trattamento di fine rapporto | 400.195 | 64.464 | - | 464.660 |
+| 10) Ammortamenti e svalutazioni | | | | |
+| a) ammortamento delle immobilizzazioni immateriali | 4.746.360 | 28.287 | - | 4.774.648 |
+| b) ammortamento delle immobilizzazioni materiali | 342.459 | 48.069 | - | 390.528 |
+| c) altre svalutazioni delle immobilizzazioni | 603.400 | - | 127.521 | 730.922 |
+| 12) Accantonamenti per rischi | 175.655 | - | - | 175.655 |
+| 14) Oneri diversi di gestione | | | | |
+| a) oneri da organizzazione competizioni | 627.770 | - | - | 627.770 |
+| b) costi per acquisizione temporanea prestazione calciatori | 500.000 | - | - | 500.000 |
+| c) minusvalenze cessione diritti prestaz.calciatori | 585.411 | - | - | 585.411 |
+| d) altri oneri da gestione calciatori | 88.250 | - | - | 88.250 |
+| e) altri oneri diversi e sopravvenienze passive | 2.712.845 | 358.599 | (428.216) | 2.643.228 |
+| **Totale costi della produzione** | **57.585.395** | **6.338.082** | **(2.742.801)** | **61.180.676** |
+| **Differenza fra valore e costi della produzione (A - B)** | **(47.769.982)** | **(1.741.551)** | **-** | **(49.511.533)** |
+| **C) PROVENTI E ONERI FINANZIARI** | | | | |
+| 16) Altri proventi finanziari | | | | |
+| d) proventi diversi dai precedenti | | | | |
+| - altri proventi diversi | 18.250 | - | - | 18.250 |
+| 17) Interessi e altri oneri finanziari | | | | |
+| e) altri oneri finanziari | - | (4) | - | (4) |
+| 17-bis) Utile e perdite su cambi | 3.793 | (1.646) | - | 2.146 |
+| **Totale proventi e oneri finanziari** | **22.042** | **(1.650)** | **-** | **20.392** |
+| **D) RETTIFICHE DI VALORE DI ATTIVITA' FINANZIARIE** | | | | |
+| 19) Svalutazioni | | | | |
+| a) di partecipazioni | (8.695) | - | - | (8.695) |
+| **Totale rettifiche di valore di attività finanziarie** | **(8.695)** | **-** | **-** | **(8.695)** |
+| **Risultato prima delle imposte** | **(47.756.634)** | **(1.743.202)** | **-** | **(49.499.836)** |
+| 20) Imposte sul reddito dell'esercizio | | | | |
+| a) imposte correnti | - | - | - | - |
+| **Utile (Perdita) del periodo** | **(47.756.634)** | **(1.743.202)** | **-** | **(49.499.836)** |
 
 Per il Consiglio di Amministrazione
-
 Il Presidente
-Minean
+Mirwan
+[firma]
 
 --- pág. 9 ---
 
@@ -399,82 +370,81 @@ Como 1907 - Prospetto Pro-forma di Consolidamento
 
 Rendiconto Finanziario al 30 giugno 2024
 
-|  In Euro | 12 mesi al 30 giugno 2024  |
-| --- | --- |
-|  A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto) |   |
-|  Utile (perdita) dell'esercizio | (49.499.836)  |
-|  Imposte sul reddito | -  |
-|  Interessi passivi/(interessi attivi) | (18.246)  |
-|  (Dividendi) | -  |
-|  (Plusvalenze)/minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori | 585.411  |
-|  (Plusvalenze)/minusvalenze derivanti dalla cessione di altre attività | -  |
-|  2. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione | (48.932.671)  |
-|  Retifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto |   |
-|  Accantonamenti ai fondi | 336.997  |
-|  Ammortamenti delle immobilizzazioni | 5.165.175  |
-|  Svalutazioni per perdite durevoli di valore | 730.922  |
-|  Altre rettifiche per elementi non monetari | 8.695  |
-|  2. Flusso finanziario prima delle variazioni del CCN | 6.241.789  |
-|  Variazioni del capitale circolante netto |   |
-|  Deccremento/(incremento) delle rimanenze | (1.297.164)  |
-|  Deccremento/(incremento) dei crediti vs clienti | (3.795.729)  |
-|  Incremento/(decremento) dei debiti verso fornitori | 2.179.637  |
-|  Deccremento/(incremento) ratei e risconti attivi | (666.349)  |
-|  Incremento/(decremento) ratei e risconti passivi | 3.999.961  |
-|  Altre variazioni del capitale circolante netto | 10.419.141  |
-|  3. Flusso finanziario dopo le variazioni del CCN | 10.839.496  |
-|  Altre rettifiche |   |
-|  Interessi incassati/(pagati) | 18.246  |
-|  (Imposte sul reddito pagate) | (160.525)  |
-|  Dividendi incassati | -  |
-|  (Utilizzo dei fondi) | 36.347  |
-|  Totale Altre rettifiche | (105.932)  |
-|  Flusso finanziario dell'attività operativa (A) | (31.957.319)  |
-|  B. Flussi finanziari derivanti dall'attività di investimento |   |
-|  Immobilizzazioni materiali | (4.477.945)  |
-|  (Investimenti) | (4.477.945)  |
-|  Disinvestimenti | -  |
-|  Diritti pluriennali alle prestazioni dei calciatori | (14.802.846)  |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (38.199.600)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | (107.334)  |
-|  Deccremento/(incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (946.159)  |
-|  Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 24.450.247  |
-|  Altre Immobilizzazioni immateriali | (797.833)  |
-|  (Investimenti) | (797.833)  |
-|  Disinvestimenti | -  |
-|  Immobilizzazioni finanziarie | (2.227.323)  |
-|  (Investimenti) | (2.227.323)  |
-|  Disinvestimenti | -  |
-|  Attività Finanziarie non immobilizzate | -  |
-|  (Investimenti) | -  |
-|  Disinvestimenti | -  |
-|  Totale Altre attività di investimento | (3.025.156)  |
-|  Flusso finanziario dell'attività di investimento (B) | (22.305.947)  |
-|  C. Flussi finanziari derivanti dall'attività di finanziamento |   |
-|  Mezzi di terzi | -  |
-|  Incremento (decremento) debiti a breve verso banche | -  |
-|  Accensione finanziamenti - v/controllate | -  |
-|  (Rimborso finanziamenti) | -  |
-|  Finanziamenti soci | 500.000  |
-|  Accensione finanziamenti | 500.000  |
-|  (Rimborso finanziamenti) | -  |
-|  Mezzi propri | 58.023.797  |
-|  Aumento di capitale a pagamento | 58.023.797  |
-|  (Rimborso di capitale) | -  |
-|  Cessione (acquisto) di azioni proprie | -  |
-|  (Dividendi (e acconti su dividendi) pagati) | -  |
-|  Altre entrate (uscite) da attività di finanziamento | -  |
-|  Flusso finanziario dell'attività di finanziamento (C) | 58.523.797  |
-|  Incremento (decremento) delle disponibilità liquide (A ± B ± C) | 4.260.531  |
-|  Disponibilità liquide all'inizio dell'esercizio | 342.600  |
-|  Disponibilità liquide alla fine dell'esercizio | 4.603.131  |
-|  Valdo a prezzo | (4.665.311)  |
+| In Euro | 12 mesi al 30 giugno 2024 |
+|---|---|
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | |
+| Utile (perdita) dell'esercizio | (49.499.836) |
+| Imposte sul reddito | - |
+| Interessi passivi/(interessi attivi) | (18.246) |
+| (Dividendi) | - |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori | 585.411 |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di altre attività | - |
+| **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **(48.932.671)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | |
+| Accantonamenti ai fondi | 336.997 |
+| Ammortamenti delle immobilizzazioni | 5.165.175 |
+| Svalutazioni per perdite durevoli di valore | 730.922 |
+| Altre rettifiche per elementi non monetari | 8.695 |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **6.241.789** |
+| *Variazioni del capitale circolante netto* | |
+| Decremento/(incremento) delle rimanenze | (1.297.164) |
+| Decremento/(incremento) dei crediti vs clienti | (3.795.729) |
+| Incremento/(decremento) dei debiti verso fornitori | 2.179.637 |
+| Decremento/(incremento) ratei e risconti attivi | (666.349) |
+| Incremento/(decremento) ratei e risconti passivi | 3.999.961 |
+| Altre variazioni del capitale circolante netto | 10.419.141 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **10.839.496** |
+| *Altre rettifiche* | |
+| Interessi incassati/(pagati) | 18.246 |
+| (Imposte sul reddito pagate) | (160.525) |
+| Dividendi incassati | - |
+| (Utilizzo dei fondi) | 36.347 |
+| **Totale Altre rettifiche** | **(105.932)** |
+| **Flusso finanziario dell'attività operativa (A)** | **(31.957.319)** |
+| **B. Flussi finanziari derivanti dall'attività di investimento** | |
+| ***Immobilizzazioni materiali*** | **(4.477.945)** |
+| (Investimenti) | (4.477.945) |
+| Disinvestimenti | - |
+| ***Diritti pluriennali alle prestazioni dei calciatori*** | **(14.802.846)** |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (38.199.600) |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | (107.334) |
+| Decremento/(incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (946.159) |
+| Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 24.450.247 |
+| ***Altre Immobilizzazioni immateriali*** | **(797.833)** |
+| (Investimenti) | (797.833) |
+| Disinvestimenti | - |
+| ***Immobilizzazioni finanziarie*** | **(2.227.323)** |
+| (Investimenti) | (2.227.323) |
+| Disinvestimenti | - |
+| ***Attività Finanziarie non immobilizzate*** | **-** |
+| (Investimenti) | - |
+| Disinvestimenti | - |
+| ***Totale Altre attività di investimento*** | **(3.025.156)** |
+| **Flusso finanziario dell'attività di investimento (B)** | **(22.305.947)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | |
+| ***Mezzi di terzi*** | **-** |
+| Incremento (decremento) debiti a breve verso banche | - |
+| Accensione finanziamenti - v/controllate | - |
+| (Rimborso finanziamenti) | - |
+| ***Finanziamenti soci*** | **500.000** |
+| Accensione finanziamenti | 500.000 |
+| (Rimborso finanziamenti) | - |
+| ***Mezzi propri*** | **58.023.797** |
+| Aumento di capitale a pagamento | 58.023.797 |
+| (Rimborso di capitale) | - |
+| Cessione (acquisto) di azioni proprie | - |
+| (Dividendi (e acconti su dividendi) pagati) | - |
+| ***Altre entrate (uscite) da attività di finanziamento*** | **-** |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **58.523.797** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **4.260.531** |
+| Disponibilità liquide all'inizio dell'esercizio | 342.600 |
+| Disponibilità liquide alla fine dell'esercizio | 4.603.131 |
+| **Saldo a pareggio** | **(4.260.531)** |
 
 Per il Consiglio di Amministrazione
-
 Il Presidente
-
 Mirwan
+[firma]
 
 --- pág. 10 ---
 
@@ -1413,47 +1383,47 @@ La società non ha in essere accordi non risultanti dallo Stato Patrimoniale.
 
 GRUPPO COMO 1907
 
-Il Gruppo Como 1907 ha provveduto a redigere il Prospetto Pro-forma di Consolidamento nel mese di aprile 2025 per ottemperare a quanto richiesto dal Manuale delle Licenze UEFA (Edizione 2024), art. 15.4.4, ai fini delle Licenze UEFA. In considerazione di ciò, per maggiori informazioni in merito ai fatti di rilievo avvenuti dopo la chiusura dell’esercizio al 30 giugno 2024 e che caratterizzeranno l’andamento prospettico della gestione, si rimanda al Prospetto Pro-forma di Consolidamento predisposto al 31 dicembre 2024.
+Il Gruppo Como 1907 ha provveduto a redigere il Prospetto Pro-forma di Consolidamento nel mese di aprile 2025 per ottemperare a quanto richiesto dal Manuale delle Licenze UEFA (Edizione 2024), art. 15.4.4, ai fini delle Licenze UEFA.
+In considerazione di ciò, per maggiori informazioni in merito ai fatti di rilievo avvenuti dopo la chiusura dell'esercizio al 30 giugno 2024 e che caratterizzeranno l'andamento prospettico della gestione, si rimanda al Prospetto Pro-forma di Consolidamento predisposto al 31 dicembre 2024.
 
-### Prospetto riepilogativo del bilancio della società che esercita l’attività di direzione e coordinamento
+**Prospetto riepilogativo del bilancio della società che esercita l'attività di direzione e coordinamento**
 
-Il Gruppo è soggetto all’attività di direzione e coordinamento da parte della società Sent Entertainment Limited. Ai sensi dell’art. 2497-bis, comma 4 del Codice civile, vengono di seguito esposti i dati essenziali degli ultimi due bilanci approvati della società che esercita l’attività di direzione e coordinamento. I dati vengono esposti in sterline britanniche:
+Il Gruppo è soggetto all'attività di direzione e coordinamento da parte della società Sent Entertainment Limited. Ai sensi dell'art. 2497-bis, comma 4 del Codice civile, vengono di seguito esposti i dati essenziali degli ultimi due bilanci approvati della società che esercita l'attività di direzione e coordinamento. I dati vengono esposti in sterline britanniche:
 
-|  Profit & Loss Statement | 2023 | 2022  |
-| --- | --- | --- |
-|   |  Stand Alone In House | Consolidated Audit  |
-|  Turnover | 577.507 | 10.282.143  |
-|  Cost of sales | (888.089) | (140.161)  |
-|  **Gross profit** | **(310.582)** | **10.141.982**  |
-|  Administrative expenses | (4.912.988) | (24.732.313)  |
-|  Other operating income | (357.518) | 2.869  |
-|  **Operating loss** | **(5.581.087)** | **(14.587.462)**  |
-|  Interest receivable and similar income | - | (30.847)  |
-|  **Loss before tax** | **(5.581.087)** | **(14.618.309)**  |
-|  Tax | - | (175.044)  |
-|  **Loss for the fiscal period** | **(5.581.087)** | **(14.793.353)**  |
+| Profit & Loss Statement | 2023 Stand Alone In House | 2022 Consolidated Audit |
+|---|---|---|
+| Turnover | 577.507 | 10.282.143 |
+| Cost of sales | (888.089) | (140.161) |
+| **Gross profit** | **(310.582)** | **10.141.982** |
+| Administrative expenses | (4.912.988) | (24.732.313) |
+| Other operating income | (357.518) | 2.869 |
+| **Operating loss** | **(5.581.087)** | **(14.587.462)** |
+| Interest receivable and similar income | - | (30.847) |
+| **Loss before tax** | **(5.581.087)** | **(14.618.309)** |
+| Tax | - | (175.044) |
+| **Loss for the fiscal period** | **(5.581.087)** | **(14.793.353)** |
 
-|  Balance Sheet | 2023 | 2022  |
-| --- | --- | --- |
-|   |  Stand Alone In House | Consolidated Audit  |
-|  Non Current Assets | 56.869.852 | 6.456.135  |
-|  Current Assets | 31.071.365 | 10.397.755  |
-|  **Total Assets** | **87.941.217** | **16.853.890**  |
-|  Current Liabilities | 1.956.309 | 7.440.346  |
-|  Capital and reserves | 85.984.908 | 9.413.544  |
-|  **Total Liabilities and Equity** | **87.941.217** | **16.853.890**  |
+| Balance Sheet | 2023 Stand Alone In House | 2022 Consolidated Audit |
+|---|---|---|
+| Non Current Assets | 56.869.852 | 6.456.135 |
+| Current Assets | 31.071.365 | 10.397.755 |
+| **Total Assets** | **87.941.217** | **16.853.890** |
+| Current Liabilities | 1.956.309 | 7.440.346 |
+| Capital and reserves | 85.984.908 | 9.413.544 |
+| **Total Liabilities and Equity** | **87.941.217** | **16.853.890** |
 
-### Disciplina sulla trasparenza delle erogazioni pubbliche
+**Disciplina sulla trasparenza delle erogazioni pubbliche**
 
-Ai sensi dell’art. 1, comma 125-bis, della Legge 4 agosto 2017, n. 124, in ottemperanza all’obbligo di trasparenza, si segnala che sono state ricevute sovvenzioni contributi, incarichi retribuiti e comunque vantaggi economici di qualunque genere da pubbliche amministrazioni:
+Ai sensi dell'art. 1, comma 125-bis, della Legge 4 agosto 2017, n. 124, in ottemperanza all'obbligo di trasparenza, si segnala che sono state ricevute sovvenzioni contributi, incarichi retribuiti e comunque vantaggi economici di qualunque genere da pubbliche amministrazioni:
 
-|  Identificativo componente | Tipo procedimento | Regolamento/Comunicazione | Obiettivo | Settore di attività | Soggetto Intermediario * | Strumento di aiuto | Importo Nominale | Elemento di aiuto  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  18342993 | De Minimis | Reg. UE 1407/2013 de minimis generale e as.mm.ii | Formazione | R.93.1 | - | Sovvenzione/Contributo in conto interessi | € 7.800,00 | € 7.800,00  |
+| Identificativo componente | Tipo procedimento | Regolamento/Comunicazione | Obiettivo | Settore di attività | Soggetto Intermediario * | Strumento di aiuto | Importo Nominale | Elemento di aiuto |
+|---|---|---|---|---|---|---|---|---|
+| 18342993 | De Minimis | Reg. UE 1407/2013 de minimis generale e ss.mm.ii | Formazione | R.93.1 | - | Sovvenzione/Contributo in conto interessi | € 7.800,00 | € 7.800,00 |
 
 Per il Consiglio di Amministrazione
 Il Presidente
 Mirwan
+[firma]
 
 21
 
@@ -1471,43 +1441,38 @@ sul Prospetto Pro-forma di Consolidamento annuale al 30 giugno 2024
 
 --- pág. 32 ---
 
-**Nexia**^{}[] **Audirevi**^{}[] ^{}[] **Audit & Assurance**
-
 2
 
-Audirevi SpA^{}[] Via Paolo da Cannobio, 33 - 20122 Milano^{}[] ^{}[] T: +39 0287070700 F: +39 0287070719
+AUDIREVI SpA – Società di Revisione e Organizzazione Contabile
+Sede Legale: Via Paolo da Cannobio, 33 – 20122 Milano
+Cod. Fiscale 05953410585 - P.I. 12034710157 – www.audirevi.it mail: info@audirevi.it
+Capitale Sociale Euro 500.000 - REA Milano 1523066 – Registro Dei Revisori Contabili GU 60/2000
+Albo Speciale Delle Società di Revisione con Delibera CONSOB n. 10819 Del 16/07/1997
+Milano – Roma - Napoli– Brescia – Bolzano - Bologna - Cagliari – Ancona – Pescara – Varese – Verona – Cosenza -Firenze
 
-## Relazione di revisione contabile limitata sul Prospetto Pro-forma di Consolidamento annuale al 30 giugno 2024
+Nexia Audirevi Audit & Assurance
+Audirevi SpA
+Via Paolo da Cannobio, 33 - 20122 Milano
+T: +39 0287070700 F: +39 0287070719
+
+# Relazione di revisione contabile limitata sul Prospetto Pro-forma di Consolidamento annuale al 30 giugno 2024
 
 Al Consiglio di Amministrazione del
-
 Como 1907 S.r.l.
 
-### Introduzione
+**Introduzione**
 
 Siamo stati incaricati di svolgere la revisione contabile limitata del Prospetto Pro-forma di Consolidamento annuale del Como 1907 S.r.l. e delle società del Gruppo Sent (il Gruppo) costituito dallo stato patrimoniale, dal conto economico e dalla relativa nota integrativa con chiusura al 30 giugno 2024.
 
-Gli amministratori della società Como 1907 S.r.l. sono responsabili per la redazione del Prospetto Pro-forma di Consolidamento annuale redatto per ottemperare a quanto richiesto dal Manuale delle Licenze UEFA (Edizione 2024), art. 15.4.4, ai fini delle Licenze UEFA, e dalle NOIF, art.84 comma 8, ai fini del Sistema delle Licenze Nazionali, che fornisca una rappresentazione veritiera e corretta in conformità al principio contabile OIC 30 e all’Appendice VII del Manuale delle Licenze UEFA (Edizione 2024). È nostra la responsabilità di esprimere delle conclusioni sul Prospetto Pro-forma di Consolidamento annuale sulla base della revisione contabile limitata svolta.
+Gli amministratori della società Como 1907 S.r.l. sono responsabili per la redazione del Prospetto Pro-forma di Consolidamento annuale redatto per ottemperare a quanto richiesto dal Manuale delle Licenze UEFA (Edizione 2024), art. 15.4.4, ai fini delle Licenze UEFA, e dalle NOIF, art.84 comma 8, ai fini del Sistema delle Licenze Nazionali, che fornisca una rappresentazione veritiera e corretta in conformità al principio contabile OIC 30 e all'Appendice VII del Manuale delle Licenze UEFA (Edizione 2024). È nostra la responsabilità di esprimere delle conclusioni sul Prospetto Pro-forma di Consolidamento annuale sulla base della revisione contabile limitata svolta.
 
-### Portata della revisione contabile limitata
+**Portata della revisione contabile limitata**
 
-Il nostro lavoro è stato svolto in conformità all’International Standard on Review Engagements 2410, “Review of Interim Financial Information Performed by the Independent Auditor of the Entity”, e secondo quanto previsto dal principio ISA 800, “Revisione contabile di un bilancio redatto in conformità ad un quadro normativo sull’informazione finanziaria con scopi specifici”. La revisione contabile limitata del Prospetto Pro-forma di Consolidamento annuale consiste nell’effettuare colloqui, prevalentemente con il personale della società responsabile degli aspetti finanziari e contabili, analisi di bilancio ed altre procedure di revisione contabile limitata. La portata di una revisione contabile limitata è sostanzialmente inferiore rispetto a quella di una revisione contabile completa svolta in conformità agli International Standards on Auditing e, conseguentemente, non ci consente di avere la sicurezza di essere venuti a conoscenza di tutti i fatti significativi che potrebbero essere identificati con lo svolgimento di una revisione contabile completa. Pertanto, non esprimiamo un giudizio sul Prospetto Pro-forma di Consolidamento annuale al 30 giugno 2024.
+Il nostro lavoro è stato svolto in conformità all'International Standard on Review Engagements 2410, "Review of Interim Financial Information Performed by the Independent Auditor of the Entity", e secondo quanto previsto dal principio ISA 800, "Revisione contabile di un bilancio redatto in conformità ad un quadro normativo sull'informazione finanziaria con scopi specifici". La revisione contabile limitata del Prospetto Pro-forma di Consolidamento annuale consiste nell'effettuare colloqui, prevalentemente con il personale della società responsabile degli aspetti finanziari e contabili, analisi di bilancio ed altre procedure di revisione contabile limitata. La portata di una revisione contabile limitata è sostanzialmente inferiore rispetto a quella di una revisione contabile completa svolta in conformità agli International Standards on Auditing e, conseguentemente, non ci consente di avere la sicurezza di essere venuti a conoscenza di tutti i fatti significativi che potrebbero essere identificati con lo svolgimento di una revisione contabile completa. Pertanto, non esprimiamo un giudizio sul Prospetto Pro-forma di Consolidamento annuale al 30 giugno 2024.
 
-### Conclusioni
+**Conclusioni**
 
-Sulla base della revisione contabile limitata svolta, non sono pervenuti alla nostra attenzione elementi che ci facciano ritenere che l’allegato Prospetto Pro-forma di Consolidamento annuale con chiusura al 30 giugno 2024, non fornisca una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria, del risultato economico e dei flussi di cassa del Gruppo, in conformità al principio contabile OIC 30 e all’Appendice VII del Manuale delle Licenze UEFA (Edizione 2024).
-
-**AUDIREVI SpA – Società di Revisione e Organizzazione Contabile**
-
-Sede Legale: Via Paolo da Cannobio, 33 – 20122 Milano
-
-Cod. Fiscale 05953410585 - P.I. 12034710157 – www.audirevi.it mail: info@audirevi.it
-
-Capitale Sociale Euro 500.000 - REA Milano 1523066 – Registro Dei Revisori Contabili GU 60/2000
-
-Albo Speciale Delle Società di Revisione con Delibera CONSOB n. 10819 Del 16/07/1997
-
-Milano – Roma - Napoli – Brescia – Bolzano - Bologna - Cagliari – Ancona – Pescara – Varese – Verona – Cosenza - Firenze
+Sulla base della revisione contabile limitata svolta, non sono pervenuti alla nostra attenzione elementi che ci facciano ritenere che l'allegato Prospetto Pro-forma di Consolidamento annuale con chiusura al 30 giugno 2024, non fornisca una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria, del risultato economico e dei flussi di cassa del Gruppo, in conformità al principio contabile OIC 30 e all'Appendice VII del Manuale delle Licenze UEFA (Edizione 2024).
 
 --- pág. 33 ---
 

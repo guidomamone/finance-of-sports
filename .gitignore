@@ -139,3 +139,12 @@ Admin/claude-api/.env
 # interno se borra del artefacto de deploy antes de publicar. Ver ese archivo para la
 # lista exacta y el porqué de cada línea.
 # Por eso acá abajo NO hay ninguna regla para `.md` internos: es a propósito.
+
+# Salidas del test de motores (tools/test-motores.mjs) -- transcripciones de prueba, no van al repo
+*.t-mistral.md
+*.t-gemini.md
+*.t-claude.md
+# Versiones de trabajo del inventario (tools/resolver-inventario.mjs): se conservan en disco, no se publican
+*.previo-*.md
+*.claude-check.md
+*.mistral-redo.md

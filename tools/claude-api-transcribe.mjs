@@ -38,9 +38,10 @@
 // mismo criterio que Gemini/Mistral/Resend).
 // ============================================================================
 
-import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { resolve, dirname, basename, extname, join } from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 
 const MODEL = 'claude-sonnet-5-5';
 // Precios de la API de Anthropic para claude-sonnet-5-5 (ver la skill claude-api de este proyecto,
@@ -50,6 +51,32 @@ const PRICE_OUT_PER_MTOK = 10.0;
 const MAX_RETRIES = 4;
 const DEFAULT_TIMEOUT_MS = 600_000; // 10 min -- más largo que Mistral/Gemini (150s) porque streamea
 const MAX_TOKENS = 64000;
+// Un documento de más de CHUNK_PAGES páginas se parte en tramos (con qpdf) y se transcribe tramo por
+// tramo. Motivo real (test de motores, 2026-09-29): una memoria de 88 páginas se cortó en la página 46
+// por el tope de salida y la tool guardó el .md incompleto sin avisar; y un balance de 46 páginas
+// usó 57.7k de los 64k tokens posibles. Con tramos de 25 páginas queda mucho margen.
+const CHUNK_PAGES = 25;
+// La API de Anthropic rechaza pedidos de más de ~32 MB (el PDF va en base64, +33%): un tramo no puede pesar
+// más de esto. BUG REAL del segundo piloto del inventario (Temperley, PDF de 34,7 MB): "request_too_large".
+const MAX_CHUNK_BYTES = 20 * 1024 * 1024;
+
+// qpdf devuelve 3 cuando el resultado es válido pero el PDF de origen tenía advertencias (xref roto, etc.):
+// es un ÉXITO. execFileSync lo trata como error, por eso esto va con spawnSync (BUG REAL: Williams, Aalesund).
+export function qpdfExtract(src, pagesSpec, out) {
+  const r = spawnSync('qpdf', [src, '--pages', '.', pagesSpec, '--', out]);
+  if ((r.status !== 0 && r.status !== 3) || !existsSync(out)) throw new Error(`qpdf falló (código ${r.status}) extrayendo ${pagesSpec}: ${String(r.stderr || '').slice(0, 200)}`);
+}
+
+// Parte [a,b] en tramos que pesen menos de MAX_CHUNK_BYTES una vez recortados. Una sola página que ya
+// pasa el límite no se puede partir más: se avisa con un error claro en vez de mandar un pedido que la API rechaza.
+function sizedRanges(pdfPath, a, b, tmp) {
+  const f = join(tmp, `p${a}-${b}.pdf`);
+  qpdfExtract(pdfPath, `${a}-${b}`, f);
+  if (statSync(f).size <= MAX_CHUNK_BYTES) return [{ range: [a, b], file: f }];
+  if (a === b) throw new Error(`la página ${a} pesa ${(statSync(f).size / 1048576).toFixed(0)} MB solo: supera el límite de la API y no se puede partir`);
+  const mid = Math.floor((a + b) / 2);
+  return [...sizedRanges(pdfPath, a, mid, tmp), ...sizedRanges(pdfPath, mid + 1, b, tmp)];
+}
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const envPath = resolve(projectRoot, 'Admin', 'claude-api', '.env');
@@ -106,7 +133,7 @@ function findPdfsSinTranscribir(startDir) {
 // SSE a mano, sin SDK (ver la cabecera del archivo para el porqué de streaming). Acumula el texto
 // de los `content_block_delta` tipo `text_delta`, y agarra `usage`/`stop_reason` de `message_start`/
 // `message_delta`. Devuelve { ok, text, stopReason, usage, error }.
-async function streamMessage(pdfBytes, apiKey, timeoutMs) {
+async function streamMessage(pdfBytes, apiKey, timeoutMs, prompt = PROMPT) {
   const base64 = pdfBytes.toString('base64');
   const body = {
     model: MODEL,
@@ -117,7 +144,7 @@ async function streamMessage(pdfBytes, apiKey, timeoutMs) {
         role: 'user',
         content: [
           { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: base64 } },
-          { type: 'text', text: PROMPT },
+          { type: 'text', text: prompt },
         ],
       },
     ],
@@ -173,6 +200,15 @@ async function streamMessage(pdfBytes, apiKey, timeoutMs) {
   }
 }
 
+function pageCount(pdfPath) {
+  try {
+    const m = execFileSync('pdfinfo', [pdfPath], { encoding: 'utf8' }).match(/^Pages:\s+(\d+)/m);
+    return m ? Number(m[1]) : null;
+  } catch {
+    return null;
+  }
+}
+
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, opts = {}) {
   const outSuffix = opts.outSuffix || '';
   const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + outSuffix + '.md');
@@ -180,45 +216,98 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
     return { skipped: true, pdf: pdfPath };
   }
 
-  const pdfBytes = readFileSync(pdfPath);
-  let lastErr;
+  const totalPages = pageCount(pdfPath);
   const t0 = Date.now();
-  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
-    const res = await streamMessage(pdfBytes, apiKey, timeoutMs);
-    if (res.ok) {
-      if (!res.text) {
-        // Sin texto y sin error HTTP -- lo más parecido a lo que hace Gemini con RECITATION/SAFETY:
-        // no es reintentable (va a rechazar lo mismo de nuevo), se anota y se sigue.
-        lastErr = `Respuesta vacía, stop_reason=${res.stopReason ?? '?'}`;
+  let lastErr;
+  let text = '';
+  const usage = { input_tokens: 0, output_tokens: 0 };
+  let stopReason = 'end_turn';
+
+  // Tramos: { range:[primeraPágina, últimaPágina], file }. Un solo tramo sin recortar = el PDF entero, como antes.
+  // Se recorta si tiene más de CHUNK_PAGES páginas O si pesa más de lo que la API acepta.
+  const needsChunking = (totalPages && totalPages > CHUNK_PAGES) || statSync(pdfPath).size > MAX_CHUNK_BYTES;
+  const tmp = needsChunking ? mkdtempSync(join(tmpdir(), 'claude-chunk-')) : null;
+  let ranges;
+  try {
+    if (needsChunking) {
+      ranges = [];
+      for (let a = 1; a <= (totalPages || 1); a += CHUNK_PAGES) ranges.push(...sizedRanges(pdfPath, a, Math.min(a + CHUNK_PAGES - 1, totalPages || 1), tmp));
+    } else {
+      ranges = [null];
+    }
+  } catch (err) {
+    if (tmp) rmSync(tmp, { recursive: true, force: true });
+    lastErr = `No se pudo preparar el PDF: ${err.message}`;
+    appendFileSync(failuresPath, JSON.stringify({ ts: new Date().toISOString(), pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n', 'utf8');
+    return { ok: false, pdf: pdfPath, error: lastErr };
+  }
+
+  try {
+    for (const item of ranges) {
+      const range = item ? item.range : null;
+      let bytes, prompt = PROMPT;
+      if (range) {
+        bytes = readFileSync(item.file);
+        prompt = PROMPT + `\n\nOJO: este PDF es SOLO el tramo de las páginas ${range[0]} a ${range[1]} de un documento de ${totalPages} páginas. Numerá las marcas con la página real del documento completo: la primera página de este archivo es la "--- pág. ${range[0]} ---", la última la "--- pág. ${range[1]} ---". No arranques en pág. 1.`;
+      } else {
+        bytes = readFileSync(pdfPath);
+      }
+      let chunkOk = false;
+      for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+        const res = await streamMessage(bytes, apiKey, timeoutMs, prompt);
+        if (res.ok) {
+          if (!res.text) {
+            // Sin texto y sin error HTTP -- lo más parecido a lo que hace Gemini con RECITATION/SAFETY:
+            // no es reintentable (va a rechazar lo mismo de nuevo), se anota y se sigue.
+            lastErr = `Respuesta vacía, stop_reason=${res.stopReason ?? '?'}`;
+            break;
+          }
+          if (res.stopReason === 'max_tokens') {
+            // NUNCA guardar una transcripción cortada como si estuviera completa.
+            lastErr = `Transcripción TRUNCADA por tope de salida (stop_reason=max_tokens)${range ? ` en el tramo ${range[0]}-${range[1]}` : ''}`;
+            break;
+          }
+          text += (text ? '\n\n' : '') + res.text;
+          usage.input_tokens += res.usage.input_tokens;
+          usage.output_tokens += res.usage.output_tokens;
+          chunkOk = true;
+          break;
+        }
+        lastErr = res.status ? `HTTP ${res.status}: ${res.error}` : res.error;
+        const retryable = res.status === 429 || res.status >= 500 || /Error de red|Timeout/.test(res.error || '');
+        if (retryable && attempt < MAX_RETRIES) {
+          await new Promise((r) => setTimeout(r, 2000 * Math.pow(2, attempt)));
+          continue;
+        }
         break;
       }
-      const elapsedMs = Date.now() - t0;
-      writeFileSync(mdPath, res.text, 'utf8');
-      const costUsd = (res.usage.input_tokens / 1e6) * PRICE_IN_PER_MTOK + (res.usage.output_tokens / 1e6) * PRICE_OUT_PER_MTOK;
-      const fidelidad = checkFidelidad(mdPath);
-      const fidelidadP1 = fidelidad ? fidelidad.findings.filter((f) => f.sev === 'P1').length : null;
-      const record = {
-        ts: new Date().toISOString(),
-        pdf: pdfPath.replace(projectRoot + '/', ''),
-        md: mdPath.replace(projectRoot + '/', ''),
-        model: MODEL,
-        promptTokenCount: res.usage.input_tokens,
-        candidatesTokenCount: res.usage.output_tokens,
-        costUsd: Number(costUsd.toFixed(6)),
-        elapsedMs,
-        stopReason: res.stopReason,
-        fidelidadP1,
-      };
-      appendFileSync(resultsPath, JSON.stringify(record) + '\n', 'utf8');
-      return { ok: true, record };
+      if (!chunkOk) { text = null; break; }
     }
-    lastErr = res.status ? `HTTP ${res.status}: ${res.error}` : res.error;
-    const retryable = res.status === 429 || res.status >= 500 || /Error de red|Timeout/.test(res.error || '');
-    if (retryable && attempt < MAX_RETRIES) {
-      await new Promise((r) => setTimeout(r, 2000 * Math.pow(2, attempt)));
-      continue;
-    }
-    break;
+  } finally {
+    if (tmp) rmSync(tmp, { recursive: true, force: true });
+  }
+
+  if (text) {
+    const elapsedMs = Date.now() - t0;
+    writeFileSync(mdPath, text, 'utf8');
+    const costUsd = (usage.input_tokens / 1e6) * PRICE_IN_PER_MTOK + (usage.output_tokens / 1e6) * PRICE_OUT_PER_MTOK;
+    const fidelidad = checkFidelidad(mdPath);
+    const fidelidadP1 = fidelidad ? fidelidad.findings.filter((f) => f.sev === 'P1').length : null;
+    const record = {
+      ts: new Date().toISOString(),
+      pdf: pdfPath.replace(projectRoot + '/', ''),
+      md: mdPath.replace(projectRoot + '/', ''),
+      model: MODEL,
+      promptTokenCount: usage.input_tokens,
+      candidatesTokenCount: usage.output_tokens,
+      costUsd: Number(costUsd.toFixed(6)),
+      elapsedMs,
+      stopReason,
+      chunks: ranges.length,
+      fidelidadP1,
+    };
+    appendFileSync(resultsPath, JSON.stringify(record) + '\n', 'utf8');
+    return { ok: true, record };
   }
 
   appendFileSync(

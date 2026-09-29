@@ -15,6 +15,45 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 305 — Inventario de transcripciones: registro de quién hizo cada `.md`, validación gratis contra el texto del PDF, y resolución paga solo de las páginas dudosas (2 pilotos, 21 documentos)
+
+- **`tools/verify-numbers.mjs`**: compara los números de un `.md` contra el texto interno del PDF (`pdftotext`),
+  sin depender del formato de tablas. Detecta cifras mal leídas (dígito distinto, mismo largo) y `.md`
+  incompletos; "no aplica" en escaneos o texto ilegible (cobertura < 25%). Bugs encontrados al calibrarlo:
+  pegaba columnas contiguas (`133.816 189.064` como un solo número) y una referencia de nota con su importe
+  (`13 228.106`); ignora cifras redondas al buscar "casi iguales".
+- **`tools/inventario-transcripciones.mjs`**: registro `Admin/transcripciones-estado.jsonl` (regenerable): por
+  cada PDF con `.md`, motor/modelo/fecha/costo de quien lo hizo (de los logs de las APIs; "legado" = anterior a
+  las APIs), otras versiones que existen, si el ejercicio ya está cargado y estado de validación (`cargado`,
+  `listo`, `revisar`, `pendiente-segunda-voz`, `reintentar`, `sin-verificar`). Las validaciones se guardan en
+  `Admin/transcripciones-verificaciones.jsonl` (solo se agrega, con hash del `.md`: si el archivo cambia, el
+  estado vuelve solo a sin-verificar). NO se escribe dentro de los `.md`. Resultado inicial sobre 2.166 PDFs
+  con `.md`: 276 cargados, 598 listos sin gastar API, 561 a revisar, 730 escaneos pendientes de segunda voz.
+  Hallazgo: los `.md` viejos (Tesseract/subagentes) tienen cifras mal leídas en ~42% de los casos con texto,
+  también entre los ya cargados (el dato del sitio se corrigió a mano; el `.md` quedó con el error).
+- **`tools/resolver-inventario.mjs`**: la fase paga, con `--ejecutar` (sin él es un ensayo con estimación de
+  costo), `--dir`, `--lista`, `--limit`, `--estado`, `--concurrencia`. Claude ve SOLO las páginas dudosas
+  (recortadas con qpdf). PDF con texto: páginas cuyos números no cierran con el texto del PDF -> Claude -> revalida;
+  si sigue mal o más de la mitad no coincide, el texto del PDF no es confiable y pasa a comparar voces.
+  Escaneo: Gemini entero como segunda voz -> Claude solo en páginas que difieren -> voto entre voces por página
+  (un número gana si está en 2 voces) -> cuarta voz (Mistral, solo en esas páginas) si sigue sin consenso; si
+  Gemini rechaza por RECITATION, Claude transcribe entero y Gemini desempata página a página; si también rechaza
+  la página, gana Claude y queda como `reserva` (cerrar con sum-check al onboardear). Cada página reemplazada
+  queda registrada con su motor. Fallos por crédito/límite/red: espera con backoff creciente y reintenta el MISMO
+  motor, deja el documento en `reintentar` y corta la corrida tras 3 seguidos.
+- **`tools/test-motores.mjs`** + `Admin/test-motores-lista.txt` / `test-motores-resultados.md`: test de los 3 motores
+  sobre 15 PDFs. Claude por API: 15/15, 0 bloqueos, ~$0,016/pág.; Gemini rechazó 7/15 (5 de 6 escaneos, incluidos
+  balances numéricos, no solo memorias); Mistral leyó mal cifras en Ponte Preta aunque el PDF tiene texto.
+- **`tools/compare-transcripts.mjs`**: ignora la columna "Nota", celdas vacías, símbolos de moneda y una columna de
+  más en un lado (antes: ~280 discrepancias falsas en 15 documentos, ahora 33, casi todas errores reales del `.md` viejo).
+- **`tools/claude-api-transcribe.mjs`**: parte PDFs de más de 25 páginas o más de 20 MB en tramos (antes una memoria
+  de 88 páginas se guardó cortada en la 46 sin avisar); nunca guarda una transcripción truncada por `max_tokens`;
+  `qpdf` código 3 (éxito con advertencias) ya no cuenta como fallo.
+- Bugs del piloto ya corregidos: decidir por página aceptaba un error de Claude cuando Mistral y Gemini coincidían
+  (Almagro 2018); texto de PDF roto (Ferro 121, Cuiaba) gastaba Claude en vano; PDFs de 34 MB superaban el límite de
+  la API (Temperley: una página de 25 MB se rasteriza a 130 dpi -> 170 KB).
+- Pilotos: 21 documentos de 14 países, todos `listo` (algunos con `reserva`), ~$5,20 de API.
+
 ## Versión 304 — `tools/claude-api-transcribe.mjs`: la 3ra API conectada de verdad (Claude, API directa), y el paso 2 del HTML al día
 
 - **`tools/thirdapi-transcribe.mjs` (placeholder de la Versión 301) renombrado a `tools/claude-api-transcribe.mjs`

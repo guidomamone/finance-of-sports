@@ -130,54 +130,20 @@ OIB 76394522236
 
 --- pág. 5 ---
 
-E DO BDO Croatia d.o.0.
+BDO Croatia d.o.o.
 
-Revizorove odgovornosti za reviziju godišnjih konsolidiranih financijskih izvještaja za posebne
-namjene
+**Revizorove odgovornosti za reviziju godišnjih konsolidiranih financijskih izvještaja za posebne namjene**
 
-Naši ciljevi su steći razumno uvjerenje o tome jesu li godišnji konsolidirani financijski izvještaji za
-posebne namjene kao cjelina bez značajnog pogrešnog prikaza uslijed prijevare ili pogreške i izdati
-Izvješće neovisnog revizora koje uključuje naše mišljenje. Razumno uvjerenje je viša razina
-uvjerenja, ali nije garancija da će revizija obavljena u skladu s MRevS-ima uvijek otkriti značajno
-pogrešno prikazivanje kada ono postoji. Pogrešni prikazi mogu nastati uslijed prijevare ili pogreške i
-smatraju se značajni ako se razumno može očekivati da, pojedinačno ili u zbroju, utječu na
-ekonomske odluke korisnika donijete na osnovi tih godišnjih konsolidiranih financijskih izvještaja za
-posebne namjene.
+Naši ciljevi su steći razumno uvjerenje o tome jesu li godišnji konsolidirani financijski izvještaji za posebne namjene kao cjelina bez značajnog pogrešnog prikaza uslijed prijevare ili pogreške i izdati Izvješće neovisnog revizora koje uključuje naše mišljenje. Razumno uvjerenje je viša razina uvjerenja, ali nije garancija da će revizija obavljena u skladu s MRevS-ima uvijek otkriti značajno pogrešno prikazivanje kada ono postoji. Pogrešni prikazi mogu nastati uslijed prijevare ili pogreške i smatraju se značajni ako se razumno može očekivati da, pojedinačno ili u zbroju, utječu na ekonomske odluke korisnika donijete na osnovi tih godišnjih konsolidiranih financijskih izvještaja za posebne namjene.
 
-Kao sastavni dio revizije u skladu s MRevS-ima, stvaramo profesionalne prosudbe i održavamo
-profesionalni skepticizam tijekom revizije. Mi također:
+Kao sastavni dio revizije u skladu s MRevS-ima, stvaramo profesionalne prosudbe i održavamo profesionalni skepticizam tijekom revizije. Mi također:
 
-"prepoznajemo i procjenjujemo rizike značajnog pogrešnog prikaza godišnjih konsolidiranih
-financijskih izvještaja za posebne namjene, zbog prijevare ili pogreške, oblikujemo i
-obavljamo revizijske postupke kao reakciju na te rizike i pribavljamo revizijske dokaze koji su
-dostatni i primjereni da osiguraju osnovu za naše mišljenje. Rizik neotkrivanja značajnog
-pogrešnog prikaza nastalog uslijed prijevare je veći od rizika nastalog uslijed pogreške, jer
-prijevara može uključiti tajne sporazume, krivotvorenje, namjerno ispuštanje, pogrešno
-prikazivanje ili zaobilaženje internih kontrola.
+- prepoznajemo i procjenjujemo rizike značajnog pogrešnog prikaza godišnjih konsolidiranih financijskih izvještaja za posebne namjene, zbog prijevare ili pogreške, oblikujemo i obavljamo revizijske postupke kao reakciju na te rizike i pribavljamo revizijske dokaze koji su dostatni i primjereni da osiguraju osnovu za naše mišljenje. Rizik neotkrivanja značajnog pogrešnog prikaza nastalog uslijed prijevare je veći od rizika nastalog uslijed pogreške, jer prijevara može uključiti tajne sporazume, krivotvorenje, namjerno ispuštanje, pogrešno prikazivanje ili zaobilaženje internih kontrola.
+- stječemo razumijevanje internih kontrola relevantnih za reviziju kako bismo oblikovali revizijske postupke koji su primjereni u danim okolnostima, ali ne i za svrhu izražavanja mišljenja o učinkovitosti internih kontrola Kluba.
+- ocjenjujemo primjerenost korištenih računovodstvenih politika i razumnost računovodstvenih procjena i povezanih objava koje je stvorila Uprava Kluba.
+- zaključujemo o primjerenosti korištene računovodstvene osnove utemeljene na vremenskoj neograničenosti poslovanja koju koristi Uprava Kluba i, temeljeno na pribavljenim revizijskim dokazima, zaključujemo o tome postoji li značajna neizvjesnost u vezi s događajima ili okolnostima koji mogu stvarati značajnu sumnju u sposobnost Kluba da nastavi s poslovanjem po vremenski neograničenom poslovanju. Ako zaključimo da postoji značajna neizvjesnost, od nas se zahtijeva da skrenemo pozornost u našem Izvješću neovisnog revizora na povezane objave u godišnjim konsolidiranim financijskim izvještajima za posebne namjene ili, ako takve objave nisu odgovarajuće, da modificiramo naše mišljenje. Naši zaključci se temelje na revizijskim dokazima pribavljenim sve do datuma našeg Izvješća neovisnog revizora. Međutim, budući događaji ili uvjeti mogu uzrokovati da Klub prekine s nastavljanjem poslovanja po vremenski neograničenom poslovanju.
 
-» stječemo razumijevanje internih kontrola relevantnih za reviziju kako bismo oblikovali
-revizijske postupke koji su primjereni u danim okolnostima, ali ne i za svrhu izražavanja
-mišljenja o učinkovitosti internih kontrola Kluba.
-
-:  ocjenjujemo primjerenost korištenih računovodstvenih politika i razumnost računovodstvenih
-procjena i povezanih objava koje je stvorila Uprava Kluba.
-
-=: = zaključujemo o primjerenosti korištene računovodstvene osnove utemeljene na vremenskoj
-neograničenosti poslovanja koju koristi Uprava Kluba i, temeljeno na pribavljenim revizijskim
-dokazima, zaključujemo o tome postoji li značajna neizvjesnost u vezi s događajima ili
-okolnostima koji mogu stvarati značajnu sumnju u sposobnost Kluba da nastavi s poslovanjem
-po vremenski neograničenom poslovanju. Ako zaključimo da postoji značajna neizvjesnost, od
-nas se zahtijeva da skrenemo pozornost u našem Izvješću neovisnog revizora na povezane
-objave u godišnjim konsolidiranim financijskim izvještajima za posebne namjene ili, ako takve
-objave nisu odgovarajuće, da modificiramo naše mišljenje. Naši zaključci se temelje na
-revizijskim dokazima pribavljenim sve do datuma našeg Izvješća neovisnog revizora. Međutim,
-budući događaji ili uvjeti mogu uzrokovati da Klub prekine s nastavljanjem poslovanja po
-vremenski neograničenom poslovanju.
-
-Mi komuniciramo s onima koji su zaduženi za upravljanje u vezi s, između ostalih pitanja,
-planiranim djelokrugom i vremenskim rasporedom revizije i važnim revizijskim nalazima,
-uključujući i u vezi sa značajnim nedostacima u internim kontrolama koji su otkriveni tijekom naše
-revizije.
+Mi komuniciramo s onima koji su zaduženi za upravljanje u vezi s, između ostalih pitanja, planiranim djelokrugom i vremenskim rasporedom revizije i važnim revizijskim nalazima, uključujući i u vezi sa značajnim nedostacima u internim kontrolama koji su otkriveni tijekom naše revizije.
 
 U Zagrebu, 10. ožujka 2022. godine
 
@@ -185,12 +151,17 @@ BDO Croatia d.o.o.
 Radnička cesta 180
 10000 Zagreb
 
-Vedrana Stipić, član Uprave Vlatka Rukavina, ovlašteni revizor
-IBDO
-BDO Croatia d,0.0.
-Zagreb, Radnička cesta 180 3
+[potpis] Vedrana Stipić, član Uprave
 
-O1B: 7639485822236 6
+[potpis] Vlatka Rukavina, ovlašteni revizor
+
+BDO Croatia d.o.o.
+Zagreb, Radnička cesta 180
+OIB: 76394522236
+
+6
+
+3
 
 --- pág. 6 ---
 
@@ -360,56 +331,61 @@ posebne namjene.
 --- pág. 9 ---
 
 GRAĐANSKI NOGOMETNI KLUB DINAMO
-KONSOLIDRANI IZVJEŠTAJ O FINANCIJSKOM POLOZAJU
+KONSOLIDIRANI IZVJEŠTAJ O FINANCIJSKOM POLOŽAJU
 na dan 31. prosinca 2021.
 
-Pozicija Bilješka 31.12.2021. 31.12.2020.
-kuna kuna
-Kratkotrajna imovina
-Novac i novčani ekvivalenti 9 14.431.448 31.125.184
-Potraživanja od nogometnih klubova za transfere
-igrača 52.228.037 59.258.289
-Potraživanja - ostala 7 13.753.595 15.584.488
-Porezna imovina . 108.463
-Zalihe 4.219.770 5.922.064
-Ostala kratkotrajna imovina 8 746.290 2.498.856
-Ukupno - Kratkotrajna imovina 85.379.140 114.497.344
-Dugotrajna imovina
-Materijalna imovina (stalna sredstva) 10 7.019.389 7.156.012
-Nematerijalna imovina - igrači 11 148.882.976 127.475.440
-Nematerijalna imovina - ostala 11 7.455.919 10.099.279
-Potraživanja od nogometnih klubova za transfere
-igrača 27.143.098 16.411.013
-Ostala dugotrajna imovina 6 89.145 89.145
-Ukupno - Dugotrajna imovina 190.590.527 161.230.889
-UKUPNO - IMOVINA 275.969.667 275.728.233
-Kratkoročne obveze
-Zajmovi 12. 26.310.109 26.379.143
-Obveze prema nogometnim klubovima iz transfera
-igrača 23.197.843 11.056.769
-Obveze prema posrednicima 14 35.342.809 7.041.469
-Obveze prema dobavljačima 45.836.994 46.954.156
-Obveze prema zaposlenicima 23.219.659 27.942.428
-Obveze prema državi (porezi i doprinosi) 3.342.201 7.113.231
-Obračunati troškovi i odgođeni prihodi 17.257.807 7.168.786
-Ostale obveze za poreze 1.561.127 261.185
-Ostale kretkoročne obveze 15 2.229.399 65.247.393
-Kratkoročna rezerviranja 16 15.771.248 596.603
-Ukupno - Kratkoročne obveze 194.069.196 199.761.163
-Dugoročne obveze
-Obveze prema posrednicima 14 4.780.397 -
-Ostale dugoročne obveze 12.999 75.272
-Ukupno - Dugoročne obveze 4.793.396 75.272
-UKUPNO OBVEZE 198.862.592 199.836.435
-Neto imovina/(obveze) 77.107.075 75.891.798
-Kapital i rezerve
-Zadržana dobit / (gubitak) 77.107.075 75.891.798
-Ukupno kapital i rezerve 71.107.075 75.891.798
-UKUPNO - KAPITAL I OBVEZE 275.969.667 275.728.233
+| Pozicija | Bilješka | 31.12.2021. kuna | 31.12.2020. kuna |
+|---|---|---|---|
+| **Kratkotrajna imovina** | | | |
+| Novac i novčani ekvivalenti | 9 | 14.431.448 | 31.125.184 |
+| Potraživanja od nogometnih klubova za transfere igrača | | 52.228.037 | 59.258.289 |
+| Potraživanja - ostala | 7 | 13.753.595 | 15.584.488 |
+| Porezna imovina | | - | 108.463 |
+| Zalihe | | 4.219.770 | 5.922.064 |
+| Ostala kratkotrajna imovina | 8 | 746.290 | 2.498.856 |
+| **Ukupno - Kratkotrajna imovina** | | 85.379.140 | 114.497.344 |
+| | | | |
+| **Dugotrajna imovina** | | | |
+| Materijalna imovina (stalna sredstva) | 10 | 7.019.389 | 7.156.012 |
+| Nematerijalna imovina - igrači | 11 | 148.882.976 | 127.475.440 |
+| Nematerijalna imovina - ostala | 11 | 7.455.919 | 10.099.279 |
+| Potraživanja od nogometnih klubova za transfere igrača | | 27.143.098 | 16.411.013 |
+| Ostala dugotrajna imovina | 6 | 89.145 | 89.145 |
+| **Ukupno - Dugotrajna imovina** | | 190.590.527 | 161.230.889 |
+| | | | |
+| **UKUPNO - IMOVINA** | | 275.969.667 | 275.728.233 |
+| | | | |
+| **Kratkoročne obveze** | | | |
+| Zajmovi | 12. | 26.310.109 | 26.379.143 |
+| Obveze prema nogometnim klubovima iz transfera igrača | | 23.197.843 | 11.056.769 |
+| Obveze prema posrednicima | 14 | 35.342.809 | 7.041.469 |
+| Obveze prema dobavljačima | | 45.836.994 | 46.954.156 |
+| Obveze prema zaposlenicima | | 23.219.659 | 27.942.428 |
+| Obveze prema državi (porezi i doprinosi) | | 3.342.201 | 7.113.231 |
+| Obračunati troškovi i odgođeni prihodi | | 17.257.807 | 7.168.786 |
+| Ostale obveze za poreze | | 1.561.127 | 261.185 |
+| Ostale kratkoročne obveze | 15 | 2.229.399 | 65.247.393 |
+| Kratkoročna rezerviranja | 16 | 15.771.248 | 596.603 |
+| **Ukupno - Kratkoročne obveze** | | 194.069.196 | 199.761.163 |
+| | | | |
+| **Dugoročne obveze** | | | |
+| Obveze prema posrednicima | 14 | 4.780.397 | - |
+| Ostale dugoročne obveze | | 12.999 | 75.272 |
+| **Ukupno - Dugoročne obveze** | | 4.793.396 | 75.272 |
+| | | | |
+| **UKUPNO OBVEZE** | | 198.862.592 | 199.836.435 |
+| | | | |
+| **Neto imovina/(obveze)** | | 77.107.075 | 75.891.798 |
+| | | | |
+| **Kapital i rezerve** | | | |
+| Zadržana dobit / (gubitak) | | 77.107.075 | 75.891.798 |
+| **Ukupno kapital i rezerve** | | 77.107.075 | 75.891.798 |
+| | | | |
+| **UKUPNO - KAPITAL I OBVEZE** | | 275.969.667 | 275.728.233 |
 
-Bilješke na stranicama 9 do 22 čine sastavni dio konsolidiranih financijskih izvještaja za
-posebne namjene.
+Bilješke na stranicama 9 do 22 čine sastavni dio konsolidiranih financijskih izvještaja za posebne namjene.
 
+7
 
 --- pág. 10 ---
 
@@ -932,50 +908,49 @@ ako su od materijalnog značaja.
 
 --- pág. 19 ---
 
-. GRAĐANSKI NOGOMETNI KLUB DINAMO
+GRAĐANSKI NOGOMETNI KLUB DINAMO
 BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE
 za godinu koja je završila 31. prosinca 2021.
 
 BILJEŠKE UZ RAČUN DOBITI I GUBITKA
 
-4. Ostali nerazvrstani poslovni prihodi
+**4. Ostali nerazvrstani poslovni prihodi**
 
-2021. 2020.
-OPIS kuna kuna_
-Potpora za očuvanje radnih mjesta (covid 19) 85.589 21 2.229.
-Naplaćena otpisana potraživanja - 376.940
-Prihodi od bonova za ručak 853.225 759.164
-Viškovi robe na zalihi 127.495 -
-Naplaćeni troškovi po sudskim sporovima 104.750 2
-Prihodi od refundacija - 298.415
-Otpis obveza 698.474 -
-Prihod od dohotka u naravi 214.960 237.465.
-Prihod od naknadno odobrenih popusta 168.844 |
-Ostali prihodi 216.969 356.471_
-UKUPNO 2.301.462 2.409.527
+| OPIS | 2021. kuna | 2020. kuna |
+|---|---|---|
+| Potpora za očuvanje radnih mjesta (covid 19) | 85.589 | 212.229 |
+| Naplaćena otpisana potraživanja | - | 376.940 |
+| Prihodi od bonova za ručak | 853.225 | 759.164 |
+| Viškovi robe na zalihi | 127.495 | - |
+| Naplaćeni troškovi po sudskim sporovima | 104.750 | - |
+| Prihodi od refundacija | - | 298.415 |
+| Otpis obveza | 698.474 | - |
+| Prihod od dohotka u naravi | 214.960 | 237.465 |
+| Prihod od naknadno odobrenih popusta | - | 168.844 |
+| Ostali prihodi | 216.969 | 356.471 |
+| **UKUPNO** | 2.301.462 | 2.409.527 |
 
-5. Ostali nerazvrstani poslovni rashodi
+**5. Ostali nerazvrstani poslovni rashodi**
 
-2021. 2020.
-OPIS kuna kuna_
-Rezervacije i troškovi po sudskim sporovima 15.365.247 353.849 .
-Troškovi intelektualnih usluga 12.748.912 11.136.903
-Ispravak vrijednosti i otpis potraživanja 8.168.868 396.963
-Troškovi službenih putovanja 5.463.702 2.480.051.
-Troškovi energije 3.358.442 2.752.816.
-Troškovi reprezentacije 2.546.706 2.141.911
-Donacije 2.487.815 3.870.568
-Troškovi najmova 1.991.043 2.080.062 |
-Obvezni i preventivni zdravstveni pregledi 1.106.345 2.166.436
-Naknade i kazne savezima 1.951.194 1.371.037
-Članarine i kotizacije 641.475 603.956
-Sudski troškovi, takse , VIZE 502.182 223.017.
-Troškovi komunalnih usluga I čuvanja imovine 567.298 1.528.059
-Ostali poslovni rashodi 5.232.483 4,524.688_
-UKUPNO 62.131.712 35.629.916
+| OPIS | 2021. kuna | 2020. kuna |
+|---|---|---|
+| Rezervacije i troškovi po sudskim sporovima | 15.365.247 | 353.849 |
+| Troškovi intelektualnih usluga | 12.748.912 | 11.136.903 |
+| Ispravak vrijednosti i otpis potraživanja | 8.168.868 | 396.563 |
+| Troškovi službenih putovanja | 5.463.702 | 2.480.051 |
+| Troškovi energije | 3.358.442 | 2.752.816 |
+| Troškovi reprezentacije | 2.546.706 | 2.141.911 |
+| Donacije | 2.487.815 | 3.870.568 |
+| Troškovi najmova | 1.991.043 | 2.080.062 |
+| Obvezni i preventivni zdravstveni pregledi | 1.106.345 | 2.166.436 |
+| Naknade i kazne savezima | 1.951.194 | 1.371.037 |
+| Članarine i kotizacije | 641.475 | 603.956 |
+| Sudski troškovi, takse , VIZE | 502.182 | 223.017 |
+| Troškovi komunalnih usluga I čuvanja imovine | 567.298 | 1.528.059 |
+| Ostali poslovni rashodi | 5.232.483 | 4.524.688 |
+| **UKUPNO** | 62.131.712 | 35.629.916 |
 
 17
-
 
 --- pág. 20 ---
 
@@ -1154,40 +1129,30 @@ sportašima.
 
 --- pág. 24 ---
 
-. GRAĐANSKI NOGOMETNI KLUB DINAMO
+GRAĐANSKI NOGOMETNI KLUB DINAMO
 BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE
 za godinu koja je završila 31. prosinca 2021.
 
-18. Sudski sporovi
+**18. Sudski sporovi**
 
-18.1. Na temelju potvrda dobivenih od eksternih odvjetničkih društava (odvjetničko društvo
-Markač - Greif & partneri, Zagreb, Matije Mrazovića 5, Župić i partneri, Zagreb, Radnička cesta
-37/B, odvjetnice Željke Pokupec, Zagreb, Gradišćanska 34/lI te odvjetničko društvo Radić i Radić,
-Split, Hrvatske mornarice 1) pokrenuto je 6 sudskih sporova u kome su tužitelji iskazali svoje
-novčano potraživanje prema klubu. Klub je za četiri predmetna spora iskazao obvezu u bilanci na
-dan 31. prosinca 2021. godine u iznosu od 15.323.493 kuna dok za preostalih 2 Klub nije iskazao
-nikakve obveze u bilanci na dan 31.prosinca 2021. godine, čiji je ukupno utuženi iznos 130 tisuća
-kuna. Uprava kluba ocijenila je da ishod spomenutih sporova ne bi trebao imati nepovoljan utjecaj
-na financijska izvješća kluba.
+18.1. Na temelju potvrda dobivenih od eksternih odvjetničkih društava (odvjetničko društvo Markač - Greif & partneri, Zagreb, Matije Mrazovića 5, Župić i partneri, Zagreb, Radnička cesta 37/B, odvjetnice Željke Pokupec, Zagreb, Gradišćanska 34/II te odvjetničko društvo Radić i Radić, Split, Hrvatske mornarice 1) pokrenuto je 6 sudskih sporova u kome su tužitelji iskazali svoje novčano potraživanje prema klubu. Klub je za četiri predmetna spora iskazao obvezu u bilanci na dan 31. prosinca 2021. godine u iznosu od 15.323.493 kuna dok za preostalih 2 Klub nije iskazao nikakve obveze u bilanci na dan 31.prosinca 2021. godine, čiji je ukupno utuženi iznos 130 tisuća kuna. Uprava kluba ocijenila je da ishod spomenutih sporova ne bi trebao imati nepovoljan utjecaj na financijska izvješća kluba.
 
-18.2. Na temelju neovisne potvrde Arbitražnog suda Hrvatskog nogometnog saveza, utvrđeno je da
-se pred tim sudom vodi spor 10312/21 u kojem je Građanski nogometni klub Dinamo tužio jedan klub
-radi isplate novčanog iznosa na ime naknade za treniranje i razvoj igrača. Postupak je u tijeku.
+18.2. Na temelju neovisne potvrde Arbitražnog suda Hrvatskog nogometnog saveza, utvrđeno je da se pred tim sudom vodi spor 10312/21 u kojem je Građanski nogometni klub Dinamo tužio jedan klub radi isplate novčanog iznosa na ime naknade za treniranje i razvoj igrača. Postupak je u tijeku.
 
-18.3. Na temelju potvrda dobivenih od eksternih odvjetničkih društava (odvjetničko društvo
-Markač - Greif & partneri, Zagreb, Matije Mrazovića 5, Župić i partneri, Zagreb, Radnička cesta
-37/B, odvjetnice Željke Pokupec, Zagreb, Gradišćanska 34/lI te odvjetničko društvo Radić i Radić,
-Split, Hrvatske mornarice 1) protiv Kluba nema pokrenutih sporova nakon 31. prosinca 2021. godine.
+18.3. Na temelju potvrda dobivenih od eksternih odvjetničkih društava (odvjetničko društvo Markač - Greif & partneri, Zagreb, Matije Mrazovića 5, Župić i partneri, Zagreb, Radnička cesta 37/B, odvjetnice Željke Pokupec, Zagreb, Gradišćanska 34/II te odvjetničko društvo Radić i Radić, Split, Hrvatske mornarice 1) protiv Kluba nema pokrenutih sporova nakon 31. prosinca 2021. godine.
 
-5.4. Klub je tužitelj u nekoliko sudskih sporova čija približna vrijednost predmeta spora iznosi
-11,5 milijuna kuna.
+5.4. Klub je tužitelj u nekoliko sudskih sporova čija približna vrijednost predmeta spora iznosi 11,5 milijuna kuna.
 
-19. Događaji nakon datuma Bilance
-Nakon datuma Bilance nije bilo događaja koji bi značajno utjecali na godišnje financijske
-izvještaje Kluba za 2021. godinu, koji bi, slijedom toga, trebali biti objavljeni.
+**19. Događaji nakon datuma Bilance**
+Nakon datuma Bilance nije bilo događaja koji bi značajno utjecali na godišnje financijske izvještaje Kluba za 2021. godinu, koji bi, slijedom toga, trebali biti objavljeni.
 
-20. ODOBRENJE FINANCIJSKIH IZVJEŠTAJA
+**20. ODOBRENJE FINANCIJSKIH IZVJEŠTAJA**
 
-jaštaje usvojila je Uprava Kluba i odobrila njihovo izdavanje dana 10. ožujka
+Financijske izvještaje usvojila je Uprava Kluba i odobrila njihovo izdavanje dana 10. ožujka 2022. godine.
+
+[potpis] Vlatka Peras, predsjednica Uprave
+
+[pečat: građanski nogometni klub dinamo Zagreb]
 
 22
+

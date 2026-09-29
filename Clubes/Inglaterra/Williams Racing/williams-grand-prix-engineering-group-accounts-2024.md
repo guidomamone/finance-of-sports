@@ -270,61 +270,47 @@ Page 4
 
 --- pág. 7 ---
 
-Williams Grand Prix Engineering Limited
+# Williams Grand Prix Engineering Limited
 
-Directors’ Report (continued)
+## Directors' Report (continued)
 
-e Building-related energy ~ Onsite and trackside fuel combustion (Scope 1), natural gas consumption (Scope
-1), and purchased electricity consumption location-based (Scope 2).
+- Building-related energy – Onsite and trackside fuel combustion (Scope 1), natural gas consumption (Scope 1), and purchased electricity consumption location-based (Scope 2).
+- Transportation – Fuel combustion for race cars and business travel in company vehicles (Scope 1) and expensed business travel in employee-owned vehicles and in hire vehicles (Scope 3).
+- Voluntary reporting – Purchased electricity consumption market-based (Scope 2).
 
-e Transportation — Fuel combustion for race cars and business travel in company vehicles (Scope 1) and
-expensed business travel in employee-owned vehicles and in hire vehicles (Scope 3).
+*Calculation Methodology*
 
-e Voluntary reporting — Purchased electricity consumption market-based (Scope 2).
+Williams Grand Prix Engineering Limited's emissions have been assessed in accordance with the 'GHG Protocol Corporate Accounting and Reporting Standard' and in line with DEFRA's 'Environmental reporting guidelines: including Streamlined Energy and Carbon Reporting Requirements'. The DEFRA 2024 emission conversion factors were used to quantify the emissions associated with Williams Grand Prix Engineering Limited's UK operations for the specified reporting period. Where first hand energy consumption data was unavailable, a pro-rata estimation methodology has been used.
 
-Calculation Methodology
-
-Williams Grand Prix Engineering Limited’s emissions have been assessed in accordance with the ‘GHG Protocol
-Corporate Accounting and Reporting Standard’ and in line with DEFRA’s ‘Environmental reporting guidelines:
-including Streamlined Energy and Carbon Reporting Requirements’. The DEFRA 2024 emission conversion factors
-were used to quantify the emissions associated with Williams Grand Prix Engineering Limited’s UK operations for
-the specified reporting period. Where first hand energy consumption data was unavailable, a pro-rata estimation
-
-methodology has been used.
-
-Organisational Boundary
+*Organisational Boundary*
 
 We have used the operational control approach.
 
-Results
+*Results*
 
-: . 1 January 2024 -31 | ‘1 January 2023 - 31
-Reporting Period December 2024 December 2023
-Area Metric UK & Offshore UK & Offshore
-Emissions from natural gas, onsite fuels, Energy (kWh) 2,315,766.20 2,656,234.05
-and fuels from company vehicles and race Emissions
-cars (Scope 1) (tCO2e) 435.02 497.00
-Location-based emissions from purchased =e (kWh) 12,400,444.81 13,151,103.61
-electricity (Scope 2 MISSIONS
-y (Scope 2) (1CO2¢) 2,567.51 2,723.26
-Emissions from expensed business travel in oe (kWh) 42,986.13 92,276.52
-employee and hire vehicles (Scope 3 MISStONS
-ploy (Scope 3) (tCO2e) 10.37 12.65
-Intensity Ratio (tCO2e / FTE 2.96 3.83
-Employee)
-Total Energy Consumption (kWh) 14,759,197.13 15,859,614.18 |
-Total Emissions (tCO2e) 3,012.90 3,232.90
-Market-based emissions from purchased
-electricity (Scope 2) _ (tCO2e) 0.00 0.00
-Net Emissions (tCO2e) 445.39 509.65
+| Reporting Period | | 1 January 2024 - 31 December 2024 | 1 January 2023 - 31 December 2023 |
+|---|---|---|---|
+| **Area** | **Metric** | **UK & Offshore** | **UK & Offshore** |
+| Emissions from natural gas, onsite fuels, and fuels from company vehicles and race cars (Scope 1) | Energy (kWh) | 2,315,766.20 | 2,656,234.05 |
+| | Emissions (tCO2e) | 435.02 | 497.00 |
+| Location-based emissions from purchased electricity (Scope 2) | Energy (kWh) | 12,400,444.81 | 13,151,103.61 |
+| | Emissions (tCO2e) | 2,567.51 | 2,723.26 |
+| Emissions from expensed business travel in employee and hire vehicles (Scope 3) | Energy (kWh) | 42,986.13 | 52,276.52 |
+| | Emissions (tCO2e) | 10.37 | 12.65 |
+| Intensity Ratio | (tCO2e / FTE Employee) | **2.96** | **3.83** |
+| Total Energy Consumption | (kWh) | **14,759,197.13** | **15,859,614.18** |
+| Total Emissions | (tCO2e) | **3,012.90** | **3,232.90** |
 
-Intensity Metrics
+| | | | |
+|---|---|---|---|
+| Market-based emissions from purchased electricity (Scope 2) | (tCO2e) | **0.00** | **0.00** |
+| Net Emissions | (tCO2e) | **445.39** | **509.65** |
 
-The chosen intensity ratio is emissions (tCO2e) per FTE employee. This was chosen as an appropriate activity
-metric considering the nature of our operations, whilst facilitating comparisons to previous reporting periods.
+*Intensity Metrics*
+
+The chosen intensity ratio is emissions (tCO₂e) per FTE employee. This was chosen as an appropriate activity metric considering the nature of our operations, whilst facilitating comparisons to previous reporting periods.
 
 Page 5
-
 
 --- pág. 8 ---
 
@@ -1136,317 +1122,222 @@ Page 22
 
 --- pág. 25 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+# Williams Grand Prix Engineering Limited
+## Notes to the Consolidated Financial Statements
 
-1 Basis of preparation (continued)
+**1 Basis of preparation (continued)**
 
-Trade payables and receivables
+*Trade payables and receivables*
 
-Trade payables and trade receivables are not interest bearing and are payable or receivable within one year.
-They are recorded at their nominal value less any allowance for estimated irrecoverable amounts. Any
-losses arising from impairment are recognised in the income statement.
+Trade payables and trade receivables are not interest bearing and are payable or receivable within one year. They are recorded at their nominal value less any allowance for estimated irrecoverable amounts. Any losses arising from impairment are recognised in the income statement.
 
-Bank borrowings and overdrafts
+*Bank borrowings and overdrafts*
 
-Interest bearing loans and overdrafts are initially measured at fair value (which is equal to cost at
-inception), and are subsequently measured at amortised cost, using the effective interest rate method. Any
-difference between the proceeds net of transaction costs and the amount due on settlement of borrowings
-is recognised over the term of the borrowing.
+Interest bearing loans and overdrafts are initially measured at fair value (which is equal to cost at inception), and are subsequently measured at amortised cost, using the effective interest rate method. Any difference between the proceeds net of transaction costs and the amount due on settlement of borrowings is recognised over the term of the borrowing.
 
-Foreign currency
+*Foreign currency*
 
-Monetary assets and liabilities denominated in foreign currencies are translated into sterling at rates of
-exchange ruling at the balance sheet date. Transactions in foreign currencies are translated into sterling at
-the approximate rate of exchange prevailing at the transaction date. All profits and losses on exchange are
-recognised within the statement of comprehensive income.
+Monetary assets and liabilities denominated in foreign currencies are translated into sterling at rates of exchange ruling at the balance sheet date. Transactions in foreign currencies are translated into sterling at the approximate rate of exchange prevailing at the transaction date. All profits and losses on exchange are recognised within the statement of comprehensive income.
 
-Pensions
+*Pensions*
 
-The Company operates a defined contribution pension scheme. The pension costs charged in the financial
-statements represent the contributions payable by the Company during the period. The Company does not
-operate any defined benefit retirement arrangement.
+The Company operates a defined contribution pension scheme. The pension costs charged in the financial statements represent the contributions payable by the Company during the period. The Company does not operate any defined benefit retirement arrangement.
 
-2 Operating loss
+**2 Operating loss**
 
 Operating loss is stated after charging/(crediting):
 
-2024 2023
-
-£000 £000
-Operating leases — plant and machinery 1,023 847
-Foreign exchange (profits)/losses (734) 1,135
-Loss on sale of intangible fixed assets - 222
-Loss on sale of tangible fixed assets 173 274
-Loss/((profit) on sale of heritage assets 20 (3,469)
-Depreciation of tangible fixed assets 8,874 12,214
-Amortisation of intangible fixed assets 4,070 2,841
-Auditors’ remuneration for these financial statements . ~ 138 138
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Operating leases – plant and machinery | 1,023 | 847 |
+| Foreign exchange (profits)/losses | (734) | 1,135 |
+| Loss on sale of intangible fixed assets | - | 222 |
+| Loss on sale of tangible fixed assets | 173 | 274 |
+| Loss/(profit) on sale of heritage assets | 20 | (3,469) |
+| Depreciation of tangible fixed assets | 8,874 | 12,214 |
+| Amortisation of intangible fixed assets | 4,070 | 2,841 |
+| Auditors' remuneration for these financial statements | 138 | 138 |
 
 The notes on pages 19 to 31 form an integral part of these financial statements.
 Page 23
 
 --- pág. 26 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-3 Auditor's remuneration
+**3 Auditor's remuneration**
 
-2024 2023
-£000 £000
-Audit of these financial statements 138 138
-Other assurance services 38 37
-Total Auditor’s remuneration 176 175
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Audit of these financial statements | 138 | 138 |
+| Other assurance services | 38 | 37 |
+| Total Auditor's remuneration | 176 | 175 |
 
-4 Particulars of employees
+**4 Particulars of employees**
 
-The average number of persons employed by the Company (including Directors) during the year, analysed
-by category was as follows:
+The average number of persons employed by the Company (including Directors) during the year, analysed by category was as follows:
 
-2024 2023
-
-No. No.
-Administration and support 213 167
-Research and development 660 619
-Marketing 76 59
-949 845
+| | 2024 No. | 2023 No. |
+|---|---|---|
+| Administration and support | 213 | 167 |
+| Research and development | 660 | 619 |
+| Marketing | 76 | 59 |
+| | 949 | 845 |
 
 The aggregate payroll costs were as follows:
-2024 2023
-£000 £000
-Wages and salaries 72,961 62,578
-Social security costs 8,423 7,181
-Other pension schemes 3,179 2,481
-84,563 72,240
 
-The Company operates a defined contribution pension scheme. The assets of the scheme are held separately
-to those of the Company in independently administered funds. The pension cost charge represents
-contributions payable by the Company to the funds.
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Wages and salaries | 72,961 | 62,578 |
+| Social security costs | 8,423 | 7,181 |
+| Other pension schemes | 3,179 | 2,481 |
+| | 84,563 | 72,240 |
+
+The Company operates a defined contribution pension scheme. The assets of the scheme are held separately to those of the Company in independently administered funds. The pension cost charge represents contributions payable by the Company to the funds.
 
 The notes on pages 19 to 31 form an integral part of these financial statements.
 Page 24
 
 --- pág. 27 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-5 Directors’ remuneration
+**5 Directors' remuneration**
 
 The Directors' remuneration for the year was as follows:
 
-Remuneration
-Contributions paid to money purchase schemes
-
-2024 2023
-£000 £000
-7B 80
-78 80
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Remuneration | 78 | 80 |
+| Contributions paid to money purchase schemes | - | - |
+| | 78 | 80 |
 
 No Directors had any benefits accruing under money purchase schemes or long term incentive schemes.
 
-6 Interest payable and similar expenses
+**6 Interest payable and similar expenses**
 
-Unwind of discount on deferred lease income
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Unwind of discount on deferred lease income | 53 | 217 |
+| | 53 | 217 |
 
-7 Interest receivable and similar income
+**7 Interest receivable and similar income**
 
-Bank interest
-Interest on trade debtors
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Bank interest | 18 | 7 |
+| Interest on trade debtors | 23 | - |
+| Other interest income | 7 | - |
+| | 48 | 7 |
 
-Other interest income
+**8 Taxation**
 
-8 Taxation
+**Tax on loss on ordinary activities**
 
-Tax on loss on ordinary activities
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| **Current tax** | | |
+| Corporation tax charge | 7,595 | 3,778 |
+| | 7,595 | 3,778 |
 
-Current tax
-Corporation tax charge
+During 2023, the R&D Expenditure Claim has been elected to be presented gross of tax as permitted by FRS102.
 
-2024 2023
-£000 £000
-53 217
-53 217
-2024 2023
-£000 £000
-18 7
-23 -
-7 -
-48 7
-2024 2023
-£000 £000
-7,595 3,778
-7,595 3,778
-
-During 2023, the R&D Expenditure Claim has been elected to be presented gross of tax as permitted by
-
-FRS102.
-
-The Company has estimated losses of approximately £337.4m (2023: £288.9m) available to carry forward
-against future trading profits. Deferred tax asset of £84.6m, deferred tax liability of £9.6m and net deferred
-tax asset of £75.0m have not been recognised in respect of these losses due to the uncertainty of the period
-
-over which they will be offset against taxable profits.
+The Company has estimated losses of approximately £337.4m (2023: £288.9m) available to carry forward against future trading profits. Deferred tax asset of £84.6m, deferred tax liability of £9.6m and net deferred tax asset of £75.0m have not been recognised in respect of these losses due to the uncertainty of the period over which they will be offset against taxable profits.
 
 The notes on pages 19 to 31 form an integral part of these financial statements.
-
 Page 25
 
 --- pág. 28 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-Taxation (continued)
+**8 Taxation (continued)**
 
-Factors affecting tax charge for the year
+**Factors affecting tax charge for the year**
 
-The tax on profit on ordinary activities for the year is lower (2023: lower) than the standard rate of
-corporation tax in the UK of 25.0% (2023: 23.52%).
+The tax on profit on ordinary activities for the year is lower (2023: lower) than the standard rate of corporation tax in the UK of 25.0% (2023: 23.52%).
 
 The differences are reconciled below:
 
-2024 2023
-£000 £000
-(Loss) on ordinary activities before tax (42,251) (80,508)
-Corporation tax at standard rate (10,563) (18,935)
-Permanent fixed asset differences 455 372
-Other permanent difference 45 35
-Expenses not deductible for tax purposes 784 5,665
-Income not taxable for tax purposes - -
-Adjustment in research and development tax credit (2,090) (721)
-Losses not recognised 16,998 17,362
-Prior year adjustment 1,966 -
-Total tax charge 7,595 3,778
-9 Investment in subsidiary undertakings
-2024 2023
-£000 £000
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| (Loss) on ordinary activities before tax | (42,251) | (80,508) |
+| Corporation tax at standard rate | (10,563) | (18,935) |
+| | | |
+| Permanent fixed asset differences | 455 | 372 |
+| Other permanent difference | 45 | 35 |
+| Expenses not deductible for tax purposes | 784 | 5,665 |
+| Income not taxable for tax purposes | - | - |
+| Adjustment in research and development tax credit | (2,090) | (721) |
+| Losses not recognised | 16,998 | 17,362 |
+| Prior year adjustment | 1,966 | - |
+| Total tax charge | 7,595 | 3,778 |
 
-Cost and net book value as at 31 December - -
+**9 Investment in subsidiary undertakings**
 
-The Company owns 100% of the ordinary share capital of Williams Fl Limited (“WF1”), a company
-incorporated in England and Wales. This company was dormant throughout the period and up to the date the
-accounts were approved. The total share capital and reserves of WF1 at 31 December 2024 were £1 (2023:
-£1).
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Cost and net book value as at 31 December | - | - |
+| | - | - |
 
-The Company is the parent company of The Williams F1 Team Foundation, a company limited’by guarantee
-and incorporated in England and Wales. This company was dormant throughout the period and up to the date
-the accounts were approved.
+The Company owns 100% of the ordinary share capital of Williams F1 Limited ("WF1"), a company incorporated in England and Wales. This company was dormant throughout the period and up to the date the accounts were approved. The total share capital and reserves of WF1 at 31 December 2024 were £1 (2023: £1).
 
-The registered office address for all of the Company’s subsidiaries is Grove, Wantage, Oxfordshire, OX12
-0DQ.
+The Company is the parent company of The Williams F1 Team Foundation, a company limited by guarantee and incorporated in England and Wales. This company was dormant throughout the period and up to the date the accounts were approved.
 
-The notes on pages 19 to 31 form an integra! part of these financial statements.
+The registered office address for all of the Company's subsidiaries is Grove, Wantage, Oxfordshire, OX12 0DQ.
+
+The notes on pages 19 to 31 form an integral part of these financial statements.
 Page 26
 
 --- pág. 29 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-10 Intangible fixed assets
+**10 Intangible fixed assets**
 
-Cost
+| | Software £000 | Total £000 |
+|---|---|---|
+| **Cost** | | |
+| At 1 January 2024 | 17,468 | 17,468 |
+| Additions | 1,064 | 1,064 |
+| Disposals | (43) | (43) |
+| **At 31 December 2024** | 18,489 | 18,489 |
+| | | |
+| **Amortisation** | | |
+| At 1 January 2024 | 8,683 | 8,683 |
+| Charge for the year | 4,070 | 4,070 |
+| Disposals | (43) | (43) |
+| **At 31 December 2024** | 12,710 | 12,710 |
+| | | |
+| **Net book value** | | |
+| **At 31 December 2024** | 5,779 | 5,779 |
+| At 31 December 2023 | 8,785 | 8,785 |
 
-At 1 January 2024
-Additions
+**11 Heritage assets**
 
-Disposals
-
-At 31 December 2024
-
-Amortisation
-
-At | January 2024
-Charge for the year
-Disposals
-
-At 31 December 2024
-
-Net book value
-At 31 December 2024
-At 31 December 2023
-
-il Heritage assets
-
-Valuation
-At 1 January 2024
-
-Revaluations
-Disposals
-At 31 December 2024
+| **Valuation** | £000 |
+|---|---|
+| At 1 January 2024 | 3,280 |
+| Revaluations | 135 |
+| Disposals | (2,380) |
+| **At 31 December 2024** | 1,035 |
 
 Five year financial summary of heritage asset transactions:
 
-_ Additions
+| | 2024 £000 | 2023 £000 | 2022 £000 | 2021 £000 | 2020 £000 |
+|---|---|---|---|---|---|
+| Additions | - | 430 | 200 | 200 | - |
+| Disposals - carrying value | 2,380 | 18,290 | - | - | 200 |
+| Disposals - sale proceeds | 2,360 | 21,758 | - | - | 305 |
+| Impairment | - | - | 100 | - | - |
 
-Disposals - carrying value
-Disposals - sale proceeds
-
-Impairment
-
-2024
-£000
-
-2,380
-2,360
-
-2023
-£000
-
-430
-18,290
-21,758
-
-Software Total
-
-£000 £000
-
-17,468 17,468
-
-1,064 1,064
-
-(43) (43)
-
-18,489 18,489
-
-8,683 8,683
-
-4,070 4,070
-
-(43) (43)
-
-12,710 12,710
-
-5,779 5,779
-
-8,785 8,785
-
-£000
-
-3,280
-
-135
-
-(2,380)
-
-1,035
-2022 2021 2020
-£000 £000 £000
-200 200 -
-- - 200
-- - 305
-100 - -
-
-The last external valuation of heritage assets was carried out in October 2024 by Girardo & Co, a specialist
-in high performance road and racing cars. The valuation was performed by looking at the cars individually,
-considering the value inherent in the provenance attached (e.g. championship winning cars), as well as
-looking at sales values for similar vehicles where possible. So far as the Directors are aware, there are no
-indicators of impairment that would affect the valuation as at the statement of financial position date.
+The last external valuation of heritage assets was carried out in October 2024 by Girardo & Co, a specialist in high performance road and racing cars. The valuation was performed by looking at the cars individually, considering the value inherent in the provenance attached (e.g. championship winning cars), as well as looking at sales values for similar vehicles where possible. So far as the Directors are aware, there are no indicators of impairment that would affect the valuation as at the statement of financial position date.
 
 The notes on pages 19 to 31 form an integral part of these financial statements.
-
 Page 27
 
 --- pág. 30 ---
@@ -1496,165 +1387,137 @@ Page 28
 
 --- pág. 31 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-15 Creditors: amounts falling due within one year
-2024 2023
-£000 £000
-Trade creditors 5,697 5,196
-Other taxes and social security 2,236 1,915
-Accruals 31,950 36,972
-Amounts due to Group undertakings 1,235 6,289
-Deferred income §,601 16,077
-Other creditors 713 285
-47,432 66,734
-16 Creditors: amounts falling after more than one year
-2024 2023
-£000 £000
-Provisions 42 42
-42 42
-17 Financial instruments
+**15 Creditors: amounts falling due within one year**
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Trade creditors | 5,697 | 5,196 |
+| Other taxes and social security | 2,236 | 1,915 |
+| Accruals | 31,950 | 36,972 |
+| Amounts due to Group undertakings | 1,235 | 6,289 |
+| Deferred income | 5,601 | 16,077 |
+| Other creditors | 713 | 285 |
+| | 47,432 | 66,734 |
+
+**16 Creditors: amounts falling after more than one year**
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Provisions | 42 | 42 |
+| | 42 | 42 |
+
+**17 Financial instruments**
+
 The Company has the following financial instruments:
-2024 2023
-£000 £000
-Financial assets measured at amortised cost
-Trade and other debtors 56,570 27,313
-56,570 27,313
-Financial liabilities measured at amortised cost
-Trade and other creditors (6,410) (5,481)
-(6,410) (5,481)
 
-Objectives, policies and strategies for managing risks relating to financial instruments are disclosed within
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| **Financial assets measured at amortised cost** | | |
+| Trade and other debtors | 56,570 | 27,313 |
+| | 56,570 | 27,313 |
+| **Financial liabilities measured at amortised cost** | | |
+| Trade and other creditors | (6,410) | (5,481) |
+| | (6,410) | (5,481) |
 
-the Strategic Report on page 2.
+Objectives, policies and strategies for managing risks relating to financial instruments are disclosed within the Strategic Report on page 2.
 
 The notes on pages 19 to 31 form an integral part of these financial statements.
-
 Page 29
 
 --- pág. 32 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-18 Obligations under leases and hire purchase contracts
+**18 Obligations under leases and hire purchase contracts**
 
-As at 31 December 2024 the Company had the following future minimum lease payments under non-
-cancellable operating leases, for each of the following periods:
+As at 31 December 2024 the Company had the following future minimum lease payments under non-cancellable operating leases, for each of the following periods:
 
-2024 2023
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| Within one year | 413 | 404 |
+| Within two to five years | 244 | 578 |
+| In more than five years | - | - |
+| | 657 | 982 |
 
-£000 £000
-
-Within one year 413 404
-Within two to five years 244 578
-In more than five years - :
-657 982
-
-19 Contingent assets and liabilities
+**19 Contingent assets and liabilities**
 
 The Company had no contingent liabilities as at 31 December 2024 or as at 31 December 2023.
 
-The Company holds a contingent asset of £0.8m (2023: £0.85m) from contract that is due in 2025. This relates
-to a contract that was impaired in previous years, however a new agreement in 2024 was reached and as an
-inflow is deemed probable has been disclosed as a contingent asset.
+The Company holds a contingent asset of £0.8m (2023: £0.85m) from contract that is due in 2025. This relates to a contract that was impaired in previous years, however a new agreement in 2024 was reached and as an inflow is deemed probable has been disclosed as a contingent asset.
 
-20 Related party transactions
-Sales to Administrative expenses
-incurred from
+**20 Related party transactions**
 
-2024 2023 2024 2023
+| | Sales to 2024 £000 | Sales to 2023 £000 | Administrative expenses incurred from 2024 £000 | Administrative expenses incurred from 2023 £000 |
+|---|---|---|---|---|
+| Entities with control, joint control or significant influence | 126,086 | 96,935 | 9,486 | 15,276 |
+| Key management personnel of the company or its parent | - | - | 49 | - |
+| | 126,086 | 96,635 | 9,535 | 15,276 |
 
-£000 £000 £000 £000
-Entities with control, joint control or 126,086 96,935 9,486 15,276
-significant influence
-Key management personnel of the - - 49 -
-company or its parent
+| | Receivables outstanding 2024 £000 | Receivables outstanding 2023 £000 | Creditors outstanding 2024 £000 | Creditors outstanding 2023 £000 |
+|---|---|---|---|---|
+| Entities with control, joint control or significant influence | 1,076 | - | 6,836 | 22,266 |
+| Other related parties | - | - | - | - |
+| Key management personnel of the company or its parent | 3 | - | 42 | - |
+| | 1,079 | - | 6,878 | 22,266 |
 
-126,086 96,635 9,535 15,276
+During the year, BCE LLC subscribed for 112.4 million shares in the Company (2023: 35 million shares).
 
-Entities with control, joint control or
-significant influence
-
-Other related parties
-Key management personnel of the
-
-Receivables outstanding
-
-Creditors outstanding
-
-company or its parent
-
-2024 2023 2024 2023
-£000 £000 £000 £000
-1,076 - 6,836 22,266
-
-3 - 42 -
-1,079 - 6,878 22,266
-
-_ During the year, BCE LLC subscribed for 112.4 million shares in the Company (2023: 35 million shares).
-
-Creditors outstanding include £5.6m (2023: £16m) of deferred income arising from a prepayment of FY25
-
-income.
-
-Page 30
+Creditors outstanding include £5.6m (2023: £16m) of deferred income arising from a prepayment of FY25 income.
 
 The notes on pages 19 to 31 form an integral part of these financial statements.
+Page 30
 
 --- pág. 33 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**
+**Notes to the Consolidated Financial Statements**
 
-21 Share capital and other reserves
+**21 Share capital and other reserves**
 
-Allotted, called up and fully paid shares
+**Allotted, called up and fully paid shares**
 
-2024 2023
-No. £000 No £000
-Ordinary shares of £1 each 283,977,102 283,977 171,537,102 171,537
+| | 2024 No. | 2024 £000 | 2023 No | 2023 £000 |
+|---|---|---|---|---|
+| Ordinary shares of £1 each | 283,977,102 | 283,977 | 171,537,102 | 171,537 |
 
-There is a single class of ordinary shares which carry no right to fixed income. 112,440,000 ordinary shares
-were issued in the year for £112.4m.
+There is a single class of ordinary shares which carry no right to fixed income. 112,440,000 ordinary shares were issued in the year for £112.4m.
 
-Other reserves
+**Other reserves**
 
 The revaluation reserve represents the cumulative effect of revaluations of heritage assets.
 
-22 Notes to the Statement of Cash Flows
+**22 Notes to the Statement of Cash Flows**
 
-Reconciliation of profit to net cashflow from operating activities
+**Reconciliation of profit to net cashflow from operating activities**
 
-Note 2024 2023
+| | Note | 2024 £000 | 2023 £000 |
+|---|---|---|---|
+| Loss for the period | | (49,846) | (84,286) |
+| Net finance costs | | 5 | 210 |
+| Capitalisation of heritage assets | | - | (150) |
+| Loss/(gain) on sale of heritage assets | | 20 | (3,469) |
+| Loss/(gain) on sale of intangible assets | 2 | - | 222 |
+| Loss on disposal of tangible assets | | 173 | 274 |
+| Depreciation and amortisation | 10, 12 | 12,944 | 15,055 |
+| Decrease/(increase) in stocks | | 1,069 | (204) |
+| Increase in debtors | | (32,614) | (5,398) |
+| (Decrease)/increase in creditors | | (19,300) | 33,659 |
+| | | | |
+| **Net cash outflow from operating activities** | | (87,549) | (44,087) |
 
-£000 . £000
-
-Loss for the period (49,846) (84,286)
-Net finance costs 5 210
-Capitalisation of heritage assets - (150)
-Loss/(gain) on sale of heritage assets 20 (3,469)
-‘ Loss/(gain) on sale of intangible assets 2 - 222
-Loss on disposal of tangible assets 173 274
-Depreciation and amortisation 10, 12 12,944 15,055
-Decrease/(increase) in stocks 1,069 (204)
-Increase in debtors (32,614) (5,398)
-(Decrease)/increase in creditors (19,300) 33,659
-Net cash outflow from operating activities (87,549) (44,087)
-
-23 Capital commitments
+**23 Capital commitments**
 
 Amounts contracted for but not provided in the financial statements amounted to £1.3m (2023: £1.4m)
 
-24 Control
+**24 Control**
 
-The immediate parent undertaking of the Company is BCE LLC. BCE LLC is incorporated in the Marshal!
-Islands, and is registered at Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic
-of the Marshall Islands, MH 96960.
+The immediate parent undertaking of the Company is BCE LLC. BCE LLC is incorporated in the Marshall Islands, and is registered at Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall Islands, MH 96960.
 
-The largest and smallest company of undertakings for which Company accounts have been drawn up is
-Williams Grand Prix Engineering Ltd.
+The largest and smallest company of undertakings for which Company accounts have been drawn up is Williams Grand Prix Engineering Ltd.
 
 The ultimate controlling party is NWCA8429 Ltd.
 

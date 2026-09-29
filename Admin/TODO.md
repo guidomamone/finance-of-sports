@@ -54,17 +54,20 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
-107. PROBAR DE VERDAD `tools/claude-api-transcribe.mjs` (la 3ra API, Claude por API directa,
-    conectada en la Versión 304 — ver `Admin/CHANGELOG.md`), pendiente de que Guido termine de
-    poner la key en `Admin/claude-api/.env`. A diferencia de Mistral/Gemini, esta tool nunca
-    transcribió un documento real todavía — antes de confiar en ella para el caso real (Gemini
-    rechazando por RECITATION), probarla contra al menos 1 documento y verificar: (a) que el `.md`
-    sale bien formado (marcas de página, tablas, sin comentarios propios del modelo colados); (b)
-    que `tools/compare-transcripts.mjs` la puede comparar contra la transcripción de Mistral sin
-    romper; (c) el costo real por documento (la tool ya loguea a `Admin/claude-api/resultados.jsonl`)
-    contra la estimación de ~$0,15–$0,30 que se dio de entrada. Ideal: agarrar un documento real que
-    Gemini ya haya rechazado por RECITATION (`Admin/gemini/fallidos.jsonl`, buscar `RECITATION` en el
-    campo `error`) para probar el caso real, no uno cualquiera.
+108. TERMINAR DE VALIDAR TODO EL INVENTARIO DE `.md` LEGADO (pedido de Guido 2026-09-29: "TODO ES TODO lo
+    legado", sin orden de prioridad por club). Estado tras los 2 pilotos (21 docs, todos `listo`): quedan ~1.436
+    documentos entre `revisar` y `pendiente-segunda-voz` (ver `node tools/inventario-transcripciones.mjs`).
+    1. Correr `node tools/resolver-inventario.mjs --ejecutar --concurrencia 4 --limit 100`, revisar el resumen, y
+       seguir en tandas (los resultados quedan; se puede cortar y retomar). Estimación del ensayo: ~$350.
+    2. Regenerar el registro después de cada tanda (`node tools/inventario-transcripciones.mjs`) y mirar los
+       `revisar` que queden (sin consenso entre voces: resolver contra el PDF) y los `reserva`.
+    3. INTEGRAR al onboarding: `tools/onboard.mjs` hoy valida con `compare-transcripts` (rubro por rubro); el
+       resolver valida por página y por número con mucho menos Claude. Unificar en un módulo compartido para que
+       un PDF nuevo pase por el mismo criterio que el inventario. Después actualizar `CLAUDE.md` ("Cada PDF
+       nuevo") y proponerle a Guido el texto para `club-or-year-onboarding` y `club-data-mapping` (no editar
+       skills sin su ok).
+    4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
+    5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
 
 98. BAJAR EL COSTO EN TOKENS DE CLAUDE DEL ONBOARDING DE UN EJERCICIO NUEVO (candidato del to-do 85,
     pedido de Guido 2026-09-28: *"sería factible un enfoque en el que se utilicen más scripts que

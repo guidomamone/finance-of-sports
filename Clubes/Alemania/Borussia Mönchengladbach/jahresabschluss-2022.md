@@ -118,323 +118,168 @@ Auszug aus dem Unternehmensregister
 
 UNTERNEHMENSREGISTER
 
-Ein bedeutendes Risiko für uns liegt in einem zurückgehenden Interesse am Fußball im Allgemeinen oder an Borussia im Einzelnen. Dies könnte zur Folge haben, dass die Einnahmen in vielen Bereichen sinken und damit auch die Zusammenarbeit mit den Banken
-nicht auf bisherigem Niveau fortgeführt werden kann.
+– Seite 3 von 16 –
+Tag der Erstellung : 13.10.2023
+Auszug aus dem Unternehmensregister
+
+Ein bedeutendes Risiko für uns liegt in einem zurückgehenden Interesse am Fußball im Allgemeinen oder an Borussia im Einzelnen. Dies könnte zur Folge haben, dass die Einnahmen in vielen Bereichen sinken und damit auch die Zusammenarbeit mit den Banken nicht auf bisherigem Niveau fortgeführt werden kann.
 
 Die Höhe der Einnahmen von Zuschauern, Sponsoren und aus TV-Übertragungen hängt auch vom sportlichen Erfolg der Lizenzspielermannschaft des Fußballbereiches ab. Eine negative sportliche Entwicklung stellt daher für uns ein bedeutendes Risiko dar.
+
 Borussia wird die Unterlagen für das Lizenzierungsverfahren bei der DFL Deutsche Fußball Liga GmbH fristgerecht bis zum 15. März 2023 einreichen. Die Gesellschaft plant für das kommende Geschäftsjahr für die erste und zweite Fußball-Bundesliga.
 
 Borussia bedankt sich bei der DFL Deutsche Fußball Liga GmbH und dem DFB-Deutschen Fußball Bund e.V. für die gute Zusammenarbeit und die hervorragende fachliche Beratung im abgelaufenen Geschäftsjahr.
 
 Mönchengladbach, den 09. März 2023
 
-Rolf Königs
+Rolf Königs.
+Geschäftsführer.
+Stephan A. C. Schippers.
+Geschäftsführer.
+Roland Virkus.
+Geschäftsführer.
+Markus Aretz.
 Geschäftsführer
-Stephan A. C. Schippers
-Geschäftsführer
-Roland Virkus
-Geschäftsführer
-Markus Aretz
-Geschäftsführer
 
-Bilanz zum 31. Dezember 2022
+# Bilanz zum 31. Dezember 2022
 
-Aktiva
-31.12.2022 31.12.2021
-EUR EUR EUR EUR
+**Aktiva**
 
-A. Anlagevermögen
-I. Immaterielle Vermögensgegenstände
-1. Entgeltlich erworbene Konzessionen, ge- 1.277.411,58 8.756.814,99
-werbliche Schutzrechte und ähnliche Rechte
-und Werte sowie Lizenzen ans olchen Rech-
-ten und Werten
-2. Spielerwerte 52.316.425,10 53.593.836,68 63.267.518,08 72.024.333,07
-
-II. Sachanlagen
-
-1. Grundstücke, grundstücksgleiche Rech- 87.553.917,85 89.996.692,61
-te und Bauten einschließlich der Bauten auf
-fremden Grundstücken
-
-2. Andere Anlagen, Betriebs- und Geschäfts- 3.875.181,82 4.103.088,61
-
-ausstattung
-
-3. Geleistete Anzahlungen und Anlagen im 69.098,49 91.498.198 ,16 157.000,00 94.256.781,22
-Bau
-
-III. Finanzanlagen
-
-— Seite 3 von 16 —
-Tag der Erstellung : 13.10.2023
-Auszug aus dem Unternehmensregister
+| | 31.12.2022 EUR | EUR | 31.12.2021 EUR | EUR |
+|---|---|---|---|---|
+| **A. Anlagevermögen** | | | | |
+| **I. Immaterielle Vermögensgegenstände** | | | | |
+| 1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen ans olchen Rechten und Werten | 1.277.411,58 | | 8.756.814,99 | |
+| 2. Spielerwerte | 52.316.425,10 | 53.593.836,68 | 63.267.518,08 | 72.024.333,07 |
+| **II. Sachanlagen** | | | | |
+| 1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken | 87.553.917,85 | | 89.996.692,61 | |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 3.875.181,82 | | 4.103.088,61 | |
+| 3. Geleistete Anzahlungen und Anlagen im Bau | 69.098,49 | 91.498.198,16 | 157.000,00 | 94.256.781,22 |
+| **III. Finanzanlagen** | | | | |
 
 --- pág. 4 ---
 
 UNTERNEHMENSREGISTER
 
-1. Anteile an verbundenen Unternehmen
-2. Beteiligungen
-
-3. Sonstige Finanzanlagen
-
-B. Umlaufvermögen
-I. Vorräte
-Waren
-
-II. Forderungen und sonstige Vermögens-
-gegenstände
-
-1. Forderungen aus Lieferungen und Leistun-
-gen
-
-2. Forderungen aus Transfer
-3. Forderungen gegenüber Gesellschafter
-
-4. Forderungen gegen verbundene Unterneh-
-men
-
-5. Sonstige Vermögensgegenstände
-
-III. Kassenbestand,, Guthaben bei Kredit-
-instituten
-
-C. Rechnungsabgrenzungsposten
-
-D. Aktive latente Steuern
-
-Passiva
-
-A.Eigenkapital
-
-I. Gezeichnetes Kapital
-II. Kapitalrücklage
-III. Gewinnvortrag
-
-IV. Jahresfehlbetrag
-
-B. Rückstellungen
-
-31.12.2022
-EUR EUR
-300.000,00
-2.442.840,00
-600,00 2.743.440 ,00
-147.835.474,84
-2.157.981,23
-5.559.054,23
-8.810.096,45
-435.476,07
-128.806,73
-815.832,49 15.749.265,97
-351.219,23
-
-18.258.466,43
-5.786.899,96
-9.257.687 ,00
-181.138.528,23
-
-31.12.2022
-EUR
-
-2.500.000,00
-600.000,00
-68.727.567,88
--24.679.279,91
-47.148.287,97
-
-31.12.2021
-EUR EUR
-300.000,00
-2.442.840,00
-600,00 2.743.440 ,00
-169.024.554,29
-2.209.556,32
-7.897.045,38
-176.741,00
-0,00
-6.567,58
-1.176.030,16 9.256.384,12
-572.761,31
-
-12.038.701,75
-6.675.373,19
-9.257.687 ,00
-196.996.316,23
-
-31.12.2021
-EUR
-
-2.500.000 ,00
-600.000,00
-83.337.412,83
--14.609.844,95
-71.827.567,88
-
-— Seite 4 von 16 —
+– Seite 4 von 16 –
 Tag der Erstellung : 13.10.2023
 Auszug aus dem Unternehmensregister
+
+| | 31.12.2022 EUR | EUR | 31.12.2021 EUR | EUR |
+|---|---|---|---|---|
+| 1. Anteile an verbundenen Unternehmen | 300.000,00 | | 300.000,00 | |
+| 2. Beteiligungen | 2.442.840,00 | | 2.442.840,00 | |
+| 3. Sonstige Finanzanlagen | 600,00 | 2.743.440,00 | 600,00 | 2.743.440,00 |
+| | | 147.835.474,84 | | 169.024.554,29 |
+| **B. Umlaufvermögen** | | | | |
+| **I. Vorräte** | | | | |
+| Waren | | 2.157.981,23 | | 2.209.556,32 |
+| **II. Forderungen und sonstige Vermögensgegenstände** | | | | |
+| 1. Forderungen aus Lieferungen und Leistungen | 5.559.054,23 | | 7.897.045,38 | |
+| 2. Forderungen aus Transfer | 8.810.096,45 | | 176.741,00 | |
+| 3. Forderungen gegenüber Gesellschafter | 435.476,07 | | 0,00 | |
+| 4. Forderungen gegen verbundene Unternehmen | 128.806,73 | | 6.567,58 | |
+| 5. Sonstige Vermögensgegenstände | 815.832,49 | 15.749.265,97 | 1.176.030,16 | 9.256.384,12 |
+| **III. Kassenbestand, Guthaben bei Kreditinstituten** | | 351.219,23 | | 572.761,31 |
+| | | 18.258.466,43 | | 12.038.701,75 |
+| **C. Rechnungsabgrenzungsposten** | | 5.786.899,96 | | 6.675.373,19 |
+| **D. Aktive latente Steuern** | | 9.257.687,00 | | 9.257.687,00 |
+| | | **181.138.528,23** | | **196.996.316,23** |
+
+**Passiva**
+
+| | 31.12.2022 EUR | 31.12.2021 EUR |
+|---|---|---|
+| **A. Eigenkapital** | | |
+| **I. Gezeichnetes Kapital** | 2.500.000,00 | 2.500.000,00 |
+| **II. Kapitalrücklage** | 600.000,00 | 600.000,00 |
+| **III. Gewinnvortrag** | 68.727.567,88 | 83.337.412,83 |
+| **IV. Jahresfehlbetrag** | -24.679.279,91 | -14.609.844,95 |
+| | 47.148.287,97 | 71.827.567,88 |
+| **B. Rückstellungen** | | |
 
 --- pág. 5 ---
 
 UNTERNEHMENSREGISTER
 
-1. Steuerrückstellungen
-
-2. Sonstige Rückstellungen
-
-C. Verbindlichkeiten
-
-1. Verbindlichkeiten gegenüber Kreditinstituten
-
-2. Erhaltene Anzahlungen auf Bestellungen
-
-3. Verbindlichkeiten aus Lieferungen und Leistungen
-
-4. Verbindlichkeiten aus Transfer
-
-5. Verbindlichkeiten gegenüber Gesellschafter
-
-6. Sonstige Verbindlichkeiten
-
--- davon aus Steuern EUR 4.091.826,35 (i. Vj. EUR 6.031.545 ,74)--
-
--- davon im Rahmen der sozialen Sicherheit EUR 6.638,91 (i. Vj. EUR
-20.154,62)--
-
-D. Rechnungsabgrenzungsposten
-
-Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022
-
-1. Umsatzerlöse
-
-2. Sonstige betriebliche Erträge
-
-3. Materialaufwand
-
-Aufwendungen für bezogene Waren
-4. Personalaufwand
-
-a) Löhne und Gehälter
-
-b) Soziale Abgaben
-
-31.12.2022
-EUR
-403.486,00
-1.141.755,00
-1.545.241,00
-
-62.716.776,29
-70.000,00
-2.884.375,83
-19.202.021,89
-2.526.833,30
-8.810.537,11
-
-96.210.544,42
-36.234.454,84
-181.138.528,23
-
-(in der Gliederung nach $ 275 Abs. 2 HGB)
-
-01.01.-31.12.2022
-EUR EUR
-170.807.015,84
-6.485.636,95
-
-10.457.182,66
-
-95.811.057,28
-7.429.104,69 103.240.161,97
-
-01.01.-31.12.2021
-EUR
-
-94.307.254,78
-3.785.389,58
-
-31.12.2021
-EUR
-76.709,67
-1.140.350,00
-1.217.059,67
-
-80.355.433,67
-105.514,15
-2.764.560 23
-14.044.015,09
-1.573.547,99
-10.405 .493,85
-
-109.248.564,98
-14.700.123,70
-196.993.316,23
-
-EUR
-166.965.704,39
-2.204.595,62
-
-8.909.331,81
-
-98.092.644,36
-
-— Seite 5 von 16 —
+– Seite 5 von 16 –
 Tag der Erstellung : 13.10.2023
 Auszug aus dem Unternehmensregister
+
+| | 31.12.2022 EUR | 31.12.2021 EUR |
+|---|---|---|
+| 1. Steuerrückstellungen | 403.486,00 | 76.709,67 |
+| 2. Sonstige Rückstellungen | 1.141.755,00 | 1.140.350,00 |
+| | 1.545.241,00 | 1.217.059,67 |
+| **C. Verbindlichkeiten** | | |
+| 1. Verbindlichkeiten gegenüber Kreditinstituten | 62.716.776,29 | 80.355.433,67 |
+| 2. Erhaltene Anzahlungen auf Bestellungen | 70.000,00 | 105.514,15 |
+| 3. Verbindlichkeiten aus Lieferungen und Leistungen | 2.884.375,83 | 2.764.560,23 |
+| 4. Verbindlichkeiten aus Transfer | 19.202.021,89 | 14.044.015,09 |
+| 5. Verbindlichkeiten gegenüber Gesellschafter | 2.526.833,30 | 1.573.547,99 |
+| 6. Sonstige Verbindlichkeiten | 8.810.537,11 | 10.405.493,85 |
+| -- davon aus Steuern EUR 4.091.826,35 (i. Vj. EUR 6.031.545,74)-- | | |
+| -- davon im Rahmen der sozialen Sicherheit EUR 6.638,91 (i. Vj. EUR 20.154,62)-- | | |
+| | 96.210.544,42 | 109.248.564,98 |
+| **D. Rechnungsabgrenzungsposten** | 36.234.454,84 | 14.700.123,70 |
+| | **181.138.528,23** | **196.993.316,23** |
+
+# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022
+(in der Gliederung nach § 275 Abs. 2 HGB)
+
+| | 01.01.-31.12.2022 EUR | EUR | 01.01.-31.12.2021 EUR | EUR |
+|---|---|---|---|---|
+| 1. Umsatzerlöse | | 170.807.015,84 | | 166.965.704,39 |
+| 2. Sonstige betriebliche Erträge | | 6.485.636,95 | | 2.204.595,62 |
+| 3. Materialaufwand | | | | |
+| Aufwendungen für bezogene Waren | | 10.457.182,66 | | 8.909.331,81 |
+| 4. Personalaufwand | | | | |
+| a) Löhne und Gehälter | 95.811.057,28 | | 94.307.254,78 | |
+| b) Soziale Abgaben | 7.429.104,69 | 103.240.161,97 | 3.785.389,58 | 98.092.644,36 |
 
 --- pág. 6 ---
 
 UNTERNEHMENSREGISTER
 
-01.01.-31.12.2022
+– Seite 6 von 16 –
+Tag der Erstellung : 13.10.2023
+Auszug aus dem Unternehmensregister
 
-01.01.-31.12.2021
+| | 01.01.-31.12.2022 EUR | EUR | 01.01.-31.12.2021 EUR | EUR |
+|---|---|---|---|---|
+| 5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen | | 45.923.257,98 | | 45.630.778,63 |
+| 6. Sonstige betriebliche Aufwendungen | | 40.675.398,07 | | 33.145.493,96 |
+| 7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens | | 18,00 | | 48,00 |
+| 8. Sonstige Zinsen und ähnliche Erträge | 17.175,37 | | 21.610,60 | |
+| 9. Zinsen und ähnliche Aufwendungen | 1.525.072,67 | 1.507.897,30 | 1.607.167,65 | 1.585.557,05 |
+| --davon an verbundene Unternehmen EUR 48.396,83 (i. Vj. EUR 38.513,38)-- | | | | |
+| 10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag) | | -203.214,00 | | -3.627.210,84 |
+| --davon Aufwand aus latenten Steuern EUR 0,00 (i. Vj. EUR -2.835.953,00)-- | | | | |
+| **11. Ergebnis nach Steuern** | | **-24.308.013,19** | | **-14.566.246,96** |
+| 12. Sonstige Steuern | | 371.266,72 | | 43.597,99 |
+| **13. Jahresfehlbetrag** | | **-24.679.279,91** | | **-14.609.844,95** |
 
-EUR EUR EUR EUR
-5. Abschreibungen auf immaterielle Vermö- 45.923.257,98 45.630.778,63
-gensgegenstände des Anlagevermögens und
-Sachanlagen
-6. Sonstige betriebliche Aufwendungen 40.675.398,07 33.145.493,96
-7. Erträge aus anderen Wertpapieren und 18,00 48,00
-Ausleihungen des Finanzanlagevermögens
-8. Sonstige Zinsen und ähnliche Erträge 17.175,37 21.610,60
-9. Zinsen und ähnliche Aufwendungen 1.525.072,67 1.507.397,30 1.607.167,65 1.585.557 ,05
---davon an verbundene Unternehmen EUR
-48.396,83 (i. Vj. EUR 38.513,38)--
-10. Steuern vom Einkommen und vom Ertrag -203.214,00 -3.627.210,84
-(- = Steuerertrag)
---davon Aufwand aus latenten Steuern EUR
-0,00 (i. Vj. EUR -2.835.953 ,00)--
-11. Ergebnis nach Steuern -24.308.013,19 -14.566.246,96
-12. Sonstige Steuern 371.266,72 43.597,99
-13. Jahresfehlbetrag -24.679.279,91 -14.609.844,95
+# Anhang für das Geschäftsjahr 2022
 
-Anhang für das Geschäftsjahr 2022
-
-1. Vorbemerkung
+**1. Vorbemerkung**
 
 Der Jahresabschluss der Borussia VfL 1900 Mönchengladbach GmbH (kurz auch „Borussia GmbH“ oder „Gesellschaft“) für das Jahr 2022 wurde nach den Vorschriften des Handelsgesetzbuches für große Kapitalgesellschaften und des GmbH-Gesetzes aufgestellt.
-Die Gliederung der Bilanz entspricht grundsätzlich $ 266 HGB, wobei gemäß $ 265 Abs. 5 HGB einige Posten hinzugefügt wurden.
 
-Die Gewinn- und Verlustrechnung ist nach $ 275 Abs. 2 HGB aufgestellt.
+Die Gliederung der Bilanz entspricht grundsätzlich § 266 HGB, wobei gemäß § 265 Abs. 5 HGB einige Posten hinzugefügt wurden.
+
+Die Gewinn- und Verlustrechnung ist nach § 275 Abs. 2 HGB aufgestellt.
 
 Von der Möglichkeit, Berichtspflichten im Anhang anstatt in der Gewinn- und Verlustrechnung bzw. in der Bilanz zu erfüllen, wurde teilweise Gebrauch gemacht.
 
-Der Finanzmittelbedarf der Gesellschaft bis zum 30. Juni 2024 ist durch die bestehenden Kontokorrentlinien sowie durch Darlehenszusagen gesichert. Gemäß der für den handelsrechtlichen Prognosezeitraum erstellten Unternehmensplanung der Geschäftsführung geht
-die Gesellschaft davon aus, jederzeit ihren fälligen Zahlungsverpflichtungen nachkommen zu können. Der Jahresabschluss zum 31. Dezember 2022 ist daher unter der Prämisse der Unternehmensfortführung aufgestellt.
+Der Finanzmittelbedarf der Gesellschaft bis zum 30. Juni 2024 ist durch die bestehenden Kontokorrentlinien sowie durch Darlehenszusagen gesichert. Gemäß der für den handelsrechtlichen Prognosezeitraum erstellten Unternehmensplanung der Geschäftsführung geht die Gesellschaft davon aus, jederzeit ihren fälligen Zahlungsverpflichtungen nachkommen zu können. Der Jahresabschluss zum 31. Dezember 2022 ist daher unter der Prämisse der Unternehmensfortführung aufgestellt.
 
-2. Bilanzierungs- und Bewertungsgrundsätze
-Aktiva
-Anlagevermögen
+**2. Bilanzierungs- und Bewertungsgrundsätze**
 
-Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten werden mit den Anschaffungskosten bewertet und linear entsprechend ihrer voraussichtlichen Nutzungsdauern zwischen 3 und
-5 Jahren abgeschrieben. Der Posten beinhaltet ebenfalls die Anschaffungskosten aus der verbandsrechtlich abgesicherten, exklusiven Nutzungsmöglichkeit des Chef-Trainers. Diese Anschaffungskosten werden über die Vertragslaufzeit abgeschrieben. Für die aktivierte
+**Aktiva**
 
-— Seite 6 von 16 —
-Tag der Erstellung : 13.10.2023
-Auszug aus dem Unternehmensregister
+**Anlagevermögen**
+
+Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten werden mit den Anschaffungskosten bewertet und linear entsprechend ihrer voraussichtlichen Nutzungsdauern zwischen 3 und 5 Jahren abgeschrieben. Der Posten beinhaltet ebenfalls die Anschaffungskosten aus der verbandsrechtlich abgesicherten, exklusiven Nutzungsmöglichkeit des Chef-Trainers. Diese Anschaffungskosten werden über die Vertragslaufzeit abgeschrieben. Für die aktivierte
 
 --- pág. 7 ---
 
@@ -502,282 +347,162 @@ Auszug aus dem Unternehmensregister
 
 UNTERNEHMENSREGISTER
 
-Anlagevermögen
+– Seite 8 von 16 –
+Tag der Erstellung : 13.10.2023
+Auszug aus dem Unternehmensregister
+
+**Anlagevermögen**
 
 Die Entwicklung des Anlagevermögens geht aus dem Anlagenspiegel (Anlage 1 zum Anhang) hervor.
 
 Im Geschäftsjahr wurden außerplanmäßige Abschreibungen auf immaterielle Vermögensgegenstände in Höhe von EUR 5.673.611,13 vorgenommen.
+
 Die Finanzanlagen setzen sich wie folgt zusammen:
 
-Anteile an verbundenen Unternehmen:
+**Anteile an verbundenen Unternehmen:**
 
-Borussia Mönchengladbach (Shanghai) Sport Development Co. Ltd., Shanghai Eigenkapital zum 31. Dezember 2021: EUR 58.130,48 = CNY 419.684,66 Anteil am gezeichneten Kapital: EUR 300.000,00 = CNY 2.389.380,00 (=100 %) Das Geschäftsjahr 2021 wurde
-mit einem Jahresfehlbetrag in Höhe von EUR -175.438,09 = CNY -1.266.610,38 abgeschlossen. Ein Jahresabschluss für das Geschäftsjahr 2022 liegt noch nicht vor.
+Borussia Mönchengladbach (Shanghai) Sport Development Co. Ltd., Shanghai Eigenkapital zum 31. Dezember 2021: EUR 58.130,48 = CNY 419.684,66 Anteil am gezeichneten Kapital: EUR 300.000,00 = CNY 2.389.380,00 (=100 %) Das Geschäftsjahr 2021 wurde mit einem Jahresfehlbetrag in Höhe von EUR –175.438,09 = CNY -1.266.610,38 abgeschlossen. Ein Jahresabschluss für das Geschäftsjahr 2022 liegt noch nicht vor.
 
-Beteiligungen:
+**Beteiligungen:**
 
-PPG-Nordpark GmbH, Mönchengladbach Eigenkapital zum 31. Dezember 2021 insgesamt: EUR 6.051.486,29 Anteil am gezeichneten Kapital: EUR 9.850,00 (= 39,4 %) Das Geschäftsjahr 2021 wurde miteinem Jahresüberschuss in Höhe von EUR 25.367,27 abgeschlossen.
-Ein Jahresabschluss für das Geschäftsjahr 2022 liegt noch nicht vor.
+PPG-Nordpark GmbH, Mönchengladbach Eigenkapital zum 31. Dezember 2021 insgesamt: EUR 6.051.486,29 Anteil am gezeichneten Kapital: EUR 9.850,00 (= 39,4 %) Das Geschäftsjahr 2021 wurde mit einem Jahresüberschuss in Höhe von EUR 25.367,27 abgeschlossen. Ein Jahresabschluss für das Geschäftsjahr 2022 liegt noch nicht vor.
 
 Medical Park Borussia Mönchengladbach GmbH, Mönchengladbach Anteil am gezeichneten Kapital: EUR 325.000,00 (= 25 %) Eigenkapital zum 31. Dezember 2021 insgesamt: EUR 1.112.565,16
+
 Das Geschäftsjahr 2021 wurde mit einem Jahresfehlbetrag in Höhe von EUR 12.934,46 abgeschlossen. Ein Jahresabschluss für das Geschäftsjahr 2022 liegt noch nicht vor.
-Umlaufvermögen
+
+**Umlaufvermögen**
 
 Die Forderungen und sonstigen Vermögensgegenstände setzen sich wie folgt zusammen:
 
-31.12.2022 31.12.2021 Abgetretene Beträge
-
-TEUR TEUR TEUR
-
-1. Forderungen aus Lieferungen und Leistungen 5.559 7.897 0
-2. Forderungen aus Transfer 8.310 177 8.810
-3. Forderungen gegen Gesellschafter 435 0 0
-4. Forderungen gegen verbundene Unternehmen 129 6 0
-5. Sonstige Vermögensgegenstände 816 1.176 0
-15.749 9.256 8.810
+| | 31.12.2022 TEUR | 31.12.2021 TEUR | Abgetretene Beträge TEUR |
+|---|---|---|---|
+| 1. Forderungen aus Lieferungen und Leistungen | 5.559 | 7.897 | 0 |
+| 2. Forderungen aus Transfer | 8.810 | 177 | 8.810 |
+| 3. Forderungen gegen Gesellschafter | 435 | 0 | 0 |
+| 4. Forderungen gegen verbundene Unternehmen | 129 | 6 | 0 |
+| 5. Sonstige Vermögensgegenstände | 816 | 1.176 | 0 |
+| | 15.749 | 9.256 | 8.810 |
 
 Die Forderungen gegen dem Gesellschafter betreffen im Wesentlichen unterjährige Liquiditätsausgleiche sowie den internen Rechnungsverkehr.
 
 Die Forderungen gegen verbundene Unternehmen beinhaltet ein kurzfristiges Darlehen. Die abgetretenen Forderungen aus Transfer dienen zur Besicherung von Darlehensverbindlichkeiten.
+
 Alle Forderungen und sonstigen Vermögensgegenstände haben eine Restlaufzeit bis zu einem Jahr.
 
-Latente Steuern
+**Latente Steuern**
 
-Zum 31. Dezember 2022 ergab sich nach Verrechnung der aktiven mit den passiven latenten Steuern ein Überhang aktiver latenter Steuern in Höhe von TEUR 9.258 (31. Dezember 2021 TEUR 9.258). Passive latente Steuern in Höhe von TEUR 1.269 (31. Dezember 2021
-TEUR 1.188) entfallen im Wesentlichen auf temporäre Differenzen bei immateriellen Vermögensgegenständen und Verbindlichkeiten gegenüber dem Gesellschafter. Aktive latente Steuern bestehen in Höhe von TEUR 13.770 (31. Dezember 2021 TEUR 10.446) und
-entfallen auf Forderungen gegen den Gesellschafter, auf Grundstücke und Sachanlagen sowie auf Verbindlichkeiten aus Lieferungen und Leistungen. Des Weiteren werden aktive latente Steuern auf bestehende steuerliche Verlustvorträge gebildet, soweit es wahrscheinlich
-ist, dass künftige steuerliche Gewinne ausreichen, um diese Verlustvorträge innerhalb der nächsten fünf Jahre nutzen zu können. Eine über die bestehende Verlustverrechnung hinausgehende Nutzung von Verlustvorträgen in den nächsten fünf Jahren wird nicht erwartet,
-so dass keine Erhöhung des bilanzierten Wertes vorgenommen wurde. Der Bewertung lagen ein Körperschaftsteuersatz einschließlich Solidaritätszuschlag von 15,825% und ein Gewerbesteuersatz von 17,15%, kombiniert 32,975% (im Vorjahr 32,975%) zugrunde.
+Zum 31. Dezember 2022 ergab sich nach Verrechnung der aktiven mit den passiven latenten Steuern ein Überhang aktiver latenter Steuern in Höhe von TEUR 9.258 (31. Dezember 2021 TEUR 9.258). Passive latente Steuern in Höhe von TEUR 1.269 (31. Dezember 2021 TEUR 1.188) entfallen im Wesentlichen auf temporäre Differenzen bei immateriellen Vermögensgegenständen und Verbindlichkeiten gegenüber dem Gesellschafter. Aktive latente Steuern bestehen in Höhe von TEUR 13.770 (31. Dezember 2021 TEUR 10.446) und entfallen auf Forderungen gegen den Gesellschafter, auf Grundstücke und Sachanlagen sowie auf Verbindlichkeiten aus Lieferungen und Leistungen. Des Weiteren werden aktive latente Steuern auf bestehende steuerliche Verlustvorträge gebildet, soweit es wahrscheinlich ist, dass künftige steuerliche Gewinne ausreichen, um diese Verlustvorträge innerhalb der nächsten fünf Jahre nutzen zu können. Eine über die bestehende Verlustverrechnung hinausgehende Nutzung von Verlustvorträgen in den nächsten fünf Jahren wird nicht erwartet, so dass keine Erhöhung des bilanzierten Wertes vorgenommen wurde. Der Bewertung lagen ein Körperschaftsteuersatz einschließlich Solidaritätszuschlag von 15,825% und ein Gewerbesteuersatz von 17,15%, kombiniert 32,975% (im Vorjahr 32,975%) zugrunde.
 
 In den Steuern vom Einkommen und vom Ertrag ist ein latenter Steuerertrag in Höhe von TEUR 0 (im Vorjahr TEUR 2.836) enthalten.
 
-Der Gesamtbetrag nach $ 268 Abs. 8 HGB beträgt TEUR 9.258 (im Vorjahr TEUR 9.258).
-
-— Seite 8 von 16 —
-Tag der Erstellung : 13.10.2023
-Auszug aus dem Unternehmensregister
+Der Gesamtbetrag nach § 268 Abs. 8 HGB beträgt TEUR 9.258 (im Vorjahr TEUR 9.258).
 
 --- pág. 9 ---
 
 UNTERNEHMENSREGISTER
 
-Passiva
+– Seite 9 von 16 –
+Tag der Erstellung : 13.10.2023
+Auszug aus dem Unternehmensregister
 
-Rückstellungen
+**Passiva**
+
+**Rückstellungen**
 
 Die Steuerrückstellungen beinhalten Rückstellungen für Umsatzsteuer und Lohnsteuer für die Betriebsprüfung und deren Folgewirkung.
 
 Die sonstigen Rückstellungen beinhalten Rückstellungen für ausstehende Eingangsrechnungen sowie Personalrückstellungen.
 
-Verbindlichkeiten
+**Verbindlichkeiten**
 
 Die Fristigkeiten der Verbindlichkeiten sowie die Beträge der gesicherten Verbindlichkeiten ergeben sich aus dem folgenden Verbindlichkeitenspiegel:
 
-1. Verbindlichkeiten gegenüber Kre-
-ditinstituten
-
-2. Erhaltene Anzahlungen auf Bestel-
-lungen
-
-3. Verbindlichkeiten aus Lieferungen
-und Leistungen
-
-4. Verbindlichkeiten aus Transfer
-
-5. Verbindlichkeiten gegenüberGe-
-sellschafter
-
-6. Sonstige Verbindlichkeiten
+| | Gesamtbetrag 31.12.2022 (31.12.2021) TEUR | davon mit einer Restlaufzeit: bis zu 1 Jahr TEUR | von 1 - 5 Jahre TEUR | mehr als 5 Jahre TEUR | Gesicherte Beträge TEUR |
+|---|---|---|---|---|---|
+| 1. Verbindlichkeiten gegenüber Kreditinstituten | 62.717 | 18.403 | 17.586 | 26.728 | 61.217 |
+| | (80.355) | (31.879) | (17.207) | (31.269) | (78.855) |
+| 2. Erhaltene Anzahlungen auf Bestellungen | 70 | 70 | 0 | 0 | 0 |
+| | (105) | (105) | (0) | (0) | (0) |
+| 3. Verbindlichkeiten aus Lieferungen und Leistungen | 2.884 | 2.622 | 262 | 0 | 0 |
+| | (2.765) | (2.372) | (393) | (0) | (0) |
+| 4. Verbindlichkeiten aus Transfer | 19.202 | 12.955 | 6.247 | 0 | 0 |
+| | (14.044) | (10.536) | (3.508) | (0) | (0) |
+| 5. Verbindlichkeiten gegenüber Gesellschafter | 2.527 | 2.527 | 0 | 0 | 0 |
+| | (1.574) | (1.574) | (0) | (0) | (0) |
+| 6. Sonstige Verbindlichkeiten | 8.811 | 8.811 | 0 | 0 | 0 |
+| | (10.406) | (10.406) | (0) | (0) | (0) |
+| | 96.211 | 45.388 | 24.095 | 26.728 | 61.217 |
+| | (109.249) | (56.872) | (21.108) | (31.269) | (78.855) |
 
 (Vorjahreszahlen in Klammern)
 
 Zu Gunsten der Kreditinstitute sind Grundpfandrechte in Höhe von TEUR 61.217 bestellt. Darüber hinaus bestehen für die Verbindlichkeiten im üblichen Umfang weitere Sicherheiten wie Eigentumsvorbehalte.
 
-In den Verbindlichkeiten aus Lieferungen und Leistungen sind Verbindlichkeiten gegenüber verbundenen Unternehmen in Höhe TEUR 0 (i. Vj. TEUR 98) und gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht, in Höhe von TEUR 58 (i. Vj. TEUR
-
-127) enthalten.
-
-Gesamtbetrag 31.12.2022
-(31.12.2021)
-
-TEUR
-62.717
-
-(80.355)
-70
-
-(105)
-2.884
-
-(2.165)
-19.202
-(14.044)
-2.527
-
-(1.574)
-8.811
-(10.406)
-96.211
-(109.249)
-
-davon mit einer Restlaufzeit
-
-bis zu 1 Jahr
-TEUR
-18.403
-
-(31.879)
-70
-
-(105)
-2.622
-
-(2.372)
-12.955
-(10.536)
-2.527
-
-(1.574)
-8.811
-(10.406)
-45.388
-(56.872)
+In den Verbindlichkeiten aus Lieferungen und Leistungen sind Verbindlichkeiten gegenüber verbundenen Unternehmen in Höhe TEUR 0 (i. Vj. TEUR 98) und gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht, in Höhe von TEUR 58 (i. Vj. TEUR 127) enthalten.
 
 Die Verbindlichkeiten gegenüber dem Gesellschafter beinhalten ein Darlehen mit einer Laufzeit bis zum 01. Juli 2023.
 
-Passive Rechnungsabgrenzung
-
-von 1-5 Jahre
-TEUR
-17.586
-
-(17.207)
-)
-
-(0)
-262
-
-(893)
-6.247
-(3.508)
-0
-
-(0)
-
-0
-
-(0)
-24.095
-(21.108)
-
-mehr als 5 Jahre
-TEUR
-26.728
-
-(31.269)
-0
-
-(0)
-
-(0)
-
-(0)
-
-(0)
-
-0
-
-(0)
-26.728
-(31.269)
-
-Gesicherte Beträge
-TEUR
-61.217
-
-(18.855)
-0
-
-(0)
-0
-
-(0)
-0
-(0)
-0
-
-(0)
-
-0
-
-(0)
-61.217
-(18.855)
-
-— Seite 9 von 16 —
-
-Tag der Erstellung : 13.10.2023
-Auszug aus dem Unternehmensregister
+**Passive Rechnungsabgrenzung**
 
 --- pág. 10 ---
 
 UNTERNEHMENSREGISTER
 
-Die Rechnungsabgrenzungsposten betreffen im Wesentlichen Werbeeinnahmen, wovon TEUR 14.538 erst ab der Saison 2023/2024 erfolgswirksam werden, sowie Einnahmen aus Kartenverkäufen für die Rückrunde der Saison 2022/2023 in Höhe von TEUR 7.717. Des
-Weiteren wurden Rechnungsabgrenzungsposten für Baukostenzuschüsse gebildet, die analog der Nutzungsdauer des entsprechenden Anlagegutes aufgelöst werden. Hiervon werden TEUR 578 erst ab der Saison 2023/2024 erfolgswirksam.
+– Seite 10 von 16 –
+Tag der Erstellung : 13.10.2023
+Auszug aus dem Unternehmensregister
 
-4. Erläuterungen zur Gewinn- und Verlustrechnung
+Die Rechnungsabgrenzungsposten betreffen im Wesentlichen Werbeeinnahmen, wovon TEUR 14.538 erst ab der Saison 2023/2024 erfolgswirksam werden, sowie Einnahmen aus Kartenverkäufen für die Rückrunde der Saison 2022/2023 in Höhe von TEUR 7.717. Des Weiteren wurden Rechnungsabgrenzungsposten für Baukostenzuschüsse gebildet, die analog der Nutzungsdauer des entsprechenden Anlagegutes aufgelöst werden. Hiervon werden TEUR 578 erst ab der Saison 2023/2024 erfolgswirksam.
 
-Die Umsatzerlöse setzen sich im Wesentlichen zusammen aus Erlösen aus Spielbetrieb (TEUR 14.659), Werbung (TEUR 38.708), Fernseh- und Hörfunkverwertung (TEUR 65.403), Transfer (TEUR 20.527) sowie Handel (TEUR 18.953) und wurden im Wesentlichen
-in der Bundesrepublik Deutschland erzielt. Die Umsatzerlöse enthalten periodenfremde Erlöse von TEUR 284.
+**4. Erläuterungen zur Gewinn- und Verlustrechnung**
 
-In den sonstigen betrieblichen Erträgen des Geschäftsjahres sind öffentliche Zuwendungen in Höhe von TEUR 5.506 sowie periodenfremde Erträge in Höhe von TEUR 587 enthalten. Diese setzen sich im Wesentlichen aus Erstattungen für frühere Geschäftsjahre, der
-Herabsetzung von Einzelwertberichtigungen und aus der Auflösung von Rückstellung zusammen.
+Die Umsatzerlöse setzen sich im Wesentlichen zusammen aus Erlösen aus Spielbetrieb (TEUR 14.659), Werbung (TEUR 38.708), Fernseh- und Hörfunkverwertung (TEUR 65.403), Transfer (TEUR 20.527) sowie Handel (TEUR 18.953) und wurden im Wesentlichen in der Bundesrepublik Deutschland erzielt. Die Umsatzerlöse enthalten periodenfremde Erlöse von TEUR 284.
+
+In den sonstigen betrieblichen Erträgen des Geschäftsjahres sind öffentliche Zuwendungen in Höhe von TEUR 5.506 sowie periodenfremde Erträge in Höhe von TEUR 587 enthalten. Diese setzen sich im Wesentlichen aus Erstattungen für frühere Geschäftsjahre, der Herabsetzung von Einzelwertberichtigungen und aus der Auflösung von Rückstellung zusammen.
 
 Der Anstieg der sozialen Abgaben betrifft überwiegend Aufwendungen für die Berufsgenossenschaft und resultiert aus der systembedingten Aussetzung der Erhebung der Berufsgenossenschaftsbeiträge im Geschäftsjahr 2021.
+
 In den Aufwendungen des Geschäftsjahres sind periodenfremde Aufwendungen in Höhe von TEUR 285 enthalten.
 
 Die Steuern vom Einkommen und vom Ertrag beinhalten Ertragseffekte bei der Körperschaftsteuer und Gewerbesteuer in Höhe von TEUR 203 aufgrund der Betriebsprüfung für die Jahre 2017 bis 2019.
 
 Die sonstigen Steuern betreffen im Wesentlichen mit TEUR 327 Aufwendungen für Umsatzsteuer und Lohnsteuer aufgrund der Betriebsprüfung für die Jahre 2017 bis 2019.
 
-5. Arbeitnehmer
+**5. Arbeitnehmer**
 
 Die durchschnittliche Mitarbeiterzahl betrug
 
-2022 2021
-Kaderspieler 39 36
-Angestellte 347 321
-Aushilfen 749 638
-Summe 1.135 995
+| | 2022 | 2021 |
+|---|---|---|
+| Kaderspieler | 39 | 36 |
+| Angestellte | 347 | 321 |
+| Aushilfen | 749 | 638 |
+| Summe | 1.135 | 995 |
 
-6. Haftungsverhältnisse
+**6. Haftungsverhältnisse**
 
-Die Gesellschaft und der Borussia Verein für Leibesübungen 1900 e.V., Mönchengladbach, haben im Rahmen der Besicherung der Verbindlichkeiten gegenüber Kreditinstituten jeweils eine Gesamt-Buchgrundschuld bestellt. Zum Stichtag hat der Verein keine Verbind-
-lichkeiten gegenüber Kreditinstituten. Des Weiteren wurden zur Besicherung dieser Kredite alle Forderungen aus Transfer und Ansprüche der Gesellschaft abgetreten.
+Die Gesellschaft und der Borussia Verein für Leibesübungen 1900 e.V., Mönchengladbach, haben im Rahmen der Besicherung der Verbindlichkeiten gegenüber Kreditinstituten jeweils eine Gesamt-Buchgrundschuld bestellt. Zum Stichtag hat der Verein keine Verbindlichkeiten gegenüber Kreditinstituten. Des Weiteren wurden zur Besicherung dieser Kredite alle Forderungen aus Transfer und Ansprüche der Gesellschaft abgetreten.
 
-Die Gesellschaft haftet im Rahmen einer selbstschuldnerischen Höchstbürgschaft gegenüber der Stadtsparkasse Mönchengladbach in Höhe von TEUR 105 für ein Darlehen und in Höhe von TEUR 394 für einen Kontokorrentkredit der PPG Nordpark GmbH, Mönchen-
-gladbach. Aufgrund der positiven Vorjahresergebnisse und der positiven Liquiditätssituation der PPG Nordpark GmbH wird eine Inanspruchnahme als sehr gering eingestuft.
+Die Gesellschaft haftet im Rahmen einer selbstschuldnerischen Höchstbürgschaft gegenüber der Stadtsparkasse Mönchengladbach in Höhe von TEUR 105 für ein Darlehen und in Höhe von TEUR 394 für einen Kontokorrentkredit der PPG Nordpark GmbH, Mönchengladbach. Aufgrund der positiven Vorjahresergebnisse und der positiven Liquiditätssituation der PPG Nordpark GmbH wird eine Inanspruchnahme als sehr gering eingestuft.
 
 Die Haftungsverhältnisse werden zum Bilanzstichtag nicht passiviert, da es sich dem Grunde nach weder um eine Verbindlichkeit noch um eine Rückstellung handelt.
 
-7. Sonstige finanzielle Verpflichtungen
+**7. Sonstige finanzielle Verpflichtungen**
 
 Die Gesellschaft hat sonstige finanzielle Verpflichtungen in Höhe von TEUR 9.467 resultierend aus der Verpflichtung von ablösepflichtigen und ablösefreien Spielern sowie aufgrund von Vertragsverlängerungen mit Spielern.
-8. Sonstige Angaben
 
-Die Gesellschaft hat im Berichtsjahr Abschlussprüfungsleistungen (einschließlich prüferischer Durchsicht des Zwischenabschlusses) in Höhe von TEUR 109 sowie sonstige Prüfungsleistungen in Höhe von TEUR 1 jeweils zzgl. gesetzlicher Umsatzsteuer in Anspruch
-genommen. Des Weiteren bestanden Aufwendungen aus Steuerberatungsleistungen in Höhe von TEUR 84 sowie sonstiger Beratungsleistungen in Höhe von TEUR 41 zzgl. gesetzlicher Umsatzsteuer.
+**8. Sonstige Angaben**
+
+Die Gesellschaft hat im Berichtsjahr Abschlussprüfungsleistungen (einschließlich prüferischer Durchsicht des Zwischenabschlusses) in Höhe von TEUR 109 sowie sonstige Prüfungsleistungen in Höhe von TEUR 1 jeweils zzgl. gesetzlicher Umsatzsteuer in Anspruch genommen. Des Weiteren bestanden Aufwendungen aus Steuerberatungsleistungen in Höhe von TEUR 84 sowie sonstiger Beratungsleistungen in Höhe von TEUR 41 zzgl. gesetzlicher Umsatzsteuer.
 
 Mitglieder des Geschäftsführungsorgans waren:
+
 Herr Rolf Königs, Geschäftsführer AUNDE-Group, Mönchengladbach,
+
 Herr Stephan A.C. Schippers, Kaufmännischer Geschäftsführer, Mönchengladbach
 
 Herr Roland Virkus, Geschäftsführer Sport, Mönchengladbach, (seit 22. Februar 2022)
-
-— Seite 10 von 16 —
-Tag der Erstellung : 13.10.2023
-Auszug aus dem Unternehmensregister
 
 --- pág. 11 ---
 
@@ -841,323 +566,79 @@ Auszug aus dem Unternehmensregister
 
 UNTERNEHMENSREGISTER
 
-I. Immaterielle Vermögensgegen-
-stände
-
-1. Entgeltlich erworbene Konzessio-
-nen, gewerbliche Schutzrechte und
-ähnliche Rechte und Werte sowie Li-
-zenzen an solchen Rechten und Wer-
-ten
-
-2. Spieler werte
-Il. Sachanlagen
-
-1. Grundstücke, grundstücksgleiche
-Rechte und Bauten einschließlich der
-Bauten auf fremden Grundstücken
-
-2. Andere Anlagen, Betriebs- und Ge-
-schäftsausstattung
-
-3. Geleistete Anzahlungen und Anla-
-gen im Bau
-
-III. Finanzanlagen
-
-1. Anteile an verbundenen Unterneh-
-men
-
-2. Beteiligungen
-3. Sonstige Finanzanlagen
-
-Summe
-
-I. Immaterielle Vermögensgegen-
-stände
-
-1. Entgeltlich erworbene Konzessio-
-nen, gewerbliche Schutzrechte und
-ähnliche Rechte und Werte sowie Li-
-zenzen an solchen Rechten und Wer-
-ten
-
-2. Spieler werte
-Il. Sachanlagen
-
-1. Grundstücke, grundstücksgleiche
-Rechte und Bauten einschließlich der
-Bauten auf fremden Grundstücken
-
-Vortrag
-
-19.445.137,66
-
-211.416.642,17
-
-148.306.235,04
-
-14.697 .204,34
-
-157.000,00
-
-300.000,00
-
-2.442.840 ,00
-
-600,00
-396.765.659,21
-
-Vortrag
-
-10.688.322,67
-
-148.149.124,09
-
-58.309.542,43
-
-Zugänge
-
-0,00
-
-29.484.473 ,44
-
-2.201.747,81
-
-1.130.823,19
-
-69.098,49
-
-0,00
-
-0,00
-
-0,00
-32.886.142,93
-
-Abschreibungdes Geschäftsjahres
-
-1.795. 355,54
-
-32.294.038,76
-
-4.644.522,57
-
-Anschaffungs- und Herstellungskosten
-
-Umbuchungen
-
-0,00
-
-0,00
-
-0,00
-
-0,00
-
-0,00
-
-0,00
-
-0,00
-
-0,00
-
-0,00
-Kumulierte Abschreibungen
-
-A.o. Abschreibungdes Geschäfts-
-jahres
-
-5.673.611,13
-
-0,00
-
-0,00
-
-Abgänge
-
-292.667,87
-
-67.394.181,00
-
-0,00
-
-0,00
-
-0,00
-0,00
-67.686.848,87
-
-Abgänge
-
-282.231,13
-
-59.252.653,34
-
-0,00
-
-Stand31.12.2022
-
-19.152.469,79
-
-173.506.934,61
-
-150.507.982,85
-
-15.828.027,53
-
-226.098,49
-
-300.000,00
-
-2.442.840 ,00
-
-600,00
-361.964.953,27
-
-Stand 30.12.2022
-
-17.875.058,21
-
-121.190.509,51
-
-62.954.065,00
-
-- Seite 12 von 16 —
+– Seite 12 von 16 –
 Tag der Erstellung : 13.10.2023
 Auszug aus dem Unternehmensregister
+
+**Anschaffungs- und Herstellungskosten**
+
+| | Vortrag | Zugänge | Umbuchungen | Abgänge | Stand 31.12.2022 |
+|---|---|---|---|---|---|
+| **I. Immaterielle Vermögensgegenstände** | | | | | |
+| 1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten | 19.445.137,66 | 0,00 | 0,00 | 292.667,87 | 19.152.469,79 |
+| 2. Spielerwerte | 211.416.642,17 | 29.484.473,44 | 0,00 | 67.394.181,00 | 173.506.934,61 |
+| II. Sachanlagen | | | | | |
+| 1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken | 148.306.235,04 | 2.201.747,81 | 0,00 | 0,00 | 150.507.982,85 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 14.697.204,34 | 1.130.823,19 | 0,00 | 0,00 | 15.828.027,53 |
+| 3. Geleistete Anzahlungen und Anlagen im Bau | 157.000,00 | 69.098,49 | 0,00 | 0,00 | 226.098,49 |
+| **III. Finanzanlagen** | | | | | |
+| 1. Anteile an verbundenen Unternehmen | 300.000,00 | 0,00 | 0,00 | 0,00 | 300.000,00 |
+| 2. Beteiligungen | 2.442.840,00 | 0,00 | 0,00 | 0,00 | 2.442.840,00 |
+| 3. Sonstige Finanzanlagen | 600,00 | 0,00 | 0,00 | 0,00 | 600,00 |
+| Summe | 396.765.659,21 | 32.886.142,93 | 0,00 | 67.686.848,87 | 361.964.953,27 |
+
+**Kumulierte Abschreibungen**
+
+| | Vortrag | Abschreibung des Geschäftsjahres | A.o. Abschreibung des Geschäftsjahres | Abgänge | Stand 30.12.2022 |
+|---|---|---|---|---|---|
+| **I. Immaterielle Vermögensgegenstände** | | | | | |
+| 1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten | 10.688.322,67 | 1.795.355,54 | 5.673.611,13 | 282.231,13 | 17.875.058,21 |
+| 2. Spielerwerte | 148.149.124,09 | 32.294.038,76 | 0,00 | 59.252.653,34 | 121.190.509,51 |
+| II. Sachanlagen | | | | | |
+| 1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken | 58.309.542,43 | 4.644.522,57 | 0,00 | 0,00 | 62.954.065,00 |
 
 --- pág. 13 ---
 
 UNTERNEHMENSREGISTER
 
-2. Andere Anlagen, Betriebs- und Ge-
-schäftsausstattung
+– Seite 13 von 16 –
+Tag der Erstellung : 13.10.2023
+Auszug aus dem Unternehmensregister
 
-3. Geleistete Anzahlungen und Anla-
-gen im Bau
+**Kumulierte Abschreibungen**
 
-III. Finanzanlagen
+| | Vortrag | Abschreibung des Geschäftsjahres | A.o. Abschreibung des Geschäftsjahres | Abgänge | Stand 30.12.2022 |
+|---|---|---|---|---|---|
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 10.594.115,73 | 1.515.729,98 | 0,00 | 0,00 | 12.109.845,71 |
+| 3. Geleistete Anzahlungen und Anlagen im Bau | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| **III. Finanzanlagen** | | | | | |
+| 1. Anteile an verbundenen Unternehmen | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| 2. Beteiligungen | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| 3. Sonstige Finanzanlagen | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Summe | 227.741.104,92 | 40.249.646,85 | 5.673.611,13 | 59.534.884,47 | 214.129.478,43 |
 
-1. Anteile an verbundenen Unterneh-
-men
+**Buchwerte**
 
-2. Beteiligungen
-3. Sonstige Finanzanlagen
+| | EB-Wert | 31.12.2022 |
+|---|---|---|
+| **I. Immaterielle Vermögensgegenstände** | | |
+| 1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten | 8.756.814,99 | 1.277.411,58 |
+| 2. Spielerwerte | 63.267.518,08 | 52.316.425,10 |
+| II. Sachanlagen | | |
+| 1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken | 89.996.692,61 | 87.553.917,85 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 4.103.088,61 | 3.718.181,82 |
+| 3. Geleistete Anzahlungen und Anlagen im Bau | 157.000,00 | 226.098,49 |
+| **III. Finanzanlagen** | | |
+| 1. Anteile an verbundenen Unternehmen | 300.000,00 | 300.000,00 |
+| 2. Beteiligungen | 2.442.840,00 | 2.442.840,00 |
+| 3. Sonstige Finanzanlagen | 600,00 | 600,00 |
+| Summe | 169.024.554,29 | 147.835.474,84 |
 
-Summe
-
-I. Immaterielle Vermögensgegenstände
-
-Vortrag
-10.594.115,73
-
-0,00
-0,00
-227.741.104,92
-
-1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnli-
-che Rechte und Werte sowie Lizenzen an solchen Rechten und Werten
-
-2. Spieler werte
-
-Il. Sachanlagen
-
-1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der
-
-Bauten auf fremden Grundstücken
-
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung
-
-3. Geleistete Anzahlungen und Anlagen im Bau
-
-III. Finanzanlagen
-
-1. Anteile an verbundenen Unternehmen
-2. Beteiligungen
-
-3. Sonstige Finanzanlagen
-
-Summe
-
-Kumulierte Abschreibungen
-
-A.o. Abschreibungdes Geschäfts-
-
-Abschreibungdes Geschäftsjahres
-
-jahres
-
-1.515.729,98 0,00
-
-0,00 0,00
-
-0,00 0,00
-
-0,00 0,00
-
-0,00 0,00
-
-40.249 .646,85 5.673.611,13
-Buchwerte
-
-EB-Wert
-
-8.756.814,99
-
-63.267.518,08
-
-89.996.692,61
-
-4.103.088,61
-157.000,00
-
-300.000,00
-2.442.840,00
-
-600,00
-
-169.024.554,29
-
-Abgänge Stand 30.12.2022
-0,00 12.109.845 ,71
-
-0,00 0,00
-
-0,00 0,00
-
-0,00 0,00
-
-0,00 0,00
-59.534.884,47 214.129.478,43
-31.12.2022
-
-1.277.411,58
-
-52.316.425,10
-
-87.553.917,85
-
-3.718.181,82
-226.098,49
-
-300.000,00
-2.442.840 ,00
-600,00
-147.835.474,84
-
-Bestätigungsvermerk des unabhängigen Abschlussprüfers
+# Bestätigungsvermerk des unabhängigen Abschlussprüfers
 
 An die Borussia VfL 1900 Mönchengladbach GmbH, Mönchengladbach
 
-Prüfungsurteile
-
-— Seite 13 von 16 —
-Tag der Erstellung : 13.10.2023
-Auszug aus dem Unternehmensreg
-
-ister
+**Prüfungsurteile**
 
 --- pág. 14 ---
 
