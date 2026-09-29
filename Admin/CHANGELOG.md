@@ -62,6 +62,14 @@ que dice `ESTADO.md` era verdad ese día.
     la "diferencia" daba exactamente el total). Ahora, si no cierra, prueba sin las filas en negrita y solo con ellas
     (cierre exacto obligatorio), y tolera ±redondeo en documentos de importes enteros. Fallos falsos en los 21: 244 -> 107;
     los que quedan son totales encadenados/jerárquicos sin negrita (límite conocido), y las cuentas de los documentos cierran a mano.
+  - `tools/extract-table-rows.mjs` `RELEVANT_KEYWORDS`: solo reconocía ingresos/gastos en ES/IT/EN/NO/GR sin acentos, así que en
+    balances en alemán, croata, francés/neerlandés, danés y portugués no marcaba NINGUNA tabla como relevante y el precedente de
+    categorías se omitía en silencio (0 de 13-35 tablas en Mönchengladbach, Hamburger, Dinamo, Gorica, Anderlecht). Ampliada y
+    comparada sin acentos/diéresis: pasan a 2-12 tablas relevantes y calculan precedente.
+  - Probado y DESCARTADO (revertido): ignorar en `suggest-category-precedent.mjs` las palabras genéricas de un club para el nivel
+    PARECIDO. No arregló el caso real (Dinamo: "Prihodi od ulaznica" = entradas, emparejado con derechos de TV "Prihodi od prava
+    emitiranja" al 50%) y empeoró Ferro (más emparejamientos entre ingreso y egreso del mismo nombre). PARECIDO seguirá siendo baja
+    confianza por diseño; la mejora de fondo es Jev (to-do 99).
 
 
 ## Versión 304 — `tools/claude-api-transcribe.mjs`: la 3ra API conectada de verdad (Claude, API directa), y el paso 2 del HTML al día

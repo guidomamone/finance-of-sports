@@ -131,23 +131,37 @@ function detectNumberFormat(text) {
   return { format: labels[winners[0]], evidence: counts };
 }
 
-// Palabras clave de ingresos/gastos, multi-idioma (ES/IT/EN vistos en el
-// corpus hasta ahora). Se usa para MARCAR relevancia, no para descartar filas
-// — con --relevant se filtra, pero por default se conserva todo (una palabra
-// clave que falta para un idioma nuevo no puede perder datos en silencio).
+// Palabras clave de ingresos/gastos, multi-idioma. Se usa para MARCAR relevancia, no para descartar filas
+// — con --relevant se filtra, pero por default se conserva todo (una palabra clave que falta para un idioma
+// nuevo no puede perder datos en silencio).
+// AMPLIADA el 2026-09-29: al correr prepare-onboarding sobre los 21 documentos del piloto del inventario, los balances
+// en ALEMÁN (Mönchengladbach, Hamburger), CROATA (Dinamo, Gorica), GRIEGO con acentos, FRANCÉS/NEERLANDÉS (Anderlecht)
+// y DANÉS no marcaban NINGUNA tabla como relevante (0 de 13-35), así que el precedente de categorías se saltaba en silencio.
+// Los términos se comparan sin acentos ni diéresis (normalizeText), así "αποτέλεσμα"/"αποτελεσμα", "résultat"/"resultat"
+// y "omsætning"/"omsaetning" no necesitan una entrada por variante.
 const RELEVANT_KEYWORDS = [
   // resultado / income statement
-  'resultado', 'conto economico', 'income statement', 'profit and loss', 'regnskap',
-  'resultatregnskap', 'αποτελεσμα',
+  'resultado', 'conto economico', 'income statement', 'profit and loss', 'regnskap', 'resultatregnskap',
+  'αποτελεσμα', 'gewinn- und verlust', 'gewinn und verlust', 'guv', 'ergebnis', 'erfolgsrechnung',
+  'racun dobiti', 'dobiti i gubitka', 'compte de resultat', 'resultatenrekening', 'resultatopgor', 'resultatopgo',
+  'demonstracao do resultado', 'demonstracao de resultado', 'profit or loss', 'comprehensive income', 'statement of operations',
   // ingresos
-  'recaudac', 'ingreso', 'recurso', 'cuota', 'venta', 'ricavi', 'proventi', 'revenue',
-  'income', 'inntekt', 'εσοδα',
+  'recaudac', 'ingreso', 'recurso', 'cuota', 'venta', 'ricavi', 'proventi', 'revenue', 'income', 'inntekt', 'εσοδα',
+  'umsatz', 'ertrag', 'ertraege', 'prihod', 'produits', 'opbrengst', 'omsaetning', 'indtaegt', 'receita', 'faturamento',
+  'vendas', 'sponsor', 'przychod', 'gelir', 'intaekt',
   // gastos
   'gasto', 'egreso', 'costo', 'costi', 'oneri', 'expense', 'cost', 'kostnad', 'εξοδα',
+  'aufwand', 'aufwend', 'rashod', 'troskov', 'charges', 'kosten', 'omkostning', 'udgift', 'despesa', 'custo', 'koszt', 'gider',
 ];
 
+// Minúsculas, sin acentos/diéresis y con los dígrafos alemanes/daneses reducidos a su forma sin signo.
+function normalizeText(t) {
+  return String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/ß/g, 'ss').replace(/æ/g, 'ae').replace(/ø/g, 'o').replace(/å/g, 'a').replace(/ð/g, 'd').replace(/ł/g, 'l');
+}
+
 function isLikelyRelevant(section, columns) {
-  const hay = `${section || ''} ${(columns || []).join(' ')}`.toLowerCase();
+  const hay = normalizeText(`${section || ''} ${(columns || []).join(' ')}`);
   return RELEVANT_KEYWORDS.some((kw) => hay.includes(kw));
 }
 
