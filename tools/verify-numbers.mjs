@@ -45,12 +45,12 @@ export function extractNumbers(text) {
 
 function pdfText(pdfPath) {
   // Buffer -> string a mano: pdftotext puede traer bytes raros y no queremos que nada explote.
-  const buf = execFileSync('pdftotext', ['-layout', pdfPath, '-'], { maxBuffer: 512 * 1024 * 1024 });
+  const buf = execFileSync('pdftotext', ['-layout', pdfPath, '-'], { maxBuffer: 512 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
   return buf.toString('utf8');
 }
 
 function pageCount(pdfPath) {
-  const out = execFileSync('pdfinfo', [pdfPath], { maxBuffer: 256 * 1024 * 1024 }).toString('latin1');
+  const out = execFileSync('pdfinfo', [pdfPath], { maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('latin1');
   const m = out.match(/^Pages:\s+(\d+)/m);
   return m ? Number(m[1]) : null;
 }

@@ -70,6 +70,13 @@ que dice `ESTADO.md` era verdad ese día.
     PARECIDO. No arregló el caso real (Dinamo: "Prihodi od ulaznica" = entradas, emparejado con derechos de TV "Prihodi od prava
     emitiranja" al 50%) y empeoró Ferro (más emparejamientos entre ingreso y egreso del mismo nombre). PARECIDO seguirá siendo baja
     confianza por diseño; la mejora de fondo es Jev (to-do 99).
+  - Piloto de 44: los `Syntax Error` que inundaban la terminal eran mensajes de poppler (`pdftotext`/`pdfinfo`) leyendo PDFs
+    dañados, no bugs del código; `execFileSync` los heredaba a la pantalla. Ahora se silencian (`stdio` sin stderr). Bug real
+    del mismo piloto: `qpdf` devuelve código 2 en un PDF dañado (DNCG Francia 2018-19) y el resolver lo marcaba `revisar`;
+    ahora cae a `pdfseparate` + `pdfunite` (poppler, más tolerante).
+  - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",
+    questions:{<nombre>:{type:"choice", instructions, criteria:{<categoría>:<descripción>}}}}`; devuelve `choice`, `confidence` y
+    `probabilities`. Docs: https://docs.typesafe.ai/ (índice en `/llms.txt`). Categorizar rubros NO es parte del pipeline actual.
 
 
 ## Versión 304 — `tools/claude-api-transcribe.mjs`: la 3ra API conectada de verdad (Claude, API directa), y el paso 2 del HTML al día

@@ -82,13 +82,13 @@ const sha1 = (p) => createHash('sha1').update(readFileSync(p)).digest('hex');
 const readJsonl = (p) => (existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : []);
 
 function pageCount(pdf) {
-  const m = execFileSync('pdfinfo', [pdf], { maxBuffer: 256 * 1024 * 1024 }).toString('latin1').match(/^Pages:\s+(\d+)/m);
+  const m = execFileSync('pdfinfo', [pdf], { maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('latin1').match(/^Pages:\s+(\d+)/m);
   return m ? Number(m[1]) : 0;
 }
 
 // Texto de cada página del PDF (pdftotext separa páginas con \f).
 function pdfPageTexts(pdf) {
-  const buf = execFileSync('pdftotext', ['-layout', pdf, '-'], { maxBuffer: 512 * 1024 * 1024 });
+  const buf = execFileSync('pdftotext', ['-layout', pdf, '-'], { maxBuffer: 512 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
   const parts = buf.toString('utf8').split('\f');
   if (parts.length && parts[parts.length - 1].trim() === '') parts.pop();
   return parts;
@@ -174,8 +174,25 @@ async function callEngine(engine, pdfAbs, suffix) {
 // qpdf devuelve 3 cuando el resultado es válido pero el PDF de origen tenía advertencias: es un ÉXITO
 // (BUG REAL del segundo piloto: Aalesund y Williams se marcaban como fallo por esto).
 function qpdfExtract(src, pagesSpec, out) {
-  const r = spawnSync('qpdf', [src, '--pages', '.', pagesSpec, '--', out]);
-  if ((r.status !== 0 && r.status !== 3) || !existsSync(out)) throw new Error(`qpdf falló (código ${r.status}) extrayendo ${pagesSpec}: ${String(r.stderr || '').slice(0, 200)}`);
+  const r = spawnSync('qpdf', [src, '--pages', '.', pagesSpec, '--', out], { stdio: 'ignore' });
+  if ((r.status === 0 || r.status === 3) && existsSync(out)) return;
+  // PDF DAÑADO (qpdf código 2, caso real del segundo piloto: DNCG Francia 2018-19, "file is damaged"): poppler es más
+  // tolerante. Se separan las páginas de a una y se vuelven a unir.
+  const pages = pagesSpec.split(',').flatMap((x) => { const m = x.match(/^(\d+)-(\d+)$/); return m ? Array.from({ length: m[2] - m[1] + 1 }, (_, i) => Number(m[1]) + i) : [Number(x)]; });
+  const dir = mkdtempSync(join(tmpdir(), 'poppler-'));
+  try {
+    const files = [];
+    for (const n of pages) {
+      const f = join(dir, `p${n}.pdf`);
+      spawnSync('pdfseparate', ['-f', String(n), '-l', String(n), src, f], { stdio: 'ignore' });
+      if (existsSync(f)) files.push(f);
+    }
+    if (files.length !== pages.length) throw new Error(`qpdf falló (código ${r.status}) y poppler solo pudo extraer ${files.length} de ${pages.length} páginas de ${pagesSpec}`);
+    if (files.length === 1) copyFileSync(files[0], out); else spawnSync('pdfunite', [...files, out], { stdio: 'ignore' });
+    if (!existsSync(out)) throw new Error(`qpdf falló (código ${r.status}) y pdfunite no generó el archivo para ${pagesSpec}`);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 }
 
 // Las APIs rechazan pedidos de más de ~32 MB (el PDF va en base64, +33%). Se agrupan las páginas pedidas en
