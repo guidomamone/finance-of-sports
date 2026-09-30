@@ -1,104 +1,90 @@
 --- pág. 1 ---
 
-# DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
-
+DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
 NIT 830.100.504 - 0
 
-# Estado de Situación Financiera Comparativo al 31 de Diciembre de 2022
-
+Estado de Situación Financiera Comparativo al 31 de Diciembre de 2022
 (Cifras en pesos Colombianos)
 
-|   | Nota | 31-dic.-22 | 31-dic.-21 | Var Relativa  |
-| --- | --- | --- | --- | --- |
-|  **ACTIVO CORRIENTE** |  | **1.096.085.728,09** | **660.637.103,75** | **65,9%**  |
-|  EFECTIVO Y EQUIVALENTES AL EFECTIVO | 1 | 427.673.999,09 | 360.306.998,75 | 18,7%  |
-|  CUENTAS POR COBRAR COMERCIALES | 2 | 480.491.066,00 | 300.330.105,00 | 60,0%  |
-|  ACTIVO POR IMPUESTO CORRIENTE | 4 | 187.920.661,00 | 0,00 |   |
+| | Nota | 31-dic.-22 | 31-dic.-21 | Var Relativa |
+|---|---|---|---|---|
+| **ACTIVO CORRIENTE** | | 1.096.085.726,09 | 660.637.103,75 | 65,9% |
+| EFECTIVO Y EQUIVALENTES AL EFECTIVO | 1 | 427.673.999,09 | 360.306.998,75 | 18,7% |
+| CUENTAS POR COBRAR COMERCIALES | 2 | 480.491.066,00 | 300.330.105,00 | 60,0% |
+| ACTIVO POR IMPUESTO CORRIENTE | 4 | 187.920.661,00 | 0,00 | |
+| **ACTIVO NO CORRIENTE** | | 2.932.601.977,41 | 2.852.397.040,41 | 2,8% |
+| OTRAS CUENTAS POR COBRAR | 3 | 2.782.968.247,41 | 2.693.730.447,41 | 3,3% |
+| PROPIEDAD PLANTA Y EQUIPO | 5 | 149.633.730,00 | 158.666.593,00 | -5,7% |
+| **TOTAL ACTIVO** | | 4.028.687.703,50 | 3.513.034.144,16 | 14,7% |
 
-|  **ACTIVO NO CORRIENTE** |  | **2.932.601.977,41** | **2.852.397.046,41** | **2,8%**  |
-| --- | --- | --- | --- | --- |
-|  OTRAS CUENTAS POR COBRAR | 3 | 2.782.968.247,41 | 2.693.730.447,41 | 3,3%  |
-|  PROPIEDAD PLANTA Y EQUIPO | 5 | 149.633.730,00 | 158.666.593,00 | -5,7%  |
+| | Nota | 31-dic.-22 | 31-dic.-21 | Var Relativa |
+|---|---|---|---|---|
+| **PASIVO CORRIENTE** | | 1.417.788.887,99 | 988.482.529,99 | 43,4% |
+| OBLIGACIONES FINANCIERAS | 6 | 332.138.004,00 | 274.376.247,00 | 21,1% |
+| ACREEDORES COMERCIALES | 7 | 3.828.822,00 | 3.828.822,00 | 0,0% |
+| OTROS ACREEDORES | 8 | 100.083.700,00 | 92.986.027,00 | 7,6% |
+| IMPUESTOS CORRIENTES POR PAGAR | 9 | 466.094.000,00 | 79.004.000,00 | 490,0% |
+| PASIVOS POR BENEFICIOS A EMPLEADOS | 10 | 93.697.056,99 | 116.340.128,99 | -19,5% |
+| OTROS PASIVOS | 11 | 421.947.305,00 | 421.947.305,00 | 0,0% |
+| **PASIVO NO CORRIENTE** | | 48.459.396,00 | 577.095.535,10 | -91,6% |
+| OBLIGACIONES FINANCIERAS | 6 | 48.459.396,00 | 577.095.535,00 | -91,6% |
+| PASIVO CUENTAS POR PAGAR SOCIOS | | 0,00 | 0,10 | |
+| **TOTAL PASIVO** | | 1.466.248.283,99 | 1.565.578.065,09 | -6,3% |
+| CAPITAL SUSCRITO Y PAGADO | 12 | 540.000.000,00 | 540.000.000,00 | 0,0% |
+| RESERVAS | 12 | 240.829.459,00 | 205.995.999,00 | 16,9% |
+| GANANCIAS ACUMULADAS | 12 | 1.165.994.634,17 | 853.125.480,07 | 36,7% |
+| RESULTADO DEL EJERCICIO | 12 | 615.615.326,34 | 348.334.600,00 | 76,7% |
+| **TOTAL PATRIMONIO** | | 2.562.439.419,51 | 1.947.456.079,07 | 31,6% |
+| **TOTAL PASIVO + PATRIMONIO** | | 4.028.687.703,50 | 3.513.034.144,16 | 14,7% |
 
-|  **TOTAL ACTIVO** |  | **4.028.687.703,50** | **3.513.034.144,16** | **14,7%**  |
-| --- | --- | --- | --- | --- |
-
-|   | Nota | 31-dic.-22 | 31-dic.-21 | Var Relativa  |
-| --- | --- | --- | --- | --- |
-|  **PASIVO CORRIENTE** |  | **1.417.798.887,99** | **908.462.329,99** | **43,4%**  |
-|  OBLIGACIONES FINANCIERAS | 6 | 332.138.004,00 | 274.376.247,00 | 21,1%  |
-|  ACREEDORES COMERCIALES | 7 | 3.828.822,00 | 3.828.822,00 | 0,0%  |
-|  OTROS ACREEDORES | 8 | 100.083.700,00 | 92.986.027,00 | 7,6%  |
-|  IMPUESTOS CORRIENTES POR PAGAR | 9 | 466.094.000,00 | 79.004.000,00 | 490,0%  |
-|  PASIVOS POR BENEFICIOS A EMPLEADOS | 10 | 93.697.056,99 | 116.340.128,99 | -19,5%  |
-|  OTROS PASIVOS | 11 | 421.947.305,00 | 421.947.305,00 | 0,0%  |
-
-|  **PASIVO NO CORRIENTE** |  | **48.459.396,00** | **577.095.535,10** | **-91,6%**  |
-| --- | --- | --- | --- | --- |
-|  OBLIGACIONES FINANCIERAS | 6 | 48.459.396,00 | 577.095.535,00 | -91,6%  |
-|  PASIVO CUENTAS POR PAGAR SOCIOS |  | 0,00 | 0,10 |   |
-|  **TOTAL PASIVO** |  | **1.466.248.283,99** | **1.565.576.065,09** | **-6,3%**  |
-
-|  CAPITAL SUSCRITO Y PAGADO | 12 | 540.000.000,00 | 540.000.000,00 | 0,0%  |
-| --- | --- | --- | --- | --- |
-|  RESERVAS | 12 | 240.829.459,00 | 205.995.999,00 | 16,9%  |
-|  GANANCIAS ACUMULADAS | 12 | 1.165.994.634,17 | 853.125.480,07 | 36,7%  |
-|  RESULTADO DEL EJERCICIO | 12 | 615.615.326,34 | 348.334.600,00 | 76,7%  |
-
-|  **TOTAL PATRIMONIO** |  | **2.562.439.419,51** | **1.947.456.079,07** | **31,6%**  |
-| --- | --- | --- | --- | --- |
-
-|  **TOTAL PASIVO + PATRIMONIO** |  | **4.028.687.703,50** | **3.513.034.144,16** | **14,7%**  |
-| --- | --- | --- | --- | --- |
-
-**Nicolas Pimentel Vallejo**
+Nicolas Pimentel Vallejo
 Representante Legal
 C.C. No. 1.136.879.954 de Bogota D.C.
 
-**Alvaro Alfonso Cuello Hoyos**
+Alvaro Alfonso Cuello Hoyos
 Contador Publico TP 218811 - T
 C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-**Oscar German Aranguren Aranguren**
+Oscar German Aranguren Aranguren
 Revisor Fiscal TP 36278 - T
 C.C. No. 9.527.877 de Sogamoso Boyaca
 
 --- pág. 2 ---
 
-# DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+NIT 830.100.504 - 0
 
-NIT 830.100.584 - 0
-
-# **Estado del resultado integral y ganancias acumuladas comparativos, para el período terminado al 31 de Diciembre de 2.022**
+Estado del resultado integral y ganancias acumuladas comparativos, para el periodo terminado al 31 de Diciembre de 2.022
 (Cifras en pesos Colombianos)
 
-|   | *Nota* | 44.926,00 | 31-dic.-21 | Var Relativa  |
-| --- | --- | --- | --- | --- |
-|  **INGRESOS OPERACIONALES** |  | **5.813.263.552,00** | **5.643.756.579** |   |
-|  Ingresos Operacionales-Actividades Deportivas | 13 | 5.813.263.552,00 | 5.643.756.579 | 3,0%  |
-|  **COSTO DE VENTAS** | **14** | **4.146.519.800,66** | **4.220.732.308** | **-1,8%**  |
-|  **Ganancia bruta** |  | **1.666.743.751,34** | **1.423.024.271** | **17,1%**  |
-|  Otros ingresos | 15 | 57.934.093,00 | 89.667.180 | -35,4%  |
-|  Gastos de administración | 16 | 628.305.881,00 | 773.158.677 | -18,7%  |
-|  Otros gastos | 17 | 85.096.637,00 | 177.361.174 | -52,0%  |
-|  **Ganancia antes de impuestos** |  | **1.011.275.326,34** | **562.171.600** | **79,9%**  |
-|  Gasto por impuesto a las ganancias |  | **395.660.000,00** | **213.837.000** | **85,0%**  |
-|  **Ganancia del año** |  | **615.615.326,34** | **348.334.600** | **76,7%**  |
-|  Ganancia acumulada al inicio del período |  | 1.201.460.080,07 | 853.125.480 |   |
-|  Ganancia al inicio del período por adopción NIIF |  | 0,00 | 0 |   |
-|  (-) Reservas |  | 0,00 | 0 |   |
-|  (-) Distribución de utilidades |  | 0,00 | 0 |   |
-|  (+) Ajustes |  | 0,00 | 0 |   |
+| | Nota | 44.926,00 | 31-dic.-21 | Var Relativa |
+|---|---|---|---|---|
+| **INGRESOS OPERACIONALES** | | 5.813.263.552,00 | 5.643.756.579 | |
+| Ingresos Operacionales-Actividades Deportivas | 13 | 5.813.263.552,00 | 5.643.756.579 | 3,0% |
+| **COSTO DE VENTAS** | 14 | 4.146.519.800,66 | 4.220.732.308 | -1,8% |
+| **Ganancia bruta** | | 1.666.743.751,34 | 1.423.024.271 | 17,1% |
+| Otros ingresos | 15 | 57.934.093,00 | 89.667.180 | -35,4% |
+| Gastos de administración | 16 | 628.305.881,00 | 773.158.677 | -18,7% |
+| Otros gastos | 17 | 85.096.637,00 | 177.361.174 | -52,0% |
+| **Ganancia antes de impuestos** | | 1.011.275.326,34 | 562.171.600 | 79,9% |
+| Gasto por impuesto a las ganancias | | 395.660.000,00 | 213.837.000 | 85,0% |
+| **Ganancia del año** | | 615.615.326,34 | 348.334.600 | 76,7% |
+| Ganancia acumulada al inicio del período | | 1.201.460.080,07 | 853.125.480 | |
+| Ganancia al inicio del período por adopción NIIF | | 0,00 | 0 | |
+| (-) Reservas | | 0,00 | 0 | |
+| (-) Distribución de utilidades | | 0,00 | 0 | |
+| (-+) Ajustes | | 0,00 | 0 | |
+| Ganancias acumuladas al final del ejercicio | | 1.817.075.406,41 | 1.201.460.080 | |
 
-**Nicolas Pimentel Vallejo**
+Nicolas Pimentel Vallejo
 Representante Legal
 C.C. No. 1.136.879.954 de Bogota D.C.
 
-**Alvaro Alfonso Cuello Hoyos**
+Alvaro Alfonso Cuello Hoyos
 Contador Publico TP 218811 - T
 C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-**Oscar German Aranguren Aranguren**
+Oscar German Aranguren Aranguren
 Revisor Fiscal TP 36278 - T
 C.C. No. 9.527.877 de Sogamoso Boyaca
 
@@ -477,68 +463,68 @@ Las ventas se dividen en varias unidades económicas; ventas por derechos deport
 
 --- pág. 10 ---
 
-# **NOTA 14: Costos de ventas**
+**NOTA 14: Costos de ventas**
 
-El Costo de Ventas se determina y es reconocido por los egresos incurridos directamente por la obtención de los ingresos percibidos del Club.
+El Costo de Ventas se determina y es reconocido por los egresos incurridos directamente par la obtencion de los ingresos persibidos del Club.
 
-|   | **31-dic.-22** | **31-dic.-21**  |
-| --- | --- | --- |
-|  Costos de Personal y Jugadores | 1.352.254.380,00 | 1.281.602.831,00  |
-|  Partidos y Actividades Deportivas | 2.507.732.359,66 | 2.307.105.430,00  |
-|  Honorarios y Arriendos | 286.533.061,00 | 632.024.047,00  |
-|  **Total...** | **4.146.519.800,66** | **4.220.732.308,00**  |
+| | 31-dic.-22 | 31-dic.-21 |
+|---|---|---|
+| Costos de Personal y Jugadores | 1.352.254.380,00 | 1.281.602.831,00 |
+| Partidos y Actividades Deportivas | 2.507.732.359,66 | 2.307.105.430,00 |
+| Honorarios y Arriendos | 286.533.061,00 | 632.024.047,00 |
+| **Total……………………………….** | **4.146.519.800,66** | **4.220.732.308,00** |
 
-# **NOTA 15: Otros ingresos**
+**NOTA 15: Otros ingresos**
 
 Estos son ingresos que se originan en el desarrollo normal de la empresa pero que no son generados directamente por la actividad productora de renta. Su composición es la siguiente:
 
-|   | **31-dic.-22** | **31-dic.-21**  |
-| --- | --- | --- |
-|  Subsidos Estatales PAEF | 57.929.578,00 | 89.665.000,00  |
-|  Diversos | 4.514,00 | 2.180,00  |
-|  **Total...** | **57.934.093,00** | **89.667.180,00**  |
+| | 31-dic.-22 | 31-dic.-21 |
+|---|---|---|
+| Subsidios Estatales PAEF | 57.929.579,00 | 89.665.000,00 |
+| Diversos | 4.514,00 | 2.180,00 |
+| **Total……………………………….** | **57.934.093,00** | **89.667.180,00** |
 
-# **NOTA 16: Gastos de administración**
+**NOTA 16: Gastos de administración**
 
-Estan representados en los gastos incurridos dentro del periodo grabable, los cuales se hicieron necesarios para la ejecución del proceso normal de las operaciones comerciales, como lo fueron los gastos de todo el personal administrativo, los gastos por arrendamientos de la oficina principal, servicios públicos, contribuciones y afiliaciones, gastos legales, mantenimiento y reparación, seguros, gastos diversos y el valor de depreciación incurrida dentro del periodo.
+Estan representados en los gastos incurridos dentro del periodo grabable, los cuales se hicieron necesarios para la ejecución del proceso normal de las operaciones comerciales, como lo fueron los gastos de todo el personal administrativo, los gastos por arrendamientos de la oficina principal, servicios públicos, contribuciones y afiliaciones, gastos legales, matenimiento y reparación, seguros, gastos diversos y el valor de depreciación incurrida dentro del periodo.
 
-|   | **31-dic.-22** | **31-dic.-21**  |
-| --- | --- | --- |
-|  Gastos de Personal | 315.808.044,00 | 251.140.839,00  |
-|  Honorarios | 199.495.508,00 | 218.989.026,00  |
-|  Impuestos | 36.211.990,00 | 215.884,00  |
-|  Arrendamientos | 33.277.310,00 | 46.789.680,00  |
-|  Seguros | 2.553.707,00 | 428.484,00  |
-|  Servicios | 17.022.629,00 | 10.910.296,00  |
-|  Gastos Legales | 2.208.887,00 | 1.676.300,00  |
-|  Mantenimiento y Reparaciones | 3.311.143,00 | -  |
-|  Adecuación e Instalaciones | - | -  |
-|  Gastos de Viaje | 1.216.800,00 | 1.141.000,00  |
-|  Amortizaciones | - | 186.741.200,00  |
-|  Depreciación | 12.531.863,00 | 17.931.863,00  |
-|  Diversos | 4.668.000,00 | 37.197.105,00  |
-|  **Total...** | **628.305.881,00** | **773.158.677,00**  |
+| | 31-dic.-22 | 31-dic.-21 |
+|---|---|---|
+| Gastos de Personal | 315.808.044,00 | 251.140.839,00 |
+| Honorarios | 199.495.508,00 | 218.989.026,00 |
+| Impuestos | 36.211.990,00 | 215.884,00 |
+| Arrendamientos | 33.277.310,00 | 46.789.680,00 |
+| Seguros | 2.553.707,00 | 425.484,00 |
+| Servicios | 17.022.629,00 | 10.910.296,00 |
+| Gastos Legales | 2.208.887,00 | 1.676.300,00 |
+| Mantenimiento y Reparaciones | 3.311.143,00 | - |
+| Adecuación e Instalaciones | - | - |
+| Gastos de Viaje | 1.216.800,00 | 1.141.000,00 |
+| Amortizaciones | - | 186.741.200,00 |
+| Depreciación | 12.531.863,00 | 17.931.863,00 |
+| Diversos | 4.668.000,00 | 37.197.105,00 |
+| **Total……………………………….** | **628.305.881,00** | **773.158.677,00** |
 
-# **NOTA 17: Otros Gastos**
+**NOTA 17: Otros Gastos**
 
 Esta cuenta esta representada por los gastos financieros, como intereses, comisiones y GMF, gastos extraordinarios como retenciones asumidas, y diversos gastos necesarios en el proceso normal de las operaciones comerciales.
 
-|   | **31-dic.-22** | **31-dic.-21**  |
-| --- | --- | --- |
-|  Financieros | 54.278.918,00 | 91.659.121,00  |
-|  Gastos extraordinarios | - | 19.413.806,00  |
-|  Gastos diversos | 30.817.719,00 | 66.288.247,00  |
-|  **Total...** | **85.096.637,00** | **177.361.174,00**  |
+| | 31-dic.-22 | 31-dic.-21 |
+|---|---|---|
+| Financieros | 54.278.918,00 | 91.659.121,00 |
+| Gastos extraordinarios | - | 19.413.806,00 |
+| Gastos diversos | 30.817.719,00 | 66.288.247,00 |
+| **Total……………………………….** | **85.096.637,00** | **177.361.174,00** |
 
-**Nicolas Pimentel Vallejo**
+Nicolas Pimentel Vallejo
 Representante Legal
 C.C. No. 1.136.879.954 de Bogota D.C.
 
-**Alvaro Alfonso Cuello Hoyos**
-Contador Público TP 218811 - T
-C.C. No. 1.102.798.113 de Sincalajo Sucre
+Alvaro Alfonso Cuello Hoyos
+Contador Publico TP 218811 - T
+C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-**Oscar German Aranguren Aranguren**
+Oscar German Aranguren Aranguren
 Revisor Fiscal TP 36278 - T
 C.C. No. 9.527.877 de Sogamoso Boyaca
 

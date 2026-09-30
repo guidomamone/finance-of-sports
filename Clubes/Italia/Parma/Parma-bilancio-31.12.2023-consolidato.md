@@ -791,23 +791,40 @@ Le operazioni che danno origine a partite di debito e credito, di costo e di ric
 
 --- pág. 21 ---
 
+23
+
 proventi, intercorse con la società consolidata con il metodo integrale, sono eliminate. In particolare, sono eliminati eventuali utili non ancora realizzati, derivanti da operazioni fra le società consolidate, inclusi alla data di Bilancio nella valutazione delle rimanenze di magazzino e delle immobilizzazioni.
 
 Eventuali dividendi distribuiti dalle partecipazioni consolidate, contabilizzati come proventi da partecipazioni nel conto economico della controllante, sono eliminati contro la voce “utili portati a nuovo”.
 
-A seguito dell’incorporazione di Parma Calcio 2022 S.r.l. in Parma Calcio 1913 S.r.l, l’unica società inclusa nel consolidamento è Parma Calcio Servizi S.r.l a socio unico la quale è sub-concessionaria dello Stadio Tardini in ragione dell’aggiudicazione di una gara d’appalto emanata da Parma Infrastrutture SpA concessionaria del Comune di Parma per lo Stadio Tardini (atto del 28/02/2017 prot. n°2017833). Esiste, inoltre, un accordo tra Parma Calcio Servizi S.r.l. e Parma Calcio 1913 S.r.l. avente ad oggetto la subconcessione dello Stadio stesso nonché l’attività di manutenzione del medesimo così come previsto dalla gara d’appalto sopra menzionata. Parma Calcio 1913 S.r.l. esercita la direzione e coordinamento sulla partecipata.
+A seguito dell’incorporazione di Parma Calcio 2022 S.r.l. in Parma Calcio 1913 S.r.l, l’unica società inclusa nel consolidamento è Parma Calcio Servizi S.r.l a socio unico la quale è sub-concessionaria dello Stadio Tardini in ragione dell'aggiudicazione di una gara d'appalto emanata da Parma Infrastrutture SpA concessionaria del Comune di Parma per lo Stadio Tardini (atto del 28/02/2017 prot. n°2017833). Esiste, inoltre, un accordo tra Parma Calcio Servizi S.r.l. e Parma Calcio 1913 S.r.l. avente ad oggetto la subconcessione dello Stadio stesso nonché l'attività di manutenzione del medesimo così come previsto dalla gara d'appalto sopra menzionata. Parma Calcio 1913 S.r.l. esercita la direzione e coordinamento sulla partecipata.
 
-Il presente Bilancio Consolidato è redatto in unità di euro, senza cifre decimali, come previsto dall’articolo 16, comma 8, D.Lgs. n°213/98 e dall’articolo 2423, comma 5, del Codice civile. Tutti gli importi espressi in unità di euro sono stati arrotondati, all’unità inferiore se inferiori a 0,5 euro e all’unità superiore se pari o superiori a 0,5.
+Il presente Bilancio Consolidato è redatto in unità di euro, senza cifre decimali, come previsto dall’articolo 16, comma 8, D.Lgs. n°213/98 e dall’articolo 2423, comma 5, del Codice civile.
+
+Tutti gli importi espressi in unità di euro sono stati arrotondati, all’unità inferiore se inferiori a 0,5 euro e all’unità superiore se pari o superiori a 0,5.
 
 Le Società incluse nel consolidamento sono Parma Calcio Servizi S.r.l a socio unico avente capitale sociale pari ad euro 10.000 partecipata al 100%.
 
-# AREA DI CONSOLIDAMENTO
-
-![img-1.jpeg](img-1.jpeg)
+AREA DI CONSOLIDAMENTO
 
 Parma Calcio 1913 S.r.l. e Parma Calcio Servizi S.r.l. costituiscono, pertanto, il Gruppo.
 
-23
+```
++--------------------------------------------+
+|          Parma Calcio 1913 S.r.l.          |
+|        Capitale Sociale: Euro 150.000      |
+| Sede legale a Parma: in Borgo Venti Marzo 4|
++--------------------------------------------+
+                      |
+                      | 100%
+                      v
++--------------------------------------------+
+|     Parma Calcio Servizi S.r.l. a          |
+|                 socio unico                |
+|         Capitale Sociale: Euro 10.000      |
+| Sede legale a Parma: in Borgo Venti Marzo 4|
++--------------------------------------------+
+```
 
 --- pág. 22 ---
 
@@ -1500,85 +1517,97 @@ Oliver Anthony Krause
 
 --- pág. 44 ---
 
-4
+Appendice VII - Tabella di movimentazione dei diritti pluriennali alle prestazioni dei giocatori
 
-4
+Aggiornamento alla data del: 31/12/2023
 
-Appendix VII. Colección de procedimientos de494 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la668 de la
+Valore inizio periodo: 01/01/2023 (colonne 1-3) | Variazioni valori di periodo (colonne 4-5) | Effetti economici del periodo (colonne 6-9)
 
-|  Candidato | Aggiornamento año de la 31/12/2013 | Candidato | Candidato |   | Preservar |   | Desplaz |   | Valora total de la 31/12/2013 |   | Valora total de la 31/12/2013 |   | Valora total de la 31/12/2013 |   | Valora total de la 31/12/2013 |   | Valora total de la 31/12/2013 |   | Valora total de la 31/12/2  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |   |  Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year | Date/Year  |
-|  1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1  |
-|  2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2  |
-|  3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3  |
-|  4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4  |
-|  5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5  |
-|  6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6  |
-|  7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7  |
-|  8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8  |
-|  9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9  |
-|  10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10  |
-|  11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11  |
-|  12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 12  |
-|  13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13 | 13  |
-|  14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14  |
-|  15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15 | 15  |
-|  16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16  |
-|  17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17 | 17  |
-|  18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18 | 18  |
-|  19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19 | 19  |
-|  20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20 | 20  |
-|  21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21 | 21  |
-|  22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22 | 22  |
-|  23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23 | 23  |
-|  24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24 | 24  |
-|  25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25 | 25  |
-|  26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26 | 26  |
-|  27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27 | 27  |
-|  28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28  |
-|  29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29 | 29  |
-|  30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30  |
-|  31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31 | 31  |
-|  32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 32  |
-|  33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33 | 33  |
-|  34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34 | 34  |
-|  35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35 | 35  |
-|  36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36 | 36  |
-|  37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37 | 37  |
-|  38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38 | 38  |
-|  39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39 | 39  |
-|  40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40 | 40  |
-|  41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41 | 41  |
-|  42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42 | 42  |
-|  43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43  |
-|  44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44 | 44  |
-|  45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45 | 45  |
-|  46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46 | 46  |
-|  47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47 | 47  |
-|  48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48 | 48  |
-|  49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49 | 49  |
-|  50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50  |
-|  51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51 | 51  |
-|  52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52 | 52  |
-|  53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53 | 53  |
-|  54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54 | 54  |
-|  55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55 | 55  |
-|  56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56 | 56  |
-|  57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57 | 57  |
-|  58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58 | 58  |
-|  59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59 | 59  |
-|  60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60 | 60  |
-|  61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61 | 61  |
-|  62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62 | 62  |
-|  63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 63  |
-|  64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64 | 64  |
-|  65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65 | 65  |
-|  66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66 | 66  |
-|  67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67 | 67  |
-|  68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68 | 68  |
-|  69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69 | 69  |
-|  70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70 | 70  |
+| Calciatore | Data nascita | Età | Data Inizio (Contratto) | Data Fine (Contratto) | Data Acquisto | Società (Provenienza) | Data Cessione | Società (Destinazione) | 1 Costo storico | 2 Fondo ammortamento | 3 Netto | 4 Acquisti | 5 Cessioni | 6 Ammort.ti | 7 F.do ammortamento utilizzo | 8 Svalutaz. | 9 Minus. |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Ansaldi Cristian Daniel | 20/09/86 | 37 | 22/08/22 | 30/06/24 | 22/08/22 | Svincolato | | | 275.000 | 115.974 | 159.026 | 80.000 | - | 199.244 | - | | - |
+| Borriello Francesco | 25/07/05 | 18 | 31/01/22 | 30/06/24 | 30/01/22 | CATANIA | | | 150.000 | 56.867 | 93.133 | - | - | 62.145 | - | | - |
+| Basili Damiano | 02/02/04 | 19 | 09/08/21 | 30/06/25 | 09/08/21 | | | | 40.000 | 15.982 | 24.018 | 57.650 | - | 26.057 | - | | - |
+| Buffon Gianluigi | 28/01/78 | 45 | 01/07/21 | 30/06/24 | 01/07/21 | F.C. JUVENTUS SPA | 01/08/23 | | 600.000 | 349.632 | 250.368 | - | - | 97.035 | 446.667 | | 153.333 |
+| Castaldo Antonio | 14/02/06 | 17 | 07/09/20 | 30/06/25 | 07/09/20 | A.S. CITTADELLA S.R.L. | | | 15.000 | 6.418 | 8.582 | 5.000 | - | 4.527 | - | | - |
+| Cavazza Paolo | 17/01/03 | 20 | 02/09/19 | 30/06/23 | 02/09/19 | CARPI F.C. 1909 SRL | | | 220.000 | 172.157 | 47.843 | - | - | 9.495 | 181.652 | | 38.348 |
+| Cipolletti Davide | 30/03/01 | 22 | 31/01/20 | 30/06/24 | 31/01/20 | DELFINO PESCARA 1936 SPA | 31/01/23 | | 1.315.958 | 840.821 | 475.137 | - | - | 26.927 | 867.749 | | 448.209 |
+| Circati Alessandro | 10/10/03 | 20 | 10/01/22 | 30/06/27 | 10/01/22 | Svincolato | | | 128.671 | 51.602 | 77.069 | - | - | 29.155 | - | | - |
+| Corvi Edoardo | 23/03/01 | 22 | 01/07/20 | 30/06/25 | 01/07/20 | sett. Giovanile | | | 35.800 | 17.865 | 17.935 | 10.000 | - | 10.883 | - | | - |
+| Cucci Matteo | 20/02/01 | 22 | 31/01/20 | 30/06/24 | 31/01/20 | U.S. LECCE SPA | | | 720.000 | 475.131 | 244.869 | - | - | 163.395 | - | | - |
+| Di Chiara Gianluca | 26/12/93 | 30 | 31/08/23 | 30/06/25 | 31/08/23 | REGGINA 1914 S.R.L. | | | - | - | - | 160.000 | - | 29.373 | - | | - |
+| De Rinaldis Matteo | 01/04/03 | 20 | 26/01/22 | 30/06/24 | 26/01/22 | PARMA CALCIO 1913 SRL | 01/09/23 | | 27.766 | 6.583 | 21.183 | - | - | 9.410 | 15.994 | | 11.772 |
+| Delprato Enrico | 10/11/99 | 24 | 31/08/21 | 30/06/27 | 01/07/22 | ATALANTA B.C. SPA | | | 3.150.000 | 396.715 | 2.753.285 | 80.000 | - | 754.730 | - | | - |
+| Grassi Alberto | 07/03/95 | 28 | 09/07/19 | 30/06/24 | 09/07/19 | S.S.C. NAPOLI S.P.A. | 01/07/23 | EMPOLI F.B.C. S.P.A. | 8.926.000 | 6.190.293 | 2.735.707 | - | - | 905.234 | 7.095.527 | | 1.830.473 |
+| Iacoponi Daniele | 25/03/02 | 21 | 05/07/21 | 30/06/25 | 05/07/21 | AREZZO | | | 522.500 | 224.558 | 297.942 | 28.347 | - | 125.406 | - | | - |
+| Inglese Roberto | 12/11/91 | 32 | 16/07/19 | 30/06/24 | 16/07/19 | S.S.C. NAPOLI S.P.A. | | | 21.958.000 | 15.192.448 | 6.765.552 | 129.000 | - | 4.560.236 | - | | - |
+| Lanini Eric | 25/02/94 | 29 | 31/01/20 | 30/06/24 | 31/01/20 | F.C. JUVENTUS SPA | | | 2.960.000 | 1.889.596 | 1.070.404 | - | - | 714.255 | - | | - |
+| Mallamo Andrea | 22/10/02 | 21 | 26/07/21 | 30/06/24 | 26/07/21 | ATALANTA B.C. SPA | 02/08/23 | AURORA PRO PATRIA 1919 SRL | 25.000 | 4.559 | 20.441 | - | - | 7.997 | 12.556 | | 12.444 |
+| Martella Alessandro | 30/11/00 | 23 | 28/06/19 | 30/06/24 | 28/06/19 | DELFINO PESCARA 1936 SPA | 31/01/23 | | 543.930 | 373.845 | 170.085 | - | - | 9.639 | 383.484 | | 160.446 |
+| Motti Federico | 06/03/04 | 19 | 13/07/23 | 30/06/25 | 13/07/23 | F.C. INTERNAZIONALE MILANO SPA | | | - | - | - | 90.000 | - | 21.147 | - | | - |
+| Napoletano Paolo | 04/02/02 | 21 | 31/01/19 | 30/06/24 | 31/01/19 | DELFINO PESCARA 1936 SPA | 01/09/23 | | 1.048.243 | 767.744 | 280.499 | - | - | 124.609 | 892.353 | | 155.890 |
+| Partipilo Anthony | 27/10/94 | 29 | 03/07/23 | 30/06/27 | 03/07/23 | TERNANA CALCIO | | | - | - | - | 1.900.000 | - | 237.011 | - | | - |
+| Palmucci Stefano | 22/05/01 | 22 | 31/01/20 | 30/06/24 | 31/01/20 | DELFINO PESCARA 1936 SPA | | | 3.279.366 | 2.128.430 | 1.150.936 | 20.224 | - | 776.108 | - | | - |
+| Pavone Fabian | 05/02/00 | 23 | 28/06/19 | 30/06/24 | 28/06/19 | DELFINO PESCARA 1936 SPA | | | 1.919.776 | 1.313.090 | 606.686 | - | - | 404.827 | - | | - |
+| Pezzella Giuseppe | 29/11/97 | 26 | 27/08/19 | 30/06/24 | 27/08/19 | UDINESE CALCIO SPA | 31/07/23 | EMPOLI F.B.C. S.P.A. | 6.250.000 | 4.250.588 | 1.999.412 | - | - | 774.909 | 5.025.497 | | 1.224.503 |
+| Primavera Luca | 08/04/05 | 18 | 17/08/21 | 30/06/24 | 17/08/21 | DELFINO PESCARA 1936 SPA | | | 190.800 | 91.725 | 99.075 | - | - | 66.110 | - | | - |
+| Romagnoli Simone | 09/02/90 | 33 | 24/06/22 | 30/06/24 | 24/06/22 | EMPOLI F.B.C. S.P.A. | 31/01/23 | U.S. LECCE SPA | 300.000 | 75.513 | 224.487 | (150.000) | - | 12.143 | 87.656 | | 62.344 |
+| Rinaldi Filippo | 04/12/02 | 21 | 31/12/20 | 30/06/25 | 31/12/20 | sett. Giovanile | | | 160.100 | 57.375 | 102.725 | 21.060 | - | 45.207 | - | | - |
+| Rossi Alberto | 22/07/03 | 20 | 31/12/21 | 30/06/23 | 01/07/21 | | 31/01/23 | AQUILA MONTEVARCHI 1902 SRL | 27.766 | 13.448 | 14.318 | - | - | 2.452 | 15.900 | | 11.866 |
+| Santurro Antonio | 29/02/92 | 31 | 03/11/22 | 30/06/23 | 31/10/22 | PARMA CALCIO 1913 SRL | | | 0 | 0 | - | - | - | - | 0 | | - |
+| Tutino Gennaro | 20/08/96 | 27 | 01/08/21 | 30/06/25 | 03/09/21 | S.S.C. NAPOLI S.P.A. | | | 5.750.000 | 2.046.323 | 3.703.677 | - | - | 1.482.283 | - | | - |
+| Vaglica Giovanni | 06/02/03 | 20 | 31/12/20 | 30/06/25 | 31/12/20 | | | | 194.110 | 68.676 | 125.434 | 28.000 | - | 56.507 | - | | - |
+| Amoran Toluwanimi Peter | 22/05/04 | 19 | 01/09/22 | 30/06/25 | 01/09/22 | OSTERSUNDS FK | | | 345.000 | 40.706 | 304.294 | 30.000 | - | 132.155 | - | | - |
+| Azevedo Junior Hernani | 27/03/94 | 29 | 11/07/19 | 30/06/25 | 11/07/19 | FC ZENIT | | | 6.933.095 | 6.041.420 | 891.675 | 75.000 | - | 908.975 | - | | - |
+| Begic Tjas | 30/06/03 | 20 | 13/07/23 | 30/06/27 | 13/07/23 | LR VICENZA SPA | | | - | - | - | 1.640.900 | - | 194.779 | - | | - |
+| Bernabe' Garcia Adrian | 26/05/01 | 22 | 07/01/22 | 30/06/26 | 07/01/22 | Manchester City | | | 180.000 | 72.097 | 107.903 | - | - | 47.825 | - | | - |
+| Buayi Kiala Nathan | 29/02/04 | 19 | 01/07/22 | 30/06/26 | 10/05/22 | LOSC LILLE | | | 530.000 | 66.749 | 463.251 | - | - | 132.409 | - | | - |
+| Balogh Botond | 06/06/02 | 21 | 15/10/19 | 30/06/25 | 15/10/19 | Svincolato | | | 251.864 | 116.923 | 134.941 | - | - | 54.006 | - | | - |
+| Benedyczak Adrian Dawid | 24/11/00 | 23 | 01/07/21 | 30/06/25 | 01/07/21 | MKS POGON SZCZECIN S.A. | | | 2.619.092 | 962.146 | 1.656.946 | 135.857 | - | 709.903 | - | | - |
+| Bonny Ange-Yoan Laurent | 25/10/03 | 20 | 28/08/21 | 30/06/26 | 28/08/21 | Svincolato | | | 482.740 | 227.823 | 254.917 | 200.000 | - | 136.007 | - | | - |
+| Charpentier Gabriel Andre | 17/05/99 | 24 | 30/08/22 | 30/06/25 | 30/08/22 | GENOA CRICKET AND F.C.SPA | | | 1.497.169 | 179.198 | 1.317.971 | - | - | 527.477 | - | | - |
+| Chichizola Leandro | 27/03/90 | 33 | 14/07/22 | 30/06/25 | 14/07/22 | A. C. PERUGIA CALCIO S.R.L. | | | 937.622 | 197.132 | 740.490 | 249.878 | - | 459.152 | - | | - |
+| Colak Antonio Mirko | 17/09/93 | 30 | 15/07/23 | 30/06/26 | 15/07/23 | RANGERS FOOTBALL CLUB LIMITED | | | - | - | - | 2.270.000 | - | 356.655 | - | | - |
+| Conde Bernardo | 26/09/06 | 17 | 30/09/23 | 30/06/25 | 14/04/23 | FOOTBALL CLUB DE VILLIERS LE BEL | | | - | - | - | 13.288 | - | 1.913 | - | | - |
+| Coulibaly Aboubacar-Sama | 28/02/06 | 17 | 09/03/22 | 30/06/25 | 09/03/22 | AULNAY C.S.L. FC | | | 47.863 | 6.722 | 41.141 | - | - | 16.466 | - | | - |
+| Camara Drissa | 18/02/02 | 21 | 31/12/20 | 30/06/25 | 31/12/20 | | | | 0 | 0 | - | - | - | - | - | | - |
+| Cobbaut Elias | 24/11/77 | 46 | 25/08/21 | 30/06/25 | 29/05/22 | RSC Anderlecht | | | 3.462.438 | 987.718 | 2.474.720 | (75.000) | - | 980.037 | - | | - |
+| Coulibaly Woyo | 26/05/99 | 24 | 29/08/21 | 30/06/25 | 29/08/21 | SASP HC FOOTBALL | | | 1.500.000 | 524.182 | 975.818 | - | - | 390.541 | - | | - |
+| Cyprien Wylan | 29/01/95 | 28 | 03/10/20 | 30/06/25 | 03/10/20 | OGC NICE | | | 8.750.000 | 4.073.955 | 4.676.045 | - | - | 1.871.444 | - | | - |
+| Drobnic Dominik | 05/04/07 | 16 | 31/08/23 | 30/06/26 | 31/08/23 | NK BRAVO | | | - | - | - | 200.000 | - | 23.768 | - | | - |
+| Dierckx Daan | 24/02/03 | 20 | 04/01/21 | 30/06/25 | 04/01/21 | | 01/09/23 | STANDARD DE LIEGE SA | 128.000 | 54.152 | 73.848 | - | - | 19.677 | 73.829 | | 54.171 |
+| Estevez Alvarez Nahuel | 14/11/95 | 28 | 07/07/22 | 30/06/26 | 06/07/22 | F.C. CROTONE S.R.L. | | | 1.285.000 | 209.844 | 1.075.156 | 52.150 | - | 385.681 | - | | - |
+| Fatu Rares Daniel | 17/01/06 | 17 | 18/01/22 | 30/06/24 | 18/01/22 | | | | 42.589 | 17.137 | 25.452 | - | - | 16.984 | - | | - |
+| Flex Flintholm Frederik | 11/03/04 | 19 | 17/11/21 | 30/06/25 | 17/11/21 | | | | 112.808 | 19.422 | 93.386 | - | - | 37.375 | - | | - |
+| Fiath Bence | 18/01/04 | 19 | 27/01/20 | 30/06/23 | 27/01/20 | VASAS ACADEMIA | | | 100.896 | 100.896 | - | - | - | - | 100.896 | | - |
+| Hainaut Antoine | 18/02/02 | 21 | 29/01/22 | 30/06/26 | 29/01/22 | US BOULOGNE | | | 555.244 | 97.763 | 457.481 | - | - | 130.760 | - | | - |
+| Haj Mohamed Anas | 26/03/05 | 18 | 09/08/21 | 30/06/26 | 09/08/21 | | | | 0 | 0 | - | 170.000 | - | 21.066 | - | | - |
+| Juric Stanko | 16/08/96 | 27 | 01/07/21 | 30/06/25 | 01/07/21 | HNK HAJDUC SPLIT | | | 1.949.605 | 733.448 | 1.216.157 | - | - | 486.730 | - | | - |
+| Konate Abdou-Salam | 25/11/06 | 17 | 30/09/23 | 30/06/25 | 14/04/23 | ESPÉRANCE AULNAYSIENNE | | | - | - | - | 64.936 | - | 9.349 | - | | - |
+| Kowalski Mateusz | 21/07/05 | 18 | 31/01/23 | 30/06/28 | 31/01/23 | JAGIELLONIA | | | - | - | - | 1.138.587 | - | 267.066 | - | | - |
+| Kurtic Jasmin | 10/01/89 | 34 | 10/01/20 | 30/06/23 | 10/01/20 | SPAL | | | 5.260.000 | 4.519.616 | 740.384 | - | - | 740.384 | 5.260.000 | | - |
+| Maliszewski Bartolomiej | 12/02/04 | 19 | 05/10/20 | 30/06/23 | 05/10/20 | JAGIELLONIA | 31/01/23 | S.S. LAZIO S.P.A. | 500.000 | 409.352 | 90.648 | - | | 15.525 | 424.877 | | 75.123 |
+| Man Dennis | 26/08/98 | 25 | 28/01/21 | 30/06/25 | 28/01/21 | FC FCSB | | | 12.000.000 | 5.209.810 | 6.790.190 | - | - | 2.717.565 | - | | - |
+| Manisa Lenny | 04/02/04 | 19 | 30/08/22 | 30/06/25 | 30/08/22 | Paris St Germain FC | | | 90.000 | 36.590 | 53.410 | 30.000 | - | 40.329 | - | | - |
+| Mikolajewski Daniel | 24/01/06 | 17 | 30/08/22 | 30/06/25 | 30/08/22 | Akademia Piłkarska Jaguar | | | - | - | - | 64.740 | - | 27.199 | - | | - |
+| Mir Garcia Matias | 26/05/03 | 20 | 15/04/21 | 30/06/24 | 15/04/21 | CA PENAROL | 31/07/23 | CERRO LARGO FUTBOL CLUB | 279.726 | 120.538 | 159.188 | - | - | 61.696 | 182.234 | | 97.492 |
+| Marsetic Enej | 04/12/04 | 19 | 30/01/21 | 30/06/23 | 30/01/21 | FC KOPER | 26/05/23 | | 500.000 | 397.087 | 102.913 | - | - | 83.012 | 480.100 | | 19.900 |
+| Mihaila Valentin | 02/02/00 | 23 | 03/10/20 | 30/06/25 | 03/10/20 | U CRAIOVA 1948 | | | 9.174.342 | 4.327.669 | 4.846.673 | - | - | 1.939.732 | - | | - |
+| Oosterwolde Jayden | 26/04/01 | 22 | 28/01/22 | 30/06/25 | 28/01/22 | FC TWENTE | 30/01/23 | Fenerbahce Futbol A.S. | 3.300.000 | 949.753 | 2.350.247 | - | 6.000.000 | 77.311 | 1.027.064 | | - |
+| Osorio Jordan Hernando | 10/05/94 | 29 | 05/10/20 | 30/06/24 | 05/10/20 | FC DO PORTO | | | 4.129.470 | 2.474.224 | 1.655.246 | - | - | 1.104.506 | - | | - |
+| Sahitaj Ledjan | 12/01/04 | 19 | 23/07/21 | 30/06/24 | 23/07/21 | Grasshopper Club | | | 213.945 | 97.552 | 116.393 | - | - | 77.667 | - | | - |
+| Sits Dario | 04/02/04 | 19 | 01/10/20 | 30/06/26 | 01/10/20 | FS METTA | | | 140.000 | 33.736 | 106.264 | - | - | 30.373 | - | | - |
+| Sohm Simon | 11/04/01 | 22 | 01/10/20 | 30/06/25 | 01/10/20 | FC ZURICH | | | 6.350.000 | 3.001.798 | 3.348.202 | - | - | 1.340.015 | - | | - |
+| Tehe Olawale | 22/02/99 | 24 | 30/01/20 | 30/06/23 | 30/01/20 | PONSACCO | | | 85.400 | 69.194 | 16.206 | - | - | 16.206 | 85.400 | | - |
+| Turk Martin | 21/08/03 | 20 | 21/08/19 | 30/06/25 | 21/08/19 | PARMA CALCIO 1913 SRL | | | 335.192 | 335.192 | 0 | - | - | (0) | (0) | | - |
+| Valenti Lautaro | 14/01/99 | 24 | 22/09/20 | 30/06/25 | 22/09/20 | CLUB ATLETICO LANUS | | | 10.530.303 | 4.976.642 | 5.553.661 | - | - | 2.222.682 | - | | - |
+| Vazquez Franco Damian | 22/02/89 | 34 | 19/07/21 | 30/06/23 | 19/07/21 | SIVIGLIA FC | | | 1.248.000 | 900.377 | 347.623 | - | - | 347.623 | 1.248.000 | | - |
+| Zadran Roman | 08/03/05 | 18 | 01/01/22 | 30/06/24 | 05/08/21 | MALMO FF | | | 76.822 | 30.695 | 46.127 | - | - | 30.779 | - | | - |
+| Zagaritis Vasilios | 04/05/01 | 22 | 19/01/21 | 30/06/24 | 19/01/21 | PANATHINAIKOS FC | | | 807.152 | 452.955 | 354.197 | - | - | 236.347 | - | | - |
+| Diritti prest. calc. Sett. Giovanile | | | | | | | | | 949.645 | 337.304 | 612.340 | 637.599 | - | 334.293 | 172.024 | | 163.432 |
+| **Totale** | | | | | | | | | 148.414.808 | 80.603.477 | 67.811.331 | 9.357.214 | 6.000.000 | 31.509.902 | 24.079.459 | - | 4.519.746 |
+
+Colonne ulteriori a destra della tabella (10 Plus.; Valore fine periodo 31/12/2023: Costo storico, F.do ammortamento, Netto; Compenso Agenti; Altri costi acquisizione; Varie – Valore sell on fee): [ilegible]
 
 --- pág. 45 ---
 
@@ -1594,50 +1623,47 @@ Parma calcio 1913 S.r.l.
 
 --- pág. 46 ---
 
-**Nexia**  
-**Audirevi**  
-**Audit & Assurance**
+Nexia Audirevi Audit & Assurance
 
-Audirevi SpA  
-Via Paolo da Cannobio, 33 - 20122 Milano  
+Audirevi SpA
+Via Paolo da Cannobio, 33 - 20122 Milano
 T: +39 0287070700 F: +39 0287070719
 
-## Relazione della società di revisione indipendente
+Relazione della società di revisione indipendente
+ai sensi dell'art. 14 del D. Lgs. 27 gennaio 2010, n. 39
 
 Ai soci del
 
-**Parma calcio 1913 S.r.l.**
+Parma calcio 1913 S.r.l.
 
-### Relazione sulla revisione contabile del bilancio consolidato
+Relazione sulla revisione contabile del bilancio consolidato
 
-#### Giudizio
+Giudizio
 
-Abbiamo svolto la revisione contabile del bilancio consolidato del Gruppo Parma calcio 1913 S.r.l. (il Gruppo) costituito dallo stato patrimoniale consolidato al 31 dicembre 2023, dal conto economico consolidato, dal rendiconto finanziario consolidato per l’esercizio chiuso a tale data e dalla nota integrativa.
+Abbiamo svolto la revisione contabile del bilancio consolidato del Gruppo Parma calcio 1913 S.r.l. (il Gruppo) costituito dallo stato patrimoniale consolidato al 31 dicembre 2023, dal conto economico consolidato, dal rendiconto finanziario consolidato per l'esercizio chiuso a tale data e dalla nota integrativa.
 
-A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria della Società al 31 dicembre 2023, del risultato economico e dei flussi di cassa per l’esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
+A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria della Società al 31 dicembre 2023, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-#### Elementi alla base del giudizio
+Elementi alla base del giudizio
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio consolidato* della presente relazione. Siamo indipendenti rispetto alla Società in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell’ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio consolidato* della presente relazione. Siamo indipendenti rispetto alla Società in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
 
-#### Richiamo di informativa
+Richiamo di informativa
 
-Richiamiamo l’attenzione in merito a quanto descritto dagli Amministratori nella Nota integrativa relativamente al presupposto della continuità aziendale.
-
-La controllante Krause Group Italia S.r.l., al fine di garantire il presupposto della continuità aziendale, ha confermato, mediante un support letter datata 25 marzo 2024, che porrà a disposizione della Società le risorse adeguate alla copertura patrimoniale e finanziaria del suo fabbisogno. Coerentemente a tale impegno, la controllante Krause Group Italia S.r.l. ha effettuato versamenti, costanti nel tempo, a titolo di finanziamenti soci infruttiferi e postergati, i quali, ferma la natura giuridica, sono funzionalmente ed economicamente assimilabili a mezzi propri. L’importo complessivo di tali versamenti è alla data odierna pari a Euro 371,4 milioni, di cui Euro 299,8 milioni convertiti a Patrimonio Netto.
-
+Richiamiamo l'attenzione in merito a quanto descritto dagli Amministratori nella Nota integrativa relativamente al presupposto della continuità aziendale.
+La controllante Krause Group Italia S.r.l., al fine di garantire il presupposto della continuità aziendale, ha confermato, mediante un support letter datata 25 marzo 2024, che porrà a disposizione della Società le risorse adeguate alla copertura patrimoniale e finanziaria del suo fabbisogno. Coerentemente a tale impegno, la controllante Krause Group Italia S.r.l. ha effettuato versamenti, costanti nel tempo, a titolo di finanziamenti soci infruttiferi e postergati, i quali, ferma la natura giuridica, sono funzionalmente ed economicamente assimilabili a mezzi propri. L'importo complessivo di tali versamenti è alla data odierna pari a Euro 371,4 milioni, di cui Euro 299,8 milioni convertiti a Patrimonio Netto.
 Il nostro giudizio non contiene rilievi in merito a tale aspetto.
 
-#### Altri aspetti
+Altri aspetti
 
-Il bilancio consolidato del Parma calcio 1913 S.r.l. per l’esercizio chiuso al 31 dicembre 2022 è stato sottoposto a revisione contabile da parte di un altro organo di controllo che, in data 11 aprile 2023, ha espresso un giudizio senza modifiche su tale bilancio.
+Il bilancio consolidato del Parma calcio 1913 S.r.l. per l'esercizio chiuso al 31 dicembre 2022 è stato sottoposto a revisione contabile da parte di un altro organo di controllo che, in data 11 aprile 2023, ha espresso un giudizio senza modifiche su tale bilancio.
 
-**AUDIREVI SpA – Società di Revisione e Organizzazione Contabile**  
-Sede Legale: Via Paolo da Cannobio, 33 – 20122 Milano  
-Cod. Fiscale 05953410585 - P.I. 12034710157 – www.audirevi.it mail: info@audirevi.it  
-Capitale Sociale Euro 500.000 - REA Milano 1523066 – Registro Dei Revisori Contabili GU 60/2000  
-Albo Speciale Delle Società di Revisione con Delibera CONSOB n. 10819 Del 16/07/1997  
-Milano – Roma - Napoli – Brescia – Bologna - Cagliari – Ancona – Pescara – Varese – Verona - Cosenza
+AUDIREVI SpA – Società di Revisione e Organizzazione Contabile
+Sede Legale: Via Paolo da Cannobio, 33 – 20122 Milano
+Cod. Fiscale 05953410585 - P.I. 12034710157 – www.audirevi.it mail: info@audirevi.it
+Capitale Sociale Euro 500.000 - REA Milano 1523066 – Registro Dei Revisori Contabili GU 60/2000
+Albo Speciale Delle Società di Revisione con Delibera CONSOB n. 10819 Del 16/07/1997
+Milano – Roma - Napoli– Brescia – Bologna - Cagliari – Ancona – Pescara – Varese – Verona - Cosenza
 
 --- pág. 47 ---
 

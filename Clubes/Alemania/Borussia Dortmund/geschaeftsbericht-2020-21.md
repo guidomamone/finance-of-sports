@@ -6,31 +6,30 @@ ENGL_01_U1-U4_GB2021_vO1.axp 01.09.21 13:46 Seite 1
 
 --- pág. 2 ---
 
-ENGL_01_U1-U4_GB2021_vO1.axp 01.09.21 13:46 Seite 2
+# OVERVIEW OF FINANCIAL PERFORMANCE INDICATORS
 
-OVERVIEW OF FINANCIAL PERFORMANCE INDICATORS
+## Borussia Dortmund KGaA (HGB)
 
-Borussia Dortmund KGaA (HGB)
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Sales | 323,497 | 442,126 |
+| Operating result (EBITDA) | 33,557 | 54,264 |
+| Result from operating activities (EBIT) | -76,580 | -51,283 |
+| Net loss for the year | -76,479 | -49,662 |
+| Cash flows from operating activities | 40,769 | 111,654 |
+| Free cash flow | -50,452 | -48,718 |
 
-EUR '000 2020/2021 2019/2020
-SEICH 323,497 442,126
-Operating result (EBITDA) 28,357 54,264
-Result from operating activities (EBIT) -76,580 -51,283
-Net loss for the year -76,479 -49,662
-Cash flows from operating activities 40,769 111,654
-Free cash flow -50,452 -48,718
+## Borussia Dortmund Group (IFRS)
 
-Borussia Dortmund Group (IFRS)
-
-EUR '000 2020/2021 2019/2020 nn
-Revenue 334,171 370,196
-Consolidated total operating proceeds 358,577 486,884
-Operating result (EBITDA) 38,950 62,992
-Result from operating activities (EBIT) -72,093 -43,138
-Net profit/net loss for the year -72,810 -43,953
-Cash flows from operating activities 15,947 -362
-Free cash flow -46,075 -51,131
-
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Revenue | 334,171 | 370,196 |
+| Consolidated total operating proceeds | 358,577 | 486,884 |
+| Operating result (EBITDA) | 38,950 | 62,992 |
+| Result from operating activities (EBIT) | -72,093 | -43,138 |
+| Net profit/net loss for the year | -72,810 | -43,953 |
+| Cash flows from operating activities | 15,947 | -362 |
+| Free cash flow | -46,075 | -51,131 |
 
 --- pág. 3 ---
 
@@ -416,655 +415,207 @@ Managing Director
 
 --- pág. 8 ---
 
+8
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+Anlage 1.4 / 8 41009653-1376911
 
-REPORT OF THE SUPERVISORY BOARD
+## REPORT OF THE SUPERVISORY BOARD
 
-Due to the pandemic, Borussia Dortmund GmbH &
-Co. KGaA once again looks back on a difficult and
+Due to the pandemic, Borussia Dortmund GmbH & Co. KGaA once again looks back on a difficult and challenging 2020/2021 financial year.
 
-challenging 2020/2021 financial year.
+Borussia Dortmund's financial performance this 2020/2021 financial year has been severely impacted by the COVID-19 pandemic and the restrictions on public life imposed in its wake. The original assumptions – such as at least a partial return to fan attendance at the stadium during matches – have failed to materialise, particularly as the result of the third lockdown. Borussia Dortmund has nevertheless managed to limit somewhat the negative impact on earnings thanks in particular to its success in the UEFA Champions League and the DFB Cup.
 
-Borussia Dortmund's financial performance this
-2020/2021 financial year has been severely impacted
-by the COVID-19 pandemic and the restrictions on
-public life imposed in its wake. The original
-assumptions - such as at least a partial return to fan
-attendance at the stadium during matches - have
-failed to materialise, particularly as the result of the
-third lockdown. Borussia Dortmund has nevertheless
-managed to limit somewhat the negative impact on
-earnings thanks in particular to its success in the
-UEFA Champions League and the DFB Cup.
+Given the circumstances, Borussia Dortmund ultimately played a successful season. The team achieved one of the season's key objectives by once again directly qualifying for the group stage of the 2021/2022 UEFA Champions League, even though this was taxing and challenging for everyone involved, with most of the matches over the 34 match days played to empty stands due to the special match operations imposed in the wake of the pandemic. When the sporting objectives looked to be in jeopardy in the first half of the season, the club decided to replace head coach Lucien Favre with Edin Terzic. After gradually finding their rhythm, the team and Edin Terzic's coaching staff rediscovered success and rewarded themselves and the entire Borussia Dortmund fan base by winning the DFB Cup. On the heels of an unprecedented comeback, the team climbed back to third place in the Bundesliga, thereby directly qualifying for the group stage of the UEFA Champions League. The team put on a respectable performance in the 2020/2021 UEFA Champions League, reaching the quarter-finals and thus finishing in the top eight in Europe. An extraordinary debt of gratitude is owed to the sporting director, his team and the coaches for having brought the 2020/2021 season to a satisfactory conclusion under such difficult conditions. We are also thrilled that Borussia Dortmund's second team was promoted to the third division in the 2020/2021 season, meaning that the club will now have two men's teams playing professional football in Germany in the 2021/2022 season.
 
-Given the circumstances, Borussia Dortmund
-ultimately played a successful season. The team
-achieved one of the season's key objectives by once
-again directly qualifying for the group stage of the
-2021/2022 UEFA Champions League, even though this
-was taxing and challenging for everyone involved, with
-most of the matches over the 34 match days played
-to empty stands due to the special match operations
-imposed in the wake of the pandemic. When the
-sporting objectives looked to be in jeopardy in the first
-half of the season, the club decided to replace head
-coach Lucien Favre with Edin Terzic. After gradually
-finding their rhythm, the team and Edin Terzic's
-coaching staff rediscovered success and rewarded
-themselves and the entire Borussia Dortmund fan
-base by winning the DFB Cup. On the heels of an
-unprecedented comeback, the team climbed back to
-third place in the Bundesliga, thereby directly
-qualifying for the group stage ofthe UEFA Champions
-League. The team put on a respectable performance
-inthe 2020/2021 UEFA Champions League, reaching
-the quarter-finals and thus finishing in the top eight
-in Europe. An extraordinary debt of gratitude is owed
-to the sporting director, his team and the coaches for
+The economic impact of the COVID-19 pandemic this past financial year was considerable. In the 2020/2021 financial year (1 July 2020 to 30 June 2021), Borussia Dortmund generated revenue of EUR 334.2 million (previous year: EUR 370.2 million). Consolidated total operating proceeds (revenue plus gross transfer proceeds generated) amounted to EUR 358.6 million (previous year: EUR 486.9 million). In the financial year ended, the consolidated net loss amounted to EUR 72.8 million (previous year: loss of EUR 44.0 million). Consolidated earnings before taxes (EBT) amounted to EUR -73.2 million (previous year: EUR -46.6 million); consolidated earnings before interest, taxes, depreciation and amortisation (EBITDA) amounted to EUR 39.0 million (previous year: EUR 63.0 million). In the separate financial statements of Borussia Dortmund GmbH & Co. KGaA prepared in accordance with the German Commercial Code (HGB), the Company reported a net loss for the year of EUR 76.5 million. In light of this earnings situation, it is not possible to propose a dividend distribution to the 2021 Annual General Meeting.
 
-having brought the 2020/2021 season to a satisfactory
-
-conclusion under such difficult conditions. We are also
-thrilled that Borussia Dortmund's second team was
-promoted to the third division in the 2020/2021
-season, meaning that the club will now have two men's
-teams playing professional football in Germany inthe
-2021/2022 season.
-
-The economic impact of the COVID-19 pandemic this
-past financial year was considerable. In the
-2020/2021 financial year (1 July 2020 to 30 June
-2021), Borussia Dortmund generated revenue of
-EUR 334.2 million (previous year: EUR 370.2 million).
-Consolidated total operating proceeds (revenue plus
-gross transfer proceeds generated) amounted to
-EUR 358.6 million (previous year: EUR 486.9 million).
-Inthe financial year ended, the consolidated net loss
-amounted to EUR 72.8 million (previous year: loss of
-EUR 44.0 million). Consolidated earnings before taxes
-(EBT) amounted to EUR -73.2 million (previous year:
-EUR -46.6 million); consolidated earnings before
-interest, taxes, depreciation and amortisation
-(EBITDA) amounted to EUR 39.0 million (previous year:
-EUR 63.0 million). In the separate financial statements
-of Borussia Dortmund GmbH & Co. KGaA prepared in
-accordance with the German Commercial Code (HGB),
-the Company reported a net loss for the year of
-EUR 76.5 million. In light of this earnings situation, it
-is not possible to propose a dividend distribution to
-
-the 2021 Annual General Meeting.
-
-The management and entire staff of Borussia
-Dortmund have demonstrated thatthey are uptotthe
-task of managing the effects of the COVID-19
-pandemic even when faced with difficult challenges.
-Therefore, we owe them all a debt of gratitude.
-Furthermore, the players, the sporting director and
-his team, the coaching staff, the managing directors
-and members of the Supervisory Board also helped
-to ease the situation by agreeing to forego a portion
-
-of their salaries.
+The management and entire staff of Borussia Dortmund have demonstrated that they are up to the task of managing the effects of the COVID-19 pandemic even when faced with difficult challenges. Therefore, we owe them all a debt of gratitude. Furthermore, the players, the sporting director and his team, the coaching staff, the managing directors and members of the Supervisory Board also helped to ease the situation by agreeing to forego a portion of their salaries.
 
 --- pág. 9 ---
 
-The Supervisory Board unequivocally supports the
-management's decision, taken in close consultation
-with all of Borussia Dortmund's governing bodies,
-to reject the plans to create a "Super League" and
-instead, as resolved by the European Club
-Association (ECA), to implement the planned
-reform ofthe UEFA Champions League beginning
-in the 2024/2025 season. Borussia Dortmund
-shared exactly the same stance as all German
-clubs inthe ECA, and an overwhelming majority of
-the club's fans, members and shareholders
-
-supported the decision.
-
-There is no denying the fact that match operations
-must return to normal and spectators must be
-allowed back into stadiums in the medium term if
-the Company is to fully return to its business
-model. The pandemic will continue to affect the
-2021/2022 season as well. The more spectators
-we can safely welcome back to SIGNAL IDUNA
-PARK, and the faster we can do so, the sooner we
-can shed the shackles of the pandemic. This will
-no doubt require great effort. However, due to the
-sufficient level of consolidated equity available and
-the Company's long-term focus, Borussia
-Dortmund is able to shoulder the losses sustained
-in financial year 2020/2021.
-
-Supervisory Board activity, meetings
-
-Inthe 2020/2021 financial year, the Supervisory
-Board closely monitored the status and
-development of the Company and the Group, in
-particular also in light of the COVID-19 pandemic.
-Itexercised allofthe rights and duties incumbent
-upon it by virtue of the law and the Articles of
-
-Association.
-
-The Supervisory Board convened four ordinary
-meetings during the 2020/2021 financial year (on
-7 September 2020, 19 November 2020, 22
-February 2021 and 25 May 2021) and one
-
+41009653-1376911 Anlage 1.4 / 9 9
 REPORT OF THE SUPERVISORY BOARD
 
-constituting meeting on 19 November 2020
-following the 2020 Annual General Meeting. Due
-to the COVID-19 pandemic, of these in total five
-meetings, two were "virtual” meetings (video and
-conference calls), one was a "hybrid" meeting (i.e.,
-some participants attended in person while others
-participated via video/conference calls) and two
-meetings were purely in-person meetings (due to
-the virtual Annual General Meeting). Attendance
-at the meetings was as follows in the reporting
-period:
+The Supervisory Board unequivocally supports the management's decision, taken in close consultation with all of Borussia Dortmund's governing bodies, to reject the plans to create a "Super League" and instead, as resolved by the European Club Association (ECA), to implement the planned reform of the UEFA Champions League beginning in the 2024/2025 season. Borussia Dortmund shared exactly the same stance as all German clubs in the ECA, and an overwhelming majority of the club's fans, members and shareholders supported the decision.
 
-- Ms Silke Seidel, Mr Bernd Geske, Mr Ulrich
-Leitermann, Mr Bodo Löttgen, Dr Reinhold
-Lunow and Mr Bjarn Gulden attended all five
-meetings (100% attendance rate in each case).
+There is no denying the fact that match operations must return to normal and spectators must be allowed back into stadiums in the medium term if the Company is to fully return to its business model. The pandemic will continue to affect the 2021/2022 season as well. The more spectators we can safely welcome back to SIGNAL IDUNA PARK, and the faster we can do so, the sooner we can shed the shackles of the pandemic. This will no doubt require great effort. However, due to the sufficient level of consolidated equity available and the Company's long-term focus, Borussia Dortmund is able to shoulder the losses sustained in financial year 2020/2021.
 
-- Before stepping down from the Supervisory
-Board on 19 November 2020, Mr Peer
-Steinbrück attended both of the meetings that
-had been held prior to that date (100%
-attendance rate).
+### Supervisory Board activity, meetings
 
-- MrChristian Kullmann attended four meetings
-and sent his apologies for one (80% attendance
-rate).
+In the 2020/2021 financial year, the Supervisory Board closely monitored the status and development of the Company and the Group, in particular also in light of the COVID-19 pandemic. It exercised all of the rights and duties incumbent upon it by virtue of the law and the Articles of Association.
 
-- Following her election to the Supervisory Board
-on 19 November 2020, Ms Judith Dommermuth
-attended two of the meetings following the
-constituting meeting (66.6% attendance rate).
+The Supervisory Board convened four ordinary meetings during the 2020/2021 financial year (on 7 September 2020, 19 November 2020, 22 February 2021 and 25 May 2021) and one constituting meeting on 19 November 2020 following the 2020 Annual General Meeting. Due to the COVID-19 pandemic, of these in total five meetings, two were "virtual" meetings (video and conference calls), one was a "hybrid" meeting (i.e., some participants attended in person while others participated via video/conference calls) and two meetings were purely in-person meetings (due to the virtual Annual General Meeting). Attendance at the meetings was as follows in the reporting period:
 
-- Mr Gerd Pieper attended three meetings and
+- Ms Silke Seidel, Mr Bernd Geske, Mr Ulrich Leitermann, Mr Bodo Löttgen, Dr Reinhold Lunow and Mr Bjørn Gulden attended all five meetings (100% attendance rate in each case).
+- Before stepping down from the Supervisory Board on 19 November 2020, Mr Peer Steinbrück attended both of the meetings that had been held prior to that date (100% attendance rate).
+- Mr Christian Kullmann attended four meetings and sent his apologies for one (80% attendance rate).
+- Following her election to the Supervisory Board on 19 November 2020, Ms Judith Dommermuth attended two of the meetings following the constituting meeting (66.6% attendance rate).
+- Mr Gerd Pieper attended three meetings and sent his apologies for two (60% attendance rate).
 
-sent his apologies for two (60% attendance rate).
+Furthermore, two resolutions were also circulated and adopted in writing. The resolution on 6 July 2020 concerned the increase in the Company's overdraft facility, while the resolution on 13 November 2020 related to the appointment of Deputy Chairman Mr Christian Kullmann to chair the Annual General Meeting in accordance with Article 15 (1) of the Articles of Association.
 
-Furthermore, two resolutions were also circulated
-and adopted in writing. The resolution on 6 July 2020
-concerned the increase in the Company's overdraft
-facility, while the resolution on 13 November 2020
-related to the appointment of Deputy Chairman
-Mr Christian Kullmann to chair the Annual General
-Meeting in accordance with Article 15 (1) of the
-
-Articles of Association.
-
-All resolutions were adopted in accordance with the
-
-provisions of the Articles of Association and the
+All resolutions were adopted in accordance with the provisions of the Articles of Association and the
 
 --- pág. 10 ---
 
+10
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+Anlage 1.4 / 10 41009653-1376911
 
-relevant law. All issues are deliberated and all
-resolutions are passed by the full Supervisory Board;
-the Supervisory Board did not form any committees
+relevant law. All issues are deliberated and all resolutions are passed by the full Supervisory Board; the Supervisory Board did not form any committees in the reporting year.
 
-inthe reporting year.
+During the reporting period, the Supervisory Board received regular, timely and comprehensive oral and written reports from the management within the meaning of § 90 of the German Stock Corporation Act (*Aktiengesetz*, "AktG"). These reports focused on the development of the business, the Company's and the Group's liquidity, earnings and financial position, corporate planning (specifically, financial, investment and personnel planning), the risk position and risk management within the Company and the Group as well as strategic issues, with the impact of the COVID-19 pandemic addressed as a specific focus in each case. Moreover, the Supervisory Board received written reports in the intervals between its meetings. These reports and the subsequent discussion and verification thereof also dealt with the interim financial reports (i.e., the half-yearly financial report and quarterly financial reports). Moreover, the Chairman of the Supervisory Board was in regular contact with the management outside of meetings; he was kept regularly apprised of current developments in the business and major business transactions and advised on strategic and budgetary issues as well as the Company's business development, risk position, risk management (including with respect to the COVID-19 pandemic) and compliance issues. The management fulfilled its duty to keep the Supervisory Board informed in a complete, continuous and timely manner.
 
-During the reporting period, the Supervisory Board
-received regular, timely and comprehensive oral
-and written reports from the management within
-the meaning of 8 90 of the German Stock
-Corporation Act (Aktiengesetz, "AktG"). These reports
-focused on the development of the business, the
-Company's and the Group's liquidity, earnings and
-financial position, corporate planning (specifically,
-financial, investment and personnel planning), the
-risk position and risk management within the
-Company andthe Group as well as strategic issues,
-with the impact of the COVID-19 pandemic
-addressed as a specific focus in each case.
-Moreover, the Supervisory Board received written
-reports in the intervals between its meetings.
-These reports and the subsequent discussion and
-verification thereof also dealt with the interim
-financial reports (i.e., the half-yearly financial
-report and quarterly financial reports). Moreover,
-the Chairman of the Supervisory Board was in
-regular contact with the management outside of
-meetings; he was kept regularly apprised of
-current developments in the business and major
-business transactions and advised on strategic and
-budgetary issues as well as the Company's
-business development, risk position, risk
-management (including with respect to the
-COVID-19 pandemic) and compliance issues. The
-management fulfilled its duty to keep the
-Supervisory Board informed in a complete,
+The Supervisory Board advised and monitored the general partner and its managing directors on the management of the Company. The reports of the management and the Supervisory Board's enquiries and deliberations formed a basis for this function. The Supervisory Board considers the management of the Company to be in compliance with the law and in proper order, it deems the internal control system, risk management system and internal audit system to be effective, and attests to the Company's corporate organisation and economic viability. Reports and consultations concerned in particular athletic performance in the 2020/2021 season, the expected reforms in connection with the German Act to Strengthen Financial Market Integrity (*Finanzmarktintegritätsstärkungsgesetz*, "FISG") and the management's intended stipulations regarding the proportion of women at the two management levels below the general partner.
 
-continuous and timely manner.
+In the reporting period, the Supervisory Board also adopted resolutions on commissioning an external assurance engagement on the Company's separate non-financial Group report for financial year 2020/2021 (§ 111 (2) sentence 4 in conjunction with § 278 (3) AktG).
 
-The Supervisory Board advised and monitored the
-general partner and its managing directors on the
-management of the Company. The reports of the
-
-management and the Supervisory Board's enquiries
-
-and deliberations formed a basis for this function.
-The Supervisory Board considers the management
-ofthe Company to be in compliance with the law and
-in proper order, itdeemsthe internal control system,
-risk management system and internal audit system
-to be effective, and attests to the Company's
-corporate organisation and economic viability.
-Reports and consultations concerned in particular
-athletic performance in the 2020/2021 season, the
-expected reforms in connection with the German Act
-to Strengthen Financial Market Integrity
-(Finanzmarktintegritätsstärkungsgesetz, "FISG") and
-the management 's intended stipulations regarding
-the proportion of women at the two management
-
-levels below the general partner.
-
-In the reporting period, the Supervisory Board also
-adopted resolutions on commissioning an external
-assurance engagement on the Company 's separate
-non-financial Group report for financial year
-2020/2021 (8 111 (2) sentence 4 in conjunction with
-8 278 (3) AktG).
-
-In addition, during the reporting year, the
-Supervisory Board reviewed the accounting and
-financial reporting, stipulation of the target
-proportion of women on the Supervisory Board and
-preparations for the Annual General Meeting in the
-previous year, specifically its proposals for
-resolutions and nominations for election for this
-Annual General Meeting and its approval of the
-general partner's decision to hold the 2020 Annual
-General Meeting in virtual form. Part of this review
-involved ascertaining the independence of the
-auditor, taking into consideration the additional
-services rendered by it, prior to resolving to propose
-it for election. The Supervisory Board's activities
-also covered the terms of engagement and the fee
-agreement, the audit focal points and engaging the
-auditor elected by the previous year's Annual
-
-General Meeting.
+In addition, during the reporting year, the Supervisory Board reviewed the accounting and financial reporting, stipulation of the target proportion of women on the Supervisory Board and preparations for the Annual General Meeting in the previous year, specifically its proposals for resolutions and nominations for election for this Annual General Meeting and its approval of the general partner's decision to hold the 2020 Annual General Meeting in virtual form. Part of this review involved ascertaining the independence of the auditor, taking into consideration the additional services rendered by it, prior to resolving to propose it for election. The Supervisory Board's activities also covered the terms of engagement and the fee agreement, the audit focal points and engaging the auditor elected by the previous year's Annual General Meeting.
 
 --- pág. 11 ---
 
-2020/2021 Annual and Consolidated
-Financial Statements
-
-The annual financial statements for Borussia
-Dortmund GmbH & Co. KGaA and the consolidated
-financial statements as at 30 June 2021 and the
-management report for the Company and the Group
-management report (each of which comprising the
-explanatory report on disclosures made pursuant to
-8 289a (1) and 8 315a (1) ofthe German Commercial
-Code (Handelsgesetzbuch, "HGB") in the version
-pursuant to Article 83 (1) sentence 2 of the
-Introductory Act to the German Commercial Code
-(Einführungsgesetz zum Handelsgesetzbuch, "EGHGB"))
-were prepared and submitted in due time by the
-management and were audited, along with the
-bookkeeping system by the auditor, KPMG AG
-Wirtschaftsprüfungsgesellschaft, Dortmund ("KPMG"),
-inaccordance with the statutory provisions, and were
-each issued an unqualified audit opinion. With respect
-to the risk early warning system, the auditor found
-that the management had taken the appropriate
-measures as required under 8 91 (2) AktG, particularly
-with respect to establishing a monitoring system
-suited towards identifying risks early on which may
-
-jeopardise the Company as a going concern.
-
-The annual and consolidated financial statements,
-the management report for the Company and the
-Group management report containing the risk report
-and the corresponding audit reports were submitted
-to allmembers of the Supervisory Board in due time.
-These documents were discussed in detail, explained
-and reviewed by the Supervisory Board at a meeting
-on 20 September 2021, with the management and
-the auditors and representatives attending. At that
-meeting, the auditors reported on and discussed the
-key findings of their audit, including those relating to
-the accounting-related internal control and risk
-management system. The auditor and the
-management responded to questions raised by the
-
-Supervisory Board.
-
+41009653-1376911 Anlage 1.4 / 11 11
 REPORT OF THE SUPERVISORY BOARD
 
-The Supervisory Board concurred with the auditors'
-findings and, subsequent to its own review work, did
-not raise any objections. At its meeting on 20
-September 2021, the Supervisory Board approved
-the annual financial statements of Borussia
-Dortmund GmbH & Co. KGaA as at 30 June 2021 as
-well as the consolidated financial statements as at
-30 June 2021.
+### 2020/2021 Annual and Consolidated Financial Statements
 
-Moreover, the Supervisory Board performed itsown
-review of the report on relationships with affiliated
-companies (dependent company report) for the
-2020/2021 financial year prepared by the general
-partner pursuant to 8 312 AktG. The dependent
-company report was also audited by the auditor, who
+The annual financial statements for Borussia Dortmund GmbH & Co. KGaA and the consolidated financial statements as at 30 June 2021 and the management report for the Company and the Group management report (each of which comprising the explanatory report on disclosures made pursuant to § 289a (1) and § 315a (1) of the German Commercial Code (*Handelsgesetzbuch*, "HGB") in the version pursuant to Article 83 (1) sentence 2 of the Introductory Act to the German Commercial Code (*Einführungsgesetz zum Handelsgesetzbuch*, "EGHGB")) were prepared and submitted in due time by the management and were audited, along with the bookkeeping system by the auditor, KPMG AG Wirtschaftsprüfungsgesellschaft, Dortmund ("KPMG"), in accordance with the statutory provisions, and were each issued an unqualified audit opinion. With respect to the risk early warning system, the auditor found that the management had taken the appropriate measures as required under § 91 (2) AktG, particularly with respect to establishing a monitoring system suited towards identifying risks early on which may jeopardise the Company as a going concern.
 
-issued the following opinion:
+The annual and consolidated financial statements, the management report for the Company and the Group management report containing the risk report and the corresponding audit reports were submitted to all members of the Supervisory Board in due time. These documents were discussed in detail, explained and reviewed by the Supervisory Board at a meeting on 20 September 2021, with the management and the auditors and representatives attending. At that meeting, the auditors reported on and discussed the key findings of their audit, including those relating to the accounting-related internal control and risk management system. The auditor and the management responded to questions raised by the Supervisory Board.
 
-"Having conducted a proper audit and assessment,
+The Supervisory Board concurred with the auditors' findings and, subsequent to its own review work, did not raise any objections. At its meeting on 20 September 2021, the Supervisory Board approved the annual financial statements of Borussia Dortmund GmbH & Co. KGaA as at 30 June 2021 as well as the consolidated financial statements as at 30 June 2021.
 
-we hereby confirm that
+Moreover, the Supervisory Board performed its own review of the report on relationships with affiliated companies (dependent company report) for the 2020/2021 financial year prepared by the general partner pursuant to § 312 AktG. The dependent company report was also audited by the auditor, who issued the following opinion:
 
+"Having conducted a proper audit and assessment, we hereby confirm that
 1. the factual information in the report is correct
+2. the consideration paid by or to the Company in connection with the legal transactions listed in the report was not inappropriately high."
 
-2. the consideration paid by or to the Company in
-connection with the legal transactions listed in
+The auditor's report on the audit of the dependent company report had also been submitted to the Supervisory Board. These documents were discussed and reviewed by the Supervisory Board at the aforementioned meeting, with the auditor and the management in attendance. Upon concluding its review, the Supervisory Board did not raise any objections to the declaration by the general partner at the conclusion of the dependent company report. The Supervisory Board noted with approval the findings of the audit of the dependent company report by the auditor.
 
-the report was not inappropriately high."
-
-The auditor's report on the audit of the dependent
-company report had also been submitted to the
-Supervisory Board. These documents were
-discussed and reviewed by the Supervisory Board
-atthe aforementioned meeting, with the auditor and
-the management in attendance. Upon concluding
-its review, the Supervisory Board did not raise any
-objections to the declaration by the general partner
-atthe conclusion ofthe dependent company report.
-The Supervisory Board noted with approval the
-findings of the audit of the dependent company
-
-report by the auditor.
-
-The Borussia Dortmund Group is also required to
-prepare a separate report on the non-financial
-aspects of its activities for the 2020/2021 financial
-
-year. In line with the statutory options and as inthe
-
-11
+The Borussia Dortmund Group is also required to prepare a separate report on the non-financial aspects of its activities for the 2020/2021 financial year. In line with the statutory options and as in the
 
 --- pág. 12 ---
 
+12
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+Anlage 1.4 / 12 41009653-1376911
 
-three preceding financial years, the general partner
-has chosen to prepare a separate non-financial
-Group report pursuant to 8 315b (3) HGB that is not
-part ofthe Group management report, and to make
-this permanently available on the Company's
-website. The Supervisory board engaged KPMG to
-provide limited assurance over the separate Group
-non-financial statement. KPMG issued a limited
-assurance report based on this engagement. This
-means that, based on the work it performed and
-the evidence it obtained, nothing had come to
-KPMG's attention that caused it to believe that the
-separate non-financial Group report for the period
-from 1 July 2020 to 30 June 2021 had not been
-prepared, in all material respects, in accordance
-with 8 315b and 8 315c, in conjunction with 8 289c
-to 8289e HGB. The separate non-financial Group
-report and the review report prepared by KPMG
-were presented to the Supervisory Board. After
-discussing the topic at its meeting convened to
-approve the financial statements on 20 September
-2021, the Supervisory Board concurred with the
-findings of KPMG's limited assurance engagement
-and raised no objections to the separate
-non-financial Group report based on the findings
+three preceding financial years, the general partner has chosen to prepare a separate non-financial Group report pursuant to § 315b (3) HGB that is not part of the Group management report, and to make this permanently available on the Company's website. The Supervisory board engaged KPMG to provide limited assurance over the separate Group non-financial statement. KPMG issued a limited assurance report based on this engagement. This means that, based on the work it performed and the evidence it obtained, nothing had come to KPMG's attention that caused it to believe that the separate non-financial Group report for the period from 1 July 2020 to 30 June 2021 had not been prepared, in all material respects, in accordance with § 315b and § 315c, in conjunction with § 289c to §289e HGB. The separate non-financial Group report and the review report prepared by KPMG were presented to the Supervisory Board. After discussing the topic at its meeting convened to approve the financial statements on 20 September 2021, the Supervisory Board concurred with the findings of KPMG's limited assurance engagement and raised no objections to the separate non-financial Group report based on the findings of its own review.
 
-of its own review.
+The Supervisory Board proposes to the Annual General Meeting that the annual financial statements as at 30 June 2021 be adopted. In the annual financial statements (separate financial statements) prepared in accordance with German commercial law (HGB) as at 30 June 2021, the Company reported a net loss for the year of EUR 76,478,856.69 and net accumulated losses of EUR 126,141,140.59. This earnings situation means that the general partner and the Supervisory Board are not able to make a proposal to the Annual General Meeting on the appropriation of net profit, or to recommend that it resolve to distribute a dividend.
 
-The Supervisory Board proposes to the Annual
-General Meeting thatthe annual financial statements
-as at 30 June 2021 be adopted. Inthe annual financial
-statements (separate financial statements) prepared
-in accordance with German commercial law (HGB)
-as at 30 June 2021, the Company reported a net loss
-for the year of EUR 76,478,856.69 and net
-accumulated losses of EUR 126,141,140.59. This
-earnings situation means that the general partner
-and the Supervisory Board are not able to make a
-proposal to the Annual General Meeting on the
-appropriation of net profit, or to recommend that it
+Moreover, the Supervisory Board proposes ratifying the actions of the general partner, Borussia Dortmund Geschäftsführungs-GmbH, for the 2020/2021 financial year.
 
-resolve to distribute a dividend.
+### Corporate governance
 
-Moreover, the Supervisory Board proposes ratifying
-the actions of the general partner, Borussia
-Dortmund Geschäftsführungs-GmbH, for the
-2020/2021 financial year.
+The Supervisory Board and the management of the general partner also dealt with issues of corporate governance during the reporting period.
 
-Corporate governance
-The Supervisory Board and the management of the
-general partner also dealt with issues of corporate
+The members of the Supervisory Board were and are provided with appropriate assistance upon taking up their positions and when participating in further or continuing education. For instance, the Company organised a continuing education course for the Supervisory Board during the reporting period on the accounting particularities of publicly traded football companies. All members of the Supervisory Board were also given access to inspect the Company's athletic, training and other facilities and match operations in line with pandemic-related rules and regulations. Since September 2020, all members of the Supervisory Board have been provided with a trade journal (including online content) for educational purposes.
 
-governance during the reporting period.
-
-The members of the Supervisory Board were and
-are provided with appropriate assistance upon
-taking up their positions and when participating
-in further or continuing education. For instance,
-the Company organised a continuing education
-course for the Supervisory Board during the
-reporting period on the accounting particularities
-of publicly traded football companies. Allmembers
-of the Supervisory Board were also given access
-to inspect the Company'’s athletic, training and
-other facilities and match operations in line with
-pandemic-related rules and regulations. Since
-September 2020, allmembers of the Supervisory
-Board have been provided with a trade journal
-(including online content) for educational
-
-purposes.
-
-The current Declaration of Conformity was adopted
-atthe same time as the resolution on this report and
-relatesto the German Corporate Governance Code in
-the version dated 16 December 2019, which was
-published in the Federal Gazette (Bundesanzeiger) on
-20 March 2020. The full declaration is permanently
-available online at http://aktie.bvb.de/eng, under
-"Corporate Governance". Additional disclosures and
-explanations in this regard are made inthe corporate
-governance declaration, including on the Supervisory
-Board's self-assessment of itstasks and work that it
-
-conducted in the reporting year.
+The current Declaration of Conformity was adopted at the same time as the resolution on this report and relates to the German Corporate Governance Code in the version dated 16 December 2019, which was published in the Federal Gazette (*Bundesanzeiger*) on 20 March 2020. The full declaration is permanently available online at http://aktie.bvb.de/eng, under "Corporate Governance". Additional disclosures and explanations in this regard are made in the corporate governance declaration, including on the Supervisory Board's self-assessment of its tasks and work that it conducted in the reporting year.
 
 --- pág. 13 ---
 
-Personnel matters
-
-Mr Peer Steinbrück leftthe Supervisory Board atthe
-close ofthe Annual General Meeting on 19 November
-2020. The Supervisory Board would like to take this
-opportunity to sincerely thank him for his nearly ten
-years of service onthe Board. The Supervisory Board
-thoroughly enjoyed working with Mr Steinbrück. His
-
-acumen and advice was universally appreciated.
-
-The Annual General Meeting on 19 November 2020
-elected Ms Judith Dommermuth as a new member
-to the Supervisory Board and re-elected all other
-members of the Supervisory Board in office during
-
-the reporting year.
-
-In March 2021, the Executive Committee of
-the Advisory Board of Borussia Dortmund
-Geschäftsführungs-GmbH and Chairman of the
-management, Hans-Joachim Watzke, agreed to
-extend his existing service agreement (originally set
-to expire on 31 December 2022) until 31 December
-2025. Agreement was likewise reached with
-Managing Directors Thomas Treß and Carsten
-Cramer to extend their service agreements (originally
-set to expire on 30 June 2022 in each case) until 30
-June 2025 in each case. The Supervisory Board
-welcomes this continuity in the management team
-in these particularly challenging times during the
-pandemic and looks forward to continuing its
-
-working relationship with the management team.
-
-On 26 August 2021, Mr Gerd Pieper, who joined the
-Supervisory Board on 25 November 2003 and
-became its chairman on 2 November 2004, resigned
-from the Supervisory Board for health reasons,
-
-effective as atthe end of 24 September 2021.
-
+41009653-1376911 Anlage 1.4 / 13 13
 REPORT OF THE SUPERVISORY BOARD
 
-Consequently, at its meeting on 20 September 2021,
-the Supervisory appointed Mr Christian Kullmann,
-who had been the Deputy Chairman since the end of
-August 2019, as Chairman of the Supervisory Board
-and Mr Ulrich Leitermann as Deputy Chairman ofthe
-Supervisory Board, in each case with effect from 25
-September 2021.
+### Personnel matters
 
-The Supervisory Board would like to express its
-gratitude to the management, the Works Council and
-all employees for their enduring commitment and
-hard work, particularly when faced with the massive
+Mr Peer Steinbrück left the Supervisory Board at the close of the Annual General Meeting on 19 November 2020. The Supervisory Board would like to take this opportunity to sincerely thank him for his nearly ten years of service on the Board. The Supervisory Board thoroughly enjoyed working with Mr Steinbrück. His acumen and advice was universally appreciated.
 
-challenges posed by the COVID-19 pandemic.
+The Annual General Meeting on 19 November 2020 elected Ms Judith Dommermuth as a new member to the Supervisory Board and re-elected all other members of the Supervisory Board in office during the reporting year.
 
-The Supervisory Board also wishes to thank Borussia
+In March 2021, the Executive Committee of the Advisory Board of Borussia Dortmund Geschäftsführungs-GmbH and Chairman of the management, Hans-Joachim Watzke, agreed to extend his existing service agreement (originally set to expire on 31 December 2022) until 31 December 2025. Agreement was likewise reached with Managing Directors Thomas Treß and Carsten Cramer to extend their service agreements (originally set to expire on 30 June 2022 in each case) until 30 June 2025 in each case. The Supervisory Board welcomes this continuity in the management team in these particularly challenging times during the pandemic and looks forward to continuing its working relationship with the management team.
 
-Dortmund's business partners, shareholders and
+On 26 August 2021, Mr Gerd Pieper, who joined the Supervisory Board on 25 November 2003 and became its chairman on 2 November 2004, resigned from the Supervisory Board for health reasons, effective as at the end of 24 September 2021. Consequently, at its meeting on 20 September 2021, the Supervisory appointed Mr Christian Kullmann, who had been the Deputy Chairman since the end of August 2019, as Chairman of the Supervisory Board and Mr Ulrich Leitermann as Deputy Chairman of the Supervisory Board, in each case with effect from 25 September 2021.
 
-fans for their trust.
+The Supervisory Board would like to express its gratitude to the management, the Works Council and all employees for their enduring commitment and hard work, particularly when faced with the massive challenges posed by the COVID-19 pandemic.
+
+The Supervisory Board also wishes to thank Borussia Dortmund's business partners, shareholders and fans for their trust.
 
 Dortmund, 20 September 2021
 
 The Supervisory Board
 
 Christian Kullmann
-
 Deputy Chairman
-
-13
 
 --- pág. 14 ---
 
+14
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+Anlage 1.4 / 14 41009653-1376911
 
-EXECUTIVE BODIES
+## EXECUTIVE BODIES
 
-BV. BORUSSIA 09 e.V. DORTMUND
+### BV. BORUSSIA 09 e.V. DORTMUND
 
-Chairman
+**Chairman**
 
-Dr. Reinhard Rauball President
-Gerd Pieper Vice President
-Dr. Reinhold Lunow Treasurer
+| | |
+|---|---|
+| Dr. Reinhard Rauball | **President** |
+| Gerd Pieper | **Vice President** |
+| Dr. Reinhold Lunow | **Treasurer** |
 
-BORUSSIA DORTMUND GmbH & Co. KGaA
+### BORUSSIA DORTMUND GmbH & Co. KGaA
 
-Supervisory Board
+**Supervisory Board**
 
-Gerd Pieper Chairman
+- Gerd Pieper — **Chairman**
+  Retired; former Managing Director of Stadt-Parfümerie Pieper GmbH, Herne
+- Peer Steinbrück — (until 19 November 2020)
+  Senior Advisor to the Management Board of ING-DiBa AG, Frankfurt am Main
+- Bernd Geske
+  Managing partner of Bernd Geske Lean Communication, Meerbusch
+- Christian Kullmann — **Deputy Chairman**
+  Chairman of the Executive Board of Evonik Industries AG, Essen
+- Ulrich Leitermann
+  Chairman of the Managing Boards of group parent companies of the SIGNAL IDUNA Group, Dortmund
+- Bjørn Gulden
+  Chief Executive Officer of PUMA SE, Herzogenaurach
+- Dr. Reinhold Lunow
+  Medical Director of Praxisklinik Bornheim, Bornheim
+- Silke Seidel
+  Senior Executive at Dortmunder Stadtwerke Aktiengesellschaft and Managing Director of Hohenbuschei Beteiligungsgesellschaft mbH, Westfalentor 1 GmbH and Dortmund Logistik GmbH, all in Dortmund
+- Bodo Löttgen
+  Chair of the CDU parliamentary group in the state parliament of North Rhine-Westphalia, detective chief inspector (Kriminalhauptkommissar) (ret.), public administration graduate
+- Judith Dommermuth — (since 19 November 2020)
+  Managing partner of JUVIA Verwaltungs GmbH, Cologne
 
-Retired; former Managing Director of Stadt-Parfümerie Pieper GmbH, Herne
+### BORUSSIA DORTMUND GESCHÄFTSFÜHRUNGS-GmbH
 
-Peer Steinbrück (until 19 November 2020)
+**Management**
 
-Senior Advisor to the Management Board of ING-DiBa AG, Frankfurt am Main
-
-Bernd Geske
-
-Managing partner of Bernd Geske Lean Communication, Meerbusch
-
-Christian Kullmann Deputy Chairman
-
-Chairman of the Executive Board of Evonik Industries AG, Essen
-
-Ulrich Leitermann
-
-Chairman of the Managing Boards of group parent companies ofthe SIGNAL IDUNA Group, Dortmund
-
-Bjorn Gulden
-
-Chief Executive Officer of PUMA SE, Herzogenaurach
-
-Dr. Reinhold Lunow
-
-Medical Director of Praxisklinik Bornheim, Bornheim
-
-Silke Seidel
-
-Senior Executive at Dortmunder Stadtwerke Aktiengesellschaft
-and Managing Director of Hohenbuschei Beteiligungsgesellschaft mbH, Westfalentor 1 GmbH
-and Dortmund Logistik GmbH, all in Dortmund
-
-Bodo Löttgen
-
-Chair of the CDU parliamentary group in the state parliament of North Rhine-Westphalia,
-detective chief inspector (Kriminalhauptkommissar] [ret.), public administration graduate
-
-Judith Dommermuth (since 19 November 2020]
-
-Managing partner of JUVIA Verwaltungs GmbH, Cologne
-
-BORUSSIA DORTMUND GESCHÄFTSFÜHRUNGS-GmbH
-
-Management
-
-Hans-Joachim Watzke Managing Director (Chairman)
-Thomas Treß Managing Director
-Carsten Cramer Managing Director
-
+| | |
+|---|---|
+| Hans-Joachim Watzke | **Managing Director (Chairman)** |
+| Thomas Treß | **Managing Director** |
+| Carsten Cramer | **Managing Director** |
 
 --- pág. 15 ---
 
+41009653-1376911 Anlage 1.4 / 15 15
 EXECUTIVE BODIES/CORPORATE STRUCTURE
 
-CORPORATE STRUCTURE
-U
+## CORPORATE STRUCTURE
 
-BORUSSIA DORTMUND GmbH & Co. KGaA
+### BORUSSIA DORTMUND GmbH & Co. KGaA
 
-100.00% BVB Stadionmanagement GmbH
-
-100.00% BVB Merchandising GmbH
-
-100.00% BVB Event & Catering GmbH
-
-100.00% besttravel dortmund GmbH
-
-100.00% BVB Asia Pacific Pte. Ltd.
-
-100.00% BVB Fußballakademie GmbH
-
-33.33% _Orthomed Medizinisches Leistungs- und
-Rehabilitationszentrum GmbH
-
-15
+| | |
+|---|---|
+| 100.00% | BVB Stadionmanagement GmbH |
+| 100.00% | BVB Merchandising GmbH |
+| 100.00% | BVB Event & Catering GmbH |
+| 100.00% | besttravel dortmund GmbH |
+| 100.00% | BVB Asia Pacific Pte. Ltd. |
+| 100.00% | BVB Fußballakademie GmbH |
+| 33.33% | Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH |
 
 --- pág. 16 ---
 
@@ -1229,57 +780,11 @@ THE SHARES
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+18
 
-of the managing directors Hans-Joachim Watzke,
-Thomas Treß and Carsten Cramer had in each case
-been extended by three years (see ad hoc
-disclosure from the same date). The market
-responded positively to this announcement. On the
-same day, BVB shares traded at EUR 5.46, at EUR
-5.56 on the following day, and at EUR 5.43 on 31
-March 2021.
+of the managing directors Hans-Joachim Watzke, Thomas Treß and Carsten Cramer had in each case been extended by three years (see ad hoc disclosure from the same date). The market responded positively to this announcement. On the same day, BVB shares traded at EUR 5.46, at EUR 5.56 on the following day, and at EUR 5.43 on 31 March 2021.
 
-The BVB shares listed at EUR 5.48 on 1 April 2021.
-Following defeat at the hands of a direct
-Bundesliga rival in the battle to secure automatic
-qualification for the UEFA Champions League and
-with the team a sizeable seven points short of
-fourth place in the table, the share price dropped
-to EUR 5.27 on 6 April 2021 and EUR 5.19 on 7 April
-2021. The share price then rebounded gradually
-as the club won the first of what turned out to be
-a run of victories culminating in the qualification
-for the UEFA Champions League. BVB shares
-traded at EUR 5.26 on 12 April 2021, EUR 5.42 on
-15 April 2021, EUR 5.68 on 22 April 2021 and EUR
-5.83 on 30 April 2021. This positive trend then
-continued into May 2021. The BVB shares traded
-at EUR 5.73 on 7 May 2021. On 10 May 2021, the
-Company announced its preliminary figures for
-the third quarter (see ad hoc disclosure from the
-same date), with BVB's shares trading at EUR 5.96
-
-that day. The BVB shares traded at EUR 5.96 on 13
-May 2021. After winning the DFB Cup that evening,
-they then traded at EUR 6.33 the following day, 14
-May 2021. After the Bundesliga season was
-completed under the special conditions governing
-the special match operations, the Company on 25
-May 2021 published an outlook ofthe key earnings
-figures for the 2020/2021 financial year and
-announced, among other things, that Borussia
-Dortmund expected to report consolidated EBITDA
-of approximately EUR 33.0 million and a
-consolidated net loss of approximately EUR 75
-million for the overall 2020/2021 financial year
-(see ad-hoc disclosure from the same date). On
-that day, the BVB shares traded at EUR 68.11. BVB
-shares traded at EUR 8.12 on 26 May 2021, EUR
-6.01 on 1 June 2021, EUR 8.17 on 4 June 2021 and
-reached their high for the reporting period of EUR
-6.54 on 10 June 2021. The reporting period ended
-with BVB's shares trading at EUR 6.22 on 30 June
-2021 (previous year: EUR 5.78).
+The BVB shares listed at EUR 5.48 on 1 April 2021. Following defeat at the hands of a direct Bundesliga rival in the battle to secure automatic qualification for the UEFA Champions League and with the team a sizeable seven points short of fourth place in the table, the share price dropped to EUR 5.27 on 6 April 2021 and EUR 5.19 on 7 April 2021. The share price then rebounded gradually as the club won the first of what turned out to be a run of victories culminating in the qualification for the UEFA Champions League. BVB shares traded at EUR 5.26 on 12 April 2021, EUR 5.42 on 15 April 2021, EUR 5.68 on 22 April 2021 and EUR 5.83 on 30 April 2021. This positive trend then continued into May 2021. The BVB shares traded at EUR 5.73 on 7 May 2021. On 10 May 2021, the Company announced its preliminary figures for the third quarter (see ad hoc disclosure from the same date), with BVB's shares trading at EUR 5.96 that day. The BVB shares traded at EUR 5.96 on 13 May 2021. After winning the DFB Cup that evening, they then traded at EUR 6.33 the following day, 14 May 2021. After the Bundesliga season was completed under the special conditions governing the special match operations, the Company on 25 May 2021 published an outlook of the key earnings figures for the 2020/2021 financial year and announced, among other things, that Borussia Dortmund expected to report consolidated EBITDA of approximately EUR 33.0 million and a consolidated net loss of approximately EUR 75 million for the overall 2020/2021 financial year (see ad-hoc disclosure from the same date). On that day, the BVB shares traded at EUR 6.11. BVB shares traded at EUR 6.12 on 26 May 2021, EUR 6.01 on 1 June 2021, EUR 6.17 on 4 June 2021 and reached their high for the reporting period of EUR 6.54 on 10 June 2021. The reporting period ended with BVB's shares trading at EUR 6.22 on 30 June 2021 (previous year: EUR 5.78).
 
 --- pág. 19 ---
 
@@ -1500,479 +1005,111 @@ THE SHARES
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+22 Anlage 1.4 / 22 41009653-1376911
 
-22
+## CORPORATE GOVERNANCE REPORTING
 
-CORPORATE GOVERNANCE REPORTING
+Our Company believes it is essential for corporate governance to be clearly structured and effective. Corporate governance embodies a responsible and transparent system of checks and balances designed to ensure a continued focus on sustainable value creation. Efficient cooperation between the management and the Supervisory Board, the preservation of shareholder interests, and open and transparent corporate communications are vital aspects of sound corporate governance. This is the guiding principle for the Company's Supervisory Board and for the management of Borussia Dortmund Geschäftsführungs-GmbH in its capacity as the general partner of Borussia Dortmund GmbH & Co. KGaA.
 
-Our Company believes it is essential for corporate
-governance to be clearly structured and effective.
-Corporate governance embodies a responsible and
-transparent system of checks and balances designed
-to ensure a continued focus on sustainable value
-creation. Efficient cooperation between the
+## GENERAL INFORMATION ON CORPORATE GOVERNANCE AT BORUSSIA DORTMUND GmbH & Co. KGaA
 
-management and the Supervisory Board, the
+German stock corporation law sets out the statutory framework of corporate governance. Pursuant to § 161 AktG, the executive board and the supervisory board of a listed company are required to submit each year a declaration as to whether and to what extent that company has complied (retrospective) or will comply (forward-looking) with the recommendations of the "Government Commission of the German Corporate Governance Code" contained in the German Corporate Governance Code as published in the official section of the electronic Federal Gazette. Although companies may opt to deviate from the Code, they are then obligated to disclose this on an annual basis, providing an explanation for their non-compliance ("comply or explain"). This option exists to ensure that companies are able to meet industry- or company-specific requirements. A well-founded deviation from a recommendation of the Code may be in the interest of sound corporate governance.
 
-preservation of shareholder interests, and open and
-transparent corporate communications are vital
-aspects of sound corporate governance. This is the
-guiding principle forthe Company’s Supervisory Board
-and for the management of Borussia Dortmund
-Geschäftsführungs-GmbH in its capacity asthe general
+The Code is generally reviewed once annually and amended as required. It reflects basic statutory guidelines concerning the management and supervision of listed German companies as well as internationally and nationally recognised standards for sound and responsible corporate governance. In addition to formulating best practices for management, the Code is intended to ensure that corporate governance in Germany is transparent and open to scrutiny and to promote confidence in the management and supervision of listed German companies amongst international and national investors, customers, employees and the public.
 
-partner of Borussia Dortmund GmbH & Co. KGaA.
-
-GENERAL INFORMATION ON CORPORATE GOVERNANCE
-AT BORUSSIA DORTMUND GmbH & Co. KGaA
-
-German stock corporation law sets out the statutory
-framework of corporate governance. Pursuant to &
-161 AktG, the executive board and the supervisory
-board of a listed company are required to submit
-each year a declaration as to whether and to what
-extent that company has complied (retrospective)
-or will comply (forward-looking) with the
-recommendations of the "Government Commission
-of the German Corporate Governance Code"
-contained in the German Corporate Governance
-Code as published in the official section of the
-electronic Federal Gazette. Although companies
-may opt to deviate from the Code, they are then
-obligated to disclose this on an annual basis,
-providing an explanation for their non-compliance
-("comply or explain"). This option exists to ensure
-that companies are able to meet industry- or
-company-specific requirements. A well-founded
-deviation from a recommendation of the Code may
-
-be in the interest of sound corporate governance.
-
-The Code is generally reviewed once annually and
-amended as required. It reflects basic statutory
-guidelines concerning the management and
-supervision of listed German companies as well as
-internationally and nationally recognised standards
-for sound and responsible corporate governance. In
-addition to formulating best practices for
-management, the Code is intended to ensure that
-corporate governance in Germany is transparent
-and open to scrutiny and to promote confidence in
-the management and supervision of listed German
-companies amongst international and national
-
-investors, customers, employees and the public.
-
-A large number of the Code's recommendations
-(expressed using the word "shall") are intended
-exclusively for German stock corporations
-(Aktiengesellschaft, "AG*), meaning that they are
-either not applicable at allor must at best be applied
-mutatis mutandis to partnerships limited by shares
-(Kommanditgesellschaft auf Aktien, "KGaA'), i.e., our
-
-Company as well.
+A large number of the Code's recommendations (expressed using the word "shall") are intended exclusively for German stock corporations (*Aktiengesellschaft*, "AG"), meaning that they are either not applicable at all or must at best be applied *mutatis mutandis* to partnerships limited by shares (*Kommanditgesellschaft auf Aktien*, "KGaA"), i.e., our Company as well.
 
 --- pág. 23 ---
 
-A KGaA is a hybrid corporate form combining
-elements of a German stock corporation and a
-limited partnership (Kommanditgesellschaft). It is a
-separate legal entity whose share capital is divided
-into shares which are held by at least one
-shareholder (the general partner) that has unlimited
-liability against creditors ofthe Company and limited
-partners (Kommanditaktionäre) that are not
-personally liable for the debts ofthe company (8 278
-(1) Akt6).
-
-The key differences between a KGaA and a German
-
-stock corporation can be characterised as follows:
-
-. Borussia Dortmund GmbH & Co. KGaA does
-not have an executive board. Instead, the
-general partner, Borussia Dortmund
-Geschäftsführungs-GmbH, is solely responsible
-for its management and representation.
-This German limited liability company
-(Gesellschaft mit beschränkter Haftung, "GmbH')
-is in turn represented by one or more
-managing directors; its sole shareholder is
-
-Ballspielverein Borussia 09 e.V. Dortmund.
-
-. The rights and duties of the KGaA's
-Supervisory Board, which is appointed by the
-Annual General Meeting, are limited.
-Specifically, it has no authority to appoint and
-dismiss Managing Directors of Borussia
-Dortmund Geschäftsführungs-GmbH or to
-stipulate the terms of their service
-agreements. Nor is the Supervisory Board
-authorised to adopt internal rules of
-
-procedure or a list of transactions requiring
-
+41009653-1376911 Anlage 1.4 / 23 23
 CORPORATE GOVERNANCE REPORTING
 
-its consent on behalf of the general partner.
-Rather, such rights and duties are vested in
-the governing bodies of Borussia Dortmund
-Geschäftsführungs-GmbH, namely its
-Advisory Board and the Executive Committee
+A KGaA is a hybrid corporate form combining elements of a German stock corporation and a limited partnership (*Kommanditgesellschaft*). It is a separate legal entity whose share capital is divided into shares which are held by at least one shareholder (the general partner) that has unlimited liability against creditors of the Company and limited partners (*Kommanditaktionäre*) that are not personally liable for the debts of the company (§ 278 (1) AktG).
 
-created by the Advisory Board.
+The key differences between a KGaA and a German stock corporation can be characterised as follows:
 
-. Additional features specific to the KGaA’s
-Annual General Meeting are set forth
-primarily in 88 285 and 286 (1) AktG and in
+- Borussia Dortmund GmbH & Co. KGaA does not have an executive board. Instead, the general partner, Borussia Dortmund Geschäftsführungs-GmbH, is solely responsible for its management and representation. This German limited liability company (*Gesellschaft mit beschränkter Haftung*, "GmbH") is in turn represented by one or more managing directors; its sole shareholder is Ballspielverein Borussia 09 e.V. Dortmund.
+- The rights and duties of the KGaA's Supervisory Board, which is appointed by the Annual General Meeting, are limited. Specifically, it has no authority to appoint and dismiss Managing Directors of Borussia Dortmund Geschäftsführungs-GmbH or to stipulate the terms of their service agreements. Nor is the Supervisory Board authorised to adopt internal rules of procedure or a list of transactions requiring its consent on behalf of the general partner. Rather, such rights and duties are vested in the governing bodies of Borussia Dortmund Geschäftsführungs-GmbH, namely its Advisory Board and the Executive Committee created by the Advisory Board.
+- Additional features specific to the KGaA's Annual General Meeting are set forth primarily in §§ 285 and 286 (1) AktG and in the Company's Articles of Association.
 
-the Company's Articles of Association.
+As a consequence, a Declaration of Conformity in accordance with § 161 AktG must be submitted by the management of the general partner and the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA, taking into account the specific characteristics of the KGaA's legal form and the provisions of the Articles of Association.
 
-As a consequence, a Declaration of Conformity in
-accordance with $ 161 AktG must be submitted by
-the management of the general partner and the
-Supervisory Board of Borussia Dortmund GmbH &
-Co. KGaA, taking into account the specific
-characteristics of the KGaA's legal form and the
+In our assessment, the following recommendations of the Code are not applicable (including *mutatis mutandis*) to the specific characteristics of the KGaA legal form and the provisions of the Company's Articles of Association:
 
-provisions of the Articles of Association.
-
-Inour assessment, the following recommendations
-of the Code are not applicable (including mutatis
-mutandis) to the specific characteristics ofthe KGaA
-legal form and the provisions of the Company's
-
-Articles of Association:
-
-. The Code makes various recommendations
-to the Supervisory Board in respect of
-executive board remuneration, namely G.4,
-6.8 and 6.13 of the Code. The Code makes a
-large number of other recommendations to
-the Supervisory Board in respect of the
-remuneration system for executive board
-members and/or the structure of their
-
-individual remuneration. As follows from the
-
-23
+- The Code makes various recommendations to the Supervisory Board in respect of executive board remuneration, namely G.4, G.8 and G.13 of the Code. The Code makes a large number of other recommendations to the Supervisory Board in respect of the remuneration system for executive board members and/or the structure of their individual remuneration. As follows from the
 
 --- pág. 24 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+24 Anlage 1.4 / 24 41009653-1376911
 
-24
+justification to the Code given by the Government Commission, all of these recommendations are based, either in substance or method, on the statutory provisions for a German stock corporation (*Aktiengesellschaft*) under § 87 (1) of the German Stock Corporation Act (*Aktiengesetz*, "AktG") and/or § 87a AktG, which entered into force on 1 January 2020. These statutory provisions are not applicable to our Company – either directly or *mutatis mutandis* – on account of its legal form, which we believe was a conscious decision on the part of the legislator. As such, recommendations G.1 to G.3, G.5 to G.7, G.9 to G.13, G.15 and G.16 of the Code are likewise not applicable to our Company. By contrast, Article 7 of the Company's Articles of Association stipulates that the general partner has a right to reimbursement of the staff and materials expenses incurred by it in the course of managing the Company, plus a commission amounting to 3% of the net profit for the year generated by the Company. Otherwise, the fixed and variable remuneration for the Managing Directors of Borussia Dortmund Geschäftsführungs-GmbH was and is resolved by the Executive Committee formed by that company, which also reviews the Managing Directors' employment agreements for appropriateness and compliance with standard market practice when entering into or extending them. For practical reasons, the recommendations of the Code with respect to the remuneration system for executive board members and/or executive board pay, and on the role of the Supervisory Board, which in some respects are considered to be over-regulation, have not been and will not be applied on a voluntary basis by the Executive Committee.
 
-justification to the Code given by the
-Government Commission, all of these
-recommendations are based, either in
-substance or method, on the statutory
-provisions for a German stock corporation
-(Aktiengesellschaft) under & 87 (1) of the
-German Stock Corporation Act (Aktiengesetz,
-"AktG") and/or 8 87a AktG, which entered into
-force on 1 January 2020. These statutory
-provisions are not applicable to our Company
-- either directly or mutatis mutandis - on
-account of its legal form, which we believe
-was a conscious decision on the part of the
-legislator. As such, recommendations G.1 to
-6.3, 6.5 to 6.7, 6.9 to 6.13, 6.15 and 6.16 of
-the Code are likewise not applicable to our
-Company. By contrast, Article 7 of the
-Company's Articles of Association stipulates
-that the general partner has a right to
-reimbursement of the staff and materials
-expenses incurred by it in the course of
-managing the Company, plus a commission
-amounting to 3% of the net profit for the year
-generated by the Company. Otherwise, the
-fixed and variable remuneration for the
-Managing Directors of Borussia Dortmund
-Geschäftsführungs-GmbH was and is
-resolved by the Executive Committee formed
-by that company, which also reviews the
-Managing Directors’ employment agreements
-for appropriateness and compliance with
-standard market practice when entering into
-or extending them. For practical reasons, the
+- We nevertheless disclose the remuneration of the individual Managing Directors of our Company's general partner, Borussia Dortmund Geschäftsführungs-GmbH, on a voluntary basis in the notes to the annual and consolidated financial statements. The version of § 285 no. 9 (a) sentences 5 *et seq.* HGB still applicable to annual and consolidated financial statements and (group) management reports for financial years beginning before 1 January 2021 in accordance with Article 83 (1) sentence 2 EGHGB is only applicable to listed stock corporations and the remuneration paid to the members of their executive boards, however not the KGaA legal form.
 
-recommendations ofthe Code with respect to
+Despite the specific characteristics of our Company's legal form, however, the following recommendations of the Code are applied *mutatis mutandis* or in modified form, which we do not consider a deviation from the Code:
 
-the remuneration system for executive board
-members and/or executive board pay, and on
-the role of the Supervisory Board, which in
-some respects are considered to be
-over-regulation, have not been and will not be
-applied on a voluntary basis by the Executive
-
-Committee.
-
-We nevertheless disclose the remuneration
-of the individual Managing Directors of our
-Company's general partner, Borussia
-Dortmund Geschäftsführungs-GmbH, on a
-voluntary basis in the notes to the annual and
-consolidated financial statements. The
-version of 8 285. no. 9 (a) sentences 5 et seq.
-HGB sstill applicable to annual and
-consolidated financial statements and (group)
-management reports for financial years
-beginning before 1 January 2021 in
-accordance with Article 83 (1) sentence 2
-EGHGB is only applicable to listed stock
-corporations and the remuneration paid to
-the members of their executive boards,
-
-however not the KGaA legal form.
-
-Despite the specific characteristics of our
-Company's legal form, however, the following
-recommendations of the Code are applied mutatis
-mutandis or in modified form, which we do not
-
-consider a deviation from the Code:
-
-Long-term succession planning within the
-meaning of recommendations B.1 and B.2,
-
-first half-sentence of the Code is the
+- Long-term succession planning within the meaning of recommendations B.1 and B.2, first half-sentence of the Code is the
 
 --- pág. 25 ---
 
-responsibility of the Managing Directors of
-the Company and - given that the
-Supervisory Board has no authority to
-appoint or dismiss personnel - the Executive
-Committee of Borussia Dortmund
-Geschäftsführungs-GmbH. This planning
-takes place in regular dialogue between the
-management and the Executive Committee,
-which determine profiles of skills and
-expertise for management personnel based
-on the corporate strategy and internal
-corporate structure and management, and
-monitor relevant internal and external
-candidates. In this respect, scouting is
-something we use not just to find talented
-new footballers, but also in our human
-resource planning. Efforts are also ongoing
-within the Company to nurture up-and-coming
-management talent, for example by means of
-further education. The Company can also rely
-on its network and on outside service
-providers where necessary to recruit
-externally. The Executive Committee also acts
-to ensure sufficient diversity when staffing the
-
-management.
-
-In the case of the first-time appointment of
-Managing Directors of Borussia Dortmund
-Geschäftsführungs-GmbH, the Executive
-Committee follows the recommendation B.3
-of the Code, whereby executive board
-members at stock corporations should be
-
-appointed for amaximum of three years.
-
+41009653-1376911 Anlage 1.4 / 25 25
 CORPORATE GOVERNANCE REPORTING
 
-. We consider the President of the Executive
-Committee, Dr Reinhard Rauball, who addresses
-the remuneration of the Managing Directors of
-Borussia Dortmund Geschäftsführungs-GmbH,
-to be independent within the meaning of the
+responsibility of the Managing Directors of the Company and – given that the Supervisory Board has no authority to appoint or dismiss personnel – the Executive Committee of Borussia Dortmund Geschäftsführungs-GmbH. This planning takes place in regular dialogue between the management and the Executive Committee, which determine profiles of skills and expertise for management personnel based on the corporate strategy and internal corporate structure and management, and monitor relevant internal and external candidates. In this respect, scouting is something we use not just to find talented new footballers, but also in our human resource planning. Efforts are also ongoing within the Company to nurture up-and-coming management talent, for example by means of further education. The Company can also rely on its network and on outside service providers where necessary to recruit externally. The Executive Committee also acts to ensure sufficient diversity when staffing the management.
 
-recommendation C.10 ofthe Code.
+- In the case of the first-time appointment of Managing Directors of Borussia Dortmund Geschäftsführungs-GmbH, the Executive Committee follows the recommendation B.3 of the Code, whereby executive board members at stock corporations should be appointed for a maximum of three years.
+- We consider the President of the Executive Committee, Dr Reinhard Rauball, who addresses the remuneration of the Managing Directors of Borussia Dortmund Geschäftsführungs-GmbH, to be independent within the meaning of the recommendation C.10 of the Code.
+- In application *mutatis mutandis* of the recommendation D.7 of the Code, a regular time slot is reserved at Supervisory Board meetings for discussions without the Managing Directors of the general partner.
+- Given that the Supervisory Board has no authority to appoint and dismiss Managing Directors of Borussia Dortmund Geschäftsführungs-GmbH or to stipulate the terms of their service agreements, not it but rather the Executive Committee of Borussia Dortmund Geschäftsführungs-GmbH is responsible for consenting to sideline activities of the Managing Directors of the general partner within the meaning of recommendation E.3 of the Code.
 
-. In application mutatis mutandis of the
-recommendation D.7 of the Code, a regular
-time slot is reserved at Supervisory Board
-meetings for discussions without the
-
-Managing Directors of the general partner.
-
-. Given that the Supervisory Board has no authority
-to appoint and dismiss Managing Directors
-of Borussia Dortmund Geschäftsführungs-
-GmbH or to stipulate the terms of their
-service agreements, not it but rather the
-Executive Committee of Borussia Dortmund
-Geschäftsführungs-GmbH is responsible for
-consenting to sideline activities of the Managing
-Directors of the general partner within the
-
-meaning of recommendation E.3 ofthe Code.
-
-The Declaration of Conformity must be made
-permanently available to shareholders on the
-Company's website. It is published on the investor
-relations website, http://aktie.bvb.de/eng, under
-"Corporate Governance". In addition, the Declaration
-of Conformity submitted in September 2021, as
-reproduced below, is an integral part of this
-
-corporate governance declaration.
-
-25
+The Declaration of Conformity must be made permanently available to shareholders on the Company's website. It is published on the investor relations website, http://aktie.bvb.de/eng, under "Corporate Governance". In addition, the Declaration of Conformity submitted in September 2021, as reproduced below, is an integral part of this corporate governance declaration.
 
 --- pág. 26 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+26 Anlage 1.4 / 26 41009653-1376911
 
-26
+While the Company's corporate governance report presented here is published as part of the corporate governance declaration (on the Company's website http://aktie.bvb.de/eng under "Corporate Governance" / "Corporate governance declaration"), the corporate governance reports for the 2017/2018 and previous financial years were published in the annual reports for the respective financial years. These are available on our investor relations website http://aktie.bvb.de/eng, under "Publications".
 
-While the Company’'s corporate governance report
-presented here is published as part of the corporate
-governance declaration (on the Company's website
-http://aktie.bvb.de/eng under "Corporate Governance"
-/ "Corporate governance declaration‘), the corporate
-governance reports for the 2017/2018 and previous
-financial years were published inthe annual reports for
-the respective financial years. These are available on
-our investor relations website http://aktie.bvb.de/eng,
+### Transparency
 
-under "Publications".
+The Company provides the limited liability shareholders, shareholders' associations, financial analysts and the general public regular notifications regarding the position of the Company and on material business developments.
 
-Transparency
+In particular, we publish ad hoc disclosures and corporate news on our website, as well as voting rights notifications and managers' transactions notifications submitted to us, information on the shareholder structure, the current version of the Articles of Association and the financial calendar.
 
-The Company provides the limited liability
-shareholders, shareholders’ associations, financial
-analysts and the general public regular notifications
-regarding the position of the Company and on
+The financial calendar includes the dates for key Company events, and can be accessed online at http://aktie.bvb.de/eng, under "Financial Calendar".
 
-material business developments.
+As in previous years, the Annual Press Conference on the "preliminary" figures of the previous financial year will be streamed live so that the general public may watch the conference online in real time.
 
-In particular, we publish ad hoc disclosures and
-corporate news on our website, as well as voting
-rights notifications and managers’' transactions
-notifications submitted to us, information on the
-shareholder structure, the current version of the
+The previous year's Annual General Meeting was convened in due and proper form and held on 19 November 2020 as a virtual Annual General Meeting without the physical presence of the limited liability shareholders or their proxies. In compliance with the German Corporate Governance Code, the reports and documents required by law were made available for inspection; these were given to the limited liability shareholders upon request and were published on the Company's website together with the agenda. The resolutions on all agenda items were approved, with votes in favour ranging between 87.11% and 99.97% of the votes cast.
 
-Articles of Association and the financial calendar.
+The next Annual General Meeting of Borussia Dortmund GmbH & Co. KGaA will take place on 2 December 2021. Given the COVID-19 pandemic, this is expected to be held as a virtual Annual General Meeting without the physical presence of the limited liability shareholders or their proxies.
 
-The financial calendar includes the dates for key
-Company events, and can be accessed online at
-
-http://aktie.bvb.de/eng, under "Financial Calendar".
-
-As in previous years, the Annual Press Conference
-on the "preliminary" figures of the previous financial
-year will be streamed live so thatthe general public
-
-may watch the conference online in real time.
-
-The previous year's Annual General Meeting was
-convened in due and proper form and held on 19
-November 2020 as a virtual Annual General Meeting
-without the physical presence of the limited liability
-shareholders or their proxies. In compliance with
-the German Corporate Governance Code, the reports
-and documents required by law were made
-available for inspection; these were given to the
-limited liability shareholders upon request and were
-published on the Company's website together with
-the agenda. The resolutions on all agenda items
-were approved, with votes in favour ranging
-between 87.11% and 99.97% of the votes cast.
-
-The next Annual General Meeting of Borussia
-Dortmund GmbH & Co. KGaA will take place on 2
-December 2021. Given the COVID-19 pandemic, this
-is expected to be held as a virtual Annual General
-Meeting without the physical presence of the limited
-
-liability shareholders or their proxies.
-
-The half-yearly and other interim financial reports
-shall be published at the intervals recommended in
-the Code. The Company will provide further details
-viaadhoc announcements. The consolidated financial
-statements, the Group management report and the
-interim financial reports are prepared in accordance
-with International Financial Reporting Standards
-(IFRSs) as adopted by the member states of the EU.
-The annual financial statements and management
-report of Borussia Dortmund GmbH & Co. KGaA were
-and will continue to be prepared in accordance with
-the provisions of the German Commercial Code
-(Handelsgesetzbuch, "HGB*) and the German Stock
-Corporation Act (Aktiengesetz, "AktG).
+The half-yearly and other interim financial reports shall be published at the intervals recommended in the Code. The Company will provide further details via ad hoc announcements. The consolidated financial statements, the Group management report and the interim financial reports are prepared in accordance with International Financial Reporting Standards (IFRSs) as adopted by the member states of the EU. The annual financial statements and management report of Borussia Dortmund GmbH & Co. KGaA were and will continue to be prepared in accordance with the provisions of the German Commercial Code (*Handelsgesetzbuch*, "HGB") and the German Stock Corporation Act (*Aktiengesetz*, "AktG").
 
 --- pág. 27 ---
 
-Our Company stands for more than "just" football
-and takes its corporate social responsibility into
-account. A first, voluntary sustainability report
-covered the 2016/2017 financial year, i.e. the period
-from 1 July 2016 to 30 June 2017, and was based
-on the Global Reporting Initiative (GRI) Standards
-(Core option). The sustainability reports for
-subsequent financial years (i.e., from the 2017/2018
-financial year onwards) also contain a separate
-non-financial Group report in accordance with 8
-315b (3) HGB, and many ofthe aspects it covers and
-disclosures it contains also relate to compliance and
-risk management. The sustainability reports are
-published online at https://aktie.bvb.de/eng under
-
-"Corporate Governance"/"Sustainability Report".
-
-Moreover, we publish analysts’ recommendations and
-research studies on our website http://aktie.bvb.de/eng,
-under "BVB Share"/"Capital Market View", in order to
-
-facilitate communication with market participants.
-
-Customers, fans and the public alike can also find
-additional information on the Company - including
-e.g. CVs and overviews of the key duties of
-Supervisory Board members as well as further
-information on the managing directors of the
-
-general partner - at http://aktie.bvb.de/eng.
-
-A considerable number of publications on our
-website have been and will continue to be made
-
-available in English.
-
+41009653-1376911 Anlage 1.4 / 27 27
 CORPORATE GOVERNANCE REPORTING
 
-The Notes to the financial statements and the
-management report contain disclosures on the
-remuneration of the general partner and the
-members ofthe Supervisory Board, and the Annual
-Report contains disclosures on the ownership of
-Company shares by the general partner and
-members of its management and by the members
-of the Supervisory Board. Due to the specific
-characteristics of the KGaA legal form, there is
-currently no obligation to disclose the remuneration
-of individual Managing Directors of the general
-partner of the Company, Borussia Dortmund
-Geschäftsführungs-GmbH, as would normally be
-the case for the members of the executive boards
-of listed German stock corporations. Nonetheless,
-as referred to above we have presented the
-remuneration of individual Managing Directors in
-the notes to the annual and consolidated financial
+Our Company stands for more than "just" football and takes its corporate social responsibility into account. A first, voluntary sustainability report covered the 2016/2017 financial year, i.e. the period from 1 July 2016 to 30 June 2017, and was based on the Global Reporting Initiative (GRI) Standards (Core option). The sustainability reports for subsequent financial years (i.e., from the 2017/2018 financial year onwards) also contain a separate non-financial Group report in accordance with § 315b (3) HGB, and many of the aspects it covers and disclosures it contains also relate to compliance and risk management. The sustainability reports are published online at https://aktie.bvb.de/eng under "Corporate Governance"/"Sustainability Report".
 
-statements on a voluntary basis.
+Moreover, we publish analysts' recommendations and research studies on our website http://aktie.bvb.de/eng, under "BVB Share"/"Capital Market View", in order to facilitate communication with market participants.
 
-27
+Customers, fans and the public alike can also find additional information on the Company – including e.g. CVs and overviews of the key duties of Supervisory Board members as well as further information on the managing directors of the general partner – at http://aktie.bvb.de/eng.
+
+A considerable number of publications on our website have been and will continue to be made available in English.
+
+The Notes to the financial statements and the management report contain disclosures on the remuneration of the general partner and the members of the Supervisory Board, and the Annual Report contains disclosures on the ownership of Company shares by the general partner and members of its management and by the members of the Supervisory Board. Due to the specific characteristics of the KGaA legal form, there is currently no obligation to disclose the remuneration of individual Managing Directors of the general partner of the Company, Borussia Dortmund Geschäftsführungs-GmbH, as would normally be the case for the members of the executive boards of listed German stock corporations. Nonetheless, as referred to above we have presented the remuneration of individual Managing Directors in the notes to the annual and consolidated financial statements on a voluntary basis.
 
 --- pág. 28 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
-
-28
+28 Anlage 1.4 / 28 41009653-1376911
 
 Dortmund, 20 September 2021
 
@@ -1983,184 +1120,46 @@ Deputy Chairman
 
 On behalf of Borussia Dortmund Geschäftsführungs-GmbH
 
-Hans-Joachim Watzke Thomas Treß
-Managing Director (CEO) Managing Director
+Hans-Joachim Watzke
+Managing Director (CEO)
+
+Thomas Treß
+Managing Director
 
 Carsten Cramer
-
 Managing Director
 
 --- pág. 29 ---
 
-DECLARATION OF CONFORMITY
-
+41009653-1376911 Anlage 1.4 / 29 29
 CORPORATE GOVERNANCE REPORTING
 
-by the management and by the Supervisory Board of Borussia Dortmund
-GmbH & Co. KGaA in accordance with 8 161 AktG dated 20 September 2021
+## DECLARATION OF CONFORMITY
+**by the management and by the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA in accordance with § 161 AktG dated 20 September 2021**
 
-In accordance with 8 161 of the German Stock
-Corporation Act (Aktiengesetz, "AktG"), the
-management of the general partner (Borussia
-Dortmund Geschäftsführungs-GmbH) and the
-Supervisory Board of Borussia Dortmund GmbH &
-Co. KGaA declare that since the last Declaration of
-Conformity was submitted on 7 September 2020,
-Borussia Dortmund GmbH & Co. KGaA complied and
-will continue to comply with the recommendations
-of the German Corporate Governance Code (the
-"Code") in the version dated 16 December 2019
-(published in the Federal Gazette (Bundesanzeiger)
-on 20 March 2020), with the exception of the
-following deviations (please note that numerous
-recommendations of the Code, in particular those
-pertaining to the remuneration system for executive
-board members and/or executive board pay, are not
-applicable due to the specific characteristics of our
-Company's legal form as a partnership limited by
-shares (Kommanditgesellschaft auf Aktien, "KGaA');
-the respective disclosures and explanations are
+In accordance with § 161 of the German Stock Corporation Act (*Aktiengesetz*, "AktG"), the management of the general partner (Borussia Dortmund Geschäftsführungs-GmbH) and the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA declare that since the last Declaration of Conformity was submitted on 7 September 2020, Borussia Dortmund GmbH & Co. KGaA complied and will continue to comply with the recommendations of the German Corporate Governance Code (the "Code") in the version dated 16 December 2019 (published in the Federal Gazette (*Bundesanzeiger*) on 20 March 2020), with the exception of the following deviations (please note that numerous recommendations of the Code, in particular those pertaining to the remuneration system for executive board members and/or executive board pay, are not applicable due to the specific characteristics of our Company's legal form as a partnership limited by shares (*Kommanditgesellschaft auf Aktien*, "KGaA"); the respective disclosures and explanations are given in the corporate governance declaration):
 
-given in the corporate governance declaration):
+**Re recommendation A.2 sentence 2 first half-sentence:** In accordance with this recommendation, appropriate measures must be in place that allow employees to report any violations of the law within the Company, without fear of retaliation. No formal whistleblower system was put in place at our Company to date because the other opportunities to report violations of the law or internal Company guidelines, including where necessary in confidence, were considered sufficient and reasonable. Nevertheless, an institutionalised whistleblower system for Group employees and third parties will now be put in place during the second half of the 2021/2022 financial year. The requisite preparations have already been made to put the system in place.
 
-Re recommendation A.2 sentence 2 first half-
-sentence: In accordance with this recommendation,
-appropriate measures must be in place that allow
-employees to report any violations of the law within
-the Company, without fear of retaliation. No formal
-whistleblower system was put in place at our
+**Re recommendation B.4:** As in the past, the Executive Committee of Borussia Dortmund Geschäftsführungs-GmbH will continue to decide on the reappointment of its Managing Directors, including, even in the absence of special circumstances, prior to the end of one year before the end of the existing term of appointment. Given the specific features of the KGaA legal form and due to the desire for greater flexibility, it is not considered practicable to make any staffing decision based solely on timing and circumstances.
 
-Company to date because the other opportunities
-
-to report violations of the law or internal Company
-guidelines, including where necessary in
-confidence, were considered sufficient and
-reasonable. Nevertheless, an institutionalised
-whistleblower system for Group employees and
-third parties will now be put in place during the
-second half of the 2021/2022 financial year. The
-requisite preparations have already been made to
-
-put the system in place.
-
-Re recommendation B.4: As in the past, the
-Executive Committee of Borussia Dortmund
-Geschäftsführungs-GmbH will continue to decide
-on the reappointment of its Managing Directors,
-including, even in the absence of special
-circumstances, prior to the end of one year before
-the end of the existing term of appointment. Given
-the specific features ofthe KGaA legal form and due
-to the desire for greater flexibility, it is not
-considered practicable to make any staffing
-
-decision based solely on timing and circumstances.
-
-Re recommendation B.5: As in the past, the
-Executive Committee of Borussia Dortmund
-Geschäftsführungs-GmbH will continue to make
-decisions as to age limits for the Managing
-Directors of the general partner for upcoming
-(re-Jappointments of Managing Directors, without
-generally stipulating an age limit to that extent. Itis
-
-not considered practicable to set any age limits.
-
-29
+**Re recommendation B.5:** As in the past, the Executive Committee of Borussia Dortmund Geschäftsführungs-GmbH will continue to make decisions as to age limits for the Managing Directors of the general partner for upcoming (re-)appointments of Managing Directors, without generally stipulating an age limit to that extent. It is not considered practicable to set any age limits.
 
 --- pág. 30 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
+30 Anlage 1.4 / 30 41009653-1376911
 
-30
+**Re recommendations C.1 sentences 1 to 4 and C.2:** The Supervisory Board has not set any concrete objectives regarding its composition, has not prepared a profile of skills and experience, and has not established an age limit for Supervisory Board members. Nor are there plans to do so going forward. The Supervisory Board's continuing preference is to decide on proposals relating to its composition on a case-by-case basis in light of specific situations. Consequently, no further information was or is reported on this recommendation or its compliance with it. Notwithstanding the foregoing, compliance with the requirement, issued by the legislator, that the target proportion of women on the Supervisory Board be defined, remains mandatory (§ 278 (3) and § 111 (5) AktG as well as § 289f (3) and (2) no. 4 HGB).
 
-Re recommendations C.1 sentences 1 to 4 and C.2:
-The Supervisory Board has not set any concrete
-objectives regarding its composition, has not
-prepared a profile of skills and experience, and has
-not established an age limit for Supervisory Board
-members. Nor arethere plans to do so going forward.
-The Supervisory Board's continuing preference is to
-decide on proposals relating to its composition on a
-case-by-case basis in light of specific situations.
-Consequently, no further information was or is
-reported on this recommendation or its compliance
-with it. Notwithstanding the foregoing, compliance
-with the requirement, issued by the legislator, that
-the target proportion of women on the Supervisory
-Board be defined, remains mandatory (8 278 (3) and
-8 111 (5) AktG as well as 8 289f (3) and (2) no. 4 HGB).
+**Re recommendation C.5, second half-sentence:** This recommendation states that members of the management board of a listed company shall not accept the chairmanship of a supervisory board of a non-group listed company. Supervisory Board member Mr Christian Kullmann is the Chairman of the Executive Board of listed company Evonik Industries AG in Essen and will take up the position of Chairman of the Supervisory Board at our Company with effect from 25 September 2021 after having been elected at the meeting of the Supervisory Board on 20 September 2021. The Supervisory Board is convinced that Mr Kullmann has sufficient time available to discharge his duties, particularly given that he does hold any other positions covered by this recommendation. In addition, his considerable experience in corporate management, his deep understanding of business and his top-quality contacts, both in Germany and abroad, have made and will continue to make a key contribution to the effective work of the Supervisory Board, firstly as Deputy Chairman from August 2019 to date and going forward as Chairman. Following consideration, it is therefore considered reasonable to deviate from this recommendation.
 
-Re recommendation C.5, second half-sentence:
-This recommendation states that members of the
-management board of a listed company shall not
-accept the chairmanship of a supervisory board of
-a non-group listed company. Supervisory Board
-member Mr Christian Kullmann is the Chairman of
-the Executive Board of listed company Evonik
-Industries AG in Essen and willtake up the position
-of Chairman of the Supervisory Board at our
-Company with effect from 25 September 2021 after
-having been elected at the meeting of the
-Supervisory Board on 20 September 2021. The
-Supervisory Board is convinced that Mr Kullmann
-has sufficient time available to discharge his duties,
-particularly given that he does hold any other
-positions covered by this recommendation. In
-addition, his considerable experience in corporate
-management, his deep understanding of business
-and his top-quality contacts, both in Germany and
-abroad, have made and will continue to make a key
-contribution to the effective work of the Supervisory
-Board, firstly as Deputy Chairman from August 2019
+**Re recommendation C.13:** In its election proposals to the Annual General Meeting, the Supervisory Board does not disclose the personal and business relationships of every candidate with the Company, the governing bodies of the Company and limited liability shareholders with a material interest in the Company (i.e., those holding more than 10% of voting shares). Nor are there plans to do so going forward. In its opinion, no secure legal practice exists with respect to this recommendation. The legal certainty of Supervisory Board elections took and takes a higher priority than any effort to make legally unnecessary disclosures in connection with nominations.
 
-to date and going forward as Chairman. Following
+**Re recommendations D.2, D.3 and D.5:** To date, the Supervisory Board has not formed committees. It was the Supervisory Board's intention for all topics to be discussed by the Supervisory Board as a whole. This continues to apply to waiving the formation of a nomination committee as recommended in the Code, particularly given that the Supervisory Board already comprises solely shareholder representatives – which is a requirement of the Code when forming a nomination committee. By contrast, the Supervisory Board will form an audit committee, at the latest at its final meeting of 2021.
 
-consideration, itistherefore considered reasonable
-
-to deviate from this recommendation.
-
-Re recommendation C.13: In its election proposals
-to the Annual General Meeting, the Supervisory
-Board does not disclose the personal and business
-relationships of every candidate with the Company,
-the governing bodies of the Company and limited
-liability shareholders with a material interest inthe
-Company (i.e., those holding more than 10% of
-voting shares). Nor are there plans to do so going
-forward. In its opinion, no secure legal practice
-exists with respect to this recommendation. The
-legal certainty of Supervisory Board elections took
-and takes a higher priority than any effortto make
-legally unnecessary disclosures in connection with
-
-nominations.
-
-Re recommendations D.2, D.3 and D.5: To date, the
-Supervisory Board has not formed commiittees. It
-was the Supervisory Board's intention for all topics
-to be discussed by the Supervisory Board as a whole.
-This continues to apply to waiving the formation of a
-nomination committee as recommended in the Code,
-particularly given thatthe Supervisory Board already
-comprises solely shareholder representatives -
-which is a requirement of the Code when forming a
-nomination committee. By contrast, the Supervisory
-Board will form an audit committee, at the latest at
-
-its final meeting of 2021.
-
-Re recommendation E.1 sentence 2: The
-Supervisory Board reserves the right to not comply
-with the recommendation that it report to the
-Annual General Meeting on conflicts of interest as
-they arise and how they are addressed. The
-principle of confidentiality of deliberations within
-the Supervisory Board (see 8 116 sentence 2 AktG
-and principle 13 sentence 3) will generally take
-
-precedence.
+**Re recommendation E.1 sentence 2:** The Supervisory Board reserves the right to not comply with the recommendation that it report to the Annual General Meeting on conflicts of interest as they arise and how they are addressed. The principle of confidentiality of deliberations within the Supervisory Board (see § 116 sentence 2 AktG and principle 13 sentence 3) will generally take precedence.
 
 --- pág. 31 ---
 
@@ -4129,93 +3128,41 @@ carrying amounts for the players Maximilian Philipp,
 
 --- pág. 59 ---
 
-Abdou Diallo, Alexander Isak, Julian Weigl, Paco
-Alcäcer, Jacob Bruun Larsen and Sebastian Rode
-being derecognised, the only carrying amounts
-derecognised this financial year were for the players
-Ömer Toprak and Dzenis Burnic as well as for the
-former trainer Lucien Favre. This item also includes
-sales-related costs for departures and other
-
-(subsequent) variable transfer compensation.
-
-Expenses from match operations decreased by EUR
-8,576 thousand to EUR 41,405 thousand (previous
-year: EUR 49,981 thousand). This was due mainly
-to lower catering and match day expenses, as only
-three home matches were played for the 2020/2021
-
-season, with severely restricted stadium capacity.
-
-Advertising expenses decreased by EUR 15,826
-thousand. Despite the increase in advertising
-income, the newly signed agency licensing
-agreement with the marketing firm SPORTFIVE
-Germany GmbH made it possible to significantly
-
-reduce the agency commission payable.
-
-MANAGEMASHBEERORT
-
-Administrative expenses decreased during the
-financial year ended by EUR 2,279 thousand to EUR
-22,815 thousand. A slight increase in IT expenses
-was offset by significantliy lower travel,
-
-representation and event expenses.
-
-Other expenses decreased by EUR 4,106 thousand
-to EUR 4,816 thousand. This reduction was caused
-mainly by lower allowances on receivables and
-lower losses on disposals of fixed assets as well as
-
-lower expenses for office supplies.
-
-Financial result
-
-The financial result for financial year 2020/2021
-amounted to EUR -262 thousand (previous year:
-EUR 1,915 thousand) and breaks down as follows:
-Income and expenses from profit and loss transfer
-
-agreements amounted to EUR 259 thousand.
-
-These include the results of BVB Merchandising
-GmbH, BVB Event & Catering GmbH, BVB Stadion-
-management GmbH and BVB Fußballakademie
-GmbH and besttravel dortmund GmbH.
-
-Income and expenses from profit and loss transfer agreements
-
-Net profit/loss Net profit/loss
-01/07/2020 to 01/07/2019 to
-[EUR '000) 30/06/2021 30/06/2020
-BVB Stadionmanagement GmbH 42 64
-besttravel dortmund GmbH 100 566
-BVB Merchandising GmbH -748 2,458
-BVB Event & Catering GmbH 725 1,581
-BVB Fußballakademie GmbH 140 -
-259 4,669
-
-Furthermore, interest income of EUR 121 thousand
-was recognised and related to entirely to
-compounding.
-
-Interest expenses amounted to EUR 642 thousand
-and comprised mainly financing charges of EUR 554
-thousand and discounting effects of EUR 40
-
-thousand. In the previous year, interest expenses had
-
-amounted to EUR 2,934 thousand and comprised
-mainly EUR 1,323 thousand in discounting effects
-and EUR 1,452 thousand in financing charges.
-
-Tax on income of EUR 342 thousand were reported
-inthe 2020/2021 financial year (previous year:
-EUR -50 thousand).
-
+MANAGEMENT REPORT / LAGEBERICHT
 59
+
+Abdou Diallo, Alexander Isak, Julian Weigl, Paco Alcácer, Jacob Bruun Larsen and Sebastian Rode being derecognised, the only carrying amounts derecognised this financial year were for the players Ömer Toprak and Dženis Burnić as well as for the former trainer Lucien Favre. This item also includes sales-related costs for departures and other (subsequent) variable transfer compensation.
+
+Expenses from match operations decreased by EUR 8,576 thousand to EUR 41,405 thousand (previous year: EUR 49,981 thousand). This was due mainly to lower catering and match day expenses, as only three home matches were played for the 2020/2021 season, with severely restricted stadium capacity.
+
+Advertising expenses decreased by EUR 15,826 thousand. Despite the increase in advertising income, the newly signed agency licensing agreement with the marketing firm SPORTFIVE Germany GmbH made it possible to significantly reduce the agency commission payable.
+
+Administrative expenses decreased during the financial year ended by EUR 2,279 thousand to EUR 22,815 thousand. A slight increase in IT expenses was offset by significantly lower travel, representation and event expenses.
+
+Other expenses decreased by EUR 4,106 thousand to EUR 4,816 thousand. This reduction was caused mainly by lower allowances on receivables and lower losses on disposals of fixed assets as well as lower expenses for office supplies.
+
+### Financial result
+
+The financial result for financial year 2020/2021 amounted to EUR -262 thousand (previous year: EUR 1,915 thousand) and breaks down as follows:
+Income and expenses from profit and loss transfer agreements amounted to EUR 259 thousand.
+
+These include the results of BVB Merchandising GmbH, BVB Event & Catering GmbH, BVB Stadionmanagement GmbH and BVB Fußballakademie GmbH and besttravel dortmund GmbH.
+
+**Income and expenses from profit and loss transfer agreements**
+
+| (EUR '000) | Net profit/loss 01/07/2020 to 30/06/2021 | Net profit/loss 01/07/2019 to 30/06/2020 |
+|---|---|---|
+| BVB Stadionmanagement GmbH | 42 | 64 |
+| besttravel dortmund GmbH | 100 | 566 |
+| BVB Merchandising GmbH | -748 | 2,458 |
+| BVB Event & Catering GmbH | 725 | 1,581 |
+| BVB Fußballakademie GmbH | 140 | - |
+| | 259 | 4,669 |
+
+Furthermore, interest income of EUR 121 thousand was recognised and related to entirely to compounding.
+Interest expenses amounted to EUR 642 thousand and comprised mainly financing charges of EUR 554 thousand and discounting effects of EUR 40 thousand. In the previous year, interest expenses had amounted to EUR 2,934 thousand and comprised mainly EUR 1,323 thousand in discounting effects and EUR 1,452 thousand in financing charges.
+
+Tax on income of EUR 342 thousand were reported in the 2020/2021 financial year (previous year: EUR -50 thousand).
 
 --- pág. 60 ---
 
@@ -4419,175 +3366,60 @@ SIGNAL IDUNA PARK.
 
 --- pág. 63 ---
 
-ANALYSIS OF LIQUIDITY
-
-As at 30 June 2021, Borussia Dortmund held
-unrestricted cash funds of EUR 3,466 thousand.
-
-Borussia Dortmund also had access to an additional
-
+63
 MANAGEMENT REPORT
 
-EUR 120,000 thousand in overdraft facilities, some
-of which had been drawn down as at the balance
+## ANALYSIS OF LIQUIDITY
 
-sheet date.
+As at 30 June 2021, Borussia Dortmund held unrestricted cash funds of EUR 3,466 thousand. Borussia Dortmund also had access to an additional EUR 120,000 thousand in overdraft facilities, some of which had been drawn down as at the balance sheet date.
 
 Cash flows from operating activities amounted to EUR 40,769 thousand and are calculated as follows:
 
-EUR '000
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Net income/net loss for the period | -76,479 | -49,662 |
+| Depreciation, amortisation and write-downs/reversals of write-downs of fixed assets | 110,137 | 103,915 |
+| Non-cash expenses and income | 4,156 | 65,665 |
+| Increase/decrease in provisions | 2,049 | -5,141 |
+| Interest expense | 642 | 2,934 |
+| Interest income | -121 | -180 |
+| Income taxes | -342 | 50 |
+| Loss on disposal of fixed assets | 0 | 106 |
+| Decrease in inventories, trade receivables and other assets not attributable to investing or financing activities | 12,769 | 5,687 |
+| Increase/decrease in trade payables and other liabilities not attributable to investing or financing activities | -11,848 | -12,025 |
+| Interest paid | -602 | 0 |
+| Income taxes received | 408 | 305 |
+| **Cash flows from operating activities** | **40,769** | **111,654** |
 
-2020/2021 2019/2020
+## NET ASSETS
 
-Net income/net loss for the period
+Borussia Dortmund's total assets decreased from EUR 518,768 thousand to EUR 453,745 thousand. Fixed assets declined by EUR 52,563 thousand. Trade receivables and other financial receivables decreased by EUR 11,977 thousand to EUR 36,613 thousand.
 
-Depreciation, amortisation and write-downs/reversals
-
-of write-downs of fixed assets
-Non-cash expenses and income
-Increase/decrease in provisions
-Interest expense
-
-Interest income
-
-Income taxes
-
-Loss on disposal of fixed assets
-
-Decrease in inventories, trade receivables
-and other assets not attributable to investing
-or financing activities
-
-Increase/decrease in trade payables
-and other liabilities not attributable to investing
-or financing activities
-
-Interest paid
-Income taxes received
-
-Cash flows from operating activities
-
-NET ASSETS
-
-Borussia Dortmund's total assets decreased from
-EUR 518,768 thousand to EUR 453,745 thousand.
-Fixed assets declined by EUR 52,563 thousand.
-Trade receivables and other financial receivables
-decreased by EUR 11,977 thousand to EUR 36,613
-
-thousand.
-
--76,479 -49,662
-110,137 103,915
-4,156 65,665
-2,049 -5,141
-642 2,934
--121 -180
--342 50
-
-0 106
-12,769 5,687
--11,848 -12,025
--602 0
-408 305
-40,769 111,654
-
-Prepaid expenses declined by EUR 813 thousand to
-
-EUR 14,696 thousand, which was due mainly to lower
-
-prepaid personnel expenses.
-
-63
+Prepaid expenses declined by EUR 813 thousand to EUR 14,696 thousand, which was due mainly to lower prepaid personnel expenses.
 
 --- pág. 64 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
-
 64
 
-OVERALL ASSESSMENT OF FINANCIAL POSITION AND PERFORMANCE
+## OVERALL ASSESSMENT OF FINANCIAL POSITION AND PERFORMANCE AND BUSINESS DEVELOPMENT
 
-AND BUSINESS DEVELOPMENT
+Borussia Dortmund ended the 2020/2021 financial year with a net loss for the year of EUR 76,479 thousand.
 
-Borussia Dortmund ended the 2020/2021 financial
-year with a net loss for the year of EUR 76,479
+Taking into account the net loss for the year, the equity ratio is calculated at 56.83%. As at 30 June 2021, Borussia Dortmund held unrestricted cash funds of EUR 3,466 thousand. As at the balance sheet date, Borussia Dortmund had access to an additional EUR 120,000 thousand in overdraft facilities, some of which had been drawn down.
 
-thousand.
+The ongoing COVID-19 pandemic continued to weigh heavily on profitability and ultimately earnings in the 2020/2021 season. The effects of the pandemic are particularly clear in match operations and conference, catering and miscellaneous. The transfer business has also taken a major hit to its sales figures. Given this, business development during financial year 2020/2021 was less than satisfactory.
 
-Taking into account the net loss for the year, the
-equity ratio is calculated at 56.83%. As at 30 June
-2021, Borussia Dortmund held unrestricted cash
-funds of EUR 3,466 thousand. As at the balance
-sheet date, Borussia Dortmund had access to an
-additional EUR 120,000 thousand in overdraft
+## REMUNERATION REPORT
 
-facilities, some of which had been drawn down.
+The structure of the management remuneration system is defined and regularly reviewed by the Executive Committee of the Advisory Board. The Executive Committee of the Advisory Board of Borussia Dortmund Geschäftsführungs-GmbH is also responsible for setting the remuneration of the individual executives and for defining the appropriate amount of remuneration. The appropriate remuneration level is defined in particular on the basis of the specific executive's responsibilities and performance, as well as on the basis of Borussia Dortmund's financial position, performance and future prospects.
 
-REMUNERATION REPORT
+Executive remuneration consists of two components: a fixed amount and a variable component. The fixed component is stipulated by contract, takes into account the sporting success achieved and is paid out in twelve equal monthly instalments. The variable component is based on the business trend and is dependent on net income for the year before tax and the managing directors' remuneration. Any additional non-cash or ancillary benefits granted relate primarily to insurance benefits at standard market conditions and the provision of a company car. The Company does not offer any stock option plans or similar incentive plans. The remuneration components provided are reasonable both in and of themselves and taken as a whole (see Note 36 to the consolidated financial statements).
 
-The structure of the management remuneration
-system is defined and regularly reviewed by the
-Executive Committee of the Advisory Board. The
-Executive Committee of the Advisory Board of
-Borussia Dortmund Geschäftsführungs-GmbH is
-also responsible for setting the remuneration ofthe
-individual executives and for defining the appro-
-priate amount of remuneration. The appropriate
-remuneration level is defined in particular on the
-basis ofthe specific executive's responsibilities and
-performance, as well as on the basis of Borussia
-Dortmund's financial position, performance and
+Remuneration of the Supervisory Board is governed by Article 13 of the Articles of Association, pursuant to which each member of the Supervisory Board receives fixed remuneration amounting to EUR 24 thousand; the Chairman receives twice that amount and the Deputy Chairman one and a half times that amount. Value added tax is reimbursed to the members of the Supervisory Board.
 
-future prospects.
-
-Executive remuneration consists of two compo-
-nents: a fixed amount and a variable component.
-The fixed component is stipulated by contract,
-takes into account the sporting success achieved
-and is paid out in twelve equal monthly instal-
-ments. The variable component is based on the
-business trend and is dependent on net income for
-
-the year before tax and the managing directors’
-
-The ongoing COVID-19 pandemic continued to
-weigh heavily on profitability and ultimately
-earnings in the 2020/2021 season. The effects of
-the pandemic are particularly clear in match
-operations and conference, catering and
-miscellaneous. The transfer business has also
-taken a major hit to its sales figures. Given this,
-business development during financial year
-
-2020/2021 was less than satisfactory.
-
-remuneration. Any additional non-cash or ancillary
-benefits granted relate primarily to insurance
-benefits at standard market conditions and the
-provision of acompany car. The Company does not
-offer any stock option plans or similar incentive
-plans. The remuneration components provided are
-reasonable both in and ofthemselves and taken as
-a whole (see Note 36 to the consolidated financial
-
-statements).
-
-Remuneration of the Supervisory Board is gover-
-ned by Article 13 of the Articles of Association, pur-
-suant to which each member of the Supervisory
-Board receives fixed remuneration amounting to
-EUR 24 thousand; the Chairman receives twice that
-amount and the Deputy Chairman one and a half
-times that amount. Value added tax is reimbursed
-
-to the members of the Supervisory Board.
-
-The disclosures required by 8 285 no. 9 HGB are
-included in the notes to the financial statements
-
-under the section entitled "General partner".
+The disclosures required by § 285 no. 9 HGB are included in the notes to the financial statements under the section entitled "General partner".
 
 --- pág. 65 ---
 
@@ -5406,97 +4238,20 @@ at the stadium.
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
-
 74
 
-Borussia Dortmund uses the summer break each
-year to invest in SIGNAL IDUNA PARK as well as
-for construction work and refurbishments. The
-stadium has been expanded three times since
-opening in 1974 with a capacity of 54,000. The
-continual repair and maintenance work - the
-paramount focus of which is always structural
-integrity and safety - ensures that the stadium
-meets the latest standards in terms of safety,
-security and comfort. Compared to many other
-Bundesliga stadiums that were constructed for
-the 2008 World Cup, SIGNAL IDUNA PARK is one
-ofthe Bundesliga's oldest stadiums in use. Given
-that Borussia Dortmund regularly invests large
-sums in SIGNAL IDUNA PARK and in light of the
-increasing requirements applicable to stadiums,
-including with respect to spectator safety, the
-club has classified capital expenditures needed
-for SIGNAL IDUNA PARK as a high-priority risk.
-The ongoing COVID-19 pandemic and the
-associated economic consequences mean that
-only essential investments are currently being
+Borussia Dortmund uses the summer break each year to invest in SIGNAL IDUNA PARK as well as for construction work and refurbishments. The stadium has been expanded three times since opening in 1974 with a capacity of 54,000. The continual repair and maintenance work – the paramount focus of which is always structural integrity and safety – ensures that the stadium meets the latest standards in terms of safety, security and comfort. Compared to many other Bundesliga stadiums that were constructed for the 2006 World Cup, SIGNAL IDUNA PARK is one of the Bundesliga's oldest stadiums in use. Given that Borussia Dortmund regularly invests large sums in SIGNAL IDUNA PARK and in light of the increasing requirements applicable to stadiums, including with respect to spectator safety, the club has classified capital expenditures needed for SIGNAL IDUNA PARK as a high-priority risk. The ongoing COVID-19 pandemic and the associated economic consequences mean that only essential investments are currently being made in the stadium.
 
-made in the stadium.
+The risk of consequential damage arising from mining, which also affects SIGNAL IDUNA PARK, represents another high-priority risk. Coal mining has ceased in Germany. While the memories remain, so do the pitfalls, because the effects of mining never fully disappear. Hardly any other federal state is faced with as many sinkholes as North Rhine-Westphalia. The state has some 60,000 abandoned mining shafts and tunnels. The exact number is not known because mining in the region dates back to the Middle Ages. Only half of all pits and tunnels have been recorded.
+Borussia Dortmund uses the properties adjacent to SIGNAL IDUNA PARK for car parks or to store products and equipment needed for match operations. The southwest container and logistics area is located on land with uncertain topography, which is why sinkholes and similar subsidence cannot be ruled out. An additional expert opinion has been obtained, which states that there is merely a risk of the subsoil subsiding, not of collapse. This will likely result in lower costs being incurred in the course of the survey and reinforcement, since it may be that geogrids will no longer be necessary and fill dirt will instead be compressed into the ground to achieve the requisite stability. The construction work is already underway and will likely be completed in the summer of 2021.
 
-The risk of consequential damage arising from
-mining, which also affects SIGNAL IDUNA PARK,
-represents another high-priority risk. Coal mining
-has ceased in Germany. While the memories
-remain, so do the pitfalls, because the effects of
-mining never fully disappear. Hardly any other
-federal state is faced with as many sinkholes as
-North Rhine-Westphalia. The state has some
-60,000 abandoned mining shafts and tunnels. The
-exact number is not known because mining in the
-region dates back to the Middle Ages. Only half of
-all pits and tunnels have been recorded.
+### Category 5 – liquidity risk
 
-Borussia Dortmund uses the properties adjacent
-to SIGNAL IDUNA PARK for car parks or to store
-products and equipment needed for match
-operations. The southwest container and logistics
+Liquidity risks include all risks in connection with cash flows and financial burdens.
 
-area is located on land with uncertain topography,
-
-which is why sinkholes and similar subsidence
-cannot be ruled out. An additional expert opinion
-has been obtained, which states that there is
-merely a risk of the subsoil subsiding, not of
-collapse. This will likely result in lower costs being
-incurred in the course of the survey and
-reinforcement, since it may be that geogrids will
-no longer be necessary and fill dirt will instead be
-compressed into the ground to achieve the requisite
-stability. The construction work is already
-underway and will likely be completed in the
-
-summer of 2021.
-
-Category 5 - liquidity risk
-Liquidity risks include all risks in connection with
-
-cash flows and financial burdens.
 This category includes four high-priority risks:
 
-The loss of significant financial backers and
-sponsors due to insolvency could also have a
-material adverse effect on Borussia Dortmund's
-liquidity in the future. Attention continues to be
-placed on the potential loss of significant financial
-backers and sponsors and the introduction of
-corresponding countermeasures precisely because
-of the ongoing COVID-19 crisis and the associated
-adverse economic consequences for the German
-and global economy. Borussia Dortmund
-continuously revises its longstanding accounts
-receivable management system in line with the
-prevailing conditions and increasing globalisation.
-The club also reviewed and implemented other risk
-mitigation measures such as introducing upfront
-payments or changing payment terms. Borussia
-Dortmund is also in close contact with its customers
-and partners and its sponsoring marketing firm
-SPORTFIVE Germany GmbH, and is maintaining a
-close and trusting relationship with them. This is
-also evident from the individual solutions that
-
-Borussia Dortmund has found with its partners to
+The loss of significant financial backers and sponsors due to insolvency could also have a material adverse effect on Borussia Dortmund's liquidity in the future. Attention continues to be placed on the potential loss of significant financial backers and sponsors and the introduction of corresponding countermeasures precisely because of the ongoing COVID-19 crisis and the associated adverse economic consequences for the German and global economy. Borussia Dortmund continuously revises its longstanding accounts receivable management system in line with the prevailing conditions and increasing globalisation. The club also reviewed and implemented other risk mitigation measures such as introducing upfront payments or changing payment terms. Borussia Dortmund is also in close contact with its customers and partners and its sponsoring marketing firm SPORTFIVE Germany GmbH, and is maintaining a close and trusting relationship with them. This is also evident from the individual solutions that Borussia Dortmund has found with its partners to
 
 --- pág. 75 ---
 
@@ -6217,267 +4972,74 @@ approximately EUR -31,000 thousand.
 
 --- pág. 83 ---
 
+83
 MANAGEMENT REPORT
 
-OVERALL ASSESSMENT OF EXPECTED PERFORMANCE
+## OVERALL ASSESSMENT OF EXPECTED PERFORMANCE
 
-The consequences of the COVID-19 pandemic will
-continue to have adverse effects in the coming
-2021/2022 financial year. Due to the positive
-results of operations in the financial years prior to
-the COVID-19 pandemic, stable equity of EUR
-257,858 thousand (which corresponds to an equity
-ratio of approximately 56.83%) as at 30 June 2021
+The consequences of the COVID-19 pandemic will continue to have adverse effects in the coming 2021/2022 financial year. Due to the positive results of operations in the financial years prior to the COVID-19 pandemic, stable equity of EUR 257,858 thousand (which corresponds to an equity ratio of approximately 56.83%) as at 30 June 2021 despite the net loss for the year, and the Company's long-term focus, Borussia Dortmund considers itself prepared to handle the still uncertain economic situation. The management is continuously reassessing the situation as it pertains to the COVID-19 pandemic.
 
-OTHER DISCLOSURES
+## OTHER DISCLOSURES
 
-despite the net loss for the year, and the
-Company's long-term focus, Borussia Dortmund
-considers itself prepared to handle the still
-uncertain economic situation. The management is
-continuously reassessing the situation as it
+The notes contain disclosures pursuant to § 160 (1) no. 2 AktG.
 
-pertains to the COVID-19 pandemic.
+## REPORT IN ACCORDANCE WITH § 289A (1) HGB IN THE VERSION PURSUANT TO ARTICLE 83 (1) SENTENCE 2 EGHGB
 
-The notes contain disclosures pursuant to 8 160 (1) no. 2 AktG.
+The following information has been provided by the Company in response to the requirements of § 289 a (1) sentence 1 nos. 1 to 9 HGB:
 
-REPORT IN ACCORDANCE WITH 8 289A (1) HGB IN THE VERSION PURSUANT
+1. As at 30 June 2021, the share capital of Borussia Dortmund GmbH & Co. KGaA amounts to EUR 92,000,000.00 and is divided into 92,000,000 no-par value ordinary bearer shares. All of the shares have been admitted to trading on the Regulated Market (Prime Standard) of the Frankfurt Stock Exchange and to the over-the-counter markets (Open Market) in Berlin, Bremen, Stuttgart, Munich, Hamburg and Düsseldorf. Each no-par value share entitles the holder to one vote at the Annual General Meeting. The Company has only one class of shares, and all shares carry the same rights and obligations. All other rights and responsibilities attaching to the Company's shares are determined in accordance with the German Stock Corporation Act (*Aktiengesetz*, "AktG").
 
-TO ARTICLE 83 (1) SENTENCE 2 EGHGB
+2. Restrictions affecting the voting rights or transfer of the shares, and
 
-The following information has been provided by the
-Company in response to the requirements of 8 289
+3. Interests in the share capital of Borussia Dortmund GmbH & Co. KGaA exceeding 10% of the voting rights as at 30 June 2021:
 
-a (1) sentence 1 nos. 1 to 9 HGB:
+   1) Ballspielverein Borussia 09 e.V. Dortmund, Dortmund, Germany: 14.88% of the voting rights (of which 5.53% held directly and 9.35% held indirectly by including the voting rights of Bernd Geske, Germany, pursuant to § 22 (2) and henceforth § 34 (2) WpHG)
+   2) Bernd Geske, Meerbusch, Germany: 14.88% of the voting rights (of which 9.35% held directly and 5.53% held indirectly by including the voting rights of Ballspielverein Borussia 09 e.V. Dortmund, Dortmund, Germany, pursuant to § 34 (2) WpHG)
 
-1. Asat30 June 2021,the share capital of Borussia
-Dortmund GmbH & Co. KGaA amounts to EUR
-92,000,000.00 and is divided into 92,000,000
-no-par value ordinary bearer shares. All of
-the shares have been admitted to trading on
-the Regulated Market (Prime Standard) of
-the Frankfurt Stock Exchange and to the
-over-the-counter markets (Open Market) in
-Berlin, Bremen, Stuttgart, Munich, Hamburg and
-Düsseldorf. Each no-par value share entitles the
-holder to one vote atthe Annual General Meeting.
-The Company has only one class of shares, and
-allshares carry the same rights and obligations.
-All other rights and responsibilities attaching to
-the Company's shares are determined in
-accordance with the German Stock Corporation
-Act (Aktiengesetz, "AktG").
-
-2. Restrictions affecting the voting rights or transfer
-
-ofthe shares, and
-
-3. Interests in the share capital of Borussia
-Dortmund GmbH & Co. KGaA exceeding 10% of
-the voting rights as at 30 June 2021:
-
-1) Ballspielverein Borussia 09 e.V. Dortmund,
-Dortmund, Germany: 14.88% of the voting
-rights (of which 5.53% held directly and
-9.35% held indirectly by including the voting
-rights of Bernd Geske, Germany, pursuant
-to 8 22 (2) and henceforth 8 34 (2) WpHG)
-
-2) Bernd Geske, Meerbusch, Germany: 14.88%
-of the voting rights (of which 9.35% held
-directly and 5.53% held indirectly by
-including the voting rights of Ballspielverein
-Borussia 09 e.V. Dortmund, Dortmund,
-Germany, pursuant to 8 34 (2) WpH6)
-
-According to the information available, the
-inclusion of the voting rights in either case
-is based on a shareholders’ agreement
-concluded between Ballspielverein Borussia
-09 e.V. Dortmund and Bernd Geske currently
-for aterm until 30 June 2022 (after the original
-agreement ending on 30 June 2017 was
-extended). The material subject matter of said
-agreement is the stipulation binding the
-parties to exercise their voting rights in favour
-of Ballspielverein Borussia 09 e.V. Dortmund
-with regard to Bernd Geske's shares in
-Borussia Dortmund GmbH & Co. KGaA, and
-that Bernd Geske and Ballspielverein Borussia
-
-09 e.V. Dortmund mutually agree to inform
-
-83
+   According to the information available, the inclusion of the voting rights in either case is based on a shareholders' agreement concluded between Ballspielverein Borussia 09 e.V. Dortmund and Bernd Geske currently for a term until 30 June 2022 (after the original agreement ending on 30 June 2017 was extended). The material subject matter of said agreement is the stipulation binding the parties to exercise their voting rights in favour of Ballspielverein Borussia 09 e.V. Dortmund with regard to Bernd Geske's shares in Borussia Dortmund GmbH & Co. KGaA, and that Bernd Geske and Ballspielverein Borussia 09 e.V. Dortmund mutually agree to inform
 
 --- pág. 84 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
-
 84
 
-one another and vote on any changestto their
-respective shareholdings in Borussia
-Dortmund GmbH & Co. KGaA, especially
+one another and vote on any changes to their respective shareholdings in Borussia Dortmund GmbH & Co. KGaA, especially pertaining to the transfer of shares.
 
-pertaining to the transfer of shares.
+4. There are no shares with special rights conferring powers of control.
 
-4. There are no shares with special rights
+5. There is no control of voting rights in cases in which employees are shareholders.
 
-conferring powers of control.
+6. Because of its legal form as a partnership limited by shares, Borussia Dortmund GmbH & Co. KGaA does not have a management board. Instead, management and representation of the Company is the responsibility of the general partner. The provisions of Article 6 No. 1 of the Articles of Association stipulate that Borussia Dortmund Geschäftsführungs-GmbH, with registered offices in Dortmund, is to act as such an executive body on a permanent basis and not for a limited period of time by virtue of its status as a shareholder. The appointment and removal of managing directors of Borussia Dortmund Geschäftsführungs-GmbH is governed by § 8 no. 6 of its shareholders' agreement and is the responsibility of the Executive Committee of its Advisory Board, and therefore not of the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA.
+   In principle, changes may be made to the Articles of Association of Borussia Dortmund GmbH & Co. KGaA only by a resolution of its Annual General Meeting, which, in accordance with § 133 (1) of the AktG, must be passed by a simple majority of votes and also, in accordance with Article 15 No. 3 of the Articles of Association of the Company in conjunction with § 179 (1) and (2) of the AktG, by a simple majority of the capital represented on the date of the resolution, except to the extent that mandatory statutory provisions or the Articles of Association stipulate otherwise. A mandatory provision of statute requires that a resolution of the Annual General Meeting be passed by a majority of three-quarters of the share capital represented on the date of the resolution in the event of changes to the Articles of Association relating to the object of the Company (§ 179 (2) sentence 2 AktG), the issuance of non-voting preferred shares (§ 182 (1) sentence 2 AktG), capital increases involving the disapplication of pre-emptive subscription rights (§ 186 (3) AktG), the creation of conditional capital (§ 193 (1) AktG), the creation of authorised capital (§ 202 (2) AktG) – where appropriate with authorisation to disapply pre-emptive subscription rights (§ 203 (2) sentence 2 in conjunction with § 186 (4) AktG) –, the ordinary or simplified reduction of share capital (§ 222 (1) sentence 2 and § 229 (3) AktG) or a change of legal form (§ 233 (2) and § 240 (1) of the German Reorganisation and Transformation Act [*Umwandlungsgesetz*, "UmwG"]). In addition, capital increases, other changes to the Articles of Association and other decisions of a fundamental nature may only be resolved with the approval of the general partner in accordance with § 285 (2) sentence 1 of the AktG. The Supervisory Board is authorised in accordance with Article 12 No. 5 of the Articles of Association to resolve changes to the Articles of Association which relate only to the wording thereof, in particular in connection with the amount of capital increases from authorised and conditional capital.
 
-There is no control of voting rights in cases in
+7. By virtue of the resolution by the Annual General Meeting on 19 November 2020, the general partner is authorised until 18 November 2025, with the approval of the Supervisory Board, to increase the share capital by a maximum of EUR 18,400,000 in total by issuing new no-par value ordinary bearer shares against cash contributions on one or more occasions (Authorised Capital 2020). The previous Authorised Capital 2014 of EUR 23,000,000 had been subject to an authorisation valid until 23 November 2019. This was not utilised and as such the authorised capital expired on 23 November 2019.
 
-which employees are shareholders.
+8. The Company is not a party to any material agreements which are conditional on a change of control following a takeover bid for the issued shares of Borussia Dortmund GmbH & Co. KGaA.
 
-Because of its legal form as a partnership limited
-by shares, Borussia Dortmund GmbH & Co. KGaA
-does not have a management board. Instead,
-management and representation ofthe Company
-is the responsibility of the general partner. The
-provisions of Article 6 No. 1 of the Articles of
-Association stipulate that Borussia Dortmund
-Geschäftsführungs-GmbH, with registered offices
-in Dortmund, is to act as such an executive body
-on a permanent basis and not for alimited period
-oftime by virtue of its status as ashareholder. The
-appointment and removal of managing directors
-of Borussia Dortmund Geschäftsführungs-GmbH
-is governed by 8 8 no. 6 of its shareholders’
-agreement and is the responsibility of the
-Executive Committee of its Advisory Board, and
-therefore not ofthe Supervisory Board of Borussia
-Dortmund GmbH & Co. KGaA.
-
-In principle, changes may be made to the Articles
-of Association of Borussia Dortmund GmbH & Co.
-KGaA only by a resolution of its Annual General
-Meeting, which, in accordance with 8 133 (1) of
-the AktG, must be passed by a simple majority of
-votes and also, in accordance with Article 15 No.
-3. ofthe Articles of Association ofthe Company in
-conjunction with 8 179 (1) and (2) of the AktG, by
-a simple majority of the capital represented on
-the date ofthe resolution, exceptto the extentthat
-mandatory statutory provisions or the Articles of
-Association stipulate otherwise. A mandatory
-provision of statute requires that a resolution of
-the Annual General Meeting be passed by a
-majority of three-quarters of the share capital
-represented on the date of the resolution in the
-event of changes to the Articles of Association
-relating to the object of the Company (8 179 (2)
-
-sentence 2 AktG), the issuance of non-voting
-
-preferred shares (8 182 (1) sentence 2 AktG),
-capital increases involving the disapplication of
-pre-emptive subscription rights (8 186 (3) AktG),
-the creation ofconditional capital (8 193 (1) AktG),
-the creation of authorised capital ($ 202 (2) AktG)
-- where appropriate with authorisation to disapply
-pre-emptive subscription rights (8 203 (2)
-sentence 2 in conjunction with 8 186 (4) AktG) -,
-the ordinary or simplified reduction of share
-capital ($ 222 (1) sentence 2 and 8 229 (3)
-AktG) or a change of legal form (8 233 (2) and
-8 240 (1) of the German Reorganisation and
-Transformation Act [Umwandlungsgesetz,
-"UmwG”]). In addition, capital increases, other
-changes to the Articles of Association and other
-decisions of a fundamental nature may only be
-resolved with the approval ofthe general partner
-in accordance with 8 285 (2) sentence 1 of the
-AktG. The Supervisory Board is authorised in
-accordance with Article 12 No. 5 ofthe Articles of
-Association to resolve changes to the Articles of
-Association which relate only to the wording
-thereof, in particular in connection with the
-amount of capitalincreases from authorised and
-
-conditional capital.
-
-By virtue of the resolution by the Annual General
-Meeting on 19 November 2020, the general
-partner is authorised until 18 November 2025,
-with the approval of the Supervisory Board, to
-increase the share capital by amaximum of EUR
-18,400,000 in total by issuing new no-par value
-ordinary bearer shares against cash contributions
-on one or more occasions (Authorised Capital
-2020). The previous Authorised Capital 2014 of
-EUR 23,000,000 had been subject to an
-authorisation valid until 23 November 2019. This
-was not utilised and as such the authorised capital
-
-expired on 23 November 2019.
-
-The Company is not a party to any material
-agreements which are conditional on a change
-of control following a takeover bid forthe issued
-
-shares of Borussia Dortmund GmbH & Co. KGaA.
-
-The Company is not a party to any compensation
-agreements that would apply in the event of a
-
-takeover bid.
+9. The Company is not a party to any compensation agreements that would apply in the event of a takeover bid.
 
 --- pág. 85 ---
 
 MANAGEMENT REPORT
 
-STATEMENT BY THE GENERAL PARTNER ON RELATIONS
+## STATEMENT BY THE GENERAL PARTNER ON RELATIONS WITH AFFILIATED COMPANIES
 
-WITH AFFILIATED COMPANIES
+The Dependent Company Report prepared by Borussia Dortmund GmbH & Co. KGaA pursuant to § 312 AktG sets out the relations with Ballspielverein Borussia 09 e.V. Dortmund as the controlling entity and its affiliated companies. The general partner – represented by its Managing Directors – has issued the following concluding declaration:
 
-The Dependent Company Report prepared by
-Borussia Dortmund GmbH & Co. KGaA pursuant
-to 8 312 AktG sets out the relations with
-Ballspielverein Borussia 09 e.V. Dortmund as the
-controlling entity and its affiliated companies. The
-general partner - represented by its Managing
-Directors - has issued the following concluding
+"Based on the circumstances known to us at the time the transactions were entered into, the Company received appropriate consideration for each of the transactions set out in the report on relations with affiliated companies in the financial year. In all other cases, the Company has been compensated for any disadvantages having arisen. No other measures within the meaning of § 312 (1) of the AktG were either undertaken or omitted during the financial year."
 
-declaration:
+## DISCLAIMER
 
-DISCLAIMER
-
-This management report contains forward-looking
-statements. Such statements are based on current
-
-estimates and are by nature subject to risks and
+This management report contains forward-looking statements. Such statements are based on current estimates and are by nature subject to risks and uncertainties. Actual results may differ from the statements made in this report.
 
 Dortmund, 9 August 2021
-
-"Based on the circumstances known to us atthetime
-the transactions were entered into, the Company
-received appropriate consideration for each of the
-transactions set out in the report on relations with
-affiliated companies in the financial year. In all other
-cases, the Company has been compensated for any
-disadvantages having arisen. No other measures
-within the meaning of 8312 (1) ofthe AktG were either
-
-undertaken or omitted during the financial year."
-
-uncertainties. Actual results may differ from the
-
-statements made in this report.
-
 Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien
-
 Borussia Dortmund Geschäftsführungs-GmbH
 
-Hans-Joachim Watzke
-Managing Director (Chairman)
-
-Thomas Treß
-Managing Director
-
-Carsten Cramer
-
-Managing Director
+[Firma]  Hans-Joachim Watzke, Managing Director (Chairman)
+[Firma]  Thomas Treß, Managing Director
+[Firma]  Carsten Cramer, Managing Director
 
 85
 
@@ -6603,49 +5165,33 @@ D. DEFERRED INCOME 4,450 3,698
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-INCOME STATEMENT
-
+## INCOME STATEMENT
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 
-EUR '000 01/07/2020- 01/07/2019 -
-30/06/2021 30/06/2020
-
-1. Sales 323,497 442,126
-2. Other own work capitalised 0 37
-3. Other operating income 7,327 9,098
-
-330,824 451,261
-
-4. Personnel expenses
-
-a) Wages and salaries -200,010 -196,889
-
-b) Social security, post-employment and other employee benefit -5,594 -6,634
-costs of which for post-employment: EUR 226 thousand
-(previous year: EUR 285 thousand)
-
--205,604 -203,523
-5. Amortisation and write-downs of intangible fixed assets
-and depreciation and write-downs of tangible fixed assets -110,137 -105,547
-6. Other operating expenses -91,663 -193,474
-7. Income from profit and loss transfer agreements 1,007 4,669
-- all of which from affiliated companies -
-8. Expenses from profit and loss transfer agreements -748 0
-- all of which from affiliated companies -
-9. Other interest and similar income 121 180
-of which from compounding: EUR 120 thousand
-(previous year: EUR 180 thousand)
-10. Interest and similar expenses -642 -2,934
-of which from discounting: EUR 40 thousand
-(previous year: EUR 154 thousand)
-11. Earnings before taxes -76,842 -49,368
-12. Taxes on income 342 -50
-13. Earnings after taxes -76,500 -49,418
-14. Other taxes 21 -244
-15. Net loss for the year -76,479 -49,662
-16. Loss/profit carried forward -49,662 20,325
-17. Transfer to other revenue reserves 0 -20,325
-18. Net accumulated losses -126,141 -49,662
+| EUR '000 | 01/07/2020 – 30/06/2021 | 01/07/2019 – 30/06/2020 |
+|---|---|---|
+| 1. Sales | 323,497 | 442,126 |
+| 2. Other own work capitalised | 0 | 37 |
+| 3. Other operating income | 7,327 | 9,098 |
+| | **330,824** | **451,261** |
+| 4. Personnel expenses | | |
+| a) Wages and salaries | -200,010 | -196,889 |
+| b) Social security, post-employment and other employee benefit costs of which for post-employment: EUR 226 thousand (previous year: EUR 285 thousand) | -5,594 | -6,634 |
+| | **-205,604** | **-203,523** |
+| 5. Amortisation and write-downs of intangible fixed assets and depreciation and write-downs of tangible fixed assets | -110,137 | -105,547 |
+| 6. Other operating expenses | -91,663 | -193,474 |
+| 7. Income from profit and loss transfer agreements - all of which from affiliated companies - | 1,007 | 4,669 |
+| 8. Expenses from profit and loss transfer agreements - all of which from affiliated companies - | -748 | 0 |
+| 9. Other interest and similar income of which from compounding: EUR 120 thousand (previous year: EUR 180 thousand) | 121 | 180 |
+| 10. Interest and similar expenses of which from discounting: EUR 40 thousand (previous year: EUR 154 thousand) | -642 | -2,934 |
+| **11. Earnings before taxes** | **-76,842** | **-49,368** |
+| 12. Taxes on income | 342 | -50 |
+| 13. Earnings after taxes | -76,500 | -49,418 |
+| 14. Other taxes | 21 | -244 |
+| **15. Net loss for the year** | **-76,479** | **-49,662** |
+| 16. Loss/profit carried forward | -49,662 | 20,325 |
+| 17. Transfer to other revenue reserves | 0 | -20,325 |
+| **18. Net accumulated losses** | **-126,141** | **-49,662** |
 
 90
 
@@ -6654,96 +5200,29 @@ of which from discounting: EUR 40 thousand
 ANNUAL FINANCIAL STATEMENTS
 for the financial year from 1 July 2020 to 30 June 2021
 
-NOTES Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
+## NOTES Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 for the financial year from 1 July 2020 to 30 June 2021
+(hereinafter "Borussia Dortmund" or "Borussia Dortmund GmbH & Co. KGaA")
 
-(hereinafter "Borussia Dortmund” or "Borussia Dortmund GmbH & Co. KGaA”)
+## GENERAL DISCLOSURES TO THE ANNUAL FINANCIAL STATEMENTS
 
-GENERAL DISCLOSURES TO THE ANNUAL FINANCIAL STATEMENTS
+The annual financial statements of Borussia Dortmund GmbH & Co. KGaA for the financial year from 1 July 2020 to 30 June 2021 have been prepared in accordance with the requirements of the German Commercial Code (*Handelsgesetzbuch*, "HGB") and the particular accounting requirements of the German Stock Corporation Act (*Aktiengesetz*, "AktG"). Borussia Dortmund GmbH & Co. KGaA has its registered office at Rheinlanddamm 207 – 209, 44137 Dortmund, Germany, and is listed in the commercial register of the Local Court (*Amtsgericht*) of Dortmund under the number HRB 14217. There is an additional obligation in accordance with § 315e (1) HGB to prepare consolidated financial statements applying international financial reporting standards (IFRS) as adopted by the EU.
 
-The annual financial statements of Borussia
-Dortmund GmbH & Co. KGaA for the financial year
-from 1 July 2020 to 30 June 2021 have been
-prepared in accordance with the requirements of
-the German Commercial Code (Handelsgesetzbuch,
-"HGB") and the particular accounting requirements
-of the German Stock Corporation Act (Aktiengesetz,
-"AktG"). Borussia Dortmund GmbH & Co. KGaA has
-its registered office at Rheinlanddamm 207 - 209,
-44137 Dortmund, Germany, and is listed in the
-commercialregister ofthe Local Court (Amtsgericht)
-of Dortmund under the number HRB 14217. There
-is an additional obligation in accordance with 8 315e
-(1)HGBto prepare consolidated financial statements
-applying international financial reporting standards
-(IFRS) as adopted by the EU.
+The balance sheet classifications comply with the classification format under commercial law in accordance with § 266 HGB, while the income statement has in principle been prepared in the vertical format using the nature of expense method in accordance with § 275 HGB.
+In some instances, the additional information to be provided in accordance with the statutory requirements is presented in the notes for reasons of clarity and accessibility.
+The annual financial statements are presented in thousands of euros.
 
-The balance sheet classifications comply with the
-classification format under commercial law in
-accordance with 8 266 HGB, while the income
+As a result of the fact that Ballspielverein Borussia 09 e.V. Dortmund (hereinafter "BV. Borussia 09 e.V. Dortmund") holds 100% of the shares in Borussia Dortmund Geschäftsführungs-GmbH and is therefore regarded indirectly as a controlling company, Borussia Dortmund GmbH & Co. KGaA qualifies as a dependent company within the meaning of § 17 AktG and accordingly is required to prepare a Dependent Company Report in accordance with § 312 AktG. This report must also contain the statutory concluding statement required in accordance with § 312 AktG which must be included in the management report.
 
-statement has in principle been prepared in the
+## ACCOUNTING POLICIES
 
-ACCOUNTING POLICIES
+### Fixed assets
 
-Fixed assets
+Intangible fixed assets are measured at cost less amortisation based on their expected useful lives or at the lower fair value. Player registrations reported in these financial statements are generally measured at cost, taking into account the decisions of the Federal Fiscal Court (*Bundesfinanzhof*, "BFH") of 26 August 1992 (I R 24/91) and of 14 December 2011 (I R 108/10), the FIFA regulations contained in FIFA circular no. 769 of 24 August 2001, which came into force on 21 September 2001, and DFL circular no. 52 of 20 March 2015, and are amortised on a straight-line basis in accordance with the term of the individual contracts for professional players. Write-downs may arise for assets measured at their lower fair value.
 
-Intangible fixed assets are measured at cost less
-amortisation based on their expected useful lives
-or at the lower fair value. Player registrations
-reported in these financial statements are generally
-measured at cost, taking into account the decisions
-ofthe Federal Fiscal Court (Bundesfinanzhof, "BFH")
-of 26 August 1992 (| R 24/91) and of 14 December
-2011 (I R 108/10), the FIFA regulations contained
-in FIFA circular no. 769 of 24 August 2001, which
-came into force on 21 September 2001, and DFL
-circular no. 52 of 20 March 2015, and are amortised
-on a straight-line basis in accordance with the term
-ofthe individual contracts for professional players.
-Write-downs may arise for assets measured attheir
+Tangible fixed assets are measured at cost less accumulated depreciation. Depreciation and amortisation are based on the economic useful lives of assets. Items with a value between EUR 150.00 to EUR 1,000.00 were recognised as an omnibus item and will be written down over a period of five years.
 
-lower fair value.
-
-vertical format using the nature of expense method
-in accordance with 8 275 HGB.
-
-In some instances, the additional information to be
-provided in accordance with the statutory
-requirements is presented in the notes for reasons
-of clarity and accessibility.
-
-The annual financial statements are presented in
-
-thousands of euros.
-
-As a result of the fact that Ballspielverein Borussia
-09 e.V. Dortmund (hereinafter "BV. Borussia 09 e.V.
-Dortmund") holds 100% of the shares in Borussia
-Dortmund Geschäftsführungs-GmbH and istherefore
-regarded indirectly as a controlling company,
-Borussia Dortmund GmbH & Co. KGaA qualifies as a
-dependent company within the meaning of 8 17 AktG
-and accordingly is required to prepare a Dependent
-Company Report in accordance with 8 312 AktG. This
-report must also contain the statutory concluding
-statement required in accordance with 8 312 AktG
-
-which must be included in the management report.
-
-Tangible fixed assets are measured at cost less
-accumulated depreciation. Depreciation and
-amortisation are based on the economic useful
-lives of assets. Items with a value between EUR
-150.00 to EUR 1,000.00 were recognised as an
-omnibus item and will be written down over a
-
-period of five years.
-
-Long-term financial assets were measured at cost
-or the lower fair value in case of permanent
-
-impairment; they are not subject to amortisation.
+Long-term financial assets were measured at cost or the lower fair value in case of permanent impairment; they are not subject to amortisation.
 
 91
 
@@ -6935,75 +5414,50 @@ following analysis pursuant to & 284 (3) HGB:
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-FIXED ASSETS
-
+## FIXED ASSETS
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
-N N _
-EUR '000 Change in cost
 
-Asat Additions Reclassification Disposals Asat
-30/06/2020 30/06/2021
+EUR '000
 
-I. Immaterielle Vermögensgegenstände
-
-1. Concessions, industrial and
-similar rights and assets, and licences
-
-in such rights and assets 472,653 58,738 0 83,459 447,932
-2. Prepayments 68 0 0 0 68
-472,721 58,738 0 83,459 448,000
-
-Il. Tangible fixed assets
-
-1. Land, land rights and
-buildings including buildings
-
-on third-party land 222,232 165 1,857 0 224,254
-2. Other equipment, operating
-and office equipment 48,228 1,310 1,283 858 49,963
-3. Prepayments and assets
-under construction 1,952 1,447 -3,140 0 259
-272,412 2,922 0 858 274,476
-
-Il. Long-term financial assets
-
-1. Shares in affiliated companies 11,621 431 0 0 12,052
-2. Equity investments % 0 0 0 9%
-3. Other loans 32 0 0 5 27
-11,749 431 0 5 12,175
-756,882 62,091 0 84,322 734,651
+| | Change in cost: As at 30/06/2020 | Additions | Reclassification | Disposals | As at 30/06/2021 |
+|---|---|---|---|---|---|
+| **I. Immaterielle Vermögensgegenstände** | | | | | |
+| 1. Concessions, industrial and similar rights and assets, and licences in such rights and assets | 472,653 | 58,738 | 0 | 83,459 | 447,932 |
+| 2. Prepayments | 68 | 0 | 0 | 0 | 68 |
+| | **472,721** | **58,738** | **0** | **83,459** | **448,000** |
+| **II. Tangible fixed assets** | | | | | |
+| 1. Land, land rights and buildings including buildings on third-party land | 222,232 | 165 | 1,857 | 0 | 224,254 |
+| 2. Other equipment, operating and office equipment | 48,228 | 1,310 | 1,283 | 858 | 49,963 |
+| 3. Prepayments and assets under construction | 1,952 | 1,447 | -3,140 | 0 | 259 |
+| | **272,412** | **2,922** | **0** | **858** | **274,476** |
+| **III. Long-term financial assets** | | | | | |
+| 1. Shares in affiliated companies | 11,621 | 431 | 0 | 0 | 12,052 |
+| 2. Equity investments | 96 | 0 | 0 | 0 | 96 |
+| 3. Other loans | 32 | 0 | 0 | 5 | 27 |
+| | **11,749** | **431** | **0** | **5** | **12,175** |
+| | **756,882** | **62,091** | **0** | **84,322** | **734,651** |
 
 94
 
 --- pág. 95 ---
 
-Change in depreciation, amortisation and write-downs
-
 ANNUAL FINANCIAL STATEMENTS
-
 for the financial year from 1 July 2020 to 30 June 2021
 
-Carrying amounts
-
-Asat Additions Write-downs Disposals Asat Asat Asat
-30/06/2020 30/06/2021 30/06/2021 30/06/2020
-223,773 98,017 1,591 79,384 243,997 203,935 248,880
-
-0 0 0 0 0 68 68
-223,773 98,017 1,591 79,384 243,997 204,003 248,948
-49,751 6,719 0 0 56,470 167,784 172,481
-31,892 3,810 0 421 35,281 14,682 16,336
-0 0 0 0 0 259 1,952
-81,643 10,529 0 421 91,751 182,725 190,769
-
-0 0 0 0 0 12,052 11,621
-
-0 0 0 0 0 9% 9%
-
-0 0 0 0 0 27 32
-
-0 0 0 0 0 12,175 11,749
-305,416 108,546 1,591 79,805 335,748 398,903 451,466
+| | Change in depreciation, amortisation and write-downs: As at 30/06/2020 | Additions | Write-downs | Disposals | As at 30/06/2021 | Carrying amounts: As at 30/06/2021 | As at 30/06/2020 |
+|---|---|---|---|---|---|---|---|
+| I. 1. Concessions, industrial and similar rights and assets, and licences in such rights and assets | 223,773 | 98,017 | 1,591 | 79,384 | 243,997 | 203,935 | 248,880 |
+| I. 2. Prepayments | 0 | 0 | 0 | 0 | 0 | 68 | 68 |
+| | **223,773** | **98,017** | **1,591** | **79,384** | **243,997** | **204,003** | **248,948** |
+| II. 1. Land, land rights and buildings including buildings on third-party land | 49,751 | 6,719 | 0 | 0 | 56,470 | 167,784 | 172,481 |
+| II. 2. Other equipment, operating and office equipment | 31,892 | 3,810 | 0 | 421 | 35,281 | 14,682 | 16,336 |
+| II. 3. Prepayments and assets under construction | 0 | 0 | 0 | 0 | 0 | 259 | 1,952 |
+| | **81,643** | **10,529** | **0** | **421** | **91,751** | **182,725** | **190,769** |
+| III. 1. Shares in affiliated companies | 0 | 0 | 0 | 0 | 0 | 12,052 | 11,621 |
+| III. 2. Equity investments | 0 | 0 | 0 | 0 | 0 | 96 | 96 |
+| III. 3. Other loans | 0 | 0 | 0 | 0 | 0 | 27 | 32 |
+| | **0** | **0** | **0** | **0** | **0** | **12,175** | **11,749** |
+| | **305,416** | **108,546** | **1,591** | **79,805** | **335,748** | **398,903** | **451,466** |
 
 95
 
@@ -7093,51 +5547,21 @@ tradable. In such cases, shareholders’ subscription
 
 --- pág. 97 ---
 
-rights are excluded in accordance with 8 71 (1) No. 8
-AktG. In the period between the date of admission
-of the Company's shares to trading (31 October
-2000) and the end of the reporting period (30 June
-2021), the Company acquired a total of 34,000
-no-par value shares and sold 15,100 no-par value
-shares off-market in the form of printed physical
-
-share certificates. The gain on disposal has been
-
 ANNUAL FINANCIAL STATEMENTS
 for the financial year from 1 July 2020 to 30 June 2021
 
-reported separately under other operating income.
-At the balance sheet date, the Company's holding
-of its own securities consisted of 18,900 no-par
-value shares; no shares were disposed of during
+rights are excluded in accordance with § 71 (1) No. 8 AktG. In the period between the date of admission of the Company's shares to trading (31 October 2000) and the end of the reporting period (30 June 2021), the Company acquired a total of 34,000 no-par value shares and sold 15,100 no-par value shares off-market in the form of printed physical share certificates. The gain on disposal has been reported separately under other operating income. At the balance sheet date, the Company's holding of its own securities consisted of 18,900 no-par value shares; no shares were disposed of during the reporting period.
 
-the reporting period.
+Further disclosures required in accordance with § 160 AktG are given in the following overview:
 
-Further disclosures required in accordance with
+| | Transactions in own/treasury shares | Total own/treasury shares | Total share capital EUR | Share in share capital in % | Selling price EUR |
+|---|---|---|---|---|---|
+| 07/2020 – 12/2020 | 0 | | | | 0.00 |
+| As at 31/12/2020 | | 18,900 | 18,900.00 | 0.021 | |
+| 01/2021 – 06/2021 | 0 | | | | 0.00 |
+| As at 30/06/2021 | | 18,900 | 18,900.00 | 0.021 | |
 
-8 160 AktG are given in the following overview:
-
-Transactionsin Total own/ Total Share in
-
-own/treasury treasury share capital share capital Selling price
-
-shares shares EUR in % EUR
-07/2020 - 12/2020 0 0.00
-As at 31/12/2020 18,900 18,900.00 0.021
-01/2021 - 06/2021 0 0.00
-As at 30/06/2021 18,900 18,900.00 0.021
-
-By virtue of a resolution by the Annual General
-Meeting on 19 November 2020, the Company was
-authorised until 18 November 2025, subject to the
-
-renewed consent of the Supervisory Board, to
-
-increase the share capital by a maximum of
-EUR 18,400,000.00 in total by issuing new no-par
-value ordinary bearer shares against cash
-
-contributions on one occasion.
+By virtue of a resolution by the Annual General Meeting on 19 November 2020, the Company was authorised until 18 November 2025, subject to the renewed consent of the Supervisory Board, to increase the share capital by a maximum of EUR 18,400,000.00 in total by issuing new no-par value ordinary bearer shares against cash contributions on one occasion.
 
 97
 
@@ -7185,67 +5609,37 @@ outstanding invoices (EUR 3,030 thousand).
 
 --- pág. 99 ---
 
-Liabilities
-
 ANNUAL FINANCIAL STATEMENTS
 for the financial year from 1 July 2020 to 30 June 2021
 
-The maturities and security granted in respect of liabilities reported at 30 June 2021 are shown in the
+### Liabilities
 
-following overview:
+The maturities and security granted in respect of liabilities reported at 30 June 2021 are shown in the following overview:
 
-of which with a residual term of
+| EUR '000 | Total 30/06/2021 | of which with a residual term of: less than 1 year | 1 – 5 years | more than 5 years |
+|---|---|---|---|---|
+| Liabilities to banks | 58,792 | 58,792 | 0 | 0 |
+| Trade payables | 97,864 | 61,894 | 35,970 | 0 |
+| Liabilities to affiliated companies | 7,367 | 7,367 | 0 | 0 |
+| Other liabilities | 17,113 | 17,113 | 0 | 0 |
+| of which from taxes EUR 6,898 thousand (previous year: EUR 9,870 thousand) | | | | |
+| of which social security EUR 38 thousand (previous year: EUR 35 thousand) | | | | |
+| | **181,136** | **145,166** | **35,970** | **0** |
 
-Total lessthan 1 1-5 morethan
-EUR '000 30/06/2021 1 year years 5 years
-Liabilities to banks 58,792 58,792 0 0
-Trade payables 97,864 61,894 35,970 0
-Liabilities to affiliated companies 7,367 7,367 0 0
-Other liabilities 17,113 17,113 0 0
-of which from taxes EUR 6,898 thousand
-(previous year: EUR 9,870 thousand)
-of which social security EUR 38 thousand
-(previous year: EUR 35 thousand)
-181,136 145,166 35,970 0
+| EUR '000 | Total 30/06/2020 | of which with a residual term of: less than 1 year | 1 – 5 years | more than 5 years |
+|---|---|---|---|---|
+| Liabilities to banks | 8,031 | 8,031 | 0 | 0 |
+| Trade payables | 135,122 | 65,495 | 69,627 | 0 |
+| Liabilities to affiliated companies | 4,719 | 4,719 | 0 | 0 |
+| Other liabilities | 24,675 | 24,675 | 0 | 0 |
+| of which from taxes EUR 9,870 thousand (previous year: EUR 7,973 thousand) | | | | |
+| of which social security EUR 35 thousand (previous year: EUR 36 thousand) | | | | |
+| | **172,547** | **102,920** | **69,627** | **0** |
 
-of which with a residual term of
+Liabilities to banks of EUR 58,792 thousand were reported at the balance sheet date. The full potential overdraft facility is secured against sponsorship income of EUR 18,465 thousand as well as a EUR 60,000 thousand registered land charge in relation to the stadium.
+As at 30 June 2021, trade payables amounted to EUR 97,864 thousand, of which EUR 87,683 thousand (previous year: EUR 120,287 thousand) related to transfer deals. Trade payables with a residual term of more than one year amounted to EUR 35,970 thousand (previous year: EUR 69,627 thousand).
 
-Total lessthan 1 1-5 more than
-EUR '000 30/06/2020 1year years 5 years
-Liabilities to banks 8,031 8,031 0 0
-Trade payables 135,122 65,495 69,627 0
-Liabilities to affiliated companies 4,719 4,719 0 0
-Other liabilities 24,675 24,675 0 0
-of which from taxes EUR 9,870 thousand
-(previous year: EUR 7,973 thousand)
-of which social security EUR 35 thousand
-(previous year: EUR 36 thousand)
-172,547 102,920 69,627 0
-
-Liabilities to banks of EUR 58,792 thousand were
-reported at the balance sheet date. The full
-potential overdraft facility is secured against
-sponsorship income of EUR 18,465 thousand as
-well as a EUR 80,000 thousand registered land
-charge in relation to the stadium.
-
-As at 30 June 2021, trade payables amounted to
-EUR 97,864 thousand, of which EUR 87,683
-thousand (previous year: EUR 120,287 thousand)
-
-related to transfer deals. Trade payables with a
-
-residual term of more than one year amounted to
-EUR 35,970 thousand (previous year: EUR 69,627
-thousand).
-
-Other liabilities consisted mainly of the residual
-credits for prepayments on season tickets for the
-2019/2020 season, wage and value added tax not
-yet due and staff-related liabilities not yet due.
-They also include liabilities to the general partner
-amounting to EUR 2,132 thousand (previous year:
-EUR 1,937 thousand).
+Other liabilities consisted mainly of the residual credits for prepayments on season tickets for the 2019/2020 season, wage and value added tax not yet due and staff-related liabilities not yet due. They also include liabilities to the general partner amounting to EUR 2,132 thousand (previous year: EUR 1,937 thousand).
 
 99
 
@@ -7528,112 +5922,37 @@ Other
 
 --- pág. 103 ---
 
-Other operating expenses decreased by EUR
-101,811 thousand or approximately 52.62% across
-all items of other operating expenses, from EUR
-193,474 thousand in the previous year to EUR
-91,663 thousand in the reporting period.
-
-The largest decrease under this item was seen in
-transfer deals, which fell by EUR 70,493 thousand
-to EUR 9,565 thousand. By contrast to the previous
-year, during which transfer deals resulted in the
-carrying amounts for the players Maximilian
-Philipp, Abdou Diallo, Alexander Isak, Julian Weigl,
-Paco Alcäcer, Jacob Bruun Larsen and Sebastian
-Rode being derecognised, the only carrying
-amounts derecognised this financial year were for
-the players Ömer Toprak and Dzenis Burnie as well
-as for the former trainer Lucien Favre. This item
-also includes sales-related costs for departures
-and other (subsequent) variable transfer
-
-compensation.
-
-Expenses from match operations decreased by EUR
-8,576 thousand to EUR 41,405 thousand (previous
-year: EUR 49,981 thousand). This was due mainly
-
-to lower catering expenses as well as lower match
-
-Financial result
-
-The financial result for financial year 2020/2021
-amounted to EUR -262 thousand (previous year:
-EUR 1,915 thousand) and breaks down as follows:
-Income and expenses from profit and loss transfer
-
-agreements totalled EUR 259 thousand (previous
-
 ANNUAL FINANCIAL STATEMENTS
 for the financial year from 1 July 2020 to 30 June 2021
 
-day expenses, as only three home matches were
-played for the 2020/2021 season, with severely
+Other operating expenses decreased by EUR 101,811 thousand or approximately 52.62% across all items of other operating expenses, from EUR 193,474 thousand in the previous year to EUR 91,663 thousand in the reporting period.
 
-restricted stadium capacity.
+The largest decrease under this item was seen in transfer deals, which fell by EUR 70,493 thousand to EUR 9,565 thousand. By contrast to the previous year, during which transfer deals resulted in the carrying amounts for the players Maximilian Philipp, Abdou Diallo, Alexander Isak, Julian Weigl, Paco Alcácer, Jacob Bruun Larsen and Sebastian Rode being derecognised, the only carrying amounts derecognised this financial year were for the players Ömer Toprak and Dženis Burnić as well as for the former trainer Lucien Favre. This item also includes sales-related costs for departures and other (subsequent) variable transfer compensation.
 
-Advertising expenses decreased by EUR 15,826
-thousand. Despite the increase in advertising
-income, the newly signed agency licensing
-agreement with the marketing firm SPORTFIVE
-Germany GmbH made it possible to significantly
+Expenses from match operations decreased by EUR 8,576 thousand to EUR 41,405 thousand (previous year: EUR 49,981 thousand). This was due mainly to lower catering expenses as well as lower match day expenses, as only three home matches were played for the 2020/2021 season, with severely restricted stadium capacity.
 
-reduce the agency commission payable.
+Advertising expenses decreased by EUR 15,826 thousand. Despite the increase in advertising income, the newly signed agency licensing agreement with the marketing firm SPORTFIVE Germany GmbH made it possible to significantly reduce the agency commission payable.
 
-Administrative expenses decreased during the
-financial year ended by EUR 2,279 thousand to
-EUR 22,815 thousand. A slight increase in IT
-expenses was offset by significantly lower travel,
+Administrative expenses decreased during the financial year ended by EUR 2,279 thousand to EUR 22,815 thousand. A slight increase in IT expenses was offset by significantly lower travel, representation and event expenses.
 
-representation and event expenses.
+Other expenses decreased by EUR 4,106 thousand to EUR 4,816 thousand. This reduction was caused mainly by lower allowances on receivables and lower losses on disposals of fixed assets as well as lower expenses for office supplies.
+The share of prior-period expenses in other operating expenses amounted to EUR 604 thousand (previous year: EUR 651 thousand).
 
-Other expenses decreased by EUR 4,106 thousand
-to EUR 4,816 thousand. This reduction was caused
-mainly by lower allowances on receivables and
-lower losses on disposals of fixed assets as well as
-lower expenses for office supplies.
+### Financial result
 
-The share of prior-period expenses in other
-operating expenses amounted to EUR 604 thousand
+The financial result for financial year 2020/2021 amounted to EUR -262 thousand (previous year: EUR 1,915 thousand) and breaks down as follows:
+Income and expenses from profit and loss transfer agreements totalled EUR 259 thousand (previous year: EUR 4,669 thousand). These include the results of BVB Merchandising GmbH, BVB Event & Catering GmbH, BVB Stadionmanagement GmbH, besttravel dortmund GmbH and BVB Fußballakademie GmbH.
 
-(previous year: EUR 651 thousand).
+**Income from profit and loss transfer agreements**
 
-year: EUR 4,669 thousand). These include the
-results of BVB Merchandising GmbH, BVB Event &
-Catering GmbH,
-GmbH, besttravel dortmund GmbH and BVB
-Fußballakademie GmbH.
-
-BVB Stadionmanagement
-
-Income from profit and loss transfer agreements
-I UUUTTTTTTTTUTUTUTTUTUTUTUTUTUTUTUTUTUTUTUTUTUTUTUTTUTUTUTUTUTUTUTUTUTUTUTUTTUTUTUTTTUTUTTTTTTTUTTTTUTTTTTTTTTTYTYVY/[X
-
-EUR '000
-
-BVB Stadionmanagement GmbH
-besttravel dortmund GmbH
-
-BVB Merchandising GmbH
-
-BVB Event & Catering GmbH
-BVB Fußballakademie GmbH
-Total
-
-Net profit/loss Net profit/loss
-01/07/2020 to 30/06/2021 01/07/2019 to 30/06/2020
-42 64
-
-100 566
-
--748 2,458
-
-725 1,581
-
-140 -
-
-259 4,669
+| EUR '000 | Net profit/loss 01/07/2020 to 30/06/2021 | Net profit/loss 01/07/2019 to 30/06/2020 |
+|---|---|---|
+| BVB Stadionmanagement GmbH | 42 | 64 |
+| besttravel dortmund GmbH | 100 | 566 |
+| BVB Merchandising GmbH | -748 | 2,458 |
+| BVB Event & Catering GmbH | 725 | 1,581 |
+| BVB Fußballakademie GmbH | 140 | - |
+| **Total** | **259** | **4,669** |
 
 103
 
@@ -7642,89 +5961,42 @@ Net profit/loss Net profit/loss
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
+Furthermore, interest income of EUR 121 thousand was recognised and related to entirely to compounding. Interest expenses amounted to EUR 642 thousand and comprised mainly financing charges of EUR 554 thousand and discounting effects of EUR 40 thousand.
+
+### Taxes on income
+
+EUR 342 thousand in tax income (previous year: tax expense of EUR 50 thousand) was reported under taxes on income. This was due primarily to the receipt of trade tax reimbursements.
+
+## OTHER DISCLOSURES
+
+### Corporate Governance
+
+The management and Supervisory Board of Borussia Dortmund GmbH & Co. KGaA issued the Declaration of Conformity with the German Corporate Governance Code required by § 161 of the German Stock Corporation Act (*Aktiengesetz*, "AktG") on 7 September 2020 and made it permanently available to shareholders on the website at https://aktie.bvb.de/eng/Corporate-Governance/Statement-of-Compliance.
+
+### General partner
+
+The general partner is Borussia Dortmund Geschäftsführungs-GmbH, whose registered office is in Dortmund and which does not have an interest in the Company's share capital. Its share capital amounts to EUR 30 thousand. Borussia Dortmund Geschäftsführungs-GmbH is exempt from the restrictions contained in § 181 of the German Civil Code (*Bürgerliches Gesetzbuch*, "BGB") and is listed in the commercial register of the Local Court of Dortmund, HRB No. 14206. The managing directors of this company are Hans-Joachim Watzke (Chairman), Thomas Treß (each of whom has sole power of representation) and Carsten Cramer (joint power of representation).
+In the most recent financial year, the members of management received the following amounts for their activities, including responsibilities relating to subsidiary companies:
+
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| **Dipl.-Kfm. Hans-Joachim Watzke (Chairman)** | | |
+| Fixed components | | |
+| Fixed remuneration | 1,905 | 1,802 |
+| Other remuneration | 41 | 40 |
+| **Dipl.-Kfm. Thomas Treß** | | |
+| Fixed components | | |
+| Fixed remuneration | 905 | 860 |
+| Other remuneration | 61 | 72 |
+| **Carsten Cramer** | | |
+| Fixed components | | |
+| Fixed remuneration | 873 | 864 |
+| Other remuneration | 33 | 42 |
+| | **3,818** | **3,680** |
+
+The management did not receive any performance-based remuneration for the 2020/2021 financial year or the previous year.
+
 104
-
-Furthermore, interest income of EUR 121 thousand was recognised and related to entirely to compounding.
-
-Interest expenses amounted to EUR 642 thousand and comprised mainly financing charges of EUR 554 thousand
-
-and discounting effects of EUR 40 thousand.
-
-Taxes on income
-
-EUR 342 thousand in tax income (previous year: tax expense of EUR 50 thousand) was reported under taxes
-
-on income. This was due primarily to the receipt of trade tax reimbursements.
-
-OTHER DISCLOSURES
-
-Corporate Governance
-
-The management and Supervisory Board of Borussia Dortmund GmbH & Co. KGaA issued the Declaration
-
-of Conformity with the German Corporate Governance Code required by 8 161 ofthe German Stock Corporation
-
-Act (Aktiengesetz, "AktG") on 7 September 2020 and made it permanently available to shareholders on the
-
-website at https://aktie.bvb.de/eng/Corporate-Governance/Statement-of-Compliance.
-
-General partner
-
-The general partner is Borussia Dortmund
-Geschäftsführungs-GmbH, whose registered office
-is in Dortmund and which does not have an interest
-inthe Company's share capital. Its share capital
-amounts to EUR 30 thousand. Borussia Dortmund
-Geschäftsführungs-GmbH is exempt from the
-restrictions contained in 8 181 ofthe German Civil
-Code (Bürgerliches Gesetzbuch, "BGB") and is listed
-
-inthe commercial register of the Local Court of
-
-Dortmund, HRBNo. 14206. The managing directors
-of this company are Hans-Joachim Watzke
-(Chairman), Thomas Treß (each of whom has sole
-power of representation) and Carsten Cramer (joint
-power of representation).
-
-In the most recent financial year, the members of
-management received the following amounts for
-their activities, including responsibilities relating to
-
-subsidiary companies:
-
-EUR '000
-
-2020/2021 2019/2020
-
-Dipl.-Kfm. Hans-Joachim Watzke (Chairman)
-
-Fixed components
-
-Fixed remuneration 1,905 1,802
-
-Other remuneration 41 40
-
-Dipl.-Kfm. Thomas Treß
-
-Fixed components
-
-Fixed remuneration 905 860
-
-Other remuneration 61 72
-
-Carsten Cramer
-
-Fixed components
-
-Fixed remuneration 873 864
-
-Other remuneration 33 42
-3,818 3,680
-
-The management did not receive any performance-based remuneration for the 2020/2021 financial year or
-
-the previous year.
 
 --- pág. 105 ---
 
@@ -7856,189 +6128,75 @@ Member of the
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-Employees
+### Employees
 
 The average number of employees during the year was 462 (previous year: 517):
 
-Average number of salaried employees 2020/2021 2019/2020
+| Average number of salaried employees | 2020/2021 | 2019/2020 |
+|---|---|---|
+| **Total** | **462** | **517** |
+| of which in the Athletics Department | 233 | 273 |
+| of which trainees | 2 | 4 |
+| of which other | 227 | 240 |
 
-Total 462 517
-of which in the Athletics Department 233 273
-of which trainees 2 4
-of which other 227 240
+### List of shareholdings
 
-List of shareholdings
-The following table gives summarised information relating to companies in which the Company has a
+The following table gives summarised information relating to companies in which the Company has a shareholding of more than 20%:
 
-shareholding of more than 20%:
+| | Registered office | Share capital (EUR '000) | Shareholding % | Equity (EUR '000) as at 30/06/2021 | Net profit/loss (EUR '000) 01/07/2020 to 30/06/2021 |
+|---|---|---|---|---|---|
+| **Shares in affiliated companies** | | | | | |
+| BVB Stadionmanagement GmbH* | Dortmund | 52 | 100.00 | 66 | 42 |
+| besttravel dortmund GmbH* | Dortmund | 50 | 100.00 | 144 | 100 |
+| BVB Merchandising GmbH* | Dortmund | 75 | 100.00 | 10,881 | -748 |
+| BVB Event & Catering GmbH* | Dortmund | 25 | 100.00 | 25 | 725 |
+| BVB Asia Pacific Pte. Ltd. | Singapur | 66 | 100.00 | 220 | 27 |
+| BVB Fußballakademie GmbH* | Dortmund | 50 | 100.00 | 431 | 140 |
+| **Equity investments** | | | | | |
+| Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH** | Dortmund | 52 | 33.33 | 1,027 | 81 |
 
-Registered Share capital Shareholding Equity Net profit/loss
-office (EUR '000) % (EUR '000) (EUR '000)
+\* Profit and loss transfer agreements are in force. Profit/loss of the Company under HGB prior to transfer to/absorption by the consolidated tax group parent.
+\** Profit/loss of Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH for financial year 2020 and equity as at 31 December 2020.
+
+The companies are included in the consolidated financial statements of Borussia Dortmund GmbH & Co. KGaA, Dortmund.
+The consolidated financial statements are published in the electronic Federal Gazette.
+
+### Related-party disclosures
+
+The general partner in Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien is Borussia Dortmund Geschäftsführungs-GmbH. The latter is responsible for the management and legal representation of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien. The power to appoint and remove members of staff thus rests with BV. Borussia 09 e.V., Dortmund, in its capacity as the sole shareholder in Borussia Dortmund Geschäftsführungs-GmbH. Both Borussia Dortmund Geschäftsführungs-GmbH and BV. Borussia 09 e.V. Dortmund, as well as all companies associated therewith hence are deemed to be related parties.
 
 106
 
-as at 01/07/2020 to
-30/06/2021 30/06/2021
-
-Shares in affiliated companies
-
-BVB Stadionmanagement GmbH* Dortmund 52 100.00 66 42
-besttravel dortmund GmbH* Dortmund 50 100.00 144 100
-BVB Merchandising GmbH* Dortmund 75 100.00 10,881 -748
-BVB Event & Catering GmbH* Dortmund 25 100.00 25 725
-BVB Asia Pacific Pte. Ltd. Singapur 66 100.00 220 27
-BVB Fußballakademie GmbH* Dortmund 50 100.00 431 140
-Equity investments
-
-Orthomed Medizinisches Leistungs-
-
-und Rehabilitationszentrum GmbH** Dortmund 52 33.33 1,027 81
-
-* Profit and loss transfer agreements are in force. Profit/loss of the Company under HGB prior to transfer to/absorption
-
-by the consolidated tax group parent.
-
-** Profit/loss of Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH for financial year 2020
-
-and equity as at 31 December 2020.
-
-The companies are included in the consolidated financial statements of Borussia Dortmund GmbH & Co.
-
-KGaA, Dortmund.
-
-The consolidated financial statements are published in the electronic Federal Gazette.
-
-Related-party disclosures
-
-The general partner in Borussia Dortmund GmbH
-& Co. Kommanditgesellschaft auf Aktien is
-Borussia Dortmund Geschäftsführungs-GmbH.
-The latter is responsible forthe management and
-legal representation of Borussia Dortmund GmbH
-& Co. Kommanditgesellschaft auf Aktien. The
-
-power to appoint and remove members of staff
-
-thus rests with BV. Borussia 09 e.V., Dortmund, in
-its capacity as the sole shareholder in Borussia
-Dortmund Geschäftsführungs-GmbH. Both
-Borussia Dortmund Geschäftsführungs-GmbH and
-BV. Borussia 09 e.V. Dortmund, as well as all
-companies associated therewith hence are
-
-deemed to be related parties.
-
 --- pág. 107 ---
-
-Auditors’ fee
-
-KPMG AG audited the annual and consolidated
-financial statements of Borussia Dortmund GmbH &
-Co. KGaA and conducted further statutory and
-voluntary audits at subsidiaries. The auditors
-reviewed the interim consolidated financial
-statements and carried out mandatory audits and
-reviews as part of the DFL licensing procedure
-pursuantto the DFLlicensing regulations. KPMG also
-
-provided tax advisory services covering advice and
-
-Notifiable shareholdings
 
 ANNUAL FINANCIAL STATEMENTS
 for the financial year from 1 July 2020 to 30 June 2021
 
-assessment in individual cases. The auditors were
-also tasked with conducting a limited assurance
-engagement on the separate non-financial Group
-report. For details of the auditors’ fees, please see
-the notes to the consolidated financial statements.
-The disclosures are not made in this report due to
-the exemption under 8 285 no. 17 HGB for entities
+### Auditors' fee
 
-preparing consolidated financial statements.
+KPMG AG audited the annual and consolidated financial statements of Borussia Dortmund GmbH & Co. KGaA and conducted further statutory and voluntary audits at subsidiaries. The auditors reviewed the interim consolidated financial statements and carried out mandatory audits and reviews as part of the DFL licensing procedure pursuant to the DFL licensing regulations. KPMG also provided tax advisory services covering advice and assessment in individual cases. The auditors were also tasked with conducting a limited assurance engagement on the separate non-financial Group report. For details of the auditors' fees, please see the notes to the consolidated financial statements. The disclosures are not made in this report due to the exemption under § 285 no. 17 HGB for entities preparing consolidated financial statements.
 
-(under 8 160 (1) no. 8 AktG in conjunction with &8 33 (1) and (2) WpHG)
+### Notifiable shareholdings
+(under § 160 (1) no. 8 AktG in conjunction with § 33 (1) and (2) WpHG)
 
-Of the shareholdings in our Company, the following
-were notified to us pursuantto 833 (1)ofthe German
-Securities Trading Act (Wertpapierhandelsgesetz,
-"WpHG") and published with the following content
-pursuant to & 40 (1) WpHG in financial year
-2020/2021:
+Of the shareholdings in our Company, the following were notified to us pursuant to § 33 (1) of the German Securities Trading Act (*Wertpapierhandelsgesetz*, "WpHG") and published with the following content pursuant to § 40 (1) WpHG in financial year 2020/2021:
 
-On 26 February 2021, Mr Francois Henri Joseph
-Pinault and Mr Francois Jean-Henri Pinault notified
-us thattheir voting rights in Borussia Dortmund GmbH
-& Co. KGaA amounted to 0.0% as at 16 May 2018 (0
-voting rights or shares); that their notification was
-submitted due to the discontinuation of the jointly
-attributed controlling position in relation to PUMASSE,
-as aconsequence of which no voting rights stemming
-from shares in Borussia Dortmund GmbH & Co. KGaA
-were attributable to Kering S.A., Artemis S.A. or
-Financiere Pinault S.C.A.
+On 26 February 2021, Mr François Henri Joseph Pinault and Mr François Jean-Henri Pinault notified us that their voting rights in Borussia Dortmund GmbH & Co. KGaA amounted to 0.0% as at 16 May 2018 (0 voting rights or shares); that their notification was submitted due to the discontinuation of the jointly attributed controlling position in relation to PUMA SE, as a consequence of which no voting rights stemming from shares in Borussia Dortmund GmbH & Co. KGaA were attributable to Kering S.A., Artémis S.A. or Financière Pinault S.C.A.
+PUMA SE, Herzogenaurach, Germany, notified us on 17 February 2021, that its share of voting rights in Borussia Dortmund GmbH & Co. KGaA amounted to 4.99% on 16 February 2021 (4,599,900 voting rights or shares) and that all of their voting rights were held directly by PUMA SE in accordance with § 33 WpHG.
 
-PUMA SE, Herzogenaurach, Germany, notified us
-on 17 February 2021, that its share of voting rights
-
-in Borussia Dortmund GmbH & Co. KGaA amounted
-
-to 4.99% on 16 February 2021 (4,599,900 voting
-rights or shares) and that all of their voting rights
-were held directly by PUMA SE in accordance with
-8 33 WpHG.
-
-Mr Ralph Dommermuth notified us on 8 February
-
-2021 that his voting interest in Borussia Dortmund
-
-GmbH & Co. KGaA amounted to 4.99% on 8 February
-
-2021 (4,599,000 voting rights/shares) and that all
-
-of these voting rights were attributable to him
-
-(Mr Ralph Dommermuth) pursuant to 8 34 WpHG
-
-via Ralph Dommermuth Beteiligungen GmbH, and
-
-furthermore that the chain of subsidiaries is as
-
-follows, beginning with the ultimate controlling
-
-person or entity:
-
+Mr Ralph Dommermuth notified us on 8 February 2021 that his voting interest in Borussia Dortmund GmbH & Co. KGaA amounted to 4.99% on 8 February 2021 (4,599,000 voting rights/shares) and that all of these voting rights were attributable to him (Mr Ralph Dommermuth) pursuant to § 34 WpHG via Ralph Dommermuth Beteiligungen GmbH, and furthermore that the chain of subsidiaries is as follows, beginning with the ultimate controlling person or entity:
 - Ralph Dommermuth
-
 - Ralph Dommermuth Verwaltungs GmbH
+- Ralph Dommermuth GmbH & Co. KG Beteiligungsgesellschaft
+- Ralph Dommermuth Beteiligungen GmbH with a voting interest of 4.99%
 
-- Ralph Dommermuth GmbH & Co. KG
-Beteiligungsgesellschaft
+### Shareholdings by members of governing bodies
 
-- Ralph Dommermuth Beteiligungen GmbH with a
-voting interest of 4.99%
+As at 30 June 2021, one member of management held 7,045 no-par value shares in the Company. As at the same date, the members of the Supervisory Board held a total of 8,602,009 no-par value shares. Members of management and the Supervisory Board hold a total of 8,609,054 no-par-value shares, which corresponds to more than 1% of the shares issued by Borussia Dortmund GmbH & Co. KGaA.
 
-Shareholdings by members of governing bodies
+### Expected dividend
 
-As at 30 June 2021, one member of management
-held 7,045 no-par value shares in the Company. As
-at the same date, the members of the Supervisory
-
-Board held a total of 8,602,009 no-par value shares.
-
-Expected dividend
-In light ofthe factthatthe Company reports anet loss
-
-forthe financial year, the management does not intend
-
-Members of management and the Supervisory Board
-hold a total of 8,609,054 no-par-value shares, which
-corresponds to more than 1% of the shares issued
-by Borussia Dortmund GmbH & Co. KGaA.
-
-to propose to the Annual General Meeting any dividend
-distribution for financial year 2020/2021.
+In light of the fact that the Company reports a net loss for the financial year, the management does not intend to propose to the Annual General Meeting any dividend distribution for financial year 2020/2021.
 
 107
 
@@ -8047,68 +6205,38 @@ distribution for financial year 2020/2021.
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-108
+41009946 1376911
 
-Report on post-balance sheet date events
+### Report on post-balance sheet date events
 
-Transfer deals
+### Transfer deals
 
-Borussia Dortmund has reached an agreement with
-top English club Manchester United regarding the
-transfer of player Jadon Sancho. As part of this
-agreement, Borussia Dortmund will receive a fixed
-transfer fee of EUR 85.0 million, which is expected
-to have a positive effect of around EUR 56.0 million
-on the key earnings figures (EBITDA, EBIT) for the
-2021/2022 financial year.
+Borussia Dortmund has reached an agreement with top English club Manchester United regarding the transfer of player Jadon Sancho. As part of this agreement, Borussia Dortmund will receive a fixed transfer fee of EUR 85.0 million, which is expected to have a positive effect of around EUR 56.0 million on the key earnings figures (EBITDA, EBIT) for the 2021/2022 financial year.
 
-Borussia Dortmund has now reached an agreement
-with French club Olympique Marseille on the
-permanent transfer of Leonardo Balerdi, who had
+Borussia Dortmund has now reached an agreement with French club Olympique Marseille on the permanent transfer of Leonardo Balerdi, who had already spent the 2020/2021 season on loan there.
 
-already spent the 2020/2021 season on loan there.
+### Capital expenditure
 
-Capital expenditure
-Borussia Dortmund has signed Dutch international
-Donyell Malen from PSV Eindhoven. The 22-year-old
+Borussia Dortmund has signed Dutch international Donyell Malen from PSV Eindhoven. The 22-year-old signed a contract that runs until 30 June 2026.
 
-signed a contract that runs until 30 June 2026.
+### Match operations
 
-Match operations
+On 4 December 2020, the DFB Executive Committee adopted the new fixture calendar for the 2021/2022 season. This stipulated that Bundesliga matches would start on the weekend of 13 to 15 August 2021. The 34th and final Bundesliga match day is scheduled for 14 May 2022.
 
-On 4 December 2020, the DFB Executive Committee
-adopted the new fixture calendar for the 2021/2022
-season. This stipulated that Bundesliga matches
-would start on the weekend of 13to 15 August 2021.
-The 34th and final Bundesliga match day is
-scheduled for 14 May 2022.
+The DFB Cup will start with the first round one week before the Bundesliga from 6 August 2021.
 
-The DFB Cup will start with the first round one week
-before the Bundesliga from 6 August 2021.
-
-The DFL Super Cup between Borussia Dortmund and
-Bayern Munich will be played on 17 August 2021.
-
-The dates forthe UEFA Champions League have also
-already been set: the first match day of the group
-
-stage will be played on 14/15 September 2021.
+The DFL Super Cup between Borussia Dortmund and Bayern Munich will be played on 17 August 2021.
+The dates for the UEFA Champions League have also already been set: the first match day of the group stage will be played on 14/15 September 2021.
 
 Dortmund, 9 August 2021
-
 Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien
-
 Borussia Dortmund Geschäftsführungs-GmbH
 
-Hans-Joachim Watzke
-Managing Director (Chairman)
+[Firma]  Hans-Joachim Watzke, Managing Director (Chairman)
+[Firma]  Thomas Treß, Managing Director
+[Firma]  Carsten Cramer, Managing Director
 
-Thomas Treß
-Managing Director
-
-Carsten Cramer
-
-Managing Director
+108
 
 --- pág. 109 ---
 
@@ -9982,55 +8110,24 @@ WE Divigend distributed (EUR '000)
 
 GROUP MANAGEMENT REPORT
 
-SEPARATE NON-FINANCIAL GROUP REPORT
+## SEPARATE NON-FINANCIAL GROUP REPORT
 
-Please see the 2020/2021 Sustainability Report
-with regard to the disclosures within the meaning
-of 88 289b, 315b ofthe German Commercial Code
-(Handelsgesetzbuch, "HGB"). The Sustainability
-Report includes the Group's non-financial
+Please see the 2020/2021 Sustainability Report with regard to the disclosures within the meaning of §§ 289b, 315b of the German Commercial Code (*Handelsgesetzbuch*, "HGB"). The Sustainability Report includes the Group's non-financial statement for the 2020/2021 financial year within the meaning of §§ 315b, 315c in conjunction with §§ 289c to 289e HGB, which was subject to a limited assurance engagement. As at 29 October 2021, the Sustainability Report will be published online at *https://verantwortung.bvb.de/en.**
 
-statement for the 2020/2021 financial year within
+## CORPORATE GOVERNANCE DECLARATION PURSUANT TO § 289F HGB
 
-the meaning of 88 315b, 315c in conjunction with
-88 289c to 289e HGB, which was subject to a limited
-assurance engagement. As at 29 October 2021, the
-Sustainability Report will be published online at
-https://verantwortung.bvb.de/en.*
+Pursuant to § 289f of the German Commercial Code (*Handelsgesetzbuch*, "HGB"), listed German stock corporations (*Aktiengesellschaften*) must prepare a corporate governance declaration. This declaration includes the declaration of conformity with the German Corporate Governance Code, and presents the corporate governance practices and the working principles of the management and the Supervisory Board and its committees. The corporate governance declaration is not included in the management report and is instead published online at *https://aktie.bvb.de/eng/Corporate-Governance/Corporate-Governance-Declaration.**
 
-CORPORATE GOVERNANCE DECLARATION PURSUANT TO 8 289F HGB
+In accordance with § 289b (2) sentence 2 HGB, Borussia Dortmund GmbH & Co. KGaA is exempt from preparing a non-financial statement.
 
-Pursuantto 8 289f ofthe German Commercial Code
-(Handelsgesetzbuch, "HGB'), listed German stock
-corporations (Aktiengesellschaften) must prepare a
-corporate governance declaration. This declaration
-includes the declaration of conformity with the
-German Corporate Governance Code, and presents
-the corporate governance practices and the working
-principles of the management and the Supervisory
-Board and its committees. The corporate governance
-declaration is not included in the management
-report and is instead published online at
+The separate non-financial Group report is published online at *https://aktie.bvb.de/eng/Corporate-Governance/sustainability-report.**
 
-https://aktie.bvb.de/eng/Corporate-Governance/
+\* *In accordance with the statutory requirements, KPMG AG Wirtschaftsprüfungsgesellschaft has neither substantively audited the cross-references nor the information to which the cross-references refer.*
 
-Corporate-Governance-Declaration. *
+[Foto] 21th match day, 13 February 2021, BVB - TSG Hoffenheim 2:2
+[Foto] 1/8 final, first leg UCL, 17 February 2021, FC Sevilla - BVB 2:3
 
-In accordance with & 289b (2) sentence 2 HGB,
-Borussia Dortmund GmbH & Co. KGaA is exempt
-
-from preparing a non-financial statement.
-
-The separate non-financial Group report is published
-online at https://aktie.bvb.de/eng/Corporate-Governance/
-
-sustainability-report.*
-
-* In accordance with the statutory requirements, KPMG AG
-Wirtschaftsprüfungsgesellschaft has neither substantively
-audited the cross-references nor the information to which the
-cross-references refer.
-
+135
 
 --- pág. 136 ---
 
@@ -10121,63 +8218,37 @@ of EUR -34,000 thousand.
 
 --- pág. 137 ---
 
-Borussia Dortmund Group (IFRS)
-
 GROUP MANAGEMENT REPORT
 
-Development of non-financial performance indicators
+**Borussia Dortmund Group (IFRS)**
 
-Borussia Dortmund's strategic corporate governance
-is centred around its fans, and their active
-involvement is fundamental to the club's business
-strategy. Especially in times of uncertainty and
-social isolation, it is crucial that we maintain and
-strengthen communication with our most important
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Revenue | 334,171 | 370,196 |
+| Consolidated total operating proceeds | 358,577 | 486,884 |
+| Operating result (EBITDA) | 38,950 | 62,992 |
+| Result from operating activities (EBIT) | -72,093 | -43,138 |
+| Net profit/net loss for the year | -72,810 | -43,953 |
+| Cash flows from operating activities | 15,947 | -362 |
+| Free cash flow | -46,075 | -51,131 |
 
-stakeholder group: our fans.
+### Development of non-financial performance indicators
 
-We discussed the current situation with fans, fan
-clubs and fan groups on many occasions in the past
-season. These talks demonstrated how much our
-fans continue to value the sport, the club and most
+Borussia Dortmund's strategic corporate governance is centred around its fans, and their active involvement is fundamental to the club's business strategy. Especially in times of uncertainty and social isolation, it is crucial that we maintain and strengthen communication with our most important stakeholder group: our fans.
 
-of allthe footballing community.
+We discussed the current situation with fans, fan clubs and fan groups on many occasions in the past season. These talks demonstrated how much our fans continue to value the sport, the club and most of all the footballing community.
 
-BVB wants to understand the impact that the
-pandemic is having on Borussia Dortmund's fan
-culture. Tothis end, an academic study was carried
-out in March which gave fans the opportunity to
-share their perception ofthe current status of the
+BVB wants to understand the impact that the pandemic is having on Borussia Dortmund's fan culture. To this end, an academic study was carried out in March which gave fans the opportunity to share their perception of the current status of the club, its fan community and professional football in general.
 
-club, its fan community and professional football
+At the same time, BVB is a big proponent of engaging with its fans via its numerous digital platforms, such as the fan podcast, virtual Fan Council meetings and BVB's official Twitch channel.
+BVB wants to focus more closely on youth work going forward, and develop specific activities and initiatives for young people across various educational levels. In addition, the club will continuously set aside tickets for young people that are awarded in a transparent manner.
 
-in general.
+Progress is also being made in developing the club's girl's and women's football programme. Doing things "the Dortmund way", the ambitious goal is for the BVB women's team to leave local league football behind as they aim higher. The team around the team is already in place. World champion and Olympic gold medallist Annike Krahn and ex-BVB pro Christian Timm are on board in an advisory capacity, while Thomas Sulewski has been named coach for the new team.
 
-Atthesame time, BVB is a big proponent of engaging
-with its fans via its numerous digital platforms, such
-asthe fan podcast, virtual Fan Council meetings and
-BVB's official Twitch channel.
+[Foto] DFB cup quarter final, 2 March 2021, Borussia M'gladbach - BVB 0:1
+[Foto] 24th match day, 6 March 2021, Bayern München - BVB 4:2
 
-BVB wants to focus more closely on youth work
-going forward, and develop specific activities and
-initiatives for young people across various
-educational levels. In addition, the club will
-continuously set aside tickets for young people
-
-that are awarded in a transparent manner.
-
-Progress is also being made in developing the
-club's girl's and women's football programme.
-Doing things "the Dortmund way", the ambitious
-goal is for the BVB women's team to leave local
-league football behind as they aim higher. The
-team around the team is already in place. World
-champion and Olympic gold medallist Annike
-Krahn and ex-BVB pro Christian Timm are on
-board in an advisory capacity, while Thomas
-
-Sulewski has been named coach for the new team.
-
+137
 
 --- pág. 138 ---
 
@@ -10293,102 +8364,56 @@ which the cross-references refer.
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-RESULTS OF OPERATIONS
+## RESULTS OF OPERATIONS
 
-During the reporting period (1 July 2020 to 30 June
-2021), Borussia Dortmund generated revenue of EUR
-334,171 thousand (previous year: EUR 370,196
-thousand), EUR 36,025 thousand less than in the
-previous year. Net transfer income amounted to EUR
-15,401 thousand (previous year: EUR 40,160 thousand).
+During the reporting period (1 July 2020 to 30 June 2021), Borussia Dortmund generated revenue of EUR 334,171 thousand (previous year: EUR 370,196 thousand), EUR 36,025 thousand less than in the previous year. Net transfer income amounted to EUR 15,401 thousand (previous year: EUR 40,160 thousand).
 
-Earnings before taxes amounted to EUR -73,152
+Earnings before taxes amounted to EUR -73,152 thousand (previous year: EUR -46,583 thousand); the result from operating activities (EBIT) amounted to EUR -72,093 thousand (previous year: EUR -43,138 thousand).
+During the current reporting year, the operating result (EBITDA) amounted to EUR 38,950 thousand (previous year: EUR 62,992 thousand).
+Borussia Dortmund generated a net loss of EUR 72,810 thousand during the 2020/2021 financial year (previous year: net loss of EUR 43,953 thousand).
 
-thousand (previous year: EUR -46,583 thousand);
+**Borussia Dortmund Group – Revenue in percent**
 
-the result from operating activities (EBIT) amounted
-to EUR -72,093 thousand (previous year: EUR -43,138
-thousand).
+[Gráfico circular]
+- 0.17 %
+- 2.31 %
+- 9.77 %
+- 55.86 %
+- 31.89 %
 
-During the current reporting year, the operating result
-(EBITDA) amounted to EUR 38,950 thousand (previous
-year: EUR 62,992 thousand).
+Legend: Conference, catering, miscellaneous | Merchandising | TV Marketing | Advertising | Match operations
 
-Borussia Dortmund generated a net loss of EUR
-72,810 thousand during the 2020/2021 financial year
-(previous year: net loss of EUR 43,953 thousand).
+[Foto] Quarter final, first leg UCL, 6 April 2021, Manchester City - BVB 2:1
+[Foto] 28th match day, 10 April 2021, VfB Stuttgart - BVB 2:3
 
-Borussia Dortmund Group - Revenue in percent
-ee U U UT!
-
-0.17% ,7231%
-
-19%
-
-Conference, catering, miscellaneous
-
-Merchandising
-
-FE TV Marketing
-BE Advertising
-
-7 917%
-
-\— 55.86 %
-
-BEN Match operations
-
+140
 
 --- pág. 141 ---
 
-REVENUE TREND
-
-Borussia Dortmund generated revenue of EUR
-334,171 thousand in the 2020/2021 financial year,
-representing a decrease of EUR 36,025 thousand
-or 9.73%. Income from advertising and TV
-
-marketing increased year on year despite the
-
 GROUP MANAGEMENT REPORT
 
-severe restrictions as a result of the COVID-19
-pandemic. By contrast, income from match
-operations, merchandising, and conference,
-catering and miscellaneous decreased in financial
-year 2020/2021.
+## REVENUE TREND
 
-Borussia Dortmund Group - Revenue in EUR '000
+Borussia Dortmund generated revenue of EUR 334,171 thousand in the 2020/2021 financial year, representing a decrease of EUR 36,025 thousand or 9.73%. Income from advertising and TV marketing increased year on year despite the severe restrictions as a result of the COVID-19 pandemic. By contrast, income from match operations, merchandising, and conference, catering and miscellaneous decreased in financial year 2020/2021.
 
-400,000
-> 36,553
-350,000
-7,145
-r 32,640 r 33,292
-300,000
-250,000
-> 186,655 r 169,836
-200,000
-150,000
-100,000
-r 106,577 98,005
-50,000
-r- 32,510
-j 554
+**Borussia Dortmund Group – Revenue in EUR '000**
 
-2020/2021
+[Gráfico de barras apiladas; eje 0 – 400,000]
 
-2019/2020
+| | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Conference, catering, miscellaneous | 7,745 | 36,553 |
+| Merchandising | 32,640 | 33,292 |
+| TV Marketing | 186,655 | 169,836 |
+| Advertising | 106,577 | 98,005 |
+| Match operations | 554 | 32,510 |
 
-Conference, catering, miscellaneous | TV Marketing BEN Watch operations
-Merchandising BEE Aavertising
+Legend: Conference, catering, miscellaneous | Merchandising | TV Marketing | Advertising | Match operations
 
--
+[Foto] Quarter final, second leg UCL, 14 April 2021, BVB - Manchester City 1:2
+[Foto] 29th match day, 18 April 2021, BVB - Werder Bremen 4:1
 
-DAB mi .
-a = nn ©
-
-“
+141
 
 --- pág. 142 ---
 
@@ -10848,124 +8873,84 @@ recognition of unutilised loss carryforwards.
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-ANALYSIS OF CAPITAL STRUCTURE
+## ANALYSIS OF CAPITAL STRUCTURE
 
-DEVELOPMENT AND PERFORMANCE OF THE BUSINESS
+## DEVELOPMENT AND PERFORMANCE OF THE BUSINESS
 
-As at 30 June 2021, total assets amounted to EUR
-450,519 thousand, representing a decrease of
-EUR 67,448 thousand as compared to 30 June 2020.
+As at 30 June 2021, total assets amounted to EUR 450,519 thousand, representing a decrease of EUR 67,448 thousand as compared to 30 June 2020.
 
-Non-current assets decreased by EUR 51,652
-thousand to EUR 389,903 thousand as follows:
+Non-current assets decreased by EUR 51,652 thousand to EUR 389,903 thousand as follows:
 
-The EUR 36,233 thousand decrease in intangible
-assets is due to additions to player registrations
-(EUR 58,738 thousand) less disposals and
+The EUR 36,233 thousand decrease in intangible assets is due to additions to player registrations (EUR 58,738 thousand) less disposals and reclassifications of non-current intangible assets to assets held for sale (EUR 2,341 thousand) and amortisation and write-downs (EUR 92,630 thousand).
 
-reclassifications of non-current intangible assets
+Property, plant and equipment increased by EUR 4,465 thousand. The additions were offset by EUR 445 thousand in disposals and EUR 13,603 thousand in depreciation. The additions were attributable mainly to the investments to expand the training ground and in the stadium.
 
-to assets held for sale (EUR 2,341 thousand) and
-amortisation and write-downs (EUR 92,630
-
-thousand).
-
-Property, plant and equipment increased by EUR
-4,465 thousand. The additions were offset by EUR
-445 thousand in disposals and EUR 13,603
-thousand in depreciation. The additions were
-attributable mainly to the investments to expand
-
-the training ground and in the stadium.
-
-CONSOLIDATED STATEMENT OF FINANCIAL POSITION
-
+## CONSOLIDATED STATEMENT OF FINANCIAL POSITION
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 
-ASSETS
-
-Non-current assets
-Intangible assets
-Property, plant and equipment
-
-Investments accounted for using the equity method
-
-Financial assets
-Trade and other financial receivables
-Prepaid expenses
-
-Current assets
-Inventories
-Trade and other financial receivables
-Tax assets
-Cash and cash equivalents
-Prepaid expenses
-Assets held for sale
+| ASSETS | 30/06/2021 EUR '000 | in % | 30/06/2020 EUR '000 | in % |
+|---|---|---|---|---|
+| **Non-current assets** | | | | |
+| Intangible assets | 193,434 | 42.9 | 229,667 | 44.3 |
+| Property, plant and equipment | 183,454 | 40.7 | 193,037 | 37.3 |
+| Investments accounted for using the equity method | 402 | 0.1 | 321 | 0.1 |
+| Financial assets | 27 | 0.0 | 32 | 0.0 |
+| Trade and other financial receivables | 10,392 | 2.3 | 12,680 | 2.4 |
+| Prepaid expenses | 2,094 | 0.5 | 5,718 | 1.1 |
+| | 389,803 | 86.5 | 441,455 | 85.2 |
+| **Current assets** | | | | |
+| Inventories | 6,806 | 1.5 | 6,754 | 1.3 |
+| Trade and other financial receivables | 29,936 | 6.7 | 36,520 | 7.1 |
+| Tax assets | 85 | 0.0 | 375 | 0.1 |
+| Cash and cash equivalents | 1,725 | 0.4 | 3,317 | 0.6 |
+| Prepaid expenses | 12,708 | 2.8 | 9,901 | 1.9 |
+| Assets held for sale | 9,456 | 2.1 | 19,645 | 3.8 |
+| | 60,716 | 13.5 | 76,512 | 14.8 |
+| | **450,519** | **100.0** | **517,967** | **100.0** |
 
 148
 
-450,519
-
-100.0 517,967 100.0
-
-
 --- pág. 149 ---
-
-Trade receivables and other financial receivables
-decreased by EUR 8,872 thousand to EUR 40,328
-thousand. This is due primarily to net proceeds
-received from transfers and lower receivables
-
-from advertising partners.
-
-Cash and cash and cash equivalents amounted to
-EUR 1,725 thousand as atthe end ofthe reporting
-period (previous year: EUR 3,317 thousand).
 
 GROUP MANAGEMENT REPORT
 
-Assets held for sale declined by EUR 10,189
-thousand to EUR 9,456 thousand (previous year:
-EUR 19,645 thousand).
+Trade receivables and other financial receivables decreased by EUR 8,872 thousand to EUR 40,328 thousand. This is due primarily to net proceeds received from transfers and lower receivables from advertising partners.
 
-Inventories remained virtually unchanged at EUR
-6,806 thousand (previous year: EUR 6,754).
+Cash and cash and cash equivalents amounted to EUR 1,725 thousand as at the end of the reporting period (previous year: EUR 3,317 thousand).
 
-Prepaid expenses decreased by EUR 817 thousand
-to EUR 14,802 thousand (previous year: EUR
-15,619 thousand).
+Assets held for sale declined by EUR 10,189 thousand to EUR 9,456 thousand (previous year: EUR 19,645 thousand).
 
-CONSOLIDATED STATEMENT OF FINANCIAL POSITION
+Inventories remained virtually unchanged at EUR 6,806 thousand (previous year: EUR 6,754).
 
+Prepaid expenses decreased by EUR 817 thousand to EUR 14,802 thousand (previous year: EUR 15,619 thousand).
+
+## CONSOLIDATED STATEMENT OF FINANCIAL POSITION
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 
-EQUITY AND LIABILITIES
-
-Equity
-Subscribed capital
-Reserves
-Treasury shares
-
-Equity attributable to the owners
-of the parent company
-
-Non-current liabilities
-Lease liabilities
-Trade payables
-Other financial liabilities
-Deferred tax liabilities
-Deferred income
-
-Current liabilities
-Financial liabilities
-Provisions
-Lease liabilities
-Trade payables
-Other financial liabilities
-Tax liabilities
-Deferred income
-
-450,519 100.0 517,967 100.0
+| EQUITY AND LIABILITIES | 30/06/2021 EUR '000 | in % | 30/06/2020 EUR '000 | in % |
+|---|---|---|---|---|
+| **Equity** | | | | |
+| Subscribed capital | 92,000 | 20.4 | 92,000 | 17.8 |
+| Reserves | 140,750 | 31.2 | 213,560 | 41.2 |
+| Treasury shares | -113 | 0.0 | -113 | 0.0 |
+| Equity attributable to the owners of the parent company | 232,637 | 51.6 | 305,447 | 59.0 |
+| **Non-current liabilities** | | | | |
+| Lease liabilities | 16,819 | 3.7 | 20,054 | 3.9 |
+| Trade payables | 37,250 | 8.3 | 69,627 | 13.4 |
+| Other financial liabilities | 208 | 0.1 | 0 | 0.0 |
+| Deferred tax liabilities | 0 | 0.0 | 0 | 0.0 |
+| Deferred income | 0 | 0.0 | 230 | 0.0 |
+| | 54,277 | 12.1 | 89,911 | 17.3 |
+| **Current liabilities** | | | | |
+| Financial liabilities | 56,900 | 12.6 | 8,031 | 1.6 |
+| Provisions | 2,333 | 0.5 | 0 | 0.0 |
+| Lease liabilities | 4,241 | 1.0 | 4,350 | 0.8 |
+| Trade payables | 64,103 | 14.2 | 67,432 | 13.0 |
+| Other financial liabilities | 30,901 | 6.9 | 39,115 | 7.6 |
+| Tax liabilities | 40 | 0.0 | 40 | 0.0 |
+| Deferred income | 5,087 | 1.1 | 3,641 | 0.7 |
+| | 163,605 | 36.3 | 122,609 | 23.7 |
+| | **450,519** | **100.0** | **517,967** | **100.0** |
 
 149
 
@@ -10974,103 +8959,37 @@ Deferred income
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-150
+As at 30 June 2021, Borussia Dortmund's equity amounted to EUR 232,637 thousand. This corresponds to an equity ratio of 51.64% (previous year: 58.97%). Subscribed capital remained level at EUR 92,000 thousand.
 
-As at 30 June 2021, Borussia Dortmund's equity
-amounted to EUR 232,637 thousand. This
-corresponds to an equity ratio of 51.64% (previous
-year: 58.97%). Subscribed capital remained level
-at EUR 92,000 thousand.
+Changes in current and non-current liabilities were as follows:
 
-Changes in current and non-current liabilities
+Borussia Dortmund reported liabilities of EUR 217,882 thousand as at 30 June 2021 (previous year: EUR 212,520). This represents an increase of EUR 5,362 thousand.
 
-were as follows:
+Changes in total current and non-current liabilities were as follows:
 
-Borussia Dortmund reported liabilities of EUR
-217,882 thousand as at 30 June 2021 (previous
-year: EUR 212,520). This represents an increase
+Lease liabilities decreased from EUR 24,404 thousand to EUR 21,060 thousand in the reporting period. The repayments of lease liabilities of EUR 4,386 thousand were partly offset by moderate increases relating to the fan shop and vehicle fleet.
 
-of EUR 5,362 thousand.
+Non-current trade payables decreased by EUR 32,377 thousand to EUR 37,250 thousand. Current trade payables also fell, declining by EUR 3,329 thousand to EUR 64,103 thousand. This was mainly attributable to liabilities for transfer deals that were settled in the financial year.
 
-Changes in total current and non-current liabilities
-
-were as follows:
-
-Lease liabilities decreased from EUR 24,404
-thousand to EUR 21,080 thousand in the reporting
-period. The repayments of lease liabilities of EUR
-4,386 thousand were partly offset by moderate
-
-increases relating to the fan shop and vehicle fleet.
-
-Non-current trade payables decreased by EUR
-32,377 thousand to EUR 37,250 thousand. Current
-
-ANALYSIS OF CAPITAL EXPENDITURE
-
-In the past financial year, Borussia Dortmund
-invested EUR 58,738 thousand in intangible assets.
-The entirety of this amount was invested in the
-player base.
-
-Cash payments for property, plant and equipment
-during the same period amounted to EUR 3,414
-thousand and primarily include investments in the
-Brackel training ground in connection with the
-
-project to expand BVB's training centre.
-
-The focus of future investments will firstly continue
-to be on the projectto expand BVB's training centre.
-
-The training ground and youth academy will be
-
-trade payables also fell, declining by EUR 3,329
-thousand to EUR 64,103 thousand. This was mainly
-attributable to liabilities for transfer deals that
-
-were settled in the financial year.
-
-Other financial liabilities decreased by EUR 8,214
-thousand to EUR 30,901 thousand. The decrease
-was due primarily to paying variable remuneration
-
-to the professional squad.
+Other financial liabilities decreased by EUR 8,214 thousand to EUR 30,901 thousand. The decrease was due primarily to paying variable remuneration to the professional squad.
 
 Tax liabilities remained level at EUR 40 thousand.
 
-Deferred income decreased by EUR 1,216
-thousand to EUR 5,087 (previous year: EUR 3,871
+Deferred income decreased by EUR 1,216 thousand to EUR 5,087 (previous year: EUR 3,871 thousand).
 
-thousand).
+As at the end of the reporting period, Borussia Dortmund reported EUR 56,900 thousand in overdraft facilities, which it had drawn down, under current financial liabilities.
+The EUR 2,333 thousand (previous year: EUR 0 thousand) in provisions recognised as at 30 June 2021 included provisions for litigation and liability risks relating to legal proceedings, and was expensed.
 
-As at the end of the reporting period, Borussia
-Dortmund reported EUR 56,900 thousand in
-overdraft facilities, which it had drawn down,
-under current financial liabilities.
+## ANALYSIS OF CAPITAL EXPENDITURE
 
-The EUR 2,333 thousand (previous year: EUR O0
-thousand) in provisions recognised as at 30 June
-2021 included provisions for litigation and liability
-risks relating to legal proceedings, and was
+In the past financial year, Borussia Dortmund invested EUR 58,738 thousand in intangible assets. The entirety of this amount was invested in the player base.
+Cash payments for property, plant and equipment during the same period amounted to EUR 3,414 thousand and primarily include investments in the Brackel training ground in connection with the project to expand BVB's training centre.
 
-expensed.
+The focus of future investments will firstly continue to be on the project to expand BVB's training centre. The training ground and youth academy will be enhanced in stages over the period up to 2022. This involved acquiring further adjacent land and opening a new fitness area. Other steps are currently being implemented.
+Secondly, Borussia Dortmund is currently designing its new fan and youth centre which will be located on the Strobelallee. The centre will offer a variety of programmes intended above all to improve communication with the fans and to establish it as a type of community centre for fans.
+There are also plans to further develop and expand the infrastructure and the areas in and around SIGNAL IDUNA PARK.
 
-enhanced in stages over the period up to 2022. This
-involved acquiring further adjacent land and
-opening a new fitness area. Other steps are
-currently being implemented.
-
-Secondly, Borussia Dortmund is currently designing
-its new fan and youth centre which will be located
-on the Strobelallee. The centre will offer a variety
-of programmes intended above all to improve
-communication with the fans and to establish it as
-atype of community centre for fans.
-
-There are also plans to further develop and expand
-the infrastructure and the areas in and around
-SIGNAL IDUNA PARK.
+150
 
 --- pág. 151 ---
 
@@ -12835,93 +10754,29 @@ approximately EUR -26,000 thousand.
 
 GROUP MANAGEMENT REPORT
 
-OVERALL ASSESSMENT OF EXPECTED PERFORMANCE
+## OVERALL ASSESSMENT OF EXPECTED PERFORMANCE
 
-The consequences of the COVID-19 pandemic will
-continue to have adverse effects in the coming
-2021/2022 financial year. Due tothe positive results
-of operations in the financial years prior to the
-COVID-19 pandemic, stable equity of EUR 232,637
-thousand (which corresponds to an equity ratio of
+The consequences of the COVID-19 pandemic will continue to have adverse effects in the coming 2021/2022 financial year. Due to the positive results of operations in the financial years prior to the COVID-19 pandemic, stable equity of EUR 232,637 thousand (which corresponds to an equity ratio of approximately 51.64%) as at 30 June 2021 despite the consolidated net loss for the year, and the Company's long-term focus, Borussia Dortmund considers itself prepared to handle the still uncertain economic situation. The management is continuously reassessing the situation as it pertains to the COVID-19 pandemic.
 
-approximately 51.64%) as at 30 June 2021 despite
+## OTHER DISCLOSURES
 
-OTHER DISCLOSURES
+The notes contain disclosures pursuant to § 160 (1) no. 2 AktG.
 
-the consolidated net loss for the year, and the
-Company's long-term focus, Borussia Dortmund
-considers itself prepared to handle the still uncertain
-economic situation. Themanagement is continuously
-reassessing the situation as it pertains to the
-COVID-19 pandemic.
+## REPORT IN ACCORDANCE WITH § 315A (1) HGB IN THE VERSION PURSUANT TO ARTICLE 83 (1) SENTENCE 2 EGHGB
 
-The notes contain disclosures pursuant to 8 160 (1) no. 2 AktG.
+The following information has been provided by the Company in response to the requirements of § 315a (1) sentence 1 nos. 1 to 9 HGB:
 
-REPORT IN ACCORDANCE WITH 8 315A (1) HGB IN THE VERSION
-PURSUANT TO ARTICLE 83 (1) SENTENCE 2 EGHGB
+1. As at 30 June 2021, the share capital of Borussia Dortmund GmbH & Co. KGaA amounts to EUR 92,000,000.00 and is divided into 92,000,000 no-par value ordinary bearer shares. All of the shares have been admitted to trading on the Regulated Market (Prime Standard) of the Frankfurt Stock Exchange and to the over-the-counter markets (Open Market) in Berlin, Bremen, Stuttgart, Munich, Hamburg and Düsseldorf. Each no-par value share entitles the holder to one vote at the Annual General Meeting. The Company has only one class of shares, and all shares carry the same rights and obligations. All other rights and responsibilities attaching to the Company's shares are determined in accordance with the German Stock Corporation Act (*Aktiengesetz*, "AktG").
 
-The following information has been provided by the
-Company in response to the requirements of 8 315a
+2. Restrictions affecting the voting rights or transfer of the shares, and
 
-(1) sentence 1 nos. 1 to 9 HGB:
+3. Interests in the share capital of Borussia Dortmund GmbH & Co. KGaA exceeding 10% of the voting rights as at 30 June 2021:
 
-1. Asat30 June 2021, the share capital of Borussia
-Dortmund GmbH & Co. KGaA amounts to EUR
-92,000,000.00 and is divided into 92,000,000
-no-par value ordinary bearer shares. All of the
-shares have been admitted to trading on the
-Regulated Market (Prime Standard) of the
-Frankfurt Stock Exchange and to the
-over-the-counter markets (Open Market) in
-Berlin, Bremen, Stuttgart, Munich, Hamburg and
-Düsseldorf. Each no-par value share entitlesthe
-holder to one vote atthe Annual General Meeting.
-The Company has only one class of shares, and
-allshares carry the same rights and obligations.
-All other rights and responsibilities attaching to
-the Company's shares are determined in
-accordance with the German Stock Corporation
-Act (Aktiengesetz, "AktG").
+   1) Ballspielverein Borussia 09 e.V. Dortmund, Dortmund, Germany: 14.88% of the voting rights (of which 5.53% held directly and 9.35% held indirectly by including the voting rights of Bernd Geske, Germany, pursuant to § 22 (2) and henceforth § 34 (2) WpHG)
 
-2. Restrictions affecting the voting rights or transfer
+   2) Bernd Geske, Meerbusch, Germany: 14.88% of the voting rights (of which 9.35% held directly and 5.53% held indirectly by including the voting rights of Ballspielverein Borussia 09 e.V. Dortmund, Dortmund, Germany, pursuant to § 34 (2) WpHG)
 
-ofthe shares, and
-
-3. Interests in the share capital of Borussia
-Dortmund GmbH & Co. KGaA exceeding 10% of
-the voting rights as at 30 June 2021:
-
-1) Ballspielverein Borussia 09 e.V. Dortmund,
-Dortmund, Germany: 14.88% of the voting
-rights (of which 5.53% held directly and 9.35%
-held indirectly by including the voting rights of
-Bernd Geske, Germany, pursuant to 8 22 (2)
-and henceforth 8 34 (2) WpHG)
-
-=”
-
-Bernd Geske, Meerbusch, Germany: 14.88% of
-the voting rights (of which 9.35% held directly
-and 5.53% held indirectly by including the
-voting rights of Ballspielverein Borussia 09 e.V.
-Dortmund, Dortmund, Germany, pursuant to
-8 34 (2) WpHG)
-
-According to the information available, the
-inclusion of the voting rights in either case
-is based on a shareholders' agreement
-concluded between Ballspielverein Borussia
-09 e.V. Dortmund and Bernd Geske currently
-for aterm until 30 June 2022 (after the original
-agreement ending on 30 June 2017 was
-extended). The material subject matter of said
-agreement is the stipulation binding the parties
-to exercise their voting rights in favour of
-Ballspielverein Borussia 09 e.V. Dortmund with
-regard to Bernd Geske's shares in Borussia
-Dortmund GmbH & Co. KGaA, and that Bernd
-
-Geske and Ballspielverein Borussia 09 e.V.
+   According to the information available, the inclusion of the voting rights in either case is based on a shareholders' agreement concluded between Ballspielverein Borussia 09 e.V. Dortmund and Bernd Geske currently for a term until 30 June 2022 (after the original agreement ending on 30 June 2017 was extended). The material subject matter of said agreement is the stipulation binding the parties to exercise their voting rights in favour of Ballspielverein Borussia 09 e.V. Dortmund with regard to Bernd Geske's shares in Borussia Dortmund GmbH & Co. KGaA, and that Bernd Geske and Ballspielverein Borussia 09 e.V.
 
 171
 
@@ -12930,171 +10785,45 @@ Geske and Ballspielverein Borussia 09 e.V.
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
+   Dortmund mutually agree to inform one another and vote on any changes to their respective shareholdings in Borussia Dortmund GmbH & Co. KGaA, especially pertaining to the transfer of shares.
+
+4. There are no shares with special rights conferring powers of control.
+
+5. There is no control of voting rights in cases in which employees are shareholders.
+
+6. Because of its legal form as a partnership limited by shares, Borussia Dortmund GmbH & Co. KGaA does not have a management board. Instead, management and representation of the Company is the responsibility of the general partner. The provisions of Article 6 No. 1 of the Articles of Association stipulate that Borussia Dortmund Geschäftsführungs-GmbH, with registered offices in Dortmund, is to act as such an executive body on a permanent basis and not for a limited period of time by virtue of its status as a shareholder. The appointment and removal of managing directors of Borussia Dortmund Geschäftsführungs-GmbH is governed by § 8 no. 6 of its shareholders' agreement and is the responsibility of the Executive Committee of its Advisory Board, and therefore not of the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA.
+
+   In principle, changes may be made to the Articles of Association of Borussia Dortmund GmbH & Co. KGaA only by a resolution of its Annual General Meeting, which, in accordance with § 133 (1) of the AktG, must be passed by a simple majority of votes and also, in accordance with Article 15 No. 3 of the Articles of Association of the Company in conjunction with § 179 (1) and (2) of the AktG, by a simple majority of the capital represented on the date of the resolution, except to the extent that mandatory statutory provisions or the Articles of Association stipulate otherwise. A mandatory provision of statute requires that a resolution of the Annual General Meeting be passed by a majority of three-quarters of the share capital represented on the date of the resolution in the event of changes to the Articles of Association relating to the object of the Company (§ 179 (2) sentence 2 AktG), the issuance of non-voting preferred shares (§ 182 (1) sentence 2 AktG), capital increases involving the disapplication of pre-emptive subscription rights (§ 186 (3) AktG), the creation of conditional capital (§ 193 (1) AktG), the creation of authorised capital (§ 202 (2) AktG) – where appropriate with authorisation to disapply pre-emptive subscription rights (§ 203 (2) sentence 2 in conjunction with § 186 (4) AktG) –, the ordinary or simplified reduction of share capital (§ 222 (1) sentence 2 and § 229 (3) AktG) or a change of legal form (§ 233 (2) and § 240 (1) of the German Reorganisation and Transformation Act [Umwandlungsgesetz, "UmwG"]). In addition, capital increases, other changes to the Articles of Association and other decisions of a fundamental nature may only be resolved with the approval of the general partner in accordance with § 285 (2) sentence 1 of the AktG. The Supervisory Board is authorised in accordance with Article 12 No. 5 of the Articles of Association to resolve changes to the Articles of Association which relate only to the wording thereof, in particular in connection with the amount of capital increases from authorised and conditional capital.
+
+7. By virtue of the resolution by the Annual General Meeting on 19 November 2020, the general partner is authorised until 18 November 2025, with the approval of the Supervisory Board, to increase the share capital by a maximum of EUR 18,400,000 in total by issuing new no-par value ordinary bearer shares against cash contributions on one or more occasions (Authorised Capital 2020). The previous Authorised Capital 2014 of EUR 23,000,000 had been subject to an authorisation valid until 23 November 2019. This was not utilised and as such the authorised capital expired on 23 November 2019.
+
+8. The Company is not a party to any material agreements which are conditional on a change of control following a takeover bid for the issued shares of Borussia Dortmund GmbH & Co. KGaA.
+
+9. The Company is not a party to any compensation agreements that would apply in the event of a takeover bid.
+
 172
-
-Dortmund mutually agree to inform one
-another and vote on any changes to their
-respective shareholdings in Borussia Dortmund
-GmbH & Co. KGaA, especially pertaining to the
-
-transfer of shares.
-
-4. There are no shares with special rights conferring
-
-powers of control.
-
-. Thereisno control of voting rights in cases in which
-
-employees are shareholders.
-
-Because of its legal form as a partnership limited
-by shares, Borussia Dortmund GmbH & Co. KGaA
-does not have a management board. Instead,
-management and representation ofthe Company
-is the responsibility of the general partner. The
-provisions of Article 6 No. 1 of the Articles of
-Association stipulate that Borussia Dortmund
-Geschäftsführungs-GmbH, with registered offices
-in Dortmund, is to act as such an executive body
-on a permanent basis and not for a limited period
-oftime by virtue of its status as ashareholder. The
-appointment and removal of managing directors
-of Borussia Dortmund Geschäftsführungs-GmbH
-is governed by 8 8 no. 6 of its shareholders’
-agreement and istheresponsibility ofthe Executive
-Committee of its Advisory Board, and therefore not
-of the Supervisory Board of Borussia Dortmund
-GmbH & Co. KGaA.
-
-In principle, changes may be made to the Articles
-of Association of Borussia Dortmund GmbH & Co.
-KGaA only by a resolution of its Annual General
-Meeting, which, in accordance with 8 133 (1) ofthe
-AktG, must be passed by a simple majority of votes
-and also, in accordance with Article 15 No. 3ofthe
-Articles of Association of the Company in
-conjunction with 8 179 (1) and (2) ofthe AktG, by a
-simple majority of the capital represented on the
-date of the resolution, except to the extent that
-mandatory statutory provisions or the Articles of
-Association stipulate otherwise. A mandatory
-provision of statute requires that a resolution of
-the Annual General Meeting be passed by a
-majority of three-quarters of the share capital
-represented on the date of the resolution in the
-event of changes to the Articles of Association
-
-relating to the object of the Company (8 179 (2)
-
-sentence 2 AktG), the issuance of non-voting
-preferred shares (8 182 (1) sentence 2 AktG),
-capital increases involving the disapplication of
-pre-emptive subscription rights (8 186 (3) AktG),
-the creation of conditional capital (8 193 (1) AktG),
-the creation of authorised capital ($ 202 (2) AktG)
-- where appropriate with authorisation to disapply
-pre-emptive subscription rights (8 203 (2) sentence
-2 in conjunction with 8 186 (4) AktG) -, the ordinary
-or simplified reduction of share capital (8 222 (1)
-sentence 2 and 8 229 (3) AktG) orachange of legal
-form (8 233 (2) and 8 240 (1) of the German
-Reorganisation and Transformation Act
-[Umwandlungsgesetz, "UmwG"]). In addition,
-capital increases, other changes to the Articles
-of Association and other decisions of a
-fundamental nature may only be resolved with
-the approval of the general partner in
-accordance with 8 285 (2) sentence 1 ofthe AktG.
-The Supervisory Board is authorised in accordance
-with Article 12 No. 5 of the Articles of Association
-to resolve changes to the Articles of Association
-which relate only to the wording thereof, in
-particular in connection with the amount of capital
-
-increases from authorised and conditional capital.
-
-By virtue of the resolution by the Annual General
-Meeting on 19 November 2020, the general
-partner is authorised until 18 November 2025,
-with the approval of the Supervisory Board, to
-increase the share capital by amaximum of EUR
-18,400,000 in total by issuing new no-par value
-ordinary bearer shares against cash contributions
-on one or more occasions (Authorised Capital
-2020). The previous Authorised Capital 2014 of
-EUR 23,000,000 had been subject to an
-authorisation valid until 23 November 2019. This
-was not utilised and as such the authorised capital
-
-expired on 23 November 2019.
-
-The Company is not a party to any material
-agreements which are conditional on achange of
-control following a takeover bid for the issued
-
-shares of Borussia Dortmund GmbH & Co. KGaA.
-
-The Company is not a party to any compensation
-agreements that would apply in the event of a
-
-takeover bid.
 
 --- pág. 173 ---
 
 GROUP MANAGEMENT REPORT
 
-STATEMENT BY THE GENERAL PARTNER ON RELATIONS
+## STATEMENT BY THE GENERAL PARTNER ON RELATIONS WITH AFFILIATED COMPANIES
 
-WITH AFFILIATED COMPANIES
+The Dependent Company Report prepared by Borussia Dortmund GmbH & Co. KGaA pursuant to § 312 AktG sets out the relations with Ballspielverein Borussia 09 e.V. Dortmund as the controlling entity and its affiliated companies. The general partner – represented by its Managing Directors – has issued the following concluding declaration:
 
-The Dependent Company Report prepared by
-Borussia Dortmund GmbH & Co. KGaA pursuantto
-8 312 AktG sets out the relations with
-Ballspielverein Borussia 09 e.V. Dortmund as the
-controlling entity and its affiliated companies. The
-general partner - represented by its Managing
-Directors - has issued the following concluding
+"Based on the circumstances known to us at the time the transactions were entered into, the Company received appropriate consideration for each of the transactions set out in the report on relations with affiliated companies in the financial year. In all other cases, the Company has been compensated for any disadvantages having arisen. No other measures within the meaning of § 312 (1) of the AktG were either undertaken or omitted during the financial year."
 
-declaration:
+## DISCLAIMER
 
-DISCLAIMER
-
-This Group management report contains
-forward-looking statements. Such statements are
-
-based on current estimates and are by nature
+This Group management report contains forward-looking statements. Such statements are based on current estimates and are by nature subject to risks and uncertainties. Actual results may differ from the statements made in this report.
 
 Dortmund, 9 August 2021
-
-"Based on the circumstances known to us at the
-time the transactions were entered into, the
-Company received appropriate consideration for
-each of the transactions set out in the report on
-relations with affiliated companies in the financial
-year. In all other cases, the Company has been
-compensated for any disadvantages having arisen.
-No other measures within the meaning of 8 312
-(1) ofthe AktG were either undertaken or omitted
-
-during the financial year."
-
-subject to risks and uncertainties. Actual results
-
-may differ from the statements made in this report.
-
 Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien
-
 Borussia Dortmund Geschäftsführungs-GmbH
 
-Hans-Joachim Watzke
-Managing Director (Chairman)
-
-Thomas Treß
-Managing Director
-
-Carsten Cramer
-
-Managing Director
+[Firma]  Hans-Joachim Watzke, Managing Director (Chairman)
+[Firma]  Thomas Treß, Managing Director
+[Firma]  Carsten Cramer, Managing Director
 
 173
 
@@ -13103,80 +10832,71 @@ Managing Director
 
 --- pág. 175 ---
 
+175
+
+CONSOLIDATED FINANCIAL STATEMENTS
+for the period from 1 July 2020 to 30 June 2021
+
+[Página de portada con fotografía; el título aparece en texto tenue en la parte superior derecha]
+
+175
 
 --- pág. 176 ---
 
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-a CONSOLIDATED FINANCIAL STATEMENTS
-CONSOLIDATED STATEMENT OF FINANCIAL POSITION
+## CONSOLIDATED FINANCIAL STATEMENTS
+
+## CONSOLIDATED STATEMENT OF FINANCIAL POSITION
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 
-EUR '000 Note
+| EUR '000 | Note | 30/06/2021 | 30/06/2020 |
+|---|---|---|---|
+| **ASSETS** | | | |
+| **Non-current assets** | | | |
+| Intangible assets | (1) | 193,434 | 229,667 |
+| Property, plant and equipment | (2) | 183,454 | 193,037 |
+| Investments accounted for using the equity method | (3) | 402 | 321 |
+| Financial assets | (4) | 27 | 32 |
+| Trade and other financial receivables | (5) | 10,392 | 12,680 |
+| Prepaid expenses | (15) | 2,094 | 5,718 |
+| | | 389,803 | 441,455 |
+| **Current assets** | | | |
+| Inventories | (6) | 6,806 | 6,754 |
+| Trade and other financial receivables | (5) | 29,936 | 36,520 |
+| Tax assets | | 85 | 375 |
+| Cash and cash equivalents | (7) | 1,725 | 3,317 |
+| Prepaid expenses | (15) | 12,708 | 9,901 |
+| Assets held for sale | (8) | 9,456 | 19,645 |
+| | | 60,716 | 76,512 |
+| | | **450,519** | **517,967** |
+| **EQUITY AND LIABILITIES** | | | |
+| **Equity** | (9) | | |
+| Subscribed capital | | 92,000 | 92,000 |
+| Reserves | | 140,750 | 213,560 |
+| Treasury shares | | -113 | -113 |
+| Equity attributable to the owners of the parent company | | 232,637 | 305,447 |
+| **Non-current liabilities** | | | |
+| Lease liabilities | (12) | 16,819 | 20,054 |
+| Trade payables | (13) | 37,250 | 69,627 |
+| Other financial liabilities | (14) | 208 | 0 |
+| Deferred income | (15) | 0 | 230 |
+| | | 54,277 | 89,911 |
+| **Current liabilities** | | | |
+| Financial liabilities | (11) | 56,900 | 8,031 |
+| Provisions | (10) | 2,333 | 0 |
+| Lease liabilities | (12) | 4,241 | 4,350 |
+| Trade payables | (13) | 64,103 | 67,432 |
+| Other financial liabilities | (14) | 30,901 | 39,115 |
+| Tax liabilities | | 40 | 40 |
+| Deferred income | (15) | 5,087 | 3,641 |
+| | | 163,605 | 122,609 |
+| | | **450,519** | **517,967** |
 
-ASSETS
-
-Non-current assets
-
-Intangible assets (1)
-Property, plant and equipment (2)
-Investments accounted for using the equity method (3)
-Financial assets (4)
-Trade and
-
-other financial receivables (5)
-Prepaid expenses (15)
-
-Current assets
-
-Inventories (6)
-Trade and
-
-other financial receivables (5)
-Tax assets
-
-Cash and cash equivalents (7)
-Prepaid expenses (15)
-Assets held for sale (8)
-
-450,519 517,967
-EQUITY AND LIABILITIES
-
-Equity (9)
-Subscribed capital
-
-Reserves
-
-Treasury shares
-
-Equity attributable to the owners
-of the parent company
-
-Non-current liabilities
-
-Lease liabilities (12)
-Trade payables (13)
-Other financial liabilities (14)
-Deferred income (15)
-
-Current liabilities
-
-Financial liabilities (11)
-Provisions (10)
-Lease liabilities (12)
-Trade payables (13)
-Other financial liabilities (14)
-Tax liabilities
-
-Deferred income (15)
-
-450,519 517,967
-
-The relevant sections in the notes to the consolidated statement of financial position can be found on the following pages:
-
-(1) -p. 197 | (2)-p. 198 | (3) (4)-p. 200 | (5) -p. 201 | (6) (7) (8)-p.202 | (9)-p. 203 | (10) (11)-p. 204
-(12) (13) (14) - p. 205 | (15) - p. 206
+*The relevant sections in the notes to the consolidated statement of financial position can be found on the following pages:*
+*(1) – p. 197 | (2) – p. 198 | (3) (4) – p. 200 | (5) – p. 201 | (6) (7) (8) – p. 202 | (9) – p. 203 | (10) (11) – p. 204*
+*(12) (13) (14) – p. 205 | (15) – p. 206*
 
 176
 
@@ -13185,55 +10905,36 @@ The relevant sections in the notes to the consolidated statement of financial po
 CONSOLIDATED FINANCIAL STATEMENTS
 for the period from 1 July 2020 to 30 June 2021
 
-CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME
+## CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 
-EUR '000 Note
+| EUR '000 | Note | 2020/2021 | 2019/2020 |
+|---|---|---|---|
+| Revenue | (16) | 334,171 | 370,196 |
+| Net transfer income | (17) | 15,401 | 40,160 |
+| Other operating income | (18) | 10,377 | 9,195 |
+| Cost of materials | (19) | -19,589 | -22,392 |
+| Personnel expenses | (20) | -215,650 | -215,157 |
+| Depreciation, amortisation and write-downs | (21) | -111,043 | -106,130 |
+| Other operating expenses | (22) | -85,760 | -119,010 |
+| **Result from operating activities** | | **-72,093** | **-43,138** |
+| Net income/loss from investments in associates | (3) | 81 | -1 |
+| Finance income | (23) | 287 | 287 |
+| Finance costs | (23) | -1,427 | -3,731 |
+| **Financial result** | | **-1,059** | **-3,445** |
+| **Profit before income taxes** | | **-73,152** | **-46,583** |
+| Income taxes | (24) | 342 | 2,630 |
+| **Consolidated net loss for the year** | | **-72,810** | **-43,953** |
+| Items that were subsequently reclassified to profit or loss | | 0 | 0 |
+| **Total comprehensive income** | | **-72,810** | **-43,953** |
+| **Consolidated net loss for the year attributable to:** | | | |
+| - Owners of the parent: | | -72,810 | -43,953 |
+| **Total comprehensive income attributable to:** | | | |
+| - Owners of the parent: | | -72,810 | -43,953 |
+| **Earnings per share (in EUR) (basic/diluted)** | (32) | -0.79 | -0.48 |
 
-Revenue (16)
-
-Net transfer income (17)
-
-Other operating income (18)
-
-Cost of materials (19)
-
-Personnel expenses (20)
-
-Depreciation, amortisation and write-downs (21)
-
-Other operating expenses (22)
-
-Result from operating activities
-
-Net income/loss from investments in associates (3)
-
-Finance income (23)
-
-Finance costs (23)
-
-Financial result
-
-Profit before income taxes
-
-Income taxes (24)
-
-Consolidated net loss for the year -72,810 -43,953
-Items that were subsequently reclassified to profit or loss N
-Total comprehensive income -72,810 -43,953
-Consolidated net loss for the year attributable to:
-
-- Owners of the parent:
-
-Total comprehensive income attributable to:
-
-- Owners of the parent:
-
-Earnings per share (in EUR) (basic/diluted) (32) -0.79 -0.48
-
-The relevant sections in the notes to the consolidated statement of financial position can be found on the following pages:
-
-(3)-p. 200 | (16) (17) (18) (19)-p. 207 | (20) (21) (22)-p. 208 | (23) (24)-p.209 | (32)-p. 218
+*The relevant sections in the notes to the consolidated statement of financial position can be found on the following pages:*
+*(3) – p. 200 | (16) (17) (18) (19) – p. 207 | (20) (21) (22) – p. 208 | (23) (24) – p. 209 | (32) – p. 218*
 
 177
 
@@ -13242,65 +10943,48 @@ The relevant sections in the notes to the consolidated statement of financial po
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-CONSOLIDATED STATEMENT OF CASH FLOWS
+178
+
+**CONSOLIDATED STATEMENT OF CASH FLOWS**
 of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund
 
-EUR '000 Note
-
-Profit before income taxes
-
-Depreciation, amortisation and write-downs
-of non-current assets (21)
-
-Gain/loss on disposals of non-current assets
-Other non-cash expenses/income
-Transfer costs
-
-Interest income (23)
-Interest expense (23)
-Net income/loss from investments in associates (23)
-
-Changes in other assets not classified
-as from investing or financing activities
-
-Changes in other liabilities not classified
-as from investing or financing activities
-
-Interest paid
-Income taxes
-
-Cash flows from operating activities
-
-Payments for investments in intangible assets
-
-Net proceeds from transfers
-
-Payments for investments in property, plant and equipment
-Proceeds from disposals of property plant and equipment
-Proceeds from financial assets
-
-Dividends received
-
-Cash flows from investing activities
-
-Proceeds from finance raised
-Dividend payments (9)
-Repayment of lease liabilities
-
-Cash flows from financing activities
-
-Change in cash and cash equivalents
-Cash and cash equivalents at the beginning of the period
-
-Cash and cash equivalents at the end of the period 1,725 -4,714
-
-Definition of cash and cash equivalents
-Bank balances and cash-in-hand (7)
-Utilisation of overdraft facilities
-
-Cash and cash equivalents at the end of the period 1,725 -4,714
-
-178
+| EUR '000 | Note | 2020/2021 | 2019/2020 |
+|---|---|---|---|
+| **Profit before income taxes** | | -73,152 | -46,583 |
+| Depreciation, amortisation and write-downs of non-current assets | (21) | 111,043 | 106,130 |
+| Gain/loss on disposals of non-current assets | | -16,242 | -45,692 |
+| Other non-cash expenses/income | | 286 | -4,118 |
+| Transfer costs | | 1,286 | 7,488 |
+| Interest income | (23) | -287 | -287 |
+| Interest expense | (23) | 1,427 | 3,731 |
+| Net income/loss from investments in associates | (23) | -81 | 1 |
+| Changes in other assets not classified as from investing or financing activities | | -95 | 807 |
+| Changes in other liabilities not classified as from investing or financing activities | | -6,811 | -18,818 |
+| Interest paid | | -1,427 | -3,326 |
+| Income taxes | | 0 | 305 |
+| **Cash flows from operating activities** | | **15,947** | **-362** |
+| | | | |
+| Payments for investments in intangible assets | | -88,314 | -152,736 |
+| Net proceeds from transfers | | 29,699 | 108,090 |
+| Payments for investments in property, plant and equipment | | -3,414 | -6,205 |
+| Proceeds from disposals of property plant and equipment | | 1 | 62 |
+| Proceeds from financial assets | | 5 | 20 |
+| Dividends received | | 1 | 0 |
+| **Cash flows from investing activities** | | **-62,022** | **-50,769** |
+| | | | |
+| Proceeds from finance raised | | 56,900 | 0 |
+| Dividend payments | (9) | 0 | -5,519 |
+| Repayment of lease liabilities | | -4,386 | -3,929 |
+| **Cash flows from financing activities** | | **52,514** | **-9,448** |
+| | | | |
+| Change in cash and cash equivalents | | 6,439 | -60,579 |
+| Cash and cash equivalents at the beginning of the period | | -4,714 | 55,865 |
+| **Cash and cash equivalents at the end of the period** | | **1,725** | **-4,714** |
+| | | | |
+| **Definition of cash and cash equivalents** | | | |
+| Bank balances and cash-in-hand | (7) | 1,725 | 3,317 |
+| Utilisation of overdraft facilities | | 0 | -8,031 |
+| **Cash and cash equivalents at the end of the period** | | **1,725** | **-4,714** |
 
 --- pág. 179 ---
 
@@ -13351,118 +11035,41 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 180
 
-NOTES _ tothe consolidated financial statements of Borussia Dortmund GmbH & Co.
+**NOTES** to the consolidated financial statements of Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien, Dortmund, for the financial year from 1 July 2020 to 30 June 2021 (hereinafter "Borussia Dortmund" or "Borussia Dortmund GmbH & Co. KGaA")
 
-Kommanditgesellschaft auf Aktien, Dortmund, for the financial year from 1 July 2020 to 30 June 2021
+**BASIC PRINCIPLES**
 
-(hereinafter "Borussia Dortmund" or "Borussia Dortmund GmbH & Co. KGaA”)
+**General disclosures**
 
-BASIC PRINCIPLES
+Borussia Dortmund GmbH & Co. KGaA (hereinafter also "Borussia Dortmund" or the "Group") has its registered office at Rheinlanddamm 207 – 209, 44137 Dortmund, Germany, and is listed in the commercial register of the Local Court (*Amtsgericht*) of Dortmund under the number HRB 14217. Borussia Dortmund's professional squad has competed in the Bundesliga's first division for more than four decades. Borussia Dortmund also operates Group companies that sell merchandise, organise and host match-day and non-match-day events, and provide Internet and travel services. Borussia Dortmund also holds an interest in a medical rehabilitation centre.
 
-General disclosures
+The general partner, BVB Geschäftsführungs-GmbH, Dortmund, is responsible for management and representation of Borussia Dortmund GmbH & Co. KGaA. Borussia Dortmund Geschäftsführungs-GmbH is for its part represented by Managing Directors Hans-Joachim Watzke (Chairman), Thomas Treß and Carsten Cramer; its sole shareholder is Ballspielverein Borussia 09 e.V. Dortmund.
 
-Borussia Dortmund GmbH & Co. KGaA (hereinafter
-also "Borussia Dortmund" or the "Group") has its
-registered office at Rheinlanddamm 207 - 209, 44137
-Dortmund, Germany, and is listed inthecommercial
-register ofthe Local Court (Amtsgericht) of Dortmund
-under the number HRB 14217. Borussia Dortmund's
-professional squad has competed in the Bundesliga's
-first division for more than four decades. Borussia
-Dortmund also operates Group companies that sell
-merchandise, organise and host match-day and
-non-match-day events, and provide Internet and
-travel services. Borussia Dortmund also holds an
-interest ina medical rehabilitation centre.
+The consolidated financial statements are presented in thousands of euros.
 
-The general partner, BVB Geschäftsführungs-GmbH,
-Dortmund, is responsible for management and
-representation of Borussia Dortmund GmbH & Co.
-KGaA. Borussia Dortmund Geschäftsführungs-GmbH
-is for its part represented by Managing Directors
-Hans-Joachim Watzke (Chairman), Thomas Treß and
-Carsten Cramer; its sole shareholder is Ballspielverein
+The subtotals contained in the consolidated statement of comprehensive income for the result from operating activities (EBIT) and the financial result are used to provide detailed information.
 
-Borussia 09 e.V. Dortmund.
+By a resolution dated 9 August 2021, the consolidated financial statements and the Group management report were authorised by the Company's management for submission to the Supervisory Board.
 
-The consolidated financial statements are presented
-in thousands of euros.
+**Accounting policies**
 
-The subtotals contained in the consolidated
-statement of comprehensive income for the result
-from operating activities (EBIT) and the financial
+These consolidated financial statements for the financial year from 1 July 2020 to 30 June 2021, including the prior-year information, were prepared in accordance with International Financial Reporting Standards (IFRSs), as adopted in the European Union and in force at the end of the reporting period, and the supplementary provisions of German commercial law required to be observed in accordance with § 315e (1) HGB. The term "IFRS" includes the recent International Financial Reporting Standards (IFRSs) and the International Accounting Standards (IASs) issued by the International Accounting Standards Board (IASB) in London as well as the interpretations of the International Financial Reporting Interpretations Committee (IFRIC) and the Standing Interpretations Committee (SIC).
 
-result are used to provide detailed information.
+Borussia Dortmund applied the following Standards, Interpretations and amendments to existing Standards, as adopted by the European Union, for the first time in the 2020/2021 financial year:
 
-By aresolution dated 9 August 2021,the consolidated
-financial statements and the Group management
-report were authorised by the Company's
+**Amendments to References to the Conceptual Framework in IFRS Standards**
 
-management for submission to the Supervisory Board.
+The revised Conceptual Framework comprises a new, overarching section entitled "Status and purpose of the conceptual framework" and eight distinct chapters. The Framework now includes chapters relating to "The reporting entity" and "Presentation and disclosure"; the "Recognition" chapter has been expanded to include "Derecognition".
 
-Accounting policies
+Substantive amendments were also made: for instance, the distinction between revenues on the one hand and gains on the other is no longer drawn for income.
 
-These consolidated financial statements for the
-financial year from 1 July 2020 to 30 June 2021,
-including the prior-year information, were prepared
-in accordance with International Financial Reporting
-Standards (IFRSs), as adopted in the European
-Union and in force atthe end ofthe reporting period,
+As part of the amendments to the Conceptual Framework, references to the Conceptual Framework in various standards have been amended.
 
-and the supplementary provisions of German
+The amendments did not have any material impact on the consolidated financial statements of Borussia Dortmund.
 
-commercial law required to be observed in
-accordance with 8 315e (1) HGB. The term "IFRS"
-includes the recent International Financial
-Reporting Standards (IFRSs) and the International
-Accounting Standards (lASs) issued by the
-International Accounting Standards Board (IASB) in
-London as well as the interpretations of the
-International Financial Reporting Interpretations
-Committee (IFRIC) and the Standing Interpretations
-Committee (SIC).
+**Amendments to IFRS 3 – Definition of a Business**
 
-Borussia Dortmund applied the following Standards,
-Interpretations and amendments to existing
-Standards, as adopted by the European Union, for
-
-the first time in the 2020/2021 financial year:
-
-Amendments to References
-
-to the Conceptual Framework
-
-in IFRS Standards
-
-The revised Conceptual Framework comprises a new,
-overarching section entitled "Status and purpose of
-the conceptual framework" and eight distinct
-chapters. The Framework now includes chapters
-relating to "The reporting entity" and "Presentation
-and disclosure"; the "Recognition" chapter has been
-expanded to include "Derecognition".
-
-Substantive amendments were also made: for
-instance, the distinction between revenues on the
-one hand and gains on the other is no longer drawn
-for income.
-
-As part of the amendments to the Conceptual
-Framework, references to the Conceptual Framework
-in various standards have been amended.
-
-The amendments did not have any materialimpact on
-the consolidated financial statements of Borussia
-
-Dortmund.
-
-Amendments to IFRS 3 - Definition of
-a Business
-
-The IASB's amendment clarifies that a business
-comprises a set of activities and assets which must
-
-include, at a minimum, an input and a substantive
+The IASB's amendment clarifies that a business comprises a set of activities and assets which must include, at a minimum, an input and a substantive
 
 --- pág. 181 ---
 
@@ -13577,163 +11184,86 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 182
 
-the new IFRS 17. The Amendments must be applied
-for reporting periods beginning on or after 1 January
+the new IFRS 17. The Amendments must be applied for reporting periods beginning on or after 1 January 2021. Earlier application is permitted.
 
-2021. Earlier application is permitted.
+Borussia Dortmund currently does not expect any material impact on the consolidated financial statements.
 
-Borussia Dortmund currently does not expect any
-material impact on the consolidated financial
+**Amendments to IFRS 9, IAS 39 and IFRS 7, IFRS 4 and IFRS 16 – Interest Rate Benchmark Reform – Phase 2**
 
-statements.
+The Amendments in Phase 2 of the IBOR reform project (Amendments to IFRS 9 Financial Instruments, IAS 39 Financial Instruments: Recognition and Measurement, IFRS 7 Financial Instruments: Disclosures, IFRS 4 Insurance Contracts and IFRS 16 Leases) supplement the rules set out in Phase 1 and address issues that might affect financial reporting when an existing interest rate benchmark is actually replaced.
 
-Amendments to IFRS 9, IAS 39 and
-IFRS 7, IFRS 4 and IFRS 16 - Interest
-Rate Benchmark Reform - Phase 2
+The following aspects are affected in particular with respect to the presentation of financial instruments: In the event of changes in contractual cash flows, it may not be necessary to adjust or derecognise the carrying amount of financial instruments on the basis of the adjustments. Rather, under certain conditions, the option is available to adjust the effective interest rate to reflect the change in the alternative benchmark interest rate.
 
-The Amendments in Phase 2 of the IBOR reform
-project (Amendments to IFRS 9 Financial
-Instruments, IAS 39 Financial Instruments:
-Recognition and Measurement, IFRS 7 Financial
-Instruments: Disclosures, IFRS 4 Insurance
-Contracts and IFRS 16 Leases) supplement the
-rules set out in Phase 1 and address issues that
-might affect financial reporting when an existing
-interest rate benchmark is actually replaced.
+With regard to hedge accounting, based on the amendments, it is not necessary under certain circumstances to terminate a hedging relationship designated for hedge accounting purposes due to adjustments triggered by the IBOR reform.
 
-The following aspects are affected in particular with
-respect to the presentation of financial instruments:
+New risks arising from the reform and, in addition, how the transition to alternative reference rates will be handled must be disclosed.
 
-Inthe event of changes in contractual cash flows, it
+In addition to amendments to IFRS 9, IAS 39 and IFRS 7, the IASB adopted minor amendments to IFRS 4 and IFRS 16.
 
-may not be necessary to adjust or derecognise the
-carrying amount of financial instruments on the basis
-ofthe adjustments. Rather, under certain conditions,
-the option is available to adjust the effective interest
-rate to reflect the change in the alternative
-benchmark interest rate.
+The Amendments must be applied for reporting periods beginning on or after 1 January 2021.
 
-With regard to hedge accounting, based on the
-amendments, it is not necessary under certain
-circumstances to terminate a hedging relationship
-designated for hedge accounting purposes due to
-adjustments triggered by the IBOR reform.
-
-New risks arising from the reform and, in addition,
-how the transition to alternative reference rates will
-be handled must be disclosed.
-
-In addition to amendments to IFRS 9, IAS 39 and IFRS
-7, the IASB adopted minor amendments to IFRS 4
-and IFRS 16.
-
-The Amendments must be applied for reporting
-
-periods beginning on or after 1 January 2021.
-
-Borussia Dortmund currently does not expect any
-material impact on the consolidated financial
-
-statements.
+Borussia Dortmund currently does not expect any material impact on the consolidated financial statements.
 
 Accounting standards issued by the IASB, but not yet adopted by the EU and not yet applied by the Company:
 
-New and amended Standards
-and Interpretations
-
-Mandatory application
-(IASB)
-
-Insurance Contracts
-
-1 January 2023
-
-References to the Conceptual
-Framework
-
-1 January 2022
-
-Sale or Contribution of Assets
-between an Investor and its
-Associate or Joint Venture
-
-TBA
-
-Classification of Liabilities as
-Current or Non-current
-
-1 January 2023
-
-Property, Plant and Equipment -
-Proceeds before Intended Use
-
-1 January 2022
-
-Onerous Contracts - Cost of
-Fulfilling a Contract
-
-1 January 2022
-
-Amendments to IFRS 1, IFRS 9,
-IFRS 16 and IAS 41
-
-1 January 2022
-
+| Standard | New and amended Standards and Interpretations | Published by IASB | Mandatory application (IASB) | Expected effect on Group |
+|---|---|---|---|---|
+| IFRS 17 (including amendments to IFRS 17) | Insurance Contracts | 18 May 2017 | 1 January 2023 | None |
+| Amendments to IFRS 3 | References to the Conceptual Framework | 14 May 2020 | 1 January 2022 | Immaterial |
+| Amendments to IFRS 10 and IAS 28 | Sale or Contribution of Assets between an Investor and its Associate or Joint Venture | 11 September 2014/ 18 December 2014 | TBA | Immaterial |
+| Amendment to IAS 1 (including Deferral of Effective Date) | Classification of Liabilities as Current or Non-current | 15 July 2020 | 1 January 2023 | Immaterial |
+| Amendments to IAS 16 | Property, Plant and Equipment – Proceeds before Intended Use | 14 May 2020 | 1 January 2022 | Immaterial |
+| Amendments to IAS 37 | Onerous Contracts – Cost of Fulfilling a Contract | 14 May 2020 | 1 January 2022 | Immaterial |
+| Improvements to IFRS 2018 - 2020 | Amendments to IFRS 1, IFRS 9, IFRS 16 and IAS 41 | 1 September 2020 | 1 January 2022 | Immaterial |
 
 --- pág. 183 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-Scope of consolidated financial statements
-In addition to Borussia Dortmund GmbH & Co. KGaA, the consolidated financial statements include six fully
+**Scope of consolidated financial statements**
 
-consolidated subsidiary companies and one associated company accounted for using the equity method.
+In addition to Borussia Dortmund GmbH & Co. KGaA, the consolidated financial statements include six fully consolidated subsidiary companies and one associated company accounted for using the equity method.
 
 The list of shareholdings as at 30 June 2021 was as follows:
 
-Shareholdings (30 June 2021)
+**Shareholdings** (30 June 2021)
 
-Registered Share capital Shareholding Equity Net profit/loss
-office (EUR '000) % (EUR '000) (EUR'000)
-as at 01/07/2020 to
-30/06/2021 30/06/2021
+| | Registered office | Share capital (EUR '000) | Shareholding % | Equity (EUR '000) as at 30/06/2021 | Net profit/loss (EUR'000) 01/07/2020 to 30/06/2021 |
+|---|---|---|---|---|---|
+| **Fully consolidated companies** | | | | | |
+| BVB Stadionmanagement GmbH* | Dortmund | 52 | 100.00 | 66 | 42 |
+| besttravel dortmund GmbH* | Dortmund | 50 | 100.00 | 144 | 100 |
+| BVB Merchandising GmbH* | Dortmund | 75 | 100.00 | 10,881 | -748 |
+| BVB Event & Catering GmbH* | Dortmund | 25 | 100.00 | 25 | 725 |
+| BVB Asia Pacific Pte. Ltd. | Singapur | 66 | 100.00 | 220 | 27 |
+| BVB Fußballakademie GmbH* | Dortmund | 50 | 100.00 | 431 | 140 |
+| **Investments accounted for using the equity method** | | | | | |
+| Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH** | Dortmund | 52 | 33.33 | 1,027 | 81 |
 
-Fully consolidated companies
+\* Profit and loss transfer agreements are in force. Profit/loss of the Company under HGB prior to transfer to/absorption by the consolidated tax group parent.
 
-Investments accounted for using the equity method
+\*\* Included in the consolidated financial statements as at 30 June 2021 as an associate on the basis of the net profit/loss reported as at 31 December 2020.
 
-* Profit and loss transfer agreements are in force. Profit/loss of the Company under HGB prior to
-transfer to/absorption by the consolidated tax group parent.
+**Shareholdings** (30 June 2020)
 
-w |
-50
-52
+| | Registered office | Share capital (EUR '000) | Shareholding % | Equity (EUR '000) as at 30/06/2020 | Net profit/loss (EUR'000) 01/07/2019 to 30/06/2020 |
+|---|---|---|---|---|---|
+| **Fully consolidated companies** | | | | | |
+| BVB Stadionmanagement GmbH* | Dortmund | 52 | 100.00 | 66 | 63 |
+| besttravel dortmund GmbH* | Dortmund | 50 | 100.00 | 144 | 566 |
+| BVB Merchandising GmbH* | Dortmund | 75 | 100.00 | 10,881 | 2,458 |
+| BVB Event & Catering GmbH* | Dortmund | 25 | 100.00 | 25 | 1,582 |
+| BVB Asia Pacific Pte. Ltd. | Singapur | 66 | 100.00 | 192 | 31 |
+| BVB Fußballakademie GmbH | Dortmund | 25 | 100.00 | 25 | 0 |
+| **Investments accounted for using the equity method** | | | | | |
+| Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH** | Dortmund | 52 | 33.33 | 786 | -3 |
 
-** Included in the consolidated financial statements as at 30 June 2021 as an associate
-on the basis of the net profit/loss reported as at 31 December 2020.
+\* Profit and loss transfer agreements are in force. Profit/loss of the Company under HGB prior to transfer to/absorption by the consolidated tax group parent.
 
-Shareholdings (30 June 2020)
+\*\* Included in the consolidated financial statements as at 30 June 2020 as an associate on the basis of the net profit/loss reported as at 31 December 2019.
 
-Registered Share capital Shareholding Equity Net profit/loss
-office (EUR '000) % (EUR '000) (EUR'000)
-as at 01/07/2019 to
-30/06/2020 30/06/2020
-
-Fully consolidated companies
-
-Investments accounted for using the equity method
-
-* Profit and loss transfer agreements are in force. Profit/loss of the Company under HGB prior to
-transfer to/absorption by the consolidated tax group parent.
-
-** Included in the consolidated financial statements as at 30 June 2020 as an associate
-on the basis of the net profit/loss reported as at 31 December 2019.
-
-No interim financial statements were prepared for Orthomed Medizinisches Leistungs- und
-Rehabilitationszentrum GmbH (Orthomed GmbH) as at 30 June 2021 due to the fact that there would be no
-
-material impact on the consolidated financial statements.
+No interim financial statements were prepared for Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH (Orthomed GmbH) as at 30 June 2021 due to the fact that there would be no material impact on the consolidated financial statements.
 
 Please refer to Note 33 for disclosures on transactions with related parties.
 
@@ -14401,100 +11931,38 @@ item in the statement of comprehensive income.
 
 --- pág. 191 ---
 
-Interest income and expenses are allocated to the
-period to which they relate, taking into account the
-outstanding amount of the loan and the effective
-interest rate to be applied. The effective interest rate
-is the rate that exactly discounts estimated future
-cash payments or receiptsthrough the expected life
-of the financial instrument or, when appropriate, a
-shorter period to the net carrying amount of the
-
-financial asset or financial liability.
-
-Operating expenses are recognised when the goods
-or services are utilised or atthe date the expenses
-
-are incurred.
-
-Management of financial risks
-
-The Group finances itself primarily from long-term
-leases, trade payables, season tickets paid for in
-advance and payments from sponsors. Furthermore,
-Borussia Dortmund has EUR 120,000 thousand
-overdraft facility at its disposal, which is secured
-against EUR 18,485 thousand in sponsorship income
-and a EUR 60,000 thousand registered land charge
-in relation to the stadium.
-
-The related risks arising comprise fair value risks
-(interest-rate-related cash flow risks), liquidity risks,
-credit risks and currency/exchange rate risks. The
-methods of managing the individualtypes of risk are
-
-described in the following.
-
-Exchange rate risk
-
-The Group is exposed to transactional foreign
-currency risks to the extent that the quotations of
-currencies in which disposal and acquisition
-transactions as well as receivables and credit
-transactions are carried out do not match the
-functional currency of the Group companies. The
-
-aforementioned transactions are primarily
-
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-conducted on the basis of euros (EUR) and pounds
-sterling (GBP). Currency forwards are concluded to
+Interest income and expenses are allocated to the period to which they relate, taking into account the outstanding amount of the loan and the effective interest rate to be applied. The effective interest rate is the rate that exactly discounts estimated future cash payments or receipts through the expected life of the financial instrument or, when appropriate, a shorter period to the net carrying amount of the financial asset or financial liability.
 
-hedge the cash flows.
+Operating expenses are recognised when the goods or services are utilised or at the date the expenses are incurred.
 
-Sensitivity analysis (exchange rate risks)
+**Management of financial risks**
 
-Sensitivity analyses are used to assess the impact
-of astrengthening (weakening) ofthe exchange rate
-as of June 30 on equity or the statement of
+The Group finances itself primarily from long-term leases, trade payables, season tickets paid for in advance and payments from sponsors. Furthermore, Borussia Dortmund has EUR 120,000 thousand overdraft facility at its disposal, which is secured against EUR 18,465 thousand in sponsorship income and a EUR 60,000 thousand registered land charge in relation to the stadium.
 
-comprehensive income.
+The related risks arising comprise fair value risks (interest-rate-related cash flow risks), liquidity risks, credit risks and currency/exchange rate risks. The methods of managing the individual types of risk are described in the following.
 
-Interest rate risks
+**Exchange rate risk**
 
-Interest rate risks relate to the risk that the interest
-rate associated with an interest-bearing financial
-instrument will deviate from the market interest rate
-due to future market developments. Interest rate
-risks can therefore arise from floating-rate loans,
-among other things. These risks are hedged using
-appropriate interest hedging instruments. Because
-Borussia Dortmund currently does not have any
-floating-rate loans or interest rate swaps, there is
+The Group is exposed to transactional foreign currency risks to the extent that the quotations of currencies in which disposal and acquisition transactions as well as receivables and credit transactions are carried out do not match the functional currency of the Group companies. The aforementioned transactions are primarily conducted on the basis of euros (EUR) and pounds sterling (GBP). Currency forwards are concluded to hedge the cash flows.
 
-no necessity for hedges.
+**Sensitivity analysis (exchange rate risks)**
 
-Sensitivity analysis (interest rate risk)
+Sensitivity analyses are used to assess the impact of a strengthening (weakening) of the exchange rate as of June 30 on equity or the statement of comprehensive income.
 
-Sensitivity analyses are used to measure how
-sensitive financial ratios are to small changes in
-input parameters. Because Borussia Dortmund
-currently does not have any floating-rate loans or
-interest rate swaps, there is no necessity to perform
+**Interest rate risks**
 
-sensitivity analyses.
+Interest rate risks relate to the risk that the interest rate associated with an interest-bearing financial instrument will deviate from the market interest rate due to future market developments. Interest rate risks can therefore arise from floating-rate loans, among other things. These risks are hedged using appropriate interest hedging instruments. Because Borussia Dortmund currently does not have any floating-rate loans or interest rate swaps, there is no necessity for hedges.
 
-Liquidity risk
+**Sensitivity analysis (interest rate risk)**
 
-The Group constantly monitors the risk of possible
-liquidity bottlenecks, taking into account the
-probable maturities of its financial liabilities and
-the timing of the expected cash flows from
-operating activities. Any liquidity risks are
+Sensitivity analyses are used to measure how sensitive financial ratios are to small changes in input parameters. Because Borussia Dortmund currently does not have any floating-rate loans or interest rate swaps, there is no necessity to perform sensitivity analyses.
 
-countered through appropriate forms of financing.
+**Liquidity risk**
+
+The Group constantly monitors the risk of possible liquidity bottlenecks, taking into account the probable maturities of its financial liabilities and the timing of the expected cash flows from operating activities. Any liquidity risks are countered through appropriate forms of financing.
 
 191
 
@@ -14655,103 +12123,87 @@ provisions of the German Commercial Code
 
 --- pág. 194 ---
 
-BORUSSIA DORTMUND
-
-OPERATING SEGMENTS
-
-Borussia BVB Merchandising BVB Event & besttravel
-
-Dortmund KGaA GmbH Catering GmbH dortmund GmbH Total
-EUR '000 2020/2021 2019/2020 2020/2021 2019/2020 2020/2021 2019/2020 2020/2021 2019/2020 2020/2021 2019/2020
-Total revenue 323,497 442,126 33,395 34,706 2,032 17,015 887 1,373 359,811 495,220
-of which
-match operations 554 32,510 0 0 0 0 0 0 554 32,510
-of which advertising 106,609 98,038 0 0 0 0 0 0 106,609 98,038
-of which
-TV marketing 186,655 169,836 0 0 0 0 0 0 186,655 169,836
-of which
-transfer deals 23,148 123,732 0 0 0 0 0 0 23,148 123,732
-of which
-merchandising 0 0 33,395 34,706 0 0 0 0 33,395 34,706
-of which conference,
-catering, miscellaneous 6,531 18,010 0 0 2,032 17,015 887 1,373 9,4150 36,398
-Total revenue 323,497 442,126 33,395 34,706 2,032 17,015 887 1,373 359,811 495,220
-of which external 322,338 440,802 32,640 33,292 503 11,233 42 658 355,523 485,985
-of which internal 1,159 1,324 755 1,414 1,529 5,782 845 715 4,288 9,235
-Financial result -262 1,915 0 0 0 0 -5 -4 -267 1,911
-Share of profit
-from equity investments 0 0 0 0 0 0 0 0
-of which profit transfer 1,007 4,669 0 0 0 0 1,007 4,669
-of which loss absorption -748 0 0 0 0 0 0 0 -748 0
-Net interest income/expense -521 -2,754 0 0 0 0 -5 -4 -526 -2,758
-of which interest expense -642  -2,934 0 0 0 0 -5 -4 -647  -2,938
-of which interest income 121 180 0 0 0 0 0 0 121 180
-Depreciation, amortisation
-and write-downs -110,137 -105,547 -692  -1,426 -25 -34 -21 -21 -110,875 -107,028
-Segment profit before taxes * -77,080 -54,281 -748 2,458 724 1,582 100 566 -77,004 -49,675
-Capital expenditure 91,663 160,453 6 403 0 7 0 1 91,669 160,864
-Segment assets ** 453,745 518,768 17,474 15,875 4,684 4,865 569 675 476,472 540,183
-Segment liabilities 195,887 184,431 6,593 4,994 4,659 4,840 425 531 207,564 194,796
-Investments accounted
-for using the equity method 96 96 0 0 0 0 0 0 96 96
-Income from
-investments in associates 0 0 0 0 0 0 0 0 0 0
-
-* Before profit or loss transfer.
-
-** KGaA segment includes EUR 9,456 thousand [previous year: EUR 19,645 thousand) in assets held for sale.
+BORUSSIA DORTMUND GmbH & Co.
+Kommanditgesellschaft auf Aktien, Dortmund
 
 194
 
+**OPERATING SEGMENTS**
+
+| EUR '000 | Borussia Dortmund KGaA 2020/2021 | Borussia Dortmund KGaA 2019/2020 | BVB Merchandising GmbH 2020/2021 | BVB Merchandising GmbH 2019/2020 | BVB Event & Catering GmbH 2020/2021 | BVB Event & Catering GmbH 2019/2020 | besttravel dortmund GmbH 2020/2021 | besttravel dortmund GmbH 2019/2020 | Total 2020/2021 | Total 2019/2020 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Total revenue** | 323,497 | 442,126 | 33,395 | 34,706 | 2,032 | 17,015 | 887 | 1,373 | 359,811 | 495,220 |
+| of which match operations | 554 | 32,510 | 0 | 0 | 0 | 0 | 0 | 0 | 554 | 32,510 |
+| of which advertising | 106,609 | 98,038 | 0 | 0 | 0 | 0 | 0 | 0 | 106,609 | 98,038 |
+| of which TV marketing | 186,655 | 169,836 | 0 | 0 | 0 | 0 | 0 | 0 | 186,655 | 169,836 |
+| of which transfer deals | 23,148 | 123,732 | 0 | 0 | 0 | 0 | 0 | 0 | 23,148 | 123,732 |
+| of which merchandising | 0 | 0 | 33,395 | 34,706 | 0 | 0 | 0 | 0 | 33,395 | 34,706 |
+| of which conference, catering, miscellaneous | 6,531 | 18,010 | 0 | 0 | 2,032 | 17,015 | 887 | 1,373 | 9,450 | 36,398 |
+| **Total revenue** | 323,497 | 442,126 | 33,395 | 34,706 | 2,032 | 17,015 | 887 | 1,373 | 359,811 | 495,220 |
+| of which external | 322,338 | 440,802 | 32,640 | 33,292 | 503 | 11,233 | 42 | 658 | 355,523 | 485,985 |
+| of which internal | 1,159 | 1,324 | 755 | 1,414 | 1,529 | 5,782 | 845 | 715 | 4,288 | 9,235 |
+| | | | | | | | | | | |
+| **Financial result** | -262 | 1,915 | 0 | 0 | 0 | 0 | -5 | -4 | -267 | 1,911 |
+| Share of profit from equity investments | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| of which profit transfer | 1,007 | 4,669 | 0 | 0 | 0 | 0 | 0 | 0 | 1,007 | 4,669 |
+| of which loss absorption | -748 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | -748 | 0 |
+| **Net interest income/expense** | -521 | -2,754 | 0 | 0 | 0 | 0 | -5 | -4 | -526 | -2,758 |
+| of which interest expense | -642 | -2,934 | 0 | 0 | 0 | 0 | -5 | -4 | -647 | -2,938 |
+| of which interest income | 121 | 180 | 0 | 0 | 0 | 0 | 0 | 0 | 121 | 180 |
+| | | | | | | | | | | |
+| Depreciation, amortisation and write-downs | -110,137 | -105,547 | -692 | -1,426 | -25 | -34 | -21 | -21 | -110,875 | -107,028 |
+| Segment profit before taxes * | -77,080 | -54,281 | -748 | 2,458 | 724 | 1,582 | 100 | 566 | -77,004 | -49,675 |
+| Capital expenditure | 91,663 | 160,453 | 6 | 403 | 0 | 7 | 0 | 1 | 91,669 | 160,864 |
+| Segment assets ** | 453,745 | 518,768 | 17,474 | 15,875 | 4,684 | 4,865 | 569 | 675 | 476,472 | 540,183 |
+| Segment liabilities | 195,887 | 184,431 | 6,593 | 4,994 | 4,659 | 4,840 | 425 | 531 | 207,564 | 194,796 |
+| Investments accounted for using the equity method | 96 | 96 | 0 | 0 | 0 | 0 | 0 | 0 | 96 | 96 |
+| Income from investments in associates | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+\* Before profit or loss transfer.
+
+\*\* KGaA segment includes EUR 9,456 thousand (previous year: EUR 19,645 thousand) in assets held for sale.
+
 --- pág. 195 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-The table below provides a reconciliation ofthe revenue, profit or loss before taxes, assets, liabilities and other key items for each segment:
+The table below provides a reconciliation of the revenue, profit or loss before taxes, assets, liabilities and other key items for each segment:
 
-RECONCILIATION of the segments to the statement of financial position and the consolidated statement of comprehensive income
-N |
-Consolidated
+**RECONCILIATION** of the segments to the statement of financial position and the consolidated statement of comprehensive income
 
-Total Other adjustments financial statements
-EUR '000 2020/2021 2019/2020 2020/2021 2019/2020 2020/2021 2019/2020
-Total revenue 359,811 495,220 -25,640 -125,024 334,171 370,196
-of which
-match operations 554 32,510 0 0 554 32,510
-of which advertising 106,609 98,038 -32 -33 106,577 98,005
-of which
-TV marketing 186,655 169,836 0 0 186,655 169,836
-of which
-transfer deals 23,148 123,732 -23,148 -123,732 0 0
-of which
-merchandising 33,395 34,706 -755 -1,414 32,640 33,292
-of which
-conference, catering, miscellaneous 9,450 36,398 -1,705 155 7,745 36,553
-Total revenue 359,811 495,220 -25,640 -125,024 334,171 370,196
-of which external 355,523 485,985 -21,352 -115,789 334,171 370,196
-of which internal 4,288 9,235 -4,288 -9,235 0 0
-Financial result -267 1,911 -792 -5,356 -1,059 -3,445
-Share of profit
-from equity investments 0 0 81 -1 81 -1
-of which profit transfer 1,007 4,669 -1,007 -4,669 0 0
-of which loss absorption -748 0 748 0 0 0
-Net interest income/expense -526 -2,758 -614 -686 -1,140 -3,444
-of which interest expense -647 -2,938 -780 -793 -1,427 -3,731
-of which interest income 121 180 166 107 287 287
-Depreciation, amortisation
-and write-downs -110,875 -107,028 -168 898 -111,043 -106,130
-Segment profit before taxes * -77,004 -49,675 3,852 3,092 -73,152 -46,583
-Capital expenditure 91,669 160,864 59 -1,923 91,728 158,941
-Segment assets ** 476,472 540,183 -25,953 -22,216 450,519 517,967
-Segment liabilities 207,564 194,796 10,318 17,724 217,882 212,520
-Investments accounted
-for using the equity method 96 9% 306 225 402 321
-Income from
-investments in associates 0 0 81 -1 81 -1
+| EUR '000 | Total 2020/2021 | Total 2019/2020 | Other adjustments 2020/2021 | Other adjustments 2019/2020 | Consolidated financial statements 2020/2021 | Consolidated financial statements 2019/2020 |
+|---|---|---|---|---|---|---|
+| **Total revenue** | 359,811 | 495,220 | -25,640 | -125,024 | 334,171 | 370,196 |
+| of which match operations | 554 | 32,510 | 0 | 0 | 554 | 32,510 |
+| of which advertising | 106,609 | 98,038 | -32 | -33 | 106,577 | 98,005 |
+| of which TV marketing | 186,655 | 169,836 | 0 | 0 | 186,655 | 169,836 |
+| of which transfer deals | 23,148 | 123,732 | -23,148 | -123,732 | 0 | 0 |
+| of which merchandising | 33,395 | 34,706 | -755 | -1,414 | 32,640 | 33,292 |
+| of which conference, catering, miscellaneous | 9,450 | 36,398 | -1,705 | 155 | 7,745 | 36,553 |
+| **Total revenue** | 359,811 | 495,220 | -25,640 | -125,024 | 334,171 | 370,196 |
+| of which external | 355,523 | 485,985 | -21,352 | -115,789 | 334,171 | 370,196 |
+| of which internal | 4,288 | 9,235 | -4,288 | -9,235 | 0 | 0 |
+| | | | | | | |
+| **Financial result** | -267 | 1,911 | -792 | -5,356 | -1,059 | -3,445 |
+| Share of profit from equity investments | 0 | 0 | 81 | -1 | 81 | -1 |
+| of which profit transfer | 1,007 | 4,669 | -1,007 | -4,669 | 0 | 0 |
+| of which loss absorption | -748 | 0 | 748 | 0 | 0 | 0 |
+| **Net interest income/expense** | -526 | -2,758 | -614 | -686 | -1,140 | -3,444 |
+| of which interest expense | -647 | -2,938 | -780 | -793 | -1,427 | -3,731 |
+| of which interest income | 121 | 180 | 166 | 107 | 287 | 287 |
+| | | | | | | |
+| Depreciation, amortisation and write-downs | -110,875 | -107,028 | -168 | 898 | -111,043 | -106,130 |
+| Segment profit before taxes * | -77,004 | -49,675 | 3,852 | 3,092 | -73,152 | -46,583 |
+| Capital expenditure | 91,669 | 160,864 | 59 | -1,923 | 91,728 | 158,941 |
+| Segment assets ** | 476,472 | 540,183 | -25,953 | -22,216 | 450,519 | 517,967 |
+| Segment liabilities | 207,564 | 194,796 | 10,318 | 17,724 | 217,882 | 212,520 |
+| Investments accounted for using the equity method | 96 | 96 | 306 | 225 | 402 | 321 |
+| Income from investments in associates | 0 | 0 | 81 | -1 | 81 | -1 |
 
-* Before profit or loss transfer.
-** KGaA segment includes EUR 9,456 thousand (previous year: EUR 19,645 thousand) in assets held for sale.
+\* Before profit or loss transfer.
+
+\*\* KGaA segment includes EUR 9,456 thousand (previous year: EUR 19,645 thousand) in assets held for sale.
 
 195
 
@@ -14760,22 +12212,33 @@ investments in associates 0 0 81 -1 81 -1
 BORUSSIA DORTMUND GmbH & Co.
 Kommanditgesellschaft auf Aktien, Dortmund
 
-The table below provides a detailed reconciliation of segment profit or loss before taxes, segment
-
-assets and segment liabilities:
-
-Segment profit or loss before taxes Segment assets Segment liabilities
-
-The Borussia Dortmund GmbH & Co. KGaA segment 172,660 thousand). In the past, no bad debts in
-
-exceeded the 10% threshold stipulated in IFRS 8.34 excess of 2.5 percent have been reported for these
-for two customers by a total of EUR 181,291 customers. The allocation of revenue items is
-thousand (previous year: two customers, EUR presented in the table below:
-U |
-Borussia BVB Merchandising BVB Event & besttravel
-Dortmund KGaA GmbH Catering GmbH dortmund GmbH Total
-
 196
+
+The table below provides a detailed reconciliation of segment profit or loss before taxes, segment assets and segment liabilities:
+
+| EUR '000 | Segment profit or loss before taxes 2020/2021 | Segment profit or loss before taxes 2019/2020 | Segment assets 2020/2021 | Segment assets 2019/2020 | Segment liabilities 2020/2021 | Segment liabilities 2019/2020 |
+|---|---|---|---|---|---|---|
+| Segments total | -77,004 | -49,675 | 476,472 | 540,183 | 207,564 | 194,796 |
+| Profit from other companies | 210 | 94 | 0 | 0 | 0 | 0 |
+| Other IFRS adjustments | 1,454 | 1,772 | -9,288 | -5,298 | 0 | 0 |
+| IFRS 16 adjustments | 1,165 | 305 | 20,280 | 22,459 | 21,060 | 24,404 |
+| IFRS 9 adjustments | 248 | -42 | -26 | -23 | 0 | 0 |
+| IFRS 15 adjustments | -70 | 118 | 69 | 139 | 103 | 219 |
+| Consolidation of long-term financial assets | 0 | 0 | -9,961 | -11,621 | 0 | 0 |
+| Stadium buildings plus other assets | 845 | 845 | -27,027 | -27,872 | 0 | 0 |
+| Other consolidation | 0 | 0 | 0 | 0 | -10,845 | -6,899 |
+| | -73,152 | -46,583 | 450,519 | 517,967 | 217,882 | 212,520 |
+
+The Borussia Dortmund GmbH & Co. KGaA segment exceeded the 10% threshold stipulated in IFRS 8.34 for two customers by a total of EUR 181,291 thousand (previous year: two customers, EUR 172,660 thousand). In the past, no bad debts in excess of 2.5 percent have been reported for these customers. The allocation of revenue items is presented in the table below:
+
+| EUR '000 | Borussia Dortmund KGaA 2020/2021 | Borussia Dortmund KGaA 2019/2020 | BVB Merchandising GmbH 2020/2021 | BVB Merchandising GmbH 2019/2020 | BVB Event & Catering GmbH 2020/2021 | BVB Event & Catering GmbH 2019/2020 | besttravel dortmund GmbH 2020/2021 | besttravel dortmund GmbH 2019/2020 | Total 2020/2021 | Total 2019/2020 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Total revenue – 10% threshold** | 181,291 | 172,660 | 0 | 0 | 0 | 0 | 0 | 0 | 181,291 | 172,660 |
+| of which match operations | 0 | 74 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 74 |
+| of which advertising | 54 | 51 | 0 | 0 | 0 | 0 | 0 | 0 | 54 | 51 |
+| of which TV marketing | 178,774 | 169,080 | 0 | 0 | 0 | 0 | 0 | 0 | 178,774 | 169,080 |
+| of which merchandising | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| of which conference, catering, miscellaneous | 2,463 | 3,455 | 0 | 0 | 0 | 0 | 0 | 0 | 2,463 | 3,455 |
 
 --- pág. 197 ---
 
@@ -14841,130 +12304,77 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 198
 
-(2) Property, plant and equipment
+**(2) Property, plant and equipment**
 
-Property, plant and equipment primarily relates
-to the stadium, the BVB FanWelt service centre,
-the Rheinlanddamm plot of land and the adminis-
-tration building located there, and the plot of land
-at Strobelallee 81. The facilities at the training
-ground in Dortmund-Brackel, the youth academy,
-the football academy, the catering areas at the
-stadium, the administrative headquarters and the
-associated operating and office equipment constitute
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Land, land rights and buildings including buildings on third-party land | 147,014 | 152,769 |
+| Other equipment, operating and office equipment | 36,440 | 40,268 |
+| | 183,454 | 193,037 |
 
-further components of this item.
+Property, plant and equipment primarily relates to the stadium, the BVB FanWelt service centre, the Rheinlanddamm plot of land and the administration building located there, and the plot of land at Strobelallee 81. The facilities at the training ground in Dortmund-Brackel, the youth academy, the football academy, the catering areas at the stadium, the administrative headquarters and the associated operating and office equipment constitute further components of this item.
 
-In the current financial year, investments were
-made in the training ground in Dortmund-Brackel
-and in SIGNAL IDUNA PARK.
+In the current financial year, investments were made in the training ground in Dortmund-Brackel and in SIGNAL IDUNA PARK.
 
-In connection with the project to expand BVB's
-training centre, the new power plant and the sprin-
-ting hill were completed at the Dortmund-Brackel
+In connection with the project to expand BVB's training centre, the new power plant and the sprinting hill were completed at the Dortmund-Brackel training ground.
 
-training ground.
+At SIGNAL IDUNA PARK, investment centred around the network infrastructure.
 
-At SIGNAL IDUNA PARK, investment centred around
+The items of property, plant and equipment recognised in the statement of financial position as a result of a lease consist of buildings and other facilities (e.g., sport pitches and outdoor grounds) at the Dortmund-Brackel training ground and the youth centre.
 
-the network infrastructure.
+In addition, the Wi-Fi and flood lighting system and the advertising boards in the upper stands at SIGNAL IDUNA PARK, as well as the Borussia Dortmund fan shops were also included in property, plant and equipment recognised under leases.
 
-The items of property, plant and equipment re-
-cognised in the statement of financial position as
-a result of a lease consist of buildings and other
-facilities (e.g., sport pitches and outdoor grounds)
-at the Dortmund-Brackel training ground and the
-youth centre.
+As at 30 June 2021, the following right-of-use assets related to the corresponding items in the statement of financial position:
 
-In addition, the Wi-Fi and flood lighting system
-and the advertising boards in the upper stands at
-SIGNAL IDUNA PARK, as well as the Borussia
-Dortmund fan shops were also included in property,
-
-plant and equipment recognised under leases.
-
-As at 30 June 2021, the following right-of-use
-assets related to the corresponding items in the
-
-statement of financial position:
-
-I UUUTTTTTTTUTUTUTUTUTUTUUTTUTUTUTUTUTUTUTUTUTUTUTUTUTTUTUTUTUTUTUTUTUTUTUTTTUTUTTUTUTTUTTTUTTUTTTTUTTUTTTTTTTÖTVÖVÖYTYTT/NX
-Net carrying amounts
-
+| EUR '000 | Net carrying amounts 30/06/2021 |
+|---|---|
+| Buildings | 12,661 |
+| Operating and office equipment | 1,508 |
+| | 14,169 |
 
 --- pág. 199 ---
 
-Inthe previous year, assets had net carrying amounts
-of EUR 22,459 thousand, of which EUR 16,523
-thousand was attributable to buildings and EUR 5,936
-thousand to operating and office equipment.
-
-Borussia Dortmund reported additions for
-right-of-use assets recognised under property, plant
-and equipment amounting to EUR 1,108 thousand
-(previous year: EUR 16,830 thousand). This was offset
-by depreciation and write-downs of EUR 3,285
-
-thousand (previous year: EUR 3,627 thousand).
-
-Current and non-current lease liabilities are
-
-presented minus payments already made.
-
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-The interest expense incurred for these items
-amounted to EUR 772 thousand (previous year: EUR
-571 thousand) and are reported under finance costs
-in the consolidated statement of comprehensive
+In the previous year, assets had net carrying amounts of EUR 22,459 thousand, of which EUR 16,523 thousand was attributable to buildings and EUR 5,936 thousand to operating and office equipment.
 
-income.
+Borussia Dortmund reported additions for right-of-use assets recognised under property, plant and equipment amounting to EUR 1,106 thousand (previous year: EUR 16,830 thousand). This was offset by depreciation and write-downs of EUR 3,285 thousand (previous year: EUR 3,627 thousand).
 
-There is an option to purchase the training ground in
-Dortmund-Brackel once the lease there expires in
-2023.
+Current and non-current lease liabilities are presented minus payments already made.
 
-Essentially all of the risks and opportunities in
-connection with the leased assets have been
+The interest expense incurred for these items amounted to EUR 772 thousand (previous year: EUR 571 thousand) and are reported under finance costs in the consolidated statement of comprehensive income.
 
-transferred to Borussia Dortmund.
+There is an option to purchase the training ground in Dortmund-Brackel once the lease there expires in 2023.
+
+Essentially all of the risks and opportunities in connection with the leased assets have been transferred to Borussia Dortmund.
 
 Changes in property, plant and equipment were as follows:
 
-Land, land rights and
+| EUR '000 | Land, land rights and buildings, including buildings on third-party land | Other equipment, operating and office equipment | Total |
+|---|---|---|---|
+| **Cost** | | | |
+| As at 30 June 2019 | 257,023 | 76,707 | 333,730 |
+| Additions | 2,848 | 20,416 | 23,264 |
+| Disposals | 0 | 1,124 | 1,124 |
+| As at 30 June 2020 | 259,871 | 95,999 | 355,870 |
+| Additions | 351 | 4,114 | 4,465 |
+| Disposals | 0 | 1,002 | 1,002 |
+| As at 30 June 2021 | 260,222 | 99,111 | 359,333 |
+| **Depreciation, amortisation and write-downs** | | | |
+| As at 30 June 2019 | 101,010 | 48,719 | 149,729 |
+| Additions | 6,092 | 7,850 | 13,942 |
+| Disposals | 0 | 838 | 838 |
+| As at 30 June 2020 | 107,102 | 55,731 | 162,833 |
+| Additions | 6,106 | 7,497 | 13,603 |
+| Disposals | 0 | 557 | 557 |
+| As at 30 June 2021 | 113,208 | 62,671 | 175,879 |
+| **Carrying amounts** | | | |
+| As at 30 June 2019 | 156,013 | 27,988 | 184,001 |
+| As at 30 June 2020 | 152,769 | 40,268 | 193,037 |
+| **As at 30 June 2021** | **147,014** | **36,440** | **183,454** |
 
-buildings, including
-buildings on
-
-Other equipment,
-operating and office
-
-EUR '000 third-party land equipment Total
-Cost
-
-As at 30 June 2019 257,023 76,707 333,730
-Additions 2,848 20,416 23,264
-Disposals 0 1,124 1,124
-As at 30 June 2020 259,871 95,999 355,870
-Additions 351 4,114 4,465
-Disposals 0 1,002 1,002
-As at 30 June 2021 260,222 99,111 359,333
-Depreciation, amortisation and write-downs
-
-As at 30 June 2019 101,010 48,719 149,729
-Additions 6,092 7,850 13,942
-Disposals 0 838 838
-As at 30 June 2020 107,102 55,731 162,833
-Additions 6,106 7,497 13,603
-Disposals 0 557 557
-As at 30 June 2021 113,208 62,671 175,879
-Carrying amounts
-
-As at 30 June 2019 156,013 27,988 184,001
-As at 30 June 2020 152,769 40,268 193,037
-As at 30 June 2021 147,014 36,440 183,454
-
+199
 
 --- pág. 200 ---
 
@@ -14973,55 +12383,72 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 200
 
-(3) Investments accounted for using the equity method
+**(3) Investments accounted for using the equity method**
 
-The investment in Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH (33.33%)
+The investment in Orthomed Medizinisches Leistungs- und Rehabilitationszentrum GmbH (33.33%) with its HGB financial statements as at 31 December 2020 is reported here.
 
-with its HGB financial statements as at 31 December 2020 is reported here.
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Non-current assets | 557 | 641 |
+| Current assets | 973 | 519 |
+| Non-current liabilities | 165 | 177 |
+| Current liabilities | 338 | 197 |
+| Net assets | 1,027 | 786 |
+| Group's share of net assets (33.33%) | 342 | 262 |
+| Goodwill | 59 | 59 |
+| Dividends received after 31 December 2020 | 0 | 0 |
+| **Carrying amount of interest in associate** | **402** | **321** |
+| Revenue | 4,138 | 4,008 |
+| Profit/loss from continuing operations | 242 | -3 |
+| Comprehensive income (33.33%) | 81 | -1 |
+| **Group's share of comprehensive income (33.33%)** | **81** | **-1** |
 
-(4) Financial assets
+| EUR '000 | 2020 | 2019 |
+|---|---|---|
+| Cash flows from operating activities | 620 | 118 |
+| Cash flows from investing activities | -40 | -168 |
+| Cash flows from financing activities | -12 | 77 |
+| **Net change in cash and cash equivalents** | **568** | **27** |
 
-Long-term financial assets relate primarily to
-long-term, interest-bearing borrowings classified
+**(4) Financial assets**
 
-as loans and receivables.
+Long-term financial assets relate primarily to long-term, interest-bearing borrowings classified as loans and receivables.
 
-Please refer to Note 31 for information on the fair
+Please refer to Note 31 for information on the fair values of financial assets.
 
-values of financial assets.
-
-In accordance with IFRS 15, the Group recognises
-an asset related to products sold with a right of
-return on the basis of the expected returns. This
-corresponds to the refund liability. As at 30 June
-2021, the asset for the right of return of products
-amounted to EUR 60 thousand (previous year: EUR
-139 thousand).
+In accordance with IFRS 15, the Group recognises an asset related to products sold with a right of return on the basis of the expected returns. This corresponds to the refund liability. As at 30 June 2021, the asset for the right of return of products amounted to EUR 60 thousand (previous year: EUR 139 thousand).
 
 --- pág. 201 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-(5) Trade and other financial receivables
+**(5) Trade and other financial receivables**
 
-Trade and other financial receivables amounted thousand to trade receivables (previous year:
-to EUR 40,328 thousand (previous year: EUR EUR 47,204 thousand).
+Trade and other financial receivables amounted to EUR 40,328 thousand (previous year: EUR 49,200 thousand) of which EUR 2,737 thousand (previous year: EUR 1,996 thousand) related to other financial receivables and EUR 37,591 thousand to trade receivables (previous year: EUR 47,204 thousand).
 
-49,200 thousand) of which EUR 2,737 thousand Trade receivables included EUR 22,187 thousand in
-(previous year: EUR 1,996 thousand) related to transfer receivables (previous year: EUR 33,204
+Trade receivables included EUR 22,187 thousand in transfer receivables (previous year: EUR 33,204 thousand).
 
-other financial receivables and EUR 37,591 thousand).
+**Non-current**
 
-Non-current
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Trade receivables | 10,392 | 12,680 |
 
-Non-currenttrade receivables are discounted using amortised cost. Please refer to Note 31 for
-the effective interest method and measured at information on the fair values of financial assets.
-Current
+Non-current trade receivables are discounted using the effective interest method and measured at amortised cost. Please refer to Note 31 for information on the fair values of financial assets.
 
-Current trade receivables and other assets do not three months. Please refer to Note 31 for
+**Current**
 
-bear interest and mostly have a maturity of up to information on the fair values of financial assets.
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Trade receivables | 28,381 | 38,506 |
+| Less allowances | -1,182 | -3,982 |
+| Net trade receivables | 27,199 | 34,524 |
+| | | |
+| Other financial receivables | 2,737 | 1,996 |
+| | 29,936 | 36,520 |
+
+Current trade receivables and other assets do not bear interest and mostly have a maturity of up to three months. Please refer to Note 31 for information on the fair values of financial assets.
 
 201
 
@@ -15032,113 +12459,58 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 202
 
-(6) Inventories
+**(6) Inventories**
 
-The carrying amount of inventories carried at fair value less costs to sell was EUR 1,292 thousand (previous
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Inventories/merchandise | 7,235 | 7,342 |
+| Less write-downs | -429 | -588 |
+| **Net inventories** | **6,806** | **6,754** |
 
-year: EUR 1,645 thousand).
+The carrying amount of inventories carried at fair value less costs to sell was EUR 1,292 thousand (previous year: EUR 1,645 thousand).
 
 Impairments of inventories are carried in the cost of materials.
 
-(7) Cash and cash equivalents
+**(7) Cash and cash equivalents**
+
+| EUR '000 | 30/06/2021 | 30/0672020 |
+|---|---|---|
+| Bank balances and cash-in-hand | 1,725 | 3,317 |
 
 Bank balances have been subject to immaterial negative interest rates since financial year 2020/2021.
 
-(8) Assets held for sale
+**(8) Assets held for sale**
 
-Non-current assets are classified as "held for sale“
-and "measured at the lower of carrying amount and
-fair value less costs to sell" if their carrying amount
-will be recovered principally through a sale
-transaction rather than through continuing use.
+Non-current assets are classified as "held for sale" and "measured at the lower of carrying amount and fair value less costs to sell" if their carrying amount will be recovered principally through a sale transaction rather than through continuing use.
 
-By virtue of contractual arrangements and current
-transfer market conditions relating to the pending
-sale of transfer rights in one of the upcoming
-
-transfer windows, non-current intangible assets
-
-were written down by EUR 4,810 thousand
-(previous year: EUR 3,903 thousand) to their fair
-value less costs to sell (meaning the gross transfer
-proceeds to be collected less transfer costs) and
-reclassified as held for sale. The carrying amount
-of assets held for sale amounted to EUR 9,456
-thousand (previous year: EUR 19,645 thousand).
-The write-down was recognised under depreciation
-
-and amortisation.
+By virtue of contractual arrangements and current transfer market conditions relating to the pending sale of transfer rights in one of the upcoming transfer windows, non-current intangible assets were written down by EUR 4,810 thousand (previous year: EUR 3,903 thousand) to their fair value less costs to sell (meaning the gross transfer proceeds to be collected less transfer costs) and reclassified as held for sale. The carrying amount of assets held for sale amounted to EUR 9,456 thousand (previous year: EUR 19,645 thousand). The write-down was recognised under depreciation and amortisation.
 
 --- pág. 203 ---
 
-(9) Equity
-
-The Company's subscribed capital amounts to EUR
-92,000 thousand and is divided into 92,000,000 no-par
-value shares, each representing a notional share in
-the share capital of EUR 1.00, less the notional value
-of treasury shares of EUR 19 thousand. Equity
-contains a presentation of treasury shares in which
-the nominal amount of the treasury shares is
-deducted from equity under subscribed capitalon the
-face ofthe balance sheet. Furthermore, a reserve for
-
-treasury shares inthe same amount is also presented.
-
-Pursuant to a resolution by the Annual General
-Meeting on 16 November 2004, the Company was
-authorised to acquire own shares amounting to 10%
-ofthe share capital on or before 30 April 2006. The
-Company was also authorised to sell its treasury
-
-shares either on or offthe stock market. Off-market
-
-Subscribed capital
-The subscribed capital of Borussia Dortmund
-GmbH & Co. KGaA is divided into no-par value
-
-shares with a notional share in the share capital
-
-of EUR 1.00 per share, with each share bearing
-
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-sales are permitted, among other purposes, for the
-sale of shares in the form of printed physical share
-certificates which are freely transferable and
-tradable. In such cases, shareholders’ subscription
-rights are excluded in accordance with 8 71 (1) No.
-8 AktG. In the period between the date of admission
-of the Company's shares to trading (31 October
-2000) and the end of the reporting period (30 June
-2021), the Company acquired a total of 34,000
-no-par value shares and sold 15,100 no-par value
-shares off-market in the form of printed physical
-share certificates. The gain on disposal has been
-reported separately under other operating income.
-Atthe balance sheet date, the Company 's holding of
-its own securities consisted of 18,900 no-par value
-shares; no shares were disposed of during the
+**(9) Equity**
 
-reporting period.
+The Company's subscribed capital amounts to EUR 92,000 thousand and is divided into 92,000,000 no-par value shares, each representing a notional share in the share capital of EUR 1.00, less the notional value of treasury shares of EUR 19 thousand. Equity contains a presentation of treasury shares in which the nominal amount of the treasury shares is deducted from equity under subscribed capital on the face of the balance sheet. Furthermore, a reserve for treasury shares in the same amount is also presented.
 
-equal rights. The shares are fully paid-up; the
-number of shares issued and the number of shares
+Pursuant to a resolution by the Annual General Meeting on 16 November 2004, the Company was authorised to acquire own shares amounting to 10% of the share capital on or before 30 April 2006. The Company was also authorised to sell its treasury shares either on or off the stock market. Off-market sales are permitted, among other purposes, for the sale of shares in the form of printed physical share certificates which are freely transferable and tradable. In such cases, shareholders' subscription rights are excluded in accordance with § 71 (1) No. 8 AktG. In the period between the date of admission of the Company's shares to trading (31 October 2000) and the end of the reporting period (30 June 2021), the Company acquired a total of 34,000 no-par value shares and sold 15,100 no-par value shares off-market in the form of printed physical share certificates. The gain on disposal has been reported separately under other operating income. At the balance sheet date, the Company's holding of its own securities consisted of 18,900 no-par value shares; no shares were disposed of during the reporting period.
 
-outstanding changed as follows:
+**Subscribed capital**
 
-By virtue of a resolution by the Annual General
-Meeting on 19 November 2020, the Company
-was authorised until 18 November 2025, subject
+The subscribed capital of Borussia Dortmund GmbH & Co. KGaA is divided into no-par value shares with a notional share in the share capital of EUR 1.00 per share, with each share bearing equal rights. The shares are fully paid-up; the number of shares issued and the number of shares outstanding changed as follows:
 
-to the renewed consent of the Supervisory Board,
+| Number of shares | Issued | Treasury shares | In circulation |
+|---|---|---|---|
+| Balance as at 1 July 2019 | 92,000,000 | -18,900 | 91,981,100 |
+| Change in treasury shares | | 0 | |
+| **as at 30 June 2020** | **92,000,000** | **-18,900** | **91,981,100** |
+| Change in treasury shares | | 0 | |
+| **as at 30 June 2021** | **92,000,000** | **-18,900** | **91,981,100** |
 
-to increase the share capital by a maximum of
-EUR 18,400,000.00 in total by issuing new no-
-par value ordinary bearer shares against cash
+By virtue of a resolution by the Annual General Meeting on 19 November 2020, the Company was authorised until 18 November 2025, subject to the renewed consent of the Supervisory Board, to increase the share capital by a maximum of EUR 18,400,000.00 in total by issuing new no-par value ordinary bearer shares against cash contributions on one occasion.
 
-contributions on one occasion.
+203
 
 --- pág. 204 ---
 
@@ -15147,112 +12519,78 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 204
 
-Reserves
+**Reserves**
 
-Capital reserves consist exclusively of transfers in
-respect of premiums on the issue of new shares
-after deducting the net costs of the placement and
-the Company's share of revenues from the sale of
+Capital reserves consist exclusively of transfers in respect of premiums on the issue of new shares after deducting the net costs of the placement and the Company's share of revenues from the sale of treasury shares.
 
-treasury shares.
+Other revenue reserves comprise profits generated and not distributed by Group companies in the current year and previous years and accumulated losses. In addition, the net effect, taking account of subsequent adjustments, of the remeasurement of SIGNAL IDUNA PARK in accordance with IFRS 1.16 is reported under this item.
 
-Other revenue reserves comprise profits generated
-and not distributed by Group companies in the
-current year and previous years and accumulated
-losses. In addition, the net effect, taking account of
-subsequent adjustments, of the remeasurement of
-SIGNAL IDUNA PARK in accordance with IFRS 1.16
+**Capital management**
 
-is reported under this item.
+The objective of capital management is to ensure the Group's long-term ability to function on a going concern basis and to generate appropriate returns for shareholders. Debt management steers the raising of debt, particularly with regard to financing with matching maturities. The capital structure is managed in such a way that changes in macroeconomic conditions and risks arising from the underlying assets are taken into account. Short-term target-performance comparisons and medium- and long-term financial planning are used in the capital structure management process.
 
-Capital management
+The capital structure at the end of the reporting period was as follows:
 
-The objective of capital management is to ensure
-the Group's long-term ability to function on a going
-concern basis and to generate appropriate returns
-for shareholders. Debt management steers the
-raising of debt, particularly with regard to financing
-with matching maturities. The capital structure is
-managed in such a way that changes in macroeco-
-nomic conditions and risks arising from the underlying
-assets are taken into account. Short-term target-
-performance comparisons and medium- and long-
-term financial planning are used in the capital
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Equity of shareholders | 232,637 | 305,447 |
+| Share in total capital | 51.64 % | 58.97 % |
 
-structure management process.
+**(10) Provisions**
 
-The capital structure atthe end ofthe reporting period was as follows:
+The EUR 2,333 thousand (previous year: EUR 0 thousand) in provisions recognised as at 30 June 2021 included provisions for litigation and liability risks relating to legal proceedings, and was expensed. The outcome of the legal proceedings cannot be forecast with any certainty, meaning that the amount of the expected obligation is also uncertain. Based on comparable past incidents and its present understanding of the substance of the matter, Borussia Dortmund anticipates a value in dispute and a potential loss of EUR 2,333 thousand.
 
-(10) Provisions
+**(11) Financial liabilities**
 
-The EUR 2,333 thousand (previous year: EUR O
-thousand) in provisions recognised as at 30 June 2021
-included provisions for litigation and liability risks
-relating to legal proceedings, and was expensed.
-
-The outcome of the legal proceedings cannot be
-
-forecast with any certainty, meaning that the
-
-(11) Financial liabilities
-
-Current financial liabilities amounted to EUR
-56,900 thousand as at the end of the reporting
-period (previous year: EUR 8,031 thousand). As in
-the previous year, this related to an overdraft
-
-facility that has been utilised.
-
-amount of the expected obligation is also
-uncertain. Based on comparable past incidents
-and its present understanding of the substance
-of the matter, Borussia Dortmund anticipates a
-value in dispute and a potential loss of EUR 2,333
-
-thousand.
+Current financial liabilities amounted to EUR 56,900 thousand as at the end of the reporting period (previous year: EUR 8,031 thousand). As in the previous year, this related to an overdraft facility that has been utilised.
 
 --- pág. 205 ---
 
-(12) Lease liabilities
-
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
+
+**(12) Lease liabilities**
 
 The payment obligations under leases are due for payment as follows:
 
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Less than 1 year | 4,932 | 5,135 |
+| Between 1 and 5 years | 11,106 | 13,886 |
+| More than 5 years | 7,763 | 8,569 |
+| | 23,801 | 27,590 |
+| Future finance charges from leases | -2,741 | -3,186 |
+| **Present value of liabilities from leases** | **21,060** | **24,404** |
+
 The change in the maturity structure of the present values of lease liabilities was as follows:
 
-(13) Trade payables
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Less than 1 year | 4,241 | 4,350 |
+| Between 1 and 5 years | 9,735 | 12,943 |
+| More than 5 years | 7,084 | 7,111 |
+| | 21,060 | 24,404 |
 
-Trade payables amounted to EUR 101,353 thou-
-sand (previous year: EUR 137,059 thousand), of
-which EUR 87,683 thousand (previous year: EUR
-120,287 thousand) related to liabilities from
+**(13) Trade payables**
 
-(14) Other financial obligations
+Trade payables amounted to EUR 101,353 thousand (previous year: EUR 137,059 thousand), of which EUR 87,683 thousand (previous year: EUR 120,287 thousand) related to liabilities from transfer deals. Liabilities from transfer deals declined due to payments made in connection with transfer agreements.
 
-transfer deals. Liabilities from transfer deals
-declined due to payments made in connection
+**(14) Other financial obligations**
 
-with transfer agreements.
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| **Non-current** | | |
+| Other | 208 | 0 |
+| | 208 | 0 |
+| **Current** | | |
+| Other taxes | 6,971 | 9,949 |
+| Other | 23,930 | 29,166 |
+| | 30,901 | 39,115 |
+| **Total other financial liabilities** | **31,109** | **39,115** |
 
-Current other financial liabilities decreased year on
-year by EUR 8,214 thousand. This resulted primarily
-from payments made in the financial year for the
-professional squad.
+Current other financial liabilities decreased year on year by EUR 8,214 thousand. This resulted primarily from payments made in the financial year for the professional squad.
 
-In addition, other financial liabilities include refund
-
-liabilities amounting to EUR 103 thousand
-
-(previous year: EUR 219 thousand). The refund
-
-liability relates to the customer's right to return
-products within 30 days of purchase. A refund
-liability and a corresponding adjustment of
-revenue is recognised at the time of sale for
-
-products for which a return is expected.
+In addition, other financial liabilities include refund liabilities amounting to EUR 103 thousand (previous year: EUR 219 thousand). The refund liability relates to the customer's right to return products within 30 days of purchase. A refund liability and a corresponding adjustment of revenue is recognised at the time of sale for products for which a return is expected.
 
 205
 
@@ -15263,75 +12601,81 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 206
 
-(15) Prepaid expenses and deferred income
+**(15) Prepaid expenses and deferred income**
 
-Prepaid expenses
+**Prepaid expenses**
 
-Deferred income
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| **Non-current** | | |
+| Deferred income related to professional squad | 867 | 4,569 |
+| Insurance premiums | 0 | 2 |
+| Other advance payments | 1,227 | 1,147 |
+| | 2,094 | 5,718 |
+| **Current** | | |
+| Deferred income related to professional squad | 8,722 | 6,560 |
+| Insurance premiums | 538 | 604 |
+| Other advance payments | 3,448 | 2,737 |
+| | 12,708 | 9,901 |
 
-Current deferred income as reported amounted to
-EUR 5,087 thousand (previous year: EUR 3,641
-thousand), and consisted primarily of proceeds from
-sponsoring agreements relating to the 2021/2022
-season, which are reversed rateably over the
+**Deferred income**
 
-periods to which they relate.
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| **Non-current** | | |
+| Advance payments received from sponsors | 0 | 230 |
+| | 0 | 230 |
+| **Current** | | |
+| Advance payments received from ticket sales | 22 | 2 |
+| Advance payments received from sponsors | 4,447 | 2,931 |
+| Other advance payments | 618 | 708 |
+| | 5,087 | 3,641 |
 
-In addition, because of the continuing COVID-19
+Current deferred income as reported amounted to EUR 5,087 thousand (previous year: EUR 3,641 thousand), and consisted primarily of proceeds from sponsoring agreements relating to the 2021/2022 season, which are reversed rateably over the periods to which they relate.
 
-pandemic, the services under sponsorship
-agreements not rendered in the 2019/2020 and
-2020/2021 seasons (EUR 2,259 thousand) were
-reported under current deferred income. This is
+In addition, because of the continuing COVID-19 pandemic, the services under sponsorship agreements not rendered in the 2019/2020 and 2020/2021 seasons (EUR 2,259 thousand) were reported under current deferred income. This is transferred to subsequent seasons as compensation.
 
-transferred to subsequent seasons as compensation.
+\* Veränderung der Vorjahresposten. Vergleiche auch Konzernanhang, Korrektur gemäß IAS 8.
 
 --- pág. 207 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-NOTES TO THE CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME
+**NOTES TO THE CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME**
 
-(16) Revenue
+**(16) Revenue**
 
-Revenue is generated primarily in Germany. It includes prior-period revenue of EUR 2,155 thousand
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Match operations | 554 | 32,510 |
+| Advertising | 106,577 | 98,005 |
+| TV Marketing | 186,655 | 169,836 |
+| Merchandising | 32,640 | 33,292 |
+| Conference, catering, miscellaneous | 7,745 | 36,553 |
+| | 334,171 | 370,196 |
 
-(previous year: EUR 785 thousand). The prior-period income recognised in the financial year related
+Revenue is generated primarily in Germany. It includes prior-period revenue of EUR 2,155 thousand (previous year: EUR 785 thousand). The prior-period income recognised in the financial year related primarily to TV marketing.
 
-primarily to TV marketing.
+**(17) Net transfer income**
 
-(17) Net transfer income
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Gross transfer proceeds | 24,406 | 116,688 |
+| Transfer costs | -1,285 | -7,488 |
+| **Net transfer proceeds** | **23,121** | **109,200** |
+| Residual carrying amount | -7,720 | -69,040 |
+| **Net transfer income** | **15,401** | **40,160** |
 
-(18) Other operating income
+**(18) Other operating income**
 
-Other operating Income increased year on year from
-EUR 9,195 thousand to EUR 10,377 thousand and
-consisted mainly of income from insurance
-reimbursements amounting to EUR 3,796 thousand,
-income from the reversal of provisions amounting
-to EUR 1,525 thousand as well as income from
-reimbursements for granting contractual marketing
+Other operating income increased year on year from EUR 9,195 thousand to EUR 10,377 thousand and consisted mainly of income from insurance reimbursements amounting to EUR 3,796 thousand, income from the reversal of provisions amounting to EUR 1,525 thousand as well as income from reimbursements for granting contractual marketing rights amounting to EUR 941 thousand.
 
-rights amounting to EUR 941 thousand.
+The share of other operating income recognised from prior periods amounted to EUR 2,608 thousand (previous year: EUR 5,033 thousand), of which EUR 1,525 thousand resulted from the reversal of provisions and the derecognition of liabilities.
 
-(19) Cost of materials
+**(19) Cost of materials**
 
-Cost of materials decreased from EUR 22,392
-thousand to EUR 19,589 thousand. This item
-consisted mainly of the cost of goods sold for BVB
-Event & Catering GmbH (EUR #25 thousand;
-
-The share of other operating income recognised
-from prior periods amounted to EUR 2,608 thousand
-(previous year: EUR 5,033 thousand), of which EUR
-1,525 thousand resulted from the reversal of
-
-provisions and the derecognition of liabilities.
-
-previous year: EUR 4,716 thousand) and BVB
-Merchandising GmbH (EUR 18,901 thousand;
-previous year: EUR 17,794 thousand).
+Cost of materials decreased from EUR 22,392 thousand to EUR 19,589 thousand. This item consisted mainly of the cost of goods sold for BVB Event & Catering GmbH (EUR 625 thousand; previous year: EUR 4,716 thousand) and BVB Merchandising GmbH (EUR 18,901 thousand; previous year: EUR 17,794 thousand).
 
 207
 
@@ -15342,75 +12686,84 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 208
 
-(20) Personnel expenses
+**(20) Personnel expenses**
 
-No defined-benefit pension entitlements have been granted to employees of the BVB Group. Payments to
+No defined-benefit pension entitlements have been granted to employees of the BVB Group. Payments to the state pension scheme are reported under social security contributions.
 
-the state pension scheme are reported under social security contributions.
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Wages and salaries | 207,025 | 206,939 |
+| Social security contributions | 8,625 | 8,218 |
+| | 215,650 | 215,157 |
 
-During financial year 2020/2021, EUR 2,647 thousand was paid into the German statutory retirement
+During financial year 2020/2021, EUR 2,647 thousand was paid into the German statutory retirement pension system (previous year: EUR 2,750 thousand).
 
-pension system (previous year: EUR 2,750 thousand).
+**(21) Depreciation and amortisation**
 
-(21) Depreciation and amortisation
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Amortisation of intangible assets | 97,440 | 92,188 |
+| Depreciation of property, plant and equipment | 13,603 | 13,942 |
+| | 111,043 | 106,130 |
 
-(22) Other operating expenses
+**(22) Other operating expenses**
 
-Other operating expenses include prior-period expenses in the amount of EUR 762 thousand (previous year:
-EUR 776 thousand).
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Match operations | 36,956 | 47,211 |
+| Advertising | 10,708 | 26,989 |
+| Transfer deals | 4,204 | 4,654 |
+| Retail | 6,486 | 6,463 |
+| Administration | 22,807 | 25,352 |
+| Other | 4,599 | 8,341 |
+| | 85,760 | 119,010 |
+
+Other operating expenses include prior-period expenses in the amount of EUR 762 thousand (previous year: EUR 776 thousand).
 
 --- pág. 209 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-(23) Financial result
+**(23) Financial result**
 
-EUR '000 2020/2021 2019/2020
-Net income/loss from investments in associates
-(see Note (3)) 81 -1
-Finance income
-Interest income in accordance with IFRS 9 252 167
-Other interest income 35 120
-287 287
-Finance costs
-Discounting expenses and other interest -554 -2,879
-Interest expenses for lease liabilities -772 -571
-Interest expenses in accordance with IFRS 9 -101 -281
--1,427 -3,731
--1,059 -3,445
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Net income/loss from investments in associates (see Note (3)) | 81 | -1 |
+| Finance income | | |
+| Interest income in accordance with IFRS 9 | 252 | 167 |
+| Other interest income | 35 | 120 |
+| | 287 | 287 |
+| Finance costs | | |
+| Discounting expenses and other interest | -554 | -2,879 |
+| Interest expenses for lease liabilities | -772 | -571 |
+| Interest expenses in accordance with IFRS 9 | -101 | -281 |
+| | -1,427 | -3,731 |
+| | -1,059 | -3,445 |
 
-(24) Income taxes and deferred taxes
+**(24) Income taxes and deferred taxes**
 
-In the current financial year, Borussia Dortmund The deferred tax assets and liabilities reported in
-generated tax income of EUR 342 thousand the consolidated statement of financial position
-(previous year: EUR 2,630 thousand) as the result relate to the following items:
+In the current financial year, Borussia Dortmund generated tax income of EUR 342 thousand (previous year: EUR 2,630 thousand) as the result of a trade tax reimbursement.
 
-of atrade tax reimbursement.
+The deferred tax assets and liabilities reported in the consolidated statement of financial position relate to the following items:
 
-Net as at Recognisedin Netasat Deferred Deferred
+| EUR '000 | Net as at 30/06/2020 | Recognised in profit or loss | Net as at 30/06/2021 | Deferred tax assets | Deferred tax liabilities |
+|---|---|---|---|---|---|
+| Intangible assets | 5,477 | -1,653 | 3,824 | 3,824 | 0 |
+| Property, plant and equipment | -6,166 | -1,026 | -7,192 | 0 | -7,192 |
+| Trade receivables and other assets | 275 | -81 | 194 | 194 | 0 |
+| Trade payables | -16,686 | 1,489 | -15,197 | 0 | -15,197 |
+| Tax loss carry-forwards | 17,100 | 1,271 | 18,371 | 18,371 | 0 |
+| **Total** | **0** | **0** | **0** | **22,389** | **-22,389** |
 
-EUR '000 30/06/2020 profitorloss 30/06/2021 taxassets tax liabilities
-Intangible assets 5,477 -1,653 3,824 3,824 0
-Property, plant and equipment -6,166 -1,026 -7,192 0 -7,192
-Trade receivables
-
-and other assets 275 -81 194 194 0
-Trade payables -16,686 1,489 -15,197 0 -15,197
-Tax loss carry-forwards 17,100 1,271 18,371 18,371 0
-Total 0 0 0 22,389 -22,389
-
-Net as at Recognisedin Netasat Deferred Deferred
-
-EUR '000 30/06/2019 profitorloss 30/06/2020 taxassets tax liabilities
-Intangible assets 11 5,466 5,477 5,477 0
-Property, plant and equipment -5,085 -1,081 -6,166 61 -6,227
-Trade receivables
-
-and other assets 28 40 275 275 0
-Trade payables -9,716 -6,970 -16,686 639 -17,325
-Tax loss carry-forwards 11,876 5,224 17,100 17,100 0
-Total -2,679 2,679 0 23,552 -23,552
+| EUR '000 | Net as at 30/06/2019 | Recognised in profit or loss | Net as at 30/06/2020 | Deferred tax assets | Deferred tax liabilities |
+|---|---|---|---|---|---|
+| Intangible assets | 11 | 5,466 | 5,477 | 5,477 | 0 |
+| Property, plant and equipment | -5,085 | -1,081 | -6,166 | 61 | -6,227 |
+| Trade receivables and other assets | 235 | 40 | 275 | 275 | 0 |
+| Trade payables | -9,716 | -6,970 | -16,686 | 639 | -17,325 |
+| Tax loss carry-forwards | 11,876 | 5,224 | 17,100 | 17,100 | 0 |
+| **Total** | **-2,679** | **2,679** | **0** | **23,552** | **-23,552** |
 
 209
 
@@ -15423,51 +12776,42 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 The income tax expense was made up as follows:
 
-At the end of the reporting period, the Group had
-corporation tax loss carry-forwards amounting to
-EUR 118,937 thousand (previous year: EUR 44,270
-thousand) and trade tax loss carry-forwards
-amounting to EUR 100,069 thousand (previous
-year: EUR 29,492 thousand) for which no deferred
-tax assets have been recognised. The tax loss carry-
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Income taxes | | |
+| Current period | -60 | -40 |
+| Prior period | 402 | -9 |
+| Deferred tax benefit/expense in connection with | | |
+| the creation or reversal of temporary differences | -1,271 | -2,545 |
+| Tax loss carryforwards not yet utilised | 1,271 | 5,224 |
+| | 342 | 2,630 |
 
-forwards have an unlimited carry-forward period.
+At the end of the reporting period, the Group had corporation tax loss carry-forwards amounting to EUR 118,937 thousand (previous year: EUR 44,270 thousand) and trade tax loss carry-forwards amounting to EUR 100,069 thousand (previous year: EUR 29,492 thousand) for which no deferred tax assets have been recognised. The tax loss carry-forwards have an unlimited carry-forward period.
 
-The expected income tax expense which would
-theoretically result from applying the weighted
-average tax rate of 32.81% (previous year: 32.81%)
-can be reconciled with the actual income tax benefit
-reported in the consolidated statement of
+The expected income tax expense which would theoretically result from applying the weighted average tax rate of 32.81% (previous year: 32.81%) can be reconciled with the actual income tax benefit reported in the consolidated statement of comprehensive income as follows:
 
-comprehensive income as follows:
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| Consolidated net profit before income taxes | -73,152 | -46,583 |
+| *Theoretical tax rate in %* | *32.81* | *32.81* |
+| Expected tax benefit from income taxes | 24,001 | 15,284 |
+| Effects from tax additions and subtractions | 988 | 1,240 |
+| Change in ability to utilise tax loss carry-forwards | -24,989 | -16,564 |
+| Change in deferred taxes | 0 | 2,679 |
+| Prior-year taxes | 402 | -9 |
+| Other tax effects | -60 | 0 |
+| **Tax income as reported in the consolidated statement of comprehensive income** | **342** | **2,630** |
+| *Actual tax rate in %* | *-0.47* | *-5.64* |
 
-(25) Consolidated statement of cash flows
+**(25) Consolidated statement of cash flows**
 
-Cash and cash equivalents reported in the statement
-of financial position amounted to EUR 1,725
-thousand (previous year: EUR 3,317 thousand). In
-addition, liabilities to banks amounting to EUR 56,900
-thousand (previous year: EUR 8,031 thousand) were
+Cash and cash equivalents reported in the statement of financial position amounted to EUR 1,725 thousand (previous year: EUR 3,317 thousand). In addition, liabilities to banks amounting to EUR 56,900 thousand (previous year: EUR 8,031 thousand) were reported during the period under review.
 
-reported during the period under review.
+Cash flows from operating activities amounted to EUR 15,947 thousand (previous year: EUR -362 thousand) and cash flows from investing activities amounted to EUR -62,022 thousand (previous year: EUR -50,769 thousand).
 
-Cash flows from operating activities amounted to
-EUR 15,947 thousand (previous year: EUR -362
+Net cash flows from investing activities included transfer proceeds, netted directly against payments linked to transfers amounting to EUR 5,071 thousand (previous year: EUR 8,955 thousand).
 
-thousand) and cash flows from investing activities
-
-amounted to EUR -62,022 thousand (previous year:
-EUR -50,769 thousand).
-
-Net cash flows from investing activities included
-transfer proceeds, netted directly against payments
-linked to transfers amounting to EUR 5,071 thousand
-
-(previous year: EUR 8,955 thousand).
-
-The changes in financial liabilities reported under
-
-cash flows from financing activities were as follows:
+The changes in financial liabilities reported under cash flows from financing activities were as follows:
 
 --- pág. 211 ---
 
@@ -15539,119 +12883,82 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 212
 
-OTHER DISCLOSURES
+**OTHER DISCLOSURES**
 
-FINANCIAL RISKS
+**FINANCIAL RISKS**
 
-(26) Credit risk
+**(26) Credit risk**
 
-The carrying amounts of the following financial instruments reflect the Group's maximum exposure to
+The carrying amounts of the following financial instruments reflect the Group's maximum exposure to credit risk. At the end of the reporting period, the maximum exposure was as follows:
 
-credit risk. Atthe end of the reporting period, the maximum exposure was as follows:
+**Carrying amounts of financial instruments**
 
-Carrying amounts of financial instruments
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Financial assets, receivables and other financial receivables | 40,440 | 49,607 |
+| Cash and cash equivalents | 1,725 | 3,317 |
 
-When reporting trade receivables, Borussia
-Dortmund uses the simplified approach whereby
-expected credit losses are recognised over the entire
-remaining term upon recognition. Expected credit
-losses are calculated using the simplified approach,
-broken down by risk group and taking into account
-historical default rates. The allocation to the
-respective risk groups is based on the shared credit
-risk characteristics. At Borussia Dortmund, these are
-receivables from transfer deals on the one hand, and
-othertrade receivables related primarily to ticketing,
-merchandising and sponsorships on the other. Credit
-loss rates specific to therisk clusters are calculated
-on the basis of the historical credit loss rates for the
-past three financial years and taking into account
-forward-looking macroeconomic indicators (gross
-domestic product) as well as an assessment of the
-economic impact of the COVID-19 pandemic. This
+When reporting trade receivables, Borussia Dortmund uses the simplified approach whereby expected credit losses are recognised over the entire remaining term upon recognition. Expected credit losses are calculated using the simplified approach, broken down by risk group and taking into account historical default rates. The allocation to the respective risk groups is based on the shared credit risk characteristics. At Borussia Dortmund, these are receivables from transfer deals on the one hand, and other trade receivables related primarily to ticketing, merchandising and sponsorships on the other. Credit loss rates specific to the risk clusters are calculated on the basis of the historical credit loss rates for the past three financial years and taking into account forward-looking macroeconomic indicators (gross domestic product) as well as an assessment of the economic impact of the COVID-19 pandemic. This method of calculation resulted in a loss rate that was insignificantly higher than in the previous year.
 
-method of calculation resulted in a loss rate that was
+Under the simplified approach, loss allowances are recognised on an individual basis if one or more events occur that have a detrimental impact on the creditworthiness of the debtor. These events include default in payment, impending insolvency or concessions by the debtor due to payment difficulties. Trade receivables are written off immediately if their recoverability is no longer expected with sufficient probability. This is the case, for example, when the debtor is in default.
 
-insignificantly higher than in the previous year.
+Receivables from transfer deals represent a concentration of risk, which is hedged using transfer rights.
 
-Under the simplified approach, loss allowances are
-recognised on an individual basis if one or more
-events occur that have a detrimental impact on the
-creditworthiness ofthe debtor. These events include
-default in payment, impending insolvency or
-concessions by the debtor due to payment difficulties.
-Trade receivables are written off immediately iftheir
-recoverability is no longer expected with sufficient
-probability. This is the case, for example, when the
-debtor is in default.
+The change in loss allowances on the basis of the expected credit losses for trade receivables as at 30 June 2021 is presented in the table below:
 
-Receivables from transfer deals represent a
-concentration of risk, which is hedged using
-
-transfer rights.
-
-The change in loss allowances on the basis of the
-expected credit losses for trade receivables as at 30
-
-June 2021 is presented in the table below:
-
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---|---|
+| **Loss allowances as at 1 July in accordance with IFRS 9** | **3,982** | **1,852** |
+| Transfers recognised in profit or loss | 497 | 2,552 |
+| Reversals recognised in profit or loss | -626 | -427 |
+| Items recognised outside profit or loss | -2,675 | 0 |
+| Loss allowances in accordance with IFRS 9 | 4 | 5 |
+| **Loss allowances as at 30 June** | **1,182** | **3,982** |
 
 --- pág. 213 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-The maturities of trade receivables, including other financial receivables, as at the end of the reporting
+The maturities of trade receivables, including other financial receivables, as at the end of the reporting period were as follows:
 
-period were as follows:
+**Maturity analysis of receivables**
 
-Maturity analysis of receivables
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---|---|
+| Not yet due | 38,893 | 48,767 |
+| Less than 30 days past due | 870 | 358 |
+| Between 30 and 89 days past due | 565 | 74 |
+| More than 90 days past due | 0 | 1 |
+| | 40,328 | 49,200 |
 
-Cash and cash equivalents relate to bank balances
-and short-term investments in the form of
-overnight and time deposits. Borussia Dortmund
-only deposits money at banks with investment
-grade ratings. Furthermore, the creditworthiness
-of the banks is regularly monitored on the basis
-of credit default swaps (CDS).
+Cash and cash equivalents relate to bank balances and short-term investments in the form of overnight and time deposits. Borussia Dortmund only deposits money at banks with investment grade ratings. Furthermore, the creditworthiness of the banks is regularly monitored on the basis of credit default swaps (CDS).
 
-30 June 2021
+Due to the short investment term and the creditworthiness of the banks, cash and cash equivalents are subject to a low level of credit risk. Thus, as in the previous year, no material loss allowances had been recognised.
 
-Due to the short investment term and the
-creditworthiness of the banks, cash and cash
-equivalents are subject to a low level of credit risk.
-Thus, as in the previous year, no material loss
-allowances had been recognised.
+The table below contains information on the credit risk and the expected credit losses according to the classes of receivables defined by Borussia Dortmund as at 30 June 2021:
 
-The table below contains information on the credit
-risk and the expected credit losses according to the
-classes of receivables defined by Borussia
+**30 June 2021**
 
-Dortmund as at 30 June 2021:
+| EUR '000 | Gross carrying (EUR '000) | Default rate (%) | Expected credit losses (EUR'000) |
+|---|---|---|---|
+| Receivables from transfer deals | 17,584 | 0.08 | 14 |
+| Other trade receivables | 15,416 | 0.08 | 12 |
+| **Total** | **33,000** | | **26** |
 
-30 June 2020
+**30 June 2020**
 
-(27) Exchange rate risk
+| EUR '000 | Gross carrying (EUR '000) | Default rate (%) | Expected credit losses (EUR'000) |
+|---|---|---|---|
+| Receivables from transfer deals | 24,103 | 0.06 | 14 |
+| Other trade receivables | 14,008 | 0.06 | 9 |
+| **Total** | **38,111** | | **23** |
 
-As at 30 June 2021, the Group had financial
-liabilities amounting to GBP 10,000 thousand that
-are exposed to exchange rate risk. In order to fully
-hedge the currency risk, EUR/GBP currency
-forwards with matching maturities and a notional
-volume of GBP 10,000 thousand have been entered
-into, which are not part of an IFRS 9 hedge
-accounting relationship and are therefore
+**(27) Exchange rate risk**
 
-accounted for on a stand-alone basis.
+As at 30 June 2021, the Group had financial liabilities amounting to GBP 10,000 thousand that are exposed to exchange rate risk. In order to fully hedge the currency risk, EUR/GBP currency forwards with matching maturities and a notional volume of GBP 10,000 thousand have been entered into, which are not part of an IFRS 9 hedge accounting relationship and are therefore accounted for on a stand-alone basis.
 
-A strengthening (weakening) of the pound sterling
-(GBP) against the euro (EUR) by +10% (-10%) would
-not have any material effect on the statement of
-comprehensive income as at 30 June 2021, as the
-changes in value of the financial liabilities and the
-currency forwards offset each other in the
-
-statement of comprehensive income.
+A strengthening (weakening) of the pound sterling (GBP) against the euro (EUR) by +10% (-10%) would not have any material effect on the statement of comprehensive income as at 30 June 2021, as the changes in value of the financial liabilities and the currency forwards offset each other in the statement of comprehensive income.
 
 213
 
@@ -15662,261 +12969,237 @@ Kommanditgesellschaft auf Aktien, Dortmund
 
 214
 
-(28) Interest rate risk
+**(28) Interest rate risk**
 
-As in the previous year, Borussia Dortmund's portfolio fair value through profit or loss are subject to interest
-only included non-derivative financial instruments rate risk. Please refer to the disclosures on
-bearing fixed interest as at 30 June 2021. Of those, receivables intended for factoring and measured at
-only the financial instruments that are measured at fair value in Note 31.
+As in the previous year, Borussia Dortmund's portfolio only included non-derivative financial instruments bearing fixed interest as at 30 June 2021. Of those, only the financial instruments that are measured at fair value through profit or loss are subject to interest rate risk. Please refer to the disclosures on receivables intended for factoring and measured at fair value in Note 31.
 
-Carrying amounts of non-derivative interest-bearing financial instruments
+**Carrying amounts of non-derivative interest-bearing financial instruments**
 
-(29) Net gains/losses
+| EUR '000 | 30/06/2021 Fixed interest | 30/06/2021 Variable interest | 30/06/2020 Fixed interest | 30/06/2020 Variable interest |
+|---|---|---|---|---|
+| Financial assets, receivables and other financial receivables | 40,440 | 0 | 49,607 | 0 |
+| Financial liabilities from leases | 21,060 | 0 | 24,404 | 0 |
 
-The net gains and losses from financial instruments recognition and reversal of impairment write-downs,
-presented below comprise measurement gains and interest and all other earnings impacts from financial
-losses, premium and discount amortisation, the instruments.
+**(29) Net gains/losses**
 
-Net gains and losses from financial instruments
+The net gains and losses from financial instruments presented below comprise measurement gains and losses, premium and discount amortisation, the recognition and reversal of impairment write-downs, interest and all other earnings impacts from financial instruments.
 
-Measurement category in accordance with IFRS 9
+**Net gains and losses from financial instruments**
 
+**Measurement category in accordance with IFRS 9**
+
+| (EUR '000) | 2020/2021 | 2019/2020 |
+|---|---|---|
+| **Financial assets measured at amortised cost** | **-13** | **-3,276** |
+| Of which net interest expense/income | -13 | -1,142 |
+| **Financial assets measured at fair value through profit or loss** | **252** | **-115** |
+| Of which net interest expense/income | 252 | -115 |
+| **Financial liabilities measured at amortised cost** | **-1,379** | **-2,187** |
+| Of which net interest expense/income | -1,379 | -2,187 |
+| **Net gains/losses from financial instruments** | **-1,140** | **-5,578** |
+| Of which net interest expense/income | -1,140 | -3,444 |
 
 --- pág. 215 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-(30) Liquidity risk
+**(30) Liquidity risk**
 
-The following table shows the contractually arranged undiscounted payments of interest and principal in
-respect of financial liabilities. Whenever a right of termination exists, the figures are reported as at the
+The following table shows the contractually arranged undiscounted payments of interest and principal in respect of financial liabilities. Whenever a right of termination exists, the figures are reported as at the earliest possible termination date.
 
-earliest possible termination date.
+**Maturities of contractual cash flows from financial liabilities in 2021**
 
-Maturities of contractual cash flows from financial liabilities in 2021
+| EUR '000 | Lease liabilities | Trade and other financial liabilities | Total |
+|---|---|---|---|
+| 2021/2022 | 4,931 | 83,360 | 88,291 |
+| 2022/2023 | 4,939 | 37,052 | 41,991 |
+| 2023/2024 | 2,846 | 302 | 3,148 |
+| 2024/2025 | 1,873 | 52 | 1,925 |
+| 2025/2026 | 1,448 | 52 | 1,500 |
+| 2026 and beyond | 7,763 | 0 | 7,763 |
+| | 23,800 | 120,818 | 144,618 |
 
-Maturities of contractual cash flows from financial liabilities in 2020
+**Maturities of contractual cash flows from financial liabilities in 2020**
+
+| EUR '000 | Lease liabilities | Trade and other financial liabilities | Total |
+|---|---|---|---|
+| 2020/2021 | 5,135 | 67,432 | 72,567 |
+| 2021/2022 | 4,670 | 40,150 | 44,820 |
+| 2022/2023 | 4,753 | 27,137 | 31,890 |
+| 2023/2024 | 2,694 | 2,340 | 5,034 |
+| 2024/2025 | 1,769 | 0 | 1,769 |
+| 2025 and beyond | 8,569 | 0 | 8,569 |
+| | 27,590 | 137,059 | 164,649 |
 
 215
 
 --- pág. 216 ---
 
-BORUSSIA DORTMUND GmbH & Co.
-Kommanditgesellschaft auf Aktien, Dortmund
+**BORUSSIA DORTMUND GmbH & Co.**
+**Kommanditgesellschaft auf Aktien, Dortmund**
 
 216
 
-(31) Fair values of financial instruments by class and category
+***(31)* Fair values of financial instruments by class and category**
 
-The table below provides a reconciliation of the items of the statement of financial position and the
+The table below provides a reconciliation of the individual classes and categories of IFRS 9 to the items of the statement of financial position and the fair values as at 30 June 2021:
 
-individual classes and categories of IFRS 9 to the fair values as at 30 June 2021:
+**Measurement category in accordance with IFRS 9**
 
-Measurement category in accordance with IFRS 9
+| EUR '000 | Carrying amount 30/06/2021 | Fair value 30/06/2021 |
+|---|---:|---:|
+| **ASSETS** | | |
+| **At amortised cost** | | |
+| Non-current financial assets | 27 | 27 |
+| Non-current trade and other receivables | 5,775 | 5,775 |
+| Current trade and other receivables | 29,936 | 29,936 |
+| Cash and cash equivalents | 1,725 | 1,725 |
+| **At fair value through profit or loss** | | |
+| Receivables intended for factoring | 4,617 | 4,617 |
+| **Total** | **42,080** | **42,080** |
 
-Measurement category in accordance with IFRS 9
+**Measurement category in accordance with IFRS 9**
 
+| EUR '000 | Carrying amount 30/06/2021 | Fair value 30/06/2021 |
+|---|---:|---:|
+| **LIABILITIES** | | |
+| **At amortised cost** | | |
+| Other non-current financial liabilities | 208 | 208 |
+| Non-current lease liabilities | 16,819 | n/a |
+| Non-current trade payables | 37,250 | 37,250 |
+| Current financial liabilities | 56,900 | 56,900 |
+| Current lease liabilities | 4,241 | n/a |
+| Current trade payables | 64,103 | 64,103 |
+| Other current financial liabilities | 33,234 | 33,234 |
+| **Total** | **212,755** | **191,695** |
 
 --- pág. 217 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
-
-Measurement category in accordance with IFRS 9
-
-Measurement category in accordance with IFRS 9
-
-Any necessary transfers between the levels of the
-fair value hierarchy take place as atthe end of the
-financial year in which the event triggering them
-occurs. There were no reclassifications in the
-current financial year. The fair value of receivables
-earmarked for factoring is assigned to level 3 and
-the fair value of all other financial instruments
-
-specified above is assigned to level 2.
-
-Due to their short residual terms, the carrying
-
-amounts reported for current trade receivables
-
-and payables and cash are roughly equivalent to
-
-their fair values.
-
-Non-current trade receivables and liabilities are
-discounted to present value and accrue interest. In
-these cases, the carrying amounts largely
-
-correspond to fair value.
-
-Receivables that can potentially be sold as part of
-factoring are recognised at fair value through profit
-
-or loss on the basis of the business model in
 
 217
 
+**Measurement category in accordance with IFRS 9**
+
+| EUR '000 | Carrying amount 30/06/2020 | Fair value 30/06/2020 |
+|---|---:|---:|
+| **ASSETS** | | |
+| **At amortised cost** | | |
+| Non-current financial assets | 32 | 32 |
+| Non-current trade and other receivables | 3,565 | 3,565 |
+| Current trade and other receivables | 36,520 | 36,520 |
+| Cash and cash equivalents | 3,317 | 3,317 |
+| **At fair value through profit or loss** | | |
+| Receivables intended for factoring | 9,115 | 9,115 |
+| **Total** | **52,549** | **52,549** |
+
+**Measurement category in accordance with IFRS 9**
+
+| EUR '000 | Carrying amount 30/06/2020 | Fair value 30/06/2020 |
+|---|---:|---:|
+| **LIABILITIES** | | |
+| **At amortised cost** | | |
+| Other non-current financial liabilities | 0 | 0 |
+| Non-current lease liabilities | 20,054 | n/a |
+| Non-current trade payables | 69,627 | 69,627 |
+| Other trade payables | 8,031 | 8,031 |
+| Current lease liabilities | 4,350 | n/a |
+| Current trade payables | 67,432 | 67,432 |
+| Other current financial liabilities | 39,115 | 39,115 |
+| **Total** | **208,609** | **184,205** |
+
+Any necessary transfers between the levels of the fair value hierarchy take place as at the end of the financial year in which the event triggering them occurs. There were no reclassifications in the current financial year. The fair value of receivables earmarked for factoring is assigned to level 3 and the fair value of all other financial instruments specified above is assigned to level 2.
+
+Due to their short residual terms, the carrying amounts reported for current trade receivables and payables and cash are roughly equivalent to their fair values.
+
+Non-current trade receivables and liabilities are discounted to present value and accrue interest. In these cases, the carrying amounts largely correspond to fair value.
+
+Receivables that can potentially be sold as part of factoring are recognised at fair value through profit or loss on the basis of the business model in
+
 --- pág. 218 ---
 
-BORUSSIA DORTMUND GmbH & Co.
-Kommanditgesellschaft auf Aktien, Dortmund
+**BORUSSIA DORTMUND GmbH & Co.**
+**Kommanditgesellschaft auf Aktien, Dortmund**
 
 218
 
-accordance with the requirements of IFRS 9. The
-fair value is measured by discounting the cash
-flows. The measurement models take into account
-the present value of the expected payments,
-discounted using a risk-adjusted discount rate.
-Borussia Dortmund regularly receives an
+accordance with the requirements of IFRS 9. The fair value is measured by discounting the cash flows. The measurement models take into account the present value of the expected payments, discounted using a risk-adjusted discount rate. Borussia Dortmund regularly receives an individually-calculated discount rate from the factor (30 June 2021: 2.65%). Thus, the fair value would increase (decrease) at the same rate if the discount rate were lower (higher). Since the changes in fair value are recognised in the income statement, the table below presents the effects on earnings as at the end of the reporting period:
 
-individually-calculated discount rate from the factor
+| EUR '000 | |
+|---|---:|
+| Carrying amount of receivables intended for factoring (1 July 2020) | 9,115 |
+| Additions | 0 |
+| Disposals | -4,750 |
+| Gains/losses recognised through profit or loss | 252 |
+| **Carrying amount of receivables intended for factoring (30 June 2021)** | **4,617** |
 
-(30 June 2021: 2.65%). Thus, the fair value would
-increase (decrease) atthe same rate ifthe discount
-rate were lower (higher). Since the changes in fair
-value are recognised in the Income statement, the
-table below presents the effects on earnings as at
+The fair value of other financial assets and liabilities is measured using the discounted cash flow valuation technique. The discount rates used were taken from the "Yields on listed Federal securities" as published by the Bundesbank at the end of the reporting period, plus a risk premium. The discount rates valid at the end of the reporting period had matching maturities and formed the basis of the valuation model.
 
-the end of the reporting period:
+***(32)* Earnings per share**
 
-The fair value of other financial assets and
+Earnings per share are calculated in accordance with IAS 33 (Earnings Per Share) by dividing the net profit or loss for the period attributable to the shareholders of the parent by the weighted average number of shares outstanding. Earnings per share relate only to shares in the parent company. Since there are no potential ordinary shares, basic and diluted earnings per share are the same.
 
-liabilities is measured using the discounted cash
-flow valuation technique. The discount rates used
-were taken from the "Yields on listed Federal
-securities" as published by the Bundesbank atthe
+***(33)* Transactions with related parties**
 
-end of the reporting period, plus a risk premium.
+The general partner in Borussia Dortmund GmbH & Co. KGaA is Borussia Dortmund Geschäftsführungs-GmbH. The latter is responsible for the management and legal representation of Borussia Dortmund GmbH & Co. KGaA. The power to appoint and remove members of staff thus rests with BV. Borussia 09 e.V., Dortmund, in its capacity as the sole shareholder in Borussia Dortmund Geschäftsführungs-GmbH. Both Borussia Dortmund Geschäftsführungs-GmbH and BV. Borussia 09 e.V. Dortmund, as well as all companies associated therewith hence are deemed to be related parties in accordance with IAS 24.
 
-(32) Earnings per share
-
-Earnings per share are calculated in accordance
-with IAS 33 (Earnings Per Share) by dividing the net
-profit or loss for the period attributable to the
-
-shareholders ofthe parent by the weighted average
-
-(33) Transactions with related parties
-
-The general partner in Borussia Dortmund GmbH
-& Co. KGaA is Borussia Dortmund Geschäfts-
-führungs-GmbH. The latter is responsible for the
-management and legal representation of Borussia
-Dortmund GmbH & Co. KGaA. The power to appoint
-and remove members of staff thus rests with BV.
-Borussia 09 e.V., Dortmund, in its capacity as
-the sole shareholder in Borussia Dortmund
-
-Geschäftsführungs-GmbH. Both Borussia Dortmund
-
-The discount rates valid atthe end ofthe reporting
-period had matching maturities and formed the
-
-basis of the valuation model.
-
-number of shares outstanding. Earnings per share
-relate only to shares in the parent company. Since
-there are no potential ordinary shares, basic and
-
-diluted earnings per share are the same.
-
-Geschäftsführungs-GmbH and BV. Borussia 09
-e.V. Dortmund, as well as all companies associated
-therewith hence are deemed to be related parties
-in accordance with IAS 24.
-
-Please refer to Notes 37 and 39 for further
-disclosures on the Supervisory Board of Borussia
-Dortmund GmbH & Co. KGaA and the management
-of BVB Geschäftsführungs-GmbH.
+Please refer to Notes 37 and 39 for further disclosures on the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA and the management of BVB Geschäftsführungs-GmbH.
 
 --- pág. 219 ---
 
-Related Party Disclosures
-
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-EUR '000
-
-2020/2021 2019/2020
-
-Transactions with BV. Borussia 09 e.V. Dortmund
-
-Rental income 291 329
-
-Income from other services 187 411
-
-Income from ticket sales 0 104
-Transactions with Borussia Dortmund Geschäftsführungs-GmbH
-
-Expense from costs recharged 4,127 3,917
-
-of which from executive remuneration falling due 3,818 3,588
-Transactions with Orthomed GmbH
-
-Expense from other services 322 322
-
-EUR '000
-
-30/06/2021 30/06/2020
-
-Other current and non-current assets
-
-Intercompany account with BV. Borussia 09 e.V. Dortmund 63 87
-
-Other current liabilities
-
-Intercompany account with
-Borussia Dortmund Geschäftsführungs-GmbH
-
-2,126 1,933
-
-In addition, transactions were entered into with
-members of the Supervisory Board of Borussia
-Dortmund GmbH & Co. KGaA and the management
-and Advisory Board of BVB Geschäftsführungs-
-
-(34) Other financial obligations
-
-GmbH (merchandising, tickets, sponsorship, events
-and travel services) amounting to EUR 102
-thousand (previous year: EUR 213 thousand). These
-
-transactions were conducted at arm's length.
-
-EUR '000 Due after
-less than 1-5 more than
-30/06/2021 Total 1 year years 5 years
-Rental and lease payments 893 582 271 40
-Marketing fees 38,700 7,259 31,441 0
-Other obligations 2,986 844 2,007 135
-42,579 8,685 33,719 175
-Purchase commitments 16,000 5,500 10,500 0
-
-In financial year 2020/2021, EUR 1,060 thousand in rental and lease payments were expensed for leases
-
-within the meaning of IFRS 16.6.
-
-EUR '000 Due after
-less than 1-5 more than
-
-30/06/2020 Total 1 year years 5 years
-Rental and lease payments 1,301 536 700 65
-Marketing fees 45,410 6,075 30,587 8,748
-Other obligations 3,301 840 2,321 140
-
-50,012 7,451 33,608 8,953
-Purchase commitments 0 0 0 0
-
-In financial year 2019/2020, EUR 897 thousand in rental and lease payments were expensed for leases
-
-within the meaning of IFRS 16.6.
-
 219
+
+**Related Party Disclosures**
+
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---:|---:|
+| **Transactions with BV. Borussia 09 e.V. Dortmund** | | |
+| Rental income | 291 | 329 |
+| Income from other services | 187 | 411 |
+| Income from ticket sales | 0 | 104 |
+| **Transactions with Borussia Dortmund Geschäftsführungs-GmbH** | | |
+| Expense from costs recharged | 4,127 | 3,917 |
+| of which from executive remuneration falling due | 3,818 | 3,588 |
+| **Transactions with Orthomed GmbH** | | |
+| Expense from other services | 322 | 322 |
+
+| EUR '000 | 30/06/2021 | 30/06/2020 |
+|---|---:|---:|
+| **Other current and non-current assets** | | |
+| Intercompany account with BV. Borussia 09 e.V. Dortmund | 63 | 39 |
+| **Other current liabilities** | | |
+| Intercompany account with Borussia Dortmund Geschäftsführungs-GmbH | 2,126 | 1,933 |
+
+In addition, transactions were entered into with members of the Supervisory Board of Borussia Dortmund GmbH & Co. KGaA and the management and Advisory Board of BVB Geschäftsführungs-GmbH (merchandising, tickets, sponsorship, events and travel services) amounting to EUR 102 thousand (previous year: EUR 213 thousand). These transactions were conducted at arm's length.
+
+***(34)* Other financial obligations**
+
+| EUR '000 | | Due after | | |
+|---|---:|---:|---:|---:|
+| **30/06/2021** | **Total** | **less than 1 year** | **1–5 years** | **more than 5 years** |
+| Rental and lease payments | 893 | 582 | 271 | 40 |
+| Marketing fees | 38,700 | 7,259 | 31,441 | 0 |
+| Other obligations | 2,986 | 844 | 2,007 | 135 |
+| | **42,579** | **8,685** | **33,719** | **175** |
+| Purchase commitments | 16,000 | 5,500 | 10,500 | 0 |
+
+In financial year 2020/2021, EUR 1,060 thousand in rental and lease payments were expensed for leases within the meaning of IFRS 16.6.
+
+| EUR '000 | | Due after | | |
+|---|---:|---:|---:|---:|
+| **30/06/2020** | **Total** | **less than 1 year** | **1–5 years** | **more than 5 years** |
+| Rental and lease payments | 1,301 | 536 | 700 | 65 |
+| Marketing fees | 45,410 | 6,075 | 30,587 | 8,748 |
+| Other obligations | 3,301 | 840 | 2,321 | 140 |
+| | **50,012** | **7,451** | **33,608** | **8,953** |
+| Purchase commitments | 0 | 0 | 0 | 0 |
+
+In financial year 2019/2020, EUR 897 thousand in rental and lease payments were expensed for leases within the meaning of IFRS 16.6.
 
 --- pág. 220 ---
 
@@ -15990,56 +13273,53 @@ stage will be played on 14/15 September 2021.
 
 --- pág. 221 ---
 
-(37) Management
-
-Management remuneration
-
-The members of management received remuneration
-within the meaning of IAS 24.17 (a) in the 2020/2021
-
-financial year.
-
-The management did not receive any performance-
-based remuneration for the 2020/2021 financial
-
-year or the previous year.
-
-(38) Auditors' fees
-
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
 
-EUR 23 thousand in employer contributions to the
+221
 
-German statutory retirement pension system were
+***(37)* Management**
 
-incurred (previous year: EUR 23 thousand).
+**Management remuneration**
+
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---:|---:|
+| **Dipl.-Kfm. Hans-Joachim Watzke (Chairman)** | | |
+| Fixed components | | |
+| Fixed remuneration | 1,905 | 1,802 |
+| Other remuneration | 41 | 40 |
+| **Dipl.-Kfm. Thomas Treß** | | |
+| Fixed components | | |
+| Fixed remuneration | 905 | 860 |
+| Other remuneration | 61 | 72 |
+| **Carsten Cramer** | | |
+| Fixed components | | |
+| Fixed remuneration | 873 | 864 |
+| Other remuneration | 33 | 42 |
+| | **3,818** | **3,680** |
+
+The members of management received remuneration within the meaning of IAS 24.17 (a) in the 2020/2021 financial year.
+
+The management did not receive any performance-based remuneration for the 2020/2021 financial year or the previous year.
+
+EUR 23 thousand in employer contributions to the German statutory retirement pension system were incurred (previous year: EUR 23 thousand).
+
+***(38)* Auditors' fees**
 
 These were reported in accordance with the classification set out in IDW AcP HFA 36.
 
-KPMGAG Wirtschaftsprüfungsgesellschaft audited
-the annual and consolidated financial statements
-of Borussia Dortmund GmbH & Co. KGaA and
-conducted further statutory and voluntary audits
-at subsidiaries. The auditors reviewed the interim
-consolidated financial statements and carried out
-mandatory audits and reviews as part ofthe DFL
-licensing procedure pursuant to the DFL licensing
+| EUR '000 | 2020/2021 | 2019/2020 |
+|---|---:|---:|
+| Audit services | 277 | 256 |
+| Other audit-related work | 50 | 50 |
+| Tax advisory services | 1 | 2 |
+| Other services | 0 | 2 |
 
-regulations. KPMG also provided tax advisory
+KPMG AG Wirtschaftsprüfungsgesellschaft audited the annual and consolidated financial statements of Borussia Dortmund GmbH & Co. KGaA and conducted further statutory and voluntary audits at subsidiaries. The auditors reviewed the interim consolidated financial statements and carried out mandatory audits and reviews as part of the DFL licensing procedure pursuant to the DFL licensing regulations. KPMG also provided tax advisory services covering advice and assessment in individual cases and audited the separate non-financial Group report.
 
-services covering advice and assessment in
-individual cases and audited the separate
-non-financial Group report.
+The other advisory services relate to confirmations in connection with licensing procedures.
 
-The other advisory services relate to confirmations
-in connection with licensing procedures.
-Advisory services relating to the General Data
-Protection Regulation were reported under other
-
-services in the previous year.
-
-221
+Advisory services relating to the General Data Protection Regulation were reported under other services in the previous year.
 
 --- pág. 222 ---
 
@@ -16113,129 +13393,53 @@ Ismaning
 
 --- pág. 223 ---
 
-CONSOLIDATED FINANCIAL STATEMENTS
+**CONSOLIDATED FINANCIAL STATEMENTS**
 for the period from 1 July 2020 to 30 June 2021
-
-(40) Exercise of the exemption option pursuant to &$ 264 (3) HGB
-
-The preparation of consolidated financial statements effectively exempts BVB Merchandising GmbH and
-
-BVB Event & Catering GmbH from the obligation to prepare annual financial statements within the meaning
-
-of 8 264 (3) HGB.
-
-(41) Notifiable shareholdings
-
-(under 8 160 (1) no. 8 AktG in conjunction with 8 33 (1) and (2) WpHG]
-
-Ofthe shareholdings in our Company, the following
-were notified to us pursuantto 8 33 (1) ofthe German
-Securities Trading Act (Wertpapierhandelsgesetz,
-"WpH6") and published with the following content
-pursuant to $ 40 (1) WpHG in financial year
-2020/2021:
-
-On 26 February 2021, Mr Francois Henri Joseph
-Pinault and Mr Francois Jean-Henri Pinault notified
-us that their voting rights in Borussia Dortmund
-GmbH & Co. KGaA amounted to 0.0% as at 16 May
-2018 (0 voting rights or shares); that their notification
-was submitted due to the discontinuation of the
-jointly attributed controlling position in relation to
-PUMA SE, as a consequence of which no voting
-rights stemming from shares in Borussia Dortmund
-GmbH & Co. KGaA were attributable to Kering S.A.,
-
-Artemis S.A. or Financiere Pinault S.C.A.
-
-PUMA SE, Herzogenaurach, Germany, notified us
-on 17 February 2021, that its share of voting rights
-in Borussia Dortmund GmbH & Co. KGaA amounted
-to 4.99% on 16 February 2021 (4,599,900 voting
-rights or shares) and that all of their voting rights
-were held directly by PUMA SE in accordance with
-8 33 WpHG.
-
-Mr Ralph Dommermuth notified us on 8 February
-
-2021 that his voting interest in Borussia Dortmund
-
-GmbH & Co. KGaA amounted to 4.99% on 8 February
-
-2021 (4,599,000 voting rights/shares) and that all of
-
-these voting rights were attributable to him (Mr
-
-Ralph Dommermuth) pursuant to $ 34 WpHG via
-
-Ralph Dommermuth Beteiligungen GmbH, and
-
-furthermore that the chain of subsidiaries is as
-
-follows, beginning with the ultimate controlling
-
-person or entity:
-
-- Ralph Dommermuth
-
-- Ralph Dommermuth Verwaltungs GmbH
-
-- Ralph Dommermuth GmbH & Co. KG
-Beteiligungsgesellschaft
-
-- Ralph Dommermuth Beteiligungen GmbH with
-
-a voting interest of 4.99%
 
 223
 
+***(40)* Exercise of the exemption option pursuant to § 264 (3) HGB**
+
+The preparation of consolidated financial statements effectively exempts BVB Merchandising GmbH and BVB Event & Catering GmbH from the obligation to prepare annual financial statements within the meaning of § 264 (3) HGB.
+
+***(41)* Notifiable shareholdings**
+(under § 160 (1) no. 8 AktG in conjunction with § 33 (1) and (2) WpHG)
+
+Of the shareholdings in our Company, the following were notified to us pursuant to § 33 (1) of the German Securities Trading Act (*Wertpapierhandelsgesetz*, "WpHG") and published with the following content pursuant to § 40 (1) WpHG in financial year 2020/2021:
+
+On 26 February 2021, Mr François Henri Joseph Pinault and Mr François Jean-Henri Pinault notified us that their voting rights in Borussia Dortmund GmbH & Co. KGaA amounted to 0.0% as at 16 May 2018 (0 voting rights or shares); that their notification was submitted due to the discontinuation of the jointly attributed controlling position in relation to PUMA SE, as a consequence of which no voting rights stemming from shares in Borussia Dortmund GmbH & Co. KGaA were attributable to Kering S.A., Artémis S.A. or Financière Pinault S.C.A.
+
+PUMA SE, Herzogenaurach, Germany, notified us on 17 February 2021, that its share of voting rights in Borussia Dortmund GmbH & Co. KGaA amounted to 4.99% on 16 February 2021 (4,599,900 voting rights or shares) and that all of their voting rights were held directly by PUMA SE in accordance with § 33 WpHG.
+
+Mr Ralph Dommermuth notified us on 8 February 2021 that his voting interest in Borussia Dortmund GmbH & Co. KGaA amounted to 4.99% on 8 February 2021 (4,599,000 voting rights/shares) and that all of these voting rights were attributable to him (Mr Ralph Dommermuth) pursuant to § 34 WpHG via Ralph Dommermuth Beteiligungen GmbH, and furthermore that the chain of subsidiaries is as follows, beginning with the ultimate controlling person or entity:
+
+- Ralph Dommermuth
+- Ralph Dommermuth Verwaltungs GmbH
+- Ralph Dommermuth GmbH & Co. KG Beteiligungsgesellschaft
+- Ralph Dommermuth Beteiligungen GmbH with a voting interest of 4.99%
+
 --- pág. 224 ---
 
-BORUSSIA DORTMUND GmbH & Co.
-Kommanditgesellschaft auf Aktien, Dortmund
+**BORUSSIA DORTMUND GmbH & Co.**
+**Kommanditgesellschaft auf Aktien, Dortmund**
 
 224
 
-(42) Shareholdings by members
-of governing bodies
+***(42)* Shareholdings by members of governing bodies**
 
-As at 30 June 2021, one member of management
-held 7,045 no-par value shares in the Company. As
-at the same date, the members of the Supervisory
-Board held a total of 8,602,009 no-par value shares.
-Members of management and the Supervisory Board
-hold a total of 8,609,054 no-par-value shares, which
-corresponds to more than 1% of the shares issued
-by Borussia Dortmund GmbH & Co. KGaA.
+As at 30 June 2021, one member of management held 7,045 no-par value shares in the Company. As at the same date, the members of the Supervisory Board held a total of 8,602,009 no-par value shares. Members of management and the Supervisory Board hold a total of 8,609,054 no-par-value shares, which corresponds to more than 1% of the shares issued by Borussia Dortmund GmbH & Co. KGaA.
 
-(43) Corporate Governance
+***(43)* Corporate Governance**
 
-The management and Supervisory Board of
-Borussia Dortmund GmbH & Co. KGaA issued the
-Declaration of Conformity with the German
-Corporate Governance Code required by 8 161 ofthe
-German Stock Corporation Act (Aktiengesetz, "AktG")
-on 7 September 2020 and made it permanently
-available to shareholders on the website at
-https://aktie.bvb.de/eng/
-
-Corporate-Governance/Statement-of-Compliance.
+The management and Supervisory Board of Borussia Dortmund GmbH & Co. KGaA issued the Declaration of Conformity with the German Corporate Governance Code required by § 161 of the German Stock Corporation Act (*Aktiengesetz*, "AktG") on 7 September 2020 and made it permanently available to shareholders on the website at *https://aktie.bvb.de/eng/Corporate-Governance/Statement-of-Compliance.*
 
 Dortmund, 9 August 2021
-
 Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien
-
 Borussia Dortmund Geschäftsführungs-GmbH
 
-Hans-Joachim Watzke
-Managing Director (Chairman)
-
-Thomas Treß
-Managing Director
-
-Carsten Cramer
-
-Managing Director
+[firma manuscrita] Hans-Joachim Watzke, Managing Director (Chairman)
+[firma manuscrita] Thomas Treß, Managing Director
+[firma manuscrita] Carsten Cramer, Managing Director
 
 --- pág. 225 ---
 
@@ -16726,105 +13930,32 @@ or business activities within the Group to express
 
 --- pág. 230 ---
 
-BORUSSIA DORTMUND GmbH & Co.
-Kommanditgesellschaft auf Aktien, Dortmund
+**BORUSSIA DORTMUND GmbH & Co.**
+**Kommanditgesellschaft auf Aktien, Dortmund**
 
 230
 
-opinions on the consolidated financial statements
-and on the group management report. We are
-responsible for the direction, supervision and
-performance of the group audit. We remain solely
-responsible for our opinions.
+opinions on the consolidated financial statements and on the group management report. We are responsible for the direction, supervision and performance of the group audit. We remain solely responsible for our opinions.
 
-- Evaluate the consistency of the group
-management report with the consolidated
-financial statements, its conformity with
-[German] law, and the view of the Group's position
-it provides.
+– Evaluate the consistency of the group management report with the consolidated financial statements, its conformity with [German] law, and the view of the Group's position it provides.
 
--  Perform audit procedures on the prospective
-information presented by management in the
-group management report. On the basis of
-sufficient appropriate audit evidence we evaluate,
-in particular, the significant assumptions used
-by management as a basis for the prospective
-information, and evaluate the proper derivation
-of the prospective information from these
-assumptions. We do not express a separate
-opinion on the prospective information and on
-the assumptions used as a basis. There is a
-substantial unavoidable risk that future events
-will differ materially from the prospective
+– Perform audit procedures on the prospective information presented by management in the group management report. On the basis of sufficient appropriate audit evidence we evaluate, in particular, the significant assumptions used by management as a basis for the prospective information, and evaluate the proper derivation of the prospective information from these assumptions. We do not express a separate opinion on the prospective information and on the assumptions used as a basis. There is a substantial unavoidable risk that future events will differ materially from the prospective information.
 
-information.
+We communicate with those charged with governance regarding, among other matters, the planned scope and timing of the audit and significant audit findings, including any significant deficiencies in internal control that we identify during our audit.
 
-We communicate with those charged with
-governance regarding, among other matters, the
-planned scope and timing ofthe audit and significant
-audit findings, including any significant deficiencies
+We also provide those charged with governance with a statement that we have complied with the relevant independence requirements, and communicate with them all relationships and other matters that may reasonably be thought to bear on our independence, and where applicable, the related safeguards.
 
-in internal control that we identify during our audit.
+From the matters communicated with those charged with governance, we determine those matters that were of most significance in the audit of the consolidated financial statements of the current period and are therefore the key audit matters. We describe these matters in our auditor's report unless law or regulation precludes public disclosure about the matter.
 
-We also provide those charged with governance with
-a statement that we have complied with the relevant
-independence requirements, andcommunicate with
-them all relationships and other matters that may
-reasonably be thought to bear on our Independence,
+**OTHER LEGAL AND REGULATORY REQUIREMENTS**
 
-and where applicable, the related safeguards.
+**Report on the Assurance in accordance with Section 317 (3b) HGB on the Electronic Reproduction of the Consolidated Financial Statements and the Group Management Report Prepared for Publication Purposes**
 
-From the matters communicated with those charged
-with governance, we determine those matters that
-were of most significance in the audit of the
-consolidated financial statements of the current
-period and are therefore the key audit matters. We
-describe these matters in our auditor's report unless
-law or regulation precludes public disclosure about
+We have performed assurance work in accordance with Section 317 (3b) HGB to obtain reasonable assurance about whether the reproduction of the consolidated financial statements and the group management report (hereinafter the "ESEF documents") contained in the file that can be downloaded by the issuer from the electronic client portal with access protection, "05-08-2021-17-35_xbrl_file.zip"; [SHA256-hash value: bf0472ef5c230990 b635e8b8a6e0054a897d24d0761d3f15f997a413bc41 6fea] and prepared for publication purposes complies in all material respects with the requirements of Section 328 (1) HGB for the electronic reporting format ("ESEF format"). In
 
-the matter.
+accordance with German legal requirements, this assurance only extends to the conversion of the information contained in the consolidated financial statements and the group management report into the ESEF format and therefore relates neither to the information contained in this reproduction nor any other information contained in the above-mentioned electronic file.
 
-OTHER LEGAL AND REGULATORY REQUIREMENTS
-
-Report on the Assurance in accordance with Section 317 (3b) HGB on the Electronic
-Reproduction of the Consolidated Financial Statements and the Group Management
-
-Report Prepared for Publication Purposes
-
-We have performed assurance work in
-accordance with Section 317 (3b) HGB to obtain
-reasonable assurance about whether the
-reproduction of the consolidated financial
-statements and the group management report
-(hereinafter the "ESEF documents”) contained in
-the file that can be downloaded by the issuer from
-the electronic client portal with access protection,
-"05-08-2021-17-35_xbrl_file.zip";
-[SHA256-hash value: bf0472ef5c230990
-b635e8b836e00543897d24d0761d3f15f997a413bc41
-öfeal and prepared for publication purposes
-complies in all material respects with the
-requirements of Section 328 (1) HGB for the
-
-electronic reporting format ("ESEF format”). In
-
-accordance with German legal requirements, this
-assurance only extends to the conversion of the
-information contained in the consolidated financial
-statements and the group management report into
-the ESEF format and therefore relates neither to
-the information contained in this reproduction nor
-any other information contained in the
-
-above-mentioned electronic file.
-
-In our opinion, the reproduction ofthe consolidated
-financial statements and the group management
-report contained in the above-mentioned electronic
-file and prepared for publication purposes complies
-in all material respects with the requirements of
-
-Section 328 (1) HGB for the electronic reporting
+In our opinion, the reproduction of the consolidated financial statements and the group management report contained in the above-mentioned electronic file and prepared for publication purposes complies in all material respects with the requirements of Section 328 (1) HGB for the electronic reporting
 
 --- pág. 231 ---
 

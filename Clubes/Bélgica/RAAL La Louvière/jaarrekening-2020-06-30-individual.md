@@ -44,10 +44,9 @@ A6.2,A6.7,A7.1,A 7.2,A8, A9, A 10, A 13, A 14, A 15, A 16, A17,A18,A 19
 
 --- pág. 2 ---
 
-Ce compte annuel ne concerne pas une société soumise aux dispositions du nouveau Code des sociétés et
-associations du 23 mars 2019.
+**Ce compte annuel ne concerne pas une société soumise aux dispositions du nouveau Code des sociétés et associations du 23 mars 2019.**
 
-2131
+2/31
 
 --- pág. 3 ---
 
@@ -411,100 +410,62 @@ Administrateur
 
 --- pág. 7 ---
 
-N° BE 0675.684.677
+N° BE 0675.684.677 — A 2.1
 
-A2.1
-
-CHRISTIAENS Pascal
-
+**CHRISTIAENS** Pascal
 Rue Scoumanne 56
 7110 Houdeng-Goegnies
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-DELIÈRE Dimitri
-
+**DELIÈRE** Dimitri
 Place Omer Musch 1
 7160 Piéton
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-GOREZ Patrick
-
+**GOREZ** Patrick
 rue surmont 7/A
 5060 Sambreville
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-MONOYER Pascal
-
+**MONOYER** Pascal
 rue de la poste 44
 7110 Houdeng-Goegnies
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-RAMPEN Jean-Louis
-
+**RAMPEN** Jean-Louis
 Avenue d'aix la chapelle 1
 4020 Liège
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-TREVI Serge
-
+**TREVI** Serge
 rue de la fonderie 16/B3
 7100 La Louvière
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-MACCHIA Alessandro
-
+**MACCHIA** Alessandro
 Rue Jules Destrée 8
 7100 La Louvière
 BELGIQUE
+Début de mandat: 17-12-2019 — Administrateur
 
-Début de mandat: 17-12-2019
-
-JOIRIS-ROUSSEAUX SPRL (B00194)
-
+**JOIRIS-ROUSSEAUX SPRL** (B00194)
 BE 0450.426.032
 Rue de la Biche 18
 7000 Mons
 BELGIQUE
-
-Début de mandat: 17-12-2019
-
+Début de mandat: 17-12-2019 — Fin de mandat: 17-12-2022 — Commissaire
+Représenté directement ou indirectement par:
+**PRUNEAU** Alexis (A02234)
 Rue de la Biche 18
 7000 Mons
 
-Fin de mandat: 17-12-2022
-Représenté directement ou indirectement par:
-PRUNEAU Alexis (A02234)
-
-Administrateur
-
-Administrateur
-
-Administrateur
-
-Administrateur
-
-Administrateur
-
-Administrateur
-
-Administrateur
-
-Commissaire
-
-7131
-
+7/31
 
 --- pág. 8 ---
 
@@ -549,42 +510,42 @@ mission.
 
 --- pág. 10 ---
 
-N° BE 0675.684.677
+N° BE 0675.684.677 — A 3.1
 
-A 3.1
+**COMPTES ANNUELS**
 
-COMPTES ANNUELS
-BILAN APRES RÉPARTITION
-Ann. Codes Exercice Exercice précédent
-ACTIF
-FRAIS D'ÉTABLISSEMENT 20 1.457 2.185
-ACTIFS IMMOBILISÉS 21/28 1.538.020 1.481.164
-Immobilisations incorporelles 6.1.1 | 21 92.938 142.856
-Immobilisations corporelles 6.1.2 | 22/27 1.367.307 1.260.533
-Terrains et constructions 22 1.007.185 1.067.238
-Installations, machines et outillage 23 97.359 119.829
-Mobilier et matériel roulant 24 49.982 66.266
-Location-financement et droits similaires 25
-Autres immobilisations corporelles 26
-Immobilisations en cours et acomptes versés 27 212.781 7.199
-Immobilisations financières 6.1.3 | 28 77.775 77.775
-ACTIFS CIRCULANTS 29/58 1.623.017 1.193.798
-Créances à plus d'un an 29
-Créances commerciales 290
-Autres créances 291
-Stocks et commandes en cours d'exécution 3 3.881
-Stocks 30/36
-Commandes en cours d'exécution 37 3.381
-Créances à un an au plus 40/41 1.505.739 900.524
-Créances commerciales 40 246.043 418.742
-Autres créances 41 1.259.696 481.782
-Placements de trésorerie 50/53
-Valeurs disponibles 54/58 73.468 259.169
-Comptes de régularisation 490/1 43.809 30.725
-TOTAL DE L'ACTIF 20/58 3.162.493 2.677.147
+**BILAN APRÈS RÉPARTITION**
+
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **ACTIF** | | | | |
+| **FRAIS D'ÉTABLISSEMENT** | | 20 | 1.457 | 2.185 |
+| **ACTIFS IMMOBILISÉS** | | 21/28 | 1.538.020 | 1.481.164 |
+| **Immobilisations incorporelles** | 6.1.1 | 21 | 92.938 | 142.856 |
+| **Immobilisations corporelles** | 6.1.2 | 22/27 | 1.367.307 | 1.260.533 |
+| Terrains et constructions | | 22 | 1.007.185 | 1.067.238 |
+| Installations, machines et outillage | | 23 | 97.359 | 119.829 |
+| Mobilier et matériel roulant | | 24 | 49.982 | 66.266 |
+| Location-financement et droits similaires | | 25 | | |
+| Autres immobilisations corporelles | | 26 | | |
+| Immobilisations en cours et acomptes versés | | 27 | 212.781 | 7.199 |
+| **Immobilisations financières** | 6.1.3 | 28 | 77.775 | 77.775 |
+| **ACTIFS CIRCULANTS** | | 29/58 | 1.623.017 | 1.193.798 |
+| **Créances à plus d'un an** | | 29 | | |
+| Créances commerciales | | 290 | | |
+| Autres créances | | 291 | | |
+| **Stocks et commandes en cours d'exécution** | | 3 | | 3.381 |
+| Stocks | | 30/36 | | |
+| Commandes en cours d'exécution | | 37 | | 3.381 |
+| **Créances à un an au plus** | | 40/41 | 1.505.739 | 900.524 |
+| Créances commerciales | | 40 | 246.043 | 418.742 |
+| Autres créances | | 41 | 1.259.696 | 481.782 |
+| **Placements de trésorerie** | | 50/53 | | |
+| **Valeurs disponibles** | | 54/58 | 73.468 | 259.169 |
+| **Comptes de régularisation** | | 490/1 | 43.809 | 30.725 |
+| **TOTAL DE L'ACTIF** | | 20/58 | 3.162.493 | 2.677.147 |
 
 10/31
-
 
 --- pág. 11 ---
 
@@ -1304,168 +1265,83 @@ Nature des transactions
 
 --- pág. 22 ---
 
-N°
+N° BE 0675.684.677 — A 6.8
 
-BE 0675.684.677 A 6.8
-
-RÈGLES D'ÉVALUATION
+**RÈGLES D'ÉVALUATION**
 
 Règles d'évaluation au 30/06/2020
-
 RAAL S.C.R.L.
-
 Rue des chasseurs 155 - 7100 La Louvière
-
 T.V.A.: BE 0675.684.677 - RPM Mons
 
-Les règles d'évaluation sont établies conformément aux dispositions du chapitre II de l'arrêté royal du 8 octobre 1976 relatif aux comptes
-annuels des entreprises.
+Les règles d'évaluation sont établies conformément aux dispositions du chapitre II de l'arrêté royal du 8 octobre 1976 relatif aux comptes annuels des entreprises.
 
 1.1. FRAIS D'ÉTABLISSEMENT/CONSTITUTION
-
-Les frais d'établissement et de constitution sont portés à l'actif et pour leur valeur d'acquisition. Les frais d'établissement font l'objet
-d'amortissements appropriés, au maximum par tranches annuelles de 20 % des sommes réellement dépensées.
+Les frais d'établissement et de constitution sont portés à l'actif et pour leur valeur d'acquisition. Les frais d'établissement font l'objet d'amortissements appropriés, au maximum par tranches annuelles de 20 % des sommes réellement dépensées.
 
 1.2. IMMOBILISATIONS INCORPORELLES
-
 Les immobilisations sont actées pour leur valeur d'acquisition.
-
 Les immobilisations incorporelles sont amorties suivant la méthode de l'amortissement linéaire.
-
-Ces immobilisations font l'objet d'amortissements complémentaires ou exceptionnels lorsque, en raison de leur altération ou de
-
-modifications des circonstances économiques ou technologiques, leur valeur comptable dépasse leur valeur d'utilisation par l'entreprise.
+Ces immobilisations font l'objet d'amortissements complémentaires ou exceptionnels lorsque, en raison de leur altération ou de modifications des circonstances économiques ou technologiques, leur valeur comptable dépasse leur valeur d'utilisation par l'entreprise.
 Plus particulièrement, il y lieu de noter les règles suivantes :
-
 - L'acquisition de Matricule : amortissements en 5 ans selon la méthode linéaire
-
 - Les développements et la mise en place du Site Internet RAAL.BE : amortissements en 2 ans selon la méthode linéaire
-
 - Les Frais de Publicité/lancement de la marque : amortissements en 5 ans selon la méthode linéaire
 
 1.3. IMMOBILISATIONS CORPORELLES
-
-Les immobilisations corporelles sont portées à l'actif du bilan, déduction faite des amortissements, à leur valeurs d'acquisition où leur
-
-valeur d'apport qui comprend les frais accessoires et la TVA non déductible.
-
+Les immobilisations corporelles sont portées à l'actif du bilan, déduction faite des amortissements, à leur valeurs d'acquisition où leur valeur d'apport qui comprend les frais accessoires et la TVA non déductible.
 Les amortissements sont calculés de façon linéaire, à partir de l'année/de la période de la comptabilisation de l'investissement.
-
-Les immobilisations corporelles peuvent faire l'objet d'une réévaluation lorsque la valeur de celles-ci, déterminée en fonction de leur
-utilité
-
-pour l'entreprise, présente un excédent certain et durable par rapport à leur valeur comptable. Plus particulièrement, il y lieu de noter les
-règles suivantes :
-
+Les immobilisations corporelles peuvent faire l'objet d'une réévaluation lorsque la valeur de celles-ci, déterminée en fonction de leur utilité pour l'entreprise, présente un excédent certain et durable par rapport à leur valeur comptable. Plus particulièrement, il y lieu de noter les règles suivantes :
 - Les frais d'installations/aménagements Stade : amortissements en 5 ans selon la méthode linéaire
-
 - Le matériel informatique : amortissements en 2 ans selon la méthode linéaire
-
 - Le matériel pour réception/évènements : amortissement en 1 an
-
 - Le matériel de bureau : amortissements en 5 ans selon la méthode linéaire
-
 - Le matériel roulant : amortissement en 4 ans selon la méthode linéaire
 
 1.4. IMMOBILISATIONS FINANCIÈRES
-
-Lorsqu'elles sont cotées sur un marché suffisamment large ou qu'elles font l'objet d'une valorisation régulière et objective, les
-immobilisations financières sont évaluées à leur valeur d'acquisition ou le cas échéant, d'apport ou à leur valeur de réalisation si cette
-dernière est inférieure à la date de clôture de l'exercice. Si elles ne sont pas cotées, les immobilisations financières font l'objet de
-réductions de valeur en cas de moins-value durable. Plus particulièrement, les obligations, bons de caisse et autres titres à revenus fixes
-font l'objet de réductions de valeur, lorsque leur valeur d'acquisition dépasse leur valeur de remboursement à la date de clôture de
-l'exercice.
+Lorsqu'elles sont cotées sur un marché suffisamment large ou qu'elles font l'objet d'une valorisation régulière et objective, les immobilisations financières sont évaluées à leur valeur d'acquisition ou le cas échéant, d'apport ou à leur valeur de réalisation si cette dernière est inférieure à la date de clôture de l'exercice. Si elles ne sont pas cotées, les immobilisations financières font l'objet de réductions de valeur en cas de moins-value durable. Plus particulièrement, les obligations, bons de caisse et autres titres à revenus fixes font l'objet de réductions de valeur, lorsque leur valeur d'acquisition dépasse leur valeur de remboursement à la date de clôture de l'exercice.
 
 1.5. STOCKS
-
-Les stocks sont évalués à leur valeur d'acquisition sur base d'un inventaire effectué à la date de clôture de l'exercice. Pour la première
-année d'exploitation, les stocks ont été valorisés à un pourcentage des achats de marchandises destinés au Fan-Shop.
+Les stocks sont évalués à leur valeur d'acquisition sur base d'un inventaire effectué à la date de clôture de l'exercice. Pour la première année d'exploitation, les stocks ont été valorisés à un pourcentage des achats de marchandises destinés au Fan-Shop.
 
 1.6. CRÉANCES À PLUS D'UN AN
-
-Les créances sont portées au bilan à leur valeur nominale. Des réductions de valeur appropriées sont actées s'il y a une incertitude quant
-
-au paiement total ou parti el de la créance à l'échéance.
-
-Des réductions de valeur sont également appliquées si la valeur de réalisation des créances est inférieure à leur valeur comptable, à la
-
-date de clôture de l'exercice.
+Les créances sont portées au bilan à leur valeur nominale. Des réductions de valeur appropriées sont actées s'il y a une incertitude quant au paiement total ou parti el de la créance à l'échéance.
+Des réductions de valeur sont également appliquées si la valeur de réalisation des créances est inférieure à leur valeur comptable, à la date de clôture de l'exercice.
 
 1.7. CRÉANCES À UN AN AU PLUS
-
-Les créances sont portées au bilan à leur valeur nominale. Des réductions de valeur appropriées sont actées s'il y a une incertitude quant
-
-au paiement, en tout ou en partie, de la créance au jour de l'échéance. Des réductions de valeur sont également appliquées si la valeur
-
-de réalisation des créances est inférieure à leur valeur comptable à la date du bilan.
+Les créances sont portées au bilan à leur valeur nominale. Des réductions de valeur appropriées sont actées s'il y a une incertitude quant au paiement, en tout ou en partie, de la créance au jour de l'échéance. Des réductions de valeur sont également appliquées si la valeur de réalisation des créances est inférieure à leur valeur comptable à la date du bilan.
 
 1.8. PLACEMENTS DE TRÉSORERIE
-
-Les placements sont évalués à leur valeur d'acquisition ou à leur valeur nominale ou, s'il s'agit de valeurs mobilières, à leur valeur du
-
-marché à la date de clôture des comptes.
+Les placements sont évalués à leur valeur d'acquisition ou à leur valeur nominale ou, s'il s'agit de valeurs mobilières, à leur valeur du marché à la date de clôture des comptes.
 
 1.9. VALEURS DISPONIBLES
-
-Les valeurs disponibles sont évaluées à leur valeur nominale. Si elles sont libérées en monnaies étrangères, elles sont converties au
-
-cours en vigueur à la date de clôture de l'exercice.
+Les valeurs disponibles sont évaluées à leur valeur nominale. Si elles sont libérées en monnaies étrangères, elles sont converties au cours en vigueur à la date de clôture de l'exercice.
 
 1.10. RÉGULARISATION
-
 Les comptes de régularisation sont exprimés à leur valeur nominale.
 
 1.11. PROVISIONS POUR RISQUES ET CHARGES
+Les provisions pour risques et charges sont individualisées en fonction des risques et charges de même nature qu'elles sont appelées à couvrir. Par risques et charges de même nature, il faut entendre les catégories de risques et charges mentionnées à titre exemplatif à l'article 19, alinéa 5 de l'Arrêté Royal du 8 octobre 1976. Les provisions pour risques et charges doivent répondre aux critères de prudence, de sincérité et de bonne foi. Les provisions pour risques et charges doivent être constituées systématiquement sur base des méthodes arrêtées par l'entreprise conformément à l'article 15 de l'arrêté Royal du 8 octobre 1976. Elles ne peuvent dépendre du résultat de l'exercice.
+Il doit être tenu compte de tous les risques prévisibles, des pertes éventuelles et des dépréciations qui ont pris naissance au cours de l'exercice auquel les comptes annuels se rapportent ou au cours d'exercices antérieurs, même si ces risques, pertes ou dépréciations ne sont connus qu'entre la date de clôture des comptes annuels et la date à laquelle il sont arrêtés par l'organe d'administration de l'entreprise. Les provisions pour risques et charges ne peuvent être maintenues dans la mesure où elles excèdent en fin d'exercice une appréciation actuelle, selon les critères de dépréciations, les charges et risques en considération desquelles elles ont été constituées.
 
-Les provisions pour risques et charges sont individualisées en fonction des risques et charges de même nature qu'elles sont appelées à
-
-couvrir. Par risques et charges de même nature, il faut entendre les catégories de risques et charges mentionnées à titre exemplatif à
-l'article 19, alinéa 5 de l'Arrêté Royal du 8 octobre 1976. Les provisions pour risques et charges doivent répondre aux critères de
-
-prudence, de sincérité et de bonne foi. Les provisions pour risques et charges doivent être constituées systématiquement sur base des
-
-méthodes arrêtées par l'entreprise conformément à l'article 15 de l'arrêté Royal du 8 octobre 1976. Elles ne peuvent dépendre du résultat
-
-de l'exercice.
-
-11 doit être tenu compte de tous les risques prévisibles, des pertes éventuelles et des dépréciations qui ont pris naissance au cours de
-l'exercice auquel les comptes annuels se rapportent ou au cours d'exercices antérieurs, même si ces risques, pertes ou dépréciations ne
-sont connus qu'entre la date de clôture des comptes annuels et la date à laquelle il sont arrêtés par l'organe d'administration de
-l'entreprise. Les provisions pour risques et charges ne peuvent être maintenues dans la mesure où elles excèdent en fin d'exercice une
-
-appréciation actuelle, selon les critères de dépréciations, les charges et risques en considération desquelles elles ont été constituées.
 1.12. DETTES À PLUS D'UN AN
-
 Les dettes sont portées au bilan à leur valeur nominale.
 
 1.13. DETTES À UN AN AU PLUS
-
 Les dettes sont portées au bilan à leur valeur nominale.
 
 1.14. COMPTES DE RÉSULTATS
-
-Les règles d'évaluation relatives au compte de résultats sont les règles d'évaluation générales décrites dans l'Arrêté Royal du 8 octobre
-1976.
+Les règles d'évaluation relatives au compte de résultats sont les règles d'évaluation générales décrites dans l'Arrêté Royal du 8 octobre 1976.
 
 1.15. GÉNÉRALITÉS
-
-Les devises étrangères seront converties au cours moyen au comptant (calculé par la moyenne des cours acheteur et vendeur
-
-représentatifs) du dernier jour de bourse de l'année. Les écarts négatifs de conversion seront pris en charges au compte de résultats
-
-tandis que les écarts de conversion positifs sont portés en compte de régularisation du passif. La comptabilité est tenue en Euro
+Les devises étrangères seront converties au cours moyen au comptant (calculé par la moyenne des cours acheteur et vendeur représentatifs) du dernier jour de bourse de l'année. Les écarts négatifs de conversion seront pris en charges au compte de résultats tandis que les écarts de conversion positifs sont portés en compte de régularisation du passif. La comptabilité est tenue en Euro
 
 1.16. MENTIONS COMPLEMENTAIRES
-
-Malgré les deux exercices déficitaires et la perte reportée, la société dispose toujours de fonds propres suffisants lui permettant de faire
-face à ses engagements.
-
+Malgré les deux exercices déficitaires et la perte reportée, la société dispose toujours de fonds propres suffisants lui permettant de faire face à ses engagements.
 La société bénéfice en outre du soutien de ses actionnaires, et plus particulièrement de son actionnaire majoritaire.
-
 Par ailleurs, une augmentation de capital est prévue afin de renforcer les fonds propres et financer les futurs projets.
 
-22131
-
+22/31
 
 --- pág. 23 ---
 
@@ -1487,376 +1363,248 @@ cela, la situation reste stable à ce niveau.
 
 --- pág. 24 ---
 
-JOIRIS-ROUSSEAUX
-reviseurs d'entreprises associés
+[logo] JOIRIS-ROUSSEAUX reviseurs d'entreprises associés
 
 GONET Sébastien
 PRUNEAU Alexis
 ROUSSEAUX Bernard
 
-RAPPORT DU COMMISSAIRE A L’ASSEMBLEE GENERALE DE LA SCRL
-"RAAL" POUR L’EXERCICE CLOS LE
-30 JUIN 2020
+**RAPPORT DU COMMISSAIRE A L'ASSEMBLEE GENERALE DE LA SCRL "RAAL" POUR L'EXERCICE CLOS LE 30 JUIN 2020**
 
-SCPRL "Joiris, Rousseaux & Co — Réviseurs d’Entreprises Associés"
+**SCPRL "Joiris, Rousseaux & Co – Réviseurs d'Entreprises Associés"**
 
 Représentée par
 Alexis PRUNEAU
 Associé
 
-Siège 18, Rue de la Biche 7000 MONS Tél+3265 362992 Fax +32 65 84 29 99
-
-2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 0005 Fax +32 64 65 25 10
+Siège 18, Rue de la Biche 7000 MONS Tél +32 65 36 29 92 Fax +32 65 84 29 99
+2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 00 05 Fax +32 64 65 25 10
 3ème cabinet 13-15 bte 8, Rue Charleville 6000 CHARLEROI Tél +32 71 35 02 88
-
-TVA BE 450 426032 Mail joirisrousseaux@joirisrousseaux.eu
-
+TVA BE 450 426 032 Mail joirisrousseaux@joirisrousseaux.eu
 Société civile ayant emprunté la forme d'une SPRL
 
 24/31
 
-
 --- pág. 25 ---
 
-JOIRIS-ROUSSEAUX
-reviseurs d'entreprises associés
+[logo] JOIRIS-ROUSSEAUX reviseurs d'entreprises associés
 
 GONET Sébastien
 PRUNEAU Alexis
 ROUSSEAUX Bernard
 
-RAPPORT DU COMMISSAIRE A L’ASSEMBLEE GENERALE DE LA SCRL "RAAL" POUR L’EXERCICE
-CLOS LE 30 JUIN 2020
+**RAPPORT DU COMMISSAIRE A L'ASSEMBLEE GENERALE DE LA SCRL "RAAL" POUR L'EXERCICE CLOS LE 30 JUIN 2020**
 
-Dans le cadre du contrôle légal des comptes annuels de la société "RAAL", nous vous
-présentons notre rapport du commissaire. Celui-ci inclut notre rapport sur les comptes annuels
-ainsi que les autres obligations légales et réglementaires. Le tout constitue un ensemble et est
-inséparable.
+Dans le cadre du contrôle légal des comptes annuels de la société "RAAL", nous vous présentons notre rapport du commissaire. Celui-ci inclut notre rapport sur les comptes annuels ainsi que les autres obligations légales et réglementaires. Le tout constitue un ensemble et est inséparable.
 
-Nous avons été nommés en tant que commissaire par l’assemblée générale du 17 décembre
-2019, conformément à la proposition de l'organe d’administration. Notre mandat de
-commissaire vient à échéance à la date de l’assemblée générale délibérant sur les comptes
-annuels clôturés au 30 juin 2022. Nous avons exercé le contrôle légal des comptes annuels de la
-société durant deux exercices consécutifs.
+Nous avons été nommés en tant que commissaire par l'assemblée générale du 17 décembre 2019, conformément à la proposition de l'organe d'administration. Notre mandat de commissaire vient à échéance à la date de l'assemblée générale délibérant sur les comptes annuels clôturés au 30 juin 2022. Nous avons exercé le contrôle légal des comptes annuels de la société durant deux exercices consécutifs.
 
-Rapport sur les comptes annuels
+**Rapport sur les comptes annuels**
 
-Opinion sans réserve
+*Opinion sans réserve*
 
-Nous avons procédé au contrôle légal des comptes annuels de la société, comprenant le bilan
-au 30 juin 2020, ainsi que le compte de résultats pour l'exercice clos à cette date et l’annexe,
-dont le total du bilan s'élève à 3.162.493,31 € et dont le compte de résultats se solde par une
-perte de l’exercice à affecter de 103.502,54 €.
+Nous avons procédé au contrôle légal des comptes annuels de la société, comprenant le bilan au 30 juin 2020, ainsi que le compte de résultats pour l'exercice clos à cette date et l'annexe, dont le total du bilan s'élève à 3.162.493,31 € et dont le compte de résultats se solde par une perte de l'exercice à affecter de 103.502,54 €.
 
-À notre avis, ces comptes annuels donnent une image fidèle du patrimoine et de la situation
-financière de la société au 30 juin 2020, ainsi que de ses résultats pour l’exercice clos à cette
-date, conformément au référentiel comptable applicable en Belgique.
+À notre avis, ces comptes annuels donnent une image fidèle du patrimoine et de la situation financière de la société au 30 juin 2020, ainsi que de ses résultats pour l'exercice clos à cette date, conformément au référentiel comptable applicable en Belgique.
 
-Fondement de l'opinion sans réserve
+*Fondement de l'opinion sans réserve*
 
-Nous avons effectué notre audit selon les Normes internationales d'audit (ISA) telles
-qu’applicables en Belgique. Les responsabilités qui nous incombent en vertu de ces normes
-sont plus amplement décrites dans la section « Responsabilités du commissaire relatives à
-l'audit des comptes annuels » du présent rapport. Nous nous sommes conformés à toutes les
-exigences déontologiques qui s'appliquent à l’audit des comptes annuels en Belgique, en ce
-compris celles concernant l'indépendance.
+Nous avons effectué notre audit selon les Normes internationales d'audit (ISA) telles qu'applicables en Belgique. Les responsabilités qui nous incombent en vertu de ces normes sont plus amplement décrites dans la section « Responsabilités du commissaire relatives à l'audit des comptes annuels » du présent rapport. Nous nous sommes conformés à toutes les exigences déontologiques qui s'appliquent à l'audit des comptes annuels en Belgique, en ce compris celles concernant l'indépendance.
 
-Siège 18, Rue de la Biche 7000 MONS Tél +32 65 362992 Fax +32 65 84 29 99
-
-2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 0005 Fax +32 64 65 25 10
-
+Siège 18, Rue de la Biche 7000 MONS Tél +32 65 36 29 92 Fax +32 65 84 29 99
+2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 00 05 Fax +32 64 65 25 10
 3ème cabinet 13-15 bte 8, Rue Charleville 6000 CHARLEROI Tél +32 71 35 02 88
-
-TVA BE 450 426032 Mail joirisrousseaux@joirisrousseaux.eu
-
-Société civile ayant emprunté la forme d'une SPRL 1
+TVA BE 450 426 032 Mail joirisrousseaux@joirisrousseaux.eu
+Société civile ayant emprunté la forme d'une SPRL — 1
 
 25/31
 
 --- pág. 26 ---
 
-JOIRIS-ROUSSEAUX
-reviseurs d'entreprises associés
+[logo] JOIRIS-ROUSSEAUX reviseurs d'entreprises associés
 
 GONET Sébastien
 PRUNEAU Alexis
 ROUSSEAUX Bernard
 
-Nous avons obtenu de l’organe d'administration et des préposés de la société, les explications
-et informations requises pour notre audit.
+Nous avons obtenu de l'organe d'administration et des préposés de la société, les explications et informations requises pour notre audit.
 
-Nous estimons que les éléments probants que nous avons recueillis sont suffisants et
-appropriés pour fonder notre opinion.
+Nous estimons que les éléments probants que nous avons recueillis sont suffisants et appropriés pour fonder notre opinion.
 
-Observations
-Sans remettre en cause l'opinion ci-dessus, nous attirons l’attention sur :
+*Observations*
 
--__L’annexe À 6.9 des comptes annuels. Celle-ci mentionne : « La crise sanitaire liée au
-COVID 19 a stoppé l’activité sportive au milieu de la saison 2019-2020. Le club n’a donc
-pas pu profiter des recettes habituelles de buvette et de billetterie sur une partie de la
-saison. || n'a également pas pu jouer pleinement sa chance dans l’obtention d’une
-montée en Nationale 1 via le championnat où le tour final. Enfin, une partie des
-sponsors du club, faisant face à la crise sanitaire, ont été dans l'obligation financière de
-se retirer de leur sponsoring.»
+Sans remettre en cause l'opinion ci-dessus, nous attirons l'attention sur :
 
-- _L’annexe À 6.8 des comptes annuels. Celle-ci justifie l’application des règles comptables
-de continuité comme suit : « Malgré les deux exercices déficitaires et la perte reportée,
-la société dispose toujours de fonds propres suffisants lui permettant de faire face à ses
-engagements. La société bénéfice en outre du soutien de ses actionnaires, et plus
-particulièrement de son actionnaire majoritaire. Par ailleurs, une augmentation de
-capital est prévue afin de renforcer les fonds propres et financer les futurs projets. »
+- L'annexe A 6.9 des comptes annuels. Celle-ci mentionne : « La crise sanitaire liée au COVID 19 a stoppé l'activité sportive au milieu de la saison 2019-2020. Le club n'a donc pas pu profiter des recettes habituelles de buvette et de billetterie sur une partie de la saison. Il n'a également pas pu jouer pleinement sa chance dans l'obtention d'une montée en Nationale 1 via le championnat où le tour final. Enfin, une partie des sponsors du club, faisant face à la crise sanitaire, ont été dans l'obligation financière de se retirer de leur sponsoring.»
 
-Responsabilités de l’organe d'administration relatives à l’établissement des comptes annuels
+- L'annexe A 6.8 des comptes annuels. Celle-ci justifie l'application des règles comptables de continuité comme suit : « Malgré les deux exercices déficitaires et la perte reportée, la société dispose toujours de fonds propres suffisants lui permettant de faire face à ses engagements. La société bénéfice en outre du soutien de ses actionnaires, et plus particulièrement de son actionnaire majoritaire. Par ailleurs, une augmentation de capital est prévue afin de renforcer les fonds propres et financer les futurs projets. »
 
-L’organe d'administration est responsable de l'établissement des comptes annuels donnant une
-image fidèle conformément au référentiel comptable applicable en Belgique, ainsi que du
-contrôle interne qu’il estime nécessaire à l'établissement de comptes annuels ne comportant
-pas d'anomalies significatives, que celles-ci proviennent de fraudes ou résultent d'erreurs.
+*Responsabilités de l'organe d'administration relatives à l'établissement des comptes annuels*
 
-Lors de l’établissement des comptes annuels, il incombe à l’organe d'administration d'évaluer
-la capacité de la société à poursuivre son exploitation, de fournir, le cas échéant, des
-informations relatives à la continuité d’exploitation et d'appliquer le principe comptable de
-continuité d'exploitation, sauf si l’organe d'administration a l'intention de mettre la société en
-liquidation ou de cesser ses activités ou s’il ne peut envisager une autre solution alternative
-réaliste.
+L'organe d'administration est responsable de l'établissement des comptes annuels donnant une image fidèle conformément au référentiel comptable applicable en Belgique, ainsi que du contrôle interne qu'il estime nécessaire à l'établissement de comptes annuels ne comportant pas d'anomalies significatives, que celles-ci proviennent de fraudes ou résultent d'erreurs.
 
-Siège 18, Rue de la Biche 7000 MONS Tél +32 65 362992 Fax +32 65 84 29 99
+Lors de l'établissement des comptes annuels, il incombe à l'organe d'administration d'évaluer la capacité de la société à poursuivre son exploitation, de fournir, le cas échéant, des informations relatives à la continuité d'exploitation et d'appliquer le principe comptable de continuité d'exploitation, sauf si l'organe d'administration a l'intention de mettre la société en liquidation ou de cesser ses activités ou s'il ne peut envisager une autre solution alternative réaliste.
 
-2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 0005 Fax +32 64 65 25 10
-
+Siège 18, Rue de la Biche 7000 MONS Tél +32 65 36 29 92 Fax +32 65 84 29 99
+2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 00 05 Fax +32 64 65 25 10
 3ème cabinet 13-15 bte 8, Rue Charleville 6000 CHARLEROI Tél +32 71 35 02 88
-
-TVA BE 450 426032 Mail joirisrousseaux@joirisrousseaux.eu
-
-Société civile ayant emprunté la forme d'une SPRL 2
+TVA BE 450 426 032 Mail joirisrousseaux@joirisrousseaux.eu
+Société civile ayant emprunté la forme d'une SPRL — 2
 
 26/31
 
 --- pág. 27 ---
 
-JOIRIS-ROUSSEAUX
-reviseurs d'entreprises associés
+[logo] JOIRIS-ROUSSEAUX reviseurs d'entreprises associés
 
 GONET Sébastien
 PRUNEAU Alexis
 ROUSSEAUX Bernard
 
-Responsabilités du commissaire relatives à l’audit des comptes annuels
+*Responsabilités du commissaire relatives à l'audit des comptes annuels*
 
-Nos objectifs sont d'obtenir l’assurance raisonnable que les comptes annuels pris dans leur
-ensemble ne comportent pas d'anomalies significatives, que celles-ci proviennent de fraudes
-ou résultent d'erreurs, et d'émettre un rapport du commissaire contenant notre opinion.
-L'assurance raisonnable correspond à un niveau élevé d'assurance, qui ne garantit toutefois pas
-qu’un audit réalisé conformément aux normes ISA permettra de toujours détecter toute
-anomalie significative existante. Les anomalies peuvent provenir de fraudes ou résulter
-d'erreurs et sont considérées comme significatives lorsqu'il est raisonnable de s'attendre à ce
-que, prises individuellement ou en cumulé, elles puissent influencer les décisions économiques
-que les utilisateurs des comptes annuels prennent en se fondant sur ceux-ci.
+Nos objectifs sont d'obtenir l'assurance raisonnable que les comptes annuels pris dans leur ensemble ne comportent pas d'anomalies significatives, que celles-ci proviennent de fraudes ou résultent d'erreurs, et d'émettre un rapport du commissaire contenant notre opinion. L'assurance raisonnable correspond à un niveau élevé d'assurance, qui ne garantit toutefois pas qu'un audit réalisé conformément aux normes ISA permettra de toujours détecter toute anomalie significative existante. Les anomalies peuvent provenir de fraudes ou résulter d'erreurs et sont considérées comme significatives lorsqu'il est raisonnable de s'attendre à ce que, prises individuellement ou en cumulé, elles puissent influencer les décisions économiques que les utilisateurs des comptes annuels prennent en se fondant sur ceux-ci.
 
-Lors de l'exécution de notre contrôle, nous respectons le cadre légal, réglementaire et normatif
-qui s’applique à l’audit des comptes annuels en Belgique.
+Lors de l'exécution de notre contrôle, nous respectons le cadre légal, réglementaire et normatif qui s'applique à l'audit des comptes annuels en Belgique.
 
-Dans le cadre d’un audit réalisé conformément aux normes ISA et tout au long de celui-ci, nous
-exerçons notre jugement professionnel et faisons preuve d’esprit critique. En outre :
+Dans le cadre d'un audit réalisé conformément aux normes ISA et tout au long de celui-ci, nous exerçons notre jugement professionnel et faisons preuve d'esprit critique. En outre :
 
-" nous identifions et évaluons les risques que les comptes annuels comportent des
-anomalies significatives, que celles-ci proviennent de fraudes ou résultent d’erreurs,
-définissons et mettons en œuvre des procédures d’audit en réponse à ces risques, et
-recueillons des éléments probants suffisants et appropriés pour fonder notre opinion. Le
-risque de non-détection d’une anomalie significative provenant d’une fraude est plus élevé
-que celui d’une anomalie significative résultant d’une erreur, car la fraude peut impliquer
-la collusion, la falsification, les omissions volontaires, les fausses déclarations ou le
-contournement du contrôle interne:
+- nous identifions et évaluons les risques que les comptes annuels comportent des anomalies significatives, que celles-ci proviennent de fraudes ou résultent d'erreurs, définissons et mettons en œuvre des procédures d'audit en réponse à ces risques, et recueillons des éléments probants suffisants et appropriés pour fonder notre opinion. Le risque de non-détection d'une anomalie significative provenant d'une fraude est plus élevé que celui d'une anomalie significative résultant d'une erreur, car la fraude peut impliquer la collusion, la falsification, les omissions volontaires, les fausses déclarations ou le contournement du contrôle interne;
 
-"nous prenons connaissance du contrôle interne pertinent pour l'audit afin de définir des
-procédures d’audit appropriées en la circonstance, mais non dans le but d’exprimer une
-opinion sur l’efficacité du contrôle interne de la société;
+- nous prenons connaissance du contrôle interne pertinent pour l'audit afin de définir des procédures d'audit appropriées en la circonstance, mais non dans le but d'exprimer une opinion sur l'efficacité du contrôle interne de la société;
 
-"nous apprécions le caractère approprié des méthodes comptables retenues et le caractère
-raisonnable des estimations comptables faites par l’organe d'administration, de même que
-des informations les concernant fournies par ce dernier;
+- nous apprécions le caractère approprié des méthodes comptables retenues et le caractère raisonnable des estimations comptables faites par l'organe d'administration, de même que des informations les concernant fournies par ce dernier;
 
-"nous concluons quant au caractère approprié de l'application par l’organe d'administration
-du principe comptable de continuité d'exploitation et, selon les éléments probants
-recueillis, quant à l'existence ou non d’une incertitude significative liée à des événements
-ou situations susceptibles de jeter un doute important sur la capacité de la société à
-poursuivre son exploitation. Si nous concluons à l'existence d’une incertitude significative,
+- nous concluons quant au caractère approprié de l'application par l'organe d'administration du principe comptable de continuité d'exploitation et, selon les éléments probants recueillis, quant à l'existence ou non d'une incertitude significative liée à des événements ou situations susceptibles de jeter un doute important sur la capacité de la société à poursuivre son exploitation. Si nous concluons à l'existence d'une incertitude significative,
 
-Siège 18, Rue de la Biche 7000 MONS Tél +32 65 362992 Fax +32 65 84 29 99
-
-2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 0005 Fax +32 64 65 25 10
-
+Siège 18, Rue de la Biche 7000 MONS Tél +32 65 36 29 92 Fax +32 65 84 29 99
+2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 00 05 Fax +32 64 65 25 10
 3ème cabinet 13-15 bte 8, Rue Charleville 6000 CHARLEROI Tél +32 71 35 02 88
+TVA BE 450 426 032 Mail joirisrousseaux@joirisrousseaux.eu
+Société civile ayant emprunté la forme d'une SPRL — 3
 
-TVA BE 450 426032 Mail joirisrousseaux@joirisrousseaux.eu
-
-Société civile ayant emprunté la forme d'une SPRL 3
-
-27131
+27/31
 
 --- pág. 28 ---
 
-JOIRIS-ROUSSEAUX
-reviseurs d'entreprises associés
+[logo] JOIRIS-ROUSSEAUX reviseurs d'entreprises associés
 
 GONET Sébastien
 PRUNEAU Alexis
 ROUSSEAUX Bernard
 
-nous sommes tenus d'attirer l’attention des lecteurs de notre rapport du commissaire sur
-les informations fournies dans les comptes annuels au sujet de cette incertitude ou, si ces
-informations ne sont pas adéquates, d'exprimer une opinion modifiée. Nos conclusions
-s'appuient sur les éléments probants recueillis jusqu’à la date de notre rapport du
-commissaire. Cependant, des situations ou événements futurs pourraient conduire la
-société à cesser son exploitation;
+nous sommes tenus d'attirer l'attention des lecteurs de notre rapport du commissaire sur les informations fournies dans les comptes annuels au sujet de cette incertitude ou, si ces informations ne sont pas adéquates, d'exprimer une opinion modifiée. Nos conclusions s'appuient sur les éléments probants recueillis jusqu'à la date de notre rapport du commissaire. Cependant, des situations ou événements futurs pourraient conduire la société à cesser son exploitation;
 
-" nous apprécions la présentation d'ensemble, la structure et le contenu des comptes
-annuels et évaluons si les comptes annuels reflètent les opérations et événements sous-
-jacents d'une manière telle qu'ils en donnent une image fidèle.
+- nous apprécions la présentation d'ensemble, la structure et le contenu des comptes annuels et évaluons si les comptes annuels reflètent les opérations et événements sous-jacents d'une manière telle qu'ils en donnent une image fidèle.
 
-Nous communiquons à l’organe d'administration notamment l'étendue des travaux d'audit et
-le calendrier de réalisation prévus, ainsi que les constatations importantes relevées lors de
-notre audit, y compris toute faiblesse significative dans le contrôle interne.
+Nous communiquons à l'organe d'administration notamment l'étendue des travaux d'audit et le calendrier de réalisation prévus, ainsi que les constatations importantes relevées lors de notre audit, y compris toute faiblesse significative dans le contrôle interne.
 
-Autres obligations légales et réglementaires
+**Autres obligations légales et réglementaires**
 
-Responsabilités de l’organe d’administration
+**Responsabilités de l'organe d'administration**
 
-L'organe d’administration est responsable de la préparation et du contenu du rapport de
-gestion et du respect des dispositions légales et réglementaires applicables à la tenue de la
-comptabilité ainsi que du respect du Code des sociétés et des associations et des statuts de la
-société.
+L'organe d'administration est responsable de la préparation et du contenu du rapport de gestion et du respect des dispositions légales et réglementaires applicables à la tenue de la comptabilité ainsi que du respect du Code des sociétés et des associations et des statuts de la société.
 
-Responsabilités du commissaire
+**Responsabilités du commissaire**
 
-Dans le cadre de notre mandat et conformément à la norme belge complémentaire (révisée en
-2018) aux normes internationales d’audlit (ISA) applicables en Belgique, notre responsabilité est
-de vérifier, dans leurs aspects significatifs, le rapport de et le respect de certaines dispositions
-du Code des sociétés et des associations et des statuts, ainsi que de faire rapport sur ces
-éléments.
+Dans le cadre de notre mandat et conformément à la norme belge complémentaire (révisée en 2018) aux normes internationales d'audit (ISA) applicables en Belgique, notre responsabilité est de vérifier, dans leurs aspects significatifs, le rapport de et le respect de certaines dispositions du Code des sociétés et des associations et des statuts, ainsi que de faire rapport sur ces éléments.
 
-Aspects relatifs au rapport de gestion
+**Aspects relatifs au rapport de gestion**
 
-La société est exemptée en vertu des articles 1:24 et 3:4 du Code des Sociétés et Associations
-d'établir un rapport de gestion.
+La société est exemptée en vertu des articles 1:24 et 3:4 du Code des Sociétés et Associations d'établir un rapport de gestion.
 
-Siège 18, Rue de la Biche 7000 MONS Tél +32 65 362992 Fax +32 65 84 29 99
-
-2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 0005 Fax +32 64 65 25 10
-
+Siège 18, Rue de la Biche 7000 MONS Tél +32 65 36 29 92 Fax +32 65 84 29 99
+2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 00 05 Fax +32 64 65 25 10
 3ème cabinet 13-15 bte 8, Rue Charleville 6000 CHARLEROI Tél +32 71 35 02 88
-
-TVA BE 450 426032 Mail joirisrousseaux@joirisrousseaux.eu
-
-Société civile ayant emprunté la forme d'une SPRL 4
+TVA BE 450 426 032 Mail joirisrousseaux@joirisrousseaux.eu
+Société civile ayant emprunté la forme d'une SPRL — 4
 
 28/31
 
 --- pág. 29 ---
 
-JOIRIS-ROUSSEAUX
-reviseurs d'entreprises associés
+[logo] JOIRIS-ROUSSEAUX reviseurs d'entreprises associés
 
 GONET Sébastien
 PRUNEAU Alexis
 ROUSSEAUX Bernard
 
-Mention relative au bilan social
+**Mention relative au bilan social**
 
-Le bilan social, à déposer à la Banque nationale de Belgique conformément à l’article 3:12, 8
-ler, 6°/2 du Code des sociétés et des associations, traite, tant au niveau de la forme qu’au
-niveau du contenu, des mentions requises par ce Code, et ne comprend pas d’incohérences
-significatives par rapport aux informations dont nous disposons dans le cadre de notre mission.
+Le bilan social, à déposer à la Banque nationale de Belgique conformément à l'article 3:12, § 1er, 6°/2 du Code des sociétés et des associations, traite, tant au niveau de la forme qu'au niveau du contenu, des mentions requises par ce Code, et ne comprend pas d'incohérences significatives par rapport aux informations dont nous disposons dans le cadre de notre mission.
 
-Mentions relatives à l’indépendance
+**Mentions relatives à l'indépendance**
 
-"Notre cabinet de révision n’a pas effectué de missions incompatibles avec le contrôle légal
-des comptes annuels et est resté indépendant vis-à-vis de la société au cours de notre
-mandat.
+- Notre cabinet de révision n'a pas effectué de missions incompatibles avec le contrôle légal des comptes annuels et est resté indépendant vis-à-vis de la société au cours de notre mandat.
 
-Autres mentions
+**Autres mentions**
 
-" Sans préjudice d’aspects formels d'importance mineure, la comptabilité est tenue
-conformément aux dispositions légales et réglementaires applicables en Belgique.
+- Sans préjudice d'aspects formels d'importance mineure, la comptabilité est tenue conformément aux dispositions légales et réglementaires applicables en Belgique.
 
-" La répartition des résultats proposée à l’assemblée générale est conforme aux dispositions
-légales et statutaires.
+- La répartition des résultats proposée à l'assemblée générale est conforme aux dispositions légales et statutaires.
 
-"Nous n'avons pas à vous signaler d'opération conclue ou de décision prise en violation des
-statuts ou du Code des sociétés et des associations.
+- Nous n'avons pas à vous signaler d'opération conclue ou de décision prise en violation des statuts ou du Code des sociétés et des associations.
 
 Le 2 décembre 2020
 
 La SCPRL "Joiris - Rousseaux & Co - Réviseurs d'entreprises associés"
 Représentée par
 
+[signature]
+
 Alexis PRUNEAU
 Réviseur d'entreprises associé
 
-Siège 18, Rue de la Biche 7000 MONS Tél +32 65 362992 Fax +32 65 84 29 99
-
-2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 0005 Fax +32 64 65 25 10
-
+Siège 18, Rue de la Biche 7000 MONS Tél +32 65 36 29 92 Fax +32 65 84 29 99
+2ème cabinet 60 bte 5, Rue du Parc 7100 LA LOUVIERE Tél +32 64 65 00 05 Fax +32 64 65 25 10
 3ème cabinet 13-15 bte 8, Rue Charleville 6000 CHARLEROI Tél +32 71 35 02 88
-
-TVA BE 450 426032 Mail joirisrousseaux@joirisrousseaux.eu
-
-Société civile ayant emprunté la forme d'une SPRL 5
+TVA BE 450 426 032 Mail joirisrousseaux@joirisrousseaux.eu
+Société civile ayant emprunté la forme d'une SPRL — 5
 
 29/31
 
 --- pág. 30 ---
 
-N° BE 0675.684.677
+N° BE 0675.684.677 — A 12
 
-A 12
-
-BILAN SOCIAL
+**BILAN SOCIAL**
 
 Numéros des commissions paritaires dont dépend l'entreprise:
 
-Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre
+**Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre général du personnel**
 
-général du personnel
+| Au cours de l'exercice et de l'exercice précédent | Codes | 1. Temps plein (exercice) | 2. Temps partiel (exercice) | 3. Total (T) ou total en équivalents temps plein (ETP) (exercice) | 3P. Total (T) ou total en équivalents temps plein (ETP) (exercice précédent) |
+|---|---|---|---|---|---|
+| Nombre moyen de travailleurs | 100 | 4 | 23,5 | 12,7 ETP | 12,4 ETP |
+| Nombre d'heures effectivement prestées | 101 | 5.061 | 10.276 | 15.337 T | 19.276 T |
+| Frais de personnel | 102 | 117.171 | 312.804 | 429.975 T | 518.027 T |
 
-Codes | 1. Temps plein 2. Temps partiel 3. Total (T) 3P. Total (T) ou total
-Au cours de l'exercice et de ou total en en équivalents
-l'exercice précédent équivalents temps
-temps plein (ETP)
-plein (ETP)
-(exercice) (exercice) (exercice) (exercice précédent)
-Nombre moyen de travailleurs 100 4 238,5 12,7| ETP 12,4| ETP
-Nombre d'heures effectivement
-prestées 101 5.061 10.276 15.337 T 19.276| T
-Frais de personnel 102 117.171 312.804 429.975 518.027
-A la date de clôture de l'exercice Codes | 1. Temps plein 2. Temps partiel 3. . Total en
-équivalents
-temps plein
-Nombre de travailleurs 105 4 24 12,7
-Par type de contrat de travail
-Contrat à durée indéterminée 110 4 4 5,7
-Contrat à durée déterminée 111 20
-Contrat pour l'exécution d'un travail nettement défini  |112
-Contrat de remplacement 113
-Par sexe et niveau d'études
-Hommes 120 4 23 12,2
-de niveau primaire 1200
-de niveau secondaire 1201 4 23 12,2
-de niveau supérieur non universitaire 1202
-de niveau universitaire 1203
-Femmes 121 1 0,5
-de niveau primaire 1210
-de niveau secondaire 1211 1 0,5
-de niveau supérieur non universitaire 1212
-de niveau universitaire 1213
-Par catégorie professionnelle
-Personnel de direction 130
-Employés 134 4 24 12,7
-Ouvriers 132
-Autres 133
+| A la date de clôture de l'exercice | Codes | 1. Temps plein | 2. Temps partiel | 3. Total en équivalents temps plein |
+|---|---|---|---|---|
+| **Nombre de travailleurs** | 105 | 4 | 24 | 12,7 |
+| **Par type de contrat de travail** | | | | |
+| Contrat à durée indéterminée | 110 | 4 | 4 | 5,7 |
+| Contrat à durée déterminée | 111 | | 20 | 7 |
+| Contrat pour l'exécution d'un travail nettement défini | 112 | | | |
+| Contrat de remplacement | 113 | | | |
+| **Par sexe et niveau d'études** | | | | |
+| Hommes | 120 | 4 | 23 | 12,2 |
+| de niveau primaire | 1200 | | | |
+| de niveau secondaire | 1201 | 4 | 23 | 12,2 |
+| de niveau supérieur non universitaire | 1202 | | | |
+| de niveau universitaire | 1203 | | | |
+| Femmes | 121 | | 1 | 0,5 |
+| de niveau primaire | 1210 | | | |
+| de niveau secondaire | 1211 | | 1 | 0,5 |
+| de niveau supérieur non universitaire | 1212 | | | |
+| de niveau universitaire | 1213 | | | |
+| **Par catégorie professionnelle** | | | | |
+| Personnel de direction | 130 | | | |
+| Employés | 134 | 4 | 24 | 12,7 |
+| Ouvriers | 132 | | | |
+| Autres | 133 | | | |
 
 30/31
-
 
 --- pág. 31 ---
 

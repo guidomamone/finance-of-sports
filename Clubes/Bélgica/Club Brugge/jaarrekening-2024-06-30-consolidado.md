@@ -124,130 +124,61 @@ Vogelzangdreef 4 , 8200 Sint-Andries, België
 
 --- pág. 3 ---
 
-[_Nr. | o460.444.251 [conso2_ |
+| Nr. | 0460.444.251 | CONSO 2 |
+|---|---|---|
 
 LIJST VAN DE BESTUURDERS, ZAAKVOERDERS EN COMMISSARISSEN (vervolg van de vorige bladzijde)
 
-BDO Bedrijfsrevisoren BV 0431.088.289
-Brusselsesteenweg 92, 9090 Melle, België
-Lidmaatschapsnummer: B00023
-
-Mandaat: Commissaris
-
-Vertegenwoordigd door:
-1. Catry Veerle, Lidmaatschapsnummer : A01868
-
-Brusselsesteenweg 92 , 9090 Melle, België
-
-Bedrijfsrevisor
+**BDO Bedrijfsrevisoren BV 0431.088.289**  
+Brusselsesteenweg 92, 9090 Melle, België  
+Lidmaatschapsnummer: B00023  
+Mandaat: Commissaris  
+Vertegenwoordigd door:  
+1. Catry Veerle, Lidmaatschapsnummer: A01868  
+   Brusselsesteenweg 92, 9090 Melle, België  
+   Bedrijfsrevisor
 
 3/36
 
 --- pág. 4 ---
 
-Inhoud
+## Inhoud
 
-21
-2.2
-2.3
-2.4
-2.5
+| 1 | Rapporterende entiteit | 1 |
+|---|---|---|
+| **2** | **Grondslagen van verslaggeving** | **1** |
+| 2.1 | Verklaring van overeenstemming | 1 |
+| 2.2 | Waarderingsgrondslag | 1 |
+| 2.3 | Functionele valuta en rapporteringsvaluta | 1 |
+| 2.4 | Alternatieve prestatiemaatstaven | 1 |
+| 2.5 | Gebruik van schattingen en beoordelingen | 2 |
+| **3** | **Belangrijke grondslagen voor financiële verslaggeving** | **3** |
+| 3.1 | Consolidatie | 4 |
+| 3.2 | Spelersregistratierechten | 4 |
+| 3.3 | Overige immateriële activa | 6 |
+| 3.4 | Materiële vaste activa | 6 |
+| 3.5 | Recht-op-gebruik activa en leaseverplichtingen (leaseovereenkomsten) | 7 |
+| 3.6 | Bijzondere waardevermindering van activa | 8 |
+| 3.7 | Vorderingen bij de verkoop van Spelersregistratierechten | 10 |
+| 3.8 | Voorraden | 10 |
+| 3.9 | Handels- en andere vorderingen | 11 |
+| 3.10 | Geldmiddelen en kasequivalenten | 11 |
+| 3.11 | Activa aangehouden voor verkoop | 12 |
+| 3.12 | Personeelsvoordelen | 12 |
+| 3.13 | Financiële verplichtingen | 14 |
+| 3.14 | Schulden bij de aankoop van Spelersregistratierechten | 14 |
+| 3.15 | Omrekening van posten in vreemde valuta | 14 |
+| 3.16 | Totale inkomstenbelasting | 15 |
+| 3.16.1 | Actuele belastingen | 15 |
+| 3.16.2 | Uitgestelde belastingen | 15 |
+| 3.17 | Opbrengsten | 16 |
+| 3.17.1 | Wedstrijdopbrengsten | 16 |
+| 3.17.2 | Opbrengsten uit mediarechten | 17 |
+| 3.17.3 | Commerciële opbrengsten | 17 |
+| 3.18 | Overdracht van Spelersregistratierechten: meer- of minderwaarden | 18 |
+| **4** | **Nieuwe standaarden en interpretaties die nog niet zijn toegepast** | **18** |
 
-3.1
-3.2
-3.3
-3.4
-3.5
-
-3.6
-3.7
-3.8
-3.9
-3.10
-3.11
-3.12
-3.13
-3.14
-3.15
-3.16
-3.16.1
-3.16.2
-3.17
-3.171
-3.17.2
-3.17.3
-3.18
-
-Rapporterende entiteit
-
-Grondslagen van verslaggeving
-Verklaring van overeenstemming
-Waarderingsgrondslag
-
-Functionele valuta en rapporteringsvaluta
-Alternatieve prestatiemaatstaven
-
-Gebruik van schattingen en beoordelingen
-
-Belangrijke grondslagen voor financiële verslaggeving
-Consolidatie
-Spelersregistratierechten
-Overige immateriële activa
-Materiële vaste activa
-Recht-op-gebruik activa en leaseverplichtingen
-(leaseovereenkomsten)
-Bijzondere waardevermindering van activa
-Vorderingen bij de verkoop van Spelersregistratierechten
-Voorraden
-Handels- en andere vorderingen
-Geldmiddelen en kasequivalenten
-Activa aangehouden voor verkoop
-Personeelsvoordelen
-Financiële verplichtingen
-Schulden bij de aankoop van Spelersregistratierechten
-Omrekening van posten in vreemde valuta
-Totale inkomstenbelasting
-
-Actuele belastingen
-
-Uitgestelde belastingen
-Opbrengsten
-
-Wedstrijdopbrengsten
-
-Opbrengsten uit mediarechten
-
-Commerciële opbrengsten
-Overdracht van Spelersregistratierechten: meer- of
-minderwaarden
-
-Nieuwe standaarden en interpretaties die nog niet zijn
-toegepast
-
-N) A A AA
-
-DO AAO
-
-10
-10
-11
-11
-12
-12
-14
-14
-14
-15
-15
-15
-16
-16
-17
-17
-
-18
-
-18
+i
 
 --- pág. 5 ---
 
@@ -510,218 +441,219 @@ diensten
 
 --- pág. 8 ---
 
-GECONSOLIDEERDE FINANCIELE STATEN
+## GECONSOLIDEERDE FINANCIELE STATEN
 
-Activa in 000€ per Toelichting 30 juni 2024 30 juni 2023
+### Geconsolideerde balans
 
-Vaste activa
-
-Spelersregistratierechten, netto . 63.734 79.022
-Overige immateriële activa . 884 930
-Materiële vaste activa 23.410 24.720
-Recht-op-gebruik activa 8.741 6.473
-Vorderingen bij de verkoop van spelersregistratierechten 42.551 19.800
-Overige vaste activa 751 787
-Totaal vaste activa 140.070 131.733
-
-Vlottende activa
-
-Voorraden 912 1.346
-Handels- en andere vorderingen 9.290 6.890
-Vorderingen bij de verkoop van spelersregistratierechten 33.735 22.932
-Geldmiddelen en kasequivalenten 5.001 15.231
-Totaal vlottende activa 48.938 46.399
-
-TOTAAL ACTIVA 189.009 178.133
+| Activa in 000€ per | Toelichting | 30 juni 2024 | 30 juni 2023 |
+|---|---|---|---|
+| **Vaste activa** | | | |
+| Spelersregistratierechten, netto | 5.1 | 63.734 | 79.022 |
+| Overige immateriële activa | 5.2 | 884 | 930 |
+| Materiële vaste activa | 6 | 23.410 | 24.720 |
+| Recht-op-gebruik activa | 7 | 8.741 | 6.473 |
+| Vorderingen bij de verkoop van spelersregistratierechten | 10 | 42.551 | 19.800 |
+| Overige vaste activa | | 751 | 787 |
+| **Totaal vaste activa** | | **140.070** | **131.733** |
+| | | | |
+| **Vlottende activa** | | | |
+| Voorraden | 8 | 912 | 1.346 |
+| Handels- en andere vorderingen | 9 | 9.290 | 6.890 |
+| Vorderingen bij de verkoop van spelersregistratierechten | 10 | 33.735 | 22.932 |
+| Geldmiddelen en kasequivalenten | 11 | 5.001 | 15.231 |
+| **Totaal vlottende activa** | | **48.938** | **46.399** |
+| | | | |
+| **TOTAAL ACTIVA** | | **189.009** | **178.133** |
 
 De bijgevoegde toelichtingen vormen een integraal onderdeel van deze Geconsolideerde Financiële Staten.
+
+1
 
 --- pág. 9 ---
 
-Eigen vermogen en verplichtingen in 000€ per Toelichting 30 juni 2024 30 juni 2023
-
-Eigen vermogen
-
-Aandelenkapitaal
-
-Geconsolideerde reserves
-Herwaarderingsreserve voor pensioenen
-Totaal eigen vermogen
-
-Langlopende verplichtingen
-
-Leningen
-
-Leaseverplichtingen
-
-Schulden bij de aankoop van spelersregistratierechten
-Uitgestelde belastingschulden
-
-Pensioenverplichtingen
-
-Overige langlopende verplichtingen
-
-Voorzieningen
-
-Totaal langlopende verplichtingen
-
-Kortlopende verplichtingen
-
-Leningen 669 655
-Leaseverplichtingen 1.217 629
-Handels- en andere schulden 17.414 8.903
-Schulden bij de aankoop van spelersregistratierechten 24.006 29.092
-Belastingschulden 3.820 482
-Contractuele verplichtingen 9.260 8.298
-Overige kortlopende verplichtingen 998 1.318
-Totaal kortlopende verplichtingen 57.384 49.377
-
-TOTAAL PASSIVA 189.009 178.133
+| Eigen vermogen en verplichtingen in 000€ per | Toelichting | 30 juni 2024 | 30 juni 2023 |
+|---|---|---|---|
+| **Eigen vermogen** | | | |
+| Aandelenkapitaal | 12.1 | 34.715 | 34.715 |
+| Geconsolideerde reserves | 12.1 | 48.497 | 46.897 |
+| Herwaarderingsreserve voor pensioenen | | 122 | 0 |
+| **Totaal eigen vermogen** | | **83.334** | **81.612** |
+| | | | |
+| **Langlopende verplichtingen** | | | |
+| Leningen | 13 | 26.637 | 27.306 |
+| Leaseverplichtingen | 14 | 7.799 | 5.981 |
+| Schulden bij de aankoop van spelersregistratierechten | 16 | 10.549 | 9.668 |
+| Uitgestelde belastingschulden | 17.6 | 1.258 | 1.690 |
+| Pensioenverplichtingen | 26 | 14 | 0 |
+| Overige langlopende verplichtingen | | 55 | 70 |
+| Voorzieningen | 20 | 1.979 | 2.429 |
+| **Totaal langlopende verplichtingen** | | **48.291** | **47.144** |
+| | | | |
+| **Kortlopende verplichtingen** | | | |
+| Leningen | 13 | 669 | 655 |
+| Leaseverplichtingen | 14 | 1.217 | 629 |
+| Handels- en andere schulden | 15 | 17.414 | 8.903 |
+| Schulden bij de aankoop van spelersregistratierechten | 16 | 24.006 | 29.092 |
+| Belastingschulden | 17.2 | 3.820 | 482 |
+| Contractuele verplichtingen | 18 | 9.260 | 8.298 |
+| Overige kortlopende verplichtingen | 19 | 998 | 1.318 |
+| **Totaal kortlopende verplichtingen** | | **57.384** | **49.377** |
+| | | | |
+| **TOTAAL PASSIVA** | | **189.009** | **178.133** |
 
 De bijgevoegde toelichtingen vormen een integraal onderdeel van deze Geconsolideerde Financiële Staten.
+
+2
 
 --- pág. 10 ---
 
-Geconsolideerde resultatenrekening en andere gerealiseerde en niet-gerealiseerde
-resultaten voor het boekjaar afgesloten op
+### Geconsolideerde resultatenrekening en andere gerealiseerde en niet-gerealiseerde resultaten voor het boekjaar afgesloten op
 
-In € ‘000 Toelichting 30juni2024 30 juni 2023
-Wedstrijdopbrengsten 21.1 22.353 22.569
-Opbrengsten uit mediarechten 21.2 23.881 55.007
-Binnenlands 11.480 9.937
-Europees 12.402 45.070
-Commerciële opbrengsten 21,3 18.801 17.792
-Overige opbrengsten 21.4 3.581 4.217
-Meerw aarde bij de overdracht van spelersregistratierechten 5.1 72.855 52.177
-Overige bedrijfsopbrengsten 22 654 369
-Totale bedrijfsopbrengsten 142.125 152.130
-Aankoop van materialen, benodigdheden en overige verbruiksgoederen -2,384 -2.048
-Overige bedrijfskosten 23 -32.440 -26.280
-Lonen van spelers en kosten van technische staf 24 -53.931 -62.451
-Overige personeelskosten 25 -10.352 -8.084
-Minderw aarde bij de overdracht van spelersregistratierechten 5.1 -1.536 -1.029)
-Afschrijvingen en w aardeverminderingen van spelersregistratierechten 5.1 -29 848 -29.284
-Afschrijvingen en w aardeverminderingen van van overige immateriële 5.216
-
-activa en materiële vaste activa ° -3.570 -3.403
-Afschrijvingen en w aardevermindering van een recht-op-gebruik activa 7 -1.652 „1.467
-Overige niet-kaskosten 112 -1.963)
-Totale bedrijfskosten -135.601 „136.009
-Bedrijfswinst 6.524 16.121
-EBITDA 24 41.594 50.274
-Financiële opbrengsten 27 2.208 2.042
-Financiële kosten 27 -1.822 -1.098
-Financieel resultaat 386 944
-Winst (verlies) vóór belastingen 6.910 17.065,
-Actuele belastingen 17.1 -5.914 -4.166
-Uitgestelde belastingen 17.1 473 -551
-Totaal inkomstenbelastingen -5.442 4,717
-Winst (verlies) voor de periode 1.468 12.348|
-Toerekenbaar aan de aandeelhouders van Club Brugge NV 1.468 12.348
-Toerekenbaar aan minderheidsbelangen
-
-Andere gerealiseerde en niet-gerealiseerde resultaten
-
-niet verwerkt in de resultatenrekening
-
-Herw aardering van de toegezegde-pensioenverplichtingen 17.4 122 -48
-Actuariële winsten/verliezen ontstaan tijdens de periode 17.4 162 „64
-Belastingseffect 17.4 -41 16
-Totaal niet-gerealiseerde resultaten 122 „48
-Totaal winst (verlies) van het boekjaar 1.590 12.300
-Toerekenbaar aan de aandeelhouders van Club Brugge NV 1.590 12.300
-Toerekenbaar aan minderheidsbelangen 0 0
-
-De bijgevoegde toelichtingen vormen een integraal onderdeel van deze
-Geconsolideerde Financiële Staten.
-
---- pág. 11 ---
-
-Geconsolideerd mutatieoverzicht
-van het eigen vermogen voor het
-
-boekjaar afgesloten op Toewijsbaar aan de aandeelhouders van de groep
-In € ‘000 Toelichting Aandelenkapitaal Uitgiftepremies SeusSldeerge REENER Walen
-reserves voor pensioenen vermogen
-
-Saldo per 30 juni 2022 35.247 0 36 978 48 72.273
-Winst ( verlies) voor de periode 12.348 12.348
-Andere gerealiseerde en,
-
-niet-gerealiseerde resultaten -48 -48
-Totale winst (verlies) van het boekjaar 12.348 -48 12.300
-Transacties met eigenaars van de Vennootschap -533 -2.718 -3.251
-Dividenden 0
-Op aandelen gebaseerde
-
-betalingsregelingen 290 290
-Totaal bijdragen en uitkeringen -533 0 -2428 0 -2961
-Saldo per 30 juni 2023 34.715 0 46.698 0 81.612
-Winst ( verlies) voor de periode 1.468 1.468
-Andere gerealiseerde en
-
-niet-gerealiseerde resultaten 122 122
-Totale winst (verlies) van het boekjaar 1.468 122 1.590
-Transacties met eigenaars van de Vennootschap
-
-Dividenden
-
-Op aandelen gebaseerde
-
-betalingsregelingen 131 131
-Totaal bijdragen en uitkeringen 0 o) 131 0 131
-Saldo per 30 juni 2024 34.715 0 48.497 122 83.334
+| In € '000 | Toelichting | 30 juni 2024 | 30 juni 2023 |
+|---|---|---|---|
+| Wedstrijdopbrengsten | 21.1 | 22.353 | 22.569 |
+| Opbrengsten uit mediarechten | 21.2 | 23.881 | 55.007 |
+| *Binnenlands* | | *11.480* | *9.937* |
+| *Europees* | | *12.402* | *45.070* |
+| Commerciële opbrengsten | 21.3 | 18.801 | 17.792 |
+| Overige opbrengsten | 21.4 | 3.581 | 4.217 |
+| Meerwaarde bij de overdracht van spelersregistratierechten | 5.1 | 72.855 | 52.177 |
+| Overige bedrijfsopbrengsten | 22 | 654 | 369 |
+| **Totale bedrijfsopbrengsten** | | **142.125** | **152.130** |
+| | | | |
+| Aankoop van materialen, benodigdheden en overige verbruiksgoederen | | -2.384 | -2.048 |
+| Overige bedrijfskosten | 23 | -32.440 | -26.280 |
+| Lonen van spelers en kosten van technische staf | 24 | -53.931 | -62.451 |
+| Overige personeelskosten | 25 | -10.352 | -8.084 |
+| Minderwaarde bij de overdracht van spelersregistratierechten | 5.1 | -1.536 | -1.029 |
+| Afschrijvingen en waardeverminderingen van spelersregistratierechten | 5.1 | -29.848 | -29.284 |
+| Afschrijvingen en waardeverminderingen van van overige immateriële activa en materiële vaste activa | 5.2/6 | -3.570 | -3.403 |
+| Afschrijvingen en waardevermindering van een recht-op-gebruik activa | 7 | -1.652 | -1.467 |
+| Overige niet-kaskosten | | 112 | -1.963 |
+| **Totale bedrijfskosten** | | **-135.601** | **-136.009** |
+| | | | |
+| **Bedrijfswinst** | | **6.524** | **16.121** |
+| | | | |
+| **EBITDA** | **2.4** | **41.594** | **50.274** |
+| | | | |
+| Financiële opbrengsten | 27 | 2.208 | 2.042 |
+| Financiële kosten | 27 | -1.822 | -1.098 |
+| **Financieel resultaat** | | **386** | **944** |
+| | | | |
+| **Winst (verlies) vóór belastingen** | | **6.910** | **17.065** |
+| | | | |
+| Actuele belastingen | 17.1 | -5.914 | -4.166 |
+| Uitgestelde belastingen | 17.1 | 473 | -551 |
+| **Totaal inkomstenbelastingen** | | **-5.442** | **-4.717** |
+| | | | |
+| **Winst (verlies) voor de periode** | | **1.468** | **12.348** |
+| *Toerekenbaar aan de aandeelhouders van Club Brugge NV* | | *1.468* | *12.348* |
+| *Toerekenbaar aan minderheidsbelangen* | | | |
+| | | | |
+| **Andere gerealiseerde en niet-gerealiseerde resultaten niet verwerkt in de resultatenrekening** | | | |
+| Herwaardering van de toegezegde-pensioenverplichtingen | 17.4 | 122 | -48 |
+| *Actuariële winsten/verliezen ontstaan tijdens de periode* | 17.4 | 162 | -64 |
+| *Belastingeffect* | 17.4 | -41 | 16 |
+| **Totaal niet-gerealiseerde resultaten** | | **122** | **-48** |
+| | | | |
+| **Totaal winst (verlies) van het boekjaar** | | **1.590** | **12.300** |
+| *Toerekenbaar aan de aandeelhouders van Club Brugge NV* | | *1.590* | *12.300* |
+| *Toerekenbaar aan minderheidsbelangen* | | *0* | *0* |
 
 De bijgevoegde toelichtingen vormen een integraal onderdeel van deze Geconsolideerde Financiële Staten.
 
+3
+
+--- pág. 11 ---
+
+### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op
+
+Toewijsbaar aan de aandeelhouders van de groep
+
+| In € '000 | Toelichting | Aandelenkapitaal | Uitgiftepremies | Geconsolideerde reserves | Herwaarderingsreserve voor pensioenen | Totaal eigen vermogen |
+|---|---|---|---|---|---|---|
+| **Saldo per 30 juni 2022** | | **35.247** | **0** | **36.978** | **48** | **72.273** |
+| | | | | | | |
+| Winst( verlies) voor de periode | | | | 12.348 | | 12.348 |
+| Andere gerealiseerde en niet-gerealiseerde resultaten | | | | | -48 | -48 |
+| **Totale winst (verlies) van het boekjaar** | | | | **12.348** | **-48** | **12.300** |
+| | | | | | | |
+| Transacties met eigenaars van de Vennootschap | | | | | | |
+| Dividenden | | -533 | | -2.718 | | -3.251 |
+| Op aandelen gebaseerde betalingsregelingen | | | | 290 | | 290 |
+| **Totaal bijdragen en uitkeringen** | | **-533** | **0** | **-2428** | **0** | **-2961** |
+| | | | | | | |
+| **Saldo per 30 juni 2023** | | **34.715** | **0** | **46.898** | **0** | **81.612** |
+| | | | | | | |
+| Winst ( verlies) voor de periode | | | | 1.468 | | 1.468 |
+| Andere gerealiseerde en niet-gerealiseerde resultaten | | | | | 122 | 122 |
+| **Totale winst (verlies) van het boekjaar** | | | | **1.468** | **122** | **1.590** |
+| | | | | | | |
+| Transacties met eigenaars van de Vennootschap | | | | | | |
+| Dividenden | | | | | | |
+| Op aandelen gebaseerde betalingsregelingen | | | | 131 | | 131 |
+| **Totaal bijdragen en uitkeringen** | | **0** | **0** | **131** | **0** | **131** |
+| | | | | | | |
+| **Saldo per 30 juni 2024** | | **34.715** | **0** | **48.497** | **122** | **83.334** |
+
+De bijgevoegde toelichtingen vormen een integraal onderdeel van deze Geconsolideerde Financiële Staten.
+
+4
+
 --- pág. 12 ---
 
-Geconsolideerd kasstroomoverzicht voor het boekjaar afgesloten op
+### Geconsolideerd kasstroomoverzicht voor het boekjaar afgesloten op
 
-In € ‘000 Toelichting 30 juni 2024 30 juni 2023
-Kasstroom uit operationele activiteiten
-Winst (verlies) voor de periode 1.468 12.348
-Aanpassingen voor:
-- Afschrijvingen, waardeverminderingen en bijzondere waardeverminderingen 35.070 34139
-- Overige niet-kaskosten -112 1.978
-- Meerwaarde bij de overdracht van spelersregistratierechten 5.1 -172.855 -52177
-= Minderwaarde bij de overdracht van spelersregistratierechten 5d 1.536 1.029
-- Pensioenverplichtingen 176 0
-- Nettofinancieringskosten 27 -387 -945
-- Inkomstenbelasting 17.1 5.442 4717
--29.662 1.089
-Wijzigingen in:
-- Voorraden 597 -454
-- Handels- en andere vorderingen -2.397 -3.166
-- Overige activa 35 -195
-- Handels- en andere schulden 8.495 912
-= Contractuele verplichtingen 18 962 -188
-- Overige verplichtingen -320 -130
-Kasstroom uit operationele activiteiten -22.288 -2.132
-Betaalde rente -880 -565
-Betaalde inkomstenbelasting -2 589 -3.000
-Nettokasstromen uit / (gebruikt voor) operationele activiteiten -25.757 -5.696
-Kasstroom uit Inversteringsactiviteiten
-inkomsten uit de verkoop van spelersregistratierechten 61.360 52.581
-Verwerving van spelersregistratierechten -41.677 -59.022
-Verwerving van overige immateriële activa 5.2 -465 -851
-Verwerving van materiële vaste activa -1.731 -4.535
-Ontvangen rente 359 -4
-Nettokasstromen uit / (gebruikt voor) Investeringsactiviteiten 17.848 -11.832
-Kasstroom uit financieringsactiviteiten
-Aflossing van leningen 13 -655 -642
-Betaling van leaseverplichtingen 14 -1.514 -1.401
-Betaling van eigen aandelen 17 -3.251
-Transacties met eigenaars van de vennootschap
-Niet-beschikbare banktegoeden
-Overige -150 -304
-Nettokasstromen uit / (gebruikt voor) financieringsactiviteiten -2.319 -5.598
-Nettostijging / (-daling) in geldmiddelen en kasequivalenten -10.230 -23.126
-Geldmiddelen en kasequivalenten per 1 juli 11 15.231 38.357
-Geldmiddelen en kasequivalenten per 30 juni 11 5.001 15.231
+| In € '000 | Toelichting | 30 juni 2024 | 30 juni 2023 |
+|---|---|---|---|
+| **Kasstroom uit operationele activiteiten** | | | |
+| Winst (verlies) voor de periode | | 1.468 | 12.348 |
+| Aanpassingen voor: | | | |
+| - Afschrijvingen, waardeverminderingen en bijzondere waardeverminderingen | | 35.070 | 34.139 |
+| - Overige niet-kaskosten | | -112 | 1.978 |
+| - Meerwaarde bij de overdracht van spelersregistratierechten | 5.1 | -72.855 | -52.177 |
+| - Minderwaarde bij de overdracht van spelersregistratierechten | 5.1 | 1.536 | 1.029 |
+| - Pensioenverplichtingen | | 176 | 0 |
+| - Nettofinancieringskosten | 27 | -387 | -945 |
+| - Inkomstenbelasting | 17.1 | 5.442 | 4.717 |
+| | | -29.662 | 1.089 |
+| Wijzigingen in: | | | |
+| - Voorraden | | 597 | -454 |
+| - Handels- en andere vorderingen | | -2.397 | -3.166 |
+| - Overige activa | | 35 | -195 |
+| - Handels- en andere schulden | | 8.495 | 912 |
+| - Contractuele verplichtingen | 18 | 962 | -188 |
+| - Overige verplichtingen | | -320 | -130 |
+| **Kasstroom uit operationele activiteiten** | | **-22.288** | **-2.132** |
+| Betaalde rente | | -880 | -565 |
+| Betaalde inkomstenbelasting | | -2.589 | -3.000 |
+| **Nettokasstromen uit / (gebruikt voor) operationele activiteiten** | | **-25.757** | **-5.696** |
+| | | | |
+| **Kasstroom uit Investeringsactiviteiten** | | | |
+| Inkomsten uit de verkoop van spelersregistratierechten | | 61.360 | 52.581 |
+| Verwerving van spelersregistratierechten | | -41.677 | -59.022 |
+| Verwerving van overige immateriële activa | 5.2 | -465 | -851 |
+| Verwerving van materiële vaste activa | | -1.731 | -4.535 |
+| Ontvangen rente | | 359 | -4 |
+| | | | |
+| **Nettokasstromen uit / (gebruikt voor) investeringsactiviteiten** | | **17.848** | **-11.832** |
+| | | | |
+| **Kasstroom uit financieringsactiviteiten** | | | |
+| Aflossing van leningen | 13 | -655 | -642 |
+| Betaling van leaseverplichtingen | 14 | -1.514 | -1.401 |
+| Betaling van eigen aandelen | 17 | | -3.251 |
+| Transacties met eigenaars van de vennootschap | | | |
+| Niet-beschikbare banktegoeden | | | |
+| Overige | | -150 | -304 |
+| **Nettokasstromen uit / (gebruikt voor) financieringsactiviteiten** | | **-2.319** | **-5.598** |
+| | | | |
+| Nettostijging / (-daling) in geldmiddelen en kasequivalenten | | -10.230 | -23.126 |
+| Geldmiddelen en kasequivalenten per 1 juli | 11 | 15.231 | 38.357 |
+| **Geldmiddelen en kasequivalenten per 30 juni** | **11** | **5.001** | **15.231** |
 
-De bijgevoegde toelichtingen vormen een integraal onderdeel van deze Geconsolideerde
-Financiële Staten.
+De bijgevoegde toelichtingen vormen een integraal onderdeel van deze Geconsolideerde Financiële Staten.
+
+5
 
 --- pág. 13 ---
 
@@ -782,59 +714,38 @@ als een alternatief voor de gehanteerde maatstaven in overeenstemming met IFRS.
 
 --- pág. 14 ---
 
-2.5
+Deze APM's zijn mogelijk niet vergelijkbaar met soortgelijke maatstaven die door andere ondernemingen worden gehanteerd.
 
-Deze APM's zijn mogelijk niet vergelijkbaar met soortgelijke maatstaven die door andere
-ondernemingen worden gehanteerd.
+De huidige APM die door de Groep wordt gebruikt, wordt hierna uitgelegd en gereconcilieerd:
 
-De huidige APM die door de Groep wordt gebruikt, wordt hierna uitgelegd en
-gereconcilieerd:
+— **EBITDA** = Earnings before interest, tax, depreciation and amortization (winst voor rente, belastingen, afschrijvingen en waardeverminderingen). De EBITDA-maatstaf wordt als volgt berekend: 'Winst (verlies) voor de periode' + 'Inkomstenbelasting' + 'Financieel resultaat' + 'Afschrijvingen en waardeverminderingen op Spelersregistratierechten' + 'Afschrijvingen en waardeverminderingen van overige immateriële activa en materiële vaste activa' + 'Afschrijvingen en waardeverminderingen van een recht-op-gebruik activa'.
 
-— EBITDA = Earnings before interest, tax, depreciation and amortization (winst voor
-rente, belastingen, afschrijvingen en waardeverminderingen). De EBITDA-maatstaf
-wordt als volgt berekend: 'Winst (verlies) voor de periode’ + ‘Inkomstenbelasting' +
-‘Financieel resultaat + ‘Afschrijvingen en waardeverminderingen op
-Spelersregistratierechten' + 'Afschrijvingen en waardeverminderingen van overige
-immateriële activa en materiële vaste activa' + ‘Afschrijvingen en
-waardeverminderingen van een recht-op-gebruik activa’.
+| EBITDA-aansluiting voor het boekjaar afgesloten op | | |
+|---|---|---|
+| **In € '000** | **30 juni 2024** | **30 juni 2023** |
+| Winst (verlies) voor de periode | 1.468 | 12.348 |
+| Inkomstenbelastingen | 5.442 | 4.717 |
+| Financieel resultaat | -386 | -944 |
+| Afschrijvingen en waardeverminderingen van spelersregistratierechten | 29.848 | 29.284 |
+| Afschrijvingen en waardeverminderingen van overige immateriële activa en | | |
+| Afschrijvingen en waardeverminderingen van materiële vaste activa | 3.570 | 3.403 |
+| Afschrijvingen van recht-op-gebruik activa | 1.652 | 1.467 |
+| | | |
+| **EBITDA** | **41.594** | **50.274** |
 
-EBITDA-aansluiting voor het boekjaar afgesloten op
+#### 2.5 Gebruik van schattingen en beoordelingen
 
-In €‘000 Sroz z023
-Winst (verlies) voor de periode 1.468 12.348
-Inkomstenbelastingen 5.442 4717
-Financieel resultaat -386 -944
-Afschrijvingen en waardeverminderingen van spelersregistratierechten 29.848 29.284
-Afschrijvingen en waardeverminderingen van overige immateriële activa en
+Bij het opstellen van deze Geconsolideerde Financiële Staten heeft het management bepaalde beoordelingen gevormd en schattingen gedaan die gevolgen hebben voor de grondslagen voor de financiële verslaggeving van de Groep en de gerapporteerde bedragen van activa, passiva, opbrengsten en kosten. De werkelijke resultaten kunnen verschillen van deze schattingen.
 
-Afschrijvingen en waardeverminderingen van materiële vaste activa 3.570 3.403
-Afschrijvingen van recht-op-gebruik activa 1652 1.467
-EBITDA 41.594 50.274
+De schattingen en onderliggende veronderstellingen worden continu herzien. Herzieningen van de boekhoudkundige schattingen worden prospectief toegepast.
 
-Gebruik van schattingen en beoordelingen
+De informatie over belangrijke beoordelingen bij de toepassing van grondslagen voor financiële verslaggeving die het meest significante effect hebben op de bedragen in de Geconsolideerde Financiële Staten, is opgenomen in de volgende toelichtingen:
 
-Bij het opstellen van deze Geconsolideerde Financiële Staten heeft het management
-bepaalde beoordelingen gevormd en schattingen gedaan die gevolgen hebben voor de
-grondslagen voor de financiële verslaggeving van de Groep en de gerapporteerde
-bedragen van activa, passiva, opbrengsten en kosten. De werkelijke resultaten kunnen
-verschillen van deze schattingen.
+— Toelichting 21.2: Erkenning van binnenlandse opbrengsten uit mediarechten. De binnenlandse opbrengsten uit mediarechten moeten geschat worden in tussentijdse financiële periodes omdat deze opbrengsten afhangen van de uiteindelijke rangschikking van Club Brugge in de Jupiler Pro League. Club Brugge schat de variabele vergoeding in haar tussentijdse financiële staten in vanuit de veronderstelling dat zij tweede zal eindigen.
 
-De schattingen en onderliggende veronderstellingen worden continu herzien.
-Herzieningen van de boekhoudkundige schattingen worden prospectief toegepast.
+— Overdracht van Spelersregistratierechten en tijdstip van erkenning van earn-outs en andere voorwaardelijke vergoedingen op de overdracht van
 
-De informatie over belangrijke beoordelingen bij de toepassing van grondslagen voor
-financiële verslaggeving die het meest significante effect hebben op de bedragen in de
-Geconsolideerde Financiële Staten, is opgenomen in de volgende toelichtingen:
-
-— Toelichting 21.2: Erkenning van binnenlandse opbrengsten uit mediarechten. De
-binnenlandse opbrengsten uit mediarechten moeten geschat worden in tussentijdse
-financiële periodes omdat deze opbrengsten afhangen van de uiteindelijke
-rangschikking van Club Brugge in de Jupiler Pro League. Club Brugge schat de
-variabele vergoeding in haar tussentijdse financiële staten in vanuit de
-veronderstelling dat zij tweede zal eindigen.
-
-— Overdracht van Spelersregistratierechten en tijdstip van erkenning van earn-outs en
-andere voorwaardelijke vergoedingen op de overdracht van
+2
 
 --- pág. 15 ---
 
@@ -1816,185 +1727,108 @@ mijlpaalbetalingen en doorverkoopvergoedingen:
 
 --- pág. 34 ---
 
-5.2
+### 5.2 Overige immateriële activa
 
-5.3
+| Overige immateriële activa in 000€ | Aanschaffingswaarde | Gecumuleerde afschrijvingen en waardeverminderingen | Netto boekwaarde |
+| :--- | :--- | :--- | :--- |
+| **Per 30 juni 2022** | **1.100** | **649** | **452** |
+| Toevoegingen | 851 | 372 | |
+| Vervreemdingen | | | |
+| | | | |
+| **Per 30 juni 2023** | **1.952** | **1.021** | **930** |
+| Toevoegingen | 465 | 512 | |
+| Vervreemdingen | 4 | 4 | |
+| | | | |
+| **Per 30 juni 2024** | **2.412** | **1.528** | **884** |
 
-Overige immateriële activa
+Overige immateriële activa betreft voornamelijk software. Deze toevoegingen hebben voornamelijk betrekking op het uitbouwen van de webshop en de ontwikkeling van het data sports & business platform.
 
-Gecumuleerde afschrijvingen en Netto
-waardeverminderingen boekwaarde
+### 5.3 Waarderingstest van (im)materiële vaste activa en recht op gebruik activa
 
-Overige immateriële
+Het management heeft geconcludeerd dat er geen aanwijzingen van bijzondere waardeverminderingen waren en bijgevolg is er geen toetsing op bijzondere waardevermindering vereist voor de boekjaren afgesloten op 30 juni 2024.
 
-activa in 000€ Aanschaffingswaarde
+### 6 Materiële vaste activa
 
-Per 30 juni 2022 1.100 649 452
-
-Toevoegingen 851 372
-
-Vervreemdingen
-
-Per 30 juni 2023 1.952 1.021 930
-Toevoegingen 465 512
-Vervreemdingen 4 4
-Per 30 juni 2024 2.412 1.528 884
-
-Overige immateriële activa betreft voornamelijk software. Deze toevoegingen hebben
-voornamelijk betrekking op het uitbouwen van de webshop en de ontwikkeling van het
-data sports & business platform.
-
-Waarderingstest van (im)materiële vaste activa en recht op
-gebruik activa
-
-Het management heeft geconcludeerd dat er geen aanwijzingen van bijzondere
-waardeverminderingen waren en bijgevolg is er geen toetsing op bijzondere
-waardevermindering vereist voor de boekjaren afgesloten op 30 juni 2024.
-
-Materiële vaste activa
-
-De materiële vaste activa kunnen worden verdeeld in drie hoofdcategorieën: ‘Terreinen
-en gebouwen’, Machines, uitrusting, kantoormeubilair en overige materiële vaste activa'
-en 'Activa in aanbouw’. Mutaties in materiële vaste activa tijdens het boekjaar waren als
-volgt:
+De materiële vaste activa kunnen worden verdeeld in drie hoofdcategorieën: 'Terreinen en gebouwen', 'Machines, uitrusting, kantoormeubilair en overige materiële vaste activa' en 'Activa in aanbouw'. Mutaties in materiële vaste activa tijdens het boekjaar waren als volgt:
 
 22
 
 --- pág. 35 ---
 
-Aanschaffi
-ngs
+| Terreinen en gebouwen in 000€ | Aanschaffings waarde | Gecumuleerde afschrijvingen | Netto boekwaarde |
+|---|---|---|---|
+| **Per 30 juni 2022** | 10.753 | 1.862 | 8.891 |
+| Toevoegingen | 162 | 460 | |
+| Vervreemdingen | | | |
+| Transfers | - | | |
+| **Per 30 juni 2023** | 10.915 | 2.322 | 8.593 |
+| Toevoegingen | 5 | 460 | |
+| Vervreemdingen | | | |
+| Transfers | | | |
+| **Per 30 juni 2024** | 10.920 | 2.782 | 8.138 |
 
-Terreinen en
+| Machines, uitrusting, kantoorm eubilair en overige materiële vaste activa in 000€ | Aanschaffings waarde | Gecumulee rde afschrijvi ngen | Netto boekw aarde |
+|---|---|---|---|
+| **Per 30 juni 2022** | 24.254 | 14.032 | 10.222 |
+| Toevoegingen | 959 | 2.571 | |
+| Vervreemdingen | -149 | -106 | |
+| Transfers | - | | |
+| **Per 30 juni 2023** | 25.066 | 16.497 | 8.568 |
+| Toevoegingen | 1.267 | 2.598 | |
+| Vervreemdingen | | | |
+| Transfers | - | | |
+| **Per 30 juni 2024** | 26.332 | 19.095 | 7.237 |
 
-gebouwen in 0006 EEE
+| Activa in aanbouw in 000€ | Aanschaffings waarde |
+|---|---|
+| **Per 30 juni 2022** | 5.005 |
+| Toevoegingen | 2.554 |
+| Vervreemdingen | |
+| Transfers | |
+| **Per 30 juni 2023** | 7.559 |
+| Toevoegingen | 476 |
+| Vervreemdingen | |
+| Transfers | |
+| **Per 30 juni 2024** | 8.034 |
 
-Per 30 juni 2022
-Toevoegingen
-Vervreemdingen
-Transfers
+| TOTAAL | TOTAAL Aanschaffin gswaarde | TOTAAL Gecumuleerd e afschrijvingen | TOTAAL Netto boekwaarde |
+|---|---|---|---|
+| **Per 30 juni 2022** | 40.012 | 15.894 | 24.118 |
+| Toevoegingen | 3.676 | 3.031 | |
+| Vervreemdingen | -149 | -106 | |
+| Transfers | | | |
+| **Per 30 juni 2023** | 43.539 | 18.819 | 24.720 |
+| Toevoegingen | 1.747 | 3.058 | |
+| Vervreemdingen | - | - | |
+| Transfers | - | - | |
+| **Per 30 juni 2024** | 46.286 | 21.877 | 23.410 |
 
-Toevoegingen
-Vervreemdingen
-Transfers
+De totale netto boekwaarde van materiële vaste activa bedraagt 23,4 m eur per 30 juni 2024. De netto-boekwaarde toont een lichte daling in vergelijking met 30 juni 2023 en is voornamelijk het resultaat 1,7 m eur aan investeringen en 3,1 m eur aan afschrijvingen.
 
-Per 30 juni 2024
-
-Per 30 juni 2023 7” 10.915 7
-
-Machines, uitrusting,
-
-kantoorm eubilair en
-overige materiële
-vaste activa in 000€
-
-Per 30 juni 2022
-Toevoegingen
-Vervreemdingen
-Transfers
-
-Per 30 juni 2023
-
-Toevoegingen
-Vervreemdingen
-Transfers
-
-Per 30 juni 2024
-
-Gecum uie
-Aanschaffing erde
-swaarde afschrijvt
-
-ngen
-
-Ld
-24.254 14.032
-959 2571
-
--149 -106
-
-25.065 7” 16.497
-1267 2598
-
-26.332 7 19.095
-
-Netto
-boekw
-aarde
-
-„mm TOTAAL
-Activa in 8 TOTAAL
-be Aanschaffings … Gecumuleerd TOTAAL Netto
-aanbouw in A ans chaffin
-
-opoe waarde gswaarde e - boekwaarde
-afschrijvingen
-
-Pr
-Per 30 juni 2022
-Toevoegingen
-
-Per 30 juni 2023 ”
-Toevoegingen
-Vervreemdingen
-Transfers
-
-Per 30 juni 2024
-
-De totale netto boekwaarde van materiële vaste activa bedraagt 23,4 m eur per 30 juni 2024. De netto-boekwaarde toont een
-lichte daling in vergelijking met 30 juni 2023 en is voornamelijk het resultaat 1,7 m eur aan investeringen en 3,1 m eur aan
-
-afschrijvingen.
-
-Van de totale investeringen heeft 1,3 m eur betrekking op investeringen in voornamelijk machines, infrastructuur, verlichting
-velden, aanpassingen stadion en in apparatuur en meubilair voor het opleidingscentrum. 0,5 m eur investeringen op activa in
-aanbouw zijn hoofdzakelijk studiekosten en erelonen voor de ontwikkeling van een nieuw stadion.
+Van de totale investeringen heeft 1,3 m eur betrekking op investeringen in voornamelijk machines, infrastructuur, verlichting velden, aanpassingen stadion en in apparatuur en meubilair voor het opleidingscentrum. 0,5 m eur voor investeringen op activa in aanbouw zijn hoofdzakelijk studiekosten en erelonen voor de ontwikkeling van een nieuw stadion.
 
 23
 
 --- pág. 36 ---
 
-7 Recht-op-gebruik activa
+### 7 Recht-op-gebruik activa
 
-aleen Huurovereenkomsten voor
-gebruik activa in Terreinen en gebouwen Auto's -
-inkomende spelers
+| Recht-op-gebruik activa in 000€ | Terreinen en gebouwen | | | Auto's | | | Huurovereenkomsten voor inkomende spelers | | | Overige | | | Totaal | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | Aanschaffingswaarde | Gecum. Afschr. | Netto boekwaarde | Aanschaffingswaarde | Gecum. Afschr. | Netto boekwaarde | Aanschaffingswaarde | Gecum. Afschr. | Netto boekwaarde | Aanschaffingswaarde | Gecum. Afschr. | Netto boekwaarde | Aanschaffingswaarde | Gecum. Afschr. | Netto boekwaarde |
+| **Per 30 juni 2022** | **6.450** | **252** | **6.198** | **552** | **188** | **364** | **0** | **0** | **0** | **484** | **435** | **49** | **7.486** | **875** | **6.611** |
+| Toevoegingen | 192 | 302 | | 1.116 | 1.113 | | | | | | 52 | | 1.308 | 1.467 | |
+| Overdrachten | | | | -953 | -953 | | | | | -339 | -360 | | -1.292 | -1.313 | |
+| | | | | | | | | | | | | | | | |
+| **Per 30 juni 2023** | **6.642** | **554** | **6.088** | **716** | **349** | **367** | **0** | **0** | **0** | **145** | **127** | **18** | **7.503** | **1.030** | **6.473** |
+| Toevoegingen | 82 | 320 | | 3.334 | 865 | | 425 | 425 | | 53 | 42 | | 3.469 | 1.227 | |
+| Overdrachten | | | | -367 | -367 | | -425 | -425 | | 0 | -25 | | -367 | -392 | |
+| | | | | | | | | | | | | | | | |
+| **Per 30 juni 2024** | **6.724** | **874** | **5.850** | **3.683** | **847** | **2.836** | **0** | **0** | **0** | **198** | **144** | **54** | **10.605** | **1.865** | **8.741** |
 
-0006
+Recht-op-gebruik activa van terreinen en gebouwen houdt verband met het opleidingscentrum (Belfius Basecamp), het wedstrijdstadion The Nest, het business center in The Nest en een winkelpand in Brugge (City Shop). Het huurcontract voor het opleidingscentrum heeft een looptijd van 50 jaar en loopt af in april 2068. Aan het einde van het contract heeft de Club het recht om het contract met 49 jaar te verlengen. Dit recht op verlenging werd bij de bepaling van de looptijd van het huurcontract niet in aanmerking genomen.
 
-Overige Totaal
-
-Gecu Netto Netto Gecu
-
-Aanschaffing boek- Aanschaffing Gecum. Aanschaffing Gecum. boek- Aanschaffing Gecum. Aanschaffing m.
-
-m.
-
-s-waarde Afschr waard s-waarde Afschr. s-waarde Afschr. waard s-waarde Afschr. s-waarde Afschr
-
-. e 5
-
-Per 30 juni 2022 252 7.486 875
-
-302 1.308 1.467
-
-Toevoegingen
--1.292 1,313
-
-Overdrachten
-Per 30 juni 2023 7.503 1.030
-Toevoegingen 3469 1.227
-Overdrachten -367 -392
-
-Per 30 juni 2024 10.605 _ 1.865
-
-Recht-op-gebruik activa van terreinen en gebouwen houdt verband met het opleidingscentrum (Belfius Basecamp), het wedstrijdstadion The Nest, het business
-center in The Nest en een winkelpand in Brugge (City Shop). Het huurcontract voor het opleidingscentrum heeft een looptijd van 50 jaar en loopt af in april 2068.
-Aan het einde van het contract heeft de Club het recht om het contract met 49 jaar te verlengen. Dit recht op verlenging werd bij de bepaling van de looptijd van
-het huurcontract niet in aanmerking genomen.
-
-De netto-boekwaarde van het recht-op-gebruik van Auto's is in het boekjaar 2023/2024 toegenomen met 2,4m eur doordat nieuwe leasecontracten werden
-afgesloten voor een periode van 4 jaar in tegenstelling tot 1 jaar in het vorig boekjaar.
+De netto-boekwaarde van het recht-op-gebruik van Auto's is in het boekjaar 2023/2024 toegenomen met 2,4m eur doordat nieuwe leasecontracten werden afgesloten voor een periode van 4 jaar in tegenstelling tot 1 jaar in het vorig boekjaar.
 
 Informatie over de leaseverplichtingen die direct verband houden met de recht-op-gebruik activa, is opgenomen in toelichting 14.
 
@@ -2002,91 +1836,74 @@ Informatie over de leaseverplichtingen die direct verband houden met de recht-op
 
 --- pág. 37 ---
 
-8
+### 8 Voorraden
 
-Voorraden
+| Voorraden in 000€ per | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Handelsgoederen | 1.075 | 1.404 |
+| Voorzieningen voor verouderde voorraden | -163 | -57 |
+| **Voorraden** | **912** | **1.346** |
 
-Voorraden in 000€ per 30 Juni 2024 30 juni 2023
+De voorraden vertegenwoordigen de merchandisingartikelen in de shop van Club Brugge. Deze voorraden omvatten uitsluitend goederen aangehouden voor verkoop. Voorzieningen voor verouderde voorraden houden voornamelijk verband met merchandising (bijv. voetbalshirts) van vorige seizoenen.
 
-Handelsgoederen
-Voorzieningen voor verouderde voorraden
+### 9 Handels- en andere vorderingen
 
-Voorraden
+| Handels- en andere vorderingen in 000€ per | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Handelsvorderingen | 7.853 | 3.950 |
+| Voorziening voor dubieuze debiteuren | -69 | -56 |
+| Vooruitbetaalde kosten | 1.208 | 1.831 |
+| Overige vorderingen | 298 | 1.165 |
+| **Handels- en andere vorderingen** | **9.290** | **6.890** |
 
-De voorraden vertegenwoordigen de merchandisingartikelen in de shop van Club Brugge. Deze voorraden omvatten uitsluitend
-goederen aangehouden voor verkoop. Voorzieningen voor verouderde voorraden houden voornamelijk verband met
-merchandising (bijv. voetbalshirts) van vorige seizoenen.
-
-Handels- en andere vorderingen
-Handels- en andere vorderingen in 000€ per 30 juni 2024 30 juni 2023
-
-Handelsvorderingen
-Voorziening voor dubieuze debiteuren
-
-Vooruitbetaalde kosten
-
-Overige vorderingen
-
-Handels- en andere vorderingen
-
-Handels- en andere vorderingen omvatten geen materiële vorderingen met een resterende betalingstermijn van meer dan één
-jaar. De belangrijkste klanten binnen handelsvorderingen zijn vorderingen in het kader van sponsoring en binnenlandse
-mediarechten waar deze in vorig boekjaar reeds ontvangen was op afstuitdatum.
+Handels- en andere vorderingen omvatten geen materiële vorderingen met een resterende betalingstermijn van meer dan één jaar. De belangrijkste klanten binnen handelsvorderingen zijn vorderingen in het kader van sponsoring en binnenlandse mediarechten waar deze in vorig boekjaar reeds ontvangen was op afsluitdatum.
 
 25
 
 --- pág. 38 ---
 
-De vooruitbetaalde kosten houden verband met jaarlijkse contracten op basis van het kalenderjaar (en bijgevolg moeten zes
-maanden worden overgedragen naar het volgende boekjaar) en kosten die vooruit zijn betaald voor het volgende voetbalseizoen.
+De vooruitbetaalde kosten houden verband met jaarlijkse contracten op basis van het kalenderjaar (en bijgevolg moeten zes maanden worden overgedragen naar het volgende boekjaar) en kosten die vooruit zijn betaald voor het volgende voetbalseizoen.
 
 De overige vorderingen houden verband met terug te vorderen lening aan derden en terug te vorderen BTW.
 
 De vervaldagenbalans van de handelsvorderingen op de verslagdatum zag er als volgt uit:
 
-Handelsvorderingen - vervaldagenbalans in 000€ per 30 juni 2024 30 juni 2023
-
-Niet vervallen
-Vervallen 0 -30 dagen
-Vervallen 31 - 90 dagen
-
-Vervallen > 90 dagen
-
-Handelsvorderingen
+| Handelsvorderingen - vervaldagenbalans in 000€ per | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Niet vervallen | 3.854 | 3.586 |
+| Vervallen 0 - 30 dagen | 3.303 | 334 |
+| Vervallen 31 - 90 dagen | 644 | 18 |
+| Vervallen > 90 dagen | 51 | 13 |
+| **Handelsvorderingen** | **7.853** | **3.950** |
 
 26
 
 --- pág. 39 ---
 
-10 Vorderingen bij de verkoop van Spelersregistratierechten
+### 10 Vorderingen bij de verkoop van Spelersregistratierechten
 
-Vorderingen bij de verkoop van spelersregistratierechten in
+| Vorderingen bij de verkoop van spelersregistratierechten in 000€ per 30 juni | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Te ontvangen in het jaar 2026/2027 | 6.458 | 6.000 |
+| Te ontvangen in het jaar 2025/2026 | 36.093 | 9.458 |
+| Te ontvangen in het jaar 2024/2025 | 33.735 | 4.342 |
+| Te ontvangen in het jaar 2023/2024 | 0 | 22.932 |
+| **Vorderingen bij de verkoop van spelersregistratierechten** | **76.286** | **42.732** |
+| Langlopend | 42.551 | 19.800 |
+| Kortlopend | 33.735 | 22.932 |
+| **Vorderingen bij de verkoop van spelersregistratierechten** | **76.286** | **42.732** |
 
-000€ per 30 juni 30 juni 2024 30 juni 2023
-
-Te ontvangen in het jaar 2026/2027
-Te ontvangen in het jaar 2025/2026
-Te ontvangen in het jaar 2024/2025
-Te ontvangen in het jaar 2023/2024
-
-Vorderingen bij de verkoop van spelersregistratierechten
-
-Langlopend
-Kortlopend
-
-ij de verkoop van spelersregistratierechten
-
-De vorderingen uit de verkoop van Spelersregistratierechten houden verband met de uitgaande transfers in het huidige en de
-voorgaande jaren. De uitstaande vorderingen op meer dan één jaar (verdisconteerd) worden opgenomen als vaste activa.
+De vorderingen uit de verkoop van Spelersregistratierechten houden verband met de uitgaande transfers in het huidige en de voorgaande jaren. De uitstaande vorderingen op meer dan één jaar (verdisconteerd) worden opgenomen als vaste activa.
 
 Per 30 juni 2024 hielden de voornaamste uitstaande vorderingen bij de verkoop van Spelersregistratierechten verband met:
-— Nascimento Igor Thiago — Brentford FC
 
-— Sylla Abakar — RC Strasbourg Alsace
+— Nascimento Igor Thiago – Brentford FC
 
-— Buchanan Tajon — Inter Milan
+— Sylla Abakar – RC Strasbourg Alsace
 
-— Diatta Krépin — AS Monaco
+— Buchanan Tajon – Inter Milan
+
+— Diatta Krépin – AS Monaco
 
 27
 
@@ -2119,34 +1936,25 @@ Per 30 juni 2023 hielden de voornaamste uitstaande vorderingen bij de verkoop va
 
 --- pág. 41 ---
 
-11
+## 11 Geldmiddelen en kasequivalenten
 
-12
+| Cash middelen en cash equivalenten | 30 juni 2024 | 30 juni 2023 |
+|---|---|---|
+| | | |
+| Banksaldi | 4.966 | 15.215 |
+| Kasgeld | 35 | 16 |
+| | | |
+| **Geldmiddelen en kasequivalenten** | **5.001** | **15.231** |
 
-12.1
-
-Geldmiddelen en kasequivalenten
-
-Cash middelen en cash equivalenten 30 juni 2024 30 juni 2023
-
-Banksaldi
-Kasgeld
-
-Geldmiddelen en kasequivalenten
 Geldmiddelen en kasequivalenten omvatten kasgeld en banktegoeden.
+
 We verwijzen naar het geconsolideerd kasstroomoverzicht voor de mutaties in de geldmiddelen en kasequivalenten.
-Vermogen
 
-Aandelenkapitaal, uitgiftepremies, geconsolideerde reserves en herwaarderingsreserve voor
-pensioenen
+## 12 Vermogen
 
-De Vennootschap is in 1997 opgericht met een kapitaal van 247.894 eur en 200 aandelen. Het eigen vermogen is op 4 december
-2012 met 15,0 m eur (3,059 aandelen) verhoogd, namelijk 3,8 m eur aan kapitaal en 11,2 m eur aan uitgiftepremies. Per 21
-oktober 2019 verwierf Club Brugge de 200 resterende aandelen die Club Brugge Foundation VZW nog steeds had in Club Brugge
-NV voor een bedrag van 1,3 m eur, deels direct betaald (308.883 eur) en deels via een verhoging van een bestaande lening met
-1,0 m eur. Deze aandelen zijn onmiddellijk vernietigd. Per 25 mei 2020 is het aandelenkapitaal verhoogd door de inbreng van de
-uitgiftepremie zonder de uitgifte van nieuwe aandelen. Dat heeft het aandelenkapitaal op 15,2 m eur gebracht (vertegenwoordigd
-door 3,059 aandelen).
+## 12.1 Aandelenkapitaal, uitgiftepremies, geconsolideerde reserves en herwaarderingsreserve voor pensioenen
+
+De Vennootschap is in 1997 opgericht met een kapitaal van 247.894 eur en en 200 aandelen. Het eigen vermogen is op 4 december 2012 met 15,0 m eur (3,059 aandelen) verhoogd, namelijk 3,8 m eur aan kapitaal en 11,2 m eur aan uitgiftepremies. Per 21 oktober 2019 verwierf Club Brugge NV van de 200 resterende aandelen die Club Brugge Foundation VZW nog steeds had in Club Brugge NV voor een bedrag van 1,3 m eur, deels direct betaald (308.883 eur) en deels via een verhoging van een bestaande lening met 1,0 m eur. Deze aandelen zijn onmiddellijk vernietigd. Per 25 mei 2020 is het aandelenkapitaal verhoogd door de inbreng van de uitgifte van nieuwe aandelen zonder uitgiftepremie. Dat heeft het aandelenkapitaal op 15,2 m eur gebracht (vertegenwoordigd door 3,059 aandelen).
 
 29
 
@@ -2192,51 +2000,32 @@ Groep geen wijzigingen aangebracht aan de manier waarop zij aan kapitaalbeheer d
 
 --- pág. 43 ---
 
-13
+De Groep hoeft niet te voldoen aan enige extern opgelegde kapitaalvereisten, met uitzondering van de wettelijke minimale financieringsvereisten voor het eigen vermogen die van toepassing zijn in België, de Financial Sustainability Rules van de UEFA en de regels die worden opgelegd door de KBVB ('Koninklijke Belgische Voetbalbond'). Een uitvoerige beschrijving van de geldende regels van de KBVB kan worden geraadpleegd op 'https://www.rbfa.be/nl/competities/bondsreglement'. De regels van de UEFA kunnen worden geraadpleegd op 'https://www.uefa.com/running-competitions/integrity/financial-sustainability/'.
 
-De Groep hoeft niet te voldoen aan enige extern opgelegde kapitaalvereisten, met uitzondering van de wettelijke minimale
-financieringsvereisten voor het eigen vermogen die van toepassing zijn in België, de Financial Sustainability Rules van de VEFA
-en de regels die worden opgelegd door de KBVB (‘Koninklijke Belgische Voetbalbond’). Een uitvoerige beschrijving van de
-geldende regels van de KBVB kan worden geraadpleegd op 'https://www.rbfa.be/nl/competities/bondsreglement'. De regels van
-de UEFA kunnen worden geraadpleegd op https://www.uefa.com/running-competitions/integrity/financial-sustainability/”.
+## 13 Leningen
 
-Leningen
+| Leningen: langlopend in 000€ per | Nominale intrestvoet | Vervaldatum | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- | :--- | :--- |
+| Lening Club Brugge Foundation VZW | 1,00% | 30/06/2052 | 15.000 | 15.000 |
+| Externe banklening (Belfius) | 2,06%* | 31/03/2040 | 11.637 | 12.306 |
+| **Rentedragende schulden langlopend** | | | **26.637** | **27.306** |
 
-Nominale
+| Rentedragende schulden: kortlopend in 000€ per | Nominale intrestvoet | Vervaldatum | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- | :--- | :--- |
+| Externe banklening (Belfius) | 2,06%* | 31/03/2040 | 669 | 655 |
+| **Rentedragende schulden kortlopend** | | | **669** | **655** |
 
-ä Vervaldatum 30 juni 2024 30 juni 2023
-intrestvoet
+\*Gewogen gemiddelde nominale interestvoet (initiële lening 12,5 m eur tegen 2,19%, bijkomende lening van 2,5 m eur tegen 1,39%)
 
-Leningen: langlopend in 000€ per
-
-Lening Club Brugge Foundation VZW 1,00% 30/06/2052 15.000
-Externe banklening (Belfius) 2,06%* 31/03/2040 11.637
-Rentedragende schulden langlopend 26.637
-
-Rentedragende schulden: kortlopend in 000€ Nominale
-
-Dr HIENGE Vervaldatum 30 juni 2024 30 juni 2023
-
-Externe banklening (Belfius) 2,06%* 31/03/2040 669 655
-Rentedragende schulden kortlopend 669 655
-
-“Gewogen gemiddelde nominale interestvoet (initiële lening 12,5 m eur tegen 2,19%, bijkomende lening van 2,5 m eur tegen 1,39%)
-
-Kasstroomtabel rentedragende schulden in
-000€
-
-Nettomutaties kortlopende en langlopende
-rentedragende schulden
-
-Kasstroommutatie
-
-30 juni 2024 30 juni 2023
-
-Link met kasstroomtabel:
-
-Opname van leningen
-Aflossing van leningen
-Nettomutatie
+| Kasstroomtabel rentedragende schulden in 000€ | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Nettomutaties kortlopende en langlopende rentedragende schulden | -655 | -642 |
+| **Kasstroommutatie** | **-655** | **-642** |
+| | | |
+| **Link met kasstroomtabel:** | | |
+| Opname van leningen | - | - |
+| Aflossing van leningen | -655 | -642 |
+| **Nettomutatie** | **-655** | **-642** |
 
 31
 
@@ -2271,122 +2060,76 @@ het einde van elk kwartaal worden terugbetaald over een periode van 20 jaar.
 
 De onderstaande tabel bevat de contractuele looptijden (terugbetaling van leningen en rente) van leningen:
 
-In €000
-
-Lening Club Brugge Foundation VZW
-
-Externe banklening
-
-<1 jaar
-1-5 jaar
->5 jaar
-<1 jaar
-1-5 jaar
->5 jaar
-
-30 juni 2024
-
-30 juni 2023
+| In €'000 | | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- | :--- |
+| Lening Club Brugge Foundation VZW | < 1 jaar | 150 | 150 |
+| | 1-5 jaar | 600 | 600 |
+| | >5 jaar | 18.450 | 18.600 |
+| Externe banklening | < 1 jaar | 917 | 917 |
+| | 1-5 jaar | 3.668 | 3.668 |
+| | >5 jaar | 9.857 | 10.774 |
 
 33
 
 --- pág. 46 ---
 
-14 Leaseverplichtingen
+## 14 Leaseverplichtingen
 
-U in Terremententaevonwenn Mauro S
-
-Per 30 juni 2022
-Toevoegingen
-
-Terugbetalingen
-Per 30 juni 2023
-
-Toevoegingen
-Terugbetalingen
-
-Per 30 juni 2024
+| Leaseverplichtingen in 000€ | Terreinen en gebouwen | Auto's | Huur inkomende spelers | Overige | Totaal | Korte termijn | Lange termijn |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Per 30 juni 2022** | **6.264** | **364** | **0** | **55** | **6.682** | **625** | **6.058** |
+| Toevoegingen | 192 | 1.116 | | | 1.308 | | |
+| Terugbetalingen | -234 | -1.113 | | -34 | -1.380 | | |
+| **Per 30 juni 2023** | **6.223** | **367** | **0** | **21** | **6.610** | **629** | **5.981** |
+| Toevoegingen | 82 | 2.890 | 425 | 53 | 3.026 | | |
+| Terugbetalingen | -234 | -367 | -425 | -19 | -619 | | |
+| **Per 30 juni 2024** | **6.071** | **2.890** | **0** | **56** | **9.016** | **1.217** | **7.799** |
 
 Leaseverplichtingen zijn als volgt betaalbaar:
 
-Toekomstige minimale
-
-Huur
-inkomende Overige
-spelers
-
-Contante waarde
-
-Totaal
-
-Toekomstige
-
-Korte termijn Lange termijn
-
-625 6.058
-
-Contante waarde
-
-Leaseverplichtingen in 0006 « van minimale minimale van minimale
-betalingen . ĳ :
-
-betalingen betalingen betalingen
-
-30 juni 2024 30 juni 2024 30 juni 2023 30 juni 2023
-
-| Minder dan één jaar 1.387 169 1.217 752 122 629
-
-| Tussen één en vijf jaar 3.521 4TT 3.045 1.465 437 1.028
-
-Meer dan vijf jaar 6.023 1.269 4.755 6.298 1.345 4.953
-
-Totaal leasin 10.932 1.914 9.016 8.514 1.904 6.610
+| Leaseverplichtingen in 000€ | Toekomstige minimale betalingen | Rente | Contante waarde van minimale betalingen | Toekomstige minimale betalingen | Rente | Contante waarde van minimale betalingen |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | **30 juni 2024** | **2024** | **30 juni 2024** | **30 juni 2023** | **2023** | **30 juni 2023** |
+| Minder dan één jaar | 1.387 | 169 | 1.217 | 752 | 122 | 629 |
+| Tussen één en vijf jaar | 3.521 | 477 | 3.045 | 1.465 | 437 | 1.028 |
+| Meer dan vijf jaar | 6.023 | 1.269 | 4.755 | 6.298 | 1.345 | 4.953 |
+| **Totaal leasing** | **10.932** | **1.914** | **9.016** | **8.514** | **1.904** | **6.610** |
 
 34
 
 --- pág. 47 ---
 
-15
+## 15 Handels- en andere schulden
 
-16
+| Handels- en andere schulden in 000€ per | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Handelsschulden | 7.708 | 4.415 |
+| Btw-schulden | 1.257 | -4 |
+| Personeelsgerelateerde schulden | 8.365 | 4.410 |
+| Toe te rekenen kosten | 84 | 81 |
+| **Handels- en andere schulden** | **17.414** | **8.903** |
 
-Handels- en andere schulden
-
-Handels- en andere schulden in 000€ per 30 Juni 2024 30 juni 2023
-Handelsschulden 7.108 4.415
-Btw-schulden 1.257 -4
-Personeelsgerelateerde schulden 8.365 4,410
-Toe te rekenen kosten 84 81
-Handels- en andere schulden 17.414 8.903
-
-De handelsschulden bedragen 7,7 m eur op 30 juni 2024. De stijging van de
-handelsschulden met 3,3 m eur is voornamelijk te wijten aan de hogere
-leveranciersschulden in het boekjaar afgesloten op 30 juni 2024.
+De handelsschulden bedragen 7,7 m eur op 30 juni 2024. De stijging van de handelsschulden met 3,3 m eur is voornamelijk te wijten aan de hogere leveranciersschulden in het boekjaar afgesloten op 30 juni 2024.
 
 De BTW-schulden bedragen 1,3 m eur op 30 juni 2024.
 
-De personeelsgerelateerde schulden bedragen 8,4 m eur op 30 juni 2024. De
-openstaande personeelsgerelateerde schulden zijn 4 m eur hoger dan het jaar voordien.
-Deze stijging is vooral is te wijten aan de kampioenenpremie in het seizoen 2023-2024.
+De personeelsgerelateerde schulden bedragen 8,4 m eur op 30 juni 2024. De openstaande personeelsgerelateerde schulden zijn 4 m eur hoger dan het jaar voordien. Deze stijging is vooral is te wijten aan de kampioenenpremie in het seizoen 2023-2024.
 
-Schulden bij de aankoop van Spelersregistratierechten
+## 16 Schulden bij de aankoop van Spelersregistratierechten
 
-Schulden bij de aankoop van
+| Schulden bij de aankoop van spelersregistratierechten in 000€ per | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Te betalen in het jaar 2026/2027 | 1.805 | |
+| Te betalen in het jaar 2025/2026 | 8.744 | 2.564 |
+| Te betalen in het jaar 2024/2025 | 24.006 | 7.104 |
+| Te betalen in het jaar 2023/2024 | 0 | 29.092 |
+| | | |
+| **Spelersregistratieschulden** | **34.555** | **38.761** |
+| Langlopend | 10.549 | 9.668 |
+| Kortlopend | 24.006 | 29.092 |
+| **Spelersregistratieschulden** | **34.555** | **38.761** |
 
-spelersregistratierechten in 000€ per Si prra AUE SA ij ZAP
-Te betalen in het jaar 2026/2027 1.805
-
-Te betalen in het jaar 2025/2026 8.744 2.564
-Te betalen in het jaar 2024/2025 24.006 7.104
-Te betalen in het jaar 2023/2024 0 29.092
-Spelersregistratieschulden 34.555 38.761
-Langlopend 10.549 9.668
-Kortlopend 24.006 29.092
-Spelersregistratieschulden 34.555 38.761
-
-De schulden bij de aankoop van Spelersregistratierechten houden verband met de
-inkomende transfers in het huidige jaar en voorgaande jaren. De uitstaande schulden op
-meer dan één jaar worden geboekt als langlopende verplichtingen.
+De schulden bij de aankoop van Spelersregistratierechten houden verband met de inkomende transfers in het huidige jaar en voorgaande jaren. De uitstaande schulden op meer dan één jaar worden geboekt als langlopende verplichtingen.
 
 35
 
@@ -2486,118 +2229,68 @@ en de fiscale balans:
 
 --- pág. 50 ---
 
-17.4
+| In 000€ | 30 juni 2024 | 30 juni 2023 | Mutatie | Uitgestelde belastingen 25,00% |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tijdelijk verschil op balansniveau** | | | | |
+| Spelersregistratierechten, netto | 5.371 | 7.397 | -2.026 | -506 |
+| Vorderingen bij de verkoop van spelersregistratierechten | 0 | 0 | 0 | 0 |
+| Schulden bij de aankoop van spelersregistratierechten | -50 | -500 | 450 | -113 |
+| Overige tijdelijke verschillen | -289 | -137 | -152 | 38 |
+| Impact verandering van belastingtarief | | | | |
+| **Impact op balans** | **5.032** | **6.760** | **-1.728** | **432** |
+| | | | | |
+| **Uitgestelde belastingen** | | | | |
+| Uitgestelde belastingschulden | -1.258 | -1.690 | 432 | |
+| **Subtotaal uitgestelde belastingen** | **-1.258** | **-1.690** | **432** | |
+| | | | | |
+| **Totale impact op balans** | **3.774** | **5.070** | **-1.296** | **432** |
+| | | | | |
+| **Uitgestelde belastingen in de totale Winst / (verlies) van het boekjaar** | | | | |
+| Uitgestelde belastingen in resultatenrekening | 473 | -551 | | |
+| Uitgestelde belastingen in niet-gerealiseerde resultaten | -41 | 16 | | |
+| **Totale impact op de totale Winst / (verlies) van het boekjaar** | **432** | **-535** | | |
 
-Uitgestelde
+### 17.4 Bedragen opgenomen in de andere gerealiseerde en niet-gerealiseerde resultaten
 
-In 000€ 30 juni 2024 30 juni 2023 Mutatie /
+De inkomstenbelasting opgenomen in de andere gerealiseerde en niet-gerealiseerde resultaten houden verband met de actuariële winsten of verliezen van de toegezegde-pensioenregeling.
 
-belastingen
-25,00%
-
-Tijdelijk verschil op balansniveau
-
-Spelersregistratierechten, netto 5.371 7.397 -2026 -506
-
-Vorderingen bij de verkoop van 0 0 0 0
-
-spelersregistratierechten
-
-Schulden bij de aankoop van spelersregistratierechten -50 -500 450 -113
-
-Overige tijdelijke verschillen -289 -137 -152 38
-
-Impact verandering van belastingtarief
-
-Impact op balans 5.032 6.760 -1.728 432
-
-Uitgestelde belastingen
-
-Uitgestelde belastingschulden -1.258 -1.690 432
-
-Subtotaal uitgestelde belastingen „1.258 „1.690 432
-
-Totale impact op balans 3.774 5.070 __ 1.296 432
-
-Uitgestelde belastingen in de totale Winst / (verlies)
-
-van het boekjaar
-
-Uitgestelde belastingen in resultatenrekening 473 -551
-
-Uitgestelde belastingen in niet-gerealiseerde resultaten -41 16
-
-Totale impact op de totale Winst / (verlies) van het
-
-boekjaar 432 -535
-
-Bedragen opgenomen in de andere gerealiseerde en niet-
-gerealiseerde resultaten
-
-De inkomstenbelasting opgenomen in de andere gerealiseerde en niet-gerealiseerde
-resultaten houden verband met de actuariële winsten of verliezen van de toegezegde-
-pensioenregeling.
-
-Actuariële winsten/verliezen van de toegezegde-pensioenregeling
-
-In 000€ voor het boekjaar afgesloten op 30 j 30 juni 2024 30 juni 2023
-Bedrag voor belastingen 162 -64
-Belasting (kost) opbrengst -41 16
-Na belastingen 122 -48
+| Actuariële winsten/verliezen van de toegezegde-pensioenregeling in 000€ voor het boekjaar afgesloten op 30 juni | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Bedrag voor belastingen | 162 | -64 |
+| Belasting (kost) opbrengst | -41 | 16 |
+| | | |
+| **Na belastingen** | **122** | **-48** |
 
 38
 
 --- pág. 51 ---
 
-17.5
+### 17.5 Aansluiting van het effectieve belastingtarief
 
-18
+| In 000€ voor het boekjaar afgesloten op 30 juni | 30 juni 2024 in % | 30 juni 2024 € '000 | 30 juni 2023 in % | 30 juni 2023 € '000 |
+| :--- | :--- | :--- | :--- | :--- |
+| Winst (verlies) voor de periode | | 1.468 | | 12.348 |
+| Lasten uit hoofde van inkomstenbelasting | | -5.442 | | -4.717 |
+| **Winst exclusief belastingen** | | **6.910** | | **17.065** |
+| | | | | |
+| Belastingtarief | -25,00% | -1.727 | -25,00% | -4.266 |
+| Niet-aftrekbare uitgaven | | -1.045 | | -360 |
+| Belastbare voorzieningen | | -17 | | -17 |
+| Te lage (te hoge) voorziening in vorige periodes | | -37 | | -16 |
+| Verliezen in het huidige jaar waarvoor er geen uitgestelde belastingvordering was opgenomen (Subs) | | -41 | | -58 |
+| Ontoereikende vooruitbetalingen | | -84 | | |
+| Aanpassing actuele belastingen voor vorige periodes | | -2.490 | | |
+| | **-78.75%** | **-5.442** | **-27.64%** | **-4.717** |
 
-19
+## 18 Contractuele verplichtingen
 
-Aansluiting van het effectieve belastingtarief
+De contractuele verplichtingen (vooruitbetalingen) bedroegen 9,3 m eur op 30 juni 2024 en 8,3 m eur op 30 juni 2023. Contractuele verplichtingen houden verband met vooruitbetalingen van Wedstrijdopbrengsten en commerciële opbrengsten, zoals bijvoorbeeld vooruitbetaalde abonnementen, en worden doorgaans grotendeels ontvangen vóór de start van de competitie van het volgende jaar, bij de start van het voetbalseizoen.
 
-30 juni 2024 30 juni 2023
+Gezien de aard van de contractuele verplichtingen worden ze volledig erkend als opbrengsten in het volgende boekjaar wanneer de daarmee verband houdende prestatieverplichtingen zijn vervuld.
 
-In 000€ voor het boekjaar afgesloten op 30
+## 19 Overige kortlopende verplichtingen
 
-| in % € '000 in % € '000
-Winst (verlies) voor de periode 1.468 12.348
-Lasten uit hoofde van inkomstenbelasting -5.442 -4,717
-Winst exclusief belastingen 6.910 17.065
-Belastingtarief -25,00% -1.727 __-25,00% -4.266
-Niet-aftrekbare uitgaven -1.045 -360
-Belastbare voorzieningen -17 -17
-Te lage (te hoge) voorziening in vorige
-periodes -37 -16
-Verliezen in het huidige jaar waarvoor er geen
-uitgestelde belastingvordering was
-opgenomen (Subs) -41 -58
-Ontoereikende vooruitbetalingen -84
-Aanpassing actuele belastingen voor vorige
-periodes -2.490
-
--18.75% -5.442  -27.64% -4.717
-
-Contractuele verplichtingen
-
-De contractuele verplichtingen (vooruitbetalingen) bedroegen 9,3 m eur op 30 juni 2024
-en 8,3 m eur op 30 juni 2023. Contractuele verplichtingen houden verband met
-vooruitbetalingen van Wedstrijdopbrengsten en commerciële opbrengsten, zoals
-bijvoorbeeld vooruitbetaalde abonnementen, en worden doorgaans grotendeels
-ontvangen vóór de start van de competitie van het volgende jaar, bij de start van het
-voetbalseizoen.
-
-Gezien de aard van de contractuele verplichtingen worden ze volledig erkend als
-
-opbrengsten in het volgende boekjaar wanneer de daarmee verband houdende
-prestatieverplichtingen zijn vervuld.
-
-Overige kortlopende verplichtingen
-
-De overige kortlopende verplichtingen bedragen 1 m eur per 30 juni 2024 tegenover 1.3
-m eur per 30 juni 2023. De overige kortlopende verplichtingen houden verband met het
-uitstaand krediet op de betaalkaarten van de fans.
+De overige kortlopende verplichtingen bedragen 1 m eur per 30 juni 2024 tegenover 1.3 m eur per 30 juni 2023. De overige kortlopende verplichtingen houden verband met het uitstaand krediet op de betaalkaarten van de fans.
 
 39
 
@@ -2718,43 +2411,20 @@ verslagperiode heeft gespeeld in zowel de binnenlandse als de Europese competiti
 
 --- pág. 54 ---
 
-21.2
+### 21.2 Opbrengsten uit mediarechten
 
-Opbrengsten uit mediarechten
+| In 000€ | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Opbrengsten uit mediarechten - Binnenlands | 11.480 | 9.937 |
+| Opbrengsten uit mediarechten - Europees | 12.402 | 45.070 |
 
-In 000€ 30 juni 2024 30 juni 2023
+De Vennootschap genereert media-opbrengsten in het kader van binnenlandse en internationale overeenkomsten over uitzendrechten die worden aangegaan door de Pro League en één of meer geselecteerde media-omroepen, en tussen UEFA en zijn belangrijkste sponsors en media-omroepen. Krachtens deze overeenkomsten betalen de media-omroepen mediarechten aan de Pro League en UEFA, die het betrokken aandeel in de mediarechten rechtstreeks aan de Vennootschap betalen op basis van een afzonderlijk vastgelegde verdeelsleutel. De Vennootschap verwijst naar opbrengsten gegenereerd uit binnenlandse overeenkomsten met de Pro League en uit internationale overeenkomsten met UEFA als respectievelijk 'opbrengsten uit mediarechten - binnenlands' en 'opbrengsten uit mediarechten - Europees'. Opbrengsten uit binnenlandse en Europese mediarechten worden samen geboekt onder "opbrengsten uit mediarechten".
 
-Opbrengsten uit mediarechten - Binnenlands 9.937
+Binnenlandse mediarechten worden verdeeld onder de clubs die deelnemen aan het Belgisch kampioenschap op basis van een verdeelsleutel die rekening houdt met diverse door de Raad van Bestuur van de Pro League goedgekeurde parameters.
 
-Opbrengsten uit mediarechten - Europees 12.402 45.070
+De Vennootschap genereerde opbrengsten uit binnenlandse mediarechten voor 11,5 m eur in het boekjaar afgesloten op 30 juni 2024 en 9,9 m eur in het boekjaar afgesloten op 30 juni 2023. In het boekjaar afgesloten op 30 juni 2024 zijn de opbrengsten uit binnenlandse mediarechten hoger met als belangrijkste reden het behalen van de 1e plaats in het seizoen 2023/2024 ipv de 4e plaats in seizoen 2022/2023.
 
-De Vennootschap genereert media-opbrengsten in het kader van binnenlandse en
-internationale overeenkomsten over uitzendrechten die worden aangegaan door de Pro
-League en één of meer geselecteerde media-omroepen, en tussen UEFA en zijn
-belangrijkste sponsors en media-omroepen. Krachtens deze overeenkomsten betalen
-de media-omroepen mediarechten aan de Pro League en UEFA, die het betrokken
-aandeel in de mediarechten rechtstreeks aan de Vennootschap betalen op basis van
-een afzonderlijk vastgelegde verdeelsleutel. De Vennootschap verwijst naar
-opbrengsten gegenereerd uit binnenlandse overeenkomsten met de Pro League en uit
-internationale overeenkomsten met UEFA als respectievelijk ‘opbrengsten uit
-mediarechten - binnenlands’ en ‘opbrengsten uit mediarechten - Europees’.
-Opbrengsten uit binnenlandse en Europese mediarechten worden samen geboekt onder
-“opbrengsten uit mediarechten”.
-
-Binnenlandse mediarechten worden verdeeld onder de clubs die deelnemen aan het
-Belgisch kampioenschap op basis van een verdeelsleutel die rekening houdt met diverse
-door de Raad van Bestuur van de Pro League goedgekeurde parameters.
-
-De Vennootschap genereerde opbrengsten uit binnenlandse mediarechten voor 11,5 m
-eur in het boekjaar afgesloten op 30 juni 2024 en 9,9 m eur in het boekjaar afgesloten
-op 30 juni 2023. In het boekjaar afgesloten op 30 juni 2024 zijn de opbrengsten uit
-binnenlandse mediarechten hoger met als belangrijkste reden het behalen van de 1°
-plaats in het seizoen 2023/2024 ipv de 4° plaats in seizoen 2022/2023.
-
-De opbrengsten uit mediarechten — Europees dalen met 32,6 m eur naar 12,4 m eur ten
-opzichte van vorig jaar. De belangrijkste reden voor deze daling is het aantreden in de
-UEFA Conference League ipv de meer lucratieve UEFA Champions League, ondanks
-het doorstoten tot de halve finale van de VEFA Conference League.
+De opbrengsten uit mediarechten – Europees dalen met 32,6 m eur naar 12,4 m eur ten opzichte van vorig jaar. De belangrijkste reden voor deze daling is het aantreden in de UEFA Conference League ipv de meer lucratieve UEFA Champions League, ondanks het doorstoten tot de halve finale van de UEFA Conference League.
 
 42
 
@@ -2807,51 +2477,37 @@ in Qatar.
 
 --- pág. 56 ---
 
-22
+## 22 Overige bedrijfsopbrengsten
 
-23
+| Overige bedrijfsopbrengsten in 000€ voor het boekjaar afgesloten op | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Lidgeld | 48 | 51 |
+| Giften | 41 | 100 |
+| Overige | 565 | 218 |
+| | | |
+| **Overige bedrijfsopbrengsten** | **654** | **369** |
 
-Overige bedrijfsopbrengsten
+De overige bedrijfsopbrengsten stijgen met 0,3 m eur tot 0,7 m eur voor het boekjaar afgesloten op 30 juni 2024, tegenover 0,4 m eur voor het boekjaar afgesloten op 30 juni 2023. De stijging is voornamelijk te verklaren door de doorrekening van kosten aan clubs van uitgeleende spelers.
 
-Overige bedrijfsopbrengsten
+## 23 Overige bedrijfskosten
 
-In 000€ voor het boekjaar afgesloten op Stulpen PE reid EES
-Lidgeld 48 51
-Giften 41 100
-Overige 565 218
-Overige bedrijfsopbrengsten 654 369
+| Overige bedrijfskosten in 000€ voor het boekjaar afgesloten op | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Algemene administratie | 6.754 | 6.363 |
+| Huur en andere diensten | 2.253 | 2.069 |
+| Organisatie, apparatuur en beveiliging | 9.976 | 8.543 |
+| Reiskosten | 2.728 | 1.981 |
+| Nutsvoorzieningen, onderhoud en reparatie | 3.467 | 3.360 |
+| Hotels, restaurants en recepties | 2.339 | 1.653 |
+| Consulting- en andere advieskosten | 1.940 | 1.120 |
+| Interim | 488 | 222 |
+| Overige belastingen | 2.496 | 968 |
+| | | |
+| **Overige bedrijfskosten** | **32.440** | **26.280** |
 
-De overige bedrijfsopbrengsten stijgen met 0,3 m eur tot 0,/ m eur voor het boekjaar
-afgesloten op 30 juni 2024, tegenover 0,4 m eur voor het boekjaar afgesloten op 30
-juni 2023. De stijging is voornamelijk te verklaren door de doorrekening van kosten aan
-clubs van uitgeleende spelers.
+De overige bedrijfskosten stegen met 6,2 m eur tot 32,4 m eur voor het boekjaar afgesloten op 30 juni 2024, tegenover 26,3 m eur voor het boekjaar afgesloten op 30 juni 2023.
 
-Overige bedrijfskosten
-
-Overige bedrijfskosten
-
-In 000€ voor het boekjaar afgesloten op Stepan) OE sl prm AS)
-Algemene administratie 6.754 6.363
-Huur en andere diensten 2,253 2.069
-Organisatie, apparatuur en beveiliging 9,976 8.543
-Reiskosten 2.728 1.981
-Nutsvoorzieningen, onderhoud en reparatie 3.467 3.360
-Hotels, restaurants en recepties 2.339 1.653
-Consulting- en andere advieskosten 1.940 1.120
-Interim 488 222
-Overige belastingen 2.496 968
-Overige bedrijfskosten 32.440 26.280
-
-De overige bedrijfskosten stegen met 6,2 m eur tot 32,4 m eur voor het boekjaar
-afgesloten op 30 juni 2024, tegenover 26,3 m eur voor het boekjaar afgesloten op 30
-juni 2023.
-
-De stijging van de overige bedrijfskosten tussen het boekjaar afgesloten op 30 juni 2023
-en het boekjaar afgesloten op 30 juni 2024 was vooral toe te schrijven aan hogere kosten
-gerelateerd aan de extra wedstijden in de UEFA Conference League met name voor
-organisatie, apparatuur en beveiliging, reiskosten, onderhoud en reparatie, kosten voor
-hotels, restaurants en recepties. De stijging in overige belastingen heeft betrekking op
-een stijging van de indirecte belastingen.
+De stijging van de overige bedrijfskosten tussen het boekjaar afgesloten op 30 juni 2023 en het boekjaar afgesloten op 30 juni 2024 was vooral toe te schrijven aan hogere kosten gerelateerd aan de extra wedstrijden in de UEFA Conference League met name voor organisatie, apparatuur en beveiliging, reiskosten, onderhoud en reparatie, kosten voor hotels, restaurants en recepties. De stijging in overige belastingen heeft betrekking op een stijging van de indirecte belastingen.
 
 44
 
@@ -2915,39 +2571,31 @@ nalatigheidsinteresten.
 
 --- pág. 58 ---
 
-25
+## 25 Overige personeelskosten
 
-Overige personeelskosten
+| Overige personeelskosten | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Overige personeelskosten | 7.224 | 5.806 |
+| op aandelen gebaseerde betalingen | 132 | 229 |
+| Socialezekerheidsbijdragen | 1.998 | 1.526 |
+| Toegezegde-pensioenregelingskosten | 292 | 243 |
+| Overige kosten | 706 | 281 |
+| | | |
+| **Overige personeelskosten** | **10.352** | **8.084** |
 
-Overige personeelskosten 30 juni 2024 30 juni 2023
-Overige personeelskosten 7,224 5.806
-op aandelen gebaseerde betalingen 132 229
-Socialezekerheidsbijdragen 1.998 1.526
-Toegezegde-pensioenregekingskosten 292 243
-Overige kosten 706 281
-Overige personeelskosten 10.352 8.084
+De overige personeelskosten stegen tot 10,4 m eur voor het boekjaar afgesloten op 30 juni 2024, tegenover 8,1 m eur voor het boekjaar afgesloten op 30 juni 2023.
 
-De overige personeelskosten stegen tot 10,4 m eur voor het boekjaar afgesloten op 30
-juni 2024, tegenover 8,1 m eur voor het boekjaar afgesloten op 30 juni 2023.
+Deze stijging kan worden verklaard door het opvullen van openstaande vacatures en het toekennen van een kampioenenpremie aan de personeelsleden.
 
-Deze stijging kan worden verklaard door het opvullen van openstaande vacatures en het
-toekennen van een kampioenenpremie aan de personeelsleden.
+### Op aandelen gebaseerde betalingsovereenkomsten
 
-Op aandelen gebaseerde betalingsovereenkomsten
+Op 30 juni 2024 had de Groep één aandelenoptieplan, welke zal afgewikkeld worden met de levering van aandelen.
 
-Op 30 juni 2024 had de Groep één aandelenoptieplan, welke zal afgewikkeld worden
-met de levering van aandelen.
+#### A. Beschrijving van de op aandelen gebaseerde betalingsovereenkomsten
 
-A. Beschrijving van de op aandelen gebaseerde betalingsovereenkomsten
+Op 18 januari 2022 heeft de Groep een op aandelen gebaseerd optieplan opgezet, welke het management op sleutelposities het recht geeft om aandelen in de Groep te kopen. Onder dit programma hebben houders van verworven opties het recht om aandelen te kopen tegen de marktprijs van de aandelen op de datum van toekenning. Momenteel is dit programma beperkt tot leden van het management.
 
-Op 18 januari 2022 heeft de Groep een op aandelen gebaseerd optieplan opgezet, welke
-het management op sleutelposities het recht geeft om aandelen in de Groep te kopen.
-Onder dit programma hebben houders van verworven opties het recht om aandelen te
-kopen tegen de marktprijs van de aandelen op de datum van toekenning. Momenteel is
-dit programma beperkt tot leden van het management.
-
-De belangrijkste voorwaarden zijn als volgt; alle opties worden afgewikkeld door de
-fysieke levering van aandelen:
+De belangrijkste voorwaarden zijn als volgt; alle opties worden afgewikkeld door de fysieke levering van aandelen:
 
 46
 
@@ -3018,66 +2666,48 @@ die werden gebruikt bij de bepaling van de reêle waarde zijn als volgt:
 
 --- pág. 60 ---
 
-26
+| | Tranche 1 | Tranche 2 |
+| :--- | :--- | :--- |
+| Reële waarde op datum van toekenning | 4,64 EUR | 1,78 EUR |
+| Uitoefenprijs | 17 EUR | 17 EUR |
+| Verwachte looptijd | 5,5 jaar | 5,5 jaar |
+| Verwachte dividend | 0 | 0 |
+| Verwachte volatiliteit | 33,4% | 33,4% |
+| Risicovrije rentevoet (gebaseerd op overheidsobligaties) | 0,1% | 0,1% |
 
-Tranche 1 Tranche 2
-Reële waarde op datum van toekenning 4,64 EUR 1,78 EUR
-Uitoefenprijs 17 EUR 17 EUR
-Verwachte looptijd 5,5 jaar 5,5 jaar
-Verwachte dividend 0 0
-Verwachte volatiliteit 33,4% 33,4%
-Risicovrije rentevoet (gebaseerd op overheidsobligaties) 0,1% 0,1%
+De verwachte volatiliteit is gebaseerd op een toetsing van de historische volatiliteit van gelijkaardige concurrenten, met name over de historische periode in overeenstemming met de verwachte looptijd.
 
-De verwachte volatiliteit is gebaseerd op een toetsing van de historische volatiliteit van
-gelijkaardige concurrenten, met name over de historische periode in overeenstemming
-met de verwachte looptijd.
-
-C. Overzicht van uitstaande aandelenopties
+#### C. Overzicht van uitstaande aandelenopties
 
 Het aantal en de uitoefenprijs van de opties onder het aandelenoptieplan zijn als volgt:
 
-30/06/2024 30/06/2023
-Aantal opties Uitoefenprijs | Aantal opties Uitoefenprijs
-(€) (€)
-Uitstaand per 01/07/2023 161.160 17 244 963 17
-Toegekend tijdens het jaar = - - 5
-Opgegeven tijdens het jaar - - 83.303 =
+| | 30/06/2024 Aantal opties | 30/06/2024 Uitoefenprijs (€) | 30/06/2023 Aantal opties | 30/06/2023 Uitoefenprijs (€) |
+| :--- | :--- | :--- | :--- | :--- |
+| Uitstaand per 01/07/2023 | 161.160 | 17 | 244.963 | 17 |
+| Toegekend tijdens het jaar | - | - | - | - |
+| Opgegeven tijdens het jaar | - | - | 83.303 | - |
+| Uitgeoefend tijdens het jaar | - | - | - | - |
+| Vervallen tijdens het jaar | - | - | - | - |
+| **Uitstaand per 30/06/2024** | **161.160** | **17** | **161.160** | **17** |
+| Uitoefenbaar 30/06/2022 | - | - | - | - |
 
-Uitgeoefend tijdens het jaar = - - -
-
-Vervallen tijdens het jaar
-
-Uitstaand per 30/06/2024 161.160 17 161.160 17
-
-Uitoefenbaar 30/06/2022 - - n -
-
-In het boekjaar 2022/2023 werden 83.803 opties opgegeven omdat één van de
-begunstigden de Groep heeft verlaten en dus niet voldoet aan de overeenkomst
-verbonden dienstverleningsvoorwaarde.
+In het boekjaar 2022/2023 werden 83.803 opties opgegeven omdat één van de begunstigden de Groep heeft verlaten en dus niet voldoet aan de overeenkomst verbonden dienstverleningsvoorwaarde.
 
 In de loop van het boekjaar 2023/2024 werden geen aandelenopties uitgeoefend.
 
-Pensioenverplichtingen na uitdiensttreding
+## 26 Pensioenverplichtingen na uitdiensttreding
 
-Nettoactief/(nettoverplichting) uit
-hoofde van toegezegde pensioenrechten „14 0
+| Personeelsvergoeding | 30 juni 2024 | 30 juni 2023 |
+| :--- | :--- | :--- |
+| Nettoactief/(nettoverplichting) uit hoofde van toegezegde pensioenrechten | -14 | 0 |
 
-De Vennootschap draagt bij tot de volgende toegezegde-bijdragenregelingen voor na
-uitdiensttreding in België:
+De Vennootschap draagt bij tot de volgende toegezegde-bijdragenregelingen voor na uitdiensttreding in België:
 
-— De toegezegde-bijdragenregeling voor algemene werknemers. Deze regeling biedt
-een vast bedrag bij pensionering, een dekking voor overlijden in dienst en een
-afstand van premiedekking voor alle werknemers met uitzondering van de
-(jongeren)trainers en arbeiders. De premie van de werkgever wordt uitgedrukt als
-een percentage van een referentiesalaris (6,5% van het laagste tussen het
-referentiesalaris en het geplafonneerd salaris, plus 8,5% op het gedeelte van het
-referentiesalaris dat hoger is dan het geplafonneerd salaris).
+— De toegezegde-bijdragenregeling voor algemene werknemers. Deze regeling biedt een vast bedrag bij pensionering, een dekking voor overlijden in dienst en een afstand van premiedekking voor alle werknemers met uitzondering van de (jongeren)trainers en arbeiders. De premie van de werkgever wordt uitgedrukt als een percentage van een referentiesalaris (6,5% van het laagste tussen het referentiesalaris en het geplafonneerd salaris, plus 8,5% op het gedeelte van het referentiesalaris dat hoger is dan het geplafonneerd salaris).
 
-— De toegezegde-bijdragenregeling voor profspelers. Deze regeling biedt een vast
-bedrag bij pensionering en een dekking voor overlijden in dienst voor alle
+— De toegezegde-bijdragenregeling voor profspelers. Deze regeling biedt een vast bedrag bij pensionering en een dekking voor overlijden in dienst voor alle
 
 48
-
 
 --- pág. 61 ---
 
@@ -3129,50 +2759,31 @@ bijdragenregelingen.
 
 --- pág. 62 ---
 
-26.2
+### 26.2 Mutaties in nettoactief (nettoverplichting) uit hoofde van toegezegde pensioenrechten
 
-Mutaties in nettoactief (nettoverplichting) uit hoofde van toegezegde pensioenrechten
+De volgende tabel bevat een aansluiting tussen de begin- en eindsaldi voor het nettoactief (de nettoverplichting) uit hoofde van toegezegde pensioenrechten en hun componenten:
 
-De volgende tabel bevat een aansluiting tussen de begin- en eindsaldi voor het nettoactief (de nettoverplichting)
-uit hoofde van toegezegde pensioenrechten en hun componenten:
-
-Brutoverplichting uit hoofde van Reële waarde van Nettoactief (nettoverplichting) uit hoofde
-toegezegde pensioenrechten fondsbeleggingen van toegezegde pensioenrechten
-
-In 000€ voor het boekjaar afgesloten op 30 juni 2024 _ 30juni2023 30juni2024 30juni2023 30 juni 2024 30 juni 2023
-Saldo per 1 juli -45.138 -39.401 45.138 39401 | __ 00}
-
-Opgenomen in de resultatenrekening
-Aan het boekjaar toegerekende
-pensioenbijdragen
-
-Pensioenbijdragen van vorige periodes
-Rentebaten (/-lasten)
-
-Opgenomen in de niet-gerealiseerde
-resultaten
-Herwaarderingswinsten/(-verlizen)
-- Actuariële winst/(verlies) uit:
-
-- demografische veronderstellingen
-
-- financiële veronderstellingen
-
-- ervaringsaanpassingen
-
-= rendement op fondsbeleggingen zonder
-
-rentebaten
-Effect van wisselkoerswijzigingen
-
-Overige
-Bijdragen betaald door de werkgever
-Uitbetaalde vergoedingen
-Belastingen op bijdragen
-Verzekeringspremies in verband met
-risicodekkingen
-
-Saldo per 30 juni -46.679 -45.138 46.665 45.138 4
+| In 000€ voor het boekjaar afgesloten op | Brutoverplichting uit hoofde van toegezegde pensioenrechten 30 juni 2024 | Brutoverplichting uit hoofde van toegezegde pensioenrechten 30 juni 2023 | Reële waarde van fondsbeleggingen 30 juni 2024 | Reële waarde van fondsbeleggingen 30 juni 2023 | Nettoactief (nettoverplichting) uit hoofde van toegezegde pensioenrechten 30 juni 2024 | Nettoactief (nettoverplichting) uit hoofde van toegezegde pensioenrechten 30 juni 2023 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Saldo per 1 juli | -45.138 | -39.401 | 45.138 | 39.401 | 0 | 0 |
+| **Opgenomen in de resultatenrekening** | | | | | | |
+| Aan het boekjaar toegerekende pensioenbijdragen | -5.097 | -8.064 | | | -5.097 | -8.064 |
+| Pensioenbijdragen van vorige periodes | | | | | | |
+| Rentebaten (/ -lasten) | -1.569 | -987 | 1.664 | 1.033 | 95 | 46 |
+| **Opgenomen in de niet-gerealiseerde resultaten** | | | | | | |
+| Herwaarderingswinsten/(-verliezen) | | | | | | |
+| - Actuariële winst/(verlies) uit: | | | | | | |
+| - demografische veronderstellingen | -2 | 53 | | | -2 | 53 |
+| - financiële veronderstellingen | 846 | 339 | | | 846 | 339 |
+| - ervaringsaanpassingen | | | | | | |
+| - rendement op fondsbeleggingen zonder rentebaten | | | -953 | -438 | -953 | -438 |
+| Effect van wisselkoerswijzigingen | | | | | | |
+| **Overige** | | | | | | |
+| Bijdragen betaald door de werkgever | | | 5.097 | 8.064 | 5.097 | 8.064 |
+| Uitbetaalde vergoedingen | 3.661 | 1.961 | -3.661 | -1.961 | | |
+| Belastingen op bijdragen | 596 | 944 | -596 | -944 | | |
+| Verzekeringspremies in verband met risicodekkingen | 23 | 17 | -23 | -17 | | |
+| Saldo per 30 juni | -46.679 | -45.138 | 46.665 | 45.138 | -14 | 0 |
 
 50
 
@@ -3538,42 +3149,21 @@ Staten in overeenstemming met IFRS deelt).
 
 --- pág. 70 ---
 
-30.2 Transacties met verbonden partijen
+### 30.2 Transacties met verbonden partijen
 
-In 000€ 30 juni 2024 30 juni 2023
-Totale Uitstaand Totale Totale Uitstaand Totale
-De e bedrij Invester Uitstaande en e bedrij Investe Uitstaande
-bedrijfsopbreng . . bedrijfsopbreng : :
-een vordering _fs- ingen schulden vordering fs- ringen schulden
+*In 000€*
 
-en kosten el kosten
+| | 30 juni 2024 Totale bedrijfsopbrengsten | 30 juni 2024 Uitstaand e vordering en | 30 juni 2024 Totale bedrijfs-kosten | 30 juni 2024 Investeringen | 30 juni 2024 Uitstaande schulden | 30 juni 2023 Totale bedrijfsopbrengsten | 30 juni 2023 Uitstaand e vordering en | 30 juni 2023 Totale bedrijfs-kosten | 30 juni 2023 Investeringen | 30 juni 2023 Uitstaande schulden |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Aandeelhouders | 284 | 0 | -575 | | -236 | 14 | 0 | -533 | | 0 |
+| Uitvoerend management | 38 | 11 | -1.238 | | -263 | 36 | 0 | -832 | | -34 |
+| Overige | 174 | 0 | -566 | 157 | -15.029 | 182 | 0 | -372 | 138 | -15.179 |
 
-en
-Aandeelhouders 284 0 -5/75 -236 0 -533
-0
-0)
+De uitstaande te betalen bedragen in de categorie Overige houden verband met een lening van Club Brugge Foundation VZW (zie ook toelichting 16), De Foundation werkt samen met Club Brugge om haar rol op het vlak van maatschappelijk verantwoord ondernemen in te vullen door lokale, nationale en internationale gemeenschappen te ondersteunen via projecten die verband houden met sport, sociale integratie, welzijn en onderwijs. De Investeringen in de categorie Overige houden verband met de consultancyskosten voor het Nieuw Stadion-project.
 
-14 0
-Uitvoerend 38 11 -1.238 -263 36 -832 -34
-management
+De transacties met het uitvoerend management zijn voornamelijk gelinkt aan diensten die worden geleverd zoals overeengekomen in de dienstverleningsovereenkomsten met het uitvoerend management. Al deze personeelsvergoedingen zijn kortetermijnpersoneelsvergoedingen. Uitvoerend management omvat enkel de CEO, en de Vennootschap beschouwt het uitvoerend management als 'Key management' zoals beschreven in IAS 24.
 
-82
-
-174 0 _-566 157 -15.029 1 -372 138 -15.179
-
-De uitstaande te betalen bedragen in de categorie Overige houden verband met een lening van Club Brugge Foundation VZW
-(zie ook toelichting 16). De Foundation werkt samen met Club Brugge om haar rol op het vlak van maatschappelijk verantwoord
-ondernemen in te vullen door lokale, nationale en internationale gemeenschappen te ondersteunen via projecten die verband
-houden met sport, sociale integratie, welzijn en onderwijs. De Investeringen in de categorie Overige houden verband met de
-consultancykosten voor het Nieuw Stadion-project.
-
-De transacties met het uitvoerend management zijn voornamelijk gelinkt aan diensten die worden geleverd zoals
-overeengekomen in de dienstverleningsovereenkomsten met het uitvoerend management. Al deze personeelsvergoedingen zijn
-kortetermijnpersoneelsvergoedingen. Uitvoerend management omvat enkel de CEO, en de Vennootschap beschouwt het
-uitvoerend management als ‘Key management’ zoals beschreven in IAS 24.
-
-Transacties met Aandeelhouders omvatten de kosten voor diensten die worden geleverd zoals overeengekomen in de
-dienstverleningsovereenkomsten met de Aandeelhouders.
+Transacties met Aandeelhouders omvatten de kosten voor diensten die worden geleverd zoals overeengekomen in de dienstverleningsovereenkomsten met de Aandeelhouders.
 
 58
 
@@ -4112,91 +3702,47 @@ Verslag van de commissaris aan de algemene vergadering inzake de geconsolideerde
 
 --- pág. 81 ---
 
-[BDO
+| BDO |
+| :--- |
 
-die wij identificeren gedurende onze
-controle.
+die wij identificeren gedurende onze controle.
 
-OVERIGE DOOR WET- EN REGELGEVING
-GESTELDE EISEN
+**OVERIGE DOOR WET- EN REGELGEVING GESTELDE EISEN**
 
-Verantwoordelijkheden van het
-bestuursorgaan
+**Verantwoordelijkheden van het bestuursorgaan**
 
-Het bestuursorgaan is verantwoordelijk
-voor het opstellen en de inhoud van het
-jaarverslag over de geconsolideerde
-jaarrekening.
+Het bestuursorgaan is verantwoordelijk voor het opstellen en de inhoud van het jaarverslag over de geconsolideerde jaarrekening.
 
-Verantwoordelijkheden van de
-commissaris
+**Verantwoordelijkheden van de commissaris**
 
-In het kader van onze opdracht en
-overeenkomstig de Belgische bijkomende
-norm (herziene versie 2020) bij de in
-België van toepassing zijnde internationale
-controlestandaarden (ISA's), ís het onze
-verantwoordelijkheid om, in alle van
-materieel belang zijnde opzichten, het
-jaarverslag over de geconsolideerde
-jaarrekening te verifiëren, alsook verslag
-over deze aangelegenheid uit te brengen.
+In het kader van onze opdracht en overeenkomstig de Belgische bijkomende norm (herziene versie 2020) bij de in België van toepassing zijnde internationale controlestandaarden (ISA's), is het onze verantwoordelijkheid om, in alle van materieel belang zijnde opzichten, het jaarverslag over de geconsolideerde jaarrekening te verifiëren, alsook verslag over deze aangelegenheid uit te brengen.
 
-Aspecten betreffende het jaarverslag
-over de geconsolideerde jaarrekening
+**Aspecten betreffende het jaarverslag over de geconsolideerde jaarrekening**
 
-Na het uitvoeren van specifieke
-werkzaamheden op het jaarverslag over de
-geconsolideerde jaarrekening zijn wij van
-oordeel dat dit jaarverslag overeenstemt
-met de geconsolideerde jaarrekening voor
-hetzelfde boekjaar en is opgesteld
-overeenkomstig het artikel 3:32 van het
-Wetboek van vennootschappen en
-verenigingen.
+Na het uitvoeren van specifieke werkzaamheden op het jaarverslag over de geconsolideerde jaarrekening zijn wij van oordeel dat dit jaarverslag overeenstemt met de geconsolideerde jaarrekening voor hetzelfde boekjaar en is opgesteld overeenkomstig het artikel 3:32 van het Wetboek van vennootschappen en verenigingen.
 
-In de context van onze controle van de
-geconsolideerde jaarrekening, zijn wij
-tevens verantwoordelijk voor het
-overwegen, in het bijzonder op basis van
-de kennis verkregen in de controle, of het
-jaarverslag over de geconsolideerde
-jaarrekening een afwijking van materieel
+In de context van onze controle van de geconsolideerde jaarrekening, zijn wij tevens verantwoordelijk voor het overwegen, in het bijzonder op basis van de kennis verkregen in de controle, of het jaarverslag over de geconsolideerde jaarrekening een afwijking van materieel belang bevat, hetzij informatie die onjuist vermeld is of anderszins misleidend is. In het licht van de werkzaamheden die wij hebben uitgevoerd, dienen wij u geen afwijking van materieel belang te melden.
 
-belang bevat, hetzij informatie die onjuist
-vermeld is of anderszins misleidend is. In
-het licht van de werkzaamheden die wij
-hebben uitgevoerd, dienen wij u geen
-afwijking van materieel belang te melden.
+**Vermeldingen betreffende de onafhankelijkheid**
 
-Vermeldingen betreffende de
-onafhankelijkheid
-
-e Ons bedrijfsrevisorenkantoor en ons
-netwerk hebben geen opdrachten die
-onverenigbaar zijn met de wettelijke
-controle van de geconsolideerde
-jaarrekening verricht, en ons
-bedrijfsrevisorenkantoor is in de loop
-van ons mandaat onafhankelijk gebleven
-tegenover de Groep.
+* Ons bedrijfsrevisorenkantoor en ons netwerk hebben geen opdrachten die onverenigbaar zijn met de wettelijke controle van de geconsolideerde jaarrekening verricht, en ons bedrijfsrevisorenkantoor is in de loop van ons mandaat onafhankelijk gebleven tegenover de Groep.
 
 Roeselare, 4 oktober 2024
 
-Digitally signed by Veerle Catry
-Ns 4 (Authenticalion)
-Ù a” br ON: cneVeerle Catry
-ST (Authentication), c=BE
-PLEK Date 2024 10 04 11:38:11
-Ad d +02'00'
+[Handtekening]
 
-BDO Bedrijfsrevisoren BV
-Commissaris
-Vertegenwoordigd door Veerle Catry*
+Digitally signed by Veerle Catry (Authentication)  
+DN: cn=Veerle Catry (Authentication), c=BE  
+Date: 2024.10.04 11:38:11 +02'00'
 
-Bedrijfsrevisor
-*Optredend voor een vennootschap
+BDO Bedrijfsrevisoren BV  
+Commissaris  
+Vertegenwoordigd door Veerle Catry*  
+Bedrijfsrevisor  
+\*Optredend voor een vennootschap
 
-CLUB BRUGGE NV
+---
+CLUB BRUGGE NV  
+Verslag van de commissaris aan de algemene vergadering inzake de geconsolideerde jaarrekening over het boekjaar afgesloten op 30 juni 2024  
+2.
 
-Verslag van de commissaris aan de algemene vergadering inzake de geconsolideerde jaarrekening over het boekjaar afgesloten op 30 juni 2024 z.

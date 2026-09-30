@@ -335,219 +335,118 @@ Codes Boekjaar Vorig boekjaar
 
 --- pág. 7 ---
 
-Nr. BE 0668.426.703 VOL 3.2
-Toel. | Codes Boekjaar Vorig boekjaar
-PASSIVA
-EIGEN VERMOGEN 10/15 7.113.440 2.930.847
-Kapitaal 6.7.1 | 10 43.332.750 24.712.000
-Geplaatst kapitaal 100 43.332.750 24.712.000
-Niet-opgevraagd kapitaal 101
-Uitgiftepremies 11
-Herwaarderingsmeerwaarden 12
-Reserves 13
-Wettelijke reserve 130
-Onbeschikbare reserves 131
-Voor eigen aandelen 1310
-Andere 1311
-Belastingvrije reserves 132
-Beschikbare reserves 133
-Overgedragen winst (verlies) (+)/(-) 14 -36.219.310 -21.781.153
-Kapitaalsubsidies 15
-Voorschot aan de vennoten op de verdeling van het
-netto-actief 19
-VOORZIENINGEN EN UITGESTELDE
-BELASTINGEN 16 109.020 109.020
-Voorzieningen voor risico's en kosten 160/5 109.020 109.020
-Pensioenen en soortgelijke verplichtingen 160
-Fiscale lasten 161
-Grote herstellings- en onderhoudswerken 162
-Milieuverplichtingen 163
-Overige risico's en kosten 6.8 | 164/5 109.020 109.020
-Uitgestelde belastingen 168
-SCHULDEN 17/49 5.941.736 10.733.604
-Schulden op meer dan één jaar 69 | 17 2.048.621 8.045.372
-Financiële schulden 170/4 2.048.621 8.045.372
-Achtergestelde leningen 170
-Niet-achtergestelde obligatieleningen 171
-Leasingschulden en soortgelijke schulden 172
-Kredietinstellingen 173
-Overige leningen 174 2.048.621 8.045.372
-Handelsschulden 175
-Leveranciers 1750
-Te betalen wissels 1751
-Ontvangen vooruitbetalingen op bestellingen 176
-Overige schulden 178/9
-Schulden op ten hoogste één jaar 6.9 | 42/48 3.509.261 2.293.839
-Schulden op meer dan één jaar die binnen het jaar
-vervallen 42
-Financiële schulden 43
-Kredietinstellingen 430/8
-Overige leningen 439
-Handelsschulden 44 2.636.611 1.901.672
-Leveranciers 440/4 2.636.611 1.901.672
-Te betalen wissels 441
-Ontvangen vooruitbetalingen op bestellingen 46
-Schulden met betrekking tot belastingen,
-bezoldigingen en sociale lasten 69 | 45 805.013 296.555
-Belastingen 450/3 71.567
-Bezoldigingen en sociale lasten 454/9 733.446 296.555
-Overige schulden 47/48 67.638 95.613
-Overlopende rekeningen 6.9 | 492/3 383.854 394.393
-TOTAAL VAN DE PASSIVA 10/49 13.164.195 13.773.471
+Nr. BE 0668.426.703 | VOL 3.2
 
-7145
+**PASSIVA**
 
+| | Toel. | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|---|
+| **EIGEN VERMOGEN** | | 10/15 | 7.113.440 | 2.930.847 |
+| **Kapitaal** | 6.7.1 | 10 | 43.332.750 | 24.712.000 |
+| Geplaatst kapitaal | | 100 | 43.332.750 | 24.712.000 |
+| Niet-opgevraagd kapitaal | | 101 | | |
+| **Uitgiftepremies** | | 11 | | |
+| **Herwaarderingsmeerwaarden** | | 12 | | |
+| **Reserves** | | 13 | | |
+| Wettelijke reserve | | 130 | | |
+| Onbeschikbare reserves | | 131 | | |
+| Voor eigen aandelen | | 1310 | | |
+| Andere | | 1311 | | |
+| Belastingvrije reserves | | 132 | | |
+| Beschikbare reserves | | 133 | | |
+| **Overgedragen winst (verlies)** (+)/(-) | | 14 | -36.219.310 | -21.781.153 |
+| **Kapitaalsubsidies** | | 15 | | |
+| **Voorschot aan de vennoten op de verdeling van het netto-actief** | | 19 | | |
+| **VOORZIENINGEN EN UITGESTELDE BELASTINGEN** | | 16 | 109.020 | 109.020 |
+| **Voorzieningen voor risico's en kosten** | | 160/5 | 109.020 | 109.020 |
+| Pensioenen en soortgelijke verplichtingen | | 160 | | |
+| Fiscale lasten | | 161 | | |
+| Grote herstellings- en onderhoudswerken | | 162 | | |
+| Milieuverplichtingen | | 163 | | |
+| Overige risico's en kosten | 6.8 | 164/5 | 109.020 | 109.020 |
+| **Uitgestelde belastingen** | | 168 | | |
+| **SCHULDEN** | | 17/49 | 5.941.736 | 10.733.604 |
+| **Schulden op meer dan één jaar** | 6.9 | 17 | 2.048.621 | 8.045.372 |
+| Financiële schulden | | 170/4 | 2.048.621 | 8.045.372 |
+| Achtergestelde leningen | | 170 | | |
+| Niet-achtergestelde obligatieleningen | | 171 | | |
+| Leasingschulden en soortgelijke schulden | | 172 | | |
+| Kredietinstellingen | | 173 | | |
+| Overige leningen | | 174 | 2.048.621 | 8.045.372 |
+| Handelsschulden | | 175 | | |
+| Leveranciers | | 1750 | | |
+| Te betalen wissels | | 1751 | | |
+| Ontvangen vooruitbetalingen op bestellingen | | 176 | | |
+| Overige schulden | | 178/9 | | |
+| **Schulden op ten hoogste één jaar** | 6.9 | 42/48 | 3.509.261 | 2.293.839 |
+| Schulden op meer dan één jaar die binnen het jaar vervallen | | 42 | | |
+| Financiële schulden | | 43 | | |
+| Kredietinstellingen | | 430/8 | | |
+| Overige leningen | | 439 | | |
+| Handelsschulden | | 44 | 2.636.611 | 1.901.672 |
+| Leveranciers | | 440/4 | 2.636.611 | 1.901.672 |
+| Te betalen wissels | | 441 | | |
+| Ontvangen vooruitbetalingen op bestellingen | | 46 | | |
+| Schulden met betrekking tot belastingen, bezoldigingen en sociale lasten | 6.9 | 45 | 805.013 | 296.555 |
+| Belastingen | | 450/3 | 71.567 | |
+| Bezoldigingen en sociale lasten | | 454/9 | 733.446 | 296.555 |
+| Overige schulden | | 47/48 | 67.638 | 95.613 |
+| **Overlopende rekeningen** | 6.9 | 492/3 | 383.854 | 394.393 |
+| **TOTAAL VAN DE PASSIVA** | | 10/49 | 13.164.195 | 13.773.471 |
+
+7/45
 
 --- pág. 8 ---
 
-Nr. BE 0668.426.703
+Nr. BE 0668.426.703 | VOL 4
 
-VOL 4
+**RESULTATENREKENING**
 
-RESULTATENREKENING
-
-Bedrijfsopbrengsten
-Omzet
-Voorraad goederen in bewerking en gereed product
-en bestellingen in uitvoering: toename (afname) (+)/(-)
-Geproduceerde vaste activa
-Andere bedrijfsopbrengsten
-Niet-recurrente bedrijfsopbrengsten
-Bedrijfskosten
-Handelsgoederen, grond- en hulpstoffen
-Aankopen
-Voorraad: afname (toename) (+)
-Diensten en diverse goederen
-Bezoldigingen, sociale lasten en pensioenen (+)/(-)
-Afschrijvingen en waardeverminderingen op
-oprichtingskosten, op immateriële en materiële vaste
-activa
-Waardeverminderingen op voorraden, op bestellingen
-in uitvoering en op handelsvorderingen: toevoegingen
-
-(terugnemingen) (+)
-Voorzieningen voor risico's en kosten: toevoegingen
-(bestedingen en terugnemingen) (+)/(-)
-
-Andere bedrijfskosten
-Als herstructureringskosten geactiveerde
-
-bedrijfskosten (-)
-Niet-recurrente bedrijfskosten
-Bedrijfswinst (Bedrijfsverlies) (+)/(-)
-
-Financiële opbrengsten
-Recurrente financiële opbrengsten
-Opbrengsten uit financiële vaste activa
-Opbrengsten uit vlottende activa
-Andere financiële opbrengsten
-Niet-recurrente financiële opbrengsten
-Financiële kosten
-Recurrente financiële kosten
-Kosten van schulden
-Waardeverminderingen op vlottende activa
-andere dan voorraden, bestellingen in
-uitvoering en handelsvorderingen: toevoegingen
-(terugnemingen) (+)/(-)
-Andere financiële kosten
-Niet-recurrente financiële kosten
-Winst (Verlies) van het boekjaar vóór belasting (+/(-)
-Onttrekking aan de uitgestelde belastingen
-Overboeking naar de uitgestelde belastingen
-Belastingen op het resultaat (+)/(-)
-Belastingen
-Regularisering van belastingen en terugneming van
-voorzieningen voor belastingen
-Winst (Verlies) van het boekjaar (+)/(-)
-Onttrekking aan de belastingvrije reserves
-Overboeking naar de belastingvrije reserves
-Te bestemmen winst (verlies) van het boekjaar (+)/(-)
-
-Toel.
-
-6.10
-
-6.10
-6.12
-
-6.10
-
-6.10
-6.10
-
-6.10
-
-6.12
-
-6.11
-6.12
-
-6.11
-
-6.12
-
-6.13
-
-Codes Boekjaar Vorig boekjaar
-70/76A 7.628.061 2.801.941
-70 5.341.608 1.536.938
-71
-
-72
-
-74 2.057.654 1.263.823
-76A 228.800 1.179
-60/66A 21.866.695 10.478.785
-60 568.177 158.750
-600/8 621.447 144.926
-609 -53.270 13.825
-
-61 7.550.802 3.422.019
-62 9.888.374 5.341.597
-630 3.016.365 1.375.507
-631/4 26.650 27.639
-635/8
-
-640/8 141.769 115.146
-649
-
-66A 674.559 38.126
-9901 -14.238.634 -1.676.844
-75/76B 2.580 755
-75 2.580 755
-750
-
-751
-
-752/9 2.580 755
-76B
-
-65/66B 201.494 183.343
-65 201.494 183.343
-650 187.652 146.750
-651
-
-652/9 13.842 36.593
-66B
-
-9903 -14.437.548 -1.859.432
-780
-
-680
-
-67/77 610 638
-670/3 610 638
-77
-
-9904 -14.438.158 -7.860.070
-789
-
-689
-
-9905 -14.438.158 -7.860.070
+| | Toel. | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|---|
+| **Bedrijfsopbrengsten** | | 70/76A | 7.628.061 | 2.801.941 |
+| Omzet | 6.10 | 70 | 5.341.608 | 1.536.938 |
+| Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-) | | 71 | | |
+| Geproduceerde vaste activa | | 72 | | |
+| Andere bedrijfsopbrengsten | 6.10 | 74 | 2.057.654 | 1.263.823 |
+| Niet-recurrente bedrijfsopbrengsten | 6.12 | 76A | 228.800 | 1.179 |
+| **Bedrijfskosten** | | 60/66A | 21.866.695 | 10.478.785 |
+| Handelsgoederen, grond- en hulpstoffen | | 60 | 568.177 | 158.750 |
+| Aankopen | | 600/8 | 621.447 | 144.926 |
+| Voorraad: afname (toename) (+)/(-) | | 609 | -53.270 | 13.825 |
+| Diensten en diverse goederen | | 61 | 7.550.802 | 3.422.019 |
+| Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 6.10 | 62 | 9.888.374 | 5.341.597 |
+| Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | | 630 | 3.016.365 | 1.375.507 |
+| Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | 6.10 | 631/4 | 26.650 | 27.639 |
+| Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | 6.10 | 635/8 | | |
+| Andere bedrijfskosten | 6.10 | 640/8 | 141.769 | 115.146 |
+| Als herstructureringskosten geactiveerde bedrijfskosten (-) | | 649 | | |
+| Niet-recurrente bedrijfskosten | 6.12 | 66A | 674.559 | 38.126 |
+| **Bedrijfswinst (Bedrijfsverlies)** (+)/(-) | | 9901 | -14.238.634 | -7.676.844 |
+| **Financiële opbrengsten** | | 75/76B | 2.580 | 755 |
+| Recurrente financiële opbrengsten | | 75 | 2.580 | 755 |
+| Opbrengsten uit financiële vaste activa | | 750 | | |
+| Opbrengsten uit vlottende activa | | 751 | | |
+| Andere financiële opbrengsten | 6.11 | 752/9 | 2.580 | 755 |
+| Niet-recurrente financiële opbrengsten | 6.12 | 76B | | |
+| **Financiële kosten** | | 65/66B | 201.494 | 183.343 |
+| Recurrente financiële kosten | 6.11 | 65 | 201.494 | 183.343 |
+| Kosten van schulden | | 650 | 187.652 | 146.750 |
+| Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | | 651 | | |
+| Andere financiële kosten | | 652/9 | 13.842 | 36.593 |
+| Niet-recurrente financiële kosten | 6.12 | 66B | | |
+| **Winst (Verlies) van het boekjaar vóór belasting** (+)/(-) | | 9903 | -14.437.548 | -7.859.432 |
+| **Onttrekking aan de uitgestelde belastingen** | | 780 | | |
+| **Overboeking naar de uitgestelde belastingen** | | 680 | | |
+| **Belastingen op het resultaat** (+)/(-) | 6.13 | 67/77 | 610 | 638 |
+| Belastingen | | 670/3 | 610 | 638 |
+| Regularisering van belastingen en terugneming van voorzieningen voor belastingen | | 77 | | |
+| **Winst (Verlies) van het boekjaar** (+)/(-) | | 9904 | -14.438.158 | -7.860.070 |
+| **Onttrekking aan de belastingvrije reserves** | | 789 | | |
+| **Overboeking naar de belastingvrije reserves** | | 689 | | |
+| **Te bestemmen winst (verlies) van het boekjaar** (+)/(-) | | 9905 | -14.438.158 | -7.860.070 |
 
 8/45
-
 
 --- pág. 9 ---
 
@@ -1337,61 +1236,68 @@ Boekjaar
 
 --- pág. 19 ---
 
-Nr. BE 0668.426.703
+Nr. BE 0668.426.703 | VOL 6.7.1
 
-VOL 6.7.1
+**STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR**
 
-STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR
+**STAAT VAN HET KAPITAAL**
 
-Codes Boekjaar Vorig boekjaar
-STAAT VAN HET KAPITAAL
-Maatschappelijk kapitaal
-Geplaatst kapitaal per einde van het boekjaar 100P XXXXXXKKKK 24.712.000
-Geplaatst kapitaal per einde van het boekjaar 100 43.332.750
-Codes Bedragen Aantal aandelen
-Wijzigingen tijdens het boekjaar
-12/08/2019 8.100.000 32.400
-31/12/2019 6.520.750 26.083
-10/03/2020 4.000.000 16.000
-Samenstelling van het kapitaal
-Soorten aandelen
-Aandelen op naam 8702 XXXXKKKKKK 173.331
-Gedematerialiseerde aandelen 8703 DO 004
-Codes | Niet-opgevraagd bedrag Opgevraagd, niet-
-gestort bedrag
-Niet-gestort kapitaal
-Niet-opgevraagd kapitaal 101 p00000 0000
-Opgevraagd, niet-gestort kapitaal 8712 XXXXKKKKKK
-Aandeelhouders die nog moeten volstorten
-Codes Boekjaar
-Eigen aandelen
-Gehouden door de vennootschap zelf
-Kapitaalbedrag 8721
-Aantal aandelen 8722
-Gehouden door haar dochters
-Kapitaalbedrag 8731
-Aantal aandelen 8732
-Verplichtingen tot uitgifte van aandelen
-Als gevolg van de uitoefening van conversierechten
-Bedrag van de lopende converteerbare leningen 8740
-Bedrag van het te plaatsen kapitaal 8741
-Maximum aantal uit te geven aandelen 8742
-Als gevolg van de uitoefening van inschrijvingsrechten
-Aantal inschrijvingsrechten in omloop 8745
-Bedrag van het te plaatsen kapitaal 8746
-Maximum aantal uit te geven aandelen 8747
-Toegestaan, niet-geplaatst kapitaal 8751
-Codes Boekjaar
-Aandelen buiten kapitaal
-Verdeling
-Aantal aandelen 8761
-Daaraan verbonden stemrecht 8762
-Uitsplitsing volgens de aandeelhouders
-Aantal aandelen gehouden door de vennootschap zelf 8771
-Aantal aandelen gehouden door haar dochters 8781
+**Maatschappelijk kapitaal**
+
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| Geplaatst kapitaal per einde van het boekjaar | 100P | XXXXXXXXXX | 24.712.000 |
+| Geplaatst kapitaal per einde van het boekjaar | 100 | 43.332.750 | |
+
+| | Codes | Bedragen | Aantal aandelen |
+|---|---|---|---|
+| Wijzigingen tijdens het boekjaar | | | |
+| 12/08/2019 | | 8.100.000 | 32.400 |
+| 31/12/2019 | | 6.520.750 | 26.083 |
+| 10/03/2020 | | 4.000.000 | 16.000 |
+| Samenstelling van het kapitaal | | | |
+| Soorten aandelen | | | |
+| Aandelen op naam | 8702 | XXXXXXXXXX | 173.331 |
+| Gedematerialiseerde aandelen | 8703 | XXXXXXXXXX | |
+
+| | Codes | Niet-opgevraagd bedrag | Opgevraagd, niet-gestort bedrag |
+|---|---|---|---|
+| **Niet-gestort kapitaal** | | | |
+| Niet-opgevraagd kapitaal | 101 | | XXXXXXXXXX |
+| Opgevraagd, niet-gestort kapitaal | 8712 | XXXXXXXXXX | |
+| Aandeelhouders die nog moeten volstorten | | | |
+
+| | Codes | Boekjaar |
+|---|---|---|
+| **Eigen aandelen** | | |
+| Gehouden door de vennootschap zelf | | |
+| Kapitaalbedrag | 8721 | |
+| Aantal aandelen | 8722 | |
+| Gehouden door haar dochters | | |
+| Kapitaalbedrag | 8731 | |
+| Aantal aandelen | 8732 | |
+| **Verplichtingen tot uitgifte van aandelen** | | |
+| Als gevolg van de uitoefening van conversierechten | | |
+| Bedrag van de lopende converteerbare leningen | 8740 | |
+| Bedrag van het te plaatsen kapitaal | 8741 | |
+| Maximum aantal uit te geven aandelen | 8742 | |
+| Als gevolg van de uitoefening van inschrijvingsrechten | | |
+| Aantal inschrijvingsrechten in omloop | 8745 | |
+| Bedrag van het te plaatsen kapitaal | 8746 | |
+| Maximum aantal uit te geven aandelen | 8747 | |
+| **Toegestaan, niet-geplaatst kapitaal** | 8751 | |
+
+| | Codes | Boekjaar |
+|---|---|---|
+| **Aandelen buiten kapitaal** | | |
+| Verdeling | | |
+| Aantal aandelen | 8761 | |
+| Daaraan verbonden stemrecht | 8762 | |
+| Uitsplitsing volgens de aandeelhouders | | |
+| Aantal aandelen gehouden door de vennootschap zelf | 8771 | |
+| Aantal aandelen gehouden door haar dochters | 8781 | |
 
 19/45
-
 
 --- pág. 20 ---
 
@@ -1573,189 +1479,96 @@ Over te dragen abonnementen 263.854
 
 --- pág. 24 ---
 
-Nr. BE 0668.426.703
+Nr. BE 0668.426.703 | VOL 6.10
 
-VOL 6.10
+**BEDRIJFSRESULTATEN**
 
-BEDRIJFSRESULTATEN
-
-BEDRIJFSOPBRENGSTEN
-Netto-omzet
-Uitsplitsing per bedrijfscategorie
-Ticketing & lidgelden
-Sponsoring
-TV rechten
-Commercieel
-Andere
-Uitsplitsing per geografische markt
-Belgie
-
-Andere bedrijfsopbrengsten
-Exploitatiesubsidies en vanwege de overheid ontvangen
-compenserende bedragen
-BEDRIJFSKOSTEN
-Werknemers waarvoor de onderneming een DIMONA-verklaring
-heeft ingediend of die zijn ingeschreven in het algemeen
-personeelsregister
-Totaal aantal op de afsluitingsdatum
-Gemiddeld personeelsbestand berekend in voltijdse equivalenten
-Aantal daadwerkelijk gepresteerde uren
-Personeelskosten
-Bezoldigingen en rechtstreekse sociale voordelen
-Werkgeversbijdragen voor sociale verzekeringen
-Werkgeverspremies voor bovenwettelijke verzekeringen
-Andere personeelskosten
-Ouderdoms- en overlevingspensioenen
-Voorzieningen voor pensioenen en soortgelijke verplichtingen
-Toevoegingen (bestedingen en terugnemingen) (+)/(-)
-Waardeverminderingen
-Op voorraden en bestellingen in uitvoering
-Geboekt
-Teruggenomen
-Op handelsvorderingen
-Geboekt
-Teruggenomen
-Voorzieningen voor risico's en kosten
-Toevoegingen
-Bestedingen en teruygnemingen
-Andere bedrijfskosten
-Bedrijfsbelastingen en -taksen
-Andere
-Uitzendkrachten en ter beschikking van de onderneming gestelde
-personen
-Totaal aantal op de afsluitingsdatum
-Gemiddeld aantal berekend in voltijdse equivalenten
-Aantal daadwerkelijk gepresteerde uren
-Kosten voor de onderneming
-
-Codes Boekjaar Vorig boekjaar
-651.304 228.344
-1.694.148 573.150
-1.016.292 340.649
-833.343 229.547
-
-1.146.521 165.248
-5.341.608 1.536.938
-
-740 150 200
-
-9086 91 87
-
-9087 77,9 74,4
-
-9088 138.067 66.031
-
-620 8.664.017 4.570.929
-
-621 778.962 462.044
-
-622 21.302 1.795
-
-623 424.093 306.828
-
-624
-
-635
-
-9110 29.770 10.062
-
-9111
-
-9112 17.577
-
-9113 3.121
-
-9115
-
-9116
-
-640 93.198 84.405
-
-641/8 48.571 30.741
-
-9096
-
-9097 0,8
-
-9098 1.315
-
-617 20.180
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **BEDRIJFSOPBRENGSTEN** | | | |
+| **Netto-omzet** | | | |
+| Uitsplitsing per bedrijfscategorie | | | |
+| Ticketing & lidgelden | | 651.304 | 228.344 |
+| Sponsoring | | 1.694.148 | 573.150 |
+| TV rechten | | 1.016.292 | 340.649 |
+| Commercieel | | 833.343 | 229.547 |
+| Andere | | 1.146.521 | 165.248 |
+| Uitsplitsing per geografische markt | | | |
+| Belgie | | 5.341.608 | 1.536.938 |
+| **Andere bedrijfsopbrengsten** | | | |
+| Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen | 740 | 150 | 200 |
+| **BEDRIJFSKOSTEN** | | | |
+| **Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister** | | | |
+| Totaal aantal op de afsluitingsdatum | 9086 | 91 | 87 |
+| Gemiddeld personeelsbestand berekend in voltijdse equivalenten | 9087 | 77,9 | 74,4 |
+| Aantal daadwerkelijk gepresteerde uren | 9088 | 138.067 | 66.031 |
+| **Personeelskosten** | | | |
+| Bezoldigingen en rechtstreekse sociale voordelen | 620 | 8.664.017 | 4.570.929 |
+| Werkgeversbijdragen voor sociale verzekeringen | 621 | 778.962 | 462.044 |
+| Werkgeverspremies voor bovenwettelijke verzekeringen | 622 | 21.302 | 1.795 |
+| Andere personeelskosten | 623 | 424.093 | 306.828 |
+| Ouderdoms- en overlevingspensioenen | 624 | | |
+| **Voorzieningen voor pensioenen en soortgelijke verplichtingen** | | | |
+| Toevoegingen (bestedingen en terugnemingen) (+)/(-) | 635 | | |
+| **Waardeverminderingen** | | | |
+| Op voorraden en bestellingen in uitvoering | | | |
+| Geboekt | 9110 | 29.770 | 10.062 |
+| Teruggenomen | 9111 | | |
+| Op handelsvorderingen | | | |
+| Geboekt | 9112 | | 17.577 |
+| Teruggenomen | 9113 | 3.121 | |
+| **Voorzieningen voor risico's en kosten** | | | |
+| Toevoegingen | 9115 | | |
+| Bestedingen en terugnemingen | 9116 | | |
+| **Andere bedrijfskosten** | | | |
+| Bedrijfsbelastingen en -taksen | 640 | 93.198 | 84.405 |
+| Andere | 641/8 | 48.571 | 30.741 |
+| **Uitzendkrachten en ter beschikking van de onderneming gestelde personen** | | | |
+| Totaal aantal op de afsluitingsdatum | 9096 | | |
+| Gemiddeld aantal berekend in voltijdse equivalenten | 9097 | 0,8 | |
+| Aantal daadwerkelijk gepresteerde uren | 9098 | 1.315 | |
+| Kosten voor de onderneming | 617 | 20.180 | |
 
 24/45
 
-
 --- pág. 25 ---
 
-Nr. BE 0668.426.703
+Nr. BE 0668.426.703 | VOL 6.11
 
-VOL 6.11
+**FINANCIËLE RESULTATEN**
 
-FINANCIËLE RESULTATEN
-
-RECURRENTE FINANCIËLE OPBRENGSTEN
-Andere financiële opbrengsten
-Door de overheid toegekende subsidies, aangerekend op de
-resultatenrekening
-Kapitaalsubsidies
-Interestsubsidies
-Uitsplitsing van de overige financiële opbrengsten
-Wisselresultaten
-Betalingsverschillen
-
-RECURRENTE FINANCIËLE KOSTEN
-Afschrijving van kosten bij uitgifte van leningen
-Geactiveerde interesten
-Waardeverminderingen op vlottende activa
-Geboekt
-Teruggenomen
-Andere financiële kosten
-Bedrag van het disconto ten laste van de onderneming bij de
-verhandeling van vorderingen
-Voorzieningen met financieel karakter
-Toevoegingen
-Bestedingen en teruygnemingen
-Uitsplitsing van de overige financiële kosten
-Bankkosten
-Kosten betaalterminal
-Intresten leveranciers
-Wisselresultaten
-Betalingsverschillen debet
-Diverse financiele kosten
-Rekeningsverschillen
-Korting vervroegde betaling
-
-Codes Boekjaar Vorig boekjaar
-9125
-9126
-2.430 4
-150 751
-
-6501
-6503
-6510
-6511
-653
-6560
-6561
-
-1.086 0
-
-6.000 0
-
-71 0
-
-13.810 36.558
-
-2 35
-
-30 0
-
-0 0
-
-0 0
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **RECURRENTE FINANCIËLE OPBRENGSTEN** | | | |
+| **Andere financiële opbrengsten** | | | |
+| Door de overheid toegekende subsidies, aangerekend op de resultatenrekening | | | |
+| Kapitaalsubsidies | 9125 | | |
+| Interestsubsidies | 9126 | | |
+| Uitsplitsing van de overige financiële opbrengsten | | | |
+| Wisselresultaten | | 2.430 | 4 |
+| Betalingsverschillen | | 150 | 751 |
+| **RECURRENTE FINANCIËLE KOSTEN** | | | |
+| **Afschrijving van kosten bij uitgifte van leningen** | 6501 | | |
+| **Geactiveerde interesten** | 6503 | | |
+| **Waardeverminderingen op vlottende activa** | | | |
+| Geboekt | 6510 | | |
+| Teruggenomen | 6511 | | |
+| **Andere financiële kosten** | | | |
+| Bedrag van het disconto ten laste van de onderneming bij de verhandeling van vorderingen | 653 | | |
+| **Voorzieningen met financieel karakter** | | | |
+| Toevoegingen | 6560 | | |
+| Bestedingen en terugnemingen | 6561 | | |
+| **Uitsplitsing van de overige financiële kosten** | | | |
+| Bankkosten | | 1.086 | 0 |
+| Kosten betaalterminal | | 6.000 | 0 |
+| Intresten leveranciers | | 71 | 0 |
+| Wisselresultaten | | 13.810 | 36.558 |
+| Betalingsverschillen debet | | 2 | 35 |
+| Diverse financiele kosten | | 30 | 0 |
+| Rekeningsverschillen | | 0 | 0 |
+| Korting vervroegde betaling | | 0 | 0 |
 
 25/45
-
 
 --- pág. 26 ---
 
@@ -2178,52 +1991,35 @@ Boekjaar
 
 --- pág. 33 ---
 
-Nr.
-
-BE 0668.426.703 VOL 6.19
+Nr. BE 0668.426.703 | VOL 6.19
 
 Waarderingsregels
 
 SAMENVATTING VAN DE WAARDERINGSREGELS
 
-De waarderingsregels worden vastgesteld overeenkomstig de bepalingen van het koninklijk besluit
-
-van 30 januari 2001 tot uitvoering van het Wetboek van Vennootschappen en Vereningingen.
-
+De waarderingsregels worden vastgesteld overeenkomstig de bepalingen van het koninklijk besluit van 30 januari 2001 tot uitvoering van het Wetboek van Vennootschappen en Vereningingen.
 Uit de balans blijkt een overgedragen verlies en bijgevolg is artikel 3:6 6° Wetboek Vennootschappen en verenigingen van toepassing.
-
-De Raad van Bestuur stelt voor de waarderingsregels in continuïteit voort te zetten alsook de activiteiten en stelt volgende maatregel voor
-tot herstel van de financiële toestand van de onderneming:
-
+De Raad van Bestuur stelt voor de waarderingsregels in continuïteit voort te zetten alsook de activiteiten en stelt volgende maatregel voor tot herstel van de financiële toestand van de onderneming:
 De Raad van Bestuur kan rekenen op de verdere financiële steun van de aandeelhouder onder vorm van een kapitaalsverhoging of lening.
 
-Ten opzichte van het vorige boekjaar werden de waarderingsregels qua verantwoording of toepassing niet gewijzigd; zo ja, dan heeft de
-wijziging betrekking op:
+Ten opzichte van het vorige boekjaar werden de waarderingsregels qua verantwoording of toepassing niet gewijzigd; zo ja, dan heeft de wijziging betrekking op:
 
-en heeft zij een positieve/negatieve invloed op het resultaat van het boekjaar voor belastingen ten belope
-van O0 EUR.
+en heeft zij een positieve/negatieve invloed op het resultaat van het boekjaar voor belastingen ten belope van 0 EUR.
 
 Specifieke waarderingsregels :
 
 Afschrijvingen geboekt tijdens het boekjaar :
 
-Activa Methode Basis Afschrijvingspercentages
-L(lineaire) NG (niet- Hoofdsom Bijk. kosten
-D(degressieve) geherwaardeerde) Min — max Min — max
-A(andere) G (geherwaardeerd)
-1. Oprichtingskosten L NG 20%
-2. Immateriële vaste activa L NG 50%-20%
-3. Industriële, administratieve L NG 100%-10%
+| Activa | Methode: L(lineaire) D(degressieve) A(andere) | Basis: NG (niet-geherwaardeerde) G (geherwaardeerd) | Afschrijvingspercentages Hoofdsom Min - max | Afschrijvingspercentages Bijk. kosten Min - max |
+|---|---|---|---|---|
+| 1. Oprichtingskosten | L | NG | 20% | |
+| 2. Immateriële vaste activa | L | NG | 50%-20% | |
+| 3. Industriële, administratieve of commerciële gebouwen (*) | L | NG | 100%-10% | |
+| 4. Installaties, machines en uitrusting (*) | L | NG | 100%-10% | |
+| 5. Rollend materieel (*) | L | NG | 100%-10% | |
+| 6. Kantoormaterieel en meubilair (*) | L | NG | 100%-10% | |
+| 7. Andere materiële vaste activa | | | | |
 
-of commerciële gebouwen (*)
-
-4. Installaties, machines L NG 100%-10%
-en uitrusting (*)
-
-5. Rollend materieel (*) L NG 1003%-10%
-6. Kantoormaterieel en meubilair (*) L NG 1003%-10%
-
-7. Andere materiële vaste activa
 (*)Met inbegrip van de in leasing gehouden activa; deze worden in voorkomend geval op een afzonderlijke lijn vermeld.
 
 Materiële vaste activa :
@@ -2233,25 +2029,19 @@ Financiële vaste activa:
 Inde loop van het boekjaar werden geen deelnemingen geherwaardeerd; zo ja, wordt deze herwaardering als volgt verantwoord:
 
 Voorraden :
-
-Voorraden worden gewaardeerd tegen de aanschaffingswaarde berekend volgens de methode van (te vermelden) de gewogen gemiddelde prijzen, Fifo,
-Lifo,individualisering van de prijs van elk bestanddeel of tegen de lagere marktwaarde.
+Voorraden worden gewaardeerd tegen de aanschaffingswaarde berekend volgens de methode van (te vermelden) de gewogen gemiddelde prijzen, Fifo, Lifo,individualisering van de prijs van elk bestanddeel of tegen de lagere marktwaarde.
 
 Spelers:
-
 De spelers worden afgeschreven conform hun contractduur.
 
 Schulden :
-
 De schulden bevatten geen schulden op lange termijn, zonder rente of met een abnormaal lage rente.
 
 Vreemde valuta :
-
 De omrekening in EUR van tegoeden, schulden en verbintenissen in vreemde valuta gebeurt op volgende grondslagen :
 De resultaten uit de omrekening van vreemde valuta zijn als volgt in de jaarrekening verwerkt :
 
 33/45
-
 
 --- pág. 34 ---
 
@@ -2456,248 +2246,125 @@ BVBA
 
 --- pág. 38 ---
 
-663
+BB3 AUDIT
 
-AUDIT
+**VERSLAG VAN DE COMMISSARIS AAN DE ALGEMENE VERGADERING VAN OH LEUVEN CVBA OVER HET BOEKJAAR AFGESLOTEN OP 30 JUNI 2020**
 
-VERSLAG VAN DE COMMISSARIS AAN DE ALGEMENE VERGADERING VAN OH LEUVEN CVBA
-OVER HET BOEKJAAR AFGESLOTEN OP 30 JUNI 2020
+In het kader van de wettelijke controle van de jaarrekening van OH LEUVEN CVBA (de "vennootschap"), leggen wij u ons commissarisverslag voor. Dit bevat ons verslag over de jaarrekening en de overige door wet- en regelgeving gestelde eisen. Dit vormt een geheel en is ondeelbaar.
 
-In het kader van de wettelijke controle van de jaarrekening van OH LEUVEN CVBA (de
-“vennootschap”), leggen wij u ons commissarisverslag voor. Dit bevat ons verslag over de
-jaarrekening en de overige door wet- en regelgeving gestelde eisen. Dit vormt een geheel en is
-ondeelbaar.
+Wij werden benoemd in onze hoedanigheid van commissaris door de algemene vergadering van 21 juni 2019. Ons mandaat loopt af op de datum van de algemene vergadering die beraadslaagt over de jaarrekening afgesloten op 30 juni 2022. Wij hebben de wettelijke controle van de jaarrekening van OH LEUVEN CVBA uitgevoerd gedurende 4 opeenvolgende boekjaren.
 
-Wij werden benoemd in onze hoedanigheid van commissaris door de algemene vergadering van 21
-juni 2019. Ons mandaat loopt af op de datum van de algemene vergadering die beraadslaagt over
-de jaarrekening afgesloten op 30 juni 2022. Wij hebben de wettelijke controle van de jaarrekening
-van OH LEUVEN CVBA uitgevoerd gedurende 4 opeenvolgende boekjaren.
+**Verslag over de jaarrekening**
 
-Verslag over de jaarrekening
+*Oordeel zonder voorbehoud*
 
-Oordeel zonder voorbehoud
+Wij hebben de wettelijke controle uitgevoerd van de jaarrekening van de vennootschap, die de balans op 30 juni 2020 omvat, alsook de resultatenrekening van het boekjaar afgesloten op die datum en de toelichting, met een balanstotaal van € 13.164.195,09 en waarvan de resultatenrekening afsluit met een verlies van het boekjaar van € (-) 14.438.157,55.
 
-Wij hebben de wettelijke controle uitgevoerd van de jaarrekening van de vennootschap, die de
-balans op 30 juni 2020 omvat, alsook de resultatenrekening van het boekjaar afgesloten op die
-datum en de toelichting, met een balanstotaal van €13.164.195,09 en waarvan de
-resultatenrekening afsluit met een verlies van het boekjaar van € (-) 14.438.157,55.
+Naar ons oordeel geeft de jaarrekening een getrouw beeld van het vermogen en de financiële toestand van de vennootschap per 30 juni 2020, alsook van haar resultaten over het boekjaar dat op die datum is afgesloten, in overeenstemming met het in België van toepassing zijnde boekhoudkundig referentiestelsel.
 
-Naar ons oordeel geeft de jaarrekening een getrouw beeld van het vermogen en de financiële
-toestand van de vennootschap per 30 juni 2020, alsook van haar resultaten over het boekjaar dat op
-die datum is afgesloten, in overeenstemming met het in België van toepassing zijnde
-boekhoudkundig referentiestelsel.
+*Basis voor het oordeel zonder voorbehoud*
 
-Basis voor het oordeel zonder voorbehoud
+Wij hebben onze controle uitgevoerd volgens de internationale controlestandaarden (ISA's) zoals van toepassing in België. Onze verantwoordelijkheden op grond van deze standaarden zijn verder beschreven in de sectie "Verantwoordelijkheden van de commissaris voor de controle van de jaarrekening" van ons verslag. Wij hebben alle deontologische vereisten die relevant zijn voor de controle van de jaarrekening in België nageleefd, met inbegrip van deze met betrekking tot de onafhankelijkheid.
 
-Wij hebben onze controle uitgevoerd volgens de internationale controlestandaarden (ISA's) zoals
-van toepassing in België. Onze verantwoordelijkheden op grond van deze standaarden zijn verder
-beschreven in de sectie “Verantwoordelijkheden van de commissaris voor de controle van de
-jaarrekening” van ons verslag. Wij hebben alle deontologische vereisten die relevant zijn voor de
-controle van de jaarrekening in België nageleefd, met inbegrip van deze met betrekking tot de
-onafhankelijkheid.
+Wij hebben van het bestuursorgaan en van de aangestelden van de vennootschap de voor onze controle vereiste ophelderingen en inlichtingen verkregen.
 
-Wij hebben van het bestuursorgaan en van de aangestelden van de vennootschap de voor onze
-controle vereiste ophelderingen en inlichtingen verkregen.
+Wij zijn van mening dat de door ons verkregen controle-informatie voldoende en geschikt is als basis voor ons oordeel.
 
-Wij zijn van mening dat de door ons verkregen controle-informatie voldoende en geschikt is als basis
-voor ons oordeel.
+*Verantwoordelijkheden van het bestuursorgaan voor het opstellen van de jaarrekening*
 
-Verantwoordelijkheden van het bestuursorgaan voor het opstellen van de jaarrekening
+Het bestuursorgaan is verantwoordelijk voor het opstellen van de jaarrekening die een getrouw beeld geeft in overeenstemming met het in België van toepassing zijnde boekhoudkundig referentiestelsel, alsook voor de interne beheersing die het bestuursorgaan noodzakelijk acht voor het opstellen van de jaarrekening die geen afwijking van materieel belang bevat die het gevolg is van fraude of van fouten.
 
-Het bestuursorgaan is verantwoordelijk voor het opstellen van de jaarrekening die een getrouw
-beeld geeft in overeenstemming met het in België van toepassing zijnde boekhoudkundig
-referentiestelsel, alsook voor de interne beheersing die het bestuursorgaan noodzakelijk acht voor
-het opstellen van de jaarrekening die geen afwijking van materieel belang bevat die het gevolg is
-van fraude of van fouten.
-
-Half Daghmael 11 b1 Posthofbrug 6-8 Ottergemsesteenweg Zuid 808 5300 info@bb3auditbe Erkenning IBR B00925
-3020 Herent 2600 Antwerpen 9000 Gent www.bbJaudit.be _BE60 6451 0322 1270
-T +322 486 59 50 BE 0472,945.769 BIC JVBABE22
-
-AUDIT
+Half Daghmael 11 b1, 3020 Herent, T +32 2 486 59 50 | Posthofbrug 6-8, 2600 Antwerpen | Ottergemsesteenweg Zuid 808 b300, 9000 Gent | info@bb3audit.be, www.bb3audit.be, BE 0472.945.769 | Erkenning IBR B00925, BE60 6451 0322 1270, BIC JVBABE22 | BB3 AUDIT
 
 38/45
-
 
 --- pág. 39 ---
 
 OH LEUVEN CVBA
 Verslag van de commissaris aan de algemene vergadering over de jaarrekening afgesloten op 30 juni 2020
 
-Bij het opstellen van de jaarrekening is het bestuursorgaan verantwoordelijk voor het inschatten
-van de mogelijkheid van de vennootschap om haar continuïteit te handhaven, het toelichten, indien
-van toepassing, van aangelegenheden die met continuïteit verband houden en het gebruiken van de
-continuïteitsveronderstelling, tenzijhet bestuursorgaan het voornemen heeft omde
-vennootschap te liquideren of om de bedrijfsactiviteiten te beëindigen of geen realistisch alternatief
-heeft dan dit te doen.
+Bij het opstellen van de jaarrekening is het bestuursorgaan verantwoordelijk voor het inschatten van de mogelijkheid van de vennootschap om haar continuïteit te handhaven, het toelichten, indien van toepassing, van aangelegenheden die met continuïteit verband houden en het gebruiken van de continuïteitsveronderstelling, tenzij het bestuursorgaan het voornemen heeft om de vennootschap te liquideren of om de bedrijfsactiviteiten te beëindigen of geen realistisch alternatief heeft dan dit te doen.
 
-Verantwoordelijkheden van de commissaris voor de controle van de jaarrekening
+*Verantwoordelijkheden van de commissaris voor de controle van de jaarrekening*
 
-Onze doelstellingen zijn het verkrijgen van een redelijke mate van zekerheid over de vraag of de
-jaarrekening als geheel geen afwijking van materieel belang bevat die het gevolg is van fraude of
-van fouten en het uitbrengen van een commissarisverslag waarin ons oordeel is opgenomen. Een
-redelijke mate van zekerheid is een hoog niveau van zekerheid, maar is geen garantie dat een
-controle die overeenkomstig de ISA's is uitgevoerd altijd een afwijking van materieel belang ontdekt
-wanneer die bestaat. Afwijkingen kunnen zich voordoen als gevolg van fraude of fouten en worden
-als van materieel\belang beschouwd indien redelijkerwijs kan worden verwacht dat zij, individueel
-of gezamenlijk, de economische beslissingen genomen door gebruikers op basis van deze
-jaarrekening, beïnvloeden.
+Onze doelstellingen zijn het verkrijgen van een redelijke mate van zekerheid over de vraag of de jaarrekening als geheel geen afwijking van materieel belang bevat die het gevolg is van fraude of van fouten en het uitbrengen van een commissarisverslag waarin ons oordeel is opgenomen. Een redelijke mate van zekerheid is een hoog niveau van zekerheid, maar is geen garantie dat een controle die overeenkomstig de ISA's is uitgevoerd altijd een afwijking van materieel belang ontdekt wanneer die bestaat. Afwijkingen kunnen zich voordoen als gevolg van fraude of fouten en worden als van materieel belang beschouwd indien redelijkerwijs kan worden verwacht dat zij, individueel of gezamenlijk, de economische beslissingen genomen door gebruikers op basis van deze jaarrekening, beïnvloeden.
 
-Bij de uitvoering van onze controle leven wij het wettelijk, reglementair en normatief kader dat van
-toepassing is op de controle van de jaarrekening in België na.
+Bij de uitvoering van onze controle leven wij het wettelijk, reglementair en normatief kader dat van toepassing is op de controle van de jaarrekening in België na.
 
-Als deel van een controle uitgevoerd overeenkomstig de ISA's, passen wij professionele
-oordeelsvorming toe en handhaven wij een professioneel-kritische instelling gedurende de
-controle. We voeren tevens de volgende werkzaamheden uit:
+Als deel van een controle uitgevoerd overeenkomstig de ISA's, passen wij professionele oordeelsvorming toe en handhaven wij een professioneel-kritische instelling gedurende de controle. We voeren tevens de volgende werkzaamheden uit:
 
-e het identificeren en inschatten van de risico's dat de jaarrekening een afwijking van materieel
-belang bevat: die het gevolg is van fraude of van fouten, het bepalen en uitvoeren van
-controlewerkzaamheden die op deze risico's inspelen en het verkrijgen van controle-informatie
-die voldoende en geschikt is als basis voor ons oordeel. Het risico van het niet detecteren van
-een van materieel belang zijnde afwijking is groter indien die afwijking het gevolg is van fraude
-dan indien zij het gevolg is van fouten, omdat bij fraude sprake kan zijn van samenspanning,
-valsheid in geschrifte, het opzettelijk nalaten om transacties vast te leggen, het opzettelijk
-verkeerd voorstellen van zaken of het doorbreken van de interne beheersing;
+- het identificeren en inschatten van de risico's dat de jaarrekening een afwijking van materieel belang bevat die het gevolg is van fraude of van fouten, het bepalen en uitvoeren van controlewerkzaamheden die op deze risico's inspelen en het verkrijgen van controle-informatie die voldoende en geschikt is als basis voor ons oordeel. Het risico van het niet detecteren van een van materieel belang zijnde afwijking is groter indien die afwijking het gevolg is van fraude dan indien zij het gevolg is van fouten, omdat bij fraude sprake kan zijn van samenspanning, valsheid in geschrifte, het opzettelijk nalaten om transacties vast te leggen, het opzettelijk verkeerd voorstellen van zaken of het doorbreken van de interne beheersing;
+- het verkrijgen van inzicht in de interne beheersing die relevant is voor de controle, met als doel controlewerkzaamheden op te zetten die in de gegeven omstandigheden geschikt zijn maar die niet zijn gericht op het geven van een oordeel over de effectiviteit van de interne beheersing van de vennootschap;
+- het evalueren van de geschiktheid van de gehanteerde grondslagen voor financiële verslaggeving en het evalueren van de redelijkheid van de door het bestuursorgaan gemaakte schattingen en van de daarop betrekking hebbende toelichtingen;
+- het concluderen of de door het bestuursorgaan gehanteerde continuïteitsveronderstelling aanvaardbaar is, en het concluderen, op basis van de verkregen controle-informatie, of er een onzekerheid van materieel belang bestaat met betrekking tot gebeurtenissen of omstandigheden die significante twijfel kunnen doen ontstaan over de mogelijkheid van de vennootschap om haar continuïteit te handhaven. Indien wij concluderen dat er een onzekerheid van materieel belang bestaat, zijn wij ertoe gehouden om de aandacht in ons commissarisverslag te vestigen op de daarop betrekking hebbende toelichtingen in de jaarrekening, of, indien deze toelichtingen inadequaat zijn, om ons oordeel aan te passen. Onze conclusies zijn gebaseerd op de controle-informatie die verkregen is tot de datum van ons
 
-e het verkrijgen van inzicht in de interne beheersing die relevant is voor de controte, met als doel
-controlewerkzaamheden op te zetten die in de gegeven omstandigheden geschikt zijn maar die
-niet zijn gericht op het geven van een oordeel over de effectiviteit van de interne beheersing van
-de vennootschap;
-
-e het evalueren van de geschiktheid van de gehanteerde grondslagen voor financiële
-verslaggeving en het evalueren van de redelijkheid van de door het bestuursorgaan gemaakte
-schattingen en van de daarop betrekking hebbende toelichtingen ;
-
-e het concluderen of de door het bestuursorgaan gehanteerde continuïteitsveronderstelling
-aanvaardbaar is, en het concluderen, op basis van de verkregen controle-informatie, of er een
-onzekerheid ‘ van materieel belang bestaat met betrekking tot gebeurtenissen of
-omstandigheden die significante twijfel kunnen doen ontstaan over de mogelijkheid van de
-vennootschap om haar continuïteit te handhaven. Indien wij concluderen dat er een onzekerheid
-van materieel belang bestaat, zijn wij ertoe gehouden om de aandacht in ons
-commissarisverslag te vestigen op de daarop betrekking hebbende toelichtingen in de
-jaarrekening, of, indien deze toelichtingen inadequaat zijn, om ons oordeel aan te passen. Onze
-conclusies zijn gebaseerd op de controle-informatie die verkregen is tot de datum van ons
-
-Half Daghmael 11 b1 Pasthofbrug 6-8 Ottergemsesteenweg Zuid 808 b300 info@bb3audit.be Erkenning IBR B00925
-3020 Herent 2600 Antwerpen 9000 Gent www.bb3audit.be _BE6O 6451 0322 1270
-T +322 486 59 50 BE 0472,945.769 BIC JVBABE22
-
-AUDIT
+Half Daghmael 11 b1, 3020 Herent, T +32 2 486 59 50 | Posthofbrug 6-8, 2600 Antwerpen | Ottergemsesteenweg Zuid 808 b300, 9000 Gent | info@bb3audit.be, www.bb3audit.be, BE 0472.945.769 | Erkenning IBR B00925, BE60 6451 0322 1270, BIC JVBABE22 | BB3 AUDIT
 
 39/45
-
 
 --- pág. 40 ---
 
 OH LEUVEN CVBA
 Verslag van de commissaris aan de algemene vergadering over de jaarrekening afgesloten op 30 juni 2020
 
-commissarisverslag. Toekomstige gebeurtenissen of omstandigheden kunnen er echter toe
-leiden dat de vennootschap haar continuïteit niet langer kan handhaven ;
+commissarisverslag. Toekomstige gebeurtenissen of omstandigheden kunnen er echter toe leiden dat de vennootschap haar continuïteit niet langer kan handhaven;
 
-e het evalueren van de algehele presentatie, structuur en inhoud van de jaarrekening, en van de
-vraag of de jaarrekening de onderliggende transacties en gebeurtenissen weergeeft op een
-wijze die leidt tot een getrouw beeld.
+- het evalueren van de algehele presentatie, structuur en inhoud van de jaarrekening, en van de vraag of de jaarrekening de onderliggende transacties en gebeurtenissen weergeeft op een wijze die leidt tot een getrouw beeld.
 
-Wij communiceren met het bestuursorgaan onder meer over de geplande reikwijdte en timing van
-de controle en over de significante controlebevindingen, waaronder eventuele significante
-tekortkomingen in de interne beheersing die wij identificeren gedurende onze controle.
+Wij communiceren met het bestuursorgaan onder meer over de geplande reikwijdte en timing van de controle en over de significante controlebevindingen, waaronder eventuele significante tekortkomingen in de interne beheersing die wij identificeren gedurende onze controle.
 
-Overige door wet- en regelgeving gestelde eisen
+**Overige door wet- en regelgeving gestelde eisen**
 
-Verantwoordelijkheden van het bestuursorgaan
+*Verantwoordelijkheden van het bestuursorgaan*
 
-Het bestuursorgaan is verantwoordelijk voor het opstellen en de inhoud van het jaarverslag, van de
-documenten die overeenkomstig de wettelijke en reglementaire voorschriften dienen te worden
-neergelegd, voor het naleven van de wettelijke en bestuursrechtelijke voorschriften die van
-toepassing zijn op het voeren van de boekhouding, alsook voor het naleven van het Wetboek van
-vennootschappen en van de statuten van de vennootschap.
+Het bestuursorgaan is verantwoordelijk voor het opstellen en de inhoud van het jaarverslag, van de documenten die overeenkomstig de wettelijke en reglementaire voorschriften dienen te worden neergelegd, voor het naleven van de wettelijke en bestuursrechtelijke voorschriften die van toepassing zijn op het voeren van de boekhouding, alsook voor het naleven van het Wetboek van vennootschappen en van de statuten van de vennootschap.
 
-Verantwoordelijkheden van de commissaris
+*Verantwoordelijkheden van de commissaris*
 
-In het kader van ons mandaat en overeenkomstig de Belgische bijkomende norm (herzien in 2018)
-bij de in België van toepassing zijnde internationale controlestandaarden (ISA's), is het onze
-verantwoordelijkheid om, in alle van materieel belang zijnde opzichten, het jaarverslag, bepaalde
-documenten die overeenkomstig de wettelijke en reglementaire voorschriften dienen te worden
-neergelegd, alsook de naleving van bepaalde verplichtingen uit het Wetboek van vennootschappen
-en verenigingen en van de statuten te verifiëren, alsook verslag over deze aangelegenheden uit te
-brengen.
+In het kader van ons mandaat en overeenkomstig de Belgische bijkomende norm (herzien in 2018) bij de in België van toepassing zijnde internationale controlestandaarden (ISA's), is het onze verantwoordelijkheid om, in alle van materieel belang zijnde opzichten, het jaarverslag, bepaalde documenten die overeenkomstig de wettelijke en reglementaire voorschriften dienen te worden neergelegd, alsook de naleving van bepaalde verplichtingen uit het Wetboek van vennootschappen en verenigingen en van de statuten te verifiëren, alsook verslag over deze aangelegenheden uit te brengen.
 
-Aspecten betreffende het jaarverslag
+*Aspecten betreffende het jaarverslag*
 
-Na het uitvoeren van specifieke werkzaamheden op het jaarverslag, zijn wij van oordeel dat dit
-jaarverslag overeenstemt met de jaarrekening voor hetzelfde boekjaar en is opgesteld
-overeenkomstig de artikelen 3:5 en 3:6 van het Wetboek van vennootschappen en verenigingen.
+Na het uitvoeren van specifieke werkzaamheden op het jaarverslag, zijn wij van oordeel dat dit jaarverslag overeenstemt met de jaarrekening voor hetzelfde boekjaar en is opgesteld overeenkomstig de artikelen 3:5 en 3:6 van het Wetboek van vennootschappen en verenigingen.
 
-In de context van onze controle van de jaarrekening, zijn wij tevens verantwoordelijk voor het
-overwegen, in het bijzonder op basis van de kennis verkregen in de controle, of het jaarverslag een
-afwijking van materieel belang bevat, hetzij informatie die onjuist vermeld is of anderszins
-misleidend is. In het licht van de werkzaamheden die wij hebben uitgevoerd, dienen wij u geen
-afwijking van materieel belang te melden.
+In de context van onze controle van de jaarrekening, zijn wij tevens verantwoordelijk voor het overwegen, in het bijzonder op basis van de kennis verkregen in de controle, of het jaarverslag een afwijking van materieel belang bevat, hetzij informatie die onjuist vermeld is of anderszins misleidend is. In het licht van de werkzaamheden die wij hebben uitgevoerd, dienen wij u geen afwijking van materieel belang te melden.
 
-Vermelding betreffende de sociale balans
+*Vermelding betreffende de sociale balans*
 
-De sociale balans neer te leggen bij de Nationale Bank van België overeenkomstig artikel 3:12, 81,
-8°van het Wetboek van vennootschappen en verenigingen, bevat, zowel qua vorm als qua inhoud
-alle door dit Wetboek voorgeschreven inlichtingen en bevat geen van materieel belang zijnde
-inconsistenties ten aanzien van de informatie waarover wij beschikken in het kader van onze
-opdracht.
+De sociale balans neer te leggen bij de Nationale Bank van België overeenkomstig artikel 3:12, § 1, 8°van het Wetboek van vennootschappen en verenigingen, bevat, zowel qua vorm als qua inhoud alle door dit Wetboek voorgeschreven inlichtingen en bevat geen van materieel belang zijnde inconsistenties ten aanzien van de informatie waarover wij beschikken in het kader van onze opdracht.
 
-Half Daghmael 11 b1 Posthofbrug 6-8 Ottergemsesteenweg Zuid 808 5300 _info@bb3audit.be Erkenning 1BR B00925
-3020 Herent 2600 Antwerpen 9000 Gent www.bb3audit.be _BE6O 6451 0322 1270
-T +322 486 59 50 BE 0472.945.769 BIC }VBABE22
-
-AUDIT
+Half Daghmael 11 b1, 3020 Herent, T +32 2 486 59 50 | Posthofbrug 6-8, 2600 Antwerpen | Ottergemsesteenweg Zuid 808 b300, 9000 Gent | info@bb3audit.be, www.bb3audit.be, BE 0472.945.769 | Erkenning IBR B00925, BE60 6451 0322 1270, BIC JVBABE22 | BB3 AUDIT
 
 40/45
-
 
 --- pág. 41 ---
 
 OH LEUVEN CVBA
 Verslag van de commissaris aan de algemene vergadering over de jaarrekening afgesloten op 30 juni 2020
 
-Vermeldingen betreffende de onafhankelijkheid
+*Vermeldingen betreffende de onafhankelijkheid*
 
-Ons bedrijfsrevisorenkantoor heeft geen opdrachten die onverenigbaar zijn met de wettelijke
-controle van de jaarrekening verricht, en is in de loop van ons mandaat onafhankelijk gebleven
-tegenover de vennootschap.
+Ons bedrijfsrevisorenkantoor heeft geen opdrachten die onverenigbaar zijn met de wettelijke controle van de jaarrekening verricht, en is in de loop van ons mandaat onafhankelijk gebleven tegenover de vennootschap.
 
-Andere vermeldingen
+*Andere vermeldingen*
 
-— Onverminderd formele aspecten van ondergeschikt belang, werd de boekhouding gevoerd
-in overeenstemming met de in België van toepassing zijnde wettelijke en bestuursrechtelijke
-voorschriften.
-
-— De resultaatverwerking, die aan de algemene vergadering wordt voorgesteld, stemt overeen
-met de wettelijke en statutaire bepalingen.
-
-— Wij dienen u geen verrichtingen of beslissingen mede te delen die in overtreding met de
-statuten of het Wetboek van vennootschappen en verenigingen zijn gedaan of genomen met
-uitzondering van het feit dat:
-
-o Ons verslag niet werd afgeleverd binnen de termijn, zoals bepaald in art 6:82 van het
-Wetboek van vennootschappen en verenigingen bij gebreke aan de tijdige
-overhandiging door het bestuursorgaan van de nodige stukken, zoals bepaald in art
-3:74 van het Wetboek vennootschappen en verenigingen.
+- Onverminderd formele aspecten van ondergeschikt belang, werd de boekhouding gevoerd in overeenstemming met de in België van toepassing zijnde wettelijke en bestuursrechtelijke voorschriften.
+- De resultaatverwerking, die aan de algemene vergadering wordt voorgesteld, stemt overeen met de wettelijke en statutaire bepalingen.
+- Wij dienen u geen verrichtingen of beslissingen mede te delen die in overtreding met de statuten of het Wetboek van vennootschappen en verenigingen zijn gedaan of genomen met uitzondering van het feit dat:
+  - Ons verslag niet werd afgeleverd binnen de termijn, zoals bepaald in art 6:82 van het Wetboek van vennootschappen en verenigingen bij gebreke aan de tijdige overhandiging door het bestuursorgaan van de nodige stukken, zoals bepaald in art 3:74 van het Wetboek vennootschappen en verenigingen.
 
 Herent, 14 oktober 2020
 
-| I CM
-“ BB3 Audit BV
-Commissaris
+[handtekening]
 
+BB3 Audit BV
+Commissaris
 Vertegenwoordigd door Frank Bloemen
 Bedrijfsrevisor
 
-Half Daghmael 11 bl Posthofbrug 6-8 Ottergemsesteenweg Zuid 808 b300 _info@bb3auditbe Erkenning IBR B00925
-3020 Herent 2600 Antwerpen 9000 Gent www.bb3audit.be _ BE6O 6451 0322 1270
-T +322 486 59 50 í BE 0472,945.769 BIC JVBABE22
-
-AUDIT
+Half Daghmael 11 b1, 3020 Herent, T +32 2 486 59 50 | Posthofbrug 6-8, 2600 Antwerpen | Ottergemsesteenweg Zuid 808 b300, 9000 Gent | info@bb3audit.be, www.bb3audit.be, BE 0472.945.769 | Erkenning IBR B00925, BE60 6451 0322 1270, BIC JVBABE22 | BB3 AUDIT
 
 41/45
-
 
 --- pág. 42 ---
 
@@ -2960,27 +2627,27 @@ equivalenten
 
 --- pág. 45 ---
 
-Nr. BE 0668.426.703 VOL 10
-Inlichtingen over de opleidingen voor de werknemers tijdens het boekjaar
-Codes Mannen Codes Vrouwen
-Totaal van de formele voortgezette beroepsopleidingsinitiatieven ten
-laste van de werkgever
-Aantal betrokken werknemers 5801 115811
-Aantal gevolgde opleidingsuren 5802 100/5812
-Nettokosten voor de onderneming 5803 3.374 | 5813 115
-waarvan brutokosten rechtstreeks verbonden met de opleiding 58031 2.017 58131
-waarvan betaalde bijdragen en stortingen aan collectieve fondsen 58032 1.357 | 58132 115
-waarvan ontvangen tegemoetkomingen (in mindering) 58033 58133
-Totaal van de minder formele en informele voortgezette
-beroepsopleidingsinitiatieven ten laste van de werkgever
-Aantal betrokken werknemers 5821 5831
-Aantal gevolgde opleidingsuren 5822 5832
-Nettokosten voor de onderneming 5823 5833
-Totaal van de initiële beroepsopleidingsinitiatieven ten laste van de
-werkgever
-Aantal betrokken werknemers 5841 5851
-Aantal gevolgde opleidingsuren 5842 5852
-Nettokosten voor de onderneming 5843 5853
+Nr. BE 0668.426.703 | VOL 10
+
+**Inlichtingen over de opleidingen voor de werknemers tijdens het boekjaar**
+
+| | Codes | Mannen | Codes | Vrouwen |
+|---|---|---|---|---|
+| **Totaal van de formele voortgezette beroepsopleidingsinitiatieven ten laste van de werkgever** | | | | |
+| Aantal betrokken werknemers | 5801 | 1 | 5811 | |
+| Aantal gevolgde opleidingsuren | 5802 | 100 | 5812 | |
+| Nettokosten voor de onderneming | 5803 | 3.374 | 5813 | 115 |
+| waarvan brutokosten rechtstreeks verbonden met de opleiding | 58031 | 2.017 | 58131 | |
+| waarvan betaalde bijdragen en stortingen aan collectieve fondsen | 58032 | 1.357 | 58132 | 115 |
+| waarvan ontvangen tegemoetkomingen (in mindering) | 58033 | | 58133 | |
+| **Totaal van de minder formele en informele voortgezette beroepsopleidingsinitiatieven ten laste van de werkgever** | | | | |
+| Aantal betrokken werknemers | 5821 | | 5831 | |
+| Aantal gevolgde opleidingsuren | 5822 | | 5832 | |
+| Nettokosten voor de onderneming | 5823 | | 5833 | |
+| **Totaal van de initiële beroepsopleidingsinitiatieven ten laste van de werkgever** | | | | |
+| Aantal betrokken werknemers | 5841 | | 5851 | |
+| Aantal gevolgde opleidingsuren | 5842 | | 5852 | |
+| Nettokosten voor de onderneming | 5843 | | 5853 | |
 
 45/45
 

@@ -1,45 +1,36 @@
 
 --- pág. 1 ---
 
-Randers FC A/S
+Dansk Revision
+
+Dansk Revision Randers
+Godkendt Revisionspartnerselskab
+Tronholmen 5
+DK-8960 Randers SØ
+www.danskrevision.dk
+randers@danskrevision.dk
+Telefon: +45 89 12 50 00
+Telefax: +45 89 12 51 00
+CVR: DK 31 77 85 30
+Bank: 6186 0004988728
+
+**Randers FC A/S**
 Viborgvej 92
 8920 Randers NV
 
 CVR-nummer 83 94 08 16
 
-Årsrapport
+**Årsrapport**
 1. juli 2016 - 30. juni 2017
 
-t og godkendt på selskabets ordinære generalforsamling
+Årsrapporten er fremlagt og godkendt på selskabets ordinære generalforsamling
+den 9. oktober 2017
 
-ranger r
-den 9., tobet
-Carsteri Palsgagrd FARE
+[underskrift]
+Carsten Palsgaard
 Dirigent
 
-Dansk
-Revision
-
-Dansk Revision Randers
-
-Godkendt Revisionspartnerselskab
-Tronholmen 5
-
-DK-8960 Randers SØ
-randersÆdanskrevision.dk
-www.danskrevision.dk
-
-Telefon: +45 89 12 50 00
-
-Telefax: +45 89 12 51 00
-
-CVR: DK 317785 30
-
-Bank: 6186 0004988728
-
-CD GG:
-
-INDEPENDENT MEMBER
+GGi INDEPENDENT MEMBER
 
 --- pág. 2 ---
 
@@ -394,124 +385,71 @@ KEE > GGi
 
 Randers FC A/S
 
-2016/17 2015/16 2014/15 2013/14 2012/13
+**Ledelsesberetning – Hoved- og nøgletal**
 
-Ledelsesberetning 1.000 1.000 1.000 1.000 1.000
-Hoved- og nøgletal DKK DKK DKK DKK DKK
+| | 2016/17 | 2015/16 | 2014/15 | 2013/14 | 2012/13 |
+|---|---|---|---|---|---|
+| | 1.000 DKK | 1.000 DKK | 1.000 DKK | 1.000 DKK | 1.000 DKK |
+| **Resultatopgørelse** | | | | | |
+| Indtægter i alt | 65.491 | 73.645 | 67.133 | 70.989 | 73.614 |
+| Løn- og personaleomkostninger | 36.874 | 38.049 | 38.007 | 37.567 | 41.730 |
+| Resultat af primær drift | -5.617 | -581 | -907 | 2.941 | 1.277 |
+| Resultat af finansielle poster | 1.444 | 1.890 | 904 | 244 | 55 |
+| Årets resultat | -2.840 | 1.296 | 116 | 2.638 | 1.227 |
+| **Balance** | | | | | |
+| Investering i immaterielle anlægsaktiver | 9.011 | 2.897 | 4.257 | 3.680 | 2.443 |
+| Investering i materielle anlægsaktiver | 1.067 | 1.964 | 1.668 | 2.960 | 339 |
+| Aktiver i alt - balancesum | 53.099 | 35.820 | 35.806 | 48.856 | 40.526 |
+| Egenkapital | 24.252 | 17.063 | 15.768 | 15.652 | 13.014 |
+| **Nøgletal i %** | | | | | |
+| Overskudsgrad (Resultat før finansielle poster i procent af nettoomsætning) | -8,58 | -0,79 | -1,35 | 4,14 | 1,73 |
+| Afkastningsgrad (Resultat før finansielle poster i procent af samlede aktiver) | -0,11 | -0,02 | -0,03 | 0,06 | 0,03 |
+| Soliditetsgrad (Egenkapital ultimo i procent af samlede aktiver) | 45,67 | 47,64 | 44,04 | 32,04 | 32,11 |
+| Egenkapitalforrentning (Ordinært resultat efter skat i procent af gennemsnitlig egenkapital) | -11,71 | 7,60 | 0,74 | 16,85 | 9,43 |
+| **Medarbejdere** | | | | | |
+| Gennemsnitlige antal beskæftigede | 64 | 58 | 56 | 53 | 51 |
 
-Resultatopgørelse
-
-Indtægter i alt 65.491 73.645 67.133 70.989 73.614
-Løn- og personaleomkostninger 36.874 38.049 38.007 37.567 41.730
-Resultat af primær drift -5.617 -581 -907 2.941 1.277
-Resultat af finansielle poster 1.444 1.890 904 244 55
-Årets resultat -2.840 1.296 116 2.638 1.227
-Balance
-
-Investering i immaterielle an- 9.011 2.897 4.257 3.680 2.443
-lægsaktiver
-
-Investering i materielle anlægs- 1.067 1.964 1.668 2.960 339
-aktiver
-
-Aktiver i alt - balancesum 53.099 35.820 35.806 48.856 40.526
-Egenkapital 24.252 17.063 15.768 15.652 13.014
-Nøgletal i %
-
-Overskudsgrad 8,58 -0,79 -1,35 4,14 1,73
-
-Resultat før finansielle poster i procent af
-
-nettoomsætning
-
-Afkastningsgrad -0,11 -0,02 70,03 0,06 0,03
-Resultat før finansielle poster i procent af
-
-samlede aktiver
-
-Soliditetsgrad 45,67 47,64 44,04 32,04 32,11
-Egenkapital ultimo i procent af samlede
-
-aktiver
-
-Egenkapitalforrentning 711,71 7,60 0,74 16,85 9,43
-
-Ordinært resultat efter skat i procent af
-gennemsnitlig egenkapital
-
-Medarbejdere
-
-Gennemnsnitlige antal beskæfti- 64 58 56 53 51
-gede
-
-Revision 9 INDEPENDENT MEMBER
-
-SPReSk "> GGi
+Dansk Revision | 9 | GGi INDEPENDENT MEMBER
 
 --- pág. 11 ---
 
 Randers FC A/S
 
-2016/17 2015/16
+| Note | **Resultatopgørelse** | 2016/17 DKK | 2015/16 1.000 DKK |
+|---|---|---|---|
+| | **Perioden 1. juli - 30. juni** | | |
+| | | | |
+| | Sponsorindtægter | 29.350.146 | 29.897 |
+| | TV-indtægter | 19.083.597 | 19.201 |
+| | Entré og kampindtægter | 5.964.431 | 8.840 |
+| | Øvrige indtægter | 11.092.966 | 15.706 |
+| | **Indtægter i alt** | **65.491.140** | **73.644** |
+| | | | |
+| | Sponsorudgifter | -5.583.897 | -4.976 |
+| | Kampafvikling | -8.772.690 | -8.148 |
+| | Sportslige udgifter i øvrigt | -3.864.448 | -4.374 |
+| | Talentudvikling | -3.435.689 | -5.112 |
+| | Transferudgifter og leje af spillere | -478.185 | -583 |
+| 1 | Løn- og personaleomkostninger | -28.641.254 | -30.624 |
+| | Øvrige udgifter | -137.186 | -159 |
+| | Udgifter Lounge og Skybokse | -3.813.358 | -4.851 |
+| 1 | Løn- og personaleomkostninger, administration | -8.232.858 | -7.425 |
+| | Administrationsomkostninger | -2.482.747 | -2.553 |
+| | Afskrivninger, anlægsaktiver | -5.665.981 | -5.420 |
+| | **Omkostninger i alt** | **-71.108.293** | **-74.225** |
+| | | | |
+| | **Resultat før finansielle poster** | **-5.617.153** | **-581** |
+| | | | |
+| | Resultat af kapitalandele i tilknyttede virksomheder | 2.167.513 | 1.579 |
+| | Resultat af kapitalandele i associerede virksomheder | 0 | 449 |
+| 2 | Finansielle indtægter | 186.003 | 28 |
+| 3 | Finansielle omkostninger | -909.622 | -166 |
+| | **Resultat før skat** | **-4.173.259** | **1.310** |
+| | | | |
+| 4 | Skat af årets resultat | 1.333.114 | -14 |
+| 5 | **Årets resultat** | **-2.840.145** | **1.296** |
 
-Note — Resultatopgørelse DKK 1.000 DKK
-Perioden 1. juli - 30. juni
-
-Sponsorindtægter 29.350.146 29.897
-
-TV-indtægter 19.083.597 19.201
-
-Entré og kampindtægter 5.964.431 8.840
-
-Øvrige indtægter 11.092.966 15.706
-
-Indtægter i alt 65.491.140 73.644
-
-Sponsorudgifter -5.583.897 -4.976
-
-Kampafvikling -8.772.690 -8.148
-
-Sportslige udgifter i øvrigt -3.864.448 -4.374
-
-Talentudvikling -3.435.689 -5.112
-
-Transferudgifter og leje af spillere -478.185 -583
-
-1 Løn- og personaleomkostninger -28.641.254 -30.624
-
-Øvrige udgifter -137.186 -159
-
-Udgifter Lounge og Skybokse -3.813.358 4.851
-
-1 Løn- og personaleomkostninger, administration -8.232.858 -7.425
-
-Administrationsomkostninger -2.482.747 -2.553
-
-Afskrivninger, anlægsaktiver -5.665.981 -5.420
-
-Omkostninger i alt -71.108.293 -74.225
-
-Resultat før finansielle poster -5.617.153 -581
-
-Resultat af kapitalandele i tilknyttede virksomheder 2.167.513 1.579
-
-Resultat af kapitalandele i associerede virksomheder 0 449
-
-2 Finansielle indtægter 186.003 28
-
-Finansielle omkostninger -909.622 -166
-
-Resultat før skat -4.173.259 1.310
-
-4 Skat af årets resultat 1.333.114 -14
-
-Årets resultat -2.840.145 1.296
-
-Dansk ZZ GG
-
-Revision 10
-
-INDEPENDENT MEMBER
+Dansk Revision | 10 | GGi INDEPENDENT MEMBER
 
 --- pág. 12 ---
 
@@ -754,112 +692,108 @@ INDEPENDENT MEMBER
 
 Randers FC A/S
 
-2016/17 2015/16
-Noter DKK 1.000 DKK
-6 Kontraktrettigheder mv.
-Kostpris 1. juli 7.189.622 7.147
-Tilgang i årets løb 9.010.892 2.897
-Afgang i årets løb -3.211.220 -3.454
-Kostpris 30. juni 12.989.294 7.190
-Af- og nedskrivninger 1. juli -4.343.180 -3.743
-Af- og nedskrivninger på afhændede aktiver 3.105.020 2.573
-Årets af- og nedskrivninger -4.080.323 -3.173
-Afskrivninger 30. juni -5.318.483 -4.343
-Kontraktrettigheder mv. i alt 7.670.811 2.847
-7 Indretning af lejede lokaler
-Kostpris 1. juli 5.047.791 4.934
-Tilgang i årets løb 153.640 114
-Kostpris 30. juni 5.201.431 5.048
-Af- og nedskrivninger 1. juli -2.401.773 -1.841
-Årets af- og nedskrivninger -522.281 -561
-Afskrivninger 30. juni -2.924.054 -2.402
-Indretning af lejede lokaler i alt 2.277.377 2.646
-8 Andre anlæg, driftsmateriel og inventar
-Kostpris 1. juli 10.614.701 8.764
-Tilgang i årets løb 913.266 1.851
-Kostpris 30. juni 11.527.967 10.615
-Af- og nedskrivninger 1. juli -7.876.640 —6.453
-Årets af- og nedskrivninger -1.324.150 -1.424
-Afskrivninger 30. juni -9.200.790 -7.877
-Andre anlæg, driftsmateriel og inventar i alt 2.327.177 2.738
-Heraf udgør finansielt leasede aktiver 475.274 792
-Dansk :>2 GGi
+| **Noter** | 2016/17 DKK | 2015/16 1.000 DKK |
+|---|---|---|
 
-xe
+**6 Kontraktrettigheder mv.**
 
-Revision 16
+| | 2016/17 | 2015/16 |
+|---|---|---|
+| Kostpris 1. juli | 7.189.622 | 7.747 |
+| Tilgang i årets løb | 9.010.892 | 2.897 |
+| Afgang i årets løb | -3.211.220 | -3.454 |
+| Kostpris 30. juni | 12.989.294 | 7.190 |
+| | | |
+| Af- og nedskrivninger 1. juli | -4.343.180 | -3.743 |
+| Af- og nedskrivninger på afhændede aktiver | 3.105.020 | 2.573 |
+| Årets af- og nedskrivninger | -4.080.323 | -3.173 |
+| Afskrivninger 30. juni | -5.318.483 | -4.343 |
+| | | |
+| **Kontraktrettigheder mv. i alt** | **7.670.811** | **2.847** |
 
-INDEPENDENT MEMBER
+**7 Indretning af lejede lokaler**
+
+| | 2016/17 | 2015/16 |
+|---|---|---|
+| Kostpris 1. juli | 5.047.791 | 4.934 |
+| Tilgang i årets løb | 153.640 | 114 |
+| Kostpris 30. juni | 5.201.431 | 5.048 |
+| | | |
+| Af- og nedskrivninger 1. juli | -2.401.773 | -1.841 |
+| Årets af- og nedskrivninger | -522.281 | -561 |
+| Afskrivninger 30. juni | -2.924.054 | -2.402 |
+| | | |
+| **Indretning af lejede lokaler i alt** | **2.277.377** | **2.646** |
+
+**8 Andre anlæg, driftsmateriel og inventar**
+
+| | 2016/17 | 2015/16 |
+|---|---|---|
+| Kostpris 1. juli | 10.614.701 | 8.764 |
+| Tilgang i årets løb | 913.266 | 1.851 |
+| Kostpris 30. juni | 11.527.967 | 10.615 |
+| | | |
+| Af- og nedskrivninger 1. juli | -7.876.640 | -6.453 |
+| Årets af- og nedskrivninger | -1.324.150 | -1.424 |
+| Afskrivninger 30. juni | -9.200.790 | -7.877 |
+| | | |
+| **Andre anlæg, driftsmateriel og inventar i alt** | **2.327.177** | **2.738** |
+| | | |
+| Heraf udgør finansielt leasede aktiver | 475.274 | 792 |
+
+Dansk Revision | 16 | GGi INDEPENDENT MEMBER
 
 --- pág. 18 ---
 
 Randers FC A/S
 
-2016/17 2015/16
+| **Noter** | 2016/17 DKK | 2015/16 1.000 DKK |
+|---|---|---|
 
-Noter DKK 1.000 DKK
-9 Kapitalandele i tilknyttede virksomheder
+**9 Kapitalandele i tilknyttede virksomheder**
 
-Kostpris 1. juli 453.800 1.159
-
-Tilgang i årets løb 16.050.498 150
-
-Afgang i årets løb 0 -855
-
-Kostpris 30. juni 16.504.298 454
-
-Værdireguleringer 1. juli 6.210.635 4.099
-
-Tilbageført værdireguleringer ved salg 0 654
-
-Årets resultatandel 2.167.513 1.458
-
-Modtaget udbytte fra tilknyttede virksomheder -300.000 (9
-
-Øvrige egenkapitalbevægelser 28.162 0
-
-Værdireguleringer 30. juni 8.106.310 6.211
-
-Kapitalandele i tilknyttede virksomheder i alt 24.610.608 6.664
-
-10
-
-11
-
-12
+| | 2016/17 | 2015/16 |
+|---|---|---|
+| Kostpris 1. juli | 453.800 | 1.159 |
+| Tilgang i årets løb | 16.050.498 | 150 |
+| Afgang i årets løb | 0 | -855 |
+| Kostpris 30. juni | 16.504.298 | 454 |
+| | | |
+| Værdireguleringer 1. juli | 6.210.635 | 4.099 |
+| Tilbageført værdireguleringer ved salg | 0 | 654 |
+| Årets resultatandel | 2.167.513 | 1.458 |
+| Modtaget udbytte fra tilknyttede virksomheder | -300.000 | 0 |
+| Øvrige egenkapitalbevægelser | 28.162 | 0 |
+| Værdireguleringer 30. juni | 8.106.310 | 6.211 |
+| | | |
+| **Kapitalandele i tilknyttede virksomheder i alt** | **24.610.608** | **6.664** |
 
 Kapitalandele i tilknyttede virksomheder består af:
 
-e&  Nominel DKK 125.000 i Randers FC Jobakademi ApS, Randers Kommune, andel 100%.
-Resultat og egenkapital jævnfør årsregnskab 2016/17 udgør DKK 28.976 og 264.142.
+- Nominel DKK 125.000 i Randers FC Jobakademi ApS, Randers Kommune, andel 100%. Resultat og egenkapital jævnfør årsregnskab 2016/17 udgør DKK 28.976 og 264.142.
+- Nominel DKK 2.000.000 i Business Park Randers ApS, Randers Kommune, andel 100%. Resultat og egenkapital jævnfør årsregnskab 2016/17 udgør DKK 2.138.537 og 24.346.465.
 
-.  Nominel DKK 2.000.000 i Business Park Randers ApS, Randers Kommune, andel 100%.
-Resultat og egenkapital jævnfør årsregnskab 2016/17 udgør DKK 2.138.537 og
-24.346.465.
+**10 Udskudte skatteaktiver**
 
-Udskudte skatteaktiver
+| | 2016/17 | 2015/16 |
+|---|---|---|
+| Udskudte skatteaktiver, primo | 1.051.513 | 939 |
+| Årets ændring i udskudt skatteaktiver | 169.495 | 113 |
+| **Udskudte skatteaktiver i alt** | **1.221.008** | **1.052** |
 
-Udskudte skatteaktiver, primo 1.051.513 939
-Årets ændring i udskudt skatteaktiver 169.495 113
-Udskudte skatteaktiver i alt 1.221.008 1.052
+**11 Periodeafgrænsningsposter**
 
-Periodeafgrænsningsposter
+Periodeafgrænsningsposter består af forudbetalte omkostninger vedrørende regnskabsåret 2017/18.
 
-Periodeafgrænsningsposter består af forudbetalte omkostninger vedrørende regnskabsåret
-2017/18.
+**12 Langfristede gældsforpligtelser**
 
-Langfristede gældsforpligtelser
+| | 2016/17 | 2015/16 |
+|---|---|---|
+| Andel af gældsforpligtelser der forfalder efter 5 år: | | |
+| Kreditinstitutter | 5.687.492 | 0 |
+| Selskabsskat | 0 | 0 |
 
-Andel af gældsforpligtelser der forfalder efter 5 år:
-Kreditinstitutter 5.687.492
-Selskabsskat 0 0
-
-oOo
-
-Ci) GGi
-
-Dansk
-Revision 17 INDEPENDENT MEMBER
+Dansk Revision | 17 | GGi INDEPENDENT MEMBER
 
 --- pág. 19 ---
 

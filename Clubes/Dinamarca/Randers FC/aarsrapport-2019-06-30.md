@@ -360,58 +360,30 @@ Revision 8 INDEPENDENT MEMBER
 
 Randers FC A/S
 
-2018/19 2017/18 2016/17 2015/16 2014/15
+**Ledelsesberetning – Hoved- og nøgletal**
 
-Ledelsesberetning 1.000 1.000 1.000 1.000 1.000
-Hoved- og nøgletal DKK DKK DKK DKK DKK
+| | 2018/19 1.000 DKK | 2017/18 1.000 DKK | 2016/17 1.000 DKK | 2015/16 1.000 DKK | 2014/15 1.000 DKK |
+|---|---|---|---|---|---|
+| **Resultatopgørelse** | | | | | |
+| Indtægter i alt | 60.235 | 58.188 | 65.491 | 73.645 | 67.133 |
+| Løn- og personaleomkostninger | 32.868 | 36.461 | 36.874 | 38.049 | 38.007 |
+| Resultat af primær drift | -8.003 | -17.017 | -5.617 | -581 | -907 |
+| Resultat af finansielle poster mv. | 2.561 | 1.435 | 1.444 | 1.890 | 904 |
+| Årets resultat | -3.589 | -11.735 | -2.840 | 1.296 | 116 |
+| **Balance** | | | | | |
+| Investering i immaterielle anlægsaktiver | 5.975 | 1.921 | 9.011 | 2.897 | 4.257 |
+| Investering i materielle anlægsaktiver | 684 | 1.958 | 1.067 | 1.964 | 1.668 |
+| Aktiver i alt - balancesum | 56.433 | 53.462 | 53.099 | 35.820 | 35.806 |
+| Egenkapital | 8.702 | 12.291 | 24.252 | 17.063 | 15.768 |
+| **Nøgletal i %** | | | | | |
+| Overskudsgrad (Resultat før finansielle poster i procent af nettoomsætning) | -13,29 | -29,24 | -8,58 | -0,79 | -1,35 |
+| Afkastningsgrad (Resultat før finansielle poster i procent af samlede aktiver) | -0,14 | -0,32 | -0,11 | -0,02 | -0,03 |
+| Soliditetsgrad (Egenkapital ultimo i procent af samlede aktiver) | 15,42 | 22,99 | 45,67 | 47,64 | 44,04 |
+| Egenkapitalforrentning (Ordinært resultat efter skat i procent af gennemsnitlig egenkapital) | -41,25 | -95,48 | -11,71 | 7,60 | 0,74 |
+| **Medarbejdere** | | | | | |
+| Gennemsnitlige antal beskæftigede | 66 | 66 | 64 | 58 | 56 |
 
-Resultatopgørelse
-
-Indtægter i alt 60.235 58.188 65.491 73.645 67.133
-Løn- og personaleomkostninger 32.868 36.461 36.874 38.049 38.007
-Resultat af primær drift -8.003 -17.017 -5.617 -581 -907
-Resultat af finansielle poster mv. 2.561 1.435 1.444 1.890 904
-Årets resultat -3.589 -11.735 -2.840 1.296 116
-Balance
-
-Investering i immaterielle an- 5.975 1.921 9.011 2.897 4.257
-lægsaktiver
-
-Investering i materielle anlægs- 684 1.958 1.067 1.964 1.668
-aktiver
-
-Aktiver i alt - balancesum 56.433 53.462 53.099 35.820 35.806
-Egenkapital 8.702 12.291 24,252 17.063 15.768
-Nøgletal i %
-
-Overskudsgrad -13,29 -29,24 -8,58 -0,79 -1,35
-
-Resultat før finansielle poster i procent af
-
-nettoomsætning
-
-Afkastningsgrad -0,14 -0,32 -0,11 -0,02 -0,03
-Resultat før finansielle poster i procent af
-
-samlede aktiver
-
-Soliditetsgrad 15,42 22,99 45,67 47,64 44,04
-Egenkapital ultimo i procent af samlede
-
-aktiver
-
-Egenkapitalforrentning -41,25 -95,48 711,71 7,60 0,74
-
-Ordinært resultat efter skat i procent af
-gennemsnitlig egenkapital
-
-Medarbejdere
-Gennemsnitlige antal beskæfti- 66 66 64 58 56
-gede
-
-Dansk 5 GGi
-
-Revision 9 INDEPENDENT MEMBER
+Dansk Revision | 9 | GGi Independent Member
 
 --- pág. 11 ---
 
@@ -745,43 +717,51 @@ INDEPENDENT MEMBER
 
 Randers FC A/S
 
-2018/19 2017/18
-Noter DKK 1.000 DKK
-6 Kontraktrettigheder mv.
-Kostpris 1. juli 6.959.912 12.989
-Tilgang i årets løb 5.975.295 1.921
-Afgang i årets løb -4.207.118 -7.951
-Kostpris 30. juni 8.728.089 6.960
-Af- og nedskrivninger 1. juli -5.021.307 -5.318
-Af- og nedskrivninger på afhændede aktiver 3.802.238 6.056
-Årets af- og nedskrivninger -2.862.194 -5,759
-Afskrivninger 30. juni -4.081.263 -5.021
-Kontraktrettigheder mv. i alt 4.646.826 1.939
-7 Indretning af lejede lokaler
-Kostpris 1. juli 6.973.522 5.201
-Tilgang i årets løb 421.112 1.772
-Kostpris 30. juni 7.394.634 6.974
-Af- og nedskrivninger 1. juli -3.583.701 -2.924
-Årets af- og nedskrivninger -835.448 -660
-Afskrivninger 30. juni -4.419.149 -3.584
-Indretning af lejede lokaler i alt 2.975.485 3.390
-8 Andre anlæg, driftsmateriel og inventar
-Kostpris 1. juli 11.409.877 11.528
-Tilgang i årets løb 262.552 186
-Afgang i årets løb -355.809 -304
-Kostpris 30. juni 11.316.620 11.410
-Af- og nedskrivninger 1. juli 10.269.096 -9,.201
-Af- og nedskrivninger på afhændede aktiver 355.809 304
-Årets af- og nedskrivninger -957.274 -1.372
-Afskrivninger 30. juni -10.870.561 -10.269
-Andre anlæg, driftsmateriel og inventar i alt 446.059 1.141
-Heraf udgør finansielt leasede aktiver 0 158
-> GG:
+| Noter | 2018/19 DKK | 2017/18 1.000 DKK |
+|---|---|---|
 
-Dansk
-Revision 16
+**6 Kontraktrettigheder mv.**
 
-INDEPENDENT MEMBER
+| | 2018/19 | 2017/18 |
+|---|---|---|
+| Kostpris 1. juli | 6.959.912 | 12.989 |
+| Tilgang i årets løb | 5.975.295 | 1.921 |
+| Afgang i årets løb | -4.207.118 | -7.951 |
+| Kostpris 30. juni | 8.728.089 | 6.960 |
+| Af- og nedskrivninger 1. juli | -5.021.307 | -5.318 |
+| Af- og nedskrivninger på afhændede aktiver | 3.802.238 | 6.056 |
+| Årets af- og nedskrivninger | -2.862.194 | -5.759 |
+| Afskrivninger 30. juni | -4.081.263 | -5.021 |
+| **Kontraktrettigheder mv. i alt** | **4.646.826** | **1.939** |
+
+**7 Indretning af lejede lokaler**
+
+| | 2018/19 | 2017/18 |
+|---|---|---|
+| Kostpris 1. juli | 6.973.522 | 5.201 |
+| Tilgang i årets løb | 421.112 | 1.772 |
+| Kostpris 30. juni | 7.394.634 | 6.974 |
+| Af- og nedskrivninger 1. juli | -3.583.701 | -2.924 |
+| Årets af- og nedskrivninger | -835.448 | -660 |
+| Afskrivninger 30. juni | -4.419.149 | -3.584 |
+| **Indretning af lejede lokaler i alt** | **2.975.485** | **3.390** |
+
+**8 Andre anlæg, driftsmateriel og inventar**
+
+| | 2018/19 | 2017/18 |
+|---|---|---|
+| Kostpris 1. juli | 11.409.877 | 11.528 |
+| Tilgang i årets løb | 262.552 | 186 |
+| Afgang i årets løb | -355.809 | -304 |
+| Kostpris 30. juni | 11.316.620 | 11.410 |
+| Af- og nedskrivninger 1. juli | 10.269.096 | -9.201 |
+| Af- og nedskrivninger på afhændede aktiver | 355.809 | 304 |
+| Årets af- og nedskrivninger | -957.274 | -1.372 |
+| Afskrivninger 30. juni | -10.870.561 | -10.269 |
+| **Andre anlæg, driftsmateriel og inventar i alt** | **446.059** | **1.141** |
+| Heraf udgør finansielt leasede aktiver | 0 | 158 |
+
+Dansk Revision | 16 | GGi Independent Member
 
 --- pág. 18 ---
 
@@ -1254,114 +1234,74 @@ Revision 26 INDEPENDENT MEMBER
 
 --- pág. 28 ---
 
-PENN30
+PENNEO
 
-Underskrifterne idette dokument er juridisk bindende, Dokumentet er underskrevet via Penneo"" sikker digital underskrift.
-Underskrivernes identiteter er blevet registereret, og informationerne er listet herunder,
+Underskrifterne i dette dokument er juridisk bindende. Dokumentet er underskrevet via Penneo™ sikker digital underskrift. Underskrivernes identiteter er blevet registereret, og informationerne er listet herunder.
 
-”Med min underskrift bekræfter jeg indholdet og alle datoer idette dokument.”
+"Med min underskrift bekræfter jeg indholdet og alle datoer i dette dokument."
 
-Erik Busk Jensen
-
+**Erik Busk Jensen**
 Bestyrelsesmedlem
-
 Serienummer: PID:9208-2002-2-775061475394
-IP: 94,145. XXX.XXX
+IP: 94.145.xxx.xxx
+2019-09-30 12:30:37Z
+NEM ID ✓
 
-2019-09-30 12:30:3727
-
-NEM ID
-
-Henrik Jørgensen
-
+**Søren Raun Pedersen**
 Direktionsmedlem
-
-Serienummer: PID:9208-2002-2-084535521811
-IP: 46.36.XXX.XXX
-
-2019-09-30 14:14:112Z
-
-NEM ID
-
-Per Hastrup
-
-Bestyretsesmedlem
-
-Serienummer: PID:9208-2002-2-035508419051
-IP: 212.130.XXX.XXX
-
-2019-10-01 05:43:442
-
-NEM ID
-
-Steen Haugaard Fransen
-Bestyrelsesmedlem
-
-Serienummer: PID:9208-2002-2-359897384137
-IP: 217.198.XXX.XXX
-
-2019-10-02 11:03:57Z2
-
-NEM ID
-
-Dette dokument er underskrevet digitalt via Penneo.com, Signeringsbeviserne i
-dokumentet er sikret og valideret ved anvendelse af den matematiske hashværdi af
-det originale dokument. Dokumentet er låst for ændringer og tidsstemplet med et
-certifikat fra en betroet tredjepart. Alle kryptografiske signeringsbeviser er indlejret i
-denne PDF, i tilfælde af de skal anvendes til validering i fremtiden
-
-Sådan kan du sikre, at dokumentet er originalt
-Dette dokument er beskyttet med et Adobe CDS certifikat. Når du åbner dokumentet
-
-Søren Raun Pedersen
-Direktionsmedlem
-
 Serienummer: PID:9208-2002-2-506886124230
-IP: 91.144.XXX.XxX
+IP: 91.144.xxx.xxx
+2019-09-30 13:57:45Z
+NEM ID ✓
 
-2019-09-30 13:57:457
+**Henrik Jørgensen**
+Direktionsmedlem
+Serienummer: PID:9208-2002-2-084535521811
+IP: 46.36.xxx.xxx
+2019-09-30 14:14:11Z
+NEM ID ✓
 
-NEM ID
-
-Lars Willemoes Knudsen
+**Lars Willemoes Knudsen**
 Bestyrelsesmedlem
-
 Serienummer: PID:9208-2002-2-766836391348
-IP: 128.0.XXX.XXX
+IP: 128.0.xxx.xxx
+2019-09-30 16:53:57Z
+NEM ID ✓
 
-2019-09-30 16:53:572
-
-NEM ID
-
-Poul Kristensen
-
+**Per Hastrup**
 Bestyrelsesmedlem
+Serienummer: PID:9208-2002-2-035508419051
+IP: 212.130.xxx.xxx
+2019-10-01 05:43:44Z
+NEM ID ✓
 
+**Poul Kristensen**
+Bestyrelsesmedlem
 Serienummer: PID:9208-2002-2-173601174076
-IP: 80.62.XXX.XXX
+IP: 80.62.xxx.xxx
+2019-10-01 20:09:39Z
+NEM ID ✓
 
-2019-10-01 20:09:397
-
-NEM ID
-
-Jens Petri Petersen
-
+**Steen Haugaard Fransen**
 Bestyrelsesmedlem
+Serienummer: PID:9208-2002-2-359897384137
+IP: 217.198.xxx.xxx
+2019-10-02 11:03:57Z
+NEM ID ✓
 
+**Jens Petri Petersen**
+Bestyrelsesmedlem
 Serienummer: PID:9208-2002-2-960077942160
-IP: 91.144.XXX.XXX
+IP: 91.144.xxx.xxx
+2019-10-02 13:55:04Z
+NEM ID ✓
 
-2019-10-02 13:55:047
+Dette dokument er underskrevet digitalt via **Penneo.com**. Signeringsbeviserne i dokumentet er sikret og valideret ved anvendelse af den matematiske hashværdi af det originale dokument. Dokumentet er låst for ændringer og tidsstemplet med et certifikat fra en betroet tredjepart. Alle kryptografiske signeringsbeviser er indlejret i denne PDF, i tilfælde af de skal anvendes til validering i fremtiden.
 
-NEM ID
+**Sådan kan du sikre, at dokumentet er originalt**
+Dette dokument er beskyttet med et Adobe CDS certifikat. Når du åbner dokumentet i Adobe Reader, kan du se, at dokumentet er certificeret af **Penneo e-signature service <penneo@penneo.com>**. Dette er din garanti for, at indholdet af dokumentet er uændret.
 
-i Adobe Reader, kan du se, at dokumentet er certificeret af Penneo e-signature ser-
-vice <penneoepenneo,com>. Dette er din garanti for, at indholdet af dokumentet
-er uændret
-
-Du har mulighed for at efterprøve de kryptografiske signeringsbeviser indle-
-Jret i dokumentet ved at anvende Penneos validator på følgende websted:
-https://penneo.com/validate
+Du har mulighed for at efterprøve de kryptografiske signeringsbeviser indlejret i dokumentet ved at anvende Penneos validator på følgende websted: **https://penneo.com/validate**
 
 --- pág. 29 ---
 

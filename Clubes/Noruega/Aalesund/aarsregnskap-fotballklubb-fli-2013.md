@@ -93,42 +93,48 @@ Organisasjonsnummer: 974 760 673
 --- pág. 2 ---
 
 Organisasjonsnr: 942 478 844  
-AALBUNDS FOTBALLKLUBB
+AALESUNDS FOTBALLKLUBB  
 
-## RESULTATREGNSKAP
+### RESULTATREGNSKAP
 
-|  Beløp i: NOK | Note | 2013 | 2012  |
-| --- | --- | --- | --- |
-|  **Inntekter** |  |  |   |
-|  Salgsinntekt | 12,15 | 33 009 001 | 32 042 899  |
-|  Annen driftsinntekt | 12,17 | 1 132 779 | 27 763  |
-|  **Sum inntekter** |  | **34 141 780** | **32 070 662**  |
-|  **Kostnader** |  |  |   |
-|  Varekostnad |  | 381 351 | 239 698  |
-|  Lønnskostnad | 13,10 | 30 988 089 | 29 635 325  |
-|  Avskrivning på varige driftsmidler og immaterielle eiendeler | 1,2 | 918 315 | 1 078 708  |
-|  Annen driftskostnad | 13 | 1 303 168 | 1 007 240  |
-|  **Sum kostnader** |  | **33 590 923** | **31 960 971**  |
-|  **Driftsresultat** |  | **550 857** | **109 691**  |
-|  **Finansinntekter og finanskostnader** |  |  |   |
-|  Annen renteinntekt |  | 53 626 | 67 040  |
-|  Annen finansinntekt |  | 150 373 |   |
-|  **Sum finansinntekter** |  | **203 999** | **67 040**  |
-|  Annen rentekostnad |  | 793 |   |
-|  Annen finanskostnad | 4,16 | 2 391 929 | 2 812 516  |
-|  **Sum finanskostnader** |  | **2 392 722** | **2 812 516**  |
-|  **Netto finans** |  | **-2 188 723** | **-2 745 476**  |
-|  Ordinært resultat før skattekostnad |  | -1 637 866 | -2 635 785  |
-|  Ordinært resultat etter skattekostnad |  | -1 637 866 | -2 635 785  |
-|  **Årsresultat** |  | **-1 637 866** | **-2 635 785**  |
-|  **Overføringer og disponeringer** |  |  |   |
-|  Overføringer til/fra annen egenkapital | 8 | -1 637 866 | -2 635 785  |
-|  **Sum overføringer og disponeringer** |  | **-1 637 866** | **-2 635 785**  |
+| Beløp i: NOK | Note | 2013 | 2012 |
+| :--- | :--- | :---: | :---: |
+| **Inntekter** | | | |
+| Salgsinntekt | 12, 15 | 33 009 001 | 32 042 899 |
+| Annen driftsinntekt | 12, 17 | 1 132 779 | 27 763 |
+| **Sum inntekter** | | **34 141 780** | **32 070 662** |
+| | | | |
+| **Kostnader** | | | |
+| Varekostnad | | 381 351 | 239 698 |
+| Lønnskostnad | 13, 10 | 30 988 089 | 29 635 325 |
+| Avskrivning på varige driftsmidler og immaterielle eiendeler | 1, 2 | 918 315 | 1 078 708 |
+| Annen driftskostnad | 13 | 1 303 168 | 1 007 240 |
+| **Sum kostnader** | | **33 590 923** | **31 960 971** |
+| | | | |
+| **Driftsresultat** | | **550 857** | **109 691** |
+| | | | |
+| **Finansinntekter og finanskostnader** | | | |
+| Annen renteinntekt | | 53 626 | 67 040 |
+| Annen finansinntekt | | 150 373 | |
+| **Sum finansinntekter** | | **203 999** | **67 040** |
+| | | | |
+| Annen rentekostnad | | 793 | |
+| Annen finanskostnad | 4, 16 | 2 391 929 | 2 812 516 |
+| **Sum finanskostnader** | | **2 392 722** | **2 812 516** |
+| | | | |
+| **Netto finans** | | **-2 188 723** | **-2 745 476** |
+| | | | |
+| **Ordinært resultat før skattekostnad** | | **-1 637 866** | **-2 635 785** |
+| **Ordinært resultat etter skattekostnad** | | **-1 637 866** | **-2 635 785** |
+| | | | |
+| **Årsresultat** | | **-1 637 866** | **-2 635 785** |
+| | | | |
+| **Overføringer og disponeringer** | | | |
+| Overføringer til/fra annen egenkapital | 8 | -1 637 866 | -2 635 785 |
+| **Sum overføringer og disponeringer** | | **-1 637 866** | **-2 635 785** |
 
-Utskriftsdato 16.08.2014
-
-Organisasjonsnr 942 478 844
-
+Utskriftsdato 16.08.2014  
+Organisasjonsnr 942 478 844  
 Side 1 av 3
 
 --- pág. 3 ---
@@ -177,50 +183,40 @@ Side 2 av 3
 
 --- pág. 4 ---
 
-# EGENKAPITAL OG GJELD
+### EGENKAPITAL OG GJELD
 
-# Egenkapital
+| | Note | 2013 | 2012 |
+| :--- | :--- | :---: | :---: |
+| **Egenkapital** | | | |
+| **Innskutt egenkapital** | | | |
+| Annen innskutt egenkapital | | 0 | 0 |
+| **Sum innskutt egenkapital** | | **0** | **0** |
+| | | | |
+| **Opptjent egenkapital** | | | |
+| Annen Egenkapital | 8 | 9 828 952 | 11 466 818 |
+| **Sum opptjent egenkapital** | | **9 828 952** | **11 466 818** |
+| | | | |
+| **Sum egenkapital** | | **9 828 952** | **11 466 818** |
+| | | | |
+| **Langsiktig gjeld** | | | |
+| **Sum avsetninger for forpliktelser** | | **0** | **0** |
+| Annen langsiktig gjeld | | 0 | 0 |
+| **Sum annen langsiktig gjeld** | | **0** | **0** |
+| | | | |
+| **Sum langsiktig gjeld** | | **0** | **0** |
+| | | | |
+| **Kortsiktig gjeld** | | | |
+| Leverandørgjeld | 6 | 115 618 | 22 710 |
+| Skyldige offentlige avgifter | | 4 258 146 | 3 439 957 |
+| Annen kortsiktig gjeld | | 5 793 761 | 3 211 889 |
+| **Sum kortsiktig gjeld** | | **10 167 525** | **6 674 556** |
+| | | | |
+| **Sum gjeld** | | **10 167 525** | **6 674 556** |
+| | | | |
+| **SUM EGENKAPITAL OG GJELD** | | **19 996 477** | **18 141 374** |
 
-Innskutt egenkapital
-
-Annen innskutt egenkapital 0 0
-
-Sum innskutt egenkapital 0 0
-
-# Opptjent egenkapital
-
-Annen Egenkapital 8 9 828 952 11 466 818
-
-Sum opptjent egenkapital 9 828 952 11 466 818
-
-Sum egenkapital 9 828 952 11 466 818
-
-# Langsiktig gjeld
-
-Sum avsetninger for forpliktelser 0 0
-
-Annen langsiktig gjeld Sum annen langsiktig gjeld 0 0
-
-Sum langsiktig gjeld 0 0
-
-# Kortsiktig gjeld
-
-Leverandørgjeld 6 115 618 22 710
-
-Skyldige offentlige avgifter 4 258 146 3 439 957
-
-Annen kortsiktig gjeld 5 793 761 3 211 889
-
-Sum kortsiktig gjeld 10 167 525 6 674 556
-
-Sum gjeld 10 167 525 6 674 556
-
-SUM EGENKAPITAL OG GJELD 19 996 477 18 141 374
-
-Utskriftsdato 16.08.2014
-
-Organisasjonsnr 942 478 844
-
+Utskriftsdato 16.08.2014  
+Organisasjonsnr 942 478 844  
 Side 3 av 3
 
 --- pág. 5 ---

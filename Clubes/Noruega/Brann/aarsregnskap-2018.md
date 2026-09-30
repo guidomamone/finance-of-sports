@@ -902,56 +902,47 @@ I posten inngår bundne bankinnskudd på skattetrekkskontoen med kr 2 661 899 fo
 
 --- pág. 25 ---
 
-BRANN
-
-Årsrapport
-2018
-
-Side
-18 av 32
+BRANN | Årsrapport 2018 | Side 18 av 32
 
 ## Note 4 - Andre driftsinntekter
 
-|  Morselskap |   | Konsern  |   |
-| --- | --- | --- | --- |
-|  2017 | 2018 | 2018 | 2017  |
-|  1 230 649 | 5 856 705 | Netto spillersalgsgevinster | 5 856 705 1 230 649  |
-|  10 520 000 | 5 500 000 | Ekstern støtte* | 5 500 000 10 520 000  |
-|  3 475 768 | 2 416 642 | Andre driftsinntekter | 165 341 587 9 972 983  |
-|  **15 226 417** | **13 773 347** | **Sum andre driftsinntekter** | **176 698 292 21 723 632**  |
+| Morselskap 2017 | Morselskap 2018 | | Konsern 2018 | Konsern 2017 |
+|---:|---:|---|---:|---:|
+| 1 230 649 | 5 856 705 | Netto spillersalgsgevinster | 5 856 705 | 1 230 649 |
+| 10 520 000 | 5 500 000 | Ekstern støtte* | 5 500 000 | 10 520 000 |
+| 3 475 768 | 2 416 642 | Andre driftsinntekter | 165 341 587 | 9 972 983 |
+| **15 226 417** | **13 773 347** | **Sum andre driftsinntekter** | **176 698 292** | **21 723 632** |
 
 *I tillegg er det i 2018 gitt ekstern støtte øremerket spillerinvestering som er nettoført
 
 ## Note 5 - Varekostnad
 
-|  Morselskap |   | Konsern  |   |
-| --- | --- | --- | --- |
-|  2017 | 2018 | 2018 | 2017  |
-|  0 | 0 Varekostnad Brann Supporter AS | 0 | 354 815  |
-|  0 | 0 Varekostnad Brann Stadion AS | 124 891 228 | 7 697 203  |
-|  0 | 0 Varekostnad Stadion Event AS | 2 798 216 | 2 961 112  |
-|  **0** | **0 Sum varekostnad** | **127 689 444** | **11 013 130**  |
+| Morselskap 2017 | Morselskap 2018 | | Konsern 2018 | Konsern 2017 |
+|---:|---:|---|---:|---:|
+| 0 | 0 | Varekostnad Brann Supporter AS | 0 | 354 815 |
+| 0 | 0 | Varekostnad Brann Stadion AS | 124 891 228 | 7 697 203 |
+| 0 | 0 | Varekostnad Stadion Event AS | 2 798 216 | 2 961 112 |
+| **0** | **0** | **Sum varekostnad** | **127 689 444** | **11 013 130** |
 
 ## Note 6 - Varer
 
-|  Morselskap |   | Konsern  |   |
-| --- | --- | --- | --- |
-|  2017 | 2018 | 2018 | 2017  |
-|  0 | 0 Lager innkjøpte varer for videresalg | 81 374 | 89 776  |
-|  0 | 0 Forbruksvarer | 0 | 0  |
-|  **0** | **0 Sum** | **81 374** | **89 776**  |
+| Morselskap 2017 | Morselskap 2018 | | Konsern 2018 | Konsern 2017 |
+|---:|---:|---|---:|---:|
+| 0 | 0 | Lager innkjøpte varer for videresalg | 81 374 | 89 776 |
+| 0 | 0 | Forbruksvarer | 0 | 0 |
+| **0** | **0** | **Sum** | **81 374** | **89 776** |
 
 ## Note 7 – Lønnskostnader og godtgjørelser
 
-|  Morselskap |   | Konsern  |   |
-| --- | --- | --- | --- |
-|  2017 | 2018 | 2018 | 2017  |
-|  42 074 700 | 50 545 507 | Lønninger | 52 610 048 44 100 654  |
-|  6 855 973 | 7 772 317 | Arbeidsgiveravgift | 8 073 220 7 158 609  |
-|  1 035 979 | 1 054 264 | Pensjonskostnader | 1 101 037 1 080 752  |
-|  255 695 | 235 405 | Andre ytelser | 236 944 309 347  |
-|  **50 222 347** | **59 607 494** | **Sum** | **62 021 249 52 649 361**  |
-|  50 | 50 | Gjennomsnittlig antall årsverk | 53 53  |
+| Morselskap 2017 | Morselskap 2018 | | Konsern 2018 | Konsern 2017 |
+|---:|---:|---|---:|---:|
+| 42 074 700 | 50 545 507 | Lønninger | 52 610 048 | 44 100 654 |
+| 6 855 973 | 7 772 317 | Arbeidsgiveravgift | 8 073 220 | 7 158 609 |
+| 1 035 979 | 1 054 264 | Pensjonskostnader | 1 101 037 | 1 080 752 |
+| 255 695 | 235 405 | Andre ytelser | 236 944 | 309 347 |
+| **50 222 347** | **59 607 494** | **Sum** | **62 021 249** | **52 649 361** |
+| | | | | |
+| 50 | 50 | Gjennomsnittlig antall årsverk | 53 | 53 |
 
 --- pág. 26 ---
 
@@ -1262,53 +1253,49 @@ I 2018 har Sparebanken Vest, som påkravsgarantist, stilt garanti på kr 80 000 
 --- pág. 34 ---
 
 BRANN
-
-Årsrapport
-2018
-
-Side
-27 av 32
+Årsrapport 2018
+Side 27 av 32
 
 # Revisjonsberetning
 
-Building a better
-working world
+EY
+Building a better working world
 
-Stølsautorisorte revisorer
+Statsautoriserte revisorer
 Ernst & Young AS
 
-Thormattens gate 53 D, NO-5006 Bergen
-Postboks 6153, NO-5892 Bergen
+Thormøhlens gate 53 D, NO-5006 Bergen
+Postboks 6163, NO-5892 Bergen
 
-Foretaksregisterer: NO 976 389 387 MVA
+Foretaksregisteret: NO 976 389 387 MVA
 Tlf: +47 24 00 24 00
 Fax: +47 55 21 30 01
 www.ey.no
 Medlemmer av Den norske revisorforening
 
-## UAVHENGIG REVISORS BERETNING
+**UAVHENGIG REVISORS BERETNING**
 
 Til årsmøtet i Sportsklubben Brann
 
-### Uttalelse om revisjonen av årsregnskapet
+**Uttalelse om revisjonen av årsregnskapet**
 
-#### Konklusjon
+**Konklusjon**
 
 Vi har revidert årsregnskapet for Sportsklubben Brann som består av sportsklubbens regnskap og konsernregnskap. Sportsklubbens regnskap og konsernregnskap består av balanse per 31. desember 2018, resultatregnskap og kontantstrømoppstilling for regnskapsåret avsluttet per denne datoen, og en beskrivelse av vesentlige anvendte regnskapsprinsipper og andre noteopplysninger.
 
 Etter vår mening er årsregnskapet avgitt i samsvar med lov og forskrifter og gir et rettvisende bilde av sportsklubbens og konsernets finansielle stilling per 31. desember 2018, og av deres resultater og kontantstrømmer for regnskapsåret avsluttet per denne datoen i samsvar med regnskapslovens regler og god regnskapsskikk i Norge.
 
-#### Grunnlag for konklusjonen
+**Grunnlag for konklusjonen**
 
 Vi har gjennomført revisjonen i samsvar med lov, forskrift og god revisjonsskikk i Norge, herunder de internasjonale revisjonsstandardene (ISA-ene). Våre oppgaver og plikter i henhold til disse standardene er beskrevet i avsnittet *Revisors oppgaver og plikter ved revisjonen av årsregnskapet*. Vi er uavhengige av sportsklubben og konsernet i samsvar med de relevante etiske kravene i Norge knyttet til revisjon slik det kreves i lov og forskrift. Vi har også overholdt våre øvrige etiske forpliktelser i samsvar med disse kravene. Etter vår oppfatning er innhentet revisjonsbevis tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon.
 
-#### Øvrig informasjon
+**Øvrig informasjon**
 
 Øvrig informasjon omfatter informasjon i sportsklubbens årsrapport bortsett fra årsregnskapet og den tilhørende revisjonsberetningen. Styret og daglig leder (ledelsen) er ansvarlig for den øvrige informasjonen. Vår uttalelse om revisjonen av årsregnskapet dekker ikke den øvrige informasjonen, og vi attesterer ikke den øvrige informasjonen.
 
 I forbindelse med revisjonen av årsregnskapet er det vår oppgave å lese den øvrige informasjonen med det formål å vurdere hvorvidt det foreligger vesentlig inkonsistens mellom den øvrige informasjonen og årsregnskapet eller kunnskap vi har opparbeidet oss under revisjonen, eller hvorvidt den tilsynelatende inneholder vesentlig feilinformasjon. Dersom vi konkluderer med at den øvrige informasjonen inneholder vesentlig feilinformasjon, er vi pålagt å rapportere det. Vi har ingenting å rapportere i så henseende.
 
-#### Ledelsens ansvar for årsregnskapet
+**Ledelsens ansvar for årsregnskapet**
 
 Ledelsen er ansvarlig for å utarbeide årsregnskapet i samsvar med lov og forskrifter, herunder for at det gir et rettvisende bilde i samsvar med regnskapslovens regler og god regnskapsskikk i Norge. Ledelsen er også ansvarlig for slik intern kontroll som den finner nødvendig for å kunne utarbeide et årsregnskap som ikke inneholder vesentlig feilinformasjon, verken som følge av misligheter eller feil.
 
@@ -1529,29 +1516,26 @@ Perso/Dokumentnøkkel: 65G4L-FUMF3-W4W36-343LC-PW0C2-H4B1
 --- pág. 41 ---
 
 EY
-
 Building a better working world
 
-# Revisors oppgaver og plikter ved revisjonen av årsregnskapet
+### Revisors oppgaver og plikter ved revisjonen av årsregnskapet
 
 Vårt mål er å oppnå betryggende sikkerhet for at årsregnskapet som helhet ikke inneholder vesentlig feilinformasjon, verken som følge av misligheter eller feil, og å avgi en revisjonsberetning som inneholder vår konklusjon. Betryggende sikkerhet er en høy grad av sikkerhet, men ingen garanti for at en revisjon utført i samsvar med lov, forskrift og god revisjonsskikk i Norge, herunder ISA-ene, alltid vil avdekke vesentlig feilinformasjon. Feilinformasjon kan skyldes misligheter eller feil og er å anse som vesentlig dersom den enkeltvis eller samlet med rimelighet kan forventes å påvirke de økonomiske beslutningene som brukerne foretar på grunnlag av årsregnskapet.
 
 Som del av en revisjon i samsvar med lov, forskrift og god revisjonsskikk i Norge, herunder ISA-ene, utøver vi profesjonelt skjønn og utviser profesjonell skepsis gjennom hele revisjonen. I tillegg:
 
-identifiser og anslr vi risikob for vesentig feilinformasjon i arsregnskapet, enten det skyldes misligher erll feil. Vi utformer og giennomfere revisjonshandlner for a handtere slike risikob, og innhenter revisjonsbevis som er tilstrekkelig og hensiktsmessig som grunllag for var konklusjon. Risikob for at vesentig feilinformasjon som fge av misligher icke blir avdekket, er hyere enn for feilinformasjon som skyldes feil, sider misligher kan innebare samarbeid, forfalsknng, bevisst utelatelser, urktige fremstlinger erer overstryng av intern kontroll;
-- opparbeider vi oss en forstelse av den interne kontrollen som er relevant for revisjonen, for a utforme revisjonshandlinger som er hensiktsmessige etter omstendighetene, men icke for a gi uttrykk for en menig om effektivitet an sportsklubbens interne kontroll;
-vurderer vi om de anvende regnskapssprinsippene er hensiktsmessige og om regnskapssestmatene og tilhorende noteopplysninger utarbeidet av ledelsen er rimelige;
-- konkluderer vi pa om ledelsens bruk av fortsett drift-forutsetningen er hensiktsmessig, og, basert pa innhente revisjonsbevis, hvorvidt det foreligger vesentig usikkerhet knyttet til hendelser er forhold som kan skape betydelig tvil om sportsklubbens evne til fortsett drift. Dersom vi konkluderer med at det foreligger vesentig usikkerhet, kreves det at vi i revisjonsberetningen henleder oppmerksomheten pa tilleggsopplysningene i arsregnskapet. Hvis slike tilleggsopplysninger icke er tilstrekkelige, ma vi modifere var konklusjon. Vare konklusjoner er basert pa revisjonsbevis innhentet frem til datoen for revisjonsberetningen. Etterfolgende hendelser er forhold kan imidertid medfere at sportsklubbens evne ti fortsett drift icke longer er til stede;
-vurderer vi den samlede presentasjonen, strukturen og innholdet i arsregnskapet, inkludert tilleggsopplysningene, og hvorvidt arsregnskapet gir uttrykk for de underligende transaksjonene og hendelsene pa en mate som gir et rettvisende bilde;
-- innhenter vi tilstrekkelig og hensiktsmessig revisjonsbevis vedrørende den finansielle informasjonen til enchetene erller forretningsomrändene i konsernet for a kunne gi uttrykk for en menig om konsernregnskapet. Vi er ansvarlige for a fastsette strategien for, smt a ffolge opp og giennomfere konsernrevisjonen, og vi har et udelt ansvar for konklusjonen pa revisjonen av konsernregnskapet.
+- identifiserer og anslår vi risikoen for vesentlig feilinformasjon i årsregnskapet, enten det skyldes misligheter eller feil. Vi utformer og gjennomfører revisjonshandlinger for å håndtere slike risikoer, og innhenter revisjonsbevis som er tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon. Risikoen for at vesentlig feilinformasjon som følge av misligheter ikke blir avdekket, er høyere enn for feilinformasjon som skyldes feil, siden misligheter kan innebære samarbeid, forfalskning, bevisste utelatelser, uriktige fremstillinger eller overstyring av intern kontroll;
+- opparbeider vi oss en forståelse av den interne kontrollen som er relevant for revisjonen, for å utforme revisjonshandlinger som er hensiktsmessige etter omstendighetene, men ikke for å gi uttrykk for en mening om effektiviteten av sportsklubbens interne kontroll;
+- vurderer vi om de anvendte regnskapsprinsippene er hensiktsmessige og om regnskapsestimatene og tilhørende noteopplysninger utarbeidet av ledelsen er rimelige;
+- konkluderer vi på om ledelsens bruk av fortsatt drift-forutsetningen er hensiktsmessig, og, basert på innhentete revisjonsbevis, hvorvidt det foreligger vesentlig usikkerhet knyttet til hendelser eller forhold som kan skape betydelig tvil om sportsklubbens evne til fortsatt drift. Dersom vi konkluderer med at det foreligger vesentlig usikkerhet, kreves det at vi i revisjonsberetningen henleder oppmerksomheten på tilleggsopplysningene i årsregnskapet. Hvis slike tilleggsopplysninger ikke er tilstrekkelige, må vi modifisere vår konklusjon. Våre konklusjoner er basert på revisjonsbevis innhentet frem til datoen for revisjonsberetningen. Etterfølgende hendelser eller forhold kan imidlertid medføre at sportsklubbens evne til fortsatt drift ikke lenger er til stede;
+- vurderer vi den samlede presentasjonen, strukturen og innholdet i årsregnskapet, inkludert tilleggsopplysningene, og hvorvidt årsregnskapet gir uttrykk for de underliggende transaksjonene og hendelsene på en måte som gir et rettvisende bilde;
+- innhenter vi tilstrekkelig og hensiktsmessig revisjonsbevis vedrørende den finansielle informasjonen til enhetene eller forretningsområdene i konsernet for å kunne gi uttrykk for en mening om konsernregnskapet. Vi er ansvarlige for å fastsette strategien for, samt å følge opp og gjennomføre konsernrevisjonen, og vi har et udelt ansvar for konklusjonen på revisjonen av konsernregnskapet.
 
 Vi kommuniserer med styret blant annet om det planlagte omfanget av revisjonen, tidspunktet for vårt revisjonsarbeid og eventuelle vesentlige funn i vår revisjon, herunder vesentlige svakheter i den interne kontrollen som vi avdekker gjennom vårt arbeid.
 
-Uavhengig revisors beretning - Sportsklubben Brann
+Uavhengig revisors beretning - Sportsklubben Brann          2
 
-2
-
-Perso/Dokumentnøkkel: 65G4L-FUMF3-W4836-343LC-PWDC2-H4B1
+Penneo Dokumentnøkkel: 6SG4L-FUMY3-W4W36-343LC-PWOC2-H48II
 
 --- pág. 42 ---
 

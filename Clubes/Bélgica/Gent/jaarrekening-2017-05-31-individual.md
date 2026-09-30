@@ -1209,129 +1209,47 @@ XXKKKKKKKK
 
 --- pág. 15 ---
 
-Nr. BE 0407.885.394
+| Nr. | BE 0407.885.394 | VOL 6.4.3 |
+| :--- | :--- | :--- |
 
-VOL 6.4.3
-
-ANDERE ONDERNEMINGEN - DEELNEMINGEN EN AANDELEN
-Aanschaffingswaarde per einde van het boekjaar
-
-Mutaties tijdens het boekjaar
-Aanschaffingen
-Overdrachten en buitengebruikstellingen
-Overboekingen van een post naar een andere (#)/(-)
-
-Aanschaffingswaarde per einde van het boekjaar
-Meerwaarden per einde van het boekjaar
-
-Mutaties tijdens het boekjaar
-Geboekt
-Verworven van derden
-Afgeboekt
-Overgeboekt van een post naar een andere (+)/(-)
-
-Meerwaarden per einde van het boekjaar
-Waardeverminderingen per einde van het boekjaar
-
-Mutaties tijdens het boekjaar
-Geboekt
-Teruggenomen
-Verworven van derden
-Afgeboekt na overdrachten en buitengebruikstellingen
-Overgeboekt van een post naar een andere (+)/(-)
-
-Waardeverminderingen per einde van het boekjaar
-Niet-opgevraagde bedragen per einde van het boekjaar
-
-Mutaties tijdens het boekjaar (#)/(-)
-Niet-opgevraagde bedragen per einde van het boekjaar
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
-
-ANDERE ONDERNEMINGEN - VORDERINGEN
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
-
-Mutaties tijdens het boekjaar
-Toevoegingen
-Terugbetalingen
-Geboekte waardeverminderingen
-
-Teruggenomen waardeverminderingen
-Wisselkoersverschillen (#)/-)
-Overige mutaties (#/)
-
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
-
-GECUMULEERDE WAARDEVERMINDERINGEN OP VORDERINGEN PER
-EINDE BOEKJAAR
-
-Codes
-
-Boekjaar
-
-Vorig boekjaar |
-
-8393P
-
-8363
-8373
-8383
-
-8393
-8453P
-
-8413
-8423
-8433
-8443
-
-8453
-852sP
-
-8473
-8483
-8493
-8503
-8513
-
-8523
-8553P
-8543
-8553
-284
-
-285/8P
-
-8583
-8593
-8603
-8613
-8623
-8633
-
-285/8
-
-8653
-
-XXXXXKKKKK
-
-775.001
-
-1.604.901
-XXXXXKKKKK
-
-XXXXXKKKKK
-
-XXXXXKKKKK
-
-1.604.901
-
-XXKKKKKKKK
-
-18.051
-
-829.900 |
-
-30.064
+| ANDERE ONDERNEMINGEN - DEELNEMINGEN EN AANDELEN | Codes | Boekjaar | Vorig boekjaar |
+| :--- | :--- | :--- | :--- |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8393P | XXXXXXXXXX | **829.900** |
+| **Mutaties tijdens het boekjaar** | | | |
+| Aanschaffingen | 8363 | 775.001 | |
+| Overdrachten en buitengebruikstellingen | 8373 | | |
+| Overboekingen van een post naar een andere (+)/(-) | 8383 | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8393 | **1.604.901** | |
+| **Meerwaarden per einde van het boekjaar** | 8453P | XXXXXXXXXX | |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8413 | | |
+| Verworven van derden | 8423 | | |
+| Afgeboekt | 8433 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8443 | | |
+| **Meerwaarden per einde van het boekjaar** | 8453 | | |
+| **Waardeverminderingen per einde van het boekjaar** | 8523P | XXXXXXXXXX | |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8473 | | |
+| Teruggenomen | 8483 | | |
+| Verworven van derden | 8493 | | |
+| Afgeboekt na overdrachten en buitengebruikstellingen | 8503 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8513 | | |
+| **Waardeverminderingen per einde van het boekjaar** | 8523 | | |
+| **Niet-opgevraagde bedragen per einde van het boekjaar** | 8553P | XXXXXXXXXX | |
+| **Mutaties tijdens het boekjaar** (+)/(-) | 8543 | | |
+| **Niet-opgevraagde bedragen per einde van het boekjaar** | 8553 | | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | 284 | **1.604.901** | |
+| **ANDERE ONDERNEMINGEN - VORDERINGEN** | | | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | 285/8P | XXXXXXXXXX | **30.064** |
+| **Mutaties tijdens het boekjaar** | | | |
+| Toevoegingen | 8583 | 18.051 | |
+| Terugbetalingen | 8593 | | |
+| Geboekte waardeverminderingen | 8603 | | |
+| Teruggenomen waardeverminderingen | 8613 | | |
+| Wisselkoersverschillen (+)/(-) | 8623 | | |
+| Overige mutaties (+)/(-) | 8633 | | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | 285/8 | **48.115** | |
+| **GECUMULEERDE WAARDEVERMINDERINGEN OP VORDERINGEN PER EINDE BOEKJAAR** | 8653 | | |
 
 15/43
 
@@ -1971,185 +1889,67 @@ vergoeding van 66.225 eur zal worden betaald 66.225
 
 --- pág. 26 ---
 
-Nr. BE 0407.885.394
+| Nr. | BE 0407.885.394 | VOL 6.15 |
+| :--- | :--- | :--- |
 
-VOL 6.15
+### BETREKKINGEN MET VERBONDEN ONDERNEMINGEN, GEASSOCIEERDE ONDERNEMINGEN EN DE ANDERE ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING BESTAAT
 
-BETREKKINGEN MET VERBONDEN ONDERNEMINGEN, GEASSOCIEERDE ONDERNEMINGEN EN DE ANDERE
-
-ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING BESTAAT
-
-VERBONDEN ONDERNEMINGEN
-
-Financiële vaste activa
-Deelnemingen
-Achtergestelde vorderingen
-Andere vorderingen
-
-Vorderingen
-Op meer dan één jaar
-Op hoogstens één jaar
-
-Geldbeleggingen
-Aandelen
-Vorderingen
-
-Schulden
-Op meer dan één jaar
-Op hoogstens één jaar
-
-Persoonlijke en zakelijke zekerheden
-Door de onderneming gesteld of onherroepelijk beloofd als waarborg
-voor schulden of verplichtingen van verbonden ondernemingen
-Door verbonden ondernemingen gesteld of onherroepelijk beloofd als
-waarborg voor schulden of verplichtingen van de onderneming
-
-Andere betekenisvolle financiële verplichtingen
-
-Financiële resultaten
-Opbrengsten uit financiële vaste activa
-Opbrengsten uit vlottende activa
-Andere financiële opbrengsten
-Kosten van schulden
-Andere financiële kosten
-
-Realisatie van vaste activa
-Verwezenlijkte meerwaarden
-Verwezenlijkte minderwaarden
-
-GEASSOCIEERDE ONDERNEMINGEN
-
-Financiële vaste activa
-Deelnemingen
-Achtergestelde vorderingen
-Andere vorderingen
-
-Vorderingen
-Op meer dan één jaar
-Op hoogstens één jaar
-
-Schulden
-Op meer dan één jaar
-Op hoogstens één jaar
-
-Persoonlijke en zakelijke zekerheden
-Door de onderneming gesteld of onherroepelijk beloofd als waarborg
-voor schulden of verplichtingen van geassocieerde ondernemingen
-Door geassocieerde ondernemingen gesteld of onherroepelijk beloofd
-als waarborg voor schulden of verplichtingen van de onderneming
-
-Andere betekenisvolle financiële verplichtingen
-
-ANDERE ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING
-BESTAAT
-
-Financiële vaste activa
-Deelnemingen
-Achtergestelde vorderingen
-Andere vorderingen
-
-Vorderingen
-Op meer dan één jaar
-Op hoogstens één jaar
-
-Schulden
-Op meer dan één jaar
-
-Codes
-
-Boekjaar
-
-Vorig boekjaar
-
-280/1
-280
-9271
-9281
-
-ge
-9301
-9311
-
-9321
-9331
-9341
-
-9351
-9361
-9371
-
-9381
-
-9391
-9401
-
-9421
-9431
-9441
-9461
-9471
-
-9481
-9491
-
-9253
-9263
-9273
-9283
-
-9293
-9303
-9313
-
-9353
-9363
-9373
-
-9383
-
-9393
-9403
-
-9252
-9262
-9272
-9282
-
-9292
-9302
-9312
-
-9352
-9362
-
-3.271.173
-3.271.173
-
-588.025
-
-588.025
-
-5.433.329
-5.400.000
-33.329
-
-249.197
-
-563.423
-563.423
-
-549.554
-
-549.554
-
-5.483.945
-5.400.000
-83.945
-
-258.940
+| | Codes | Boekjaar | Vorig boekjaar |
+| :--- | :--- | :--- | :--- |
+| **VERBONDEN ONDERNEMINGEN** | | | |
+| **Financiële vaste activa** | 280/1 | **3.271.173** | **563.423** |
+| Deelnemingen | 280 | 3.271.173 | 563.423 |
+| Achtergestelde vorderingen | 9271 | | |
+| Andere vorderingen | 9281 | | |
+| **Vorderingen** | 9291 | **588.025** | **549.554** |
+| Op meer dan één jaar | 9301 | | |
+| Op hoogstens één jaar | 9311 | 588.025 | 549.554 |
+| **Geldbeleggingen** | 9321 | | |
+| Aandelen | 9331 | | |
+| Vorderingen | 9341 | | |
+| **Schulden** | 9351 | **5.433.329** | **5.483.945** |
+| Op meer dan één jaar | 9361 | 5.400.000 | 5.400.000 |
+| Op hoogstens één jaar | 9371 | 33.329 | 83.945 |
+| **Persoonlijke en zakelijke zekerheden** | | | |
+| Door de onderneming gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van verbonden ondernemingen | 9381 | | |
+| Door verbonden ondernemingen gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van de onderneming | 9391 | | |
+| **Andere betekenisvolle financiële verplichtingen** | 9401 | | |
+| **Financiële resultaten** | | | |
+| Opbrengsten uit financiële vaste activa | 9421 | | |
+| Opbrengsten uit vlottende activa | 9431 | | |
+| Andere financiële opbrengsten | 9441 | | |
+| Kosten van schulden | 9461 | 249.197 | 258.940 |
+| Andere financiële kosten | 9471 | | |
+| **Realisatie van vaste activa** | | | |
+| Verwezenlijkte meerwaarden | 9481 | | |
+| Verwezenlijkte minderwaarden | 9491 | | |
+| **GEASSOCIEERDE ONDERNEMINGEN** | | | |
+| **Financiële vaste activa** | 9253 | | |
+| Deelnemingen | 9263 | | |
+| Achtergestelde vorderingen | 9273 | | |
+| Andere vorderingen | 9283 | | |
+| **Vorderingen** | 9293 | | |
+| Op meer dan één jaar | 9303 | | |
+| Op hoogstens één jaar | 9313 | | |
+| **Schulden** | 9353 | | |
+| Op meer dan één jaar | 9363 | | |
+| Op hoogstens één jaar | 9373 | | |
+| **Persoonlijke en zakelijke zekerheden** | | | |
+| Door de onderneming gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van geassocieerde ondernemingen | 9383 | | |
+| Door geassocieerde ondernemingen gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van de onderneming | 9393 | | |
+| **Andere betekenisvolle financiële verplichtingen** | 9403 | | |
+| **ANDERE ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING BESTAAT** | | | |
+| **Financiële vaste activa** | 9252 | | |
+| Deelnemingen | 9262 | | |
+| Achtergestelde vorderingen | 9272 | | |
+| Andere vorderingen | 9282 | | |
+| **Vorderingen** | 9292 | | |
+| Op meer dan één jaar | 9302 | | |
+| Op hoogstens één jaar | 9312 | | |
+| **Schulden** | 9352 | | |
+| Op meer dan één jaar | 9362 | | |
 
 26/43
-
 
 --- pág. 27 ---
 
@@ -2306,67 +2106,43 @@ Deze posten worden gewaardeerd tegen nominale waarde
 
 --- pág. 30 ---
 
-KAA GENT CVBA SO
-Ottergemsesteenweg Zuid, 808
-9000 GENT
+**KAA GENT CVBA SO**  
+**Ottergemsesteenweg Zuid, 808**  
+**9000 GENT**  
 
-Ondernemingsnummer:0 407.885.394
+**Ondernemingsnummer:0407.885.394**  
 
-JAARVERSLAG VAN DE RAAD VAN BESTUUR AAN DE GEWONE ALGEMENE VERGADERING DER
-AANDEELHOUDERS (boekjaar 1 juli 2015 — 31 mei 2017)
+**JAARVERSLAG VAN DE RAAD VAN BESTUUR AAN DE GEWONE ALGEMENE VERGADERING DER AANDEELHOUDERS (boekjaar 1 juli 2015 – 31 mei 2017)**
 
 Geachte leden van de jaarvergadering,
 
-Overeenkomstig onze wettelijke en statutaire verplichtingen, brengen wij verslag uit over de uitoefening van
-ons mandaat gedurende het boekjaar 2015-2017.
+Overeenkomstig onze wettelijke en statutaire verplichtingen, brengen wij verslag uit over de uitoefening van ons mandaat gedurende het boekjaar 2015-2017.  
+Dit boekjaar omvat 23 maanden, waarin de omvorming van KAA Gent VZW naar KAA GENT CVBA SO per 22 juni 2016 werd gerealiseerd.  
+Het boekjaar betreft derhalve de voetbalseizoenen 2015-2016 en 2016-2017, waarin KAA Gent 2x de 3^{de} plaats in het nationaal kampioenschap behaalde en, opeenvolgend zeer succesrijke deelnemingen in de Champions League en de UEFA League campagnes kende.
 
-Dit boekjaar omvat 23 maanden, waarin de omvorming van KAA Gent VZW naar KAA GENT CVBA SO
-per 22 juni 2016 werd gerealiseerd.
+In bijlage voegen we ook het bijzonder verslag Sociaal oogmerk CVBA SO met betrekking tot dit boekjaar.
 
-Het boekjaar betreft derhalve de voetbalseizoenen 2015-2016 en 2016-2017, waarin KAA Gent 2x de 3de plaats
-in het nationaal kampioenschap behaalde en, opeenvolgend zeer succesrijke deelnemingen in de Champions
-League en de UEFA League campagnes kende.
+### 1. Bespreking van de enkelvoudige jaarrekening voor het boekjaar 2015-2017
+* **Commentaar en overzicht van de balansposten**
 
-In bijlage voegen we ook het bijzonder verslag Sociaal oogmerk CVBA SO met betekking tot dit boekjaar.
+De waarderingsregels van de vereniging werden tijdens het boekjaar en gezien tegenover het vorige boekjaar niet gewijzigd. Uit de jaarrekening blijken de volgende resultaten:
 
-L. espreking van de enkelvoudige jaarrekenin r het boekjaar 2015-2017
-e Commentaar en overzicht van de balansposten
+Het balanstotaal bedraagt 80.016.499 euro tegen 43.840.657 euro in het vorig boekjaar. In onze bespreking zetten we de cijfers van 31/05/2017 af ten opzichte van de cijfers van 30/06/2015.
 
-De waarderingsregels van de vereniging werden tijdens het boekjaar en gezien tegenover het vorige boekjaar
-niet gewijzigd. Uit de jaarrekening blijken de volgende resultaten:
+<u>Bespreking van de actiefzijde van de balans:</u>
 
-Het balanstotaal bedraagt 80.016.499 euro tegen 43.840.657 euro in het vorig boekjaar. In onze bespreking
-zetten we de cijfers van 31/05/2017 af ten opzichte van de cijfers van 30/06/2015.
+De immateriële vaste activa zijn vermeerderd van 8.376.678 euro uit het vorig boekjaar naar 19.863.162 euro dit boekjaar. In de sportieve groei van KAAG werd immers in duurdere spelers geïnvesteerd.
 
-Bespreking van de actiefzijde van de balans:
+De materiële vaste activa stijgen van 24.969.445 euro vorig boekjaar naar 28.621.315 euro dit jaar.  
+De vlottende activa stegen van 9.071.147 euro vorig jaar naar 26.607.833 euro dit jaar voornamelijk ten gevolge van de investeringen in het Oefencentrum Warmoezeniersweg en het begin van de bouw van het nieuwe oefencentrum op de Wolfputsite.  
+De financiële vaste activa groeien van 1.423.387euro naar 4.924.188 euro, enerzijds door het verwerven van aandelen in de NV KAA Gent Management en een verhoging van onze participatie in CVBA Artevelde-stadion door aankoop van de aandelen van TMVW in deze vennootschap.
 
-De immateriële vaste activa zijn vermeerderd van 8.376.678 euro uit het vorig boekjaar naar 19.863.162 euro
-dit boekjaar. In de sportieve groei van KAAG werd immers in duurdere spelers geïnvesteerd.
+Binnen de de vlottende activa zien we een aangroei van de "vorderingen op meer dan één jaar" van 48.400 euro naar 3.506.050 euro en van de vorderingen op ten hoogste één jaar van 3.999.130 euro naar 8.763.683 euro Oorzaak ligt hoofdzakelijk in de sterk toegenomen bedragen van de uitgaande transfers van spelers, waarvan betalingsschijven nog moeten ontvangen worden op respectievelijk meer of minder dan één jaar.
 
-De materiële vaste activa stijgen van 24.969.445 euro vorig boekjaar naar 28.621.315 euro dit jaar.
+De liquide middelen evolueren van 4.350.314 euro naar 11.678.990 euro. Vooral de 2 Europese campagnes en de daaruit voortvloeiende uitgaande transfers zorgden voor heel wat extra middelen.  
+De toename van overlopende rekening van het actief is o.a. toe te schrijven aan de uitkering na afsluitdatum van de laatste schijf TV -gelden van het seizoen 16-17 en vooraf betaalde kosten met betrekking tot het volgende seizoen.
 
-De vlottende activa stegen van 9.071.147 euro vorig jaar naar 26.607.833 euro dit jaar voornamelijk ten gevolge
-van de investeringen in het Oefencentrum Warmoezeniersweg en het begin van de bouw van het nieuwe
-oefencentrum op de Wolfputsite.
-
-De financiële vaste activa groeien van 1.423.387euro naar 4.924.188 euro, enerzijds door het verwerven van
-aandelen in de NV KAA Gent Management en een verhoging van onze participatie in CVBA Artevelde-stadion
-door aankoop van de aandelen van TMVW in deze vennootschap.
-
-Binnen de vlottende activa zien we een aangroei van de "vorderingen op meer dan één jaar" van 48.400 euro
-naar 3.506.050 euro en van de vorderingen op ten hoogste één jaar van 3.999.130 euro naar 8.763.683 euro
-Oorzaak ligt hoofdzakelijk in de sterk toegenomen bedragen van de uitgaande transfers van spelers, waarvan
-betalingsschijven nog moeten ontvangen worden op respectievelijk meer of minder dan één jaar.
-
-De liquide middelen evolueren van 4.350.314 euro naar 11.678.990 euro. Vooral de 2 Europese campagnes en
-de daaruit voortvloeiende uitgaande transfers zorgden voor heel wat extra middelen.
-
-De toename van overlopende rekening van het actief is o.a. toe te schijven aan de uitkering na afsluitdatum
-van de laatste schijf TV -gelden van het seizoen 16-17 en vooraf betaalde kosten met betrekking tot het
-volgende seizoen.
-
-Jaarverslag.R.v.B.03.10.2017
-
+Jaarverslag.R.v.B.03.10.2017  
 30/43
 
 --- pág. 31 ---
@@ -2433,64 +2209,41 @@ Jaarverslag.R.v.B.03.10.2017
 
 --- pág. 32 ---
 
-De andere bedrijfskosten omvatten o.a. de roerende voorheffing op de concessie inkomsten uit Horeca Foot,
-bijdragen aan de Belgische voetbalbond en, occasioneel, minderwaarde op verkochte spelers.
+De andere bedrijfskosten omvatten o.a. de roerende voorheffing op de concessie inkomsten uit Horeca Foot, bijdragen aan de Belgische voetbalbond en, occasioneel, minderwaarde op verkochte spelers.
 
 Dit alles resulteert in een bedrijfswinst van 23.214.977 euro.
 
-De financiële lasten omvatten in hoofdzaak de interesten verband houdende met de overeenkomst met de NV
-KAA Gent Management, de interesten op het investeringskrediet van CVBA Artevelde-stadion en de interesten
-op de kredieten voor de overname van de aandelen in KAA Gent Management.
+De financiële lasten omvatten in hoofdzaak de interesten verband houdende met de overeenkomst met de NV KAA Gent Management, de interesten op het investeringskrediet van CVBA Artevelde-stadion en de interesten op de kredieten voor de overname van de aandelen in KAA Gent Management.  
+De financiële opbrengsten komen hoofdzakelijk voort uit de aanwending van de kapitaalsubsidies die tot te omvorming van VZW naar CVBA So in de boeken stond, aangevuld met bankinteresten op de liquide middelen en financiële kortingen van leveranciers.
 
-De financiële opbrengsten komen hoofdzakelijk voort uit de aanwending van de kapitaalsubsidies die tot te
-omvorming van VZW naar CVBA So in de boeken stond, aangevuld met bankinteresten op de liquide middelen
-en financiële kortingen van leveranciers.
-
-Aldus kan het boekjaar 2015-2017 worden afgesloten met een positief resultaat van 7.514.553 euro na aanleg
-van het maatschappelijk kapitaal van 10.000.000 euro, de opbouw van de onbeschikbare reserve van 6.424.258
-euro en de wettelijke reserve van 1.000.000 euro.
-
+Aldus kan het boekjaar 2015-2017 worden afgesloten met een positief resultaat van 7.514.553 euro na aanleg van het maatschappelijk kapitaal van 10.000.000 euro, de opbouw van de onbeschikbare reserve van 6.424.258 euro en de wettelijke reserve van 1.000.000 euro.  
 De Raad van Bestuur stelt voor het boekhoudkundig resultaat over te dragen naar het volgende boekjaar.
 
-). . . en nn " 5.
-« Commentaar en overzicht van de balansposten
+### 2. Bespreking van de geconsolideerde jaarrekening voor het boekjaar 2015-2017
+* **Commentaar en overzicht van de balansposten**
 
 Het balanstotaal van de geconsolideerde jaarrekening bedraagt 92.773k euro.
 
-De vaste activa vertegenwoordigen een totaal van 63.750k euro en bestaan voor 19.863k euro uit immaterieel
-vast actief en voor 40.775k uit materieel vast actief.
+De vaste activa vertegenwoordigen een totaal van 63.750k euro en bestaan voor 19.863k euro uit immaterieel vast actief en voor 40.775k uit materieel vast actief.
 
-De financiële vaste activa bedragen 3.1 12k euro waarvan 2.989k eur de participatie in CVBA Artevelde -
-Stadion omvat.
+De financiële vaste activa bedragen 3.112k euro waarvan 2.989k eur de participatie in CVBA Artevelde - Stadion omvat.
 
-De vlottende activa bedragen 29.023k euro en vertegenwoordigen voor 3.506k euro vorderingen op +1j,
-305k euro voorraden, 9.597k euro vorderingen op ten hoogste 1 jaar , 12.920k euro liquide middelen en
-2.695keuro overlopende rekeningen van het actief.
+De vlottende activa bedragen 29.023k euro en vertegenwoordigen voor 3.506k euro vorderingen op +1j, 305k euro voorraden, 9.597k euro vorderingen op ten hoogste 1 jaar , 12.920k euro liquide middelen en 2.695keuro overlopende rekeningen van het actief.
 
-Aan de passiefzijde hebben we een eigen vermogen van 26.943k euro opgebouwd uit 10.00k euro geplaatst
-kapitaal, 15.01 1k euro geconsolideerde reserves, 1.932k euro negatieve consolidatieverschillen en voor
-1.267k euro belangen van derden.
+Aan de passiefzijde hebben we een eigen vermogen van 26.943k euro opgebouwd uit 10.00k euro geplaatst kapitaal, 15.011k euro geconsolideerde reserves, 1.932k euro negatieve consolidatieverschillen en voor 1.267k euro belangen van derden.
 
-De schulden belopen 64.563k euro waarvan 41.630k op +1j 14.695k op -1j
+De schulden belopen 64.563k euro waarvan 41.630k op +1j 14.695k op -1j  
 Tenslotte bevat het passief voor 8.238k euro overlopende rekeningen.
 
-e Commentaar en overzicht van de resultatenrekening:
+* **Commentaar en overzicht van de resultatenrekening:**
 
-De geconsolideerde bedrijfsopbrengsten bedragen 137.348k euro waarvan 89.402k euro omzet, 47.762k
-andere bedrijfsopbrengsten en 184k euro uitzonderlijke opbrengsten.
+De geconsolideerde bedrijfsopbrengsten bedragen 137.348k euro waarvan 89.402k euro omzet, 47.762k andere bedrijfsopbrengsten en 184k euro uitzonderlijke opbrengsten.
 
-Hiermee moeten voor 113.581k euro bedrijfskosten gedekt worden; Deze kosten zijn opgebouwd uit 4952k
-euro handelsgoederen en grondstoffen, 38.218k diensten en diverse goederen, 49.912k euro bezoldigingen en
-sociale lasten , 13.574k euro afschrijvingen en 38k euro waardeverminderingen. De andere bedrijfskosten
-bedragen 6.509k euro en de uitzonderlijke bedrijfskosten 378k euro
+Hiermee moeten voor 113.581k euro bedrijfskosten gedekt worden; Deze kosten zijn opgebouwd uit 4952k euro handelsgoederen en grondstoffen, 38.218k diensten en diverse goederen, 49.912k euro bezoldigingen en sociale lasten , 13.574k euro afschrijvingen en 38k euro waardeverminderingen. De andere bedrijfskosten bedragen 6.509k euro en de uitzonderlijke bedrijfskosten 378k euro
 
-Er wordt een geconsolideerde bedrijfswinst gerealiseerd van 23.767k euro. Na verrekening van 153k euro
-financiële opbrengsten en 773k euro financiële kosten behouden we een winst voor belastingen van 23.147k
-euro. Hierop dienen 73 k euro belastingen te worden verrekend om op een winst na belastingen van 23.074k
-euro af te sluiten
+Er wordt een geconsolideerde bedrijfswinst gerealiseerd van 23.767k euro. Na verrekening van 153k euro financiële opbrengsten en 773k euro financiële kosten behouden we een winst voor belastingen van 23.147k euro. Hierop dienen 73 k euro belastingen te worden verrekend om op een winst na belastingen van 23.074k euro af te sluiten
 
-Jaarverslag.R.v.B.03.10.2017
-
+Jaarverslag.R.v.B.03.10.2017  
 32/43
 
 --- pág. 33 ---
@@ -2576,162 +2329,129 @@ Jaarverslag.R.v.B.03.10.2017
 
 --- pág. 35 ---
 
-KAA GENT CVBA SO
+**KAA GENT CVBA SO**  
+**Ottergemsesteenweg Zuid, 808,**  
+**9000 GENT**  
 
-Ottergemsesteenweg Zuid, 808,
-9000 GENT
+**Ondernemingsnummer : 0407.885.394**  
 
-Ondernemingsnummer : 0 407.885.394
+**BIJZONDER VERSLAG VAN DE RAAD VAN BESTUUR TER TOELICHTING VAN DE WIJZE WAAROP DE VENNOOTSCHAP TOEZICHT HEEFT GEHOUDEN OP HAAR SOCIAAL OOGMERK, AAN DE GEWONE ALGEMENE VERGADERING DER AANDEELHOUDERS TE HOUDEN OP 13 OKTOBER 2017 OM 18.00 h OP DE MAATSCHAPPELIJKE ZETEL VAN DE VERENIGING.**
 
-BIJZONDER VERSLAG VAN DE RAAD VAN BESTUUR TER TOELICHTING VAN DE WIJZE
-WAAROP DE VENNOOTSCHAP TOEZICHT HEEFT GEHOUDEN OP HAAR SOCIAAL OOGMERK ,
-AAN DE GEWONE ALGEMENE VERGADERING DER AANDEELHOUDERS TE HOUDEN OP 13
-OKTOBER 2017 OM 18.00 h OP DE MAATSCHAPPELIJKE ZETEL VAN DE VERENIGING.
+De vennootschap heeft vanuit sociaal oogmerk tot doel het damesvoetbal, het amateurvoetbal en het jeugdvoetbal op structurele wijze te bevorderen, Ze werkt hiervoor samen met enerzijds amateur voetbalverenigingen in het Gentse, aangesloten bij de Koninklijke Belgische Voetbalbond en met anderzijds de lokale besturen, met name via de KAA Gent Foundation (1) en waarbij de vennootschap, ten behoeve van haar partners, met eigen personeel en financiële bijdragen mede instaat voor het realiseren en onderhouden van voetbalinfrastructuur, alsmede voor gedegen begeleiding ter zake in de voetbalsport bij derde clubs, dit alles mede strekkende tot een betere integratie van kwetsbare doelgroepen in de stad Gent.
 
-De vennootschap heeft vanuit sociaal oogmerk tot doel het damesvoetbal, het amateurvoetbal
-en het jeugdvoetbal op structurele wijze te bevorderen, Ze werkt hiervoor samen met enerzijds
-amateur voetbalverenigingen in het Gentse, aangesloten bij de Koninklijke Belgische
-Voetbalbond en met anderzijds de lokale besturen, met name via de KAA Gent Foundation (1)
-en waarbij de vennootschap, ten behoeve van haar partners, met eigen personeel en financiële
-bijdragen mede instaat voor het realiseren en onderhouden van voetbalinfrastructuur, alsmede
-voor gedegen begeleiding ter zake in de voetbalsport bij derde clubs, dit alles mede strekkende
-tot een betere integratie van kwetsbare doelgroepen in de stad Gent.
+Vanuit haar streven naar een open stadionwerking en ten einde de voetbalsport toegankelijk te maken voor één ieder bevordert zij, eveneens vanuit haar sociaal oogmerk, tevens de toegankelijkheid van haar eigen stadion, mede door daartoe specifiek uitgeruste plaatsen en daartoe opgeleide begeleiders, voor personen met een beperking / handicap ;
 
-Vanuit haar streven naar een open stadionwerking en ten einde de voetbalsport toegankelijk te
-maken voor één ieder bevordert zij, eveneens vanuit haar sociaal oogmerk, tevens de
-toegankelijkheid van haar eigen stadion, mede door daartoe specifiek uitgeruste plaatsen en
-daartoe opgeleide begeleiders, voor personen met een beperking / handicap ;
+In het kader van dit alles heeft de vennootschap gedurende het voorbije boekjaar volgende investeringen, werkingskosten bezoldigingen gedragen ter verwezenlijking van haar sociaal oogmerk.
 
-In het kader van dit alles heeft de vennootschap gedurende het voorbije boekjaar volgende
-investeringen, werkingskosten bezoldigingen gedragen ter verwezenlijking van haar sociaal
-oogmerk.
+**Aandeel bestedingen KAA Gent aan VZW Voetbal in de Stad : 309.476€**
 
-Aandeel bestedingen KAA Gent aan VZW Voetbal in de Stad : 309.476€
+| | |
+| :--- | :--- |
+| samenwerkingsovereenkomst KAA Gent Foundation: | 30.510€ |
+| Elk talent telt Ondersteuningsfonds: clubsamenwerking | 47.917€ |
+| Subsidie Community - project kosten | 29.412€ |
+| Subsidie Community - werkingskosten | 3.191€ |
+| Subsidie Community - loonkosten | 103.274€ |
+| Subsidie Elk talent telt -werkingskosten en overheadkosten | 34.316€ |
+| Sportieve Elk Talent Telt -sportieve uitrusting | 60.856€ |
 
-samenwerkingsovereenkomst KAA Gent Foundation: 30,510E
-Elk talent telt Ondersteuningsfonds: clubsamenwerking 47.917E
-Subsidie Community - project kosten 29.412€
-Subsidie Community - werkingskosten 3.191
-Subsidie Community - loonkosten 103.274€
-Subsidie Elk talent telt -werkingskosten en overheadkosten 34,316E
-Sportieve Elk Talent Telt -sportieve uitrusting 60.856E
-
-(1) De KAA GENT FOUNDATION is een samenwerkingsverband van KAA Gent, de Stad
-Gent, het OCMW Gent, Gent Stad in Werking en de Supportersfederatie KAA Gent
-Het beleidsplan van KAA Gent foundation is vanaf 10/10/2017 online te consulteren op
-volgende link; https://we.tl/tlwWCZo82k
-Ook via de website van KAA Gent worden de projecten verder toegelicht:
-http://wwww.kaagent.be/nl/foundation
+(1) De KAA GENT FOUNDATION is een samenwerkingsverband van KAA Gent, de Stad Gent, het OCMW Gent, Gent Stad in Werking en de Supportersfederatie KAA Gent  
+Het beleidsplan van KAA Gent foundation is vanaf 10/10/2017 online te consulteren op volgende link; https://we.tl/tlwwCZo82k  
+Ook via de website van KAA Gent worden de projecten verder toegelicht:  
+http://www.kaagent.be/nl/foundation  
 
 35/43
 
 --- pág. 36 ---
 
-Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€
+**Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€**
 
-Loonkosten + sociale lasten jeugdtrainers 421.43 1E
-Aankoop kledij jeugd 319.596E
-Aankoop sportmateriaal jeugd 9.365E
-Huur terreinen 144.261E
-Opleidingsvergoeding jeugdspelers amateurclubs 60.000E
-Schoolbegeleiding en internaat 40.234€
-Stages jeugd 68.489E
-Scheidsrechterskosten jeugd 6.610E
-Opleidingsvergoeding Pro league 557.500E
-Transport jeugd 96.207€
-Ter beschikkingstelling oefencomplex bezetting jeugd 70% 144.423€
-206.318 x 70%
+| | |
+| :--- | :--- |
+| Loonkosten + sociale lasten jeugdtrainers | 421.431€ |
+| Aankoop kledij jeugd | 319.596€ |
+| Aankoop sportmateriaal jeugd | 9.365€ |
+| Huur terreinen | 144.261€ |
+| Opleidingsvergoeding jeugdspelers amateurclubs | 60.000€ |
+| Schoolbegeleiding en internaat | 40.234€ |
+| Stages jeugd | 68.489€ |
+| Scheidsrechterskosten jeugd | 6.610€ |
+| Opleidingsvergoeding Pro league | 557.500€ |
+| Transport jeugd | 96.207€ |
+| Ter beschikkingstelling oefencomplex bezetting jeugd 70%<br>206.318 x 70% | 144.423€ |
+| Dranken en voeding jeugd | 28.244€ |
+| Omkadering jeugd – coordinator -begeleider – medisch | 59.624€ |
+| Afschrijvingen Warmoezenierswegbezetting jeugd 70%<br>289.440 x 70%= | 202.608€ |
+| **In aanmerking te nemen totaal voor 50% sociaal oogmerk** | **2.158.592€** |
 
-Dranken en voeding jeugd 28.244€
-Omkadering jeugd — coordinator -begeleider — medisch 59.624E
-Afschrijvingen Warmoezenierswegbezetting jeugd 70% 202.608€
-289.440 x 70%=
+**Aandeel bestedingen KAA Gent aan Damesvoetbal (1^{e} ploeg en jeugd):491.094€**
 
-In aanmerking te nemen totaal voor 50% sociaal oogmerk 2.158.592E
+| | |
+| :--- | :--- |
+| Vergoeding trainers | 59.276€ |
+| Vergoeding medewerkers | 14.501€ |
+| Aankoop kledij Ladies | 94.065€ |
+| verplaatsingskosten | 49.339€ |
+| Teambuilding en evenementen | 55.816€ |
+| Kosten infrastructuur | 62.160€ |
+| Medische kosten | 30.273€ |
+| Dranken en voeding Damesvoetbal | 12.406€ |
+| exploitatiekosten | 95.598€ |
+| Materiaal | 9.490€ |
+| Scheidsrechterskosten | 8.170€ |
+| **In aanmerking te nemen totaal voor 100% sociaal oogmerk** | **491.094€** |
 
-Aandeel bestedingen KAA Gent aan Damesvoetbal (1° ploeg en jeugd):491.094€
+De Totale besteding sociaal oogmerk over de periode 01/07/2015 tem 31/05/2017 bedraagt 1.879.866 euro.
 
-Vergoeding trainers 59.276E
-Vergoeding medewerkers 14.501€
-Aankoop kledij Ladies 94,065E
-verplaatsingskosten 49.339E
-Teambuilding en evenementen 55.816€
-Kosten infrastructuur 62.160
-Medische kosten 30.273€
-Dranken en voeding Damesvoetbal 12.406E
-exploitatiekosten 95.598E
-Materiaal 9.490E
-Scheidsrechterskosten 8.170E
-In aanmerking te nemen totaal voor 100% sociaal oogmerk 491.094E
-
-De Totale besteding sociaal oogmerk over de periode 01/07/2015 tem 31/05/2017 bedraagt
-
-1.879.866 euro.
 Gent, 09 oktober 2017,
 
 Namens de Raad van Bestuur
 
-Ivan De Zan
+*[Handtekening: Ivan De Witte]*  
+Ivan De Witte  
+Voorzitter, bestuurder  
 
-Voorzitter, bestuurder
-
+36/43
 
 --- pág. 37 ---
 
-Ernst & Young Tel: +32 (O)9 24251 11
-Bedrijfsrevisoren Fax: +32 (O)9 24251 51
-Reviseurs d'Entreprises ey.com
-ora: Moutstraat 54
-Building a better B - 9000 Gent
+**EY**  
+Building a better  
+working world  
 
-working world
+Ernst & Young  
+Bedrijfsrevisoren  
+Reviseurs d'Entreprises  
+Moutstraat 54  
+B - 9000 Gent  
 
-Verslag van de commissaris aan de algemene vergadering van Koninklijke
-Athletiek Associatie Gent - Voetbalafdeling CVBA SO over het boekjaar van
-23 maanden afgesloten op 31 mei 2017
+Tel: +32 (0) 9 242 51 11  
+Fax: +32 (0) 9 242 51 51  
+ey.com  
 
-Overeenkomstig de wettelijke en statutaire bepalingen, brengen wij u verslag uit in het kader van ons
-mandaat van commissaris. Dit verslag omvat ons oordeel over de balans op 31 mei 2017, over de
-resultatenrekening van het boekjaar van 23 maanden afgesloten op 31 mei 2017 en over de toelichting
-(alle stukken gezamenlijk “de Jaarrekening) en omvat tevens ons verslag betreffende overige door
-wet- en regelgeving gestelde eisen.
+### Verslag van de commissaris aan de algemene vergadering van Koninklijke Athletiek Associatie Gent - Voetbalafdeling CVBA SO over het boekjaar van 23 maanden afgesloten op 31 mei 2017
 
-Verslag over de Jaarrekening - Oordeel zonder voorbehoud
+Overeenkomstig de wettelijke en statutaire bepalingen, brengen wij u verslag uit in het kader van ons mandaat van commissaris. Dit verslag omvat ons oordeel over de balans op 31 mei 2017, over de resultatenrekening van het boekjaar van 23 maanden afgesloten op 31 mei 2017 en over de toelichting (alle stukken gezamenlijk "de Jaarrekening") en omvat tevens ons verslag betreffende overige door wet- en regelgeving gestelde eisen.
 
-Wij hebben de controle uitgevoerd van de Jaarrekening van Koninklijke Athletiek Associatie Gent -
-Voetbalafdeling CVBA SO (“de Vennootschap”) over het boekjaar afgesloten op 31 mei 2017, opgesteld
-op grond van het in België van toepassing zijnde boekhoudkundig referentiestelsel, met een
-balanstotaal van € 80.016.499 en waarvan de resultatenrekening afsluit met een winst van het
-boekjaar van € 22.816.884.
+#### Verslag over de Jaarrekening - Oordeel zonder voorbehoud
 
-Verantwoordelijkheid van het bestuursorgaan voor het opstellen van de Jaarrekening
+Wij hebben de controle uitgevoerd van de Jaarrekening van Koninklijke Athletiek Associatie Gent - Voetbalafdeling CVBA SO ("de Vennootschap") over het boekjaar afgesloten op 31 mei 2017, opgesteld op grond van het in België van toepassing zijnde boekhoudkundig referentiestelsel, met een balanstotaal van € 80.016.499 en waarvan de resultatenrekening afsluit met een winst van het boekjaar van € 22.816.884.
 
-Het bestuursorgaan is verantwoordelijk voor het opstellen van de Jaarrekening die een getrouw beeld
-geeft in overeenstemming met het in België van toepassing zijnde boekhoudkundig referentiestelsel.
-Deze verantwoordelijkheid omvat: het opzetten, implementeren en in stand houden van een interne
-controle met betrekking tot het opstellen en de getrouwe weergave van de Jaarrekening die geen
-afwijkingen van materieel belang als gevolg van fraude of het maken van fouten bevat; het kiezen en
-toepassen van geschikte waarderingsregels; en het maken van boekhoudkundige schattingen die onder
-de gegeven omstandigheden redelijk zijn.
+*Verantwoordelijkheid van het bestuursorgaan voor het opstellen van de Jaarrekening*
 
-Verantwoordelijkheid van de commissaris
+Het bestuursorgaan is verantwoordelijk voor het opstellen van de Jaarrekening die een getrouw beeld geeft in overeenstemming met het in België van toepassing zijnde boekhoudkundig referentiestelsel. Deze verantwoordelijkheid omvat: het opzetten, implementeren en in stand houden van een interne controle met betrekking tot het opstellen en de getrouwe weergave van de Jaarrekening die geen afwijkingen van materieel belang als gevolg van fraude of het maken van fouten bevat; het kiezen en toepassen van geschikte waarderingsregels; en het maken van boekhoudkundige schattingen die onder de gegeven omstandigheden redelijk zijn.
 
-Het is onze verantwoordelijkheid een oordeel over deze Jaarrekening tot uitdrukking te brengen op
-basis van onze controle. Wij hebben onze controle volgens de internationale auditstandaarden
-(“International Standards on Auditing" - “ISA's") zoals deze in België werden aangenomen uitgevoerd.
-Die standaarden vereisen dat wij aan de deontologische vereisten voldoen alsook de controle plannen
-en uitvoeren teneinde een redelijke mate van zekerheid te verkrijgen dat de Jaarrekening geen
-afwijkingen van materieel belang bevat.
+*Verantwoordelijkheid van de commissaris*
 
-Burgerlijke vennootschap onder de vorm van een coöperatieve vennootschap met beperkte aansprakelijkheid
-Société civile sous la forme d'une société coopérative à responsabilité limitée
+Het is onze verantwoordelijkheid een oordeel over deze Jaarrekening tot uitdrukking te brengen op basis van onze controle. Wij hebben onze controle volgens de internationale auditstandaarden ("International Standards on Auditing" – "ISA's") zoals deze in België werden aangenomen uitgevoerd. Die standaarden vereisen dat wij aan de deontologische vereisten voldoen alsook de controle plannen en uitvoeren teneinde een redelijke mate van zekerheid te verkrijgen dat de Jaarrekening geen afwijkingen van materieel belang bevat.
 
-RPR Brussel - RPM Bruxelles - T.V.A, - BTW. BE 0446 334 711 - IBAN N° BE71 2100 9059 0069
+Burgerlijke vennootschap onder de vorm van een coöperatieve vennootschap met beperkte aansprakelijkheid.  
+Société civile sous la forme d'une société coopérative à responsabilité limitée.  
+RPR Brussel • RPM Bruxelles • T.V.A. - B.T.W. BE 0446.334.711 • IBAN N° BE71 2100 9059 0069  
+* handelend in naam van een vennootschap/agissant au nom d'une société  
 
-* handelend in naam van een vennootschap/agissant au nom d'une société
-
-A member firm of Ernst & Young Global Limited
-
+A member firm of Ernst & Young Global Limited  
+*[Paraaf]*  
 37/43
 
 --- pág. 38 ---
@@ -2904,194 +2624,80 @@ Codes P. Totaal 1P. Mannen 2P. Vrouwen
 
 --- pág. 41 ---
 
-Nr. BE 0407.885.394
+Nr. BE 0407.885.394 — VOL 10
 
-VOL 10
+**Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister (vervolg)**
 
-Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het
+| Op de afsluitingsdatum van het boekjaar | Codes | 1. Voltijds | 2. Deeltijds | 3. Totaal in voltijdse equivalenten |
+|---|---|---|---|---|
+| **Aantal werknemers** | 105 | 63 | 47 | 82,8 |
+| **Volgens de aard van de arbeidsovereenkomst** | | | | |
+| Overeenkomst voor een onbepaalde tijd | 110 | 22 | 22 | 30,4 |
+| Overeenkomst voor een bepaalde tijd | 111 | 41 | 25 | 52,4 |
+| Overeenkomst voor een duidelijk omschreven werk | 112 | 0 | 0 | 0 |
+| Vervangingsovereenkomst | 113 | 0 | 0 | 0 |
+| **Volgens het geslacht en het studieniveau** | | | | |
+| Mannen | 120 | 63 | 41 | 80,3 |
+| lager onderwijs | 1200 | 62 | 41 | 79,3 |
+| secundair onderwijs | 1201 | 0 | 0 | 0 |
+| hoger niet-universitair onderwijs | 1202 | 1 | 0 | 1 |
+| universitair onderwijs | 1203 | 0 | 0 | 0 |
+| Vrouwen | 121 | 0 | 6 | 2,5 |
+| lager onderwijs | 1210 | 0 | 5 | 1,9 |
+| secundair onderwijs | 1211 | 0 | 0 | 0 |
+| hoger niet-universitair onderwijs | 1212 | 0 | 0 | 0 |
+| universitair onderwijs | 1213 | 0 | 1 | 0,6 |
+| **Volgens de beroepscategorie** | | | | |
+| Directiepersoneel | 130 | 0 | 0 | 0 |
+| Bedienden | 134 | 57 | 34 | 72,3 |
+| Arbeiders | 132 | 6 | 13 | 10,5 |
+| Andere | 133 | 0 | 0 | 0 |
 
-algemeen personeelsregister (vervolg)
+**Uitzendkrachten en ter beschikking van de onderneming gestelde personen**
 
-Op de afsluitingsdatum van het boekjaar
-
-Aantal werknemers
-
-Volgens de aard van de arbeidsovereenkomst
-Overeenkomst voor een onbepaalde tijd
-Overeenkomst voor een bepaalde tijd
-Overeenkomst voor een duidelijk omschreven werk
-
-Vervangingsovereenkomst
-
-Volgens het geslacht en het studieniveau
-Mannen
-lager onderwijs
-secundair onderwijs
-hoger niet-universitair onderwijs
-universitair onderwijs
-Vrouwen
-lager onderwijs
-secundair onderwijs
-hoger niet-universitair onderwijs
-
-universitair onderwijs
-
-Volgens de beroepscategorie
-Directiepersoneel
-Bedienden
-Arbeiders
-
-Andere
-
-Uitzendkrachten en ter beschikking van de onderneming gestelde personen
-
-Tijdens het boekjaar
-
-Gemiddeld aantal tewerkgestelde personen
-Aantal daadwerkelijk gepresteerde uren
-
-Kosten voor de onderneming
-
-Codes | 1. Voltijds 2. Deeltijds 3. Totaal in
-voltijdse
-equivalenten
-
-105 63 47 82,8
-
-110 22 22 30,4
-
-111 41 25 52,4
-
-112 0 0 0
-
-1138 0 0 0
-
-120 63 al 80,3
-
-1200 62 41 79,3
-
-1201 0 0 0
-
-1202 1 0 1
-
-1203 0 0 0
-
-121 0 6 2,5
-
-1210 0 5 1,9
-
-1211 0 0 0
-
-1212 0 0 0
-
-1213 0 1 0,6
-
-130 0 0 0
-
-134 57 34 72,3
-
-132 6 13 10,5
-
-133 0 0 0
-
-Codes | 1. Uitzendkrachten | 2. Ter
-beschikking
-van de
-onderneming
-gestelde
-personen
-
-150
-
-151
-
-152
+| Tijdens het boekjaar | Codes | 1. Uitzendkrachten | 2. Ter beschikking van de onderneming gestelde personen |
+|---|---|---|---|
+| Gemiddeld aantal tewerkgestelde personen | 150 | | |
+| Aantal daadwerkelijk gepresteerde uren | 151 | | |
+| Kosten voor de onderneming | 152 | | |
 
 41/43
 
-
 --- pág. 42 ---
 
-Nr. BE 0407.885.394
+Nr. BE 0407.885.394 — VOL 10
 
-VOL 10
+**Tabel van het personeelsverloop tijdens het boekjaar**
 
-Tabel van het personeelsverloop tijdens het boekjaar
+**Ingetreden**
 
-Ingetreden
+| | Codes | 1. Voltijds | 2. Deeltijds | 3. Totaal in voltijdse equivalenten |
+|---|---|---|---|---|
+| **Aantal werknemers waarvoor de onderneming tijdens het boekjaar een DIMONA-verklaring heeft ingediend of die tijdens het boekjaar werden ingeschreven in het algemeen personeelsregister** | 205 | 86 | 128 | 126 |
+| **Volgens de aard van de arbeidsovereenkomst** | | | | |
+| Overeenkomst voor een onbepaalde tijd | 210 | 15 | 20 | 22,7 |
+| Overeenkomst voor een bepaalde tijd | 211 | 71 | 108 | 103,3 |
+| Overeenkomst voor een duidelijk omschreven werk | 212 | 0 | 0 | 0 |
+| Vervangingsovereenkomst | 213 | 0 | 0 | 0 |
 
-Aantal werknemers waarvoor de onderneming tijdens het
-boekjaar een DIMONA-verklaring heeft ingediend of die
-tijdens het boekjaar werden ingeschreven in het algemeen
-personeelsregister
-Volgens de aard van de arbeidsovereenkomst
-Overeenkomst voor een onbepaalde tijd
-Overeenkomst voor een bepaalde tijd
-Overeenkomst voor een duidelijk omschreven werk
+**Uitgetreden**
 
-Vervangingsovereenkomst
-
-Uitgetreden
-
-Aantal werknemers met een in de DIMONA-verklaring
-aangegeven of een in het algemeen personeelsregister
-opgetekende datum waarop hun overeenkomst tijdens het
-boekjaar een einde nam
-Volgens de aard van de arbeidsovereenkomst
-Overeenkomst voor een onbepaalde tijd
-Overeenkomst voor een bepaalde tijd
-Overeenkomst voor een duidelijk omschreven werk
-Vervangingsovereenkomst
-Volgens de reden van beëindiging van de overeenkomst
-Pensioen
-Werkloosheid met bedrijfstoeslag
-Afdanking
-Andere reden
-Waarvan: het aantal werknemers dat als zelfstandige ten
-
-minste op halftijdse basis diensten blijft verlenen
-aan de onderneming
-
-Codes | 1. Voltijds 2. Deeltijds Totaal in
-voltijdse
-equivalenten
-
-205 86 128 126
-
-210 15 20 22,7
-
-211 71 108 103,3
-
-212 0 0 0
-
-213 0 0 0
-
-Codes | 1. Voltijds 2. Deeltijds Totaal in
-voltijdse
-equivalenten
-
-305 77 86 107,3
-
-310 17 12 24
-
-311 60 74 83,3
-
-312
-
-313
-
-340 1 1
-
-341
-
-342 2 2 2,5
-
-343 74 84 103,8
-
-350
+| | Codes | 1. Voltijds | 2. Deeltijds | 3. Totaal in voltijdse equivalenten |
+|---|---|---|---|---|
+| **Aantal werknemers met een in de DIMONA-verklaring aangegeven of een in het algemeen personeelsregister opgetekende datum waarop hun overeenkomst tijdens het boekjaar een einde nam** | 305 | 77 | 86 | 107,3 |
+| **Volgens de aard van de arbeidsovereenkomst** | | | | |
+| Overeenkomst voor een onbepaalde tijd | 310 | 17 | 12 | 24 |
+| Overeenkomst voor een bepaalde tijd | 311 | 60 | 74 | 83,3 |
+| Overeenkomst voor een duidelijk omschreven werk | 312 | | | |
+| Vervangingsovereenkomst | 313 | | | |
+| **Volgens de reden van beëindiging van de overeenkomst** | | | | |
+| Pensioen | 340 | 1 | | 1 |
+| Werkloosheid met bedrijfstoeslag | 341 | | | |
+| Afdanking | 342 | 2 | 2 | 2,5 |
+| Andere reden | 343 | 74 | 84 | 103,8 |
+| Waarvan: het aantal werknemers dat als zelfstandige ten minste op halftijdse basis diensten blijft verlenen aan de onderneming | 350 | | | |
 
 42/43
-
 
 --- pág. 43 ---
 

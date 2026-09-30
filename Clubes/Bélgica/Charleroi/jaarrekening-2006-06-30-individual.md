@@ -401,119 +401,41 @@ TOTAL DU PASSIF ! 10/49 ! 7.504 ! 7.387 !
 
 --- pág. 5 ---
 
-N° 1  472.519.068 ! 07028.3993 ! C 4. !
+N° 472.519.068 | 07028.3993 | C 4.
 
-! ! ! !
+**2. COMPTE DE RESULTATS**
+(sous la forme de liste)
 
-! Codes ! Exercice ! Exercice précédent !
-
-! ! ! !
-
-! + + !
-
-2. COMPTE DE RESULTATS ! ! ! !
-! ! ! !
-
-(sous la forme de liste) ! ! ! !
-
-! ! ! !
-
-! ! ! !
-
-I. Ventes et prestations . . . . . . . . . . . . + *« + .! 70/74 ! 7.267 ! 5.786 !
-! D CE !
-
-A. Chiffre d'affaires (annexe XII, A) . . . . . . . .! 70 ! 6.865 ! 5.496 !
-B. Variation des en-cours de fabrication, des ! ! ! !
-produits finis et des commandes en cours ! ! ! !
-d'exécution (augmentation +, réduction -) . . . .! 71 ! ! !
-
-C. Production immobilisée . . . . . . . . . . . . . .! 72 ! ! !
-D. Autres produits d'exploitation (ann. XII, B) . . .! 74 ! 402 ! 290 !
-! ! ! !
-
-! ! ! !
-
-! ! ! !
-
-II. Coût des ventes et des prestations . . . . . . (-) .! 60/64 1! ( 6.352) ! ( 6.254) !
-! D CE !
-
-A. Approvisionnements et marchandises . . . . . . . .! 60 ! 31 ! !
-1. Achats . . . . . . + . + . . . . . . . . . . .! 600/8 ! 74 ! !
-2. Variation des stocks ! ! ! !
-(augmentation -, réduction +) . . . . . . . . .! 609 ! ( 43) ! !
-
-B. Services et biens divers . . . . . . . . . . . . .! 61 ! 2.644 ! 2.752 !
-C. Rémunérations, charges sociales et pensions ! ! ! !
-(ann. XII, C2) . . . + . + . + . + . . « + . + . 1 62 ! 3.061 ! 3.002 !
-D. Amortissements et réductions de valeur sur frais ! ! ! !
-d'établissement, sur immobilisations ! ! ! !
-incorporelles et corporelles . . . . . . . . . . .! 630 ! 249 ! 273 !
-
-E. Réductions de valeur sur stocks, sur commandes ! ! ! !
-en cours d'exécution et sur créances commerciales ! ! ! !
-(dotations +, reprises -) ! ! ! !
-(ann. XII, D) . . . +. + « + « + « + « + « + « .! 631/4 ! 12 ! 16 !
-F. Provisions pour risques et charges ! ! ! !
-(dotations +, utilisations et reprises -) ! ! ! !
-(ann. XII, C3 et E) . . . . . . . . . . . . . . .! 635/7 ! 119 ! 144 !
-G. Autres charges d'exploitation (ann. XII, F) . . .! 640/8 ! 236 ! 67 !
-H. Charges d'exploitation portées à l'actif au titre ! ! ! !
-de frais de restructuration . . . . . . . . (-) .! 649 ! ( ) ! ( ) !
-
-! ! ! !
-
-! ! ! !
-
-! ! ! !
-
-III. Bénéfice d'exploitation . . . . . . . . . . . . (+) .! 70/64 1! 915 ! !
-! ! ! !
-
-Perte d'exploitation . . . . . . . . . . . . . (-) .! 64/70 ! ( ) ! ( 468) !
-! ! ! !
-
-! ! ! !
-
-! ! ! !
-
-IV. Produits financiers . . .. . . . . . . . . . . . . +. .! 75 ! 29 ! 13 !
-! D CE !
-
-A. Produits des immobilisations financières . . . . .! 750 ! ! !
-B. Produits des actifs circulants . . . . . . . . . .! 751 ! 2 ! 3 !
-C. Autres produits financiers (ann. XIII, A) . . . .! 752/9 1! 27 ! 10 !
-! ! ! !
-
-! ! ! !
-
-! ! ! !
-
-V. Charges financières . . . . . . . . . . . . . . (-) .! 65 ! ( 545) ! ( 544) !
-! D D !
-
-A. Charges des dettes ! ! ! !
-(ann. XIII, Bet C) . . .. . . . . . +. +... + +! 650 ! 521 ! 509 !
-
-B. Réductions de valeur sur actifs circulants autres ! ! ! !
-que ceux visés sub. II.E. ! ! ! !
-(dotations +, reprises -) ! ! ! !
-(ann. XIII, DD... . .. + . + «+ +1 651 ! ! !
-
-C. Autres charges financières (ann. XIII, E) . . . .! 652/9 1! 24 ! 35 !
-! ! ! !
-
-! ! ! !
-
-! ! ! !
-
-VI. Bénéfice courant ! ! ! !
-avant impôts . . . . . . . . . « « « « « « « « (+) .! 70/65 ! 399 ! !
-Perte courante ! ! ! !
-avant impôts . . . . . . . . «+ (—) .! 65/70 ! ( ) ! ( 999) !
-! ! ! !
-
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| I. Ventes et prestations | 70/74 | 7.267 | 5.786 |
+| A. Chiffre d'affaires (annexe XII, A) | 70 | 6.865 | 5.496 |
+| B. Variation des en-cours de fabrication, des produits finis et des commandes en cours d'exécution (augmentation +, réduction -) | 71 | | |
+| C. Production immobilisée | 72 | | |
+| D. Autres produits d'exploitation (ann. XII, B) | 74 | 402 | 290 |
+| II. Coût des ventes et des prestations (-) | 60/64 | ( 6.352) | ( 6.254) |
+| A. Approvisionnements et marchandises | 60 | 31 | |
+| 1. Achats | 600/8 | 74 | |
+| 2. Variation des stocks (augmentation -, réduction +) | 609 | ( 43) | |
+| B. Services et biens divers | 61 | 2.644 | 2.752 |
+| C. Rémunérations, charges sociales et pensions (ann. XII, C2) | 62 | 3.061 | 3.002 |
+| D. Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | 630 | 249 | 273 |
+| E. Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales (dotations +, reprises -) (ann. XII, D) | 631/4 | 12 | 16 |
+| F. Provisions pour risques et charges (dotations +, utilisations et reprises -) (ann. XII, C3 et E) | 635/7 | 119 | 144 |
+| G. Autres charges d'exploitation (ann. XII, F) | 640/8 | 236 | 67 |
+| H. Charges d'exploitation portées à l'actif au titre de frais de restructuration (-) | 649 | ( ) | ( ) |
+| III. Bénéfice d'exploitation (+) | 70/64 | 915 | |
+| Perte d'exploitation (-) | 64/70 | ( ) | ( 468) |
+| IV. Produits financiers | 75 | 29 | 13 |
+| A. Produits des immobilisations financières | 750 | | |
+| B. Produits des actifs circulants | 751 | 2 | 3 |
+| C. Autres produits financiers (ann. XIII, A) | 752/9 | 27 | 10 |
+| V. Charges financières (-) | 65 | ( 545) | ( 544) |
+| A. Charges des dettes (ann. XIII, B et C) | 650 | 521 | 509 |
+| B. Réductions de valeur sur actifs circulants autres que ceux visés sub. II.E. (dotations +, reprises -) (ann. XIII, D) | 651 | | |
+| C. Autres charges financières (ann. XIII, E) | 652/9 | 24 | 35 |
+| VI. Bénéfice courant avant impôts (+) | 70/65 | 399 | |
+| Perte courante avant impôts (-) | 65/70 | ( ) | ( 999) |
 
 --- pág. 6 ---
 
@@ -1023,113 +945,53 @@ Dont ! ! !
 
 --- pág. 10 ---
 
-1  472.519.068 ! 07028.3998 ! C 9. !
+N° 472.519.068 | 07028.3998 | C 9.
 
-ETAT DES IMMOBILISATIONS FINANCIERES (rubrique 28 de l'actif)
+**IV. ETAT DES IMMOBILISATIONS FINANCIERES (rubrique 28 de l'actif)**
 
-a
-
-b
-
-[e]
-
-d
-
-! 11. Entreprises 12. Entreprises 13. Autres !
-
-! Codes ! liées ! avec un lien de ! entreprises !
-
-! ! ! participation ! !
-
-! + + + !
-
-1. PARTICIPATIONS, ACTIONS ET PARTS ! ! (rubrique 280) ! (rubrique 282) ! (rubrique 284) !
-! ! ! ! !
-
-! ! ! ! !
-
-VALEUR D'ACQUISITION ! ! ! ! !
-Au terme de l'exercice précédent .! 835 ! ! ! !
-Mutations de l'exercice : ! ! ! ! !
-. Acquisitions eee eee + + + + +! 836 ! ! ! !
-. Cessions et retraits eee ee ee + + e(-) 1 837 ! ) ! ) ! ( ) !
-. Transferts d'une rubrique ! ! ! ! !
-à une autre . . . . . . . .  . . (+) (-).! 838 ! ! ! !
-
-! ! + + !
-
-Au terme de l'exercice .! 839 ! ! ! !
-! ! + ! !
-
-PLUS-VALUES ! ! ! ! !
-Au terme de l'exercice précédent .! 840 ! ! ! !
-Mutations de l'exercice : ! ! ! ! !
-. Actées .! 841 ! ! ! !
-. Acquises de” tiers . + .! 842 ! ! ! !
-. Annulées . . ee + + + «(-).! 843 ! ) ! ) ! ( ) !
-. Transférées d' une ‘rubrique ! ! ! ! !
-à une autre . . . . . . . .  . . (+) (-).! 844 ! ! ! !
-
-! ! + + !
-
-Au terme de l'exercice .! 845 ! ! ! !
-! ! + + !
-
-! ! ! ! !
-
-REDUCTIONS DE VALEUR ! ! ! ! !
-Au terme de l'exercice précédent .! 846 ! ! ! !
-Mutations de l'exercice : ! ! ! ! !
-. Actées nn ee + + + +! 847 ! ! ! !
-. Reprises car excédentaires . . . . . . .(-).! 848 ! ) ! ) ! ( ) !
-. Acquises de tiers .! 849 ! ! ! !
-. Annulées à la suite de cessions ‘et ! ! ! ! !
-retraits . . . ee + + + «(—-).1 850 ! ) ! ) ! ( ) !
-
-. Transférées d'une ‘rubrique ! ! ! ! !
-à une autre . . . . . . . .  . « (+) (-).!1 851 ! ! ! !
-
-! ! + + !
-
-Au terme de l'exercice .! 852 ! ! ! !
-! ! + + !
-
-MONTANTS NON APPELES ! ! ! ! !
-Au terme de l'exercice précédent .! 853 ! ! ! !
-Mutations de ! ! ! ! !
-l'exercice . . . .. . . . . . . . . . (+) (-).! 854 ! ! ! !
-! ! + + !
-
-Au terme de l'exercice .! 855 ! ! ! !
-! ! + + !
-
-VALEUR COMPTABLE NETTE AU TERME DE ! ! ! ! !
-L'EXERCICE . . . . . . .(a) + (b) - (c) - (d) ! 856 ! ! ! !
-! ! + ! !
-
-! ! ! ! !
-
-2. CREANCES ! ! (rubrique 281) ! (rubrique 283) ! (rubrique 285/8) !
-
-! ! ! ! !
-
-VALEUR COMPTABLE NETTE AU TERME ! ! ! ! !
-DE L'EXERCICE PRECEDENT .! 857 ! ! ! 35 !
-Mutations de l'exercice : ! ! ! ! !
-. Additions . . .! 858 ! ! ! 8 !
-. Remboursements . .(—-)-!1 859 ! ) ! ) ! ( 12) !
-. Réductions de valeur actées .(—-)-! 860 ! ) ! ) ! ( !
-. Réductions de valeur reprises _. .! 861 ! ! ! !
-. Différences de change . . . . . . .(+) (—-).! 862 ! ! ! !
-. Autres . . « .« . « « « « « « « « . (+) (-).! 863 ! ! ! !
-! ! + + !
-
-VALEUR COMPTABLE NETTE AU TERME DE l'EXERCICE ! 864 ! ! ! 31 !
-! ! + + !
-
-REDUCTIONS DE VALEUR CUMULEES ! ! ! ! !
-SUR CREANCES AU TERME DE L'EXERCICE .! 865 ! ! ! !
-
+| | Codes | 1. Entreprises liées | 2. Entreprises avec un lien de participation | 3. Autres entreprises |
+|---|---|---|---|---|
+| **1. PARTICIPATIONS, ACTIONS ET PARTS** | | (rubrique 280) | (rubrique 282) | (rubrique 284) |
+| **a) VALEUR D'ACQUISITION** | | | | |
+| Au terme de l'exercice précédent | 835 | | | |
+| Mutations de l'exercice : | | | | |
+| . Acquisitions | 836 | | | |
+| . Cessions et retraits (-) | 837 | ( ) | ( ) | ( ) |
+| . Transferts d'une rubrique à une autre (+) (-) | 838 | | | |
+| Au terme de l'exercice | 839 | | | |
+| **b) PLUS-VALUES** | | | | |
+| Au terme de l'exercice précédent | 840 | | | |
+| Mutations de l'exercice : | | | | |
+| . Actées | 841 | | | |
+| . Acquises de tiers | 842 | | | |
+| . Annulées (-) | 843 | ( ) | ( ) | ( ) |
+| . Transférées d'une rubrique à une autre (+) (-) | 844 | | | |
+| Au terme de l'exercice | 845 | | | |
+| **c) REDUCTIONS DE VALEUR** | | | | |
+| Au terme de l'exercice précédent | 846 | | | |
+| Mutations de l'exercice : | | | | |
+| . Actées | 847 | | | |
+| . Reprises car excédentaires (-) | 848 | ( ) | ( ) | ( ) |
+| . Acquises de tiers | 849 | | | |
+| . Annulées à la suite de cessions et retraits (-) | 850 | ( ) | ( ) | ( ) |
+| . Transférées d'une rubrique à une autre (+) (-) | 851 | | | |
+| Au terme de l'exercice | 852 | | | |
+| **d) MONTANTS NON APPELES** | | | | |
+| Au terme de l'exercice précédent | 853 | | | |
+| Mutations de l'exercice (+) (-) | 854 | | | |
+| Au terme de l'exercice | 855 | | | |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE** (a) + (b) - (c) - (d) | 856 | | | |
+| **2. CREANCES** | | (rubrique 281) | (rubrique 283) | (rubrique 285/8) |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE PRECEDENT** | 857 | | | 35 |
+| Mutations de l'exercice : | | | | |
+| . Additions | 858 | | | 8 |
+| . Remboursements (-) | 859 | ( ) | ( ) | ( 12) |
+| . Réductions de valeur actées (-) | 860 | ( ) | ( ) | ( ) |
+| . Réductions de valeur reprises | 861 | | | |
+| . Différences de change (+) (-) | 862 | | | |
+| . Autres (+) (-) | 863 | | | |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE** | 864 | | | 31 |
+| **REDUCTIONS DE VALEUR CUMULEES SUR CREANCES AU TERME DE L'EXERCICE** | 865 | | | |
 
 --- pág. 11 ---
 

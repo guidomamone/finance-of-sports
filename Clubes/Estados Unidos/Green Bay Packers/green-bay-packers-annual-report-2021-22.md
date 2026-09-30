@@ -289,23 +289,22 @@ In 2021, the Packers transitioned to **mobile tickets** only as a method of entr
 
 --- pág. 10 ---
 
-# PACKERS AND LAMBEAU FIELD NEWS
+PACKERS AND LAMBEAU FIELD NEWS
 
-![img-16.jpeg](img-16.jpeg)
-
-![img-17.jpeg](img-17.jpeg)
-
-## SHAREHOLDERS/BOARD OF DIRECTORS NEWS
+SHAREHOLDERS/BOARD OF DIRECTORS NEWS
 
 This past year, the Packers conducted the organization's sixth stock offering, launching the sale on Nov. 16 and ending on Feb. 25. The sale was available in the U.S., Guam, Puerto Rico, the U.S. Virgin Islands and Canada. The sale was an outstanding success, with more than 195,000 shares sold at $300 each. Net proceeds are being used for ongoing construction projects at Lambeau Field, including new video boards and concourse upgrades. New shareholders joining the ranks include fans in Wisconsin, who account for approximately 17 percent of the new shares purchased. Next in order were fans in California (8 percent), Texas (5 percent), Illinois (5 percent), Florida (4 percent) and New York (3 percent). In Canada, Packers fans purchased approximately 3,500 shares. The organization now has more than 539,000 shareholders.
 
-![img-18.jpeg](img-18.jpeg)
+177,000  
+NEW SHAREHOLDERS
 
-![img-19.jpeg](img-19.jpeg)
+64.7  
+MILLION  
+RAISED!
 
 Four new members were elected to the Packers Board of Directors in 2021: Michael Barber, Chief Diversity Officer for General Electric; James Christensen, President and CEO of Wisconsin Plastics Inc.; Eddie Garcia, Senior Director of Business Development at Oshkosh Defense and former Packers placekicker; and Chris Woleske, President and CEO of Bellin Health.
 
-Two members of the Executive Committee, Thomas Olson and John Skoug, took on emeritus status, with Marcia Anderson and Karl Schmidt succeeding them on the Executive Committee. As Olson served as the corporation's Vice President and Lead Director, Susan Finco was proposed to succeed him. A member of the board since 2000 and a member of the Executive Committee since 2015, she is the first woman to hold the Vice President and Lead Director role. Additionally, Nancy Armbrust, Thomas Arndt and Ricardo Diaz, members of the board since 2018, 1992 and 2012, respectively, took on emeritus status.
+Two members of the Executive Committee, Thomas Olson and John Skoug, took on emeritus status, with Marcia Anderson and Karl Schmidt succeeding them on the Executive Committee. As Olson served as the corporation’s Vice President and Lead Director, Susan Finco was proposed to succeed him. A member of the board since 2000 and a member of the Executive Committee since 2015, she is the first woman to hold the Vice President and Lead Director role. Additionally, Nancy Armbrust, Thomas Arndt and Ricardo Diaz, members of the board since 2018, 1992 and 2012, respectively, took on emeritus status.
 
 9
 
@@ -440,34 +439,28 @@ The organization named the **24th Packers Fan Hall of Fame inductee** in Februar
 
 # GIVING BACK AND HONORING ALUMNI
 
-Visit packers.com/community to see the full list of Packers Give Back programs.
+*Visit packers.com/community to see the full list of Packers Give Back programs.*
 
-GREEN BAY PACKERS
-GIVE BACK
-
-![img-35.jpeg](img-35.jpeg)
+GREEN BAY PACKERS GIVE BACK
 
 ## DONATIONS
 
-### GREEN BAY PACKERS FOUNDATION IMPACT GRANTS:
-
+*GREEN BAY PACKERS FOUNDATION IMPACT GRANTS:*
 - All-In Milwaukee: $125,000 matching grant
 - Journey House, Inc.: $125,000 matching grant
 - Lad Lake-St. Rose Campus: $125,000 matching grant
 - St. Ann Center for Intergenerational Care: $125,000 matching grant
 - N.E.W. Community Clinic: $250,000 impact grant
 
-### GREEN BAY PACKERS FOUNDATION ANNUAL GRANTS:
-
+*GREEN BAY PACKERS FOUNDATION ANNUAL GRANTS:*
 - $1 million awarded to 274 nonprofits in Wisconsin for arts & culture, athletics and education initiatives
 
-### PACKERS GIVE BACK IMPACT GRANTS:
-
+*PACKERS GIVE BACK IMPACT GRANTS:*
 - Green Bay Botanical Garden: $500,000 toward its Children's Garden Expansion project
 - Wisconsin Veterans Village Association: $500,000 Veterans Impact Grant for their Outdoor Wellness Project
 - United for Waukesha Community Fund donations for victims of the parade tragedy and their families:
   - 42 Packers players and coaches donated $135,325
-  - Packers Give Back matched the amount to donate a total of $270,850
+  - Packers Give Back matched the amount to donate a total of $270,650
 
 ## PLAYER OUTREACH
 
@@ -475,11 +468,9 @@ The Packers donated **two player-directed $125,000 social justice grants** in 20
 
 The Packers also encourage players to use their platforms to elevate causes that are important to them. From starting their own foundations to lending a helping hand for Packers outreach efforts and partner charity initiatives, the roster is full of players who recognize their opportunity to have an impact in their unique position as professional athletes. During 2021-22 alone, position groups adopted local families and distributed toys and food during the holidays; several players donated gift cards, school supplies, jackets and shoes to those in need; and many players took part in autograph signings for charity.
 
-![img-36.jpeg](img-36.jpeg)
+[Foto] Pie de foto: Aaron Jones donates shoes to children through his A&A All The Way Foundation
 
-Aaron Jones donates shoes to children through his ABA All The Way Foundation
-
-16
+15
 
 --- pág. 17 ---
 
@@ -639,42 +630,72 @@ The Green Bay Packers Audit Committee met with our independent accounting firm, 
 
 Below are summary financial statements and some highlights from our operations for our 2022 and 2021 fiscal years. Some reclassifications have been made to 2021 amounts to conform to the 2022 presentation.
 
-|  Statement of Income† | 2022 | 2021  |
-| --- | --- | --- |
-|  Revenue | $ thousands  |   |
-|  National | $347,270 | $309,206  |
-|  Local | 231,741 | 61,859  |
-|  Total revenue | 579,011 | 371,065  |
-|  Expenses |  |   |
-|  Player costs | 280,874 | 219,919  |
-|  Team | 55,353 | 47,771  |
-|  Sales, marketing & fan engagement | 67,863 | 47,506  |
-|  Facilities, net* | 27,111 | 35,286  |
-|  General & administrative | 70,084 | 59,369  |
-|  Total expenses | 501,286 | 409,851  |
-|  Profit (loss) from Operations | $ 77,726 | $ (38,786)  |
-|  Investment Fund gain (loss) | $ 5,111 | $120,032  |
-|  Net Income | $ 61,572 | $ 60,679  |
+**Statement of Income†**
+
+| | 2022 | 2021 |
+|---|---:|---:|
+| | *$ thousands* | |
+| **Revenue** | | |
+| National | $347,270 | $309,206 |
+| Local | 231,741 | 61,859 |
+| Total revenue | 579,011 | 371,065 |
+| **Expenses** | | |
+| Player costs | 280,874 | 219,919 |
+| Team | 55,353 | 47,771 |
+| Sales, marketing & fan engagement | 67,863 | 47,506 |
+| Facilities, net* | 27,111 | 35,286 |
+| General & administrative | 70,084 | 59,369 |
+| Total expenses | 501,286 | 409,851 |
+| **Profit (loss) from Operations** | $ 77,726 | $ (38,786) |
+| **Investment Fund gain (loss)** | $ 5,111 | $120,032 |
+| **Net Income** | $ 61,572 | $ 60,679 |
 
 *Net of contributions from the Green Bay/Brown County Professional Football Stadium District toward the maintenance of Lambeau Field, of $13.0 and $5.6 million in 2022 and 2021, respectively.
 
 † Please note that numbers in Statement of Income may not add up due to rounding.
 
-REVENUE
+## REVENUE
 
-![img-56.jpeg](img-56.jpeg)
+Millions
+
+| Año | Revenue (Millions) |
+|---|---:|
+| 2019 | $478.0 |
+| 2020 | $507.1 |
+| 2021 | $371.1 |
+| 2022 | $578.6 |
+
+(Eje: $0, $100, $200, $300, $400, $500, $600)
 
 Revenues increased 56.0% to $579.0 million in 2022. National revenues scored increases in all categories, and the return of fans to Lambeau Field and the Pro Shop sparked a 274% rebound in Local revenue and brought total revenue back to its long-term trend.
 
-EXPENSES
+## EXPENSES
 
-![img-57.jpeg](img-57.jpeg)
+Millions
+
+| Año | Expenses (Millions) |
+|---|---:|
+| 2019 | $477.3 |
+| 2020 | $436.8 |
+| 2021 | $409.9 |
+| 2022 | $501.3 |
+
+(Eje: $350, $400, $450, $500)
 
 Operating expenses increased 22.3% to $501.3 million in fiscal 2022. Player costs account for $61 million of the $91.4 million increase in expenses, as savings from a smaller salary cap were offset by some March signings as we develop the roster for the upcoming season. Sales and gameday expenses returned to normal, Facilities expenses declined due to pandemic-related deferral of offseason work in early 2021, and G&A includes some additional charitable contributions. We continue to spend all funds allowable under the salary cap system to build a championship team.
 
-OPERATING PROFIT
+## OPERATING PROFIT
 
-![img-58.jpeg](img-58.jpeg)
+Millions
+
+| Año | Operating Profit (Millions) |
+|---|---:|
+| 2019 | $0.7 |
+| 2020 | $70.3 |
+| 2021 | $-38.8 |
+| 2022 | $77.3 |
+
+(Eje: $-50, $0, $50, $100)
 
 23
 
@@ -684,7 +705,16 @@ The rebound in local revenues and strong growth in national revenue resulted in 
 
 ## NET INCOME
 
-![img-59.jpeg](img-59.jpeg)
+Millions
+
+| Año | Net Income (Millions) |
+|---|---:|
+| 2019 | $8.4 |
+| 2020 | $34.9 |
+| 2021 | $60.7 |
+| 2022 | $61.6 |
+
+(Eje: $0, $20, $40, $60, $80)
 
 Operating Profit was the primary contributor to our 2022 Net Income, as non-operating investment income contributed a small net decline to earnings resulting in a net income of $61.6 million.
 
@@ -692,20 +722,23 @@ Operating Profit was the primary contributor to our 2022 Net Income, as non-oper
 
 In addition to pursuing a 14th NFL championship, we also strive financially to preserve our community-owned franchise for future generations of Packers fans. Operating profits are invested in the team, the Lambeau Field fan experience, the community, and a fund to sustain the viability of the franchise. The size and necessity for this fund grows as the NFL grows. A summary of our financial position follows:
 
-|  Balance Sheet^{†} | 2022 | 2021  |
-| --- | --- | --- |
-|  **Assets** | $ thousands  |   |
-|  Cash & investments | $623,342 | $511,022  |
-|  Unamortized signing bonuses, net | 177,056 | 187,379  |
-|  Property & equipment, net | 387,178 | 389,354  |
-|  Other | 99,469 | 75,176  |
-|  Total assets | $1,287,045 | $1,162,932  |
-|  **Liabilities & Equity** | $112,201 | $156,252  |
-|  Debt | 176,191 | 119,413  |
-|  Compensation liabilities | 123,777 | 127,107  |
-|  Other liabilities | 874,877 | 760,159  |
-|  Equity |  |   |
-|  Total liabilities & equity | $1,287,045 | $1,162,932  |
+**Balance Sheet†**
+
+| | 2022 | 2021 |
+|---|---:|---:|
+| | *$ thousands* | |
+| **Assets** | | |
+| Cash & investments | $623,342 | $511,022 |
+| Unamortized signing bonuses, net | 177,056 | 187,379 |
+| Property & equipment, net | 387,178 | 389,354 |
+| Other | 99,469 | 75,176 |
+| Total assets | $1,287,045 | $1,162,932 |
+| **Liabilities & Equity** | | |
+| Debt | $112,201 | $156,252 |
+| Compensation liabilities | 176,191 | 119,413 |
+| Other liabilities | 123,777 | 127,107 |
+| Equity | 874,877 | 760,159 |
+| Total liabilities & equity | $1,287,045 | $1,162,932 |
 
 † Please note that numbers in Balance Sheet may not add up due to rounding.
 
@@ -719,10 +752,12 @@ We express our sincere appreciation to the residents of Brown County, shareholde
 
 Respectfully submitted,
 
+[Firma]
+
 Michael D. Simmer
 Treasurer / Executive Committee
 
-![img-60.jpeg](img-60.jpeg)
+[Insignia: GREEN BAY PACKERS SHAREHOLDER · EST. 1923]
 
 24
 

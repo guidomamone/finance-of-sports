@@ -8,9 +8,9 @@
 
 --- pág. 1 ---
 
-![img-0.jpeg](img-0.jpeg)
+[Logo: ATALANTA 1907]
 
-## **BILANCIO CONSOLIDATO 2020**
+# BILANCIO CONSOLIDATO 2020
 
 Relazione degli Amministratori
 
@@ -378,66 +378,66 @@ Relazione della Società di Revisione pag. 67
 
 --- pág. 10 ---
 
-|  RENDICONTO FINANZIARIO - GRUPPO ATALANTA |   | 31.12.2020 | 31.12.2019  |
-| --- | --- | --- | --- |
-|  A. | Flussi finanziari derivanti dall'attività operativa (metodo indiretto) |  |   |
-|   | Utile (perdita) dell'esercizio | 51.738.249 | 26.497.451  |
-|   | Imposte sul reddito | 22.648.727 | 13.590.922  |
-|   | Interessi passivi/(interessi attivi) | 1.146.086 | 838.256  |
-|   | (Plusvalenze)/minusvalenze derivanti dalla cessione di attività (escluse quelle derivanti dai DPC) | (70) | (40)  |
-|  1. | Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione | 75.532.992 | 40.926.589  |
-|   | Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto |  |   |
-|   | Accantonamenti ai fondi | 64.036 | 51.620  |
-|   | Ammortamenti delle immobilizzazioni | 44.838.785 | 35.982.667  |
-|   | Svalutazioni per perdite durevoli di valore | 625.211 | 467.995  |
-|   | Altre rettifiche per elementi non monetari | 77.331 | 29.342  |
-|  2. | Flusso finanziario prima delle variazioni del CCN | 45.605.363 | 36.531.624  |
-|   | Variazioni del capitale circolante netto |  |   |
-|   | Decremento/(incremento) delle rimanenze | 93.168 | (207.540)  |
-|   | Decremento/(incremento) dei crediti vs clienti | (413.938) | (3.347.910)  |
-|   | Incremento/(decremento) dei debiti verso fornitori | (8.707.059) | (3.895.453)  |
-|   | Decremento/(incremento) ratei e risconti attivi | (1.117.450) | 9.779.012  |
-|   | Incremento/(decremento) ratei e risconti passivi | 5.517.693 | 336.580  |
-|   | Altre variazioni del capitale circolante netto | 662.525 | 5.958.456  |
-|  3. | Flusso finanziario dopo le variazioni del CCN | (3.965.061) | 8.623.145  |
-|   | Altre rettifiche |  |   |
-|   | Interessi incassati/(pagati) | (1.146.086) | (838.256)  |
-|   | (Imposte sul reddito pagate) | (8.901.100) | (11.127.173)  |
-|   | Dividendi incassati | 0 | 0  |
-|   | (Utilizzo dei fondi) | (112.570) | 93.632  |
-|   | Totale Altre rettifiche | (10.199.756) | (11.871.797)  |
-|   | Flusso finanziario dell'attività operativa (A) | 107.013.538 | 74.209.561  |
-|  B. | Flussi finanziari derivanti dall'attività di investimento |  |   |
-|   | Immobilizzazioni materiali | (10.199.246) | (19.110.849)  |
-|   | (Investimenti) | (10.199.246) | (19.110.849)  |
-|   | Disinvestimenti | 0 | 0  |
-|   | Diritti pluriennali alle prestazioni dei calciatori | (56.486.234) | (55.084.756)  |
-|   | (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (78.880.024) | (49.643.714)  |
-|   | Cessione diritti pluriennali alle prestazioni dei calciatori | 6.367.114 | 6.765.707  |
-|   | Decremento/(incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (36.248.238) | (22.847.360)  |
-|   | Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 52.274.914 | 10.640.611  |
-|   | Altre immobilizzazioni immateriali | (2.156.471) | (2.602.322)  |
-|   | (Investimenti) | (2.156.471) | (2.602.322)  |
-|   | Disinvestimenti | 0 | 0  |
-|   | Immobilizzazioni finanziarie | (178) | (18)  |
-|   | (Investimenti) | (178) | (18)  |
-|   | Disinvestimenti | 0 | 0  |
-|   | Attività finanziarie non immobilizzate | 0 | 0  |
-|   | Totale Altre attività di investimento | (2.156.649) | (2.602.340)  |
-|   | Flusso finanziario dell'attività di investimento (B) | (68.842.129) | (76.797.945)  |
-|  C. | Flussi finanziari derivanti dall'attività di finanziamento |  |   |
-|   | Mezzi di terzi | 2.595.132 | 4.509.674  |
-|   | Incremento (decremento) debiti a breve verso banche | (119.879) | 382  |
-|   | Accensione finanziamenti | 2.715.011 | 4.509.292  |
-|   | (Rimborso finanziamenti) | 0 | 0  |
-|   | Finanziamenti soci | 0 | 0  |
-|   | Mezzi propri | 0 | 0  |
-|   | Altre entrate (uscite) da attività di finanziamento | 0 | 0  |
-|   | Flusso finanziario dell'attività di finanziamento (C) | 2.595.132 | 4.509.674  |
-|   | Incremento (decremento) delle disponibilità liquide (A ± B ± C) | 40.766.541 | 1.921.290  |
-|   | Disponibilità liquide all'inizio dell'esercizio | 11.178.796 | 9.257.506  |
-|   | Disponibilità liquide alla fine dell'esercizio | 51.945.337 | 11.178.796  |
-|   | Saldo a gareggio | 40.766.541 | 1.921.290  |
+| RENDICONTO FINANZIARIO - GRUPPO ATALANTA | 31.12.2020 | 31.12.2019 |
+|---|---|---|
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| Utile (perdita) dell'esercizio | 51.738.249 | 26.497.451 |
+| Imposte sul reddito | 22.648.727 | 13.590.922 |
+| Interessi passivi/(interessi attivi) | 1.146.086 | 838.256 |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di attività (escluse quelle derivanti dai DPC) | (70) | (40) |
+| **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **75.532.992** | **40.926.589** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 64.036 | 51.620 |
+| Ammortamento delle immobilizzazioni | 44.838.785 | 35.982.667 |
+| Svalutazioni per perdite durevoli di valore | 625.211 | 467.995 |
+| Altre rettifiche per elementi non monetari | 77.331 | 29.342 |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **45.605.363** | **36.531.624** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | 93.168 | (207.540) |
+| Decremento/(incremento) dei crediti vs clienti | (413.938) | (3.347.910) |
+| Incremento/(decremento) dei debiti verso fornitori | (8.707.059) | (3.895.453) |
+| Decremento/(incremento) ratei e risconti attivi | (1.117.450) | 9.779.012 |
+| Incremento/(decremento) ratei e risconti passivi | 5.517.693 | 336.580 |
+| Altre variazioni del capitale circolante netto | 662.525 | 5.958.456 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **(3.965.061)** | **8.623.145** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | (1.146.086) | (838.256) |
+| (Imposte sul reddito pagate) | (8.901.100) | (11.127.173) |
+| Dividendi incassati | 0 | 0 |
+| (Utilizzo dei fondi) | (112.570) | 93.632 |
+| **Totale Altre rettifiche** | **(10.159.756)** | **(11.871.797)** |
+| **Flusso finanziario dell'attività operativa (A)** | **107.013.538** | **74.209.561** |
+| **B. Flussi finanziari derivanti dall'attività di investimento** | | |
+| *Immobilizzazioni materiali* | *(10.199.246)* | *(19.110.849)* |
+| (Investimenti) | (10.199.246) | (19.110.849) |
+| Disinvestimenti | 0 | 0 |
+| *Diritti pluriennali alle prestazioni dei calciatori* | *(56.486.234)* | *(55.084.756)* |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (78.880.024) | (49.643.714) |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | 6.367.114 | 6.765.707 |
+| Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (36.248.238) | (22.847.360) |
+| Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 52.274.914 | 10.640.611 |
+| *Altre immobilizzazioni immateriali* | *(2.156.471)* | *(2.602.322)* |
+| (Investimenti) | (2.156.471) | (2.602.322) |
+| Disinvestimenti | 0 | 0 |
+| *Immobilizzazioni finanziarie* | *(178)* | *(18)* |
+| (Investimenti) | (178) | (18) |
+| Disinvestimenti | 0 | 0 |
+| *Attività Finanziarie non immobilizzate* | *0* | *0* |
+| *Totale Altre attività di investimento* | *(2.156.649)* | *(2.602.340)* |
+| **Flusso finanziario dell'attività di investimento (B)** | **(68.842.129)** | **(76.797.945)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| *Mezzi di terzi* | *2.595.132* | *4.509.674* |
+| Incremento (decremento) debiti a breve verso banche | (119.879) | 382 |
+| Accensione finanziamenti | 2.715.011 | 4.509.292 |
+| (Rimborso finanziamenti) | 0 | 0 |
+| *Finanziamenti soci* | *0* | *0* |
+| *Mezzi propri* | *0* | *0* |
+| *Altre entrate (uscite) da attività di finanziamento* | *0* | *0* |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **2.595.132** | **4.509.674** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **40.766.541** | **1.921.290** |
+| **Disponibilità liquide all'inizio dell'esercizio** | **11.178.796** | **9.257.506** |
+| **Disponibilità liquide alla fine dell'esercizio** | **51.945.337** | **11.178.796** |
+| **Saldo a pareggio** | **40.766.541** | **1.921.290** |
 
 8
 
@@ -969,36 +969,38 @@ Al 31 dicembre 2020 risultano pari a € 607.193 ed hanno registrato la seguente
 
 --- pág. 27 ---
 
-|   | Saldo al 31.12.2020 | Saldo al 31.12.2019  |
-| --- | --- | --- |
-|  Fondo rischi ed oneri inizio esercizio | 719.763 | 626.131  |
-|  Utilizzi dell'esercizio | (169.875) | 0  |
-|  Accantonamenti dell'esercizio | 57.305 | 93.632  |
-|  Saldo al 31.12 | 607.193 | 719.763  |
+| | Saldo al 31.12.2020 | Saldo al 31.12.2019 |
+|---|---|---|
+| Fondo rischi ed oneri inzio esercizio | 719.763 | 626.131 |
+| Utilizzi dell'esercizio | (169.875) | 0 |
+| Accantonamenti dell'esercizio | 57.305 | 93.632 |
+| **Saldo al 31.12** | **607.193** | **719.763** |
 
 La voce si riferisce ai rischi di esborso finanziario relativamente a contenziosi fiscali potenziali valutati dagli amministratori come probabili; il saldo è costituito esclusivamente da accantonamenti per rischi specifici legati alla normativa del settore calcio che non trovano chiara e univoca interpretazione. Nel corso dell'esercizio 2020 i fondi per rischi e oneri hanno subito un incremento di € 57.305 per l'adeguamento di rischi già in essere al 31 dicembre 2019 e un rilascio di € 169.875 per rischi venuti meno nel corso dell'esercizio.
 
-A titolo di informativa si segnala inoltre che la società, fino al 31 dicembre 2020, ha ricevuto alcuni avvisi di accertamento dall'Agenzia delle Entrate relativamente ad alcune transazioni con procuratori sportivi riferiti agli anni fiscali 2012, 2013, 2014 e 2015 (per quest'ultimo anno l'avviso di accertamento è arrivato alla fine dell'anno fiscale 2020). Con detti avvisi di accertamento l'Amministrazione Finanziaria ha contestato violazioni in materia di riscossione attinenti a un ipotizzato maggior reddito da lavoro dipendente di tre ex calciatori della società. In particolare, la violazione è correlata alla riqualificazione delle prestazioni di consulenza fornite alla società da due suoi procuratori in occasione dei trasferimenti di tali diritti pluriennali alle prestazioni di calciatori: secondo la tesi dell'Amministrazione Finanziaria, i compensi corrisposti dalla società ai propri agenti sono da qualificare quali fringe benefit riconosciuti ai due calciatori, essendo questi ultimi i reali beneficiari della predetta attività di consulenza.
+A titolo di informativa si segnala inoltre che la società, fino al 31 dicembre 2020, ha ricevuto alcuni avvisi di accertamento dall'Agenzia delle Entrate relativamente ad alcune transazioni con procuratori sportivi riferiti agli anni fiscali 2012, 2013, 2014 e 2015 (per quest'ultimo anno l'avviso di accertamento è arrivato alla fine dell'anno fiscale 2020). Con detti avvisi di accertamento l'Amministrazione Finanziaria ha contestato violazioni in materia di riscossione attinenti a un ipotizzato maggior reddito da lavoro dipendente di tre ex calciatori della società. In particolare, la violazione è correlata alla riqualificazione delle prestazioni di consulenza fornite alla società da due suoi procuratori in occasione dei trasferimenti di tali diritti pluriennali alle prestazioni di calciatori: secondo la tesi dell'Amministrazione Finanziaria, i compensi corrisposti dalla società ai propri agenti sono da qualificare quali *fringe benefit* riconosciuti ai due calciatori, essendo questi ultimi i reali beneficiari della predetta attività di consulenza.
 
 La società, ritenendo totalmente infondate le pretese dell'Amministrazione Finanziaria ha presentato ricorsi avverso i predetti avvisi di accertamento.
 
 L'Agenzia delle Entrate sostiene che le transazioni siano avvenute nell'interesse del calciatore e quindi assoggettate a contribuzione. In particolare alla società è stato contestato quanto riportato nella seguente tabella (in cui si riporta anche lo status del contenzioso):
 
-|   | 2012 | 2013 | 2014 | 2015  |
-| --- | --- | --- | --- | --- |
-|  Contestazioni |  |  |  |   |
-|  Impropria detrazione IVA | 5.250 | 0 | 10.500 | 6.600  |
-|  Impropria deduzione costi ai Fini IRAP | 20.475 | 0 | 9.360 | 1.170  |
-|  Mancato versamento ritenute | 348.985 | 311.537 | 0 | 27.636  |
-|  Totale | 374.710 | 311.537 | 19.860 | 35.406  |
-|   | 2012 | 2013 | 2014 | 2015  |
-|  Status Contenzioso |  |  |  |   |
-|  Ricorso Presentato | Si | Si | Si | Si  |
-|  Commissione Tributaria | Annulamento integrale | Annulamento parziale | Annulamento integrale | Annulamento integrale  |
-|  Presentazione Appello da parte dell'Ufficio | Si | Si | Si | Si  |
-|  Costituzione in giudizio Società | Si | Si | Si | Si  |
-|  Processo | In pendenza | In pendenza | In pendenza | In pendenza  |
-|  Rischio | Possibile | Possibile | Possibile | Possibile  |
+| | 2012 | 2013 | 2013 | 2014 | 2015 |
+|---|---|---|---|---|---|
+| **Contestazioni** | | | | | |
+| Impropria detrazione IVA | 5.250 | 0 | 10.500 | 6.600 | 4.400 |
+| Impropria deduzione costi ai Fini IRAP | 20.475 | 0 | 9.360 | 1.170 | 780 |
+| Mancato versamento ritenute | 348.985 | 311.537 | 0 | 27.636 | 18.424 |
+| **Totale** | **374.710** | **311.537** | **19.860** | **35.406** | **23.604** |
+
+| | 2012 | 2013 | 2013 | 2014 | 2015 |
+|---|---|---|---|---|---|
+| **Status Contenzioso** | | | | | |
+| Ricorso Presentato | Si | Si | Si | Si | Si |
+| Commissione Tributaria | Annullamento integrale | Annullamento parziale | Annullamento integrale | Annullamento integrale | - |
+| Presentazione Appello da parte dell'Ufficio | Si | Si | Si | Si | - |
+| Costituzione in giudizio Società | Si | Si | Si | Si | - |
+| Processo | In pendenza | In pendenza | In pendenza | In pendenza | - |
+| Rischio | Possibile | Possibile | Possibile | Possibile | Possibile |
 
 In ossequio alle disposizioni civilistiche contenute nell'art. 2424-bis, terzo comma, del Codice Civile e al contenuto dell'O.I.C. n. 31, nel presente bilancio non si è provveduto ad accantonare alcun fondo rischi in quanto, anche a parere dei legali che assistono la società in tale contenzioso, è ragionevole ritenere che la società possa risultare vittoriosa in sede contenziosa (come già avvenuto, peraltro, in Commissione Tributaria Provinciale): le passività fiscali
 
@@ -1669,91 +1671,54 @@ Ing. Antonio Percassi
 
 --- pág. 47 ---
 
-Allegato 1 - Diritti Pluriennali alle prestazioni dei calciatori
+Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
 
-| Catallobre, CODERRE A RENE | Data di vendita | Data limite prima azzerata | Data finalizza prima azzerata | Data finalizza prima azzerata | Data il contatto | Bordati | Data tastriere | Bordati | Costo Bloche | Fale antemi, | Metto | Scadati / Sequestri | Metto Codicello Statale | Protesi Statale / Sequestri | Areeclazioni di all'Area | Protestanti di Resecutione da all'Area | Venezione in | Risparizione | Costo Bloche | Fale aree | Metto | Areeclato | Venezione in Areecl | Areeclato di accretione | Venezione in Areecl | Valori nell'oz. fine |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |
-| Prima casetta |  |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 (15-8-9) | 17 (16-11-14) | 18 (18-17) |  |  |  |
-| MAYOR PASA | 24/12/1998 | 01/01/2000 | 02/01/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2 |
+Struttura della tabella (intestazioni di colonna):
+
+- Dati diritti pluriennali alle prestazioni dei calciatori: Calciatore COGNOME e NOME; Data di nascita
+- Contratto: Data inizio primo contratto; Data Scadenza ultimo contratto; Data Acquisto
+- Provenienza: Società
+- Destinazione: Data Cessione; Società
+- Valori al 01.01.2020: Costo Storico; F.do ammort.; Netto
+- Variazione valori di periodo: Acquisti / Incrementi; Netto Contabile Ceduto; Prezzo Cessione / Decrementi; Ammortamenti
+- Effetti economici di periodo: Sopravv. Passive; Svalutazioni / Incrementi ...; Minusvalenza; Plusvalenza
+- Valori al 31.12.2020: Costo Storico; F.do amm.; Netto; Anni Vita Residua
+- Compensi Agenti; Altri costi di acquisizione
+- Varie: Compensi agenti liquidato nell'esercizio; Valori sell-on fee
+
+Sezione: Prima squadra
+
+[ilegible — le righe con nomi dei calciatori, date, società di provenienza/destinazione e tutti i valori numerici non sono leggibili con affidabilità nella scansione]
+
+Riga di totale: TOTALE PRIMA SQUADRA — [ilegible]
 
 --- pág. 48 ---
 
-Allegato 1 - Diritti Pluriennali alle prestazioni dei calciatori
+Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
 
-|  Dati diritti pluriennali alle prestazioni dei calciatori | Cortezza |   |   | Prevenzione |   | Sant'יombore |   | Valori n°01.01.2020 |   |   | Vertezione valori di periodo |   |   |   | Effetti anatomici di periodo |   |   |   | Valori n°01.12.2020 |   |   |   | Valori  |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Stato di assuelta | Stato delle prime ventricle | Stato di restazione delle ventricle | Stato di restazione delle ventricle | Stato di stasi | Stato di stasi | Stato di stasi | Stato di stasi | Stato di stasi | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi | Accipoli / bormonati | Stato di stasi  |
-|  Alta calciatori prefrontalisti |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  ACRE 2020 | 02/02/1994 | 49/08/2015 | 50/06/2020 | 48/08/2022 | Chiese Verone S.p.A. |  |  | 1.304.923 | 1.142.298 | 518.271 | - | - | - | 94.617 | - | - | - | - | 1.304.923 | 1.222.607 | 22.034 | 6,30 | - | - | - | 30% prezzo di cessione  |
-|  AVOGNA CONNICO | 21/08/2021 | 21/07/2020 | 20/06/2024 | 19/07/2024 | Palma Anziana |  |  | 10.034 | 7.57 | 6.244 | - | - | - | 3.825 | - | - | - | - | 10.001 | 3.807 | 1.104 | 5,30 | 10.000 | - | - | -  |
-|  BARRI LORENZO | 21/08/2020 | 30/12/2018 | 30/06/2023 | 30/06/2018 | A.C. Corona S.p.A. |  |  | 800.000 | 363.448 | 496.252 | - | - | - | 141.875 | - | - | - | - | 800.000 | 443.328 | 354.000 | 5,10 | - | - | - | -  |
-|  BACIE ROSEN LIPINO | 02/01/1997 | 30/06/2017 | 30/06/2020 | 30/06/2017 | Palma Anziana |  |  | 26.716 | 12.826 | 4.275 | - | - | - | 4.174 | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  BIFFOLLA MARIANA | 19/02/1997 | 22/07/2017 | 20/06/2020 | 22/07/2017 | Palma Anziana |  |  | 10.014 | 14.021 | 4.050 | - | - | - | 4.050 | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  BRUNO LORAZZO | 20/01/2013 | 23/01/2014 | 20/06/2020 | 20/06/2018 | Palma Anziana |  |  | 10.001 | 5.104 | 6.207 | - | - | - | 3.371 | - | - | - | - | 10.001 | 4.075 | 3.027 | 2,10 | 10.000 | - | - | -  |
-|  BUSCO VOLCANOS VIGNACOLO | 02/02/2021 | 03/07/2018 | 20/06/2022 | 20/06/2018 | A.C. Sarmacinole Milice S.p.A. |  |  | 1.904.000 | 150.000 | 1.754.000 | - | - | - | 160.000 | - | - | - | - | 1.904.000 | 756.000 | 755.000 | 1,10 | - | - | - | -  |
-|  CALI ARAGNI | 11/02/1997 | 01/07/2011 | 20/06/2022 | 01/07/2011 | Neo Ortrata | ROBACHO | A.C. OTORINO 1900 S.R.L. | 1 | 1 | 1 | 1 | 368 | - | - | - | - | - | 400 | - | - | - | - | - | - | - | -  |
-|  CAPONE CASSETONI | 20/01/1999 | 01/07/2019 | 30/06/2019 | 30/07/2019 | Palma Anziana |  |  | 60.001 | 26.323 | 41.166 | - | - | - | 31.358 | - | - | - | - | 60.001 | 27.592 | 26.409 | 2,10 | 10.000 | - | - | -  |
-|  DOBOTA ALBATO | 10/01/1999 | 02/06/2018 | 20/06/2022 | 02/06/2018 | A.C. Sarmacinole S.p.A. | ZURACHO | BRUNO D'ORTRIA AVOLINO 1902 S.R.L. | 319.000 | 110.767 | 199.101 | - | 150.145 | 348 | 57.061 | - | - | 122.642 | - | - | - | - | - | 35.000 | - | 5.000 | -  |
-|  EGGUS FUMBO | 10/01/1999 | 01/07/2017 | 20/06/2022 | 01/07/2017 | A.C. Sarmacinole Milice S.p.A. | ZURACHO | Teresio Indicativo | 1.000.000 | 2.000.000 | 1.250.000 | - | 1.250.000 | - | 1.000.000 | 1.500.000 | - | - | - | - | - | - | - | - | - | 1.000 | -  |
-|  ELESTRO ALESSANDRO | 09/06/1998 | 02/02/2019 | 20/06/2019 | 02/06/2019 | ASOCANO | ASOCANO | ASOCANO | 100.000 | 46.200 | 46.200 | - | 20.019 | 500 | 20.771 | - | - | 20.119 | - | - | - | - | - | 75.000 | - | 10.000 | -  |
-|  ELIS SALVATORE | 20/06/1999 | 08/06/2018 | 20/06/2022 | 08/06/2018 | Palma Anziana |  |  | 10.014 | 923 | 70.001 | 10.000 | - | - | 12.186 | - | - | - | - | 10.001 | 12.016 | 21.075 | 5,30 | 12.000 | - | - | -  |
-|  GETT DELGANO | 10/02/1997 | 22/06/2017 | 20/06/2021 | 22/06/2017 | Palma Anziana | ZURACHO | A.C. ROSENIO 1910 S.R.L. | 10.010 | 10.022 | 1.074 | - | 1.487 | 300 | 1.487 | - | - | 987 | - | - | - | - | - | - | - | - | -  |
-|  GRIA ALBADO | 01/04/1994 | 11/06/2018 | 20/06/2021 | 22/06/2021 | Salvia Celese S.p.A. |  |  | 1.000.000 | 1.476.466 | 322.334 | - | - | - | 149.947 | - | - | - | - | 1.000.000 | 1.762.002 | 227.007 | 1,30 | - | - | - | 30% prezzo di cessione  |
-|  HAVA INCHINI | 23/12/1996 | 30/07/2022 | 20/06/2023 | 30/07/2023 | ASOCANO |  |  | 1.001.000 | 306.947 | 458.132 | - | - | - | 181.333 | - | - | - | - | 1.001.000 | 798.000 | 375.000 | 1,30 | 450.000 | 300.000 | - | -  |
-|  HEMAMONZANNO | 24/06/2000 | 02/06/2018 | 20/06/2019 | 02/06/2019 | Palma Anziana |  |  | 73.500 | 40.222 | 24.968 | - | - | - | 9.678 | - | - | - | - | 73.500 | 10.010 | 10.000 | 4,30 | 10.000 | - | 2.500 | 5% pluriennico  |
-|  KEELE VISTON | 25/01/1994 | 01/07/2019 | 20/06/2022 | 01/07/2019 | Palma Anziana |  |  | 200.000 | 107.563 | 45.000 | - | - | - | 23.000 | - | - | - | - | 200.000 | 144.218 | 61.781 | 5,30 | 40.000 | 10.000 | - | -  |
-|  LATTY LATTARINO | 02/01/1999 | 30/07/2018 | 30/06/2022 | 12/06/2019 | ASOCANO |  |  | 67.001 | 23.163 | 47.272 | - | - | - | 17.426 | - | - | - | - | 67.001 | 40.036 | 26.145 | 5,30 | 10.000 | - | - | -  |
-|  PALAPRE ALESSANDRO | 22/03/1999 | 31/07/2018 | 30/06/2022 | 01/07/2019 | Palma Anziana |  |  | 60.001 | 2.844 | 37.538 | 200.000 | - | - | 43.809 | - | - | - | - | 200.001 | 45.800 | 104.119 | 5,30 | - | - | - | -  |
-|  PARCHET TORTONINO | 22/01/1999 | 30/06/2019 | 30/06/2019 | 30/06/2019 | Palma Anziana |  |  | 10.402 | 11.289 | 3.867 | - | - | - | 3.867 | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  PAULINI OTORINO | 02/12/1996 | 30/07/2017 | 20/06/2021 | 30/07/2017 | Palma Anziana |  |  | 10.010 | 8.255 | 10.792 | - | - | - | 3.867 | - | - | - | - | 10.003 | 14.178 | 4.866 | 1,10 | - | - | - | -  |
-|  PEBEELE ARANA | 03/02/2002 | 02/06/2019 | 30/06/2019 | 12/06/2019 | Palma Anziana |  |  | - | - | - | 10.000 | - | - | 1.174 | - | - | - | - | 10.000 | 2.174 | 22.826 | 5,30 | 22.000 | - | - | -  |
-|  PREZANOLI LORENZO | 02/07/1998 | 03/07/2017 | 20/06/2022 | 20/07/2017 | Temple Valli S.r.l. |  |  | 81.500 | 24.187 | 36.312 | - | 29.196 | 10 | 6.917 | - | - | 29.196 | - | - | - | - | - | - | - | - | da 5% a 10% dal prezzo di cessione  |
-|  PRIVA CAROTINA | 21/12/1997 | 01/07/2019 | 20/06/2022 | 22/07/2019 | ASOCANO |  |  | 70.001 | 23.644 | 14.196 | - | - | - | 1.145 | - | - | - | - | 70.001 | 24.000 | 6.322 | 2,30 | - | - | - | -  |
-|  REHAND DELGRO | 20/01/2000 | 01/12/2019 | 02/06/2019 | 01/07/2019 | ASOCANO |  |  | 100.001 | 73.012 | 34.000 | - | - | - | 24.282 | - | 40.750 | - | - | 100.001 | 100.001 | - | 5,30 | 100.000 | - | - | -  |
-|  ROADWAY ALESSANDRO | 03/02/2004 | 01/16/2019 | 20/06/2022 | 20/06/2019 | Stadium Pego Bimbing |  |  | - | - | - | 10.000 | - | - | 1.041 | - | - | - | - | 10.000 | 1.041 | 10.000 | 1,10 | - | 114 | - | -  |
-|  SALVATORE | 20/01/1999 | 09/06/2017 | 02/06/2021 | 02/06/2019 | A.C. Prac. 1904 S.p.A. |  |  | 50.000 | 23.000 | 23.000 | - | - | - | 12.000 | - | - | - | - | 50.000 | 24.000 | 12.000 | 1,10 | - | - | - | 10% su prezzo di cessione  |
-|  SANTONESE ALESSANDRO | 04/10/1999 | 10/01/2017 | 20/06/2022 | 20/01/2019 | A.C. Paraghi Salvo S.r.l. |  |  | 1.025.000 | 781.111 | 1.528.000 | - | - | - | 85.286 | - | - | - | - | 1.025.000 | 876.667 | 143.333 | 1,10 | - | - | - | -  |
-|  SHINE ALESSANDRO | 09/06/2002 | 01/07/2019 | 20/06/2022 | 01/07/2019 | Palma Anziana |  |  | 15.001 | 3.247 | 8.654 | - | - | - | 3.604 | - | - | - | - | 15.001 | 5.347 | 5.624 | 1,10 | 12.000 | - | 5.000 | -  |
-|  TE BE BALZANO VILLU | 05/12/1999 | 30/01/2019 | 20/06/2022 | 20/01/2019 | ASOCANO |  |  | 65.001 | 17.244 | 47.647 | - | - | - | 19.129 | - | 20.750 | - | - | 65.001 | 65.001 | - | 1,10 | - | - | - | -  |
-|  TOBITO TORINO | 21/07/1997 | 30/06/2019 | 30/06/2019 | 30/06/2019 | Palma Anziana |  |  | 94.001 | 62.107 | 30.664 | - | 17.000 | 100 | 12.828 | - | - | 10.555 | - | - | - | - | - | - | - | - | -  |
-|  VERONICA INCHINI | 01/06/2009 | 11/06/2018 | 20/06/2019 | 12/06/2019 | ASOCANO |  |  | 129.750 | 123.325 | 16.222 | - | - | - | 74.331 | - | - | - | - | - | - | - | - | 40.000 | 94.733 | 5.000 | -  |
-|  VORAZEVI LORENZO | 28/01/2002 | 19/01/2019 | 20/06/2022 | 20/01/2019 | Palma Anziana |  |  | 97.404 | 57.216 | 46.475 | 10.000 | - | - | 24.322 | - | - | - | - | 107.809 | 71.829 | 29.229 | 4,30 | 30.000 | 77.808 | 5.000 | -  |
-|  ZARBETANO PETA | 19/06/1999 | 01/07/2017 | 20/06/2021 | 01/07/2017 | Palma Anziana |  |  | 44.001 | 23.589 | 24.781 | - | - | - | 12.343 | - | - | - | - | 44.001 | 32.843 | 15.157 | 1,30 | - | - | - | -  |
-|  ZARETA MASA | 10/06/1999 | 01/06/2020 | 20/06/2019 | 01/07/2019 | Palma Anziana |  |  | 1.001 | 1.001 | 1.000 | - | - | - | 1.000 | - | - | - | - | 1.000 | 1.000 | 1.000 | 1,000 | - | - | - | -  |
-|  TERALE ALTA CALCESTINO PROPRONATIO |  |  |  |  |  |  |  | 10.462.000 | 8.871.203 | 6.400.000 | 207.000 | 1.710.001 | 2.150 | 1.046.522 | 1.500.000 | 89.414 | 200.000 | 600 | 8.485.317 | 6.874.001 | 5.327.000 | - | 1.011.000 | 787.739 | 98.000 | -  |
+Struttura della tabella: stesse colonne della pagina precedente.
+
+Sezione: Altri calciatori professionisti
+
+[ilegible — le righe con nomi dei calciatori, date, società e valori numerici non sono leggibili con affidabilità nella scansione]
+
+Riga di totale: TOTALE ALTRI CALCIATORI PROFESSIONISTI — [ilegible]
 
 --- pág. 49 ---
 
-Allegato 1 - Diritti Pluriennali alle prestazioni dei calciatori
+Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
 
-|  Società di pluriennali alle prestazioni dei calciatori |   | Società di pluriennali |   | Provinzione |   | Declarazione |   | Valori al 31.01.2010 |   |   | Valori del 31.01.2010 |   |   |   | Milan - novembre di periodo |   |   |   | Valori al 31.01.2010 |   |   |   | Valori  |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Catalore (000000) e 00000 | Data di verifica | Data della prima anomalia | Data finalizzato all'uso nazionale | Data finalizzato | Società | Data finalizzato | Società | Sostre Partire | Fila emmari | Malta | Prodotti Strenomati | Malta, Sanitella, Centro | Prodotti Organici I Strenomati | Ammontamenti II | TECNICIATI |   |   |   | Massa | Qualità | Fila emm. | Malta | Aree | Fila finalizzato | Compensa | Altri parti di riscaldamento  |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |  Prodotti Strenomati | Prodotti Organici | Prodotti Organici | Prodotti Organici |   |   |   |   |   |   |   |   | Prodotti Organici  |
-|   |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 (1+8-9) | 17 (10+11+13) | 18 (18-17) |  |  |  |  |   |   |
-|  10.00 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |   |
-|  BEETRO LOROSCO | 17/08/2010 | 06/05/2017 | 30/06/2020 | 05/05/2017 | A.C. Cosmo S.p.A. |  |  | 680.000 | 821.000 | 219.000 | - | - | - | 191.000 | - | - | - | - | 680.000 | 1413.000 | 48.000 | 6.50 | - | - | - | 10% acceia di consumo  |   |
-|  BISTRO SAGNESE | 06/03/2010 | 06/05/2017 | 30/06/2020 | 06/05/2017 | Salvo Pettone S.p.A. |  |  | 80.000 | 91.333 | 46.667 | - | - | - | 12.333 | - | - | - | - | 80.000 | 46.667 | 55.333 | 6.00 | - | - | - | -  |   |
-|  COTRACRO LOROSSE | 04/04/2010 | 01/03/2014 | 10/06/2014 | 01/03/2014 | Salvo Llorosse |  |  | 1 | 1 | 1.000 | - | - | - | 150 | - | - | - | - | 1.000 | 313 | 9.000 | 3.00 | 3.000 | - | - | -  |   |
-|  DAZON MATTO | 05/02/2010 | 02/03/2014 | 30/06/2020 | 02/03/2020 | Mi Danzato |  |  | 150.000 | 13.624 | 126.264 | - | - | - | 94.996 | - | - | - | - | 150.000 | 88.333 | 52.333 | 1.20 | - | - | - | -  |   |
-|  GRAPEZ LOROSSE 1472 | 10/01/2014 | 07/06/2013 | 30/06/2020 | 07/06/2020 | Colombini |  |  | 4.000 | 2.124 | 999 | - | - | - | 6.82 | - | - | - | - | 4.000 | 2.794 | 216 | 6.20 | - | - | - | -  |   |
-|  GEJON LOROSSE | 02/02/2014 | 09/06/2017 | 30/06/2024 | 05/06/2017 | Colombini |  |  | 59.000 | 20.812 | 22.830 | - | - | - | 5.122 | - | - | - | - | 20.000 | 21.804 | 10.027 | 3.20 | 30.000 | - | 17.000 | -  |   |
-|  MARZANEGLIANNA LOROSSE | 10/06/2014 | 01/03/2014 | 30/06/2024 | 01/03/2024 | Valve Fescato |  |  | 10.000 | 1.000 | 5.000 | - | - | - | 2.000 | - | - | - | - | 10.000 | 1.000 | 1.000 | 10.000 | - | 5.000 | - | -  |   |
-|  GEJON MATTO | 01/03/2014 | 01/03/2020 | 30/06/2020 | 01/03/2020 | St. Goma Montanese Tesele S.p. |  |  | - | - | - | 20.000 | - | - | 24.000 | - | - | - | - | 60.000 | 24.000 | 10.000 | 1.20 | - | 50 | - | -  |   |
-|  ROBACIF CLAY | 10/01/2014 | 07/06/2017 | 30/06/2020 | 07/06/2017 | O.R.L. Anti-Porosa |  |  | 100.000 | 106.000 | 52.064 | - | - | - | 24.000 | - | - | - | - | 100.000 | 140.144 | 10.000 | 1.20 | 110.000 | 50.000 | - | -  |   |
-|  ARMA LOROSSE | 10/01/2014 | 01/03/2014 | 30/06/2020 | 01/03/2014 | Valve Fescato | 2.1/08/2020 | PARZANO DAZON 1010 S.p.A. | - | - | - | - | 1 | 50 | - | - | - | - | 40 | - | - | - | - | - | - | - | -  |   |
-|  CARRO PARZANEGLI | 08/04/2014 | 12/03/2017 | 30/06/2020 | 01/03/2014 | O.R.L. L. S.p.A. |  |  | 48.000 | 17.983 | 20.000 | - | 22.000 | - | 22.000 | - | - | 22.000 | - | - | - | - | - | 20.000 | - | - | -  |   |
-|  CARRO PARZANEGLI LOROSSE | 10/04/2014 | 01/03/2013 | 30/06/2020 | 01/03/2020 | Salvo S.p.A. |  |  | 44.000 | 24.875 | 14.750 | - | - | - | 9.000 | - | - | - | - | 44.000 | 24.850 | 6.000 | 1.00 | - | - | - | -  |   |
-|  AMARONIO LOROSSE | 11/03/2014 | 17/06/2014 | 30/06/2020 | 17/06/2020 | Colombini |  |  | 20.000 | 7.324 | 12.767 | - | - | - | 9.107 | - | - | - | - | 20.000 | 12.741 | 7.000 | 1.20 | - | - | - | -  |   |
-|  PARZANEGLI | 11/03/2014 | 01/03/2014 | 30/06/2020 | 01/03/2020 | St. Goma Montanese Tesele S.p.A. |  |  | 1 | 1 | 1 | 20.000 | - | - | 1.145 | - | - | - | - | 10.000 | 1.145 | 10.000 | 1.20 | - | 20.000 | - | -  |   |
-|  ARMA LOROSSE | 10/01/2014 | 11/06/2014 | 30/06/2020 | 11/06/2020 | Colombini |  |  | 90.000 | 27.000 | 52.000 | 20.000 | - | - | 24.000 | - | - | - | - | 120.000 | 72.000 | 40.000 | 2.00 | 40.000 | - | 20.000 | -  |   |
-|  TOZZANEGLI DAZON | 10/01/2014 | 09/06/2017 | 30/06/2020 | 09/06/2017 | St. Goma S.p.A. |  |  | 12.000 | 1.274 | 12.750 | - | - | - | 12.750 | - | - | - | - | - | - | - | - | - | - | - | -  |   |
-|  VERANO MARZANEGLI | 10/01/2014 | 01/03/2014 | 30/06/2020 | 01/03/2020 | St. Goma Montanese Tesele S.p.A. |  |  | 1 | 1 | 1 | 10.000 | - | - | 1.244 | - | - | - | - | 10.000 | 1.244 | 12.667 | 2.00 | 20.000 | - | - | -  |   |
-|  ZARON LOROSSE | 11/06/2014 | 11/01/2015 | 30/06/2020 | 11/01/2015 | St. Goma Montanese Tesele S.p.A. |  |  | 3.000 | 5.000 | - | - | - | - | - | - | - | - | - | 3.000 | 5.000 | - | 1.00 | - | - | - | -  |   |
-|  ALTA |  |  |  |  |  |  |  | 140 | - | - | 140 | 50 | 50 | - | - | 50 | - | - | 120 | - | 120 | - | - | - | - | -  |   |
-|  TOTALS (2010) |  |  |  |  |  |  |  | 6.557.537 | 712.371 | 443.500 | 143.500 | 65.000 | 50 | 285.000 | 32 | - | 50.000 | 40 | 6.000.000 | 6.044.000 | 304.000 | - | 250.000 | 80.227 | 42.000 | -  |   |
-|  TOTALS (2010) PLURIENNALI ALLA PRESTAZIONE DEI CALCIATORI |   |   |   |   |   |   | 175.363.577 | 80.000.000 | 44.371.874 | 70.000.000 | 6.387.114 | 75.100.000 | 80.000.000 | 1.000.000 | 80.000.000 | 225.000.000 | 80.000.000 | 225.000.000 | 80.000.000 | 225.000.000 | 80.000.000 | 225.000.000 | 80.000.000 | 225.000.000 | 80.000.000 | 225.000.000 | 80.000.000  |
+Struttura della tabella: stesse colonne delle pagine precedenti.
+
+Sezione: Vivaio
+
+[ilegible — le righe con nomi dei calciatori, date, società e valori numerici non sono leggibili con affidabilità nella scansione]
+
+Riga: TOTALE VIVAIO — [ilegible]
+
+Riga: ALTRI — [ilegible]
+
+Riga di totale: TOTALE DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI — [ilegible]
 
 --- pág. 50 ---
 
@@ -2371,7 +2336,7 @@ BDO
 
 --- pág. 71 ---
 
-![img-1.jpeg](img-1.jpeg)
+BDO
 
 Tel: +39 02 58.20.10
 www.bdo.it
@@ -2379,29 +2344,27 @@ www.bdo.it
 Viale Abruzzi, 94
 20131 Milano
 
-Relazione della società di revisione indipendente
-ai sensi dell'art. 14 del D.Lgs. 27 gennaio 2010, n. 39
+**Relazione della società di revisione indipendente ai sensi dell'art. 14 del D.Lgs. 27 gennaio 2010, n. 39**
 
-Agli Azionisti di
-Atalanta Bergamasca Calcio S.p.A.
+Agli Azionisti di Atalanta Bergamasca Calcio S.p.A.
 
-Relazione sulla revisione contabile del bilancio consolidato
+**Relazione sulla revisione contabile del bilancio consolidato**
 
-# Giudizio
+**Giudizio**
 
 Abbiamo svolto la revisione contabile del bilancio consolidato del Gruppo Atalanta Bergamasca Calcio (il Gruppo), costituito dallo stato patrimoniale consolidato al 31 dicembre 2020, dal conto economico consolidato, dal rendiconto finanziario consolidato per l'esercizio chiuso a tale data e dalla nota integrativa.
 
 A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria del Gruppo al 31 dicembre 2020, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-# Elementi alla base del giudizio
+**Elementi alla base del giudizio**
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione Responsabilità della società di revisione per la revisione contabile del bilancio consolidato della presente relazione. Siamo indipendenti rispetto al Gruppo in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio consolidato* della presente relazione. Siamo indipendenti rispetto al Gruppo in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
 
-# Altri aspetti
+**Altri aspetti**
 
 Il bilancio consolidato per l'esercizio chiuso al 31 dicembre 2019, è stato sottoposto a revisione contabile da parte di un altro revisore che, il 21 maggio 2020, ha espresso un giudizio senza modifica su tale bilancio.
 
-# Responsabilità degli Amministratori e del Collegio Sindacale per il bilancio consolidato
+**Responsabilità degli Amministratori e del Collegio Sindacale per il bilancio consolidato**
 
 Gli Amministratori sono responsabili per la redazione del bilancio consolidato che fornisca una rappresentazione veritiera e corretta in conformità alle norme italiane che ne disciplinano i criteri di redazione e, nei termini previsti dalla legge, per quella parte del controllo interno dagli stessi ritenuta necessaria per consentire la redazione di un bilancio che non contenga errori significativi dovuti a frodi o a comportamenti o eventi non intenzionali.
 
@@ -2409,14 +2372,12 @@ Gli Amministratori sono responsabili per la valutazione della capacità del Grup
 
 Il Collegio Sindacale ha la responsabilità della vigilanza, nei termini previsti dalla legge, sul processo di predisposizione dell'informativa finanziaria del Gruppo.
 
-Bari, Bologna, Brescia, Cagliari, Firenze, Genova, Milano, Napoli, Padova, Palermo, Roma, Torino, Verona.
+Bari, Bologna, Brescia, Cagliari, Firenze, Genova, Milano, Napoli, Padova, Palermo, Roma, Torino, Verona,
 
 BDO Italia S.p.A. - Sede Legale: Viale Abruzzi, 94 - 20131 Milano - Capitale Sociale Euro 1.000.000 i.v.
-Codice Fiscale, Partita IVA e Registro Imprese di Milano n. 07722780967 - R.E.A. Milano 197784)
-
+Codice Fiscale, Partita IVA e Registro Imprese di Milano n. 07722780967 - R.E.A. Milano 1977842
 Iscritta al Registro dei Revisori Legali al n. 167911 con D.M. del 15/03/2013 G.U. n. 26 del 02/04/2013
-
-BDO Italia S.p.A., società per azioni italiane, è membro di BDO International Limited, società di diritto inglese (company limited by guarantee), e fa parte della rete internazionale BDO, network di società indipendenti.
+BDO Italia S.p.A., società per azioni italiana, è membro di BDO International Limited, società di diritto inglese (company limited by guarantee), e fa parte della rete internazionale BDO, network di società indipendenti.
 
 Pag. 1 di 3
 

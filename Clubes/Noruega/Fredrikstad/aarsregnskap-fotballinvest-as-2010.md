@@ -145,25 +145,22 @@ Side 1 av 10
 
 --- pág. 3 ---
 
-|  Ekstraordinære poster |  | 0 | 0  |
-| --- | --- | --- | --- |
-|  Skattekostnad på ekstraordinære poster | 10 | 0 | 0  |
-|  Årsresultat |  | -21 473 452 | -26 740 020  |
-|  Minoritetsinteresser |  | 0 | 0  |
-|  Overføringer og disponeringer |  |  |   |
-|  Overføringer fond |  | 0 | 0  |
-|  Utbytte |  | 0 | 0  |
-|  Konsernbidrag |  | 0 | 0  |
-|  Fondsemisjon |  | 0 | 0  |
-|  Udekket tap |  | -21 473 452 | -26 740 020  |
-|  Overføringer annen egenkapital |  | 0 | 0  |
-|  Sum overføringer og disponeringer |  | -21 473 452 | -26 740 020  |
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| Ekstraordinære poster | | 0 | 0 |
+| Skattekostnad på ekstraordinære poster | 10 | 0 | 0 |
+| **Årsresultat** | | **-21 473 452** | **-26 740 020** |
+| Minoritetsinteresser | | 0 | 0 |
+| **Overføringer og disponeringer** | | | |
+| Overføringer fond | | 0 | 0 |
+| Utbytte | | 0 | 0 |
+| Konsernbidrag | | 0 | 0 |
+| Fondsemisjon | | 0 | 0 |
+| Udekket tap | | -21 473 452 | -26 740 020 |
+| Overføringer annen egenkapital | | 0 | 0 |
+| **Sum overføringer og disponeringer** | | **-21 473 452** | **-26 740 020** |
 
-Utskriftsdato 16.08.2011
-
-Organisasjonsnr 979 111 576
-
-Side 2 av 10
+Utskriftsdato 16.08.2011 Organisasjonsnr 979 111 576 Side 2 av 10
 
 --- pág. 4 ---
 
@@ -216,89 +213,73 @@ Side 3 av 10
 
 --- pág. 5 ---
 
-# **Investeringer**
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| **Investeringer** | | | |
+| Aksjer og andeler i foretak i samme konsern | | 0 | 0 |
+| Markedsbaserte aksjer | | 0 | 0 |
+| Markedsbaserte obligasjoner | | 0 | 0 |
+| Andre markedsbaserte finansielle instrumenter | | 0 | 0 |
+| Andre finansielle instrumenter | | 0 | 0 |
+| **Sum investeringer** | | **0** | **0** |
+| **Bankinnskudd, kontanter og lignende** | | | |
+| **Sum bankinnskudd, kontanter og lignende** | 8 | **2 736 105** | **1 545 859** |
+| **Sum omløpsmidler** | | **7 820 201** | **12 536 091** |
+| **SUM EIENDELER** | | **15 697 221** | **26 536 233** |
 
-|  Aksjer og andeler i foretak i samme konsern | 0 | 0  |
-| --- | --- | --- |
-|  Markedsbaserte aksjer | 0 | 0  |
-|  Markedsbaserte obligasjoner | 0 | 0  |
-|  Andre markedsbaserte finansielle instrumenter | 0 | 0  |
-|  Andre finansielle instrumenter | 0 | 0  |
-|  **Sum investeringer** | **0** | **0**  |
+**EGENKAPITAL OG GJELD**
 
-# **Bankinnskudd, kontanter**
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| **Egenkapital** | | | |
+| **Innskutt egenkapital** | | | |
+| Aksjekapital | 15, 16 | 14 706 465 | 7 706 465 |
+| Beholdning av egne aksjer | 15 | 0 | 0 |
+| Overkursfond | 15 | 2 720 000 | 2 720 000 |
+| Annen innskutt egenkapital | 15 | 0 | 0 |
+| **Sum innskutt egenkapital** | | **17 426 465** | **10 426 465** |
+| **Opptjent egenkapital** | | | |
+| Fond | 15 | 0 | 0 |
+| Udekket tap | 15 | -44 269 392 | -33 060 752 |
+| **Sum opptjent egenkapital** | | **-44 269 392** | **-33 060 752** |
+| Minoritetsinteresser | | 0 | 0 |
+| **Sum egenkapital** | | **-26 842 927** | **-22 634 287** |
+| **Langsiktig gjeld** | | | |
+| Pensjonsforpliktelser | | 0 | 0 |
+| Utsatt skatt | 10 | 0 | 0 |
+| Andre avsetninger for forpliktelser | | 0 | 0 |
+| **Sum avsetninger for forpliktelser** | | **0** | **0** |
+| **Annen langsiktig gjeld** | | | |
+| Konvertible lån | | 0 | 0 |
+| Obligasjonslån | | 0 | 0 |
+| Gjeld til kredittinstitusjoner | 13 | 250 843 | 360 574 |
+| Ansvarlig lånekapital | 14 | 3 583 612 | 0 |
+| Øvrig langsiktig gjeld | 2 | 1 966 667 | 5 000 000 |
+| **Sum annen langsiktig gjeld** | | **5 801 122** | **5 360 574** |
 
-|  og lignende |  |  |   |
-| --- | --- | --- | --- |
-|  Sum bankinnskudd, kontanter og lignende | 8 | 2 736 105 | 1 545 859  |
-|  **Sum omløpsmidler** |  | **7 820 201** | **12 536 091**  |
-|  **SUM EIENDELER** |  | **15 697 221** | **26 536 233**  |
+**Kortsiktig gjeld**
 
-# **EGENKAPITAL OG GJELD**
-
-|  **Egenkapital** |  |  |   |
-| --- | --- | --- | --- |
-|  **Innskutt egenkapital** |  |  |   |
-|  Aksjekapital | 15, 16 | 14 706 465 | 7 706 465  |
-|  Beholdning av egne aksjer | 15 | 0 | 0  |
-|  Overkursfond | 15 | 2 720 000 | 2 720 000  |
-|  Annen innskutt egenkapital | 15 | 0 | 0  |
-|  **Sum innskutt egenkapital** |  | **17 426 465** | **10 426 465**  |
-
-|  **Opptjent egenkapital** |  |  |   |
-| --- | --- | --- | --- |
-|  Fond | 15 | 0 | 0  |
-|  Udekket tap | 15 | -44 269 392 | -33 060 752  |
-|  **Sum opptjent egenkapital** |  | **-44 269 392** | **-33 060 752**  |
-
-|  Minoritetsinteresser | 0 | 0  |
-| --- | --- | --- |
-|  **Sum egenkapital** | **-26 842 927** | **-22 634 287**  |
-
-|  **Langsiktig gjeld** |  |  |   |
-| --- | --- | --- | --- |
-|  Pensjonsforpliktelser |  | 0 | 0  |
-|  Utsatt skatt | 10 | 0 | 0  |
-|  Andre avsetninger for forpliktelser |  | 0 | 0  |
-|  **Sum avsetninger for forpliktelser** |  | **0** | **0**  |
-|  **Annen langsiktig gjeld** |  |  |   |
-|  Konvertible lån |  | 0 | 0  |
-|  Obligasjonslån |  | 0 | 0  |
-|  Gjeld til kredittinstitusjoner | 13 | 250 843 | 360 574  |
-|  Ansvarlig lånekapital | 14 | 3 583 612 | 0  |
-|  Øvrig langsiktig gjeld | 2 | 1 966 667 | 5 000 000  |
-|  **Sum annen langsiktig gjeld** |  | **5 801 122** | **5 360 574**  |
-
-# **Kortsiktig gjeld**
-
-Utskriftsdato 16.08.2011
-
-Organisasjonsnr 979 111 576
-
-Side 4 av 10
+Utskriftsdato 16.08.2011 Organisasjonsnr 979 111 576 Side 4 av 10
 
 --- pág. 6 ---
 
-|  Konvertible lån |  | 0 | 0  |
-| --- | --- | --- | --- |
-|  Sertifikatlån |  | 0 | 0  |
-|  Gjeld til kredittinstitusjoner | 13 | 6 737 137 | 7 079 323  |
-|  Leverandørgjeld | 9, 12 | 10 952 005 | 22 876 578  |
-|  Betalbar skatt | 10 | 0 | 0  |
-|  Skyldige offentlige avgifter |  | 724 637 | 907 162  |
-|  Annen kortsiktig gjeld | 2, 9, 13 | 18 325 247 | 12 946 883  |
-|  Sum kortsiktig gjeld |  | 36 739 026 | 43 809 946  |
-|  Sum gjeld |  | 42 540 148 | 49 170 520  |
-|  SUM EGENKAPITAL OG GJELD |  | 15 697 221 | 26 536 233  |
-|  POSTER UTENOM BALANSEN |  |  |   |
-|  Garantistillelser |  | 0 | 0  |
-|  Pantstillelser |  | 0 | 0  |
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| Konvertible lån | | 0 | 0 |
+| Sertifikatlån | | 0 | 0 |
+| Gjeld til kredittinstitusjoner | 13 | 6 737 137 | 7 079 323 |
+| Leverandørgjeld | 9, 12 | 10 952 005 | 22 876 578 |
+| Betalbar skatt | 10 | 0 | 0 |
+| Skyldige offentlige avgifter | | 724 637 | 907 162 |
+| Annen kortsiktig gjeld | 2, 9, 13 | 18 325 247 | 12 946 883 |
+| **Sum kortsiktig gjeld** | | **36 739 026** | **43 809 946** |
+| **Sum gjeld** | | **42 540 148** | **49 170 520** |
+| **SUM EGENKAPITAL OG GJELD** | | **15 697 221** | **26 536 233** |
+| **POSTER UTENOM BALANSEN** | | | |
+| Garantistillelser | | 0 | 0 |
+| Pantstillelser | | 0 | 0 |
 
-Utskriftsdato 16.08.2011
-
-Organisasjonsnr 979 111 576
-
-Side 5 av 10
+Utskriftsdato 16.08.2011 Organisasjonsnr 979 111 576 Side 5 av 10
 
 --- pág. 7 ---
 
@@ -345,25 +326,22 @@ Side 6 av 10
 
 --- pág. 8 ---
 
-|  Ekstraordinære poster |  | 0 | 0  |
-| --- | --- | --- | --- |
-|  Skattekostnad på ekstraordinære poster | 10 | 0 | 0  |
-|  Årsresultat |  | -21 545 054 | -25 842 173  |
-|  Minoritetsinteresser |  | 0 | 0  |
-|  Overføringer og disponeringer |  |  |   |
-|  Overføringer fond |  | 0 | 0  |
-|  Utbytte |  | 0 | 0  |
-|  Konsernbidrag |  | 0 | 0  |
-|  Fondsemisjon |  | 0 | 0  |
-|  Udekket tap |  | 0 | 0  |
-|  Overføringer annen egenkapital |  | 0 | 0  |
-|  Sum overføringer og disponeringer |  | 0 | 0  |
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| Ekstraordinære poster | | 0 | 0 |
+| Skattekostnad på ekstraordinære poster | 10 | 0 | 0 |
+| **Årsresultat** | | **-21 545 054** | **-25 842 173** |
+| Minoritetsinteresser | | 0 | 0 |
+| **Overføringer og disponeringer** | | | |
+| Overføringer fond | | 0 | 0 |
+| Utbytte | | 0 | 0 |
+| Konsernbidrag | | 0 | 0 |
+| Fondsemisjon | | 0 | 0 |
+| Udekket tap | | 0 | 0 |
+| Overføringer annen egenkapital | | 0 | 0 |
+| **Sum overføringer og disponeringer** | | **0** | **0** |
 
-Utskriftsdato 16.08.2011
-
-Organisasjonsnr 979 111 576
-
-Side 7 av 10
+Utskriftsdato 16.08.2011 Organisasjonsnr 979 111 576 Side 7 av 10
 
 --- pág. 9 ---
 
@@ -416,89 +394,73 @@ Side 8 av 10
 
 --- pág. 10 ---
 
-# **Investeringer**
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| **Investeringer** | | | |
+| Aksjer og andeler i foretak i samme konsern | | 0 | 0 |
+| Markedsbaserte aksjer | | 0 | 0 |
+| Markedsbaserte obligasjoner | | 0 | 0 |
+| Andre markedsbaserte finansielle instrumenter | | 0 | 0 |
+| Andre finansielle instrumenter | | 0 | 0 |
+| **Sum investeringer** | | **0** | **0** |
+| **Bankinnskudd, kontanter og lignende** | | | |
+| **Sum bankinnskudd, kontanter og lignende** | 8 | **3 677 474** | **1 688 787** |
+| **Sum omløpsmidler** | | **8 566 117** | **12 533 437** |
+| **SUM EIENDELER** | | **16 502 098** | **26 648 205** |
 
-|  Aksjer og andeler i foretak i samme konsern | 0 | 0  |
-| --- | --- | --- |
-|  Markedsbaserte aksjer | 0 | 0  |
-|  Markedsbaserte obligasjoner | 0 | 0  |
-|  Andre markedsbaserte finansielle instrumenter | 0 | 0  |
-|  Andre finansielle instrumenter | 0 | 0  |
-|  **Sum investeringer** | **0** | **0**  |
+**EGENKAPITAL OG GJELD**
 
-# **Bankinnskudd, kontanter**
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| **Egenkapital** | | | |
+| **Innskutt egenkapital** | | | |
+| Aksjekapital | 15, 16 | 14 706 465 | 7 706 465 |
+| Beholdning av egne aksjer | 15 | 0 | 0 |
+| Overkursfond | 15 | 2 720 000 | 2 720 000 |
+| Annen innskutt egenkapital | 15 | 0 | 0 |
+| **Sum innskutt egenkapital** | | **17 426 465** | **10 426 465** |
+| **Opptjent egenkapital** | | | |
+| Fond | 15 | 0 | 0 |
+| Udekket tap | 15 | -45 134 144 | -34 284 146 |
+| **Sum opptjent egenkapital** | | **-45 134 144** | **-34 284 146** |
+| Minoritetsinteresser | | 0 | 0 |
+| **Sum egenkapital** | | **-27 707 679** | **-23 857 681** |
+| **Langsiktig gjeld** | | | |
+| Pensjonsforpliktelser | | 0 | 0 |
+| Utsatt skatt | 10 | 0 | 0 |
+| Andre avsetninger for forpliktelser | | 0 | 0 |
+| **Sum avsetninger for forpliktelser** | | **0** | **0** |
+| **Annen langsiktig gjeld** | | | |
+| Konvertible lån | | 0 | 0 |
+| Obligasjonslån | | 0 | 0 |
+| Gjeld til kredittinstitusjoner | 13 | 250 843 | 360 574 |
+| Ansvarlig lånekapital | 14 | 0 | 0 |
+| Øvrig langsiktig gjeld | 2 | 5 867 016 | 5 621 855 |
+| **Sum annen langsiktig gjeld** | | **6 117 859** | **5 982 429** |
 
-|  og lignende |  |  |   |
-| --- | --- | --- | --- |
-|  Sum bankinnskudd, kontanter og lignende | 8 | 3 677 474 | 1 688 787  |
-|  **Sum omløpsmidler** |  | **8 566 117** | **12 533 437**  |
-|  **SUM EIENDELER** |  | **16 502 098** | **26 648 205**  |
+**Kortsiktig gjeld**
 
-# **EGENKAPITAL OG GJELD**
-
-|  **Egenkapital** |  |  |   |
-| --- | --- | --- | --- |
-|  **Innskutt egenkapital** |  |  |   |
-|  Aksjekapital | 15, 16 | 14 706 465 | 7 706 465  |
-|  Beholdning av egne aksjer | 15 | 0 | 0  |
-|  Overkursfond | 15 | 2 720 000 | 2 720 000  |
-|  Annen innskutt egenkapital | 15 | 0 | 0  |
-|  **Sum innskutt egenkapital** |  | **17 426 465** | **10 426 465**  |
-
-|  **Opptjent egenkapital** |  |  |   |
-| --- | --- | --- | --- |
-|  Fond | 15 | 0 | 0  |
-|  Udekket tap | 15 | -45 134 144 | -34 284 146  |
-|  **Sum opptjent egenkapital** |  | **-45 134 144** | **-34 284 146**  |
-
-|  Minoritetsinteresser | 0 | 0  |
-| --- | --- | --- |
-|  **Sum egenkapital** | **-27 707 679** | **-23 857 681**  |
-
-|  **Langsiktig gjeld** |  |  |   |
-| --- | --- | --- | --- |
-|  Pensjonsforpliktelser |  | 0 | 0  |
-|  Utsatt skatt | 10 | 0 | 0  |
-|  Andre avsetninger for forpliktelser |  | 0 | 0  |
-|  **Sum avsetninger for forpliktelser** |  | **0** | **0**  |
-|  **Annen langsiktig gjeld** |  |  |   |
-|  Konvertible lån |  | 0 | 0  |
-|  Obligasjonslån |  | 0 | 0  |
-|  Gjeld til kredittinstitusjoner | 13 | 250 843 | 360 574  |
-|  Ansvarlig lånekapital | 14 | 0 | 0  |
-|  Øvrig langsiktig gjeld | 2 | 5 867 016 | 5 621 855  |
-|  **Sum annen langsiktig gjeld** |  | **6 117 859** | **5 982 429**  |
-
-# **Kortsiktig gjeld**
-
-Utskriftsdato 16.08.2011
-
-Organisasjonsnr 979 111 576
-
-Side 9 av 10
+Utskriftsdato 16.08.2011 Organisasjonsnr 979 111 576 Side 9 av 10
 
 --- pág. 11 ---
 
-|  Konvertible lån |  | 0 | 0  |
-| --- | --- | --- | --- |
-|  Sertifikatlån |  | 0 | 0  |
-|  Gjeld til kredittinstitusjoner | 13 | 6 871 198 | 7 314 417  |
-|  Leverandørgjeld | 9, 12 | 11 301 849 | 23 034 809  |
-|  Betalbar skatt | 10 | 0 | 0  |
-|  Skyldige offentlige avgifter |  | 1 530 999 | 973 474  |
-|  Annen kortsiktig gjeld | 2, 9, 13 | 18 387 872 | 13 200 757  |
-|  Sum kortsiktig gjeld |  | 38 091 918 | 44 523 457  |
-|  Sum gjeld |  | 44 209 777 | 50 505 886  |
-|  SUM EGENKAPITAL OG GJELD |  | 16 502 098 | 26 648 205  |
-|  POSTER UTENOM BALANSEN |  |  |   |
-|  Garantistillelser |  | 0 | 0  |
-|  Pantstillelser |  | 0 | 0  |
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| Konvertible lån | | 0 | 0 |
+| Sertifikatlån | | 0 | 0 |
+| Gjeld til kredittinstitusjoner | 13 | 6 871 198 | 7 314 417 |
+| Leverandørgjeld | 9, 12 | 11 301 849 | 23 034 809 |
+| Betalbar skatt | 10 | 0 | 0 |
+| Skyldige offentlige avgifter | | 1 530 999 | 973 474 |
+| Annen kortsiktig gjeld | 2, 9, 13 | 18 387 872 | 13 200 757 |
+| **Sum kortsiktig gjeld** | | **38 091 918** | **44 523 457** |
+| **Sum gjeld** | | **44 209 777** | **50 505 886** |
+| **SUM EGENKAPITAL OG GJELD** | | **16 502 098** | **26 648 205** |
+| **POSTER UTENOM BALANSEN** | | | |
+| Garantistillelser | | 0 | 0 |
+| Pantstillelser | | 0 | 0 |
 
-Utskriftsdato 16.08.2011
-
-Organisasjonsnr 979 111 576
-
-Side 10 av 10
+Utskriftsdato 16.08.2011 Organisasjonsnr 979 111 576 Side 10 av 10
 
 --- pág. 12 ---
 

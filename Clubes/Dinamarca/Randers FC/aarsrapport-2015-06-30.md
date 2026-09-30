@@ -333,46 +333,47 @@ Revision INDEPENDENT MEMBER
 
 Randers FC A/S
 
-Hoved- og nøgletal 2014/15 2013/14 2012/13 2011/12 2010/11
-1.000 1.000 1.000 1.000 1.000
-DKK DKK DKK DKK DKK
+### Hoved- og nøgletal
 
-Resultatopgørelse
+| | 2014/15<br>1.000<br>DKK | 2013/14<br>1.000<br>DKK | 2012/13<br>1.000<br>DKK | 2011/12<br>1.000<br>DKK | 2010/11<br>1.000<br>DKK |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Resultatopgørelse** | | | | | |
+| Sponsorindtægter | 30.282 | 29.135 | 27.825 | 26.004 | 28.633 |
+| TV-indtægter | 22.871 | 15.536 | 21.856 | 2.361 | 10.683 |
+| Entré og kampindtægter | 6.420 | 7.660 | 12.228 | 2.256 | 8.244 |
+| Øvrige indtægter | 7.560 | 18.658 | 11.705 | 7.089 | 24.216 |
+| **Omsætning i alt** | **67.133** | **70.989** | **73.614** | **37.710** | **71.776** |
+| Løn- og personaleomkostninger | -38.007 | -37.567 | -41.730 | -28.751 | -30.321 |
+| Andre driftsomkostninger | -25.379 | -26.390 | -27.027 | -17.995 | -23.443 |
+| Afskrivninger | -4.654 | -4.091 | -3.580 | -4.771 | -9.684 |
+| **Resultat før finansielle poster** | **-907** | **2.941** | **1.277** | **-13.807** | **8.328** |
+| Resultat af kapitalandele | 1.235 | 1.602 | 347 | 1.554 | -1.437 |
+| Finansiering, netto | -331 | -1.358 | -292 | -353 | -251 |
+| Skat af årets resultat | 119 | -547 | -105 | 3.280 | -1.610 |
+| **Årets resultat** | **115** | **2.638** | **1.227** | **-9.326** | **5.030** |
+| | | | | | |
+| **Balance** | | | | | |
+| Kontraktrettigheder | 4.003 | 3.132 | 2.667 | 2.877 | 4.082 |
+| Kapitalandele | 8.159 | 8.227 | 8.545 | 8.278 | 6.666 |
+| Øvrige anlægsaktiver | 8.729 | 8.577 | 5.268 | 5.846 | 23.643 |
+| Omsætningsaktiver | 14.915 | 28.920 | 24.046 | 14.963 | 18.263 |
+| **Aktiver i alt** | **35.806** | **48.856** | **40.526** | **31.964** | **52.654** |
+| | | | | | |
+| Egenkapital | 15.768 | 15.652 | 13.014 | 11.787 | 21.112 |
+| Hensatte forpligtelser | 0 | 0 | 0 | 0 | 331 |
+| Gældsforpligtelser | 20.038 | 33.204 | 27.512 | 20.177 | 31.211 |
+| **Passiver i alt** | **35.806** | **48.856** | **40.526** | **31.964** | **52.654** |
+| | | | | | |
+| **Nøgletal i** | | | | | |
+| Gennemsnitlige antal ansatte | 56 | 53 | 51 | 45 | 42 |
+| Soliditetsgrad | 44,0 | 32,0 | 32,1 | 36,9 | 40,1 |
+| Inv. i immaterielle anlægsaktiver | 4.257 | 3.680 | 2.443 | 2.301 | 4.984 |
+| Inv. i materielle anlægsaktiver | 1.668 | 2.960 | 339 | 461 | 521 |
 
-Sponsorindtægter 30.282 29.135 27.825 26.004 28.633
-TV-indtægter 22.871 15.536 21.856 2.361 10.683
-Entré og kampindtægter 6.420 7.660 12.228 2.256 8.244
-Øvrige indtægter 7.560 18.658 11.705 7.089 24.216
-Omsætning i alt 67.133 70.989 73.614 37.710 71.776
-Løn- og personaleomkostninger -38.007 -37.567 -41.730 -28.751 -30.321
-Andre driftsomkostninger -25.379 -26.390 -27.027 -17.995 -23.443
-Afskrivninger -4.654 -4.091 -3.580 -4.771 -9.684
-Resultat før finansielle poster -907 2.941 1.277 -13.807 8.328
-Resultat af kapitalandele 1.235 1.602 347 1.554 -1.437
-Finansiering, netto -331 -1.358 -292 -353 -251
-Skat af årets resultat 119 -547 -105 3.280 -1.610
-Årets resultat 115 2.638 1.227 -9.326 5.030
-Balance
-
-Kontraktrettigheder 4.003 3.132 2.667 2.877 4.082
-Kapitalandele 8.159 8.227 8.545 8.278 6.666
-Øvrige anlægsaktiver 8.729 8.577 5.268 5.846 23.643
-Omsætningsaktiver 14.915 28.920 24.046 14.963 18.263
-Aktiver i alt 35.806 48.856 40.526 31.964 52.654
-Egenkapital 15.768 15.652 13.014 11.787 21.112
-Hensatte forpligtelser 0 (9) (9 (9 331
-Gældsforpligtelser 20.038 33.204 27.512 20.177 31.211
-Passiver i alt 35.806 48.856 40.526 31.964 52.654
-Nøgletal i
-
-Gennemsnitlige antal ansatte 56 53 51 45 42
-Soliditetsgrad 44,0 32,0 32,1 36,9 40,1
-Inv. i immaterielle anlægsaktiver 4.257 3.680 2.443 2.301 4.984
-Inv. i materielle anlægsaktiver 1.668 2.960 339 461 521
-
-Rak 7 CI) GG
-
-Revision INDEPENDENT MEMBER
+Dansk Revision  
+7  
+GGi  
+INDEPENDENT MEMBER
 
 --- pág. 9 ---
 
@@ -822,43 +823,44 @@ Revision INDEPENDENT MEMBER
 
 Randers FC A/S
 
-2014/15 2013/14
-Pengestrømsopgørelse DKK 1.000 DKK
-Årets resultat 115.991 2.638
-Afskrivninger, anlægsaktiver 4.654.293 4.212
-Indtægter af kapitalandele -1.234.969 -1.602
-Finansielle indtægter -55.629 -46
-Finansielle omkostninger 386.784 1.375
-Nedskrivning af koncernmellemværende 0 132
-Skat af årets resultat -119.421 547
-Reguleringer 3.631.058 4.618
-Ændring i varebeholdninger -23.291 58
-Ændring i tilgodehavender 14.234.472 -6.932
-Ændring i kortfristede gældsforpligtelser -11.584.985 1.858
-Ændring i driftskapital 2.626.196 -5.016
-Renteindbetalinger og lignende 55.629 46
-Renteudbetalinger og lignende -386.784 -1.375
-Rentebetalinger og lignende -331.155 -1.329
-Tilbagebetalt skat 180.523 198
-Pengestrømme fra driftsaktivitet 6.222.613 1.109
-Køb af immaterielle anlægsaktiver 4.257.033 -3.680
-Køb af materielle anlægsaktiver -1.668.130 -2.960
-Salg af materielle anlægsaktiver 20.000 128
-Køb af finansielle anlægsaktiver -157.800 -1.554
-Salg af finansielle anlægsaktiver 379.507 0
-Modtagne udbytter fra tilknyttede virksomheder 1.300.000 2.000
-Pengestrømme fra investeringsaktivitet -4.383.456 -6.066
-Ændring i langfristet gæld -307.593 1.432
-Pengestrømme fra finansieringsaktivitet -307.593 1.432
-Ændring i likvider 1.531.564 -3.525
-Likvider primo -2.148.910 1.376
-Likvider ultimo -617.346 -2.149
-Ændring i likvider 1.531.564 -3.525
+### Pengestrømsopgørelse
 
-Dansk 17 CIO GGi
+| | 2014/15<br>DKK | 2013/14<br>1.000 DKK |
+| :--- | :--- | :--- |
+| **Årets resultat** | **115.991** | **2.638** |
+| Afskrivninger, anlægsaktiver | 4.654.293 | 4.212 |
+| Indtægter af kapitalandele | -1.234.969 | -1.602 |
+| Finansielle indtægter | -55.629 | -46 |
+| Finansielle omkostninger | 386.784 | 1.375 |
+| Nedskrivning af koncernmellemværende | 0 | 132 |
+| Skat af årets resultat | -119.421 | 547 |
+| **Reguleringer** | **3.631.058** | **4.618** |
+| Ændring i varebeholdninger | -23.291 | 58 |
+| Ændring i tilgodehavender | 14.234.472 | -6.932 |
+| Ændring i kortfristede gældsforpligtelser | -11.584.985 | 1.858 |
+| **Ændring i driftskapital** | **2.626.196** | **-5.016** |
+| Renteindbetalinger og lignende | 55.629 | 46 |
+| Renteudbetalinger og lignende | -386.784 | -1.375 |
+| **Rentebetalinger og lignende** | **-331.155** | **-1.329** |
+| Tilbagebetalt skat | 180.523 | 198 |
+| **Pengestrømme fra driftsaktivitet** | **6.222.613** | **1.109** |
+| Køb af immaterielle anlægsaktiver | -4.257.033 | -3.680 |
+| Køb af materielle anlægsaktiver | -1.668.130 | -2.960 |
+| Salg af materielle anlægsaktiver | 20.000 | 128 |
+| Køb af finansielle anlægsaktiver | -157.800 | -1.554 |
+| Salg af finansielle anlægsaktiver | 379.507 | 0 |
+| Modtagne udbytter fra tilknyttede virksomheder | 1.300.000 | 2.000 |
+| **Pengestrømme fra investeringsaktivitet** | **-4.383.456** | **-6.066** |
+| Ændring i langfristet gæld | -307.593 | 1.432 |
+| **Pengestrømme fra finansieringsaktivitet** | **-307.593** | **1.432** |
+| **Ændring i likvider** | **1.531.564** | **-3.525** |
+| Likvider primo | -2.148.910 | 1.376 |
+| Likvider ultimo | -617.346 | -2.149 |
+| **Ændring i likvider** | **1.531.564** | **-3.525** |
 
-Revision
-
+Dansk Revision  
+17  
+GGi  
 INDEPENDENT MEMBER
 
 --- pág. 19 ---

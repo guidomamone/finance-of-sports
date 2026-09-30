@@ -108,17 +108,14 @@ Side 1 av 4
 
 --- pág. 3 ---
 
-|  Årsresultat | -12 991 901 | -40 039 447  |
-| --- | --- | --- |
-|  Overføringer og disponeringer |  |   |
-|  Utbytte | 12 991 901 | 40 039 447  |
-|  Sum overføringer og disponeringer | -12 991 901 | -40 039 447  |
+| | | 2010 | 2009 |
+|---|---|---|---|
+| **Årsresultat** | | **-12 991 901** | **-40 039 447** |
+| **Overføringer og disponeringer** | | | |
+| Utbytte | | 12 991 901 | 40 039 447 |
+| **Sum overføringer og disponeringer** | | **-12 991 901** | **-40 039 447** |
 
-Utskriftsdato 29.08.2011
-
-Organisasjonsnr 967 732 311
-
-Side 2 av 4
+Utskriftsdato 29.08.2011 Organisasjonsnr 967 732 311 Side 2 av 4
 
 --- pág. 4 ---
 
@@ -170,24 +167,21 @@ Side 3 av 4
 
 --- pág. 5 ---
 
-# Sum egenkapital
+**Sum egenkapital**
 
-|  Øvrig langsiktig gjeld | 3 | 19 559 340 | 9 382 000  |
-| --- | --- | --- | --- |
-|  Kortsiktig gjeld |  |  |   |
-|  Leverandørgjeld | 2 | 2 962 427 | 2 451 081  |
-|  Skyldige offentlige avgifter |  | 4 285 557 | 4 633 398  |
-|  Kortsiktig konserngjeld | 2 | 704 963 |   |
-|  Annen kortsiktig gjeld |  | 15 761 887 | 13 643 180  |
-|  Sum kortsiktig gjeld |  | 23 714 834 | 20 727 659  |
-|  Sum gjeld |  | 43 274 174 | 30 109 659  |
-|  SUM EGENKAPITAL OG GJELD |  | 76 967 715 | 76 795 102  |
+| | Note | 2010 | 2009 |
+|---|---|---|---|
+| Øvrig langsiktig gjeld | 3 | 19 559 340 | 9 382 000 |
+| **Kortsiktig gjeld** | | | |
+| Leverandørgjeld | 2 | 2 962 427 | 2 451 081 |
+| Skyldige offentlige avgifter | | 4 285 557 | 4 633 398 |
+| Kortsiktig konserngjeld | 2 | 704 963 | |
+| Annen kortsiktig gjeld | | 15 761 887 | 13 643 180 |
+| **Sum kortsiktig gjeld** | | **23 714 834** | **20 727 659** |
+| **Sum gjeld** | | **43 274 174** | **30 109 659** |
+| **SUM EGENKAPITAL OG GJELD** | | **76 967 715** | **76 795 102** |
 
-Utskriftsdato 29.08.2011
-
-Organisasjonsnr 967 732 311
-
-Side 4 av 4
+Utskriftsdato 29.08.2011 Organisasjonsnr 967 732 311 Side 4 av 4
 
 --- pág. 6 ---
 

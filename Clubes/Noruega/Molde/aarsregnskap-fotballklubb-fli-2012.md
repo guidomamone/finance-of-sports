@@ -547,25 +547,25 @@ Styremedlem
 
 Årsberetning Molde Fotballklubb 2012
 
-![img-5.jpeg](img-5.jpeg)
+[Logo: MFK 19/6 1911]
 
 REGNSKAP 2012
 
-- Klubbtotal Side 11
-- Noter til regnskapet for 2012 Side 13
-- Revisjonsberetning Side 20
-- Kontrollkomiteens beretning Side 22
+- Klubbtotal — Side 11
+- Noter til regnskapet for 2012 — Side 13
+- Revisjonsberetning — Side 20
+- Kontrollkomiteens beretning — Side 22
 
 BUDSJETT 2013
 
-- Klubbtotal Side 23
+- Klubbtotal — Side 23
 
 AVDELINGS/GRUPPE REGNSKAP 2012 INKL BUDSJETT 2013
 
-- Hovedstyret og Sportslig Utvalgs regnskap 2011 og budsjett 2012 Side 24
-- Bredde- og Utviklingsavdelingens regnskap 2011 og budsjett 2012 Side 25
-- Hovedstyret og Sportslig utvalgs balanse 2011 Side 26
-- Bredde- og Utviklingsavdelingens balanse 2011 Side 27
+- Hovedstyret og Sportslig Utvalgs regnskap 2011 og budsjett 2012 — Side 24
+- Bredde- og Utviklingsavdelingens regnskap 2011 og budsjett 2012 — Side 25
+- Hovedstyret og Sportslig utvalgs balanse 2011 — Side 26
+- Bredde- og Utviklingsavdelingens balanse 2011 — Side 27
 
 10
 
@@ -1378,12 +1378,11 @@ Netto finansposter
 
 --- pág. 32 ---
 
-Årsberetning Molde Fotballklubb 2012
+# Årsberetning Molde Fotballklubb 2012
 
-![img-10.jpeg](img-10.jpeg)
+[Logo: Molde FK, 19/6 1911]
 
-# BERETNINGER FRA
-FAGSTYRER OG UTVALG
+# BERETNINGER FRA FAGSTYRER OG UTVALG
 
 28
 

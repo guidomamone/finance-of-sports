@@ -279,241 +279,132 @@ de não detecção de distorção relevante resultante de fraude é maior do que
 
 --- pág. 8 ---
 
-/ V R(== & Associados
+proveniente de erro, já que a fraude pode envolver o ato de burlar os controles internos, conluio, falsificação, omissão ou representações falsas intencionais.
 
-Auditores Independentes
+- Obtemos entendimento dos controles internos relevantes para a auditoria para planejarmos procedimentos de auditoria apropriados às circunstancias, mas não com o objetivo de expressarmos opinião sobre a eficácia dos controles internos do Clube.
 
-proveniente de erro, já que a fraude pode envolver o ato de burlar os controles
-internos, conluio, falsificação, omissão ou representações falsas intencionais.
+- Avaliamos a adequação das políticas contábeis utilizadas e a razoabilidade das estimativas contábeis e respectivas divulgações feitas pela administração.
 
-e Obtemos entendimento dos controles internos relevantes para a auditoria para
-planejarmos procedimentos de auditoria apropriados às circunstancias, mas não com
-o objetivo de expressarmos opinião sobre a eficácia dos controles internos do Clube.
+- Concluímos sobre a adequação do uso, pela administração, da base contábil de continuidade operacional e, com base nas evidências de auditoria obtidas, se existe incerteza relevante em relação a eventos ou condições que possam levantar dúvida significativa em relação à capacidade de continuidade operacional do Clube. Se concluirmos que existe incerteza relevante, devemos chamar atenção em nosso relatório de auditoria para as respectivas divulgações nas demonstrações contábeis individuais ou incluir modificação em nossa opinião, se as divulgações forem inadequadas. Nossas conclusões estão fundamentadas nas evidências de auditoria obtidas até a data de nosso relatório. Todavia, eventos ou condições futuras podem levar o Clube a não mais se manter em continuidade operacional.
 
-e Avaliamos a adequação das políticas contábeis utilizadas e a razoabilidade das
-estimativas contábeis e respectivas divulgações feitas pela administração.
+- Avaliamos a apresentação geral, a estrutura e o conteúdo das demonstrações contábeis, inclusive as divulgações e se as demonstrações contábeis individuais representam as correspondentes transações e os eventos de maneira compatível com o objetivo de apresentação adequada.
 
-e Concluímos sobre a adequação do uso, pela administração, da base contábil de
-continuidade operacional e, com base nas evidências de auditoria obtidas, se existe
-incerteza relevante em relação a eventos ou condições que possam levantar dúvida
-significativa em relação à capacidade de continuidade operacional do Clube. Se
-concluirmos que existe incerteza relevante, devemos chamar atenção em nosso
-relatório de auditoria para as respectivas divulgações nas demonstrações contábeis
-individuais ou incluir modificação em nossa opinião, se as divulgações forem
-inadequadas. Nossas conclusões estão fundamentadas nas evidências de auditoria
-obtidas até a data de nosso relatório. Todavia, eventos ou condições futuras podem
-levar o Clube a não mais se manter em continuidade operacional.
+- Obtemos evidência de auditoria apropriada e suficiente referente às informações financeiras das entidades ou atividades de negócio do Clube para expressar uma opinião sobre as demonstrações contábeis. Somos responsáveis pela direção, supervisão e desempenho da auditoria da empresa e, consequentemente, pela opinião de auditoria.
 
-e Avaliamos a apresentação geral, a estrutura e o conteúdo das demonstrações
-contábeis, inclusive as divulgações e se as demonstrações contábeis individuais
-representam as correspondentes transações e os eventos de maneira compatível com
-o objetivo de apresentação adequada.
+Comunicamo-nos com os responsáveis pela administração, a respeito, entre outros aspectos, do alcance planejado, da época da auditoria e das constatações significativas de auditoria, inclusive as eventuais deficiências significativas nos controles internos que identificamos durante nossos trabalhos.
 
-e Obtemos evidência de auditoria apropriada e suficiente referente às informações
-financeiras das entidades ou atividades de negócio do Clube para expressar uma
-opinião sobre as demonstrações contábeis. Somos responsáveis pela direção,
-supervisão e desempenho da auditoria da empresa e, consequentemente, pela
-opinião de auditoria.
-
-Comunicamo-nos com os responsáveis pela administração, a respeito, entre outros aspectos,
-do alcance planejado, da época da auditoria e das constatações significativas de auditoria,
-inclusive as eventuais deficiências significativas nos controles internos que identificamos
-durante nossos trabalhos.
-
-Recife — PE, 17 de abril de 2022.
+Recife – PE, 17 de abril de 2022.
 
 ARC e Associados Auditores Independentes S/S
-CRC — PE — 000.355/0 — 2
+CRC – PE – 000.355/O – 2
 
-A N TO N | O R | ( A R D O Digitally signed by ANTONIO RICARDO FERNANDES DA CUNHA:03856682449
-DN: C=BR, O=ICP-Brasil, OU=AC SOLUTI Multipla v5, OU=207817100001083,
+ANTONIO RICARDO FERNANDES DA CUNHA: 03856682449
 
-OU=Videoconferencia, OU=Certificado PF A3, CN=ANTONIO RICARDO FERNANDES DA
+Digitally signed by ANTONIO RICARDO FERNANDES DA CUNHA:03856682449
+DN: C=BR, O=ICP-Brasil, OU=AC SOLUTI Multipla v5, OU=20781710000103, OU=Videoconferencia, OU=Certificado PF A3, CN=ANTONIO RICARDO FERNANDES DA CUNHA:03856682449
+Reason: I am the author of this document
+Location: your signing location here
+Date: 2022.04.26 15:02:30-03'00'
+Foxit PDF Reader Version: 11.0.1
 
-FERNANDES DA CUNHA: ati te im riso coaien
-
-03856682449 Foxit PDF Reader Version: 11.0.1
 Antônio Ricardo Fernandes da Cunha
-Contador —- CRC — PE — 005508/0-3
+Contador – CRC – PE – 005508/O-3
+
+8
 
 --- pág. 9 ---
 
-És JO do rt
-
-Balanços patrimoniais
-
+**Balanços patrimoniais**
 Em 31 de dezembro de 2021 e 2020
-
 (Valores expressos em reais)
 
 Ativo
 
-Circulante
+| | Nota Explicativa | 2021 | 2020 |
+|---|---|---|---|
+| **Circulante** | | | |
+| Caixa e equivalente de caixa | 4 | 581.010 | 853.182 |
+| Créditos a receber | 5 | 10.369.225 | 5.558.582 |
+| Estoques | 6 | 1.584.796 | 580.404 |
+| Adiantamentos | 7 | 535.828 | 3.868.549 |
+| Despesas Antecipadas | 8 | 333.534 | 239.334 |
+| | | 13.404.393 | 11.100.051 |
+| **Não Circulante** | | | |
+| Depósitos Judiciais | 9 | 12.096.202 | 8.565.485 |
+| Créditos a Receber | 5 | 13.000 | 13.000 |
+| Despesas Antecipadas | 8 | 2.006.671 | 2.032.817 |
+| Imobilizado | 10 | 125.837.997 | 128.525.285 |
+| Intangível | 11 | 25.872.496 | 41.764.287 |
+| | | 165.826.365 | 180.900.874 |
+| **Total do Ativo** | | 179.230.758 | 192.000.925 |
 
-Caixa esquivalente de caixa
-Créditos a receber
-Estoques
+As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-Adiantamentos
-
-Despesas Antecipadas
-
-Não Circulante
-Depósitos Judiciais
-Créditos a Receber
-Despesas Antecipadas
-Imobilizado
-
-Intangíel
-
-Total do Ativo
-
-Nota
-Explicativa 2021 2020
-4 581.010 853.182
-5 10.369.225 5.058.582
-6 1.584.796 580.404
-7 535.828 3.868.549
-8 333.534 239.334
-13.404.393 11.100.051
-12.096.202 8.565.485
-5 13.000 13.000
-8 2.006.671 2.032.817
-10 125.837.997 128.525.285
-11 25.8/2.496 41.7/64.287
-165.826.365 180.900.874
-179.230.758 192.000.925
-
-As notas explicativas da administração são parte integrante das demonstrações
-
-contábeis.
+9
 
 --- pág. 10 ---
 
-Balanços patrimoniais
-
-ort
-
-Club do Recife
-
-Em 31 de dezembro de 2021e 2020
-
+**Balanços patrimoniais**
+Em 31 de dezembro de 2021 e 2020
 (Valores expressos em reais)
 
 Passivo e patrimônio líquido
 
-Circulante
-
-Fornecedores
-
-Empréstimos e financiamentos
-Obrigações tributárias
-Obrigações sociais e trabalhistas
-Parcelamentos
-
-Mútuo com partes relacionadas
-Contratos celebrados
-
-Receitas antecipadas
-
-Não arculante
-
-Fornecedores
-
-Mútuo com partes relacionadas
-Parcelamentos
-
-Provisão para contingências
-
-Contratos celebrados
-
-Patrimônio líquido
-Patrimônio social
-Déficit Acumulado
-
-Nota
-Explicativa 2021 2020
-12 22.518.498 35.180.033
-13 515.120 490.733
-14 98.953.854 63.556.330
-15 38.025.082 38.463.719
-16 6.752.515 3.382.635
-17 1138.427 3.821.174
-18 6.870.178 8.608.495
-19 9.275.712 8.519.680
-184.049.387 162.022.799
-12 676.546 5.628.182
-17 1.217.906 1217.906
-16 25.366.177 17.487.882
-20 46.171.965 13.587.197
-18 567.778 591.144
-74.000.373 38.512.311
-21
-149.469.513 149.1469.513
-(228.288.514) (158.003.698)
-(78.819.002) (8.534.185)
-179.230.758 192.000.925
-
-Total do passivo e do patrimônio líquido
+| | Nota Explicativa | 2021 | 2020 |
+|---|---|---|---|
+| **Circulante** | | | |
+| Fornecedores | 12 | 22.518.498 | 35.180.033 |
+| Empréstimos e financiamentos | 13 | 515.120 | 490.733 |
+| Obrigações tributárias | 14 | 98.953.854 | 63.556.330 |
+| Obrigações sociais e trabalhistas | 15 | 38.025.082 | 38.463.719 |
+| Parcelamentos | 16 | 6.752.515 | 3.382.635 |
+| Mútuo com partes relacionadas | 17 | 1.138.427 | 3.821.174 |
+| Contratos celebrados | 18 | 6.870.178 | 8.608.495 |
+| Receitas antecipadas | 19 | 9.275.712 | 8.519.680 |
+| | | 184.049.387 | 162.022.799 |
+| **Não circulante** | | | |
+| Fornecedores | 12 | 676.546 | 5.628.182 |
+| Mútuo com partes relacionadas | 17 | 1.217.906 | 1.217.906 |
+| Parcelamentos | 16 | 25.366.177 | 17.487.882 |
+| Provisão para contingências | 20 | 46.171.965 | 13.587.197 |
+| Contratos celebrados | 18 | 567.778 | 591.144 |
+| | | 74.000.373 | 38.512.311 |
+| **Patrimônio líquido** | 21 | | |
+| Patrimônio social | | 149.469.513 | 149.469.513 |
+| Déficit Acumulado | | (228.288.514) | (158.003.698) |
+| | | (78.819.002) | (8.534.185) |
+| **Total do passivo e do patrimônio líquido** | | 179.230.758 | 192.000.925 |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
+10
 
 --- pág. 11 ---
 
-Demonstração do resultado
-
-ort
-
-Club do Recife
-
+**Demonstração do resultado**
 Em 31 de dezembro de 2021 e 2020
-
 (Valores expressos em reais)
 
-Receita operacional líquida
-(9 Custo das atividades
-
-Superávit bruto
-
-Despesasoperacionais
-Administrativas
-
-Tributárias
-
-Provisão para contingências
-
-Depreciação e amortização
-
-Resultado Financeiro
-Receitas financeiras
-Despesas financeiras
-
-Resultado financeiro líquido
-
-Déficit do exercício
+| | Nota Explicativa | 2021 | 2020 |
+|---|---|---|---|
+| Receita operacional líquida | 22 | 83.672.499 | 51.374.633 |
+| (-) Custo das atividades | 23 | (65.164.658) | (39.775.414) |
+| **Superávit bruto** | | 18.507.841 | 11.599.219 |
+| **Despesas operacionais** | | | |
+| Administrativas | 24 | (10.467.090) | (7.204.892) |
+| Tributárias | 25 | (1.285.722) | (362.592) |
+| Provisão para contingências | 26 | (29.661.049) | - |
+| Depreciação e amortização | 27 | (5.590.610) | (2.823.366) |
+| | | (47.004.471) | (10.390.850) |
+| **Resultado Financeiro** | | | |
+| Receitas financeiras | 28 | 391.541 | 230.377 |
+| Despesas financeiras | 29 | (42.179.727) | (4.025.384) |
+| Resultado financeiro líquido | | (41.788.186) | (3.795.007) |
+| **Déficit do exercício** | | (70.284.816) | (2.586.638) |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-Nota
-Explicativa 2021 2020
-
-22 83.672.499 51.374.633
-23 (65.164.658) (39.775.414)
-18.507.841 11.599.219
-
-24 (10.467.090) (7.204.892)
-25 (1.285.722) (362.592)
-26 (29.661.049) -
-27 (5.590.610) (2.823.366)
-(47.004.471) (10.390.850)
-
-28 391541 230.377
-29 (42.179.727) (4.025.384)
-(41788.186) (3.795.007)
-
-(70.284.816) (2.586.638)
-
+11
 
 --- pág. 12 ---
 
@@ -535,155 +426,74 @@ As notas explicativas da administração são parte integrante das demonstraçõ
 
 --- pág. 13 ---
 
-ort
-
-Club do Recife
-
-Demonstrações das mutações do patrimônio líquido
-
+**Demonstrações das mutações do patrimônio líquido**
 Em 31 de dezembro de 2021 e 2020
-
 (Valores expressos em reais)
 
-Saldo em 31 de dezembro de 2019
-
-Ajustes de exercícios anteriores
-
-Déficit do exercício
-
-Saldo em 31 de dezembro de 2020
-
-Déficit do exercício
-
-Saldo em 31 de dezembro de 2021
-
-Patrimônio Déficits
-Social Acumulados Total
-
-149.169.513 (155.437.060) (5.967.547)
-20.000 20.000
-
-(2.586.638) (2.586.638)
-
-149.169.513 (158.003.698) (8.534.185)
-(70.284.816) (70.284.816)
-149.469.513 (228.288.514 ) (78.819.002 )
+| | Patrimônio Social | Déficits Acumulados | Total |
+|---|---|---|---|
+| Saldo em 31 de dezembro de 2019 | 149.469.513 | (155.437.060) | (5.967.547) |
+| Ajustes de exercícios anteriores | - | 20.000 | 20.000 |
+| Déficit do exercício | - | (2.586.638) | (2.586.638) |
+| Saldo em 31 de dezembro de 2020 | 149.469.513 | (158.003.698) | (8.534.185) |
+| Déficit do exercício | - | (70.284.816) | (70.284.816) |
+| Saldo em 31 de dezembro de 2021 | 149.469.513 | (228.288.514 ) | (78.819.002 ) |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
+13
+
 --- pág. 14 ---
 
-XAXx
-E) sport
-
-Demonstrações dos fluxos de caixa
+**Demonstrações dos fluxos de caixa**
 Em 31 de dezembro de 2021 e 2020
-
 (Valores expressos em reais)
 
-Fluxos de caixa das atividades operacionais
-
-Déficit do Exercício
-
-Ajustes para conciliar o resultado às disponibilidades geradas pelas
-atividades operacionais:
-
-Depreciação e amortização
-
-Provisão para crédito de liquidação duvidosa
-
-Provisão para contingência
-
-Baixa de contratos de atletas
-
-Baixa de amortização de intangível / direitos contratuais alienados
-
-Ajustes de exercícios anteriores
-
-Variações nos ativos e passivos
-
-(Aumento) Diminuição dos ativos:
-Contas a receber e demais recebíveis
-Estoques
-
-Adiantamentos concedidos
-Depósitos judiciais
-
-Despesas do exercício seguinte
-Aumento (Diminuição) dos passivos:
-Fornecedores
-
-Obrigações tributárias
-
-Obrigações sociais
-
-Parcelamentos
-
-Contratos celebrados
-
-Receitas antecipadas
-
-Provisão para contingências
-
-Caixa líquido oriundo das atividades operacionais
-
-Fluxos de caixa das atividades de investimentos
-
-Aquisição do Imobilizado
-Aquisição do Intangível
-Caixa líquido (usado nas) atividades de investimentos
-
-Fluxos de caixa das atividades de financiamentos
-
-Amortizações de financiamentos
-Captação de empréstimos com partes relacionadas
-Amortização de empréstimos com partes relacionadas
-
-Caixa líquido oriundos das (usado nas) atividades de financiamentos
-
-Aumento (redução) líquido no saldo de caixa e equivalentes de caixa
-
-Caixa e equivalentes de caixa no final do exercício
-
-Caixa e equivalentes de caixa no início do exercício
-
-Aumento (redução) líquido no saldo de caixa e equivalentes de caixa
-
-2021 2020
-(70.284.816) (2.586.638)
-5.590.610 2.823.366
-2.102.566 -
-29.661.049 -
-27286940 -
-(8.015.990) 20.000
-- (20.000)
-(13.659.642) 236.728
-(3130.682) (3.685.249)
-(1.004.392) -
-(449.805) (1.159.154)
-(3.530.717) (4.484.807)
-(68.055) 213188)
-(16.169.499) 1122.768
-35.397.524 6.809.567
-(438.637) 6.044.016
-11.248.175 (325.870)
-(1.761.683) (7.947.533)
-756.032 5.979.796
-(2.884.831) -
-4.303.789 2.377.074
-- (1.808)
-(6282481) (1.303.887)
-(6.282.481) (1.305.695)
-24.387 15.442
-8684225 -
-(7.002.093) (703.868)
-1.706.520 (688.426)
-(272.172) 382.953
-581010 853.182
-853.182 470.229
-(272.172) 382.953
+| | 2021 | 2020 |
+|---|---|---|
+| **Fluxos de caixa das atividades operacionais** | | |
+| Déficit do Exercício | (70.284.816) | (2.586.638) |
+| Ajustes para conciliar o resultado às disponibilidades geradas pelas atividades operacionais: | | |
+| Depreciação e amortização | 5.590.610 | 2.823.366 |
+| Provisão para crédito de liquidação duvidosa | 2.102.566 | - |
+| Provisão para contingência | 29.661.049 | - |
+| Baixa de contratos de atletas | 27.286.940 | - |
+| Baixa de amortização de intangível / direitos contratuais alienados | (8.015.990) | 20.000 |
+| Ajustes de exercícios anteriores | - | (20.000) |
+| | (13.659.642) | 236.728 |
+| **Variações nos ativos e passivos** | | |
+| (Aumento) Diminuição dos ativos: | | |
+| Contas a receber e demais recebíveis | (3.130.682) | (3.685.249) |
+| Estoques | (1.004.392) | - |
+| Adiantamentos concedidos | (449.805) | (1.159.154) |
+| Depósitos judiciais | (3.530.717) | (4.484.807) |
+| Despesas do exercício seguinte | (68.055) | (213.188) |
+| Aumento (Diminuição) dos passivos: | | |
+| Fornecedores | (16.169.499) | 1.122.768 |
+| Obrigações tributárias | 35.397.524 | 6.809.567 |
+| Obrigações sociais | (438.637) | 6.044.016 |
+| Parcelamentos | 11.248.175 | (325.870) |
+| Contratos celebrados | (1.761.683) | (7.947.533) |
+| Receitas antecipadas | 756.032 | 5.979.796 |
+| Provisão para contingências | (2.884.831) | - |
+| Caixa líquido oriundo das atividades operacionais | 4.303.789 | 2.377.074 |
+| **Fluxos de caixa das atividades de investimentos** | | |
+| Aquisição do Imobilizado | - | (1.808) |
+| Aquisição do Intangível | (6.282.481) | (1.303.887) |
+| Caixa líquido (usado nas) atividades de investimentos | (6.282.481) | (1.305.695) |
+| **Fluxos de caixa das atividades de financiamentos** | | |
+| Amortizações de financiamentos | 24.387 | 15.442 |
+| Captação de empréstimos com partes relacionadas | 8.684.225 | - |
+| Amortização de empréstimos com partes relacionadas | (7.002.093) | (703.868) |
+| Caixa líquido oriundos das (usado nas) atividades de financiamentos | 1.706.520 | (688.426) |
+| Aumento (redução) líquido no saldo de caixa e equivalentes de caixa | (272.172) | 382.953 |
+| Caixa e equivalentes de caixa no final do exercício | 581.010 | 853.182 |
+| Caixa e equivalentes de caixa no início do exercício | 853.182 | 470.229 |
+| Aumento (redução) líquido no saldo de caixa e equivalentes de caixa | (272.172) | 382.953 |
 
 As notas explicativas da Administração são parte integrante das demonstrações contábeis.
+
+14
 
 --- pág. 15 ---
 
@@ -1105,260 +915,242 @@ que serão utilizados pelas equipes
 
 --- pág. 22 ---
 
-Club do Recife
-
-É sport Ú
-
-Notas explicativasda Administração à demonstrações contábeis
+**Notas explicativas da Administração às demonstrações contábeis**
 Em 31 de dezembro de 2021 e 2020
-(Valores expressos em re ais)
+(Valores expressos em reais)
 
-8. Despesas antecipadas
+**8. Despesas antecipadas**
 
-2021 2020
-Aluguel do centro de treinamento e taxas de ocupação 2.340.205 2.272.151
-Circulante 333.534 239.334
-Não Circulante 2.006.671 2.032.817
-2.340.205 2.272.151
+| | 2021 | 2020 |
+|---|---|---|
+| Aluguel do centro de treinamento e taxas de ocupação | 2.340.205 | 2.272.151 |
+| | | |
+| Circulante | 333.534 | 239.334 |
+| Não Circulante | 2.006.671 | 2.032.817 |
+| | 2.340.205 | 2.272.151 |
 
-O valor se refere ao contrato de aluguel do Centro de Treinamento do clube, pago integralmente no
-exercício de 2008, com duração de 90 anos e taxa de ocupação a apropriar.
+O valor se refere ao contrato de aluguel do Centro de Treinamento do clube, pago integralmente no exercício de 2008, com duração de 90 anos e taxa de ocupação a apropriar.
 
-9 Depósitos judiciais
+**9 Depósitos judiciais**
 
-2.021 2.020
-Acordos trabalhista) 9.081.502 5.693.097
-Depósito judiciário 966.324 824.012
-Penhores jurídicos 2.048.376 2.048.376
-12.096.202 8.565.485
+| | 2.021 | 2.020 |
+|---|---|---|
+| Acordos trabalhistas (a) | 9.081.502 | 5.693.097 |
+| Depósito judiciário | 966.324 | 824.012 |
+| Penhores jurídicos | 2.048.376 | 2.048.376 |
+| | 12.096.202 | 8.565.485 |
 
-(a) Conta mantida e contrtola pelo TRT 6º. em conjunto com o Clube. Sua movimentação de ingressos
-se dá através da retenção de recursos recebidos pelo Clube por receitas de patrocícios, rendas etc.
+(a) Conta mantida e controlada pelo TRT 6ª. em conjunto com o Clube. Sua movimentação de ingressos se dá através da retenção de recursos recebidos pelo Clube por receitas de patrocínios, rendas etc.
 
-10. Imobilizado
+**10. Imobilizado**
 
-2021 2020
+| | Taxas anuais de Depreciação % | Custo (2021) | Depreciação Acumulada (2021) | Valor Líquido (2021) | Valor Líquido (2020) |
+|---|---|---|---|---|---|
+| Terrenos | - | 44.550.000 | - | 44.550.000 | 44.550.000 |
+| Estádio | 2,05 | 50.950.075 | (21.324.032) | 29.626.043 | 30.667.171 |
+| Rede Social | 2,00 | 27.800.000 | (9.927.200) | 17.872.800 | 18.428.801 |
+| Ginásio | 2,34 | 16.950.620 | (6.683.837) | 10.266.783 | 10.456.242 |
+| Parque aquático | 2,00 | 24.509.600 | (9.231.356) | 15.278.244 | 15.768.389 |
+| Máquinas/equipamentos/ veículos e outros | 10 / 20 | 3.381.229 | (2.814.123) | 567.106 | 977.661 |
+| Benfeitorias em prédio de terceiros | - | 7.677.021 | - | 7.677.021 | 7.677.021 |
+| | | 175.818.545 | (49.980.548) | 125.837.997 | 128.525.285 |
 
-Taxasanuais de Depreciação
-
-Depreciação % Custo Acumulada Valor Líquido Valor Líquido
-Terrenos - 4,4.550.000 - 44,.550.000 4,4.550.000
-Estádio 2,05 50.950.075 (21324.032) 29.626.043 30.667.171
-Rede Social 2,00 27.800.000 (9.927.200) 17.872.800 18.428.801
-Ginásio 2,34 16.950.620 (6.683.837) 10.266.783 10.456.242
-Parque aquático 2,00 24.509.600 (9.231.356) 15.278.244 15.768.389
-Máquinas/equipamentos/ veículos e 10 / 20 3.381.229 (2.814.123) 567.106 977.661
-Benfeitorias em prédio de terceiros - 7.677.021 - 7.677.021 7.677.021
-
-175.818.545 (49.980.548) 125.837.997 128.525.285
-
+22
 
 --- pág. 23 ---
 
-XAXx
-E) sport
-
-Notas explicativasda Administração à demonstrações contábeis
-
+**Notas explicativas da Administração às demonstrações contábeis**
 Em 31 de dezembro de 2021 e 2020
+(Valores expressos em reais)
 
-(Valores expressos em re ais)
+**11. Intangível**
 
-11. Intángivel
-Saldo em Saldo em
-31/12/2020 Adições Baixas 31/12/2021
-Custo
-Formação de atletas 20.733.241 1.952.808 (1.115.033) 21.571.016
-Atletas formados 1.118.970 921.745 (1.113.094) 927.621
-Direitos contratuais de atletas 25.856.499 3.407.928 (25.058.812) 4.205.614
-Software 729.897 - - 729.897
-48.438.607 6.282.481 (27.286.940) 27434148
-Amortização
-Direitos contratuais de atletas (6.538.152) (2.767.153) 8.015.990 (1.289.315)
-Software (136.169) (136.169) - (272.337)
-(6.674.320) (2.903.322) 8.015.990 (1.561.652)
-41.:/64.287 3.379.159 (19.270.950) 25.872.1496
-12. Fornecedores
-2021 2020
-Fornecedores emateriais 702.254 1.024.582
-Fornecedores de serviços 22.492.790 39.783.63 3
-23.195.044 40.808.215
-Circulante 22.518.498 35.180.033
-Não Circulante 676.546 5.628.182
-23.195.044 40.808.215
-13. Empréstimos e financiamentos
+| | Saldo em 31/12/2020 | Adições | Baixas | Saldo em 31/12/2021 |
+|---|---|---|---|---|
+| **Custo** | | | | |
+| Formação de atletas | 20.733.241 | 1.952.808 | (1.115.033) | 21.571.016 |
+| Atletas formados | 1.118.970 | 921.745 | (1.113.094) | 927.621 |
+| Direitos contratuais de atletas | 25.856.499 | 3.407.928 | (25.058.812) | 4.205.614 |
+| Software | 729.897 | - | - | 729.897 |
+| | 48.438.607 | 6.282.481 | (27.286.940) | 27.434.148 |
+| **Amortização** | | | | |
+| Direitos contratuais de atletas | (6.538.152) | (2.767.153) | 8.015.990 | (1.289.315) |
+| Software | (136.169) | (136.169) | - | (272.337) |
+| | (6.674.320) | (2.903.322) | 8.015.990 | (1.561.652) |
+| | 41.764.287 | 3.379.159 | (19.270.950) | 25.872.496 |
+
+**12. Fornecedores**
+
+| | 2021 | 2020 |
+|---|---|---|
+| Fornecedores e materiais | 702.254 | 1.024.582 |
+| Fornecedores de serviços | 22.492.790 | 39.783.633 |
+| | 23.195.044 | 40.808.215 |
+| | | |
+| Circulante | 22.518.498 | 35.180.033 |
+| Não Circulante | 676.546 | 5.628.182 |
+| | 23.195.044 | 40.808.215 |
+
+**13. Empréstimos e financiamentos**
+
 Todos na modalidade de capital de giro, se apresentam como a seguir:
-Instituição Vencimento Taxa (%) 2021 2020
-Itaú 03/12/2018 23,14% a.a 4.459 4.459
-Lecca Crédito Financiamento - 19,56% a.a 1889 1889
-Caixa Econômica Federal 31/12/2017 12,68% a.a 213.420 213.420
-P.S. Factoring - - 295.352 270.965
-Total 515.120 490.733
 
+| Instituição | Vencimento | Taxa (%) | 2021 | 2020 |
+|---|---|---|---|---|
+| Itaú | 03/12/2018 | 23,14% a.a | 4.459 | 4.459 |
+| Lecca Crédito Financiamento | - | 19,56% a.a | 1.889 | 1.889 |
+| Caixa Econômica Federal | 31/12/2017 | 12,68% a.a | 213.420 | 213.420 |
+| P.S. Factoring | - | - | 295.352 | 270.965 |
+| Total | | | 515.120 | 490.733 |
+
+23
 
 --- pág. 24 ---
 
-XAXx
-GY sport
-
-Notas explicativasda Administração às demonstrações contábeis
+**Notas explicativas da Administração às demonstrações contábeis**
 Em 31 de dezembro de 2021 e 2020
-(Valores expressos em re ais)
+(Valores expressos em reais)
 
-14. Obrigações tributárias
+**14. Obrigações tributárias**
 
-Impostos 2021 2020
-IRRF 56.832.179 26187.231
-ISS fonte 836.486 776171
-PIS/COFINS/CSLL Retenções 10.808.539 1.579.471
-Débitos previdenciárioBGFEN 18.409.728 -
-PIS s/Folha de Pagamento/Contribuição sindical 1.329.397 1.007.133
-Auto Infração 879.748 879.748
-Taxa de ocupação de imóveis 2.459.571 574.401
-SPU 5.303.939 4.894.209
-IPTU 2.094.268 362.954
-98.953.854 36.261.318
-Parcelamentos cancelados
-Parcelamento Lei nº11.941/2009 - 708.602
-Parcelamento Lei nº 12.996/2014 - 16.830.870
-Parcelamento Lei nº 11.941/2009 - 9.186.414
-Parcelamento SPU - 167.550
-Parcelamento CIM - 401.576
-- 27295.012
-98.953.854 63.556.330
+| Impostos | 2021 | 2020 |
+|---|---|---|
+| IRRF | 56.832.179 | 26.187.231 |
+| ISS fonte | 836.486 | 776.171 |
+| PIS/COFINS/CSLL Retenções | 10.808.539 | 1.579.471 |
+| Débitos previdenciários PGFN | 18.409.728 | - |
+| PIS s/Folha de Pagamento/Contribuição sindical | 1.329.397 | 1.007.133 |
+| Auto Infração | 879.748 | 879.748 |
+| Taxa de ocupação de imóveis | 2.459.571 | 574.401 |
+| SPU | 5.303.939 | 4.894.209 |
+| IPTU | 2.094.268 | 362.954 |
+| | 98.953.854 | 36.261.318 |
+| | | |
+| Parcelamentos cancelados | | |
+| Parcelamento Lei nº11.941/2009 | - | 708.602 |
+| Parcelamento Lei nº 12.996/2014 | - | 16.830.870 |
+| Parcelamento Lei nº 11.941/2009 | - | 9.186.414 |
+| Parcelamento SPU | - | 167.550 |
+| Parcelamento CIM | - | 401.576 |
+| | - | 27.295.012 |
+| | 98.953.854 | 63.556.330 |
 
-Os saldos de obrigações tributárias contemplam valores relativos a retenções na fonte de prestadores
+Os saldos de obrigações tributárias contemplam valores relativos a retenções na fonte de prestadores de serviços, atletas e funcionários, do exercício de 2021 e que não haviam sido recolhidos até a data da emissão deste relatório.
 
-de serviços, atletas e funcionários, do exercício de 2021 e que não haviam sido recolhidos até a data
+Devido a inadimplência no pagamento mensal dos parcelamentos, os parcelamentos foram considerados rescindidos e incorporados aos débitos dos impostos correntes.
 
-da emissão deste relatório.
+Durante o exercício social de 2021 o Clube procedeu o registro dos débitos inscritos em dívida ativa junto a Procuradoria Geral da Fazenda Nacional – PGFN.
 
-Devido a inadimplência no pagamento mensal dos parcelamentos
+**15. Obrigações sociais e trabalhistas**
 
-considerados rescindidos e incorporados aos débitos dos impostos correntes.
+| | 2021 | 2020 |
+|---|---|---|
+| Obrigações com pessoal | 24.862.553 | 24.569.085 |
+| INSS a recolher | 5.415.863 | 7.755.869 |
+| FGTS a receber | 7.746.666 | 6.138.765 |
+| | 38.025.082 | 38.463.719 |
 
-, Os parcelamentos foram
-
-Durante o exercício social de 2021 o Clube procedeu o registro dos débitos inscritos em dívida ativa
-
-junto a Procuradoria Geral da Fazenda Nacional — PGFN.
-
-15. Obrigações sociais e trabalhistas
-
-2021
-Obrigações com pessoal 24.862.553 24.569.085
-INSS a recolher 5.415.863 7.755.869
-FGTS a receber 7.746.666 6.138.765
-38.025.082 38.463.719
-
+24
 
 --- pág. 25 ---
 
-Club do Recife
-
-É) sport Ú
-
-Notas explicativasda Administração às demonstrações contábeis
+**Notas explicativas da Administração às demonstrações contábeis**
 Em 31 de dezembro de 2021 e 2020
+(Valores expressos em reais)
 
-(Valores expressos em re ais)
+Estão incluídos nos valores a pagar referente os encargos trabalhistas, incluindo salários em atraso, impostos os retidos na fonte da folha de pagamento dos colaboradores e ainda não recolhidos.
 
-Estão incluídos nos valores a pagar referente os encargos trabalhistas, incluindo salários em atraso,
-impostos os retidos na fonte da folha de pagamento dos colaboradores e ainda não recolhidos.
+**16. Parcelamentos**
 
-16. Parcelamentos
+| | 2021 | 2020 |
+|---|---|---|
+| FGTS – Timemania(b) | 3.303.174 | 3.195.436 |
+| Banco Central do Brasil (a) | 8.679.136 | 5.479.205 |
+| Timemania(b) | 20.136.182 | 12.195.876 |
+| | 32.118.692 | 20.870.517 |
+| | | |
+| Circulante | 6.752.515 | 3.382.635 |
+| Não Circulante | 25.366.177 | 17.487.882 |
+| | 32.118.692 | 20.870.517 |
 
-2021 2020
-FGTS-Timemania(b) 3.303.174 3.195.436
-Banco Central do Bradih) 8.679.136 5.479.205
-Timemania(b) 20.136.182 12.195.876
-32.118.692 20.870.517
-Circulante 6.752.515 3.382.635
-Não Circulante 25.366.177 17.487.882
-32.118.692 20.870.517
+(a) valores provenientes registro de auto de infração de processo movido pelo Banco Central do Brasil referente a transações internacionais realizadas na década de 90 pelo Clube.
 
-(a) valores provenientes registro de auto de infração de processo movido pelo Banco Central do Brasil
-referente a tra nsações internacionais realizadas na década de 90 pelo Clube.
+(b) refere-se a valores do Timemania inscritos em dívida ativa junto a Procuradoria Geral da Fazenda Nacional – PGFN.
 
-(b) refere -se a valores do Timemania inscritos em dívida ativa junto a Procuradoria Geral da Fazenda
-Nacional — PGFN.
+**17. Mútuo com partes relacionadas**
 
-17. Mútuo com partes relacionadas
+| CREDOR | VENCTo. | 2021 | 2020 |
+|---|---|---|---|
+| Martorelli Advogados | Ñ.INFORM. | 30.300 | 30.000 |
+| Gustavo José Moura Dubeux | 31/12/2017 | 43.897 | 30.265 |
+| José Arnaldo Barros | 31/12/2018 | 28.020 | 25.018 |
+| IBGM Inst. Bras. de gestão em Marketing Ltda. (a) | 31/12/2018 | - | 3.048.768 |
+| Laercio Guerra de Melo Junior (a) | 31/12/2018 | - | 467.349 |
+| Milton Caldas Bivar | 31/12/2018 | - | 19.961 |
+| Luciano Caldas Bivar | 31/12/2018 | 1.217.906 | 1.217.906 |
+| Brasitrans Ltda | Ñ.INFORM. | 14.830 | 66.146 |
+| Futebolcard | Ñ.INFORM. | 24.051 | 133.665 |
+| Federação Pernambucana de Futebol | Ñ.INFORM. | 282.831 | - |
+| Gerson Aquino Lucena Junior | Ñ.INFORM. | 10.000 | - |
+| João Humberto F. Martorelli | Ñ.INFORM. | 10.000 | - |
+| José Acécio Fernandes Vieira Filho | Ñ.INFORM. | 10.000 | - |
+| Júlio Machado Costa Neto | Ñ.INFORM. | 10.000 | - |
+| Renato S. Ramos da Silva | Ñ.INFORM. | 10.000 | - |
+| Rocine Milet Moraes Filho | Ñ.INFORM. | 10.000 | - |
+| Rogerio Carlos Cunha da Silva | Ñ.INFORM. | 10.000 | - |
+| Theobaldo Lopes de Melo | Ñ.INFORM. | 10.000 | - |
+| Yuri Romão | Ñ.INFORM. | 634.497 | - |
+| TOTAL | | 2.356.334 | 5.039.079 |
 
-CREDOR VENCTO. 2021 2020
-Martorelli Advogados N.INFORM. 30.300 30.00€
-Gustavo JosdouraDubeux 31/12/2017 43.897 30.265
-José Arnaldodiros 31/12/2018 28.020 25.018
-IBGMInst Bras de gestão em Marketing Ltda) 31/12/2018 - 3.048.768
-Laercio Guerra de Melaor (a) 31/12/2018 - 14,67.349
-Milton Caldas Bar 31/12/2018 - 19.961
-Luciano Caldas War 31/12/2018 1.217.906 1217906
-Brasitranstida N.INFORM. 14.830 66.146
-Futebolcard N.INFORM. 24.051 133.665
-Federaçã&ernambucana deufebol N.INFORM. 282.831 -
-GersonAguino LucenaJunior N.INFORM. 10.00C -
-João Humberto. Martorelli N.INFORM. 10.00C -
-José AéioFernandeMieiraFilho N.INFORM. 10.00C -
-Júio MachadcOostaNeto N.INFORM. 10.00C -
-Renato S. Ramos ddvã N.INFORM. 10.00C -
-Rocine Mlet MoraesFilho N.INFORM. 10.00C -
-RogerioCarlosOunha dasSilva N.INFORM. 10.00C -
-Theobalddopes deMelo N.INFORM. 10.00C -
-YuriRomão N.INFORM. 634.497 -
-
-TOTAL 2.356.334 5.039.079
-
+25
 
 --- pág. 26 ---
 
-É sport y
-
-Notas explicativasda Administração à demonstrações contábeis
+**Notas explicativas da Administração às demonstrações contábeis**
 Em 31 de dezembro de 2021 e 2020
-(Valores expressos em re ais)
+(Valores expressos em reais)
 
-Circulante 1138.427 3.821.173
-NãoGrculante 1.217.906 1.217.906
-2.356.334 5.039.079
+| | 2021 | 2020 |
+|---|---|---|
+| Circulante | 1.138.427 | 3.821.173 |
+| Não Circulante | 1.217.906 | 1.217.906 |
+| | 2.356.334 | 5.039.079 |
 
-(a) Valores remanejados para grupamento de Contingências Cíveis, em função de abertura de processo
-judicial contra o Clube no exercício de 2021.
+(a) Valores remanejados para grupamento de Contingências Cíveis, em função de abertura de processo judicial contra o Clube no exercício de 2021.
 
-18. Contratos celebrados
+**18. Contratos celebrados**
 
-2021 2020
-TV Globda) 6.837.076 8.587.075
-Alugueis e Arrendamento6b) 600.880 612.562
-7437956 9.199.637
-Circulante 6.870.178 8.608.493
-Não circulante 567.778 591.144
-7437956 9.199.637
+| | 2021 | 2020 |
+|---|---|---|
+| TV Globo(a) | 6.837.076 | 8.587.075 |
+| Alugueis e Arrendamento(b) | 600.880 | 612.562 |
+| | 7.437.956 | 9.199.637 |
+| | | |
+| Circulante | 6.870.178 | 8.608.493 |
+| Não circulante | 567.778 | 591.144 |
+| | 7.437.956 | 9.199.637 |
 
-(a) Valores mantidos junto a TV Globo referentes à Cessão de Direitos de Captação, Fixação, Edição,
-Exibição e Transmissão em Televisão Aberta, Telefonia Móvel e Internet dos sons e imagens do
-Campeonato Brasileiro de Clubes da Série A -— Temporadas de 2021 e 2022. Tais valores serão
+(a) Valores mantidos junto a TV Globo referentes à Cessão de Direitos de Captação, Fixação, Edição, Exibição e Transmissão em Televisão Aberta, Telefonia Móvel e Internet dos sons e imagens do Campeonato Brasileiro de Clubes da Série A – Temporadas de 2021 e 2022. Tais valores serão apropriados ao resultado de cada exercício, conforme prazo de realização do contrato;
 
-apropriados ao resultado de cada exercício, conforme prazo de realização do contrato;
+(b) Contrato firmado com a empresa "APV" pelo reconhecimento de aluguel de espaço para instalação de antena. A receita vem sendo apropriada mensalmente, conforme contrato, cujo prazo é de 30 anos.
 
-(b) Contrato firmado com a empresa “APV” pelo reconhecimento de aluguel de espaço para instalação
-de antena. A receita vem sendo apropriada mensalmente, conforme contrato, cujo prazo é de 30 anos.
+**19. Receitas antecipadas**
 
-19. Receitas antecipadas
+| | 2021 | 2020 |
+|---|---|---|
+| Copa do Brasil | - | 990.000 |
+| Liga do Nordeste | 220.000 | - |
+| Confederação Brasileira de Futebol – CBF | 133.523 | 309.000 |
+| Federação Pernambucana de Futebol | 1.568.554 | 1.568.554 |
+| Mensalidades | 31.464 | 31.464 |
+| 12ª. Vara – TRT | 42.520 | 42.520 |
+| Clube Internacional | 150.000 | 150.000 |
+| Futebolcard | - | 291.667 |
+| Dass Nordeste | 13.151 | 13.151 |
+| Rendas antecipadas – Patrocínios | 7.116.500 | 5.123.321 |
+| | 9.275.712 | 8.519.680 |
 
-2021 2020
-Copa do Brasil - 990.00€C
-Liga do Nordeste 220.000 -
-Confederação Brasileira de FuteboCBF 133.523 309.00C
-FederaçãoPernambucana de Futebol 1568.554 1568.554
-Mensalidades 31464 31.464
-12º. Vara- TRT 42.520 42.520
-Clube Internacional 150.000 150.000
-Futebolcard - 291.667
-Dass Nordeste 13.151 13.151
-Rendas antecipadas Patrocínios 7.116.500 5.123.321
-
-9.275.712 8.519.680
-
+26
 
 --- pág. 27 ---
 
@@ -1415,56 +1207,52 @@ objetos sociais, sendo incorporados ao patrimônio social.
 
 --- pág. 28 ---
 
-XAXx
-GY sport
-
-Notas explicativasda Administração às demonstrações contábeis
+**Notas explicativas da Administração às demonstrações contábeis**
 Em 31 de dezembro de 2021 e 2020
+(Valores expressos em reais)
 
-(Valores expressos em re ais)
+**22. Receita operacional líquida**
 
-22. Receita operacional líquida
+| | 2021 | 2020 |
+|---|---|---|
+| **Receita bruta** | | |
+| Futebol | 17.088.133 | 4.282.081 |
+| Contribuições associativas | 3.244.856 | 4.476.553 |
+| Patrimonial | 510.091 | 1.075.195 |
+| Marketing | 68.968.734 | 40.726.881 |
+| Outras receitas | 4.319.331 | 3.966.672 |
+| | 94.131.145 | 54.527.382 |
+| | | |
+| **Deduções** | | |
+| INSS sobre faturamento(a) | (3.728.534) | (1.388.726) |
+| Sindicatos | (3.472.227) | (1.319.015) |
+| Federações | (375.829) | (105.271) |
+| Outras deduções | (2.882.056) | (339.737) |
+| | (10.458.646) | (3.152.749 ) |
+| | 83.672.499 | 51.374.633 |
 
-2021 2020
-Receita bruta
-Futebol 17.088.133 4.282.081
-Contribuições associativas 3.244.856 4.476.553
-Patrimonial 510.091 1.075.195
-Marketing 68.968734 40.726.881
-Outras receitas 4.319.331 3.966.672
-94131145 54.527.382
-Deduções
-INSS sobre faturamentta) (3.728.534) (1.388.726)
-Sindicatos (3.472.227) (1.319.015)
-Federações (375.829) (105.271)
-Outras deduções (2.882.056 (339.737)
-(10.458.646 (3.152.749)
-83.672.499 51.374.633
+(a) Nos termos da legislação vigente, a contribuição a cargo do Clube, destinada à Seguridade Social ("INSS Patronal"), é substituída por retenção sobre suas receitas (Bilheteria/Jogos, Patrocínios, Licenciamento de Uso de Marcas e Símbolos, Publicidade, Propaganda, Transmissão de Espetáculos Desportivos, Loterias e Televisionamentos), à alíquota de 5%.
 
-(a) Nos termos da legislação vigente, a contribuição a cargo do Clube, destinada à Seguridade Social
+**23. Custo das atividades**
 
-(INSS Patronal”), é substituída por retenção sobre suas receitas (Bilheteria/Jogos, Patrocínios,
+| | 2021 | 2020 |
+|---|---|---|
+| Despesas de pessoal | (49.187.488) | (33.530.526) |
+| Despesas com competição | (9.011.655) | (5.034.693) |
+| Despesas com formação de atletas e direitos contratuais | (6.965.516) | (1.210.195) |
+| | (65.164.658) | (39.775.414) |
 
-Licenciamento de Uso de Marcas e Símbolos, Publicidade, Prop aganda, Transmissão de Espetáculos
+**24. Despesas administrativas**
 
-Desportivos, Loterias e Televisionamentos), à alíquota de 5%.
+| | 2021 | 2020 |
+|---|---|---|
+| Despesas de pessoal | (2.517.025) | (3.295.212) |
+| Serviços de terceiros | (4.152.001) | (3.275.769) |
+| Provisão para devedores duvidosos | (2.102.566) | - |
+| Despesas gerais | (1.695.497) | (633.911) |
+| | (10.467.090) | (7.204.892) |
 
-23. Custo das atividades
-
-2021 2020
-Despesas de pessoal (49.187.488) (33.530.526)
-Despesas com competição (9.011.655) (5.034.693)
-Despesas com formação de atletas e direitos (6965516) (1.210.195)
-contratuais
-(65.164.658) (39.:775.414)
-24. Despesas administrativas
-2021 2020
-Despesas de pessoal (2.517.025) (3.295.212)
-Serviçosde terceiros (4.152.001) (3.275.769)
-Provisão para devedores duvidosos (2.102.566) -
-Despesas gerais (1.695.497) (633.911)
-(10.467.090) (7.204.892)
-
+28
 
 --- pág. 29 ---
 

@@ -538,58 +538,58 @@ Los pasivos por impuestos Diferidos hace relación con la provisión de impuesto
 
 El saldo de las cuentas de impuestos diferidos a 31 de Diciembre es el siguiente:
 
-|  ACTIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO  |
-| --- | --- | --- | --- | --- |
-|  DISPONIBLE | 7.620.057 | 13.475.790 | (5.855.732,82) | (2.049.506,49)  |
-|  DEUDORES | 213.973.489 | 763.564.145 | (549.590.655,44) | (192.356.729,40)  |
-|  DIFERIDOS | 272.953.566 |  | 272.953.565,65 | 95.533.747,98  |
-|  ACTIVOS POR IMP CORRIENTE | 218.126.248 |  | 218.126.247,79 | 76.344.186,73  |
-|  **TOTAL** | **712.673.360** | **777.039.934** | **(64.366.574,82)** | **(22.528.301,19)**  |
+| ACTIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO |
+|---|---|---|---|---|
+| DISPONIBLE | 7.620.057 | 13.475.790 | (5.855.732,82) | (2.049.506,49) |
+| DEUDORES | 213.973.489 | 763.564.145 | (549.590.655,44) | (192.356.729,40) |
+| DIFERIDOS | 272.953.566 | | 272.953.565,65 | 95.533.747,98 |
+| ACTIVOS POR IMP CORRIENTE | 218.126.248 | | 218.126.247,79 | 76.344.186,73 |
+| TOTAL | 712.673.360 | 777.039.934 | (64.366.574,82) | (22.528.301,19) |
 
-|  PASIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO  |
-| --- | --- | --- | --- | --- |
-|  OBLIGACIONES FINANCIERAS | (306.035.485,00) | (248.268.967,00) | (57.766.518,00) | (20.218.281,30)  |
-|  DIVIDENDOS O PARTICIPACIONES D | (1.503.384.581,15) | (1.431.430.106,00) | (71.954.475,15) | (25.184.066,30)  |
-|  OBLIGACIONES LABORALES | (444.723.054,00) | (417.331.976,00) | (27.391.078,00) | (9.586.877,30)  |
-|  PASIVOS ESTIMADOS Y PROVISIONES | (800.479.603,12) | (811.711.603,12) | 11.232.000,00 | 3.931.200,00  |
-|  ANTICIPOS Y AVANCES RECIBIDOS | (351.844.956,87) | (511.744.880,71) | 159.899.923,84 | 55.964.973,34  |
-|  **TOTAL** | **(3.406.467.688,14)** | **(3.420.487.532,83)** | **14.019.853** | **4.906.948**  |
+| PASIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO |
+|---|---|---|---|---|
+| OBLIGACIONES FINANCIERAS | (306.035.485,00) | (248.268.967,00) | (57.766.518,00) | (20.218.281,30) |
+| DIVIDENDOS O PARTICIPACIONES DECRETADOS EN ACCIONE | (1.503.384.581,15) | (1.431.430.106,00) | (71.954.475,15) | (25.184.066,30) |
+| OBLIGACIONES LABORALES | (444.723.054,00) | (417.331.976,00) | (27.391.078,00) | (9.586.877,30) |
+| PASIVOS ESTIMADOS Y PROVISIONES | (800.479.603,12) | (811.711.603,12) | 11.232.000,00 | 3.931.200,00 |
+| ANTICIPOS Y AVANCES RECIBIDOS | (351.844.956,87) | (511.744.880,71) | 159.899.923,84 | 55.964.973,34 |
+| TOTAL | (3.406.467.680,14) | (3.420.487.532,83) | 14.019.853 | 4.906.948 |
 
 Durante la vigencia 2023 se reconoció partidas por impuestos Diferidos Pasivo por Impuesto Diferido sobre la revalorización del activo intangible según la Nic 38 y acta 05 del 31 de enero del 2021 Los activos y pasivos por impuestos diferidos se reconocen por el impuesto a las ganancias que se prevé recuperar o pagar con respecto a la ganancia fiscal de periodos contables futuros como resultado de transacciones o sucesos pasados.
 
-#### NOTA 18. Otros Pasivos
+NOTA 18. Otros Pasivos
 
 Los otros pasivos corresponden anticipos y avances recibidos
 
 Los saldos a 31 de diciembre de esta cuenta se discriminan así:
 
-#### NOTA 19. Provisiones
+NOTA 19. Provisiones
 
-|  CONCEPTO | 2023 | 2022  |
-| --- | --- | --- |
-|  Anticipos y avances recibidos | 326.321.052 | 416.183.346  |
-|  **TOTAL** | **326.321.052** | **416.183.346**  |
+| CONCEPTO | 2023 | 2022 |
+|---|---|---|
+| Anticipos y avances recibidos | 326.321.052 | 416.183.346 |
+| TOTAL | 326.321.052 | 416.183.346 |
 
 Las provisiones corresponden Pasivos estimados y provisiones
 
 Los saldos a 31 de diciembre de esta cuenta se discriminan así:
 
-|  CONCEPTO | 2023 | 2022  |
-| --- | --- | --- |
-|  Pasivos estimados y provisiones | 535.111.007 | 535.111.007  |
-|  **TOTAL** | **535.111.007** | **535.111.007**  |
+| CONCEPTO | 2023 | 2022 |
+|---|---|---|
+| Pasivos estimados y provisiones | 535.111.007 | 535.111.007 |
+| TOTAL | 535.111.007 | 535.111.007 |
 
-#### NOTA 20. Patrimonio
+NOTA 20. Patrimonio
 
-Agrupa el conjunto de las cuentas que representan el valor residual de comparar el activo total menos el pasivo externo, producto de los recursos netos del ente económico que han sido suministrados por la Sociedad, ya sean directamente o como consecuencia del giro ordinario de sus negocios, quedando los siguientes saldos:
+Agrupa el conjunto de las cuentas que representan el valor residual de comparar el activo total menos el pasivo externo, producto de los recursos netos del ente económico que han sido suministrados por la Sociedad , ya sean directamente o como consecuencia del giro ordinario de sus negocios, quedando los siguientes saldos:
 
-|  CONCEPTO | 2023 | 2022  |
-| --- | --- | --- |
-|  Capital social | 7.896.000.000 | 6.889.000.000  |
-|  Reserva legal | 47.401.000 | 47.401.000  |
-|  Ganancia (Pérdida) del Periodo | ($ 710.365.971) | ($ 1.786.139.507)  |
-|  Ganancias (Pérdidas) de Periodos Anteriores | ($ 8.180.703.380) | ($ 6.470.428.092)  |
-|  **TOTAL** | **- 947.668.351** | **- 1.320.166.599**  |
+| CONCEPTO | 2023 | 2022 |
+|---|---|---|
+| Capital social | 7.896.000.000 | 6.889.000.000 |
+| Reserva legal | 47.401.000 | 47.401.000 |
+| Ganancia (Pérdida) del Periodo | ($ 710.365.971) | ($ 1.786.139.507) |
+| Ganancias (Pérdidas) de Periodos Anteriores | ($ 8.180.703.380) | ($ 6.470.428.092) |
+| TOTAL | - 947.668.351 | - 1.320.166.599 |
 
 Página | 16
 
@@ -726,24 +726,21 @@ Página | 19
 
 Además Se realizó re expresión de los activos e instrumentos financieros de conformidad con la relación de derechos y bienes existentes haciendo uso de la políticas contable de la empresa una vez tomando el valor razonable como costo atribuido, analizados los valores que conforman los costos de los bienes estos cumplen requerimiento Niif, la empresa igualmente por costo beneficio no requirió de avalúo pericial ya que se tenía conocimiento de los costos históricos y de su evolución.
 
-JUAN CARLOS TRUJILLO
-
-Presidente
-
-ANGELA SUÁREZ
-
-Contador Público
-
 La gerencia ha observado amenazas que pueden afectar el negocio en marcha tales como dificultades de apalancamiento financiero, organización administrativa, tercerización contable, desaprovechamiento de recursos y seguimiento a la trazabilidad de operaciones contables. En tal sentido la gerencia establece como plan de acción del 2023 continuar con las tareas de depuración de partidas, adquirir recursos humano más comprometido con el manejo administrativo, contable y financiero que permita apalancar y disponer de forma adecuada los recursos de efectivo para el pago oportuno de impuestos, obligaciones de terceros y laborales entre otros.
 
-El concepto de negocio en marcha a corto plazo se encuentra en riesgo, la gerencia debe disponer de acciones que incrementen los recursos financieros de tal forma que no dependa de la capitalización repetitiva de los socios la empresa requiere autosostenibilidad financiera desde el punto de vista de la auto suficiencia.
+El concepto de negocio en marcha a corto plazo se encuentra en riesgo, la gerencia debe disponer de acciones que incrementen los recursos financieros de tal forma que no dependa de la capitalización repetitiva de los socios la empresa requiere autosostenibiidad financiera desde el punto de vista de la auto suficiencia.
 
-La autosuficiencia puede conseguirse a través de personal experto que conozca el mercado, de las escuelas de formación, de la caza de talentos, de programas especiales, de la confianza que la empresa genere de sus proveedores y patrocinadores y de la gestión que pueda hacer la gerencia deportiva en el mercado deportivo. De otra parte, la empresa no puede exponerse a demandas laborales y sanciones económicas por incumplimiento de contratos y obligaciones tributaria ya que el exceso de multas y pagos excesivos de impuestos limitan el capital de trabajo.
+La autosuficiencia puede conseguirse a través de personal experto que conozca el mercado, de las escuelas de formación, de la caza de talentos, de programas especiales, de la confianza que la empresa genere de sus proveedores y patrocinadores y de la gestión que pueda hacer la gerencia deportiva en el mercado deportivo. De otra parte, la empresa no ´puede exponerse a demandas laborales y sanciones económicas por incumplimiento de contratos y obligaciones tributaria ya que el exceso de multas y pagos excesivos de impuestos limitan el capital de trabajo.
+
+JUAN CARLOS TRUJILLO
+Presidente
+
+ANGELA SUAREZ
+Contador Público
 
 Diego Hernan Velasquez Serna
-
 Revisor Fiscal
-
 T.P. 31268-T
 
 Página | 20
+

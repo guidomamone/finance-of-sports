@@ -104,7 +104,37 @@ operaciones. Se observa el avance en la utilización del sistema de administraci
 Gestión) que permite agilizar la registración de partidas.
 
 --- pág. 4 ---
-
+
+**SEGUIMIENTO DE LA SITUACIÓN CONCURSAL.**
+
+Esta Comisión Revisora de Cuentas (CRC), redobló sus esfuerzos en el control del cumplimiento, tanto de las obligaciones de pagar como hacer, ordenadas por el Juez del Concurso. Participó de las reuniones que junto a los abogados del Club, se llevaron adelante para evaluar avances y cumplimiento de las obligaciones.
+
+**ESTADOS CONTABLES.**
+
+En el marco del análisis sobre la elaboración del balance; hemos recibido especial explicación por parte de los responsables de su confección, en lo referido a:
+
+- Criterio de registración contable sobre los contratos del futbol profesional (Activos Intangibles)
+- Los estados contables han sido preparados en moneda homogénea reconociendo en forma integral los efectos de la inflación de acuerdo con las correspondientes normas contables profesionales.
+- Previsión de contingencias judiciales pendientes de resolución.
+
+El informe del Auditor Contable (externo) indica que la preparación y presentación de los estados contables están conforme a las normas contables profesionales argentinas.
+
+Por lo expuesto, la Comisión Revisora de Cuentas, concluye:
+
+*"En conformidad con los deberes que el Estatuto del Club de Gimnasia y Esgrima La Plata nos impone, hemos practicado la revisión de los libros contables del ejercicio cerrado al 30 de junio de 2025; habiéndose verificado la documentación contable, razón por la cual, ésta Comisión Revisora de Cuentas dictamina que tanto la Memoria, como el Balance General, Inventario y Cuenta de Ganancias y Pérdidas, se ha llevado de acuerdo a la normativa profesional vigente, no teniendo observaciones que realizar".*
+
+38669357
+[firma]
+THOMAS YACOBITI Balquinta
+
+[firma]
+Matías Sicvi
+36.765.241
+
+[firma]
+SIMONCELLI JUAN AUGUSTO
+35.611.323
+
 --- pág. 5 ---
 2024-2025
 INFORME DE LA COMISIÓN
