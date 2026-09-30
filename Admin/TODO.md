@@ -67,6 +67,14 @@ perdieron sino que se descartaron:
        un PDF nuevo pase por el mismo criterio que el inventario. Después actualizar `CLAUDE.md` ("Cada PDF
        nuevo") y proponerle a Guido el texto para `club-or-year-onboarding` y `club-data-mapping` (no editar
        skills sin su ok).
+    3b. **Etapa 5 (cargar el ejercicio al sitio por script), decisiones de Guido 2026-09-30**: la idea completa del pipeline es empezar en un PDF y
+       terminar con el club cargado. Empezar por un modo "propuesta" (arma qué escribiría, sin tocar nada) para el caso fácil: club que YA tiene
+       `data/<club>-data.js`, año nuevo. Se aplica solo si: el chequeo de sumas cierra exacto contra los totales impresos; cada rubro tiene
+       categoría por precedente exacto, o por Jev con confianza >= 0,90 (aceptado por Guido); el tipo de cambio sale del documento o de una
+       cotización conocida; y después de escribir pasan los generadores, `node tools/audit.js` (0 P0/P1) y `auditAll()` (si algo falla, se revierte).
+       Lo dudoso pasa a Claude por API (dólares, no tokens de sesión) y, si sigue dudoso, a `Admin/dudas-por-club.md`. Commit local; el push es de Guido.
+       **Se acepta subir un club-año con solo el total de ingresos** (es mejor que nada), aunque no tenga desglose. Los documentos `sin-rubros`
+       tienen el `.md` validado y siguen disponibles como fuente; falta detectar cuáles traen un total usable.
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
     5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
 
