@@ -33,20 +33,24 @@ sin decisiones abiertas; lo que requiera criterio se frena y lo resuelve una ses
 7. La producción no se toca hasta que el pipeline esté pulido ("producción se va a solucionar cuando pushee"): una diferencia contra
    producción no es automáticamente un error del pipeline ni de producción (ver "Trampas de medición").
 
-## Cómo funciona (el detalle está en la cabecera de `tools/pipeline.mjs`)
+## Cómo funciona (el detalle etapa por etapa, con números medidos, está en la cabecera de `tools/pipeline.mjs`)
 
-`pipeline.mjs` -> regenera el registro (`inventario-transcripciones.mjs`) -> elige documentos -> `resolver-inventario.mjs` (transcribe y valida)
--> `prepare-onboarding.mjs` + `filas-rubro.mjs` (tablas, sumas, filas limpias con su lado) -> `glosar-rubros.mjs` (glosa en español) ->
-`jev-categorizar.mjs --listos` (categorías). Estados de un PDF: `sin-md`, `sin-tablas`, `pendiente-segunda-voz`, `revisar`, `reintentar`,
-`no-es-pdf`, `listo`, `listo-para-jev`, `sin-rubros`, `cargado`. Registro por PDF: `Admin/transcripciones-estado.jsonl` (se regenera);
-historial: `Admin/transcripciones-verificaciones.jsonl` (solo se agrega). Cada página reemplazada queda con su motor (`proveniencia`); el `.md`
-reemplazado queda en `<nombre>.previo-*.md` (gitignoreado).
+0. **De qué club es cada carpeta:** `carpetas-clubes.mjs` (cita en `data/<id>-data.js`, o nombre igual dentro del mismo país). `audit.js` da P1 si una carpeta es ambigua.
+1. **Transcribir:** Mistral, documento entero (queda como documentación).
+2. **Validar solo lo que importa:** `paginas-con-numeros.mjs` descarta la prosa; `chequeos-gratis.mjs` valida gratis con el texto del PDF, sumas, año anterior y
+   balance; solo las páginas `dudosa` van a Gemini / Claude (Claude en lotes de hasta 8 páginas).
+3. **Preparar:** tablas, columna de importes, filas que no son rubros fuera, lado por estructura -> `<md>.rubros.json`.
+4. **Categorizar, solo los documentos de la corrida:** precedente del club -> Jev >= 0,90 -> Claude por API >= 0,80 -> `<md>.categorias.json`. Huellas:
+   si la entrada cambia, la salida se rehace sola.
+5. **Altas de clubes nuevos (fuera del pipeline por ahora):** `alta-club.mjs --todos` escribe `Admin/altas-club.jsonl`; `--claude` resuelve preguntas con cita
+   verificada; `pipeline.mjs --resumen` lo muestra.
 
-Transcripción/validación: Mistral OCR transcribe (~$0,004/pág.). PDF con texto: los números de cada página se comparan gratis contra el texto
-del PDF y Claude por API solo mira las páginas dudosas. Escaneo o texto roto: Gemini como segunda voz; Claude solo en las páginas que difieren;
-voto entre voces, cuarta voz (Mistral), aritmética, y "Claude con reserva" como último recurso. **Si Gemini rechaza el documento entero
-(RECITATION), se prueba página por página** (`voiceGeminiPerPage`) y Claude recibe solo las rechazadas. `tools/reparar-pdf.mjs` arregla PDFs
-dañados o con imágenes gigantes antes de gastar API.
+Estados de un PDF: `sin-md`, `sin-tablas`, `pendiente-segunda-voz`, `revisar`, `reintentar`, `no-es-pdf`, `listo`, `listo-para-jev`, `sin-rubros`, `cargado`.
+Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/transcripciones-verificaciones.jsonl` (solo se agrega). Costo real:
+`node tools/gasto.mjs`.
+
+**Piloto C (2026-09-30, `Admin/piloto-c.txt`):** 10 PDFs, 9 con rubros categorizados; ~US$ 0,20 por documento (texto $0,08-0,18, escaneo $0,13-0,21, Real Madrid
+2005 ~$1); 82% de los rubros categorizados solos. Bugs encontrados y arreglados en las Versiones 308-310.
 
 ## Lo hecho el 2026-09-30 (Versión 306, todo en el CHANGELOG con detalle)
 
@@ -98,17 +102,17 @@ dañados o con imágenes gigantes antes de gastar API.
 
 ## Qué falta (en orden)
 
-1. **Piloto C** (`Admin/piloto-c.txt`, 10 PDFs: 5 años nuevos de clubes ya cargados + 5 clubes nuevos; ensayo ~$1,63 + ~$0,15 de Claude categorizando). Es el
-   primero con todo lo de la Versión 307. Mirar: costo por documento (`node tools/gasto.mjs --lista Admin/piloto-c.txt`), cuántas páginas quedaron `validada-gratis` /
-   `dudosa` (log del resolver), páginas "con reserva", y de dónde salió cada categoría en `<md>.categorias.json` (precedente / jev / claude / sin-resolver).
+1. **Piloto D** (`Admin/piloto-d.txt`): el primero con todo lo de las Versiones 307-311 junto. Prueba a propósito: carpetas que antes caían en otro club
+   (Porto, Inter, Rubin Kazan), un escaneo denso (lotes de Claude de 8 páginas), estados de resultados en cirílico y turco, países con series de fx nuevas.
+   Mirar lo mismo que en el C: `node tools/gasto.mjs --lista Admin/piloto-d.txt`, páginas validadas gratis / dudosas, reservas, escalón de cada categoría.
 2. **Escaneos:** es donde queda el costo (68 de 104 documentos medidos, $29,67 de $38,98). Próximo chequeo gratis a probar: la columna comparativa ENTRE documentos del
    mismo club (año N-1 impreso en el documento N contra la columna del año del documento N-1), aunque ninguno esté en producción (series: Charleroi, Standard, Randers,
    Fluminense).
 3. **Errores que quedan en la carga** (`Admin/test-eleccion-tabla.md`): gastos no mejoran con el ancla (producción usa la apertura por función, el ancla abre la nota por
    naturaleza); consolidado e individual se cargan los dos cuando el documento trae ambos (Bayern); detalle en prosa (Werder); 12 de 74 ejercicios con <= 10% de
    ingresos bien ubicados. Todavía NO es viable dejar escribir a la carga.
-4. **Registro** (to-do 110): 17 clubes del sitio que `onboard.mjs --quien` no reconoce; marcar "pagado sin .md". **Tipos de cambio** (to-do 111): series locales de NOK, CZK,
-   CHF, TRY, RUB, UAH, KRW.
+4. **Antes de la primera alta escrita por script** (to-do 112): 5 perímetros consolidados para que decida Guido, series de fx de EUR/DKK/GBP/SEK,
+   `FX_PLAUSIBLE_RANGE` de COP y BRL.
 5. **Incoherencias de producción** (to-do 101): parte del "error" de la categorización automática es la vara. Las decide Guido/una sesión, no el pipeline.
 6. **Etapa 6 (cargar):** especificación en el to-do 108 de `Admin/TODO.md`. Piezas ya hechas: `proponer-carga.mjs` (qué filas), `categorizar-claude.mjs` (categorías),
    `alta-club.mjs` (club nuevo y metadatos del año; el alta tiene que ir en el mismo commit que la carga del primer año, si no el club aparece "Sin datos cargados").

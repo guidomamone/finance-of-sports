@@ -12,30 +12,41 @@
 // Busca los PDFs de Clubes/ que todavía no tienen un .md LISTO para Jev —ya sea porque no tienen ningún .md, o porque tienen uno que
 // nadie confirmó— y a cada uno lo lleva por todo el camino. Cada etapa está hecha por una herramienta propia (ver Admin/MAPA-DE-TOOLS.md):
 //
-//   1. TRANSCRIBIR     Sin .md -> Mistral OCR lo transcribe (entrega tablas). Un .md SIN TABLAS (el 82% de los viejos: etiquetas e
-//                      importes en bloques separados) se rehace con Mistral una sola vez (estado `sin-tablas`, campo `formatoIntentado`).
-//   2. VALIDAR         (tools/resolver-inventario.mjs) PDF con texto: los números de cada página contra el texto del PDF (gratis) y
-//                      Claude por API SOLO en las páginas dudosas. Escaneo o texto roto: Gemini como segunda voz, Claude solo en las
-//                      páginas que difieren, voto entre voces, cuarta voz (Mistral), aritmética del documento, y Claude con
-//                      "reserva" como último recurso. Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos
-//                      corta la corrida (los documentos quedan en `reintentar`).
-//   3. PREPARAR        (tools/prepare-onboarding.mjs) las tablas del .md, el chequeo de sumas contra los totales impresos y la lista de
-//                      rubros del documento -> `<md>.rubros.json`. Un documento solo es `listo-para-jev` si tiene un estado de
-//                      resultados con >= 5 rubros; si no es `sin-rubros` (actas, memorias narrativas, certificaciones: el .md
-//                      validado queda como fuente).
-//   4. MARCAR          `listo-para-jev`, `sin-rubros`, `sin-tablas`, `revisar`, `reintentar`, `no-es-pdf` (registro en
-//                      Admin/transcripciones-estado.jsonl, que se regenera solo).
-//   5. CATEGORIZAR     (tools/jev-categorizar.mjs --listos) Jev, con el lado (ingreso/gasto) de cada tabla y 8 ejemplos parecidos ya
-//                      categorizados -> `<md>.jev.json`. Confianza >= 0,90: aceptable (decisión de Guido). Menor: etapa 5b,
-//                      (tools/categorizar-claude.mjs --listos) Claude por API con el contexto del club; acepta >= 0,80 ->
-//                      `<md>.categorias.json`. Lo que queda por debajo se frena para revisión (no se carga).
-//   6. CARGAR          (PENDIENTE, ver Admin/TODO.md to-do 108) escribir el ejercicio en data/<club>-data.js, subir ASSET_V,
-//                      regenerar, correr audit.js; si algo falla, revertir. Solo para un club que ya existe y sin decisiones abiertas.
+//   0. ¿DE QUÉ CLUB ES? (tools/carpetas-clubes.mjs, vía onboard.mjs) la cita en data/<id>-data.js, y si no, nombre IGUAL dentro del mismo
+//                      país; si no, club nuevo. Una sola regla en todo el proyecto, vigilada por audit.js (P1 si una carpeta es ambigua).
+//                      Con ella el registro sabe qué ejercicio ya está cargado (antes 11 carpetas caían en un club equivocado).
+//   1. TRANSCRIBIR     Sin .md -> Mistral OCR transcribe el documento ENTERO (queda como documentación, decisión de Guido). Un .md SIN
+//                      TABLAS se rehace con Mistral una sola vez (`sin-tablas`). PDFs dañados o con imágenes gigantes: tools/reparar-pdf.mjs.
+//   2. VALIDAR         (tools/resolver-inventario.mjs) SOLO páginas con números que los chequeos gratis no respaldan:
+//                        a. tools/paginas-con-numeros.mjs descarta la prosa (58% de páginas elegidas, 99,7% de los importes cubiertos);
+//                        b. tools/chequeos-gratis.mjs valida gratis cada página con el texto del PDF, las sumas de sus tablas, la columna
+//                           del año anterior ya cargada y el balance (163/163 errores reales siguen yendo a pagar; ~49% de ahorro);
+//                        c. lo que queda `dudosa`: PDF con texto -> Claude solo esas páginas; escaneo -> Gemini (página por página si
+//                           rechaza por RECITATION) y Claude como desempate, en lotes de hasta 8 páginas (un lote cortado por max_tokens
+//                           se parte en mitades); voto entre voces, cuarta voz, aritmética, y "reserva" como último recurso.
+//                      Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos corta la corrida (`reintentar`).
+//   3. PREPARAR        (tools/prepare-onboarding.mjs + tools/filas-rubro.mjs) tablas, sumas contra totales impresos, columna de importes
+//                      (no la de notas), filas que no son rubros descartadas, lado ingreso/gasto por estructura -> `<md>.rubros.json`.
+//                      `listo-para-jev` si hay un estado de resultados con >= 5 rubros; si no `sin-rubros` (el .md validado queda como fuente).
+//   4. MARCAR          registro Admin/transcripciones-estado.jsonl (se regenera solo); historial en Admin/transcripciones-verificaciones.jsonl.
+//   5. CATEGORIZAR     SOLO los documentos de esta corrida (--lista a cada tool). Escalones: (0) precedente del mismo club, gratis;
+//                      (1) Jev >= 0,90 (tools/jev-categorizar.mjs, con glosa en español de tools/glosar-rubros.mjs); (2) el resto a
+//                      Claude por API, una llamada por documento con las líneas ya cargadas del club (tools/categorizar-claude.mjs),
+//                      se acepta >= 0,80. Backtest: 80% automático con 94,5% de acierto; piloto C: 82%. -> `<md>.categorias.json`.
+//                      Cada archivo guarda la HUELLA de su entrada (tools/huellas.mjs): si la lista de rubros cambia, se rehace solo.
+//   6. CARGAR          (PENDIENTE, to-do 108 y 112) escribir el ejercicio en data/<club>-data.js; para un club nuevo, el alta
+//                      (tools/alta-club.mjs, registro Admin/altas-club.jsonl) va en el mismo commit. Piezas listas: proponer-carga.mjs
+//                      (qué filas, tabla por ancla), categorias.json, alta-club.mjs. Faltan: excluir `no_es_rubro`, detectar lado
+//                      contradictorio y totales con su desglose abajo (cerrar sumas antes de escribir), informes trimestrales.
 //   7. PUBLICAR        (PENDIENTE) commit local; el push lo hace Guido.
+//
+// COSTO medido (piloto C, 10 PDFs): ~US$ 0,20 por documento; PDF con texto US$ 0,08-0,18 (casi todo Mistral); escaneo US$ 0,13-0,21;
+// un escaneo malo (Real Madrid 2005) ~US$ 1. `node tools/gasto.mjs --lista <lista>` da el costo real de una corrida.
 //
 // LO QUE NO HACE, a propósito: categorizar rubros por su cuenta con Claude en la sesión. Eso es de Jev; lo dudoso se deriva.
 //
-// NO toca los ejercicios que ya están cargados en el sitio. Se puede cortar con Ctrl+C y volver a correr: sigue donde quedó.
+// NO toca los ejercicios que ya están cargados en el sitio. Se puede cortar con Control+C (en Mac, la tecla control, no command) y volver
+// a correr: sigue donde quedó. Cerrar la pestaña de la terminal NO corta los procesos.
 // Toma una MUESTRA repartida por tamaño (--limit) y deja para el final los documentos de más de 100 páginas (--max-paginas).
 //
 // USO:
