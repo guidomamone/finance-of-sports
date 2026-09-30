@@ -41,6 +41,14 @@ const CURRENCIES = {
   ARS: { file: 'ars-usd.json', fuente: 'Dólar mayorista BCRA' },
   BRL: { file: 'brl-usd.json', fuente: 'PTAX de cierre (venda) del Banco Central do Brasil' },
   COP: { file: 'cop-usd.json', fuente: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)' },
+  // Agregadas el 2026-09-30 (ver fetch-fx-reference.mjs para qué tasa es cada una).
+  NOK: { file: 'nok-usd.json', fuente: 'Tipo medio de referencia de Norges Bank' },
+  CZK: { file: 'czk-usd.json', fuente: 'Fixing del Česká národní banka' },
+  CHF: { file: 'chf-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  TRY: { file: 'try-usd.json', fuente: 'Döviz alış del TCMB' },
+  RUB: { file: 'rub-usd.json', fuente: 'Tipo oficial del Banco de Rusia' },
+  UAH: { file: 'uah-usd.json', fuente: 'Tipo oficial del Banco Nacional de Ucrania' },
+  KRW: { file: 'krw-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
 };
 
 function logMiss(reason, currency, date) {

@@ -142,7 +142,7 @@
 //                  declara nada: `FX_CLOSE` de `data/currency-map.js` si ya tiene
 //                  esa fecha (`fxRef`), si no la serie local de
 //                  `tools/fx-reference/` (la de `tools/lookup-fx-close.js`: ARS, BRL,
-//                  COP), si no `pendiente` ("correr fetch-fx-reference.mjs").
+//                  COP, NOK, CZK, CHF, TRY, RUB, UAH, KRW), si no `pendiente` ("correr fetch-fx-reference.mjs").
 // reportType       'official_balance_sheet' si el documento nombra un estado contable
 //                  Y trae filas con números (10+ filas de tabla o líneas con 2+ montos:
 //                  un dictamen de auditor nombra los estados sin traerlos); `pregunta`
@@ -595,8 +595,10 @@ function fxDeclarado(md, moneda, mercado) {
 }
 
 // Series locales de tools/fx-reference/ (las mismas que lee tools/lookup-fx-close.js).
-const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json' };
-const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda) del Banco Central do Brasil', COP: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)' };
+const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json' };
+const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda) del Banco Central do Brasil', COP: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)',
+  NOK: 'Tipo medio de referencia de Norges Bank', CZK: 'Fixing del Česká národní banka', CHF: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
+  TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' };
 function fxDeSerie(moneda, fecha) {
   const f = SERIES_FX[moneda];
   if (!f) return { error: `sin serie local para ${moneda} (hoy solo ${Object.keys(SERIES_FX).join(', ')})` };

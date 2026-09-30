@@ -21,6 +21,7 @@ que dice `ESTADO.md` era verdad ese día.
 - Medido con la regla vieja: 17 carpetas de clubes del sitio quedaban ambiguas (Racing = Racing Club y Genk; Nacional = Internacional y Atlético Nacional) y 11 caían en un club EQUIVOCADO (Porto -> Grêmio, Inter -> Internacional, Lazio y Rubin Kazan -> AZ, Braga -> Bragantino, Vitória Guimarães -> Vitória, Independiente Rivadavia -> Independiente). En el registro: 15 PDFs figuraban "ya cargados" sin estarlo y 87 figuraban pendientes estando cargados (316 -> 388 cargados).
 - `audit.js`: P1 `carpeta-club-ambigua` (salvo carpetas de agregado `_*`), P2 `club-sin-carpeta`.
 - `inventario-transcripciones.mjs`: un `sin-md` con transcripción de Mistral registrada dice "PAGADO SIN .md" en el detalle (21 PDFs).
+- Tipos de cambio locales para NOK (Norges Bank), CZK (ČNB), TRY (TCMB), RUB (Banco de Rusia), UAH (NBU), CHF y KRW (Reserva Federal H.10), 2000-2026, en `tools/fx-reference/` (`fetch-fx-reference.mjs`, `lookup-fx-close.js`, `alta-club.mjs`). Verificados contra los tipos declarados en Krasnodar 2020/2021 y Fenerbahçe 2020 (exactos) y contra el BCE día por día (mediana < 0,3%; las diferencias grandes son crisis o tipos oficiales fijos).
 
 ## Versión 308 — La etapa 5 solo toca los documentos de la corrida; resultados derivados con huella; lotes de Claude que exceden el tope se parten (2026-09-30)
 
