@@ -12,20 +12,17 @@
 // Dado un documento de `Clubes/<País>/<Club>/` (el PDF o su `.md`, da igual: se
 // lee siempre el `.md`, que es la transcripción) y opcionalmente el año:
 //
-//   1. Resuelve si el club YA EXISTE en el sitio. Tres señales, en este orden:
-//      (a) algún `data/<id>-data.js` cita esa carpeta (`Clubes/<País>/<Club>/`)
-//          en sus comentarios o en sus `sources` — es la señal más confiable,
-//          porque la escribió quien cargó el club;
-//      (b) `node tools/onboard.mjs --quien <pdf>` (compara el nombre de la
-//          carpeta contra `data/clubs.js`), aceptado SOLO si el país coincide;
-//      (c) si ninguna de las dos, el club es nuevo.
-//      OJO, POR QUÉ (a) ANTES QUE (b): el registro `Admin/transcripciones-
-//      estado.jsonl` da ~205 carpetas "sin ningún ejercicio cargado", pero varias
-//      son clubes que SÍ están en el sitio (Racing, Almagro, Argentinos, Gent,
-//      Botafogo...): `onboard.mjs` no los reconoce porque el nombre de la carpeta
-//      matchea a más de un club ("Racing" es Racing Club y también Genk, cuyo
-//      nombre legal dice "Racing") o a ninguno. Este script los devuelve como
-//      "ya existe" y no propone darlos de alta dos veces.
+//   1. Resuelve si el club YA EXISTE en el sitio con la regla ÚNICA del proyecto,
+//      `clubDeCarpeta()` de tools/carpetas-clubes.mjs (la misma que usan onboard.mjs,
+//      inventario-transcripciones.mjs, pipeline.mjs y audit.js): (a) algún
+//      `data/<id>-data.js` cita la carpeta `Clubes/<País>/<Club>/` -> ese club; (b) si
+//      no, el nombre de la carpeta es IGUAL al de un club del mismo país; (c) si no,
+//      club nuevo. Hasta la Versión 309 este script tenía su propia regla (citas +
+//      `onboard.mjs --quien` + desempate por país) y onboard.mjs otra: se reemplazó
+//      para que no haya dos respuestas posibles para la misma carpeta. (Contexto: el
+//      registro de transcripciones daba ~205 carpetas "sin cargar" y 17 eran clubes que
+//      SÍ están en el sitio — Racing, Almagro, Gent, Botafogo... — porque el nombre de
+//      la carpeta matcheaba a 0 o 2+ clubes.)
 //
 //   2. Si es nuevo, arma la entrada de `data/clubs.js` con TODOS los campos que
 //      usan las entradas existentes: id, name, displayName, country,
@@ -36,7 +33,16 @@
 //      documento (reportType), sourceId, y el PERÍMETRO (qué entidad es "el
 //      club": individual o consolidado, asociación o sociedad).
 //
-//   4. Con `--escribir`, y SOLO si no quedó ninguna `pregunta`, aplica el alta
+//   4. Escribe su resultado en el REGISTRO DE ALTAS `Admin/altas-club.jsonl` (una línea
+//      por carpeta, con huella de las entradas: ver tools/altas-registro.mjs). Siempre,
+//      en cualquier modo salvo --backtest-claude: no depende de que quien lo corre se
+//      acuerde de anotarlo (pedido de Guido: "las IA se olvidan").
+//
+//   5. Con `--claude`, manda las preguntas que se responden LEYENDO el documento a Claude
+//      por API (tools/alta-claude.mjs: una llamada por club, cita textual verificada por
+//      el script). Lo que Claude sostiene con cita se aplica y puede destrabar el alta.
+//
+//   6. Con `--escribir`, y SOLO si no quedó ninguna `pregunta`, aplica el alta
 //      (ver "QUÉ ESCRIBE" abajo), corre los generadores y `node tools/audit.js`,
 //      y si la auditoría da algún P0/P1 REVIERTE todo lo que escribió.
 //
@@ -117,9 +123,13 @@
 //                  la caché de rosters de `tools/club-league-reference/<iso2>.json`
 //                  (la misma que lee `tools/lookup-club-league.js`). Coincidencia
 //                  EXACTA del nombre normalizado, única, y con la liga en el
-//                  catálogo -> `ok`. Coincidencia parcial -> `pregunta` (¿es el mismo
-//                  club?). Sin caché para esa liga-temporada -> `pendiente` y la
-//                  fila se escribe en `null` (= "nadie lo verificó", P3).
+//                  catálogo -> `ok`. Coincidencia parcial ("OFI Crete" / "OFI") o liga
+//                  fuera del catálogo -> `pendiente` con la duda en `nota` (hasta el
+//                  2026-09-30 era `pregunta`: con la caché de rosters creciendo, más
+//                  datos daban MENOS clubes listos, 21 carpetas frenadas solo por esto,
+//                  y la fila en `null` es la verdad mientras nadie lo confirme). Sin caché
+//                  para esa liga-temporada -> `pendiente` y la fila se escribe en `null`
+//                  (= "nadie lo verificó", P3).
 // currency         la del país, o la que el documento muestra (ver arriba).
 // fx               REGLA #0 de `club-data-mapping` §5: el tipo de cambio que declara
 //                  el propio documento gana siempre. Se buscan en el `.md` líneas
@@ -213,13 +223,37 @@
 //        misses.jsonl de las tools de lookup; con este flag, o con --escribir, se
 //        llama a las tools de verdad, que anotan cada hueco para que Guido lo vea)
 //
-// 0 llamadas a APIs ni a internet. Todo sale de archivos locales.
+//   REGISTRO (Admin/altas-club.jsonl) — gratis salvo --claude:
+//   node tools/alta-club.mjs --todos
+//        todas las carpetas de Clubes/ que carpetas-clubes.mjs da como `nuevo` (sin
+//        las de agregado "_*"); elige el documento base de cada una (estado contable
+//        anual por el nombre > transcripción listo > ejercicio más reciente; si el
+//        elegido no sirve de base —no es un balance anual, no se le saca el año— prueba
+//        hasta 4 candidatos) y recalcula SOLO las carpetas cuya huella cambió.
+//        ~5 s para 212 carpetas. --forzar recalcula todo; --solo <texto> filtra.
+//   node tools/alta-club.mjs --todos --claude [--tope-usd 1]
+//        además manda a Claude las preguntas de documento todavía sin preguntar
+//        (primero las carpetas que Claude puede dejar listas). Reusa respuestas ya
+//        pagadas si el .md y las preguntas no cambiaron (--forzar-claude las rehace).
+//   node tools/alta-club.mjs --resumen      conteo por estado + los listo-para-alta
+//   node tools/alta-club.mjs --dudas        candidatas a Admin/dudas-por-club.md (NO escribe ahí)
+//   node tools/alta-club.mjs --backtest-claude [--limit 5] [--saltear N]
+//        las mismas preguntas a clubes YA cargados, contra lo cargado (Admin/altas-claude/)
+//   node tools/alta-club.mjs --informe-backtest   recalcula el acierto del backtest, gratis
+//
+// Sin --claude / --backtest-claude: 0 llamadas a APIs ni a internet, todo sale de
+// archivos locales. Con --claude: ~US$ 0,05-0,09 por club (medido, Admin/test-altas-claude.md).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, mkdirSync, appendFileSync } from 'node:fs';
 import { resolve, dirname, basename, extname, relative, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
+import { createHash } from 'node:crypto';
+import { clubDeCarpeta } from './carpetas-clubes.mjs';
+import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
+import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
+export { resumenAltas };
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
@@ -228,7 +262,16 @@ const ESCRIBIR = ARGS.includes('--escribir');
 const RESUMEN = ARGS.includes('--resumen');
 const ANOTAR_MISSES = ARGS.includes('--anotar-misses') || ESCRIBIR;
 const ANIO_FORZADO = flagVal('--anio') ? Number(flagVal('--anio')) : null;
-const DOCS = ARGS.filter((a, i) => !a.startsWith('--') && ARGS[i - 1] !== '--anio');
+const TODOS = ARGS.includes('--todos');
+const DUDAS = ARGS.includes('--dudas');
+const CLAUDE = ARGS.includes('--claude');
+const BACKTEST = ARGS.includes('--backtest-claude');
+const FORZAR = ARGS.includes('--forzar');
+const MODELO = flagVal('--modelo') || MODELO_DEFAULT;
+const LIMITE = flagVal('--limit') !== null ? Number(flagVal('--limit')) : null;
+const TOPE_USD = flagVal('--tope-usd') !== null ? Number(flagVal('--tope-usd')) : 1;
+const CON_VALOR = new Set(['--anio', '--modelo', '--limit', '--tope-usd', '--solo']);
+const DOCS = ARGS.filter((a, i) => !a.startsWith('--') && !CON_VALOR.has(ARGS[i - 1]));
 
 // ============================================================================
 // TABLAS FIJAS. Lo único "conocimiento propio" del script: datos públicos que no
@@ -288,23 +331,42 @@ const NOMBRE_PAIS_ES = { DE: 'Alemania', AR: 'Argentina', AT: 'Austria', BR: 'Br
 // nominal grande), rango plausible de "moneda por 1 USD" (generoso a propósito:
 // atrapa un fx invertido o con el orden de magnitud mal, no exige precisión), y
 // las formas en que el texto de un balance nombra la moneda.
+//
+// RANGOS REVISADOS (2026-09-30) contra el mínimo y el máximo REAL de cada serie de tools/fx-reference/
+// (bug real: TRY estaba en [1, 45] y la lira cotiza 48,93 al 30/9/2026, así que un tipo de cambio
+// declarado de hoy se descartaba como "no plausible"). Criterio: [~90% del mínimo histórico, máximo
+// histórico + margen para lo que puede moverse en ~1-2 años]. Mín./máx. medidos (fecha):
+//   ARS 2,76 (2003-07) – 1.525,5 (2026-09)   -> [0.9, 3000]  (0,9: antes de 2002 la convertibilidad era 1:1)
+//   BRL 1,5345 (2011-07) – 6,2086 (2025-01)  -> [1.4, 7.5]   (era [3, 7]: descartaba todo 2010-2015)
+//   COP 1.748 (2011-07) – 5.061 (2022-11)    -> [1600, 5500] (era [2500, 5000]: descartaba 2010-2014)
+//   NOK 4,96 (2008-04) – 11,48 (2025-01)     -> [4.5, 13]
+//   CZK 14,45 (2008-07) – 42,13 (2000-10)    -> [13, 45]     (era [15, 35]: descartaba 2000-2003 y 2008)
+//   CHF 0,7296 (2011-08) – 1,825 (2000-10)   -> [0.65, 1.95]
+//   TRY 0,535 (2000-01) – 48,93 (2026-09)    -> [0.5, 70]    (lira nueva; se deprecia 20-40% por año: margen amplio)
+//   RUB 23,13 (2008-07) – 120,38 (2022-03)   -> [20, 140]
+//   UAH 4,84 (2008-07) – 44,98 (2026-06)     -> [4.5, 60]
+//   KRW 903,2 (2007-10) – 1.570,1 (2009-03)  -> [800, 1800]
+// Las monedas sin serie local (CLP, PEN, EUR, GBP, DKK, CNY, JPY, MXN...) quedan como estaban.
+// OJO: esta tabla es la de alta-club.mjs (filtra candidatos del texto y es lo que `--escribir` copia a
+// FX_PLAUSIBLE_RANGE cuando la moneda es NUEVA). El rango del sitio vive en data/currency-map.js
+// (FX_PLAUSIBLE_RANGE) y no se edita desde acá.
 const MONEDAS = {
-  ARS: { scale: 1000, rango: [3, 3000], tokens: ['ars', '\\$'] },
-  BRL: { scale: 1, rango: [3, 7], tokens: ['r\\$', 'brl', 'reais'] },
+  ARS: { scale: 1000, rango: [0.9, 3000], tokens: ['ars', '\\$'] },
+  BRL: { scale: 1, rango: [1.4, 7.5], tokens: ['r\\$', 'brl', 'reais'] },
   CLP: { scale: 1000, rango: [600, 1200], tokens: ['clp', '\\$'] },
-  COP: { scale: 1000, rango: [2500, 5000], tokens: ['cop', '\\$'] },
+  COP: { scale: 1000, rango: [1600, 5500], tokens: ['cop', '\\$'] },
   PEN: { scale: 1, rango: [3, 5], tokens: ['pen', 's/\\.?', 'soles'] },
   USD: { scale: 1, rango: [1, 1], tokens: ['usd', 'us\\$', 'u\\$s'] },
   EUR: { scale: 1, rango: [0.7, 1.15], tokens: ['eur', '€', 'euro', 'euros', 'евро', 'євро', 'ευρω'] },
   GBP: { scale: 1, rango: [0.6, 0.95], tokens: ['gbp', '£'] },
   DKK: { scale: 1, rango: [5, 8], tokens: ['dkk', 't\\.kr', 'mio\\. kr', 'kr\\.'] },
-  NOK: { scale: 1, rango: [5, 13], tokens: ['nok', 'kr', 'kroner'] },
-  CZK: { scale: 1, rango: [15, 35], tokens: ['czk', 'kč', 'kc', 'korun'] },
-  CHF: { scale: 1, rango: [0.75, 1.8], tokens: ['chf', 'fr\\.', 'franken'] },
-  TRY: { scale: 1, rango: [1, 45], tokens: ['try', 'tl', 'türk lirası', 'turk lirasi'] },
-  RUB: { scale: 1, rango: [25, 130], tokens: ['rub', 'руб', 'рубл'] },
-  UAH: { scale: 1, rango: [5, 45], tokens: ['uah', 'грн', 'гривн'] },
-  KRW: { scale: 1000, rango: [900, 1500], tokens: ['krw', '원', '₩'] },
+  NOK: { scale: 1, rango: [4.5, 13], tokens: ['nok', 'kr', 'kroner'] },
+  CZK: { scale: 1, rango: [13, 45], tokens: ['czk', 'kč', 'kc', 'korun'] },
+  CHF: { scale: 1, rango: [0.65, 1.95], tokens: ['chf', 'fr\\.', 'franken'] },
+  TRY: { scale: 1, rango: [0.5, 70], tokens: ['try', 'tl', 'türk lirası', 'turk lirasi'] },
+  RUB: { scale: 1, rango: [20, 140], tokens: ['rub', 'руб', 'рубл'] },
+  UAH: { scale: 1, rango: [4.5, 60], tokens: ['uah', 'грн', 'гривн'] },
+  KRW: { scale: 1000, rango: [800, 1800], tokens: ['krw', '원', '₩'] },
   CNY: { scale: 1, rango: [6, 8], tokens: ['cny', 'rmb', '人民币', '元'] },
   JPY: { scale: 1, rango: [80, 180], tokens: ['jpy', '円', '¥'] },
   MXN: { scale: 1, rango: [10, 25], tokens: ['mxn', '\\$'] },
@@ -415,21 +477,6 @@ function cargarSitio() {
   for (const f of ['data/clubs.js', 'data/currency-map.js', 'data/leagues.js', 'data/club-leagues.js']) run(f);
   for (const f of readdirSync(resolve(ROOT, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort()) run('data/club-leagues/' + f);
   return vm.runInContext(`({ clubs, CURRENCY_META, FX_CLOSE, FX_PLAUSIBLE_RANGE, COUNTRIES, LEAGUES, CLUB_LEAGUE_BY_YEAR: window.CLUB_LEAGUE_BY_YEAR })`, ctx);
-}
-
-// Carpeta de Clubes/ -> clubId, según qué data/<id>-data.js la cita. Una carpeta
-// citada por más de un archivo (la de la J.League) no resuelve nada.
-function mapaCarpetas() {
-  const mapa = {};
-  for (const f of readdirSync(resolve(ROOT, 'data')).filter((f) => f.endsWith('-data.js'))) {
-    const id = f.replace(/-data\.js$/, '');
-    const txt = readFileSync(resolve(ROOT, 'data', f), 'utf8');
-    for (const m of txt.matchAll(/Clubes\/([^/\n`'"]+)\/([^/\n`'"]+)\//g)) {
-      const k = `${m[1]}/${m[2]}`;
-      (mapa[k] = mapa[k] || new Set()).add(id);
-    }
-  }
-  return mapa;
 }
 
 // ============================================================================
@@ -648,7 +695,11 @@ function nombreLegal(md, displayName) {
 // ============================================================================
 // EL ANÁLISIS DE UN DOCUMENTO
 // ============================================================================
-function analizar(docArg, sitio, carpetas) {
+// `ov` (overrides): respuestas que Claude por API ya dio CON CITA VERIFICADA (tools/alta-claude.mjs), para
+// volver a correr el análisis con esos valores en lugar de la pregunta. Cada una es { valor, fuente }:
+//   ov.cierre 'AAAA-MM-DD' · ov.reportType · ov.perimetro · ov.moneda · ov.sport · ov.name · ov.fx (número)
+// Solo se aplican las que DESBLOQUEAN sin decidir nada de producto (ver aplicables() más abajo).
+export function analizar(docArg, sitio, ov = {}) {
   // Relativo a donde se corre el comando, o a la raíz del proyecto.
   const abs = existsSync(resolve(process.cwd(), docArg)) ? resolve(process.cwd(), docArg) : resolve(ROOT, docArg);
   const ext = extname(abs).toLowerCase();
@@ -666,28 +717,21 @@ function analizar(docArg, sitio, carpetas) {
   const pais = PAISES[paisCarpeta];
 
   // ---------------------------------------------------------------- ¿ya existe?
+  // UNA sola regla en todo el proyecto (tools/carpetas-clubes.mjs, 2026-09-30): cita en algún
+  // data/<id>-data.js -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
+  // Hasta la Versión 309 este script tenía su propia versión (mapa de citas + `onboard.mjs --quien` +
+  // desempate por país) y onboard.mjs otra distinta: dos reglas que podían dar respuestas distintas
+  // para la misma carpeta. Ahora las dos (y audit.js, que vigila que la regla sea inequívoca) usan esta.
+  const res = clubDeCarpeta(paisCarpeta, clubCarpeta);
   let existente = null;
-  const citado = carpetas[`${paisCarpeta}/${clubCarpeta}`];
-  if (citado && citado.size === 1) existente = { clubId: [...citado][0], fuente: `data/${[...citado][0]}-data.js cita la carpeta ${r.carpeta}` };
-  let quien = null;
-  if (r.pdf) {
-    const q = runNode('tools/onboard.mjs', ['--quien', r.pdf]);
-    try { quien = JSON.parse(q.out.trim().split('\n').pop()); } catch { quien = null; }
-  }
-  if (!existente && quien && quien.clubId && sitio.clubs[quien.clubId]) {
-    if (pais && sitio.clubs[quien.clubId].country === pais.iso2) existente = { clubId: quien.clubId, fuente: 'tools/onboard.mjs --quien (nombre de la carpeta contra data/clubs.js, mismo país)' };
-    else r.avisos.push(`onboard.mjs --quien asocia la carpeta a '${quien.clubId}', que es de otro país (${sitio.clubs[quien.clubId].country}): homónimo, no es el mismo club.`);
-  }
-  if (!existente && quien && quien.error && pais) {
-    // Ambiguo por nombre: se desempata por país.
-    const ids = (quien.error.match(/\(([^)]+)\)/) || [, ''])[1].split(',').map((s) => s.trim()).filter((id) => sitio.clubs[id] && sitio.clubs[id].country === pais.iso2);
-    if (ids.length === 1) existente = { clubId: ids[0], fuente: `tools/onboard.mjs --quien (ambiguo por nombre, desempatado por país: ${quien.error})` };
-  }
+  if (res.clubId) existente = { clubId: res.clubId, fuente: `tools/carpetas-clubes.mjs (${res.via}: ${res.fuente})` };
+  else if (res.via === 'ambigua') r.avisos.push(`tools/carpetas-clubes.mjs no puede decidir a qué club corresponde ${r.carpeta} (${res.fuente}): se analiza como club nuevo, pero audit.js da P1 hasta que se resuelva.`);
+  r.resolucion = { via: res.via, clubId: res.clubId || null, ids: res.ids || undefined };
   r.club = existente ? { existe: true, ...existente } : { existe: false };
 
   // ---------------------------------------------------------------- año y cierre
   const nombreArchivo = basename(abs);
-  const anioNombre = ANIO_FORZADO || (quien && quien.year) || anioDelNombre(nombreArchivo);
+  const anioNombre = ANIO_FORZADO || anioDelNombre(nombreArchivo);
   const cierreTxt = cierreDelTexto(md);
   const cierreNom = cierreDelNombre(basename(abs, extname(abs)));
   let mesCierre = null; let fuenteCierre = null; let estadoCierre = 'ok'; let preguntaCierre = null;
@@ -712,6 +756,7 @@ function analizar(docArg, sitio, carpetas) {
       hermanos.push(f);
     }
   })(dirClub);
+  r.mdsCarpeta = hermanos.map(rel).sort();
   const cierresClub = [];
   for (const h of hermanos) {
     if (NO_BALANCE.test(norm(basename(h)))) continue;
@@ -759,6 +804,13 @@ function analizar(docArg, sitio, carpetas) {
     }
   }
   if (!anio) { estadoAnio = 'pregunta'; preguntaAnio = 'No se pudo determinar el año del ejercicio (ni por el nombre del archivo ni por el contenido). Pasar --anio.'; }
+  if (ov.cierre) {
+    // Claude leyó la fecha de cierre en el documento y el script verificó la cita: gana sobre el nombre
+    // del archivo y sobre el conteo de fechas (que es justo lo que no alcanzó).
+    const [yy, mm] = ov.cierre.valor.split('-').map(Number);
+    anio = yy; mesCierre = mm; estadoAnio = 'ok'; preguntaAnio = null; estadoCierre = 'ok'; preguntaCierre = null;
+    fuenteAnio = fuenteCierre = `claude-api con cita verificada: ${ov.cierre.fuente}`; fuentePatronPais = null;
+  }
   const cierre = anio && mesCierre ? `${anio}-${pad2(mesCierre)}-${pad2(ultimoDia(anio, mesCierre))}` : null;
   const fiscalYearStart = mesCierre ? `${pad2(mesCierre === 12 ? 1 : mesCierre + 1)}-01` : null;
 
@@ -789,7 +841,9 @@ function analizar(docArg, sitio, carpetas) {
   const nGenoa = contar(mdNorm, /cricket\s*(and|&|e)\s*football/g);
   const nFutbol = contar(mdNorm, FUTBOL_RE) - nAmbiguo - nGenoa + contar(norm(clubCarpeta), FUTBOL_RE);
   const otros = Object.entries(DEPORTES_OTROS).map(([k, re]) => [k, contar(mdNorm, re) - (k === 'cricket' ? nGenoa : 0) + 3 * contar(norm(clubCarpeta), re)]).sort((a, b) => b[1] - a[1]);
-  const deporte = otros[0][1] >= 3 && otros[0][1] >= nFutbol ? otros[0][0] : 'futbol';
+  let deporte = otros[0][1] >= 3 && otros[0][1] >= nFutbol ? otros[0][0] : 'futbol';
+  const fuenteDeporteClaude = ov.sport && ov.sport.valor === 'futbol' && deporte !== 'futbol' ? `claude-api con cita verificada: ${ov.sport.fuente}` : null;
+  if (fuenteDeporteClaude) deporte = 'futbol';
 
   // ---------------------------------------------------------------- campos del club
   if (!r.club.existe) {
@@ -805,7 +859,8 @@ function analizar(docArg, sitio, carpetas) {
     else r.campos.push(campo('id', id, `slug de "${displayName}" + '-${iso}' (convención de clubId, Admin/CONVENCIONES.md Versión 129)`));
     // name
     const nl = nombreLegal(md, displayName);
-    if (nl && nl.veces >= 2) r.campos.push(campo('name', nl.nombre, `el .md, ${nl.veces} veces (nombre del club + forma societaria)`, 'ok', nl.otros.length ? { nota: `otras formas vistas: ${nl.otros.join('; ')}` } : {}));
+    if (ov.name) r.campos.push(campo('name', ov.name.valor, `claude-api con cita verificada: ${ov.name.fuente}`));
+    else if (nl && nl.veces >= 2) r.campos.push(campo('name', nl.nombre, `el .md, ${nl.veces} veces (nombre del club + forma societaria)`, 'ok', nl.otros.length ? { nota: `otras formas vistas: ${nl.otros.join('; ')}` } : {}));
     else r.campos.push(campo('name', displayName, nl ? `candidato visto 1 sola vez en el .md: "${nl.nombre}"` : 'no se encontró el nombre legal en el .md; se usa el nombre de la carpeta', 'pendiente', { nota: 'name es el nombre legal completo (pestaña Fuentes); completarlo cuando alguien mire el documento, no bloquea el alta' }));
     r.campos.push(campo('displayName', displayName, 'nombre de la carpeta del club en Clubes/'));
     r.campos.push(campo('country', pais ? pais.iso2 : null, pais ? `carpeta de país "${paisCarpeta}" (tabla PAISES)` : null, pais && pais.iso2 ? 'ok' : 'pregunta', pais && pais.iso2 ? {} : { pregunta: pais && pais.pregunta ? pais.pregunta : `País "${paisCarpeta}" sin entrada en la tabla PAISES.` }));
@@ -830,7 +885,7 @@ function analizar(docArg, sitio, carpetas) {
       r.campos.push(campo('fiscalYearStart', null, 'ni el documento, ni los demás .md del club, ni el patrón del país alcanzan', 'pregunta', { pregunta: `¿En qué fecha cierra el ejercicio de ${displayName}? El .md no trae fechas de cierre suficientes${cierreTxt ? ` (${cierreTxt.total} fecha(s) de fin de mes en todo el texto; la más frecuente, mes ${cierreTxt.mes}, ${cierreTxt.n} vez/veces)` : ' (ninguna fecha de fin de mes reconocible)'}, los demás documentos del club tampoco, y no hay clubes del país ya cargados de los que tomar el patrón.` }));
     }
     // sport
-    if (deporte === 'futbol') r.campos.push(campo('sport', 'futbol', `el .md nombra el fútbol ${nFutbol} veces y ningún otro deporte más que eso`));
+    if (deporte === 'futbol') r.campos.push(campo('sport', 'futbol', fuenteDeporteClaude || `el .md nombra el fútbol ${nFutbol} veces y ningún otro deporte más que eso`));
     else r.campos.push(campo('sport', deporte, `el .md nombra "${deporte}" ${otros[0][1]} veces y el fútbol ${nFutbol}`, 'pregunta', { pregunta: `El documento parece de ${deporte}, no de fútbol. El catálogo de data/leagues.js tiene ese deporte inactivo (o no lo tiene). ¿Se da de alta igual (y con qué liga), o queda fuera del sitio por ahora?` }));
     // brandColor: nunca lo decide el script
     const candidatos = candidatosColor(displayName);
@@ -861,6 +916,7 @@ function analizar(docArg, sitio, carpetas) {
   else if (esIntermedio) { estadoRT = 'pregunta'; fuenteRT = `el documento parece un estado intermedio (${nIntermedio} señales en el texto: semestral, seis meses, interim...)`; preguntaRT = 'El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?'; }
   else if (NO_BALANCE.test(nomNorm)) { estadoRT = 'pregunta'; fuenteRT = 'nombre del archivo'; preguntaRT = `El nombre del archivo ("${nombreArchivo}") sugiere que no es un estado contable anual (acta, informe intermedio, memoria, dictamen...). ¿Trae un estado de resultados anual cargable, o es un documento de contexto?`; }
   else if (!tieneEstado) { estadoRT = 'pregunta'; fuenteRT = filasNumericas < 10 ? `el .md casi no tiene tablas con números (${filasNumericas} filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos` : 'el .md no tiene ninguna palabra de estado contable reconocible'; preguntaRT = '¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?'; }
+  if (ov.reportType) { reportType = ov.reportType.valor; estadoRT = 'ok'; preguntaRT = null; fuenteRT = `claude-api con cita verificada: ${ov.reportType.fuente}`; }
   E.push(campo('reportType', reportType, fuenteRT, estadoRT, preguntaRT ? { pregunta: preguntaRT } : {}));
 
   // Perímetro: qué entidad es "el club"
@@ -887,13 +943,15 @@ function analizar(docArg, sitio, carpetas) {
       ? `El documento trae estados CONSOLIDADOS y también individuales/de la sociedad (${nCons} vs ${nInd} menciones). ¿Qué columna se carga? ${sugerencia}`
       : `El documento parece ser solo del GRUPO consolidado (${nCons} menciones, ninguna de estados individuales). ¿El grupo es "el club", o hay que buscar los estados individuales de la sociedad que juega? ${sugerencia}`;
   }
-  E.push(campo('perimetro', valorPer, fuentePer, estadoPer, preguntaPer ? { pregunta: preguntaPer } : {}));
+  if (ov.perimetro && !otraEntidad) { valorPer = ov.perimetro.valor; estadoPer = 'ok'; preguntaPer = null; fuentePer = `claude-api con cita verificada: ${ov.perimetro.fuente}`; }
+  E.push(campo('perimetro', valorPer, fuentePer, estadoPer, { ...(preguntaPer ? { pregunta: preguntaPer } : {}), ...(otraEntidad ? { dosEntidades: basename(otraEntidad) } : {}) }));
 
   // Moneda del ejercicio
+  if (ov.moneda && pais && ov.moneda.valor === pais.moneda && estadoMoneda === 'pregunta') { moneda = pais.moneda; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `claude-api con cita verificada: ${ov.moneda.fuente}`; }
   E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
 
   // Tipo de cambio
-  const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio);
+  const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ov.fx);
   E.push(...fxCampos);
 
   // sourceId
@@ -957,8 +1015,12 @@ function candidatosColor(displayName) {
   return out;
 }
 
-function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio) {
+function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = null) {
   const out = [];
+  if (ovFx && moneda && moneda !== 'USD' && estadoMoneda !== 'pregunta' && reportType !== 'official_budget') {
+    out.push(campo('fx', Number(ovFx.valor), `declarado por el documento (regla #0), leído por claude-api con cita verificada: ${ovFx.fuente}`, 'ok', { fxSource: 'document_close' }));
+    return out;
+  }
   if (!moneda || estadoMoneda === 'pregunta') {
     out.push(campo('fx', null, 'depende de la moneda del ejercicio, que es una pregunta abierta', 'pendiente'));
     return out;
@@ -1041,11 +1103,18 @@ function proponerLiga(clubId, nombre, pais, anio, sitio) {
   if (exactos.length === 1) {
     const cat = enCatalogo(exactos[0].leagueId);
     if (cat) return campo('liga', cat, `roster cacheado de "${exactos[0].page}" (tools/club-league-reference/${iso}.json), coincidencia exacta "${exactos[0].club}"`);
-    return campo('liga', null, `el roster "${exactos[0].page}" lo ubica en '${exactos[0].leagueId}', que NO está en el catálogo de data/leagues.js`, 'pregunta', { pregunta: `El club jugó ${anio} en '${exactos[0].leagueId}' (${exactos[0].page}), liga que no está en el catálogo. ¿Se agrega al catálogo o la fila va como 'liga-no-catalogada'?` });
+    // `pendiente`, no `pregunta` (cambio del 2026-09-30): agregar una liga al catálogo es UNA decisión de
+    // Guido por liga, no por club, y no cambia si el alta es correcta. Con la caché de rosters creciendo
+    // (it, kr...), dejarlo como `pregunta` hacía que MÁS datos dieran MENOS clubes listos (21 carpetas
+    // frenadas solo por esto). La fila se escribe en `null` (= "nadie lo verificó", P3) y la pregunta
+    // queda en `nota` para cuando se decida el catálogo.
+    return campo('liga', null, `el roster "${exactos[0].page}" lo ubica en '${exactos[0].leagueId}', que NO está en el catálogo de data/leagues.js`, 'pendiente', { nota: `fila en null hasta decidir: el club jugó ${anio} en '${exactos[0].leagueId}' (${exactos[0].page}), liga que no está en el catálogo. ¿Se agrega al catálogo o la fila va como 'liga-no-catalogada'? (decisión de Guido, por liga)` });
   }
   if (exactos.length + parciales.length > 0) {
     const todos = [...exactos, ...parciales];
-    return campo('liga', null, `coincidencia NO exacta en los rosters cacheados: ${todos.map((t) => `"${t.club}" en ${t.page}`).join(' | ')}`, 'pregunta', { pregunta: `¿"${nombre}" es ${todos.map((t) => `"${t.club}" (${t.leagueId}, ${t.page})`).join(' o ')}?` });
+    // Mismo criterio: `pendiente` con la fila en null. El script no confirma homónimos por su cuenta
+    // ("OFI Crete" contra "OFI"), pero tampoco hace falta frenar el alta por eso: null es la verdad.
+    return campo('liga', null, `coincidencia NO exacta en los rosters cacheados: ${todos.map((t) => `"${t.club}" en ${t.page}`).join(' | ')}`, 'pendiente', { nota: `fila en null hasta confirmar: ¿"${nombre}" es ${todos.map((t) => `"${t.club}" (${t.leagueId}, ${t.page})`).join(' o ')}?` });
   }
   const cacheados = Object.entries(data.leagues || {}).filter(([, y]) => y[String(anio)]).map(([l]) => l);
   return campo('liga', null, cacheados.length ? `no aparece en los rosters cacheados de ${anio} (${cacheados.join(', ')}): puede haber jugado otra división` : `no hay ninguna liga-temporada de ${iso} ${anio} cacheada`, 'pendiente', { nota: 'la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)' });
@@ -1254,17 +1323,481 @@ ${filaLiga}});
 }
 
 // ============================================================================
+// PREGUNTAS PARA CLAUDE (tools/alta-claude.mjs): cuáles van, y qué se hace con la respuesta
+// ============================================================================
+// Campo de alta-club.mjs -> tipo de pregunta de alta-claude.mjs. Las de cierre (anio, cierre,
+// fiscalYearStart) se juntan en UNA sola pregunta: son la misma fecha vista de tres lados.
+const TIPO_DE_CAMPO = { perimetro: 'perimetro', reportType: 'reportType', anio: 'cierre', cierre: 'cierre', fiscalYearStart: 'cierre', currency: 'moneda', fx: 'fx', sport: 'sport', name: 'name' };
+
+// ¿Esta pregunta se responde LEYENDO el documento (va a Claude, y si Claude no puede, es candidata a
+// preguntarle al club), o es una decisión de PRODUCTO (id heredado a renombrar, país Escocia, liga fuera
+// del catálogo, Panamá USD/PAB, dos entidades en la carpeta: las decide Guido, no un club)?
+function clasePregunta(c, r) {
+  const pais = PAISES[(r.carpeta || '').split('/')[1]];
+  if (!TIPO_DE_CAMPO[c.campo]) return 'producto';
+  if (c.campo === 'perimetro' && c.dosEntidades) return 'producto';
+  if (c.campo === 'currency' && pais && pais.preguntaMoneda) return 'producto';
+  if (c.campo === 'fx' && /presupuesto/i.test(c.pregunta || '')) return 'producto'; // premisa de un presupuesto: otra pregunta
+  return 'documento';
+}
+
+function preguntasParaClaude(r) {
+  const porTipo = new Map();
+  const todos = [...r.campos, ...r.ejercicio.campos];
+  for (const c of todos) {
+    const esNombre = c.campo === 'name' && c.estado === 'pendiente';
+    if (c.estado !== 'pregunta' && !esNombre) continue;
+    if (!esNombre && clasePregunta(c, r) !== 'documento') continue;
+    const tipo = TIPO_DE_CAMPO[c.campo];
+    const texto = esNombre ? `¿Cuál es el nombre legal completo de la entidad que emite estos estados (el script no lo encontró; candidato: "${c.valor}")?` : c.pregunta;
+    const x = porTipo.get(tipo) || { id: tipo, tipo, textos: [], campos: [], contexto: [] };
+    if (!x.textos.includes(texto)) x.textos.push(texto);
+    x.campos.push(c.campo);
+    if (c.fuente) x.contexto.push(`${c.campo}: ${String(c.fuente).slice(0, 300)}`);
+    porTipo.set(tipo, x);
+  }
+  const moneda = (r.ejercicio.campos.find((c) => c.campo === 'currency') || {}).valor;
+  return [...porTipo.values()].map((x) => ({
+    id: x.id, tipo: x.tipo, campos: x.campos, texto: x.textos.join(' / '), contexto: x.contexto.join(' | '),
+    ctxFx: x.tipo === 'fx' && MONEDAS[moneda] ? { moneda, rango: MONEDAS[moneda].rango, aLaPar: MONEDAS_A_LA_PAR.has(moneda) } : undefined,
+  }));
+}
+
+// De las respuestas verificadas, cuáles se APLICAN (desbloquean sin decidir nada de producto).
+// Una respuesta verificada que no desbloquea (el documento es un intermedio; el club es de rugby; la
+// moneda es la vieja, anterior al euro) queda guardada con su cita al lado de la pregunta, que sigue abierta.
+function aplicables(respuestas, r) {
+  const ov = {};
+  const pais = PAISES[(r.carpeta || '').split('/')[1]];
+  for (const x of respuestas || []) {
+    if (!x.resuelta) continue;
+    const c0 = (x.citas || [])[0] || {};
+    const fuente = `pág. ${c0.pagina}: "${String(c0.texto || '').slice(0, 160)}" (confianza ${x.confianza})`;
+    const v = { valor: x.valor, fuente };
+    if (x.tipo === 'cierre') ov.cierre = v;
+    else if (x.tipo === 'reportType' && ['official_balance_sheet', 'official_budget'].includes(x.valor)) ov.reportType = v;
+    else if (x.tipo === 'perimetro' && x.valor !== 'otra_entidad') ov.perimetro = v;
+    else if (x.tipo === 'moneda' && pais && x.valor === pais.moneda) ov.moneda = v;
+    else if (x.tipo === 'sport' && x.valor === 'futbol') ov.sport = v;
+    // Nombre en alfabeto no latino (griego, cirílico, hangul): verificado, pero NO se aplica. Los clubes
+    // cargados usan la transliteración latina ("Panathinaikos Athlitikos Omilos P.A.E."; en el backtest
+    // Claude devolvió el griego impreso, bien leído pero con otra convención) y una transliteración no se
+    // puede verificar contra el documento. Queda en el registro, con su cita, para quien complete `name`.
+    else if (x.tipo === 'name' && !/[^\u0000-\u024F\u1E00-\u1EFF\s]/.test(x.valor)) ov.name = v;
+    else if (x.tipo === 'fx') ov.fx = v;
+  }
+  return ov;
+}
+
+// ============================================================================
+// EL REGISTRO (Admin/altas-club.jsonl, ver tools/altas-registro.mjs)
+// ============================================================================
+const sha1 = (x) => createHash('sha1').update(x).digest('hex');
+let _estadoTransc = null;
+function estadoTranscripciones() {
+  if (_estadoTransc) return _estadoTransc;
+  _estadoTransc = new Map();
+  const p = resolve(ROOT, 'Admin/transcripciones-estado.jsonl');
+  if (existsSync(p)) for (const l of readFileSync(p, 'utf8').split('\n')) { try { const e = JSON.parse(l); if (e.md) _estadoTransc.set(e.md, e.estado); } catch { /* */ } }
+  return _estadoTransc;
+}
+
+function mdsDeCarpeta(paisCarpeta, clubCarpeta) {
+  const dir = resolve(ROOT, 'Clubes', paisCarpeta, clubCarpeta);
+  const out = [];
+  if (!existsSync(dir)) return out;
+  (function walk(d) {
+    for (const e of readdirSync(d)) {
+      const f = join(d, e);
+      if (statSync(f).isDirectory()) { walk(f); continue; }
+      if (!/\.md$/i.test(e) || /\.(previo-[a-z]+|gemini-check|claude-check|mistral-redo|t-[a-z]+)\.md$/i.test(e) || /^readme/i.test(e)) continue;
+      out.push(rel(f));
+    }
+  })(dir);
+  return out.sort();
+}
+
+// Orden de preferencia del documento BASE de una carpeta (mismo criterio que la prueba de
+// Admin/test-alta-club.md, ahora por script): primero los que son un estado contable anual por el
+// nombre (no presupuesto/acta/intermedio), después los de transcripción `listo`/`cargado` antes que los
+// `revisar`/`pendiente-segunda-voz`, y dentro de eso el ejercicio más reciente.
+function candidatosBase(mds) {
+  const est = estadoTranscripciones();
+  const rango = (m) => ({ listo: 0, cargado: 0, 'sin-verificar': 1 }[est.get(m)] ?? 2);
+  return mds.map((m) => ({ m, nb: NO_BALANCE.test(norm(basename(m))) ? 1 : 0, rk: rango(m), y: anioDelNombre(basename(m)) || 0 }))
+    .sort((a, b) => a.nb - b.nb || a.rk - b.rk || b.y - a.y || a.m.localeCompare(b.m)).map((x) => x.m);
+}
+
+function huellaCarpeta(paisCarpeta, clubCarpeta, mds, docForzado) {
+  const pais = PAISES[paisCarpeta] || {};
+  const iso = (pais.iso2 || 'xx').toLowerCase();
+  const archivos = [...mds, 'data/clubs.js', 'data/currency-map.js', `data/club-leagues/${iso}.js`, `tools/club-league-reference/${iso}.json`, 'tools/alta-club.mjs', 'tools/alta-claude.mjs', 'tools/carpetas-clubes.mjs'];
+  if (pais.moneda && SERIES_FX[pais.moneda]) archivos.push(`tools/fx-reference/${SERIES_FX[pais.moneda]}`);
+  const res = clubDeCarpeta(paisCarpeta, clubCarpeta);
+  const est = estadoTranscripciones();
+  return huellaEntradas({ archivos, extra: { resolucion: [res.via, res.clubId || null], docForzado: docForzado || null, anioForzado: ANIO_FORZADO, transcripcion: mds.map((m) => est.get(m) || null) } });
+}
+
+// Una entrada del registro a partir del análisis (ya con las respuestas de Claude aplicadas).
+function armarEntrada({ paisCarpeta, clubCarpeta, r, huella, detalle, claude, probados, error }) {
+  const carpeta = `Clubes/${paisCarpeta}/${clubCarpeta}/`;
+  const base = { carpeta, pais: paisCarpeta, club: clubCarpeta, fecha: new Date().toISOString(), huella, entradas: detalle };
+  if (error || !r) return { ...base, clubId: null, estado: 'faltan-datos', documento: null, detalle: error || 'sin análisis', preguntas: [], pendientes: [], resueltas: [], claude: null };
+  if (r.error) return { ...base, clubId: null, estado: 'faltan-datos', documento: r.documento, detalle: r.error, preguntas: [], pendientes: [], resueltas: [], claude: null };
+  const todos = [...r.campos, ...r.ejercicio.campos];
+  const clubId = r.club.existe ? r.club.clubId : (r.campos.find((c) => c.campo === 'id') || {}).valor;
+  const respPorTipo = new Map(((claude && claude.respuestas) || []).map((x) => [x.tipo, x]));
+  const preguntas = todos.filter((c) => c.estado === 'pregunta').map((c) => {
+    const clase = clasePregunta(c, r);
+    const x = clase === 'documento' ? respPorTipo.get(TIPO_DE_CAMPO[c.campo]) : null;
+    return {
+      campo: c.campo, clase, pregunta: c.pregunta,
+      claude: x ? { valor: x.valor, respuesta: x.respuesta, confianza: x.confianza, verificada: x.resuelta, motivoNoResuelta: x.motivoNoResuelta, citas: x.citas } : null,
+      // Candidata a Admin/dudas-por-club.md (preguntarle al CLUB): solo si es de lectura del documento y
+      // Claude ya la leyó y no la pudo sostener con una cita. Si Claude la contestó con cita pero la
+      // respuesta no desbloquea (intermedio, otro deporte, moneda vieja), no hay nada que preguntarle al
+      // club: la decisión es de Guido (usar otro documento, ¿entra ese deporte?, ¿se convierte?).
+      candidataDudas: clase === 'documento' && !!x && !x.resuelta,
+    };
+  });
+  const fxOk = todos.some((c) => (c.campo === 'fx' || c.campo === 'fxRef') && c.estado === 'ok');
+  const faltaFx = !fxOk && !preguntas.some((p) => p.campo === 'fx' || p.campo === 'currency');
+  const pendientes = todos.filter((c) => c.estado === 'pendiente').map((c) => ({ campo: c.campo, fuente: String(c.fuente || '').slice(0, 240), bloquea: (c.campo === 'fx' || c.campo === 'fxRef') && faltaFx }));
+  const resueltas = todos.filter((c) => /^claude-api/.test(String(c.fuente || '')) && c.estado === 'ok').map((c) => {
+    const x = respPorTipo.get(TIPO_DE_CAMPO[c.campo]) || {};
+    return { campo: c.campo, valor: c.valor, fuente: 'claude-api', modelo: claude && claude.modelo, confianza: x.confianza, respuesta: x.respuesta, citas: (x.citas || []).map(({ pagina, texto }) => ({ pagina, texto })) };
+  });
+  let estado;
+  if (r.club.existe) estado = 'existe';
+  else if (preguntas.length) estado = 'con-preguntas';
+  else if (faltaFx) estado = 'faltan-datos';
+  else estado = 'listo-para-alta';
+  return {
+    ...base, clubId, estado, documento: r.documento, anio: r.ejercicio.anio, cierre: r.ejercicio.cierre,
+    detalle: estado === 'faltan-datos' ? 'sin tipo de cambio para el cierre: ni declarado por el documento, ni en FX_CLOSE, ni en tools/fx-reference/ (correr fetch-fx-reference.mjs)' : undefined,
+    documentosProbados: probados && probados.length > 1 ? probados : undefined,
+    resumen: { ok: r.resumen.ok, pregunta: r.resumen.pregunta, pendiente: r.resumen.pendiente },
+    preguntas, pendientes, resueltas,
+    claude: claude ? { preguntasHuella: claude.preguntasHuella, fecha: claude.fecha, modelo: claude.modelo, costUsd: claude.costUsd, paginasEnviadas: claude.paginasEnviadas, entero: claude.entero, error: claude.error, respuestas: claude.respuestas } : null,
+  };
+}
+
+// Analiza una carpeta: elige el documento base (o usa el forzado), consulta/reusa a Claude, arma la entrada.
+// Devuelve { entrada, pendienteClaude } — `pendienteClaude` es la tarea a mandar a Claude si hace falta
+// (se corren todas juntas después, con concurrencia y tope de gasto).
+function analizarCarpeta(paisCarpeta, clubCarpeta, sitio, previo, docForzado = null) {
+  const mds = mdsDeCarpeta(paisCarpeta, clubCarpeta);
+  const { huella, detalle } = huellaCarpeta(paisCarpeta, clubCarpeta, mds, docForzado);
+  const ctxBase = { paisCarpeta, clubCarpeta, huella, detalle };
+  if (!mds.length && !docForzado) return { entrada: armarEntrada({ ...ctxBase, error: 'la carpeta no tiene ningún .md: falta transcribir (tools/pipeline.mjs / mistral-ocr-transcribe.mjs)' }) };
+  let r = null; const probados = [];
+  const orden = docForzado ? [docForzado] : candidatosBase(mds).slice(0, 4);
+  for (const m of orden) {
+    const x = analizar(m, sitio);
+    probados.push(x.documento);
+    if (!r) r = x;
+    // Un documento que no sirve de base (no es un balance anual, o no se le puede sacar el ejercicio)
+    // se cambia por el siguiente candidato: "usar otro documento de la misma carpeta" era la respuesta
+    // más frecuente a esas preguntas en la prueba de Admin/test-alta-club.md.
+    const malBase = x.error || (x.preguntas || []).some((p) => ['reportType', 'anio', 'cierre', 'fiscalYearStart'].includes(p.campo));
+    if (!malBase) { r = x; break; }
+  }
+  if (r.error || r.club.existe) return { entrada: armarEntrada({ ...ctxBase, r, probados }) };
+  const pregs = preguntasParaClaude(r);
+  const mdSha = sha1Archivo(r.md);
+  const preguntasHuella = sha1(JSON.stringify({ mdSha, pregs: pregs.map((p) => [p.tipo, p.texto]), MODELO }));
+  // Respuestas de Claude reusables si se hicieron sobre el MISMO .md y las MISMAS preguntas (y modelo).
+  // Un cambio del prompt de alta-claude.mjs NO las invalida solo (costaría volver a pagar todo): para
+  // rehacerlas, --forzar-claude.
+  let claude = previo && previo.claude && previo.claude.preguntasHuella === preguntasHuella && !previo.claude.error && !ARGS.includes('--forzar-claude') ? previo.claude : null;
+  if (claude || !pregs.length) return { entrada: finalizar({ ...ctxBase, r, probados, claude }), sinClaude: false };
+  return { entrada: armarEntrada({ ...ctxBase, r, probados }), pendienteClaude: { ...ctxBase, r, probados, pregs, preguntasHuella } };
+}
+
+// Con las respuestas de Claude (nuevas o reusadas): vuelve a analizar el documento con lo que desbloquea.
+function finalizar({ paisCarpeta, clubCarpeta, huella, detalle, r, probados, claude }) {
+  let r2 = r;
+  if (claude && claude.respuestas) {
+    const ov = aplicables(claude.respuestas, r);
+    if (Object.keys(ov).length) r2 = analizar(r.documento, cargarSitioCache(), ov);
+  }
+  return armarEntrada({ paisCarpeta, clubCarpeta, r: r2, huella, detalle, claude, probados });
+}
+
+let _sitio = null;
+function cargarSitioCache() { return (_sitio ??= cargarSitio()); }
+
+async function correrClaude(tareas) {
+  // Tope de gasto con concurrencia: cada trabajador reserva el costo estimado de su llamada ANTES de
+  // hacerla (bug de la primera corrida: con 4 en paralelo y el chequeo solo contra lo ya gastado, un tope
+  // de US$ 1,45 terminó en US$ 1,72).
+  let gastado = 0; let hechas = 0; let enCurso = 0; const out = [];
+  const estimado = () => (hechas ? gastado / hechas : 0.09);
+  const cola = [...tareas];
+  async function trabajador() {
+    while (cola.length) {
+      if (gastado + (enCurso + 1) * estimado() > TOPE_USD) return;
+      const t = cola.shift(); enCurso++;
+      const moneda = (t.r.ejercicio.campos.find((c) => c.campo === 'currency') || {}).valor;
+      const res = await preguntarAClaude({ md: readFileSync(resolve(ROOT, t.r.md), 'utf8'), preguntas: t.pregs, modelo: MODELO,
+        ctx: { carpeta: `${t.paisCarpeta}/${t.clubCarpeta}`, documento: basename(t.r.documento), pais: t.paisCarpeta, anio: t.r.ejercicio.anio, moneda } });
+      gastado += res.costUsd || 0; hechas++; enCurso--;
+      const claude = { preguntasHuella: t.preguntasHuella, fecha: new Date().toISOString(), modelo: res.model || MODELO, costUsd: Number((res.costUsd || 0).toFixed(5)), paginasEnviadas: res.paginasEnviadas, entero: res.entero, error: res.error, respuestas: res.respuestas };
+      out.push({ t, claude });
+      console.error(`  claude ${hechas}/${tareas.length} ${t.paisCarpeta}/${t.clubCarpeta}: ${res.respuestas.filter((x) => x.resuelta).length}/${t.pregs.length} resueltas, $${(res.costUsd || 0).toFixed(4)} (acumulado $${gastado.toFixed(3)})${res.error ? ' ERROR ' + res.error.slice(0, 120) : ''}`);
+    }
+  }
+  await Promise.all(Array.from({ length: 4 }, trabajador));
+  if (cola.length) console.error(`  Tope de gasto (--tope-usd ${TOPE_USD}) alcanzado: ${cola.length} carpetas quedaron sin preguntar.`);
+  return { resultados: out, gastado };
+}
+
+// ============================================================================
+// MODOS DE LA LÍNEA DE COMANDOS
+// ============================================================================
+async function modoTodos() {
+  const sitio = cargarSitioCache();
+  const { todasLasCarpetas } = await import('./carpetas-clubes.mjs');
+  let carpetas = todasLasCarpetas().filter((c) => c.via === 'nuevo' && !c.carpeta.startsWith('_'));
+  const solo = flagVal('--solo');
+  if (solo) carpetas = carpetas.filter((c) => `${c.pais}/${c.carpeta}`.includes(solo));
+  const previo = leerRegistro();
+  const nuevas = []; const tareas = []; let sinCambio = 0;
+  for (const c of carpetas) {
+    const k = `Clubes/${c.pais}/${c.carpeta}/`;
+    const p = previo.get(k);
+    const { huella } = huellaCarpeta(c.pais, c.carpeta, mdsDeCarpeta(c.pais, c.carpeta), null);
+    // Sin cambios de huella: la línea sigue valiendo. Solo se rehace si se pide Claude y a esa carpeta
+    // todavía le quedan preguntas de documento sin preguntar.
+    const faltaClaude = CLAUDE && p && (p.preguntas || []).some((q) => q.clase === 'documento' && !q.claude) || (CLAUDE && p && (p.pendientes || []).some((q) => q.campo === 'name') && !p.claude);
+    if (p && p.huella === huella && !FORZAR && !faltaClaude) { sinCambio++; continue; }
+    const x = analizarCarpeta(c.pais, c.carpeta, sitio, p);
+    if (x.pendienteClaude && CLAUDE) tareas.push(x.pendienteClaude);
+    nuevas.push(x.entrada);
+  }
+  // Las de Claude, en tanda (con tope de gasto) y después se rehace su entrada con lo que desbloquea.
+  if (tareas.length) {
+    // Primero las carpetas que Claude puede dejar LISTAS: sin preguntas de producto (que Claude no
+    // desbloquea) y con menos preguntas. Con tope de gasto, así rinde más cada dólar.
+    const prodCount = (t) => [...t.r.campos, ...t.r.ejercicio.campos].filter((c) => c.estado === 'pregunta' && clasePregunta(c, t.r) === 'producto').length;
+    // Las que solo tienen `name` pendiente (no bloquea) van al final.
+    const soloNombre = (t) => (t.pregs.every((p) => p.tipo === 'name') ? 1 : 0);
+    tareas.sort((a, b) => soloNombre(a) - soloNombre(b) || prodCount(a) - prodCount(b) || a.pregs.length - b.pregs.length || a.r.carpeta.localeCompare(b.r.carpeta));
+    const lim = LIMITE !== null ? tareas.slice(0, LIMITE) : tareas;
+    console.error(`Claude: ${lim.length} carpetas con preguntas de documento (modelo ${MODELO}, tope US$ ${TOPE_USD}).`);
+    const { resultados, gastado } = await correrClaude(lim);
+    for (const { t, claude } of resultados) {
+      const e = finalizar({ ...t, claude });
+      const i = nuevas.findIndex((n) => n.carpeta === e.carpeta);
+      nuevas[i] = e;
+    }
+    console.error(`Claude: gastado US$ ${gastado.toFixed(3)}.`);
+  }
+  guardarEnRegistro(nuevas);
+  console.log(`${carpetas.length} carpetas de club nuevo: ${nuevas.length} recalculadas, ${sinCambio} sin cambios de huella.`);
+  imprimirResumen();
+}
+
+function imprimirResumen() {
+  const s = resumenAltas();
+  console.log(`\nAdmin/altas-club.jsonl: ${s.total} carpetas — ${ESTADOS.map((e) => `${e} ${s.porEstado[e] || 0}`).join(' · ')}`);
+  console.log(`Preguntas abiertas por campo: ${Object.entries(s.preguntasPorCampo).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join(', ') || 'ninguna'}`);
+  console.log(`Campos resueltos por Claude con cita verificada: ${s.resueltasPorClaude}`);
+  if (s.listos.length) {
+    console.log(`\nListos para alta (${s.listos.length}):`);
+    for (const l of s.listos) console.log(`  ${String(l.clubId).padEnd(26)} ${l.documento}`);
+  }
+}
+
+// Candidatas a Admin/dudas-por-club.md: preguntas de LECTURA del documento que Claude leyó y no pudo
+// sostener con una cita (o dijo que el documento no lo dice). NO se escriben en dudas-por-club.md: la
+// lista es para que Guido decida. Con qué páginas se revisaron, para no volver a leerlas.
+function modoDudas() {
+  const reg = leerRegistro();
+  let n = 0; let sinPreguntar = 0; let producto = 0;
+  for (const e of [...reg.values()].sort((a, b) => a.carpeta.localeCompare(b.carpeta))) {
+    for (const q of e.preguntas || []) {
+      if (q.clase === 'producto') { producto++; continue; }
+      if (!q.claude) { sinPreguntar++; continue; }
+      if (!q.candidataDudas) continue;
+      n++;
+      console.log(`\n${e.carpeta}  (${e.clubId}, documento ${e.documento})`);
+      console.log(`  ? ${q.campo}: ${q.pregunta}`);
+      console.log(`    Claude (${e.claude && e.claude.modelo}): ${q.claude.valor || '(sin valor)'} — ${q.claude.respuesta || ''} [confianza ${q.claude.confianza}; ${q.claude.motivoNoResuelta}]`);
+      for (const c of q.claude.citas || []) console.log(`      cita pág. ${c.pagina} ${c.ok ? 'VERIFICADA' : 'NO verificada (' + c.motivo + ')'}: "${String(c.texto).slice(0, 160)}"`);
+      console.log(`    Páginas revisadas: ${e.claude && e.claude.entero ? 'el documento entero' : (e.claude && e.claude.paginasEnviadas || []).join(', ')}`);
+    }
+  }
+  console.log(`\n${n} preguntas candidatas a Admin/dudas-por-club.md (NO se escribieron: decide Guido). Además: ${sinPreguntar} de documento todavía sin preguntar a Claude (correr --todos --claude) y ${producto} de producto (las decide Guido, no un club).`);
+}
+
+// ============================================================================
+// BACKTEST: las mismas preguntas a clubes que YA están en el sitio, contra lo cargado
+// ============================================================================
+function cargarDatosSitio() {
+  const sandbox = { console: { log() {}, warn() {}, error() {} } }; sandbox.window = sandbox; sandbox.globalThis = sandbox;
+  sandbox.document = { createElement() { return {}; }, head: { appendChild() {} } };
+  const ctx = vm.createContext(sandbox);
+  const files = ['data/clubs.js', 'data/currency-map.js', 'data/club-leagues.js', ...readdirSync(resolve(ROOT, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+  for (const f of files) { try { vm.runInContext(readFileSync(resolve(ROOT, f), 'utf8'), ctx, { filename: f }); } catch { /* un archivo roto no frena el backtest */ } }
+  return vm.runInContext('({ clubs, sources, generic: window.CLUB_GENERIC_DATA || {} })', ctx);
+}
+
+// Perímetro "verdadero" de lo cargado: no hay un campo, está en la nota de la fuente o en la cabecera
+// del data file. Heurística por palabras; lo que no se puede decidir queda "?" y no cuenta para el acierto.
+function perimetroCargado(nota) {
+  const t = norm(nota || '');
+  const cons = /consolidad|consolidated|koncern|konzern|konsern|grupo consolidado|group accounts|\bgrupo\b/.test(t);
+  const ind = /individual|moderselskab|morselskap|no el grupo|no del grupo|no consolidad|separate|company only|sociedad (anonima )?deportiva sola|la sociedad|einzelabschluss|enkelvoudig/.test(t);
+  if (cons && !/no del koncern|no el koncern|no el consolidado|no del consolidado|no del grupo|no el grupo/.test(t) && !ind) return 'consolidado';
+  if (ind && !cons) return 'individual';
+  if (/no del koncern|no el koncern|no el consolidado|no del consolidado|no del grupo|no el grupo/.test(t)) return 'individual';
+  if (cons && ind) return '?';
+  return 'individual?'; // sin mención: casi siempre un club-asociación sin grupo (una sola entidad)
+}
+
+// Perímetro revisado A MANO donde la heurística de palabras de perimetroCargado() se equivoca (leyendo la
+// cabecera del data file y la nota de la fuente, 2026-09-30):
+//   fckobenhavn-dk 2024: la nota dice "distinta de la holding consolidada PARKEN (no cargada)": se cargó la
+//     entidad de fútbol sola, que NO consolida ("der ikke udarbejdet koncernregnskab") -> individual.
+//   osijek-hr 2025: se cargó el informe COMBINADO (NK Osijek s.d.d. + FM 20 d.o.o. + la escuela) -> grupo.
+const VERDAD_MANUAL = { 'fckobenhavn-dk|2024': { perimetro: 'individual' }, 'osijek-hr|2025': { perimetro: 'consolidado' } };
+const notaFuente = (src) => `${src.title || ''} ${src.label || ''} ${src.note || ''}`;
+// Lo cargado en el sitio para ese club-año, en el mismo formato que las respuestas de Claude.
+function verdadCargada(club, meta, y, nota) {
+  const [mm] = String(club.fiscalYearStart || '07-01').split('-').map(Number);
+  const mesCierre = mm === 1 ? 12 : mm - 1; // convención del sitio: el año del ejercicio es el de CIERRE
+  return {
+    perimetro: perimetroCargado(nota), reportType: meta.reportType,
+    cierre: `${y}-${pad2(mesCierre)}-${pad2(ultimoDia(y, mesCierre))}`,
+    moneda: meta.currency || club.reportingCurrency, name: club.name,
+  };
+}
+// Nombre: sin mayúsculas, acentos, espacios ni puntuación ("Cruzados SADP" = "Cruzados S.A.D.P."), y vale
+// que uno contenga al otro ("Club Atlético Vélez Sarsfield Asociación Civil" contiene al del sitio).
+// Perímetro: "individual?" (la fuente no dice nada: club de una sola entidad) cuenta como individual; "?" no cuenta.
+function aciertoBacktest(tipo, valor, v) {
+  if (tipo === 'name') { const a = norm(valor).replace(/[^a-z0-9]+/g, ''); const b = norm(v).replace(/[^a-z0-9]+/g, ''); return !!a && (a === b || a.includes(b) || b.includes(a)); }
+  if (tipo === 'perimetro') return v === '?' ? null : valor === v.replace('?', '');
+  return valor === v;
+}
+
+// Recalcula el acierto de todo Admin/altas-claude/backtest.jsonl con la verdad ACTUAL (gratis, sin API):
+// así un arreglo de la heurística de la verdad no obliga a volver a pagar las llamadas.
+function modoInformeBacktest() {
+  const datos = cargarDatosSitio();
+  const p = resolve(ROOT, 'Admin/altas-claude/backtest.jsonl');
+  const filas = readFileSync(p, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const vistos = new Map(); for (const f of filas) vistos.set(`${f.md}|${f.modelo}`, f); // la última corrida de cada documento
+  const por = {}; let citas = 0; let citasOk = 0; let costo = 0; const malas = [];
+  for (const f of vistos.values()) {
+    costo += f.costUsd || 0;
+    const club = datos.clubs[f.clubId]; const meta = datos.generic[f.clubId].fiscalYearMeta[f.anio];
+    const v = { ...verdadCargada(club, meta, f.anio, notaFuente((datos.sources || {})[meta.sourceId] || {})), ...(VERDAD_MANUAL[`${f.clubId}|${f.anio}`] || {}) };
+    for (const x of f.filas) {
+      const a = aciertoBacktest(x.tipo, x.valor, v[x.tipo]);
+      const t = (por[x.tipo] ??= { n: 0, resueltas: 0, resueltasBien: 0, resueltasSinVerdad: 0, abiertas: 0, abiertasBien: 0 });
+      t.n++;
+      if (x.resuelta) { t.resueltas++; if (a === true) t.resueltasBien++; else if (a === null) t.resueltasSinVerdad++; else malas.push(`${f.clubId} ${f.anio} ${x.tipo}: claude=${JSON.stringify(x.valor)} cargado=${JSON.stringify(v[x.tipo])}`); }
+      else { t.abiertas++; if (a) t.abiertasBien++; }
+      for (const c of x.citas || []) { citas++; if (c.ok) citasOk++; }
+    }
+  }
+  console.log(`Backtest: ${vistos.size} club-años, US$ ${costo.toFixed(3)} (US$ ${(costo / vistos.size).toFixed(4)} por club-año). Citas verificadas: ${citasOk}/${citas}.`);
+  let R = 0; let RB = 0; let N = 0;
+  for (const [k, t] of Object.entries(por)) {
+    R += t.resueltas; RB += t.resueltasBien; N += t.n;
+    console.log(`  ${k.padEnd(11)} resueltas ${t.resueltas}/${t.n}; de esas bien ${t.resueltasBien}/${t.resueltas - t.resueltasSinVerdad}${t.resueltasSinVerdad ? ` (+${t.resueltasSinVerdad} sin verdad)` : ''}; abiertas ${t.abiertas} (${t.abiertasBien} habrían estado bien)`);
+  }
+  console.log(`  TOTAL      resueltas ${R}/${N}; bien ${RB}`);
+  if (malas.length) { console.log('Resueltas que NO coinciden con lo cargado (revisar a mano: puede estar mal Claude o la vara):'); for (const m of malas) console.log('  ' + m); }
+}
+
+async function modoBacktest() {
+  const datos = cargarDatosSitio();
+  const est = estadoTranscripciones();
+  const { clubDeRuta } = await import('./carpetas-clubes.mjs');
+  const cand = [];
+  for (const [md, estado] of est) {
+    if (estado !== 'cargado') continue;
+    const abs = resolve(ROOT, md); if (!existsSync(abs)) continue;
+    const cr = clubDeRuta(md); if (!cr.clubId) continue;
+    const club = datos.clubs[cr.clubId]; const g = datos.generic[cr.clubId]; if (!club || !g) continue;
+    const y = anioDelNombre(basename(md)); const meta = y && g.fiscalYearMeta && g.fiscalYearMeta[y]; if (!meta || !meta.reportType) continue;
+    const tam = statSync(abs).size; if (tam < 8000 || tam > 600000) continue;
+    const txt = readFileSync(abs, 'utf8'); if (paginasDe(txt).length < 3) continue;
+    const src = (datos.sources || {})[meta.sourceId] || {};
+    // Qué documentos cita la fuente de ese año: el .md tiene que ser ESE (no otro documento del mismo año).
+    const citaDoc = JSON.stringify(src).includes(basename(md, '.md')) || JSON.stringify(src).includes(basename(md).replace(/\.md$/, '.pdf'));
+    cand.push({ md, clubId: cr.clubId, country: club.country, y, meta, club, nota: notaFuente(src), citaDoc, tam });
+  }
+  // Uno por país (el de sourceId que cita el documento, si hay), orden estable por sha1 para no elegir a mano.
+  const porPais = new Map();
+  for (const c of cand.sort((a, b) => (b.citaDoc - a.citaDoc) || sha1(a.md).localeCompare(sha1(b.md)))) if (!porPais.has(c.country)) porPais.set(c.country, c);
+  const saltear = Number(flagVal('--saltear') || 0);
+  const sel = [...porPais.values()].sort((a, b) => sha1(a.md).localeCompare(sha1(b.md))).slice(saltear, saltear + (LIMITE ?? 5));
+  const outDir = resolve(ROOT, 'Admin/altas-claude'); mkdirSync(outDir, { recursive: true });
+  const outPath = resolve(outDir, 'backtest.jsonl');
+  let costo = 0;
+  for (const c of sel) {
+    if (costo >= TOPE_USD) { console.error(`Tope de gasto alcanzado (US$ ${TOPE_USD}).`); break; }
+    const verdad = verdadCargada(c.club, c.meta, c.y, c.nota);
+    const pregs = [
+      { id: 'perimetro', tipo: 'perimetro', texto: '¿Qué estados carga el sitio como "el club": los individuales o los consolidados?' },
+      { id: 'reportType', tipo: 'reportType', texto: '¿Qué tipo de documento es?' },
+      { id: 'cierre', tipo: 'cierre', texto: '¿Cuál es la fecha de cierre del ejercicio que presenta el documento?' },
+      { id: 'moneda', tipo: 'moneda', texto: '¿En qué moneda están expresados los importes?' },
+      { id: 'name', tipo: 'name', texto: '¿Cuál es el nombre legal completo de la entidad que emite los estados?' },
+    ];
+    const res = await preguntarAClaude({ md: readFileSync(resolve(ROOT, c.md), 'utf8'), preguntas: pregs, modelo: MODELO, tarea: 'alta-club-backtest', ctx: { carpeta: dirname(c.md).replace(/^Clubes\//, ''), documento: basename(c.md), pais: c.country } });
+    costo += res.costUsd || 0;
+    const filas = res.respuestas.map((x) => {
+      const v = verdad[x.tipo];
+      const acierto = aciertoBacktest(x.tipo, x.valor, v);
+      return { tipo: x.tipo, valor: x.valor, verdad: v, acierto, resuelta: x.resuelta, confianza: x.confianza, motivoNoResuelta: x.motivoNoResuelta, citas: x.citas.map((q) => ({ pagina: q.pagina, ok: q.ok, motivo: q.motivo, texto: q.texto.slice(0, 160) })) };
+    });
+    appendFileSync(outPath, JSON.stringify({ ts: new Date().toISOString(), md: c.md, clubId: c.clubId, anio: c.y, modelo: res.model || MODELO, costUsd: res.costUsd, paginasEnviadas: res.paginasEnviadas, entero: res.entero, error: res.error, filas }) + '\n');
+    console.log(`${c.clubId} ${c.y} (${c.md}) $${(res.costUsd || 0).toFixed(4)}${res.error ? ' ERROR ' + res.error : ''}`);
+    for (const f of filas) console.log(`   ${f.tipo.padEnd(10)} ${f.resuelta ? 'RESUELTA ' : 'abierta  '} ${f.acierto === null ? '  ?' : f.acierto ? ' ok' : 'MAL'}  claude=${JSON.stringify(f.valor)} cargado=${JSON.stringify(f.verdad)}${f.resuelta ? '' : '  (' + f.motivoNoResuelta + ')'}`);
+  }
+  console.log(`\nCosto de esta corrida: US$ ${costo.toFixed(3)}. Detalle en Admin/altas-claude/backtest.jsonl (se agrega, no se pisa).`);
+}
+
+// ============================================================================
 // MAIN
 // ============================================================================
-function main() {
+async function main() {
+  if (BACKTEST) return modoBacktest();
+  if (ARGS.includes('--informe-backtest')) return modoInformeBacktest();
+  if (DUDAS) return modoDudas();
+  if (TODOS) return modoTodos();
+  if (RESUMEN && !DOCS.length) return imprimirResumen();
   if (!DOCS.length) {
-    console.error('Uso: node tools/alta-club.mjs "<Clubes/País/Club/doc.pdf|.md>" [--anio N] [--escribir] [--resumen] [--anotar-misses]');
+    console.error('Uso: node tools/alta-club.mjs "<Clubes/País/Club/doc.pdf|.md>" [--anio N] [--escribir] [--claude] [--anotar-misses]\n     node tools/alta-club.mjs --todos [--claude] [--tope-usd 1] [--limit N] [--solo <texto>] [--forzar]\n     node tools/alta-club.mjs --resumen | --dudas | --backtest-claude [--limit 5] [--saltear N]');
     process.exit(1);
   }
   if (ESCRIBIR && DOCS.length > 1) { console.error('--escribir va de a un documento por vez.'); process.exit(1); }
-  const sitio = cargarSitio();
-  const carpetas = mapaCarpetas();
-  const resultados = DOCS.map((d) => analizar(d, sitio, carpetas));
+  const sitio = cargarSitioCache();
+  const previo = leerRegistro();
+  const resultados = []; const entradas = [];
+  for (const d of DOCS) {
+    const r0 = analizar(d, sitio);
+    if (r0.error && !r0.carpeta) { resultados.push(r0); continue; }
+    const [, paisCarpeta, clubCarpeta] = (r0.carpeta || '').split('/');
+    if (!paisCarpeta || clubCarpeta.startsWith('_')) { resultados.push(r0); continue; }
+    // El registro se actualiza SIEMPRE (pedido de Guido: que lo haga el script, no quien lo corre).
+    const x = analizarCarpeta(paisCarpeta, clubCarpeta, sitio, previo.get(r0.carpeta), r0.md || r0.documento);
+    let entrada = x.entrada;
+    if (x.pendienteClaude && CLAUDE) {
+      const { resultados: rs } = await correrClaude([x.pendienteClaude]);
+      if (rs[0]) entrada = finalizar({ ...x.pendienteClaude, claude: rs[0].claude });
+    }
+    entradas.push(entrada);
+    // Lo que se imprime/escribe es el análisis CON las respuestas verificadas de Claude aplicadas.
+    const ov = entrada.claude ? aplicables(entrada.claude.respuestas, r0) : {};
+    resultados.push(Object.keys(ov).length ? analizar(r0.documento, sitio, ov) : r0);
+  }
+  if (entradas.length) guardarEnRegistro(entradas);
 
   if (RESUMEN) {
     for (const r of resultados) {
@@ -1292,4 +1825,5 @@ function main() {
   console.error(`\nAlta escrita (${res.escritos.join(', ')}). Auditoría: ${res.audit}. No se commiteó nada.`);
 }
 
-main();
+// Solo corre como comando: importado (pipeline.mjs --resumen importa resumenAltas) no hace nada.
+if (import.meta.url === `file://${process.argv[1]}`) await main();

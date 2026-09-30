@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 311 — Registro de altas por script y preguntas del alta resueltas por Claude con cita verificada (2026-09-30)
+
+- `tools/altas-registro.mjs` (nuevo) + `alta-club.mjs --todos`: `Admin/altas-club.jsonl`, una línea por carpeta de club nuevo con estado (`listo-para-alta` / `con-preguntas` / `faltan-datos` / `existe`), preguntas, pendientes y la huella de sus entradas (`.md`, series de fx, rosters, `data/clubs.js`); si algo cambia, se recalcula solo. `pipeline.mjs --resumen` lo muestra. Hoy, de 212 carpetas: 77 listos para alta, 63 con preguntas, 72 esperando datos (63 sin `.md`).
+- `tools/alta-claude.mjs` (nuevo, `alta-club.mjs --claude`): las preguntas del alta (perímetro, tipo de documento, cierre, moneda, nombre legal) van a Claude por API, una llamada por club, y cada respuesta tiene que traer una cita textual que el script verifica en la página del `.md`; sin cita verificada no se da por resuelta. Backtest sobre 13 club-años cargados: 60/62 coinciden con producción (los 2 restantes son de convención de nombre), 71/71 citas verificadas, US$ 0,088 por club. Corrida real: 36 carpetas, US$ 1,73, 17 pasaron a listo. `--dudas` lista lo que queda (12, casi todo criterio de perímetro); no escribe en `dudas-por-club.md`. Informe: `Admin/test-altas-claude.md`.
+- La liga ya no bloquea el alta (queda `null` con nota); `alta-club.mjs` usa `carpetas-clubes.mjs`; rangos plausibles de fx ajustados a las series reales (TRY [0,5; 70]).
+
 ## Versión 310 — Lotes de Claude de hasta 8 páginas (2026-09-30)
 
 - `resolver-inventario.mjs`: Claude recibe como máximo 8 páginas por llamada. Una página densa de escaneo son ~2.300 tokens de salida (Real Madrid 2005-06: 18 páginas = 41.763 tokens, US$ 0,45) y el tope es 64.000: con lotes de 18-25 páginas un intento se cortaba por `max_tokens`, se pagaba y se tiraba. El costo por página no cambia.

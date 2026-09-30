@@ -82,6 +82,15 @@ perdieron sino que se descartaron:
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
     5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
 
+112. ANTES DE LA PRIMERA ALTA ESCRITA POR SCRIPT (to-do 108, etapa 6), decisiones de Guido y datos que faltan:
+    - Revisar 5 perímetros que Claude resolvió como CONSOLIDADO (criterio aplicado, no dato leído): Inter, Atalanta, Go Ahead Eagles,
+      Başakşehir, Trabzonspor. Y las 12 preguntas de `node tools/alta-club.mjs --dudas` (casi todas de perímetro, confianza 0,75).
+    - Series locales de tipo de cambio para EUR, DKK, GBP, SEK, PLN y las demás que usen clubes nuevos (hoy solo hay ARS, BRL, COP, NOK, CZK,
+      CHF, TRY, RUB, UAH, KRW): 9 carpetas quedan en `faltan-datos` por fx (Juventus 2012, Groningen 2013, Rio Ave 2015...).
+    - `FX_PLAUSIBLE_RANGE` de `data/currency-map.js`: COP [2500, 5000] -> [1600, 5500] (la serie llegó a 5.061 en 2022) y BRL [3, 7] -> [1,4; 7,5]
+      antes de cargar años brasileños anteriores a 2015 (tocar data/ obliga a subir ASSET_V y regenerar).
+    - Preguntar las ~50 carpetas que faltan: `node tools/alta-club.mjs --todos --claude --tope-usd 3` (~US$ 2,4).
+
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
     - **Junto a cada PDF/`.md` de `Clubes/` se acumulan archivos generados**: `<md>.briefing.json`, `<md>.rubros.json`, `<md>.jev.json`, `<md>.previo-*.md`, `<md>.mistral-redo.md`,

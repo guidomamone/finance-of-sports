@@ -62,6 +62,9 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 ## 6. Cargar y publicar
 - `proponer-carga.mjs`: qué filas cargaría (elige la nota que abre cada línea del estado de resultados, `--tabla ancla-listas`); solo mide, no escribe nada del sitio.
 - `alta-club.mjs`: club nuevo (entrada de `data/clubs.js`, moneda, cierre, tipo de cambio, liga); propone por defecto, `--escribir` solo sin preguntas abiertas.
+- `alta-claude.mjs`: las preguntas del alta a Claude por API, con cita del documento que el script verifica. `altas-registro.mjs`: el registro `Admin/altas-club.jsonl` (lo lee `pipeline.mjs --resumen`).
+- `carpetas-clubes.mjs`: la única regla "¿de qué club es esta carpeta de Clubes/?" (la usan onboard, el registro, alta-club y audit.js).
+- `huellas.mjs`: si un `.jev.json` / `.categorias.json` sigue correspondiendo a su entrada; si no, se rehace.
 - `gasto.mjs`: cuánto se gastó por motor, día y documento, y qué se pagó y ya no está en disco. Gratis.
 - `generate-club-index.js`, `generate-fuentes-page.js`, `generate-fuentes-index.js`, `generate-rankings.js`, `generate-como-corre-stats.js`: regeneran páginas y tablas derivadas de los datos. Nunca se editan a mano sus resultados.
 - `audit.js` (+ `audit-ignore.json`): la auditoría.

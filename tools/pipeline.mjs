@@ -57,6 +57,7 @@ import { statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { numeroDe, filasSuma, noEsRubro, ladosPorEstructura, columnaDeImportes } from './filas-rubro.mjs';
 import { jevAlDia, categoriasAlDia } from './huellas.mjs';
+import { resumenAltas } from './altas-registro.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -86,6 +87,15 @@ function refreshLedger() {
   return readJsonl(statePath);
 }
 
+// Altas de clubes nuevos (Admin/altas-club.jsonl, lo escribe tools/alta-club.mjs por script: qué club está listo para darse de alta,
+// cuál tiene preguntas y cuál espera datos). Se muestra junto al inventario para que una sesión nueva lo vea sin acordarse de nada.
+function printAltas() {
+  try {
+    const a = resumenAltas();
+    if (a.total) console.log(`\nAltas de clubes nuevos (Admin/altas-club.jsonl, ${String(a.fecha).slice(0, 10)}): ${Object.entries(a.porEstado).map(([k, v]) => `${k} ${v}`).join(' · ')}${a.listos.length ? `\n  listos para alta: ${a.listos.map((l) => l.clubId).join(', ')}` : ''}\n  (recalcular: node tools/alta-club.mjs --todos)`);
+  } catch (err) { console.log(`\n(no pude leer el registro de altas: ${err.message})`); }
+}
+
 function printSummary(ledger, title) {
   const notLoaded = ledger.filter((e) => !e.cargado);
   const by = {};
@@ -95,7 +105,7 @@ function printSummary(ledger, title) {
 }
 
 let ledger = refreshLedger();
-if (SUMMARY_ONLY) { printSummary(ledger, 'Estado del inventario'); process.exit(0); }
+if (SUMMARY_ONLY) { printSummary(ledger, 'Estado del inventario'); printAltas(); process.exit(0); }
 
 // ---- selección: lo que no está cargado y todavía no llegó al final del camino
 const listSet = listFile ? new Set(readFileSync(resolve(root, listFile), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'))) : null;
@@ -280,3 +290,4 @@ const conReserva = mine.filter((e) => (e.reserva || []).length);
 if (conReserva.length) console.log(`  ${conReserva.length} con "reserva" (páginas que solo validó Claude; cerrar con sum-check al onboardear): ver "reserva" en Admin/transcripciones-estado.jsonl`);
 for (const e of mine.filter((x) => !['listo-para-jev', 'sin-rubros'].includes(x.jev || x.estado))) console.log(`  - ${e.estado.toUpperCase()}  ${e.pdf}\n      ${(e.detalle || '').slice(0, 200)}`);
 printSummary(ledger, 'Inventario completo');
+printAltas();
