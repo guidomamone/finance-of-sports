@@ -157,6 +157,9 @@ const RELEVANT_KEYWORDS = [
   'доход', 'дохід', 'выручк', 'виручк', 'расход', 'витрат', 'затрат', 'прибыл', 'прибут', 'убыт', 'збит', 'результат',
   'vynos', 'naklad', 'trzb', 'vysledek', 'zisk', 'ztrat', 'winst', 'verlies', 'opbrengst', 'omzet', 'baten', 'lasten', 'przychod', 'wynik',
   '収益', '収入', '費用', '支出', '損益', '営業', '수익', '매출', '비용', '손익', '收入', '费用', '利润', '营业',
+  // 2026-09-30 (piloto C, Galatasaray): el estado de resultados turco se titula "Kar veya Zarar" / "Kâr veya Zarar Kısmı" y la cifra de
+  // ventas es "Hasılat"; 'gelir' solo no alcanzaba porque el título quedaba en la fila, no en la sección.
+  'kar veya zarar', 'hasilat', 'zarar',
 ];
 
 // Minúsculas, sin acentos/diéresis y con los dígrafos alemanes/daneses reducidos a su forma sin signo.

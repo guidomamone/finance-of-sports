@@ -21,6 +21,7 @@ que dice `ESTADO.md` era verdad ese día.
 - `tools/huellas.mjs` (nuevo): `.jev.json` guarda la huella de su `.rubros.json`, y `.categorias.json` la de los dos. Una etapa rehace su salida si la huella falta o no coincide; Claude no recibe un documento cuyo `.jev.json` está desactualizado. Los documentos preparados sin categorizar entran solos en la siguiente corrida (`needsCategorize`).
 - `resolver-inventario.mjs`: un lote que Claude corta por `max_tokens` se reparte en mitades (Real Madrid 2005-06: 18 páginas densas en un lote dejaban el documento en `revisar`).
 - `glosar-rubros.mjs --listos` ya no saltea las listas con un `.jev.json` viejo.
+- Piloto C: el estado de resultados ucraniano en nominativo ("ФІНАНСОВІ РЕЗУЛЬТАТИ") y el turco ("Kar veya Zarar", "Hasılat") no se reconocían (Polissya y Galatasaray quedaban `sin-rubros`): regex en `pipeline.mjs`, `proponer-carga.mjs` y `extract-table-rows.mjs`. El año de un club que `onboard.mjs` no identifica se tomaba del PRIMER año del nombre ("2023-24" -> 2023): ahora el de cierre, misma regla que `guessYear()`. `gasto.mjs` ya no cuenta dos veces el Mistral que el resolver hace adentro de la validación.
 
 ## Versión 307 — Validación paga solo en páginas con números y dudosas, Claude después de Jev, alta de club por script, tabla por ancla, lado corregido (2026-09-30)
 

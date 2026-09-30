@@ -170,8 +170,15 @@ function clubAndYear(pdf) {
   const m = (r.stdout || '').match(/prepare-onboarding\.mjs (\S+) (\d{4}) /);
   if (m) return { club: m[1], year: m[2] };
   const folder = basename(dirname(pdf)).toLowerCase().replace(/[^a-z0-9]+/g, '-');
-  const y = basename(pdf).match(/(20\d{2}|19\d{2})/);
-  return { club: folder, year: y ? y[1] : '0' };
+  // MISMA regla de año que guessYear() de tools/onboard.mjs (mantenerlas iguales): fecha ISO -> su año; rango "2023-24" / "2019-2020" ->
+  // el año de CIERRE; si no, el único año de 4 dígitos. BUG REAL del piloto C: acá se tomaba el PRIMER año, y "relatorio-contas-2023-24"
+  // de Nacional (club ambiguo para onboard.mjs: coincide con Internacional y Atlético Nacional) quedó como ejercicio 2023 en vez de 2024.
+  const f = basename(pdf);
+  const iso = f.match(/(?<!\d)(\d{4})[-_](0[1-9]|1[0-2])[-_](0[1-9]|[12]\d|3[01])(?!\d)/);
+  let year = iso ? iso[1] : null;
+  if (!year) { const r = f.match(/(\d{4})[-_](\d{2,4})(?!\d)/); if (r) { const end = r[2].length === 4 ? Number(r[2]) : Number(r[1].slice(0, 2) + r[2]); if (r[2].length === 4 || end === Number(r[1]) + 1) year = String(end); } }
+  if (!year) { const y = f.match(/(20\d{2}|19\d{2})/); year = y ? y[1] : '0'; }
+  return { club: folder, year };
 }
 
 // Lado de una tabla (ingreso o gasto) por las palabras de su título y sus columnas, en varios idiomas. Si aparecen las dos
@@ -186,7 +193,7 @@ function sideOfTable(t) {
 }
 // ¿La tabla es (parte de) un ESTADO DE RESULTADOS / de recursos y gastos? Sin al menos una así, el documento no es un estado
 // financiero con rubros que categorizar (actas, memorias narrativas, certificaciones): un acta del Aris colaba 16 "rubros".
-const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos|финансовых результатах|прибылях и убытках|фінансових результатах|прибутки та збитки|vykaz zisku a ztraty|zisku a ztraty|winst-? ?en-? ?verlies|損益計算書|収支計算書|손익계산서|利润表|损益表|^(recursos|gastos|ingresos|egresos|revenues?|expenses|income|expenditure)$|concepto (del )?(ingreso|gasto)|income and expenditure|rendimentos e gastos|rendimentos e perdas|gastos e perdas|demonstracao dos resultados/;
+const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|kar veya zarar|финансов[а-я]* результат|фінансов[а-яії]* результат|zysk|vysledovka|vykaz zisku|tulos|финансовых результатах|прибылях и убытках|фінансових результатах|прибутки та збитки|vykaz zisku a ztraty|zisku a ztraty|winst-? ?en-? ?verlies|損益計算書|収支計算書|손익계산서|利润表|损益表|^(recursos|gastos|ingresos|egresos|revenues?|expenses|income|expenditure)$|concepto (del )?(ingreso|gasto)|income and expenditure|rendimentos e gastos|rendimentos e perdas|gastos e perdas|demonstracao dos resultados/;
 const isStatement = (t) => STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`));
 const isTotal = (l) => /^\s*\**\s*(total|subtotal|sum\b|suma)/i.test(String(l || '')) || /^\s*\**\s*(totale|totaal|gesamt|ukupno|total\s)/i.test(String(l || ''));
 const hasNumber = (vals) => vals.some((v) => /\d/.test(String(v)));

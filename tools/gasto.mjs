@@ -68,13 +68,24 @@ for (const r of readJsonl(motores.mistral).filter(enRango)) {
 // OJO: la misma validación aparece más de una vez en el historial — después de categorizar, el pipeline vuelve a escribir el registro
 // con el campo `jev` agregado, copiando `costoUsd` y `method` (medido: Botafogo 2025 figuraba con $2,71 en "2 intentos" cuando se pagó
 // $1,35 una sola vez). Se cuenta una sola vez cada par (md, método, costo).
+// OJO 2: cuando el resolver transcribe un PDF sin .md (Mistral con la ruta REAL, no un temporal), ese costo entra también en el
+// `costoUsd` de la validación (el resolver suma todo lo que gastó en el documento). Se descuenta de la validación la transcripción de
+// Mistral de ese PDF hecha entre la validación anterior y esta (medido en el piloto C: Groningen figuraba $0,14 + $0,14 con un solo
+// Mistral de $0,14 y 0 páginas a Claude).
+const mistralPorPdf = {};
+for (const r of readJsonl(motores.mistral)) if (r.pdf && !r.pdf.startsWith('/')) (mistralPorPdf[r.pdf] ??= []).push({ ts: String(r.ts), usd: Number(r.costUsd) || 0 });
+const ultimaVerif = {};
 const yaContado = new Set();
-for (const v of readJsonl('Admin/transcripciones-verificaciones.jsonl').filter(enRango)) {
-  if (!v.md || !v.costoUsd) continue;
+for (const v of readJsonl('Admin/transcripciones-verificaciones.jsonl')) {
+  if (!v.md) continue;
+  const pdf = v.md.replace(/\.md$/, '.pdf');
+  const desde = ultimaVerif[pdf] || ''; ultimaVerif[pdf] = String(v.ts);
+  if (!v.costoUsd || !enRango(v)) continue;
   const clave = `${v.md}|${v.method}|${v.costoUsd}`;
   if (yaContado.has(clave)) continue; yaContado.add(clave);
-  const d = doc(v.md.replace(/\.md$/, '.pdf'));
-  d.validacion += Number(v.costoUsd) || 0; d.intentosValidacion++;
+  const adentro = (mistralPorPdf[pdf] || []).filter((m) => m.ts > desde && m.ts <= String(v.ts)).reduce((a, m) => a + m.usd, 0);
+  const d = doc(pdf);
+  d.validacion += Math.max(0, (Number(v.costoUsd) || 0) - adentro); d.intentosValidacion++;
 }
 
 // ---------------------------------------------------------------- pagado sin .md
