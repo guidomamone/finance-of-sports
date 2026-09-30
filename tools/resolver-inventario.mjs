@@ -46,7 +46,7 @@
 //   node tools/resolver-inventario.mjs --dir Clubes/Chile --ejecutar
 //   node tools/resolver-inventario.mjs --ejecutar --limit 20 --estado revisar
 //   node tools/resolver-inventario.mjs --ejecutar --pdf "Clubes/Chile/X/estados-financieros-2022.pdf"
-//   node tools/resolver-inventario.mjs --ejecutar --lista Admin/resolver-piloto.txt
+//   node tools/resolver-inventario.mjs --ejecutar --lista Admin/piloto-d.txt
 //   node tools/resolver-inventario.mjs --ejecutar --concurrencia 3 --dir Clubes/Bélgica   # 3 documentos a la vez
 // ============================================================================
 

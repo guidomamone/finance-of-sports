@@ -96,7 +96,7 @@ perdieron sino que se descartaron:
     - **Junto a cada PDF/`.md` de `Clubes/` se acumulan archivos generados**: `<md>.briefing.json`, `<md>.rubros.json`, `<md>.jev.json`, `<md>.previo-*.md`, `<md>.mistral-redo.md`,
       `<md>.claude-check.md`, `<md>.gemini-check.md`, `<md>.t-*.md` (tests). Están gitignoreados pero ensucian las carpetas; convendría una subcarpeta por club (por ejemplo
       `Clubes/<País>/<Club>/_generados/`) y que las tools lean y escriban ahí.
-    - **`Admin/`**: siete listas de pilotos (`resolver-piloto*.txt`, `resolver-prueba-hibrido.txt`, `pipeline-prueba.txt`, `test-motores-lista.txt`) que ya cumplieron su función, informes de
+    - **`Admin/`**: las listas de pilotos viejas ya están en `Admin/Archive/pilotos/` (2026-09-30). Quedan los informes de
       tests (`test-*.md`, `test-*.jsonl`) que conviene juntar en una carpeta, y documentos internos viejos que hay que archivar siguiendo la regla de `CLAUDE.md`
       (`Admin/Archive/`, sacándole antes lo que todavía sirve a `CONVENCIONES.md`/skills/`TODO.md`).
     - **Raíz y otras carpetas** (`Prototyping/`, `auditorias/`, archivos sueltos): revisar cuáles siguen vivos. Recordá que lo suelto en la raíz se PUBLICA (`netlify.toml`).

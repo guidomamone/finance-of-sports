@@ -21,3 +21,4 @@ Qué hay hoy:
   Sus 8 puntos se cerraron entre las Versiones 158 y 165. Archivado en la 196.
 - `QUE-ES-REAL-historico.md` — la sección "qué es real por club" escrita a mano, tal como estaba
   hasta la Versión 120. Hoy se genera con `node tools/generate-club-index.js`. Archivado en la 196.
+- `pilotos/` — listas de PDFs de los pilotos del pipeline de las Versiones 305-306 (2026-09-29/30). Ya cumplieron su función; los resultados de cada piloto están en `Admin/CHANGELOG.md`.

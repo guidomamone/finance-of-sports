@@ -139,7 +139,7 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 ```bash
 cd ~/Claude/Projects/finance-of-sports && git switch inventario-transcripciones
 node tools/pipeline.mjs --resumen                                          # estado del inventario, sin gastar nada
-node tools/pipeline.mjs --lista Admin/piloto-10.txt --limit 10             # ensayo (estimación de costo, sin API)
+node tools/pipeline.mjs --lista Admin/piloto-d.txt --limit 10              # ensayo (estimación de costo, sin API)
 node tools/pipeline.mjs --ejecutar --lista Admin/mi-piloto.txt --limit 10 --concurrencia 3 2>&1 | grep -v "^Syntax"   # lo corre Guido
 node tools/gasto.mjs --desde 2026-09-30 --lista Admin/mi-piloto.txt         # cuánto costó, por documento (gratis)
 node tools/alta-club.mjs "<ruta del PDF>"                                  # qué haría falta para dar de alta el club (propuesta, no escribe)
