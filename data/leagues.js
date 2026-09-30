@@ -100,6 +100,20 @@ const COUNTRIES = {
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
   NL: { name:'Países Bajos', key:'country.NL', flag:'🇳🇱', region:'europa' },
   PE: { name:'Perú',      key:'country.PE', flag:'🇵🇪', region:'sudamerica' },
+  // 2026-09-30 (Versión 315), DECISIÓN DE GUIDO que cambia la regla de arriba: se agregan los países y ligas de los clubes que el pipeline
+  // va a dar de alta (tools/alta-club.mjs), ANTES de tener ejercicios cargados — "agregá las ligas, no pasa nada si están vacías luego"
+  // (el sitio no tiene tráfico todavía y se está probando el proceso). Sin su liga en este catálogo, alta-club.mjs frenaba 44 clubes.
+  AT: { name:'Austria',   key:'country.AT', flag:'🇦🇹', region:'europa' },
+  CH: { name:'Suiza',     key:'country.CH', flag:'🇨🇭', region:'europa' },
+  CN: { name:'China',     key:'country.CN', flag:'🇨🇳', region:'asia' },
+  CZ: { name:'República Checa', key:'country.CZ', flag:'🇨🇿', region:'europa' },
+  EC: { name:'Ecuador',   key:'country.EC', flag:'🇪🇨', region:'sudamerica' },
+  IT: { name:'Italia',    key:'country.IT', flag:'🇮🇹', region:'europa' },
+  KR: { name:'Corea del Sur', key:'country.KR', flag:'🇰🇷', region:'asia' },
+  NO: { name:'Noruega',   key:'country.NO', flag:'🇳🇴', region:'europa' },
+  PT: { name:'Portugal',  key:'country.PT', flag:'🇵🇹', region:'europa' },
+  RU: { name:'Rusia',     key:'country.RU', flag:'🇷🇺', region:'europa' },
+  TR: { name:'Turquía',   key:'country.TR', flag:'🇹🇷', region:'europa' },
 };
 
 // ---------------------------------------------------------------------------
@@ -185,6 +199,32 @@ const LEAGUES = {
   // mismo criterio que España/Alemania. Nombre sin sponsor (regla de cabecera de este archivo).
   'nl-eredivisie':     { name:'Eredivisie',             full:'Eredivisie de los Países Bajos',      country:'NL', sport:'futbol', tier:1 },
   'pe-liga1':          { name:'Liga 1',                full:'Liga 1 de Perú',                      country:'PE', sport:'futbol', tier:1 },
+  // 2026-09-30 (Versión 315): ligas de los clubes que tools/alta-club.mjs va a dar de alta, agregadas antes de tener ejercicios (decisión de
+  // Guido, ver COUNTRIES). Los ids son los que ya usa la caché de rosters (tools/club-league-reference/<iso2>.json). Nombres sin sponsor.
+  'at-bundesliga':     { name:'Bundesliga',            full:'Bundesliga de Austria',               country:'AT', sport:'futbol', tier:1 },
+  'at-2liga':          { name:'2. Liga',               full:'2. Liga de Austria',                  country:'AT', sport:'futbol', tier:2 },
+  'ch-superleague':    { name:'Super League',          full:'Super League de Suiza',               country:'CH', sport:'futbol', tier:1 },
+  'cn-csl':            { name:'Super League',          full:'Superliga de China',                  country:'CN', sport:'futbol', tier:1 },
+  'cn-league1':        { name:'League One',            full:'China League One',                    country:'CN', sport:'futbol', tier:2 },
+  'cz-firstleague':    { name:'Primera Liga',          full:'Primera Liga checa',                  country:'CZ', sport:'futbol', tier:1 },
+  'cz-fnl':            { name:'FNL',                   full:'Fotbalová národní liga',              country:'CZ', sport:'futbol', tier:2 },
+  'dk-1division':      { name:'1. Division',           full:'1. Division de Dinamarca',            country:'DK', sport:'futbol', tier:2 },
+  'ec-seriea':         { name:'Serie A',               full:'Serie A de Ecuador',                  country:'EC', sport:'futbol', tier:1 },
+  'ec-serieb':         { name:'Serie B',               full:'Serie B de Ecuador',                  country:'EC', sport:'futbol', tier:2 },
+  'gb-leagueone':      { name:'League One',            full:'EFL League One',                      country:'GB', sport:'futbol', tier:3 },
+  'gb-leaguetwo':      { name:'League Two',            full:'EFL League Two',                      country:'GB', sport:'futbol', tier:4 },
+  'gr-superleague2':   { name:'Super League 2',        full:'Super League 2 de Grecia',            country:'GR', sport:'futbol', tier:2 },
+  'it-seriea':         { name:'Serie A',               full:'Serie A de Italia',                   country:'IT', sport:'futbol', tier:1 },
+  'it-serieb':         { name:'Serie B',               full:'Serie B de Italia',                   country:'IT', sport:'futbol', tier:2 },
+  'kr-kleague1':       { name:'K League 1',            full:'K League 1',                          country:'KR', sport:'futbol', tier:1 },
+  'kr-kleague2':       { name:'K League 2',            full:'K League 2',                          country:'KR', sport:'futbol', tier:2 },
+  'nl-eerstedivisie':  { name:'Eerste Divisie',        full:'Eerste Divisie de los Países Bajos',  country:'NL', sport:'futbol', tier:2 },
+  'no-eliteserien':    { name:'Eliteserien',           full:'Eliteserien de Noruega',              country:'NO', sport:'futbol', tier:1 },
+  'pt-primeiraliga':   { name:'Primeira Liga',         full:'Primeira Liga de Portugal',           country:'PT', sport:'futbol', tier:1 },
+  'pt-ligaportugal2':  { name:'Liga Portugal 2',       full:'Liga Portugal 2',                     country:'PT', sport:'futbol', tier:2 },
+  'ru-premierliga':    { name:'Premier Liga',          full:'Liga Premier de Rusia',               country:'RU', sport:'futbol', tier:1 },
+  'tr-superlig':       { name:'Süper Lig',             full:'Süper Lig de Turquía',                country:'TR', sport:'futbol', tier:1 },
+  'tr-1lig':           { name:'1. Lig',                full:'TFF 1. Lig',                          country:'TR', sport:'futbol', tier:2 },
 };
 
 // ---------------------------------------------------------------------------

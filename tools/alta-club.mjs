@@ -966,7 +966,7 @@ export function analizar(docArg, sitio, ov = {}) {
   E.push(campo('sourceId', sourceId, 'clubId + nombre del archivo en slug'));
 
   // Liga
-  E.push(proponerLiga(clubId, r.club.existe ? (sitio.clubs[clubId] || {}).displayName : clubCarpeta, pais, anio, sitio));
+  E.push(proponerLiga(clubId, r.club.existe ? (sitio.clubs[clubId] || {}).displayName : clubCarpeta, pais, anio, sitio, cierre));
 
   // Contexto que el alta necesita escribir aparte (país/moneda nuevos)
   r.contexto = {
@@ -1076,7 +1076,10 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   return out;
 }
 
-function proponerLiga(clubId, nombre, pais, anio, sitio) {
+// Palabras genéricas de nombre de club que no identifican al club (Versión 315, pedido de Guido: "AC Milan y Milan son lo mismo, ídem
+// OFI Crete y OFI"): se sacan de los dos lados antes de comparar por palabras.
+const GENERICAS = new Set(['fc', 'ac', 'sc', 'cf', 'afc', 'cfc', 'sk', 'fk', 'nk', 'hnk', 'gnk', 'pfc', 'nfc', 'bk', 'if', 'il', 'ik', 'ssc', 'us', 'as', 'ss', 'cd', 'ud', 'sd', 'ca', 'club', 'calcio', 'fotball', 'fotbal', 'futebol', 'football', 'fussball', 'tj', 'jk', 'spor', 'kulubu', 'sv', 'vfb', 'vfl', 'tsv', 'fsv', 'rsc', 'kv', 'kaa', 'kvc', 'krc', 'sport', 'de', 'the', 'and', 'a', 's', 'as']);
+function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   if (!pais || !pais.iso2 || !anio) return campo('liga', null, 'sin país o sin año', 'pendiente');
   const fila = (sitio.CLUB_LEAGUE_BY_YEAR[clubId] || {})[anio];
   if (fila !== undefined && fila !== null) return campo('liga', fila, `data/club-leagues/${pais.iso2.toLowerCase()}.js ya tiene la fila`);
@@ -1087,14 +1090,25 @@ function proponerLiga(clubId, nombre, pais, anio, sitio) {
   const data = JSON.parse(readFileSync(cachePath, 'utf8'));
   const q = norm(nombre).replace(/[^a-z0-9]+/g, ' ').trim();
   const exactos = []; const parciales = [];
+  // QUÉ TEMPORADA (Versión 315): la caché guarda una temporada partida ("2020–21") bajo el año en que TERMINA. La regla del sitio es "la
+  // categoría al CIERRE del ejercicio" (data/club-leagues.js, decisión de Guido, Versión 132): un ejercicio que cierra entre julio y
+  // diciembre en una liga partida está jugando la temporada que empezó ese año -> clave anio + 1. Antes se buscaba siempre `anio` y a un
+  // club que cierra en diciembre (Atalanta 2020, Sassuolo 2021, Genoa 2022, Thun 2019, los rusos) le tocaba la temporada ANTERIOR.
+  const mesCierre = cierre ? Number(String(cierre).slice(5, 7)) : null;
+  const temporadaDe = (years) => {
+    const partida = Object.values(years).some((e) => /\d{4}\s*[–\-\/]\s*\d{2,4}/.test(String(e.wikipediaPage || '')));
+    return partida && mesCierre && mesCierre >= 7 ? String(Number(anio) + 1) : String(anio);
+  };
+  const sinGen = (x) => x.split(' ').filter((t) => t && !GENERICAS.has(t));
   for (const [leagueId, years] of Object.entries(data.leagues || {})) {
-    const e = years[String(anio)];
+    const e = years[temporadaDe(years)];
     if (!e) continue;
     for (const c of e.clubs) {
       const n = norm(c).replace(/[^a-z0-9]+/g, ' ').trim();
       // Por PALABRAS, no por substring: "ael larissa" contiene "aris" como texto (bug real de la
       // primera versión, proponía a AEL Larissa como Aris).
-      const tn = n.split(' '); const tq = q.split(' ');
+      const tn = sinGen(n); const tq = sinGen(q);
+      if (!tn.length || !tq.length) continue;
       if (n === q) exactos.push({ leagueId, club: c, page: e.wikipediaPage });
       else if (tn.every((t) => tq.includes(t)) || tq.every((t) => tn.includes(t))) parciales.push({ leagueId, club: c, page: e.wikipediaPage });
     }
@@ -1109,6 +1123,12 @@ function proponerLiga(clubId, nombre, pais, anio, sitio) {
     // frenadas solo por esto). La fila se escribe en `null` (= "nadie lo verificó", P3) y la pregunta
     // queda en `nota` para cuando se decida el catálogo.
     return campo('liga', null, `el roster "${exactos[0].page}" lo ubica en '${exactos[0].leagueId}', que NO está en el catálogo de data/leagues.js`, 'pendiente', { nota: `fila en null hasta decidir: el club jugó ${anio} en '${exactos[0].leagueId}' (${exactos[0].page}), liga que no está en el catálogo. ¿Se agrega al catálogo o la fila va como 'liga-no-catalogada'? (decisión de Guido, por liga)` });
+  }
+  // Una coincidencia parcial ÚNICA en toda la temporada del país ("AC Milan" / "Milan", "OFI Crete" / "OFI") vale como exacta
+  // (confirmado por Guido para esos casos). Si hay más de una, sigue pendiente de confirmación.
+  if (!exactos.length && parciales.length === 1) {
+    const p1 = parciales[0]; const cat = enCatalogo(p1.leagueId);
+    if (cat) return campo('liga', cat, `roster cacheado de "${p1.page}" (tools/club-league-reference/${iso}.json), coincidencia única por palabras "${p1.club}" = "${nombre}"`);
   }
   if (exactos.length + parciales.length > 0) {
     const todos = [...exactos, ...parciales];
@@ -1431,7 +1451,7 @@ function candidatosBase(mds) {
 function huellaCarpeta(paisCarpeta, clubCarpeta, mds, docForzado) {
   const pais = PAISES[paisCarpeta] || {};
   const iso = (pais.iso2 || 'xx').toLowerCase();
-  const archivos = [...mds, 'data/clubs.js', 'data/currency-map.js', `data/club-leagues/${iso}.js`, `tools/club-league-reference/${iso}.json`, 'tools/alta-club.mjs', 'tools/alta-claude.mjs', 'tools/carpetas-clubes.mjs'];
+  const archivos = [...mds, 'data/clubs.js', 'data/currency-map.js', 'data/leagues.js', `data/club-leagues/${iso}.js`, `tools/club-league-reference/${iso}.json`, 'tools/alta-club.mjs', 'tools/alta-claude.mjs', 'tools/carpetas-clubes.mjs'];
   if (pais.moneda && SERIES_FX[pais.moneda]) archivos.push(`tools/fx-reference/${SERIES_FX[pais.moneda]}`);
   const res = clubDeCarpeta(paisCarpeta, clubCarpeta);
   const est = estadoTranscripciones();
@@ -1509,9 +1529,15 @@ function analizarCarpeta(paisCarpeta, clubCarpeta, sitio, previo, docForzado = n
   // Respuestas de Claude reusables si se hicieron sobre el MISMO .md y las MISMAS preguntas (y modelo).
   // Un cambio del prompt de alta-claude.mjs NO las invalida solo (costaría volver a pagar todo): para
   // rehacerlas, --forzar-claude.
-  let claude = previo && previo.claude && previo.claude.preguntasHuella === preguntasHuella && !previo.claude.error && !ARGS.includes('--forzar-claude') ? previo.claude : null;
+  // BUG REAL (2026-09-30): una corrida que no reusaba las respuestas (otra versión de las preguntas, o un recálculo de otra sesión) escribía
+  // la entrada SIN el campo `claude`, y las respuestas ya pagadas se perdían del registro (quedaron 12 de 36; se recuperaron de git). Ahora
+  // las respuestas anteriores viajan siempre en `claudeAnterior` hasta que una corrida con --claude las reemplace, y se reusan desde ahí si
+  // la huella de las preguntas coincide.
+  const anterior = (previo && (previo.claude || previo.claudeAnterior)) || null;
+  let claude = anterior && anterior.preguntasHuella === preguntasHuella && !anterior.error && !ARGS.includes('--forzar-claude') ? anterior : null;
   if (claude || !pregs.length) return { entrada: finalizar({ ...ctxBase, r, probados, claude }), sinClaude: false };
-  return { entrada: armarEntrada({ ...ctxBase, r, probados }), pendienteClaude: { ...ctxBase, r, probados, pregs, preguntasHuella } };
+  const e0 = armarEntrada({ ...ctxBase, r, probados });
+  return { entrada: anterior ? { ...e0, claudeAnterior: anterior } : e0, pendienteClaude: { ...ctxBase, r, probados, pregs, preguntasHuella } };
 }
 
 // Con las respuestas de Claude (nuevas o reusadas): vuelve a analizar el documento con lo que desbloquea.

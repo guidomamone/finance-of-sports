@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 315 — Ligas y países de los clubes nuevos en el catálogo; liga por la categoría al cierre y nombres sin palabras genéricas (2026-09-30)
+
+- `data/leagues.js`: 11 países (AT, CH, CN, CZ, EC, IT, KR, NO, PT, RU, TR) y 25 ligas (Serie A/B de Italia, Eliteserien, Primeira Liga, Süper Lig, K League, Eerste Divisie, League One/Two...) agregados ANTES de tener ejercicios cargados. Decisión de Guido ("no pasa nada si están vacías"), que cambia la regla del archivo ("ni una liga sin ejercicios"); anotada en el comentario. Verificado en el navegador: la pestaña Ligas las lista y una liga vacía muestra "todavía no hay ejercicios". ASSET_V 292 -> 293, generadores regenerados.
+- `alta-club.mjs`: (1) temporada por "la categoría al CIERRE del ejercicio" (regla de la Versión 132): en una liga de temporada partida, un ejercicio que cierra entre julio y diciembre usa la temporada que empezó ese año (antes Atalanta 2020, Sassuolo 2021, Genoa 2022, Thun 2019 y los rusos recibían la anterior); (2) nombres comparados sin palabras genéricas (FC, AC, SK, NFC...) y una coincidencia parcial ÚNICA en la temporada vale ("AC Milan" = "Milan", "OFI Crete" = "OFI", confirmado por Guido); (3) `data/leagues.js` en la huella del registro de altas. Liga resuelta: 17 -> 63 de 150 carpetas con `.md`; ninguna duda de nombre pendiente.
+- Rosters: 146 liga-temporadas de 13 países más (`tools/club-league-reference/`); "co-primeraa" unificada con "co-primeraA".
+- Bug encontrado: correr `alta-club.mjs --todos` SIN `--claude` descartaba del registro las respuestas de Claude ya pagadas (quedaban 12 de 36). Recuperadas desde git y recalculado con `--claude --tope-usd 0` (reusa sin pagar): 78 listos para alta. Arreglado: las respuestas anteriores viajan en `claudeAnterior` hasta que una corrida con `--claude` las reemplace.
+
 ## Versión 314 — Período de cada documento leído del contenido: trimestral, semestral, anual calendario o temporada (2026-09-30)
 
 - `tools/periodo.mjs` (nuevo, gratis): tipo de período (anual calendario / temporada, trimestral, semestral, nueve meses, bimestral, intermedio, otro), meses, cierre y la cita que lo sostiene, leídos de los TÍTULOS de las primeras páginas en ~15 idiomas ("three months ended", "Üç Aylık Ara Hesap Dönemi", "01.01.2018 bis 30.06.2018", "13 month period ended"); avisa si el nombre del archivo dice otra fecha. `--grupos` lista por club y año los períodos parciales para juntarlos cuando lleguen los demás.

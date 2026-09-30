@@ -1,64 +1,5 @@
 {
   "leagues": {
-    "co-primeraa": {
-      "2016": {
-        "wikipediaPage": "2016 Categoría Primera A season",
-        "lang": "en",
-        "section": "Teams",
-        "fetchedAt": "2026-09-28T20:28:36.137Z",
-        "clubs": [
-          "Alianza Petrolera",
-          "Atlético Bucaramanga",
-          "Atlético Huila",
-          "Atlético Nacional",
-          "Boyacá Chicó",
-          "Cortuluá",
-          "Deportes Tolima",
-          "Deportivo Cali",
-          "Deportivo Pasto",
-          "Envigado",
-          "Fortaleza",
-          "Independiente Medellín",
-          "Jaguares",
-          "Junior",
-          "La Equidad",
-          "Millonarios",
-          "Once Caldas",
-          "Patriotas",
-          "Rionegro Águilas",
-          "Santa Fe"
-        ]
-      },
-      "2024": {
-        "wikipediaPage": "2024 Liga DIMAYOR",
-        "lang": "en",
-        "section": "Teams",
-        "fetchedAt": "2026-09-28T18:44:31.990Z",
-        "clubs": [
-          "Águilas Doradas",
-          "Sincelejo",
-          "Alianza",
-          "América de Cali",
-          "Atlético Bucaramanga",
-          "Atlético Nacional",
-          "Boyacá Chicó",
-          "Deportes Tolima",
-          "Deportivo Cali",
-          "Deportivo Pasto",
-          "Deportivo Pereira",
-          "Envigado",
-          "Fortaleza",
-          "Independiente Medellín",
-          "Jaguares",
-          "Junior",
-          "La Equidad",
-          "Millonarios",
-          "Once Caldas",
-          "Patriotas",
-          "Santa Fe"
-        ]
-      }
-    },
     "co-primeraA": {
       "2016": {
         "wikipediaPage": "2016 Categoría Primera A season",
@@ -226,6 +167,35 @@
           "Once Caldas",
           "Santa Fe",
           "Unión Magdalena"
+        ]
+      },
+      "2024": {
+        "wikipediaPage": "2024 Liga DIMAYOR",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-09-28T18:44:31.990Z",
+        "clubs": [
+          "Águilas Doradas",
+          "Sincelejo",
+          "Alianza",
+          "América de Cali",
+          "Atlético Bucaramanga",
+          "Atlético Nacional",
+          "Boyacá Chicó",
+          "Deportes Tolima",
+          "Deportivo Cali",
+          "Deportivo Pasto",
+          "Deportivo Pereira",
+          "Envigado",
+          "Fortaleza",
+          "Independiente Medellín",
+          "Jaguares",
+          "Junior",
+          "La Equidad",
+          "Millonarios",
+          "Once Caldas",
+          "Patriotas",
+          "Santa Fe"
         ]
       }
     },
