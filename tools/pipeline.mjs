@@ -32,12 +32,14 @@
 //   node tools/pipeline.mjs --ejecutar --limit 200   # más documentos (--limit 0 = todos)
 //   node tools/pipeline.mjs --ejecutar --dir Clubes/Chile --concurrencia 4
 //   node tools/pipeline.mjs --ejecutar --lista Admin/mi-lista.txt
+//   node tools/pipeline.mjs --ejecutar --max-paginas 0       # incluye los documentos de más de 100 páginas (caros)
 //   node tools/pipeline.mjs --resumen                # solo el estado actual del inventario, sin correr nada
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve, basename, dirname } from 'node:path';
-import { spawnSync } from 'node:child_process';
+import { spawnSync, execFileSync } from 'node:child_process';
+import { statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 
 const root = resolve(import.meta.dirname, '..');
@@ -49,6 +51,9 @@ const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : 50;
 const dirFilter = flagVal('--dir');
 const listFile = flagVal('--lista');
 const concurrency = flagVal('--concurrencia') || '4';
+// Tope de páginas por documento (0 = sin tope). Un informe anual de 230 páginas (Borussia Dortmund) cuesta unas 10 veces
+// más que un balance de 25 y se lleva el tiempo de toda la corrida: por defecto quedan para el final, listados aparte.
+const maxPages = flagVal('--max-paginas') !== null ? Number(flagVal('--max-paginas')) : 100;
 
 const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
 const verifPath = resolve(root, 'Admin', 'transcripciones-verificaciones.jsonl');
@@ -80,9 +85,32 @@ const listSet = listFile ? new Set(readFileSync(resolve(root, listFile), 'utf8')
 const inScope = (e) => (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/')) && (!listSet || listSet.has(e.pdf));
 const needsResolve = (e) => ['sin-md', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar'].includes(e.estado);
 const needsPrepare = (e) => e.estado === 'listo' && !e.jev;
+// Páginas por PDF, con caché (pdfinfo sobre ~3.000 PDFs tardaría medio minuto en cada corrida).
+const cachePath = resolve(root, 'Admin', '.paginas-cache.json');
+let pageCache = {}; try { pageCache = JSON.parse(readFileSync(cachePath, 'utf8')); } catch { /* sin caché */ }
+function pagesOf(pdf) {
+  const st = statSync(resolve(root, pdf)); const key = `${st.size}:${Math.round(st.mtimeMs)}`;
+  if (pageCache[pdf]?.k === key) return pageCache[pdf].n;
+  let n = 0;
+  try { n = Number((execFileSync('pdfinfo', [resolve(root, pdf)], { maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('latin1').match(/^Pages:\s+(\d+)/m) || [])[1]) || 0; } catch { n = 0; }
+  pageCache[pdf] = { k: key, n };
+  return n;
+}
 let selected = ledger.filter((e) => !e.cargado && inScope(e) && (needsResolve(e) || needsPrepare(e)));
+for (const e of selected) e.paginas = pagesOf(e.pdf);
+try { writeFileSync(cachePath, JSON.stringify(pageCache)); } catch { /* la caché es opcional */ }
+selected.sort((a, b) => a.paginas - b.paginas); // los chicos primero: resultados rápidos y baratos
+const grandes = maxPages > 0 ? selected.filter((e) => e.paginas > maxPages) : [];
+if (grandes.length) selected = selected.filter((e) => e.paginas <= maxPages);
 const total = selected.length;
-if (limit > 0) selected = selected.slice(0, limit);
+// Un lote con --limit toma una muestra REPARTIDA de todos los tamaños (de 1 a 100 págs.), no los N más chicos: así un lote de 50
+// sirve para detectar bugs en todo tipo de documento y el costo estimado es representativo. --orden chicos-primero cambia eso.
+if (limit > 0 && selected.length > limit) {
+  selected = flagVal('--orden') === 'chicos-primero'
+    ? selected.slice(0, limit)
+    : Array.from({ length: limit }, (_, i) => selected[Math.floor((i * selected.length) / limit)]);
+}
+if (grandes.length) console.log(`\n${grandes.length} documento(s) de más de ${maxPages} páginas quedan para el final (usá --max-paginas 0 para incluirlos): ${grandes.slice(0, 4).map((e) => `${e.pdf.split('/').slice(-2).join('/')} (${e.paginas} pág.)`).join(', ')}${grandes.length > 4 ? ', ...' : ''}`);
 const toResolve = selected.filter(needsResolve);
 const toPrepare = selected.filter(needsPrepare);
 console.log(`\n${total} documento(s) sin la marca final en el alcance pedido; esta corrida toma ${selected.length}: ${toResolve.length} a transcribir/validar y ${toPrepare.length} ya validados que solo faltan preparar para Jev.`);

@@ -148,13 +148,13 @@ function runTool(scriptPath, argv, timeoutMs) {
 
 // Llama a UNA tool de transcripción sobre UN PDF, con la política de reintentos de arriba.
 // Devuelve { ok, path } | { ok:false, kind:'recitation'|'otro'|'agotado', text }. Puede tirar StopRun.
-async function callEngine(engine, pdfAbs, suffix) {
+async function callEngine(engine, pdfAbs, suffix, opts = {}) {
   const out = resolve(dirname(pdfAbs), basename(pdfAbs, '.pdf') + suffix + '.md');
   if (existsSync(out)) return { ok: true, path: out, reused: true };
   const attempts = { credito: 0, transitorio: 0 };
   for (;;) {
     const t0 = new Date().toISOString();
-    const output = await runTool(process.env[`RESOLVER_TOOL_${engine.toUpperCase()}`] || resolve(root, TOOL[engine]), [pdfAbs, '--out-suffix', suffix], 25 * 60 * 1000);
+    const output = await runTool(process.env[`RESOLVER_TOOL_${engine.toUpperCase()}`] || resolve(root, TOOL[engine]), [pdfAbs, '--out-suffix', suffix, ...(opts.extraArgs || [])], opts.procTimeoutMs || (engine === 'claude' ? 90 : 25) * 60 * 1000);
     addCost(costOfCall(engine, out, t0));
     if (existsSync(out)) { consecutiveAccountFailures = 0; return { ok: true, path: out }; }
     const text = output.trim().split('\n').slice(-4).join(' | ').slice(0, 400);
@@ -223,14 +223,14 @@ function sizedBatches(pdfAbs, pageList, tmp, counter = { n: 0 }) {
 }
 
 // Recorta páginas del PDF y las transcribe con un motor; devuelve Map<páginaReal, texto> o un error.
-async function transcribePages(engine, pdfAbs, pageList) {
+async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
   const tmp = mkdtempSync(join(tmpdir(), 'resolver-'));
   try {
     let batches;
     try { batches = sizedBatches(pdfAbs, pageList, tmp); } catch (err) { return { ok: false, kind: 'otro', text: err.message }; }
     const map = new Map();
     for (const batch of batches) {
-      const r = await callEngine(engine, batch.file, '');
+      const r = await callEngine(engine, batch.file, '', opts);
       if (!r.ok) return { ok: false, kind: r.kind, text: r.text };
       const { pages } = splitPages(readFileSync(r.path, 'utf8'));
       if (pages.length !== batch.pages.length) return { ok: false, kind: 'otro', text: `${engine} devolvió ${pages.length} páginas para ${batch.pages.length} pedidas` };
@@ -240,6 +240,22 @@ async function transcribePages(engine, pdfAbs, pageList) {
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }
+}
+
+// Un documento largo no entra en UNA llamada de Gemini (tope de 150 s y de tokens de salida: un informe de 230
+// páginas daba timeout seguro y gastaba reintentos en vano, visto en la primera corrida del pipeline con Borussia
+// Dortmund). Se transcribe por tramos de BIG_CHUNK páginas y se arma el mismo {pre, pages} que devuelve splitPages.
+const BIG_DOC_PAGES = 40; const BIG_CHUNK = 20;
+async function voiceByChunks(engine, pdfAbs, nPages, log) {
+  const pages = [];
+  for (let a = 1; a <= nPages; a += BIG_CHUNK) {
+    const list = Array.from({ length: Math.min(BIG_CHUNK, nPages - a + 1) }, (_, i) => a + i);
+    const r = await transcribePages(engine, pdfAbs, list, engine === 'gemini' ? { extraArgs: ['--timeout', '300'] } : {});
+    if (!r.ok) return { ok: false, kind: r.kind, text: `tramo págs. ${list[0]}-${list[list.length - 1]}: ${r.text}` };
+    for (const [n, body] of r.pages) pages.push({ n, body });
+    log(`  tramo ${list[0]}-${list[list.length - 1]} de ${nPages} hecho por ${engine}`);
+  }
+  return { ok: true, voice: { pre: '', pages } };
 }
 
 // ---------------------------------------------------------------- lógica por documento
@@ -424,14 +440,28 @@ async function resolveDoc(e0) {
 
   // 2) Escaneo (o texto ilegible): hace falta una segunda voz independiente.
   let voice; let voiceEngine = 'gemini';
-  const g = await callEngine('gemini', pdfAbs, '.gemini-check');
+  const big = nPages > BIG_DOC_PAGES;
+  let g;
+  if (big) {
+    log(`documento largo (${nPages} págs.): Gemini por tramos de ${BIG_CHUNK}`);
+    const gv = await voiceByChunks('gemini', pdfAbs, nPages, log);
+    g = gv.ok ? { ok: true, voice: gv.voice } : gv;
+  } else {
+    g = await callEngine('gemini', pdfAbs, '.gemini-check', { extraArgs: ['--timeout', '300'] });
+  }
   if (g.ok) {
-    voice = splitPages(readFileSync(g.path, 'utf8'));
+    voice = g.voice || splitPages(readFileSync(g.path, 'utf8'));
   } else if (g.kind === 'recitation' || g.kind === 'otro') {
     log(`Gemini rechazó el documento (${g.kind}): Claude lo transcribe entero como segunda voz`);
-    const c = await callEngine('claude', pdfAbs, '.claude-check');
-    if (!c.ok) return retry(c, 'Gemini rechazó y Claude no pudo');
-    voice = splitPages(readFileSync(c.path, 'utf8'));
+    if (big) {
+      const cv = await voiceByChunks('claude', pdfAbs, nPages, log);
+      if (!cv.ok) return retry(cv, 'Gemini rechazó y Claude no pudo');
+      voice = cv.voice;
+    } else {
+      const c = await callEngine('claude', pdfAbs, '.claude-check', { procTimeoutMs: 60 * 60 * 1000 });
+      if (!c.ok) return retry(c, 'Gemini rechazó y Claude no pudo');
+      voice = splitPages(readFileSync(c.path, 'utf8'));
+    }
     voiceEngine = 'claude';
   } else {
     return fin('reintentar', g.text);
