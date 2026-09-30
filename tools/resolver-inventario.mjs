@@ -76,6 +76,8 @@ const TOOL = { mistral: 'tools/mistral-ocr-transcribe.mjs', gemini: 'tools/gemin
 const LOGDIR = { mistral: 'mistral', gemini: 'gemini', claude: 'claude-api' };
 const EST = { mistral: 0.004, gemini: 0.002, claude: 0.02 }; // USD por página, para el ensayo
 
+import { diagnosticar } from './reparar-pdf.mjs';
+
 // ---------------------------------------------------------------- utilidades
 const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));
 const sha1 = (p) => createHash('sha1').update(readFileSync(p)).digest('hex');
@@ -273,6 +275,35 @@ async function voiceByChunks(engine, pdfAbs, pageList, log) {
   return { ok: true, voice: { pre: '', pages } };
 }
 
+// Gemini rechaza documentos ENTEROS por "RECITATION" (falso positivo de copyright: 124 de 141 fallos registrados) pero, medido el
+// 2026-09-30, acepta la mayoría de esas mismas páginas de a una (Ituano 2013: 7 de 8; Alverca 2023-24: 21 de 29). Gemini cuesta ~$0,003 por página
+// y Claude ~$0,016, así que antes de mandarle el documento entero a Claude se prueba página por página con Gemini y Claude recibe SOLO las
+// rechazadas. Devuelve { ok, voice:{pre,pages}, claudeOnly:Set<n> } (claudeOnly = páginas que solo tienen la voz de Claude).
+async function voiceGeminiPerPage(pdfAbs, pageList, log) {
+  const got = new Map(); const refused = []; let cursor = 0; let hard = null;
+  await Promise.all(Array.from({ length: 3 }, async () => {
+    while (!hard) {
+      const n = pageList[cursor++]; if (n === undefined) return;
+      const r = await transcribePages('gemini', pdfAbs, [n], { extraArgs: ['--timeout', '150'] });
+      if (r.ok) got.set(n, r.pages.get(n) ?? '');
+      else if (r.kind === 'recitation' || r.kind === 'otro') refused.push(n);
+      else hard = r; // agotado (crédito/límite): lo maneja quien llama
+    }
+  }));
+  if (hard) return { ok: false, kind: hard.kind, text: hard.text };
+  refused.sort((a, b) => a - b);
+  log(`  Gemini página por página: ${got.size} de ${pageList.length} páginas aceptadas${refused.length ? `; rechazadas ${refused.length}: Claude solo en esas` : ''}`);
+  const pages = [...got].map(([n, body]) => ({ n, body }));
+  const claudeOnly = new Set();
+  if (refused.length) {
+    const c = await transcribePages('claude', pdfAbs, refused);
+    if (!c.ok) return { ok: false, kind: c.kind, text: c.text };
+    for (const [n, body] of c.pages) { pages.push({ n, body }); claudeOnly.add(n); }
+  }
+  pages.sort((a, b) => a.n - b.n);
+  return { ok: true, voice: { pre: '', pages }, claudeOnly };
+}
+
 // Una cifra de la lectura de Claude que el texto del PDF no tiene es sospechosa SOLO si se parece a una que sí tiene
 // (mismo largo, 1-2 dígitos distintos = lectura mal hecha); si no se parece a nada, es texto de una imagen (dirección,
 // sello) que el texto del PDF nunca va a tener.
@@ -392,6 +423,11 @@ async function resolveDoc(e0) {
       return { status: 'no-es-pdf', detail: `el archivo no es un PDF (${html ? 'es una página web HTML guardada como .pdf' : 'no tiene cabecera de PDF, probablemente corrupto o cifrado'}): hay que volver a conseguir el documento`, prov: { base: e.motor, paginas: {} }, reserva: [], sinConsenso: [], parches: [], resolucion: {}, cost: 0 };
     }
   } catch { /* si no se puede leer, sigue y falla más abajo con su propio mensaje */ }
+  // PDF con cabecera pero cortado (descarga incompleta, PEC Zwolle 2019-20): qpdf no lo recupera. Se marca igual que un no-es-pdf, con el
+  // link de donde volver a bajarlo, en vez de dejarlo en "reintentar" con un error crudo de pdfinfo. (Los dañados recuperables y los de
+  // imágenes gigantes los arregla tools/reparar-pdf.mjs adentro de cada motor.)
+  const diag = diagnosticar(resolve(root, e.pdf));
+  if (diag.estado === 'truncado') return { status: 'no-es-pdf', detail: `PDF truncado: ${diag.motivo}${diag.fuente ? `. Volver a bajarlo: ${diag.fuente}` : ''}`, prov: { base: e.motor, paginas: {} }, reserva: [], sinConsenso: [], parches: [], resolucion: {}, cost: 0 };
   const pdfAbs = resolve(root, e.pdf);
   const mdAbs = resolve(root, e.md);
   const nPages = pageCount(pdfAbs);
@@ -520,7 +556,7 @@ async function resolveDoc(e0) {
   }
 
   // 2) Escaneo (o texto ilegible): hace falta una segunda voz independiente.
-  let voice; let voiceEngine = 'gemini';
+  let voice; let voiceEngine = 'gemini'; let claudeOnly = new Set();
   const wholeList = Array.from({ length: nPages }, (_, i) => i + 1);
   const list = voicePages || wholeList;
   const big = list.length > BIG_DOC_PAGES || Boolean(voicePages);
@@ -535,17 +571,14 @@ async function resolveDoc(e0) {
   if (g.ok) {
     voice = g.voice || splitPages(readFileSync(g.path, 'utf8'));
   } else if (g.kind === 'recitation' || g.kind === 'otro') {
-    log(`Gemini rechazó el documento (${g.kind}): Claude lo transcribe entero como segunda voz`);
-    if (big) {
-      const cv = await voiceByChunks('claude', pdfAbs, list, log);
-      if (!cv.ok) return retry(cv, 'Gemini rechazó y Claude no pudo');
-      voice = cv.voice;
-    } else {
-      const c = await callEngine('claude', pdfAbs, '.claude-check', { procTimeoutMs: 60 * 60 * 1000 });
-      if (!c.ok) return retry(c, 'Gemini rechazó y Claude no pudo');
-      voice = splitPages(readFileSync(c.path, 'utf8'));
-    }
-    voiceEngine = 'claude';
+    log(`Gemini rechazó el documento (${g.kind}): pruebo página por página (Claude solo en las que Gemini rechace)`);
+    const pp = await voiceGeminiPerPage(pdfAbs, list, log);
+    if (!pp.ok) return retry(pp, 'Gemini página por página y Claude no pudieron');
+    voice = pp.voice; claudeOnly = pp.claudeOnly;
+    // Si Gemini rechazó TODAS las páginas, la segunda voz es Claude entero (el flujo de siempre); si aceptó alguna, la voz es Gemini y
+    // solo las rechazadas quedan con Claude como única segunda voz (`claudeOnly`).
+    voiceEngine = claudeOnly.size === voice.pages.length ? 'claude' : 'gemini';
+    if (voiceEngine === 'claude') claudeOnly = new Set();
   } else {
     return fin('reintentar', g.text);
   }
@@ -555,7 +588,9 @@ async function resolveDoc(e0) {
   const voiceBody = new Map(voice.pages.map((p) => [p.n, p.body]));
   if (doubts.length) {
     backup();
-    const tie = await transcribePages(voiceEngine === 'gemini' ? 'claude' : 'gemini', pdfAbs, doubts);
+    // Las páginas `claudeOnly` (Gemini las rechazó) ya tienen a Claude como segunda voz: no se le pide un desempate a nadie más.
+    const tieList = voiceEngine === 'gemini' ? doubts.filter((n) => !claudeOnly.has(n)) : doubts;
+    const tie = tieList.length ? await transcribePages(voiceEngine === 'gemini' ? 'claude' : 'gemini', pdfAbs, tieList) : { ok: true, pages: new Map() };
     if (!tie.ok && (tie.kind === 'agotado' || voiceEngine === 'gemini')) return retry(tie, 'no se pudo desempatar');
     const pageCands = new Map(); const pending = [];
     const apply = (n, cands, idx, how, body) => {
@@ -572,13 +607,14 @@ async function resolveDoc(e0) {
       return false;
     };
     for (const n of doubts) {
-      const A = canonBody(n); const B = voiceBody.get(n); const C = tie.ok ? tie.pages.get(n) : undefined;
-      const names = ['canónica', voiceEngine === 'gemini' ? 'gemini' : 'claude-api', voiceEngine === 'gemini' ? 'claude-api' : 'gemini'];
+      const bClaude = claudeOnly.has(n) || voiceEngine === 'claude';
+      const A = canonBody(n); const B = voiceBody.get(n); const C = !claudeOnly.has(n) && tie.ok ? tie.pages.get(n) : undefined;
+      const names = ['canónica', bClaude ? 'claude-api' : 'gemini', bClaude ? 'gemini' : 'claude-api'];
       const cands = [[A, names[0]], [B, names[1]], [C, names[2]]].filter(([b]) => b !== undefined).map(([body, src]) => ({ body, src }));
       if (cands.length === 3) {
         pageCands.set(n, cands);
         if (!settleFree(n, cands)) pending.push(n);
-      } else if (cands.length === 2 && voiceEngine === 'claude') {
+      } else if (cands.length === 2 && bClaude) {
         // Gemini rechazó también esa página: solo hay dos voces. Gana Claude, con reserva.
         setPage(n, B, 'claude-api'); if (A !== undefined) { reserva.push(n); resolucion[n] = 'claude-con-reserva'; }
       } else {

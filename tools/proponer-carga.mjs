@@ -37,6 +37,10 @@ const BACKTEST = args.includes('--backtest');
 const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : 0;
 const clubOnly = flagVal('--club');
 const FRESH = args.includes('--mistral-fresco'); // usa una transcripción NUEVA de Mistral (con tablas) en vez del .md guardado: lo que produciría el pipeline hoy
+const ESCAPE = args.includes('--con-escape'); // le ofrece a Jev la opción no_es_rubro en vez de obligarla a elegir una categoría
+const FILTRO_OFF = args.includes('--sin-filtro'); // para medir el efecto del filtro de filas que no son rubros
+const SOLO_TOTALES = args.includes('--solo-totales'); // no llama a Jev: solo mide la detección del total de ingresos (iteración barata)
+const TAG = flagVal('--etiqueta') || ''; // sufijo de los informes, para no pisar los de otra variante
 const concurrency = Number(flagVal('--concurrencia') || 4);
 if (!BACKTEST && !flagVal('--pdf')) { console.error('Uso: node tools/proponer-carga.mjs --backtest [--limit N]   o   --pdf <ruta> [--club id]'); process.exit(1); }
 
@@ -51,7 +55,7 @@ function loadSite() {
 
 // ---------------------------------------------------------------- utilidades de texto y números
 const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss').replace(/\s+/g, ' ').trim();
-const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos/;
+const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos|rendimentos e gastos|rendimentos e perdas|gastos e perdas/;
 const TOTAL_RE = /^\**\s*(total|subtotal|sum\b|suma|totale|totaal|gesamt|ukupno)/;
 const REV_TOTAL_RE = /^\**\s*(total\s+(de\s+)?(revenue|revenues|income|ingresos|recursos|receitas?|ricavi|proventi|operating revenue|turnover)|revenue|total revenue|turnover|net sales|receita (operacional )?(liquida|bruta)|ricavi totali|totale ricavi|sum inntekter|sum driftsinntekter|umsatzerloese|gesamtertraege|ukupni prihodi|prihodi ukupno|omsaetning|nettoomsaetning|total opbrengsten)/;
 const RESULT_RE = /^\**\s*(resultado (liquido )?do (exercicio|periodo)|resultado del ejercicio|superavit|deficit|profit (for the (year|period))?( after tax)?|net (profit|income|loss)|profit and loss for the year|loss for the year|utile|risultato (netto|d.esercizio)|arsresultat|arets resultat|aarets resultat|jahresueberschuss|jahresfehlbetrag|neto rezultat|dobit|gubitak|net result|resultat)/;
@@ -118,6 +122,7 @@ const words = (t) => new Set(norm(t).split(/[^a-z0-9]+/).filter((w) => w.length 
 
 async function askJev({ label, club, side, examples }) {
   const criteria = side ? Object.fromEntries(Object.entries(side === 'revenue' ? CATS.revenue : CATS.expense).map(([k, v]) => [k, `${side === 'revenue' ? 'INGRESO' : 'GASTO'}: ${v}`])) : { ...Object.fromEntries(Object.entries(CATS.revenue).map(([k, v]) => [k, `INGRESO: ${v}`])), ...Object.fromEntries(Object.entries(CATS.expense).map(([k, v]) => [k, `GASTO: ${v}`])) };
+  if (ESCAPE) criteria.no_es_rubro = 'NO ES UN RUBRO: subtotal, total, resultado o margen calculado, partida de balance (activo, pasivo, deuda, patrimonio, cuentas por cobrar/pagar), nombre de una persona, nota al pie o texto que no es un ingreso ni un gasto del ejercicio.';
   const ex = examples?.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.cat}`).join('\n')}\n` : '';
   const state = [`Rubro de un estado financiero de un club de fútbol (${club}).`, ex, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
   const body = { state, model: 'jev-latest', questions: { categoria: { type: 'choice', instructions: 'Elegí la categoría de la lista a la que corresponde este rubro. Si no encaja en ninguna, elegí la más genérica (other_income / other_expenses).', criteria } } };
@@ -162,6 +167,32 @@ function pickScale(maxAbs, refM, textScale) {
   return best.d <= 0.8 ? best.c : textScale; // dentro de un factor ~6; si nada se acerca, se cae al texto
 }
 
+// Filas que son la SUMA de las filas contiguas de arriba (subtotales y totales impresos), sin mirar la etiqueta: es el chequeo de sumas de
+// cada tabla usado para ENCONTRAR el total, no para verificarlo. `nums` = [{label, v (crudo, sin escala), i}] en orden de la tabla.
+function sumRows(nums) {
+  const out = [];
+  for (let i = 2; i < nums.length; i++) {
+    const v = nums[i].v; if (!v || v <= 0) continue;
+    const tol = Math.max(2, Math.abs(v) * 0.0005); let acc = 0;
+    for (let k = i - 1; k >= Math.max(0, i - 60); k--) {
+      acc += nums[k].v;
+      if (i - k >= 2 && Math.abs(acc - v) <= tol) { out.push({ ...nums[i], desde: k, n: i - k }); break; }
+    }
+  }
+  return out;
+}
+
+// Filas que NUNCA son un rubro de ingresos/gastos y que antes se le mandaban a Jev igual (medido 2026-09-30 sobre los .jev.json de la corrida
+// de 50: 27% de lo que Jev recibía eran etiquetas sin letras — cifras mal partidas como "8.206.844" — a las que asignaba categoría con
+// confianza ≥ 0,90; y otro grupo eran subtotales/resultados/partidas de balance/nombres de persona, que no tienen categoría correcta).
+const SUBTOTAL_RE = /^\**\s*(\(?[=+\-]\)?\s*)?(ebit|ebitda|gross (profit|margin)|operating (profit|result|income)|resultado (bruto|operacional|antes|financiero|liquido|del ejercicio)|ganancia bruta|lucro (bruto|operacional|antes)|utile|risultato|margen|netto finans|driftsresultat|resultat (for|før|foer)|betriebsergebnis|rohergebnis|ergebnis (vor|nach|der)|bruto resultaat|bedrijfswinst|σύνολο|συνολο|σύνολα|καθαρ[όο]|κέρδη|κερδη|ζημι)/;
+function noEsRubro(label, esSuma) {
+  if (esSuma) return true;
+  const l = norm(label);
+  if ((l.match(/[a-z\u0370-\u03ff\u0400-\u04ff\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af]/g) || []).length < 3) return true; // números, códigos, símbolos
+  return SUBTOTAL_RE.test(l);
+}
+
 // ---------------------------------------------------------------- la propuesta
 async function propose({ briefing, mdText, clubData, generic, club, year }) {
   const tables = (briefing.tables || []).filter((t) => t.likelyRelevant && (STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`)) || sideOfTable(t)));
@@ -169,35 +200,47 @@ async function propose({ briefing, mdText, clubData, generic, club, year }) {
   const others = Object.entries(clubData.fiscalYearMeta || {}).filter(([y]) => Number(y) !== Number(year)).map(([, m]) => Math.abs(m.officialTotalRevenue || 0)).filter(Boolean).sort((a, b) => a - b);
   const refM = others.length ? others[Math.floor(others.length / 2)] : null;
   const raw = []; let docRevenueTotal = null; let docResult = null;
-  const seenLabels = new Set();
+  const seenLabels = new Set(); const cands = []; const descartadas = [];
   for (const t of tables) {
     const j = yearColumn(t, year); if (j === null) continue;
     const textScale = detectScale(`${t.section} ${(t.columns || []).join(' ')} ${pageText(mdText, t.page).slice(0, 2500)}`);
     const vals = t.rows.map((r) => parseNumber(r.values[j] ?? '')).filter((v) => v !== null);
     const sc = pickScale(Math.max(0, ...vals.map(Math.abs)), refM, textScale);
     const tside = sideOfTable(t);
-    for (const r of t.rows) {
+    // tablas "clave | valor | unidad" (portada de cifras clave): el rubro está en el encabezado y no en una fila
+    const h0 = norm((t.columns || [])[0] || ''); const hv = parseNumber((t.columns || [])[1] ?? '');
+    if (REV_TOTAL_RE.test(h0) && hv !== null) cands.push({ M: hv * (/mio|mill/.test(norm((t.columns || []).join(' '))) ? 1 : sc.mult), label: (t.columns || [])[0], page: t.page, how: 'encabezado', tside });
+    const nums = t.rows.map((r, i) => ({ label: String(r.rawLabel || ''), v: parseNumber(r.values[j] ?? ''), i })).filter((x) => x.v !== null);
+    const subs = sumRows(nums);
+    for (const x of subs) cands.push({ M: x.v * sc.mult, label: x.label, page: t.page, how: 'suma', n: x.n, tside });
+    const subIdx = new Set(subs.map((x) => x.i)); // filas que son la suma de las de arriba: subtotales, no rubros
+    for (const [ri, r] of t.rows.entries()) {
       const label = String(r.rawLabel || '').trim(); const v = parseNumber(r.values[j] ?? '');
       if (!label || v === null) continue;
       const nl = norm(label); const M = v * sc.mult;
+      if (REV_TOTAL_RE.test(nl)) cands.push({ M, label, page: t.page, how: 'etiqueta', tside });
       if (REV_TOTAL_RE.test(nl) && docRevenueTotal === null) docRevenueTotal = M;
       if (TOTAL_RE.test(nl)) continue;
       if (RESULT_RE.test(nl)) { docResult = M; continue; }
+      if (!FILTRO_OFF && noEsRubro(label, subIdx.has(ri))) { descartadas.push({ label, why: subIdx.has(ri) ? 'subtotal' : 'no-rubro' }); continue; }
       const key = `${nl}|${Math.round(M * 1e6)}`; if (seenLabels.has(key)) continue; seenLabels.add(key);
       raw.push({ label, page: t.page, native: M, tside });
     }
   }
   if (!raw.length) return { ok: false, motivo: 'no se pudo ubicar la columna del ejercicio' };
+  const totalCands = cands.map((c) => ({ ...c, M: Math.round(c.M * 1e4) / 1e4 }));
+  if (SOLO_TOTALES) return { ok: true, docRevenueTotal, totalCands, refM, nRows: raw.length, nDescartadas: descartadas.length, nSure: 0, byCat: { revenue: {}, expense: {} } };
   const bank = buildBank(generic, club, year);
   const lines = [];
   for (const r of raw) {
     const j = await askJev({ label: r.label, club, side: r.tside, examples: retrieve(bank, r.label, r.tside) });
     lines.push({ ...r, cat: j.choice || null, conf: j.confidence ?? 0, side: j.choice ? sideOfCat(j.choice) : null, error: j.error });
   }
-  const sure = lines.filter((l) => l.cat && l.conf >= 0.9);
+  const sure = lines.filter((l) => l.cat && l.cat !== 'no_es_rubro' && l.conf >= 0.9);
+  const nEscape = lines.filter((l) => l.cat === 'no_es_rubro').length;
   const byCat = { revenue: {}, expense: {} };
   for (const l of sure) byCat[l.side][l.cat] = (byCat[l.side][l.cat] || 0) + Math.abs(l.native);
-  return { ok: true, lines, byCat, docRevenueTotal, docResult, refM, nRows: lines.length, nSure: sure.length, needCriterion: lines.length - sure.length };
+  return { ok: true, lines, byCat, nDescartadas: descartadas.length, nEscape, docRevenueTotal, docResult, refM, nRows: lines.length, nSure: sure.length, needCriterion: lines.length - sure.length };
 }
 
 // ---------------------------------------------------------------- ejecución de herramientas
@@ -248,7 +291,7 @@ async function backtest() {
       }
       const b = await briefingFor(j.club, j.year, mdUsed);
       const p = await propose({ briefing: b, mdText: readFileSync(resolve(root, mdUsed), 'utf8'), clubData: j.cd, generic: site.generic, club: j.club, year: j.year });
-      row = { ...row, ...p, lines: undefined };
+      row = { ...row, ...p, lines: undefined, totalCands: SOLO_TOTALES ? p.totalCands : undefined };
       if (p.ok) {
         // producción por categoría (importes absolutos, en millones de moneda nativa)
         const prodCat = { revenue: {}, expense: {} };
@@ -272,7 +315,7 @@ async function pool(items, worker) {
 }
 
 function report(rows) {
-  writeFileSync(resolve(root, 'Admin', 'test-proponer-carga.jsonl'), rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', `test-proponer-carga${TAG}.jsonl`), rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
   const ok = rows.filter((r) => r.ok);
   const cnt = (f) => ok.filter(f).length;
   const avg = (k) => { const x = ok.filter((r) => r[k] != null); return x.length ? (100 * x.reduce((a, r) => a + r[k], 0) / x.length).toFixed(0) + '%' : '-'; };
@@ -289,7 +332,7 @@ function report(rows) {
   L.push(`| Filas con Jev ≥ 0,90 sobre el total de filas (media) | ${(100 * ok.reduce((a, r) => a + r.nSure / Math.max(1, r.nRows), 0) / Math.max(1, ok.length)).toFixed(0)}% |`, '');
   const mot = {}; for (const r of rows.filter((x) => !x.ok)) { const k = r.motivo || r.error || '?'; mot[k] = (mot[k] || 0) + 1; }
   L.push('Sin propuesta, por motivo: ' + (Object.entries(mot).map(([k, v]) => `${k}: ${v}`).join(' | ') || '-'), '');
-  writeFileSync(resolve(root, 'Admin', 'test-proponer-carga.md'), L.join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', `test-proponer-carga${TAG}.md`), L.join('\n') + '\n');
   console.log('\n' + L.slice(4, 13).join('\n'));
 }
 

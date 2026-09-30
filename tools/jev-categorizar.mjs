@@ -233,7 +233,9 @@ async function listos() {
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
     const results = [];
     await pool(uniqLabels, async (r) => {
-      const useSide = Boolean(r.lado); const q = { label: r.label, club: rj.club, side: r.lado || null, useSide };
+      const useSide = Boolean(r.lado);
+      // Con glosa en español (tools/glosar-rubros.mjs) Jev lee el rubro original + su traducción, y la búsqueda de ejemplos parecidos tiene palabras en común con el sitio.
+      const q = { label: r.glosa && r.glosa !== r.label ? `${r.label} (= ${r.glosa})` : r.label, club: rj.club, side: r.lado || null, useSide };
       results.push({ label: r.label, lado: r.lado || null, page: r.page, section: r.section, ...(await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null })) });
     });
     if (stopAll) { console.log(`\nDETENIDO: ${stopAll}`); break; }

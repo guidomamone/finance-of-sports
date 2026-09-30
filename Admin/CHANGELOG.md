@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 306 — Piloto de 9 documentos de punta a punta: Gemini página por página, PDFs dañados, filtro de filas, lado por estructura, glosa para Jev (2026-09-30)
+
+- `tools/reparar-pdf.mjs` (nuevo): diagnostica y arregla PDFs antes de gastar API. `qpdf` reconstruye los dañados recuperables; las páginas con imágenes de más de 8000 px (Thun: 128x105.696, Mistral respondía HTTP 400) se rasterizan en una copia; un PDF truncado (PEC Zwolle) queda como `no-es-pdf` con el link de `fuentes/` para volver a bajarlo. Conectado a `mistral-ocr-transcribe.mjs` y a `resolver-inventario.mjs`. Thun 2019 verificado: 20 de 20 páginas por $0,08.
+- `resolver-inventario.mjs`: cuando Gemini rechaza un documento entero por RECITATION (124 de 141 fallos registrados), se prueba página por página (medido: Ituano 7/8 aceptadas, Alverca 21/29, Start 17/17, Sandefjord 16/16) y Claude recibe solo las rechazadas. Antes recibía el documento entero (~$0,016 por página contra ~$0,003 de Gemini).
+- `pipeline.mjs`: la etapa 5 usaba el registro viejo y los documentos preparados en la misma corrida quedaban sin categorizar hasta la siguiente; ahora lo regenera antes. `--repreparar` ahora sí rehace los que ya tenían lista de rubros. `STATEMENT_RE` no reconocía "Rendimentos e gastos" (SNC portugués): Alverca quedaba con 0 rubros.
+- `tools/filas-rubro.mjs` (nuevo, gratis): descarta filas que no son rubros (números sueltos, subtotales detectados por suma, resultados, metadatos) y deduce el lado ingreso/gasto por la estructura de la tabla. Rosenborg pasó de 10 a 57 filas con lado.
+- `tools/glosar-rubros.mjs` (nuevo, ~$0,001 por documento): glosa en español de cada rubro para que la búsqueda de ejemplos parecidos funcione en idiomas que el sitio no tiene. Sobre 7 documentos: Jev con confianza >= 0,90 pasó de 30% a 39,5%.
+- `proponer-carga.mjs`: `--solo-totales`, `--sin-filtro`, `--con-escape`, `--etiqueta`. Hallazgo: el 14% de "total impreso = oficial de producción" no es un bug del detector, en 23 de 35 ejercicios el total de producción no está impreso (definiciones curadas: Dortmund usa HGB de la KGaA, Fluminense suma las líneas ordinarias). Ofrecerle `no_es_rubro` a Jev no ayudó (68% / 60% contra 67% / 60%).
+
 ## Versión 305 — Inventario de transcripciones: registro de quién hizo cada `.md`, validación gratis contra el texto del PDF, y resolución paga solo de las páginas dudosas (2 pilotos, 21 documentos)
 
 - **`tools/verify-numbers.mjs`**: compara los números de un `.md` contra el texto interno del PDF (`pdftotext`),

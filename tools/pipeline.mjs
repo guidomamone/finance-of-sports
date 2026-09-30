@@ -54,6 +54,7 @@ import { resolve, basename, dirname } from 'node:path';
 import { spawnSync, execFileSync } from 'node:child_process';
 import { statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { numeroDe, filasSuma, noEsRubro, ladosPorEstructura } from './filas-rubro.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -153,7 +154,7 @@ if (toResolve.length) {
 
 // ---- Etapa 3-4: preparar para Jev (todo gratis)
 const selectedPdfs = new Set(selected.map((e) => e.pdf));
-const ready = ledger.filter((e) => selectedPdfs.has(e.pdf) && e.estado === 'listo' && !e.jev);
+const ready = ledger.filter((e) => selectedPdfs.has(e.pdf) && needsPrepare(e)); // (con --repreparar incluye los que ya tenían su lista de rubros)
 console.log(`\n=== Etapas 3-4: preparar ${ready.length} documento(s) listos para Jev (sin API) ===`);
 
 function clubAndYear(pdf) {
@@ -179,11 +180,11 @@ function sideOfTable(t) {
 }
 // ¿La tabla es (parte de) un ESTADO DE RESULTADOS / de recursos y gastos? Sin al menos una así, el documento no es un estado
 // financiero con rubros que categorizar (actas, memorias narrativas, certificaciones): un acta del Aris colaba 16 "rubros".
-const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos|финансовых результатах|прибылях и убытках|фінансових результатах|прибутки та збитки|vykaz zisku a ztraty|zisku a ztraty|winst-? ?en-? ?verlies|損益計算書|収支計算書|손익계산서|利润表|损益表|^(recursos|gastos|ingresos|egresos|revenues?|expenses|income|expenditure)$|concepto (del )?(ingreso|gasto)|income and expenditure/;
+const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos|финансовых результатах|прибылях и убытках|фінансових результатах|прибутки та збитки|vykaz zisku a ztraty|zisku a ztraty|winst-? ?en-? ?verlies|損益計算書|収支計算書|손익계산서|利润表|损益表|^(recursos|gastos|ingresos|egresos|revenues?|expenses|income|expenditure)$|concepto (del )?(ingreso|gasto)|income and expenditure|rendimentos e gastos|rendimentos e perdas|gastos e perdas|demonstracao dos resultados/;
 const isStatement = (t) => STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`));
 const isTotal = (l) => /^\s*\**\s*(total|subtotal|sum\b|suma)/i.test(String(l || '')) || /^\s*\**\s*(totale|totaal|gesamt|ukupno|total\s)/i.test(String(l || ''));
 const hasNumber = (vals) => vals.some((v) => /\d/.test(String(v)));
-let nJev = 0; let nSin = 0; let nFail = 0; let nSinTablas = 0;
+let nDescartadas = 0; let nJev = 0; let nSin = 0; let nFail = 0; let nSinTablas = 0;
 for (const e of ready) {
   const mdAbs = resolve(root, e.md);
   // Un .md SIN TABLAS no sirve para sacar rubros (etiquetas e importes en bloques separados): se manda a rehacer con Mistral (una sola vez).
@@ -202,11 +203,19 @@ for (const e of ready) {
   const hasStatement = (b.tables || []).some((t) => t.likelyRelevant && isStatement(t));
   for (const t of b.tables || []) {
     if (!t.likelyRelevant || !hasStatement) continue;
-    const lado = sideOfTable(t);
-    for (const row of t.rows || []) {
-      if (isTotal(row.rawLabel) || !String(row.rawLabel || '').trim() || !hasNumber(row.values || [])) continue;
-      rubros.push({ label: row.rawLabel.trim(), lado, page: t.page, section: t.section || '', values: row.values, columns: t.columns });
-    }
+    const ladoTabla = sideOfTable(t);
+    // Columna de importes = la primera con números en al menos el 40% de las filas; de ahí salen los subtotales (filas que son la suma de las
+    // de arriba) y el lado de cada fila por la estructura de la tabla (tools/filas-rubro.mjs).
+    const rows = t.rows || []; const width = Math.max(0, ...rows.map((r) => (r.values || []).length));
+    let col = 0; for (let j = 0; j < width; j++) if (rows.filter((r) => numeroDe((r.values || [])[j] ?? '') !== null).length >= Math.max(3, rows.length * 0.4)) { col = j; break; }
+    const filas = rows.map((r) => ({ label: String(r.rawLabel || ''), v: numeroDe((r.values || [])[col] ?? '') }));
+    const sumas = new Set(filasSuma(filas.map((f, i) => ({ ...f, i })).filter((f) => f.v !== null)).map((f) => f.i));
+    const lados = ladosPorEstructura(filas);
+    rows.forEach((row, i) => {
+      if (isTotal(row.rawLabel) || !String(row.rawLabel || '').trim() || !hasNumber(row.values || [])) return;
+      if (noEsRubro(row.rawLabel, sumas.has(i))) { nDescartadas++; return; }
+      rubros.push({ label: row.rawLabel.trim(), lado: lados[i] || ladoTabla, page: t.page, section: t.section || '', values: row.values, columns: t.columns });
+    });
   }
   const tie = b.tieOuts || [];
   const closes = tie.filter((x) => x.closes === true).length; const fails = tie.filter((x) => x.closes === false).length;
@@ -220,11 +229,16 @@ for (const e of ready) {
   appendFileSync(verifPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'listo', jev, rubros: rubros.length, tieOuts: { cierran: closes, noCierran: fails } }) + '\n');
   if (jev === 'listo-para-jev') nJev++; else nSin++;
 }
-console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
+console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros (${nDescartadas} filas descartadas por no ser rubros: subtotales, resultados, números sueltos, metadatos)${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
 
 // ---- Etapa 5: Jev categoriza los rubros de los documentos listo-para-jev (casi gratis: ~$42 por mil millones de tokens)
 if (!NO_JEV) {
+  // Jev lee el registro para saber qué documentos están `listo-para-jev`: hay que regenerarlo ANTES, si no los documentos preparados en esta
+  // misma corrida quedaban sin categorizar hasta la corrida siguiente (bug visto en el piloto de 9 documentos, 2026-09-30).
+  ledger = refreshLedger();
   console.log('\n=== Etapa 5: Jev categoriza los rubros (lado y ejemplos parecidos incluidos) ===');
+  // Glosa en español de cada rubro (Gemini, ~$0,001 por documento): sin ella la búsqueda de ejemplos parecidos no encuentra nada en idiomas que el sitio no tiene.
+  node('tools/glosar-rubros.mjs', ['--listos'], { stdio: 'inherit' });
   node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0'], { stdio: 'inherit' });
 }
 
