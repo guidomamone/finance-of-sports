@@ -82,6 +82,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
+import { derivado, ubicar } from './rutas.mjs';
 import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
@@ -467,8 +468,8 @@ async function listos(opt) {
   // primero tiene que rehacerlo Jev (bug real 2026-09-30: 44 documentos, US$ 1,90, categorizados con un .jev.json de la lista vieja).
   // `--lista <archivo>`: solo esos PDFs (lo pasa pipeline.mjs, así la etapa 5b toca SOLO los documentos de la corrida).
   const lista = opt.lista ? leerLista(resolve(root, opt.lista)) : null;
-  const rubrosDe = (md) => { try { return JSON.parse(readFileSync(resolve(root, md.replace(/\.md$/, '.rubros.json')), 'utf8')); } catch { return null; } };
-  const jevDe = (md) => { try { return JSON.parse(readFileSync(resolve(root, md.replace(/\.md$/, '.jev.json')), 'utf8')); } catch { return null; } };
+  const rubrosDe = (md) => { try { return JSON.parse(readFileSync(resolve(root, derivado(md, '.rubros.json')), 'utf8')); } catch { return null; } };
+  const jevDe = (md) => { try { return JSON.parse(readFileSync(resolve(root, derivado(md, '.jev.json')), 'utf8')); } catch { return null; } };
   let docs = ledger.filter((e) => e.md && e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && !categoriasAlDia(resolve(root, e.md)));
   const jevViejo = docs.filter((e) => { const rj = rubrosDe(e.md); const jj = jevDe(e.md); return !rj || !jj || jj.rubrosHuella !== huellaRubros(rj); });
   docs = docs.filter((e) => !jevViejo.includes(e));
@@ -478,8 +479,8 @@ async function listos(opt) {
   console.log(`${docs.length} documento(s) con Jev hecho y sin categorías finales.${opt.dry ? ' (dry-run)' : ''}`);
   const lines = allLines(); const retriever = makeRetriever(lines); const apiKey = opt.dry ? null : readKey(); let cost = 0;
   for (const e of docs) {
-    const rj = JSON.parse(readFileSync(resolve(root, e.md.replace(/\.md$/, '.rubros.json')), 'utf8'));
-    const jj = JSON.parse(readFileSync(resolve(root, e.md.replace(/\.md$/, '.jev.json')), 'utf8'));
+    const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
+    const jj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.jev.json')), 'utf8'));
     const jevBy = new Map(jj.rubros.map((r) => [norm(r.label), r]));
     const seen = new Set(); const rubros = [];
     for (const r of rj.rubros) {
@@ -496,7 +497,7 @@ async function listos(opt) {
     cost += r.costUsd || 0;
     const byIdx = new Map((r.resultados || []).map((x) => [x.idx, x]));
     const out = rubros.map((x, i) => (x.pendiente ? { ...x, escalon: 2, categoria: byIdx.get(i)?.categoria ?? null, confianza: byIdx.get(i)?.confianza ?? null, motivo: byIdx.get(i)?.motivo ?? r.error ?? null } : { ...x, categoria: x.ya, confianza: x.escalon === 0 ? 1 : x.jevConf }));
-    writeFileSync(resolve(root, e.md.replace(/\.md$/, '.categorias.json')), JSON.stringify({ md: e.md, club: rj.club, year: rj.year, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), jevHuella: huellaJev(jj), modelo: opt.modelo, costUsd: r.costUsd, error: r.error, rubros: out }, null, 1));
+    writeFileSync(resolve(root, derivado(e.md, '.categorias.json')), JSON.stringify({ md: e.md, club: rj.club, year: rj.year, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), jevHuella: huellaJev(jj), modelo: opt.modelo, costUsd: r.costUsd, error: r.error, rubros: out }, null, 1));
     console.log(`  ${e.md}: ${out.length} rubros; Claude ${out.filter((x) => x.escalon === 2).length} ($${(r.costUsd || 0).toFixed(4)})${r.error ? ` ERROR ${r.error.slice(0, 120)}` : ''}`);
   }
   if (!opt.dry) console.log(`Costo total: $${cost.toFixed(3)}`);

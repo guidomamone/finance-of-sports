@@ -45,6 +45,8 @@ sin decisiones abiertas; lo que requiera criterio se frena y lo resuelve una ses
 5. **Altas de clubes nuevos (fuera del pipeline por ahora):** `alta-club.mjs --todos` escribe `Admin/altas-club.jsonl`; `--claude` resuelve preguntas con cita
    verificada; `pipeline.mjs --resumen` lo muestra.
 
+**Dónde está cada cosa (Versión 317):** `Clubes/<País>/<Club>/` = solo el PDF y su `.md`; todo lo que las tools derivan (rubros, briefing, Jev, Claude, otras voces, respaldos) vive en `Generados/<País>/<Club>/` con el mismo nombre base (`tools/rutas.mjs`, gitignoreado).
+
 Estados de un PDF: `sin-md`, `sin-tablas`, `pendiente-segunda-voz`, `revisar`, `reintentar`, `no-es-pdf`, `listo`, `listo-para-jev`, `sin-rubros`, `cargado`.
 Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/transcripciones-verificaciones.jsonl` (solo se agrega). Costo real:
 `node tools/gasto.mjs`.

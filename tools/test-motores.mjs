@@ -34,6 +34,7 @@
 
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'node:fs';
 import { resolve, dirname, basename, extname } from 'node:path';
+import { derivado } from './rutas.mjs';
 import { execFileSync, spawnSync } from 'node:child_process';
 
 const projectRoot = resolve(import.meta.dirname, '..');
@@ -80,7 +81,7 @@ function pageCount(pdfAbs) {
 }
 
 function suffixPath(pdfAbs, engine) {
-  return resolve(dirname(pdfAbs), basename(pdfAbs, extname(pdfAbs)) + `.t-${engine}.md`);
+  return derivado(pdfAbs, `.t-${engine}.md`, { crear: false });
 }
 
 function readJsonl(path) {
@@ -90,7 +91,7 @@ function readJsonl(path) {
 
 // El costo real de cada corrida: la última línea del log de ese motor cuyo "md" es el archivo de test.
 function costOf(engine, pdfRel) {
-  const rel = pdfRel.replace(/\.pdf$/i, `.t-${engine}.md`);
+  const rel = derivado(pdfRel, `.t-${engine}.md`, { crear: false });
   const rows = readJsonl(resolve(projectRoot, 'Admin', engine === 'claude' ? 'claude-api' : engine, 'resultados.jsonl'))
     .filter((r) => r.md === rel);
   return rows.length ? rows[rows.length - 1].costUsd : null;

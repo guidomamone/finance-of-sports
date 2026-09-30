@@ -30,6 +30,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, copyFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
+import { derivado, ubicar } from './rutas.mjs';
 import { tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -54,7 +55,7 @@ const ultimo = {}; for (const v of V) if (v.md) ultimo[v.md] = v;
 const tot = { docs: 0, paginas: 0, levantadas: 0, corregidas: 0, siguen: 0 };
 for (const v of Object.values(ultimo)) {
   if (!v.reserva?.length || !v.previo) continue;
-  const mdAbs = resolve(root, v.md); const prevAbs = resolve(root, v.previo);
+  const mdAbs = resolve(root, v.md); const prevAbs = resolve(root, ubicar(v.previo));
   if (!existsSync(mdAbs) || !existsSync(prevAbs) || sha1(mdAbs) !== v.mdSha1) continue; // el .md cambió después: lo revisa la próxima validación
   tot.docs++;
   const cur = split(readFileSync(mdAbs, 'utf8')); const prev = split(readFileSync(prevAbs, 'utf8'));
@@ -72,7 +73,7 @@ for (const v of Object.values(ultimo)) {
   console.log(`${v.md}\n  ${log.join('\n  ')}${sigue.length ? `\n  siguen con reserva: ${sigue.join(', ')}` : ''}`);
   if (!APLICAR) continue;
   const cambioMd = log.some((l) => l.includes('ANTERIOR'));
-  if (cambioMd) { const bak = mdAbs.replace(/\.md$/, '.antes-sumas.md'); if (!existsSync(bak)) copyFileSync(mdAbs, bak); writeFileSync(mdAbs, join(cur.pre, cur.pages)); }
+  if (cambioMd) { const bak = derivado(mdAbs, '.antes-sumas.md'); if (!existsSync(bak)) copyFileSync(mdAbs, bak); writeFileSync(mdAbs, join(cur.pre, cur.pages)); }
   const { jev, rubros, tieOuts, ...base } = v;
   appendFileSync(verifPath, JSON.stringify({ ...(cambioMd ? base : v), ts: new Date().toISOString(), mdSha1: sha1(mdAbs), reserva: sigue, resolucion: resol, proveniencia: prov, detail: `${v.detail || ''} | revisar-reservas.mjs: ${log.length} página(s) decididas por sumas` }) + '\n');
 }

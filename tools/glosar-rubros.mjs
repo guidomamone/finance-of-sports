@@ -15,6 +15,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { derivado, ubicar } from './rutas.mjs';
 import { resolve, join } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
@@ -59,10 +60,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const i = args.indexOf('--lista');
     if (i >= 0) {
       const lista = readFileSync(resolve(root, args[i + 1]), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
-      files = lista.map((p) => resolve(root, p.replace(/\.pdf$/i, '.rubros.json'))).filter((f) => existsSync(f));
+      files = lista.map((p) => resolve(root, derivado(p, '.rubros.json', { crear: false }))).filter((f) => existsSync(f));
     } else {
       const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(d, e.name)) : e.name.endsWith('.rubros.json') ? [join(d, e.name)] : []));
-      files = walk(resolve(root, 'Clubes'));
+      files = existsSync(resolve(root, 'Generados')) ? walk(resolve(root, 'Generados')) : []; // los .rubros.json viven en Generados/ (tools/rutas.mjs)
     }
   }
   if (!files.length) { console.error('Uso: node tools/glosar-rubros.mjs <archivo.rubros.json>... | --listos'); process.exit(1); }

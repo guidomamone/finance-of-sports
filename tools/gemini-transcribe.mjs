@@ -21,6 +21,7 @@
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, basename, extname, join } from 'node:path';
+import { derivado, ubicar } from './rutas.mjs';
 import { execFileSync } from 'node:child_process';
 
 const MISTRAL_SCANNED_MARKER = 'ESCANEADO, TRANSCRIPTO CON MISTRAL OCR';
@@ -139,7 +140,9 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
   // PARALELO a Mistral (no como redo de un escaneo), sin pisar el .md de Mistral, así
   // compare-transcripts.mjs puede comparar los dos.
   const outSuffix = opts.outSuffix || '';
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + outSuffix + '.md');
+  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
+  const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   // `opts.redo`: --redo-mistral-scanned SÍ quiere pisar un .md que ya existe (el de Mistral).
   // BUG REAL, 2026-09-28: la versión anterior de este flag borraba TODOS los .md del lote entero
   // ANTES de arrancar a procesarlos uno por uno -- si la corrida se cortaba a mitad de camino

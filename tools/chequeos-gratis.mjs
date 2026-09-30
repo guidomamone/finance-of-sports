@@ -74,6 +74,7 @@ import vm from 'node:vm';
 import { NUM_RE, norm as digitos, THRESHOLDS as VN } from './verify-numbers.mjs';
 import { numeroDe, norm as normTxt } from './filas-rubro.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
+import { derivado, ubicar } from './rutas.mjs';
 import { TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -446,9 +447,10 @@ async function prueba() {
   const ult = new Map(); for (const r of L) if (r.md) ult.set(r.md, r);
   const docs = [];
   for (const r of ult.values()) {
+    if (r.previo) r.previo = ubicar(r.previo); // el historial guarda la ruta vieja (Clubes/...): tools/rutas.mjs la traduce a Generados/
     if (!r.resolucion || !r.previo || !existsSync(resolve(root, r.previo)) || !existsSync(resolve(root, r.md))) continue;
     const base = String(r.proveniencia?.base || '');
-    const redo = r.md.replace(/\.md$/, '.mistral-redo.md');
+    const redo = derivado(r.md, '.mistral-redo.md', { crear: false });
     const entrada = base.includes('re-hecho') && existsSync(resolve(root, redo)) ? redo : r.previo;
     const pdf = r.md.replace(/\.md$/, '.pdf');
     const q = quien(pdf);
@@ -514,7 +516,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (!pos[0]) { console.error('Uso: node tools/chequeos-gratis.mjs <archivo.md> [--pdf <archivo.pdf>] [--json]  |  --prueba [--detalle]'); process.exit(2); }
   const md = resolve(pos[0]);
   const pi = args.indexOf('--pdf');
-  const pdf = pi >= 0 ? resolve(args[pi + 1]) : md.replace(/(\.(previo-\w+|mistral-redo))?\.md$/, '.pdf');
+  const pdf = pi >= 0 ? resolve(args[pi + 1]) : md.replace(/^(.*?)Generados\//, '$1Clubes/').replace(/(\.(previo-\w+|mistral-redo))?\.md$/, '.pdf');
   const q = existsSync(pdf) ? quien(pdf.replace(root + '/', '')) : {};
   const res = await chequearPaginas({ pdfPath: pdf, mdText: readFileSync(md, 'utf8'), club: q.clubId, year: q.year });
   if (args.includes('--json')) console.log(JSON.stringify(res, null, 2));

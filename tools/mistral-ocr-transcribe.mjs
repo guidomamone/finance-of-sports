@@ -112,13 +112,16 @@ const SCANNED_WARNING = `> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver 
 
 `;
 
+import { derivado, ubicar } from './rutas.mjs';
 import { diagnosticar, limpiar as limpiarCopia } from './reparar-pdf.mjs';
 
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, outSuffix = '', scannedFlag = false) {
   // outSuffix sirve para tests de comparación (ej. "-mistral-test"): escribe a un archivo aparte en
   // vez de al `.md` canónico, así se puede correr sobre un PDF que YA tiene transcripción (de otra
   // pata) sin pisarla, para comparar los dos resultados lado a lado.
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + outSuffix + '.md');
+  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
+  const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   if (existsSync(mdPath)) return { skipped: true, pdf: pdfPath };
 
   // Antes de gastar una llamada: si el PDF está dañado se repara (qpdf) y si tiene una imagen gigante que Mistral rechaza (Thun, 128x105696 px)

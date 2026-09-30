@@ -41,6 +41,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { resolve, dirname, basename, extname, join } from 'node:path';
+import { derivado, ubicar } from './rutas.mjs';
 import { execFileSync, spawnSync } from 'node:child_process';
 
 const MODEL = 'claude-sonnet-5-5';
@@ -211,7 +212,9 @@ function pageCount(pdfPath) {
 
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, opts = {}) {
   const outSuffix = opts.outSuffix || '';
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + outSuffix + '.md');
+  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
+  const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   if (existsSync(mdPath) && !opts.redo) {
     return { skipped: true, pdf: pdfPath };
   }

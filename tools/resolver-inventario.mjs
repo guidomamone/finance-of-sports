@@ -78,6 +78,7 @@ const EST = { mistral: 0.004, gemini: 0.002, claude: 0.02 }; // USD por página,
 
 import { diagnosticar } from './reparar-pdf.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
+import { derivado, ubicar } from './rutas.mjs';
 import { chequearPaginas, quien, tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
 
 // ---------------------------------------------------------------- utilidades
@@ -153,7 +154,7 @@ function runTool(scriptPath, argv, timeoutMs) {
 // Llama a UNA tool de transcripción sobre UN PDF, con la política de reintentos de arriba.
 // Devuelve { ok, path } | { ok:false, kind:'recitation'|'otro'|'agotado', text }. Puede tirar StopRun.
 async function callEngine(engine, pdfAbs, suffix, opts = {}) {
-  const out = resolve(dirname(pdfAbs), basename(pdfAbs, '.pdf') + suffix + '.md');
+  const out = suffix ? derivado(pdfAbs, suffix + '.md') : resolve(dirname(pdfAbs), basename(pdfAbs, '.pdf') + '.md'); // mismo lugar que escribe la tool (tools/rutas.mjs)
   if (existsSync(out)) return { ok: true, path: out, reused: true };
   const attempts = { credito: 0, transitorio: 0 };
   for (;;) {
@@ -490,7 +491,7 @@ async function resolveDoc(e0) {
   let canon = splitPages(readFileSync(mdAbs, 'utf8'));
   const backup = () => {
     if (previo) return;
-    previo = mdAbs.replace(/\.md$/, `.previo-${e.motor === 'legado' ? 'legado' : e.motor}.md`);
+    previo = derivado(mdAbs, `.previo-${e.motor === 'legado' ? 'legado' : e.motor}.md`);
     if (!existsSync(previo)) copyFileSync(mdAbs, previo);
   };
   const setPage = (n, body, engine) => {

@@ -87,6 +87,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, basename, extname, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { clubDeRuta } from './carpetas-clubes.mjs';
+import { derivado, ubicar } from './rutas.mjs';
 import vm from 'node:vm';
 
 const projectRoot = resolve(import.meta.dirname, '..');
@@ -198,7 +199,7 @@ function briefingIsFresh(mdPath) {
   // tools/inventario-transcripciones.mjs necesita saber qué está CARGADO EN EL SITIO, sin mezclarlo con "tiene un briefing al día"
   // (BUG REAL: lo que el pipeline preparaba pasaba a figurar como cargado). Con esta variable se ignora el briefing.
   if (process.env.ONBOARD_IGNORE_BRIEFING) return false;
-  const briefingPath = resolve(dirname(mdPath), `${basename(mdPath, extname(mdPath))}.briefing.json`);
+  const briefingPath = derivado(mdPath, '.briefing.json', { crear: false });
   if (!existsSync(briefingPath)) return false;
   return statSync(briefingPath).mtimeMs >= statSync(mdPath).mtimeMs;
 }
@@ -342,7 +343,7 @@ const RESOLVED_MARKER_REGEX = /DISCREPANCIA MISTRAL\/GEMINI RESUELTA/;
 
 function processOne(pdfPath, { club, year, dryRun, verbose = true, stage = 'full' }) {
   const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-  const geminiCheckPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + GEMINI_CHECK_SUFFIX + '.md');
+  const geminiCheckPath = derivado(pdfPath, GEMINI_CHECK_SUFFIX + '.md', { crear: false });
   const relPdf = relative(projectRoot, pdfPath);
 
   console.log(`\n=== ${relPdf} ===`);

@@ -68,6 +68,7 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 - `huellas.mjs`: si un `.jev.json` / `.categorias.json` sigue correspondiendo a su entrada; si no, se rehace.
 - `periodo.mjs`: qué período cubre un documento (anual calendario / temporada, trimestral, semestral...), leído del contenido; `--grupos` junta los parciales.
 - `revisar-reservas.mjs`: decide con sumas las páginas "con reserva" de documentos ya resueltos.
+- `rutas.mjs`: dónde vive cada archivo generado (`Generados/<País>/<Club>/`, al lado de nada en `Clubes/`); todas las tools la usan.
 - `gasto.mjs`: cuánto se gastó por motor, día y documento, y qué se pagó y ya no está en disco. Gratis.
 - `generate-club-index.js`, `generate-fuentes-page.js`, `generate-fuentes-index.js`, `generate-rankings.js`, `generate-como-corre-stats.js`: regeneran páginas y tablas derivadas de los datos. Nunca se editan a mano sus resultados.
 - `audit.js` (+ `audit-ignore.json`): la auditoría.
@@ -83,7 +84,7 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 |---|---|
 | `Admin/transcripciones-estado.jsonl` | El registro por PDF: motor, estado, `listo-para-jev`/`sin-rubros`, reservas. Se regenera solo. |
 | `Admin/transcripciones-verificaciones.jsonl` | Historial de cada validación (se le agregan líneas, nunca se borra). |
-| `<md>.rubros.json` | Lista de rubros del documento para Jev. |
+| `Generados/.../<doc>.rubros.json` | Lista de rubros del documento para Jev (todos los derivados viven en `Generados/`, misma ruta que el documento en `Clubes/`). |
 | `<md>.jev.json` | Categoría y confianza que devolvió Jev por rubro. |
 | `<md>.briefing.json` | Tablas y chequeo de sumas del documento. |
 | `<md>.previo-*.md` | El `.md` anterior, guardado cuando una herramienta lo reemplazó. |

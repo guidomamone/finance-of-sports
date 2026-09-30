@@ -55,6 +55,7 @@ import { spawn } from 'node:child_process';
 import vm from 'node:vm';
 import { filasSuma, ladosPorEstructura, ladoPorPalabras, esResultado, noEsRubro as noEsRubroFR } from './filas-rubro.mjs';
 // Vocabulario multi-idioma y normalización (Versión 316): tools/vocabulario.mjs, el mismo de pipeline.mjs / filas-rubro.mjs / extract-table-rows.mjs.
+import { derivado, ubicar } from './rutas.mjs';
 import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -629,7 +630,7 @@ function run(script, argv) {
   });
 }
 async function briefingFor(club, year, md) {
-  const out = resolve(root, md.replace(/\.md$/, '.briefing.json'));
+  const out = resolve(root, derivado(md, '.briefing.json'));
   // El briefing en disco puede ser de antes de que se arreglaran las tools (palabras clave de idiomas, sumas): se rehace si es más viejo que ellas.
   const toolsMtime = Math.max(...['tools/prepare-onboarding.mjs', 'tools/extract-table-rows.mjs', 'tools/sum-check.mjs'].map((f) => statSync(resolve(root, f)).mtimeMs));
   if (!existsSync(out) || statSync(out).mtimeMs < toolsMtime || statSync(out).mtimeMs < statSync(resolve(root, md)).mtimeMs) await run('tools/prepare-onboarding.mjs', [club, String(year), resolve(root, md), '--out', out]);
@@ -653,7 +654,7 @@ async function backtest() {
   // muestra al azar (semilla fija) y no los primeros de la lista, que son todos del mismo país
   let seed = 11; const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
   jobs.sort((a, b) => a.e.pdf.localeCompare(b.e.pdf)).sort(() => rnd() - 0.5);
-  const jobsOk = FRESH && SIN_MISTRAL_NUEVO ? jobs.filter((j) => existsSync(resolve(root, j.e.pdf.replace(/\.pdf$/i, '.mistral-redo.md')))) : jobs;
+  const jobsOk = FRESH && SIN_MISTRAL_NUEVO ? jobs.filter((j) => existsSync(resolve(root, derivado(j.e.pdf, '.mistral-redo.md', { crear: false })))) : jobs;
   const jobsSel = limit > 0 ? jobsOk.slice(0, limit) : jobsOk;
   console.log(`${jobsSel.length} documentos de ejercicios ya cargados para reconstruir.`);
   const rows = [];
@@ -663,7 +664,7 @@ async function backtest() {
     try {
       let mdUsed = j.e.md;
       if (FRESH) {
-        mdUsed = j.e.pdf.replace(/\.pdf$/i, '.mistral-redo.md');
+        mdUsed = derivado(j.e.pdf, '.mistral-redo.md');
         if (!existsSync(resolve(root, mdUsed))) await run('tools/mistral-ocr-transcribe.mjs', [resolve(root, j.e.pdf), '--out-suffix', '.mistral-redo']);
         if (!existsSync(resolve(root, mdUsed))) { rows.push({ ...row, motivo: 'Mistral no pudo transcribir' }); return; }
       }

@@ -22,11 +22,12 @@
 // ============================================================================
 
 import { readFileSync, existsSync } from 'node:fs';
+import { derivado } from './rutas.mjs';
 import { createHash } from 'node:crypto';
 
 const sha1 = (s) => createHash('sha1').update(s).digest('hex');
 const leer = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
-const rutas = (mdAbs) => ({ rubros: mdAbs.replace(/\.md$/, '.rubros.json'), jev: mdAbs.replace(/\.md$/, '.jev.json'), cats: mdAbs.replace(/\.md$/, '.categorias.json') });
+const rutas = (mdAbs) => ({ rubros: derivado(mdAbs, '.rubros.json', { crear: false }), jev: derivado(mdAbs, '.jev.json', { crear: false }), cats: derivado(mdAbs, '.categorias.json', { crear: false }) });
 
 export function huellaRubros(rj) {
   return sha1(JSON.stringify((rj?.rubros || []).map((r) => [r.label, r.lado ?? null, r.values ?? null, r.page ?? null, r.columns ?? null])));

@@ -46,6 +46,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname, basename, extname } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { derivado } from './rutas.mjs';
 import vm from 'node:vm';
 
 const projectRoot = resolve(import.meta.dirname, '..');
@@ -358,7 +359,7 @@ function main() {
     return;
   }
 
-  const outPath = outFlag >= 0 ? args[outFlag + 1] : resolve(dirname(mdPath), `${basename(mdPath, extname(mdPath))}.briefing.json`);
+  const outPath = outFlag >= 0 ? args[outFlag + 1] : derivado(resolve(mdPath), '.briefing.json');
   writeFileSync(outPath, JSON.stringify(briefing, null, 2) + '\n', 'utf8');
 
   console.log(`${mdPath}`);

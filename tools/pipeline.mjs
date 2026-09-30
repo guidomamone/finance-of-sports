@@ -71,6 +71,7 @@ import { jevAlDia, categoriasAlDia } from './huellas.mjs';
 import { resumenAltas } from './altas-registro.mjs';
 // Vocabulario multi-idioma (Versión 314): título de estado de resultados, flujo/patrimonio, palabras de ingreso/gasto, totales y la
 // normalización del texto viven en tools/vocabulario.mjs (29 idiomas). Acá solo queda la lógica de la etapa 3.
+import { derivado, ubicar } from './rutas.mjs';
 import { normalizar, TITULO_RESULTADOS_RE, FLUJO_O_PATRIMONIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, esTotal } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -236,7 +237,7 @@ for (const e of ready) {
     nSinTablas++; continue;
   }
   const { club, year } = clubAndYear(e.pdf);
-  const out = mdAbs.replace(/\.md$/, '.briefing.json');
+  const out = derivado(mdAbs, '.briefing.json');
   const r = node('tools/prepare-onboarding.mjs', [club, year, mdAbs, '--out', out], { stdio: ['ignore', 'pipe', 'pipe'] });
   if (r.status !== 0 || !existsSync(out)) { nFail++; console.log(`  ! ${e.pdf}: prepare-onboarding.mjs falló (${(r.stderr || r.stdout || '').trim().split('\n').pop()?.slice(0, 120)})`); continue; }
   const b = JSON.parse(readFileSync(out, 'utf8'));
@@ -284,7 +285,7 @@ for (const e of ready) {
   const tie = b.tieOuts || [];
   const closes = tie.filter((x) => x.closes === true).length; const fails = tie.filter((x) => x.closes === false).length;
   const jev = rubros.length >= 5 ? 'listo-para-jev' : 'sin-rubros';
-  writeFileSync(mdAbs.replace(/\.md$/, '.rubros.json'), JSON.stringify({
+  writeFileSync(derivado(mdAbs, '.rubros.json'), JSON.stringify({
     md: e.md, pdf: e.pdf, club, year: Number(year), numberFormat: b.numberFormat, generatedAt: new Date().toISOString(),
     tieOuts: { cierran: closes, noCierran: fails }, warnings: b.warnings || [], estadoDeResultados: hasStatement, ladoConocido: rubros.filter((r) => r.lado).length, rubros,
   }, null, 1));

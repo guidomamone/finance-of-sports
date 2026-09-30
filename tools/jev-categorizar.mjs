@@ -36,6 +36,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync } from 'node:fs';
 import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
+import { derivado, ubicar } from './rutas.mjs';
 import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
@@ -225,7 +226,7 @@ async function listos() {
   // antes se miraba solo si el archivo existía, y 438 listas re-preparadas quedaron con categorías de la versión vieja).
   // `--lista <archivo>`: solo esos PDFs (lo usa pipeline.mjs para que la etapa 5 toque SOLO los documentos de la corrida).
   const lista = flagVal('--lista') ? leerLista(resolve(root, flagVal('--lista'))) : null;
-  let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && existsSync(resolve(root, e.md.replace(/\.md$/, '.rubros.json'))) && !jevAlDia(resolve(root, e.md)));
+  let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && existsSync(resolve(root, derivado(e.md, '.rubros.json'))) && !jevAlDia(resolve(root, e.md)));
   if (limit > 0) docs = docs.slice(0, limit);
   console.log(`${docs.length} documento(s) listo-para-jev sin categorizar o con la categorización desactualizada.${DRY ? ' (dry-run)' : ''}`);
   if (DRY || !docs.length) return;
@@ -234,7 +235,7 @@ async function listos() {
   // ingresos o de gastos, solo las categorías de ese lado: son las dos mejoras que llevaron el acierto de 69,5% a 86,6%.
   const retrieve = K_EXAMPLES ? makeRetriever([...buildBank(loadClubData()).values()].filter((x) => !x.conflict)) : null;
   for (const e of docs) {
-    const rj = JSON.parse(readFileSync(resolve(root, e.md.replace(/\.md$/, '.rubros.json')), 'utf8'));
+    const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
     const results = [];
     await pool(uniqLabels, async (r) => {
@@ -244,7 +245,7 @@ async function listos() {
       results.push({ label: r.label, lado: r.lado || null, page: r.page, section: r.section, ...(await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null })) });
     });
     if (stopAll) { console.log(`\nDETENIDO: ${stopAll}`); break; }
-    writeFileSync(resolve(root, e.md.replace(/\.md$/, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), rubros: results }, null, 1));
+    writeFileSync(resolve(root, derivado(e.md, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), rubros: results }, null, 1));
     const hi = results.filter((r) => r.confidence >= 0.9).length;
     total += results.length;
     console.log(`  ${e.pdf.split('/').slice(-2).join('/')}: ${results.length} rubros únicos, ${hi} con confianza ≥ 0,90, ${results.filter((r) => r.error).length} con error`);

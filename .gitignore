@@ -156,3 +156,7 @@ Admin/.paginas-cache.json
 *.jev.json
 # tools/categorizar-claude.mjs --listos: categoría final por rubro (precedente / Jev / Claude), mismo criterio que *.jev.json
 *.categorias.json
+
+# Archivos DERIVADOS de cada documento (lista de rubros, briefing, respuestas de Jev/Claude, otras voces, respaldos): tools/rutas.mjs.
+# Se regeneran o son caché de APIs ya pagadas; nunca se borran. Versión 317.
+Generados/

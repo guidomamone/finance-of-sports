@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 317 — Los archivos generados salen de Clubes/: todo derivado vive en Generados/ (2026-09-30)
+
+- `tools/rutas.mjs` (nuevo): la única regla de dónde vive un derivado de un documento. `Clubes/<País>/<Club>/` queda SOLO con el PDF y su `.md`; los derivados (`.briefing.json`, `.rubros.json`, `.jev.json`, `.categorias.json`, `.previo-*.md`, `.antes-sumas.md`, `.mistral-redo.md`, `.gemini-check.md`, `.claude-check.md`, `.t-*.md`) van a `Generados/<País>/<Club>/` con la misma ruta relativa (gitignoreado). `ubicar()` traduce las rutas viejas que guarda el historial.
+- 17 tools pasaron de armar la ruta a mano (~45 lugares) a `derivado()`: los tres transcriptores (con `--out-suffix`), resolver, pipeline, prepare-onboarding, onboard, inventario, huellas, jev, categorizar-claude, glosar, proponer-carga, chequeos-gratis, revisar-reservas, test-motores.
+- Mudanza (`node tools/rutas.mjs --mudar --aplicar`): 2.704 archivos movidos, ninguno borrado (varios son caché de APIs ya pagadas o evidencia de correcciones). Las 10 transcripciones `-mistral-test.md` del test de costo del 26/09, que estaban trackeadas, se movieron con `git mv` a `Admin/test-costo-transcripcion/mistral-test/`.
+- Verificado: una "foto" sin API del estado (resumen, ensayos del pipeline, del resolver, de Jev y Claude, revisar-reservas, chequeos-gratis --prueba, gasto, periodo, altas) tomada con el código y los archivos de antes es IDÉNTICA a la de después.
+
 ## Versión 316 — Vocabulario contable en 29 idiomas en un solo módulo (2026-09-30)
 
 - `tools/vocabulario.mjs` (nuevo): por concepto (título de estado de resultados, ingresos, gastos, impuestos, resultado, total al comienzo y al final, total de ingresos, resultado del ejercicio, flujo de efectivo, cambios en el patrimonio, saldo inicial, balance, total del activo/pasivo, columna de notas / código de fila) los términos en 29 idiomas (es, pt, en, de, fr, it, nl, da, no, sv, fi, cs, sk, pl, hr/bs/sr, sr cirílico, sl, hu, ro, bg, el, tr, ru, uk, zh, ja, ko, ar, he), con límites de palabra y UNA normalización (`normalizar()`). `pipeline.mjs`, `extract-table-rows.mjs`, `filas-rubro.mjs`, `proponer-carga.mjs` y `chequeos-gratis.mjs` toman el vocabulario de ahí; la lógica de cada tool no cambió.

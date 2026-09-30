@@ -49,6 +49,7 @@ import { resolve, join, relative, dirname, basename } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { verifyNumbers } from './verify-numbers.mjs';
+import { derivado } from './rutas.mjs';
 import { periodoDe } from './periodo.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -117,7 +118,7 @@ function latestVerifications() {
 function findVoices(pdfAbs) {
   const base = pdfAbs.slice(0, -4);
   const out = [];
-  for (const [suf, label] of VOICE_SUFFIXES) if (existsSync(base + suf + '.md')) out.push({ label, path: relative(root, base + suf + '.md') });
+  for (const [suf, label] of VOICE_SUFFIXES) { const p = derivado(pdfAbs, suf + '.md', { crear: false }); if (existsSync(p)) out.push({ label, path: relative(root, p) }); }
   return out;
 }
 

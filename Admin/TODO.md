@@ -93,9 +93,7 @@ perdieron sino que se descartaron:
 
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
-    - **Junto a cada PDF/`.md` de `Clubes/` se acumulan archivos generados**: `<md>.briefing.json`, `<md>.rubros.json`, `<md>.jev.json`, `<md>.previo-*.md`, `<md>.mistral-redo.md`,
-      `<md>.claude-check.md`, `<md>.gemini-check.md`, `<md>.t-*.md` (tests). Están gitignoreados pero ensucian las carpetas; convendría una subcarpeta por club (por ejemplo
-      `Clubes/<País>/<Club>/_generados/`) y que las tools lean y escriban ahí.
+    - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).
     - **`Admin/`**: las listas de pilotos viejas ya están en `Admin/Archive/pilotos/` (2026-09-30). Quedan los informes de
       tests (`test-*.md`, `test-*.jsonl`) que conviene juntar en una carpeta, y documentos internos viejos que hay que archivar siguiendo la regla de `CLAUDE.md`
       (`Admin/Archive/`, sacándole antes lo que todavía sirve a `CONVENCIONES.md`/skills/`TODO.md`).
