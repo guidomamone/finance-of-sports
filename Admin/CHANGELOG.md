@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 318 — Tablero del inventario (`tools/estado.mjs`) y tools/ fuera del deploy (2026-09-30)
+
+- `tools/estado.mjs` (nuevo, gratis): por estado, cuántos PDFs, qué significa, qué le falta, con qué comando se avanza y cuánto cuesta; detalle de los que tienen rubros (categorización al día, club en el sitio o nuevo, no anuales, reservas) y de las altas. `--actualizar` regenera el registro antes.
+- `netlify.toml`: `rm -rf tools` (pedido de Guido: "no publiquemos tools"); ninguna página carga nada de `tools/`.
+
 ## Versión 317 — Los archivos generados salen de Clubes/: todo derivado vive en Generados/ (2026-09-30)
 
 - `tools/rutas.mjs` (nuevo): la única regla de dónde vive un derivado de un documento. `Clubes/<País>/<Club>/` queda SOLO con el PDF y su `.md`; los derivados (`.briefing.json`, `.rubros.json`, `.jev.json`, `.categorias.json`, `.previo-*.md`, `.antes-sumas.md`, `.mistral-redo.md`, `.gemini-check.md`, `.claude-check.md`, `.t-*.md`) van a `Generados/<País>/<Club>/` con la misma ruta relativa (gitignoreado). `ubicar()` traduce las rutas viejas que guarda el historial.

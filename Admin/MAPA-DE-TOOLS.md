@@ -25,6 +25,7 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 | Comando | Para qué |
 |---|---|
 | `node tools/pipeline.mjs --ejecutar --limit 50` | **El comando principal**: de PDF a "listo para Jev" + categorización con Jev. |
+| `node tools/estado.mjs` | **El tablero**: cuántos PDFs hay en cada estado, qué les falta, con qué comando se avanzan y cuánto cuesta. Gratis. |
 | `node tools/pipeline.mjs --resumen` | Cómo está el inventario, sin correr nada. |
 | `node tools/jev-categorizar.mjs --backtest --limit 0` | Test de confiabilidad de Jev contra lo ya cargado. |
 | `node tools/proponer-carga.mjs --backtest` | Mide si un script puede reconstruir ejercicios cargados (etapa 5, versión 0). |
