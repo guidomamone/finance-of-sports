@@ -108,6 +108,17 @@ que dice `ESTADO.md` era verdad ese día.
     ≥ 0,70 (el caso peligroso para una integración automática), acierto por categoría. `--listos` categoriza los `<md>.rubros.json` de los
     documentos `listo-para-jev` y deja `<md>.jev.json` (gitignoreado). El lado (ingreso/gasto) no se le dice: se le ofrecen las 26
     categorías juntas (`--lado-conocido` las separa). Las descripciones de las categorías salen de `data/category-map.js`. Probado con 6 rubros reales.
+  - **Backtest de Jev completo** (3.975 rubros únicos ya cargados, 164 clubes; informes en `Admin/test-jev-resultados*.md`): sin ayuda 69,5%
+    (90,3% en la banda de confianza ≥ 0,90); diciéndole el lado (ingreso/gasto) 74,2% (93,0%); lado + 8 ejemplos parecidos ya categorizados
+    86,6% (95,9% en la banda alta, que cubre el 72% de los rubros); lado + ejemplos SOLO de otros clubes (el caso de un club nuevo) 83,0% (94,4%,
+    69% de los rubros). Los errores que quedan son sobre todo entre catch-alls (`admin_general_expense` <-> `other_expenses`) y convenciones
+    propias de cada club. Conclusión: sirve como primer piso con la banda alta, pero un ~5% de error en esa banda no alcanza para aceptar sin un
+    segundo control. `--listos` ahora usa lado (cuando el documento lo indica) y ejemplos por defecto.
+  - `tools/pipeline.mjs`: `<md>.rubros.json` ahora lleva el `lado` de cada tabla (por palabras del título y las columnas en varios idiomas; 49% de
+    los rubros lo traen) y un documento solo es `listo-para-jev` si tiene un **estado de resultados** (o de recursos y gastos) con al menos 5 rubros;
+    si no, `sin-rubros` (272 de los 304 `sin-rubros` no tienen ninguno: actas, dictámenes, certificaciones, memorias narrativas). Nuevos flags:
+    `--solo-preparar` (solo la preparación gratis, sin API), `--repreparar` (rehace documentos que ya la tenían). Corrida sin API sobre los 640
+    documentos validados: 336 `listo-para-jev`, 304 `sin-rubros`.
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",

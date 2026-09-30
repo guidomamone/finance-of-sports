@@ -26,7 +26,8 @@
 //   node tools/jev-categorizar.mjs --backtest --limit 200            # 200 rubros ya cargados (~$0.01)
 //   node tools/jev-categorizar.mjs --backtest --limit 0              # TODOS los rubros únicos cargados (miles)
 //   node tools/jev-categorizar.mjs --listos [--limit 10]             # los documentos listo-para-jev (10 documentos)
-//   Extras: --concurrencia 8, --semilla 7, --lado-conocido, --club river, --dry-run (muestra cuántas llamadas haría)
+//   Extras: --concurrencia 8, --semilla 7, --lado-conocido, --ejemplos 8 (le muestra 8 rubros parecidos ya categorizados),
+//           --sin-mismo-club (los ejemplos salen solo de otros clubes: el caso de un club nuevo), --etiqueta _nombre (no pisa el informe de otra variante), --club river, --dry-run
 //
 // Necesita Admin/jev/.env con JEV_API_KEY=... (gitignoreado).
 // API: POST https://api.typesafe.ai/v1/systemone, Authorization: Bearer <key>, ver https://docs.typesafe.ai/
@@ -47,6 +48,9 @@ const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : (BACKTE
 const concurrency = Number(flagVal('--concurrencia') || 8);
 const seed = Number(flagVal('--semilla') || 7);
 const clubOnly = flagVal('--club');
+const K_EXAMPLES = Number(flagVal('--ejemplos') ?? (LISTOS ? 8 : 0)); // rubros parecidos ya categorizados que se le muestran a Jev (0 = ninguno)
+const NO_SAME_CLUB = args.includes('--sin-mismo-club'); // ejemplos solo de OTROS clubes: mide el caso difícil (club nuevo, sin historia propia)
+const tag = flagVal('--etiqueta') || ''; // sufijo para no pisar el informe de otra variante
 
 if (!BACKTEST && !LISTOS) { console.error('Uso: node tools/jev-categorizar.mjs --backtest [--limit N]   o   --listos [--limit N]   (ver la cabecera del archivo)'); process.exit(1); }
 
@@ -81,9 +85,10 @@ const sideOf = (cat) => (cat in CATS.revenue ? 'revenue' : cat in CATS.expense ?
 
 // ---------------------------------------------------------------- llamada a Jev
 let stopAll = null;
-async function askJev(key, { label, section, club, side }) {
-  const criteria = SIDE_KNOWN && side ? Object.fromEntries(Object.entries(ALL).filter(([k]) => sideOf(k) === side)) : ALL;
-  const state = [`Rubro de un estado financiero de un club de fútbol${club ? ` (${club})` : ''}${section ? `, sección: ${section}` : ''}.`, `Texto del rubro, tal cual figura en el documento: "${label}"`].join('\n');
+async function askJev(key, { label, section, club, side, examples, useSide }) {
+  const criteria = (SIDE_KNOWN || useSide) && side ? Object.fromEntries(Object.entries(ALL).filter(([k]) => sideOf(k) === side)) : ALL;
+  const exText = examples && examples.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.truth}`).join('\n')}\n` : '';
+  const state = [`Rubro de un estado financiero de un club de fútbol${club ? ` (${club})` : ''}${section ? `, sección: ${section}` : ''}.`, exText, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
   const body = { state, model: 'jev-latest', questions: { categoria: { type: 'choice', instructions: 'Elegí la categoría de la lista a la que corresponde este rubro. Si no encaja en ninguna, elegí la más genérica (other_income / other_expenses).', criteria } } };
   for (let attempt = 0; attempt < 5; attempt++) {
     if (stopAll) return { error: stopAll };
@@ -120,10 +125,29 @@ function loadClubData() {
   for (const rel of files) vm.runInContext(readFileSync(resolve(root, rel), 'utf8'), ctx, { filename: rel });
   return vm.runInContext('window.CLUB_GENERIC_DATA', ctx);
 }
+const words = (t) => new Set(String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z0-9]+/).filter((w) => w.length > 2));
+function makeRetriever(bank) {
+  const prepared = bank.map((b) => ({ ...b, w: words(b.label), key: `${b.club}|${b.label.toLowerCase().replace(/\s+/g, ' ').trim()}` }));
+  return (q) => {
+    const qw = words(q.label); const qkey = `${q.club}|${q.label.toLowerCase().replace(/\s+/g, ' ').trim()}`;
+    const scored = [];
+    for (const b of prepared) {
+      if (NO_SAME_CLUB && b.club === q.club) continue;
+      if (b.key === qkey) continue; // nunca el mismo rubro del mismo club (sería la respuesta: eso lo cubre el precedente exacto)
+      if ((SIDE_KNOWN || q.useSide) && q.side && b.side !== q.side) continue;
+      let inter = 0; for (const w of qw) if (b.w.has(w)) inter++;
+      if (!inter) continue;
+      scored.push([inter / (qw.size + b.w.size - inter), b]);
+    }
+    scored.sort((a, b) => b[0] - a[0]);
+    const seen = new Set(); const out = [];
+    for (const [, b] of scored) { const k = `${b.label.toLowerCase()}|${b.truth}`; if (seen.has(k)) continue; seen.add(k); out.push(b); if (out.length >= K_EXAMPLES) break; }
+    return out;
+  };
+}
 function rng(s) { let x = s >>> 0; return () => { x = (x * 1664525 + 1013904223) >>> 0; return x / 4294967296; }; }
 
-async function backtest() {
-  const data = loadClubData();
+function buildBank(data) {
   const uniq = new Map(); // "lado|texto normalizado" -> {label, side, truth, club, conflict}
   for (const [club, d] of Object.entries(data)) {
     if (clubOnly && club !== clubOnly) continue;
@@ -137,6 +161,12 @@ async function backtest() {
       }
     }
   }
+  return uniq;
+}
+
+async function backtest() {
+  const data = loadClubData();
+  const uniq = buildBank(data);
   let pool_ = [...uniq.values()].filter((x) => !x.conflict && sideOf(x.truth) === x.side);
   console.log(`${pool_.length} rubros únicos ya cargados (sin los que un club categorizó distinto en años distintos) de ${Object.keys(data).length} clubes.`);
   // muestra: se reparte parejo entre categorías, para no medir solo las categorías grandes (other_income, other_expenses)
@@ -150,9 +180,10 @@ async function backtest() {
   }
   console.log(`Muestra: ${pool_.length} rubros. ${DRY ? '(dry-run, no llamo a Jev)' : ''}`);
   if (DRY) return;
-  const key = readKey(); const outPath = resolve(root, 'Admin', 'jev', 'backtest.jsonl'); const rows = [];
+  const key = readKey(); const outPath = resolve(root, 'Admin', 'jev', `backtest${tag}.jsonl`); const rows = [];
+  const retrieve = K_EXAMPLES ? makeRetriever([...uniq.values()].filter((x) => !x.conflict)) : null;
   await pool(pool_, async (x) => {
-    const r = await askJev(key, { label: x.label, club: x.club, side: x.side });
+    const r = await askJev(key, { label: x.label, club: x.club, side: x.side, examples: retrieve ? retrieve(x) : null });
     const row = { ts: new Date().toISOString(), club: x.club, side: x.side, label: x.label, truth: x.truth, ...r };
     rows.push(row); appendFileSync(outPath, JSON.stringify(row) + '\n');
   });
@@ -160,13 +191,14 @@ async function backtest() {
   report(rows.filter((r) => !r.error), rows.filter((r) => r.error).length);
 }
 
+
 function report(rows, errors) {
   const bins = [['≥ 0,90', 0.9, 1.01], ['0,70 – 0,90', 0.7, 0.9], ['0,50 – 0,70', 0.5, 0.7], ['< 0,50', 0, 0.5]];
   const ok = (r) => r.choice === r.truth;
   const lines = [];
   lines.push('# Test de confiabilidad de Jev (backtest contra rubros ya cargados)', '');
   lines.push(`Generado por \`tools/jev-categorizar.mjs --backtest\` el ${new Date().toISOString().slice(0, 10)}. ${rows.length} rubros con respuesta${errors ? ` (${errors} con error de la API)` : ''}; la "verdad" es la categoría que una sesión humana ya asignó y está en producción.`);
-  lines.push(`Modo: ${SIDE_KNOWN ? 'lado conocido (solo las categorías del lado correcto)' : 'lado desconocido (las 26 categorías juntas)'}.`, '');
+  lines.push(`Modo: ${SIDE_KNOWN ? 'lado conocido (solo las categorías del lado correcto)' : 'lado desconocido (las 26 categorías juntas)'}${K_EXAMPLES ? `; con ${K_EXAMPLES} ejemplos parecidos ya categorizados${NO_SAME_CLUB ? ' (solo de OTROS clubes)' : ' (también del mismo club)'}` : '; sin ejemplos'}.`, '');
   lines.push(`**Acierto total: ${rows.filter(ok).length}/${rows.length} (${(100 * rows.filter(ok).length / Math.max(1, rows.length)).toFixed(1)}%)**`, '');
   lines.push('| Confianza de Jev | Rubros | Aciertos | % |', '|---|---|---|---|');
   for (const [name, lo, hi] of bins) { const g = rows.filter((r) => r.confidence >= lo && r.confidence < hi); lines.push(`| ${name} | ${g.length} | ${g.filter(ok).length} | ${g.length ? (100 * g.filter(ok).length / g.length).toFixed(1) : '-'}% |`); }
@@ -180,9 +212,9 @@ function report(rows, errors) {
   for (const r of rows) { (byTruth[r.truth] ||= { n: 0, ok: 0 }); byTruth[r.truth].n++; if (ok(r)) byTruth[r.truth].ok++; }
   lines.push('', '## Acierto por categoría real', '', '| Categoría | Rubros | Aciertos |', '|---|---|---|');
   for (const [k, v] of Object.entries(byTruth).sort((a, b) => b[1].n - a[1].n)) lines.push(`| ${k} | ${v.n} | ${v.ok} |`);
-  writeFileSync(resolve(root, 'Admin', 'test-jev-resultados.md'), lines.join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', `test-jev-resultados${tag}.md`), lines.join('\n') + '\n');
   console.log(lines.slice(0, 14).join('\n'));
-  console.log(`\nErrores con confianza ≥ 0,70: ${bad.length}. Informe completo en Admin/test-jev-resultados.md`);
+  console.log(`\nErrores con confianza ≥ 0,70: ${bad.length}. Informe completo en Admin/test-jev-resultados${tag}.md`);
 }
 
 // ---------------------------------------------------------------- LISTOS
@@ -193,11 +225,17 @@ async function listos() {
   console.log(`${docs.length} documento(s) listo-para-jev sin categorizar.${DRY ? ' (dry-run)' : ''}`);
   if (DRY || !docs.length) return;
   const key = readKey(); let total = 0;
+  // Ejemplos parecidos ya categorizados en el sitio (de todos los clubes) y, cuando el documento indica si la tabla es de
+  // ingresos o de gastos, solo las categorías de ese lado: son las dos mejoras que llevaron el acierto de 69,5% a 86,6%.
+  const retrieve = K_EXAMPLES ? makeRetriever([...buildBank(loadClubData()).values()].filter((x) => !x.conflict)) : null;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, e.md.replace(/\.md$/, '.rubros.json')), 'utf8'));
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
     const results = [];
-    await pool(uniqLabels, async (r) => { results.push({ label: r.label, page: r.page, section: r.section, ...(await askJev(key, { label: r.label, section: r.section, club: rj.club })) }); });
+    await pool(uniqLabels, async (r) => {
+      const useSide = Boolean(r.lado); const q = { label: r.label, club: rj.club, side: r.lado || null, useSide };
+      results.push({ label: r.label, lado: r.lado || null, page: r.page, section: r.section, ...(await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null })) });
+    });
     if (stopAll) { console.log(`\nDETENIDO: ${stopAll}`); break; }
     writeFileSync(resolve(root, e.md.replace(/\.md$/, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubros: results }, null, 1));
     const hi = results.filter((r) => r.confidence >= 0.9).length;

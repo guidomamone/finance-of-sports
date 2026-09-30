@@ -33,6 +33,7 @@
 //   node tools/pipeline.mjs --ejecutar --dir Clubes/Chile --concurrencia 4
 //   node tools/pipeline.mjs --ejecutar --lista Admin/mi-lista.txt
 //   node tools/pipeline.mjs --ejecutar --max-paginas 0       # incluye los documentos de más de 100 páginas (caros)
+//   node tools/pipeline.mjs --ejecutar --solo-preparar --repreparar --limit 0   # rehace SIN API la lista de rubros de los ya listos
 //   node tools/pipeline.mjs --resumen                # solo el estado actual del inventario, sin correr nada
 // ============================================================================
 
@@ -84,7 +85,8 @@ if (SUMMARY_ONLY) { printSummary(ledger, 'Estado del inventario'); process.exit(
 const listSet = listFile ? new Set(readFileSync(resolve(root, listFile), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'))) : null;
 const inScope = (e) => (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/')) && (!listSet || listSet.has(e.pdf));
 const needsResolve = (e) => ['sin-md', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar'].includes(e.estado);
-const needsPrepare = (e) => e.estado === 'listo' && !e.jev;
+const REPREPARE = args.includes('--repreparar'); // rehace la lista de rubros de documentos que ya la tenían (gratis, sin API)
+const needsPrepare = (e) => e.estado === 'listo' && (!e.jev || (REPREPARE && ['listo-para-jev', 'sin-rubros'].includes(e.jev)));
 // Páginas por PDF, con caché (pdfinfo sobre ~3.000 PDFs tardaría medio minuto en cada corrida).
 const cachePath = resolve(root, 'Admin', '.paginas-cache.json');
 let pageCache = {}; try { pageCache = JSON.parse(readFileSync(cachePath, 'utf8')); } catch { /* sin caché */ }
@@ -96,7 +98,8 @@ function pagesOf(pdf) {
   pageCache[pdf] = { k: key, n };
   return n;
 }
-let selected = ledger.filter((e) => !e.cargado && inScope(e) && (needsResolve(e) || needsPrepare(e)));
+const ONLY_PREPARE = args.includes('--solo-preparar'); // solo la preparación gratis para Jev, sin transcribir ni validar (sin API)
+let selected = ledger.filter((e) => !e.cargado && inScope(e) && (ONLY_PREPARE ? needsPrepare(e) : (needsResolve(e) || needsPrepare(e))));
 for (const e of selected) e.paginas = pagesOf(e.pdf);
 try { writeFileSync(cachePath, JSON.stringify(pageCache)); } catch { /* la caché es opcional */ }
 selected.sort((a, b) => a.paginas - b.paginas); // los chicos primero: resultados rápidos y baratos
@@ -151,6 +154,20 @@ function clubAndYear(pdf) {
   return { club: folder, year: y ? y[1] : '0' };
 }
 
+// Lado de una tabla (ingreso o gasto) por las palabras de su título y sus columnas, en varios idiomas. Si aparecen las dos
+// familias (o ninguna) no se adivina: queda sin lado. Saber el lado sube mucho el acierto de Jev (69,5% -> 74,2% en el backtest).
+const SIDE_REV = /ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
+const SIDE_EXP = /gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|kosten|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
+const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
+function sideOfTable(t) {
+  const h = norm(`${t.section || ''} ${(t.columns || []).join(' ')}`);
+  const r = SIDE_REV.test(h); const x = SIDE_EXP.test(h);
+  return r && !x ? 'revenue' : x && !r ? 'expense' : null;
+}
+// ¿La tabla es (parte de) un ESTADO DE RESULTADOS / de recursos y gastos? Sin al menos una así, el documento no es un estado
+// financiero con rubros que categorizar (actas, memorias narrativas, certificaciones): un acta del Aris colaba 16 "rubros".
+const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos/;
+const isStatement = (t) => STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`));
 const isTotal = (l) => /^\s*\**\s*(total|subtotal|sum\b|suma)/i.test(String(l || '')) || /^\s*\**\s*(totale|totaal|gesamt|ukupno|total\s)/i.test(String(l || ''));
 const hasNumber = (vals) => vals.some((v) => /\d/.test(String(v)));
 let nJev = 0; let nSin = 0; let nFail = 0;
@@ -162,24 +179,26 @@ for (const e of ready) {
   if (r.status !== 0 || !existsSync(out)) { nFail++; console.log(`  ! ${e.pdf}: prepare-onboarding.mjs falló (${(r.stderr || r.stdout || '').trim().split('\n').pop()?.slice(0, 120)})`); continue; }
   const b = JSON.parse(readFileSync(out, 'utf8'));
   const rubros = [];
+  const hasStatement = (b.tables || []).some((t) => t.likelyRelevant && isStatement(t));
   for (const t of b.tables || []) {
-    if (!t.likelyRelevant) continue;
+    if (!t.likelyRelevant || !hasStatement) continue;
+    const lado = sideOfTable(t);
     for (const row of t.rows || []) {
       if (isTotal(row.rawLabel) || !String(row.rawLabel || '').trim() || !hasNumber(row.values || [])) continue;
-      rubros.push({ label: row.rawLabel.trim(), page: t.page, section: t.section || '', values: row.values, columns: t.columns });
+      rubros.push({ label: row.rawLabel.trim(), lado, page: t.page, section: t.section || '', values: row.values, columns: t.columns });
     }
   }
   const tie = b.tieOuts || [];
   const closes = tie.filter((x) => x.closes === true).length; const fails = tie.filter((x) => x.closes === false).length;
-  const jev = rubros.length ? 'listo-para-jev' : 'sin-rubros';
+  const jev = rubros.length >= 5 ? 'listo-para-jev' : 'sin-rubros';
   writeFileSync(mdAbs.replace(/\.md$/, '.rubros.json'), JSON.stringify({
     md: e.md, pdf: e.pdf, club, year: Number(year), numberFormat: b.numberFormat, generatedAt: new Date().toISOString(),
-    tieOuts: { cierran: closes, noCierran: fails }, warnings: b.warnings || [], rubros,
+    tieOuts: { cierran: closes, noCierran: fails }, warnings: b.warnings || [], estadoDeResultados: hasStatement, ladoConocido: rubros.filter((r) => r.lado).length, rubros,
   }, null, 1));
   // Se conserva todo lo que ya sabíamos de la validación de la transcripción (motor, páginas reemplazadas, reservas...).
   const prev = [...readJsonl(verifPath)].reverse().find((v) => v.md === e.md && v.mdSha1 === sha1(mdAbs)) || {};
   appendFileSync(verifPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'listo', jev, rubros: rubros.length, tieOuts: { cierran: closes, noCierran: fails } }) + '\n');
-  if (rubros.length) nJev++; else nSin++;
+  if (jev === 'listo-para-jev') nJev++; else nSin++;
 }
 console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
 
