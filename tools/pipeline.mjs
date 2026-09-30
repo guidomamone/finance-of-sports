@@ -4,27 +4,38 @@
 //
 //     node tools/pipeline.mjs --ejecutar
 //
-// Busca los PDFs de Clubes/ que todavía no tienen un .md LISTO para Jev —ya sea porque no tienen ningún .md, o
-// porque tienen uno que nadie confirmó— y a cada uno lo lleva por todo el camino:
+// VISIÓN (Guido, 2026-09-30): que este comando termine llevando un PDF desde la transcripción hasta el club CARGADO en el sitio, por sí
+// solo, siempre que el club ya exista y no aparezcan rubros nuevos que necesiten criterio de una sesión de Claude. Hoy llega hasta la
+// categorización con Jev (etapas 1-5). Las etapas 6-7 (cargar y publicar) están en construcción: ver tools/proponer-carga.mjs, que por
+// ahora solo MIDE si la carga automática es viable y no escribe nada del sitio.
 //
-//   1. Sin .md         -> Mistral transcribe.
-//   2. Validación      -> PDF con texto: los números de cada página contra el texto del PDF (gratis), y Claude solo
-//                         en las páginas dudosas. Escaneo: Gemini como segunda voz, Claude solo en las páginas que
-//                         difieren. Conflictos entre voces: mayoría -> parche de dígitos por mayoría -> cuarta voz
-//                         (Mistral) -> aritmética del documento -> Claude con "reserva". (Ver la cabecera de
-//                         tools/resolver-inventario.mjs para el detalle y para el manejo de fallos por crédito.)
-//   3. Preparación     -> las tools gratis de onboarding (tools/prepare-onboarding.mjs: tablas, chequeo de sumas) y,
-//                         con eso, la lista de rubros del documento.
-//   4. Marca final     -> `listo-para-jev` (tiene rubros), `sin-rubros` (actas, memorias narrativas: transcripto y
-//                         validado pero no hay nada que categorizar) o el motivo por el que NO está listo.
+// Busca los PDFs de Clubes/ que todavía no tienen un .md LISTO para Jev —ya sea porque no tienen ningún .md, o porque tienen uno que
+// nadie confirmó— y a cada uno lo lleva por todo el camino. Cada etapa está hecha por una herramienta propia (ver Admin/MAPA-DE-TOOLS.md):
 //
-// LO QUE NO HACE, a propósito: categorizar rubros. Eso es de Jev (to-do 99); este script termina dejando, al lado de
-// cada .md listo, un `<archivo>.rubros.json` con lo que Jev va a necesitar como entrada (texto del rubro, página,
-// sección, importes). Enviarlo a la API de Jev (POST https://api.typesafe.ai/v1/systemone, ver CHANGELOG Versión 305)
-// es un paso futuro.
+//   1. TRANSCRIBIR     Sin .md -> Mistral OCR lo transcribe (entrega tablas). Un .md SIN TABLAS (el 82% de los viejos: etiquetas e
+//                      importes en bloques separados) se rehace con Mistral una sola vez (estado `sin-tablas`, campo `formatoIntentado`).
+//   2. VALIDAR         (tools/resolver-inventario.mjs) PDF con texto: los números de cada página contra el texto del PDF (gratis) y
+//                      Claude por API SOLO en las páginas dudosas. Escaneo o texto roto: Gemini como segunda voz, Claude solo en las
+//                      páginas que difieren, voto entre voces, cuarta voz (Mistral), aritmética del documento, y Claude con
+//                      "reserva" como último recurso. Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos
+//                      corta la corrida (los documentos quedan en `reintentar`).
+//   3. PREPARAR        (tools/prepare-onboarding.mjs) las tablas del .md, el chequeo de sumas contra los totales impresos y la lista de
+//                      rubros del documento -> `<md>.rubros.json`. Un documento solo es `listo-para-jev` si tiene un estado de
+//                      resultados con >= 5 rubros; si no es `sin-rubros` (actas, memorias narrativas, certificaciones: el .md
+//                      validado queda como fuente).
+//   4. MARCAR          `listo-para-jev`, `sin-rubros`, `sin-tablas`, `revisar`, `reintentar`, `no-es-pdf` (registro en
+//                      Admin/transcripciones-estado.jsonl, que se regenera solo).
+//   5. CATEGORIZAR     (tools/jev-categorizar.mjs --listos) Jev, con el lado (ingreso/gasto) de cada tabla y 8 ejemplos parecidos ya
+//                      categorizados -> `<md>.jev.json`. Confianza >= 0,90: aceptable (decisión de Guido). Menor: iría a Claude por
+//                      API y, si duda, a Admin/dudas-por-club.md (todavía no implementado).
+//   6. CARGAR          (PENDIENTE, ver Admin/TODO.md to-do 108) escribir el ejercicio en data/<club>-data.js, subir ASSET_V,
+//                      regenerar, correr audit.js; si algo falla, revertir. Solo para un club que ya existe y sin decisiones abiertas.
+//   7. PUBLICAR        (PENDIENTE) commit local; el push lo hace Guido.
 //
-// No toca los ejercicios que ya están cargados en el sitio. Se puede cortar con Ctrl+C y volver a correr: sigue donde
-// quedó. Si una API se queda sin crédito, espera y reintenta; si sigue, deja el documento en `reintentar` y corta.
+// LO QUE NO HACE, a propósito: categorizar rubros por su cuenta con Claude en la sesión. Eso es de Jev; lo dudoso se deriva.
+//
+// NO toca los ejercicios que ya están cargados en el sitio. Se puede cortar con Ctrl+C y volver a correr: sigue donde quedó.
+// Toma una MUESTRA repartida por tamaño (--limit) y deja para el final los documentos de más de 100 páginas (--max-paginas).
 //
 // USO:
 //   node tools/pipeline.mjs                          # ENSAYO: qué haría y cuánto costaría (no llama a ninguna API)
