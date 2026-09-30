@@ -102,6 +102,12 @@ que dice `ESTADO.md` era verdad ese día.
     .pdf; DNCG Francia 2014-15, 2,9 MB sin cabecera): el resolver los marca `no-es-pdf` (no reintenta) para volver a conseguir el documento.
     (2) **Un motor que devuelve menos páginas que las pedidas** (Aston Martin F1, Claude: 12 de 20): antes fallaba todo el documento; ahora
     reparte el lote en mitades y reintenta, y una página sola que vuelve vacía se toma como página en blanco.
+  - **`tools/jev-categorizar.mjs`: la etapa de Jev** (API de typesafe.ai, ~$42 por mil millones de tokens; 0 tokens de Claude Code). `--backtest`
+    toma rubros de ejercicios YA CARGADOS (3.975 rubros únicos de 164 clubes), cuya categoría real ya decidió una sesión humana, se los
+    pregunta a Jev sin mostrársela y deja `Admin/test-jev-resultados.md`: acierto total, por banda de confianza, errores con confianza
+    ≥ 0,70 (el caso peligroso para una integración automática), acierto por categoría. `--listos` categoriza los `<md>.rubros.json` de los
+    documentos `listo-para-jev` y deja `<md>.jev.json` (gitignoreado). El lado (ingreso/gasto) no se le dice: se le ofrecen las 26
+    categorías juntas (`--lado-conocido` las separa). Las descripciones de las categorías salen de `data/category-map.js`. Probado con 6 rubros reales.
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",
