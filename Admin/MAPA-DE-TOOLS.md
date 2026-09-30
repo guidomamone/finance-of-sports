@@ -44,7 +44,9 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 ## 3. Validar (que los números sean los del PDF)
 - `verify-numbers.mjs`: compara los números del `.md` con el texto interno del PDF, gratis.
 - `inventario-transcripciones.mjs`: el **registro** (`Admin/transcripciones-estado.jsonl`): quién hizo cada `.md`, en qué estado está.
-- `resolver-inventario.mjs`: la fase paga; Claude solo ve las páginas dudosas; manejo de crédito agotado.
+- `resolver-inventario.mjs`: la fase paga; Gemini y Claude solo ven las páginas con números que los chequeos gratis no respaldan; manejo de crédito agotado.
+- `paginas-con-numeros.mjs`: qué páginas tienen cifras de carga (el resto es prosa y no se valida). Gratis.
+- `chequeos-gratis.mjs`: valida gratis cada página con el texto del PDF, las sumas, el año anterior cargado y el balance; `--prueba` repite la medición.
 
 ## 4. Preparar (gratis)
 - `extract-table-rows.mjs`: saca las tablas del `.md`. `sum-check.mjs`: chequeo de sumas contra el total impreso.
@@ -54,9 +56,13 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 
 ## 5. Categorizar
 - `jev-categorizar.mjs`: le pide a Jev la categoría de cada rubro (con lado y ejemplos parecidos); `--backtest` mide su confiabilidad.
+- `categorizar-claude.mjs`: lo que Jev deja < 0,90 va a Claude por API, una llamada por documento, con lo ya cargado del club; deja `<md>.categorias.json`.
+- `filas-rubro.mjs`: descarta filas que no son rubros y deduce el lado (ingreso/gasto); lo usa `pipeline.mjs`.
 
 ## 6. Cargar y publicar
-- `proponer-carga.mjs`: etapa 5, **versión 0** (solo mide, no escribe nada del sitio).
+- `proponer-carga.mjs`: qué filas cargaría (elige la nota que abre cada línea del estado de resultados, `--tabla ancla-listas`); solo mide, no escribe nada del sitio.
+- `alta-club.mjs`: club nuevo (entrada de `data/clubs.js`, moneda, cierre, tipo de cambio, liga); propone por defecto, `--escribir` solo sin preguntas abiertas.
+- `gasto.mjs`: cuánto se gastó por motor, día y documento, y qué se pagó y ya no está en disco. Gratis.
 - `generate-club-index.js`, `generate-fuentes-page.js`, `generate-fuentes-index.js`, `generate-rankings.js`, `generate-como-corre-stats.js`: regeneran páginas y tablas derivadas de los datos. Nunca se editan a mano sus resultados.
 - `audit.js` (+ `audit-ignore.json`): la auditoría.
 - `outreach-send.js`: manda los mails aprobados a clubes (Resend).

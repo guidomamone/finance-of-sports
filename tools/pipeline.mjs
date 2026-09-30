@@ -26,8 +26,9 @@
 //   4. MARCAR          `listo-para-jev`, `sin-rubros`, `sin-tablas`, `revisar`, `reintentar`, `no-es-pdf` (registro en
 //                      Admin/transcripciones-estado.jsonl, que se regenera solo).
 //   5. CATEGORIZAR     (tools/jev-categorizar.mjs --listos) Jev, con el lado (ingreso/gasto) de cada tabla y 8 ejemplos parecidos ya
-//                      categorizados -> `<md>.jev.json`. Confianza >= 0,90: aceptable (decisión de Guido). Menor: iría a Claude por
-//                      API y, si duda, a Admin/dudas-por-club.md (todavía no implementado).
+//                      categorizados -> `<md>.jev.json`. Confianza >= 0,90: aceptable (decisión de Guido). Menor: etapa 5b,
+//                      (tools/categorizar-claude.mjs --listos) Claude por API con el contexto del club; acepta >= 0,80 ->
+//                      `<md>.categorias.json`. Lo que queda por debajo se frena para revisión (no se carga).
 //   6. CARGAR          (PENDIENTE, ver Admin/TODO.md to-do 108) escribir el ejercicio en data/<club>-data.js, subir ASSET_V,
 //                      regenerar, correr audit.js; si algo falla, revertir. Solo para un club que ya existe y sin decisiones abiertas.
 //   7. PUBLICAR        (PENDIENTE) commit local; el push lo hace Guido.
@@ -54,7 +55,7 @@ import { resolve, basename, dirname } from 'node:path';
 import { spawnSync, execFileSync } from 'node:child_process';
 import { statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { numeroDe, filasSuma, noEsRubro, ladosPorEstructura } from './filas-rubro.mjs';
+import { numeroDe, filasSuma, noEsRubro, ladosPorEstructura, columnaDeImportes } from './filas-rubro.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -170,7 +171,7 @@ function clubAndYear(pdf) {
 
 // Lado de una tabla (ingreso o gasto) por las palabras de su título y sus columnas, en varios idiomas. Si aparecen las dos
 // familias (o ninguna) no se adivina: queda sin lado. Saber el lado sube mucho el acierto de Jev (69,5% -> 74,2% en el backtest).
-const SIDE_REV = /доход|выручк|прибыл|доходи|vynos|trzb|opbrengsten|omzet|収益|収入|수익|매출|收入|ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
+const SIDE_REV = /доход|выручк|прибыл|доходи|vynos|trzb|opbrengsten|omzet|収益|収入|수익|매출|收入|ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|rendiment|subsidi|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
 const SIDE_EXP = /расход|затрат|витрат|убыт|naklad|kosten|費用|支出|비용|费用|gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|kosten|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
 const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
 function sideOfTable(t) {
@@ -190,7 +191,9 @@ for (const e of ready) {
   // Un .md SIN TABLAS no sirve para sacar rubros (etiquetas e importes en bloques separados): se manda a rehacer con Mistral (una sola vez).
   const mdTablas = readFileSync(mdAbs, 'utf8').split('\n').filter((l) => l.startsWith('|')).length;
   const prevEv = [...readJsonl(verifPath)].reverse().find((v) => v.md === e.md && v.mdSha1 === sha1(mdAbs)) || {};
-  if (mdTablas < 5 && pagesOf(e.pdf) >= 2 && !String(e.motor).startsWith('mistral') && !prevEv.formatoIntentado) {
+  // Con --repreparar NO se crean marcas `sin-tablas` nuevas: esa opción es para rehacer GRATIS las listas de rubros de lo ya preparado, y
+  // en la regeneración del 2026-09-30 marcó 296 documentos que la corrida siguiente habría mandado a Mistral sin que nadie lo pidiera.
+  if (!REPREPARE && mdTablas < 5 && pagesOf(e.pdf) >= 2 && !String(e.motor).startsWith('mistral') && !prevEv.formatoIntentado) {
     appendFileSync(verifPath, JSON.stringify({ ...prevEv, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'sin-tablas', detail: 'el .md no tiene tablas: se rehace con Mistral en la próxima corrida' }) + '\n');
     nSinTablas++; continue;
   }
@@ -204,10 +207,13 @@ for (const e of ready) {
   for (const t of b.tables || []) {
     if (!t.likelyRelevant || !hasStatement) continue;
     const ladoTabla = sideOfTable(t);
-    // Columna de importes = la primera con números en al menos el 40% de las filas; de ahí salen los subtotales (filas que son la suma de las
-    // de arriba) y el lado de cada fila por la estructura de la tabla (tools/filas-rubro.mjs).
+    // Columna de importes: la del año del ejercicio si un encabezado lo dice, y si no la primera con números que NO sea la de notas
+    // (columnaDeImportes de tools/filas-rubro.mjs, Versión 307). Antes era "la primera con números en el 40% de las filas", que en Alverca y
+    // Fluminense era la columna "Notas" (9, 15, "7/8") y rompía los subtotales y el lado. De esa columna salen los subtotales (filas que son la
+    // suma de las de arriba) y el lado de cada fila por la estructura de la tabla.
     const rows = t.rows || []; const width = Math.max(0, ...rows.map((r) => (r.values || []).length));
-    let col = 0; for (let j = 0; j < width; j++) if (rows.filter((r) => numeroDe((r.values || [])[j] ?? '') !== null).length >= Math.max(3, rows.length * 0.4)) { col = j; break; }
+    let col = columnaDeImportes(t.columns, rows, Number(year) || null);
+    if (col === null) { col = 0; for (let j = 0; j < width; j++) if (rows.filter((r) => numeroDe((r.values || [])[j] ?? '') !== null).length >= Math.max(3, rows.length * 0.4)) { col = j; break; } }
     const filas = rows.map((r) => ({ label: String(r.rawLabel || ''), v: numeroDe((r.values || [])[col] ?? '') }));
     const sumas = new Set(filasSuma(filas.map((f, i) => ({ ...f, i })).filter((f) => f.v !== null)).map((f) => f.i));
     const lados = ladosPorEstructura(filas);
@@ -240,6 +246,12 @@ if (!NO_JEV) {
   // Glosa en español de cada rubro (Gemini, ~$0,001 por documento): sin ella la búsqueda de ejemplos parecidos no encuentra nada en idiomas que el sitio no tiene.
   node('tools/glosar-rubros.mjs', ['--listos'], { stdio: 'inherit' });
   node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0'], { stdio: 'inherit' });
+  // Escalón 2 (Versión 307): lo que Jev deja < 0,90 va a Claude por API, UNA llamada por documento, con las líneas ya cargadas de ese club
+  // (sus convenciones) y las filas vecinas. Backtest sobre 3.975 rubros: Jev >= 0,90 sola resuelve 69,4% (94,4% de acierto); sumando
+  // Claude >= 0,80 se resuelve 80,2% con 94,5%; el resto queda para revisión (Admin/test-categorizar-claude.md). ~US$ 0,015 por documento.
+  // Deja `<md>.categorias.json` (la categoría final de cada rubro y de qué escalón salió: precedente / jev / claude / sin-resolver).
+  console.log('\n=== Etapa 5b: Claude por API categoriza lo que Jev no resolvió con confianza ===');
+  node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0'], { stdio: 'inherit' });
 }
 
 // ---- resumen final

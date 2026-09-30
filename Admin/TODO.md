@@ -82,6 +82,16 @@ perdieron sino que se descartaron:
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
     5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
 
+110. EL REGISTRO NO RECONOCE 17 CLUBES QUE YA ESTÁN EN EL SITIO (encontrado por `tools/alta-club.mjs`, 2026-09-30): Racing, Almagro,
+    Argentinos, Estudiantes, Gimnasia, Independiente, Newell's, Unión, Amazonas, Botafogo, Botafogo-SP, Gent, Union SG, U. de Chile, Santa Fe,
+    Unión Magdalena, Varaždin. `tools/onboard.mjs --quien` busca por nombre de carpeta y encuentra 0 o 2+ clubes ("Racing" = Racing Club y Genk),
+    así que `inventario-transcripciones.mjs` cuenta como pendientes PDFs de años ya cargados. Arreglo: usar en `--quien` la misma señal que
+    `alta-club.mjs` ("qué `data/*-data.js` cita esta carpeta"). Mismo arreglo: que el registro marque "pagado sin .md" (ver `node tools/gasto.mjs`)
+    para no volver a pagar esas 25 transcripciones sin avisar.
+
+111. TIPOS DE CAMBIO LOCALES PARA NOK, CZK, CHF, TRY, RUB, UAH, KRW (lo corre Guido: `node tools/fetch-fx-reference.mjs`). Sin esas series,
+    `tools/alta-club.mjs` deja `fxRef` pendiente en todo año que no declara su propio tipo de cambio, y la carga de esos países se frena.
+
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
     - **Junto a cada PDF/`.md` de `Clubes/` se acumulan archivos generados**: `<md>.briefing.json`, `<md>.rubros.json`, `<md>.jev.json`, `<md>.previo-*.md`, `<md>.mistral-redo.md`,
@@ -199,6 +209,12 @@ perdieron sino que se descartaron:
     ingreso/gasto), es una inconsistencia real que quedó en los datos ya cargados. Revisar cada uno
     contra el documento fuente y unificar (o dejar documentado por qué el cambio de categoría entre
     años es correcto, si lo es):
+    - **Más casos, del backtest de `tools/categorizar-claude.mjs` (2026-09-30, `Admin/test-categorizar-claude.md`)**: los errores de
+      Claude con confianza >= 0,80 son casi todos incoherencias de producción, no del modelo: San Lorenzo "Ciudad deportiva" y "Ciudad
+      deportiva (gasto)" en categorías distintas; "Seguros" fuera de `admin_general_expense` contra lo que dice el skill; cargas sociales
+      de juveniles de Boca en `wages_squad` contra la regla del skill; "Interese perdidos" de Almagro como línea (los intereses van a
+      `netInterest`); River "Educación" (gasto) fuera de `education_expense`; gastos de transferencias partidos 40 `other_expenses` / 31
+      `player_amortisation`. Mientras sigan, parte del "error" medido de la categorización automática es la vara.
     - **Argentinos Juniors** (gasto): "Estadio y predios" -> `match_organisation_expense` en 2015,
       `admin_general_expense` en 2019.
     - **Estudiantes LP** (gasto): "Reconocimientos y premios" -> `match_organisation_expense` en

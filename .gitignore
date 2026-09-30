@@ -152,3 +152,5 @@ Admin/claude-api/.env
 Admin/.pipeline-lista-actual.txt
 Admin/.paginas-cache.json
 *.jev.json
+# tools/categorizar-claude.mjs --listos: categoría final por rubro (precedente / Jev / Claude), mismo criterio que *.jev.json
+*.categorias.json

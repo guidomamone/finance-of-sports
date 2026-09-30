@@ -50,9 +50,10 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 ### Inventario de transcripciones y pipeline PDF -> Jev (2026-09-30, rama `inventario-transcripciones`, sin push)
 
 - Hay un comando único, `node tools/pipeline.mjs --ejecutar --limit 50 --concurrencia 4`, que lleva cada PDF de `Clubes/` (no cargado en el sitio) desde la
-  transcripción (Mistral) hasta la categorización de rubros con Jev, y deja `<md>.rubros.json` / `<md>.jev.json`. Cargar el ejercicio al sitio por script NO existe
-  todavía (to-do 108; `tools/proponer-carga.mjs` solo mide). El registro por PDF (motor que hizo el `.md`, estado, reservas) es `Admin/transcripciones-estado.jsonl`.
-- Inventario hoy: 3.358 PDFs; 316 cargados; ~1.150 sin ningún `.md`; el resto en distintos estados de validación. Para entender todo: `Admin/HANDOFF-pipeline.md`
+  transcripción (Mistral, documento entero) hasta la categorización (precedente del club -> Jev >= 0,90 -> Claude por API >= 0,80), y deja `<md>.rubros.json` /
+  `<md>.jev.json` / `<md>.categorias.json`. La validación paga (Gemini, Claude) solo toca páginas con números que los chequeos gratis no respaldan. Cargar el
+  ejercicio al sitio por script NO existe todavía (to-do 108; `tools/proponer-carga.mjs` solo mide; `tools/alta-club.mjs` propone el alta de un club nuevo). El registro por PDF (motor que hizo el `.md`, estado, reservas) es `Admin/transcripciones-estado.jsonl`.
+- Inventario hoy: 3.358 PDFs; 316 cargados; 1.106 sin ningún `.md`; el resto en distintos estados de validación. Para entender todo: `Admin/HANDOFF-pipeline.md`
   (estado, decisiones de Guido, números medidos, qué falta) y `Admin/MAPA-DE-TOOLS.md` (qué es cada archivo de `tools/`).
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por

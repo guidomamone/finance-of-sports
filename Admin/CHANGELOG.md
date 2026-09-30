@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 307 — Validación paga solo en páginas con números y dudosas, Claude después de Jev, alta de club por script, tabla por ancla, lado corregido (2026-09-30)
+
+- `tools/paginas-con-numeros.mjs` (nuevo, gratis): decide con el `.md` de Mistral qué páginas tienen cifras de carga. Sobre 222 ejercicios cargados elige el 58% de las páginas y cubre el 99,7% de los importes de producción. Con `pdftotext` rinde menos y no sirve en el 23% de los PDFs (escaneo o mojibake). Informe: `Admin/test-seleccion-paginas.md`.
+- `tools/chequeos-gratis.mjs` (nuevo, gratis): cascada por página (texto del PDF, sumas de la tabla, columna del año anterior en producción, balance). Sobre 104 documentos ya resueltos: 163 de 163 páginas con números con error real quedan `dudosa`, ahorro ~49% del costo. La regla "una tabla que cierra valida la página" se descartó (dejaba pasar 37 páginas con error). Informe: `Admin/test-chequeos-gratis.md`.
+- `resolver-inventario.mjs`: Gemini y Claude solo reciben las páginas `dudosa` de la cascada; la prosa no se paga. Bug arreglado: en un escaneo con lista de páginas chica, Gemini recibía el PDF entero.
+- `tools/categorizar-claude.mjs` (nuevo) y etapa 5b de `pipeline.mjs`: precedente del club, Jev >= 0,90, y el resto a Claude por API (Opus 5.5, una llamada por documento, con las líneas ya cargadas del club); se acepta >= 0,80. Backtest sobre 3.975 rubros: 80,2% automático con 94,5% de acierto (Jev sola: 69,4% con 94,4%), ~US$ 0,015 por documento. Deja `<md>.categorias.json`. Informe: `Admin/test-categorizar-claude.md`.
+- `tools/alta-club.mjs` (nuevo): propone la entrada de `data/clubs.js`, moneda, cierre del ejercicio, tipo de cambio, liga, perímetro; `--escribir` solo sin preguntas abiertas, con reversión si `audit.js` da P0/P1. Sobre 141 clubes nuevos: 75% de campos `ok`, 39% escribibles hoy. Todavía no está en el pipeline (el alta va con la carga del primer año). Informe: `Admin/test-alta-club.md`.
+- `proponer-carga.mjs`: estrategia `--tabla ancla-listas` (default): carga la nota cuyas filas suman la línea del estado de resultados. Sobre 92 ejercicios: ingresos bien ubicados 54% -> 64% (mediana 63% -> 77%), ingresos cargados de más 53% -> 20%; gastos sin cambio (55%). Informe: `Admin/test-eleccion-tabla.md`.
+- `filas-rubro.mjs` + `pipeline.mjs`: lado ingreso/gasto corregido (resultados con palabra de gasto, columna "Notas" tomada como importes, "rendimentos"). Contra producción, 913 filas: contradicciones 67 -> 27. `pipeline.mjs` usa `columnaDeImportes()`; `--repreparar` ya no crea marcas `sin-tablas`.
+- `tools/gasto.mjs` (nuevo, gratis): gasto por motor, día y documento; lista lo pagado cuyo `.md` no está en disco (25 transcripciones, US$ 5,01). Cuenta una sola vez las validaciones que el pipeline vuelve a escribir.
+- Gasto de API de los tests: Claude US$ 5,62, Mistral US$ 2,75, Jev ~US$ 0,3.
+
 ## Versión 306 — Piloto de 9 documentos de punta a punta: Gemini página por página, PDFs dañados, filtro de filas, lado por estructura, glosa para Jev (2026-09-30)
 
 - `tools/reparar-pdf.mjs` (nuevo): diagnostica y arregla PDFs antes de gastar API. `qpdf` reconstruye los dañados recuperables; las páginas con imágenes de más de 8000 px (Thun: 128x105.696, Mistral respondía HTTP 400) se rasterizan en una copia; un PDF truncado (PEC Zwolle) queda como `no-es-pdf` con el link de `fuentes/` para volver a bajarlo. Conectado a `mistral-ocr-transcribe.mjs` y a `resolver-inventario.mjs`. Thun 2019 verificado: 20 de 20 páginas por $0,08.

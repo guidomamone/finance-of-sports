@@ -77,6 +77,8 @@ const LOGDIR = { mistral: 'mistral', gemini: 'gemini', claude: 'claude-api' };
 const EST = { mistral: 0.004, gemini: 0.002, claude: 0.02 }; // USD por página, para el ensayo
 
 import { diagnosticar } from './reparar-pdf.mjs';
+import { paginasConNumeros } from './paginas-con-numeros.mjs';
+import { chequearPaginas, quien } from './chequeos-gratis.mjs';
 
 // ---------------------------------------------------------------- utilidades
 const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));
@@ -492,6 +494,27 @@ async function resolveDoc(e0) {
     prov.base = 'mistral (re-hecho)';
   }
 
+  // SOLO PÁGINAS CON NÚMEROS (decisión de Guido, 2026-09-30: "gemini solo donde hay números, no la prosa"). Mistral transcribe el
+  // documento entero (queda como documentación), pero la segunda voz y el desempate de Claude solo tienen trabajo donde hay cifras
+  // que pueden terminar en el sitio. tools/paginas-con-numeros.mjs decide cuáles son, gratis, con el propio .md: medido sobre 222
+  // ejercicios cargados, elige el 58% de las páginas y cubre el 99,7% de los importes de producción (Admin/test-seleccion-paginas.md).
+  // Se calcula sobre el .md canónico ACTUAL (puede haber cambiado arriba, al rehacerlo con Mistral) y se recalcula si vuelve a cambiar.
+  //
+  // CHEQUEOS GRATIS ANTES DE PAGAR (Versión 307, tools/chequeos-gratis.mjs): de las páginas con números, las que quedan respaldadas cifra
+  // por cifra por el texto del PDF, las sumas de sus tablas, la columna del año anterior ya cargada en producción o el balance, quedan
+  // `validada-gratis` y tampoco van a la segunda voz. Solo las `dudosa` se pagan. Medido sobre los 104 documentos que este resolver ya
+  // había resuelto (Admin/test-chequeos-gratis.md): de las 163 páginas con números que tenían un error real de lectura, las 163 quedan
+  // `dudosa` (ninguna se da por buena mal), y el ahorro es ~49% del costo registrado. Los 15 errores que caen en `prosa` son
+  // identificadores (INN rusos, números de organización noruegos, sellos) que no llegan al sitio.
+  const q = quien(e.pdf);
+  const cascada = async () => {
+    const r = await chequearPaginas({ pdfPath: pdfAbs, mdText: joinPages(canon.pre, canon.pages), club: q.clubId, year: q.year });
+    return { numericas: new Set(r.filter((x) => x.estado !== 'prosa').map((x) => x.pagina)), dudosas: new Set(r.filter((x) => x.estado === 'dudosa').map((x) => x.pagina)), validadas: r.filter((x) => x.estado === 'validada-gratis').length };
+  };
+  let cas = await cascada();
+  let numericas = cas.numericas;
+  log(`${numericas.size} de ${nPages} páginas con números (${cas.validadas} validadas gratis, ${cas.dudosas.size} dudosas); el resto es prosa y no se valida con una segunda voz`);
+
   let method = '';
   const vn0 = verifyNumbers(pdfAbs, mdAbs);
   let needScan = vn0.verdict === 'no-aplica';
@@ -527,12 +550,21 @@ async function resolveDoc(e0) {
       if (!fixedByMistral) {
         log('tampoco la lectura fresca de Mistral coincide con el texto del PDF: el texto del PDF no es confiable, comparo voces');
         needScan = true;
-      }
+      } else { cas = await cascada(); numericas = cas.numericas; }
     }
+    // La decisión de arriba ("¿más de la mitad no coincide?") se toma con TODAS las dudas, porque mide si el .md o el texto del PDF están
+    // rotos en general. Pero a Claude solo van las dudas de páginas con números: una duda en prosa (un "3000" suelto, un número de
+    // registro) no cambia nada del sitio. Medido en el piloto de la Versión 306: Alverca ~8 de 17 dudas eran prosa; Rio Ave 13 dudas, 1 real.
+    const dudasProsa = doubts.filter((n) => !numericas.has(n));
+    if (dudasProsa.length) { log(`${dudasProsa.length} duda(s) en páginas de prosa, no se mandan a Claude: ${dudasProsa.join(', ')}`); doubts = doubts.filter((n) => numericas.has(n)); }
+    // Y de las dudas en páginas con números, las que la cascada dejó respaldadas (por sumas o balance, aunque el texto del PDF difiera en
+    // una cifra tolerada) tampoco se pagan.
+    const dudasValidadas = doubts.filter((n) => !cas.dudosas.has(n));
+    if (dudasValidadas.length) { log(`${dudasValidadas.length} duda(s) respaldadas por los chequeos gratis, no se mandan a Claude: ${dudasValidadas.join(', ')}`); doubts = doubts.filter((n) => cas.dudosas.has(n)); }
     // Páginas SIN texto en el PDF pero con cifras en el .md (páginas-imagen dentro de un PDF con texto: caso Gent, 10 de 43):
     // no hay contra qué compararlas, así que van al camino de voces, solo esas. (Antes se contaban como "cifras sin respaldo"
     // y por pura coincidencia parecían lecturas mal hechas, mandando el documento ENTERO a Gemini y Claude.)
-    const toVoices = pageTexts.map((t, i) => i + 1).filter((n) => numsOf(pageTexts[n - 1]).size === 0 && numsOf(canonBody(n) || '').size > 0);
+    const toVoices = pageTexts.map((t, i) => i + 1).filter((n) => cas.dudosas.has(n) && numsOf(pageTexts[n - 1]).size === 0 && numsOf(canonBody(n) || '').size > 0);
     if (!needScan && doubts.length) {
       const r = await transcribePages('claude', pdfAbs, doubts);
       if (!r.ok) return retry(r, 'Claude no pudo transcribir las páginas dudosas');
@@ -557,9 +589,16 @@ async function resolveDoc(e0) {
 
   // 2) Escaneo (o texto ilegible): hace falta una segunda voz independiente.
   let voice; let voiceEngine = 'gemini'; let claudeOnly = new Set();
-  const wholeList = Array.from({ length: nPages }, (_, i) => i + 1);
-  const list = voicePages || wholeList;
-  const big = list.length > BIG_DOC_PAGES || Boolean(voicePages);
+  // Antes: el documento entero (wholeList). Ahora: solo las páginas con números. Si no hay ninguna (una certificación de una carilla,
+  // una memoria sin estados), no hay nada que validar con una segunda voz.
+  // Escaneo: la cascada no tiene texto del PDF, así que solo valida páginas cuyas cifras cierran TODAS por sumas/balance/producción
+  // (tolerancia 0 sin capa de texto); el resto de las páginas con números va a la segunda voz.
+  const list = voicePages || [...cas.dudosas].sort((x, y) => x - y);
+  if (!list.length) return fin('listo', `${method}${cas.validadas ? `${cas.validadas} páginas con números validadas gratis (sumas/balance/texto del PDF)` : 'sin páginas con números'}: nada que validar con una segunda voz`, { method: method + 'chequeos-gratis' });
+  // Si la lista no es el documento entero (lo normal desde la Versión 307: solo páginas dudosas con números), Gemini recibe SOLO esas
+  // páginas recortadas (por tramos). Antes, con una lista chica, se le mandaba el PDF entero y después se comparaban solo esas páginas:
+  // se pagaba el documento completo igual.
+  const big = list.length > BIG_DOC_PAGES || Boolean(voicePages) || list.length < nPages;
   let g;
   if (big) {
     log(`${voicePages ? 'páginas elegidas' : 'documento largo'} (${list.length} págs.): Gemini por tramos de ${BIG_CHUNK}`);
@@ -657,17 +696,24 @@ async function resolveDoc(e0) {
 function dryRunDoc(e) {
   const pdfAbs = resolve(root, e.pdf);
   const nPages = pageCount(pdfAbs);
-  if (!existsSync(resolve(root, e.md))) return { plan: 'sin .md: Mistral + Gemini/Claude en págs. dudosas', nPages, cost: nPages * (EST.mistral + EST.gemini + 0.6 * 0.25 * EST.claude + 0.15 * EST.claude) };
-  const canon = splitPages(readFileSync(resolve(root, e.md), 'utf8'));
-  if (canon.pages.length < Math.max(1, Math.floor(nPages * 0.5))) return { plan: 'rehacer-mistral', nPages, cost: nPages * EST.mistral + nPages * 0.15 * EST.claude };
+  // FRAC_NUM: fracción de páginas con números (medida: 58%, Admin/test-seleccion-paginas.md). Solo esas van a la segunda voz; Mistral
+  // transcribe todas. Si ya hay .md, se usa la fracción real de ESE documento.
+  const FRAC_NUM = 0.58;
+  if (!existsSync(resolve(root, e.md))) return { plan: 'sin .md: Mistral + Gemini/Claude en págs. dudosas', nPages, cost: nPages * EST.mistral + nPages * FRAC_NUM * (EST.gemini + 0.6 * 0.25 * EST.claude + 0.15 * EST.claude) };
+  const mdText = readFileSync(resolve(root, e.md), 'utf8');
+  const canon = splitPages(mdText);
+  if (canon.pages.length < Math.max(1, Math.floor(nPages * 0.5))) return { plan: 'rehacer-mistral', nPages, cost: nPages * EST.mistral + nPages * FRAC_NUM * 0.15 * EST.claude };
+  const numericas = new Set(paginasConNumeros({ mdText }).paginas);
+  const nNum = numericas.size;
   const vn = verifyNumbers(pdfAbs, resolve(root, e.md));
   if (vn.verdict !== 'no-aplica') {
     const pt = pdfPageTexts(pdfAbs);
-    const d = textLayerDoubts(pt, canon).length;
-    if (d > 0.5 * pt.filter((t) => numsOf(t).size > 0).length) return { plan: 'escaneo: Gemini + Claude en págs. que difieran', nPages, cost: nPages * EST.gemini + nPages * 0.6 * 0.25 * EST.claude };
-    return { plan: `texto: ${d} pág. dudosas`, nPages, doubts: d, cost: d * EST.claude };
+    const all = textLayerDoubts(pt, canon);
+    if (all.length > 0.5 * pt.filter((t) => numsOf(t).size > 0).length) return { plan: 'escaneo: Gemini + Claude en págs. que difieran', nPages, cost: nNum * EST.gemini + nNum * 0.6 * 0.25 * EST.claude };
+    const d = all.filter((n) => numericas.has(n)).length;
+    return { plan: `texto: ${d} pág. dudosas (${all.length - d} en prosa, no se pagan)`, nPages, doubts: d, cost: d * EST.claude };
   }
-  return { plan: 'escaneo: Gemini + Claude en págs. que difieran', nPages, cost: nPages * EST.gemini + nPages * 0.6 * 0.25 * EST.claude };
+  return { plan: `escaneo: Gemini + Claude en ${nNum} págs. con números`, nPages, cost: nNum * EST.gemini + nNum * 0.6 * 0.25 * EST.claude };
 }
 
 // ---------------------------------------------------------------- main

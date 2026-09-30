@@ -54,6 +54,16 @@ dañados o con imágenes gigantes antes de gastar API.
   rubros, deduce el lado por la estructura), `glosar-rubros.mjs` (traducción para que Jev encuentre ejemplos en idiomas que el sitio no tiene).
 - Bugs del pipeline arreglados: la etapa 5 usaba el registro viejo; `--repreparar` no repreparaba; "Rendimentos e gastos" no se reconocía.
 
+## Lo hecho el 2026-09-30, segunda sesión (Versión 307, detalle y números en el CHANGELOG)
+
+- Mistral sigue transcribiendo TODO el documento (queda como documentación, decisión de Guido). La validación paga cambió: `paginas-con-numeros.mjs` descarta la
+  prosa (58% de páginas elegidas, 99,7% de los importes de producción cubiertos) y `chequeos-gratis.mjs` valida gratis lo que el texto del PDF, las sumas, el año
+  anterior en producción o el balance respaldan (163/163 errores reales siguen yendo a pagar; ~49% de ahorro). Gemini y Claude solo ven las páginas `dudosa`.
+- Categorización en escalones: precedente -> Jev >= 0,90 -> Claude por API >= 0,80 (`categorizar-claude.mjs`, etapa 5b). Backtest: 80,2% automático con 94,5%.
+- `alta-club.mjs` (club nuevo y metadatos del año, sin tokens), `proponer-carga --tabla ancla-listas`, lado ingreso/gasto corregido, `gasto.mjs`.
+- Medido: pdftotext NO sirve para elegir páginas (23% de PDFs sin capa usable; con el .md de Mistral cubre más). De los 3.042 PDFs pendientes, ~73% son de clubes
+  que no están en el sitio (141 clubes reales, no 205: ver to-do 110).
+
 ## Números medidos (para no volver a medirlos)
 
 - Gasto acumulado registrado: Mistral $119,6 (29.889 págs.), Claude API $53,7, Gemini $13,6. Lote típico: $0,25 a $0,35 por documento; con Gemini por
@@ -88,22 +98,25 @@ dañados o con imágenes gigantes antes de gastar API.
 
 ## Qué falta (en orden)
 
-1. **Otro piloto de ~10 PDFs nuevos** con todo lo de hoy (Gemini por página, filas limpias, glosa) y ver: costo por documento, páginas "con reserva", % de Jev >= 0,90,
-   falsos positivos del chequeo gratis. Repetir hasta estar cómodos.
-2. **Bajar el costo sin perder calidad:** (a) el chequeo contra el texto del PDF marca de más (Alverca: ~8 de 17 páginas dudosas eran prosa con fragmentos como "3000";
-   Rio Ave: 13 de 19 dudas, 1 real): ignorar números cortos y páginas sin tablas al decidir qué es una duda; (b) usar la aritmética (sumas genéricas, ver arriba) como
-   desempate gratis ANTES de mandar a "Claude con reserva" (hoy solo se usa con 3 voces y casi nunca cierra: 2 de 1.190); (c) revisar si el rehacer `sin-tablas` con
-   Mistral ($119 acumulados) se puede acotar a las páginas de estados financieros; (d) `tools/gasto.mjs` que sume el gasto por API desde los `resultados.jsonl`.
-3. **Bajar los errores:** (a) elegir la tabla de detalle correcta (estado de resultados vs. nota que abre el ingreso) usando un total impreso como ancla; (b) validar
-   consolidado vs. individual con el alcance del año anterior; (c) fecha del ejercicio leída del CONTENIDO del PDF contra el nombre del archivo; (d) balance
-   (activo = pasivo + patrimonio) y aritmética del estado de resultados; (e) dejar las páginas "con reserva" cerradas por sumas siempre que sea posible.
-4. **Jev:** derivar los rubros < 0,90 a Claude por API con contexto del club (piso 3 del to-do 99); probar mandarle contexto de las filas vecinas y el encabezado del bloque;
-   medir acierto real corriendo el backtest con las mismas mejoras de entrada (filas limpias + glosa), no solo la confianza.
-5. **Etapa 6 (cargar):** especificación en el to-do 108 de `Admin/TODO.md` (esquema de `data/<club>-data.js`, reglas mecánicas, orden de regeneración, trampas). Solo año
-   nuevo de club existente; tipo de cambio con `tools/lookup-fx-close.js` (local); si algo requiere criterio, frenar y decirlo. Escritura con reversión automática si
-   `audit.js` (0 P0/P1) o `auditAll()` fallan. Commit local; el push es de Guido. Solo cuando el piloto esté pulido.
-6. Ideas gratis todavía sin construir: tablas exactas desde el texto del PDF (`pdftotext -bbox`/`pdfplumber`); comparar la columna comparativa del año N con lo cargado
-   del año N-1; clasificador local (TF-IDF + kNN sobre los 3.975 rubros) como segunda opinión gratis de Jev; embeddings multilingües para buscar ejemplos; duplicados de PDF por hash.
+1. **Piloto C** (`Admin/piloto-c.txt`, 10 PDFs: 5 años nuevos de clubes ya cargados + 5 clubes nuevos; ensayo ~$1,63 + ~$0,15 de Claude categorizando). Es el
+   primero con todo lo de la Versión 307. Mirar: costo por documento (`node tools/gasto.mjs --lista Admin/piloto-c.txt`), cuántas páginas quedaron `validada-gratis` /
+   `dudosa` (log del resolver), páginas "con reserva", y de dónde salió cada categoría en `<md>.categorias.json` (precedente / jev / claude / sin-resolver).
+2. **Escaneos:** es donde queda el costo (68 de 104 documentos medidos, $29,67 de $38,98). Próximo chequeo gratis a probar: la columna comparativa ENTRE documentos del
+   mismo club (año N-1 impreso en el documento N contra la columna del año del documento N-1), aunque ninguno esté en producción (series: Charleroi, Standard, Randers,
+   Fluminense).
+3. **Errores que quedan en la carga** (`Admin/test-eleccion-tabla.md`): gastos no mejoran con el ancla (producción usa la apertura por función, el ancla abre la nota por
+   naturaleza); consolidado e individual se cargan los dos cuando el documento trae ambos (Bayern); detalle en prosa (Werder); 12 de 74 ejercicios con <= 10% de
+   ingresos bien ubicados. Todavía NO es viable dejar escribir a la carga.
+4. **Registro** (to-do 110): 17 clubes del sitio que `onboard.mjs --quien` no reconoce; marcar "pagado sin .md". **Tipos de cambio** (to-do 111): series locales de NOK, CZK,
+   CHF, TRY, RUB, UAH, KRW.
+5. **Incoherencias de producción** (to-do 101): parte del "error" de la categorización automática es la vara. Las decide Guido/una sesión, no el pipeline.
+6. **Etapa 6 (cargar):** especificación en el to-do 108 de `Admin/TODO.md`. Piezas ya hechas: `proponer-carga.mjs` (qué filas), `categorizar-claude.mjs` (categorías),
+   `alta-club.mjs` (club nuevo y metadatos del año; el alta tiene que ir en el mismo commit que la carga del primer año, si no el club aparece "Sin datos cargados").
+   Escritura con reversión automática si `audit.js` (0 P0/P1) o `auditAll()` fallan. Commit local; el push es de Guido. Solo cuando el piloto esté pulido.
+7. **Los `.jev.json` viejos** de los 438 documentos re-preparados el 2026-09-30 se hicieron sobre la lista de rubros anterior (antes de corregir el lado y la columna):
+   hay que volver a correr Jev + Claude sobre ellos antes de usarlos (`node tools/pipeline.mjs --ejecutar --solo-preparar --repreparar --limit 0` y después la etapa 5).
+8. Ideas gratis todavía sin construir: tablas exactas desde el texto del PDF (`pdftotext -bbox`/`pdfplumber`); clasificador local (TF-IDF + kNN) como segunda opinión
+   de Jev; embeddings multilingües para buscar ejemplos; duplicados de PDF por hash.
 
 ## Trampas que ya costaron tiempo
 
@@ -121,6 +134,8 @@ cd ~/Claude/Projects/finance-of-sports && git switch inventario-transcripciones
 node tools/pipeline.mjs --resumen                                          # estado del inventario, sin gastar nada
 node tools/pipeline.mjs --lista Admin/piloto-10.txt --limit 10             # ensayo (estimación de costo, sin API)
 node tools/pipeline.mjs --ejecutar --lista Admin/mi-piloto.txt --limit 10 --concurrencia 3 2>&1 | grep -v "^Syntax"   # lo corre Guido
+node tools/gasto.mjs --desde 2026-09-30 --lista Admin/mi-piloto.txt         # cuánto costó, por documento (gratis)
+node tools/alta-club.mjs "<ruta del PDF>"                                  # qué haría falta para dar de alta el club (propuesta, no escribe)
 ```
 
 Para armar un piloto: elegir ~10 PDFs `sin-md` (de `Admin/transcripciones-estado.jsonl`), uno por país, de 8 a 40 páginas, y guardarlos en un `.txt` (una ruta por línea).
