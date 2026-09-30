@@ -1,19 +1,24 @@
-# HANDOFF: el pipeline de PDF a club cargado (sesiones del 2026-09-29 y 2026-09-30, actualizado al cierre del 2026-09-30)
+# HANDOFF: el pipeline de PDF a club cargado (sesiones del 2026-09-29 y 2026-09-30, actualizado al cierre del 2026-09-30, Versión 319)
 
 Documento para que una sesión NUEVA de Claude Code entienda dónde quedó este trabajo sin leer el historial. Leé esto, después
 `Admin/MAPA-DE-TOOLS.md` (qué es cada archivo de `tools/`) y las entradas de `Admin/CHANGELOG.md` desde la Versión 305 (decisiones y bugs, con
-causa raíz; la 306 es la última). Después `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/TODO.md` (to-do 108) como siempre.
+causa raíz; la 319 es la última). Después `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/TODO.md` (to-dos 108, 109, 112) como siempre.
+
+**LO PRIMERO: `node tools/estado.mjs`** (gratis, instantáneo; `--actualizar` regenera el registro antes). Es el tablero que pidió Guido: cada PDF del
+inventario en su etapa (1 conseguir, 2 transcribir, 3 validar, 4 preparar, 5 categorizar, 6 cargar, 7 en el sitio), también los estados en 0, con
+qué le falta, con qué comando se avanza y cuánto cuesta. El código está en `tools/estado.mjs` (cabecera explicada).
 
 ## El objetivo (en una frase)
 
 Que un solo comando lleve un PDF de un club desde la transcripción hasta el ejercicio **cargado en el sitio**, sin gastar tokens de sesión,
-barato en dólares de API y sin errores en los números. Hoy el comando llega hasta la categorización con Jev (etapa 5 de 7); las etapas 6-7
-(cargar en `data/<club>-data.js` y commit local) todavía no existen. Solo se automatiza la carga de un año nuevo de un club que ya existe y
+barato en dólares de API y sin errores en los números. Hoy el comando llega hasta la categorización (etapa 5: Jev y Claude por API); la etapa 6
+(cargar en `data/<club>-data.js`) está EN CONSTRUCCIÓN (ver "Qué falta" 1) y la 7 (commit local) no existe. Solo se automatiza la carga de un año nuevo de un club que ya existe y
 sin decisiones abiertas; lo que requiera criterio se frena y lo resuelve una sesión.
 
 ## Estado de git
 
-- Rama **`inventario-transcripciones`**, sin ningún push. `main` local está ~50 commits por delante de `origin/main`. Cada push a `main`
+- Rama **`inventario-transcripciones`**, sin ningún push; `main` no tiene nada que la rama no tenga (el merge es directo; Guido dijo que no hace falta
+  hacerlo). `main` local está ~50 commits por delante de `origin/main`. Cada push a `main`
   dispara un deploy de Netlify (plan gratis, ~25 por mes): **el push lo hace solo Guido, con permiso explícito**.
 - `git status` se ensucia mientras Guido corre lotes: los logs de `Admin/*/resultados.jsonl`, `Admin/transcripciones-*.jsonl` y varios `.md`
   de `Clubes/` cambian solos. Revisá antes de commitear y **commiteá el código por separado de ese lote**.
@@ -42,6 +47,10 @@ sin decisiones abiertas; lo que requiera criterio se frena y lo resuelve una ses
 3. **Preparar:** tablas, columna de importes, filas que no son rubros fuera, lado por estructura -> `<md>.rubros.json`.
 4. **Categorizar, solo los documentos de la corrida:** precedente del club -> Jev >= 0,90 -> Claude por API >= 0,80 -> `<md>.categorias.json`. Huellas:
    si la entrada cambia, la salida se rehace sola.
+   Lo que Claude resuelve con >= 0,80 queda en `Admin/categorias-aprendidas.jsonl` (`tools/memoria-categorias.mjs`): el año siguiente del mismo club lo toma
+   como precedente gratis (>= 0,90) y Jev lo ve como ejemplo. Lo cargado en el sitio siempre gana.
+   Vocabulario de todas las tools (títulos de estados, ingresos, gastos, totales, flujo, patrimonio) en 29 idiomas: `tools/vocabulario.mjs`.
+   Período de cada documento leído del contenido (anual calendario / temporada, trimestral, semestral...): `tools/periodo.mjs`, campo `periodo` del registro.
 5. **Altas de clubes nuevos (fuera del pipeline por ahora):** `alta-club.mjs --todos` escribe `Admin/altas-club.jsonl`; `--claude` resuelve preguntas con cita
    verificada; `pipeline.mjs --resumen` lo muestra.
 
@@ -54,21 +63,17 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 **Piloto C (2026-09-30, `Admin/piloto-c.txt`):** 10 PDFs, 9 con rubros categorizados; ~US$ 0,20 por documento (texto $0,08-0,18, escaneo $0,13-0,21, Real Madrid
 2005 ~$1); 82% de los rubros categorizados solos. Bugs encontrados y arreglados en las Versiones 308-310.
 
-## Lo hecho el 2026-09-30 (Versión 306, todo en el CHANGELOG con detalle)
+## Lo hecho (Versiones 306-319, todo en el CHANGELOG con números y causa raíz)
 
-- `reparar-pdf.mjs` (PDF dañado / imagen de más de 8000 px / truncado), Gemini página por página, `filas-rubro.mjs` (descarta filas que no son
-  rubros, deduce el lado por la estructura), `glosar-rubros.mjs` (traducción para que Jev encuentre ejemplos en idiomas que el sitio no tiene).
-- Bugs del pipeline arreglados: la etapa 5 usaba el registro viejo; `--repreparar` no repreparaba; "Rendimentos e gastos" no se reconocía.
-
-## Lo hecho el 2026-09-30, segunda sesión (Versión 307, detalle y números en el CHANGELOG)
-
-- Mistral sigue transcribiendo TODO el documento (queda como documentación, decisión de Guido). La validación paga cambió: `paginas-con-numeros.mjs` descarta la
-  prosa (58% de páginas elegidas, 99,7% de los importes de producción cubiertos) y `chequeos-gratis.mjs` valida gratis lo que el texto del PDF, las sumas, el año
-  anterior en producción o el balance respaldan (163/163 errores reales siguen yendo a pagar; ~49% de ahorro). Gemini y Claude solo ven las páginas `dudosa`.
-- Categorización en escalones: precedente -> Jev >= 0,90 -> Claude por API >= 0,80 (`categorizar-claude.mjs`, etapa 5b). Backtest: 80,2% automático con 94,5%.
-- `alta-club.mjs` (club nuevo y metadatos del año, sin tokens), `proponer-carga --tabla ancla-listas`, lado ingreso/gasto corregido, `gasto.mjs`.
-- Medido: pdftotext NO sirve para elegir páginas (23% de PDFs sin capa usable; con el .md de Mistral cubre más). De los 3.042 PDFs pendientes, ~73% son de clubes
-  que no están en el sitio (141 clubes reales, no 205: ver to-do 110).
+- 306: Gemini página por página, reparar-pdf, filas-rubro, glosa. 307: validación paga solo en páginas con números y dudosas (chequeos gratis),
+  Claude después de Jev, alta-club, tabla por ancla, gasto.mjs. 308: la etapa 5 solo toca la corrida; huellas. 309: una sola regla carpeta -> club
+  (11 carpetas caían en otro club; 316 -> 388 cargados reales). 310: lotes de Claude de 8 páginas. 311: registro de altas + Claude con cita verificada.
+  312: estados sin título en la tabla, etiqueta en la 2ª columna, flujo/patrimonio fuera. 313: sumas horizontales deciden páginas "con reserva"
+  (10 corregidas). 314: período leído del contenido. 315: 25 ligas y 11 países al catálogo (decisión de Guido), liga por "categoría al cierre".
+  316: vocabulario en 29 idiomas. 317: derivados a `Generados/`. 318: `tools/estado.mjs`, `tools/` fuera del deploy. 319: memoria de categorías.
+- Pilotos: C (`Admin/piloto-c.txt`) y D (`Admin/piloto-d.txt`), y C+D recategorizados con el vocabulario nuevo (`Admin/piloto-cd.txt`): ~US$ 0,20 por
+  documento (texto $0,08-0,18, escaneo $0,13-0,21, escaneo malo ~$1); 76% de los rubros categorizados solos; 160 de 726 filas eran `no_es_rubro`
+  (Claude las descarta pagando: ver "Qué falta" 2).
 
 ## Números medidos (para no volver a medirlos)
 
@@ -104,28 +109,24 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 
 ## Qué falta (en orden)
 
-1. **Piloto D** (`Admin/piloto-d.txt`): el primero con todo lo de las Versiones 307-311 junto. Prueba a propósito: carpetas que antes caían en otro club
-   (Porto, Inter, Rubin Kazan), un escaneo denso (lotes de Claude de 8 páginas), estados de resultados en cirílico y turco, países con series de fx nuevas.
-   Mirar lo mismo que en el C: `node tools/gasto.mjs --lista Admin/piloto-d.txt`, páginas validadas gratis / dudosas, reservas, escalón de cada categoría.
-2. **Escaneos:** es donde queda el costo (68 de 104 documentos medidos, $29,67 de $38,98). Próximo chequeo gratis a probar: la columna comparativa ENTRE documentos del
-   mismo club (año N-1 impreso en el documento N contra la columna del año del documento N-1), aunque ninguno esté en producción (series: Charleroi, Standard, Randers,
-   Fluminense).
-3. **Errores que quedan en la carga** (`Admin/tests/test-eleccion-tabla.md`): gastos no mejoran con el ancla (producción usa la apertura por función, el ancla abre la nota por
-   naturaleza); consolidado e individual se cargan los dos cuando el documento trae ambos (Bayern); detalle en prosa (Werder); 12 de 74 ejercicios con <= 10% de
-   ingresos bien ubicados. Todavía NO es viable dejar escribir a la carga.
-3b. **La etapa 6 NO carga como ejercicio un documento con `periodo.tipo` distinto de 'anual' ni uno con `periodo.nombreNoCoincide`** (campo del registro,
-   `tools/periodo.mjs`): quedan para juntarlos con los otros períodos (`node tools/periodo.mjs --grupos`). Las páginas "con reserva" que la aritmética no
-   decide (`tools/revisar-reservas.mjs`) se cierran con sumas contra los totales impresos al cargar.
-4. **Antes de la primera alta escrita por script** (to-do 112): 5 perímetros consolidados para que decida Guido, series de fx de EUR/DKK/GBP/SEK,
-   `FX_PLAUSIBLE_RANGE` de COP y BRL.
-5. **Incoherencias de producción** (to-do 101): parte del "error" de la categorización automática es la vara. Las decide Guido/una sesión, no el pipeline.
-6. **Etapa 6 (cargar):** especificación en el to-do 108 de `Admin/TODO.md`. Piezas ya hechas: `proponer-carga.mjs` (qué filas), `categorizar-claude.mjs` (categorías),
-   `alta-club.mjs` (club nuevo y metadatos del año; el alta tiene que ir en el mismo commit que la carga del primer año, si no el club aparece "Sin datos cargados").
-   Escritura con reversión automática si `audit.js` (0 P0/P1) o `auditAll()` fallan. Commit local; el push es de Guido. Solo cuando el piloto esté pulido.
-7. **Los `.jev.json` viejos** de los 438 documentos re-preparados el 2026-09-30 se hicieron sobre la lista de rubros anterior (antes de corregir el lado y la columna):
-   hay que volver a correr Jev + Claude sobre ellos antes de usarlos (`node tools/pipeline.mjs --ejecutar --solo-preparar --repreparar --limit 0` y después la etapa 5).
-8. Ideas gratis todavía sin construir: tablas exactas desde el texto del PDF (`pdftotext -bbox`/`pdfplumber`); clasificador local (TF-IDF + kNN) como segunda opinión
-   de Jev; embeddings multilingües para buscar ejemplos; duplicados de PDF por hash.
+1. **ETAPA 6 (cargar), en construcción por un subagente al cierre de esta sesión.** Construye `tools/cargar.mjs` (año nuevo de club que YA existe;
+   `--propuesta` / `--escribir` con reversión si `audit.js` da P0/P1) y la prueba de punta a punta: backtest sobre años ya cargados (borrados en un git
+   worktree y reconstruidos) y años nuevos del piloto C+D (Vejle 2014, PSV 2019-20, Dinamo Zagreb 2019, Los Andes 2009-10, Real Madrid 2005-06).
+   Informe: `Admin/tests/test-cargar.md`. **Lo más importante de ese informe es la lista de cosas de etapas anteriores que no sirven para cargar**
+   (pedido de Guido: "cuando introducimos un paso nuevo descubrimos que algo hecho antes no sirvió"). La sesión siguiente: si el archivo existe,
+   revisarlo, verificar `node --check tools/cargar.mjs` y `node tools/audit.js`, commitear, y arreglar en las tools lo que el informe liste.
+   Reglas que ya están decididas para la etapa 6: no cargar documentos con `periodo.tipo` distinto de 'anual' ni con `periodo.nombreNoCoincide`;
+   excluir filas `no_es_rubro`; cerrar sumas contra los totales impresos antes de escribir (hay totales con su desglose abajo que entran dos veces:
+   Groningen "Personeelskosten"); las páginas "con reserva" se cierran con sumas; el alta de un club nuevo va en el mismo commit que su primer año.
+2. **Filas que no son rubros:** en el piloto C+D, 160 de 726 filas llegaron a Claude y él las marcó `no_es_rubro` (subtotales, desgloses ya incluidos,
+   partidas de balance; Rubin Kazan 2025 34 de 70, Polissya 19 de 43). Mejorar `filas-rubro.mjs` / `pipeline.mjs` (etapa 3) con esos ejemplos.
+3. **Decisiones de Guido antes de la primera alta escrita** (to-do 112): 5 perímetros consolidados (Inter, Atalanta, Go Ahead Eagles, Başakşehir,
+   Trabzonspor), 12 preguntas de `node tools/alta-club.mjs --dudas`, series de fx de EUR/DKK/GBP/SEK (no existen), `FX_PLAUSIBLE_RANGE` de COP y BRL.
+4. **Escaneos:** es donde queda el costo. Próximo chequeo gratis: la columna comparativa ENTRE documentos del mismo club (año N-1 impreso en el documento
+   N contra el documento N-1), aunque ninguno esté en producción.
+5. **Japón:** 14 documentos y ninguno con estado de resultados reconocido (Admin/tests/test-vocabulario.md).
+6. **Incoherencias de producción** (to-do 101): parte del "error" de la categorización automática es la vara. Las decide Guido.
+7. Ideas gratis sin construir: tablas desde el texto del PDF (`pdftotext -bbox`), clasificador local como segunda opinión de Jev, duplicados de PDF por hash.
 
 ## Trampas que ya costaron tiempo
 
@@ -135,12 +136,20 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 - Un motor que devuelve menos páginas que las pedidas ya no falla el documento: se reparte el lote en mitades.
 - No editar `.claude/skills/*/SKILL.md` sin proponerle el texto a Guido y esperar su ok (regla de memoria del proyecto).
 - Hay otra sesión ("To-dos") que puede editar `Admin/TODO.md`: leé la versión del disco antes de tocarlo.
+- **Procesos en segundo plano que quedan colgados:** un loop `while pgrep -f X; do sleep; done` se encuentra a SÍ MISMO (su propia línea de
+  comando contiene X) y nunca termina (pasó con `fetchall.mjs`, 4 horas). Para esperar un proceso usar su PID, no `pgrep -f`. Y cuando Guido pregunta
+  por tareas en segundo plano, buscar también loops de shell (`ps -eo pid,ppid,command | grep sleep`), no solo `node`/`python`.
+- `node tools/estado.mjs` mientras corre el pipeline muestra una foto a mitad de camino (el pipeline regenera el registro al arrancar).
+- `--max-paginas` (100 por defecto) también deja afuera de la preparación GRATIS a las memorias largas: para preparar, `--max-paginas 0`.
+- `alta-club.mjs --todos` sin `--claude` descartaba las respuestas de Claude ya pagadas (arreglado: viajan en `claudeAnterior`); para recalcular
+  reusándolas sin gastar: `--todos --claude --tope-usd 0`.
+- Un cambio de listas de rubros deja desactualizadas las categorías (huellas): la próxima categorización las rehace y cuesta API (~US$ 0,04 por documento).
 
 ## Cómo retomar
 
 ```bash
 cd ~/Claude/Projects/finance-of-sports && git switch inventario-transcripciones
-node tools/pipeline.mjs --resumen                                          # estado del inventario, sin gastar nada
+node tools/estado.mjs                                                      # EL TABLERO: cada PDF en su etapa, qué falta, cuánto cuesta (gratis)
 node tools/pipeline.mjs --lista Admin/piloto-d.txt --limit 10              # ensayo (estimación de costo, sin API)
 node tools/pipeline.mjs --ejecutar --lista Admin/mi-piloto.txt --limit 10 --concurrencia 3 2>&1 | grep -v "^Syntax"   # lo corre Guido
 node tools/gasto.mjs --desde 2026-09-30 --lista Admin/mi-piloto.txt         # cuánto costó, por documento (gratis)

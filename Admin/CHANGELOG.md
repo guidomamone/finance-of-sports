@@ -25,6 +25,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 318 — Tablero del inventario (`tools/estado.mjs`) y tools/ fuera del deploy (2026-09-30)
 
 - `tools/estado.mjs` (nuevo, gratis): por estado, cuántos PDFs, qué significa, qué le falta, con qué comando se avanza y cuánto cuesta; detalle de los que tienen rubros (categorización al día, club en el sitio o nuevo, no anuales, reservas) y de las altas. `--actualizar` regenera el registro antes.
+- `tools/estado.mjs` reorganizado por etapas del proyecto (1 conseguir ... 7 en el sitio), con los estados en 0 (pedido de Guido). HANDOFF reescrito al cierre de la sesión.
 - `netlify.toml`: `rm -rf tools` (pedido de Guido: "no publiquemos tools"); ninguna página carga nada de `tools/`.
 
 ## Versión 317 — Los archivos generados salen de Clubes/: todo derivado vive en Generados/ (2026-09-30)
