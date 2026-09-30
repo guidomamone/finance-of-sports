@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 319 — Memoria de categorías: lo que Claude resuelve y Jev no sabía queda para la próxima (2026-09-30)
+
+- `tools/memoria-categorias.mjs` (nuevo) + `Admin/categorias-aprendidas.jsonl`: cada rubro que Claude por API categoriza con confianza >= 0,80 queda registrado (club, año, lado, rubro, glosa, categoría, confianza, motivo, qué decía Jev). Pedido de Guido: "debería quedar documentado para que Jev la próxima vez sepa".
+- `categorizar-claude.mjs`: registra lo que resuelve; usa lo aprendido con >= 0,90 como PRECEDENTE del mismo club (escalón 0, gratis: el año siguiente no vuelve a pagar el mismo rubro) y lo aprendido con >= 0,80 como contexto y ejemplos. `jev-categorizar.mjs --listos`: lo aprendido entra entre los ejemplos parecidos que ve Jev. Lo cargado en el sitio siempre gana; los backtests no usan la memoria. `--sembrar` la llena con los `.categorias.json` ya hechos.
+
 ## Versión 318 — Tablero del inventario (`tools/estado.mjs`) y tools/ fuera del deploy (2026-09-30)
 
 - `tools/estado.mjs` (nuevo, gratis): por estado, cuántos PDFs, qué significa, qué le falta, con qué comando se avanza y cuánto cuesta; detalle de los que tienen rubros (categorización al día, club en el sitio o nuevo, no anuales, reservas) y de las altas. `--actualizar` regenera el registro antes.

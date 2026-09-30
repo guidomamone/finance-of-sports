@@ -58,6 +58,7 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 ## 5. Categorizar
 - `jev-categorizar.mjs`: le pide a Jev la categoría de cada rubro (con lado y ejemplos parecidos); `--backtest` mide su confiabilidad.
 - `categorizar-claude.mjs`: lo que Jev deja < 0,90 va a Claude por API, una llamada por documento, con lo ya cargado del club; deja `<md>.categorias.json`.
+- `memoria-categorias.mjs`: lo que Claude resolvió (y Jev no sabía) queda en `Admin/categorias-aprendidas.jsonl` para la próxima: precedente del mismo club y ejemplos para Jev.
 - `filas-rubro.mjs`: descarta filas que no son rubros y deduce el lado (ingreso/gasto); lo usa `pipeline.mjs`.
 - `vocabulario.mjs`: EL vocabulario contable en 29 idiomas (título de estado de resultados, ingresos, gastos, impuestos, resultado, total, flujo de efectivo, cambios en el patrimonio, balance, columna de notas) y la única normalización del texto (`normalizar()`). Lo usan `pipeline.mjs`, `extract-table-rows.mjs`, `filas-rubro.mjs` y `proponer-carga.mjs`. `node tools/vocabulario.mjs "texto"` dice qué conceptos encuentra; `--cobertura`, qué idioma falta en qué concepto. Medición: `Admin/tests/test-vocabulario.md`.
 

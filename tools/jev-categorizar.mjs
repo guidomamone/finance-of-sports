@@ -37,6 +37,7 @@ import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync } 
 import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
+import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
@@ -233,7 +234,13 @@ async function listos() {
   const key = readKey(); let total = 0;
   // Ejemplos parecidos ya categorizados en el sitio (de todos los clubes) y, cuando el documento indica si la tabla es de
   // ingresos o de gastos, solo las categorías de ese lado: son las dos mejoras que llevaron el acierto de 69,5% a 86,6%.
-  const retrieve = K_EXAMPLES ? makeRetriever([...buildBank(loadClubData()).values()].filter((x) => !x.conflict)) : null;
+  // Versión 319: a los ejemplos de lo cargado en el sitio se suman los rubros que Claude ya resolvió con confianza >= 0,80
+  // (tools/memoria-categorias.mjs): así Jev ve la respuesta que le faltaba la vez anterior. Producción gana si el mismo rubro está en las dos.
+  // (El --backtest NO los usa: mediría con respuestas de Claude sobre esos mismos rubros.)
+  const banco = buildBank(loadClubData());
+  const prodLineas = [...banco.values()].map((x) => ({ club: x.club, side: x.side, label: x.label }));
+  for (const l of lineasAprendidas({ produccion: prodLineas })) { const k = `${l.side}|${l.club}|${l.label.toLowerCase().replace(/\s+/g, ' ').trim()}`; if (!banco.has(k)) banco.set(k, { label: l.label, side: l.side, truth: l.cat, club: l.club, aprendido: true }); }
+  const retrieve = K_EXAMPLES ? makeRetriever([...banco.values()].filter((x) => !x.conflict)) : null;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];

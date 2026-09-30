@@ -83,6 +83,7 @@ import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, m
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
+import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE } from './memoria-categorias.mjs';
 import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
@@ -477,7 +478,12 @@ async function listos(opt) {
   docs = [...new Map(docs.map((e) => [e.md, e])).values()];
   if (opt.limit > 0) docs = docs.slice(0, opt.limit);
   console.log(`${docs.length} documento(s) con Jev hecho y sin categorías finales.${opt.dry ? ' (dry-run)' : ''}`);
-  const lines = allLines(); const retriever = makeRetriever(lines); const apiKey = opt.dry ? null : readKey(); let cost = 0;
+  // Versión 319: además de lo cargado en el sitio, lo que Claude ya resolvió antes (tools/memoria-categorias.mjs, Admin/categorias-aprendidas.jsonl,
+  // confianza >= 0,80): entra como contexto del club y como ejemplos de otros clubes; producción siempre gana sobre lo aprendido.
+  const prod = allLines(); const aprendidas = lineasAprendidas({ produccion: prod });
+  const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry ? null : readKey(); let cost = 0;
+  const aprendidasFirmes = aprendidas.filter((l) => l.conf >= MIN_PRECEDENTE);
+  if (aprendidas.length) console.log(`Memoria de categorías: ${aprendidas.length} rubros aprendidos de Claude (${aprendidasFirmes.length} usables como precedente del mismo club).`);
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
     const jj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.jev.json')), 'utf8'));
@@ -486,9 +492,12 @@ async function listos(opt) {
     for (const r of rj.rubros) {
       if (seen.has(norm(r.label))) continue; seen.add(norm(r.label));
       const j = jevBy.get(norm(r.label));
-      const prec = r.lado ? precedente(lines, rj.club, r.lado, r.label, { excludeYear: rj.year != null ? String(rj.year) : null }) : null;
+      // Escalón 0: precedente de lo CARGADO en el sitio; si no hay, de lo que Claude ya resolvió para este club con >= 0,90 (memoria).
+      const ey = { excludeYear: rj.year != null ? String(rj.year) : null };
+      const precProd = r.lado ? precedente(prod, rj.club, r.lado, r.label, ey) : null;
+      const prec = precProd || (r.lado ? precedente(aprendidasFirmes, rj.club, r.lado, r.label, ey) : null);
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
-      if (prec) rubros.push({ ...base, pendiente: false, ya: prec, escalon: 0 });
+      if (prec) rubros.push({ ...base, pendiente: false, ya: prec, escalon: 0, precedenteDe: precProd ? 'sitio' : 'memoria-claude' });
       else if (j && j.confidence >= opt.umbral) rubros.push({ ...base, pendiente: false, ya: j.choice, escalon: 1, jevConf: j.confidence });
       else rubros.push({ ...base, pendiente: true, jev: j?.choice, jevConf: j?.confidence });
     }
@@ -498,7 +507,9 @@ async function listos(opt) {
     const byIdx = new Map((r.resultados || []).map((x) => [x.idx, x]));
     const out = rubros.map((x, i) => (x.pendiente ? { ...x, escalon: 2, categoria: byIdx.get(i)?.categoria ?? null, confianza: byIdx.get(i)?.confianza ?? null, motivo: byIdx.get(i)?.motivo ?? r.error ?? null } : { ...x, categoria: x.ya, confianza: x.escalon === 0 ? 1 : x.jevConf }));
     writeFileSync(resolve(root, derivado(e.md, '.categorias.json')), JSON.stringify({ md: e.md, club: rj.club, year: rj.year, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), jevHuella: huellaJev(jj), modelo: opt.modelo, costUsd: r.costUsd, error: r.error, rubros: out }, null, 1));
-    console.log(`  ${e.md}: ${out.length} rubros; Claude ${out.filter((x) => x.escalon === 2).length} ($${(r.costUsd || 0).toFixed(4)})${r.error ? ` ERROR ${r.error.slice(0, 120)}` : ''}`);
+    // Lo que Claude resolvió con confianza >= 0,80 queda en la memoria para la próxima vez (pedido de Guido).
+    const aprendidos = r.error ? 0 : registrarAprendidas({ club: rj.club, year: rj.year, md: e.md, modelo: opt.modelo, rubros: out });
+    console.log(`  ${e.md}: ${out.length} rubros; Claude ${out.filter((x) => x.escalon === 2).length} ($${(r.costUsd || 0).toFixed(4)})${aprendidos ? `; ${aprendidos} a la memoria` : ''}${r.error ? ` ERROR ${r.error.slice(0, 120)}` : ''}`);
   }
   if (!opt.dry) console.log(`Costo total: $${cost.toFixed(3)}`);
 }
