@@ -1026,74 +1026,76 @@ Nøkkeltall vedrørende aksjer i datterselskaper:
 
 --- pág. 25 ---
 
-**Note 6 Aksjer i tilknyttet selskap**
+# Note 6 Aksjer i tilknyttet selskap
 
-**Tromsø IL**
+# Tromsø IL
 
-| Selskap | Aksjekapital | Antall aksjer i vår eie | Pålydende pr. aksje | Anskaffelseskost | Nedvurdering | Bokført verdi | Eierandel i % |
-|---|---|---|---|---|---|---|---|
-| Alfheim Stadion II AS | 17 040 817 | 8 350 000 | 1,00 | 27 968 608 | -845 778 | 27 122 830 | 24,50 % |
+|  Selskap | Aksjekapital | Antall aksjer i vår eie | Pålydende pr. aksje | Anskaffelses kost | Nedvurdering | Bokført verdi | Eierandel i %  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  Alfheim Stadion II AS | 17 040 817 | 4 175 000 | 1,00 | 27 968 608 | -845 778 | 27 122 830 | 24,50 %  |
 
 Aksjer i tilknyttet selskap er i idrettslagets regnskap vurdert etter kostmetoden.
+
 Aksjene i det tilknyttede selskap Alfheim Stadion II AS er vurdert til laveste verdi av kostpris og virkelig verdi.
+
 Det har ikke vært noen endringer i selskapets aksjeverdi i 2021.
 
-**Konsern**
+# Konsern
 
-| Selskap | Aksjekapital | Antall aksjer i vår eie | Pålydende pr. aksje | Anskaffelseskost | Nedvurdering [akk]umulert 01.01. | Resultatandel tilknyttet selskap 202[ilegible] | Bokført verdi | Eierandel i % |
-|---|---|---|---|---|---|---|---|---|
-| Alfheim Stadion II AS | 17 040 817 | 8 350 000 | 1,00 | 55 937 216,00 | -3 722 240,00 | -376 880,00 | 51 838 096,00 | 49,00 % |
+|  Selskap | Aksjekapital | Antall aksjer i vår eie | Pålydende pr. aksje | Anskaffelses kost | Nedvurdering skumulert 01.01. | Resultatandel i knyttet selskap 202 | Bokført verdi | Eierandel i %  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  Alfheim Stadion II AS | 17 040 817 | 8 350 000 | 1,00 | 55 937 216,00 | -3 722 240,00 | -376 880,00 | 51 838 096,00 | 49,00 %  |
 
 Tromsø Idrettslag og TIL Fotball AS eier hver 24,5% av aksjene i Alfheim Stadion II AS.
 
 Nøkkeltall vedrørende aksjer i tilknyttet selskap:
 
-| Selskap | Forretningskontor | Eier-/stemmeandel | EK pr. 01.01 | Årets resultat | EK pr. 31.12 |
-|---|---|---|---|---|---|
-| Alfheim Stadion II AS | Tromsø | 49,00 % | 3 567 428 | -1 091 956 | 2 475 472 |
-| Alfheim Stadion AS | Tromsø | 49,00 % | 489 925 | 162 689 | 652 614 |
+|  Selskap | Forretnings-kontor | Eier-stemmeandel | EK pr. 01.01 | Årets resultat | EK pr. 31.12  |
+| --- | --- | --- | --- | --- | --- |
+|  Alfheim Stadion II AS | Tromsø | 49,00 % | 3 567 428 | -1 091 956 | 2 475 472  |
+|  Alfheim Stadion AS | Tromsø | 49,00 % | 489 925 | 162 689 | 652 614  |
 
-Alfheim Stadion II AS har inngått avtale med utbygger om salg av et større tomteområdet utenfor Alfheim Stadion. Verdien av denne salgavtalen medfører at virkelig verdi av egenkapitalen i Alfheim Stadion II AS er vesentlig høyere enn bokført egenkapital. Denne merverdien er hensyntatt i forbindelse med vurdering av virkelig verdi på konsernet Tromsø Idrettslag sine aksjer i Alfheim Stadion II AS pr. 31.12.2022.
+Alfheim Stadion II AS har inngått avtale med utbygger om salg av et større tomteområdet utenfor Alfheim Stadion. Verdien av denne salgavtalen medfører at virkelig verdi av egenkapitalen i Alfheim Stadion II AS er vesentlig høyere enn bokført egenkapital. Denne merveidien er hensyntatt i forbindelse med vurdering av virkelig verdi på konsernet Tromsø Idrettslag sine aksjer i Alfheim Stadion II AS pr. 31.12.2022.
 
-**Note 7 Tilskudd og gaver**
+# Note 7 Tilskudd og gaver
 
-Tromsø Idrettslag mottar årlige tilskudd til bl.a. samfunnsprosjekt, tilskudd til drift av stadion, reisetilskudd, LAM midler, grasrotmidler, mva kompensasjon og tilskudd fra UEFA.
-Tilskuddene inntektsføres som driftsinntekt på grunnlag av mottatte betalinger.
+Tromsø Idrettslag mottar årlige tilskudd til bl.a. samfunnsprosjekt, tilskudd til drift av stadion, reisetilskudd, LAM midler, grasrotmidler, mva kompensasjon og tilskudd fra UEFA. Tilskuddene inntektsføres som driftsinntekt på grunnlag av mottatte betalinger.
 
-Tromsø Idrettslag får årlige gaver og bidrag. Gavene inntektsføres som driftsinntekt på mottakstidspunkt. Det påhviler ingen vilkår eller forpliktelser knyttet til de mottatte gavene.
-Inntektsførte gaver pr. 31.12. består av:
+Tromsø Idrettslag får årlige gaver og bidrag. Gavene inntektsføres som driftsinntekt på mottakstidspunkt. Det påhviler ingen vilkår eller forpliktelser knyttet til de mottatte gavene. Inntektsførte gaver pr. 31.12. består av:
 
-| | Tromsø IL 2022 | Tromsø IL 2021 | Konsernet Tromsø IL 2022 | Konsernet Tromsø IL 2021 |
-|---|---|---|---|---|
-| Pengegaver | 410 443 | 298 201 | 7 141 430 | 298 201 |
+|   | Tromsø IL |   | Konsernet Tromsø IL  |   |
+| --- | --- | --- | --- | --- |
+|   | 2022 | 2021 | 2022 | 2021  |
+|  Pengegaver | 410 443 | 298 201 | 7 141 430 | 298 201  |
 
-**Note 8 Varelager**
+# Note 8 Værelager
 
-**Konsern:**
-Varelageret på kr 172.680 består av supporterutstyr og varebeholdning drikke. Varelageret er verdsatt til kostpris.
+# Konsern:
 
-**Note 9 Lønnskostnader**
+Værelageret på kr 172.680 består av supporterutsyr og varebeholdning drikke. Værelageret er verdsatt til kostpris.
 
-| Lønnskostnader består av: | Tromsø IL 2022 | Tromsø IL 2021 | Konsernet Tromsø IL 2022 | Konsernet Tromsø IL 2021 |
-|---|---|---|---|---|
-| Lønninger og andre oppg.pl. ytelser | 26 692 759 | 24 956 631 | 32 566 489 | 29 177 097 |
-| Arbeidsgiveravgift | 2 230 825 | 2 125 044 | 2 750 437 | 2 491 659 |
-| Pensjonskostnader | 810 710 | 687 208 | 954 557 | 783 258 |
-| Andre ytelser | 610 733 | 580 464 | 625 860 | 509 379 |
-| Sum | 30 345 027 | 28 349 347 | 36 897 343 | 32 961 393 |
+# Note 9 Lønnskostnader
 
-| | Tromsø IL 2022 | Konsernet Tromsø IL 2022 |
-|---|---|---|
-| Gjennomsnittlig antall årsverk | 40,0 | 48,2 |
+|   | Tromsø IL |   | Konsernet Tromsø IL  |   |
+| --- | --- | --- | --- | --- |
+|  Lønnskostnader består av: | 2022 | 2021 | 2022 | 2021  |
+|  Lønninger og andre oppg.pl. ytelser | 26 692 759 | 24 956 631 | 32 566 489 | 29 177 097  |
+|  Arbeidsgiveravgift | 2 230 825 | 2 125 044 | 2 750 437 | 2 491 659  |
+|  Pensjonskostnader | 810 710 | 687 208 | 954 557 | 783 258  |
+|  Andre ytelser | 610 733 | 580 464 | 625 860 | 509 379  |
+|  Sum | 30 345 027 | 28 349 347 | 36 897 343 | 32 961 393  |
+|  Gjennomsnittlig antall årsverk | 40,0 |   | 48,2  |   |
 
 Idrettslaget og datterselskapet TIL Fotball AS er pliktig til å ha OTP eller annen pensjonsordning som minst dekker minimumskravet til OTP.
+
 Idrettslaget og TIL Fotball AS har opprettet en innskuddsbasert pensjonsordning som oppfyller kravene i loven om obligatorisk tjenestepensjon.
 
-| | Tromsø IL 2022 | Tromsø IL 2021 | Konsernet Tromsø IL 2022 | Konsernet Tromsø IL 2021 |
-|---|---|---|---|---|
-| Kostnadsført premie til OTP | 449 280 | 405 118 | 525 006 | 573 492 |
-| Kostnadsført premie til avtalefestet pensjon (AFP) | 361 430 | 282 090 | 429 551 | 282 090 |
-| Sum pensjonspremier | 810 710 | 687 208 | 954 557 | 855 582 |
+|   | Tromsø IL |   | Konsernet Tromsø IL  |   |
+| --- | --- | --- | --- | --- |
+|   | 2022 | 2021 | 2022 | 2021  |
+|  Kostnadsført premie til OTP | 449 280 | 405 118 | 525 006 | 573 492  |
+|  Kostnadsført premie til avtalefestet pensjon (AFP) | 361 430 | 282 090 | 429 551 | 282 090  |
+|  Sum pensjonspremier | 810 710 | 687 208 | 954 557 | 855 582  |
 
 --- pág. 26 ---
 
@@ -1207,65 +1209,69 @@ Konsernet Tromsø Idrettslag har pr. 31.12.følgende lån hos kredittinstitusjon
 
 --- pág. 28 ---
 
-**Note 13 Skatter**
+### Note 13 Skatter
 
 Tromsø Idrettslag er ikke skattepliktig for sin virksomhet. Datterselskapene driver skattepliktig virksomhet.
-Tromsø Idrettslag kan som skattefri ideell organisasjon ikke inngå i skattekonsern med sine datterselskaper som er aksjeselskaper.
 
-Alle datterselskap avregner ligningsmessig underskudd til fremføring mot årets overskudd. Det blir derfor ingen betalbar skatt i 2021 og utsatt skattefordel ikke er balanseført i noen av disse selskapene blir konsernet Tromsø Idrettslag sin skattekostnad kr 0.
-Det vises til datterselskapenes årsregnskaper for 2021 hva angår nærmere detaljer og spesifikasjon av årets skattepliktige inntekter.
+Tromsø Idrettslag kan som skattefri ideell organisasjon ikke inngå i skattekonsens med sine datterselskaper som er aksjeselskaper.
 
-Utsatt skatt beregnes på grunnlag av de midlertidige forskjeller som eksisterer ved utgangen av regnskapsåret mellom regnskapsmessige og skattemessige verdier. Følgende poster inngår i datterselskapenes utsatt skatt beregningen pr. 31.12.:
+Alle datterselskap avregner ligingsmessig underskudd til fremføring mot årets overskudd. Det blir derfor ingen beteller skatt i 2021 og de utsatt skattefordel ikke er balansefelt i noen av disse selskapene blir konsernet Tromsø Idrettslag sin skattekostnad kr 0. Det vises til datterselskapenes årsregnskap for 2021 hos angår nærmere detaljer om spesifikasjon av årets skattepliktige inntekter.
 
-| Midlertidige forskjeller knyttet til | TIL Fotball AS 2022 | TIL Fotball AS 2021 | Bjerkakerhallen AS 2022 | Bjerkakerhallen AS 2021 |
-|---|---|---|---|---|
-| Markedsrettigheter, varige driftsmidler | -661 358 | -818 266 | 4 685 959 | 4 033 533 |
-| Fordringer | -31 000 | -13 000 | 0 | 0 |
-| Andre forskjeller | -3 081 546 | -1 769 239 | 0 | 0 |
-| Netto midlertidige forskjeller | -3 773 904 | -2 600 505 | 4 685 959 | 4 033 533 |
-| Ligningsmessig underskudd til fremføring | -93 325 436 | -88 399 785 | -8 719 290 | -6 086 316 |
-| Grunnlag utsatt skattefordel | -97 099 340 | -91 000 290 | -4 033 331 | -2 052 783 |
-| Utsatt skattefordel blir: | -21 361 855 | -20 020 064 | -887 333 | -451 612 |
-| Utsatt skattefordel i % av grunnlag | 22 % | 22 % | 22 % | 22 % |
+Utsatt skatt beregnes på grunnlag av de midlertidige forskjeller som eksisterer ved utgangen av regnskapsløst mellom regnskapsmessige og skattemessige verdier. Følgende poster inngår i datterselskapenes utsatt skatt beregningen pr. 31.12.
 
-Utsatt skattefordel er ikke balanseført i konsernselskapenes regnskaper pr. 31.12.2022
+|  Midlertidige forskjeller knyttet til | TIL Fotball AS |   | Bjerkakerhallen AS  |   |
+| --- | --- | --- | --- | --- |
+|   |  2022 | 2021 | 2022 | 2021  |
+|  Markedsrettigheter, varige driftsmidler | -661 358 | -818 266 | 4 685 959 | 4 033 533  |
+|  Fordringer | -31 000 | -13 000 | 0 | 0  |
+|  Andre forskjeller | -3 081 546 | -1 769 239 | 0 | 0  |
+|  Netto midlertidige forskjeller | -3 773 904 | -2 600 505 | 4 685 959 | 4 033 533  |
+|  Ligingsmessig underskudd til fremføring | -93 325 436 | -88 399 785 | -8 719 290 | -6 086 316  |
+|  Grennlag utsatt skattefordel | -97 099 340 | -91 000 290 | -4 033 331 | -2 052 783  |
+|  Utsatt skattefordel blir: | -21 361 855 | -20 020 064 | -887 333 | -451 612  |
+|  Utsatt skattefordel i % av grunnlag | 22 % | 22 % | 22 % | 22 %  |
 
-**Note 14 Egenkapital**
+Utsatt skattefordel er ikke balansefelt i konsernselskapenes regnskaper pr. 31.12.2022
 
-| | Tromsø IL 2022 | Tromsø IL 2021 | Konsernet Tromsø IL 2022 | Konsernet Tromsø IL 2021 |
-|---|---|---|---|---|
-| Egenkapital 1.1. | 11 981 929 | 11 210 730 | 39 235 422 | 39 679 774 |
-| Årets resultat | 5 048 | 771 199 | -8 462 317 | -444 350 |
-| Gjeldskonvertering | 0 | 0 | | |
-| Gjeldsettergivelse | 0 | 0 | | |
-| Egenkapital 31.12. | 11 986 977 | 11 981 929 | 30 773 103 | 39 235 422 |
-| **Herav utgjør minoritetsinteressens andel av egenkapital i TIL Fotball AS** | | | 15 279 086 | 18 107 339 |
+### Note 14 Egenkapital
 
-**Note 15 Andre langsiktige fordringer/Andre kortsiktige fordringer**
+|   | Tromsø II. |   | Konsernet Tromsø II.  |   |
+| --- | --- | --- | --- | --- |
+|   |  2022 | 2021 | 2022 | 2021  |
+|  Egenkapital 1.1 | 11 981 929 | 11 210 730 | 39 235 422 | 39 679 774  |
+|  Årets resultat | 5 048 | 771 199 | -8 462 317 | -444 350  |
+|  Gyldskonvertering | 0 | 0 |  |   |
+|  Gyldsettergjørelse | 0 | 0 |  |   |
+|  Egenkapital 31.12. | 11 986 977 | 11 981 929 | 39 773 103 | 39 235 422  |
+|  **Herav utgjør minoritetsinteressens andel av egenkapital i TIL Fotball AS** |  |  | **15 279 086** | **18 107 339**  |
 
-Fordringer som forfaller senere enn ett år etter balansedagen er gruppert som langsiktige fordringer,mens øvrige fordringer er gruppert som kortsiktige fordringer.
+### Note 15 Andre langsiktige fordringer/Andre kortsiktige fordringer
 
-**Tromsø IL**
+Fordringer som forfaller senere enn ett år etter balansefagene er gruppert som langsiktige fordringer, mens øvrige fordringer er gruppert som kortsiktige fordringer.
 
-| Andre fordringer pr. 31.12. består av: | 2022 Langsiktig fordringer | 2022 Kortsiktig fordringer | 2021 Langsiktig fordringer | 2021 Kortsiktig fordringer |
-|---|---|---|---|---|
-| Depositum leiligheter | 0 | 61 072 | 0 | 29 000 |
-| Forskudd lønn, korts.lån og andre fordringer ansatte | 0 | 41 599 | 0 | 7 235 |
-| Forskuddsbetalte kostnader | 0 | 1 034 784 | 0 | 686 404 |
-| Andre kortsiktige fordringer | 0 | 4 469 923 | 0 | 2 809 196 |
-| **Sum andre fordringer** | **0** | **5 607 380** | **0** | **3 531 837** |
+#### Tromsø II.
 
-**Konsern**
+|  Andre fordringer pr. 31.12. består av: | 2022 |   | 2021  |   |
+| --- | --- | --- | --- | --- |
+|   |  Langeiktig fordringer | Kortsiktig fordringer | Langeiktig fordringer | Kortsiktig fordringer  |
+|  Depositum leiligheter | 0 | 61 072 | 0 | 29 000  |
+|  Forskudd lønn, korts lån og andre fordringer ansatte | 0 | 41 599 | 0 | 7 235  |
+|  Forskuddsbetalte kostnader | 0 | 1 034 784 | 0 | 686 404  |
+|  Andre kortsiktige fordringer | 0 | 4 469 923 | 0 | 2 809 196  |
+|  **Sum andre fordringer** | **0** | **5 607 380** | **0** | **3 531 837**  |
 
-| Andre fordringer pr. 31.12. består av: | 2022 Langsiktig fordringer | 2022 Kortsiktig fordringer | 2021 Langsiktig fordringer | 2021 Kortsiktig fordringer |
-|---|---|---|---|---|
-| Depositum leiligheter | | 61 072 | | 29 000 |
-| Forskudd lønn, korts.lån og andre fordringer ansatte | | 54 349 | | 1 315 |
-| Forskuddsbetalte kostnader | 1 763 656 | 2 228 868 | 1 794 152 | 2 249 643 |
-| Andre kortsiktige fordringer | | 6 820 626 | | 2 881 308 |
-| **Sum andre fordringer** | **1 763 656** | **9 164 915** | **1 794 152** | **5 161 270** |
+#### Konsern
 
-Av konsernets langsiktig fordring pr. 31.12.2022 vedrører kr 1.763.656 forskuddsbetalt husleie. Beløpet kostnadsføres lineært over leieperioden frem til 31.10.2080.
+|  Andre fordringer pr. 31.12. består av: | 2022 |   | 2021  |   |
+| --- | --- | --- | --- | --- |
+|   |  Langeiktig fordringer | Kortsiktig fordringer | Langeiktig fordringer | Kortsiktig fordringer  |
+|  Depositum leiligheter |  | 61 072 |  | 29 000  |
+|  Forskudd lønn, korts lån og andre fordringer ansatte |  | 54 349 |  | 1 315  |
+|  Forskuddsbetalte kostnader | 1 763 656 | 2 228 868 | 1 794 152 | 2 249 643  |
+|  Andre kortsiktige fordringer |  | 6 820 626 |  | 2 881 306  |
+|  **Sum andre fordringer** | **1 763 656** | **9 164 915** | **1 794 152** | **5 161 270**  |
+
+Av konsernets langsiktig fordring pr. 31.12.2022 vedrører kr 1 763 656 forskuddsbetalt basløse. Bolaget kostnadsføres lisert over lesperioden frem til 31.10.2000.
 
 --- pág. 29 ---
 

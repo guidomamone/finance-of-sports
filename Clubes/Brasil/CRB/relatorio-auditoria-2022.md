@@ -357,42 +357,41 @@ Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
 --- pág. 15 ---
 
 CLUBE DE REGATAS BRASIL
-Fundado em 20 de Setembro de 1912
+Fundada em 30 de Setembro de 1932
 
-**CLUBE DE REGATAS BRASIL - CRB**
-**CNPJ nº 12.159.281/0001-09**
-**BALANÇOS PATRIMONIAIS**
-**Findos em 31 de dezembro de 2022 e 2021**
+# CLUBE DE REGATAS BRASIL - CRB
+
+CNPJ nº 12.159.281/0001-09
+
+# BALANÇOS PATRIMONIAIS
+
+Fundos em 31 de dezembro de 2022 e 2021
+
 (Em milhares de reais)
 
-| Ativo | Notas | 31/12/2022 | 31/12/2021 |
-|---|---|---|---|
-| **Circulante** | | **1.674** | **1.381** |
-| Caixa e Equivalentes a Caixa | 4 | 1.674 | 1.381 |
-| **Não Circulante** | | **6.572** | **5.936** |
-| Depósitos Judiciais | 5 | 197 | 29 |
-| Imobilizado | 6 | 6.375 | 5.907 |
-| **Total do Ativo** | | **8.246** | **7.317** |
-
-| Passivo | Notas | 31/12/2022 | 31/12/2021 |
-|---|---|---|---|
-| **Circulante** | | **1.233** | **139** |
-| Fornecedores | 7 | 46 | - |
-| Obrigações Trabalhistas | 8 | 108 | 89 |
-| Obrigações Tributárias | 9 | 79 | 50 |
-| Empréstimos e financiamentos | 10 | 1.000 | - |
-| **Não Circulante** | | **951** | **1.141** |
-| Obrigações Trabalhistas | 11 | 951 | 1.141 |
-| **Patrimônio Líquido** | 12 | **6.062** | **6.037** |
-| Patrimônio Social | | 6.037 | 4.822 |
-| Superávit do Exercício | | 25 | 1.215 |
-| **Total do Passivo e Patrimônio Líquido** | | **8.246** | **7.317** |
+|  Ativo | Notas | 31/12/2022 | 31/12/2021 | Passivo | Notas | 31/12/2022 | 31/12/2021  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  Circulante |  | 1.674 | 1.381 | Circulante |  | 1.233 | 139  |
+|  Caixa e Equivalentes a Caixa | 4 | 1.674 | 1.381 | Fornecedores | 7 | 46 | -  |
+|   |  |  |  | Obrigações Trabalhistas | 8 | 108 | 89  |
+|  Não Circulante |  | 6.572 | 5.936 | Obrigações Tributárias | 9 | 79 | 50  |
+|  Depósitos Judiciais | 5 | 197 | 29 | Empréstimos e financiamentos | 10 | 1.000 | -  |
+|  Imobilizado | 6 | 6.375 | 5.907 |  |  |  |   |
+|   |  |  |  | Não Circulante |  | 951 | 1.141  |
+|   |  |  |  | Obrigações Trabalhistas | 11 | 951 | 1.141  |
+|   |  |  |  | Patrimônio Líquido | 12 | 6.062 | 6.037  |
+|   |  |  |  | Patrimônio Social |  | 6.037 | 4.822  |
+|   |  |  |  | Superávit do Exercício |  | 25 | 1.215  |
+|  Total do Ativo |  | 8.246 | 7.317 | Total do Passivo e Patrimônio Líquido |  | 8.246 | 7.317  |
 
 *As notas explicativas são parte integrante das demonstrações financeiras.
 
 Página | 15
+
 Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
+
 Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
+
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 16 ---

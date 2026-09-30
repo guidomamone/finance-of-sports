@@ -614,41 +614,48 @@ www.balverca.com.br
 
 --- pág. 20 ---
 
-FC ALVERCA FUTEBOL SAD
+![img-20.jpeg](img-20.jpeg)
 
-| Rubricas | 30/06/2024: Quantia Bruta | Depreciações e Imparidades acumuladas | Quantia escriturada | 30/06/2023: Quantia Bruta | Depreciações e Imparidades acumuladas | Quantia escriturada |
-|---|---|---|---|---|---|---|
-| Edifícios e outras construções | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Equipamento Hardware | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Equipamento administrativo | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Outros ativos fixos tangíveis | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Total | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 72 870,13 € |
+# FC ALVERCA
 
-**d) Reconciliação da quantia escriturada no início e no fim do período mostrando as adições, as revalorizações, as alienações, os ativos classificados como detidos para venda, as depreciações, as perdas de imparidade e suas reversões e outras alterações:**
+# FUTEBOLSAD
+
+|  Núcleo | 30/04/2024 |   |   | 30/04/2023  |   |   |
+| --- | --- | --- | --- | --- | --- | --- |
+|   |  Quantia Bruta | Depreciações e imparidades acumuladas | Quantia escriturada | Quantia Bruta | Depreciações e imparidades acumuladas | Quantia escriturada  |
+|  Políticas e outras informações | 31.000,00 € | 30.400,00 € | 43.220,00 € | 31.000,00 € | 32.000,00 € | 47.200,00 €  |
+|  Equipamentos de tecnologia | 29.000,00 € | 28.750,00 € | 9.250,00 € | 29.000,00 € | 32.000,00 € | 32.500,00 €  |
+|  Equipamentos administrativos | 7.000,00 € | 4.000,00 € | 3.000,00 € | 8.000,00 € | 5.000,00 € | 5.000,00 €  |
+|  Outras ações para qualquer | 22.000,00 € | 7.000,00 € | 15.000,00 € | 22.000,00 € | 7.000,00 € | 15.000,00 €  |
+|  Total | 55.000,00 € | 48.000,00 € | 69.000,00 € | 55.000,00 € | 58.000,00 € | 75.000,00 €  |
+
+d) Reconciliação da quantia escriturada no início e no fim do período mostrando as adições, as revalorizações, as alienações, os ativos classificados como detidos para venda, as depreciações, as perdas de imparidade e suas reversões e outras alterações:
 
 A quantia escriturada, as depreciações acumuladas, reconciliação da quantia escriturada no início e no fim do período mostrando as adições, os abates, as amortizações, as perdas de imparidade e suas reversões e outras alterações, foram desenvolvidas de acordo com o seguinte quadro:
 
-| Rubricas | 30/06/2023 | Adições | Revalorizações | Alienações | Depreciações | Perdas imparidade | Abates/Transf. | 30/06/2024 |
-|---|---|---|---|---|---|---|---|---|
-| Edifícios e outras construções | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Equipamento Hardware | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Equipamento administrativo | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Outros ativos fixos tangíveis | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
-| Total | 72 870,13 € | [ilegible] | € - | € - | [ilegible] | € - | € - | [ilegible] |
+|  Núcleo | 30/04/2024 | Adições | Revalorizações | Alienações | Depreciações | Perdas Imparidade | Análise/Total | 30/04/2023  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  Políticas e outras informações | 47.000,00 € | 0 |  |  | 5.000,00 € |  |  | 47.000,00 €  |
+|  Equipamentos de tecnologia | 12.000,00 € | 0 |  |  | 4.000,00 € |  |  | 4.000,00 €  |
+|  Equipamentos administrativos | 5.000,00 € | 2.000,00 € |  |  | 2.000,00 € |  |  | 2.000,00 €  |
+|  Outras ações para qualquer | 22.000,00 € | 9.000,00 € |  |  | 4.000,00 € |  |  | 22.000,00 €  |
+|  Total | 57.000,00 € | 47.000,00 € | 0 | 0 | 10.000,00 € | 0 | 0 | 57.000,00 €  |
 
-**9. RÉDITO**
+# 9. RÉDITO
 
-**9.1. Politicas contabilisticas adotadas para o reconhecimento de rédito, incluindo os métodos adotados para determinar a fase de acabamento de transações que envolvem a prestação de serviços.**
+9.1. Políticas contabilísticas adotadas para o reconhecimento do rédito, incluindo os métodos adotados para determinar a fase de acabamento de transações que envolvem a prestação de serviços.
 
-O réidto compreende o justo valor de contraprestação recebida ou a receber pela prestação de serviços decorrentes da atividade normal da Empresa. O réidto é reconhecido líquido do Imposto sobre o Valor Acrescentado (IVA), abatimentos e descontos.
+O rédito compreende o justo valor da contraprestação recebida ou a receber pela prestação de serviços decorrentes da atividade normal da Empresa. O rédito é reconhecido líquido do Imposto sobre o Valor Acrescentado (IVA), abatimentos e descontos.
 
-A Empresa reconhece réidto quando este pode ser razoavelmente mensurável, seja provável que a Empresa obtenha benefícios económicos futuros, e os critérios específicos descritos a seguir se encontrem cumpridos. O montante de réidto não é considerado como razoavelmente mensurável até que todas as contingências relativas a uma venda estejam substancialmente resolvidas.
+A Empresa reconhece rédito quando este pode ser razoavelmente mensurável, seja provável que a Empresa obtenha benefícios econômicos futuros, e os critérios específicos descritos a seguir se encontrem cumpridos.
 
-O réidto proveniente da prestação de serviços é reconhecido com referência à fase de acabamento da transação à data de relato, desde que todas as seguintes condições sejam satisfeitas:
+O montante do rédito não é considerado como razoavelmente mensurável até que todas as contingências relativas a uma venda estejam substancialmente resolvidas.
 
-- O montante do réidto pode ser mensurado com fiabilidade;
+O rédito proveniente da prestação de serviços é reconhecido com referência à fase de acabamento da transação à data de relato, desde que todas as seguintes condições sejam satisfeitas:
 
-[rodapé ilegible]
+- O montante do rédito pode ser mensurado com fiabilidade;
+
+8
 
 --- pág. 21 ---
 
@@ -874,6 +881,11 @@ Destaca-se ainda que a inexistência de efeitos significativos ao nível das ár
 
 --- pág. 27 ---
 
+![img-27.jpeg](img-27.jpeg)
+
+**FC ALVERCA**
+FUTEROL SAO
+
 **17.1. A proposta de aplicação de resultados ou, se aplicável, a aplicação dos resultados.**
 
 O resultado líquido do período Junho 2024, no montante de -3.230.497,45 euros, será aplicado em:
@@ -886,18 +898,18 @@ O resultado líquido do período Junho 2024, no montante de -3.230.497,45 euros,
 
 Em 30 de Junho de 2023 e 30 de Junho de 2024, a rubrica de «Estado e outros entes públicos» apresentava a seguinte decomposição:
 
-| Estado e Outros Entes Públicos | 30/06/2024 | | | 30/06/2023 | | |
-|---|---|---|---|---|---|---|
-| **Ativos** | | | | | | |
-| Imposto sobre o valor acrescentado | 194 055,24 € | - € | 194 055,24 € | 132 698,29 € | - € | 132 698,29 € |
-| Total de Ativo | 194 055,24 € | - € | 194 055,24 € | 132 698,29 € | - € | 132 698,29 € |
-| **Passivos** | | | | | | |
-| Imposto sobre o rendimento | 9 830,27 € | - € | 9 830,27 € | 7 798,48 € | - € | 7 798,48 € |
-| Retenção de impostos s/ rendimento | [ilegible] | - € | [ilegible] | 38 103,79 € | - € | 38 103,79 € |
-| Contribuições p/ Segurança Social | [ilegible] | - € | [ilegible] | 25 108,21 € | - € | 25 108,21 € |
-| Total do Passivo | 140 931,78 € | - € | 140 931,78 € | 71 010,48 € | - € | 71 010,48 € |
+|  Estado e Outros Entes Públicos | 30/06/2024 |   | 30/06/2023  |   |
+| --- | --- | --- | --- | --- |
+|  **Ativos** |  |  |  |   |
+|  Inversos com o valor apresentado | 134.055,24 € | 134.055,24 € | 132.696,29 € | 132.696,29 €  |
+|  Total de Ativos... | 134.055,24 € | 134.055,24 € | 132.696,29 € | 132.696,29 €  |
+|  **Passivos** |  |  |  |   |
+|  Inversos com o rendimento | 9.830,27 € | 9.830,27 € | 7.790,40 € | 7.790,40 €  |
+|  Inversos de impostos / rendimento | 31.704,66 € | 31.704,66 € | 30.102,79 € | 30.102,79 €  |
+|  Contribuições de segurança social | 17.307,03 € | 17.307,03 € | 20.108,21 € | 20.108,21 €  |
+|  Total do Passivo... | 140.311,79 € | 140.311,79 € | 71.610,40 € | 71.610,40 €  |
 
-A empresa não é devedora ao Estado e à Segurança Social por quaisquer dívidas fiscais e contributivas em situação de mora. Dá-se deste modo cumprimento ao disposto no artigo 2º do Decreto-Lei n.º 534/80, de 7 de Novembro e no artigo 210º da Lei n.º 110/2009, de 16 de Setembro (Código Contributivo).
+A empresa não é devedora ao Estado e à Segurança Social por quaisquer dívidas fiscais e contributivas em situação de mora. Da-se deste modo cumprimento ao disposto no artigo 2º do Decreto-Lei n.º 534/80, de 7 de Novembro e no artigo 210º da Lei n.º 110/2009, de 16 de Setembro (Código Contributivo).
 
 **17.2.2. Diferimentos**
 
@@ -906,8 +918,6 @@ A conta de diferimentos do ativo engloba gastos com rendas a serem reconhecidos 
 **17.2.3. Outros gastos/Outros rendimentos**
 
 Em 30 de Junho de 2023 e 30 de Junho de 2024, as rubricas da demonstração de resultados Outros gastos e Outros rendimentos e apresentavam a seguinte decomposição:
-
-[Cabeçalho: logótipo FC ALVERCA FUTEBOL SAD; rubricas manuscritas. Rodapé — [ilegible]]
 
 --- pág. 28 ---
 
