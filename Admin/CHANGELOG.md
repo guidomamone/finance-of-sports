@@ -92,6 +92,12 @@ que dice `ESTADO.md` era verdad ese día.
     era el roto y se pasaba a Gemini + Claude (visto en la corrida de 50 con `.md` viejos de Tesseract, incluso de 1 página). Ahora
     primero se hace una lectura fresca con Mistral (~$0,004/pág.): si esa sí coincide, el `.md` viejo era el malo y se lo reemplaza
     (el original queda en `.previo-*.md`); solo si tampoco coincide se comparan voces.
+  - Resolver, PDF con texto: el veredicto final ya no es el chequeo global (que contaba como "cifras sin respaldo" las de páginas-imagen sin
+    texto en el PDF y, por coincidencias de un dígito con cifras de otras páginas, las tomaba por lecturas mal hechas: Gent, Charleroi,
+    Sint-Truiden mandaban el documento ENTERO a Gemini + Claude). Ahora es por página: las páginas con texto se verifican contra el texto
+    del PDF (una cifra de Claude ausente en el PDF solo es sospechosa si se parece a una que sí está); las páginas SIN texto en el PDF
+    (imágenes dentro de un PDF con texto), y aquellas donde Claude discrepa de todo, pasan al camino de voces SOLO ellas. Si el `.md`
+    viejo y Claude leyeron igual y el texto del PDF difiere, se acepta (es el texto del PDF).
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",

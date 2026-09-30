@@ -246,16 +246,24 @@ async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
 // páginas daba timeout seguro y gastaba reintentos en vano, visto en la primera corrida del pipeline con Borussia
 // Dortmund). Se transcribe por tramos de BIG_CHUNK páginas y se arma el mismo {pre, pages} que devuelve splitPages.
 const BIG_DOC_PAGES = 40; const BIG_CHUNK = 20;
-async function voiceByChunks(engine, pdfAbs, nPages, log) {
+async function voiceByChunks(engine, pdfAbs, pageList, log) {
   const pages = [];
-  for (let a = 1; a <= nPages; a += BIG_CHUNK) {
-    const list = Array.from({ length: Math.min(BIG_CHUNK, nPages - a + 1) }, (_, i) => a + i);
+  for (let i = 0; i < pageList.length; i += BIG_CHUNK) {
+    const list = pageList.slice(i, i + BIG_CHUNK);
     const r = await transcribePages(engine, pdfAbs, list, engine === 'gemini' ? { extraArgs: ['--timeout', '300'] } : {});
     if (!r.ok) return { ok: false, kind: r.kind, text: `tramo págs. ${list[0]}-${list[list.length - 1]}: ${r.text}` };
     for (const [n, body] of r.pages) pages.push({ n, body });
-    log(`  tramo ${list[0]}-${list[list.length - 1]} de ${nPages} hecho por ${engine}`);
+    log(`  tramo ${list[0]}-${list[list.length - 1]} (${pageList.length} págs. en total) hecho por ${engine}`);
   }
   return { ok: true, voice: { pre: '', pages } };
+}
+
+// Una cifra de la lectura de Claude que el texto del PDF no tiene es sospechosa SOLO si se parece a una que sí tiene
+// (mismo largo, 1-2 dígitos distintos = lectura mal hecha); si no se parece a nada, es texto de una imagen (dirección,
+// sello) que el texto del PDF nunca va a tener.
+function pageAccepted(cSet, pdfSet) {
+  const extras = [...cSet].filter((x) => !pdfSet.has(x));
+  return extras.every((x) => ![...pdfSet].some((y) => y.length === x.length && hamming(x, y) <= (x.length >= 7 ? 2 : 1)));
 }
 
 // ---------------------------------------------------------------- lógica por documento
@@ -276,11 +284,11 @@ function textLayerDoubts(pdfTexts, canon) {
   return doubts;
 }
 
-function voiceDoubts(pageCountPdf, canon, other) {
+function voiceDoubts(pageList, canon, other) {
   const a = new Map(canon.pages.map((p) => [p.n, numsOf(p.body)]));
   const b = new Map(other.pages.map((p) => [p.n, numsOf(p.body)]));
   const doubts = [];
-  for (let n = 1; n <= pageCountPdf; n++) {
+  for (const n of pageList) {
     const sa = a.get(n); const sb = b.get(n);
     if (!sa || !sb) { doubts.push(n); continue; }
     if (!sameSet(sa, sb)) doubts.push(n);
@@ -406,6 +414,7 @@ async function resolveDoc(e0) {
   let method = '';
   const vn0 = verifyNumbers(pdfAbs, mdAbs);
   let needScan = vn0.verdict === 'no-aplica';
+  let voicePages = null; // null = todo el documento; una lista = solo esas páginas
 
   // 1) PDF con texto: la verdad está en el propio PDF.
   if (!needScan) {
@@ -439,32 +448,41 @@ async function resolveDoc(e0) {
         needScan = true;
       }
     }
+    // Páginas SIN texto en el PDF pero con cifras en el .md (páginas-imagen dentro de un PDF con texto: caso Gent, 10 de 43):
+    // no hay contra qué compararlas, así que van al camino de voces, solo esas. (Antes se contaban como "cifras sin respaldo"
+    // y por pura coincidencia parecían lecturas mal hechas, mandando el documento ENTERO a Gemini y Claude.)
+    const toVoices = pageTexts.map((t, i) => i + 1).filter((n) => numsOf(pageTexts[n - 1]).size === 0 && numsOf(canonBody(n) || '').size > 0);
     if (!needScan && doubts.length) {
       const r = await transcribePages('claude', pdfAbs, doubts);
       if (!r.ok) return retry(r, 'Claude no pudo transcribir las páginas dudosas');
       backup();
-      for (const [n, body] of r.pages) setPage(n, body, 'claude-api');
+      for (const [n, body] of r.pages) {
+        const cSet = numsOf(body); const oldBody = canonBody(n);
+        if (pageAccepted(cSet, numsOf(pageTexts[n - 1] || ''))) { setPage(n, body, 'claude-api'); resolucion[n] = 'texto-del-pdf'; }
+        else if (oldBody !== undefined && sameSet(cSet, numsOf(oldBody))) { resolucion[n] = 'acuerdo-de-dos-lecturas'; } // el .md viejo y Claude leyeron igual y el texto del PDF difiere: es el texto del PDF
+        else { setPage(n, body, 'claude-api'); toVoices.push(n); }
+      }
       save();
     }
-  }
-  if (!needScan) {
-    const vn = verifyNumbers(pdfAbs, mdAbs);
-    method = `numeros-vs-texto-pdf + claude-api en ${Object.keys(prov.paginas).length} pág.`;
-    if (vn.verdict === 'ok') return fin('listo', `${method}; ${vn.mdNumbers} números, ${vn.unmatchedCount} sin respaldo, cobertura ${(vn.coverage * 100).toFixed(0)}%`, { method });
-    // Sigue mal aunque Claude ya releyó las páginas dudosas: el que falla es el texto del PDF (parcialmente roto),
-    // no la transcripción. Se pasa a comparar voces entre sí, como en un escaneo (BUG REAL del piloto: Cuiaba).
-    log(`sigue con problemas contra el texto del PDF (${vn.reason.slice(0, 80)}): paso a comparar voces`);
-    needScan = true;
-    method += ' -> ';
+    if (!needScan) {
+      method = `numeros-por-pagina vs texto del PDF + claude-api en ${Object.keys(prov.paginas).length} pág.`;
+      if (!toVoices.length) return fin('listo', `${method}; ${withNumbers} págs. con cifras verificadas contra el texto del PDF`, { method });
+      voicePages = [...new Set(toVoices)].sort((x, y) => x - y);
+      log(`${voicePages.length} página(s) sin texto verificable en el PDF (o en las que Claude discrepa de todo): comparo voces solo en esas`);
+      needScan = true;
+      method += ' -> ';
+    }
   }
 
   // 2) Escaneo (o texto ilegible): hace falta una segunda voz independiente.
   let voice; let voiceEngine = 'gemini';
-  const big = nPages > BIG_DOC_PAGES;
+  const wholeList = Array.from({ length: nPages }, (_, i) => i + 1);
+  const list = voicePages || wholeList;
+  const big = list.length > BIG_DOC_PAGES || Boolean(voicePages);
   let g;
   if (big) {
-    log(`documento largo (${nPages} págs.): Gemini por tramos de ${BIG_CHUNK}`);
-    const gv = await voiceByChunks('gemini', pdfAbs, nPages, log);
+    log(`${voicePages ? 'páginas elegidas' : 'documento largo'} (${list.length} págs.): Gemini por tramos de ${BIG_CHUNK}`);
+    const gv = await voiceByChunks('gemini', pdfAbs, list, log);
     g = gv.ok ? { ok: true, voice: gv.voice } : gv;
   } else {
     g = await callEngine('gemini', pdfAbs, '.gemini-check', { extraArgs: ['--timeout', '300'] });
@@ -474,7 +492,7 @@ async function resolveDoc(e0) {
   } else if (g.kind === 'recitation' || g.kind === 'otro') {
     log(`Gemini rechazó el documento (${g.kind}): Claude lo transcribe entero como segunda voz`);
     if (big) {
-      const cv = await voiceByChunks('claude', pdfAbs, nPages, log);
+      const cv = await voiceByChunks('claude', pdfAbs, list, log);
       if (!cv.ok) return retry(cv, 'Gemini rechazó y Claude no pudo');
       voice = cv.voice;
     } else {
@@ -486,9 +504,9 @@ async function resolveDoc(e0) {
   } else {
     return fin('reintentar', g.text);
   }
-  if (voice.pages.length < Math.floor(nPages * 0.5)) return fin('revisar', `la segunda voz (${voiceEngine}) trae ${voice.pages.length} marcas de página para ${nPages} páginas`);
-  const doubts = voiceDoubts(nPages, canon, voice);
-  log(`segunda voz ${voiceEngine}: ${doubts.length} de ${nPages} páginas difieren`);
+  if (voice.pages.length < Math.floor(list.length * 0.5)) return fin('revisar', `la segunda voz (${voiceEngine}) trae ${voice.pages.length} marcas de página para ${list.length} páginas`);
+  const doubts = voiceDoubts(list, canon, voice);
+  log(`segunda voz ${voiceEngine}: ${doubts.length} de ${list.length} páginas difieren`);
   const voiceBody = new Map(voice.pages.map((p) => [p.n, p.body]));
   if (doubts.length) {
     backup();
