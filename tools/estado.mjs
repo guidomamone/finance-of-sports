@@ -62,6 +62,35 @@ const ETAPAS = [
     ['cargado', 'Ejercicio cargado', 'Nada.', '—', 0],
   ]],
 ];
+// QUÉ TOOLS HACEN CADA ETAPA (pedido de Guido, 2026-09-30: "agregame para el paso 2, 3 y 4 las tools que se usan"). En orden de uso; la
+// primera es la que orquesta. El detalle de cada una está en su cabecera y en Admin/MAPA-DE-TOOLS.md. Si una tool entra o sale de una
+// etapa, actualizar esta lista (no se deduce sola del código).
+const TOOLS = {
+  '2': [
+    ['resolver-inventario.mjs', 'orquesta las etapas 2 y 3 (la llama pipeline.mjs)'],
+    ['reparar-pdf.mjs', 'PDF dañado o con imágenes gigantes, antes de mandarlo'],
+    ['mistral-ocr-transcribe.mjs', 'transcribe el documento entero a .md (API Mistral)'],
+    ['check-transcripcion-fidelidad.js', 'bloques resumidos o páginas faltantes (gratis)'],
+  ],
+  '3': [
+    ['paginas-con-numeros.mjs', 'qué páginas tienen cifras (la prosa no se valida)'],
+    ['verify-numbers.mjs', 'números del .md contra el texto del PDF (gratis)'],
+    ['chequeos-gratis.mjs', 'sumas, año anterior cargado y balance, por página (gratis)'],
+    ['gemini-transcribe.mjs', 'segunda voz en las páginas dudosas de escaneos (API Gemini)'],
+    ['claude-api-transcribe.mjs', 'desempate en las páginas dudosas (API Claude)'],
+    ['revisar-reservas.mjs', 'decide con sumas las páginas "con reserva"'],
+    ['inventario-transcripciones.mjs', 'el registro de estados (Admin/transcripciones-estado.jsonl)'],
+  ],
+  '4': [
+    ['pipeline.mjs', 'etapa 3 del pipeline: arma <md>.rubros.json'],
+    ['prepare-onboarding.mjs', 'tablas y sumas del .md -> <md>.briefing.json'],
+    ['extract-table-rows.mjs', 'saca las tablas y marca las relevantes'],
+    ['sum-check.mjs', 'chequea sumas contra los totales impresos'],
+    ['proponer-carga.mjs', 'seleccionarFilas(): las filas que va a cargar la etapa 6 (Versión 321)'],
+    ['filas-rubro.mjs', 'descarta lo que no es rubro y deduce el lado (lista vieja)'],
+    ['vocabulario.mjs', 'palabras contables en 29 idiomas'],
+  ],
+};
 const clave = (e) => {
   if (e.cargado) return 'cargado';
   if (e.jev === 'sin-rubros') return 'sin-rubros';
@@ -78,6 +107,8 @@ const conocidas = new Set(ETAPAS.flatMap(([, f]) => f.map((x) => x[0])));
 const imprimirEtapa = ([etapa, filas]) => {
   const sub = filas.reduce((a, x) => a + (cuenta[x[0]] || 0), 0);
   console.log(`\n${etapa}  (${sub} PDFs)`);
+  const tools = TOOLS[etapa[0]];
+  if (tools) { const wt = Math.max(...tools.map((t) => t[0].length)); console.log(`  tools: ${tools.map(([n, q], i) => `${i ? '         ' : ''}${n.padEnd(wt)}  ${q}`).join('\n')}`); }
   for (const [k, nombre, falta, cmd, usd] of filas) {
     const n = cuenta[k] || 0;
     const costo = n && usd ? `~US$ ${Math.round(n * usd)}` : n && !usd && !['cargado', 'sin-rubros', 'cat-ok'].includes(k) ? 'gratis' : '';
