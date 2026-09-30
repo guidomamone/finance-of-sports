@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/proponer-carga.mjs — etapa 5 del pipeline, versión 0: MIDE si un script puede reconstruir un ejercicio a partir del
+// tools/proponer-carga.mjs — etapa 5 del pipeline, versión 1: MIDE si un script puede reconstruir un ejercicio a partir del
 // .md, antes de dejarle escribir nada (to-do 108, decisión de Guido 2026-09-30). No escribe ningún archivo del sitio.
 //
 //   --backtest   toma los ejercicios YA CARGADOS que tienen su .md, arma "qué habría propuesto el script" usando SOLO lo que
@@ -12,13 +12,15 @@
 //   1. Corre tools/prepare-onboarding.mjs sobre el .md (tablas, formato numérico, chequeo de sumas).
 //   2. Elige las tablas de estado de resultados (o de recursos y gastos) y, en ellas, la columna del ejercicio.
 //   3. Detecta la escala (unidades / miles / millones) por el texto de la página y pasa todo a MILLONES de moneda nativa.
-//   4. Cada rubro se busca, por texto exacto, en los OTROS años del mismo club: si está, hereda lado y categoría (precedente);
-//      si no, queda "necesita criterio" (en una versión siguiente lo decide Jev y, si duda, Claude por API).
+//   4. VERSIÓN 1: cada fila la categoriza Jev (con el lado de la tabla y 8 ejemplos parecidos de otros ejercicios; nunca ejemplos
+//      del ejercicio que se está reconstruyendo). Si la confianza es < 0,90 queda "necesita criterio".
+//      Escala: por plausibilidad contra los ingresos que ese club ya tiene cargados en otros años (no por palabras).
 //   5. Detecta en el documento la fila de total de ingresos y la del resultado del ejercicio.
-//   6. Compara contra producción: ¿el total de ingresos detectado es el oficial? ¿los rubros propuestos suman ese total?
+//   6. Compara contra producción POR CATEGORÍA (los rubros de producción son agrupaciones curadas a mano, no filas literales, así que
+//      comparar por texto no sirve): qué porcentaje del dinero de producción quedó en la categoría correcta, en ingresos y en gastos.
 //
 // USO:
-//   node tools/proponer-carga.mjs --backtest [--limit 40] [--club id] [--concurrencia 4]
+//   node tools/proponer-carga.mjs --backtest [--limit 40] [--club id] [--concurrencia 4] [--mistral-fresco]
 //   node tools/proponer-carga.mjs --pdf "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2021.pdf"
 // Deja el detalle en Admin/test-proponer-carga.jsonl y el resumen en Admin/test-proponer-carga.md.
 // ============================================================================
@@ -34,6 +36,7 @@ const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] 
 const BACKTEST = args.includes('--backtest');
 const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : 0;
 const clubOnly = flagVal('--club');
+const FRESH = args.includes('--mistral-fresco'); // usa una transcripción NUEVA de Mistral (con tablas) en vez del .md guardado: lo que produciría el pipeline hoy
 const concurrency = Number(flagVal('--concurrencia') || 4);
 if (!BACKTEST && !flagVal('--pdf')) { console.error('Uso: node tools/proponer-carga.mjs --backtest [--limit N]   o   --pdf <ruta> [--club id]'); process.exit(1); }
 
@@ -99,45 +102,102 @@ function yearColumn(table, year) {
   return numericCols.length ? numericCols[0] : null;
 }
 
-// ---------------------------------------------------------------- precedente (solo de OTROS años)
-function buildPrecedent(club, excludeYear) {
-  const m = { revenue: new Map(), expense: new Map() };
-  for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) {
-    for (const [yr, lines] of Object.entries(club[key] || {})) {
-      if (Number(yr) === Number(excludeYear)) continue;
-      for (const l of lines || []) { const k = norm(l.rawLabel); if (k && !m[side].has(k)) m[side].set(k, l.normalizedCategory); }
-    }
+// ---------------------------------------------------------------- Jev (mismo pedido que tools/jev-categorizar.mjs)
+function loadCategories() {
+  const src = readFileSync(resolve(root, 'data', 'category-map.js'), 'utf8');
+  const block = (name) => { const a = src.indexOf(`const ${name} = [`); return src.slice(a, src.indexOf('];', a)); };
+  const labels = (name) => { const a = src.indexOf(`const ${name} = {`); const b = src.slice(a, src.indexOf('};', a)); return Object.fromEntries([...b.matchAll(/^\s*([a-z_]+):\s*'([^']*)'/gm)].map((m) => [m[1], m[2]])); };
+  const build = (arr, lab) => { const l = labels(lab); const o = {}; for (const m of block(arr).matchAll(/^\s*'([a-z_]+)',?\s*(?:\/\/\s*(.*))?$/gm)) { const c = (m[2] || '').replace(/\(Versión \d+[^)]*\)/g, '').replace(/\s+/g, ' ').trim().split(/(?<=[.!?])\s/)[0].slice(0, 220); o[m[1]] = [l[m[1]] || m[1], c].filter(Boolean).join(' — '); } return o; };
+  return { revenue: build('REVENUE_CATEGORIES', 'REVENUE_CATEGORY_LABELS'), expense: build('EXPENSE_CATEGORIES', 'EXPENSE_CATEGORY_LABELS') };
+}
+const CATS = loadCategories();
+const sideOfCat = (c) => (c in CATS.revenue ? 'revenue' : c in CATS.expense ? 'expense' : null);
+let jevKey = null;
+const readJevKey = () => (jevKey ??= readFileSync(resolve(root, 'Admin', 'jev', '.env'), 'utf8').split('\n').find((l) => l.startsWith('JEV_API_KEY=')).slice(12).trim());
+const words = (t) => new Set(norm(t).split(/[^a-z0-9]+/).filter((w) => w.length > 2));
+
+async function askJev({ label, club, side, examples }) {
+  const criteria = side ? Object.fromEntries(Object.entries(side === 'revenue' ? CATS.revenue : CATS.expense).map(([k, v]) => [k, `${side === 'revenue' ? 'INGRESO' : 'GASTO'}: ${v}`])) : { ...Object.fromEntries(Object.entries(CATS.revenue).map(([k, v]) => [k, `INGRESO: ${v}`])), ...Object.fromEntries(Object.entries(CATS.expense).map(([k, v]) => [k, `GASTO: ${v}`])) };
+  const ex = examples?.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.cat}`).join('\n')}\n` : '';
+  const state = [`Rubro de un estado financiero de un club de fútbol (${club}).`, ex, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
+  const body = { state, model: 'jev-latest', questions: { categoria: { type: 'choice', instructions: 'Elegí la categoría de la lista a la que corresponde este rubro. Si no encaja en ninguna, elegí la más genérica (other_income / other_expenses).', criteria } } };
+  for (let a = 0; a < 4; a++) {
+    try {
+      const r = await fetch('https://api.typesafe.ai/v1/systemone', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${readJevKey()}` }, body: JSON.stringify(body) });
+      if (r.ok) { const j = (await r.json()).answers?.categoria; return j ? { choice: j.choice, confidence: j.confidence } : { error: 'sin respuesta' }; }
+      if (r.status === 429 || r.status >= 500) { await new Promise((z) => setTimeout(z, 2500 * (a + 1))); continue; }
+      return { error: `HTTP ${r.status}` };
+    } catch { await new Promise((z) => setTimeout(z, 2000 * (a + 1))); }
   }
-  return m;
+  return { error: 'reintentos agotados' };
+}
+
+// Banco de ejemplos: todos los rubros ya categorizados, SIN los del ejercicio que se está reconstruyendo (nada de filtrar la respuesta).
+function buildBank(generic, excludeClub, excludeYear) {
+  const bank = [];
+  for (const [club, d] of Object.entries(generic)) for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const [yr, lines] of Object.entries(d[key] || {})) {
+    if (club === excludeClub && Number(yr) === Number(excludeYear)) continue;
+    for (const l of lines || []) if (l.rawLabel && l.normalizedCategory) bank.push({ label: l.rawLabel.trim(), club, side, cat: l.normalizedCategory, w: words(l.rawLabel) });
+  }
+  return bank;
+}
+function retrieve(bank, label, side, k = 8) {
+  const qw = words(label); const sc = [];
+  for (const b of bank) { if (side && b.side !== side) continue; let i = 0; for (const w of qw) if (b.w.has(w)) i++; if (i) sc.push([i / (qw.size + b.w.size - i), b]); }
+  sc.sort((a, b) => b[0] - a[0]); const seen = new Set(); const out = [];
+  for (const [, b] of sc) { const key = `${norm(b.label)}|${b.cat}`; if (seen.has(key)) continue; seen.add(key); out.push(b); if (out.length >= k) break; }
+  return out;
+}
+
+// Lado de una tabla por las palabras de su título y columnas (mismas familias que tools/pipeline.mjs).
+const SIDE_REV = /доход|выручк|прибыл|доходи|vynos|trzb|opbrengsten|omzet|収益|収入|수익|매출|收入|ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
+const SIDE_EXP = /расход|затрат|витрат|убыт|naklad|kosten|費用|支出|비용|费用|gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
+function sideOfTable(t) { const h = norm(`${t.section || ''} ${(t.columns || []).join(' ')}`); const r = SIDE_REV.test(h); const x = SIDE_EXP.test(h); return r && !x ? 'revenue' : x && !r ? 'expense' : null; }
+
+// Escala por PLAUSIBILIDAD: la que deja el mayor importe del estado cerca de los ingresos que el club ya tiene cargados en otros años.
+function pickScale(maxAbs, refM, textScale) {
+  if (!refM) return textScale;
+  const cands = [{ unit: 'unidades', mult: 1e-6 }, { unit: 'miles', mult: 1e-3 }, { unit: 'millones', mult: 1 }];
+  const best = cands.map((c) => ({ c, d: Math.abs(Math.log10(Math.max(maxAbs * c.mult, 1e-9) / refM)) })).sort((a, b) => a.d - b.d)[0];
+  return best.d <= 0.8 ? best.c : textScale; // dentro de un factor ~6; si nada se acerca, se cae al texto
 }
 
 // ---------------------------------------------------------------- la propuesta
-function propose({ briefing, mdText, clubData, year }) {
-  const tables = (briefing.tables || []).filter((t) => t.likelyRelevant && STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`)));
+async function propose({ briefing, mdText, clubData, generic, club, year }) {
+  const tables = (briefing.tables || []).filter((t) => t.likelyRelevant && (STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`)) || sideOfTable(t)));
   if (!tables.length) return { ok: false, motivo: 'sin estado de resultados' };
-  const prec = buildPrecedent(clubData, year);
-  const lines = []; let docRevenueTotal = null; let docResult = null; const scales = new Set();
+  const others = Object.entries(clubData.fiscalYearMeta || {}).filter(([y]) => Number(y) !== Number(year)).map(([, m]) => Math.abs(m.officialTotalRevenue || 0)).filter(Boolean).sort((a, b) => a - b);
+  const refM = others.length ? others[Math.floor(others.length / 2)] : null;
+  const raw = []; let docRevenueTotal = null; let docResult = null;
+  const seenLabels = new Set();
   for (const t of tables) {
-    const j = yearColumn(t, year);
-    if (j === null) continue;
-    const sc = detectScale(`${t.section} ${(t.columns || []).join(' ')} ${pageText(mdText, t.page).slice(0, 2500)}`);
-    scales.add(sc.unit);
+    const j = yearColumn(t, year); if (j === null) continue;
+    const textScale = detectScale(`${t.section} ${(t.columns || []).join(' ')} ${pageText(mdText, t.page).slice(0, 2500)}`);
+    const vals = t.rows.map((r) => parseNumber(r.values[j] ?? '')).filter((v) => v !== null);
+    const sc = pickScale(Math.max(0, ...vals.map(Math.abs)), refM, textScale);
+    const tside = sideOfTable(t);
     for (const r of t.rows) {
       const label = String(r.rawLabel || '').trim(); const v = parseNumber(r.values[j] ?? '');
       if (!label || v === null) continue;
       const nl = norm(label); const M = v * sc.mult;
-      if (TOTAL_RE.test(nl) || REV_TOTAL_RE.test(nl)) { if (REV_TOTAL_RE.test(nl) && docRevenueTotal === null) docRevenueTotal = M; if (TOTAL_RE.test(nl)) continue; }
+      if (REV_TOTAL_RE.test(nl) && docRevenueTotal === null) docRevenueTotal = M;
+      if (TOTAL_RE.test(nl)) continue;
       if (RESULT_RE.test(nl)) { docResult = M; continue; }
-      const r1 = prec.revenue.get(nl); const r2 = prec.expense.get(nl);
-      let side = null; let cat = null;
-      if (r1 && !r2) { side = 'revenue'; cat = r1; } else if (r2 && !r1) { side = 'expense'; cat = r2; } else if (r1 && r2) { side = 'ambiguo'; }
-      lines.push({ label, page: t.page, native: M, side, cat, precedent: Boolean(cat) });
+      const key = `${nl}|${Math.round(M * 1e6)}`; if (seenLabels.has(key)) continue; seenLabels.add(key);
+      raw.push({ label, page: t.page, native: M, tside });
     }
   }
-  if (!lines.length) return { ok: false, motivo: 'no se pudo ubicar la columna del ejercicio' };
-  const withCat = lines.filter((l) => l.side === 'revenue' || l.side === 'expense');
-  const revenueSum = withCat.filter((l) => l.side === 'revenue').reduce((a, l) => a + Math.abs(l.native), 0);
-  return { ok: true, lines, revenueSum, docRevenueTotal, docResult, scales: [...scales], precedentShare: withCat.length / lines.length, needCriterion: lines.length - withCat.length };
+  if (!raw.length) return { ok: false, motivo: 'no se pudo ubicar la columna del ejercicio' };
+  const bank = buildBank(generic, club, year);
+  const lines = [];
+  for (const r of raw) {
+    const j = await askJev({ label: r.label, club, side: r.tside, examples: retrieve(bank, r.label, r.tside) });
+    lines.push({ ...r, cat: j.choice || null, conf: j.confidence ?? 0, side: j.choice ? sideOfCat(j.choice) : null, error: j.error });
+  }
+  const sure = lines.filter((l) => l.cat && l.conf >= 0.9);
+  const byCat = { revenue: {}, expense: {} };
+  for (const l of sure) byCat[l.side][l.cat] = (byCat[l.side][l.cat] || 0) + Math.abs(l.native);
+  return { ok: true, lines, byCat, docRevenueTotal, docResult, refM, nRows: lines.length, nSure: sure.length, needCriterion: lines.length - sure.length };
 }
 
 // ---------------------------------------------------------------- ejecución de herramientas
@@ -180,19 +240,25 @@ async function backtest() {
     const prod = j.cd.fiscalYearMeta?.[j.year] || {};
     let row = { pdf: j.e.pdf, club: j.club, year: j.year };
     try {
-      const b = await briefingFor(j.club, j.year, j.e.md);
-      const p = propose({ briefing: b, mdText: readFileSync(resolve(root, j.e.md), 'utf8'), clubData: j.cd, year: j.year });
-      row = { ...row, ...p, lines: undefined, nLines: p.lines?.length ?? 0 };
+      let mdUsed = j.e.md;
+      if (FRESH) {
+        mdUsed = j.e.pdf.replace(/\.pdf$/i, '.mistral-redo.md');
+        if (!existsSync(resolve(root, mdUsed))) await run('tools/mistral-ocr-transcribe.mjs', [resolve(root, j.e.pdf), '--out-suffix', '.mistral-redo']);
+        if (!existsSync(resolve(root, mdUsed))) { rows.push({ ...row, motivo: 'Mistral no pudo transcribir' }); return; }
+      }
+      const b = await briefingFor(j.club, j.year, mdUsed);
+      const p = await propose({ briefing: b, mdText: readFileSync(resolve(root, mdUsed), 'utf8'), clubData: j.cd, generic: site.generic, club: j.club, year: j.year });
+      row = { ...row, ...p, lines: undefined };
       if (p.ok) {
-        const off = prod.officialTotalRevenue;
-        row.prodRevenue = off ?? null;
-        row.docTotalEsOficial = p.docRevenueTotal !== null && off != null ? Math.abs(Math.abs(p.docRevenueTotal) - Math.abs(off)) <= Math.max(0.01, Math.abs(off) * 0.0005) : null;
-        row.rubrosSumanElTotal = p.docRevenueTotal !== null && p.revenueSum > 0 ? Math.abs(p.revenueSum - Math.abs(p.docRevenueTotal)) <= Math.max(0.01, Math.abs(p.docRevenueTotal) * 0.0005) : null;
-        row.resultadoEsOficial = p.docResult !== null && prod.officialPAT != null ? Math.abs(Math.abs(p.docResult) - Math.abs(prod.officialPAT)) <= Math.max(0.01, Math.abs(prod.officialPAT) * 0.0005) : null;
-        row.rubrosPropiosProduccion = new Set([...(j.cd.revenueLinesByYear[j.year] || []), ...(j.cd.expenseLinesByYear[j.year] || [])].map((l) => norm(l.rawLabel)));
-        const mine = new Set(p.lines.map((l) => norm(l.label)));
-        row.coberturaDeRubros = [...row.rubrosPropiosProduccion].filter((x) => mine.has(x)).length / Math.max(1, row.rubrosPropiosProduccion.size);
-        row.rubrosPropiosProduccion = undefined;
+        // producción por categoría (importes absolutos, en millones de moneda nativa)
+        const prodCat = { revenue: {}, expense: {} };
+        for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const l of j.cd[key][j.year] || []) prodCat[side][l.normalizedCategory] = (prodCat[side][l.normalizedCategory] || 0) + Math.abs(l.amountNative);
+        const overlap = (side) => { const P = prodCat[side]; const Q = p.byCat[side]; const tot = Object.values(P).reduce((a, x) => a + x, 0); if (!tot) return null; let m = 0; for (const [c, v] of Object.entries(P)) m += Math.min(v, Q[c] || 0); return m / tot; };
+        row.prodRevenue = prod.officialTotalRevenue ?? null;
+        row.dineroIngresosBienUbicado = overlap('revenue'); row.dineroGastosBienUbicado = overlap('expense');
+        row.docTotalEsOficial = p.docRevenueTotal !== null && row.prodRevenue != null ? Math.abs(Math.abs(p.docRevenueTotal) - Math.abs(row.prodRevenue)) <= Math.max(0.01, Math.abs(row.prodRevenue) * 0.005) : null;
+        row.resultadoEsOficial = p.docResult !== null && prod.officialPAT != null ? Math.abs(Math.abs(p.docResult) - Math.abs(prod.officialPAT)) <= Math.max(0.01, Math.abs(prod.officialPAT) * 0.005) : null;
+        row.byCat = undefined;
       }
     } catch (err) { row.error = String(err.message).slice(0, 120); }
     rows.push(row);
@@ -209,22 +275,22 @@ function report(rows) {
   writeFileSync(resolve(root, 'Admin', 'test-proponer-carga.jsonl'), rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
   const ok = rows.filter((r) => r.ok);
   const cnt = (f) => ok.filter(f).length;
-  const L = [];
-  L.push('# Test de la etapa 5 (carga por script): reconstrucción de ejercicios ya cargados', '');
-  L.push(`Generado por \`tools/proponer-carga.mjs --backtest\` el ${new Date().toISOString().slice(0, 10)}. ${rows.length} documentos de ejercicios cargados; el precedente sale solo de los OTROS años del mismo club.`, '');
-  L.push('| Medida | Documentos | % |', '|---|---|---|');
+  const avg = (k) => { const x = ok.filter((r) => r[k] != null); return x.length ? (100 * x.reduce((a, r) => a + r[k], 0) / x.length).toFixed(0) + '%' : '-'; };
   const pct = (n, d) => (d ? `${(100 * n / d).toFixed(0)}%` : '-');
-  L.push(`| Se pudo armar una propuesta (hay estado de resultados y columna del año) | ${ok.length} | ${pct(ok.length, rows.length)} |`);
-  L.push(`| El total de ingresos que detectó en el documento ES el oficial de producción | ${cnt((r) => r.docTotalEsOficial)} | ${pct(cnt((r) => r.docTotalEsOficial), ok.length)} |`);
-  L.push(`| Los rubros que propone (con precedente) suman ese total | ${cnt((r) => r.rubrosSumanElTotal)} | ${pct(cnt((r) => r.rubrosSumanElTotal), ok.length)} |`);
-  L.push(`| El resultado del ejercicio que detectó ES el oficial | ${cnt((r) => r.resultadoEsOficial)} | ${pct(cnt((r) => r.resultadoEsOficial), ok.length)} |`);
-  L.push(`| Todos los rubros con precedente exacto (nada que decidir) | ${cnt((r) => r.needCriterion === 0)} | ${pct(cnt((r) => r.needCriterion === 0), ok.length)} |`);
-  const cov = ok.filter((r) => r.coberturaDeRubros !== undefined);
-  L.push(`| Cobertura media de los rubros de producción por los que detectó | ${(100 * cov.reduce((a, r) => a + r.coberturaDeRubros, 0) / Math.max(1, cov.length)).toFixed(0)}% | |`, '');
+  const L = [];
+  L.push('# Test de la etapa 5 (carga por script), versión 1: reconstrucción de ejercicios ya cargados', '');
+  L.push(`Generado por \`tools/proponer-carga.mjs --backtest\` el ${new Date().toISOString().slice(0, 10)}. ${rows.length} documentos de ejercicios cargados. Jev categoriza cada fila con ejemplos que NO incluyen el ejercicio reconstruido; solo cuentan las filas con confianza ≥ 0,90.`, '');
+  L.push('| Medida | Resultado |', '|---|---|');
+  L.push(`| Se pudo armar una propuesta | ${ok.length} de ${rows.length} (${pct(ok.length, rows.length)}) |`);
+  L.push(`| El total de ingresos detectado en el documento ES el oficial de producción (±0,5%) | ${cnt((r) => r.docTotalEsOficial)} de ${ok.length} (${pct(cnt((r) => r.docTotalEsOficial), ok.length)}) |`);
+  L.push(`| El resultado del ejercicio detectado ES el oficial (±0,5%) | ${cnt((r) => r.resultadoEsOficial)} de ${ok.length} (${pct(cnt((r) => r.resultadoEsOficial), ok.length)}) |`);
+  L.push(`| Dinero de INGRESOS de producción que quedó en la categoría correcta (media) | ${avg('dineroIngresosBienUbicado')} |`);
+  L.push(`| Dinero de GASTOS de producción que quedó en la categoría correcta (media) | ${avg('dineroGastosBienUbicado')} |`);
+  L.push(`| Filas con Jev ≥ 0,90 sobre el total de filas (media) | ${(100 * ok.reduce((a, r) => a + r.nSure / Math.max(1, r.nRows), 0) / Math.max(1, ok.length)).toFixed(0)}% |`, '');
   const mot = {}; for (const r of rows.filter((x) => !x.ok)) { const k = r.motivo || r.error || '?'; mot[k] = (mot[k] || 0) + 1; }
-  L.push('Sin propuesta, por motivo: ' + Object.entries(mot).map(([k, v]) => `${k}: ${v}`).join(' | '), '');
+  L.push('Sin propuesta, por motivo: ' + (Object.entries(mot).map(([k, v]) => `${k}: ${v}`).join(' | ') || '-'), '');
   writeFileSync(resolve(root, 'Admin', 'test-proponer-carga.md'), L.join('\n') + '\n');
-  console.log('\n' + L.slice(4, 14).join('\n'));
+  console.log('\n' + L.slice(4, 13).join('\n'));
 }
 
 if (BACKTEST) await backtest();
@@ -234,6 +300,6 @@ else {
   const md = pdf.replace(/\.pdf$/i, '.md'); const cd = site.generic[q.clubId];
   if (!cd) { console.error(`El club ${q.clubId} no tiene data/<club>-data.js: la carga automática solo cubre un año nuevo de un club existente.`); process.exit(2); }
   const b = await briefingFor(q.clubId, q.year, md);
-  const p = propose({ briefing: b, mdText: readFileSync(resolve(root, md), 'utf8'), clubData: cd, year: q.year });
+  const p = await propose({ briefing: b, mdText: readFileSync(resolve(root, md), 'utf8'), clubData: cd, generic: site.generic, club: q.clubId, year: q.year });
   console.log(JSON.stringify({ club: q.clubId, year: q.year, ...p, lines: p.lines?.slice(0, 40) }, null, 1));
 }

@@ -73,6 +73,10 @@ perdieron sino que se descartaron:
        categoría por precedente exacto, o por Jev con confianza >= 0,90 (aceptado por Guido); el tipo de cambio sale del documento o de una
        cotización conocida; y después de escribir pasan los generadores, `node tools/audit.js` (0 P0/P1) y `auditAll()` (si algo falla, se revierte).
        Lo dudoso pasa a Claude por API (dólares, no tokens de sesión) y, si sigue dudoso, a `Admin/dudas-por-club.md`. Commit local; el push es de Guido.
+       **Medición 2026-09-30 (`node tools/proponer-carga.mjs --backtest --mistral-fresco`, Admin/test-proponer-carga.md)**: sobre 40 ejercicios ya cargados, con un
+       `.md` de Mistral con tablas: arma propuesta 88%; total de ingresos oficial detectado 14%; resultado del ejercicio 17%; dinero bien ubicado por categoría (solo Jev >= 0,90)
+       67% ingresos / 60% gastos. La carga sola todavía NO es viable. Lo que sigue: detectar los totales impresos por el chequeo de sumas de cada tabla (no por
+       palabras de la etiqueta), elegir la tabla y la columna del ejercicio con más cuidado, y medir de nuevo; recién con el 90% de totales detectados vale la pena dejarla escribir.
        **Se acepta subir un club-año con solo el total de ingresos** (es mejor que nada), aunque no tenga desglose. Los documentos `sin-rubros`
        tienen el `.md` validado y siguen disponibles como fuente; falta detectar cuáles traen un total usable.
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.

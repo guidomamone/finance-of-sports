@@ -126,6 +126,18 @@ que dice `ESTADO.md` era verdad ese día.
     difícil; (3) la detección de escala por palabras da falsos positivos (Volta Redonda: dividió por 1.000 un documento en unidades). Siguiente versión:
     escala por plausibilidad contra la historia del club, tablas elegidas por chequeo de sumas, rubros categorizados con Jev y comparación a nivel de
     total por categoría (no por texto de rubro).
+  - **Segundo lote de 50** (24 `listo-para-jev`, 25 `sin-rubros`, 1 `no-es-pdf`; $11,58). Casos nuevos y arreglos: (1) **el 82% de los `.md` viejos (778 de 954) no
+    tiene NINGUNA tabla** (0 líneas con `|`; etiquetas e importes en bloques separados, típico de Bélgica y Argentina): sus números validan contra el PDF pero no
+    sirven para rubros, sumas ni categorías. El resolver ahora los rehace con Mistral (~$0,004/pág.) si el nuevo tiene tablas (el viejo queda en `.previo-*.md`), y el
+    pipeline marca `sin-tablas` para que la próxima corrida lo haga (una sola vez, `formatoIntentado`). (2) Documentos en ruso/ucraniano, checo, neerlandés, japonés,
+    coreano y chino no reconocían sus tablas de resultados: ampliadas las palabras clave (`extract-table-rows.mjs`) y la detección de estado de resultados y de lado
+    (`pipeline.mjs`). (3) Unión Magdalena figuraba `sin-md` en vez de `no-es-pdf` y consumía un lugar en cada lote. (4) **Jev es la etapa 5 del pipeline**
+    (`--sin-jev` la saltea). Nuevo `Admin/MAPA-DE-TOOLS.md`: qué es cada archivo de `tools/`.
+  - **`proponer-carga.mjs` versión 1** (escala por plausibilidad contra la historia del club, filas categorizadas con Jev con lado y ejemplos que EXCLUYEN el ejercicio
+    reconstruido, comparación por categoría; `--mistral-fresco` usa una transcripción nueva con tablas). Backtest de 40 ejercicios cargados: con el `.md` guardado (casi sin
+    tablas) 75% arma propuesta, dinero bien ubicado 45% ingresos / 26% gastos; con Mistral fresco 88% arma propuesta, el total de ingresos oficial se detecta en 14%, el
+    resultado en 17%, y el dinero bien ubicado (solo filas con Jev >= 0,90) es 67% ingresos / 60% gastos. Conclusión: la carga 100% automática todavía no es viable; lo
+    que falta es sobre todo detectar de forma robusta los totales impresos (son la puerta de aceptación) y no la categorización.
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",
