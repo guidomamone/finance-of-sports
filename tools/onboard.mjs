@@ -435,6 +435,15 @@ function processOne(pdfPath, { club, year, dryRun, verbose = true, stage = 'full
 
 function main() {
   const args = process.argv.slice(2);
+  // `--quien <pdf>`: solo dice a qué club y ejercicio corresponde el PDF (JSON en una línea), incluso si ya está cargado. Lo usan
+  // tools/proponer-carga.mjs y otras herramientas que necesitan la misma resolución sin repetir esta lógica.
+  const quienIdx = args.indexOf('--quien');
+  if (quienIdx >= 0) {
+    const pdf = args[quienIdx + 1];
+    const clubIdx = args.indexOf('--club');
+    console.log(JSON.stringify(resolveClubAndYearQuiet(resolve(projectRoot, pdf), clubIdx >= 0 ? args[clubIdx + 1] : null, null)));
+    process.exit(0);
+  }
   const dryRun = args.includes('--dry-run');
   // Control de etapa (pedido de Guido, 2026-09-29: poder correr el proceso en partes para probar
   // algo puntual, no siempre de punta a punta). Sin ninguno de los 3 flags, corre las 4 etapas

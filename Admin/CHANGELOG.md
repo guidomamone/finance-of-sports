@@ -119,6 +119,13 @@ que dice `ESTADO.md` era verdad ese día.
     si no, `sin-rubros` (272 de los 304 `sin-rubros` no tienen ninguno: actas, dictámenes, certificaciones, memorias narrativas). Nuevos flags:
     `--solo-preparar` (solo la preparación gratis, sin API), `--repreparar` (rehace documentos que ya la tenían). Corrida sin API sobre los 640
     documentos validados: 336 `listo-para-jev`, 304 `sin-rubros`.
+  - **`tools/proponer-carga.mjs` (etapa 5, versión 0, solo mide; no escribe nada del sitio)** + `onboard.mjs --quien <pdf>` (a qué club/año corresponde un PDF,
+    aunque ya esté cargado). Primer backtest sobre 40 ejercicios ya cargados: 0% de aciertos en total de ingresos y resultado; 53% arma alguna propuesta,
+    7% de cobertura de los rubros de producción. Es un resultado útil, no un bug: (1) los `rawLabel` de producción son agrupaciones curadas a mano, no
+    filas literales del documento, así que el precedente por texto exacto casi nunca coincide; (2) elegir la tabla correcta y la columna del año es la parte
+    difícil; (3) la detección de escala por palabras da falsos positivos (Volta Redonda: dividió por 1.000 un documento en unidades). Siguiente versión:
+    escala por plausibilidad contra la historia del club, tablas elegidas por chequeo de sumas, rubros categorizados con Jev y comparación a nivel de
+    total por categoría (no por texto de rubro).
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",
