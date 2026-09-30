@@ -36,6 +36,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync } from 'node:fs';
 import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
+import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
@@ -241,15 +242,23 @@ async function listos() {
   const prodLineas = [...banco.values()].map((x) => ({ club: x.club, side: x.side, label: x.label }));
   for (const l of lineasAprendidas({ produccion: prodLineas })) { const k = `${l.side}|${l.club}|${l.label.toLowerCase().replace(/\s+/g, ' ').trim()}`; if (!banco.has(k)) banco.set(k, { label: l.label, side: l.side, truth: l.cat, club: l.club, aprendido: true }); }
   const retrieve = K_EXAMPLES ? makeRetriever([...banco.values()].filter((x) => !x.conflict)) : null;
+  // Memoria de respuestas (Versión 321, tools/respuestas-cache.mjs): un rubro que Jev ya contestó para este club y lado no se vuelve a preguntar
+  // (ni se paga, ni cambia de respuesta entre corridas). `--sin-cache` pregunta todo de nuevo.
+  const cache = abrirCache('jev'); const SIN_CACHE = args.includes('--sin-cache'); let desdeCache = 0;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
     const results = [];
     await pool(uniqLabels, async (r) => {
+      const base = { label: r.label, lado: r.lado || null, page: r.page, section: r.section };
+      const guardada = SIN_CACHE ? null : cache.get(rj.club, r.lado, r.label);
+      if (guardada) { desdeCache++; results.push({ ...base, ...guardada, desdeCache: true }); return; }
       const useSide = Boolean(r.lado);
       // Con glosa en español (tools/glosar-rubros.mjs) Jev lee el rubro original + su traducción, y la búsqueda de ejemplos parecidos tiene palabras en común con el sitio.
       const q = { label: r.glosa && r.glosa !== r.label ? `${r.label} (= ${r.glosa})` : r.label, club: rj.club, side: r.lado || null, useSide };
-      results.push({ label: r.label, lado: r.lado || null, page: r.page, section: r.section, ...(await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null })) });
+      const resp = await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null });
+      if (!resp.error && resp.choice) cache.set(rj.club, r.lado, r.label, { choice: resp.choice, confidence: resp.confidence ?? null });
+      results.push({ ...base, ...resp });
     });
     if (stopAll) { console.log(`\nDETENIDO: ${stopAll}`); break; }
     writeFileSync(resolve(root, derivado(e.md, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), rubros: results }, null, 1));
@@ -257,7 +266,7 @@ async function listos() {
     total += results.length;
     console.log(`  ${e.pdf.split('/').slice(-2).join('/')}: ${results.length} rubros únicos, ${hi} con confianza ≥ 0,90, ${results.filter((r) => r.error).length} con error`);
   }
-  console.log(`\nListo: ${total} rubros categorizados por Jev. Resultados en <md>.jev.json (gitignoreado).`);
+  console.log(`\nListo: ${total} rubros categorizados por Jev (${desdeCache} sin preguntar: ya estaban en Generados/_cache/jev.jsonl). Resultados en <md>.jev.json (gitignoreado).`);
 }
 
 if (BACKTEST) await backtest(); else await listos();

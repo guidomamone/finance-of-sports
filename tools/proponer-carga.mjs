@@ -56,7 +56,7 @@ import vm from 'node:vm';
 import { filasSuma, ladosPorEstructura, ladoPorPalabras, esResultado, noEsRubro as noEsRubroFR } from './filas-rubro.mjs';
 // Vocabulario multi-idioma y normalización (Versión 316): tools/vocabulario.mjs, el mismo de pipeline.mjs / filas-rubro.mjs / extract-table-rows.mjs.
 import { derivado, ubicar } from './rutas.mjs';
-import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE, FLUJO_O_PATRIMONIO_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE } from './vocabulario.mjs';
+import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE, FLUJO_O_PATRIMONIO_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -424,6 +424,10 @@ function findExpansion(V, anchorUnit, pool, excluded, depth) {
           // conciliaciones) llega a casi cualquier número chico.
           const mixto = L.slice(s, e + 1).some((r) => r.v > 0) && L.slice(s, e + 1).some((r) => r.v < 0);
           if (mixto && !conTotal) continue;
+          // Una ventana con alguna fila de RESULTADO del ejercicio ("Resultaat boekjaar", "Resultaatbestemming", "Jahresüberschuss") no es el
+          // desglose de un ingreso ni de un gasto: es una conciliación o el destino del resultado que suma lo mismo por casualidad. Versión 321,
+          // PSV 2019-20: "Recettes competitie en KNVB beker" (1,27) se abría en la nota 32 de destino del resultado.
+          if (L.slice(s, e + 1).some((r) => esResultadoPuro(r.label))) continue;
           if (!natural && !(VENTANAS_LIBRES && depth === 1 && n >= 3)) continue;
           const score = (natural ? 1000 : 0) + n;
           if (!best || score > best.score) best = { u, rows: L.slice(s, e + 1).map((r) => ({ ...r, M: Mof(r), unit: unitOfRow(r) })), score, natural };
@@ -434,6 +438,18 @@ function findExpansion(V, anchorUnit, pool, excluded, depth) {
   return best;
 }
 const VENTA_RE = /disposal|sale\b|sales|venta|venda|transfer|cessao|verkauf|abgang|traspaso/;
+// RENGLONES QUE NO SE ABREN en una nota (Versión 321): el resultado del ejercicio (y cualquier "resultado" puro), el impuesto a las ganancias y
+// el resultado financiero. tools/cargar.mjs los manda ENTEROS al fiscalYearMeta (`tax`, `netInterest`) o no los carga, así que su desglose no
+// sirve para nada, y abrirlos trajo basura real que después se categorizaba pagando: en PSV 2019-20 "Totaalresultaat van de rechtspersoon" se
+// abría en tres filas de la pág. 2 ("Bedrijfsresultaat voor resultaat vergoedingssommen"...) y en "Resultaatbestemming" de la pág. 27, y
+// "Belastingen (22)" en la conciliación de la tasa impositiva ("Verwachte belasting op basis van nominaal tarief"); en Sunderland 2025 el
+// interés de la nota ("Bank interest") y el del estado ("Interest payable") se cargaban los dos (test-cargar.md, 4.4). Una venta de jugadores
+// que dice "resultado" ("Resultaat vergoedingssommen", "Profit on disposal of players") SÍ se abre: es un ingreso.
+// Resultado DEL EJERCICIO en sentido estricto (RESULTADO_EJERCICIO del vocabulario, más el "destino del resultado" neerlandés). No usa
+// esResultado() de filas-rubro.mjs, que es más amplia ("ganancia por...", "profit on..."): con ella, la regla de las ventanas de abajo rechazaba
+// la nota de "Esas Faaliyetlerden Diğer Gelirler" de Fenerbahçe porque "Bonservis satış karı" (ganancia por venta de pases) dice "karı".
+const esResultadoPuro = (label) => { const nl = norm(label); return !VENTA_RE.test(nl) && (RESULT_RE.test(nl) || /^\**\s*resultaatbestemming\b/.test(nl)); };
+const noSeAbre = (label) => { const nl = norm(label); if (VENTA_RE.test(nl)) return false; return esResultado(label) || RESULT_RE.test(nl) || IMPUESTO_GANANCIAS_RE.test(nl) || IMPUESTO_SOLO_RE.test(nl) || FINANCIERO_RE.test(nl); };
 let minV = 0; // lo fija selectAncla() para cada documento (materialidad)
 function expandRow(row, lado, pool, excluded, used, depth, trail) {
   const V = Math.abs(row.M || 0);
@@ -444,9 +460,11 @@ function expandRow(row, lado, pool, excluded, used, depth, trail) {
   const out = [];
   for (const c of hit.rows) {
     const cl = lado || ladoPorPalabras(c.label); // la hija hereda el lado del ancla (la estructura le gana a las palabras en el test de lado)
-    const sub = esResultado(c.label) ? null : expandRow(c, cl, pool, excluded, used, depth + 1, [...trail, hit.u.idx]);
-    if (sub) out.push(...sub);
-    else out.push({ label: c.label, page: hit.u.page, native: c.M, tside: cl, origen: `nota ${hit.u.idx} (ancla ${trail.join('>')})` });
+    const sub = esResultadoPuro(c.label) ? null : expandRow(c, cl, pool, excluded, used, depth + 1, [...trail, hit.u.idx]);
+    if (sub && !noSeAbre(c.label)) out.push(...sub);
+    // `section`: el título de la tabla de donde sale la fila. Desde la Versión 321 la etapa 3 del pipeline categoriza ESTAS filas (no las
+    // de su propia lista), y Jev / Claude usan la sección como contexto.
+    else out.push({ label: c.label, page: hit.u.page, section: hit.u.section || '', native: c.M, tside: cl, origen: `nota ${hit.u.idx} (ancla ${trail.join('>')})` });
   }
   return out;
 }
@@ -480,7 +498,11 @@ function selectAncla(pts, pool) {
   let nDuplicadas = 0;
   for (const t of estados) {
     if (used.has(t.idx)) continue; // ya se usó como detalle de otro estado
-    if (!t.primary && t.leaves.length >= 2 && t.leaves.filter((r) => r.M && vistos.has(kM(r.M))).length >= t.leaves.length / 2) { nDuplicadas++; continue; }
+    // Versión 321: vale también para un estado PRINCIPAL. Hay documentos con el mismo estado de resultados impreso dos veces (Sandefjord 2019,
+    // págs. 2 y 6, con etiquetas apenas distintas: "Salgsinntekt" / "Driftsinntekter") o el consolidado y el de la controladora con los mismos
+    // importes (América Mineiro, test-cargar.md 4.4). Antes la segunda copia se salvaba por casualidad (un renglón suyo se "abría" en la
+    // primera); con noSeAbre() eso dejó de pasar y se cargaban las dos.
+    if (t.leaves.length >= 2 && t.leaves.filter((r) => r.M && vistos.has(kM(r.M))).length >= t.leaves.length / 2) { nDuplicadas++; continue; }
     for (const r of t.nums) if (r.M) vistos.add(kM(r.M));
     const lados = ladosPorEstructura(t.rows.map((r) => ({ label: r.label, v: r.v })));
     const covered = new Set();
@@ -489,7 +511,7 @@ function selectAncla(pts, pool) {
       if (covered.has(s.i)) continue;
       const usedAntes = new Set(used);
       const nl = norm(s.label);
-      if (RESULT_RE.test(nl) || SUBTOTAL_RE.test(nl) || esResultado(s.label)) continue;
+      if (RESULT_RE.test(nl) || SUBTOTAL_RE.test(nl) || noSeAbre(s.label)) continue;
       const lado = ladoFila(s.label, s.M, lados[s.i], t.primary ? null : t.tside);
       const exp = expandRow(s, lado, pool, new Set([t.idx]), used, 1, [t.idx]);
       // Abrir un subtotal tiene que AGREGAR detalle: en Colo-Colo el total de la nota de ingresos (recaudación, publicidad, TV... 6 filas) se
@@ -498,7 +520,7 @@ function selectAncla(pts, pool) {
       nExpandidas++;
       // `ancla`: el renglón del estado que se abrió (lo usa tools/cargar.mjs: si la etapa 3 del pipeline categorizó ese renglón y no las
       // filas de su nota, puede volver a cargarlo entero en vez de dejar el detalle sin categoría).
-      exp.forEach((x) => { x.ancla ??= { label: s.label, native: s.M, tside: lado, page: t.page }; });
+      exp.forEach((x) => { x.ancla ??= { label: s.label, native: s.M, tside: lado, page: t.page, section: t.section || '' }; });
       for (let k = pos(s.i) - s.n; k <= pos(s.i); k++) covered.add(t.nums[k].i);
       exp.forEach(push); exp.forEach((x) => vistos.add(kM(x.native)));
     }
@@ -512,9 +534,15 @@ function selectAncla(pts, pool) {
       if (esResultado(label) && !VENTA_RE.test(nl)) continue;
       // En un estado principal el título ("Profit and Loss Account and Other Comprehensive INCOME") no dice el lado de cada fila: mezcla los dos.
       const lado = ladoFila(label, r.M, lados[r.i], t.primary ? null : t.tside);
-      const exp = esResultado(label) ? null : expandRow(r, lado, pool, new Set([t.idx]), used, 1, [t.idx]);
-      if (exp) { nExpandidas++; exp.forEach((x) => { x.ancla ??= { label, native: r.M, tside: lado, page: t.page }; }); exp.forEach(push); exp.forEach((x) => vistos.add(kM(x.native))); continue; }
-      push({ label, page: t.page, native: r.M, tside: lado, origen: `estado ${t.idx}` });
+      // Impuesto y resultado financiero: la nota que los desglosa se BUSCA igual (así queda marcada como usada y no se recorre después como si
+      // fuera otro estado: en la primera versión de noSeAbre, Midtjylland 2022, Criciúma, Ferroviária y Athletic Club cargaban el renglón
+      // entero Y las filas de su nota, y el netInterest se duplicaba), pero se carga el renglón entero. Un resultado puro no se abre nunca.
+      const exp = esResultadoPuro(label) ? null : expandRow(r, lado, pool, new Set([t.idx]), used, 1, [t.idx]);
+      // Las filas de la nota consumida quedan como "ya vistas" (misma etiqueta y mismo importe): si el estado repite ese desglose debajo del
+      // renglón (Athletic Club 2024: "DESPESAS FINANCEIRAS" y abajo "ENCARGOS E JUROS DE MORA", "DESPESAS BANCARIAS"), no se cargan de nuevo.
+      if (exp && noSeAbre(label)) { nExpandidas++; push({ label, page: t.page, section: t.section || '', native: r.M, tside: lado, origen: `estado ${t.idx} (su nota queda consumida sin abrir)` }); vistos.add(kM(r.M)); exp.forEach((x) => { vistos.add(kM(x.native)); seen.add(`${norm(x.label)}|${Math.round(x.native * 1e6)}`); }); continue; }
+      if (exp) { nExpandidas++; exp.forEach((x) => { x.ancla ??= { label, native: r.M, tside: lado, page: t.page, section: t.section || '' }; }); exp.forEach(push); exp.forEach((x) => vistos.add(kM(x.native))); continue; }
+      push({ label, page: t.page, section: t.section || '', native: r.M, tside: lado, origen: `estado ${t.idx}` });
     }
   }
   return { raw, nExpandidas, nDuplicadas, notasUsadas: [...used] };
@@ -607,7 +635,7 @@ export function seleccionarFilas({ briefing, mdText, clubData, year }) {
       if (RESULT_RE.test(nl)) { docResult = M; continue; }
       if (!FILTRO_OFF && noEsRubro(label, subIdx.has(ri))) { descartadas.push({ label, why: subIdx.has(ri) ? 'subtotal' : 'no-rubro' }); continue; }
       const key = `${nl}|${Math.round(M * 1e6)}`; if (seenLabels.has(key)) continue; seenLabels.add(key);
-      raw.push({ label, page: t.page, native: M, tside, origen: 'actual' });
+      raw.push({ label, page: t.page, section: t.section || '', native: M, tside, origen: 'actual' });
     }
   }
   let extra = {};

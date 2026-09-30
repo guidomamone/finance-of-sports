@@ -53,7 +53,7 @@ function clubDe(x) {
 export function registrarAprendidas({ club, year, md, modelo, rubros }) {
   const lineas = [];
   for (const r of rubros || []) {
-    if (r.escalon !== 2 || !r.categoria || r.categoria === 'no_es_rubro' || !(r.confianza >= MIN_REGISTRO) || !r.lado) continue;
+    if (r.escalon !== 2 || r.desdeCache || !r.categoria || r.categoria === 'no_es_rubro' || !(r.confianza >= MIN_REGISTRO) || !r.lado) continue;
     lineas.push(JSON.stringify({ ts: new Date().toISOString(), club, year: year != null ? String(year) : null, lado: r.lado, label: r.label, glosa: r.glosa || null, categoria: r.categoria, confianza: r.confianza, motivo: r.motivo || null, jevDecia: r.jev || null, jevConf: r.jevConf ?? null, modelo: modelo || null, md }));
   }
   if (lineas.length) appendFileSync(ARCHIVO, lineas.join('\n') + '\n');

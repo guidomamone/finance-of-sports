@@ -27,6 +27,8 @@
 //                      Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos corta la corrida (`reintentar`).
 //   3. PREPARAR        (tools/prepare-onboarding.mjs + tools/filas-rubro.mjs) tablas, sumas contra totales impresos, columna de importes
 //                      (no la de notas), filas que no son rubros descartadas, lado ingreso/gasto por estructura -> `<md>.rubros.json`.
+//                      Desde la Versión 321 la lista son las filas que va a CARGAR la etapa 6 (seleccionarFilas() de proponer-carga.mjs,
+//                      que abre cada renglón del estado en su nota) más esos renglones; la lista vieja queda solo si la selección falla.
 //                      `listo-para-jev` si hay un estado de resultados con >= 5 rubros; si no `sin-rubros` (el .md validado queda como fuente).
 //   4. MARCAR          registro Admin/transcripciones-estado.jsonl (se regenera solo); historial en Admin/transcripciones-verificaciones.jsonl.
 //   5. CATEGORIZAR     SOLO los documentos de esta corrida (--lista a cada tool). Escalones: (0) precedente del mismo club, gratis;
@@ -73,6 +75,12 @@ import { resumenAltas } from './altas-registro.mjs';
 // normalización del texto viven en tools/vocabulario.mjs (29 idiomas). Acá solo queda la lógica de la etapa 3.
 import { derivado, ubicar } from './rutas.mjs';
 import { normalizar, TITULO_RESULTADOS_RE, FLUJO_O_PATRIMONIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, esTotal } from './vocabulario.mjs';
+import { clubDeRuta } from './carpetas-clubes.mjs';
+// La selección de filas de la etapa 6 (Versión 321, ver la etapa 3 más abajo). proponer-carga.mjs lee process.argv al importarse (--tabla,
+// --limit, --club... son flags SUYOS): se le pasa un argv limpio, mismo truco que tools/cargar.mjs.
+const argvPipeline = process.argv; process.argv = process.argv.slice(0, 2);
+const { seleccionarFilas, loadSite } = await import('./proponer-carga.mjs');
+process.argv = argvPipeline;
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -85,7 +93,9 @@ const listFile = flagVal('--lista');
 const concurrency = flagVal('--concurrencia') || '4';
 // Tope de páginas por documento (0 = sin tope). Un informe anual de 230 páginas (Borussia Dortmund) cuesta unas 10 veces
 // más que un balance de 25 y se lleva el tiempo de toda la corrida: por defecto quedan para el final, listados aparte.
-const NO_JEV = args.includes('--sin-jev'); // no categorizar con Jev al final
+// --solo-preparar también implica sin etapa 5: su promesa es "sin API". BUG encontrado el 2026-09-30 (Versión 321): solo filtraba QUÉ documentos
+// se tomaban, pero después de prepararlos la etapa 5 corría igual y mandaba a Jev y a Claude todo lo re-preparado.
+const NO_JEV = args.includes('--sin-jev') || args.includes('--solo-preparar'); // no categorizar con Jev al final
 const maxPages = flagVal('--max-paginas') !== null ? Number(flagVal('--max-paginas')) : 100;
 
 const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
@@ -224,7 +234,10 @@ const isStatement = (t) => STATEMENT_RE.test(norm(`${t.section || ''} ${(t.colum
 // Total/subtotal al comienzo ("Total ingresos", "Sum driftsinntekter", "Итого") o al final ("Tržby celkem", "Indtægter i alt").
 const isTotal = esTotal;
 const hasNumber = (vals) => vals.some((v) => /\d/.test(String(v)));
-let nDescartadas = 0; let nJev = 0; let nSin = 0; let nFail = 0; let nSinTablas = 0;
+let nDescartadas = 0; let nJev = 0; let nSin = 0; let nFail = 0; let nSinTablas = 0; let nSeleccion = 0; let nSeleccionFalla = 0;
+// Los data files del sitio (para la escala por plausibilidad de la selección: los ingresos que el club ya tiene cargados en otros años).
+// Se cargan UNA vez y solo si hay algo que preparar (son ~160 archivos por vm).
+const sitio = ready.length ? loadSite() : null;
 for (const e of ready) {
   const mdAbs = resolve(root, e.md);
   // Un .md SIN TABLAS no sirve para sacar rubros (etiquetas e importes en bloques separados): se manda a rehacer con Mistral (una sola vez).
@@ -282,19 +295,55 @@ for (const e of ready) {
       rubros.push({ label: row.rawLabel.trim(), lado: lados[i] || ladoTabla, page: t.page, section: t.section || '', values: row.values, columns: t.columns });
     });
   }
+  // ---- LA LISTA DE RUBROS ES LA SELECCIÓN DE LA ETAPA 6 (Versión 321, arreglo 1a del HANDOFF; evidencia en Admin/tests/test-cargar.md, 4.1).
+  // Hasta acá, `rubros` son las filas de las tablas de ESTADO de resultados (la lista de siempre). Pero la carga (tools/cargar.mjs) no carga
+  // esas filas: usa seleccionarFilas() de tools/proponer-carga.mjs, que abre cada renglón del estado en la NOTA que lo desglosa (estrategia
+  // ancla-listas). Eran conjuntos distintos: medido el 2026-09-30 sobre 719 documentos, de 17.266 filas categorizadas 4.700 la carga nunca
+  // las usaba (se pagaba Jev y Claude por nada) y 3.068 que la carga SÍ usaba nunca se categorizaban (Werder 2024: 3% del dinero de ingresos
+  // bien ubicado, porque la nota de "Umsatzerlöse" no estaba en la lista). Ahora se categoriza exactamente lo que se va a cargar:
+  //   - cada fila de la selección, con su lado, su página y su sección (el importe en MILLONES de moneda nativa va en `values`, así la
+  //     huella de tools/huellas.mjs cambia si cambia el importe);
+  //   - y además el RENGLÓN DEL ESTADO de cada nota abierta (`esAncla: true`): si alguna fila de la nota queda sin categoría aceptable,
+  //     cargar.mjs carga el renglón entero en su lugar, y para eso el renglón tiene que tener categoría.
+  // Se descartan las filas en cero (Resultaatbestemming 0 de PSV: no mueven ningún total y categorizarlas cuesta).
+  // Si la selección FALLA (sin tabla de estado reconocida, o sin la columna del ejercicio: 244 de 719 documentos, casi todos ya `sin-rubros`),
+  // queda la lista vieja y `seleccion.ok: false` con el motivo: la etapa 6 igual va a frenar por eso, pero el documento no se esconde
+  // como "sin estado de resultados" si la lista vieja sí lo encontró.
+  let seleccion = { ok: false, motivo: 'no se corrió' };
+  try {
+    const cr = clubDeRuta(e.pdf);
+    const sf = seleccionarFilas({ briefing: b, mdText: readFileSync(mdAbs, 'utf8'), clubData: (cr.clubId && sitio.generic[cr.clubId]) || {}, year: Number(year) });
+    seleccion = sf.ok ? { ok: true, filas: sf.raw.length, notasUsadas: sf.extra?.notasUsadas || [] } : { ok: false, motivo: sf.motivo };
+    if (sf.ok) {
+      const lista = []; const vistas = new Set();
+      const add = (r, extra = {}) => {
+        const native = Math.round(Number(r.native) * 1e6) / 1e6; if (!native) return;
+        const k = `${norm(r.label)}|${r.tside || ''}|${native}`; if (vistas.has(k)) return; vistas.add(k);
+        lista.push({ label: String(r.label).trim(), lado: r.tside || null, page: r.page, section: r.section || '', values: [native], ...extra });
+      };
+      for (const r of sf.raw) {
+        add(r, { origen: r.origen || null, ...(r.ancla ? { ancla: r.ancla.label } : {}) });
+        if (r.ancla) add({ ...r.ancla, section: r.ancla.section || '' }, { origen: 'renglón del estado abierto en una nota', esAncla: true });
+      }
+      rubros.length = 0; rubros.push(...lista); nSeleccion++;
+    } else nSeleccionFalla++;
+  } catch (err) { seleccion = { ok: false, motivo: `seleccionarFilas() falló: ${err.message}` }; nSeleccionFalla++; }
+  // La glosa (tools/glosar-rubros.mjs, Gemini) de las etiquetas que ya estaban en la lista anterior se conserva: sin esto, cambiar la lista
+  // obliga a glosar el documento entero otra vez.
+  try { const prevR = JSON.parse(readFileSync(derivado(mdAbs, '.rubros.json', { crear: false }), 'utf8')); const g = new Map((prevR.rubros || []).filter((r) => r.glosa).map((r) => [r.label, r.glosa])); for (const r of rubros) if (!r.glosa && g.has(r.label)) r.glosa = g.get(r.label); } catch { /* no había lista anterior */ }
   const tie = b.tieOuts || [];
   const closes = tie.filter((x) => x.closes === true).length; const fails = tie.filter((x) => x.closes === false).length;
   const jev = rubros.length >= 5 ? 'listo-para-jev' : 'sin-rubros';
   writeFileSync(derivado(mdAbs, '.rubros.json'), JSON.stringify({
     md: e.md, pdf: e.pdf, club, year: Number(year), numberFormat: b.numberFormat, generatedAt: new Date().toISOString(),
-    tieOuts: { cierran: closes, noCierran: fails }, warnings: b.warnings || [], estadoDeResultados: hasStatement, ladoConocido: rubros.filter((r) => r.lado).length, rubros,
+    tieOuts: { cierran: closes, noCierran: fails }, warnings: b.warnings || [], estadoDeResultados: hasStatement, seleccion, ladoConocido: rubros.filter((r) => r.lado).length, rubros,
   }, null, 1));
   // Se conserva todo lo que ya sabíamos de la validación de la transcripción (motor, páginas reemplazadas, reservas...).
   const prev = [...readJsonl(verifPath)].reverse().find((v) => v.md === e.md && v.mdSha1 === sha1(mdAbs)) || {};
   appendFileSync(verifPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'listo', jev, rubros: rubros.length, tieOuts: { cierran: closes, noCierran: fails } }) + '\n');
   if (jev === 'listo-para-jev') nJev++; else nSin++;
 }
-console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros (${nDescartadas} filas descartadas por no ser rubros: subtotales, resultados, números sueltos, metadatos)${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
+console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros; lista = selección de la etapa 6 en ${nSeleccion}${nSeleccionFalla ? `, lista vieja en ${nSeleccionFalla} (la selección falló: ver "seleccion" en su .rubros.json)` : ''} (${nDescartadas} filas descartadas por no ser rubros: subtotales, resultados, números sueltos, metadatos)${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
 
 // ---- Etapa 5: Jev categoriza los rubros de los documentos listo-para-jev (casi gratis: ~$42 por mil millones de tokens)
 if (!NO_JEV) {

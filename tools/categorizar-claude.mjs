@@ -84,6 +84,8 @@ import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.m
 import { resolve } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
 import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE } from './memoria-categorias.mjs';
+import { mismaFamilia } from './vocabulario.mjs';
+import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas (Versión 321) // familia de etiquetas del precedente (Versión 321)
 import vm from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
@@ -156,6 +158,23 @@ export function allLines(data = loadClubData()) {
 export function precedente(lines, club, side, label, { excludeYear = null } = {}) {
   const cats = new Set(lines.filter((l) => l.club === club && l.side === side && l.year !== excludeYear && norm(l.label) === norm(label)).map((l) => l.cat));
   return cats.size === 1 ? [...cats][0] : null;
+}
+
+// Escalón 0 con FAMILIA DE ETIQUETAS (Versión 321, pedido de Guido: "una familia de palabras similares, como la del PSV con dos S o una"; la regla
+// está en mismaFamilia() de tools/vocabulario.mjs). Primero el precedente exacto; si no hay, la familia. Devuelve { cat, via } o null.
+// MEDIDO contra producción (7.098 líneas cargadas; para cada línea, el precedente sale de los OTROS años del mismo club):
+//   - lado conocido:    exacto 4.782 líneas con 99,9% de acierto; la familia resuelve 110 más con 96,4% (Claude >= 0,80 da 94,5% en su backtest).
+//   - lado DESCONOCIDO: antes no había precedente (la fila iba entera a Jev/Claude). Ahora: exacto si todas las coincidencias del club son de UN
+//     solo lado (4.732 líneas, 99,7%), y si no, familia SIN tolerar el paréntesis final (60 más, 100%). Con la tolerancia bajaba a 91,9%.
+// Siempre del MISMO club y con UNA sola categoría entre todas las coincidencias: si el club la cargó distinto en años distintos, no hay precedente.
+export function precedenteFamilia(lines, club, side, label, { excludeYear = null } = {}) {
+  const delClub = lines.filter((l) => l.club === club && l.year !== excludeYear && (!side || l.side === side));
+  const unico = (arr) => { const cats = new Set(arr.map((l) => l.cat)); const lados = new Set(arr.map((l) => l.side)); return cats.size === 1 && lados.size === 1 ? [...cats][0] : null; };
+  const nl = norm(label);
+  const ex = unico(delClub.filter((l) => norm(l.label) === nl));
+  if (ex) return { cat: ex, via: side ? 'exacto' : 'exacto-sin-lado' };
+  const fam = unico(delClub.filter((l) => mismaFamilia(l.label, label, { parentesis: Boolean(side) })));
+  return fam ? { cat: fam, via: side ? 'familia' : 'familia-sin-lado' } : null;
 }
 
 // Ejemplos de otros clubes (misma búsqueda por palabras en común que usa Jev): un rubro -> hasta K rubros parecidos ya categorizados.
@@ -484,6 +503,9 @@ async function listos(opt) {
   const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry ? null : readKey(); let cost = 0;
   const aprendidasFirmes = aprendidas.filter((l) => l.conf >= MIN_PRECEDENTE);
   if (aprendidas.length) console.log(`Memoria de categorías: ${aprendidas.length} rubros aprendidos de Claude (${aprendidasFirmes.length} usables como precedente del mismo club).`);
+  // Memoria de respuestas (Versión 321, tools/respuestas-cache.mjs): lo que Claude ya contestó para este club y lado no se vuelve a mandar.
+  // `--sin-cache` pregunta todo de nuevo.
+  const cacheClaude = abrirCache('claude'); let nDesdeCache = 0;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
     const jj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.jev.json')), 'utf8'));
@@ -494,24 +516,29 @@ async function listos(opt) {
       const j = jevBy.get(norm(r.label));
       // Escalón 0: precedente de lo CARGADO en el sitio; si no hay, de lo que Claude ya resolvió para este club con >= 0,90 (memoria).
       const ey = { excludeYear: rj.year != null ? String(rj.year) : null };
-      const precProd = r.lado ? precedente(prod, rj.club, r.lado, r.label, ey) : null;
-      const prec = precProd || (r.lado ? precedente(aprendidasFirmes, rj.club, r.lado, r.label, ey) : null);
+      // Versión 321: con familia de etiquetas y también para filas sin lado (precedenteFamilia(), arriba).
+      const precProd = precedenteFamilia(prod, rj.club, r.lado || null, r.label, ey);
+      const prec = precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, ey);
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
-      if (prec) rubros.push({ ...base, pendiente: false, ya: prec, escalon: 0, precedenteDe: precProd ? 'sitio' : 'memoria-claude' });
+      const guardada = opt.sinCache ? null : cacheClaude.get(rj.club, r.lado, r.label);
+      if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });
       else if (j && j.confidence >= opt.umbral) rubros.push({ ...base, pendiente: false, ya: j.choice, escalon: 1, jevConf: j.confidence });
+      // Ya preguntado a Claude antes para este club y lado (tools/respuestas-cache.mjs): misma respuesta, sin pagar. Queda como escalón 2.
+      else if (guardada) { rubros.push({ ...base, pendiente: false, ya: guardada.categoria, escalon: 2, confCache: guardada.confianza, motivo: guardada.motivo, jev: j?.choice, jevConf: j?.confidence, desdeCache: true }); nDesdeCache++; }
       else rubros.push({ ...base, pendiente: true, jev: j?.choice, jevConf: j?.confidence });
     }
     const r = await categorizarConClaude({ club: rj.club, year: rj.year, rubros, modelo: opt.modelo, esfuerzo: opt.esfuerzo, contextoClub: !opt.sinClub, lines, retriever, apiKey, dryRun: opt.dry });
     if (opt.dry) { console.log(`  ${e.md}: ${rubros.length} rubros (${rubros.filter((x) => x.escalon === 0).length} por precedente, ${rubros.filter((x) => x.escalon === 1).length} por Jev, ${rubros.filter((x) => x.pendiente).length} a Claude; ~${Math.round(r.promptChars / 4 || 0)} tokens)`); continue; }
     cost += r.costUsd || 0;
     const byIdx = new Map((r.resultados || []).map((x) => [x.idx, x]));
-    const out = rubros.map((x, i) => (x.pendiente ? { ...x, escalon: 2, categoria: byIdx.get(i)?.categoria ?? null, confianza: byIdx.get(i)?.confianza ?? null, motivo: byIdx.get(i)?.motivo ?? r.error ?? null } : { ...x, categoria: x.ya, confianza: x.escalon === 0 ? 1 : x.jevConf }));
+    const out = rubros.map((x, i) => (x.pendiente ? { ...x, escalon: 2, categoria: byIdx.get(i)?.categoria ?? null, confianza: byIdx.get(i)?.confianza ?? null, motivo: byIdx.get(i)?.motivo ?? r.error ?? null } : { ...x, categoria: x.ya, confianza: x.escalon === 0 ? 1 : x.escalon === 2 ? x.confCache : x.jevConf }));
+    if (!r.error) for (const x of out) if (x.escalon === 2 && !x.desdeCache && x.categoria) cacheClaude.set(rj.club, x.lado, x.label, { categoria: x.categoria, confianza: x.confianza ?? null, motivo: x.motivo || null, modelo: opt.modelo });
     writeFileSync(resolve(root, derivado(e.md, '.categorias.json')), JSON.stringify({ md: e.md, club: rj.club, year: rj.year, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), jevHuella: huellaJev(jj), modelo: opt.modelo, costUsd: r.costUsd, error: r.error, rubros: out }, null, 1));
     // Lo que Claude resolvió con confianza >= 0,80 queda en la memoria para la próxima vez (pedido de Guido).
     const aprendidos = r.error ? 0 : registrarAprendidas({ club: rj.club, year: rj.year, md: e.md, modelo: opt.modelo, rubros: out });
     console.log(`  ${e.md}: ${out.length} rubros; Claude ${out.filter((x) => x.escalon === 2).length} ($${(r.costUsd || 0).toFixed(4)})${aprendidos ? `; ${aprendidos} a la memoria` : ''}${r.error ? ` ERROR ${r.error.slice(0, 120)}` : ''}`);
   }
-  if (!opt.dry) console.log(`Costo total: $${cost.toFixed(3)}`);
+  if (!opt.dry) console.log(`Costo total: $${cost.toFixed(3)}${nDesdeCache ? ` (${nDesdeCache} rubros sin preguntar: ya estaban en Generados/_cache/claude.jsonl)` : ''}`);
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -532,6 +559,7 @@ if (isMain) {
     tag: flagVal('--etiqueta') || '',
     sinClub: args.includes('--sin-club'),
     dry: args.includes('--dry-run'),
+    sinCache: args.includes('--sin-cache'),
   };
   if (args.includes('--backtest')) await backtest(opt);
   else if (args.includes('--informe')) informe(opt);

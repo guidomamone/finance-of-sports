@@ -82,6 +82,62 @@ export function normalizar(t) {
     .replace(/\s+/g, ' ').trim();
 }
 
+// ---------------------------------------------------------------- FAMILIA DE UNA ETIQUETA (Versión 321, arreglo 1d del HANDOFF)
+// Pedido de Guido (2026-09-30): "una familia de palabras similares, como la del PSV con dos S o una". El precedente del club (escalón 0 de la
+// categorización: si el club ya cargó ese renglón en otro año, se copia su categoría gratis) comparaba el texto EXACTO, y el mismo renglón de un
+// año a otro cambia en detalles que no cambian qué es: PSV 2019-20 imprime "Vergoedingsommen" y 2024/2025 "Vergoedingssommen
+// (transferopbrengsten)"; el número de nota ("Belastingen (22)"), la numeración ("1. Umsatzerlöse"), la traducción bilingüe ("Andre finansielle
+// omkostninger<br>*Other financial expenses*"). Con el texto exacto esas filas iban a Claude, que dudaba (PSV: 0,75 -> el ejercicio frenaba).
+//
+// claveFamilia(): la forma canónica de la etiqueta. Sobre normalizar() saca, en este orden: lo que viene después de un <br> (la traducción), el
+// markdown (*, _, #), la numeración inicial ("1.", "a)", "IV.", "1.1."), las referencias a notas ("(22)", "nota 16", "note 5", "5(f)", "Anexo
+// E"), la puntuación y los espacios repetidos. El paréntesis final con texto queda (ver mismaFamilia()).
+// mismaFamilia(a, b): claves iguales, o casi iguales por DISTANCIA DE EDICIÓN (letras cambiadas, de más o de menos): hasta 1 letra si la clave
+// tiene 10 caracteres o más, hasta 2 si tiene 20 o más. Con etiquetas cortas NO se tolera ninguna: "ventas" y "rentas" difieren en una letra y
+// no son lo mismo. El riesgo que queda lo acota quien la usa: solo contra el MISMO club, y solo si todos los años de ese club con esa familia
+// dicen la misma categoría (si no, no hay precedente).
+const NOTA_REF_RE = /\(\s*(nota|notas|note|notes|anexo|anexos|annex|n\.?)?\s*[0-9ivx]{1,4}(\s*[.,/-]\s*[0-9a-z]{1,3})*\s*\)|\b(nota|notas|note|notes|anexo|annex)\s*[0-9ivxa-e]{1,4}(\s*[.,/(-]\s*[0-9a-z]{1,3}\)?)*|\b\d{1,2}\s*\([a-z]\)/g;
+export function claveFamilia(etiqueta) {
+  let t = String(etiqueta ?? '').split(/<br\s*\/?>/i)[0];
+  t = normalizar(t.replace(/[*_#`]/g, ' '));
+  t = t.replace(/^\s*(\(?[0-9]{1,2}(\.[0-9]{1,2})*[.)]|\(?[a-z][.)]|\(?[ivx]{1,5}[.)])\s+/, '');
+  t = t.replace(NOTA_REF_RE, ' ');
+  return t.replace(/[^\p{L}\p{N}() ]+/gu, ' ').replace(/\s+/g, ' ').replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').trim();
+}
+// La clave SIN el paréntesis del final: "vergoedingssommen (transferopbrengsten)" -> "vergoedingssommen".
+const sinParentesisFinal = (k) => k.replace(/\s*\([^()]*\)\s*$/, '').trim();
+function distanciaEdicion(a, b, tope) {
+  if (Math.abs(a.length - b.length) > tope) return tope + 1;
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i]; let min = i;
+    for (let j = 1; j <= b.length; j++) { cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); if (cur[j] < min) min = cur[j]; }
+    if (min > tope) return tope + 1;
+    prev = cur;
+  }
+  return prev[b.length];
+}
+// EL PARÉNTESIS DEL FINAL (medido contra producción, 7.098 líneas cargadas): quitarlo siempre daba 93,0% de acierto en las 171 líneas que el
+// precedente exacto no cubre, y casi todos los errores eran el SECTOR, que en los clubes argentinos y brasileños va entre paréntesis y cambia la
+// categoría ("Seguros (Fútbol)" -> wages_squad, "Seguros (Estadio)" -> admin_general_expense; "... (Otros Dptos)" -> youth_other_sports_expense).
+// Regla: si las DOS etiquetas tienen paréntesis final, tiene que coincidir; si solo una lo tiene, se compara sin él (PSV).
+function casiIgual(x, y) {
+  if (!x || !y) return false;
+  if (x === y) return true;
+  const n = Math.min(x.length, y.length); const tope = n >= 20 ? 2 : n >= 10 ? 1 : 0;
+  return tope > 0 && distanciaEdicion(x, y, tope) <= tope;
+}
+// { parentesis: false }: sin la tolerancia del paréntesis final (medido: para filas SIN LADO conocido la tolerancia bajaba a 91,9%, porque el
+// paréntesis suele decir el lado: "Bilheteria" es ingreso y "Bilheteria (Custo)" es gasto; sin ella, 60 líneas más con 100% de acierto).
+export function mismaFamilia(a, b, { parentesis = true } = {}) {
+  const x = claveFamilia(a); const y = claveFamilia(b);
+  if (casiIgual(x, y)) return true;
+  if (!parentesis) return false;
+  const px = sinParentesisFinal(x); const py = sinParentesisFinal(y);
+  const unoSolo = (px !== x) !== (py !== y);
+  return unoSolo && casiIgual(px, py);
+}
+
 // ---------------------------------------------------------------- compilación de términos a regex
 const SEP = '[^\\p{L}\\p{N}]+';     // ' ' en un término
 const SEP_OPC = '[^\\p{L}\\p{N}]*'; // '-' en un término
@@ -413,7 +469,7 @@ export const VOCABULARIO = {
     en: ['profit*', 'net profit*', 'net income*', 'net loss*', 'loss for the year', 'loss for the period', 'net result*'],
     de: ['jahresueberschuss*', 'jahresuberschuss*', 'jahresfehlbetrag*', 'jahresergebnis*'],
     fr: ['resultat*', 'benefice net', 'perte nette'], it: ['utile*', 'risultato netto', 'risultato d esercizio', 'risultato dell esercizio', 'perdita d esercizio', 'perdita dell esercizio'],
-    nl: ['nettoresultaat', 'netto resultaat', 'resultaat na belasting*', 'nettowinst'], da: ['arets resultat', 'aarets resultat', 'resultat*', 'arets overskud', 'arets underskud'],
+    nl: ['nettoresultaat', 'netto resultaat', 'resultaat na belasting*', 'nettowinst', 'totaalresultaat*', 'resultaat boekjaar', 'resultaat van het boekjaar'], da: ['arets resultat', 'aarets resultat', 'resultat*', 'arets overskud', 'arets underskud'],
     no: ['arsresultat*', 'aarsresultat*', 'resultat*'], sv: ['arets resultat*', 'resultat*'], fi: ['tilikauden tulos', 'tilikauden voitto', 'tilikauden tappio'],
     cs: ['vysledek hospodareni za ucetni obdobi', 'vysledek hospodareni po zdaneni'], sk: ['vysledok hospodarenia za uctovne obdobie', 'vysledok hospodarenia po zdaneni'],
     pl: ['zysk netto', 'strata netto', 'zysk (strata) netto'], hr: ['neto rezultat', 'dobit*', 'gubitak', 'dobit razdoblja', 'gubitak razdoblja', 'neto dobit*'],
@@ -556,6 +612,24 @@ export const FLUJO_O_PATRIMONIO_RE = compilar([...T('FLUJO_EFECTIVO'), ...T('CAM
 export const TITULO_BALANCE_RE = compilar(T('TITULO_BALANCE'));
 export const TOTAL_ACTIVO_RE = compilar(T('TOTAL_ACTIVO'), 'inicio');
 export const TOTAL_PASIVO_RE = compilar(T('TOTAL_PASIVO'), 'inicio');
+// ---- Resultado financiero e impuesto a las ganancias (Versión 321: se mudaron acá desde tools/cargar.mjs, porque ahora también los usa la
+// selección de filas de tools/proponer-carga.mjs). Son expresiones regulares escritas a mano y no conceptos del VOCABULARIO porque mezclan
+// raíces con comodín en el medio de la palabra y frases con alternativas internas que compilar() no sabe armar. Se prueban sobre texto
+// NORMALIZADO (normalizar(): minúsculas, sin acentos).
+//   - Para tools/cargar.mjs deciden el DESTINO de una fila: el resultado financiero va a `netInterest` y el impuesto a las ganancias a `tax`
+//     del fiscalYearMeta, nunca como línea (club-data-mapping §2).
+//   - Para tools/proponer-carga.mjs deciden qué renglón del estado de resultados NO se abre en una nota: si va entero al fiscalYearMeta, su
+//     desglose no sirve, y abrirlo trajo basura real (PSV 2019-20: "Belastingen (22)" se abría en la conciliación de la tasa impositiva,
+//     "Verwachte belasting op basis van nominaal tarief"; Sunderland 2025: el interés de la nota y el del estado se cargaban los dos).
+// Resultado financiero: intereses, diferencias de cambio, "financial income/expenses", participaciones en otras sociedades (Vejle suma la
+// participación en VB Plus ApS a netInterest).
+export const FINANCIERO_RE = /\b(interes(es)?|interest|zinsen?|zins|renteindt|renteudg|renteinnt|rentekost|renter|rente\w*|juros|financ\w*|finanz\w*|finans\w*|financij\w*|financn\w*|финанс\w*|фінанс\w*|процент\w*|diferencias? de cambio|exchange (gain|loss|difference)\w*|foreign exchange|kursdifferen\w*|wechselkurs\w*|valutakurs\w*|variac\w* cambia\w*|kur farki\w*|tecajn\w*|kapitalandele|beteiligung\w*|ertrage aus beteiligung)\b/;
+// Impuesto a las GANANCIAS (no "impuestos, tasas y contribuciones", que es admin_general_expense: CRITERIOS de categorizar-claude.mjs).
+export const IMPUESTO_GANANCIAS_RE = /(income tax|tax on (profit|loss|ordinary)|taxation|corporation tax|impuesto (a las|sobre las?) (ganancias|renta|sociedades|utilidad)|impuesto a la renta|imposto de renda|irpj|csll|imposto sobre o rendimento|steuern vom einkommen|ertragsteuer|korperschaftsteuer|skat af arets|selskabsskat|skatt pa (arets|ordinaert)|inkomstskatt|belasting (over|op) (de )?(winst|resultaat)|vennootschapsbelasting|imposte sul reddito|porez na dobit|dan z prijm|налог на прибыль|податок на прибуток|kurumlar vergisi|vergi (gideri|geliri))/;
+// Un renglón que es SOLO la palabra impuesto(s) ("Belastingen (22)" de PSV, "Taxation", "Steuern"), en el estado de resultados, es el impuesto a
+// las ganancias del ejercicio (los impuestos operativos llevan más texto: "Impuestos, tasas y contribuciones", "Sonstige Steuern").
+export const IMPUESTO_SOLO_RE = /^\**\s*(\d{1,2}[.)]\s*)?(belastingen|belasting|taxation|tax|taxes|impuestos?|impostos?|steuern|skat|skatt|skatter|vergi|porez|dan|налог|податок)\s*(\(\d+\))?\**\s*$/;
+
 // Relevancia de una tabla (extract-table-rows.mjs): título de estado de resultados, ingresos, gastos o palabras de resultado.
 export const RELEVANTE_RE = compilar([...T('TITULO_RESULTADOS'), ...T('INGRESOS'), ...T('INGRESOS_TABLA'), ...T('GASTOS'), ...T('RESULTADO_RELEVANTE')]);
 // Columna de notas / código de fila (filas-rubro.mjs columnaDeImportes).

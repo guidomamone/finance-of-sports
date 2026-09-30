@@ -28,8 +28,9 @@
 //     estado de resultados se abre en la nota o la lista que la desglosa) y la escala por plausibilidad contra los años ya cargados del club.
 //     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping §5).
 //  4. CATEGORÍA DE CADA FILA: la del `.categorias.json` del pipeline (escalón 0 precedente del club, 1 Jev >= 0,90, 2 Claude >= 0,80). Si
-//     la fila no está en esa lista (la etapa 3 del pipeline y la selección de filas de acá NO eligen las mismas filas: ver el informe
-//     Admin/tests/test-cargar.md), se prueba el precedente exacto del mismo club (gratis). Lo que queda sin categoría o con confianza baja
+//     la fila no está en esa lista (hasta la Versión 320 la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
+//     Admin/tests/test-cargar.md 4.1; desde la 321 la etapa 3 prepara exactamente esta selección, así que esto pasa solo con listas viejas),
+//     se prueba el precedente del mismo club, exacto o por familia de etiquetas (precedenteFamilia(), gratis). Lo que queda sin categoría o con confianza baja
 //     NO se carga; si eso es más del --max-sin-categoria (default 5%) del dinero de su lado, frena.
 //       - `no_es_rubro` no se carga como línea. Los resultados financieros (intereses, diferencias de cambio, participaciones) y el impuesto
 //         a las ganancias NUNCA son una línea (club-data-mapping §2): van a `netInterest` / `tax` del fiscalYearMeta.
@@ -98,10 +99,11 @@ process.argv = process.argv.slice(0, 2);
 const { analizar } = await import('./alta-club.mjs');
 const { seleccionarFilas, briefingFor } = await import('./proponer-carga.mjs');
 const { categoriasAlDia } = await import('./huellas.mjs');
+const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { periodoDe } = await import('./periodo.mjs');
-const { normalizar, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE } = await import('./vocabulario.mjs');
+const { normalizar, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
 const ROOT = resolve(import.meta.dirname, '..');
 const flagVal = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
@@ -152,15 +154,9 @@ function quien(pdf) {
 // ============================================================================
 // VOCABULARIO PROPIO DE ESTA ETAPA (candidato a mudarse a tools/vocabulario.mjs si otra tool lo necesita)
 // ============================================================================
-// Resultado financiero: intereses, diferencias de cambio, "financial income/expenses", participaciones en otras sociedades (Vejle suma la
-// participación en VB Plus ApS a netInterest). Van a netInterest, nunca como línea (club-data-mapping §2).
-const FINANCIERO_RE = /\b(interes(es)?|interest|zinsen?|zins|renteindt|renteudg|renteinnt|rentekost|renter|rente\w*|juros|financ\w*|finanz\w*|finans\w*|financij\w*|financn\w*|финанс\w*|фінанс\w*|процент\w*|diferencias? de cambio|exchange (gain|loss|difference)\w*|foreign exchange|kursdifferen\w*|wechselkurs\w*|valutakurs\w*|variac\w* cambia\w*|kur farki\w*|tecajn\w*|kapitalandele|beteiligung\w*|ertrage aus beteiligung)\b/;
-// Impuesto a las GANANCIAS (no "impuestos, tasas y contribuciones", que es admin_general_expense: Claude CRITERIOS de categorizar-claude.mjs).
-const IMPUESTO_GANANCIAS_RE = /(income tax|tax on (profit|loss|ordinary)|taxation|corporation tax|impuesto (a las|sobre las?) (ganancias|renta|sociedades|utilidad)|impuesto a la renta|imposto de renda|irpj|csll|imposto sobre o rendimento|steuern vom einkommen|ertragsteuer|korperschaftsteuer|skat af arets|selskabsskat|skatt pa (arets|ordinaert)|inkomstskatt|belasting (over|op) (de )?(winst|resultaat)|vennootschapsbelasting|imposte sul reddito|porez na dobit|dan z prijm|налог на прибыль|податок на прибуток|kurumlar vergisi|vergi (gideri|geliri))/;
+// Resultado financiero (FINANCIERO_RE) e impuesto a las ganancias (IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE): viven en tools/vocabulario.mjs desde la
+// Versión 321, porque la selección de filas de proponer-carga.mjs también los usa (no abre esos renglones en una nota).
 // Resultado ANTES de impuestos y operativo (solo para mostrar en la propuesta y ayudar a quien revise).
-// Un renglón que es SOLO la palabra impuesto(s) ("Belastingen (22)" de PSV, "Taxation", "Steuern"), en el estado de resultados, es el impuesto a
-// las ganancias del ejercicio (los impuestos operativos llevan más texto: "Impuestos, tasas y contribuciones", "Sonstige Steuern").
-const IMPUESTO_SOLO_RE = /^\**\s*(\d{1,2}[.)]\s*)?(belastingen|belasting|taxation|tax|taxes|impuestos?|impostos?|steuern|skat|skatt|skatter|vergi|porez|dan|налог|податок)\s*(\(\d+\))?\**\s*$/;
 const ANTES_IMPUESTOS_RE = /(before tax|before taxation|vor steuern|antes de(l)? impuesto|antes do imposto|antes dos impostos|antes de impuestos|for skat|foer skat|fore skatt|voor belasting|ante imposte|avant impot|до налогообложения|prije oporezivanja|pred zdanenim|vergi oncesi)/;
 const PERDIDA_RE = /(loss|verlust|fehlbetrag|perdida|prejuizo|deficit|underskud|tap\b|verlies|perdita|gubitak|ztrata|убыток|збиток|zarar)/;
 
@@ -271,18 +267,18 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // ---- 4. categoría de cada fila
   const cj = existsSync(catPath) ? JSON.parse(readFileSync(catPath, 'utf8')) : { rubros: [] };
   const porEtiqueta = new Map(); for (const r of cj.rubros || []) { const k = norm(r.label); if (!porEtiqueta.has(k)) porEtiqueta.set(k, r); }
-  // precedente exacto del mismo club (todos sus años cargados; el año que se carga no está, por definición)
-  const prec = { revenue: new Map(), expense: new Map() };
-  for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const ls of Object.values(cd[key] || {})) for (const l of ls || []) {
-    const k = norm(l.rawLabel || ''); const cur = prec[side].get(k); if (cur === undefined) prec[side].set(k, l.normalizedCategory); else if (cur !== l.normalizedCategory) prec[side].set(k, null);
-  }
+  // Precedente del mismo club (todos sus años cargados; el año que se carga no está, por definición): exacto o por FAMILIA de etiquetas, con
+  // la MISMA regla que el escalón 0 de la categorización (precedenteFamilia() de tools/categorizar-claude.mjs, medida en su comentario). Hasta la
+  // Versión 320 acá había una copia propia, solo exacta y solo con lado conocido.
+  const lineasClub = [];
+  for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const [y, ls] of Object.entries(cd[key] || {})) for (const l of ls || []) if (l.rawLabel && l.normalizedCategory) lineasClub.push({ club: clubId, year: String(y), side, label: l.rawLabel.trim(), cat: l.normalizedCategory });
   // Categoría "aceptable" de una etiqueta: la del .categorias.json (escalón 0/1, o Claude >= --umbral-claude) o, si la etiqueta no está en
-  // esa lista, el precedente exacto del club (mismo lado si se conoce).
+  // esa lista, el precedente del club.
   const catDe = (label, lado) => {
     const c = porEtiqueta.get(norm(label));
     if (c) return { cat: c.categoria || null, conf: c.confianza ?? null, escalon: c.escalon, fuenteCat: 'categorias.json', enLista: true };
-    const p = (lado && prec[lado].get(norm(label))) || (!lado && (prec.revenue.get(norm(label)) || prec.expense.get(norm(label))));
-    if (p) return { cat: p, conf: 1, escalon: 0, fuenteCat: 'precedente del club (la fila no estaba en categorias.json)', enLista: true };
+    const p = precedenteFamilia(lineasClub, clubId, lado || null, label);
+    if (p) return { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club, ${p.via} (la fila no estaba en categorias.json)`, enLista: true };
     return { cat: null, fuenteCat: 'la fila no está en categorias.json ni tiene precedente', enLista: false };
   };
   const aceptable = (c) => c.cat && c.cat !== 'no_es_rubro' && ladoDeCat(c.cat) && (c.escalon !== 2 || (c.conf ?? 0) >= UMBRAL_CLAUDE);
@@ -385,18 +381,24 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // número, club-data-mapping §6.2) y el que permite dar por verificado un total de ingresos o de gastos que el documento no imprime.
   const patImpresos = impresos.filter((x) => RESULTADO_EJERCICIO_RE.test(norm(x.label).replace(/^\**\s*(\(?[0-9]{1,2}[a-z]?[.)]|[a-z][.)]|[ivxl]{1,5}[.)]?\s*[-–.])\s*/, '')) && !ANTES_IMPUESTOS_RE.test(norm(x.label)));
   if (sf.docResult !== null && sf.docResult !== undefined) patImpresos.push({ label: 'resultado detectado por proponer-carga', M: sf.docResult, page: null });
-  let meta = null; let cierraPat = null; let lecturaGasto = lecturasGasto[0];
-  busqueda: for (const G of lecturasGasto) for (const L of lecturasMeta) {
-    const expTodoG = exp.reduce((a, f) => a + G.v(f), 0);
-    const ni = metaFilas.filter((f) => f.destino === 'netInterest').reduce((a, f) => a + L.v(f), 0);
-    const tx = metaFilas.filter((f) => f.destino === 'tax').reduce((a, f) => a + L.v(f), 0);
-    const pat = revSum + expTodoG + ni + tx;
-    if (!meta) meta = { netInterest: r6(ni), tax: r6(tx), pat: r6(pat) };
-    for (const x of patImpresos) {
-      const impreso = Math.abs(x.M - pat) < TOL ? x.M : (PERDIDA_RE.test(norm(x.label)) && x.M > 0 && Math.abs(-x.M - pat) < TOL) ? -x.M : null;
-      if (impreso !== null) { meta = { netInterest: r6(ni), tax: r6(tx), pat: r6(pat) }; cierraPat = { lectura: `${G.nombre}; ${L.nombre}`, impreso: x, valor: impreso, L }; lecturaGasto = G; break busqueda; }
+  // `extra`: la suma de las filas de redondeo (decisión 3 de Guido, ver lado() más abajo); 0 en la primera búsqueda. `soloG`: fija la lectura
+  // de signos de los gastos (la segunda búsqueda no puede cambiarla: las filas de redondeo se calcularon con la primera).
+  const buscarPat = (extra = 0, soloG = null) => {
+    let meta = null; let cierraPat = null; let lecturaGasto = soloG || lecturasGasto[0];
+    busqueda: for (const G of soloG ? [soloG] : lecturasGasto) for (const L of lecturasMeta) {
+      const expTodoG = exp.filter((f) => f.origen !== 'redondeo').reduce((a, f) => a + G.v(f), 0);
+      const ni = metaFilas.filter((f) => f.destino === 'netInterest').reduce((a, f) => a + L.v(f), 0);
+      const tx = metaFilas.filter((f) => f.destino === 'tax').reduce((a, f) => a + L.v(f), 0);
+      const pat = revSum + expTodoG + ni + tx + extra;
+      if (!meta) meta = { netInterest: r6(ni), tax: r6(tx), pat: r6(pat) };
+      for (const x of patImpresos) {
+        const impreso = Math.abs(x.M - pat) < TOL ? x.M : (PERDIDA_RE.test(norm(x.label)) && x.M > 0 && Math.abs(-x.M - pat) < TOL) ? -x.M : null;
+        if (impreso !== null) { meta = { netInterest: r6(ni), tax: r6(tx), pat: r6(pat) }; cierraPat = { lectura: `${G.nombre}; ${L.nombre}`, impreso: x, valor: impreso, L }; lecturaGasto = G; break busqueda; }
+      }
     }
-  }
+    return { meta, cierraPat, lecturaGasto };
+  };
+  let { meta, cierraPat, lecturaGasto } = buscarPat();
   for (const f of exp) f.amountNative = r6(lecturaGasto.v(f));
   P.signos.elegida = cierraPat ? cierraPat.lectura : `${lecturaGasto.nombre} (ninguna lectura cerró el resultado)`;
   const expSinExc = exp.filter((f) => f.cat !== 'exceptional_items').reduce((a, f) => a + f.amountNative, 0);
@@ -404,21 +406,49 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const T = { revSum: r6(revSum), expSum: r6(expSinExc), officialTotalRevenue: null, officialTotalExpenses: null, officialPAT: null, verificacion: {} };
   if (!meta) meta = { netInterest: 0, tax: 0 };
   if (cierraPat) { T.officialPAT = r6(cierraPat.valor); T.patImpreso = { label: cierraPat.impreso.label, pag: cierraPat.impreso.page, M: cierraPat.impreso.M, signos: cierraPat.lectura }; T.verificacion.pat = 'impreso'; }
-  else if (patImpresos.length && rev.length) frena('tie-out', `resultado: ingresos ${r6(revSum)} + gastos ${r6(expTodo)} + netInterest ${meta.netInterest} + tax ${meta.tax} = ${r6(revSum + expTodo + meta.netInterest + meta.tax)} no coincide con ningún resultado impreso (${patImpresos.slice(0, 4).map((x) => `"${String(x.label).slice(0, 40)}" ${x.M}`).join('; ')})`);
+  else if (patImpresos.length && rev.length) frena('tie-out-resultado', `resultado: ingresos ${r6(revSum)} + gastos ${r6(expTodo)} + netInterest ${meta.netInterest} + tax ${meta.tax} = ${r6(revSum + expTodo + meta.netInterest + meta.tax)} no coincide con ningún resultado impreso (${patImpresos.slice(0, 4).map((x) => `"${String(x.label).slice(0, 40)}" ${x.M}`).join('; ')})`);
   else P.avisos.push('no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)');
   // 6b. total de ingresos y de gastos: un total IMPRESO igual a la suma de las líneas; si el documento no lo imprime pero el resultado cerró,
   // se usa la suma de las líneas y se marca `por-resultado` (verificado por el resultado, no por un total propio).
+  // FILA DE REDONDEO (decisión 3 de Guido, 2026-09-30): si la suma de las líneas y el total impreso difieren SOLO por redondeo, se agrega una
+  // línea explícita "Diferencia de redondeo" por la diferencia (other_income en ingresos, other_expenses en gastos) y el total oficial es el
+  // IMPRESO: el total cierra exacto contra el documento (audit.js exige < 0,01) y la diferencia queda a la vista en vez de escondida. "Solo por
+  // redondeo" es estricto: menos de MEDIA UNIDAD de lo impreso por cada fila sumada (n filas en miles -> hasta n x 0,0005 millones). NO la
+  // tolerancia de buscar() (que además acepta 0,06% del total): Real Madrid 2005-06 difiere 0,12 millones con filas en miles, y eso no es
+  // redondeo (con ~15 filas daría 0,0075), es una fila de más o de menos o un error de lectura: sigue frenando.
+  // Se usa solo cuando el resultado del ejercicio NO cerró con la suma: si cerró, la suma ya está verificada (`por-resultado`) y una fila de
+  // redondeo lo descuadraría. Después de agregarla se vuelve a buscar el resultado impreso con la diferencia sumada.
+  let ajusteRedondeo = 0;
   const lado = (nombre, arr, objetivo, clave, filtro) => {
     if (!arr.length) { if (nombre === 'gastos') P.avisos.push('ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra "sin dato")'); else frena('tie-out', 'ninguna fila de ingresos con categoría aceptable'); return; }
     const b = buscar(objetivo, arr.length, filtro);
+    const soloRedondeo = b.redondeo && Math.abs(Math.abs(b.redondeo.M) - Math.abs(objetivo)) <= Math.max(TOL, 0.5 * arr.length * unidadMax);
+    if (!b.exacto && !cierraPat && soloRedondeo) {
+      const signo = nombre === 'ingresos' ? 1 : -1; const d = r6(signo * Math.abs(b.redondeo.M) - objetivo);
+      arr.push({ label: 'Diferencia de redondeo', cat: nombre === 'ingresos' ? 'other_income' : 'other_expenses', amountNative: d, native: d, destino: nombre === 'ingresos' ? 'revenue' : 'expense', page: b.redondeo.page, origen: 'redondeo', escalon: null, conf: null });
+      ajusteRedondeo += d;
+      T[clave] = r6(Math.abs(b.redondeo.M)); T[nombre === 'ingresos' ? 'revImpreso' : 'expImpreso'] = { label: b.redondeo.label, pag: b.redondeo.page, M: b.redondeo.M }; T.verificacion[nombre] = 'impreso-con-redondeo';
+      P.avisos.push(`${nombre}: las filas suman ${r6(objetivo)} y el total impreso "${String(b.redondeo.label).slice(0, 40)}" (pág. ${b.redondeo.page}) dice ${b.redondeo.M}: se agrega la línea "Diferencia de redondeo" por ${d} (menos de media unidad impresa por fila, ${arr.length - 1} filas)`);
+      return;
+    }
     if (b.exacto) { T[clave] = r6(Math.abs(b.exacto.M)); T[nombre === 'ingresos' ? 'revImpreso' : 'expImpreso'] = { label: b.exacto.label, pag: b.exacto.page, M: b.exacto.M }; T.verificacion[nombre] = 'impreso'; }
     else if (cierraPat) { T[clave] = r6(Math.abs(objetivo)); T.verificacion[nombre] = 'por-resultado'; P.avisos.push(`${nombre}: ningún total impreso igual a la suma de las líneas (${r6(objetivo)}); queda la suma, verificada por el resultado del ejercicio${b.redondeo ? ` (el impreso "${String(b.redondeo.label).slice(0, 40)}" ${b.redondeo.M} difiere en ${r6(Math.abs(b.redondeo.M) - Math.abs(objetivo))}: redondeo)` : ''}`); }
-    else if (b.redondeo) frena('tie-out', `${nombre}: las filas suman ${r6(objetivo)} y el total impreso "${b.redondeo.label}" (pág. ${b.redondeo.page}) dice ${b.redondeo.M}: cierra solo por redondeo (diferencia ${r6(Math.abs(b.redondeo.M) - Math.abs(objetivo))}) y audit.js exige menos de 0,01`);
+    else if (b.redondeo) frena('tie-out', `${nombre}: las filas suman ${r6(objetivo)} y el total impreso "${b.redondeo.label}" (pág. ${b.redondeo.page}) dice ${b.redondeo.M}: la diferencia (${r6(Math.abs(b.redondeo.M) - Math.abs(objetivo))}) es mayor que media unidad impresa por fila (${r6(0.5 * arr.length * unidadMax)}), así que no es redondeo: revisar filas y lectura`);
     else frena('tie-out', `${nombre}: las filas suman ${r6(objetivo)} y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)`);
   };
   // Una sola línea de ingresos "cierra" contra sí misma: solo vale como total si está etiquetada como total.
   lado('ingresos', rev, revSum, 'officialTotalRevenue', (x) => esTotalDe(x) && !(rev.length === 1 && norm(x.label) === norm(rev[0].label) && !x.esTotal));
   lado('gastos', exp, expSinExc, 'officialTotalExpenses', (x) => esTotalDe(x) && !(exp.length === 1 && norm(x.label) === norm(exp[0].label) && !x.esTotal));
+  // Con filas de redondeo, el resultado impreso se vuelve a buscar con la diferencia sumada (misma lectura de signos de los gastos).
+  if (ajusteRedondeo && !cierraPat && patImpresos.length) {
+    const r2 = buscarPat(ajusteRedondeo, lecturaGasto);
+    if (r2.cierraPat) {
+      cierraPat = r2.cierraPat; meta = r2.meta;
+      T.officialPAT = r6(cierraPat.valor); T.patImpreso = { label: cierraPat.impreso.label, pag: cierraPat.impreso.page, M: cierraPat.impreso.M, signos: cierraPat.lectura }; T.verificacion.pat = 'impreso';
+      P.frena = P.frena.filter((x) => x.etapa !== 'tie-out-resultado');
+      P.avisos.push(`resultado: cierra contra "${String(cierraPat.impreso.label).slice(0, 40)}" contando la(s) fila(s) de redondeo (${r6(ajusteRedondeo)})`);
+    }
+  }
   P.totales = T;
 
   // ---- 7. fx, liga, sourceId
