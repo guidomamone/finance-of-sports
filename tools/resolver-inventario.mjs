@@ -227,7 +227,21 @@ function sizedBatches(pdfAbs, pageList, tmp, counter = { n: 0 }) {
 }
 
 // Recorta páginas del PDF y las transcribe con un motor; devuelve Map<páginaReal, texto> o un error.
+// Tope de páginas por llamada a Claude (Versión 310). El tope de salida de claude-api-transcribe.mjs es 64.000 tokens por llamada y una
+// página densa de un escaneo se transcribe en ~2.300 tokens (medido en el piloto C: Real Madrid 2005-06, 18 páginas = 41.763 tokens de
+// salida, US$ 0,45). Con 18-25 páginas en un lote se queda al borde del tope, y un intento cortado por max_tokens se PAGA ENTERO y se tira
+// (la tool descarta la transcripción truncada). De a 8 páginas (~20.000 tokens) el tope no se alcanza; el costo por página es el mismo.
+const CLAUDE_MAX_PAGES = 8;
 async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
+  if (engine === 'claude' && pageList.length > CLAUDE_MAX_PAGES) {
+    const map = new Map();
+    for (let i = 0; i < pageList.length; i += CLAUDE_MAX_PAGES) {
+      const r = await transcribePages(engine, pdfAbs, pageList.slice(i, i + CLAUDE_MAX_PAGES), opts);
+      if (!r.ok) return r;
+      for (const [n, body] of r.pages) map.set(n, body);
+    }
+    return { ok: true, pages: map };
+  }
   const tmp = mkdtempSync(join(tmpdir(), 'resolver-'));
   try {
     let batches;

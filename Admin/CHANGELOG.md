@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 310 — Lotes de Claude de hasta 8 páginas (2026-09-30)
+
+- `resolver-inventario.mjs`: Claude recibe como máximo 8 páginas por llamada. Una página densa de escaneo son ~2.300 tokens de salida (Real Madrid 2005-06: 18 páginas = 41.763 tokens, US$ 0,45) y el tope es 64.000: con lotes de 18-25 páginas un intento se cortaba por `max_tokens`, se pagaba y se tiraba. El costo por página no cambia.
+
 ## Versión 309 — Una sola regla carpeta -> club, vigilada por audit.js; el registro marca lo pagado sin .md (2026-09-30)
 
 - `tools/carpetas-clubes.mjs` (nuevo): el club de `Clubes/<País>/<Club>/` sale de la cita en `data/<id>-data.js`, y si no la hay, de un nombre IGUAL entre los clubes del mismo país; si no, es club nuevo. `onboard.mjs` (y con él `--quien`, el registro y el pipeline) la usa en vez de `guessClubId()` (substring, sin país).
