@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 320 — Etapa 6: `tools/cargar.mjs`, probada de punta a punta (2026-09-30)
+
+- `tools/cargar.mjs` (nuevo): carga un año nuevo de un club existente; `--propuesta` / `--escribir` (reversión automática si audit.js da P0/P1, probada) / `--comparar`. Frena con motivo escrito si falta algo (anual, categorías al día, fx, liga, cierre de sumas contra los totales impresos). Backtest sobre 18 ejercicios cargados reconstruidos: 1 idéntico a producción (Alianza Lima 2023), 17 frenados con motivo, ningún número falso; PSV 2019-20 carga con `--umbral-claude 0.7`. Informe y lista de problemas de etapas anteriores: `Admin/tests/test-cargar.md`.
+- `proponer-carga.mjs`: exporta `seleccionarFilas`, `briefingFor`, `loadSite`, `parseNumber` (el CLI no corre al importarse); marca el ancla de cada fila; `esNoPL()` descarta flujos de fondos y tablas de balance. `periodo.mjs`: reconoce temporadas "AAAA-AA" (nombreNoCoincide 226 -> 15).
+- Gasto de API del test: ~US$ 1,60 (quedó en el log del worktree borrado, no en `Admin/claude-api/resultados.jsonl`).
+
 ## Versión 319 — Memoria de categorías: lo que Claude resuelve y Jev no sabía queda para la próxima (2026-09-30)
 
 - Sembrada con 148 rubros de 61 documentos. Bug encontrado al sembrar: respuestas viejas traían el club equivocado (el Athletic Club brasileño como 'athleticclub', el de Bilbao) y los clubes nuevos tienen id provisorio: la memoria recalcula el club desde la carpeta del documento con `carpetas-clubes.mjs` al leer.

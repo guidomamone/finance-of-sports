@@ -1,4 +1,4 @@
-# HANDOFF: el pipeline de PDF a club cargado (sesiones del 2026-09-29 y 2026-09-30, actualizado al cierre del 2026-09-30, Versión 319)
+# HANDOFF: el pipeline de PDF a club cargado (sesiones del 2026-09-29 y 2026-09-30, actualizado al cierre del 2026-09-30, Versión 320)
 
 Documento para que una sesión NUEVA de Claude Code entienda dónde quedó este trabajo sin leer el historial. Leé esto, después
 `Admin/MAPA-DE-TOOLS.md` (qué es cada archivo de `tools/`) y las entradas de `Admin/CHANGELOG.md` desde la Versión 305 (decisiones y bugs, con
@@ -12,7 +12,7 @@ qué le falta, con qué comando se avanza y cuánto cuesta. El código está en 
 
 Que un solo comando lleve un PDF de un club desde la transcripción hasta el ejercicio **cargado en el sitio**, sin gastar tokens de sesión,
 barato en dólares de API y sin errores en los números. Hoy el comando llega hasta la categorización (etapa 5: Jev y Claude por API); la etapa 6
-(cargar en `data/<club>-data.js`) está EN CONSTRUCCIÓN (ver "Qué falta" 1) y la 7 (commit local) no existe. Solo se automatiza la carga de un año nuevo de un club que ya existe y
+(`tools/cargar.mjs`) existe y está probada, pero todavía frena casi todo por problemas de etapas anteriores (ver "Qué falta" 1); la 7 (commit local) no existe. Solo se automatiza la carga de un año nuevo de un club que ya existe y
 sin decisiones abiertas; lo que requiera criterio se frena y lo resuelve una sesión.
 
 ## Estado de git
@@ -109,15 +109,29 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 
 ## Qué falta (en orden)
 
-1. **ETAPA 6 (cargar), en construcción por un subagente al cierre de esta sesión.** Construye `tools/cargar.mjs` (año nuevo de club que YA existe;
-   `--propuesta` / `--escribir` con reversión si `audit.js` da P0/P1) y la prueba de punta a punta: backtest sobre años ya cargados (borrados en un git
-   worktree y reconstruidos) y años nuevos del piloto C+D (Vejle 2014, PSV 2019-20, Dinamo Zagreb 2019, Los Andes 2009-10, Real Madrid 2005-06).
-   Informe: `Admin/tests/test-cargar.md`. **Lo más importante de ese informe es la lista de cosas de etapas anteriores que no sirven para cargar**
-   (pedido de Guido: "cuando introducimos un paso nuevo descubrimos que algo hecho antes no sirvió"). La sesión siguiente: si el archivo existe,
-   revisarlo, verificar `node --check tools/cargar.mjs` y `node tools/audit.js`, commitear, y arreglar en las tools lo que el informe liste.
-   Reglas que ya están decididas para la etapa 6: no cargar documentos con `periodo.tipo` distinto de 'anual' ni con `periodo.nombreNoCoincide`;
-   excluir filas `no_es_rubro`; cerrar sumas contra los totales impresos antes de escribir (hay totales con su desglose abajo que entran dos veces:
-   Groningen "Personeelskosten"); las páginas "con reserva" se cierran con sumas; el alta de un club nuevo va en el mismo commit que su primer año.
+1. **ETAPA 6: `tools/cargar.mjs` EXISTE (Versión 320) y se probó de punta a punta; el informe completo está en `Admin/tests/test-cargar.md`.**
+   Año nuevo de un club que ya existe; `--propuesta` (default) / `--escribir` (escribe, sube ASSET_V, regenera, corre audit.js y REVIERTE si hay
+   P0/P1: probado, restaura byte a byte) / `--comparar` (backtest). Resultado: backtest de 18 ejercicios cargados (reconstruidos en un worktree con las
+   etapas 3-5 reales): cargó 1 idéntico a producción (Alianza Lima 2023) y frenó 17, todos con algo mal o faltante — **el cierre de sumas no dejó
+   pasar ningún número falso**. Años nuevos del piloto: ninguno con el umbral por defecto; con `--umbral-claude 0.7` carga PSV 2019-20 (cierra exacto).
+   **LO QUE HAY QUE ARREGLAR, EN ETAPAS ANTERIORES (orden sugerido, evidencia en el informe, sección 4):**
+   a. Las filas que se categorizan (etapa 3, `pipeline.mjs`) no son las que se cargan (etapa 6 abre la nota que desglosa cada renglón): 103 de 150
+      documentos. Que la etapa 3 use `seleccionarFilas()` de `proponer-carga.mjs` (ya exportada).
+   b. Escala por tabla (plausibilidad) falla con inflación y notas en otra unidad (Racing 2012, RB Leipzig, Arsenal, Osasuna, Vélez, Ponte Preta; Los
+      Andes 2009-10 estado x1000 y anexo x1): una sola escala por documento.
+   c. Entran tablas que no son de resultados (balances, flujos en neerlandés/croata, cuadros de bienes de uso, presupuestos) y filas duplicadas entre el
+      estado y sus notas (Católica, Sunderland, América Mineiro). `esNoPL()` nuevo en proponer-carga cubre parte.
+   d. Filas grandes y genéricas quedan con Claude < 0,80 y una sola frena el ejercicio (13 de 18); el precedente del club es por texto exacto
+      ("Vergoedingsommen" vs "Vergoedingssommen"): hacerlo tolerante a una letra.
+   e. Categorizar lo ya preparado: 131 de 150 documentos de clubes existentes no tienen `.categorias.json` (~US$ 0,04 c/u).
+   f. `alta-club.mjs` aplicado a clubes existentes: pregunta perímetro ya decidido, fx falsos ("0.6" de "£0.6 million"), liga null en 122 de 150.
+   g. Faltan series de fx EUR (36 documentos), CLP (27), DKK (9); HRK de Croacia antes de 2023 sin decidir.
+   h. Hoffenheim 2025 y Once Caldas 2024 quedan `sin-rubros` teniendo estado de resultados. Jev no es determinista (misma fila, dos respuestas).
+   i. `glosar-rubros.mjs` y Jev no registran su costo (gasto.mjs no los ve).
+   **DECISIONES DE GUIDO pendientes:** (1) ¿cargar una fila con Claude < 0,80 si el resultado impreso cierra exacto con ella? (2) ¿aceptar un total de
+   ingresos/gastos verificado solo por el resultado (hoy se acepta, marcado `por-resultado`)? (3) ¿qué hacer con totales que cierran solo por redondeo?
+   Reglas ya decididas: no cargar `periodo.tipo` distinto de 'anual' ni `nombreNoCoincide` (periodo.mjs ya reconoce temporadas "2009-10": 226 -> 15
+   marcados); excluir `no_es_rubro`; el alta de un club nuevo va en el mismo commit que su primer año.
 2. **Filas que no son rubros:** en el piloto C+D, 160 de 726 filas llegaron a Claude y él las marcó `no_es_rubro` (subtotales, desgloses ya incluidos,
    partidas de balance; Rubin Kazan 2025 34 de 70, Polissya 19 de 43). Mejorar `filas-rubro.mjs` / `pipeline.mjs` (etapa 3) con esos ejemplos.
 3. **Decisiones de Guido antes de la primera alta escrita** (to-do 112): 5 perímetros consolidados (Inter, Atalanta, Go Ahead Eagles, Başakşehir,

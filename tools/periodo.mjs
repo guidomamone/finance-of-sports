@@ -177,7 +177,14 @@ export function periodoDe(mdText, nombreArchivo = '') {
   const nom = basename(nombreArchivo);
   const fn = fechasDe(nom.replace(/_/g, '-'))[0];
   if (res.cierre && fn && iso(fn) !== res.cierre) res.nombreNoCoincide = true;
-  else if (res.cierre && !fn) { const ys = [...nom.matchAll(/(?<!\d)(19|20)\d{2}(?!\d)/g)].map((x) => x[0]); if (ys.length && !ys.includes(res.cierre.slice(0, 4))) res.nombreNoCoincide = true; }
+  else if (res.cierre && !fn) {
+    const ys = [...nom.matchAll(/(?<!\d)(19|20)\d{2}(?!\d)/g)].map((x) => x[0]);
+    // Temporada abreviada "2009-10" / "2023_24": el año de CIERRE es el segundo (misma regla que guessYear() de onboard.mjs). BUG REAL
+    // (encontrado probando tools/cargar.mjs, 2026-09-30): el regex de arriba solo veía "2009", y 165 de los 226 documentos marcados
+    // `nombreNoCoincide` eran temporadas así (Los Andes 2009-10 con cierre 2010-06-30, Nacional 2023-24, Lazio 2024-25, los alemanes).
+    for (const m of nom.matchAll(/(?<!\d)((?:19|20)\d{2})[-_](\d{2})(?!\d)/g)) { const fin = Number(m[1].slice(0, 2) + m[2]); if (fin === Number(m[1]) + 1) ys.push(String(fin)); }
+    if (ys.length && !ys.includes(res.cierre.slice(0, 4))) res.nombreNoCoincide = true;
+  }
   return res;
 }
 

@@ -56,7 +56,7 @@ import vm from 'node:vm';
 import { filasSuma, ladosPorEstructura, ladoPorPalabras, esResultado, noEsRubro as noEsRubroFR } from './filas-rubro.mjs';
 // Vocabulario multi-idioma y normalización (Versión 316): tools/vocabulario.mjs, el mismo de pipeline.mjs / filas-rubro.mjs / extract-table-rows.mjs.
 import { derivado, ubicar } from './rutas.mjs';
-import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE } from './vocabulario.mjs';
+import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE, FLUJO_O_PATRIMONIO_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -80,10 +80,12 @@ const VENTANAS_LIBRES = args.includes('--ventanas-libres'); // ver findExpansion
 const SIN_MISTRAL_NUEVO = args.includes('--sin-mistral-nuevo');
 const SOLO_PRINCIPALES = args.includes('--ancla-solo-principales'); // ver selectAncla()
 const concurrency = Number(flagVal('--concurrencia') || 4);
-if (!BACKTEST && !flagVal('--pdf')) { console.error('Uso: node tools/proponer-carga.mjs --backtest [--limit N]   o   --pdf <ruta> [--club id]'); process.exit(1); }
+// Importado como módulo (tools/cargar.mjs, la etapa 6, usa seleccionarFilas() y briefingFor()) no se corre nada: solo como comando.
+const IS_MAIN = import.meta.url === `file://${process.argv[1]}`;
+if (IS_MAIN && !BACKTEST && !flagVal('--pdf')) { console.error('Uso: node tools/proponer-carga.mjs --backtest [--limit N]   o   --pdf <ruta> [--club id]'); process.exit(1); }
 
 // ---------------------------------------------------------------- datos del sitio
-function loadSite() {
+export function loadSite() {
   const sandbox = { console, window: {} }; sandbox.window.window = sandbox.window;
   const ctx = vm.createContext(sandbox);
   const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
@@ -99,7 +101,7 @@ const TOTAL_RE = TOTAL_INICIO_RE;
 const REV_TOTAL_RE = TOTAL_INGRESOS_RE;
 const RESULT_RE = RESULTADO_EJERCICIO_RE;
 
-function parseNumber(raw) {
+export function parseNumber(raw) {
   let s = String(raw).trim().replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
   if (!/\d/.test(s)) return null;
   s = s.replace(/(\d)\s+(?=\d)/g, '$1');
@@ -258,6 +260,17 @@ function noEsRubro(label, esSuma) {
 // deudas por vencimiento. Sin excluirlas, una ventana de filas del flujo de fondos puede sumar por casualidad lo mismo que una línea del
 // estado de resultados (sobre todo con importes chicos) y la estrategia "ancla" la tomaba como su detalle.
 const NO_PL_RE = /balance sheet|bilanz|balanco patrimonial|balance general|estado de situacion|situacion financiera|financial position|stato patrimoniale|balansregnskap|balanse|aktiva|passiva|cash ?flow|kapitalfluss|flujo de efectivo|flujos de efectivo|fluxo de caixa|flussi di cassa|kontantstrom|changes in equity|eigenkapitalspiegel|patrimonio neto|mutacoes do patrimonio|anlagevermoegen|anlagespiegel|bienes de uso|verbindlichkeitenspiegel|restlaufzeit|fixed assets|intangible assets|creditors|debtors|financial instruments|share capital|leasing commitment|tax on (loss|profit)|deferred tax|taxation|impuesto diferido|imposto diferido|latente steuern|employees|directors.? remuneration/;
+// NO_PL_RE solo tenía estas palabras (sobre todo en,de,es,pt,it,no). Encontrado probando tools/cargar.mjs (2026-09-30): el ancla recorría
+// el BALANCE de Vejle ("Aktiver" / "Passiver", danés), el flujo de fondos de PSV ("Kasstroomoverzicht", neerlandés: "Uitgaven inzake
+// vergoedingssommen" terminaba como un gasto) y el de Dinamo Zagreb ("Izvještaj o novčanim tokovima"). Se suman los títulos de flujo de
+// efectivo y de cambios en el patrimonio de tools/vocabulario.mjs (29 idiomas) y, por las FILAS, un balance: una fila "total del activo /
+// del pasivo" (TOTAL_ACTIVO / TOTAL_PASIVO del vocabulario) o una fila que es solo "Aktiver", "Passiver", "Activo", "Assets"...
+const BALANCE_FILA_RE = /^\**\s*(total\s+)?(aktiver|passiver|aktiva|passiva|activo|pasivo|ativo|passivo|assets|liabilities|activa|passiva|eiendeler|tillgangar)\s*(i alt|ialt|total)?\**\s*$/;
+function esNoPL(t, cols, rows) {
+  const sec = norm(`${String(t.section || '').split('/').pop()} ${cols.join(' ')}`);
+  if (NO_PL_RE.test(sec) || FLUJO_O_PATRIMONIO_RE.test(sec)) return true;
+  return (rows || []).some((r) => { const l = norm(String(r.rawLabel || '')); return BALANCE_FILA_RE.test(l) || TOTAL_ACTIVO_RE.test(l) || TOTAL_PASIVO_RE.test(l); });
+}
 // "davon" / "of which": sub-partida de la fila anterior, ya incluida en ella. Si se cuenta como una fila más, la ventana suma de más.
 const DAVON_RE = /^\**\s*[-–]?\s*(davon|hiervon|darunter|of which|thereof|dos quais|das quais|de los cuales|de las cuales|di cui|hvorav|heraf|dont)\b/;
 const LETRAS_RE = /[a-zͰ-ϿЀ-ӿ぀-ヿ一-鿿가-힯]/g;
@@ -333,7 +346,7 @@ function prepTable(t, idx, year, mdText, refM) {
   const secText = norm(`${t.section || ''} ${cols.join(' ')}`);
   // noPL mira solo el ÚLTIMO título de la sección: el camino entero ("6. Latente Steuern / II. GuV / 1. Umsatzerlöse", Stuttgart) arrastra
   // títulos de secciones anteriores y descartaba la nota de ingresos.
-  return { idx: String(idx), cols, page: t.page, section: t.section || '', mult: sc.mult, textMult: textScale.mult, primary: !!t.likelyRelevant && STATEMENT_RE.test(secText), isStatement: !!t.likelyRelevant && (STATEMENT_RE.test(secText) || !!sideOfTable(t)), noPL: NO_PL_RE.test(norm(`${String(t.section || '').split('/').pop()} ${cols.join(' ')}`)), tside: sideOfTable(t), rows, nums, sums, leaves, unit: Math.max(0, ...nums.map((r) => r.unit || 0)) };
+  return { idx: String(idx), cols, page: t.page, section: t.section || '', mult: sc.mult, textMult: textScale.mult, primary: !!t.likelyRelevant && STATEMENT_RE.test(secText), isStatement: !!t.likelyRelevant && (STATEMENT_RE.test(secText) || !!sideOfTable(t)), noPL: esNoPL(t, cols, t.rows), tside: sideOfTable(t), rows, nums, sums, leaves, unit: Math.max(0, ...nums.map((r) => r.unit || 0)) };
 }
 
 // Listas con viñetas como pseudo-tablas (Bayern publica la GuV del Einzelabschluss así: "- Einnahmen aus dem Spielbetrieb 260,7 Mio. Euro",
@@ -483,6 +496,9 @@ function selectAncla(pts, pool) {
       // "abría" en la tabla de NIIF 15 por momento de reconocimiento (2 filas), que suma lo mismo y no sirve para categorizar.
       if (!exp || exp.length <= s.n) { if (exp) for (const id of [...used]) if (!usedAntes.has(id)) used.delete(id); continue; }
       nExpandidas++;
+      // `ancla`: el renglón del estado que se abrió (lo usa tools/cargar.mjs: si la etapa 3 del pipeline categorizó ese renglón y no las
+      // filas de su nota, puede volver a cargarlo entero en vez de dejar el detalle sin categoría).
+      exp.forEach((x) => { x.ancla ??= { label: s.label, native: s.M, tside: lado, page: t.page }; });
       for (let k = pos(s.i) - s.n; k <= pos(s.i); k++) covered.add(t.nums[k].i);
       exp.forEach(push); exp.forEach((x) => vistos.add(kM(x.native)));
     }
@@ -497,7 +513,7 @@ function selectAncla(pts, pool) {
       // En un estado principal el título ("Profit and Loss Account and Other Comprehensive INCOME") no dice el lado de cada fila: mezcla los dos.
       const lado = ladoFila(label, r.M, lados[r.i], t.primary ? null : t.tside);
       const exp = esResultado(label) ? null : expandRow(r, lado, pool, new Set([t.idx]), used, 1, [t.idx]);
-      if (exp) { nExpandidas++; exp.forEach(push); exp.forEach((x) => vistos.add(kM(x.native))); continue; }
+      if (exp) { nExpandidas++; exp.forEach((x) => { x.ancla ??= { label, native: r.M, tside: lado, page: t.page }; }); exp.forEach(push); exp.forEach((x) => vistos.add(kM(x.native))); continue; }
       push({ label, page: t.page, native: r.M, tside: lado, origen: `estado ${t.idx}` });
     }
   }
@@ -555,7 +571,11 @@ function selectPrecedente(pool, statementRaw, clubData, year) {
 }
 
 // ---------------------------------------------------------------- la propuesta
-async function propose({ briefing, mdText, clubData, generic, club, year }) {
+// QUÉ FILAS Y MONTOS (sin Jev ni ninguna API): la parte de propose() que decide qué filas del documento serían los rubros del ejercicio,
+// con su importe en MILLONES de moneda nativa y su lado. La usa también tools/cargar.mjs (etapa 6), que pone la categoría desde el
+// `.categorias.json` del pipeline en vez de preguntarle a Jev. Devuelve además los candidatos a total impreso (`totalCands`), el total de
+// ingresos y el resultado del ejercicio detectados por etiqueta, y las tablas preparadas (`pts`, para buscar subtotales impresos).
+export function seleccionarFilas({ briefing, mdText, clubData, year }) {
   const tables = (briefing.tables || []).filter((t) => t.likelyRelevant && (STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`)) || sideOfTable(t)));
   if (!tables.length) return { ok: false, motivo: 'sin estado de resultados' };
   const others = Object.entries(clubData.fiscalYearMeta || {}).filter(([y]) => Number(y) !== Number(year)).map(([, m]) => Math.abs(m.officialTotalRevenue || 0)).filter(Boolean).sort((a, b) => a - b);
@@ -598,10 +618,17 @@ async function propose({ briefing, mdText, clubData, generic, club, year }) {
     const statementRaw = raw.map((r) => ({ ...r, tside: ladoFila(r.label, r.native, null, r.tside) }));
     const sel = TABLA === 'cierre' ? selectCierre(pool, statementRaw) : TABLA === 'precedente' ? selectPrecedente(pool, statementRaw, clubData, year) : selectAncla(pts, pool);
     if (sel.raw.length) raw = sel.raw;
-    extra = { nExpandidas: sel.nExpandidas ?? null, nDuplicadas: sel.nDuplicadas ?? null, notasUsadas: sel.notasUsadas };
+    extra = { nExpandidas: sel.nExpandidas ?? null, nDuplicadas: sel.nDuplicadas ?? null, notasUsadas: sel.notasUsadas, pts };
   }
   if (!raw.length) return { ok: false, motivo: 'no se pudo ubicar la columna del ejercicio' };
   const totalCands = cands.map((c) => ({ ...c, M: Math.round(c.M * 1e4) / 1e4 }));
+  return { ok: true, raw, totalCands, docRevenueTotal, docResult, descartadas, refM, extra, pts: extra.pts || null };
+}
+
+async function propose({ briefing, mdText, clubData, generic, club, year }) {
+  const sf = seleccionarFilas({ briefing, mdText, clubData, year });
+  if (!sf.ok) return sf;
+  const { raw, totalCands, docRevenueTotal, docResult, descartadas, refM } = sf; const extra = { ...sf.extra }; delete extra.pts;
   // ¿Cierra? La suma de las filas propuestas del lado ingresos (el lado que se le pasa a Jev) coincide (±0,5%) con algún total de ingresos
   // impreso en el documento (fila de total, subtotal que suma las de arriba o encabezado de cifras clave). Mide coherencia interna, sin
   // mirar producción (ver "Trampas de medición" en Admin/HANDOFF-pipeline.md: el total de producción muchas veces no está impreso).
@@ -629,7 +656,7 @@ function run(script, argv) {
     c.on('close', () => res(out)); c.on('error', () => res(''));
   });
 }
-async function briefingFor(club, year, md) {
+export async function briefingFor(club, year, md) {
   const out = resolve(root, derivado(md, '.briefing.json'));
   // El briefing en disco puede ser de antes de que se arreglaran las tools (palabras clave de idiomas, sumas): se rehace si es más viejo que ellas.
   const toolsMtime = Math.max(...['tools/prepare-onboarding.mjs', 'tools/extract-table-rows.mjs', 'tools/sum-check.mjs'].map((f) => statSync(resolve(root, f)).mtimeMs));
@@ -729,8 +756,8 @@ function report(rows) {
   console.log('\n' + L.slice(4, 20).join('\n'));
 }
 
-if (BACKTEST) await backtest();
-else {
+if (IS_MAIN && BACKTEST) await backtest();
+else if (IS_MAIN) {
   const site = loadSite(); const pdf = flagVal('--pdf');
   const q = JSON.parse(await run('tools/onboard.mjs', ['--quien', pdf, ...(flagVal('--club') ? ['--club', flagVal('--club')] : [])]));
   const md = pdf.replace(/\.pdf$/i, '.md'); const cd = site.generic[q.clubId];
