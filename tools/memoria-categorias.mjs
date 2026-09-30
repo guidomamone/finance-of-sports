@@ -30,12 +30,24 @@
 import { readFileSync, appendFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { normalizar } from './vocabulario.mjs';
+import { clubDeRuta } from './carpetas-clubes.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 export const ARCHIVO = resolve(ROOT, 'Admin', 'categorias-aprendidas.jsonl');
 export const MIN_REGISTRO = 0.8;
 export const MIN_PRECEDENTE = 0.9;
 const clave = (club, lado, label) => `${club}|${lado}|${normalizar(label)}`;
+// EL CLUB SE RECALCULA DESDE LA CARPETA DEL DOCUMENTO al leer, no se confía en el guardado (BUG REAL al sembrar, 2026-09-30): respuestas de
+// Claude de antes de la Versión 309 traían el club EQUIVOCADO (el Athletic Club brasileño figuraba como 'athleticclub', que es el Athletic de
+// Bilbao), y un club nuevo tiene un id PROVISORIO (el slug de su carpeta, 'vitoria-guimaraes') distinto del que recibe al darse de alta
+// ('vitoriaguimaraes-pt'). Con la regla única de tools/carpetas-clubes.mjs: club del sitio si la carpeta resuelve, si no el mismo slug
+// provisorio que usa el pipeline (onboard.mjs: nombre de la carpeta en minúsculas, sin acentos, espacios -> guiones).
+const slug = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, '-');
+function clubDe(x) {
+  if (!x.md) return x.club;
+  const r = clubDeRuta(x.md);
+  return r.clubId || (r.carpeta ? slug(r.carpeta) : x.club);
+}
 
 // Guarda las respuestas de Claude de UN documento (las filas de su .categorias.json con escalón 2).
 export function registrarAprendidas({ club, year, md, modelo, rubros }) {
@@ -57,6 +69,7 @@ export function lineasAprendidas({ produccion = [], minConf = MIN_REGISTRO } = {
   for (const l of readFileSync(ARCHIVO, 'utf8').split('\n')) {
     if (!l.trim()) continue;
     let x; try { x = JSON.parse(l); } catch { continue; }
+    x.club = clubDe(x);
     ultima.set(clave(x.club, x.lado, x.label), x);
   }
   const out = [];

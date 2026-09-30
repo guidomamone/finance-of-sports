@@ -17,6 +17,8 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 319 — Memoria de categorías: lo que Claude resuelve y Jev no sabía queda para la próxima (2026-09-30)
 
+- Sembrada con 148 rubros de 61 documentos. Bug encontrado al sembrar: respuestas viejas traían el club equivocado (el Athletic Club brasileño como 'athleticclub', el de Bilbao) y los clubes nuevos tienen id provisorio: la memoria recalcula el club desde la carpeta del documento con `carpetas-clubes.mjs` al leer.
+- `inventario-transcripciones.mjs --verificar --estado <x>`: revalida solo los de ese estado. Pasos gratis corridos: los 7 `sin-verificar` revalidados; los 43 validados sin preparar (memorias de más de 100 páginas, que `--max-paginas` dejaba afuera) preparados: 3 con rubros, 2 sin rubros, 38 `sin-tablas` (transcripciones viejas sin tablas: hay que rehacerlas con Mistral, pago).
 - `tools/memoria-categorias.mjs` (nuevo) + `Admin/categorias-aprendidas.jsonl`: cada rubro que Claude por API categoriza con confianza >= 0,80 queda registrado (club, año, lado, rubro, glosa, categoría, confianza, motivo, qué decía Jev). Pedido de Guido: "debería quedar documentado para que Jev la próxima vez sepa".
 - `categorizar-claude.mjs`: registra lo que resuelve; usa lo aprendido con >= 0,90 como PRECEDENTE del mismo club (escalón 0, gratis: el año siguiente no vuelve a pagar el mismo rubro) y lo aprendido con >= 0,80 como contexto y ejemplos. `jev-categorizar.mjs --listos`: lo aprendido entra entre los ejemplos parecidos que ve Jev. Lo cargado en el sitio siempre gana; los backtests no usan la memoria. `--sembrar` la llena con los `.categorias.json` ya hechos.
 

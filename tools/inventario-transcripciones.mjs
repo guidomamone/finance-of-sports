@@ -40,6 +40,7 @@
 //   node tools/inventario-transcripciones.mjs                     # regenera el registro y muestra el resumen
 //   node tools/inventario-transcripciones.mjs --verificar         # además corre la validación GRATIS (sin API)
 //   node tools/inventario-transcripciones.mjs --verificar --dir Clubes/Brasil --limit 50
+//   node tools/inventario-transcripciones.mjs --verificar --estado sin-verificar   # revalida solo los de ese estado
 //   node tools/inventario-transcripciones.mjs --listar revisar    # lista los PDFs en ese estado
 //   node tools/inventario-transcripciones.mjs --listar pendiente-segunda-voz --dir Clubes/Colombia
 // ============================================================================
@@ -204,7 +205,10 @@ let entries = pdfsAll.map((pdfAbs) => {
 const scope = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
 
 if (doVerify) {
-  const todo = scope.filter((e) => e.tieneMd && !e.cargado && currentState(e, verifs.get(e.md)).status !== 'listo').slice(0, limit);
+  // `--estado <x>` (Versión 320): solo los que están en ese estado (ej. sin-verificar); sin él, todos los no listos (revalida también los
+  // `revisar` y `pendiente-segunda-voz` ya validados con el mismo contenido: gratis pero lento).
+  const soloEstado = flagVal('--estado');
+  const todo = scope.filter((e) => e.tieneMd && !e.cargado && currentState(e, verifs.get(e.md)).status !== 'listo' && (!soloEstado || currentState(e, verifs.get(e.md)).status === soloEstado)).slice(0, limit);
   console.log(`Validando ${todo.length} documento(s) sin gastar API...`);
   let i = 0;
   for (const e of todo) {
