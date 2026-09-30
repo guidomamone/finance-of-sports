@@ -69,6 +69,9 @@ import { createHash } from 'node:crypto';
 import { numeroDe, filasSuma, noEsRubro, ladosPorEstructura, columnaDeImportes } from './filas-rubro.mjs';
 import { jevAlDia, categoriasAlDia } from './huellas.mjs';
 import { resumenAltas } from './altas-registro.mjs';
+// Vocabulario multi-idioma (Versión 314): título de estado de resultados, flujo/patrimonio, palabras de ingreso/gasto, totales y la
+// normalización del texto viven en tools/vocabulario.mjs (29 idiomas). Acá solo queda la lógica de la etapa 3.
+import { normalizar, TITULO_RESULTADOS_RE, FLUJO_O_PATRIMONIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, esTotal } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -202,11 +205,11 @@ function clubAndYear(pdf) {
   return { club: folder, year };
 }
 
-// Lado de una tabla (ingreso o gasto) por las palabras de su título y sus columnas, en varios idiomas. Si aparecen las dos
-// familias (o ninguna) no se adivina: queda sin lado. Saber el lado sube mucho el acierto de Jev (69,5% -> 74,2% en el backtest).
-const SIDE_REV = /доход|выручк|прибыл|доходи|vynos|trzb|opbrengsten|omzet|収益|収入|수익|매출|收入|ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|rendiment|subsidi|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
-const SIDE_EXP = /расход|затрат|витрат|убыт|naklad|kosten|費用|支出|비용|费用|gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|kosten|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
-const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
+// Lado de una tabla (ingreso o gasto) por las palabras de su título y sus columnas (INGRESOS / GASTOS de tools/vocabulario.mjs). Si aparecen
+// las dos familias (o ninguna) no se adivina: queda sin lado. Saber el lado sube mucho el acierto de Jev (69,5% -> 74,2% en el backtest).
+const SIDE_REV = INGRESOS_TABLA_RE; // sin las palabras que solo dicen el lado de una FILA (subvenciones, "sales"): ver INGRESOS_FILA
+const SIDE_EXP = GASTOS_RE;
+const norm = normalizar;
 function sideOfTable(t) {
   const h = norm(`${t.section || ''} ${(t.columns || []).join(' ')}`);
   const r = SIDE_REV.test(h); const x = SIDE_EXP.test(h);
@@ -214,9 +217,11 @@ function sideOfTable(t) {
 }
 // ¿La tabla es (parte de) un ESTADO DE RESULTADOS / de recursos y gastos? Sin al menos una así, el documento no es un estado
 // financiero con rubros que categorizar (actas, memorias narrativas, certificaciones): un acta del Aris colaba 16 "rubros".
-const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|kar veya zarar|финансов[а-я]* результат|фінансов[а-яії]* результат|zysk|vysledovka|vykaz zisku|tulos|финансовых результатах|прибылях и убытках|фінансових результатах|прибутки та збитки|vykaz zisku a ztraty|zisku a ztraty|winst-? ?en-? ?verlies|損益計算書|収支計算書|손익계산서|利润表|损益表|^(recursos|gastos|ingresos|egresos|revenues?|expenses|income|expenditure)$|concepto (del )?(ingreso|gasto)|income and expenditure|rendimentos e gastos|rendimentos e perdas|gastos e perdas|demonstracao dos resultados/;
+// Los títulos (en 29 idiomas, con sus formas gramaticales) son TITULO_RESULTADOS de tools/vocabulario.mjs.
+const STATEMENT_RE = TITULO_RESULTADOS_RE;
 const isStatement = (t) => STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`));
-const isTotal = (l) => /^\s*\**\s*(total|subtotal|sum\b|suma)/i.test(String(l || '')) || /^\s*\**\s*(totale|totaal|gesamt|ukupno|total\s)/i.test(String(l || ''));
+// Total/subtotal al comienzo ("Total ingresos", "Sum driftsinntekter", "Итого") o al final ("Tržby celkem", "Indtægter i alt").
+const isTotal = esTotal;
 const hasNumber = (vals) => vals.some((v) => /\d/.test(String(v)));
 let nDescartadas = 0; let nJev = 0; let nSin = 0; let nFail = 0; let nSinTablas = 0;
 for (const e of ready) {
@@ -254,7 +259,8 @@ for (const e of ready) {
   // Estados de FLUJO DE EFECTIVO y de CAMBIOS EN EL PATRIMONIO: no tienen rubros de ingresos/gastos para el sitio, pero sus filas dicen
   // "resultado", "ingresos", "amortizaciones" y pasaban el filtro de relevancia. En los pilotos C y D eran buena parte de las filas que
   // después Claude marcaba `no_es_rubro` (pagando): Baník 1997 págs. 15 y 18, Polissya pág. 7. Se excluyen por su título/columnas/filas.
-  const NO_RESULTADOS_RE = /cash ?flow|flujo(s)? de efectivo|fluxo(s)? de caixa|flusso di cassa|rendiconto finanziario|kapitalflussrechnung|cashflow|kontantstrom|pengestr|penezni tok|peneznich tok|рух грошових|движени[ея] денежных|nakit akis|variazioni del patrimonio|cambios en el patrimonio|evolucion del patrimonio|mutacoes do patrimonio|mutacoes no patrimonio|changes in equity|eigenkapitalveraenderung|egenkapitaloppstilling|власного капіталу|собственного капитала|ozkaynak degisim|zmeny vlastniho kapitalu|залишок на початок|остаток на начало/;
+  // Títulos de flujo de efectivo / cambios en el patrimonio / saldo inicial: tools/vocabulario.mjs (FLUJO_O_PATRIMONIO_RE).
+  const NO_RESULTADOS_RE = FLUJO_O_PATRIMONIO_RE;
   const esFlujoOPatrimonio = (t) => NO_RESULTADOS_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')} ${(t.rows || []).slice(0, 3).map((r) => r.rawLabel).join(' ')}`));
   for (const t of b.tables || []) {
     if (!(t.likelyRelevant || porTitulo(t)) || !hasStatement || esFlujoOPatrimonio(t)) continue;

@@ -244,7 +244,7 @@ function suggestCategories(clubId, tables) {
     }
   }
   if (!labels.length) {
-    return { skipped: true, reason: 'Ninguna tabla se marcó "likelyRelevant" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver sus RELEVANT_KEYWORDS).' };
+    return { skipped: true, reason: 'Ninguna tabla se marcó "likelyRelevant" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs).' };
   }
   const res = runNode('tools/suggest-category-precedent.mjs', [clubId, '--stdin', '--json'], labels.join('\n'));
   if (res.code !== 0 && !res.stdout.trim()) {

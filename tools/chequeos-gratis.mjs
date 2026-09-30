@@ -74,6 +74,7 @@ import vm from 'node:vm';
 import { NUM_RE, norm as digitos, THRESHOLDS as VN } from './verify-numbers.mjs';
 import { numeroDe, norm as normTxt } from './filas-rubro.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
+import { TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 
@@ -212,8 +213,9 @@ export function respaldoFilas(tablas) {
 }
 
 // ---------------------------------------------------------------- chequeo 4: activo = pasivo + patrimonio (todo el documento)
-const ACTIVO_RE = /^(total (del? )?(activo|ativo|actif|attivo|activa|assets|aktiva)\b|(activo|ativo|actif|attivo) total|total assets|summe aktiva|aktiva gesamt|bilanzsumme|totaal (der )?activa|sum eiendeler|eiendeler i alt|aktiver i alt|summa tillgangar|ukupna aktiva|ukupno aktiva|σύνολο ενεργητικού|συνολο ενεργητικου|итого актив|баланс|toplam varl|aktywa razem|aktiva celkem)/;
-const PASIVO_RE = /^(total (del? )?(pasivo|passivo|passif|passivo|passiva|liabilities|equity and liabilities|patrimonio neto y pasivo)|total pasivo (y|mas|\+) patrimonio|total (do )?passivo e patrim|total liabilities and (equity|shareholders|net assets|members)|total equity and liabilities|summe passiva|passiva gesamt|totaal (der )?passiva|sum egenkapital og gjeld|passiver i alt|summa eget kapital och skulder|ukupna pasiva|ukupno pasiva|σύνολο παθητικού|συνολο παθητικου|итого пассив|toplam kaynak|pasywa razem|pasiva celkem)/;
+// Versión 316: las listas de "total del activo" / "total del pasivo" salen de tools/vocabulario.mjs (29 idiomas; antes ~12 a mano acá).
+const ACTIVO_RE = TOTAL_ACTIVO_RE;
+const PASIVO_RE = TOTAL_PASIVO_RE;
 function respaldoBalance(paginas) {
   const act = []; const pas = [];
   paginas.forEach((p) => tablasDe(p.body).forEach((tb, ti) => tb.filas.forEach((f, fi) => {

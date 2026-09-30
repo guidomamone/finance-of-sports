@@ -131,42 +131,17 @@ function detectNumberFormat(text) {
   return { format: labels[winners[0]], evidence: counts };
 }
 
-// Palabras clave de ingresos/gastos, multi-idioma. Se usa para MARCAR relevancia, no para descartar filas
-// — con --relevant se filtra, pero por default se conserva todo (una palabra clave que falta para un idioma
-// nuevo no puede perder datos en silencio).
-// AMPLIADA el 2026-09-29: al correr prepare-onboarding sobre los 21 documentos del piloto del inventario, los balances
-// en ALEMÁN (Mönchengladbach, Hamburger), CROATA (Dinamo, Gorica), GRIEGO con acentos, FRANCÉS/NEERLANDÉS (Anderlecht)
-// y DANÉS no marcaban NINGUNA tabla como relevante (0 de 13-35), así que el precedente de categorías se saltaba en silencio.
-// Los términos se comparan sin acentos ni diéresis (normalizeText), así "αποτέλεσμα"/"αποτελεσμα", "résultat"/"resultat"
-// y "omsætning"/"omsaetning" no necesitan una entrada por variante.
-const RELEVANT_KEYWORDS = [
-  // resultado / income statement
-  'resultado', 'conto economico', 'income statement', 'profit and loss', 'regnskap', 'resultatregnskap',
-  'αποτελεσμα', 'gewinn- und verlust', 'gewinn und verlust', 'guv', 'ergebnis', 'erfolgsrechnung',
-  'racun dobiti', 'dobiti i gubitka', 'compte de resultat', 'resultatenrekening', 'resultatopgor', 'resultatopgo',
-  'demonstracao do resultado', 'demonstracao de resultado', 'profit or loss', 'comprehensive income', 'statement of operations',
-  // ingresos
-  'recaudac', 'ingreso', 'recurso', 'cuota', 'venta', 'ricavi', 'proventi', 'revenue', 'income', 'inntekt', 'εσοδα',
-  'umsatz', 'ertrag', 'ertraege', 'prihod', 'produits', 'opbrengst', 'omsaetning', 'indtaegt', 'receita', 'faturamento',
-  'vendas', 'sponsor', 'przychod', 'gelir', 'intaekt',
-  // gastos
-  'gasto', 'egreso', 'costo', 'costi', 'oneri', 'expense', 'cost', 'kostnad', 'εξοδα',
-  'aufwand', 'aufwend', 'rashod', 'troskov', 'charges', 'kosten', 'omkostning', 'udgift', 'despesa', 'custo', 'koszt', 'gider',
-  // 2026-09-29 (segundo lote de 50): documentos en ruso/ucraniano, checo, neerlandés, japonés, coreano y chino no marcaban ninguna tabla
-  // como relevante. Cirílico escrito ya sin diéresis/breve (normalizeText).
-  'доход', 'дохід', 'выручк', 'виручк', 'расход', 'витрат', 'затрат', 'прибыл', 'прибут', 'убыт', 'збит', 'результат',
-  'vynos', 'naklad', 'trzb', 'vysledek', 'zisk', 'ztrat', 'winst', 'verlies', 'opbrengst', 'omzet', 'baten', 'lasten', 'przychod', 'wynik',
-  '収益', '収入', '費用', '支出', '損益', '営業', '수익', '매출', '비용', '손익', '收入', '费用', '利润', '营业',
-  // 2026-09-30 (piloto C, Galatasaray): el estado de resultados turco se titula "Kar veya Zarar" / "Kâr veya Zarar Kısmı" y la cifra de
-  // ventas es "Hasılat"; 'gelir' solo no alcanzaba porque el título quedaba en la fila, no en la sección.
-  'kar veya zarar', 'hasilat', 'zarar',
-];
-
-// Minúsculas, sin acentos/diéresis y con los dígrafos alemanes/daneses reducidos a su forma sin signo.
-function normalizeText(t) {
-  return String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/ß/g, 'ss').replace(/æ/g, 'ae').replace(/ø/g, 'o').replace(/å/g, 'a').replace(/ð/g, 'd').replace(/ł/g, 'l');
-}
+// Palabras clave de ingresos/gastos/resultados, multi-idioma: DESDE LA VERSIÓN 314 viven en tools/vocabulario.mjs (RELEVANTE_RE = título de
+// estado de resultados + ingresos + gastos + palabras de resultado, en 29 idiomas), junto con la ÚNICA normalización del pipeline
+// (normalizar(): minúsculas, sin acentos/diéresis, ß->ss, æ->ae, ø->o, ł->l, ı->i, Hangul recompuesto...). Se usa para MARCAR relevancia, no
+// para descartar filas — con --relevant se filtra, pero por default se conserva todo (una palabra clave que falta para un idioma nuevo no puede
+// perder datos en silencio).
+// Historia de la lista (antes RELEVANT_KEYWORDS, acá): ampliada el 2026-09-29 porque los balances en ALEMÁN (Mönchengladbach, Hamburger),
+// CROATA (Dinamo, Gorica), GRIEGO con acentos, FRANCÉS/NEERLANDÉS (Anderlecht) y DANÉS no marcaban NINGUNA tabla como relevante (0 de 13-35) y
+// el precedente de categorías se saltaba en silencio; después ruso/ucraniano, checo, neerlandés, japonés, coreano y chino (segundo lote de 50) y
+// el turco "Kâr veya Zarar" / "Hasılat" (piloto C, Galatasaray). Era una comparación por substring ('includes'): ahora cada término tiene su
+// límite de palabra (ver la notación en vocabulario.mjs), así 'venta' ya no encuentra "inventario" ni 'ertrag' encuentra "Vertrag".
+import { normalizar as normalizeText, RELEVANTE_RE } from './vocabulario.mjs';
 
 // Versión 312 (piloto D, Baník Ostrava 1997): en los formularios oficiales checos, ucranianos y rusos la PRIMERA columna es un código
 // ("I.", "A.", "B. 1.", "II. 1.") y el texto del rubro está en la SEGUNDA ("Tržby za prodej zboží"). Sin esto los rubros salían como "I.",
@@ -187,13 +162,13 @@ function etiquetaEnSegundaColumna({ columns, rows }) {
 // tools/pipeline.mjs lo usa SOLO junto con un título de estado de resultados en el texto de la misma página.
 function filasRelevantes(rows) {
   let n = 0;
-  for (const r of rows) { const l = normalizeText(r.rawLabel); if (RELEVANT_KEYWORDS.some((kw) => l.includes(kw))) n++; if (n >= 3) return true; }
+  for (const r of rows) { const l = normalizeText(r.rawLabel); if (RELEVANTE_RE.test(l)) n++; if (n >= 3) return true; }
   return false;
 }
 
 function isLikelyRelevant(section, columns) {
   const hay = normalizeText(`${section || ''} ${(columns || []).join(' ')}`);
-  return RELEVANT_KEYWORDS.some((kw) => hay.includes(kw));
+  return RELEVANTE_RE.test(hay);
 }
 
 function isStrongHeading(line) {

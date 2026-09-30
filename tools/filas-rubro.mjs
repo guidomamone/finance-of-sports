@@ -20,10 +20,16 @@
 //   ladoPorPalabras(etiqueta)           -> lado por las palabras de la etiqueta (impuestos = gasto; deducciones de la receita = ingreso).
 //   esResultado(etiqueta)               -> la etiqueta es un resultado/margen en cualquier parte ("Profit/(loss) before...", "Gewinn vor Steuern").
 //   columnaDeImportes(cols, filas, año) -> la columna de importes, sin confundirla con la de "Notas" (para que pipeline.mjs la adopte).
-//   REV_W / EXP_W                       -> palabras de ingreso / gasto en varios idiomas.
+//   REV_W / EXP_W                       -> palabras de ingreso / gasto en 29 idiomas (INGRESOS_RE / GASTOS_RE de tools/vocabulario.mjs).
+//   norm(t)                             -> la normalización ÚNICA del pipeline (normalizar() de tools/vocabulario.mjs; la usa también chequeos-gratis).
+//
+// VOCABULARIO (Versión 316): las palabras (ingreso, gasto, impuesto, resultado, total, notas) ya no están acá sino en tools/vocabulario.mjs,
+// un solo módulo con todos los idiomas y la notación de cada término (palabra entera / raíz / infijo). Lo que queda acá es la LÓGICA.
 // ============================================================================
 
-export const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss').replace(/\s+/g, ' ').trim();
+import { normalizar, INGRESOS_RE, GASTOS_RE, IMPUESTOS_RE, RESULTADO_INICIO_RE, GANANCIA_PERDIDA_RE, TOTAL_RE, NOTAS_COLUMNA_RE } from './vocabulario.mjs';
+
+export const norm = normalizar;
 
 export function numeroDe(raw) {
   let s = String(raw).trim().replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
@@ -56,9 +62,10 @@ export function filasSuma(nums) {
 
 const LETRAS = /[a-zͰ-ϿЀ-ӿ぀-ヿ一-鿿가-힯]/g;
 // Resultado / margen calculado: solo cuenta cuando la etiqueta ARRANCA así y es corta (una etiqueta larga como "Resultado por transacciones de
-// atletas" es un rubro real en Brasil).
-const RESULTADO_RE = /^\**\s*(\(?[=+\-]\)?\s*)?(ebit|ebitda|ebt|gross (profit|margin|result)|operating (profit|result|income|loss)|net (profit|income|loss|result|finance|financial)|profit (before|after|for)|(loss|profit) (for|before|after)|resultado|resultat|result\b|ergebnis|rohergebnis|betriebsergebnis|jahresueberschuss|jahresuberschuss|jahresfehlbetrag|risultato|utile|resultaat|bedrijfsresultaat|aarsresultat|arsresultat|driftsresultat|ordinaert|netto finans|finansresultat|ganancia|lucro|superavit|deficit|margen|zisk|ztrata|dobit|gubitak|zysk|strata|kar\b|zarar|tulos|αποτελεσμα|αποτελεσματα|μικτο|κερδη|ζημι|καθαρ|результат|прибыл|убыт|чистая|валовая)/;
-const SUBTOTAL_RE = /^\**\s*(\(?[=+\-]\)?\s*)?(sub ?total|total\b|totale\b|totaal|totales|sum\b|suma\b|gesamt|summe|ukupno|celkem|σύνολο|συνολο|итого|всего)/;
+// atletas" es un rubro real en Brasil). Palabras: RESULTADO_INICIO de tools/vocabulario.mjs. Subtotales: TOTAL_INICIO y TOTAL_FIN (idiomas que
+// ponen el total al final: "Tržby celkem", "Indtægter i alt", "Gelirler toplamı").
+const RESULTADO_RE = RESULTADO_INICIO_RE;
+const SUBTOTAL_RE = TOTAL_RE;
 
 export function noEsRubro(label, esSuma) {
   if (esSuma) return true;
@@ -85,11 +92,11 @@ export const esResultado = (label) => { const l = sinNumeracion(label); return R
 // ---- lado (ingreso o gasto) por la estructura de la tabla
 // Versión 312 (piloto D): ucraniano (дохід, виручка, витрати, собівартість), checo con y sin diacríticos (výnosy, tržby, náklady) y turco
 // (hasılat, gelir, gider, maliyet): Karpaty Lviv tenía lado en 11 de 41 filas porque solo estaban las palabras en ruso.
-export const REV_W = /inntekt|omsaetning|omsetning|indtaegt|umsatz|ertrag|ertraeg|ricavi|proventi|revenue|income|turnover|sales|ingres|recurso|receita|rendimento|vendas|subsidi|subvenc|zuschuss|grants? receivable|εσοδ|έσοδ|доход|дохід|доходи|выручк|виручк|prihod|výnos|vynos|tržb|trzb|hasilat|gelir|prodej|trzb|opbrengst|omzet|tulot|przychod/;
-export const EXP_W = /kostnad|omkostning|utgift|udgift|aufwand|aufwend|costi|oneri|expens|cost|gasto|egreso|despesa|custo|εξοδ|έξοδ|расход|затрат|витрат|собівартість|себестоимост|náklad|naklad|gider|maliyet|rashod|troskov|naklad|kosten|charges|wydatk|koszt|menot|giderler|gider/;
+export const REV_W = INGRESOS_RE;
+export const EXP_W = GASTOS_RE;
 // Impuestos: "Income tax", "Imposto sobre o rendimento", "Steuern vom Einkommen und vom Ertrag" tienen una palabra de ingreso adentro
 // (income/rendimento/Ertrag) pero son un GASTO. Sin esta regla, la regla de palabras los mandaba a ingresos.
-const TAX_W = /\btax|impuesto|imposto|steuer|\bskatt?\b|imposte|belasting|vergi|podatek|porez|φορο|налог|податок|irpj|csll/;
+const TAX_W = IMPUESTOS_RE;
 // "19. Ergebnis nach Steuern", "a) Löhne", "IV - Receitas": la numeración del renglón no deja que las reglas que miran el COMIENZO de la
 // etiqueta (resultado, total) la reconozcan. Stuttgart: "19. Ergebnis nach Steuern" no se reconocía como resultado y, por "Steuern", mandaba
 // a gastos las 21 filas de arriba (incluidos "1. Umsatzerlöse" y "4. Sonstige betriebliche Erträge").
@@ -97,7 +104,7 @@ const sinNumeracion = (label) => norm(label).replace(/^\**\s*(\(?[0-9]{1,2}[a-z]
 // Deducciones de la receta ("Deduções da receita", "Impostos incidentes sobre a receita", "Rebates"): en el sitio van del lado de los
 // INGRESOS (restan dentro de la receita líquida, convención de Bahia y los brasileños). Sin esta regla, "impostos" y "custo" los mandaban a gastos.
 const DEDUCCION_W = /dedu[cç]|(impostos|tributos|contribuicoes) (e contribuicoes )?incidentes sobre (a )?(receita|venda|faturamento)|impostos e contribuicoes incidentes$|sobre (a |la )?(receita|venta|ventas)|rebates|discounts allowed/;
-const RESULTADO_EN_CUALQUIER_LUGAR = /profit|loss\b|ergebnis|resultado|resultat|risultato|superavit|deficit|ebitda?\b|margin|margen|utile|lucro|prejuizo|beneficio|perdida|gewinn|verlust|ueberschuss|uberschuss|fehlbetrag|surplus/;
+const RESULTADO_EN_CUALQUIER_LUGAR = GANANCIA_PERDIDA_RE;
 export function ladoPorPalabras(label) {
   const l = sinNumeracion(label);
   if (DEDUCCION_W.test(l)) return 'revenue';
@@ -176,7 +183,7 @@ export function columnaDeImportes(columns, rows, year) {
   const width = Math.max(0, ...rows.map((r) => (r.values || []).length));
   for (let j = 0; j < width; j++) {
     const head = norm(cols[j + 1] || '');
-    if (/^(nota|notas|note|notes|anexo|anexos|nr\.?|ref\.?|no\.?|n\.?o)$|nota|note/.test(head)) continue;
+    if (NOTAS_COLUMNA_RE.test(head)) continue; // notas / anexo / código de fila, en 29 idiomas (tools/vocabulario.mjs)
     const vals = rows.map((r) => numeroDe((r.values || [])[j] ?? '')).filter((v) => v !== null);
     if (vals.length < Math.max(3, rows.length * 0.4)) continue;
     if (vals.every((v) => Number.isInteger(v) && Math.abs(v) <= 60)) continue; // números de nota sin encabezado

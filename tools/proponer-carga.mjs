@@ -54,6 +54,8 @@ import { resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 import vm from 'node:vm';
 import { filasSuma, ladosPorEstructura, ladoPorPalabras, esResultado, noEsRubro as noEsRubroFR } from './filas-rubro.mjs';
+// Vocabulario multi-idioma y normalización (Versión 316): tools/vocabulario.mjs, el mismo de pipeline.mjs / filas-rubro.mjs / extract-table-rows.mjs.
+import { normalizar, TITULO_RESULTADOS_RE, TOTAL_INICIO_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, INGRESOS_TABLA_RE, GASTOS_RE, NOTAS_COLUMNA_RE } from './vocabulario.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -89,11 +91,12 @@ function loadSite() {
 }
 
 // ---------------------------------------------------------------- utilidades de texto y números
-const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss').replace(/\s+/g, ' ').trim();
-const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|kar veya zarar|финансов[а-я]* результат|фінансов[а-яії]* результат|zysk|vysledovka|vykaz zisku|tulos|rendimentos e gastos|rendimentos e perdas|gastos e perdas/;
-const TOTAL_RE = /^\**\s*(total|subtotal|sum\b|suma|totale|totaal|gesamt|ukupno)/;
-const REV_TOTAL_RE = /^\**\s*(total\s+(de\s+)?(revenue|revenues|income|ingresos|recursos|receitas?|ricavi|proventi|operating revenue|turnover)|revenue|total revenue|turnover|net sales|receita (operacional )?(liquida|bruta)|ricavi totali|totale ricavi|sum inntekter|sum driftsinntekter|umsatzerloese|gesamtertraege|ukupni prihodi|prihodi ukupno|omsaetning|nettoomsaetning|total opbrengsten)/;
-const RESULT_RE = /^\**\s*(resultado (liquido )?do (exercicio|periodo)|resultado del ejercicio|superavit|deficit|profit (for the (year|period))?( after tax)?|net (profit|income|loss)|profit and loss for the year|loss for the year|utile|risultato (netto|d.esercizio)|arsresultat|arets resultat|aarets resultat|jahresueberschuss|jahresfehlbetrag|neto rezultat|dobit|gubitak|net result|resultat)/;
+const norm = normalizar;
+// Título de estado de resultados, total, total de ingresos y resultado del ejercicio: tools/vocabulario.mjs (29 idiomas).
+const STATEMENT_RE = TITULO_RESULTADOS_RE;
+const TOTAL_RE = TOTAL_INICIO_RE;
+const REV_TOTAL_RE = TOTAL_INGRESOS_RE;
+const RESULT_RE = RESULTADO_EJERCICIO_RE;
 
 function parseNumber(raw) {
   let s = String(raw).trim().replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
@@ -134,7 +137,7 @@ function yearColumn(table, year) {
   const width = Math.max(0, ...table.rows.map((r) => r.values.length));
   for (let j = 0; j < width; j++) {
     const head = norm(cols[j + 1] || '');
-    if (/^(nota|notas|note|notes|anexo|nr|ref|no\.?)$/.test(head) || /nota|note/.test(head)) continue;
+    if (NOTAS_COLUMNA_RE.test(head)) continue; // notas / anexo / código de fila (tools/vocabulario.mjs)
     const nums = table.rows.filter((r) => parseNumber(r.values[j] ?? '') !== null).length;
     if (nums >= Math.max(3, table.rows.length * 0.4)) numericCols.push(j);
   }
@@ -207,9 +210,9 @@ function retrieve(bank, label, side, k = 8) {
   return out;
 }
 
-// Lado de una tabla por las palabras de su título y columnas (mismas familias que tools/pipeline.mjs).
-const SIDE_REV = /доход|выручк|прибыл|доходи|vynos|trzb|opbrengsten|omzet|収益|収入|수익|매출|收入|ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
-const SIDE_EXP = /расход|затрат|витрат|убыт|naklad|kosten|費用|支出|비용|费用|gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
+// Lado de una tabla por las palabras de su título y columnas (INGRESOS / GASTOS de tools/vocabulario.mjs, las mismas que tools/pipeline.mjs).
+const SIDE_REV = INGRESOS_TABLA_RE; // sin las palabras que solo dicen el lado de una FILA (subvenciones, "sales"): ver INGRESOS_FILA
+const SIDE_EXP = GASTOS_RE;
 function sideOfTable(t) { const h = norm(`${t.section || ''} ${(t.columns || []).join(' ')}`); const r = SIDE_REV.test(h); const x = SIDE_EXP.test(h); return r && !x ? 'revenue' : x && !r ? 'expense' : null; }
 
 // Escala por PLAUSIBILIDAD: la que deja el mayor importe del estado cerca de los ingresos que el club ya tiene cargados en otros años.
