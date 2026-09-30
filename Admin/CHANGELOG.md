@@ -88,6 +88,10 @@ que dice `ESTADO.md` era verdad ese día.
     documentos de más de 40 páginas se transcriben por tramos de 20 (Gemini y Claude), timeouts proporcionales, `--max-paginas 100`
     por defecto (los más grandes quedan aparte, `--max-paginas 0` los incluye) y un lote con `--limit` toma una muestra repartida
     por tamaño en vez de los N primeros del listado.
+  - Resolver, PDF con texto y más de la mitad de las páginas sin coincidir con el texto del PDF: antes se asumía que el texto del PDF
+    era el roto y se pasaba a Gemini + Claude (visto en la corrida de 50 con `.md` viejos de Tesseract, incluso de 1 página). Ahora
+    primero se hace una lectura fresca con Mistral (~$0,004/pág.): si esa sí coincide, el `.md` viejo era el malo y se lo reemplaza
+    (el original queda en `.previo-*.md`); solo si tampoco coincide se comparan voces.
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",

@@ -410,14 +410,34 @@ async function resolveDoc(e0) {
   // 1) PDF con texto: la verdad está en el propio PDF.
   if (!needScan) {
     const pageTexts = pdfPageTexts(pdfAbs);
-    const doubts = textLayerDoubts(pageTexts, canon);
+    let doubts = textLayerDoubts(pageTexts, canon);
     const withNumbers = pageTexts.filter((t) => numsOf(t).size > 0).length;
     log(`PDF con texto: ${doubts.length} de ${nPages} páginas con dudas`);
     if (doubts.length > 0.5 * withNumbers) {
-      // Si más de la mitad de las páginas "no cierran" con el texto del PDF, lo raro es el texto del PDF
-      // (parcialmente roto, caso Cuiaba), no la transcripción: mandar todo eso a Claude sería gastar en vano.
-      log('más de la mitad de las páginas no coinciden con el texto del PDF: el texto del PDF no es confiable, comparo voces');
-      needScan = true;
+      // Más de la mitad de las páginas no coinciden con el texto del PDF. ¿El malo es el .md (una transcripción vieja de
+      // Tesseract, lo más común) o el texto del PDF (parcialmente roto, caso Cuiaba)? Se prueba con una lectura fresca y
+      // barata de Mistral (~$0.004/pág.): si ESA sí coincide con el texto del PDF, el .md era el malo y se lo reemplaza;
+      // si tampoco, el que falla es el texto del PDF y se comparan voces. (Antes se asumía siempre lo segundo y se
+      // mandaba a Gemini + Claude documentos que Mistral arreglaba por centavos.)
+      let fixedByMistral = false;
+      if (!String(prov.base).startsWith('mistral')) {
+        const rd = await callEngine('mistral', pdfAbs, '.mistral-redo');
+        if (rd.ok) {
+          const redo = splitPages(readFileSync(rd.path, 'utf8'));
+          const dRedo = redo.pages.length >= 0.5 * nPages ? textLayerDoubts(pageTexts, redo) : null;
+          if (dRedo && dRedo.length <= 0.5 * withNumbers && dRedo.length < doubts.length) {
+            backup();
+            copyFileSync(rd.path, mdAbs);
+            canon = redo; doubts = dRedo; fixedByMistral = true;
+            prov.base = `${prov.base} -> mistral (re-hecho)`;
+            log(`el .md era el malo: Mistral lo re-hizo y ahora quedan ${dRedo.length} páginas dudosas`);
+          }
+        } else if (rd.kind === 'agotado') return retry(rd, 'no se pudo re-hacer con Mistral');
+      }
+      if (!fixedByMistral) {
+        log('tampoco la lectura fresca de Mistral coincide con el texto del PDF: el texto del PDF no es confiable, comparo voces');
+        needScan = true;
+      }
     }
     if (!needScan && doubts.length) {
       const r = await transcribePages('claude', pdfAbs, doubts);
