@@ -152,6 +152,11 @@ const RELEVANT_KEYWORDS = [
   // gastos
   'gasto', 'egreso', 'costo', 'costi', 'oneri', 'expense', 'cost', 'kostnad', 'εξοδα',
   'aufwand', 'aufwend', 'rashod', 'troskov', 'charges', 'kosten', 'omkostning', 'udgift', 'despesa', 'custo', 'koszt', 'gider',
+  // 2026-09-29 (segundo lote de 50): documentos en ruso/ucraniano, checo, neerlandés, japonés, coreano y chino no marcaban ninguna tabla
+  // como relevante. Cirílico escrito ya sin diéresis/breve (normalizeText).
+  'доход', 'дохід', 'выручк', 'виручк', 'расход', 'витрат', 'затрат', 'прибыл', 'прибут', 'убыт', 'збит', 'результат',
+  'vynos', 'naklad', 'trzb', 'vysledek', 'zisk', 'ztrat', 'winst', 'verlies', 'opbrengst', 'omzet', 'baten', 'lasten', 'przychod', 'wynik',
+  '収益', '収入', '費用', '支出', '損益', '営業', '수익', '매출', '비용', '손익', '收入', '费用', '利润', '营业',
 ];
 
 // Minúsculas, sin acentos/diéresis y con los dígrafos alemanes/daneses reducidos a su forma sin signo.

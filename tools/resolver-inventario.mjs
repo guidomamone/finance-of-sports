@@ -399,8 +399,8 @@ async function resolveDoc(e0) {
   const log = (m) => console.log(`    [${tag}] ${m}`);
   const prov = { base: e.motor, paginas: {} };
   const reserva = []; const sinConsenso = []; const parches = []; const resolucion = {};
-  let previo = null;
-  const fin = (status, detail, extra = {}) => ({ status, detail, prov, reserva, sinConsenso, parches, resolucion, previo: previo ? relative(root, previo) : null, cost: docCost.getStore().cost, ...extra });
+  let previo = null; let formatoIntentado = false;
+  const fin = (status, detail, extra = {}) => ({ status, detail, prov, reserva, sinConsenso, parches, resolucion, formatoIntentado, previo: previo ? relative(root, previo) : null, cost: docCost.getStore().cost, ...extra });
   const retry = (r, what) => fin(r.kind === 'agotado' ? 'reintentar' : 'revisar', `${what}: ${r.text}`);
   // -1) Sin ninguna transcripción todavía (documento nuevo): Mistral la hace, y sigue el camino de siempre.
   if (!existsSync(mdAbs)) {
@@ -424,6 +424,26 @@ async function resolveDoc(e0) {
   };
   const canonBody = (n) => canon.pages.find((p) => p.n === n)?.body;
   const save = () => { if (Object.keys(prov.paginas).length) writeFileSync(mdAbs, joinPages(canon.pre, canon.pages)); };
+
+  // -0.5) .md SIN TABLAS (visto en el lote de 50: 778 de los 954 .md viejos, 0 líneas con "|"): las etiquetas y los importes quedaron
+  // en bloques separados, así que ninguna herramienta puede sacar rubros, sumas ni categorías. Sus números pueden estar bien (la
+  // validación contra el PDF los da por buenos) pero no sirven para lo que sigue. Mistral (~$0.004/pág.) entrega tablas: se prueba
+  // rehacerlo; si el nuevo tiene tablas, reemplaza al viejo (que queda en .previo-*.md) y sigue el camino normal de validación.
+  const tableLines = (t) => t.split('\n').filter((l) => l.startsWith('|')).length;
+  if (tableLines(readFileSync(mdAbs, 'utf8')) < 5 && nPages >= 2 && !String(prov.base).startsWith('mistral')) {
+    formatoIntentado = true;
+    const rf = await callEngine('mistral', pdfAbs, '.mistral-redo');
+    if (rf.ok) {
+      const nt = readFileSync(rf.path, 'utf8');
+      if (tableLines(nt) >= 5) {
+        backup();
+        copyFileSync(rf.path, mdAbs);
+        canon = splitPages(nt);
+        prov.base = `${prov.base} -> mistral (re-hecho con tablas)`;
+        log(`el .md no tenía tablas: rehecho con Mistral (${tableLines(nt)} filas de tabla)`);
+      }
+    } else if (rf.kind === 'agotado') return retry(rf, 'no se pudo rehacer con Mistral para obtener tablas');
+  }
 
   // 0) .md sin marcas de página utilizables: se re-hace entero con Mistral (barato) y se sigue.
   if (canon.pages.length < Math.max(1, Math.floor(nPages * 0.5))) {
@@ -617,7 +637,7 @@ function dryRunDoc(e) {
 // ---------------------------------------------------------------- main
 const ledger = readJsonl(statePath);
 if (!ledger.length) { console.error('Falta Admin/transcripciones-estado.jsonl: corré primero node tools/inventario-transcripciones.mjs'); process.exit(1); }
-const TODO_STATES = new Set(estadoFilter ? [estadoFilter] : ['sin-md', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar']);
+const TODO_STATES = new Set(estadoFilter ? [estadoFilter] : ['sin-md', 'sin-tablas', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar']);
 let todo = ledger.filter((e) => !e.cargado && TODO_STATES.has(e.estado)
   && (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'))
   && (!onlyPdf || e.pdf === onlyPdf)
@@ -663,7 +683,7 @@ async function worker() {
     }
     appendFileSync(verifPath, JSON.stringify({
       ts: new Date().toISOString(), md: e.md, mdSha1: existsSync(resolve(root, e.md)) ? sha1(resolve(root, e.md)) : null, status: res.status, method: res.method || 'resolver-inventario', detail: res.detail,
-      proveniencia: res.prov, reserva: res.reserva, sinConsenso: res.sinConsenso, parches: res.parches || [], resolucion: res.resolucion || {}, previo: res.previo || null, costoUsd: Number((res.cost || 0).toFixed(4)),
+      proveniencia: res.prov, reserva: res.reserva, sinConsenso: res.sinConsenso, parches: res.parches || [], resolucion: res.resolucion || {}, formatoIntentado: Boolean(res.formatoIntentado), previo: res.previo || null, costoUsd: Number((res.cost || 0).toFixed(4)),
     }) + '\n');
     tally[res.status] = (tally[res.status] || 0) + 1;
     done++;

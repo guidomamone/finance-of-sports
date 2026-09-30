@@ -34,6 +34,7 @@
 //   node tools/pipeline.mjs --ejecutar --lista Admin/mi-lista.txt
 //   node tools/pipeline.mjs --ejecutar --max-paginas 0       # incluye los documentos de más de 100 páginas (caros)
 //   node tools/pipeline.mjs --ejecutar --solo-preparar --repreparar --limit 0   # rehace SIN API la lista de rubros de los ya listos
+//   node tools/pipeline.mjs --ejecutar --sin-jev            # sin la etapa final de Jev
 //   node tools/pipeline.mjs --resumen                # solo el estado actual del inventario, sin correr nada
 // ============================================================================
 
@@ -54,6 +55,7 @@ const listFile = flagVal('--lista');
 const concurrency = flagVal('--concurrencia') || '4';
 // Tope de páginas por documento (0 = sin tope). Un informe anual de 230 páginas (Borussia Dortmund) cuesta unas 10 veces
 // más que un balance de 25 y se lleva el tiempo de toda la corrida: por defecto quedan para el final, listados aparte.
+const NO_JEV = args.includes('--sin-jev'); // no categorizar con Jev al final
 const maxPages = flagVal('--max-paginas') !== null ? Number(flagVal('--max-paginas')) : 100;
 
 const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
@@ -84,7 +86,7 @@ if (SUMMARY_ONLY) { printSummary(ledger, 'Estado del inventario'); process.exit(
 // ---- selección: lo que no está cargado y todavía no llegó al final del camino
 const listSet = listFile ? new Set(readFileSync(resolve(root, listFile), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'))) : null;
 const inScope = (e) => (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/')) && (!listSet || listSet.has(e.pdf));
-const needsResolve = (e) => ['sin-md', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar'].includes(e.estado);
+const needsResolve = (e) => ['sin-md', 'sin-tablas', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar'].includes(e.estado);
 const REPREPARE = args.includes('--repreparar'); // rehace la lista de rubros de documentos que ya la tenían (gratis, sin API)
 const needsPrepare = (e) => e.estado === 'listo' && (!e.jev || (REPREPARE && ['listo-para-jev', 'sin-rubros'].includes(e.jev)));
 // Páginas por PDF, con caché (pdfinfo sobre ~3.000 PDFs tardaría medio minuto en cada corrida).
@@ -156,8 +158,8 @@ function clubAndYear(pdf) {
 
 // Lado de una tabla (ingreso o gasto) por las palabras de su título y sus columnas, en varios idiomas. Si aparecen las dos
 // familias (o ninguna) no se adivina: queda sin lado. Saber el lado sube mucho el acierto de Jev (69,5% -> 74,2% en el backtest).
-const SIDE_REV = /ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
-const SIDE_EXP = /gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|kosten|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
+const SIDE_REV = /доход|выручк|прибыл|доходи|vynos|trzb|opbrengsten|omzet|収益|収入|수익|매출|收入|ingreso|recurso|recaudac|venta|cuota|income|revenue|turnover|ricavi|proventi|inntekt|driftsinntekt|umsatz|ertr|prihod|produits|opbrengst|omsaetning|indtaegt|receita|faturamento|εσοδα|gelir|hasilat|przychod|tulot/;
+const SIDE_EXP = /расход|затрат|витрат|убыт|naklad|kosten|費用|支出|비용|费用|gasto|egreso|costo|expense|cost of|costi|oneri|kostnad|aufwand|aufwend|rashod|troskov|charges|kosten|despesa|custo|εξοδα|gider|omkostning|udgift|wydatki|koszt|menot/;
 const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
 function sideOfTable(t) {
   const h = norm(`${t.section || ''} ${(t.columns || []).join(' ')}`);
@@ -166,13 +168,20 @@ function sideOfTable(t) {
 }
 // ¿La tabla es (parte de) un ESTADO DE RESULTADOS / de recursos y gastos? Sin al menos una así, el documento no es un estado
 // financiero con rubros que categorizar (actas, memorias narrativas, certificaciones): un acta del Aris colaba 16 "rubros".
-const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos/;
+const STATEMENT_RE = /resultado|cuenta de perdidas|perdidas y ganancias|recursos y gastos|recursos y erogaciones|estado de recursos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of income|conto economico|resultatregnskap|resultatopgor|resultatenrekening|compte de resultat|gewinn- ?und verlust|guv|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstracao do resultado|demonstracao de resultado|αποτελεσμα|gelir tablosu|kar zarar|zysk|vysledovka|vykaz zisku|tulos|финансовых результатах|прибылях и убытках|фінансових результатах|прибутки та збитки|vykaz zisku a ztraty|zisku a ztraty|winst-? ?en-? ?verlies|損益計算書|収支計算書|손익계산서|利润表|损益表|^(recursos|gastos|ingresos|egresos|revenues?|expenses|income|expenditure)$|concepto (del )?(ingreso|gasto)|income and expenditure/;
 const isStatement = (t) => STATEMENT_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')}`));
 const isTotal = (l) => /^\s*\**\s*(total|subtotal|sum\b|suma)/i.test(String(l || '')) || /^\s*\**\s*(totale|totaal|gesamt|ukupno|total\s)/i.test(String(l || ''));
 const hasNumber = (vals) => vals.some((v) => /\d/.test(String(v)));
-let nJev = 0; let nSin = 0; let nFail = 0;
+let nJev = 0; let nSin = 0; let nFail = 0; let nSinTablas = 0;
 for (const e of ready) {
   const mdAbs = resolve(root, e.md);
+  // Un .md SIN TABLAS no sirve para sacar rubros (etiquetas e importes en bloques separados): se manda a rehacer con Mistral (una sola vez).
+  const mdTablas = readFileSync(mdAbs, 'utf8').split('\n').filter((l) => l.startsWith('|')).length;
+  const prevEv = [...readJsonl(verifPath)].reverse().find((v) => v.md === e.md && v.mdSha1 === sha1(mdAbs)) || {};
+  if (mdTablas < 5 && pagesOf(e.pdf) >= 2 && !String(e.motor).startsWith('mistral') && !prevEv.formatoIntentado) {
+    appendFileSync(verifPath, JSON.stringify({ ...prevEv, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'sin-tablas', detail: 'el .md no tiene tablas: se rehace con Mistral en la próxima corrida' }) + '\n');
+    nSinTablas++; continue;
+  }
   const { club, year } = clubAndYear(e.pdf);
   const out = mdAbs.replace(/\.md$/, '.briefing.json');
   const r = node('tools/prepare-onboarding.mjs', [club, year, mdAbs, '--out', out], { stdio: ['ignore', 'pipe', 'pipe'] });
@@ -200,7 +209,13 @@ for (const e of ready) {
   appendFileSync(verifPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'listo', jev, rubros: rubros.length, tieOuts: { cierran: closes, noCierran: fails } }) + '\n');
   if (jev === 'listo-para-jev') nJev++; else nSin++;
 }
-console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
+console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
+
+// ---- Etapa 5: Jev categoriza los rubros de los documentos listo-para-jev (casi gratis: ~$42 por mil millones de tokens)
+if (!NO_JEV) {
+  console.log('\n=== Etapa 5: Jev categoriza los rubros (lado y ejemplos parecidos incluidos) ===');
+  node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0'], { stdio: 'inherit' });
+}
 
 // ---- resumen final
 ledger = refreshLedger();

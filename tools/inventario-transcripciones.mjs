@@ -132,6 +132,7 @@ function motorFinal(base, verif, sha) {
 }
 
 function currentState(entry, verif) {
+  if (verif && verif.status === 'no-es-pdf' && !entry.cargado) return { status: 'no-es-pdf', method: verif.method, detail: verif.detail };
   if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: 'todavía no hay ninguna transcripción de este PDF' };
   if (entry.cargado) return { status: 'cargado', method: null, detail: 'el ejercicio ya está en el sitio' };
   if (verif && verif.mdSha1 === entry.mdSha1) return { status: verif.status, method: verif.method, detail: verif.detail };
