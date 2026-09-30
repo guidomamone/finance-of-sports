@@ -78,7 +78,7 @@ const EST = { mistral: 0.004, gemini: 0.002, claude: 0.02 }; // USD por página,
 
 import { diagnosticar } from './reparar-pdf.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
-import { chequearPaginas, quien } from './chequeos-gratis.mjs';
+import { chequearPaginas, quien, tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
 
 // ---------------------------------------------------------------- utilidades
 const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));
@@ -432,10 +432,23 @@ function tieScore(body) {
     return t.filter((x) => x.closes === true).length - t.filter((x) => x.closes === false).length;
   } catch { return 0; } finally { rmSync(tmp, { recursive: true, force: true }); }
 }
+// Versión 313: el puntaje es la cantidad de CELDAS que quedan respaldadas por sumas genéricas de tools/chequeos-gratis.mjs — verticales
+// (una fila = suma de las contiguas) y horizontales (en una fila, una celda = combinación con signo de las demás: tablas de movimiento,
+// saldo inicial + altas - bajas = saldo final). Antes se usaba tieScore() (prepare-onboarding.mjs), que solo ve filas rotuladas "total":
+// en las notas rusas de Rubin Kazan 2025 daba 0 en las 11 páginas, todas terminaron "con reserva", y en 2 (págs. 18 y 32) la lectura
+// elegida era la que NO cerraba ninguna suma. Con este puntaje se deciden 5 de esas 11; el resto no tiene aritmética y sigue con reserva.
+function sumScore(body) {
+  const t = tablasDe(body);
+  const v = respaldoSumas(t).ok; const h = respaldoFilas(t).ok;
+  return new Set([...v, ...h]).size;
+}
 function settleByArithmetic(cands) {
-  const scores = cands.map((c) => tieScore(c.body));
+  const scores = cands.map((c) => sumScore(c.body));
   const max = Math.max(...scores);
-  if (max <= 0 || scores.filter((x) => x === max).length !== 1) return null;
+  // Gana solo si le saca al menos 3 celdas respaldadas a la segunda (mismo MARGEN que tools/revisar-reservas.mjs): por 1-2 celdas no se
+  // decide una página.
+  const segundo = Math.max(...scores.filter((_, i) => i !== scores.indexOf(max)), 0);
+  if (max <= 0 || max < segundo + 3) return null;
   return scores.indexOf(max);
 }
 
@@ -680,8 +693,11 @@ async function resolveDoc(e0) {
         pageCands.set(n, cands);
         if (!settleFree(n, cands)) pending.push(n);
       } else if (cands.length === 2 && bClaude) {
-        // Gemini rechazó también esa página: solo hay dos voces. Gana Claude, con reserva.
-        setPage(n, B, 'claude-api'); if (A !== undefined) { reserva.push(n); resolucion[n] = 'claude-con-reserva'; }
+        // Gemini rechazó también esa página: solo hay dos voces (la canónica y Claude). Primero la aritmética (Versión 313: sumas verticales
+        // y horizontales); si decide, gana esa lectura sin reserva. Si no, gana Claude, con reserva.
+        const idx2 = A !== undefined ? settleByArithmetic(cands) : null;
+        if (idx2 !== null) apply(n, cands, idx2, 'sumas');
+        else { setPage(n, B, 'claude-api'); if (A !== undefined) { reserva.push(n); resolucion[n] = 'claude-con-reserva'; } }
       } else {
         sinConsenso.push(n);
       }

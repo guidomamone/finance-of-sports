@@ -158,7 +158,7 @@ function valorCelda(c) {
 
 // ---------------------------------------------------------------- chequeo 2: sumas dentro de cada tabla
 // Devuelve, por tabla, las celdas respaldadas (clave "t,f,c") y la cantidad de cierres encontrados.
-function respaldoSumas(tablas, U) {
+export function respaldoSumas(tablas, U = UMBRALES) {
   const ok = new Set(); let cierres = 0;
   tablas.forEach((tb, ti) => {
     const ncol = Math.max(...tb.filas.map((f) => f.length));
@@ -184,6 +184,30 @@ function respaldoSumas(tablas, U) {
       if (U.sumasHaciaAbajo) probar([...col].reverse());
     }
   });
+  return { ok, cierres };
+}
+
+// ---------------------------------------------------------------- chequeo 2b: sumas HORIZONTALES (Versión 313)
+// Las tablas de movimiento (saldo inicial + altas - bajas = saldo final; notas rusas, IFRS, "movimiento de bienes de uso") hacen la cuenta
+// por FILA, no por columna: las sumas de arriba no las ven (Rubin Kazan 2025, 8 de 11 páginas "con reserva" sin ninguna suma vertical que
+// cierre). En cada fila con 3 a 7 celdas numéricas se prueba si ALGUNA celda es igual a una combinación con signo (+/-) de TODAS las
+// demás. Exige >= 3 celdas y valores de >= 3 dígitos para que una coincidencia por azar sea improbable.
+export function respaldoFilas(tablas) {
+  const ok = new Set(); let cierres = 0;
+  tablas.forEach((tb, ti) => tb.filas.forEach((f, fi) => {
+    const cel = []; f.forEach((c, ci) => { if (ci === 0) return; const x = valorCelda(c ?? ''); if (x && x.v !== 0) cel.push({ ...x, key: `${ti},${fi},${ci}` }); });
+    if (cel.length < 3 || cel.length > 7 || cel.filter((x) => Math.abs(x.v) >= 100).length < 3) return;
+    for (let t = 0; t < cel.length; t++) {
+      const otros = cel.filter((_, i) => i !== t);
+      const unidad = Math.max(...cel.map((x) => x.unidad));
+      let hit = false;
+      for (let m = 0; m < (1 << otros.length) && !hit; m++) {
+        let acc = 0; otros.forEach((x, i) => { acc += (m >> i) & 1 ? -Math.abs(x.v) : Math.abs(x.v); });
+        if (Math.abs(Math.abs(acc) - Math.abs(cel[t].v)) < unidad * Math.max(1, Math.ceil(otros.length / 2)) + 1e-9) hit = true;
+      }
+      if (hit) { cierres++; cel.forEach((x) => ok.add(x.key)); break; }
+    }
+  }));
   return { ok, cierres };
 }
 

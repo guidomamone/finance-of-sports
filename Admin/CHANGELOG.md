@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 313 — La aritmética decide las páginas "con reserva": sumas verticales y horizontales (2026-09-30)
+
+- `chequeos-gratis.mjs`: `respaldoFilas()` (nuevo): en tablas de movimiento (saldo inicial + altas - bajas = saldo final) una celda es igual a una combinación con signo de las demás de su fila. `respaldoSumas()` exportada.
+- `resolver-inventario.mjs`: el desempate por aritmética usa celdas respaldadas por sumas verticales y horizontales (antes `tieScore()`, que solo veía filas "total" y había decidido 2 de 1.190 páginas); gana la lectura que le saca >= 3 celdas a la segunda. También se aplica cuando Gemini rechaza la página y solo quedan dos lecturas (antes ganaba Claude directo, con reserva).
+- `tools/revisar-reservas.mjs` (nuevo, gratis): aplica ese criterio a los documentos ya resueltos. Sobre 163 páginas con reserva (31 documentos): 44 confirmadas por sumas, 10 CORREGIDAS (la lectura anterior cerraba sumas y la elegida no; Rubin Kazan 2025 págs. 14 y 32 entre ellas), 109 siguen con reserva. Aplicado; el `.md` anterior queda en `<nombre>.antes-sumas.md` (gitignoreado).
+
 ## Versión 312 — Piloto D: estados de resultados sin título en la tabla, etiqueta en la segunda columna, flujo de efectivo y patrimonio fuera, lado en ucraniano/checo/turco (2026-09-30)
 
 - Piloto D (`Admin/piloto-d.txt`, 10 PDFs): US$ 1,73 de transcripción y validación + US$ 0,42 de categorización; PDFs con texto validados 100% gratis (Athletic Club, Fortaleza CEIF, Vitória Guimarães, Rubin 2023: 0 páginas a Claude); las carpetas que antes caían en otro club resolvieron bien; 69% de rubros categorizados solos (bajado por los formularios en cirílico, con muchas filas que no son rubros).
