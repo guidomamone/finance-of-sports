@@ -34,6 +34,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync } from 'node:fs';
+import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 
@@ -220,9 +221,13 @@ function report(rows, errors) {
 // ---------------------------------------------------------------- LISTOS
 async function listos() {
   const ledger = existsSync(resolve(root, 'Admin', 'transcripciones-estado.jsonl')) ? readFileSync(resolve(root, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : [];
-  let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && existsSync(resolve(root, e.md.replace(/\.md$/, '.rubros.json'))) && !existsSync(resolve(root, e.md.replace(/\.md$/, '.jev.json'))));
+  // Trabajo = documentos `listo-para-jev` cuyo .jev.json falta o se hizo sobre OTRA lista de rubros (huella distinta, ver tools/huellas.mjs:
+  // antes se miraba solo si el archivo existía, y 438 listas re-preparadas quedaron con categorías de la versión vieja).
+  // `--lista <archivo>`: solo esos PDFs (lo usa pipeline.mjs para que la etapa 5 toque SOLO los documentos de la corrida).
+  const lista = flagVal('--lista') ? leerLista(resolve(root, flagVal('--lista'))) : null;
+  let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && existsSync(resolve(root, e.md.replace(/\.md$/, '.rubros.json'))) && !jevAlDia(resolve(root, e.md)));
   if (limit > 0) docs = docs.slice(0, limit);
-  console.log(`${docs.length} documento(s) listo-para-jev sin categorizar.${DRY ? ' (dry-run)' : ''}`);
+  console.log(`${docs.length} documento(s) listo-para-jev sin categorizar o con la categorización desactualizada.${DRY ? ' (dry-run)' : ''}`);
   if (DRY || !docs.length) return;
   const key = readKey(); let total = 0;
   // Ejemplos parecidos ya categorizados en el sitio (de todos los clubes) y, cuando el documento indica si la tabla es de
@@ -239,7 +244,7 @@ async function listos() {
       results.push({ label: r.label, lado: r.lado || null, page: r.page, section: r.section, ...(await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null })) });
     });
     if (stopAll) { console.log(`\nDETENIDO: ${stopAll}`); break; }
-    writeFileSync(resolve(root, e.md.replace(/\.md$/, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubros: results }, null, 1));
+    writeFileSync(resolve(root, e.md.replace(/\.md$/, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), rubros: results }, null, 1));
     const hi = results.filter((r) => r.confidence >= 0.9).length;
     total += results.length;
     console.log(`  ${e.pdf.split('/').slice(-2).join('/')}: ${results.length} rubros únicos, ${hi} con confianza ≥ 0,90, ${results.filter((r) => r.error).length} con error`);

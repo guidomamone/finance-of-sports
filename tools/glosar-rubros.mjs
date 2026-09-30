@@ -54,8 +54,16 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
   let files = args.filter((a) => a.endsWith('.rubros.json')).map((a) => resolve(a));
   if (args.includes('--listos')) {
-    const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(d, e.name)) : e.name.endsWith('.rubros.json') && !existsSync(join(d, e.name.replace(/\.rubros\.json$/, '.jev.json'))) ? [join(d, e.name)] : []));
-    files = walk(resolve(root, 'Clubes'));
+    // Todos los .rubros.json (el que ya tiene glosa se saltea solo, "ya tenía glosa"). Antes se salteaban los que ya tenían .jev.json,
+    // y una lista re-preparada (sin glosa) con un .jev.json viejo quedaba sin glosar. `--lista <archivo>` = solo esos PDFs.
+    const i = args.indexOf('--lista');
+    if (i >= 0) {
+      const lista = readFileSync(resolve(root, args[i + 1]), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
+      files = lista.map((p) => resolve(root, p.replace(/\.pdf$/i, '.rubros.json'))).filter((f) => existsSync(f));
+    } else {
+      const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(d, e.name)) : e.name.endsWith('.rubros.json') ? [join(d, e.name)] : []));
+      files = walk(resolve(root, 'Clubes'));
+    }
   }
   if (!files.length) { console.error('Uso: node tools/glosar-rubros.mjs <archivo.rubros.json>... | --listos'); process.exit(1); }
   for (const f of files) { const r = await glosarArchivo(f); console.log(`${f.replace(root + '/', '')}: ${r.skipped ? 'ya tenía glosa' : r.error || `${r.n} etiquetas glosadas`}`); }

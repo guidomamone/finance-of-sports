@@ -150,6 +150,7 @@ Admin/claude-api/.env
 *.mistral-redo.md
 *.rubros.json
 Admin/.pipeline-lista-actual.txt
+Admin/.pipeline-lista-jev.txt
 Admin/.paginas-cache.json
 *.jev.json
 # tools/categorizar-claude.mjs --listos: categoría final por rubro (precedente / Jev / Claude), mismo criterio que *.jev.json

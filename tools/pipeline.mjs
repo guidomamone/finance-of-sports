@@ -56,6 +56,7 @@ import { spawnSync, execFileSync } from 'node:child_process';
 import { statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { numeroDe, filasSuma, noEsRubro, ladosPorEstructura, columnaDeImportes } from './filas-rubro.mjs';
+import { jevAlDia, categoriasAlDia } from './huellas.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -114,7 +115,10 @@ function pagesOf(pdf) {
   return n;
 }
 const ONLY_PREPARE = args.includes('--solo-preparar'); // solo la preparación gratis para Jev, sin transcribir ni validar (sin API)
-let selected = ledger.filter((e) => !e.cargado && inScope(e) && (ONLY_PREPARE ? needsPrepare(e) : (needsResolve(e) || needsPrepare(e))));
+// Documentos ya preparados cuya categorización falta o quedó desactualizada (huellas, tools/huellas.mjs): también son trabajo de la
+// corrida (etapa 5), si no, un documento preparado en una corrida cortada no se categorizaba nunca.
+const needsCategorize = (e) => !NO_JEV && e.jev === 'listo-para-jev' && (!jevAlDia(resolve(root, e.md)) || !categoriasAlDia(resolve(root, e.md)));
+let selected = ledger.filter((e) => !e.cargado && inScope(e) && (ONLY_PREPARE ? needsPrepare(e) : (needsResolve(e) || needsPrepare(e) || needsCategorize(e))));
 for (const e of selected) e.paginas = pagesOf(e.pdf);
 try { writeFileSync(cachePath, JSON.stringify(pageCache)); } catch { /* la caché es opcional */ }
 selected.sort((a, b) => a.paginas - b.paginas); // los chicos primero: resultados rápidos y baratos
@@ -131,7 +135,8 @@ if (limit > 0 && selected.length > limit) {
 if (grandes.length) console.log(`\n${grandes.length} documento(s) de más de ${maxPages} páginas quedan para el final (usá --max-paginas 0 para incluirlos): ${grandes.slice(0, 4).map((e) => `${e.pdf.split('/').slice(-2).join('/')} (${e.paginas} pág.)`).join(', ')}${grandes.length > 4 ? ', ...' : ''}`);
 const toResolve = selected.filter(needsResolve);
 const toPrepare = selected.filter(needsPrepare);
-console.log(`\n${total} documento(s) sin la marca final en el alcance pedido; esta corrida toma ${selected.length}: ${toResolve.length} a transcribir/validar y ${toPrepare.length} ya validados que solo faltan preparar para Jev.`);
+const toCategorize = selected.filter((e) => !needsResolve(e) && !needsPrepare(e));
+console.log(`\n${total} documento(s) sin la marca final en el alcance pedido; esta corrida toma ${selected.length}: ${toResolve.length} a transcribir/validar, ${toPrepare.length} ya validados que solo faltan preparar para Jev y ${toCategorize.length} ya preparados que solo faltan categorizar.`);
 if (!selected.length) { printSummary(ledger, 'Nada para hacer'); process.exit(0); }
 
 // ---- ensayo o ejecución
@@ -149,7 +154,7 @@ if (toResolve.length) {
   node('tools/resolver-inventario.mjs', ['--lista', 'Admin/.pipeline-lista-actual.txt', '--ejecutar', '--concurrencia', concurrency], { stdio: 'inherit' });
   ledger = refreshLedger();
 } else if (!EXECUTE) {
-  console.log('\nEs un ENSAYO: solo faltaría la preparación gratis para Jev (sin API). Agregá --ejecutar para correrla.');
+  console.log(`\nEs un ENSAYO: faltaría la preparación gratis para Jev (sin API)${toCategorize.length ? ` y categorizar ${toCategorize.length} documento(s) (Jev + Claude por API, ~US$ 0,015-0,04 cada uno)` : ''}. Agregá --ejecutar para correrlo.`);
   process.exit(0);
 }
 
@@ -244,14 +249,18 @@ if (!NO_JEV) {
   ledger = refreshLedger();
   console.log('\n=== Etapa 5: Jev categoriza los rubros (lado y ejemplos parecidos incluidos) ===');
   // Glosa en español de cada rubro (Gemini, ~$0,001 por documento): sin ella la búsqueda de ejemplos parecidos no encuentra nada en idiomas que el sitio no tiene.
-  node('tools/glosar-rubros.mjs', ['--listos'], { stdio: 'inherit' });
-  node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0'], { stdio: 'inherit' });
+  // SOLO los documentos de esta corrida (bug real 2026-09-30, piloto C: la etapa 5 tomaba TODOS los `listo-para-jev` del inventario y
+  // categorizar-claude.mjs empezó a mandar 390 documentos a Claude por API; se cortó en 44, US$ 1,90). La lista va a las tres tools.
+  const listaJev = resolve(root, 'Admin', '.pipeline-lista-jev.txt');
+  writeFileSync(listaJev, selected.map((e) => e.pdf).join('\n') + '\n');
+  node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/.pipeline-lista-jev.txt'], { stdio: 'inherit' });
+  node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.pipeline-lista-jev.txt'], { stdio: 'inherit' });
   // Escalón 2 (Versión 307): lo que Jev deja < 0,90 va a Claude por API, UNA llamada por documento, con las líneas ya cargadas de ese club
   // (sus convenciones) y las filas vecinas. Backtest sobre 3.975 rubros: Jev >= 0,90 sola resuelve 69,4% (94,4% de acierto); sumando
   // Claude >= 0,80 se resuelve 80,2% con 94,5%; el resto queda para revisión (Admin/test-categorizar-claude.md). ~US$ 0,015 por documento.
   // Deja `<md>.categorias.json` (la categoría final de cada rubro y de qué escalón salió: precedente / jev / claude / sin-resolver).
   console.log('\n=== Etapa 5b: Claude por API categoriza lo que Jev no resolvió con confianza ===');
-  node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0'], { stdio: 'inherit' });
+  node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.pipeline-lista-jev.txt'], { stdio: 'inherit' });
 }
 
 // ---- resumen final

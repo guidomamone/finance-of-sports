@@ -235,6 +235,18 @@ async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
     const map = new Map();
     for (const batch of batches) {
       const r = await callEngine(engine, batch.file, '', opts);
+      // BUG REAL del piloto C (Real Madrid 2005-06, 2026-09-30): 18 páginas densas en un solo lote superaron el tope de salida de Claude
+      // (stop_reason=max_tokens); la tool descarta la transcripción cortada (bien) y el documento entero quedaba en `revisar`. El tope es
+      // por llamada, así que se reparte el lote en mitades y se reintenta cada una, igual que cuando un motor devuelve menos páginas.
+      if (!r.ok && batch.pages.length > 1 && /TRUNCADA|max_tokens|MAX_TOKENS/i.test(r.text || '')) {
+        const mid = Math.ceil(batch.pages.length / 2);
+        for (const half of [batch.pages.slice(0, mid), batch.pages.slice(mid)]) {
+          const rr = await transcribePages(engine, pdfAbs, half, opts);
+          if (!rr.ok) return rr;
+          for (const [n, body] of rr.pages) map.set(n, body);
+        }
+        continue;
+      }
       if (!r.ok) return { ok: false, kind: r.kind, text: r.text };
       const { pages } = splitPages(readFileSync(r.path, 'utf8'));
       if (pages.length !== batch.pages.length) {

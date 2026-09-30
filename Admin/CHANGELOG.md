@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 308 — La etapa 5 solo toca los documentos de la corrida; resultados derivados con huella; lotes de Claude que exceden el tope se parten (2026-09-30)
+
+- Bug del piloto C: la etapa 5 del pipeline tomaba TODOS los `listo-para-jev` del inventario; `categorizar-claude.mjs` mandó 44 documentos a Claude (US$ 1,90) con `.jev.json` hechos sobre la lista de rubros anterior a la Versión 307 antes de que se cortara. Ahora `pipeline.mjs` pasa `--lista` (los documentos de la corrida) a `glosar-rubros`, `jev-categorizar` y `categorizar-claude`.
+- `tools/huellas.mjs` (nuevo): `.jev.json` guarda la huella de su `.rubros.json`, y `.categorias.json` la de los dos. Una etapa rehace su salida si la huella falta o no coincide; Claude no recibe un documento cuyo `.jev.json` está desactualizado. Los documentos preparados sin categorizar entran solos en la siguiente corrida (`needsCategorize`).
+- `resolver-inventario.mjs`: un lote que Claude corta por `max_tokens` se reparte en mitades (Real Madrid 2005-06: 18 páginas densas en un lote dejaban el documento en `revisar`).
+- `glosar-rubros.mjs --listos` ya no saltea las listas con un `.jev.json` viejo.
+
 ## Versión 307 — Validación paga solo en páginas con números y dudosas, Claude después de Jev, alta de club por script, tabla por ancla, lado corregido (2026-09-30)
 
 - `tools/paginas-con-numeros.mjs` (nuevo, gratis): decide con el `.md` de Mistral qué páginas tienen cifras de carga. Sobre 222 ejercicios cargados elige el 58% de las páginas y cubre el 99,7% de los importes de producción. Con `pdftotext` rinde menos y no sirve en el 23% de los PDFs (escaneo o mojibake). Informe: `Admin/test-seleccion-paginas.md`.
