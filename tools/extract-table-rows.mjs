@@ -168,6 +168,29 @@ function normalizeText(t) {
     .replace(/ß/g, 'ss').replace(/æ/g, 'ae').replace(/ø/g, 'o').replace(/å/g, 'a').replace(/ð/g, 'd').replace(/ł/g, 'l');
 }
 
+// Versión 312 (piloto D, Baník Ostrava 1997): en los formularios oficiales checos, ucranianos y rusos la PRIMERA columna es un código
+// ("I.", "A.", "B. 1.", "II. 1.") y el texto del rubro está en la SEGUNDA ("Tržby za prodej zboží"). Sin esto los rubros salían como "I.",
+// "A." (sin nada que categorizar). Si en al menos el 60% de las filas la primera celda es un código corto y la segunda es texto (no un
+// número), la etiqueta pasa a ser la segunda celda y el código se descarta.
+function etiquetaEnSegundaColumna({ columns, rows }) {
+  const esCodigo = (x) => { const v = String(x || '').trim(); return v === '' || (v.length <= 7 && /^[A-Za-zÀ-ÿ0-9IVXivx.+\-() ]+$/.test(v) && !/[a-zà-ÿ]{3,}/i.test(v)); };
+  const esTexto = (x) => { const v = String(x || '').trim(); return /\p{L}{3,}/u.test(v) && !/^[-+()\d.,\s]+$/.test(v); };
+  const conCodigo = rows.filter((r) => esCodigo(r.rawLabel) && esTexto(r.values[0])).length;
+  if (rows.length < 3 || conCodigo < rows.length * 0.6) return { columns, rows };
+  return { columns: [columns[1] ?? '', ...(columns.slice(2) || [])], rows: rows.map((r) => ({ ...r, rawLabel: String(r.values[0] ?? '').trim(), codigo: r.rawLabel, values: r.values.slice(1) })) };
+}
+
+// Versión 312: una tabla cuyo título quedó en otra tabla o en un bloque de metadatos (Baník 1997: "VÝKAZ ZISKŮ A ZTRÁT" arriba, la tabla
+// con encabezados "Označení | TEXT | čís. řád.") no tenía nada relevante en su sección ni en sus columnas, pero sus FILAS son "Tržby...",
+// "Náklady...". Si al menos 3 etiquetas de fila tienen una palabra de ingresos/gastos/resultado, se marca `filasDeResultados`. NO cambia
+// `likelyRelevant`: probado así, balances y notas se volvían relevantes y los rubros explotaban (Real Madrid 32 -> 253, Polissya 0 -> 200).
+// tools/pipeline.mjs lo usa SOLO junto con un título de estado de resultados en el texto de la misma página.
+function filasRelevantes(rows) {
+  let n = 0;
+  for (const r of rows) { const l = normalizeText(r.rawLabel); if (RELEVANT_KEYWORDS.some((kw) => l.includes(kw))) n++; if (n >= 3) return true; }
+  return false;
+}
+
 function isLikelyRelevant(section, columns) {
   const hay = normalizeText(`${section || ''} ${(columns || []).join(' ')}`);
   return RELEVANT_KEYWORDS.some((kw) => hay.includes(kw));
@@ -278,7 +301,8 @@ while (i < lines.length) {
     if (isContinuation && rows.length) {
       prevTable.rows.push(...rows);
     } else if (rows.length) {
-      tables.push({ page, section, columns, rows, likelyRelevant: isLikelyRelevant(section, columns) });
+      const t = etiquetaEnSegundaColumna({ columns, rows });
+      tables.push({ page, section, columns: t.columns, rows: t.rows, likelyRelevant: isLikelyRelevant(section, t.columns), filasDeResultados: filasRelevantes(t.rows) });
     }
     continue;
   }

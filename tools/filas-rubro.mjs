@@ -83,8 +83,10 @@ const RESULTADO_LARGO_RE = /^(resultado|result|ergebnis|resultat|risultato|resul
 export const esResultado = (label) => { const l = sinNumeracion(label); return RESULTADO_RE.test(l) || RESULTADO_EN_CUALQUIER_LUGAR.test(l); };
 
 // ---- lado (ingreso o gasto) por la estructura de la tabla
-export const REV_W = /inntekt|omsaetning|omsetning|indtaegt|umsatz|ertrag|ertraeg|ricavi|proventi|revenue|income|turnover|sales|ingres|recurso|receita|rendimento|vendas|subsidi|subvenc|zuschuss|grants? receivable|εσοδ|έσοδ|доход|выручк|prihod|prodej|trzb|opbrengst|omzet|tulot|przychod/;
-export const EXP_W = /kostnad|omkostning|utgift|udgift|aufwand|aufwend|costi|oneri|expens|cost|gasto|egreso|despesa|custo|εξοδ|έξοδ|расход|затрат|rashod|troskov|naklad|kosten|charges|wydatk|koszt|menot|giderler|gider/;
+// Versión 312 (piloto D): ucraniano (дохід, виручка, витрати, собівартість), checo con y sin diacríticos (výnosy, tržby, náklady) y turco
+// (hasılat, gelir, gider, maliyet): Karpaty Lviv tenía lado en 11 de 41 filas porque solo estaban las palabras en ruso.
+export const REV_W = /inntekt|omsaetning|omsetning|indtaegt|umsatz|ertrag|ertraeg|ricavi|proventi|revenue|income|turnover|sales|ingres|recurso|receita|rendimento|vendas|subsidi|subvenc|zuschuss|grants? receivable|εσοδ|έσοδ|доход|дохід|доходи|выручк|виручк|prihod|výnos|vynos|tržb|trzb|hasilat|gelir|prodej|trzb|opbrengst|omzet|tulot|przychod/;
+export const EXP_W = /kostnad|omkostning|utgift|udgift|aufwand|aufwend|costi|oneri|expens|cost|gasto|egreso|despesa|custo|εξοδ|έξοδ|расход|затрат|витрат|собівартість|себестоимост|náklad|naklad|gider|maliyet|rashod|troskov|naklad|kosten|charges|wydatk|koszt|menot|giderler|gider/;
 // Impuestos: "Income tax", "Imposto sobre o rendimento", "Steuern vom Einkommen und vom Ertrag" tienen una palabra de ingreso adentro
 // (income/rendimento/Ertrag) pero son un GASTO. Sin esta regla, la regla de palabras los mandaba a ingresos.
 const TAX_W = /\btax|impuesto|imposto|steuer|\bskatt?\b|imposte|belasting|vergi|podatek|porez|φορο|налог|податок|irpj|csll/;

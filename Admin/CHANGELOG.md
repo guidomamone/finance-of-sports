@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 312 — Piloto D: estados de resultados sin título en la tabla, etiqueta en la segunda columna, flujo de efectivo y patrimonio fuera, lado en ucraniano/checo/turco (2026-09-30)
+
+- Piloto D (`Admin/piloto-d.txt`, 10 PDFs): US$ 1,73 de transcripción y validación + US$ 0,42 de categorización; PDFs con texto validados 100% gratis (Athletic Club, Fortaleza CEIF, Vitória Guimarães, Rubin 2023: 0 páginas a Claude); las carpetas que antes caían en otro club resolvieron bien; 69% de rubros categorizados solos (bajado por los formularios en cirílico, con muchas filas que no son rubros).
+- `extract-table-rows.mjs`: en formularios oficiales (checo, ucraniano, ruso) la primera columna es un código ("I.", "A.") y el rubro está en la segunda: se toma la segunda como etiqueta. Nuevo `filasDeResultados` (>= 3 filas con palabras de ingresos/gastos); NO cambia `likelyRelevant` (probado así: Real Madrid 32 -> 253 rubros, Polissya 0 -> 200).
+- `pipeline.mjs`: una tabla con filas de resultados en una página cuyo TÍTULO (línea corta fuera de tablas) es de estado de resultados cuenta como estado de resultados (Baník 1997: 3 -> 31 rubros; Polissya 0 -> 56; Galatasaray 0 -> 48). Los estados de flujo de efectivo y de cambios en el patrimonio se excluyen (Karpaty 60 -> 41).
+- `filas-rubro.mjs`: palabras de ingreso/gasto en ucraniano, checo y turco (filas con lado: Karpaty 11 -> 24 de 41, Polissya 12 -> 26).
+- Pendiente anotado: Fortaleza CEIF 2025 trae solo notas (sin estados) pero la nota 19 abre los ingresos; hoy queda `sin-rubros`.
+
 ## Versión 311 — Registro de altas por script y preguntas del alta resueltas por Claude con cita verificada (2026-09-30)
 
 - `tools/altas-registro.mjs` (nuevo) + `alta-club.mjs --todos`: `Admin/altas-club.jsonl`, una línea por carpeta de club nuevo con estado (`listo-para-alta` / `con-preguntas` / `faltan-datos` / `existe`), preguntas, pendientes y la huella de sus entradas (`.md`, series de fx, rosters, `data/clubs.js`); si algo cambia, se recalcula solo. `pipeline.mjs --resumen` lo muestra. Hoy, de 212 carpetas: 77 listos para alta, 63 con preguntas, 72 esperando datos (63 sin `.md`).

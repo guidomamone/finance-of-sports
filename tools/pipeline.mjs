@@ -236,9 +236,28 @@ for (const e of ready) {
   if (r.status !== 0 || !existsSync(out)) { nFail++; console.log(`  ! ${e.pdf}: prepare-onboarding.mjs falló (${(r.stderr || r.stdout || '').trim().split('\n').pop()?.slice(0, 120)})`); continue; }
   const b = JSON.parse(readFileSync(out, 'utf8'));
   const rubros = [];
-  const hasStatement = (b.tables || []).some((t) => t.likelyRelevant && isStatement(t));
+  // Versión 312 (piloto D, Baník Ostrava 1997): el título del estado ("VÝKAZ ZISKŮ A ZTRÁT") puede estar en el TEXTO de la página, fuera de
+  // la tabla, y la sección de la tabla terminar siendo otra cosa (la dirección del club). Una tabla relevante en una página cuyo texto
+  // (sin contar las filas de tabla) tiene el título de un estado de resultados cuenta como estado de resultados.
+  const paginasConTitulo = new Set();
+  { const mdTxt = readFileSync(mdAbs, 'utf8'); const marks = [...mdTxt.matchAll(/^--- pág\. (\d+) ---/gm)];
+    marks.forEach((m, i) => { const body = mdTxt.slice(m.index, i + 1 < marks.length ? marks[i + 1].index : mdTxt.length).split('\n')
+        // Solo líneas que parecen TÍTULOS (cortas, fuera de tablas): en la prosa aparece "resultado" en cualquier nota ("se reconoce en
+        // resultados") y convertiría toda tabla de esa página en estado de resultados.
+        .filter((l) => !l.startsWith('|') && l.trim().length > 0 && l.replace(/[#*_ ]/g, '').length <= 60);
+      if (body.some((l) => STATEMENT_RE.test(norm(l.replace(/[#*_]/g, '')).trim()))) paginasConTitulo.add(Number(m[1])); }); }
+  // Y además la tabla tiene que tener filas de resultados (>= 3 etiquetas con palabras de ingresos/gastos, `filasDeResultados` de
+  // extract-table-rows.mjs): el balance puede estar en la misma página que el título.
+  const porTitulo = (t) => paginasConTitulo.has(t.page) && t.filasDeResultados;
+  const esEstado = (t) => (t.likelyRelevant && isStatement(t)) || porTitulo(t);
+  const hasStatement = (b.tables || []).some(esEstado);
+  // Estados de FLUJO DE EFECTIVO y de CAMBIOS EN EL PATRIMONIO: no tienen rubros de ingresos/gastos para el sitio, pero sus filas dicen
+  // "resultado", "ingresos", "amortizaciones" y pasaban el filtro de relevancia. En los pilotos C y D eran buena parte de las filas que
+  // después Claude marcaba `no_es_rubro` (pagando): Baník 1997 págs. 15 y 18, Polissya pág. 7. Se excluyen por su título/columnas/filas.
+  const NO_RESULTADOS_RE = /cash ?flow|flujo(s)? de efectivo|fluxo(s)? de caixa|flusso di cassa|rendiconto finanziario|kapitalflussrechnung|cashflow|kontantstrom|pengestr|penezni tok|peneznich tok|рух грошових|движени[ея] денежных|nakit akis|variazioni del patrimonio|cambios en el patrimonio|evolucion del patrimonio|mutacoes do patrimonio|mutacoes no patrimonio|changes in equity|eigenkapitalveraenderung|egenkapitaloppstilling|власного капіталу|собственного капитала|ozkaynak degisim|zmeny vlastniho kapitalu|залишок на початок|остаток на начало/;
+  const esFlujoOPatrimonio = (t) => NO_RESULTADOS_RE.test(norm(`${t.section || ''} ${(t.columns || []).join(' ')} ${(t.rows || []).slice(0, 3).map((r) => r.rawLabel).join(' ')}`));
   for (const t of b.tables || []) {
-    if (!t.likelyRelevant || !hasStatement) continue;
+    if (!(t.likelyRelevant || porTitulo(t)) || !hasStatement || esFlujoOPatrimonio(t)) continue;
     const ladoTabla = sideOfTable(t);
     // Columna de importes: la del año del ejercicio si un encabezado lo dice, y si no la primera con números que NO sea la de notas
     // (columnaDeImportes de tools/filas-rubro.mjs, Versión 307). Antes era "la primera con números en el 40% de las filas", que en Alverca y
