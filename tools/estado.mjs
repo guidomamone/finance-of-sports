@@ -56,7 +56,7 @@ const ETAPAS = [
   ['5. CATEGORIZAR (Jev y Claude)', [
     ['cat-falta', 'Con rubros, sin categorizar o con la categorización desactualizada', 'Jev y Claude por API.', 'pipeline.mjs --ejecutar', 0.04],
     ['cat-solo-jev', 'Con rubros, solo Jev (falta Claude)', 'Claude por API en lo que Jev dejó < 0,90.', 'pipeline.mjs --ejecutar', 0.03],
-    ['cat-ok', 'Con rubros y categorización al día', 'Cargar (etapa 6).', 'tools/cargar.mjs (en construcción)', 0],
+    ['cat-ok', 'Con rubros y categorización al día', 'Cargar (etapa 6).', 'node tools/cargar.mjs <pdf> (propuesta; --escribir)', 0],
   ]],
   ['7. EN EL SITIO', [
     ['cargado', 'Ejercicio cargado', 'Nada.', '—', 0],
@@ -114,6 +114,6 @@ if (existsSync(altas)) {
   const c = {}; for (const a of A) c[a.estado] = (c[a.estado] || 0) + 1;
   console.log(`\n6b. ALTA DE CLUBES NUEVOS (Admin/altas-club.jsonl): ${Object.entries(c).map(([k, v]) => `${k} ${v}`).join(' · ')}   [node tools/alta-club.mjs --todos]`);
 }
-console.log('  La etapa 6 (tools/cargar.mjs) está en construcción: ver Admin/HANDOFF-pipeline.md.');
+console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, Qué falta 1.');
 ETAPAS.filter(([e]) => e.startsWith('7')).forEach(imprimirEtapa);
 console.log('');
