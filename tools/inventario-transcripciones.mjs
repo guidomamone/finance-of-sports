@@ -27,6 +27,7 @@
 //                           dos versiones que no coinciden): hay que resolverlo antes de onboardear.
 //   pendiente-segunda-voz   es un escaneo (no hay texto en el PDF contra qué comparar): necesita una
 //                           segunda transcripción independiente (Gemini o Claude por API).
+//   sin-md                  el PDF todavía no tiene ninguna transcripción (tools/pipeline.mjs la hace).
 //   reintentar              la última corrida de tools/resolver-inventario.mjs no pudo terminar por un
 //                           problema de crédito / límite / red (NO por el documento): se retoma sola.
 //   sin-verificar           todavía no se corrió ninguna validación.
@@ -84,7 +85,7 @@ function walkPdfs(dir, out = []) {
 // ese comando NO lista como "necesita trabajo" es lo que ya está cargado). Se le pregunta a él en vez
 // de duplicar la lógica de resolver club+año, que ya tiene sus casos raros resueltos.
 function pendingByOnboard() {
-  const r = spawnSync('node', [resolve(root, 'tools/onboard.mjs'), '--all', '--dry-run', '--confirm'], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 });
+  const r = spawnSync('node', [resolve(root, 'tools/onboard.mjs'), '--all', '--dry-run', '--confirm'], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024, env: { ...process.env, ONBOARD_IGNORE_BRIEFING: '1' } });
   const set = new Set();
   for (const m of (r.stdout || '').matchAll(/^=== (.+?) ===$/gm)) set.add(m[1]);
   if (set.size === 0) throw new Error('onboard.mjs --dry-run no devolvió ningún documento: no puedo saber qué está cargado');
@@ -131,6 +132,7 @@ function motorFinal(base, verif, sha) {
 }
 
 function currentState(entry, verif) {
+  if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: 'todavía no hay ninguna transcripción de este PDF' };
   if (entry.cargado) return { status: 'cargado', method: null, detail: 'el ejercicio ya está en el sitio' };
   if (verif && verif.mdSha1 === entry.mdSha1) return { status: verif.status, method: verif.method, detail: verif.detail };
   return { status: 'sin-verificar', method: null, detail: verif ? 'el .md cambió después de la última validación' : '' };
@@ -160,7 +162,8 @@ function runVerification(entry) {
 }
 
 // ---------------------------------------------------------------------------
-const pdfsAll = walkPdfs(resolve(root, 'Clubes')).filter((p) => existsSync(p.slice(0, -4) + '.md')).sort();
+// Se incluyen TAMBIÉN los PDFs sin ningún .md (estado 'sin-md'): el script único tools/pipeline.mjs los transcribe.
+const pdfsAll = walkPdfs(resolve(root, 'Clubes')).sort();
 const pending = pendingByOnboard();
 const prov = loadProvenance();
 const verifs = latestVerifications();
@@ -170,10 +173,11 @@ let entries = pdfsAll.map((pdfAbs) => {
   const md = pdf.replace(/\.pdf$/i, '.md');
   const p = prov.get(md);
   const mdAbs = resolve(root, md);
-  const head = readFileSync(mdAbs, 'utf8').slice(0, 1500);
+  const tieneMd = existsSync(mdAbs);
+  const head = tieneMd ? readFileSync(mdAbs, 'utf8').slice(0, 1500) : '';
   return {
-    pdf, md,
-    motor: p ? p.engine : 'legado',
+    pdf, md, tieneMd,
+    motor: !tieneMd ? 'ninguno' : p ? p.engine : 'legado',
     modelo: p ? p.model : 'sin registro (anterior a las APIs: subagente de Claude / Tesseract, ver CLAUDE.md)',
     fecha: p ? p.ts.slice(0, 10) : null,
     costoUsd: p ? p.costUsd : null,
@@ -181,14 +185,14 @@ let entries = pdfsAll.map((pdfAbs) => {
     discrepanciaResuelta: /DISCREPANCIA MISTRAL\/GEMINI RESUELTA/.test(head),
     voces: findVoices(pdfAbs),
     cargado: !pending.has(pdf),
-    mdSha1: sha1(mdAbs),
+    mdSha1: tieneMd ? sha1(mdAbs) : null,
   };
 });
 
 const scope = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
 
 if (doVerify) {
-  const todo = scope.filter((e) => !e.cargado && currentState(e, verifs.get(e.md)).status !== 'listo').slice(0, limit);
+  const todo = scope.filter((e) => e.tieneMd && !e.cargado && currentState(e, verifs.get(e.md)).status !== 'listo').slice(0, limit);
   console.log(`Validando ${todo.length} documento(s) sin gastar API...`);
   let i = 0;
   for (const e of todo) {
@@ -205,7 +209,9 @@ entries = entries.map((e) => {
   const s = currentState(e, verifs.get(e.md));
   const { mdSha1, ...rest } = e;
   const mf = motorFinal(e.motor, verifs.get(e.md), e.mdSha1);
-  return { ...rest, ...(mf ? { motor: mf.motor, motorOriginal: e.motor, paginasReemplazadas: mf.paginasReemplazadas, reserva: mf.reserva, previo: mf.previo } : {}), estado: s.status, metodo: s.method, detalle: s.detail, mdSha1 };
+  const vv = verifs.get(e.md);
+  const jev = vv && vv.mdSha1 === e.mdSha1 && vv.jev ? { jev: vv.jev, rubros: vv.rubros ?? null } : {};
+  return { ...rest, ...jev, ...(mf ? { motor: mf.motor, motorOriginal: e.motor, paginasReemplazadas: mf.paginasReemplazadas, reserva: mf.reserva, previo: mf.previo } : {}), estado: s.status, metodo: s.method, detalle: s.detail, mdSha1 };
 });
 writeFileSync(statePath, entries.map((e) => JSON.stringify(e)).join('\n') + '\n');
 
@@ -217,7 +223,7 @@ if (listState) {
 // Resumen
 const tally = (arr, key) => arr.reduce((a, e) => ((a[key(e)] = (a[key(e)] || 0) + 1), a), {});
 const scopeE = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
-console.log(`\n${scopeE.length} PDFs con .md${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/transcripciones-estado.jsonl\n`);
+console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} con .md)${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/transcripciones-estado.jsonl\n`);
 console.log('Por estado:');
 for (const [k, v] of Object.entries(tally(scopeE, (e) => e.estado)).sort((a, b) => b[1] - a[1])) console.log(`  ${String(v).padStart(5)}  ${k}`);
 console.log('\nPor motor que hizo el .md (solo lo NO cargado todavía):');

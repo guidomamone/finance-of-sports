@@ -30,8 +30,8 @@ import { execFileSync } from 'node:child_process';
 // columnas contiguas ("133.816 189.064") son dos números, no uno (BUG del primer intento: los pegaba y
 // marcaba el 38% de las páginas como dudosas por pura diferencia de formato). Tampoco pega una
 // referencia de nota con el importe que le sigue ("13 228.106" son 13 y 228.106).
-const NUM_RE = /\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?|\d{1,3}(?: \d{3})+(?:,\d{1,2}(?!\d))?(?![.,]?\d)|\d+[.,]\d{2}\b|\d{4,}/g;
-const norm = (t) => t.replace(/[\s.,]/g, '');
+export const NUM_RE = /\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?|\d{1,3}(?: \d{3})+(?:,\d{1,2}(?!\d))?(?![.,]?\d)|\d+[.,]\d{2}\b|\d{4,}/g;
+export const norm = (t) => t.replace(/[\s.,]/g, '');
 const MIN_DIGITS = 4; // ignora "12", "3,5", páginas, notas: solo cifras de 4+ dígitos
 
 export function extractNumbers(text) {

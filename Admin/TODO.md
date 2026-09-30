@@ -57,8 +57,9 @@ perdieron sino que se descartaron:
 108. TERMINAR DE VALIDAR TODO EL INVENTARIO DE `.md` LEGADO (pedido de Guido 2026-09-29: "TODO ES TODO lo
     legado", sin orden de prioridad por club). Estado tras los 2 pilotos (21 docs, todos `listo`): quedan ~1.436
     documentos entre `revisar` y `pendiente-segunda-voz` (ver `node tools/inventario-transcripciones.mjs`).
-    1. Correr `node tools/resolver-inventario.mjs --ejecutar --concurrencia 4 --limit 100`, revisar el resumen, y
-       seguir en tandas (los resultados quedan; se puede cortar y retomar). Estimación del ensayo: ~$350.
+    1. Correr `node tools/pipeline.mjs --ejecutar` (50 documentos por corrida; `--limit N`, `--limit 0` = todos), mirar el resumen, y
+       seguir en tandas (se puede cortar y retomar). Costo REAL del piloto de 44 documentos: $13,99 (~$0,32 por documento, el doble de
+       lo estimado): para el inventario completo esperar del orden de $450, no $350. Medir en qué camino se va la plata antes de correr todo.
     2. Regenerar el registro después de cada tanda (`node tools/inventario-transcripciones.mjs`) y mirar los
        `revisar` que queden (sin consenso entre voces: resolver contra el PDF) y los `reserva`.
     3. INTEGRAR al onboarding: `tools/onboard.mjs` hoy valida con `compare-transcripts` (rubro por rubro); el

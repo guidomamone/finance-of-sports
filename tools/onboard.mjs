@@ -194,6 +194,9 @@ function findPdfsUnder(dir) {
 }
 
 function briefingIsFresh(mdPath) {
+  // tools/inventario-transcripciones.mjs necesita saber qué está CARGADO EN EL SITIO, sin mezclarlo con "tiene un briefing al día"
+  // (BUG REAL: lo que el pipeline preparaba pasaba a figurar como cargado). Con esta variable se ignora el briefing.
+  if (process.env.ONBOARD_IGNORE_BRIEFING) return false;
   const briefingPath = resolve(dirname(mdPath), `${basename(mdPath, extname(mdPath))}.briefing.json`);
   if (!existsSync(briefingPath)) return false;
   return statSync(briefingPath).mtimeMs >= statSync(mdPath).mtimeMs;

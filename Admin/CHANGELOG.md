@@ -74,6 +74,17 @@ que dice `ESTADO.md` era verdad ese día.
     dañados, no bugs del código; `execFileSync` los heredaba a la pantalla. Ahora se silencian (`stdio` sin stderr). Bug real
     del mismo piloto: `qpdf` devuelve código 2 en un PDF dañado (DNCG Francia 2018-19) y el resolver lo marcaba `revisar`;
     ahora cae a `pdfseparate` + `pdfunite` (poppler, más tolerante).
+  - **`tools/pipeline.mjs`: el comando único de punta a punta** (`node tools/pipeline.mjs --ejecutar [--limit N] [--dir ...] [--lista ...]`,
+    sin `--ejecutar` es un ensayo con estimación de costo; `--resumen` muestra el estado sin correr nada). Toma los PDFs no cargados en
+    el sitio que no tienen `.md` o tienen uno sin confirmar; Mistral transcribe los que no tienen; `resolver-inventario.mjs` valida; las
+    tools gratis de onboarding preparan la lista de rubros; y deja `<md>.rubros.json` (gitignoreado) con la marca `listo-para-jev`, o
+    `sin-rubros` (actas, memorias narrativas). NO categoriza rubros (eso es Jev, to-do 99). Probado de verdad con 3 documentos
+    (uno sin `.md`, uno sin confirmar, uno ya validado). El registro pasó a incluir los PDFs sin `.md` (estado `sin-md`, 1.178) y el campo `jev`.
+  - Consenso entre voces en una página, en este orden: mayoría -> **parche de dígitos por mayoría** (cifra que ninguna otra voz tiene y casi
+    igual a una que tienen 2 -> se corrige el dígito) -> cuarta voz (Mistral) -> **aritmética del documento** (gana la versión cuyas
+    sumas cierran, vía prepare-onboarding) -> Claude con `reserva`. Un `revisar` por "sin consenso" ya solo queda si no hay versión de Claude.
+  - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
+    con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",
     questions:{<nombre>:{type:"choice", instructions, criteria:{<categoría>:<descripción>}}}}`; devuelve `choice`, `confidence` y
     `probabilities`. Docs: https://docs.typesafe.ai/ (índice en `/llms.txt`). Categorizar rubros NO es parte del pipeline actual.

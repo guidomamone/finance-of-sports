@@ -56,7 +56,7 @@ import { tmpdir } from 'node:os';
 import { execFileSync, spawn, spawnSync } from 'node:child_process';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { createHash } from 'node:crypto';
-import { extractNumbers, verifyNumbers } from './verify-numbers.mjs';
+import { extractNumbers, verifyNumbers, NUM_RE, norm } from './verify-numbers.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -288,18 +288,80 @@ function vote(voices) {
   return { best, clean: dist[best] === 0 };
 }
 
-async function resolveDoc(e) {
+// ---- Consenso entre voces en una página ---------------------------------------------------------------
+function hamming(a, b) { if (a.length !== b.length) return Infinity; let d = 0; for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) d++; return d; }
+function majorityNumbers(cands) {
+  const count = new Map();
+  for (const c of cands) for (const x of numsOf(c.body)) count.set(x, (count.get(x) || 0) + 1);
+  return new Set([...count].filter(([, n]) => n >= 2).map(([x]) => x));
+}
+
+// PASO 1 (gratis): PARCHE POR MAYORÍA. Si la voz elegida tiene una cifra que ninguna otra tiene, pero es casi igual
+// (mismo largo, 1-2 dígitos distintos) a una cifra que SÍ tienen al menos dos voces y a la elegida le falta, es una
+// lectura mal hecha: se corrige el dígito (Almagro 2018 pág. 8: 9.010.531 -> 9.016.531). Devuelve null si no alcanza.
+function patchToMajority(cands, best) {
+  const M = majorityNumbers(cands);
+  const own = numsOf(cands[best].body);
+  const bad = [...own].filter((x) => !M.has(x));
+  const missing = [...M].filter((x) => !own.has(x));
+  if (!bad.length) return null;
+  const map = new Map(); const used = new Set();
+  for (const x of bad) {
+    const y = missing.find((m) => !used.has(m) && m.length === x.length && hamming(m, x) <= (x.length >= 7 ? 2 : 1));
+    if (!y) return null;
+    map.set(x, y); used.add(y);
+  }
+  const body = cands[best].body.replace(NUM_RE, (tok) => {
+    const d = norm(tok);
+    if (!map.has(d)) return tok;
+    const y = map.get(d); let i = 0;
+    return tok.replace(/\d/g, () => y[i++]);
+  });
+  if (!sameSet(numsOf(body), M)) return null;
+  return { body, parches: [...map].map(([a, b]) => `${a}->${b}`) };
+}
+
+// PASO 2 (gratis): ARITMÉTICA DEL DOCUMENTO. Entre versiones distintas de una página gana la que hace cerrar más sumas
+// contra los totales impresos (tools/prepare-onboarding.mjs: cierres exactos menos fallos). Comprobado a mano en
+// Argentinos Juniors: 425.204.023 + 233.796.753 - 275.518.976 = 383.481.800 decidía cuál de las lecturas era la correcta.
+function tieScore(body) {
+  const tmp = mkdtempSync(join(tmpdir(), 'tie-'));
+  try {
+    const f = join(tmp, 'cand.md');
+    writeFileSync(f, `--- pág. 1 ---\n${body}`);
+    const r = spawnSync('node', [resolve(root, 'tools/prepare-onboarding.mjs'), 'zz-tmp', '2000', f, '--json'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+    const t = JSON.parse(r.stdout).tieOuts || [];
+    return t.filter((x) => x.closes === true).length - t.filter((x) => x.closes === false).length;
+  } catch { return 0; } finally { rmSync(tmp, { recursive: true, force: true }); }
+}
+function settleByArithmetic(cands) {
+  const scores = cands.map((c) => tieScore(c.body));
+  const max = Math.max(...scores);
+  if (max <= 0 || scores.filter((x) => x === max).length !== 1) return null;
+  return scores.indexOf(max);
+}
+
+async function resolveDoc(e0) {
+  let e = e0;
   const pdfAbs = resolve(root, e.pdf);
   const mdAbs = resolve(root, e.md);
   const nPages = pageCount(pdfAbs);
   const tag = e.pdf.split('/').slice(-2).join('/');
   const log = (m) => console.log(`    [${tag}] ${m}`);
   const prov = { base: e.motor, paginas: {} };
-  const reserva = []; const sinConsenso = [];
-  const fin = (status, detail, extra = {}) => ({ status, detail, prov, reserva, sinConsenso, previo: previo ? relative(root, previo) : null, cost: docCost.getStore().cost, ...extra });
-  const retry = (r, what) => fin(r.kind === 'agotado' ? 'reintentar' : 'revisar', `${what}: ${r.text}`);
-  let canon = splitPages(readFileSync(mdAbs, 'utf8'));
+  const reserva = []; const sinConsenso = []; const parches = []; const resolucion = {};
   let previo = null;
+  const fin = (status, detail, extra = {}) => ({ status, detail, prov, reserva, sinConsenso, parches, resolucion, previo: previo ? relative(root, previo) : null, cost: docCost.getStore().cost, ...extra });
+  const retry = (r, what) => fin(r.kind === 'agotado' ? 'reintentar' : 'revisar', `${what}: ${r.text}`);
+  // -1) Sin ninguna transcripción todavía (documento nuevo): Mistral la hace, y sigue el camino de siempre.
+  if (!existsSync(mdAbs)) {
+    log('sin .md: lo transcribe Mistral');
+    const r0 = await callEngine('mistral', pdfAbs, '');
+    if (!r0.ok) return retry(r0, 'Mistral no pudo transcribir el documento nuevo');
+    prov.base = 'mistral';
+    e = { ...e, motor: 'mistral' };
+  }
+  let canon = splitPages(readFileSync(mdAbs, 'utf8'));
   const backup = () => {
     if (previo) return;
     previo = mdAbs.replace(/\.md$/, `.previo-${e.motor === 'legado' ? 'legado' : e.motor}.md`);
@@ -382,39 +444,58 @@ async function resolveDoc(e) {
     backup();
     const tie = await transcribePages(voiceEngine === 'gemini' ? 'claude' : 'gemini', pdfAbs, doubts);
     if (!tie.ok && (tie.kind === 'agotado' || voiceEngine === 'gemini')) return retry(tie, 'no se pudo desempatar');
-    const pageCands = new Map();
+    const pageCands = new Map(); const pending = [];
+    const apply = (n, cands, idx, how, body) => {
+      resolucion[n] = how;
+      if (cands[idx].src === 'canónica' && how !== 'parche') { const cur = canon.pages.find((p) => p.n === n); if (cur && prov.paginas[n]) { cur.body = nl(cands[0].body); delete prov.paginas[n]; } return; }
+      setPage(n, body ?? cands[idx].body, cands[idx].src);
+    };
+    // Pasos 0-1: mayoría entre las voces, y si no, parche de dígitos por mayoría (ambos gratis).
+    const settleFree = (n, cands) => {
+      const v = vote(cands);
+      if (v.clean) { apply(n, cands, v.best, 'mayoria'); return true; }
+      const p = patchToMajority(cands, v.best);
+      if (p) { apply(n, cands, v.best, 'parche', p.body); parches.push(...p.parches.map((x) => `pág. ${n}: ${x}`)); return true; }
+      return false;
+    };
     for (const n of doubts) {
       const A = canonBody(n); const B = voiceBody.get(n); const C = tie.ok ? tie.pages.get(n) : undefined;
       const names = ['canónica', voiceEngine === 'gemini' ? 'gemini' : 'claude-api', voiceEngine === 'gemini' ? 'claude-api' : 'gemini'];
       const cands = [[A, names[0]], [B, names[1]], [C, names[2]]].filter(([b]) => b !== undefined).map(([body, src]) => ({ body, src }));
       if (cands.length === 3) {
         pageCands.set(n, cands);
-        const v = vote(cands);
-        if (!v.clean) sinConsenso.push(n);
-        if (cands[v.best].src !== 'canónica') setPage(n, cands[v.best].body, cands[v.best].src);
+        if (!settleFree(n, cands)) pending.push(n);
       } else if (cands.length === 2 && voiceEngine === 'claude') {
         // Gemini rechazó también esa página: solo hay dos voces. Gana Claude, con reserva.
-        if (A !== undefined) { setPage(n, B, 'claude-api'); reserva.push(n); } else setPage(n, B, 'claude-api');
+        setPage(n, B, 'claude-api'); if (A !== undefined) { reserva.push(n); resolucion[n] = 'claude-con-reserva'; }
       } else {
         sinConsenso.push(n);
       }
     }
-    // Páginas donde las tres voces discrepan: una CUARTA voz barata (Mistral, ~$0.004/pág.) las desempata,
-    // salvo que el .md base ya sea de Mistral (mismo motor: repetiría el mismo error, no aporta una voz nueva).
-    if (sinConsenso.length && !String(prov.base).startsWith('mistral')) {
-      const pend = [...sinConsenso];
-      log(`páginas sin consenso (${pend.join(', ')}): pido una cuarta voz a Mistral`);
-      const m = await transcribePages('mistral', pdfAbs, pend);
+    // Paso 2: una CUARTA voz barata (Mistral, ~$0.004/pág.) para las que siguen sin consenso, salvo que el .md base ya sea
+    // de Mistral (mismo motor: repetiría el mismo error, no aporta una voz nueva).
+    if (pending.length && !String(prov.base).startsWith('mistral')) {
+      log(`páginas sin consenso (${pending.join(', ')}): pido una cuarta voz a Mistral`);
+      const m = await transcribePages('mistral', pdfAbs, [...pending]);
       if (m.ok) {
-        for (const n of pend) {
+        for (const n of [...pending]) {
           const cands = [...pageCands.get(n), { body: m.pages.get(n), src: 'mistral' }];
-          const v = vote(cands);
-          if (!v.clean) continue;
-          sinConsenso.splice(sinConsenso.indexOf(n), 1);
-          if (cands[v.best].src === 'canónica') { const cur = canon.pages.find((p) => p.n === n); cur.body = nl(cands[0].body); delete prov.paginas[n]; }
-          else setPage(n, cands[v.best].body, cands[v.best].src);
+          pageCands.set(n, cands);
+          if (settleFree(n, cands)) pending.splice(pending.indexOf(n), 1);
         }
       } else if (m.kind === 'agotado') return retry(m, 'no se pudo pedir la cuarta voz');
+    }
+    // Paso 3: la aritmética del documento (gratis).
+    for (const n of [...pending]) {
+      const cands = pageCands.get(n);
+      const idx = settleByArithmetic(cands);
+      if (idx !== null) { apply(n, cands, idx, 'sumas'); pending.splice(pending.indexOf(n), 1); }
+    }
+    // Paso 4: gana Claude, con reserva (cerrar con sum-check al onboardear).
+    for (const n of [...pending]) {
+      const cands = pageCands.get(n);
+      const idx = cands.findIndex((c) => c.src === 'claude-api');
+      if (idx >= 0) { apply(n, cands, idx, 'claude-con-reserva'); reserva.push(n); } else sinConsenso.push(n);
     }
     save();
   }
@@ -427,6 +508,7 @@ async function resolveDoc(e) {
 function dryRunDoc(e) {
   const pdfAbs = resolve(root, e.pdf);
   const nPages = pageCount(pdfAbs);
+  if (!existsSync(resolve(root, e.md))) return { plan: 'sin .md: Mistral + Gemini/Claude en págs. dudosas', nPages, cost: nPages * (EST.mistral + EST.gemini + 0.6 * 0.25 * EST.claude + 0.15 * EST.claude) };
   const canon = splitPages(readFileSync(resolve(root, e.md), 'utf8'));
   if (canon.pages.length < Math.max(1, Math.floor(nPages * 0.5))) return { plan: 'rehacer-mistral', nPages, cost: nPages * EST.mistral + nPages * 0.15 * EST.claude };
   const vn = verifyNumbers(pdfAbs, resolve(root, e.md));
@@ -442,7 +524,7 @@ function dryRunDoc(e) {
 // ---------------------------------------------------------------- main
 const ledger = readJsonl(statePath);
 if (!ledger.length) { console.error('Falta Admin/transcripciones-estado.jsonl: corré primero node tools/inventario-transcripciones.mjs'); process.exit(1); }
-const TODO_STATES = new Set(estadoFilter ? [estadoFilter] : ['revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar']);
+const TODO_STATES = new Set(estadoFilter ? [estadoFilter] : ['sin-md', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar']);
 let todo = ledger.filter((e) => !e.cargado && TODO_STATES.has(e.estado)
   && (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'))
   && (!onlyPdf || e.pdf === onlyPdf)
@@ -481,14 +563,14 @@ async function worker() {
     } catch (err) {
       if (err instanceof StopRun) {
         stopped = err.message;
-        appendFileSync(verifPath, JSON.stringify({ ts: new Date().toISOString(), md: e.md, mdSha1: sha1(resolve(root, e.md)), status: 'reintentar', method: 'resolver-inventario', detail: err.message }) + '\n');
+        appendFileSync(verifPath, JSON.stringify({ ts: new Date().toISOString(), md: e.md, mdSha1: existsSync(resolve(root, e.md)) ? sha1(resolve(root, e.md)) : null, status: 'reintentar', method: 'resolver-inventario', detail: err.message }) + '\n');
         return;
       }
       res = { status: 'reintentar', detail: `error inesperado: ${err.message}`.slice(0, 300), prov: { base: e.motor, paginas: {} }, reserva: [], sinConsenso: [], cost: 0 };
     }
     appendFileSync(verifPath, JSON.stringify({
-      ts: new Date().toISOString(), md: e.md, mdSha1: sha1(resolve(root, e.md)), status: res.status, method: res.method || 'resolver-inventario', detail: res.detail,
-      proveniencia: res.prov, reserva: res.reserva, sinConsenso: res.sinConsenso, previo: res.previo || null, costoUsd: Number((res.cost || 0).toFixed(4)),
+      ts: new Date().toISOString(), md: e.md, mdSha1: existsSync(resolve(root, e.md)) ? sha1(resolve(root, e.md)) : null, status: res.status, method: res.method || 'resolver-inventario', detail: res.detail,
+      proveniencia: res.prov, reserva: res.reserva, sinConsenso: res.sinConsenso, parches: res.parches || [], resolucion: res.resolucion || {}, previo: res.previo || null, costoUsd: Number((res.cost || 0).toFixed(4)),
     }) + '\n');
     tally[res.status] = (tally[res.status] || 0) + 1;
     done++;
