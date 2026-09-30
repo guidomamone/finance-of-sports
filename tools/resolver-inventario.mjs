@@ -233,7 +233,22 @@ async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
       const r = await callEngine(engine, batch.file, '', opts);
       if (!r.ok) return { ok: false, kind: r.kind, text: r.text };
       const { pages } = splitPages(readFileSync(r.path, 'utf8'));
-      if (pages.length !== batch.pages.length) return { ok: false, kind: 'otro', text: `${engine} devolvió ${pages.length} páginas para ${batch.pages.length} pedidas` };
+      if (pages.length !== batch.pages.length) {
+        // BUG REAL de la primera corrida del pipeline (Aston Martin F1: Claude devolvió 12 páginas para 20 pedidas): el motor
+        // fusionó u omitió marcas de página, y fallar todo el documento por eso era desproporcionado. Se reparte el lote en
+        // dos mitades y se reintenta cada una; una página sola que vuelve vacía es una página en blanco.
+        if (batch.pages.length > 1) {
+          const mid = Math.ceil(batch.pages.length / 2);
+          for (const half of [batch.pages.slice(0, mid), batch.pages.slice(mid)]) {
+            const rr = await transcribePages(engine, pdfAbs, half, opts);
+            if (!rr.ok) return rr;
+            for (const [n, body] of rr.pages) map.set(n, body);
+          }
+          continue;
+        }
+        map.set(batch.pages[0], pages.length ? pages.map((p) => p.body).join('\n') : '');
+        continue;
+      }
       pages.forEach((p, i) => map.set(batch.pages[i], p.body));
     }
     return { ok: true, pages: map };
@@ -367,6 +382,16 @@ function settleByArithmetic(cands) {
 
 async function resolveDoc(e0) {
   let e = e0;
+  // Un ".pdf" que no es un PDF (una página web HTML guardada con esa extensión, o un archivo cifrado): caso real de la primera
+  // corrida del pipeline (Unión Magdalena: HTML de 38 KB; DNCG 2014-15: 2,9 MB de bytes sin cabecera). Reintentar no sirve:
+  // se marca y hay que volver a conseguir el documento.
+  try {
+    const head = readFileSync(resolve(root, e.pdf)).subarray(0, 1024);
+    if (!head.includes('%PDF')) {
+      const html = /<!DOCTYPE|<html/i.test(head.toString('latin1'));
+      return { status: 'no-es-pdf', detail: `el archivo no es un PDF (${html ? 'es una página web HTML guardada como .pdf' : 'no tiene cabecera de PDF, probablemente corrupto o cifrado'}): hay que volver a conseguir el documento`, prov: { base: e.motor, paginas: {} }, reserva: [], sinConsenso: [], parches: [], resolucion: {}, cost: 0 };
+    }
+  } catch { /* si no se puede leer, sigue y falla más abajo con su propio mensaje */ }
   const pdfAbs = resolve(root, e.pdf);
   const mdAbs = resolve(root, e.md);
   const nPages = pageCount(pdfAbs);
