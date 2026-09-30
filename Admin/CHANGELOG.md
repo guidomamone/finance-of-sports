@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 309 — Una sola regla carpeta -> club, vigilada por audit.js; el registro marca lo pagado sin .md (2026-09-30)
+
+- `tools/carpetas-clubes.mjs` (nuevo): el club de `Clubes/<País>/<Club>/` sale de la cita en `data/<id>-data.js`, y si no la hay, de un nombre IGUAL entre los clubes del mismo país; si no, es club nuevo. `onboard.mjs` (y con él `--quien`, el registro y el pipeline) la usa en vez de `guessClubId()` (substring, sin país).
+- Medido con la regla vieja: 17 carpetas de clubes del sitio quedaban ambiguas (Racing = Racing Club y Genk; Nacional = Internacional y Atlético Nacional) y 11 caían en un club EQUIVOCADO (Porto -> Grêmio, Inter -> Internacional, Lazio y Rubin Kazan -> AZ, Braga -> Bragantino, Vitória Guimarães -> Vitória, Independiente Rivadavia -> Independiente). En el registro: 15 PDFs figuraban "ya cargados" sin estarlo y 87 figuraban pendientes estando cargados (316 -> 388 cargados).
+- `audit.js`: P1 `carpeta-club-ambigua` (salvo carpetas de agregado `_*`), P2 `club-sin-carpeta`.
+- `inventario-transcripciones.mjs`: un `sin-md` con transcripción de Mistral registrada dice "PAGADO SIN .md" en el detalle (21 PDFs).
+
 ## Versión 308 — La etapa 5 solo toca los documentos de la corrida; resultados derivados con huella; lotes de Claude que exceden el tope se parten (2026-09-30)
 
 - Bug del piloto C: la etapa 5 del pipeline tomaba TODOS los `listo-para-jev` del inventario; `categorizar-claude.mjs` mandó 44 documentos a Claude (US$ 1,90) con `.jev.json` hechos sobre la lista de rubros anterior a la Versión 307 antes de que se cortara. Ahora `pipeline.mjs` pasa `--lista` (los documentos de la corrida) a `glosar-rubros`, `jev-categorizar` y `categorizar-claude`.

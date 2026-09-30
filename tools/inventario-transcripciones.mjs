@@ -133,7 +133,10 @@ function motorFinal(base, verif, sha) {
 
 function currentState(entry, verif) {
   if (verif && verif.status === 'no-es-pdf' && !entry.cargado) return { status: 'no-es-pdf', method: verif.method, detail: verif.detail };
-  if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: 'todavía no hay ninguna transcripción de este PDF' };
+  // Un sin-md con costoUsd de Mistral registrado es PLATA PAGADA cuyo .md no está en disco (encontrado 2026-09-30: 25 transcripciones,
+  // US$ 5,01, River/AEK/Olympiacos, hechas el 27-28/09 y nunca commiteadas). El estado sigue siendo sin-md (hay que volver a
+  // transcribir), pero el detalle lo dice, y `node tools/gasto.mjs` los lista, para que nadie lo pague otra vez sin enterarse.
+  if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: entry.costoUsd ? `PAGADO SIN .md: Mistral lo transcribió el ${entry.fecha} (US$ ${entry.costoUsd}) y el .md no está en disco; volver a transcribir lo paga de nuevo` : 'todavía no hay ninguna transcripción de este PDF' };
   if (entry.cargado) return { status: 'cargado', method: null, detail: 'el ejercicio ya está en el sitio' };
   if (verif && verif.mdSha1 === entry.mdSha1) return { status: verif.status, method: verif.method, detail: verif.detail };
   return { status: 'sin-verificar', method: null, detail: verif ? 'el .md cambió después de la última validación' : '' };

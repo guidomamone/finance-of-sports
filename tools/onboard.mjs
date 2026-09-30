@@ -86,6 +86,7 @@
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, basename, extname, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { clubDeRuta } from './carpetas-clubes.mjs';
 import vm from 'node:vm';
 
 const projectRoot = resolve(import.meta.dirname, '..');
@@ -208,11 +209,14 @@ function briefingIsFresh(mdPath) {
 function resolveClubAndYearQuiet(pdfPath, club, year) {
   let clubId = club;
   if (!clubId) {
-    const clubsTable = loadClubsTable();
+    // Versión 309: el club sale de tools/carpetas-clubes.mjs (la cita en data/<id>-data.js, y si no, nombre IGUAL dentro del mismo país),
+    // no de guessClubId() por substring y sin país. Esa regla vieja no reconocía 17 clubes del sitio (Racing, Botafogo, Gent...) y asignaba
+    // 11 carpetas a un club EQUIVOCADO en silencio (Porto -> Grêmio, Inter -> Internacional, Lazio y Rubin Kazan -> AZ, Braga ->
+    // Bragantino...): si ese club tenía el mismo año cargado, el PDF figuraba como "ya cargado" y el pipeline no lo tocaba nunca.
     const folder = clubFolderName(pdfPath);
-    const { matches } = guessClubId(folder, clubsTable);
-    if (matches.length === 1) clubId = matches[0];
-    else if (matches.length > 1) return { error: `"${folder}" matchea ${matches.length} clubes (${matches.join(', ')}) -- pasá --club explícito, no adivino.` };
+    const r = clubDeRuta(pdfPath);
+    if (r.clubId) clubId = r.clubId;
+    else if (r.via === 'ambigua' && !String(folder).startsWith('_')) return { error: `"${folder}" es ambigua: ${r.fuente} -- pasá --club explícito, no adivino.` };
     else clubId = normalize(folder || 'club-nuevo').replace(/\s+/g, '-') || 'club-nuevo';
   }
   let resolvedYear = year;
@@ -231,10 +235,9 @@ function resolveClubAndYear(pdfPath, club, year) {
   }
   if (!club) {
     const folder = clubFolderName(pdfPath);
-    const clubsTable = loadClubsTable();
-    const { matches } = guessClubId(folder, clubsTable);
-    if (matches.length === 1) console.log(`  club adivinado por carpeta ("${folder}"): ${res.clubId}`);
-    else console.log(`  "${folder}" no matchea ningún club ya cargado -- club nuevo, uso "${res.clubId}" como etiqueta provisoria.`);
+    const r = clubDeRuta(pdfPath);
+    if (r.clubId) console.log(`  club por carpeta ("${folder}"): ${res.clubId} (${r.fuente})`);
+    else console.log(`  "${folder}" no corresponde a ningún club ya cargado -- club nuevo, uso "${res.clubId}" como etiqueta provisoria.`);
   }
   if (!year) console.log(`  año adivinado del nombre del archivo: ${res.year} (sin verificar contra el documento)`);
   return res;
