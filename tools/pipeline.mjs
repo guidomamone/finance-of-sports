@@ -311,7 +311,7 @@ if (!NO_JEV) {
   node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.pipeline-lista-jev.txt'], { stdio: 'inherit' });
   // Escalón 2 (Versión 307): lo que Jev deja < 0,90 va a Claude por API, UNA llamada por documento, con las líneas ya cargadas de ese club
   // (sus convenciones) y las filas vecinas. Backtest sobre 3.975 rubros: Jev >= 0,90 sola resuelve 69,4% (94,4% de acierto); sumando
-  // Claude >= 0,80 se resuelve 80,2% con 94,5%; el resto queda para revisión (Admin/test-categorizar-claude.md). ~US$ 0,015 por documento.
+  // Claude >= 0,80 se resuelve 80,2% con 94,5%; el resto queda para revisión (Admin/tests/test-categorizar-claude.md). ~US$ 0,015 por documento.
   // Deja `<md>.categorias.json` (la categoría final de cada rubro y de qué escalón salió: precedente / jev / claude / sin-resolver).
   console.log('\n=== Etapa 5b: Claude por API categoriza lo que Jev no resolvió con confianza ===');
   node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.pipeline-lista-jev.txt'], { stdio: 'inherit' });

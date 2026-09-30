@@ -11,7 +11,7 @@
 //   --backtest   ¿Es CONFIABLE Jev? (to-do 99). Toma rubros de ejercicios YA CARGADOS en el sitio, cuya categoría real ya
 //                decidió una sesión con criterio humano, se los pregunta a Jev SIN mostrarle esa respuesta, y compara.
 //                Lo que importa no es el acierto promedio: es si hay errores con confianza ALTA (el caso peligroso, el que
-//                una integración automática aceptaría sin que nadie lo mire). Deja Admin/test-jev-resultados.md.
+//                una integración automática aceptaría sin que nadie lo mire). Deja Admin/tests/test-jev-resultados.md.
 //                Muestra aleatoria (semilla fija) repartida entre categorías y clubes.
 //
 //   --listos     La etapa de producción: toma los `<md>.rubros.json` que dejó tools/pipeline.mjs (documentos `listo-para-jev`)
@@ -214,9 +214,9 @@ function report(rows, errors) {
   for (const r of rows) { (byTruth[r.truth] ||= { n: 0, ok: 0 }); byTruth[r.truth].n++; if (ok(r)) byTruth[r.truth].ok++; }
   lines.push('', '## Acierto por categoría real', '', '| Categoría | Rubros | Aciertos |', '|---|---|---|');
   for (const [k, v] of Object.entries(byTruth).sort((a, b) => b[1].n - a[1].n)) lines.push(`| ${k} | ${v.n} | ${v.ok} |`);
-  writeFileSync(resolve(root, 'Admin', `test-jev-resultados${tag}.md`), lines.join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', 'tests', `test-jev-resultados${tag}.md`), lines.join('\n') + '\n');
   console.log(lines.slice(0, 14).join('\n'));
-  console.log(`\nErrores con confianza ≥ 0,70: ${bad.length}. Informe completo en Admin/test-jev-resultados${tag}.md`);
+  console.log(`\nErrores con confianza ≥ 0,70: ${bad.length}. Informe completo en Admin/tests/test-jev-resultados${tag}.md`);
 }
 
 // ---------------------------------------------------------------- LISTOS

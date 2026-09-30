@@ -8,7 +8,7 @@
 // NÚMEROS. En la prosa no hay nada que confirmar. Esta función es el filtro que decide a qué páginas va esa segunda voz.
 //
 // ----------------------------------------------------------------------------------------------------------------------------------
-// LA MEDICIÓN (Admin/test-seleccion-paginas.md tiene la tabla completa y los casos que se pierden)
+// LA MEDICIÓN (Admin/tests/test-seleccion-paginas.md tiene la tabla completa y los casos que se pierden)
 // ----------------------------------------------------------------------------------------------------------------------------------
 // Dos "verdades", las dos gratis y ya en el repo:
 //   A) 222 ejercicios YA CARGADOS en producción (Admin/transcripciones-estado.jsonl, cargado:true, sin memorias ni presupuestos),
@@ -63,7 +63,7 @@ import { readFileSync, existsSync } from 'fs';
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 
-// Umbrales medidos (ver cabecera). Si se tocan, volver a medir: el script de la medición está descripto en Admin/test-seleccion-paginas.md.
+// Umbrales medidos (ver cabecera). Si se tocan, volver a medir: el script de la medición está descripto en Admin/tests/test-seleccion-paginas.md.
 export const UMBRALES = {
   minCifras: 8,          // cifras de >= 3 dígitos en la página
   minDensidad: 0.05,     // cifras / palabras (sin separadores de tabla)

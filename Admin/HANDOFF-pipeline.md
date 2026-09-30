@@ -79,7 +79,7 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 - Tesseract como tercera voz gratis: **no sirve** en escaneos malos (Alverca: texto ilegible). Falla con rutas largas; correrlo con rutas relativas.
 - Sumas genéricas (fila = suma de las contiguas de arriba) sobre las páginas de Alverca: la lectura de Claude cierra más sumas que la de Mistral
   en las 4 páginas con tablas que se compararon (6/1, 3/2, 6/4, 4/2).
-- Jev, backtest sobre 3.975 rubros ya cargados (`Admin/test-jev-resultados*.md`): sin ayuda 69,5%; con lado 74,2%; lado + 8 ejemplos 86,6% (95,9% en >= 0,90);
+- Jev, backtest sobre 3.975 rubros ya cargados (`Admin/tests/test-jev-resultados*.md`): sin ayuda 69,5%; con lado 74,2%; lado + 8 ejemplos 86,6% (95,9% en >= 0,90);
   ejemplos solo de otros clubes 83,0% (94,4%). **Acierto por país (ejemplos de otros clubes): HR 98%, DK 95%, BE 93%, DE 91%, GB 90%, CO 90%, ES 89%, AR 74%, BR 80%.**
   Más historia NO mejora a Jev: Argentina y Brasil tienen más rubros cargados y peor acierto (agrupaciones curadas de cada club). Los errores con confianza alta
   son casi siempre catch-alls (`other_income` / `lump_football_operations`, `admin_general_expense` / `other_expenses`) o convenciones de un club.
@@ -110,7 +110,7 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 2. **Escaneos:** es donde queda el costo (68 de 104 documentos medidos, $29,67 de $38,98). Próximo chequeo gratis a probar: la columna comparativa ENTRE documentos del
    mismo club (año N-1 impreso en el documento N contra la columna del año del documento N-1), aunque ninguno esté en producción (series: Charleroi, Standard, Randers,
    Fluminense).
-3. **Errores que quedan en la carga** (`Admin/test-eleccion-tabla.md`): gastos no mejoran con el ancla (producción usa la apertura por función, el ancla abre la nota por
+3. **Errores que quedan en la carga** (`Admin/tests/test-eleccion-tabla.md`): gastos no mejoran con el ancla (producción usa la apertura por función, el ancla abre la nota por
    naturaleza); consolidado e individual se cargan los dos cuando el documento trae ambos (Bayern); detalle en prosa (Werder); 12 de 74 ejercicios con <= 10% de
    ingresos bien ubicados. Todavía NO es viable dejar escribir a la carga.
 3b. **La etapa 6 NO carga como ejercicio un documento con `periodo.tipo` distinto de 'anual' ni uno con `periodo.nombreNoCoincide`** (campo del registro,

@@ -23,9 +23,9 @@
 //   node tools/proponer-carga.mjs --backtest [--limit 40] [--club id] [--concurrencia 4] [--mistral-fresco]
 //   node tools/proponer-carga.mjs --backtest --mistral-fresco --tabla ancla --cache-jev /ruta/cache.jsonl --etiqueta _ancla
 //   node tools/proponer-carga.mjs --pdf "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2021.pdf"
-// Deja el detalle en Admin/test-proponer-carga.jsonl y el resumen en Admin/test-proponer-carga.md.
+// Deja el detalle en Admin/tests/test-proponer-carga.jsonl y el resumen en Admin/tests/test-proponer-carga.md.
 //
-// ELECCIÓN DE LA TABLA (--tabla <estrategia>, test del 2026-09-30, informe completo en Admin/test-eleccion-tabla.md):
+// ELECCIÓN DE LA TABLA (--tabla <estrategia>, test del 2026-09-30, informe completo en Admin/tests/test-eleccion-tabla.md):
 //   Un documento trae varias tablas con ingresos: el estado de resultados resumido ("Group turnover 616.580") y la nota que lo abre
 //   ("3. Group turnover": taquilla, TV, comercial... que suman 616.580). La versión 1 solo miraba las tablas marcadas `likelyRelevant` por
 //   extract-table-rows.mjs, y la nota de Arsenal NO lo estaba: por eso Arsenal/Fulham/Werder/Bayern caían a 0-5% de dinero bien ubicado.
@@ -70,7 +70,7 @@ const FILTRO_OFF = args.includes('--sin-filtro'); // para medir el efecto del fi
 const SOLO_TOTALES = args.includes('--solo-totales'); // no llama a Jev: solo mide la detección del total de ingresos (iteración barata)
 const TAG = flagVal('--etiqueta') || ''; // sufijo de los informes, para no pisar los de otra variante
 const TABLAS_VALIDAS = ['actual', 'ancla', 'ancla-listas', 'cierre', 'precedente'];
-const DEFAULT_TABLA = 'ancla-listas'; // ganadora del test del 2026-09-30 (Admin/test-eleccion-tabla.md)
+const DEFAULT_TABLA = 'ancla-listas'; // ganadora del test del 2026-09-30 (Admin/tests/test-eleccion-tabla.md)
 const TABLA = flagVal('--tabla') || DEFAULT_TABLA;
 if (!TABLAS_VALIDAS.includes(TABLA)) { console.error(`--tabla tiene que ser una de: ${TABLAS_VALIDAS.join(', ')}`); process.exit(1); }
 const CACHE_JEV = flagVal('--cache-jev');
@@ -252,7 +252,7 @@ function noEsRubro(label, esSuma) {
 
 // ---------------------------------------------------------------- estrategias de elección de tabla (--tabla, test del 2026-09-30)
 // Todo lo de esta sección es GRATIS (sin API): solo decide QUÉ filas del documento se le mandan a Jev. El detalle de cada estrategia y los
-// números medidos están en Admin/test-eleccion-tabla.md; acá, lo necesario para entender el código.
+// números medidos están en Admin/tests/test-eleccion-tabla.md; acá, lo necesario para entender el código.
 
 // Secciones que nunca abren un ingreso o un gasto del ejercicio: balance, flujo de fondos, evolución del patrimonio, anexo de bienes de uso,
 // deudas por vencimiento. Sin excluirlas, una ventana de filas del flujo de fondos puede sumar por casualidad lo mismo que una línea del
@@ -375,7 +375,7 @@ function listTables(mdText) {
 }
 
 // Lado de una fila suelta del estado de resultados. Orden elegido por el test de lado (455 filas contra producción, ver tools/filas-rubro.mjs
-// y Admin/test-eleccion-tabla.md): estructura/posición/palabras (ladosPorEstructura, que ya las combina) > palabras de la etiqueta > lado de
+// y Admin/tests/test-eleccion-tabla.md): estructura/posición/palabras (ladosPorEstructura, que ya las combina) > palabras de la etiqueta > lado de
 // la tabla. El SIGNO del importe se midió y se descartó (78% de acierto: la peor regla).
 function ladoFila(label, M, estructural, tside) {
   return estructural || ladoPorPalabras(label) || tside || null;
@@ -700,7 +700,7 @@ async function pool(items, worker) {
 }
 
 function report(rows) {
-  writeFileSync(resolve(root, 'Admin', `test-proponer-carga${TAG}.jsonl`), rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', 'tests', `test-proponer-carga${TAG}.jsonl`), rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
   const ok = rows.filter((r) => r.ok);
   const cnt = (f) => ok.filter(f).length;
   const avg = (k) => { const x = ok.filter((r) => r[k] != null); return x.length ? (100 * x.reduce((a, r) => a + r[k], 0) / x.length).toFixed(0) + '%' : '-'; };
@@ -725,7 +725,7 @@ function report(rows) {
   L.push(`| Estrategia de tabla / llamadas a Jev (nuevas / de la caché) | ${TABLA} / ${jevCalls} / ${jevHits} |`, '');
   const mot = {}; for (const r of rows.filter((x) => !x.ok)) { const k = r.motivo || r.error || '?'; mot[k] = (mot[k] || 0) + 1; }
   L.push('Sin propuesta, por motivo: ' + (Object.entries(mot).map(([k, v]) => `${k}: ${v}`).join(' | ') || '-'), '');
-  writeFileSync(resolve(root, 'Admin', `test-proponer-carga${TAG}.md`), L.join('\n') + '\n');
+  writeFileSync(resolve(root, 'Admin', 'tests', `test-proponer-carga${TAG}.md`), L.join('\n') + '\n');
   console.log('\n' + L.slice(4, 20).join('\n'));
 }
 

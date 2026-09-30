@@ -48,7 +48,7 @@
 // `fallbacks: "default"`. HTTP sin SDK, como categorizar-claude.mjs. Costo registrado en
 // Admin/claude-api/resultados.jsonl con `tarea: "alta-club"` (sin campo `md`, igual que "categorizar":
 // inventario-transcripciones.mjs cuenta como "pagado" cualquier línea con `md`).
-// Números medidos: ver Admin/test-altas-claude.md.
+// Números medidos: ver Admin/tests/test-altas-claude.md.
 // ============================================================================
 
 import { readFileSync, appendFileSync } from 'node:fs';

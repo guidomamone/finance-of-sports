@@ -73,7 +73,7 @@ perdieron sino que se descartaron:
        categoría por precedente exacto, o por Jev con confianza >= 0,90 (aceptado por Guido); el tipo de cambio sale del documento o de una
        cotización conocida; y después de escribir pasan los generadores, `node tools/audit.js` (0 P0/P1) y `auditAll()` (si algo falla, se revierte).
        Lo dudoso pasa a Claude por API (dólares, no tokens de sesión) y, si sigue dudoso, a `Admin/dudas-por-club.md`. Commit local; el push es de Guido.
-       **Medición 2026-09-30 (`node tools/proponer-carga.mjs --backtest --mistral-fresco`, Admin/test-proponer-carga.md)**: sobre 40 ejercicios ya cargados, con un
+       **Medición 2026-09-30 (`node tools/proponer-carga.mjs --backtest --mistral-fresco`, Admin/tests/test-proponer-carga.md)**: sobre 40 ejercicios ya cargados, con un
        `.md` de Mistral con tablas: arma propuesta 88%; total de ingresos oficial detectado 14%; resultado del ejercicio 17%; dinero bien ubicado por categoría (solo Jev >= 0,90)
        67% ingresos / 60% gastos. La carga sola todavía NO es viable. Lo que sigue: detectar los totales impresos por el chequeo de sumas de cada tabla (no por
        palabras de la etiqueta), elegir la tabla y la columna del ejercicio con más cuidado, y medir de nuevo; recién con el 90% de totales detectados vale la pena dejarla escribir.
@@ -206,7 +206,7 @@ perdieron sino que se descartaron:
     ingreso/gasto), es una inconsistencia real que quedó en los datos ya cargados. Revisar cada uno
     contra el documento fuente y unificar (o dejar documentado por qué el cambio de categoría entre
     años es correcto, si lo es):
-    - **Más casos, del backtest de `tools/categorizar-claude.mjs` (2026-09-30, `Admin/test-categorizar-claude.md`)**: los errores de
+    - **Más casos, del backtest de `tools/categorizar-claude.mjs` (2026-09-30, `Admin/tests/test-categorizar-claude.md`)**: los errores de
       Claude con confianza >= 0,80 son casi todos incoherencias de producción, no del modelo: San Lorenzo "Ciudad deportiva" y "Ciudad
       deportiva (gasto)" en categorías distintas; "Seguros" fuera de `admin_general_expense` contra lo que dice el skill; cargas sociales
       de juveniles de Boca en `wages_squad` contra la regla del skill; "Interese perdidos" de Almagro como línea (los intereses van a
@@ -485,7 +485,7 @@ perdieron sino que se descartaron:
     esa sesión vea el resultado de JEV primero (no contaminar el criterio humano con la sugerencia);
     (3) la sesión categoriza normal, como cualquier onboarding; (4) comparar rubro por rubro, JEV vs.
     categorización real, separado por nivel de confianza de JEV — la pregunta que importa es si algún
-    caso de CONFIANZA ALTA salió mal, no el acierto promedio; (5) documentar en `Admin/test-jev.md`
+    caso de CONFIANZA ALTA salió mal, no el acierto promedio; (5) documentar en `Admin/tests/test-jev.md`
     (mismo patrón que `test-costo-transcripcion.md`/`test-barridos.md`).
 
     **Lo que NO cambia**: el gate de integración real (conectar JEV al flujo de onboarding para que

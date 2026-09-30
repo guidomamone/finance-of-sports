@@ -537,13 +537,13 @@ async function resolveDoc(e0) {
   // SOLO PÁGINAS CON NÚMEROS (decisión de Guido, 2026-09-30: "gemini solo donde hay números, no la prosa"). Mistral transcribe el
   // documento entero (queda como documentación), pero la segunda voz y el desempate de Claude solo tienen trabajo donde hay cifras
   // que pueden terminar en el sitio. tools/paginas-con-numeros.mjs decide cuáles son, gratis, con el propio .md: medido sobre 222
-  // ejercicios cargados, elige el 58% de las páginas y cubre el 99,7% de los importes de producción (Admin/test-seleccion-paginas.md).
+  // ejercicios cargados, elige el 58% de las páginas y cubre el 99,7% de los importes de producción (Admin/tests/test-seleccion-paginas.md).
   // Se calcula sobre el .md canónico ACTUAL (puede haber cambiado arriba, al rehacerlo con Mistral) y se recalcula si vuelve a cambiar.
   //
   // CHEQUEOS GRATIS ANTES DE PAGAR (Versión 307, tools/chequeos-gratis.mjs): de las páginas con números, las que quedan respaldadas cifra
   // por cifra por el texto del PDF, las sumas de sus tablas, la columna del año anterior ya cargada en producción o el balance, quedan
   // `validada-gratis` y tampoco van a la segunda voz. Solo las `dudosa` se pagan. Medido sobre los 104 documentos que este resolver ya
-  // había resuelto (Admin/test-chequeos-gratis.md): de las 163 páginas con números que tenían un error real de lectura, las 163 quedan
+  // había resuelto (Admin/tests/test-chequeos-gratis.md): de las 163 páginas con números que tenían un error real de lectura, las 163 quedan
   // `dudosa` (ninguna se da por buena mal), y el ahorro es ~49% del costo registrado. Los 15 errores que caen en `prosa` son
   // identificadores (INN rusos, números de organización noruegos, sellos) que no llegan al sitio.
   const q = quien(e.pdf);
@@ -739,7 +739,7 @@ async function resolveDoc(e0) {
 function dryRunDoc(e) {
   const pdfAbs = resolve(root, e.pdf);
   const nPages = pageCount(pdfAbs);
-  // FRAC_NUM: fracción de páginas con números (medida: 58%, Admin/test-seleccion-paginas.md). Solo esas van a la segunda voz; Mistral
+  // FRAC_NUM: fracción de páginas con números (medida: 58%, Admin/tests/test-seleccion-paginas.md). Solo esas van a la segunda voz; Mistral
   // transcribe todas. Si ya hay .md, se usa la fracción real de ESE documento.
   const FRAC_NUM = 0.58;
   if (!existsSync(resolve(root, e.md))) return { plan: 'sin .md: Mistral + Gemini/Claude en págs. dudosas', nPages, cost: nPages * EST.mistral + nPages * FRAC_NUM * (EST.gemini + 0.6 * 0.25 * EST.claude + 0.15 * EST.claude) };

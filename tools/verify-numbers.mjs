@@ -56,7 +56,7 @@ function pageCount(pdfPath) {
 }
 
 // Umbrales (calibrados con los 15 documentos del test de motores del 2026-09-29 -- ver
-// Admin/test-motores-resultados.md; si se cambian, volver a correr ese test):
+// Admin/tests/test-motores-resultados.md; si se cambian, volver a correr ese test):
 export const THRESHOLDS = {
   minPdfNumbers: 30,       // menos números que esto en el PDF: no hay base para comparar
   minCharsPerPage: 150,    // menos texto por página que esto: escaneo (o casi)

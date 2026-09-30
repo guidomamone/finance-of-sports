@@ -14,8 +14,8 @@
 //   2. Compara cada uno contra el .md canónico con tools/compare-transcripts.mjs (rubro por rubro:
 //      mismo texto de rubro, ¿mismo número?).
 //   3. Junta el costo real que cada tool ya anota en Admin/<motor>/resultados.jsonl.
-//   4. Escribe el resumen en Admin/test-motores-resultados.md y el detalle en
-//      Admin/test-motores-resultados.jsonl.
+//   4. Escribe el resumen en Admin/tests/test-motores-resultados.md y el detalle en
+//      Admin/tests/test-motores-resultados.jsonl.
 //
 // El .md canónico es el que ya estaba: para los documentos "gold" (ejercicio ya cargado al sitio y
 // verificado a mano contra el PDF) es la mejor verdad que tenemos. Para los que la lista marca como
@@ -23,10 +23,10 @@
 // "coincide con X", no "es correcto".
 //
 // USO (desde la raíz del proyecto):
-//   node tools/test-motores.mjs --list Admin/test-motores-lista.txt --dry-run   # no gasta nada
-//   node tools/test-motores.mjs --list Admin/test-motores-lista.txt             # corre de verdad
-//   node tools/test-motores.mjs --list Admin/test-motores-lista.txt --engines claude   # solo uno
-//   node tools/test-motores.mjs --report-only --list Admin/test-motores-lista.txt      # solo re-armar el informe
+//   node tools/test-motores.mjs --list Admin/tests/test-motores-lista.txt --dry-run   # no gasta nada
+//   node tools/test-motores.mjs --list Admin/tests/test-motores-lista.txt             # corre de verdad
+//   node tools/test-motores.mjs --list Admin/tests/test-motores-lista.txt --engines claude   # solo uno
+//   node tools/test-motores.mjs --report-only --list Admin/tests/test-motores-lista.txt      # solo re-armar el informe
 //
 // Formato de la lista: una ruta de PDF por línea. Las líneas que empiezan con # son comentarios.
 // Una línea puede terminar con "  | sin-gold" para marcar que el .md canónico NO está verificado.
@@ -47,7 +47,7 @@ const engFlag = flag('--engines');
 const ENGINES = (engFlag >= 0 ? args[engFlag + 1] : 'mistral,gemini,claude').split(',');
 
 if (listFlag < 0) {
-  console.error('Uso: node tools/test-motores.mjs --list Admin/test-motores-lista.txt [--dry-run] [--engines mistral,gemini,claude] [--report-only]');
+  console.error('Uso: node tools/test-motores.mjs --list Admin/tests/test-motores-lista.txt [--dry-run] [--engines mistral,gemini,claude] [--report-only]');
   process.exit(1);
 }
 
@@ -141,7 +141,7 @@ if (dryRun) {
   process.exit(0);
 }
 
-const detailPath = resolve(projectRoot, 'Admin', 'test-motores-resultados.jsonl');
+const detailPath = resolve(projectRoot, 'Admin', 'tests', 'test-motores-resultados.jsonl');
 const rows = [];
 for (const it of items) {
   const pdfAbs = resolve(projectRoot, it.pdf);
@@ -193,7 +193,7 @@ lines.push('| Motor | Generó .md | Coincide con el canónico | Costo real total
 lines.push('|---|---|---|---|');
 for (const e of ENGINES) lines.push(`| ${e} | ${totals[e].ok}/${rows.length} | ${totals[e].match}/${totals[e].ok} | $${totals[e].cost.toFixed(2)} |`);
 lines.push('');
-lines.push('Las discrepancias concretas (rubro, valor del canónico, valor del motor) están en `Admin/test-motores-resultados.jsonl`.');
-writeFileSync(resolve(projectRoot, 'Admin', 'test-motores-resultados.md'), lines.join('\n') + '\n');
-console.log('\nListo. Resumen en Admin/test-motores-resultados.md');
+lines.push('Las discrepancias concretas (rubro, valor del canónico, valor del motor) están en `Admin/tests/test-motores-resultados.jsonl`.');
+writeFileSync(resolve(projectRoot, 'Admin', 'tests', 'test-motores-resultados.md'), lines.join('\n') + '\n');
+console.log('\nListo. Resumen en Admin/tests/test-motores-resultados.md');
 for (const e of ENGINES) console.log(`${e}: generó ${totals[e].ok}/${rows.length}, coincide ${totals[e].match}/${totals[e].ok}, costo $${totals[e].cost.toFixed(2)}`);

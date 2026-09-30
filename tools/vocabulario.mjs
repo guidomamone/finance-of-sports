@@ -60,7 +60,7 @@
 //      que cualquier nota contara como estado de resultados; 'zisk' dentro de otras palabras).
 //   3. `node tools/vocabulario.mjs "texto de prueba"` dice qué conceptos encuentra en ese texto; `node tools/vocabulario.mjs --cobertura`
 //      imprime la matriz concepto x idioma (qué idioma falta en qué concepto).
-//   4. Medí antes y después sobre el inventario (así se hizo en la Versión 316, informe en Admin/test-vocabulario.md): un término nuevo en
+//   4. Medí antes y después sobre el inventario (así se hizo en la Versión 316, informe en Admin/tests/test-vocabulario.md): un término nuevo en
 //      RELEVANTE o en INGRESOS/GASTOS puede volver "relevantes" tablas de notas y de balance y multiplicar los rubros (una regla probada en la
 //      Versión 312 llevó Real Madrid de 32 a 253 rubros: eso es un error, no una mejora).
 //

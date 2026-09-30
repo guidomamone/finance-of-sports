@@ -6,7 +6,7 @@
 //
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30: "que se haga por script, porque las IA se olvidan"):
 // hasta ahora el resultado de alta-club.mjs vivía en la terminal y en un informe escrito a mano
-// (Admin/test-alta-club.md). Una sesión de otro día no tenía cómo saber qué clubes ya estaban listos,
+// (Admin/tests/test-alta-club.md). Una sesión de otro día no tenía cómo saber qué clubes ya estaban listos,
 // cuáles tenían preguntas, ni si lo que se había concluido seguía valiendo. Con el registro:
 //   - una línea por carpeta, REEMPLAZADA en cada corrida (no se apila): dos sesiones que corren
 //     carpetas distintas no se pisan, y una que corre la misma carpeta la deja al día;

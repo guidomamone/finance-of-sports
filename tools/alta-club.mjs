@@ -242,7 +242,7 @@
 //   node tools/alta-club.mjs --informe-backtest   recalcula el acierto del backtest, gratis
 //
 // Sin --claude / --backtest-claude: 0 llamadas a APIs ni a internet, todo sale de
-// archivos locales. Con --claude: ~US$ 0,05-0,09 por club (medido, Admin/test-altas-claude.md).
+// archivos locales. Con --claude: ~US$ 0,05-0,09 por club (medido, Admin/tests/test-altas-claude.md).
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, mkdirSync, appendFileSync } from 'node:fs';
@@ -1438,7 +1438,7 @@ function mdsDeCarpeta(paisCarpeta, clubCarpeta) {
 }
 
 // Orden de preferencia del documento BASE de una carpeta (mismo criterio que la prueba de
-// Admin/test-alta-club.md, ahora por script): primero los que son un estado contable anual por el
+// Admin/tests/test-alta-club.md, ahora por script): primero los que son un estado contable anual por el
 // nombre (no presupuesto/acta/intermedio), después los de transcripción `listo`/`cargado` antes que los
 // `revisar`/`pendiente-segunda-voz`, y dentro de eso el ejercicio más reciente.
 function candidatosBase(mds) {
@@ -1518,7 +1518,7 @@ function analizarCarpeta(paisCarpeta, clubCarpeta, sitio, previo, docForzado = n
     if (!r) r = x;
     // Un documento que no sirve de base (no es un balance anual, o no se le puede sacar el ejercicio)
     // se cambia por el siguiente candidato: "usar otro documento de la misma carpeta" era la respuesta
-    // más frecuente a esas preguntas en la prueba de Admin/test-alta-club.md.
+    // más frecuente a esas preguntas en la prueba de Admin/tests/test-alta-club.md.
     const malBase = x.error || (x.preguntas || []).some((p) => ['reportType', 'anio', 'cierre', 'fiscalYearStart'].includes(p.campo));
     if (!malBase) { r = x; break; }
   }

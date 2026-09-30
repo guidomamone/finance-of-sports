@@ -14,7 +14,7 @@
 //       del mismo lado (ingreso/gasto), siempre con la misma categoría -> se copia. Gratis, sin API.
 //       Es el "tier 0" del to-do 98 (tools/suggest-category-precedent.mjs hace lo mismo como consulta a mano).
 //   (1) Jev (tools/jev-categorizar.mjs) con confianza >= 0,90 -> se acepta. Backtest sobre 3.975 rubros ya
-//       cargados (Admin/test-jev-resultados_lado_ej_otrosclubes.md): 94,4% de acierto en esa banda, que cubre
+//       cargados (Admin/tests/test-jev-resultados_lado_ej_otrosclubes.md): 94,4% de acierto en esa banda, que cubre
 //       ~69% de los rubros. Jev cuesta casi nada, pero ve un rubro por vez y sin las convenciones del club.
 //   (2) El resto -> Claude (este archivo). Una llamada por documento, con:
 //         - la lista de categorías de data/category-map.js con su lado y su descripción completa (el comentario
@@ -30,7 +30,7 @@
 //       Admin/dudas-por-club.md). No se inventa.
 //
 // ---------------------------------------------------------------------------------------------------------
-// NÚMEROS MEDIDOS (backtest del 2026-09-30, detalle en Admin/test-categorizar-claude.md)
+// NÚMEROS MEDIDOS (backtest del 2026-09-30, detalle en Admin/tests/test-categorizar-claude.md)
 //   Sobre los 1.217 rubros que Jev deja < 0,90 (de 3.975; 224 club-años), Opus 5.5, esfuerzo low, con contexto del club:
 //     - acierto 76,6% (Jev en esos mismos rubros: 57,1%). Por confianza de Claude: >= 0,90 -> 98,5% (132 rubros);
 //       0,80-0,90 -> 94,3% (296); 0,60-0,80 -> 75,2% (488); < 0,60 -> 51,8% (301). La confianza SÍ separa.

@@ -113,7 +113,7 @@ export function ladoPorPalabras(label) {
   return r && !x ? 'revenue' : x && !r ? 'expense' : null;
 }
 
-// LADO DE CADA FILA (test del 2026-09-30 contra producción, detalle en Admin/test-eleccion-tabla.md). Verdad: 913 filas de 150 documentos
+// LADO DE CADA FILA (test del 2026-09-30 contra producción, detalle en Admin/tests/test-eleccion-tabla.md). Verdad: 913 filas de 150 documentos
 // (los .rubros.json del pipeline + los ejercicios ya cargados) cuyo importe coincide con una línea de producción del mismo club (año o año
 // anterior): esa línea da el lado. 70 de esas 913 son coincidencias de importe sin ninguna palabra en común ("verdad dudosa").
 //   Cada regla sola (cubre = cuántas filas decide; acierto sobre las que decide):
@@ -170,7 +170,7 @@ export function ladosPorEstructura(filas, orden = ['estructura', 'posicion', 'pa
 
 // Columna de IMPORTES de una tabla del briefing (para que tools/pipeline.mjs la use en vez de "la primera columna con números en el 40% de
 // las filas", que en Alverca y Fluminense es la columna "Notas" -> 9, 15, "7/8" leído 78, "17.2.3"...). No se usa todavía desde pipeline.mjs
-// (esta sesión no podía editarlo): ver Admin/test-eleccion-tabla.md, "Lo que queda sin resolver".
+// (esta sesión no podía editarlo): ver Admin/tests/test-eleccion-tabla.md, "Lo que queda sin resolver".
 //   1. si un encabezado dice el año del ejercicio (2024, 2023/24, 30/06/2024), esa columna;
 //   2. si no, la primera columna con números en el 40% de las filas cuyo encabezado NO es de notas y cuyos valores no son todos enteros chicos.
 export function columnaDeImportes(columns, rows, year) {
