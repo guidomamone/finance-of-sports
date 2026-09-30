@@ -111,6 +111,9 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 3. **Errores que quedan en la carga** (`Admin/test-eleccion-tabla.md`): gastos no mejoran con el ancla (producción usa la apertura por función, el ancla abre la nota por
    naturaleza); consolidado e individual se cargan los dos cuando el documento trae ambos (Bayern); detalle en prosa (Werder); 12 de 74 ejercicios con <= 10% de
    ingresos bien ubicados. Todavía NO es viable dejar escribir a la carga.
+3b. **La etapa 6 NO carga como ejercicio un documento con `periodo.tipo` distinto de 'anual' ni uno con `periodo.nombreNoCoincide`** (campo del registro,
+   `tools/periodo.mjs`): quedan para juntarlos con los otros períodos (`node tools/periodo.mjs --grupos`). Las páginas "con reserva" que la aritmética no
+   decide (`tools/revisar-reservas.mjs`) se cierran con sumas contra los totales impresos al cargar.
 4. **Antes de la primera alta escrita por script** (to-do 112): 5 perímetros consolidados para que decida Guido, series de fx de EUR/DKK/GBP/SEK,
    `FX_PLAUSIBLE_RANGE` de COP y BRL.
 5. **Incoherencias de producción** (to-do 101): parte del "error" de la categorización automática es la vara. Las decide Guido/una sesión, no el pipeline.

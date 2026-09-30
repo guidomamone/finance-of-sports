@@ -49,6 +49,7 @@ import { resolve, join, relative, dirname, basename } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { verifyNumbers } from './verify-numbers.mjs';
+import { periodoDe } from './periodo.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -190,6 +191,12 @@ let entries = pdfsAll.map((pdfAbs) => {
     voces: findVoices(pdfAbs),
     cargado: !pending.has(pdf),
     mdSha1: tieneMd ? sha1(mdAbs) : null,
+    // Versión 314: qué período cubre el documento, leído del CONTENIDO (tools/periodo.mjs): 'anual' (con `anual` = 'calendario' si cierra
+    // en diciembre o 'temporada' si no), 'trimestral', 'semestral', 'nueve-meses', 'bimestral', 'intermedio', 'otro' (13, 18 meses...).
+    // Un documento no anual NO se carga como ejercicio: queda marcado para juntarlo con los otros períodos cuando lleguen
+    // (`node tools/periodo.mjs --grupos`). `nombreNoCoincide` avisa cuando el nombre del archivo dice otra fecha (Galatasaray: el nombre
+    // dice cierre anual 31/05/2019 y el contenido es el primer trimestre al 31/08/2019).
+    periodo: tieneMd ? (() => { try { const r = periodoDe(readFileSync(mdAbs, 'utf8'), pdf); return { tipo: r.tipo, meses: r.meses, cierre: r.cierre, anual: r.anual, confianza: r.confianza, nombreNoCoincide: r.nombreNoCoincide || undefined, evidencia: r.evidencia || undefined }; } catch { return null; } })() : null,
   };
 });
 

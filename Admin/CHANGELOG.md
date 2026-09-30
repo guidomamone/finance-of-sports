@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 314 — Período de cada documento leído del contenido: trimestral, semestral, anual calendario o temporada (2026-09-30)
+
+- `tools/periodo.mjs` (nuevo, gratis): tipo de período (anual calendario / temporada, trimestral, semestral, nueve meses, bimestral, intermedio, otro), meses, cierre y la cita que lo sostiene, leídos de los TÍTULOS de las primeras páginas en ~15 idiomas ("three months ended", "Üç Aylık Ara Hesap Dönemi", "01.01.2018 bis 30.06.2018", "13 month period ended"); avisa si el nombre del archivo dice otra fecha. `--grupos` lista por club y año los períodos parciales para juntarlos cuando lleguen los demás.
+- Primera versión medida sobre 2.249 `.md`: 58 "intermedio" casi todos falsos ("intermediação de atletas", "segundo semestre" en prosa). Con frases completas y solo títulos: 16 no anuales, todos casos reales (Galatasaray T1 2019, América trimestral, Osasuna intermedios, RB Leipzig y OH Leuven 6 meses, Westerlo 18, Midtjylland y Wolves 13, Gaziantep 7) + 2 dudosos (U. de Chile anual con columnas trimestrales, Real Madrid).
+- `inventario-transcripciones.mjs`: campo `periodo` por PDF en `Admin/transcripciones-estado.jsonl`.
+
 ## Versión 313 — La aritmética decide las páginas "con reserva": sumas verticales y horizontales (2026-09-30)
 
 - `chequeos-gratis.mjs`: `respaldoFilas()` (nuevo): en tablas de movimiento (saldo inicial + altas - bajas = saldo final) una celda es igual a una combinación con signo de las demás de su fila. `respaldoSumas()` exportada.
