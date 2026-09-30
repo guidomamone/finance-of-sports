@@ -37,6 +37,13 @@ sin decisiones abiertas; lo que requiera criterio se frena y lo resuelve una ses
 6. **Comentarios largos en el código** que expliquen qué hace cada cosa (para sesiones nuevas). Cada herramienta tiene cabecera: mantenela.
 7. La producción no se toca hasta que el pipeline esté pulido ("producción se va a solucionar cuando pushee"): una diferencia contra
    producción no es automáticamente un error del pipeline ni de producción (ver "Trampas de medición").
+8. **Cada vez que le propongas correr un script (un test, un lote), decile qué ETAPA se está tocando y PARA QUÉ** (qué se va a medir o
+   destrabar), además del costo. Pedido de Guido, 2026-09-30: "no estoy entendiendo para qué hacés lo de los 159 documentos".
+9. **Ejemplos concretos, no teoría.** Cada hallazgo o cada arreglo se muestra con casos reales del inventario (club, año, fila, importe,
+   antes/después), y se MIRAN antes de afirmar algo. Pedido de Guido, 2026-09-30: "hacés todo muy teórico; si no fuera porque vi Racing,
+   no te dabas cuenta" (el informe de la etapa 6 atribuía Racing 2012 a "escala por tabla", y la causa era que la plausibilidad comparaba
+   contra la mediana de años en USD y en ARS con 15 años de inflación: ver "Qué falta" 1b).
+10. **Siglas y referencias internas explicadas.** No asumas que sabe qué es "(b)" o "4.4": decí qué es en una frase.
 
 ## Cómo funciona (el detalle etapa por etapa, con números medidos, está en la cabecera de `tools/pipeline.mjs`)
 

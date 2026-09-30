@@ -120,7 +120,16 @@ export function parseNumber(raw) {
 function detectScale(text) {
   const t = norm(text);
   if (/\b(millions?|mio\.?|mln|millones|milhoes|mill\.|млн)\b|in millions|\bm€|€ ?m\b/.test(t)) return { unit: 'millones', mult: 1 };
-  if (/\b(thousands?|tsd\.?|teur|tusd|t€|tdkk|tnok|tsek|tchf|milhares|tusen|tusind|тыс|тис|tis\.)\b|'000|\(000\)|€ ?000|k€|\b000s?\b|\bmiles\b|en miles|in tausend|tausend eur|tuhat/.test(t)) return { unit: 'miles', mult: 1e-3 };
+  // "000" como etiqueta de escala ("£'000", "(000)", "€000", "000s") pero NUNCA adentro de un número. BUG REAL (Versión 321, encontrado mirando
+  // Almagro 2023 y Racing 2012): `\b000s?\b` matcheaba el ",000." de "363,750,000.00" o el ".000" de "$1.000.000" (la coma y el punto son
+  // límite de palabra), y una página en PESOS se leía "en miles": todas sus filas x1000. Medido sobre los 199 ejercicios ya cargados que
+  // tienen .md (suma de ingresos de la selección contra producción): "x1000 de más" 40 -> 9, "bien (x0,5 a x2)" 71 -> 92.
+  // PROBADO Y DESCARTADO en la misma sesión: una "escala del documento" (la del encabezado de sus estados de resultados, o una frase "expresado
+  // en miles de...") por encima de la plausibilidad, o solo cuando la plausibilidad no decide. Las dos variantes empeoraron: 15 y 7 ejercicios
+  // pasaron a x1000. Causa: lo que "dice la página" sale de 2.500 caracteres de texto y la prosa engaña (Eintracht 2024 menciona "Mio. €" arriba
+  // de una GuV en euros; Colo-Colo 2024 nombra "millones" en una página en miles; la transcripción de Coritiba 2024 aclara "no en miles").
+  // Para volver a intentarlo hace falta leer el encabezado PEGADO a la tabla (las 2-3 líneas de arriba), no la página entera.
+  if (/\b(thousands?|tsd\.?|teur|tusd|t€|tdkk|tnok|tsek|tchf|milhares|tusen|tusind|тыс|тис|tis\.)\b|'000|\(000\)|€ ?000|k€|(?<![\d.,'])000s?(?![\d.,])|\bmiles\b|en miles|in tausend|tausend eur|tuhat/.test(t)) return { unit: 'miles', mult: 1e-3 };
   return { unit: 'unidades', mult: 1e-6 };
 }
 
