@@ -138,6 +138,7 @@ que dice `ESTADO.md` era verdad ese día.
     tablas) 75% arma propuesta, dinero bien ubicado 45% ingresos / 26% gastos; con Mistral fresco 88% arma propuesta, el total de ingresos oficial se detecta en 14%, el
     resultado en 17%, y el dinero bien ubicado (solo filas con Jev >= 0,90) es 67% ingresos / 60% gastos. Conclusión: la carga 100% automática todavía no es viable; lo
     que falta es sobre todo detectar de forma robusta los totales impresos (son la puerta de aceptación) y no la categorización.
+  - Documentación de traspaso para sesiones nuevas: `Admin/HANDOFF-pipeline.md` (estado, decisiones de Guido, números medidos, qué falta), `Admin/MAPA-DE-TOOLS.md`, cabecera de `pipeline.mjs` con las 7 etapas y snapshot en `Admin/ESTADO.md`. Nuevo to-do 109 (ordenar las carpetas del proyecto).
   - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
     con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
   - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",

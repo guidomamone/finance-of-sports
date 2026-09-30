@@ -82,6 +82,19 @@ perdieron sino que se descartaron:
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
     5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
 
+109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
+    de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
+    - **Junto a cada PDF/`.md` de `Clubes/` se acumulan archivos generados**: `<md>.briefing.json`, `<md>.rubros.json`, `<md>.jev.json`, `<md>.previo-*.md`, `<md>.mistral-redo.md`,
+      `<md>.claude-check.md`, `<md>.gemini-check.md`, `<md>.t-*.md` (tests). Están gitignoreados pero ensucian las carpetas; convendría una subcarpeta por club (por ejemplo
+      `Clubes/<País>/<Club>/_generados/`) y que las tools lean y escriban ahí.
+    - **`Admin/`**: siete listas de pilotos (`resolver-piloto*.txt`, `resolver-prueba-hibrido.txt`, `pipeline-prueba.txt`, `test-motores-lista.txt`) que ya cumplieron su función, informes de
+      tests (`test-*.md`, `test-*.jsonl`) que conviene juntar en una carpeta, y documentos internos viejos que hay que archivar siguiendo la regla de `CLAUDE.md`
+      (`Admin/Archive/`, sacándole antes lo que todavía sirve a `CONVENCIONES.md`/skills/`TODO.md`).
+    - **Raíz y otras carpetas** (`Prototyping/`, `auditorias/`, archivos sueltos): revisar cuáles siguen vivos. Recordá que lo suelto en la raíz se PUBLICA (`netlify.toml`).
+    - **Cuidado**: los registros (`Admin/transcripciones-*.jsonl`, `Admin/*/resultados.jsonl`) y muchas tools guardan RUTAS de archivos; mover algo obliga a actualizarlas. Proponer un script
+      `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
+      lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
+
 98. BAJAR EL COSTO EN TOKENS DE CLAUDE DEL ONBOARDING DE UN EJERCICIO NUEVO (candidato del to-do 85,
     pedido de Guido 2026-09-28: *"sería factible un enfoque en el que se utilicen más scripts que
     corren en mi computadora y vos solo pienses cuando haga falta?"*). Mismo principio que ya se usó
