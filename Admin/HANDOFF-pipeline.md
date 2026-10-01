@@ -22,9 +22,13 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Por elegir el próximo documento.**
+**UC 2010-2017: listos para el reintento y la carga** (lote 06).
 
-- Universidad Católica (Cruzados): 2018-2025 cargados en los datos del sitio (commiteados, sin push). Quedan 2009-2017 transcriptos.
+- Cargados (commiteados, sin push): UC 2018-2025.
+- UC 2016: verificado; respuesta de categoría ya dada. UC 2017: reintento por "cuotas sociales en 0".
+- UC 2010-2014: con la escalera de lecturas cierran (lectura 3); perímetro individual ya contestado por Guido; 2011 con fecha deducida.
+- UC 2015: la transcripción vieja no tiene el estado de resultados: re-transcribir con Mistral (~US$ 0,26) y volver a correr.
+- UC 2009: descartado (PDF de una sola página escaneada).
 - Espera a Guido: publicar (merge de la rama a `main` y push; `main` ya tiene 49 commits sin pushear, que salen juntos).
 - Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (hoy ningún año cargado lo usa).
 - Encontrado por el subagente del perfil, en datos ya publicados (sin tocar): Almagro tiene "Sede Social - Medrano 522" como cuotas sociales;
@@ -32,9 +36,10 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 **Próximo paso:**
 
-- Elegir el próximo documento: seguir con UC 2015-2017, o pasar a un club de otro país para ver qué se rompe en otro formato.
+- Correr `caffeinate -i node tools/lote.mjs --lista Admin/lote-06.txt --ejecutar` (verificación con la escalera; gratis salvo categorización)
+  y después `--reintentar` para los que queden marcados.
+- Propuesta de escaleras para otras etapas (presentada el 2026-10-01, esperando el ok de Guido).
 - Diseño aprobado, sin construir: precedente de categoría con contexto (etiqueta + renglón que desglosa).
-- Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
 
 ---
 
@@ -157,6 +162,18 @@ Mitigaciones:
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".
+- f) **Escalera de lecturas** (si la base no cierra con un número impreso, se prueba la siguiente; gana la primera que cierra y queda escrita):
+
+```
+ LECTURA 0  las filas tal cual ───────────────── ¿cierra? sí → OK
+ LECTURA 1  + "resultado antes de impuestos" si no hay resultado final ── ¿cierra? sí → OK
+ LECTURA 2  + el total impreso puede ser un renglón más del estado ─────── ¿cierra? sí → OK
+ LECTURA 3  + renglones sin lado, según su signo ──────────────────────── ¿cierra? sí → OK
+ nada cierra → reintento (una vez) → cola humana
+```
+
+  Si el documento no tiene ningún total ni resultado impreso en los bloques elegidos, es un fallo (no se carga sin confirmar sumas).
+- g) Sin fecha de cierre detectada: se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).
 - Tool: `verificar.mjs` (gratis, sin IA: un modelo de lenguaje no sirve para verificar sumas).
 
 Riesgos:
