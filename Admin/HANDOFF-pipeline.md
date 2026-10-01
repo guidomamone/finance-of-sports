@@ -22,46 +22,18 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Documento en curso: Universidad Católica (Cruzados) 2025** (`Admin/lote-02.txt`).
+**Por elegir un nuevo club.**
 
-- Corrió de punta a punta una vez (US$ 0,24).
-- El resultado cierra con el impreso (−729.845).
-- La columna 2024 del documento coincide con lo que tiene el sitio para 2024 (21.223.767 de ingresos).
-- Se trabó en la etapa 8 (cargar) por dos cosas:
-  - casos en la cola humana;
-  - el documento declara dos tipos de cambio (907,13 y 996,48) y el script no sabía cuál era el de cierre.
-- La Nota 20 del PDF trae la tabla equivocada (error del club): el costo de ventas (20.985.893, el 77% del gasto) no tiene desglose.
-  **Decisión de Guido: UC 2025 no se carga hasta que el club mande la nota** (en una sola línea, "sueldos del plantel" quedaría en 0 en 2025,
-  contra 9.140.947 en 2024). Pedido anotado en `Admin/dudas-por-club.md`.
-- Segunda corrida: la verificación da OK y la cola quedó vacía. La etapa 8 frenaba por 3 filas con categoría menor a 0,80; ahora van a la
-  cola, Guido las contestó (gastos de administración) y **la propuesta de carga da CARGA**: ingresos 25.850.434, gastos 25.665.995, resultado
-  −729.845 (igual al impreso), tipo de cambio 907,13. El sitio todavía no se escribió.
-- **UC 2025 está cargado en los datos del sitio (local, commiteado, sin push).** El costo de ventas va como "sin desglosar por la fuente" y
-  queda la marca `sinDesglose` en los datos de 2025. Visto en el sitio local: 28,5 M USD de ingresos, 28,3 de costos, −0,8 de resultado;
-  sueldos del plantel muestra "—".
-- Pendiente para otra sesión: que la página lea `sinDesglose` y muestre "No declarado"; hoy "Salarios / Ingresos" dice 0% para UC 2025.
-
-**Cambios hechos después de esa corrida (commiteados):**
-
-- `verificar.mjs` — cierre de notas reescrito: lee la estructura impresa (qué subtotal suma qué) en vez de sumar todo.
-  - Medido en 69 renglones con nota: 62 igual, 5 mejoran (UC, Betis, Athletic, Nordsjælland, Levante), 1 deja de cerrar y está bien que no
-    cierre (Chapecoense: 917 contra 912), ninguno empeora.
-  - En UC: ingresos pasan de 1 línea a los 9 renglones de la nota 19.
-- `localizar.mjs` y `extraer.mjs` — cada duda dice qué bloques nombra y si **afecta la carga**. Solo las que afectan van a la cola.
-- `verificar.mjs` — las dudas de localizar llegan a la cola, con la página y las líneas del bloque que nombran.
-- `cola.mjs` — dice "página N del visor (impreso M al pie)"; cierra sola los casos que una corrida nueva ya no levanta.
-- `lote.mjs` — la etapa 7 ya no imprime el registro entero; el ensayo ya no gasta plata cuando localizar ya estaba hecho.
-- La heurística de encabezados para el tipo de cambio se probó y se sacó (4 errores en 17 documentos).
-- `alta-club.mjs` — tipo de cambio con varios valores en una tabla: gana la columna con la fecha más nueva. En UC 2025 elige 907,13 solo.
+- Último documento: Universidad Católica (Cruzados) 2025. Cargado en los datos del sitio, commiteado en la rama, sin push.
+- Espera a Guido: publicar (merge de la rama a `main` y push).
+- Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" donde un renglón no está desglosado.
+  Hoy UC 2025 muestra "Salarios / Ingresos 0%" porque los sueldos están adentro del costo de ventas.
 
 **Próximo paso:**
 
-- Publicar: lo decide y lo hace Guido (merge de esta rama a `main` y push; cada push es un deploy).
-- Otra sesión: que la página muestre "No declarado" con `sinDesglose` (y arreglar "Salarios / Ingresos 0%").
-- Precedente de categoría con contexto: guardar con cada respuesta el renglón del estado que desglosa la fila (o el título de su tabla), para
-  que "Remuneración" dentro de gastos de administración no se confunda con "Remuneraciones" dentro del costo de ventas. Diseño por proponer.
+- Elegir el próximo documento (ver "Cómo arranca la próxima sesión").
+- Diseño por aprobar: precedente de categoría con contexto (etiqueta + renglón que desglosa).
 - Agregar CLP, EUR, DKK y GBP al script de series oficiales.
-- Elegir el próximo documento.
 
 ---
 
