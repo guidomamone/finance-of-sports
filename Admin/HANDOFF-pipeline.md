@@ -44,12 +44,12 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - `cola.mjs` — dice "página N del visor (impreso M al pie)"; cierra sola los casos que una corrida nueva ya no levanta.
 - `lote.mjs` — la etapa 7 ya no imprime el registro entero; el ensayo ya no gasta plata cuando localizar ya estaba hecho.
 - La heurística de encabezados para el tipo de cambio se probó y se sacó (4 errores en 17 documentos).
+- `alta-club.mjs` — tipo de cambio con varios valores en una tabla: gana la columna con la fecha más nueva. En UC 2025 elige 907,13 solo.
 
 **Próximo paso:**
 
-- Confirmar con Guido qué hacer cuando el documento declara DOS tipos de cambio. Dijo "el del período más viejo"; en UC 2025 eso sería
-  996,48, que es el cierre de 2024 (el comparativo), no el de 2025 (907,13). Pregunta abierta.
-- Después: agregar CLP al script de series oficiales y volver a correr UC 2025.
+- Volver a correr UC 2025 (extraer de nuevo, para que sus dudas salgan con la marca "afecta la carga", y después el lote).
+- Agregar CLP, EUR, DKK y GBP al script de series oficiales (para los documentos que no declaran tipo de cambio).
 
 ---
 
@@ -204,7 +204,7 @@ Riesgos:
 - ii) el documento no declara y la moneda no está en el archivo de series (CLP, EUR, DKK, GBP).
 
 Mitigaciones:
-- i) regla pendiente de confirmar con Guido (ver "Dónde estamos");
+- i) si están en una tabla con una fecha por columna, gana la fecha más nueva; si no (frase, años sueltos, activo y pasivo), a la cola;
 - ii) se agrega la moneda al script de series oficiales; mientras tanto, frena.
 
 ### 9 Publicar
@@ -231,7 +231,7 @@ Tomadas por Guido:
 2. Un total de ingresos o gastos que el documento no imprime se acepta si cierra con el resultado, y se busca un segundo chequeo.
 3. Un total que cierra solo por redondeo lleva una fila "Diferencia de redondeo".
 4. Una diferencia de una unidad entre dos tablas (UC: 1.790.062 contra 1.790.063) no va a la cola.
-5. Tipo de cambio: si el documento declara el suyo, **gana el del documento** (puede que el club acceda a una cotización mejor que la de
+5. Tipo de cambio: si el documento declara el suyo, **gana el del documento**; si declara varios en una tabla, el de la fecha más nueva (puede que el club acceda a una cotización mejor que la de
    mercado). El promedio entre apertura y cierre es solo para presupuestos.
 6. Si el documento no declara tipo de cambio: la cotización de cierre del **archivo de series oficiales** (`tools/fx-reference/`, bajado de
    cada banco central). Nunca una cotización dada por Claude. Si la moneda no está en el archivo, se agrega al script que baja las series,
@@ -241,7 +241,6 @@ Pendientes, a decidir con casos reales:
 
 - ¿El primer año automático de cada club pasa siempre por la cola?
 - ¿Dónde ver la cola? Hoy es un archivo que se lee con `cola.mjs`.
-- ¿Qué tipo de cambio gana cuando el documento declara dos?
 - Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
 
 ---
