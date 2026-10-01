@@ -10,6 +10,12 @@
 //   node tools/estado.mjs                 lee el registro tal como está (instantáneo) y dice de cuándo es
 //   node tools/estado.mjs --actualizar    regenera el registro antes (~1 minuto, sin API)
 //   node tools/estado.mjs --dir Clubes/Brasil    solo una carpeta
+//   node tools/estado.mjs --logica [grupo]       qué tiene de PROPIO cada grupo de países en cada etapa (tools/grupos-pais.mjs), con el
+//                                                ejemplo real donde se vio; sin grupo, todos. Grupos: argentina, brasil, latam, iberica,
+//                                                britanica, germanica, benelux, nordica, este, mediterranea, asia, otros.
+// DESGLOSE POR GRUPO DE PAÍSES (pedido de Guido, 2026-09-30: "para los pasos relevantes, breakdown de los números parciales según el cluster de
+// país"): debajo de cada estado con PDFs, una línea con cuántos son de cada grupo (siglas: ARG, BRA, LAT, IBE, GBR, GER, BNL, NOR, EST, MED,
+// ASI, OTR; `node tools/grupos-pais.mjs` dice qué países tiene cada uno).
 // ============================================================================
 
 import { readFileSync, existsSync, statSync } from 'node:fs';
@@ -17,6 +23,7 @@ import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { jevAlDia, categoriasAlDia } from './huellas.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
+import { GRUPOS, GRUPO, grupoDe } from './grupos-pais.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -28,6 +35,22 @@ if (args.includes('--actualizar') || !existsSync(regPath)) {
   process.stdout.write('Regenerando el registro (sin API)... ');
   spawnSync('node', [resolve(ROOT, 'tools/inventario-transcripciones.mjs')], { cwd: ROOT, stdio: 'ignore' });
   console.log('listo.');
+}
+// --logica: solo imprime la lógica por grupo y sale (no necesita el registro).
+if (args.includes('--logica')) {
+  const pedido = flagVal('--logica'); const lista = pedido && !pedido.startsWith('--') ? GRUPOS.filter((g) => g.id === pedido) : GRUPOS;
+  if (!lista.length) { console.error(`Grupo desconocido: ${pedido}. Grupos: ${GRUPOS.map((g) => g.id).join(', ')}`); process.exit(1); }
+  const ETAPA = { 2: '2. Transcribir', 3: '3. Validar', 4: '4. Preparar (qué filas, qué escala)', 5: '5. Categorizar', 6: '6. Cargar' };
+  for (const g of lista) {
+    console.log(`\n${g.corto} ${g.nombre.toUpperCase()}  (${g.paises.join(', ') || 'el resto'})\n  ${g.marco}`);
+    for (const k of [2, 3, 4, 5, 6]) {
+      const items = (g.logica || {})[k];
+      console.log(`  ${ETAPA[k]}: ${items && items.length ? '' : 'nada propio conocido (igual que el resto)'}`);
+      for (const x of items || []) console.log(`     - ${x}`);
+    }
+  }
+  console.log('\n(Es conocimiento medido, cada punto con el documento donde se vio. Fuente: tools/grupos-pais.mjs.)\n');
+  process.exit(0);
 }
 const R = readFileSync(regPath, 'utf8').trim().split('\n').map((l) => JSON.parse(l)).filter((e) => !dir || e.pdf.startsWith(dir.replace(/\/$/, '') + '/'));
 const edad = Math.round((Date.now() - statSync(regPath).mtimeMs) / 60000);
@@ -98,6 +121,9 @@ const clave = (e) => {
   return e.estado;
 };
 const cuenta = {}; for (const e of R) cuenta[clave(e)] = (cuenta[clave(e)] || 0) + 1;
+const porGrupo = {}; for (const e of R) { const k = clave(e); const g = grupoDe(e.pdf); (porGrupo[k] ||= {})[g] = (porGrupo[k][g] || 0) + 1; }
+// "ARG 22 · BRA 79 · ..." en el orden de GRUPOS, solo los que tienen alguno.
+const desglose = (m) => GRUPOS.filter((g) => m && m[g.id]).map((g) => `${g.corto} ${m[g.id]}`).join(' · ');
 
 console.log(`\nINVENTARIO${dir ? ` (${dir})` : ''}: ${R.length} PDFs · registro de hace ${edad} min${edad > 60 ? ' (node tools/estado.mjs --actualizar para rehacerlo)' : ''}`);
 console.log('(Si hay un proceso del pipeline corriendo, esto es una foto a mitad de camino.)');
@@ -114,6 +140,7 @@ const imprimirEtapa = ([etapa, filas]) => {
     const costo = n && usd ? `~US$ ${Math.round(n * usd)}` : n && !usd && !['cargado', 'sin-rubros', 'cat-ok'].includes(k) ? 'gratis' : '';
     if (n && usd) total += n * usd;
     console.log(`  ${String(n).padStart(5)}  ${nombre.padEnd(w)}  ${costo.padEnd(10)}${n ? `  falta: ${falta}${cmd !== '—' ? `  [${cmd}]` : ''}` : ''}`);
+    if (n) console.log(`         ${desglose(porGrupo[k])}`);
   }
 };
 // La etapa 7 (en el sitio) se imprime al final, después de la 6 (cargar), que no es una lista de estados sino lo que les falta.
@@ -124,8 +151,9 @@ console.log(`\n  Costo estimado para llevar todo hasta "categorizado": ~US$ ${Ma
 // Detalle de los que tienen rubros: qué les falta para poder cargarse.
 const L = R.filter((e) => !e.cargado && e.jev === 'listo-para-jev');
 if (L.length) {
-  const f = { cat: 0, jev: 0, enSitio: 0, nuevo: 0, noAnual: 0, nombre: 0, reserva: 0 };
+  const f = { cat: 0, jev: 0, enSitio: 0, nuevo: 0, noAnual: 0, nombre: 0, reserva: 0 }; const enSitioG = {}; const nuevoG = {};
   for (const e of L) {
+    const g = grupoDe(e.pdf); if (clubDeRuta(e.pdf).clubId) enSitioG[g] = (enSitioG[g] || 0) + 1; else nuevoG[g] = (nuevoG[g] || 0) + 1;
     const md = resolve(ROOT, e.md);
     if (categoriasAlDia(md)) f.cat++; else if (jevAlDia(md)) f.jev++;
     clubDeRuta(e.pdf).clubId ? f.enSitio++ : f.nuevo++;
@@ -134,7 +162,8 @@ if (L.length) {
     if ((e.reserva || []).length) f.reserva++;
   }
   console.log(`\n6. CARGAR (etapa 6) — qué les falta a los ${L.length} con rubros:`);
-  console.log(`  club ya en el sitio: ${f.enSitio} · club nuevo (necesita alta): ${f.nuevo}`);
+  console.log(`  club ya en el sitio: ${f.enSitio}   (${desglose(enSitioG)})`);
+  console.log(`  club nuevo (necesita alta): ${f.nuevo}   (${desglose(nuevoG)})`);
   console.log(`  no anuales (trimestral, semestral...; no se cargan como ejercicio): ${f.noAnual} · nombre del archivo con otra fecha que el contenido: ${f.nombre}`);
   console.log(`  con páginas "con reserva" (cerrar con sumas al cargar): ${f.reserva}`);
 }
@@ -147,4 +176,5 @@ if (existsSync(altas)) {
 }
 console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, Qué falta 1.');
 ETAPAS.filter(([e]) => e.startsWith('7')).forEach(imprimirEtapa);
+console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);
 console.log('');

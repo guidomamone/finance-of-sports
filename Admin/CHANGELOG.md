@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 322 — Grupos de países en el tablero; escala: el "000" de adentro de un número; etapa 6 sobre 159 años nuevos (2026-09-30)
+
+- `tools/grupos-pais.mjs` (nuevo): 12 grupos por marco contable (ARG, BRA, LAT, IBE, GBR, GER, BNL, NOR, EST, MED, ASI, OTR) y, por grupo y etapa, lo propio que ya se vio en documentos reales (pedido de Guido: partir la lógica por país).
+- `estado.mjs`: qué tools hacen las etapas 2, 3 y 4; desglose por grupo debajo de cada estado y en la etapa 6; `--logica [grupo]`.
+- `proponer-carga.mjs detectScale()`: el "000" de adentro de un número ("363,750,000.00", "$1.000.000") ya no dice "en miles" (Almagro 2023, Racing 2012). Sobre 199 años cargados reconstruidos: ingresos x1000 de más 40 -> 9, bien 71 -> 92. Escala única por documento probada en dos variantes y descartada (empeoraba 15 y 7 años: la prosa de la página engaña).
+- Etapa 6 sobre `Admin/piloto-existentes.txt` (159 años nuevos de clubes existentes, categorizados por Guido): 0 cargan; 150 frenan por el cierre de sumas, por tablas que no son el estado de resultados (detalle por grupo y ejemplos en el HANDOFF).
+- HANDOFF: reglas de trabajo de Guido (etapa y para qué al proponer un comando, ejemplos reales, siglas explicadas).
+
 ## Versión 321 — Etapa 3 = lo que carga la etapa 6; familia de etiquetas; memoria de respuestas pagas; fila de redondeo (2026-09-30)
 
 - `pipeline.mjs` etapa 3: la lista de rubros (`.rubros.json`) pasa a ser la selección de `seleccionarFilas()` (lo que carga `cargar.mjs`) más cada renglón del estado que se abrió en una nota (`esAncla`); lista vieja solo si la selección falla (`seleccion.ok: false`). Medido en 719 documentos: de 17.266 filas categorizadas, 4.700 no se cargaban nunca y 3.068 que se cargaban no se categorizaban. Regenerado sin API: 429 con rubros (antes 407), 290 sin rubros; selección en 475, lista vieja en 244. Se conserva la glosa de etiquetas ya glosadas.

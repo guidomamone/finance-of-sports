@@ -114,6 +114,33 @@ Registro: `Admin/transcripciones-estado.jsonl` (se regenera); historial: `Admin/
 - El año que sale del nombre del archivo miente a veces (fechas ISO se leían como 2012). `onboard.mjs --all` salta documentos con briefing al día;
   el registro usa `ONBOARD_IGNORE_BRIEFING=1`.
 
+## Resultado de la etapa 6 sobre los 159 años nuevos de clubes existentes (2026-09-30, noche, Versión 322)
+
+Lista `Admin/piloto-existentes.txt`; etapa 5 corrida por Guido (US$ ~4,5 de Claude; la memoria de respuestas ahorró 3.400 de 5.344 llamadas a Jev).
+`node tools/cargar.mjs --lista Admin/piloto-existentes.txt` (propuesta, gratis): **0 cargan.** Por grupo de países (tools/grupos-pais.mjs) y
+motivo (un documento puede frenar por varios):
+
+| grupo | docs | tie-out (no cierra contra lo impreso) | categoría | fx | alta (perímetro, fx declarado) |
+|---|---|---|---|---|---|
+| ARG | 7 | 7 | 5 | 5 | 6 |
+| BRA | 27 | 26 | 12 | 2 | 6 |
+| LAT | 45 | 42 | 12 | 37 | 15 |
+| IBE | 23 | 23 | 22 | 10 | 5 |
+| GER | 4 | 4 | 2 | 3 | 1 |
+| BNL | 26 | 23 | 21 | 16 | 5 |
+| NOR | 12 | 11 | 4 | 10 | 8 |
+| EST | 6 | 6 | 4 | 6 | 6 |
+| MED | 9 | 6 | 5 | 4 | 9 |
+
+**La causa dominante (150 de 159) está en la etapa 4, no en la 6:** `seleccionarFilas()` recorre como "estado de resultados" CUALQUIER tabla
+relevante con palabras de ingresos/gastos, no solo el estado y las notas que abren sus renglones. Ejemplos mirados:
+Chapecoense 2016 (gastos −220,6 contra ingresos 66,9: "Custo dos Bens Patrimoniais Vendidos −83,8" y "Despesas diversas −74,0" salen de una
+tabla de la pág. 28 que no es el estado); Ituano 2019 ("Imobilizado - Móveis e Instalações 12" como ingreso: cuadro de bienes de uso);
+Envigado 2019 ("Diferencias en cambio en negociación 2.405" como ingreso, escalas mezcladas con "Abonados 25").
+**Próximo paso propuesto:** medir por GRUPO la variante "solo el estado principal y las notas que abre" (ya existe como
+`--ancla-solo-principales`; en el test de elección de tabla rompía Los Andes, Bahia, Colo-Colo 2024, Fluminense y Stuttgart en general,
+pero puede ser la buena para algunos grupos y no para otros). Es la primera regla candidata a partirse por grupo (pedido de Guido).
+
 ## Qué falta (en orden)
 
 1. **ETAPA 6: `tools/cargar.mjs` EXISTE (Versión 320) y se probó de punta a punta; el informe completo está en `Admin/tests/test-cargar.md`.**
