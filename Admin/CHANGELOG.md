@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 339 — Peso chileno: la cotización de un cierre es la del primer día con dato posterior (2026-10-01)
+
+- `lookup-fx-close.js` (`diaCierre: 'siguiente'` en CLP) y `alta-club.mjs` (`FX_DIA_SIGUIENTE`): para CLP se toma el primer día con dato posterior al cierre (el dólar observado se publica al día siguiente). Los 12 cierres declarados por UC y Palestino: 11 exactos, 2024 a 0,02 (antes, entre 0,04% y 0,85% de diferencia). Las demás monedas no cambian.
+
 ## Versión 338 — Series oficiales de EUR, DKK y GBP; la carga usa el signo verificado (2026-10-01)
 
 - `fetch-fx-reference.mjs`: EUR (BCE, tipo de referencia diario, invertido), DKK (Danmarks Nationalbank, Statbank DNVALD, por 100) y GBP (Bank of England, serie XUDLUSS, invertida). Banco central de cada moneda en vez de la Reserva Federal (H.10 se aleja hasta 0,4-0,9% de lo que declaran los documentos). EUR coincide exacto con 4 cierres declarados por Hajduk Split (tomando el hábil ANTERIOR, aun cuando el 31/12 tiene dato); DKK y GBP sin tipos declarados en las transcripciones: comparados contra BCE cruzado y FRED. `lookup-fx-close.js` y `alta-club.mjs` las conocen.

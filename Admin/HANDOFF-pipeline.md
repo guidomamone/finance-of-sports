@@ -35,8 +35,6 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - Elegir el próximo documento (UC tiene 2010-2020 transcriptos sin cargar; ver "Cómo arranca la próxima sesión").
 - Diseño por proponer: que la cola no repita una duda ya contestada cuando la IA la redacta distinto (hoy la reconoce por el texto).
 - Diseño aprobado, sin construir: precedente de categoría con contexto (etiqueta + renglón que desglosa).
-- Diseño por aprobar: en el buscador de cotizaciones, CLP toma el primer día con dato después del cierre (así coincide con lo declarado).
-- Agregar EUR, DKK y GBP al script de series oficiales.
 
 ---
 
@@ -190,7 +188,7 @@ Mitigaciones:
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;
-- ii) el documento no declara y la moneda no está en el archivo de series (CLP, EUR, DKK, GBP).
+- ii) el documento no declara y la moneda no está en el archivo de series (hoy hay 14: faltan, por ejemplo, PEN, MXN, JPY).
 
 Mitigaciones:
 - i) si están en una tabla con una fecha por columna, gana la fecha más nueva; si no (frase, años sueltos, activo y pasivo), a la cola;
@@ -235,7 +233,7 @@ Tomadas por Guido:
    mercado). El promedio entre apertura y cierre es solo para presupuestos.
 6. Si el documento no declara tipo de cambio: la cotización de cierre del **archivo de series oficiales** (`tools/fx-reference/`, bajado de
    cada banco central). Nunca una cotización dada por Claude. Si la moneda no está en el archivo, se agrega al script que baja las series,
-   desde su fuente oficial (faltan CLP, EUR, DKK y GBP).
+   desde su fuente oficial (hoy hay 14 monedas; CLP toma el primer día con dato posterior al cierre, como lo declaran los clubes).
 
 Pendientes, a decidir con casos reales:
 
@@ -258,7 +256,7 @@ Pendientes, a decidir con casos reales:
 - **Cierre de notas sumando todo** (la versión vieja de `verificar.mjs`): contaba dos veces los cuadros de detalle (UC, Betis, Athletic) y
   aceptaba notas que no cerraban por la tolerancia de 0,5% (Chapecoense).
 - **No construido todavía:** duplicados de PDF por huella; número citado en el texto como segundo chequeo; que una respuesta de la cola se vuelva
-  regla; ordenar la cola por impacto; reabrir solo el sourcing de un PDF roto; series oficiales de CLP, EUR, DKK y GBP.
+  regla; ordenar la cola por impacto; reabrir solo el sourcing de un PDF roto.
 
 ---
 

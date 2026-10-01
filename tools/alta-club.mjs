@@ -679,6 +679,10 @@ const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda
   NOK: 'Tipo medio de referencia de Norges Bank', CZK: 'Fixing del Česká národní banka', CHF: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
   TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CLP: 'Dólar observado (Banco Central de Chile, publicado por el SII)',
   EUR: 'Tipo de referencia del Banco Central Europeo', DKK: 'Tipo oficial de Danmarks Nationalbank', GBP: 'Tipo spot del Bank of England' };
+// Monedas cuya cotización de un cierre es la del PRIMER día con dato POSTERIOR (la serie publica el valor de un día al día siguiente). Mismo
+// criterio que `diaCierre: 'siguiente'` en tools/lookup-fx-close.js (Versión 339; verificado para CLP contra los cierres declarados de UC y
+// Palestino). Si se agrega otra moneda con esa convención, va en los dos lugares.
+const FX_DIA_SIGUIENTE = new Set(['CLP']);
 function fxDeSerie(moneda, fecha) {
   const f = SERIES_FX[moneda];
   if (!f) return { error: `sin serie local para ${moneda} (hoy solo ${Object.keys(SERIES_FX).join(', ')})` };
@@ -686,6 +690,11 @@ function fxDeSerie(moneda, fecha) {
   if (!existsSync(p)) return { error: `no existe tools/fx-reference/${f}` };
   const data = JSON.parse(readFileSync(p, 'utf8'));
   if (fecha < data.rangeFrom || fecha > data.rangeTo) return { error: `${fecha} fuera del rango bajado (${data.rangeFrom} a ${data.rangeTo})` };
+  if (FX_DIA_SIGUIENTE.has(moneda)) {
+    const d = new Date(fecha + 'T00:00:00Z');
+    for (let i = 0; i < 10; i++) { d.setUTCDate(d.getUTCDate() + 1); const c = d.toISOString().slice(0, 10); if (c in data.series) return { fx: data.series[c], fecha: c, exacto: false }; }
+    return { error: 'sin cotización en los 10 días siguientes al cierre' };
+  }
   if (fecha in data.series) return { fx: data.series[fecha], fecha, exacto: true };
   const d = new Date(fecha + 'T00:00:00Z');
   for (let i = 0; i < 10; i++) {
