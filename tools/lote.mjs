@@ -133,7 +133,9 @@ if (!EJECUTAR) { console.log(`\nENSAYO: ~US$ ${usd.toFixed(2)} para localizar y 
 
 console.log('\n=== Etapa 6: verificar (gratis) ===');
 const sitio = loadSite();
-for (const pdf of docs.filter((d) => estado[d] === 'extraído')) {
+// startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
+// pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
+for (const pdf of docs.filter((d) => String(estado[d]).startsWith('extraído'))) {
   const r = verificar(pdf, { registro, sitio, escribirRubros: true });
   estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
   if (!r.error) for (const c of r.chequeos) console.log(`  ${pdf.split('/').slice(2).join('/')}: ${c.ok === true ? 'ok' : c.ok === false ? 'NO' : '-'} ${c.nombre}: ${c.detalle}`);

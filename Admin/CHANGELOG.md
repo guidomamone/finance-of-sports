@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 347 — El documento re-transcripto en el lote pasa a verificar en la misma corrida (2026-10-01)
+
+- `lote.mjs`: la etapa 6 toma todo estado que empiece con "extraído" (antes, igualdad exacta: UC 2015, re-transcripto con Mistral y extraído en el reintento del lote 06, quedaba sin verificar). Los testigos siguen afuera. Ensayo del lote 06, con y sin `--reintentar`: idéntico antes y después.
+
 ## Versión 346 — Dudas confirmadas por la aritmética; la categorización sabe cuándo una fila entró por su signo; diagnóstico de desgloses (2026-10-01)
 
 - `verificar.mjs`: escalón 2 de las dudas: si la escalera cerró, ningún año vecino da distinto, el tema es cuadro por segmento / cuadro duplicado / columna / escala y la propuesta "sí" ya está aplicada, se acepta sola con nota. Las filas que entran por su signo (lectura 3) llevan esa explicación como sección para Jev y Claude. Guarda `faltasDesglose` siempre.
