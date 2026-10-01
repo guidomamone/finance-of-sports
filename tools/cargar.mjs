@@ -105,6 +105,7 @@ const { derivado } = await import('./rutas.mjs');
 const { agregarCaso, casoYRespuesta, respuestaPorDetalle } = await import('./cola.mjs');
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
+const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
@@ -416,7 +417,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   if (DESDE_VERIFICACION) {
     const conCat = filas.filter((f) => (f.destino === 'revenue' || f.destino === 'expense') && f.cat);
     const suma = (cats) => conCat.filter((f) => cats.includes(f.cat)).reduce((a, f) => a + Math.abs(f.native || 0), 0);
-    const yaReintentado = (() => { try { return !!JSON.parse(readFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })), 'utf8')).indiceAmpliado; } catch { return false; } })();
+    const yaReintentado = (() => { try { const v = JSON.parse(readFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })), 'utf8')).indiceAmpliado; return Number(v === true ? 1 : v || 0) >= VERSION_AMPLIADO; } catch { return false; } })();
     const ceros = [];
     if (!conCat.some((f) => /^lump_/.test(f.cat))) {
       for (const [nombre, cats] of [['Salarios del plantel', ['wages_squad']], ['Televisión', ['broadcasting']], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets']]]) if (!suma(cats)) ceros.push({ categoria: nombre });

@@ -38,6 +38,7 @@ import { derivado } from './rutas.mjs';
 import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
+import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./proponer-carga.mjs');
@@ -378,7 +379,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
 
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
-  const yaReintentado = !!U.indiceAmpliado;
+  const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
   const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, cola, chequeos, notas,
     reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado,
     // resultadoParaCargar (Versión 344): si cerró contra "resultado antes de impuestos", el resultado del ejercicio es ese más el impuesto tal

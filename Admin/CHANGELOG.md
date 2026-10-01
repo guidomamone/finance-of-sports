@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 345 — Índice ampliado v2 (etiquetas partidas en dos renglones); el reintento re-transcribe moviendo la transcripción vieja (2026-10-01)
+
+- `indice-bloques.mjs` (solo el índice ampliado, que usa el reintento): un renglón solo de números debajo de un renglón solo de texto es una fila con la etiqueta partida (UC 2013, cuadro por segmento). `VERSION_AMPLIADO = 2`: un documento reintentado con una versión anterior tiene un reintento más (`verificar.mjs`, `cargar.mjs`, `localizar.mjs`). Medido: ampliado v2 505.203 filas en bloques (v1 498.282, normal 485.595), ningún documento pierde filas.
+- `lote.mjs`: el escalón 1 de la etapa 2 mueve la transcripción vieja a Generados/ antes de llamar a Mistral (no la pisaba: "Ya existe el .md"); si Mistral falla, la restaura.
+- Lote 06, reintento: UC 2017 da CARGA; UC 2013 vuelve a reintentar con el índice v2; UC 2015 se re-transcribe en la próxima corrida.
+
 ## Versión 344 — Arreglos del lote 06: respuesta de categoría por club, resultado derivado, año vecino con fecha deducida, descartados (2026-10-01)
 
 - `cargar.mjs`: una respuesta de categoría vale para todos los documentos del mismo club con la misma etiqueta ("Otras ganancias (pérdidas)" de UC llegaba una vez por año). Tie-out contra `resultadoParaCargar` (si la verificación cerró contra "antes de impuestos", el resultado del ejercicio es ese más el impuesto impreso: UC 2013, 220.616).

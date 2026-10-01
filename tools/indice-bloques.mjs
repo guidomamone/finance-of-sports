@@ -55,6 +55,8 @@ const cuantas = (s) => (String(s).match(IMPORTE_RE) || []).length;
 // guiones después de números ("Ingresos E-Commerce   0   -   531.143   -", el cero impreso como "-") cuenta como fila. Caso real, UC 2025
 // pág. 77: esas filas partían el cuadro por segmento y faltaban 2.760.156 en "Comerciales" y 823.684 en el costo de ventas. No es el
 // índice por defecto: lo pide localizar.mjs cuando verificar.mjs encontró un desglose que no suma (ver lote.mjs --reintentar).
+// Versión del índice ampliado: cuando mejora, sube, y un documento ya reintentado con una versión anterior tiene UN reintento más.
+export const VERSION_AMPLIADO = 2;
 export function indiceBloques(md, { ampliado = false } = {}) {
   const L = md.split('\n'); const bloques = []; let pagina = 1; const textoReciente = [];
   const empuja = (b) => { b.id = `b${bloques.length + 1}`; bloques.push(b); };
@@ -82,7 +84,12 @@ export function indiceBloques(md, { ampliado = false } = {}) {
     // (un solo espacio entre columnas: el .md no es -layout). Un año suelto al final ("31 de dezembro de 2020") es UN número, no dos.
     const COLS_CHICAS_RE = /\p{L}.*?(?:\s+\(?-?\d[\d.,]*\)?){2,}\s*$/u;
     const conImporteBase = (l) => l.trim() && !l.trim().startsWith('|') && !PAG_RE.test(l) && /\p{L}{2,}/u.test(l) && /[\d)]\s*$/.test(l.trim()) && ((l.match(IMPORTE_RE) || []).length >= 1 || COLS_CHICAS_RE.test(l));
-    const conImporte = (l) => conImporteBase(l) || (ampliado && conImporteBase(String(l).replace(/(\s+[-–—])+\s*$/, '')));
+    // Ampliado, además (versión 2 del índice ampliado, Versión 345): un renglón SOLO de números (2+ importes) justo debajo de un renglón SOLO de
+    // texto es la segunda mitad de una fila con la etiqueta partida en dos (UC 2013, cuadro por segmento: "Ingresos Matrículas de Escuelas de
+    // Fútbol" / "0 0 158.130 146.225 158.130 146.225"). El renglón de texto entra como hueco (hasta dos líneas de texto) y este como fila.
+    const soloNumeros = (k) => { const t = String(L[k] || '').trim(); return t && !/\p{L}/u.test(t) && (t.match(IMPORTE_RE) || []).length >= 2; };
+    const previoEsTexto = (k) => { let j = k - 1; while (j >= 0 && !L[j].trim()) j--; const t = String(L[j] || '').trim(); return j >= 0 && /\p{L}{2,}/u.test(t) && !/\d/.test(t); };
+    const conImporte = (l, k = -1) => conImporteBase(l) || (ampliado && (conImporteBase(String(l).replace(/(\s+[-–—])+\s*$/, '')) || (k >= 0 && soloNumeros(k) && previoEsTexto(k))));
     // HUECOS (Versión 325): hasta la 324 se toleraba UNA línea en blanco entre filas, y un renglón suelto entre dos encabezados de grupo se
     // perdía. Caso real, Bahia 2021 pág. 8: "Itens extraordinários" / "Outras receitas (despesas), líquidas  22  64.283  (4.998)" / "" /
     // "Resultado financeiro": el renglón de 64.283 (más que todo el superávit, 27.751) no quedaba en ningún bloque (1 fila < 3) ni en las 3
@@ -94,18 +101,18 @@ export function indiceBloques(md, { ampliado = false } = {}) {
     // Medición sobre las 2.249 transcripciones (Versión 325): ninguna pierde filas; ver Admin/CHANGELOG.md.
     const huecoHasta = (j) => {
       let k = j; let textos = 0;
-      while (k < L.length && k - j < 3 && !conImporte(L[k])) {
+      while (k < L.length && k - j < 3 && !conImporte(L[k], k)) {
         const t = L[k].trim();
         if (PAG_RE.test(L[k]) || t.startsWith('|')) return -1;
         if (t && !/^\d{1,3}$/.test(t)) { if (/\d/.test(t) || t.length > 90 || ++textos > 2) return -1; }
         k++;
       }
-      return k < L.length && k > j && conImporte(L[k]) ? k : -1;
+      return k < L.length && k > j && conImporte(L[k], k) ? k : -1;
     };
-    if (conImporte(linea)) {
+    if (conImporte(linea, i)) {
       let j = i; const desde = i; const filas = [];
       while (j < L.length) {
-        if (conImporte(L[j])) { filas.push(L[j]); j++; continue; }
+        if (conImporte(L[j], j)) { filas.push(L[j]); j++; continue; }
         const k = huecoHasta(j); if (k < 0) break; j = k;
       }
       if (filas.length >= 3) {

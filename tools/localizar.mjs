@@ -35,7 +35,7 @@
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { indiceBloques, ficha, textoDeBloque } from './indice-bloques.mjs';
+import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { derivado } from './rutas.mjs';
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
@@ -100,7 +100,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
     const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: 'localizar-2', pdf });
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
-  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
 }
