@@ -154,6 +154,12 @@ if (conRubros.length) {
 console.log('\n=== RESUMEN DEL LOTE ===');
 for (const pdf of docs) console.log(`  ${String(estado[pdf] || '?').padEnd(42)} ${pdf}`);
 const cola = pendientes().filter((c) => docs.includes(c.pdf));
+// TROUBLESHOOTING (Versión 346): desgloses que siguen sin sumar DESPUÉS del reintento -> diagnóstico (¿índice o transcripción?).
+const sinArreglo = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); const v = e?.md ? leerDerivado(e, '.verificacion.json') : null; return v?.reintentado && v?.faltasDesglose; });
+if (sinArreglo.length) {
+  console.log(`\nDESGLOSES QUE SIGUEN SIN SUMAR DESPUÉS DEL REINTENTO (se cargan con el renglón sin abrir; diagnóstico gratis):`);
+  for (const d of sinArreglo) console.log(`  node tools/diagnostico-desglose.mjs "${d}"`);
+}
 if (aRetranscribir.length) {
   console.log(`\nTRANSCRIPCIONES SIN LAS PÁGINAS EN IMAGEN (etapa 2, escalón 1):`);
   for (const x of aRetranscribir) console.log(`  ${x.pdf.split('/').slice(2).join('/')}: páginas ${x.paginas.join(', ')}`);

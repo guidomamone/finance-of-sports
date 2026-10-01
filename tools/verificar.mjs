@@ -251,7 +251,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo'];
   const evaluar = (nivel) => {
     const ch = []; let ing = [...ing0]; let gas = [...gas0];
-    if (nivel >= 3) for (const f of otros) { const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: 'estado (renglón sin lado, por su signo: lectura 3)' }); }
+    if (nivel >= 3) for (const f of otros) { const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura 3)` }); // el texto le llega a Jev y a Claude como sección (Versión 346) }
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
       const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
@@ -370,6 +370,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const det = `${club}|${d.tema}|${normalizarRenglon(d.renglon)}`;
         const ya = respuestaPorDetalle('verificar', 'duda-tema', det);
         if (ya) { notas.push(`duda de ${origen} ya contestada para el club (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
+        // ESCALÓN 2 DE LAS DUDAS (Versión 346, diseño aprobado por Guido): la aritmética la confirma. Si la escalera de lecturas cerró con un
+        // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
+        // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.
+        // Caso real: de las 5 preguntas de UC 2010-2014 que Guido contestó "sí" en un minuto, 4 eran de este tipo.
+        if (E.cierra && !vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna', 'escala'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas (${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
         caso('duda-tema', det, que, { pagina, lineas, propuesta });
         continue;
       }
@@ -381,7 +386,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
   const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, cola, chequeos, notas,
-    reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado,
+    reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado, faltasDesglose: reintentos.length ? reintentos : null, // faltasDesglose: siempre, para tools/diagnostico-desglose.mjs
     // resultadoParaCargar (Versión 344): si cerró contra "resultado antes de impuestos", el resultado del ejercicio es ese más el impuesto tal
     // como está impreso (UC 2013: 57.521 + 163.095 = 220.616); cargar.mjs hace su tie-out contra este número.
     totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), resultadoParaCargar: r6(E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) ? res + conSigno(imp) : res), lecturaSignos: lectura },

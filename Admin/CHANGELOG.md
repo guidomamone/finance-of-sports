@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 346 — Dudas confirmadas por la aritmética; la categorización sabe cuándo una fila entró por su signo; diagnóstico de desgloses (2026-10-01)
+
+- `verificar.mjs`: escalón 2 de las dudas: si la escalera cerró, ningún año vecino da distinto, el tema es cuadro por segmento / cuadro duplicado / columna / escala y la propuesta "sí" ya está aplicada, se acepta sola con nota. Las filas que entran por su signo (lectura 3) llevan esa explicación como sección para Jev y Claude. Guarda `faltasDesglose` siempre.
+- `tools/diagnostico-desglose.mjs` (nuevo): para un desglose que sigue sin sumar después del reintento, lista las líneas con cifras fuera de los bloques elegidos y por qué el índice las dejó afuera (índice, etapa 3) o dice que no hay (transcripción, etapa 2). `lote.mjs` lo recomienda al final. HANDOFF: escalera de troubleshooting.
+
 ## Versión 345 — Índice ampliado v2 (etiquetas partidas en dos renglones); el reintento re-transcribe moviendo la transcripción vieja (2026-10-01)
 
 - `indice-bloques.mjs` (solo el índice ampliado, que usa el reintento): un renglón solo de números debajo de un renglón solo de texto es una fila con la etiqueta partida (UC 2013, cuadro por segmento). `VERSION_AMPLIADO = 2`: un documento reintentado con una versión anterior tiene un reintento más (`verificar.mjs`, `cargar.mjs`, `localizar.mjs`). Medido: ampliado v2 505.203 filas en bloques (v1 498.282, normal 485.595), ningún documento pierde filas.

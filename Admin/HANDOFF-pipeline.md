@@ -201,6 +201,15 @@ Mitigaciones:
 ```
 
   Si el documento no tiene ningún total ni resultado impreso en los bloques elegidos, es un fallo (no se carga sin confirmar sumas).
+- **Dudas de la IA, escalera** (antes de llegar a la cola):
+
+```
+ ESCALÓN 0  ¿afecta la carga? ── no ──► nota
+ ESCALÓN 1  ¿Guido ya la contestó para este club? (club + tema + renglón) ── sí ──► se aplica
+ ESCALÓN 2  ¿la aritmética la confirma? (la escalera de lecturas cerró, ningún año vecino da distinto, tema = cuadro por segmento /
+            cuadro duplicado / columna / escala, y la propuesta "sí" ya está aplicada) ── sí ──► se acepta sola, con nota
+ COLA HUMANA (perímetro, cuadro de otro año, fila ilegible y "otro" siempre llegan)
+```
 - g) Sin fecha de cierre detectada: se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).
 - Tool: `verificar.mjs` (gratis, sin IA: un modelo de lenguaje no sirve para verificar sumas).
 
@@ -216,7 +225,8 @@ Mitigaciones:
 
 - a) Precedente del club → Jev (si la confianza es 0,90 o más) → Claude por API (0,80 o más).
 - b) Lo que queda debajo de 0,80 no se carga solo: va a la cola.
-- c) **Escalera** (el escalón con contexto se agregó el 2026-10-01):
+- c) **Escalera** (el escalón con contexto se agregó el 2026-10-01; Jev y Claude reciben como "sección" de dónde sale la fila, incluido
+  "sin lado en el documento: entra como gasto por su signo, impreso en negativo"):
 
 ```
  ESCALÓN 0  respuesta de Guido en la cola para esa fila ─────────────────────── gana siempre
@@ -284,6 +294,27 @@ Qué pasa después:
 - El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y con la lista de lo que faltó, y
   extrae con esa misma lista (y la regla de usar la columna de totales de un cuadro por segmento para un renglón del estado).
 - Una sola vez por documento. Si sigue faltando, se carga con aviso.
+
+### Troubleshooting: un desglose que sigue sin sumar después del reintento
+
+```
+ el lote lo lista al final ("DESGLOSES QUE SIGUEN SIN SUMAR DESPUÉS DEL REINTENTO")
+        │
+        ▼
+ node tools/diagnostico-desglose.mjs "<pdf>"   (gratis)
+        │ ¿hay líneas con cifras FUERA de los bloques elegidos, cerca del desglose?
+        ├── sí ──► problema del ÍNDICE (etapa 3): la tool dice por qué quedó afuera cada línea
+        │          (etiqueta partida en dos, termina en "-", hueco largo...)
+        │          → mejorar el índice ampliado en tools/indice-bloques.mjs
+        │          → MEDIR en todas las transcripciones (ningún documento puede perder filas)
+        │          → subir VERSION_AMPLIADO (cada documento reintentado tiene un reintento más) → --reintentar
+        │ no
+        ▼
+ problema de la TRANSCRIPCIÓN o del PDF (etapa 2): escalón 1 (re-transcribir con Mistral) o mirar la página
+```
+
+Mientras tanto el documento se carga con el renglón sin abrir (correcto, con menos detalle). Caso que lo originó: UC 2013 (etiquetas partidas
+en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió.
 
 ### Perfil de cada club
 
