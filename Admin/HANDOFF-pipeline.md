@@ -141,6 +141,14 @@ Envigado 2019 ("Diferencias en cambio en negociación 2.405" como ingreso, escal
 `--ancla-solo-principales`; en el test de elección de tabla rompía Los Andes, Bahia, Colo-Colo 2024, Fluminense y Stuttgart en general,
 pero puede ser la buena para algunos grupos y no para otros). Es la primera regla candidata a partirse por grupo (pedido de Guido).
 
+### Test de la etapa 4 por grupo: ¿la selección reproduce lo cargado? (2026-10-01, gratis)
+
+266 años YA cargados con su `.md`: la suma de ingresos de `seleccionarFilas()` a ±2% de la de producción. Regla actual ("todas las tablas con
+palabras de ingresos/gastos"): **18 de 266 (7%)**; "solo el estado principal y las notas que abre" (`--ancla-solo-principales`): **28 (11%)**,
+mejor o igual en TODOS los grupos (ARG 11->15, BRA 1->3, LAT 5->7, IBE 0->2; GER 0/28: casi nunca encuentra la GuV). Gastos: 11 -> 19.
+Ejemplos: Brentford 2024 ingresos 72,5 contra 197,1; Atlético Mineiro 2023 gastos 2.702 contra 91; Bahia 2025 1.039 contra 545.
+Lectura: las reglas de selección por palabras no alcanzan en ningún grupo; partirlas por país mejora poco. Propuesta en "Qué falta" 0.
+
 ## Qué falta (en orden)
 
 1. **ETAPA 6: `tools/cargar.mjs` EXISTE (Versión 320) y se probó de punta a punta; el informe completo está en `Admin/tests/test-cargar.md`.**
