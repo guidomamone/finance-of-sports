@@ -102,6 +102,11 @@ const { categoriasAlDia } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
+const { agregarCaso, casoYRespuesta } = await import('./cola.mjs');
+const { ARCHIVO: ARCHIVO_APRENDIDAS } = await import('./memoria-categorias.mjs');
+// Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
+// generales" y no "admin_general_expense".
+const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
 const { periodoDe } = await import('./periodo.mjs');
 const { normalizar, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
@@ -315,8 +320,35 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     else raw.push(...g.hijas);
   }
   if (colapsadas.length) P.avisos.push(`${colapsadas.length} renglón(es) del estado cargados SIN abrir su nota, porque la nota no está en la lista de rubros categorizada: ${colapsadas.slice(0, 5).map((l) => `"${l.slice(0, 50)}"`).join('; ')}`);
+  // CATEGORÍA DUDOSA -> COLA HUMANA (Versión 331, decisión 1 de Guido: lo que Claude categorizó con menos de 0,80 no se carga solo). Hasta la
+  // 330 esas filas quedaban afuera de la carga sin preguntarle a nadie, las sumas dejaban de cerrar y el documento frenaba con un "no cierra"
+  // engañoso (UC 2025: "Transporte", "Arriendo de Bienes" y "Provisión No Operacionales" afuera = 322.108 de menos, resultado −407.737 en vez
+  // de −729.845). Ahora:
+  //   - cada una va a la cola como pregunta de sí o no ("¿'Transporte' va como Administración y gastos generales?") con la categoría propuesta;
+  //   - mientras espera, cuenta en las sumas con la categoría propuesta (las sumas no se rompen) y el documento frena con "N filas esperan
+  //     categoría", no con "no cierra";
+  //   - la respuesta de Guido gana sobre cualquier otra categoría de esa fila (aceptar -> la propuesta; corregir --valor <categoría> -> esa;
+  //     descartar -> la fila no se carga), y queda en Admin/categorias-aprendidas.jsonl con confianza 1: los años siguientes del mismo club la
+  //     toman como precedente gratis (memoria-categorias.mjs).
+  const respuestaCat = (label) => {
+    const { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', norm(label));
+    if (!resp || !caso) return null;
+    if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta };
+    if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim() };
+    if (resp.decision === 'descartar') return { descartar: true };
+    return null;
+  };
+  const aprendidasYa = existsSync(ARCHIVO_APRENDIDAS) ? readFileSync(ARCHIVO_APRENDIDAS, 'utf8') : '';
+  const enCola = [];
   const filas = raw.map((r) => {
     const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...catDe(r.label, r.tside) };
+    const rg = respuestaCat(r.label);
+    if (rg?.cat) {
+      Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true });
+      const lado = ladoDeCat(rg.cat);
+      if (lado && !aprendidasYa.includes(`"label":${JSON.stringify(r.label)},"glosa":null,"categoria":${JSON.stringify(rg.cat)},"confianza":1`)) appendFileSync(ARCHIVO_APRENDIDAS, JSON.stringify({ ts: new Date().toISOString(), club: clubId, year: year != null ? String(year) : null, lado, label: r.label, glosa: null, categoria: rg.cat, confianza: 1, motivo: 'respuesta de Guido en la cola humana (cargar.mjs)', jevDecia: null, jevConf: null, modelo: 'guido', md: e.md }) + '\n');
+    }
+    if (rg?.descartar) { f.destino = 'excluida'; f.fuenteCat = 'Guido la descartó en la cola'; return f; }
     const nl = norm(r.label);
     // Una fila que NO está en la lista de rubros de la etapa 3 y de la que el documento no dice el lado: la etapa 3 la descartó como no-rubro
     // (partidas de balance, cuadros de bienes de uso que el ancla abrió por error). No se carga y no cuenta como "sin categoría".
@@ -327,12 +359,20 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     else if (f.escalon !== 0 && FINANCIERO_RE.test(nl) && (!f.cat || f.cat === 'no_es_rubro' || ['other_income', 'other_expenses', 'exceptional_items', 'admin_general_expense'].includes(f.cat))) f.destino = 'netInterest';
     else if (f.cat === 'no_es_rubro') f.destino = 'excluida';
     else if (!f.cat || !ladoDeCat(f.cat)) f.destino = 'sin-categoria';
-    else if (!aceptable(f)) f.destino = 'confianza-baja';
+    else if (!aceptable(f)) {
+      // a la cola (ver CATEGORÍA DUDOSA arriba); en las sumas cuenta con la categoría propuesta
+      const nombre = NOMBRE_CAT[f.cat] || f.cat;
+      agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: nl, categoriaPropuesta: f.cat, pagina: r.page || null,
+        que: `¿"${r.label}" (${Math.abs(r.native)} en millones de la moneda del documento) va como "${nombre}"?  (por qué: la categorización le dio ${f.conf ?? '?'} de confianza, menos que el mínimo ${UMBRAL_CLAUDE})`,
+        propuesta: `sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)` });
+      enCola.push(f); f.enCola = true; f.destino = ladoDeCat(f.cat);
+    }
     else f.destino = ladoDeCat(f.cat);
     if ((f.destino === 'revenue' || f.destino === 'expense') && f.ladoDoc && f.ladoDoc !== f.destino) f.ladoContradictorio = true;
     return f;
   });
   P.filas = filas;
+  if (enCola.length) frena('categoria-en-cola', `${enCola.length} fila(s) esperan categoría en la cola humana (node tools/cola.mjs): ${enCola.slice(0, 5).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat} ${f.conf ?? ''}`).join('; ')}`);
   const suma = (arr) => arr.reduce((a, x) => a + Math.abs(x.native || 0), 0);
   for (const side of ['revenue', 'expense']) {
     const delLado = filas.filter((f) => f.destino === side || ((f.destino === 'sin-categoria' || f.destino === 'confianza-baja') && (f.ladoDoc || ladoDeCat(f.cat) || 'revenue') === side));

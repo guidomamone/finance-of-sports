@@ -96,6 +96,14 @@ export function textoPagina(c) {
   return `Abrí el PDF en la página ${c.pagina} del visor (${n ? `la hoja tiene impreso "${n}" al pie` : 'no encontré número impreso al pie'}).`;
 }
 
+// El caso y su respuesta (la última), por la misma clave que agregarCaso: lo usa la etapa que necesita lo que el caso PROPONÍA (cargar.mjs:
+// la categoría propuesta de una fila, para aplicarla si Guido contestó "aceptar").
+export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
+  const id = createHash('sha1').update(`${pdf}|${etapa}|${motivo}|${detalle}`).digest('hex').slice(0, 7);
+  const { casos, resp } = leer();
+  return { caso: casos.get(id) || null, resp: resp.get(id) || null };
+}
+
 export function pendientes() { const { casos, resp } = leer(); return [...casos.values()].filter((c) => !resp.has(c.id)); }
 // OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
 // ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la
@@ -131,7 +139,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     for (const c of cs) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : ''}`);
-      console.log(`      ${c.motivo.startsWith('duda-de-') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
+      console.log(`      ${(c.motivo.startsWith('duda-de-') || c.motivo === 'categoria') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);

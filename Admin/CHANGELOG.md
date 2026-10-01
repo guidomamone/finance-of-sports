@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 331 — Categoría dudosa a la cola en la etapa 8; UC 2025 da "CARGA" (2026-10-01)
+
+- `cargar.mjs`: una fila con categoría menor a 0,80 va a la cola como pregunta de sí o no, cuenta en las sumas con la categoría propuesta y el documento frena con "N filas esperan categoría" (antes quedaba afuera y frenaba con un "no cierra" engañoso). La respuesta de Guido gana sobre cualquier categoría de esa fila y se guarda en `Admin/categorias-aprendidas.jsonl` con confianza 1 (precedente del club). `cola.mjs`: `casoYRespuesta()`.
+- UC 2025: con las 3 respuestas de Guido (Transporte, Arriendo de Bienes, Provisión No Operacionales -> gastos de administración), la propuesta de carga da CARGA: ingresos 25.850.434, gastos 25.665.995, resultado −729.845 (igual al impreso), tipo de cambio 907,13 del documento. Primer documento del proceso nuevo que llega a "carga". No se escribió el sitio.
+
 ## Versión 330 — La etapa 8 imprime un resumen; UC 2025 espera la Nota 20 del club (2026-10-01)
 
 - `cargar.mjs --lista`: imprime siempre el resumen por documento (carga o frena, motivos, avisos) y deja la propuesta completa en `Generados/.../<doc>.carga.json` (sufijo nuevo en `rutas.mjs`). Antes, un lote de un documento imprimía ~400 líneas de JSON.
