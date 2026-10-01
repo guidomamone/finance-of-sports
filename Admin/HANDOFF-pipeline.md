@@ -66,7 +66,7 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - **Los comandos que gastan API los corre Guido** en su terminal, con `caffeinate -i`. La sesión mira los resultados en `Generados/` y `Admin/`.
 - **Ejemplos concretos:** club, año, fila, importe, antes y después. Mirar el caso antes de afirmar una causa. Explicar las siglas.
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
-- **Cola humana:** decirle exactamente qué abrir: "abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si...".
+- **Cola humana:** preguntas concretas de sí o no, nunca exploratorias. Decirle exactamente qué abrir: "abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si...".
 - **Arreglar en los scripts, nunca a mano.**
 - **Git:** rama `inventario-transcripciones`. No cambiar de rama, no mergear a `main`, no hacer push (cada push a `main` es un deploy; lo hace
   Guido). Commitear el código separado de los logs de los lotes. Una entrada en el CHANGELOG por cada cambio real.
@@ -214,7 +214,7 @@ Mitigaciones:
 ### Cola humana
 
 - Archivo: `Admin/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
-- Cada caso dice qué mirar, la página del visor y la impresa, las líneas del .md y la propuesta del sistema.
+- Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
 - La próxima corrida toma la respuesta.
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
