@@ -36,3 +36,5 @@
   A.N.F.P.", y qué compone "Gastos de Operación" (Nota 20), que no tiene desglose disponible en el
   documento.
 
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2025 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2025.pdf` (sourceId `catolica-cl-estados-financieros-2025`).
