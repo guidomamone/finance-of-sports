@@ -36,7 +36,12 @@ const ROOT = resolve(import.meta.dirname, '..');
 export const ARCHIVO = resolve(ROOT, 'Admin', 'categorias-aprendidas.jsonl');
 export const MIN_REGISTRO = 0.8;
 export const MIN_PRECEDENTE = 0.9;
-const clave = (club, lado, label) => `${club}|${lado}|${normalizar(label)}`;
+// EL RENGLÓN QUE DESGLOSA (padre, Versión 343: escalón "precedente con contexto" de la etapa 7, diseño aprobado por Guido). La misma etiqueta
+// puede ser cosas distintas según dónde aparece ("Remuneración" dentro de gastos de administración = sueldos administrativos; "Remuneraciones"
+// dentro del costo de ventas = sueldos del plantel, UC). Lo aprendido guarda el renglón del estado que su fila desglosa ('estado' si es un
+// renglón del estado); la clave lo incluye, así dos respuestas de la misma etiqueta con padres distintos no se pisan.
+export const padreDe = (section) => { const m = String(section || '').match(/desglosa "([^"]+)"/); return m ? m[1] : section ? 'estado' : null; };
+const clave = (club, lado, label, padre = null) => `${club}|${lado}|${normalizar(label)}${padre ? `|${normalizar(padre)}` : ''}`;
 // EL CLUB SE RECALCULA DESDE LA CARPETA DEL DOCUMENTO al leer, no se confía en el guardado (BUG REAL al sembrar, 2026-09-30): respuestas de
 // Claude de antes de la Versión 309 traían el club EQUIVOCADO (el Athletic Club brasileño figuraba como 'athleticclub', que es el Athletic de
 // Bilbao), y un club nuevo tiene un id PROVISORIO (el slug de su carpeta, 'vitoria-guimaraes') distinto del que recibe al darse de alta
@@ -54,7 +59,7 @@ export function registrarAprendidas({ club, year, md, modelo, rubros }) {
   const lineas = [];
   for (const r of rubros || []) {
     if (r.escalon !== 2 || r.desdeCache || !r.categoria || r.categoria === 'no_es_rubro' || !(r.confianza >= MIN_REGISTRO) || !r.lado) continue;
-    lineas.push(JSON.stringify({ ts: new Date().toISOString(), club, year: year != null ? String(year) : null, lado: r.lado, label: r.label, glosa: r.glosa || null, categoria: r.categoria, confianza: r.confianza, motivo: r.motivo || null, jevDecia: r.jev || null, jevConf: r.jevConf ?? null, modelo: modelo || null, md }));
+    lineas.push(JSON.stringify({ ts: new Date().toISOString(), club, year: year != null ? String(year) : null, lado: r.lado, label: r.label, padre: padreDe(r.section), glosa: r.glosa || null, categoria: r.categoria, confianza: r.confianza, motivo: r.motivo || null, jevDecia: r.jev || null, jevConf: r.jevConf ?? null, modelo: modelo || null, md }));
   }
   if (lineas.length) appendFileSync(ARCHIVO, lineas.join('\n') + '\n');
   return lineas.length;
@@ -70,12 +75,12 @@ export function lineasAprendidas({ produccion = [], minConf = MIN_REGISTRO } = {
     if (!l.trim()) continue;
     let x; try { x = JSON.parse(l); } catch { continue; }
     x.club = clubDe(x);
-    ultima.set(clave(x.club, x.lado, x.label), x);
+    ultima.set(clave(x.club, x.lado, x.label, x.padre), x);
   }
   const out = [];
   for (const [k, x] of ultima) {
-    if (enProd.has(k) || !(x.confianza >= minConf)) continue;
-    out.push({ club: x.club, year: x.year || 'aprendido', side: x.lado, label: x.label, cat: x.categoria, fuente: 'claude-api', conf: x.confianza });
+    if (enProd.has(clave(x.club, x.lado, x.label)) || !(x.confianza >= minConf)) continue;
+    out.push({ club: x.club, year: x.year || 'aprendido', side: x.lado, label: x.label, padre: x.padre || null, cat: x.categoria, fuente: x.modelo === 'guido' ? 'guido' : 'claude-api', conf: x.confianza });
   }
   return out;
 }

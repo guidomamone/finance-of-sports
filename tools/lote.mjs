@@ -28,7 +28,7 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, copyFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
@@ -70,18 +70,50 @@ const node = (tool, argv, { silencioso = false } = {}) => {
   return r;
 };
 
-let usd = 0; const estado = {};
+let usd = 0; const estado = {}; const aRetranscribir = [];
+// Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
+const paginasEnImagen = (pdf) => {
+  const n = Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0); const out = [];
+  for (let i = 3; i < n; i++) { const t = spawnSync('pdftotext', ['-f', String(i), '-l', String(i), resolve(ROOT, pdf), '-'], { encoding: 'utf8' }).stdout || ''; if (t.replace(/\s/g, '').length < 200) out.push(i); }
+  return out;
+};
 console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VERDAD' : 'ENSAYO, sin API'}) ===`);
 for (const pdf of docs) {
   const e = registro.find((x) => x.pdf === pdf);
   if (!e?.md) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
   const reintento = REINTENTAR ? verifDe(e)?.reintentar || null : null;
-  if (REINTENTAR && !reintento) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
+  const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)
+  if (REINTENTAR && !reintento && !sinEstadoAntes) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
   const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento, reintento });
   if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
-  if (L.datos.sin_estado) { estado[pdf] = 'sin estado de resultados (queda como fuente)'; continue; }
+  if (L.datos.sin_estado) {
+    // ETAPA 2, ESCALÓN 1 (Versión 343, escalera aprobada por Guido): "no hay estado de resultados" puede ser culpa de la TRANSCRIPCIÓN. Caso
+    // real, UC 2015: PDF híbrido, las páginas 4-9 (los estados) son imágenes; la transcripción vieja salió del texto propio del PDF y no las
+    // tiene. Si la transcripción no la hizo Mistral y el PDF tiene páginas interiores casi sin texto, se marca para re-transcribir con Mistral
+    // (que lee las imágenes); con --reintentar se hace y se vuelve a localizar. Si no, queda como fuente (como siempre).
+    const enImagen = paginasEnImagen(pdf);
+    const candidato = !String(e.motor || '').includes('mistral') && enImagen.length >= 2;
+    if (candidato && REINTENTAR && EJECUTAR && !e.retranscritoPorLote) {
+      const mdAbs = resolve(ROOT, e.md); copyFileSync(mdAbs, resolve(ROOT, derivado(e.md, `.previo-${new Date().toISOString().slice(0, 10)}.md`)));
+      console.log(`  ${pdf}: re-transcribiendo con Mistral (páginas en imagen: ${enImagen.join(', ')})...`);
+      const r = node('tools/mistral-ocr-transcribe.mjs', [pdf]);
+      if (r.status !== 0) { estado[pdf] = 'escalón 1 de la etapa 2: Mistral falló'; continue; }
+      node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
+      const L2 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
+      if (L2.error || L2.datos?.sin_estado) { estado[pdf] = 'sin estado de resultados aun re-transcripto (queda como fuente)'; continue; }
+      const V2 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V2.costo || 0;
+      const X2 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X2.costo || 0;
+      if (X2.error) { estado[pdf] = `extraer: ${X2.error}`; continue; }
+      estado[pdf] = 'extraído (re-transcripto con Mistral)'; console.log(`  ${pdf}: re-transcripto y extraído · ${X2.datos.filas.length} filas`);
+      continue;
+    }
+    if (candidato) aRetranscribir.push({ pdf, paginas: enImagen });
+    estado[pdf] = candidato ? `sin estado en la transcripción; ${enImagen.length} páginas en imagen: re-transcribir (--reintentar)` : 'sin estado de resultados (queda como fuente)';
+    console.log(`  ${pdf}: ${estado[pdf]}${candidato && REINTENTAR && !EJECUTAR ? ` · Mistral ~US$ ${(0.004 * Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0)).toFixed(2)} + localizar y extraer ~US$ 0,15` : ''}`);
+    continue;
+  }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
   const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento }); usd += V.costo || V.usd || 0;
@@ -117,6 +149,11 @@ if (conRubros.length) {
 console.log('\n=== RESUMEN DEL LOTE ===');
 for (const pdf of docs) console.log(`  ${String(estado[pdf] || '?').padEnd(42)} ${pdf}`);
 const cola = pendientes().filter((c) => docs.includes(c.pdf));
+if (aRetranscribir.length) {
+  console.log(`\nTRANSCRIPCIONES SIN LAS PÁGINAS EN IMAGEN (etapa 2, escalón 1):`);
+  for (const x of aRetranscribir) console.log(`  ${x.pdf.split('/').slice(2).join('/')}: páginas ${x.paginas.join(', ')}`);
+  console.log(`  Re-transcribir con Mistral y volver a localizar (~US$ 0,004 por página + localizar y extraer): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
+}
 // Camino de error: qué documentos quedaron con desgloses que no suman y todavía no se reintentaron.
 const aReintentar = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); return e?.md && verifDe(e)?.reintentar; });
 if (aReintentar.length) {

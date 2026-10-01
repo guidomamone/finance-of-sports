@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 343 — Escaleras de la etapa 2 (re-transcribir) y de la 7 (precedente con contexto); dibujos en el HANDOFF (2026-10-01)
+
+- `lote.mjs`: si localizar dice "no hay estado de resultados", la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen, se marca para re-transcribir; con `--reintentar` re-transcribe con Mistral (guarda la anterior en Generados/) y vuelve a localizar y extraer. Caso: UC 2015 (páginas 4-9 en imagen).
+- `categorizar-claude.mjs` / `memoria-categorias.mjs` / `cargar.mjs`: lo aprendido guarda el renglón que desglosa su fila (`padre`); el precedente prueba primero misma etiqueta y mismo renglón. Probado con "Remuneraciones" bajo "Costo de ventas" (sueldos del plantel) y bajo "Gastos de Administración" (administración).
+- HANDOFF: el dibujo de la escalera de cada etapa (2, 3, 4, 6, 7, 8).
+
 ## Versión 342 — Etapa 6: escalera de lecturas; fecha de cierre deducida de los vecinos (2026-10-01)
 
 - `verificar.mjs`: si la lectura base no cierra con un número impreso, prueba en orden: (1) "resultado antes de impuestos" si no hay resultado final, (2) el total impreso puede ser un renglón, (3) renglones sin lado según su signo. Acumulativas; gana la primera que cierra y queda escrita. Si el documento no tiene ningún número impreso para cerrar, es un fallo (antes pasaba como OK). Prueba gratis sobre UC 2010-2025: 2010-2014 cierran con la lectura 3 ("Otras ganancias (pérdidas)" quedaba afuera); los 8 años que ya cerraban siguen con la lectura 0 y las mismas líneas.

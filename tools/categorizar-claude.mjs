@@ -83,7 +83,7 @@ import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, m
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
-import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE } from './memoria-categorias.mjs';
+import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE, padreDe } from './memoria-categorias.mjs';
 import { mismaFamilia } from './vocabulario.mjs';
 import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas (Versión 321) // familia de etiquetas del precedente (Versión 321)
 import vm from 'node:vm';
@@ -167,10 +167,14 @@ export function precedente(lines, club, side, label, { excludeYear = null } = {}
 //   - lado DESCONOCIDO: antes no había precedente (la fila iba entera a Jev/Claude). Ahora: exacto si todas las coincidencias del club son de UN
 //     solo lado (4.732 líneas, 99,7%), y si no, familia SIN tolerar el paréntesis final (60 más, 100%). Con la tolerancia bajaba a 91,9%.
 // Siempre del MISMO club y con UNA sola categoría entre todas las coincidencias: si el club la cargó distinto en años distintos, no hay precedente.
-export function precedenteFamilia(lines, club, side, label, { excludeYear = null } = {}) {
+// ESCALERA DE LA ETAPA 7 (Versión 343): precedente exacto CON CONTEXTO (misma etiqueta y mismo renglón que desglosa) -> exacto -> familia ->
+// Jev >= 0,90 -> Claude >= 0,80 -> cola. Si la misma etiqueta tiene categorías distintas en el club (sin contexto que las separe), `unico`
+// devuelve null y se baja al escalón siguiente: el precedente nunca elige entre dos respuestas distintas.
+export function precedenteFamilia(lines, club, side, label, { excludeYear = null, padre = null } = {}) {
   const delClub = lines.filter((l) => l.club === club && l.year !== excludeYear && (!side || l.side === side));
   const unico = (arr) => { const cats = new Set(arr.map((l) => l.cat)); const lados = new Set(arr.map((l) => l.side)); return cats.size === 1 && lados.size === 1 ? [...cats][0] : null; };
   const nl = norm(label);
+  if (padre) { const ctx = unico(delClub.filter((l) => l.padre && norm(l.label) === nl && norm(l.padre) === norm(padre))); if (ctx) return { cat: ctx, via: 'exacto-con-contexto' }; }
   const ex = unico(delClub.filter((l) => norm(l.label) === nl));
   if (ex) return { cat: ex, via: side ? 'exacto' : 'exacto-sin-lado' };
   const fam = unico(delClub.filter((l) => mismaFamilia(l.label, label, { parentesis: Boolean(side) })));
@@ -518,7 +522,9 @@ async function listos(opt) {
       const ey = { excludeYear: rj.year != null ? String(rj.year) : null };
       // Versión 321: con familia de etiquetas y también para filas sin lado (precedenteFamilia(), arriba).
       const precProd = precedenteFamilia(prod, rj.club, r.lado || null, r.label, ey);
-      const prec = precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, ey);
+      // El escalón con contexto va primero: una respuesta de la misma etiqueta Y del mismo renglón que desglosa gana sobre el precedente sin contexto.
+      const conCtx = precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, { ...ey, padre: padreDe(r.section) });
+      const prec = conCtx?.via === 'exacto-con-contexto' ? conCtx : (precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, ey));
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
       const guardada = opt.sinCache ? null : cacheClaude.get(rj.club, r.lado, r.label);
       if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });
