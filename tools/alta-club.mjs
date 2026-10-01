@@ -641,6 +641,38 @@ function fxDeclarado(md, moneda, mercado) {
   return { grupos, lineasConMencion };
 }
 
+// La fecha de la COLUMNA en la que está la cotización `item` (de fxDeclarado), o null. Estricto a propósito: una versión anterior que
+// aceptaba años sueltos y frases se equivocó en 4 de 17 documentos (Fluminense 2022, Argentinos 2019, Racing 2012, San Lorenzo 2015).
+//   - la línea de la cotización tiene que ser una FILA DE TABLA: 2+ números con decimales separados por 2+ espacios o por "|" (no una
+//     frase como "fue de $18.0012 y $20.7862 al 31 de diciembre de 2025 y 2024");
+//   - hasta 8 líneas arriba, la primera línea con 2+ FECHAS COMPLETAS (día, mes y año: 31-12-2025, 31/12/2025, 2025-12-31, "31 de diciembre
+//     de 2025") es el encabezado; tiene que tener exactamente tantas fechas como números con decimales tiene la fila, y no repetir fechas;
+//   - entonces la k-ésima fecha es la de la k-ésima columna.
+const MESES_FX = { enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12,
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+function fechasDe(linea) {
+  const out = []; const t = norm(linea);
+  for (const m of t.matchAll(/\b(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})\b|\b(\d{4})-(\d{2})-(\d{2})\b|\b(\d{1,2}) (?:de )?([a-z]+),? (?:de |del )?(\d{4})\b/g)) {
+    if (m[3]) out.push(`${m[3]}-${String(m[2]).padStart(2, '0')}-${String(m[1]).padStart(2, '0')}`);
+    else if (m[4]) out.push(`${m[4]}-${m[5]}-${m[6]}`);
+    else if (MESES_FX[m[8]]) out.push(`${m[9]}-${String(MESES_FX[m[8]]).padStart(2, '0')}-${String(m[7]).padStart(2, '0')}`);
+  }
+  return out;
+}
+function fechaDeColumna(md, item) {
+  const L = md.split('\n'); const i = item.linea - 1; const fila = L[i] || '';
+  const nums = numerosDe(fila).filter(({ raw }) => /[.,]\d{1,4}$/.test(raw));
+  const enColumnas = fila.includes('|') || nums.every(({ raw }) => new RegExp(`(\\s{2,}|^)${raw.replace(/[.]/g, '\\.')}(\\s{2,}|$)`).test(fila));
+  if (nums.length < 2 || !enColumnas) return null;
+  const k = nums.findIndex(({ raw }) => raw === item.raw);
+  if (k < 0) return null;
+  for (let j = i - 1; j >= Math.max(0, i - 8); j--) {
+    const f = fechasDe(L[j]);
+    if (f.length >= 2) return f.length === nums.length && new Set(f).size === f.length ? f[k] : null;
+  }
+  return null;
+}
+
 // Series locales de tools/fx-reference/ (las mismas que lee tools/lookup-fx-close.js).
 const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json' };
 const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda) del Banco Central do Brasil', COP: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)',
@@ -1040,10 +1072,18 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   if (dec.grupos && dec.grupos.length) {
     const grupos = dec.grupos;
     const deCierre = grupos.filter((g) => g.items.some((i) => i.cierre));
-    const elegido = grupos.length === 1 ? grupos[0] : (deCierre.length === 1 ? deCierre[0] : null);
+    // VARIOS VALORES EN UNA TABLA (decisión de Guido, 2026-10-01): gana la columna con la fecha MÁS NUEVA. Caso real, UC 2025, línea 797:
+    // "Dólar Estadounidense 907,13 996,48" debajo de "Conversiones a pesos chilenos 31-12-2025 31-12-2024": gana 907,13. Solo se usa si hay
+    // más de un valor (con uno solo no cambia nada) y solo si la fila y el encabezado se corresponden uno a uno (ver fechaDeColumna); si no,
+    // sigue como antes y termina en la pregunta (cola). Ver la medición en Admin/CHANGELOG.md, Versión 328.
+    const conFecha = grupos.length > 1 ? grupos.flatMap((g) => g.items.map((i) => ({ g, f: fechaDeColumna(md, i) }))).filter((x) => x.f) : [];
+    const fechas = [...new Set(conFecha.map((x) => x.f))].sort();
+    const masNueva = fechas.length >= 2 ? conFecha.filter((x) => x.f === fechas[fechas.length - 1]) : [];
+    const porFecha = masNueva.length && new Set(masNueva.map((x) => x.g)).size === 1 ? masNueva[0] : null;
+    const elegido = grupos.length === 1 ? grupos[0] : porFecha ? porFecha.g : (deCierre.length === 1 ? deCierre[0] : null);
     const detalle = grupos.map((g) => `${g.valor} (línea ${g.items[0].linea}: "${g.items[0].texto}")`).join(' | ');
     if (elegido && !MONEDAS_A_LA_PAR.has(moneda)) {
-      out.push(campo('fx', elegido.valor, `declarado por el documento, línea ${elegido.items[0].linea}: "${elegido.items[0].texto}"${grupos.length > 1 ? ` (elegido entre ${grupos.length} valores por ser el de cierre)` : ''}`, 'ok', { fxSource: 'document_close', nota: mercado ? `mercado ese día: ${mercado}` : undefined }));
+      out.push(campo('fx', elegido.valor, `declarado por el documento, línea ${elegido.items[0].linea}: "${elegido.items[0].texto}"${grupos.length > 1 ? ` (elegido entre ${grupos.length} valores ${porFecha ? `por ser el de la fecha más nueva de la tabla, ${porFecha.f}` : 'por ser el de cierre'})` : ''}`, 'ok', { fxSource: 'document_close', nota: mercado ? `mercado ese día: ${mercado}` : undefined }));
     } else {
       out.push(campo('fx', grupos.map((g) => g.valor), `el documento declara ${grupos.length === 1 ? 'un tipo de cambio' : grupos.length + ' valores de tipo de cambio'} a USD: ${detalle}`, 'pregunta', {
         pregunta: MONEDAS_A_LA_PAR.has(moneda)

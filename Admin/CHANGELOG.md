@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 328 — Tipo de cambio: con varios valores en una tabla, gana la fecha más nueva (2026-10-01)
+
+- `alta-club.mjs`: si el documento declara más de un tipo de cambio y están en una fila de tabla cuyo encabezado tiene una fecha completa por columna, gana la columna con la fecha más nueva (decisión de Guido). Frases, años sueltos o filas que no se corresponden con el encabezado siguen yendo a la pregunta (cola).
+- Medido sobre los 3.358 documentos: cambia en 11 (UC 2016-2025 y Palestino 2018, verificados contra el .md); Fluminense 2022, Argentinos 2019, Racing 2012, San Lorenzo 2015, Club América 2025, Atlético Nacional 2025 y Rubin Kazan 2025 siguen en la cola.
+- Reglas confirmadas por Guido: gana el tipo de cambio que declara el documento; si no declara, la serie oficial de `tools/fx-reference/` (nunca una cotización dada por Claude).
+
 ## Versión 327 — Primer documento por el proceso nuevo (UC 2025); cierre de notas por estructura; HANDOFF corto (2026-10-01)
 
 - Primera corrida real del proceso nuevo, un solo PDF: Universidad Católica (Cruzados) 2025 (`Admin/lote-02.txt`, US$ 0,24). El resultado cierra y la columna 2024 coincide con el sitio; frenó en la carga por la cola y por dos tipos de cambio declarados.
