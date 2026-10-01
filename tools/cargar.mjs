@@ -296,7 +296,10 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     // Mismo formato que seleccionarFilas(): {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
     // el paso 5 de abajo); financiero e impuesto con su signo impreso y su destino ya decidido por extraer.mjs (no por palabras).
     const raw = [
-      ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})` })),
+      // signoFijo (Versión 338): el signo que ya decidió verificar.mjs (positivo = suma a su lado; negativo = lo reduce, como "Feriado Legal
+      // −15.597" de UC 2020, una reversión de la provisión de vacaciones dentro de los gastos de administración). El paso 5 lo usa tal cual en
+      // vez de adivinarlo por tabla: hasta la 337 se perdía y la fila quedaba sumando gasto (UC 2020 frenaba con 31.194 de diferencia).
+      ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})` })),
       ...VV.financiero.map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'netInterest' })),
       ...VV.impuesto.map((l) => ({ label: l.etiqueta, page: null, section: 'impuesto', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'tax' })),
     ];
@@ -362,7 +365,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const aprendidasYa = existsSync(ARCHIVO_APRENDIDAS) ? readFileSync(ARCHIVO_APRENDIDAS, 'utf8') : '';
   const enCola = [];
   const filas = raw.map((r) => {
-    const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...catDe(r.label, r.tside) };
+    const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside) };
     const rg = respuestaCat(r.label);
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
@@ -422,7 +425,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // Un gasto suelto (una sola fila de gasto en su tabla) no alcanza para decidir: toma lo que diga el resto del documento.
   const expDoc = exp.length ? exp.filter((f) => f.native < 0).length >= exp.length / 2 : true;
   for (const k of conSigno.keys()) if (exp.filter((f) => tablaDe(f) === k).length === 1) conSigno.set(k, expDoc);
-  for (const f of rev) f.amountNative = r6(revInv.get(tablaDe(f)) ? -f.native : f.native);
+  for (const f of rev) f.amountNative = r6(f.signoFijo !== undefined ? f.signoFijo : revInv.get(tablaDe(f)) ? -f.native : f.native);
   const gastosConSigno = expDoc;
   P.signos = { porTabla: Object.fromEntries([...conSigno].map(([k, v]) => [k, v ? 'gastos con signo' : 'gastos sin signo (se invierten)'])) };
   const metaFilas = filas.filter((f) => f.destino === 'netInterest' || f.destino === 'tax');
@@ -434,6 +437,8 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // Y dos para el resultado financiero y el impuesto: como sus gastos vecinos, o por las palabras de la etiqueta (gasto/pérdida -> negativo).
   const signoPorPalabras = (f) => (GASTOS_RE.test(norm(f.label)) || /aufwend|expense|cost|charge|gasto|despesa|omkostning|kostnad|udgift|verlust|loss|perdida|negativ/.test(norm(f.label)) || f.destino === 'tax' ? -Math.abs(f.native) : Math.abs(f.native));
   const lecturasGasto = [
+    // Con --desde-verificacion, cada fila trae el signo que verificó verificar.mjs: un gasto es −M (M negativo = reduce el gasto).
+    ...(DESDE_VERIFICACION ? [{ nombre: 'signos de la verificación', v: (f) => (f.signoFijo !== undefined ? -f.signoFijo : (conSigno.get(tablaDe(f)) ? f.native : -f.native)) }] : []),
     { nombre: 'gastos por tabla', v: (f) => (conSigno.get(tablaDe(f)) ? f.native : -f.native) },
     { nombre: 'gastos todos negativos', v: (f) => -Math.abs(f.native) },
   ];

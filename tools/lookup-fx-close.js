@@ -50,6 +50,9 @@ const CURRENCIES = {
   UAH: { file: 'uah-usd.json', fuente: 'Tipo oficial del Banco Nacional de Ucrania' },
   CLP: { file: 'clp-usd.json', fuente: 'Dólar observado (Banco Central de Chile, publicado por el SII)' },
   KRW: { file: 'krw-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  EUR: { file: 'eur-usd.json', fuente: 'Tipo de referencia del Banco Central Europeo' },
+  DKK: { file: 'dkk-usd.json', fuente: 'Tipo oficial de Danmarks Nationalbank' },
+  GBP: { file: 'gbp-usd.json', fuente: 'Tipo spot del Bank of England' },
 };
 
 function logMiss(reason, currency, date) {

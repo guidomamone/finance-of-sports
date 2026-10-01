@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 338 — Series oficiales de EUR, DKK y GBP; la carga usa el signo verificado (2026-10-01)
+
+- `fetch-fx-reference.mjs`: EUR (BCE, tipo de referencia diario, invertido), DKK (Danmarks Nationalbank, Statbank DNVALD, por 100) y GBP (Bank of England, serie XUDLUSS, invertida). Banco central de cada moneda en vez de la Reserva Federal (H.10 se aleja hasta 0,4-0,9% de lo que declaran los documentos). EUR coincide exacto con 4 cierres declarados por Hajduk Split (tomando el hábil ANTERIOR, aun cuando el 31/12 tiene dato); DKK y GBP sin tipos declarados en las transcripciones: comparados contra BCE cruzado y FRED. `lookup-fx-close.js` y `alta-club.mjs` las conocen.
+- `cargar.mjs --desde-verificacion`: usa el signo que decidió verificar.mjs (`signoFijo`) en vez de adivinarlo por tabla. UC 2020 frenaba porque "Feriado Legal −15.597" (reversión dentro de gastos de administración) quedaba sumando gasto (31.194 de diferencia). UC 2018-2020: los tres dan CARGA.
+- Lote 05 (UC 2018-2020): la cadena de años vecinos coincide al peso en los tres.
+
 ## Versión 337 — UC 2021 y 2025 cargados con todos los desgloses; perímetro del año más cercano (2026-10-01)
 
 - `cargar.mjs`: el perímetro se hereda del año cargado más cercano (UC: individual hasta 2021, consolidado desde 2022); si no se puede heredar, va a la cola como pregunta de sí o no (antes frenaba sin cola).

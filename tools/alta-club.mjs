@@ -674,10 +674,11 @@ function fechaDeColumna(md, item) {
 }
 
 // Series locales de tools/fx-reference/ (las mismas que lee tools/lookup-fx-close.js).
-const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json', CLP: 'clp-usd.json' };
+const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json', CLP: 'clp-usd.json', EUR: 'eur-usd.json', DKK: 'dkk-usd.json', GBP: 'gbp-usd.json' };
 const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda) del Banco Central do Brasil', COP: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)',
   NOK: 'Tipo medio de referencia de Norges Bank', CZK: 'Fixing del Česká národní banka', CHF: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
-  TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CLP: 'Dólar observado (Banco Central de Chile, publicado por el SII)' };
+  TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CLP: 'Dólar observado (Banco Central de Chile, publicado por el SII)',
+  EUR: 'Tipo de referencia del Banco Central Europeo', DKK: 'Tipo oficial de Danmarks Nationalbank', GBP: 'Tipo spot del Bank of England' };
 function fxDeSerie(moneda, fecha) {
   const f = SERIES_FX[moneda];
   if (!f) return { error: `sin serie local para ${moneda} (hoy solo ${Object.keys(SERIES_FX).join(', ')})` };
