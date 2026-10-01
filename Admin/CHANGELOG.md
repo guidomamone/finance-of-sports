@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 323 — Etapa 6 en el tablero por grupo; test localizar-extraer-verificar con IA (2026-10-01)
+
+- `cargar.mjs --lista` deja su última corrida en `Admin/cargar-ultimo.jsonl`; `estado.mjs` la muestra (6c) por grupo y motivo.
+- Test de la etapa 4 por grupo (266 años cargados, gratis): la selección por palabras reproduce los ingresos de producción (±2%) en 7%, y "solo el estado principal y sus notas" en 11%.
+- `tools/localizar-extraer.mjs` (nuevo, test): Claude localiza las páginas del estado de resultados y sus notas, extrae las filas tal cual y un script verifica (importe literal en la página, escala de la nota deducida del cierre, suma contra producción). 31 años: 5 bien descartados por no tener estado; de 26, ingresos 11 y gastos 18 a ±2% (palabras: 0-1 y 2); 1 de 1.117 importes no literal. US$ 3,52. `rutas.mjs`: sufijos `.localizar.json` / `.extraccion.json`.
+
 ## Versión 322 — Grupos de países en el tablero; escala: el "000" de adentro de un número; etapa 6 sobre 159 años nuevos (2026-09-30)
 
 - `tools/grupos-pais.mjs` (nuevo): 12 grupos por marco contable (ARG, BRA, LAT, IBE, GBR, GER, BNL, NOR, EST, MED, ASI, OTR) y, por grupo y etapa, lo propio que ya se vio en documentos reales (pedido de Guido: partir la lógica por país).

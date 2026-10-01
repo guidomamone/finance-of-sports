@@ -170,14 +170,29 @@ function verificar(ext, pags) {
   const filas = ext.filas || []; const mult = MULT[ext.escala] ?? 1e-6;
   // (a) literal: los dígitos del importe tienen que aparecer, seguidos, en el texto de la página (sin espacios ni separadores)
   const noLiterales = filas.filter((f) => { const d = digitos(f.importe_impreso); const t = digitos(pags.get(f.pagina) || ''); return d.length && !t.includes(d); });
-  // (b) ingresos y gastos: renglones del estado, reemplazando cada renglón que una nota desglosa por las filas de esa nota
-  const detallados = new Set(filas.filter((f) => f.detalla_a).map((f) => f.detalla_a.trim()));
-  const suma = (lado) => filas.filter((f) => f.lado === lado && f.tipo === 'renglon' && !detallados.has(f.etiqueta.trim())).reduce((a, f) => a + Math.abs(parseNumber(f.importe_impreso) ?? 0) * mult, 0);
+  // (b) ingresos y gastos: renglones del estado, reemplazando cada renglón que una nota desglosa por las filas de esa nota.
+  // ESCALA DE LA NOTA DEDUCIDA DEL CIERRE (arreglo tras la primera medición, 1. FC Köln 2023-24): el esquema pide UNA escala por documento,
+  // pero la nota de "Umsatzerlöse" está en miles (155.315) y el estado en euros con céntimos (155.314.920,05); el modelo lo dijo en
+  // `observaciones` y la suma salió mil veces chica (3,81 en vez de 158,97). Ahora las filas de la nota se escalan con el factor (1, 1.000 o
+  // 1.000.000) que las hace sumar el renglón que desglosan (±0,5%); si ninguno cierra, queda el renglón del estado.
+  const v = (f) => Math.abs(parseNumber(f.importe_impreso) ?? 0);
+  const estado = filas.filter((f) => !f.detalla_a);
+  let reemplazos = 0;
+  const suma = (lado) => {
+    let total = 0;
+    for (const f of estado.filter((x) => x.lado === lado && x.tipo === 'renglon')) {
+      const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim() && h.tipo === 'renglon');
+      const sh = hijas.reduce((a, h) => a + v(h), 0); const objetivo = v(f);
+      const k = hijas.length >= 2 ? [1, 1000, 1e6, 1e-3].find((x) => Math.abs(sh * x - objetivo) <= 0.005 * objetivo) : undefined;
+      if (k !== undefined) { total += sh * k * mult; reemplazos++; } else total += objetivo * mult;
+    }
+    return total;
+  };
   const rev = suma('ingreso'); const exp = suma('gasto');
   // (c) contra los totales que el propio documento imprime
   const imp = (s) => (s ? Math.abs(parseNumber(s) ?? NaN) * mult : null);
   const cierra = (x, t) => (t == null || !isFinite(t) ? null : Math.abs(x - t) <= Math.max(0.01, 0.005 * t));
-  return { rev, exp, noLiterales: noLiterales.length, filas: filas.length, ejemplosNoLiterales: noLiterales.slice(0, 3).map((f) => `p${f.pagina} "${f.etiqueta.slice(0, 40)}" ${f.importe_impreso}`), cierraIngresos: cierra(rev, imp(ext.total_ingresos_impreso)), cierraGastos: cierra(exp, imp(ext.total_gastos_impreso)) };
+  return { rev, exp, reemplazos, noLiterales: noLiterales.length, filas: filas.length, ejemplosNoLiterales: noLiterales.slice(0, 3).map((f) => `p${f.pagina} "${f.etiqueta.slice(0, 40)}" ${f.importe_impreso}`), cierraIngresos: cierra(rev, imp(ext.total_ingresos_impreso)), cierraGastos: cierra(exp, imp(ext.total_gastos_impreso)) };
 }
 
 // ---------------------------------------------------------------- correr

@@ -149,6 +149,24 @@ mejor o igual en TODOS los grupos (ARG 11->15, BRA 1->3, LAT 5->7, IBE 0->2; GER
 Ejemplos: Brentford 2024 ingresos 72,5 contra 197,1; Atlético Mineiro 2023 gastos 2.702 contra 91; Bahia 2025 1.039 contra 545.
 Lectura: las reglas de selección por palabras no alcanzan en ningún grupo; partirlas por país mejora poco. Propuesta en "Qué falta" 0.
 
+### Test localizar-extraer-verificar con IA (2026-10-01, `tools/localizar-extraer.mjs`, US$ 3,52)
+
+31 años YA cargados repartidos por grupo (`Admin/piloto-localizar.txt`). Claude Opus 5.5 esfuerzo bajo: localizar (qué páginas) + extraer
+(filas tal cual). Resultados (`--medir`, gratis):
+- 5 de 31: localizar dijo "no hay estado de resultados" y TENÍA RAZÓN (Ferro: solo memoria; Amazonas: balance; 3 dictámenes colombianos):
+  el registro los marca cargados porque son del mismo club-año, pero producción salió de otro documento.
+- De los 26 restantes: ingresos a ±2% de producción **11 (42%)**, gastos **18 (69%)**. La selección por palabras sobre los MISMOS
+  documentos: 0-1 y 2.
+- Fidelidad: de 1.117 importes extraídos, 1 no está literal en su página.
+- Fallas mirando cada una: Eintracht (la transcripción del estado está incompleta: el modelo lo avisó), Nordsjælland (producción toma
+  "Bruttofortjeneste" como ingreso: convención), Nottingham Forest (producción suma "Profit on disposal of player registrations" a
+  Turnover; la verificación no abre un renglón "total" con su nota), notas en otra escala que el estado (Köln: arreglado deduciendo la
+  escala de la nota por el cierre).
+- Investigación con fuentes (subagente, 2026-10-01): bancos (Moody's CreditLens, nCino, Ocrolus), proveedores de datos (S&P, FactSet,
+  LSEG, Morningstar) y document AI (Azure) clasifican páginas con un modelo antes de extraer, capturan "as reported" y después estandarizan,
+  usan plantillas fijas, tienen revisión humana por confianza y no le piden la aritmética a un LLM (FinVerBench, arXiv 2605.29586).
+  La UEFA no extrae: los clubes cargan sus números en una plantilla.
+
 ## Qué falta (en orden)
 
 0. **PROPUESTA (2026-10-01, a decidir con Guido): cambiar el orden de las etapas 3 y 4 por "localizar, extraer, verificar"**, como hace la
