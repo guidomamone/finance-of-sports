@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 337 — UC 2021 y 2025 cargados con todos los desgloses; perímetro del año más cercano (2026-10-01)
+
+- `cargar.mjs`: el perímetro se hereda del año cargado más cercano (UC: individual hasta 2021, consolidado desde 2022); si no se puede heredar, va a la cola como pregunta de sí o no (antes frenaba sin cola).
+- UC 2025 recargado (se revirtió la carga anterior): costo de ventas abierto por la columna de totales del cuadro por segmento (sueldos del plantel 10.762.861) e "Ingresos Comerciales" por la columna Comerciales (Membresía de Socios 278.185). En el sitio local: sueldos del plantel 11,9 M USD (42% de los ingresos); "Salarios / Ingresos" ya no da 0%.
+- UC 2021 cargado (perímetro individual, como el documento): ingresos 16,8 M USD, resultado −4,2 M, tipo de cambio 844,69 declarado.
+
 ## Versión 336 — Camino de error: reintento cuando un desglose no suma (2026-10-01)
 
 - `verificar.mjs` marca `reintentar` con los desgloses (notas o anidados) de 2+ filas que no suman. `lote.mjs --reintentar` vuelve a localizar SOLO esos documentos con el índice ampliado (`indice-bloques.mjs`, opción `ampliado`: filas que terminan en "-") y a extraer con la lista de lo que no sumó y la regla de la columna de Totales para un renglón del estado. Una vez por documento. El camino limpio no cambia (decisión de Guido: las reglas extra son para cuando hay errores).

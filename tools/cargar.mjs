@@ -194,6 +194,15 @@ function perimetroHeredado(sitio, clubId) {
   const cab = perimetroDeTexto(header);
   return { porAnio, cabecera: cab, unico: vals.size === 1 ? [...vals][0] : null };
 }
+// El perímetro del año YA CARGADO más cercano a `year` (a igual distancia, el posterior: es el formato vigente). Versión 337, diseño aprobado
+// por Guido: un club puede cambiar de perímetro (UC: individual hasta 2021, consolidado desde 2022), así que se hereda del vecino, no de
+// "todos los años iguales" (con 2021 individual cargado, UC 2025 frenaba aunque 2022-2024 eran consolidados).
+function perimetroCercano(her, year) {
+  const ys = Object.keys(her.porAnio).map(Number).filter((y) => y !== Number(year));
+  if (!ys.length || !year) return null;
+  ys.sort((a, b) => Math.abs(a - year) - Math.abs(b - year) || b - a);
+  return { anio: ys[0], perimetro: String(her.porAnio[ys[0]]).replace('?', '') };
+}
 
 // ============================================================================
 // LA PROPUESTA
@@ -253,8 +262,20 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     // Se hereda SOLO el consolidado: si el club siempre se cargó consolidado y el documento trae el consolidado (solo o junto al
     // individual), es el mismo perímetro. Heredar "individual" de un documento que trae los dos no alcanza: la selección de filas no sabe
     // elegir las columnas individuales (Bayern cargaba las dos, ver Admin/tests/test-eleccion-tabla.md).
-    if (her.unico === 'consolidado' && (docTipo === 'consolidado' || docTipo === 'ambos')) { perimetro = 'consolidado'; P.avisos.push(`perímetro heredado: los años ya cargados del club son consolidados (${listaAnios}) y el documento trae el consolidado${docTipo === 'ambos' ? ' (y también el individual: revisar que no se hayan cargado filas de los dos)' : ''}`); }
-    else frena('alta:perimetro', `${perC.pregunta} [documento: ${docTipo}; años cargados del club: ${listaAnios}; cabecera del data file: ${her.cabecera}]`);
+    const cerc = perimetroCercano(her, year);
+    if (cerc?.perimetro === 'consolidado' && (docTipo === 'consolidado' || docTipo === 'ambos')) { perimetro = 'consolidado'; P.avisos.push(`perímetro heredado del año cargado más cercano (${cerc.anio}, consolidado); el documento trae el consolidado${docTipo === 'ambos' ? ' (y también el individual: revisar que no se hayan cargado filas de los dos)' : ''}. Años cargados: ${listaAnios}`); }
+    else {
+      // No se puede heredar: a la cola como pregunta de sí o no (antes frenaba sin pasar por la cola). La respuesta de Guido gana.
+      const prop = cerc?.perimetro && cerc.perimetro !== '' ? cerc.perimetro : 'consolidado';
+      const { caso: cq, resp } = casoYRespuesta(pdf, 'cargar', 'perimetro', String(year));
+      if (resp && cq && (resp.decision === 'aceptar' || (resp.decision === 'corregir' && resp.valor))) { perimetro = resp.decision === 'aceptar' ? cq.perimetroPropuesto : String(resp.valor).trim(); P.avisos.push(`perímetro: ${perimetro} (respuesta de Guido en la cola)`); }
+      else {
+        agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perimetro', detalle: String(year), perimetroPropuesto: prop,
+          que: `¿${year} se carga ${prop.toUpperCase()}${cerc ? `, como ${cerc.anio} (el año cargado más cercano)` : ''}?  (por qué: ${perC.pregunta?.slice(0, 220)} Documento: ${docTipo}; años cargados: ${listaAnios})`,
+          propuesta: `sí (responder aceptar; si no, corregir --valor individual|consolidado)` });
+        frena('perimetro-en-cola', `el perímetro espera respuesta en la cola humana (node tools/cola.mjs); propuesta: ${prop}`);
+      }
+    }
   }
   if (club.fiscalYearStart && alta.ejercicio.cierre) {
     const mm = Number(alta.ejercicio.cierre.slice(5, 7)); const fys = `${String(mm === 12 ? 1 : mm + 1).padStart(2, '0')}-01`;
