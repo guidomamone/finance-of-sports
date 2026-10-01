@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 350 — En la cola, "obsoleto" es un estado y no una respuesta; un caso que vuelve a aparecer se reabre (2026-10-01)
+
+- `cola.mjs`: solo cuentan como respuesta las de Guido (aceptar, corregir, descartar, preguntar-club). "obsoleto" y "reabierto" son estados. `agregarCaso` reabre un caso cerrado como obsoleto que una etapa vuelve a levantar; `pendientes()` y `cola.mjs` lo muestran. Antes: `cargar.mjs` frenaba por un caso que la cola no mostraba (UC 2013, "Otras ganancias (pérdidas)", regresión de la Versión 348) y `verificar.mjs` daba por contestado un chequeo fallado que había vuelto. `cargar.mjs`: sin la excepción por 'obsoleto' (ya no hace falta).
+- Medido en los 17 documentos con verificación, dos pasadas con el código viejo y dos con el nuevo desde la misma cola: `verificar` idéntico; `cargar` solo cambia UC 2013 (FRENA → CARGA); la cola no cambia; pasada 1 = pasada 2. Prueba aparte sobre una cola de prueba: cerrar, no volver a cerrar, reabrir.
+
 ## Versión 349 — El proceso nuevo le avisa al registro cuando un documento queda listo para categorizar (2026-10-01)
 
 - `verificar.mjs` (`avisarRegistro`): al terminar ok desde el lote, si el `.md` no está cargado ni ya es `listo-para-jev` para su huella, y `validacion.json` es posterior al `.md` y no tiene números sin confirmar, agrega al historial (`transcripciones-verificaciones.jsonl`) la misma línea que escribe `pipeline.mjs`, con método "validar-bloques (proceso nuevo)" y el detalle "solo los bloques que se cargan; el resto del .md no se validó". Caso: UC 2015, re-transcripto, quedaba "sin-verificar" y la etapa 7 no lo categorizaba. Medido en los 16 años de UC: una sola línea nueva (2015); en el registro solo cambia 2015 (sin-verificar → listo, listo-para-jev).

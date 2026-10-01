@@ -368,7 +368,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', norm(label), (c) => dirname(c.pdf) === dirname(pdf)); if (otra) ({ caso, resp } = otra); }
     // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
-    if (resp && caso && caso.pdf !== pdf && resp.decision !== 'obsoleto') cerrarResueltoPorClub(pdf, 'cargar', 'categoria', norm(label), caso);
+    if (resp && caso && caso.pdf !== pdf) cerrarResueltoPorClub(pdf, 'cargar', 'categoria', norm(label), caso);
     if (!resp || !caso) return null;
     if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: resp.nota || null };
     if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: resp.nota || null };

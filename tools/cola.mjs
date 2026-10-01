@@ -44,15 +44,24 @@ const ROOT = resolve(import.meta.dirname, '..');
 export const ARCHIVO = process.env.COLA_ARCHIVO || resolve(ROOT, 'Admin', 'cola-revision.jsonl');
 const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 
+// RESPUESTAS Y ESTADOS (Versión 350). `resp` tiene SOLO las respuestas de Guido (DECISIONES: aceptar, corregir, descartar,
+// preguntar-club); la última gana. 'obsoleto' (la etapa ya no levanta el caso) y 'reabierto' (la etapa lo volvió a levantar) son ESTADOS, no
+// respuestas: van a `cerrado` (true si el último de los dos es 'obsoleto'). Hasta la Versión 349 'obsoleto' se guardaba como una respuesta
+// más, y un caso cerrado que volvía a aparecer quedaba "contestado" sin que nadie lo contestara: cargar.mjs frenaba por un caso que la cola
+// no mostraba (UC 2013, "Otras ganancias (pérdidas)", ni siquiera buscaba la respuesta de 2014), y verificar.mjs lo daba por respondido y no
+// lo mandaba a la cola (un "no cierra" o un "año vecino distinto" pasaba sin que nadie lo viera).
 function leer() {
-  const casos = new Map(); const resp = new Map();
-  if (!existsSync(ARCHIVO)) return { casos, resp };
+  const casos = new Map(); const resp = new Map(); const cerrado = new Map();
+  if (!existsSync(ARCHIVO)) return { casos, resp, cerrado };
   for (const l of readFileSync(ARCHIVO, 'utf8').split('\n')) {
     if (!l.trim()) continue; let x; try { x = JSON.parse(l); } catch { continue; }
-    if (x.tipo === 'caso') casos.set(x.id, x); else if (x.tipo === 'respuesta') resp.set(x.id, x);
+    if (x.tipo === 'caso') casos.set(x.id, x);
+    else if (x.tipo === 'respuesta' && DECISIONES.includes(x.decision)) resp.set(x.id, x);
+    else if (x.tipo === 'respuesta' && (x.decision === 'obsoleto' || x.decision === 'reabierto')) cerrado.set(x.id, x.decision === 'obsoleto');
   }
-  return { casos, resp };
+  return { casos, resp, cerrado };
 }
+const pendiente = (c, { resp, cerrado }) => !resp.has(c.id) && !cerrado.get(c.id);
 
 // Agrega un caso (si su clave ya existe, devuelve el id existente sin duplicar). `caso`: { pdf, md, etapa, motivo, que, pagina, lineas,
 // propuesta, detalle }. `que` es la frase que lee Guido: qué mirar y por qué (ej. "Mistral leyó 1.284.567 y Gemini 1.234.567 en
@@ -60,8 +69,12 @@ function leer() {
 export function agregarCaso(caso) {
   const clave = `${caso.pdf}|${caso.etapa}|${caso.motivo}|${caso.detalle || ''}`;
   const id = createHash('sha1').update(clave).digest('hex').slice(0, 7);
-  const { casos } = leer();
-  if (casos.has(id)) return id;
+  const { casos, resp, cerrado } = leer();
+  if (casos.has(id)) {
+    // Un caso cerrado como obsoleto que la etapa vuelve a levantar se REABRE (Versión 350): vuelve a la cola, no queda escondido.
+    if (cerrado.get(id) && !resp.has(id)) appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'reabierto', nota: 'la etapa volvió a levantar este caso' }) + '\n');
+    return id;
+  }
   appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, ...caso }) + '\n');
   return id;
 }
@@ -110,18 +123,18 @@ export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
 // distinto (pasó tres veces con "¿se usa el cuadro por segmento para abrir 'Ingresos Comerciales'?" de UC 2018-2025).
 export function respuestaPorDetalle(etapa, motivo, detalle, filtro = () => true) {
   const { casos, resp } = leer(); let mejor = null;
-  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && filtro(c) && resp.has(c.id) && resp.get(c.id).decision !== 'obsoleto') { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
+  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && filtro(c) && resp.has(c.id)) { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
   return mejor;
 }
 
-export function pendientes() { const { casos, resp } = leer(); return [...casos.values()].filter((c) => !resp.has(c.id)); }
+export function pendientes() { const L = leer(); return [...L.casos.values()].filter((c) => pendiente(c, L)); }
 // OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
 // ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la
 // etapa al terminar un documento con las claves que levantó (respondidas o no). No toca casos ya respondidos por Guido.
 export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
-  const { casos, resp } = leer(); const vig = new Set(clavesVigentes); let n = 0;
+  const { casos, resp, cerrado } = leer(); const vig = new Set(clavesVigentes); let n = 0;
   for (const c of casos.values()) {
-    if (c.pdf !== pdf || c.etapa !== etapa || resp.has(c.id) || vig.has(c.clave)) continue;
+    if (c.pdf !== pdf || c.etapa !== etapa || resp.has(c.id) || cerrado.get(c.id) || vig.has(c.clave)) continue;
     appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id: c.id, ts: new Date().toISOString(), decision: 'obsoleto', nota: 'la última corrida de la etapa ya no levanta este caso' }) + '\n'); n++;
   }
   return n;
@@ -133,8 +146,8 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
 // un caso pendiente (nunca uno que Guido contestó) y solo el de esa clave exacta.
 export function cerrarResueltoPorClub(pdf, etapa, motivo, detalle, casoOrigen) {
   const id = createHash('sha1').update(`${pdf}|${etapa}|${motivo}|${detalle}`).digest('hex').slice(0, 7);
-  const { casos, resp } = leer();
-  if (!casos.has(id) || resp.has(id) || !casoOrigen || casoOrigen.id === id) return false;
+  const { casos, resp, cerrado } = leer();
+  if (!casos.has(id) || resp.has(id) || cerrado.get(id) || !casoOrigen || casoOrigen.id === id) return false;
   const anio = (String(casoOrigen.pdf).match(/(\d{4})(?!.*\d{4})/) || [])[1] || '?';
   appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'obsoleto', nota: `resuelto por la respuesta ${casoOrigen.id} (${anio}), que vale para todo el club` }) + '\n');
   return true;
@@ -166,8 +179,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
     process.exit(0);
   }
-  const { casos, resp } = leer();
-  const lista = [...casos.values()].filter((c) => A.includes('--todas') || !resp.has(c.id));
+  const L = leer(); const { casos, resp, cerrado } = L;
+  const lista = [...casos.values()].filter((c) => A.includes('--todas') || pendiente(c, L));
   if (!lista.length) { console.log('La cola está vacía.'); process.exit(0); }
   const porDoc = new Map(); for (const c of lista) { if (!porDoc.has(c.pdf)) porDoc.set(c.pdf, []); porDoc.get(c.pdf).push(c); }
   console.log(`COLA DE REVISIÓN: ${lista.length} caso(s) en ${porDoc.size} documento(s)${A.includes('--todas') ? '' : ' pendientes'}\n`);
@@ -175,7 +188,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`## ${pdf}`);
     for (const c of cs) {
       const r = resp.get(c.id);
-      console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : ''}`);
+      console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : cerrado.get(c.id) ? '   -> CERRADO: obsoleto' : ''}`);
       console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
