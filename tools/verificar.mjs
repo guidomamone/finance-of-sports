@@ -35,7 +35,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
-import { agregarCaso, respuestaDe, cerrarObsoletos } from './cola.mjs';
+import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -75,6 +75,9 @@ const unidad = (txt, mult) => { const d = (String(txt).match(/[.,](\d{1,2})\)?$/
 //   si no, en valor absoluto (notas de gastos con unas filas entre paréntesis y otras no). Hojas en 0 o sin importe ("-") no se cargan.
 // Medición antes de adoptarla (Versión 327, Admin/CHANGELOG.md): las 26 extracciones del test por página + UC 2025.
 // ============================================================================
+// Renglón normalizado para la clave de una duda por tema: minúsculas, sin acentos, sin "(1)" ni números de nota.
+const normalizarRenglon = (r) => String(r || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\(\s*[\d.,]+\s*\)/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
 // La página (marca "--- pág. N ---") en la que cae una línea del .md: para ubicar una duda que cita "L4157".
 function paginaDeLinea(md, linea) {
   try { const L = readFileSync(resolve(ROOT, md), 'utf8').split('\n'); for (let i = Math.min(linea, L.length) - 1; i >= 0; i--) { const m = L[i].match(/^---\s*pág\.\s*(\d+)\s*---/i); if (m) return Number(m[1]); } } catch { /* sin .md */ }
@@ -321,7 +324,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // localizar y extraer escriben cada duda como una pregunta que se contesta sí o no, con su propuesta; la cola muestra eso. Las dudas en
       // formato viejo (sin `pregunta`) se muestran con su texto, como antes.
       const que = d.pregunta ? `${d.pregunta}  (por qué: ${d.texto})` : `La IA de ${origen === 'localizar' ? 'localizar (qué bloques son el estado y sus notas)' : 'extraer (las filas)'} dejó esta duda: ${d.texto}`;
-      caso(`duda-de-${origen}`, (d.pregunta || d.texto).slice(0, 80), que, { pagina, lineas, propuesta: d.propuesta ? `${d.propuesta} (responder aceptar si estás de acuerdo; corregir --valor "${d.propuesta === 'sí' ? 'no' : 'sí'}" si no)` : null });
+      // POR TEMA (Versión 341, diseño aprobado por Guido): si la IA clasificó la duda en un tema de la lista fija (no 'otro'), se reconoce por
+      // club + tema + renglón, no por el texto. Si Guido ya la contestó en CUALQUIER año del club, se aplica sola y no vuelve a la cola.
+      const propuesta = d.propuesta ? `${d.propuesta} (responder aceptar si estás de acuerdo; corregir --valor "${d.propuesta === 'sí' ? 'no' : 'sí'}" si no)` : null;
+      if (d.tema && d.tema !== 'otro') {
+        const club = clubId || pdf.split('/')[2];
+        const det = `${club}|${d.tema}|${normalizarRenglon(d.renglon)}`;
+        const ya = respuestaPorDetalle('verificar', 'duda-tema', det);
+        if (ya) { notas.push(`duda de ${origen} ya contestada para el club (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
+        caso('duda-tema', det, que, { pagina, lineas, propuesta });
+        continue;
+      }
+      caso(`duda-de-${origen}`, (d.pregunta || d.texto).slice(0, 80), que, { pagina, lineas, propuesta });
     }
   }
 

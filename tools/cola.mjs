@@ -105,6 +105,15 @@ export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
   return { caso: casos.get(id) || null, resp: resp.get(id) || null };
 }
 
+// La respuesta a una duda POR TEMA de un club (Versión 341): busca en TODOS los documentos un caso con ese motivo y ese detalle
+// ("club|tema|renglón") que Guido ya contestó. Así una duda contestada para un año del club vale para todos sus años, aunque la IA la redacte
+// distinto (pasó tres veces con "¿se usa el cuadro por segmento para abrir 'Ingresos Comerciales'?" de UC 2018-2025).
+export function respuestaPorDetalle(etapa, motivo, detalle) {
+  const { casos, resp } = leer(); let mejor = null;
+  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && resp.has(c.id) && resp.get(c.id).decision !== 'obsoleto') { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
+  return mejor;
+}
+
 export function pendientes() { const { casos, resp } = leer(); return [...casos.values()].filter((c) => !resp.has(c.id)); }
 // OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
 // ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la
@@ -154,7 +163,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     for (const c of cs) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : ''}`);
-      console.log(`      ${(c.motivo.startsWith('duda-de-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
+      console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);

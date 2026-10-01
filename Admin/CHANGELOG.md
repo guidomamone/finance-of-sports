@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 341 — UC 2018-2020 cargados; dudas reconocidas por club + tema + renglón (2026-10-01)
+
+- UC 2018, 2019 y 2020 escritos (reintento por "cuotas sociales en 0": ahora con socios 98.296 / 202.753 / 99.645 y escuelas de fútbol). UC queda con 2018-2025.
+- `localizar.mjs` / `extraer.mjs`: cada duda trae `tema` (lista fija: usar-cuadro-por-segmento, cuadro-duplicado, cuadro-de-otro-anio, perimetro, escala, columna, fila-ilegible, otro) y `renglon`. `verificar.mjs` reconoce las de tema fijo por club + tema + renglón (`cola.mjs respuestaPorDetalle`): una respuesta de Guido en cualquier año del club se aplica a todos. Motivo: la misma pregunta del cuadro por segmento llegó tres veces redactada distinto. La respuesta ya dada para UC se pasó a la clave nueva.
+
 ## Versión 340 — Reintento por categorías en 0; perfil de clubes (socios, otros deportes) (2026-10-01)
 
 - `cargar.mjs` (etapa 8, con `--desde-verificacion`): marca reintento si salarios del plantel, televisión o estadio dan 0 (siempre), o cuotas sociales / otras secciones deportivas dan 0 y el perfil del club dice que tiene socios / otros deportes. Si el perfil no lo sabe, pregunta de sí o no en la cola y la respuesta se guarda en el perfil. Medido sobre 241 años cargados: con "cualquier categoría en 0" se reintentaría el 94% de los documentos.
