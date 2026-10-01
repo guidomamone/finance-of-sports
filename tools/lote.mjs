@@ -28,7 +28,7 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
@@ -98,10 +98,13 @@ for (const pdf of docs) {
     const enImagen = paginasEnImagen(pdf);
     const candidato = !String(e.motor || '').includes('mistral') && enImagen.length >= 2;
     if (candidato && REINTENTAR && EJECUTAR && !e.retranscritoPorLote) {
-      const mdAbs = resolve(ROOT, e.md); copyFileSync(mdAbs, resolve(ROOT, derivado(e.md, `.previo-${new Date().toISOString().slice(0, 10)}.md`)));
+      // La transcripción vieja se MUEVE a Generados/ (mistral-ocr-transcribe.mjs no pisa un .md existente: "Ya existe el .md -- no lo piso",
+      // UC 2015 en la primera corrida). Si Mistral falla, se restaura.
+      const mdAbs = resolve(ROOT, e.md); const previo = resolve(ROOT, derivado(e.md, `.previo-${new Date().toISOString().slice(0, 10)}.md`));
+      copyFileSync(mdAbs, previo); unlinkSync(mdAbs);
       console.log(`  ${pdf}: re-transcribiendo con Mistral (páginas en imagen: ${enImagen.join(', ')})...`);
       const r = node('tools/mistral-ocr-transcribe.mjs', [pdf]);
-      if (r.status !== 0) { estado[pdf] = 'escalón 1 de la etapa 2: Mistral falló'; continue; }
+      if (r.status !== 0 || !existsSync(mdAbs)) { if (!existsSync(mdAbs)) copyFileSync(previo, mdAbs); estado[pdf] = 'escalón 1 de la etapa 2: Mistral falló (se restauró la transcripción anterior)'; continue; }
       node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
       const L2 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
       if (L2.error || L2.datos?.sin_estado) { estado[pdf] = 'sin estado de resultados aun re-transcripto (queda como fuente)'; continue; }
