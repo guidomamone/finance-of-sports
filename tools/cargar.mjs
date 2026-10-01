@@ -88,7 +88,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, appendFileSync } from 'node:fs';
-import { resolve, relative, join, basename } from 'node:path';
+import { resolve, relative, join, basename, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 
@@ -102,7 +102,7 @@ const { categoriasAlDia } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
-const { agregarCaso, casoYRespuesta } = await import('./cola.mjs');
+const { agregarCaso, casoYRespuesta, respuestaPorDetalle } = await import('./cola.mjs');
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
@@ -310,7 +310,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
       ...VV.impuesto.map((l) => ({ label: l.etiqueta, page: null, section: 'impuesto', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'tax' })),
     ];
     const totalCands = [VV.totales.ingresos ? { label: 'total de ingresos (verificado)', M: VV.totales.ingresos, page: null, how: 'etiqueta' } : null, VV.totales.gastos ? { label: 'total de gastos (verificado)', M: VV.totales.gastos, page: null, how: 'etiqueta' } : null].filter(Boolean);
-    sf = { ok: true, raw, totalCands, docResult: VV.totales.resultadoImpreso, pts: null, extra: { notasUsadas: [] }, refM: null };
+    sf = { ok: true, raw, totalCands, docResult: VV.totales.resultadoParaCargar ?? VV.totales.resultadoImpreso, pts: null, extra: { notasUsadas: [] }, refM: null };
   } else try {
     const briefing = await briefingFor(clubId, year, e.md);
     sf = seleccionarFilas({ briefing, mdText: readFileSync(mdAbs, 'utf8'), clubData: cd, year });
@@ -361,7 +361,10 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   //     descartar -> la fila no se carga), y queda en Admin/categorias-aprendidas.jsonl con confianza 1: los años siguientes del mismo club la
   //     toman como precedente gratis (memoria-categorias.mjs).
   const respuestaCat = (label) => {
-    const { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', norm(label));
+    let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', norm(label));
+    // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
+    // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
+    if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', norm(label), (c) => dirname(c.pdf) === dirname(pdf)); if (otra) ({ caso, resp } = otra); }
     if (!resp || !caso) return null;
     if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: resp.nota || null };
     if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: resp.nota || null };

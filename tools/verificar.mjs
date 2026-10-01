@@ -320,7 +320,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const vecinos = [];
   if (year) for (const [dy, campoMio, campoSuyo] of [[1, 'M', 'A'], [-1, 'A', 'M']]) {
     const carpeta = pdf.split('/').slice(0, 3).join('/');
-    const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && x.md && Number(String(x.periodo?.cierre || '').slice(0, 4)) === year + dy);
+    // el año del otro documento: su fecha de cierre o, si no la tiene, la deducida de sus vecinos (Versión 344: UC 2010 contra 2011)
+    const anioDe = (x) => (x.periodo?.cierre ? Number(x.periodo.cierre.slice(0, 4)) : cierrePorVecinos(x.pdf, registro)?.anio ?? null);
+    const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && x.md && anioDe(x) === year + dy);
     const pF2 = otro ? resolve(ROOT, derivado(otro.md, '.filas.json', { crear: false })) : null;
     if (!pF2 || !existsSync(pF2)) continue;
     const pU2 = resolve(ROOT, derivado(otro.md, '.ubicacion.json', { crear: false }));
@@ -379,7 +381,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const yaReintentado = !!U.indiceAmpliado;
   const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, cola, chequeos, notas,
     reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado,
-    totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), lecturaSignos: lectura },
+    // resultadoParaCargar (Versión 344): si cerró contra "resultado antes de impuestos", el resultado del ejercicio es ese más el impuesto tal
+    // como está impreso (UC 2013: 57.521 + 163.095 = 220.616); cargar.mjs hace su tie-out contra este número.
+    totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), resultadoParaCargar: r6(E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) ? res + conSigno(imp) : res), lecturaSignos: lectura },
     lineas: [...ing, ...gas].map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado' })),
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(f.M), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(f.M), linea: f.linea })) };
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));

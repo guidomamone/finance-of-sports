@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 344 — Arreglos del lote 06: respuesta de categoría por club, resultado derivado, año vecino con fecha deducida, descartados (2026-10-01)
+
+- `cargar.mjs`: una respuesta de categoría vale para todos los documentos del mismo club con la misma etiqueta ("Otras ganancias (pérdidas)" de UC llegaba una vez por año). Tie-out contra `resultadoParaCargar` (si la verificación cerró contra "antes de impuestos", el resultado del ejercicio es ese más el impuesto impreso: UC 2013, 220.616).
+- `verificar.mjs`: el chequeo de año vecino usa la fecha deducida del otro documento (UC 2010 contra 2011: ok; ya no pide "primer año").
+- `Admin/documentos-descartados.txt` (nuevo): lo saltea `lote.mjs`. UC 2009.
+
 ## Versión 343 — Escaleras de la etapa 2 (re-transcribir) y de la 7 (precedente con contexto); dibujos en el HANDOFF (2026-10-01)
 
 - `lote.mjs`: si localizar dice "no hay estado de resultados", la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen, se marca para re-transcribir; con `--reintentar` re-transcribe con Mistral (guarda la anterior en Generados/) y vuelve a localizar y extraer. Caso: UC 2015 (páginas 4-9 en imagen).

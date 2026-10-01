@@ -108,9 +108,9 @@ export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
 // La respuesta a una duda POR TEMA de un club (Versión 341): busca en TODOS los documentos un caso con ese motivo y ese detalle
 // ("club|tema|renglón") que Guido ya contestó. Así una duda contestada para un año del club vale para todos sus años, aunque la IA la redacte
 // distinto (pasó tres veces con "¿se usa el cuadro por segmento para abrir 'Ingresos Comerciales'?" de UC 2018-2025).
-export function respuestaPorDetalle(etapa, motivo, detalle) {
+export function respuestaPorDetalle(etapa, motivo, detalle, filtro = () => true) {
   const { casos, resp } = leer(); let mejor = null;
-  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && resp.has(c.id) && resp.get(c.id).decision !== 'obsoleto') { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
+  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && filtro(c) && resp.has(c.id) && resp.get(c.id).decision !== 'obsoleto') { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }
   return mejor;
 }
 
