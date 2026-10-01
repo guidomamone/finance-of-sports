@@ -17,7 +17,7 @@
 // POR QUÉ (decisión de Guido del 2026-09-30)
 //   Hasta ahora tools/resolver-inventario.mjs mandaba a Claude/Gemini cualquier página que no coincidiera con el texto del PDF, y
 //   en los escaneos, el documento entero a Gemini y las páginas que difieren a Claude — incluidas páginas de prosa. En el HANDOFF
-//   (Admin/HANDOFF-pipeline.md, "Qué falta" 2a y 2b) quedó medido que el chequeo contra el texto del PDF marcaba de más (Alverca:
+//   (Admin/Archive/HANDOFF-pipeline-hasta-2026-10-01.md, "Qué falta" 2a y 2b) quedó medido que el chequeo contra el texto del PDF marcaba de más (Alverca:
 //   ~8 de 17 dudas eran prosa con un "3000" suelto; Rio Ave: 13 de 19 dudas, 1 real) y que la aritmética casi no se usaba. La
 //   regla nueva: la validación paga se hace SOLO sobre páginas con números y SOLO si esta cascada gratis no alcanza.
 //

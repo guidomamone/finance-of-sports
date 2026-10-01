@@ -35,7 +35,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
-import { agregarCaso, respuestaDe } from './cola.mjs';
+import { agregarCaso, respuestaDe, cerrarObsoletos } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -52,6 +52,94 @@ const cerca = (a, b, rel = 0.0005) => Math.abs(a - b) <= Math.max(TOL, rel * Mat
 // Resolución de un importe impreso en millones (para el redondeo): "155.315" en miles -> 0,001.
 const unidad = (txt, mult) => { const d = (String(txt).match(/[.,](\d{1,2})\)?$/) || [])[1]; return mult * (d ? Math.pow(10, -d.length) : 1); };
 
+// ============================================================================
+// cerrarNota(): ¿las filas de una nota desglosan el renglón del estado? Si sí, cuáles son las LÍNEAS FINALES (las hojas) y con qué factor de
+// escala. Reescrita en la Versión 327; hasta la 326 sumaba TODOS los renglones que decían desglosar el renglón y comparaba con 0,5% de
+// tolerancia. Caso real que la rompió, Universidad Católica 2025 (nota 19, págs. 73-74 del visor):
+//   - "Ingresos por Préstamo de Jugadores 29.807" es un renglón de la nota, y en la página siguiente hay OTRO cuadro con el detalle por
+//     jugador (Sebastián Pérez 19.876 + Fernanda Ramírez 9.931 = 29.807). Sumar todo contaba esos 29.807 dos veces.
+//   - "Ingresos Comerciales 7.940.492" viene marcado "subtotal" pero no suma nada: es un renglón suelto sin desglose. Quedaba afuera.
+//   La nota sí cerraba (8 renglones = 17.490.522 "Recaudación y otros", + Comerciales = 25.431.014) y se perdía el desglose entero.
+// LA REGLA NUEVA lee la ESTRUCTURA IMPRESA en vez de sumar todo, en dos pasos generales (ninguno es específico de UC):
+//   1. ÁRBOL. Se recorren las filas en el orden del documento. Un renglón es una hoja. Un subtotal/total "cierra" las filas inmediatamente
+//      anteriores todavía sueltas cuya suma da su importe (la racha más corta, 1 o más) y pasa a ser un nodo con esas hojas adentro. Si no
+//      cierra nada de arriba, queda ABIERTO y cierra las filas que vienen debajo si suman su importe (subtotal impreso arriba de sus
+//      componentes, Levante). Si tampoco, es un renglón suelto que el documento puso en negrita: una hoja ("Ingresos Comerciales").
+//   2. QUÉ NODOS DE ARRIBA SE SUMAN. Quedan unos pocos nodos de primer nivel (en UC: el "Total Ingresos" con sus 9 hojas, y el cuadro de
+//      préstamos de 29.807). Se prueban, en este orden, y gana el primero que da el renglón del estado: (a) todos; (b) sin los que REPITEN un
+//      importe que ya está adentro de otro nodo (un cuadro de detalle de una hoja, como el de préstamos; o la misma nota impresa dos veces,
+//      como las notas 20 y 21 de UC 2025); (c) cada nodo solo.
+//   Tolerancia: media unidad impresa por fila (redondeo; decisión 3 de Guido), no un porcentaje: el 0,5% de antes podía dar por buena una
+//   nota a la que le faltaba un renglón chico. El factor de escala se deduce del cierre (x1, x1.000, x1.000.000: 1. FC Köln tiene la nota
+//   en miles y el estado en euros). Signos: se prueba primero la suma con los signos impresos (un descuento en una nota de ingresos resta);
+//   si no, en valor absoluto (notas de gastos con unas filas entre paréntesis y otras no). Hojas en 0 o sin importe ("-") no se cargan.
+// Medición antes de adoptarla (Versión 327, Admin/CHANGELOG.md): las 26 extracciones del test por página + UC 2025.
+// ============================================================================
+// La página (marca "--- pág. N ---") en la que cae una línea del .md: para ubicar una duda que cita "L4157".
+function paginaDeLinea(md, linea) {
+  try { const L = readFileSync(resolve(ROOT, md), 'utf8').split('\n'); for (let i = Math.min(linea, L.length) - 1; i >= 0; i--) { const m = L[i].match(/^---\s*pág\.\s*(\d+)\s*---/i); if (m) return Number(m[1]); } } catch { /* sin .md */ }
+  return null;
+}
+
+export function cerrarNota(obj, hijas, campo = 'M', uObj = 0) {
+  const val = (h) => h[campo];
+  const filas = hijas.filter((h) => isFinite(val(h)));
+  const tolDe = (us) => 1e-9 + 0.5 * us;
+  // 1. árbol
+  const nodos = [];
+  for (const h of filas) {
+    const v = val(h); const u = h.u || 0;
+    if (h.tipo !== 'renglon') {
+      let acc = 0; let accAbs = 0; let us = 0; let desde = -1; let firmado = false;
+      for (let j = nodos.length - 1; j >= 0; j--) {
+        acc += nodos[j].valor; accAbs += Math.abs(nodos[j].valor); us += nodos[j].u;
+        const tol = tolDe(us + u);
+        if (Math.abs(Math.abs(acc) - Math.abs(v)) <= tol) { desde = j; firmado = true; break; }
+        if (Math.abs(accAbs - Math.abs(v)) <= tol) { desde = j; break; }
+      }
+      if (desde >= 0) {
+        const hijos = nodos.splice(desde);
+        nodos.push({ valor: firmado ? acc : Math.sign(v || 1) * accAbs, u: hijos.reduce((a, n) => a + n.u, 0), hojas: hijos.flatMap((n) => n.hojas), valores: [...hijos.flatMap((n) => n.valores), v], bloque: h.bloque });
+        continue;
+      }
+      // No cierra nada de arriba: puede ser un subtotal impreso ARRIBA de sus componentes (Levante 2024-25, nota de ingresos: "Ingresos por
+      // competiciones 1.736,53" y debajo Liga 841,36 + competiciones 552,58 + otros 342,59). Queda ABIERTO: por ahora es una hoja, y si las
+      // filas que vienen debajo suman su importe, pasa a ser su nodo. Si no, se queda como hoja (el renglón suelto en negrita de UC).
+      nodos.push({ valor: v, u, hojas: [h], valores: [v], bloque: h.bloque, abierto: true });
+      continue;
+    }
+    nodos.push({ valor: v, u, hojas: [h], valores: [v], bloque: h.bloque });
+    // ¿cierra este renglón el subtotal abierto más cercano de arriba?
+    const ia = nodos.findLastIndex((n) => n.abierto);
+    if (ia >= 0 && nodos.length - ia >= 2) {
+      const hijos = nodos.slice(ia + 1); const cab = nodos[ia];
+      const firm = hijos.reduce((a, n) => a + n.valor, 0); const abs = hijos.reduce((a, n) => a + Math.abs(n.valor), 0); const tol = tolDe(hijos.reduce((a, n) => a + n.u, 0) + cab.u);
+      const okF = Math.abs(Math.abs(firm) - Math.abs(cab.valor)) <= tol; const okA = Math.abs(abs - Math.abs(cab.valor)) <= tol;
+      if (okF || okA) nodos.splice(ia, nodos.length - ia, { valor: okF ? firm : Math.sign(cab.valor || 1) * abs, u: hijos.reduce((a, n) => a + n.u, 0), hojas: hijos.flatMap((n) => n.hojas), valores: [...hijos.flatMap((n) => n.valores), cab.valor], bloque: cab.bloque });
+    }
+  }
+  // 2. qué nodos de primer nivel se suman
+  // (b): de mayor a menor (por cantidad de hojas), un nodo se descarta si su importe ya está adentro de uno que se quedó. Así, de dos notas
+  // idénticas queda la primera, y un cuadro de detalle cae porque su total es una hoja del cuadro principal.
+  const repite = (n, o) => o.valores.some((x) => Math.abs(Math.abs(x) - Math.abs(n.valor)) <= tolDe(n.u + o.u));
+  const sinRepetidos = [];
+  for (const n of [...nodos].sort((a, b) => b.hojas.length - a.hojas.length)) if (!sinRepetidos.some((o) => repite(n, o))) sinRepetidos.push(n);
+  sinRepetidos.sort((a, b) => nodos.indexOf(a) - nodos.indexOf(b));
+  const candidatos = [nodos, sinRepetidos, ...nodos.map((n) => [n])];
+  for (const cand of candidatos) {
+    const hojas = cand.flatMap((n) => n.hojas).filter((h) => val(h));
+    if (hojas.length < 2) continue;
+    const firm = hojas.reduce((a, h) => a + val(h), 0); const abs = hojas.reduce((a, h) => a + Math.abs(val(h)), 0);
+    const us = hojas.reduce((a, h) => a + (h.u || 0), 0);
+    for (const k of [1, 1000, 1e6, 1e-3, 1e-6]) {
+      const tol = tolDe(us * k + uObj);
+      if (Math.abs(Math.abs(firm) * k - obj) <= tol) { const s = Math.sign(firm) || 1; return { k, hojas: hojas.map((h) => ({ ...h, valorNota: val(h) * k * s })) }; }
+      if (Math.abs(abs * k - obj) <= tol) return { k, hojas: hojas.map((h) => ({ ...h, valorNota: Math.abs(val(h)) * k })) };
+    }
+  }
+  return null;
+}
+
 export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pF = resolve(ROOT, derivado(md, '.filas.json', { crear: false }));
@@ -65,7 +153,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const clubId = clubDeRuta(pdf).clubId; const cd = clubId ? sitio.generic[clubId] : null;
   const chequeos = []; const cola = []; const notas = [];
   const pagDe = (bloque) => U.bloques?.[bloque]?.pagina ?? null;
+  const vigentes = []; // claves que levanta esta corrida (para cerrar los casos viejos que ya no aparecen: cola.mjs cerrarObsoletos)
   const caso = (motivo, detalle, que, extra = {}) => {
+    vigentes.push(`${pdf}|verificar|${motivo}|${detalle || ''}`);
     const r = respuestaDe(pdf, 'verificar', motivo, detalle);
     if (r) return r;
     cola.push(agregarCaso({ pdf, md, etapa: 'verificar', motivo, detalle, que, ...extra }));
@@ -98,11 +188,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const arriba = delLado.slice(0, k).filter((x) => x.tipo === 'renglon').reverse(); const abajo = delLado.slice(k + 1).filter((x) => x.tipo === 'renglon');
         if (esSumaDe(arriba) || esSumaDe(abajo)) continue;
       }
-      const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim() && h.tipo === 'renglon');
-      const sh = hijas.reduce((a, h) => a + Math.abs(h[campo] || 0), 0); const obj = Math.abs(f[campo] || 0);
-      const k2 = hijas.length >= 2 ? [1, 1000, 1e6, 1e-3, 1e-6].find((x) => cerca(sh * x, obj, 0.005)) : undefined;
-      if (k2 !== undefined) out.push(...hijas.map((h) => ({ ...h, [campo]: Math.abs(h[campo]) * k2, origen: `nota que desglosa "${f.etiqueta}"` })));
-      else { out.push({ ...f, [campo]: Math.abs(f[campo] || 0), origen: 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${r6(sh)} contra ${r6(obj)}): quedó el renglón del estado`); }
+      // Todas las filas de nota que dicen desglosar este renglón (renglones Y subtotales/totales: la estructura impresa hace falta para
+      // saber qué suma qué; ver cerrarNota()).
+      const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim());
+      const obj = Math.abs(f[campo] || 0);
+      const c = hijas.length >= 2 ? cerrarNota(obj, hijas, campo, f.u || 0) : null;
+      if (c) out.push(...c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })));
+      else { out.push({ ...f, [campo]: Math.abs(f[campo] || 0), origen: 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0))} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); }
     }
     return out;
   };
@@ -192,8 +284,29 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   }
   // un total o el resultado que no cierran -> cola (salvo que Guido ya lo haya aceptado)
   for (const c of chequeos.filter((x) => x.ok === false && x.nombre !== 'año anterior cargado')) caso('no-cierra', c.nombre, `${c.nombre}: ${c.detalle}. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
-  for (const d of F.dudas || []) caso('duda-de-extraer', d.slice(0, 80), `La IA que extrajo las filas dejó esta duda: ${d}`, { pagina: estado[0]?.pagina });
+  // DUDAS de localizar.mjs y de extraer.mjs (Versión 327). Hasta la 326 solo llegaban a la cola las de extraer, y todas con la página del
+  // estado de resultados aunque hablaran de una nota de otra página; las de localizar quedaban en el .ubicacion.json sin que nadie las viera.
+  // Caso real, UC 2025: localizar avisó que las notas 20 (pág. 75 del visor) y 21 (pág. 76) tenían la misma tabla —el club imprimió la de
+  // gastos de administración bajo el título de costo de ventas— y la duda no llegó a Guido. Ahora:
+  //   - llegan las dos, cada una con la página y las líneas del primer bloque que nombra (o de la línea "L4157" que cite el texto);
+  //   - solo las que la IA marcó `afecta_carga` (puede cambiar qué filas o qué importe se carga, más que el redondeo); el resto queda en las
+  //     notas del .verificacion.json. Caso real del otro lado, también UC 2025: "Remuneración 1.790.062 en una tabla y 1.790.063 en la otra"
+  //     llegó a la cola y es un peso sobre 1,8 millones (pedido de Guido: una diferencia de esa magnitud no va a la cola).
+  //   - las dudas en el formato viejo (texto suelto, archivos anteriores a la Versión 327) se tratan como afecta_carga = true.
+  const dudaComoObjeto = (d) => (typeof d === 'string' ? { texto: d, bloques: [...new Set(d.match(/\bb\d+\b/g) || [])], afecta_carga: true } : d);
+  for (const [origen, lista] of [['localizar', U.dudas || []], ['extraer', F.dudas || []]]) {
+    for (const d of lista.map(dudaComoObjeto)) {
+      if (!d.afecta_carga) { notas.push(`duda de ${origen} que no afecta la carga: ${d.texto}`); continue; }
+      const b = (d.bloques || []).map((id) => U.bloques?.[id]).find(Boolean);
+      const ls = (d.texto.match(/\bL(\d+)\b/g) || []).map((x) => Number(x.slice(1)));
+      const lineas = ls.length ? [Math.min(...ls), Math.max(...ls)] : b ? b.lineas : null;
+      const pagina = ls.length ? paginaDeLinea(md, ls[0]) ?? b?.pagina : b?.pagina ?? estado[0]?.pagina;
+      caso(`duda-de-${origen}`, d.texto.slice(0, 80), `La IA de ${origen === 'localizar' ? 'localizar (qué bloques son el estado y sus notas)' : 'extraer (las filas)'} dejó esta duda: ${d.texto}`, { pagina, lineas });
+    }
+  }
 
+  const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
+  if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, cola, chequeos, notas,
     totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), lecturaSignos: lectura },
     lineas: [...ing, ...gas].map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado' })),

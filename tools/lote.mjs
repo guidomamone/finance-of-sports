@@ -48,7 +48,13 @@ const docs = readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l
 if (docs.length > 10) console.log(`OJO: ${docs.length} documentos. El proceso nuevo se refina de a 5 (pedido de Guido).`);
 const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 let registro = leerRegistro();
-const node = (tool, argv) => spawnSync('node', [resolve(ROOT, tool), ...argv], { cwd: ROOT, stdio: 'inherit' });
+// silencioso: para las tools que se llaman solo por su efecto y imprimen un resumen de TODO el proyecto (inventario-transcripciones.mjs
+// imprimía ~150 líneas del registro entero en medio de la etapa 7; Versión 327). Si fallan, se muestra su salida igual.
+const node = (tool, argv, { silencioso = false } = {}) => {
+  const r = spawnSync('node', [resolve(ROOT, tool), ...argv], { cwd: ROOT, stdio: silencioso ? 'pipe' : 'inherit', encoding: 'utf8' });
+  if (silencioso && r.status !== 0) process.stdout.write(`${r.stdout || ''}${r.stderr || ''}`);
+  return r;
+};
 
 let usd = 0; const estado = {};
 console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VERDAD' : 'ENSAYO, sin API'}) ===`);
@@ -60,8 +66,12 @@ for (const pdf of docs) {
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) { estado[pdf] = 'sin estado de resultados (queda como fuente)'; continue; }
-  const V = await validar(pdf, { registro, ejecutar: true, rehacer: REHACER }); usd += V.costo || 0;
-  const X = await extraer(pdf, { registro, ejecutar: true, rehacer: REHACER }); usd += X.costo || 0;
+  // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
+  // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
+  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER }); usd += V.costo || V.usd || 0;
+  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER });
+  if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
+  usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
   estado[pdf] = 'extraído';
   console.log(`  ${pdf}: estado ${L.datos.estado.join(',')} · ${V.datos?.modo || '?'} · ${X.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
@@ -80,7 +90,7 @@ console.log('\n=== Etapa 7: categorizar (Jev y Claude, con precedente y memoria)
 const conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
 if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
-  node('tools/inventario-transcripciones.mjs', []); registro = leerRegistro();
+  node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
   node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/.lote-lista-actual.txt']);
   node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.lote-lista-actual.txt']);
   node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.lote-lista-actual.txt']);

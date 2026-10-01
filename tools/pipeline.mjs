@@ -10,7 +10,7 @@
 // ahora solo MIDE si la carga automática es viable y no escribe nada del sitio.
 //
 // Busca los PDFs de Clubes/ que todavía no tienen un .md LISTO para Jev —ya sea porque no tienen ningún .md, o porque tienen uno que
-// nadie confirmó— y a cada uno lo lleva por todo el camino. Cada etapa está hecha por una herramienta propia (ver Admin/MAPA-DE-TOOLS.md):
+// nadie confirmó— y a cada uno lo lleva por todo el camino. Cada etapa está hecha por una herramienta propia (cada una explicada en su cabecera):
 //
 //   0. ¿DE QUÉ CLUB ES? (tools/carpetas-clubes.mjs, vía onboard.mjs) la cita en data/<id>-data.js, y si no, nombre IGUAL dentro del mismo
 //                      país; si no, club nuevo. Una sola regla en todo el proyecto, vigilada por audit.js (P1 si una carpeta es ambigua).
@@ -295,7 +295,7 @@ for (const e of ready) {
       rubros.push({ label: row.rawLabel.trim(), lado: lados[i] || ladoTabla, page: t.page, section: t.section || '', values: row.values, columns: t.columns });
     });
   }
-  // ---- LA LISTA DE RUBROS ES LA SELECCIÓN DE LA ETAPA 6 (Versión 321, arreglo 1a del HANDOFF; evidencia en Admin/tests/test-cargar.md, 4.1).
+  // ---- LA LISTA DE RUBROS ES LA SELECCIÓN DE LA ETAPA 6 (Versión 321, arreglo 1a del HANDOFF de entonces, hoy en Admin/Archive/HANDOFF-pipeline-hasta-2026-10-01.md; evidencia en Admin/tests/test-cargar.md, 4.1).
   // Hasta acá, `rubros` son las filas de las tablas de ESTADO de resultados (la lista de siempre). Pero la carga (tools/cargar.mjs) no carga
   // esas filas: usa seleccionarFilas() de tools/proponer-carga.mjs, que abre cada renglón del estado en la NOTA que lo desglosa (estrategia
   // ancla-listas). Eran conjuntos distintos: medido el 2026-09-30 sobre 719 documentos, de 17.266 filas categorizadas 4.700 la carga nunca

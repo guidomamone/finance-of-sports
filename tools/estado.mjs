@@ -86,7 +86,7 @@ const ETAPAS = [
   ]],
 ];
 // QUÉ TOOLS HACEN CADA ETAPA (pedido de Guido, 2026-09-30: "agregame para el paso 2, 3 y 4 las tools que se usan"). En orden de uso; la
-// primera es la que orquesta. El detalle de cada una está en su cabecera y en Admin/MAPA-DE-TOOLS.md. Si una tool entra o sale de una
+// primera es la que orquesta. El detalle de cada una está en su cabecera. Si una tool entra o sale de una
 // etapa, actualizar esta lista (no se deduce sola del código).
 const TOOLS = {
   '2': [
@@ -194,8 +194,8 @@ if (existsSync(ultimo)) {
   }
   console.log('  ("no cierra": las filas no suman ningún total impreso; "resultado": tampoco el resultado del ejercicio. Detalle por documento: Admin/cargar-ultimo.jsonl)');
 }
-console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, Qué falta 1.');
-console.log('  PROCESO NUEVO (localizar, validar, extraer, verificar, con cola humana; Admin/HANDOFF-pipeline.md "El proceso nuevo"): node tools/lote.mjs --lista Admin/lote-01.txt  ·  cola: node tools/cola.mjs');
+console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, "Dónde estamos".');
+console.log('  PROCESO NUEVO (localizar, validar, extraer, verificar, con cola humana; Admin/HANDOFF-pipeline.md "El proceso nuevo"): node tools/lote.mjs --lista Admin/lote-NN.txt  ·  cola: node tools/cola.mjs');
 ETAPAS.filter(([e]) => e.startsWith('7')).forEach(imprimirEtapa);
 console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);
 console.log('');

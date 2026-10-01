@@ -14,6 +14,7 @@
 //   {tipo:'respuesta', id, ts, decision, valor, nota}
 // Al leer, la última respuesta de cada caso gana. Un caso con la misma `clave` (pdf | etapa | motivo | detalle) no se agrega dos veces.
 //
+// (decision 'obsoleto' la escribe sola una etapa cuando su última corrida ya no levanta el caso: ver cerrarObsoletos)
 // QUÉ PUEDE CONTESTAR GUIDO (decision):
 //   aceptar          la propuesta del sistema está bien (o el número del .md está bien): se usa
 //   corregir         el valor correcto es `--valor` (un importe, una categoría, un perímetro...): se usa ese
@@ -96,6 +97,17 @@ export function textoPagina(c) {
 }
 
 export function pendientes() { const { casos, resp } = leer(); return [...casos.values()].filter((c) => !resp.has(c.id)); }
+// OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
+// ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la
+// etapa al terminar un documento con las claves que levantó (respondidas o no). No toca casos ya respondidos por Guido.
+export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
+  const { casos, resp } = leer(); const vig = new Set(clavesVigentes); let n = 0;
+  for (const c of casos.values()) {
+    if (c.pdf !== pdf || c.etapa !== etapa || resp.has(c.id) || vig.has(c.clave)) continue;
+    appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id: c.id, ts: new Date().toISOString(), decision: 'obsoleto', nota: 'la última corrida de la etapa ya no levanta este caso' }) + '\n'); n++;
+  }
+  return n;
+}
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };

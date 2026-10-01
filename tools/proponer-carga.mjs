@@ -668,7 +668,7 @@ async function propose({ briefing, mdText, clubData, generic, club, year }) {
   const { raw, totalCands, docRevenueTotal, docResult, descartadas, refM } = sf; const extra = { ...sf.extra }; delete extra.pts;
   // ¿Cierra? La suma de las filas propuestas del lado ingresos (el lado que se le pasa a Jev) coincide (±0,5%) con algún total de ingresos
   // impreso en el documento (fila de total, subtotal que suma las de arriba o encabezado de cifras clave). Mide coherencia interna, sin
-  // mirar producción (ver "Trampas de medición" en Admin/HANDOFF-pipeline.md: el total de producción muchas veces no está impreso).
+  // mirar producción (ver "Trampas de medición" en Admin/Archive/HANDOFF-pipeline-hasta-2026-10-01.md: el total de producción muchas veces no está impreso).
   const revSum = raw.filter((r) => r.tside === 'revenue').reduce((a, r) => a + Math.abs(r.native), 0);
   const cierraIngresos = revSum > 0 && totalCands.some((c) => c.M && Math.abs(Math.abs(c.M) - revSum) <= Math.abs(c.M) * 0.005);
   if (SOLO_TOTALES) return { ok: true, docRevenueTotal, totalCands, refM, nRows: raw.length, nDescartadas: descartadas.length, nSure: 0, cierraIngresos, ...extra, filas: raw.map((r) => [r.label.slice(0, 70), Math.round(r.native * 1e4) / 1e4, r.tside || '', r.origen || '']), byCat: { revenue: {}, expense: {} } };

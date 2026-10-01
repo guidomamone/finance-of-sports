@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 327 — Primer documento por el proceso nuevo (UC 2025); cierre de notas por estructura; HANDOFF corto (2026-10-01)
+
+- Primera corrida real del proceso nuevo, un solo PDF: Universidad Católica (Cruzados) 2025 (`Admin/lote-02.txt`, US$ 0,24). El resultado cierra y la columna 2024 coincide con el sitio; frenó en la carga por la cola y por dos tipos de cambio declarados.
+- `verificar.mjs`: `cerrarNota()` lee la estructura impresa (subtotal que cierra lo de arriba o lo de abajo, renglón suelto en negrita, cuadros de detalle y notas repetidas que no se suman dos veces), con tolerancia de media unidad por fila en vez de 0,5%. Medido en 69 renglones con nota de 27 extracciones: 62 igual, 5 mejoran (UC, Betis, Athletic, Nordsjælland, Levante), Chapecoense deja de "cerrar" 917 contra 912. Filas sin importe ("-") no se cargan.
+- Dudas: `localizar.mjs` y `extraer.mjs` las devuelven con bloques y `afecta_carga`; `verificar.mjs` manda a la cola las de las dos etapas, con página y líneas del bloque, y deja las que no afectan la carga como notas.
+- `cola.mjs`: casos que la última corrida ya no levanta se cierran solos como `obsoleto`.
+- `lote.mjs`: el ensayo ya no llama a extraer de verdad cuando localizar estaba hecho; la etapa 7 no imprime el registro entero.
+- Probada y descartada: elegir el tipo de cambio por el encabezado de la columna (4 errores en 17 documentos).
+- `tools/archivo/`: `localizar-extraer.mjs` y `test-motores.mjs`. `Admin/Archive/`: `MAPA-DE-TOOLS.md` y el HANDOFF largo; `Admin/HANDOFF-pipeline.md` reescrito corto.
+- UC 2025, Nota 20 con la tabla equivocada: a `Admin/dudas-por-club.md` (decisión de Guido: costo de ventas en una línea).
+
 ## Versión 326 — La cola humana dice la página del visor y el número impreso (2026-10-01)
 
 - `cola.mjs`: "Abrí el PDF en la página N del visor (la hoja tiene impreso "M" al pie)". El número impreso sale del último renglón de la página en el .md o, si no está, del texto propio del PDF; si no hay, lo dice. Pedido de Guido: buscó "pág. 8" de Bahia en la hoja con el "6" impreso (era otro documento y otra numeración).

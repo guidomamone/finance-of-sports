@@ -58,7 +58,7 @@ const SCHEMA = {
     total_ingresos: { type: ['object', 'null'], additionalProperties: false, required: ['linea', 'actual'], properties: { linea: { type: 'integer' }, actual: { type: 'string' } } },
     total_gastos: { type: ['object', 'null'], additionalProperties: false, required: ['linea', 'actual'], properties: { linea: { type: 'integer' }, actual: { type: 'string' } } },
     resultado: { type: ['object', 'null'], additionalProperties: false, required: ['linea', 'actual', 'anterior'], properties: { linea: { type: 'integer' }, actual: { type: 'string' }, anterior: { type: ['string', 'null'] } } },
-    dudas: { type: 'array', items: { type: 'string' } },
+    dudas: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['texto', 'bloques', 'afecta_carga'], properties: { texto: { type: 'string' }, bloques: { type: 'array', items: { type: 'string' } }, afecta_carga: { type: 'boolean' } } } },
     observaciones: { type: 'string' },
   },
 };
@@ -72,7 +72,7 @@ Por fila:
 - lado: ingreso, gasto, financiero (intereses, diferencias de cambio, resultado financiero, RECPAM), impuesto (impuesto a las ganancias), resultado, otro.
 - detalla_a: si la fila es de una NOTA que desglosa un renglón del estado, la etiqueta EXACTA de ese renglón; si es del estado, null.
 Además: la escala de CADA bloque (unidades, miles, millones; pueden ser distintas entre el estado y las notas) con la frase que lo dice; la línea y el importe del total de ingresos, del total de gastos y del resultado del ejercicio si están impresos (si no, null).
-No sumes, no conviertas, no inventes. Si algo no se lee o es ambiguo, dejalo afuera y escribilo en dudas (una frase cada una, con la línea): lo va a mirar una persona.`;
+No sumes, no conviertas, no inventes. Si algo no se lee o es ambiguo, dejalo afuera y escribilo en dudas (una frase cada una, con la línea): lo va a mirar una persona. Cada duda: texto (una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 
 export async function extraer(pdf, { registro, ejecutar = false, rehacer = false } = {}) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
@@ -106,7 +106,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ~${r.tokens} tokens, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.sinEstado) console.log(`  ${pdf}: sin estado de resultados (queda como fuente)`);
     else if (r.error) console.log(`  ${pdf}: ${r.error}`);
-    else { usd += r.costo; console.log(`  ${pdf}: ${r.datos.filas.length} filas${r.datos.dudas?.length ? ` · DUDAS: ${r.datos.dudas.join(' | ')}` : ''}`); }
+    else { usd += r.costo; console.log(`  ${pdf}: ${r.datos.filas.length} filas${r.datos.dudas?.length ? ` · DUDAS: ${r.datos.dudas.map((x) => (typeof x === 'string' ? x : `${x.texto}${x.afecta_carga ? '' : ' (no afecta la carga)'}`)).join(' | ')}` : ''}`); }
   }
   console.log(`\n${ARGS.includes('--ejecutar') ? 'Gastado' : 'Costo estimado'}: US$ ${usd.toFixed(2)}`);
 }

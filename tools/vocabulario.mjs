@@ -82,7 +82,7 @@ export function normalizar(t) {
     .replace(/\s+/g, ' ').trim();
 }
 
-// ---------------------------------------------------------------- FAMILIA DE UNA ETIQUETA (Versión 321, arreglo 1d del HANDOFF)
+// ---------------------------------------------------------------- FAMILIA DE UNA ETIQUETA (Versión 321, arreglo 1d del HANDOFF de entonces, hoy en Admin/Archive/)
 // Pedido de Guido (2026-09-30): "una familia de palabras similares, como la del PSV con dos S o una". El precedente del club (escalón 0 de la
 // categorización: si el club ya cargó ese renglón en otro año, se copia su categoría gratis) comparaba el texto EXACTO, y el mismo renglón de un
 // año a otro cambia en detalles que no cambian qué es: PSV 2019-20 imprime "Vergoedingsommen" y 2024/2025 "Vergoedingssommen
