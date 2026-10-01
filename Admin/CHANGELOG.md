@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 354 — Caja y deuda: escalón 2 con IA (2026-10-01)
+
+- `caja-deuda.mjs`: `porIA()` (una llamada a Claude por documento, solo si los escalones 0 y 1 no dieron nada) elige las líneas del balance de caja y de deuda (criterio del club si hay precedente; si no, deuda financiera) y la escala con su frase. `datoDeIA()`: las cifras salen de esas líneas del .md, nunca de la IA; se descarta si una línea no es fila del balance o la frase de la escala no está en el balance; se acepta confirmada por un año vecino; "ninguna deuda" + total del pasivo = 0. Respuesta guardada en `Generados/<doc>.caja-deuda-ia.json`. `--medir --ia`: ensayo 171 documentos, ~US$ 5,49.
+
 ## Versión 353 — Caja y deuda: un balance completo sin deuda financiera es deuda 0 (2026-10-01)
 
 - `caja-deuda.mjs`: deuda 0 (decisión de Guido) cuando el balance tiene su total del pasivo, ninguna fila es deuda financiera y el club tiene un precedente aprendido de deuda financiera que en este documento no aparece. UC 2010-2019: 0 (2015 y 2019 revisados: el pasivo son cuentas por pagar, provisiones e impuestos). Medido: sin cambios en los 205 años (ningún 0 equivocado). Probado y descartado: sin exigir el precedente, 3 aciertos y 25 ceros equivocados (Boca, Flamengo, Talleres: su deuda se llama de otra forma).
