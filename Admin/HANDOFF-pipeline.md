@@ -30,8 +30,12 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - Se trabó en la etapa 8 (cargar) por dos cosas:
   - casos en la cola humana;
   - el documento declara dos tipos de cambio (907,13 y 996,48) y el script no sabía cuál era el de cierre.
-- Decisión de Guido: la Nota 20 del PDF trae la tabla equivocada (error del club). El costo de ventas se carga como **una sola línea** y se le
-  pide la nota al club (anotado en `Admin/dudas-por-club.md`).
+- La Nota 20 del PDF trae la tabla equivocada (error del club): el costo de ventas (20.985.893, el 77% del gasto) no tiene desglose.
+  **Decisión de Guido: UC 2025 no se carga hasta que el club mande la nota** (en una sola línea, "sueldos del plantel" quedaría en 0 en 2025,
+  contra 9.140.947 en 2024). Pedido anotado en `Admin/dudas-por-club.md`.
+- Segunda corrida: la verificación da OK y la cola quedó vacía. La etapa 8 frena porque 3 filas tienen categoría con menos de 0,80 y la carga
+  las deja afuera (entonces no cierra). Respuestas de Guido, a aplicar cuando exista la cola de categorías: "Transporte" 54.199, "Arriendo de
+  Bienes" 263.339 y "Provisión No Operacionales" 4.570 van como **gastos de administración** (`admin_general_expense`).
 
 **Cambios hechos después de esa corrida (commiteados):**
 
@@ -48,8 +52,10 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 **Próximo paso:**
 
-- Volver a correr UC 2025 (extraer de nuevo, para que sus dudas salgan con la marca "afecta la carga", y después el lote).
-- Agregar CLP, EUR, DKK y GBP al script de series oficiales (para los documentos que no declaran tipo de cambio).
+- Con el ok de Guido: que la etapa 8 mande a la cola, como pregunta de sí o no, cada fila con categoría menor a 0,80, y que frene con "N filas
+  esperan categoría" en vez de "no cierra". La respuesta queda como precedente del club.
+- Agregar CLP, EUR, DKK y GBP al script de series oficiales.
+- Elegir el próximo documento (UC 2025 queda esperando al club).
 
 ---
 
