@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 352 — Caja y deuda del balance, etapa 6b (paso 1: escalones 0 y 1, sin conectar al lote) (2026-10-01)
+
+- `tools/caja-deuda.mjs` (nuevo): lee `cash` y `grossDebt` del balance. Escalón 0: precedente del club (qué filas, 1 a 3, suman lo cargado en otro año; mismas familias en este documento). Escalón 1: vocabulario. Un dato se acepta solo si lo confirma un año vecino (año anterior cargado o documento siguiente, en su columna del año anterior); el escalón 1 necesita el año anterior cargado (el documento siguiente no ataja un error de escala). Si no, null con el motivo: nunca frena. `--medir`: lectura de los años ya cargados contra lo cargado a mano, con precedente solo de los OTROS años del club.
+- `vocabulario.mjs`: conceptos CAJA y DEUDA_FINANCIERA (nuevos, no cambian los existentes).
+- Medido (205 años con deuda y caja y con transcripción): deuda 11 iguales, 1 distinta, 193 sin dato; caja 47 iguales, 1 distinta, 157 sin dato. Las 2 distintas las confirma el documento vecino (Athletico Paranaense 2024, Wolves 2025): a revisar si es el criterio de lo cargado a mano. Probado y descartado: leer solo el "balance principal" (arreglaba U. de Chile 2022 y perdía 13 cajas).
+
 ## Versión 351 — El lote termina con "Listo para cargar Y" y "Frenados X" (2026-10-01)
 
 - `lote.mjs`: bloque RESULTADO al final de la corrida, con la última propuesta de carga de cada documento de la lista (también los que no pasaron por la etapa 8 en esa corrida): listos (con años), frenados (año y primer motivo), ya en el sitio y sin propuesta. Pedido de Guido. Probado sobre los archivos del lote 07: 8 listos (2010-2017), 0 frenados, 8 ya en el sitio.

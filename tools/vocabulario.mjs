@@ -532,6 +532,23 @@ export const VOCABULARIO = {
     zh: ['资产负债表', '資產負債表'], ja: ['貸借対照表'], ko: ['재무상태표', '대차대조표'], ar: ['الميزانية العمومية', 'قائمة المركز المالي'], he: ['מאזן'],
   },
 
+  // ---- CAJA y DEUDA FINANCIERA del balance (Versión 352, tools/caja-deuda.mjs, escalón 1). Al comienzo de una etiqueta. Caja: lo que el sitio
+  // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping,
+  // sección 14, ok de Guido 2026-10-01): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
+  CAJA: {
+    es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos'],
+    en: ['cash and cash equivalent*', 'cash at bank*', 'cash and bank*', 'cash'], de: ['flussige mittel', 'kassenbestand*', 'guthaben bei kreditinstitut*', 'liquide mittel'],
+    fr: ['tresorerie et equivalent*', 'disponibilites'], it: ['disponibilita liquide', 'cassa e disponibilita*'], nl: ['liquide middelen', 'geldmiddelen'],
+    da: ['likvide beholdninger', 'likvide midler'], no: ['bankinnskudd*', 'kontanter og bankinnskudd'], sv: ['kassa och bank', 'likvida medel'],
+  },
+  DEUDA_FINANCIERA: {
+    es: ['prestamo*', 'otros pasivos financieros', 'pasivos financieros', 'deudas bancarias*', 'deudas financieras', 'obligaciones financieras', 'obligaciones con bancos*', 'deudas con entidades de credito'],
+    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos'], en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans'],
+    de: ['verbindlichkeiten gegenuber kreditinstitut*', 'darlehen', 'finanzverbindlichkeiten'], fr: ['emprunts*', 'dettes financieres'],
+    it: ['debiti verso banche', 'debiti finanziari'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
+    no: ['gjeld til kredittinstitusjoner', 'banklan'], sv: ['skulder till kreditinstitut', 'banklan'],
+  },
+
   // ---- TOTAL DEL ACTIVO y TOTAL DEL PASIVO (+ patrimonio) al comienzo de una etiqueta. Para chequeos-gratis.mjs (activo = pasivo + patrimonio);
   // hoy esa tool tiene sus propias ACTIVO_RE / PASIVO_RE (no se editó en la Versión 316): estas listas las amplían.
   TOTAL_ACTIVO: {
@@ -612,6 +629,8 @@ export const FLUJO_O_PATRIMONIO_RE = compilar([...T('FLUJO_EFECTIVO'), ...T('CAM
 export const TITULO_BALANCE_RE = compilar(T('TITULO_BALANCE'));
 export const TOTAL_ACTIVO_RE = compilar(T('TOTAL_ACTIVO'), 'inicio');
 export const TOTAL_PASIVO_RE = compilar(T('TOTAL_PASIVO'), 'inicio');
+export const CAJA_RE = compilar(T('CAJA'), 'inicio');
+export const DEUDA_FINANCIERA_RE = compilar(T('DEUDA_FINANCIERA'), 'inicio');
 // ---- Resultado financiero e impuesto a las ganancias (Versión 321: se mudaron acá desde tools/cargar.mjs, porque ahora también los usa la
 // selección de filas de tools/proponer-carga.mjs). Son expresiones regulares escritas a mano y no conceptos del VOCABULARIO porque mezclan
 // raíces con comodín en el medio de la palabra y frases con alternativas internas que compilar() no sabe armar. Se prueban sobre texto
