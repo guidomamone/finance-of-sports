@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-01 (Versión 327).** Es el HANDOFF del pipeline tal como estaba hasta la Versión 326. El vigente, corto, es `Admin/HANDOFF-pipeline.md`. Acá quedan la historia de los pilotos, los números medidos y las trampas viejas.
+
 # HANDOFF: el pipeline de PDF a club cargado (sesiones del 2026-09-29 al 2026-10-01, actualizado al cierre del 2026-10-01, Versión 324)
 
 > **SESIÓN NUEVA: empezá por la sección "EL PROCESO NUEVO" (más abajo) y por "Cómo arranca la próxima sesión" dentro de ella.** Lo de antes

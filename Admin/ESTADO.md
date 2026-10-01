@@ -54,7 +54,7 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   `<md>.jev.json` / `<md>.categorias.json`. La validación paga (Gemini, Claude) solo toca páginas con números que los chequeos gratis no respaldan. Cargar el
   ejercicio al sitio por script NO existe todavía (to-do 108; `tools/proponer-carga.mjs` solo mide; `tools/alta-club.mjs` propone el alta de un club nuevo). El registro por PDF (motor que hizo el `.md`, estado, reservas) es `Admin/transcripciones-estado.jsonl`.
 - Inventario hoy: 3.358 PDFs; 316 cargados; 1.106 sin ningún `.md`; el resto en distintos estados de validación. Para entender todo: `Admin/HANDOFF-pipeline.md`
-  (estado, decisiones de Guido, números medidos, qué falta) y `Admin/MAPA-DE-TOOLS.md` (qué es cada archivo de `tools/`).
+  (estado, decisiones de Guido, números medidos, qué falta).
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por

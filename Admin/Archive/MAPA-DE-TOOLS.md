@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-01 (Versión 327), a pedido de Guido: no lo usaba.** Qué tools usa el proceso está en `Admin/HANDOFF-pipeline.md`; qué hace cada tool, en su propia cabecera. Las rutas y nombres son los del día en que se congeló.
+
 # Mapa de las herramientas (`tools/`)
 
 Escrito el 2026-09-30 a pedido de Guido ("quiero entender qué js hay"). Es un mapa para entender, no una referencia técnica: cada

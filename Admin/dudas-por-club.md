@@ -1289,6 +1289,13 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   `other_expenses` (catch-all) por no tener con qué separarla en sub-categorías más útiles para
   "Formato Simplificado". Vale la pena preguntarle al club (o revisar si la Memoria Anual, que sí
   tiene texto narrativo, la detalla en algún párrafo) qué compone este rubro.
+- **Estados financieros 2025: la Nota 20 ("Composición de Cuentas de Costo de Ventas") trae la tabla equivocada** (2026-10-01,
+  proceso nuevo del pipeline): bajo ese título el PDF imprime la tabla "Composición Gastos de Administración", la misma de la Nota 21
+  (página 75 del visor, impreso "68", contra la página 76, impreso "69"; confirmado en el texto propio del PDF, no es la
+  transcripción). Por eso el Costo de Ventas 2025 (M$20.985.893, el 77% del gasto) no tiene desglose: en 2024 esa nota lo abría en
+  Remuneraciones, Gastos de Operación, amortización de pases, etc. Decisión de Guido: se carga como una sola línea y se le pide al
+  club la Nota 20 correcta (o una versión corregida de los estados) — a quién preguntarle: cruzados.cl/inversionistas/ o el área
+  de finanzas del club.
 
 ## Alianza Lima (Perú, onboarding financiero, sesión 2026-09-25)
 
