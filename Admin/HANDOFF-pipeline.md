@@ -22,25 +22,31 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**UC 2010-2017: listos para el reintento y la carga** (lote 06).
+**Terminando Universidad Católica (Cruzados).** Plan de Guido, en este orden:
 
-- Cargados (commiteados, sin push): UC 2018-2025.
-- UC 2016: verificado; respuesta de categoría ya dada. UC 2017: reintento por "cuotas sociales en 0".
-- UC 2010-2014: con la escalera de lecturas cierran (lectura 3); perímetro individual ya contestado por Guido; 2011 con fecha deducida.
-- UC 2015: PDF híbrido (los estados son imágenes): lo toma el escalón 1 de la etapa 2 con `--reintentar` (~US$ 0,26 de Mistral + 0,15).
-- UC 2009: descartado (PDF de una sola página escaneada).
-- Espera a Guido: publicar (merge de la rama a `main` y push; `main` ya tiene 49 commits sin pushear, que salen juntos).
-- Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (hoy ningún año cargado lo usa).
-- Encontrado por el subagente del perfil, en datos ya publicados (sin tocar): Almagro tiene "Sede Social - Medrano 522" como cuotas sociales;
-  Grêmio, "Receitas Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
+1. **Dejar UC entero listo para cargar.**
+   - Cargados (commiteados, sin push): 2018-2025.
+   - Dan CARGA, falta escribirlos: 2016 y 2017.
+   - Falta el reintento: 2013 (índice ampliado v2) y 2015 (re-transcribir con Mistral: el PDF tiene los estados en imagen).
+     Comando: `caffeinate -i node tools/lote.mjs --lista Admin/lote-06.txt --ejecutar --reintentar` (~US$ 0,55).
+   - Con las respuestas de Guido ya dadas, 2010, 2011, 2012 y 2014 deberían dar CARGA en la próxima corrida (sin `--reintentar`).
+   - 2009: descartado (`Admin/documentos-descartados.txt`).
+2. **Volver a correr TODOS los años de UC** (2010-2025, con `--rehacer` solo si hace falta) para comprobar que cada mejora de esta sesión fue
+   una mejora y no una manta corta: los años que ya cerraban tienen que seguir cerrando igual (misma lectura, mismas líneas).
+3. **Escribirlo en los datos del sitio** (commit local, sin deploy: el push lo hace Guido).
+4. **Los pendientes de este HANDOFF** (lista de abajo).
+5. **Otro club**, con el mismo proceso: atajar errores en el script y comprobar que siga sirviendo para UC y los demás.
 
-**Próximo paso:**
+Pendientes:
 
-- Correr `caffeinate -i node tools/lote.mjs --lista Admin/lote-06.txt --ejecutar` (verificación con la escalera; gratis salvo categorización)
-  y después `--reintentar` (2017 por los socios, 2015 para re-transcribir).
-- Ojo: la escalera de la etapa 6 vive en verificar.mjs, que usa lote.mjs (el proceso nuevo). pipeline.mjs (el proceso viejo) no la usa.
-- Escaleras: construidas la de la etapa 2 (escalón 1) y la de la 7; dibujadas todas en su etapa. Falta: escalón 2 de la etapa 2 (Gemini en
-  escaneos enteros) y que las etapas 4 y 8 registren en qué escalón salió cada dato.
+- Que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (otra sesión; hoy ningún año cargado lo usa).
+- Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
+- Etapas 4 y 8: registrar en qué escalón salió cada dato (las escaleras existen, falta dejarlo escrito por documento).
+- Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
+- Datos ya publicados con categorías dudosas (encontrado por el subagente del perfil, sin tocar): Almagro tiene "Sede Social - Medrano
+  522" como cuotas sociales; Grêmio, "Receitas Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus
+  documentos y no en el sitio.
+- Publicar: merge de la rama a `main` y push (lo hace Guido; `main` ya tiene 49 commits sin pushear, que salen juntos).
 
 ---
 
@@ -400,4 +406,4 @@ Pendientes, a decidir con casos reales:
 2. `node tools/estado.mjs`.
 3. Leer este HANDOFF (nada más hace falta para el pipeline).
 4. `node tools/cola.mjs` para ver qué está esperando a Guido.
-5. Seguir por "Próximo paso" de la sección "Dónde estamos".
+5. Seguir por el plan de la sección "Dónde estamos" (está en orden).
