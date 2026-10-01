@@ -22,18 +22,21 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Por elegir un nuevo club.**
+**Por elegir un nuevo club** (o seguir con UC 2010-2020).
 
-- Último documento: Universidad Católica (Cruzados) 2025. Cargado en los datos del sitio, commiteado en la rama, sin push.
-- Espera a Guido: publicar (merge de la rama a `main` y push).
-- Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" donde un renglón no está desglosado.
-  Hoy UC 2025 muestra "Salarios / Ingresos 0%" porque los sueldos están adentro del costo de ventas.
+- Últimos documentos: Universidad Católica (Cruzados) 2021 y 2025. Cargados en los datos del sitio, commiteados en la rama, sin push.
+  En 2025 el costo de ventas y los ingresos comerciales se abren con el cuadro por segmento.
+- Espera a Guido: publicar (merge de la rama a `main` y push; `main` ya tiene 49 commits sin pushear, que salen juntos).
+- Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" donde un renglón no está desglosado (hoy
+  ningún año cargado lo usa; UC 2025 ya no lo necesita).
 
 **Próximo paso:**
 
-- Elegir el próximo documento (ver "Cómo arranca la próxima sesión").
-- Diseño por aprobar: precedente de categoría con contexto (etiqueta + renglón que desglosa).
-- Agregar CLP, EUR, DKK y GBP al script de series oficiales.
+- Elegir el próximo documento (UC tiene 2010-2020 transcriptos sin cargar; ver "Cómo arranca la próxima sesión").
+- Diseño por proponer: que la cola no repita una duda ya contestada cuando la IA la redacta distinto (hoy la reconoce por el texto).
+- Diseño aprobado, sin construir: precedente de categoría con contexto (etiqueta + renglón que desglosa).
+- Diseño por aprobar: en el buscador de cotizaciones, CLP toma el primer día con dato después del cierre (así coincide con lo declarado).
+- Agregar EUR, DKK y GBP al script de series oficiales.
 
 ---
 
@@ -238,6 +241,7 @@ Pendientes, a decidir con casos reales:
 
 - ¿El primer año automático de cada club pasa siempre por la cola?
 - ¿Dónde ver la cola? Hoy es un archivo que se lee con `cola.mjs`.
+- Perímetro: se hereda del año cargado más cercano; si no se puede, pregunta en la cola.
 - Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
 
 ---
