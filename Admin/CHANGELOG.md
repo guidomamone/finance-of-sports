@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 334 — Lote: documentos testigo; UC 2021 da CARGA (2026-10-01)
+
+- `lote.mjs`: una línea `testigo <pdf>` entra solo hasta extraer (para el chequeo de año vecino de otro documento); no se verifica, categoriza ni propone cargar.
+- Lote 03: UC 2021 verificado contra la columna 2021 del documento 2022 (14.157.951 contra 14.157.952): primera vez que el chequeo de año vecino corre con datos reales. Propuesta de carga: CARGA (resultado −3.538.301, tipo de cambio 844,69 declarado). No se escribió el sitio.
+- Probada y descartada en la misma sesión: "las notas por segmento nunca se eligen". En UC el desglose de "Ingresos Comerciales" (socios, escuelas de fútbol, publicidad, tienda, merchandising) solo está en la nota de segmentos, y 2022-2024 se cargaron con él.
+
 ## Versión 333 — Serie oficial del peso chileno (CLP) (2026-10-01)
 
 - `fetch-fx-reference.mjs`: CLP, "dólar observado" del Banco Central de Chile publicado por el SII (HTML público, sin usuario; la API del Banco Central y la de la CMF piden credenciales). 6.666 cotizaciones, 2000-2026, en `tools/fx-reference/clp-usd.json`. `lookup-fx-close.js` y `alta-club.mjs` la conocen.
