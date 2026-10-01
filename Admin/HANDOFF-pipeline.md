@@ -137,7 +137,9 @@ Mitigaciones:
 - a) `extraer.mjs` (IA, ~US$ 0,07) recibe solo los bloques elegidos, con cada línea numerada.
 - b) Devuelve las filas tal cual: etiqueta, importe, año anterior, tipo (renglón, subtotal, total, resultado), lado (ingreso, gasto,
   financiero, impuesto), qué renglón del estado desglosa cada fila de nota, y la escala de cada bloque.
-- c) No suma, no convierte, no categoriza.
+- c) Una nota puede desglosar un renglón de otra nota (desglose anidado). De un cuadro por segmento toma solo la columna del segmento que
+  abre un renglón (UC: "Comerciales").
+- d) No suma, no convierte, no categoriza.
 
 Riesgos:
 - i) lado o tipo equivocados;
@@ -148,7 +150,7 @@ Mitigaciones:
 
 ### 6 Verificar
 
-- a) Notas: reemplazan a su renglón solo si suman. Se lee la estructura impresa: qué subtotal suma qué, cuadros de detalle que no se suman
+- a) Notas: reemplazan a su renglón solo si suman, también anidadas (una fila de una nota abierta por otro cuadro). Se lee la estructura impresa: qué subtotal suma qué, cuadros de detalle que no se suman
   dos veces, subtotales impresos arriba de sus componentes.
 - b) Resultado: ingresos − gastos ± financiero ± impuesto tiene que dar el resultado impreso.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
@@ -238,6 +240,8 @@ Pendientes, a decidir con casos reales:
 - **Una sola escala por documento:** descartado; la nota puede estar en miles y el estado en unidades (1. FC Köln).
 - **Escala por "plausibilidad" contra otros años del club:** inútil con inflación y años en otra moneda (Racing).
 - **Heurística de encabezados para el tipo de cambio:** 4 errores en 17 documentos. Se saca.
+- **"Las notas por segmento nunca se eligen":** descartada. En UC el desglose de "Ingresos Comerciales" solo está en la nota de segmentos.
+  Reemplazo: un cuadro por segmento se usa si la columna de un segmento desglosa un renglón (y tiene que sumar).
 - **Cierre de notas sumando todo** (la versión vieja de `verificar.mjs`): contaba dos veces los cuadros de detalle (UC, Betis, Athletic) y
   aceptaba notas que no cerraban por la tolerancia de 0,5% (Chapecoense).
 - **No construido todavía:** duplicados de PDF por huella; número citado en el texto como segundo chequeo; que una respuesta de la cola se vuelva
