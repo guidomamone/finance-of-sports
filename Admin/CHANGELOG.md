@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 333 — Serie oficial del peso chileno (CLP) (2026-10-01)
+
+- `fetch-fx-reference.mjs`: CLP, "dólar observado" del Banco Central de Chile publicado por el SII (HTML público, sin usuario; la API del Banco Central y la de la CMF piden credenciales). 6.666 cotizaciones, 2000-2026, en `tools/fx-reference/clp-usd.json`. `lookup-fx-close.js` y `alta-club.mjs` la conocen.
+- Verificada contra los 12 cierres que declaran UC (2016-2025) y Palestino (2018, 2019): 11 exactos y uno a 0,02, PERO tomando el primer día con dato posterior al cierre (el dólar observado de un día se publica al día siguiente). El lookup de hoy toma el hábil anterior y queda entre 0,04% y 0,85% lejos: decisión pendiente.
+
 ## Versión 332 — UC 2025 cargado: primer año del proceso nuevo en el sitio; costo de ventas "sin desglosar" (2026-10-01)
 
 - Universidad Católica 2025 escrito por `cargar.mjs --escribir`: ingresos 25.850.434, gastos 25.665.995, resultado −729.845 (miles de CLP), tipo de cambio 907,13 declarado. Auditoría P0 0 · P1 0. Visto en el sitio local: 28,5 / 28,3 / −0,8 M USD.

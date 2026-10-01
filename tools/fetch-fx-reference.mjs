@@ -27,6 +27,9 @@
 //   - UAH: Banco Nacional de Ucrania, tipo oficial.                   [2026-09-30]
 //   - KRW: Reserva Federal H.10 vía FRED (ECOS del Banco de Corea
 //     pide key).                                                        [2026-09-30]
+//   - CLP: dólar observado (Banco Central de Chile) tal como lo publica
+//     el SII, el fisco chileno; la API del BCCh y la de la CMF piden
+//     usuario/key.                                                      [2026-10-01]
 // Todas son endpoints públicos sin API key, pensados para descarga. Ninguna es
 // una tasa cruzada vía EUR: todas cotizan directo contra el USD.
 // ARS/BRL/COP verificadas 2026-09-27 dígito por dígito contra los valores YA
@@ -48,7 +51,7 @@
 // referencia desde `data/` ni desde ningún `<script src>` del sitio.
 //
 // USO:
-//   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 10)
+//   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 11)
 //   node tools/fetch-fx-reference.mjs --currency ARS   solo una
 //   node tools/fetch-fx-reference.mjs --currency COP --from 2015-01-01
 //   node tools/fetch-fx-reference.mjs --currency TRY --full   TRY desde cero
@@ -200,6 +203,62 @@ async function fetchNOK(from, to) {
     const v = parseFloat(cols[iVal]);
     if (cols[iDate] && Number.isFinite(v)) series[cols[iDate]] = v;
   }
+  return series;
+}
+
+// --- CLP: dólar observado, publicado por el SII -----------------------------
+// El Banco Central de Chile (API BDE, si3.bcentral.cl) y la CMF
+// (api.cmfchile.cl) piden usuario / API key, así que NO se usan. El SII
+// (Servicio de Impuestos Internos) publica el "dólar observado" que le informa
+// el Banco Central, una página HTML por año, sin registro. Dos layouts:
+//  - 2013 en adelante: sii.cl/valores_y_fechas/dolar/dolarAAAA.htm, un bloque
+//    <div id='mes_<mes>'> por mes, con filas de 3 pares (día, valor), decimal
+//    con punto, celdas vacías = día sin observado.
+//  - hasta 2012: sii.cl/pagina/valores/dolar/dolarAAAA.htm, una grilla
+//    día (filas 1-31) x mes (12 columnas), decimal con coma o con punto según
+//    el año (2005 punto, 2010 coma).
+const MESES_CL = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const clNum = (txt) => {
+  const t = txt.replace(/&nbsp;|\s/g, '').replace(',', '.');
+  const v = parseFloat(t);
+  return /^[\d.]+$/.test(t) && Number.isFinite(v) && v > 0 ? v : null;
+};
+async function fetchCLP(from, to) {
+  const series = {};
+  for (let y = +from.slice(0, 4); y <= +to.slice(0, 4); y++) {
+    const nuevo = y >= 2013;
+    const url = nuevo
+      ? `https://www.sii.cl/valores_y_fechas/dolar/dolar${y}.htm`
+      : `https://www.sii.cl/pagina/valores/dolar/dolar${y}.htm`;
+    const resp = await fetchRetry(url);
+    if (resp.status === 404) continue; // año todavía sin página
+    if (!resp.ok) throw new Error(`SII HTTP ${resp.status} para ${y}`);
+    const html = new TextDecoder('latin1').decode(await resp.arrayBuffer());
+    const put = (m, d, v) => {
+      if (v === null) return;
+      const iso = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+      if (iso >= from && iso <= to) series[iso] = v;
+    };
+    if (nuevo) {
+      MESES_CL.forEach((mes, i) => {
+        const a = html.indexOf(`id='mes_${mes}'`);
+        if (a < 0) return;
+        const b = html.indexOf(`id='mes_`, a + 10);
+        const bloque = html.slice(a, b < 0 ? undefined : b);
+        const re = /<th[^>]*><strong>(\d+)<\/strong><\/th>\s*<td[^>]*>([^<]*)<\/td>/g;
+        let m;
+        while ((m = re.exec(bloque))) put(i + 1, +m[1], clNum(m[2]));
+      });
+    } else {
+      const re = /<th id='f(\d+)'[^>]*>\d+<\/th>([\s\S]*?)<\/tr>/g;
+      let m;
+      while ((m = re.exec(html))) {
+        const celdas = [...m[2].matchAll(/<td[^>]*>([^<]*)<\/td>/g)].map((c) => c[1]);
+        celdas.forEach((c, i) => put(i + 1, +m[1], clNum(c)));
+      }
+    }
+  }
+  if (!Object.keys(series).length) throw new Error('SII: no se pudo leer ninguna cotización (¿cambió el HTML?)');
   return series;
 }
 
@@ -452,6 +511,37 @@ const CURRENCIES = {
   // desde 2000.
   KRW: { file: 'krw-usd.json', label: 'KRW por 1 USD (Reserva Federal H.10, noon buying rate Nueva York)', fetch: fetchKRW, defaultFrom: '2000-01-01',
     source: 'Federal Reserve Board H.10 (serie DEXKOUS) vía FRED, fred.stlouisfed.org/graph/fredgraph.csv' },
+  // CLP — dólar observado (Banco Central de Chile), tal como lo publica el SII.
+  // Qué tasa es: el "dólar observado" del Banco Central de Chile: promedio
+  // ponderado de las transacciones interbancarias en dólares de cada día hábil,
+  // que el Banco Central informa al día siguiente hábil y que el SII publica
+  // (es la que el fisco usa para valuar moneda extranjera) y la que declaran los
+  // balances chilenos al cierre. Directa contra el USD. Dirección: CLP por 1 USD
+  // (~500-600 en 2000-2013, ~1.000 en 2024-25). Días sin dato: fines de semana y
+  // feriados chilenos; OJO: el observado de un día se fija con el mercado de ESE
+  // día pero el SII/BCCh lo publican al hábil siguiente — la fecha de la serie es
+  // la del día de vigencia tal como figura en la tabla del SII.
+  // VERIFICADO 2026-10-01 contra los tipos de cierre declarados por Universidad
+  // Católica (31/12/2016-2025) y Palestino (30/6/2018 y 2019): los 12 coinciden
+  // CON EL VALOR DE LA SERIE DEL PRIMER DÍA CON DATO POSTERIOR a la fecha de
+  // cierre (2016: 669,47 = 3/1/2017; 2018: 694,77 = 2/1/2019; 2023: 877,12 =
+  // 2/1/2024; 2025: 907,13 = 2/1/2026; Palestino 651,21 = 3/7/2018, 679,15 =
+  // 1/7/2019), exacto al centavo en 11 y a 0,02 en uno (2024: 996,48 vs 996,46).
+  // NO coinciden con el último día hábil ANTERIOR, que es lo que hace
+  // lookup-fx-close.js por defecto (diferencias de -0,55% a +0,85%): el 31/12
+  // no es día bancario en Chile y los balances usan el observado que rige/publica
+  // el primer hábil siguiente. Para un club chileno, tomar el valor de la serie de
+  // la primera fecha >= cierre, no la anterior.
+  // POR QUÉ EL SII Y NO EL BANCO CENTRAL: la API BDE del BCCh
+  // (si3.bcentral.cl/SieteRestWS) exige usuario y contraseña, y la API de la CMF
+  // (api.cmfchile.cl, ex SBIF) exige API key; el Banco Mundial solo tiene
+  // promedios anuales; FRED/H.10 no incluye CLP. mindicador.cl funciona sin key
+  // pero es un agregador privado, no una fuente oficial, y no se usa. El SII es
+  // un organismo del Estado y publica la misma cifra del Banco Central.
+  // Datos desde 1990; se baja desde 2000 (hasta 2012 la página antigua, desde
+  // 2013 la nueva; ver fetchCLP para los dos layouts).
+  CLP: { file: 'clp-usd.json', label: 'CLP por 1 USD (dólar observado, Banco Central de Chile, publicado por el SII)', fetch: fetchCLP, defaultFrom: '2000-01-01',
+    source: 'SII, sii.cl/valores_y_fechas/dolar/dolarAAAA.htm (desde 2013) y sii.cl/pagina/valores/dolar/dolarAAAA.htm (hasta 2012)' },
 };
 
 function parseArgs() {

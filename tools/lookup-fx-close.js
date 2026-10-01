@@ -48,6 +48,7 @@ const CURRENCIES = {
   TRY: { file: 'try-usd.json', fuente: 'Döviz alış del TCMB' },
   RUB: { file: 'rub-usd.json', fuente: 'Tipo oficial del Banco de Rusia' },
   UAH: { file: 'uah-usd.json', fuente: 'Tipo oficial del Banco Nacional de Ucrania' },
+  CLP: { file: 'clp-usd.json', fuente: 'Dólar observado (Banco Central de Chile, publicado por el SII)' },
   KRW: { file: 'krw-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
 };
 

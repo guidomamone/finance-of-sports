@@ -152,7 +152,7 @@
 //                  declara nada: `FX_CLOSE` de `data/currency-map.js` si ya tiene
 //                  esa fecha (`fxRef`), si no la serie local de
 //                  `tools/fx-reference/` (la de `tools/lookup-fx-close.js`: ARS, BRL,
-//                  COP, NOK, CZK, CHF, TRY, RUB, UAH, KRW), si no `pendiente` ("correr fetch-fx-reference.mjs").
+//                  COP, NOK, CZK, CHF, TRY, RUB, UAH, KRW, CLP), si no `pendiente` ("correr fetch-fx-reference.mjs").
 // reportType       'official_balance_sheet' si el documento nombra un estado contable
 //                  Y trae filas con números (10+ filas de tabla o líneas con 2+ montos:
 //                  un dictamen de auditor nombra los estados sin traerlos); `pregunta`
@@ -346,7 +346,7 @@ const NOMBRE_PAIS_ES = { DE: 'Alemania', AR: 'Argentina', AT: 'Austria', BR: 'Br
 //   RUB 23,13 (2008-07) – 120,38 (2022-03)   -> [20, 140]
 //   UAH 4,84 (2008-07) – 44,98 (2026-06)     -> [4.5, 60]
 //   KRW 903,2 (2007-10) – 1.570,1 (2009-03)  -> [800, 1800]
-// Las monedas sin serie local (CLP, PEN, EUR, GBP, DKK, CNY, JPY, MXN...) quedan como estaban.
+// Las monedas sin serie local (PEN, EUR, GBP, DKK, CNY, JPY, MXN...) quedan como estaban.
 // OJO: esta tabla es la de alta-club.mjs (filtra candidatos del texto y es lo que `--escribir` copia a
 // FX_PLAUSIBLE_RANGE cuando la moneda es NUEVA). El rango del sitio vive en data/currency-map.js
 // (FX_PLAUSIBLE_RANGE) y no se edita desde acá.
@@ -674,10 +674,10 @@ function fechaDeColumna(md, item) {
 }
 
 // Series locales de tools/fx-reference/ (las mismas que lee tools/lookup-fx-close.js).
-const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json' };
+const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json', CLP: 'clp-usd.json' };
 const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda) del Banco Central do Brasil', COP: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)',
   NOK: 'Tipo medio de referencia de Norges Bank', CZK: 'Fixing del Česká národní banka', CHF: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
-  TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' };
+  TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CLP: 'Dólar observado (Banco Central de Chile, publicado por el SII)' };
 function fxDeSerie(moneda, fecha) {
   const f = SERIES_FX[moneda];
   if (!f) return { error: `sin serie local para ${moneda} (hoy solo ${Object.keys(SERIES_FX).join(', ')})` };
