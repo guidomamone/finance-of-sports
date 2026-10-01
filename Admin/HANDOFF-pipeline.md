@@ -22,11 +22,9 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**UC 2018-2020: esperando el reintento** (las tres dan "cuotas sociales en 0" y UC tiene socios).
+**Por elegir el próximo documento.**
 
-- Cargados en los datos del sitio (commiteados, sin push): UC 2021 y 2025.
-- UC 2018, 2019 y 2020: pasan la verificación (la cadena de años vecinos coincide al peso) y quedan frenados en la etapa 8 por el reintento.
-  Comando: `caffeinate -i node tools/lote.mjs --lista Admin/lote-05.txt --ejecutar --reintentar` (~US$ 0,41).
+- Universidad Católica (Cruzados): 2018-2025 cargados en los datos del sitio (commiteados, sin push). Quedan 2009-2017 transcriptos.
 - Espera a Guido: publicar (merge de la rama a `main` y push; `main` ya tiene 49 commits sin pushear, que salen juntos).
 - Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (hoy ningún año cargado lo usa).
 - Encontrado por el subagente del perfil, en datos ya publicados (sin tocar): Almagro tiene "Sede Social - Medrano 522" como cuotas sociales;
@@ -34,8 +32,7 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 **Próximo paso:**
 
-- Correr el reintento de UC 2018-2020 y, si da CARGA, escribirlos.
-- Diseño por proponer: que la cola no repita una duda ya contestada cuando la IA la redacta distinto (hoy la reconoce por el texto).
+- Elegir el próximo documento: seguir con UC 2015-2017, o pasar a un club de otro país para ver qué se rompe en otro formato.
 - Diseño aprobado, sin construir: precedente de categoría con contexto (etiqueta + renglón que desglosa).
 - Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
 
@@ -238,6 +235,9 @@ Qué pasa después:
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
 - Para fijar la categoría de una fila sin que haya un caso: `node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."`.
 - La próxima corrida toma la respuesta.
+- Las dudas de la IA traen un tema de una lista fija (usar un cuadro por segmento, cuadro duplicado, cuadro de otro año, perímetro, escala,
+  columna, fila ilegible, otro) y el renglón al que afectan. Una duda de tema fijo se reconoce por club + tema + renglón: si Guido ya la
+  contestó en cualquier año del club, se aplica sola.
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
 - Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/categorias-aprendidas.jsonl`).
