@@ -30,6 +30,7 @@
 //   node tools/cola.mjs --responder <id> aceptar
 //   node tools/cola.mjs --responder <id> corregir --valor "1.234.567" --nota "en el PDF dice 1.234.567, Mistral leyó 1.284.567"
 //   node tools/cola.mjs --responder <id> preguntar-club --nota "¿el ingreso por transferencias es bruto o neto?"
+//   node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."   (fija la categoría de una fila, ver abajo)
 //   import { agregarCaso, respuestaDe, pendientes } from './cola.mjs';
 // ============================================================================
 
@@ -119,6 +120,20 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  // --corregir-categoria (Versión 332): Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
+  // 2025: "Costo de ventas" sin desglose -> "sin desglosar por la fuente", no "Otros gastos"). Crea el caso y su respuesta de una vez; la toma
+  // cargar.mjs en la próxima corrida (respuestaCat) y queda como precedente del club. La etiqueta se escribe como en el documento.
+  if (A.includes('--corregir-categoria')) {
+    const i = A.indexOf('--corregir-categoria'); const [pdf, etiqueta, categoria] = A.slice(i + 1, i + 4);
+    if (!pdf || !etiqueta || !categoria) { console.error('Uso: node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta tal cual>" <categoría> [--nota "..."]'); process.exit(1); }
+    const mapa = readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8');
+    if (!new RegExp(`^\\s*${categoria}: '`, 'm').test(mapa)) { console.error(`"${categoria}" no es una categoría de data/category-map.js`); process.exit(1); }
+    const { normalizar } = await import('./vocabulario.mjs');
+    const id = agregarCaso({ pdf, md: pdf.replace(/\.pdf$/i, '.md'), etapa: 'cargar', motivo: 'categoria', detalle: normalizar(etiqueta), categoriaPropuesta: categoria, que: `Corrección de Guido: "${etiqueta}" va como ${categoria}.` });
+    appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'aceptar', valor: null, nota: flag('--nota') }) + '\n');
+    console.log(`Categoría fijada (${id}): "${etiqueta}" -> ${categoria}. La toma cargar.mjs en la próxima corrida.`);
+    process.exit(0);
+  }
   if (A.includes('--responder')) {
     const id = flag('--responder'); const decision = A[A.indexOf('--responder') + 2];
     const { casos } = leer();

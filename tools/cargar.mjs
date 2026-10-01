@@ -333,8 +333,8 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const respuestaCat = (label) => {
     const { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', norm(label));
     if (!resp || !caso) return null;
-    if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta };
-    if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim() };
+    if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: resp.nota || null };
+    if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: resp.nota || null };
     if (resp.decision === 'descartar') return { descartar: true };
     return null;
   };
@@ -344,7 +344,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...catDe(r.label, r.tside) };
     const rg = respuestaCat(r.label);
     if (rg?.cat) {
-      Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true });
+      Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
       if (lado && !aprendidasYa.includes(`"label":${JSON.stringify(r.label)},"glosa":null,"categoria":${JSON.stringify(rg.cat)},"confianza":1`)) appendFileSync(ARCHIVO_APRENDIDAS, JSON.stringify({ ts: new Date().toISOString(), club: clubId, year: year != null ? String(year) : null, lado, label: r.label, glosa: null, categoria: rg.cat, confianza: 1, motivo: 'respuesta de Guido en la cola humana (cargar.mjs)', jevDecia: null, jevConf: null, modelo: 'guido', md: e.md }) + '\n');
     }
@@ -535,11 +535,17 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // Alianza Lima 2023, cargada a mano: "Ingresos y gastos financieros, neto" y "Diferencia de cambio, neta" por separado).
   const extraRows = cierraPat && metaFilas.length >= 2 ? metaFilas.map((f) => ({ label: limpiar(f.label), value: r6(cierraPat.L.v(f)) })) : null;
   const disclosure = (f) => (/^nota|lista|cierre|precedente/.test(f.origen || '') ? 'detailed' : 'aggregated');
+  // SIN DESGLOSE (Versión 332, pedido de Guido para UC 2025: "la página tiene que decir No declarado sin romper las sumas"). Una línea que va
+  // a la categoría "sin desglosar por la fuente" (lump_football_operations / _expense) queda además anotada en fiscalYearMeta.sinDesglose, con
+  // el motivo (la nota de Guido en la cola, si la hay). Hoy la página no lee este campo: es la marca para que otra sesión muestre "No
+  // declarado" en las categorías que esa línea esconde (UC 2025: los sueldos del plantel están adentro del costo de ventas). Las sumas no
+  // cambian: el importe está una sola vez, en la línea.
+  const sinDesglose = [...rev, ...exp].filter((f) => /^lump_football_operations/.test(f.cat || '')).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón' }));
   P.ejercicio = {
     clubId, year, cierre: alta.ejercicio.cierre, perimetro,
     revenueLines: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf })),
     expenseLines: exp.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf })),
-    fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
+    fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
   P.resumen = { carga: P.frena.length === 0, motivos: P.frena.length, lineasIngreso: rev.length, lineasGasto: exp.length, metaFilas: metaFilas.length, excluidas: filas.filter((f) => f.destino === 'excluida').length };
@@ -615,7 +621,7 @@ export function escribir(P) {
     src = insertarEnObjeto(src, `const ${vExp} = {`, `  ${y}: [ // tools/cargar.mjs (${HOY})\n${E.expenseLines.map(linea).join('')}  ],\n`, dataRel);
     const M = E.fiscalYearMeta;
     const fxTxt = M.fxRef ? `fxRef:${js(M.fxRef)}` : M.fx != null ? `fx:${num(M.fx)}, fxSource:${js(M.fxSource)}` : '';
-    const metaTxt = `  ${y}: { // tools/cargar.mjs (${HOY}). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:null,\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}    grossDebt:null, cash:null,\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
+    const metaTxt = `  ${y}: { // tools/cargar.mjs (${HOY}). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:null,\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}${M.sinDesglose ? `    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).\n    sinDesglose: [\n${M.sinDesglose.map((x) => `      {renglon:${js(x.renglon)}, lado:${js(x.lado)}, importe:${num(x.importe)}, motivo:${js(x.motivo)}},\n`).join('')}    ],\n` : ''}    grossDebt:null, cash:null,\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
     src = insertarEnObjeto(src, `const ${vMeta} = {`, metaTxt, dataRel);
     const S = E.source;
     src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n    note:${js(S.note)},\n  },\n`, dataRel);

@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 332 — UC 2025 cargado: primer año del proceso nuevo en el sitio; costo de ventas "sin desglosar" (2026-10-01)
+
+- Universidad Católica 2025 escrito por `cargar.mjs --escribir`: ingresos 25.850.434, gastos 25.665.995, resultado −729.845 (miles de CLP), tipo de cambio 907,13 declarado. Auditoría P0 0 · P1 0. Visto en el sitio local: 28,5 / 28,3 / −0,8 M USD.
+- "Costo de ventas" (20.985.893, sin desglose porque la Nota 20 del documento trae la tabla equivocada) va a `lump_football_operations_expense` ("sin desglosar por la fuente"); sueldos del plantel se ve "—". Marca nueva `fiscalYearMeta.sinDesglose` (renglón, importe, motivo), que la página todavía no lee.
+- `cola.mjs --corregir-categoria`: Guido fija la categoría de una fila aunque la categorización no haya tenido dudas. `cargar.mjs`: escribe `sinDesglose` para toda línea "sin desglosar".
+- Visto y pendiente: "Salarios / Ingresos" muestra 0% para UC 2025 (los sueldos están adentro del costo de ventas).
+
 ## Versión 331 — Categoría dudosa a la cola en la etapa 8; UC 2025 da "CARGA" (2026-10-01)
 
 - `cargar.mjs`: una fila con categoría menor a 0,80 va a la cola como pregunta de sí o no, cuenta en las sumas con la categoría propuesta y el documento frena con "N filas esperan categoría" (antes quedaba afuera y frenaba con un "no cierra" engañoso). La respuesta de Guido gana sobre cualquier categoría de esa fila y se guarda en `Admin/categorias-aprendidas.jsonl` con confianza 1 (precedente del club). `cola.mjs`: `casoYRespuesta()`.
