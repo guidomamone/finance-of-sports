@@ -22,19 +22,22 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Por elegir un nuevo club** (o seguir con UC 2010-2020).
+**UC 2018-2020: esperando el reintento** (las tres dan "cuotas sociales en 0" y UC tiene socios).
 
-- Últimos documentos: Universidad Católica (Cruzados) 2021 y 2025. Cargados en los datos del sitio, commiteados en la rama, sin push.
-  En 2025 el costo de ventas y los ingresos comerciales se abren con el cuadro por segmento.
+- Cargados en los datos del sitio (commiteados, sin push): UC 2021 y 2025.
+- UC 2018, 2019 y 2020: pasan la verificación (la cadena de años vecinos coincide al peso) y quedan frenados en la etapa 8 por el reintento.
+  Comando: `caffeinate -i node tools/lote.mjs --lista Admin/lote-05.txt --ejecutar --reintentar` (~US$ 0,41).
 - Espera a Guido: publicar (merge de la rama a `main` y push; `main` ya tiene 49 commits sin pushear, que salen juntos).
-- Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" donde un renglón no está desglosado (hoy
-  ningún año cargado lo usa; UC 2025 ya no lo necesita).
+- Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (hoy ningún año cargado lo usa).
+- Encontrado por el subagente del perfil, en datos ya publicados (sin tocar): Almagro tiene "Sede Social - Medrano 522" como cuotas sociales;
+  Grêmio, "Receitas Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
 
 **Próximo paso:**
 
-- Elegir el próximo documento (UC tiene 2010-2020 transcriptos sin cargar; ver "Cómo arranca la próxima sesión").
+- Correr el reintento de UC 2018-2020 y, si da CARGA, escribirlos.
 - Diseño por proponer: que la cola no repita una duda ya contestada cuando la IA la redacta distinto (hoy la reconoce por el texto).
 - Diseño aprobado, sin construir: precedente de categoría con contexto (etiqueta + renglón que desglosa).
+- Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
 
 ---
 
@@ -200,12 +203,33 @@ Mitigaciones:
 
 ### Camino de error (reintento)
 
-- Si un desglose (una nota, o un cuadro que abre una fila de una nota) no suma, la verificación no frena (queda el renglón, que es correcto)
-  pero marca el documento para reintentar.
+El camino limpio no cambia: si todo suma y nada falta, el documento sigue. Las reglas extra viven acá (regla de Guido: "para cuando haya
+errores"). Un documento se marca para reintentar por dos motivos:
+
+- a) **Un desglose no suma** (una nota, o un cuadro que abre una fila de una nota). Lo detecta la etapa 6.
+- b) **Una categoría da 0 cuando debería tener número.** Lo detecta la etapa 8 (ahí ya hay categorías):
+  - salarios del plantel, televisión o estadio en 0: siempre (en 241 años cargados, salarios nunca es 0, televisión 2%, estadio 1%);
+  - cuotas sociales en 0: solo si el perfil del club dice que tiene socios;
+  - otras secciones deportivas en 0: solo si el perfil dice que tiene otros deportes (básquet, vóley, futsal...);
+  - educación nunca dispara;
+  - un documento con una línea "sin desglosar por la fuente" no se revisa.
+
+Qué pasa después:
+
 - Al final del lote aparece la lista y el comando: `caffeinate -i node tools/lote.mjs --lista <lista> --ejecutar --reintentar`.
-- El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y a extraer con la lista de lo que no
-  sumó. Una sola vez por documento; si sigue sin sumar, queda el renglón sin abrir.
-- Regla de Guido: las reglas extra van acá, en el camino de error, no en el camino limpio.
+- El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y con la lista de lo que faltó, y
+  extrae con esa misma lista (y la regla de usar la columna de totales de un cuadro por segmento para un renglón del estado).
+- Una sola vez por documento. Si sigue faltando, se carga con aviso.
+
+### Perfil de cada club
+
+- Archivo `Admin/perfil-clubes.jsonl`, se lee con `node tools/perfil-clubes.mjs [clubId]`.
+- Dos datos por club: ¿tiene socios que pagan cuota?, ¿tiene otros deportes en sus estados financieros? Sí, no o no se sabe, con evidencia.
+- Hoy: los 66 clubes sudamericanos (armado por un subagente con lo cargado y las transcripciones). Socios: 49 sí, 11 no, 6 no se sabe.
+  Otros deportes: 31 sí, 25 no, 10 no se sabe. Criterio aceptado por Guido: "clube social e esportes amadores" que además nombra básquet,
+  vóley, futsal o remo cuenta como otros deportes.
+- Si un club no está o dice "no se sabe" y la categoría da 0: pregunta de sí o no en la cola. Guido contesta o manda un agente a buscar; la
+  respuesta queda en el perfil para todos los años del club.
 
 ### Cola humana
 
