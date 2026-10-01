@@ -175,3 +175,24 @@ if (aReintentar.length) {
   console.log(`  Reintento con índice ampliado (~US$ 0,30 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
 }
 console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node tools/gasto.mjs). Cola humana de este lote: ${cola.length} caso(s) -> node tools/cola.mjs`);
+
+// RESULTADO (Versión 351, pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de
+// carga (<doc>.carga.json) de CADA documento de la lista, no solo de los que pasaron por la etapa 8 en esta corrida (en un --reintentar la
+// etapa 8 corre solo sobre los reintentados). "Ya en el sitio" va aparte: un año ya cargado frena por diseño (cargar.mjs no pisa un
+// ejercicio), y contarlo como frenado escondería los frenados de verdad.
+const resultado = { listo: [], frenado: [], yaCargado: [], sinPropuesta: [] };
+for (const pdf of docs.filter((d) => !testigos.has(d))) {
+  const e = registro.find((x) => x.pdf === pdf); const c = e?.md ? leerDerivado(e, '.carga.json') : null;
+  const anio = c?.year || (pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1] || pdf;
+  if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });
+  else if (!(c.frena || []).length) resultado.listo.push({ anio });
+  else if ((c.frena || []).some((f) => f.etapa === 'año' && /ya tiene el ejercicio/.test(f.motivo))) resultado.yaCargado.push({ anio });
+  else resultado.frenado.push({ anio, motivo: `[${c.frena[0].etapa}] ${String(c.frena[0].motivo).slice(0, 110)}` });
+}
+const anios = (xs) => xs.map((x) => x.anio).sort().join(', ');
+console.log('\n=== RESULTADO ===');
+console.log(`Listo para cargar ${resultado.listo.length}${resultado.listo.length ? `   (${anios(resultado.listo)})` : ''}`);
+console.log(`Frenados ${resultado.frenado.length}`);
+for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(String(b.anio)))) console.log(`   ${x.anio}: ${x.motivo}`);
+if (resultado.yaCargado.length) console.log(`Ya en el sitio ${resultado.yaCargado.length}   (${anios(resultado.yaCargado)})`);
+if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resultado.sinPropuesta.length}`); for (const x of resultado.sinPropuesta) console.log(`   ${x.anio}: ${x.motivo}`); }

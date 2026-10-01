@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 351 — El lote termina con "Listo para cargar Y" y "Frenados X" (2026-10-01)
+
+- `lote.mjs`: bloque RESULTADO al final de la corrida, con la última propuesta de carga de cada documento de la lista (también los que no pasaron por la etapa 8 en esa corrida): listos (con años), frenados (año y primer motivo), ya en el sitio y sin propuesta. Pedido de Guido. Probado sobre los archivos del lote 07: 8 listos (2010-2017), 0 frenados, 8 ya en el sitio.
+
 ## Versión 350 — En la cola, "obsoleto" es un estado y no una respuesta; un caso que vuelve a aparecer se reabre (2026-10-01)
 
 - `cola.mjs`: solo cuentan como respuesta las de Guido (aceptar, corregir, descartar, preguntar-club). "obsoleto" y "reabierto" son estados. `agregarCaso` reabre un caso cerrado como obsoleto que una etapa vuelve a levantar; `pendientes()` y `cola.mjs` lo muestran. Antes: `cargar.mjs` frenaba por un caso que la cola no mostraba (UC 2013, "Otras ganancias (pérdidas)", regresión de la Versión 348) y `verificar.mjs` daba por contestado un chequeo fallado que había vuelto. `cargar.mjs`: sin la excepción por 'obsoleto' (ya no hace falta).
