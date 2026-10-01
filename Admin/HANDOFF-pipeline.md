@@ -33,9 +33,11 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - La Nota 20 del PDF trae la tabla equivocada (error del club): el costo de ventas (20.985.893, el 77% del gasto) no tiene desglose.
   **Decisión de Guido: UC 2025 no se carga hasta que el club mande la nota** (en una sola línea, "sueldos del plantel" quedaría en 0 en 2025,
   contra 9.140.947 en 2024). Pedido anotado en `Admin/dudas-por-club.md`.
-- Segunda corrida: la verificación da OK y la cola quedó vacía. La etapa 8 frena porque 3 filas tienen categoría con menos de 0,80 y la carga
-  las deja afuera (entonces no cierra). Respuestas de Guido, a aplicar cuando exista la cola de categorías: "Transporte" 54.199, "Arriendo de
-  Bienes" 263.339 y "Provisión No Operacionales" 4.570 van como **gastos de administración** (`admin_general_expense`).
+- Segunda corrida: la verificación da OK y la cola quedó vacía. La etapa 8 frenaba por 3 filas con categoría menor a 0,80; ahora van a la
+  cola, Guido las contestó (gastos de administración) y **la propuesta de carga da CARGA**: ingresos 25.850.434, gastos 25.665.995, resultado
+  −729.845 (igual al impreso), tipo de cambio 907,13. El sitio todavía no se escribió.
+- Decisión de Guido (revisada): UC 2025 **se carga**, pero el costo de ventas sin desglose tiene que verse como "No declarado" sin romper
+  sumas. Diseño propuesto, esperando su ok (ver "Próximo paso").
 
 **Cambios hechos después de esa corrida (commiteados):**
 
@@ -52,10 +54,9 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 **Próximo paso:**
 
-- Con el ok de Guido: que la etapa 8 mande a la cola, como pregunta de sí o no, cada fila con categoría menor a 0,80, y que frene con "N filas
-  esperan categoría" en vez de "no cierra". La respuesta queda como precedente del club.
+- Ok de Guido al diseño de "No declarado" para UC 2025; después escribir UC 2025 en el sitio (`cargar.mjs --escribir`) y commitearlo.
+- Medir si una respuesta de categoría puede valer como precedente para otros clubes (pregunta de Guido).
 - Agregar CLP, EUR, DKK y GBP al script de series oficiales.
-- Elegir el próximo documento (UC 2025 queda esperando al club).
 
 ---
 
@@ -224,8 +225,9 @@ Mitigaciones:
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
 - La próxima corrida toma la respuesta.
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
-  localizar y de extraer que afectan la carga.
-- Falta: que una respuesta se vuelva regla para los años siguientes del club.
+  localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
+- Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/categorias-aprendidas.jsonl`).
+- Falta: que otras respuestas (convenciones de un grupo de países) se vuelvan regla.
 
 ---
 
