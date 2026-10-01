@@ -301,7 +301,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const ls = (d.texto.match(/\bL(\d+)\b/g) || []).map((x) => Number(x.slice(1)));
       const lineas = ls.length ? [Math.min(...ls), Math.max(...ls)] : b ? b.lineas : null;
       const pagina = ls.length ? paginaDeLinea(md, ls[0]) ?? b?.pagina : b?.pagina ?? estado[0]?.pagina;
-      caso(`duda-de-${origen}`, d.texto.slice(0, 80), `La IA de ${origen === 'localizar' ? 'localizar (qué bloques son el estado y sus notas)' : 'extraer (las filas)'} dejó esta duda: ${d.texto}`, { pagina, lineas });
+      // PREGUNTA DE SÍ O NO (pedido de Guido, 2026-10-01: "necesito que me hagas la pregunta concreta, no exploratoria"). Desde este cambio
+      // localizar y extraer escriben cada duda como una pregunta que se contesta sí o no, con su propuesta; la cola muestra eso. Las dudas en
+      // formato viejo (sin `pregunta`) se muestran con su texto, como antes.
+      const que = d.pregunta ? `${d.pregunta}  (por qué: ${d.texto})` : `La IA de ${origen === 'localizar' ? 'localizar (qué bloques son el estado y sus notas)' : 'extraer (las filas)'} dejó esta duda: ${d.texto}`;
+      caso(`duda-de-${origen}`, (d.pregunta || d.texto).slice(0, 80), que, { pagina, lineas, propuesta: d.propuesta ? `${d.propuesta} (responder aceptar si estás de acuerdo; corregir --valor "${d.propuesta === 'sí' ? 'no' : 'sí'}" si no)` : null });
     }
   }
 

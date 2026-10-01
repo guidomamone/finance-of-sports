@@ -54,7 +54,7 @@ const SCHEMA = {
     columna_anterior: { type: ['string', 'null'] },
     perimetro: { type: 'string', enum: ['individual', 'consolidado', 'ambos', 'no se sabe'] },
     necesito_ver: { type: 'array', items: { type: 'string' } },
-    dudas: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['texto', 'bloques', 'afecta_carga'], properties: { texto: { type: 'string' }, bloques: { type: 'array', items: { type: 'string' } }, afecta_carga: { type: 'boolean' } } } },
+    dudas: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['pregunta', 'propuesta', 'texto', 'bloques', 'afecta_carga'], properties: { pregunta: { type: 'string' }, propuesta: { type: 'string', enum: ['sí', 'no'] }, texto: { type: 'string' }, bloques: { type: 'array', items: { type: 'string' } }, afecta_carga: { type: 'boolean' } } } },
     observaciones: { type: 'string' },
   },
 };
@@ -68,7 +68,7 @@ NO elijas: balance (activo/pasivo), flujo de efectivo, evolución del patrimonio
 - Si hay estado consolidado e individual: elegí el consolidado salvo que te indique otro perímetro; poné perimetro "ambos" y explicá en observaciones qué bloque es de cuál.
 - escala del estado (y la frase que lo dice en escala_evidencia), moneda (ISO), y los encabezados de la columna del ejercicio pedido y de la del año anterior.
 - Si para decidir necesitás ver un bloque entero, ponelo en necesito_ver (máximo 6) y no lo elijas todavía.
-- Lo que no puedas resolver con lo que ves, escribilo en dudas (una frase cada una): lo va a mirar una persona. No adivines. Cada duda: texto (una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
+- Lo que no puedas resolver con lo que ves, escribilo en dudas (una frase cada una): lo va a mirar una persona. No adivines. Cada duda: pregunta (UNA pregunta concreta que una persona contesta con sí o no mirando el PDF: qué tabla o fila, qué importe, qué se haría; ej. "¿Se deja afuera de la carga el cuadro 'Venta de jugadores al 31-12-2024' (L4070-L4072)?"), propuesta (sí o no: lo que harías vos), texto (por qué, una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 
 function pedido(pdf, registro, sitio) {
   const e = registro.find((x) => x.pdf === pdf) || {};
@@ -107,7 +107,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const r = await localizar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });
     if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ~${r.tokens} tokens, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.error) console.log(`  ERROR ${pdf}: ${r.error}`);
-    else { usd += r.costo; const d = r.datos; console.log(`  ${pdf}: ${d.sin_estado ? 'SIN ESTADO DE RESULTADOS' : `estado ${d.estado.join(',')} · notas ingresos ${d.notas_ingresos.join(',') || '-'} · notas gastos ${d.notas_gastos.join(',') || '-'} · ${d.escala} (${d.escala_evidencia}) · ${d.perimetro}`}${d.dudas?.length ? ` · DUDAS: ${d.dudas.map((x) => (typeof x === 'string' ? x : `${x.texto}${x.afecta_carga ? '' : ' (no afecta la carga)'}`)).join(' | ')}` : ''}`); }
+    else { usd += r.costo; const d = r.datos; console.log(`  ${pdf}: ${d.sin_estado ? 'SIN ESTADO DE RESULTADOS' : `estado ${d.estado.join(',')} · notas ingresos ${d.notas_ingresos.join(',') || '-'} · notas gastos ${d.notas_gastos.join(',') || '-'} · ${d.escala} (${d.escala_evidencia}) · ${d.perimetro}`}${d.dudas?.length ? ` · DUDAS: ${d.dudas.map((x) => (typeof x === 'string' ? x : `${x.pregunta || x.texto} [propuesta: ${x.propuesta || '?'}]${x.afecta_carga ? '' : ' (no afecta la carga)'}`)).join(' | ')}` : ''}`); }
   }
   console.log(`\n${ARGS.includes('--ejecutar') ? 'Gastado' : 'Costo estimado'}: US$ ${usd.toFixed(2)}${ARGS.includes('--ejecutar') ? '' : ' (ensayo: agregá --ejecutar)'}`);
 }

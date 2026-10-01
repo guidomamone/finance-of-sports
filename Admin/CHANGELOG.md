@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 329 — Dudas de la IA como preguntas de sí o no (2026-10-01)
+
+- `localizar.mjs` y `extraer.mjs`: cada duda trae `pregunta` (concreta, se contesta sí o no mirando el PDF) y `propuesta` (sí/no), además del porqué. `verificar.mjs` y `cola.mjs` muestran la pregunta y la propuesta. Pedido de Guido: la cola mostraba explicaciones exploratorias. Dudas en el formato anterior se muestran como antes.
+
 ## Versión 328 — Tipo de cambio: con varios valores en una tabla, gana la fecha más nueva (2026-10-01)
 
 - `alta-club.mjs`: si el documento declara más de un tipo de cambio y están en una fila de tabla cuyo encabezado tiene una fecha completa por columna, gana la columna con la fecha más nueva (decisión de Guido). Frases, años sueltos o filas que no se corresponden con el encabezado siguen yendo a la pregunta (cola).
