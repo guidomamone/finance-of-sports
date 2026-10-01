@@ -49,7 +49,9 @@ const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); con
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
 const REINTENTAR = ARGS.includes('--reintentar');
-const verifDe = (e) => { try { const p = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false })); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
+const leerDerivado = (e, suf) => { try { const p = resolve(ROOT, derivado(e.md, suf, { crear: false })); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
+// Lo que hay que reintentar: desgloses que no suman (verificar.mjs) y categorías en 0 que deberían tener número (cargar.mjs, Versión 340).
+const verifDe = (e) => { const v = leerDerivado(e, '.verificacion.json') || {}; const c = leerDerivado(e, '.carga.json') || {}; const r = [...(v.reintentar || []), ...(c.reintentar || [])]; return { ...v, reintentar: r.length ? r : null }; };
 if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer]'); process.exit(1); }
 // TESTIGOS (Versión 334, ok de Guido): una línea "testigo <pdf>" es un documento que entra SOLO para verificar a otro (su columna "año
 // anterior" contra el año actual del otro: chequeo de año vecino de verificar.mjs). Pasa por localizar, validar y extraer, y nada más: no se
@@ -75,7 +77,7 @@ for (const pdf of docs) {
   if (!e?.md) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
   const reintento = REINTENTAR ? verifDe(e)?.reintentar || null : null;
   if (REINTENTAR && !reintento) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
-  const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento });
+  const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento, reintento });
   if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
@@ -118,8 +120,8 @@ const cola = pendientes().filter((c) => docs.includes(c.pdf));
 // Camino de error: qué documentos quedaron con desgloses que no suman y todavía no se reintentaron.
 const aReintentar = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); return e?.md && verifDe(e)?.reintentar; });
 if (aReintentar.length) {
-  console.log(`\nDESGLOSES QUE NO SUMAN (camino de error, una vez por documento):`);
-  for (const d of aReintentar) console.log(`  ${d.split('/').slice(2).join('/')}: ${verifDe(registro.find((x) => x.pdf === d)).reintentar.map((x) => `"${x.renglon}" ${x.suma} contra ${x.objetivo}`).join('; ')}`);
+  console.log(`\nREINTENTOS PENDIENTES (camino de error, una vez por documento: desgloses que no suman o categorías en 0 que deberían tener número):`);
+  for (const d of aReintentar) console.log(`  ${d.split('/').slice(2).join('/')}: ${verifDe(registro.find((x) => x.pdf === d)).reintentar.map((x) => (x.categoria ? `"${x.categoria}" en 0` : `"${x.renglon}" ${x.suma} contra ${x.objetivo}`)).join('; ')}`);
   console.log(`  Reintento con índice ampliado (~US$ 0,30 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
 }
 console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node tools/gasto.mjs). Cola humana de este lote: ${cola.length} caso(s) -> node tools/cola.mjs`);

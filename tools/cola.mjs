@@ -154,7 +154,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     for (const c of cs) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : ''}`);
-      console.log(`      ${(c.motivo.startsWith('duda-de-') || c.motivo === 'categoria' || c.motivo === 'perimetro') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
+      console.log(`      ${(c.motivo.startsWith('duda-de-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);

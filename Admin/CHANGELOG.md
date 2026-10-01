@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 340 — Reintento por categorías en 0; perfil de clubes (socios, otros deportes) (2026-10-01)
+
+- `cargar.mjs` (etapa 8, con `--desde-verificacion`): marca reintento si salarios del plantel, televisión o estadio dan 0 (siempre), o cuotas sociales / otras secciones deportivas dan 0 y el perfil del club dice que tiene socios / otros deportes. Si el perfil no lo sabe, pregunta de sí o no en la cola y la respuesta se guarda en el perfil. Medido sobre 241 años cargados: con "cualquier categoría en 0" se reintentaría el 94% de los documentos.
+- `tools/perfil-clubes.mjs` (nuevo) y `Admin/perfil-clubes.jsonl` (66 clubes sudamericanos, armado por un subagente con evidencia de data/ y transcripciones).
+- `lote.mjs --reintentar` toma también estas marcas; `localizar.mjs` y `extraer.mjs` reciben qué faltó en el intento anterior.
+- UC 2018-2020: frenan por "cuotas sociales en 0" (localizar no había elegido el cuadro por segmento); reintento pendiente.
+
 ## Versión 339 — Peso chileno: la cotización de un cierre es la del primer día con dato posterior (2026-10-01)
 
 - `lookup-fx-close.js` (`diaCierre: 'siguiente'` en CLP) y `alta-club.mjs` (`FX_DIA_SIGUIENTE`): para CLP se toma el primer día con dato posterior al cierre (el dólar observado se publica al día siguiente). Los 12 cierres declarados por UC y Palestino: 11 exactos, 2024 a 0,02 (antes, entre 0,04% y 0,85% de diferencia). Las demás monedas no cambian.

@@ -81,14 +81,16 @@ function pedido(pdf, registro, sitio) {
   return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}` };
 }
 
-export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false } = {}) {
+export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
   const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
   const mdText = readFileSync(resolve(ROOT, md), 'utf8');
   const { bloques } = indiceBloques(mdText, { ampliado }); // ampliado: solo en el reintento (lote.mjs --reintentar)
   const visibles = bloques.filter((b) => b.cifras >= 2);
-  const user = `${texto}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
+  // REINTENTO (Versión 340): qué faltó en el intento anterior, para que elija también el cuadro que lo abre (por ejemplo, uno por segmento).
+  const faltas = (reintento || []).map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}"` : `el desglose de "${x.renglon}" no sumó (${x.suma} contra ${x.objetivo})`));
+  const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
   if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500) };
   let r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: 'localizar', pdf }); let costo = r.costo || 0;
   if (r.error) return { error: r.error, costo };

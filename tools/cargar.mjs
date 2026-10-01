@@ -103,6 +103,7 @@ const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { agregarCaso, casoYRespuesta } = await import('./cola.mjs');
+const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS } = await import('./memoria-categorias.mjs');
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
@@ -397,6 +398,38 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   });
   P.filas = filas;
   if (enCola.length) frena('categoria-en-cola', `${enCola.length} fila(s) esperan categoría en la cola humana (node tools/cola.mjs): ${enCola.slice(0, 5).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat} ${f.conf ?? ''}`).join('; ')}`);
+
+  // ---- 4b. CATEGORÍAS EN 0 -> REINTENTO (Versión 340, diseño aprobado por Guido; camino de error, solo con --desde-verificacion). Medido sobre
+  // 241 años cargados: salarios del plantel nunca es 0, televisión 2%, estadio 1%: un 0 ahí es un desglose perdido (UC 2025, costo de ventas
+  // sin abrir). Cuotas sociales (46% de ceros) y otras secciones deportivas (63-68%) solo cuentan si el perfil del club dice que tiene socios /
+  // otros deportes (tools/perfil-clubes.mjs). Si el perfil no lo sabe, la pregunta va a la cola (sí o no) y su respuesta queda en el perfil.
+  // Un documento con una línea "sin desglosar por la fuente" no se revisa (ya se sabe que no abre). Un documento ya reintentado
+  // (.ubicacion.json con indiceAmpliado) no se vuelve a reintentar: se carga con aviso.
+  if (DESDE_VERIFICACION) {
+    const conCat = filas.filter((f) => (f.destino === 'revenue' || f.destino === 'expense') && f.cat);
+    const suma = (cats) => conCat.filter((f) => cats.includes(f.cat)).reduce((a, f) => a + Math.abs(f.native || 0), 0);
+    const yaReintentado = (() => { try { return !!JSON.parse(readFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })), 'utf8')).indiceAmpliado; } catch { return false; } })();
+    const ceros = [];
+    if (!conCat.some((f) => /^lump_/.test(f.cat))) {
+      for (const [nombre, cats] of [['Salarios del plantel', ['wages_squad']], ['Televisión', ['broadcasting']], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets']]]) if (!suma(cats)) ceros.push({ categoria: nombre });
+      const perfil = perfilDe(clubId) || {};
+      const respPerfil = (campo) => { const { caso, resp } = casoYRespuesta(pdf, 'cargar', 'perfil', `${clubId}:${campo}`); if (!resp || !caso || resp.decision !== 'corregir' || !resp.valor) return undefined; const v = /^s[ií]/i.test(resp.valor) ? true : /^no/i.test(resp.valor) ? false : undefined; if (v !== undefined && perfil[campo] !== v) guardarPerfil(clubId, campo, v, `respuesta de Guido en la cola (${resp.nota || 'sin nota'})`); return v; };
+      for (const [campo, nombre, catsIng, catsGas, pregunta] of [
+        ['socios', 'Cuotas sociales', ['member_dues'], [], `¿${club.name || clubId} tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?`],
+        ['otrosDeportes', 'Otras secciones deportivas', ['other_sports', 'youth_football', 'womens_football'], ['youth_other_sports_expense'], `¿${club.name || clubId} tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?`],
+      ]) {
+        if (suma(catsIng) || (catsGas.length && suma(catsGas))) continue;
+        let tiene = perfil[campo]; if (tiene === undefined || tiene === null) tiene = respPerfil(campo);
+        if (tiene === true) ceros.push({ categoria: nombre });
+        else if (tiene === undefined || tiene === null) {
+          agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/perfil-clubes.jsonl para todos sus años.)`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
+          frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'}: pregunta en la cola humana (node tools/cola.mjs)`);
+        }
+      }
+    }
+    if (ceros.length && !yaReintentado) { P.reintentar = ceros; frena('reintento', `categorías en 0 que deberían tener número: ${ceros.map((c) => c.categoria).join(', ')}. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar`); }
+    else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
+  }
   const suma = (arr) => arr.reduce((a, x) => a + Math.abs(x.native || 0), 0);
   for (const side of ['revenue', 'expense']) {
     const delLado = filas.filter((f) => f.destino === side || ((f.destino === 'sin-categoria' || f.destino === 'confianza-baja') && (f.ladoDoc || ladoDeCat(f.cat) || 'revenue') === side));
