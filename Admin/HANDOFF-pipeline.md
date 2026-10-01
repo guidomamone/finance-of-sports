@@ -197,6 +197,15 @@ Mitigaciones:
 
 - Commit local, un commit por año cargado. El push lo hace Guido.
 
+### Camino de error (reintento)
+
+- Si un desglose (una nota, o un cuadro que abre una fila de una nota) no suma, la verificación no frena (queda el renglón, que es correcto)
+  pero marca el documento para reintentar.
+- Al final del lote aparece la lista y el comando: `caffeinate -i node tools/lote.mjs --lista <lista> --ejecutar --reintentar`.
+- El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y a extraer con la lista de lo que no
+  sumó. Una sola vez por documento; si sigue sin sumar, queda el renglón sin abrir.
+- Regla de Guido: las reglas extra van acá, en el camino de error, no en el camino limpio.
+
 ### Cola humana
 
 - Archivo: `Admin/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
