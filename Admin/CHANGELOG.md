@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 336 — Camino de error: reintento cuando un desglose no suma (2026-10-01)
+
+- `verificar.mjs` marca `reintentar` con los desgloses (notas o anidados) de 2+ filas que no suman. `lote.mjs --reintentar` vuelve a localizar SOLO esos documentos con el índice ampliado (`indice-bloques.mjs`, opción `ampliado`: filas que terminan en "-") y a extraer con la lista de lo que no sumó y la regla de la columna de Totales para un renglón del estado. Una vez por documento. El camino limpio no cambia (decisión de Guido: las reglas extra son para cuando hay errores).
+- Caso que lo motivó, UC 2025 (lote 04): la nota de segmentos tiene el desglose de "Ingresos Comerciales" y del costo de ventas, pero las filas con "-" partían el cuadro (5.180.336 contra 7.940.492; 20.162.209 contra 20.985.893). Con el índice ampliado el cuadro queda entero.
+- Lote 04: UC 2021 con "Ingresos Comerciales" abierto por la nota de segmentos da CARGA.
+
 ## Versión 335 — Desgloses anidados y cuadros por segmento (2026-10-01)
 
 - `localizar.mjs` / `extraer.mjs`: una nota puede desglosar un renglón de otra nota; un cuadro por segmento se usa solo con la columna del segmento que abre un renglón (UC: columna "Comerciales" -> "Ingresos Comerciales"); los cuadros por jugador no se eligen.

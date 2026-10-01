@@ -75,7 +75,9 @@ Por fila:
 Además: la escala de CADA bloque (unidades, miles, millones; pueden ser distintas entre el estado y las notas) con la frase que lo dice; la línea y el importe del total de ingresos, del total de gastos y del resultado del ejercicio si están impresos (si no, null).
 No sumes, no conviertas, no inventes. Si algo no se lee o es ambiguo, dejalo afuera y escribilo en dudas (una frase cada una, con la línea): lo va a mirar una persona. Cada duda: pregunta (UNA pregunta concreta que una persona contesta con sí o no mirando el PDF: qué tabla o fila, qué importe, qué se haría; ej. "¿Se deja afuera de la carga el cuadro 'Venta de jugadores al 31-12-2024' (L4070-L4072)?"), propuesta (sí o no: lo que harías vos), texto (por qué, una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 
-export async function extraer(pdf, { registro, ejecutar = false, rehacer = false } = {}) {
+// REINTENTO (Versión 336): `reintento` = la lista de desgloses que no sumaron en la verificación anterior ({renglon, suma, objetivo}). Se le
+// agrega a la IA una instrucción SOLO en ese caso (decisión de Guido: las reglas extra son para cuando hay errores, no para el camino limpio).
+export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null } = {}) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pUb = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   if (!existsSync(pUb)) return { error: 'falta el .ubicacion.json (correr localizar.mjs antes)' };
@@ -90,7 +92,8 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   const texto = ids.map((id) => { const b = ub.bloques[id]; const desde = Math.max(1, b.lineas[0] - 3); return `[${id}] pág. ${b.pagina}\n${L.slice(desde - 1, b.lineas[1]).map((l, k) => `L${desde + k}: ${l}`).join('\n')}`; }).join('\n\n');
   const user = `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: columna "${ub.columna_ejercicio}" (cierre ${e.periodo?.cierre || '?'}); año anterior: columna "${ub.columna_anterior || '?'}". Bloques del estado: ${ub.estado.join(', ')}; notas de ingresos: ${ub.notas_ingresos.join(', ') || '-'}; notas de gastos: ${ub.notas_gastos.join(', ') || '-'}.\n\n${texto}`;
   if (!ejecutar) { const t = tokensDe(SYSTEM + user); return { ensayo: true, tokens: t, usd: usdEstimado(t, 4000) }; }
-  const r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: 'extraer', pdf, maxTokens: 32000 });
+  const extra = reintento?.length ? `\n\nREINTENTO: en la extracción anterior estos desgloses NO sumaron su renglón: ${reintento.map((x) => `"${x.renglon}" (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '';
+  const r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: reintento?.length ? 'extraer-reintento' : 'extraer', pdf, maxTokens: 32000 });
   if (r.error) return { error: r.error, costo: r.costo };
   const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));

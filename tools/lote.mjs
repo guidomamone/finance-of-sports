@@ -28,13 +28,14 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
 import { validar } from './validar-bloques.mjs';
 import { extraer } from './extraer.mjs';
 import { pendientes } from './cola.mjs';
+import { derivado } from './rutas.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { verificar } = await import('./verificar.mjs');
 const { loadSite } = await import('./proponer-carga.mjs');
@@ -44,6 +45,11 @@ const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); const REHACER = ARGS.includes('--rehacer');
+// --reintentar (Versión 336, CAMINO DE ERROR: decisión de Guido, las reglas extra son "para cuando haya errores"): solo los documentos cuya
+// última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
+// en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
+const REINTENTAR = ARGS.includes('--reintentar');
+const verifDe = (e) => { try { const p = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false })); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
 if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer]'); process.exit(1); }
 // TESTIGOS (Versión 334, ok de Guido): una línea "testigo <pdf>" es un documento que entra SOLO para verificar a otro (su columna "año
 // anterior" contra el año actual del otro: chequeo de año vecino de verificar.mjs). Pasa por localizar, validar y extraer, y nada más: no se
@@ -67,15 +73,17 @@ console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VER
 for (const pdf of docs) {
   const e = registro.find((x) => x.pdf === pdf);
   if (!e?.md) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
-  const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER });
+  const reintento = REINTENTAR ? verifDe(e)?.reintentar || null : null;
+  if (REINTENTAR && !reintento) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
+  const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento });
   if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) { estado[pdf] = 'sin estado de resultados (queda como fuente)'; continue; }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
-  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER }); usd += V.costo || V.usd || 0;
-  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER });
+  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento }); usd += V.costo || V.usd || 0;
+  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, reintento });
   if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
@@ -107,4 +115,11 @@ if (conRubros.length) {
 console.log('\n=== RESUMEN DEL LOTE ===');
 for (const pdf of docs) console.log(`  ${String(estado[pdf] || '?').padEnd(42)} ${pdf}`);
 const cola = pendientes().filter((c) => docs.includes(c.pdf));
+// Camino de error: qué documentos quedaron con desgloses que no suman y todavía no se reintentaron.
+const aReintentar = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); return e?.md && verifDe(e)?.reintentar; });
+if (aReintentar.length) {
+  console.log(`\nDESGLOSES QUE NO SUMAN (camino de error, una vez por documento):`);
+  for (const d of aReintentar) console.log(`  ${d.split('/').slice(2).join('/')}: ${verifDe(registro.find((x) => x.pdf === d)).reintentar.map((x) => `"${x.renglon}" ${x.suma} contra ${x.objetivo}`).join('; ')}`);
+  console.log(`  Reintento con índice ampliado (~US$ 0,30 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
+}
 console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node tools/gasto.mjs). Cola humana de este lote: ${cola.length} caso(s) -> node tools/cola.mjs`);

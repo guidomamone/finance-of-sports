@@ -51,7 +51,11 @@ const esSeparador = (l) => celdas(l).every((c) => /^:?-{2,}:?$/.test(c) || c ===
 const limpia = (s) => String(s || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, ' ').trim();
 const cuantas = (s) => (String(s).match(IMPORTE_RE) || []).length;
 
-export function indiceBloques(md) {
+// AMPLIADO (Versión 336, SOLO PARA EL REINTENTO: decisión de Guido, "que sea para cuando haya errores"): además, una línea que termina en
+// guiones después de números ("Ingresos E-Commerce   0   -   531.143   -", el cero impreso como "-") cuenta como fila. Caso real, UC 2025
+// pág. 77: esas filas partían el cuadro por segmento y faltaban 2.760.156 en "Comerciales" y 823.684 en el costo de ventas. No es el
+// índice por defecto: lo pide localizar.mjs cuando verificar.mjs encontró un desglose que no suma (ver lote.mjs --reintentar).
+export function indiceBloques(md, { ampliado = false } = {}) {
   const L = md.split('\n'); const bloques = []; let pagina = 1; const textoReciente = [];
   const empuja = (b) => { b.id = `b${bloques.length + 1}`; bloques.push(b); };
   let i = 0;
@@ -77,7 +81,8 @@ export function indiceBloques(md) {
     // separador ni de 4 dígitos) quedaba afuera del bloque del resultado; FC Midtjylland 2021 pág. 17, "Finansielle omkostninger 6 -950 -566"
     // (un solo espacio entre columnas: el .md no es -layout). Un año suelto al final ("31 de dezembro de 2020") es UN número, no dos.
     const COLS_CHICAS_RE = /\p{L}.*?(?:\s+\(?-?\d[\d.,]*\)?){2,}\s*$/u;
-    const conImporte = (l) => l.trim() && !l.trim().startsWith('|') && !PAG_RE.test(l) && /\p{L}{2,}/u.test(l) && /[\d)]\s*$/.test(l.trim()) && ((l.match(IMPORTE_RE) || []).length >= 1 || COLS_CHICAS_RE.test(l));
+    const conImporteBase = (l) => l.trim() && !l.trim().startsWith('|') && !PAG_RE.test(l) && /\p{L}{2,}/u.test(l) && /[\d)]\s*$/.test(l.trim()) && ((l.match(IMPORTE_RE) || []).length >= 1 || COLS_CHICAS_RE.test(l));
+    const conImporte = (l) => conImporteBase(l) || (ampliado && conImporteBase(String(l).replace(/(\s+[-–—])+\s*$/, '')));
     // HUECOS (Versión 325): hasta la 324 se toleraba UNA línea en blanco entre filas, y un renglón suelto entre dos encabezados de grupo se
     // perdía. Caso real, Bahia 2021 pág. 8: "Itens extraordinários" / "Outras receitas (despesas), líquidas  22  64.283  (4.998)" / "" /
     // "Resultado financeiro": el renglón de 64.283 (más que todo el superávit, 27.751) no quedaba en ningún bloque (1 fila < 3) ni en las 3

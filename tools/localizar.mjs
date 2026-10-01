@@ -81,12 +81,12 @@ function pedido(pdf, registro, sitio) {
   return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}` };
 }
 
-export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false } = {}) {
+export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
   const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
   const mdText = readFileSync(resolve(ROOT, md), 'utf8');
-  const { bloques } = indiceBloques(mdText);
+  const { bloques } = indiceBloques(mdText, { ampliado }); // ampliado: solo en el reintento (lote.mjs --reintentar)
   const visibles = bloques.filter((b) => b.cifras >= 2);
   const user = `${texto}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
   if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500) };
@@ -98,7 +98,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
     const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: 'localizar-2', pdf });
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
-  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
 }
