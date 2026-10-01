@@ -114,6 +114,11 @@ const COMPARAR = flagVal('--comparar');
 const JSON_OUT = ARGS.includes('--json');
 const MAX_SIN_CAT = flagVal('--max-sin-categoria') !== null ? Number(flagVal('--max-sin-categoria')) : 0.05;
 const UMBRAL_CLAUDE = flagVal('--umbral-claude') !== null ? Number(flagVal('--umbral-claude')) : 0.8;
+// --desde-verificacion (Versión 324, proceso nuevo; Admin/HANDOFF-pipeline.md "El proceso nuevo"): las filas salen de
+// Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), no de seleccionarFilas() (selección por palabras).
+// Solo se usa si la verificación quedó en estado 'ok' (sin casos pendientes en la cola humana). SIN PROBAR DE PUNTA A PUNTA todavía: la
+// primera corrida real es el primer lote de 5 documentos (HANDOFF).
+const DESDE_VERIFICACION = ARGS.includes('--desde-verificacion');
 const CON_VALOR = new Set(['--lista', '--salida', '--comparar', '--max-sin-categoria', '--umbral-claude']);
 const DOCS = ARGS.filter((a, i) => !a.startsWith('--') && !CON_VALOR.has(ARGS[i - 1]));
 const TOL = 0.01; // la de audit.js checkTieOuts(): |calculado - oficial| >= 0,01 es P0 `no-cierra`
@@ -257,7 +262,21 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
 
   // ---- 3. filas y montos
   let sf;
-  try {
+  if (DESDE_VERIFICACION) {
+    const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
+    if (!existsSync(pv)) { frena('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); return P; }
+    const VV = JSON.parse(readFileSync(pv, 'utf8'));
+    if (VV.estado !== 'ok') { frena('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); return P; }
+    // Mismo formato que seleccionarFilas(): {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
+    // el paso 5 de abajo); financiero e impuesto con su signo impreso y su destino ya decidido por extraer.mjs (no por palabras).
+    const raw = [
+      ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})` })),
+      ...VV.financiero.map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'netInterest' })),
+      ...VV.impuesto.map((l) => ({ label: l.etiqueta, page: null, section: 'impuesto', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'tax' })),
+    ];
+    const totalCands = [VV.totales.ingresos ? { label: 'total de ingresos (verificado)', M: VV.totales.ingresos, page: null, how: 'etiqueta' } : null, VV.totales.gastos ? { label: 'total de gastos (verificado)', M: VV.totales.gastos, page: null, how: 'etiqueta' } : null].filter(Boolean);
+    sf = { ok: true, raw, totalCands, docResult: VV.totales.resultadoImpreso, pts: null, extra: { notasUsadas: [] }, refM: null };
+  } else try {
     const briefing = await briefingFor(clubId, year, e.md);
     sf = seleccionarFilas({ briefing, mdText: readFileSync(mdAbs, 'utf8'), clubData: cd, year });
   } catch (err) { frena('filas', `seleccionarFilas() falló: ${err.message}`); return P; }
@@ -301,7 +320,8 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     const nl = norm(r.label);
     // Una fila que NO está en la lista de rubros de la etapa 3 y de la que el documento no dice el lado: la etapa 3 la descartó como no-rubro
     // (partidas de balance, cuadros de bienes de uso que el ancla abrió por error). No se carga y no cuenta como "sin categoría".
-    if (!f.enLista && !f.ladoDoc) f.destino = 'no-rubro';
+    if (r.destinoForzado) f.destino = r.destinoForzado; // proceso nuevo: financiero / impuesto decididos por extraer.mjs
+    else if (!f.enLista && !f.ladoDoc) f.destino = 'no-rubro';
     // Resultado financiero e impuesto a las ganancias: al fiscalYearMeta, salvo que el precedente del club diga otra cosa (su convención).
     else if (f.escalon !== 0 && (IMPUESTO_GANANCIAS_RE.test(nl) || IMPUESTO_SOLO_RE.test(nl))) f.destino = 'tax';
     else if (f.escalon !== 0 && FINANCIERO_RE.test(nl) && (!f.cat || f.cat === 'no_es_rubro' || ['other_income', 'other_expenses', 'exceptional_items', 'admin_general_expense'].includes(f.cat))) f.destino = 'netInterest';

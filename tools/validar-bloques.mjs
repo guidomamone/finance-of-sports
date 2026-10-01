@@ -1,0 +1,109 @@
+#!/usr/bin/env node
+// ============================================================================
+// tools/validar-bloques.mjs — ETAPA 4 del proceso nuevo: cada número de los bloques que eligió localizar.mjs se confirma contra una FUENTE
+// INDEPENDIENTE DE MISTRAL. Gratis en PDFs digitales; ~US$ 0,003 por página en escaneos (Gemini).
+//
+// POR QUÉ (Versión 324; Admin/HANDOFF-pipeline.md, "El proceso nuevo", etapa 4). Mistral puede INVENTAR un número en un escaneo con la misma
+// seguridad que uno bien leído (CLAUDE.md, test de costo de transcripción). El chequeo "el importe está tal cual en la página" del test
+// localizar-extraer compara contra la TRANSCRIPCIÓN, así que un número inventado por Mistral pasaba igual (lo vio Guido el 2026-10-01). Y hoy
+// la etapa 3 del pipeline valida el documento ENTERO (~US$ 140 pendientes) cuando solo importan las tablas que se cargan. Acá se valida solo
+// eso, y contra el PDF:
+//   a) PDF DIGITAL (texto propio usable, según verifyNumbers() de tools/verify-numbers.mjs): cada número del bloque tiene que estar en el texto
+//      interno de SU página (`pdftotext -f N -l N`). Gratis.
+//   b) PDF ESCANEADO o con TEXTO ROTO (mojibake: verifyNumbers() lo detecta cuando el texto del PDF casi no coincide con el .md, menos de 25%
+//      de cobertura): Gemini lee LA IMAGEN de esa página (tools/gemini-transcribe.mjs sobre un PDF de una sola página), independiente de
+//      Mistral. Si Gemini la rechaza (RECITATION, falso positivo de copyright), Claude (tools/claude-api-transcribe.mjs).
+//   Lo que NO se confirma queda en la lista `noConfirmados`, con la línea del .md y, si la segunda lectura tiene un número parecido (un dígito
+//   distinto), cuál leyó. NO decide quién tiene razón: eso lo hace verificar.mjs con la aritmética (gana la lectura con la que la tabla suma)
+//   y, si ninguna suma, la cola humana (tools/cola.mjs).
+//
+// QUÉ PUEDE SALIR MAL: (i) Mistral y Gemini se equivocan igual (dígito borroso) -> lo frena la suma; (ii) Gemini y Claude rechazan la página ->
+// queda sin segunda fuente y verificar.mjs la manda a la cola; (iii) en un digital, el número está en la página pero en otra columna (el
+// año anterior): este chequeo lo da por bueno; lo ataja el chequeo contra el año anterior cargado de verificar.mjs.
+//
+// USO:
+//   node tools/validar-bloques.mjs "<pdf>" [...]          ENSAYO: dice si es digital o escaneo, cuántas páginas y cuánto costaría
+//   node tools/validar-bloques.mjs "<pdf>" --ejecutar     (gratis si es digital)
+//   node tools/validar-bloques.mjs --lista <archivo> [--ejecutar]
+// ============================================================================
+
+import { readFileSync, writeFileSync, existsSync, mkdtempSync, copyFileSync } from 'node:fs';
+import { resolve, join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { derivado } from './rutas.mjs';
+import { verifyNumbers, extractNumbers, norm as normNum, NUM_RE } from './verify-numbers.mjs';
+
+const ROOT = resolve(import.meta.dirname, '..');
+const ARGS = process.argv.slice(2);
+const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
+const USD_PAGINA_GEMINI = 0.003;
+
+const textoPagina = (pdf, n) => execFileSync('pdftotext', ['-layout', '-f', String(n), '-l', String(n), pdf, '-'], { maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('utf8');
+const unDigito = (a, b) => a.length === b.length && [...a].filter((c, i) => c !== b[i]).length === 1;
+
+// Segunda lectura de UNA página escaneada: PDF de esa página sola (qpdf) -> motor -> texto. Se guarda en Generados/ para no pagarla dos veces.
+function segundaLectura(pdfAbs, md, n) {
+  const guardada = resolve(ROOT, derivado(md, `.pag${n}.segunda.md`));
+  if (existsSync(guardada)) return { texto: readFileSync(guardada, 'utf8'), motor: 'guardada' };
+  const tmp = mkdtempSync(join(tmpdir(), 'validar-')); const una = join(tmp, `pag${n}.pdf`);
+  if (spawnSync('qpdf', [pdfAbs, '--pages', '.', String(n), '--', una], { stdio: 'ignore' }).status > 3) return { error: 'qpdf no pudo separar la página' };
+  for (const [motor, tool] of [['gemini', 'tools/gemini-transcribe.mjs'], ['claude', 'tools/claude-api-transcribe.mjs']]) {
+    spawnSync('node', [resolve(ROOT, tool), una, '--out-suffix', '.segunda'], { cwd: ROOT, stdio: 'ignore', timeout: 300000 });
+    const salida = join(tmp, `pag${n}.segunda.md`);
+    if (existsSync(salida)) { copyFileSync(salida, guardada); return { texto: readFileSync(salida, 'utf8'), motor }; }
+  }
+  return { error: 'Gemini y Claude no devolvieron la página' };
+}
+
+export async function validar(pdf, { registro, ejecutar = false, rehacer = false } = {}) {
+  const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
+  const pUb = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
+  if (!existsSync(pUb)) return { error: 'falta el .ubicacion.json (localizar.mjs)' };
+  const ub = JSON.parse(readFileSync(pUb, 'utf8')); if (ub.sin_estado) return { sinEstado: true };
+  const out = resolve(ROOT, derivado(md, '.validacion.json'));
+  if (!rehacer && existsSync(out)) return { hecho: true, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
+  const pdfAbs = resolve(ROOT, pdf); const mdAbs = resolve(ROOT, md);
+  const v = verifyNumbers(pdfAbs, mdAbs); const modo = v.applicable ? 'digital' : 'escaneo';
+  const L = readFileSync(mdAbs, 'utf8').split('\n');
+  const ids = [...new Set([...ub.estado, ...ub.notas_ingresos, ...ub.notas_gastos])].filter((id) => ub.bloques[id]);
+  const paginas = [...new Set(ids.map((id) => ub.bloques[id].pagina))].sort((a, b) => a - b);
+  if (!ejecutar) return { ensayo: true, modo, motivoModo: v.reason || null, paginas, usd: modo === 'digital' ? 0 : paginas.length * USD_PAGINA_GEMINI };
+  const fuentes = {}; const segundas = new Map();
+  for (const n of paginas) {
+    if (modo === 'digital') { try { segundas.set(n, extractNumbers(textoPagina(pdfAbs, n))); fuentes[n] = 'pdftotext'; } catch { fuentes[n] = null; } continue; }
+    const r = segundaLectura(pdfAbs, md, n);
+    if (r.error) { fuentes[n] = null; continue; }
+    segundas.set(n, extractNumbers(r.texto)); fuentes[n] = r.motor;
+  }
+  const noConfirmados = []; let confirmados = 0;
+  for (const id of ids) {
+    const b = ub.bloques[id]; const segunda = segundas.get(b.pagina);
+    for (let k = b.lineas[0]; k <= b.lineas[1]; k++) {
+      for (const m of String(L[k - 1] || '').matchAll(NUM_RE)) {
+        const num = normNum(m[0]); if (num.length < 4) continue; // años y números chicos no se validan acá (lo cubre la suma)
+        if (segunda && segunda.has(num)) { confirmados++; continue; }
+        const parecido = segunda ? [...segunda].find((x) => unDigito(x, num)) : null;
+        noConfirmados.push({ bloque: id, pagina: b.pagina, linea: k, numero: m[0], segundaLeyo: parecido || null, sinSegunda: !segunda, texto: String(L[k - 1]).slice(0, 160) });
+      }
+    }
+  }
+  const datos = { pdf, md, modo, motivoModo: v.reason || null, generado: new Date().toISOString(), fuentes, confirmados, noConfirmados };
+  writeFileSync(out, JSON.stringify(datos, null, 1));
+  return { hecho: true, datos, costo: modo === 'digital' ? 0 : Object.values(fuentes).filter((f) => f && f !== 'guardada').length * USD_PAGINA_GEMINI };
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const docs = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : ARGS.filter((a) => !a.startsWith('--'));
+  if (!docs.length) { console.error('Uso: node tools/validar-bloques.mjs "<pdf>" [--ejecutar] [--rehacer]  |  --lista <archivo>'); process.exit(1); }
+  const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  let usd = 0;
+  for (const pdf of docs) {
+    const r = await validar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });
+    if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ${r.modo}${r.motivoModo ? ` (${r.motivoModo})` : ''}, páginas ${r.paginas.join(',')}, ~US$ ${r.usd.toFixed(3)}`); }
+    else if (r.sinEstado) console.log(`  ${pdf}: sin estado de resultados`);
+    else if (r.error) console.log(`  ${pdf}: ${r.error}`);
+    else { usd += r.costo; console.log(`  ${pdf}: ${r.datos.modo}, ${r.datos.confirmados} números confirmados, ${r.datos.noConfirmados.length} sin confirmar`); }
+  }
+  console.log(`\n${ARGS.includes('--ejecutar') ? 'Gastado' : 'Costo estimado'}: US$ ${usd.toFixed(2)}`);
+}

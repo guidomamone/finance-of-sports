@@ -79,6 +79,10 @@ perdieron sino que se descartaron:
        palabras de la etiqueta), elegir la tabla y la columna del ejercicio con más cuidado, y medir de nuevo; recién con el 90% de totales detectados vale la pena dejarla escribir.
        **Se acepta subir un club-año con solo el total de ingresos** (es mejor que nada), aunque no tenga desglose. Los documentos `sin-rubros`
        tienen el `.md` validado y siguen disponibles como fuente; falta detectar cuáles traen un total usable.
+    3c. **REEMPLAZADO POR "EL PROCESO NUEVO" (Versión 324, 2026-10-01)**: la selección de filas por palabras de 3b reproduce 7-11% de lo
+       cargado; se diseñó con Guido y se construyó localizar -> validar -> extraer -> verificar con cola humana (`tools/lote.mjs`,
+       `tools/cola.mjs`). Detalle, riesgos y lo que falta construir: `Admin/HANDOFF-pipeline.md`, "El proceso nuevo". Siguiente paso: el
+       lote 01 (`node tools/lote.mjs --lista Admin/lote-01.txt`, ~US$ 0,8), refinando en lotes de 5.
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
     5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
 

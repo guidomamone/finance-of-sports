@@ -31,6 +31,20 @@ Ninguno gasta tokens de Claude Code. Los que llaman a una API (Mistral, Gemini, 
 | `node tools/proponer-carga.mjs --backtest` | Mide si un script puede reconstruir ejercicios cargados (etapa 5, versión 0). |
 | `node tools/audit.js` | Auditoría de todo el proyecto (0 P0/P1 = sano). |
 
+## EL PROCESO NUEVO (Versión 324): localizar, validar, extraer, verificar, con cola humana
+Detalle, riesgos y mitigaciones etapa por etapa: `Admin/HANDOFF-pipeline.md`, "El proceso nuevo". Todavía no reemplaza a `pipeline.mjs`: se refina en lotes de 5.
+- `lote.mjs`: **el que se corre**. Etapas 3 a 8 sobre un lote chico; ensayo con costo por defecto, `--ejecutar` de verdad.
+- `indice-bloques.mjs` (gratis): la ficha de cada tabla y bloque de texto con cifras del `.md`, con página y líneas.
+- `localizar.mjs` (IA): qué bloques son el estado de resultados y sus notas; escala, moneda, columnas, perímetro. -> `.ubicacion.json`
+- `validar-bloques.mjs`: cada número de esos bloques contra el PDF (texto propio gratis; si es escaneo, Gemini lee la imagen). -> `.validacion.json`
+- `extraer.mjs` (IA): las filas tal cual, con su línea del `.md`, la escala de cada bloque y la columna del año anterior. -> `.filas.json`
+- `verificar.mjs` (gratis): notas, totales, resultado, año anterior cargado, documento del año vecino, redondeo; lo que no cierra va a la cola. -> `.verificacion.json` (y `.rubros.json` con `--rubros`)
+- `cola.mjs`: la cola humana (`Admin/cola-revision.jsonl`): qué mirar en el PDF y en el `.md`, y las respuestas de Guido.
+- `claude-llamada.mjs`: la llamada a Claude que usan localizar y extraer (tope de tiempo, reintentos, fallback, registro de costo).
+- `grupos-pais.mjs`: los 12 grupos de países y lo propio de cada uno por etapa (`node tools/estado.mjs --logica`).
+- `localizar-extraer.mjs`: el TEST por página del 2026-10-01 (descartado como proceso, queda por la medición).
+- `cargar.mjs --desde-verificacion`: carga desde lo verificado en vez de la selección por palabras.
+
 ## 1. Conseguir el PDF (sourcing)
 - `exa-search.mjs`, `reddit-archive-search.mjs`, `twitterapiio-search.mjs`: búsquedas en la web, Reddit y X.
 - `wayback-cdx.mjs`, `wayback-verify-download.mjs`: recuperar y verificar documentos desde Wayback Machine.

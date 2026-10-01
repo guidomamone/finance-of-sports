@@ -143,8 +143,13 @@ const imprimirEtapa = ([etapa, filas]) => {
     if (n) console.log(`         ${desglose(porGrupo[k])}`);
   }
 };
+// PDFs ROTOS (pedido de Guido, 2026-10-01: "cuando se descarga un PDF que no es, en fuentes se lo da por caso cerrado pero en realidad debe
+// volver"): el registro los marca `no-es-pdf`, pero el sourcing del club (fuentes/<País>/<Club>.md) puede seguir diciendo "encontrado". Se
+// listan con el archivo de fuentes que hay que reabrir, para que vuelvan a la etapa 1.
+const rotos = R.filter((e) => e.estado === 'no-es-pdf');
+const reabrir = () => { if (!rotos.length) return; console.log('     Reabrir el sourcing (el archivo de fuentes todavía puede darlo por conseguido):'); for (const e of rotos.slice(0, 10)) { const [, pais, club] = e.pdf.split('/'); console.log(`       ${e.pdf}  ->  fuentes/${pais}/${club}.md`); } };
 // La etapa 7 (en el sitio) se imprime al final, después de la 6 (cargar), que no es una lista de estados sino lo que les falta.
-ETAPAS.filter(([e]) => !e.startsWith('7')).forEach(imprimirEtapa);
+ETAPAS.filter(([e]) => !e.startsWith('7')).forEach((et) => { imprimirEtapa(et); if (et[0].startsWith('1.')) reabrir(); });
 for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  (estado sin describir: ${k})`);
 console.log(`\n  Costo estimado para llevar todo hasta "categorizado": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
 
@@ -190,6 +195,7 @@ if (existsSync(ultimo)) {
   console.log('  ("no cierra": las filas no suman ningún total impreso; "resultado": tampoco el resultado del ejercicio. Detalle por documento: Admin/cargar-ultimo.jsonl)');
 }
 console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, Qué falta 1.');
+console.log('  PROCESO NUEVO (localizar, validar, extraer, verificar, con cola humana; Admin/HANDOFF-pipeline.md "El proceso nuevo"): node tools/lote.mjs --lista Admin/lote-01.txt  ·  cola: node tools/cola.mjs');
 ETAPAS.filter(([e]) => e.startsWith('7')).forEach(imprimirEtapa);
 console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);
 console.log('');

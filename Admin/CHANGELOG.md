@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 324 — El proceso nuevo (localizar, validar, extraer, verificar) con cola humana: tools construidas, sin correr (2026-10-01)
+
+- Diseño acordado con Guido etapa por etapa (riesgos, mitigaciones, cola humana) en `Admin/HANDOFF-pipeline.md`, "El proceso nuevo", junto con lo que falló en los tests y lo que no entró. Se trabaja en lotes de 5; no se corrió ningún piloto (pedido de Guido).
+- Tools nuevas: `indice-bloques.mjs` (localizar por bloque, no por página: el estado puede empezar a mitad de página), `localizar.mjs`, `validar-bloques.mjs` (números contra el PDF: texto propio o lectura de la imagen; solo los bloques elegidos), `extraer.mjs` (escala por bloque, línea del .md, columna del año anterior), `verificar.mjs` (notas por cierre, totales, resultado, año anterior cargado y documento del año vecino: 101 de los 159 años nuevos tienen el documento siguiente transcripto y solo 2 el año anterior cargado), `cola.mjs` (cola humana con qué abrir en el PDF y en el .md; respuestas que la próxima corrida toma), `lote.mjs` (orquesta las etapas 3-8, ensayo por defecto), `claude-llamada.mjs`. `cargar.mjs --desde-verificacion`. `rutas.mjs`: sufijos nuevos.
+- `estado.mjs`: lista los PDFs rotos con el archivo de `fuentes/` a reabrir (antes quedaban como caso cerrado), y el comando del proceso nuevo.
+- Probado gratis: índice de bloques (Köln, PSV), ensayos de costo (lote 01: ~US$ 0,63 + categorización), `verificar.mjs` con datos sintéticos del test por página (Köln y Bournemouth cierran; Forest frena por el resultado). `Admin/lote-01.txt`: Bahia 2021-2023 y Athletic Club 2022-2023.
+
 ## Versión 323 — Etapa 6 en el tablero por grupo; test localizar-extraer-verificar con IA (2026-10-01)
 
 - `cargar.mjs --lista` deja su última corrida en `Admin/cargar-ultimo.jsonl`; `estado.mjs` la muestra (6c) por grupo y motivo.
