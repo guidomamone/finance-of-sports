@@ -33,21 +33,23 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - Decisión de Guido: la Nota 20 del PDF trae la tabla equivocada (error del club). El costo de ventas se carga como **una sola línea** y se le
   pide la nota al club (anotado en `Admin/dudas-por-club.md`).
 
-**Cambios hechos después de esa corrida, todavía SIN COMMITEAR (esperan el ok de Guido):**
+**Cambios hechos después de esa corrida (commiteados):**
 
 - `verificar.mjs` — cierre de notas reescrito: lee la estructura impresa (qué subtotal suma qué) en vez de sumar todo.
   - Medido en 69 renglones con nota: 62 igual, 5 mejoran (UC, Betis, Athletic, Nordsjælland, Levante), 1 deja de cerrar y está bien que no
     cierre (Chapecoense: 917 contra 912), ninguno empeora.
   - En UC: ingresos pasan de 1 línea a los 9 renglones de la nota 19.
 - `localizar.mjs` y `extraer.mjs` — cada duda dice qué bloques nombra y si **afecta la carga**. Solo las que afectan van a la cola.
-- `verificar.mjs` — las dudas de localizar ahora llegan a la cola, con la página y las líneas del bloque que nombran.
+- `verificar.mjs` — las dudas de localizar llegan a la cola, con la página y las líneas del bloque que nombran.
 - `cola.mjs` — dice "página N del visor (impreso M al pie)"; cierra sola los casos que una corrida nueva ya no levanta.
 - `lote.mjs` — la etapa 7 ya no imprime el registro entero; el ensayo ya no gasta plata cuando localizar ya estaba hecho.
-- `alta-club.mjs` — heurística de encabezados para el tipo de cambio. **HAY QUE SACARLA**: acierta 13 de 17 documentos y se equivoca en 4
-  (Fluminense 2022, Argentinos 2019, Racing 2012, San Lorenzo 2015). Es la "manta corta" que Guido no quiere. Se reemplaza por el camino de
-  dudas (ver abajo).
+- La heurística de encabezados para el tipo de cambio se probó y se sacó (4 errores en 17 documentos).
 
-**Próximo paso:** que Guido decida qué de lo de arriba se commitea, y diseñar con él el camino de dudas del tipo de cambio.
+**Próximo paso:**
+
+- Confirmar con Guido qué hacer cuando el documento declara DOS tipos de cambio. Dijo "el del período más viejo"; en UC 2025 eso sería
+  996,48, que es el cierre de 2024 (el comparativo), no el de 2025 (907,13). Pregunta abierta.
+- Después: agregar CLP al script de series oficiales y volver a correr UC 2025.
 
 ---
 
@@ -199,11 +201,11 @@ Mitigaciones:
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;
-- ii) falta la cotización de la moneda (EUR, CLP, DKK).
+- ii) el documento no declara y la moneda no está en el archivo de series (CLP, EUR, DKK, GBP).
 
 Mitigaciones:
-- i) camino de dudas, por diseñar;
-- ii) frena hasta bajar las series (to-do 112).
+- i) regla pendiente de confirmar con Guido (ver "Dónde estamos");
+- ii) se agrega la moneda al script de series oficiales; mientras tanto, frena.
 
 ### 9 Publicar
 
@@ -229,14 +231,18 @@ Tomadas por Guido:
 2. Un total de ingresos o gastos que el documento no imprime se acepta si cierra con el resultado, y se busca un segundo chequeo.
 3. Un total que cierra solo por redondeo lleva una fila "Diferencia de redondeo".
 4. Una diferencia de una unidad entre dos tablas (UC: 1.790.062 contra 1.790.063) no va a la cola.
-5. Tipo de cambio: el de **cierre** que declara el propio documento (regla de `club-data-mapping`). El promedio entre apertura y cierre es
-   solo para presupuestos.
+5. Tipo de cambio: si el documento declara el suyo, **gana el del documento** (puede que el club acceda a una cotización mejor que la de
+   mercado). El promedio entre apertura y cierre es solo para presupuestos.
+6. Si el documento no declara tipo de cambio: la cotización de cierre del **archivo de series oficiales** (`tools/fx-reference/`, bajado de
+   cada banco central). Nunca una cotización dada por Claude. Si la moneda no está en el archivo, se agrega al script que baja las series,
+   desde su fuente oficial (faltan CLP, EUR, DKK y GBP).
 
 Pendientes, a decidir con casos reales:
 
 - ¿El primer año automático de cada club pasa siempre por la cola?
 - ¿Dónde ver la cola? Hoy es un archivo que se lee con `cola.mjs`.
-- ¿Qué tools se archivan? (propuesta presentada el 2026-10-01).
+- ¿Qué tipo de cambio gana cuando el documento declara dos?
+- Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
 
 ---
 
@@ -250,7 +256,7 @@ Pendientes, a decidir con casos reales:
 - **Cierre de notas sumando todo** (la versión vieja de `verificar.mjs`): contaba dos veces los cuadros de detalle (UC, Betis, Athletic) y
   aceptaba notas que no cerraban por la tolerancia de 0,5% (Chapecoense).
 - **No construido todavía:** duplicados de PDF por huella; número citado en el texto como segundo chequeo; que una respuesta de la cola se vuelva
-  regla; ordenar la cola por impacto; reabrir solo el sourcing de un PDF roto; camino de dudas para el tipo de cambio.
+  regla; ordenar la cola por impacto; reabrir solo el sourcing de un PDF roto; series oficiales de CLP, EUR, DKK y GBP.
 
 ---
 
