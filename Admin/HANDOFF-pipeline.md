@@ -36,8 +36,10 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - Segunda corrida: la verificación da OK y la cola quedó vacía. La etapa 8 frenaba por 3 filas con categoría menor a 0,80; ahora van a la
   cola, Guido las contestó (gastos de administración) y **la propuesta de carga da CARGA**: ingresos 25.850.434, gastos 25.665.995, resultado
   −729.845 (igual al impreso), tipo de cambio 907,13. El sitio todavía no se escribió.
-- Decisión de Guido (revisada): UC 2025 **se carga**, pero el costo de ventas sin desglose tiene que verse como "No declarado" sin romper
-  sumas. Diseño propuesto, esperando su ok (ver "Próximo paso").
+- **UC 2025 está cargado en los datos del sitio (local, commiteado, sin push).** El costo de ventas va como "sin desglosar por la fuente" y
+  queda la marca `sinDesglose` en los datos de 2025. Visto en el sitio local: 28,5 M USD de ingresos, 28,3 de costos, −0,8 de resultado;
+  sueldos del plantel muestra "—".
+- Pendiente para otra sesión: que la página lea `sinDesglose` y muestre "No declarado"; hoy "Salarios / Ingresos" dice 0% para UC 2025.
 
 **Cambios hechos después de esa corrida (commiteados):**
 
@@ -54,9 +56,12 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 **Próximo paso:**
 
-- Ok de Guido al diseño de "No declarado" para UC 2025; después escribir UC 2025 en el sitio (`cargar.mjs --escribir`) y commitearlo.
-- Medir si una respuesta de categoría puede valer como precedente para otros clubes (pregunta de Guido).
+- Publicar: lo decide y lo hace Guido (merge de esta rama a `main` y push; cada push es un deploy).
+- Otra sesión: que la página muestre "No declarado" con `sinDesglose` (y arreglar "Salarios / Ingresos 0%").
+- Precedente de categoría con contexto: guardar con cada respuesta el renglón del estado que desglosa la fila (o el título de su tabla), para
+  que "Remuneración" dentro de gastos de administración no se confunda con "Remuneraciones" dentro del costo de ventas. Diseño por proponer.
 - Agregar CLP, EUR, DKK y GBP al script de series oficiales.
+- Elegir el próximo documento.
 
 ---
 
@@ -223,6 +228,7 @@ Mitigaciones:
 - Archivo: `Admin/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
+- Para fijar la categoría de una fila sin que haya un caso: `node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."`.
 - La próxima corrida toma la respuesta.
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
