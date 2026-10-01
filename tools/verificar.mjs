@@ -32,7 +32,8 @@
 //   node tools/verificar.mjs --lista <archivo> [--rubros]
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, appendFileSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
@@ -399,8 +400,39 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const club = clubId || pdf.split('/')[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const rubros = out.lineas.filter((l) => l.origen !== 'redondeo').map((l) => ({ label: l.etiqueta, lado: l.lado === 'ingreso' ? 'revenue' : 'expense', page: l.pagina, section: l.origen, values: [l.M] }));
     writeFileSync(resolve(ROOT, derivado(md, '.rubros.json')), JSON.stringify({ md, pdf, club, year, generatedAt: new Date().toISOString(), origen: 'verificar.mjs (proceso nuevo, Versión 324)', rubros }, null, 1));
+    if (out.estado === 'ok') avisarRegistro(md, rubros.length, registro);
   }
   return out;
+}
+
+// AVISO AL REGISTRO VIEJO (Versión 349, ok de Guido). Jev, Claude y cargar.mjs solo trabajan los documentos `listo-para-jev` del registro
+// (Admin/transcripciones-estado.jsonl), que arma inventario-transcripciones.mjs con la ÚLTIMA línea del historial
+// (Admin/transcripciones-verificaciones.jsonl) para la huella del .md actual. Esa línea la escribía solo el proceso viejo (pipeline.mjs, al
+// preparar). Un documento que entra SOLO por el proceso nuevo, o cuyo .md cambió, quedaba "sin-verificar" aunque el proceso nuevo lo hubiera
+// validado y verificado. Caso real: UC 2015, re-transcripto con Mistral en el reintento del lote 06 (validacion.json: 83 números
+// confirmados, 0 sin confirmar; verificar ok), y la etapa 7 decía "0 documentos listo-para-jev" y cargar.mjs frenaba.
+// Ahora, al terminar ok (y solo desde el lote, que es quien escribe los rubros), se agrega la MISMA línea que escribe pipeline.mjs, con un
+// método y un detalle propios: "listo" acá quiere decir "lo que se carga está validado", NO "el .md entero está validado".
+// Solo si se cumplen todas:
+//   - el .md no está cargado ni ya es listo-para-jev para esta misma huella (no se pisa la validación entera de un documento del proceso viejo);
+//   - validacion.json existe, es posterior al .md y no tiene números sin confirmar.
+function avisarRegistro(md, nRubros, registro) {
+  const e = (registro || []).find((x) => x.md === md);
+  const mdAbs = resolve(ROOT, md);
+  if (!e || e.cargado || !existsSync(mdAbs)) return false;
+  const sha = createHash('sha1').update(readFileSync(mdAbs)).digest('hex');
+  const histPath = resolve(ROOT, 'Admin', 'transcripciones-verificaciones.jsonl');
+  const hist = existsSync(histPath) ? readFileSync(histPath, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter((v) => v && v.md === md && v.mdSha1 === sha) : [];
+  const prev = hist[hist.length - 1] || {};
+  if (prev.jev === 'listo-para-jev') return false;
+  const vPath = resolve(ROOT, derivado(md, '.validacion.json'));
+  if (!existsSync(vPath)) return false;
+  let v; try { v = JSON.parse(readFileSync(vPath, 'utf8')); } catch { return false; }
+  if ((v.noConfirmados || []).length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
+  const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
+  appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',
+    detail: `validar-bloques: solo los bloques que se cargan (${v.confirmados ?? '?'} números confirmados, modo ${v.modo || '?'}); el resto del .md no se validó`, jev, rubros: nRubros }) + '\n');
+  return true;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

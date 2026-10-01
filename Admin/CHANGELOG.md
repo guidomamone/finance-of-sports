@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 349 — El proceso nuevo le avisa al registro cuando un documento queda listo para categorizar (2026-10-01)
+
+- `verificar.mjs` (`avisarRegistro`): al terminar ok desde el lote, si el `.md` no está cargado ni ya es `listo-para-jev` para su huella, y `validacion.json` es posterior al `.md` y no tiene números sin confirmar, agrega al historial (`transcripciones-verificaciones.jsonl`) la misma línea que escribe `pipeline.mjs`, con método "validar-bloques (proceso nuevo)" y el detalle "solo los bloques que se cargan; el resto del .md no se validó". Caso: UC 2015, re-transcripto, quedaba "sin-verificar" y la etapa 7 no lo categorizaba. Medido en los 16 años de UC: una sola línea nueva (2015); en el registro solo cambia 2015 (sin-verificar → listo, listo-para-jev).
+
 ## Versión 348 — Un caso de categoría que una respuesta del club ya resolvió se cierra solo (2026-10-01)
 
 - `cola.mjs`: `cerrarResueltoPorClub()`. `cargar.mjs`: cuando aplica a un documento la respuesta de categoría que Guido dio en otro año del club, cierra el caso pendiente de ese documento con la misma etiqueta (`obsoleto`, con la respuesta que lo resolvió). UC 2013, caso 6c69d0a ("Otras ganancias (pérdidas)", resuelto por 4094e9d de 2014). Medido en los 17 documentos de UC: `.carga.json` y salida de `cargar.mjs` idénticos antes y después; en la cola solo cambia ese caso.
