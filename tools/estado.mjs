@@ -174,6 +174,21 @@ if (existsSync(altas)) {
   const c = {}; for (const a of A) c[a.estado] = (c[a.estado] || 0) + 1;
   console.log(`\n6b. ALTA DE CLUBES NUEVOS (Admin/altas-club.jsonl): ${Object.entries(c).map(([k, v]) => `${k} ${v}`).join(' · ')}   [node tools/alta-club.mjs --todos]`);
 }
+// ÚLTIMA CORRIDA DE LA ETAPA 6 (Admin/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`): cuántos cargarían y por qué frenan los demás, por
+// grupo de países. Un documento puede frenar por varios motivos: cada columna cuenta los documentos que tienen ese motivo.
+const ultimo = resolve(ROOT, 'Admin', 'cargar-ultimo.jsonl');
+if (existsSync(ultimo)) {
+  const U = readFileSync(ultimo, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  const NOMBRE = { 'tie-out': 'no cierra', 'tie-out-resultado': 'resultado', categorizacion: 'categoría', fx: 'tipo cambio', alta: 'alta', periodo: 'período', año: 'año', filas: 'filas', moneda: 'moneda', fuente: 'fuente', registro: 'registro', club: 'club', error: 'error' };
+  const motivos = Object.keys(NOMBRE).filter((m) => U.some((x) => x.motivos.includes(m)));
+  console.log(`\n6c. ÚLTIMA CORRIDA DE LA ETAPA 6 (${U[0]?.lista}, ${String(U[0]?.ts).slice(0, 16).replace('T', ' ')}): ${U.filter((x) => x.carga).length} de ${U.length} cargarían`);
+  console.log(`  ${'grupo'.padEnd(6)}${'docs'.padStart(5)}${'carga'.padStart(6)}${motivos.map((m) => NOMBRE[m].padStart(12)).join('')}`);
+  for (const g of GRUPOS) {
+    const X = U.filter((x) => grupoDe(x.pdf) === g.id); if (!X.length) continue;
+    console.log(`  ${g.corto.padEnd(6)}${String(X.length).padStart(5)}${String(X.filter((x) => x.carga).length).padStart(6)}${motivos.map((m) => String(X.filter((x) => x.motivos.includes(m)).length || '').padStart(12)).join('')}`);
+  }
+  console.log('  ("no cierra": las filas no suman ningún total impreso; "resultado": tampoco el resultado del ejercicio. Detalle por documento: Admin/cargar-ultimo.jsonl)');
+}
 console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, Qué falta 1.');
 ETAPAS.filter(([e]) => e.startsWith('7')).forEach(imprimirEtapa);
 console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);

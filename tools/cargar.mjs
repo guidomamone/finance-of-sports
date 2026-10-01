@@ -664,6 +664,14 @@ async function main() {
       if (c && !c.sinProduccion) console.log(`         vs producción: ingresos ${c.prop.revenue} / ${c.prod.revenue}; gastos ${c.prop.expenses} / ${c.prod.expenses}; PAT ${c.prop.officialPAT} / ${c.prod.officialPAT}; dinero bien ubicado ${c.dineroIngresosBien} / ${c.dineroGastosBien}; fx ${c.fxIgual}; liga ${c.ligaIgual}`);
     }
   }
+  // ÚLTIMA CORRIDA EN LISTA (Versión 323, pedido de Guido: ver en el tablero por qué frena la etapa 6, por grupo de países): un resumen por
+  // documento en Admin/cargar-ultimo.jsonl (se PISA en cada corrida con --lista; no con un documento suelto ni con --comparar, que es un
+  // backtest en otro checkout). Lo lee tools/estado.mjs. La propuesta completa sigue yendo a --salida si se la pide.
+  if (LISTA && !COMPARAR) {
+    const resumen = salidas.map((P) => ({ pdf: P.pdf, clubId: P.clubId || null, year: P.year || null, carga: !P.frena.length, motivos: [...new Set(P.frena.map((f) => f.etapa.replace(/:.*/, '')))], primero: P.frena[0]?.motivo?.slice(0, 200) || null }));
+    writeFileSync(resolve(ROOT, 'Admin', 'cargar-ultimo.jsonl'), resumen.map((x) => JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, ...x })).join('\n') + '\n');
+    console.log(`\n${resumen.filter((x) => x.carga).length} de ${resumen.length} cargarían. Resumen en Admin/cargar-ultimo.jsonl (lo muestra node tools/estado.mjs).`);
+  }
   if (docs.length === 1 || JSON_OUT) console.log(JSON.stringify(docs.length === 1 ? salidas[0] : salidas, null, 1));
   if (ESCRIBIR) {
     const P = salidas[0];
