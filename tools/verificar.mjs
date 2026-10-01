@@ -37,6 +37,7 @@ import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
+import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./proponer-carga.mjs');
@@ -152,9 +153,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const V = existsSync(pV) ? JSON.parse(readFileSync(pV, 'utf8')) : null;
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   const U = existsSync(pU) ? JSON.parse(readFileSync(pU, 'utf8')) : {};
-  const year = e.periodo?.cierre ? Number(e.periodo.cierre.slice(0, 4)) : null;
+  // Sin fecha de cierre detectada: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con nota.
+  const cierreDeducido = e.periodo?.cierre ? null : cierrePorVecinos(pdf, registro);
+  const year = e.periodo?.cierre ? Number(e.periodo.cierre.slice(0, 4)) : cierreDeducido?.anio ?? null;
   const clubId = clubDeRuta(pdf).clubId; const cd = clubId ? sitio.generic[clubId] : null;
   const chequeos = []; const cola = []; const notas = [];
+  if (cierreDeducido) notas.push(`fecha de cierre ${cierreDeducido.cierre} ${cierreDeducido.evidencia}`);
   // REINTENTOS (Versión 336): desgloses (notas o anidados) con 2+ filas que no suman. No frenan (queda el renglón, que es correcto), pero
   // marcan el documento para el camino de error: lote.mjs --reintentar vuelve a localizar con el índice ampliado y a extraer con esta lista.
   const reintentos = [];
@@ -220,43 +224,74 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   return { filas, estado, lineasDeLado, mult };
   }
   const { filas, estado, lineasDeLado } = armar(F, U, true);
-  let ing = lineasDeLado('ingreso'); let gas = lineasDeLado('gasto');
   const fin = estado.filter((f) => f.lado === 'financiero' && f.tipo === 'renglon'); const imp = estado.filter((f) => f.lado === 'impuesto' && f.tipo === 'renglon');
   const suma = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
   const conSigno = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
 
-  // 3. totales y resultado
+  // 3. totales y resultado: LA ESCALERA DE LECTURAS (Versión 342, flujo aprobado por Guido el 2026-10-01). Se prueba una lectura; si no cierra
+  // con un número impreso (resultado o totales), la siguiente, que agrega una interpretación más a la anterior. Gana la primera que cierra y
+  // queda escrito cuál fue. El camino limpio es la lectura 0: si cierra, ningún escalón se usa. Ningún escalón se acepta si no cierra.
+  //   0  las filas tal cual las extrajo la IA
+  //   1  + si no hay resultado final, "resultado antes de impuestos" (sin el impuesto). UC 2011-2013: el estado elegido termina en el impuesto.
+  //   2  + el total impreso puede ser un RENGLÓN más del estado (las otras líneas se suman aparte). UC 2012: "total de ingresos" era
+  //        "Ingresos de actividades ordinarias 7.450.809" y aparte estaba "Otros ingresos por función 30.426".
+  //   3  + los renglones del estado sin lado (lado 'otro') entran según su signo, con la misma convención de signos que los gastos del estado.
+  //        UC 2010-2014: "Otras ganancias (pérdidas) (288.444)" quedaba afuera y el resultado no cerraba por exactamente ese importe.
+  // Si ninguna cierra: queda la lectura 0 con sus chequeos fallidos (camino de error: reintento, después cola). Si el documento no tiene NINGÚN
+  // número impreso para cerrar (ni totales, ni resultado, ni antes de impuestos), eso también es un fallo: antes pasaba como OK sin chequeo.
   const tI = F.total_ingresos ? Math.abs(parseNumber(F.total_ingresos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
   const tG = F.total_gastos ? Math.abs(parseNumber(F.total_gastos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
-  const res = F.resultado ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
-  const ajuste = (arr, total, nombre) => {
-    if (total == null || !isFinite(total)) { chequeos.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
-    const s = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
-    if (cerca(s, total)) { chequeos.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(s)} = ${r6(total)}` }); return arr; }
-    // El total impreso puede ser el de UNA fila de total que se usó como línea (o cuyas filas de nota se usaron), con otras líneas aparte del
-    // mismo lado: Nottingham Forest imprime "Turnover 189,552" y, fuera de ese total, "Profit on disposal of player registrations 100,531",
-    // que producción suma al ingreso. Si esa fila (o su desglose) da el total, el total cierra contra ella y el resto se suma aparte.
-    const filaTotal = estado.find((f) => f.tipo !== 'renglon' && cerca(Math.abs(f.M || 0), total));
-    if (filaTotal) {
-      const deEsa = arr.filter((f) => f.etiqueta === filaTotal.etiqueta || f.origen === `nota que desglosa "${filaTotal.etiqueta}"`);
-      if (deEsa.length && cerca(suma(deEsa), total)) { chequeos.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(s - total)})` }); return arr; }
-    }
-    if (Math.abs(s - total) <= tolRed) { chequeos.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(s)} contra ${r6(total)}: fila "Diferencia de redondeo" de ${r6(total - s)}` }); return [...arr, { etiqueta: 'Diferencia de redondeo', lado: nombre === 'ingresos' ? 'ingreso' : 'gasto', M: total - s, origen: 'redondeo' }]; }
-    chequeos.push({ nombre: `total de ${nombre}`, ok: false, detalle: `las líneas suman ${r6(s)} y el total impreso dice ${r6(total)}` });
-    return arr;
+  const resFinal = F.resultado ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
+  const ANTES_RE = /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte/i;
+  const filaAntes = estado.find((f) => f.tipo === 'resultado' && ANTES_RE.test(f.etiqueta) && isFinite(f.M));
+  const gastosNeg = (() => { const g = estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true; })();
+  const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M);
+  const ing0 = lineasDeLado('ingreso'); const gas0 = lineasDeLado('gasto');
+  const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo'];
+  const evaluar = (nivel) => {
+    const ch = []; let ing = [...ing0]; let gas = [...gas0];
+    if (nivel >= 3) for (const f of otros) { const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: 'estado (renglón sin lado, por su signo: lectura 3)' }); }
+    const ajuste = (arr, total, nombre, lineaTotal) => {
+      if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
+      const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
+      if (cerca(sm, total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(sm)} = ${r6(total)}` }); return arr; }
+      // Un total que es UNA fila (un total de verdad, o desde la lectura 2 también un renglón: la fila de la línea que extraer marcó como total),
+      // con otras líneas del mismo lado fuera de ese total. Nottingham Forest: "Turnover" + "Profit on disposal" aparte.
+      const filaTotal = estado.find((f) => f.tipo !== 'renglon' && cerca(Math.abs(f.M || 0), total)) || (nivel >= 2 ? estado.find((f) => (lineaTotal != null && f.linea === lineaTotal) || (f.tipo === 'renglon' && cerca(Math.abs(f.M || 0), total))) : null);
+      if (filaTotal) {
+        const deEsa = arr.filter((f) => f.etiqueta === filaTotal.etiqueta || String(f.origen || '').startsWith(`nota que desglosa "${filaTotal.etiqueta}"`));
+        if (deEsa.length && cerca(suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(sm - total)})` }); return arr; }
+      }
+      if (Math.abs(sm - total) <= tolRed) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(sm)} contra ${r6(total)}: fila "Diferencia de redondeo" de ${r6(total - sm)}` }); return [...arr, { etiqueta: 'Diferencia de redondeo', lado: nombre === 'ingresos' ? 'ingreso' : 'gasto', M: total - sm, origen: 'redondeo' }]; }
+      ch.push({ nombre: `total de ${nombre}`, ok: false, detalle: `las líneas suman ${r6(sm)} y el total impreso dice ${r6(total)}` });
+      return arr;
+    };
+    ing = ajuste(ing, tI, 'ingresos', F.total_ingresos?.linea); gas = ajuste(gas, tG, 'gastos', F.total_gastos?.linea);
+    // resultado: ingresos - gastos + financiero + impuesto, probando los signos de financiero e impuesto (cada documento los imprime a su manera)
+    let objetivo = resFinal; let conImp = true; let nombreRes = 'resultado del ejercicio';
+    if ((objetivo == null || !isFinite(objetivo)) && nivel >= 1 && filaAntes) { objetivo = filaAntes.M; conImp = false; nombreRes = 'resultado antes de impuestos'; }
+    let okRes = null; let lect = null;
+    if (objetivo != null && isFinite(objetivo)) {
+      for (const [sf, si, nm] of [[1, 1, 'como impresos'], [-1, -1, 'financiero e impuesto invertidos'], [1, -1, 'impuesto invertido'], [-1, 1, 'financiero invertido']]) {
+        if (!conImp && si === -1) continue;
+        const pat = suma(ing) - suma(gas) + sf * conSigno(fin) + (conImp ? si * conSigno(imp) : 0);
+        if (cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; break; }
+      }
+      if (!okRes) okRes = false;
+      ch.push({ nombre: nombreRes, ok: okRes, detalle: okRes ? `cierra (${lect})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))}${conImp ? ` ± impuesto ${r6(conSigno(imp))}` : ''} no da el impreso ${r6(objetivo)}` });
+    } else ch.push({ nombre: 'resultado del ejercicio', ok: null, detalle: 'extraer.mjs no encontró el resultado impreso' });
+    const okTot = ch.filter((c) => c.nombre.startsWith('total')).map((c) => c.ok);
+    const cierra = okRes === true ? !okTot.includes(false) : okRes === null && okTot.includes(true) && !okTot.includes(false);
+    return { ing, gas, ch, okRes, lect, cierra, nivel, objetivo };
   };
-  ing = ajuste(ing, tI, 'ingresos'); gas = ajuste(gas, tG, 'gastos');
-  // resultado: ingresos - gastos + financiero + impuesto, con los signos como vienen impresos y, si no cierra, con financiero/impuesto invertidos
-  // (cada documento imprime sus signos a su manera; la lectura que cierra gana, como en cargar.mjs)
-  let okRes = null; let lectura = null;
-  if (res != null && isFinite(res)) {
-    for (const [sf, si, nombre] of [[1, 1, 'como impresos'], [-1, -1, 'financiero e impuesto invertidos'], [1, -1, 'impuesto invertido'], [-1, 1, 'financiero invertido']]) {
-      const pat = suma(ing) - suma(gas) + sf * conSigno(fin) + si * conSigno(imp);
-      if (cerca(Math.abs(pat), Math.abs(res))) { okRes = true; lectura = nombre; break; }
-    }
-    if (!okRes) okRes = false;
-    chequeos.push({ nombre: 'resultado del ejercicio', ok: okRes, detalle: okRes ? `cierra (${lectura})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))} ± impuesto ${r6(conSigno(imp))} no da el resultado impreso ${r6(res)}` });
-  } else chequeos.push({ nombre: 'resultado del ejercicio', ok: null, detalle: 'extraer.mjs no encontró el resultado impreso' });
+  let E = null; let E0 = null;
+  for (const n of [0, 1, 2, 3]) { const e = evaluar(n); if (!E0) E0 = e; if (e.cierra) { E = e; break; } }
+  const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
+  if (!E) E = E0;
+  let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
+  let okRes = E.okRes; let lectura = E.lect; const res = E.objetivo ?? resFinal;
+  if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }
+  if (sinNumero) chequeos.push({ nombre: 'número impreso para cerrar', ok: false, detalle: 'el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas' });
 
   // 1. números no confirmados contra el PDF: la aritmética los confirma si todo cerró; si no, se prueba con lo que leyó la segunda fuente
   const cerro = okRes === true || chequeos.filter((c) => c.nombre.startsWith('total')).some((c) => c.ok === true);

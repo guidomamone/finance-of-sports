@@ -104,6 +104,7 @@ const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { agregarCaso, casoYRespuesta } = await import('./cola.mjs');
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
+const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS } = await import('./memoria-categorias.mjs');
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
@@ -224,6 +225,9 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
   let per = e.periodo || null;
   try { const vivo = periodoDe(readFileSync(resolve(ROOT, e.md), 'utf8'), basename(pdf)); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
+  // Sin fecha de cierre: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con aviso. Si no se puede, sigue
+  // como antes (frena más abajo por período o por año).
+  if (per && !per.cierre) { const cv = cierrePorVecinos(pdf, registro); if (cv) { per = { ...per, cierre: cv.cierre, cierreDeducido: true }; P.avisos.push(`fecha de cierre ${cv.cierre} ${cv.evidencia}`); } }
   P.periodo = per;
   if (!per) frena('periodo', 'el registro no tiene `periodo` (tools/periodo.mjs) para este documento');
   else {
@@ -245,7 +249,8 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const alta = analizar(pdf, sitio);
   if (alta.error) { frena('alta', alta.error); return P; }
   const campo = (n) => alta.ejercicio.campos.find((c) => c.campo === n) || {};
-  const year = alta.ejercicio.anio; P.year = year;
+  if (!alta.ejercicio.cierre && per?.cierreDeducido) alta.ejercicio.cierre = per.cierre; // fecha deducida de los vecinos (arriba)
+  const year = alta.ejercicio.anio ?? (per?.cierreDeducido ? Number(per.cierre.slice(0, 4)) : null); P.year = year;
   const q = quien(pdf);
   if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y onboard.mjs --quien (el que usa el registro) dice ${q.year}`);
   if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y onboard.mjs --quien dice ${q.clubId}`);

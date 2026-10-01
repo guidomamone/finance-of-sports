@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 342 — Etapa 6: escalera de lecturas; fecha de cierre deducida de los vecinos (2026-10-01)
+
+- `verificar.mjs`: si la lectura base no cierra con un número impreso, prueba en orden: (1) "resultado antes de impuestos" si no hay resultado final, (2) el total impreso puede ser un renglón, (3) renglones sin lado según su signo. Acumulativas; gana la primera que cierra y queda escrita. Si el documento no tiene ningún número impreso para cerrar, es un fallo (antes pasaba como OK). Prueba gratis sobre UC 2010-2025: 2010-2014 cierran con la lectura 3 ("Otras ganancias (pérdidas)" quedaba afuera); los 8 años que ya cerraban siguen con la lectura 0 y las mismas líneas.
+- `tools/cierre-vecinos.mjs` (nuevo): sin fecha de cierre detectada, se deduce si el documento anterior y el siguiente del club cierran el mismo día y mes; con aviso. Lo usan `verificar.mjs` y `cargar.mjs`. UC 2011: 31-12-2011, y los chequeos de año vecino contra 2010 y 2012 dan ok.
+- Lote 06 (UC 2009-2017): 2009 descartado (PDF de una página escaneada); 2015 sin estado de resultados en la transcripción vieja (falta re-transcribir); 2016 y 2017 limpios.
+
 ## Versión 341 — UC 2018-2020 cargados; dudas reconocidas por club + tema + renglón (2026-10-01)
 
 - UC 2018, 2019 y 2020 escritos (reintento por "cuotas sociales en 0": ahora con socios 98.296 / 202.753 / 99.645 y escuelas de fútbol). UC queda con 2018-2025.
