@@ -27,7 +27,7 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 - Cargados (commiteados, sin push): UC 2018-2025.
 - UC 2016: verificado; respuesta de categoría ya dada. UC 2017: reintento por "cuotas sociales en 0".
 - UC 2010-2014: con la escalera de lecturas cierran (lectura 3); perímetro individual ya contestado por Guido; 2011 con fecha deducida.
-- UC 2015: la transcripción vieja no tiene el estado de resultados: re-transcribir con Mistral (~US$ 0,26) y volver a correr.
+- UC 2015: PDF híbrido (los estados son imágenes): lo toma el escalón 1 de la etapa 2 con `--reintentar` (~US$ 0,26 de Mistral + 0,15).
 - UC 2009: descartado (PDF de una sola página escaneada).
 - Espera a Guido: publicar (merge de la rama a `main` y push; `main` ya tiene 49 commits sin pushear, que salen juntos).
 - Quedó para otra sesión: que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (hoy ningún año cargado lo usa).
@@ -37,9 +37,10 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 **Próximo paso:**
 
 - Correr `caffeinate -i node tools/lote.mjs --lista Admin/lote-06.txt --ejecutar` (verificación con la escalera; gratis salvo categorización)
-  y después `--reintentar` para los que queden marcados.
-- Propuesta de escaleras para otras etapas (presentada el 2026-10-01, esperando el ok de Guido).
-- Diseño aprobado, sin construir: precedente de categoría con contexto (etiqueta + renglón que desglosa).
+  y después `--reintentar` (2017 por los socios, 2015 para re-transcribir).
+- Ojo: la escalera de la etapa 6 vive en verificar.mjs, que usa lote.mjs (el proceso nuevo). pipeline.mjs (el proceso viejo) no la usa.
+- Escaleras: construidas la de la etapa 2 (escalón 1) y la de la 7; dibujadas todas en su etapa. Falta: escalón 2 de la etapa 2 (Gemini en
+  escaneos enteros) y que las etapas 4 y 8 registren en qué escalón salió cada dato.
 
 ---
 
@@ -98,6 +99,17 @@ Mitigaciones:
 - a) PDF digital (tiene texto propio): Mistral transcribe; el texto propio del PDF queda como segunda fuente gratis para la etapa 4.
 - b) PDF escaneado: Mistral lo marca como escaneo; no hay segunda fuente gratis.
 - c) PDF con texto roto (letras sin sentido en vez del texto real): se detecta solo y se trata como escaneo.
+- d) **Escalera** (escalón 1 construido; el 2 todavía no):
+
+```
+ ESCALÓN 0  la transcripción que hay ──────── ¿localizar encuentra el estado de resultados? sí → sigue
+ ESCALÓN 1  si no, la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen
+            → re-transcribir con Mistral y volver a localizar (con --reintentar) ── ¿lo encuentra? sí → sigue
+ ESCALÓN 2  (falta) escaneo entero → Gemini sobre las páginas candidatas
+ nada → queda como fuente (memoria, dictamen, balance solo)
+```
+
+  Caso real: UC 2015, PDF híbrido; las páginas 4-9 (los estados) son imágenes y la transcripción vieja salió del texto propio del PDF.
 - Tools: `mistral-ocr-transcribe.mjs`, `check-transcripcion-fidelidad.js` (corre solo), `reparar-pdf.mjs`.
 
 Riesgos:
@@ -115,6 +127,13 @@ Mitigaciones:
 - b) `localizar.mjs` (IA, ~US$ 0,05) ve las fichas y elige: los bloques del estado de resultados, las notas de ingresos y de gastos, la
   escala, la moneda, las columnas y el perímetro.
 - c) Si el documento no tiene estado de resultados (memoria sola, dictamen), queda como fuente.
+- d) **Escalera** (es el reintento del camino de error):
+
+```
+ ESCALÓN 0  índice normal ────────────────────────────── ¿verificar cierra y no faltan categorías? sí → sigue
+ ESCALÓN 1  índice ampliado (filas que terminan en "-") + la lista de lo que faltó (--reintentar, una vez) ── ¿cierra? sí → sigue
+ nada → se carga lo que cerró (sin abrir) o va a la cola
+```
 
 Riesgos:
 - i) elige el balance, un presupuesto u otro perímetro;
@@ -128,6 +147,15 @@ Mitigaciones:
 
 - a) PDF digital: cada número de los bloques elegidos se busca en el texto propio de su página. Gratis.
 - b) Escaneo: Gemini lee la imagen de esa página (si la rechaza, Claude). ~US$ 0,003 por página.
+- **Escalera** (ya funciona así; no registra todavía en qué escalón quedó cada número):
+
+```
+ ESCALÓN 0  texto propio del PDF (digital) ────── ¿el número está en su página? sí → confirmado
+ ESCALÓN 1  Gemini lee la imagen de la página ─── ¿coincide? sí → confirmado
+ ESCALÓN 2  Claude lee la imagen (si Gemini la rechaza) ── ¿coincide? sí → confirmado
+ ESCALÓN 3  las sumas de la etapa 6 lo confirman
+ nada → cola con los dos números
+```
 - Tool: `validar-bloques.mjs`.
 
 Riesgos:
@@ -188,6 +216,20 @@ Mitigaciones:
 
 - a) Precedente del club → Jev (si la confianza es 0,90 o más) → Claude por API (0,80 o más).
 - b) Lo que queda debajo de 0,80 no se carga solo: va a la cola.
+- c) **Escalera** (el escalón con contexto se agregó el 2026-10-01):
+
+```
+ ESCALÓN 0  respuesta de Guido en la cola para esa fila ─────────────────────── gana siempre
+ ESCALÓN 1  precedente exacto CON CONTEXTO (misma etiqueta y mismo renglón que desglosa)
+ ESCALÓN 2  precedente exacto (misma etiqueta en el club, una sola categoría)
+ ESCALÓN 3  precedente por familia de palabras
+ ESCALÓN 4  Jev con confianza >= 0,90
+ ESCALÓN 5  Claude con confianza >= 0,80
+ nada → cola (pregunta de sí o no)
+```
+
+  Si la misma etiqueta tiene categorías distintas en el club, el precedente sin contexto no decide y se baja de escalón: "Remuneraciones"
+  dentro del costo de ventas (sueldos del plantel) no se confunde con "Remuneración" dentro de gastos de administración.
 - Tools: `glosar-rubros.mjs`, `jev-categorizar.mjs`, `categorizar-claude.mjs`, `memoria-categorias.mjs`. ~US$ 0,03 por documento.
 
 Riesgos:
@@ -201,6 +243,14 @@ Mitigaciones:
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año.
 - c) Después corre `audit.js`; si da un error grave, revierte solo.
+- d) **Escaleras chicas** (ya funcionan así; falta registrar en qué escalón salió cada dato):
+
+```
+ TIPO DE CAMBIO   declarado único ─► declarado en tabla (gana la fecha más nueva) ─► serie oficial (tools/fx-reference/) ─► cola
+ PERÍMETRO        heredado del año cargado más cercano ─► cola
+ FECHA DE CIERRE  leída del documento ─► deducida de los vecinos (mismo día, años consecutivos) ─► cola
+ CATEGORÍAS EN 0  salarios / televisión / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► se carga con aviso
+```
 - Hoy en el lote es solo propuesta: no escribe el sitio.
 
 Riesgos:
