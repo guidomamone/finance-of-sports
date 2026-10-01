@@ -40,3 +40,9 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2021 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2021.pdf` (sourceId `catolica-cl-estados-financieros-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2025 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2025.pdf` (sourceId `catolica-cl-estados-financieros-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2020 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2020.pdf` (sourceId `catolica-cl-estados-financieros-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2019 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2019.pdf` (sourceId `catolica-cl-estados-financieros-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2018 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.pdf` (sourceId `catolica-cl-estados-financieros-2018`).
