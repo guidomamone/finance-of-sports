@@ -199,11 +199,12 @@ export function leerDato(filas, cual, { precedentes = [], factor = null, anterio
     if (escalon === 1) return { ok: a === 'ok', motivo: a === 'ok' ? 'año anterior' : 'el vocabulario necesita el año anterior cargado para confirmar la escala' };
     return { ok: a === 'ok' || b === 'ok', motivo: a === 'ok' ? 'año anterior' : b === 'ok' ? 'documento siguiente' : 'ningún año vecino para confirmar' }; };
   const filtro = cual === 'cash' ? () => true : (f) => !CAJA_RE.test(f.norm);
-  const descartes = [];
+  const descartes = []; const familiasPrecedente = [];
   for (const p of precedentes) {
     if (p.valor == null || p.valor === 0) continue;
     const prec = aprender(p.filas, p.valor, { max: cual === 'cash' ? 2 : 3, filtro });
     if (!prec || prec.ambiguo) continue;
+    familiasPrecedente.push(...prec.familias);
     const r = aplicarPrecedente(filas, prec);
     if (!r) continue;
     const c = confirmar(r, 0);
@@ -215,6 +216,16 @@ export function leerDato(filas, cual, { precedentes = [], factor = null, anterio
     const c = confirmar(v, 1);
     if (c.ok) return { ...v, escalon: 1, validacion: c.motivo, como: 'vocabulario' };
     descartes.push(`escalón 1 ${v.valor}: ${c.motivo}`);
+  }
+  // DEUDA 0 (Versión 353, decisión de Guido 2026-10-01: "0"). Un balance COMPLETO sin ninguna fila de deuda financiera es deuda 0, no "sin dato"
+  // (UC 2015: el pasivo son cuentas por pagar, provisiones e impuestos, .md L236-248). Condiciones: el balance tiene su total del pasivo; ninguna
+  // fila del balance es deuda financiera (vocabulario); y el club tiene un precedente aprendido de deuda financiera que acá no aparece.
+  if (cual === 'deuda' && !v && !descartes.length) {
+    const conTotalPasivo = filas.some((f) => f.balance && (TOTAL_PASIVO_RE.test(f.norm) || /^[\s*]*total (?:de |del )?pasivos?\b/u.test(f.norm)) && esTotalBalance(f.norm));
+    // Hace falta un precedente APRENDIDO del club, todo de deuda financiera, que en este documento no aparece. Sin precedente no alcanza: medido
+    // (Versión 353) "sin filas de vocabulario" daba 0 en 25 años con deuda real (Boca, Flamengo, Talleres: su deuda se llama de otra forma).
+    const conPrecedente = familiasPrecedente.length > 0 && familiasPrecedente.every((fam) => DEUDA_FINANCIERA_RE.test(fam));
+    if (conTotalPasivo && conPrecedente) return { valor: 0, escalon: 1, validacion: 'balance completo', factor: null, filas: [], como: 'balance completo sin filas de deuda financiera' };
   }
   return { valor: null, escalon: null, como: descartes.length ? descartes.join('; ') : v?.ambiguo ? `ambiguo: ${v.ambiguo.slice(0, 4).join('; ')}` : 'sin filas en el balance' };
 }

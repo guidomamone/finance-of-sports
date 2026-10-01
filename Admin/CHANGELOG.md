@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 353 — Caja y deuda: un balance completo sin deuda financiera es deuda 0 (2026-10-01)
+
+- `caja-deuda.mjs`: deuda 0 (decisión de Guido) cuando el balance tiene su total del pasivo, ninguna fila es deuda financiera y el club tiene un precedente aprendido de deuda financiera que en este documento no aparece. UC 2010-2019: 0 (2015 y 2019 revisados: el pasivo son cuentas por pagar, provisiones e impuestos). Medido: sin cambios en los 205 años (ningún 0 equivocado). Probado y descartado: sin exigir el precedente, 3 aciertos y 25 ceros equivocados (Boca, Flamengo, Talleres: su deuda se llama de otra forma).
+
 ## Versión 352 — Caja y deuda del balance, etapa 6b (paso 1: escalones 0 y 1, sin conectar al lote) (2026-10-01)
 
 - `tools/caja-deuda.mjs` (nuevo): lee `cash` y `grossDebt` del balance. Escalón 0: precedente del club (qué filas, 1 a 3, suman lo cargado en otro año; mismas familias en este documento). Escalón 1: vocabulario. Un dato se acepta solo si lo confirma un año vecino (año anterior cargado o documento siguiente, en su columna del año anterior); el escalón 1 necesita el año anterior cargado (el documento siguiente no ataja un error de escala). Si no, null con el motivo: nunca frena. `--medir`: lectura de los años ya cargados contra lo cargado a mano, con precedente solo de los OTROS años del club.
