@@ -176,6 +176,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const estado = filas.filter((f) => !f.detalla_a && (F.ubicacion?.estado || []).includes(f.bloque));
 
   // 2. notas: renglón del estado reemplazado por su desglose si cierra (escala deducida del cierre)
+  // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
+  // con detalla_a = la etiqueta de esa hoja). Se reemplaza con la MISMA regla (cerrarNota: tiene que sumar), hasta 3 niveles. Caso real, UC
+  // 2021-2025: "Ingresos Comerciales" de la nota 19 se abre con la columna "Comerciales" de la nota de segmentos. Si no suma, queda la hoja.
+  const abrirAnidadas = (hojas, campo, nivel) => {
+    if (nivel > 3) return hojas;
+    const usadas = new Set(hojas);
+    return hojas.flatMap((h) => {
+      const sub = filas.filter((x) => x.detalla_a && x !== h && !usadas.has(x) && x.detalla_a.trim() === String(h.etiqueta).trim());
+      const c = sub.length >= 2 ? cerrarNota(Math.abs(h[campo] || 0), sub, campo, h.u || 0) : null;
+      if (!c) { if (conNotas && sub.length >= 2 && campo === 'M') notas.push(`el desglose de "${h.etiqueta}" (${sub.length} filas) no suma la fila: quedó la fila`); return [h]; }
+      return abrirAnidadas(c.hojas.map((x) => ({ ...x, [campo]: x.valorNota * Math.sign(h[campo] || 1), origen: `${h.origen} > desglose de "${h.etiqueta}"` })), campo, nivel + 1);
+    });
+  };
   const lineasDeLado = (lado, campo = 'M') => {
     const out = [];
     const delLado = estado.filter((f) => f.lado === lado);
@@ -193,7 +206,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim());
       const obj = Math.abs(f[campo] || 0);
       const c = hijas.length >= 2 ? cerrarNota(obj, hijas, campo, f.u || 0) : null;
-      if (c) out.push(...c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })));
+      if (c) out.push(...abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1));
       else { out.push({ ...f, [campo]: Math.abs(f[campo] || 0), origen: 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0))} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); }
     }
     return out;

@@ -5,7 +5,7 @@
 //
 // POR QUÉ (Versión 324; proceso en Admin/HANDOFF-pipeline.md, "El proceso nuevo"). La IA COPIA Y ETIQUETA; no suma, no convierte, no
 // categoriza (eso lo hace un script en verificar.mjs: un LLM no sirve para verificar aritmética, FinVerBench, arXiv 2605.29586; y la categoría
-// es la etapa 7). Lecciones del test por página (localizar-extraer.mjs) ya incorporadas:
+// es la etapa 7). Desgloses anidados y cuadros por segmento (Versión 335): ver la regla de detalla_a en SYSTEM. Lecciones del test por página (localizar-extraer.mjs) ya incorporadas:
 //   - ESCALA POR BLOQUE, no por documento: en 1. FC Köln la nota de ingresos está en miles y el estado en euros con céntimos; con una escala
 //     por documento la suma salía mil veces chica.
 //   - LÍNEA DEL .md de cada fila (las líneas se le pasan numeradas): la cola humana dice "mirá la línea 412 del .md" sin buscar.
@@ -70,7 +70,8 @@ Por fila:
 - actual: el importe de la columna del ejercicio pedido TAL CUAL (puntos, comas, paréntesis, signo). anterior: el de la columna del año anterior, o null si no hay.
 - tipo: renglon (una partida), subtotal (suma de las de arriba), total (total de ingresos o de gastos), resultado (operativo, antes de impuestos, del ejercicio).
 - lado: ingreso, gasto, financiero (intereses, diferencias de cambio, resultado financiero, RECPAM), impuesto (impuesto a las ganancias), resultado, otro.
-- detalla_a: si la fila es de una NOTA que desglosa un renglón del estado, la etiqueta EXACTA de ese renglón; si es del estado, null.
+- detalla_a: si la fila es de una NOTA que desglosa un renglón del estado, la etiqueta EXACTA de ese renglón; si desglosa un renglón de OTRA NOTA (un desglose dentro de otro), la etiqueta EXACTA de ese renglón de la otra nota; si es del estado, null.
+- En un cuadro POR SEGMENTO (columnas por unidad de negocio): extraé solo las filas con importe en la columna del segmento que desglosa el renglón (ej. columna "Comerciales" para "Ingresos Comerciales"), con el importe de ESA columna para el ejercicio pedido (y el de la misma columna del año anterior), y detalla_a = ese renglón. No extraigas las otras columnas ni la de totales.
 Además: la escala de CADA bloque (unidades, miles, millones; pueden ser distintas entre el estado y las notas) con la frase que lo dice; la línea y el importe del total de ingresos, del total de gastos y del resultado del ejercicio si están impresos (si no, null).
 No sumes, no conviertas, no inventes. Si algo no se lee o es ambiguo, dejalo afuera y escribilo en dudas (una frase cada una, con la línea): lo va a mirar una persona. Cada duda: pregunta (UNA pregunta concreta que una persona contesta con sí o no mirando el PDF: qué tabla o fila, qué importe, qué se haría; ej. "¿Se deja afuera de la carga el cuadro 'Venta de jugadores al 31-12-2024' (L4070-L4072)?"), propuesta (sí o no: lo que harías vos), texto (por qué, una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 

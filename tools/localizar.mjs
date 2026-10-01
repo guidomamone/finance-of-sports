@@ -20,6 +20,10 @@
 //   necesito_ver        ids que la IA quiere ver enteros antes de decidir: se hace UNA segunda llamada con el texto completo de esos bloques
 //   dudas               lo que no pudo resolver y tiene que mirar una persona (va a la cola humana, tools/cola.mjs)
 //
+// DESGLOSES ANIDADOS Y SEGMENTOS (Versión 335, diseño aprobado por Guido): una nota puede desglosar un renglón de OTRA nota, y un cuadro por
+// segmento sirve cuando la columna de un segmento abre un renglón que nadie más abre. Caso real, UC 2021-2025: "Ingresos Comerciales" (nota 19)
+// solo se abre en la nota de segmentos, columna "Comerciales" (socios, escuelas de fútbol, publicidad, tienda, merchandising); 2022-2024 se
+// cargaron así. Los cuadros por jugador no se eligen: abrirían "Préstamo de jugadores" en nombres propios.
 // QUÉ PUEDE SALIR MAL (riesgos de la etapa 3 en el HANDOFF): elegir el balance, un presupuesto, la conciliación del impuesto o el otro perímetro;
 // quedarse con la mitad de un estado partido. Todo eso lo frena verificar.mjs (no cierra con totales, resultado ni el año anterior cargado).
 //
@@ -62,8 +66,9 @@ export const SYSTEM = `Sos analista de estados financieros de clubes de fútbol.
 
 Elegí:
 - estado: los bloques del ESTADO DE RESULTADOS del ejercicio pedido (cuenta de pérdidas y ganancias, estado de recursos y gastos, DRE, GuV, resultatregnskap, winst- en verliesrekening, conto economico...). Incluí los bloques que lo continúan.
-- notas_ingresos / notas_gastos: los bloques de notas o anexos que DESGLOSAN renglones de ingresos o de gastos de ese estado.
-NO elijas: balance (activo/pasivo), flujo de efectivo, evolución del patrimonio, destino del resultado, cuadros de bienes de uso / activo fijo, conciliaciones de impuestos, presupuestos, indicadores ni listas de deudas o contratos.
+- notas_ingresos / notas_gastos: los bloques de notas o anexos que DESGLOSAN renglones de ingresos o de gastos de ese estado, o renglones de otra nota (un desglose dentro de otro: la nota de ingresos tiene "Ingresos Comerciales" y otro cuadro lo abre en socios, publicidad, tienda...).
+- Un cuadro POR SEGMENTO (columnas por unidad de negocio) se elige SOLO si la columna de un segmento desglosa un renglón que el estado o sus notas no abren (ej.: la columna "Comerciales" abre "Ingresos Comerciales"); si solo repite importes que ya están abiertos, no.
+NO elijas: balance (activo/pasivo), flujo de efectivo, evolución del patrimonio, destino del resultado, cuadros de bienes de uso / activo fijo, conciliaciones de impuestos, presupuestos, indicadores, listas de deudas o contratos, ni cuadros de detalle POR JUGADOR, por contrato o por persona (venta o préstamo de cada jugador: no dicen nada de la categoría).
 - Si el documento no tiene estado de resultados de ese ejercicio, sin_estado = true.
 - Si hay estado consolidado e individual: elegí el consolidado salvo que te indique otro perímetro; poné perimetro "ambos" y explicá en observaciones qué bloque es de cuál.
 - escala del estado (y la frase que lo dice en escala_evidencia), moneda (ISO), y los encabezados de la columna del ejercicio pedido y de la del año anterior.

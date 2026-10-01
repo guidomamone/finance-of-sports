@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 335 — Desgloses anidados y cuadros por segmento (2026-10-01)
+
+- `localizar.mjs` / `extraer.mjs`: una nota puede desglosar un renglón de otra nota; un cuadro por segmento se usa solo con la columna del segmento que abre un renglón (UC: columna "Comerciales" -> "Ingresos Comerciales"); los cuadros por jugador no se eligen.
+- `verificar.mjs`: `abrirAnidadas()` reemplaza una hoja de una nota por su propio desglose si suma (misma regla de `cerrarNota`), hasta 3 niveles. Probado con las filas de segmentos de UC 2021 agregadas a mano a una copia: "Ingresos Comerciales 6.542.146" se abre en socios, escuelas de fútbol, publicidad, tienda y merchandising; el resultado y la columna del documento 2022 siguen cerrando. Con lo ya extraído, UC 2021 y 2025 no cambian.
+- Guido cambió sus respuestas sobre la nota de segmentos de UC 2021 y 2025: sí se usa como desglose de "Ingresos Comerciales", como en 2022-2024.
+
 ## Versión 334 — Lote: documentos testigo; UC 2021 da CARGA (2026-10-01)
 
 - `lote.mjs`: una línea `testigo <pdf>` entra solo hasta extraer (para el chequeo de año vecino de otro documento); no se verifica, categoriza ni propone cargar.
