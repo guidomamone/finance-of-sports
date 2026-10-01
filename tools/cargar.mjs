@@ -102,7 +102,7 @@ const { categoriasAlDia } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
-const { agregarCaso, casoYRespuesta, respuestaPorDetalle } = await import('./cola.mjs');
+const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub } = await import('./cola.mjs');
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
@@ -366,6 +366,9 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
     if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', norm(label), (c) => dirname(c.pdf) === dirname(pdf)); if (otra) ({ caso, resp } = otra); }
+    // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
+    // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
+    if (resp && caso && caso.pdf !== pdf && resp.decision !== 'obsoleto') cerrarResueltoPorClub(pdf, 'cargar', 'categoria', norm(label), caso);
     if (!resp || !caso) return null;
     if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: resp.nota || null };
     if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: resp.nota || null };

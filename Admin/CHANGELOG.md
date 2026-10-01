@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 348 — Un caso de categoría que una respuesta del club ya resolvió se cierra solo (2026-10-01)
+
+- `cola.mjs`: `cerrarResueltoPorClub()`. `cargar.mjs`: cuando aplica a un documento la respuesta de categoría que Guido dio en otro año del club, cierra el caso pendiente de ese documento con la misma etiqueta (`obsoleto`, con la respuesta que lo resolvió). UC 2013, caso 6c69d0a ("Otras ganancias (pérdidas)", resuelto por 4094e9d de 2014). Medido en los 17 documentos de UC: `.carga.json` y salida de `cargar.mjs` idénticos antes y después; en la cola solo cambia ese caso.
+
 ## Versión 347 — El documento re-transcripto en el lote pasa a verificar en la misma corrida (2026-10-01)
 
 - `lote.mjs`: la etapa 6 toma todo estado que empiece con "extraído" (antes, igualdad exacta: UC 2015, re-transcripto con Mistral y extraído en el reintento del lote 06, quedaba sin verificar). Los testigos siguen afuera. Ensayo del lote 06, con y sin `--reintentar`: idéntico antes y después.

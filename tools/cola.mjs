@@ -127,6 +127,19 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
   return n;
 }
 
+// RESUELTO POR UNA RESPUESTA DEL CLUB (Versión 348). Una etapa aplicó a ESTE documento la respuesta que Guido dio en OTRO documento del
+// mismo club (cargar.mjs, categoría por etiqueta: "Otras ganancias (pérdidas)" de UC contestada en 2014). Si este documento tiene su propio
+// caso pendiente con la misma clave, ya no hace falta: se cierra con decision 'obsoleto' y la nota dice qué respuesta lo resolvió. Solo toca
+// un caso pendiente (nunca uno que Guido contestó) y solo el de esa clave exacta.
+export function cerrarResueltoPorClub(pdf, etapa, motivo, detalle, casoOrigen) {
+  const id = createHash('sha1').update(`${pdf}|${etapa}|${motivo}|${detalle}`).digest('hex').slice(0, 7);
+  const { casos, resp } = leer();
+  if (!casos.has(id) || resp.has(id) || !casoOrigen || casoOrigen.id === id) return false;
+  const anio = (String(casoOrigen.pdf).match(/(\d{4})(?!.*\d{4})/) || [])[1] || '?';
+  appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'obsoleto', nota: `resuelto por la respuesta ${casoOrigen.id} (${anio}), que vale para todo el club` }) + '\n');
+  return true;
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
   // --corregir-categoria (Versión 332): Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
