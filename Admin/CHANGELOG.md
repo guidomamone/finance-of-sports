@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 326 — La cola humana dice la página del visor y el número impreso (2026-10-01)
+
+- `cola.mjs`: "Abrí el PDF en la página N del visor (la hoja tiene impreso "M" al pie)". El número impreso sale del último renglón de la página en el .md o, si no está, del texto propio del PDF; si no hay, lo dice. Pedido de Guido: buscó "pág. 8" de Bahia en la hoja con el "6" impreso (era otro documento y otra numeración).
+
 ## Versión 325 — Índice de bloques: no perder renglones sueltos del estado de resultados (2026-10-01)
 
 - `indice-bloques.mjs`: dentro de un bloque de texto tolera huecos de hasta 3 líneas (blancas, hasta dos líneas de texto sin cifras, o un número de página suelto), y cuenta como fila una línea que termina en 2+ números chicos. Encontrado antes de correr el lote 01: en Bahia 2021 pág. 8 "Outras receitas (despesas), líquidas 64.283" y "Receitas financeiras 77" quedaban fuera de todo bloque, y extraer no los iba a ver.

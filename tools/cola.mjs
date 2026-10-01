@@ -9,7 +9,8 @@
 // "vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción".
 //
 // EL ARCHIVO: Admin/cola-revision.jsonl (trackeado en git: son decisiones de Guido, conocimiento del proyecto). Solo se le AGREGAN líneas:
-//   {tipo:'caso', id, ts, pdf, md, etapa, motivo, que, pagina, lineas:[desde,hasta], propuesta, clave}
+//   {tipo:'caso', id, ts, pdf, md, etapa, motivo, que, pagina, lineas:[desde,hasta], propuesta, clave}   (pagina = la del visor; al mostrarla
+//                                                                                                     se agrega el número impreso, ver LAS DOS PÁGINAS)
 //   {tipo:'respuesta', id, ts, decision, valor, nota}
 // Al leer, la última respuesta de cada caso gana. Un caso con la misma `clave` (pdf | etapa | motivo | detalle) no se agrega dos veces.
 //
@@ -34,6 +35,7 @@
 import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // COLA_ARCHIVO (variable de entorno) apunta a otro archivo: para probar las tools sin ensuciar la cola real.
@@ -65,6 +67,34 @@ export function respuestaDe(pdf, etapa, motivo, detalle = '') {
   const id = createHash('sha1').update(`${pdf}|${etapa}|${motivo}|${detalle}`).digest('hex').slice(0, 7);
   return leer().resp.get(id) || null;
 }
+// LAS DOS PÁGINAS (Versión 326, pedido de Guido el 2026-10-01). `pagina` en un caso es la de la marca "--- pág. N ---" del .md, que es la
+// página del PDF COMO LA CUENTA EL VISOR. El número impreso al pie de la hoja casi nunca coincide: la portada no se numera, y en Bahia 2021
+// el estado de resultados está en la página 8 del visor con un "7" impreso (en el documento de 2022, página 7 del visor e impreso "6").
+// Guido abrió la hoja con el "6" impreso buscando "pág. 8" y no lo encontró. Ahora la cola dice las dos. El número impreso se busca en el
+// último renglón no vacío de esa página en el .md (las transcripciones con pdftotext -layout lo traen) y, si no está, en el texto propio del
+// PDF (pdftotext -f N -l N). Solo se acepta un número suelto de 1-4 dígitos (o "- 7 -", "Página 7", "7 / 48"); si no hay, se dice que no
+// se encontró, nunca se adivina.
+const NUM_PIE_RE = /^(?:p[áa]g(?:ina)?\.?\s*|page\s*|seite\s*|-\s*)?(\d{1,4})(?:\s*-|\s*(?:\/|de|of|von)\s*\d{1,4})?$/i;
+function numeroImpreso(c) {
+  const desdeTexto = (txt) => { const ls = String(txt).split('\n').map((l) => l.trim()).filter(Boolean); const m = ls.length ? ls[ls.length - 1].match(NUM_PIE_RE) : null; return m ? m[1] : null; };
+  try {
+    if (c.md && existsSync(resolve(ROOT, c.md))) {
+      const L = readFileSync(resolve(ROOT, c.md), 'utf8').split('\n'); const re = /^---\s*pág\.\s*(\d+)\s*---/i;
+      const i = L.findIndex((l) => (l.match(re) || [])[1] === String(c.pagina));
+      if (i >= 0) { let j = i + 1; while (j < L.length && !re.test(L[j])) j++; const n = desdeTexto(L.slice(i + 1, j).join('\n')); if (n) return n; }
+    }
+    if (c.pdf && existsSync(resolve(ROOT, c.pdf))) {
+      const r = spawnSync('pdftotext', ['-layout', '-f', String(c.pagina), '-l', String(c.pagina), resolve(ROOT, c.pdf), '-'], { encoding: 'utf8' });
+      if (r.status === 0) return desdeTexto(r.stdout);
+    }
+  } catch { /* sin número impreso */ }
+  return null;
+}
+export function textoPagina(c) {
+  const n = numeroImpreso(c);
+  return `Abrí el PDF en la página ${c.pagina} del visor (${n ? `la hoja tiene impreso "${n}" al pie` : 'no encontré número impreso al pie'}).`;
+}
+
 export function pendientes() { const { casos, resp } = leer(); return [...casos.values()].filter((c) => !resp.has(c.id)); }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -90,7 +120,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : ''}`);
       console.log(`      Qué mirar: ${c.que}`);
-      if (c.pagina) console.log(`      Abrí el PDF en la pág. ${c.pagina}.`);
+      if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);
     }
