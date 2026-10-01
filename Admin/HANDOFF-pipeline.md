@@ -24,21 +24,19 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 **Terminando Universidad Católica (Cruzados).** Plan de Guido, en este orden:
 
-1. **Dejar UC entero listo para cargar.**
-   - Cargados (commiteados, sin push): 2018-2025.
-   - Dan CARGA, falta escribirlos: 2016 y 2017.
-   - Falta el reintento: 2013 (índice ampliado v2) y 2015 (re-transcribir con Mistral: el PDF tiene los estados en imagen).
-     Comando: `caffeinate -i node tools/lote.mjs --lista Admin/lote-06.txt --ejecutar --reintentar` (~US$ 0,55).
-   - Con las respuestas de Guido ya dadas, 2010, 2011, 2012 y 2014 deberían dar CARGA en la próxima corrida (sin `--reintentar`).
-   - 2009: descartado (`Admin/documentos-descartados.txt`).
-2. **Volver a correr TODOS los años de UC** (2010-2025, con `--rehacer` solo si hace falta) para comprobar que cada mejora de esta sesión fue
-   una mejora y no una manta corta: los años que ya cerraban tienen que seguir cerrando igual (misma lectura, mismas líneas).
-3. **Escribirlo en los datos del sitio** (commit local, sin deploy: el push lo hace Guido).
+1. ~~Dejar UC entero listo para cargar~~ (hecho 2026-10-01): 2010-2017 dan CARGA; 2018-2025 ya están en el sitio; 2009 descartado.
+2. **Volver a correr TODOS los años de UC** (`Admin/lote-07.txt`) y confirmar que da igual: corrido una vez, sin manta corta
+   (los años que cerraban, idénticos; 2018-2021 y 2025 iguales al sitio por categoría). Falta la corrida final después de las Versiones 350-351:
+   `caffeinate -i node tools/lote.mjs --lista Admin/lote-07.txt --ejecutar`. Tiene que terminar con "Listo para cargar 8 · Frenados 0".
+3. **Escribirlo en los datos del sitio** (commit local, sin deploy: el push lo hace Guido). Antes, decidir con Guido 2022-2024 (cargados a
+   mano): ahí "Servicios de Seguridad" está dentro de gastos de administración; en 2018-2021 y en el script va a organización de partidos.
 4. **Los pendientes de este HANDOFF** (lista de abajo).
 5. **Otro club**, con el mismo proceso: atajar errores en el script y comprobar que siga sirviendo para UC y los demás.
 
 Pendientes:
 
+- `cargar.mjs`: una fila con "no_es_rubro" por debajo de 0,80 de confianza se excluye sin pasar por el umbral (UC 2010: "Ingresos por
+  recaudaciones y otros" 2.163.676 afuera; lo atajó la suma y el reintento lo abrió). Debería ir al camino de dudas como cualquier otra.
 - Que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (otra sesión; hoy ningún año cargado lo usa).
 - Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
 - Etapas 4 y 8: registrar en qué escalón salió cada dato (las escaleras existen, falta dejarlo escrito por documento).
