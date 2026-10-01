@@ -21,9 +21,9 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Verificado el 25/9/2026 contra "2022/2023/2024 Campeonato Nacional Primera División" (Wikipedia):
   // los 3 jugaron Primera División de Chile en los 3 ejercicios (Colo-Colo campeón en 2022 y 2024).
-  // clubId con sufijo de país (Versión 129: colocolo-cl/udechile-cl/catolica-cl), clave entre // 2025: tools/cargar.mjs 2026-10-01, SIN VERIFICAR
+  // clubId con sufijo de país (Versión 129: colocolo-cl/udechile-cl/catolica-cl), clave entre
   // comillas porque un id con guion no es una key JS válida sin comillas.
   'colocolo-cl': { 2022: 'cl-primera', 2023: 'cl-primera', 2024: 'cl-primera' },
   'udechile-cl': { 2022: 'cl-primera', 2023: 'cl-primera', 2024: 'cl-primera' },
-  'catolica-cl': { 2022: 'cl-primera', 2023: 'cl-primera', 2024: 'cl-primera', 2025: null },
+  'catolica-cl': { 2022: 'cl-primera', 2023: 'cl-primera', 2024: 'cl-primera' },
 });
