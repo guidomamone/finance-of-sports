@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 325 — Índice de bloques: no perder renglones sueltos del estado de resultados (2026-10-01)
+
+- `indice-bloques.mjs`: dentro de un bloque de texto tolera huecos de hasta 3 líneas (blancas, hasta dos líneas de texto sin cifras, o un número de página suelto), y cuenta como fila una línea que termina en 2+ números chicos. Encontrado antes de correr el lote 01: en Bahia 2021 pág. 8 "Outras receitas (despesas), líquidas 64.283" y "Receitas financeiras 77" quedaban fuera de todo bloque, y extraer no los iba a ver.
+- Medido sobre las 2.249 transcripciones: filas en bloques 436.679 -> 485.595, ningún documento pierde filas. Bahia 2021 y 2022 y FC Midtjylland 2021 (bilingüe; antes 0 filas de estado) quedan con el estado de resultados entero en un bloque.
+
 ## Versión 324 — El proceso nuevo (localizar, validar, extraer, verificar) con cola humana: tools construidas, sin correr (2026-10-01)
 
 - Diseño acordado con Guido etapa por etapa (riesgos, mitigaciones, cola humana) en `Admin/HANDOFF-pipeline.md`, "El proceso nuevo", junto con lo que falló en los tests y lo que no entró. Se trabaja en lotes de 5; no se corrió ningún piloto (pedido de Guido).

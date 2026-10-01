@@ -8,8 +8,10 @@
 // Entonces se localiza por BLOQUE: cada tabla de la transcripción (y cada bloque de texto con cifras que no quedó como tabla) es una unidad,
 // con una FICHA corta que es lo único que ve la IA de localizar (tools/localizar.mjs):
 //   id          'b1', 'b2'... en el orden del documento
-//   tipo        'tabla' (líneas que empiezan con "|") o 'texto' (3+ líneas seguidas con importes y sin "|": estados que Mistral transcribió
-//               como texto plano, como Corinthians 2024-25, o listas con viñetas como el Einzelabschluss de Bayern)
+//   tipo        'tabla' (líneas que empiezan con "|") o 'texto' (3+ líneas con importes y sin "|": estados que Mistral transcribió
+//               como texto plano, como Corinthians 2024-25, listas con viñetas como el Einzelabschluss de Bayern, o las transcripciones
+//               viejas hechas con pdftotext -layout, como Bahia y Athletic Club). Entre filas se toleran huecos chicos: blancos, hasta dos
+//               líneas de texto sin cifras (encabezado de grupo, traducción) o un número de página suelto (Versión 325, ver HUECOS abajo)
 //   pagina      la de la marca "--- pág. N ---" anterior
 //   lineas      [desde, hasta] en el .md (1 = primera línea): con esto la cola humana dice "abrí el .md en las líneas X-Y"
 //   arriba      las 3 líneas de texto no vacías de arriba (el título, "en miles de pesos", "Nota 20 - Ingresos"...)
@@ -27,7 +29,10 @@
 //     entero; la etapa 6 (verificar) lo frena si mezcla cosas (no cierra).
 //   - Un estado transcripto como texto con los importes en otra línea que la etiqueta: no forma bloque (cada línea tiene que tener su importe).
 //     Lo detecta localizar ("no encuentro el estado") -> cola humana con la página para mirar.
-//   - Cifras sin separador (menos de 1.000, o años): se cuentan como cifras si tienen 4+ dígitos; un "25" suelto no.
+//   - Cifras sin separador (menos de 1.000, o años): se cuentan como cifras si tienen 4+ dígitos; un "25" suelto no. Pero una línea que
+//     termina en 2+ números chicos ("Receitas financeiras 23 77 742") sí es fila (Versión 325).
+//   - Un hueco de más de 3 líneas, o con una línea de texto que trae cifras, corta el bloque: el resto queda como otro bloque (marcado
+//     `continuaDe` si está a 3 líneas o menos) o, si tiene menos de 3 filas, en ninguno. La etapa 6 lo frena (no cierra con el resultado).
 //
 // USO:
 //   node tools/indice-bloques.mjs "<pdf o md>"            imprime el índice (lo que vería la IA)
@@ -66,11 +71,38 @@ export function indiceBloques(md) {
       empuja({ tipo: 'tabla', pagina, lineas: [desde + 1, i], arriba: textoReciente.slice(-3), encabezado: encabezado.map(limpia), columnas: (datos[0] || []).length, filas: cuerpo.length, primeras: etiquetas.slice(0, 3), ultimas: etiquetas.slice(-2), cifras: cuerpo.reduce((a, c) => a + cuantas(c.slice(1).join(' ')), 0), continuaDe });
       textoReciente.length = 0; continue;
     }
-    // Bloque de texto con importes: 3+ líneas seguidas (se tolera una línea en blanco en el medio) que terminan en importes.
-    const conImporte = (l) => l.trim() && !l.trim().startsWith('|') && !PAG_RE.test(l) && /\p{L}{2,}/u.test(l) && (l.match(IMPORTE_RE) || []).length >= 1 && /[\d)]\s*$/.test(l.trim());
+    // Bloque de texto con importes: 3+ líneas que terminan en importes, con huecos chicos en el medio (ver HUECOS abajo).
+    // Una línea cuenta como fila si tiene letras, termina en número o ")" y: tiene un importe (IMPORTE_RE), o termina en 2+ números chicos
+    // (columnas). Casos reales (Versión 325): Bahia 2021 pág. 8, "Receitas financeiras   23   77   742" (nota, 2021, 2020; ninguno con
+    // separador ni de 4 dígitos) quedaba afuera del bloque del resultado; FC Midtjylland 2021 pág. 17, "Finansielle omkostninger 6 -950 -566"
+    // (un solo espacio entre columnas: el .md no es -layout). Un año suelto al final ("31 de dezembro de 2020") es UN número, no dos.
+    const COLS_CHICAS_RE = /\p{L}.*?(?:\s+\(?-?\d[\d.,]*\)?){2,}\s*$/u;
+    const conImporte = (l) => l.trim() && !l.trim().startsWith('|') && !PAG_RE.test(l) && /\p{L}{2,}/u.test(l) && /[\d)]\s*$/.test(l.trim()) && ((l.match(IMPORTE_RE) || []).length >= 1 || COLS_CHICAS_RE.test(l));
+    // HUECOS (Versión 325): hasta la 324 se toleraba UNA línea en blanco entre filas, y un renglón suelto entre dos encabezados de grupo se
+    // perdía. Caso real, Bahia 2021 pág. 8: "Itens extraordinários" / "Outras receitas (despesas), líquidas  22  64.283  (4.998)" / "" /
+    // "Resultado financeiro": el renglón de 64.283 (más que todo el superávit, 27.751) no quedaba en ningún bloque (1 fila < 3) ni en las 3
+    // líneas de arriba que ve extraer.mjs. Ahora se toleran hasta 3 líneas de hueco si son blancas, hasta DOS líneas de texto sin dígitos
+    // y cortas (un encabezado de grupo; o la traducción de un documento bilingüe, FC Midtjylland: "Depreciation, amortisation and
+    // impairment of intangible assets and property, plant" / "and equipment" debajo del renglón danés), o un número suelto de 1-3 dígitos
+    // (el número de página impreso que pdftotext dejó en el medio: Midtjylland pág. 17, un "2" entre dos renglones del resultado). El título
+    // de otro estado en la misma página no entra porque su subtítulo trae la fecha ("para os exercícios findos em 31 de dezembro de 2021").
+    // Medición sobre las 2.249 transcripciones (Versión 325): ninguna pierde filas; ver Admin/CHANGELOG.md.
+    const huecoHasta = (j) => {
+      let k = j; let textos = 0;
+      while (k < L.length && k - j < 3 && !conImporte(L[k])) {
+        const t = L[k].trim();
+        if (PAG_RE.test(L[k]) || t.startsWith('|')) return -1;
+        if (t && !/^\d{1,3}$/.test(t)) { if (/\d/.test(t) || t.length > 90 || ++textos > 2) return -1; }
+        k++;
+      }
+      return k < L.length && k > j && conImporte(L[k]) ? k : -1;
+    };
     if (conImporte(linea)) {
       let j = i; const desde = i; const filas = [];
-      while (j < L.length && (conImporte(L[j]) || (!L[j].trim() && j + 1 < L.length && conImporte(L[j + 1])))) { if (L[j].trim()) filas.push(L[j]); j++; }
+      while (j < L.length) {
+        if (conImporte(L[j])) { filas.push(L[j]); j++; continue; }
+        const k = huecoHasta(j); if (k < 0) break; j = k;
+      }
       if (filas.length >= 3) {
         // etiqueta = la línea sin los importes ni los números sueltos del final ("Eigenkapital     0", "Gewinnrücklagen 0   -250")
         const etiquetas = filas.map((l) => limpia(l.replace(IMPORTE_RE, ' ').replace(/^\s*[-•*·–]\s/, '').replace(/(\s+[-+(]?\d[\d.,]*\)?%?)+\s*$/, '')).slice(0, 80));
