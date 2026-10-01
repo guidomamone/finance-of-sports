@@ -38,7 +38,7 @@ const CLUBES = resolve(ROOT, 'Clubes');
 const GENERADOS = resolve(ROOT, 'Generados');
 
 // Terminaciones de archivo que son DERIVADOS (no el documento). El orden no importa; `.md` a secas es el documento y NO está.
-export const SUFIJOS_RE = /(\.briefing\.json|\.rubros\.json|\.jev\.json|\.categorias\.json|\.localizar\.json|\.extraccion\.json|\.ubicacion\.json|\.validacion\.json|\.filas\.json|\.verificacion\.json|\.previo-[^/]*\.md|\.antes-sumas\.md|\.mistral-redo\.md|\.gemini-check\.md|\.claude-check\.md|\.t-[a-z]+\.md|-mistral-test\.md)$/;
+export const SUFIJOS_RE = /(\.briefing\.json|\.rubros\.json|\.jev\.json|\.categorias\.json|\.localizar\.json|\.extraccion\.json|\.ubicacion\.json|\.validacion\.json|\.filas\.json|\.verificacion\.json|\.carga\.json|\.previo-[^/]*\.md|\.antes-sumas\.md|\.mistral-redo\.md|\.gemini-check\.md|\.claude-check\.md|\.t-[a-z]+\.md|-mistral-test\.md)$/;
 
 // Nombre base del documento: sin .pdf / .md / sufijo de derivado.
 function base(ruta) {

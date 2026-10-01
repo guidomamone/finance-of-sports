@@ -677,10 +677,16 @@ async function main() {
     if (prod) P.comparacion = comparar(P, prod);
     salidas.push(P);
     if (SALIDA) appendFileSync(resolve(ROOT, SALIDA), JSON.stringify(P) + '\n');
-    if (docs.length > 1 && !JSON_OUT) {
+    // Con --lista (lo que usa lote.mjs) se imprime SIEMPRE el resumen, aunque la lista tenga un solo documento, y la propuesta completa va a
+    // Generados/.../<doc>.carga.json. Hasta la Versión 329 un lote de un documento imprimía el JSON entero en la terminal (~400 líneas;
+    // pedido de Guido: "solo el resumen"). El JSON completo en pantalla queda para un documento suelto sin --lista, o con --json.
+    if (LISTA && P.md) { try { writeFileSync(resolve(ROOT, derivado(P.md, '.carga.json')), JSON.stringify(P, null, 1)); } catch { /* sin .md */ } }
+    if ((docs.length > 1 || LISTA) && !JSON_OUT) {
       const c = P.comparacion;
       console.log(`${P.frena.length ? 'FRENA ' : 'CARGA '} ${P.clubId || '?'} ${P.year || '?'}  <- ${d}`);
       for (const f of P.frena) console.log(`         [${f.etapa}] ${String(f.motivo).slice(0, 260)}`);
+      for (const a of P.avisos || []) console.log(`         aviso: ${String(a).slice(0, 260)}`);
+      if (LISTA && P.md) console.log(`         detalle: ${derivado(P.md, '.carga.json', { crear: false })}`);
       if (c && !c.sinProduccion) console.log(`         vs producción: ingresos ${c.prop.revenue} / ${c.prod.revenue}; gastos ${c.prop.expenses} / ${c.prod.expenses}; PAT ${c.prop.officialPAT} / ${c.prod.officialPAT}; dinero bien ubicado ${c.dineroIngresosBien} / ${c.dineroGastosBien}; fx ${c.fxIgual}; liga ${c.ligaIgual}`);
     }
   }
@@ -692,7 +698,7 @@ async function main() {
     writeFileSync(resolve(ROOT, 'Admin', 'cargar-ultimo.jsonl'), resumen.map((x) => JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, ...x })).join('\n') + '\n');
     console.log(`\n${resumen.filter((x) => x.carga).length} de ${resumen.length} cargarían. Resumen en Admin/cargar-ultimo.jsonl (lo muestra node tools/estado.mjs).`);
   }
-  if (docs.length === 1 || JSON_OUT) console.log(JSON.stringify(docs.length === 1 ? salidas[0] : salidas, null, 1));
+  if ((docs.length === 1 && !LISTA) || JSON_OUT) console.log(JSON.stringify(docs.length === 1 ? salidas[0] : salidas, null, 1));
   if (ESCRIBIR) {
     const P = salidas[0];
     if (P.frena.length) { console.error(`\nNo se escribe nada: ${P.frena.length} motivo(s) para frenar.`); process.exit(1); }

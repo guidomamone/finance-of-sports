@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 330 — La etapa 8 imprime un resumen; UC 2025 espera la Nota 20 del club (2026-10-01)
+
+- `cargar.mjs --lista`: imprime siempre el resumen por documento (carga o frena, motivos, avisos) y deja la propuesta completa en `Generados/.../<doc>.carga.json` (sufijo nuevo en `rutas.mjs`). Antes, un lote de un documento imprimía ~400 líneas de JSON.
+- UC 2025: segunda corrida, verificación OK y cola vacía; la carga frena por 3 filas con categoría menor a 0,80. Guido decidió no cargar 2025 hasta tener la Nota 20 (en una línea, sueldos del plantel quedaría en 0).
+
 ## Versión 329 — Dudas de la IA como preguntas de sí o no (2026-10-01)
 
 - `localizar.mjs` y `extraer.mjs`: cada duda trae `pregunta` (concreta, se contesta sí o no mirando el PDF) y `propuesta` (sí/no), además del porqué. `verificar.mjs` y `cola.mjs` muestran la pregunta y la propuesta. Pedido de Guido: la cola mostraba explicaciones exploratorias. Dudas en el formato anterior se muestran como antes.
