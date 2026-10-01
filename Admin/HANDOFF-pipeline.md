@@ -151,6 +151,16 @@ Lectura: las reglas de selección por palabras no alcanzan en ningún grupo; par
 
 ## Qué falta (en orden)
 
+0. **PROPUESTA (2026-10-01, a decidir con Guido): cambiar el orden de las etapas 3 y 4 por "localizar, extraer, verificar"**, como hace la
+   industria del "financial spreading" (bancos y proveedores de datos que pasan balances en PDF a una plantilla estándar). Hoy se transcribe y
+   valida el documento ENTERO (etapas 2-3) y después se buscan por palabras las tablas de resultados (etapa 4), que reproduce 7-11% de lo
+   cargado. Propuesta: (a) LOCALIZAR con IA barata las 2-5 páginas que importan (estado de resultados y las notas que abren ingresos y gastos)
+   y, en esas, la escala, la moneda, la columna del ejercicio y el perímetro; (b) EXTRAER esas páginas a filas estructuradas (etiqueta tal
+   cual, importe del año, tipo: renglón/subtotal/total/resultado, qué nota abre qué renglón); (c) VERIFICAR gratis: cada importe tiene que
+   existir literal en la transcripción, las filas tienen que sumar sus subtotales, el total y el resultado impresos. Lo que no cierra va a una
+   cola de revisión, no se adivina. La validación paga de la etapa 3 se hace solo en esas páginas. Test propuesto antes de construir nada:
+   (a)+(b) sobre ~30 años YA cargados, repartidos por grupo, medido contra producción con la misma vara (±2%).
+
 1. **ETAPA 6: `tools/cargar.mjs` EXISTE (Versión 320) y se probó de punta a punta; el informe completo está en `Admin/tests/test-cargar.md`.**
    Año nuevo de un club que ya existe; `--propuesta` (default) / `--escribir` (escribe, sube ASSET_V, regenera, corre audit.js y REVIERTE si hay
    P0/P1: probado, restaura byte a byte) / `--comparar` (backtest). Resultado: backtest de 18 ejercicios cargados (reconstruidos en un worktree con las
