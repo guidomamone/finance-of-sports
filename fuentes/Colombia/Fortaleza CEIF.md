@@ -20,3 +20,5 @@
 - Último chequeo: 2026-09-22.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2017 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf` (sourceId `fortalezaceif-co-estados-financieros-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2018 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf` (sourceId `fortalezaceif-co-estados-financieros-2018`).

@@ -43,6 +43,16 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Aprovechamientos', normalizedCategory:'other_income', amountNative:0.001, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.99
     { rawLabel:'Ajuste al Peso', normalizedCategory:'other_income', amountNative:0.005, disclosureLevel:'aggregated' }, // pág. 19, Jev 1
   ],
+  // 2018: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Colombia/Fortaleza CEIF/estados-financieros-2018.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2018: [
+    { rawLabel:'Actividades Deportivas', normalizedCategory:'lump_football_operations', amountNative:5867.804, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Otros Ingresos', normalizedCategory:'other_income', amountNative:1.004, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.95
+    { rawLabel:'Venta de Productos', normalizedCategory:'sponsorship_commercial', amountNative:535.273, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Servicio de Evaluación', normalizedCategory:'other_income', amountNative:6.029, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.96
+    { rawLabel:'Venta Boletería', normalizedCategory:'matchday_competition', amountNative:10.93, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Devoluciones en Ventas', normalizedCategory:'other_income', amountNative:-0.076, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+  ],
 };
 const fortalezaceifcoExpenseLinesByYear = {
   2017: [ // tools/cargar.mjs (2026-10-02)
@@ -51,6 +61,26 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Total Gastos de Administración', normalizedCategory:'admin_general_expense', amountNative:-2478.598, disclosureLevel:'aggregated' }, // pág. 17, Jev 1
     { rawLabel:'Total Gastos de Ventas', normalizedCategory:'admin_general_expense', amountNative:-979.969, disclosureLevel:'aggregated' }, // pág. 18, precedente
     { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-41.78, disclosureLevel:'aggregated' }, // pág. 19, Jev 1
+  ],
+  2018: [ // tools/cargar.mjs (2026-10-02)
+    { rawLabel:'Costos de Ventas', normalizedCategory:'other_expenses', amountNative:-459.648, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Otros Costos', normalizedCategory:'other_expenses', amountNative:-165.909, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.98
+    { rawLabel:'Nomina', normalizedCategory:'wages_squad', amountNative:-1412.182, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
+    { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-444.51, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Impuestos', normalizedCategory:'admin_general_expense', amountNative:-113.541, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-1165.165, disclosureLevel:'aggregated' }, // pág. 17, Jev 0.97
+    { rawLabel:'Afiliaciones y Sostenimiento', normalizedCategory:'admin_general_expense', amountNative:-0.5, disclosureLevel:'aggregated' }, // pág. 17, precedente
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-5.493, disclosureLevel:'aggregated' }, // pág. 17, precedente
+    { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-1338.331, disclosureLevel:'aggregated' }, // pág. 17, Jev 0.98
+    { rawLabel:'Legales', normalizedCategory:'admin_general_expense', amountNative:-152.81, disclosureLevel:'aggregated' }, // pág. 17, Jev 1
+    { rawLabel:'Mantenimiento', normalizedCategory:'admin_general_expense', amountNative:-101.126, disclosureLevel:'aggregated' }, // pág. 17, Claude 0.8
+    { rawLabel:'Viajes', normalizedCategory:'match_organisation_expense', amountNative:-79.441, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'Depreciaciones y Amortizaciones', normalizedCategory:'depreciation', amountNative:-169.397, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.99
+    { rawLabel:'Otros', normalizedCategory:'other_expenses', amountNative:-837.677, disclosureLevel:'aggregated' }, // pág. 18, Jev 1
+    { rawLabel:'Impuestos Asumidos', normalizedCategory:'other_expenses', amountNative:-0.757, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'Gastos Ejercicios Anteriores', normalizedCategory:'exceptional_items', amountNative:-34.769, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.96
+    { rawLabel:'Multas, Sanciones y L', normalizedCategory:'other_expenses', amountNative:-57.46, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'Otros', normalizedCategory:'other_expenses', amountNative:-376.803, disclosureLevel:'aggregated' }, // pág. 18, Jev 1
   ],
 };
 const fortalezaceifcoFiscalYearMeta = {
@@ -76,6 +106,27 @@ const fortalezaceifcoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:5319.897, officialTotalExpenses:3628.13, officialPAT:1347.094,
   },
+  // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (639,077). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. El resultado de 2018 está en la nota de resultados acumulados; lo repiten 2019 (L767) y 2020.
+  // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (103,918). Nota de gastos financieros (bancarios 31.728 + comisiones 12.692 + intereses 266 + diferencial cambiario 59.233) con el total rotulado 'Total Otros Ingresos' en el PDF, como en 2017: es un costo. Con el signo bien, el impuesto calculado da 40.604 y el documento imprime 'Impuesto de Renta y Complementarios 40,612' (L448).
+  // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
+  2018: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'COP', fxRef:'COP@2018-12-31',
+    sourceId:'fortalezaceif-co-estados-financieros-2018',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-103.918, tax:-40.604,
+    extraRows: [
+      {label:'Costos financieros', value:-103.918},
+      {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-40.604},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Actividades Deportivas', lado:'revenue', importe:5867.804, motivo:'Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:6420.964, officialTotalExpenses:6880.75, officialPAT:-639.077,
+  },
 };
 const fortalezaceifcoPresupuestoOverlayByYear = {};
 
@@ -98,6 +149,12 @@ Object.assign(sources, {
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2017 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'fortalezaceif-co-estados-financieros-2018': {
+    id:'fortalezaceif-co-estados-financieros-2018', clubId:'fortalezaceif-co',
+    title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2018 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
