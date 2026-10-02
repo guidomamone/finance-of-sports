@@ -52,3 +52,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2011 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2011.pdf` (sourceId `catolica-cl-estados-financieros-2011`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2012 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2012.pdf` (sourceId `catolica-cl-estados-financieros-2012`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2013 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2013.pdf` (sourceId `catolica-cl-estados-financieros-2013`).
