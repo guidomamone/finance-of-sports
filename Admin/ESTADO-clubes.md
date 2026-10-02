@@ -83,7 +83,7 @@ BRASIL (33)
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
-  Goias                 4 ejercicios (2021 a 2024), balance, BRL, sin deuda/caja
+  Goiás                 4 ejercicios (2021 a 2024), balance, BRL, sin deuda/caja
   Grêmio                1 ejercicio (2024), balance, BRL
   Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
