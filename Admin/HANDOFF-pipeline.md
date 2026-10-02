@@ -31,17 +31,15 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2020, 2021, 2023, 2024, 2025 | el resultado CIERRA (notas = estado, contra el resultado impreso en la conciliación del impuesto); 2023-2025 confirmados por el año vecino | alta, cola |
+| 2020, 2021, 2024, 2025 | el resultado CIERRA (notas = estado, contra la conciliación del impuesto); 2024-2025 confirmados por el año vecino y con el resultado final impreso | alta, cola |\n| 2023 | cierra antes de impuestos; el resultado final no (cola `b5a087e`) | respuesta de Guido |
 | 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
 | 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
 | 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-1. **Resultado final MAL en 2023-2025** (etapa 6, `resultadoParaCargar`): suma el impuesto en vez de restarlo. 2025: 685.847 + 372.407 =
-   1.058.254, y el impreso en la nota de patrimonio es 313.440 (= 685.847 − 372.407); 2024: 1.287.455 contra 466.323. 2023 no da con
-   ningún signo (1.609.817 − 589.589 = 1.020.228 contra 1.021.768: el impuesto contable no es el "a cargo"). Compuerta propuesta: el
-   resultado final impreso en otra nota (patrimonio) y la columna del año anterior del documento siguiente.
+1. **Fortaleza 2023, resultado final** (cola `b5a087e`): antes de impuestos 1.609.817 cierra; patrimonio imprime 1.021.768 (.md L1099), ni
+   antes − impuesto (1.020.228) ni antes + impuesto. Lo contesta Guido con `corregir --valor`.
 2. **2017**: el resultado impreso es después de impuestos; falta el impuesto (¿escalón: resultado final sin impuesto → buscar el impuesto?).
 3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
 4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
@@ -247,6 +245,8 @@ Mitigaciones:
 ```
 
   La cadena depende del orden (Fortaleza: 2025 declara → 2024 → 2023): `verificarLista()` repite la pasada si alguno se resolvió así.
+- **Resultado final** (Versión 364), si cerró contra "antes de impuestos": candidatos antes ± impuesto → escalón 0, impreso en el .md del
+  documento; escalón 1, impreso en el documento siguiente (columna del año anterior) → compuerta: uno solo coincide; si no, cola.
 - **Dudas de la IA, escalera** (antes de llegar a la cola):
 
 ```
