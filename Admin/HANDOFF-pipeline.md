@@ -31,20 +31,14 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2020, 2021, 2023 | ok (2020↔2021 por año vecino; 2023 por ajustes) | alta, cargar |
-| 2024, 2025 | cierran, año vecino ok; sin dudas (ajuste) | 2024: reintento de desgloses (índice v3) opcional |
-| 2017 | cierra por ajustes | "primer año": se confirma cuando 2018 pase por extraer |
-| 2018, 2019 | fuente: localizar (notas como estado) no vio el resultado impreso: 2018 "Resultado Año 2018 (639,077)" L542 pág. 14; 2019 "Utilidad Contable (52,122)" L455 pág. 13 (lo confirma 2020 L829) | ajuste resultado-final con línea cargado (Versión 370): lo toma `--reintentar` |
-| 2022 | fuente: se localizó cuando el año era 2050 | volver a localizar: `lote.mjs --lista Admin/lote-08b.txt --rehacer` |
+| 2017-2025 | los 9 en "ok" en verificar (2017, 2018, 2019, 2022 y 2023 por ajustes manuales: `node tools/ajustes.mjs`); cola vacía | categorizar 2017, 2018, 2023, 2024 (desactualizados); alta del club; cargar |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-2. **Las dudas que quedan en la cola** de 2017, 2020, 2021, 2024 y 2025: ¿ajuste `sin-dudas` por año, o contestarlas?
-3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
-4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
-5. **Alta del club** (`alta-club.mjs`; está "listo-para-alta"), en el mismo commit que el primer año. Nunca se corrió dentro de este proceso.
-6. Cargar (`cargar.mjs --desde-verificacion --escribir` por año) → `caja-deuda.mjs --club fortalezaceif-co --escribir` → sitio local.
-- Cola: ~35 casos de Fortaleza, casi todos dudas que la aritmética contesta cuando cierre (no mandarlos a Guido antes de re-verificar).
+1. Categorizar: `caffeinate -i node tools/lote.mjs --lista Admin/lote-08.txt --ejecutar` (etapas 3-6 en caché, US$ 0; etapa 7 ~US$ 0,10).
+   Fortaleza no está en `Admin/perfil-clubes.jsonl`: puede preguntar socios / otros deportes.
+2. Alta del club (`alta-club.mjs`, primero sin --escribir), en el mismo commit que el primer año. Nunca se corrió dentro de este proceso.
+3. Cargar (`cargar.mjs --desde-verificacion --escribir` por año) → `caja-deuda.mjs --club fortalezaceif-co --escribir` → sitio local.
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 
