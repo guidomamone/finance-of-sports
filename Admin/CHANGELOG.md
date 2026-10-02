@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 375 — Etapa 6 → 8: financiero e impuesto se escriben como su efecto en el resultado (2026-10-02)
+
+- `verificar.mjs`: `financiero` e `impuesto` del `.verificacion.json` llevan el signo con que cerró el resultado (lectura con signos invertidos, impuesto "restado", ajuste con impuesto deducido); `signosCarga` dice qué se invirtió. `cargar.mjs` los suma tal cual. Escalón "lo que cerró en la etapa 6 no se vuelve a decidir en la 8" (aprobado por Guido).
+- Caso: Fortaleza 2025, impuesto 372.407 que había que restar; la carga lo sumaba.
+- Medido: propuesta de carga de UC idéntica (16 de 16). Fortaleza: el impuesto resta en todos los años; 2017 y 2018 cargarían.
+
 ## Versión 374 — Etapa 8: la respuesta de categoría de la cola respeta el lado de la fila (2026-10-02)
 
 - `cargar.mjs`: compuerta del escalón 0 de la categorización: la respuesta de Guido se aplica solo si su categoría es del mismo lado que la fila en el documento; si no, la fila sigue por la escalera y, si llega a la cola, su caso lleva el lado en la clave ("etiqueta|lado"), así no choca con el ya contestado.
