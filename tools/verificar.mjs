@@ -438,7 +438,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // 4. año anterior: la columna comparativa contra lo ya cargado
   const prev = cd && year ? year - 1 : null; const metaPrev = prev ? cd.fiscalYearMeta?.[prev] : null;
   if (metaPrev) {
-    const ingA = lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A');
+    // (Versión 393) la columna del año anterior se lee con LA MISMA LECTURA con la que cerró este año: si cerró con la lectura 3, los
+    // renglones sin lado entran por su signo (y los subtotales se leen con ellos). Caso: Goiás 2024, la columna 2023 sumaba 89.972.753
+    // (sin "Outras Receitas e Despesas" 140.214.785) y el sitio tiene 230.187.538 (cargado con la lectura 3): falsa alarma.
+    const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
+    const ingA = E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A');
     const prodI = (cd.revenueLinesByYear?.[prev] || []).reduce((a, l) => a + l.amountNative, 0);
     const okA = prodI ? cerca(sA, prodI, 0.02) : null;
     chequeos.push({ nombre: 'año anterior cargado', ok: okA, detalle: prodI ? `la columna ${prev} de este documento suma ingresos ${r6(sA)}; el sitio tiene ${r6(prodI)}` : `el sitio tiene ${prev} sin líneas de ingresos` });

@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 393 — Etapa 6: el chequeo del año anterior usa la lectura con la que cerró el año (2026-10-02)
+
+- `verificar.mjs`: si el año cerró con la lectura 3, la columna del año anterior también suma los renglones sin lado por su signo (y lee los subtotales con ellos), igual que lo cargado.
+- Caso: Goiás 2024, la columna 2023 sumaba 89.972.753 y el sitio tiene 230.187.538 (con "Outras Receitas e Despesas" 140.214.785): falsa alarma. Ahora 230.187.538 = 230.187.538; 2023 contra 2022, 106.090.159 = 106.090.159.
+- Medido: Fortaleza (lote 08) idéntico; Goiás 2023 y 2024 pasan de cola a ok; el resto igual.
+
 ## Versión 392 — Etapa 6: una hoja de nota que resta del otro lado se escribe en su lado (2026-10-02)
 
 - `verificar.mjs`: al escribir las líneas, una hoja de nota de un lado que quedó restando dentro del otro (signo negativo) se escribe en su propio lado y en positivo. Las sumas y el cierre no cambian.
