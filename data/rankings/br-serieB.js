@@ -5,7 +5,7 @@
 //
 // Brasileirão Série B (BR) — 7 ejercicio(s) con ranking:
 //   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -66,6 +66,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"botafogosp-br", revenue:7.434, reportType:"official_balance_sheet",
         sourceId:"botafogosp-br-demonstracoes-2024",
         mix:[["Cuotas Sociales",0.409],["Comercial / Sponsors",0.613],["Estadio",1.281],["Televisión",0.788],["Premios por competencias",3.905],["Venta de Jugadores",0.413],["Otros ingresos",0.026]] },
+      { id:"goias-br", revenue:6.133, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2024",
+        mix:[["Cuotas Sociales",0.25],["Comercial / Sponsors",1.075],["Estadio",0.257],["Televisión",0.859],["Premios por competencias",0.929],["Venta de Jugadores",0.579],["Otros ingresos",2.184]] },
       { id:"amazonas-br", revenue:5.823, reportType:"official_balance_sheet",
         sourceId:"amazonas-br-balanco-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.823]] },
