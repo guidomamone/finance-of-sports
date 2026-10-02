@@ -321,6 +321,7 @@ const FX_CLOSE = {
   'DKK@2024-12-31': { fx: 7.1786, source: 'market_close', label: 'Cierre BCE al 31/12/2024, cruzando DKK/EUR (7,4578) × EUR/USD (1,0389) (1 DKK ≈ 0,1393 USD)' },
   'CLP@2010-12-31': { fx: 468.01, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2011-01-03, 2010-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
   'CLP@2011-12-31': { fx: 519.2, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2012-01-02, 2011-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'CLP@2012-12-31': { fx: 479.96, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2013-01-02, 2012-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
