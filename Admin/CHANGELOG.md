@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 377 — Etapa 8: compuerta del lado en toda la escalera de categorización (2026-10-02)
+
+- `cargar.mjs`: la lista de categorías del documento se busca por etiqueta y lado; una categoría (de la lista o del precedente) del otro lado que la fila no se acepta; si no hay ninguna de su lado, se propone la genérica del lado (otros ingresos / otros gastos) con confianza 0 y va a la cola con la clave "etiqueta|lado".
+- Caso: Fortaleza 2025 "Diversos" 1.986 (otros ingresos) que Jev categorizó other_expenses con 0,99; "Ajuste al peso" del lado contrario.
+- Medido: propuesta de carga de UC idéntica (16 de 16); en Fortaleza 2021-2025 los cierres de la carga coinciden con la verificación.
+
 ## Versión 376 — Etapa 8: "impuesto" / "intereses" en la etiqueta no mueven una fila verificada con lado (2026-10-02)
 
 - `cargar.mjs`: el destino por palabras (a impuesto o a financiero) solo para filas sin lado; una fila que viene de la verificación con lado se queda de ese lado.
