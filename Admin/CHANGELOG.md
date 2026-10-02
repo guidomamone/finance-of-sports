@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 392 — Etapa 6: una hoja de nota que resta del otro lado se escribe en su lado (2026-10-02)
+
+- `verificar.mjs`: al escribir las líneas, una hoja de nota de un lado que quedó restando dentro del otro (signo negativo) se escribe en su propio lado y en positivo. Las sumas y el cierre no cambian.
+- Caso: Goiás 2025, "Outras Receitas (b)" 1.439.848 (ingreso) dentro de "Outras Receitas e Despesas" (gastos), .md L1299-1303: salía como ingreso de −1.439.848 y la carga no cerraba (ingresos 43.934.776 en vez de 46.814.472).
+- Medido: Fortaleza (lote 08) idéntico; Goiás: solo cambia esa fila de 2025. 2023 y 2024 pasan a la cola por el chequeo del año anterior cargado, que ahora corre (2022 y 2023 están en el sitio) y no ve las filas sin lado de la lectura 3: pendiente.
+
 ## Versión 391 — Carga: la apertura de un bloque se busca al principio de una línea (2026-10-02)
 
 - `cargar.mjs` (`insertarEnObjeto`): "Object.assign(sources, {" y las demás aperturas se buscan al principio de una línea. El esqueleto de `alta-club.mjs` trae un comentario que nombra esa apertura y la búsqueda caía en el comentario: la primera carga de Goiás (2021) se revertía con "no pude cerrar el bloque".
