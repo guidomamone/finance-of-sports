@@ -112,7 +112,7 @@ COLOMBIA (12)
   Deportivo Cali          1 ejercicio (2025), balance, COP
   Deportivo Pereira       1 ejercicio (2025), balance, COP
   Envigado FC             1 ejercicio (2025), balance, COP
-  Fortaleza CEIF          8 ejercicios (2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025), balance, COP, sin deuda/caja
+  Fortaleza CEIF          8 ejercicios (2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025), balance, COP
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
   Millonarios             1 ejercicio (2025), balance, COP

@@ -658,7 +658,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Los costos financieros están comprendidos al 31 de diciembre de:', value:-46.371},
       {label:'Total Impuesto a Cargo (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-588.049},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): cash escalón 1 (compuerta: documento siguiente): "Bancos" pág. 13 + "Caja" pág. 13
+    grossDebt:null, cash:19.742,
     officialTotalRevenue:5998.469, officialTotalExpenses:4342.281, officialPAT:1021.768,
   },
   // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
@@ -673,7 +674,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Costos financieros', value:-106.157},
       {label:'Total Impuesto a Cargo', value:-410.566},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): "Préstamos y sobregiros bancarios" pág. 13; cash escalón 1 (compuerta: documento siguiente): "Bancos" pág. 13 + "Caja" pág. 13
+    grossDebt:4.379, cash:97.795,
     officialTotalRevenue:12206.258, officialTotalExpenses:11223.212, officialPAT:466.323,
   },
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
@@ -688,7 +690,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Costos Financieros (netos)', value:-356.543},
       {label:'Total, Impuesto a Cargo', value:-372.407},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: año anterior): "Préstamos y sobregiros bancarios" pág. 13; cash escalón 0 (compuerta: año anterior): "Efectivo" pág. 13
+    grossDebt:31.338, cash:1767.496,
     officialTotalRevenue:23849.331, officialTotalExpenses:22806.941, officialPAT:313.44,
   },
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
