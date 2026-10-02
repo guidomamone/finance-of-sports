@@ -34,8 +34,15 @@ de la nota de efectivo y deuda como total de la nota de deuda.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
 
-1. Publicar: merge de `inventario-transcripciones` a `main` (el push lo hace Guido).
-2. El próximo club (elegir con `node tools/estado.mjs`).
+1. **Próximo club: Goiás** (Brasil): 14 años con cierre leído, 17 PDFs, ningún escaneo. Armar `Admin/lote-09.txt` con sus estados anuales
+   y empezar por el ensayo del lote.
+2. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
+   buscar): Novorizontino (Brasil, 12 años, digital); AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos);
+   Juventus (Italia, 22 años, informes consolidados del grupo, largos: más caro y con la duda del perímetro). Los noruegos (Molde 18,
+   Fredrikstad 18, Aalesund 16, Brann 14...) son todos escaneos: para cuando exista el escalón 2 de la etapa 2 (Gemini sobre escaneos).
+
+Publicación: `main` está al día con esta rama (fast-forward el 2026-10-02, en `de1b0c15`); faltan los commits posteriores y el push, que lo
+hace Guido (`git push origin main`; antes del merge eran 269 commits sin subir).
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 
@@ -70,7 +77,9 @@ Pendientes:
 
 - **Antes de cambiar una tool, mostrar el diseño en pocas líneas y esperar el ok.** No escribir código antes.
 - **Un cambio por vez.** No mezclar varios arreglos en una tanda.
-- **Nada de "manta corta":** si un arreglo resuelve un caso, medirlo en todos los documentos que se pueda. Si rompe otros, no entra.
+- **Nada de "manta corta":** cada arreglo se mide antes de entrar; si rompe otros, no entra. Por ahora se mide en **Universidad Católica**
+  (`Admin/lote-07.txt`, tiene que dar idéntico) y en **Fortaleza CEIF** (`Admin/lote-08.txt`), más el club en curso. Más adelante: un pool
+  fijo de años/clubes de prueba (distintos países, formatos y escaneos) para medir siempre contra el mismo conjunto.
 - **Dos caminos, no más reglas:**
   - camino limpio: reglas pocas y estrictas; si todo cierra sin interpretar nada, se carga solo;
   - camino de dudas: lo que no pasa no se "arregla" con otra regla; se le pregunta a la IA algo puntual con cita del documento, y si tampoco
