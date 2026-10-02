@@ -62,3 +62,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2016 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.pdf` (sourceId `catolica-cl-estados-financieros-2016`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2017 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2017.pdf` (sourceId `catolica-cl-estados-financieros-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2022 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.pdf` (sourceId `catolica-cl-estados-financieros-2022`).
