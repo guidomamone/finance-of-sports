@@ -56,7 +56,8 @@ const cuantas = (s) => (String(s).match(IMPORTE_RE) || []).length;
 // pág. 77: esas filas partían el cuadro por segmento y faltaban 2.760.156 en "Comerciales" y 823.684 en el costo de ventas. No es el
 // índice por defecto: lo pide localizar.mjs cuando verificar.mjs encontró un desglose que no suma (ver lote.mjs --reintentar).
 // Versión del índice ampliado: cuando mejora, sube, y un documento ya reintentado con una versión anterior tiene UN reintento más.
-export const VERSION_AMPLIADO = 2;
+// v3 (Versión 367): una tabla cuyo "encabezado" tiene importes es la continuación de la tabla anterior (ver CONTINUACIÓN, abajo).
+export const VERSION_AMPLIADO = 3;
 export function indiceBloques(md, { ampliado = false } = {}) {
   const L = md.split('\n'); const bloques = []; let pagina = 1; const textoReciente = [];
   const empuja = (b) => { b.id = `b${bloques.length + 1}`; bloques.push(b); };
@@ -69,11 +70,25 @@ export function indiceBloques(md, { ampliado = false } = {}) {
       while (i < L.length && L[i].trim().startsWith('|')) { filasTxt.push(L[i]); i++; }
       const conSep = filasTxt.some(esSeparador);
       const datos = filasTxt.filter((l) => !esSeparador(l)).map(celdas);
-      const encabezado = conSep ? datos[0] || [] : [];
-      const cuerpo = conSep ? datos.slice(1) : datos;
-      const etiquetas = cuerpo.map((c) => limpia(c[0])).filter(Boolean);
       const previo = bloques[bloques.length - 1];
-      const continuaDe = !conSep && previo && previo.tipo === 'tabla' && pagina - previo.pagina <= 1 && previo.columnas === (datos[0] || []).length ? previo.id : null;
+      const sigueAlPrevio = previo && previo.tipo === 'tabla' && pagina - previo.pagina <= 1 && previo.columnas === (datos[0] || []).length;
+      // CONTINUACIÓN CON ENCABEZADO DE DATOS (Versión 367, solo en el índice AMPLIADO: es una regla del camino de error). Mistral a veces
+      // transcribe la fila que quedó sola en la página siguiente como el ENCABEZADO de una tabla nueva, con su separadora abajo. Caso real,
+      // Fortaleza CEIF 2017, nota 23 "Otros gastos": las filas en la pág. 18 (L756-761) y "| **Total Otros Gastos** | **41,780** | **33,349** |"
+      // + "| --- |" arriba de la pág. 19 (L771-772). Con la regla de siempre (sin separadora) no era continuación, localizar no eligió el total
+      // y extraer dejó la nota afuera. Si el "encabezado" tiene importes, es una fila de datos: va al cuerpo y el bloque continúa al anterior.
+      // Que el encabezado sea una fila de datos: la primera celda es una etiqueta (no vacía) y las otras traen importes que NO son años. Los
+      // encabezados de columna de casi todas las tablas tienen años ("| | **2017** | **2016** |", o "**2.025**" en Fortaleza 2025): medido
+      // en Fortaleza y UC, sin excluirlos la regla encadenaba casi todas las tablas.
+      const esAnio = (t) => /^\(?(19|20)\d{2}\)?$|^\(?[12][.,]0\d{2}\)?$/.test(t.replace(/\*/g, ''));
+      const importesNoAnio = (cs) => cs.flatMap((c) => String(c).replace(/\*/g, '').match(IMPORTE_RE) || []).filter((t) => !esAnio(t)).length;
+      // Solo en la página SIGUIENTE (la causa es el salto de página): en la misma página daba falsos positivos (Fortaleza 2021, tablas chicas de
+      // "año | importe" una abajo de la otra).
+      const encabezadoConDatos = ampliado && conSep && sigueAlPrevio && pagina === previo.pagina + 1 && limpia((datos[0] || [])[0]) !== '' && importesNoAnio((datos[0] || []).slice(1)) > 0;
+      const encabezado = conSep && !encabezadoConDatos ? datos[0] || [] : [];
+      const cuerpo = conSep && !encabezadoConDatos ? datos.slice(1) : datos;
+      const etiquetas = cuerpo.map((c) => limpia(c[0])).filter(Boolean);
+      const continuaDe = (!conSep || encabezadoConDatos) && sigueAlPrevio ? previo.id : null;
       empuja({ tipo: 'tabla', pagina, lineas: [desde + 1, i], arriba: textoReciente.slice(-3), encabezado: encabezado.map(limpia), columnas: (datos[0] || []).length, filas: cuerpo.length, primeras: etiquetas.slice(0, 3), ultimas: etiquetas.slice(-2), cifras: cuerpo.reduce((a, c) => a + cuantas(c.slice(1).join(' ')), 0), continuaDe });
       textoReciente.length = 0; continue;
     }

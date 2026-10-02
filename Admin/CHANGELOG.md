@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 367 — Índice ampliado: una tabla cuyo encabezado es una fila de datos continúa la de la página anterior (2026-10-02)
+
+- `indice-bloques.mjs` (solo el índice AMPLIADO, el del reintento): en la página siguiente, una tabla con separadora cuyo "encabezado" es una etiqueta con importes que no son años se marca `continuaDe` y ese encabezado pasa al cuerpo. Caso: Fortaleza CEIF 2017, nota 23 "Otros gastos" (filas L756-761, total 41.780 solo en L771). `VERSION_AMPLIADO` 2 → 3.
+- Medido en las 41 transcripciones de UC y Fortaleza: el índice normal no cambia; el ampliado de UC no cambia; en Fortaleza cambian 27 bloques, todos tablas cortadas por un salto de página. Descartado al medir: contar los años de los encabezados como importes (encadenaba casi todas las tablas) y la misma página (3 falsos positivos en 2021-2022).
+
 ## Versión 366 — Ajustes manuales: una base de consulta que leen los scripts (2026-10-02)
 
 - `tools/ajustes.mjs` + `Admin/ajustes-manuales.jsonl`: una decisión de Guido atada al documento y al campo (no al texto de una pregunta de la cola). `node tools/ajustes.mjs` lista; `--agregar "<pdf>" <campo> --valor --motivo --evidencia` agrega. Campos: `resultado-final` (el impreso; el impuesto se deduce) y `sin-dudas` (las dudas del documento quedan como nota).
