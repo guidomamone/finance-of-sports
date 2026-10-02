@@ -39,7 +39,11 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-2. **2017**: el resultado impreso es después de impuestos; falta el impuesto (¿escalón: resultado final sin impuesto → buscar el impuesto?).
+2. **2017** (ok de Guido: cerrar con ajuste `resultado-final` 1.347.094 DESPUÉS de arreglar la nota 23): el documento no imprime el
+   impuesto en ningún lado (ni estado, ni nota, ni conciliación). Antes, dos errores de extracción: (a) nota 23 "Otros gastos" partida entre
+   páginas (filas L750-761, total 41.780 solo en L771) y quedó afuera; (b) las notas 24 y 25 tienen las etiquetas de total cruzadas en el PDF
+   ("Total Otros Gastos" 6 en otros ingresos, L783; "Total Otros Ingresos" 3.581 en costos financieros, L794). Con eso, antes de impuestos
+   1.638.691 y el impuesto deducido 291.597.
 3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
 4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
 5. **Alta del club** (`alta-club.mjs`; está "listo-para-alta"), en el mismo commit que el primer año. Nunca se corrió dentro de este proceso.
