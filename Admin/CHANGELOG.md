@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 387 — Etapa 6: la lectura 3 lee los subtotales con los renglones sin lado (2026-10-02)
+
+- `verificar.mjs`, lectura 3 ("renglones sin lado según su signo"): antes de decidir si un subtotal es la suma de los renglones de arriba o de abajo, cuenta también los renglones sin lado, con signo o en valor absoluto. Hasta ahora esos renglones se ubicaban después y el subtotal se sumaba además de sus componentes.
+- Caso: Goiás 2024, "Despesas (34.610.029)" impreso arriba de administrativas + tributárias + "Outras Receitas e Despesas" (6.903.788, sin lado), pág. 7 del visor, .md L209-212. Los gastos daban 138.963.710 en vez de 111.257.469. En 2022, "Outras" es positivo (8.918.100) y solo cierra la suma con signo.
+- Medido: Fortaleza (lote 08) igual (2023 cambia solo porque ahora el sitio tiene 2022 para el chequeo del año anterior). Goiás: 2022 y 2024 pasan de cola a ok; el resto igual. UC no se midió (decisión de Guido).
+
 ## Versión 386 — Etapa 8: escalón de materialidad en la categorización (2026-10-02)
 
 - `cargar.mjs`: después de todos los escalones, por lado (ingresos / gastos): si la suma de todas las filas en duda es como mucho el 1% del total de ese lado (compuerta), las de confianza 0,60 o más se cargan con su categoría y un aviso; las de menos siguen a la cola; si pasa el 1%, todas a la cola. Los casos de la cola se crean después de este escalón.
