@@ -26,7 +26,7 @@
 //      propio. El .md anterior queda en Generados/ como `<doc>.antes-texto-propio.md`.
 //
 // USO:
-//   node tools/texto-propio-a-md.mjs "<pdf>" --paginas 1,2          muestra cómo quedarían esas páginas (no escribe)
+//   node tools/texto-propio-a-md.mjs "<pdf>" --paginas 1,2 [--metodo columnas|regiones]   muestra cómo quedarían (no escribe)
 //   node tools/texto-propio-a-md.mjs "<pdf>" --paginas 1,2 --escribir
 //   node tools/texto-propio-a-md.mjs "<pdf>" --auto [--escribir]    las páginas de los bloques con números no confirmados en la etapa 4
 //                                                                    (Generados/.../<doc>.validacion.json), o todas si el .md casi no coincide
@@ -65,7 +65,67 @@ function renglones(ws) {
   return R;
 }
 
-// columnas de la página: huecos verticales que casi ningún renglón cruza (ver cabecera, paso 2)
+// huecos verticales de una región: x que casi ningún renglón cruza (ver cabecera, paso 2)
+function cortesVerticales(ws) {
+  const R = renglones(ws);
+  const xMin = Math.floor(Math.min(...ws.map((w) => w.x0))); const xMax = Math.ceil(Math.max(...ws.map((w) => w.x1)));
+  const cub = new Map();
+  for (const r of R) {
+    // un renglón "cruza" el espacio entre dos palabras suyas si están a menos de ~1 letra (texto corrido), no si hay un hueco de tabla
+    const segs = []; let s = null;
+    for (const w of r.ws) { const h = w.y1 - w.y0; if (s && w.x0 - s.x1 <= h * 1.2) s.x1 = Math.max(s.x1, w.x1); else { s = { x0: w.x0, x1: w.x1 }; segs.push(s); } }
+    for (const g of segs) for (let x = Math.floor(g.x0); x <= Math.ceil(g.x1); x++) cub.set(x, (cub.get(x) || 0) + 1);
+  }
+  const umbral = Math.max(0, Math.round(R.length * 0.02));
+  const cortes = [];
+  for (let x = xMin + 1; x < xMax; x++) {
+    if ((cub.get(x) || 0) <= umbral) { let j = x; while (j < xMax && (cub.get(j) || 0) <= umbral) j++; if (j - x >= 6 && j < xMax) cortes.push((x + j) / 2); x = j; }
+  }
+  return cortes;
+}
+
+// huecos horizontales de una región: espacios entre renglones bastante más altos que el interlineado normal
+function cortesHorizontales(ws) {
+  const R = renglones(ws).map((r) => ({ y0: Math.min(...r.ws.map((w) => w.y0)), y1: Math.max(...r.ws.map((w) => w.y1)) }));
+  if (R.length < 2) return [];
+  const gaps = R.slice(1).map((r, k) => r.y0 - R[k].y1);
+  const h = R.map((r) => r.y1 - r.y0).sort((a, b) => a - b)[Math.floor(R.length / 2)];
+  const cortes = [];
+  gaps.forEach((g, k) => { if (g >= h * 1.5) cortes.push((R[k].y1 + R[k + 1].y0) / 2); });
+  return cortes;
+}
+
+const soloImportes = (ws) => renglones(ws).every((r) => r.ws.every((w) => NUM_RE.test(w.t) || /^(19|20)\d{2}$/.test(w.t) || /^\d{2}\/\d{2}\/\d{4}$/.test(w.t)));
+
+// MÉTODO "regiones" (escalón 1 del rearmado, Versión 397): cortes alternados (XY-cut), SOLO si el documento rearmado con "columnas" no
+// cerró (lote.mjs, camino de error). Una página de diario no tiene columnas parejas en toda la altura
+// (Goiás 2010, pág. 1: arriba el balance con sus columnas, abajo el estado de resultados y el flujo de caja con otras; un solo corte vertical
+// para toda la página no existía y el estado salió mezclado con el flujo de caja, renglón por renglón). Se prueba un corte vertical; si no
+// hay, uno horizontal; y se repite en cada parte. Una parte hecha solo de importes es la columna de OTRO AÑO del cuadro de su izquierda:
+// se une a ella (Goiás 2008, la columna 2007 del estado de resultados).
+function regiones(ws, prof = 0) {
+  if (ws.length < 2 || prof > 12) return [ws];
+  const cv = cortesVerticales(ws);
+  if (cv.length) {
+    const lim = [-Infinity, ...cv, Infinity];
+    let partes = [];
+    for (let k = 0; k < lim.length - 1; k++) partes.push(ws.filter((w) => (w.x0 + w.x1) / 2 > lim[k] && (w.x0 + w.x1) / 2 <= lim[k + 1]));
+    partes = partes.filter((p) => p.length);
+    for (let k = partes.length - 1; k >= 1; k--) if (soloImportes(partes[k])) { partes[k - 1].push(...partes[k]); partes.splice(k, 1); }
+    if (partes.length > 1) return partes.flatMap((p) => regiones(p, prof + 1));
+  }
+  const ch = cortesHorizontales(ws);
+  if (ch.length) {
+    const lim = [-Infinity, ...ch, Infinity];
+    const partes = [];
+    for (let k = 0; k < lim.length - 1; k++) partes.push(ws.filter((w) => (w.y0 + w.y1) / 2 > lim[k] && (w.y0 + w.y1) / 2 <= lim[k + 1]));
+    const ps = partes.filter((p) => p.length);
+    if (ps.length > 1) return ps.flatMap((p) => regiones(p, prof + 1));
+  }
+  return [ws];
+}
+
+// MÉTODO "columnas" (escalón 0 del rearmado, Versión 395): huecos verticales que casi ningún renglón cruza EN TODA LA PÁGINA
 function columnas(ws, ancho) {
   const R = renglones(ws);
   const W = Math.ceil(ancho || Math.max(...ws.map((w) => w.x1)) + 1);
@@ -108,13 +168,13 @@ function partir(r) {
   return { etiqueta: toks.slice(0, k).join(' '), importes: toks.slice(k) };
 }
 
-export function paginaAMd(pdf, pag) {
+export function paginaAMd(pdf, pag, metodo = 'columnas') {
   const { ancho, out } = palabras(pdf, pag);
   if (!out.length) return null;
-  const cols = columnas(out, ancho);
+  const cols = metodo === 'regiones' ? regiones(out) : columnas(out, ancho).map((c) => c.ws);
   const partes = [];
-  for (const [ci, c] of cols.entries()) {
-    const R = renglones(c.ws);
+  for (const [ci, ws] of cols.entries()) {
+    const R = renglones(ws);
     const lineas = [];
     let enTabla = false;
     for (const r of R) {
@@ -124,9 +184,9 @@ export function paginaAMd(pdf, pag) {
         lineas.push(`| ${etiqueta.replace(/\|/g, '/')} | ${importes.join(' | ')} |`);
       } else { if (enTabla) lineas.push(''); enTabla = false; lineas.push(etiqueta); }
     }
-    partes.push(`<!-- columna ${ci + 1} de ${cols.length} -->\n${lineas.join('\n').replace(/\n{3,}/g, '\n\n').trim()}`);
+    partes.push(`<!-- ${metodo === 'regiones' ? 'región' : 'columna'} ${ci + 1} de ${cols.length} -->\n${lineas.join('\n').replace(/\n{3,}/g, '\n\n').trim()}`);
   }
-  return `> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1): la transcripción de Mistral no coincidía con él.\n\n${partes.join('\n\n')}`;
+  return `> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1, método ${metodo}): la transcripción de Mistral no coincidía con él.\n\n${partes.join('\n\n')}`;
 }
 
 function reemplazarPaginas(md, nuevas) {
@@ -149,9 +209,26 @@ function reemplazarPaginas(md, nuevas) {
 
 // ¿Hay que rearmar este documento? (lo usa lote.mjs). Sí si la etapa 4 dijo que el .md no coincide con el texto propio del PDF y todavía no
 // se rearmó (el .md trae la marca). Páginas: las de los números no confirmados; si el .md casi no tiene nada en común con el PDF, todas.
+// Devuelve { paginas, metodo } o null. ESCALERA DEL REARMADO (Versión 397, pedido de Guido: "una escalera en vez de cambiarlo para todos"):
+//   ESCALÓN 0  método "columnas" (cortes verticales en toda la página) — el .md todavía no se rearmó
+//   ESCALÓN 1  método "regiones" (cortes alternados) — el .md ya se rearmó con "columnas" y la etapa 6 SIGUE sin cerrar el resultado
+//              impreso (Goiás 2010: el balance de arriba y el estado de abajo tienen columnas en lugares distintos)
+//   COMPUERTA  la misma de siempre: etapa 4 y etapa 6 sobre el .md nuevo. Cada escalón, una vez por documento (la marca del .md lo dice).
 export function paginasARearmar(pdfRel, mdRel) {
   const mdAbs = resolve(ROOT, mdRel);
-  if (!existsSync(mdAbs) || readFileSync(mdAbs, 'utf8').includes('TEXTO PROPIO del PDF')) return null;
+  if (!existsSync(mdAbs)) return null;
+  const md = readFileSync(mdAbs, 'utf8');
+  if (md.includes('TEXTO PROPIO del PDF')) {
+    if (md.includes('método regiones')) return null; // los dos escalones ya se usaron
+    const vf = resolve(ROOT, derivado(mdRel, '.verificacion.json', { crear: false }));
+    if (!existsSync(vf)) return null;
+    const ver = JSON.parse(readFileSync(vf, 'utf8'));
+    const res = (ver.chequeos || []).find((c) => /^resultado/.test(c.nombre) && c.ok !== null);
+    if (!res || res.ok !== false) return null; // cerró (o no hay resultado con qué comparar): no se sube de escalón
+    const pags = []; let pag = null;
+    for (const l of md.split('\n')) { const m = l.match(/^---\s*pág\.\s*(\d+)\s*---/i); if (m) pag = Number(m[1]); else if (pag && l.includes('TEXTO PROPIO del PDF') && !pags.includes(pag)) pags.push(pag); }
+    return pags.length ? { paginas: pags, metodo: 'regiones' } : null;
+  }
   const v = resolve(ROOT, derivado(mdRel, '.validacion.json', { crear: false }));
   if (!existsSync(v)) return null;
   // CAMINO DE ERROR (regla de Guido: lo extra es "para cuando haya errores"): si la etapa 6 ya cerró con esta transcripción, no se toca.
@@ -168,12 +245,12 @@ export function paginasARearmar(pdfRel, mdRel) {
   const n = Number((execFileSync('pdfinfo', [resolve(ROOT, pdfRel)], { encoding: 'utf8' }).match(/Pages:\s+(\d+)/) || [])[1] || 0);
   let pags = casiNada ? Array.from({ length: n }, (_, i) => i + 1) : [...new Set((o.noConfirmados || []).map((x) => x.pagina).filter(Boolean))].sort((a, b) => a - b);
   pags = pags.filter((p) => palabras(resolve(ROOT, pdfRel), p).out.length >= 50); // solo páginas con texto propio de verdad
-  return pags.length ? pags : null;
+  return pags.length ? { paginas: pags, metodo: 'columnas' } : null;
 }
 
-export function rearmar(pdfRel, pags) {
+export function rearmar(pdfRel, pags, metodo = 'columnas') {
   const pdf = resolve(ROOT, pdfRel); const mdRel = pdfRel.replace(/\.pdf$/i, '.md'); const mdAbs = resolve(ROOT, mdRel);
-  const nuevas = new Map(); for (const p of pags) { const t = paginaAMd(pdf, p); if (t) nuevas.set(p, t); }
+  const nuevas = new Map(); for (const p of pags) { const t = paginaAMd(pdf, p, metodo); if (t) nuevas.set(p, t); }
   const respaldo = resolve(ROOT, derivado(mdRel, '.antes-texto-propio.md'));
   mkdirSync(dirname(respaldo), { recursive: true });
   if (!existsSync(respaldo)) copyFileSync(mdAbs, respaldo);
@@ -188,12 +265,13 @@ async function main() {
   const pdf = resolve(ROOT, pdfArg); const pdfRel = relative(ROOT, pdf); const mdRel = pdfRel.replace(/\.pdf$/i, '.md');
   const iP = A.indexOf('--paginas');
   let pags = iP >= 0 ? A[iP + 1].split(',').map(Number) : null;
-  if (!pags && A.includes('--auto')) pags = paginasARearmar(pdfRel, mdRel);
+  const iM = A.indexOf('--metodo'); let metodo = iM >= 0 ? A[iM + 1] : 'columnas';
+  if (!pags && A.includes('--auto')) { const r = paginasARearmar(pdfRel, mdRel); if (r) { pags = r.paginas; metodo = r.metodo; } }
   if (!pags || !pags.length) { console.error('Sin páginas: pasá --paginas, o --auto con un .validacion.json que tenga números no confirmados.'); process.exit(1); }
   const nuevas = new Map();
-  for (const p of pags) { const t = paginaAMd(pdf, p); if (t) nuevas.set(p, t); else console.error(`pág. ${p}: el PDF no tiene texto propio en esa página (no se toca)`); }
+  for (const p of pags) { const t = paginaAMd(pdf, p, metodo); if (t) nuevas.set(p, t); else console.error(`pág. ${p}: el PDF no tiene texto propio en esa página (no se toca)`); }
   if (!A.includes('--escribir')) { for (const [p, t] of nuevas) console.log(`\n=========== pág. ${p} ===========\n${t}`); return; }
-  const r = rearmar(pdfRel, [...nuevas.keys()]);
+  const r = rearmar(pdfRel, [...nuevas.keys()], metodo);
   console.log(`Escrito ${r.mdRel}: págs. ${r.paginas.join(', ')} rearmadas con el texto propio del PDF. El .md anterior quedó en ${r.respaldo}.`);
 }
 

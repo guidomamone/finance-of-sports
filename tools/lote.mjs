@@ -115,11 +115,12 @@ for (const pdf of docs) {
   // coincide con el texto propio del PDF (cifras con un dígito distinto, o casi nada en común) y el PDF sí tiene texto propio: esas páginas
   // se rearman con él (tools/texto-propio-a-md.mjs, gratis) y el documento vuelve a localizar, validar y extraer. Una vez por documento
   // (el .md queda marcado). Compuerta: la etapa 4 sobre el .md nuevo y, después, la etapa 6. Caso: Goiás 2008-2016 (balances de diario).
-  const pagsTP = paginasARearmar(pdf, e.md);
+  // (Versión 397) el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
+  const TP = paginasARearmar(pdf, e.md); const pagsTP = TP?.paginas;
   if (pagsTP) {
-    if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: la transcripción no coincide con el texto propio del PDF (págs. ${pagsTP.join(', ')}): rearmar con el texto propio (--reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
-    rearmar(pdf, pagsTP);
-    console.log(`  ${pdf}: págs. ${pagsTP.join(', ')} rearmadas con el texto propio del PDF (etapa 2, escalón 1)`);
+    if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
+    rearmar(pdf, pagsTP, TP.metodo);
+    console.log(`  ${pdf}: págs. ${pagsTP.join(', ')} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})`);
     const L4 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
     if (L4.error || L4.datos?.sin_estado) { estado[pdf] = L4.error ? `localizar: ${L4.error}` : 'sin estado de resultados aun con el texto propio (queda como fuente)'; continue; }
     const V4 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V4.costo || V4.usd || 0;

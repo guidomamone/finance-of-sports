@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 397 — Rearmado con el texto propio: escalera de métodos (columnas → regiones) (2026-10-02)
+
+- `texto-propio-a-md.mjs`: el rearmado tiene su propia escalera (pedido de Guido: una escalera en vez de cambiar el método para todos). Escalón 0, método "columnas" (cortes verticales en toda la página, el de la Versión 395). Escalón 1, método "regiones" (cortes alternados horizontales y verticales), solo si el .md ya se rearmó con "columnas" y la etapa 6 sigue sin cerrar el resultado impreso. Una vez cada uno; la marca del .md dice cuál se usó. `lote.mjs` lo usa en `--reintentar`.
+- Caso: Goiás 2010, pág. 1: el balance de arriba y el estado de resultados de abajo tienen columnas en lugares distintos; con "columnas" el estado salió mezclado renglón por renglón con el flujo de caja ("Premiação 2.913.373 1.574.641 Lucro (prejuízo) líquido do exercício"). Con "regiones" sale limpio (17 renglones de ingresos hasta "TOTAL DAS RECEITAS 30.362.984").
+- Medido (ensayo): UC (lote 07) y Fortaleza (lote 08) no lo activan; en Goiás solo 2010 sube al escalón 1.
+
 ## Versión 396 — Etapa 6: lectura 4, signos impresos (2026-10-02)
 
 - `verificar.mjs`: lectura 4 de la escalera de lecturas (solo si 0-3 no cierran): los renglones del estado conservan su signo respecto del signo normal de su lado (un renglón negativo entre los ingresos resta) y los subtotales se reconocen por la suma con signo.

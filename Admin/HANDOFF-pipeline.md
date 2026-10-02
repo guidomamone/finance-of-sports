@@ -38,7 +38,11 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en U
    2024). Alta hecha (color #006633 de Guido); **2017 y 2021-2025 cargados** en el sitio local. Falta:
    - 2008-2016: la transcripción de Mistral cambió dígitos en los balances de diario (la etapa 4 lo detecta y el lote sigue igual) y
      las deducciones de ingresos se suman en vez de restar. Propuestas: un escalón en la etapa 2 y una lectura 4 en la etapa 6.
-2. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
+2. **Cuando Goiás esté entero: auditoría de TODO el proceso** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
+   UC, Fortaleza y Goiás: qué escaleras y escalones existen y cuáles se usaron de verdad; reglas que se agregaron por un solo caso y conviene
+   revisar; casos que se resolvieron a mano o con ajustes y deberían tener escalón; gastos innecesarios (p. ej. el lote que volvió a
+   localizar 2025 y 2017 ya cargados porque su .carga.json viejo pedía reintentar); trampas que el HANDOFF todavía no cuenta.
+3. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
    buscar): Novorizontino (Brasil, 12 años, digital); AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos);
    Juventus (Italia, 22 años, informes consolidados del grupo, largos: más caro y con la duda del perímetro). Los noruegos (Molde 18,
    Fredrikstad 18, Aalesund 16, Brann 14...) son todos escaneos: para cuando exista el escalón 2 de la etapa 2 (Gemini sobre escaneos).
@@ -140,6 +144,7 @@ Mitigaciones:
             → re-transcribir con Mistral y volver a localizar (con --reintentar) ── ¿lo encuentra? sí → sigue
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
             quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
+            rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)
  ESCALÓN 2  (falta) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```
