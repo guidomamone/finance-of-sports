@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 389 — Ligas: tablas de "equipos por estado" en Wikipedia (2026-10-02)
+
+- `fetch-club-league-reference.mjs`: si la última columna del encabezado es plural ("Team(s)", "Teams", "Clubs"), se toman todos los equipos de esa celda. Caso: Série B 2017 y 2021, cuya única tabla es "Number of teams by state": salían números de rowspan y nombres sueltos, y Goiás no aparecía.
+- Caché `tools/club-league-reference/br.json`: Série B 2017, 2021, 2024 y 2025 y Série A 2023 (20 equipos en 2017 y 2021; Série B 2024-2025 traen además nombres de estadios, regla vieja de la primera celda, sin tocar). Série B 2024 y 2025 iguales con la regla nueva.
+
 ## Versión 388 — Etapa 6: financiero e impuesto sin renglones toman su subtotal impreso (2026-10-02)
 
 - `verificar.mjs`: si el estado no trae ningún renglón financiero (o de impuesto) pero sí UN subtotal/total de ese lado, se usa ese subtotal. Si hay renglones, el subtotal no se usa.

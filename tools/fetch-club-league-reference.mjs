@@ -96,6 +96,20 @@ function cleanWikilinkCell(cell) {
 function parseWikitableTeams(tableWikitext) {
   const rows = tableWikitext.split(/\n\|-/).slice(1); // el primer trozo es el header (! ...)
   const teams = [];
+  // TABLA "EQUIPOS POR ESTADO" (2026-10-02): si la ÚLTIMA columna del encabezado es plural ("Team(s)", "Teams", "Clubs"), cada fila lista
+  // VARIOS equipos en esa celda; se toman todos sus wikilinks. Caso: "2017 Campeonato Brasileiro Série B", la única tabla de la sección
+  // "Teams" es "Number of teams by state" (| 2 | {{flag|Goiás}} || [[Goiás Esporte Clube|Goiás]] and [[Vila Nova ...|Vila Nova]]); con
+  // la regla de la primera celda salían 12 números de rowspan y nombres sueltos, y Goiás no aparecía. Los rowspan corren las columnas, por
+  // eso se usa la última celda de cada fila y no un índice.
+  const encabezados = (tableWikitext.match(/^!.*$/gm) || []).map((h) => h.replace(/^!\s*/, '').replace(/^.*\|\s*/, '').trim());
+  if (/^(team\(s\)|teams|clubs|club\(s\))$/i.test(encabezados[encabezados.length - 1] || '')) {
+    for (const row of rows) {
+      const celdas = row.split('\n').filter((l) => l.trim().startsWith('|') && !l.trim().startsWith('|}') && !l.trim().startsWith('|+')).flatMap((l) => l.replace(/^\s*\|/, '').split('||'));
+      const ultima = celdas[celdas.length - 1] || '';
+      for (const m of ultima.matchAll(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g)) teams.push((m[2] || m[1]).replace(/&nbsp;/g, ' ').trim());
+    }
+    return teams;
+  }
   for (const row of rows) {
     const lines = row.split('\n').map((l) => l.trim()).filter(Boolean);
     const firstCellLine = lines.find((l) => l.startsWith('|') && !l.startsWith('|}'));
