@@ -239,7 +239,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const pU2 = resolve(ROOT, derivado(otro.md, '.ubicacion.json', { crear: false })); const U2 = existsSync(pU2) ? JSON.parse(readFileSync(pU2, 'utf8')) : {};
     const pV2 = resolve(ROOT, derivado(otro.md, '.verificacion.json', { crear: false })); const esc2 = existsSync(pV2) ? JSON.parse(readFileSync(pV2, 'utf8')).escala : null;
     const k2 = !MULT[U2.escala] && esc2?.escalon === 1 ? esc2.factor : 1;
-    return { otro, k2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
+    return { otro, U2, k2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
   };
   // compara los ingresos del año en común (mi columna actual con la "año anterior" del siguiente, o al revés) con mi documento a escala k
   const compararVecino = (dy, V2, k) => {
@@ -440,14 +440,65 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
   }
 
+  // ESCALERA DEL RESULTADO FINAL (Versión 364, diseño aprobado por Guido el 2026-10-02). Si se cerró contra "resultado antes de impuestos"
+  // (lectura 1), el resultado final es antes ± impuesto, y el signo con que el documento imprime el impuesto no lo dice: hasta la Versión 363
+  // se SUMABA el impuesto tal como está impreso (UC 2013: 57.521 + 163.095 = 220.616), y en Fortaleza CEIF 2025 eso daba 685.847 + 372.407 =
+  // 1.058.254 cuando la nota de patrimonio imprime "Resultados del ejercicio 313.440" (= 685.847 − 372.407, .md L1047).
+  //   candidatos: antes + impuesto, antes − impuesto
+  //   ESCALÓN 0  el candidato que está IMPRESO en el .md de este documento (cualquier número, a media unidad impresa de redondeo)
+  //   ESCALÓN 1  el que imprime el documento del año SIGUIENTE en una columna que no es la primera (la del año anterior)
+  //   COMPUERTA  un solo candidato coincide. Ninguno o los dos -> cola (Fortaleza 2023: impreso 1.021.768, ninguno de los dos).
+  let resParaCargar = res; let resultadoFinal = null;
+  if (E.cierra && E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) && Math.abs(conSigno(imp)) > TOL) {
+    const NUM_RE = /\(?-?\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?\)?|\d{4,}/g;
+    const cands = [res + conSigno(imp), res - conSigno(imp)];
+    // ¿el candidato (millones) aparece impreso en el .md, a escala m (millones por unidad impresa)? soloNoPrimera: en una fila de tabla, no
+    // en la primera columna con cifras (la del año actual), para leer la columna del año anterior del documento siguiente.
+    const impreso = (mdRel, m, cand, soloNoPrimera) => {
+      let L; try { L = readFileSync(resolve(ROOT, mdRel), 'utf8').split('\n'); } catch { return null; }
+      const objetivo = Math.abs(cand / m);
+      for (const [i, l] of L.entries()) {
+        let nums = [];
+        if (soloNoPrimera) { if (!l.trim().startsWith('|')) continue; nums = l.split('|').map((c) => c.trim()).map((c) => c.match(NUM_RE) || []).filter((m) => m.length).slice(1).flat(); }
+        else nums = l.match(NUM_RE) || [];
+        if (nums.some((t) => Math.abs(Math.abs(parseNumber(t) ?? NaN) - objetivo) <= 0.5)) return i + 1;
+      }
+      return null;
+    };
+    const mImp = mult(filaAntes?.bloque ?? estado[0]?.bloque);
+    const sig = vecinosDoc.find(([dy]) => dy === 1)?.[1];
+    const mSig = sig ? (MULT[sig.U2.escala] ?? 1e-6) * sig.k2 : null;
+    const pruebas = [
+      ['escalón 0', 'este documento', (c) => impreso(md, mImp, c, false)],
+      ['escalón 1', sig ? sig.otro.pdf.split('/').pop() : null, (c) => (sig ? impreso(sig.otro.md, mSig, c, true) : null)],
+    ];
+    for (const [escalon, donde, buscar] of pruebas) {
+      if (!donde) continue;
+      const hits = cands.map((c) => buscar(c));
+      if (hits.filter((h) => h != null).length !== 1) continue;
+      const i = hits.findIndex((h) => h != null);
+      resParaCargar = cands[i]; resultadoFinal = { valor: r6(cands[i]), impuesto: i === 0 ? 'sumado' : 'restado', escalon, donde, linea: hits[i] };
+      break;
+    }
+    if (resultadoFinal) chequeos.push({ nombre: 'resultado final', ok: true, detalle: `antes de impuestos ${r6(res)} con el impuesto ${resultadoFinal.impuesto} = ${resultadoFinal.valor}, impreso en ${resultadoFinal.donde} (L${resultadoFinal.linea}; ${resultadoFinal.escalon})` });
+    else {
+      chequeos.push({ nombre: 'resultado final', ok: false, detalle: `ni ${r6(cands[1])} (antes − impuesto) ni ${r6(cands[0])} (antes + impuesto) están impresos de una sola forma en este documento${sig ? ' ni en el del año siguiente' : ''}` });
+      const enMd = Math.abs(cands[1] / mImp).toLocaleString('es-AR', { maximumFractionDigits: 2 });
+      const r = caso('resultado-final', String(year), `¿Ninguno de los dos es el resultado del ejercicio? El resultado antes de impuestos (${r6(res)}) cierra, pero ni ${r6(cands[1])} (restando el impuesto ${r6(Math.abs(conSigno(imp)))}; impreso sería ${enMd}) ni ${r6(cands[0])} (sumándolo) aparecen impresos${sig ? ` (tampoco en ${sig.otro.pdf.split('/').pop()}, columna del año anterior)` : ''}. Buscá en el .md el resultado del ejercicio impreso (nota de patrimonio, "Resultados del ejercicio"): si está, corregir --valor con ese número tal cual está impreso; si no, descartar.`, { pagina: pagDe(filaAntes?.bloque) });
+      if (r?.decision === 'corregir' && r.valor && isFinite(parseNumber(r.valor))) { resParaCargar = parseNumber(r.valor) * mImp; resultadoFinal = { valor: r6(resParaCargar), escalon: 'respuesta de Guido', donde: 'cola' }; notas.push(`resultado final ${r6(resParaCargar)}: respuesta de Guido en la cola (${r.valor})`); }
+      else resParaCargar = null;
+    }
+  } else if (E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok)) resParaCargar = res + conSigno(imp);
+
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
   const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, escala, cola, chequeos, notas,
     reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado, faltasDesglose: reintentos.length ? reintentos : null, // faltasDesglose: siempre, para tools/diagnostico-desglose.mjs
-    // resultadoParaCargar (Versión 344): si cerró contra "resultado antes de impuestos", el resultado del ejercicio es ese más el impuesto tal
-    // como está impreso (UC 2013: 57.521 + 163.095 = 220.616); cargar.mjs hace su tie-out contra este número.
-    totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), resultadoParaCargar: r6(E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) ? res + conSigno(imp) : res), lecturaSignos: lectura },
+    // resultadoParaCargar (Versión 344; desde la 364 sale de la escalera del resultado final): si cerró contra "resultado antes de impuestos",
+    // el resultado del ejercicio es ese ± el impuesto, el que esté impreso; null si no se pudo confirmar (va a la cola). cargar.mjs hace su
+    // tie-out contra este número.
+    totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), resultadoParaCargar: r6(resParaCargar), resultadoFinal, lecturaSignos: lectura },
     lineas: [...ing, ...gas].map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado' })),
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(f.M), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(f.M), linea: f.linea })) };
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));

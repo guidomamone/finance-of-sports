@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 364 — Etapa 6: escalera del resultado final (el signo del impuesto) (2026-10-02)
+
+- `verificar.mjs`: si se cerró contra "resultado antes de impuestos", el resultado final ya no es siempre antes + impuesto: candidatos antes ± impuesto; escalón 0, el que está impreso en el .md del documento; escalón 1, el que imprime el documento del año siguiente en la columna del año anterior; compuerta, uno solo coincide. Si no, caso `resultado-final` en la cola (`corregir --valor` con el impreso fija el resultado) y `resultadoParaCargar` null. Queda en `totales.resultadoFinal`.
+- Medido: lote 07 (UC) mismo resultado y rubros en los 16 años (2012 suma el chequeo "resultado final": −742.014 impreso en L149). Lote 08: Fortaleza 2025 pasa de 1.058.254 a 313.440 y 2024 de 1.287.455 a 466.323 (impuesto restado, impreso en la nota de patrimonio); 2023 a la cola (impreso 1.021.768, ningún candidato).
+
 ## Versión 363 — Etapa 6: las dudas de escala las contesta la escalera de escala, no las sumas (2026-10-02)
 
 - `verificar.mjs`: el tema "escala" sale del escalón 2 de las dudas (las sumas no confirman una escala: cerrar es invariante a la escala del documento entero). Si el documento tomó la escala del año vecino (escalón 1 de la Versión 362), la duda queda contestada por esa escala, con nota; si no, a la cola. Caso: Fortaleza CEIF 2023 tenía aceptadas a la vez "¿están en miles?" y "¿están en unidades y no en miles?".
