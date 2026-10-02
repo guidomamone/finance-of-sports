@@ -81,7 +81,17 @@ function pedido(pdf, registro, sitio) {
   return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}` };
 }
 
-export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null } = {}) {
+// LAS NOTAS HACEN DE ESTADO (Versión 360, etapa 3, escalón 2, camino de error; diseño aprobado por Guido el 2026-10-02). Hay documentos que
+// traen SOLO las notas (Fortaleza CEIF, Colombia: "Notas a los estados financieros", sin balance ni estado de resultados), pero las notas de
+// ingresos y gastos tienen su total impreso y la nota del impuesto imprime el resultado antes de impuestos (2023: notas 19 a 25 suman
+// 1.609.817 = "Utilidad contable antes de impuesto", nota 8). Con `notasComoEstado`, se le pide a la IA que elija esas notas COMO estado y el
+// bloque del resultado impreso. Solo lo pide lote.mjs --reintentar, y solo si la localización anterior no encontró estado pero sí notas.
+export const PEDIDO_NOTAS_COMO_ESTADO = `REINTENTO SIN ESTADO DE RESULTADOS: en el intento anterior no encontraste el estado de resultados, pero sí notas que desglosan ingresos y gastos. Este documento puede traer SOLO las notas. En ese caso:
+- estado: los bloques de las NOTAS cuyo TOTAL es un renglón del estado de resultados que falta (ingresos de actividades ordinarias, otros ingresos, costo de ventas, gastos de ventas, gastos de administración, otros gastos, ingresos y costos financieros), y el bloque donde esté IMPRESO el resultado del ejercicio o el resultado antes de impuestos (por ejemplo, la conciliación del impuesto a las ganancias: "utilidad contable antes de impuesto"). No elijas notas de balance (activos, pasivos, patrimonio) ni detalles por tercero.
+- notas_ingresos / notas_gastos: los cuadros que abren una fila de esas notas (un desglose dentro de otro), si los hay.
+- sin_estado = false solo si encontraste esas notas Y un resultado impreso; si no, sin_estado = true.`;
+
+export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
   const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
@@ -90,7 +100,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
   const visibles = bloques.filter((b) => b.cifras >= 2);
   // REINTENTO (Versión 340): qué faltó en el intento anterior, para que elija también el cuadro que lo abre (por ejemplo, uno por segmento).
   const faltas = (reintento || []).map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}"` : `el desglose de "${x.renglon}" no sumó (${x.suma} contra ${x.objetivo})`));
-  const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
+  const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}${notasComoEstado ? `\n\n${PEDIDO_NOTAS_COMO_ESTADO}` : ''}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
   if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500) };
   let r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: 'localizar', pdf }); let costo = r.costo || 0;
   if (r.error) return { error: r.error, costo };
@@ -100,7 +110,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
     const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: 'localizar-2', pdf });
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
-  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
 }

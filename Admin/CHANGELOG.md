@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 360 — Etapa 3, escalón 2: las notas hacen de estado (2026-10-02)
+
+- `lote.mjs --reintentar`: un documento cuya localización no encontró estado de resultados pero sí notas de ingresos y de gastos (y no es candidato a re-transcribir) vuelve a localizar con `notasComoEstado`, una vez. `localizar.mjs`: PEDIDO_NOTAS_COMO_ESTADO (elegir las notas cuyo total es un renglón del estado y el bloque del resultado impreso). `extraer.mjs`: INSTRUCCION_NOTAS_COMO_ESTADO (una fila por nota con el título como etiqueta y el TOTAL impreso; sus filas la desglosan). Verificar sin cambios. Caso: Fortaleza CEIF (solo notas; 2023: notas 19-25 suman 1.609.817 = "Utilidad contable antes de impuesto", nota 8).
+- Medido: lote 07 (UC), con y sin `--reintentar`, idéntico antes y después. Ensayo del lote 08: 8 de 9 años entran al escalón (~US$ 0,97); 2022 no, porque `periodo.mjs` le dedujo cierre 2050-12-31 ("duración legal hasta 2050").
+
 ## Versión 359 — Universidad Católica 2010-2025 escrita en el sitio por el script (2026-10-02)
 
 - UC 2010-2017 cargados con `cargar.mjs --desde-verificacion --escribir` (un commit por año, audit.js P0 0 · P1 0). 2022-2024 rehechos con `--reemplazar`: "Servicios de Seguridad" pasa a organización de partidos (65,574 / 72,244 / 77,365 millones de CLP), tipo de cambio del documento en vez del de mercado, se conservan caja, deuda, gestión y los jugadores vendidos.

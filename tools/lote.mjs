@@ -85,6 +85,25 @@ for (const pdf of docs) {
   if (!e?.md) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
   const reintento = REINTENTAR ? verifDe(e)?.reintentar || null : null;
   const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)
+  // ETAPA 3, ESCALÓN 2 (Versión 360, aprobado por Guido): "las notas hacen de estado". Solo con --reintentar, una vez por documento, si la
+  // localización anterior no encontró estado (sin_estado, o la lista del estado vacía) pero sí notas de ingresos Y de gastos, y la transcripción
+  // no es candidata al escalón 1 de la etapa 2 (re-transcribir: no es de Mistral y tiene páginas en imagen; ese va primero). Caso real: Fortaleza
+  // CEIF, Colombia (solo notas; 2022 con transcripción vieja, sin páginas en imagen).
+  const ubAntes = leerDerivado(e, '.ubicacion.json');
+  const candidatoNotas = REINTENTAR && ubAntes && !ubAntes.intentoNotasComoEstado && (ubAntes.sin_estado || !(ubAntes.estado || []).length)
+    && (ubAntes.notas_ingresos || []).length && (ubAntes.notas_gastos || []).length && (String(e.motor || '').includes('mistral') || e.retranscritoPorLote || paginasEnImagen(pdf).length < 2);
+  if (candidatoNotas) {
+    const L3 = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true });
+    if (L3.ensayo) { usd += L3.usd + 0.07; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ~US$ 0,07`); continue; }
+    if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
+    usd += L3.costo || 0;
+    if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
+    const V3 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V3.costo || V3.usd || 0;
+    const X3 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X3.costo || 0;
+    if (X3.error) { estado[pdf] = `extraer: ${X3.error}`; continue; }
+    estado[pdf] = 'extraído (las notas hacen de estado)'; console.log(`  ${pdf}: las notas hacen de estado · ${X3.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
+    continue;
+  }
   if (REINTENTAR && !reintento && !sinEstadoAntes) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
   const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento, reintento });
   if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
