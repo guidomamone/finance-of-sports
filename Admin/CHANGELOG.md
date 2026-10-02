@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 363 — Etapa 6: las dudas de escala las contesta la escalera de escala, no las sumas (2026-10-02)
+
+- `verificar.mjs`: el tema "escala" sale del escalón 2 de las dudas (las sumas no confirman una escala: cerrar es invariante a la escala del documento entero). Si el documento tomó la escala del año vecino (escalón 1 de la Versión 362), la duda queda contestada por esa escala, con nota; si no, a la cola. Caso: Fortaleza CEIF 2023 tenía aceptadas a la vez "¿están en miles?" y "¿están en unidades y no en miles?".
+- Medido: lote 07 (UC) idéntico (ninguna duda de escala). Lote 08: misma cola; 2023 y 2024 cambian solo el texto de las notas.
+
 ## Versión 362 — Etapa 6: escalera de escala (la del año vecino) (2026-10-02)
 
 - `verificar.mjs`: si el documento dice escala "no se sabe", el escalón 1 propone la del año vecino anclado (la declara o ya la resolvió así) cuando los ingresos del año en común dan exactamente x1.000 o x1.000.000; la compuerta es el mismo chequeo de año vecino (4b). Queda en el `.verificacion.json` como `escala { valor, escalon, factor, de }`. Una escala declarada nunca se pisa.
