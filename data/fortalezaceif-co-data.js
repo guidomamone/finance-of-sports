@@ -669,7 +669,8 @@ const fortalezaceifcoFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Actividades Deportivas', lado:'revenue', importe:4220.658, motivo:'Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 2 (compuerta: documento siguiente): "Total Efectivo y Equivalente de Efectivo" pág. 8
+    grossDebt:0, cash:1181.51,
     officialTotalRevenue:5319.897, officialTotalExpenses:3628.13, officialPAT:1347.094,
   },
   // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (639,077). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. El resultado de 2018 está en la nota de resultados acumulados; lo repiten 2019 (L767) y 2020.
@@ -690,7 +691,9 @@ const fortalezaceifcoFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Actividades Deportivas', lado:'revenue', importe:5867.804, motivo:'Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Bancos" pág. 8 + "Cajas" pág. 8
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): "Total Prestamos y Sobregiros Bancarios" pág. 11
+    grossDebt:4.398, cash:919.687,
     officialTotalRevenue:6420.964, officialTotalExpenses:6880.75, officialPAT:-639.077,
   },
   // 2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (52,122). Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.
@@ -707,7 +710,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Costos financieros', value:-48.426},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-17.468},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): "Total Prestamos y Sobregiros Bancarios" pág. 16
+    grossDebt:0.794, cash:null,
     officialTotalRevenue:3463.947, officialTotalExpenses:3450.175, officialPAT:-52.122,
   },
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
@@ -722,7 +726,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Total Costos Financieros', value:-12.112},
       {label:'Impuesto De Renta Y Complementario', value:8.182},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): "Total Prestamos y Sobregiros Bancarios" pág. 17
+    grossDebt:188.998, cash:null,
     officialTotalRevenue:2223.737, officialTotalExpenses:2922.233, officialPAT:-702.423,
   },
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = 1.021.768. Cerrado por la fuerza por decisión de Guido: el resultado antes de impuestos (1.609.817) cierra con las notas, pero ni restando ni sumando el 'Total impuesto a cargo' (589.589) da el resultado impreso; el impuesto contable es 588.049.
@@ -782,7 +787,8 @@ const fortalezaceifcoFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-54.012, tax:0,
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 2 (compuerta: año anterior): "Total Prestamos y Sobregiros Bancarios" pág. 20
+    grossDebt:102.513, cash:null,
     officialTotalRevenue:3595.986, officialTotalExpenses:4189.291, officialPAT:-647.319,
   },
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (175.117). Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.
