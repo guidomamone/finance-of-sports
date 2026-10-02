@@ -1300,6 +1300,11 @@ window.CLUB_GENERIC_DATA[${jsStr(id)}] = {
   presupuestoOverlayByYear: ${v}PresupuestoOverlayByYear,
 };
 
+// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
+// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
+Object.assign(sources, {
+});
+
 memberCountByClub[${jsStr(id)}] = null;
 `;
     writeFileSync(dataPath, esqueleto); escritos.push(`data/${id}-data.js`);

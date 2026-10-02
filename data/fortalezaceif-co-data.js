@@ -49,4 +49,8 @@ window.CLUB_GENERIC_DATA['fortalezaceif-co'] = {
   presupuestoOverlayByYear: fortalezaceifcoPresupuestoOverlayByYear,
 };
 
+// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (agregado por la Versión 379: el esqueleto del alta no lo traía).
+Object.assign(sources, {
+});
+
 memberCountByClub['fortalezaceif-co'] = null;

@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 379 — Alta: el esqueleto del archivo de datos trae el bloque de fuentes (2026-10-02)
+
+- `alta-club.mjs`: el `data/<id>-data.js` nuevo trae `Object.assign(sources, {});`, donde `cargar.mjs` agrega la fuente de cada año. Sin él, la primera carga de un club dado de alta por script se revertía ("no encontré Object.assign(sources, {"). Caso: Fortaleza CEIF, primera vez que alta y carga corrieron juntas; a su archivo se le agregó el mismo bloque.
+
 ## Versión 378 — Etapa 8: una fila verificada no se excluye sola por "no es rubro" dudoso (2026-10-02)
 
 - `cargar.mjs`: en una fila que viene de la verificación, un "no_es_rubro" de Claude por debajo del umbral sigue el camino de la compuerta del lado (precedente de su lado, o la genérica a la cola). Cierra el pendiente del HANDOFF (UC 2010, "Ingresos por recaudaciones y otros").
