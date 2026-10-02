@@ -18,13 +18,19 @@
 //                     imprime el impuesto en ningún lado).
 //   sin-dudas         sin valor: las dudas de localizar/extraer de ese documento quedan como nota y no van a la cola. Caso: Fortaleza
 //                     CEIF 2023 ("que nunca más vuelva como problema o duda").
+//   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
+//                     financiero, impuesto), valor TAL CUAL impreso (con su signo: un costo financiero en negativo), línea del .md y,
+//                     opcional, `reemplaza` = la etiqueta de la fila extraída que sale. Varias por documento (la clave incluye la etiqueta).
+//                     Casos: Fortaleza CEIF 2017, nota 23 "Otros gastos" 41.780 perdida en un salto de página, y "Total Otros Ingresos"
+//                     3.581 que en el PDF rotula los costos financieros (etiquetas cruzadas en el propio documento).
 //
 // ARCHIVO: Admin/ajustes-manuales.jsonl, una línea por ajuste: { pdf, campo, valor, motivo, evidencia, autor, fecha }. Si hay dos para el
-// mismo pdf y campo, gana el último (para cambiar uno se agrega otro; el historial queda).
+// mismo pdf y campo (y etiqueta, en `fila`), gana el último (para cambiar uno se agrega otro; el historial queda).
 //
 // USO:
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)
 //   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."]
+//        fila además: --etiqueta "..." --lado ingreso|gasto|financiero|impuesto [--linea N] [--reemplaza "etiqueta extraída"]
 //   import { ajusteDe, ajustesDe } from './ajustes.mjs'        lo que usan los scripts
 // ============================================================================
 
@@ -33,17 +39,18 @@ import { resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila'];
+export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
   if (!existsSync(ARCHIVO)) return [];
   return readFileSync(ARCHIVO, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l));
 }
 
-// Todos los ajustes vigentes de un documento (el último por campo).
+// Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
 export function ajustesDe(pdf) {
   const m = new Map();
-  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo, a);
+  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo, a);
   return [...m.values()];
 }
 export function ajusteDe(pdf, campo) {
@@ -57,14 +64,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const i = A.indexOf('--agregar'); const pdf = A[i + 1]; const campo = A[i + 2];
     if (!pdf || !CAMPOS.includes(campo)) { console.error(`Uso: --agregar "<pdf>" <campo> (campos: ${CAMPOS.join(', ')})`); process.exit(1); }
     if (!existsSync(resolve(ROOT, pdf))) { console.error(`No existe ${pdf}`); process.exit(1); }
-    if (campo === 'resultado-final' && !flag('--valor')) { console.error('resultado-final necesita --valor (el número tal cual está impreso)'); process.exit(1); }
+    if (['resultado-final', 'fila'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
+    if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), linea: flag('--linea') ? Number(flag('--linea')) : null, reemplaza: flag('--reemplaza') } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
-    console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
+    console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
     const vigentes = [...new Set(leer().map((a) => a.pdf))].flatMap((p) => ajustesDe(p));
     console.log(`AJUSTES MANUALES (${vigentes.length}) — Admin/ajustes-manuales.jsonl\n`);
-    for (const a of vigentes) console.log(`  ${a.pdf.split('/').slice(-2).join('/')} · ${a.campo}${a.valor ? ` = ${a.valor}` : ''}  (${a.autor}, ${a.fecha})\n      motivo: ${a.motivo}${a.evidencia ? `\n      evidencia: ${a.evidencia}` : ''}`);
+    for (const a of vigentes) console.log(`  ${a.pdf.split('/').slice(-2).join('/')} · ${a.campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado}${a.reemplaza ? `, reemplaza "${a.reemplaza}"` : ''})` : ''}${a.valor ? ` = ${a.valor}` : ''}  (${a.autor}, ${a.fecha})\n      motivo: ${a.motivo}${a.evidencia ? `\n      evidencia: ${a.evidencia}` : ''}`);
   }
 }

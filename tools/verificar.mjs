@@ -310,6 +310,20 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const gastosNeg = (() => { const g = estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true; })();
   const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M);
   const ing0 = lineasDeLado('ingreso'); const gas0 = lineasDeLado('gasto');
+  // AJUSTES MANUALES DE FILAS (Versión 368; tools/ajustes.mjs, campo `fila`): escalón 0, antes de la escalera de lecturas. Agrega la fila
+  // que la extracción no trajo, o reemplaza la que trajo mal (`reemplaza`), en la escala del documento; los chequeos corren igual sobre el
+  // resultado. Caso: Fortaleza CEIF 2017 (nota 23 "Otros gastos" 41.780 perdida en un salto de página; costos financieros rotulados
+  // "Total Otros Ingresos" en el PDF).
+  for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && isFinite(parseNumber(x.valor)))) {
+    const destino = { ingreso: ing0, gasto: gas0, financiero: fin, impuesto: imp }[a.lado];
+    if (!destino) continue;
+    // sale la fila con esa etiqueta Y, si estaba abierta en su nota, las filas de la nota (si no, se contaría dos veces)
+    const sale = (f) => String(f.etiqueta).trim() === a.reemplaza.trim() || String(f.origen || '').includes(`desglosa "${a.reemplaza.trim()}"`);
+    if (a.reemplaza) for (const arr of [ing0, gas0, fin, imp]) for (let i = arr.length - 1; i >= 0; i--) if (sale(arr[i])) arr.splice(i, 1);
+    const m = mult(estado[0]?.bloque); const v = parseNumber(a.valor) * m;
+    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? Math.abs(v) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+    notas.push(`ajuste manual: fila "${a.etiqueta}" (${a.lado}) ${a.valor}${a.reemplaza ? `, en lugar de "${a.reemplaza}"` : ''} (${a.fecha}, ${a.motivo})`);
+  }
   const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo'];
   const evaluar = (nivel) => {
     const ch = []; let ing = [...ing0]; let gas = [...gas0];

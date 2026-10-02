@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 368 — Ajustes manuales de filas; Fortaleza CEIF 2017 cierra (2026-10-02)
+
+- `tools/ajustes.mjs`: campo `fila` (etiqueta, lado, valor impreso con signo, línea, `reemplaza` opcional); varias por documento. `verificar.mjs` las aplica antes de la escalera de lecturas (escalón 0); `reemplaza` saca también las filas de la nota que abría esa fila.
+- Fortaleza 2017 (decisión de Guido: el camino de error para un año así es el ajuste manual, no otro reintento): "Otros gastos" 41.780 (nota 23 perdida en un salto de página), "Costos financieros" (3.581) en lugar de "Total Otros Ingresos" (etiqueta cruzada en el PDF), resultado final 1.347.094. Antes de impuestos 1.638.692, impuesto deducido 291.598.
+- Medido: lote 07 (UC) idéntico salvo `reintentado` (true → false en 2010, 2011, 2013, 2015, 2022: efecto de `VERSION_AMPLIADO` 3 de la Versión 367; el ensayo de `--reintentar` no reintenta ninguno, no tienen desgloses pendientes). Lote 08: solo cambia 2017.
+
 ## Versión 367 — Índice ampliado: una tabla cuyo encabezado es una fila de datos continúa la de la página anterior (2026-10-02)
 
 - `indice-bloques.mjs` (solo el índice AMPLIADO, el del reintento): en la página siguiente, una tabla con separadora cuyo "encabezado" es una etiqueta con importes que no son años se marca `continuaDe` y ese encabezado pasa al cuerpo. Caso: Fortaleza CEIF 2017, nota 23 "Otros gastos" (filas L756-761, total 41.780 solo en L771). `VERSION_AMPLIADO` 2 → 3.
