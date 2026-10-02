@@ -698,7 +698,9 @@ function cierreDe(src, abre) {
   return -1;
 }
 function insertarEnObjeto(src, apertura, texto, archivo) {
-  const a = src.indexOf(apertura); if (a < 0) throw new Error(`${archivo}: no encontré "${apertura}"`);
+  // la apertura se busca al PRINCIPIO de una línea (Versión 391): el esqueleto de alta-club.mjs tiene un comentario que nombra
+  // "Object.assign(sources, {" y la búsqueda caía ahí (caso: Goiás 2021, "no pude cerrar el bloque"). Todas las aperturas son sentencias de primer nivel.
+  const a = src.search(new RegExp('^' + apertura.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'm')); if (a < 0) throw new Error(`${archivo}: no encontré "${apertura}"`);
   const abre = src.indexOf('{', a + apertura.length - 1); const cierra = cierreDe(src, abre);
   if (cierra < 0) throw new Error(`${archivo}: no pude cerrar el bloque "${apertura}"`);
   let antes = src.slice(0, cierra); const tras = src.slice(cierra);

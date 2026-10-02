@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 391 — Carga: la apertura de un bloque se busca al principio de una línea (2026-10-02)
+
+- `cargar.mjs` (`insertarEnObjeto`): "Object.assign(sources, {" y las demás aperturas se buscan al principio de una línea. El esqueleto de `alta-club.mjs` trae un comentario que nombra esa apertura y la búsqueda caía en el comentario: la primera carga de Goiás (2021) se revertía con "no pude cerrar el bloque".
+
 ## Versión 390 — Ajuste manual `anio` (escalón 0 del año del ejercicio) (2026-10-02)
 
 - `ajustes.mjs`: campo nuevo `anio`. `alta-club.mjs` (y con él `cargar.mjs`) y `onboard.mjs --quien` lo toman antes que el nombre del archivo.
