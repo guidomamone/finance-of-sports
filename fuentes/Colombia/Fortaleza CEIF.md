@@ -30,3 +30,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2023 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf` (sourceId `fortalezaceif-co-estados-financieros-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2024 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf` (sourceId `fortalezaceif-co-estados-financieros-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2025 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf` (sourceId `fortalezaceif-co-estados-financieros-2025`).

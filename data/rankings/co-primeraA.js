@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Primera A (CO) — 4 ejercicio(s) con ranking:
-//   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -17,7 +17,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: null,
-    sinDato: ["fortalezaceif-co"],
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
         sourceId:"atlnacional-co-estados-financieros-2025",
@@ -46,6 +45,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportivopereira-co", revenue:6.962, reportType:"official_balance_sheet",
         sourceId:"deportivopereira-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.656],["Estadio",1.521],["Televisión",1.695],["Premios por competencias",0.312],["Venta de Jugadores",0.442],["Otras secciones deportivas",0.271],["Otros ingresos",1.065]] },
+      { id:"fortalezaceif-co", revenue:6.348, reportType:"official_balance_sheet",
+        sourceId:"fortalezaceif-co-estados-financieros-2025",
+        mix:[["Comercial / Sponsors",1.163],["Estadio",1.144],["Televisión",0.416],["Premios por competencias",0.215],["Venta de Jugadores",3.079],["Otros ingresos",0.33]] },
     ],
   },
   2024: {

@@ -144,6 +144,29 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Ajuste al peso', normalizedCategory:'other_income', amountNative:0.021, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
     { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:38.698, disclosureLevel:'aggregated' }, // pág. 28, precedente
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Colombia/Fortaleza CEIF/estados-financieros-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'Derechos de televisión nacional', normalizedCategory:'broadcasting', amountNative:1563.676, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
+    { rawLabel:'Federación Colombiana de Futbol', normalizedCategory:'competition_bonus', amountNative:202.748, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.97
+    { rawLabel:'Auxilio hotelero (*)', normalizedCategory:'competition_bonus', amountNative:240.988, disclosureLevel:'aggregated' }, // pág. 24, Claude 0.8
+    { rawLabel:'Convenio entre clubes', normalizedCategory:'other_income', amountNative:100.362, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.96
+    { rawLabel:'Auxilio de arbitraje (*)', normalizedCategory:'competition_bonus', amountNative:344.687, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.91
+    { rawLabel:'Auxilio de transporte (*)', normalizedCategory:'competition_bonus', amountNative:19.915, disclosureLevel:'aggregated' }, // pág. 24, Claude 0.8
+    { rawLabel:'Otros auxilios (*)', normalizedCategory:'other_income', amountNative:376.977, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Propaganda y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:3221.839, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.99
+    { rawLabel:'Propaganda y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:115.03, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Derechos deportivos', normalizedCategory:'player_sales', amountNative:11569.768, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.99
+    { rawLabel:'Boletería', normalizedCategory:'matchday_competition', amountNative:4296.654, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
+    { rawLabel:'Venta de indumentaria deportiva', normalizedCategory:'sponsorship_commercial', amountNative:979.871, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.98
+    { rawLabel:'Alquiler deportivo', normalizedCategory:'other_income', amountNative:442.152, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Reintegro de costos y gastos', normalizedCategory:'other_income', amountNative:300.503, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'Comisiones', normalizedCategory:'other_income', amountNative:17, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'Uso de marca', normalizedCategory:'sponsorship_commercial', amountNative:54.093, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.99
+    { rawLabel:'Otros', normalizedCategory:'other_income', amountNative:1.07, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'Ajuste al peso', normalizedCategory:'other_income', amountNative:0.012, disclosureLevel:'aggregated' }, // pág. 30, Claude 0.8
+    { rawLabel:'Diversos', normalizedCategory:'other_income', amountNative:1.986, disclosureLevel:'aggregated' }, // pág. 30, precedente
+  ],
 };
 const fortalezaceifcoExpenseLinesByYear = {
   2017: [ // tools/cargar.mjs (2026-10-02)
@@ -447,6 +470,51 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Ajuste al peso', normalizedCategory:'other_expenses', amountNative:-0.015, disclosureLevel:'aggregated' }, // pág. 27, precedente
     { rawLabel:'Intereses de mora', normalizedCategory:'other_expenses', amountNative:-81.367, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.95
   ],
+  2025: [ // tools/cargar.mjs (2026-10-02)
+    { rawLabel:'COSTO DE VENTAS', normalizedCategory:'other_expenses', amountNative:-606.635, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'De personal', normalizedCategory:'wages_squad', amountNative:-7170.528, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-536.813, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-1655.093, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
+    { rawLabel:'Afiliaciones y sostenimientos', normalizedCategory:'admin_general_expense', amountNative:-0.303, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'INDUSTRIA Y COMERCIO', normalizedCategory:'admin_general_expense', amountNative:-55.493, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.9
+    { rawLabel:'DE ESPECTACULOS PUBLICOS (I.D.R.D)', normalizedCategory:'admin_general_expense', amountNative:-373.032, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'BOMBEROS', normalizedCategory:'admin_general_expense', amountNative:-143.536, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'MOVILIDAD', normalizedCategory:'admin_general_expense', amountNative:-1.013, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'IVA DESCONTABLE', normalizedCategory:'admin_general_expense', amountNative:-359.859, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-33.568, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-1453.576, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Legales', normalizedCategory:'admin_general_expense', amountNative:-3500.119, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Mantenimiento y adecuaciones', normalizedCategory:'admin_general_expense', amountNative:-479.854, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'De viaje', normalizedCategory:'match_organisation_expense', amountNative:-674.771, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
+    { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-1016.505, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-139.68, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Amortizaciones', normalizedCategory:'other_amortisation', amountNative:-209.241, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.9
+    { rawLabel:'Deterioro de inventario', normalizedCategory:'other_expenses', amountNative:-29.394, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
+    { rawLabel:'De personal', normalizedCategory:'wages_squad', amountNative:-674.055, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-46.283, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-15.715, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.97
+    { rawLabel:'Impuestos', normalizedCategory:'admin_general_expense', amountNative:-11.98, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-35.05, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.98
+    { rawLabel:'De viaje', normalizedCategory:'match_organisation_expense', amountNative:-13.065, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.97
+    { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-79.959, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.99
+    { rawLabel:'Gastos Laborales', normalizedCategory:'wages_squad', amountNative:-2234.94, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-244.744, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Alquileres', normalizedCategory:'other_expenses', amountNative:-1.415, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Contribuciones y afiliaciones', normalizedCategory:'admin_general_expense', amountNative:-9.935, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-4.766, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-326.88, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+    { rawLabel:'Legales', normalizedCategory:'admin_general_expense', amountNative:-39.211, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+    { rawLabel:'Mantenimientos y reparaciones', normalizedCategory:'admin_general_expense', amountNative:-113.956, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
+    { rawLabel:'De viaje', normalizedCategory:'match_organisation_expense', amountNative:-13.52, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.97
+    { rawLabel:'Gastos Diversos', normalizedCategory:'other_expenses', amountNative:-85.164, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-176.383, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+    { rawLabel:'Deterioro de cartera', normalizedCategory:'other_expenses', amountNative:-99.738, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.97
+    { rawLabel:'Amortizaciones', normalizedCategory:'other_amortisation', amountNative:-36.828, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.9
+    { rawLabel:'Gastos no deducibles', normalizedCategory:'other_expenses', amountNative:-9.493, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.99
+    { rawLabel:'Multas y sanciones', normalizedCategory:'other_expenses', amountNative:-83.5, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Impuestos asumidos', normalizedCategory:'other_expenses', amountNative:-11.317, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Ajuste al peso', normalizedCategory:'other_expenses', amountNative:-0.031, disclosureLevel:'aggregated' }, // pág. 30, precedente
+  ],
 };
 const fortalezaceifcoFiscalYearMeta = {
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = 41,780. Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.
@@ -555,6 +623,21 @@ const fortalezaceifcoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:12206.258, officialTotalExpenses:11223.212, officialPAT:466.323,
   },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
+  2025: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'COP', fxRef:'COP@2025-12-31',
+    sourceId:'fortalezaceif-co-estados-financieros-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-356.543, tax:-372.407,
+    extraRows: [
+      {label:'Costos Financieros (netos)', value:-356.543},
+      {label:'Total, Impuesto a Cargo', value:-372.407},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:23849.331, officialTotalExpenses:22806.941, officialPAT:313.44,
+  },
 };
 const fortalezaceifcoPresupuestoOverlayByYear = {};
 
@@ -607,6 +690,12 @@ Object.assign(sources, {
     title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'fortalezaceif-co-estados-financieros-2025': {
+    id:'fortalezaceif-co-estados-financieros-2025', clubId:'fortalezaceif-co',
+    title:'FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
