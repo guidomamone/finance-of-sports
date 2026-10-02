@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 382 — Ajuste manual `desglose`: escalón 0 del cierre de una nota con un error del documento (2026-10-02)
+
+- `ajustes.mjs`: campo `desglose` (etiqueta del renglón, valor = la diferencia impresa, categoría opcional). `verificar.mjs`: si la nota de ese renglón no suma, se abre igual con una fila "Diferencia en el documento", solo si la diferencia es exactamente la del ajuste (compuerta). `cargar.mjs`: la categoría del ajuste es escalón 0 de esa fila.
+- Caso: Fortaleza 2022 "Patrocinios (1)" 2.334.630 con detalle que suma 2.280.630: se abre y la televisión (1.208.394) queda aparte; diferencia 54.000 como patrocinio.
+- Medido: carga de UC idéntica (16 de 16). Fortaleza: solo cambia 2022 (más el chequeo "año anterior cargado", que ahora corre contra los años ya cargados y coincide).
+
 ## Versión 381 — Ajuste manual `cero-real`: escalón 0 del aviso de categorías en 0 (2026-10-02)
 
 - `ajustes.mjs`: campo `cero-real` (valor = la categoría del aviso: "Estadio", "Televisión"...). `cargar.mjs`: si hay un ajuste para esa categoría, el 0 es real: no frena ni pide reintento, queda como aviso.

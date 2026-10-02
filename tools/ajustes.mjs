@@ -24,6 +24,9 @@
 //   cero-real         (Versión 381) valor = una categoría del aviso "categorías en 0" ("Estadio", "Televisión", "Salarios del plantel"...):
 //                     Guido dice que ese 0 es real; escalón 0 del aviso de cargar.mjs (no frena, no pide reintento). Varias por documento.
 //                     Caso: Fortaleza CEIF 2021, Estadio en 0 (boletería "-" en 2021, L1141; en 2020 fue 191.189).
+//   desglose          (Versión 382) etiqueta = el renglón; valor = la diferencia TAL CUAL impresa entre el renglón y la suma de su detalle (un
+//                     error del documento); --categoria opcional para la fila de la diferencia. verificar.mjs abre el desglose con una fila
+//                     más, "Diferencia en el documento", si la diferencia es exactamente esa. Caso: Fortaleza 2022 "Patrocinios (1)", 54.000.
 //   fx                (Versión 373) el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
 //                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Sin caso todavía.
 //   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
@@ -48,7 +51,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -59,7 +62,7 @@ function leer() {
 // Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
 export function ajustesDe(pdf) {
   const m = new Map();
-  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo, a);
+  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo, a);
   return [...m.values()];
 }
 export function ajusteDe(pdf, campo) {
@@ -73,10 +76,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const i = A.indexOf('--agregar'); const pdf = A[i + 1]; const campo = A[i + 2];
     if (!pdf || !CAMPOS.includes(campo)) { console.error(`Uso: --agregar "<pdf>" <campo> (campos: ${CAMPOS.join(', ')})`); process.exit(1); }
     if (!existsSync(resolve(ROOT, pdf))) { console.error(`No existe ${pdf}`); process.exit(1); }
-    if (['resultado-final', 'fila', 'fx', 'cero-real'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
+    if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza') } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza') } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {

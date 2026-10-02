@@ -188,12 +188,28 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
   // con detalla_a = la etiqueta de esa hoja). Se reemplaza con la MISMA regla (cerrarNota: tiene que sumar), hasta 3 niveles. Caso real, UC
   // 2021-2025: "Ingresos Comerciales" de la nota 19 se abre con la columna "Comerciales" de la nota de segmentos. Si no suma, queda la hoja.
+  // AJUSTE MANUAL `desglose` (Versión 382; tools/ajustes.mjs): escalón 0 del cierre de una nota. Si el desglose de un renglón no suma por un
+  // error del PROPIO documento, Guido dice cuánto es la diferencia impresa; la nota se abre igual, con una fila más ("Diferencia en el
+  // documento") por esa diferencia. COMPUERTA: la diferencia entre el renglón y la suma de sus filas es la que dijo Guido (media unidad
+  // impresa de tolerancia); si no, queda el renglón como siempre. Solo la columna del año. Caso: Fortaleza 2022, "Patrocinios (1)" 2.334.630
+  // (L1219) y su detalle suma 2.280.630 (L1229-1240): sin abrirlo, la televisión (1.208.394) quedaba escondida adentro.
+  const cerrarConAjuste = (h, sub, campo) => {
+    if (campo !== 'M') return null;
+    const aj = ajustesDe(pdf).find((x) => x.campo === 'desglose' && String(x.etiqueta).trim() === String(h.etiqueta).trim());
+    if (!aj || !isFinite(parseNumber(aj.valor))) return null;
+    const hojasNota = sub.filter((x) => x.tipo === 'renglon' && isFinite(x.M) && x.M);
+    const dif = Math.abs(h.M || 0) - hojasNota.reduce((a, x) => a + Math.abs(x.M), 0);
+    const m = mult(h.bloque);
+    if (Math.abs(Math.abs(dif) - Math.abs(parseNumber(aj.valor) * m)) > 0.5 * m + 1e-9) return null;
+    if (conNotas) notas.push(`ajuste manual: el desglose de "${h.etiqueta}" se abre con una fila "${aj.etiquetaDiferencia || 'Diferencia en el documento'}" de ${aj.valor} (${aj.fecha}, ${aj.motivo})`);
+    return { hojas: [...hojasNota.map((x) => ({ ...x, valorNota: Math.abs(x.M) })), { etiqueta: aj.etiquetaDiferencia || 'Diferencia en el documento', lado: h.lado, tipo: 'renglon', valorNota: dif, pagina: h.pagina, linea: aj.linea ?? h.linea, bloque: h.bloque, u: h.u, catAjuste: aj.categoria || null }] };
+  };
   const abrirAnidadas = (hojas, campo, nivel) => {
     if (nivel > 3) return hojas;
     const usadas = new Set(hojas);
     return hojas.flatMap((h) => {
       const sub = filas.filter((x) => x.detalla_a && x !== h && !usadas.has(x) && x.detalla_a.trim() === String(h.etiqueta).trim());
-      const c = sub.length >= 2 ? cerrarNota(Math.abs(h[campo] || 0), sub, campo, h.u || 0) : null;
+      const c = sub.length >= 2 ? (cerrarNota(Math.abs(h[campo] || 0), sub, campo, h.u || 0) || cerrarConAjuste(h, sub, campo)) : null;
       if (!c) { if (conNotas && sub.length >= 2 && campo === 'M') { if (!reintentos.some((x) => x.renglon === h.etiqueta)) notas.push(`el desglose de "${h.etiqueta}" (${sub.length} filas) no suma la fila: quedó la fila`); if (!reintentos.some((x) => x.renglon === h.etiqueta)) reintentos.push({ renglon: h.etiqueta, suma: r6(sub.filter((x) => x.tipo === 'renglon').reduce((a, x) => a + Math.abs(x.M || 0), 0)), objetivo: r6(Math.abs(h.M || 0)) }); } return [h]; }
       return abrirAnidadas(c.hojas.map((x) => ({ ...x, [campo]: x.valorNota * Math.sign(h[campo] || 1), origen: `${h.origen} > desglose de "${h.etiqueta}"` })), campo, nivel + 1);
     });
@@ -214,7 +230,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // saber qué suma qué; ver cerrarNota()).
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim());
       const obj = Math.abs(f[campo] || 0);
-      const c = hijas.length >= 2 ? cerrarNota(obj, hijas, campo, f.u || 0) : null;
+      const c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
       if (c) out.push(...abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1));
       else { out.push({ ...f, [campo]: Math.abs(f[campo] || 0), origen: 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
     }
@@ -549,7 +565,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // el resultado del ejercicio es ese ± el impuesto, el que esté impreso; null si no se pudo confirmar (va a la cola). cargar.mjs hace su
     // tie-out contra este número.
     totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), resultadoParaCargar: r6(resParaCargar), resultadoFinal, lecturaSignos: lectura },
-    lineas: [...ing, ...gas].map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado' })),
+    lineas: [...ing, ...gas].map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado', ...(f.catAjuste ? { categoria: f.catAjuste } : {}) })),
     // financiero / impuesto: su efecto en el resultado (ver SIGNOS ... PARA LA CARGA arriba); `signosCarga` dice qué se invirtió.
     signosCarga: { financiero: sfCarga, impuesto: siCarga },
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(sfCarga * f.M), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };

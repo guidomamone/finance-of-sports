@@ -317,7 +317,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
       // signoFijo (Versión 338): el signo que ya decidió verificar.mjs (positivo = suma a su lado; negativo = lo reduce, como "Feriado Legal
       // −15.597" de UC 2020, una reversión de la provisión de vacaciones dentro de los gastos de administración). El paso 5 lo usa tal cual en
       // vez de adivinarlo por tabla: hasta la 337 se perdía y la fila quedaba sumando gasto (UC 2020 frenaba con 31.194 de diferencia).
-      ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})` })),
+      ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})`, ...(l.categoria ? { catAjuste: l.categoria } : {}) })),
       ...VV.financiero.map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'netInterest' })),
       ...VV.impuesto.map((l) => ({ label: l.etiqueta, page: null, section: 'impuesto', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'tax' })),
     ];
@@ -410,7 +410,9 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
     // Si el lado no coincide, la fila sigue por la escalera (y, si no se resuelve, llega a la cola con su propia pregunta).
-    let rg = respuestaCat(r.label); let claveCola = norm(r.label);
+    // Categoría que trae un ajuste manual (Versión 382: la fila "Diferencia en el documento" de un ajuste `desglose`): escalón 0, gana siempre.
+    if (r.catAjuste && ladoDeCat(r.catAjuste) === r.tside) Object.assign(f, { cat: r.catAjuste, conf: 1, escalon: 0, fuenteCat: 'ajuste manual (Admin/ajustes-manuales.jsonl)', enLista: true });
+    let rg = r.catAjuste ? null : respuestaCat(r.label); let claveCola = norm(r.label);
     if ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg)) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
