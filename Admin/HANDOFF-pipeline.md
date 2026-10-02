@@ -31,11 +31,11 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2023 | ok (ajustes manuales: resultado final, sin dudas) | alta, cargar |
-| 2017 | cierra por ajustes manuales (fila otros gastos, fila costos financieros, resultado final) | 9 dudas en la cola (las contestan los ajustes) |
-| 2020, 2021, 2024, 2025 | cierran (2024-2025 con resultado final impreso y año vecino) | 2-3 dudas en la cola cada uno, casi todas contestadas por la aritmética |
-| 2018, 2019 | sin verificar: localizar no encontró notas de gastos (solo de ingresos) | mirar el .md |
-| 2022 | sin verificar | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
+| 2020, 2021, 2023 | ok (2020↔2021 por año vecino; 2023 por ajustes) | alta, cargar |
+| 2024, 2025 | cierran, año vecino ok; sin dudas (ajuste) | 2024: reintento de desgloses (índice v3) opcional |
+| 2017 | cierra por ajustes | "primer año": se confirma cuando 2018 pase por extraer |
+| 2018, 2019 | fuente: localizar (notas como estado) no vio el resultado impreso: 2018 "Resultado Año 2018 (639,077)" L542 pág. 14; 2019 "Utilidad Contable (52,122)" L455 pág. 13 (lo confirma 2020 L829) | propuesta: ajuste resultado-final + reintento de notas como estado con ese dato |
+| 2022 | fuente: se localizó cuando el año era 2050 | volver a localizar (`--rehacer`, solo 2022) |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
