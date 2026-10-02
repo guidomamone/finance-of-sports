@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 388 — Etapa 6: financiero e impuesto sin renglones toman su subtotal impreso (2026-10-02)
+
+- `verificar.mjs`: si el estado no trae ningún renglón financiero (o de impuesto) pero sí UN subtotal/total de ese lado, se usa ese subtotal. Si hay renglones, el subtotal no se usa.
+- Caso: Goiás 2023, solo "Resultado financeiro líquido (1.425.102)" (pág. 7 del visor, .md L221): el financiero daba 0 y el resultado no cerraba. Ahora cierra (124.434.274); queda en la cola solo por una duda de extraer (nota 19).
+- Medido: Fortaleza (lote 08) idéntico; Goiás: solo cambia 2023.
+
 ## Versión 387 — Etapa 6: la lectura 3 lee los subtotales con los renglones sin lado (2026-10-02)
 
 - `verificar.mjs`, lectura 3 ("renglones sin lado según su signo"): antes de decidir si un subtotal es la suma de los renglones de arriba o de abajo, cuenta también los renglones sin lado, con signo o en valor absoluto. Hasta ahora esos renglones se ubicaban después y el subtotal se sumaba además de sus componentes.

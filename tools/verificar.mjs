@@ -305,7 +305,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (escala.escalon === 0 && [...escalaDe.values()].includes('no se sabe') && !MULT[U.escala]) notas.push('escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)');
 
   const { filas, estado, lineasDeLado } = armar(F, U, true, kEsc);
-  const fin = estado.filter((f) => f.lado === 'financiero' && f.tipo === 'renglon'); const imp = estado.filter((f) => f.lado === 'impuesto' && f.tipo === 'renglon');
+  // financiero e impuesto: sus renglones; SI NO HAY NINGUNO, su subtotal/total impreso si es UNO solo (Versión 388). Caso: Goiás 2023, el
+  // estado trae solo "Resultado financeiro líquido (1.425.102)" (pág. 7 del visor, .md L221), sin receitas/despesas financeiras: el
+  // financiero se tomaba como 0 y el resultado no cerraba. Si hay renglones, el subtotal no se usa (no se cuenta dos veces).
+  const renglonesOTotal = (lado) => { const r = estado.filter((f) => f.lado === lado && f.tipo === 'renglon'); if (r.length) return r; const t = estado.filter((f) => f.lado === lado && ['subtotal', 'total'].includes(f.tipo) && isFinite(f.M)); return t.length === 1 ? t : []; };
+  const fin = renglonesOTotal('financiero'); const imp = renglonesOTotal('impuesto');
   const suma = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
   const conSigno = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
 
