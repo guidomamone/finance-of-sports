@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série A (BR) — 5 ejercicio(s) con ranking:
+// Brasileirão Série A (BR) — 6 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -131,6 +132,14 @@ window.RANKINGS["br-serieA"] = {
       { id:"atleticomineiro-br", revenue:15.61, reportType:"official_balance_sheet",
         sourceId:"atleticomineiro-br-demonstracoes-2023",
         mix:[["Cuotas Sociales",1.233],["Comercial / Sponsors",1.601],["Estadio",1.047],["Televisión",13.933],["Venta de Jugadores",0.047],["Otros ingresos",-2.251]] },
+    ],
+  },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:20.333, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2022-fgf-go",
+        mix:[["Cuotas Sociales",0.397],["Comercial / Sponsors",2.398],["Estadio",0.232],["Televisión",12.223],["Premios por competencias",1.382],["Venta de Jugadores",0.574],["Otras secciones deportivas",0.637],["Otros ingresos",2.489]] },
     ],
   },
   2021: {
