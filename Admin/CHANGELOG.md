@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 394 — Ajuste manual `categoria` (escalón 0 de la categorización, también entre lados) (2026-10-02)
+
+- `ajustes.mjs`: campo nuevo `categoria` (--etiqueta, --valor <categoría>). `cargar.mjs` lo toma como escalón 0: gana sobre todo, también sobre la compuerta del lado; si la categoría es del otro lado, la fila se muda sin cambiar su efecto en el resultado (un ingreso de 140 pasa a gasto de +140).
+- Caso: Goiás 2023, "Outras Receitas e Despesas" 140.214.785 (venta del 20% de la Liga Forte União) como exceptional_items. La corrección a mano de `ed302de9` se rehízo con `cargar.mjs --reemplazar`: mismo resultado (ingresos 89.972.753, officialTotalRevenue = Receita líquida impresa), ahora sobrevive a una recarga. `cola.mjs --corregir-categoria` no servía: la compuerta del lado la descartaba en silencio.
+
 ## Versión 393 — Etapa 6: el chequeo del año anterior usa la lectura con la que cerró el año (2026-10-02)
 
 - `verificar.mjs`: si el año cerró con la lectura 3, la columna del año anterior también suma los renglones sin lado por su signo (y lee los subtotales con ellos), igual que lo cargado.

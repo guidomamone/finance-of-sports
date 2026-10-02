@@ -412,8 +412,16 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     // Si el lado no coincide, la fila sigue por la escalera (y, si no se resuelve, llega a la cola con su propia pregunta).
     // Categoría que trae un ajuste manual (Versión 382: la fila "Diferencia en el documento" de un ajuste `desglose`): escalón 0, gana siempre.
     if (r.catAjuste && ladoDeCat(r.catAjuste) === r.tside) Object.assign(f, { cat: r.catAjuste, conf: 1, escalon: 0, fuenteCat: 'ajuste manual (Admin/ajustes-manuales.jsonl)', enLista: true });
-    let rg = r.catAjuste ? null : respuestaCat(r.label); let claveCola = norm(r.label);
-    if ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg)) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola); }
+    // AJUSTE MANUAL `categoria` (Versión 394; tools/ajustes.mjs): escalón 0, gana sobre todo, también sobre la compuerta del lado (es una
+    // decisión explícita de Guido). Si la categoría es del OTRO lado, la fila se muda sin cambiar su efecto en el resultado: un ingreso de
+    // 140 pasa a gasto de +140 (ganancia). Caso: Goiás 2023, la venta del 20% de la Liga Forte União como exceptional_items.
+    const ajCat = ajustesDe(pdf).find((a) => a.campo === 'categoria' && norm(a.etiqueta) === norm(r.label) && ladoDeCat(a.valor));
+    if (ajCat) {
+      Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
+      if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
+    }
+    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label); let claveCola = norm(r.label);
+    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
