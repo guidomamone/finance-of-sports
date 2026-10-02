@@ -803,7 +803,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-616.441},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: año anterior): "Otros pasivos financieros, corrientes" pág. 7 + "Otros pasivos financieros, no corrientes" pág. 7; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:763.151, cash:5905.99,
     officialTotalRevenue:14157.951, officialTotalExpenses:17413.635, officialPAT:-3538.301,
   },
   2025: { // tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -820,7 +821,8 @@ const catolicaFiscalYearMeta = {
       {label:'Resultado por unidades de Reajuste', value:-843.82},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: año anterior): "Otros pasivos financieros, corrientes" pág. 8 + "Otros pasivos financieros, no corrientes" pág. 8; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 7
+    grossDebt:30952.393, cash:1712.282,
     officialTotalRevenue:25850.434, officialTotalExpenses:25665.994, officialPAT:-729.845,
   },
   2020: { // tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -836,7 +838,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-277.69},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: documento siguiente): "Otros pasivos financieros, corrientes" pág. 7 + "Otros pasivos financieros, no corrientes" pág. 7; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:1016.921, cash:6214.278,
     officialTotalRevenue:15421.985, officialTotalExpenses:15633.979, officialPAT:-533.463,
   },
   2019: { // tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -852,7 +855,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-157.174},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:0, cash:6488.673,
     officialTotalRevenue:17298.475, officialTotalExpenses:14654.154, officialPAT:2581.746,
   },
   2018: { // tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -868,7 +872,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-75.144},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:0, cash:5912.489,
     officialTotalRevenue:11290.213, officialTotalExpenses:11078.043, officialPAT:199.346,
   },
   2010: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -884,7 +889,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-22.635},
       {label:'Gasto por impuestos a las ganancias', value:747.846},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 4
+    grossDebt:0, cash:121.331,
     officialTotalRevenue:3477.566, officialTotalExpenses:7113.714, officialPAT:-2891.019,
   },
   2011: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -900,7 +906,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:145.071},
       {label:'Gasto por impuestos a las ganancias', value:195.273},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Efectivo y Equivalentes al Efectivo" pág. 4
+    grossDebt:null, cash:216.698,
     officialTotalRevenue:9808.239, officialTotalExpenses:10508.326, officialPAT:-343.642,
   },
   2012: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -916,7 +923,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-91.486},
       {label:'Gasto por impuestos a las ganancias', value:459.734},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Efectivo y Equivalentes al Efectivo" pág. 4
+    grossDebt:null, cash:45.926,
     officialTotalRevenue:7481.235, officialTotalExpenses:8617.013, officialPAT:-742.014,
   },
   2013: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -932,7 +940,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:83.629},
       {label:'Gasto por impuestos a las ganancias', value:163.095},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y Equivalentes al Efectivo" pág. 5
+    grossDebt:0, cash:55.191,
     officialTotalRevenue:9149.31, officialTotalExpenses:9205.822, officialPAT:220.616,
   },
   2014: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -948,7 +957,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:104.311},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:-178.892},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:0, cash:116.142,
     officialTotalRevenue:9413.91, officialTotalExpenses:9314.994, officialPAT:71.752,
   },
   2015: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -980,7 +990,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:19.859},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:-1.605},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: documento siguiente): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:null, cash:3256.284,
     officialTotalRevenue:11519.419, officialTotalExpenses:11365.241, officialPAT:188.568,
   },
   2017: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -996,7 +1007,8 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:56.415},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+    grossDebt:0, cash:2604.406,
     officialTotalRevenue:11191.089, officialTotalExpenses:12107.625, officialPAT:-810.273,
   },
 };
