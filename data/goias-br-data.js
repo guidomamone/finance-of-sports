@@ -162,7 +162,6 @@ const goiasbrRevenueLinesByYear = {
     { rawLabel:'(-) Cortez. Ingressos - Copa Verde', normalizedCategory:'matchday_competition', amountNative:-0.042935, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
     { rawLabel:'(-) Cortez. Ingressos - Sul. Americana', normalizedCategory:'matchday_competition', amountNative:-0.034245, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.97
     { rawLabel:'(-) Ressarcimento/Reembolso de Ingressos', normalizedCategory:'matchday_competition', amountNative:-0.00028, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.95
-    { rawLabel:'Outras Receitas e Despesas', normalizedCategory:'other_income', amountNative:140.214785, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
   ],
 };
 const goiasbrExpenseLinesByYear = {
@@ -291,6 +290,10 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Outras despesas e receitas', normalizedCategory:'other_expenses', amountNative:-0.006692, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
   ],
   2023: [ // tools/cargar.mjs (2026-10-02)
+    // A MANO (Guido, 2026-10-02): venta del 20% de los derechos en la Liga Forte União (R$ 152.480.000; neto 140.214.785, nota 23,
+    // 2023.md L1190-1197) como ítem extraordinario y no como ingreso. exceptional_items es categoría de gastos: una ganancia va en positivo
+    // (mismo criterio que la equivalência patrimonial de Atlético Mineiro y Botafogo). OJO: un cargar.mjs --reemplazar de 2023 la vuelve a ingresos.
+    { rawLabel:'Outras Receitas e Despesas', normalizedCategory:'exceptional_items', amountNative:140.214785, disclosureLevel:'aggregated' }, // pág. 7
     { rawLabel:'Despesa com pessoal (a)', normalizedCategory:'wages_squad', amountNative:-43.24911, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.98
     { rawLabel:'Despesas com viagens (b)', normalizedCategory:'match_organisation_expense', amountNative:-7.52929, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
     { rawLabel:'Serviços de terceiros', normalizedCategory:'lump_football_operations_expense', amountNative:-7.501287, disclosureLevel:'aggregated' }, // pág. 30, precedente
@@ -404,7 +407,7 @@ const goiasbrFiscalYearMeta = {
       {renglon:'Serviços de terceiros', lado:'expense', importe:7.501287, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
     ],
     grossDebt:null, cash:null,
-    officialTotalRevenue:230.187538, officialTotalExpenses:104.328162, officialPAT:124.434274,
+    officialTotalRevenue:89.972753, /* Receita líquida impresa (2023.md L213); la venta a la LFU va como exceptional_items (a mano, Guido 2026-10-02) */  officialTotalExpenses:104.328162, officialPAT:124.434274,
   },
 };
 const goiasbrPresupuestoOverlayByYear = {};
