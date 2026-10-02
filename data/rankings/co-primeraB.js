@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Primera B (CO) — 5 ejercicio(s) con ranking:
+// Primera B (CO) — 6 ejercicio(s) con ranking:
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -22,6 +23,14 @@ window.RANKINGS["co-primeraB"] = {
       { id:"fortalezaceif-co", revenue:1.569, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2023",
         mix:[["Comercial / Sponsors",0.221],["Estadio",0.105],["Televisión",0.335],["Premios por competencias",0.081],["Venta de Jugadores",0.289],["Educación",0.016],["Otros ingresos",0.523]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"fortalezaceif-co", revenue:0.903, reportType:"official_balance_sheet",
+        sourceId:"fortalezaceif-co-estados-financieros-2021",
+        mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.068],["Venta de Jugadores",0.072],["Otros ingresos",0.373]] },
     ],
   },
   2020: {
