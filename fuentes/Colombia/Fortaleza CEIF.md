@@ -18,3 +18,5 @@
 - **Sin abrir todavía**: sourcing puro, no se verificó el contenido de ningún PDF.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 900964178); fortalezaceif.com.
 - Último chequeo: 2026-09-22.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2017 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf` (sourceId `fortalezaceif-co-estados-financieros-2017`).
