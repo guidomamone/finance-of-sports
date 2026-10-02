@@ -3,7 +3,7 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série B (BR) — 7 ejercicio(s) con ranking:
+// Brasileirão Série B (BR) — 8 ejercicio(s) con ranking:
 //   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -11,6 +11,7 @@
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -123,6 +124,14 @@ window.RANKINGS["br-serieB"] = {
       { id:"rbbragantino-br", revenue:9.718, reportType:"official_balance_sheet",
         sourceId:"rbbragantino-br-balanco-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.718]] },
+    ],
+  },
+  2017: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:17.73, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2017-2016",
+        mix:[["Cuotas Sociales",1.262],["Comercial / Sponsors",1.403],["Estadio",0.588],["Televisión",13.918],["Premios por competencias",0.742],["Venta de Jugadores",0.35],["Otros ingresos",-0.534]] },
     ],
   },
 };
