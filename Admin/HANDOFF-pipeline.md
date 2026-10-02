@@ -22,21 +22,20 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**UC terminado (2026-10-02), en el sitio local, sin push.** 2010-2025 por el script; 2022-2024 rehechos con `cargar.mjs --reemplazar`;
-caja y deuda con `caja-deuda.mjs --club catolica-cl --escribir` (21 de 26).
+**Dos clubes enteros en el sitio local, sin push (2026-10-02):**
+- **UC** (Chile), 2010-2025; caja y deuda 21 de 26.
+- **Fortaleza CEIF** (Colombia, primer club nuevo; los PDFs traen solo notas), 2017-2025; caja 5 de 9 años, deuda 7 de 9 (el resto, sin dato
+  con ningún escalón). Cinco años cerraron con ajustes manuales (`node tools/ajustes.mjs` los lista, con el impuesto calculado de cada uno).
 
-**Ahora: Fortaleza CEIF (Colombia), primer club nuevo** (`Admin/lote-08.txt`, 2017-2025). Sus PDFs traen SOLO las notas (sin balance ni estado
-de resultados). Se agregó el escalón "las notas hacen de estado" (Versión 360), verificar lee el resultado por su etiqueta (Versión 361) y
-la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 2024 pasan a miles, 2025↔2024↔2023 coinciden).
+Lo que se construyó con Fortaleza (Versiones 362-386, detalle en el CHANGELOG): escala del año vecino; signo del impuesto por el resultado
+impreso; ajustes manuales (escalón 0 de todas las escaleras); fecha de cierre por los encabezados de las tablas; tipo de cambio con compuerta
+de fecha; en la carga, "lo que cerró en la etapa 6 no se vuelve a decidir" (signos, lado, palabras, no-es-rubro); materialidad; caja como total
+de la nota de efectivo y deuda como total de la nota de deuda.
 
-| Año | Hoy | Qué falta |
-|---|---|---|
-| 2017-2025 | **los 9 cargados** en el sitio local (2021 con ajuste `cero-real`; 2022 con ajuste `desglose`) | — |
-| caja y deuda | caja 2017, 2018, 2023-2025; deuda 2017-2021, 2024-2025 | sin dato con ningún escalón (IA incluida): caja 2019-2022, deuda 2022-2023 |
+Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
 
-Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
-
-1. Escalón de materialidad en la categorización (aprobado por Guido, sin construir): dudas ≤ 1% del total de su lado con confianza ≥ 0,60.
+1. Publicar: merge de `inventario-transcripciones` a `main` (el push lo hace Guido).
+2. El próximo club (elegir con `node tools/estado.mjs`).
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 
@@ -46,6 +45,9 @@ Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; 
  ESCALÓN 1 vocabulario ─────────┤─► COMPUERTA (la misma): año anterior cargado o documento siguiente, mismas filas, columna del año anterior
  ESCALÓN 2 IA (solo líneas) ────┘    pasa → dato · no pasa → siguiente escalón · nada → null
 ```
+
+El escalón 1 propone, además (Versiones 383 y 385): las filas de la nota de efectivo si la caja es una parte de ella (la compuerta compara el
+total de la nota del vecino), y el total de la nota de deuda si no hay otra fila de deuda (antes caía en "ninguna fila = 0").
 
 Pendientes:
 
@@ -61,7 +63,6 @@ Pendientes:
 - Datos ya publicados con categorías dudosas (encontrado por el subagente del perfil, sin tocar): Almagro tiene "Sede Social - Medrano
   522" como cuotas sociales; Grêmio, "Receitas Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus
   documentos y no en el sitio.
-- Publicar: merge de la rama a `main` y push (lo hace Guido; `main` ya tiene 49 commits sin pushear, que salen juntos).
 
 ---
 
@@ -264,12 +265,15 @@ Mitigaciones:
   "sin lado en el documento: entra como gasto por su signo, impreso en negativo"):
 
 ```
- ESCALÓN 0  respuesta de Guido en la cola para esa fila ─────────────────────── gana siempre
+ ESCALÓN 0  ajuste manual · respuesta de Guido en la cola para esa fila ──────── gana siempre
  ESCALÓN 1  precedente exacto CON CONTEXTO (misma etiqueta y mismo renglón que desglosa)
  ESCALÓN 2  precedente exacto (misma etiqueta en el club, una sola categoría)
  ESCALÓN 3  precedente por familia de palabras
  ESCALÓN 4  Jev con confianza >= 0,90
  ESCALÓN 5  Claude con confianza >= 0,80
+ ESCALÓN 6  materialidad: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se cargan con aviso (Versión 386)
+ COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,
+            baja de escalón; la pregunta de la cola lleva la clave "etiqueta|lado"
  nada → cola (pregunta de sí o no)
 ```
 
@@ -291,12 +295,15 @@ Mitigaciones:
 - d) **Escaleras chicas** (ya funcionan así; falta registrar en qué escalón salió cada dato):
 
 ```
- TIPO DE CAMBIO   declarado único ─► declarado en tabla (gana la fecha más nueva) ─► serie oficial (tools/fx-reference/) ─► cola
+ TIPO DE CAMBIO   ajuste ─► declarado (compuerta: su frase no trae otra fecha que el cierre) ─► en tabla (fecha más nueva) ─► serie oficial ─► cola
  PERÍMETRO        heredado del año cargado más cercano ─► cola
- FECHA DE CIERRE  leída del documento ─► deducida de los vecinos (mismo día, años consecutivos) ─► cola
- CATEGORÍAS EN 0  salarios / televisión / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► se carga con aviso
+ FECHA DE CIERRE  títulos ─► encabezados de las tablas (ejercicio | un año antes) ─► vecinos ─► cola; compuerta: no más de 2 años después de hoy
+ CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
+ LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
+                  por palabras ni se excluye sola por "no es rubro" dudoso
 ```
 - Hoy en el lote es solo propuesta: no escribe el sitio.
+- Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;
