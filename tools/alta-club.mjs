@@ -781,7 +781,10 @@ export function analizar(docArg, sitio, ov = {}) {
 
   // ---------------------------------------------------------------- año y cierre
   const nombreArchivo = basename(abs);
-  const anioNombre = ANIO_FORZADO || anioDelNombre(nombreArchivo);
+  // ESCALÓN 0 (Versión 390): ajuste manual de Guido (tools/ajustes.mjs, campo `anio`) cuando el nombre del archivo dice mal el año.
+  const ajAnio = r.pdf ? ajusteDe(r.pdf, 'anio') : null;
+  const anioForzado = ANIO_FORZADO || (ajAnio ? Number(ajAnio.valor) : null);
+  const anioNombre = anioForzado || anioDelNombre(nombreArchivo);
   const cierreTxt = cierreDelTexto(md);
   const cierreNom = cierreDelNombre(basename(abs, extname(abs)));
   let mesCierre = null; let fuenteCierre = null; let estadoCierre = 'ok'; let preguntaCierre = null;
@@ -838,7 +841,7 @@ export function analizar(docArg, sitio, ov = {}) {
   }
   // El año de cierre del contenido, para confirmar el del nombre.
   let anio = anioNombre;
-  let estadoAnio = 'ok'; let fuenteAnio = ANIO_FORZADO ? '--anio' : 'nombre del archivo (misma regla que onboard.mjs --quien)';
+  let estadoAnio = 'ok'; let fuenteAnio = ANIO_FORZADO ? '--anio' : ajAnio ? `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajAnio.autor} ${ajAnio.fecha}): ${ajAnio.motivo}` : 'nombre del archivo (misma regla que onboard.mjs --quien)';
   let preguntaAnio = null;
   // Solo se contradice al nombre del archivo con evidencia FUERTE del contenido (3+ fechas de
   // cierre, 60%+ en el mismo mes): un balance que dice una sola vez "31 de dezembro de 2023 e
@@ -847,7 +850,7 @@ export function analizar(docArg, sitio, ov = {}) {
   if (cierreTxt && mesCierre && cierreTxt.mes === mesCierre && (contenidoFuerte || !anio)) {
     if (!anio) { anio = cierreTxt.anio; fuenteAnio = 'contenido del .md (año más nuevo con fecha de cierre)'; }
     else if (cierreTxt.anio === anio) fuenteAnio += ', confirmado por las fechas de cierre del .md';
-    else if (!ANIO_FORZADO) {
+    else if (!anioForzado) {
       const aniosTxt = Object.keys(cierreTxt.porMes).length ? fechasFinDeMes(md).filter((f) => f.mes === mesCierre).map((f) => f.anio) : [];
       if (aniosTxt.includes(anio)) fuenteAnio += `, presente en el .md (el año más citado con fecha de cierre es ${cierreTxt.anio})`;
       else { estadoAnio = 'pregunta'; preguntaAnio = `El nombre del archivo sugiere el ejercicio ${anio}, pero las fechas de cierre del documento son de ${cierreTxt.anio}. ¿Qué ejercicio es?`; }

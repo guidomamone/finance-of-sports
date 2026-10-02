@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 390 — Ajuste manual `anio` (escalón 0 del año del ejercicio) (2026-10-02)
+
+- `ajustes.mjs`: campo nuevo `anio`. `alta-club.mjs` (y con él `cargar.mjs`) y `onboard.mjs --quien` lo toman antes que el nombre del archivo.
+- Caso: Goiás, `demonstracoes-contabeis-2017-2016.pdf` daba ejercicio 2016 (último año del nombre); el contenido cierra el 31-12-2017. Ajustes para los 10 archivos 2008-2007 a 2017-2016. Con el ajuste, 2017: año 2017, liga br-serieB, tipo de cambio BRL@2017-12-31.
+- Perfil de Goiás (`Admin/perfil-clubes.jsonl`, subagente Sonnet): socios sí (Associados, Nação Esmeraldina, Sou Goiás), otros deportes sí ("Esportes Olímpicos" como renglón de ingresos, sin disciplinas nombradas).
+- Cola: perímetro de Goiás 2022-2025 contestado "individual" (la palabra "consolidado" era de deudas parceladas).
+
 ## Versión 389 — Ligas: tablas de "equipos por estado" en Wikipedia (2026-10-02)
 
 - `fetch-club-league-reference.mjs`: si la última columna del encabezado es plural ("Team(s)", "Teams", "Clubs"), se toman todos los equipos de esa celda. Caso: Série B 2017 y 2021, cuya única tabla es "Number of teams by state": salían números de rowspan y nombres sueltos, y Goiás no aparecía.

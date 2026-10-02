@@ -27,6 +27,9 @@
 //   desglose          (Versión 382) etiqueta = el renglón; valor = la diferencia TAL CUAL impresa entre el renglón y la suma de su detalle (un
 //                     error del documento); --categoria opcional para la fila de la diferencia. verificar.mjs abre el desglose con una fila
 //                     más, "Diferencia en el documento", si la diferencia es exactamente esa. Caso: Fortaleza 2022 "Patrocinios (1)", 54.000.
+//   anio              (Versión 390) valor: el año del ejercicio cuando el NOMBRE DEL ARCHIVO lo dice mal: escalón 0 del año en
+//                     tools/alta-club.mjs (analizar, que también usa cargar.mjs) y en tools/onboard.mjs --quien. Caso: Goiás,
+//                     "demonstracoes-contabeis-2017-2016.pdf" es el ejercicio 2017 (con 2016 de comparativo) y el nombre daba 2016.
 //   fx                (Versión 373) el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
 //                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Sin caso todavía.
 //   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
@@ -51,7 +54,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {

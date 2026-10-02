@@ -88,6 +88,7 @@ import { resolve, dirname, basename, extname, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { derivado, ubicar } from './rutas.mjs';
+import { ajusteDe } from './ajustes.mjs';
 import vm from 'node:vm';
 
 const projectRoot = resolve(import.meta.dirname, '..');
@@ -222,7 +223,9 @@ function resolveClubAndYearQuiet(pdfPath, club, year) {
   }
   let resolvedYear = year;
   if (!resolvedYear) {
-    resolvedYear = guessYear(basename(pdfPath));
+    // escalón 0 (Versión 390): ajuste manual `anio` (tools/ajustes.mjs), el mismo que lee alta-club.mjs
+    const ajAnio = ajusteDe(relative(projectRoot, resolve(pdfPath)), 'anio');
+    resolvedYear = ajAnio ? Number(ajAnio.valor) : guessYear(basename(pdfPath));
     if (!resolvedYear) return { error: 'No pude adivinar el año del nombre del archivo -- pasá --year explícito.' };
   }
   return { clubId, year: resolvedYear };
