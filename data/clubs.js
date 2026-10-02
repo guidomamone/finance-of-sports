@@ -387,6 +387,9 @@ const clubs = {
   // Fortaleza CEIF: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf. brandColor de Guido
   // (2026-10-02: azul #003366 y rojo #CC0000; el campo admite un color y va el azul).
   'fortalezaceif-co': { id:'fortalezaceif-co', name:'FORTALEZA FUTBOL CLUB S.A.', displayName:'Fortaleza CEIF', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#003366' },
+  // Goias: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf. brandColor de Guido
+  // (2026-10-02: verde #006633; footylogos no tiene a Goiás).
+  'goias-br': { id:'goias-br', name:'Goiás Esporte Clube', displayName:'Goias', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006633' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

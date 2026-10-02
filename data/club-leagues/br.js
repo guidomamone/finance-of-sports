@@ -78,4 +78,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'amazonas-br': { 2024: 'br-serieB' }, // ascendido campeón de la Série C 2023
   'juventude-br': { 2020: 'br-serieB' }, // obtuvo el ascenso a la Série A para 2021 (jugó la B en 2020)
   'botafogosp-br': { 2024: 'br-serieB' }, // 17° lugar
+  // Goias (alta-club.mjs, 2026-10-02): verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Goiás".
+  'goias-br': { 2025: 'br-serieB' },
 });

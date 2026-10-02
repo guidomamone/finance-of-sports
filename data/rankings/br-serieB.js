@@ -19,6 +19,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieB"] = {
   2025: {
     leagueSize: null,
+    sinDato: ["goias-br"],
     clubs: [
       { id:"athleticoparanaense-br", revenue:81.597, reportType:"official_balance_sheet",
         sourceId:"athleticoparanaense-br-demonstracoes-2025",
