@@ -37,7 +37,7 @@ import { extraer } from './extraer.mjs';
 import { pendientes } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
-const { verificar } = await import('./verificar.mjs');
+const { verificarLista } = await import('./verificar.mjs');
 const { loadSite } = await import('./proponer-carga.mjs');
 process.argv = argvAntes;
 
@@ -154,8 +154,8 @@ console.log('\n=== Etapa 6: verificar (gratis) ===');
 const sitio = loadSite();
 // startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
 // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
-for (const pdf of docs.filter((d) => String(estado[d]).startsWith('extraído'))) {
-  const r = verificar(pdf, { registro, sitio, escribirRubros: true });
+// verificarLista (Versión 362): repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).
+for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).startsWith('extraído')), { registro, sitio, escribirRubros: true })) {
   estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
   if (!r.error) for (const c of r.chequeos) console.log(`  ${pdf.split('/').slice(2).join('/')}: ${c.ok === true ? 'ok' : c.ok === false ? 'NO' : '-'} ${c.nombre}: ${c.detalle}`);
 }

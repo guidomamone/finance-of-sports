@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 362 — Etapa 6: escalera de escala (la del año vecino) (2026-10-02)
+
+- `verificar.mjs`: si el documento dice escala "no se sabe", el escalón 1 propone la del año vecino anclado (la declara o ya la resolvió así) cuando los ingresos del año en común dan exactamente x1.000 o x1.000.000; la compuerta es el mismo chequeo de año vecino (4b). Queda en el `.verificacion.json` como `escala { valor, escalon, factor, de }`. Una escala declarada nunca se pisa.
+- `verificar.mjs`: el año vecino se busca entre los documentos del año que pasaron por extraer (antes, el primero del año: Fortaleza 2023 nunca se comparó con 2024 porque el primero era `certificacion-ef-2024.pdf`).
+- `verificarLista()` (usada por `verificar.mjs --lista` y la etapa 6 de `lote.mjs`): si un documento resolvió la escala por el escalón 1, repite la pasada una vez.
+- Medido: lote 07 (UC) idéntico (16 `.verificacion.json` y `.rubros.json`). Lote 08: Fortaleza 2024 y 2023 pasan a miles (ingresos 12.206,258 y 5.998,469 millones de COP; rubros exactamente x1000), 2025↔2024↔2023 coinciden; salen de la cola 9535f3f, 19ba845, e4c96b9 y los "primer año" de 2025 y 2023 (cola 35 → 28).
+
 ## Versión 361 — Verificar lee el resultado impreso por su etiqueta (2026-10-02)
 
 - `verificar.mjs`: si la línea que extraer marcó como "resultado del ejercicio" dice "antes de impuestos", se toma como resultado antes de impuestos (lectura 1), no como final. Caso: Fortaleza CEIF 2023-2025 (las notas hacen de estado), donde se restaba el impuesto a "Utilidad contable antes de impuesto". Medido: UC 16 años idéntico; Fortaleza 2023, 2024 y 2025 pasan a cerrar, 2021 sigue cerrando (por la lectura 1).

@@ -174,15 +174,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     return null;
   };
 
-  // escala de cada bloque (la de extraer.mjs; si "no se sabe", la de localizar.mjs; si tampoco, unidades y se avisa)
+  // filas con su valor en millones (año actual y anterior). armar() se usa también para el documento vecino (chequeo 4b). `k` es el factor
+  // de la escalera de escala (abajo): multiplica TODO el documento, así que las diferencias entre bloques (1. FC Köln) se conservan.
+  function armar(F, U, conNotas = false, k = 1) {
   const escalaDe = new Map((F.escalas || []).map((x) => [x.bloque, x.escala]));
-  const mult = (b) => MULT[escalaDe.get(b)] ?? MULT[U.escala] ?? 1e-6;
-  if ([...escalaDe.values()].includes('no se sabe') && !MULT[U.escala]) notas.push('escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)');
-
-  // filas con su valor en millones (año actual y anterior). armar() se usa también para el documento vecino (chequeo 4b).
-  function armar(F, U, conNotas = false) {
-  const escalaDe = new Map((F.escalas || []).map((x) => [x.bloque, x.escala]));
-  const mult = (b) => MULT[escalaDe.get(b)] ?? MULT[U.escala] ?? 1e-6;
+  const mult = (b) => (MULT[escalaDe.get(b)] ?? MULT[U.escala] ?? 1e-6) * k;
   const pagDe = (bloque) => U.bloques?.[bloque]?.pagina ?? null;
   const filas = (F.filas || []).map((f) => ({ ...f, pagina: pagDe(f.bloque), M: (parseNumber(f.actual) ?? NaN) * mult(f.bloque), A: f.anterior != null ? (parseNumber(f.anterior) ?? NaN) * mult(f.bloque) : null, u: unidad(f.actual, mult(f.bloque)) }));
   const estado = filas.filter((f) => !f.detalla_a && (F.ubicacion?.estado || []).includes(f.bloque));
@@ -225,7 +221,66 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   };
   return { filas, estado, lineasDeLado, mult };
   }
-  const { filas, estado, lineasDeLado } = armar(F, U, true);
+
+  // EL DOCUMENTO VECINO DEL CLUB (año siguiente dy=1 o anterior dy=-1), si ya pasó por extraer.mjs: lo usan la escalera de escala y el
+  // chequeo 4b. Su factor es el que resolvió SU propia escalera (queda en su .verificacion.json); `anclado` = su escala es conocida (la
+  // declara, escalón 0, o la resolvió por el escalón 1). Uno que dice "no se sabe" y no la resolvió no puede proponerle escala a otro.
+  const vecinoDe = (dy) => {
+    if (!year) return null;
+    const carpeta = pdf.split('/').slice(0, 3).join('/');
+    // el año del otro documento: su fecha de cierre o, si no la tiene, la deducida de sus vecinos (Versión 344: UC 2010 contra 2011)
+    const anioDe = (x) => (x.periodo?.cierre ? Number(x.periodo.cierre.slice(0, 4)) : cierrePorVecinos(x.pdf, registro)?.anio ?? null);
+    // De los documentos del club con ese año, el que pasó por extraer. Hasta la Versión 361 se tomaba el PRIMERO del año y, si no tenía
+    // .filas.json, no había chequeo: Fortaleza CEIF 2023 nunca se comparó con 2024 porque el primero de 2024 es certificacion-ef-2024.pdf.
+    const filasDe = (x) => resolve(ROOT, derivado(x.md, '.filas.json', { crear: false }));
+    const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && x.md && existsSync(filasDe(x)) && anioDe(x) === year + dy);
+    if (!otro) return null;
+    const pF2 = filasDe(otro);
+    const pU2 = resolve(ROOT, derivado(otro.md, '.ubicacion.json', { crear: false })); const U2 = existsSync(pU2) ? JSON.parse(readFileSync(pU2, 'utf8')) : {};
+    const pV2 = resolve(ROOT, derivado(otro.md, '.verificacion.json', { crear: false })); const esc2 = existsSync(pV2) ? JSON.parse(readFileSync(pV2, 'utf8')).escala : null;
+    const k2 = !MULT[U2.escala] && esc2?.escalon === 1 ? esc2.factor : 1;
+    return { otro, k2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
+  };
+  // compara los ingresos del año en común (mi columna actual con la "año anterior" del siguiente, o al revés) con mi documento a escala k
+  const compararVecino = (dy, V2, k) => {
+    const [campoMio, campoSuyo] = dy === 1 ? ['M', 'A'] : ['A', 'M'];
+    const sumaDe = (arr, c) => arr.reduce((a, f) => a + (f[c] || 0), 0);
+    const mio = sumaDe(armar(F, U, false, k).lineasDeLado('ingreso', campoMio), campoMio); const suyo = sumaDe(V2.A2.lineasDeLado('ingreso', campoSuyo), campoSuyo);
+    return { mio, suyo, ok: suyo ? cerca(mio, suyo, 0.02) : null };
+  };
+  const vecinosDoc = [[1, vecinoDe(1)], [-1, vecinoDe(-1)]].filter(([, v]) => v);
+
+  // ESCALERA DE ESCALA (Versión 362, diseño aprobado por Guido el 2026-10-01). Caso que la originó: Fortaleza CEIF 2023 y 2024 dicen
+  // "Expresados en pesos colombianos" (.md 2024 L1125) y las cifras son miles; extraer/localizar dejaron "no se sabe" y se leían en unidades
+  // (ingresos 2024 = 12,2 millones). El documento de 2025 declara miles (L1149) y repite 2024 como 12.206 millones. Peligro: 2023 y 2024
+  // coinciden ENTRE SÍ en la escala equivocada; por eso solo propone un vecino ANCLADO (la declara o ya la resolvió acá), y la cadena se arma
+  // procesando los años desde el que declara (2025 -> 2024 -> 2023, el orden de la lista del lote).
+  //   ESCALÓN 0  la declarada: la de cada bloque (extraer.mjs); si "no se sabe", la del documento (localizar.mjs). Si el documento la
+  //              declara, manda: el escalón 1 nunca la pisa.
+  //   ESCALÓN 1  solo si el documento dice "no se sabe": PROPONE la del año vecino anclado, si sus importes dan exactamente x1.000 o
+  //              x1.000.000 (todo el documento por ese factor).
+  //   COMPUERTA  la misma del chequeo 4b: con la escala propuesta, la columna del año vecino coincide (ingresos ±2%). El resultado no
+  //              cambia de veredicto (cerrar es invariante a la escala del documento entero). Pasa -> se adopta; no -> unidades, como antes.
+  // Queda escrito en el .verificacion.json: escala { valor, escalon, factor, de }.
+  let kEsc = 1; let escala = { valor: MULT[U.escala] ? U.escala : 'no se sabe', escalon: 0, factor: 1, de: null };
+  if (!MULT[U.escala]) {
+    for (const [dy, v] of vecinosDoc.filter(([, v]) => v.anclado)) {
+      const base = compararVecino(dy, v, 1);
+      if (base.ok !== false || !base.mio) continue;
+      const k = [1000, 1e6].find((x) => cerca(base.mio * x, base.suyo, 0.02));
+      if (!k) continue;
+      if (compararVecino(dy, v, k).ok !== true) continue; // la compuerta
+      kEsc = k; escala = { valor: k === 1000 ? 'miles' : 'millones', escalon: 1, factor: k, de: v.otro.pdf.split('/').pop() };
+      notas.push(`escala: el documento no la declara; se tomó ${escala.valor} del año vecino (${escala.de}), con el que coincide x${k} (escalón 1)`);
+      break;
+    }
+  }
+  // escala de cada bloque para los totales impresos (la misma de armar)
+  const escalaDe = new Map((F.escalas || []).map((x) => [x.bloque, x.escala]));
+  const mult = (b) => (MULT[escalaDe.get(b)] ?? MULT[U.escala] ?? 1e-6) * kEsc;
+  if (escala.escalon === 0 && [...escalaDe.values()].includes('no se sabe') && !MULT[U.escala]) notas.push('escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)');
+
+  const { filas, estado, lineasDeLado } = armar(F, U, true, kEsc);
   const fin = estado.filter((f) => f.lado === 'financiero' && f.tipo === 'renglon'); const imp = estado.filter((f) => f.lado === 'impuesto' && f.tipo === 'renglon');
   const suma = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
   const conSigno = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
@@ -325,17 +380,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // transcripto, el documento del AÑO SIGUIENTE, cuya columna "año anterior" es este año). Si ese documento (o el del año anterior) ya pasó
   // por extraer.mjs, sus columnas se comparan con las de este. Por eso conviene procesar años CONSECUTIVOS del mismo club en el mismo lote.
   const vecinos = [];
-  if (year) for (const [dy, campoMio, campoSuyo] of [[1, 'M', 'A'], [-1, 'A', 'M']]) {
-    const carpeta = pdf.split('/').slice(0, 3).join('/');
-    // el año del otro documento: su fecha de cierre o, si no la tiene, la deducida de sus vecinos (Versión 344: UC 2010 contra 2011)
-    const anioDe = (x) => (x.periodo?.cierre ? Number(x.periodo.cierre.slice(0, 4)) : cierrePorVecinos(x.pdf, registro)?.anio ?? null);
-    const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && x.md && anioDe(x) === year + dy);
-    const pF2 = otro ? resolve(ROOT, derivado(otro.md, '.filas.json', { crear: false })) : null;
-    if (!pF2 || !existsSync(pF2)) continue;
-    const pU2 = resolve(ROOT, derivado(otro.md, '.ubicacion.json', { crear: false }));
-    const A2 = armar(JSON.parse(readFileSync(pF2, 'utf8')), existsSync(pU2) ? JSON.parse(readFileSync(pU2, 'utf8')) : {});
-    const mio = suma(lineasDeLado('ingreso', campoMio), campoMio); const suyo = suma(A2.lineasDeLado('ingreso', campoSuyo), campoSuyo);
-    const ok = suyo ? cerca(mio, suyo, 0.02) : null;
+  // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
+  for (const [dy, v] of vecinosDoc) {
+    const { otro } = v;
+    const { mio, suyo, ok } = compararVecino(dy, v, kEsc);
     vecinos.push(ok);
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });
@@ -391,7 +439,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
-  const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, cola, chequeos, notas,
+  const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, escala, cola, chequeos, notas,
     reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado, faltasDesglose: reintentos.length ? reintentos : null, // faltasDesglose: siempre, para tools/diagnostico-desglose.mjs
     // resultadoParaCargar (Versión 344): si cerró contra "resultado antes de impuestos", el resultado del ejercicio es ese más el impuesto tal
     // como está impreso (UC 2013: 57.521 + 163.095 = 220.616); cargar.mjs hace su tie-out contra este número.
@@ -440,13 +488,21 @@ function avisarRegistro(md, nRubros, registro) {
   return true;
 }
 
+// UNA LISTA, CON LA CADENA DE ESCALA (Versión 362). Si algún documento resolvió su escala por el escalón 1 (la del año vecino), los que ya se
+// verificaron antes en la misma lista se compararon contra él SIN resolver: se repite la pasada entera, una vez (gratis, determinista). Caso
+// real: Fortaleza CEIF, lista 2025 -> 2024 -> 2023; en la primera pasada 2024 se comparó con el 2023 todavía en unidades.
+export function verificarLista(docs, opts) {
+  const pasada = () => docs.map((pdf) => [pdf, verificar(pdf, opts)]);
+  const rs = pasada();
+  return rs.some(([, r]) => r.escala?.escalon === 1) ? pasada() : rs;
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const docs = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : ARGS.filter((a) => !a.startsWith('--'));
   if (!docs.length) { console.error('Uso: node tools/verificar.mjs "<pdf>" [--rubros]  |  --lista <archivo> [--rubros]'); process.exit(1); }
   const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   const sitio = loadSite();
-  for (const pdf of docs) {
-    const r = verificar(pdf, { registro, sitio, escribirRubros: ARGS.includes('--rubros') });
+  for (const [pdf, r] of verificarLista(docs, { registro, sitio, escribirRubros: ARGS.includes('--rubros') })) {
     if (r.error) { console.log(`  ${pdf}: ${r.error}`); continue; }
     console.log(`\n## ${pdf}: ${r.estado.toUpperCase()}  (ingresos ${r.totales.ingresos} · gastos ${r.totales.gastos} · resultado impreso ${r.totales.resultadoImpreso})`);
     for (const c of r.chequeos) console.log(`   ${c.ok === true ? 'ok ' : c.ok === false ? 'NO ' : ' - '} ${c.nombre}: ${c.detalle}`);
