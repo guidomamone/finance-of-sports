@@ -404,13 +404,18 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     }
     if (rg?.descartar) { f.destino = 'excluida'; f.fuenteCat = 'Guido la descartó en la cola'; return f; }
     const nl = norm(r.label);
+    const verificadaConLado = String(r.origen || '').startsWith('verificacion') && !!r.tside;
     // Una fila que NO está en la lista de rubros de la etapa 3 y de la que el documento no dice el lado: la etapa 3 la descartó como no-rubro
     // (partidas de balance, cuadros de bienes de uso que el ancla abrió por error). No se carga y no cuenta como "sin categoría".
     if (r.destinoForzado) f.destino = r.destinoForzado; // proceso nuevo: financiero / impuesto decididos por extraer.mjs
     else if (!f.enLista && !f.ladoDoc) f.destino = 'no-rubro';
     // Resultado financiero e impuesto a las ganancias: al fiscalYearMeta, salvo que el precedente del club diga otra cosa (su convención).
-    else if (f.escalon !== 0 && (IMPUESTO_GANANCIAS_RE.test(nl) || IMPUESTO_SOLO_RE.test(nl))) f.destino = 'tax';
-    else if (f.escalon !== 0 && FINANCIERO_RE.test(nl) && (!f.cat || f.cat === 'no_es_rubro' || ['other_income', 'other_expenses', 'exceptional_items', 'admin_general_expense'].includes(f.cat))) f.destino = 'netInterest';
+    // DESTINO POR PALABRAS (Versión 375, escalón b de "lo que cerró en la etapa 6 no se vuelve a decidir"): "impuesto" / "intereses" en la
+    // etiqueta mueven a impuesto o financiero solo una fila SIN lado. Una fila que viene de la verificación con lado ya cerró de ese lado.
+    // Casos: Fortaleza 2025 "Impuestos" 11.98 (gasto del equipo profesional) iba a impuesto a las ganancias; 2019 "Intereses por mora"
+    // 55.745 (otros ingresos) iba a financiero.
+    else if (!verificadaConLado && f.escalon !== 0 && (IMPUESTO_GANANCIAS_RE.test(nl) || IMPUESTO_SOLO_RE.test(nl))) f.destino = 'tax';
+    else if (!verificadaConLado && f.escalon !== 0 && FINANCIERO_RE.test(nl) && (!f.cat || f.cat === 'no_es_rubro' || ['other_income', 'other_expenses', 'exceptional_items', 'admin_general_expense'].includes(f.cat))) f.destino = 'netInterest';
     else if (f.cat === 'no_es_rubro') f.destino = 'excluida';
     else if (!f.cat || !ladoDeCat(f.cat)) f.destino = 'sin-categoria';
     else if (!aceptable(f)) {

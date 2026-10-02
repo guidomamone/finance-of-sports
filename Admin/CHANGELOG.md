@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 376 — Etapa 8: "impuesto" / "intereses" en la etiqueta no mueven una fila verificada con lado (2026-10-02)
+
+- `cargar.mjs`: el destino por palabras (a impuesto o a financiero) solo para filas sin lado; una fila que viene de la verificación con lado se queda de ese lado.
+- Casos: Fortaleza 2025 "Impuestos" 11.98 (gasto) iba a impuesto a las ganancias; 2019 "Intereses por mora" 55.745 (ingreso) iba a financiero.
+- Medido: propuesta de carga de UC idéntica (16 de 16); en Fortaleza el financiero de la carga coincide con el de la verificación.
+
 ## Versión 375 — Etapa 6 → 8: financiero e impuesto se escriben como su efecto en el resultado (2026-10-02)
 
 - `verificar.mjs`: `financiero` e `impuesto` del `.verificacion.json` llevan el signo con que cerró el resultado (lectura con signos invertidos, impuesto "restado", ajuste con impuesto deducido); `signosCarga` dice qué se invirtió. `cargar.mjs` los suma tal cual. Escalón "lo que cerró en la etapa 6 no se vuelve a decidir en la 8" (aprobado por Guido).
