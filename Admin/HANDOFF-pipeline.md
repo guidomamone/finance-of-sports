@@ -32,7 +32,7 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 | Año | Hoy | Qué falta |
 |---|---|---|
 | 2020, 2021, 2024, 2025 | el resultado CIERRA (notas = estado, contra la conciliación del impuesto); 2024-2025 confirmados por el año vecino y con el resultado final impreso | alta, cola |
-| 2023 | CERRADO por decisión de Guido (Versión 365): resultado final 1.021.768 de patrimonio, impuesto deducido 588.049. No volver a abrirlo | alta |
+| 2023 | cierra por ajuste manual (`node tools/ajustes.mjs`) | alta |
 | 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
 | 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
 | 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
@@ -371,6 +371,12 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Si un club no está o dice "no se sabe" y la categoría da 0: pregunta de sí o no en la cola. Guido contesta o manda un agente a buscar; la
   respuesta queda en el perfil para todos los años del club.
 
+### Ajustes manuales (Versión 366)
+
+- `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
+  (`resultado-final`, `sin-dudas`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+- Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
+
 ### Cola humana
 
 - Archivo: `Admin/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
@@ -391,9 +397,6 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ## Decisiones
 
 Tomadas por Guido:
-
-0. Fortaleza CEIF 2023 se carga con el resultado de la nota de patrimonio (1.021.768) y el impuesto deducido (588.049): cerrado por la fuerza el
-   2026-10-02, no vuelve a la cola (las respuestas están en `Admin/cola-revision.jsonl`; si se re-extrae 2023 y la IA reformula una duda, aceptarla).
 
 1. Una fila categorizada con confianza menor a 0,80 no se carga sola: va a la cola.
 2. Un total de ingresos o gastos que el documento no imprime se acepta si cierra con el resultado, y se busca un segundo chequeo.
