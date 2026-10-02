@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 357 — Caja y deuda: una escalera con una sola compuerta (2026-10-01)
+
+- `caja-deuda.mjs` rehecho a pedido de Guido ("siempre escalera, sin reglas una encima de otra"): una escala por documento (la del estado de resultados contra lo cargado); los escalones 0 (precedente del club), 1 (vocabulario, con "ninguna fila" = deuda 0) y 2 (IA, solo números de línea) solo PROPONEN filas; una sola compuerta para los tres (año anterior cargado o documento siguiente, mismas filas, columna del año anterior). Fuera: escala propia por escalón, confirmaciones distintas por escalón, el "ninguna" de la IA, la deduplicación por importe. Valor absoluto al leer cualquier fila.
+- Medido (205 años, respuestas de IA guardadas): deuda 10 iguales / 8 distintos / 187 sin dato; caja 50 / 4 / 151. Los distintos que pasan la compuerta: compuerta circular (Bahia 2025, Tottenham 2025), número del año no confirmado (Espanyol 2025 "13.950,790,99", Flamengo 2024 dos columnas pegadas), lectura del balance (U. de Chile 2022, Wolves 2025), y 6 que no son error del script (Colo-Colo con 0 de relleno en el sitio; AZ, PSV, Athletico con otro criterio en lo cargado a mano).
+
 ## Versión 356 — Caja y deuda como comando aparte, sobre clubes ya publicados (2026-10-01)
 
 - `caja-deuda.mjs --club <id> [--ejecutar] [--escribir]` (decisión de Guido: "dos scripts"; caja y deuda no van en el lote): completa `grossDebt`/`cash` solo donde el sitio tiene null, de más viejo a más nuevo (un dato completado cuenta como cargado para el año siguiente); `--escribir` reemplaza solo esos null en `data/<club>-data.js` con un comentario de la fuente, y publica (ASSET_V, generadores, audit.js; revierte si da P0/P1).

@@ -11,38 +11,40 @@
 // precedente, el criterio por defecto es DEUDA FINANCIERA (préstamos y obligaciones bancarias/financieras, corriente + no corriente), nunca el
 // total del pasivo (ok de Guido, 2026-10-01). Caja: efectivo y equivalentes / caja y bancos / disponibilidades.
 //
-// LA ESCALERA (cada dato por separado; si ninguno da, null y un aviso, y la carga sigue):
-//   ESCALÓN 0  precedente del club: en otro año ya cargado del club, qué filas del balance suman lo que tiene el sitio (1 a 3 filas, por
-//              familia de etiqueta: tools/vocabulario.mjs claveFamilia). En este documento se buscan las mismas filas y se suman.
-//   ESCALÓN 1  vocabulario (tools/vocabulario.mjs CAJA / DEUDA_FINANCIERA) en las páginas del balance: si hay UNA sola lectura posible.
-//   ESCALÓN 2  IA (Claude por API, ~US$ 0,02 por documento, una llamada para caja y deuda juntas, solo si 0 y 1 no dieron nada): elige las
-//              LÍNEAS del balance y dice la escala con la frase del documento que la dice. Las sumas las hace el script, con las cifras de esas
-//              líneas en el .md (nunca un número de la IA); se descarta si una línea no es una fila del balance o la frase de la escala no está en
-//              el balance. Se acepta confirmada por el año anterior cargado o por el documento siguiente (la escala ya viene con su evidencia).
-//              "No hay deuda financiera" + total del pasivo en el balance = 0. Respuesta guardada en Generados/<doc>.caja-deuda-ia.json.
-//   nada       null + aviso.
+// LA ESCALERA (Versión 357, rehecha a pedido de Guido: "SIEMPRE ESCALERA, sin reglas una encima de otra"). Cada dato por separado.
+//
+//   ESCALA   UNA por documento, para todos los escalones: la del estado de resultados de ESE documento, la que hace coincidir sus cifras con
+//            los rubros ya cargados en el sitio (factorPorIngresos). Ningún escalón trae su propia escala.
+//   ESCALÓN 0  precedente del club: qué filas del balance de otro año del club (con la escala de ESE documento) suman lo cargado; se
+//              PROPONEN las filas con las mismas familias de etiqueta en este documento.
+//   ESCALÓN 1  vocabulario (vocabulario.mjs CAJA / DEUDA_FINANCIERA): se PROPONEN las filas del balance con esos nombres (una sola por
+//              familia). "Ninguna fila" es una propuesta para la deuda (= 0, decisión de Guido) si el balance está completo (tiene su total del
+//              pasivo) y el club usa filas de deuda financiera en otros años.
+//   ESCALÓN 2  IA (Claude, ~US$ 0,03 por documento, una llamada para caja y deuda, solo si 0 y 1 no pasaron): PROPONE números de línea del
+//              balance. Nada más (ni importes, ni escala, ni "no hay").
+//   COMPUERTA  la MISMA para los tres: valor = suma de las cifras de las filas propuestas x la escala; y un año vecino tiene que decir lo mismo:
+//              el AÑO ANTERIOR CARGADO (las mismas filas, en su columna del año anterior, dan lo cargado) o el DOCUMENTO SIGUIENTE (las mismas
+//              familias, en su columna del año anterior, dan este valor). Pasa si al menos uno coincide y ninguno contradice. Si no pasa, el
+//              siguiente escalón. Si ninguno pasa: null. Nunca frena.
+//   LEER UNA FILA: el importe en valor absoluto (hay balances que imprimen el pasivo entre paréntesis: Tottenham 2023-24).
+// Respuesta de la IA guardada en Generados/<doc>.caja-deuda-ia.json.
 // Solo se leen las páginas del BALANCE: las que tienen el título (TITULO_BALANCE) o un total del activo / del pasivo, sin el título del flujo
 // de efectivo. La columna es la PRIMERA cifra de la fila que no sea una referencia a nota (un entero de 1-2 dígitos al principio).
 //
-// LA ESCALA. El sitio guarda millones de la moneda del documento. El escalón 0 usa la escala con la que el precedente cerró; el escalón 1 la que
-// le pasa quien llama (`factor`: la del estado de resultados de ese documento, que verificar.mjs ya conoce). Sin factor, el escalón 1 no da número.
-//
 // USO:
-//   node tools/caja-deuda.mjs "<pdf o md>" --club <clubId> [--anio 2024] [--factor 0.001]    qué leería (con el precedente de los otros años)
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle]                           MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 //
 // --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
 // recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
-// a mano). Corrido después de cargar, el año anterior ya está en el sitio, y eso es lo que confirma el escalón 1. Un valor que se completa en esta
+// a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
 // misma corrida cuenta como cargado para el año siguiente. Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
 // data/<club>-data.js con un comentario de dónde salió cada dato, sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte.
 //
 // --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo
 // y lo compara con lo cargado a mano. El precedente sale SOLO de los OTROS años del club (nunca del mismo: si no, se aprendería la respuesta).
-// El factor del escalón 1 sale de la escala del estado de resultados de ese documento contra lo cargado (la misma información que en el lote
-// trae verificar.mjs). No escribe nada.
+// Misma escalera y misma compuerta que --club. No escribe nada.
 // ============================================================================
 
 import { readFileSync, existsSync, writeFileSync } from 'node:fs';
@@ -94,6 +96,7 @@ export function filasDelMd(md) {
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
     while (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
+    nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)
     filas.push({ linea: i + 1, pagina, etiqueta, norm: normalizar(etiqueta), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
@@ -109,8 +112,7 @@ export function filasDelMd(md) {
   }
   // La página siguiente a una del balance también (el pasivo suele seguir), si no es el flujo.
   for (const p of [...balance]) { const n = normalizar((textoPag.get(p + 1) || '').slice(0, 1500)); if (textoPag.has(p + 1) && !FLUJO_O_PATRIMONIO_RE.test(n)) balance.add(p + 1); }
-  // (Probado y DESCARTADO en la Versión 352: leer solo el "balance principal", el primer tramo de páginas seguidas. Arreglaba U. de Chile 2022,
-  // pero 13 cajas que salían bien dejaban de salir: manta corta. Ver la deduplicación por importe en porVocabulario.)
+  // (Probado y DESCARTADO en la Versión 352: leer solo el "balance principal", el primer tramo de páginas seguidas: manta corta.)
   for (const f of filas) f.balance = balance.has(f.pagina);
   return filas;
 }
@@ -123,124 +125,100 @@ function esTotalBalance(n) {
   return resto.length <= 3; // "y patrimonio", "corrientes", "e patrimonio liquido": sí; "liquidos en moneda extranjera": no
 }
 const dedupe = (fs) => { const vistos = new Set(); return fs.filter((f) => { const k = `${f.familia}|${f.valor}`; if (vistos.has(k)) return false; vistos.add(k); return true; }); };
+const r6 = (x) => Math.round(x * 1e6) / 1e6;
+const cita = (f) => ({ etiqueta: f.etiqueta, importe: f.valor, anterior: f.cifras.length > 1 ? f.cifras[1] : null, pagina: f.pagina, linea: f.linea });
+const filtroDe = (cual) => (cual === 'cash' ? () => true : (f) => !CAJA_RE.test(f.norm));
+const TOTAL_PASIVO_PLURAL_RE = /^[\s*]*total (?:de |del )?pasivos?\b/u;
 
-// ESCALÓN 0, aprender: qué filas del balance (1 a `max`) suman el valor cargado. Devuelve {familias, factor} si hay UNA sola combinación (la más
-// chica); si hay varias del mismo tamaño con familias distintas, no hay precedente (ambiguo).
-export function aprender(filas, valorSitio, { max = 3, filtro = () => true } = {}) {
+// ================================================================ LA ESCALERA (ver cabecera)
+
+// Qué filas (1 a `max`) del balance de un año del club, con la escala de ESE documento, suman lo cargado. Las familias si hay UNA sola
+// combinación (la más chica); si hay varias, ninguna (ambiguo).
+export function aprender(filas, valorSitio, factor, { max = 3, filtro = () => true } = {}) {
+  if (!factor) return null;
   const cand = dedupe(filas.filter((f) => f.balance && !esTotal(f.etiqueta) && f.valor > 0 && filtro(f))).slice(0, 80);
   for (let k = 1; k <= max; k++) {
+    if (k === 3 && cand.length > 45) continue; // combinatoria: con muchas filas, solo 1 y 2
     const hallados = new Map();
     const rec = (desde, elegidas, suma) => {
-      if (elegidas.length === k) {
-        for (const fac of FACTORES) if (Math.abs(suma * fac - valorSitio) <= TOL(valorSitio)) {
-          const fams = [...new Set(elegidas.map((f) => f.familia))].sort(); if (fams.length !== k) continue;
-          hallados.set(fams.join(' + ') + '|' + fac, { familias: fams, factor: fac, filas: elegidas });
-        }
-        return;
-      }
+      if (elegidas.length === k) { if (Math.abs(suma * factor - valorSitio) <= TOL(valorSitio)) { const fams = [...new Set(elegidas.map((f) => f.familia))].sort(); if (fams.length === k) hallados.set(fams.join(' + '), fams); } return; }
       for (let j = desde; j < cand.length; j++) rec(j + 1, [...elegidas, cand[j]], suma + cand[j].valor);
     };
-    if (k === 3 && cand.length > 45) continue; // combinatoria: con muchas filas, solo 1 y 2
     rec(0, [], 0);
-    const distintos = new Map([...hallados.values()].map((h) => [h.familias.join(' + '), h]));
-    if (distintos.size === 1) return [...distintos.values()][0];
-    if (distintos.size > 1) return { ambiguo: [...distintos.keys()] };
+    if (hallados.size === 1) return [...hallados.values()][0];
+    if (hallados.size > 1) return null;
+  }
+  return null;
+}
+// Las familias que usa el club: las del primer precedente (el año cargado más cercano) que se puede aprender.
+export function familiasDelClub(precedentes, cual) {
+  for (const p of precedentes) {
+    if (!p.valor) continue;
+    const familias = aprender(p.filas, p.valor, p.factor, { max: cual === 'cash' ? 2 : 3, filtro: filtroDe(cual) });
+    if (familias) return { familias, anio: p.anio };
   }
   return null;
 }
 
-// ESCALÓN 0, aplicar: las mismas familias en este documento (cada una, su primera aparición en el balance) sumadas, por el factor.
-function aplicarPrecedente(filas, prec) {
-  const elegidas = [];
-  for (const fam of prec.familias) { const f = filas.find((x) => x.balance && x.familia === fam); if (!f) return null; elegidas.push(f); }
-  // Una misma familia corriente y no corriente (UC: "Otros pasivos financieros, corrientes" / ", no corrientes") ya son familias distintas.
-  return { valor: r6(elegidas.reduce((a, f) => a + f.valor, 0) * prec.factor), factor: prec.factor, filas: elegidas.map(cita) };
+// ESCALÓN 0: las filas de este documento con las familias del club.
+function propuestaPrecedente(filas, club) {
+  if (!club) return null;
+  const elegidas = []; for (const fam of club.familias) { const f = filas.find((x) => x.balance && x.familia === fam); if (!f) return null; elegidas.push(f); }
+  return { escalon: 0, filas: elegidas, como: `precedente del club (${club.anio}: ${club.familias.join(' + ')})` };
 }
-
-// ESCALÓN 1: vocabulario. Caja: UN solo valor distinto entre las filas que matchean. Deuda: la suma de las filas distintas que matchean (corriente
-// + no corriente), solo si ninguna familia aparece con dos valores distintos (eso sería columna del año anterior o una nota que la repite).
-function porVocabulario(filas, cual, factor) {
-  if (!factor) return null;
+// ESCALÓN 1: las filas del balance con nombre de caja / deuda financiera (una por familia), o "ninguna fila" de deuda (= 0).
+function propuestaVocabulario(filas, cual, club) {
   const re = cual === 'cash' ? CAJA_RE : DEUDA_FINANCIERA_RE;
-  const m = filas.filter((f) => f.balance && re.test(f.norm) && !esTotal(f.etiqueta) && f.valor >= 0);
-  if (!m.length) return null;
-  const unicas = dedupe(m);
-  if (cual === 'cash') {
-    const valores = [...new Set(unicas.map((f) => f.valor))];
-    if (valores.length !== 1) return { ambiguo: unicas.map((f) => `${f.etiqueta} ${f.valor}`) };
-    return { valor: r6(valores[0] * factor), factor, filas: [cita(unicas[0])] };
+  const m = dedupe(filas.filter((f) => f.balance && re.test(f.norm) && !esTotal(f.etiqueta)));
+  if (!m.length) {
+    const conTotalPasivo = filas.some((f) => f.balance && esTotalBalance(f.norm) && (TOTAL_PASIVO_RE.test(f.norm) || TOTAL_PASIVO_PLURAL_RE.test(f.norm)));
+    if (cual === 'deuda' && conTotalPasivo && club && club.familias.every((fam) => DEUDA_FINANCIERA_RE.test(fam))) return { escalon: 1, ninguna: true, familias: club.familias, filas: [], como: 'vocabulario: ninguna fila de deuda financiera (balance completo) = 0' };
+    return null;
   }
-  const porFam = new Map(); for (const f of unicas) { if (!porFam.has(f.familia)) porFam.set(f.familia, []); porFam.get(f.familia).push(f); }
-  if ([...porFam.values()].some((xs) => xs.length > 1)) return { ambiguo: unicas.map((f) => `${f.etiqueta} ${f.valor}`) };
-  // El mismo importe con otra etiqueta es el mismo renglón repetido (una nota que lo vuelve a mostrar): cuenta una vez. U. de Chile 2022: "Otros
-  // pasivos financieros, corrientes" 490.377 (pág. 6 del visor) y "Otros pasivos financieros" 490.377 (nota, pág. 82): la deuda iba dos veces.
-  const porImporte = []; for (const f of unicas) if (!porImporte.some((g) => g.valor === f.valor)) porImporte.push(f);
-  return { valor: r6(porImporte.reduce((a, f) => a + f.valor, 0) * factor), factor, filas: porImporte.map(cita) };
+  const porFam = new Map(); for (const f of m) porFam.set(f.familia, [...(porFam.get(f.familia) || []), f]);
+  if ([...porFam.values()].some((xs) => xs.length > 1)) return null; // una familia con dos importes: no hay UNA propuesta
+  if (cual === 'cash' && m.length > 1) return null;
+  return { escalon: 1, filas: m, como: 'vocabulario' };
+}
+// ESCALÓN 2: las líneas que eligió la IA (tienen que ser filas del balance).
+function propuestaIA(filas, ia, cual) {
+  const lineas = (cual === 'cash' ? ia?.caja : ia?.deuda)?.lineas || []; if (!lineas.length) return null;
+  const elegidas = lineas.map((n) => filas.find((f) => f.linea === n && f.balance)); if (elegidas.some((f) => !f)) return null;
+  return { escalon: 2, filas: elegidas, como: 'IA' };
 }
 
-const r6 = (x) => Math.round(x * 1e6) / 1e6;
-const cita = (f) => ({ etiqueta: f.etiqueta, importe: f.valor, anterior: f.cifras.length > 1 ? f.cifras[1] : null, pagina: f.pagina, linea: f.linea });
-
-// VALIDACIÓN (año anterior). Las mismas filas, en su columna del año anterior, por el mismo factor, tienen que dar el valor del año anterior
-// (el cargado en el sitio, o la lectura del documento de ese año). Es lo que ataja los errores de escala (Alianza Lima 2023: 1.776 leído en
-// millones cuando el sitio tiene 3,37) y de columna. Sin valor del año anterior para comparar: 'sin-referencia'.
-function validarAnterior(r, anterior) {
-  if (anterior == null) return 'sin-referencia';
-  if (r.filas.some((f) => f.anterior == null)) return 'sin-columna';
-  const prev = r.filas.reduce((a, f) => a + f.anterior, 0) * r.factor;
-  return Math.abs(prev - anterior) <= TOL(anterior) ? 'ok' : `no-coincide (${r6(prev)} contra ${anterior})`;
-}
-// La otra punta (año vecino): en el documento del AÑO SIGUIENTE, las mismas filas (por familia, en su balance) en la columna del año anterior,
-// por el mismo factor, tienen que dar esta lectura. Es el chequeo de año vecino de verificar.mjs, para el balance.
-function validarSiguiente(r, filasSig) {
-  if (!filasSig) return 'sin-referencia';
-  const sig = []; for (const f of r.filas) { const g = filasSig.find((x) => x.balance && x.familia === claveFamilia(f.etiqueta) && x.cifras.length > 1); if (!g) return 'sin-columna'; sig.push(g); }
-  const prev = sig.reduce((a, g) => a + g.cifras[1], 0) * r.factor;
-  return Math.abs(prev - r.valor) <= TOL(r.valor) ? 'ok' : `no-coincide (${r6(prev)} en el documento siguiente)`;
+// LA COMPUERTA, la misma para los tres escalones.
+export function compuerta(prop, { factor, anterior = null, siguiente = null }) {
+  if (!factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
+  const valor = prop.ninguna ? 0 : r6(prop.filas.reduce((a, f) => a + f.valor, 0) * factor);
+  const chequeos = []; // [nombre, coincide, detalle]
+  if (anterior != null) {
+    if (prop.ninguna) chequeos.push(['año anterior', Math.abs(anterior) <= TOL(0), `cargado ${anterior}`]);
+    else if (prop.filas.every((f) => f.cifras.length > 1)) { const prev = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * factor); chequeos.push(['año anterior', Math.abs(prev - anterior) <= TOL(anterior), `${prev} contra ${anterior} cargado`]); }
+  }
+  if (siguiente) {
+    if (prop.ninguna) { const fs = siguiente.filter((x) => x.balance && prop.familias.includes(x.familia) && x.cifras.length > 1); chequeos.push(['documento siguiente', fs.every((x) => x.cifras[1] === 0), fs.length ? `${fs.map((x) => x.cifras[1]).join(' + ')} en el siguiente` : 'el siguiente tampoco tiene esas filas']); }
+    else { const fs = prop.filas.map((f) => siguiente.find((x) => x.balance && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * factor); chequeos.push(['documento siguiente', Math.abs(prev - valor) <= TOL(valor), `${prev} en el siguiente`]); } }
+  }
+  const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
+  if (malos.length) return { ok: false, valor, motivo: `no coincide con ${malos.map((c) => `${c[0]} (${c[2]})`).join(' ni ')}` };
+  if (!buenos.length) return { ok: false, valor, motivo: 'ningún año vecino para comparar' };
+  return { ok: true, valor, validacion: buenos[0][0] };
 }
 
-// La escalera para un dato. `precedentes`: [{anio, valor, filas}] de OTROS años del club con el dato cargado. `anterior`: el valor del año
-// anterior (sitio o documento vecino), para validar.
-// Qué se acepta: escalón 0 validado o sin referencia (el precedente del club ya es la confirmación: midió 45/48 en caja); escalón 1 SOLO validado
-// (sin validar midió 4/28 en deuda y 20/52 en caja, sobre todo por la escala). Lo que no se acepta queda null con el motivo: nunca frena.
-export function leerDato(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null } = {}) {
-  // Confirmado = un año vecino (el anterior cargado o el documento siguiente) lo confirma, y ninguno lo contradice.
-  // El escalón 1 necesita el AÑO ANTERIOR CARGADO: el documento siguiente usa el mismo factor y no ataja un error de escala (medición: Flamengo
-  // 2024, caja 70.557.234 en vez de 70,557, "confirmada" por el documento de 2025). El escalón 0 trae la escala del precedente, que ya cerró.
-  const confirmar = (r, escalon) => { const a = validarAnterior(r, anterior); const b = validarSiguiente(r, siguiente);
-    if (a.startsWith('no-coincide') || b.startsWith('no-coincide')) return { ok: false, motivo: [a, b].filter((x) => x.startsWith('no-')).join('; ') };
-    if (escalon === 1) return { ok: a === 'ok', motivo: a === 'ok' ? 'año anterior' : 'el vocabulario necesita el año anterior cargado para confirmar la escala' };
-    return { ok: a === 'ok' || b === 'ok', motivo: a === 'ok' ? 'año anterior' : b === 'ok' ? 'documento siguiente' : 'ningún año vecino para confirmar' }; };
-  const filtro = cual === 'cash' ? () => true : (f) => !CAJA_RE.test(f.norm);
-  const descartes = []; const familiasPrecedente = [];
-  for (const p of precedentes) {
-    if (p.valor == null || p.valor === 0) continue;
-    const prec = aprender(p.filas, p.valor, { max: cual === 'cash' ? 2 : 3, filtro });
-    if (!prec || prec.ambiguo) continue;
-    familiasPrecedente.push(...prec.familias);
-    const r = aplicarPrecedente(filas, prec);
-    if (!r) continue;
-    const c = confirmar(r, 0);
-    if (c.ok) return { ...r, escalon: 0, validacion: c.motivo, como: `precedente del club (${p.anio}: ${prec.familias.join(' + ')})` };
-    descartes.push(`escalón 0 ${r.valor}: ${c.motivo}`);
+// La escalera para un dato: cada escalón propone, la compuerta decide, y si no pasa se baja. `ia`: la respuesta de la IA (o null).
+export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, ia = null } = {}) {
+  const club = familiasDelClub(precedentes, cual);
+  const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club), ia ? propuestaIA(filas, ia, cual) : null];
+  const intentos = [];
+  for (let e = 0; e < propuestas.length; e++) {
+    const p = propuestas[e];
+    if (!p) { if (e < 2 || ia) intentos.push(`escalón ${e}: sin propuesta`); continue; }
+    const c = compuerta(p, { factor, anterior, siguiente });
+    if (c.ok) return { valor: c.valor, escalon: e, validacion: c.validacion, como: p.como, filas: p.filas.map(cita), club };
+    intentos.push(`escalón ${e} (${c.valor}): ${c.motivo}`);
   }
-  const v = porVocabulario(filas, cual, factor);
-  if (v && !v.ambiguo) {
-    const c = confirmar(v, 1);
-    if (c.ok) return { ...v, escalon: 1, validacion: c.motivo, como: 'vocabulario' };
-    descartes.push(`escalón 1 ${v.valor}: ${c.motivo}`);
-  }
-  // DEUDA 0 (Versión 353, decisión de Guido 2026-10-01: "0"). Un balance COMPLETO sin ninguna fila de deuda financiera es deuda 0, no "sin dato"
-  // (UC 2015: el pasivo son cuentas por pagar, provisiones e impuestos, .md L236-248). Condiciones: el balance tiene su total del pasivo; ninguna
-  // fila del balance es deuda financiera (vocabulario); y el club tiene un precedente aprendido de deuda financiera que acá no aparece.
-  if (cual === 'deuda' && !v && !descartes.length) {
-    const conTotalPasivo = filas.some((f) => f.balance && (TOTAL_PASIVO_RE.test(f.norm) || /^[\s*]*total (?:de |del )?pasivos?\b/u.test(f.norm)) && esTotalBalance(f.norm));
-    // Hace falta un precedente APRENDIDO del club, todo de deuda financiera, que en este documento no aparece. Sin precedente no alcanza: medido
-    // (Versión 353) "sin filas de vocabulario" daba 0 en 25 años con deuda real (Boca, Flamengo, Talleres: su deuda se llama de otra forma).
-    const conPrecedente = familiasPrecedente.length > 0 && familiasPrecedente.every((fam) => DEUDA_FINANCIERA_RE.test(fam));
-    if (conTotalPasivo && conPrecedente) return { valor: 0, escalon: 1, validacion: 'balance completo', factor: null, filas: [], como: 'balance completo sin filas de deuda financiera' };
-  }
-  return { valor: null, escalon: null, familiasPrecedente, como: descartes.length ? descartes.join('; ') : v?.ambiguo ? `ambiguo: ${v.ambiguo.slice(0, 4).join('; ')}` : 'sin filas en el balance' };
+  return { valor: null, escalon: null, como: intentos.join('; '), club };
 }
 
 // ---------------------------------------------------------------- el sitio y los documentos de cada año cargado
@@ -302,85 +280,67 @@ export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false
 }
 
 // De la respuesta de la IA a un dato: las cifras salen de las filas del .md (no de la IA), con chequeos y confirmación por año vecino.
-// El texto de las páginas del balance (normalizado), para comprobar la frase de la escala.
-export function textoBalance(mdText, filas) {
-  const paginas = new Set(filas.filter((f) => f.balance).map((f) => f.pagina)); const PAG = /^---\s*pág\.\s*(\d+)\s*---/i; let pag = 1; const out = [];
-  for (const l of mdText.split('\n')) { const m = l.match(PAG); if (m) { pag = Number(m[1]); continue; } if (paginas.has(pag)) out.push(l); }
-  return normalizar(out.join(' ').replace(/[|*#_]/g, ' '));
-}
-
-export function datoDeIA(ia, filas, cual, { anterior = null, siguiente = null, balanceTxt = '' } = {}) {
-  const parte = cual === 'cash' ? ia.caja : ia.deuda; const factor = FACTOR_ESCALA[ia.escala];
-  const ev = normalizar(ia.escala_evidencia || '');
-  if (parte.ninguna && !parte.lineas.length) {
-    const conTotalPasivo = filas.some((f) => f.balance && esTotalBalance(f.norm) && (TOTAL_PASIVO_RE.test(f.norm) || /^[\s*]*total (?:de |del )?pasivos?\b/u.test(f.norm)));
-    if (cual === 'deuda' && conTotalPasivo) return { valor: 0, escalon: 2, validacion: 'balance completo', filas: [], como: 'IA: el balance no tiene deuda financiera' };
-    return { valor: null, escalon: null, como: 'IA: ninguna (sin total del pasivo para dar 0)' };
-  }
-  const elegidas = parte.lineas.map((n) => filas.find((f) => f.linea === n && f.balance));
-  if (!elegidas.length || elegidas.some((f) => !f)) return { valor: null, escalon: null, como: `IA: línea que no es una fila del balance (${parte.lineas.join(', ')})` };
-  if (!factor) return { valor: null, escalon: null, como: 'IA: sin escala' };
-  // La frase de la escala tiene que estar en el documento (en el balance, o en el encabezado de sus columnas, que filasDelMd no guarda como fila).
-  if (!ev || !balanceTxt.includes(ev.replace(/[|*#_]/g, ' ').replace(/\s+/g, ' ').trim())) return { valor: null, escalon: null, como: 'IA: la frase de la escala no está en el balance' };
-  const r = { valor: r6(elegidas.reduce((a, f) => a + f.valor, 0) * factor), factor, filas: elegidas.map(cita) };
-  const a = validarAnterior(r, anterior); const b = validarSiguiente(r, siguiente);
-  if (a.startsWith('no-coincide') || b.startsWith('no-coincide')) return { valor: null, escalon: null, como: `IA ${r.valor}: ${[a, b].filter((x) => x.startsWith('no-')).join('; ')}` };
-  if (a !== 'ok' && b !== 'ok') return { valor: null, escalon: null, como: `IA ${r.valor}: ningún año vecino para confirmar` };
-  return { ...r, escalon: 2, validacion: a === 'ok' ? 'año anterior' : 'documento siguiente', como: `IA (escala ${ia.escala}: "${ia.escala_evidencia}")` };
-}
-
 // El criterio de deuda que se le pasa a la IA: el del club si hay precedente aprendido, si no el por defecto (sección 14).
 export function criterioDeudaDe(familias) {
   return familias.length ? `el que el club usa en otros años: la suma de las líneas "${familias.join('" + "')}" (o sus equivalentes en este documento).`
     : 'DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).';
 }
 
+// El contexto de un año para la escalera: sus filas, su escala, los precedentes del club (con la escala de cada uno), el año anterior cargado
+// y las filas del documento siguiente. `conocidos[cual][anio]` = el valor cargado (o completado en esta corrida).
+function contexto({ d, anios, a, cual, filasDe, conocidos }) {
+  const filas = filasDe(a.md);
+  const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio]);
+  const precedentes = Object.entries(conocidos[cual]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
+    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y]) } : null; }).filter(Boolean);
+  const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
+  return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null };
+}
+const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
+const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md)) c.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return c.get(md); }; };
+
+// La IA de un documento (guardada o, con ejecutar, pedida). Devuelve { datos } | { ensayo, usd } | { error }.
+async function iaDe(md, filas, club) {
+  return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar });
+}
+
 async function medir({ club = null, detalle = false, ia = false, ejecutar = false } = {}) {
-  const { G, S } = sitio();
+  const { G, S } = sitio(); iaDe.ejecutar = ejecutar;
   const casos = [];
   for (const [clubId, d] of Object.entries(G)) {
     if (club && clubId !== club) continue;
-    const anios = Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).filter((x) => x.md);
-    const cache = new Map(); const filasDe = (md) => { if (!cache.has(md)) cache.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return cache.get(md); };
-    for (const a of anios) {
-      for (const cual of ['grossDebt', 'cash']) {
-        const real = a.m[cual]; if (real == null) continue;
-        const filas = filasDe(a.md);
-        const precedentes = anios.filter((o) => o.anio !== a.anio && o.m[cual] != null).sort((x, y) => Math.abs(x.anio - a.anio) - Math.abs(y.anio - a.anio)).slice(0, 3).map((o) => ({ anio: o.anio, valor: o.m[cual], filas: filasDe(o.md) }));
-        const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio]);
-        const anterior = d.fiscalYearMeta?.[String(Number(a.anio) - 1)]?.[cual] ?? null;
-        const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1);
-        const r = leerDato(filas, cual === 'cash' ? 'cash' : 'deuda', { precedentes, factor, anterior, siguiente: sig ? filasDe(sig.md) : null });
-        const ok = r.valor != null && Math.abs(r.valor - real) <= TOL(real);
-        casos.push({ clubId, anio: a.anio, cual, real, ...r, ok, _md: a.md, _anterior: anterior, _sig: sig ? sig.md : null, _filasDe: filasDe });
-      }
+    const anios = aniosDe(d, S).filter((x) => x.md); const filasDe = filasCache();
+    // Cada año se lee como nuevo: los conocidos son lo cargado en el sitio, SIN el propio año (no se aprende la respuesta).
+    for (const a of anios) for (const cual of ['grossDebt', 'cash']) {
+      const real = a.m[cual]; if (real == null) continue;
+      const conocidos = { [cual]: Object.fromEntries(anios.filter((o) => o.anio !== a.anio && o.m[cual] != null).map((o) => [o.anio, o.m[cual]])) };
+      const ctx = contexto({ d, anios, a, cual, filasDe, conocidos });
+      casos.push({ clubId, anio: a.anio, cual, real, ctx, md: a.md, ...escalera(ctx.filas, cual === 'cash' ? 'cash' : 'deuda', ctx) });
     }
   }
-  // ESCALÓN 2 (--ia): una llamada por documento con algún dato sin resolver. Sin --ejecutar, solo el ensayo.
+  // Escalón 2: solo para lo que quedó null, una llamada (o la respuesta guardada) por documento, de a 6.
   if (ia) {
-    const porMd = new Map(); for (const c of casos.filter((x) => x.valor == null)) { if (!porMd.has(c._md)) porMd.set(c._md, []); porMd.get(c._md).push(c); }
-    let usd = 0; let n = 0; let hechos = 0;
-    // De a 6 llamadas a la vez (Versión 355, pedido de Guido: la medición con IA tardaba ~45 minutos de a una).
+    const porMd = new Map(); for (const c of casos.filter((x) => x.valor == null)) porMd.set(c.md, [...(porMd.get(c.md) || []), c]);
+    let usd = 0; let ensayos = 0; let hechos = 0;
     const uno = async ([md, cs]) => {
-      const filas = cs[0]._filasDe(md); const fams = cs.find((c) => c.cual === 'grossDebt')?.familiasPrecedente || [];
-      const r = await porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(fams), ejecutar });
+      const r = await iaDe(md, cs[0].ctx.filas, cs.find((c) => c.cual === 'grossDebt')?.club);
       if (ejecutar && ++hechos % 10 === 0) process.stderr.write(`  IA: ${hechos}/${porMd.size}\n`);
-      if (r.ensayo) { usd += r.usd; n++; return; }
-      usd += r.costo || 0; if (r.error) { for (const c of cs) c.como += ` · IA: ${r.error}`; return; }
-      const balanceTxt = textoBalance(readFileSync(resolve(ROOT, md), 'utf8'), filas).replace(/\s+/g, ' ');
-      for (const c of cs) { const d = datoDeIA(r.datos, filas, c.cual === 'cash' ? 'cash' : 'deuda', { anterior: c._anterior, siguiente: c._sig ? c._filasDe(c._sig) : null, balanceTxt }); Object.assign(c, d, { ok: d.valor != null && Math.abs(d.valor - c.real) <= TOL(c.real) }); }
+      if (r.ensayo) { usd += r.usd; ensayos++; return; }
+      usd += r.costo || 0; if (r.error) return;
+      for (const c of cs) Object.assign(c, escalera(c.ctx.filas, c.cual === 'cash' ? 'cash' : 'deuda', { ...c.ctx, ia: r.datos }));
     };
     const cola = [...porMd]; await Promise.all(Array.from({ length: 6 }, async () => { while (cola.length) await uno(cola.shift()); }));
-    console.log(ejecutar ? `\nIA: gastado US$ ${usd.toFixed(2)} en ${porMd.size} documentos` : `\nIA (ENSAYO): ${n} documentos, ~US$ ${usd.toFixed(2)}. Agregá --ejecutar (lo corre Guido).`);
+    console.log(ensayos ? `\nIA (ENSAYO): ${ensayos} documentos sin respuesta guardada, ~US$ ${usd.toFixed(2)}. Agregá --ejecutar (lo corre Guido).` : `\nIA: US$ ${usd.toFixed(2)} (las respuestas guardadas no se vuelven a pagar)`);
   }
-  const res = (xs) => ({ total: xs.length, aciertos: xs.filter((x) => x.ok).length, distintos: xs.filter((x) => x.valor != null && !x.ok).length, sinDato: xs.filter((x) => x.valor == null).length });
+  for (const c of casos) c.ok = c.valor != null && Math.abs(c.valor - c.real) <= TOL(c.real);
+  const res = (xs) => ({ total: xs.length, iguales: xs.filter((x) => x.ok).length, distintos: xs.filter((x) => x.valor != null && !x.ok).length, sinDato: xs.filter((x) => x.valor == null).length });
   for (const cual of ['grossDebt', 'cash']) {
     const xs = casos.filter((c) => c.cual === cual);
     console.log(`\n## ${cual === 'cash' ? 'CAJA' : 'DEUDA'}: ${JSON.stringify(res(xs))}`);
     for (const e of [0, 1, 2]) console.log(`   escalón ${e}: ${JSON.stringify(res(xs.filter((x) => x.escalon === e)))}`);
-    for (const v of ['año anterior', 'documento siguiente']) console.log(`   confirmado por ${v}: ${JSON.stringify(res(xs.filter((x) => x.validacion === v)))}`);
+    for (const v of ['año anterior', 'documento siguiente']) console.log(`   pasó la compuerta por ${v}: ${JSON.stringify(res(xs.filter((x) => x.validacion === v)))}`);
     const mal = xs.filter((x) => x.valor != null && !x.ok);
-    if (mal.length) { console.log(`   DISTINTOS de lo cargado (${mal.length}):`); for (const x of mal.slice(0, detalle ? 999 : 12)) console.log(`     ${x.clubId} ${x.anio}: script ${x.valor} (escalón ${x.escalon}, ${x.como}) · sitio ${x.real} · filas: ${x.filas.map((f) => `"${String(f.etiqueta).slice(0, 40)}" ${f.importe} (pág. ${f.pagina}, L${f.linea})`).join(' + ')}`); }
+    if (mal.length) { console.log(`   DISTINTOS de lo cargado (${mal.length}):`); for (const x of mal) console.log(`     ${x.clubId} ${x.anio}: script ${x.valor} (escalón ${x.escalon}, ${x.validacion}, ${x.como}) · sitio ${x.real} · filas: ${x.filas.map((f) => `"${String(f.etiqueta).slice(0, 40)}" ${f.importe} (pág. ${f.pagina}, L${f.linea})`).join(' + ') || '(ninguna)'}`); }
     if (detalle) for (const x of xs.filter((y) => y.valor == null)) console.log(`     sin dato: ${x.clubId} ${x.anio} (sitio ${x.real}): ${x.como}`);
   }
   return casos;
@@ -391,37 +351,27 @@ function cierreDe(txt, abre) { let n = 0; for (let i = abre; i < txt.length; i++
 const HOY = new Date().toISOString().slice(0, 10);
 
 export async function completarClub(clubId, { ejecutar = false, escribir = false } = {}) {
-  const { G, S } = sitio(); const d = G[clubId];
+  const { G, S } = sitio(); const d = G[clubId]; iaDe.ejecutar = ejecutar;
   if (!d) return { error: `no existe ${clubId} en el sitio` };
-  const anios = Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
-  const cache = new Map(); const filasDe = (md) => { if (!cache.has(md)) cache.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return cache.get(md); };
+  const anios = aniosDe(d, S); const filasDe = filasCache();
   const conocidos = { grossDebt: {}, cash: {} };
   for (const a of anios) for (const k of ['grossDebt', 'cash']) if (a.m[k] != null) conocidos[k][a.anio] = a.m[k];
   const propuestas = []; let usd = 0;
   for (const a of anios) {
     const faltan = ['grossDebt', 'cash'].filter((k) => a.m[k] == null); if (!faltan.length) continue;
     if (!a.md) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, valor: null, como: 'la fuente no nombra la transcripción' }); continue; }
-    const filas = filasDe(a.md); const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
-    const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio]);
     const res = {};
-    for (const k of faltan) {
-      const precedentes = Object.entries(conocidos[k]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
-        .map(([y, v]) => ({ anio: y, valor: v, filas: (anios.find((o) => o.anio === y)?.md) ? filasDe(anios.find((o) => o.anio === y).md) : [] }));
-      res[k] = { ...leerDato(filas, k === 'cash' ? 'cash' : 'deuda', { precedentes, factor, anterior: conocidos[k][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null }), _anterior: conocidos[k][String(Number(a.anio) - 1)] ?? null };
-    }
-    // escalón 2: una llamada por documento para lo que siga sin dato
+    for (const k of faltan) { const ctx = contexto({ d, anios, a, cual: k, filasDe, conocidos }); res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) }; }
     const sinDato = faltan.filter((k) => res[k].valor == null);
     if (sinDato.length) {
-      const mdText = readFileSync(resolve(ROOT, a.md), 'utf8');
-      const r = await porIA({ md: a.md, mdText, filas, criterioDeuda: criterioDeudaDe(res.grossDebt?.familiasPrecedente || []), ejecutar });
-      if (r.ensayo) { usd += r.usd; for (const k of sinDato) res[k].como += ` · IA: ensayo (~US$ ${r.usd.toFixed(3)})`; }
-      else if (r.error) { for (const k of sinDato) res[k].como += ` · IA: ${r.error}`; }
-      else { usd += r.costo || 0; const balanceTxt = textoBalance(mdText, filas).replace(/\s+/g, ' ');
-        for (const k of sinDato) { const x = datoDeIA(r.datos, filas, k === 'cash' ? 'cash' : 'deuda', { anterior: res[k]._anterior, siguiente: sig ? filasDe(sig.md) : null, balanceTxt }); res[k] = x.valor != null ? x : { ...res[k], como: `${res[k].como} · ${x.como}` }; } }
+      const r = await iaDe(a.md, filasDe(a.md), res.grossDebt?.club);
+      if (r.ensayo) { usd += r.usd; for (const k of sinDato) res[k].como += ` · escalón 2: ensayo (~US$ ${r.usd.toFixed(3)})`; }
+      else if (r.error) { for (const k of sinDato) res[k].como += ` · escalón 2: ${r.error}`; }
+      else { usd += r.costo || 0; for (const k of sinDato) res[k] = { ctx: res[k].ctx, ...escalera(res[k].ctx.filas, k === 'cash' ? 'cash' : 'deuda', { ...res[k].ctx, ia: r.datos }) }; }
     }
-    for (const k of faltan) { if (res[k].valor != null) conocidos[k][a.anio] = res[k].valor; propuestas.push({ anio: a.anio, cual: k, ...res[k] }); }
+    for (const k of faltan) { if (res[k].valor != null) conocidos[k][a.anio] = res[k].valor; const { ctx, ...x } = res[k]; propuestas.push({ anio: a.anio, cual: k, ...x }); }
   }
-  for (const p of propuestas) console.log(`  ${p.anio} ${p.cual === 'cash' ? 'caja ' : 'deuda'}: ${p.valor ?? 'null'}  (${p.escalon != null ? `escalón ${p.escalon}, ${p.validacion}; ` : ''}${p.como})${(p.filas || []).map((f) => `\n        "${String(f.etiqueta).slice(0, 60)}" ${f.importe} · pág. ${f.pagina} del visor · L${f.linea}`).join('')}`);
+  for (const p of propuestas) console.log(`  ${p.anio} ${p.cual === 'cash' ? 'caja ' : 'deuda'}: ${p.valor ?? 'null'}  (${p.escalon != null ? `escalón ${p.escalon}, compuerta: ${p.validacion}; ` : ''}${p.como})${(p.filas || []).map((f) => `\n        "${String(f.etiqueta).slice(0, 60)}" ${f.importe} · pág. ${f.pagina} del visor · L${f.linea}`).join('')}`);
   const conValor = propuestas.filter((p) => p.valor != null);
   console.log(`\n${clubId}: ${conValor.length} dato(s) para completar de ${propuestas.length} vacío(s).${!ejecutar && usd ? ` Escalón 2 (IA) en ensayo: ~US$ ${usd.toFixed(2)}; agregá --ejecutar.` : ejecutar ? ` IA: US$ ${usd.toFixed(3)}.` : ''}`);
   if (!escribir || !conValor.length) return { propuestas };
@@ -439,7 +389,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       for (const p of conValor.filter((x) => x.anio === anio)) {
         const re = new RegExp(`\\b${p.cual}\\s*:\\s*null\\b`); if (!re.test(bloque)) throw new Error(`${anio}: no encontré ${p.cual}:null (¿ya tiene valor?)`);
         bloque = bloque.replace(re, `${p.cual}:${r6(p.valor)}`);
-        notas.push(`${p.cual} escalón ${p.escalon} (${p.validacion}): ${p.filas.length ? p.filas.map((f) => `"${String(f.etiqueta).slice(0, 50)}" pág. ${f.pagina}`).join(' + ') : p.como}`);
+        notas.push(`${p.cual} escalón ${p.escalon} (compuerta: ${p.validacion}): ${p.filas.length ? p.filas.map((f) => `"${String(f.etiqueta).slice(0, 50)}" pág. ${f.pagina}`).join(' + ') : p.como}`);
       }
       bloque = bloque.replace(/(\n(\s*)(?=[^\n]*\b(?:grossDebt|cash)\s*:))/, `\n$2// tools/caja-deuda.mjs (${HOY}): ${notas.join('; ').replace(/\n/g, ' ')}$1`);
       t = t.slice(0, abre) + bloque + t.slice(cierra);
@@ -453,19 +403,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
-  if (flag('--club') && !A.some((x) => !x.startsWith('--') && x !== flag('--club') && x !== flag('--anio') && x !== flag('--factor'))) {
-    const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0);
-  }
   if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
-  const arg = A.find((x) => !x.startsWith('--') && x !== flag('--club') && x !== flag('--anio') && x !== flag('--factor'));
-  if (!arg || !flag('--club')) { console.error('Uso: node tools/caja-deuda.mjs "<pdf o md>" --club <clubId> [--anio 2024] [--factor 0.001]  |  --medir [--club x] [--detalle]'); process.exit(1); }
-  const md = arg.replace(/\.pdf$/i, '.md'); const filas = filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'));
-  const { G, S } = sitio(); const d = G[flag('--club')] || {};
-  const anio = flag('--anio');
-  const precedentes = (cual) => Object.entries(d.fiscalYearMeta || {}).filter(([y, m]) => y !== anio && m[cual] != null && mdDeFuente(S, m.sourceId)).map(([y, m]) => ({ anio: y, valor: m[cual], filas: filasDelMd(readFileSync(resolve(ROOT, mdDeFuente(S, m.sourceId)), 'utf8')) })).slice(-3);
-  for (const [cual, k] of [['deuda', 'grossDebt'], ['cash', 'cash']]) {
-    const r = leerDato(filas, cual, { precedentes: precedentes(k), factor: flag('--factor') ? Number(flag('--factor')) : null });
-    console.log(`${k}: ${r.valor ?? 'null'}  (${r.escalon != null ? `escalón ${r.escalon}, ` : ''}${r.como})`);
-    for (const f of r.filas || []) console.log(`   "${f.etiqueta}" ${f.importe} · pág. ${f.pagina} del visor · L${f.linea}`);
-  }
+  if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
+  console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
 }
