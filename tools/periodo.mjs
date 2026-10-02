@@ -27,6 +27,8 @@
 //      los meses salen de la diferencia.
 //   3. Palabra de período intermedio SIN meses ("interim", "ara dönem", "Zwischenbericht", "delårsrapport", "полугодие", "中期"): 'intermedio'.
 //   4. Nada de lo anterior: 'anual' (lo normal en este proyecto), con el cierre = la fecha de fin de mes más citada en los títulos.
+//   Fecha de cierre, escalera (Versión 369): escalón 0 la más citada en los títulos; escalón 1 los encabezados de columna de las tablas
+//   (ejercicio | mismo día un año antes); compuerta: nunca más de 2 años después de hoy.
 //
 // USO:
 //   import { periodoDe } from './periodo.mjs';
@@ -156,9 +158,13 @@ export function periodoDe(mdText, nombreArchivo = '') {
     }
     if (res) break;
   }
-  // cierre más citado en los títulos (para el anual y para completar)
+  // cierre más citado en los títulos (para el anual y para completar). COMPUERTA (Versión 369): un cierre no puede ser de más de 2 años
+  // después de hoy. Caso real: Fortaleza CEIF 2022, "La duración legal del Club es definida hasta el 31 de diciembre del 2050" (L28) ganaba
+  // como cierre 2050-12-31 y el año nunca entraba como 2022. No "posterior a hoy" (lo primero que se probó): un PRESUPUESTO cierra en el
+  // futuro de verdad (Boca "Presupuesto 26-27" y Racing "presupuesto2026-27", 2027-06-30, quedaban sin fecha).
+  const TOPE = `${new Date().getFullYear() + 2}-12-31`;
   const cuenta = new Map();
-  for (const l of lineas) for (const f of fechasDe(l.texto)) if (finDeMes(f) && f.a >= 1950 && f.a <= 2100) cuenta.set(iso(f), (cuenta.get(iso(f)) || 0) + 1);
+  for (const l of lineas) for (const f of fechasDe(l.texto)) if (finDeMes(f) && f.a >= 1950 && iso(f) <= TOPE) cuenta.set(iso(f), (cuenta.get(iso(f)) || 0) + 1);
   const masCitado = [...cuenta].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? 1 : -1))[0]?.[0] || null;
   // 3. palabra de período intermedio sin meses
   if (!res) {
@@ -171,7 +177,27 @@ export function periodoDe(mdText, nombreArchivo = '') {
   }
   // 4. anual por descarte
   if (!res) res = { tipo: 'anual', meses: 12, cierre: masCitado, evidencia: null, confianza: masCitado ? 'media' : 'baja' };
+  if (res.cierre && res.cierre > TOPE) res.cierre = null; // la compuerta, también para lo leído en los pasos 1-3
   if (!res.cierre) res.cierre = masCitado;
+  // ESCALÓN 1 DE LA FECHA DE CIERRE (Versión 369, aprobado por Guido el 2026-10-02): si los títulos de las 6 primeras páginas no traen el
+  // cierre, se lee de los ENCABEZADOS DE COLUMNA de las tablas del documento entero: la fecha de la primera columna con fecha, la más repetida.
+  // COMPUERTA: la columna de al lado es la misma fecha un año antes (el par ejercicio + comparativo) y no pasa el tope de arriba. Caso real:
+  // Fortaleza CEIF 2017-2020, cuyas primeras páginas son políticas contables; sus notas dicen "| | A 31 de Diciembre de 2020 | A 31 de
+  // Diciembre de 2019 |" (2020: L405). Escalón 2 (ya existía, en verificar.mjs): deducida de los documentos vecinos (tools/cierre-vecinos.mjs).
+  if (!res.cierre) {
+    const votos = new Map();
+    for (const p of paginasDe(mdText)) for (const l of p.body.split('\n')) {
+      if (!l.trim().startsWith('|')) continue;
+      const fs = l.split('|').map((c) => fechasDe(c)[0]).filter(Boolean);
+      if (fs.length < 2) continue;
+      const [f1, f2] = fs;
+      if (finDeMes(f1) && f2.a === f1.a - 1 && f2.m === f1.m && f2.d === f1.d && iso(f1) <= TOPE) {
+        const v = votos.get(iso(f1)) || { n: 0, pagina: p.n, texto: l.trim().slice(0, 200) }; v.n++; votos.set(iso(f1), v);
+      }
+    }
+    const [mejor, v] = [...votos].sort((a, b) => b[1].n - a[1].n || (a[0] < b[0] ? 1 : -1))[0] || [];
+    if (mejor) { res.cierre = mejor; res.cierreDe = 'encabezados de tablas (escalón 1)'; res.evidencia = res.evidencia || { pagina: v.pagina, texto: v.texto }; res.confianza = 'media'; }
+  }
   if (res.tipo === 'anual' && res.cierre) res.anual = res.cierre.slice(5, 7) === '12' ? 'calendario' : 'temporada';
   // ¿El nombre del archivo dice otra cosa? (fecha AAAA-MM-DD / DD-MM-AAAA o el año de cierre)
   const nom = basename(nombreArchivo);

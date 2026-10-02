@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 369 — Etapa 1: escalera de la fecha de cierre (2026-10-02)
+
+- `periodo.mjs`: compuerta, un cierre no puede ser de más de 2 años después de hoy (Fortaleza CEIF 2022 leía 2050-12-31 de "la duración legal del Club es definida hasta el 31 de diciembre del 2050"; "posterior a hoy", lo primero que se probó, dejaba sin fecha los presupuestos 2026-27 de Boca y Racing). Escalón 1: si los títulos no traen el cierre, la primera fecha de los encabezados de columna de las tablas cuya columna de al lado es el mismo día un año antes (Fortaleza 2017-2020: "| | A 31 de Diciembre de 2020 | A 31 de Diciembre de 2019 |").
+- Medido: UC sin cambios (ni en `periodo` ni en la verificación). Fortaleza 2017-2020 y 2022 con el año correcto; 2020 y 2021 se confirman por año vecino y quedan en "ok". El registro (`inventario-transcripciones.mjs`, global) suma fecha a 102 documentos que no tenían (1 con "el nombre no coincide": Levadiakos 2019, leído 2018-06-30) y no pierde ninguna.
+
 ## Versión 368 — Ajustes manuales de filas; Fortaleza CEIF 2017 cierra (2026-10-02)
 
 - `tools/ajustes.mjs`: campo `fila` (etiqueta, lado, valor impreso con signo, línea, `reemplaza` opcional); varias por documento. `verificar.mjs` las aplica antes de la escalera de lecturas (escalón 0); `reemplaza` saca también las filas de la nota que abría esa fila.
