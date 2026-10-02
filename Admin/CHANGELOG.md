@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 358 — cargar.mjs --reemplazar: rehacer con el script un ejercicio ya cargado (2026-10-02)
+
+- `cargar.mjs --reemplazar`: "ya cargado", "la fuente ya existe" y "sin .categorias.json" pasan de frenar a aviso (lo demás frena igual); al escribir borra los bloques del año y escribe los nuevos, conservando grossDebt/cash (si el script no los trae), gestionId, la fuente existente y los `items` (jugadores vendidos) por etiqueta. Sin `--reemplazar`, la propuesta de los 16 años de UC es idéntica antes y después.
+
 ## Versión 357 — Caja y deuda: una escalera con una sola compuerta (2026-10-01)
 
 - `caja-deuda.mjs` rehecho a pedido de Guido ("siempre escalera, sin reglas una encima de otra"): una escala por documento (la del estado de resultados contra lo cargado); los escalones 0 (precedente del club), 1 (vocabulario, con "ninguna fila" = deuda 0) y 2 (IA, solo números de línea) solo PROPONEN filas; una sola compuerta para los tres (año anterior cargado o documento siguiente, mismas filas, columna del año anterior). Fuera: escala propia por escalón, confirmaciones distintas por escalón, el "ninguna" de la IA, la deduplicación por importe. Valor absoluto al leer cualquier fila.

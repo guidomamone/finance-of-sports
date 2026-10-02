@@ -116,6 +116,12 @@ const { normalizar, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUEST
 const ROOT = resolve(import.meta.dirname, '..');
 const flagVal = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const ESCRIBIR = ARGS.includes('--escribir');
+// --reemplazar (Versión 358, paso 4 del plan aprobado por Guido): rehace con el script un ejercicio YA cargado (UC 2022-2024, cargados a mano:
+// "Servicios de Seguridad" dentro de gastos de administración). "Ya cargado", "la fuente ya existe" y "sin .categorias.json" (Jev y Claude
+// nunca corrieron sobre años cargados a mano) pasan de frenar a aviso; todo lo demás frena igual (en particular, una fila sin categoría). Al
+// escribir, borra los bloques del año y escribe los nuevos, y CONSERVA lo que el script no genera: grossDebt/cash (si el script no los trae),
+// gestionId, la fuente existente y los `items` de una línea (nombres de jugadores vendidos) por etiqueta.
+const REEMPLAZAR = ARGS.includes('--reemplazar');
 const LISTA = flagVal('--lista');
 const SALIDA = flagVal('--salida');
 const COMPARAR = flagVal('--comparar');
@@ -220,8 +226,11 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const e = registro.find((x) => x.pdf === pdf);
   if (!e) { frena('registro', 'el PDF no está en Admin/transcripciones-estado.jsonl (correr tools/inventario-transcripciones.mjs)'); return P; }
   P.md = e.md;
-  if (e.cargado) frena('registro', 'el registro dice que el ejercicio ya está cargado en el sitio');
-  if (e.jev !== 'listo-para-jev') frena('registro', `el documento no está listo-para-jev (estado ${e.estado}, jev ${e.jev || '-'})`);
+  const reemplaza = REEMPLAZAR && e.cargado;
+  if (e.cargado && !REEMPLAZAR) frena('registro', 'el registro dice que el ejercicio ya está cargado en el sitio');
+  if (reemplaza) P.avisos.push('--reemplazar: rehace un ejercicio ya cargado');
+  if (e.jev !== 'listo-para-jev' && !reemplaza) frena('registro', `el documento no está listo-para-jev (estado ${e.estado}, jev ${e.jev || '-'})`);
+  P.reemplaza = reemplaza;
   // El período se recalcula con tools/periodo.mjs sobre el .md actual: el del registro puede ser de una versión anterior de periodo.mjs
   // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
   let per = e.periodo || null;
@@ -238,7 +247,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   if (!e.md || !existsSync(resolve(ROOT, e.md))) { frena('registro', 'no hay .md en disco'); return P; }
   const mdAbs = resolve(ROOT, e.md);
   const catPath = resolve(ROOT, derivado(e.md, '.categorias.json', { crear: false }));
-  if (!existsSync(catPath)) frena('categorizacion', 'no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)');
+  if (!existsSync(catPath)) { if (P.reemplaza) P.avisos.push('sin .categorias.json (año cargado a mano): cada fila sale de la escalera de categorías; una fila sin categoría frena igual'); else frena('categorizacion', 'no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)'); }
   else if (!categoriasAlDia(mdAbs)) frena('categorizacion', 'el .categorias.json NO está al día con su .rubros.json / .jev.json (huellas, tools/huellas.mjs): hay que volver a correr la etapa 5');
 
   // ---- 2. club y año
@@ -256,7 +265,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y onboard.mjs --quien (el que usa el registro) dice ${q.year}`);
   if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y onboard.mjs --quien dice ${q.clubId}`);
   if (!year) { frena('año', 'no se pudo determinar el año del ejercicio'); return P; }
-  if ((cd.fiscalYearMeta || {})[year]) frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`);
+  if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
   for (const n of ['anio', 'cierre', 'currency', 'reportType', 'fx']) { const c = campo(n); if (c.estado === 'pregunta') frena(`alta:${n}`, c.pregunta); }
   if (campo('reportType').valor && campo('reportType').valor !== 'official_balance_sheet') frena('alta:reportType', `reportType ${campo('reportType').valor}: esta etapa solo carga balances anuales`);
   // perímetro
@@ -592,7 +601,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   if (fxC.estado === 'pendiente' && fxC.nota) P.avisos.push(`fx: ${fxC.nota}`);
   const sourceId = campo('sourceId').valor;
   if (!sourceId) frena('fuente', 'sin sourceId');
-  else if (sitio.sources[sourceId]) frena('fuente', `sources['${sourceId}'] ya existe`);
+  else if (sitio.sources[sourceId]) { if (P.reemplaza) P.avisos.push(`sources['${sourceId}'] ya existe: se conserva`); else frena('fuente', `sources['${sourceId}'] ya existe`); }
   const ligaC = campo('liga');
   const ligaExistente = ((sitio.CLUB_LEAGUE_BY_YEAR || {})[clubId] || {})[year];
   P.liga = { valor: ligaExistente !== undefined ? ligaExistente : (ligaC.valor ?? null), fuente: ligaExistente !== undefined ? 'la fila ya existe en data/club-leagues' : ligaC.fuente, estado: ligaExistente !== undefined ? 'existe' : ligaC.estado, nota: ligaC.nota };
@@ -711,8 +720,28 @@ export function escribir(P) {
     const varDe = (k) => (reg[1].match(new RegExp(`${k}\\s*:\\s*([A-Za-z_$][\\w$]*)`)) || [])[1];
     const vRev = varDe('revenueLinesByYear'); const vExp = varDe('expenseLinesByYear'); const vMeta = varDe('fiscalYearMeta');
     if (!vRev || !vExp || !vMeta) throw new Error(`${dataRel}: el registro no nombra las tres variables (revenue/expense/meta)`);
-    const linea = (l) => `    { rawLabel:${js(l.rawLabel)}, normalizedCategory:${js(l.normalizedCategory)}, amountNative:${num(l.amountNative)}, disclosureLevel:${js(l.disclosureLevel)} }, // pág. ${l._pag ?? '?'}, ${['precedente', 'Jev', 'Claude'][l._escalon] ?? '?'}${l._conf != null && l._escalon ? ` ${l._conf}` : ''}\n`;
+    const linea = (l) => `    { rawLabel:${js(l.rawLabel)}, normalizedCategory:${js(l.normalizedCategory)}, amountNative:${num(l.amountNative)}, disclosureLevel:${js(l.disclosureLevel)}${l.items ? `, items:[\n      ${l.items.map((it) => `[${js(it[0])}, ${num(it[1])}]`).join(', ')},\n    ]` : ''} }, // pág. ${l._pag ?? '?'}, ${['precedente', 'Jev', 'Claude'][l._escalon] ?? '?'}${l._conf != null && l._escalon ? ` ${l._conf}` : ''}\n`;
     const cab = `  // ${y}: cargado por tools/cargar.mjs (${HOY}) desde ${P.md}. Filas: proponer-carga.mjs (ancla-listas); categorías:\n  // ${derivado(P.md, '.categorias.json', { crear: false })} (escalón por línea al lado). Tie-out contra lo impreso: ${P.totales.revImpreso ? `ingresos "${String(P.totales.revImpreso.label).slice(0, 60)}" pág. ${P.totales.revImpreso.pag}` : '-'}${P.totales.expImpreso ? `; gastos "${String(P.totales.expImpreso.label).slice(0, 60)}" pág. ${P.totales.expImpreso.pag}` : ''}${P.totales.patImpreso ? `; resultado "${String(P.totales.patImpreso.label).slice(0, 60)}"` : ''}.\n`;
+    // --reemplazar: lo que se conserva del año cargado, y se borran sus bloques (revenue, expense, meta) antes de insertar los nuevos.
+    if (P.reemplaza) {
+      const viejo = cargarSitio().generic[id] || {};
+      const vm0 = (viejo.fiscalYearMeta || {})[y] || {};
+      const conItems = [...(viejo.revenueLinesByYear?.[y] || []), ...(viejo.expenseLinesByYear?.[y] || [])].filter((l) => l.items);
+      for (const l of [...E.revenueLines, ...E.expenseLines]) { const o = conItems.find((x) => norm(x.rawLabel) === norm(l.rawLabel)); if (o) l.items = o.items; }
+      const M0 = E.fiscalYearMeta;
+      if (M0.grossDebt == null && vm0.grossDebt != null) M0.grossDebt = vm0.grossDebt;
+      if (M0.cash == null && vm0.cash != null) M0.cash = vm0.cash;
+      if (M0.gestionId == null && vm0.gestionId != null) M0.gestionId = vm0.gestionId;
+      for (const v of [vRev, vExp, vMeta]) {
+        const ini = src.indexOf(`const ${v} = {`); if (ini < 0) throw new Error(`${dataRel}: no encontré const ${v}`);
+        const abreObj = src.indexOf('{', ini); const cierraObj = cierreDe(src, abreObj);
+        const m = new RegExp(`\n[ \t]*['"]?${y}['"]?\s*:\s*([\[{])`).exec(src.slice(abreObj, cierraObj)); if (!m) throw new Error(`${dataRel}: ${v} no tiene ${y}`);
+        const desde = abreObj + m.index; const abre = abreObj + m.index + m[0].length - 1;
+        const cierra = cierreDe(src, abre, m[1] === '[' ? '[' : '{', m[1] === '[' ? ']' : '}');
+        let hasta = cierra + 1; while (/[ \t,]/.test(src[hasta])) hasta++;
+        src = src.slice(0, desde) + src.slice(hasta);
+      }
+    }
     src = insertarEnObjeto(src, `const ${vRev} = {`, `${cab}  ${y}: [\n${E.revenueLines.map(linea).join('')}  ],\n`, dataRel);
     src = insertarEnObjeto(src, `const ${vExp} = {`, `  ${y}: [ // tools/cargar.mjs (${HOY})\n${E.expenseLines.map(linea).join('')}  ],\n`, dataRel);
     const M = E.fiscalYearMeta;
@@ -720,7 +749,7 @@ export function escribir(P) {
     const metaTxt = `  ${y}: { // tools/cargar.mjs (${HOY}). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:null,\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}${M.sinDesglose ? `    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).\n    sinDesglose: [\n${M.sinDesglose.map((x) => `      {renglon:${js(x.renglon)}, lado:${js(x.lado)}, importe:${num(x.importe)}, motivo:${js(x.motivo)}},\n`).join('')}    ],\n` : ''}    grossDebt:null, cash:null,\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
     src = insertarEnObjeto(src, `const ${vMeta} = {`, metaTxt, dataRel);
     const S = E.source;
-    src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n    note:${js(S.note)},\n  },\n`, dataRel);
+    if (!(P.reemplaza && cargarSitio().sources?.[S.id])) src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n    note:${js(S.note)},\n  },\n`, dataRel);
     writeFileSync(dataPath, src); escritos.push(dataRel);
 
     // liga
