@@ -31,7 +31,8 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2020, 2021, 2024, 2025 | el resultado CIERRA (notas = estado, contra la conciliación del impuesto); 2024-2025 confirmados por el año vecino y con el resultado final impreso | alta, cola |\n| 2023 | cierra antes de impuestos; el resultado final no (cola `b5a087e`) | respuesta de Guido |
+| 2020, 2021, 2024, 2025 | el resultado CIERRA (notas = estado, contra la conciliación del impuesto); 2024-2025 confirmados por el año vecino y con el resultado final impreso | alta, cola |
+| 2023 | cierra antes de impuestos; el resultado final no (cola `b5a087e`) | respuesta de Guido |
 | 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
 | 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
 | 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
