@@ -38,9 +38,10 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-1. **Dudas de tema "escala" aceptadas por las sumas** (etapa 6, escalera de dudas, escalón 2): las sumas NO confirman una escala (cerrar es
-   invariante a la escala del documento entero). Hoy se aceptan solas aunque la escala no se haya aplicado (Fortaleza 2023 antes de la
-   Versión 362). Propuesta: tema "escala" se acepta solo si la escala salió del escalón 1 (año vecino); si no, a la cola.
+1. **Resultado final MAL en 2023-2025** (etapa 6, `resultadoParaCargar`): suma el impuesto en vez de restarlo. 2025: 685.847 + 372.407 =
+   1.058.254, y el impreso en la nota de patrimonio es 313.440 (= 685.847 − 372.407); 2024: 1.287.455 contra 466.323. 2023 no da con
+   ningún signo (1.609.817 − 589.589 = 1.020.228 contra 1.021.768: el impuesto contable no es el "a cargo"). Compuerta propuesta: el
+   resultado final impreso en otra nota (patrimonio) y la columna del año anterior del documento siguiente.
 2. **2017**: el resultado impreso es después de impuestos; falta el impuesto (¿escalón: resultado final sin impuesto → buscar el impuesto?).
 3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
 4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
