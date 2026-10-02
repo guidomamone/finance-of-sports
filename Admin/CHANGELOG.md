@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 361 — Verificar lee el resultado impreso por su etiqueta (2026-10-02)
+
+- `verificar.mjs`: si la línea que extraer marcó como "resultado del ejercicio" dice "antes de impuestos", se toma como resultado antes de impuestos (lectura 1), no como final. Caso: Fortaleza CEIF 2023-2025 (las notas hacen de estado), donde se restaba el impuesto a "Utilidad contable antes de impuesto". Medido: UC 16 años idéntico; Fortaleza 2023, 2024 y 2025 pasan a cerrar, 2021 sigue cerrando (por la lectura 1).
+
 ## Versión 360 — Etapa 3, escalón 2: las notas hacen de estado (2026-10-02)
 
 - `lote.mjs --reintentar`: un documento cuya localización no encontró estado de resultados pero sí notas de ingresos y de gastos (y no es candidato a re-transcribir) vuelve a localizar con `notasComoEstado`, una vez. `localizar.mjs`: PEDIDO_NOTAS_COMO_ESTADO (elegir las notas cuyo total es un renglón del estado y el bloque del resultado impreso). `extraer.mjs`: INSTRUCCION_NOTAS_COMO_ESTADO (una fila por nota con el título como etiqueta y el TOTAL impreso; sus filas la desglosan). Verificar sin cambios. Caso: Fortaleza CEIF (solo notas; 2023: notas 19-25 suman 1.609.817 = "Utilidad contable antes de impuesto", nota 8).
