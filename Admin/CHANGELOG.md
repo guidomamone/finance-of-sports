@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 381 — Ajuste manual `cero-real`: escalón 0 del aviso de categorías en 0 (2026-10-02)
+
+- `ajustes.mjs`: campo `cero-real` (valor = la categoría del aviso: "Estadio", "Televisión"...). `cargar.mjs`: si hay un ajuste para esa categoría, el 0 es real: no frena ni pide reintento, queda como aviso.
+- Caso: Fortaleza 2021, Estadio en 0 (boletería "-" en 2021, L1141). Medido: propuesta de carga de UC idéntica (16 de 16).
+
 ## Versión 380 — Fortaleza CEIF 2017-2020 y 2023-2025 en el sitio local (2026-10-02)
 
 - Alta del club (`alta-club.mjs`, color #003366 de Guido) y 7 años con `cargar.mjs --desde-verificacion --escribir`, un commit por año, auditoría P0 0 · P1 0 en cada uno.
