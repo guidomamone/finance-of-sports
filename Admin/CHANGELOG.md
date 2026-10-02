@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 396 — Etapa 6: lectura 4, signos impresos (2026-10-02)
+
+- `verificar.mjs`: lectura 4 de la escalera de lecturas (solo si 0-3 no cierran): los renglones del estado conservan su signo respecto del signo normal de su lado (un renglón negativo entre los ingresos resta) y los subtotales se reconocen por la suma con signo.
+- Caso: Goiás 2008, "(-) Dedução da receita (1.290.613)" sumaba; los ingresos daban 62.455.533 en vez de 20.242.293. Con la lectura 4 cierran 2008, 2009 y 2011 (2010 no).
+- El chequeo del año anterior cargado también acepta la columna contra lo cargado más una ganancia extraordinaria (`exceptional_items` positivo) que un ajuste sacó de ingresos (Goiás 2024 contra 2023, la venta a la LFU).
+- Medido: UC (lote 07) y Fortaleza (lote 08), 26 verificaciones idénticas (una nota de ajuste se repetía en Fortaleza 2022 y se corrigió); Goiás: 2008, 2009, 2011 cierran con la lectura 4; 2014 pasa a ok (su vecino 2015 ya está bien).
+
 ## Versión 395 — Etapa 2, escalón 1: rearmar páginas con el texto propio del PDF (2026-10-02)
 
 - `texto-propio-a-md.mjs` (nuevo, gratis): rearma páginas del .md con el texto propio del PDF (`pdftotext -bbox`): separa las columnas de la página por los huecos verticales que casi ningún renglón cruza, une a su izquierda una "columna" que es solo importes (la del otro año), y arma tablas Markdown con etiqueta + importes (el número de nota va a la etiqueta). Guarda el .md anterior en Generados/ (`.antes-texto-propio.md`).

@@ -201,7 +201,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const dif = Math.abs(h.M || 0) - hojasNota.reduce((a, x) => a + Math.abs(x.M), 0);
     const m = mult(h.bloque);
     if (Math.abs(Math.abs(dif) - Math.abs(parseNumber(aj.valor) * m)) > 0.5 * m + 1e-9) return null;
-    if (conNotas) notas.push(`ajuste manual: el desglose de "${h.etiqueta}" se abre con una fila "${aj.etiquetaDiferencia || 'Diferencia en el documento'}" de ${aj.valor} (${aj.fecha}, ${aj.motivo})`);
+    if (conNotas && !notas.some((n) => n.startsWith(`ajuste manual: el desglose de "${h.etiqueta}"`))) notas.push(`ajuste manual: el desglose de "${h.etiqueta}" se abre con una fila "${aj.etiquetaDiferencia || 'Diferencia en el documento'}" de ${aj.valor} (${aj.fecha}, ${aj.motivo})`);
     return { hojas: [...hojasNota.map((x) => ({ ...x, valorNota: Math.abs(x.M) })), { etiqueta: aj.etiquetaDiferencia || 'Diferencia en el documento', lado: h.lado, tipo: 'renglon', valorNota: dif, pagina: h.pagina, linea: aj.linea ?? h.linea, bloque: h.bloque, u: h.u, catAjuste: aj.categoria || null }] };
   };
   const abrirAnidadas = (hojas, campo, nivel) => {
@@ -220,16 +220,22 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (6.903.788, sin lado); sin esa fila los de abajo no sumaban el subtotal, y se contaba el subtotal y además sus componentes. En 2022 y
   // 2023 "Outras" es positivo (8.918.100, 140.214.785) y el subtotal solo cierra con la suma con signo. Los renglones sin lado los ubica
   // después la propia lectura 3, por su signo.
-  const lineasDeLado = (lado, campo = 'M', conOtros = false) => {
+  // firmado (Versión 396, LECTURA 4 de la escalera de lecturas): los renglones del estado conservan su SIGNO IMPRESO respecto del signo
+  // normal de su lado (un renglón negativo dentro de los ingresos resta: "(-) Dedução da receita (1.290.613)"), y los subtotales se
+  // reconocen por la suma con signo. Caso: Goiás 2008, los renglones de "Futebol profissional e de base" con la deducción restando dan
+  // 19.389.721 (el subtotal impreso); en valor absoluto daban 21.970.947, el subtotal no se reconocía y se contaba además de sus renglones.
+  const lineasDeLado = (lado, campo = 'M', conOtros = false, firmado = false) => {
     const out = [];
     const delLado = estado.filter((f) => f.lado === lado || (conOtros && f.lado === 'otro' && f.tipo === 'renglon'));
+    const rengs = delLado.filter((f) => f.lado === lado && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo]);
+    const signoNormal = rengs.filter((f) => f[campo] < 0).length > rengs.length / 2 ? -1 : 1;
     for (const [k, f] of delLado.entries()) {
       if (f.lado === 'otro') continue; // (conOtros) solo cuenta como componente; lo ubica la lectura 3
       // un total/subtotal cuenta como línea solo si NO es la suma de renglones de arriba del mismo lado (Forest: "Turnover" total + venta de jugadores)
       // (y tampoco la suma de los renglones que tiene ABAJO: el estilo "Ingresos 500" y debajo sus componentes)
       if (f.tipo !== 'renglon') {
         if (f.tipo === 'resultado') continue;
-        const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || (conOtros && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
+        const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado) && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
         const arriba = delLado.slice(0, k).filter((x) => x.tipo === 'renglon').reverse(); const abajo = delLado.slice(k + 1).filter((x) => x.tipo === 'renglon');
         if (esSumaDe(arriba) || esSumaDe(abajo)) continue;
       }
@@ -239,7 +245,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const obj = Math.abs(f[campo] || 0);
       const c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
       if (c) out.push(...abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1));
-      else { out.push({ ...f, [campo]: Math.abs(f[campo] || 0), origen: 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
+      else { out.push({ ...f, [campo]: firmado && f.tipo === 'renglon' ? (f[campo] || 0) * signoNormal : Math.abs(f[campo] || 0), origen: firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? 'estado (lectura 4: signo impreso, resta en su lado)' : 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
     }
     return out;
   };
@@ -322,6 +328,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   //        "Ingresos de actividades ordinarias 7.450.809" y aparte estaba "Otros ingresos por función 30.426".
   //   3  + los renglones del estado sin lado (lado 'otro') entran según su signo, con la misma convención de signos que los gastos del estado.
   //        UC 2010-2014: "Otras ganancias (pérdidas) (288.444)" quedaba afuera y el resultado no cerraba por exactamente ese importe.
+  //   4  + signos impresos: un renglón negativo dentro de su lado resta, y los subtotales se reconocen por la suma con signo (Versión 396).
+  //        Goiás 2008-2011: "(-) Dedução da receita" sumaba en vez de restar y el subtotal se contaba dos veces.
   // Si ninguna cierra: queda la lectura 0 con sus chequeos fallidos (camino de error: reintento, después cola). Si el documento no tiene NINGÚN
   // número impreso para cerrar (ni totales, ni resultado, ni antes de impuestos), eso también es un fallo: antes pasaba como OK sin chequeo.
   const tI = F.total_ingresos ? Math.abs(parseNumber(F.total_ingresos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
@@ -356,9 +364,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // base de la lectura 3: los subtotales se leen con los renglones sin lado como componentes (lineasDeLado, conOtros)
   const ing3 = otros.length ? lineasDeLado('ingreso', 'M', true) : ing0; const gas3 = otros.length ? lineasDeLado('gasto', 'M', true) : gas0;
   if (otros.length) aplicarAjustesFila(ing3, gas3, false);
-  const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo'];
+  // base de la lectura 4 (Versión 396): signos impresos (lineasDeLado, firmado), con los renglones sin lado como en la lectura 3
+  const ing4 = lineasDeLado('ingreso', 'M', true, true); const gas4 = lineasDeLado('gasto', 'M', true, true);
+  aplicarAjustesFila(ing4, gas4, false);
+  const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo', 'signos impresos (un renglón negativo resta en su lado)'];
   const evaluar = (nivel) => {
-    const ch = []; let ing = [...(nivel >= 3 ? ing3 : ing0)]; let gas = [...(nivel >= 3 ? gas3 : gas0)];
+    const ch = []; let ing = [...(nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
     if (nivel >= 3) for (const f of otros) { const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura 3)` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
@@ -394,7 +405,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     return { ing, gas, ch, okRes, lect, cierra, nivel, objetivo };
   };
   let E = null; let E0 = null;
-  for (const n of [0, 1, 2, 3]) { const e = evaluar(n); if (!E0) E0 = e; if (e.cierra) { E = e; break; } }
+  for (const n of [0, 1, 2, 3, 4]) { const e = evaluar(n); if (!E0) E0 = e; if (e.cierra) { E = e; break; } }
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
@@ -442,9 +453,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // renglones sin lado entran por su signo (y los subtotales se leen con ellos). Caso: Goiás 2024, la columna 2023 sumaba 89.972.753
     // (sin "Outras Receitas e Despesas" 140.214.785) y el sitio tiene 230.187.538 (cargado con la lectura 3): falsa alarma.
     const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
-    const ingA = E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A');
+    const ingA = E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A');
     const prodI = (cd.revenueLinesByYear?.[prev] || []).reduce((a, l) => a + l.amountNative, 0);
-    const okA = prodI ? cerca(sA, prodI, 0.02) : null;
+    // Una GANANCIA extraordinaria que un ajuste `categoria` sacó de los ingresos del año anterior (exceptional_items en positivo) también
+    // cuenta: el documento la sigue sumando como ingreso. Caso: Goiás 2024 contra 2023 (venta del 20% de la Liga Forte União, 140.214.785).
+    const extraPrev = (cd.expenseLinesByYear?.[prev] || []).filter((l) => l.normalizedCategory === 'exceptional_items' && l.amountNative > 0).reduce((a, l) => a + l.amountNative, 0);
+    const okA = prodI ? (cerca(sA, prodI, 0.02) || (extraPrev > 0 && cerca(sA, prodI + extraPrev, 0.02))) : null;
     chequeos.push({ nombre: 'año anterior cargado', ok: okA, detalle: prodI ? `la columna ${prev} de este documento suma ingresos ${r6(sA)}; el sitio tiene ${r6(prodI)}` : `el sitio tiene ${prev} sin líneas de ingresos` });
     if (okA === false) caso('anio-anterior', String(prev), `La columna del año anterior (${prev}) de este documento suma ingresos ${r6(sA)} y el sitio tiene ${r6(prodI)} para ese año. Puede ser: otra tabla u otro perímetro (revisar el documento), otra escala, o un error del año ya cargado (revisar producción).`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
   }
