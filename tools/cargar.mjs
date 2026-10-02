@@ -735,7 +735,7 @@ export function escribir(P) {
       for (const v of [vRev, vExp, vMeta]) {
         const ini = src.indexOf(`const ${v} = {`); if (ini < 0) throw new Error(`${dataRel}: no encontré const ${v}`);
         const abreObj = src.indexOf('{', ini); const cierraObj = cierreDe(src, abreObj);
-        const m = new RegExp(`\n[ \t]*['"]?${y}['"]?\s*:\s*([\[{])`).exec(src.slice(abreObj, cierraObj)); if (!m) throw new Error(`${dataRel}: ${v} no tiene ${y}`);
+        const m = new RegExp(`\\n[ \\t]*['"]?${y}['"]?\\s*:\\s*([\\[{])`).exec(src.slice(abreObj, cierraObj)); if (!m) throw new Error(`${dataRel}: ${v} no tiene ${y}`);
         const desde = abreObj + m.index; const abre = abreObj + m.index + m[0].length - 1;
         const cierra = cierreDe(src, abre, m[1] === '[' ? '[' : '{', m[1] === '[' ? ']' : '}');
         let hasta = cierra + 1; while (/[ \t,]/.test(src[hasta])) hasta++;
