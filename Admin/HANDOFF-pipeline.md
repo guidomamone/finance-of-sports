@@ -35,10 +35,10 @@ de la nota de efectivo y deuda como total de la nota de deuda.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
 
 1. **En curso: Goiás** (`goias-br`, Brasil), `Admin/lote-09.txt` (15 documentos; afuera el 2022 de goiasec y el resumen de diario de
-   2024). Alta hecha (color #006633 de Guido); **2021-2024 cargados** en el sitio local. Falta:
-   - 2025: la verificación escribe "Outras Receitas (b)" (hoja de ingreso dentro de un renglón de gastos) como ingreso NEGATIVO
-     (−1.439.848) y la carga no cierra; arreglo propuesto: escribirla en su lado, en positivo (pendiente del ok de Guido).
-   - 2017: "Otras secciones deportivas" en 0 (el documento no tiene esportes olímpicos); propuesta: ajuste `cero-real`.
+   2024). Alta hecha (color #006633 de Guido); **2017 y 2021-2025 cargados** en el sitio local. Falta:
+   - Chequeo "año anterior cargado" (etapa 6): suma la columna del año anterior sin las filas sin lado de la lectura 3, y el sitio sí
+     las tiene: falsa alarma en Goiás 2023 (97.172.059 contra 106.090.159) y 2024 (89.972.753 contra 230.187.538). Propuesta: que el
+     chequeo use la misma lectura que cerró.
    - 2008-2016: la transcripción de Mistral cambió dígitos en los balances de diario (la etapa 4 lo detecta y el lote sigue igual) y
      las deducciones de ingresos se suman en vez de restar. Propuestas: un escalón en la etapa 2 y una lectura 4 en la etapa 6.
 2. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
