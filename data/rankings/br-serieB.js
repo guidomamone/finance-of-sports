@@ -3,11 +3,12 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série B (BR) — 6 ejercicio(s) con ranking:
+// Brasileirão Série B (BR) — 7 ejercicio(s) con ranking:
 //   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -93,6 +94,14 @@ window.RANKINGS["br-serieB"] = {
       { id:"pontepreta-br", revenue:8.595, reportType:"official_balance_sheet",
         sourceId:"pontepreta-br-balanco-2021-2022",
         mix:[["Comercial / Sponsors",0.466],["Estadio",0.175],["Televisión",2.673],["Venta de Jugadores",4.396],["Otras secciones deportivas",0.101],["Otros ingresos",0.784]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:8.397, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2021",
+        mix:[["Cuotas Sociales",0.212],["Comercial / Sponsors",0.838],["Estadio",-0.162],["Televisión",4.976],["Premios por competencias",0.143],["Venta de Jugadores",1.51],["Otras secciones deportivas",0.339],["Otros ingresos",0.541]] },
     ],
   },
   2020: {

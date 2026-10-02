@@ -56,3 +56,5 @@
 - Contacto: goiasec.com.br/transparencia (PDFs en static.goiasec.com.br/upload/transparencia/);
   fgf.esp.br/pt/conteudo/?q=11&sc=11.
 - Último chequeo: 2026-09-22.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2021 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2021.pdf` (sourceId `goias-br-demonstracoes-contabeis-2021`).
