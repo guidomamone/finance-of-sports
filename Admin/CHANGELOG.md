@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 371 — Revertida la Versión 367 (2026-10-02)
+
+- `indice-bloques.mjs`: fuera la regla "encabezado que es fila de datos continúa la tabla anterior" y `VERSION_AMPLIADO` vuelve a 2. Decisión de Guido: era una regla, no una escalera, y el caso que la originó (Fortaleza 2017, nota 23) lo resuelve un ajuste manual. Si vuelve a hacer falta, entra como escalón.
+- Medido: los índices de UC y Fortaleza son idénticos a los de antes de la 367; UC 2010, 2011, 2013, 2015 y 2022 vuelven a `reintentado: true`.
+
 ## Versión 370 — Etapa 3: el ajuste manual de resultado es la pista para "las notas hacen de estado" (2026-10-02)
 
 - `ajustes.mjs`: `--linea` para cualquier campo. `localizar.mjs`: opción `pistaResultado` (valor y línea): le dice a la IA dónde está impreso el resultado y muestra ese bloque aunque tenga una sola cifra; deja `intentoNotasConAjuste`. `lote.mjs --reintentar`: un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite una vez las notas como estado con esa pista.
