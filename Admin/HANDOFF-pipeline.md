@@ -41,8 +41,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en U
    Juventus (Italia, 22 años, informes consolidados del grupo, largos: más caro y con la duda del perímetro). Los noruegos (Molde 18,
    Fredrikstad 18, Aalesund 16, Brann 14...) son todos escaneos: para cuando exista el escalón 2 de la etapa 2 (Gemini sobre escaneos).
 
-Publicación: `main` está al día con esta rama (fast-forward el 2026-10-02, en `de1b0c15`); faltan los commits posteriores y el push, que lo
-hace Guido (`git push origin main`; antes del merge eran 269 commits sin subir).
+Publicación: `inventario-transcripciones` está mergeada entera en `main` (2026-10-02); falta el push, que lo hace Guido (`git push origin main`).
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 
@@ -90,8 +89,9 @@ Pendientes:
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
 - **Cola humana:** preguntas concretas de sí o no, nunca exploratorias. Decirle exactamente qué abrir: "abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si...".
 - **Arreglar en los scripts, nunca a mano.**
-- **Git:** rama `inventario-transcripciones`. No cambiar de rama, no mergear a `main`, no hacer push (cada push a `main` es un deploy; lo hace
-  Guido). Commitear el código separado de los logs de los lotes. Una entrada en el CHANGELOG por cada cambio real.
+- **Git:** desde el 2026-10-02 se trabaja directo en `main` (la rama `inventario-transcripciones` quedó mergeada y no se usa más). No hacer
+  push: cada push a `main` es un deploy y lo hace Guido. Commitear el código separado de los logs de los lotes. Una entrada en el CHANGELOG
+  por cada cambio real.
 - **No editar `.claude/skills/`** sin proponerle el texto a Guido.
 - **`Admin/TODO.md`:** leerlo del disco antes de tocarlo (otra sesión lo edita).
 - Cada tool lleva cabecera y comentarios largos.
@@ -453,7 +453,7 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-1. `git status` y `git log --oneline -5` en la rama `inventario-transcripciones`.
+1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
 3. Leer este HANDOFF (nada más hace falta para el pipeline).
 4. `node tools/cola.mjs` para ver qué está esperando a Guido.
