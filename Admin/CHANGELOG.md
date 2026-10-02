@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 355 — Caja y deuda: la medición con IA hace 6 llamadas a la vez (2026-10-01)
+
+- `caja-deuda.mjs --medir --ia --ejecutar`: llamadas de a 6 en paralelo, con avance cada 10 documentos (pedido de Guido: tardaba demasiado de a una).
+
 ## Versión 354 — Caja y deuda: escalón 2 con IA (2026-10-01)
 
 - `caja-deuda.mjs`: `porIA()` (una llamada a Claude por documento, solo si los escalones 0 y 1 no dieron nada) elige las líneas del balance de caja y de deuda (criterio del club si hay precedente; si no, deuda financiera) y la escala con su frase. `datoDeIA()`: las cifras salen de esas líneas del .md, nunca de la IA; se descarta si una línea no es fila del balance o la frase de la escala no está en el balance; se acepta confirmada por un año vecino; "ninguna deuda" + total del pasivo = 0. Respuesta guardada en `Generados/<doc>.caja-deuda-ia.json`. `--medir --ia`: ensayo 171 documentos, ~US$ 5,49.

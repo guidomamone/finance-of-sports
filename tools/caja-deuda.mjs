@@ -352,15 +352,18 @@ async function medir({ club = null, detalle = false, ia = false, ejecutar = fals
   // ESCALÓN 2 (--ia): una llamada por documento con algún dato sin resolver. Sin --ejecutar, solo el ensayo.
   if (ia) {
     const porMd = new Map(); for (const c of casos.filter((x) => x.valor == null)) { if (!porMd.has(c._md)) porMd.set(c._md, []); porMd.get(c._md).push(c); }
-    let usd = 0; let n = 0;
-    for (const [md, cs] of porMd) {
+    let usd = 0; let n = 0; let hechos = 0;
+    // De a 6 llamadas a la vez (Versión 355, pedido de Guido: la medición con IA tardaba ~45 minutos de a una).
+    const uno = async ([md, cs]) => {
       const filas = cs[0]._filasDe(md); const fams = cs.find((c) => c.cual === 'grossDebt')?.familiasPrecedente || [];
       const r = await porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(fams), ejecutar });
-      if (r.ensayo) { usd += r.usd; n++; continue; }
-      usd += r.costo || 0; if (r.error) { for (const c of cs) c.como += ` · IA: ${r.error}`; continue; }
+      if (ejecutar && ++hechos % 10 === 0) process.stderr.write(`  IA: ${hechos}/${porMd.size}\n`);
+      if (r.ensayo) { usd += r.usd; n++; return; }
+      usd += r.costo || 0; if (r.error) { for (const c of cs) c.como += ` · IA: ${r.error}`; return; }
       const balanceTxt = textoBalance(readFileSync(resolve(ROOT, md), 'utf8'), filas).replace(/\s+/g, ' ');
       for (const c of cs) { const d = datoDeIA(r.datos, filas, c.cual === 'cash' ? 'cash' : 'deuda', { anterior: c._anterior, siguiente: c._sig ? c._filasDe(c._sig) : null, balanceTxt }); Object.assign(c, d, { ok: d.valor != null && Math.abs(d.valor - c.real) <= TOL(c.real) }); }
-    }
+    };
+    const cola = [...porMd]; await Promise.all(Array.from({ length: 6 }, async () => { while (cola.length) await uno(cola.shift()); }));
     console.log(ejecutar ? `\nIA: gastado US$ ${usd.toFixed(2)} en ${porMd.size} documentos` : `\nIA (ENSAYO): ${n} documentos, ~US$ ${usd.toFixed(2)}. Agregá --ejecutar (lo corre Guido).`);
   }
   const res = (xs) => ({ total: xs.length, aciertos: xs.filter((x) => x.ok).length, distintos: xs.filter((x) => x.valor != null && !x.ok).length, sinDato: xs.filter((x) => x.valor == null).length });
