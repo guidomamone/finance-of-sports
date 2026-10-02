@@ -41,6 +41,7 @@ import { clubDeRuta } from './carpetas-clubes.mjs';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
+import { ajusteDe, ajustesDe } from './ajustes.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./proponer-carga.mjs');
 process.argv = argvAntes;
@@ -355,6 +356,28 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }
   if (sinNumero) chequeos.push({ nombre: 'número impreso para cerrar', ok: false, detalle: 'el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas' });
 
+  // AJUSTES MANUALES (Versión 366; tools/ajustes.mjs, Admin/ajustes-manuales.jsonl): el escalón 0 de cada escalera. Una decisión de Guido
+  // atada al documento y al campo, no al texto de una pregunta de la cola.
+  // resultado-final: el resultado del ejercicio impreso que fijó Guido. El IMPUESTO pasa a ser la diferencia con el resultado antes de
+  // impuestos (el impreso si la lectura 1 cerró; si no, el de las filas: ingresos − gastos ± financiero como impreso), con la convención
+  // del escalón "restado" (Fortaleza 2024-2025). Los chequeos de resultado que no cerraban quedan aceptados por el ajuste, con su detalle.
+  // Casos: Fortaleza CEIF 2023 (el impuesto contable no es el "a cargo") y 2017 (el documento no imprime el impuesto).
+  const ajustes = ajustesDe(pdf);
+  const ajRes = ajusteDe(pdf, 'resultado-final');
+  let forzado = null;
+  if (ajRes && isFinite(parseNumber(ajRes.valor))) {
+    const finalM = parseNumber(ajRes.valor) * mult(filaAntes?.bloque ?? estado[0]?.bloque);
+    const cerroAntes = E.cierra && E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok);
+    const antes = cerroAntes ? E.objetivo : suma(ing) - suma(gas) + conSigno(fin);
+    const impImpreso = conSigno(imp);
+    imp.splice(0, imp.length, { ...(imp[0] || {}), etiqueta: `${imp[0]?.etiqueta || 'Impuesto'} (deducido: antes de impuestos − resultado final, por ajuste manual)`, M: antes - finalM, lado: 'impuesto', tipo: 'renglon' });
+    for (const c of chequeos) if (/^resultado|^número impreso/.test(c.nombre) && c.ok === false) { c.ok = true; c.detalle += ` → aceptado por ajuste manual (resultado final ${ajRes.valor})`; }
+    okRes = true;
+    forzado = { final: finalM, antes, impImpreso };
+    chequeos.push({ nombre: 'resultado final', ok: true, detalle: `${r6(finalM)} por ajuste manual (${ajRes.valor}: ${ajRes.motivo}); impuesto deducido ${r6(antes - finalM)} (antes de impuestos ${r6(antes)}; el documento imprimía ${r6(impImpreso)})` });
+    notas.push(`ajuste manual: resultado final ${ajRes.valor} (${ajRes.fecha}, ${ajRes.motivo})`);
+  }
+
   // 1. números no confirmados contra el PDF: la aritmética los confirma si todo cerró; si no, se prueba con lo que leyó la segunda fuente
   const cerro = okRes === true || chequeos.filter((c) => c.nombre.startsWith('total')).some((c) => c.ok === true);
   const usadas = [...ing, ...gas, ...fin, ...imp];
@@ -407,6 +430,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const dudaComoObjeto = (d) => (typeof d === 'string' ? { texto: d, bloques: [...new Set(d.match(/\bb\d+\b/g) || [])], afecta_carga: true } : d);
   for (const [origen, lista] of [['localizar', U.dudas || []], ['extraer', F.dudas || []]]) {
     for (const d of lista.map(dudaComoObjeto)) {
+      // ajuste manual sin-dudas (Versión 366): Guido cerró el documento; sus dudas quedan como nota y no van a la cola (las viejas se cierran
+      // como obsoletas porque esta corrida ya no las levanta).
+      if (ajusteDe(pdf, 'sin-dudas')) { notas.push(`duda de ${origen} cerrada por ajuste manual (sin-dudas): ${d.pregunta || d.texto}`); continue; }
       if (!d.afecta_carga) { notas.push(`duda de ${origen} que no afecta la carga: ${d.texto}`); continue; }
       const b = (d.bloques || []).map((id) => U.bloques?.[id]).find(Boolean);
       const ls = (d.texto.match(/\bL(\d+)\b/g) || []).map((x) => Number(x.slice(1)));
@@ -449,7 +475,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   //   ESCALÓN 1  el que imprime el documento del año SIGUIENTE en una columna que no es la primera (la del año anterior)
   //   COMPUERTA  un solo candidato coincide. Ninguno o los dos -> cola (Fortaleza 2023: impreso 1.021.768, ninguno de los dos).
   let resParaCargar = res; let resultadoFinal = null;
-  if (E.cierra && E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) && Math.abs(conSigno(imp)) > TOL) {
+  if (forzado) { resParaCargar = forzado.final; resultadoFinal = { valor: r6(forzado.final), impuesto: 'deducido', escalon: 'ajuste manual', donde: 'Admin/ajustes-manuales.jsonl', impuestoImpreso: r6(forzado.impImpreso), impuestoDeducido: r6(forzado.antes - forzado.final) }; }
+  else if (E.cierra && E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok) && Math.abs(conSigno(imp)) > TOL) {
     const NUM_RE = /\(?-?\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?\)?|\d{4,}/g;
     const cands = [res + conSigno(imp), res - conSigno(imp)];
     // ¿el candidato (millones) aparece impreso en el .md, a escala m (millones por unidad impresa)? soloNoPrimera: en una fila de tabla, no
@@ -483,29 +510,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (resultadoFinal) chequeos.push({ nombre: 'resultado final', ok: true, detalle: `antes de impuestos ${r6(res)} con el impuesto ${resultadoFinal.impuesto} = ${resultadoFinal.valor}, impreso en ${resultadoFinal.donde} (L${resultadoFinal.linea}; ${resultadoFinal.escalon})` });
     else {
       const enMd = Math.abs(cands[1] / mImp).toLocaleString('es-AR', { maximumFractionDigits: 2 });
-      const r = caso('resultado-final', String(year), `¿Ninguno de los dos es el resultado del ejercicio? El resultado antes de impuestos (${r6(res)}) cierra, pero ni ${r6(cands[1])} (restando el impuesto ${r6(Math.abs(conSigno(imp)))}; impreso sería ${enMd}) ni ${r6(cands[0])} (sumándolo) aparecen impresos${sig ? ` (tampoco en ${sig.otro.pdf.split('/').pop()}, columna del año anterior)` : ''}. Buscá en el .md el resultado del ejercicio impreso (nota de patrimonio, "Resultados del ejercicio"): si está, corregir --valor con ese número tal cual está impreso; si no, descartar.`, { pagina: pagDe(filaAntes?.bloque) });
-      // Respuesta de Guido (corregir --valor con el resultado del ejercicio impreso): ese es el resultado final, y el IMPUESTO pasa a ser la
-      // diferencia (antes de impuestos − final), con la misma convención que el escalón "restado" (2024-2025). Si no, cargar.mjs encontraría la
-      // diferencia y frenaría. Caso real, decidido por Guido el 2026-10-02 ("que cierre por la fuerza"): Fortaleza CEIF 2023, final 1.021.768
-      // (patrimonio, .md L1099; también el documento 2024, columna 2023), antes de impuestos 1.609.817, impuesto 588.049 en vez del "Total
-      // impuesto a cargo" 589.589 de la conciliación (el contable no es el fiscal).
-      if (r?.decision === 'corregir' && r.valor && isFinite(parseNumber(r.valor))) {
-        resParaCargar = parseNumber(r.valor) * mImp; const impAntes = conSigno(imp);
-        imp.splice(0, imp.length, { ...(imp[0] || {}), etiqueta: `${imp[0]?.etiqueta || 'Impuesto'} (deducido: antes de impuestos − resultado final impreso)`, M: res - resParaCargar, lado: 'impuesto', tipo: 'renglon' });
-        resultadoFinal = { valor: r6(resParaCargar), impuesto: 'deducido', escalon: 'respuesta de Guido', donde: 'cola', impuestoImpreso: r6(impAntes), impuestoDeducido: r6(res - resParaCargar) };
-        chequeos.push({ nombre: 'resultado final', ok: true, detalle: `${r6(resParaCargar)} por respuesta de Guido (${r.valor}); impuesto deducido ${r6(res - resParaCargar)} en vez de ${r6(impAntes)}` });
-        notas.push(`resultado final ${r6(resParaCargar)}: respuesta de Guido en la cola (${r.valor}); el impuesto se dedujo como antes de impuestos − final`);
-      }
-      else { resParaCargar = null; chequeos.push({ nombre: 'resultado final', ok: false, detalle: `ni ${r6(cands[1])} (antes − impuesto) ni ${r6(cands[0])} (antes + impuesto) están impresos de una sola forma en este documento${sig ? ' ni en el del año siguiente' : ''}` }); }
+      // detalle con "ajuste": desde la Versión 366 la respuesta va en tools/ajustes.mjs, no en la cola (una respuesta de la cola a este caso lo
+      // silenciaría con el resultado en null); el detalle nuevo hace que las respuestas viejas no apliquen.
+      caso('resultado-final', `${year}|ajuste`, `¿Ninguno de los dos es el resultado del ejercicio? El resultado antes de impuestos (${r6(res)}) cierra, pero ni ${r6(cands[1])} (restando el impuesto ${r6(Math.abs(conSigno(imp)))}; impreso sería ${enMd}) ni ${r6(cands[0])} (sumándolo) aparecen impresos${sig ? ` (tampoco en ${sig.otro.pdf.split('/').pop()}, columna del año anterior)` : ''}. Buscá en el .md el resultado del ejercicio impreso (nota de patrimonio, "Resultados del ejercicio"): si está, node tools/ajustes.mjs --agregar "${pdf}" resultado-final --valor "<el número tal cual>" --motivo "..." (el impuesto se deduce solo); si no, descartar.`, { pagina: pagDe(filaAntes?.bloque) });
+      resParaCargar = null; chequeos.push({ nombre: 'resultado final', ok: false, detalle: `ni ${r6(cands[1])} (antes − impuesto) ni ${r6(cands[0])} (antes + impuesto) están impresos de una sola forma en este documento${sig ? ' ni en el del año siguiente' : ''}` });
     }
   } else if (E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok)) resParaCargar = res + conSigno(imp);
 
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
-  const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, escala, cola, chequeos, notas,
+  const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, escala, ajustes: ajustes.length ? ajustes : null, cola, chequeos, notas,
     reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado, faltasDesglose: reintentos.length ? reintentos : null, // faltasDesglose: siempre, para tools/diagnostico-desglose.mjs
-    // resultadoParaCargar (Versión 344; desde la 364 sale de la escalera del resultado final): si cerró contra "resultado antes de impuestos",
+    // resultadoParaCargar (Versión 344; desde la 364 sale de la escalera del resultado final, y desde la 366 un ajuste manual gana): si cerró contra "resultado antes de impuestos",
     // el resultado del ejercicio es ese ± el impuesto, el que esté impreso; null si no se pudo confirmar (va a la cola). cargar.mjs hace su
     // tie-out contra este número.
     totales: { ingresos: r6(suma(ing)), gastos: r6(suma(gas)), financiero: r6(conSigno(fin)), impuesto: r6(conSigno(imp)), resultadoImpreso: r6(res), resultadoParaCargar: r6(resParaCargar), resultadoFinal, lecturaSignos: lectura },

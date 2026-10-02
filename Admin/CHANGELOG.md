@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 366 — Ajustes manuales: una base de consulta que leen los scripts (2026-10-02)
+
+- `tools/ajustes.mjs` + `Admin/ajustes-manuales.jsonl`: una decisión de Guido atada al documento y al campo (no al texto de una pregunta de la cola). `node tools/ajustes.mjs` lista; `--agregar "<pdf>" <campo> --valor --motivo --evidencia` agrega. Campos: `resultado-final` (el impreso; el impuesto se deduce) y `sin-dudas` (las dudas del documento quedan como nota).
+- `verificar.mjs`: el ajuste es el escalón 0 (gana siempre); con `resultado-final` los chequeos de resultado que no cerraban quedan aceptados por el ajuste. Queda en el `.verificacion.json` (`ajustes`). El caso `resultado-final` de la cola ahora pide un ajuste (la respuesta en la cola de la Versión 365 ya no aplica).
+- `cargar.mjs`: cada ajuste aplicado se escribe como comentario arriba de la meta del año.
+- Fortaleza CEIF 2023 pasó de las respuestas de la cola a dos ajustes (resultado final 1.021.768; sin dudas). Medido: lote 07 (UC) idéntico; lote 08 igual salvo 2023 (mismo resultado, ahora por ajuste).
+
 ## Versión 365 — Fortaleza CEIF 2023 cerrado por decisión de Guido (2026-10-02)
 
 - `verificar.mjs`: una respuesta `corregir --valor` al caso `resultado-final` fija el resultado final y DEDUCE el impuesto (antes de impuestos − final), para que la carga cierre.
