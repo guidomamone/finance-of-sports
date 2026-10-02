@@ -31,19 +31,15 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2020, 2021, 2024, 2025 | el resultado CIERRA (notas = estado, contra la conciliación del impuesto); 2024-2025 confirmados por el año vecino y con el resultado final impreso | alta, cola |
-| 2023 | cierra por ajuste manual (`node tools/ajustes.mjs`) | alta |
-| 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
-| 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
-| 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
+| 2023 | ok (ajustes manuales: resultado final, sin dudas) | alta, cargar |
+| 2017 | cierra por ajustes manuales (fila otros gastos, fila costos financieros, resultado final) | 9 dudas en la cola (las contestan los ajustes) |
+| 2020, 2021, 2024, 2025 | cierran (2024-2025 con resultado final impreso y año vecino) | 2-3 dudas en la cola cada uno, casi todas contestadas por la aritmética |
+| 2018, 2019 | sin verificar: localizar no encontró notas de gastos (solo de ingresos) | mirar el .md |
+| 2022 | sin verificar | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-2. **2017** (ok de Guido: cerrar con ajuste `resultado-final` 1.347.094 DESPUÉS de arreglar la nota 23): el documento no imprime el
-   impuesto en ningún lado (ni estado, ni nota, ni conciliación). Antes, dos errores de extracción: (a) nota 23 "Otros gastos" partida entre
-   páginas (filas L750-761, total 41.780 solo en L771) y quedó afuera; (b) las notas 24 y 25 tienen las etiquetas de total cruzadas en el PDF
-   ("Total Otros Gastos" 6 en otros ingresos, L783; "Total Otros Ingresos" 3.581 en costos financieros, L794). Con eso, antes de impuestos
-   1.638.691 y el impuesto deducido 291.597.
+2. **Las dudas que quedan en la cola** de 2017, 2020, 2021, 2024 y 2025: ¿ajuste `sin-dudas` por año, o contestarlas?
 3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
 4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
 5. **Alta del club** (`alta-club.mjs`; está "listo-para-alta"), en el mismo commit que el primer año. Nunca se corrió dentro de este proceso.
