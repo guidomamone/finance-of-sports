@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 365 — Fortaleza CEIF 2023 cerrado por decisión de Guido (2026-10-02)
+
+- `verificar.mjs`: una respuesta `corregir --valor` al caso `resultado-final` fija el resultado final y DEDUCE el impuesto (antes de impuestos − final), para que la carga cierre.
+- Cola: Guido decidió cerrar Fortaleza 2023 por la fuerza ("que nunca más vuelva como problema o duda"). Respuestas: `b5a087e` resultado final 1.021.768 (patrimonio, .md L1099; impuesto deducido 588.049 en vez de 589.589), y las dudas `e415497`, `69bf7de`, `5cad482`, `96d6edd` aceptadas, `247c2f6` "no". 2023 queda en "ok" (cola 29 → 23). Lote 07 (UC) idéntico.
+
 ## Versión 364 — Etapa 6: escalera del resultado final (el signo del impuesto) (2026-10-02)
 
 - `verificar.mjs`: si se cerró contra "resultado antes de impuestos", el resultado final ya no es siempre antes + impuesto: candidatos antes ± impuesto; escalón 0, el que está impreso en el .md del documento; escalón 1, el que imprime el documento del año siguiente en la columna del año anterior; compuerta, uno solo coincide. Si no, caso `resultado-final` en la cola (`corregir --valor` con el impreso fija el resultado) y `resultadoParaCargar` null. Queda en `totales.resultadoFinal`.

@@ -482,11 +482,21 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     if (resultadoFinal) chequeos.push({ nombre: 'resultado final', ok: true, detalle: `antes de impuestos ${r6(res)} con el impuesto ${resultadoFinal.impuesto} = ${resultadoFinal.valor}, impreso en ${resultadoFinal.donde} (L${resultadoFinal.linea}; ${resultadoFinal.escalon})` });
     else {
-      chequeos.push({ nombre: 'resultado final', ok: false, detalle: `ni ${r6(cands[1])} (antes − impuesto) ni ${r6(cands[0])} (antes + impuesto) están impresos de una sola forma en este documento${sig ? ' ni en el del año siguiente' : ''}` });
       const enMd = Math.abs(cands[1] / mImp).toLocaleString('es-AR', { maximumFractionDigits: 2 });
       const r = caso('resultado-final', String(year), `¿Ninguno de los dos es el resultado del ejercicio? El resultado antes de impuestos (${r6(res)}) cierra, pero ni ${r6(cands[1])} (restando el impuesto ${r6(Math.abs(conSigno(imp)))}; impreso sería ${enMd}) ni ${r6(cands[0])} (sumándolo) aparecen impresos${sig ? ` (tampoco en ${sig.otro.pdf.split('/').pop()}, columna del año anterior)` : ''}. Buscá en el .md el resultado del ejercicio impreso (nota de patrimonio, "Resultados del ejercicio"): si está, corregir --valor con ese número tal cual está impreso; si no, descartar.`, { pagina: pagDe(filaAntes?.bloque) });
-      if (r?.decision === 'corregir' && r.valor && isFinite(parseNumber(r.valor))) { resParaCargar = parseNumber(r.valor) * mImp; resultadoFinal = { valor: r6(resParaCargar), escalon: 'respuesta de Guido', donde: 'cola' }; notas.push(`resultado final ${r6(resParaCargar)}: respuesta de Guido en la cola (${r.valor})`); }
-      else resParaCargar = null;
+      // Respuesta de Guido (corregir --valor con el resultado del ejercicio impreso): ese es el resultado final, y el IMPUESTO pasa a ser la
+      // diferencia (antes de impuestos − final), con la misma convención que el escalón "restado" (2024-2025). Si no, cargar.mjs encontraría la
+      // diferencia y frenaría. Caso real, decidido por Guido el 2026-10-02 ("que cierre por la fuerza"): Fortaleza CEIF 2023, final 1.021.768
+      // (patrimonio, .md L1099; también el documento 2024, columna 2023), antes de impuestos 1.609.817, impuesto 588.049 en vez del "Total
+      // impuesto a cargo" 589.589 de la conciliación (el contable no es el fiscal).
+      if (r?.decision === 'corregir' && r.valor && isFinite(parseNumber(r.valor))) {
+        resParaCargar = parseNumber(r.valor) * mImp; const impAntes = conSigno(imp);
+        imp.splice(0, imp.length, { ...(imp[0] || {}), etiqueta: `${imp[0]?.etiqueta || 'Impuesto'} (deducido: antes de impuestos − resultado final impreso)`, M: res - resParaCargar, lado: 'impuesto', tipo: 'renglon' });
+        resultadoFinal = { valor: r6(resParaCargar), impuesto: 'deducido', escalon: 'respuesta de Guido', donde: 'cola', impuestoImpreso: r6(impAntes), impuestoDeducido: r6(res - resParaCargar) };
+        chequeos.push({ nombre: 'resultado final', ok: true, detalle: `${r6(resParaCargar)} por respuesta de Guido (${r.valor}); impuesto deducido ${r6(res - resParaCargar)} en vez de ${r6(impAntes)}` });
+        notas.push(`resultado final ${r6(resParaCargar)}: respuesta de Guido en la cola (${r.valor}); el impuesto se dedujo como antes de impuestos − final`);
+      }
+      else { resParaCargar = null; chequeos.push({ nombre: 'resultado final', ok: false, detalle: `ni ${r6(cands[1])} (antes − impuesto) ni ${r6(cands[0])} (antes + impuesto) están impresos de una sola forma en este documento${sig ? ' ni en el del año siguiente' : ''}` }); }
     }
   } else if (E.ch.some((c) => c.nombre === 'resultado antes de impuestos' && c.ok)) resParaCargar = res + conSigno(imp);
 
