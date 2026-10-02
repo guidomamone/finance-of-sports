@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 374 — Etapa 8: la respuesta de categoría de la cola respeta el lado de la fila (2026-10-02)
+
+- `cargar.mjs`: compuerta del escalón 0 de la categorización: la respuesta de Guido se aplica solo si su categoría es del mismo lado que la fila en el documento; si no, la fila sigue por la escalera y, si llega a la cola, su caso lleva el lado en la clave ("etiqueta|lado"), así no choca con el ya contestado.
+- Caso: Fortaleza 2025 "Comisiones" 17 (ingreso) tomaba "gasto de administración" de la respuesta de 2024; ahora `other_income`. "Auxilio de transporte" es gasto en 2020/2023 e ingreso en 2021-2024.
+- Medido: propuesta de carga de UC (lote 07, `--reemplazar`) idéntica en los 16 años; Fortaleza cambia solo esa fila.
+- Cola: 160 respuestas de categoría de Fortaleza (tabla aprobada por Guido; auxilios y subsidio de la Dimayor a `other_income`).
+
 ## Versión 373 — Etapa 8: escalera del tipo de cambio con compuerta de fecha (2026-10-02)
 
 - `alta-club.mjs` (lo usa también `cargar.mjs`): escalón 0, ajuste manual `fx` (nuevo campo de `ajustes.mjs`); escalón 1, declarado por el documento, con COMPUERTA: si la frase de la cotización trae una fecha completa que no es la del cierre, no es la de cierre y se descarta (queda escrito en el aviso); después tabla y serie oficial, como antes. `fechasDe` lee también "20 de noviembre del año 2025".

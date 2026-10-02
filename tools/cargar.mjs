@@ -371,14 +371,16 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   //   - la respuesta de Guido gana sobre cualquier otra categoría de esa fila (aceptar -> la propuesta; corregir --valor <categoría> -> esa;
   //     descartar -> la fila no se carga), y queda en Admin/categorias-aprendidas.jsonl con confianza 1: los años siguientes del mismo club la
   //     toman como precedente gratis (memoria-categorias.mjs).
-  const respuestaCat = (label) => {
-    let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', norm(label));
+  // `clave` (Versión 374): la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
+  // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
+  const respuestaCat = (label, clave = norm(label)) => {
+    let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
     // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
-    if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', norm(label), (c) => dirname(c.pdf) === dirname(pdf)); if (otra) ({ caso, resp } = otra); }
+    if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c) => dirname(c.pdf) === dirname(pdf)); if (otra) ({ caso, resp } = otra); }
     // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
-    if (resp && caso && caso.pdf !== pdf) cerrarResueltoPorClub(pdf, 'cargar', 'categoria', norm(label), caso);
+    if (resp && caso && caso.pdf !== pdf) cerrarResueltoPorClub(pdf, 'cargar', 'categoria', clave, caso);
     if (!resp || !caso) return null;
     if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: resp.nota || null };
     if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: resp.nota || null };
@@ -389,7 +391,12 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const enCola = [];
   const filas = raw.map((r) => {
     const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside) };
-    const rg = respuestaCat(r.label);
+    // COMPUERTA DEL LADO (Versión 374, aprobada por Guido el 2026-10-02): la respuesta de Guido se aplica solo si su categoría es del MISMO
+    // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
+    // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
+    // Si el lado no coincide, la fila sigue por la escalera (y, si no se resuelve, llega a la cola con su propia pregunta).
+    let rg = respuestaCat(r.label); let claveCola = norm(r.label);
+    if (rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
@@ -409,7 +416,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     else if (!aceptable(f)) {
       // a la cola (ver CATEGORÍA DUDOSA arriba); en las sumas cuenta con la categoría propuesta
       const nombre = NOMBRE_CAT[f.cat] || f.cat;
-      agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: nl, categoriaPropuesta: f.cat, pagina: r.page || null,
+      agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: claveCola, categoriaPropuesta: f.cat, pagina: r.page || null,
         que: `¿"${r.label}" (${Math.abs(r.native)} en millones de la moneda del documento) va como "${nombre}"?  (por qué: la categorización le dio ${f.conf ?? '?'} de confianza, menos que el mínimo ${UMBRAL_CLAUDE})`,
         propuesta: `sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)` });
       enCola.push(f); f.enCola = true; f.destino = ladoDeCat(f.cat);
