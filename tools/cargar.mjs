@@ -438,7 +438,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     else if (!aceptable(f)) {
       // a la cola (ver CATEGORÍA DUDOSA arriba); en las sumas cuenta con la categoría propuesta
       const nombre = NOMBRE_CAT[f.cat] || f.cat;
-      agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: claveCola, categoriaPropuesta: f.cat, pagina: r.page || null,
+      f.casoCola = ({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: claveCola, categoriaPropuesta: f.cat, pagina: r.page || null,
         que: `¿"${r.label}" (${Math.abs(r.native)} en millones de la moneda del documento) va como "${nombre}"?  (por qué: la categorización le dio ${f.conf ?? '?'} de confianza, menos que el mínimo ${UMBRAL_CLAUDE})`,
         propuesta: `sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)` });
       enCola.push(f); f.enCola = true; f.destino = ladoDeCat(f.cat);
@@ -448,6 +448,23 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     return f;
   });
   P.filas = filas;
+  // ESCALÓN DE MATERIALIDAD (Versión 386, pedido de Guido el 2026-10-02: "si lo que queda en duda representa 1% o menos del total, bajalo a
+  // 60%; si son muchas dudas distintas y suman más de 1% de su lado, cola"). Después de todos los escalones de la categorización: por lado
+  // (ingresos / gastos), si la suma de TODAS las filas en duda de ese lado es como mucho el 1% del total de ese lado (COMPUERTA), las que
+  // tienen confianza 0,60 o más se cargan con su categoría y una nota; las de menos de 0,60 siguen a la cola. Si la suma pasa el 1%, todas a
+  // la cola, como antes. Medido al proponerlo: en Fortaleza CEIF ningún año lo pasaba (las dudas iban de 3,4% a 99,7% de su lado).
+  for (const lado of ['revenue', 'expense']) {
+    const total = filas.filter((f) => f.destino === lado).reduce((a, f) => a + Math.abs(f.native || 0), 0);
+    const dudas = enCola.filter((f) => f.destino === lado); const enDuda = dudas.reduce((a, f) => a + Math.abs(f.native || 0), 0);
+    if (!dudas.length || !total || enDuda > 0.01 * total) continue;
+    for (const f of dudas.filter((x) => (x.conf ?? 0) >= 0.6)) {
+      enCola.splice(enCola.indexOf(f), 1); f.enCola = false; f.casoCola = null; f.escalon = 'materialidad';
+      f.fuenteCat = `${f.fuenteCat} · escalón de materialidad: las dudas de ${lado === 'revenue' ? 'ingresos' : 'gastos'} suman ${(100 * enDuda / total).toFixed(2)}% (≤ 1%) y esta tiene ${f.conf}`;
+      P.avisos.push(`materialidad: "${f.label}" va como ${f.cat} con ${f.conf} (las dudas de ${lado === 'revenue' ? 'ingresos' : 'gastos'} suman ${(100 * enDuda / total).toFixed(2)}% de su lado)`);
+    }
+  }
+  for (const f of enCola) if (f.casoCola) agregarCaso(f.casoCola);
+  for (const f of filas) delete f.casoCola; // (no va al .carga.json)
   if (enCola.length) frena('categoria-en-cola', `${enCola.length} fila(s) esperan categoría en la cola humana (node tools/cola.mjs): ${enCola.slice(0, 5).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat} ${f.conf ?? ''}`).join('; ')}`);
 
   // ---- 4b. CATEGORÍAS EN 0 -> REINTENTO (Versión 340, diseño aprobado por Guido; camino de error, solo con --desde-verificacion). Medido sobre

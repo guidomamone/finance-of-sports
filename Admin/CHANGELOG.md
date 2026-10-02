@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 386 — Etapa 8: escalón de materialidad en la categorización (2026-10-02)
+
+- `cargar.mjs`: después de todos los escalones, por lado (ingresos / gastos): si la suma de todas las filas en duda es como mucho el 1% del total de ese lado (compuerta), las de confianza 0,60 o más se cargan con su categoría y un aviso; las de menos siguen a la cola; si pasa el 1%, todas a la cola. Los casos de la cola se crean después de este escalón.
+- Medido: propuestas de carga de UC (16) y Fortaleza (9) idénticas; ninguna tiene dudas abiertas, así que el escalón todavía no actuó sobre un caso real.
+
 ## Versión 385 — Caja y deuda: el total de la nota de deuda (2026-10-02)
 
 - `caja-deuda.mjs`, escalón 1: si no hay filas de deuda financiera pero sí el TOTAL de una nota de deuda (en cualquier página), se propone ese total; "ninguna fila = 0" solo si tampoco existe ese total. La compuerta busca una fila de notas también en las notas del documento vecino.
