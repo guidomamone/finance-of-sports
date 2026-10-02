@@ -23,9 +23,9 @@ window.RANKINGS["cl-primera"] = {
       { id:"udechile-cl", revenue:24.249, reportType:"official_balance_sheet",
         sourceId:"udechile-cl-estados-financieros-2024",
         mix:[["Comercial / Sponsors",7.659],["Estadio",9.651],["Televisión",5.091],["Venta de Jugadores",0.038],["Otros ingresos",1.809]] },
-      { id:"catolica-cl", revenue:21.392, reportType:"official_balance_sheet",
+      { id:"catolica-cl", revenue:21.299, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2024",
-        mix:[["Cuotas Sociales",0.066],["Comercial / Sponsors",9.582],["Estadio",1.751],["Televisión",4.627],["Venta de Jugadores",4.389],["Otras secciones deportivas",0.443],["Otros ingresos",0.535]] },
+        mix:[["Cuotas Sociales",0.065],["Comercial / Sponsors",9.54],["Estadio",1.744],["Televisión",4.607],["Venta de Jugadores",4.369],["Otras secciones deportivas",0.441],["Otros ingresos",0.533]] },
     ],
   },
   2023: {
