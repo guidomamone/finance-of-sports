@@ -34,8 +34,10 @@ de la nota de efectivo y deuda como total de la nota de deuda.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
 
-1. **Próximo club: Goiás** (Brasil): 14 años con cierre leído, 17 PDFs, ningún escaneo. Armar `Admin/lote-09.txt` con sus estados anuales
-   y empezar por el ensayo del lote.
+1. **En curso: Goiás** (Brasil), `Admin/lote-09.txt` (15 documentos; afuera el 2022 de goiasec y el resumen de diario de 2024). Primera
+   corrida US$ 2,68. Verificados: 2025, 2024, 2022, 2021, 2017 (2022 y 2024 desde la Versión 387); todos frenan solo por el alta del club.
+   Falta: 2023 (el financiero es solo un subtotal, "Resultado financeiro líquido (1.425.102)", y se toma como 0); el bloque 2008-2016
+   (balance de diario: escala, totales dobles, 2015-2016 tomados como escaneo; 49 de los 57 casos de la cola); después, el alta.
 2. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
    buscar): Novorizontino (Brasil, 12 años, digital); AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos);
    Juventus (Italia, 22 años, informes consolidados del grupo, largos: más caro y con la duda del perímetro). Los noruegos (Molde 18,
