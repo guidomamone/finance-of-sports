@@ -70,3 +70,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2017 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.pdf` (sourceId `goias-br-demonstracoes-contabeis-2017-2016`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2023 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf` (sourceId `goias-br-demonstracoes-contabeis-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2023 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf` (sourceId `goias-br-demonstracoes-contabeis-2023`).

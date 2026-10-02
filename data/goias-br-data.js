@@ -137,8 +137,10 @@ const goiasbrRevenueLinesByYear = {
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.817285, disclosureLevel:'aggregated' }, // pág. 23, Jev 1
     { rawLabel:'(-) Deduções das receitas', normalizedCategory:'other_income', amountNative:-6.116988, disclosureLevel:'aggregated' }, // pág. 23, Jev 0.94
   ],
-  // 2023: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // 2023: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
   // Generados/Brasil/Goias/demonstracoes-contabeis-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2023: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Goias/demonstracoes-contabeis-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2023: [
     { rawLabel:'Direitos de transmissão de TV (a)', normalizedCategory:'broadcasting', amountNative:48.120138, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
     { rawLabel:'Patrocínio/publicidade/propaganda (a)', normalizedCategory:'sponsorship_commercial', amountNative:13.370573, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
@@ -290,10 +292,7 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Outras despesas e receitas', normalizedCategory:'other_expenses', amountNative:-0.006692, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
   ],
   2023: [ // tools/cargar.mjs (2026-10-02)
-    // A MANO (Guido, 2026-10-02): venta del 20% de los derechos en la Liga Forte União (R$ 152.480.000; neto 140.214.785, nota 23,
-    // 2023.md L1190-1197) como ítem extraordinario y no como ingreso. exceptional_items es categoría de gastos: una ganancia va en positivo
-    // (mismo criterio que la equivalência patrimonial de Atlético Mineiro y Botafogo). OJO: un cargar.mjs --reemplazar de 2023 la vuelve a ingresos.
-    { rawLabel:'Outras Receitas e Despesas', normalizedCategory:'exceptional_items', amountNative:140.214785, disclosureLevel:'aggregated' }, // pág. 7
+    { rawLabel:'Outras Receitas e Despesas', normalizedCategory:'exceptional_items', amountNative:140.214785, disclosureLevel:'aggregated' }, // pág. 7, precedente
     { rawLabel:'Despesa com pessoal (a)', normalizedCategory:'wages_squad', amountNative:-43.24911, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.98
     { rawLabel:'Despesas com viagens (b)', normalizedCategory:'match_organisation_expense', amountNative:-7.52929, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
     { rawLabel:'Serviços de terceiros', normalizedCategory:'lump_football_operations_expense', amountNative:-7.501287, disclosureLevel:'aggregated' }, // pág. 30, precedente
@@ -407,7 +406,7 @@ const goiasbrFiscalYearMeta = {
       {renglon:'Serviços de terceiros', lado:'expense', importe:7.501287, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
     ],
     grossDebt:null, cash:null,
-    officialTotalRevenue:89.972753, /* Receita líquida impresa (2023.md L213); la venta a la LFU va como exceptional_items (a mano, Guido 2026-10-02) */  officialTotalExpenses:104.328162, officialPAT:124.434274,
+    officialTotalRevenue:89.972753, officialTotalExpenses:104.328162, officialPAT:124.434274,
   },
 };
 const goiasbrPresupuestoOverlayByYear = {};
