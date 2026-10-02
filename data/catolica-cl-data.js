@@ -405,6 +405,23 @@ const catolicaRevenueLinesByYear = {
     { rawLabel:'Ingresos por Derechos de Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:284.331, disclosureLevel:'aggregated' }, // pág. 59, precedente
     { rawLabel:'Otros ingresos por función', normalizedCategory:'other_income', amountNative:603.272, disclosureLevel:'aggregated' }, // pág. 8, precedente
   ],
+  // 2016: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2016: [
+    { rawLabel:'Ingresos por A.N.F.P.', normalizedCategory:'broadcasting', amountNative:2849.9, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Ingresos por Derechos de TV', normalizedCategory:'broadcasting', amountNative:172.305, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Ingresos por Borderó (Recaudación Entradas)', normalizedCategory:'matchday_competition', amountNative:1543.203, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Ingresos por Préstamo de Jugadores', normalizedCategory:'player_sales', amountNative:67.849, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Ingresos por venta de Jugadores', normalizedCategory:'player_sales', amountNative:3088.411, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Ingresos por Derechos de Solidaridad', normalizedCategory:'player_sales', amountNative:50.111, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Otros', normalizedCategory:'other_income', amountNative:1.347, disclosureLevel:'aggregated' }, // pág. 57, precedente
+    { rawLabel:'Ingresos Cuotas Socios Fútbol', normalizedCategory:'member_dues', amountNative:116.518, disclosureLevel:'aggregated' }, // pág. 61, precedente
+    { rawLabel:'Ingresos Matrículas de Escuelas de Fútbol', normalizedCategory:'youth_football', amountNative:337.496, disclosureLevel:'aggregated' }, // pág. 61, precedente
+    { rawLabel:'Ingresos por Publicidad y Auspicios', normalizedCategory:'sponsorship_commercial', amountNative:2827.469, disclosureLevel:'aggregated' }, // pág. 61, precedente
+    { rawLabel:'Ingresos por Ventas de Productos Tienda UC', normalizedCategory:'sponsorship_commercial', amountNative:163.961, disclosureLevel:'aggregated' }, // pág. 61, precedente
+    { rawLabel:'Ingresos por Derechos de Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:231.588, disclosureLevel:'aggregated' }, // pág. 61, precedente
+    { rawLabel:'Otros ingresos por función', normalizedCategory:'other_income', amountNative:69.261, disclosureLevel:'aggregated' }, // pág. 8, precedente
+  ],
 };
 
 const catolicaExpenseLinesByYear = {
@@ -663,6 +680,30 @@ const catolicaExpenseLinesByYear = {
     { rawLabel:'Gasto de administración', normalizedCategory:'admin_general_expense', amountNative:-1387.944, disclosureLevel:'aggregated' }, // pág. 8, precedente
     { rawLabel:'Otras ganancias (pérdidas)', normalizedCategory:'other_expenses', amountNative:-436.812, disclosureLevel:'aggregated' }, // pág. 8, precedente
   ],
+  2016: [ // tools/cargar.mjs (2026-10-02)
+    { rawLabel:'Remuneraciones', normalizedCategory:'wages_squad', amountNative:-5167.622, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Gastos de Operación', normalizedCategory:'other_expenses', amountNative:-1262.809, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Amortización pases de jugadores profesionales (*)', normalizedCategory:'player_amortisation', amountNative:-1636.872, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Amortización Concesión', normalizedCategory:'other_amortisation', amountNative:-151.068, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Amortización Licencias', normalizedCategory:'other_amortisation', amountNative:-3.119, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Gastos de torneos y otros', normalizedCategory:'match_organisation_expense', amountNative:-678.997, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Gasto por Préstamo de Jugadores', normalizedCategory:'player_amortisation', amountNative:-166.644, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Gasto por Transferencia de Jugadores', normalizedCategory:'player_amortisation', amountNative:-571.849, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Depreciación', normalizedCategory:'depreciation', amountNative:-96.902, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Costos de ventas productos', normalizedCategory:'other_expenses', amountNative:-104.354, disclosureLevel:'aggregated' }, // pág. 59, precedente
+    { rawLabel:'Otros Gastos por función', normalizedCategory:'other_expenses', amountNative:-247.724, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Provisiones No Operacionales', normalizedCategory:'admin_general_expense', amountNative:179.068, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Patentes y Contribuciones', normalizedCategory:'admin_general_expense', amountNative:-69.2, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Servicios de Mantención, Impresión y Reparación', normalizedCategory:'admin_general_expense', amountNative:-92.657, disclosureLevel:'aggregated' }, // pág. 60, Jev 1
+    { rawLabel:'Servicios de Terceros', normalizedCategory:'admin_general_expense', amountNative:-79.649, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Arriendo de Bienes', normalizedCategory:'admin_general_expense', amountNative:-186.016, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Servicios de Aseo y Seguridad', normalizedCategory:'admin_general_expense', amountNative:-73.871, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Servicios Contratados', normalizedCategory:'admin_general_expense', amountNative:-320.375, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Remuneraciones', normalizedCategory:'wages_squad', amountNative:-447.549, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Gas, Agua y Electricidad', normalizedCategory:'admin_general_expense', amountNative:-62.114, disclosureLevel:'aggregated' }, // pág. 60, Jev 0.99
+    { rawLabel:'TV Cable, Internet y Telefonía', normalizedCategory:'admin_general_expense', amountNative:-16.684, disclosureLevel:'aggregated' }, // pág. 60, Jev 1
+    { rawLabel:'Otros Gastos', normalizedCategory:'other_expenses', amountNative:-108.234, disclosureLevel:'aggregated' }, // pág. 60, Claude 0.88
+  ],
 };
 
 const catolicaFiscalYearMeta = {
@@ -882,6 +923,22 @@ const catolicaFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:10269.908, officialTotalExpenses:11417.802, officialPAT:-481.925,
   },
+  2016: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'CLP', fx:669.47, fxSource:'document_close',
+    sourceId:'catolica-cl-estados-financieros-2016',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:35.995, tax:-1.605,
+    extraRows: [
+      {label:'Ingresos financieros', value:24.548},
+      {label:'Costos financieros', value:-8.412},
+      {label:'Diferencias de cambio', value:19.859},
+      {label:'Ingreso (Gasto) por impuestos a las ganancias', value:-1.605},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:11519.419, officialTotalExpenses:11365.241, officialPAT:188.568,
+  },
 };
 
 const catolicaPresupuestoOverlayByYear = {};
@@ -985,6 +1042,12 @@ Object.assign(sources, {
     title:'Cruzados S.A.D.P. — estados-financieros-2015 (ejercicio 2015)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'catolica-cl-estados-financieros-2016': {
+    id:'catolica-cl-estados-financieros-2016', clubId:'catolica-cl',
+    title:'Cruzados S.A.D.P. — estados-financieros-2016 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
