@@ -21,6 +21,8 @@
 //                     Casos: Fortaleza 2018 ("Resultado Año 2018 (639,077)", L542) y 2019 ("Utilidad Contable (52,122)", L455).
 //   sin-dudas         sin valor: las dudas de localizar/extraer de ese documento quedan como nota y no van a la cola. Caso: Fortaleza
 //                     CEIF 2023 ("que nunca más vuelva como problema o duda").
+//   fx                (Versión 373) el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
+//                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Sin caso todavía.
 //   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
 //                     financiero, impuesto), valor TAL CUAL impreso (con su signo: un costo financiero en negativo), línea del .md y,
 //                     opcional, `reemplaza` = la etiqueta de la fila extraída que sale. Varias por documento (la clave incluye la etiqueta).
@@ -43,7 +45,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -68,7 +70,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const i = A.indexOf('--agregar'); const pdf = A[i + 1]; const campo = A[i + 2];
     if (!pdf || !CAMPOS.includes(campo)) { console.error(`Uso: --agregar "<pdf>" <campo> (campos: ${CAMPOS.join(', ')})`); process.exit(1); }
     if (!existsSync(resolve(ROOT, pdf))) { console.error(`No existe ${pdf}`); process.exit(1); }
-    if (['resultado-final', 'fila'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
+    if (['resultado-final', 'fila', 'fx'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
     const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza') } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };

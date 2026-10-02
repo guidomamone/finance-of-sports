@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 373 — Etapa 8: escalera del tipo de cambio con compuerta de fecha (2026-10-02)
+
+- `alta-club.mjs` (lo usa también `cargar.mjs`): escalón 0, ajuste manual `fx` (nuevo campo de `ajustes.mjs`); escalón 1, declarado por el documento, con COMPUERTA: si la frase de la cotización trae una fecha completa que no es la del cierre, no es la de cierre y se descarta (queda escrito en el aviso); después tabla y serie oficial, como antes. `fechasDe` lee también "20 de noviembre del año 2025".
+- Caso: Fortaleza CEIF 2025, L534 "El 20 de noviembre del año 2025 ... a la TRM de $ 3.716,73" se tomaba como declarado; ahora 3.757,08 (TRM oficial al 31-12-2025).
+- Medido: tipo de cambio de los 16 años de UC idéntico; Fortaleza solo cambia 2025.
+
 ## Versión 372 — Fortaleza CEIF 2017-2025 verificado entero; el impuesto calculado de cada ajuste, a la vista (2026-10-02)
 
 - `ajustes.mjs`: el listado muestra, al lado de cada `resultado-final`, el impuesto que verificar.mjs calculó por diferencia (el ajuste no tiene compuerta: un error en las filas termina en el impuesto).

@@ -251,6 +251,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
+import { ajusteDe } from './ajustes.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 export { resumenAltas };
@@ -599,13 +600,18 @@ function numerosDe(linea) {
 }
 
 // REGLA #0 de club-data-mapping §5: ¿el documento declara su propio tipo de cambio a USD?
-function fxDeclarado(md, moneda, mercado) {
+// COMPUERTA DE FECHA (Versión 373, escalera del tipo de cambio aprobada por Guido el 2026-10-02): una cotización cuya frase (la línea y sus
+// vecinas) trae una fecha completa que NO es la del cierre no es la de cierre: es la de una operación. Se descarta y la escalera sigue (tabla,
+// serie oficial). Caso real: Fortaleza CEIF 2025, L534 "El 20 de noviembre del año 2025, se realizó un traslado de dineros ... por USD
+// 150.000 a la TRM de $ 3.716,73": se tomaba como declarado; la TRM oficial al 31-12-2025 es 3.757,08. Una cotización SIN fecha en su frase
+// pasa como antes (los anexos "TC 41,50" de Racing o River no la traen).
+function fxDeclarado(md, moneda, mercado, cierre = null) {
   const lineas = md.split('\n');
   const cfg = MONEDAS[moneda];
   if (!cfg || moneda === 'USD') return { candidatos: [], lineasConMencion: 0 };
   const [min, max] = cfg.rango;
   const candidatos = [];
-  let lineasConMencion = 0;
+  let lineasConMencion = 0; const descartadas = [];
   // El caso típico no es una frase sino un ANEXO: "ACTIVOS Y PASIVOS EN MONEDA EXTRANJERA" con una
   // columna "TC" / "Cambio vigente" y filas "Banco ... U$S 41,50 ..." varias líneas más abajo
   // (Racing Anexo VI, River Anexo V, Newell's Anexo I). Por eso además de la ventana de ±1 línea,
@@ -629,6 +635,8 @@ function fxDeclarado(md, moneda, mercado) {
       if (n < min || n > max) continue;
       // Si hay serie de mercado para ese día, lo que se aleja más de 20% no es un tipo de cambio de cierre.
       if (mercado && Math.abs(n / mercado - 1) > 0.2) continue;
+      const fechasFrase = cierre ? fechasDe([lineas[i - 1] || '', lineas[i], lineas[i + 1] || ''].join(' ')) : [];
+      if (fechasFrase.length && !fechasFrase.includes(cierre)) { descartadas.push({ valor: n, linea: i + 1, fechas: fechasFrase }); continue; }
       candidatos.push({ valor: n, raw, linea: i + 1, texto: lineas[i].trim().slice(0, 220), cierre: CIERRE_PALABRAS.some((p) => ventana.includes(p)) });
     }
   }
@@ -638,7 +646,7 @@ function fxDeclarado(md, moneda, mercado) {
     const g = grupos.find((x) => Math.abs(x.valor / c.valor - 1) < 0.005);
     if (g) g.items.push(c); else grupos.push({ valor: c.valor, items: [c] });
   }
-  return { grupos, lineasConMencion };
+  return { grupos, lineasConMencion, descartadas };
 }
 
 // La fecha de la COLUMNA en la que está la cotización `item` (de fxDeclarado), o null. Estricto a propósito: una versión anterior que
@@ -652,7 +660,7 @@ const MESES_FX = { enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, 
   january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
 function fechasDe(linea) {
   const out = []; const t = norm(linea);
-  for (const m of t.matchAll(/\b(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})\b|\b(\d{4})-(\d{2})-(\d{2})\b|\b(\d{1,2}) (?:de )?([a-z]+),? (?:de |del )?(\d{4})\b/g)) {
+  for (const m of t.matchAll(/\b(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})\b|\b(\d{4})-(\d{2})-(\d{2})\b|\b(\d{1,2}) (?:de )?([a-z]+),? (?:de |del )?(?:ano )?(\d{4})\b/g)) {
     if (m[3]) out.push(`${m[3]}-${String(m[2]).padStart(2, '0')}-${String(m[1]).padStart(2, '0')}`);
     else if (m[4]) out.push(`${m[4]}-${m[5]}-${m[6]}`);
     else if (MESES_FX[m[8]]) out.push(`${m[9]}-${String(MESES_FX[m[8]]).padStart(2, '0')}-${String(m[7]).padStart(2, '0')}`);
@@ -993,7 +1001,7 @@ export function analizar(docArg, sitio, ov = {}) {
   E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
 
   // Tipo de cambio
-  const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ov.fx);
+  const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ov.fx, r.pdf ? ajusteDe(r.pdf, 'fx') : null);
   E.push(...fxCampos);
 
   // sourceId
@@ -1057,8 +1065,13 @@ function candidatosColor(displayName) {
   return out;
 }
 
-function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = null) {
+function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = null, ajFx = null) {
   const out = [];
+  // ESCALÓN 0 (Versión 373): ajuste manual de Guido (tools/ajustes.mjs, campo `fx`, en moneda por 1 USD).
+  if (ajFx && isFinite(Number(String(ajFx.valor).replace(',', '.')))) {
+    out.push(campo('fx', Number(String(ajFx.valor).replace(',', '.')), `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajFx.autor} ${ajFx.fecha}): ${ajFx.motivo}`, 'ok', { fxSource: 'manual' }));
+    return out;
+  }
   if (ovFx && moneda && moneda !== 'USD' && estadoMoneda !== 'pregunta' && reportType !== 'official_budget') {
     out.push(campo('fx', Number(ovFx.valor), `declarado por el documento (regla #0), leído por claude-api con cita verificada: ${ovFx.fuente}`, 'ok', { fxSource: 'document_close' }));
     return out;
@@ -1074,7 +1087,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   if (!cierre) { out.push(campo('fx', null, 'sin fecha de cierre no hay tipo de cambio de cierre', 'pendiente')); return out; }
   const serie = fxDeSerie(moneda, cierre);
   const mercado = serie.fx || (sitio.FX_CLOSE[`${moneda}@${cierre}`] || {}).fx || null;
-  const dec = fxDeclarado(md, moneda, mercado);
+  const dec = fxDeclarado(md, moneda, mercado, cierre);
   if (reportType === 'official_budget') {
     out.push(campo('fx', dec.grupos && dec.grupos.length ? dec.grupos.map((g) => g.valor) : null, 'presupuesto: el tipo de cambio es la PREMISA que declara el propio documento (fxSource document_assumption)', 'pregunta', { pregunta: 'Presupuesto: ¿qué tipo de cambio asume el documento? (si declara dos puntos, se promedian — club-data-mapping §5 regla 3)' }));
     return out;
@@ -1108,7 +1121,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
     // de sensibilidad o de exposición en moneda extranjera, sin la cotización). No es un criterio:
     // es un dato a confirmar en el documento antes de la carga. Se propone igual la cotización de
     // mercado (abajo), marcada como provisoria.
-    out.push(campo('fx', null, `el .md menciona tipo de cambio y dólar con números en ${dec.lineasConMencion} línea(s), pero ninguno es una cotización plausible`, 'pendiente', { nota: 'Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo' }));
+    out.push(campo('fx', null, `el .md menciona tipo de cambio y dólar con números en ${dec.lineasConMencion} línea(s), pero ninguno es una cotización plausible${dec.descartadas?.length ? ` (descartadas por traer en su frase otra fecha que la del cierre: ${dec.descartadas.map((d) => `${d.valor}, línea ${d.linea}, ${d.fechas.join('/')}`).join('; ')})` : ''}`, 'pendiente', { nota: 'Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo' }));
   }
   const key = `${moneda}@${cierre}`;
   if (sitio.FX_CLOSE[key]) {
