@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série B (BR) — 7 ejercicio(s) con ranking:
-//   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -20,7 +20,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieB"] = {
   2025: {
     leagueSize: null,
-    sinDato: ["goias-br"],
     clubs: [
       { id:"athleticoparanaense-br", revenue:81.597, reportType:"official_balance_sheet",
         sourceId:"athleticoparanaense-br-demonstracoes-2025",
@@ -31,6 +30,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"americamineiro-br", revenue:13.051, reportType:"official_balance_sheet",
         sourceId:"americamineiro-br-demonstracoes-2025",
         mix:[["Comercial / Sponsors",2.703],["Estadio",0.886],["Televisión",2.343],["Venta de Jugadores",0.454],["Otros ingresos",6.664]] },
+      { id:"goias-br", revenue:8.508, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2025",
+        mix:[["Comercial / Sponsors",3.622],["Televisión",3.069],["Venta de Jugadores",0.197],["Otros ingresos",1.62]] },
       { id:"operarioferroviario-br", revenue:7.181, reportType:"official_balance_sheet",
         sourceId:"operarioferroviario-br-demonstracoes-2025",
         mix:[["Cuotas Sociales",0.896],["Comercial / Sponsors",1.321],["Estadio",0.413],["Televisión",2.55],["Premios por competencias",0.96],["Venta de Jugadores",0.657],["Otras secciones deportivas",0.092],["Otros ingresos",0.293]] },
