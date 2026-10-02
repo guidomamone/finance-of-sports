@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 385 — Caja y deuda: el total de la nota de deuda (2026-10-02)
+
+- `caja-deuda.mjs`, escalón 1: si no hay filas de deuda financiera pero sí el TOTAL de una nota de deuda (en cualquier página), se propone ese total; "ninguna fila = 0" solo si tampoco existe ese total. La compuerta busca una fila de notas también en las notas del documento vecino.
+- Caso: Fortaleza 2018 y 2019 tienen solo "Total Prestamos y Sobregiros Bancarios" (4.398, L396; 794, L582): se escribía deuda 0 y la compuerta lo dejaba pasar (2017 también es 0). Se corrigió antes de commitear.
+- Fortaleza (corrida de Guido con IA, US$ 0,20, y esta): caja 2017 1.181.510 y 2018 919.687 (totales de la nota 6); deuda 2017 0, 2018 4.398, 2019 794, 2020 188.998, 2021 102.513. Medido: propuestas de UC idénticas.
+
 ## Versión 384 — Fortaleza CEIF 2017-2025 entero en el sitio local (2026-10-02)
 
 - 2021 (ajuste `cero-real` de Estadio) y 2022 (ajuste `desglose` de Patrocinios; categorización ~US$ 0,05) cargados con `cargar.mjs --desde-verificacion --escribir`, auditoría P0 0 · P1 0. Totales de los 9 años iguales a la verificación; revisado en el sitio local (2025: ingresos 6,3 M USD, resultado +0,1 M USD).
