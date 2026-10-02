@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 372 — Fortaleza CEIF 2017-2025 verificado entero; el impuesto calculado de cada ajuste, a la vista (2026-10-02)
+
+- `ajustes.mjs`: el listado muestra, al lado de cada `resultado-final`, el impuesto que verificar.mjs calculó por diferencia (el ajuste no tiene compuerta: un error en las filas termina en el impuesto).
+- `verificar.mjs`: fuera la parte B de la Versión 363 (una duda de escala contestada por la escala del año vecino: era un desvío entre escaleras). Queda la parte A: el tema "escala" no lo confirma la aritmética.
+- Ajustes: Fortaleza 2018 y 2019, costo financiero en negativo (2018: total rotulado "Total Otros Ingresos" en el PDF, como 2017; el impuesto pasa de 248.440 a 40.604 y el documento imprime 40.612; 2019: de 114.320 a 17.462); `sin-dudas` en 2018, 2019 y 2022.
+- Resultado (lote 08c, ~US$ 0,83 + 0,07 de categorización, y verificar): los 9 años de Fortaleza en "ok", cola vacía. Lote 07 (UC) idéntico.
+
 ## Versión 371 — Revertida la Versión 367 (2026-10-02)
 
 - `indice-bloques.mjs`: fuera la regla "encabezado que es fila de datos continúa la tabla anterior" y `VERSION_AMPLIADO` vuelve a 2. Decisión de Guido: era una regla, no una escalera, y el caso que la originó (Fortaleza 2017, nota 23) lo resuelve un ajuste manual. Si vuelve a hacer falta, entra como escalón.

@@ -468,10 +468,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
         // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.
         // Caso real: de las 5 preguntas de UC 2010-2014 que Guido contestó "sí" en un minuto, 4 eran de este tipo.
-        // TEMA "ESCALA" (Versión 363): las sumas NO la confirman (cerrar es invariante a la escala del documento entero; Fortaleza CEIF 2023 tenía
-        // aceptadas a la vez "¿están en miles?" y "¿están en unidades y no en miles?", las dos con propuesta "sí"). La contesta la escalera de
-        // escala: si el documento la tomó del año vecino (escalón 1), esa es la respuesta, sea cual sea la propuesta de la IA. Si no, a la cola.
-        if (d.tema === 'escala' && escala.escalon === 1) { notas.push(`duda de ${origen} contestada por el año vecino (escala: ${escala.valor}, de ${escala.de}): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
+        // TEMA "ESCALA" (Versión 363, parte B sacada en la 372 por decisión de Guido: era un desvío entre escaleras, no un escalón): las sumas
+        // NO confirman una escala (cerrar es invariante a la escala del documento entero; Fortaleza CEIF 2023 tenía aceptadas a la vez "¿están
+        // en miles?" y "¿están en unidades y no en miles?"), así que el tema 'escala' no está en la lista de abajo y va a la cola (o a un ajuste).
         if (E.cierra && !vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas (${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
         caso('duda-tema', det, que, { pagina, lineas, propuesta });
         continue;
