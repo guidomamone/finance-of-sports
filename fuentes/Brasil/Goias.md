@@ -60,3 +60,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2021 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2021.pdf` (sourceId `goias-br-demonstracoes-contabeis-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2022 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2022-fgf-go.pdf` (sourceId `goias-br-demonstracoes-contabeis-2022-fgf-go`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2023 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf` (sourceId `goias-br-demonstracoes-contabeis-2023`).

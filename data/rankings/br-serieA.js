@@ -6,7 +6,7 @@
 // Brasileirão Série A (BR) — 6 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -123,6 +123,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"vascodagama-br", revenue:71.33, reportType:"official_balance_sheet",
         sourceId:"vascodagama-br-demonstracoes-2023",
         mix:[["Cuotas Sociales",6.568],["Comercial / Sponsors",11.902],["Estadio",5.478],["Televisión",20.386],["Premios por competencias",4.098],["Venta de Jugadores",25.559],["Otras secciones deportivas",0.265],["Otros ingresos",-2.926]] },
+      { id:"goias-br", revenue:47.547, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2023",
+        mix:[["Cuotas Sociales",0.287],["Comercial / Sponsors",2.627],["Estadio",0.722],["Televisión",9.342],["Premios por competencias",2.226],["Venta de Jugadores",0.943],["Otros ingresos",31.398]] },
       { id:"coritiba", revenue:44.751, reportType:"official_balance_sheet",
         sourceId:"coritiba-demonstracoes-2022-2023",
         mix:[["Cuotas Sociales",4.46],["Comercial / Sponsors",1.527],["Estadio",0.793],["Televisión",6.925],["Venta de Jugadores",0.657],["Otros ingresos",30.388]] },
