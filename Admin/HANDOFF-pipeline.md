@@ -31,16 +31,14 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2017-2020, 2023-2025 | **cargados** en el sitio local (Versión 380) | caja y deuda |
-| 2021 | verificado; la carga frena: Estadio en 0 (real: boletería "-", L1141) | decisión: reintento (API) o ajuste |
-| 2022 | verificado; la carga frena: Televisión en 0 ("Patrocinios (1)" 2.334.630 y su detalle suma 2.280.630: error del documento) | decisión: ajuste |
+| 2017-2021, 2023-2025 | **cargados** en el sitio local (2021 con ajuste `cero-real` de Estadio) | — |
+| 2022 | verificado con ajuste `desglose` (Patrocinios abre con la diferencia del documento, 54.000) | categorizar las filas nuevas (`lote.mjs --lista Admin/lote-08b.txt --ejecutar`, ~US$ 0,03) y cargar |
+| caja y deuda | 5 datos escritos (caja 2023-2025, deuda 2024-2025) | los otros 11 solo con el escalón 2 (IA, ~US$ 0,15: `caja-deuda.mjs --club fortalezaceif-co --ejecutar --escribir`) |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-1. Fortaleza 2021 y 2022 (ver la tabla).
-2. `caja-deuda.mjs`: el escalón 1 toma la fila "Caja" (430) y no el total de la nota de efectivo (97.795); la compuerta del documento
-   siguiente lo deja pasar porque repite la misma fila. Después: `caja-deuda.mjs --club fortalezaceif-co --escribir`.
-3. Escalón de materialidad en la categorización (aprobado por Guido, sin construir): dudas ≤ 1% del total de su lado con confianza ≥ 0,60.
+1. Fortaleza 2022 y el escalón 2 de caja y deuda (ver la tabla).
+2. Escalón de materialidad en la categorización (aprobado por Guido, sin construir): dudas ≤ 1% del total de su lado con confianza ≥ 0,60.
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 
@@ -368,7 +366,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Ajustes manuales (Versión 366)
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
-  (`resultado-final`, `sin-dudas`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana
