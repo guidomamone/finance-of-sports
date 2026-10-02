@@ -38,6 +38,7 @@ import { pendientes } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { verificarLista } = await import('./verificar.mjs');
+const { ajusteDe } = await import('./ajustes.mjs');
 const { loadSite } = await import('./proponer-carga.mjs');
 process.argv = argvAntes;
 
@@ -92,9 +93,14 @@ for (const pdf of docs) {
   const ubAntes = leerDerivado(e, '.ubicacion.json');
   const candidatoNotas = REINTENTAR && ubAntes && !ubAntes.intentoNotasComoEstado && (ubAntes.sin_estado || !(ubAntes.estado || []).length)
     && (ubAntes.notas_ingresos || []).length && (ubAntes.notas_gastos || []).length && (String(e.motor || '').includes('mistral') || e.retranscritoPorLote || paginasEnImagen(pdf).length < 2);
-  if (candidatoNotas) {
-    const L3 = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true });
-    if (L3.ensayo) { usd += L3.usd + 0.07; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ~US$ 0,07`); continue; }
+  // CON AJUSTE MANUAL (Versión 370, idea de Guido: "el camino de error es ¿tiene un ajuste manual? si está, aplicarlo; si no, seguir la
+  // escalera"): un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite UNA vez las notas como estado, con el
+  // dato del ajuste como pista para localizar. Casos: Fortaleza CEIF 2018 y 2019.
+  const ajRes = ajusteDe(pdf, 'resultado-final');
+  const candidatoAjuste = REINTENTAR && ubAntes && !ubAntes.intentoNotasConAjuste && (ubAntes.sin_estado || !(ubAntes.estado || []).length) && ajRes?.linea;
+  if (candidatoNotas || candidatoAjuste) {
+    const L3 = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
+    if (L3.ensayo) { usd += L3.usd + 0.07; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ~US$ 0,07`); continue; }
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
     if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }

@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 370 — Etapa 3: el ajuste manual de resultado es la pista para "las notas hacen de estado" (2026-10-02)
+
+- `ajustes.mjs`: `--linea` para cualquier campo. `localizar.mjs`: opción `pistaResultado` (valor y línea): le dice a la IA dónde está impreso el resultado y muestra ese bloque aunque tenga una sola cifra; deja `intentoNotasConAjuste`. `lote.mjs --reintentar`: un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite una vez las notas como estado con esa pista.
+- Ajustes: Fortaleza 2018 "Resultado Año 2018 (639,077)" (L542) y 2019 "Utilidad Contable (52,122)" (L455). `Admin/lote-08b.txt`: Fortaleza 2022, para volver a localizar con el año bien leído.
+- Medido (ensayos, gratis): lote 07 (UC) no reintenta nada (US$ 0,00); lote 08 reintenta 2018 y 2019 (con la pista) y 2020 y 2024 (desgloses, índice v3), ~US$ 0,49; lote 08b ~US$ 0,12.
+
 ## Versión 369 — Etapa 1: escalera de la fecha de cierre (2026-10-02)
 
 - `periodo.mjs`: compuerta, un cierre no puede ser de más de 2 años después de hoy (Fortaleza CEIF 2022 leía 2050-12-31 de "la duración legal del Club es definida hasta el 31 de diciembre del 2050"; "posterior a hoy", lo primero que se probó, dejaba sin fecha los presupuestos 2026-27 de Boca y Racing). Escalón 1: si los títulos no traen el cierre, la primera fecha de los encabezados de columna de las tablas cuya columna de al lado es el mismo día un año antes (Fortaleza 2017-2020: "| | A 31 de Diciembre de 2020 | A 31 de Diciembre de 2019 |").

@@ -91,16 +91,22 @@ export const PEDIDO_NOTAS_COMO_ESTADO = `REINTENTO SIN ESTADO DE RESULTADOS: en 
 - notas_ingresos / notas_gastos: los cuadros que abren una fila de esas notas (un desglose dentro de otro), si los hay.
 - sin_estado = false solo si encontraste esas notas Y un resultado impreso; si no, sin_estado = true.`;
 
-export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false } = {}) {
+// PISTA DEL AJUSTE MANUAL (Versión 370; tools/ajustes.mjs, `resultado-final` con --linea): si las notas hacen de estado y Guido ya dijo
+// dónde está impreso el resultado, se le da a la IA el bloque y el valor, y ese bloque se muestra aunque tenga una sola cifra. Caso real:
+// Fortaleza CEIF 2018 y 2019, que quedaron como fuente porque la IA no vio "Resultado Año 2018 (639,077)" (L542) ni "Utilidad Contable
+// (52,122)" (L455).
+export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
   const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
   const mdText = readFileSync(resolve(ROOT, md), 'utf8');
   const { bloques } = indiceBloques(mdText, { ampliado }); // ampliado: solo en el reintento (lote.mjs --reintentar)
-  const visibles = bloques.filter((b) => b.cifras >= 2);
+  const bPista = pistaResultado?.linea ? bloques.find((b) => b.lineas[0] <= pistaResultado.linea && pistaResultado.linea <= b.lineas[1]) : null;
+  const visibles = bloques.filter((b) => b.cifras >= 2 || b === bPista);
+  const pista = pistaResultado ? `\n\nAJUSTE MANUAL DE GUIDO: el resultado del ejercicio impreso es ${pistaResultado.valor}, en la línea ${pistaResultado.linea} del .md${bPista ? ` (bloque ${bPista.id})` : ''}. Elegí ese bloque como el del resultado impreso, junto con las notas de ingresos y gastos; si las encontrás, sin_estado = false.` : '';
   // REINTENTO (Versión 340): qué faltó en el intento anterior, para que elija también el cuadro que lo abre (por ejemplo, uno por segmento).
   const faltas = (reintento || []).map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}"` : `el desglose de "${x.renglon}" no sumó (${x.suma} contra ${x.objetivo})`));
-  const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}${notasComoEstado ? `\n\n${PEDIDO_NOTAS_COMO_ESTADO}` : ''}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
+  const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}${notasComoEstado ? `\n\n${PEDIDO_NOTAS_COMO_ESTADO}` : ''}${pista}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
   if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500) };
   let r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: 'localizar', pdf }); let costo = r.costo || 0;
   if (r.error) return { error: r.error, costo };
@@ -110,7 +116,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
     const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: 'localizar-2', pdf });
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
-  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
 }
