@@ -31,14 +31,16 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2017-2025 | los 9 en "ok" en verificar (2017, 2018, 2019, 2022 y 2023 por ajustes manuales: `node tools/ajustes.mjs`); cola vacía | categorizar 2017, 2018, 2023, 2024 (desactualizados); alta del club; cargar |
+| 2017-2020, 2023-2025 | **cargados** en el sitio local (Versión 380) | caja y deuda |
+| 2021 | verificado; la carga frena: Estadio en 0 (real: boletería "-", L1141) | decisión: reintento (API) o ajuste |
+| 2022 | verificado; la carga frena: Televisión en 0 ("Patrocinios (1)" 2.334.630 y su detalle suma 2.280.630: error del documento) | decisión: ajuste |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-1. Categorizar: `caffeinate -i node tools/lote.mjs --lista Admin/lote-08.txt --ejecutar` (etapas 3-6 en caché, US$ 0; etapa 7 ~US$ 0,10).
-   Fortaleza no está en `Admin/perfil-clubes.jsonl`: puede preguntar socios / otros deportes.
-2. Alta del club (`alta-club.mjs`, primero sin --escribir), en el mismo commit que el primer año. Nunca se corrió dentro de este proceso.
-3. Cargar (`cargar.mjs --desde-verificacion --escribir` por año) → `caja-deuda.mjs --club fortalezaceif-co --escribir` → sitio local.
+1. Fortaleza 2021 y 2022 (ver la tabla).
+2. `caja-deuda.mjs`: el escalón 1 toma la fila "Caja" (430) y no el total de la nota de efectivo (97.795); la compuerta del documento
+   siguiente lo deja pasar porque repite la misma fila. Después: `caja-deuda.mjs --club fortalezaceif-co --escribir`.
+3. Escalón de materialidad en la categorización (aprobado por Guido, sin construir): dudas ≤ 1% del total de su lado con confianza ≥ 0,60.
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 

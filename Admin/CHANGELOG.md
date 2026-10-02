@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 380 — Fortaleza CEIF 2017-2020 y 2023-2025 en el sitio local (2026-10-02)
+
+- Alta del club (`alta-club.mjs`, color #003366 de Guido) y 7 años con `cargar.mjs --desde-verificacion --escribir`, un commit por año, auditoría P0 0 · P1 0 en cada uno.
+- Frenan 2021 (Estadio en 0: real, la boletería 2021 es "-", L1141) y 2022 (Televisión en 0: el renglón "Patrocinios (1)" dice 2.334.630 y su detalle suma 2.280.630, error del documento; la TV 1.208.394 queda adentro).
+- Caja y deuda sin escribir: `caja-deuda.mjs` toma "Caja 430" en vez del total del efectivo 97.795 (2024, nota 6).
+
 ## Versión 379 — Alta: el esqueleto del archivo de datos trae el bloque de fuentes (2026-10-02)
 
 - `alta-club.mjs`: el `data/<id>-data.js` nuevo trae `Object.assign(sources, {});`, donde `cargar.mjs` agrega la fuente de cada año. Sin él, la primera carga de un club dado de alta por script se revertía ("no encontré Object.assign(sources, {"). Caso: Fortaleza CEIF, primera vez que alta y carga corrieron juntas; a su archivo se le agregó el mismo bloque.
