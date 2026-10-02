@@ -26,20 +26,21 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 caja y deuda con `caja-deuda.mjs --club catolica-cl --escribir` (21 de 26).
 
 **Ahora: Fortaleza CEIF (Colombia), primer club nuevo** (`Admin/lote-08.txt`, 2017-2025). Sus PDFs traen SOLO las notas (sin balance ni estado
-de resultados). Se agregó el escalón "las notas hacen de estado" (Versión 360) y verificar lee el resultado por su etiqueta (Versión 361).
+de resultados). Se agregó el escalón "las notas hacen de estado" (Versión 360), verificar lee el resultado por su etiqueta (Versión 361) y
+la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 2024 pasan a miles, 2025↔2024↔2023 coinciden).
 
 | Año | Hoy | Qué falta |
 |---|---|---|
-| 2020, 2021, 2023, 2024, 2025 | el resultado CIERRA (notas = estado, contra el resultado impreso en la conciliación del impuesto) | escala (2023-2024), alta, cola |
+| 2020, 2021, 2023, 2024, 2025 | el resultado CIERRA (notas = estado, contra el resultado impreso en la conciliación del impuesto); 2023-2025 confirmados por el año vecino | alta, cola |
 | 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
 | 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
 | 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-1. **Escalera de ESCALA** (etapa 6): 2023 y 2024 dicen "Expresados en pesos colombianos" y las cifras son miles; extraer dejó "no se sabe" y se
-   usó unidades (2024 = 12,2 millones; el documento de 2025 lo repite como 12.206 millones: año vecino NO). Peligroso: 2023 y 2024 coinciden
-   entre sí en la escala equivocada. Propuesta: si la escala "no se sabe", la del año vecino que la declara, si los importes coinciden x1000.
+1. **Dudas de tema "escala" aceptadas por las sumas** (etapa 6, escalera de dudas, escalón 2): las sumas NO confirman una escala (cerrar es
+   invariante a la escala del documento entero). Hoy se aceptan solas aunque la escala no se haya aplicado (Fortaleza 2023 antes de la
+   Versión 362). Propuesta: tema "escala" se acepta solo si la escala salió del escalón 1 (año vecino); si no, a la cola.
 2. **2017**: el resultado impreso es después de impuestos; falta el impuesto (¿escalón: resultado final sin impuesto → buscar el impuesto?).
 3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
 4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
@@ -235,6 +236,16 @@ Mitigaciones:
 ```
 
   Si el documento no tiene ningún total ni resultado impreso en los bloques elegidos, es un fallo (no se carga sin confirmar sumas).
+- **Escalera de escala** (Versión 362; queda en el `.verificacion.json` como `escala`):
+
+```
+ ESCALÓN 0  la declarada (bloque → documento) ──────────────── declarada → manda, nunca se pisa
+ ESCALÓN 1  si el documento dice "no se sabe": la del año vecino ANCLADO (la declara o la resolvió acá),
+            si los ingresos del año en común dan exactamente x1.000 o x1.000.000 ──► COMPUERTA: chequeo de año vecino (d) ── pasa → adoptada
+ nada → unidades y cola
+```
+
+  La cadena depende del orden (Fortaleza: 2025 declara → 2024 → 2023): `verificarLista()` repite la pasada si alguno se resolvió así.
 - **Dudas de la IA, escalera** (antes de llegar a la cola):
 
 ```
