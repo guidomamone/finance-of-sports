@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 395 — Etapa 2, escalón 1: rearmar páginas con el texto propio del PDF (2026-10-02)
+
+- `texto-propio-a-md.mjs` (nuevo, gratis): rearma páginas del .md con el texto propio del PDF (`pdftotext -bbox`): separa las columnas de la página por los huecos verticales que casi ningún renglón cruza, une a su izquierda una "columna" que es solo importes (la del otro año), y arma tablas Markdown con etiqueta + importes (el número de nota va a la etiqueta). Guarda el .md anterior en Generados/ (`.antes-texto-propio.md`).
+- `lote.mjs`: escalón en el camino de error (`--reintentar`): si la etapa 4 dijo que el .md no coincide con el texto propio (cifras con un dígito distinto, casi nada en común, o texto parcial con números no confirmados) y la verificación no quedó ok, se rearman esas páginas y el documento vuelve a localizar, validar y extraer. Una vez por documento (el .md queda marcado).
+- Caso: Goiás 2008, pág. 1: "Pessoal (15.643.605)" (PDF) contra "Passas (15.845.699)" (Mistral); 2015: "Receita líquida 70.333.324,50" contra "70.303.924.30".
+- Medido (ensayo): UC (lote 07) y Fortaleza (lote 08) no lo activan; Goiás, los 7 documentos de 2008-2012, 2015 y 2016. UC 2015 (híbrido, 2 números no confirmados en la pág. 59) lo activaba hasta exigir que la verificación no esté ok.
+
 ## Versión 394 — Ajuste manual `categoria` (escalón 0 de la categorización, también entre lados) (2026-10-02)
 
 - `ajustes.mjs`: campo nuevo `categoria` (--etiqueta, --valor <categoría>). `cargar.mjs` lo toma como escalón 0: gana sobre todo, también sobre la compuerta del lado; si la categoría es del otro lado, la fila se muda sin cambiar su efecto en el resultado (un ingreso de 140 pasa a gasto de +140).

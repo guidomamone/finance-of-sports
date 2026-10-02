@@ -36,6 +36,7 @@ import { validar } from './validar-bloques.mjs';
 import { extraer } from './extraer.mjs';
 import { pendientes } from './cola.mjs';
 import { derivado } from './rutas.mjs';
+import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { verificarLista } = await import('./verificar.mjs');
 const { ajusteDe } = await import('./ajustes.mjs');
@@ -73,7 +74,7 @@ const node = (tool, argv, { silencioso = false } = {}) => {
   return r;
 };
 
-let usd = 0; const estado = {}; const aRetranscribir = [];
+let usd = 0; const estado = {}; const aRetranscribir = []; const aTextoPropio = [];
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
 const paginasEnImagen = (pdf) => {
   const n = Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0); const out = [];
@@ -108,6 +109,23 @@ for (const pdf of docs) {
     const X3 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X3.costo || 0;
     if (X3.error) { estado[pdf] = `extraer: ${X3.error}`; continue; }
     estado[pdf] = 'extraído (las notas hacen de estado)'; console.log(`  ${pdf}: las notas hacen de estado · ${X3.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
+    continue;
+  }
+  // ETAPA 2, ESCALÓN 1 (Versión 395, escalera aprobada por Guido el 2026-10-02): la etapa 4 de una corrida anterior dijo que el .md NO
+  // coincide con el texto propio del PDF (cifras con un dígito distinto, o casi nada en común) y el PDF sí tiene texto propio: esas páginas
+  // se rearman con él (tools/texto-propio-a-md.mjs, gratis) y el documento vuelve a localizar, validar y extraer. Una vez por documento
+  // (el .md queda marcado). Compuerta: la etapa 4 sobre el .md nuevo y, después, la etapa 6. Caso: Goiás 2008-2016 (balances de diario).
+  const pagsTP = paginasARearmar(pdf, e.md);
+  if (pagsTP) {
+    if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: la transcripción no coincide con el texto propio del PDF (págs. ${pagsTP.join(', ')}): rearmar con el texto propio (--reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
+    rearmar(pdf, pagsTP);
+    console.log(`  ${pdf}: págs. ${pagsTP.join(', ')} rearmadas con el texto propio del PDF (etapa 2, escalón 1)`);
+    const L4 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
+    if (L4.error || L4.datos?.sin_estado) { estado[pdf] = L4.error ? `localizar: ${L4.error}` : 'sin estado de resultados aun con el texto propio (queda como fuente)'; continue; }
+    const V4 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V4.costo || V4.usd || 0;
+    const X4 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X4.costo || 0;
+    if (X4.error) { estado[pdf] = `extraer: ${X4.error}`; continue; }
+    estado[pdf] = 'extraído (texto propio del PDF)'; console.log(`  ${pdf}: estado ${L4.datos.estado.join(',')} · ${V4.datos?.modo || '?'} · ${X4.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
     continue;
   }
   if (REINTENTAR && !reintento && !sinEstadoAntes) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
@@ -186,6 +204,11 @@ const sinArreglo = docs.filter((d) => { const e = registro.find((x) => x.pdf ===
 if (sinArreglo.length) {
   console.log(`\nDESGLOSES QUE SIGUEN SIN SUMAR DESPUÉS DEL REINTENTO (se cargan con el renglón sin abrir; diagnóstico gratis):`);
   for (const d of sinArreglo) console.log(`  node tools/diagnostico-desglose.mjs "${d}"`);
+}
+if (aTextoPropio.length && !REINTENTAR) {
+  console.log(`\nTRANSCRIPCIONES QUE NO COINCIDEN CON EL TEXTO PROPIO DEL PDF (etapa 2, escalón 1: se rearman gratis con él y se vuelve a localizar y extraer):`);
+  for (const d of aTextoPropio) console.log(`  ${d.pdf.split('/').slice(2).join('/')}: págs. ${d.paginas.join(', ')}`);
+  console.log(`  caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
 }
 if (aRetranscribir.length) {
   console.log(`\nTRANSCRIPCIONES SIN LAS PÁGINAS EN IMAGEN (etapa 2, escalón 1):`);

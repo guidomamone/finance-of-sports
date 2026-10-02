@@ -138,7 +138,9 @@ Mitigaciones:
  ESCALÓN 0  la transcripción que hay ──────── ¿localizar encuentra el estado de resultados? sí → sigue
  ESCALÓN 1  si no, la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen
             → re-transcribir con Mistral y volver a localizar (con --reintentar) ── ¿lo encuentra? sí → sigue
- ESCALÓN 2  (falta) escaneo entero → Gemini sobre las páginas candidatas
+ ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
+            quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
+ ESCALÓN 2  (falta) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```
 
