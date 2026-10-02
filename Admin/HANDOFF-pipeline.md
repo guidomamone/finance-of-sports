@@ -32,15 +32,13 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 | Año | Hoy | Qué falta |
 |---|---|---|
 | 2020, 2021, 2024, 2025 | el resultado CIERRA (notas = estado, contra la conciliación del impuesto); 2024-2025 confirmados por el año vecino y con el resultado final impreso | alta, cola |
-| 2023 | cierra antes de impuestos; el resultado final no (cola `b5a087e`) | respuesta de Guido |
+| 2023 | CERRADO por decisión de Guido (Versión 365): resultado final 1.021.768 de patrimonio, impuesto deducido 588.049. No volver a abrirlo | alta |
 | 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
 | 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
 | 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
-1. **Fortaleza 2023, resultado final** (cola `b5a087e`): antes de impuestos 1.609.817 cierra; patrimonio imprime 1.021.768 (.md L1099), ni
-   antes − impuesto (1.020.228) ni antes + impuesto. Lo contesta Guido con `corregir --valor`.
 2. **2017**: el resultado impreso es después de impuestos; falta el impuesto (¿escalón: resultado final sin impuesto → buscar el impuesto?).
 3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
 4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
@@ -393,6 +391,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ## Decisiones
 
 Tomadas por Guido:
+
+0. Fortaleza CEIF 2023 se carga con el resultado de la nota de patrimonio (1.021.768) y el impuesto deducido (588.049): cerrado por la fuerza el
+   2026-10-02, no vuelve a la cola (las respuestas están en `Admin/cola-revision.jsonl`; si se re-extrae 2023 y la IA reformula una duda, aceptarla).
 
 1. Una fila categorizada con confianza menor a 0,80 no se carga sola: va a la cola.
 2. Un total de ingresos o gastos que el documento no imprime se acepta si cierra con el resultado, y se busca un segundo chequeo.
