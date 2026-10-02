@@ -22,16 +22,30 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**UC terminado (2026-10-02), en el sitio local, sin push.** 2010-2025 cargados por el script (2009 descartado); 2022-2024 rehechos con
-`cargar.mjs --reemplazar` ("Servicios de Seguridad" en organización de partidos); caja y deuda completadas con `caja-deuda.mjs --club catolica-cl
---escribir` (21 de 26; sin dato: deuda 2011, 2012, 2015, 2016 y caja 2015, donde la compuerta no confirmó). Un commit por año.
+**UC terminado (2026-10-02), en el sitio local, sin push.** 2010-2025 por el script; 2022-2024 rehechos con `cargar.mjs --reemplazar`;
+caja y deuda con `caja-deuda.mjs --club catolica-cl --escribir` (21 de 26).
 
-Plan de Guido, en este orden:
+**Ahora: Fortaleza CEIF (Colombia), primer club nuevo** (`Admin/lote-08.txt`, 2017-2025). Sus PDFs traen SOLO las notas (sin balance ni estado
+de resultados). Se agregó el escalón "las notas hacen de estado" (Versión 360) y verificar lee el resultado por su etiqueta (Versión 361).
 
-1. **Push** (lo hace Guido): merge de la rama a `main`.
-2. **Otro club**, con el mismo proceso: lote (etapas 3-8) → `cargar.mjs --escribir` por año → `caja-deuda.mjs --club <id> --escribir`.
-   Atajar errores en el script y comprobar que siga sirviendo para UC.
-3. **Los pendientes de este HANDOFF** (lista de abajo).
+| Año | Hoy | Qué falta |
+|---|---|---|
+| 2020, 2021, 2023, 2024, 2025 | el resultado CIERRA (notas = estado, contra el resultado impreso en la conciliación del impuesto) | escala (2023-2024), alta, cola |
+| 2017 | no cierra | el impreso es "Resultado Año 2017" (después de impuestos, nota de patrimonio) y no se extrajo el impuesto |
+| 2018, 2019 | fuente | localizar no encontró notas con resultado impreso: mirar el .md |
+| 2022 | fuente | `periodo.mjs` dedujo cierre 2050-12-31 ("duración legal hasta 2050") |
+
+Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
+
+1. **Escalera de ESCALA** (etapa 6): 2023 y 2024 dicen "Expresados en pesos colombianos" y las cifras son miles; extraer dejó "no se sabe" y se
+   usó unidades (2024 = 12,2 millones; el documento de 2025 lo repite como 12.206 millones: año vecino NO). Peligroso: 2023 y 2024 coinciden
+   entre sí en la escala equivocada. Propuesta: si la escala "no se sabe", la del año vecino que la declara, si los importes coinciden x1000.
+2. **2017**: el resultado impreso es después de impuestos; falta el impuesto (¿escalón: resultado final sin impuesto → buscar el impuesto?).
+3. **2022**: `periodo.mjs` (etapa 1) no debe tomar "duración legal hasta 2050" como cierre.
+4. **2018-2019**: mirar por qué localizar no encontró notas con resultado.
+5. **Alta del club** (`alta-club.mjs`; está "listo-para-alta"), en el mismo commit que el primer año. Nunca se corrió dentro de este proceso.
+6. Cargar (`cargar.mjs --desde-verificacion --escribir` por año) → `caja-deuda.mjs --club fortalezaceif-co --escribir` → sitio local.
+- Cola: ~35 casos de Fortaleza, casi todos dudas que la aritmética contesta cuando cierre (no mandarlos a Guido antes de re-verificar).
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
 
@@ -150,6 +164,8 @@ Mitigaciones:
 ```
  ESCALÓN 0  índice normal ────────────────────────────── ¿verificar cierra y no faltan categorías? sí → sigue
  ESCALÓN 1  índice ampliado (filas que terminan en "-") + la lista de lo que faltó (--reintentar, una vez) ── ¿cierra? sí → sigue
+ ESCALÓN 2  sin estado pero con notas de ingresos y gastos: LAS NOTAS HACEN DE ESTADO (--reintentar, una vez; Versión 360)
+            el total de cada nota es un renglón; cierra contra el resultado impreso (en Colombia, la conciliación del impuesto)
  nada → se carga lo que cerró (sin abrir) o va a la cola
 ```
 
