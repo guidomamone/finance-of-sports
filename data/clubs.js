@@ -384,6 +384,9 @@ const clubs = {
   // (footylogos no tiene Grecia cacheada todavía, y las fuentes de color encontradas mezclan con
   // el club de básquet del mismo nombre) — brandColor:null a propósito en vez de adivinar un tono.
   'panathinaikos-gr': { id:'panathinaikos-gr', name:'Panathinaikos Athlitikos Omilos P.A.E.', displayName:'Panathinaikos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  // Fortaleza CEIF: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf. brandColor de Guido
+  // (2026-10-02: azul #003366 y rojo #CC0000; el campo admite un color y va el azul).
+  'fortalezaceif-co': { id:'fortalezaceif-co', name:'FORTALEZA FUTBOL CLUB S.A.', displayName:'Fortaleza CEIF', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#003366' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

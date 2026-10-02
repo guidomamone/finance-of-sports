@@ -17,6 +17,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: null,
+    sinDato: ["fortalezaceif-co"],
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
         sourceId:"atlnacional-co-estados-financieros-2025",

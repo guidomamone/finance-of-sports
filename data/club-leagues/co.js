@@ -44,4 +44,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Verificado el 2026-09-28 contra el roster ya cacheado de "2024 Liga DIMAYOR" (bajado durante
   // el onboarding de Once Caldas, mismo día) -- Boyacá Chicó apareció ahí mismo, sin fetch nuevo.
   'boyacachico-co': { 2024: 'co-primeraA' },
+  // Fortaleza CEIF (alta-club.mjs, 2026-10-02): verificado contra roster cacheado de "2025 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Fortaleza" = "Fortaleza CEIF".
+  'fortalezaceif-co': { 2025: 'co-primeraA' },
 });
