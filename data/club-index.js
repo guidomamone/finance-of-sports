@@ -80,7 +80,7 @@ window.CLUB_INDEX = {
   "flamengo-br": {"n":"Flamengo","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fluminense-br": {"n":"Fluminense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fortaleza-br": {"n":"Fortaleza","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "fortalezaceif-co": {"n":"Fortaleza CEIF","c":"CO","q":"full","y":2,"last":2018,"yrs":[[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
+  "fortalezaceif-co": {"n":"Fortaleza CEIF","c":"CO","q":"full","y":3,"last":2019,"yrs":[[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
   "fredericia-dk": {"n":"FC Fredericia","c":"DK","q":"full","y":1,"last":2019,"yrs":[[2019,"official_balance_sheet"]]},
   "fulham-gb": {"n":"Fulham","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "gambaosaka": {"n":"Gamba Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
