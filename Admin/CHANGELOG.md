@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 384 — Fortaleza CEIF 2017-2025 entero en el sitio local (2026-10-02)
+
+- 2021 (ajuste `cero-real` de Estadio) y 2022 (ajuste `desglose` de Patrocinios; categorización ~US$ 0,05) cargados con `cargar.mjs --desde-verificacion --escribir`, auditoría P0 0 · P1 0. Totales de los 9 años iguales a la verificación; revisado en el sitio local (2025: ingresos 6,3 M USD, resultado +0,1 M USD).
+
 ## Versión 383 — Caja y deuda: la caja es una parte de la nota de efectivo (2026-10-02)
 
 - `caja-deuda.mjs`, escalón 1: si la fila de caja está en una tabla que termina en un total que suma sus filas, se proponen todas esas filas; la compuerta compara contra el total de la nota de efectivo del documento vecino (las filas cambian de nombre entre años, el total no). Un 0 al principio de la fila ya no se toma como número de nota.
