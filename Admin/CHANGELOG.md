@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 383 — Caja y deuda: la caja es una parte de la nota de efectivo (2026-10-02)
+
+- `caja-deuda.mjs`, escalón 1: si la fila de caja está en una tabla que termina en un total que suma sus filas, se proponen todas esas filas; la compuerta compara contra el total de la nota de efectivo del documento vecino (las filas cambian de nombre entre años, el total no). Un 0 al principio de la fila ya no se toma como número de nota.
+- Casos: Fortaleza 2024 "Caja 430" pasa a 97.795 (Bancos 97.365 + Caja 430); 2023 "Caja | 0 | 2.152" se leía 2.152 (columna 2022), ahora 19.742; 2025, 1.767.496.
+- Medido: propuestas de UC idénticas. Fortaleza: 5 datos (caja 2023-2025, deuda 2024-2025).
+
 ## Versión 382 — Ajuste manual `desglose`: escalón 0 del cierre de una nota con un error del documento (2026-10-02)
 
 - `ajustes.mjs`: campo `desglose` (etiqueta del renglón, valor = la diferencia impresa, categoría opcional). `verificar.mjs`: si la nota de ese renglón no suma, se abre igual con una fila "Diferencia en el documento", solo si la diferencia es exactamente la del ajuste (compuerta). `cargar.mjs`: la categoría del ajuste es escalón 0 de esa fila.

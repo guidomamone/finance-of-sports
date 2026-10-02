@@ -94,7 +94,8 @@ export function filasDelMd(md) {
     }
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
-    while (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
+    // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
+    while (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
     nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)
     filas.push({ linea: i + 1, pagina, etiqueta, norm: normalizar(etiqueta), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
@@ -166,6 +167,19 @@ function propuestaPrecedente(filas, club) {
   const elegidas = []; for (const fam of club.familias) { const f = filas.find((x) => x.balance && x.familia === fam); if (!f) return null; elegidas.push(f); }
   return { escalon: 0, filas: elegidas, como: `precedente del club (${club.anio}: ${club.familias.join(' + ')})` };
 }
+// En OTRO documento del club, el total de su nota de efectivo (la tabla con una fila de caja que termina en un total que suma sus filas):
+// lo usa la compuerta para la propuesta "partes de la nota" (Versión 383), porque las filas cambian de nombre entre años (Fortaleza 2025:
+// "Bancos nacionales" / "Bancos en el exterior"), y el total no. Devuelve [fila del total] o null.
+function totalDeNotaDeCaja(filas) {
+  for (const f of filas.filter((x) => x.balance && CAJA_RE.test(x.norm) && !esTotal(x.etiqueta))) {
+    const i = filas.indexOf(f); let a = i; while (a > 0 && filas[a - 1].linea === filas[a].linea - 1) a--;
+    let b = i; while (b < filas.length - 1 && filas[b + 1].linea === filas[b].linea + 1) b++;
+    const tabla = filas.slice(a, b + 1); const tot = tabla.find((x) => x.linea > f.linea && esTotal(x.etiqueta));
+    const partes = tot ? tabla.filter((x) => x.linea < tot.linea && !esTotal(x.etiqueta)) : [];
+    if (tot && partes.length > 1 && Math.abs(partes.reduce((s, x) => s + x.valor, 0) - tot.valor) <= 1) return [tot];
+  }
+  return null;
+}
 // ESCALÓN 1: las filas del balance con nombre de caja / deuda financiera (una por familia), o "ninguna fila" de deuda (= 0).
 function propuestaVocabulario(filas, cual, club) {
   const re = cual === 'cash' ? CAJA_RE : DEUDA_FINANCIERA_RE;
@@ -178,6 +192,18 @@ function propuestaVocabulario(filas, cual, club) {
   const porFam = new Map(); for (const f of m) porFam.set(f.familia, [...(porFam.get(f.familia) || []), f]);
   if ([...porFam.values()].some((xs) => xs.length > 1)) return null; // una familia con dos importes: no hay UNA propuesta
   if (cual === 'cash' && m.length > 1) return null;
+  // UNA PARTE DE LA NOTA DE EFECTIVO (Versión 383, aprobado por Guido el 2026-10-02): si la fila de caja está en una tabla que termina en un
+  // total y las filas de esa tabla suman ese total, se PROPONEN todas esas filas (la caja es una parte, el efectivo es el total). Pasa por la
+  // misma compuerta (cada fila conserva su familia, así se busca igual en el documento vecino). Caso: Fortaleza 2024, nota 6: "Bancos 97.365 /
+  // Caja 430 / TOTAL 97.795" (L520-522); se proponía "Caja 430" y la compuerta lo dejaba pasar porque el documento 2025 repite la misma fila.
+  if (cual === 'cash') {
+    const f = m[0]; const i = filas.indexOf(f);
+    let a = i; while (a > 0 && filas[a - 1].linea === filas[a].linea - 1) a--;
+    let b = i; while (b < filas.length - 1 && filas[b + 1].linea === filas[b].linea + 1) b++;
+    const tabla = filas.slice(a, b + 1); const tot = tabla.find((x) => x.linea > f.linea && esTotal(x.etiqueta));
+    const partes = tot ? tabla.filter((x) => x.linea < tot.linea && !esTotal(x.etiqueta)) : [];
+    if (tot && partes.length > 1 && Math.abs(partes.reduce((s, x) => s + x.valor, 0) - tot.valor) <= 1) return { escalon: 1, filas: partes, enOtroDoc: totalDeNotaDeCaja, como: `vocabulario: "${f.etiqueta}" es una parte de la nota; se proponen sus filas, que suman "${tot.etiqueta}" ${tot.valor}` };
+  }
   return { escalon: 1, filas: m, como: 'vocabulario' };
 }
 // ESCALÓN 2: las líneas que eligió la IA (tienen que ser filas del balance).
@@ -198,7 +224,7 @@ export function compuerta(prop, { factor, anterior = null, siguiente = null }) {
   }
   if (siguiente) {
     if (prop.ninguna) { const fs = siguiente.filter((x) => x.balance && prop.familias.includes(x.familia) && x.cifras.length > 1); chequeos.push(['documento siguiente', fs.every((x) => x.cifras[1] === 0), fs.length ? `${fs.map((x) => x.cifras[1]).join(' + ')} en el siguiente` : 'el siguiente tampoco tiene esas filas']); }
-    else { const fs = prop.filas.map((f) => siguiente.find((x) => x.balance && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * factor); chequeos.push(['documento siguiente', Math.abs(prev - valor) <= TOL(valor), `${prev} en el siguiente`]); } }
+    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => x.balance && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * factor); chequeos.push(['documento siguiente', Math.abs(prev - valor) <= TOL(valor), `${prev} en el siguiente`]); } }
   }
   const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
   if (malos.length) return { ok: false, valor, motivo: `no coincide con ${malos.map((c) => `${c[0]} (${c[2]})`).join(' ni ')}` };
