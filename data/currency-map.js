@@ -319,6 +319,7 @@ const FX_CLOSE = {
   'DKK@2023-06-30': { fx: 6.8089, source: 'market_close', label: 'Cierre Danmarks Nationalbank al 30/6/2023, cotización directa DKK/USD (1 DKK ≈ 0,1469 USD)' },
   'DKK@2024-06-30': { fx: 6.9664, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4575) × EUR/USD (1,0705) (1 DKK ≈ 0,1435 USD)' },
   'DKK@2024-12-31': { fx: 7.1786, source: 'market_close', label: 'Cierre BCE al 31/12/2024, cruzando DKK/EUR (7,4578) × EUR/USD (1,0389) (1 DKK ≈ 0,1393 USD)' },
+  'CLP@2010-12-31': { fx: 468.01, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2011-01-03, 2010-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
