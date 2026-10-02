@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 356 — Caja y deuda como comando aparte, sobre clubes ya publicados (2026-10-01)
+
+- `caja-deuda.mjs --club <id> [--ejecutar] [--escribir]` (decisión de Guido: "dos scripts"; caja y deuda no van en el lote): completa `grossDebt`/`cash` solo donde el sitio tiene null, de más viejo a más nuevo (un dato completado cuenta como cargado para el año siguiente); `--escribir` reemplaza solo esos null en `data/<club>-data.js` con un comentario de la fuente, y publica (ASSET_V, generadores, audit.js; revierte si da P0/P1).
+- `cargar.mjs`: `publicarCambios()` sacado de `escribir()` sin cambios (lo reusa caja-deuda.mjs); exporta `snapshot`, `revertir`, `runNode`.
+- UC: los 10 vacíos (2018-2021 y 2025) salen sin IA; deuda 2018-2019 = 0, 2020 = 1.016.921 (L138 + L146), 2021 = 763.151, 2025 = 30.952.393.
+
 ## Versión 355 — Caja y deuda: la medición con IA hace 6 llamadas a la vez (2026-10-01)
 
 - `caja-deuda.mjs --medir --ia --ejecutar`: llamadas de a 6 en paralelo, con avance cada 10 documentos (pedido de Guido: tardaba demasiado de a una).

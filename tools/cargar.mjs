@@ -672,6 +672,31 @@ function runNode(script, args) {
   catch (e) { return { code: e.status ?? 1, out: (e.stdout || '') + (e.stderr || '') }; }
 }
 
+// PUBLICAR (Versión 356, sacado de escribir() sin cambios para que lo reuse tools/caja-deuda.mjs): sube ASSET_V, corre los generadores y la
+// auditoría; si audit.js da P0/P1, revierte todo lo que cambió desde `snap`. Lanza si un generador falla (quien llama revierte).
+export function publicarCambios(snap, extra, escritos) {
+  // ASSET_V (mismo criterio que alta-club.mjs: la constante Y cada ?v= literal, salvo que ya esté subido respecto de HEAD)
+  const idxPath = resolve(ROOT, 'index.html'); const idx = readFileSync(idxPath, 'utf8');
+  const actual = (idx.match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1];
+  let enHead = null;
+  try { enHead = (execFileSync('git', ['show', 'HEAD:index.html'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1]; } catch { enHead = null; }
+  if (actual && (enHead === null || enHead === actual)) {
+    const nuevo = /^\d+$/.test(actual) ? String(Number(actual) + 1) : `${actual}a`;
+    const esc = actual.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    writeFileSync(idxPath, idx.replace(`window.ASSET_V = '${actual}'`, `window.ASSET_V = '${nuevo}'`).replace(new RegExp(`\\?v=${esc}(?=["'])`, 'g'), `?v=${nuevo}`));
+    escritos.push(`index.html (ASSET_V ${actual} -> ${nuevo})`);
+  }
+  // generadores + auditoría
+  for (const g of ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js'].filter((g) => existsSync(resolve(ROOT, g)))) {
+    const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);
+  }
+  const audit = runNode('tools/audit.js', ['--quiet']);
+  const linea0 = (audit.out.match(/P0 \d+ · P1 \d+[^\n]*/) || [''])[0];
+  if (audit.code !== 0) { const rv = revertir(snap, extra); return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}); se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-2500), escritos }; }
+  return { ok: true, escritos, audit: linea0 };
+}
+export { snapshot, revertir, runNode };
+
 export function escribir(P) {
   const E = P.ejercicio; const id = E.clubId; const y = E.year;
   const dataRel = `data/${id}-data.js`; const dataPath = resolve(ROOT, dataRel);
@@ -727,25 +752,7 @@ export function escribir(P) {
     }
     // fuentes/<País>/<Club>.md (interno, no se publica)
     if (extra.length) { appendFileSync(resolve(ROOT, fuentesMd), `\n- Cargado en el sitio por tools/cargar.mjs (${HOY}): ejercicio ${y} desde \`${P.pdf}\` (sourceId \`${E.source.id}\`).\n`); escritos.push(fuentesMd); }
-    // ASSET_V (mismo criterio que alta-club.mjs: la constante Y cada ?v= literal, salvo que ya esté subido respecto de HEAD)
-    const idxPath = resolve(ROOT, 'index.html'); const idx = readFileSync(idxPath, 'utf8');
-    const actual = (idx.match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1];
-    let enHead = null;
-    try { enHead = (execFileSync('git', ['show', 'HEAD:index.html'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1]; } catch { enHead = null; }
-    if (actual && (enHead === null || enHead === actual)) {
-      const nuevo = /^\d+$/.test(actual) ? String(Number(actual) + 1) : `${actual}a`;
-      const esc = actual.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      writeFileSync(idxPath, idx.replace(`window.ASSET_V = '${actual}'`, `window.ASSET_V = '${nuevo}'`).replace(new RegExp(`\\?v=${esc}(?=["'])`, 'g'), `?v=${nuevo}`));
-      escritos.push(`index.html (ASSET_V ${actual} -> ${nuevo})`);
-    }
-    // generadores + auditoría
-    for (const g of ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js'].filter((g) => existsSync(resolve(ROOT, g)))) {
-      const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);
-    }
-    const audit = runNode('tools/audit.js', ['--quiet']);
-    const linea0 = (audit.out.match(/P0 \d+ · P1 \d+[^\n]*/) || [''])[0];
-    if (audit.code !== 0) { const rv = revertir(snap, extra); return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}); se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-2500), escritos }; }
-    return { ok: true, escritos, audit: linea0 };
+    return publicarCambios(snap, extra, escritos);
   } catch (err) {
     const rv = revertir(snap, extra);
     return { ok: false, motivo: `${err.message} — se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, escritos };

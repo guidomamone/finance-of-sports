@@ -31,6 +31,13 @@
 //   node tools/caja-deuda.mjs "<pdf o md>" --club <clubId> [--anio 2024] [--factor 0.001]    qué leería (con el precedente de los otros años)
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle]                           MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
+//   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
+//
+// --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
+// recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
+// a mano). Corrido después de cargar, el año anterior ya está en el sitio, y eso es lo que confirma el escalón 1. Un valor que se completa en esta
+// misma corrida cuenta como cargado para el año siguiente. Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
+// data/<club>-data.js con un comentario de dónde salió cada dato, sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte.
 //
 // --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo
 // y lo compara con lo cargado a mano. El precedente sale SOLO de los OTROS años del club (nunca del mismo: si no, se aprendería la respuesta).
@@ -379,8 +386,76 @@ async function medir({ club = null, detalle = false, ia = false, ejecutar = fals
   return casos;
 }
 
+// ---------------------------------------------------------------- COMPLETAR UN CLUB PUBLICADO (--club)
+function cierreDe(txt, abre) { let n = 0; for (let i = abre; i < txt.length; i++) { if (txt[i] === '{') n++; else if (txt[i] === '}') { n--; if (!n) return i; } } return -1; }
+const HOY = new Date().toISOString().slice(0, 10);
+
+export async function completarClub(clubId, { ejecutar = false, escribir = false } = {}) {
+  const { G, S } = sitio(); const d = G[clubId];
+  if (!d) return { error: `no existe ${clubId} en el sitio` };
+  const anios = Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
+  const cache = new Map(); const filasDe = (md) => { if (!cache.has(md)) cache.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return cache.get(md); };
+  const conocidos = { grossDebt: {}, cash: {} };
+  for (const a of anios) for (const k of ['grossDebt', 'cash']) if (a.m[k] != null) conocidos[k][a.anio] = a.m[k];
+  const propuestas = []; let usd = 0;
+  for (const a of anios) {
+    const faltan = ['grossDebt', 'cash'].filter((k) => a.m[k] == null); if (!faltan.length) continue;
+    if (!a.md) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, valor: null, como: 'la fuente no nombra la transcripción' }); continue; }
+    const filas = filasDe(a.md); const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
+    const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio]);
+    const res = {};
+    for (const k of faltan) {
+      const precedentes = Object.entries(conocidos[k]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
+        .map(([y, v]) => ({ anio: y, valor: v, filas: (anios.find((o) => o.anio === y)?.md) ? filasDe(anios.find((o) => o.anio === y).md) : [] }));
+      res[k] = { ...leerDato(filas, k === 'cash' ? 'cash' : 'deuda', { precedentes, factor, anterior: conocidos[k][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null }), _anterior: conocidos[k][String(Number(a.anio) - 1)] ?? null };
+    }
+    // escalón 2: una llamada por documento para lo que siga sin dato
+    const sinDato = faltan.filter((k) => res[k].valor == null);
+    if (sinDato.length) {
+      const mdText = readFileSync(resolve(ROOT, a.md), 'utf8');
+      const r = await porIA({ md: a.md, mdText, filas, criterioDeuda: criterioDeudaDe(res.grossDebt?.familiasPrecedente || []), ejecutar });
+      if (r.ensayo) { usd += r.usd; for (const k of sinDato) res[k].como += ` · IA: ensayo (~US$ ${r.usd.toFixed(3)})`; }
+      else if (r.error) { for (const k of sinDato) res[k].como += ` · IA: ${r.error}`; }
+      else { usd += r.costo || 0; const balanceTxt = textoBalance(mdText, filas).replace(/\s+/g, ' ');
+        for (const k of sinDato) { const x = datoDeIA(r.datos, filas, k === 'cash' ? 'cash' : 'deuda', { anterior: res[k]._anterior, siguiente: sig ? filasDe(sig.md) : null, balanceTxt }); res[k] = x.valor != null ? x : { ...res[k], como: `${res[k].como} · ${x.como}` }; } }
+    }
+    for (const k of faltan) { if (res[k].valor != null) conocidos[k][a.anio] = res[k].valor; propuestas.push({ anio: a.anio, cual: k, ...res[k] }); }
+  }
+  for (const p of propuestas) console.log(`  ${p.anio} ${p.cual === 'cash' ? 'caja ' : 'deuda'}: ${p.valor ?? 'null'}  (${p.escalon != null ? `escalón ${p.escalon}, ${p.validacion}; ` : ''}${p.como})${(p.filas || []).map((f) => `\n        "${String(f.etiqueta).slice(0, 60)}" ${f.importe} · pág. ${f.pagina} del visor · L${f.linea}`).join('')}`);
+  const conValor = propuestas.filter((p) => p.valor != null);
+  console.log(`\n${clubId}: ${conValor.length} dato(s) para completar de ${propuestas.length} vacío(s).${!ejecutar && usd ? ` Escalón 2 (IA) en ensayo: ~US$ ${usd.toFixed(2)}; agregá --ejecutar.` : ejecutar ? ` IA: US$ ${usd.toFixed(3)}.` : ''}`);
+  if (!escribir || !conValor.length) return { propuestas };
+  // ESCRIBIR: solo reemplaza `grossDebt:null` / `cash:null` adentro del bloque del año en <club>FiscalYearMeta, con un comentario de la fuente.
+  const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
+  const dataPath = resolve(ROOT, `data/${clubId}-data.js`); const snap = snapshot(); const escritos = [`data/${clubId}-data.js`];
+  try {
+    let t = readFileSync(dataPath, 'utf8');
+    const ini = t.search(/const \w+FiscalYearMeta\s*=\s*\{/); if (ini < 0) throw new Error('no encontré <club>FiscalYearMeta');
+    for (const anio of [...new Set(conValor.map((p) => p.anio))]) {
+      const abreObj = t.indexOf('{', ini); const cierraObj = cierreDe(t, abreObj);
+      const m = new RegExp(`\\n(\\s*)['"]?${anio}['"]?\\s*:\\s*\\{`).exec(t.slice(abreObj, cierraObj)); if (!m) throw new Error(`no encontré el año ${anio}`);
+      const abre = abreObj + m.index + m[0].length - 1; const cierra = cierreDe(t, abre); let bloque = t.slice(abre, cierra);
+      const notas = [];
+      for (const p of conValor.filter((x) => x.anio === anio)) {
+        const re = new RegExp(`\\b${p.cual}\\s*:\\s*null\\b`); if (!re.test(bloque)) throw new Error(`${anio}: no encontré ${p.cual}:null (¿ya tiene valor?)`);
+        bloque = bloque.replace(re, `${p.cual}:${r6(p.valor)}`);
+        notas.push(`${p.cual} escalón ${p.escalon} (${p.validacion}): ${p.filas.length ? p.filas.map((f) => `"${String(f.etiqueta).slice(0, 50)}" pág. ${f.pagina}`).join(' + ') : p.como}`);
+      }
+      bloque = bloque.replace(/(\n(\s*)(?=[^\n]*\b(?:grossDebt|cash)\s*:))/, `\n$2// tools/caja-deuda.mjs (${HOY}): ${notas.join('; ').replace(/\n/g, ' ')}$1`);
+      t = t.slice(0, abre) + bloque + t.slice(cierra);
+    }
+    writeFileSync(dataPath, t);
+    const r = publicarCambios(snap, [], escritos);
+    console.log(r.ok ? `Escrito: ${r.escritos.join(', ')} · ${r.audit}` : `NO se escribió: ${r.motivo}`);
+    return { propuestas, escrito: r };
+  } catch (err) { const rv = revertir(snap, []); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); return { propuestas, error: err.message }; }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  if (flag('--club') && !A.some((x) => !x.startsWith('--') && x !== flag('--club') && x !== flag('--anio') && x !== flag('--factor'))) {
+    const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0);
+  }
   if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
   const arg = A.find((x) => !x.startsWith('--') && x !== flag('--club') && x !== flag('--anio') && x !== flag('--factor'));
   if (!arg || !flag('--club')) { console.error('Uso: node tools/caja-deuda.mjs "<pdf o md>" --club <clubId> [--anio 2024] [--factor 0.001]  |  --medir [--club x] [--detalle]'); process.exit(1); }
