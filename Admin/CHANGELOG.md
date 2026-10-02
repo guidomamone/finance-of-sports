@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 359 — Universidad Católica 2010-2025 escrita en el sitio por el script (2026-10-02)
+
+- UC 2010-2017 cargados con `cargar.mjs --desde-verificacion --escribir` (un commit por año, audit.js P0 0 · P1 0). 2022-2024 rehechos con `--reemplazar`: "Servicios de Seguridad" pasa a organización de partidos (65,574 / 72,244 / 77,365 millones de CLP), tipo de cambio del documento en vez del de mercado, se conservan caja, deuda, gestión y los jugadores vendidos.
+- Caja y deuda de 2010-2025 con `caja-deuda.mjs --club catolica-cl --escribir`: 21 de 26 vacíos; sin dato deuda 2011, 2012, 2015, 2016 y caja 2015 (2016 reexpresa la caja de 2015; 2011 tiene "Pasivos financieros no corrientes" que no coincide con 2010).
+- `cargar.mjs`: la meta escribe `gestionId`, `grossDebt` y `cash` reales (en un año nuevo siguen en null); arreglo del escape en la búsqueda del año de `--reemplazar`.
+
 ## Versión 358 — cargar.mjs --reemplazar: rehacer con el script un ejercicio ya cargado (2026-10-02)
 
 - `cargar.mjs --reemplazar`: "ya cargado", "la fuente ya existe" y "sin .categorias.json" pasan de frenar a aviso (lo demás frena igual); al escribir borra los bloques del año y escribe los nuevos, conservando grossDebt/cash (si el script no los trae), gestionId, la fuente existente y los `items` (jugadores vendidos) por etiqueta. Sin `--reemplazar`, la propuesta de los 16 años de UC es idéntica antes y después.

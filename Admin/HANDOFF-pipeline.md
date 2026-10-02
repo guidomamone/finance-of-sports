@@ -22,21 +22,35 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Terminando Universidad Católica (Cruzados).** Plan de Guido, en este orden:
+**UC terminado (2026-10-02), en el sitio local, sin push.** 2010-2025 cargados por el script (2009 descartado); 2022-2024 rehechos con
+`cargar.mjs --reemplazar` ("Servicios de Seguridad" en organización de partidos); caja y deuda completadas con `caja-deuda.mjs --club catolica-cl
+--escribir` (21 de 26; sin dato: deuda 2011, 2012, 2015, 2016 y caja 2015, donde la compuerta no confirmó). Un commit por año.
 
-1. ~~Dejar UC entero listo para cargar~~ (hecho 2026-10-01): 2010-2017 dan CARGA; 2018-2025 ya están en el sitio; 2009 descartado.
-2. **Volver a correr TODOS los años de UC** (`Admin/lote-07.txt`) y confirmar que da igual: corrido una vez, sin manta corta
-   (los años que cerraban, idénticos; 2018-2021 y 2025 iguales al sitio por categoría). Falta la corrida final después de las Versiones 350-351:
-   `caffeinate -i node tools/lote.mjs --lista Admin/lote-07.txt --ejecutar`. Tiene que terminar con "Listo para cargar 8 · Frenados 0".
-3. **Escribirlo en los datos del sitio** (commit local, sin deploy: el push lo hace Guido). Antes, decidir con Guido 2022-2024 (cargados a
-   mano): ahí "Servicios de Seguridad" está dentro de gastos de administración; en 2018-2021 y en el script va a organización de partidos.
-4. **Los pendientes de este HANDOFF** (lista de abajo).
-5. **Otro club**, con el mismo proceso: atajar errores en el script y comprobar que siga sirviendo para UC y los demás.
+Plan de Guido, en este orden:
+
+1. **Push** (lo hace Guido): merge de la rama a `main`.
+2. **Otro club**, con el mismo proceso: lote (etapas 3-8) → `cargar.mjs --escribir` por año → `caja-deuda.mjs --club <id> --escribir`.
+   Atajar errores en el script y comprobar que siga sirviendo para UC.
+3. **Los pendientes de este HANDOFF** (lista de abajo).
+
+Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
+
+```
+ ESCALA: una por documento (la del estado de resultados contra lo cargado)
+ ESCALÓN 0 precedente del club ─┐
+ ESCALÓN 1 vocabulario ─────────┤─► COMPUERTA (la misma): año anterior cargado o documento siguiente, mismas filas, columna del año anterior
+ ESCALÓN 2 IA (solo líneas) ────┘    pasa → dato · no pasa → siguiente escalón · nada → null
+```
 
 Pendientes:
 
 - `cargar.mjs`: una fila con "no_es_rubro" por debajo de 0,80 de confianza se excluye sin pasar por el umbral (UC 2010: "Ingresos por
   recaudaciones y otros" 2.163.676 afuera; lo atajó la suma y el reintento lo abrió). Debería ir al camino de dudas como cualquier otra.
+- Caja y deuda, probado y no adoptado (manta corta, Versión 357+): compuerta con "vecino independiente" (perdía el escalón 0) y lectura en el
+  texto del PDF (no sirve en escaneos). Ideas pendientes, a medir solo con un club real: precedente que sume lo cargado en DOS años (Bahia
+  2025 aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
+- El comentario que escribe `cargar.mjs` en la meta todavía dice "grossDebt/cash: no se leen por script todavía": ahora los completa
+  `caja-deuda.mjs` (o los conserva `--reemplazar`).
 - Que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (otra sesión; hoy ningún año cargado lo usa).
 - Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
 - Etapas 4 y 8: registrar en qué escalón salió cada dato (las escaleras existen, falta dejarlo escrito por documento).
