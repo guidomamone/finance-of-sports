@@ -51,8 +51,6 @@ Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; 
 
 Pendientes:
 
-- `cargar.mjs`: una fila con "no_es_rubro" por debajo de 0,80 de confianza se excluye sin pasar por el umbral (UC 2010: "Ingresos por
-  recaudaciones y otros" 2.163.676 afuera; lo atajó la suma y el reintento lo abrió). Debería ir al camino de dudas como cualquier otra.
 - Caja y deuda, probado y no adoptado (manta corta, Versión 357+): compuerta con "vecino independiente" (perdía el escalón 0) y lectura en el
   texto del PDF (no sirve en escaneos). Ideas pendientes, a medir solo con un club real: precedente que sume lo cargado en DOS años (Bahia
   2025 aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.

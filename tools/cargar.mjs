@@ -346,14 +346,18 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // se propone la genérica de su lado (otros ingresos / otros gastos) con confianza 0, así llega a la cola como pregunta de sí o no, con la
   // clave "etiqueta|lado". Caso: Fortaleza 2025 "Diversos" 1.986 en otros ingresos, que Jev categorizó other_expenses con 0,99.
   const delOtroLado = (cat, lado) => lado && cat && ladoDeCat(cat) && ladoDeCat(cat) !== lado;
-  const catDe = (label, lado) => {
+  // NO ES RUBRO (Versión 378, escalón c; pendiente del HANDOFF desde UC 2010): en una fila VERIFICADA (la etapa 6 la usó para cerrar el
+  // resultado), un "no_es_rubro" por debajo del umbral no la excluye en silencio: sigue el mismo camino que una categoría del otro lado
+  // (precedente de su lado, o la genérica a la cola). Caso: Fortaleza 2019 "Total Costo de Ventas" 137.713 y 2020 52.995 (Claude, 0,6).
+  const catDe = (label, lado, verificada = false) => {
     const k = norm(label);
     let c = (lado && porEtiqueta.get(`${k}|${lado}`)) || porEtiqueta.get(k);
-    const rechazada = c && delOtroLado(c.categoria, lado) ? c.categoria : null;
+    const noRubroDudoso = verificada && lado && c?.categoria === 'no_es_rubro' && (c.escalon === 2 && (c.confianza ?? 0) < UMBRAL_CLAUDE);
+    const rechazada = c && (delOtroLado(c.categoria, lado) || noRubroDudoso) ? c.categoria : null;
     if (c && !rechazada) return { cat: c.categoria || null, conf: c.confianza ?? null, escalon: c.escalon, fuenteCat: 'categorias.json', enLista: true };
     const p = precedenteFamilia(lineasClub, clubId, lado || null, label);
-    if (p && !delOtroLado(p.cat, lado)) return { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club, ${p.via} (${rechazada ? `categorias.json decía ${rechazada}, del otro lado` : 'la fila no estaba en categorias.json'})`, enLista: true };
-    if (rechazada) return { cat: lado === 'revenue' ? 'other_income' : 'other_expenses', conf: 0, escalon: 2, fuenteCat: `categorias.json decía ${rechazada}, del otro lado que la fila: se propone la genérica de su lado`, enLista: true, ladoRechazado: true };
+    if (p && !delOtroLado(p.cat, lado) && !(noRubroDudoso && p.cat === 'no_es_rubro')) return { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club, ${p.via} (${rechazada ? `categorias.json decía ${rechazada}` : 'la fila no estaba en categorias.json'})`, enLista: true };
+    if (rechazada) return { cat: lado === 'revenue' ? 'other_income' : 'other_expenses', conf: 0, escalon: 2, fuenteCat: `categorias.json decía ${rechazada}${noRubroDudoso ? ` con ${c.confianza} (fila verificada: no se excluye sola)` : ', del otro lado que la fila'}: se propone la genérica de su lado`, enLista: true, ladoRechazado: true };
     return { cat: null, fuenteCat: 'la fila no está en categorias.json ni tiene precedente', enLista: false };
   };
   const aceptable = (c) => c.cat && c.cat !== 'no_es_rubro' && ladoDeCat(c.cat) && (c.escalon !== 2 || (c.conf ?? 0) >= UMBRAL_CLAUDE);
@@ -400,7 +404,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const aprendidasYa = existsSync(ARCHIVO_APRENDIDAS) ? readFileSync(ARCHIVO_APRENDIDAS, 'utf8') : '';
   const enCola = [];
   const filas = raw.map((r) => {
-    const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside) };
+    const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside, String(r.origen || '').startsWith('verificacion')) };
     // COMPUERTA DEL LADO (Versión 374, aprobada por Guido el 2026-10-02): la respuesta de Guido se aplica solo si su categoría es del MISMO
     // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.

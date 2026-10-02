@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 378 — Etapa 8: una fila verificada no se excluye sola por "no es rubro" dudoso (2026-10-02)
+
+- `cargar.mjs`: en una fila que viene de la verificación, un "no_es_rubro" de Claude por debajo del umbral sigue el camino de la compuerta del lado (precedente de su lado, o la genérica a la cola). Cierra el pendiente del HANDOFF (UC 2010, "Ingresos por recaudaciones y otros").
+- Caso: Fortaleza 2019 "Total Costo de Ventas" 137.713 y 2020 52.995 (Claude, 0,6) se excluían y el resultado no cerraba.
+- Medido: propuesta de carga de UC idéntica (16 de 16). Fortaleza: los 9 años cierran en la carga; quedan preguntas de categoría y categorías en 0.
+
 ## Versión 377 — Etapa 8: compuerta del lado en toda la escalera de categorización (2026-10-02)
 
 - `cargar.mjs`: la lista de categorías del documento se busca por etiqueta y lado; una categoría (de la lista o del precedente) del otro lado que la fila no se acepta; si no hay ninguna de su lado, se propone la genérica del lado (otros ingresos / otros gastos) con confianza 0 y va a la cola con la clave "etiqueta|lado".
