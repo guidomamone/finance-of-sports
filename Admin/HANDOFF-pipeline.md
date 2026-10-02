@@ -34,8 +34,8 @@ la escala sale del año vecino si el documento no la sabe (Versión 362: 2023 y 
 | 2020, 2021, 2023 | ok (2020↔2021 por año vecino; 2023 por ajustes) | alta, cargar |
 | 2024, 2025 | cierran, año vecino ok; sin dudas (ajuste) | 2024: reintento de desgloses (índice v3) opcional |
 | 2017 | cierra por ajustes | "primer año": se confirma cuando 2018 pase por extraer |
-| 2018, 2019 | fuente: localizar (notas como estado) no vio el resultado impreso: 2018 "Resultado Año 2018 (639,077)" L542 pág. 14; 2019 "Utilidad Contable (52,122)" L455 pág. 13 (lo confirma 2020 L829) | propuesta: ajuste resultado-final + reintento de notas como estado con ese dato |
-| 2022 | fuente: se localizó cuando el año era 2050 | volver a localizar (`--rehacer`, solo 2022) |
+| 2018, 2019 | fuente: localizar (notas como estado) no vio el resultado impreso: 2018 "Resultado Año 2018 (639,077)" L542 pág. 14; 2019 "Utilidad Contable (52,122)" L455 pág. 13 (lo confirma 2020 L829) | ajuste resultado-final con línea cargado (Versión 370): lo toma `--reintentar` |
+| 2022 | fuente: se localizó cuando el año era 2050 | volver a localizar: `lote.mjs --lista Admin/lote-08b.txt --rehacer` |
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + Fortaleza lote 08):
 
