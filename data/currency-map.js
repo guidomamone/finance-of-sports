@@ -326,6 +326,7 @@ const FX_CLOSE = {
   'CLP@2014-12-31': { fx: 606.75, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2015-01-02, 2014-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
   'COP@2017-12-31': { fx: 2984, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2017-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
   'COP@2019-12-31': { fx: 3277.14, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2019-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'COP@2020-12-31': { fx: 3432.5, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2020-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
