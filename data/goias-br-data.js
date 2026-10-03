@@ -90,39 +90,8 @@ const goiasbrRevenueLinesByYear = {
   // Generados/Brasil/Goias/demonstracoes-contabeis-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2024: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Goias/demonstracoes-contabeis-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  2024: [
-    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:5.789474, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
-    { rawLabel:'Patrocínio/publicidade/propaganda', normalizedCategory:'sponsorship_commercial', amountNative:6.987666, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
-    { rawLabel:'Premiação/participações', normalizedCategory:'competition_bonus', amountNative:5.7525, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
-    { rawLabel:'Receitas Atividades Sociais e Lazer', normalizedCategory:'other_income', amountNative:8.759568, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Bilheterias', normalizedCategory:'matchday_competition', amountNative:2.71428, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Transação de atletas', normalizedCategory:'player_sales', amountNative:3.58769, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:3.81475, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-    { rawLabel:'Sou Goiás', normalizedCategory:'member_dues', amountNative:2.66899, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Jogos lotéricos', normalizedCategory:'other_income', amountNative:0.921143, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'Receitas patrimoniais', normalizedCategory:'other_income', amountNative:0.223135, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'(-) INSS Competições/Torneios', normalizedCategory:'matchday_competition', amountNative:-0.732026, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'(-) Deduções das mensalidades', normalizedCategory:'member_dues', amountNative:-0.614445, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
-    { rawLabel:'(-) INSS Patrocínio/Publicidade/Propaganda', normalizedCategory:'sponsorship_commercial', amountNative:-0.33105, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'(-) Custos e Despesas Sou Goiás', normalizedCategory:'member_dues', amountNative:-0.509233, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'(-) Demais deduções da receita', normalizedCategory:'other_income', amountNative:-0.062874, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'(-) IRRF Jogos Lotéricos', normalizedCategory:'other_income', amountNative:-0.087048, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'(-) Cortez. Ingressos - Camp. Goiano', normalizedCategory:'matchday_competition', amountNative:-0.001815, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'(-) INSS Jogos Lotéricos', normalizedCategory:'other_income', amountNative:-0.046057, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'(-) Cortez. Ingressos - Copa Verde', normalizedCategory:'matchday_competition', amountNative:-0.002275, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'(-) Gestão de Bilheteria', normalizedCategory:'matchday_competition', amountNative:-0.385301, disclosureLevel:'aggregated' }, // pág. 26, Claude 0.85
-    { rawLabel:'(-) Fenapaf', normalizedCategory:'broadcasting', amountNative:-0.471658, disclosureLevel:'aggregated' }, // pág. 26, precedente
-  ],
   // 2025: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Goias/demonstracoes-contabeis-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
-  2025: [
-    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:16.887449, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Receitas Atividades Sociais e Lazer', normalizedCategory:'other_income', amountNative:9.835889, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Patrocínio/bilheteria/Sócio Torcedor/ Outras', normalizedCategory:'sponsorship_commercial', amountNative:19.931127, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Transação de atletas', normalizedCategory:'player_sales', amountNative:1.084364, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'(-) Demais deduções da receita', normalizedCategory:'other_income', amountNative:-2.364205, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
-    { rawLabel:'Outras Receitas (b)', normalizedCategory:'other_income', amountNative:1.439848, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.98
-  ],
   // 2017: cargado por tools/cargar.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Goias/demonstracoes-contabeis-2017-2016.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2017: [
@@ -333,6 +302,41 @@ const goiasbrRevenueLinesByYear = {
     { rawLabel:'RECEITA LÍQUIDA DAS ATIVIDADES', normalizedCategory:'lump_football_operations', amountNative:83.004966, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.94
     { rawLabel:'Outras receitas e despesas', normalizedCategory:'other_income', amountNative:0.018408, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Goias/demonstracoes-contabeis-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:5.789474, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Patrocínio/publicidade/propaganda', normalizedCategory:'sponsorship_commercial', amountNative:6.987666, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Premiação/participações', normalizedCategory:'competition_bonus', amountNative:5.7525, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Receitas Atividades Sociais e Lazer', normalizedCategory:'other_income', amountNative:8.759568, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Bilheterias', normalizedCategory:'matchday_competition', amountNative:2.71428, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Transação de atletas', normalizedCategory:'player_sales', amountNative:3.58769, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:3.81475, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Sou Goiás', normalizedCategory:'member_dues', amountNative:2.66899, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Jogos lotéricos', normalizedCategory:'other_income', amountNative:0.921143, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'Receitas patrimoniais', normalizedCategory:'other_income', amountNative:0.223135, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'(-) INSS Competições/Torneios', normalizedCategory:'matchday_competition', amountNative:-0.732026, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'(-) Deduções das mensalidades', normalizedCategory:'member_dues', amountNative:-0.614445, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
+    { rawLabel:'(-) INSS Patrocínio/Publicidade/Propaganda', normalizedCategory:'sponsorship_commercial', amountNative:-0.33105, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'(-) Custos e Despesas Sou Goiás', normalizedCategory:'member_dues', amountNative:-0.509233, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'(-) Demais deduções da receita', normalizedCategory:'other_income', amountNative:-0.062874, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'(-) IRRF Jogos Lotéricos', normalizedCategory:'other_income', amountNative:-0.087048, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'(-) Cortez. Ingressos - Camp. Goiano', normalizedCategory:'matchday_competition', amountNative:-0.001815, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'(-) INSS Jogos Lotéricos', normalizedCategory:'other_income', amountNative:-0.046057, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'(-) Cortez. Ingressos - Copa Verde', normalizedCategory:'matchday_competition', amountNative:-0.002275, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'(-) Gestão de Bilheteria', normalizedCategory:'matchday_competition', amountNative:-0.385301, disclosureLevel:'aggregated' }, // pág. 26, Claude 0.85
+    { rawLabel:'(-) Fenapaf', normalizedCategory:'broadcasting', amountNative:-0.471658, disclosureLevel:'aggregated' }, // pág. 26, precedente
+  ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Goias/demonstracoes-contabeis-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:16.887449, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Receitas Atividades Sociais e Lazer', normalizedCategory:'other_income', amountNative:9.835889, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Patrocínio/bilheteria/Sócio Torcedor/ Outras', normalizedCategory:'sponsorship_commercial', amountNative:19.931127, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Transação de atletas', normalizedCategory:'player_sales', amountNative:1.084364, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'(-) Demais deduções da receita', normalizedCategory:'other_income', amountNative:-2.364205, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Outras Receitas (b)', normalizedCategory:'other_income', amountNative:1.439848, disclosureLevel:'aggregated' }, // pág. 30, precedente
+  ],
 };
 const goiasbrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-02)
@@ -374,59 +378,6 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Provisões para contingências', normalizedCategory:'admin_general_expense', amountNative:-2.720925, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.98
     { rawLabel:'Despesas com serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-5.283848, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-6.764942, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
-  ],
-  2024: [ // tools/cargar.mjs (2026-10-02)
-    { rawLabel:'Despesa com pessoal', normalizedCategory:'admin_general_expense', amountNative:-44.603582, disclosureLevel:'aggregated' }, // pág. 26, Claude 0.85
-    { rawLabel:'Despesas com viagens', normalizedCategory:'match_organisation_expense', amountNative:-3.161637, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Serviços de terceiros', normalizedCategory:'lump_football_operations_expense', amountNative:-8.114569, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Cessão de Direitos Imagem (a)', normalizedCategory:'wages_squad', amountNative:-12.284241, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
-    { rawLabel:'Materiais Esportivos', normalizedCategory:'other_expenses', amountNative:-1.185464, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Cessão Temporária', normalizedCategory:'player_amortisation', amountNative:-0.488366, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Amortização de custo de atletas formados', normalizedCategory:'player_amortisation', amountNative:-0.695254, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
-    { rawLabel:'Amortização de custo de atletas contratados', normalizedCategory:'player_amortisation', amountNative:-1.063213, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Arbitragens', normalizedCategory:'match_organisation_expense', amountNative:-0.127483, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-    { rawLabel:'Taxas confederações e federações', normalizedCategory:'match_organisation_expense', amountNative:-0.601449, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
-    { rawLabel:'Demais custos e despesas operacionais', normalizedCategory:'other_expenses', amountNative:-0.907274, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Outros custos com atletas', normalizedCategory:'wages_squad', amountNative:-0.012469, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Cessão Definitiva', normalizedCategory:'player_amortisation', amountNative:-0.002525, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Custos e despesas c/ pessoal jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.104915, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Exames antidoping', normalizedCategory:'match_organisation_expense', amountNative:-0.01355, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Luvas (a)', normalizedCategory:'wages_squad', amountNative:-0.423842, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Despesa formação atletas base (b)', normalizedCategory:'youth_other_sports_expense', amountNative:-2.174585, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Outros custos e despesas com jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.683022, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'Despesa com pessoal (a)', normalizedCategory:'wages_squad', amountNative:-9.428348, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.98
-    { rawLabel:'Provisões para contingências', normalizedCategory:'admin_general_expense', amountNative:-1.740842, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.98
-    { rawLabel:'Despesas Administrativas (materiais inclusos)', normalizedCategory:'admin_general_expense', amountNative:-5.702875, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
-    { rawLabel:'Despesas com serviços prestados (b)', normalizedCategory:'admin_general_expense', amountNative:-6.79538, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Depreciação e amortização', normalizedCategory:'depreciation', amountNative:-2.608742, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
-    { rawLabel:'Água, telefone, energia e internet', normalizedCategory:'admin_general_expense', amountNative:-1.062935, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
-    { rawLabel:'Despesas legais e judiciais', normalizedCategory:'admin_general_expense', amountNative:-0.043735, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
-    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.323384, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
-    { rawLabel:'Outras Receitas e Despesas', normalizedCategory:'other_expenses', amountNative:-6.903788, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.98
-  ],
-  2025: [ // tools/cargar.mjs (2026-10-02)
-    { rawLabel:'Despesa com pessoal (a)', normalizedCategory:'wages_squad', amountNative:-60.604081, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.85
-    { rawLabel:'Cessão de Direitos Imagem', normalizedCategory:'wages_squad', amountNative:-14.799284, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.85
-    { rawLabel:'Serviços de terceiros (b)', normalizedCategory:'lump_football_operations_expense', amountNative:-12.827914, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Despesa formação atletas base', normalizedCategory:'youth_other_sports_expense', amountNative:-2.257512, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
-    { rawLabel:'Demais custos e despesas operacionais', normalizedCategory:'other_expenses', amountNative:-1.923779, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Materiais Esportivos', normalizedCategory:'other_expenses', amountNative:-1.888534, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Amortização de custo de atletas contratados', normalizedCategory:'player_amortisation', amountNative:-1.471898, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Cessão Temporária', normalizedCategory:'player_amortisation', amountNative:-1.330526, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Outros custos com jogos e atletas', normalizedCategory:'match_organisation_expense', amountNative:-1.291424, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Taxas confederações e federações', normalizedCategory:'match_organisation_expense', amountNative:-0.688253, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.96
-    { rawLabel:'Luvas', normalizedCategory:'wages_squad', amountNative:-0.598999, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Amortização de custo de atletas formados', normalizedCategory:'player_amortisation', amountNative:-0.423305, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Custos e despesas c/ pessoal jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.103989, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Arbitragens', normalizedCategory:'match_organisation_expense', amountNative:-0.00035, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.94
-    { rawLabel:'Despesas Administrativas (a)', normalizedCategory:'admin_general_expense', amountNative:-10.346189, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
-    { rawLabel:'Despesas com serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-8.729303, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
-    { rawLabel:'Despesa com pessoal', normalizedCategory:'wages_squad', amountNative:-7.972794, disclosureLevel:'aggregated' }, // pág. 30, Claude 0.8
-    { rawLabel:'Despesas legais e judiciais (b)', normalizedCategory:'exceptional_items', amountNative:-3.104744, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.92
-    { rawLabel:'Depreciação e amortização', normalizedCategory:'depreciation', amountNative:-2.521457, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.94
-    { rawLabel:'Água, telefone, energia e internet', normalizedCategory:'admin_general_expense', amountNative:-1.096766, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
-    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.195678, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
-    { rawLabel:'Despesas com Earn In (a)', normalizedCategory:'other_expenses', amountNative:-7.977865, disclosureLevel:'aggregated' }, // pág. 30, precedente
   ],
   2017: [ // tools/cargar.mjs (2026-10-02)
     { rawLabel:'Alugueis de estádios', normalizedCategory:'match_organisation_expense', amountNative:-0.182689, disclosureLevel:'aggregated' }, // pág. 23, precedente
@@ -620,6 +571,59 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-1.454818, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-19.707325, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
+  2024: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Despesa com pessoal', normalizedCategory:'wages_squad', amountNative:-44.603582, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Despesas com viagens', normalizedCategory:'match_organisation_expense', amountNative:-3.161637, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'lump_football_operations_expense', amountNative:-8.114569, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Cessão de Direitos Imagem (a)', normalizedCategory:'wages_squad', amountNative:-12.284241, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
+    { rawLabel:'Materiais Esportivos', normalizedCategory:'other_expenses', amountNative:-1.185464, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Cessão Temporária', normalizedCategory:'player_amortisation', amountNative:-0.488366, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Amortização de custo de atletas formados', normalizedCategory:'player_amortisation', amountNative:-0.695254, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
+    { rawLabel:'Amortização de custo de atletas contratados', normalizedCategory:'player_amortisation', amountNative:-1.063213, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Arbitragens', normalizedCategory:'match_organisation_expense', amountNative:-0.127483, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Taxas confederações e federações', normalizedCategory:'match_organisation_expense', amountNative:-0.601449, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
+    { rawLabel:'Demais custos e despesas operacionais', normalizedCategory:'other_expenses', amountNative:-0.907274, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Outros custos com atletas', normalizedCategory:'wages_squad', amountNative:-0.012469, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Cessão Definitiva', normalizedCategory:'player_amortisation', amountNative:-0.002525, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Custos e despesas c/ pessoal jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.104915, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Exames antidoping', normalizedCategory:'match_organisation_expense', amountNative:-0.01355, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Luvas (a)', normalizedCategory:'wages_squad', amountNative:-0.423842, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Despesa formação atletas base (b)', normalizedCategory:'youth_other_sports_expense', amountNative:-2.174585, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Outros custos e despesas com jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.683022, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'Despesa com pessoal (a)', normalizedCategory:'admin_general_expense', amountNative:-9.428348, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'Provisões para contingências', normalizedCategory:'admin_general_expense', amountNative:-1.740842, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.98
+    { rawLabel:'Despesas Administrativas (materiais inclusos)', normalizedCategory:'admin_general_expense', amountNative:-5.702875, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
+    { rawLabel:'Despesas com serviços prestados (b)', normalizedCategory:'admin_general_expense', amountNative:-6.79538, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'Depreciação e amortização', normalizedCategory:'depreciation', amountNative:-2.608742, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
+    { rawLabel:'Água, telefone, energia e internet', normalizedCategory:'admin_general_expense', amountNative:-1.062935, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
+    { rawLabel:'Despesas legais e judiciais', normalizedCategory:'admin_general_expense', amountNative:-0.043735, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.323384, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Outras Receitas e Despesas', normalizedCategory:'exceptional_items', amountNative:-6.903788, disclosureLevel:'aggregated' }, // pág. 7, precedente
+  ],
+  2025: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Despesa com pessoal (a)', normalizedCategory:'wages_squad', amountNative:-60.604081, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Cessão de Direitos Imagem', normalizedCategory:'wages_squad', amountNative:-14.799284, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Serviços de terceiros (b)', normalizedCategory:'lump_football_operations_expense', amountNative:-12.827914, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Despesa formação atletas base', normalizedCategory:'youth_other_sports_expense', amountNative:-2.257512, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Demais custos e despesas operacionais', normalizedCategory:'other_expenses', amountNative:-1.923779, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Materiais Esportivos', normalizedCategory:'other_expenses', amountNative:-1.888534, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Amortização de custo de atletas contratados', normalizedCategory:'player_amortisation', amountNative:-1.471898, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Cessão Temporária', normalizedCategory:'player_amortisation', amountNative:-1.330526, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Outros custos com jogos e atletas', normalizedCategory:'match_organisation_expense', amountNative:-1.291424, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Taxas confederações e federações', normalizedCategory:'match_organisation_expense', amountNative:-0.688253, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Luvas', normalizedCategory:'wages_squad', amountNative:-0.598999, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Amortização de custo de atletas formados', normalizedCategory:'player_amortisation', amountNative:-0.423305, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Custos e despesas c/ pessoal jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.103989, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Arbitragens', normalizedCategory:'match_organisation_expense', amountNative:-0.00035, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Despesas Administrativas (a)', normalizedCategory:'admin_general_expense', amountNative:-10.346189, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Despesas com serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-8.729303, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Despesa com pessoal', normalizedCategory:'admin_general_expense', amountNative:-7.972794, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Despesas legais e judiciais (b)', normalizedCategory:'admin_general_expense', amountNative:-3.104744, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Depreciação e amortização', normalizedCategory:'depreciation', amountNative:-2.521457, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Água, telefone, energia e internet', normalizedCategory:'admin_general_expense', amountNative:-1.096766, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.195678, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Despesas com Earn In (a)', normalizedCategory:'other_expenses', amountNative:-7.977865, disclosureLevel:'aggregated' }, // pág. 30, precedente
+  ],
 };
 const goiasbrFiscalYearMeta = {
   2021: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -646,44 +650,8 @@ const goiasbrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:106.090159, officialTotalExpenses:89.763784, officialPAT:13.158035,
   },
-  2024: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'BRL', fxRef:'BRL@2024-12-31',
-    sourceId:'goias-br-demonstracoes-contabeis-2024',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:4.161428, tax:0,
-    extraRows: [
-      {label:'Receitas financeiras', value:7.20401},
-      {label:'Despesas financeiras', value:-3.042582},
-    ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Serviços de terceiros', lado:'expense', importe:8.114569, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:37.975414, officialTotalExpenses:111.257469, officialPAT:-69.120627,
-  },
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Estadio. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Cuotas sociales. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
-  2025: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'BRL', fxRef:'BRL@2025-12-31',
-    sourceId:'goias-br-demonstracoes-contabeis-2025',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-2.769924, tax:0,
-    extraRows: [
-      {label:'Receitas financeiras', value:3.906292},
-      {label:'Despesas financeiras', value:-6.676216},
-    ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Serviços de terceiros (b)', lado:'expense', importe:12.827914, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:46.814472, officialTotalExpenses:139.0499, officialPAT:-98.110093,
-  },
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2017. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2017-2016' es el ejercicio 2017 con 2016 de comparativo, no 2016.
   2017: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2017-12-31',
@@ -865,6 +833,44 @@ const goiasbrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:83.023374, officialTotalExpenses:63.985423, officialPAT:15.77709,
+  },
+  2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2024-12-31',
+    sourceId:'goias-br-demonstracoes-contabeis-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:4.161428, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:7.20401},
+      {label:'Despesas financeiras', value:-3.042582},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Serviços de terceiros', lado:'expense', importe:8.114569, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:37.975414, officialTotalExpenses:104.353681, officialPAT:-69.120627,
+  },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Estadio. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): cero-real = Cuotas sociales. Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.
+  2025: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'goias-br-demonstracoes-contabeis-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.769924, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:3.906292},
+      {label:'Despesas financeiras', value:-6.676216},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Serviços de terceiros (b)', lado:'expense', importe:12.827914, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:46.814472, officialTotalExpenses:142.154644, officialPAT:-98.110093,
   },
 };
 const goiasbrPresupuestoOverlayByYear = {};
