@@ -29,7 +29,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
 
 1. **Novorizontino** (Brasil, `novorizontino-br`): **cargados 2010 y 2013-2025** (2011-2012 sin documento). Pendiente: caja y deuda
    (`caja-deuda.mjs`: escala del vecino arreglada, Versión 418; 2019-2020 frenan porque la columna "Notas" (4) y el pasivo en
-   la misma fila corren las cifras; 2022 frena bien: el 2023 reclasificó la caja; deuda: solo con el escalón 2, IA ~US$ 0,26);
+   la misma fila corren las cifras; 2022 por ajuste `caja` (146.924, la reclasificada por el 2023); deuda: solo con el escalón 2, IA ~US$ 0,26);
    ligas 2013-2017 en null (sin liga nacional, solo el Paulista: decidir si `liga-no-catalogada`). Falsos positivos vistos: el
    inventario marca un número de firma digital como cifra (2023); alta-club pregunta perímetro en un club nuevo por el membrete del auditor.
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
@@ -393,7 +393,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Ajustes manuales (Versión 366)
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
-  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana

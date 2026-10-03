@@ -725,7 +725,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receita financeira', value:0.007515},
       {label:'Despesas financeiras', value:-2.441458},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-02: la caja de 2022 como la reclasificó el documento 2023 (sin las aplicaciones financieras de proyectos incentivados, 574.806), coherente con 2023-2025; el 2022 imprimía 721.730
+    grossDebt:null, cash:0.146924,
     officialTotalRevenue:30.003234, officialTotalExpenses:41.218659, officialPAT:-13.649368,
   },
   2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -753,7 +754,8 @@ const novorizontinobrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.075, tax:0,
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "1.1.01 DISPONIBILIDADES" pág. 5
+    grossDebt:null, cash:0.007261,
     officialTotalRevenue:3.242, officialTotalExpenses:9.945, officialPAT:-6.779,
   },
   // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
@@ -810,7 +812,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'113 5.1.04.01.0004 - IRRF S/ RENDAS DE APLIC FINANC', value:-0.000002},
       {label:'111 5.1.04.01.0002 - JUROS E MULTAS', value:-0.014099},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 2 (compuerta: documento siguiente): "2.1.03 INSTITUIÇÕES FINANCEIRAS" pág. 5 + "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" pág. 5; cash escalón 2 (compuerta: documento siguiente): "1.1.01 DISPONIBILIDADES" pág. 4
+    grossDebt:10.240466, cash:0.068932,
     officialTotalRevenue:0.746574, officialTotalExpenses:6.315721, officialPAT:-5.598142,
   },
 };
