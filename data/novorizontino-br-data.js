@@ -626,7 +626,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-1.501454},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 6
-    grossDebt:null, cash:2.133179,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Partes relacionadas" pág. 6
+    grossDebt:111.803207, cash:2.133179,
     officialTotalRevenue:38.854, officialTotalExpenses:60.316335, officialPAT:-22.692012,
   },
   2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -641,7 +642,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.068},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
-    grossDebt:null, cash:0.695,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos" pág. 8 + "Débitos com partes relacionadas" pág. 8
+    grossDebt:32.32, cash:0.695,
     officialTotalRevenue:12.23, officialTotalExpenses:15.787, officialPAT:-3.783,
   },
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = exceptional_items. Guido 2026-10-02: provisión única por una cobranza a Corinthians por venta de un atleta, en discusión judicial; no recurrente
@@ -672,7 +674,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-1.28431},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguiente): "Caixa e equivalentes de caixa (nota 6)" pág. 6
-    grossDebt:null, cash:0.348738,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos bancários" pág. 6 + "Partes relacionadas" pág. 6
+    grossDebt:93.958045, cash:0.348738,
     officialTotalRevenue:22.072861, officialTotalExpenses:50.54116, officialPAT:-29.716647,
   },
   2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -702,7 +705,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-3.636025},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 6
-    grossDebt:null, cash:1.482725,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Partes relacionadas" pág. 6
+    grossDebt:145.192927, cash:1.482725,
     officialTotalRevenue:67.564252, officialTotalExpenses:89.496986, officialPAT:-25.254161,
   },
   2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
