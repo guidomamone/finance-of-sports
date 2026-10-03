@@ -88,3 +88,17 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2015 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.pdf` (sourceId `goias-br-demonstracoes-contabeis-2015-2014`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2014 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf` (sourceId `goias-br-demonstracoes-contabeis-2014-2013`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2008 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.pdf` (sourceId `goias-br-demonstracoes-contabeis-2008-2007`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2009 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.pdf` (sourceId `goias-br-demonstracoes-contabeis-2009-2008`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2010 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.pdf` (sourceId `goias-br-demonstracoes-contabeis-2010-2009`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2011 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.pdf` (sourceId `goias-br-demonstracoes-contabeis-2011-2010`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2012 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf` (sourceId `goias-br-demonstracoes-contabeis-2012-2011`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2015 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.pdf` (sourceId `goias-br-demonstracoes-contabeis-2015-2014`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2016 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf` (sourceId `goias-br-demonstracoes-contabeis-2016-2015`).
