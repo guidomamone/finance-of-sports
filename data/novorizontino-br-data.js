@@ -53,6 +53,8 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.095, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
     { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.002, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2021: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2021: [
@@ -140,6 +142,8 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
   },
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
+  // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = player_impairment. Guido 2026-10-02: pérdida con atletas dentro de despesas gerais = baja de pases, no amortización del año
   2021: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2021-12-31',
     sourceId:'novorizontino-br-demonstracoes-financeiras-2021',
