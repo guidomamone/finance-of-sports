@@ -89,6 +89,9 @@ Pendientes:
 - **Nada de "manta corta":** cada arreglo se mide antes de entrar; si rompe otros, no entra. Por ahora se mide en **Universidad Católica**
   (`Admin/lote-07.txt`, tiene que dar idéntico) y en **Fortaleza CEIF** (`Admin/lote-08.txt`), más el club en curso. Más adelante: un pool
   fijo de años/clubes de prueba (distintos países, formatos y escaneos) para medir siempre contra el mismo conjunto.
+  "Idéntico" es lo que se CARGA. En un escalón que decide (como el precedente de la etapa 7) vale que decida MENOS veces si nunca se equivoca
+  más: lo que deja de decidir baja de escalón y pide una segunda mirada (Jev/Claude o la cola). Caso (Versión 403, aprobado por Guido): el
+  precedente con la nota deja sin decidir "Otros gastos" de UC 2014 y 2016 (no se equivocan, piden otra mirada); errores de precedente: 0 → 0.
 - **Dos caminos, no más reglas:**
   - camino limpio: reglas pocas y estrictas; si todo cierra sin interpretar nada, se carga solo;
   - camino de dudas: lo que no pasa no se "arregla" con otra regla; se le pregunta a la IA algo puntual con cita del documento, y si tampoco

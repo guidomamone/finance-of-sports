@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 403 — Etapa 7: el precedente y las respuestas de la cola miran en qué nota está la fila (2026-10-03)
+
+- `padres-filas.mjs` (nuevo, gratis): en qué nota está cada fila ya verificada (lo lee del `.verificacion.json`); `sinMarca()` saca la marca de nota del final ("(a)", "(1)", "(nota 17)"); `mismoPadre()` compara notas por palabras de contenido (sin "gastos", "despesas", "total"...), porque cada año nombra distinto la misma nota.
+- `categorizar-claude.mjs` y `cargar.mjs`: (A) el precedente con contexto compara etiquetas sin la marca de nota y usa también lo cargado; (B) si la etiqueta tiene precedentes con nota conocida y ninguno está en la misma nota, el precedente sin contexto no decide (baja a Jev/Claude); (C) una respuesta de la cola de otro documento del club se aplica solo si la fila está en la misma nota.
+- Casos: Goiás "Despesa com pessoal" (2014, 2015, 2017, 2021, nota de fútbol) y "Serviços de terceiros" (2008-2016 administrativo; 2023-2025 de "Custo com futebol") salen bien solos por contexto.
+- Medido (precedente de cada fila cargada contra los otros años del club): UC bien 500 → 498, mal 0 → 0; Fortaleza bien 433 → 414, mal 7 → 7; Goiás bien 407 → 420, mal 1 → 1. Lo que deja de decidir baja a Jev/Claude. Comparar la nota por texto exacto daba Fortaleza 433 → 286 y no entró.
+
 ## Versión 402 — Carga: una liga en null se reemplaza por una verificada (2026-10-02)
 
 - `cargar.mjs`: una fila de liga existente en `null` ("nadie lo verificó") ya no frena una liga verificada nueva, y al escribir se reemplaza ese año en vez de agregarlo repetido.

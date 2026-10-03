@@ -85,6 +85,7 @@ import { resolve } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
 import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE, padreDe } from './memoria-categorias.mjs';
 import { mismaFamilia } from './vocabulario.mjs';
+import { sinMarca, mismoPadre, padreEnClub } from './padres-filas.mjs'; // en qué nota está cada fila cargada (Versión 403)
 import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas (Versión 321) // familia de etiquetas del precedente (Versión 321)
 import vm from 'node:vm';
 
@@ -148,7 +149,7 @@ export function allLines(data = loadClubData()) {
   const out = [];
   for (const [club, d] of Object.entries(data)) for (const side of ['revenue', 'expense']) {
     for (const [year, lines] of Object.entries(d[SIDE_KEY[side]] || {})) for (const l of lines || []) {
-      if (l.rawLabel && l.normalizedCategory) out.push({ club, year: String(year), side, label: l.rawLabel.trim(), cat: l.normalizedCategory });
+      if (l.rawLabel && l.normalizedCategory) out.push({ club, year: String(year), side, label: l.rawLabel.trim(), cat: l.normalizedCategory, padre: padreEnClub(club, String(year), side, l.rawLabel) });
     }
   }
   return out;
@@ -174,7 +175,16 @@ export function precedenteFamilia(lines, club, side, label, { excludeYear = null
   const delClub = lines.filter((l) => l.club === club && l.year !== excludeYear && (!side || l.side === side));
   const unico = (arr) => { const cats = new Set(arr.map((l) => l.cat)); const lados = new Set(arr.map((l) => l.side)); return cats.size === 1 && lados.size === 1 ? [...cats][0] : null; };
   const nl = norm(label);
-  if (padre) { const ctx = unico(delClub.filter((l) => l.padre && norm(l.label) === nl && norm(l.padre) === norm(padre))); if (ctx) return { cat: ctx, via: 'exacto-con-contexto' }; }
+  // (Versión 403, cambios A y B de la auditoría del pipeline) Con el padre (la nota) de la fila:
+  //   A  el escalón con contexto compara las etiquetas SIN la marca de nota del final ("(a)", "(1)"): la marca cambia de nota entre años;
+  //   B  si la etiqueta tiene precedentes con nota conocida y NINGUNO está en la nota de esta fila, el precedente sin contexto NO decide (la
+  //      fila baja a Jev/Claude, que reciben la nota). Caso: Goiás 2014 "Despesa com pessoal" (nota de fútbol) tomaba 2022-2023 (nota
+  //      administrativa). Los precedentes sin nota conocida (años cargados antes del proceso nuevo) siguen valiendo como antes.
+  if (padre) {
+    const ctx = unico(delClub.filter((l) => l.padre && sinMarca(l.label) === sinMarca(label) && mismoPadre(l.padre, padre))); if (ctx) return { cat: ctx, via: 'exacto-con-contexto' };
+    const conNota = delClub.filter((l) => l.padre && sinMarca(l.label) === sinMarca(label));
+    if (conNota.length && !conNota.some((l) => mismoPadre(l.padre, padre))) return null;
+  }
   const ex = unico(delClub.filter((l) => norm(l.label) === nl));
   if (ex) return { cat: ex, via: side ? 'exacto' : 'exacto-sin-lado' };
   const fam = unico(delClub.filter((l) => mismaFamilia(l.label, label, { parentesis: Boolean(side) })));
@@ -521,10 +531,12 @@ async function listos(opt) {
       // Escalón 0: precedente de lo CARGADO en el sitio; si no hay, de lo que Claude ya resolvió para este club con >= 0,90 (memoria).
       const ey = { excludeYear: rj.year != null ? String(rj.year) : null };
       // Versión 321: con familia de etiquetas y también para filas sin lado (precedenteFamilia(), arriba).
-      const precProd = precedenteFamilia(prod, rj.club, r.lado || null, r.label, ey);
-      // El escalón con contexto va primero: una respuesta de la misma etiqueta Y del mismo renglón que desglosa gana sobre el precedente sin contexto.
-      const conCtx = precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, { ...ey, padre: padreDe(r.section) });
-      const prec = conCtx?.via === 'exacto-con-contexto' ? conCtx : (precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, ey));
+      const padreFila = padreDe(r.section);
+      const precProd = precedenteFamilia(prod, rj.club, r.lado || null, r.label, { ...ey, padre: padreFila });
+      // El escalón con contexto va primero: una respuesta de la misma etiqueta Y del mismo renglón que desglosa gana sobre el precedente sin
+      // contexto. (Versión 403) Con lo cargado Y lo aprendido: lo cargado ahora también sabe su nota (padres-filas.mjs).
+      const conCtx = precedenteFamilia([...prod, ...aprendidasFirmes], rj.club, r.lado || null, r.label, { ...ey, padre: padreFila });
+      const prec = conCtx?.via === 'exacto-con-contexto' ? conCtx : (precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, { ...ey, padre: padreFila }));
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
       const guardada = opt.sinCache ? null : cacheClaude.get(rj.club, r.lado, r.label);
       if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });

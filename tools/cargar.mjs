@@ -108,6 +108,7 @@ const { ajusteDe, ajustesDe } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
+const { padreEnClub, padreEnDoc, mismoPadre } = await import('./padres-filas.mjs'); // en qué nota está cada fila (Versión 403)
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
@@ -339,7 +340,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // la MISMA regla que el escalón 0 de la categorización (precedenteFamilia() de tools/categorizar-claude.mjs, medida en su comentario). Hasta la
   // Versión 320 acá había una copia propia, solo exacta y solo con lado conocido.
   const lineasClub = [];
-  for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const [y, ls] of Object.entries(cd[key] || {})) for (const l of ls || []) if (l.rawLabel && l.normalizedCategory) lineasClub.push({ club: clubId, year: String(y), side, label: l.rawLabel.trim(), cat: l.normalizedCategory });
+  for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const [y, ls] of Object.entries(cd[key] || {})) for (const l of ls || []) if (l.rawLabel && l.normalizedCategory) lineasClub.push({ club: clubId, year: String(y), side, label: l.rawLabel.trim(), cat: l.normalizedCategory, padre: padreEnClub(clubId, String(y), side, l.rawLabel) });
   // Categoría "aceptable" de una etiqueta: la del .categorias.json (escalón 0/1, o Claude >= --umbral-claude) o, si la etiqueta no está en
   // esa lista, el precedente del club.
   // COMPUERTA DEL LADO en toda la escalera de categorización (Versión 377, escalón a de "lo que cerró en la etapa 6 no se vuelve a decidir"):
@@ -350,13 +351,13 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // NO ES RUBRO (Versión 378, escalón c; pendiente del HANDOFF desde UC 2010): en una fila VERIFICADA (la etapa 6 la usó para cerrar el
   // resultado), un "no_es_rubro" por debajo del umbral no la excluye en silencio: sigue el mismo camino que una categoría del otro lado
   // (precedente de su lado, o la genérica a la cola). Caso: Fortaleza 2019 "Total Costo de Ventas" 137.713 y 2020 52.995 (Claude, 0,6).
-  const catDe = (label, lado, verificada = false) => {
+  const catDe = (label, lado, verificada = false, padre = null) => {
     const k = norm(label);
     let c = (lado && porEtiqueta.get(`${k}|${lado}`)) || porEtiqueta.get(k);
     const noRubroDudoso = verificada && lado && c?.categoria === 'no_es_rubro' && (c.escalon === 2 && (c.confianza ?? 0) < UMBRAL_CLAUDE);
     const rechazada = c && (delOtroLado(c.categoria, lado) || noRubroDudoso) ? c.categoria : null;
     if (c && !rechazada) return { cat: c.categoria || null, conf: c.confianza ?? null, escalon: c.escalon, fuenteCat: 'categorias.json', enLista: true };
-    const p = precedenteFamilia(lineasClub, clubId, lado || null, label);
+    const p = precedenteFamilia(lineasClub, clubId, lado || null, label, { padre }); // (Versión 403) con la nota de la fila: cambios A y B
     if (p && !delOtroLado(p.cat, lado) && !(noRubroDudoso && p.cat === 'no_es_rubro')) return { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club, ${p.via} (${rechazada ? `categorias.json decía ${rechazada}` : 'la fila no estaba en categorias.json'})`, enLista: true };
     if (rechazada) return { cat: lado === 'revenue' ? 'other_income' : 'other_expenses', conf: 0, escalon: 2, fuenteCat: `categorias.json decía ${rechazada}${noRubroDudoso ? ` con ${c.confianza} (fila verificada: no se excluye sola)` : ', del otro lado que la fila'}: se propone la genérica de su lado`, enLista: true, ladoRechazado: true };
     return { cat: null, fuenteCat: 'la fila no está en categorias.json ni tiene precedente', enLista: false };
@@ -388,11 +389,15 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   //     toman como precedente gratis (memoria-categorias.mjs).
   // `clave` (Versión 374): la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
   // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
-  const respuestaCat = (label, clave = norm(label)) => {
+  const respuestaCat = (label, clave = norm(label), padre = null, lado = null) => {
     let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
     // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
-    if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c) => dirname(c.pdf) === dirname(pdf)); if (otra) ({ caso, resp } = otra); }
+    // (Versión 403, cambio C) la respuesta de OTRO documento del club vale solo si la fila está en la MISMA nota allá y acá (si no se sabe la
+    // nota de alguna de las dos, como antes). Caso: "Serviços de terceiros", contestado para la fila de "Custo com futebol" (Goiás 2024-2025),
+    // se aplicaba a 2008-2016, donde está en el bloque administrativo.
+    const mismaNota = (c) => { if (!padre || !lado) return true; const otro = padreEnDoc(c.md || c.pdf.replace(/\.pdf$/i, '.md'), lado, label); return otro == null || mismoPadre(otro, padre); };
+    if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c) => dirname(c.pdf) === dirname(pdf) && mismaNota(c)); if (otra) ({ caso, resp } = otra); }
     // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
     if (resp && caso && caso.pdf !== pdf) cerrarResueltoPorClub(pdf, 'cargar', 'categoria', clave, caso);
@@ -405,7 +410,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const aprendidasYa = existsSync(ARCHIVO_APRENDIDAS) ? readFileSync(ARCHIVO_APRENDIDAS, 'utf8') : '';
   const enCola = [];
   const filas = raw.map((r) => {
-    const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside, String(r.origen || '').startsWith('verificacion')) };
+    const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside, String(r.origen || '').startsWith('verificacion'), padreDe(r.origen)) };
     // COMPUERTA DEL LADO (Versión 374, aprobada por Guido el 2026-10-02): la respuesta de Guido se aplica solo si su categoría es del MISMO
     // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
@@ -420,8 +425,8 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
       Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
       if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
     }
-    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label); let claveCola = norm(r.label);
-    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola); }
+    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, norm(r.label), padreDe(r.origen), r.tside); let claveCola = norm(r.label);
+    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
