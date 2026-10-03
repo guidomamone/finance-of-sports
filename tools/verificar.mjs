@@ -299,7 +299,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const compararVecino = (dy, V2, k, nivelMio = 0) => {
     const [campoMio, campoSuyo] = dy === 1 ? ['M', 'A'] : ['A', 'M'];
     const sumaDe = (arr, c) => arr.reduce((a, f) => a + (f[c] || 0), 0);
-    const mio = sumaDe(ingresosConLectura(armar(F, U, false, k), campoMio, nivelMio), campoMio); const suyo = sumaDe(ingresosConLectura(V2.A2, campoSuyo, V2.lect2 || 0), campoSuyo);
+    const Amio = armar(F, U, false, k);
+    const mio = sumaDe(ingresosConLectura(Amio, campoMio, nivelMio), campoMio); const suyo = sumaDe(ingresosConLectura(V2.A2, campoSuyo, V2.lect2 || 0), campoSuyo);
+    // COMPUERTA DEL ESCALÓN 0 (Versión 416, escalera aprobada por Guido el 2026-10-02): la columna del año en común ("año anterior", la mía o
+    // la del siguiente) tiene que existir: alguna fila del estado la trae leída. Si no, "no se puede comparar" (null), como sin vecino. Caso:
+    // Novorizontino 2014 y 2015, balancetes de una sola columna: se comparaba 0 contra 1.060.016 y mandaba un falso "no coincide" a la cola.
+    const conAnterior = (A) => A.estado.some((f) => f.lado === 'ingreso' && f.A != null && isFinite(f.A) && f.A);
+    if (!conAnterior(campoMio === 'A' ? Amio : V2.A2)) return { mio, suyo, ok: null, sinColumna: true };
     return { mio, suyo, ok: suyo ? cerca(mio, suyo, 0.02) : null };
   };
   const vecinosDoc = [[1, vecinoDe(1)], [-1, vecinoDe(-1)]].filter(([, v]) => v);
@@ -520,13 +526,16 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // renglones sin lado entran por su signo (y los subtotales se leen con ellos). Caso: Goiás 2024, la columna 2023 sumaba 89.972.753
     // (sin "Outras Receitas e Despesas" 140.214.785) y el sitio tiene 230.187.538 (cargado con la lectura 3): falsa alarma.
     const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
-    const ingA = E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A');
+    const ingA = E.nivel >= 5 ? ingresosConLectura({ estado, lineasDeLado }, 'A', E.nivel) : E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A'); // (Versión 416) la lectura 5 también acá
     const prodI = (cd.revenueLinesByYear?.[prev] || []).reduce((a, l) => a + l.amountNative, 0);
     // Una GANANCIA extraordinaria que un ajuste `categoria` sacó de los ingresos del año anterior (exceptional_items en positivo) también
     // cuenta: el documento la sigue sumando como ingreso. Caso: Goiás 2024 contra 2023 (venta del 20% de la Liga Forte União, 140.214.785).
     const extraPrev = (cd.expenseLinesByYear?.[prev] || []).filter((l) => l.normalizedCategory === 'exceptional_items' && l.amountNative > 0).reduce((a, l) => a + l.amountNative, 0);
-    const okA = prodI ? (cerca(sA, prodI, 0.02) || (extraPrev > 0 && cerca(sA, prodI + extraPrev, 0.02))) : null;
-    chequeos.push({ nombre: 'año anterior cargado', ok: okA, detalle: prodI ? `la columna ${prev} de este documento suma ingresos ${r6(sA)}; el sitio tiene ${r6(prodI)}` : `el sitio tiene ${prev} sin líneas de ingresos` });
+    // COMPUERTA (Versión 416, la misma del año vecino): si ninguna fila trae la columna del año anterior, no se puede comparar. Caso:
+    // Novorizontino 2023 (su extracción no trajo la columna 2022): sumaba 0 contra los 30.003.234 de 2022 ya cargados.
+    const sinColA = !estado.some((f) => f.lado === 'ingreso' && f.A != null && isFinite(f.A) && f.A);
+    const okA = sinColA ? null : prodI ? (cerca(sA, prodI, 0.02) || (extraPrev > 0 && cerca(sA, prodI + extraPrev, 0.02))) : null;
+    chequeos.push({ nombre: 'año anterior cargado', ok: okA, detalle: sinColA ? `no se puede comparar: este documento no trae la columna ${prev}` : prodI ? `la columna ${prev} de este documento suma ingresos ${r6(sA)}; el sitio tiene ${r6(prodI)}` : `el sitio tiene ${prev} sin líneas de ingresos` });
     if (okA === false) caso('anio-anterior', String(prev), `La columna del año anterior (${prev}) de este documento suma ingresos ${r6(sA)} y el sitio tiene ${r6(prodI)} para ese año. Puede ser: otra tabla u otro perímetro (revisar el documento), otra escala, o un error del año ya cargado (revisar producción).`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
   }
   // 4b. AÑO VECINO EN OTRO DOCUMENTO (agregado el 2026-10-01 al medir: de los 159 años nuevos de clubes existentes solo 2 tienen el año
@@ -537,8 +546,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
   for (const [dy, v] of vecinosDoc) {
     const { otro } = v;
-    const { mio, suyo, ok } = compararVecino(dy, v, kEsc, E.nivel);
+    const { mio, suyo, ok, sinColumna } = compararVecino(dy, v, kEsc, E.nivel);
     vecinos.push(ok);
+    if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });
   }

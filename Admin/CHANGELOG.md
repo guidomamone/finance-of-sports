@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 416 — Etapa 6, chequeos cruzados: la columna del año en común tiene que existir (2026-10-02)
+
+- `verificar.mjs`: compuerta del escalón 0 de los dos chequeos cruzados (año vecino y año anterior cargado): si ninguna fila del estado trae la columna del año anterior, "no se puede comparar" (sin caso en la cola), en vez de comparar 0. El año anterior cargado también usa la lectura 5 cuando esa fue la que cerró.
+- Casos: Novorizontino 2014 y 2015 (balancetes de una sola columna: 0 contra 1.060.016) y 2023 (su extracción no trajo la columna 2022: 0 contra 30.003.234).
+- Medido: lotes 07, 08 y 09 idénticos; lote 10: 14 de 14 OK.
+
 ## Versión 415 — Etapa 6, resultado impreso, escalón 2: la línea pegada al último bloque (2026-10-02)
 
 - `verificar.mjs`: si extraer no encontró el resultado en los bloques (ni el de antes de impuestos), una línea PREJUÍZO / DÉFICIT / SUPERÁVIT / LUCRO con un número, hasta 4 líneas después del último bloque del estado, propone el resultado. Compuerta: alguna lectura cierra con él exacto (a media unidad por fila).
