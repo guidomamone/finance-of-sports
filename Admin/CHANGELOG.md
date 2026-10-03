@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 398 — Etapa 6: el chequeo del año vecino lee cada documento con la lectura con la que cerró (2026-10-02)
+
+- `verificar.mjs`: el chequeo 4b (año vecino) suma los ingresos de este documento con la lectura con la que cerró y los del vecino con la suya (la que dejó escrita en su `.verificacion.json`). Hasta la 397 los dos se leían con la lectura 0.
+- Caso: Goiás 2011 cerró con la lectura 4 (ingresos 17.096.667 = total impreso = columna 2011 del documento 2012) y el chequeo comparaba 52.419.680 contra 17.096.667. En 2008-2010 coincidía por casualidad: los dos documentos se inflaban igual.
+- Medido: UC (lote 07) y Fortaleza (lote 08) idénticos; Goiás 2011 pasa a ok y 2012 deja de marcar el vecino; los demás años solo cambian los importes del detalle del chequeo (ahora los reales).
+
 ## Versión 397 — Rearmado con el texto propio: escalera de métodos (columnas → regiones) (2026-10-02)
 
 - `texto-propio-a-md.mjs`: el rearmado tiene su propia escalera (pedido de Guido: una escalera en vez de cambiar el método para todos). Escalón 0, método "columnas" (cortes verticales en toda la página, el de la Versión 395). Escalón 1, método "regiones" (cortes alternados horizontales y verticales), solo si el .md ya se rearmó con "columnas" y la etapa 6 sigue sin cerrar el resultado impreso. Una vez cada uno; la marca del .md dice cuál se usó. `lote.mjs` lo usa en `--reintentar`.
