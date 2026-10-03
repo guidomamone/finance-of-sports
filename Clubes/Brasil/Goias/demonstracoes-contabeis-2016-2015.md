@@ -473,253 +473,334 @@ com a competência dos eventos vinculados a esses contratos.
 
 --- pág. 2 ---
 
-(b) Receitas de publicidade (patrocinias)
+> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1, método columnas): la transcripción de Mistral no coincidía con él.
 
-Contabilizadas com base nos contratos celebrados com os respectivos patrocinadores, de acordo com a vigência estipulada para realização de sua marca junto ao Clube.
+<!-- columna 1 de 2 -->
+(iii) Receitas de publicidade (patrocínios)
+Contabilizadas com base nos contratos celebrados com os respectivos patrocinadores, de acordo com a vigência estipulada
+para veiculação de sua marca junto ao Clube.
+(iv) Receitas de royalties (licenciamento de produtos)
+Reconhecida pelo regime de competência, de acordo com a metodologia e taxas percentuais definidas nos contratos celebrados
+com os franqueados.
+(v) Receitas de bônus de assinatura (Luvas)
+A receita de bônus de assinatura (“luvas”) em contrato de direito de transmissão é reconhecida
+considerando o período compreendido para essa receita e leva em consideração que o Clube tem o direito irrestrito ao recebimento
+do bônus de assinatura (“luvas”), independente do cumprimento do contrato e/ou de qualquer performance, entrega de bens ou
+serviços; a cessão da exclusividade, tem um valor individual e relevante para o cliente (Rede Globo) e representa, para o Clube, um
+evento/ receita significativo; a cessão da exclusividade representa um evento separado àquele de cessão dos direitos de transmissão
+dos jogos do Clube; não existe incerteza significativa sobre o recebimento; e o valor da receita pode ser mensurado, confiavelmente.
+4 – CAIXA E EQUIVALENTES DE CAIXA
+DESCRIÇÃO 2016 2015
 
-(b) Receitas de royalties (licenciamento de produtos)
-
-Reconhecida pela regime de competência, de acordo com a metodologia e taxas percentuais definidas nos contratos celebrados com os transpuestos.
-
-(c) Receitas de扭亏es de assinatura (Lunas)
-
-A receita de扭亏es de assinatura ("lunas") em contrato de direito de transmissão é reconhecida considerando o período compreendido para essa receita e teve em consideração que o Clube tem o direito investido ao recebimento de扭亏es de assinatura ("lunas"), independente do cumprimento do contrato e/ou de qualquer performance, entrega de bens ou serviços, a cessão da exclusividade, tem um valor individual e relevante para o direito (Rede Global, o representante, para o Clube, um evento recente significativo), a cessão da exclusividade representa um evento separado àquele de cessão dos direitos de transmissão de jogos do Clube; não existe incerteza significativa sobre o recebimento, e o valor da necessidade ser mensurado, conforme nota.
-
-4 - CAIXA E EQUIVALENTES DE CAIXA
-
-|  DESCRIÇÃO | 2016 | 2015  |
+|   |   |   |
 | --- | --- | --- |
-|  Caixa | 13.165,47 | 19.143,89  |
-|  Depósitos bancários | 1.540.201,20 | 337,39  |
-|  TOTAL | 1.553.500,07 | 19.481,28  |
+| Caixa | 13.169,47 | 19.143,89 |
+| Depósitos bancários | 1.540.331,20 | 337,39 |
+| TOTAL | 1.553.500,67 | 19.481,28 |
 
-5 - CONTAS A RECEBER
+5 – CONTAS A RECEBER
+DESCRIÇÃO 2016 2015
 
-|  DESCRIÇÃO | 2016 | 2015  |
+|   |   |   |
 | --- | --- | --- |
-|  Títulos a recuber | 453.145,25 | 1.018.161,81  |
-|  Mensalidades a receber | 819.000,12 | 1.791.261,10  |
-|  Patrocínios a receber | 294.500,00 | 1.151.777,25  |
-|  Adiantamentos | 372.316,66 | 215.202,47  |
-|  Contas a receber pela venda de atletas | 1.104.350,00 | 13.379.957,22  |
-|  TOTAL | 3.843.912,03 | 17.556.448,80  |
+| Títulos a receber | 453.145,25 | 1.018.161,81 |
+| Mensalidades a receber | 819.600,12 | 1.791.351,10 |
+| Patrocínios a receber | 294.500,00 | 1.151.777,25 |
+| Adiantamentos | 372.316,66 | 215.202,47 |
+| Contas a receber pela venda de atletas | 1.104.350,00 | 13.379.957,22 |
+| TOTAL | 3.043.912,03 | 17.556.449,85 |
 
-6 - DEPOSITOS JUDICIAIS
+6 – DEPÓSITOS JUDICIAIS
+DESCRIÇÃO 2016 2015
 
-|  DESCRIÇÃO | 2016 | 2015  |
+|   |   |   |
 | --- | --- | --- |
-|  Depósito recursal trabalhista | - | 8.183,06  |
-|  TOTAL | - | 8.183,06  |
+| Depósito recursal trabalhista | - | 8.183,06 |
+| TOTAL | - | 8.183,06 |
 
-7 - APLICACÕES FINANCEIRAS
+7 – APLICAÇÕES FINANCEIRAS
+DESCRIÇÃO 2016 2015
 
-|  DESCRIÇÃO | 2016 | 2015  |
+|   |   |   |
 | --- | --- | --- |
-|  Banco Brasseco S.A. | (a) 35.004.571,52 | -  |
-|  Caixa Econômica Federal | (b) 1.537.250,04 | -  |
-|  TOTAL | 36.541.821,50 | -  |
+| Banco Bradesco S.A. (a) | 35.004.571,52 | - |
+| Caixa Econômica Federal (b) | 1.537.250,04 | - |
+| TOTAL | 36.541.821,56 | - |
 
-(a) Referem-se a operações compromissadas pós-fraudes com remuneração média de 101,75% do CDI.
+(a) Referem-se a operações compromissadas pós-fixadas com renumeração média de 101,75% do CDI.
+(b) Referem-se a CDB pré-fixado com remuneração média de 100,50% do CDI.
+8 – IMOBILIZADO
+DESCRIÇÃO TAXAS 2016 2015
 
-(b) Referem-se a CDR pré-fraude com remuneração média de 100,50% do CDI.
-
-8 - IMOBILIZADO
-
-|  DESCRIÇÃO | TAXAS | 2016 | 2015  |
+|   |   |   |   |
 | --- | --- | --- | --- |
-|  Términos |  | 258.268,04 | 258.268,04  |
-|  Edificações | 4% | 15.086.781,09 | 14.644.288,09  |
-|  Veículos |  | 848.111,54 | 881.846,20  |
-|  Máquinas e equipamentos | 10% | 2.007.642,01 | 1.995.446,74  |
-|  Móveis e utensílios | 10% | 864.734,75 | 814.066,10  |
-|  Ferumentos | 10% | 8.878,10 | 10.034,10  |
-|  Equipamentos de informática | 20% | 260.993,82 | 223.649,20  |
-|  Equipamentos de comunicação | 10% | 52.768,64 | 53.026,64  |
-|  Equipamentos médicos | 10% | 446.557,99 | 446.557,99  |
-|  Imobilizações em andamento |  | 2.132.964,59 | 699.962,67  |
-|  (i) Depreciação acumulada |  | (7.662.925,33) | (6.913.226,76)  |
-|  TOTAL |  | 14.406.815,74 | 12.808.058,10  |
+| Terrenos | - | 258.268,04 | 258.268,04 |
+| Edificações 4% | 15.086.781,09 | 14.644.288,09 |
+| Veículos | - | 949.151,04 | 841.949,29 |
+| Máquinas e equipamentos 10% | 2.007.642,01 | 1.905.440,74 |
+| Móveis e utensílios 10% | 864.734,75 | 816.068,10 |
+| Ferramentas 10% | 8.879,10 | 10.034,10 |
+| Equipamentos de informática 20% | 260.993,82 | 223.689,20 |
+| Equipamentos de comunicação 10% | 53.768,64 | 55.026,64 |
+| Equipamentos médicos 10% | 446.557,99 | 446.557,99 |
+| Imobilizações em andamento | - | 2.132.964,59 | 699.962,67 |
+| (-) Depreciação acumulada | (7.662.925,33) | (6.913.226,76) |
+| TOTAL | 14.406.815,74 | 12.988.058,10 |
 
-8.1 - CONCILIAÇÃO DO IMOBILIZADO
+8.1 – CONCILIAÇÃO DO IMOBILIZADO
+Imobilizado
+Descrição Saldo em 31/12/2015 Adições em 2016 Baixas em 2016 Transferências em 2016 Saldo em 31/12/2016
 
-|  Descrição | Saldo em 31/12/2015 | Imobilizado Adições em 2016 | Baixas em 2016 | Transferências em 2016 | Saldo em 31/12/2016  |
+|   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
-|  Términos | 258.268,04 |  |  |  | 258.268,04  |
-|  Edificações | 14.644.288,09 |  | 67.129,20 | 309.622,20 | 15.086.781,09  |
-|  Veículos | 841.949,29 |  | (72.209,00) | 179.401,75 | 945.151,54  |
-|  Máquinas e equipamentos | 1.805.440,74 | 136.243,27 | (34.042,00) |  | 2.007.642,01  |
-|  Móveis e utensílios | 816.008,10 | 25.344,12 | (10.955,00) | 34.277,91 | 864.777,10  |
-|  Ferumentos | 10.034,10 | 663,50 | (1.816,50) |  | 8.878,10  |
-|  Equipamentos de informática | 223.689,20 | 71.693,99 | 46.389,42 | 12.000,05 | 242.993,82  |
-|  Equipamentos de comunicação | 10.536,64 | 6.599,00 | (1.977,00) |  | 73.768,64  |
-|  Equipamentos médicos | 645.557,99 | 2.660,467,82 | (9.850,79) |  | 446.557,99  |
-|  Imobilizações em andamento | 699.962,67 |  | (952.772,99) | 509.622,20 | 1.898.236,29  |
-|  (ii) Depreciação acumulada |  | 196.839,61 | (1.980,00) | (34.277,91) | 160.581,70  |
-|  TOTAL | 19.901.264,06 | 74.146,60 |  |  | 74.146,60  |
-|   |  | 3.176.693,79 | (1.196.999,29) | 191.401,80 | 22.069.741,07  |
+| Terrenos | 258.268,04 | - | - | - | 258.268,04 |
+| Edificações | 14.644.288,09 | - | (67.129,20) | 509.622,20 | 15.086.781,09 |
+| Veículos | 841.949,29 | - | (72.200,00) | 179.401,75 | 949.151,04 |
+| Maquinas e equipamentos | 1.905.440,74 | 136.243,27 | (34.042,00) | - | 2.007.642,01 |
+| Moveis e utensílios | 816.068,10 | 25.344,12 | (10.955,38) | 34.277,91 | 864.734,75 |
+| Ferramentas | 10.034,10 | 663,50 | (1.818,50) | - | 8.879,10 |
+| Equipamentos de informática | 223.689,20 | 71.693,99 | (46.389,42) | 12.000,05 | 260.993,82 |
+| Equipamentos de comunicação | 55.026,64 | 6.599,00 | (7.857,00) | - | 53.768,64 |
+| Equipamentos médicos | 446.557,99 | 3.855,79 | (3.855,79) | - | 446.557,99 |
+| Edificações em andamento | 699.962,67 | 2.660.667,82 | (952.772,00) | (509.622,20) | 1.898.236,29 |
 
-|  Descrição | Saldo em 31/12/2015 | Depreciação Adições em 2016 | Baixas em 2016 | Transferências em 2016 | Saldo em 31/12/2016  |
+Moveis e utensílios em
+
+|   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
-|  Términos |  |  |  |  |   |
-|  Edificações | (4.467.828,02) | (591.257,66) | 4.475,28 | - | (5.054.608,40)  |
-|  Veículos | (785.867,96) | (11.362,66) | 63.009,12 | - | (754.315,64)  |
-|  Máquinas e equipamentos | (305.866,67) | (153.442,50) | 33.380,14 | - | (1.020.927,26)  |
-|  Móveis e utensílios | (308.608,31) | (69.938,62) | 9.362,69 | - | (399.240,34)  |
-|  Ferumentos | (9.609,94) | (175,35) | 1.800,00 | - | (7.984,80)  |
-|  Equipamentos de informática | (151.608,46) | (33.051,12) | 43.061,01 | - | (141.098,57)  |
-|  Equipamentos de comunicação | (37.028,07) | (4.319,94) | 5.522,07 | - | (35.625,94)  |
-|  Equipamentos médicos | (335.719,59) | (37.292,80) |  | - | (242.922,39)  |
-|  Embalações em andamento |  |  |  |  |   |
-|  Móveis e utensílios em andamento |  |  |  |  |   |
-|  Equipamentos médicos em andamento |  |  |  |  |   |
-|  Total | (9.913.226,76) | (900.750,86) | 151.052,31 | - | (7.662.925,33)  |
-|  SALDO LÍQUIDO | 12.988.058,10 |  |  |  | 14.409.815,74  |
+| andamento | - | 196.839,61 | (1.980,00) | (34.277,91) | 160.581,70 |
 
-9 - INTANGÍVEL
+Equipamentos médicos
 
-|  DESCRIÇÃO | 2016 | 2015  |
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| em andamento | - | 74.146,60 | - | - | 74.146,60 |
+| Total 19.901.284,86 3.176.053,70 ( | 1.198.999,29) | 191.401,80 | 22.069.741,07 |
+
+Depreciação
+Descrição Saldo em 31/12/2015 Adições em 2016 Baixas em 2016 Transferências em 2016 Saldo em 31/12/2016
+
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| Terrenos | - | - | - | - | - |
+| Edificações | (4.467.826,02) | (591.257,66) | 4.475,28 | - | (5.054.608,40) |
+| Veículos | (795.961,90) | (11.362,86) | 53.009,12 | - | (754.315,64) |
+| Maquinas e equipamentos | (906.866,87) | (153.442,53) | 33.382,14 | - | (1.026.927,26) |
+| Moveis e utensílios | (338.606,31) | (69.938,62) | 9.302,69 | - | (399.242,24) |
+| Ferramentas | (9.609,54) | (175,35) | 1.800,00 | - | (7.984,89) |
+| Equipamentos de informática | (151.608,46) | (33.051,12) | 43.561,01 | - | (141.098,57) |
+
+Equipamentos de
+
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| comunicação | (37.028,07) | (4.319,94) | 5.522,07 | - | (35.825,94) |
+| Equipamentos médicos | (205.719,59) | (37.202,80) | - | - | (242.922,39) |
+| Edificações em andamento | - | - | - | - | - |
+
+Moveis e utensílios em
+
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| andamento | - | - | - | - | - |
+
+Equipamentos médicos
+
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| em andamento | - | - | - | - | - |
+| Total | (6.913.226,76) | (900.750,88) | 151.052,31 | - | (7.662.925,33) |
+| SALDO LÍQUIDO | 12.988.058,10 | 14.406.815,74 |
+
+9 – INTANGÍVEL
+DESCRIÇÃO 2016 2015
+
+|   |   |   |
 | --- | --- | --- |
-|  Atletas contratados: |  |   |
-|  Atletas formados | (a) 81.568,84 | 3.354.418,32  |
-|  (i) Amortização atletas formados | (b) 5.193.173,27 | (3.364.418,32)  |
-|  Atletas formados | (a) 1.825.699,71 | 660.642,75  |
-|  Atletas formados | (a) 3.747.486,93 | 2.831.008,13  |
-|  (i) Amortização atletas formados | (b) (2.731.687,28) | (2.140.425,98)  |
-|  Atletas em formação: |  |   |
-|  Atletas sub 20 | (a) 3.373.665,10 | 3.357.697,46  |
-|  Atletas sub 17 | (a) 600.406,00 | 625.146,78  |
-|  Atletas sub 15 | (a) 1.545.949,92 | 1.637.532,65  |
-|  Atletas sub 15 | (a) 1.191.693,32 | 750.018,03  |
-|  Direito de Uso de Imagem |  |   |
-|  Direito de uso de imagem | (a) 638.575,30 | 810.000,00  |
-|  (i) Amortização de uso de direito de imagem | (b) 10.183.333,30 | 8.830.769,83  |
-|  Programas de computadores | (a) 1.146.570,05 | 83.640,35  |
-|  Softwares em operação | (a) 140.574,20 | 112.211,46  |
-|  Softwares em desenvolvimento | (a) 85.445,34 |   |
-|  (i) Amortização de softwares em operação | (b) (79.449,62) | (68.571,13)  |
+| Atletas contratados: (a) | 81.569,84 | - |
+| Atletas formados | 5.151.173,07 | 3.364.418,32 |
+| (-) Amortização atletas formados (b) | (5.069.603,23) | (3.364.418,32) |
+| Atletas formados: (a) | 1.025.899,71 | 660.642,75 |
+| Atletas formados | 3.747.486,99 | 2.801.068,13 |
+| (-) Amortização atletas formados (b) | (2.721.587,28) | (2.140.425,38) |
+| Atletas em formação: (a) | 3.373.865,10 | 3.257.697,46 |
+| Atletas sub (nota 20) | 666.409,86 | 825.146,78 |
+| Atletas sub (nota 17) | 1.545.945,92 | 1.697.532,65 |
+| Atletas sub (nota 15) | 1.161.509,32 | 735.018,03 |
+| Direito de Uso de Imagem (a) | 638.575,38 | 810.000,00 |
+| Direito de uso de imagem | 10.183.533,30 | 8.893.766,63 |
+| (-) Amortização de uso de direito de imagem (b) | (9.544.957,92) | (8.083.766,63) |
+| Programas de computadores (a) | 146.570,05 | 43.640,35 |
+| Softwares em operação | 140.574,33 | 112.211,48 |
+| Softwares em desenvolvimento | 85.445,34 | - |
+| (-) Amortização de softwares em operação (b) | (79.449,62) | (68.571,13) |
+| TOTAL | 5.266.480,08 | 4.771.980,56 |
 
-|  TOTAL | 5.260.480,08 | 4.771.989,06  |
-| --- | --- | --- |
-|  (a) Os valores registrados no ativo intangível referem-se aos gastos933,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 |   |   |
+(a) Os valores registrados no ativo intangível referem-se aos gastos incorridos com os atletas.
+(b) As amortizações são realizadas com base no prazo do contrato de cada atleta.
+9.1 – CONCILIAÇÃO DO INTANGÍVEL
+Cessão de
+Softwares Cessão de direito de uso
 
-8.1 - CONCILIAÇÃO DO INTANGÍVEL
+|   |   |
+| --- | --- |
+| Softwares em direito de uso de imagens | - |
 
-|  Descrição | Atletas Contratadas | Atletas Formadas | Atletas Sub 20 | Atletas Sub 17 | Atletas Sub 15 | Softwares em Operação | Softwares em Desenvolvimento | Cessão de direito de uso de imagens e تحديث técnica | Cessão de direito de uso de imagens e تحديث técnica | Total  |
+Atletas Atletas Atletas Sub Atletas Sub Atletas em Desenvol- de imagens - comissão
+Descrição Contratados Formados 20 17 Sub 15 Operação vimento atletas técnica Total
+Intangível
+
+|   |   |   |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Intergível |  |  |  |  |  |  |  |  |  |   |
-|  Saldo em 31/12/2015 | 3.244.418,32 | 3.807.048,13 | 1.000.146,78 | 1.007.032,66 | 730.618,05 | 112.211,46 |  | 8.800.682,02 | 800.964,11 | 16.000.142,02  |
-|  Adjudged em 2016 | 1.780.750,75 | 644.418,00 | 1.012.000,00 | 1.005.128,34 | 1.144.772,00 | 33.614,23 |  | 1.024.667,17 | 1.004.780,07 | 8.800.000,00  |
-|  Baixas em 2016 |  |  | (1.871.700,00) | (2.134.774,07) | (880.206,06) | (8.586,38) |  | (3.014,02) | (605.000,00) | (5.408.148,04)  |
-|  Saldo em 31/12/2016 | 3.151.173,67 | 3.747.486,93 | 650.400,00 | 1.045.845,82 | 1.161.938,32 | 146.974,53 |  | 85.445,34 | 8.550.348,10 | 800.164,11  |
-|  Atividade |  |  |  |  |  |  |  |  |  |   |
-|  Saldo em 31/12/2016 | 3.244.418,32 | 3.740.635,98 |  |  |  | (69.871,72) |  | (7.222.682,02) | (800.164,11) | (1.007.141,86)  |
-|  Adjudged em 2016 | 1.780.750,75 | 1.091.157,30 |  |  |  | 1.154.547,17 |  | 1.007.141,20 |  | 3.764.372,23  |
-|  Baixas em 2016 |  |  |  |  |  | 1.512,33 |  |  |  | 1.536,38  |
-|  Saldo em 31/12/2016 | 3.260.480,08 | 3.737.087,08 |  |  |  | (76.496,65) |  | (8.800.772,87) | (800.964,11) | (1.114.000,00)  |
-|  Subclicação |  |  |  |  |  |  |  |  |  |   |
-|  Saldo em 31/12/2016 | 61.568,84 | 1.028.008,71 | 1.000.000,00 | 1.008.000,00 | 1.141.000,00 | 81.109,71 |  | 85.445,34 | 608.575,00 | 5.260.480,08  |
-|  Subclicação sub 20 |  |  | 600.642,75 | 825.146,78 | 1.007.032,66 | 730.618,05 |  | 83.640,35 | 810.000,00 | 4.771.989,06  |
+| Saldo em 31/12/2015 | 3.364.418,32 | 2.801.068,13 | 825.146,78 | 1.697.532,65 | 735.018,03 | 112.211,48 | - | 8.043.582,52 | 850.184,11 | 18.429.162,02 |
+| Adições em 2016 | 1.786.754,75 | 946.418,86 | 1.812.989,69 | 1.983.128,34 | 1.114.717,55 | 33.919,23 | 119.364,57 | 1.894.766,67 | - | 9.692.059,66 |
+| Baixas em 2016 | - | - | (1.971.726,61) | (2.134.715,07 | (688.226,26) | (5.556,38) | (33.919,23) | (605.000,00) | - | (5.439.143,55) |
+| Saldo em 31/12/2016 | 5.151.173,07 | 3.747.486,99 | 666.409,86 | 1.545.945,92 | 1.161.509,32 | 140.574,33 | 85.445,34 | 9.333.349,19 | 850.184,11 | 22.682.078,13 |
 
-9.2 - RESUMO DE ATLETAS VINCULADOS AO CLUBE
+Amortização
 
-Em 27 de dezembro de 2016, o Clube mantém vínculo com 47 atletas profissionais entre contratados, atletas formados e atletas empregados. O percentual de participação nos direitos econômicos dos atletas está assim representado:
+|   |   |
+| --- | --- |
+| Saldo em 31/12/2015 (3.364.418,32) (2.140.425,38) - - - (68.571,13) - (7.233.582,52) (850.184,11) ( | 13.657.181,46) |
+| Adições em 2016 | (1.705.184,91) | (581.161,90) | - | - | - | (16.434,87) | - | (1.461.191,29) | - | (3.763.972,97) |
+| Baixas em 2016 | - | - | - | - | - | 5.556,38 | - | - | - | 5.556,38 |
+| Saldo em 31/12/2016 | (5.069.603,23) | (2.721.587,28) | - | - | - | (79.449,62) | - | (8.694.773,81) | (850.184,11) | (17.415.598,05) |
 
-|  Atletas | Participação Direitos Econômicos |   | Atletas | Participação Direitos Econômicos  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  GEC | Terceiros |   | GEC | Terceiros  |
-|  Adjudger Fernando Soares de Cruz | 90% | 10% | Johnathan Carlos Pereira | 100% | 9%  |
-|  Alan Carlos de Paula Dias Filho | 100% | 5% | Kara Da Silva Almeida | 100% | 9%  |
-|  Alex Alves Cardoso | 20% | 80% | Keithan Bauer Talveira | 30% | 10%  |
-|  Andrew Agoron de Almeida Martins | 90% | 10% | Leonardo De Souza Serra | 100% | 9%  |
-|  Arthur Rodrigues Rosondo | 100% | 5% | Leonardo Damafre de Souza | 100% | 9%  |
-|  Benio Henrique Pinto | 40% | 60% | Leonardo Tasso De Castro | 60% | 20%  |
-|  Cara Oscar Borges de Oliveira | 90% | 10% | Lindar Da Silva Moreira | 90% | 10%  |
-|  Carque Carapides Gouveia | 80% | 20% | Lucia de Castro Souza | 30% | 10%  |
-|  Carlos Eduardo Ferreira Da Souza | 70% | 25% | Lucia Morais De São Geraldo | 100% | 9%  |
-|  Charleston Falves Da Silva Filho | 100% | 5% | Mudson Araújo Costa | 50% | 20%  |
-|  Charles Dade Paulino | 100% | 5% | Maria Luis S. Lages Santos Souza | 100% | 9%  |
-|  Charles Matusa Salatal | 100% | 5% | Marcus Vinicius Damasceno Soares | 30% | 10%  |
-|  Daniel Profino Silva | 100% | 5% | Mateo Sergio Valério | 50% | 20%  |
-|  Júlio Luque Caicado | 40% | 60% | Matheus Moura Garcia | 100% | 9%  |
-|  David De Duarte Macedo | 100% | 5% | Matheus Pereira Soares | 100% | 9%  |
-|  David Rumpu Oliveira E Silva | 100% | 5% | Matheus Rosemarie Alen | 100% | 9%  |
-|  Edson Da Silva Moreira | 100% | 5% | Mudson Henrique Pereira Rocha | 60% | 40%  |
-|  Edson Fernandes Botelho Junior | 100% | 5% | Oleofilo Saldros de Silva Junior | 100% | 9%  |
-|  Edson Gabriel Rosa Messina | 80% | 10% | Carlos Barros De Nascimento | 100% | 9%  |
-|  Erik Nascimento De Lima | 40% | 60% | Patrick Carvalho Nando | 100% | 9%  |
-|  Everton Pereira | 80% | 20% | Paulo Henrique Alves De Faria | 100% | 9%  |
-|  Filippo Cândido de Trindade | 80% | 10% | Pedro Henrique Pereira Dos Santos | 100% | 9%  |
-|  Filippo Francisco Macedo | 80% | 10% | Pedro Henrique Valdes R. Amorim | 60% | 10%  |
-|  Filippo Sabanino Gomes | 90% | 50% | Perante Da Silva Alunos | 100% | 9%  |
-|  Filippo Henrique Souza | 100% | 5% | Prince Reis Pires | 100% | 9%  |
-|  Frederico Burger Xavier | 100% | 5% | Rafael Barbosa dos Santos | 50% | 10%  |
-|  Gabriel Martins Rodrigues | 100% | 5% | Ramiro dos Anjos Alves | 50% | 40%  |
-|  Gilvan Soares da Silva | 100% | 5% | Renan Brito Soares | 50% | 50%  |
-|  Gonçani Candido Isidoro Reis | 100% | 5% | Thalão Gabriel Morais Dos Reis | 100% | 9%  |
-|  Gudice C. Castairo De Souza | 100% | 5% | Tulio Rodrigues Lima | 100% | 9%  |
-|  Johan Pinheiro Da Silva | 80% | 40% | Valdemir Da Oliveira Soares | 100% | 9%  |
-|  Johan Garcia | 100% | 5% | Valmir Lucas De Oliveira | 100% | 9%  |
-|  Jefferson Justo Antônio Da Silva | 100% | 5% | Walter Henrique da Silva | 7.5% | 92.5%  |
-|  Júlio Vitor Ladeira Jedrinha | 80% | 15% | Yhan Carlos Neves Vieira | 100% | 9%  |
-|  Jornelon Santos Barbosa | 90% | 10% |  |  |   |
+Saldo líquido
 
-|  10 - EMPRÉSTIMOS E FINANCIAMENTOS | TAXA | 2016 | 2015  |
+|   |   |   |   |   |   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| em 31/12/2016 | 81.569,84 | 1.025.899,71 | 666.409,86 | 1.545.945,92 | 1.161.509,32 | 61.124,71 | 85.445,34 | 638.575,38 | - | 5.266.480,08 |
+
+Saldo líquido
+
+|   |   |   |   |   |   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| em 31/12/2015 | - | 660.642,75 | 825.146,78 | 1.697.532,65 | 735.018,03 | 43.640,35 | - | 810.000,00 | - | 4.771.980,56 |
+
+<!-- columna 2 de 2 -->
+9.2 – RESUMO DE ATLETAS VINCULADOS AO CLUBE
+Em 31 de dezembro de 2016, o Clube mantinha vínculo com 47 atletas profissionais entre contratados, atletas
+formados e atletas emprestados. O percentual de participação nos direitos econômicos dos atletas está
+assim representado:
+Participação
+Direitos Participação Direitos
+Atletas Econômicos Atletas Econômicos
+GEC Terceiros GEC Terceiros
+Adryan Fernando Soares da Cruz 90% 10% Johnathan Carlos Pereira 100% 0%
+Alan Carlos de Paula Dias Filho 100% 0% Kaio Da Silva Almeida 100% 0%
+Alex Alves Cardoso 20% 80% Kedson Xavier Teixeira 90% 10%
+Andrew Agenor de Almeida Martins 90% 10% Leonardo De Souza Sena 100% 0%
+Arthur Rodrigues Rezende 100% 0% Leonardo Gamalho de Souza 100% 0%
+Bruno Henrique Pinto 40% 60% Leonardo Teles De Castro 80% 20%
+Caio Cesar Borges de Oliveira 90% 10% Liniker Da Silva Moreira 90% 10%
+Caique Gonçalves Gouveia 80% 20% Lucas do Carmo Souza 90% 10%
+Carlos Eduardo Ferreira De Souza 75% 25% Lucas Morais De São Geraldo 100% 0%
+Charleston Faleiro Da Silva Filho 100% 0% Madison Araújo Costa 80% 20%
+Clayton Sales Paulino 100% 0% Marcio Luiz S. Lopes Santos Souza 100% 0%
+Cleuber Matias Salatiel 100% 0% Marcus Vinicius Damasceno Santos 90% 10%
+Daniel Profirio Silva 100% 0% Mario Sergio Valério 80% 20%
+Danilo Lopes Cezario 40% 60% Matheus Moura Garcia 100% 0%
+David De Duarte Macedo 100% 0% Matheus Pereira Soares 100% 0%
+David França Oliveira E Silva 100% 0% Matheus Rezende Assis 100% 0%
+Eder Da Silva Moreira 100% 0% Murilo Henrique Pereira Rocha 60% 40%
+Edson Fernandes Botelho Junior 100% 0% Otacildo Sabino da Silva Junior 100% 0%
+Edson Gabriel Rosa Messias 90% 10% Patrick Bezerra Do Nascimento 100% 0%
+Erik Nascimento De Lima 40% 60% Patrick Carvalho Nonato 100% 0%
+Everton Pereira 80% 20% Paulo Henrique Alves De Faria 100% 0%
+Felipe Cândido de Trindade 85% 15% Pedro Henrique Pereira Dos Santos 100% 0%
+Felipe Francisco Macedo 85% 15% Pedro Henrique Veloso R. Amorim 85% 15%
+Felipe Saturnino Gomes 50% 50% Péricles Da Silva Nunes 100% 0%
+Flavio Henrique Sousa 100% 0% Pither Reis Pinto 100% 0%
+Frederico Burgel Xavier 100% 0% Rafael Barbosa dos Santos 85% 15%
+Gabriel Martins Rodrigues 100% 0% Ramires dos Anjos Alves 60% 40%
+Gilsivan Soares da Silva 100% 0% Renan Brito Soares 50% 50%
+Giovanni Candido Izidorio Reis 100% 0% Thalles Gabriel Morais Dos Reis 100% 0%
+Gustavo Caetano De Sousa 100% 0% Tulio Rocha Lima 100% 0%
+Jarlan Pinheiro Da Silva 60% 40% Valdemir De Oliveira Soares 100% 0%
+Jeferson Garcia 100% 0% Valmir Lucas De Oliveira 100% 0%
+Jefferson Junio Antônio Da Silva 100% 0% Walter Henrique da Silva 7,5% 92,5%
+João Vitor Ladeia Jerônimo 85% 15% Yhan Carlos Neres Vieira 100% 0%
+Joemison Santos Barbosa 90% 10%
+10 – EMPRÉSTIMOS E FINANCIAMENTOS
+DESCRIÇÃO TAXA 2016 2015
+
+|   |   |   |
+| --- | --- | --- |
+| Empréstimos: | 634.918,35 | 13.718.670,31 |
+| Banco Bradesco S. A. 2,06% a.m. | - | 718.655,35 |
+| CBF – Confederação Brasileira de Futebol 1,0% a.m. | 634.918,35 | 1.834.918,35 |
+| Banco de Crédito e Varejo 1,56% a.m. | - | 11.292.789,76 |
+| (-) Encargos a apropriar | - | (127.693,15) |
+| Contas garantidas: | 3.741,86 | 115.786,12 |
+| Bradesco S/A - (33-7) 2,05% a.m. | 3.741,86 | 112.606,13 |
+| Bradesco S/A - (4810-0) 2,05% a.m. | - | 3.179,99 |
+| TOTAL | 638.660,21 | 13.834.456,43 |
+| CIRCULANTE | 638.660,21 | 13.199.538,08 |
+| NÃO CIRCULANTE | - | 634.918,35 |
+
+11 – OBRIGAÇÕES TRABALHISTAS E SOCIAIS
+DESCRIÇÃO 2016 2015
+
+|   |   |   |
+| --- | --- | --- |
+| Salários, ordenados e encargos a pagar | 2.253.459,34 | 1.655.135,40 |
+| Férias e encargos a pagar | 1.108.539,00 | 979.815,52 |
+| Benefícios, pensão alimentícia, bolsa e contr. sindicais a pagar | 42.400,45 | 42.177,69 |
+| Empréstimos consignados a pagar | 11.644,92 | - |
+| Acordos trabalhistas a pagar | 43.548,32 | 488.272,17 |
+| TOTAL | 3.459.592,03 | 3.165.400,78 |
+
+12 – TRIBUTOS A RECOLHER
+DESCRIÇÃO 2016 2015
+
+|   |   |   |
+| --- | --- | --- |
+| Impostos: | 7.564,94 | 24.684,08 |
+| ISS - retenções | 3.452,99 | 20.305,42 |
+| IRRF | 4.111,95 | 4.378,66 |
+| Contribuições: | 25.858,42 | 49.474,23 |
+| INSS mão de obra terceirizada | 12.945,30 | 35.522,78 |
+| PIS/COFINS/CSLL Lei 10.833/03 | 12.913,12 | 13.951,45 |
+| Tributos parcelados: | 24.114.424,94 | 23.359.486,33 |
+| Parcelamento Banco Central do Brasil | - | 228.971,71 |
+| PROFUT débitos previdenciários RFB/PGFN (a) | 5.667.772,28 | 5.446.215,25 |
+| PROFUT demais débitos RFB (a) | 6.071.882,12 | 5.834.546,84 |
+| PROFUT demais débitos PGFN (a) | 12.374.770,54 | 11.849.752,53 |
+| Dívida Ativa: | 2.456.545,24 | 1.752.626,81 |
+| IPTU | 2.456.545,24 | 1.752.626,81 |
+| TOTAL | 26.604.393,54 | 25.186.271,45 |
+| CIRCULANTE | 3.802.844,12 | 3.009.482,63 |
+| NÃO CIRCULANTE | 22.801.549,42 | 22.176.788,82 |
+
+(a) Parcelamento de acordo com a Lei nº 13.155, de 04 de agosto de 2015, que regulamentou o PROFUT. Em
+23 de setembro de 2015, foi emitida a Portaria Conjunta PGFN/RFB nº 1.340, que regulamentou o parcelamento
+junto a esses órgãos, com o pagamento de 240 prestações mensais e consecutivas, com redução de 70%
+das multas, 40% dos juros e 100% dos encargos legais. Desde novembro de 2015, o Clube está recolhendo
+os tributos incluídos no Programa, de acordo com as condições estabelecidas na Portaria Conjunta PGFN/
+RFB nº 1.340. A confirmação dos efeitos do Parcelamento “PROFUT” depende também da consolidação do
+cálculo dos débitos por parte da autoridade fiscal, de modo que o montante hoje reconhecido no passivo do
+Clube poderá sofrer alterações. Adicionalmente, a manutenção do Clube no programa de parcelamento acima
+mencionado está condicionada ao atendimento de certas condições, sobretudo do pagamento das parcelas
+dos débitos, na forma da lei, e do pagamento do cumprimento de outras exigências previstas no Programa.
+Durante o ano de 2016, parte dos débitos referente ao parcelamento da Lei nº. 13.155 foi homologada pela
+autoridade fiscal, conforme abaixo:
+Homologado Pendente de TOTAL
+pela autoridade homologação
+Descrição
+
+|   |   |   |   |
 | --- | --- | --- | --- |
-|  DESCRIÇÃO |  | 634.918,35 | 13.718.678,31  |
-|  Empréstimos |  |  | 7.165.521,35  |
-|  Banco Brasseco S. A. | 2,00% a.m. | 634.918,35 | 1.834.918,35  |
-|  CBF - Confederação Brasileira de Futebol | 1,0% a.m. |  | 11.292.789,76  |
-|  Banco de Crédito e Varejo | 1,56% a.m. |  | (127.693,15)  |
-|  (i) Encargos a apropriar |  |  |   |
+| PROFUT débitos previdenciários RFB/PGFN | - | 5.667.772,28 | 5.667.772,28 |
+| PROFUT demais débitos RFB | - | 6.071.882,12 | 6.071.882,12 |
+| PROFUT demais débitos PGFN | 12.374.770,54 | - | 12.374.770,54 |
+| TOTAL | 12.374.770,54 | 11.739.654,40 | 24.114.424,94 |
 
-|  Contas garantidas: | 3.741,80 | 115.798,12  |
-| --- | --- | --- |
-|  Brasseco S/A - (33-7) | 2,05% a.m. | 3.741,80  |
-|  Brasseco S/A - (4810-0) | 2,05% a.m. | 2.179,99  |
-|  TOTAL | 638.666,21 | 13.834.456,43  |
-|  CIRCULANTE | 638.666,21 | 13.198.538,08  |
-|  NÃO CIRCULANTE |  | 654.918,35  |
-
-|  11 - OBRIGACÕES TRABALHISTAS E SOCIAIS | 2016 | 2015  |
-| --- | --- | --- |
-|  DESCRIÇÃO |  |   |
-|  Salários, ordenados e encargos a pagar | 2.253.458,34 | 1.655.135,40  |
-|  Férias e encargos a pagar | 1.108.539,00 | 679.815,52  |
-|  Benefícios, pensão alimentícia, bolsa e contr. rendícios a pagar | 42.400,45 | 42.177,69  |
-|  Empréstimos consignados a pagar | 11.644,92 |   |
-|  Acordos trabalhistas a pagar | 43.548,32 | 488.272,17  |
-|  TOTAL | 3.486.592,03 | 3.165.480,78  |
-
-|  12 - TRIBUTOS À RECOLHER | 2016 | 2015  |
-| --- | --- | --- |
-|  DESCRIÇÃO |  |   |
-|  Impostos: | 7.564,94 | 24.684,86  |
-|  ISS - retenções | 3.452,99 | 20.305,42  |
-|  WWF | 4.111,35 | 4.378,66  |
-|  Contribuições: | 25.858,42 | 49.474,23  |
-|  INDS não de obra terceirizada | 12.945,30 | 35.522,78  |
-|  PS/COFINS/CELL Lei 10.833/03 | 12.913,12 | 13.951,45  |
-|  Tributos parcelados: | 24.114.424,94 | 23.358.486,33  |
-|  Parcelamento Banco Central do Brasil |  | 228.871,71  |
-|  PROFUT débitos previdenciários RFB/POFN | (a) 5.907.772,28 | 5.446.210,52  |
-|  PROFUT demais débitos RFB | (a) 6.071.882,12 | 5.834.546,84  |
-|  PROFUT demais débitos PGFN | (a) 12.374.770,54 | 11.645.752,53  |
-|  Divida Ativo: | 2.456.545,24 | 1.752.626,81  |
-|  IPTU: | 2.456.545,24 | 1.752.626,81  |
-|  TOTAL | 26.664.565,54 | 25.166.271,45  |
-|  CIRCULANTE | 3.802.844,12 | 3.009.482,63  |
-|  NÃO CIRCULANTE | 22.601.546,42 | 22.176.708,60  |
-
-(a) Parcelamento de acordo com a Lei nº 13.155, de 04 de agosto de 2015, que regulamentou o PROFUT. Em 23 de setembro de 2015, foi emitida a Portaria Conjunta PGFN/RFB nº 1.340, que regulamentou o parcelamento com a esses órgãos, com o pagamento de 249 prestações mensais e consecutivas, com redução de 70% das multas, 40% dos juros e 100% dos encargos legais. Desde novembro de 2015, o Clube está recolhendo os tributos incluídos no Programa, de acordo com as condições estabelecidas na Portaria Conjunta PGFN/RFB nº 1.340. A confirmação dos efeitos do Parcelamento "PROFUT" depende também da consolidação do cálculo dos débitos por parte da autoridade fiscal, de modo que o montante hoje reconhecido no passivo do Clube poderá sofrer alterações. Adicionalmente, a manutenção do Clube no programa de parcelamento acima mencionado está combinada ao parcelamento de contas condições, sobretudo do pagamento dos parcelas dos débitos, na forma da lei, e do pagamento do cumprimento de outras exigências previstas no Programa. Durante o ano de 2016, parte dos débitos referente ao parcelamento da Lei nº 13.155 foi homologada pela autoridade fiscal, conforme abaixo:
-
-|   | Homologado pela autoridade | Pendente de homologação | TOTAL  |
-| --- | --- | --- | --- |
-|  Descrição |  |  |   |
-|  PROFUT débitos previdenciários RFB/POFN |  | 5.667.772,28 | 5.667.772,28  |
-|  PROFUT demais débitos RFB |  | 6.071.882,12 | 6.071.882,12  |
-|  PROFUT demais débitos PGFN | 12.374.770,54 |  | 12.374.770,54  |
-|  TOTAL | 12.374.770,54 | 11.738.654,40 | 24.114.424,94  |
-|  Durante em 2016 a consolidação, pela autoridade fiscal, de parte da dívida fiscal e do Clube parcelado nos bancos da Lei nº 13.155 de 2015,自动ando demonstrada no quadro anterior. Essa montante diverge, em aproximadamente R$ 2,6 milhões, a mais, dos contratos internos do Clube, que acredita ser essa diferença decorrente de não consideração, pela autoridade fiscal, dos pagamentos efetuados dessa débitos em parcelamento anteriores. Por isso, o Clube pretende, em 2017, solicitar a revisão da dívida aos órgãos competentes.  |   |   |   |
+Ocorreu em 2016 a consolidação, pela autoridade fiscal, de parte da dívida tributária do Clube parcelada nos
+termos da Lei nº 13.155 de 2015, consoante demonstrado no quadro anterior. Esse montante divergiu em
+aproximadamente R$ 2,6 milhões, a mais, dos controles internos do Clube, que acredita ser essa diferença
+decorrente da não consideração, pela autoridade fiscal, dos pagamentos efetuados desse débito em parcelamentos
+anteriores. Por isso, o Clube pretende, em 2017, solicitar a revisão da dívida aos órgãos competentes.
 
 --- pág. 3 ---
 
