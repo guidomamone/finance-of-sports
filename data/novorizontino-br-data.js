@@ -610,7 +610,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-0.888},
       {label:'Receitas financeiras', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 7
+    grossDebt:null, cash:0.952,
     officialTotalRevenue:9.055, officialTotalExpenses:22.866, officialPAT:-14.699,
   },
   2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -624,7 +625,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receita financeira', value:0.271777},
       {label:'Despesas financeiras', value:-1.501454},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 6
+    grossDebt:null, cash:2.133179,
     officialTotalRevenue:38.854, officialTotalExpenses:60.316335, officialPAT:-22.692012,
   },
   2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -667,7 +669,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receita financeira', value:0.035962},
       {label:'Despesas financeiras', value:-1.28431},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguiente): "Caixa e equivalentes de caixa (nota 6)" pág. 6
+    grossDebt:null, cash:0.348738,
     officialTotalRevenue:22.072861, officialTotalExpenses:50.54116, officialPAT:-29.716647,
   },
   2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -681,7 +684,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-0.349},
       {label:'Receitas financeiras', value:0.06},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 8
+    grossDebt:null, cash:0.149,
     officialTotalRevenue:7.161, officialTotalExpenses:15.357, officialPAT:-8.485,
   },
   2025: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -695,7 +699,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receita financeira', value:0.314598},
       {label:'Despesas financeiras', value:-3.636025},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 6
+    grossDebt:null, cash:1.482725,
     officialTotalRevenue:67.564252, officialTotalExpenses:89.496986, officialPAT:-25.254161,
   },
   2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
