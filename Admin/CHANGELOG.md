@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 436 — Cambio H: el ajuste de perímetro llega a localizar (etapa 3, escalón 0) (2026-10-03)
+
+- `tools/lote.mjs`: pasa `ajustePerimetroDe(pdf)` (del documento o del club) a las cuatro llamadas a `localizar`, que ya tenía el parámetro pero no lo recibía; hasta acá el ajuste solo lo leía cargar (etapa 8). Diseño aprobado por Guido.
+- Caso: Juventus 2020-21, localizar eligió el consolidado (b15, pág. 32) aunque el club tiene ajuste "individual" (b87, pág. 69).
+- Medido: el ensayo de los lotes 07-13 da idéntico (solo cambia una localización nueva en un club con ajuste `perimetro`).
+
 ## Versión 435 — Cambio G: el ajuste manual `fila` actúa en las lecturas 5 y 6, y con valor 0 solo saca la fila (2026-10-03)
 
 - `tools/verificar.mjs`: la fila que nombra `reemplaza` sale también de las hojas de la lectura 5 y de los renglones sin lado de la 6; con `--valor 0` el ajuste solo la saca (no agrega una línea en cero). Diseño aprobado por Guido.

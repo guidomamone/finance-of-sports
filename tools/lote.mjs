@@ -39,7 +39,7 @@ import { derivado } from './rutas.mjs';
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { verificarLista } = await import('./verificar.mjs');
-const { ajusteDe } = await import('./ajustes.mjs');
+const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 const { loadSite } = await import('./proponer-carga.mjs');
 process.argv = argvAntes;
 
@@ -127,10 +127,15 @@ for (const pdf of docs) {
   // CON AJUSTE MANUAL (Versión 370, idea de Guido: "el camino de error es ¿tiene un ajuste manual? si está, aplicarlo; si no, seguir la
   // escalera"): un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite UNA vez las notas como estado, con el
   // dato del ajuste como pista para localizar. Casos: Fortaleza CEIF 2018 y 2019.
+  // PERÍMETRO, ESCALÓN 0 EN LA ETAPA 3 (Versión 436, cambio H, aprobado por Guido el 2026-10-03): el ajuste manual `perimetro` (del documento
+  // o del club) se le pasa a localizar, que hasta acá elegía el consolidado por defecto y el ajuste recién lo leía cargar (etapa 8). Caso:
+  // Juventus 2020-21, localizar eligió el consolidado (b15, pág. 32) con el individual al lado (b87, pág. 69) y el ajuste del club en
+  // "individual"; no cerraba ninguna lectura. Sin ajuste, localizar elige como antes.
+  const perimetroClub = ajustePerimetroDe(pdf)?.valor || null;
   const ajRes = ajusteDe(pdf, 'resultado-final');
   const candidatoAjuste = REINTENTAR && ubAntes && !ubAntes.intentoNotasConAjuste && (ubAntes.sin_estado || !(ubAntes.estado || []).length) && ajRes?.linea;
   if (candidatoNotas || candidatoAjuste) {
-    const L3 = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
+    const L3 = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
     if (L3.ensayo) { usd += L3.usd + 0.07; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ~US$ 0,07`); continue; }
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
@@ -151,7 +156,7 @@ for (const pdf of docs) {
     if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
     const RA = rearmar(pdf, pagsTP, TP.metodo);
     console.log(`  ${pdf}: págs. ${RA.paginas.join(', ') || 'ninguna'} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})${RA.rechazadas.length ? `; págs. ${RA.rechazadas.join(', ')} NO (la compuerta del rearmado: perdían filas de tabla, queda la transcripción anterior)` : ''}`);
-    const L4 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
+    const L4 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
     if (L4.error || L4.datos?.sin_estado) { estado[pdf] = L4.error ? `localizar: ${L4.error}` : 'sin estado de resultados aun con el texto propio (queda como fuente)'; continue; }
     const V4 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V4.costo || V4.usd || 0;
     const X4 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X4.costo || 0;
@@ -160,7 +165,7 @@ for (const pdf of docs) {
     continue;
   }
   if (REINTENTAR && !reintento && !sinEstadoAntes) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
-  const L = await localizar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento, reintento });
+  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento, reintento });
   if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
@@ -180,7 +185,7 @@ for (const pdf of docs) {
       const r = node('tools/mistral-ocr-transcribe.mjs', [pdf]);
       if (r.status !== 0 || !existsSync(mdAbs)) { if (!existsSync(mdAbs)) copyFileSync(previo, mdAbs); estado[pdf] = 'escalón 1 de la etapa 2: Mistral falló (se restauró la transcripción anterior)'; continue; }
       node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
-      const L2 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
+      const L2 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
       if (L2.error || L2.datos?.sin_estado) { estado[pdf] = 'sin estado de resultados aun re-transcripto (queda como fuente)'; continue; }
       const V2 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V2.costo || 0;
       const X2 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X2.costo || 0;
