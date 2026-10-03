@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 439 — El diccionario de deuda en inglés vuelve a funcionar (+3 términos) (2026-10-03)
+
+- `tools/vocabulario.mjs`: la lista `en` de DEUDA_FINANCIERA había quedado dentro de un comentario desde la Versión 422 (ningún balance en inglés encontraba su deuda por diccionario). Va en su propia línea y suma 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities' (formato italiano en inglés, Juventus). Aprobado por Guido.
+- Medido (`caja-deuda.mjs --medir`, todos los clubes): resumen idéntico (deuda: 30 iguales, 7 distintos; caja sin cambios). Solo aparecen propuestas nuevas en años sin dato (Arsenal, Burnley, Sunderland, Wolves), que la compuerta rechaza.
+
 ## Versión 438 — `carpetas-clubes.mjs --json` ya no se corta en 64 KB (2026-10-03)
 
 - `tools/carpetas-clubes.mjs`: con `--json` sale recién cuando terminó de escribir (antes `process.exit(0)` inmediato perdía todo lo que pasaba de 64 KB por un pipe). La lista llegó a ~68 KB con las carpetas nuevas de otra sesión y `audit.js` daba P1 `carpetas-clubes-fallo`, así que `cargar.mjs --escribir` revertía cualquier carga. Aprobado por Guido.
