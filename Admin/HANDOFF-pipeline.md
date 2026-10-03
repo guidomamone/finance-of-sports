@@ -27,11 +27,12 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **En curso: Novorizontino** (Brasil), `Admin/lote-10.txt`, 13 documentos: 2010, 2013-2021, 2023-2025. 2018-2025 digitales; 2010 digital;
-   2013-2017 escaneos (transcriptos por Gemini). Guido corrió `--ejecutar` (2026-10-02, ~US$ 1,60). Después: `--ejecutar --reintentar` para
-   2025 y 2023 (el inventario marcó cifras con un dígito distinto: en 2025 son reales, en el estado de resultados; en 2023 es un falso positivo,
-   un número de firma digital en L148), ~US$ 0,24. 2022 está comentado en la lista: Mistral lo transcribió (US$ 0,13) y el .md se perdió;
-   re-transcribir cuando el resto esté cargado.
+1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2019, 2020, 2021.** Falta, en orden:
+   2024 (las filas de ingresos suman 81,6 M y el total impreso dice 40,2: parece doble conteo nota + estado); 2025 y 2023 con
+   `--ejecutar --reintentar` (~US$ 0,24; rearmado con el texto propio); 2018 y los viejos 2013-2017 (balancetes por cuenta y DRE resumida +
+   detallada: años vecinos que no coinciden, escala); 2010 (solo "primer año"); 2022 sin .md (re-transcribir, US$ 0,13).
+   Falsos positivos vistos, sin arreglar: "Consolidado" en el membrete del auditor (alta-club y perímetro de cargar; 2018-2020) y el
+   inventario marcando un número de firma digital como cifra (2023).
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
