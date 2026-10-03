@@ -3,13 +3,14 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série A (BR) — 7 ejercicio(s) con ranking:
+// Brasileirão Série A (BR) — 8 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2008: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -160,6 +161,14 @@ window.RANKINGS["br-serieA"] = {
       { id:"chapecoense-br", revenue:29.581, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2017",
         mix:[["Cuotas Sociales",4.192],["Comercial / Sponsors",3.253],["Estadio",1.246],["Televisión",11.445],["Premios por competencias",3.09],["Venta de Jugadores",3.415],["Otros ingresos",2.94]] },
+    ],
+  },
+  2015: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:18.012, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2015-2014",
+        mix:[["Cuotas Sociales",1.06],["Comercial / Sponsors",0.664],["Estadio",0.9],["Televisión",8.989],["Premios por competencias",0.587],["Venta de Jugadores",4.683],["Otros ingresos",1.13]] },
     ],
   },
   2008: {
