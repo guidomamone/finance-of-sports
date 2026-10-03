@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 424 — Caja y deuda: balance de dos lados en una fila (2026-10-02)
+
+- `caja-deuda.mjs` (`filasDelMd`): en una fila de tabla con dos etiquetas ("| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |"), cada etiqueta con sus cifras es una fila. Antes las cifras del pasivo quedaban pegadas a la caja y la deuda no existía como fila.
+- Caso: Novorizontino 2018-2025 (la IA elegía la fila de "Caixa" como deuda porque esa línea dice "Empréstimos").
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos. Novorizontino: ahora aparecen los empréstimos bancarios; la deuda grande (I-9 Sports, "partes relacionadas") espera decisión de Guido, no se escribió nada.
+
 ## Versión 423 — Caja y deuda, escalón 1: jerarquía de un balancete y lado de la cuenta (2026-10-02)
 
 - `caja-deuda.mjs` (`propuestaVocabulario`): una fila hija de otra que también coincide sale (código de cuenta que empieza con el de la otra, o, sin códigos, pegada abajo con el mismo importe); en deuda, una fila con marca D (deudora, activo) no cuenta.

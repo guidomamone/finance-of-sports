@@ -82,17 +82,24 @@ export function filasDelMd(md) {
   for (let i = 0; i < L.length; i++) {
     const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
-    let etiqueta = null; let crudos = [];
+    let etiqueta = null; let crudos = []; const segmentos = [];
     if (l.trim().startsWith('|')) {
       const celdas = l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
       if (celdas.every((c) => /^:?-{2,}:?$/.test(c) || !c)) continue;
       const iEt = celdas.findIndex((c) => /\p{L}{3,}/u.test(c)); if (iEt < 0) continue;
-      etiqueta = celdas[iEt]; crudos = celdas.slice(iEt + 1).filter((c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c));
+      // (Versión 424) BALANCE DE DOS LADOS EN UNA FILA: "| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |". Cada etiqueta
+      // con sus cifras es una fila (antes las del pasivo quedaban pegadas a la caja y la deuda no existía como fila). Caso: Novorizontino
+      // 2018-2025 (la IA terminaba eligiendo la fila de "Caixa" como deuda porque esa línea dice "Empréstimos").
+      const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c);
+      for (let j = iEt; j < celdas.length; j++) { if (!esTexto(celdas[j])) continue; let k = j + 1; const cs = []; while (k < celdas.length && !esTexto(celdas[k])) { if (esCifra(celdas[k])) cs.push(celdas[k]); k++; } segmentos.push([celdas[j], cs]); j = k - 1; }
+      [etiqueta, crudos] = segmentos.shift();
     } else {
       const t = l.replace(/\*\*/g, ''); if (!/\p{L}{3,}/u.test(t) || !/\d/.test(t)) continue;
       const mm = t.match(/^(.*?\p{L}[^\d(]*?)\s{2,}([-(\d].*)$/u) || t.match(/^(.*?\p{L}[^\d(]*?)\s+([-(]?\d[\d.,' ]*\)?(?:\s+[-(]?\d[\d.,' ]*\)?)*)\s*$/u);
       if (!mm) continue; etiqueta = mm[1].trim(); crudos = (mm[2].match(IMPORTE_RE) || []);
     }
+    const todas = [[etiqueta, crudos], ...segmentos];
+    for (const [et0, cr0] of todas) { const etiqueta = et0; let crudos = cr0;
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
     // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
@@ -108,6 +115,7 @@ export function filasDelMd(md) {
     const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
     filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
+    }
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
   // Dos ajustes PROPIOS de esta tool (no se tocaron las regex compartidas de vocabulario.mjs, que usan otras tools): (1) plurales: UC 2024
