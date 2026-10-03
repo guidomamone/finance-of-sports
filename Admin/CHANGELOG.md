@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 434 — Cambio F: lectura 6 de la etapa 6 (la 5 + los renglones sin lado según su signo) (2026-10-03)
+
+- `tools/verificar.mjs`: lectura 6 al final de la escalera de lecturas = la 5 (solo hojas, sin totales, resultado impreso exacto) más los renglones sin lado por su signo, como la 3. También en el chequeo de año vecino (`ingresosConLectura`). Diseño aprobado por Guido.
+- Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs" (+10.638.769 en 2015-16) y "Group's share of results of associates" quedaban sin lado y ninguna lectura cerraba. Ahora cierran 2015-16, 2016-17, 2017-18 y 2019-20; 2018-19 no (la fila "per share" "(0,040)" se lee como 40 €).
+- Medido con `verificar.mjs` sobre los lotes 07-12: todo idéntico salvo esos años de Juventus.
+
 ## Versión 433 — Cambio E: el lote pasa por las voces (resolver-inventario) antes de rearmar una transcripción "revisar" (2026-10-03)
 
 - `tools/lote.mjs`, etapa 2, escalón 1a: si el inventario dice "revisar", corre `resolver-inventario.mjs --pdf` (en el ensayo, su estimación; con `--ejecutar`, de verdad), regenera el inventario y, si queda "listo", sigue; si no, el rearmado (escalón 1b) como antes. Pedido y diseño aprobados por Guido.
