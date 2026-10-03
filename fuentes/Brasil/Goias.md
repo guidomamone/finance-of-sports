@@ -78,3 +78,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2009 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.pdf` (sourceId `goias-br-demonstracoes-contabeis-2009-2008`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2010 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.pdf` (sourceId `goias-br-demonstracoes-contabeis-2010-2009`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2011 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.pdf` (sourceId `goias-br-demonstracoes-contabeis-2011-2010`).
