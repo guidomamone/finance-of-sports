@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 400 — Texto propio: etiquetas partidas en dos renglones (escalón con compuerta) (2026-10-02)
+
+- `texto-propio-a-md.mjs`: escalón 0, el renglón tal cual; escalón 1, se une con el renglón de texto inmediatamente de arriba solo si la compuerta dice que es su continuación (el de arriba termina en un conector, "DAS", "de", "e", "com"…, o este empieza en minúscula; y están pegados). Un título arriba de un renglón completo ("RECEITAS" / "Futebol profissional e de base") no pasa.
+- Caso: Goiás 2016, "ATIVIDADES (nota 17)" → "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)"; "profissional e amador (nota 18)" → "Despesas com futebol profissional e amador (nota 18)".
+- Medido en las 8 transcripciones rearmadas de Goiás: en los estados de resultados solo cambia 2016; en los demás años, renglones del flujo de caja y párrafos de notas (nada que se cargue). Se rearmó solo 2016.
+
 ## Versión 399 — Rearmado con el texto propio: escalón por el registro de transcripciones (2026-10-02)
 
 - `texto-propio-a-md.mjs` / `lote.mjs`: si el registro de transcripciones (que compara el .md ENTERO con el texto propio) dice "revisar" por cifras con un dígito distinto, se rearman las páginas con texto propio que todavía no se rearmaron (método columnas), aunque la etapa 6 cierre: ese estado frena la carga igual.

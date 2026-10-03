@@ -38,6 +38,7 @@ import { execFileSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
+const CONECTOR_FINAL_RE = /\b(de|da|das|do|dos|e|com|para|em|na|no|nas|nos|a|o|ao|aos|à|às|of|and|y|del|la|las|los|el|und|von|der|des|du|et|en|van|het)$/i;
 const NUM_RE = /^\(?-?\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{1,2})?\)?$|^-$|^\(?\d+\)?$/;
 
 // ---------------------------------------------------------------- palabras de una página
@@ -177,12 +178,25 @@ export function paginaAMd(pdf, pag, metodo = 'columnas') {
     const R = renglones(ws);
     const lineas = [];
     let enTabla = false;
+    let textoPrevio = null; // { idx, texto, y1, h }: el último renglón SIN importes, si fue el inmediato anterior
     for (const r of R) {
-      const { etiqueta, importes } = partir(r);
+      let { etiqueta, importes } = partir(r);
+      const y0 = Math.min(...r.ws.map((w) => w.y0)); const y1 = Math.max(...r.ws.map((w) => w.y1)); const h = y1 - y0;
+      // ETIQUETA PARTIDA EN DOS RENGLONES (Versión 400, escalera con compuerta, pedido de Guido):
+      //   ESCALÓN 0  el renglón tal cual
+      //   ESCALÓN 1  se une con el renglón de texto inmediatamente de arriba, SOLO si la COMPUERTA dice que es su continuación: el de
+      //              arriba termina en un conector ("RECEITA LÍQUIDA DAS" / "ATIVIDADES") o este empieza en minúscula ("Despesas com futebol"
+      //              / "profissional e amador"), y están pegados (hueco menor a una altura de letra). Un título ("RECEITAS") arriba de un
+      //              renglón completo no pasa la compuerta. Caso: Goiás 2016, "ATIVIDADES (nota 17)" y "profissional e amador (nota 18)".
+      if (importes.length && textoPrevio && y0 - textoPrevio.y1 < Math.max(h, textoPrevio.h) && (CONECTOR_FINAL_RE.test(textoPrevio.texto) || /^\p{Ll}/u.test(etiqueta))) {
+        etiqueta = `${textoPrevio.texto} ${etiqueta}`; lineas.splice(textoPrevio.idx, 1);
+        if (process.env.TP_DEBUG) console.error(`unida: "${etiqueta}"`);
+      }
+      textoPrevio = null;
       if (importes.length) {
         if (!enTabla) { const n = Math.max(importes.length, 1); lineas.push('', `|   | ${Array.from({ length: n }, () => ' ').join(' | ')} |`, `| --- | ${Array.from({ length: n }, () => '---').join(' | ')} |`); enTabla = true; }
         lineas.push(`| ${etiqueta.replace(/\|/g, '/')} | ${importes.join(' | ')} |`);
-      } else { if (enTabla) lineas.push(''); enTabla = false; lineas.push(etiqueta); }
+      } else { if (enTabla) lineas.push(''); enTabla = false; lineas.push(etiqueta); textoPrevio = { idx: lineas.length - 1, texto: etiqueta, y1, h }; }
     }
     partes.push(`<!-- ${metodo === 'regiones' ? 'región' : 'columna'} ${ci + 1} de ${cols.length} -->\n${lineas.join('\n').replace(/\n{3,}/g, '\n\n').trim()}`);
   }
