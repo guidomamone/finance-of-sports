@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 420 — Caja y deuda: la compuerta exige la familia de la fila (2026-10-02)
+
+- `caja-deuda.mjs` (`compuerta`): deuda nunca con una fila de caja (CAJA_RE) y caja nunca con una fila de deuda financiera (DEUDA_FINANCIERA_RE). Es el filtro que los escalones 0 y 1 ya usaban al buscar; ahora también frena la propuesta de la IA (escalón 2). La comparación con el vecino no lo atrapaba: el mismo error en los dos años coincide.
+- Caso: Novorizontino 2021, 2022, 2024 y 2025: la IA proponía "Caixa e equivalentes de caixa" como deuda (2024: 2.133.179, pasaba la compuerta del documento siguiente).
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
 ## Versión 419 — Ajuste manual `caja` (2026-10-02)
 
 - `ajustes.mjs`: `caja` (--valor tal cual impreso en el documento del año). `caja-deuda.mjs` lo toma como escalón 0 (gana sobre la escalera, sin compuerta) y lo pasa a millones con la escala del documento.

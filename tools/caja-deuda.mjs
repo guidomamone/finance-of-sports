@@ -227,8 +227,13 @@ function propuestaIA(filas, ia, cual) {
 // (Versión 418) las cifras del documento SIGUIENTE se pasan a millones con la escala de ESE documento (factorSiguiente), no con la de este;
 // si no se conoce (su año no está cargado), la de este, como antes. Caso: Novorizontino 2021 (en miles): caja 0,952 contra 951.927 del 2022
 // (en reales), el mismo número.
-export function compuerta(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null }) {
+export function compuerta(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null }) {
   if (!factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
+  // (Versión 420) LA FAMILIA DE LA FILA: deuda nunca con una fila de caja, caja nunca con una fila de deuda financiera (el mismo filtro que
+  // los escalones 0 y 1 aplican al buscar, ahora también para la propuesta de la IA). La comparación con el vecino no lo atrapa: si el error
+  // se repite en los dos años, coincide. Caso: Novorizontino 2024 y 2025, la IA propuso "Caixa e equivalentes de caixa" como deuda.
+  const otraFamilia = (prop.filas || []).find((f) => (cual === 'deuda' ? CAJA_RE : cual === 'cash' ? DEUDA_FINANCIERA_RE : null)?.test(f.norm || ''));
+  if (otraFamilia) return { ok: false, valor: null, motivo: `la fila "${otraFamilia.etiqueta}" es de ${cual === 'deuda' ? 'caja' : 'deuda'}, no de ${cual === 'deuda' ? 'deuda' : 'caja'}` };
   const valor = prop.ninguna ? 0 : r6(prop.filas.reduce((a, f) => a + f.valor, 0) * factor);
   const chequeos = []; // [nombre, coincide, detalle]
   if (anterior != null) {
@@ -254,7 +259,7 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
   for (let e = 0; e < propuestas.length; e++) {
     const p = propuestas[e];
     if (!p) { if (e < 2 || ia) intentos.push(`escalón ${e}: sin propuesta`); continue; }
-    const c = compuerta(p, { factor, anterior, siguiente, factorSiguiente });
+    const c = compuerta(p, { factor, anterior, siguiente, factorSiguiente, cual });
     if (c.ok) return { valor: c.valor, escalon: e, validacion: c.validacion, como: p.como, filas: p.filas.map(cita), club };
     intentos.push(`escalón ${e} (${c.valor}): ${c.motivo}`);
   }
