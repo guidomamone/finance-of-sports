@@ -20,6 +20,7 @@ que dice `ESTADO.md` era verdad ese día.
 - `ajustes.mjs`: `cierre` (AAAA-MM-DD) y `reportType` (official_balance_sheet | official_budget), por documento. Escalón 0 en `alta-club.mjs` (ganan sobre lo detectado y sobre la respuesta de Claude por API) y, el cierre, en `localizar.mjs` (el ejercicio que se le pide buscar).
 - Casos: Novorizontino 2022 (el detector de período tomó la fecha de la firma, 28/04/2023; localizar lo dejó "sin estado") y 2010 (estado de resultados en una tabla con pocas filas numéricas: el alta preguntaba si era un dictamen).
 - Medido: ningún documento de los lotes 07-10 tenía estos ajustes (sin cambios hasta agregar uno).
+- `inventario-transcripciones.mjs`: el ajuste `cierre` fija el `periodo` del registro, de donde lo toman localizar, verificar (año y año vecino) y cargar. Medido sobre el registro entero: 3.358 documentos, solo cambia Novorizontino 2022 (28/04/2023 → 31/12/2022).
 
 ## Versión 412 — Ajuste manual `perimetro`, por documento o por club (2026-10-02)
 

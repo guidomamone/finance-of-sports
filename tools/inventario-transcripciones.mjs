@@ -52,6 +52,7 @@ import { createHash } from 'node:crypto';
 import { verifyNumbers } from './verify-numbers.mjs';
 import { derivado } from './rutas.mjs';
 import { periodoDe } from './periodo.mjs';
+import { ajusteDe } from './ajustes.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -198,7 +199,9 @@ let entries = pdfsAll.map((pdfAbs) => {
     // Un documento no anual NO se carga como ejercicio: queda marcado para juntarlo con los otros períodos cuando lleguen
     // (`node tools/periodo.mjs --grupos`). `nombreNoCoincide` avisa cuando el nombre del archivo dice otra fecha (Galatasaray: el nombre
     // dice cierre anual 31/05/2019 y el contenido es el primer trimestre al 31/08/2019).
-    periodo: tieneMd ? (() => { try { const r = periodoDe(readFileSync(mdAbs, 'utf8'), pdf); return { tipo: r.tipo, meses: r.meses, cierre: r.cierre, anual: r.anual, confianza: r.confianza, nombreNoCoincide: r.nombreNoCoincide || undefined, evidencia: r.evidencia || undefined }; } catch { return null; } })() : null,
+    // (Versión 413) el ajuste manual `cierre` (tools/ajustes.mjs) es el escalón 0 del período: de acá lo toman localizar, verificar (año y
+    // año vecino) y cargar. Caso: Novorizontino 2022, el contenido daba la fecha de la firma (28/04/2023).
+    periodo: tieneMd ? (() => { const aj = ajusteDe(pdf, 'cierre'); if (aj) return { tipo: 'anual', meses: 12, cierre: aj.valor, anual: aj.valor.slice(5) === '12-31' ? 'calendario' : 'temporada', confianza: 'alta', evidencia: `ajuste manual (${aj.fecha}): ${aj.motivo}` }; try { const r = periodoDe(readFileSync(mdAbs, 'utf8'), pdf); return { tipo: r.tipo, meses: r.meses, cierre: r.cierre, anual: r.anual, confianza: r.confianza, nombreNoCoincide: r.nombreNoCoincide || undefined, evidencia: r.evidencia || undefined }; } catch { return null; } })() : null,
   };
 });
 
