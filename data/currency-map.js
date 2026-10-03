@@ -341,6 +341,7 @@ const FX_CLOSE = {
   'EUR@2018-06-30': { fx: 0.85778, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2017-06-30': { fx: 0.876271, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2017-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2016-06-30': { fx: 0.900739, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2016-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2019-06-30': { fx: 0.878735, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
