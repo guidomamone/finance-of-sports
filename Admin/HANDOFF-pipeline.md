@@ -28,9 +28,8 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
 1. **Novorizontino** (Brasil, `novorizontino-br`): **cargados 2010 y 2013-2025** (2011-2012 sin documento). Pendiente: caja y deuda
-   (`caja-deuda.mjs`: escala del vecino arreglada, Versión 418; 2019-2020 frenan porque la columna "Notas" (4) y el pasivo en
-   la misma fila corren las cifras; 2022 por ajuste `caja` (146.924, la reclasificada por el 2023); deuda: solo 2015 (préstamo de I-9 Sports); la IA propone la caja como deuda en 2021-2025 (frenado, Versión 420: revisar el prompt);
-   caja cargada 2015-2018 y 2021-2025);
+   (`caja-deuda.mjs`: Versiones 418-421; 2022 por ajuste `caja` (146.924, la reclasificada por el 2023); deuda: solo 2015 (préstamo de I-9 Sports); la IA propone la caja como deuda en 2021-2025 (frenado, Versión 420: revisar el prompt);
+   caja cargada 2015-2025; próximo: diccionario de deuda sin el código de cuenta al principio + "mutuo*" (aprobado de a uno));
    ligas 2013-2017 en null (sin liga nacional, solo el Paulista: decidir si `liga-no-catalogada`). Falsos positivos vistos: el
    inventario marca un número de firma digital como cifra (2023); alta-club pregunta perímetro en un club nuevo por el membrete del auditor.
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,

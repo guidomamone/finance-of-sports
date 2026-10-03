@@ -640,7 +640,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-0.294},
       {label:'Receitas financeiras', value:0.068},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
+    grossDebt:null, cash:0.695,
     officialTotalRevenue:12.23, officialTotalExpenses:15.787, officialPAT:-3.783,
   },
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = exceptional_items. Guido 2026-10-02: provisión única por una cobranza a Corinthians por venta de un atleta, en discusión judicial; no recurrente
@@ -655,7 +656,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-0.484},
       {label:'Receitas financeiras', value:null},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
+    grossDebt:null, cash:0.085,
     officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
   },
   2023: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
