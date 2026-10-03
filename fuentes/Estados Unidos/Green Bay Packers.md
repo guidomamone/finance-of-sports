@@ -9,6 +9,14 @@ de registro bajo la Exchange Act pese a ser "propiedad pública") · Wayback CDX
 shareholders) encontrando los 3 PDFs de arriba · búsqueda web: agotado para años recientes (solo
 cifras de prensa, sin PDF nuevo encontrado) · barrido: 1 (Sonnet) — 2026-09-27
 
+- **Chequeo 2026-10-03 (sourcing Norteamérica)**: ya hay 6 ejercicios con estados (FY2016, FY2017, FY2019,
+  FY2020, FY2021, FY2022; FY2018 solo en el gráfico), o sea sobre la meta de 5. Se reintentó FY2023-FY2026:
+  `packers.com/news/packers-finances-staying-in-good-shape-2025` (y las de 2024) repiten las cifras
+  (operating profit FY2025 $83,7 M; net income $85,6 M vs $98,1 M; reserva ~$579 M) pero NO enlazan ningún
+  PDF ni portal; 3 búsquedas web no devolvieron el documento; el CDX de archive.org no respondió desde esta
+  máquina (error de conexión inmediato), solo la API `available`, que para `2023-packers-annual-report.pdf`
+  devolvió vacío. El próximo paso sigue siendo el de más abajo (shareholder services o proxyvote).
+
 - **Deporte**: Fútbol americano
 - **Liga / competencia**: NFL (Estados Unidos) — División Norte de la Conferencia Nacional
 - **Entidad legal**: **Green Bay Packers, Inc.** — el ÚNICO club de las 4 grandes ligas de EE.UU. de
