@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 418 — Caja y deuda: la compuerta pasa el documento siguiente a su propia escala (2026-10-02)
+
+- `caja-deuda.mjs` (`compuerta`): las cifras del documento siguiente se multiplican por la escala de ESE documento (`factorSiguiente`, de sus ingresos cargados), no por la de este; si no se conoce, la de este, como antes.
+- Caso: Novorizontino 2021 (en miles), caja 0,952 contra 951.927 del documento 2022 (en reales): el mismo número; ahora pasa.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
 ## Versión 417 — Ajuste manual `confirmado`: un número confirmado a mano contra el PDF (2026-10-02)
 
 - `ajustes.mjs`: `confirmado` (--linea N --valor "tal cual en el .md"), varios por documento. `verificar.mjs` (compuerta del registro): un número sin confirmar por la segunda lectura que tiene su ajuste no frena el paso a "listo".

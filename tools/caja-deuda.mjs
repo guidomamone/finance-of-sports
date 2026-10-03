@@ -223,7 +223,10 @@ function propuestaIA(filas, ia, cual) {
 }
 
 // LA COMPUERTA, la misma para los tres escalones.
-export function compuerta(prop, { factor, anterior = null, siguiente = null }) {
+// (Versión 418) las cifras del documento SIGUIENTE se pasan a millones con la escala de ESE documento (factorSiguiente), no con la de este;
+// si no se conoce (su año no está cargado), la de este, como antes. Caso: Novorizontino 2021 (en miles): caja 0,952 contra 951.927 del 2022
+// (en reales), el mismo número.
+export function compuerta(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null }) {
   if (!factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
   const valor = prop.ninguna ? 0 : r6(prop.filas.reduce((a, f) => a + f.valor, 0) * factor);
   const chequeos = []; // [nombre, coincide, detalle]
@@ -234,7 +237,7 @@ export function compuerta(prop, { factor, anterior = null, siguiente = null }) {
   // (Versión 385) una fila que no está en las páginas del balance (una nota) se busca también en las notas del documento vecino.
   if (siguiente) {
     if (prop.ninguna) { const fs = siguiente.filter((x) => x.balance && prop.familias.includes(x.familia) && x.cifras.length > 1); chequeos.push(['documento siguiente', fs.every((x) => x.cifras[1] === 0), fs.length ? `${fs.map((x) => x.cifras[1]).join(' + ')} en el siguiente` : 'el siguiente tampoco tiene esas filas']); }
-    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * factor); chequeos.push(['documento siguiente', Math.abs(prev - valor) <= TOL(valor), `${prev} en el siguiente`]); } }
+    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); chequeos.push(['documento siguiente', Math.abs(prev - valor) <= TOL(valor), `${prev} en el siguiente`]); } }
   }
   const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
   if (malos.length) return { ok: false, valor, motivo: `no coincide con ${malos.map((c) => `${c[0]} (${c[2]})`).join(' ni ')}` };
@@ -243,14 +246,14 @@ export function compuerta(prop, { factor, anterior = null, siguiente = null }) {
 }
 
 // La escalera para un dato: cada escalón propone, la compuerta decide, y si no pasa se baja. `ia`: la respuesta de la IA (o null).
-export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, ia = null } = {}) {
+export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null } = {}) {
   const club = familiasDelClub(precedentes, cual);
   const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club), ia ? propuestaIA(filas, ia, cual) : null];
   const intentos = [];
   for (let e = 0; e < propuestas.length; e++) {
     const p = propuestas[e];
     if (!p) { if (e < 2 || ia) intentos.push(`escalón ${e}: sin propuesta`); continue; }
-    const c = compuerta(p, { factor, anterior, siguiente });
+    const c = compuerta(p, { factor, anterior, siguiente, factorSiguiente });
     if (c.ok) return { valor: c.valor, escalon: e, validacion: c.validacion, como: p.como, filas: p.filas.map(cita), club };
     intentos.push(`escalón ${e} (${c.valor}): ${c.motivo}`);
   }
@@ -330,7 +333,8 @@ function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   const precedentes = Object.entries(conocidos[cual]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
     .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y]) } : null; }).filter(Boolean);
   const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
-  return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null };
+  return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
+    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio]) : null };
 }
 const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
 const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md)) c.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return c.get(md); }; };
