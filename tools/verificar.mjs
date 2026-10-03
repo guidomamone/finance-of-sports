@@ -503,6 +503,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const ing5 = conSigno5('ingreso', 'D'); const gas5 = conSigno5('gasto', 'C');
   if (reemplazadas.size) aplicarAjustesFila(ing5, gas5, false);
   const fin5 = hojas5('financiero').map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === 'D' ? -Math.abs(f.M) : Math.abs(f.M)) : f.M }; });
+  // (Versión 437, arreglo de G) un ajuste `fila` del lado financiero con `reemplaza` también ENTRA en la lectura 5/6 (antes solo salía la
+  // fila vieja). Caso: Juventus 2003-2006, gastos financieros impresos en positivo bajo "17) INTEREST AND OTHER FINANCIAL EXPENSES".
+  for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && x.reemplaza && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
+    const m = mult(estado[0]?.bloque); fin5.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+  }
   const evaluar = (nivel) => {
     const ch = []; let ing = [...(nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
     const finL = nivel >= 5 ? fin5 : fin;

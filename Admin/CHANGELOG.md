@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 437 — Arreglo de G: un ajuste `fila` financiero también entra en las lecturas 5 y 6; ajustes manuales de Juventus 2003-2006 y 2021 (2026-10-03)
+
+- `tools/verificar.mjs`: en las lecturas 5/6 el ajuste `fila` del lado financiero con `reemplaza` saca la fila vieja Y agrega la suya (antes solo la sacaba). Medido: lotes 07-13 idénticos.
+- Ajustes manuales (decisión de Guido, formato italiano viejo, el signo lo da el encabezado): 2003-2006 gastos financieros de "17)" en negativo; 2003-2005 partidas de "19)", "20)" y "21)" con su lado; 2021 sale la fila de pérdida por acción "(0,157)". Los cinco años cierran (2003-2006 con la lectura 5, 2021 con la 6).
+- Cambio H probado con Juventus 2020-21: localizar eligió el individual (b87).
+
 ## Versión 436 — Cambio H: el ajuste de perímetro llega a localizar (etapa 3, escalón 0) (2026-10-03)
 
 - `tools/lote.mjs`: pasa `ajustePerimetroDe(pdf)` (del documento o del club) a las cuatro llamadas a `localizar`, que ya tenía el parámetro pero no lo recibía; hasta acá el ajuste solo lo leía cargar (etapa 8). Diseño aprobado por Guido.
