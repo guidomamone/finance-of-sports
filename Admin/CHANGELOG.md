@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 406 — Lote: con --reintentar, un año ya cargado no se reprocesa por desgloses (2026-10-03)
+
+- `lote.mjs`: un documento cuyo año ya está en el sitio solo se reintenta por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual. Por "desglose que no suma" no (se cargó con el renglón sin abrir, a propósito).
+- Casos: `lote-08 --reintentar` iba a reprocesar Fortaleza 2018-2024 ya cargados (US$ 0,61; en 2018-2020 las marcas eran ruido: 5.867,807 contra 5.867,804); Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real (US$ 0,45).
+- Medido (ensayo con --reintentar): lotes 07, 09 y 09b, nada; 08 y 08b, solo Fortaleza 2017 (sueldos en 0, el caso buscado).
+
 ## Versión 405 — Carga: una fila sin desglosar apaga solo los avisos de "categorías en 0" de su lado (2026-10-03)
 
 - `cargar.mjs`: ingresos sin desglosar → no se revisan televisión, estadio, cuotas sociales ni otros deportes; gastos sin desglosar → no se revisa sueldos del plantel. Hasta la 404 cualquier fila `lump_` apagaba todos los avisos del año.

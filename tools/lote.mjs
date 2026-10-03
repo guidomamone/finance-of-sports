@@ -28,7 +28,7 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
@@ -85,7 +85,14 @@ console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VER
 for (const pdf of docs) {
   const e = registro.find((x) => x.pdf === pdf);
   if (!e?.md) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
-  const reintento = REINTENTAR ? verifDe(e)?.reintentar || null : null;
+  // AÑO YA CARGADO (Versión 406, auditoría del pipeline): con --reintentar, un documento cuyo año ya está en el sitio NO se reintenta por
+  // "desglose que no suma" (se cargó con el renglón sin abrir, a propósito; en Fortaleza 2018-2020 esas marcas eran ruido: 5.867,807 contra
+  // 5.867,804). Solo por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual (si no, es
+  // vieja: Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real, US$ 0,45). Caso que sí: Fortaleza 2017,
+  // sueldos en 0 (Admin/lote-08b.txt).
+  const cargaFresca = (() => { try { const pc = resolve(ROOT, derivado(e.md, '.carga.json', { crear: false })); const pa = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl'); return existsSync(pc) && (!existsSync(pa) || statSync(pc).mtimeMs >= statSync(pa).mtimeMs); } catch { return false; } })();
+  const reintento = !REINTENTAR ? null : e.cargado ? ((cargaFresca && (leerDerivado(e, '.carga.json')?.reintentar || []).filter((x) => x.categoria)) || []).length ? leerDerivado(e, '.carga.json').reintentar.filter((x) => x.categoria) : null : verifDe(e)?.reintentar || null;
+  if (REINTENTAR && e.cargado && !reintento) { estado[pdf] = 'ya cargado, sin categorías en 0 que reintentar'; console.log(`  ${pdf}: ya cargado (no se reintenta por desgloses)`); continue; }
   const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)
   // ETAPA 3, ESCALÓN 2 (Versión 360, aprobado por Guido): "las notas hacen de estado". Solo con --reintentar, una vez por documento, si la
   // localización anterior no encontró estado (sin_estado, o la lista del estado vacía) pero sí notas de ingresos Y de gastos, y la transcripción

@@ -22,41 +22,22 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Dos clubes enteros en el sitio local, sin push (2026-10-02):**
-- **UC** (Chile), 2010-2025; caja y deuda 21 de 26.
-- **Fortaleza CEIF** (Colombia, primer club nuevo; los PDFs traen solo notas), 2017-2025; caja 5 de 9 años, deuda 7 de 9 (el resto, sin dato
-  con ningún escalón). Cinco años cerraron con ajustes manuales (`node tools/ajustes.mjs` los lista, con el impuesto calculado de cada uno).
+**Tres clubes enteros en el sitio local, sin push (2026-10-03):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; **Goiás
+(Brasil) 2008-2017 y 2021-2025 (15 años, con liga en todos)**. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.md`);
+lo importante quedó resuelto en las Versiones 395-406 (texto propio del PDF, lecturas 3-4, categorías por nota, caché de Claude con la
+nota, avisos de "categorías en 0" por lado, el lote no reprocesa años cargados).
 
-Lo que se construyó con Fortaleza (Versiones 362-386, detalle en el CHANGELOG): escala del año vecino; signo del impuesto por el resultado
-impreso; ajustes manuales (escalón 0 de todas las escaleras); fecha de cierre por los encabezados de las tablas; tipo de cambio con compuerta
-de fecha; en la carga, "lo que cerró en la etapa 6 no se vuelve a decidir" (signos, lado, palabras, no-es-rubro); materialidad; caja como total
-de la nota de efectivo y deuda como total de la nota de deuda.
+Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + el club en curso):
 
-Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
-
-1. **Goiás** (`goias-br`, Brasil) **entero en el sitio local: 2008-2017 y 2021-2025 (15 años)**, `Admin/lote-09.txt` y `lote-09b.txt`.
-   Con liga en las 15 temporadas (Versiones 401-402).
-2. **Auditoría del proceso hecha** (`Admin/auditoria-pipeline-2026-10-02.md`). Ya resuelto: categorías por nota (Versiones 403-404) y los
-   errores de Goiás. Chequeo de coherencia entre años: prototipado y NO construido (con 403-404 encontró solo 2 casos en tres clubes,
-   contestados por Guido: Fortaleza 2020 "Auxilio hotelero" y UC 2018 "Indemnizaciones"); retomarlo si con los próximos clubes vuelven los
-   errores de categoría. Sigue, en orden: Fortaleza 2017 (sueldos en 0 sin aviso) y las 55 dudas silenciadas por `sin-dudas`; que el lote
-   no reprocese años cargados y cierre casos viejos de la cola (ensayo real del 2026-10-03: `lote-08 --reintentar` iba a reprocesar
-   Fortaleza 2018-2024, ya cargados, por marcas de "desglose que no suma" que en 2018-2020 son ruido: 5.867,807 contra 5.867,804; 137,713
-   contra 137,713); escalones automáticos para lo que hoy son ajustes. Fortaleza 2017: reintento por sueldos en 0 con `Admin/lote-08b.txt`.
-3. **Notas de la auditoría (detalle)** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
-   UC, Fortaleza y Goiás: qué escaleras y escalones existen y cuáles se usaron de verdad; reglas que se agregaron por un solo caso y conviene
-   revisar; casos que se resolvieron a mano o con ajustes y deberían tener escalón; gastos innecesarios (p. ej. el lote que volvió a
-   localizar 2025 y 2017 ya cargados porque su .carga.json viejo pedía reintentar); trampas que el HANDOFF todavía no cuenta. Anotado para esa auditoría: el precedente exacto SIN contexto categorizó "Despesa com pessoal"
-   de la nota de fútbol (Goiás 2014-2015) como gastos generales porque en 2023-2024 la misma etiqueta está en la nota administrativa
-   (se forzó con ajustes `categoria`); `cola.mjs --corregir-categoria` se descarta en silencio si la categoría es del otro lado. Lo mismo con una RESPUESTA de la cola: "Serviços de terceiros" contestado
-   para la fila dentro de "Custo com futebol" (2024-2025) se aplicó por etiqueta a 2008-2012, 2015 y 2016, donde está en el bloque
-   administrativo (corregido con ajustes `categoria`). Y `cero-real` se usó para un 0 que en realidad es "no desglosado por la fuente"
-   (otras secciones deportivas de Goiás 2014, 2015 y 2017: hay esportes olímpicos en las cuentas a cobrar, pero el estado no los separa):
-   falta un ajuste/campo para "no desglosado" y que la página lo muestre (`fiscalYearMeta.sinDesglose`).
-3. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
-   buscar): Novorizontino (Brasil, 12 años, digital); AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos);
-   Juventus (Italia, 22 años, informes consolidados del grupo, largos: más caro y con la duda del perímetro). Los noruegos (Molde 18,
-   Fredrikstad 18, Aalesund 16, Brann 14...) son todos escaneos: para cuando exista el escalón 2 de la etapa 2 (Gemini sobre escaneos).
+1. **Próximo club: Novorizontino** (Brasil, 12 años, digitales). Armar `Admin/lote-10.txt` y empezar por el ensayo.
+2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
+   consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
+3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
+   --lista Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
+4. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
+   que repite el documento siguiente; costos financieros mal rotulados); marcar "no desglosado" distinto de `cero-real` y que la página lo
+   muestre (`fiscalYearMeta.sinDesglose`, ya lo usan 8 años); cerrar casos obsoletos de la cola; chequeo de coherencia entre años
+   (prototipado, no construido: retomar si vuelven errores de categoría).
 
 Publicación: `inventario-transcripciones` está mergeada entera en `main` (2026-10-02); falta el push, que lo hace Guido (`git push origin main`).
 
@@ -79,7 +60,7 @@ Pendientes:
   2025 aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
 - El comentario que escribe `cargar.mjs` en la meta todavía dice "grossDebt/cash: no se leen por script todavía": ahora los completa
   `caja-deuda.mjs` (o los conserva `--reemplazar`).
-- Que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (otra sesión; hoy ningún año cargado lo usa).
+- Que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (otra sesión; ya lo usan 8 años cargados).
 - Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
 - Etapas 4 y 8: registrar en qué escalón salió cada dato (las escaleras existen, falta dejarlo escrito por documento).
 - Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
