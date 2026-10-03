@@ -1,6 +1,6 @@
 --- pág. 1 ---
 
-> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1): la transcripción de Mistral no coincidía con él.
+> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1, método columnas): la transcripción de Mistral no coincidía con él.
 
 <!-- columna 1 de 3 -->
 RELATÓRIO DO AUDITOR INDEPENDENTE SOBRE AS DEMONSTRAÇÕES
@@ -199,18 +199,15 @@ DEMONSTRAÇÕES DO RESULTADO PARA OS EXERCÍCIOS
 FINDOS EM 31 DE DEZEMBRO DE 2016 E 2015 (EM REAIS)
 DESCRIÇÃO Notas
 Explicativas 2016 2015
-RECEITA LÍQUIDA DAS
 
 |   |   |   |
 | --- | --- | --- |
-| ATIVIDADES (nota 17) | 83.004.966,02 | 70.333.324,50 |
+| RECEITA LÍQUIDA DAS ATIVIDADES (nota 17) | 83.004.966,02 | 70.333.324,50 |
 | CUSTOS E DESPESAS | (63.985.423,09) | (39.233.743,86) |
 
-Despesas com futebol
-
 |   |   |   |
 | --- | --- | --- |
-| profissional e amador (nota 18) | (38.209.385,92) | (26.592.069,43) |
+| Despesas com futebol profissional e amador (nota 18) | (38.209.385,92) | (26.592.069,43) |
 | Despesas administrativas | (454.245,43) | (340.103,84) |
 | Materiais | (875.577,79) | (664.503,46) |
 | Serviços de terceiros | (3.284.071,56) | (2.427.360,73) |
@@ -218,11 +215,9 @@ Despesas com futebol
 | Despesas gerais (nota 19) | (19.707.324,84) | (8.981.736,95) |
 | Outras receitas e despesas | 18.407,79 | - |
 
-RESULTADO ANTES DO
-
 |   |   |   |
 | --- | --- | --- |
-| RESULTADO FINANCEIRO | 19.037.950,72 | 31.099.580,64 |
+| RESULTADO ANTES DO RESULTADO FINANCEIRO | 19.037.950,72 | 31.099.580,64 |
 | Resultado financeiro líquido 20 ( | 3.260.860,85) | (5.572.564,38) |
 | SUPERÁVIT DO EXERCÍCIO | 15.777.089,87 | 25.527.016,26 |
 
@@ -273,11 +268,9 @@ Ajustes para reconciliar o resultado
 | Reversão de ativos e passivos | - | (4.533.040,99) |
 | Lucro na venda de imobilizado/intangível | (463.736,81) | - |
 
-Juros sobre empréstimos e outras operações
-
 |   |   |   |
 | --- | --- | --- |
-| que não envolvem caixa | 612.413,92 | 2.267.878,60 |
+| Juros sobre empréstimos e outras operações que não envolvem caixa | 612.413,92 | 2.267.878,60 |
 
 Variação de ativos e passivos
 
@@ -317,11 +310,9 @@ DE FINANCIAMENTO
 | Ingressos de empréstimos | - | 9.759.957,23 |
 | Caixa líquido das atividades de financiamento | (12.895.933,30) | (991.909,11) |
 
-AUMENTO (REDUÇÃO) LÍQUIDO DE
-
 |   |   |   |
 | --- | --- | --- |
-| CAIXA E EQUIVALENTES DE CAIXA | 1.534.019,39 | (2.388.149,61) |
+| AUMENTO (REDUÇÃO) LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA | 1.534.019,39 | (2.388.149,61) |
 | Caixa e equivalentes de caixa no início do período | 19.481,28 | 2.407.630,89 |
 | Caixa e equivalentes de caixa no fim do período | 1.553.500,67 | 19.481,28 |
 | VARIAÇÃO OCORRIDA NO EXERCÍCIO | 1.534.019,39 | (2.388.149,61) |
@@ -564,17 +555,13 @@ Descrição Saldo em 31/12/2015 Adições em 2016 Baixas em 2016 Transferências
 | Equipamentos médicos | 446.557,99 | 3.855,79 | (3.855,79) | - | 446.557,99 |
 | Edificações em andamento | 699.962,67 | 2.660.667,82 | (952.772,00) | (509.622,20) | 1.898.236,29 |
 
-Moveis e utensílios em
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| Moveis e utensílios em andamento | - | 196.839,61 | (1.980,00) | (34.277,91) | 160.581,70 |
 
 |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
-| andamento | - | 196.839,61 | (1.980,00) | (34.277,91) | 160.581,70 |
-
-Equipamentos médicos
-
-|   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-| em andamento | - | 74.146,60 | - | - | 74.146,60 |
+| Equipamentos médicos em andamento | - | 74.146,60 | - | - | 74.146,60 |
 | Total 19.901.284,86 3.176.053,70 ( | 1.198.999,29) | 191.401,80 | 22.069.741,07 |
 
 Depreciação
@@ -590,25 +577,19 @@ Descrição Saldo em 31/12/2015 Adições em 2016 Baixas em 2016 Transferências
 | Ferramentas | (9.609,54) | (175,35) | 1.800,00 | - | (7.984,89) |
 | Equipamentos de informática | (151.608,46) | (33.051,12) | 43.561,01 | - | (141.098,57) |
 
-Equipamentos de
-
 |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
-| comunicação | (37.028,07) | (4.319,94) | 5.522,07 | - | (35.825,94) |
+| Equipamentos de comunicação | (37.028,07) | (4.319,94) | 5.522,07 | - | (35.825,94) |
 | Equipamentos médicos | (205.719,59) | (37.202,80) | - | - | (242.922,39) |
 | Edificações em andamento | - | - | - | - | - |
 
-Moveis e utensílios em
+|   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- |
+| Moveis e utensílios em andamento | - | - | - | - | - |
 
 |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
-| andamento | - | - | - | - | - |
-
-Equipamentos médicos
-
-|   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-| em andamento | - | - | - | - | - |
+| Equipamentos médicos em andamento | - | - | - | - | - |
 | Total | (6.913.226,76) | (900.750,88) | 151.052,31 | - | (7.662.925,33) |
 | SALDO LÍQUIDO | 12.988.058,10 | 14.406.815,74 |
 
@@ -666,17 +647,13 @@ Amortização
 | Baixas em 2016 | - | - | - | - | - | 5.556,38 | - | - | - | 5.556,38 |
 | Saldo em 31/12/2016 | (5.069.603,23) | (2.721.587,28) | - | - | - | (79.449,62) | - | (8.694.773,81) | (850.184,11) | (17.415.598,05) |
 
-Saldo líquido
+|   |   |   |   |   |   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Saldo líquido em 31/12/2016 | 81.569,84 | 1.025.899,71 | 666.409,86 | 1.545.945,92 | 1.161.509,32 | 61.124,71 | 85.445,34 | 638.575,38 | - | 5.266.480,08 |
 
 |   |   |   |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| em 31/12/2016 | 81.569,84 | 1.025.899,71 | 666.409,86 | 1.545.945,92 | 1.161.509,32 | 61.124,71 | 85.445,34 | 638.575,38 | - | 5.266.480,08 |
-
-Saldo líquido
-
-|   |   |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| em 31/12/2015 | - | 660.642,75 | 825.146,78 | 1.697.532,65 | 735.018,03 | 43.640,35 | - | 810.000,00 | - | 4.771.980,56 |
+| Saldo líquido em 31/12/2015 | - | 660.642,75 | 825.146,78 | 1.697.532,65 | 735.018,03 | 43.640,35 | - | 810.000,00 | - | 4.771.980,56 |
 
 <!-- columna 2 de 2 -->
 9.2 – RESUMO DE ATLETAS VINCULADOS AO CLUBE
@@ -787,11 +764,10 @@ Durante o ano de 2016, parte dos débitos referente ao parcelamento da Lei nº. 
 autoridade fiscal, conforme abaixo:
 Homologado Pendente de TOTAL
 pela autoridade homologação
-Descrição
 
 |   |   |   |   |
 | --- | --- | --- | --- |
-| PROFUT débitos previdenciários RFB/PGFN | - | 5.667.772,28 | 5.667.772,28 |
+| Descrição PROFUT débitos previdenciários RFB/PGFN | - | 5.667.772,28 | 5.667.772,28 |
 | PROFUT demais débitos RFB | - | 6.071.882,12 | 6.071.882,12 |
 | PROFUT demais débitos PGFN | 12.374.770,54 | - | 12.374.770,54 |
 | TOTAL | 12.374.770,54 | 11.739.654,40 | 24.114.424,94 |
@@ -804,7 +780,7 @@ anteriores. Por isso, o Clube pretende, em 2017, solicitar a revisão da dívida
 
 --- pág. 3 ---
 
-> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1): la transcripción de Mistral no coincidía con él.
+> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1, método columnas): la transcripción de Mistral no coincidía con él.
 
 <!-- columna 1 de 1 -->
 13 – RECEITAS ANTECIPADAS 20 – RESULTADO FINANCEIRO LÍQUIDO
@@ -826,11 +802,10 @@ DESCRIÇÃO 2016 2015 DESCRIÇÃO 2016 2015
 | TOTAL | 30.565.213,61 | 18.330.174,16 |
 
 CIRCULANTE 6.565.213,61 6.330.174,16 21 – RESULTADO POR ATIVIDADE
-SOCIAL E
 
 |   |   |   |
 | --- | --- | --- |
-| NÃO CIRCULANTE | 24.000.000,00 | 12.000.000,00 |
+| SOCIAL E NÃO CIRCULANTE | 24.000.000,00 | 12.000.000,00 |
 
 DESCRIÇÃO FUTEBOL PROFISSIONAL FUTEBOL DE BASE ADMINISTRATIVO TOTAL
 14 – PROVISÃO PARA CONTINGÊNCIAS 2016 2015 2016 2015 2016 2015 2016 2015
@@ -868,11 +843,10 @@ DESCRIÇÃO 2016 2015
 | TOTAL | 16.230.257,68 | 5.963.721,93 |
 
 DESPESAS
-(a) as provisões de natureza fiscal, civil, trabalhista e administrativa foram constituídas considerando a estimativa
 
 |   |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| feita para os processos cuja probabilidade de perda foi avaliada por nossos consultores jurídicos como provável. Despesas com jogos | (5.936.772,68) | (2.792.687,92) | - | - | - | - | (5.936.772,68) | (2.792.687,92) |
+| (a) as provisões de natureza fiscal, civil, trabalhista e administrativa foram constituídas considerando a estimativa feita para os processos cuja probabilidade de perda foi avaliada por nossos consultores jurídicos como provável. Despesas com jogos | (5.936.772,68) | (2.792.687,92) | - | - | - | - | (5.936.772,68) | (2.792.687,92) |
 | Despesas com pessoal | (23.007.040,93) | (15.433.292,96) | - | - | (7.081.691,04) | (15.450.346,19) | (30.088.731,97) | (20.883.639,15) |
 | Não foram constituídas provisões para as causas em que é a perda foi classificada como possível. Também, não Cessão de direito de imagem | (2.022.253,87) | (2.915.742,36) | - | - | - | - | (2.022.253,87) | (2.915.742,36) |
 | foram constituídas provisões para as causas em que as possibilidades de perda sejam remotas, e para as que não Despesas administrativas | (1.758,00) | (51.525,73) | - | - | (452.487,43) | (288.578,11) | (454.245,43) | (340.103,84) |
@@ -959,11 +933,9 @@ c) Risco legal
 | --- | --- | --- |
 | Alimentação e estadias | (649.440,61) | (384.991,45) |
 
-Associado às perdas decorrentes de multas, penalidades ou indenizações resultantes de ações de órgãos de supervisão
-
 |   |   |   |
 | --- | --- | --- |
-| Cessão de direitos de atletas | (3.691.150,00) | (361.000,00) |
+| Associado às perdas decorrentes de multas, penalidades ou indenizações resultantes de ações de órgãos de supervisão Cessão de direitos de atletas | (3.691.150,00) | (361.000,00) |
 
 Despesa com pessoal (30.088.731,97) (20.883.639,15) e controle, bem como perdas decorrentes de decisão desfavorável em processos judiciais ou administrativos.
 Cessão de direito de imagem (2.022.253,87) (2.915.742,36) d) Risco de mercado
