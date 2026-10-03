@@ -37,6 +37,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { derivado } from './rutas.mjs';
+import { ajusteDe } from './ajustes.mjs';
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -77,7 +78,7 @@ NO elijas: balance (activo/pasivo), flujo de efectivo, evolución del patrimonio
 
 function pedido(pdf, registro, sitio) {
   const e = registro.find((x) => x.pdf === pdf) || {};
-  const cierre = e.periodo?.cierre || null;
+  const cierre = ajusteDe(pdf, 'cierre')?.valor || e.periodo?.cierre || null; // (Versión 413) el ajuste manual `cierre` es el escalón 0
   return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}` };
 }
 

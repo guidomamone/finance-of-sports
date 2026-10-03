@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 413 — Ajustes manuales `cierre` y `reportType` (2026-10-02)
+
+- `ajustes.mjs`: `cierre` (AAAA-MM-DD) y `reportType` (official_balance_sheet | official_budget), por documento. Escalón 0 en `alta-club.mjs` (ganan sobre lo detectado y sobre la respuesta de Claude por API) y, el cierre, en `localizar.mjs` (el ejercicio que se le pide buscar).
+- Casos: Novorizontino 2022 (el detector de período tomó la fecha de la firma, 28/04/2023; localizar lo dejó "sin estado") y 2010 (estado de resultados en una tabla con pocas filas numéricas: el alta preguntaba si era un dictamen).
+- Medido: ningún documento de los lotes 07-10 tenía estos ajustes (sin cambios hasta agregar uno).
+
 ## Versión 412 — Ajuste manual `perimetro`, por documento o por club (2026-10-02)
 
 - `ajustes.mjs`: campo `perimetro` (individual | consolidado); se fija para un documento o para la carpeta del club (`Clubes/<País>/<Club>/`), y el del documento gana. `cargar.mjs`: es el escalón 0 del perímetro (gana sobre lo que detecta el documento y sobre la cola).

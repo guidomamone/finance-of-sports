@@ -58,7 +58,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -92,6 +92,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const i = A.indexOf('--agregar'); const pdf = A[i + 1]; const campo = A[i + 2];
     if (!pdf || !CAMPOS.includes(campo)) { console.error(`Uso: --agregar "<pdf>" <campo> (campos: ${CAMPOS.join(', ')})`); process.exit(1); }
     if (!existsSync(resolve(ROOT, pdf))) { console.error(`No existe ${pdf}`); process.exit(1); }
+    // (Versión 413) cierre = AAAA-MM-DD del ejercicio (escalón 0 de la fecha de cierre en alta-club.mjs y localizar.mjs); reportType =
+    // official_balance_sheet | official_budget (escalón 0 del tipo de documento en alta-club.mjs). Casos: Novorizontino 2022 (el detector de
+    // período tomó la fecha de la firma, 28/04/2023) y 2010 (estado de resultados en una tabla con pocas filas numéricas).
+    if (campo === 'cierre' && !/^\d{4}-\d{2}-\d{2}$/.test(flag('--valor') || '')) { console.error('cierre necesita --valor AAAA-MM-DD'); process.exit(1); }
+    if (campo === 'reportType' && !['official_balance_sheet', 'official_budget'].includes(flag('--valor'))) { console.error('reportType necesita --valor official_balance_sheet|official_budget'); process.exit(1); }
     if (campo === 'perimetro' && !['individual', 'consolidado'].includes(flag('--valor'))) { console.error('perimetro necesita --valor individual|consolidado (pdf = un documento, o la carpeta del club terminada en "/")'); process.exit(1); }
     if (campo !== 'perimetro' && pdf.endsWith('/')) { console.error('solo `perimetro` se fija para la carpeta de un club'); process.exit(1); }
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }

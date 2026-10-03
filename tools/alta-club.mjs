@@ -758,6 +758,8 @@ export function analizar(docArg, sitio, ov = {}) {
   const r = { documento: rel(abs), pdf: existsSync(pdf) ? rel(pdf) : null, md: existsSync(mdPath) ? rel(mdPath) : null, club: {}, campos: [], ejercicio: { campos: [] }, avisos: [] };
   const partes = relative(resolve(ROOT, 'Clubes'), abs).split('/');
   if (partes.length < 3 || partes[0].startsWith('..')) { r.error = 'el documento no está en Clubes/<País>/<Club>/'; return r; }
+  // AJUSTES MANUALES de cierre y reportType (Versión 413): escalón 0, ganan sobre la respuesta de Claude por API y sobre lo detectado.
+  for (const c of ['cierre', 'reportType']) { const a = r.pdf ? ajusteDe(r.pdf, c) : null; if (a) ov = { ...ov, [c]: { valor: a.valor, fuente: `ajuste manual (Admin/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
   const [paisCarpeta, clubCarpeta] = partes;
   r.carpeta = `Clubes/${paisCarpeta}/${clubCarpeta}/`;
   if (clubCarpeta.startsWith('_')) { r.error = `"${clubCarpeta}" es una carpeta de agregado (empieza con "_"), no un club`; return r; }
@@ -862,7 +864,7 @@ export function analizar(docArg, sitio, ov = {}) {
     // del archivo y sobre el conteo de fechas (que es justo lo que no alcanzó).
     const [yy, mm] = ov.cierre.valor.split('-').map(Number);
     anio = yy; mesCierre = mm; estadoAnio = 'ok'; preguntaAnio = null; estadoCierre = 'ok'; preguntaCierre = null;
-    fuenteAnio = fuenteCierre = `claude-api con cita verificada: ${ov.cierre.fuente}`; fuentePatronPais = null;
+    fuenteAnio = fuenteCierre = `${ov.cierre.manual ? '' : 'claude-api con cita verificada: '}${ov.cierre.fuente}`; fuentePatronPais = null;
   }
   const cierre = anio && mesCierre ? `${anio}-${pad2(mesCierre)}-${pad2(ultimoDia(anio, mesCierre))}` : null;
   const fiscalYearStart = mesCierre ? `${pad2(mesCierre === 12 ? 1 : mesCierre + 1)}-01` : null;
@@ -969,7 +971,7 @@ export function analizar(docArg, sitio, ov = {}) {
   else if (esIntermedio) { estadoRT = 'pregunta'; fuenteRT = `el documento parece un estado intermedio (${nIntermedio} señales en el texto: semestral, seis meses, interim...)`; preguntaRT = 'El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?'; }
   else if (NO_BALANCE.test(nomNorm)) { estadoRT = 'pregunta'; fuenteRT = 'nombre del archivo'; preguntaRT = `El nombre del archivo ("${nombreArchivo}") sugiere que no es un estado contable anual (acta, informe intermedio, memoria, dictamen...). ¿Trae un estado de resultados anual cargable, o es un documento de contexto?`; }
   else if (!tieneEstado) { estadoRT = 'pregunta'; fuenteRT = filasNumericas < 10 ? `el .md casi no tiene tablas con números (${filasNumericas} filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos` : 'el .md no tiene ninguna palabra de estado contable reconocible'; preguntaRT = '¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?'; }
-  if (ov.reportType) { reportType = ov.reportType.valor; estadoRT = 'ok'; preguntaRT = null; fuenteRT = `claude-api con cita verificada: ${ov.reportType.fuente}`; }
+  if (ov.reportType) { reportType = ov.reportType.valor; estadoRT = 'ok'; preguntaRT = null; fuenteRT = `${ov.reportType.manual ? '' : 'claude-api con cita verificada: '}${ov.reportType.fuente}`; }
   E.push(campo('reportType', reportType, fuenteRT, estadoRT, preguntaRT ? { pregunta: preguntaRT } : {}));
 
   // Perímetro: qué entidad es "el club"
