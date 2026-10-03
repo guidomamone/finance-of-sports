@@ -115,46 +115,48 @@ Auszug aus dem Unternehmensregister
 
 --- pág. 3 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-Bilanz zum 31. Dezember 2015
-
-Aktiva
-31.12.2014
-EUR EUR TEUR
-A. Anlagevermögen
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte 48.771.888,11 20.115
-2. Software 165.736,67 137
-48.937 .624,78 20.252
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken 7.437.038,85 1.729
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung 6.159.408,99 2.285
-3. Geleistete Anzahlungen 204.099,67 282
-13.800.547 ,51 4.296
-62.738.172,29 24.548
-B. Umlaufvermögen
-I. Vorräte
-Waren 226.541,54 117
-Il. Forderungen und sonstige Vermögensgegenstände
-1. Forderungen aus Lieferungen und Leistungen 1.511.094,12 1.558
-2. Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter) 1.318.198,05 1.679
-3. Sonstige Vermögensgegenstände 1.997.506,31 962
-5.326.798,48 4.199
-III. Kassenbestand und Guthaben bei Kreditinstituten 111.286,77 2.494
-5.664.626,79 6.810
-C. Rechnungsabgrenzungsposten 869.093,97 622
-69.271.893,05 31.980
-Passiva
-EUR EUR 31.12.2014
-TEUR
-A. Eigenkapital
-I. Gezeichnetes Kapital 2.500.000,00 50
-
-— Seite 3 von 11 —
+– Seite 3 von 11 –
 Tag der Erstellung: 09.01.2017
 Auszug aus dem Unternehmensregister
+
+# Bilanz zum 31. Dezember 2015
+
+**Aktiva**
+
+| | EUR | EUR | 31.12.2014 TEUR |
+|---|---|---|---|
+| **A. Anlagevermögen** | | | |
+| I. Immaterielle Vermögensgegenstände | | | |
+| 1. Spielerwerte | 48.771.888,11 | | 20.115 |
+| 2. Software | 165.736,67 | | 137 |
+| | | 48.937.624,78 | 20.252 |
+| II. Sachanlagen | | | |
+| 1. Bauten auf fremden Grundstücken | 7.437.038,85 | | 1.729 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 6.159.408,99 | | 2.285 |
+| 3. Geleistete Anzahlungen | 204.099,67 | | 282 |
+| | | 13.800.547,51 | 4.296 |
+| | | 62.738.172,29 | 24.548 |
+| **B. Umlaufvermögen** | | | |
+| I. Vorräte | | | |
+| Waren | | 226.541,54 | 117 |
+| II. Forderungen und sonstige Vermögensgegenstände | | | |
+| 1. Forderungen aus Lieferungen und Leistungen | 1.511.094,12 | | 1.558 |
+| 2. Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter) | 1.818.198,05 | | 1.679 |
+| 3. Sonstige Vermögensgegenstände | 1.997.506,31 | | 962 |
+| | | 5.326.798,48 | 4.199 |
+| III. Kassenbestand und Guthaben bei Kreditinstituten | | 111.286,77 | 2.494 |
+| | | 5.664.626,79 | 6.810 |
+| **C. Rechnungsabgrenzungsposten** | | 869.093,97 | 622 |
+| | | 69.271.893,05 | 31.980 |
+
+**Passiva**
+
+| | EUR | EUR | 31.12.2014 TEUR |
+|---|---|---|---|
+| **A. Eigenkapital** | | | |
+| I. Gezeichnetes Kapital | | 2.500.000,00 | 50 |
 
 --- pág. 4 ---
 
@@ -375,164 +377,152 @@ Auszug aus dem Unternehmensregister
 
 --- pág. 7 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-Beträge zum 31.12.2015 Beträge zum 31.12.2014
-Bis zu 1 Jahr Mehr als 5 Jahre Gesamt Bis zu 1 Jahr Mehr als 5 Jahre Gesamt
-TEUR TEUR TEUR TEUR TEUR TEUR
+– Seite 7 von 11 –
+Tag der Erstellung: 09.01.2017
+Auszug aus dem Unternehmensregister
 
-1. Verbindlichkeiten aus Liefe- 813 0 813 703 0 703
-rungen und Leistungen
-2. Verbindlichkeiten aus Trans- 2.148 0 4.278 954 0 1.883
-fer
-3. Verbindlichkeiten gegenüber 14.309 0 52.384 10.007 0 20.109
-Unternehmen, mit denen ein
-Beteiligungsverhältnis besteht
-4. Sonstige Verbindlichkeiten 1.440 0 1.440 947 0 947
-Gesamt 18.710 0 58.915 12.611 0 23.642
+| | Beträge zum 31.12.2015 | | | Beträge zum 31.12.2014 | | |
+|---|---|---|---|---|---|---|
+| | Bis zu 1 Jahr TEUR | Mehr als 5 Jahre TEUR | Gesamt TEUR | Bis zu 1 Jahr TEUR | Mehr als 5 Jahre TEUR | Gesamt TEUR |
+| 1. Verbindlichkeiten aus Lieferungen und Leistungen | 813 | 0 | 813 | 703 | 0 | 703 |
+| 2. Verbindlichkeiten aus Transfer | 2.148 | 0 | 4.278 | 954 | 0 | 1.883 |
+| 3. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht | 14.309 | 0 | 52.384 | 10.007 | 0 | 20.109 |
+| 4. Sonstige Verbindlichkeiten | 1.440 | 0 | 1.440 | 947 | 0 | 947 |
+| Gesamt | 18.710 | 0 | 58.915 | 12.611 | 0 | 23.642 |
 
-3. Erläuterungen zur Gewinn- und Verlustrechnung
+**3. Erläuterungen zur Gewinn- und Verlustrechnung**
 
-3.1 Umsatzerlöse
+**3.1 Umsatzerlöse**
 
 Die Umsatzerlöse resultieren aus Erträgen mit Sponsoren, Erträgen aus Einnahmen des laufenden Spielbetriebs und aus Erträgen aus der Fernsehverwertung.
-3.2 Steuern vom Einkommen und vom Ertrag
+
+**3.2 Steuern vom Einkommen und vom Ertrag**
 
 Die Steuern von Einkommen und Ertrag ergeben sich aus der Tätigkeit der Gesellschaft im abgelaufenen Geschäftsjahr.
 
-Latente Steuern (Ansatz)
+**Latente Steuern (Ansatz)**
 
-Latente Steuern werden für zeitliche Unterschiede zwischen den handelsrechtlichen und steuerlichen Wertansätzen von Vermögensgegenständen, Schulden und Rechnungsabgrenzungsposten ermittelt. Nutzbare steuerliche Verlustvorträge sind bei dem Ansatz der aktiven
-latenten Steuern zu berücksichtigen. Die Ermittlung der latenten Steuern erfolgt auf Basis des individuellen Steuersatzes der Gesellschaft. Der individuelle Steuersatz umfasst Körperschaftsteuer, Gewerbesteuer und Solidaritätszuschlag. Dieser beträgt für das aktuelle
-Geschäftsjahr ca. 32 %.
+Latente Steuern werden für zeitliche Unterschiede zwischen den handelsrechtlichen und steuerlichen Wertansätzen von Vermögensgegenständen, Schulden und Rechnungsabgrenzungsposten ermittelt. Nutzbare steuerliche Verlustvorträge sind bei dem Ansatz der aktiven latenten Steuern zu berücksichtigen. Die Ermittlung der latenten Steuern erfolgt auf Basis des individuellen Steuersatzes der Gesellschaft. Der individuelle Steuersatz umfasst Körperschaftsteuer, Gewerbesteuer und Solidaritätszuschlag. Dieser beträgt für das aktuelle Geschäftsjahr ca. 32 %.
 
-Im Geschäftsjahr entstand als Ergebnis der Verrechnung der aktiven und passiven latenten Steuern (Verrechnung nach $ 274 Abs. 1 Satz 3 HGB) ein Aktivüberhang. Von dem Wahlrecht zum Ansatz des aktiven latenten Steuerüberhangs aufgrund sich ergebender
-Steuerentlastungen nach $ 274 Abs. 1 Satz 2 HGB wird kein Gebrauch gemacht.
+Im Geschäftsjahr entstand als Ergebnis der Verrechnung der aktiven und passiven latenten Steuern (Verrechnung nach § 274 Abs. 1 Satz 3 HGB) ein Aktivüberhang. Von dem Wahlrecht zum Ansatz des aktiven latenten Steuerüberhangs aufgrund sich ergebender Steuerentlastungen nach § 274 Abs. 1 Satz 2 HGB wird kein Gebrauch gemacht.
 
-Latente Steuern (Bewertung)
+**Latente Steuern (Bewertung)**
 
-Der Überhang der aktiven latenten Steuern resultiert aus handels- und steuerrechtlich voneinander abweichenden Wertansätzen (Bilanzunterschiede multipliziert mit dem individuellen Steuersatz). Aktive latente Steuern resultieren aus den Posten Rückstellungen sowie
-sonstige Verbindlichkeiten.
+Der Überhang der aktiven latenten Steuern resultiert aus handels- und steuerrechtlich voneinander abweichenden Wertansätzen (Bilanzunterschiede multipliziert mit dem individuellen Steuersatz). Aktive latente Steuern resultieren aus den Posten Rückstellungen sowie sonstige Verbindlichkeiten.
 
-3.3 Periodenfremde Aufwendungen und Erträge
+**3.3 Periodenfremde Aufwendungen und Erträge**
 
 In der vorliegenden Gewinn- und Verlustrechnung werden unter dem Posten sonstige betriebliche Erträge periodenfremde Erträge ausgewiesen. Sie resultieren im Wesentlichen aus der Erstattung von Quellensteuer für das Vorjahr (TEUR 55).
 
 In der vorliegenden Gewinn- und Verlustrechnung werden unter dem Posten sonstige betriebliche Aufwendungen periodenfremde Aufwendungen ausgewiesen. Sie resultieren im Wesentlichen aus der Nebenkostenabrechnung des Vermieters für das Vorjahr (TEUR 10).
-4. Haftungsverhältnisse
 
-Die Gesellschaft ist keine Haftungsverhältnisse gemäß $ 251 HGB eingegangen.
+**4. Haftungsverhältnisse**
 
-5. Eventualverbindlichkeiten und sonstige finanzielle Verpflichtungen
+Die Gesellschaft ist keine Haftungsverhältnisse gemäß § 251 HGB eingegangen.
+
+**5. Eventualverbindlichkeiten und sonstige finanzielle Verpflichtungen**
 
 Aus einem langfristigen Mietvertrag resultieren bei Spielbetrieb in der 2. Bundesliga Verpflichtungen in Höhe von TEUR 12.982. Die Verpflichtung erhöht sich bei Aufstieg in die 1. Bundesliga.
 
 Des Weiteren existieren langfristige Verpflichtungen aus Werbeverträgen bei Spielbetrieb in der 2. Bundesliga in Höhe von TEUR 8.784 für das Namingright am Stadion im Rahmen des Stadionmietvertrages. Die Verpflichtung erhöht sich bei Aufstieg in die 1. Bundesliga.
 
-— Seite 7 von 11 -
+--- pág. 8 ---
+
+UNTERNEHMENSREGISTER
+
+– Seite 8 von 11 –
 Tag der Erstellung: 09.01.2017
 Auszug aus dem Unternehmensregister
 
---- pág. 8 ---
-
-UNTERNEHMENS-
-—— 11 REGISTER
-
 In Abhängigkeit vom Eintritt bestimmter Bedingungen (Aufstieg in 1. Bundesliga, Siegprämien, Anzahl Pflichtspielen) existieren Verpflichtungen aus abgeschlossenen Verträgen mit Spielern, Spielerberatern und Klubs bis zu einer Höhe von TEUR 11.985.
-6. Sonstige Angaben
+
+**6. Sonstige Angaben**
 
 Wesentliche nicht in der Bilanz enthaltene Geschäfte und marktunübliche Geschäfte mit nahestehenden Personen bestanden zum Bilanzstichtag nicht.
 
 Für den bestellten Abschlussprüfer fiel im Geschäftsjahr ein Gesamthonorar von TEUR 74 an, welches für Prüfungsleistungen entstand.
 
-7. Mitglieder des Geschäftsführungsorgans
+**7. Mitglieder des Geschäftsführungsorgans**
 
 Geschäftsführer der Gesellschaft im Geschäftsjahr waren:
 
-- Herr Ulrich Wolter — Rechtsanwalt
+· Herr Ulrich Wolter – Rechtsanwalt
 
-- Herr Frank Zimmermann — Abteilungsleiter Finanzen.
+· Herr Frank Zimmermann – Abteilungsleiter Finanzen.
 
-Auf die Angabe der Gesamtbezüge der Geschäftsführung wurde gem. $ 286 Abs. 4 HGB verzichtet.
+Auf die Angabe der Gesamtbezüge der Geschäftsführung wurde gem. § 286 Abs. 4 HGB verzichtet.
 
-Mit Gesellschafterbeschluss vom 21. Dezember 2015 wurde Herr Ulrich Wolter per 31.Dezember 2015 als Geschäftsführer abberufen und ab O1. Januar 2016 zum Prokuristen bestellt.
+Mit Gesellschafterbeschluss vom 21. Dezember 2015 wurde Herr Ulrich Wolter per 31.Dezember 2015 als Geschäftsführer abberufen und ab 01. Januar 2016 zum Prokuristen bestellt.
+
 Mit vorgenanntem Gesellschafterbeschluss wurde mit Wirkung ab dem 1. Januar 2016 Herr Oliver Mintzlaff zum Geschäftsführer bestellt.
 
 Die Eintragung beider Änderungen in der Geschäftsführung im Handelsregister ist am 25. Januar 2016 erfolgt.
 
-8. Mitarbeiter
+**8. Mitarbeiter**
 
 Im Geschäftshalbjahr waren durchschnittlich 296 Arbeitnehmer beschäftigt.
 
 Leipzig, den 2. Februar 2016
 
-Geschäftsführung
-Entwicklung des Anlagevermögens
+*Geschäftsführung*
 
-Anschaffungs- und Herstellungskosten
+# Entwicklung des Anlagevermögens
 
-01.01.2015 Zugänge Abgänge Umbuchungen 31.12.2015
-TEUR TEUR TEUR TEUR TEUR
-I. Immaterielle Vermögensgegenstän-
-de
-1. Spielerwerte 24.342 44.798 3.794 [0] 65.346
-2. Software 168 113 2 [) 279
-24.510 44911 3.796 [0] 65.625
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken 1.866 6.460 204 4 8.126
-2. Andere Anlagen, Betriebs- und Ge- 2.573 5.636 290 0 7.919
-schäftsausstattung
-3. Geleistete Anzahlungen 282 82 156 -4 204
-
-— Seite 8 von 11 —
-Tag der Erstellung: 09.01.2017
-Auszug aus dem Unternehmensregister
+| | Anschaffungs- und Herstellungskosten | | | | |
+|---|---|---|---|---|---|
+| | 01.01.2015 TEUR | Zugänge TEUR | Abgänge TEUR | Umbuchungen TEUR | 31.12.2015 TEUR |
+| I. Immaterielle Vermögensgegenstände | | | | | |
+| 1. Spielerwerte | 24.342 | 44.798 | 3.794 | 0 | 65.346 |
+| 2. Software | 168 | 113 | 2 | 0 | 279 |
+| | 24.510 | 44.911 | 3.796 | 0 | 65.625 |
+| II. Sachanlagen | | | | | |
+| 1. Bauten auf fremden Grundstücken | 1.866 | 6.460 | 204 | 4 | 8.126 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 2.573 | 5.636 | 290 | 0 | 7.919 |
+| 3. Geleistete Anzahlungen | 282 | 82 | 156 | -4 | 204 |
 
 --- pág. 9 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-Anschaffungs- und Herstellungskosten
-
-01.01.2015 Zugänge Abgänge Umbuchungen 31.12.2015
-TEUR TEUR TEUR TEUR TEUR
-4.721 12.178 650 0 16.249
-29.231 57.089 4.446 [) 81.874
-
-Kumulierte Abschreibungen
-
-01.01.2015 Zugänge Abgänge 31.12.2015
-TEUR TEUR TEUR TEUR
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte 4.227 14.616 2.269 16.574
-2. Software 31 82 0 113
-4.258 14.698 2.269 16.687
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken 137 589 37 689
-2. Andere Anlagen, Betriebs- und Geschäfts- 288 1.503 31 1.760
-ausstattung
-3. Geleistete Anzahlungen 0 0 0 0
-425 2.092 68 2.449
-4.683 16.790 2.337 19.136
-Buchwerte
-31.12.2015 31.12.2014
-TEUR TEUR
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte 48.772 20.115
-2. Software 166 137
-0
-48.938 20.252
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken 7.437 1.729
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung 6.159 2.285
-3. Geleistete Anzahlungen 204 282
-0
-
-— Seite 9 von 11 —
+– Seite 9 von 11 –
 Tag der Erstellung: 09.01.2017
 Auszug aus dem Unternehmensregister
+
+| | Anschaffungs- und Herstellungskosten | | | | |
+|---|---|---|---|---|---|
+| | 01.01.2015 TEUR | Zugänge TEUR | Abgänge TEUR | Umbuchungen TEUR | 31.12.2015 TEUR |
+| | 4.721 | 12.178 | 650 | 0 | 16.249 |
+| | 29.231 | 57.089 | 4.446 | 0 | 81.874 |
+
+| | Kumulierte Abschreibungen | | | |
+|---|---|---|---|---|
+| | 01.01.2015 TEUR | Zugänge TEUR | Abgänge TEUR | 31.12.2015 TEUR |
+| I. Immaterielle Vermögensgegenstände | | | | |
+| 1. Spielerwerte | 4.227 | 14.616 | 2.269 | 16.574 |
+| 2. Software | 31 | 82 | 0 | 113 |
+| | 4.258 | 14.698 | 2.269 | 16.687 |
+| II. Sachanlagen | | | | |
+| 1. Bauten auf fremden Grundstücken | 137 | 589 | 37 | 689 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 288 | 1.503 | 31 | 1.760 |
+| 3. Geleistete Anzahlungen | 0 | 0 | 0 | 0 |
+| | 425 | 2.092 | 68 | 2.449 |
+| | 4.683 | 16.790 | 2.337 | 19.136 |
+
+| | Buchwerte | |
+|---|---|---|
+| | 31.12.2015 TEUR | 31.12.2014 TEUR |
+| I. Immaterielle Vermögensgegenstände | | |
+| 1. Spielerwerte | 48.772 | 20.115 |
+| 2. Software | 166 | 137 |
+| | 0 | |
+| | 48.938 | 20.252 |
+| II. Sachanlagen | | |
+| 1. Bauten auf fremden Grundstücken | 7.437 | 1.729 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 6.159 | 2.285 |
+| 3. Geleistete Anzahlungen | 204 | 282 |
+| | 0 | |
 
 --- pág. 10 ---
 

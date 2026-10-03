@@ -335,88 +335,76 @@ CLUB ALMAGRO
 
 --- pág. 8 ---
 
-CLUB ALMAGRO ASOCIACIÓN CIVIL
+CLUB ALMAGRO ASOCIACIÓN CIVIL  
+CUIT: 33-53156200-9  
+Domicilio Legal: Medrano 522- CABA  
+Fecha de autorización acordado por el Poder Ejecutivo: 6 de Enero de 1911  
+BALANCE GENERAL al 31 de Octubre 2018  
+ANEXO IV- ANEXO V  
 
-CUIT: 33-53156200-9
+**GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION**  
+**EJERCICIO ECONÓMICO NRO:80**  
 
-Domicilio Legal: Medrano 522- CABA
+### GASTOS ESPECÍFICOS
+| | 31/10/2018 |
+| :--- | :--- |
+| Gastos de mantenimiento | 2,668,559.14 |
+| Gastos Administrativos | 5,924.78 |
+| Honorarios de Escribanos | |
+| Honorarios Contador | 94,294.87 |
+| Gastos de nafta | |
+| Gastos varios | 127,402.94 |
+| Gastos de lavandería | 46,597.00 |
+| Gastos de movilidad | 89,307.98 |
+| Estadías y traslados | 2,510,005.91 |
+| Impuesto a la Ganancias | |
+| Impuestos y Contribuciones | 241,074.80 |
+| Seguros | 8,286.56 |
+| Alquileres Vivienda para Jugadores | 270,000.00 |
+| Gastos Generales | 902,925.40 |
+| Gastos transmisión radio | 71,000.00 |
+| Alquiler equipo electrógeno | 30,746.13 |
+| **Totales** | **7,066,125.51** |
 
-Fecha de autorización acordado por el Poder Ejecutivo: 6 de Enero de 1911
+**GASTOS OPERACIONALES- ANEXO V**  
 
-BALANCE GENERAL al 31 de Octubre 2018
+| | 31/10/2018 |
+| :--- | :--- |
+| Interese perdidos | 349,387.63 |
+| Gastos bancarios | 9,476.03 |
+| Impuesto Ley 25413 | 266,897.94 |
+| Gastos de alimentos | 3,911,226.61 |
+| Honorarios Cuerpo Medico y Tecnico | 3,854,014.14 |
+| Honorarios Kinesiologo | |
+| Sueldos y Jornales | 9,919,307.89 |
+| Cargas Sociales | 87,015.13 |
+| Primas por contrato privado | 10,148,400.00 |
+| Gastos de Policía | 770,550.00 |
+| Juicios | 1,777,900.00 |
+| Gastos de Representación | 288,940.61 |
+| Gastos de Servicios de Emergencia | 322,734.19 |
+| Alquiler para entrenamiento | 90,165.31 |
+| | **31,796,015.48** |
 
-ANEXO IV- ANEXO V
+Los Cuadros y Anexos que se adjuntan son parte integrante de este Estado Contable  
+Los presentes Estados Contables se adjunta Certificacion Literal  
 
-# GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION
+[firmas y sellos]  
+Dr. FRANCISCO LOPEDOTE  
+CONTADOR PÚBLICO NACIONAL  
+Mat. Tº 130 Fº 48  
+C.P.C.E.C.B.A.  
 
-# EJERCICIO ECONÓMICO NRO:80
+CLUB ALMAGRO  
+TESORERO  
+CUIT 33-53156200-9  
 
-GASTOS ESPECÍFICOS
+JORGE JULIAN ROMEO  
+PRESIDENTE  
 
-|   | 31/10/2018  |
-| --- | --- |
-|  Gastos de mantenimiento | 2,668,559.14  |
-|  Gastos Administrativos | 5,924.78  |
-|  Honorarios de Escribanos |   |
-|  Honorarios Contador | 94,294.87  |
-|  Gastos de nafta |   |
-|  Gastos varios | 127,402.94  |
-|  Gastos de lavandería | 46,597.00  |
-|  Gastos de movilidad | 89,307.98  |
-|  Estadías y traslados | 2,510,005.91  |
-|  Impuesto a la Ganancias |   |
-|  Impuestos y Contribuciones | 241,074.80  |
-|  Seguros | 8,286.56  |
-|  Alquileres Vivienda para Jugadores | 270,000.00  |
-|  Gastos Generales | 902,925.40  |
-|  Gastos transmisión radio | 71,000.00  |
-|  Alquiler equipo electrógeno | 30,746.13  |
-|  Totales | 7,066,125.51  |
-
-GASTOS OPERACIONALES- ANEXO V
-
-|   | 31/10/2018  |
-| --- | --- |
-|  Interese perdidos | 349,387.63  |
-|  Gastos bancarios | 9,476.03  |
-|  Impuesto Ley 25413 | 266,897.94  |
-|  Gastos de alimentos | 3,911,226.61  |
-|  Honorarios Cuerpo Medico y Tecnico | 3,854,014.14  |
-|  Honorarios Kinesiologo |   |
-|  Sueldos y Jornales | 9,919,307.89  |
-|  Cargas Sociales | 87,015.13  |
-|  Primas por contrato privado | 10,148,400.00  |
-|  Gastos de Policía | 770,550.00  |
-|  Juicios | 1,777,900.00  |
-|  Gastos de Representación | 288,940.61  |
-|  Gastos de Servicios de Emergencia | 322,734.19  |
-|  Alquiler para entrenamiento | 90,165.31  |
-|   | 31,796,015.48  |
-
-Dr. FRANCISCO LOPEDOTE
-
-CONTRADOR PÚBLICO NACIONAL
-
-Mat. T° 130 F° 48
-
-C.F.C.F.G.C.B.A.
-
-Los Cuadros y Anexos que se adjuntan son parte integrante de este Estado Contable
-Los presentes Estados Contables se adjunta Certificacion Literal
-
-![img-9.jpeg](img-9.jpeg)
-
-CLUB ALMAGRO
-
-TESORERO
-
-0017-33-53156200-9
-
-ROMAN RISO
-
-SECRETARIO GENERAL
-
-CLUB ALMAGRO
+ROMAN RISO  
+SECRETARIO GENERAL  
+CLUB ALMAGRO  
 
 --- pág. 9 ---
 
@@ -588,9 +576,9 @@ Los presentes Estados Contables se adjunta Certicacion Literal
 
 --- pág. 13 ---
 
-CLUB ALMAGRO ASOCIACION CIVIL
-CUIT: 33-53156200-9
-Domicilio Legal: Medrano 522- CABA
+CLUB ALMAGRO ASOCIACION CIVIL  
+CUIT: 33-53156200-9  
+Domicilio Legal: Medrano 522- CABA  
 
 Notas a los Estados Contables al 31-10-2018
 
@@ -598,29 +586,30 @@ Notas a los Estados Contables al 31-10-2018
 
 Las Normas Contables más relevantes por el ente en los estados contables correspondientes que se informan fueron los siguientes:
 
-1.1 Modelo de Presentación de los Estados Contables: Los Estados Contables han sido preparados siguiendo los lineamientos enunciados en las Resoluciones Técnicas Nros.6, 8, 9 y 19, de la Federación Argentina de Consejos Profesionales de Ciencias Económicas.
+1.1 Modelo de Presentación de los Estados Contables: Los Estados Contables han sido preparados siguiendo los lineamientos enunciados en las Resoluciones Técnicas Nros. 6, 8, 9 y 19, de la Federación Argentina de Consejos Profesionales de Ciencias Económicas.
 
 1.2 Información comparativa con los Estados Contables al 31/12/2017
 
-1.3 Consideración de los efectos de la inflación: Los Estados Contables han sido preparados en moneda constante, reconociendo en forma integral los efectos de la inflación. Para ello se ha seguido el método de ajuste establecido por la Resolución Técnica N° 6 de la Federación Argentina de Consejos Profesionales de Ciencias Económicas.
+1.3 Consideración de los efectos de la inflación: Los Estados Contables han sido preparados en moneda constante, reconociendo en forma integral los efectos de la inflación. Para ello se ha seguido el método de ajuste establecido por la Resolución Técnica Nº 6 de la Federación Argentina de Consejos Profesionales de Ciencias Económicas.
 
 Buenos Aires, 10 de Noviembre del 2018.
 
-FERNANDO LOPEDOTE  
-JOSÉ JÚNIAN ROMEO NACIONAL  
-Mat. 19 130, Fº 48  
-C.P.C. E.G.C.B.A.
+[firmas y sellos]  
+Dr. FRANCISCO LOPEDOTE  
+CONTADOR PÚBLICO NACIONAL  
+Mat. Tº 130 Fº 48  
+C.P.C.E.C.B.A.  
 
 CLUB ALMAGRO  
 TESORERO  
-C. 33-53156200-9
+CUIT 33-53156200-9  
 
 JORGE JULIAN ROMEO  
-PRESIDENTE
+PRESIDENTE  
 
-ROMÁN RISO  
+ROMAN RISO  
 SECRETARIO GENERAL  
-CLUB ALMAGRO
+CLUB ALMAGRO  
 
 --- pág. 14 ---
 

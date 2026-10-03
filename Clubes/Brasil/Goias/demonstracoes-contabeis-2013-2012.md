@@ -477,132 +477,124 @@ Avenida Edmundo Pinheiro de Abreu, nº 721, Setor Bela Vista, Goiânia/GO, CEP 7
 
 --- pág. 13 ---
 
-# GOIÁS ESPORTE CLUBE
-
+GOIÁS ESPORTE CLUBE
 CNPJ: 01.665.256/0001-80
-
-## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012
-
-- Área de terras quadra 327, no loteamento Jardim Buriti Sereno, Aparecida de Goiânia, com área de 64.060,70 m², avaliado em R$ 1.921.800,00 e o percentual nomeado para penhora em R$ 1.500.00,00.
-
-### 7.1 – CONCILIAÇÃO DO IMOBILIZADO
-
-|  Descrição | Terrenos | Edificações | Veículos | Máquinas e equipamentos | Móveis e Utensílios | Ferramentas | Equipamentos de Informática | Programas de Computadores | Equipamentos de Comunicação | Equipamentos Médicos | Imobilizações em Curso | Total  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Costo:**  |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Saldo em 31/12/2012 | 258.268,94 | 6.623.241,55 | 829.449,29 | 1.289.842,79 | 339.893,54 | 10.034,10 | 150.332,33 | 69.711,28 | 46.226,64 | 180.360,99 | 999.948,12 | 10.797.218,67  |
-|  Adições 2013 | - | - | 12.500,00 | 187.026,30 | 19.940,00 | - | 27.252,42 | - | 8.800,00 | 78.665,00 | 6.464.301,09 | 6.798.484,81  |
-|  Baixas 2013 | - | - | - | (4.030,00) | (800,00) | - | (7.806,30) | - | - | - | - | (12.439,30)  |
-|  Transferências 2013 | - | - | - | 40.544,40 | 96.034,72 | - | - | (69.711,28) | - | 146.532,00 | (283.111,12) | (69.711,28)  |
-|  Saldo em 31/12/2013 | 258.268,94 | 6.623.241,55 | 841.949,29 | 1.513.383,49 | 455.178,26 | 10.034,10 | 169.775,45 | - | 55.026,64 | 405.557,99 | 7.181.138,09 | 17.513.552,90  |
-|  **Depreciação:**  |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Saldo em 31/12/2012 | - | (3.181.558,21) | (774.142,44) | (551.654,61) | (209.182,36) | (9.132,84) | (94.986,85) | (41.239,96) | (22.916,51) | (101.297,17) | - | (4.986.110,95)  |
-|  Depreciação 2013 | - | (264.929,64) | (10.461,82) | (108.838,01) | (31.361,73) | (213,90) | (21.914,27) | - | (4.406,76) | (31.857,09) | - | (473.663,22)  |
-|  Baixas 2013 | - | - | - | 4.030,00 | 600,00 | - | 6.979,30 | - | - | - | - | 11.609,30  |
-|  Transferências 2013 | - | - | - | - | - | - | - | 41.239,96 | - | - | - | 41.239,96  |
-|  Saldo em 31/12/2013 | - | (3.446.487,85) | (784.604,26) | (656.462,62) | (239.944,09) | (9.346,74) | (109.921,82) | - | (27.323,27) | (133.154,26) | - | (5.407.244,91)  |
-|  **Imobilizado líquido:**  |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Saldo em 31/12/2012 | 258.268,94 | 3.441.683,34 | 55.306,85 | 738.188,18 | 130.621,18 | 901,26 | 55.345,48 | 28.471,32 | 23.310,13 | 79.663,82 | 999.948,12 | 5.811.107,72  |
-|  Saldo em 31/12/2013 | 258.268,94 | 3.176.753,70 | 57.345,03 | 856.920,87 | 215.234,17 | 687,36 | 59.853,63 | - | 27.703,37 | 272.403,73 | 7.181.138,09 | 12.106.307,99  |
-|  **Tax. deprec. anual:**  |   |   |   |   |   |   |   |   |   |   |   |   |
-|  2012 | - | 4,00% | 4,18%-6,14% | 10,00% | 10,00% | 10,00% | 20,00% | 20,00% | 10,00% | 10,00% | - | -  |
-|  2013 | - | 4,00% | 4,18%-6,14% | 10,00% | 10,00% | 10,00% | 20,00% | 20,00% | 10,00% | 10,00% | - | -  |
-
-### 8 – INTANGÍVEL
-
-|  DESCRIÇÃO | 2013 | 2012 (Reclassificado)  |
-| --- | --- | --- |
-|  **Atletas contratados:** | (a) - | **3.000,00**  |
-|  Atletas contratados | 3.364.418,32 | 3.044.100,64  |
-|  (-) Amortização atletas contratados | (b) (3.364.418,32) | (3.041.100,64)  |
-|  **Atletas formados:** | (a) **195.489,54** | **450.225,70**  |
-|  Atletas formados | 1.028.681,59 | 982.279,24  |
-|  (-) Amortização atletas formados | (b) (833.192,05) | (532.053,54)  |
-|  **Atletas em formação:** | (a) **2.481.465,84** | **2.541.852,40**  |
-|  Atletas sub 20 | 349.113,48 | 318.385,26  |
-|  Atletas sub 18 | 649.815,31 | 581.462,86  |
-|  Atletas sub 17 | 968.058,30 | 59.587,89  |
-|  Atletas sub 16 | - | 1.095.438,17  |
-|  Atletas sub 15 | 514.478,75 | 486.978,22  |
-|  **Direito de Uso de Imagem** | (a) **2.332.115,04** | **165.000,00**  |
-|  Direito de uso de imagem | 5.644.648,98 | 165.000,00  |
-|  (-) Amortização de uso de direito de imagem | (b) (3.312.533,94) | -  |
-|  **Programas de computadores** | (a) **36.592,11** | **-**  |
-|  Softwares em operação | 69.711,28 | -  |
+DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012
 
 GOIÁS ESPORTE CLUBE - CNPJ/MF: 01.665.256/0001-80
-
 Avenida Edmundo Pinheiro de Abreu, nº 721, Setor Bela Vista, Goiânia/GO, CEP 74.823-030.
 
 13
 
+• Área de terras quadra 327, no loteamento Jardim Buriti Sereno, Aparecida de Goiânia, com área de 64.060,70 m², avaliado em R$ 1.921.800,00 e o percentual nomeado para penhora em R$ 1.500.00,00.
+
+7.1 – CONCILIAÇÃO DO IMOBILIZADO
+
+| Descrição | Terrenos | Edificações | Veículos | Máquinas e equipamentos | Móveis e Utensílios | Ferramentas | Equipamentos de Informática | Programas de Computadores | Equipamentos de Comunicação | Equipamentos Médicos | Imobilizações em Curso | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Custo:** | | | | | | | | | | | | |
+| Saldo em 31/12/2012 | 258.268,04 | 6.623.241,55 | 829.449,29 | 1.289.842,79 | 339.803,54 | 10.034,10 | 150.332,33 | 69.711,28 | 46.226,64 | 180.360,99 | 999.948,12 | 10.797.218,67 |
+| Adições 2013 | - | - | 12.500,00 | 187.026,30 | 19.940,00 | - | 27.252,42 | - | 8.800,00 | 78.665,00 | 6.464.301,09 | 6.798.484,81 |
+| Baixas 2013 | - | - | - | (4.030,00) | (600,00) | - | (7.809,30) | - | - | - | - | (12.439,30) |
+| Transferências 2013 | - | - | - | 40.544,40 | 96.034,72 | - | - | (69.711,28) | - | 146.532,00 | (283.111,12) | (69.711,28) |
+| Saldo em 31/12/2013 | 258.268,04 | 6.623.241,55 | 841.949,29 | 1.513.383,49 | 455.178,26 | 10.034,10 | 169.775,45 | - | 55.026,64 | 405.557,99 | 7.181.138,09 | 17.513.552,90 |
+| **Depreciação:** | | | | | | | | | | | | |
+| Saldo em 31/12/2012 | - | (3.181.558,21) | (774.142,44) | (551.654,61) | (209.182,36) | (9.132,84) | (94.986,85) | (41.239,96) | (22.916,51) | (101.297,17) | - | (4.986.110,95) |
+| Depreciação 2013 | - | (264.929,64) | (10.461,82) | (108.838,01) | (31.361,73) | (213,90) | (21.914,27) | - | (4.406,76) | (31.857,09) | - | (473.983,22) |
+| Baixas 2013 | - | - | - | 4.030,00 | 600,00 | - | 6.979,30 | - | - | - | - | 11.609,30 |
+| Transferências 2013 | - | - | - | - | - | - | - | 41.239,96 | - | - | - | 41.239,96 |
+| Saldo em 31/12/2013 | - | (3.446.487,85) | (784.604,26) | (656.462,62) | (239.944,09) | (9.346,74) | (109.921,82) | - | (27.323,27) | (133.154,26) | - | (5.407.244,91) |
+| **Imobilizado líquido:** | | | | | | | | | | | | |
+| Saldo em 31/12/2012 | 258.268,04 | 3.441.683,34 | 55.306,85 | 738.188,18 | 130.621,18 | 901,26 | 55.345,48 | 28.471,32 | 23.310,13 | 79.063,82 | 999.948,12 | 5.811.107,72 |
+| Saldo em 31/12/2013 | 258.268,04 | 3.176.753,70 | 57.345,03 | 856.920,87 | 215.234,17 | 687,36 | 59.853,63 | - | 27.703,37 | 272.403,73 | 7.181.138,09 | 12.106.307,99 |
+| **Tax. deprec. anual:** | | | | | | | | | | | | |
+| 2012 | - | 4,00% | 4,16%-6,14% | 10,00% | 10,00% | 10,00% | 20,00% | 20,00% | 10,00% | 10,00% | - | - |
+| 2013 | - | 4,00% | 4,16%-6,14% | 10,00% | 10,00% | 10,00% | 20,00% | 20,00% | 10,00% | 10,00% | - | - |
+
+8 – INTANGÍVEL
+
+| DESCRIÇÃO | | 2013 | 2012 (Reclassificado) |
+|---|---|---|---|
+| **Atletas contratados:** | (a) | **-** | **3.000,00** |
+| Atletas contratados | | 3.364.418,32 | 3.044.100,64 |
+| (-) Amortização atletas contratados | (b) | (3.364.418,32) | (3.041.100,64) |
+| **Atletas formados:** | (a) | **195.489,54** | **450.225,70** |
+| Atletas formados | | 1.028.681,59 | 982.279,24 |
+| (-) Amortização atletas formados | (b) | (833.192,05) | (532.053,54) |
+| **Atletas em formação:** | (a) | **2.481.465,84** | **2.541.852,40** |
+| Atletas sub 20 | | 349.113,48 | 318.385,26 |
+| Atletas sub 18 | | 649.815,31 | 581.462,86 |
+| Atletas sub 17 | | 968.058,30 | 59.587,89 |
+| Atletas sub 16 | | - | 1.095.438,17 |
+| Atletas sub 15 | | 514.478,75 | 486.978,22 |
+| **Direito de Uso de Imagem** | (a) | **2.332.115,04** | **165.000,00** |
+| Direito de uso de imagem | | 5.644.648,98 | 165.000,00 |
+| (-) Amortização de uso de direito de imagem | (b) | (3.312.533,94) | - |
+| **Programas de computadores** | (a) | **36.592,11** | **-** |
+| Softwares em operação | | 69.711,28 | - |
+
 --- pág. 14 ---
 
-# GOIÁS ESPORTE CLUBE
-
+GOIÁS ESPORTE CLUBE
 CNPJ: 01.665.256/0001-80
-
-## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012
-
-|  Softwares em desenvolvimento | (b) | 15.937,50 | -  |
-| --- | --- | --- | --- |
-|  (-) Amortização de softwares em operação | (b) | (49.056,67) | -  |
-
-|  **TOTAL** | **5.045.662,53** | **3.160.078,10**  |
-| --- | --- | --- |
-
-(a) Os valores registrados no ativo intangível referem-se aos gastos incorridos com os atletas.
-
-(b) As amortizações são realizadas com base no prazo do contrato de cada atleta.
-
-### 8.1 – CONCILIAÇÃO DO INTANGÍVEL
-
-|  Descrição | Atletas contratados | Atletas formados | Atletas em formação | Softwares em operação | Softwares em desenvolvimento | Direito de uso de imagem | Total  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Custo:**  |   |   |   |   |   |   |   |
-|  Saldo em 31/12/2012 | 3.044.180,64 | 982.279,24 | 2.541.852,40 | - | - | - | 6.568.232,28  |
-|  Adições 2013 | 320.317,68 | - | 2.344.701,55 | - | 15.937,50 | 5.479.648,98 | 8.160.605,71  |
-|  Baixas 2013 | - | - | (2.358.685,76) | - | - | - | (2.358.685,76)  |
-|  Transferências 2013 | - | 46.402,35 | (46.402,35) | 69.711,28 | - | 165.000,00 | 234.711,28  |
-|  **Saldo em 31/12/2013** | **3.364.418,32** | **1.028.681,59** | **2.481.465,84** | **69.711,28** | **15.937,50** | **5.644.648,98** | **12.604.863,51**  |
-|  **Depreciação:**  |   |   |   |   |   |   |   |
-|  Saldo em 31/12/2012 | (3.041.180,64) | (532.053,54) | - | - | - | - | (3.573.154,18)  |
-|  Depreciação 2013 | (323.317,68) | (301.138,51) | - | (7.816,71) | - | - | (632.272,50)  |
-|  Baixas 2013 | - | - | - | - | - | - | -  |
-|  Transferências 2013 | - | - | - | (41.239,96) | - | (3.312.533,94) | (3.353.773,90)  |
-|  **Saldo em 31/12/2013** | **(3.364.418,32)** | **(833.192,05)** | **-** | **(49.056,67)** | **-** | **(3.312.533,94)** | **(7.558.299,98)**  |
-|  **Imobilizado líquido:**  |   |   |   |   |   |   |   |
-|  Saldo em 31/12/2012 | 3.000,00 | 450.225,70 | 2.541.852,40 | - | - | - | 2.995.078,10  |
-|  **Saldo em 31/12/2013** | **-** | **195.468,54** | **2.481.465,84** | **20.654,61** | **15.937,50** | **2.332.115,04** | **5.045.662,53**  |
-|  **Tax. amort. anual:**  |   |   |   |   |   |   |   |
-|  2012 | 20,00% - 100,00% | 20,00% - 100,00% | - | 20,00% | - | 20,00% - 100,00% | -  |
-|  2013 | 20,00% - 100,00% | 20,00% - 100,00% | - | 20,00% | - | 20,00% - 100,00% | -  |
-
-### 9 – EMPRÉSTIMOS E FINANCIAMENTOS
-
-|  DESCRIÇÃO | TAXA (%) | 2013 | 2012  |
-| --- | --- | --- | --- |
-|  **Empréstimos:**  |   |   |   |
-|  Banco industrial e comercial S/A | 1,0% + CDI a.m. | - | 983.797,20  |
-|  Banco BMG S/A | 2,1% a.m. | - | 141.476,96  |
-|  CBF – Confederação Brasileira de Futebol | 1,0% a.m. | 2.000.000,00 | 2.000.000,00  |
-|  Banco de Crédito e Varejo | 1,56% a.m. | 10.049.083,29 | -  |
-|  **Financiamentos:**  |   |   |   |
-|  Banco Finasa BMC S/A | 8% a.a. | 16.974,45 | 57.713,13  |
-|  Banco Safra S/A | 8% a.a. | - | 17.498,91  |
-|  (-) Encargos a apropriar |  | (9.024,45) | (30.683,13)  |
-|  **Contas garantidas:**  |   |   |   |
-|  Bradesco S/A - (33-7) | 2,05% a.m. | 453.812,18 | 270.843,51  |
-|  Bradesco S/A - (4810-0) | 2,05% a.m. | 179,15 | -  |
-|  Bradesco S/A - (22700-5) | 2,05% a.m. | 8.570,08 | 9.992,58  |
-|  **CIRCULANTE** |  | **7.095.034,55** | **3.442.688,86**  |
-|  **NÃO CIRCULANTE** |  | **5.424.560,15** | **7.950,00**  |
+DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012
 
 GOIÁS ESPORTE CLUBE - CNPJ/MF: 01.665.256/0001-80
-
 Avenida Edmundo Pinheiro de Abreu, nº 721, Setor Bela Vista, Goiânia/GO, CEP 74.823-030.
 
 14
+
+| DESCRIÇÃO | | 2013 | 2012 |
+|---|---|---|---|
+| Softwares em desenvolvimento | (b) | 15.937,50 | - |
+| (-) Amortização de softwares em operação | (b) | (49.056,67) | - |
+| **TOTAL** | | **5.045.662,53** | **3.160.078,10** |
+
+(a) Os valores registrados no ativo intangível referem-se aos gastos incorridos com os atletas.
+(b) As amortizações são realizadas com base no prazo do contrato de cada atleta.
+
+8.1 – CONCILIAÇÃO DO INTANGÍVEL
+
+| Descrição | Atletas contratados | Atletas formados | Atletas em formação | Softwares em operação | Softwares em desenvolvimento | Direito de uso de imagem | Total |
+|---|---|---|---|---|---|---|---|
+| **Custo:** | | | | | | | |
+| Saldo em 31/12/2012 | 3.044.100,64 | 982.279,24 | 2.541.852,40 | - | - | - | 6.568.232,28 |
+| Adições 2013 | 320.317,68 | - | 2.344.701,55 | - | 15.937,50 | 5.479.648,98 | 8.160.605,71 |
+| Baixas 2013 | - | - | (2.358.685,76) | - | - | - | (2.358.685,76) |
+| Transferências 2013 | - | 46.402,35 | (46.402,35) | 69.711,28 | - | 165.000,00 | 234.711,28 |
+| Saldo em 31/12/2013 | 3.364.418,32 | 1.028.681,59 | 2.481.465,84 | 69.711,28 | 15.937,50 | 5.644.648,98 | 12.604.863,51 |
+| **Depreciação:** | | | | | | | |
+| Saldo em 31/12/2012 | (3.041.100,64) | (532.053,54) | - | - | - | - | (3.573.154,18) |
+| Depreciação 2013 | (323.317,68) | (301.138,51) | - | (7.816,71) | - | - | (632.272,90) |
+| Baixas 2013 | - | - | - | - | - | - | - |
+| Transferências 2013 | - | - | - | (41.239,96) | - | (3.312.533,94) | (3.353.773,90) |
+| Saldo em 31/12/2013 | (3.364.418,32) | (833.192,05) | - | (49.056,67) | - | (3.312.533,94) | (7.559.200,98) |
+| **Imobilizado líquido:** | | | | | | | |
+| Saldo em 31/12/2012 | 3.000,00 | 450.225,70 | 2.541.852,40 | - | - | - | 2.995.078,10 |
+| Saldo em 31/12/2013 | - | 195.489,54 | 2.481.465,84 | 20.654,61 | 15.937,50 | 2.332.115,04 | 5.045.662,53 |
+| **Tax. amort. anual:** | | | | | | | |
+| 2012 | 20,00% - 100,00% | 20,00% - 100,00% | - | 20,00% | - | 20,00% - 100,00% | - |
+| 2013 | 20,00% - 100,00% | 20,00% - 100,00% | 20,00% | 20,00% | - | 20,00% - 100,00% | - |
+
+9 – EMPRÉSTIMOS E FINANCIAMENTOS
+
+| DESCRIÇÃO | TAXA (%) | 2013 | 2012 |
+|---|---|---|---|
+| **Empréstimos:** | | | |
+| Banco industrial e comercial S/A | 1,0% + CDI a.m. | - | 983.797,20 |
+| Banco BMG S/A | 2,1% a.m. | | 141.476,96 |
+| CBF – Confederação Brasileira de Futebol | 1,0% a.m. | 2.000.000,00 | 2.000.000,00 |
+| Banco de Crédito e Varejo | 1,56% a.m. | 10.049.083,29 | - |
+| **Financiamentos:** | | | |
+| Banco Finasa BMC S/A | 8% a.a. | 16.974,45 | 57.713,13 |
+| Banco Safra S/A | 8% a.a. | - | 17.498,91 |
+| (-) Encargos a apropriar | | (9.024,45) | (30.683,13) |
+| **Contas garantidas:** | | | |
+| Bradesco S/A - (33-7) | 2,05% a.m. | 453.812,18 | 270.843,51 |
+| Bradesco S/A - (4810-0) | 2,05% a.m. | 179,15 | - |
+| Bradesco S/A - (22700-5) | 2,05% a.m. | 8.570,08 | 9.992,58 |
+| **CIRCULANTE** | | **7.095.034,55** | **3.442.688,86** |
+| **NÃO CIRCULANTE** | | **5.424.560,15** | **7.950,00** |
 
 --- pág. 15 ---
 

@@ -1,5 +1,19 @@
 .DS_Store
 
+# tools/prepare-onboarding.mjs (to-do 105) escribe un briefing.json al lado del .md que procesa --
+# es un archivo de trabajo para arrancar una sesión de onboarding con menos overhead, no un
+# documento fuente ni su transcripción (esas dos SÍ se trackean, ver más abajo). Se regenera en
+# segundos corriendo la tool de nuevo, así que no hace falta ni conservarlo ni publicarlo.
+*.briefing.json
+
+# tools/onboard.mjs transcribe con Gemini EN PARALELO a Mistral, a un archivo con este sufijo, SOLO
+# para comparar los dos con tools/compare-transcripts.mjs -- no es la transcripción canónica del
+# club (esa sigue siendo la de Mistral, sin sufijo), es un chequeo de una sola vez. Si coinciden, no
+# aporta nada más allá de la verificación ya hecha; si no coinciden, queda de evidencia hasta que se
+# resuelva a mano, pero tampoco entonces hace falta publicarlo -- documentar la resolución (qué
+# número era el correcto y por qué) va al lugar de siempre, un comentario en data/<club>-data.js.
+*.gemini-check.md
+
 # Source PDFs stay local only (large scans, not needed to serve the site —
 # the site reads from data/*.js, not from these). Their .md transcriptions
 # ARE tracked, since those are small and reusable across sessions.
@@ -104,6 +118,15 @@ Admin/firecrawl/.env
 # capa de sourcing en el to-do 80 (2026-09-27).
 Admin/twitterapiio/.env
 
+# Misma excepción: Admin/jev/.env tiene la API key de Jev (TypeSafe AI, docs.typesafe.ai),
+# evaluada para categorizar rubros de ingresos/gastos en onboarding (to-do 74, 2026-09-28).
+Admin/jev/.env
+
+# Misma excepción: Admin/claude-api/.env tiene la API key de Anthropic que usa
+# tools/claude-api-transcribe.mjs -- la 3ra API del pipeline de transcripción, entra sola cuando
+# Gemini rechaza un documento por RECITATION (falso positivo de copyright), ver Admin/CHANGELOG.md.
+Admin/claude-api/.env
+
 # LO INTERNO YA NO SE DESTRACKEA: SE SACA EN EL DEPLOY (2026-09-20, decisión de Guido,
 # reemplaza a las reglas de los to-do 37 y 39 que estuvieron acá unas horas).
 # EL ERROR QUE CORRIGE: destrackear resolvía la publicación al precio de perder el
@@ -116,3 +139,24 @@ Admin/twitterapiio/.env
 # interno se borra del artefacto de deploy antes de publicar. Ver ese archivo para la
 # lista exacta y el porqué de cada línea.
 # Por eso acá abajo NO hay ninguna regla para `.md` internos: es a propósito.
+
+# Salidas del test de motores (tools/test-motores.mjs) -- transcripciones de prueba, no van al repo
+*.t-mistral.md
+*.t-gemini.md
+*.t-claude.md
+# Versiones de trabajo del inventario (tools/resolver-inventario.mjs): se conservan en disco, no se publican
+*.previo-*.md
+*.claude-check.md
+*.mistral-redo.md
+*.rubros.json
+Admin/.pipeline-lista-actual.txt
+Admin/.pipeline-lista-jev.txt
+*.antes-sumas.md
+Admin/.paginas-cache.json
+*.jev.json
+# tools/categorizar-claude.mjs --listos: categoría final por rubro (precedente / Jev / Claude), mismo criterio que *.jev.json
+*.categorias.json
+
+# Archivos DERIVADOS de cada documento (lista de rubros, briefing, respuestas de Jev/Claude, otras voces, respaldos): tools/rutas.mjs.
+# Se regeneran o son caché de APIs ya pagadas; nunca se borran. Versión 317.
+Generados/

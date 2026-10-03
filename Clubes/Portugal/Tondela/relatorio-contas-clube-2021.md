@@ -49,105 +49,102 @@ Página 1
 --- pág. 2 ---
 
 CLUBE DESPORTIVO DE TONDELA
+# RELATÓRIO DE CONTAS DE 2021
 
-RELATÓRIO DE CONTAS DE 2021
+### Clube Desportivo de Tondela
 
-|
-Clube Desportivo de Tondela
-BALANÇO INDIVIDUAL
-DEZEMBRO 2021
-Montantes expr em EURO
-EXERCÍCIOS
-RUBRICAS NOTAS 2021 2020
-Ano Completo Ano Completo
-ACTIVO
-Activo não corrente:
-ALINOS XOS LANO IGN. ese rerassn eruresmecuezm mac enpeoceuesenr cer sanmetmodas 2 030 697,26 2170 917,79
-Propriedades de investimento................csiiierceeeserrreseeeererrereeres 540 212,24 489 212,24
-BOOUWE sussa ssssseaas escavar real u is Tera cares ans toronaieadanss
-Activos IntangiVelS === ssa sas srasas ssa rass ruas cana
-Aectivos:BIDIÓGICOS: -:. usasse assassina
-Participações financeiras - método da equivalência patrimonial.......
-Participações financeiras - outros métodos..............cemeseesess 625 806,47 625 806,47
-ACLIONISIRNISÓCIOS ssa sccnis rosana sesaseacesssaara penca sporenasasero
-Quiros-aciivos AINANCOHDS: asus, sssusessesssaaesssscosaguycoscaprsrerno
-Activos por Impóstos. dIHOITOS ss cs esssessuamisasssiari coco sanariasmananneas
-3 196 715,97 3 285 936,50
-Activo corrente:
-INVONLAOS ss ssurersressonceeeec ses aEase cena man sc naanic apoc
-ACINOS !DIOIÓGICOS casu sasssss ass sscacasssreranressaca seara
-Cantos usares sasecasses aracsannsa names saraesesas 114 254,78 83 393,27
-Adiantamentos a fornecedores =: serissu passes sopaianassocossaaacesias
-Estado e outros entes púDIICOS....c sis scssss sais sssiasossassessasseianado 79,39
-AcclonistanisÓCios.......corecrscerrosrenanreos rodaso Ceara r ses R ENO Seas nanda nada
-Oulras:contas a rocober:........sccsesenrecsosoranitiaao ra a qoacanoso cecasa das 4 098,47 21 419,62
-Diferimentos............cis sic ceeeeeearere eee eee eme renanceananeaneeesss 1 972,69 1 996,51
-Activos financeiros detidos para negociação................cisictems 1 039 183,24 965 277,77
-Outros activos financeiros............cisicesessesereaaeeeaneresrrenanees
-Activos não correntes detidos para venda
-CAD A BpOsNOs DANCANOS . cencrasraessesmesesracanenorresencoanserae 1 248 537,09 1661 634,34
-2 408 046,27 2 733 800,90
-Total do Activo 5 604 762,24 6 019 737,40
-Página 1 de 2
+## BALANÇO INDIVIDUAL
+### DEZEMBRO 2021
 
-Relatório de Contas CDT - Exercício Fiscal 2021
+*Montantes expressos em EURO*
 
+| RUBRICAS | NOTAS | EXERCÍCIOS 2021 Ano Completo | EXERCÍCIOS 2020 Ano Completo |
+| :--- | :---: | :---: | :---: |
+| **ACTIVO** | | | |
+| **Activo não corrente:** | | | |
+| Activos fixos tangíveis............................................................ | | 2 030 697,26 | 2 170 917,79 |
+| Propriedades de investimento.................................................. | | 540 212,24 | 489 212,24 |
+| Goodwill............................................................................... | | | |
+| Activos intangíveis.................................................................. | | | |
+| Activos biológicos.................................................................. | | | |
+| Participações financeiras - método da equivalência patrimonial....... | | | |
+| Participações financeiras - outros métodos............................... | | 625 806,47 | 625 806,47 |
+| Accionistas/sócios................................................................. | | | |
+| Outros activos financeiros........................................................ | | | |
+| Activos por impostos diferidos.................................................. | | | |
+| | | **3 196 715,97** | **3 285 936,50** |
+| **Activo corrente:** | | | |
+| Inventários............................................................................ | | | |
+| Activos biológicos.................................................................. | | | |
+| Clientes................................................................................ | | 114 254,78 | 83 393,27 |
+| Adiantamentos a fornecedores............................................... | | | |
+| Estado e outros entes públicos................................................ | | | 79,39 |
+| Accionistas/sócios................................................................. | | | |
+| Outras contas a receber.......................................................... | | 4 098,47 | 21 419,62 |
+| Diferimentos.......................................................................... | | 1 972,69 | 1 996,51 |
+| Activos financeiros detidos para negociação.............................. | | 1 039 183,24 | 965 277,77 |
+| Outros activos financeiros........................................................ | | | |
+| Activos não correntes detidos para venda................................. | | | |
+| Caixa e depósitos bancários................................................... | | 1 248 537,09 | 1 661 634,34 |
+| | | **2 408 046,27** | **2 733 800,90** |
+| **Total do Activo** | | **5 604 762,24** | **6 019 737,40** |
+
+Página 1 de 2  
+Relatório de Contas CDT – Exercício Fiscal 2021  
 Página 2
 
 --- pág. 3 ---
 
 CLUBE DESPORTIVO DE TONDELA
-RELATÓRIO DE CONTAS DE 2021
+# RELATÓRIO DE CONTAS DE 2021
 
-Clube Desportivo de Tondela
-BALANÇO INDIVIDUAL
+### Clube Desportivo de Tondela
 
-DEZEMBRO 2021
-Montantes expressos em EURO
-EXERCÍCIOS
-RUBRICAS NOTAS 2021 2020
-Ano Completo Ano Completo
-CAPITAL PRÓPRIO E PASSIVO
-Capital próprio:
-CapiatreRizado:. sessao niracesesce assar ruagens 1 042 231,80 1042 231,80
-Acções (quotas) próprias...........sessessossisrssscsssroassorenssisao
-Outros instrumentos de capital próprio
-Reservas legais
-Outras reservas
-Resullados:transitados......... er cer cr rreres ras ICE a Asa Tonin aaa sanar 2 927 413,30 2 891 182,46
-Ajustamentos em activos financeiros.... paso
-Outras variações no capital próprio...............cecseeeseeessseeeseressess 912 000,00 969 000,00
-4 881 645,10 4 902 414,26
-Resultado liquido do :periodo;;:.:. cgi sessçasssssssssesicossusess cosmos teares (88 876,89) 43 134,36
-4792 768,21 4 945 548,62
-interesses: minomtárioss::2025:22 eras acaso sena canta taa ds
-Total do capital próprio 4792 768,21 4 945 548,62
-Passivo
-Passivo não corrente:
-PIOVISDOE:... nec parraorono rei DEDOS EVAN EDS UA O NERD
-Financiamentos GBA, sessao ro soros rorenrna esuaro
-Passívos:por impostos diferidos :;;:::=0=;; casas casas ssss ss cesiasinssssescss
-DUNAS COMAS A DOG: esasssauesisms so sesac sarna cer grutas 500 000,00 500 000,00
-500 000,00 500 000,00
-Passivo corrente:
-FOMECSAOTOS is sasess ass nssires ssa e sera poses tas 234 584,72 510 730,67
-Adiantamentos de clientes..............s..
-Estado e outros entes públicos 6 678,42 5 300,15
-Accionistas/sócios..........
-Financiamentos: 0DIidos::: .:: cics ss seara sara eia aa vara espa sai
-Outras COMAS A DAQUI... cama cecemecrronssnes srsmrerosure ses macro ra menerestas 70 730,89 58 157,96
-Diferiméntos uses sasassssra oeste aaa rus ras acas Tê
-Passivos financeiros detidos para negociação a
-Passivos não correntes detidos para venda................eeess
-311 994,03 574 188,78
-Total do passivo 811 994,03 1074 188,78
-Total do Capital Próprio e do Passivo 5 604 762,24 6 019 737,40
-Página 2 de 2
+## BALANÇO INDIVIDUAL
+### DEZEMBRO 2021
 
-O a
+*Montantes expressos em EURO*
 
-Relatório de Contas CDT - Exercício Fiscal 2021
+| RUBRICAS | NOTAS | EXERCÍCIOS 2021 Ano Completo | EXERCÍCIOS 2020 Ano Completo |
+| :--- | :---: | :---: | :---: |
+| **CAPITAL PRÓPRIO E PASSIVO** | | | |
+| **Capital próprio:** | | | |
+| Capital realizado..................................................................... | | 1 042 231,80 | 1 042 231,80 |
+| Acções (quotas) próprias......................................................... | | | |
+| Outros instrumentos de capital próprio..................................... | | | |
+| Reservas legais..................................................................... | | | |
+| Outras reservas..................................................................... | | | |
+| Resultados transitados........................................................... | | 2 927 413,30 | 2 891 182,46 |
+| Ajustamentos em activos financeiros........................................ | | | |
+| Outras variações no capital próprio.......................................... | | 912 000,00 | 969 000,00 |
+| | | 4 881 645,10 | 4 902 414,26 |
+| Resultado líquido do período................................................... | | (88 876,89) | 43 134,36 |
+| | | 4 792 768,21 | 4 945 548,62 |
+| Interesses minoritários........................................................... | | | |
+| **Total do capital próprio** | | **4 792 768,21** | **4 945 548,62** |
+| **Passivo** | | | |
+| **Passivo não corrente:** | | | |
+| Provisões............................................................................. | | | |
+| Financiamentos obtidos.......................................................... | | | |
+| Passivos por impostos diferidos............................................... | | | |
+| Outras contas a pagar........................................................... | | 500 000,00 | 500 000,00 |
+| | | **500 000,00** | **500 000,00** |
+| **Passivo corrente:** | | | |
+| Fornecedores....................................................................... | | 234 584,72 | 510 730,67 |
+| Adiantamentos de clientes...................................................... | | | |
+| Estado e outros entes públicos................................................ | | 6 678,42 | 5 300,15 |
+| Accionistas/sócios................................................................. | | | |
+| Financiamentos obtidos.......................................................... | | | |
+| Outras contas a pagar........................................................... | | 70 730,89 | 58 157,96 |
+| Diferimentos.......................................................................... | | | |
+| Passivos financeiros detidos para negociação.......................... | | | |
+| Passivos não correntes detidos para venda............................. | | | |
+| | | **311 994,03** | **574 188,78** |
+| **Total do passivo** | | **811 994,03** | **1 074 188,78** |
+| **Total do Capital Próprio e do Passivo** | | **5 604 762,24** | **6 019 737,40** |
 
+Página 2 de 2  
+Relatório de Contas CDT – Exercício Fiscal 2021  
 Página 3
 
 --- pág. 4 ---
@@ -661,275 +658,124 @@ Página 11
 --- pág. 12 ---
 
 CLUBE DESPORTIVO DE TONDELA
-RELATÓRIO DE CONTAS DE 2021
+# RELATÓRIO DE CONTAS DE 2021
 
-Subsídios à Exploração
-. Do Estado e Out. Entes Públicos
->» Câmara Municipal de Tondela
-
-» ER.F.
-
-. De Outras Entidades
-> De Empresas
-
-Sub - Total
+Subsidios à Exploração
+* • **Do Estado e Out. Entes Públicos**
+  * ➢ Câmara Municipal de Tondela: 120.750,00
+  * ➢ F.P.F.: 729,00
+* • **De Outras Entidades**
+  * ➢ De Empresas: 5.512,78
+  * **Sub - Total**: **126.991.78**
 
 Outros Rendimentos e Ganhos
-
-v
-
-Rendimentos suplementares
-
-> Desconto pto. pagamento obtido
-
-> Rendimentos e ganhos em investimento não financ.
-» Outros
-
-Sub - Total
+* ➢ Rendimentos suplementares: 4.000,00
+* ➢ Desconto pto. pagamento obtido: 0,00
+* ➢ Rendimentos e ganhos em investimento não financ.: 39.974,80
+* ➢ Outros: 57.000,00
+* **Sub - Total**: **100.974,80**
 
 Juros, dividendos e outros rendimentos
+* • **Juros obtidos**: 760,42
+* • **Outros rendimentos similares**: 77.474,94
+* **Sub - Total**: **78.235,36**
 
-e Juros obtidos
-e Outros rendimentos similares
-Sub - Total
+**Total**: **373.486,52**
 
-Total
-
+### GASTOS:
 Fornecimentos e Serv. Externos
+
 Serviços especializados
+* ➢ Publicidade e Propaganda: 0,00
+* ➢ Conservação e Reparação: 3.659,79
+* ➢ Vigilância e Segurança: 0,00
+* ➢ Honorários: 58.980,71
+* ➢ Serviços Bancários: 69,00
+* ➢ Trabalhos Especializados: 3.275,00
 
-> Publicidade e Propaganda
-
-vw
-
-Conservação e Reparação
-
-vw
-
-Vigilância e Segurança
-
-» Honorários
-
-vw
-
-Serviços Bancários
-
-w
-
-Trabalhos Especializados
-
-120.750,00
-
-729,00
-
-2.212,78
-126.991.78
-
-4.000,00
-0,00
-39.974,80
-
-57.000,00
-100.974,80
-
-760,42
-
-27.474,94
-78.235,36
-
-373.486,52
-
-0,00
-3.659,79
-0,00
-58.980,71
-69,00
-
-3.275,00
-
-Relatório de Contas CDT - Exercício Fiscal 2021
-
+---
+Relatório de Contas CDT – Exercício Fiscal 2021  
 Página 12
 
 --- pág. 13 ---
 
 CLUBE DESPORTIVO DE TONDELA
-RELATORIO DE CONTAS DE 2021
+# RELATÓRIO DE CONTAS DE 2021
 
 Material
+* ➢ Ferramentas e Ut. Desgaste Rápido: 5.841,22
+* ➢ Material de Escritório: 202,37
 
-> Ferramentas e Ut. Desgaste Rápido
-
-*
-
-> Material de Escritório
-
-Energia e fluídos
-
-> Eletricidade
-> Gás
-
->» Combustíveis
-> Água
+Energia e fluidos
+* ➢ Eletricidade: 4.406,58
+* ➢ Gás: 0,00
+* ➢ Combustíveis: 8.523,39
+* ➢ Água: 0,00
 
 Deslocações, estadas e transporte
-
->» Deslocações Estadia dos Jogadores
+* ➢ Deslocações Estadia dos Jogadores: 13.931,22
 
 Serviços diversos
-
-v
-
-Rendas e Alugueres
-
-» Comunicação
-
-vw
-
-Seguros
-
-> Contencioso e Notariado
-
-> Limpeza, Higiene e Conforto
-
-> Outros Fornecimentos e Serviços
-
-Sub - Total
+* ➢ Rendas e Alugueres: 19.797,99
+* ➢ Comunicação: 590,11
+* ➢ Seguros: 7.194,33
+* ➢ Contencioso e Notariado: 0,00
+* ➢ Limpeza, Higiene e Conforto: 1.156,28
+* ➢ Outros Fornecimentos e Serviços: 1.490,01
+* **Sub - Total**: **129.118,00**
 
 Gastos com o Pessoal
+* ➢ Vencimento do Pessoal: 50.902,66
+* ➢ Indemnizações: 4.618,98
+* ➢ Encargos c/ Pessoal: 4.560,31
+* ➢ Seg. Acid. Trab. Doenças Profiss.: 2.182,50
+* ➢ Outros Gastos com o Pessoal: 58.722,52
+* **Sub - Total**: **120.986,97**
 
-> Vencimento do Pessoal
-> Indemnizações
-
-> Encargos c/ Pessoal
-
-v
-
-Seg. Acid. Trab. Doenças Profiss.
-
-Outros Gastos com o Pessoal
-
-vw
-
-Sub - Total
-
-5.841,22
-202,37
-
-4.406,58
-0,00
-8.523,39
-0,00
-
-13.931,22
-
-19.797,99
-590,11
-7.194,33
-0,00
-1.156,28
-1.490,01
-129.118,00
-
-50.902,66
-4.618,98
-4.560,31
-2.182,50
-
-722,52
-120.986,97
-
-Relatório de Contas CDT - Exercício Fiscal 2021
-
+---
+Relatório de Contas CDT – Exercício Fiscal 2021  
 Página 13
 
 --- pág. 14 ---
 
 CLUBE DESPORTIVO DE TONDELA
-
-RELATÓRIO DE CONTAS DE 2021
+# RELATÓRIO DE CONTAS DE 2021
 
 Gastos de Depreciação e de Amortização
-Ativos fixos tangíveis
-> Edifícios e Outras Construções
-> Equipamento de Transporte
-> Equipamento Básico
-» Equipamento Administrativo
-» Outras Imobilizações Corpóreas
-
-Sub - Total
+* **Ativos fixos tangíveis**
+  * ➢ Edifícios e Outras Construções: 138.618,04
+  * ➢ Equipamento de Transporte: 0,00
+  * ➢ Equipamento Básico: 1.444,56
+  * ➢ Equipamento Administrativo: 0,00
+  * ➢ Outras Imobilizações Corpóreas: 157,93
+  * **Sub - Total**: **140.220,53**
 
 Perdas por Imparidade
-Em Investimentos Financeiros
-
-> Investimentos financeiros
-
-Sub - Total
+* **Em Investimentos Financeiros**
+  * ➢ Investimentos financeiros: 3.569,47
+  * **Sub - Total**: **3.569,47**
 
 Outros Gastos e Perdas
-Impostos
-> Imposto s/ Valor Acrescentado
-> Imposto de selo
-> Taxas
-
-> Imposto de Circulação
-
-Sub - Total
+* **Impostos**
+  * ➢ Imposto s/ Valor Acrescentado: 27.041,09
+  * ➢ Imposto de selo: 676,87
+  * ➢ Taxas: 320,00
+  * ➢ Imposto de Circulação: 599,16
+  * **Sub - Total**: **28.637,12**
 
 Outros Custos Operacionais
-
-Multas e Penalidades
-
-v
-
-Donativos
-
-v
-
-Outros não especificados
-
-Y
-
-Correções Rel. a Exercios Anteriores
-
-Sub - Total
+* ➢ Multas e Penalidades: 1.600,29
+* ➢ Donativos: 8.500,00
+* ➢ Outros não especificados: 19.734,20
+* ➢ Correções Rel. a Exercíos Anteriores: 7.442,18
+* **Sub - Total**: **38.405,42**
 
 Custos e Perdas Extraordinários
+* ➢ Juros Suportados: 0,88
+* **Sub - Total**: **0,88**
 
-»
-
-> Juros Suportados
-
-Sub - Total
-
-138.618,04
-0,00
-1.444,56
-0,00
-157,93
-140.220,53
-
-3.569,47
-3.569,47
-
-27.041,09
-676,87
-320,00
-299,16
-
-28.637,12
-
-1.600,29
-8.500,00
-19.734,20
-2.442,18
-38.405,42
-
-0,88
-0,88
-
-Relatório de Contas CDT - Exercício Fiscal 2021
-
+---
+Relatório de Contas CDT – Exercício Fiscal 2021  
 Página 14
 
 --- pág. 15 ---

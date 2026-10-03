@@ -1,15 +1,16 @@
 // ============================================================================
 // data/river-data.js — River Plate: Brito (2021-actual) y D'Onofrio (2013-2021).
 //
-// Ejercicio 2024 (gestión Brito) = REAL, balance auditado real vía réplica de tuRiver.com — ver
-// comentario largo antes de riverRevenueLinesByYear[2024] más abajo. El resto (Ejercicio 2025 y
-// Ejercicio 2021) SIGUE SIENDO PLACEHOLDER: no hay documento oficial cargado para esos ejercicios
-// (ver fuentes/README.md). La cobertura de prensa que se encontró al armar el esquema original
-// tenía cifras ambiguas/contradictorias entre sí (una nota hablaba de "cuota social + abonos"
-// combinados, otra de "entradas y abonos" del estadio remodelado como un número aparte, sin quedar
-// claro si se superponían) — en vez de forzar esos números dudosos a una categoría, se optó por
-// números redondos, obviamente inventados. El ejercicio 2021 (última temporada de D'Onofrio) se
-// agregó con el mismo criterio, solo para que "Comparar Gestiones" tenga dos períodos de River.
+// Ejercicios 2021 y 2024 = REALES. Ejercicio 2025 SIGUE SIENDO PLACEHOLDER: no hay documento
+// oficial cargado todavía (ver fuentes/Argentina/River.md).
+//
+// Ejercicio 2024 (gestión Brito): balance auditado real vía réplica de tuRiver.com — ver
+// comentario largo antes de riverRevenueLinesByYear[2024] más abajo.
+//
+// Ejercicio 2021 (última temporada de D'Onofrio) agregado el 2026-09-28 (ronda de 5 onboardings
+// de prueba de los tools nuevos), REEMPLAZANDO el placeholder de números redondos inventados que
+// tenía desde la Versión 138 — fuente real: PDF individual vía CNV (ver comentario largo antes de
+// riverRevenueLinesByYear[2021] más abajo).
 //
 // LOS RESULTADOS DEPORTIVOS (más abajo) SÍ SON REALES, a diferencia de las
 // finanzas: buscados y verificados vía web search en agosto de 2026.
@@ -62,6 +63,34 @@
 // Ordinarios ya confirmado) que el valor correcto es $5.984.158.778 — el de la nota del Anexo II
 // tiene una transposición de dígitos. Se usó el valor verificado, no el de la nota.
 const riverRevenueLinesByYear = {
+  // Ejercicio 2021 (ronda de 5 onboardings de prueba de los tools nuevos, 2026-09-28) —
+  // REEMPLAZA el placeholder inventado de la Versión 138. Fuente: PDF individual (no consolidado,
+  // mismo criterio que Boca/Racing) vía CNV, `Clubes/Argentina/River/
+  // estados-contables-2020-2021.pdf`, transcripto HOY con Mistral OCR (documento ESCANEADO —
+  // cifras verificadas a mano contra el PDF, no solo que el tie-out cierre, ver SKILL.md sección
+  // 6 punto 6). "Fútbol Profesional" queda como `lump_football_operations` A PROPÓSITO, aunque el
+  // Anexo VII de este mismo ejercicio SÍ separa sus 4 sub-ítems en categorías reales distintas —
+  // es el MISMO criterio que ya usa 2024 de este club, no corregido (ver to-do 102, decisión
+  // pendiente de Guido). Suma exacta a $9.065.549.461 (moneda nativa, "Total recursos ordinarios"
+  // impreso).
+  2021: [
+    { rawLabel:'Fútbol Profesional', normalizedCategory:'lump_football_operations', amountNative:6856.111878, disclosureLevel:'detailed', items:[
+      ['Venta, préstamos de jugadores, derechos de formación y otros', 3101.042241], ['Televisión', 2280.386274],
+      ['Publicidad', 1472.349199], ['Ingresos torneos nacionales e internacionales', 2.334164],
+    ]},
+    { rawLabel:'Estadio', normalizedCategory:'matchday_competition', amountNative:82.626908, disclosureLevel:'detailed', items:[
+      ['Concesiones', 57.925856], ['Ingresos Museo', 22.139078], ['Alquileres', 0], ['Estacionamiento', 2.561974],
+    ]},
+    { rawLabel:'Educación', normalizedCategory:'education', amountNative:323.865949, disclosureLevel:'detailed', items:[
+      ['Instituto de enseñanza', 237.622507], ['Subsidios estatales', 86.243442],
+    ]},
+    { rawLabel:'Deportes y otras actividades', normalizedCategory:'other_sports', amountNative:78.289932, disclosureLevel:'detailed', items:[
+      ['Abonos y aranceles varios', 55.143608], ['Ingresos varios', 23.146324],
+    ]},
+    { rawLabel:'Socios', normalizedCategory:'member_dues', amountNative:1724.654794, disclosureLevel:'detailed', items:[
+      ['Cuotas sociales', 1518.759652], ['Somos River', 205.895142],
+    ]},
+  ],
   // ARS millones nativos (Versión 32 — antes USD ya convertido). Fuente: Anexo VII, pág. 58,
   // columna 31/08/2024. Suma exacta a $207.077.217.738.
   2024: [
@@ -85,6 +114,36 @@ const riverRevenueLinesByYear = {
 };
 
 const riverExpenseLinesByYear = {
+  // Ejercicio 2021: mismo criterio de destino que 2024 (ver comentario largo de 2024 más abajo).
+  // A diferencia de 2024 (que necesitó recuperar una tabla rotada 90° para separar sueldos), acá
+  // la fila "Sueldos y cargas sociales" del Anexo VIII se leyó directo, sin rotar, con su columna
+  // "Fútbol profesional" ($524.701710 M) reconciliando exacto contra el total de esa fila.
+  // ERROR DE OCR ENCONTRADO Y CORREGIDO DOS VECES (SKILL.md sección 6.6, to-do 103): Mistral
+  // transcribió "Amortización de software" como $12.336.254. Una corrección a mano anterior lo
+  // cambió a $12.326.254 (arregló el "326 vs 336" pero introdujo un segundo error propio, "254" en
+  // vez de "234", que quedó sin detectar porque el tie-out de esa sesión dio "$20 de diferencia
+  // residual" y se lo atribuyó al documento en vez de sospechar de la propia corrección).
+  // RE-VERIFICADO 2026-09-28 (to-do 103, comparación Mistral vs. Gemini): el valor real, impreso en
+  // el PDF (pág. 8 impresa/3 real, confirmado con zoom sobre la celda Y con `tools/sum-check.mjs`
+  // contra el subtotal de la fila), es $12.326.234 -- Gemini lo transcribió bien a la primera,
+  // Mistral lo tuvo mal en las 2 pasadas (Estado de Recursos y Gastos Y Anexo III.b). Con este valor
+  // la suma cierra EXACTO contra "Subtotal amortizaciones y depreciaciones" ($1.814.445.567), sin
+  // ningún residual -- el "$20 del documento" de la nota anterior no era del documento, era de esta
+  // misma corrección.
+  2021: [
+    { rawLabel:'Fútbol profesional — Sueldos y cargas sociales', normalizedCategory:'wages_squad', amountNative:-524.701710, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional — resto (sin desglosar por la fuente)', normalizedCategory:'lump_football_operations_expense', amountNative:-3955.164136, disclosureLevel:'not_disclosed' },
+    { rawLabel:'Educación', normalizedCategory:'youth_other_sports_expense', amountNative:-279.214824, disclosureLevel:'detailed' },
+    { rawLabel:'Deportes', normalizedCategory:'youth_other_sports_expense', amountNative:-327.396855, disclosureLevel:'detailed' },
+    { rawLabel:'Administración', normalizedCategory:'admin_general_expense', amountNative:-592.866913, disclosureLevel:'detailed' },
+    { rawLabel:'Mantenimiento e intendencia', normalizedCategory:'admin_general_expense', amountNative:-453.493513, disclosureLevel:'detailed' },
+    { rawLabel:'Servicio médico y asistencial', normalizedCategory:'admin_general_expense', amountNative:-122.610607, disclosureLevel:'detailed' },
+    { rawLabel:'Socios', normalizedCategory:'admin_general_expense', amountNative:-813.241513, disclosureLevel:'detailed' },
+    { rawLabel:'Museo', normalizedCategory:'admin_general_expense', amountNative:-34.700833, disclosureLevel:'detailed' },
+    { rawLabel:'Depreciación de bienes de uso', normalizedCategory:'depreciation', amountNative:-163.395311, disclosureLevel:'detailed' },
+    { rawLabel:'Amortización de plantel de jugadores de fútbol', normalizedCategory:'player_amortisation', amountNative:-1638.724022, disclosureLevel:'detailed' },
+    { rawLabel:'Amortización de software', normalizedCategory:'other_amortisation', amountNative:-12.326234, disclosureLevel:'detailed' },
+  ],
   // ARS millones nativos (Versión 32). Fuente: Anexo VIII, pág. 59-62, fila "Totales al
   // 31/08/2024" por área + Estado de Recursos y Gastos (Depreciación/Amortización, pág. 11). Suma
   // exacta a $(149.674.797.729), el "Total gastos ordinarios" impreso.
@@ -154,6 +213,28 @@ const riverExpenseLinesByYear = {
 };
 
 const riverFiscalYearMeta = {
+  // Ejercicio 2021 (última temporada de D'Onofrio, gestión donofrio): fx = $97,54/USD, el que el
+  // propio balance declara en su Anexo V ("Cambio vigente al cierre", pág. ~45) para USD -- mismo
+  // criterio que 2024. tax:0 (River es asociación civil sin fines de lucro, sin impuesto a las
+  // ganancias como línea propia -- mismo criterio que 2024). netInterest lleva el NETO de
+  // "Resultados financieros y por tenencia (incl. RECPAM)" ($226,920637 M) y "Otros egresos" (Nota
+  // 2.1, -$117,705245 M), mostrados por separado en `extraRows` -- RESULTADO OPERATIVO
+  // ($147,712988 M) + ese neto reconcilia EXACTO contra el "SUPERÁVIT DEL EJERCICIO" impreso.
+  // grossDebt = "Préstamos" (Nota 2.f, Pasivo Corriente, único renglón ese año). cash = Caja y
+  // bancos.
+  2021: {
+    currency:'ARS', fx:97.54, fxSource:'document_close',
+    sourceId:'river-estados-contables-2020-2021',
+    reportType:'official_balance_sheet',
+    gestionId:'donofrio',
+    grossDebt:1540.592415, cash:135.932512,
+    profitOnPlayerSales:0, assetSales:0, netInterest:109.215392, tax:0,
+    extraRows: [
+      {label:'Resultados financieros y por tenencia (incl. RECPAM)', value:226.920637},
+      {label:'Otros egresos (Nota 2.1)', value:-117.705245},
+    ],
+    officialTotalRevenue:9065.549461, officialTotalExpenses:8917.836473, officialPAT:256.928380,
+  },
   // Ejercicio 2024: no se pudo separar "Salarios" del resto de los gastos operativos por área (el
   // Anexo VIII sí tiene ese desglose por concepto, pero la matriz no se pudo transcribir con
   // confianza suficiente — ver comentario arriba). Por eso wages queda en 0 acá (todo cae en
@@ -248,6 +329,12 @@ window.CLUB_GENERIC_DATA.river = {
 
 
 Object.assign(sources, {
+  'river-estados-contables-2020-2021': {
+      id:'river-estados-contables-2020-2021', clubId:'river',
+      title:'Estados Contables (balance auditado, individual), Ejercicio N°120, 1°/9/2020 al 31/8/2021',
+      type:'official_balance_sheet', reliability:'primary',
+      note:'PDF individual (no consolidado, mismo criterio que Boca/Racing) presentado ante la CNV (presentación #3248465, "EECC 2021 River Plate legalizados (2).pdf", 65 páginas, legalizado/firmado), descargado el 2026-09-28 (ver fuentes/Argentina/River.md). Transcripción vía Mistral OCR (documento escaneado, ver advertencia en el propio .md) -- cifras verificadas a mano contra el PDF antes de cargar. Reemplaza el placeholder inventado que existía para este ejercicio desde la Versión 138.',
+    },
   'river-estados-contables-2023-24': {
       id:'river-estados-contables-2023-24', clubId:'river',
       title:'Estados Contables (balance auditado), Ejercicio Económico N°123, 1°/9/2023 al 31/8/2024',
@@ -260,10 +347,12 @@ Object.assign(sources, {
 
 gestionesByClub.river = {
     // Versión 138: los ejercicios 2021 y 2025 de River eran placeholder puro (existían solo para
-    // que "Comparar Gestiones" tuviera dos períodos que poner lado a lado) y se borraron. El único
-    // ejercicio real de River es el 2024, y es de la gestión Brito, así que su rango es ese.
-    // `donofrio` se queda sin ningún ejercicio, igual que ameal/angelici en Boca: sigue acá porque
-    // Mercado de Pases y Resultados Deportivos agrupan por gestión y tienen filas suyas.
+    // que "Comparar Gestiones" tuviera dos períodos que poner lado a lado) y se borraron. El
+    // Ejercicio 2021 volvió a cargarse REAL el 2026-09-28 (ronda de onboardings de prueba) — el
+    // rango de `donofrio` ya estaba puesto en 2021-2021 desde la Versión 138 (dejado ahí solo para
+    // que Mercado de Pases/Resultados Deportivos tuvieran fila propia, sin ejercicio financiero
+    // real detrás todavía), así que no hizo falta tocarlo, coincide con el ejercicio real que se
+    // agregó.
     brito:    { nombre:'Brito (2021-actual)',   firstYear:2024, lastYear:2024 },
     donofrio: { nombre:"D'Onofrio (2013-2021)", firstYear:2021, lastYear:2021 },
   };

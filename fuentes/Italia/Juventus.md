@@ -43,3 +43,5 @@ para varios ejercicios recientes) — no se bajaron en esta sesión porque el ob
 de bilancio en sí, no la documentación de auditoría suelta.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2012 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf` (sourceId `juventus-it-annual-financial-report-2011-12`).

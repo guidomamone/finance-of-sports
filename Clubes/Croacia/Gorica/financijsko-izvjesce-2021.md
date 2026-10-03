@@ -163,57 +163,28 @@ Dostaviti:
 
 --- pág. 5 ---
 
-RETRA do.0. ZAGREB
+# RETRA d.o.o. ZAGREB
+**revizija, računovodstvo, porezno savjetovanje, financijske analize, kontrole**  
+**Zagreb, Lastovska 6\* Tel. +385 (1) 615 92 72, fax +385 (1) 231 46 95 \* mob. 091 615 92 92**  
+**IBAN HR6323600001101295817\*OIB 45077584438**
 
-revizija, računovodstvo, porezno savjetovanje, financijske analize, kontrole
-Zagreb, Lastovska 6* Tel. + 385 (1) 615 92 72, fax +385 (1) 231 46 95 * mob. 091 615 9292
-IBAN HR6323600001101295817*0IB 45077584438
+## IZVJEŠĆE NEOVISNOG REVIZORA O FINANCIJSKIM IZVEŠTAJIMA HNK GORICA ZA 2021. GODINU (F.01)
 
-IZVJEŠĆE NEOVISNOG REVIZORA O FINANCIJSKIM IZVEŠTAJIMA
-HNK GORICA ZA 2021. GODINU (F.01)
+### Mišljenje
 
-Mišljenje
+Obavili smo reviziju priloženih financijskih izvještaja HNK GORICA, koja uključuju Bilancu na dan 31. prosinca 2021. godine, Račun dobiti i gubitka i Izvještaj o novčanom toku za tada završenu godinu, kao i pripadajuće Bilješke uz temeljne financijske izvještaje u kojima je iznijet sažetak značajnih računovodstvenih politika i ostalih pojašnjenja prikazanih na stranicama u priloga.
 
-Obavili smo reviziju priloženih financijskih izvještaja HNK GORICA, koja uključuju
-Bilancu na dan 31. prosinca 2021. godine, Račun dobiti i gubitka i Izvještaj o
-novčanom toku za tada završenu godinu, kao i pripadajuće Bilješke uz temeljne
-financijske izvještaje u kojima je iznijet sažetak značajnih računovodstvenih politika
-i ostalih pojašnjenja prikazanih na stranicama u priloga.
+*Prema našem mišljenju, financijski izvještaji prikazuju realno i objektivno u svim materijalno značajnim odrednicama financijski položaj kluba HNK GORICA na dan 31.prosinca 2021. godine, rezultate njegova poslovanja i novčane tokove za tada završenu godinu, sukladno Hrvatskim standardima financijskog izvještavanja i Pravilniku Hrvatskog nogometnog saveza o licenciranju klubova.*
 
-Prema našem mišljenju, financijski izvještaji prikazuju realno i objektivno u svim
-materijalno značajnim odrednicama financijski položaj kluba HNK GORICA na
-dan 31.prosinca 2021. godine, rezultate njegova poslovanja i novčane tokove za
-tada završenu godinu, sukladno Hrvatskim standardima financijskog
-izvještavanja i Pravilniku Hrvatskog nogometnog saveza o licenciranju klubova.
+### Osnova za mišljenje
 
-Osnova za mišljenje
+Obavili smo našu reviziju u skladu sa Zakonom o računovodstvu, Zakonom o reviziji, Međunarodnim revizijskim standardima (MRevS-ima) i Pravilnikom Hrvatskog nogometnog saveza o licenciranju klubova. Naše odgovornosti prema tim standardima su podrobnije opisane u našem izvješću neovisnog revizora u odjeljku o revizorovim odgovornostima za reviziju godišnjih financijskih izvještaja. Neovisni smo od Kluba u skladu s Kodeksom etike za profesionalne računovođe (IESBA Kodeks) i ispunili smo naše ostale etičke odgovornosti u skladu s IESBA Kodeksom. Vjerujemo da su revizijski dokazi koje smo dobili dostatni i primjereni da osiguraju osnovu za naše mišljenje.
 
-Obavili smo našu reviziju u skladu sa Zakonom o računovodstvu, Zakonom o
-reviziji, Međunarodnim  revizijskim standardima (MRevS-ima) i Pravilnikom
-Hrvatskog nogometnog saveza o licenciranju klubova. Naše odgovornosti prema
-tim standardima su podrobnije opisane u našem izvješću neovisnog revizora u
-odjeljku o revizorovim odgovornostima za reviziju godišnjih financijskih izvještaja.
-Neovisni smo od Kluba u skladu s Kodeksom etike za profesionalne računovođe
-(IESBA Kodeks) i ispunili smo naše ostale etičke odgovornosti u skladu s IESBA
-Kodeksom. Vjerujemo da su revizijski dokazi koje smo dobili dostatni i primjereni
-da osiguraju osnovu za naše mišljenje.
+### Odgovornosti uprave i onih koji su zaduženi za upravljanje za godišnje financijske izvještaje
 
-Odgovornosti uprave i onih koji su zaduženi za upravljanje za godišnje
-financijske izvještaje
+Uprava je odgovorna za sastavljanje godišnjih financijskih izvještaja koji daju istinit i fer prikaz u skladu s HSFI-ima, i za one interne kontrole za koje uprava odredi da su potrebne za omogućavanje sastavljanja godišnjih financijskih izvještaja koji su bez značajnog pogrešnog prikaza uslijed prevare ili pogreške.
 
-Uprava je odgovorna za sastavljanje godišnjih financijskih izvještaja koji daju istinit
-i fer prikaz u skladu s HSFI-ima, i za one interne kontrole za koje uprava odredi da
-su potrebne za omogućavanje sastavljanja godišnjih financijskih izvještaja koji su
-bez značajnog pogrešnog prikaza uslijed prevare ili pogreške.
-
-U sastavljanju godišnjih financijskih izvještaja, uprava je odgovorna za
-procjenjivanje sposobnosti kluba da nastavi sa poslovanjem po vremenski
-neograničenom poslovanju, ako je primjenjivo, pitanja povezana s vremenski
-neograničenim poslovanjem i korištenjem računovodstvene osnove utemeljene na
-vremenski neograničenosti poslovanja, osim ako uprava ili namjerava likvidirati
-klub ili prekinuti poslovanje ili nema realne alternative nego da to učini. Oni koji su
-zaduženi za upravljanje su odgovorni i za nadziranje procesa financijskog
-izvještavanja kojeg je ustanovio Klub.
+U sastavljanju godišnjih financijskih izvještaja, uprava je odgovorna za procjenjivanje sposobnosti kluba da nastavi sa poslovanjem po vremenski neograničenom poslovanju, ako je primjenjivo, pitanja povezana s vremenski neograničenim poslovanjem i korištenjem računovodstvene osnove utemeljene na vremenski neograničenosti poslovanja, osim ako uprava ili namjerava likvidirati klub ili prekinuti poslovanje ili nema realne alternative nego da to učini. Oni koji su zaduženi za upravljanje su odgovorni i za nadziranje procesa financijskog izvještavanja kojeg je ustanovio Klub.
 
 --- pág. 6 ---
 
@@ -296,295 +267,204 @@ p ikontrole > ZAGRE B
 
 --- pág. 8 ---
 
-Naziv izvještajnog subjekta (NK):
-
-Hrvatski nogometni klub Gorica
-
 Bilanca
+
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
+
+### Bilanca
 Na dan 31. prosinca 2021.
 
-Kratkotrajna imovina
-Novac i novčani ekvivalenti
-Potraživanja od nogometnih klubova za transfere igrača
-Potraživanja od subjekata grupe i ostalih povezanih strana
-Potraživanja od posrednika
-Potraživanja - ostala
-Porezna imovina
-Zalihe
-Ostala kratkotrajna imovina
-Ukupno - Kratkotrajna imovina
+| | 31.12.2021. kuna | 31.12.2020. kuna |
+| :--- | :--- | :--- |
+| **Kratkotrajna imovina** | | |
+| Novac i novčani ekvivalenti | 896.473 | 1.296.290 |
+| Potraživanja od nogometnih klubova za transfere igrača | 11.787.967 | 818.886 |
+| Potraživanja od subjekata grupe i ostalih povezanih strana | 20.000 | |
+| Potraživanja od posrednika | 0 | |
+| Potraživanja - ostala | 3.376.260 | 3.322.610 |
+| Porezna imovina | 276.244 | 1.870.846 |
+| Zalihe | | |
+| Ostala kratkotrajna imovina | 766.311 | 28.613 |
+| **Ukupno - Kratkotrajna imovina** | **17.123.255** | **7.337.245** |
+| | | |
+| **Dugotrajna imovina** | | |
+| Materijalna imovina (stalna sredstva) | 994.849 | 1.102.769 |
+| Nematerijalna imovina - igrači | | |
+| Nematerijalna imovina - ostala | 4.455.735 | 4.455.735 |
+| Potraživanja od nogometnih klubova za transfere igrača | | |
+| Potraživanja od subjekata grupe i ostalih povezanih strana | | |
+| Porezna imovina | | |
+| Ulaganja | | |
+| Ostala dugotrajna imovina | | |
+| **Ukupno - Dugotrajna imovina** | **5.450.584** | **5.558.504** |
+| | | |
+| **UKUPNO - IMOVINA** | **22.573.839** | **12.895.749** |
+| | | |
+| **Kratkoročne obveze** | | |
+| Prekoračenja po bankovnim računima | | |
+| Bankovni i ostali zajmovi | | |
+| Obveze prema subjektima grupe i povezanim stranama | | |
+| Obveze prema nogometnim klubovima iz transfera igrača | 1.642.749 | 461.325 |
+| Obveze prema posrednicima | 29.778 | 120.590 |
+| Obveze prema dobavljačima | 3.147.593 | 1.242.407 |
+| Obveze prema zaposlenicima | 1.269.653 | 1.371.104 |
+| Obveze prema državi (porezi i doprinosi) | 181.315 | 255.826 |
+| Obračunati troškovi i odgođeni prihodi | | |
+| Ostale obveze za poreze | | |
+| Ostale kratkoročne obveze | 429.217 | |
+| Kratkoročna rezerviranja | | |
+| **Ukupno - Kratkoročne obveze** | **6.700.305** | **3.451.252** |
+| | | |
+| **Dugoročne obveze** | | |
+| Bankovni i ostali zajmovi | 1.664.994 | 1.829.509 |
+| Obveze prema subjektima grupe i drugim povezanim stranama | 12.398.337 | 12.398.337 |
+| Obveze prema nogometnim klubovima iz transfera igrača | | |
+| Obveze prema posrednicima | | |
+| Obveze prema zaposlenicima | | |
+| Obveze prema državi (porezi i doprinosi) | | |
+| Obračunati troškovi i odgođeni prihodi | | |
+| Ostale obveze za poreze | | |
+| Ostale dugoročne obveze | | |
+| Dugoročna rezerviranja | | |
+| **Ukupno - Dugoročne obveze** | **14.063.331** | **14.227.846** |
+| | | |
+| **Ukupne obveze** | **20.763.636** | **17.679.098** |
+| | | |
+| **Neto imovina/(obveze)** | **1.810.203** | **-4.783.349** |
+| | | |
+| **Kapital i rezerve** | | |
+| Dionički/temeljni kapital | | |
+| Revalorizacijske rezerve | | |
+| Ostale rezerve | | |
+| Zadržana dobit / (gubitak) | -4.783.349 | |
+| Dobit / (gubitak) tekuće godine / razdoblja | 6.593.552 | -4.783.349 |
+| | | |
+| **Ukupno kapital i rezerve** | **1.810.203** | **-4.783.349** |
+| | | |
+| **UKUPNO KAPITAL I OBVEZE** | **22.573.839** | **12.895.749** |
 
-Dugotrajna imovina
-Materijalna imovina (stalna sredstva)
-Nematerijalna imovina - igrači
-Nematerijalna imovina - ostala
-Potraživanja od nogometnih klubova za transfere igrača
-Potraživanja od subjekata grupe i ostalih povezanih strana
-Porezna imovina
-Ulaganja
-Ostala dugotrajna imovina
-Ukupno - Dugotrajna imovina
-
-UKUPNO - IMOVINA
-
-Kratkoročne obveze
-Prekoračenja po bankovnim računima
-Bankovni i ostali zajmovi
-Obveze prema subjektima grupe i povezanim stranama
-Obveze prema nogometnim klubovima iz transfera igrača
-Obveze prema posrednicima
-Obveze prema dobavljačima
-Obveze prema zaposlenicima
-Obveze prema državi (porezi i doprinosi)
-Obračunati troškovi i i odgođeni prihodi
-Ostale obveze za poreze
-Ostale kratkoročne obveze
-Kratkoročna rezerviranja
-Ukupno - Kratkoročne obveze
-
-Dugoročne obveze
-Bankovni i ostali zajmovi
-Obveze prema subjektima grupe i drugim povezanim stranama
-Obveze prema nogometnim klubovima iz transfera igrača
-Obveze prema posrednicima
-Obveze prema zaposlenicima
-Obveze prema državi (porezi i doprinosi)
-Obračunati troškovi i odgođeni prihodi
-Ostale obveze za poreze
-Ostale dugoročne obveze
-Dugoročna rezerviranja
-Ukupno - Dugoročne obveze
-
-Ukupne obveze
-Neto imovina/(obveze)
-
-Kapital i rezerve
-Dionički/temeljni kapital
-Revalorizacijske rezerve
-Ostale rezerve
-Zadržana dobit / (gubitak)
-Dobit / (gubitak) tekuće godine / razdoblja
-
-Ukupno kapital i rezerve
-UKUPNO KAPITAL I OBVEZE
-Financijske izvještaje odobrila je Uprava
-
-Financijske izvještaje u ime upraw&yp
-Nenad Črnko
-
-Pfris i pečat:
-
-Bilanca
-
-31.12.2021. 31.12.2020.
-kuna kuna
-896.473 1.296.290
-11.787.967 818.886
-
-20.000
-
-o
-3.376.260 3.322.610
-276.244 1.870.846
-
-1.102.769
-
-994.849
-
-4.455.735
-
-4455-735
-
-1.642.749 461.325
-29.778 120.590
-3.147.593 1.242.407
-1.269.653 1.371.104
-181.315 255.826
-429.217
-
-1.829.509
-12.398.337
-
-1.664.994
-12.398.337
-
--4.783.349
-
-6.593.552 -4.783.349
-
-30.03.2022.
-
-OK OK
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana **30.03.2022.**  
+Financijske izvještaje u ime uprave potpisuje  
+**Nenad Črnko**  
+OK OK  
+Potpis i pečat:  
+[potpis: Črnko]  
+[pečat: HNK GORICA VELIKA GORICA]  
 
 Financijski kriteriji - BILANCA
 
 --- pág. 9 ---
 
-Naziv izvještajnog subjekta (NK):
-[Hrvatski nogometni klub Gorica
-
 Račun dobiti i gubitka
 
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
+
+### Račun dobiti i gubitka
 za godinu koja završava na dan 31. prosinca 2021.
 
-PRIHODI
-
-Prihodi od ulaznica - Nacionalna natjecanja
-Prihodi od ulaznica - UEFA klupska natjecanja
-
-Prihodi od ulaznica - Godišnje ulaznice
-Prihodi od ulaznica - Članarine
-
-Ostali nerazvrstani prihodi od ulaznica
-Prihodi od ulaznica - ukupno
-
-Prihod od sponzorstva i oglašavanja - Proizvođač opreme
-
-Prihod od sponzorstva i oglašavanja - Glavni sponzor
-
-Prihod od sponzorstva i oglašavanja - Sponzor za stadion
-
-Prihod od sponzorstva i oglašavanja - Reklamni panoi oko terena za igru
-Ostali nerazvrstani prihodi od sponzorstva i oglašavanja
-
-Prihod od sponzorstva i oglašavanja - Ukupno
-
-Prava emitiranja - Nacionalna natjecanja
-Ostali nerazvrstani prihodi od emitiranja
-Prihodi od prava emitiranja - Ukupno
-
-Komercijalni prihodi - Nacionalna natjecanja
-
-Komercijalni prihodi - Prodaja proizvoda
-Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica
-
-Ostali nerazvrstani komercijalni prihodi
-Komercijalni prihodi - Ukupno
-
-Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade
-Uefina klupska natjecanja - solidarne uplate
-
-Uefine nagrade i solidarne uplate - nerazvrstano
-
-Uefine nagrade i solidarne uplate - Ukupno
-
-Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela
-
-Donacije i dotacije ili drugi iznosi od države i lokalne samouprave
-
-Donacije nepovezanih strana
-
-Donacije i doprinosi povezanih strana
-
-Prihodi od nenogometnih djelatnosti
-
-Izvanredni prihodi
-
-Ostali nerazvrstani poslovni prihodi ! Bilješka IX
-
-Ostali poslovni prihodi - Ukupno
-
-Ukupno - Prihodi
+| PRIHODI | Bilješka | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- | :--- |
+| Prihodi od ulaznica - Nacionalna natjecanja | | 87.378 | 155.748 |
+| Prihodi od ulaznica - UEFA klupska natjecanja | | | |
+| Prihodi od ulaznica - Godišnje ulaznice | | 14.100 | 35.700 |
+| Prihodi od ulaznica - Članarine | | 440.980 | 241.760 |
+| Ostali nerazvrstani prihodi od ulaznica | | | |
+| **Prihodi od ulaznica - ukupno** | | **542.458** | **433.208** |
+| | | | |
+| Prihod od sponzorstva i oglašavanja - Proizvođač opreme | | | |
+| Prihod od sponzorstva i oglašavanja - Glavni sponzor | | | |
+| Prihod od sponzorstva i oglašavanja - Sponzor za stadion | | | |
+| Prihod od sponzorstva i oglašavanja - Reklamni pano oko terena za igru | | | |
+| Ostali nerazvrstani prihodi od sponzorstva i oglašavanja | | 1.573.495 | 135.000 |
+| **Prihod od sponzorstva i oglašavanja - Ukupno** | | **1.573.495** | **135.000** |
+| | | | |
+| Prava emitiranja - Nacionalna natjecanja | | 1.384.200 | 1.430.536 |
+| Ostali nerazvrstani prihodi od emitiranja | | | |
+| **Prihodi od prava emitiranja - Ukupno** | | **1.384.200** | **1.430.536** |
+| | | | |
+| Komercijalni prihodi - Nacionalna natjecanja | | 786.000 | |
+| Komercijalni prihodi - Prodaja proizvoda | | 550.152 | 995.862 |
+| Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica | | 20.821 | |
+| Ostali nerazvrstani komercijalni prihodi | | 369.327 | 149.366 |
+| **Komercijalni prihodi - Ukupno** | | **1.726.300** | **1.145.228** |
+| | | | |
+| Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade | | | |
+| Uefina klupska natjecanja - solidarne uplate | | 57.500 | 3.521.583 |
+| Uefine nagrade i solidarne uplate - nerazvrstano | | | |
+| **Uefine nagrade i solidarne uplate - Ukupno** | | **57.500** | **3.521.583** |
+| | | | |
+| Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela | | | |
+| Donacije i dotacije ili drugi iznosi od države i lokalne samouprave | | 3.409.750 | 4.160.000 |
+| Donacije nepovezanih strana | | 541.600 | 330.000 |
+| Donacije i doprinosi povezanih strana | | | |
+| Prihodi od nenogometnih djelatnosti | | | |
+| Izvanredni prihodi | | | |
+| Ostali nerazvrstani poslovni prihodi | ! Bilješka IX | 163.758 | 694.925 |
+| **Ostali poslovni prihodi - Ukupno** | | **4.115.108** | **5.184.925** |
+| | | | |
+| **Ukupno - Prihodi** | | **9.399.061** | **11.850.480** |
 
 Financijski kriteriji - RAČUN DOBITI I GUBITKA
-
-Račun dobiti i gubitka
-
-2021. 2020.
-kuna kuna
-87.378 155.748
-14.100 35.700
-440.980 241.760
-542.458 433.208
-1.573.495 135-000
-1.573.495 135«000
-1.384.200 1.430.536
-1.384.200 1.430.536
-786.000
-550.152 995.862
-20.821
-369.327 149.366
-1.726.300 1.145.228
-57.500 3.521.583
-"57.500 3.521.583
-3.409.750 4.160.000
-541.600 330.000
-163.758 694.925
-4.115.108 5.184.925
-9.399.061. 11.850.480
-
 
 --- pág. 10 ---
 
 Račun dobiti i gubitka
 
-RASHODI
-
-Troškovi prodaje/materijala - Ukupno (0) o
-Plaće igrača (12.981.069) (8.993.968)
-Porezi i doprinosi - igrači (102.294) (94.501)
-Ostali nerazvrstani troškovi primanja igrača (219.642) (162.290)
-Troškovi primanja igrača - ukupno (13.303.005) (9.250.759)
-Plaće ostalih zaposlenika (1.545.025) (793.710)
-Porezi i doprinosi - ostali zaposlenici (750.157) (417.985)
-Ostali nerazvrstani troškovi za primanja ostalih zaposlenika (325.526)
-
-Trošak primanja ostalih zaposlenika - Ukupno (2.620.708) (1.211.695)
-
-Ukupni troškovi primanja zaposlenika (15.923.713) (10.462.454)
-
-Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine (250.760) (248.146)
-Amortizacija i umanjenje ostale nematerijalne imovine (bez registracija igrača)
-
-Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača) (248.146)
-Troškovi održavanja utakmica (3.960.691) (1.898.579)
-Troškovi sponzorstva i oglašavanja (264.158) (543.053)
-Troškovi komercijalnih aktivnosti
-
-Troškovi posrednika (5.124.160) (188.465)
-Troškovi imovine i objekata (835.209) (436.072)
-
-Troškovi za nenogometne djelatnosti
-Izvanredni troškovi
-Ostali nerazvrstani poslovni rashodi ! Bilješka X (6.622.565) (746.222)
-
-(16.806.783) (3.812.391)
-
-Ostali poslovni rashodi - Ukupno
-
-Amortizacija nematerijalne imovine (registracije igrača)
-Umanjenje vrijednosti nematerijalne imovine (registracije igrača)
-
-Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)
-
-Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)
-
-Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije še du pak nd)
-
-troškova i
-
-Troškovi za stjecanje registracija igrača (3.148.845) (3.530.029)
-
-Prihodi od raspolaganja registracijama igrača 33.492.079 4.820.575
-
-Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i PE RA : časa i:
-polaganja reg jama igrača - pi p “30.343.234 : 546
-
-rashoda : a
-
-Dobit (gubitak) od raspolaganja dugotrajnom imovinom 13.367 (4.584.318)
-
-Financijski prihodi 20.365 71.681
-
-Financijski rashodi (201.219) (130.581)
-
-Ukupni neto prihod/rashod od financiranja 4 (180.854) = (58.900)
-
-Ostali neposlovni prihodi
-
-Ostali neposlovni rashodi
-
-Ukupni neposlovni prihodi/rashodi o s o
+| RASHODI | Bilješka | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- | :--- |
+| **Troškovi prodaje/materijala - Ukupno** | | **0** | **0** |
+| Plaće igrača | | (12.981.069) | (8.993.968) |
+| Porezi i doprinosi - igrači | | (102.294) | (94.501) |
+| Ostali nerazvrstani troškovi primanja igrača | | (219.642) | (162.290) |
+| **Troškovi primanja igrača - ukupno** | | (13.303.005) | (9.250.759) |
+| Plaće ostalih zaposlenika | | (1.545.025) | (793.710) |
+| Porezi i doprinosi - ostali zaposlenici | | (750.157) | (417.985) |
+| Ostali nerazvrstani troškovi za primanja ostalih zaposlenika | | (325.526) | |
+| **Trošak primanja ostalih zaposlenika - Ukupno** | | (2.620.708) | (1.211.695) |
+| | | | |
+| **Ukupni troškovi primanja zaposlenika** | | **(15.923.713)** | **(10.462.454)** |
+| | | | |
+| Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine | | (250.760) | (248.146) |
+| Amortizacija i umanjenje ostale nematerijalne imovine (bez registracija igrača) | | | |
+| **Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)** | | **(250.760)** | **(248.146)** |
+| | | | |
+| Troškovi održavanja utakmica | | (3.960.691) | (1.898.579) |
+| Troškovi sponzorstva i oglašavanja | | (264.158) | (543.053) |
+| Troškovi komercijalnih aktivnosti | | | |
+| Troškovi posrednika | | (5.124.160) | (188.465) |
+| Troškovi imovine i objekata | | (835.209) | (436.072) |
+| Troškovi za nenogometne djelatnosti | | | |
+| Izvanredni troškovi | | | |
+| Ostali nerazvrstani poslovni rashodi | ! Bilješka X | (6.622.565) | (746.222) |
+| **Ostali poslovni rashodi - Ukupno** | | **(16.806.783)** | **(3.812.391)** |
+| | | | |
+| **Ukupno - poslovni rashodi (bez registracija igrača)** | | **(32.981.256)** | **(14.522.991)** |
+| | | | |
+| **Poslovni rezultat (bez registracija igrača)** | | **(23.582.195)** | **(2.672.511)** |
+| | | | |
+| *Ispunjava samo izvještajni subjekt koji primjenjuje metodu kapitalizacije troškova registracija igrača* | | | |
+| Amortizacija nematerijalne imovine (registracije igrača) | | | |
+| Umanjenje vrijednosti nematerijalne imovine (registracije igrača) | | | |
+| Dobit od raspolaganja nematerijalnom imovinom (registracije igrača) | | | |
+| Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača) | | | |
+| **Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova** | | **0** | **0** |
+| | | | |
+| *Ispunjava samo izvještajni subjekt koji za registracije igrača primjenjuje metodu prihoda i rashoda* | | | |
+| Troškovi za stjecanje registracija igrača | | (3.148.845) | (3.530.029) |
+| Prihodi od raspolaganja registracijama igrača | | 33.492.079 | 4.820.575 |
+| **Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i rashoda** | | **30.343.234** | **1.290.546** |
+| | | | |
+| **Dobit /(gubitak) od raspolaganja dugotrajnom imovinom** | | **13.367** | **(4.584.318)** |
+| | | | |
+| Financijski prihodi | | 20.365 | 71.681 |
+| Financijski rashodi | | (201.219) | (130.581) |
+| **Ukupni neto prihod/rashod od financiranja** | | **(180.854)** | **(58.900)** |
+| | | | |
+| Ostali neposlovni prihodi | | | |
+| Ostali neposlovni rashodi | | | |
+| **Ukupni neposlovni prihodi/rashodi** | | **0** | **0** |
 
 Financijski kriteriji - RAČUN DOBITI I GUBITKA
 
@@ -592,139 +472,86 @@ Financijski kriteriji - RAČUN DOBITI I GUBITKA
 
 Račun dobiti i gubitka
 
-Porezni prihod/(rashod) o
+| | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- |
+| **Porezni prihod/(rashod)** | | **0** |
+| | | |
+| **Dobit/(gubitak) poslije oporezivanja** | **6.593.552** | **(6.025.183)** |
 
-Dobit/(gubitak) poslije oporezivanja
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana **30.03.2022.**  
+Financijske izvještaje u ime uprave potpisuje  
+**Nenad Črnko**  
 
-Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana 30.03.2022.
-Financijske izvještaje u ime uprave potpisuje
-Nenad Črnko
+Potpis i pečat:  
+[potpis: Črnko]  
+[pečat: HNK GORICA VELIKA GORICA]  
 
-Financijski kriteriji - RAČUN DOBITI | GUBITKA
+Financijski kriteriji - RAČUN DOBITI I GUBITKA
 
 --- pág. 12 ---
 
-Naziv izvještajnog subjekta (NK):
-
-[Hrvatski nogometni klub Gorica
-
 Izvještaj o novčanom toku
 
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
+
+### Izvještaj o novčanom toku
 za godinu koja završava na dan 31. prosinca 2021.
 
-Novčani tokovi od poslovnih aktivnosti (od redovnog poslovanja)
+| | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- |
+| **Novčani tokovi od poslovnih aktivnosti (od redovnog poslovanja)** | | |
+| Gotovinski primici od prihoda od ulaznica | 516.610 | 433.208 |
+| Gotovinski primici od sponzorstva i oglašavanja | 1.415.625 | 125.000 |
+| Gotovinski primici od prava emitiranja | 1.427.750 | 1.430.536 |
+| Gotovinski primici od komercijalnih aktivnosti | 2.455.572 | 1.811.749 |
+| Gotovinski primici od ostalih poslovnih aktivnosti | 47.041.047 | 40.388.217 |
+| Gotovinski izdaci dobavljačima za proizvode i usluge | (9.833.186) | (3.130.305) |
+| Gotovinski izdaci zaposlenicima i u ime zaposlenika | (14.654.060) | (8.623.234) |
+| Gotovinski izdaci prema posrednicima | (5.102.952) | (67.876) |
+| Gotovinski izdaci u vezi s ostalim poslovnim aktivnostima | (47.491.858) | (44.567.157) |
+| **Gotovinski priljev/(odljev) od poslovnih aktivnosti (redovnog poslovanja)** | **(24.225.452)** | **(12.199.862)** |
+| | | |
+| **Novčani tokovi od ulaganja** | | |
+| Gotovinski primici od prodaje registracija igrača | 27.188.547 | 8.565.091 |
+| Gotovinski izdaci za stjecanje registracija igrača | (3.342.912) | (4.668.379) |
+| Gotovinski primici od prodaje dugotrajne imovine | | |
+| Gotovinski izdaci za stjecanje dugotrajne imovine | | |
+| Ostali gotovinski primici/izdaci od/za ulaganja | | |
+| Nerazvrstani gotovinski primici/izdaci od/za ulaganja | | |
+| **Gotovinski priljev/(odljev) od ulaganja** | **23.845.635** | **3.896.712** |
+| | | |
+| **Novčani tokovi od financiranja** | | |
+| Gotovinski primici od pozajmica - dioničari i povezane strane | | 12.360.332 |
+| Gotovinski izdaci za pozajmice - dioničari i povezane strane | (20.000) | (2.976.500) |
+| Gotovinski primici od pozajmica - financijske institucije | | |
+| Gotovinski izdaci za pozajmice - financijske institucije | | |
+| Gotovinski primici od povećanja kapitala | | |
+| Gotovinski izdaci za dividende isplaćene vlasnicima/dioničarima | | |
+| Ostali priljevi/odljevi od/za financiranja | | |
+| Nerazvrstani gotovinski priljevi/odljevi od/za financiranja | | |
+| **Gotovinski priljev/(odljev) od/za financiranja** | **(20.000)** | **9.383.832** |
+| | | |
+| **Neto povećanje/(smanjenje) gotovog novca u izvještajnom razdoblju** | **(399.817)** | **1.080.682** |
 
-Gotovinski primici od prihoda od ulaznica
+#### Poravnanje stavke Novac i novčani ekvivalenti
 
-Gotovinski primici od sponzorstva i oglašavanja
+| | 2021. | 2020. |
+| :--- | :--- | :--- |
+| Preneseno na početku izvještajnog razdoblju (prepisati početno stanje - 2019.) | 1.296.290 | 215.608 |
+| Neto gotovinski priljev/odljev u izvještajnom razdoblju | (399.817) | 1080682 |
+| Novac i novčani ekvivalenti na kraju izvještajnog razdoblja | 896.473 | 1.296.290 |
+| \*PROVJERA S BILANCOM | OK OK | OK OK |
 
-Gotovinski primici od prava emitiranja
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana **30.03.2022.**  
+Financijske izvještaje u ime uprave potpisuje  
+**Nenad Črnko**  
 
-Gotovinski primici od komercijalnih aktivnosti
-Gotovinski primici od ostalih poslovnih aktivnosti
-Gotovinski izdaci dobavljačima za proizvode i usluge
-Gotovinski izdaci zaposlenicima i u ime zaposlenika
-
-Gotovinski izdaci prema posrednicima
-
-Gotovinski izdaci u vezi s ostalim poslovnim aktivnostima
-
-Gotovinski priljev/(odljev) od poslovnih aktivnosti (redovnog poslovanja)
-
-Novčani tokovi od ulaganja
-
-Gotovinski primici od prodaje registracija igrača
-Gotovinski izdaci za stjecanje registracija igrača
-Gotovinski primici od prodaje dugotrajne imovine
-Gotovinski izdaci za stjecanje dugotrajne imovine
-Ostali gotovinski primici/izdaci od/za ulaganja
-Nerazvrstani gotovinski primici/izdaci od/za ulaganja
-
-Gotovinski priljev/(odljev) od ulaganja
-
-Novčani tokovi od financiranja
-
-Gotovinski primici od pozajmica - dioničari i povezane strane
-Gotovinski izdaci za pozajmice - dioničari i povezane strane
-Gotovinski primici od pozajmica - financijske institucije
-Gotovinski izdaci za pozajmice - financijske institucije
-
-Gotovinski primici od povećanja kapitala
-
-Gotovinski izdaci za dividende isplaćene vlasnicima/dioničarima
-
-Ostali priljevilodljevi od/za financiranja
-
-Nerazvrstani gotovinski priljevi/odljevi od/za financiranja
-
-Gotovinski priljev/(odljev) od/za financiranja
-
-Neto povećanje/(smanjenje) gotovog novca u izvještajnom razdoblju
-
-Poravnanje stavke Novac i novčani ekvivalenti
-Preneseno na početku izvještajnog razdoblju (prepisati početno stanje - 2019.)
-
-Neto gotovinski priljev/odljev u izvještajnom razdoblju
-Novac i novčani ekvivalenti na kraju izvještajnog razdoblja
-
-*PROVJERA S BILANCOM
-
-Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana
-
-Financijske izvještaje u
-Nenad Črnko
-
-Ka pečat:
-
-2021.
-kuna
-
-516.610
-1.415.625
-1.427.750
-2.455.572
-
-47.041.047
-(9.833.186)
-(14.654.060)
-(5.102.952)
-(47.491.858)
-
-Izvještaj o novčanom toku
-
-2020.
-kuna
-
-433.208
-125.000
-1.430.536
-1.811.749
-40.388.217
-(3.130.305)
-(8.623.234)
-(67.876)
-(44.567.157)
-
-= (24.225.452) (12.199.862)
-27.188.547 8.565.091
-(3.342.912) (4.668.379)
-
-23.845.635 3.896.712
-12.360.332
-(20.000) (2.976.500)
-(20.000) 9.383.832
-(399.817) | 1.080.682.
-
-2021. 2020.
-215.608
-
-30.03.2022.
+Potpis i pečat:  
+[potpis: Črnko]  
+[pečat: HNK GORICA VELIKA GORICA]  
 
 Financijski kriteriji - IZVJEŠTAJ O NOVČANOM TOKU
-
-OK
-
-OK
 
 --- pág. 13 ---
 
@@ -849,113 +676,47 @@ gubitka unutar financijskih rashoda i prihoda.
 
 --- pág. 16 ---
 
-Naziv izvještajnog subjekta (NK):
-
-[Hrvatski nogometni klub Gorica
-
 Bilješke uz financijske izvještaje I
-1. Dobit/gubitak od raspolaganja dugotrajnom imovinom
 
-Prihod od otuđivanja nematerijalne imovine
-Prihod od otuđivanja materijalne dugotrajne imovine
-Ukupno prihodi
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
 
-Trošak stjecanja nematerijalne imovine
-Trošak stjecanja materijalne dugotrajne imovine
-Ukupno rashodi
+### Bilješke uz financijske izvještaje I
 
-Ukupno
+#### 1. Dobit/gubitak od raspolaganja dugotrajnom imovinom
 
-2. Troškovi financiranja
+| | Bilješke | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- | :--- |
+| Prihod od otuđivanja nematerijalne imovine | | | |
+| Prihod od otuđivanja materijalne dugotrajne imovine | | 609.522 | |
+| **Ukupno prihodi** | | **609.522** | **0** |
+| | | | |
+| Trošak stjecanja nematerijalne imovine | | | 4.455.735 |
+| Trošak stjecanja materijalne dugotrajne imovine | | 596.155 | 128.583 |
+| **Ukupno rashodi** | | **596.155** | **4.584.318** |
+| | | | |
+| **Ukupno** | | **13.367** | **(4.584.318)** |
+| | | OK | OK |
 
-Prihodi od kamata po bankovnim računima i danim kreditima
-Pozitivne tečajne razlike
+#### 2. Troškovi financiranja
 
-Ostali financijski prihodi
-
-Ukupni financijski prihodi
-
-Troškovi kamata na prekoračenja po bankovnim računima i zajmovima
-Troškovi kamata - leasing
-
-Negativne tečajne razlike
-
-Ostali financijski troškovi
-
-Ukupni financijski troškovi
-
-Ukupno neto
-
-Bilješke
-
-Bilješke
+| | Bilješke | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- | :--- |
+| Prihodi od kamata po bankovnim računima i danim kreditima | | 14.780 | 47 |
+| Pozitivne tečajne razlike | | 2.585 | 40.914 |
+| Ostali financijski prihodi | | 3.000 | 30.720 |
+| **Ukupni financijski prihodi** | | **20.365** | **71.681** |
+| | | OK | OK |
+| | | | |
+| Troškovi kamata na prekoračenja po bankovnim računima i zajmovima | | (74.050) | (82.557) |
+| Troškovi kamata - leasing | | (8.700) | (8.445) |
+| Negativne tečajne razlike | | (115.358) | (39.579) |
+| Ostali financijski troškovi | | (3.111) | |
+| **Ukupni financijski troškovi** | | **(201.219)** | **(130.581)** |
+| | | OK | OK |
+| **Ukupno neto** | | **(180.854)** | **(58.900)** |
 
 Financijski kriteriji - BILJEŠKE I
-
-Bilješke uz financijske izvještaje I
-
-2021.
-kuna
-
-609.522
-609.522
-
-596.155
-596.155
-
-13.367
-
-OK
-
-2021.
-kuna
-14.780
-2.585
-3.000
-20.365
-OK
-
-(74.050)
-
-(8.700)
-
-(115.358)
-
-(3.111)
-
-———— (201.219)
-
-OK
-_ (180.854)
-
-2020.
-kuna
-
-4.455:735
-128.583
-
-4.584.318
-
-584.318
-
-OK
-
-2020.
-kuna
-47
-40.914
-30.720
-71.681
-OK
-
-(82.557)
-(8.445)
-(39.579)
-
-(130.581)
-OK
-
-——— (58.900),
 
 --- pág. 17 ---
 
@@ -1092,117 +853,104 @@ Bilješke uz financijske izvještaje Ill
 
 --- pág. 21 ---
 
-Naziv izvještajnog subjekta (NK):
-[Hrvatski nogometni klub Gorica |
-
 Bilješke uz financijske izvještaje IV
 
-8. Nematerijalna imovina
-Bilješke
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
 
-Trošak
+### Bilješke uz financijske izvještaje IV
 
-Na početku razdoblja
-Dodavanja
-Otuđivanja
+#### 8. Nematerijalna imovina
 
-Na kraju razdoblja
+| | Bilješke | Registracije igrača kuna | Ostalo kuna | 2021. Ukupno kuna |
+| :--- | :--- | :--- | :--- | :--- |
+| **Trošak** | | | | |
+| Na početku razdoblja | | | 4.455.735 | 4.455.735 |
+| Dodavanja | | | | |
+| Otuđivanja | | | | |
+| **Na kraju razdoblja** | | | **4.455.735** | **4.455.735** |
+| | | | | |
+| **Akumulirana Amortizacija** | | | | |
+| Na početku razdoblja | | | | |
+| Trošak amortizacije za razdoblje | | | | |
+| Otuđivanja | | | | |
+| **Na kraju razdoblja** | | | | |
+| | | | | |
+| **Sadašnja knjigovodstvena vrijednost** | | | | |
+| Na početku razdoblja | | | 4.455.735 | 4.455.735 |
+| **Na kraju razdoblja** | | | **4.455.735** | **4.455.735** |
+| | | OK | OK | OK |
+| | | OK | OK | OK |
 
-Akumulirana Amortizacija
-
-Na početku razdoblja
-
-Trošak amortizacije za razdoblje
-Otuđivanja
-
-Na kraju razdoblja
-
-Sadašnja knjigovodstvena vrijednost
-Na početku razdoblja
-Na kraju razdoblja
-
-Ovu bilješku odobrila je Uprava | dopustila objavljivanje dana
-
-Nenad Črnko
-
-Bilješke uz financijske izvještaje IV
-
-2021.
-Registracije igrača Ostalo Ukupno
-kuna kuna kuna
-4.455.735 4.455.735
-4455-735 4.455:735
-4.455.735 4.455.735
-4.455-735 4455-735
-OK OK OK
-OK OK OK
-30.03.2022.
+Ovu bilješku odobrila je Uprava i dopustila objavljivanje dana **30.03.2022.**  
+**Nenad Črnko**  
+**Predsjednik HNK Gorica**  
+Potpis i pečat:  
+[potpis: Črnko]  
+[pečat: HNK GORICA VELIKA GORICA]  
 
 Financijski kriteriji - BILJEŠKE IV
 
 --- pág. 22 ---
 
-Naziv izvještajnog subjekta (NK):
-[Hrvatski nogometni klub Gorica
-
 Bilješke uz financijske izvještaje V
-9. Prekoračenja po bankovnim računima i zajmovi
-Prekoračenja po bankovnim računima
 
-Bankovni zajmovi
-Ostali zajmovi
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
 
-Bilješke uz financijske izvještaje V
+### Bilješke uz financijske izvještaje V
+
+#### 9. Prekoračenja po bankovnim računima i zajmovi
+
+| | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- |
+| Prekoračenja po bankovnim računima | 1.150.229 | 1.624.401 |
+| Bankovni zajmovi | 514.765 | 205.108 |
+| Ostali zajmovi | | |
+| | **1.664.994** | **1.829.509** |
+| | OK | OK |
 
 Zajmovi se otplaćuju kako slijedi:
-
 - na zahtjev ili u roku od jedne godine
 - u drugoj godini
-
 - u trećoj do uključivo petoj godini
+- poslije pet godina:
 
-- poslije pet godina
+| | 2021. | 2020. |
+| :--- | :--- | :--- |
+| - poslije pet godina | 1.664.994 | 1.829.509 |
+| | **1.664.994** | **1.829.509** |
+| | OK | OK |
 
-Manje: dospjeli iznos za podmirenje u roku od 12 mjeseci
-(prikazan u tekućim obvezama)
+Manje: dospjeli iznos za podmirenje u roku od 12 mjeseci (prikazan u tekućim obvezama):
 
-Dospjeli iznos za podmirenje poslije 12 mjeseci
+| | 2021. | 2020. |
+| :--- | :--- | :--- |
+| | OK | OK |
 
-10. Obveze prema subjektima grupe i ostalim povezanim
-stranama
+Dospjeli iznos za podmirenje poslije 12 mjeseci:
 
-Obveze prema subjektima grupe (uključujući dioničare)
-Obveze prema ključnim članovima uprave
-Obveze prema ostalim povezanim stranama
+| | 2021. | 2020. |
+| :--- | :--- | :--- |
+| Dospjeli iznos za podmirenje poslije 12 mjeseci | **1.664.994** | **1.829.509** |
+| | OK | OK |
 
-Ukupno
+#### 10. Obveze prema subjektima grupe i ostalim povezanim stranama
 
-Ove bilješke odobrila je Uprava i dopustila objavljivanje dana
+| | 2021. kuna | 2020. kuna |
+| :--- | :--- | :--- |
+| Obveze prema subjektima grupe (uključujući dioničare) | | |
+| Obveze prema ključnim članovima uprave | | |
+| Obveze prema ostalim povezanim stranama | 12.398.337 | 12.398.337 |
+| **Ukupno** | **12.398.337** | **12.398.337** |
+| | OK | OK |
 
-Nenad Črnko
-
-2021. 2020.
-kuna kuna
-1.150.229 1.624.401
-514.765 205.108
-1.664.994 1.829.509
-
-OK OK
-1.664.994 1.829.509
-1.664.994 1.829.509
-
-OK OK
-
-OK OK
-1.664.994 1.829.509
-
-OK OK
-2021. 2020.
-kuna kuna
-12.398.337 12.398.337
-12.398.337 12.398.337
-
-OK OK
+Ove bilješke odobrila je Uprava i dopustila objavljivanje dana **30.03.2022.**  
+**Nenad Črnko**  
+**Predsjednik HNK Gorica**  
+Potpis i pečat:  
+[potpis: Črnko]  
+[pečat: HNK GORICA VELIKA GORICA]  
 
 Financijski kriteriji - BILJEŠKE V
 
@@ -1283,46 +1031,39 @@ kuna
 
 Bilješke uz financijske izvještaje VIII
 
-Naziv izvještajnog subjekta (NK):
-Hrvatski nogometni klub Gorica
-Bilješke uz financijske izvještaje VIII
+**Naziv izvještajnog subjekta (NK):**  
+**Hrvatski nogometni klub Gorica**
 
-13. Transakcije povezanih strana
+### Bilješke uz financijske izvještaje VIII
+
+#### 13. Transakcije povezanih strana
 
 Tijekom godine subjekt je zaključio sljedeće transakcije s povezanim stranama:
 
-Prihodi od prodaje robe/usluga | Troškovi nabave robe/usluga od [Potraživanja od povezanih strana Obveze prema povezanim
-povezanim stranama povezanih strana stranama
+| | Prihodi od prodaje robe/usluga povezanim stranama 2021. | Prihodi od prodaje robe/usluga povezanim stranama 2020. | Troškovi nabave robe/usluga od povezanih strana 2021. | Troškovi nabave robe/usluga od povezanih strana 2020. | Potraživanja od povezanih strana 2021. | Potraživanja od povezanih strana 2020. | Obveze prema povezanim stranama 2021. | Obveze prema povezanim stranama 2021. [2020.] |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Većinski vlasnici** | | | | | | | | |
+| A FAN POINT GORICA D.O.O. | | | | | 20.000 | | | |
+| B | | | | | | | | |
+| C | | | | | | | | |
+| D | | | | | | | | |
+| **Ukupno** | 0 | 0 | 0 | 0 | 20.000 | 0 | 0 | 0 |
+| **Ostale povezane strane** | | | | | | | | |
+| INVESTITOR TOP INVEST | | | | | | | 12.398.337 | 12.398.337 |
+| B | | | | | | | | |
+| C | | | | | | | | |
+| D | | | | | | | | |
+| **Ukupno** | 0 | 0 | 0 | 0 | 0 | 0 | 12.398.337 | 12.398.337 |
+| **Sveukupno** | 0 | 0 | 0 | 0 | 20.000 | 0 | 12.398.337 | 12.398.337 |
 
-hi... ni: 2021. 2020. 2021. 2020. 2021. 2020. 2021. 2021.
+2021. OK OK  
+2020. OK OK  
 
-O
-
-7
-
-NI
-
-12.398
-
-lek
-nN
-O
-00
-bi
-
-.—vrrrm—oroO, om. 20,000|_——— o
-
-a:
-N
-O
-2
-1
-
-2021. 2020.
-Ovu bilješku odobrila je Uprava i dopustila objavljivanje dana ži 30.03.2022. OK OK
-_ OK OK
-
-Nenad Črnko Pa
+Ovu bilješku odobrila je Uprava i dopustila objavljivanje dana **30.03.2022.**  
+**Nenad Črnko**  
+**Predsjednik HNK Gorica**  
+[potpis: Črnko]  
+[pečat: HNK GORICA VELIKA GORICA]  
 
 Financijski kriteriji - BILJEŠKE VIII
 
@@ -1832,47 +1573,23 @@ održanoj 01.03.2022. godine u sastavu kako slijedi:
 
 --- pág. 38 ---
 
-Rb
-
-: Prezime i ime Adresa OIB Trajanje mandata
-1. | Bebić Domagoj Peba 50544191196 13.09.2017.-
-8 12.09.2022.
-2. | Blažinčić Darko lo419 Vani 1 | 54725925118 13.09.2017.-
-12.09.2022.
-3. | Črnko Nenad dO Voko Oo 63378646007 13.09.2017.-
-Ska horica 12.09.2022.
-m . Slavka Kolara 10
-
-a | REĐIJANI KA 10 410 Velika Gorica | 2137206889 12 49.2017.-12.09.2022.
-5. | Hrstić Tvrtko o alo Vala Goca 83821391093 13.09.2017.-
-12.09.2022.
-6. | Ivanuš Renato 10 a Vala Gorca 63187266987 13.09.2017.-
-12.09.2022.
-7. | Japec Kristijan 10.41 oVetika Gorica | 42345052460 13.09.2017.-
-12.09.2022.
-8. | Krlić Igor dapihay 43698758155 13.06.2018.
-12.09.2022.
-9. | Landeka Tomislav Nu pea 04931764026 13.09.2017.-
-12.09.2022.
-10. | Makek Željka nona hapaa 38111730406 13.09.2017.-
-GI 12.09.2022.
-11. | Matić Željko dodou hana “ 19453400682 23.12.2019.-
-. ž 12.09.2022.
-Ksavera Šandora 06.07.2021.-
-12. | Gabelica Filip Đalskog 25; 10 410 V. 99683370939 12.09.2022.
-
-Gorica
-
-13. | Sučec Dario dO IO VETka Go 07966161952 13.09.2017.-
-ka orica 12.09.2022.
-14. | Šimunić Damir 104 DoVe Gorica 77940905496 13.09.2017.-
-12.09.2022.
-15. | Vučur Robert Mate Lovraka 15, | 73318630666 13.09.2017.-
-
-10 410 Velika Gorica
-
-12.09.2022.
-
+| Rb r | Prezime i ime | Adresa | OIB | Trajanje mandata |
+| :--- | :--- | :--- | :--- | :--- |
+| 1. | Bebić Domagoj | Zorkovačka 4<br>10 000 Zagreb | 50544191196 | 13.09.2017.-12.09.2022. |
+| 2. | Blažinčić Darko | Junija Palmotića 5<br>10 410 Velika Gorica | 54725925118 | 13.09.2017.-12.09.2022. |
+| 3. | Črnko Nenad | Osišće 1, Buševec<br>10 410 Velika Gorica | 63378646007 | 13.09.2017.-12.09.2022. |
+| 4. | Debijadi Devi | Slavka Kolara 10<br>10 410 Velika Gorica | 48137206889 | 13.09.2017.-12.09.2022. |
+| 5. | Hrstić Tvrtko | Zvonimirova 9<br>10 410 Velika Gorica | 83821391093 | 13.09.2017.-12.09.2022. |
+| 6. | Ivanuš Renato | Horvatova 47<br>10 410 Velika Gorica | 63187266987 | 13.09.2017.-12.09.2022. |
+| 7. | Japec Kristijan | HBZ 14<br>10 410 Velika Gorica | 42345052460 | 13.09.2017.-12.09.2022. |
+| 8. | Krlić Igor | Posavska 24, Novo Čiče<br>10 410 Velika Gorica | 43698758155 | 13.06.2018.-12.09.2022. |
+| 9. | Landeka Tomislav | Trebnjanska 16<br>10410 Velika Gorica | 04931764026 | 13.09.2017.-12.09.2022. |
+| 10. | Makek Željka | Matice Hrvatske 3<br>10 410 Velika Gorica | 38111730406 | 13.09.2017.-12.09.2022. |
+| 11. | Matić Željko | Cvjetno naselje 18<br>10 410 Velika Gorica | 19453400682 | 23.12.2019.-12.09.2022. |
+| 12. | Gabelica Filip | Ksavera Šandora Đalskog 25; 10 410 V. Gorica | 49683370939 | 06.07.2021.-12.09.2022. |
+| 13. | Sučec Dario | Fabijančićeva 23<br>10 410 Velika Gorica | 07966161952 | 13.09.2017.-12.09.2022. |
+| 14. | Šimunić Damir | Pleška 47c<br>10 410 Velika Gorica | 77940905496 | 13.09.2017.-12.09.2022. |
+| 15. | Vučur Robert | Mate Lovraka 15,<br>10 410 Velika Gorica | 73318630666 | 13.09.2017.-12.09.2022. |
 
 --- pág. 39 ---
 

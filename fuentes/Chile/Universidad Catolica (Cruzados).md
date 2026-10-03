@@ -36,3 +36,37 @@
   A.N.F.P.", y qué compone "Gastos de Operación" (Nota 20), que no tiene desglose disponible en el
   documento.
 
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2021 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2021.pdf` (sourceId `catolica-cl-estados-financieros-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2025 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2025.pdf` (sourceId `catolica-cl-estados-financieros-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2020 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2020.pdf` (sourceId `catolica-cl-estados-financieros-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2019 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2019.pdf` (sourceId `catolica-cl-estados-financieros-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-01): ejercicio 2018 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.pdf` (sourceId `catolica-cl-estados-financieros-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2010 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.pdf` (sourceId `catolica-cl-estados-financieros-2010`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2011 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2011.pdf` (sourceId `catolica-cl-estados-financieros-2011`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2012 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2012.pdf` (sourceId `catolica-cl-estados-financieros-2012`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2013 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2013.pdf` (sourceId `catolica-cl-estados-financieros-2013`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2014 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2014.pdf` (sourceId `catolica-cl-estados-financieros-2014`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2015 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.pdf` (sourceId `catolica-cl-estados-financieros-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2016 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.pdf` (sourceId `catolica-cl-estados-financieros-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2017 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2017.pdf` (sourceId `catolica-cl-estados-financieros-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2022 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.pdf` (sourceId `catolica-cl-estados-financieros-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2023 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2023.pdf` (sourceId `catolica-cl-estados-financieros-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2024 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2024.pdf` (sourceId `catolica-cl-estados-financieros-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2018 desde `Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2018.pdf` (sourceId `catolica-cl-estados-financieros-2018`).

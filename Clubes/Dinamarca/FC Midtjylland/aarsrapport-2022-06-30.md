@@ -498,53 +498,33 @@ the Company to cease to continue as a going
 
 --- pág. 9 ---
 
-Den uafhængige revisors revisionspåtegning
+# Den uafhængige revisors revisionspåtegning
+*Independent Auditor's Report*
 
-Independent Auditor's Report
+concern.
 
-+ Tager vi stilling til den samlede præsentation,
-struktur og indhold af regnskabet, herunder note-
-oplysningerne, samt om regnskabet afspejler de
-underliggende transaktioner og begivenheder på
-en sådan måde, at der gives et retvisende billede
-heraf.
+| | |
+|---|---|
+| • Tager vi stilling til den samlede præsentation, struktur og indhold af regnskabet, herunder noteoplysningerne, samt om regnskabet afspejler de underliggende transaktioner og begivenheder på en sådan måde, at der gives et retvisende billede heraf. | • Evaluate the overall presentation, structure and contents of the Financial Statements, including the disclosures, and whether the Financial Statements represent the underlying transactions and events in a manner that gives a true and fair view. |
 
-Vi kommunikerer med den øverste ledelse om blandt
-andet det planlagte omfang og den tidsmæssige place-
-ring af revisionen samt betydelige revisionsmæssige
-observationer, herunder eventuelle betydelige mang-
-ler i intern kontrol, som vi identificerer under revisio-
-nen.
+| | |
+|---|---|
+| Vi kommunikerer med den øverste ledelse om blandt andet det planlagte omfang og den tidsmæssige placering af revisionen samt betydelige revisionsmæssige observationer, herunder eventuelle betydelige mangler i intern kontrol, som vi identificerer under revisionen. | We communicate with those charged with governance regarding, among other matters, the planned scope and timing of the audit and significant audit findings, including any significant deficiencies in internal control that we identify during our audit. |
 
 Herning, den 28. september 2022
-Herning, 28 September 2022
-PricewaterhouseCoopers
+*Herning, 28 September 2022*
+**PricewaterhouseCoopers**
 Statsautoriseret Revisionspartnerselskab
-CVR-nr. 33 7712 31
+*CVR-nr. 33 77 12 31*
 
 Kim Vorret
-
 statsautoriseret revisor
-
-State Authorised Public Accountant
+*State Authorised Public Accountant*
 mne33256
 
 pwc
 
-concern.
-
-e Evaluate the overall presentation, structure and
-contents of the Financial Statements, including
-the disclosures, and whether the Financial State-
-ments represent the underlying transactions
-and events in a manner that gives a true and fair
-view.
-
-We communicate with those charged with gover-
-nance regarding, among other matters, the planned
-scope and timing of the audit and significant audit
-findings, including any significant deficiencies in in-
-ternal control that we identify during our audit.
+7
 
 --- pág. 10 ---
 
@@ -620,69 +600,36 @@ DK-7430 Ikast
 
 --- pág. 11 ---
 
-Hoved- og nøgletal
-Financial Highlights
+# Hoved- og nøgletal
+*Financial Highlights*
 
 Set over en 5-årig periode kan selskabets udvikling beskrives ved følgende hoved- og nøgletal:
-Seen over a five-year period, the development of the Company is described by the following financial highlights:
+*Seen over a five-year period, the development of the Company is described by the following financial highlights:*
 
-2021/22 2020/21 2019/20 2018/19 2017/18
-TDKK TDKK TDKK TDKK TDKK
+| | 2021/22 TDKK | 2020/21 TDKK | 2019/20 TDKK | 2018/19 TDKK | 2017/18 TDKK |
+|---|---|---|---|---|---|
+| **Hovedtal**<br>*Key figures* | | | | | |
+| **Resultat**<br>*Profit/loss* | | | | | |
+| EBITDA<br>*EBITDA* | 126.035 | 59.377 | 21.095 | 102.315 | 87.202 |
+| Resultat af ordinær primær drift<br>*Operating profit/loss* | -104.710 | -19.870 | -117.597 | -92.255 | -73.833 |
+| Resultat før finansielle poster<br>*Profit/loss before financial income and expenses* | 36.232 | 12.898 | -19.016 | 66.461 | 66.895 |
+| Resultat af finansielle poster<br>*Net financials* | -1.139 | -234 | -507 | -43 | -166 |
+| Årets resultat<br>*Net profit/loss for the year* | 27.197 | 25.316 | -19.523 | 55.769 | 67.562 |
+| **Balance**<br>*Balance sheet* | | | | | |
+| Balancesum<br>*Balance sheet total* | 449.370 | 386.636 | 235.049 | 255.538 | 190.628 |
+| Egenkapital<br>*Equity* | 307.525 | 280.328 | 130.013 | 149.535 | 93.766 |
+| **Pengestrømme**<br>*Cash flows* | | | | | |
+| Pengestrømme fra:<br>*Cash flows from:* | | | | | |
+| - driftsaktivitet<br>*- operating activities* | 9.523 | 34.026 | -79.379 | -66.413 | -14.524 |
+| - investeringsaktivitet<br>*- investing activities* | -33.197 | -13.591 | 49.981 | 124.796 | 12.455 |
+| heraf investering i materielle anlægsaktiver<br>*including investment in property, plant and equipment* | -31.366 | -2.923 | -463 | -1.053 | -1.657 |
+| - finansieringsaktivitet<br>*- financing activities* | -298 | 124.580 | -621 | -1.210 | -14.651 |
+| Årets forskydning i likvider<br>*Change in cash and cash equivalents for the year* | -23.972 | 145.015 | -30.019 | 57.173 | -16.720 |
+| Antal medarbejdere<br>*Number of employees* | 113 | 120 | 115 | 113 | 96 |
 
-Hovedtal
-Key figures
+pwc
 
-Resultat
-Profit/loss
-
-EBITDA 126.035 59.377 21.095 102.315 87.202
-EBITDA
-
-Resultat af ordinær primær drift -104.710 -19.870 -117.597 -92.255 -73.833
-Operating profit/loss
-
-Resultat før finansielle poster 36.232 12.898 -19.016 66.461 66.895
-Profit/loss before financial income and expenses
-
-Resultat af finansielle poster -1.139 -234 -507 -43 -166
-Net financials
-
-Årets resultat 27.197 25.316 -19.523 55.769 67.562
-Net profit/loss for the year
-
-Balance
-Balance sheet
-
-Balancesum 449.370 386.636 235.049 255.538 190.628
-Balance sheet total
-
-Egenkapital 307.525 280.328 130.013 149.535 93.766
-Equity
-
-Pengestrømme
-Cash flows
-
-Pengestrømme fra:
-Cash flows from:
-
-- driftsaktivitet 9.523 34.026 -79.379 -66.413 -14.524
-- operating activities
-- investeringsaktivitet -33.197 -13.591 49.981 124.796 12.455
-- investing activities
-
-heraf investering i materielle anlægsaktiver -31.366 -2.923 -463 -1.053 -1.657
-including investment in property, plant and
-equipment
-- finansieringsaktivitet -298 124.580 -621 -1.210 -14.651
-- financing activities
-
-Årets forskydning i likvider -23.972 145.015 -30.019 57.173 -16.720
-Change in cash and cash equivalents for the year
-
-Antal medarbejdere 113 120 115 113 96
-Number of employees
-
-pwc 9
+9
 
 --- pág. 12 ---
 
@@ -1168,114 +1115,51 @@ after the balance sheet date.
 
 --- pág. 19 ---
 
-Resultatopgørelse 1. juli - 30. juni
-Income Statement 1 July - 30 June
+# Resultatopgørelse 1. juli - 30. juni
+*Income Statement 1 July - 30 June*
 
-Note 2021/22 2020/21
-TDKK TDKK
-Bruttofortjeneste 245.432 207.763
-Gross profit/loss
-Personaleomkostninger 3 -119.397 -148.386
-Staff expenses
-EBITDA 126.035 59.377
-Af- og nedskrivninger af immaterielle og materielle anlægsaktiver 4 -89.803 -46.479
-Depreciation, amortisation and impairment of intangible assets and property, plant
-and equipment
-Resultat før finansielle poster 36.232 12.898
-Profit/loss before financial income and expenses
-Finansielle indtægter 5 286 716
-Financial income
-Finansielle omkostninger 6 -1.425 -950
-Financial expenses
-Resultat før skat 35.093 12.664
-Profit/loss before tax
-Skat af årets resultat 7 -7.896 12.652
-Tax on profit/loss for the year
-Årets resultat 27.197 25.316
-Net profit/loss for the year
-di
-pwc 17
-
---- pág. 20 ---
-
-Balance 30. juni
-Balance Sheet 30 June
-
-Aktiver
-
-Assets
-
-Færdiggjorte udviklingsprojekter
-Completed development projects
-
-Transferrettigheder
-Transfer rights
-
-Immaterielle anlægsaktiver
-Intangible assets
-
-Grunde og bygninger
-Land and buildings
-
-Andre anlæg, driftsmateriel og inventar
-Other fixtures and fittings, tools and equipment
-
-Indretning af lejede lokaler
-Leasehold improvements
-
-Materielle anlægsaktiver under udførelse
-Property, plant and equipment in progress
-Materielle anlægsaktiver
-
-Property, plant and equipment
-
-Andre værdipapirer og kapitalandele
-Other investments
-
-Deposita
-Deposits
-
-Finansielle anlægsaktiver
-
-Fixed asset investments
-
-Anlægsaktiver
-
-Fixed assets
-
-Varebeholdninger
-Inventories
+| | Note | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|---|
+| **Bruttofortjeneste**<br>*Gross profit/loss* | | **245.432** | **207.763** |
+| Personaleomkostninger<br>*Staff expenses* | 3 | -119.397 | -148.386 |
+| **EBITDA** | | **126.035** | **59.377** |
+| Af- og nedskrivninger af immaterielle og materielle anlægsaktiver<br>*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment* | 4 | -89.803 | -46.479 |
+| **Resultat før finansielle poster**<br>*Profit/loss before financial income and expenses* | | **36.232** | **12.898** |
+| Finansielle indtægter<br>*Financial income* | 5 | 286 | 716 |
+| Finansielle omkostninger<br>*Financial expenses* | 6 | -1.425 | -950 |
+| **Resultat før skat**<br>*Profit/loss before tax* | | **35.093** | **12.664** |
+| Skat af årets resultat<br>*Tax on profit/loss for the year* | 7 | -7.896 | 12.652 |
+| **Årets resultat**<br>*Net profit/loss for the year* | | **27.197** | **25.316** |
 
 pwc
 
-Note 2022 2021
-TDKK TDKK
+17
 
-30 212
+--- pág. 20 ---
 
-119.034 106.707
+# Balance 30. juni
+*Balance Sheet 30 June*
 
-8 119.064 106.919
+## Aktiver
+*Assets*
 
-2.770 2.889
+| | Note | 2022 TDKK | 2021 TDKK |
+|---|---|---|---|
+| Færdiggjorte udviklingsprojekter<br>*Completed development projects* | | 30 | 212 |
+| Transferrettigheder<br>*Transfer rights* | | 119.034 | 106.707 |
+| **Immaterielle anlægsaktiver**<br>*Intangible assets* | 8 | **119.064** | **106.919** |
+| Grunde og bygninger<br>*Land and buildings* | | 2.770 | 2.889 |
+| Andre anlæg, driftsmateriel og inventar<br>*Other fixtures and fittings, tools and equipment* | | 6.953 | 5.650 |
+| Indretning af lejede lokaler<br>*Leasehold improvements* | | 753 | 407 |
+| Materielle anlægsaktiver under udførelse<br>*Property, plant and equipment in progress* | | 36.419 | 2.033 |
+| **Materielle anlægsaktiver**<br>*Property, plant and equipment* | 9 | **46.895** | **10.979** |
+| Andre værdipapirer og kapitalandele<br>*Other investments* | | 31 | 31 |
+| Deposita<br>*Deposits* | | 669 | 558 |
+| **Finansielle anlægsaktiver**<br>*Fixed asset investments* | 10 | **700** | **589** |
+| **Anlægsaktiver**<br>*Fixed assets* | | **166.659** | **118.487** |
+| **Varebeholdninger**<br>*Inventories* | | **2.036** | **1.778** |
 
-6.953 5.650
-
-753 407
-
-36.419 2.033
-
-9 46.895 10.979
-
-31 31
-
-669 558
-
-10 700 589
-
-166.659 118.487
-
-2.036 1.778
+pwc
 
 18
 
@@ -1329,106 +1213,34 @@ TDKK TDKK
 
 --- pág. 22 ---
 
-Balance 30. juni
-Balance Sheet 30 June
+# Balance 30. juni
+*Balance Sheet 30 June*
 
-Passiver
-Liabilities and equity
+## Passiver
+*Liabilities and equity*
 
-Selskabskapital
-Share capital
-
-Reserve for udviklingsomkostninger
-Reserve for development costs
-
-Overført resultat
-Retained earnings
-
-Egenkapital
-Equity
-
-Gæld til realkreditinstitutter
-Mortgage loans
-
-Leasingforpligtelser
-Lease obligations
-
-Anden gæld
-Other payables
-
-Langfristede gældsforpligtelser
-Long-term debt
-
-Gæld til realkreditinstitutter
-Mortgage loans
-
-Leasingforpligtelser
-Lease obligations
-
-Modtagne forudbetalinger fra kunder
-Prepayments received from customers
-
-Leverandører af varer og tjenesteydelser
-Trade payables
-
-Selskabsskat
-Corporation tax
-
-Anden gæld
-Other payables
-
-Periodeafgrænsningsposter
-Deferred income
-
-Kortfristede gældsforpligtelser
-Short-term debt
-
-Gældsforpligtelser
-Debt
-
-Passiver
-Liabilities and equity
+| | Note | 2022 TDKK | 2021 TDKK |
+|---|---|---|---|
+| Selskabskapital<br>*Share capital* | | 38.737 | 38.737 |
+| Reserve for udviklingsomkostninger<br>*Reserve for development costs* | | 23 | 165 |
+| Overført resultat<br>*Retained earnings* | | 268.765 | 241.426 |
+| **Egenkapital**<br>*Equity* | | **307.525** | **280.328** |
+| Gæld til realkreditinstitutter<br>*Mortgage loans* | | 431 | 642 |
+| Leasingforpligtelser<br>*Lease obligations* | | 0 | 23 |
+| Anden gæld<br>*Other payables* | | 35.931 | 30.806 |
+| **Langfristede gældsforpligtelser**<br>*Long-term debt* | 15 | **36.362** | **31.471** |
+| Gæld til realkreditinstitutter<br>*Mortgage loans* | 15 | 205 | 197 |
+| Leasingforpligtelser<br>*Lease obligations* | 15 | 24 | 96 |
+| Modtagne forudbetalinger fra kunder<br>*Prepayments received from customers* | | 0 | 868 |
+| Leverandører af varer og tjenesteydelser<br>*Trade payables* | | 20.957 | 7.976 |
+| Selskabsskat<br>*Corporation tax* | | 3.871 | 0 |
+| Anden gæld<br>*Other payables* | 15 | 62.362 | 47.175 |
+| Periodeafgrænsningsposter<br>*Deferred income* | | 18.064 | 18.525 |
+| **Kortfristede gældsforpligtelser**<br>*Short-term debt* | | **105.483** | **74.837** |
+| **Gældsforpligtelser**<br>*Debt* | | **141.845** | **106.308** |
+| **Passiver**<br>*Liabilities and equity* | | **449.370** | **386.636** |
 
 pwc
-
-Note 2022 2021
-TDKK TDKK
-
-38.737 38.737
-
-23 165
-
-268.765 241.426
-
-307.525 280.328
-
-431 642
-
-0 23
-
-35.931 30.806
-
-15 36.362 31.471
-
-15 205 197
-
-15 24 96
-
-0 868
-
-20.957 7.976
-
-3.871 0
-
-15 62.362 47.175
-
-18.064 18.525
-
-105.483 74.837
-
-141.845 106.308
-
-449.370 386.636
 
 20
 
@@ -1474,114 +1286,49 @@ Note
 
 --- pág. 24 ---
 
-Egenkapitalopgørelse
-Statement of Changes in Equity
+# Egenkapitalopgørelse
+*Statement of Changes in Equity*
 
-Reserve for
-
-udviklings- Overført
-Selskabskapital == omkostninger resultat I alt
-Share capital Reserve for Retained earnings Total
-development
-costs
-TDKK TDKK TDKK TDKK
-Egenkapital 1. juli 38.737 165 241.426 280.328
-Equity at 1 July
-Årets af- og nedskrivning 0 -142 142 0
-Depreciation, amortisation and impairment for the
-year
-Årets resultat 0 0 27.197 27.197
-Net profit/loss for the year
-Egenkapital 30. juni 38.737 23 268.765 307.525
-Equity at 30 June
-HE
-pwc 22
-
---- pág. 25 ---
-
-Pengestrømsopgørelse 1. juli - 30. juni
-Cash Flow Statement 1 July - 30 June
-
-Årets resultat
-
-Net profit/loss for the year
-Reguleringer
-Adjustments
-
-Ændring i driftskapital
-Change in working capital
-
-Pengestrømme fra drift før finansielle poster
-Cash flows from operating activities before financial income and expenses
-
-Renteindbetalinger og lignende
-Financial income
-
-Renteudbetalinger og lignende
-Financial expenses
-
-Pengestrømme fra ordinær drift
-Cash flows from ordinary activities
-
-Betalt selskabsskat
-Corporation tax paid
-
-Pengestrømme fra driftsaktivitet
-Cash flows from operating activities
-
-Køb af immaterielle anlægsaktiver
-Purchase of intangible assets
-
-Køb af materielle anlægsaktiver
-Purchase of property, plant and equipment
-
-Køb af finansielle anlægsaktiver m.v.
-Fixed asset investments made etc
-
-Salg af immaterielle anlægsaktiver
-Sale of intangible assets
-
-Ændring i andre tilgodehavender
-Change in other receivables
-
-Pengestrømme fra investeringsaktivitet
-Cash flows from investing activities
-
-Tilbagebetaling af gæld til realkreditinstitutter
-Repayment of mortgage loans
-
-Nedbringelse af leasingforpligtelser
-Reduction of lease obligations
-
-Kontant kapitalforhøjelse
-Cash capital increase
-
-Pengestrømme fra finansieringsaktivitet
-Cash flows from financing activities
+| | Selskabskapital<br>*Share capital*<br>TDKK | Reserve for udviklingsomkostninger<br>*Reserve for development costs*<br>TDKK | Overført resultat<br>*Retained earnings*<br>TDKK | I alt<br>*Total*<br>TDKK |
+|---|---|---|---|---|
+| Egenkapital 1. juli<br>*Equity at 1 July* | 38.737 | 165 | 241.426 | 280.328 |
+| Årets af- og nedskrivning<br>*Depreciation, amortisation and impairment for the year* | 0 | -142 | 142 | 0 |
+| Årets resultat<br>*Net profit/loss for the year* | 0 | 0 | 27.197 | 27.197 |
+| **Egenkapital 30. juni**<br>*Equity at 30 June* | **38.737** | **23** | **268.765** | **307.525** |
 
 pwc
 
-Note 2021/22 2020/21
-TDKK TDKK
-27.197 25.316
-16 -38.092 8.846
-17 22.375 98
-11.480 34.260
-286 716
--1.425 -950
-10.341 34.026
--818 0
-9.523 34.026
--95.297 -8.772
--31.366 -2.923
--111 -15
-51.029 40.667
-42.548 -42.548
--33.197 -13.591
--203 -194
--95 -226
-0 125.000
--298 124.580
+22
+
+--- pág. 25 ---
+
+# Pengestrømsopgørelse 1. juli - 30. juni
+*Cash Flow Statement 1 July - 30 June*
+
+| | Note | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|---|
+| Årets resultat<br>*Net profit/loss for the year* | | 27.197 | 25.316 |
+| Reguleringer<br>*Adjustments* | 16 | -38.092 | 8.846 |
+| Ændring i driftskapital<br>*Change in working capital* | 17 | 22.375 | 98 |
+| **Pengestrømme fra drift før finansielle poster**<br>*Cash flows from operating activities before financial income and expenses* | | **11.480** | **34.260** |
+| Renteindbetalinger og lignende<br>*Financial income* | | 286 | 716 |
+| Renteudbetalinger og lignende<br>*Financial expenses* | | -1.425 | -950 |
+| **Pengestrømme fra ordinær drift**<br>*Cash flows from ordinary activities* | | **10.341** | **34.026** |
+| Betalt selskabsskat<br>*Corporation tax paid* | | -818 | 0 |
+| **Pengestrømme fra driftsaktivitet**<br>*Cash flows from operating activities* | | **9.523** | **34.026** |
+| Køb af immaterielle anlægsaktiver<br>*Purchase of intangible assets* | | -95.297 | -8.772 |
+| Køb af materielle anlægsaktiver<br>*Purchase of property, plant and equipment* | | -31.366 | -2.923 |
+| Køb af finansielle anlægsaktiver m.v.<br>*Fixed asset investments made etc* | | -111 | -15 |
+| Salg af immaterielle anlægsaktiver<br>*Sale of intangible assets* | | 51.029 | 40.667 |
+| Ændring i andre tilgodehavender<br>*Change in other receivables* | | 42.548 | -42.548 |
+| **Pengestrømme fra investeringsaktivitet**<br>*Cash flows from investing activities* | | **-33.197** | **-13.591** |
+| Tilbagebetaling af gæld til realkreditinstitutter<br>*Repayment of mortgage loans* | | -203 | -194 |
+| Nedbringelse af leasingforpligtelser<br>*Reduction of lease obligations* | | -95 | -226 |
+| Kontant kapitalforhøjelse<br>*Cash capital increase* | | 0 | 125.000 |
+| **Pengestrømme fra finansieringsaktivitet**<br>*Cash flows from financing activities* | | **-298** | **124.580** |
+
+pwc
+
 23
 
 --- pág. 26 ---
@@ -1664,121 +1411,83 @@ Reference is made to note 2 — special items.
 
 --- pág. 28 ---
 
-Noter til årsregnskabet
-Notes to the Financial Statements
+# Noter til årsregnskabet
+*Notes to the Financial Statements*
 
-pwc
+## 2 Særlige poster
+*Special items*
 
-Særlige poster
-Special items
+FC Midtjylland har indregnet et forventet tilskud fra kompensationsordninger under Andre driftsindtægter på TDKK 3.935 for 2021/22 og TDKK 7.244 for 2020/21. Tilskuddet vedrører både kompensation for faste omkostninger, større arrangementer og lønkompensation.
+*FC Midtjylland has recognized an expected grant from compensation plans in other operating income at DKK 3,935k for 2021/22 and DKK 7,244k. for 2020/21. The grant includes compensation for fixed costs, major events and salary pay.*
 
-FC Midtjylland har indregnet et forventet tilskud fra kompensationsordninger under Andre driftsindtægter på
-TDKK 3.935 for 2021/22 og TDKK 7.244 for 2020/21. Tilskuddet vedrører både kompensation for faste
-omkostninger, større arrangementer og lønkompensation.
-
-FC Midtjylland has recognized an expected grant from compensation plans in other operating income at DKK 3,935k for
-
-2021/22 and DKK 7,244k. for 2020/21. The grant includes compensation for fixed costs, major events and salary pay.
-
-Den indregnede kompensation vedrører både modtagne og forventede tilskud, baseret på de, på regnskabsaf-
-læggelsestidspunktet, kendte regler og vejledninger.
-The recognized compensation includes received and expected grants based on the rules and guidelines in place at the
-
-balance sheet date.
+Den indregnede kompensation vedrører både modtagne og forventede tilskud, baseret på de, på regnskabsaflæggelsestidspunktet, kendte regler og vejledninger.
+*The recognized compensation includes received and expected grants based on the rules and guidelines in place at the balance sheet date.*
 
 Ledelsen forventer, at de indregnede tilskud modtages efter endt sagsbehandling af myndighederne.
-Management expects to receive the recognized grants after the applications has been finalized by the Authorities.
+*Management expects to receive the recognized grants after the applications has been finalized by the Authorities.*
 
-2021/22 2020/21
-TDKK TDKK
+## 3 Personaleomkostninger
+*Staff expenses*
 
-Personaleomkostninger
-Staff expenses
-Lønninger 112.040 141.447
-Wages and salaries
-Pensioner 4.630 4.695
-Pensions
-Andre omkostninger til social sikring 2.727 2.244
-Other social security expenses
+| | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|
+| Lønninger<br>*Wages and salaries* | 112.040 | 141.447 |
+| Pensioner<br>*Pensions* | 4.630 | 4.695 |
+| Andre omkostninger til social sikring<br>*Other social security expenses* | 2.727 | 2.244 |
+| | **119.397** | **148.386** |
+| Heraf udgør vederlag til direktion og bestyrelse:<br>*Including remuneration to the Executive Board and Board of Directors of:* | | |
+| Direktion<br>*Executive Board* | 7.049 | 5.857 |
+| Bestyrelse<br>*Supervisory Board* | 150 | 150 |
+| ***Including remuneration to the Executive Board and Board of Directors*** | **7.199** | **6.007** |
+| **Gennemsnitligt antal beskæftigede medarbejdere**<br>***Average number of employees*** | **113** | **120** |
 
-119.397 148.386
-Heraf udgør vederlag til direktion og bestyrelse:
-Including remuneration to the Executive Board and Board of Directors of:
-Direktion 7.049 5.857
-Executive Board
-Bestyrelse 150 150
-Supervisory Board
-
-7.199 6.007
-
-Including remuneration to the Executive Board and Board of Directors
-Gennemsnitligt antal beskæftigede medarbejdere 113 120
-
-Average number of employees
+pwc
 
 26
 
 --- pág. 29 ---
 
-Noter til årsregnskabet
-Notes to the Financial Statements
+# Noter til årsregnskabet
+*Notes to the Financial Statements*
+
+## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver
+*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment*
+
+| | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|
+| Afskrivninger af immaterielle anlægsaktiver<br>*Amortisation of intangible assets* | 60.412 | 43.866 |
+| Afskrivninger af materielle anlægsaktiver<br>*Depreciation of property, plant and equipment* | 3.262 | 2.613 |
+| Nedskrivninger af immaterielle anlægsaktiver<br>*Impairment of intangible assets* | 26.129 | 0 |
+| | **89.803** | **46.479** |
+
+## 5 Finansielle indtægter
+*Financial income*
+
+| | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|
+| Andre finansielle indtægter<br>*Other financial income* | 286 | 716 |
+| | **286** | **716** |
+
+## 6 Finansielle omkostninger
+*Financial expenses*
+
+| | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|
+| Andre finansielle omkostninger<br>*Other financial expenses* | 1.185 | 598 |
+| Kursreguleringer omkostninger<br>*Exchange adjustments, expenses* | 240 | 352 |
+| | **1.425** | **950** |
+
+## 7 Skat af årets resultat
+*Tax on profit/loss for the year*
+
+| | 2021/22 TDKK | 2020/21 TDKK |
+|---|---|---|
+| Årets aktuelle skat<br>*Current tax for the year* | 4.689 | 0 |
+| Årets udskudte skat<br>*Deferred tax for the year* | 3.207 | -12.652 |
+| | **7.896** | **-12.652** |
 
 pwc
 
-Af- og nedskrivninger af immaterielle og materielle
-anlægsaktiver
-
-Depreciation, amortisation and impairment of intangible assets and
-property, plant and equipment
-
-Afskrivninger af immaterielle anlægsaktiver
-Amortisation of intangible assets
-
-Afskrivninger af materielle anlægsaktiver
-Depreciation of property, plant and equipment
-
-Nedskrivninger af immaterielle anlægsaktiver
-Impairment of intangible assets
-
-Finansielle indtægter
-Financial income
-
-Andre finansielle indtægter
-Other financial income
-
-Finansielle omkostninger
-Financial expenses
-
-Andre finansielle omkostninger
-Other financial expenses
-
-Kursreguleringer omkostninger
-Exchange adjustments, expenses
-
-Skat af årets resultat
-Tax on profit/loss for the year
-
-Årets aktuelle skat
-Current tax for the year
-
-Årets udskudte skat
-Deferred tax for the year
-
-2021/22 2020/21
-TDKK TDKK
-
-60.412 43.866
-3.262 2.613
-26.129 0
-89.803 46.479
-286 716
-286 716
-1.185 598
-240 352
-1.425 950
-4.689 0
-3.207 -12.652
-7.896 -12.652
 27
 
 --- pág. 30 ---
@@ -1922,59 +1631,31 @@ TDKK TDKK TDKK TDKK TDKK
 
 --- pág. 32 ---
 
-Noter til årsregnskabet
-Notes to the Financial Statements
+# Noter til årsregnskabet
+*Notes to the Financial Statements*
 
-10 Finansielle anlægsaktiver
+## 10 Finansielle anlægsaktiver
+*Fixed asset investments*
 
-11
+| | Andre værdipapirer og kapitalandele<br>*Other investments*<br>TDKK | Deposita<br>*Deposits*<br>TDKK |
+|---|---|---|
+| Kostpris 1. juli<br>*Cost at 1 July* | 31 | 669 |
+| Kostpris 30. juni<br>*Cost at 30 June* | 31 | 669 |
+| **Regnskabsmæssig værdi 30. juni**<br>***Carrying amount at 30 June*** | **31** | **669** |
 
-12
+## 11 Andre tilgodehavender
+*Other receivables*
+
+Andre tilgodehavender består i alt væsentlighed af tilgodehavende transfer. Af de samlede andre tilgodehavender forfalder TDKK 90.548 til betaling mere end 1 år efter regnskabsårets udløb.
+*Other receivables consist essentially of transfer receivables. TDKK 90.548 of the receivables fall due for payment more than 1 year after year end.*
+
+## 12 Periodeafgrænsningsposter
+*Prepayments*
+
+Periodeafgrænsningsposter udgøres af forudbetalte omkostninger vedrørende scouts, husleje, forsikringspræmier, abonnementer og renter.
+*Prepayments comprise of prepaid expenses concerning scouts, rent, insurance premiums, subscriptions and interest.*
 
 pwc
-
-Fixed asset investments
-
-Kostpris 1. juli
-Cost at 1 July
-
-Kostpris 30. juni
-Cost at 30 June
-
-Regnskabsmæssig værdi 30. juni
-Carrying amount at 30 June
-
-Andre tilgodehavender
-
-Other receivables
-
-Andre tilgodehavender består i alt væsentlighed af tilgodehavende transfer. Af de samlede andre
-
-Andre værdipa-
-pirer og kapital-
-
-andele Deposita
-Other Deposits
-investments
-TDKK TDKK
-31 669
-31 669
-31 669
-
-tilgodehavender forfalder TDKK 90.548 til betaling mere end 1 år efter regnskabsårets udløb.
-
-Other receivables consist essentially of transfer receivables. TDKK 90.548 of the receivables fall due for payment more than 1
-
-year after year end.
-
-Periodeafgrænsningsposter
-Prepayments
-
-Periodeafgrænsningsposter udgøres af forudbetalte omkostninger vedrørende scouts, husleje,
-
-forsikringspræmier, abonnementer og renter.
-
-Prepayments comprise of prepaid expenses concerning scouts, rent, insurance premiums, subscriptions and interest.
 
 30
 
@@ -2026,50 +1707,39 @@ after 30 June 2022, as well as participation in European group stages.
 
 --- pág. 34 ---
 
-Noter til årsregnskabet
-Notes to the Financial Statements
+# Noter til årsregnskabet
+*Notes to the Financial Statements*
 
-15 Langfristede gældsforpligtelser
-Long-term debt
+## 15 Langfristede gældsforpligtelser
+*Long-term debt*
 
-Afdrag, der forfalder inden for 1 år, er opført under kortfristede gældsforpligtelser. Øvrige forpligtelser er
-indregnet under langfristede gældsforpligtelser.
-Payments due within 1 year are recognised in short-term debt. Other debt is recognised in long-term debt.
+Afdrag, der forfalder inden for 1 år, er opført under kortfristede gældsforpligtelser. Øvrige forpligtelser er indregnet under langfristede gældsforpligtelser.
+*Payments due within 1 year are recognised in short-term debt. Other debt is recognised in long-term debt.*
 
 Gældsforpligtelserne forfalder efter nedenstående orden:
-The debt falls due for payment as specified below:
+*The debt falls due for payment as specified below:*
 
-2022 2021
-TDKK TDKK
-Gæld til realkreditinstitutter
-Mortgage loans
-Mellem 1 og 5 år 431 642
-Between 1 and 5 years
-Langfristet del 431 642
-Long-term part
-Inden for 1 år 205 197
-Within 1 year
-636 839
-Leasingforpligtelser
-Lease obligations
-Mellem 1 og 5 år 0 23
-Between 1 and 5 years
-Langfristet del 0 23
-Long-term part
-Inden for 1 år 24 96
-Within 1 year
-24 119
-Anden gæld
-Other payables
-Mellem 1 og 5 år 35.931 30.806
-Between 1 and 5 years
-Langfristet del 35.931 30.806
-Long-term part
-Øvrig kortfristet gæld 62.362 47.175
-Other short-term payables
-98.293 77.981
+| | 2022 TDKK | 2021 TDKK |
+|---|---|---|
+| **Gæld til realkreditinstitutter**<br>***Mortgage loans*** | | |
+| Mellem 1 og 5 år<br>*Between 1 and 5 years* | 431 | 642 |
+| Langfristet del<br>*Long-term part* | 431 | 642 |
+| Inden for 1 år<br>*Within 1 year* | 205 | 197 |
+| | **636** | **839** |
+| **Leasingforpligtelser**<br>***Lease obligations*** | | |
+| Mellem 1 og 5 år<br>*Between 1 and 5 years* | 0 | 23 |
+| Langfristet del<br>*Long-term part* | 0 | 23 |
+| Inden for 1 år<br>*Within 1 year* | 24 | 96 |
+| | **24** | **119** |
+| **Anden gæld**<br>***Other payables*** | | |
+| Mellem 1 og 5 år<br>*Between 1 and 5 years* | 35.931 | 30.806 |
+| Langfristet del<br>*Long-term part* | 35.931 | 30.806 |
+| Øvrig kortfristet gæld<br>*Other short-term payables* | 62.362 | 47.175 |
+| | **98.293** | **77.981** |
 
-pwc 32
+pwc
+
+32
 
 --- pág. 35 ---
 
@@ -2127,67 +1797,48 @@ Change in trade payables, etc
 
 --- pág. 36 ---
 
-Noter til årsregnskabet
-Notes to the Financial Statements
+# Noter til årsregnskabet
+*Notes to the Financial Statements*
 
-18 Eventualposter og øvrige økonomiske forpligtelser
+## 18 Eventualposter og øvrige økonomiske forpligtelser
+*Contingent assets, liabilities and other financial obligations*
 
-pwc
-
-Contingent assets, liabilities and other financial obligations
-
-Pant og sikkerhedsstillelse
-Charges and security
+**Pant og sikkerhedsstillelse**
+***Charges and security***
 
 Følgende aktiver er stillet til sikkerhed for realkreditinstitutter:
-The following assets have been placed as security with mortgage credit institutes:
+*The following assets have been placed as security with mortgage credit institutes:*
 
-Grunde og bygninger med en regnskabsmæssig værdi på
-Land and buildings with a carrying amount of
+| | 2022 TDKK | 2021 TDKK |
+|---|---|---|
+| Grunde og bygninger med en regnskabsmæssig værdi på<br>*Land and buildings with a carrying amount of* | 2.770 | 2.889 |
 
 Følgende aktiver er stillet til sikkerhed for bankforbindelser:
-The following assets have been placed as security with bankers
+*The following assets have been placed as security with bankers*
 
-Ejerpantebreve på i alt TDKK 800, der giver pant i grunde og bygninger til
-en samlet regnskabsmæssig værdi af
+| | 2022 TDKK | 2021 TDKK |
+|---|---|---|
+| Ejerpantebreve på i alt TDKK 800, der giver pant i grunde og bygninger til en samlet regnskabsmæssig værdi af<br>*Mortgage deeds registered to the mortgagor totalling TDKK 800, providing security on land and buildings as well as other property, plant and equipment at a total carrying amount of* | 2.770 | 2.889 |
 
-Mortgage deeds registered to the mortgagor totalling TDKK 800, providing security
-on land and buildings as well as other property, plant and equipment at a total
-carrying amount of
+**Leje- og leasingforpligtelser**
+***Rental and lease obligations***
 
-Leje- og leasingforpligtelser
-Rental and lease obligations
+Leasingforpligtelser fra operationel leasing. Samlede fremtidige leasingydelser:
+*Lease obligations under operating leases. Total future lease payments:*
 
-Leasingforpligtelser fra operationel leasing. Samlede fremtidige
-leasingydelser:
-Lease obligations under operating leases. Total future lease payments:
+| | 2022 TDKK | 2021 TDKK |
+|---|---|---|
+| Inden for 1 år<br>*Within 1 year* | 1.509 | 814 |
+| Mellem 1 og 5 år<br>*Between 1 and 5 years* | 693 | 1.168 |
+| | **2.202** | **1.982** |
 
-Inden for 1 år
+| | 2022 TDKK | 2021 TDKK |
+|---|---|---|
+| Lejeforpligtelser, uopsigelighedsperiode 3 mdr.<br>*Lease obligations, period of non-terminability 3 months* | 535 | 512 |
+| Lejeforpligtelser, uopsigelighedsperiode 18 mdr.<br>*Lease obligations, period of non-terminability 18 months* | 895 | 1.492 |
+| Lejeforpligtelser, uopsigelighedsperiode 264 mdr.<br>*Lease obligations, period of non-terminability 264 months* | 66.524 | 68.036 |
 
-Within 1 year
-
-Mellem 1 og 5 år
-Between 1 and 5 years
-
-Lejeforpligtelser, uopsigelighedsperiode 3 mdr.
-Lease obligations, period of non-terminability 3 months
-
-Lejeforpligtelser, uopsigelighedsperiode 18 mdr.
-Lease obligations, period of non-terminability 18 months
-
-Lejeforpligtelser, uopsigelighedsperiode 264 mdr.
-Lease obligations, period of non-terminability 264 months
-
-2022 2021
-TDKK TDKK
-2.770 2.889
-2.770 2.889
-1.509 814
-693 1.168
-2.202 1.982
-535 512
-895 1.492
-66.524 68.036
+pwc
 
 34
 

@@ -716,29 +716,28 @@ Codes Boekjaar Vorig boekjaar |
 
 --- pág. 11 ---
 
-Nr. BE 0668.426.703 VOL 6.2.4
-Codes Boekjaar Vorig boekjaar |
-Goodwill
-Aanschaffingswaarde per einde van het boekjaar 8053P XXXXKKKKKK 250.000 |
-Mutaties tijdens het boekjaar
-Aanschaffingen, met inbegrip van de geproduceerde vaste activa 8023
-Overdrachten en buitengebruikstellingen 8033
-Overboekingen van een post naar een andere (+)/(-) [ 8043
-Aanschaffingswaarde per einde van het boekjaar 8053 250.000
-Afschrijvingen en waardeverminderingen per einde van het
-boekjaar 8123P p000, 00,00 0,04 50.000
-Mutaties tijdens het boekjaar
-Geboekt 8073 50.000
-Teruggenomen 8083
-Verworven van derden 8093
-Afgeboekt na overdrachten en buitengebruikstellingen 8103
-Overgeboekt van een post naar een andere (+)/(-) [ 8113
-Afschrijvingen en waardeverminderingen per einde van het
-boekjaar 8123 100.000
-Nettoboekwaarde per einde van het boekjaar 212 150.000
+Nr. BE 0668.426.703 | VOL 6.2.4
+
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **Goodwill** | | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8053P | XXXXXXXXXX | 250.000 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Aanschaffingen, met inbegrip van de geproduceerde vaste activa | 8023 | | |
+| Overdrachten en buitengebruikstellingen | 8033 | | |
+| Overboekingen van een post naar een andere (+)/(-) | 8043 | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8053 | 250.000 | |
+| **Afschrijvingen en waardeverminderingen per einde van het boekjaar** | 8123P | XXXXXXXXXX | 50.000 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8073 | 50.000 | |
+| Teruggenomen | 8083 | | |
+| Verworven van derden | 8093 | | |
+| Afgeboekt na overdrachten en buitengebruikstellingen | 8103 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8113 | | |
+| **Afschrijvingen en waardeverminderingen per einde van het boekjaar** | 8123 | 100.000 | |
+| **Nettoboekwaarde per einde van het boekjaar** | 212 | 150.000 | |
 
 11/43
-
 
 --- pág. 12 ---
 
@@ -1316,59 +1315,64 @@ Boekjaar
 
 --- pág. 18 ---
 
-Nr. BE 0668.426.703
+Nr. BE 0668.426.703 | VOL 6.7.1
 
-VOL 6.7.1
+**STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR**
 
-STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **Staat van het kapitaal** | | | |
+| **Maatschappelijk kapitaal** | | | |
+| Geplaatst kapitaal per einde van het boekjaar | 100P | XXXXXXXXXX | 6.685.000 |
+| Geplaatst kapitaal per einde van het boekjaar | 100 | 24.712.000 | |
 
-Codes Boekjaar Vorig boekjaar
-Staat van het kapitaal
-Maatschappelijk kapitaal
-Geplaatst kapitaal per einde van het boekjaar 100P XXXXXXKKKK 6.685.000
-Geplaatst kapitaal per einde van het boekjaar 100 24.712.000
-Codes Bedragen Aantal aandelen
-Wijzigingen tijdens het boekjaar
-kapitaalsverhoging 18.027.000 72.108
-Samenstelling van het kapitaal
-Soorten aandelen
-Aandelen op naam 8702 XXXXKKKKKK 98.848
-Gedematerialiseerde aandelen 8703 XXXXKKKKKK
-Codes | Niet-opgevraagd bedrag Opgevraagd, niet-
-gestort bedrag
-Niet-gestort kapitaal
-Niet-opgevraagd kapitaal 101 XXXXKKKKKK
-Opgevraagd, niet-gestort kapitaal 8712 p000, 00,00 0,04
-Aandeelhouders die nog moeten volstorten
-Codes Boekjaar
-Eigen aandelen
-Gehouden door de vennootschap zelf
-Kapitaalbedrag 8721
-Aantal aandelen 8722
-Gehouden door haar dochters
-Kapitaalbedrag 8731
-Aantal aandelen 8732
-Verplichtingen tot uitgifte van aandelen
-Als gevolg van de uitoefening van conversierechten
-Bedrag van de lopende converteerbare leningen 8740
-Bedrag van het te plaatsen kapitaal 8741
-Maximum aantal uit te geven aandelen 8742
-Als gevolg van de uitoefening van inschrijvingsrechten
-Aantal inschrijvingsrechten in omloop 8745
-Bedrag van het te plaatsen kapitaal 8746
-Maximum aantal uit te geven aandelen 8747
-Toegestaan, niet-geplaatst kapitaal 8751
-Codes Boekjaar
-Aandelen buiten kapitaal
-Verdeling
-Aantal aandelen 8761
-Daaraan verbonden stemrecht 8762
-Uitsplitsing volgens de aandeelhouders
-Aantal aandelen gehouden door de vennootschap zelf 8771
-Aantal aandelen gehouden door haar dochters 8781
+| | Codes | Bedragen | Aantal aandelen |
+|---|---|---|---|
+| Wijzigingen tijdens het boekjaar | | | |
+| kapitaalsverhoging | | 18.027.000 | 72.108 |
+| Samenstelling van het kapitaal | | | |
+| Soorten aandelen | | | |
+| Aandelen op naam | 8702 | XXXXXXXXXX | 98.848 |
+| Gedematerialiseerde aandelen | 8703 | XXXXXXXXXX | |
+
+| | Codes | Niet-opgevraagd bedrag | Opgevraagd, niet-gestort bedrag |
+|---|---|---|---|
+| **Niet-gestort kapitaal** | | | |
+| Niet-opgevraagd kapitaal | 101 | | XXXXXXXXXX |
+| Opgevraagd, niet-gestort kapitaal | 8712 | XXXXXXXXXX | |
+| Aandeelhouders die nog moeten volstorten | | | |
+
+| | Codes | Boekjaar |
+|---|---|---|
+| **Eigen aandelen** | | |
+| Gehouden door de vennootschap zelf | | |
+| Kapitaalbedrag | 8721 | |
+| Aantal aandelen | 8722 | |
+| Gehouden door haar dochters | | |
+| Kapitaalbedrag | 8731 | |
+| Aantal aandelen | 8732 | |
+| **Verplichtingen tot uitgifte van aandelen** | | |
+| Als gevolg van de uitoefening van conversierechten | | |
+| Bedrag van de lopende converteerbare leningen | 8740 | |
+| Bedrag van het te plaatsen kapitaal | 8741 | |
+| Maximum aantal uit te geven aandelen | 8742 | |
+| Als gevolg van de uitoefening van inschrijvingsrechten | | |
+| Aantal inschrijvingsrechten in omloop | 8745 | |
+| Bedrag van het te plaatsen kapitaal | 8746 | |
+| Maximum aantal uit te geven aandelen | 8747 | |
+| **Toegestaan, niet-geplaatst kapitaal** | 8751 | |
+
+| | Codes | Boekjaar |
+|---|---|---|
+| **Aandelen buiten kapitaal** | | |
+| Verdeling | | |
+| Aantal aandelen | 8761 | |
+| Daaraan verbonden stemrecht | 8762 | |
+| Uitsplitsing volgens de aandeelhouders | | |
+| Aantal aandelen gehouden door de vennootschap zelf | 8771 | |
+| Aantal aandelen gehouden door haar dochters | 8781 | |
 
 18/43
-
 
 --- pág. 19 ---
 
@@ -1569,93 +1573,57 @@ Abonnementen 165.272
 
 --- pág. 23 ---
 
-Nr. BE 0668.426.703
+Nr. BE 0668.426.703 | VOL 6.10
 
-VOL 6.10
+**BEDRIJFSRESULTATEN**
 
-BEDRIJFSRESULTATEN
-
-Bedrijfsopbrengsten
-Netto-omzet
-Uitsplitsing per bedrijfscategorie
-ticketing & lidgelden
-Sponsoring
-TV rechten
-Commercieel
-Andere
-Uitsplitsing per geografische markt
-Belgie
-
-Andere bedrijfsopbrengsten
-Exploitatiesubsidies en vanwege de overheid ontvangen
-compenserende bedragen
-Bedrijfskosten
-Werknemers waarvoor de onderneming een DIMONA-verklaring
-heeft ingediend of die zijn ingeschreven in het algemeen
-personeelsregister
-Totaal aantal op de afsluitingsdatum
-Gemiddeld personeelsbestand berekend in voltijdse equivalenten
-Aantal daadwerkelijk gepresteerde uren
-Personeelskosten
-Bezoldigingen en rechtstreekse sociale voordelen
-Werkgeversbijdragen voor sociale verzekeringen
-Werkgeverspremies voor bovenwettelijke verzekeringen
-Andere personeelskosten
-Ouderdoms- en overlevingspensioenen
-Voorzieningen voor pensioenen en soortgelijke verplichtingen
-Toevoegingen (bestedingen en terugnemingen) (+)/(-)
-Waardeverminderingen
-Op voorraden en bestellingen in uitvoering
-Geboekt
-Teruggenomen
-Op handelsvorderingen
-Geboekt
-Teruggenomen
-Voorzieningen voor risico's en kosten
-Toevoegingen
-Bestedingen en teruygnemingen
-Andere bedrijfskosten
-Bedrijfsbelastingen en -taksen
-Andere
-Uitzendkrachten en ter beschikking van de onderneming gestelde
-personen
-Totaal aantal op de afsluitingsdatum
-Gemiddeld aantal berekend in voltijdse equivalenten
-Aantal daadwerkelijk gepresteerde uren
-Kosten voor de onderneming
-
-Codes Boekjaar Vorig boekjaar
-681.485 710.986
-1.427.740 1.159.730
-1.292.861 534.126
-682.339 666.712
-211.380 784.814
-4.305.805 3.856.368
-740 100
-9086 83 53
-9087 61,8 36,8
-9088 115.250 68.442
-620 6.852.408 2.987.794
-621 743.238 386.080
-622 6.119
-623 614.089 413.470
-624
-635
-9110 28.630
-9111
-9112 16.214
-9113
-9115
-9116
-640 177.962 143.886
-641/8 73.021 31.744
-9096
-9097
-9098
-617
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **Bedrijfsopbrengsten** | | | |
+| **Netto-omzet** | | | |
+| Uitsplitsing per bedrijfscategorie | | | |
+| ticketing & lidgelden | | 681.485 | 710.986 |
+| Sponsoring | | 1.427.740 | 1.159.730 |
+| TV rechten | | 1.292.861 | 534.126 |
+| Commercieel | | 682.339 | 666.712 |
+| Andere | | 211.380 | 784.814 |
+| Uitsplitsing per geografische markt | | | |
+| Belgie | | 4.305.805 | 3.856.368 |
+| **Andere bedrijfsopbrengsten** | | | |
+| Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen | 740 | 100 | |
+| **Bedrijfskosten** | | | |
+| **Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister** | | | |
+| Totaal aantal op de afsluitingsdatum | 9086 | 83 | 53 |
+| Gemiddeld personeelsbestand berekend in voltijdse equivalenten | 9087 | 61,8 | 36,8 |
+| Aantal daadwerkelijk gepresteerde uren | 9088 | 115.250 | 68.442 |
+| **Personeelskosten** | | | |
+| Bezoldigingen en rechtstreekse sociale voordelen | 620 | 6.852.408 | 2.987.794 |
+| Werkgeversbijdragen voor sociale verzekeringen | 621 | 743.238 | 386.080 |
+| Werkgeverspremies voor bovenwettelijke verzekeringen | 622 | 6.119 | |
+| Andere personeelskosten | 623 | 614.089 | 413.470 |
+| Ouderdoms- en overlevingspensioenen | 624 | | |
+| **Voorzieningen voor pensioenen en soortgelijke verplichtingen** | | | |
+| Toevoegingen (bestedingen en terugnemingen) (+)/(-) | 635 | | |
+| **Waardeverminderingen** | | | |
+| Op voorraden en bestellingen in uitvoering | | | |
+| Geboekt | 9110 | 28.630 | |
+| Teruggenomen | 9111 | | |
+| Op handelsvorderingen | | | |
+| Geboekt | 9112 | | 16.214 |
+| Teruggenomen | 9113 | | |
+| **Voorzieningen voor risico's en kosten** | | | |
+| Toevoegingen | 9115 | | |
+| Bestedingen en terugnemingen | 9116 | | |
+| **Andere bedrijfskosten** | | | |
+| Bedrijfsbelastingen en -taksen | 640 | 177.962 | 143.886 |
+| Andere | 641/8 | 73.021 | 31.744 |
+| **Uitzendkrachten en ter beschikking van de onderneming gestelde personen** | | | |
+| Totaal aantal op de afsluitingsdatum | 9096 | | |
+| Gemiddeld aantal berekend in voltijdse equivalenten | 9097 | | |
+| Aantal daadwerkelijk gepresteerde uren | 9098 | | |
+| Kosten voor de onderneming | 617 | | |
 
 23/43
-
 
 --- pág. 24 ---
 
@@ -2164,52 +2132,35 @@ Vermeldingen in toepassing van het artikel 133, paragraaf 6 van het Wetboek van 
 
 --- pág. 32 ---
 
-Nr.
+Nr. BE 0668.426.703 | VOL 6.19
 
-BE 0668.426.703 VOL 6.19
-
-Waarderingsregels
+**Waarderingsregels**
 
 SAMENVATTING VAN DE WAARDERINGSREGELS
 
-De waarderingsregels worden vastgesteld overeenkomstig de bepalingen van het koninklijk besluit
-
-van 30 januari 2001 tot uitvoering van het Wetboek van vennootschappen.
-
-Uit de balans blijkt een overgedragen verlies en bijgevolg is artikel 9686 van het wetboek van vennootschappen van toepassing.
-
-De Raad van Bestuur stelt voor de waarderingsregels in continuïteit voort te zetten alsook de activiteiten en stelt volgende maatregel voor
-tot herstel van de financiële toestand van de onderneming:
-
+De waarderingsregels worden vastgesteld overeenkomstig de bepalingen van het koninklijk besluit van 30 januari 2001 tot uitvoering van het Wetboek van vennootschappen.
+Uit de balans blijkt een overgedragen verlies en bijgevolg is artikel 96§6 van het wetboek van vennootschappen van toepassing.
+De Raad van Bestuur stelt voor de waarderingsregels in continuïteit voort te zetten alsook de activiteiten en stelt volgende maatregel voor tot herstel van de financiële toestand van de onderneming:
 De Raad van Bestuur kan rekenen op de verdere financiële steun van de aandeelhouder onder vorm van een kapitaalsverhoging of lening.
 
-Ten opzichte van het vorige boekjaar werden de waarderingsregels qua verantwoording of toepassing niet gewijzigd; zo ja, dan heeft de
-wijziging betrekking op:
+Ten opzichte van het vorige boekjaar werden de waarderingsregels qua verantwoording of toepassing niet gewijzigd; zo ja, dan heeft de wijziging betrekking op:
 
-en heeft zij een positieve/negatieve invloed op het resultaat van het boekjaar voor belastingen ten belope
-van O0 EUR.
+en heeft zij een positieve/negatieve invloed op het resultaat van het boekjaar voor belastingen ten belope van 0 EUR.
 
 Specifieke waarderingsregels :
 
 Afschrijvingen geboekt tijdens het boekjaar :
 
-Activa Methode Basis Afschrijvingspercentages
-L(lineaire) NG (niet- Hoofdsom Bijk. kosten
-D(degressieve) geherwaardeerde) Min — max Min — max
-A(andere) G (geherwaardeerd)
-1. Oprichtingskosten L NG 20%
-2. Immateriële vaste activa L NG 50%-20%
-3. Industriële, administratieve L NG 100%-10%
+| Activa | Methode: L(lineaire) / D(degressieve) / A(andere) | Basis: NG (niet-geherwaardeerde) / G (geherwaardeerd) | Afschrijvingspercentages Hoofdsom Min - max | Afschrijvingspercentages Bijk. kosten Min - max |
+|---|---|---|---|---|
+| 1. Oprichtingskosten | L | NG | 20% | |
+| 2. Immateriële vaste activa | L | NG | 50%-20% | |
+| 3. Industriële, administratieve of commerciële gebouwen (*) | L | NG | 100%-10% | |
+| 4. Installaties, machines en uitrusting (*) | L | NG | 100%-10% | |
+| 5. Rollend materieel (*) | L | NG | 100%-10% | |
+| 6. Kantoormaterieel en meubilair (*) | L | NG | 100%-10% | |
+| 7. Andere materiële vaste activa | | | | |
 
-of commerciële gebouwen (*)
-
-4. Installaties, machines L NG 100%-10%
-en uitrusting (*)
-
-5. Rollend materieel (*) L NG 1003%-10%
-6. Kantoormaterieel en meubilair (*) L NG 1003%-10%
-
-7. Andere materiële vaste activa
 (*)Met inbegrip van de in leasing gehouden activa; deze worden in voorkomend geval op een afzonderlijke lijn vermeld.
 
 Materiële vaste activa :
@@ -2219,72 +2170,61 @@ Financiële vaste activa:
 Inde loop van het boekjaar werden geen deelnemingen geherwaardeerd; zo ja, wordt deze herwaardering als volgt verantwoord:
 
 Voorraden :
-
-Voorraden worden gewaardeerd tegen de aanschaffingswaarde berekend volgens de methode van (te vermelden) de gewogen gemiddelde prijzen, Fifo,
-Lifo,individualisering van de prijs van elk bestanddeel of tegen de lagere marktwaarde.
+Voorraden worden gewaardeerd tegen de aanschaffingswaarde berekend volgens de methode van (te vermelden) de gewogen gemiddelde prijzen, Fifo, Lifo,individualisering van de prijs van elk bestanddeel of tegen de lagere marktwaarde.
 
 Spelers:
-
 De spelers worden afgeschreven conform hun contractduur.
 
 Schulden :
-
 De schulden bevatten geen schulden op lange termijn, zonder rente of met een abnormaal lage rente.
 
 Vreemde valuta :
-
 De omrekening in EUR van tegoeden, schulden en verbintenissen in vreemde valuta gebeurt op volgende grondslagen :
 De resultaten uit de omrekening van vreemde valuta zijn als volgt in de jaarrekening verwerkt :
 
 32/43
 
-
 --- pág. 33 ---
 
-OH Leuven CVBA
-Kardinaal Mercierlaan 46
-3001 LEUVEN
+**OH Leuven CVBA**
+**Kardinaal Mercierlaan 46**
+**3001 LEUVEN**
+**Ondernemingsnummer BE0668.426.703**
+**RPR Leuven**
 
-Ondernemingsnummer BEO668.426.703
-RPR Leuven
-
-Jaarverslag van de Raad van Bestuur gericht aan de Algemene Vergadering
-der aandeelhouders aangaande het boekjaar per 31 december 2018
+**Jaarverslag van de Raad van Bestuur gericht aan de Algemene Vergadering der aandeelhouders aangaande het boekjaar per 31 december 2018**
 
 Geachte,
-Ik heb de eer U ons jaarverslag voor te leggen opgesteld overeenkomstig artikel 96 van het Wetboek
 
-van Vennootschappen. Het jaarverslag heeft betrekking op de activiteiten gedurende het jaar dat werd
-afgesloten per 31 december 2018.
+Ik heb de eer U ons jaarverslag voor te leggen opgesteld overeenkomstig artikel 96 van het Wetboek van Vennootschappen. Het jaarverslag heeft betrekking op de activiteiten gedurende het jaar dat werd afgesloten per 31 december 2018.
 
-Commentaar op de jaarrekening voor het boekjaar dat afgesloten werd op 31 december 2018
+**Commentaar op de jaarrekening voor het boekjaar dat afgesloten werd op 31 december 2018**
 
-Onze commentaar is gebaseerd op een balans die werd opgesteld na resultaatverwerking en dit in de
-veronderstelling dat de resultaten en de resultaatverwerking worden goedgekeurd door de jaarlijkse
-algemene vergadering.
+Onze commentaar is gebaseerd op een balans die werd opgesteld na resultaatverwerking en dit in de veronderstelling dat de resultaten en de resultaatverwerking worden goedgekeurd door de jaarlijkse algemene vergadering.
 
-Het ontwerp van jaarrekening werd opgesteld in overeenstemming met de bepalingen zoals
-vooropgesteld door het Wetboek van Vennootschappen en de Wet van 07 Juli 1975 met betrekking tot
-de boekhouding en jaarrekening.
+Het ontwerp van jaarrekening werd opgesteld in overeenstemming met de bepalingen zoals vooropgesteld door het Wetboek van Vennootschappen en de Wet van 07 Juli 1975 met betrekking tot de boekhouding en jaarrekening.
 
-Het ontwerp van jaarrekening werd eveneens opgesteld conform de statuten van de vennootschap en
-de waarderingsregels zoals vastgelegd door de Raad van Bestuur.
+Het ontwerp van jaarrekening werd eveneens opgesteld conform de statuten van de vennootschap en de waarderingsregels zoals vastgelegd door de Raad van Bestuur.
 
-Balans na resultaatverwerking
+**Balans na resultaatverwerking**
 
 De balans per 31 december 2018 kan worden voorgesteld als volgt:
 
-Activa 31/12/2018
-(in euro)
-Oprichtingskosten 2.050,32
-Immateriële vaste activa 2.904.656,73
-Materiële vaste activa 5.770.883,00
-Financiële vaste activa 33.470,00
-Voorraden 43.328,57
-Vorderingen op ten hoogste 1 jaar 1.919.672,80
-Liquide middelen 3./59.645,39
-Overlopende rekeningen 826.835,99
-Totaal 15.260.542,80
+| Activa | 31/12/2018 (in euro) |
+|---|---|
+| Oprichtingskosten | 2.050,32 |
+| Immateriële vaste activa | 2.904.656,73 |
+| Materiële vaste activa | 5.770.883,00 |
+| Financiële vaste activa | 33.470,00 |
+| Voorraden | 43.328,57 |
+| Vorderingen op ten hoogste 1 jaar | 1.919.672,80 |
+| Liquide middelen | 3.759.645,39 |
+| Overlopende rekeningen | 826.835,99 |
+| **Totaal** | **15.260.542,80** |
+
+[handtekening/paraaf]
+
+1
 
 33/43
 
@@ -2374,147 +2314,123 @@ vennootschap in belangrijke mate kunnen beïnvloeden.
 
 --- pág. 35 ---
 
-Gebruik van financiële instrumenten
+**Gebruik van financiële instrumenten**
 
-Wij melden dat er geen financiële instrumenten werden gebruikt die van betekenis zijn voor de
-beoordeling van haar activa, passiva, financiële positie en resultaat.
+Wij melden dat er geen financiële instrumenten werden gebruikt die van betekenis zijn voor de beoordeling van haar activa, passiva, financiële positie en resultaat.
 
-Bijkantoren
+**Bijkantoren**
 
 De onderneming heeft geen bijkantoren.
 
-Kapitaalverhoging of uitgifte van converteerbare obligaties of warrants
+**Kapitaalverhoging of uitgifte van converteerbare obligaties of warrants**
 
 A. Kapitaalverhoging
 
-Op 1/08/18 heeft onze vennootschap haar variabel kapitaal verhoogd met 8.200.000,00 EUR en op
-31/12/18 is het variabel kapitaal verhoogd met 9.827.000,00 EUR om het kapitaal van 6.664.000,00
-EUR naar 24.691.000,00 EUR te brengen door inbreng van de leningen.
+Op 1/08/18 heeft onze vennootschap haar variabel kapitaal verhoogd met 8.200.000,00 EUR en op 31/12/18 is het variabel kapitaal verhoogd met 9.827.000,00 EUR om het kapitaal van 6.664.000,00 EUR naar 24.691.000,00 EUR te brengen door inbreng van de leningen.
 
-Deze kapitaalverhoging geschiedde om de volgende redenen: zware investeringen in infrastructuur,
-personeel, spelers en media.
+Deze kapitaalverhoging geschiedde om de volgende redenen: zware investeringen in infrastructuur, personeel, spelers en media.
 
 B. Uitgifte van converteerbare obligaties en warrants
 
-Tijdens het boekjaar werd niet beslist tot uitgifte van converteerbare obligaties, obligaties met warrant
-of zuivere warrants.
+Tijdens het boekjaar werd niet beslist tot uitgifte van converteerbare obligaties, obligaties met warrant of zuivere warrants.
 
-Bijkomende werkzaamheden commissaris
+**Bijkomende werkzaamheden commissaris**
 
-Tijdens het boekjaar werd door de commissaris — naast zijn mandaat — volgende bijkomende prestatie
-geleverd: controleverslag met betrekking tot de inbreng van de leningen in kapitaal en een bijkomend
-nazicht in het kader van het behalen van de licentie betaald voetbal seizoen 2019-2020 .
+Tijdens het boekjaar werd door de commissaris – naast zijn mandaat – volgende bijkomende prestatie geleverd: controleverslag met betrekking tot de inbreng van de leningen in kapitaal en een bijkomend nazicht in het kader van het behalen van de licentie betaald voetbal seizoen 2019-2020 .
 
-Resultaatverwerking
+**Resultaatverwerking**
 
 Het te bestemmen verlies:
-
-— te bestemmen verlies van het boekjaar: -10.247.375,59 EUR
-
-— overgedragen verlies van het vorig boekjaar: -3.673./07,31 EUR
-— te bestemmen verlies: -13.921.082,90 EUR
+- te bestemmen verlies van het boekjaar: -10.247.375,59 EUR
+- overgedragen verlies van het vorig boekjaar: -3.673.707,31 EUR
+- te bestemmen verlies: -13.921.082,90 EUR
 
 Wij stellen de volgende resultaatverwerking voor:
-— Overgedragen verlies -13.921.082,90 EUR
-Totaal: -13.921.082 90 EUR
+- Overgedragen verlies -13.921.082,90 EUR
+Totaal: -13.921.082,90 EUR
 
-Waarderingsregels
+**Waarderingsregels**
 
-De waarderingsregels die werden toegepast bij de afsluiting van de jaarrekening per 31 december 2018
-wijken niet af van de waarderingsregels van het vorig boekjaar.
+De waarderingsregels die werden toegepast bij de afsluiting van de jaarrekening per 31 december 2018 wijken niet af van de waarderingsregels van het vorig boekjaar.
 
-Uit de resultatenrekening per 31/12/18 blijkt dat de vennootschap in boekjaar 2017 een verlies leed
-van -3.673.707,31 EUR. In boekjaar 2018 bedroeg het verlies -10.247.375,59 EUR. Dit betekent dat
-artikel 96, 6° van het W.Venn. van toepassing is.
+Uit de resultatenrekening per 31/12/18 blijkt dat de vennootschap in boekjaar 2017 een verlies leed van -3.673.707,31 EUR. In boekjaar 2018 bedroeg het verlies -10.247.375,59 EUR. Dit betekent dat artikel 96, 6° van het W.Venn. van toepassing is.
 
-Ondanks dat de club twee opeenvolgende boekjaren een verlies maakt, is er geen probleem qua
-continuiteit van OH Leuven CVBA. Deze verliezen zijn te wijten aan zware investeringen in
-infrastructuur, personeel, spelers en media. De club wordt structureel klaargemaakt voor profvoetbal in
-1A. De Cash Flow en netto actief is positief dankzij de binnengekomen gelden van
-hoofdaandeelhouder King Power. King Power zal de nodige financiële steun blijven geven en de
+Ondanks dat de club twee opeenvolgende boekjaren een verlies maakt, is er geen probleem qua continuiteit van OH Leuven CVBA. Deze verliezen zijn te wijten aan zware investeringen in infrastructuur, personeel, spelers en media. De club wordt structureel klaargemaakt voor profvoetbal in 1A. De Cash Flow en netto actief is positief dankzij de binnengekomen gelden van hoofdaandeelhouder King Power. King Power zal de nodige financiële steun blijven geven en de
+
+[handtekening/paraaf]
+
+3
 
 35/43
 
 --- pág. 36 ---
 
-verliezen compenseren zodat de vennootschap minimaal de volgende 18 maanden in going concern
-kan blijven werken.
+verliezen compenseren zodat de vennootschap minimaal de volgende 18 maanden in going concern kan blijven werken.
 
-Belangrijke gebeurtenissen na het jaareinde
+**Belangrijke gebeurtenissen na het jaareinde**
 
-Er hebben zich na het einde van het boekjaar geen belangrijke gebeurtenissen voorgedaan die de
-financiële toestand, het vermogen of de resultaten van de vennootschap op belangrijke wijze kunnen
-beïnvloeden.
+Er hebben zich na het einde van het boekjaar geen belangrijke gebeurtenissen voorgedaan die de financiële toestand, het vermogen of de resultaten van de vennootschap op belangrijke wijze kunnen beïnvloeden.
 
-Slot
-Wij zouden u willen vragen de jaarrekening goed te keuren en de bestuurders en commissaris kwijting
+**Slot**
 
-te willen verlenen voor de opdracht die ze hebben uitgevoerd in het boekjaar dat afloopt per 31
-december 2018.
+Wij zouden u willen vragen de jaarrekening goed te keuren en de bestuurders en commissaris kwijting te willen verlenen voor de opdracht die ze hebben uitgevoerd in het boekjaar dat afloopt per 31 december 2018.
 
 Te Leuven, op 14/02/2019
 
-holt Ove 7
-clans W m Flo, Wibe, mot vak
-beke LF Sns BVA, CEO
+[handtekening] [ilegible], bestuurder
+
+[handtekening] Peter Willems, vast vertegenwoordiger LF Sports BVBA, CEO
+
+4
 
 36/43
 
 --- pág. 37 ---
 
-663
+# BB3
+### AUDIT
 
-AUDIT
+**VERSLAG VAN DE BEDRIJFSREVISOR AAN DE ALGEMENE VERGADERING VAN OH LEUVEN CVBA – OUD-HEVERLEE LEUVEN VZW EN OUD-HEVERLEE LEUVEN CVBA-SO OVER HET BOEKJAAR AFGESLOTEN OP 31 DECEMBER 2018**
 
-VERSLAG VAN DE BEDRIJFSREVISOR AAN DE ALGEMENE VERGADERING VAN OH LEUVEN
-CVBA — OUD-HEVERLEE LEUVEN VZW EN OUD-HEVERLEE LEUVEN CVBA-SO OVER HET
-BOEKJAAR AFGESLOTEN OP 31 DECEMBER 2018
+Overeenkomstig onze opdracht in het kader van het bekomen van de licentie betaald voetbal seizoen 2019-2020 brengen wij verslag uit in het kader van de controle van de geconsolideerde balans en resultatenrekening van OH Leuven cvba, Oud-Heverlee Leuven vzw en Oud-Heverlee Leuven cvba-so (de "Groep"). Dit bevat ons verslag over de controle van de geconsolideerde balans en resultatenrekening.
 
-Overeenkomstig onze opdracht in het kader van het bekomen van de licentie betaald voetbal
-seizoen 2019-2020 brengen wij verslag uit in het kader van de controle van de geconsolideerde
-balans en resultatenrekening van OH Leuven cvba, Oud-Heverlee Leuven vzw en Oud-Heverlee
-Leuven cvba-so (de “Groep”). Dit bevat ons verslag over de controle van de geconsolideerde
-balans en resultatenrekening.
+### Verslag over de controle van de geconsolideerde balans en resultatenrekening
 
-Verslag over de controle van de geconsolideerde balans en resultatenrekening
+#### *Oordeel zonder voorbehoud*
 
-Oordeel zonder voorbehoud
+Wij hebben de controle uitgevoerd van de geconsolideerde balans en resultatenrekening van de Groep, die de geconsolideerde balans op 31 december 2018 omvat, alsook de geconsolideerde resultatenrekening van het boekjaar afgesloten op die datum, met een geconsolideerd balanstotaal van € 26.674.508,66 en waarvan de geconsolideerde resultatenrekening afsluit met een verlies van het boekjaar van € (-) 10.416.635,88.
 
-Wij hebben de controle uitgevoerd van de geconsolideerde balans en resultatenrekening van de
-Groep, die de geconsolideerde balans op 31 december 2018 omvat, alsook de geconsolideerde
-resultatenrekening van het boekjaar afgesloten op die datum, met een geconsolideerd
-balanstotaal van € 26.674.508,66 en waarvan de geconsolideerde resultatenrekening afsluit met
-een verlies van het boekjaar van € (-) 10.416.635,88.
+Naar ons oordeel geeft de geconsolideerde balans en resultatenrekening een getrouw beeld van het vermogen en de financiële toestand van de Groep per 31 december 2018, alsook van haar resultaten over het boekjaar dat op die datum is afgesloten, in overeenstemming met het in België van toepassing zijnde boekhoudkundig referentiestelsel.
 
-Naar ons oordeel geeft de geconsolideerde balans en resultatenrekening een getrouw beeld van
-het vermogen en de financiële toestand van de Groep per 31 december 2018, alsook van haar
-resultaten over het boekjaar dat op die datum is afgesloten, in overeenstemming met het in
-België van toepassing zijnde boekhoudkundig referentiestelsel.
+#### *Basis voor het oordeel zonder voorbehoud*
 
-Basis voor het oordeel zonder voorbehoud
+Wij hebben onze controle uitgevoerd volgens de internationale controlestandaarden (ISA's) zoals van toepassing in België. Onze verantwoordelijkheden op grond van deze standaarden zijn verder beschreven in de sectie "Verantwoordelijkheden van de bedrijfsrevisor voor de controle van de geconsolideerde balans en resultatenrekening" van ons verslag. Wij hebben alle deontologische vereisten die relevant zijn voor de controle van de geconsolideerde balans en resultatenrekening in België nageleefd, met inbegrip van deze met betrekking tot de onafhankelijkheid.
 
-Wij hebben onze controle uitgevoerd volgens de internationale controlestandaarden (ISA's) zoals
-van toepassing in België. Onze verantwoordelijkheden op grond van deze standaarden zijn verder
-beschreven in de sectie “Verantwoordelijkheden van de bedrijfsrevisor voor de controle van de
-geconsolideerde balans en resultatenrekening” van ons verslag. Wij hebben alle deontologische
-vereisten die relevant zijn voor de controle van de geconsolideerde balans en resultatenrekening
-in België nageleefd, met inbegrip van deze met betrekking tot de onafhankelijkheid.
+Wij hebben van het bestuursorgaan en van de aangestelden van de Groep de voor onze controle vereiste ophelderingen en inlichtingen verkregen.
 
-Wij hebben van het bestuursorgaan en van de aangestelden van de Groep de voor onze controle
-vereiste ophelderingen en inlichtingen verkregen.
+Wij zijn van mening dat de door ons verkregen controle-informatie voldoende en geschikt is als basis voor ons oordeel.
 
-Wij zijn van mening dat de door ons verkregen controle-informatie voldoende en geschikt is als
-basis voor ons oordeel.
+#### *Verantwoordelijkheden van het bestuursorgaan voor de geconsolideerde balans en resultatenrekening*
 
-Verantwoordelijkheden van het bestuursorgaan voor de geconsolideerde balans en
-resultatenrekening
+Het bestuursorgaan is verantwoordelijk voor het opstellen van de geconsolideerde balans en resultatenrekening die een getrouw beeld geeft in overeenstemming met het in België van
 
-Het bestuursorgaan is verantwoordelijk voor het opstellen van de geconsolideerde balans en
-resultatenrekening die een getrouw beeld geeft in overeenstemming met het in België van
+---
 
-Half Daghmael, 11 bus 1 T +32 16 22 94 54 info@bb3audit.be Erkenning IBR BO0925 683
-BE-3020 Herent F +32 16 20 26 30 www.bb3audit.be BE60 6451 0322 1270
-BE 0472.945.769 BIC JVBABE22 AU D IT
+Half Dagmael, 11 bus 1  
+BE-3020 Herent  
+
+T +32 16 22 94 54  
+F +32 16 20 26 30  
+
+info@bb3audit.be  
+www.bb3audit.be  
+BE 0472.945.769  
+
+Erkenning IBR B00925  
+BE60 6451 0322 1270  
+BIC JVBABE22  
+
+**BB3 AUDIT**
 
 37/43
 

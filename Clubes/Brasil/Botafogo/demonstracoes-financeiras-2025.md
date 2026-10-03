@@ -7,36 +7,29 @@ AF BOTAFOGO
 
 --- pág. 2 ---
 
-DEMONSTRAÇÕES FINANCEIRAS
-EM 31 DE DEZEMBRO DE 2025
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-01 RELATÓRIO
-E DEGESTÃO
-1 Ê RELATÓRIO
-E DO AUDITOR
+# DEMONSTRAÇÕES FINANCEIRAS EM 31 DE DEZEMBRO DE 2025
 
-uu
-a
--
-=
+# ÍNDICE
 
-1 4 DEMONSTRAÇÕES
-HM FINANCEIRAS
+## 01. RELATÓRIO DE GESTÃO
 
-NOTAS
-HM EXPLICATIVAS
+## 02. RELATÓRIO DO AUDITOR
 
+## 03. DEMONSTRAÇÕES FINANCEIRAS
+
+## 04. NOTAS EXPLICATIVAS
 
 --- pág. 3 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-JAF BOTAFOGO
+# SAF BOTAFOGO
 
-RELATÓRIO DE
+# RELATÓRIO DE GESTÃO
 
-GESTÃO
-
+### 2025
 
 --- pág. 4 ---
 
@@ -183,245 +176,140 @@ América contribuiu para o crescimento das receitas com venda de produtos ao lon
 
 --- pág. 6 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-Yt FATURAMENTO 2025
+# ★ FATURAMENTO 2025
 
-O faturamento operacional do Botafogo
-em 2025 foi de R$ 655 milhões em receita
-bruta, 8% acima dos R$ 607 milhões
-registrados em 2024. As receitas de
-Publicidade e Marketing totalizaram R$ 92
-milhões. O programa Camisa 7 encerrou o
-ano com receita recorde de R$ 52 milhões.
-Somadas às receitas com transferências de
-atletas, de R$ 733 milhões, o faturamento
-total da SAF ultrapassou R$ 1,4 bilhão no
-exercício.
+### RECEITA TOTAL
 
-PREMIAÇÃO |
+O faturamento operacional do Botafogo em 2025 foi de R$ 655 milhões em receita bruta, 8% acima dos R$ 607 milhões registrados em 2024. As receitas de Publicidade e Marketing totalizaram R$ 92 milhões. O programa Camisa 7 encerrou o ano com receita recorde de R$ 52 milhões. Somadas às receitas com transferências de atletas, de R$ 733 milhões, o faturamento total da SAF ultrapassou R$ 1,4 bilhão no exercício.
 
-A premiação de 2025 totalizou R$ 269
-milhões, crescimento de 4% em relação aos
-RS 258 milhões registrados em 2024,
-impulsionada pela participação inédita do
-clube no Mundial de Clubes FIFA, reflexo
-direto da conquista da Libertadores.
+**RECEITA TOTAL**
+* 2022: 149
+* 2023: 571
+* 2024: 753
+* 2025: 1441
 
-2569 269
+---
 
-61
-24
+### PREMIAÇAO
 
-e0ºe 2005 2024 2025
+A premiação de 2025 totalizou R$ 269 milhões, crescimento de 4% em relação aos R$ 258 milhões registrados em 2024, impulsionada pela participação inédita do clube no Mundial de Clubes FIFA, reflexo direto da conquista da Libertadores.
 
-1441
+**PREMIAÇAO**
+* 2022: 24
+* 2023: 61
+* 2024: 258
+* 2025: 269
 
-755
+---
 
-571
+### CESSÃO DE ATLETAS
 
-149
+Em 2025, as receitas com cessão de atletas totalizaram R$ 733 milhões, crescimento de 661% em relação aos R$ 96 milhões registrados em 2024, resultado do trabalho estratégico dos departamentos de futebol e mercado do Botafogo, voltado à valorização dos ativos.
 
-c0ce 2003 2024 2025
-
-Em 2025, as receitas com cessão de atletas
-totalizaram R$ 733 milhões, crescimento de
-661% em relação aos R$ 96 milhões registrados
-em 2024, resultado do trabalho estratégico dos
-departamentos de futebol e mercado do
-Botafogo, voltado à valorização dos ativos.
-
-755
-
-77 96
-
-c0ce c00á4 c004 2005
-
+**CESSÃO DE ATLETAS**
+* 2022: 4
+* 2023: 77
+* 2024: 96
+* 2025: 733
 
 --- pág. 7 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-PUBLICI
+### PUBLICIDADE
 
-16
+**PUBLICIDADE**
+* 2022: 16
+* 2023: 42
+* 2024: 56
+* 2025: 92
 
-c0ce e0cs 2004 2025
+A SAF Botafogo encerrou 2025 com resultados expressivos em publicidade, sustentados por parcerias estratégicas que seguem valorizando a marca. O novo contrato com a VBet elevou o patrocínio master para o maior valor da história e top 5 do Brasil, enquanto o novo contrato com a Brax reforçou a receita de publicidade estática, consolidando um portfólio de patrocínios robusto e em franca expansão.
 
-CAMIS
+---
 
-28
+### CAMISA 7
 
-c0ce 2005 2004 c025
+**CAMISA 7**
+* 2022: 8
+* 2023: 28
+* 2024: 49
+* 2025: 52
 
-BOTAFOGO
+A torcida gloriosa segue sendo protagonista na construção do projeto da SAF Botafogo. Em 2025, o programa Camisa 7 gerou R$ 52 milhões em receita, reflexo da consistência e do fortalecimento da base de sócios, do elevado engajamento da torcida alvinegra e da sua confiança no projeto, contribuindo diretamente para o fortalecimento institucional da Companhia.
 
-2
-2022 2023 2024 2025
+---
 
-A SAF Botafogo encerrou 2025 com resultados
-expressivos em publicidade, sustentados por
-parcerias estratégicas que seguem valorizando a
-marca. O novo contrato com a VBet elevou o
-patrocínio master para o maior valor da história e
-top 5 do Brasil, enquanto o novo contrato com a
-Brax reforçou a receita de publicidade estática,
-consolidando um portfólio de patrocínios
-robusto e em franca expansão.
+### BOTAFOGO STORE
 
-A torcida gloriosa segue sendo protagonista na
-construção do projeto da SAF Botafogo. Em
-2025, o programa Camisa 7 gerou R$ 52 milhões
-em receita, reflexo da consistência e do
-fortalecimento da base de sócios, do elevado
-engajamento da torcida alvinegra e da sua
-confiança no projeto, contribuindo diretamente
-para o fortalecimento institucional da
-Companhia.
+**BOTAFOGO STORE**
+* 2022: 2
+* 2023: 24
+* 2024: 66
+* 2025: 60
 
-Em 2025, o Botafogo manteve o patamar de
-vendas de produtos oficiais acima de R$ 60
-milhões, consolidando o resultado comercial das
-lojas físicas e reforçando a força da marca junto
-à torcida. A abertura da loja do Shopping Nova
-América ampliou a presença do clube no varejo,
-aproximando ainda mais o alvinegro dos seus
-torcedores e fortalecendo um canal de receita
-cada vez mais relevante para a SAF.
+Em 2025, o Botafogo manteve o patamar de vendas de produtos oficiais acima de R$ 60 milhões, consolidando o resultado comercial das lojas físicas e reforçando a força da marca junto à torcida. A abertura da loja do Shopping Nova América ampliou a presença do clube no varejo, aproximando ainda mais o alvinegro dos seus torcedores e fortalecendo um canal de receita cada vez mais relevante para a SAF.
 
 --- pág. 8 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-kt RESULTADOS
+# ★ RESULTADOS
 
-Valores em reais (R$
+| Valores em reais (R$) | 2022 | 2023 | 2024 | 2025 |
+| :--- | :---: | :---: | :---: | :---: |
+| Receita | 149.335 | 571.111** | 752.901 | 1.440.830 |
+| (-) Despesas Operacionais | (303.540) | (372.898) | (671.986) | (837.031) |
+| **EBITDA** | **(154.205)** | **198.213** | **80.915** | **603.799** |
+| (-) Depreciação e Amortização | (77.914) | (92.575) | (136.601) | (247.585) |
+| (-) Baixa Ativo Intangível | (3.372) | (15.471) | (39.819) | (337.398) |
+| **EBIT** | **(235.491)** | **90.167** | **(95.505)** | **18.816** |
+| (-/+) Despesa/ Receita Financeira | (12.797) | (141.953) | (157.222) | (301.350) |
+| (-) Contingência | - | (4.251) | (14.090) | (8.364) |
+| **Lucro/ Prejuízo** | **(248.288)** | **(56.037)** | **(266.817)** | **(290.898)** |
 
-Receita 149.335 571111** 752.901 1.440.830
+\*EBITDA é calculado a partir da receita bruta (Receita Operacional + Receita por transação de direito de atleta + outras receitas operacionais), com as deduções sobre as receitas classificadas em despesas operacionais.  
+\*\*Os resultados de 2023 incluem receita extraordinária de R$ 166 Milhões referentes à venda de direitos de transmissão futuros do Campeonato Brasileiro.
 
-() Despesas Operacionais (505.540) (372.898) (071986) (837.031)
+O EBITDA é o indicador que melhor traduz a capacidade operacional da SAF Botafogo de gerar valor, pois elimina efeitos contábeis que não impactam o caixa, como depreciação, amortização e resultado financeiro, permitindo enxergar com clareza a performance do negócio futebol.
 
-EBITDA
+Em 2025, o indicador alcançou R$ 604 milhões, o maior patamar já registrado pela SAF e cerca de sete vezes superior ao resultado de 2024. Esse desempenho reflete a convergência de receitas extraordinárias em um único exercício: as receitas com cessão de atletas, que totalizaram R$ 733 milhões, a participação no Mundial de Clubes FIFA, que gerou R$ 147,8 milhões em premiações, e o avanço comercial representado pelo novo contrato com a VBet, que elevou o patrocínio master para R$ 55 milhões anuais, e pelo novo acordo com a Brax Publicidade, com vigência até 2029.
 
-(77914)
-(3372)
+Avançando na cascata de resultados, o EBIT alcançou R$ 19 milhões positivos em 2025, uma virada importante frente ao EBIT negativo de 2024. Esse marco indica que, mesmo após considerar a depreciação e amortização do elenco e das demais infraestruturas, a operação do clube passou a gerar resultado positivo, sinalizando a evolução do modelo de gestão da SAF. Vale contextualizar que parte relevante do EBITDA de 2025 tem natureza não recorrente.
 
-(92.575)
-(15.471)
+As receitas de atletas e o Mundial de Clubes não se repetem com a mesma intensidade a cada exercício. Por isso, o clube segue trabalhando para fortalecer as fontes de receita recorrentes como patrocínios, sócio-torcedor e direitos de transmissão, que cresceram de forma consistente em 2025 e formam a base da estrutura.
 
-(136601)
-(39.819)
-
-(247.585)
-(337398)
-
-() Depreciação e Amortização
-() Baixa Ativo Intangível
-
-EBIT
-
-(/*+) Despesa/ Receita Financeira
-() Contingência
-
-(12797)
-
-(141.953)
-(4251)
-
-(157222)
-(14.090)
-
-(301.350)
-(8.364)
-
-Lucro/ Prejuízo
-
-*EBITDA é calculado à partir da receita bruta (Receita Operacional + Receita por transação de direito de atleta + outras receitas operacionais), com as
-deduções sobre as receitas classificadas em despesas operacionais.
-
-**Os resultados de 2023 incluem receita extraordinária de R$ 166 Milhões referentes à venda de direitos de transmissão futuros do Campeonato Brasileiro.
-
-O EBITDA é o indicador que melhor traduz a capacidade operacional da SAF Botafogo de gerar valor,
-pois elimina efeitos contábeis que não impactam o caixa, como depreciação, amortização e
-resultado financeiro, permitindo enxergar com clareza a performance do negócio futebol.
-
-Em 2025, o indicador alcançou R$ 604 milhões, o maior patamar já registrado pela SAF e cerca de
-sete vezes superior ao resultado de 2024. Esse desempenho reflete a convergência de receitas
-extraordinárias em um único exercício: as receitas com cessão de atletas, que totalizaram R$ 733
-milhões, a participação no Mundial de Clubes FIFA, que gerou R$ 147,8 milhões em premiações, e o
-avanço comercial representado pelo novo contrato com a VBet, que elevou o patrocínio master
-para R$ 55 milhões anuais, e pelo novo acordo com a Brax Publicidade, com vigência até 2029.
-
-Avançando na cascata de resultados, o EBIT alcançou R$ 19 milhões positivos em 2025, uma virada
-importante frente ao EBIT negativo de 2024. Esse marco indica que, mesmo após considerar a
-depreciação e amortização do elenco e das demais infraestruturas, a operação do clube passou a
-gerar resultado positivo, sinalizando a evolução do modelo de gestão da SAF. Vale contextualizar
-que parte relevante do EBITDA de 2025 tem natureza não recorrente.
-
-As receitas de atletas e o Mundial de Clubes não se repetem com a mesma intensidade a cada
-exercício. Por isso, o clube segue trabalhando para fortalecer as fontes de receita recorrentes como
-patrocínios, sócio-torcedor e direitos de transmissão, que cresceram de forma consistente em 2025
-e formam a base da estrutura.
-
-As despesas operacionais acompanharam o crescimento da operação, passando de R$ 672 milhões
-em 2024 para R$ 837 milhões em 2025, em razão dos investimentos contínuos em elenco,
-infraestrutura e estrutura administrativa.
+As despesas operacionais acompanharam o crescimento da operação, passando de R$ 672 milhões em 2024 para R$ 837 milhões em 2025, em razão dos investimentos contínuos em elenco, infraestrutura e estrutura administrativa.
 
 --- pág. 9 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-A reestruturação do passivo do clube social figura
-entre as principais prioridades desde a constituição
+# ★ GESTÃO DO PASSIVO BOTAFOGO SOCIAL
 
-cr GESTÃO DO PASSIVO BOTAFOGO SOCIAL
-550) || da SAF, orientada pela busca de sustentabilidade
-financeira e pelo alinhamento das obrigações à
+# 550 M EM REDUÇÃO DE PASSIVO (2022-2025)
 
-EM REDUÇÃO DE PASSIVO (e02- (005) ) capacidade de caixa da instituição.
+# 80 M PAGOS EM 2025
 
-A trajetória da dívida ao longo do período 2022-2025
-evidencia os avanços concretos dessa agenda, fruto
-de medidas estruturantes que transformaram de
-maneira expressiva o perfil de endividamento do clube.
+A reestruturação do passivo do clube social figura entre as principais prioridades desde a constituição da SAF, orientada pela busca de sustentabilidade financeira e pelo alinhamento das obrigações à capacidade de caixa da instituição.
 
-PAGOS
-EM
-e025
+A trajetória da dívida ao longo do período 2022-2025 evidencia os avanços concretos dessa agenda, fruto de medidas estruturantes que transformaram de maneira expressiva o perfil de endividamento do clube.
 
-O reflexo mais tangível desse esforço está na trajetória da dívida histórica do clube social, que
-registrou uma redução acumulada de R$ 550 milhões, um feito inédito na história da gestão
-financeira da instituição. Para chegar a esse resultado, foi necessária uma atuação em duas
-frentes simultâneas: de um lado, R$ 309 milhões em descontos conquistados a partir de
-negociações estratégicas com credores e da disciplina imposta pelo plano de recuperação
-extrajudicial; de outro, R$ 240 milhões efetivamente pagos, o que traduz a seriedade e a solidez
-com que o clube tem conduzido seus compromissos. Mais do que um alívio contábil, esse
-movimento representa uma virada estrutural que reposiciona o Botafogo em um novo patamar de
+O reflexo mais tangível desse esforço está na trajetória da dívida histórica do clube social, que registrou uma redução acumulada de R$ 550 milhões, um feito inédito na história da gestão financeira da instituição. Para chegar a esse resultado, foi necessária uma atuação em duas frentes simultâneas: de um lado, R$ 309 milhões em descontos conquistados a partir de negociações estratégicas com credores e da disciplina imposta pelo plano de recuperação extrajudicial; de outro, R$ 240 milhões efetivamente pagos, o que traduz a seriedade e a solidez com que o clube tem conduzido seus compromissos. Mais do que um alívio contábil, esse movimento representa uma virada estrutural que reposiciona o Botafogo em um novo patamar de gestão financeira.
 
-gestão financeira.
+### EVOLUÇÃO DÍVIDA BFR
+■ Aumento ■ Diminuição ■ Total
 
-EVOLUÇÃO DÍVIDA BFR
+* Dívida Inicial Mar/22: 778.463
+* Correção valor: 319.534
+* Dívida Real: 1.097.997
+* Renegociação: -309.516
+* Pagamento: -240.489
+* Saldo Dez/25: 547.992
 
-E Aumento E Diminuição E Total
-
-1.097.997
-
-319.534
-
-778.463
-
--509.516
-547.992
-
--240.489
-
-Dívida Inicial Mar/22 Correção valor Dívida Real Renegociação Pagamento Saldo Dez/25
-
-Em 2025, a gestão do passivo seguiu seu curso, com negociações e pagamentos que mantiveram
-a trajetória de redução do endividamento iniciada nos anos anteriores. O saldo de dezembro de
-2025 reflete esse avanço acumulado, consolidando uma queda relevante frente ao pico histórico
-da dívida e sinalizando a continuidade do processo de reestruturação financeira do clube.
+Em 2025, a gestão do passivo seguiu seu curso, com negociações e pagamentos que mantiveram a trajetória de redução do endividamento iniciada nos anos anteriores. O saldo de dezembro de 2025 reflete esse avanço acumulado, consolidando uma queda relevante frente ao pico histórico da dívida e sinalizando a continuidade do processo de reestruturação financeira do clube.
 
 --- pág. 10 ---
 
@@ -1037,15 +925,13 @@ a estrutura de base.
 
 --- pág. 21 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-JAF BOTAFOGO
+# SAF BOTAFOGO
 
-RELATÓRIO DO
+# RELATÓRIO DO AUDITOR INDEPENDENTE
 
-AUDITOR
-INDEPENDENTE
-
+### 2025
 
 --- pág. 22 ---
 
@@ -1362,47 +1248,47 @@ Contador CRC 1 SP 132091/0-1 -S- RJ
 
 --- pág. 29 ---
 
-Docus ign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
-JAF BOTAFOGO
+# SAF BOTAFOGO
 
-es
+# DEMONSTRAÇÃO FINANCEIRA
 
-tra
-FINANCEI
-
-AO
-A
-
+### 2025
 
 --- pág. 30 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
-xercicios findos em
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
+**SAF BOTAFOGO**
+
+**Balanço Patrimonial**  
+**Exercícios findos em 31 dezembro de 2025 e 2024**  
 (Valores expressos em milhares de reais)
 
-31/12/2024 31/12/2024
-Nota 31/12/2025 (Reapresentado) 31/12/2025 (Reapresentado)
-Caixa e equivalentes de caixa 4 25.557 128.951 25.658 130.020
-Contas a Receber 5 56.066 114.907 56.066 114.907
-Estoque 6 21.915 5.293 21.915 5.293
-Partes relacionadas 7 279.519 402.125 279.519 402.125
-Adiantamentos 1.597 2.544 1.597 2.544
-Impostos a recuperar 414 426 3.583 3.594
-Despesas antecipadas 8 16.495 6.638 16.495 6.638
-Total do Ativo Circulante 401.563 660.884 404.833 665.121
-Contas a receber 5 15.734 5.837 15.734 5.837
-Partes relacionadas 7 285.164 189.742 285.164 189.742
-Outros ativos 5.227 129 5.227 129
-Investimento 9 8.895 15.439 - -
-Ativo de Direito de Uso 10 13.750 16.843 13.750 16.843
-Imobilizado 11 39.862 14.244 39.862 14.244
-Intangível 12 814.239 521.602 814.239 521.602
-Total do Ativo não circulante 1.182.871 763.836 1.173.976 748.397
-Total do ativo 1.584.434 1.424.720 1.578.809 1.413.517
+| | Nota | Controladora 31/12/2025 | Controladora 31/12/2024 (Reapresentado) | Consolidado 31/12/2025 | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Caixa e equivalentes de caixa | 4 | 25.557 | 128.951 | 25.658 | 130.020 |
+| Contas a Receber | 5 | 56.066 | 114.907 | 56.066 | 114.907 |
+| Estoque | 6 | 21.915 | 5.293 | 21.915 | 5.293 |
+| Partes relacionadas | 7 | 279.519 | 402.125 | 279.519 | 402.125 |
+| Adiantamentos | | 1.597 | 2.544 | 1.597 | 2.544 |
+| Impostos a recuperar | | 414 | 426 | 3.583 | 3.594 |
+| Despesas antecipadas | 8 | 16.495 | 6.638 | 16.495 | 6.638 |
+| **Total do Ativo Circulante** | | **401.563** | **660.884** | **404.833** | **665.121** |
+| | | | | | |
+| Contas a receber | 5 | 15.734 | 5.837 | 15.734 | 5.837 |
+| Partes relacionadas | 7 | 285.164 | 189.742 | 285.164 | 189.742 |
+| Outros ativos | | 5.227 | 129 | 5.227 | 129 |
+| Investimento | 9 | 8.895 | 15.439 | - | - |
+| Ativo de Direito de Uso | 10 | 13.750 | 16.843 | 13.750 | 16.843 |
+| Imobilizado | 11 | 39.862 | 14.244 | 39.862 | 14.244 |
+| Intangível | 12 | 814.239 | 521.602 | 814.239 | 521.602 |
+| **Total do Ativo não circulante** | | **1.182.871** | **763.836** | **1.173.976** | **748.397** |
+| | | | | | |
+| **Total do ativo** | | **1.584.434** | **1.424.720** | **1.578.809** | **1.413.517** |
 
-SAF BOTAFOGO
+1
 
 --- pág. 31 ---
 
@@ -1510,235 +1396,184 @@ SAF BOTAFOGO
 
 --- pág. 35 ---
 
-Exercícios findos em 31 de dezembro de 2025 e 2024
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+
+**SAF BOTAFOGO**
+
+**Demonstração do fluxo de caixa**  
+**Exercícios findos em 31 de dezembro de 2025 e 2024**  
 (Valores expressos em milhares de reais)
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+| | Controladora 31/12/2025 | Controladora 31/12/2024 (Reapresentado) | Consolidado 31/12/2025 | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Fluxo de caixa das atividades operacionais** | | | | |
+| Prejuízo do exercício | (290.898) | (266.817) | (290.898) | (266.817) |
+| **Ajustes dos itens que não afetam o caixa** | | | | |
+| Ajuste de exercícios anteriores | 1 | (11.568) | 1 | (11.568) |
+| Depreciação e amortização | 242.815 | 132.676 | 242.815 | 132.676 |
+| Baixa de imobilizado | 2 | 78 | 2 | 78 |
+| Baixa de atletas | 337.396 | 39.741 | 337.396 | 39.741 |
+| Atualização Monetária | (57.419) | 4.757 | (57.419) | 4.757 |
+| Ajuste a valor presente | 685 | 405 | 685 | 405 |
+| Diferença de variação cambial líquida | (20.035) | 11.353 | (20.035) | 11.353 |
+| Depreciação de arrendamento - direito de uso | 4.770 | 3.925 | 4.770 | 3.925 |
+| Equivalência Patrimonial | 6.544 | 6.509 | - | - |
+| | **223.861** | **(78.941)** | **217.317** | **(85.450)** |
+| **(Aumento) redução de ativos e passivos** | **544.517** | **984.075** | **544.682** | **1.002.899** |
+| Contas a receber | 47.121 | (43.706) | 47.121 | (43.706) |
+| Estoque | (16.622) | 1.723 | (16.622) | 1.723 |
+| Impostos a recuperar | 12 | (222) | 12 | (3.390) |
+| Outros ativos | (5.100) | 1.885 | (5.100) | 1.885 |
+| Investimentos | - | (21.948) | - | - |
+| Adiantamentos Ativos | 947 | (1.056) | 947 | (1.056) |
+| Despesas antecipadas | (9.912) | (2.984) | (9.912) | (2.984) |
+| Fornecedores e contas a pagar | 571.455 | 537.754 | 571.455 | 537.754 |
+| Adiantamentos Passivos | 850 | - | 850 | - |
+| Obrigações sociais e trabalhistas | (46.262) | 54.358 | (46.262) | 54.358 |
+| Obrigações tributárias | 291.919 | 178.714 | 292.084 | 178.758 |
+| Provisão para contingências | 8.364 | 14.090 | 8.364 | 14.090 |
+| Receita Diferida | (187.750) | 345.849 | (187.750) | 345.849 |
+| **Caixa gerado nas operações** | **655.022** | **1.064.457** | **655.187** | **1.083.281** |
+| Impostos pagos | (72.115) | (42.794) | (72.115) | (42.794) |
+| Juros (Recebidos) pagos | (38.390) | (37.588) | (38.390) | (37.588) |
+| **Caixa consumido nas atividades operacionais** | **768.378** | **905.134** | **761.999** | **917.449** |
+| **Fluxos de caixa das atividades de investimentos** | | | | |
+| Mútuo com partes relacionadas | (35.322) | (87.543) | 37.762 | (166.461) |
+| Aquisição Ativo de Direito de Uso | 833 | 6.071 | 833 | 6.071 |
+| Aquisições do Imobilizado | (28.506) | (5.198) | (28.506) | (5.198) |
+| Aquisições do Intangível | (869.962) | (534.576) | (869.962) | (534.576) |
+| **Caixa líquido consumido nas atividades de investimentos** | **(932.957)** | **(621.246)** | **(859.873)** | **(700.164)** |
+| **Fluxo de caixa das atividades de financiamento** | | | | |
+| Aporte de capital | - | 166.166 | - | 166.166 |
+| Contratação de empréstimos e financiamentos | 292.762 | 164.798 | 292.762 | 280.694 |
+| Pagamentos de empréstimos e financiamentos | (225.246) | (546.955) | (303.859) | (607.455) |
+| Pagamento de direito de uso | (7.674) | (5.763) | (7.674) | (5.763) |
+| Juros apropriados | 19.801 | 49.651 | 30.741 | 61.927 |
+| Variação cambial realizada | (18.458) | 1.109 | (18.458) | 1.109 |
+| **Caixa líquido consumido pelas atividades de financiamento** | **61.185** | **(170.994)** | **(6.488)** | **(103.322)** |
+| **Aumento (Redução) líquido de caixa e equivalentes de caixa** | **(103.394)** | **112.894** | **(104.362)** | **113.963** |
+| Caixa e equivalentes de caixa no início do exercício | 128.951 | 16.057 | 130.020 | 16.057 |
+| Caixa e equivalentes de caixa no fim do exercício | 25.557 | 128.951 | 25.658 | 130.020 |
+| | **(103.394)** | **112.894** | **(104.362)** | **113.963** |
 
-31/12/2024 31/12/2024
-31/12/2025 (Reapresentado) 31/12/2025 (Reapresentado)
-Fluxo de caixa das atividades operacionais
-Prejuízo do exercício (290.898) (266.817) (290.898) (266.817)
-Ajustes dos itens que não afetam o caixa
-Ajuste de exercícios anteriores 1 (11.568) 1 (11.568)
-Depreciação e amortização 242.815 132.676 242.815 132.676
-Baixa de imobilizado 2 78 2 78
-Baixa de atletas 337.396 39.741 337.396 39.741
-Atualização Monetária (57.419) 4.757 (57.419) 4.757
-Ajuste a valor presente 685 405 685 405
-Diferença de variação cambial líquida (20.035) 11.353 (20.035) 11.353
-Depreciação de arrendamento - direito de uso 4.770 3.925 4.770 3.925
-Equivalência Patrimonial 6.544 6.509 - -
-223.861 (78.941) 217.317 (85.450)
-(Aumento) redução de ativos e passivos 544.517 984.075 544.682 1.002.899
-Contas a receber 47.121 (43.706) 47.121 (43.706)
-Estoque (16.622) 1.723 (16.622) 1.723
-Impostos a recuperar 12 (222) 12 (3.390)
-Outros ativos (5.100) 1.885 (5.100) 1.885
-Investimentos - (21.948) - -
-Adiantamentos Ativos 947 (1.056) 947 (1.056)
-Despesas antecipadas (9.912) (2.984) (9.912) (2.984)
-Fornecedores e contas a pagar 571.455 537.754 571.455 537.754
-Adiantamentos Passivos 850 - 850 -
-Obrigações sociais e trabalhistas (46.262) 54.358 (46.262) 54.358
-Obrigações tributárias 291.919 178.714 292.084 178.758
-Provisão para contingências 8.364 14.090 8.364 14.090
-Receita Diferida (187.750) 345.849 (187.750) 345.849
-Caixa gerado nas operações 655.022 1.064.457 655.187 1.083.281
-Impostos pagos (72.115) (42.794) (72.115) (42.794)
-Juros (Recebidos) pagos (38.390) (37.588) (38.390) (37.588)
-Caixa consumido nas atividades operacionais 768.378 905.134 761.999 917.449
-Fluxos de caixa das atividades de investimentos
-Mútuo com partes relacionadas (35.322) (87.543) 37.762 (166.461)
-Aquisição Ativo de Direito de Uso 833 6.071 833 6.071
-Aquisições do Imobilizado (28.506) (5.198) (28.506) (5.198)
-Aquisições do Intangível (869.962) (534.576) (869.962) (534.576)
-Caixa líquido consumido nas atividades de (932.957) (621.246) (859.873) (700.164)
-investimentos
-Fluxo de caixa das atividades de financiamento
-Aporte de capital - 166.166 - 166.166
-Contratação de empréstimos e financiamentos 292.762 164.798 292.762 280.694
-Pagamentos de empréstimos e financiamentos (225.246) (546.955) (303.859) (607.455)
-Pagamento de direito de uso (7.674) (5.763) (7.674) (5.763)
-Juros apropriados 19.801 49.651 30.741 61.927
-Variação cambial realizada (18.458) 1.109 (18.458) 1.109
-Caixa líquido consumido pelas atividades de 61.185 (170.994) (6.488) (103.322)
-financiamento
-Aumento (Redução) líquido de caixa e equivalentes (103.394) 112.894 (104.362) 113.963
-de caixa
-Caixa e equivalentes de caixa no início do exercício 128.951 16.057 130.020 16.057
-Caixa e equivalentes de caixa no fim do exercício 25.557 128.951 25.658 130.020
-(103.394) 112.894 (104.362) 113.963
 6
-
-SAF BOTAFOGO
 
 --- pág. 36 ---
 
-JAF BOTAFOGO
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
+**SAF BOTAFOGO**
+
+**Notas explicativas às demonstrações financeiras**  
+**Exercícios findos em 31 de dezembro de 2025 e 2024**  
 (Valores expressos em milhares de reais)
 
-1. Contexto operacional
+### 1. Contexto operacional
 
-A Sociedade Anônima de Futebol Botafogo, (“SAF Botafogo” ou “Companhia”) é uma sociedade anônima de futebol com sede na
-Rua José dos Reis, nº 425, Estádio Nilton Santos, Rio de Janeiro/RJ. Seu objeto social inclui a prática e administração do futebol
-profissional masculino e feminino, formação de atletas, exploração de ativos e direitos relacionados à atividade esportiva e gestão
-de receitas oriundas de patrocínios, transmissões, matchday e negociações de atletas.
+A Sociedade Anônima de Futebol Botafogo, ("SAF Botafogo" ou “Companhia”) é uma sociedade anônima de futebol com sede na Rua José dos Reis, nº 425, Estádio Nilton Santos, Rio de Janeiro/RJ. Seu objeto social inclui a prática e administração do futebol profissional masculino e feminino, formação de atletas, exploração de ativos e direitos relacionados à atividade esportiva e gestão de receitas oriundas de patrocínios, transmissões, matchday e negociações de atletas.
 
-Constituída em dezembro de 2021, a SAF Botafogo recebeu os ativos e passivos relacionados ao departamento de futebol do
-Botafogo de Futebol e Regatas (“BFR”), passando a operar de forma independente a partir de fevereiro de 2022. A Companhia
-segue as disposições da Lei nº 6.404/76 (“Lei das S.A.”) e da Lei nº 14.193/2021 (“Lei da SAF”).
+Constituída em dezembro de 2021, a SAF Botafogo recebeu os ativos e passivos relacionados ao departamento de futebol do Botafogo de Futebol e Regatas ("BFR"), passando a operar de forma independente a partir de fevereiro de 2022. A Companhia segue as disposições da Lei nº 6.404/76 (“Lei das S.A.”) e da Lei nº 14.193/2021 (“Lei da SAF”).
 
-Desde o início das operações, a Companhia implementou uma ampla reestruturação organizacional e operacional, com
-investimentos em infraestrutura esportiva, governança corporativa, estrutura administrativa, marketing e desenvolvimento de
-atletas.
+Desde o início das operações, a Companhia implementou uma ampla reestruturação organizacional e operacional, com investimentos em infraestrutura esportiva, governança corporativa, estrutura administrativa, marketing e desenvolvimento de atletas.
 
-1.1 — Histórico e Estrutura Societária
+#### 1.1 – Histórico e Estrutura Societária
 
-A estrutura acionária da SAF Botafogo é composta majoritariamente pela Eagle Football Holdings, que detém 90% do capital
-social da Companhia, enquanto os 10% restantes pertencem ao Botafogo de Futebol e Regatas. A entrada do investidor foi
-formalizada em 2022 mediante acordo de acionistas que estabeleceu, entre outros pontos, a obrigação de aportes financeiros
-no valor total de RS 350 milhões em até 36 meses. A totalidade desses aportes foi concluída em 2024.
+A estrutura acionária da SAF Botafogo é composta majoritariamente pela Eagle Football Holdings, que detém 90% do capital social da Companhia, enquanto os 10% restantes pertencem ao Botafogo de Futebol e Regatas. A entrada do investidor foi formalizada em 2022 mediante acordo de acionistas que estabeleceu, entre outros pontos, a obrigação de aportes financeiros no valor total de R$ 350 milhões em até 36 meses. A totalidade desses aportes foi concluída em 2024.
 
-Além disso, conforme previsto no mesmo acordo, a Eagle assumiu o compromisso de transferir até RS 900 milhões, corrigidos
-pela Taxa Selic, à associação civil Botafogo de Futebol e Regatas, com a finalidade de viabilizar o pagamento de passivos históricos.
-Esses repasses estão sujeitos a revisões periódicas e ajustes contratuais conforme a evolução financeira da Companhia.
+Além disso, conforme previsto no mesmo acordo, a Eagle assumiu o compromisso de transferir até R$ 900 milhões, corrigidos pela Taxa Selic, à associação civil Botafogo de Futebol e Regatas, com a finalidade de viabilizar o pagamento de passivos históricos. Esses repasses estão sujeitos a revisões periódicas e ajustes contratuais conforme a evolução financeira da Companhia.
 
-1.2 — Sazonalidade da Receita
+#### 1.2 – Sazonalidade da Receita
 
-As receitas da SAF Botafogo estão diretamente ligadas ao calendário esportivo e, portanto, apresentam forte sazonalidade ao
-longo do ano. As competições de maior apelo financeiro — como a Conmebol Libertadores, a Copa do Brasil e o Campeonato
-Brasileiro — têm início, em sua maioria, a partir do segundo trimestre, período em que há maior concentração de receitas com
-transmissão, premiações, bilheteria e ativação de patrocínios.
+As receitas da SAF Botafogo estão diretamente ligadas ao calendário esportivo e, portanto, apresentam forte sazonalidade ao longo do ano. As competições de maior apelo financeiro — como a Conmebol Libertadores, a Copa do Brasil e o Campeonato Brasileiro — têm início, em sua maioria, a partir do segundo trimestre, período em que há maior concentração de receitas com transmissão, premiações, bilheteria e ativação de patrocínios.
 
-Já o primeiro trimestre costuma registrar menor geração de receita, por conta da predominância do Campeonato Carioca, que
-possui menor potencial de arrecadação e visibilidade em relação aos torneios nacionais e internacionais. Ainda assim, esse
-período é importante para a ativação da base de sócios, campanhas promocionais e início da venda de ingressos da temporada.
+Já o primeiro trimestre costuma registrar menor geração de receita, por conta da predominância do Campeonato Carioca, que possui menor potencial de arrecadação e visibilidade em relação aos torneios nacionais e internacionais. Ainda assim, esse período é importante para a ativação da base de sócios, campanhas promocionais e início da venda de ingressos da temporada.
 
-Além do calendário das competições, a sazonalidade nas transferências de atletas também influencia os fluxos financeiros. As
-principais janelas de mercado — no início do ano e no meio da temporada — costumam concentrar as negociações com maior
-impacto no resultado.
+Além do calendário das competições, a sazonalidade nas transferências de atletas também influencia os fluxos financeiros. As principais janelas de mercado — no início do ano e no meio da temporada — costumam concentrar as negociações com maior impacto no resultado.
 
-Compreender esses ciclos é essencial para o planejamento financeiro da Companhia, permitindo uma gestão de caixa mais
-eficiente e a antecipação de eventuais variações nos períodos de menor geração de receita.
+Compreender esses ciclos é essencial para o planejamento financeiro da Companhia, permitindo uma gestão de caixa mais eficiente e a antecipação de eventuais variações nos períodos de menor geração de receita.
 
-SAF BOTAFOGO
+7
 
 --- pág. 37 ---
 
-JAF BOTAFOGO
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
+**SAF BOTAFOGO**
+
+**Notas explicativas às demonstrações financeiras**  
+**Exercícios findos em 31 de dezembro de 2025 e 2024**  
 (Valores expressos em milhares de reais)
 
-1.3 — Regime de Tributação Específica do Futebol (TEF)
+#### 1.3 – Regime de Tributação Específica do Futebol (TEF)
 
-A SAF Botafogo está atualmente enquadrada no Regime de Tributação Específica do Futebol (TEF), instituído pela Lei nº
-14.193/2021, que unifica o recolhimento de tributos federais, como IRPJ, CSLL, PIS/Pasep, COFINS e contribuições
-previdenciárias.
+A SAF Botafogo está atualmente enquadrada no Regime de Tributação Específica do Futebol (TEF), instituído pela Lei nº 14.193/2021, que unifica o recolhimento de tributos federais, como IRPJ, CSLL, PIS/Pasep, COFINS e contribuições previdenciárias.
 
-Nos cinco primeiros anos de operação, o TEF é aplicado com uma alíquota de 5% sobre a receita bruta mensal, excluindo-se dessa
-base os valores provenientes da cessão de direitos desportivos de atletas. A partir do sexto ano de constituição da SAF, essa
-alíquota seria reduzida para 4%, e passa a incidir também sobre as receitas com transferências de atletas.
+Nos cinco primeiros anos de operação, o TEF é aplicado com uma alíquota de 5% sobre a receita bruta mensal, excluindo-se dessa base os valores provenientes da cessão de direitos desportivos de atletas. A partir do sexto ano de constituição da SAF, essa alíquota seria reduzida para 4%, e passa a incidir também sobre as receitas com transferências de atletas.
 
-Contudo, com a aprovação da Reforma Tributária por meio da Lei Complementar nº 214/2025, estão previstas mudanças
-significativas nesse regime a partir de 1º de janeiro de 2027. Além do ajuste nas alíquotas, a base de cálculo será ampliada,
-passando a incluir todas as receitas da Companhia — como transferências de atletas, premiações, programas de sócio-torcedor
-e demais fontes operacionais.
+Contudo, com a aprovação da Reforma Tributária por meio da Lei Complementar nº 214/2025, estão previstas mudanças significativas nesse regime a partir de 1º de janeiro de 2027. Além do ajuste nas alíquotas, a base de cálculo será ampliada, passando a incluir todas as receitas da Companhia — como transferências de atletas, premiações, programas de sócio-torcedor e demais fontes operacionais.
 
-A transição para esse novo modelo ocorrerá de forma gradual, entre 2027 e 2032, conforme previsto na legislação. A Companhia
-acompanha de perto os desdobramentos dessa reforma, com o objetivo de adaptar sua estrutura tributária e planejamento
-financeiro às novas exigências, preservando a previsibilidade e a sustentabilidade de longo prazo.
+A transição para esse novo modelo ocorrerá de forma gradual, entre 2027 e 2032, conforme previsto na legislação. A Companhia acompanha de perto os desdobramentos dessa reforma, com o objetivo de adaptar sua estrutura tributária e planejamento financeiro às novas exigências, preservando a previsibilidade e a sustentabilidade de longo prazo.
 
-1.4 — Reestruturação do Botafogo
+#### 1.4 – Reestruturação do Botafogo
 
-O ano de 2025 marcou mais um capítulo importante na consolidação da SAF Botafogo. O clube avançou de forma consistente
-em sua estrutura física, gestão institucional e desempenho esportivo, reafirmando um projeto de longo prazo baseado em
-profissionalismo, inovação e excelência.
+O ano de 2025 marcou mais um capítulo importante na consolidação da SAF Botafogo. O clube avançou de forma consistente em sua estrutura física, gestão institucional e desempenho esportivo, reafirmando um projeto de longo prazo baseado em profissionalismo, inovação e excelência.
 
-No campo da infraestrutura, o Botafogo deu continuidade à modernização de seus ativos estratégicos, com destaque para o
-Centro de Treinamento e o Estádio Nilton Santos. Entre as entregas, destaca-se a nova área molhada do estádio, equipada com
-hidromassagem, crioterapia e massoterapia, voltada à recuperação e ao bem-estar dos atletas. No CT, avançou-se com o Espaço
-Recovery, com áreas seca e molhada, piscinas terapêuticas, sauna, banheiras de hidromassagem e espaços destinados a terapias
-complementares, integrando tecnologia, ciência e performance em um ambiente de alto nível.
+No campo da infraestrutura, o Botafogo deu continuidade à modernização de seus ativos estratégicos, com destaque para o Centro de Treinamento e o Estádio Nilton Santos. Entre as entregas, destaca-se a nova área molhada do estádio, equipada com hidromassagem, crioterapia e massoterapia, voltada à recuperação e ao bem-estar dos atletas. No CT, avançou-se com o Espaço Recovery, com áreas seca e molhada, piscinas terapêuticas, sauna, banheiras de hidromassagem e espaços destinados a terapias complementares, integrando tecnologia, ciência e performance em um ambiente de alto nível.
 
-Como parte do compromisso com a alta performance, o clube firmou parceria com a Oxy Câmaras Hiperbáricas, incorporando
-tecnologia de oxigenoterapia hiperbárica à rotina dos atletas, ampliando a capacidade de recuperação, prevenção de lesões e
-otimização do desempenho esportivo.
+Como parte do compromisso com a alta performance, o clube firmou parceria com a Oxy Câmaras Hiperbáricas, incorporando tecnologia de oxigenoterapia hiperbárica à rotina dos atletas, ampliando a capacidade de recuperação, prevenção de lesões e otimização do desempenho esportivo.
 
-Na frente comercial, a SAF celebrou contrato de patrocínio master para exploração do espaço principal do uniforme a partir de
-2025. O acordo, considerado um dos mais relevantes da história do clube sob a perspectiva financeira, reforça a força da marca
-Botafogo e evidencia o reconhecimento do mercado ao projeto de gestão implementado.
+Na frente comercial, a SAF celebrou contrato de patrocínio master para exploração do espaço principal do uniforme a partir de 2025. O acordo, considerado um dos mais relevantes da história do clube sob a perspectiva financeira, reforça a força da marca Botafogo e evidencia o reconhecimento do mercado ao projeto de gestão implementado.
 
-No desenvolvimento esportivo, a integração das categorias de base ao futebol profissional avançou com a inauguração de um
-espaço exclusivo no CT, com mais de 15 salas multidisciplinares e infraestrutura completa para saúde, performance e formação
-de jovens atletas. A equipe Sub-20 passou a treinar integralmente no CT, fortalecendo o processo de transição para a equipe
-principal e consolidando uma metodologia única de desenvolvimento de talentos.
+No desenvolvimento esportivo, a integração das categorias de base ao futebol profissional avançou com a inauguração de um espaço exclusivo no CT, com mais de 15 salas multidisciplinares e infraestrutura completa para saúde, performance e formação de jovens atletas. A equipe Sub-20 passou a treinar integralmente no CT, fortalecendo o processo de transição para a equipe principal e consolidando uma metodologia única de desenvolvimento de talentos.
 
-No âmbito esportivo, o clube recebeu reconhecimento internacional ao ser classificado pela IFFHS como o 5º melhor time do
-mundo em 2024, coroando uma temporada histórica com conquistas da Copa Libertadores da América e do Campeonato
-Brasileiro Série A. O resultado evidencia a consistência competitiva, a qualidade do elenco e a força da gestão.
+No âmbito esportivo, o clube recebeu reconhecimento internacional ao ser classificado pela IFFHS como o 5º melhor time do mundo em 2024, coroando uma temporada histórica com conquistas da Copa Libertadores da América e do Campeonato Brasileiro Série A. O resultado evidencia a consistência competitiva, a qualidade do elenco e a força da gestão.
 
-As iniciativas de 2025 consolidam um ecossistema de alta performance, com foco em excelência, geração de valor sustentável e
-fortalecimento institucional. A SAF Botafogo segue estruturando suas bases para manter protagonismo dentro e fora de campo,
-alinhando visão estratégica, inovação e cuidado integral com atletas, colaboradores e torcedores.
+As iniciativas de 2025 consolidam um ecossistema de alta performance, com foco em excelência, geração de valor sustentável e fortalecimento institucional. A SAF Botafogo segue estruturando suas bases para manter protagonismo dentro e fora de campo, alinhando visão estratégica, inovação e cuidado integral com atletas, colaboradores e torcedores.
 
-SAF BOTAFOGO
+8
 
 --- pág. 38 ---
 
-JAF BOTAFOGO
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
+**SAF BOTAFOGO**
+
+**Notas explicativas às demonstrações financeiras**  
+**Exercícios findos em 31 de dezembro de 2025 e 2024**  
 (Valores expressos em milhares de reais)
 
-2. Base de apresentação e preparação das demonstrações contábeis
+### 2. Base de apresentação e preparação das demonstrações contábeis
 
-As demonstrações contábeis foram elaboradas e preparadas de acordo com as práticas contábeis adotadas no Brasil, as quais
-abrangem os pronunciamentos emitidos pelo Comitê de Pronunciamentos Contábeis (CPCs) aplicáveis a entidades desportivas,
-em conjunto com a ITG 2003 (R2) — Entidades Desportivas. A base de mensuração utilizada foi o custo histórico, exceto quando
-mencionado de forma diversa em notas específicas.
+As demonstrações contábeis foram elaboradas e preparadas de acordo com as práticas contábeis adotadas no Brasil, as quais abrangem os pronunciamentos emitidos pelo Comitê de Pronunciamentos Contábeis (CPCs) aplicáveis a entidades desportivas, em conjunto com a ITG 2003 (R2) – Entidades Desportivas. A base de mensuração utilizada foi o custo histórico, exceto quando mencionado de forma diversa em notas específicas.
 
-Todas as informações relevantes próprias das demonstrações financeiras, e somente elas, estão sendo evidenciadas, e
-correspondem àquelas utilizadas pela Administração na sua gestão.
+Todas as informações relevantes próprias das demonstrações financeiras, e somente elas, estão sendo evidenciadas, e correspondem àquelas utilizadas pela Administração na sua gestão.
 
-2.1 - Moeda funcional e moeda de apresentação
+#### 2.1 - Moeda funcional e moeda de apresentação
 
-As demonstrações contábeis são apresentadas em Reais (RS), que representa a moeda funcional e de apresentação da
-Companhia. Salvo indicação em contrário, os saldos financeiros foram arredondados para o milhar mais próximo, com o objetivo
-de facilitar a leitura e análise das informações.
+As demonstrações contábeis são apresentadas em Reais (R$), que representa a moeda funcional e de apresentação da Companhia. Salvo indicação em contrário, os saldos financeiros foram arredondados para o milhar mais próximo, com o objetivo de facilitar a leitura e análise das informações.
 
-2.2 - Uso de estimativas e julgamentos
+#### 2.2 - Uso de estimativas e julgamentos
 
-A elaboração de demonstrações contábeis exige que a Administração utilize julgamentos, estimativas e premissas que afetam a
-aplicação de políticas contábeis e os valores reportados de ativos, passivos, receitas e despesas. Os resultados reais podem
-divergir dessas estimativas.
+A elaboração de demonstrações contábeis exige que a Administração utilize julgamentos, estimativas e premissas que afetam a aplicação de políticas contábeis e os valores reportados de ativos, passivos, receitas e despesas. Os resultados reais podem divergir dessas estimativas.
 
 As estimativas e premissas são revisadas de forma contínua e seus efeitos são reconhecidos prospectivamente.
 
-2.3 - Base de mensuração
+#### 2.3 - Base de mensuração
 
-As demonstrações financeiras foram preparadas com base no custo histórico como valor de referência. Bases de mensuração
-distintas do custo histórico são aplicadas a itens específicos, quando exigido pelas normas contábeis, e estão detalhadas nas
-respectivas notas explicativas.
+As demonstrações financeiras foram preparadas com base no custo histórico como valor de referência. Bases de mensuração distintas do custo histórico são aplicadas a itens específicos, quando exigido pelas normas contábeis, e estão detalhadas nas respectivas notas explicativas.
 
-2.4 - Novos pronunciamentos contábeis e revisões aplicadas
+#### 2.4 - Novos pronunciamentos contábeis e revisões aplicadas
 
-2.4.1 - Os principais pronunciamentos e alterações aplicados pela primeira vez no exercício de 2025
+##### 2.4.1 - Os principais pronunciamentos e alterações aplicados pela primeira vez no exercício de 2025
 
-As novas normas IFRS são aplicadas no Brasil após a emissão dos respectivos pronunciamentos pelo Comitê de Pronunciamentos
-Contábeis ("CPC") e aprovação pelos órgãos reguladores competentes.
+As novas normas IFRS são aplicadas no Brasil após a emissão dos respectivos pronunciamentos pelo Comitê de Pronunciamentos Contábeis ("CPC") e aprovação pelos órgãos reguladores competentes.
 
 Os principais pronunciamentos e alterações aplicados pela primeira vez no exercício de 2025 foram:
 
-a) Orientação Técnica OCPC 10 — Créditos de Carbono, Permissões de Emissão (allowance) e Crédito de Descarbonização
-Aprovada em 2024 pelo CPC, CFC e CVM
+a) **Orientação Técnica OCPC 10 – Créditos de Carbono, Permissões de Emissão (allowance) e Crédito de Descarbonização Aprovada em 2024 pelo CPC, CFC e CVM**  
+Esta orientação torna-se obrigatória para exercícios iniciados em ou após 01/01/2025. Ela estabelece requisitos de reconhecimento, mensuração e evidenciação para créditos de descarbonização em todas as fases (originação, negociação, aquisição e uso/aposentadoria), bem como para os passivos associados a obrigações legais ou não formalizadas de descarbonização.
 
-Esta orientação torna-se obrigatória para exercícios iniciados em ou após 01/01/2025. Ela estabelece requisitos de
-reconhecimento, mensuração e evidenciação para créditos de descarbonização em todas as fases (originação,
-negociação, aquisição e uso/aposentadoria), bem como para os passivos associados a obrigações legais ou não
-formalizadas de descarbonização.
-
-SAF BOTAFOGO
+9
 
 --- pág. 39 ---
 
@@ -1798,522 +1633,451 @@ SAF BOTAFOGO
 
 --- pág. 40 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
+**SAF BOTAFOGO**
+
+**Notas explicativas às demonstrações financeiras**  
+**Exercícios findos em 31 de dezembro de 2025 e 2024**  
 (Valores expressos em milhares de reais)
 
-2.4.3 - Impactos da Reforma Tributária
+##### 2.4.3 - Impactos da Reforma Tributária
 
-a) Reforma tributária do consumo (LC 214/2025)
+###### a) Reforma tributária do consumo (LC 214/2025)
 
-A Emenda Constitucional nº 132/2023, promulgada em 20 de dezembro de 2023, promoveu a reforma do sistema de
-tributação sobre o consumo no Brasil, conhecida como “Reforma Tributária”. O novo sistema composto por dois
-tributos (IBS e CBS) sucederá cinco tributos atuais (PIS, COFINS, ICMS, ISS e IPI).
+A Emenda Constitucional nº 132/2023, promulgada em 20 de dezembro de 2023, promoveu a reforma do sistema de tributação sobre o consumo no Brasil, conhecida como “Reforma Tributária”. O novo sistema composto por dois tributos (IBS e CBS) sucederá cinco tributos atuais (PIS, COFINS, ICMS, ISS e IPI).
 
-Em 16 de janeiro de 2025, foi sancionada a Lei Complementar (LC) nº 214/2025, que regulamentou e operacionalizou
-os novos tributos sobre o consumo, notadamente o Imposto sobre Bens e Serviços (IBS), a Contribuição sobre Bens e
-Serviços (CBS) e o Imposto Seletivo (IS), detalhando fatos geradores, bases de cálculo, regimes e governança (inclusive
-o Comitê Gestor do IBS.
+Em 16 de janeiro de 2025, foi sancionada a Lei Complementar (LC) nº 214/2025, que regulamentou e operacionalizou os novos tributos sobre o consumo, notadamente o Imposto sobre Bens e Serviços (IBS), a Contribuição sobre Bens e Serviços (CBS) e o Imposto Seletivo (IS), detalhando fatos geradores, bases de cálculo, regimes e governança (inclusive o Comitê Gestor do IBS.
 
 Principais Substitutos e Mudanças:
 
-e CBS (Contribuição sobre Bens e Serviços): Contribuição de âmbito Federal que substituirá o PIS e COFINS. Vigência a
-partir de 2027, com período de teste durante 2026, ocasião em que será destacado percentual nos documentos
-fiscais;
+- **CBS (Contribuição sobre Bens e Serviços):** Contribuição de âmbito Federal que substituirá o PIS e COFINS. Vigência a partir de 2027, com período de teste durante 2026, ocasião em que será destacado percentual nos documentos fiscais;
+- **IBS (Imposto sobre Bens e Serviços):** Imposto de âmbito estadual e municipal que substituirá o ICMS e ISS. Vigência gradual a partir de 2027 com implementação plena a partir de 2033;
+- **Imposto Seletivo (IS):** Novo Tributo que tem como foco desestimular o consumo de itens prejudiciais à saúde e ao meio ambiente (cigarros, bebidas alcoólicas, carros poluentes). A vigência do IS será a partir de 2027; e,
+- **Manutenção Restrita do IPI:** O IPI inicialmente não será totalmente extinto, continuando a incidir de forma restrita sobre produtos industrializados na Zona Franca de Manaus. A partir de 2033, esse imposto será extinto.
 
-e IBS (Imposto sobre Bens e Serviços): Imposto de âmbito estadual e municipal que substituirá o ICMS e ISS. Vigência
-gradual a partir de 2027 com implementação plena a partir de 2033;
+###### b) Reforma de incentivos e benefícios fiscais (LC 224/2025)
 
-e Imposto Seletivo (IS): Novo Tributo que tem como foco desestimular o consumo de itens prejudiciais à saúde e ao
+A Lei Complementar n° 224/2025, de 26 de dezembro de 2025, dispõe sobre a redução e critérios de concessão de incentivos e benefícios de natureza tributária, financeira ou creditícia, concedidos exclusivamente pela União Federal e aplicáveis ao IRPJ, CSSL, PIS, COFINS, IPI, II e Contribuição Previdência Patronal. De modo sucinto, temos:
 
-meio ambiente (cigarros, bebidas alcoólicas, carros poluentes). A vigência do IS será a partir de 2027; e,
+- Critérios mais restritivos para concessão, ampliação e prorrogação de benefícios e incentivos;
+- Redução linear de 10% dos benefícios fiscais;
+- Alteração nas tributações de Fintechs, Juros sobre Capital Próprio e Bets; e
+- Estabelece regras de responsabilidade solidária no recolhimento de tributos sobre apostas de quota fixa (bets).
 
-e Manutenção Restrita do IPI: O IPl inicialmente não será totalmente extinto, continuando a incidir de forma restrita
-sobre produtos industrializados na Zona Franca de Manaus. A partir de 2033, esse imposto será extinto.
+Não se espera que as normas novas e alterações em normas existentes, que possuem início de vigência em exercícios posteriores ao findo em 31 de dezembro de 2025 tenham impacto significativo nas demonstrações financeiras da Sociedade.
 
-b) Reforma de incentivos e benefícios fiscais (LC 224/2025)
-
-A Lei Complementar nº 224/2025, de 26 de dezembro de 2025, dispõe sobre a redução e critérios de concessão de
-incentivos e benefícios de natureza tributária, financeira ou creditícia, concedidos exclusivamente pela União Federal e
-aplicáveis ao IRPJ, CSSL, PIS, COFINS, IPI, Ile Contribuição Previdência Patronal. De modo sucinto, temos:
-
-e Critérios mais restritivos para concessão, ampliação e prorrogação de benefícios e incentivos;
-e Redução linear de 10% dos benefícios fiscais;
-e Alteração nas tributações de Fintechs, Juros sobre Capital Próprio e Bets; e
-
-e Estabelece regras de responsabilidade solidária no recolhimento de tributos sobre apostas de quota fixa (bets).
-
-Não se espera que as normas novas e alterações em normas existentes, que possuem início de vigência em exercícios posteriores
-ao findo em 31 de dezembro de 2025 tenham impacto significativo nas demonstrações financeiras da Sociedade.
-
-SAF BOTAFOGO
+11
 
 --- pág. 41 ---
 
-JAF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-2.5 — Consolidação das Demonstrações Financeiras
+**2.5 – Consolidação das Demonstrações Financeiras**
 
-Em 2024, a SAF Botafogo adquiriu a totalidade das ações da empresa SAF Botafogo Base Ltda, atuante no setor esportivo,
-passando a deter 100% de seu capital social, conforme detalhado na Nota Explicativa nº 09. Com essa operação, a Companhia
-passou a exercer controle direto sobre a nova subsidiária, em conformidade com os critérios estabelecidos pelo Pronunciamento
-Técnico CPC 36 (R3) — Demonstrações Consolidadas.
+Em 2024, a SAF Botafogo adquiriu a totalidade das ações da empresa SAF Botafogo Base Ltda, atuante no setor esportivo, passando a deter 100% de seu capital social, conforme detalhado na Nota Explicativa nº 09. Com essa operação, a Companhia passou a exercer controle direto sobre a nova subsidiária, em conformidade com os critérios estabelecidos pelo Pronunciamento Técnico CPC 36 (R3) – Demonstrações Consolidadas.
 
-As demonstrações financeiras consolidadas incluem as contas da Companhia e de sua controlada, são elaboradas para o mesmo
-exercício de divulgação da Companhia, empregando práticas contábeis uniformes, e foram elaboradas de acordo com os
-princípios de consolidação.
+As demonstrações financeiras consolidadas incluem as contas da Companhia e de sua controlada, são elaboradas para o mesmo exercício de divulgação da Companhia, empregando práticas contábeis uniformes, e foram elaboradas de acordo com os princípios de consolidação.
 
-O controle sobre as entidades é obtido quando a Companhia tem o poder de controlar suas políticas financeiras e operacionais
-e tem a capacidade de auferir benefícios e estar exposta aos riscos de suas atividades. A controlada é consolidada a partir da data
-em que o controle integral se inicia, até a data que deixa de existir.
+O controle sobre as entidades é obtido quando a Companhia tem o poder de controlar suas políticas financeiras e operacionais e tem a capacidade de auferir benefícios e estar exposta aos riscos de suas atividades. A controlada é consolidada a partir da data em que o controle integral se inicia, até a data que deixa de existir.
 
-Consequentemente, os saldos de ativos, passivos e resultados são consolidados integralmente. A participação de acionistas não
-controladores é mensurada e demonstrada de forma destacada no patrimônio líquido, mediante a aplicação do percentual de
-
-participação sobre o valor patrimonial das controladas.
+Consequentemente, os saldos de ativos, passivos e resultados são consolidados integralmente. A participação de acionistas não controladores é mensurada e demonstrada de forma destacada no patrimônio líquido, mediante a aplicação do percentual de participação sobre o valor patrimonial das controladas.
 
 A emissão desta demonstração contábil foi autorizada pela Diretoria em 30 de abril de 2026.
 
-SAF BOTAFOGO
+12
 
 --- pág. 42 ---
 
-JAF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-3. Reapresentação
+**3. Reapresentação**
 
-3.1 — Contexto e Justificativa
+**3.1 – Contexto e Justificativa**
 
-No âmbito das transações com partes relacionadas, a Companhia realizou um estudo interno que evidenciou equívocos na
-alocação de determinados saldos e a necessidade de reclassificação. Com base nessa análise, e após validação junto à
-Administração, foram efetuados os devidos ajustes contábeis, com vistas à adequada reapresentação das demonstrações
-financeiras.
+No âmbito das transações com partes relacionadas, a Companhia realizou um estudo interno que evidenciou equívocos na alocação de determinados saldos e a necessidade de reclassificação. Com base nessa análise, e após validação junto à Administração, foram efetuados os devidos ajustes contábeis, com vistas à adequada reapresentação das demonstrações financeiras.
 
-Nesse contexto, a Administração da SAF Botafogo procedeu à reclassificação de saldos anteriormente registrados no balanço
-patrimonial para o resultado do período, em função da identificação de despesas previamente reconhecidas como sendo de
-responsabilidade da SAF Botafogo, mas que não lhe eram atribuíveis. Tais ajustes visam assegurar maior aderência à substância
-econômica das transações e aprimorar a adequada apresentação das obrigações. Essas despesas referem-se, substancialmente,
-a gastos relacionados a operações indevidamente registrados pela SAF Botafogo, bem como a inconsistências na identificação
-da contraparte responsável.
+Nesse contexto, a Administração da SAF Botafogo procedeu à reclassificação de saldos anteriormente registrados no balanço patrimonial para o resultado do período, em função da identificação de despesas previamente reconhecidas como sendo de responsabilidade da SAF Botafogo, mas que não lhe eram atribuíveis. Tais ajustes visam assegurar maior aderência à substância econômica das transações e aprimorar a adequada apresentação das obrigações. Essas despesas referem-se, substancialmente, a gastos relacionados a operações indevidamente registrados pela SAF Botafogo, bem como a inconsistências na identificação da contraparte responsável.
 
-Por fim, todas as movimentações e ajustes efetuados encontram-se devidamente suportados por documentação interna,
-assegurando a rastreabilidade e a integridade das informações. A Administração entende que tais ajustes não apenas corrigem
-a classificação contábil anteriormente adotada, como também elevam o nível de transparência e comparabilidade das
-demonstrações financeiras.
+Por fim, todas as movimentações e ajustes efetuados encontram-se devidamente suportados por documentação interna, assegurando a rastreabilidade e a integridade das informações. A Administração entende que tais ajustes não apenas corrigem a classificação contábil anteriormente adotada, como também elevam o nível de transparência e comparabilidade das demonstrações financeiras.
 
-SAF BOTAFOGO
+13
 
 --- pág. 43 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
-Exercicios findos em 31 de dezembro de 2025 e 2024
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-e Balanço Patrimonial Ativo
+• **Balanço Patrimonial Ativo**
 
-Controladora Consolidado
+| | Controladora 31/12/2024 (Apresentado) | Controladora Ajustes | Controladora 31/12/2024 (Reapresentado) | Consolidado 31/12/2024 (Apresentado) | Consolidado Ajustes | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Caixa e equivalentes de caixa | 128.951 | - | 128.951 | 130.020 | - | 130.020 |
+| Contas a receber | 114.907 | - | 114.907 | 114.907 | - | 114.907 |
+| Estoque | 5.293 | - | 5.293 | 5.293 | - | 5.293 |
+| Partes relacionadas | 368.957 | 33.167 | 402.125 | 368.957 | 33.167 | 402.125 |
+| Adiantamentos | 2.544 | - | 2.544 | 2.544 | - | 2.544 |
+| Impostos a recuperar | 426 | - | 426 | 3.594 | - | 3.594 |
+| Despesas antecipadas | 6.638 | - | 6.638 | 6.638 | - | 6.638 |
+| **Total do ativo circulante** | **627.716** | **33.167** | **660.884** | **631.953** | **33.167** | **665.120** |
+| | | | | | | |
+| Contas a receber | 5.837 | - | 5.837 | 5.837 | - | 5.837 |
+| Partes relacionadas | 189.742 | - | 189.742 | 189.742 | - | 189.742 |
+| Outros ativos | 129 | - | 129 | 129 | - | 129 |
+| Investimento | 15.439 | - | 15.439 | - | - | - |
+| Ativo de Direito de Uso | 16.843 | - | 16.843 | 16.843 | - | 16.843 |
+| Imobilizado | 14.244 | - | 14.244 | 14.244 | - | 14.244 |
+| Intangível | 521.602 | - | 521.602 | 521.602 | - | 521.602 |
+| **Total do ativo não circulante** | **763.836** | **-** | **763.836** | **748.397** | **-** | **748.397** |
+| | | | | | | |
+| **Total do Ativo** | **1.391.552** | **33.167** | **1.424.720** | **1.380.350** | **33.167** | **1.413.517** |
 
-31/12/2024 ] 31/12/2024 31/12/2024 ] 31/12/2024
-Ajustes Ajustes
-
-(Apresentado) (Reapresentado) (Apresentado) (Reapresentado)
-Caixa e equivalentes de caixa 128.951 - 128.951 130.020 - 130.020
-Contas a receber 114.907 - 114.907 114.907 - 114.907
-Estoque 5.293 - 5.293 5.293 - 5.293
-Partes relacionadas 368.957 33.167 402.125 368.957 33.167 402.125
-Adiantamentos 2.544 - 2.544 2.544 - 2.544
-Impostos a recuperar 426 - 426 3.594 - 3.594
-Despesas antecipadas 6.638 - 6.638 6.638 - 6.638
-Total do ativo circulante 627.716 33.167 660.884 631.953 33.167 665.120
-Contas a receber 5.837 - 5.837 5.837 - 5.837
-Partes relacionadas 189.742 - 189.742 189.742 - 189.742
-Outros ativos 129 - 129 129 - 129
-Investimento 15.439 - 15.439 - - -
-Ativo de Direito de Uso 16.843 - 16.843 16.843 - 16.843
-Imobilizado 14.244 - 14.244 14.244 - 14.244
-Intangível 521.602 - 521.602 521.602 - 521.602
-Total do ativo não circulante 763.836 - 763.836 748.397 - 748.397
-Total do Ativo 1.391.552 33.167 1.424.720 1.380.350 33.167 1.413.517
-
-SAF BOTAFOGO
+14
 
 --- pág. 44 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
-JAF BOTAFOGO
-
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-e Balanço Patrimonial Passivo
+• **Balanço Patrimonial Passivo**
 
-Controlada Consolidado
+| | Controlada 31/12/2024 (Apresentado) | Controlada Ajustes | Controlada 31/12/2024 (Reapresentado) | Consolidado 31/12/2024 (Apresentado) | Consolidado Ajustes | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Fornecedores e contas a pagar | 479.803 | - | 479.803 | 479.803 | - | 479.803 |
+| Empréstimos e financiamentos | 48.112 | - | 48.112 | 115.784 | - | 115.784 |
+| Obrigações trabalhistas | 78.211 | - | 78.211 | 78.211 | - | 78.211 |
+| Obrigações tributárias | 97.594 | - | 97.594 | 97.637 | - | 97.637 |
+| Partes relacionadas | 80.184 | - | 80.184 | 1.267 | - | 1267 |
+| Passivo de arrendamento | 4.089 | - | 4.089 | 4.089 | - | 4.089 |
+| Receita diferida | 421.939 | - | 421.939 | 421.939 | - | 421.939 |
+| **Total do passivo circulante** | **1.209.932** | **-** | **1.209.932** | **1.198.730** | | **1.198.730** |
+| | | | | | | |
+| Fornecedores e contas a pagar | 168.164 | - | 168.164 | 168.164 | - | 168.164 |
+| Obrigações tributárias | 154.438 | - | 154.438 | 154.438 | - | 154.438 |
+| Provisão para contingências | 18.340 | - | 18.340 | 18.340 | - | 18.340 |
+| Passivo de arrendamento | 14.864 | - | 14.864 | 14.864 | - | 14.864 |
+| **Total do passivo não circulante** | **355.806** | **-** | **355.806** | **355.806** | **-** | **355.806** |
+| | | | | | | |
+| **Total do Passivo** | **1.565.738** | **-** | **1.565.738** | **1.554.536** | **-** | **1.554.536** |
+| | | | | | | |
+| Capital Social | 375.309 | - | 375.309 | 375.309 | | 375.309 |
+| Prejuízos Acumulados | (249.512) | - | (249.512) | (249.512) | | (249.512) |
+| Resultado do período | (299.983) | 33.167 | (266.817) | (299.983) | 33.167 | (266.817) |
+| **Total do patrimônio líquido** | **(174.186)** | **33.167** | **(141.020)** | **(174.186)** | **33.167** | **(141.020)** |
+| | | | | | | |
+| **Total do passivo e patrimônio líquido** | **1.391.552** | **33.167** | **1.424.720** | **1.380.350** | **33.167** | **1.413.517** |
 
-31/12/2024 ) 31/12/2024 31/12/2024 ) 31/12/2024
-Ajustes Ajustes
-(Apresentado) (Reapresentado) (Apresentado) (Reapresentado)
-
-Fornecedores e contas a pagar 479.803 - 479.803 479.803 - 479.803
-Empréstimos e financiamentos 48.112 - 48.112 115.784 - 115.784
-Obrigações trabalhistas 78.211 - 78.211 78.211 - 78.211
-Obrigações tributárias 97.594 - 97.594 97.637 - 97.637
-Partes relacionadas 80.184 - 80.184 1.267 - 1267
-Passivo de arrendamento 4.089 - 4.089 4.089 - 4.089
-Receita diferida 421.939 - 421.939 421.939 - 421.939
-Total do passivo circulante 1.209.932 - 1.209.932 1.198.730 1.198.730
-Fornecedores e contas a pagar 168.164 - 168.164 168.164 - 168.164
-Obrigações tributárias 154.438 - 154.438 154.438 - 154.438
-Provisão para contingências 18.340 - 18.340 18.340 - 18.340
-Passivo de arrendamento 14.864 - 14.864 14.864 - 14.864
-Total do passivo não circulante 355.806 - 355.806 355.806 - 355.806
-Total do Passivo 1.565.738 - 1.565.738 1.554.536 - 1.554.536
-Capital Social 375.309 - 375.309 375.309 375.309
-Prejuízos Acumulados (249.512) - (249.512) (249.512) (249.512)
-Resultado do período (299.983) 33.167 (266.817) (299.983) 33.167 (266.817)
-Total do patrimônio líquido (174.186) 33.167 (141.020) (174.186) 33.167 (141.020)
-Total do passivo e patrimônio 1391552 33.167 1.424.720 1.380.350 33.167 1413.517
-
-líquido
-
-SAF BOTAFOGO
+15
 
 --- pág. 45 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-e Demonstração do resultado do exercício
+• **Demonstração do resultado do exercício**
 
-Controlada Consolidado
+| | Controlada 31/12/2024 (Apresentado) | Controlada Ajustes | Controlada 31/12/2024 (Reapresentado) | Consolidado 31/12/2024 (Apresentado) | Consolidado Ajustes | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Receita Operacional | 607.322 | - | 607.322 | 607.322 | - | 607.322 |
+| Deduções sobre a receita | (55.051) | - | (55.051) | (55.051) | - | (55.051) |
+| **Receita Operacional líquida** | **552.271** | **-** | **552.271** | **552.271** | **-** | **552.271** |
+| | | | | | | |
+| Custo dos serviços prestados | (608.584) | - | (608.584) | (608.584) | - | (608.584) |
+| | | | | | | |
+| **Resultado Bruto** | **(56.313)** | **-** | **(56.313)** | **(56.313)** | **-** | **(56.313)** |
+| | | | | | | |
+| Despesas gerais e administrativas | (145.897) | - | (145.897) | (145.904) | - | (145.904) |
+| Outras despesas operacionais | (623) | - | (623) | (623) | - | (623) |
+| Outras receitas operacionais | 16.056 | 33.167 | 49.223 | 16.056 | 33.167 | 49.223 |
+| Resultado de equivalência patrimonial | (6.509) | - | (6.509) | - | - | - |
+| **Resultado operacional antes da Alienação de Ativos** | **(193.286)** | **33.167** | **(160.119)** | **(186.784)** | **33.167** | **(153.616)** |
+| | | | | | | |
+| Receitas transações de direitos de atletas | 96.356 | - | 96.356 | 96.356 | - | 96.356 |
+| Gastos na transação de direitos de atletas | (45.832) | - | (45.832) | (45.832) | - | (45.832) |
+| | | | | | | |
+| **Outras receitas e despesas operacionais** | **(142.762)** | **33.167** | **(109.595)** | **(136.260)** | **33.167** | **(103.092)** |
+| | | | | | | |
+| Resultado financeiro líquido | (157.221) | - | (157.222) | (163.723) | - | (163.724) |
+| | | | | | | |
+| **Prejuízo do exercício** | **(299.983)** | **33.167** | **(266.817)** | **(299.983)** | **33.167** | **(266.817)** |
 
-31/12/2024 . 31/12/2024 31/12/2024 . 31/12/2024
-Ajustes Ajustes
-(Apresentado) (Reapresentado) (Apresentado) (Reapresentado)
-
-Receita Operacional 607.322 - 607.322 607.322 - 607.322
-Deduções sobre a receita (55.051) - (55.051) (55.051) - (55.051)
-Receita Operacional líquida 552.271 - 552.271 552.271 - 552.271
-Custo dos serviços prestados (608.584) - (608.584) (608.584) - (608.584)
-Resultado Bruto (56.313) - (56.313) (56.313) - (56.313)
-Despesas gerais e administrativas (145.897) - (145.897) (145.904) - (145.904)
-Outras despesas operacionais (623) - (623) (623) - (623)
-Outras receitas operacionais 16.056 33.167 49.223 16.056 33.167 49.223
-Resultado de equivalência (6.509) | (6.509) º º º
-patrimonial
-Resultado operacional antes da
-
-. N . (193.286) 33.167 (160.119) (186.784) 33.167 (153.616)
-Alienação de Ativos
-Receitas transações de direitos de 96.356 ] 96.356 96.356 º 96.356
-atletas
-Gastos na transação de direitos de (45.832) | (45.832) (45.832) º (45.832)
-atletas
-Outras receitas e despesas (142.762) 33.167 (109.595) (136.260) 33.167 (103.092)
-operacionais
-Resultado financeiro líquido (157.221) - (157.222) (163.723) - (163.724)
-Prejuízo do exercício 299.983) 33.167 (266.817) (299.983) 33.167 (266.817)
-
-SAF BOTAFOGO
+16
 
 --- pág. 46 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-e Demonstração do resultado abrangente
+• **Demonstração do resultado abrangente**
 
-31/12/2024 . 31/12/2024
-Ajustes
-(Apresentado) (Reapresentado)
-Lucro (Prejuízo) do Exercício (299.983) 33.167 (266.817)
-Total dos resultados abrangentes (299.983) 33.167 (266.817)
+| | 31/12/2024 (Apresentado) | Ajustes | 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: |
+| Lucro (Prejuízo) do Exercício | (299.983) | 33.167 | (266.817) |
+| **Total dos resultados abrangentes** | **(299.983)** | **33.167** | **(266.817)** |
 
-SAF BOTAFOGO
+17
 
 --- pág. 47 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-e Demonstração das mutações do patrimônio líquido
+• **Demonstração das mutações do patrimônio líquido**
 
-Prejuízos
+| | Capital Social | Prejuízos Acumulados | Total |
+| :--- | :---: | :---: | :---: |
+| **Saldos em 31 de dezembro de 2022** | **127.515** | **(248.288)** | **(120.773)** |
+| | | | |
+| Reversão de integralização de capital | (20.600) | - | (20.600) |
+| Integralização de capital | 102.228 | - | 102.228 |
+| Ajustes retrospectivos | - | 66.382 | 66.382 |
+| Prejuízo do Exercício | - | (56.037) | (56.037) |
+| | | | |
+| **Saldos em 31 de dezembro de 2023** | **209.143** | **(237.943)** | **(28.800)** |
+| | | | |
+| Integralização de capital | 166.166 | - | 166.166 |
+| Adoção da ITG 2003 (R2) | - | (11.569) | (11.569) |
+| Prejuízo do Exercício | - | (266.817) | (266.817) |
+| | | | |
+| **Saldos em 31 de dezembro de 2024 (Reapresentado)** | **375.309** | **(516.329)** | **(141.020)** |
 
-Capital Social acumulados Total
-Saldos em 31 de dezembro de 2022 127.515 (248.288) (120.773)
-Reversão de integralização de capital (20.600) - (20.600)
-Integralização de capital 102.228 - 102.228
-Ajustes retrospectivos - 66.382 66.382
-Prejuízo do Exercício - (56.037) (56.037)
-Saldos em 31 de dezembro de 2023 209.143 (237.943) (28.800)
-Integralização de capital 166.166 - 166.166
-Adoção da ITG 2003 (R2) - (11.569) (11.569)
-Prejuízo do Exercício - (266.817) (266.817)
-Saldos em 31 de dezembro de 2024 (Reapresentado) 375.309 (516.329) (141.020)
-
-SAF BOTAFOGO
+18
 
 --- pág. 48 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-e Demonstração do fluxo de caixa
+• **Demonstração do fluxo de caixa**
 
-Controladora Consolidado
+| | Controladora 31/12/2024 (Apresentado) | Controladora Ajustes | Controladora 31/12/2024 (Reapresentado) | Consolidado 31/12/2024 (Apresentado) | Consolidado Ajustes | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Fluxo de caixa das atividades operacionais** | | | | | | |
+| Lucro do exercício | (299.983) | 33.167 | (266.817) | (299.983) | 33.167 | (266.817) |
+| **Ajustes dos itens que não afetam o caixa** | | | | | | |
+| Ajuste de exercícios anteriores | (11.568) | - | (11.568) | (11.568) | - | (11.568) |
+| Depreciação e amortização | 132.676 | - | 132.676 | 132.676 | - | 132.676 |
+| Baixa de imobilizado | 78 | - | 78 | 78 | - | 78 |
+| Baixa de atletas | 39.741 | - | 39.741 | 39.741 | - | 39.741 |
+| Atualização Monetária | 4.757 | - | 4.757 | 4.757 | - | 4.757 |
+| Ajuste a Valor Presente | 405 | - | 405 | 405 | - | 405 |
+| Diferença de variação cambial líquida | 11.353 | - | 11.353 | 11.353 | - | 11.353 |
+| Depreciação de arrendamento - direito de uso | 3.925 | - | 3.925 | 3.925 | - | 3.925 |
+| Equivalência Patrimonial | 6.509 | - | 6.509 | - | - | - |
+| | **(112.108)** | **33.167** | **(78.941)** | **(118.617)** | **33.167** | **(85.450)** |
+| **(Aumento) redução de ativos e aumento (redução) de passivos** | **984.075** | **-** | **984.075** | **1.002.899** | **-** | **1.002.899** |
+| Contas a receber | (43.706) | - | (43.706) | (43.706) | - | (43.706) |
+| Estoque | 1.723 | - | 1.723 | 1.723 | - | 1.723 |
+| Impostos a recuperar | (222) | - | (222) | (3.390) | - | (3.390) |
+| Outros ativos | 1.885 | - | 1.885 | 1.885 | - | 1.885 |
+| Investimentos | (21.948) | - | (21.948) | - | - | - |
+| Adiantamentos | (1.056) | - | (1.056) | (1.056) | - | (1.056) |
+| Despesas antecipadas | (2.984) | - | (2.984) | (2.984) | - | (2.984) |
+| Fornecedores e contas a pagar | 537.754 | - | 537.754 | 537.754 | - | 537.754 |
+| Obrigações sociais e trabalhistas | 54.358 | - | 54.358 | 54.358 | - | 54.358 |
+| Obrigações tributárias | 178.714 | - | 178.714 | 178.758 | - | 178.758 |
+| Provisão para contingências | 14.090 | - | 14.090 | 14.090 | - | 14.090 |
+| Receita Diferida | 345.849 | - | 345.849 | 345.849 | - | 345.849 |
+| **Caixa gerado nas operações** | **1.064.458** | **-** | **1.064.458** | **1.083.281** | **-** | **1.083.281** |
+| Impostos pagos | (42.794) | - | (42.794) | (42.794) | - | (42.794) |
+| Juros (Recebidos) pagos | (37.588) | - | (37.588) | (37.588) | - | (37.588) |
+| **Caixa aplicado nas atividades operacionais** | **871.968** | **33.167** | **905.134** | **884.283** | **33.167** | **917.449** |
+| **Fluxos de caixa das atividades de investimentos** | | | | | | |
+| Mútuo com partes relacionadas | (54.377) | (33.167) | (87.543) | (133.294) | (33.167) | (166.461) |
+| Aquisição Ativo de Direito de Uso | 6.071 | - | 6.071 | 6.071 | - | 6.071 |
+| Aquisições do Imobilizado | (5.198) | - | (5.198) | (5.198) | - | (5.198) |
+| Aquisições do Intangível | (534.576) | - | (534.576) | (534.576) | - | (534.576) |
+| **Caixa líquido aplicado nas atividades de investimentos** | **(588.080)** | **(33.167)** | **(621.246)** | **(666.997)** | **(33.167)** | **(700.165)** |
 
-31/12/2024 . 31/12/2024 31/12/2024 R 31/12/2024
-(Apresentado) Ajustes (Reapresentado) (Apresentado) Ajustes (Reapresentado)
-
-Fluxo de caixa das atividades
-
-operacionais
-Lucro do exercício (299.983) 33.167 (266.817) (299.983) 33.167 (266.817)
-Ajustes dos itens que não
-
-afetam o caixa
-
-Ajuste de exercícios anteriores (11.568) - (11.568) (11.568) - (11.568)
-Depreciação e amortização 132.676 - 132.676 132.676 - 132.676
-Baixa de imobilizado 78 - 78 78 - 78
-Baixa de atletas 39.741 - 39.741 39.741 - 39.741
-Atualização Monetária 4.757 - 4.757 4.757 - 4.757
-Ajuste a Valor Presente 405 - 405 405 - 405
-ido de variação cambial 11353 . 11353 11.353 . 11.353
-
-Depreciação de arrendamento -
-
-o 3.925 - 3.925 3.925 - 3.925
-direito de uso
-Equivalência Patrimonial 6.509 - 6.509 - - -
-(112.108) 33.167 (78.941) (118.617) 33.167 (85.450)
-(Aumento) redução de ativos e 984.075 - 984.075 1.002.899 - 1.002.899
-aumento (redução) de passivos
-Contas a receber (43.706) - (43.706) (43.706) - (43.706)
-Estoque 1.723 - 1.723 1.723 - 1.723
-Impostos a recuperar (222) - (222) (3.390) - (3.390)
-Outros ativos 1.885 - 1.885 1.885 - 1.885
-Investimentos (21.948) - (21.948) - - -
-Adiantamentos (1.056) - (1.056) (1.056) - (1.056)
-Despesas antecipadas (2.984) - (2.984) (2.984) - (2.984)
-Fornecedores e contas a pagar 537.754 - 537.754 537.754 - 537.754
-Obrigações sociais e trabalhistas 54.358 - 54.358 54.358 - 54.358
-Obrigações tributárias 178.714 - 178.714 178.758 - 178.758
-Provisão para contingências 14.090 - 14.090 14.090 - 14.090
-Receita Diferida 345.849 - 345.849 345.849 - 345.849
-Caixa gerado nas operações 1.064.458 - 1.064.458 1.083.281 - 1.083.281
-Impostos pagos (42.794) - (42.794) (42.794) - (42.794)
-Juros (Recebidos) pagos (37.588) - (37.588) (37.588) - (37.588)
-Caixa aplicado nas atividades 871968 33.167 905.134 884.283 33.167 917.449
-operacionais
-Fluxos de caixa das atividades de
-investimentos
-Mútuo com partes relacionadas (54.377) (33.167) (87.543) (133.294) (33.167) (166.461)
-po usiço Ativo de Direito de 6071 . 6071 6071 . 6071
-Aquisições do Imobilizado (5.198) - (5.198) (5.198) - (5.198)
-Aquisições do Intangível (534.576) - (534.576) (534.576) - (534.576)
-Caixa líquido aplicado nas (588.080) (33.167) (621.246) (666.997) (33.167) (700.165)
-
-atividades de investimentos
-
-SAF BOTAFOGO
+19
 
 --- pág. 49 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-Fluxo de caixa das atividades de
-financiamento
-Aporte de capital 166.166 - 166.166 166.166 - 166.166
-Contratação de empréstimos e
+| | Controladora 31/12/2024 (Apresentado) | Controladora Ajustes | Controladora 31/12/2024 (Reapresentado) | Consolidado 31/12/2024 (Apresentado) | Consolidado Ajustes | Consolidado 31/12/2024 (Reapresentado) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Fluxo de caixa das atividades de financiamento** | | | | | | |
+| Aporte de capital | 166.166 | - | 166.166 | 166.166 | - | 166.166 |
+| Contratação de empréstimos e financiamentos | 164.798 | - | 164.798 | 280.694 | - | 280.694 |
+| Pagamentos de empréstimos e financiamentos | (546.955) | - | (546.955) | (607.455) | - | (607.455) |
+| Pagamento de direito de uso | (5.763) | - | (5.763) | (5.763) | - | (5.763) |
+| Juros apropriados | 49.651 | - | 49.651 | 61.926 | - | 61.926 |
+| Variação cambial realizada | 1.109 | - | 1.109 | 1.109 | - | 1.109 |
+| **Caixa líquido gerado pelas atividades de financiamento** | **(170.994)** | **-** | **(170.994)** | **(103.323)** | **-** | **(103.323)** |
+| | | | | | | |
+| **Aumento (Redução) líquido de caixa e equivalentes de caixa** | **112.894** | **-** | **112.894** | **113.963** | **-** | **113.963** |
+| Caixa e equivalentes de caixa no início do exercício | 16.057 | - | 16.057 | 16.057 | - | 16.057 |
+| Caixa e equivalentes de caixa no fim do exercício | 128.951 | - | 128.951 | 130.020 | - | 130.020 |
+| | **112.894** | **-** | **112.894** | **113.963** | **-** | **113.963** |
 
-. . 164.798 - 164.798 280.694 - 280.694
-financiamentos
-- Pagamentos de empréstimos e (546.955) - (546.955) (607.455) - (607.455)
-financiamentos
-Pagamento de direito de uso (5.763) - (5.763) (5.763) - (5.763)
-Juros apropriados 49.651 - 49.651 61.926 - 61.926
-Variação cambial realizada 1.109 - 1.109 1.109 - 1.109
-Caixa líquido gerado pelas
-atividades de financiamento (170.994) (170.994) (103.323) (103.323)
-Aumento (Redução) líquido de 112.894 - 112.894 113.963 - 113.963
-caixa e equivalentes de caixa
-Caixa e equivalentes de caixa no 16057 . 16057 16.057 . 16.057
-início do exercício
-- Caixa e equivalentes de caixa no 128.951 - 128.951 130.020 - 130.020
-fim do exercício
-112.894 - 112.894 113.963 - 113.963
-
-SAF BOTAFOGO
+20
 
 --- pág. 50 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-4. Caixa e equivalentes de caixa
+**4. Caixa e equivalentes de caixa**
 
-Os saldos classificados dentro da área de Caixa e equivalentes de caixa são compostos por recursos depositados nas contas da
-SAF Botafogo disponíveis para utilização e recursos aplicados em investimentos de liquidez imediata com baixo risco de perdas.
+Os saldos classificados dentro da área de Caixa e equivalentes de caixa são compostos por recursos depositados nas contas da SAF Botafogo disponíveis para utilização e recursos aplicados em investimentos de liquidez imediata com baixo risco de perdas.
 
-Controladora Consolidado
-31/12/2025 31/12/2024 31/12/2025 31/12/2024
-Recursos em caixa 15 368 15 368
-Recursos em bancos 915 6.538 1.016 7.607
-Certificados de Depósito Bancário - CDB's 4.2 24.627 122.045 24.627 122.045
-25.557 128.951 25.658 130.020
+| | | Controladora 31/12/2025 | Controladora 31/12/2024 | Consolidado 31/12/2025 | Consolidado 31/12/2024 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Recursos em caixa | | 15 | 368 | 15 | 368 |
+| Recursos em bancos | | 915 | 6.538 | 1.016 | 7.607 |
+| Certificados de Depósito Bancário - CDB's | 4.2 | 24.627 | 122.045 | 24.627 | 122.045 |
+| | | **25.557** | **128.951** | **25.658** | **130.020** |
 
-4.1 - Política contábil
+**4.1 - Política contábil**
 
-Os equivalentes de caixa são mantidos com a finalidade de atender a compromissos de curto prazo e incluem depósitos bancários
-e investimentos de alta liquidez. A classificação de caixa e equivalente exige que o valor justo dos ativos esteja sujeito a
-insignificante risco de alteração do valor, com conversibilidade inferior a três meses.
+Os equivalentes de caixa são mantidos com a finalidade de atender a compromissos de curto prazo e incluem depósitos bancários e investimentos de alta liquidez. A classificação de caixa e equivalente exige que o valor justo dos ativos esteja sujeito a insignificante risco de alteração do valor, com conversibilidade inferior a três meses.
 
-4.2 - Certificados de Depósito Bancário
+**4.2 - Certificados de Depósito Bancário**
 
-Em 31 de dezembro de 2025, a maior parte do saldo de caixa da SAF Botafogo encontrava-se aplicada em Certificados de Depósito
-Bancário (CDB). Tais aplicações são de alta liquidez, com possibilidade de resgate imediato, e apresentam baixo risco de crédito,
-atendendo, portanto, aos critérios para classificação como equivalentes de caixa, conforme o Pronunciamento Técnico CPC 03 —
-Demonstração dos Fluxos de Caixa.
+Em 31 de dezembro de 2025, a maior parte do saldo de caixa da SAF Botafogo encontrava-se aplicada em Certificados de Depósito Bancário (CDB). Tais aplicações são de alta liquidez, com possibilidade de resgate imediato, e apresentam baixo risco de crédito, atendendo, portanto, aos critérios para classificação como equivalentes de caixa, conforme o Pronunciamento Técnico CPC 03 – Demonstração dos Fluxos de Caixa.
 
-A alocação desses recursos em CDBs está alinhada à política de gestão financeira da Companhia, que busca a otimização da
-rentabilidade dos recursos disponíveis, sem comprometer a liquidez necessária para o cumprimento de obrigações de curto prazo
-e a manutenção da flexibilidade para eventuais oportunidades de investimento.
+A alocação desses recursos em CDBs está alinhada à política de gestão financeira da Companhia, que busca a otimização da rentabilidade dos recursos disponíveis, sem comprometer a liquidez necessária para o cumprimento de obrigações de curto prazo e a manutenção da flexibilidade para eventuais oportunidades de investimento.
 
-No período, as aplicações foram remuneradas a taxas atreladas a um percentual do CDI, as quais variaram em função do prazo
-médio das operações, considerando a característica de liquidez diária e a possibilidade de resgates automáticos.
+No período, as aplicações foram remuneradas a taxas atreladas a um percentual do CDI, as quais variaram em função do prazo médio das operações, considerando a característica de liquidez diária e a possibilidade de resgates automáticos.
 
-SAF BOTAFOGO
+21
 
 --- pág. 51 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-5. Contas a receber
+**5. Contas a receber**
 
-Em 31 de dezembro de 2025, o saldo de contas a receber da SAF Botafogo era composto, principalmente, por valores a receber
-relacionados a patrocínios, transferências de atletas e ao Programa de Sócio Torcedor.
+Em 31 de dezembro de 2025, o saldo de contas a receber da SAF Botafogo era composto, principalmente, por valores a receber relacionados a patrocínios, transferências de atletas e ao Programa de Sócio Torcedor.
 
-Controladora / Consolidado
+| | | Controladora / Consolidado 31/12/2025 | Controladora / Consolidado 31/12/2024 |
+| :--- | :---: | :---: | :---: |
+| Patrocínio | | 7.220 | 6.208 |
+| Publicidade | | 717 | 279 |
+| Transmissão | | - | 4.892 |
+| Venda de direitos comerciais | 5.2 | 2.407 | 80.333 |
+| Transferência de atleta | 5.3 | 56.511 | 16.555 |
+| Aluguel de espaço | | 2.963 | 1.775 |
+| Programa de Sócio Torcedor | | 7.130 | 624 |
+| Licenciamento de produtos | | 457 | 1.204 |
+| E-Commerce | | 3.106 | 3.723 |
+| Outras contas a receber | | 594 | 14.009 |
+| | | **81.105** | **129.602** |
+| Provisão para créditos de liquidação duvidosa | 5.1 | (9.305) | (8.858) |
+| | | **71.800** | **120.744** |
+| **Circulante** | | **56.066** | **114.907** |
+| **Não Circulante** | | **15.734** | **5.837** |
 
-31/12/2025 31/12/2024
-Patrocínio 7.220 6.208
-Publicidade 717 279
-Transmissão - 4.892
-Venda de direitos comerciais 5.2 2.407 80.333
-Transferência de atleta 5.3 56.511 16.555
-Aluguel de espaço 2.963 1.775
-Programa de Sócio Torcedor 7.130 624
-Licenciamento de produtos 457 1.204
-E-Commerce 3.106 3.723
-Outras contas a receber 594 14.009
-81.105 129.602
-Provisão para créditos de liquidação duvidosa 5.1 (9.305) (8.858)
-71.800 120.744
-Circulante 56.066 114.907
-Não Circulante 15.734 5.837
+| | Controladora / Consolidado 31/12/2025 | Controladora / Consolidado 31/12/2024 |
+| :--- | :---: | :---: |
+| A vencer | 42.320 | 70.438 |
+| Vencidos menos de 90 dias | 23.090 | 5.546 |
+| Vencidos entre 91 dias e 180 dias | 4.257 | 43.667 |
+| Vencidos entre 181 dias e 360 dias | 2.134 | 451 |
+| Vencidos Acima de 361 dias | - | 642 |
+| | **71.800** | **120.744** |
 
-31/12/2025 31/12/2024
-A vencer 42.320 70.438
-Vencidos menos de 90 dias 23.090 5.546
-Vencidos entre 91 dias e 180 dias 4.257 43.667
-Vencidos entre 181 dias e 360 dias 2.134 451
-Vencidos Acima de 361 dias - 642
-71.800 120.744
+**5.1 - Política contábil**
 
-5.1 - Política contábil
+A SAF Botafogo adota uma política de constituição da provisão para perdas com créditos de liquidação duvidosa (PCLD) fundamentada em critérios técnicos e comportamentais, com o objetivo de refletir adequadamente o risco de inadimplência em suas demonstrações financeiras. A metodologia utilizada baseia-se na aplicação de percentuais escalonados conforme os intervalos de vencimento dos saldos em aberto, de forma a refletir o aumento do risco de perda à medida que o tempo de atraso se prolonga.
 
-A SAF Botafogo adota uma política de constituição da provisão para perdas com créditos de liquidação duvidosa (PCLD)
-fundamentada em critérios técnicos e comportamentais, com o objetivo de refletir adequadamente o risco de inadimplência em
-suas demonstrações financeiras. A metodologia utilizada baseia-se na aplicação de percentuais escalonados conforme os
-intervalos de vencimento dos saldos em aberto, de forma a refletir o aumento do risco de perda à medida que o tempo de atraso
-se prolonga.
+Os percentuais são definidos considerando a probabilidade decrescente de recuperação dos valores à medida que o atraso aumenta, em linha com as melhores práticas de mercado e com os princípios contábeis da competência e da prudência. A adoção deste modelo também visa atender às exigências de auditoria e garantir maior transparência na apresentação das informações financeiras.
 
-Os percentuais são definidos considerando a probabilidade decrescente de recuperação dos valores à medida que o atraso
-aumenta, em linha com as melhores práticas de mercado e com os princípios contábeis da competência e da prudência. A adoção
-deste modelo também visa atender às exigências de auditoria e garantir maior transparência na apresentação das informações
-financeiras.
+**5.2 - Venda de direitos comerciais**
 
-5.2 - Venda de direitos comerciais
+No exercício de 2023, a SAF Botafogo e outros 25 clubes participantes do Campeonato Brasileiro formaram a entidade Liga Forte União (LFU), com o propósito de negociar os contratos dos Direitos Comerciais do Campeonato Brasileiro das temporadas de 2025 a 2074 (50 anos). Cada um dos 26 clubes detém uma participação na referida entidade. Como parte dessa transação, a LFU negociou 20% do seu negócio com terceiros, o que viabilizou para a SAF Botafogo o valor bruto de R$ 166 milhões. No entanto, houve custos de transação no valor de R$ 5 milhões, referentes à participação que a SAF deixou de deter.
 
-No exercício de 2023, a SAF Botafogo e outros 25 clubes participantes do Campeonato Brasileiro formaram a entidade Liga Forte
-União (LFU), com o propósito de negociar os contratos dos Direitos Comerciais do Campeonato Brasileiro das temporadas de
-2025 a 2074 (50 anos). Cada um dos 26 clubes detém uma participação na referida entidade. Como parte dessa transação, a LFU
-negociou 20% do seu negócio com terceiros, o que viabilizou para a SAF Botafogo o valor bruto de R$ 166 milhões. No entanto,
-houve custos de transação no valor de R$ 5 milhões, referentes à participação que a SAF deixou de deter.
-
-SAF BOTAFOGO
+22
 
 --- pág. 52 ---
 
-JAF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-O montante foi reconhecido como Direitos a Receber da Venda de Participação na LFU, em contrapartida de Outras Receitas
-Operacionais no resultado do exercício de 2023. Destes, R$ 77 milhões foram recebidos em novembro de 2023.
+O montante foi reconhecido como Direitos a Receber da Venda de Participação na LFU, em contrapartida de Outras Receitas Operacionais no resultado do exercício de 2023. Destes, R$ 77 milhões foram recebidos em novembro de 2023.
 
-O saldo remanescente de R$ 80 milhões foi posteriormente renegociado e recomprado pela SAF Botafogo. Quanto ao tratamento
-contábil dessa operação, a LFU submeteu consulta técnica ao Conselho Federal de Contabilidade (CFC), visando à validação do
-enquadramento conforme as normas brasileiras de contabilidade (BRGAAP). A posição técnica adotada estabelece que a
-recompra deve ser reconhecida como aquisição de ativo intangível, mensurada pelo custo de aquisição e amortizada ao longo
-da vida útil contratual estimada em 50 anos.
+O saldo remanescente de R$ 80 milhões foi posteriormente renegociado e recomprado pela SAF Botafogo. Quanto ao tratamento contábil dessa operação, a LFU submeteu consulta técnica ao Conselho Federal de Contabilidade (CFC), visando à validação do enquadramento conforme as normas brasileiras de contabilidade (BRGAAP). A posição técnica adotada estabelece que a recompra deve ser reconhecida como aquisição de ativo intangível, mensurada pelo custo de aquisição e amortizada ao longo da vida útil contratual estimada em 50 anos.
 
-5.3 - Transferência de atleta
+**5.3 - Transferência de atleta**
 
-Em 2025, houve um acréscimo no contas a receber referente a transferência de atleta. Esse aumento está relacionado ao maior
-número de negociações realizadas durante o ano, com o objetivo de otimizar a gestão do elenco e gerar receitas operacionais
-adicionais.
+Em 2025, houve um acréscimo no contas a receber referente a transferência de atleta. Esse aumento está relacionado ao maior número de negociações realizadas durante o ano, com o objetivo de otimizar a gestão do elenco e gerar receitas operacionais adicionais.
 
-Destaca-se que parte relevante dessas transações foi estruturada com recebimentos parcelados, prática comum nesse tipo de
-operação, o que resultou no reconhecimento de valores a receber em períodos subsequentes. Em particular, existem valores
-significativos a receber dos clubes Sport Club do Recife e Clube Atlético Mineiro, referentes aos atletas Carlos Alberto e Junior
-Santos, respectivamente. Dessa forma, o volume mais elevado de transferências, aliado às condições comerciais pactuadas,
-contribuiu diretamente para a variação positiva do saldo ao final do exercício.
+Destaca-se que parte relevante dessas transações foi estruturada com recebimentos parcelados, prática comum nesse tipo de operação, o que resultou no reconhecimento de valores a receber em períodos subsequentes. Em particular, existem valores significativos a receber dos clubes Sport Club do Recife e Clube Atlético Mineiro, referentes aos atletas Carlos Alberto e Junior Santos, respectivamente. Dessa forma, o volume mais elevado de transferências, aliado às condições comerciais pactuadas, contribuiu diretamente para a variação positiva do saldo ao final do exercício.
 
-6. Estoques
+**6. Estoques**
 
-Os saldos atribuídos à área de Estoque abrangem uma variedade de materiais esportivos destinados ao uso pelas equipes
-profissionais e amadoras da SAF em suas atividades, bem como para comercialização no e-commerce e revenda.
+Os saldos atribuídos à área de Estoque abrangem uma variedade de materiais esportivos destinados ao uso pelas equipes profissionais e amadoras da SAF em suas atividades, bem como para comercialização no e-commerce e revenda.
 
-Controladora / Consolidado
+| | Controladora / Consolidado 31/12/2025 | Controladora / Consolidado 31/12/2024 |
+| :--- | :---: | :---: |
+| Materiais esportivos | 3.583 | 1.361 |
+| E-commerce | 8.115 | 1.497 |
+| Estoque para revenda | 9.608 | 2.435 |
+| Outros | 609 | - |
+| | **21.915** | **5.293** |
 
-31/12/2025 31/12/2024
-Materiais esportivos 3.583 1.361
-E-commerce 8.115 1.497
-Estoque para revenda 9.608 2.435
-Outros 609 -
-21.915 5.293
+**6.1 - Política contábil**
 
-6.1 - Política contábil
+A SAF Botafogo adota uma abordagem específica em relação à provisão para perdas nos estoques. Nossa política não se baseia em cálculos anteriores, mas sim em avaliações periódicas realizadas por meio de inventário físico dos itens. Este processo tem como objetivo avaliar possíveis perdas nos estoques.
 
-A SAF Botafogo adota uma abordagem específica em relação à provisão para perdas nos estoques. Nossa política não se baseia
-em cálculos anteriores, mas sim em avaliações periódicas realizadas por meio de inventário físico dos itens. Este processo tem
-como objetivo avaliar possíveis perdas nos estoques.
+Além disso, devido aos valores não significativos em estoque, a provisão não é calculada numericamente, mas sim comparando os registros do sistema de estoque com o estoque físico.
 
-Além disso, devido aos valores não significativos em estoque, a provisão não é calculada numericamente, mas sim comparando
-os registros do sistema de estoque com o estoque físico.
+Até o momento, não temos indícios de obsolescência de estoques na SAF Botafogo. Trabalhamos principalmente com materiais esportivos que possuem alta rotatividade, tanto para consumo interno quanto para revenda. Os itens são avaliados utilizando o método custo médio. Essa abordagem é adotada devido à alta rotatividade dos produtos, garantindo que o estoque seja constantemente renovado e atualizado.
 
-Até o momento, não temos indícios de obsolescência de estoques na SAF Botafogo. Trabalhamos principalmente com materiais
-esportivos que possuem alta rotatividade, tanto para consumo interno quanto para revenda. Os itens são avaliados utilizando o
-método custo médio. Essa abordagem é adotada devido à alta rotatividade dos produtos, garantindo que o estoque seja
-constantemente renovado e atualizado.
-
-SAF BOTAFOGO
+23
 
 --- pág. 53 ---
 
@@ -2382,132 +2146,111 @@ SAF BOTAFOGO
 
 --- pág. 54 ---
 
-JAF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-Além dos instrumentos de mútuo intragrupo denominado “Intercompany Loan Agreement and Other Covenants” a SAF Botafogo
-realizou, entre início de 2024 e de 2025 diversas transferências de recursos ao Olympique Lyonnais, com fundamento em acordos
-intragrupo e instrumentos contratuais formais, incluindo:
+Além dos instrumentos de mútuo intragrupo denominado “*Intercompany Loan Agreement and Other Covenants*” a SAF Botafogo realizou, entre início de 2024 e de 2025 diversas transferências de recursos ao Olympique Lyonnais, com fundamento em acordos intragrupo e instrumentos contratuais formais, incluindo:
 
-e instrumentos acessórios (side letters);
-e operações financeiras estruturadas para captação de recursos destinados ao grupo.
-e Contrato de Mútuo OL Bresil que é uma subsidiaria constituída do Lyon no Brasil.
+• instrumentos acessórios (side letters);  
+• operações financeiras estruturadas para captação de recursos destinados ao grupo.  
+• Contrato de Mútuo OL Bresil que é uma subsidiaria constituída do Lyon no Brasil.
 
 Tais operações tinham como expectativa a restituição dos valores transferidos, acrescidos de encargos financeiros aplicáveis
-c) Movimentações — operações de financiamento intragrupo (Ativo)
 
-No âmbito dos referidos contratos, a SAF Botafogo realizou, entre 2024 e 2025, transferências financeiras ao Olympique Lyonnais
-SASU, Eagle Football Holding Bidco Limited e RWDM Future conforme abaixo:
+**c) Movimentações – operações de financiamento intragrupo (Ativo)**
 
-e Transferências diretas realizadas para Olympique Lyonnais Sasu;
+No âmbito dos referidos contratos, a SAF Botafogo realizou, entre 2024 e 2025, transferências financeiras ao Olympique Lyonnais SASU, Eagle Football Holding Bidco Limited e RWDM Future conforme abaixo:
 
-e Repasses indiretos via outras entidades do grupo;
+• Transferências diretas realizadas para Olympique Lyonnais Sasu;  
+• Repasses indiretos via outras entidades do grupo;  
+• Operações de mútuo formalizadas;  
+• Assunção de encargos financeiros relacionados a captação de terceiros;  
+• Encargos financeiros apropriados até a data-base.
 
-e Operações de mútuo formalizadas;
+**d) Movimentações – operações de financiamento intragrupo (Passivo)**
 
-e Assunção de encargos financeiros relacionados a captação de terceiros;
-e Encargos financeiros apropriados até a data-base.
+Adicionalmente, a SAF Botafogo possui obrigações e direitos a jogadores (player payables) entre 2024 e 2025, transferências financeiras ao Olympique Lyonnais SASU, conforme abaixo:
 
-d) Movimentações — operações de financiamento intragrupo (Passivo)
-
-Adicionalmente, a SAF Botafogo possui obrigações e direitos a jogadores (player payables) entre 2024 e 2025, transferências
-financeiras ao Olympique Lyonnais SASU, conforme abaixo:
-
-e Transferências concretizadas (ex.: Jeffinho);
-e Compensações por transferências (ex.: Luiz Henrique, Almada, Jair, Igor Jesus, Savarino).
+• Transferências concretizadas (ex.: Jeffinho);  
+• Compensações por transferências (ex.: Luiz Henrique, Almada, Jair, Igor Jesus, Savarino).
 
 Essas operações são tratadas separadamente das operações financeiras intragrupo, dada sua natureza operacional.
-e) Inadimplemento e medidas adotadas
 
-Os créditos acima mencionados possuíam vencimento contratual entre março de 2026 e não foram liquidados até a data do
-vencimento.
+**e) Inadimplemento e medidas adotadas**
 
-Diante disso, a SAF Botafogo ajuizou, em 3 de abril de 2026, ação de execução de título extrajudicial contra o Olympique Lyonnais
-SASU, no montante de 104 milhões de euros visando à cobrança integral do crédito, acrescido de atualização monetária, encargos
-e demais cominações legais.
+Os créditos acima mencionados possuíam vencimento contratual entre março de 2026 e não foram liquidados até a data do vencimento.
 
-f) Avaliação de recuperabilidade dos ativos
+Diante disso, a SAF Botafogo ajuizou, em 3 de abril de 2026, ação de execução de título extrajudicial contra o Olympique Lyonnais SASU, no montante de 104 milhões de euros visando à cobrança integral do crédito, acrescido de atualização monetária, encargos e demais cominações legais.
 
-A Administração avalia, com base nas informações disponíveis até a data de aprovação das demonstrações financeiras, que os
-valores registrados refletem adequadamente os direitos creditórios da Companhia. Considerando que:
+**f) Avaliação de recuperabilidade dos ativos**
 
-e a existência de documentação suporte (contratos, SWIFTs, side letters);
+A Administração avalia, com base nas informações disponíveis até a data de aprovação das demonstrações financeiras, que os valores registrados refletem adequadamente os direitos creditórios da Companhia. Considerando que:
 
-e oreconhecimento de dívida por parte do devedor em determinados instrumentos;
-e a possibilidade de compensações intragrupo;
+• a existência de documentação suporte (contratos, SWIFTs, side letters);  
+• o reconhecimento de dívida por parte do devedor em determinados instrumentos;  
+• a possibilidade de compensações intragrupo;  
+• foram adotadas medidas legais para cobrança do crédito;  
+• os créditos estão formalizados por meio de contrato com condições definidas;  
+• não foi constituída provisão para perdas (impairment) até a presente data.
 
-e foram adotadas medidas legais para cobrança do crédito;
-
-e oscréditos estão formalizados por meio de contrato com condições definidas;
-
-e não foi constituída provisão para perdas (impairment) até a presente data.
-
-SAF BOTAFOGO
+25
 
 --- pág. 55 ---
 
-JAF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-A SAF Botafogo segue monitorando a evolução do processo judicial e eventuais negociações entre as partes, podendo revisar
-suas estimativas de recuperabilidade caso ocorram mudanças relevantes no cenário.
+A SAF Botafogo segue monitorando a evolução do processo judicial e eventuais negociações entre as partes, podendo revisar suas estimativas de recuperabilidade caso ocorram mudanças relevantes no cenário.
 
-A Administração entende que os valores registrados representam adequadamente seus direitos creditórios, mantendo
-acompanhamento contínuo quanto à recuperabilidade desses ativos.
+A Administração entende que os valores registrados representam adequadamente seus direitos creditórios, mantendo acompanhamento contínuo quanto à recuperabilidade desses ativos.
 
-g) Considerações adicionais sobre transações intragrupo
+**g) Considerações adicionais sobre transações intragrupo**
 
-As operações com partes relacionadas são realizadas no contexto da estratégia financeira e operacional do Grupo Eagle, que
-pode envolver a gestão integrada de caixa entre suas controladas.
+As operações com partes relacionadas são realizadas no contexto da estratégia financeira e operacional do Grupo Eagle, que pode envolver a gestão integrada de caixa entre suas controladas.
 
-Historicamente, as operações entre as entidades do Grupo Eagle ocorreram no contexto de gestão integrada de caixa (cash
-pooling), com fluxo continuo de recursos entre as partes.
+Historicamente, as operações entre as entidades do Grupo Eagle ocorreram no contexto de gestão integrada de caixa (*cash pooling*), com fluxo contínuo de recursos entre as partes.
 
-Entretanto, conforme eventos recentes, houve descontinuidade desse modelo por parte do devedor, sem a correspondente
-liquidação dos saldos existentes, o que impactou a posição financeira da SAF Botafogo.
+Entretanto, conforme eventos recentes, houve descontinuidade desse modelo por parte do devedor, sem a correspondente liquidação dos saldos existentes, o que impactou a posição financeira da SAF Botafogo.
 
-A Administração entende que tais operações estão devidamente suportadas por instrumentos contratuais formais e refletem as
-práticas usuais adotadas pelo grupo.
+A Administração entende que tais operações estão devidamente suportadas por instrumentos contratuais formais e refletem as práticas usuais adotadas pelo grupo.
 
-8. Despesa Antecipada
+**8. Despesa Antecipada**
 
-Controladora / Consolidado
+| | | Controladora / Consolidado 31/12/2025 | Controladora / Consolidado 31/12/2024 |
+| :--- | :---: | :---: | :---: |
+| Contrato de Comodato | | - | 165 |
+| Contrato de Transmissão | 8.2 | 5.000 | 2.919 |
+| Contrato de Licenciamento | | 205 | - |
+| Cessão de Atletas | 8.3 | 9.164 | 3.554 |
+| Outros | | 1.924 | - |
+| Seguros | | 202 | - |
+| | | **16.495** | **6.638** |
 
-31/12/2025 31/12/2024
+**8.1 – Política contábil**
 
-Contrato de Comodato - 165
-Contrato de Transmissão 8.2 5.000 2.919
-Contrato de Licenciamento 205 -
-Cessão de Atletas 8.3 9.164 3.554
-Outros 1.924 -
-Seguros 202 -
+Em conformidade com as normas internacionais de contabilidade (IFRS/IAS) e as diretrizes do CPC, as despesas antecipadas são registradas inicialmente como ativos (circulante ou não circulante) porque representam um direito a um benefício futuro.
 
-16.495 6.638
+O reconhecimento no resultado respeita o princípio da competência, com apropriações mensais baseadas na vigência dos contratos, sem distorções relevantes identificadas.
 
-8.1 — Política contábil
+**8.2 – Contrato de Transmissão**
 
-Em conformidade com as normas internacionais de contabilidade (IFRS/IAS) e as diretrizes do CPC, as despesas antecipadas são
-registradas inicialmente como ativos (circulante ou não circulante) porque representam um direito a um benefício futuro.
+No exercício de 2025, a variação na linha de contratos de transmissão decorreu, principalmente, do reconhecimento da comissão de intermediação relacionada ao contrato firmado com a VBet, com vigência para as temporadas de 2025, 2026 e 2027.
 
-O reconhecimento no resultado respeita o princípio da competência, com apropriações mensais baseadas na vigência dos
-contratos, sem distorções relevantes identificadas.
+**8.3 – Cessão de Atletas**
 
-8.2 — Contrato de Transmissão
+A linha de cessão de atletas refere-se, principalmente, a valores associados a contratos de cessão temporária e intermediação de transferências de atletas.
 
-No exercício de 2025, a variação na linha de contratos de transmissão decorreu, principalmente, do reconhecimento da comissão
-de intermediação relacionada ao contrato firmado com a VBet, com vigência para as temporadas de 2025, 2026 e 2027.
+No período, destacam-se os montantes relacionados à cessão temporária do atleta Chris Ramos, bem como despesas recorrentes com cessões de outros atletas como Rwan Cruz e Gabriel Feitosa e respectivos custos de intermediação.
 
-8.3 — Cessão de Atletas
-
-A linha de cessão de atletas refere-se, principalmente, a valores associados a contratos de cessão temporária e intermediação
-de transferências de atletas.
-
-No período, destacam-se os montantes relacionados à cessão temporária do atleta Chris Ramos, bem como despesas recorrentes
-com cessões de outros atletas como Rwan Cruz e Gabriel Feitosa e respectivos custos de intermediação.
-
-SAF BOTAFOGO
+26
 
 --- pág. 56 ---
 
@@ -2616,61 +2359,52 @@ SAF BOTAFOGO
 
 --- pág. 58 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C  
+**SAF BOTAFOGO**
 
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-11. Imobilizado
+**11. Imobilizado**
 
-Controladora / Consolidado
+| | Controladora / Consolidado 2024 | Controladora / Consolidado Adições | Controladora / Consolidado Baixas | Controladora / Consolidado Transferências | Controladora / Consolidado 2025 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Custo** | | | | | |
+| Benfeitorias | 12.792 | 4.298 | - | - | 17.090 |
+| Veículos | 100 | - | - | - | 100 |
+| Máquinas e equipamentos | 2.713 | 3.300 | (2) | - | 6.011 |
+| Móveis e utensílios | 348 | 718 | - | - | 1.066 |
+| Equipamentos de informática | 1.198 | 703 | - | - | 1.901 |
+| Obras em andamento | 209 | 16.406 | - | - | 16.615 |
+| Bens recebido de comodato | - | 3.081 | - | - | 3.081 |
+| **Total custo** | **17.360** | **28.506** | **(2)** | **-** | **45.864** |
+| | | | | | |
+| **Depreciação** | | | | | |
+| Benfeitorias | (2.308) | (2.092) | - | - | (4.400) |
+| Veículos | (59) | (19) | - | - | (78) |
+| Máquinas e equipamentos | (325) | (385) | - | - | (710) |
+| Móveis e utensílios | (52) | (72) | - | - | (124) |
+| Equipamentos de informática | (372) | (318) | - | - | (690) |
+| **Total depreciação** | **(3.116)** | **(2.886)** | **(0)** | **-** | **(6.002)** |
+| | | | | | |
+| **Imobilizado líquido** | **14.244** | **25.620** | **(2)** | **-** | **39.862** |
 
-2024 Adições Baixas Transferências 2025
+**11.1 - Política contábil**
 
-Custo
+Os ativos imobilizados são apresentados com base nos custos de aquisição, que englobam os gastos diretamente atribuíveis à preparação do ativo para seu uso pretendido pela administração. Estes custos são ajustados pela depreciação acumulada e por eventuais perdas por redução ao valor recuperável.
 
-Benfeitorias 12.792 4.298 - - 17.090
-Veículos 100 - - - 100
-Máquinas e equipamentos 2.713 3.300 (2) - 6.011
-Móveis e utensílios 348 718 - - 1.066
-Equipamentos de informática 1.198 703 - - 1.901
-Obras em andamento 209 16.406 - - 16.615
-Bens recebido de comodato - 3.081 - - 3.081
-Total custo 17.360 28.506 (2) - 45.864
-Depreciação
+Os ativos são depreciados pelo método linear, com base na vida útil estimada, a partir da data em que os ativos se encontram disponíveis para serem utilizados no uso pretendido e são capitalizados.
 
-Benfeitorias (2.308) (2.092) - - (4.400)
-Veículos (59) (19) - - (78)
-Máquinas e equipamentos (325) (385) - - (710)
-Móveis e utensílios (52) (72) - - (124)
-Equipamentos de informática (372) (318) - - (690)
-Total depreciação (3.116) (2.886) (0) - (6.002)
-Imobilizado líquido 14.244 25.620 (2) - 39.862
+**11.2 – Obras em andamento**
 
-11.1 - Política contábil
+Durante o exercício, a Botafogo SAF realizou investimentos relevantes no grupo de Imobilizado, classificados na rubrica “Obras em Andamento”, relacionados à modernização e aprimoramento da infraestrutura do Centro de Treinamento.
 
-Os ativos imobilizados são apresentados com base nos custos de aquisição, que englobam os gastos diretamente atribuíveis à
-preparação do ativo para seu uso pretendido pela administração. Estes custos são ajustados pela depreciação acumulada e por
-eventuais perdas por redução ao valor recuperável.
+Dentre os projetos em desenvolvimento, destaca-se a construção do novo Espaço Recovery, iniciativa estratégica voltada ao fortalecimento das áreas de saúde, performance e reabilitação de atletas. O projeto contempla uma estrutura de aproximadamente 750 m², composta por ambientes especializados, incluindo áreas seca e molhada, equipadas com recursos destinados à recuperação física, como piscinas de contraste (quente e fria), piscina aquecida, sauna, banheiras de hidromassagem e espaços para terapias complementares.
 
-Os ativos são depreciados pelo método linear, com base na vida útil estimada, a partir da data em que os ativos se encontram
-disponíveis para serem utilizados no uso pretendido e são capitalizados.
+Os montantes registrados serão transferidos para as respectivas contas do ativo imobilizado quando da conclusão dos projetos e início de sua operação, momento em que passarão a ser depreciados de acordo com as políticas contábeis adotadas pela Companhia.
 
-11.2 — Obras em andamento
-
-Durante o exercício, a Botafogo SAF realizou investimentos relevantes no grupo de Imobilizado, classificados na rubrica “Obras
-em Andamento”, relacionados à modernização e aprimoramento da infraestrutura do Centro de Treinamento.
-
-Dentre os projetos em desenvolvimento, destaca-se a construção do novo Espaço Recovery, iniciativa estratégica voltada ao
-fortalecimento das áreas de saúde, performance e reabilitação de atletas. O projeto contempla uma estrutura de
-aproximadamente 750 m?, composta por ambientes especializados, incluindo áreas seca e molhada, equipadas com recursos
-destinados à recuperação física, como piscinas de contraste (quente e fria), piscina aquecida, sauna, banheiras de hidromassagem
-e espaços para terapias complementares.
-
-Os montantes registrados serão transferidos para as respectivas contas do ativo imobilizado quando da conclusão dos projetos
-e início de sua operação, momento em que passarão a ser depreciados de acordo com as políticas contábeis adotadas pela
-Companhia.
-
-SAF BOTAFOGO
+29
 
 --- pág. 59 ---
 
@@ -3091,58 +2825,60 @@ SAF BOTAFOGO
 
 --- pág. 67 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
+SAF BOTAFOGO
 
-20. Receita Operacional, líquida
+**20. Receita Operacional, líquida**
 
-Controladora / Consolidado
-
-31/12/2025 31/12/2024
-Receita operacional bruta 655.033 607.322
-(-) Impostos e contribuições (41.229) (34.893)
-(-) Direito de arena (10.965) (16.645)
-(-) Outras deduções (28.834) (3.513)
-Total deduções sobre a receita (81.028) (55.051)
-Receita líquida 574.005 552.271
+| | Controladora / Consolidado | |
+|---|---|---|
+| | 31/12/2025 | 31/12/2024 |
+| **Receita operacional bruta** | **655.033** | **607.322** |
+| (-) Impostos e contribuições | (41.229) | (34.893) |
+| (-) Direito de arena | (10.965) | (16.645) |
+| (-) Outras deduções | (28.834) | (3.513) |
+| **Total deduções sobre a receita** | **(81.028)** | **(55.051)** |
+| **Receita líquida** | **574.005** | **552.271** |
 
 Segregação das receitas por natureza:
 
-Controladora / Consolidado
+| | | Controladora / Consolidado | |
+|---|---|---|---|
+| | | 31/12/2025 | 31/12/2024 |
+| **Direitos de Transmissão** | 20.1 | | |
+| Televisionamento | | 111.175 | 100.982 |
+| Streaming | | - | - |
+| | | 111.175 | 100.982 |
+| **Competições** | | | |
+| Premiação | 20.2 | 97.120 | 192.485 |
+| Participação em competições | 20.2 | 171.971 | 65.019 |
+| Bilheteria | 20.3 | 17.494 | 36.356 |
+| | | 286.584 | 293.860 |
+| **Publicidade e Marketing** | | | |
+| Patrocínios | 20.4 | 73.255 | 49.026 |
+| Publicidade em placas | 20.4 | 18.669 | 6.655 |
+| Mídias digitais | | 266 | 230 |
+| Camisa 7 | 20.5 | 52.013 | 48.620 |
+| Camisa 6 | | 460 | - |
+| Licenciamento | | 3.500 | 3.177 |
+| | | 148.163 | 107.708 |
+| **Transferência de atletas** | | | |
+| Outras receitas na cessão de atletas | | - | - |
+| Cessão temporária | | 11.324 | 2.488 |
+| Mecanismo de solidariedade | | 1.272 | 1.874 |
+| | | 12.596 | 4.362 |
+| **Outros tipos de receita** | 20.6 | | |
+| Venda de mercadorias | | 60.646 | 66.379 |
+| Locações | | 18.871 | 17.040 |
+| Operação em estádio | | 4.902 | 7.193 |
+| Outros | | 12.096 | 9.798 |
+| | | 96.515 | 100.410 |
+| | | **655.033** | **607.322** |
 
-31/12/2025 31/12/2024
-Direitos de Transmissão 20.1
-Televisionamento 111.175 100.982
-Streaming - -
-111.175 100.982
-Competições
-Premiação 20.2 97.120 192.485
-Participação em competições 20.2 171.971 65.019
-Bilheteria 20.3 17.494 36.356
-286.584 293.860
-Publicidade e Marketing
-Patrocínios 20.4 73.255 49.026
-Publicidade em placas 20.4 18.669 6.655
-Mídias digitais 266 230
-Camisa 7 20.5 52.013 48.620
-Camisa 6 460 -
-Licenciamento 3.500 3.177
-148.163 107.708
-Transferência de atletas
-Outras receitas na cessão de atletas - -
-Cessão temporária 11.324 2.488
-Mecanismo de solidariedade 1.272 1.874
-12.596 4.362
-Outros tipos de receita 20.6
-Venda de mercadorias 60.646 66.379
-Locações 18.871 17.040
-Operação em estádio 4.902 7.193
-Outros 12.096 9.798
-96.515 100.410
-655.033 607.322
-
-SAF BOTAFOGO
+38
 
 --- pág. 68 ---
 
@@ -3188,59 +2924,46 @@ SAF BOTAFOGO
 
 --- pág. 69 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
-
-20.2 — Premiações e participações
-
-Controladora/Consolidado
-
-31/12/2025 31/12/2024
-
-Receita Bruta
-Copa Libertadores 31.302 194.334
-Mundial de Clubes (a) 147.822 -
-Copa Intercontinental - 9.019
-Copa do Brasil 10.694 5.670
-Campeonato Brasileiro (b) 67.498 48.166
-Supercopa 6.050 -
-Recopa 5.241 -
-Campeonato Brasileiro - Feminino 475 315
-Outros 8 -
-
-269.090 257.504
-(-) Deduções da Receita Bruta
-(-) Tributação específica do Futebol (TEF)* (8.333) (11.813)
-(-) Direito de arena (4.828)) (11.786)
-Receita Líquida de Premiações e participações 255.929 233.905
-
-* Os valores calculados referentes ao TEF são apurados com base no regime de caixa, razão pela qual podem não refletir
-exatamente 5% do total faturado no exercício em questão.
-
-A SAF Botafogo vem apresentando relevante incremento nas receitas de premiações esportivas, totalizando R$ 269.090 mil no
-exercício findo em 31 de dezembro de 2025 (RS 257.504 mil em 2024 e R$ 61.235 mil em 2023). Esse aumento decorre,
-substancialmente, do desempenho esportivo da equipe profissional masculina em competições nacionais e internacionais ao
-longo dos períodos, refletindo maior competitividade em torneios de elevada relevância e, consequentemente, o acesso a
-estruturas de premiação mais robustas.
-
-a) Mundial de Clubes: Em decorrência dos títulos do Campeonato Brasileiro e da Copa Libertadores da América em 2024, a SAF
-Botafogo qualificou-se para a disputa do Mundial de Clubes da FIFA em 2025. Na referida competição, a equipe alcançou as
-oitavas de final, com duas vitórias na fase de grupos.
-
-Como resultado de sua participação e desempenho esportivo, a Companhia auferiu receitas de premiação no montante
-aproximado de R$ 147.822 mil no exercício.
-
-b) Campeonato Brasileiro — Série A: A conquista da primeira colocação no Campeonato Brasileiro — Série A em 2024 resultou no
-reconhecimento de receitas de premiação no montante de R$ 48.166 mil, superiores às registradas no exercício de 2023 (RS
-38.257 mil).
-
-No exercício de 2025, apesar da 72 colocação na competição, a receita total associada ao Campeonato Brasileiro atingiu R$
-67.498 mil, refletindo, substancialmente, as melhores condições comerciais previstas no contrato de direitos de transmissão
-firmado com a Liga Forte União (LFU), o que compensou o impacto do desempenho esportivo inferior em relação ao exercício
-anterior.
-
 SAF BOTAFOGO
+
+**20.2 – Premiações e participações**
+
+| | | Controladora/Consolidado | |
+|---|---|---|---|
+| | | 31/12/2025 | 31/12/2024 |
+| **Receita Bruta** | | | |
+| Copa Libertadores | | 31.302 | 194.334 |
+| Mundial de Clubes | (a) | 147.822 | - |
+| Copa Intercontinental | | - | 9.019 |
+| Copa do Brasil | | 10.694 | 5.670 |
+| Campeonato Brasileiro | (b) | 67.498 | 48.166 |
+| Supercopa | | 6.050 | - |
+| Recopa | | 5.241 | - |
+| Campeonato Brasileiro - Feminino | | 475 | 315 |
+| Outros | | 8 | - |
+| | | 269.090 | 257.504 |
+| **(-) Deduções da Receita Bruta** | | | |
+| (-) Tributação específica do Futebol (TEF)* | | (8.333) | (11.813) |
+| (-) Direito de arena | | (4.828)) | (11.786) |
+| **Receita Líquida de Premiações e participações** | | **255.929** | **233.905** |
+
+\* Os valores calculados referentes ao TEF são apurados com base no regime de caixa, razão pela qual podem não refletir exatamente 5% do total faturado no exercício em questão.
+
+A SAF Botafogo vem apresentando relevante incremento nas receitas de premiações esportivas, totalizando R$ 269.090 mil no exercício findo em 31 de dezembro de 2025 (R$ 257.504 mil em 2024 e R$ 61.235 mil em 2023). Esse aumento decorre, substancialmente, do desempenho esportivo da equipe profissional masculina em competições nacionais e internacionais ao longo dos períodos, refletindo maior competitividade em torneios de elevada relevância e, consequentemente, o acesso a estruturas de premiação mais robustas.
+
+**a) Mundial de Clubes:** Em decorrência dos títulos do Campeonato Brasileiro e da Copa Libertadores da América em 2024, a SAF Botafogo qualificou-se para a disputa do Mundial de Clubes da FIFA em 2025. Na referida competição, a equipe alcançou as oitavas de final, com duas vitórias na fase de grupos.
+
+Como resultado de sua participação e desempenho esportivo, a Companhia auferiu receitas de premiação no montante aproximado de R$ 147.822 mil no exercício.
+
+**b) Campeonato Brasileiro – Série A**: A conquista da primeira colocação no Campeonato Brasileiro – Série A em 2024 resultou no reconhecimento de receitas de premiação no montante de R$ 48.166 mil, superiores às registradas no exercício de 2023 (R$ 38.257 mil).
+
+No exercício de 2025, apesar da 7ª colocação na competição, a receita total associada ao Campeonato Brasileiro atingiu R$ 67.498 mil, refletindo, substancialmente, as melhores condições comerciais previstas no contrato de direitos de transmissão firmado com a Liga Forte União (LFU), o que compensou o impacto do desempenho esportivo inferior em relação ao exercício anterior.
+
+40
 
 --- pág. 70 ---
 
@@ -3465,56 +3188,50 @@ SAF BOTAFOGO
 
 --- pág. 73 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C
-Exercicios findos em 31 de dezembro de 2025 e 2024
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
-
-22. Despesas gerais e administrativas
-
-Controladora Consolidado
-
-31/12/2025 31/12/2024 31/12/2025 31/12/2024
-
-Salários, encargos e benefícios 103.401 67.512 103.401 67.512
-Materiais 5.169 5.000 5.169 5.000
-Locação 3.717 3.701 3.717 3.701
-Serviços com terceiros 52.529 29.053 52.529 29.053
-Concessionárias 7.092 5.835 7.092 5.835
-Despesas comerciais 5.352 9.907 5.352 9.907
-Depreciação e amortização 9.514 6.164 9.514 6.164
-Impostos e taxas 2.515 2.017 2.137 2.017
-Viagens e estadas 5.167 4.429 5.167 4.429
-Gastos com atletas 895 2.653 895 2.653
-Licenciamento de programas 2.592 2.184 2.592 2.184
-Despesa com contingências 13.179 713 13.179 713
-Diversos 7.090 6.729 7.199 6.736
-
-218.212 145.897 218.543 145.904
-
-23. Outras receitas operacionais
-
-Controladora Consolidado
-
-31/12/2025 31/12/2024 31/12/2025 31/12/2024
-Recuperação de gastos 22.1 50.490 48.843 50.490 48.843
-Outras receitas operacionais 1.946 380 2.046 380
-52.436 49.223 52.536 49.223
-
-23.1 — Recuperação de gastos
-
-A linha de recuperação de gastos refere-se a valores anteriormente registrados como obrigações da Companhia que, após
-negociações, revisões contratuais ou reclassificações, deixaram de representar saídas prováveis de recursos.
-
-No exercício findo em 31 de dezembro de 2025, essa rubrica foi composta, substancialmente, por ajustes decorrentes da
-renegociação de valores junto a atletas, comissão técnica e intermediários, refletindo a revisão de condições contratuais
-previamente estabelecidas.
-
-As principais receitas reconhecidas no período estão relacionadas, sobretudo, aos efeitos de rescisões contratuais, que
-resultaram na reversão parcial de obrigações anteriormente provisionadas. Tais eventos impactaram positivamente o resultado
-do exercício, na medida em que reduziram passivos registrados.
-
 SAF BOTAFOGO
+
+**22. Despesas gerais e administrativas**
+
+| | Controladora | | Consolidado | |
+|---|---|---|---|---|
+| | 31/12/2025 | 31/12/2024 | 31/12/2025 | 31/12/2024 |
+| Salários, encargos e benefícios | 103.401 | 67.512 | 103.401 | 67.512 |
+| Materiais | 5.169 | 5.000 | 5.169 | 5.000 |
+| Locação | 3.717 | 3.701 | 3.717 | 3.701 |
+| Serviços com terceiros | 52.529 | 29.053 | 52.529 | 29.053 |
+| Concessionárias | 7.092 | 5.835 | 7.092 | 5.835 |
+| Despesas comerciais | 5.352 | 9.907 | 5.352 | 9.907 |
+| Depreciação e amortização | 9.514 | 6.164 | 9.514 | 6.164 |
+| Impostos e taxas | 2.515 | 2.017 | 2.737 | 2.017 |
+| Viagens e estadas | 5.167 | 4.429 | 5.167 | 4.429 |
+| Gastos com atletas | 895 | 2.653 | 895 | 2.653 |
+| Licenciamento de programas | 2.592 | 2.184 | 2.592 | 2.184 |
+| Despesa com contingências | 13.179 | 713 | 13.179 | 713 |
+| Diversos | 7.090 | 6.729 | 7.199 | 6.736 |
+| | 218.212 | 145.897 | 218.543 | 145.904 |
+
+**23. Outras receitas operacionais**
+
+| | | Controladora | | Consolidado | |
+|---|---|---|---|---|---|
+| | | 31/12/2025 | 31/12/2024 | 31/12/2025 | 31/12/2024 |
+| Recuperação de gastos | 22.1 | 50.490 | 48.843 | 50.490 | 48.843 |
+| Outras receitas operacionais | | 1.946 | 380 | 2.046 | 380 |
+| | | 52.436 | 49.223 | 52.536 | 49.223 |
+
+**23.1 – Recuperação de gastos**
+
+A linha de recuperação de gastos refere-se a valores anteriormente registrados como obrigações da Companhia que, após negociações, revisões contratuais ou reclassificações, deixaram de representar saídas prováveis de recursos.
+
+No exercício findo em 31 de dezembro de 2025, essa rubrica foi composta, substancialmente, por ajustes decorrentes da renegociação de valores junto a atletas, comissão técnica e intermediários, refletindo a revisão de condições contratuais previamente estabelecidas.
+
+As principais receitas reconhecidas no período estão relacionadas, sobretudo, aos efeitos de rescisões contratuais, que resultaram na reversão parcial de obrigações anteriormente provisionadas. Tais eventos impactaram positivamente o resultado do exercício, na medida em que reduziram passivos registrados.
+
+44
 
 --- pág. 74 ---
 
@@ -3568,113 +3285,89 @@ SAF BOTAFOGO
 
 --- pág. 75 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
-
-25. Receitas (Despesas) financeiras, líquidas
-
-Controladora Consolidado
-
-. , 31/12/2024 31/12/2024
-
-Despesas financeiras 31/12/2025 (Reapresentado) 31/12/2025 (Reapresentado)
-Juros e encargos sobre empréstimos 25.1 (19.763) (45.923) (30.704) (52.594)
-Juros e multas 25.2 (39.142) (41.513) (39.142) (42.881)
-Variação cambial 25.3 (322.210) (142.985) (322.210) (142.985)
-Desconto concedido 25.4 (35.885) (7.580) (35.885) (7.580)
-Atualização monetária 25.5 (57.421) (8) (57.421) (8)
-Taxa de antecipação 25.6 (141.167) (130.123) (141.167) (130.123)
-Tarifa bancária (9.332) (4.701) (9.331) (4.701)
-Juros sobre arrendamento (2.686) (2.501) (2.686) (2.501)
-Outros 25.7 (14.820) (8.042) (14.820) (8.042)
-Total despesas financeiras (642.426) (383.376) (653.366) (391.415)
-Receitas financeiras
-
-Descontos obtidos 25.8 15.093 13.581 15.093 13.581
-Atualização monetária 3 54.707 3 54.707
-Variação cambial 25.3 323.789 153.252 323.789 153.252
-Rendimento sobre aplicações financeiras 755 284 755 1.820
-Ajuste a valor justo 685 405 685 405
-Outros 25.7 751 3.925 5.378 3.925
-Total receitas financeiras 341.076 226.154 345.703 227.690
-Receitas (despesas) financeiras, líquidas (301.350) (157.222) (307.663) (163.725)
-
-25.1 - Juros e encargos sobre empréstimos
-
-Os juros e encargos financeiros incidentes sobre empréstimos e financiamentos são apropriados ao resultado ao longo do prazo
-das respectivas operações, com base nas taxas contratuais aplicáveis e no regime de competência, em conformidade com as
-normas IFRS/CPC. Esse tratamento assegura o reconhecimento adequado do custo financeiro incorrido no exercício, refletindo
-a substância econômica das operações de captação de recursos da Companhia.
-
-25.2 - Juros e multas
-
-Os valores registrados nessa linha referem-se, principalmente, aos encargos incidentes sobre obrigações tributárias da
-Companhia. No exercício, ocorreu parcelamento de tributos, com o objetivo de otimizar a gestão do fluxo de caixa.
-
-Essa iniciativa possibilitou o alongamento do prazo de liquidação dos débitos, proporcionando maior previsibilidade dos
-desembolsos e viabilizando o cumprimento das obrigações fiscais em condições compatíveis com a capacidade financeira da
-Companhia. Como efeito dessa reestruturação, houve a incidência de juros e multas associados a esse passivo.
-
-25.3 - Variação Cambial
-
-A Companhia realiza volume relevante de transações denominadas ou referenciadas em moeda estrangeira, especialmente no
-âmbito de negociações com atletas e demais operações internacionais. Em função dessa exposição, a Companhia está sujeita a
-variações nas taxas de câmbio.
-
-Os efeitos da variação cambial são reconhecidos no resultado do exercício, refletindo a atualização dos ativos e passivos
-monetários denominados em moeda estrangeira, conforme as taxas vigentes nas datas de cada transação e no encerramento do
-período.
-
 SAF BOTAFOGO
+
+**25. Receitas (Despesas) financeiras, líquidas**
+
+| | | Controladora | | Consolidado | |
+|---|---|---|---|---|---|
+| | | 31/12/2025 | 31/12/2024 (Reapresentado) | 31/12/2025 | 31/12/2024 (Reapresentado) |
+| **Despesas financeiras** | | | | | |
+| Juros e encargos sobre empréstimos | 25.1 | (19.763) | (45.923) | (30.704) | (52.594) |
+| Juros e multas | 25.2 | (39.142) | (41.513) | (39.142) | (42.881) |
+| Variação cambial | 25.3 | (322.210) | (142.985) | (322.210) | (142.985) |
+| Desconto concedido | 25.4 | (35.885) | (7.580) | (35.885) | (7.580) |
+| Atualização monetária | 25.5 | (57.421) | (8) | (57.421) | (8) |
+| Taxa de antecipação | 25.6 | (141.167) | (130.123) | (141.167) | (130.123) |
+| Tarifa bancária | | (9.332) | (4.701) | (9.331) | (4.701) |
+| Juros sobre arrendamento | | (2.686) | (2.501) | (2.686) | (2.501) |
+| Outros | 25.7 | (14.820) | (8.042) | (14.820) | (8.042) |
+| **Total despesas financeiras** | | **(642.426)** | **(383.376)** | **(653.366)** | **(391.415)** |
+| **Receitas financeiras** | | | | | |
+| Descontos obtidos | 25.8 | 15.093 | 13.581 | 15.093 | 13.581 |
+| Atualização monetária | | 3 | 54.707 | 3 | 54.707 |
+| Variação cambial | 25.3 | 323.789 | 153.252 | 323.789 | 153.252 |
+| Rendimento sobre aplicações financeiras | | 755 | 284 | 755 | 1.820 |
+| Ajuste a valor justo | | 685 | 405 | 685 | 405 |
+| Outros | 25.7 | 751 | 3.925 | 5.378 | 3.925 |
+| **Total receitas financeiras** | | **341.076** | **226.154** | **345.703** | **227.690** |
+| **Receitas (despesas) financeiras, líquidas** | | **(301.350)** | **(157.222)** | **(307.663)** | **(163.725)** |
+
+**25.1 - Juros e encargos sobre empréstimos**
+
+Os juros e encargos financeiros incidentes sobre empréstimos e financiamentos são apropriados ao resultado ao longo do prazo das respectivas operações, com base nas taxas contratuais aplicáveis e no regime de competência, em conformidade com as normas IFRS/CPC. Esse tratamento assegura o reconhecimento adequado do custo financeiro incorrido no exercício, refletindo a substância econômica das operações de captação de recursos da Companhia.
+
+**25.2 - Juros e multas**
+
+Os valores registrados nessa linha referem-se, principalmente, aos encargos incidentes sobre obrigações tributárias da Companhia. No exercício, ocorreu parcelamento de tributos, com o objetivo de otimizar a gestão do fluxo de caixa.
+
+Essa iniciativa possibilitou o alongamento do prazo de liquidação dos débitos, proporcionando maior previsibilidade dos desembolsos e viabilizando o cumprimento das obrigações fiscais em condições compatíveis com a capacidade financeira da Companhia. Como efeito dessa reestruturação, houve a incidência de juros e multas associados a esse passivo.
+
+**25.3 - Variação Cambial**
+
+A Companhia realiza volume relevante de transações denominadas ou referenciadas em moeda estrangeira, especialmente no âmbito de negociações com atletas e demais operações internacionais. Em função dessa exposição, a Companhia está sujeita a variações nas taxas de câmbio.
+
+Os efeitos da variação cambial são reconhecidos no resultado do exercício, refletindo a atualização dos ativos e passivos monetários denominados em moeda estrangeira, conforme as taxas vigentes nas datas de cada transação e no encerramento do período.
+
+46
 
 --- pág. 76 ---
 
-JAF BOTAFOGO
-
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
 (Valores expressos em milhares de reais)
 
-25.4 — Descontos Concedidos
+**SAF BOTAFOGO**
 
-Dentre os descontos concedidos no período de 2025, destacam-se aqueles relacionados à cessão definitiva do atleta Luiz
-Henrique ao Football Club Zenit e ao Nottingham Forest Football Club, decorrentes do pagamento antecipado da cessão definitiva
-do atleta Igor Jesus Maciel da Cruz. Adicionalmente, incluem-se os descontos concedidos no âmbito do programa de sócio
-torcedor, aplicados nas lojas oficiais.
+#### 25.4 – Descontos Concedidos
 
-25.5 — Atualização Monetária
+Dentre os descontos concedidos no período de 2025, destacam-se aqueles relacionados à cessão definitiva do atleta Luiz Henrique ao Football Club Zenit e ao Nottingham Forest Football Club, decorrentes do pagamento antecipado da cessão definitiva do atleta Igor Jesus Maciel da Cruz. Adicionalmente, incluem-se os descontos concedidos no âmbito do programa de sócio torcedor, aplicados nas lojas oficiais.
 
-A conta de atualização monetária apresentou saldo relevante no período, decorrente, principalmente, do reconhecimento de
-juros e correção monetária sobre obrigações tributárias, bem como sobre parcelamentos firmados junto aos órgãos
-competentes. Tais encargos são apurados conforme a legislação vigente e incidem, majoritariamente, sobre tributos como IRRF,
-FGTS, INSS, CSRF e TEF.
+#### 25.5 – Atualização Monetária
 
-Adicionalmente, o saldo reflete regularizações efetuadas ao longo do exercício, evidenciando a atualização de passivos tributários
-relevantes da Companhia.
+A conta de atualização monetária apresentou saldo relevante no período, decorrente, principalmente, do reconhecimento de juros e correção monetária sobre obrigações tributárias, bem como sobre parcelamentos firmados junto aos órgãos competentes. Tais encargos são apurados conforme a legislação vigente e incidem, majoritariamente, sobre tributos como IRRF, FGTS, INSS, CSRF e TEF.
 
-25.6 - Taxa de antecipação
+Adicionalmente, o saldo reflete regularizações efetuadas ao longo do exercício, evidenciando a atualização de passivos tributários relevantes da Companhia.
 
-Em função da sazonalidade das receitas inerentes às atividades da Companhia, especialmente aquelas relacionadas ao calendário
-esportivo, em determinados períodos observa-se menor geração de caixa. Nesse contexto, a Companhia realiza operações de
-antecipação de recebíveis como parte de sua estratégia de gestão financeira.
+#### 25.6 - Taxa de antecipação
 
-Os custos associados a essas operações, registrados nesta rubrica, referem-se às taxas de antecipação incorridas no período. Tais
-operações visam assegurar a liquidez necessária para o cumprimento tempestivo das obrigações junto a fornecedores, atletas,
-clubes e demais credores.
+Em função da sazonalidade das receitas inerentes às atividades da Companhia, especialmente aquelas relacionadas ao calendário esportivo, em determinados períodos observa-se menor geração de caixa. Nesse contexto, a Companhia realiza operações de antecipação de recebíveis como parte de sua estratégia de gestão financeira.
 
-25.7 - Outros
+Os custos associados a essas operações, registrados nesta rubrica, referem-se às taxas de antecipação incorridas no período. Tais operações visam assegurar a liquidez necessária para o cumprimento tempestivo das obrigações junto a fornecedores, atletas, clubes e demais credores.
 
-Esta rubrica é composta, substancialmente, pelo Imposto sobre Operações Financeiras (IOF) e pelo Imposto de Renda Retido na
-Fonte (IRRF) incidentes sobre operações cambiais. O montante mais elevado observado no período decorre, principalmente, do
-aumento do volume de transações realizadas no exterior, em especial aquelas relacionadas à negociação de atletas, refletindo
-a maior atividade internacional da Companhia.
+#### 25.7 - Outros
 
-25.8 — Descontos Obtidos
-A conta de descontos obtidos apresentou saldo relevante no período, sendo composta, principalmente, por ganhos financeiros
+Esta rubrica é composta, substancialmente, pelo Imposto sobre Operações Financeiras (IOF) e pelo Imposto de Renda Retido na Fonte (IRRF) incidentes sobre operações cambiais. O montante mais elevado observado no período decorre, principalmente, do aumento do volume de transações realizadas no exterior, em especial aquelas relacionadas à negociação de atletas, refletindo a maior atividade internacional da Companhia.
 
-decorrentes da recompra de direitos relacionados ao atleta Luiz Henrique junto ao Olympique Lyonnais Sasu, bem como por
-descontos obtidos em pagamentos antecipados, incluindo operações com a GCS Lending |, LLC e Oliveira Trust.
+#### 25.8 – Descontos Obtidos
 
-SAF BOTAFOGO
+A conta de descontos obtidos apresentou saldo relevante no período, sendo composta, principalmente, por ganhos financeiros decorrentes da recompra de direitos relacionados ao atleta Luiz Henrique junto ao Olympique Lyonnais Sasu, bem como por descontos obtidos em pagamentos antecipados, incluindo operações com a GCS Lending I, LLC e Oliveira Trust.
+
+47
 
 --- pág. 77 ---
 
@@ -3739,166 +3432,131 @@ SAF BOTAFOGO
 
 --- pág. 78 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE 891 y AF BOTAFOGO
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
-
-26.3 - Ativos financeiros ao custo amortizado
-
-São ativos financeiros mantidos pela Companhia com objetivo de recebimento de seu fluxo de caixa contratual e não para a
-venda com realização de ganhos ou perdas cujos termos contratuais dão origem, em datas especificadas, a fluxos de caixa que
-constituam, exclusivamente, pagamentos de principal e juros sobre o valor do principal em aberto. Compreende o saldo de caixa
-e equivalentes de caixa, contas a receber, contas a receber na transferência de atletas e adiantamentos. Suas variações são
-reconhecidas no resultado do período.
-
-26.4 - Passivos financeiros ao custo amortizado
-
-Passivos financeiros ao custo amortizado são instrumentos financeiros não derivativos reconhecidos inicialmente pelo valor justo
-deduzidos de quaisquer custos de transação atribuíveis. Após o reconhecimento inicial, esses passivos financeiros são
-mensurados pelo custo amortizado utilizando o método de juros efetivos. Os passivos financeiros da Companhia compreendem
-o saldo a pagar à empréstimos e financiamentos, fornecedores e contas a pagar, uso de imagem a pagar, credores por
-participação e negociação e acordos a pagar.
-
-26.5 - Impairment de ativos financeiros
-
-Os ativos financeiros são avaliados para verificar se há evidência objetiva de que tenha ocorrido uma perda no seu valor
-recuperável. Uma perda por redução ao valor recuperável (impairment) de um ativo financeiro é reconhecida no resultado do
-período se o valor contábil do ativo exceder o seu valor recuperável.
-
-26.6 — Gestão de Risco
-
-A SAF Botafogo enfrenta uma variedade de riscos em seu cenário, abrangendo risco de mercado, risco de crédito e risco de
-liquidez. A administração é encarregada da responsabilidade integral de estabelecer e supervisionar a estrutura de
-gerenciamento de risco, além de desenvolver e monitorar as políticas associadas.
-
-Foram implementadas políticas de gerenciamento de risco com o propósito de identificar e analisar os riscos enfrentados pela
-organização, estabelecendo limites e controles apropriados, e monitorando o cumprimento desses limites. Essas políticas e
-sistemas são revisados regularmente para refletir as mudanças nas condições de mercado e nas suas atividades.
-
-Risco de mercado
-
-O risco de mercado refere-se às mudanças nos preços de mercado, como taxas de juros, afetando os resultados da organização
-ou o valor de seus investimentos financeiros. O objetivo do gerenciamento de risco de mercado é controlar essas exposições
-dentro de limites aceitáveis, ao mesmo tempo em que busca otimizar o retorno.
-
-O SAF Botafogo monitora ativamente as flutuações do mercado, mas não se envolve em operações com instrumentos financeiros
-derivativos para proteção contra o risco de mercado. Em vez disso, prefere utilizar, sempre que possível, a proteção natural
-proveniente da gestão cuidadosa do contas a pagar e do contas a receber mantidos em moeda estrangeira, buscando manter
-valores o mais próximos possível.
-
 SAF BOTAFOGO
+
+**26.3 - Ativos financeiros ao custo amortizado**
+
+São ativos financeiros mantidos pela Companhia com objetivo de recebimento de seu fluxo de caixa contratual e não para a venda com realização de ganhos ou perdas cujos termos contratuais dão origem, em datas especificadas, a fluxos de caixa que constituam, exclusivamente, pagamentos de principal e juros sobre o valor do principal em aberto. Compreende o saldo de caixa e equivalentes de caixa, contas a receber, contas a receber na transferência de atletas e adiantamentos. Suas variações são reconhecidas no resultado do período.
+
+**26.4 - Passivos financeiros ao custo amortizado**
+
+Passivos financeiros ao custo amortizado são instrumentos financeiros não derivativos reconhecidos inicialmente pelo valor justo deduzidos de quaisquer custos de transação atribuíveis. Após o reconhecimento inicial, esses passivos financeiros são mensurados pelo custo amortizado utilizando o método de juros efetivos. Os passivos financeiros da Companhia compreendem o saldo a pagar à empréstimos e financiamentos, fornecedores e contas a pagar, uso de imagem a pagar, credores por participação e negociação e acordos a pagar.
+
+**26.5 - Impairment de ativos financeiros**
+
+Os ativos financeiros são avaliados para verificar se há evidência objetiva de que tenha ocorrido uma perda no seu valor recuperável. Uma perda por redução ao valor recuperável (impairment) de um ativo financeiro é reconhecida no resultado do período se o valor contábil do ativo exceder o seu valor recuperável.
+
+**26.6 – Gestão de Risco**
+
+A SAF Botafogo enfrenta uma variedade de riscos em seu cenário, abrangendo risco de mercado, risco de crédito e risco de liquidez. A administração é encarregada da responsabilidade integral de estabelecer e supervisionar a estrutura de gerenciamento de risco, além de desenvolver e monitorar as políticas associadas.
+
+Foram implementadas políticas de gerenciamento de risco com o propósito de identificar e analisar os riscos enfrentados pela organização, estabelecendo limites e controles apropriados, e monitorando o cumprimento desses limites. Essas políticas e sistemas são revisados regularmente para refletir as mudanças nas condições de mercado e nas suas atividades.
+
+<u>Risco de mercado</u>
+
+O risco de mercado refere-se às mudanças nos preços de mercado, como taxas de juros, afetando os resultados da organização ou o valor de seus investimentos financeiros. O objetivo do gerenciamento de risco de mercado é controlar essas exposições dentro de limites aceitáveis, ao mesmo tempo em que busca otimizar o retorno.
+
+O SAF Botafogo monitora ativamente as flutuações do mercado, mas não se envolve em operações com instrumentos financeiros derivativos para proteção contra o risco de mercado. Em vez disso, prefere utilizar, sempre que possível, a proteção natural proveniente da gestão cuidadosa do contas a pagar e do contas a receber mantidos em moeda estrangeira, buscando manter valores o mais próximos possível.
+
+49
 
 --- pág. 79 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE 891 y AF BOTAFOGO
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
-
-Risco de crédito
-
-O risco de crédito é a chance de a SAF Botafogo sofrer perdas financeiras ou econômicas devido ao não cumprimento das
-obrigações financeiras ou contratuais por parte de terceiros, como inadimplência ou falha na performance das contrapartes.
-
-A SAF Botafogo enfrenta exposição ao risco de crédito, concentrado principalmente nas contas a receber em suas operações.
-Para mitigar esse risco e administrar a inadimplência, a empresa acompanha de perto o volume das contas a receber dos clientes,
-solicita garantias e executa diversas medidas de cobrança em conformidade com as regulamentações. Além disso, o risco de
-crédito também é presente em suas atividades de financiamento, que incluem depósitos em bancos e instituições financeiras,
-transações cambiais e uma variedade de outros instrumentos financeiros.
-
-Risco de liquidez
-
-O risco de liquidez é a possibilidade de a SAF Botafogo enfrentar dificuldades para cumprir suas obrigações relacionadas aos
-passivos financeiros liquidados à vista ou com outros ativos financeiros. A abordagem na gestão da liquidez é garantir que sempre
-haja liquidez suficiente para honrar suas obrigações, tanto em condições normais quanto em situações de estresse, sem incorrer
-em perdas inaceitáveis ou comprometer sua reputação.
-
-A SAF controla regularmente o nível previsto de entradas de caixa provenientes de contas a receber de terceiros, juntamente
-com as saídas esperadas relacionadas a contas a pagar a fornecedores e outras obrigações, utilizando orçamentos e revisões
-mensais.
-
-Risco de Câmbio
-
-A SAF Botafogo está envolvida em transações internacionais que resultam em débitos e créditos em moeda estrangeira,
-notadamente em dólar norte-americano e euro, principalmente vinculadas à negociação de direitos de jogadores profissionais.
-Com essa exposição cambial cria-se um risco de perdas financeiras se as taxas de câmbio flutuarem de maneira desfavorável.
-
 SAF BOTAFOGO
+
+<u>Risco de crédito</u>
+
+O risco de crédito é a chance de a SAF Botafogo sofrer perdas financeiras ou econômicas devido ao não cumprimento das obrigações financeiras ou contratuais por parte de terceiros, como inadimplência ou falha na performance das contrapartes.
+
+A SAF Botafogo enfrenta exposição ao risco de crédito, concentrado principalmente nas contas a receber em suas operações. Para mitigar esse risco e administrar a inadimplência, a empresa acompanha de perto o volume das contas a receber dos clientes, solicita garantias e executa diversas medidas de cobrança em conformidade com as regulamentações. Além disso, o risco de crédito também é presente em suas atividades de financiamento, que incluem depósitos em bancos e instituições financeiras, transações cambiais e uma variedade de outros instrumentos financeiros.
+
+<u>Risco de liquidez</u>
+
+O risco de liquidez é a possibilidade de a SAF Botafogo enfrentar dificuldades para cumprir suas obrigações relacionadas aos passivos financeiros liquidados à vista ou com outros ativos financeiros. A abordagem na gestão da liquidez é garantir que sempre haja liquidez suficiente para honrar suas obrigações, tanto em condições normais quanto em situações de estresse, sem incorrer em perdas inaceitáveis ou comprometer sua reputação.
+
+A SAF controla regularmente o nível previsto de entradas de caixa provenientes de contas a receber de terceiros, juntamente com as saídas esperadas relacionadas a contas a pagar a fornecedores e outras obrigações, utilizando orçamentos e revisões mensais.
+
+<u>Risco de Câmbio</u>
+
+A SAF Botafogo está envolvida em transações internacionais que resultam em débitos e créditos em moeda estrangeira, notadamente em dólar norte-americano e euro, principalmente vinculadas à negociação de direitos de jogadores profissionais. Com essa exposição cambial cria-se um risco de perdas financeiras se as taxas de câmbio flutuarem de maneira desfavorável.
+
+50
 
 --- pág. 80 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
-
+Docusign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
+Notas explicativas às demonstrações financeiras
+Exercícios findos em 31 de dezembro de 2025 e 2024
 (Valores expressos em milhares de reais)
+SAF BOTAFOGO
 
-27. Eventos subsequentes
+**27. Eventos subsequentes**
 
-27.1 — Contratações e Vendas
+**27.1 – Contratações e Vendas**
 
 A SAF Botafogo realizou a aquisição dos direitos econômicos dos seguintes atletas durante o exercício de 2026 até o momento:
 
-e Edenilson, do Grêmio Foot-Ball Porto Alegrense.
-e Lucas Villalba, do Club Nacional.
-
-e Riquelme Felipe, do Sport Club do Recife.
-e Wallace Davi, do Fluminense Football Club.
-e Ythallo Ryckelm, do Toronto FC II.
+- Edenilson, do Grêmio Foot-Ball Porto Alegrense.
+- Lucas Villalba, do Club Nacional.
+- Riquelme Felipe, do Sport Club do Recife.
+- Wallace Davi, do Fluminense Football Club.
+- Ythallo Ryckelm, do Toronto FC II.
 
 A SAF Botafogo realizou a venda dos direitos econômicos seguintes atletas durante o exercício de 2026 até o momento:
 
-e David Ricardo foi transferido para o Futbolniy Klub Dinamo Moskva.
-e Jefferson Savarino foi transferido para o Fluminense Football Club.
+- David Ricardo foi transferido para o Futbolniy Klub Dinamo Moskva.
+- Jefferson Savarino foi transferido para o Fluminense Football Club.
+- Lucas Halter foi transferido para o Houston Dynamo Football Club.
+- Marlon Freitas foi transferido para a Sociedade Esportiva Palmeiras.
 
-e Lucas Halter foi transferido para o Houston Dynamo Football Club.
+**27.2 - Pedido de Recuperação Judicial e Medida Cautelar Preparatória**
 
-e Marlon Freitas foi transferido para a Sociedade Esportiva Palmeiras.
+Em 21 de abril de 2026, a SAF Botafogo protocolou, perante o Tribunal de Justiça do Rio de Janeiro (TJ-RJ), o pedido de Recuperação Judicial (RJ). A medida fundamenta-se na Lei nº 11.101/2005 e na Lei nº 14.193/2021 (Lei da SAF), visando a reestruturação do passivo financeiro e a preservação da continuidade operacional.
 
-27.2 - Pedido de Recuperação Judicial e Medida Cautelar Preparatória
+O movimento de reorganização decorre da frustração de ingressos de capital previstos no modelo de estruturação original e de instabilidades no fluxo de caixa. O pedido busca:
 
-Em 21 de abril de 2026, a SAF Botafogo protocolou, perante o Tribunal de Justiça do Rio de Janeiro (TJ-RJ), o pedido de
-Recuperação Judicial (RJ). A medida fundamenta-se na Lei nº 11.101/2005 e na Lei nº 14.193/2021 (Lei da SAF), visando a
-reestruturação do passivo financeiro e a preservação da continuidade operacional.
+- **Renegociação Estruturada:** Estabelecer um ambiente de estabilidade para negociação coletiva com credores.
+- **Governança Corporativa:** A Companhia solicitou, em caráter liminar, a suspensão temporária do direito de voto do acionista majoritário, alegando obstrução ao aporte de novos capitais necessários à operação.
+- **Continuidade Operacional:** Manter o cumprimento das obrigações correntes com atletas, colaboradores e prestadores de serviço, garantindo a manutenção das atividades esportivas e investimentos em infraestrutura (CT e Estádio Nilton Santos).
 
-O movimento de reorganização decorre da frustração de ingressos de capital previstos no modelo de estruturação original e de
-instabilidades no fluxo de caixa. O pedido busca:
+Conforme rito legal, a Companhia deverá apresentar, no prazo regulamentar, o Plano de Recuperação Judicial, que detalhará as formas de pagamento, prazos e eventuais deságios das dívidas sujeitas ao processo.
 
-e Renegociação Estruturada: Estabelecer um ambiente de estabilidade para negociação coletiva com credores.
+A Administração avalia que o pedido de recuperação judicial não impacta a participação da SAF Botafogo em competições desportivas em curso. Até a presente data, não é possível mensurar com precisão os efeitos reflexos finais nas demonstrações financeiras, uma vez que o plano ainda depende de aprovação pela Assembleia Geral de Credores e homologação judicial.
 
-e Governança Corporativa: A Companhia solicitou, em caráter liminar, a suspensão temporária do direito de voto do
-acionista majoritário, alegando obstrução ao aporte de novos capitais necessários à operação.
-
-e Continuidade Operacional: Manter o cumprimento das obrigações correntes com atletas, colaboradores e prestadores
-de serviço, garantindo a manutenção das atividades esportivas e investimentos em infraestrutura (CT e Estádio Nilton
-Santos).
-
-Conforme rito legal, a Companhia deverá apresentar, no prazo regulamentar, o Plano de Recuperação Judicial, que detalhará as
-formas de pagamento, prazos e eventuais deságios das dívidas sujeitas ao processo.
-
-A Administração avalia que o pedido de recuperação judicial não impacta a participação da SAF Botafogo em competições
-desportivas em curso. Até a presente data, não é possível mensurar com precisão os efeitos reflexos finais nas demonstrações
-financeiras, uma vez que o plano ainda depende de aprovação pela Assembleia Geral de Credores e homologação judicial.
-
-SAF BOTAFOGO
+51
 
 --- pág. 81 ---
 
-Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO
-
-(Valores expressos em milhares de reais)
-
-EP por: .
-
-23E5D3577C524C6...
-
-Durcésio Andrade Mello
-CEO
-
-Assinado por:
-[dus Santos
-
-AA6CFDC3DCE24ED...
-
-Anderson Paulo Silva Santos
-CFO
-CRC 092.589/0-8
+DocuSign Envelope ID: F214917D-C8C4-8653-8094-B0BEB6FE891C
 
 SAF BOTAFOGO
+
+Notas explicativas às demonstrações financeiras  
+Exercícios findos em 31 de dezembro de 2025 e 2024  
+(Valores expressos em milhares de reais)
+
+Assinado por:  
+*DMello*  
+23E5D3577C524C6...  
+Durcésio Andrade Mello  
+CEO
+
+Assinado por:  
+*Anderson Santos*  
+AA6CFDC3DCE24ED...  
+Anderson Paulo Silva Santos  
+CFO  
+CRC 092.589/O-8
+
+52
+
+SAF BOTAFOGO
+

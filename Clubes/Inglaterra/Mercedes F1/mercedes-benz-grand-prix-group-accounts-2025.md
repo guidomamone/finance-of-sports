@@ -313,75 +313,45 @@ governance, risk management, strategy and target setting.
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Governance & risk management
+**Governance & risk management**
 
-MGP Board a)
+[Diagrama:]
 
-Responsible for deciding long-term strategic direction of the Group, including environmental, 3
+**MGP Board**
+Responsible for deciding long-term strategic direction of the Group, including environmental, social and governance (ESG) matters.
 
-social and governance (ESG) matters. | a FI
+**Management Committee (MCM)**
+Delegated day-to-day responsibility of climate-related matters.
 
-_ Environmental Social Working __. | Governance S @
+| **Environmental Working Group** | **Social Working Group** | **Governance Committee** |
+|---|---|---|
+| Chaired by the Chief Communications Officer. Assesses and manages climate related risks and opportunities. | Chaired by the Chief People Officer, Reviews and manages initiatives with charity and community partnerships. | Chaired by the Chief Financial Officer, Reviews and manages governance risks within the organisation. |
 
-Working Group Group. ss: {f-_ SSCs Committee mo
+[Lateral vertical: Governance, Ethics & Compliance Framework (GEC)]
 
-Chaired. by the Chief. Chaired by the Chief People |} Chaired by the Chief i 2
+The Board of Directors delegates day-to-day responsibility of the climate strategy to the MCM and receives updates on climate-related matters in the Board meetings held during the year. The updates to the Board include the review of the Group's carbon footprint, progress against emission and carbon targets, and the requirements to achieve these targets. The MCM has embedded in its strategic business plan a sustainability strategy to guide business decisions in the context of capturing climate-related opportunities and managing climate risk.
 
-Communications Officer. ° . | Officer, Reviews-and' - Financial-Officer,Reviews |! #F
+The Environmental and Social Working Groups and the Governance Committee are multidisciplinary teams of management representatives from different areas of the Group, including individuals from the sustainability team. These Groups and the Committee individually provide regular updates to the MCM as part of the standing agenda. These include updates on key previous and upcoming decisions, activities and outputs as well as key risks and opportunities for review.
 
-Assesses and manages manages initiatives with | and manages governance | a
+The GEC framework includes commitments to climate protection and governance, and all core policies are reviewed on an annual basis and updated at least every two years.
 
-climate related risks and charity and community |] sisks' withinthe organisation. °
-opportunities. partnerships. :
+**Identification, assessment, and management of climate-related risks and opportunities**
 
-The Board of Directors delegates day-to-day responsibility of the climate strategy to the MCM and receives
-updates on climate-related matters in the Board meetings held during the year. The updates to the Board
-include the review of the Group’s carbon footprint, progress against emission and carbon targets, and the
-requirements to achieve these targets. The MCM has embedded in its strategic business plan a sustainability
-strategy to guide business decisions in the context of capturing climate-related opportunities and managing
-climate risk. ;
+The sustainability team manages day-to-day environmental risks in-line with the standards set out in the Group's ISO14001:2015 certified Environmental Management System (EMS). The sustainability team assesses the Group's environmental aspects and impacts based on compliance obligations as well as relevant risks and opportunities. The sustainability team score risks and opportunities and track environmental observations and actions as part of the EMS.
 
-The Environmental and Social Working Groups and the Governance Committee are multidisciplinary teams
-of management representatives from different areas of the Group, including individuals from the sustainability
-team. These Groups and the Committee individually provide regular updates to the MCM as part of the
-standing agenda. These include updates on key previous and upcoming decisions, activities and outputs as
-well as key risks and opportunities for review.
+Any risk identified with a score above the significance threshold is managed and summarised by the Sustainability team into relevant updates throughout the year within EMS updates, department meetings or Environmental Working Group (EWG) meetings. This process is also followed for repeat observations and actions.
 
-The GEC framework includes commitments to climate protection and governance, and all core policies are
-reviewed on an annual basis and updated at least every two years.
+In 2024 the Group completed a Double Materiality Assessment (DMA), set to align with the EFRAG guidelines, to identify impacts, risks and opportunities (IROs). With the support of a third party, potential sustainability matters were identified by reviewing Annex I AR 16 of ESRS 1. This identification was additionally informed by peer analysis, industry standards analysis, an ESG industry materiality map, and a company review.
 
-Identification, assessment, and management of climate-related risks and opportunities
-
-The sustainability team manages day-to-day environmental risks in-line with the standards set out in the
-Group’s 1S014001:2015 certified Environmental Management System (EMS). The sustainability team
-assesses the Group’s environmental aspects and impacts based on compliance obligations as well as
-relevant risks and opportunities. The sustainability team score risks and opportunities and track
-environmental observations and actions as part of the EMS.
-
-Any risk identified with a score above the significance threshold is managed and summarised by the
-Sustainability team into relevant updates throughout the year within EMS updates, department meetings or
-Environmental Working Group (EWG) meetings. This process is also followed for repeat observations and
-actions.
-
-In 2024 the Group completed a Double Materiality Assessment (DMA), set to align with the EFRAG
-guidelines, to identify impacts, risks and opportunities (IROs). With the support of a third party, potential
-sustainability matters were identified by reviewing Annex | AR 16 of ESRS 1. This identification was
-additionally informed by peer analysis, industry standards analysis, an ESG industry materiality map, and a
-company review.
-
-The businesses held a review in 2025 to confirm there were no material changes across the Environmental,
-Social, or Governance pillars. It was determined that the 2024 DMA remained appropriate for activities in
-calendar year 2025, and that the material impacts identified for the business across the Environmental, Social
-and Governance pillars remained unchanged. It was agreed that the Working Groups and Committee would
-continue to monitor our activities against these throughout the year.
+The businesses held a review in 2025 to confirm there were no material changes across the Environmental, Social, or Governance pillars. It was determined that the 2024 DMA remained appropriate for activities in calendar year 2025, and that the material impacts identified for the business across the Environmental, Social and Governance pillars remained unchanged. It was agreed that the Working Groups and Committee would continue to monitor our activities against these throughout the year.
 
 There is ongoing tracking of the outputs from the DMA, as described below.
 
-Description of how processes for identifying, assessing and managing climate related risks are
-integrated into the overall risk management process of the Group
+**Description of how processes for identifying, assessing and managing climate related risks are integrated into the overall risk management process of the Group**
 
-The IROs identified in the DMA were reviewed internally by each Working Group and Committee in 2025 to
-ensure that they remained relevant, captured internal and external factors which may affect these and to
+The IROs identified in the DMA were reviewed internally by each Working Group and Committee in 2025 to ensure that they remained relevant, captured internal and external factors which may affect these and to
+
+7
 
 --- pág. 8 ---
 
@@ -494,84 +464,33 @@ to secure supplies.
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-In 2023, a physical climate risk assessment was completed by external experts under RCP 8.5 at the 50"
-percentile up until the 2040s. In 2025, the sustainability team built on this, completing a high-level assessment
-of the impact of RCP 8.5 on the Group’s operations and supply chain covering our global footprint. The
-preliminary results were reviewed by the EWG to discuss the impacts on the business and recommended
-next steps for 2026. These included resource availability, contingency planning and cost fluctuations.
+In 2023, a physical climate risk assessment was completed by external experts under RCP 8.5 at the 50th percentile up until the 2040s. In 2025, the sustainability team built on this, completing a high-level assessment of the impact of RCP 8.5 on the Group's operations and supply chain covering our global footprint. The preliminary results were reviewed by the EWG to discuss the impacts on the business and recommended next steps for 2026. These included resource availability, contingency planning and cost fluctuations.
 
-Resilience was further assessed throughout financial planning where future contractual and planned
-sustainability related costs were included within planned cashflows.
+Resilience was further assessed throughout financial planning where future contractual and planned sustainability related costs were included within planned cashflows.
 
-Based on this assessment the current business model and strategy appear resilient to physical climate risks
-under RCP 8.5 at the 50" percentile up until the 2040s based on the quantitative assessment performed in
-2023 and the qualitative and quantitative assessments in 2025.
+Based on this assessment the current business model and strategy appear resilient to physical climate risks under RCP 8.5 at the 50th percentile up until the 2040s based on the quantitative assessment performed in 2023 and the qualitative and quantitative assessments in 2025.
 
-Metrics and targets
+**Metrics and targets**
 
-Since 2010, the Group has held an 1S014001:2015 accredited EMS, ensuring continual improvement of
-processes and procedures to reduce environmental impact.
+Since 2010, the Group has held an ISO14001:2015 accredited EMS, ensuring continual improvement of processes and procedures to reduce environmental impact.
 
-Targets have been set to drive industry best practice and, where necessary, to respond to the climate related
-risks identified by the business. The climate targets ensure that the Group is addressing absolute emissions
-reductions across all three scopes to reduce greenhouse gas emissions and are unchanged from previous
-years. The targets have been set to respond to the need to act swiftly to reduce greenhouse gas emissions
-to limit climate impacts.
+Targets have been set to drive industry best practice and, where necessary, to respond to the climate related risks identified by the business. The climate targets ensure that the Group is addressing absolute emissions reductions across all three scopes to reduce greenhouse gas emissions and are unchanged from previous years. The targets have been set to respond to the need to act swiftly to reduce greenhouse gas emissions to limit climate impacts.
 
-The targets also indirectly support the management of the transition risks identified by the business through
-delivering greater transparency on emissions reduction activities.
+The targets also indirectly support the management of the transition risks identified by the business through delivering greater transparency on emissions reduction activities.
 
-‘Target | Description KPI , Target 2025 Progress |
-_ . Date i
-“Net Zero 100% reduction in Scope 1&2 Absolute market-based 2026 : 44% reduction
+| Target | Description | KPI | Target Date | 2025 Progress |
+|---|---|---|---|---|
+| Net Zero Scope 1 & 2 by 2026 | 100% reduction in Scope 1 & 2 emissions against a 2022 baseline – with any residual emissions to be compensated using carbon removals in line with the Oxford Offsetting Principles. | Absolute market-based Scope 1 & 2 CO2e emissions per year in tonnes | 2026 | 44% reduction in 2025 compared to 2022 |
+| Net Zero Scope 3 (Race Team Control) by 2030 | 75% reduction across emissions in Race Control Scope 3 (including market-based Scope 1 & 2) with any residual emissions to be compensated using carbon removals in line with the Oxford Offsetting Principles. | Absolute Scope 3 CO2e emissions per year in tonnes for the following categories: 1. Fuel & Energy Related Activities 2. Upstream transportation and distribution (with SAFc) 3. Waste generated in operations 4. Business travel (with SAFc) 5. Employee commuting And market-based Scope 1 & 2 emissions | 2030 | 35% reduction in 2024 compared to 2022 |
+| Climate pledge signatory | Net Zero across all Scopes by 2040, following a 1.5-degree-aligned emissions reduction pathway. | Absolute Scope 1, 2 & 3 emissions | 2040 | 18% increase in 2024 compared to 2022 |
 
-' Scope 1 - emissions against a 2022 Scope 1 & 2 CO2e , in 2025
+Performance against these targets in 2024 was reported in the Group's Annual Sustainability Report released in July 2025. The 2024 footprint underwent a limited level assurance by KPMG LLP in line with ISAE 3000. Scope 3 data for 2025 will be reported in the Group's Annual Sustainability Report which is due to be released in 2026.
 
-'~&2by | baseline — with any residual emissions per year in compared to
+More detail on progress against Scope 1 & 2 targets for 2025 can be found in the SECR disclosures within the Directors' Report.
 
-* 2026 . emissions to be compensated tonnes . 2022
+Selected aspects of the disclosures within the Group non-financial and sustainability information statement have been subject to limited assurance by KPMG LLP in accordance with ISAE (UK) 3000. The information
 
-* using carbon removals in line
-with the Oxford Offsetting
-
-_ Principles.
-Net Zero | 75% reduction across Absolute Scope 3 CO2ze 2030 * 35% reduction
-Scope3 _—_ emissions in Race Team emissions per year in in 2024
-’ (Race ' Control Scope 3 (including tonnes for the following compared to
-Team market-based Scope 1 & 2) - categories: 2622
-Control) -« with any residual emissions to 1. Fuel & Energy Related
-
-by 2030 ~ be compensated using carbon Activities
-- removals in line with the Oxford 2. Upstream transportation
-Offsetting Principles. and distribution (with
-
-SAF c)
-3. Waste generated in
-operations
-4. Business travel (with
-SAFc) °
-5. Employee commuting
-And market-based Scope
-1 & 2 emissions
-
-Hl
-
-; Climate ‘ Net Zero across all Scopes by | Absolute Scope 1,2&3 | 2040 1 18% increase in ;
-1 pledge ‘ 2040, following a 1.5-degree- ; emissions } 2024 compared |;
-: signatory ' aligned emissions reduction | \ to 2022
-
-i ‘pathway. i i ;
-
-Performance against these targets in 2024 was reported in the Group's Annual Sustainability Report released
-in July 2025. The 2024 footprint underwent a limited level assurance by KPMG LLP in line with ISAE 3000.
-Scope 3 data for 2025 will be reported in the Group's Annual Sustainability Report which is due to be released
-in 2026. ;
-
-More detail on progress against Scope 1 & 2 targets for 2025 can be found in the SECR disclosures within
-the Directors’ Report.
-
-Selected aspects of the disclosures within the Group non-financial and sustainability information statement
-have been subject to limited assurance by KPMG LLP in accordance with ISAE (UK) 3000. The information
+9
 
 --- pág. 10 ---
 
@@ -669,78 +588,49 @@ before the year-end.
 
 --- pág. 12 ---
 
-» MERCEDES-BENZ GRAND PRIX LIMITED
+MERCEDES-BENZ GRAND PRIX LIMITED
 
-Political contributions
+**Political contributions**
 
-The Group made no political donations or incurred any political expenditure during the year (2024: Enil).
-Charitable donations
+The Group made no political donations or incurred any political expenditure during the year (2024: £nil).
+
+**Charitable donations**
 
 The Group made charitable donations during the year of £78k (2024: £54k).
 
-Research and development activities
+**Research and development activities**
 
-The activities of the Group are primarily the design and development of a car to compete in the FIA Formula
-One World Championship and additionally contract work through its Applied Science division. The Directors
-consider the investment in research and development to be integral to the continued success of the Group.
+The activities of the Group are primarily the design and development of a car to compete in the FIA Formula One World Championship and additionally contract work through its Applied Science division. The Directors consider the investment in research and development to be integral to the continued success of the Group.
 
-Environmental policy and mandatory greenhouse gas emissions reporting
-Targets
+**Environmental policy and mandatory greenhouse gas emissions reporting**
 
-Mercedes-Benz Grand Prix Limited continues to make progress towards its 2030 carbon emissions reduction
-targets. For Scopes 1 & 2, the Group is targeting a 100% reduction of emissions, with any residual emissions
-to be compensated using carbon removals in line with the Oxford Offsetting Principles. The Group is also
-targeting a 75% reduction in Scope 3 emissions within Race Team Control (RTC) and will compensate for
-the residual 25% using carbon removals. These targets align to Formula One’s Factory to Flag emissions
-reporting.
+*Targets*
 
-The Group is a signatory of the Climate Pledge and is targeting Net Zero across all Scopes 1, 2 and 3 by
-2040. The pathway to meet this target has been 1.5-degree-aligned.
+Mercedes-Benz Grand Prix Limited continues to make progress towards its 2030 carbon emissions reduction targets. For Scopes 1 & 2, the Group is targeting a 100% reduction of emissions, with any residual emissions to be compensated using carbon removals in line with the Oxford Offsetting Principles. The Group is also targeting a 75% reduction in Scope 3 emissions within Race Team Control (RTC) and will compensate for the residual 25% using carbon removals. These targets align to Formula One's Factory to Flag emissions reporting.
 
-Additional details, including reporting boundaries and how these targets have been set, are outlined in the
-Group Non-Financial and Sustainability Information Statement.
+The Group is a signatory of the Climate Pledge and is targeting Net Zero across all Scopes 1, 2 and 3 by 2040. The pathway to meet this target has been 1.5-degree-aligned.
 
-To deliver these targets, the Group has set out a reduction-first approach. From 2025 the Group has shifted
-its carbon credit strategy in line with the Oxford Offsetting Principles. The Group is now prioritising the
-procurement of carbon removals over carbon offsets to compensate for residual emissions. The Group will
-scale the retirement of removal credits from 2025 to meet its 2030 RTC target.
+Additional details, including how these targets have been set, are outlined in the Group Non-Financial and Sustainability Information Statement.
 
-Energy targets and efficiency improvements are driven through the implementation of the 1$014001:2015
-certified Environmental Management System (EMS).
+To deliver these targets, the Group has set out a reduction-first approach. From 2025 the Group has shifted its carbon credit strategy in line with the Oxford Offsetting Principles. The Group is now prioritising the procurement of carbon removals over carbon offsets to compensate for residual emissions. The Group will scale the retirement of removal credits from 2025 to meet its 2030 RTC target.
 
-Emissions
+Energy targets and efficiency improvements are driven through the implementation of the ISO14001:2015 certified Environmental Management System (EMS).
 
-To reduce Scope 1 & 2 emissions associated with infrastructure across the Group's Brackley site, the Group
-focuses on activities including the removal of gas infrastructure, the increase of renewable energy generation,
-and the reduction of overall electricity consumption.
+*Emissions*
 
-2025 saw significant investment into an on-site solar canopy, which is forecast to generate 1.1 GWh of
-renewable electricity per year. This in turn avoids the production of 195 tCO2e of location-based emissions
-annually.
+To reduce Scope 1 & 2 emissions associated with infrastructure across the Group's Brackley site, the Group focuses on activities including the removal of gas infrastructure, the increase of renewable energy generation, and the reduction of overall electricity consumption.
 
-Furthermore, the Group continues to procure Renewable Energy Guarantees of Origin (REGO) and
-Renewable Gas Guarantees of Origin (RGGO) certificates to cover all electricity and gas consumption on its
-Brackley site, and these certificates also support the production of renewable energy across the wider market.
+2025 saw significant investment into an on-site solar canopy, which is forecast to generate 1.1 GWh of renewable electricity per year. This in turn avoids the production of 195 tCO2e of location-based emissions annually.
 
-In 2025, the use of energy sub-meters has improved the tracking of electricity consumption and identification
-of reduction opportunities across the Group's Brackley site. This programme has been trialled across several
-departments, with a focus on promoting behavioural change and identifying process improvements. In
-addition, there has been a reduction in equipment utilisation providing further energy reductions. The
-combination of these activities has generated a 1% reduction in overall electricity usage compared to 2024.
+Furthermore, the Group continues to procure Renewable Energy Guarantees of Origin (REGO) and Renewable Gas Guarantees of Origin (RGGO) certificates to cover all electricity and gas consumption on its Brackley site, and these certificates also support the production of renewable energy across the wider market.
 
-The Group continued to focus on gas removal across its Brackley site in 2025. For example, heating
-equipment in manufacturing areas was upgraded from gas to electricity, delivering a 19,469 kWh reduction
-in overall gas usage compared to 2024. Further reductions in gas consumption will continue through 2026.
+In 2025, the use of energy sub-meters has improved the tracking of electricity consumption and identification of reduction opportunities across the Group's Brackley site. This programme has been trialled across several departments, with a focus on promoting behavioural change and identifying process improvements. In addition, there has been a reduction in equipment utilisation providing further energy reductions. The combination of these activities has generated a 1% reduction in overall electricity usage compared to 2024.
 
-in addition to infrastructure upgrades, the Group continued to expand the use of battery electric vehicles
-(BEVs) to reduce emissions within the mobile combustion emission category. Our pool car fleet is
-transitioning to efectric, with five BEVs used across the full calendar year, following introduction part way
-through 2024. This has in turn contributed to a 12 tCO2e emissions reduction in 2025 compared to 2024.
+The Group continued to focus on gas removal across its Brackley site in 2025. For example, heating equipment in manufacturing areas was upgraded from gas to electricity, delivering a 19,469 kWh reduction in overall gas usage compared to 2024. Further reductions in gas consumption will continue through 2026.
 
-Emissions associated with trackside operations reduced in 2025 thanks to the centralised energy solution
-provided by Formula 1 across the European season. This solution is powered by a combination of HVO100,
-grid-purchased energy and solar power. The adoption of this solution, following a trial in 2024, has resulted
-in a 2.6 tCO2e emissions reduction.
+In addition to infrastructure upgrades, the Group continued to expand the use of battery electric vehicles (BEVs) to reduce emissions within the mobile combustion emission category. Our pool car fleet is transitioning to electric, with five BEVs used across the full calendar year, following introduction part way through 2024. This has in turn contributed to a 12 tCO2e emissions reduction in 2025 compared to 2024.
+
+Emissions associated with trackside operations reduced in 2025 thanks to the centralised energy solution provided by Formula 1 across the European season. This solution is powered by a combination of HVO100, grid-purchased energy and solar power. The adoption of this solution, following a trial in 2024, has resulted in a 2.6 tCO2e emissions reduction.
 
 12
 
@@ -748,67 +638,40 @@ in a 2.6 tCO2e emissions reduction.
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Emissions overview
+**Emissions overview**
 
-SECR inventory 2025 2024 Comparison
-Energy consumption used to calculate 299
-emissions (kWh) 18,567,221 19,173,509 3.2%
-SECR inventory location based 2025 2024 Comparison
-Scope 1 — mobile & stationary
+| SECR inventory | 2025 | 2024 | Comparison |
+|---|---|---|---|
+| Energy consumption used to calculate emissions (kWh) | 18,567,221 | 19,173,509 | -3.2% |
 
-combustion 305 337 -9.5%
-(tCOze)
+| SECR inventory location based | 2025 | 2024 | Comparison |
+|---|---|---|---|
+| Scope 1 – mobile & stationary combustion (tCO2e) | 305 | 337 | -9.5% |
+| Scope 1 – fugitive emissions (tCO2e) | 29 | 176 | -83.8% |
+| Scope 2 – purchased electricity emissions (tCO2e) | 2,977 | 3,558 | -16.3% |
+| **Total gross (tCO2e)** | **3,310** | **4,071** | **-18.7%** |
+| Intensity ratio: tCO2e gross per average number of employees | 2.46 | 3.08 | -20.2% |
 
-Scope 1 — fugitive emissions
+| SECR inventory market based | 2025 | 2024 | Comparison |
+|---|---|---|---|
+| Scope 1 – mobile & stationary combustion (tCO2e) | 177 | 207 | -14.7% |
+| Scope 1 – fugitive emissions (tCO2e) | 29 | 176 | -83.8% |
+| Scope 2 – purchased electricity emissions (tCO2e) | 1.8 | 0.5 | 257.6% |
+| Total gross tCO2e | 207 | 384 | -46.1% |
+| Intensity ratio: tCO2e gross per average number of employees | 0.15 | 0.28 | -45.1% |
 
-(tCOze) 29 176 -B3.8%
-Scope 2 — purchased electricity
-
-emissions 2,977 3,558 -16.3%
-(tCO2e)
-
-Total gross (tCOze) 3,310 4,071 -18.7%
-Intensity ratio: tCOze gross per average .
-number of employees 2.46 3.08 20.2%
-SECR inventory market based 2025 2024 Comparison
-Scope 1 — mobile & stationary
-
-combustion 177 207 -14.7%
-(tCO2e)
-
-Scope 1 — fugitive emissions . 5
-(tCO2e) 29 176 83.8%
-Scope 2 — purchased electricity .
-
-emissions 1.8 0.5 257.6%
-(tCO2e)
-
-Total gross tCOze 207 384 -46.1%
-Intensity ratio: tCOze gross per average ‘ °
-number of employees 0.15 0.28 45.1%
-
-The metrics within the 2024 and 2025 columns per the Emissions Overview table have been subject to
-external independent limited assurance in line with ISAE (UK) 3000 and ISAE 3410, with the 2024 metrics
-being assured as part of the prior year Annual Report and Accounts. Two separate Assurance Reports have
-been issued for 2024 and 2025 respectively.
+The metrics within the 2024 and 2025 columns per the Emissions Overview table have been subject to external independent limited assurance in line with ISAE (UK) 3000 and ISAE 3410, with the 2024 metrics being assured as part of the prior year Annual Report and Accounts. Two separate Assurance Reports have been issued for 2024 and 2025 respectively.
 
 For both assurance reports and the relevant basis of reporting see:
-https:/Avww.mercedesamgf1.com/sustainability/reports
+https://www.mercedesamgf1.com/sustainability/reports
 
-Comparison
+**Comparison**
 
-To ensure that emissions can be compared across 2024 and 2025, emissions categories have been divided
-into mobile and stationary combustion emissions and fugitive emissions.
+To ensure that emissions can be compared across 2024 and 2025, emissions categories have been divided into mobile and stationary combustion emissions and fugitive emissions.
 
-Overall, Scope 1 location-based emissions have reduced by 179 tCOze (-35%) when compared to 2024, This
+Overall, Scope 1 location-based emissions have reduced by 179 tCO2e (-35%) when compared to 2024. This reduction has been driven by the removal of gas from the Group's Brackley site, leading to a 4 tCO2e saving compared to gas usage in 2024. Company vehicle fuel usage reduced in 2025 compared to 2024 generating savings of 20 tCO2e compared to 2024. Further savings were made in 2025 compared to 2024, due to the reduction in overall F-gas emissions sourced from leaks resulting in reduction in fugitive emissions of 147 tCO2e. Remaining emissions were reduced from changes in usage of fuel across racing and testing operations, providing a saving of approximately 10 tCO2e.
 
-reduction has been driven by the removal of gas from the Group’s Brackley site, leading to a 4 tCOze saving
-compared to gas usage in 2024. Company vehicle fuel usage reduced in 2025 compared to 2024 generating
-savings of 20 tCOze compared to 2024. Further savings were made in 2025 compared to 2024, due to the
-reduction in overall F-gas emissions sourced from leaks resulting in reduction in fugitive emissions of 147
-tCOze. Remaining emissions were reduced from changes in usage of fuel across racing and testing
-operations, providing a saving of approximately 10 tCOze.
-
+13
 
 --- pág. 14 ---
 
@@ -1195,144 +1058,47 @@ Company registered number: 00787446
 MERCEDES-BENZ GRAND PRIX LIMITED
 
 CONSOLIDATED BALANCE SHEET
-
 AS AT 31 DECEMBER 2025
 
-Non-current assets
-Property, plant and equipment
-Intangible assets
-Heritage assets
-Contract assets
-Trade and other receivables
-
-Current assets
-Inventories
-Contract assets
-Trade and other receivables
-Cash and cash equivalents
-
-Total assets
-
-Current liabilities
-Creditors: amounts falling due within one year
-Contract liabilities
-Provisions
-
-Net current assets
-
-Non-current liabilities
-Deferred tax liabilities
-Creditors: amounts falling due after more than
-one year
-Contract liabilities
-Provisions
-
-Total liabilities
-‘Net assets
-
-Equity attributable to equity holders of the parent
-Share capital
-Share premium
-Revaluation reserve
-Other reserves
-Retained earnings
-
-Total equity
-
-Note
-
-“A
-WWoOON
-
-12
-
-13
-14
-
-17
-
-15
-17
-
-2025 2024*
-£000 £'000
-144,418 120,401
-3,195 1,401
-13,172 6,196
-1,474 2,597
-2,464 2,371
-164,723 "132,966
-65,176 57,874
-59,107 48,356
-190,764 147.439
-29,489 52.613
-344,536 306,282
-509,259 439,248
-(78,148) (78,771)
-(125,784) (108, 148)
-(4,310) (339)
-139,297 119,024
-(6,920) (13,425)
-(5,526) (2,460)
-(50,358) (3,220)
-(1,233) (2,658)
-(64,037) (21,763)
-(269,276) (209,021)
-239,983 230,227
-70,012 70,012
-2,508 2.415
-5,346 1,754
-5,119 270
-156,998 155,776
-239,983 230,227
+| | Note | 2025 £'000 | 2024* £'000 | 1-Jan 2024* £'000 |
+|---|---|---|---|---|
+| **Non-current assets** | | | | |
+| Property, plant and equipment | 7 | 144,418 | 120,401 | 114,569 |
+| Intangible assets | 8 | 3,195 | 1,401 | 1,108 |
+| Heritage assets | 9 | 13,172 | 6,196 | 6,179 |
+| Contract assets | 13 | 1,474 | 2,597 | 4,316 |
+| Trade and other receivables | 13 | 2,464 | 2,371 | - |
+| | | 164,723 | 132,966 | 126,172 |
+| **Current assets** | | | | |
+| Inventories | 12 | 65,176 | 57,874 | 55,738 |
+| Contract assets | 13 | 59,107 | 48,356 | 26,051 |
+| Trade and other receivables | 13 | 190,764 | 147,439 | 198,574 |
+| Cash and cash equivalents | 14 | 29,489 | 52,613 | 23,719 |
+| | | 344,536 | 306,282 | 304,082 |
+| **Total assets** | | **509,259** | **439,248** | **430,254** |
+| **Current liabilities** | | | | |
+| Creditors: amounts falling due within one year | 15 | (78,148) | (78,771) | (82,012) |
+| Contract liabilities | 15 | (125,781) | (108,148) | (110,990) |
+| Provisions | 17 | (1,310) | (339) | (1,094) |
+| **Net current assets** | | **139,297** | **119,024** | **109,986** |
+| **Non-current liabilities** | | | | |
+| Deferred tax liabilities | 11 | (6,920) | (13,425) | (14,709) |
+| Creditors: amounts falling due after more than one year | 15 | (5,526) | (2,460) | (3,669) |
+| Contract liabilities | 15 | (50,358) | (3,220) | (4,973) |
+| Provisions | 17 | (1,233) | (2,658) | (2,908) |
+| | | (64,037) | (21,763) | (26,259) |
+| **Total liabilities** | | **(269,276)** | **(209,021)** | **(220,355)** |
+| **Net assets** | | **239,983** | **230,227** | **209,899** |
+| **Equity attributable to equity holders of the parent** | | | | |
+| Share capital | 18 | 70,012 | 70,012 | 70,000 |
+| Share premium | 19 | 2,508 | 2,415 | 44 |
+| Revaluation reserve | 19 | 5,346 | 1,754 | 957 |
+| Other reserves | 19 | 5,119 | 270 | - |
+| Retained earnings | 19 | 156,998 | 155,776 | 138,898 |
+| **Total equity** | | **239,983** | **230,227** | **209,899** |
 
 The notes on pages 27 to 73 form part of these consolidated financial statements.
-
 *The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26
-
-1-Jan 2024*
-£°000
-114,569
-1,108
-
-6,179
-4,316
-
-126,172
-
-55,738
-26,051
-198,574
-23,719
-
-304,082
-
-430,254
-
-(82,012)
-(110,990)
-(1,094)
-
-109,986
-
-(14,709)
-(3,669)
-
-(4,973)
-(2,908)
-
-(26,259)
-(220,355)
-
-209,899
-
-70,000
-44
-957
-
-138,898 ©
-
-209,899
 
 20
 
@@ -1356,96 +1122,46 @@ MERCEDES-BENZ GRAND PRIX LIMITED
 COMPANY BALANCE SHEET
 AS AT 31 DECEMBER 2025
 
-Note 2025 2024*
-£'000 £°000
-Non-current assets
-Property, plant and equipment 7 110,017 101,175
-Intangible assets 8 3,195 1,401
-Heritage assets 9 13,172 6,196
-Investments 10 19,778 19,778
-Contract assets 13 1,474 2,597
-Trade and other receivables 13 40,613 22,976
-188,249 154,123
-Current assets
-Inventories 12 65,176 57,874
-Contract assets 13 59,107 48,356
-Trade and other receivables 13 189,979 147,115
-Cash and cash equivalents 14 26,423 51,838
-340,685 305, 183
-Total assets 528,934 459,306
-Current liabilities
-Creditors: amounts falling due within one year 15 (78,254) (81,735)
-Contract liabilities 15 (125,781) (108, 148)
-Provisions 17 (1,310) (339)
-Net current assets 135,340 114,961
-Non-current liabilities
-Deferred tax liabilities 11 (7,642) (13,526)
-Creditors: amounts failing due after more than 15 (24,128) (20,072)
-one year .
-Contract liabilities 15 (50,358) (3,220)
-Provisions 17 (1,233) (2,658)
-(83,361) (39,476)
-Total liabilities (288,706) (229,698)
-Net assets 240,228 229,608
-Equity attributable to equity holders of the parent
-Share capital 18 70,012 70,012
-Share premium 19 2,508 2,415
-Revaluation reserve 19 4,688 80
-Other reserves 19 5,119 270
-Retained earnings 19 157,901 156,831
-Total equity 240,228 229,608
+| | Note | 2025 £'000 | 2024* £'000 | 1-Jan 2024* £'000 |
+|---|---|---|---|---|
+| **Non-current assets** | | | | |
+| Property, plant and equipment | 7 | 110,017 | 101,175 | 100,014 |
+| Intangible assets | 8 | 3,195 | 1,401 | 1,108 |
+| Heritage assets | 9 | 13,172 | 6,196 | 6,179 |
+| Investments | 10 | 19,778 | 19,778 | 17,400 |
+| Contract assets | 13 | 1,474 | 2,597 | 4,316 |
+| Trade and other receivables | 13 | 40,613 | 22,976 | 17,827 |
+| | | 188,249 | 154,123 | 146,844 |
+| **Current assets** | | | | |
+| Inventories | 12 | 65,176 | 57,874 | 55,738 |
+| Contract assets | 13 | 59,107 | 48,356 | 26,065 |
+| Trade and other receivables | 13 | 189,979 | 147,115 | 199,024 |
+| Cash and cash equivalents | 14 | 26,423 | 51,838 | 22,789 |
+| | | 340,685 | 305,183 | 303,616 |
+| **Total assets** | | 528,934 | 459,306 | 450,460 |
+| **Current liabilities** | | | | |
+| Creditors: amounts falling due within one year | 15 | (78,254) | (81,735) | (81,546) |
+| Contract liabilities | 15 | (125,781) | (108,148) | (110,990) |
+| Provisions | 17 | (1,310) | (339) | (1,094) |
+| **Net current assets** | | 135,340 | 114,961 | 109,986 |
+| **Non-current liabilities** | | | | |
+| Deferred tax liabilities | 11 | (7,642) | (13,526) | (14,709) |
+| Creditors: amounts falling due after more than one year | 15 | (24,128) | (20,072) | (25,566) |
+| Contract liabilities | 15 | (50,358) | (3,220) | (4,973) |
+| Provisions | 17 | (1,233) | (2,658) | (2,908) |
+| | | (83,361) | (39,476) | (48,156) |
+| **Total liabilities** | | (288,706) | (229,698) | (241,786) |
+| **Net assets** | | 240,228 | 229,608 | 208,674 |
+| **Equity attributable to equity holders of the parent** | | | | |
+| Share capital | 18 | 70,012 | 70,012 | 70,000 |
+| Share premium | 19 | 2,508 | 2,415 | 44 |
+| Revaluation reserve | 19 | 4,688 | 80 | 80 |
+| Other reserves | 19 | 5,119 | 270 | - |
+| Retained earnings | 19 | 157,901 | 156,831 | 138,550 |
+| **Total equity** | | 240,228 | 229,608 | 208,674 |
 
 The Company reported a profit for the year ended 31 December 2025 of £125,903k (2024: £118,281k profit).
-
 *The adjustments arising on transition from FRS 102 to FRS 101 are detailed in note 29
-
-1-Jan 2024*
-£°000
-
-100,014
-1,108
-6,179
-
-17,400
-4,316
-17,827
-
-146,844
-
-55, 738
-26,065
-199,024
-22,789
-
-303,616
-
-450,460
-
-(81,546)
-(110,990)
-(1,094)
-
-109, 986
-(14,709)
-
-(25,566)
-
-(4,973)
-(2,908)
-
-(48, 156)
-
-(241,786)
-
-208,674
-
-70,000
-44
-80
-
-138,550
-
-208,674
 
 22
 
@@ -1471,37 +1187,33 @@ MERCEDES-BENZ GRAND PRIX LIMITED
 
 CONSOLIDATED STATEMENT OF CHANGES IN EQUITY
 
-Share Share Revaluation Other Retained Total
-capital premium reserve reserves earnings equity
-£°000 £7000 £'000 £'000 £°000 £000
-Balance at 1 January 2024 70,000 44 80 - 113,369 183,493
-Effect of transition to IFRS* - - 877 - 25,529 26,406
-Balance at 1 January 2024* 70,000 44 957 - 138,898 209,899
-Total comprehensive income for the period
-Profit or loss - - - - 116,899 116,899
-Other comprehensive income - - 797 ~ (21) 776
-Total comprehensive income for the period - - 797 - 116,878 117,675
-Transactions with owners, recorded directly in equity
-Contributions by and distributions to owners
-Equity-settled share-based payment 12 2,371 - 270 - 2,653
-transactions (note 16, 18) .
-Dividends (note 28) - - - ~ (100,000) (100,000)
-Total contributions by and distributions to owners 12 2,371 - 270 ~=(100,000) (97,347)
-Balance at 1 January 2025 70,012 2,415 1,754 270 155,776 230,227
-Total comprehensive income for the period
-Profit or loss - - - - 125,905 125,905
-Other comprehensive income - - 3,592 3,329 317 7,238
-Total comprehensive income for the period - - 3,592 3,329 126,222 133,143
-Transactions with owners, recorded directly in equity
-Contributions by and distributions to owners
-Equity-settled share-based payment - 93 - 1,520 - 1,613
-transactions (note 16, 18)
-Dividends (note 28) - - - - (425,000) (125,000)
-Total contributions by and distributions to owners oe 93 - 1,520 (125,000) (123,387)
-Balance at 31 December 2025 70,012 2,508 5,346 ° 5,119 156,998 239,983
+| | Share capital £'000 | Share premium £'000 | Revaluation reserve £'000 | Other reserves £'000 | Retained earnings £'000 | Total equity £'000 |
+|---|---|---|---|---|---|---|
+| Balance at 1 January 2024 | 70,000 | 44 | 80 | - | 113,369 | 183,493 |
+| Effect of transition to IFRS* | - | - | 877 | - | 25,529 | 26,406 |
+| Balance at 1 January 2024* | 70,000 | 44 | 957 | - | 138,898 | 209,899 |
+| **Total comprehensive income for the period** | | | | | | |
+| Profit or loss | - | - | - | - | 116,899 | 116,899 |
+| Other comprehensive income | - | - | 797 | - | (21) | 776 |
+| Total comprehensive income for the period | - | - | 797 | - | 116,878 | 117,675 |
+| **Transactions with owners, recorded directly in equity** | | | | | | |
+| **Contributions by and distributions to owners** | | | | | | |
+| Equity-settled share-based payment transactions (note 16, 18) | 12 | 2,371 | - | 270 | - | 2,653 |
+| Dividends (note 28) | - | - | - | - | (100,000) | (100,000) |
+| Total contributions by and distributions to owners | 12 | 2,371 | - | 270 | (100,000) | (97,347) |
+| **Balance at 1 January 2025** | 70,012 | 2,415 | 1,754 | 270 | 155,776 | 230,227 |
+| **Total comprehensive income for the period** | | | | | | |
+| Profit or loss | - | - | - | - | 125,905 | 125,905 |
+| Other comprehensive income | - | - | 3,592 | 3,329 | 317 | 7,238 |
+| Total comprehensive income for the period | - | - | 3,592 | 3,329 | 126,222 | 133,143 |
+| **Transactions with owners, recorded directly in equity** | | | | | | |
+| **Contributions by and distributions to owners** | | | | | | |
+| Equity-settled share-based payment transactions (note 16, 18) | - | 93 | - | 1,520 | - | 1,613 |
+| Dividends (note 28) | - | - | - | - | (125,000) | (125,000) |
+| Total contributions by and distributions to owners | - | 93 | - | 1,520 | (125,000) | (123,387) |
+| **Balance at 31 December 2025** | 70,012 | 2,508 | 5,346 | 5,119 | 156,998 | 239,983 |
 
 The notes on pages 27 to 73 form part of these consolidated financial statements
-
 *The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26
 
 24
@@ -1512,51 +1224,33 @@ MERCEDES-BENZ GRAND PRIX LIMITED
 
 COMPANY STATEMENT OF CHANGES IN EQUITY
 
-Share Share Revaluation Other Retained Total
-
-capital premium reserve reserves” earnings equity
-
-£°000 £000 £000 £000 £7000 £°000
-Balance at 1 January 2024 70,000 44 80 - 113,020 183,144
-Effect of transition to IFRS* - - - - 25,530 25,530
-Balance at 1 January 2024* 70,000 . 44 80 - 138,550 208,674
-
-Total comprehensive income for the period
-Profit or loss - - - - 118,281 118,281
-Other comprehensive income - - - - - -
-
-Total comprehensive income for the period - - - - 118,281 118,281
-
-Transactions with owners, recorded directly in equity
-
-Contributions by and distributions to owners
-
-Equity-settled share-based payment 12 2,371 - 270 - 2,653
-transactions (note 16, 18)
-
-Dividends (note 28) - - - - (100,000) (100,000)
-Total contributions by and distributions to owners 12 2,371 - 270 =(100,000) (87,347)
-Balance at 1 January 2025 70,012 2,415 80 270 156,831 229,608
-
-Total comprehensive income for the period
-
-Profit or loss - - - - 125,903 125,903
-Other comprehensive income - - 4,608 3,329 167 «ss 8, 104
-Total comprehensive income for the period - - 4,608 3,329 126,070 134,007
-
-Transactions with owners, recorded directly in equity
-
-Contributions by and distributions to owners
-
-Equity-settled share-based payment - 93 - 1,520 - 1,613
-transactions (note 16, 18)
-
-Dividends (note 28) - - - - (125,000) (125,000)
-Total contributions by and distributions to owners - 93 - 1,520 (125,000) (123,387)
-Balance at 31 December 2025 70,012 2,508 ' 4,688 5,119 157,901 240,228
+| | Share capital £'000 | Share premium £'000 | Revaluation reserve £'000 | Other reserves £'000 | Retained earnings £'000 | Total equity £'000 |
+|---|---|---|---|---|---|---|
+| Balance at 1 January 2024 | 70,000 | 44 | 80 | - | 113,020 | 183,144 |
+| Effect of transition to IFRS* | - | - | - | - | 25,530 | 25,530 |
+| Balance at 1 January 2024* | 70,000 | 44 | 80 | - | 138,550 | 208,674 |
+| **Total comprehensive income for the period** | | | | | | |
+| Profit or loss | - | - | - | - | 118,281 | 118,281 |
+| Other comprehensive income | - | - | - | - | - | - |
+| Total comprehensive income for the period | - | - | - | - | 118,281 | 118,281 |
+| **Transactions with owners, recorded directly in equity** | | | | | | |
+| **Contributions by and distributions to owners** | | | | | | |
+| Equity-settled share-based payment transactions (note 16, 18) | 12 | 2,371 | - | 270 | - | 2,653 |
+| Dividends (note 28) | - | - | - | - | (100,000) | (100,000) |
+| Total contributions by and distributions to owners | 12 | 2,371 | - | 270 | (100,000) | (97,347) |
+| **Balance at 1 January 2025** | 70,012 | 2,415 | 80 | 270 | 156,831 | 229,608 |
+| **Total comprehensive income for the period** | | | | | | |
+| Profit or loss | - | - | - | - | 125,903 | 125,903 |
+| Other comprehensive income | - | - | 4,608 | 3,329 | 167 | 8,104 |
+| Total comprehensive income for the period | - | - | 4,608 | 3,329 | 126,070 | 134,007 |
+| **Transactions with owners, recorded directly in equity** | | | | | | |
+| **Contributions by and distributions to owners** | | | | | | |
+| Equity-settled share-based payment transactions (note 16, 18) | - | 93 | - | 1,520 | - | 1,613 |
+| Dividends (note 28) | - | - | - | - | (125,000) | (125,000) |
+| Total contributions by and distributions to owners | - | 93 | - | 1,520 | (125,000) | (123,387) |
+| **Balance at 31 December 2025** | 70,012 | 2,508 | 4,688 | 5,119 | 157,901 | 240,228 |
 
 The notes on pages 27 to 73 form part of these financial statements
-
 *The adjustments arising on transition from FRS 102 to FRS 101 are detailed in note 29
 
 25
@@ -1568,53 +1262,47 @@ MERCEDES-BENZ GRAND PRIX LIMITED
 CONSOLIDATED STATEMENT OF CASH FLOWS
 FOR THE YEAR ENDED 31 DECEMBER 2025
 
-Note
-2025 2024*
-£’000 £'000
-Cash flows from operating activities
-Profit for the year 125,905 116,899
-Adjustments for:
-
-Depreciation, amortisation and impairment 3 20,730 : 19,860
-Finance income 5 (2,650) (2,406)
-Finance expense 5 885 187
-(Gain)Aoss on sale of property, plant and equipment 3 (63) 1,480
-Equity settled share-based payment expenses . 16 1,520 270
-Taxation 6 42,567 41,472
-188,894 177,762
-
-(Increase)/decrease in trade and other receivables (41,955) 32,194
-(Increase)/decrease in contract assets (9,629) (20,586)
-(Increase)/decrease in inventories (7,302) (2,136)
-(Decrease)/increase in trade and other payables (8,977) (9,844)
-(Increase)/decrease in contract liabilities 64,771 (4,595)
-(Decrease)/increase in provisions and employee benefits (454) (1,005)
-185,348 171,790
-
-Interest received 2,441 2,305
-Tax paid (39,892) (15,852)
-Net cash from operating activities 147,897 158,243
-
-Cash flows from investing activities
-Proceeds from sale of property, plant and equipment 274 925
-
-Acquisition of subsidiary, net of cash acquired - (1,690)
-Acquisition of property, plant and equipment 7 (40,093) (26, 195)
-Acquisition of heritage assets 9 (1,211) (421)
-Acquisition of other intangible assets . 8 (2,374) (1,052)
-Net cash from investing activities ; (43,404) (28,433)
-Cash flows from financing activities
-Proceeds from the issue of share capital 18 1 12
-Interest paid (1,375) (176)
-Payment of lease liabilities 21 (1,243) (752)
-Dividends paid 28 (125,000) (100,000)
-Net cash from financing activities (127,617) (100,916)
-Net increase/(decrease) in cash and cash equivalents (23,124) 28,894
-Cash and cash equivalents at 1 January 52,613 23,719
-Cash and cash equivalents at 31 December 14 29,489 52,613
+| | Note | 2025 £'000 | 2024* £'000 |
+|---|---|---|---|
+| **Cash flows from operating activities** | | | |
+| Profit for the year | | 125,905 | 116,899 |
+| *Adjustments for:* | | | |
+| Depreciation, amortisation and impairment | 3 | 20,730 | 19,860 |
+| Finance income | 5 | (2,650) | (2,406) |
+| Finance expense | 5 | 885 | 187 |
+| (Gain)/loss on sale of property, plant and equipment | 3 | (63) | 1,480 |
+| Equity settled share-based payment expenses | 16 | 1,520 | 270 |
+| Taxation | 6 | 42,567 | 41,472 |
+| | | 188,894 | 177,762 |
+| (Increase)/decrease in trade and other receivables | | (41,955) | 32,194 |
+| (Increase)/decrease in contract assets | | (9,629) | (20,586) |
+| (Increase)/decrease in inventories | | (7,302) | (2,136) |
+| (Decrease)/increase in trade and other payables | | (8,977) | (9,844) |
+| (Increase)/decrease in contract liabilities | | 64,771 | (4,595) |
+| (Decrease)/increase in provisions and employee benefits | | (454) | (1,005) |
+| | | 185,348 | 171,790 |
+| Interest received | | 2,441 | 2,305 |
+| Tax paid | | (39,892) | (15,852) |
+| **Net cash from operating activities** | | 147,897 | 158,243 |
+| **Cash flows from investing activities** | | | |
+| Proceeds from sale of property, plant and equipment | | 274 | 925 |
+| Acquisition of subsidiary, net of cash acquired | | - | (1,690) |
+| Acquisition of property, plant and equipment | 7 | (40,093) | (26,195) |
+| Acquisition of heritage assets | 9 | (1,211) | (421) |
+| Acquisition of other intangible assets | 8 | (2,374) | (1,052) |
+| **Net cash from investing activities** | | (43,404) | (28,433) |
+| **Cash flows from financing activities** | | | |
+| Proceeds from the issue of share capital | 18 | 1 | 12 |
+| Interest paid | | (1,375) | (176) |
+| Payment of lease liabilities | 21 | (1,243) | (752) |
+| Dividends paid | 28 | (125,000) | (100,000) |
+| **Net cash from financing activities** | | (127,617) | (100,916) |
+| Net increase/(decrease) in cash and cash equivalents | | (23,124) | 28,894 |
+| Cash and cash equivalents at 1 January | | 52,613 | 23,719 |
+| **Cash and cash equivalents at 31 December** | 14 | 29,489 | 52,613 |
 
 The notes on pages 27 to 73 form part of these consolidated financial statements
-*The adjustments arising on transition fram FRS 102 to UK-adopted IFRSs are detailed in note 26
+*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26
 
 26
 
@@ -2429,42 +2117,48 @@ amortisation was £1,639k (2024: £405k) and the impairment loss recognised was 
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-3 Expenses and auditor’s remuneration
+*Notes (continued)*
 
-Included in profitloss are the following:
+**3 Expenses and auditor's remuneration**
 
-2025 2024*
-£°000 £’000
-Depreciation and amortisation 20,730 19,860
-Research and development expensed as incurred 145,860 127,094
-Loss on disposal of property, plant and equipment (63) 1,480
-Exchange differences 5,215 (296)
+Included in profit/loss are the following:
+
+| | 2025 £'000 | 2024* £'000 |
+|---|---|---|
+| Depreciation and amortisation | 20,730 | 19,860 |
+| Research and development expensed as incurred | 145,860 | 127,094 |
+| Loss on disposal of property, plant and equipment | (63) | 1,480 |
+| Exchange differences | 5,215 | (296) |
+
 *The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 26.
-Auditors remuneration:
-2025 2024
-£000 £'000
-Fees payable to the Company's auditors and their associates for the audit of the 278 191
-consolidated and Parent Company's financial statements
-Fees payable to the Company's auditors and their associates in respect of:
-The auditing of accounts of subsidiaries of the Company 38 27
-Audit related assurance services not included in the above 155 156
-4 Staff numbers and costs
+
+Auditor's remuneration:
+
+| | 2025 £'000 | 2024 £'000 |
+|---|---|---|
+| Fees payable to the Company's auditors and their associates for the audit of the consolidated and Parent Company's financial statements | 278 | 191 |
+| **Fees payable to the Company's auditors and their associates in respect of:** | | |
+| The auditing of accounts of subsidiaries of the Company | 38 | 27 |
+| Audit related assurance services not included in the above | 155 | 156 |
+
+**4 Staff numbers and costs**
+
 Staff costs, including Directors' remuneration, were as follows:
-Group Group Company Company
-2025 2024 2025 2024
-£7000 £'000 £7000 £'000
-Wages and salaries 137,172 109,903 136,501 109,903
-Social security costs 17,700 12,892 17,615 12,892
-Cost of defined contribution scheme 2,673 2,216 2,653 2,216
-157,545 125,011 156,769 125,011 |
-The average monthly number of employeés, including the Directors, during the year was as follows:
-Group Group Company Company
-2025 2024 2025 2024
-No. No. No. No.
-Design, manufacturing and engineering 998 1,020 998 1,020
-Administration 350 303 348 303
-1,348 1,323 1,346 1,323
+
+| | Group 2025 £'000 | Group 2024 £'000 | Company 2025 £'000 | Company 2024 £'000 |
+|---|---|---|---|---|
+| Wages and salaries | 137,172 | 109,903 | 136,501 | 109,903 |
+| Social security costs | 17,700 | 12,892 | 17,615 | 12,892 |
+| Cost of defined contribution scheme | 2,673 | 2,216 | 2,653 | 2,216 |
+| | 157,545 | 125,011 | 156,769 | 125,011 |
+
+The average monthly number of employees, including the Directors, during the year was as follows:
+
+| | Group 2025 No. | Group 2024 No. | Company 2025 No. | Company 2024 No. |
+|---|---|---|---|---|
+| Design, manufacturing and engineering | 998 | 1,020 | 998 | 1,020 |
+| Administration | 350 | 303 | 348 | 303 |
+| | 1,348 | 1,323 | 1,346 | 1,323 |
 
 38
 
@@ -2603,48 +2297,49 @@ Total tax expense
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+*Notes (continued)*
 
-6 Taxation (continued)
+**6 Taxation** *(continued)*
 
-Income tax recognised in other comprehensive income
+**Income tax recognised in other comprehensive income**
 
-2025 2024"
-£°000 £'000
-Revaluation of property, plant and equipment 1,410 -
-Deferred tax on share-based payments (3,329) -
-Deferred tax on IFRS 16 transition (167) -
-Deferred tax on other adjustments . ; - (21)
-Total tax recognised in other comprehensive income (2,086) (21)
-- Tax recognised directly in equity
-2025 2024*
-£7000 _ £°000
-Current tax recognised directly in equity - -
-Deferred tax recognised directly in equity , (2,086) 8,504
-Total tax recognised directly in equity (2,086) 8,504
-Reconciliation of effective tax rate
-2025 =. 2024
-£°000 £°000
-Profit for the year 125,905 116,899
-Total tax expense 42,567 41,472
-Profit excluding taxation ‘ 168,472 158,377
-Tax using the UK corporation tax rate of 25% (2024: 25%) 42,118 39,592
-Fixed asset differences (478) 621
-Non-deductible expenses 2,780 3,999
-Other permanent differences 55 67
-R&D expenditure credits : (730) 652
-Under / (over) provided in prior years : (2,552) (2,122)
-Adjustments in respect of previous periods — deferred tax 1,374 (1,337)
-Total tax expense , 42,567 41,472
+| | 2025 £'000 | 2024* £'000 |
+|---|---|---|
+| Revaluation of property, plant and equipment | 1,410 | - |
+| Deferred tax on share-based payments | (3,329) | - |
+| Deferred tax on IFRS 16 transition | (167) | - |
+| Deferred tax on other adjustments | - | (21) |
+| Total tax recognised in other comprehensive income | (2,086) | (21) |
+
+**Tax recognised directly in equity**
+
+| | 2025 £'000 | 2024* £'000 |
+|---|---|---|
+| Current tax recognised directly in equity | - | - |
+| Deferred tax recognised directly in equity | (2,086) | 8,504 |
+| Total tax recognised directly in equity | (2,086) | 8,504 |
+
+**Reconciliation of effective tax rate**
+
+| | 2025 £'000 | 2024 £'000 |
+|---|---|---|
+| Profit for the year | 125,905 | 116,899 |
+| Total tax expense | 42,567 | 41,472 |
+| Profit excluding taxation | 168,472 | 158,371 |
+| Tax using the UK corporation tax rate of 25% (2024: 25%) | 42,118 | 39,592 |
+| Fixed asset differences | (478) | 621 |
+| Non-deductible expenses | 2,780 | 3,999 |
+| Other permanent differences | 55 | 67 |
+| R&D expenditure credits | (730) | 652 |
+| Under / (over) provided in prior years | (2,552) | (2,122) |
+| Adjustments in respect of previous periods – deferred tax | 1,374 | (1,337) |
+| Total tax expense | 42,567 | 41,472 |
 
 *The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26.
 
-Uncertainty over income tax treatments
+**Uncertainty over income tax treatments**
 
-The Group has assessed its income tax treatments for the current and prior periods in accordance with IFRIC 23
-Uncertainty over Income Tax Treatments. Based on this assessment, the Group has concluded that there are no
-uncertain tax positions that require recognition, measurement, or disclosure in the financial statements. The Group
-has determined that it is probable that HMRC will accept the tax treatments applied in its tax returns.
+The Group has assessed its income tax treatments for the current and prior periods in accordance with IFRIC 23 Uncertainty over Income Tax Treatments. Based on this assessment, the Group has concluded that there are no uncertain tax positions that require recognition, measurement, or disclosure in the financial statements. The Group has determined that it is probable that HMRC will accept the tax treatments applied in its tax returns.
 
 40
 
@@ -2652,48 +2347,47 @@ has determined that it is probable that HMRC will accept the tax treatments appl
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
 7 Property, plant and equipment
+
 Group
-Freehold Property Plant and Motor Fixtures Computer Assets under Total
-property assets machinery vehicles and fittings equipment construction
-£000 £°000 £7000 £°000 £7000 £000 £000 £7000
-Cost
-Balance at 1 January 2024 FRS 102 37,406 53,204 106,893 3,767 24,897 43,353 6,678 276,198
-Effect of transition ‘to UK-IFRS : 3,687 2,384 44 - - - 6,115
-Balance at 1 January 2024* 37,406 §6,891 109,277 3,811 24,897 43,353 6,678 282,313
-Additions - - - - - - 26,195 26,195
-Revatuations 336 - - - - - - 336
-Disposals (1,616) (603) (2,553) (23) (355) (54) (279) (5,483)
-Transfers between classes 2,684 3,695 10,882 359 1,580 4,403 (23,603) -
-Balance at 31 December 2024 38,810 59,983 117,606 4,147 26,122 47,702 8,991 303,361
-Balance at 1 January 2025 38,810 59,983 117,606 4,147 26,122 47,702 8,991 303,361
-Additions - 3,399 - 83 - 2,572 40,093 46,147
-Revaluations (1,630) - - - - - (1,630)
-Disposals (7) (1,603) (3,060) , - (622) (7,882) - (13,174)
-Transfers between classes 4,153 13,726 12,824 - (8,531) 3,480 (25,652) -
-Balance at 31 December 2025 41,326 75,505 127,370 4,230 16,969 45,872 23,432 334,704
-Depreciation and impairment
-Balance at 1 January 2024 FRS 102 880 32,864 78,613 3,520 12,749 39,099 - 167,725
-Effect of transition to UK-IFRS (877) - 896 - - - - 19
-Balance at 1 January 2024* 3 32,864 79,509 3,520 12,749 39,099 - 167,744
-Oepreciation charge for the year 504 2,894 9,544 141 2,843 3,183 - 19,109
-Disposals - (543) (2,451) (23) (335) (44) - (3,396)
-Revaluations (497) - - - - - - (497)
-X
 
-Balance at 31 December 2024 10 35,215 86,602 3,638 15,257 42,238 - 182,960
-Balance at 1 January 2025 10 35,215 86,602 3,638 15,257 42,238 - 182,960
-Depreciation charge for the year 646 3,050 9,052 174 3,202 4,026 - 20,150
-Disposals and transfers _ - 7,164 (2,808) - (8,659) (7,879) - (12,182)
-Revaluations (642) - - - - - - (642)
-Balance at 31 December 2025 14 45,429 92,846 3,812 9,800 38,385 - 190,286
-Net book value
-At 31 December 2025 41,312 30,076 34,524 418 7,169 7,487 23,432 144,418
-At 31 December 2024 38,800 24,768 31,004 509 10,865 5,464 8,991 120,401
+| | Freehold property £'000 | Property assets £'000 | Plant and machinery £'000 | Motor vehicles £'000 | Fixtures and fittings £'000 | Computer equipment £'000 | Assets under construction £'000 | Total £'000 |
+|---|---|---|---|---|---|---|---|---|
+| **Cost** | | | | | | | | |
+| Balance at 1 January 2024 FRS 102 | 37,406 | 53,204 | 106,893 | 3,767 | 24,897 | 43,353 | 6,678 | 276,198 |
+| Effect of transition to UK-IFRS | - | 3,687 | 2,384 | 44 | - | - | - | 6,115 |
+| Balance at 1 January 2024* | 37,406 | 56,891 | 109,277 | 3,811 | 24,897 | 43,353 | 6,678 | 282,313 |
+| Additions | - | - | - | - | - | - | 26,195 | 26,195 |
+| Revaluations | 336 | - | - | - | - | - | - | 336 |
+| Disposals | (1,616) | (603) | (2,553) | (23) | (355) | (54) | (279) | (5,483) |
+| Transfers between classes | 2,684 | 3,695 | 10,882 | 359 | 1,580 | 4,403 | (23,603) | - |
+| **Balance at 31 December 2024** | 38,810 | 59,983 | 117,606 | 4,147 | 26,122 | 47,702 | 8,991 | 303,361 |
+| Balance at 1 January 2025 | 38,810 | 59,983 | 117,606 | 4,147 | 26,122 | 47,702 | 8,991 | 303,361 |
+| Additions | - | 3,399 | - | 83 | - | 2,572 | 40,093 | 46,147 |
+| Revaluations | (1,630) | - | - | - | - | - | - | (1,630) |
+| Disposals | (7) | (1,603) | (3,060) | - | (622) | (7,882) | - | (13,174) |
+| Transfers between classes | 4,153 | 13,726 | 12,824 | - | (8,531) | 3,480 | (25,652) | - |
+| **Balance at 31 December 2025** | 41,326 | 75,505 | 127,370 | 4,230 | 16,969 | 45,872 | 23,432 | 334,704 |
+| **Depreciation and impairment** | | | | | | | | |
+| Balance at 1 January 2024 FRS 102 | 880 | 32,864 | 78,613 | 3,520 | 12,749 | 39,099 | - | 167,725 |
+| Effect of transition to UK-IFRS | (877) | - | 896 | - | - | - | - | 19 |
+| Balance at 1 January 2024* | 3 | 32,864 | 79,509 | 3,520 | 12,749 | 39,099 | - | 167,744 |
+| Depreciation charge for the year | 504 | 2,894 | 9,544 | 141 | 2,843 | 3,183 | - | 19,109 |
+| Disposals | - | (543) | (2,451) | (23) | (335) | (44) | - | (3,396) |
+| Revaluations | (497) | - | - | - | - | - | - | (497) |
+| **Balance at 31 December 2024** | 10 | 35,215 | 86,602 | 3,638 | 15,257 | 42,238 | - | 182,960 |
+| Balance at 1 January 2025 | 10 | 35,215 | 86,602 | 3,638 | 15,257 | 42,238 | - | 182,960 |
+| Depreciation charge for the year | 646 | 3,050 | 9,052 | 174 | 3,202 | 4,026 | - | 20,150 |
+| Disposals and transfers | - | 7,164 | (2,808) | - | (8,659) | (7,879) | - | (12,182) |
+| Revaluations | (642) | - | - | - | - | - | - | (642) |
+| **Balance at 31 December 2025** | 14 | 45,429 | 92,846 | 3,812 | 9,800 | 38,385 | - | 190,286 |
+| **Net book value** | | | | | | | | |
+| At 31 December 2025 | 41,312 | 30,076 | 34,524 | 418 | 7,169 | 7,487 | 23,432 | 144,418 |
+| *At 31 December 2024* | 38,800 | 24,768 | 31,004 | 509 | 10,865 | 5,464 | 8,991 | 120,401 |
 
-*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26.
+\*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26.
 
 41
 
@@ -2748,78 +2442,72 @@ At 31 December 2024 47,890 31,005 509 10,865 5,464 §,442 101,175
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-7 Property, plant and equipment (continued)
+Notes *(continued)*
 
-The fair value of the freehold property was determined by an external, independent, RICS registered property
-valuer, having recent experience in the location and category of the property being valued. The independent valuers
-provide the fair value of the Group’s freehold property every 12 months. Revaluation gains and losses are
-recognised in Other Comprehensive Income.
+7 Property, plant and equipment *(continued)*
+
+The fair value of the freehold property was determined by an external, independent, RICS registered property valuer, having recent experience in the location and category of the property being valued. The independent valuers provide the fair value of the Group's freehold property every 12 months. Revaluation gains and losses are recognised in Other Comprehensive Income.
 
 If valued under the cost model, the freehold property would have had a carrying value of £40,601k (2024: £37,089k)
 
-During the year, the freehold property was reduced in value and this utilised £988k of the revaluation surplus held
-in the revaluation reserve.
+During the year, the freehold property was reduced in value and this utilised £988k of the revaluation surplus held in the revaluation reserve.
 
-7.4 Right of use assets
+7.1 Right of use assets
 
-Group property, plant and equipment include right of use assets with carrying amounts as follows, further
-disclosure of the associated lease liability is included in note 21:
+Group property, plant and equipment include right of use assets with carrying amounts as follows, further disclosure of the associated lease liability is included in note 21:
 
 Group
-Land and Motor Computer
-buildings vehicles equipment Total
-. £7000 £000 £'000 £°000
-Right of use asset
-At 31 December 2024 2,996 37 - 3,033
-At 31 December 2025 5,066 76 2,072 7,214
+
+| Right of use asset | Land and buildings £'000 | Motor vehicles £'000 | Computer equipment £'000 | Total £'000 |
+|---|---|---|---|---|
+| At 31 December 2024 | 2,996 | 37 | - | 3,033 |
+| At 31 December 2025 | 5,066 | 76 | 2,072 | 7,214 |
+
 Company
-Land and Motor Computer
-buildings vehicles equipment Total
-£°000 £000 £000 £’000
-Right of use asset ;
-At 31 December 2024 27,242 37 - 27,279
 
-At 31 December 2025 , 30,434 76 2,072 32,582
+| Right of use asset | Land and buildings £'000 | Motor vehicles £'000 | Computer equipment £'000 | Total £'000 |
+|---|---|---|---|---|
+| At 31 December 2024 | 27,242 | 37 | - | 27,279 |
+| At 31 December 2025 | 30,434 | 76 | 2,072 | 32,582 |
 
-43.
+43
 
 --- pág. 44 ---
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
 8 Intangible assets
-Group Computer
-software Total
-£'000 £°000
-Cost
-Balance at 1 January 2024 2,673 2,673
-Additions, . 1,052 1,052
-Disposals (19) (19)
-Balance at 31 December 2024 3,706 3,706
-Balance at 1 January 2025 3,706 3,706
-Additions 2,374 2,374
-Disposals - -
-Balance at 31 December 2025 6,080 6,080
-Amortisation and impairment
-Balance at 1 January 2024 1,565 . 1,565
-Amortisation for the year . 751 751
-Impairment charge - -
-On disposals (411) (11)
-Balance at 31 December 2024 2,305 2,305
-Balance at 1 January 2025 ° 2,305 2,305
-Amortisation for the year 580 580
-Impairment charge - -
-Reversal of impairment losses - -
-Balance at 31 December 2025 2,885 2,885
-Net book value
-At 1 January 2024 1,108 1,108
-At 31 December 2024 1,401 1,401
-3,195
 
-At 31 December 2025 3,195
+Group
+
+| | Computer software £'000 | Total £'000 |
+|---|---|---|
+| **Cost** | | |
+| Balance at 1 January 2024 | 2,673 | 2,673 |
+| Additions | 1,052 | 1,052 |
+| Disposals | (19) | (19) |
+| Balance at 31 December 2024 | 3,706 | 3,706 |
+| Balance at 1 January 2025 | 3,706 | 3,706 |
+| Additions | 2,374 | 2,374 |
+| Disposals | - | - |
+| Balance at 31 December 2025 | 6,080 | 6,080 |
+| **Amortisation and impairment** | | |
+| Balance at 1 January 2024 | 1,565 | 1,565 |
+| Amortisation for the year | 751 | 751 |
+| Impairment charge | - | - |
+| On disposals | (11) | (11) |
+| Balance at 31 December 2024 | 2,305 | 2,305 |
+| Balance at 1 January 2025 | 2,305 | 2,305 |
+| Amortisation for the year | 580 | 580 |
+| Impairment charge | - | - |
+| Reversal of impairment losses | - | - |
+| Balance at 31 December 2025 | 2,885 | 2,885 |
+| **Net book value** | | |
+| At 1 January 2024 | 1,108 | 1,108 |
+| At 31 December 2024 | 1,401 | 1,401 |
+| **At 31 December 2025** | 3,195 | 3,195 |
 
 44
 
@@ -2827,36 +2515,38 @@ At 31 December 2025 3,195
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued) |
+Notes *(continued)*
 
-8 Intangible assets (continued)
-Company Computer
-: _ software Total
-£°000 £°000
-Cost
-Balance at 1 January 2024 . 2,673 2,673
-Additions 1,052 1,052
-Disposals (19) (19)
-Balance at 31 December 2024 3,706 3,706
-Balance at 1 January 2025 3,706 3,706
-Additions . . 2,374 2,374
-Disposals - -
-Balance at 31 December 2025 6,080 6,080
-Amortisation and impairment
-Balance at 1 January 2024 4,565 1,565
-Amortisation for the year 751 751
-Impairment charge . - -
-On disposals (11) (11)
-Balance at 31 December 2024 . 2,305 2,305
-Balance at 1 January 2025 2,305 2,305
-Amortisation for the year . 580 580
-Impairment charge - -
-Reversal of impairment losses ; - -
-Balance at 31 December 2025 . 2,885 2,885
-Net book value :
-At 1 January 2024 1,108 1,108
-At 31 December 2024 4,401 1,401
-At 31 December 2025 ‘ . 3,195 3,195
+8 Intangible assets *(continued)*
+
+Company
+
+| | Computer software £'000 | Total £'000 |
+|---|---|---|
+| **Cost** | | |
+| Balance at 1 January 2024 | 2,673 | 2,673 |
+| Additions | 1,052 | 1,052 |
+| Disposals | (19) | (19) |
+| Balance at 31 December 2024 | 3,706 | 3,706 |
+| Balance at 1 January 2025 | 3,706 | 3,706 |
+| Additions | 2,374 | 2,374 |
+| Disposals | - | - |
+| Balance at 31 December 2025 | 6,080 | 6,080 |
+| **Amortisation and impairment** | | |
+| Balance at 1 January 2024 | 1,565 | 1,565 |
+| Amortisation for the year | 751 | 751 |
+| Impairment charge | - | - |
+| On disposals | (11) | (11) |
+| Balance at 31 December 2024 | 2,305 | 2,305 |
+| Balance at 1 January 2025 | 2,305 | 2,305 |
+| Amortisation for the year | 580 | 580 |
+| Impairment charge | - | - |
+| Reversal of impairment losses | - | - |
+| Balance at 31 December 2025 | 2,885 | 2,885 |
+| **Net book value** | | |
+| At 1 January 2024 | 1,108 | 1,108 |
+| At 31 December 2024 | 1,401 | 1,401 |
+| **At 31 December 2025** | 3,195 | 3,195 |
 
 45
 
@@ -2864,141 +2554,50 @@ At 31 December 2025 ‘ . 3,195 3,195
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-g Heritage assets
+Notes *(continued)*
+
+9 Heritage assets
 
 Group
 
-Cost
-
-Balance at 1 January 2024*
-Additions
-
-Disposals and transfers
-
-Balance at 31 December 2024*
-
-Balance at 1 January 2025
-Additions
-
-Revaluations
-
-Disposals and transfers
-
-Batance at 31 December 2025
+| | Heritage cars and related assets £'000 |
+|---|---|
+| **Cost** | |
+| Balance at 1 January 2024* | 6,179 |
+| Additions | 421 |
+| Disposals and transfers | (404) |
+| Balance at 31 December 2024* | 6,196 |
+| Balance at 1 January 2025 | 6,196 |
+| Additions | 1,211 |
+| Revaluations | 6,146 |
+| Disposals and transfers | (381) |
+| Balance at 31 December 2025 | 13,172 |
 
 Company
 
-Cost
+| | Heritage cars and related assets £'000 |
+|---|---|
+| **Cost** | |
+| Balance at 1 January 2024* | 6,179 |
+| Additions | 421 |
+| Disposals and transfers | (404) |
+| Balance at 31 December 2024* | 6,196 |
+| Balance at 1 January 2025 | 6,196 |
+| Additions | 1,211 |
+| Revaluations | 6,146 |
+| Disposals and transfers | (381) |
+| Balance at 31 December 2025 | 13,172 |
 
-Balance at 1 January 2024*
-Additions
-
-Disposals and transfers
-
-Balance at 31 December 2024*
-
-Balance at 1 January 2025
-Additions
-
-Revaluations
-
-Disposals and transfers
-
-Balance at 31 December 2025
-
-Heritage cars
-and related
-assets
-
-£7000
-
-6,179
-421
-(404)
-
-6,196
-
-6,196
-
-1,211
-
-6,146
-(381)
-
-13,172
-
-Heritage cars
-and related
-assets
-
-£°000
-
-6,179
-421
-(404)
-
-6,196
-
-6,196
-
-1,214
-
-6,146
-(381)
-
-13,172
-
-*The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 26 and the
-adjustments arising on transition from FRS 102 to FRS 101 are detailed in note 29.
+\*The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 26 and the adjustments arising on transition from FRS 102 to FRS 101 are detailed in note 29.
 
 Five-year summary of heritage asset transactions
 
-Additions
-
-Disposals and transfers — net book
-
-value
-Profit/(loss) on disposal
-Gain on revaluation
-
-2025
-£000
-
-1,211
-(381)
-
-(42)
-6,146
-
-2024
-£000
-
-421
-(404)
-
-(50)
-
-2023
-£’000
-
-1,111
-(890)
-
-75
-
-2022
-£000
-
-1,228
-(1,102)
-
-90
-
-2021
-£7000
-
-1,187
+| | 2025 £'000 | 2024 £'000 | 2023 £'000 | 2022 £'000 | 2021 £'000 |
+|---|---|---|---|---|---|
+| Additions | 1,211 | 421 | 1,111 | 1,228 | 1,187 |
+| Disposals and transfers – net book value | (381) | (404) | (890) | (1,102) | - |
+| Profit/(loss) on disposal | (42) | (50) | 75 | - | - |
+| Gain on revaluation | 6,146 | - | - | 90 | - |
 
 46
 
@@ -3006,37 +2605,42 @@ Gain on revaluation
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
+
 10 Investments in subsidiaries
 
 There are no investments from a Group perspective.
 
 Company
-Investments in
-subsidiaries
-£'000
-Valuation
-At 1 January 2025 19,778
-Balance at 31 December 2025 19,778
+
+| | Investments in subsidiaries £'000 |
+|---|---|
+| **Valuation** | |
+| At 1 January 2025 | 19,778 |
+| Balance at 31 December 2025 | 19,778 |
+
 The Company has the following investments in subsidiaries:
-Name Registered office Nature of business Class of Ownership
-shares held
-Mercedes-Benz Grand Prix Operations Centre, Lauda Drive, Commercial Landlord Ordinary 100 %
-Estates Limited Brackley, NN13 7BD
-Mercedes-Benz Motorsport Operations Centre, Lauda Drive, Business support Ordinary 100 %
-Limited Brackley, NN13 7BD service activities .
+
+| Name | Registered office | Nature of business | Class of shares held | Ownership |
+|---|---|---|---|---|
+| Mercedes-Benz Grand Prix Estates Limited | Operations Centre, Lauda Drive, Brackley, NN13 7BD | Commercial Landlord | Ordinary | 100 % |
+| Mercedes-Benz Motorsport Limited | Operations Centre, Lauda Drive, Brackley, NN13 7BD | Business support service activities | Ordinary | 100 % |
+
 11 Deferred tax assets and liabilities
+
 11.1 Group
+
 Recognised deferred tax assets and liabilities
+
 Deferred tax assets and liabilities are attributable to the following:
-Assets Liabilities Net
-2025 2024 ° 2025 2024 2025 2024
-£°000 £000 £7000 £'000 £°000 £’000
-Property, plant and equipment - - (10,952) (6,630) (10,952) (6,630)
-IFRS transition adjustments 152 - - (7,380) 152 (7,380)
-Share-based payments 3,614 - - - 3,614 -
-Provisions 266 585 - - 266 585
-Net tax assets/(liabilities) 4,032 585 (10,952) (14,010) (6,920) (13,425)
+
+| | Assets 2025 £'000 | Assets 2024 £'000 | Liabilities 2025 £'000 | Liabilities 2024 £'000 | Net 2025 £'000 | Net 2024 £'000 |
+|---|---|---|---|---|---|---|
+| Property, plant and equipment | - | - | (10,952) | (6,630) | (10,952) | (6,630) |
+| IFRS transition adjustments | 152 | - | - | (7,380) | 152 | (7,380) |
+| Share-based payments | 3,614 | - | - | - | 3,614 | - |
+| Provisions | 266 | 585 | - | - | 266 | 585 |
+| Net tax assets/(liabilities) | 4,032 | 585 | (10,952) | (14,010) | (6,920) | (13,425) |
 
 Unrecognised deferred tax asset for the Group of £443,594 (2024: £443,594) relating to capital losses.
 
@@ -3046,29 +2650,32 @@ Unrecognised deferred tax asset for the Group of £443,594 (2024: £443,594) rel
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-11 Deferred tax assets and liabilities (continued)
+11 Deferred tax assets and liabilities *(continued)*
 
-11.1 Group (continued)
+11.1 Group *(continued)*
+
 Movement in deferred tax during the year
 
-Property, plant and equipment
-IFRS transition adjustments
-Share-based payments
-Provisions
+| | 1 January 2025 £'000 | Recognised in income £'000 | Recognised in equity £'000 | 31 December 2025 £'000 |
+|---|---|---|---|---|
+| Property, plant and equipment | (6,630) | (2,912) | (1,410) | (10,952) |
+| IFRS transition adjustments | (7,380) | 7,365 | 167 | 152 |
+| Share-based payments | - | 285 | 3,329 | 3,614 |
+| Provisions | 585 | (319) | - | 266 |
+| | (13,425) | 4,419 | 2,086 | (6,920) |
 
 Movement in deferred tax during the prior year
 
-Property, plant and equipment
-IFRS transition adjustments
-Provisions
+| | 1 January 2024 £'000 | Recognised in income £'000 | Recognised in equity £'000 | Acquired in business combination £'000 | 31 December 2024 £'000 |
+|---|---|---|---|---|---|
+| Property, plant and equipment | (7,218) | 588 | - | - | (6,630) |
+| IFRS transition adjustments | (8,502) | 1,101 | 21 | - | (7,380) |
+| Provisions | 1,011 | (427) | - | 1 | 585 |
+| | (14,709) | 1,262 | 21 | 1 | (13,425) |
 
-1 January Recognised Recognised
-
-31 December
-
-*The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 26.
+\*The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 26.
 
 11.2 Company
 
@@ -3076,38 +2683,15 @@ Recognised deferred tax assets and liabilities
 
 Deferred tax assets and liabilities are attributable to the following:
 
-Property, plant and equipment
-IFRS transition adjustments
-Share-based payments
-Provisions
+| | Assets 2025 £'000 | Assets 2024 £'000 | Liabilities 2025 £'000 | Liabilities 2024 £'000 | Net 2025 £'000 | Net 2024 £'000 |
+|---|---|---|---|---|---|---|
+| Property, plant and equipment | - | - | (11,674) | (6,729) | (11,674) | (6,729) |
+| IFRS transition adjustments | 153 | - | - | (7,380) | 153 | (7,380) |
+| Share-based payments | 3,613 | - | - | - | 3,613 | - |
+| Provisions | 266 | 583 | - | - | 266 | 583 |
+| Net tax assets/(liabilities) | 4,032 | 583 | (11,674) | (14,109) | (7,642) | (13,526) |
 
-Net tax assets/(liabilities)
-
-. Unrecognised deferred tax asset for the Company of £50,534 (2024: £50,534) relating to capital losses.
-
-2025 in income in equity 2025
-£°000 £'000 £000 £’000
-(6,630) (2,912) (1,410) (10,952)
-(7,380) 7,365 - 167 152
-- 285 3,329 3,614
-585 (319) - 266
-(13,425) 4,419 2,086 (6,920)
-Acquired in
-1 January Recognised Recognised business 31 December
-2024 in income in equity combination 2024
-£7000 £7000 £’000 £000 £'000
-(7,218) 588 - - (6,630)
-(8,502) 1,101 27 - (7,380)
-1,017 (427) - 1 585
-(14, 709) 1,262 21 1 (13,425)
-Assets Liabilities Net
-2025 2024 2025 2024 2025 2024
-£000 £°000 £000 £'000 £'000 £°000
-- - (11,674) (6,729) (11,674) (6,729)
-153 - - (7,380) 153 (7,380)
-3,613 - - - - 3,613 -
-266 583 - - 266 -583
-4,032 , 583 (11,674) (14,109) (7,642) (13,526)
+Unrecognised deferred tax asset for the Company of £50,534 (2024: £50,534) relating to capital losses.
 
 48
 
@@ -3115,57 +2699,48 @@ Assets Liabilities Net
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-11 Deferred tax assets and liabilities (continued)
+Notes *(continued)*
 
-11.2 Company (continued)
+11 Deferred tax assets and liabilities *(continued)*
+
+11.2 Company *(continued)*
+
 Movement in deferred tax during the year
 
-1 January’ Recognised Recognised 31 December
-
-2025 in income in equity 2025
-
-£000 £’000 £'000 £’000
-
-Property, plant and equipment (6,729) (3,409) (1,536) (11,674)
-IFRS adjustments (7,380) 7,366 167 153
-Share-based payments - 284 3,329 3,613
-Provisions 583 (317) - 266
-(13,526) 3,924 1,960 (7,642)
+| | 1 January* 2025 £'000 | Recognised in income £'000 | Recognised in equity £'000 | 31 December 2025 £'000 |
+|---|---|---|---|---|
+| Property, plant and equipment | (6,729) | (3,409) | (1,536) | (11,674) |
+| IFRS adjustments | (7,380) | 7,366 | 167 | 153 |
+| Share-based payments | - | 284 | 3,329 | 3,613 |
+| Provisions | 583 | (317) | - | 266 |
+| | (13,526) | 3,924 | 1,960 | (7,642) |
 
 Movement in deferred tax during the prior year
 
-1 January Recognised Recognised 31 December
+| | 1 January 2024 £'000 | Recognised in income £'000 | Recognised in equity £'000 | 31 December 2024 £'000 |
+|---|---|---|---|---|
+| Property, plant and equipment | (7,218) | 489 | - | (6,729) |
+| IFRS transition adjustments | (8,502) | 1,101 | 21 | (7,380) |
+| Provisions | 1,011 | (428) | - | 583 |
+| | (14,709) | 1,162 | 21 | (13,526) |
 
-2024 in income in equity 2024
-
-£'000 £'000 £'000 £’000
-
-Property, plant and equipment (7,218) 489 - (6,729)
-IFRS transition adjustments (8,502) 1,107 21 (7,380)
-Provisions 1,011 (428) - 583
-(14,709) 1,162 21 (13,526)
-
-*The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 29.
+\*The adjustments arising on transition from FRS 102 to UK-adopted IFRS are detailed in note 29.
 
 12 Inventories
-Group Group Company Company
-2025 2024* 2025 2024*
-£°000 £'000 £000 £'000
-Raw materials and consumables 5,234 3,169 — 5,234 3,169
-Work in progress and race car development 28,259 21,569 28,259 21,569
-Finished goods 31,306 32,774 31,306 32,774
-Goods for resale 377 362 377 362
-65,176 57,874 65,176 57,874
 
-In 2025, inventories of £60,926k (2024: £56,547k) were recognised as an expense during the year and included in cost
-of sales. The cumulative write-downs of inventories to net realisable value, reflected in the figures above amounted to
-£11,877k (2024: £1,977k). The write-downs and reversals are included in cost of sales.
+| | Group 2025 £'000 | Group 2024* £'000 | Company 2025 £'000 | Company 2024* £'000 |
+|---|---|---|---|---|
+| Raw materials and consumables | 5,234 | 3,169 | 5,234 | 3,169 |
+| Work in progress and race car development | 28,259 | 21,569 | 28,259 | 21,569 |
+| Finished goods | 31,306 | 32,774 | 31,306 | 32,774 |
+| Goods for resale | 377 | 362 | 377 | 362 |
+| | 65,176 | 57,874 | 65,176 | 57,874 |
+
+In 2025, inventories of £60,926k (2024: £56,547k) were recognised as an expense during the year and included in cost of sales. The cumulative write-downs of inventories to net realisable value, reflected in the figures above amounted to £11,877k (2024: £1,977k). The write-downs and reversals are included in cost of sales.
 
 Inventories are expected to be utilised within 12 months from the Balance Sheet date.
 
-*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed i in note 26 and the adjustments
-arising on transition from FRS 102 to FRS 101 are detailed in note 29.
+\*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26 and the adjustments arising on transition from FRS 102 to FRS 101 are detailed in note 29.
 
 49
 
@@ -3173,47 +2748,47 @@ arising on transition from FRS 102 to FRS 101 are detailed in note 29.
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
 13 Trade and other receivables
-Group Group Company Company
-2025 2024* 2025 2024*
-£’000 £’000 £°000 £000
-Trade receivables 128,995 105,177 128,277 105,101
-Amounts owed by group undertakings - - 38,898 21,354
-Other debtors 40,085 26,265 39,279 25,781
-Contract asset 60,581 50,953 60,581 50,953
-Prepayments and accrued income 24,148 18,368 24,138 17,855
-253,809 200, 763 291,173 221,044
-Current 249,871 195,795 249,086 195,471
-Non-current 3,938 4,968 42,087 25,573
-Of which, non-current contract asset 1,474 2,597 1,474 2,597
+
+| | Group 2025 £'000 | Group 2024* £'000 | Company 2025 £'000 | Company 2024* £'000 |
+|---|---|---|---|---|
+| Trade receivables | 128,995 | 105,177 | 128,277 | 105,101 |
+| Amounts owed by group undertakings | - | - | 38,898 | 21,354 |
+| Other debtors | 40,085 | 26,265 | 39,279 | 25,781 |
+| Contract asset | 60,581 | 50,953 | 60,581 | 50,953 |
+| Prepayments and accrued income | 24,148 | 18,368 | 24,138 | 17,855 |
+| | 253,809 | 200,763 | 291,173 | 221,044 |
+| Current | 249,871 | 195,795 | 249,086 | 195,471 |
+| Non-current | 3,938 | 4,968 | 42,087 | 25,573 |
+| Of which, non-current contract asset | 1,474 | 2,597 | 1,474 | 2,597 |
 
 Within trade and other receivables are balances recognised as current assets held for sale.
 
-*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26 and the adjustments
-arising on transition from FRS 102 to FRS 101 are detailed in note 29. | ,
+\*The adjustments arising on transition from FRS 102 to UK-adopted IFRSs are detailed in note 26 and the adjustments arising on transition from FRS 102 to FRS 101 are detailed in note 29.
 
 14 Cash and cash equivalents
-Group Group Company Company
-2025 2024 2025 2024
-£'000 £000 £'000 £'000
-Cash and cash equivalents per Balance Sheet 29,489 52,613 26,423 51,838
-Cash and cash equivalents per Cash Flow Statement 29,489 52,613 26,423 51,838
+
+| | Group 2025 £'000 | Group 2024 £'000 | Company 2025 £'000 | Company 2024 £'000 |
+|---|---|---|---|---|
+| Cash and cash equivalents per Balance Sheet | 29,489 | 52,613 | 26,423 | 51,838 |
+| Cash and cash equivalents per Cash Flow Statement | 29,489 | 52,613 | 26,423 | 51,838 |
+
 15 Trade and other payables
-Group Group Company Company
-2025 2024* 2025 2024*
-£’000 £000 £°000 £'000
-Trade payables 18,758 22,992 18,754 21,954
-Amounts owed to group undertakings : - 22,434 20,066
-Right of use liabilities 7,508 3,303 4,222 3,181
-Corporation tax ‘ 3,228 24,204 2,652 24,042
-Other taxation and social security 14,327 4,185 14,287 1,677
-Contract liabilities 176,139 111,368 176,139 111,368
-Non-trade payables and accrued expenses 39,853 26,547 40,033 30,887
-Trade and other payables 259,813 192,599 278,521 213,175
-Current 203,929 186,919 204,035 189, 883
-Non-Current §5,884 5,680 74,486 23,292
+
+| | Group 2025 £'000 | Group 2024* £'000 | Company 2025 £'000 | Company 2024* £'000 |
+|---|---|---|---|---|
+| Trade payables | 18,758 | 22,992 | 18,754 | 21,954 |
+| Amounts owed to group undertakings | - | - | 22,434 | 20,066 |
+| Right of use liabilities | 7,508 | 3,303 | 4,222 | 3,181 |
+| Corporation tax | 3,228 | 24,204 | 2,652 | 24,042 |
+| Other taxation and social security | 14,327 | 4,185 | 14,287 | 1,677 |
+| Contract liabilities | 176,139 | 111,368 | 176,139 | 111,368 |
+| Non-trade payables and accrued expenses | 39,853 | 26,547 | 40,033 | 30,887 |
+| Trade and other payables | 259,813 | 192,599 | 278,521 | 213,175 |
+| Current | 203,929 | 186,919 | 204,035 | 189,883 |
+| Non-Current | 55,884 | 5,680 | 74,486 | 23,292 |
 
 50
 
@@ -3276,132 +2851,47 @@ option scheme.
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-16 Employee benefits (continued)
-Company Share Option Plan (CSOP)
+16 Employee benefits *(continued)*
+
+**Company Share Option Plan (CSOP)**
 
 Movements in CSOP options during the year were as follows:
 
-Outstanding at the beginning of the year
+| | Weighted average exercise price | Number of options 2025 | Number of options 2024 |
+|---|---|---|---|
+| Outstanding at the beginning of the year | £2.05 | 936,545 | - |
+| Granted during the year | | - | 936,545 |
+| Outstanding at the end of the year | £2.05 | 936,545 | 936,545 |
+| Exercisable at the end of the year | | - | - |
 
-Granted during the year
-Outstanding at the end of the year
+None of the options were exercisable at 31 December 2025 (2024: nil). The weighted average remaining contractual life of options outstanding at 31 December 2025 was 1 year and 11 months (2024: 2 years and 11 months).
 
-Exercisable at the end of the year
-
-Weighted
-average
-exercise
-
-price
-
-£2.05
-
-£2.05
-
-Number
-of options
-2025
-
-936,545
-
-936,545
-
-Number of
-options
-2024
-
-936,545
-
-936,545
-
-None of the options were exercisable at 31 December 2025 (2024: nil). The weighted average remaining contractual
-life of aptions outstanding at 31 December 2025 was 1 year and 11 months (2024: 2 years and 11 months).
-
-Expense recognised
+**Expense recognised**
 
 The expense recognised in respect of equity-settled share-based payments was:
 
-Equity settled share-based payment expense
+| | 2025 £'000 | 2024 £'000 |
+|---|---|---|
+| Equity settled share-based payment expense | 1,520 | 270 |
+| | 1,520 | 270 |
 
 17 Provisions
 
-Balance at 1 January 2024
-Provisions made during the year
-Provisions used during the year
-Provisions released during the year
-Balance at 31 December 2024
-
-Balance at 1 January 2025
-Provisions made during the year
-Provisions used during the year
-Provisions released during the year
-Unwinding of discounted amount
-
-Balance at 31 December 2025
-
-Property
-provision
-£°000
-
-772
-
-772
-
-772
-152
-
-926
-
-2025
-£°000
-
-1,520
-
-1,520
-
-Other
-provision
-£°000
-
-3,230
-4,109
-(5,114)
-
-2,225
-2,225
-1,060
-
-(185)
-(1,483)
-
-1,617
-
-2024
-£000
-
-270
-
-270
-
-Total
-£7000
-
-4,002
-4,109
-(5,114)
-2,997
-
-2,997
-
-1,212
-
-(185)
-(1,483)
-2
-
-2,543
+| | Property provision £'000 | Other provision £'000 | Total £'000 |
+|---|---|---|---|
+| Balance at 1 January 2024 | 772 | 3,230 | 4,002 |
+| Provisions made during the year | - | 4,109 | 4,109 |
+| Provisions used during the year | - | (5,114) | (5,114) |
+| Provisions released during the year | - | | |
+| Balance at 31 December 2024 | 772 | 2,225 | 2,997 |
+| Balance at 1 January 2025 | 772 | 2,225 | 2,997 |
+| Provisions made during the year | 152 | 1,060 | 1,212 |
+| Provisions used during the year | - | (185) | (185) |
+| Provisions released during the year | - | (1,483) | (1,483) |
+| Unwinding of discounted amount | 2 | - | 2 |
+| **Balance at 31 December 2025** | 926 | 1,617 | 2,543 |
 
 52
 
@@ -3409,105 +2899,57 @@ Total
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-17 Provisions (continued)
+17 Provisions *(continued)*
+
 2025:
-Property
-provision
-£°000
-Non-current : 926
-Current -
+
+| | Property provision £'000 | Other provision £'000 | Total £'000 |
+|---|---|---|---|
+| Non-current | 926 | 307 | 1,233 |
+| Current | - | 1,310 | 1,310 |
+
 2024:
-Property
-provision
-£’000
-Non-current 772
-Current -
+
+| | Property provision £'000 | Other provision £'000 | Total £'000 |
+|---|---|---|---|
+| Non-current | 772 | 1,886 | 2,658 |
+| Current | - | 339 | 339 |
 
 Property provision
 
-Other
-provision
-£'000
-
-307
-1,310
-
-Other
-provision
-£°000
-
-1,886
-339
-
-Total
-£'000
-
-1,233
-1,310
-
-Total
-£'000
-
-2,658
-339
-
-This relates to an estimate for dilapidations and reinstatement costs in relation to the current leasehold properties,
-
-‘
-
-which are estimated to crystallise over the lease term.
+This relates to an estimate for dilapidations and reinstatement costs in relation to the current leasehold properties, which are estimated to crystallise over the lease term.
 
 Other provisions
 
-These costs include payments payable in regards to termination clauses for contractual liabilities and other legal
+These costs include payments payable in regards to termination clauses for contractual liabilities and other legal costs.
 
-costs. -
-
-All of the Group’s provisions are held in the Parent Company.
+All of the Group's provisions are held in the Parent Company.
 
 18 Capital and reserves
 
-Authorised
-
-Ordinary shares of £2.00 each
-Ordinary shares of £2.00 each
-B1 Ordinary shares of £0.01 each
+| Authorised | 2025 No. | 2024 No. |
+|---|---|---|
+| Ordinary shares of £2.00 each | 100 | 100 |
+| Ordinary shares of £2.00 each | 35,000,000 | 35,000,000 |
+| B1 Ordinary shares of £0.01 each | 2,634,400 | 2,634,400 |
+| | 37,634,500 | 37,634,500 |
 
 Ordinary shares
+
 These shares have voting rights and are entitled to dividends.
 
 B1 Ordinary shares
 
-2025 2024
+The B1 ordinary shares do not have voting rights, these shares are entitled to a dividend subject to approval from the Board.
 
-No. No.
-
-100 100
-35,000,000 35,000,000
-2,634,400 2,634,400
-37,634,500 37,634,500
-
-The B1 ordinary shares do not have voting rights, these shares are entitled to a dividend subject to approval from
-
-the Board.
-
-Share capital
-Allotted, called up and fully paid
-
-100 (2024: 100) Ordinary shares of £2.00 (2024: £2.00) each
-35,000,000 (2024: 35,000,000) Ordinary shares of £2.00 (2024: £2.00) each
-1,207,800 (2024: 1,162,311) B81 Ordinary shares of £0.01 (2024: £0.01) each
-
-2025 2024
-
-£ £
-
-200 200
-70,000,000 70,000,000
-12,078 11,623
-70,012,278 70,011,823
+| Share capital – Allotted, called up and fully paid | 2025 £ | 2024 £ |
+|---|---|---|
+| 100 (2024: 100) Ordinary shares of £2.00 (2024: £2.00) each | 200 | 200 |
+| 35,000,000 (2024: 35,000,000) Ordinary shares of £2.00 (2024: £2.00) each | 70,000,000 | 70,000,000 |
+| 1,207,800 (2024: 1,162,311) B1 Ordinary shares of £0.01 (2024: £0.01) each | 12,078 | 11,623 |
+| | 70,012,278 | 70,011,823 |
 
 53
 
@@ -3515,54 +2957,46 @@ Allotted, called up and fully paid
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-* Notes (continued)
-18 Capital and reserves (continued)
+Notes *(continued)*
 
-In 2025 a dividend was declared of £125.0m in respect of the year ended 31 December 2024, £75.0m was paid in
-March 2025 and the remaining £50.0m in May 2025 (2024: £100.0m in respect of year ended 31 December 2023).
+18 Capital and reserves *(continued)*
 
-During the year, the’Company issued 45,489 new B1 ordinary shares at an issue price of £2.05 (nominal value of £0.01
-per share). The shares were issued for a total consideration of £455, resulting in an increase in the share capital and
-share premium of the Company.
+In 2025 a dividend was declared of £125.0m in respect of the year ended 31 December 2024, £75.0m was paid in March 2025 and the remaining £50.0m in May 2025 (2024: £100.0m in respect of year ended 31 December 2023).
+
+During the year, the'Company issued 45,489 new B1 ordinary shares at an issue price of £2.05 (nominal value of £0.01 per share). The shares were issued for a total consideration of £455, resulting in an increase in the share capital and share premium of the Company.
 
 19 Reserves
 
-Share premium account
+**Share premium account**
 
 This reserve records the amount above the nominal value received for shares.
 
-Revaluation reserve
+**Revaluation reserve**
 
 This reserve includes the current and prior period revaluations on property, plant and equipment.
-Other reserves
+
+**Other reserves**
 
 This reserve includes share-based payment reserves.
 
-Retained earnings
+**Retained earnings**
 
-This reserve includes all current and prior period retained profits and losses in addition to the share capital reduction
-movement.
+This reserve includes all current and prior period retained profits and losses in addition to the share capital reduction movement.
 
 20 Financial instruments
+
 20 (a) Fair values of financial instruments
+
 Group
 
-The Group has not disclosed the fair values of financial instruments such as short-term trade receivables and payables,
-because their carrying amounts are a reasonable approximation of fair value.
+The Group has not disclosed the fair values of financial instruments such as short-term trade receivables and payables, because their carrying amounts are a reasonable approximation of fair value.
 
-2025 2024
-
-Carrying Fair Carrying = Fair
-amount value Level 1 Level 2 Level3 amount value Level1 Level2 Level3
-£000 £’'000 =£°000 £7000 £'000 £000 £000 £000 £000 £'000
-
-Loans and receivables .
-Cash and cash equivalents 29,489 29,489 29,489 - - 52,613 52,613 52,613 - -
-Trade and other receivables 232,899 - - - 184,196 - - - -
-(Note 13, excluding
-prepayments)
-
-Total financial assets 262,388 29,489 29,489 - 236,809 52,613 52,613 - -
+| | 2025 Carrying amount £'000 | 2025 Fair value £'000 | 2025 Level 1 £'000 | 2025 Level 2 £'000 | 2025 Level 3 £'000 | 2024 Carrying amount £'000 | 2024 Fair value £'000 | 2024 Level 1 £'000 | 2024 Level 2 £'000 | 2024 Level 3 £'000 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Loans and receivables** | | | | | | | | | | |
+| Cash and cash equivalents | 29,489 | 29,489 | 29,489 | - | - | 52,613 | 52,613 | 52,613 | - | - |
+| Trade and other receivables (Note 13, excluding prepayments) | 232,899 | - | - | - | - | 184,196 | - | - | - | - |
+| Total financial assets | 262,388 | 29,489 | 29,489 | - | - | 236,809 | 52,613 | 52,613 | - | - |
 
 54
 
@@ -3570,86 +3004,29 @@ Total financial assets 262,388 29,489 29,489 - 236,809 52,613 52,613 - -
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-20 Financial instruments (continued)
+20 Financial instruments *(continued)*
 
-20 (a) Fair values of financial instruments (continued)
+20 (a) Fair values of financial instruments *(continued)*
 
-2025
-
-2024
-
-Carrying Fair
-
-amount value Level 1 Level 2 Level 3) amount value Level1 Level2 Level 3
-
-Carrying
-£°000 £000
-Financial liabilities
-measured at amortised
-cost
-Trade and other payables (87,624)
-
-(note 15, excluding non-
-monetary contract liabilities)
-
-£’000 + £°000
-
-£'000 £000 £000 £000 £000
-
-- (86,104) - - -
-
-Total financial liabilities (87,624)
-
-£'000
-
-- (86,104) - - -
-
-174,764 29,489
-
-29,489
-
-- 150,705 52,613 52,613 -
+| | 2025 Carrying amount £'000 | 2025 Fair value £'000 | 2025 Level 1 £'000 | 2025 Level 2 £'000 | 2025 Level 3 £'000 | 2024 Carrying amount £'000 | 2024 Fair value £'000 | 2024 Level 1 £'000 | 2024 Level 2 £'000 | 2024 Level 3 £'000 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Financial liabilities measured at amortised cost** | | | | | | | | | | |
+| Trade and other payables (note 15, excluding non-monetary contract liabilities) | (87,624) | - | - | - | - | (86,104) | - | - | - | - |
+| Total financial liabilities | (87,624) | - | - | - | - | (86,104) | - | - | - | - |
+| | 174,764 | 29,489 | 29,489 | - | - | 150,705 | 52,613 | 52,613 | - | - |
 
 Company
 
-The Company has not disclosed the fair values of financial instruments such as short-term trade receivables and
+The Company has not disclosed the fair values of financial instruments such as short-term trade receivables and payables, because their carrying amounts are a reasonable approximation of fair value.
 
-payables, because their carrying amounts are a reasonable approximation of fair value.
-
-Carrying
-
-2025
-
-2024
-
-Carrying Fair
-
-amount value Level 1 Level2 Level3 amount value Level? Levef2 Level 3
-
-£000 £’000
-
-Loans and receivables
-
-Cash and cash equivalents 26,423 26,423 26,423
-
-Trade and other receivables 270,273
-(note 13, excluding
-prepayments)
-
-£’000° £7000
-
-£000 £000 £000 £7000 £'000
-
-- 51,838 57,838 51,838 -
-- 204,991 - - -
-
-Total financial assets 296,696 26,423 26,423
-
-£000
-
-256,829 51,838 51,838 -
+| | 2025 Carrying amount £'000 | 2025 Fair value £'000 | 2025 Level 1 £'000 | 2025 Level 2 £'000 | 2025 Level 3 £'000 | 2024 Carrying amount £'000 | 2024 Fair value £'000 | 2024 Level 1 £'000 | 2024 Level 2 £'000 | 2024 Level 3 £'000 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Loans and receivables** | | | | | | | | | | |
+| Cash and cash equivalents | 26,423 | 26,423 | 26,423 | - | - | 51,838 | 51,838 | 51,838 | - | - |
+| Trade and other receivables (note 13, excluding prepayments) | 270,273 | - | - | - | - | 204,991 | - | - | - | - |
+| Total financial assets | 296,696 | 26,423 | 26,423 | - | - | 256,829 | 51,838 | 51,838 | - | - |
 
 55
 
@@ -3657,54 +3034,42 @@ Total financial assets 296,696 26,423 26,423
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-20 Financial instruments (continued)
-20 (a) Fair values of financial instruments (continued)
+20 Financial instruments *(continued)*
 
-2025 , 2024
+20 (a) Fair values of financial instruments *(continued)*
 
-Carrying Fair Carrying Fair
-amount Value Level 1 Level 2Level 3 amount Value Level1 Level 2 Level 3
-£000 £°000 £000 £'000 £7000 £'000 £000 £000 £'000 £7000
-
-Financial liabilities ,
-measured at amortised cost
-Trade and other payables (106,332) - - - - (106,679) - - - -
-(note 15, excluding non-
-monetary contract liabilities)
-
-Total financial liabilities (106,332) : - - - (106,679) - - - -
-
-Total financial instruments 190,364 26,423 26,423 - - 150,150 51,838 51,838 - -
+| | 2025 Carrying amount £'000 | 2025 Fair Value £'000 | 2025 Level 1 £'000 | 2025 Level 2 £'000 | 2025 Level 3 £'000 | 2024 Carrying amount £'000 | 2024 Fair Value £'000 | 2024 Level 1 £'000 | 2024 Level 2 £'000 | 2024 Level 3 £'000 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Financial liabilities measured at amortised cost** | | | | | | | | | | |
+| Trade and other payables (note 15, excluding non-monetary contract liabilities) | (106,332) | - | - | - | - | (106,679) | - | - | - | - |
+| Total financial liabilities | (106,332) | - | - | - | - | (106,679) | - | - | - | - |
+| **Total financial instruments** | 190,364 | 26,423 | 26,423 | - | - | 150,150 | 51,838 | 51,838 | - | - |
 
 20 (b) Credit risk
-Financial nsk management
 
-Credit risk is the risk of financial loss to the Group if a customer or counterparty to a financial instrument fails to meet
-its contractual obligations and arises principally from the Group's receivables from customers.
+*Financial risk management*
 
-Exposure to credit risk
+Credit risk is the risk of financial loss to the Group if a customer or counterparty to a financial instrument fails to meet its contractual obligations and arises principally from the Group's receivables from customers.
 
-The maximum exposure to credit risk at the Balance Sheet date for financial instruments (by class) and contract assets
-was:
+*Exposure to credit risk*
 
-Group Company ©
-2025 2024 2025 2024
-£'000 £'000 £'000 £'000
-Receivables from third parties 232,899 184,196 231,374 183,633
-intercompany receivables - - 38,898 21,358
-232,899 184,196 270,272 204,991
+The maximum exposure to credit risk at the Balance Sheet date for financial instruments (by class) and contract assets was:
 
-The concentration of credit risk for trade and intercompany receivables at the Balance Sheet date by geographic
-region was:
+| | Group 2025 £'000 | Group 2024 £'000 | Company 2025 £'000 | Company 2024 £'000 |
+|---|---|---|---|---|
+| Receivables from third parties | 232,899 | 184,196 | 231,374 | 183,633 |
+| Intercompany receivables | - | - | 38,898 | 21,358 |
+| | 232,899 | 184,196 | 270,272 | 204,991 |
 
-Group Company
-2025 2024 2025 2024
-£°000 £'000 £7000 £'000
-UK 78,456 65,173 117,355 86,531
-Rest of the World . 154,443 119,023 152,917 118,460
-232,899 - 184,196 270,272 204,991
+The concentration of credit risk for trade and intercompany receivables at the Balance Sheet date by geographic region was:
+
+| | Group 2025 £'000 | Group 2024 £'000 | Company 2025 £'000 | Company 2024 £'000 |
+|---|---|---|---|---|
+| UK | 78,456 | 65,173 | 117,355 | 86,531 |
+| Rest of the World | 154,443 | 119,023 | 152,917 | 118,460 |
+| | 232,899 | 184,196 | 270,272 | 204,991 |
 
 56
 
@@ -3712,114 +3077,101 @@ Rest of the World . 154,443 119,023 152,917 118,460
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-20 Financial instruments (continued)
-20 (b) Credit risk (continued)
+Notes *(continued)*
 
-The concentration of credit risk for trade receivables and contract assets at the Balance Sheet date by type of
-counterparty was:
+20 Financial instruments *(continued)*
 
-Group : ; Company
-2025 2024 2025 2024
-£°000 £'000 £°000 £'000
-Customers 232,899 184,196 231,374 183,633
-Group companies - - 38,898 21,358
-232,899 184,196 270,272 204,991
+20 (b) Credit risk *(continued)*
+
+The concentration of credit risk for trade receivables and contract assets at the Balance Sheet date by type of counterparty was:
+
+| | Group 2025 £'000 | Group 2024 £'000 | Company 2025 £'000 | Company 2024 £'000 |
+|---|---|---|---|---|
+| Customers | 232,899 | 184,196 | 231,374 | 183,633 |
+| Group companies | - | - | 38,898 | 21,358 |
+| | 232,899 | 184,196 | 270,272 | 204,991 |
 
 The ageing of trade receivables at the Balance Sheet date was:
 
 Group
-Gross Impairment Gross Impairment
-2025 2025 2024 2024
-£7000 £000 , £°000 £'000
-Not past due 231,852 - 181,653 -
-Past due 0-120 days 514 - 2,677 (167)
-Past due 121-360 days 823 (460) 112 (105)
-More than 360 days 211 (40) 28 -
-233,400 (500) 184,470 (272)
+
+| | Gross 2025 £'000 | Impairment 2025 £'000 | Gross 2024 £'000 | Impairment 2024 £'000 |
+|---|---|---|---|---|
+| Not past due | 231,852 | - | 181,653 | - |
+| Past due 0-120 days | 514 | - | 2,677 | (167) |
+| Past due 121-360 days | 823 | (460) | 112 | (105) |
+| More than 360 days | 211 | (40) | 28 | - |
+| | 233,400 | (500) | 184,470 | (272) |
 
 Company
 
-Gross Impairment Gross Impairment
-2025 2025 2024 2024
-£000 £°000 ' £'000 £°000
-Not past due 269,225 - 202,447 -
-Past due 0-120 days 514 - 2,677 - (167)
-Past due 121-360 days 823 . (460) 112 (105)
-More than 360 days 211 (40) 28 ‘ -
+| | Gross 2025 £'000 | Impairment 2025 £'000 | Gross 2024 £'000 | Impairment 2024 £'000 |
+|---|---|---|---|---|
+| Not past due | 269,225 | - | 202,447 | - |
+| Past due 0-120 days | 514 | - | 2,677 | (167) |
+| Past due 121-360 days | 823 | (460) | 112 | (105) |
+| More than 360 days | 211 | (40) | 28 | - |
+| | 270,773 | (500) | 205,264 | (272) |
 
-270,773 (500) 205,264 (272)
+57
 
 --- pág. 58 ---
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-20 Financial instruments (continued)
-20 (b) Credit risk (continued)
+20 Financial instruments *(continued)*
+
+20 (b) Credit risk *(continued)*
 
 The allowance for impairment in respect of trade receivables and contract assets during the year was as follows.
 
-Group Company
-2025 "2024 2025 2024
-£000 £’000 £000 £'000
-Balance at 1 January 272 110 272 . 110
-Impairment loss recognised 2,910 272 2,910 272
-Impairment loss reversed (272) (106) (272) (106)
-Amounts written off (2,410) (4) (2,410) (4)
-Balance at 31 December 500 272 500 272
+| | Group 2025 £'000 | Group 2024 £'000 | Company 2025 £'000 | Company 2024 £'000 |
+|---|---|---|---|---|
+| Balance at 1 January | 272 | 110 | 272 | 110 |
+| Impairment loss recognised | 2,910 | 272 | 2,910 | 272 |
+| Impairment loss reversed | (272) | (106) | (272) | (106) |
+| Amounts written off | (2,410) | (4) | (2,410) | (4) |
+| Balance at 31 December | 500 | 272 | 500 | 272 |
 
-The allowance account for trade receivables is used to record impairment losses unless the Group is satisfied that no
+The allowance account for trade receivables is used to record impairment losses unless the Group is satisfied that no recovery of the amount owing is possible; at that point the amounts considered irrecoverable are written off against the trade receivables directly.
 
-recovery of the amount owing is possible; at that point the amounts considered irrecoverable are written off against the
-trade receivables directly.
-
-58,
+58
 
 --- pág. 59 ---
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-20 Financial instruments (continued)
-20(c) Liquidity risk
+20 Financial instruments *(continued)*
 
-Financial risk management
+20 (c) Liquidity risk
 
-Liquidity risk is the risk that the Group will not be able to meet its financial obligations as they fall due. The Group has access to an undrawn £250,000k Revolving
+*Financial risk management*
 
-Credit Facility which is available until December 2028.
+Liquidity risk is the risk that the Group will not be able to meet its financial obligations as they fall due. The Group has access to an undrawn £250,000k Revolving Credit Facility which is available until December 2028.
 
-The following are the contractual maturities of financial liabilities at the reporting date. The amounts are gross and undiscounted, and include estimated contractual
+The following are the contractual maturities of financial liabilities at the reporting date. The amounts are gross and undiscounted, and include estimated contractual interest payments and exclude the effect of netting agreements:
 
-interest payments and exclude the effect of netting agreements:
+Group
 
-Group 2025 2024
-5 years
-Carrying | Contractual 1 year 1to Contractual 1 year 1 to 2to and
-amount! cash flows orless <2years cash flows orless <2years <Syears over
-£'000 £°000 £'000 £'000 £000 £000 £000 £000 = £000
-Non-derivative financial liabilities
-Lease liabilities 7,508} 8,880 2,054 1,988 3,613 842 712 1,602 457
-Trade and other payables (note 15, 80,116) 80,116 79,044 1,072 82,801 79,582 2,115 1,104 -
-excluding lease liabilities and non-monetary
-contract liabilities)
-87,624) 88,996 81,098 3,060 86,414 80,424 2,827 2,706 457
-2025 2024
-Company 5 years
-Carrying | Contractual 1 year 1 to Contractual 1 year 1to 2to and
-amount] cash flows orless <2years <S5years cash flows orless <2years <Syears over
-£'000 £7000 £'000 £'000 £'000 £000 £000 £000 £000
-Non-derivative financial liabilities
-Lease liabilities 26,656) 37,095 2,526 3,529 32,830 3,126 3,016 8,035 18,653
-Trade and other payables (note 15, 79,678) 79,678 78,606 1,072 83,432 80,213 2,115 1,104 -
-excluding lease liabilities and non-monetary
-contract liabilities)
-116,773 81,132 4,601 116,262 83,339 5,131 9,139 18,653
+| | 2025 Carrying amount £'000 | 2025 Contractual cash flows £'000 | 2025 1 year or less £'000 | 2025 1 to <2years £'000 | 2025 2 to <5years £'000 | 2025 5 years and over £'000 | 2024 Carrying amount £'000 | 2024 Contractual cash flows £'000 | 2024 1 year or less £'000 | 2024 1 to <2years £'000 | 2024 2 to <5years £'000 | 2024 5 years and over £'000 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Non-derivative financial liabilities** | | | | | | | | | | | | |
+| Lease liabilities | 7,508 | 8,880 | 2,054 | 1,988 | 2,954 | 1,884 | 3,303 | 3,613 | 842 | 712 | 1,602 | 457 |
+| Trade and other payables (note 15, excluding lease liabilities and non-monetary contract liabilities) | 80,116 | 80,116 | 79,044 | 1,072 | - | - | 82,801 | 82,801 | 79,582 | 2,115 | 1,104 | - |
+| | 87,624 | 88,996 | 81,098 | 3,060 | 2,954 | 1,884 | 86,104 | 86,414 | 80,424 | 2,827 | 2,706 | 457 |
 
-106,334)
+Company
+
+| | 2025 Carrying amount £'000 | 2025 Contractual cash flows £'000 | 2025 1 year or less £'000 | 2025 1 to < 2years £'000 | 2025 2 to <5years £'000 | 2025 5 years and over £'000 | 2024 Carrying amount £'000 | 2024 Contractual cash flows £'000 | 2024 1 year or less £'000 | 2024 1 to <2years £'000 | 2024 2 to <5years £'000 | 2024 5 years and over £'000 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Non-derivative financial liabilities** | | | | | | | | | | | | |
+| Lease liabilities | 26,656 | 37,095 | 2,526 | 3,529 | 10,004 | 21,036 | 23,247 | 32,830 | 3,126 | 3,016 | 8,035 | 18,653 |
+| Trade and other payables (note 15, excluding lease liabilities and non-monetary contract liabilities) | 79,678 | 79,678 | 78,606 | 1,072 | - | - | 83,432 | 83,432 | 80,213 | 2,115 | 1,104 | - |
+| | 106,334 | 116,773 | 81,132 | 4,601 | 10,004 | 21,036 | 106,679 | 116,262 | 83,339 | 5,131 | 9,139 | 18,653 |
 
 59
 
@@ -3827,149 +3179,98 @@ contract liabilities)
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+Notes *(continued)*
 
-20 Financial instruments (continued)
+20 Financial instruments *(continued)*
 
 20 (d) Market risk
-Financial risk management ’
 
-Market risk is the risk that changes in market prices, such as foreign exchange rates, interest rates and equity prices
+*Financial risk management*
 
-will affect the Group’ s income or the value of its holdings of financial instruments.
+Market risk is the risk that changes in market prices, such as foreign exchange rates, interest rates and equity prices will affect the Group's income or the value of its holdings of financial instruments.
 
-Group
+**Group**
 
-The main market risk facing the Group is the foreign exchange risk. A large portion of the Group’s income arises in
-foreign currency. Where possible, purchases are made in the same currencies to create a natural hedge. When
-required, the Group exchanges foreign currency at the spot rate.
+The main market risk facing the Group is the foreign exchange risk. A large portion of the Group's income arises in foreign currency. Where possible, purchases are made in the same currencies to create a natural hedge. When required, the Group exchanges foreign currency at the spot rate.
 
-Market risk - foreign currency risk
+*Market risk - foreign currency risk*
 
-Group
+**Group**
 
-The Group’s exposure to foreign currency risk is as follows. This is based on the carrying amount for monetary financial
-
-instruments.
+The Group's exposure to foreign currency risk is as follows. This is based on the carrying amount for monetary financial instruments.
 
 31 December 2025
 
-Cash and cash equivalents
-
-Trade and other receivables (note 13,
-excluding prepayments)
-
-Secured bank loans
-
-Trade and other payables (note 15,
-excluding non-monetary contract liabilities)
-
-Balance Sheet exposure
-
-Net exposure
+| | Sterling £'000 | Euro £'000 | US Dollar £'000 | Total £'000 |
+|---|---|---|---|---|
+| Cash and cash equivalents | 25,893 | 3,010 | 586 | 29,489 |
+| Trade and other receivables (note 13, excluding prepayments) | 160,397 | 33,423 | 39,079 | 232,899 |
+| Secured bank loans | - | - | - | - |
+| Trade and other payables (note 15, excluding non-monetary contract liabilities) | (60,058) | (18,188) | (9,378) | (87,624) |
+| Balance Sheet exposure | 126,232 | 18,245 | 30,287 | 174,764 |
+| Net exposure | 126,232 | 18,245 | 30,287 | 174,764 |
 
 31 December 2024
 
-Cash and cash equivalents
+| | Sterling £'000 | Euro £'000 | US Dollar £'000 | Total £'000 |
+|---|---|---|---|---|
+| Cash and cash equivalents | 21,950 | 17,834 | 12,829 | 52,613 |
+| Trade and other receivables (note 13, excluding prepayments) | 132,742 | 22,154 | 29,300 | 184,196 |
+| Secured bank loans | - | - | - | - |
+| Trade and other payables (note 15, excluding non-monetary contract liabilities) | (63,176) | (10,623) | (12,305) | (86,104) |
+| Balance Sheet exposure | 91,516 | 29,365 | 29,824 | 150,705 |
+| Net exposure | 91,516 | 29,365 | 29,824 | 150,705 |
 
-Trade and other receivables (note 13,
-excluding prepayments)
-
-Secured bank loans
-
-Trade and other payables (note 15,
-excluding non-monetary contract liabilities)
-
-Balance Sheet exposure
-
-Net exposure
-
-Sterling Euro US Dollar Total
-£°000 £'000 £°000 £7000
-25,893 3,010 586 29,489
-160,397 33,423 39,079 232,899
-(60,058) (18,188) (9,378) (87,624)
-126,232 18,245 30,287 174,764
-126,232 18,245 30,287 174,764
-Sterling Euro US Dollar Total
-£'000 £'000 £000 £’000
-21,950 17,834 12,829 52,613
-132,742 22,154 29,300 184,196
-(63,176) (10,623) (12,305) (86, 104)
-91,516 29,365 29,824 150,705
-29,365 29,824 150,705
-
-91,576
-
+60
 
 --- pág. 61 ---
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+**Notes** *(continued)*
 
-20 Financial instruments (continued)
-20 (d) Market risk (continued)
+**20 Financial instruments** *(continued)*
 
-Company
+**20 (d) Market risk** *(continued)*
 
-The Company’s exposure to foreign currency risk is as follows. This is based on the carrying amount for monetary
-financial instruments. :
+**Company**
+
+The Company's exposure to foreign currency risk is as follows. This is based on the carrying amount for monetary financial instruments.
 
 31 December 2025
 
-Sterling Euro US Dollar Total
-
-£°000 £°000 £°000 £°000
-
-Cash and cash equivalents 23,378 2,651 394 26,423
-Trade and other receivables (note 13, 197,771 33,423 39,079 270,273
-
-excluding prepayments)
-
-Secured bank loans - - - -
-Trade and other payables (note 15, (78,766) (18, 188) (9,378) (106,332)
-excluding non-monetary contract liabilities)
-
-Balance sheet exposure 142,383 17,886 30,095 190,364
-
-Net exposure 142,383 17,886 30,095 190,364
+| | Sterling £'000 | Euro £'000 | US Dollar £'000 | Total £'000 |
+|---|---|---|---|---|
+| Cash and cash equivalents | 23,378 | 2,651 | 394 | 26,423 |
+| Trade and other receivables (note 13, excluding prepayments) | 197,771 | 33,423 | 39,079 | 270,273 |
+| Secured bank loans | - | - | - | - |
+| Trade and other payables (note 15, excluding non-monetary contract liabilities) | (78,766) | (18,188) | (9,378) | (106,332) |
+| Balance sheet exposure | 142,383 | 17,886 | 30,095 | 190,364 |
+| **Net exposure** | **142,383** | **17,886** | **30,095** | **190,364** |
 
 31 December 2024
 
-. Sterling Euro US Dollar Total
+| | *Sterling £'000* | *Euro £'000* | *US Dollar £'000* | *Total £'000* |
+|---|---|---|---|---|
+| Cash and cash equivalents | *21,278* | *17,831* | *12,729* | *51,838* |
+| Trade and other receivables (note 13, excluding prepayments) | *153,537* | *22,154* | *29,300* | *204,991* |
+| Secured bank loans | - | - | - | - |
+| Trade and other payables (note 15, excluding non-monetary contract liabilities) | *(83,751)* | *(10,623)* | *(12,305)* | *(106,679)* |
+| Balance sheet exposure | *91,064* | *29,362* | *29,724* | *150,150* |
+| Net exposure | *91,064* | *29,362* | *29,724* | *150,150* |
 
-£'000 £'000 £’000 £’000
+**Sensitivity analysis**
 
-Cash and cash equivalents 21,278 17,831 12,729 51,838.
-Trade and other receivables (note 13, 153,537 22,154 29,300 204,991
+**Group**
 
-excluding prepayments)
+A 10% weakening of the following currencies against the pound sterling at 31 December would have increased/(decrease) the Group's equity and profit or loss by the amounts shown below. This calculation assumes that the change occurred at the Balance Sheet date and had been applied to risk exposures existing at that date.
 
-Secured bank loans - - - -
-Trade and other payables (note 15, (83,751) (10,623) (12,305) (106,679)
-excluding non-monetary contract liabilities)
+This analysis assumes that all other variables, in particular other exchange rates and interest rates, remain constant. The analysis is performed on the same basis for 2024.
 
-Balance sheet exposure 91,064 29,362 29,724 150,150
-
-Net exposure 91,064 29, 362 29,724 150,150
-
-Sensitivity analysis
-Group
-
-A 10% weakening of the following currencies against the pound sterling at 31 December would have
-increased/(decreased) the Group’s equity and profit or loss by the amounts shown below. This calculation assumes
-that the change occurred at the Balance Sheet date and had been applied to risk exposures existing at that date.
-
-This analysis assumes that all other variables, in particular other exchange rates and interest rates, remain constant.
-The analysis is performed on the same basis for 2024.
-
-Equity Profit or loss
-2025 2024 2025 2024
-£’000 £000 £000 £’000
-€ (1,244) (2,003) (1,244) (2,003)
-
-$ , (2,065) (2,033) (2,065) (2,033)
+| | Equity 2025 £'000 | Equity *2024 £'000* | Profit or loss 2025 £'000 | Profit or loss *2024 £'000* |
+|---|---|---|---|---|
+| € | (1,244) | *(2,003)* | (1,244) | *(2,003)* |
+| $ | (2,065) | *(2,033)* | (2,065) | *(2,033)* |
 
 61
 
@@ -4183,64 +3484,53 @@ Non-current 24,126
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+**Notes** *(continued)*
 
-21 Leases (continued)
-21 (a) Leases as a lessee (continued)
-Amounts recognised in profit or loss
+**21 Leases** *(continued)*
+
+**21 (a) Leases as a lessee** *(continued)*
+
+*Amounts recognised in profit or loss*
 
 The following amounts have been recognised in profit or loss for which the Group is a lessee:
 
-2025 2024
+| | 2025 £'000 | *2024 £'000* |
+|---|---|---|
+| Interest expense on lease liabilities | 1,372 | *1,128* |
+| Expenses relating to short-term leases | 14,251 | *13,912* |
+| Expenses relating to leases of low-value assets accounted, excluding short-term leases of low-value assets | 43 | *36* |
 
-£°000 £'000
+*Amounts recognised in statement of cash flows*
 
-Interest expense on lease liabilities 1,372 1,128
+| | 2025 £'000 | *2024 £'000* |
+|---|---|---|
+| Total cash outflow for leases | 2,789 | *3,219* |
 
-Expenses relating to short-term leases 14,251 13,912
+**21(b) Leases as a lessor**
 
-Expenses relating to leases of low-value assets accounted, excluding short-term leases 43 36
-of low-value assets
+The Group acts as a lessor in relation to components sold to customers. The agreements are classified as operating leases as there is no option for the assets to be purchased at the end of the term, ownership is not transferred by the end of the lease term.
 
-Amounts recognised in statement of cash flows
+*Operating leases*
 
-2025 2024
+During the year £12,511k (2024: £9,882k) was recognised as rental income by the Group, of which £nil (2024: £nil) relates to income relating to variable lease payments that do not depend on an index or rate.
 
-£'000 £'000
+The following table sets out a maturity analysis of lease payments to be received, showing the undiscounted lease payments to be received after the reporting date:
 
-Total cash outflow for leases 2,789 3,219
+| | 2025 £'000 | *2024 £'000* |
+|---|---|---|
+| Less than one year | 19,575 | *11,306* |
+| Between one and two years | 9,945 | *29,520* |
+| Between two and three years | - | - |
+| Between three and four years | - | - |
+| Between four and five years | - | - |
+| More than five years | - | - |
+| | 29,520 | *40,826* |
 
-21(b) Leases as a lessor
+**22 Commitments**
 
-The Group acts as a lessor in relation to components sold to customers. The agreements are classified as operating
-leases as there is no option for the assets to be purchased at the end of the term, ownership is not transferred by the
-end of the lease term.
+*Capital commitments*
 
-Operating leases
-
-During the year £12,511k (2024: £9,882k) was recognised as rental income by the Group, of which £nil (2024: £nif)
-relates to income relating to variable lease payments that do not depend on an index or rate.
-
-The following table sets out a maturity analysis of lease payments to be received, showing the undiscounted lease
-payments to be received after the reporting date:
-
-2025 2024
-
-£000 £°000
-
-Less than one year 19,575 11,306
-Between one and two years 9,945 29,520
-Between two and three years - . -
-Between three and four years - -
-Between four and five years - -
-More than five years - -
-‘29,520 40,826
-
-22 Commitments
-
-Capital commitments
-
-At the year ended 31 December 2025, the Group had capital commitments for £8,744k (2024: £6, 738k).
+At the year ended 31 December 2025, the Group had capital commitments for £8,744k (2024: £6,738k).
 
 At the year ended 31 December 2025, the Company had capital commitments for £2,725k (2024: £3,426k).
 
@@ -4250,130 +3540,44 @@ At the year ended 31 December 2025, the Company had capital commitments for £2,
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+**Notes** *(continued)*
 
-23 Related party transactions
+**23 Related party transactions**
 
 During the year the Group undertook the related party transactions as listed below:
 
-INEOS Automotive Limited
-
-INEOS Racing Limited
-
-INEOS Sailing Limited
-
-MB CV Brasil
-
-Mercedes-AMG GmbH
-
-Mercedes-Benz AG
-
-Mercedes-Benz AMG High Performance Powertrains Limited
-Mercedes-Benz Australia/Pacific Pty Limited
-Mercedes-Benz Canada Inc ;
-Mercedes-Benz Espana S.A
-
-Mercedes-Benz Financial Services UK Limited
-Mercedes-Benz France
-
-Mercedes-Benz Group AG
-
-Mercedes-Benz Heritage GmbH
-Mercedes-Benz Hungaria Kft
-
-Mercedes-Benz Insurance Services UK Limited
-Mercedes-Benz Italia SPA
-
-Mercedes-Benz Japan Co Ltd
-
-Mercedes-Benz Malaysia SND BHD
-Mercedes-Benz Mexico S. DER.L DE C.V
-Mercedes-Benz Motorsport Limited
-Mercedes-Benz Nederland BV
-
-Mercedes-Benz Osterreich GmbH
-Mercedes-Benz Research and Development India Pvt. Ltd.
-Mercedes-Benz Singapore Pte. Limited
-Mercedes-Benz UK Limited
-
-Mercedes-Benz USA LLC
-
-Motorsports Invest Limited -
-
-Next March GmbH
-
-Sales Purchases Sales
-2025 2025 2024
-£’000 £000 £’000
-
-- - 3
-
-21,052 - 53,171
-
-5,750 - :
-
-- 64 -
-
-1,214 4,210 1,068
-
-19 15,341 28
-
-9,403 3,550 12,164
-
-31 147 -
-
-16 37 13
-
-- 569 -
-
-8 5 6
-
-- 58 -
-
-2 34 -
-
-- 4 -
-
-- 1,253 -
-
-- 3
-
-- 27 -
-
-- 7 2
-
-1 - 1
-
-- - 191
-
-- 15 -
-
-- 28 -
-
-- 295 -
-
-- 15 -
-
-60 119 49
-
-- 330 -
-
-- - 347
-
-- 51 -
-
-37,558 26,159 67,046
-
-Purchases
-2024
-£’000
-
-2,693
-15,270
-5,167
-168
-
-42,293
+| | Sales 2025 £'000 | Purchases 2025 £'000 | *Sales 2024 £'000* | *Purchases 2024 £'000* |
+|---|---|---|---|---|
+| INEOS Automotive Limited | - | - | *3* | - |
+| INEOS Racing Limited | 21,052 | - | *53,171* | - |
+| INEOS Sailing Limited | 5,750 | - | - | - |
+| MB CV Brasil | - | 64 | - | - |
+| Mercedes-AMG GmbH | 1,214 | 4,210 | *1,068* | *2,693* |
+| Mercedes-Benz AG | 19 | 15,341 | *28* | *15,270* |
+| Mercedes-Benz AMG High Performance Powertrains Limited | 9,403 | 3,550 | *12,164* | *5,167* |
+| Mercedes-Benz Australia/Pacific Pty Limited | 31 | 147 | - | *168* |
+| Mercedes-Benz Canada Inc | 16 | 37 | *13* | - |
+| Mercedes-Benz Espana S.A | - | - | - | *1* |
+| Mercedes-Benz Financial Services UK Limited | - | 569 | - | *820* |
+| Mercedes-Benz France | 8 | 5 | *6* | - |
+| Mercedes-Benz Group AG | - | 58 | - | - |
+| Mercedes-Benz Heritage GmbH | 2 | 34 | - | *14* |
+| Mercedes-Benz Hungaria Kft | - | 4 | - | - |
+| Mercedes-Benz Insurance Services UK Limited | - | 1,253 | - | *1,330* |
+| Mercedes-Benz Italia SPA | 2 | - | *3* | - |
+| Mercedes-Benz Japan Co Ltd | - | 27 | - | *128* |
+| Mercedes-Benz Malaysia SND BHD | - | 7 | *2* | - |
+| Mercedes-Benz Mexico S. DE R.L DE C.V | 1 | - | *1* | - |
+| Mercedes-Benz Motorsport Limited | - | - | *191* | *16,213* |
+| Mercedes-Benz Nederland BV | - | 15 | - | - |
+| Mercedes-Benz Osterreich GmbH | - | 28 | - | *27* |
+| Mercedes-Benz Research and Development India Pvt. Ltd. | - | 295 | - | *186* |
+| Mercedes-Benz Singapore Pte. Limited | - | 15 | - | - |
+| Mercedes-Benz UK Limited | 60 | 119 | *49* | *43* |
+| Mercedes-Benz USA LLC | - | 330 | - | *173* |
+| Motorsports Invest Limited | - | - | *347* | - |
+| Next March GmbH | - | 51 | - | *60* |
+| | 37,558 | 26,159 | *67,046* | *42,293* |
 
 66
 
@@ -4560,74 +3764,40 @@ how revenue is recognised under the 5-step model compared to FRS 102. The impact
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+**Notes** *(continued)*
 
-26 Explanation of transition to UK-adopted IFRSs (continued)
+**26 Explanation of transition to UK-adopted IFRSs** *(continued)*
 
-Non-current assets
-PPE
-Intangible assets
-Heritage assets
-Trade and other
-receivables
-Contract assets
-
-Current assets
-Inventories .
-Race car development
-Contract assets
-Trade and other
-receivables :
-Cash and cash equivalents
-
-Total assets
-
-Current liabilities
-Trade creditors
-Accruals and deferred
-income
-Contract liabilities
-Provisions
-Right of use liabilities
-
-Net current assets
-
-Non-current liabilities
-Deferred tax liabilities
-Provisions
-Creditors
-Contract liabilities
-
-Net assets
-
-1 January 2024 31 December 2024
-UK-adopted UK-adopted
-FRS 102 Transition IFRSs FRS 102 Transition IFRSs
-£000 £'000 £'000 £000 £’000 £000
-108,473 6,096 114,569 114,372 6,029 120,401
-1,108 - 1,108 1,423 (22) 1,401
-6,542 - (363) 6,179 6,559 (363) 6,196
-- - - - 2,371 2,371
-- 4,316 4,316 - 2,597 2,597
-116,123 10,049 126,172 122,354 10,612 132,966
-4,909 50,829 55,738 4,922 52,952 57,874
-52,226 (52,226) - 54,344 (54,344) -
-- 26,051 26,051 - 48,356 48,356
-219,910 (21,336) 198,574 188,357 (40,918) 147,439
-23,719 - 23,719 52,613 - 52,613
-300,764 3,318 304,082 300,236 6,046 306,282
-416,887 13,367 430,254 422,590 16,658 439,248
-(59,622) (1,117) (60,739) (61,913) 3,030 (58,883)
-(163,563) 143,097 (20,466) (145,015) 125,969 (19,046)
-- (110,990) (110,990) - (108,148) (108,148)
-- (1,094) (1,094) - (339) (339)
-- (807) (807) - (842) (842)
-77,579 32,407 109,986 93,308 25,716 119,024
-(6,207) (8,502) (14,709) (6,175) (7,250) (13,425)
-(4,002) 4,094 (2,908) (2,997) 339 (2,658)
-- (3,669) (3,669) - (2,460) (2,460)
-- (4,973) (4,973) - (3,220) (3,220)
-183,493 26,406 209,899 206,490 23,737 230,227
+| | 1 January 2024 FRS 102 £'000 | 1 January 2024 Transition £'000 | 1 January 2024 UK-adopted IFRSs £'000 | 31 December 2024 FRS 102 £'000 | 31 December 2024 Transition £'000 | 31 December 2024 UK-adopted IFRSs £'000 |
+|---|---|---|---|---|---|---|
+| **Non-current assets** | | | | | | |
+| PPE | 108,473 | 6,096 | **114,569** | 114,372 | 6,029 | **120,401** |
+| Intangible assets | 1,108 | - | **1,108** | 1,423 | (22) | **1,401** |
+| Heritage assets | 6,542 | (363) | **6,179** | 6,559 | (363) | **6,196** |
+| Trade and other receivables | - | - | **-** | - | 2,371 | **2,371** |
+| Contract assets | - | 4,316 | **4,316** | - | 2,597 | **2,597** |
+| | 116,123 | 10,049 | **126,172** | 122,354 | 10,612 | **132,966** |
+| **Current assets** | | | | | | |
+| Inventories | 4,909 | 50,829 | **55,738** | 4,922 | 52,952 | **57,874** |
+| Race car development | 52,226 | (52,226) | **-** | 54,344 | (54,344) | **-** |
+| Contract assets | - | 26,051 | **26,051** | - | 48,356 | **48,356** |
+| Trade and other receivables | 219,910 | (21,336) | **198,574** | 188,357 | (40,918) | **147,439** |
+| Cash and cash equivalents | 23,719 | - | **23,719** | 52,613 | - | **52,613** |
+| | 300,764 | 3,318 | **304,082** | 300,236 | 6,046 | **306,282** |
+| **Total assets** | 416,887 | 13,367 | **430,254** | 422,590 | 16,658 | **439,248** |
+| **Current liabilities** | | | | | | |
+| Trade creditors | (59,622) | (1,117) | **(60,739)** | (61,913) | 3,030 | **(58,883)** |
+| Accruals and deferred income | (163,563) | 143,097 | **(20,466)** | (145,015) | 125,969 | **(19,046)** |
+| Contract liabilities | - | (110,990) | **(110,990)** | - | (108,148) | **(108,148)** |
+| Provisions | - | (1,094) | **(1,094)** | - | (339) | **(339)** |
+| Right of use liabilities | - | (807) | **(807)** | - | (842) | **(842)** |
+| **Net current assets** | 77,579 | 32,407 | **109,986** | 93,308 | 25,716 | **119,024** |
+| **Non-current liabilities** | | | | | | |
+| Deferred tax liabilities | (6,207) | (8,502) | **(14,709)** | (6,175) | (7,250) | **(13,425)** |
+| Provisions | (4,002) | 1,094 | **(2,908)** | (2,997) | 339 | **(2,658)** |
+| Creditors | - | (3,669) | **(3,669)** | - | (2,460) | **(2,460)** |
+| Contract liabilities | - | (4,973) | **(4,973)** | - | (3,220) | **(3,220)** |
+| **Net assets** | **183,493** | **26,406** | **209,899** | **206,490** | **23,737** | **230,227** |
 
 69
 
@@ -4635,77 +3805,34 @@ FRS 102 Transition IFRSs FRS 102 Transition IFRSs
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-26
+**Notes** *(continued)*
 
-1 January 2024
+**26 Explanation of transition to UK-adopted IFRSs** *(continued)*
 
-Equity attributable to equity holders of the parent
+| | 1 January 2024 FRS 102 £'000 | 1 January 2024 Transition £'000 | 1 January 2024 UK-adopted IFRSs £'000 | 31 December 2024 FRS 102 £'000 | 31 December 2024 Transition £'000 | 31 December 2024 UK-adopted IFRSs £'000 |
+|---|---|---|---|---|---|---|
+| **Equity attributable to equity holders of the parent** | | | | | | |
+| Share capital | 70,000 | - | **70,000** | 70,012 | - | **70,012** |
+| Share premium | 44 | - | **44** | 2,415 | - | **2,415** |
+| Revaluation reserve | 80 | 877 | **957** | 80 | 1,674 | **1,754** |
+| Other reserves | - | - | **-** | 270 | - | **270** |
+| Retained earnings | 113,369 | 25,529 | **138,898** | 133,713 | 22,063 | **155,776** |
+| **Total equity** | **183,493** | **26,406** | **209,899** | **206,490** | **23,737** | **230,227** |
 
-Share capital
+**Reconciliation of profit for 2024**
 
-Share premium
-Revaluation reserve
-Other reserves
-Retained earnings
-
-Total equity
-
-Reconciliation of profit for 2024
-
-Revenue
-Cost of sales
-
-Gross profit
-Administrative expenses
-
-Finance income
-Finance expenses
-
-Profit before tax
-Tax on profit
-
-Profit for the financial year
-
-Explanation of transition to UK-adopted IFRSs (continued)
-
-31 December 2024
-
-UK-adopted UK-adopted
-FRS 102 Transition IFRSs FRS 102 = Transition IFRSs
-£000 £000 £°000 £7000 £7000 £000
-70,000 - 70,000 70,012 - 70,012
-44 - 44 2,415 - 2,415
-80 877 957 80 1,674 1,754
-- - “ 270 - 270
-113,369 25,529 138,898 133,713 22,063 155,776
-183,493 26,406 209,899 206,490 23,737 230,227
-
-UK-adopted
-
-FRS 102 Transition IFRSs
-
-£7000 £°000 £’000
-
-636,025 (3,908) 632,117
-
-(448,793) (580) (449,373)
-
-187,232 (4,488) 182,744
-
-(26,592) - (26,592)
-
-160,640 (4,488) 156,152
-
-2,406 - 2,406
-
-- (187) (187)
-
-163,046 (4,675) 158,371
-
-(42,702) 1,230 (41,472)
-
-120,344 (3,445) 116,899
+| | FRS 102 £'000 | Transition £'000 | UK-adopted IFRSs £'000 |
+|---|---|---|---|
+| Revenue | 636,025 | (3,908) | 632,117 |
+| Cost of sales | (448,793) | (580) | (449,373) |
+| Gross profit | 187,232 | (4,488) | 182,744 |
+| Administrative expenses | (26,592) | - | (26,592) |
+| | 160,640 | (4,488) | 156,152 |
+| Finance income | 2,406 | - | 2,406 |
+| Finance expenses | - | (187) | (187) |
+| Profit before tax | 163,046 | (4,675) | 158,371 |
+| Tax on profit | (42,702) | 1,230 | (41,472) |
+| **Profit for the financial year** | 120,344 | (3,445) | 116,899 |
 
 70
 
@@ -4713,57 +3840,42 @@ FRS 102 Transition IFRSs
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
+**Notes** *(continued)*
 
-27 Remuneration of Directors
-2025 2024
-£7000 £000
-Directors’ remuneration ; 9,528 4,462
+**27 Remuneration of Directors**
 
-The value of the Group’s contribution paid to a defined benefit contribution scheme in respect of the highest paid
-Director amounted to £1k (2024: £1k).
+| | 2025 £'000 | *2024 £'000* |
+|---|---|---|
+| Directors' remuneration | 9,528 | *4,462* |
 
-The remaining Board members are employed and remunerated by other shareholding entities. The Group considers
-that there is no practicable method to accurately allocate a portion of the emoluments the Directors receive from their
-respective entities to the qualifying services that they provide to the Group and the Group is also of the opinion any
-allocation would be immaterial. Therefore, the above disclosures exclude any allocation of remuneration to the Group
-in respect of these Directors.
+The value of the Group's contribution paid to a defined benefit contribution scheme in respect of the highest paid Director amounted to £1k (2024: £1k).
 
-28 Dividends
+The remaining Board members are employed and remunerated by other shareholding entities. The Group considers that there is no practicable method to accurately allocate a portion of the emoluments the Directors receive from their respective entities to the qualifying services that they provide to the Group and the Group is also of the opinion any allocation would be immaterial. Therefore, the above disclosures exclude any allocation of remuneration to the Group in respect of these Directors.
+
+**28 Dividends**
 
 The following dividends were paid during the period in respect of previous periods:
 
-2025 2024
+| | 2025 £'000 | *2024 £'000* |
+|---|---|---|
+| £3.57 (2024: £2.86) per qualifying ordinary share | 125,000 | *100,000* |
+| | 125,000 | *100,000* |
 
-£’000 £000
+**29 Explanation of transition to FRS 101 from FRS 102**
 
-£3.57 (2024: £2.86) per qualifying ordinary share 125,000 100,000
-125,000 100,000
-
-29 Explanation of transition to FRS 101 from FRS 102
 As stated in note 1.2, these are the Company's first financial statements prepared in accordance with FRS 101.
 
-In preparing its FRS101 Balance Sheet, the Company has adjusted amounts reported previously in financial statements
-prepared in accordance with its old basis of accounting (FRS 102). An explanation of how the transition from FRS 102
-to FRS 101 has affected the Company’s financial position is set out in the following table.
+In preparing its FRS101 Balance Sheet, the Company has adjusted amounts reported previously in financial statements prepared in accordance with its old basis of accounting (FRS 102). An explanation of how the transition from FRS 102 to FRS 101 has affected the Company's financial position is set out in the following table.
 
-Explanation of transitional adjustments
+**Explanation of transitional adjustments**
 
-On transition to FRS 101, the Company applied IFRS 16 lease accounting principles. As a result, lease arrangements
-previously accounted for as operating leases under FRS 102 are now recognised on the Balance Sheet in Property,
-Plant and Equipment and within Creditors.
+On transition to FRS 101, the Company applied IFRS 16 lease accounting principles. As a result, lease arrangements previously accounted for as operating leases under FRS 102 are now recognised on the Balance Sheet in Property, Plant and Equipment and within Creditors.
 
-For these teases, the Company has recognised a lease liability representing the present value of future lease payments.
-The lease liability is subsequently measures using the effective interest method, with finance costs recognised in profit
-or loss.
+For these leases, the Company has recognised a lease liability representing the present value of future lease payments. The lease liability is subsequently measures using the effective interest method, with finance costs recognised in profit or loss.
 
-A further impact of the transition to FRS 101 is the reclassification of balances previously recognised as deferred and
-accrued income to contract liabilities and contract assets respectively. Similarly, race car development has been
-reclassified and under FRS 101 is recognised as inventory. This has led to presentational changes in the Balance
-Sheet and statement of cashflows. Additionally, balances have been split between current and non-current.
+A further impact of the transition to FRS 101 is the reclassification of balances previously recognised as deferred and accrued income to contract liabilities and contract assets respectively. Similarly, race car development has been reclassified and under FRS 101 is recognised as inventory. This has led to presentational changes in the Balance Sheet and statement of cashflows. Additionally, balances have been split between current and non-current.
 
-On transition to FRS 101, the Company also applied IFRS 15 revenue recognition principles, this led to adjustments in
-how revenue is recognised under the 5-step model compared to FRS 102. The impact was a reduction to 2024 revenue.
+On transition to FRS 101, the Company also applied IFRS 15 revenue recognition principles, this led to adjustments in how revenue is recognised under the 5-step model compared to FRS 102. The impact was a reduction to 2024 revenue.
 
 Under FRS 102, the Company was not required to, and did not, prepare a cash flow statement.
 
@@ -4773,97 +3885,41 @@ Under FRS 102, the Company was not required to, and did not, prepare a cash flow
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued)
-Explanation of transition to FRS 101 from FRS 102 (continued)
+**Notes** *(continued)*
 
-29
+**29 Explanation of transition to FRS 101 from FRS 102** *(continued)*
 
-Non-current assets
-
-PPE
-
-Intangible assets
-Heritage assets
-Investments
-Trade and other
-receivables
-Contract asset
-
-Current assets
-
-Inventories
-
-Race car development
-Contract assets
-
-Trade and other
-receivables
-
-Cash and cash equivalents
-
-Total assets
-
-Current liabilities
-
-Trade creditors
-Contract liabilities
-Accruals and deferred
-income
-
-Provisions
-
-Right of use liabilities
-
-Net current assets
-
-Non-current liabilities
-
-Deferred tax liabilities
-Provisions
-
-Creditors
-
-Contract liabilities
-
-Net assets
-
-1 January 2024
-
-31 December 2024
-
-FRS 102 Transition FRS 101 FRS 102 = Transition FRS 101
-£000 £000 £’000 £’000 £°000 £°000
-68,501 31,513 100,014 72,572 28,603 101,175
-1,108 - 1,108 1,401 - 1,401
-6,542 (363) 6,179 6,559 (363) 6,196
-17,400 - 17,400 19,800 (22) 19,778
-
-- 17,827 17,827 - 22,976 22,976
-
-- 4,316 4,316 - 2,597 2,597
-93,551 §3,293 146,844 400,332 53,791 154,123
-4,909 50,829 55,738 4,922 52,952 57,874
-52,226 (52,226) - 54,344 (54,344) -
-
-- 26,065 26,065 - 48,356 48,356
-242,476 (43,452) 199,024 212,840 (65,725) 147,115
-22,789 - 22,789 51,838 - 51,838
-322,400 (18,784) 303,616 323,944 (18,761) 305,183
-415,951 34,509 450,460 424,276 35,030 459,306
-(59,300) (1,118) (60,418) (61,229) - (61,229)
-- (110,990) (110,990) - (108,148) (108,148)
-(163,298) | 146,168 (17,130) (145,805) 128,473 (17,332)
-- (1,094) (1,094) - (339) (339)
-
-- (3,998) (3,998) - (3,174) (3,174)
-
-99,802 10,184 109,986 116,910 (1,949) 114,961
-(6,207) (8,502) (14,709) (6,146) (7,380) (13,526)
-(4,002) 1,094 (2,908) (2,997) 339 (2,658)
-- (25,566) (25,566) - (20,072) (20,072)
-
-- (4,973) (4,973) - (3,220) (3,220)
-183,144 25,530 208,674 208,099 21,509 229,608
+| | 1 January 2024 FRS 102 £'000 | 1 January 2024 Transition £'000 | 1 January 2024 FRS 101 £'000 | 31 December 2024 FRS 102 £'000 | 31 December 2024 Transition £'000 | 31 December 2024 FRS 101 £'000 |
+|---|---|---|---|---|---|---|
+| **Non-current assets** | | | | | | |
+| PPE | 68,501 | 31,513 | **100,014** | 72,572 | 28,603 | **101,175** |
+| Intangible assets | 1,108 | - | **1,108** | 1,401 | - | **1,401** |
+| Heritage assets | 6,542 | (363) | **6,179** | 6,559 | (363) | **6,196** |
+| Investments | 17,400 | - | **17,400** | 19,800 | (22) | **19,778** |
+| Trade and other receivables | - | 17,827 | **17,827** | - | 22,976 | **22,976** |
+| Contract asset | - | 4,316 | **4,316** | - | 2,597 | **2,597** |
+| | 93,551 | 53,293 | **146,844** | 100,332 | 53,791 | **154,123** |
+| **Current assets** | | | | | | |
+| Inventories | 4,909 | 50,829 | **55,738** | 4,922 | 52,952 | **57,874** |
+| Race car development | 52,226 | (52,226) | **-** | 54,344 | (54,344) | **-** |
+| Contract assets | - | 26,065 | **26,065** | - | 48,356 | **48,356** |
+| Trade and other receivables | 242,476 | (43,452) | **199,024** | 212,840 | (65,725) | **147,115** |
+| Cash and cash equivalents | 22,789 | - | **22,789** | 51,838 | - | **51,838** |
+| | 322,400 | (18,784) | **303,616** | 323,944 | (18,761) | **305,183** |
+| **Total assets** | 415,951 | 34,509 | **450,460** | 424,276 | 35,030 | **459,306** |
+| **Current liabilities** | | | | | | |
+| Trade creditors | (59,300) | (1,118) | **(60,418)** | (61,229) | - | **(61,229)** |
+| Contract liabilities | - | (110,990) | **(110,990)** | - | (108,148) | **(108,148)** |
+| Accruals and deferred income | (163,298) | 146,168 | **(17,130)** | (145,805) | 128,473 | **(17,332)** |
+| Provisions | - | (1,094) | **(1,094)** | - | (339) | **(339)** |
+| Right of use liabilities | - | (3,998) | **(3,998)** | - | (3,174) | **(3,174)** |
+| **Net current assets** | 99,802 | 10,184 | **109,986** | 116,910 | (1,949) | **114,961** |
+| **Non-current liabilities** | | | | | | |
+| Deferred tax liabilities | (6,207) | (8,502) | **(14,709)** | (6,146) | (7,380) | **(13,526)** |
+| Provisions | (4,002) | 1,094 | **(2,908)** | (2,997) | 339 | **(2,658)** |
+| Creditors | - | (25,566) | **(25,566)** | - | (20,072) | **(20,072)** |
+| Contract liabilities | - | (4,973) | **(4,973)** | - | (3,220) | **(3,220)** |
+| **Net assets** | **183,144** | **25,530** | **208,674** | **208,099** | **21,509** | **229,608** |
 
 72
 
@@ -4871,23 +3927,23 @@ FRS 102 Transition FRS 101 FRS 102 = Transition FRS 101
 
 MERCEDES-BENZ GRAND PRIX LIMITED
 
-Notes (continued) |
+**Notes** *(continued)*
 
-29 Explanation of transition to FRS 101 from FRS 102 (continued)
-1 January 2024 31 December 2024
-FRS 102 Transition FRS 101 FRS 102 ‘Transition FRS 101
-£°000 £000 £000 £000 £°000 £’000
+**29 Explanation of transition to FRS 101 from FRS 102** *(continued)*
 
-Equity attributable to equity holders of the parent
+| | 1 January 2024 FRS 102 £'000 | 1 January 2024 Transition £'000 | 1 January 2024 FRS 101 £'000 | 31 December 2024 FRS 102 £'000 | 31 December 2024 Transition £'000 | 31 December 2024 FRS 101 £'000 |
+|---|---|---|---|---|---|---|
+| **Equity attributable to equity holders of the parent** | | | | | | |
+| Share capital | 70,000 | - | **70,000** | 70,012 | - | **70,012** |
+| Share premium | 44 | - | **44** | 2,415 | - | **2,415** |
+| Revaluation reserve | 80 | - | **80** | 80 | - | **80** |
+| Other reserves | - | - | **-** | 270 | - | **270** |
+| Retained earnings | 113,020 | 25,530 | **138,550** | 135,322 | 21,509 | **156,831** |
+| **Total equity** | **183,144** | **25,530** | **208,674** | **208,099** | **21,509** | **229,608** |
 
-Share capital 70,000 - 70,000 70,012 - 70,042
-Share premium » 44 - 44 2,415 - 2,415
-Revaluation reserve 80 - 80 80 - 80
-Other reserves - - - 270 - 270
-Retained earnings . 113,020 25,530 138,550 135,322 21,509 156,831
-Total equity 183,144 25,530 208,674 208,099 21,509 229,608
-30 Ultimate controlling party
+**30 Ultimate controlling party**
 
 The Directors do not consider there to be one ultimate controlling party.
 
 73
+

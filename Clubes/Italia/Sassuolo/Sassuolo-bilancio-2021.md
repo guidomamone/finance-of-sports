@@ -213,32 +213,32 @@ Al fine di consentire un’analisi della dinamica aziendale ed in particolare de
 
 --- pág. 7 ---
 
-|  - crediti verso Mapei S.p.A. | 4.747 | 2.368 | 2.379  |
-| --- | --- | --- | --- |
-|  - liquidità differite | 132.254 | 118.332 | 13.922  |
-|  Attività fisse | 84.596 | 122.603 | (38.007)  |
-|  - immobilizzazioni immateriali | 71.848 | 109.393 | (37.545)  |
-|  - immobilizzazioni materiali | 12.650 | 13.114 | (464)  |
-|  - immobilizzazioni finanziarie | 98 | 96 | 2  |
-|  Capitale investito | 222.278 | 243.823 | (21.545)  |
-|  PASSIVO |  |  |   |
-|  - debiti a breve | 106.010 | 86.682 | 19.328  |
-|  - debiti verso Mapei S.p.A. per gestione accentrata tesoreria | 46.424 | 40.056 | 6.368  |
-|  - debiti a medio lungo | 57.364 | 90.755 | (33.391)  |
-|  - mezzi propri | 12.480 | 26.330 | (13.850)  |
-|  Fonti del capitale investito | 222.278 | 243.823 | (21.545)  |
+| STATO PATRIMONIALE (segue) | 31/12/2021 | 31/12/2020 | Variazioni |
+|---|---|---|---|
+| - crediti verso *Mapei S.p.A.* | 4.747 | 2.368 | 2.379 |
+| - liquidità differite | 132.254 | 118.332 | 13.922 |
+| **Attività fisse** | **84.596** | **122.603** | **(38.007)** |
+| - immobilizzazioni immateriali | 71.848 | 109.393 | (37.545) |
+| - immobilizzazioni materiali | 12.650 | 13.114 | (464) |
+| - immobilizzazioni finanziarie | 98 | 96 | 2 |
+| **Capitale investito** | **222.278** | **243.823** | **(21.545)** |
+| ***PASSIVO*** | | | |
+| - debiti a breve | 106.010 | 86.682 | 19.328 |
+| - debiti verso *Mapei S.p.A.* per gestione accentrata tesoreria | 46.424 | 40.056 | 6.368 |
+| - debiti a medio lungo | 57.364 | 90.755 | (33.391) |
+| - mezzi propri | 12.480 | 26.330 | (13.850) |
+| **Fonti del capitale investito** | **222.278** | **243.823** | **(21.545)** |
 
-# Evoluzione prevedibile della gestione
+***Evoluzione prevedibile della gestione***
 
-Non vi sono da segnalare fatti e /o eventi di particolare rilievo avvenuti dopo la chiusura dell'esercizio. L'andamento della gestione è esposto ai rischi propri delle competizioni sportive in termini di risultati sportivi, dei livelli di incassi da competizioni e dai diritti audiovisivi ed a proventi promo-pubblicitari. In particolare, l'andamento economico dell'esercizio 2022 sarà influenzato dal piazzamento finale nel campionato di Serie A.
-
+Non vi sono da segnalare fatti e /o eventi di particolare rilievo avvenuti dopo la chiusura dell'esercizio.
+L'andamento della gestione è esposto ai rischi propri delle competizioni sportive in termini di risultati sportivi, dei livelli di incassi da competizioni e dai diritti audiovisivi ed a proventi promo-pubblicitari.
+In particolare, l'andamento economico dell'esercizio 2022 sarà influenzato dal piazzamento finale nel campionato di Serie A.
 Stante il perdurare della pandemia da Covid-19, nonostante la fine dello Stato di Emergenza e la progressiva riapertura degli stadi al pubblico, il contesto economico, finanziario e sportivo di riferimento è ancora caratterizzato da un'elevata incertezza, che rende difficile formulare previsioni attendibili di breve-medio periodo.
-
 L'andamento economico e finanziario sarà inoltre condizionato dall'esito della prossima campagna trasferimenti estiva, il cui obiettivo, tenuto conto della necessità di mantenere la competitività della squadra, sarà quello di realizzare significative plusvalenze (già realizzate peraltro nella campagna trasferimenti di gennaio, per oltre 16 milioni di euro, a seguito della cessione del calciatore Boga all'Atalanta).
+Si segnala come la controllante *Mapei S.p.A.*, tenendo anche conto di tale contesto, ha confermato che porrà a disposizione della Società le risorse adeguate alla copertura finanziaria del fabbisogno corrente tali da garantire il presupposto della continuità aziendale per i dodici mesi successivi alla data di approvazione del presente bilancio.
 
-Si segnala come la controllante Mapei S.p.A., tenendo anche conto di tale contesto, ha confermato che porrà a disposizione della Società le risorse adeguate alla copertura finanziaria del fabbisogno corrente tali da garantire il presupposto della continuità aziendale per i dodici mesi successivi alla data di approvazione del presente bilancio.
-
-Informazioni sui principali rischi ed incertezze – Commento ai sensi art. 2428 C.C.
+***Informazioni sui principali rischi ed incertezze – Commento ai sensi art. 2428 C.C.***
 
 - 6 -
 
@@ -1941,85 +1941,86 @@ Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/202
 
 U.S. Sassuolo Calcio S.r.l.
 
-|  calciatore | data nascita | contratto |   | prevenienza |   | destinazione |   | valori inizio periodo 01/01/2021 |   |   | versazione valori di periodo |   | effetti economici di periodo |   |   |   | valori di fine periodo 31/12/2021 |   |   | Varie  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  data inizio primo contratto | data scadenza ultimo contratto | data | società | data | società | herba | Edu annunzi | netto | acquisti | annunzi | annunzi.it | avvalutazioni | minorvalenze | pinavalenze | herba | Edu annunzi | netto | Companie Agenti (Contr.) | Sidi un fine  |
-|   |  |  |  |  |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 (1+4) | 11 (2+6) | 12 (10+11+7) |  |   |
-|  CONSIOLI | 27.01.87 | 01.09.2014 | 30.06.2024 | 01.09.14 | ATALANTA |  |  | 4.500.000 | 3.975.295 | 524.705 |  |  | 131.175 |  |  |  | 4.500.000 | 4.106.470 | 393.530 | 400.000 |   |
-|  PELUSO | 20.01.84 | 02.07.2014 | 30.06.2022 | 02.07.14 | JUVENTUS |  |  | 4.500.000 | 4.355.528 | 144.472 |  |  | 96.315 |  |  |  | 4.500.000 | 4.451.843 | 48.157 | 310.000 |   |
-|  BERARDI | 01.08.94 | 01.07.2015 | 30.06.2024 | 25.06.15 | JUVENTUS |  |  | 20.000.000 | 14.201.727 | 5.798.273 |  |  | 1.656.649 |  |  |  | 20.000.000 | 15.858.376 | 4.141.624 |  |   |
-|  ARTIGLI | 12.06.01 | GIOVANE DI SERIE |   | 25.08.15 | SPAL |  |  | 35.000 | 27.500 | 7.500 |  |  | 7.500 |  |  |  | 35.000 | 35.000 | 0 |  |   |
-|  CELIA | 04.03.99 | 23.12.2015 | 30.06.2023 | 23.07.15 | CATANZARO | 27.08.21 | SPAL | 150.000 | 140.080 | 9.920 |  | 0 | 2.645 |  | 7.275 |  | 0 | 0 | 0 | 15.000 |   |
-|  MAZZITELLI | 15.11.95 | 01.02.2016 | 30.06.2022 | 01.02.16 | ROMA | 09.07.21 | MONZA | 3.574.086 | 2.801.643 | 772.443 |  | 300.000 | 257.481 |  | 214.962 |  | 0 | 0 | 0 | 300.000 |   |
-|  PONTANESE | 20.02.96 | 26.06.2016 | 30.06.2021 | 26.06.16 | CESENA |  |  | 10.000 | 10.000 | 0 |  |  | 0 |  |  |  | 10.000 | 10.000 | 0 |  |   |
-|  PERRARI | 15.05.92 | 31.08.2016 | 30.06.2024 | 31.08.16 | CROTOINE |  |  | 3.974.690 | 2.666.406 | 1.308.284 |  |  | 373.795 |  |  |  | 3.974.690 | 3.040.201 | 934.489 | 148.000 | 20%  |
-|  PILATI | 26.05.00 | 18.07.2019 | 30.06.2023 | 05.08.16 | MANTIOVA |  |  | 25.000 | 25.000 | 0 |  |  | 0 |  |  |  | 25.000 | 25.000 | 0 |  |   |
-|  SCAMACCA | 01.01.99 | 31.01.2017 | 30.06.2025 | 31.01.17 | PEV EINDIKUVEN |  |  | 500.000 | 297.520 | 202.480 |  |  | 44.995 |  |  |  | 500.000 | 342.515 | 157.485 | 148.600 | 10%  |
-|  RICCI | 27.05.94 | 28.06.2017 | 30.06.2022 | 28.06.17 | ROMA | 13.07.21 | REGGINA | 2.965.149 | 2.075.605 | 880.544 |  | 0 | 246.519 |  | 593.029 |  | 0 | 0 | 0 |  |   |
-|  GRUMO | 08.02.02 | GIOVANE DI SERIE |   | 30.06.17 | CESENA |  |  | 500.000 | 437.500 | 62.500 |  |  | 62.500 |  |  |  | 500.000 | 500.000 | 0 |  |   |
-|  MARCHIZZA | 26.03.98 | 13.07.2017 | 30.06.2025 | 13.07.17 | ROMA |  |  | 1.500.000 | 886.364 | 613.636 |  |  | 136.364 |  |  |  | 1.500.000 | 1.022.728 | 477.272 | 100.000 | 50%  |
-|  FRATESE | 22.09.99 | 13.07.2017 | 30.06.2026 | 13.07.17 | ROMA |  |  | 5.000.000 | 2.954.545 | 2.045.455 |  |  | 371.901 |  |  |  | 5.000.000 | 3.324.446 | 1.673.554 | 120.000 | 30%  |
-|  GOLDANIGA | 02.11.93 | 31.07.2017 | 30.06.2022 | 31.07.17 | FALERMO |  |  | 4.000.000 | 2.800.000 | 1.200.000 |  |  | 800.000 |  |  |  | 4.000.000 | 3.600.000 | 400.000 | 140.000 |   |
-|  MARTINI | 19.05.01 | GIOVANE DI SERIE |   | 20.08.17 | PORZENONE |  |  | 10.000 | 8.750 | 1.250 |  |  | 1.250 |  |  |  | 10.000 | 10.000 | 0 |  |   |
-|  CISCO | 08.10.98 | 31.01.2018 | 30.06.2022 | 31.01.18 | PADOVA | 22.06.21 | NOVARA | 500.000 | 333.333 | 166.667 |  | 100 | 55.556 |  | 111.011 |  | 0 | 0 | 0 |  |   |
-|  BARACAR | 17.03.93 | 04.04.2018 | 30.06.2023 | 31.01.18 | PEORENTINA |  |  | 10.000.000 | 6.603.774 | 3.396.226 |  |  | 1.358.490 |  |  |  | 10.000.000 | 7.962.264 | 2.037.736 | 1.700.000 | 10%  |
-|  TURATI | 05.09.01 | 01.06.2019 | 30.06.2025 | 31.01.18 | RENATE |  |  | 45.000 | 21.136 | 23.864 |  |  | 5.303 |  |  |  | 45.000 | 26.439 | 18.561 |  |   |
-|  MARGINIANI | 03.07.01 | 31.01.2018 | 30.06.2024 | 31.01.18 | SPORTIV ZLATNA |  |  | 25.000 | 15.454 | 9.546 |  |  | 2.727 |  |  |  | 25.000 | 18.181 | 6.819 |  |   |
-|  SERNICOLA | 30.07.97 | 01.07.2018 | 30.06.2023 | 27.06.18 | TERRANA |  |  | 200.000 | 100.000 | 100.000 |  |  | 40.000 |  |  |  | 200.000 | 140.000 | 60.000 |  |   |
-|  GOGAARD | 31.03.99 | 01.07.2018 | 30.06.2023 | 29.06.18 | INTER |  |  | 5.050.000 | 2.776.190 | 2.273.810 | 48.960 |  | 929.198 |  |  |  | 5.098.960 | 3.705.298 | 1.393.662 |  | 20%  |
-|  BRIGNOLA | 08.07.99 | 01.08.2018 | 30.06.2023 | 01.08.18 | RENEVENTO |  |  | 3.000.000 | 1.474.575 | 1.525.425 |  |  | 610.169 |  |  |  | 3.000.000 | 2.084.744 | 915.256 | 80.000 | 50%  |
-|  LOCATELLI | 08.01.98 | 13.08.2018 | 30.06.2024 | 13.08.18 | MILAN | 18.08.21 | JUVENTUS | 13.500.000 | 6.252.472 | 7.247.528 |  | 30.000.000 | 1.932.676 |  |  | 24.685.146 | 0 | 0 | 0 | 600.000 |   |
-|  PINATO | 09.01.95 | 16.08.2018 | 30.06.2023 | 16.08.18 | VENEZIA |  |  | 550.000 | 270.338 | 279.662 |  |  | 111.864 |  |  |  | 550.000 | 382.202 | 167.798 | 200.000 |   |
-|  MEHMETAJ | 27.03.01 | GIOVANE DI SERIE |   | 17.08.18 | PRO FACENZA |  |  | 45.000 | 28.125 | 16.875 |  |  | 11.256 |  |  |  | 45.000 | 30.375 | 5.625 |  |   |
-|  CAMPANI | 19.08.00 | 17.08.2018 | 30.06.2023 | 17.08.18 | PISA |  |  | 900.000 | 442.373 | 457.627 |  |  | 183.051 |  |  |  | 900.000 | 625.424 | 274.576 |  | 10%  |
-|  BOGA | 03.01.97 | 20.07.2018 | 30.06.2023 | 20.07.18 | CHILSEA |  |  | 13.000.000 | 3.541.667 | 9.458.333 | 500.000 |  | 4.083.333 |  |  |  | 13.500.000 | 7.625.000 | 5.875.000 | 110.000 | 50%  |
-|  BOURARIA | 07.08.91 | 16.07.2018 | 30.06.2023 | 16.07.18 | LOWYADIOR | 30.08.21 | SPEZIA | 2.200.000 | 1.540.000 | 660.000 |  | 1.500.000 | 203.333 |  |  | 1.133.333 | 0 | 0 | 0 | 200.000 |   |
-|  MARLON | 07.09.95 | 16.08.2018 | 30.06.2023 | 16.08.18 | BARCELONA | 20.06.21 | SHAKTAR D | 12.000.000 | 3.199.153 | 6.800.847 |  | 12.000.000 | 1.360.169 |  |  | 6.559.322 | 0 | 0 | 0 | 1.000.000 | 50%  |
-|  STEAU | 22.04.01 | 23.01.19 | 30.06.2022 | 23.01.19 | VITORUL |  |  | 40.000 | 31.724 | 8.276 |  |  | 5.517 |  |  |  | 40.000 | 37.241 | 2.759 |  |   |
-|  PIERAGNOLO | 03.01.03 | GIOVANE DI SERIE |   | 18.06.19 | PADOVA |  |  | 80.000 | 30.000 | 50.000 |  |  | 20.000 |  |  |  | 80.000 | 50.000 | 30.000 |  |   |
-|  ROGERIO | 13.01.98 | 29.06.2019 | 30.06.2024 | 29.06.19 | JUVENTUS |  |  | 6.950.000 | 2.085.000 | 4.865.000 |  |  | 1.390.000 |  |  |  | 6.950.000 | 3.475.000 | 3.475.000 |  |   |
-|  PINELLI | 03.01.01 | 29.06.2019 | 30.06.2023 | 29.06.19 | JUVENTUS |  |  | 1.875.000 | 703.125 | 1.171.875 |  |  | 468.750 |  |  |  | 1.875.000 | 1.171.875 | 703.125 |  |   |
-|  SALA | 04.06.99 | 28.06.2019 | 30.06.2024 | 28.06.19 | INTER |  |  | 3.000.000 | 1.125.000 | 1.875.000 |  |  | 535.714 |  |  |  | 3.000.000 | 1.660.714 | 1.339.286 |  |   |
-|  MULDUR | 03.04.99 | 21.08.2019 | 30.06.2024 | 21.08.19 | RAPID VIENNA |  |  | 4.700.000 | 1.160.601 | 3.539.399 | 300.000 |  | 1.063.489 |  |  |  | 5.000.000 | 2.224.090 | 2.775.910 | 450.000 | 10%  |
-|  OBIANO | 27.03.92 | 25.07.2019 | 30.06.2023 | 25.07.19 | WEST HAM |  |  | 7.250.000 | 2.575.582 | 4.676.418 | 250.000 |  | 1.970.567 |  |  |  | 7.500.000 | 4.544.149 | 2.955.851 | 525.000 |   |
-|  RUSSO | 31.03.01 | 25.07.2019 | 30.06.2024 | 25.07.19 | GENOA |  |  | 7.000.000 | 2.016.949 | 4.983.051 |  |  | 1.423.729 |  |  |  | 7.000.000 | 3.440.678 | 3.550.322 | 140.000 | 50% plus  |
-|  CAPUTO | 06.08.87 | 13.07.2019 | 30.06.2023 | 13.07.19 | SMPOLI | 31.08.21 | SAMPDORIA | 7.750.000 | 3.687.500 | 4.062.500 |  | 4.000.000 | 1.083.333 |  |  | 1.020.833 | 0 | 0 | 0 | 830.000 |   |
-|  TRAGRE' | 16.02.00 | 13.07.2019 | 30.06.2024 | 13.07.19 | SMPOLI |  |  | 16.000.000 | 4.800.000 | 11.200.000 |  |  | 3.200.000 |  |  |  | 16.000.000 | 8.000.000 | 8.000.000 | 1.500.000 |   |
-|  MERONI | 09.01.97 | 31.07.2019 | 30.06.2023 | 31.07.19 | PISA |  |  | 700.000 | 253.191 | 446.809 |  |  | 178.723 |  |  |  | 700.000 | 431.914 | 268.086 |  | 50%  |
-|  MIDOLO | 09.04.01 | GIOVANE DI SERIE |   | 02.09.19 | ASCOLI |  |  | 175.000 | 65.625 | 109.375 |  |  | 43.750 |  |  |  | 175.000 | 109.375 | 65.625 |  |   |
-|  CHIRICHES | 14.11.89 | 30.08.2019 | 30.06.2023 | 30.08.19 | NAPOLI |  |  | 9.500.000 | 3.213.768 | 6.286.232 | 1.000.000 |  | 2.764.493 |  |  |  | 10.500.000 | 5.978.261 | 4.521.739 | 200.000 |   |
-|  KYRIAKOPOULOS | 05.02.96 | 03.09.2019 | 30.06.2025 | 03.09.19 | ASTERAS TRIP. |  |  | 500.000 | 62.500 | 437.500 |  |  | 97.222 |  |  |  | 500.000 | 159.722 | 340.278 | 49.000 | 10% plus  |
-|  MITROV | 29.01.02 | 01.02.2020 | 30.06.2023 | 01.02.20 | UTA ARAD | 20.07.21 | RIPENSIA T. | 15.000 | 4.286 | 10.714 |  | 0 | 2.143 |  | 8.571 |  | 0 | 0 | 0 |  |   |
-|  AYSIAN | 10.11.94 | 10.08.2020 | 30.06.2024 | 10.08.20 | PORTUNA D. |  |  | 2.473.684 | 263.158 | 2.210.526 | 315.700 |  | 676.692 |  |  |  | 2.789.476 | 959.850 | 1.849.624 | 1.444.000 | 5%  |
-|  DEPREL | 17.06.91 | 31.08.2019 | 30.06.2024 | 31.08.19 | ROMA |  |  | 10.000.000 | 1.250.000 | 8.750.000 |  |  | 2.500.000 |  |  |  | 10.000.000 | 2.750.000 | 6.250.000 | 1.251.000 |   |
-|  HARASLIN | 26.05.96 | 01.02.2020 | 30.06.2023 | 01.02.20 | LICHIA G. | 30.08.21 | SPARTA P. | 1.700.000 | 283.333 | 1.416.667 |  | 1.500.000 | 377.778 |  |  | 461.111 | 0 | 0 | 0 | 150.000 | 15% plus  |
-|  ROMAGNA | 26.05.97 | 18.09.2020 | 30.06.2024 | 18.09.20 | CAGLIARI |  |  | 4.000.000 | 347.826 | 3.652.174 |  |  | 1.043.478 |  |  |  | 4.000.000 | 1.391.304 | 3.608.696 | 44.800 | 20% plus  |
-|  TOLIAN | 08.08.94 | 12.07.2019 | 30.06.2025 | 12.07.19 | BORUSSIA D. |  |  | 3.500.000 | 350.000 | 3.150.000 | 500.000 |  | 755.556 |  |  |  | 4.000.000 | 1.105.556 | 2.894.444 | 300.000 | 10% plus  |
-|  MANARELLI | 01.02.02 | GIOVANE DI SERIE |   |  | RENATE |  |  | 100.000 | 50.000 | 50.000 |  |  | 50.000 |  |  |  | 100.000 | 100.000 | 0 |  |   |
-|  RIPAMONTI | 16.01.02 | GIOVANE DI SERIE |   |  | RENATE |  |  | 50.000 | 25.000 | 25.000 |  |  | 25.000 |  |  |  | 50.000 | 50.000 | 0 |  |   |
-|  SCHIAPPACASSE | 12.01.99 | 01.10.2020 | 30.06.2023 | 01.10.20 | ATLETICO M. |  |  | 300.000 | 27.273 | 272.727 |  |  | 109.091 |  |  |  | 300.000 | 136.364 | 163.636 | 13.750 | 50% plus  |
-|  MIRANDA | 10.03.03 | GIOVANE DI SERIE |   | 30.06.21 | CASSINO |  |  |  |  |  | 50.000 |  | 25.000 |  |  |  | 50.000 | 25.000 | 25.000 |  |   |
-|  PAZ | 13.06.02 | 02.02.2021 | 30.06.2025 | 02.02.21 | CORTULLIA |  |  |  |  |  | 250.000 |  | 55.556 |  |  |  | 250.000 | 55.556 | 194.444 | 50.000 |   |
-|  LOPEZ | 04.12.97 | 05.10.2020 | 30.06.2025 | 05.10.20 | OLYMPIQUE MARSIGLIA |  |  |  |  |  | 1.523.708 |  | 148.805 |  |  |  | 1.523.708 | 148.805 | 1.374.903 | 1.360.000 |   |
-|  MANORELLI | 30.04.04 | GIOVANE DI SERIE |   | 30.06.21 | CESENA |  |  |  |  |  | 60.000 |  | 15.000 |  |  |  | 60.000 | 15.000 | 45.000 |  |   |
-|  ERLIC | 24.01.98 | 10.08.2021 | 30.06.2026 | 10.08.21 | SPEZIA |  |  |  |  |  | 3.000.000 |  | 254.237 |  |  |  | 3.000.000 | 254.237 | 2.745.763 |  |   |
-|  FORESTA | 30.06.04 | 06.09.2021 | 30.06.2024 | 31.08.21 | SAMPDORIA |  |  |  |  |  | 500.000 |  | 58.824 |  |  |  | 500.000 | 58.824 | 441.176 |  |   |
-|  LAURICELLA | 11.01.07 | GIOVANE DI SERIE |   | 17.08.21 | P. MESSINA |  |  |  |  |  | 20.000 |  | 1.759 |  |  |  | 20.000 | 1.759 | 18.261 |  |   |
+Intestazioni: contratto (data nascita; data inizio primo contratto; data scadenza ultimo contratto) | provenienza (data, società) | destinazione (data, società) | valori inizio periodo 01/01/2021 (lordo (1), f.do ammort. (2), netto (3)) | variazione valori di periodo (acquisti (4), cessioni (5)) | effetti economici di periodo (ammort.ti (6), svalutazioni (7), minusvalenze (8), plusvalenze (9)) | valori di fine periodo 31/12/2021 (lordo 10 (1+4), f.do amm. 11 (2+6), netto 12 (10-11-7)) | Varie (Compenso Agenti (Costo storico), Sell on fee)
+
+| Calciatore | Data nascita | Data inizio primo contratto | Data scadenza ultimo contratto | Prov. data | Prov. società | Dest. data | Dest. società | Lordo (1) | F.do ammort. (2) | Netto (3) | Acquisti (4) | Cessioni (5) | Ammort.ti (6) | Svalut. (7) | Minusval. (8) | Plusval. (9) | Lordo 10 (1+4) | F.do amm. 11 (2+6) | Netto 12 (10-11-7) | Compenso Agenti (Costo storico) | Sell on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| CONSIGLI | 27.01.87 | 01.09.2014 | 30.06.2024 | 01.09.14 | ATALANTA | | | 4.500.000 | 3.975.295 | 524.705 | | | 131.175 | | | | 4.500.000 | 4.106.470 | 393.530 | 400.000 | |
+| PELUSO | 20.01.84 | 02.07.2014 | 30.06.2022 | 02.07.14 | JUVENTUS | | | 4.500.000 | 4.355.528 | 144.472 | | | 96.315 | | | | 4.500.000 | 4.451.843 | 48.157 | 310.000 | |
+| BERARDI | 01.08.94 | 01.07.2015 | 30.06.2024 | 25.06.15 | JUVENTUS | | | 20.000.000 | 14.201.727 | 5.798.273 | | | 1.656.649 | | | | 20.000.000 | 15.858.376 | 4.141.624 | | |
+| ARTIOLI | 12.06.01 | GIOVANE DI SERIE | | 25.08.15 | SPAL | | | 35.000 | 27.500 | 7.500 | | | 7.500 | | | | 35.000 | 35.000 | 0 | | |
+| CELIA | 04.03.99 | 23.12.2015 | 30.06.2023 | 23.07.15 | CATANZARO | 27.08.21 | SPAL | 150.000 | 140.080 | 9.920 | | 0 | 2.645 | | 7.275 | | 0 | 0 | 0 | 15.000 | |
+| MAZZITELLI | 15.11.95 | 01.02.2016 | 30.06.2022 | 01.02.16 | ROMA | 09.07.21 | MONZA | 3.574.086 | 2.801.643 | 772.443 | | 300.000 | 257.481 | | 214.962 | | 0 | 0 | 0 | 300.000 | |
+| FONTANESI | 20.02.96 | 26.06.2016 | 30.06.2021 | 26.06.16 | CESENA | | | 10.000 | 10.000 | 0 | | | 0 | | | | 10.000 | 10.000 | 0 | | |
+| FERRARI | 15.05.92 | 31.08.2016 | 30.06.2024 | 31.08.16 | CROTONE | | | 3.974.690 | 2.666.406 | 1.308.284 | | | 373.795 | | | | 3.974.690 | 3.040.201 | 934.489 | 148.000 | 20% |
+| PILATI | 26.03.00 | 18.07.2019 | 30.06.2023 | 05.08.16 | MANTOVA | | | 25.000 | 25.000 | 0 | | | 0 | | | | 25.000 | 25.000 | 0 | | |
+| SCAMACCA | 01.01.99 | 31.01.2017 | 30.06.2025 | 31.01.17 | PSV EINDHOVEN | | | 500.000 | 297.520 | 202.480 | | | 44.995 | | | | 500.000 | 342.515 | 157.485 | 148.600 | 10% |
+| RICCI | 27.05.94 | 28.06.2017 | 30.06.2022 | 28.06.17 | ROMA | 13.07.21 | REGGINA | 2.965.149 | 2.075.605 | 889.544 | | 0 | 296.515 | | 593.029 | | 0 | 0 | 0 | | |
+| GRUMO | 08.02.02 | GIOVANE DI SERIE | | 30.06.17 | CESENA | | | 500.000 | 437.500 | 62.500 | | | 62.500 | | | | 500.000 | 500.000 | 0 | | |
+| MARCHIZZA | 26.03.98 | 13.07.2017 | 30.06.2025 | 13.07.17 | ROMA | | | 1.500.000 | 886.364 | 613.636 | | | 136.364 | | | | 1.500.000 | 1.022.728 | 477.272 | 100.000 | 50% |
+| FRATTESI | 22.09.99 | 13.07.2017 | 30.06.2026 | 13.07.17 | ROMA | | | 5.000.000 | 2.954.545 | 2.045.455 | | | 371.901 | | | | 5.000.000 | 3.326.446 | 1.673.554 | 120.000 | 30% |
+| GOLDANIGA | 02.11.93 | 31.07.2017 | 30.06.2022 | 31.07.17 | PALERMO | | | 4.000.000 | 2.800.000 | 1.200.000 | | | 800.000 | | | | 4.000.000 | 3.600.000 | 400.000 | 140.000 | |
+| MARTINI | 19.05.01 | GIOVANE DI SERIE | | 20.08.17 | PORDENONE | | | 10.000 | 8.750 | 1.250 | | | 1.250 | | | | 10.000 | 10.000 | 0 | | |
+| CISCO | 08.10.98 | 31.01.2018 | 30.06.2022 | 31.01.18 | PADOVA | 22.06.21 | NOVARA | 500.000 | 333.333 | 166.667 | | 100 | 55.556 | | 111.011 | | 0 | 0 | 0 | | |
+| BABACAR | 17.03.93 | 04.04.2018 | 30.06.2023 | 31.01.18 | FIORENTINA | | | 10.000.000 | 6.603.774 | 3.396.226 | | | 1.358.490 | | | | 10.000.000 | 7.962.264 | 2.037.736 | 1.700.000 | 10% |
+| TURATI | 05.09.01 | 01.06.2019 | 30.06.2023 | 31.01.18 | RENATE | | | 45.000 | 21.136 | 23.864 | | | 5.303 | | | | 45.000 | 26.439 | 18.561 | | |
+| MARGINEAN | 03.07.01 | 31.01.2018 | 30.06.2024 | 31.01.18 | SPORTIV ZLATNA | | | 25.000 | 15.454 | 9.546 | | | 2.727 | | | | 25.000 | 18.181 | 6.819 | | |
+| SERNICOLA | 30.07.97 | 01.07.2018 | 30.06.2023 | 27.06.18 | TERNANA | | | 200.000 | 100.000 | 100.000 | | | 40.000 | | | | 200.000 | 140.000 | 60.000 | | |
+| ODGAARD | 31.03.99 | 01.07.2018 | 30.06.2023 | 29.06.18 | INTER | | | 5.050.000 | 2.776.190 | 2.273.810 | 48.960 | | 929.108 | | | | 5.098.960 | 3.705.298 | 1.393.662 | | 20% |
+| BRIGNOLA | 08.07.99 | 01.08.2018 | 30.06.2023 | 01.08.18 | BENEVENTO | | | 3.000.000 | 1.474.575 | 1.525.425 | | | 610.169 | | | | 3.000.000 | 2.084.744 | 915.256 | 80.000 | 50% |
+| LOCATELLI | 08.01.98 | 13.08.2018 | 30.06.2023 | 13.08.18 | MILAN | 18.08.21 | JUVENTUS | 13.500.000 | 6.252.472 | 7.247.528 | | 30.000.000 | 1.932.674 | | | 24.685.146 | 0 | 0 | 0 | 600.000 | |
+| PINATO | 09.01.95 | 16.08.2018 | 30.06.2023 | 16.08.18 | VENEZIA | | | 550.000 | 270.338 | 279.662 | | | 111.864 | | | | 550.000 | 382.202 | 167.798 | 200.000 | |
+| MEHMETAJ | 27.03.01 | GIOVANE DI SERIE | | 17.08.18 | PRO PIACENZA | | | 45.000 | 28.125 | 16.875 | | | 11.250 | | | | 45.000 | 39.375 | 5.625 | | |
+| CAMPANI | 19.08.00 | 17.08.2018 | 30.06.2023 | 17.08.18 | PISA | | | 900.000 | 442.373 | 457.627 | | | 183.051 | | | | 900.000 | 625.424 | 274.576 | | 10% |
+| BOGA | 03.01.97 | 20.07.2018 | 30.06.2023 | 20.07.18 | CHELSEA | | | 13.000.000 | 3.541.667 | 9.458.333 | 500.000 | | 4.083.333 | | | | 13.500.000 | 7.625.000 | 5.875.000 | 110.000 | 50% |
+| BOURABIA | 07.08.91 | 16.07.2018 | 30.06.2023 | 16.07.18 | KONYASPOR | 30.08.21 | SPEZIA | 2.200.000 | 1.540.000 | 660.000 | | 1.500.000 | 293.333 | | | 1.133.333 | 0 | 0 | 0 | 200.000 | |
+| MARLON | 07.09.95 | 16.08.2018 | 30.06.2023 | 16.08.18 | BARCELONA | 20.06.21 | SHAKTAR D | 12.000.000 | 5.199.153 | 6.800.847 | | 12.000.000 | 1.360.169 | | | 6.559.322 | 0 | 0 | 0 | 1.000.000 | 50% |
+| STEAU | 22.04.01 | 23.01.19 | 30.06.2022 | 23.01.19 | VITORUL | | | 40.000 | 31.724 | 8.276 | | | 5.517 | | | | 40.000 | 37.241 | 2.759 | | |
+| PIERAGNOLO | 03.01.03 | GIOVANE DI SERIE | | 18.06.19 | PADOVA | | | 80.000 | 30.000 | 50.000 | | | 20.000 | | | | 80.000 | 50.000 | 30.000 | | |
+| ROGERIO | 13.01.98 | 29.06.2019 | 30.06.2024 | 29.06.19 | JUVENTUS | | | 6.950.000 | 2.085.000 | 4.865.000 | | | 1.390.000 | | | | 6.950.000 | 3.475.000 | 3.475.000 | | |
+| PINELLI | 03.01.01 | 29.06.2019 | 30.06.2023 | 29.06.19 | JUVENTUS | | | 1.875.000 | 703.125 | 1.171.875 | | | 468.750 | | | | 1.875.000 | 1.171.875 | 703.125 | | |
+| SALA | 04.06.99 | 28.06.2019 | 30.06.2024 | 28.06.19 | INTER | | | 3.000.000 | 1.125.000 | 1.875.000 | | | 535.714 | | | | 3.000.000 | 1.660.714 | 1.339.286 | | |
+| MULDUR | 03.04.99 | 21.08.2019 | 30.06.2024 | 21.08.19 | RAPID VIENNA | | | 4.700.000 | 1.160.601 | 3.539.399 | 300.000 | | 1.063.489 | | | | 5.000.000 | 2.224.090 | 2.775.910 | 450.000 | 10% |
+| OBIANG | 27.03.92 | 25.07.2019 | 30.06.2023 | 25.07.19 | WEST HAM | | | 7.250.000 | 2.573.582 | 4.676.418 | 250.000 | | 1.970.567 | | | | 7.500.000 | 4.544.149 | 2.955.851 | 525.000 | |
+| RUSSO | 31.03.91 | 25.07.2019 | 30.06.2023 | 25.07.19 | GENOA | | | 7.000.000 | 2.016.949 | 4.983.051 | | | 1.423.729 | | | | 7.000.000 | 3.440.678 | 3.559.322 | 140.000 | 50% plus |
+| CAPUTO | 06.08.87 | 13.07.2019 | 30.06.2023 | 13.07.19 | EMPOLI | 31.08.21 | SAMPDORIA | 7.750.000 | 3.687.500 | 4.062.500 | | 4.000.000 | 1.083.333 | | | 1.020.833 | 0 | 0 | 0 | 830.000 | |
+| TRAORE' | 16.02.00 | 13.07.2019 | 30.06.2024 | 13.07.19 | EMPOLI | | | 16.000.000 | 4.800.000 | 11.200.000 | | | 3.200.000 | | | | 16.000.000 | 8.000.000 | 8.000.000 | 1.500.000 | |
+| MERONI | 09.01.97 | 31.07.2019 | 30.06.2023 | 31.07.19 | PISA | | | 700.000 | 253.191 | 446.809 | | | 178.723 | | | | 700.000 | 431.914 | 268.086 | | 50% |
+| MIDOLO | 09.04.01 | GIOVANE DI SERIE | | 02.09.19 | ASCOLI | | | 175.000 | 65.625 | 109.375 | | | 43.750 | | | | 175.000 | 109.375 | 65.625 | | |
+| CHIRICHES | 14.11.89 | 30.08.2019 | 30.06.2023 | 30.08.19 | NAPOLI | | | 9.500.000 | 3.213.768 | 6.286.232 | 1.000.000 | | 2.764.493 | | | | 10.500.000 | 5.978.261 | 4.521.739 | 200.000 | |
+| KYRIAKOPOULOS | 05.02.96 | 03.09.2019 | 30.06.2023 | 03.09.19 | ASTERAS TRIP. | | | 500.000 | 62.500 | 437.500 | | | 97.222 | | | | 500.000 | 159.722 | 340.278 | 49.000 | 10% plus. |
+| MITROV | 29.01.02 | 01.02.2020 | 30.06.2023 | 01.02.20 | UTA ARAD | 20.07.21 | RIPENSIA T. | 15.000 | 4.286 | 10.714 | | 0 | 2.143 | | 8.571 | | 0 | 0 | 0 | | |
+| AYHAN | 10.11.94 | 10.08.2020 | 30.06.2024 | 10.08.20 | FORTUNA D. | | | 2.473.684 | 263.158 | 2.210.526 | 315.790 | | 676.692 | | | | 2.789.474 | 939.850 | 1.849.624 | 1.444.000 | 5% |
+| DEFREL | 17.06.91 | 31.08.2019 | 30.06.2024 | 31.08.19 | ROMA | | | 10.000.000 | 1.250.000 | 8.750.000 | | | 2.500.000 | | | | 10.000.000 | 3.750.000 | 6.250.000 | 1.251.000 | |
+| HARASLIN | 26.05.96 | 01.02.2020 | 30.06.2023 | 01.02.20 | LECHIA G. | 30.08.21 | SPARTA P. | 1.700.000 | 283.333 | 1.416.667 | | 1.500.000 | 377.778 | | | 461.111 | 0 | 0 | 0 | 150.000 | 15% plus. |
+| ROMAGNA | 26.05.97 | 18.09.2020 | 30.06.2025 | 18.09.20 | CAGLIARI | | | 4.000.000 | 347.826 | 3.652.174 | | | 1.043.478 | | | | 4.000.000 | 1.391.304 | 2.608.696 | 44.800 | 20% plus. |
+| TOLJAN | 08.08.94 | 12.07.2019 | 30.06.2025 | 12.07.19 | BORUSSIA D. | | | 3.500.000 | 350.000 | 3.150.000 | 500.000 | | 755.556 | | | | 4.000.000 | 1.105.556 | 2.894.444 | 300.000 | 10% plus. |
+| MANARELLI | 01.02.02 | GIOVANE DI SERIE | | RENATE | | | | 100.000 | 50.000 | 50.000 | | | 50.000 | | | | 100.000 | 100.000 | 0 | | |
+| RIPAMONTI | 16.01.02 | GIOVANE DI SERIE | | RENATE | | | | 50.000 | 25.000 | 25.000 | | | 25.000 | | | | 50.000 | 50.000 | 0 | | |
+| SCHIAPPACASSE | 12.01.99 | 01.10.2020 | 30.06.2023 | 01.10.20 | ATLETICO M. | | | 300.000 | 27.273 | 272.727 | | | 109.091 | | | | 300.000 | 136.364 | 163.636 | 13.750 | 50% plus. |
+| MIRANDA | 10.03.03 | GIOVANE DI SERIE | | 30.06.21 | CASSINO | | | | | | 50.000 | | 25.000 | | | | 50.000 | 25.000 | 25.000 | | |
+| PAZ | 13.06.02 | 02.02.2021 | 30.06.2025 | 02.02.21 | CORTULUA | | | | | | 250.000 | | 55.556 | | | | 250.000 | 55.556 | 194.444 | 50.000 | |
+| LOPEZ | 04.12.97 | 05.10.2020 | 30.06.2023 | 05.10.20 | OLYMPIQUE MARSIGLIA | | | | | | 1.523.708 | | 148.805 | | | | 1.523.708 | 148.805 | 1.374.903 | 1.360.000 | |
+| MANDRELLI | 30.04.04 | GIOVANE DI SERIE | | 30.06.21 | CESENA | | | | | | 60.000 | | 15.000 | | | | 60.000 | 15.000 | 45.000 | | |
+| ERLIC | 24.01.98 | 10.08.2021 | 30.06.2026 | 10.08.21 | SPEZIA | | | | | | 3.000.000 | | 254.237 | | | | 3.000.000 | 254.237 | 2.745.763 | | |
+| FORESTA | 30.06.04 | 06.09.2021 | 30.06.2024 | 31.08.21 | SAMPDORIA | | | | | | 500.000 | | 58.824 | | | | 500.000 | 58.824 | 441.176 | | |
+| LAURICELLA | 11.01.07 | GIOVANE DI SERIE | | 17.08.21 | F.P. MESSINA | | | | | | 20.000 | | 1.739 | | | | 20.000 | 1.739 | 18.261 | | |
 
 --- pág. 55 ---
 
-|  LEONE | 28.03.05 | 06.09.2021 | 30.06.2024 | 31.08.21 | SAMPDORIA |  |  |  |  |  | 1.000.000 |  | 117.647 |  |  |  | 1.000.000 | 117.647 | 882.353 |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  LOEFFEN | 18.01.04 | 16.08.2021 | 30.06.2024 |  |  |  |  |  |  |  | 145.000 |  | 20.714 |  |  |  | 145.000 | 20.714 | 124.286 |  |   |
-|  SAMELE | 09.04.02 | 28.07.2021 | 30.06.2026 | 30.07.21 | MONOPOLI |  |  |  |  |  | 100.000 |  | 8.475 |  |  |  | 100.000 | 8.475 | 91.525 |  |   |
-|  SUPLIA | 01.08.06 | GIOVANE DI SERIE |   | 20.08.21 | ENTELLA |  |  |  |  |  | 10.000 |  | 1.250 |  |  |  | 10.000 | 1.250 | 8.750 |  |   |
-|  ZENELAJ | 11.03.03 | GIOVANE DI SERIE |   | 19.07.21 | MARUGGIO |  |  |  |  |  | 30.000 |  | 7.500 |  |  |  | 30.000 | 7.500 | 22.500 |  |   |
-|  RUAN | 07.06.99 | 11.08.2021 | 30.06.2026 | 06.08.21 | GREMIQ |  |  |  |  |  | 5.071.872 |  | 429.820 |  |  |  | 5.071.872 | 429.820 | 4.642.052 | 500.000 | 10% plus  |
-|  FLAMINGO | 31.12.02 | 01.02.2021 | 30.06.2025 | 01.07.21 | ALMIERE CITY |  |  |  |  |  | 70.000 |  | 8.750 |  |  |  | 70.000 | 8.750 | 61.250 |  |   |
-|  ARDIZZONE | 21.03.07 | GIOVANE DI SERIE |   | 10.08.21 | F24 MESSINA |  |  |  |  |  | 10.000 |  | 1.250 |  |  |  | 10.000 | 1.250 | 8.750 |  |   |
-|  PIERINI | 06.08.98 | 02.01.2018 | 30.06.2022 | 02.01.18 |  | 31.08.21 | CESENA |  |  |  |  | 70.000 | 0 |  |  | 70.000 | 0 | 0 | 0 |  |   |
-|  CIANCI | 02.02.96 | 12.08.2021 | 30.06.2023 | 10.08.21 | TERAMO | 18.08.21 | CATANZARO |  |  |  | 150.000 | 100.000 | 0 |  | 50.000 |  | 0 | 0 | 0 |  |   |
-|  TOTALI |  |  |  |  |  |  |  | 199.917.689 | 90.671.494 | 109.246.115 | 14.905.330 | 49.470.100 | 36.155.704 | 0 | 984.840 | 33.929.745 | 170.318.704 | 98.848.166 | 71.470.538 | 14.379.150 |   |
+| Calciatore | Data nascita | Data inizio primo contratto | Data scadenza ultimo contratto | Prov. data | Prov. società | Dest. data | Dest. società | Lordo (1) | F.do ammort. (2) | Netto (3) | Acquisti (4) | Cessioni (5) | Ammort.ti (6) | Svalut. (7) | Minusval. (8) | Plusval. (9) | Lordo 10 (1+4) | F.do amm. 11 (2+6) | Netto 12 (10-11-7) | Compenso Agenti (Costo storico) | Sell on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| LEONE | 28.03.05 | 06.09.2021 | 30.06.2024 | 31.08.21 | SAMPDORIA | | | | | | 1.000.000 | | 117.647 | | | | 1.000.000 | 117.647 | 882.353 | | |
+| LOEFFEN | 18.01.04 | 16.08.2021 | 30.06.2024 | | | | | | | | 145.000 | | 20.714 | | | | 145.000 | 20.714 | 124.286 | | |
+| SAMELE | 09.04.02 | 28.07.2021 | 30.06.2026 | 30.07.21 | MONOPOLI | | | | | | 100.000 | | 8.475 | | | | 100.000 | 8.475 | 91.525 | | |
+| SUPLJA | 01.08.06 | GIOVANE DI SERIE | | 20.08.21 | ENTELLA | | | | | | 10.000 | | 1.250 | | | | 10.000 | 1.250 | 8.750 | | |
+| ZENELAJ | 11.03.03 | GIOVANE DI SERIE | | 19.07.21 | MARUGGIO | | | | | | 30.000 | | 7.500 | | | | 30.000 | 7.500 | 22.500 | | |
+| RUAN | 07.06.99 | 11.08.2021 | 30.06.2026 | 06.08.21 | GREMIO | | | | | | 5.071.872 | | 429.820 | | | | 5.071.872 | 429.820 | 4.642.052 | 500.000 | 10% plus. |
+| FLAMINGO | 31.12.02 | 01.02.2021 | 30.06.2025 | 01.07.21 | ALMERE CITY | | | | | | 70.000 | | 8.750 | | | | 70.000 | 8.750 | 61.250 | | |
+| ARDIZZONE | 21.03.07 | GIOVANE DI SERIE | | 10.08.21 | F24 MESSINA | | | | | | 10.000 | | 1.250 | | | | 10.000 | 1.250 | 8.750 | | |
+| PIERINI | 06.08.98 | 02.01.2018 | 30.06.2022 | 02.01.18 | | 31.08.21 | CESENA | | | | | 70.000 | 0 | | | 70.000 | 0 | 0 | 0 | | |
+| CIANCI | 02.02.96 | 12.08.2021 | 30.06.2023 | 10.08.21 | TERAMO | 18.08.21 | CATANZARO | | | | 150.000 | 100.000 | 0 | | 50.000 | | 0 | 0 | 0 | | |
+| **TOTALI** | | | | | | | | 199.917.609 | 90.671.494 | 109.246.115 | 14.905.330 | 49.470.100 | 36.155.704 | 0 | 984.848 | 33.929.745 | 170.318.704 | 98.848.166 | 71.470.538 | 14.379.150 | |
 
 --- pág. 56 ---
 
@@ -2116,9 +2117,17 @@ U.S. Sassuolo Calcio S.r.l.
 
 Bilancio 31/12/2021
 
-# Rappresentazione grafica del Gruppo (Manuale Licenze Uefa – 2020)
+Rappresentazione grafica del Gruppo (Manuale Licenze Uefa – 2020)
 
-![img-2.jpeg](img-2.jpeg)
+[Organigramma]
+
+- **PERSONE FISICHE CHE ESERCITANO IL CONTROLLO:** Marco Squinzi, Veronica Squinzi, Simona Giorgetta
+  - 100%
+- **EMME ESSE VI SRL** — Capitale sociale: € 1.000.000; Totale attivo: € 84.251.648; Totale ricavi: € 0; Patrimonio Netto: € 84.242.766
+  - 100%
+- **MAPEI SPA** — Capitale sociale: € 100.000.000; Totale attivo: € 1.518.088.955; Totale ricavi: € 561.234.902; Patrimonio Netto: € 649.389.280
+  - 100% → **US SASSUOLO CALCIO SRL**
+  - 100% → **MAPEI STADIUM SRL** — Capitale sociale: € 20.000; Totale attivo: € 10.401.988; Totale ricavi: € 2.612.150; Patrimonio Netto: € 9.845.508
 
 --- pág. 60 ---
 
@@ -2241,9 +2250,7 @@ ai sensi dell'art. 14 del D. Lgs. 27 gennaio 2010, n. 39
 
 --- pág. 64 ---
 
-EY
-Building a better
-working world
+[Logo EY – Building a better working world]
 
 EY S.p.A.
 Via Meravigli, 12
@@ -2254,63 +2261,40 @@ Fax: +39 02 722122037
 ey.com
 
 # Relazione della società di revisione indipendente
-ai sensi dell'art. 14 del D. Lgs. 27 gennaio 2010, n. 39
+# ai sensi dell'art. 14 del D. Lgs. 27 gennaio 2010, n. 39
 
 Al Socio Unico della
 Unione Sportiva Sassuolo Calcio S.r.l.
 
-# Relazione sulla revisione contabile del bilancio d'esercizio
+## Relazione sulla revisione contabile del bilancio d'esercizio
 
-# Giudizio
+### Giudizio
 
-Abbiamo svolto la revisione contabile del bilancio d'esercizio della Unione Sportiva Sassuolo Calcio
-S.r.l. (la Società), costituito dallo stato patrimoniale al 31 dicembre 2021, dal conto economico e dal
-rendiconto finanziario per l'esercizio chiuso a tale data e dalla nota integrativa.
+Abbiamo svolto la revisione contabile del bilancio d'esercizio della Unione Sportiva Sassuolo Calcio S.r.l. (la Società), costituito dallo stato patrimoniale al 31 dicembre 2021, dal conto economico e dal rendiconto finanziario per l'esercizio chiuso a tale data e dalla nota integrativa.
 
-A nostro giudizio, il bilancio d'esercizio fornisce una rappresentazione veritiera e corretta della
-situazione patrimoniale e finanziaria della Società al 31 dicembre 2021, del risultato economico e dei
-flussi di cassa per l'esercizio chiuso a tale data, in conformità alle norme italiane che ne disciplinano i
-criteri di redazione.
+A nostro giudizio, il bilancio d'esercizio fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria della Società al 31 dicembre 2021, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data, in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-# Elementi alla base del giudizio
+### Elementi alla base del giudizio
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia).
-Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione
-Responsabilità della società di revisione per la revisione contabile del bilancio d'esercizio della
-presente relazione. Siamo indipendenti rispetto alla Società in conformità alle norme e ai principi in
-materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del
-bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il
-nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio d'esercizio* della presente relazione. Siamo indipendenti rispetto alla Società in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
 
-# Richiamo di informativa
+### Richiamo di informativa
 
-Richiamiamo l'attenzione sul paragrafo "Considerazioni sulla continuità aziendale" della Nota
-Integrativa e sui paragrafi "Evoluzione prevedibile della gestione" e "Considerazioni sulla continuità
-aziendale" della Relazione sulla gestione che descrivono le considerazioni degli Amministratori in
-relazione all'utilizzo del presupposto della continuità aziendale tenuto conto dell'impegno assunto
-dalla Capogruppo Mapei S.p.A. a fornire adeguate risorse per la copertura finanziaria del fabbisogno
-corrente di liquidità della Società e per garantirne la continuità aziendale per un periodo non inferiore
-a dodici mesi dalla data di approvazione del bilancio d'esercizio. Il nostro giudizio non è espresso con
-rilievi in relazione a tale aspetto.
+Richiamiamo l'attenzione sul paragrafo "Considerazioni sulla continuità aziendale" della Nota Integrativa e sui paragrafi "Evoluzione prevedibile della gestione" e "Considerazioni sulla continuità aziendale" della Relazione sulla gestione che descrivono le considerazioni degli Amministratori in relazione all'utilizzo del presupposto della continuità aziendale tenuto conto dell'impegno assunto dalla Capogruppo Mapei S.p.A. a fornire adeguate risorse per la copertura finanziaria del fabbisogno corrente di liquidità della Società e per garantirne la continuità aziendale per un periodo non inferiore a dodici mesi dalla data di approvazione del bilancio d'esercizio. Il nostro giudizio non è espresso con rilievi in relazione a tale aspetto.
 
-# Responsabilità degli amministratori e del collegio sindacale per il bilancio
-d'esercizio
+### Responsabilità degli amministratori e del collegio sindacale per il bilancio d'esercizio
 
-Gli amministratori sono responsabili per la redazione del bilancio d'esercizio che fornisca una
-rappresentazione veritiera e corretta in conformità alle norme italiane che ne disciplinano i criteri di
-redazione e, nei termini previsti dalla legge, per quella parte del controllo interno dagli stessi ritenuta
-necessaria per consentire la redazione di un bilancio che non contenga errori significativi dovuti a
-frodi o a comportamenti o eventi non intenzionali.
+Gli amministratori sono responsabili per la redazione del bilancio d'esercizio che fornisca una rappresentazione veritiera e corretta in conformità alle norme italiane che ne disciplinano i criteri di redazione e, nei termini previsti dalla legge, per quella parte del controllo interno dagli stessi ritenuta necessaria per consentire la redazione di un bilancio che non contenga errori significativi dovuti a frodi o a comportamenti o eventi non intenzionali.
 
 EY S.p.A.
-Sede Legale: Via Meravigli, 12 - 20123 Milano
-Sede Secondaria: Via Lombardia, 31 - 00187 Roma
-Capitale Sociale Euro 2.575.000,00 i.v.
+Sede Legale: Via Meravigli, 12 – 20123 Milano
+Sede Secondaria: Via Lombardia, 31 – 00187 Roma
+Capitale Sociale Euro 2.525.000,00 i.v.
 Iscritta alla S.O. del Registro delle Imprese presso la C.C.I.A.A. di Milano Monza Brianza Lodi
-Codice Ricale e numero di اتحادora 00434000584 - numero R.I.A. di Milano 606158 - P.IVA 00891231003
+Codice fiscale e numero di iscrizione 00434000584 - numero R.E.A. di Milano 606158 - P.IVA 00891231003
 Iscritta al Registro Revisori Legali al n. 70945 Pubblicato sulla G.U. Suppl. 13 - IV Serie Speciale del 17/2/1998
 Iscritta all'Albo Speciale delle società di revisione
-Consiglio al progressivo n. 2 delibera n.10831 del 16/7/1997
+Consob al progressivo n. 2 delibera n.10831 del 16/7/1997
 
 A member firm of Ernst & Young Global Limited
 

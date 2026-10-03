@@ -18,3 +18,23 @@
 - **Sin abrir todavía**: sourcing puro, no se verificó el contenido de ningún PDF.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 900964178); fortalezaceif.com.
 - Último chequeo: 2026-09-22.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2017 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf` (sourceId `fortalezaceif-co-estados-financieros-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2018 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf` (sourceId `fortalezaceif-co-estados-financieros-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2019 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf` (sourceId `fortalezaceif-co-estados-financieros-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2020 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf` (sourceId `fortalezaceif-co-estados-financieros-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2023 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf` (sourceId `fortalezaceif-co-estados-financieros-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2024 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf` (sourceId `fortalezaceif-co-estados-financieros-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2025 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf` (sourceId `fortalezaceif-co-estados-financieros-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2021 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf` (sourceId `fortalezaceif-co-estados-financieros-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-02): ejercicio 2022 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf` (sourceId `fortalezaceif-co-estados-financieros-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2020 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf` (sourceId `fortalezaceif-co-estados-financieros-2020`).

@@ -1,24 +1,22 @@
 
 --- pág. 1 ---
 
-kuu
-
-REVIZIJA * RAČUNOVODSTVO
+Werkmann
+REVIZIJA • RAČUNOVODSTVO
 POSLOVNO SAVJETOVANJE
 
 NOGOMETNI KLUB OSIJEK s.d.d. OSIJEK
 (konsolidirano s Škola nogometa NK Osijek)
-Revidirani financijski izvještaji na dan 31 .prosinca 2019.
+Revidirani financijski izvještaji na dan 31.prosinca 2019.
 godine
 
 OSIJEK, 2020. godine
 
-— ——  Uremeljeno 1992. godim —-—
-Werkuntnn dao. društvo za poslovne usluge * Gundulićeva 28, 31004 Osijek * MBS 030044142 * OIB 1858830752007
-čiroračnn: 2402006- 11004243 Erste € Sretermdrkische Bank
-tro je upisano s Registar Trgovačkog suda u Osijeku < (ram ljuim kapinaton od 20.000 kuna * Uprava: Eduard Werkmann
-Tel/fax: 031.205.266 * 031.400.249 + unto roerkina nabi * ured Gwerkmanu.hr
-
+Utemeljeno 1992. godine
+Werkmann d.o.o. društvo za poslovne usluge • Gundulićeva 28, 31000 Osijek • MBS 030044142 • OIB 18830752007
+Žiroračun: 2402006-1100424387, Erste & Steiermärkische Bank
+Društvo je upisano u Registar Trgovačkog suda u Osijeku s temeljnim kapitalom od 20.000 kuna • Uprava: Eduard Werkmann
+Tel./fax: 031.205.266 • 031.400.249 • www.werkmann.hr • ured@werkmann.hr
 
 --- pág. 2 ---
 
@@ -114,60 +112,37 @@ VI BILJEŠKE
 
 --- pág. 5 ---
 
-M
-
-REVIZIJA * RAČUNOVODSTVO
+Werkmann
+REVIZIJA • RAČUNOVODSTVO
 POSLOVNO SAVJETOVANJE
 
 IZVJEŠĆE NEOVISNOG REVIZORA
+
 ČLANOVIMA DRUŠTVA NK OSIJEK s.d.d.
 
 Mišljenje
 
-Obavili smo reviziju godišnjih financijskih izvještaja Društva NKOSIJEK s.d.d.
-(Društvo), koji obuhvaćaju izvještaj o financijskom položaju (bilancu) na 31. prosinca
-2019., račun dobiti i gubitka te bilješke uz financijske izvještaje, uključujući i sažetak
-značajnih računovodstvenih politika.
+Obavili smo reviziju godišnjih financijskih izvještaja Društva NK OSIJEK s.d.d. (Društvo), koji obuhvaćaju izvještaj o financijskom položaju (bilancu) na 31. prosinca 2019., račun dobiti i gubitka te bilješke uz financijske izvještaje, uključujući i sažetak značajnih računovodstvenih politika.
 
-Prema našem mišljenju, priloženi godišnji financijski izvještaji istinito i fer prikazuju
-financijski položaj Društva na 31. prosinca 2019. i njegovu financijsku uspješnost za
-tada završenu godinu u skladu sa Zakonom o računovodstvu i Hrvatskim standardima
-financijskog izvještavanja (HSFI-ima).
+Prema našem mišljenju, priloženi godišnji financijski izvještaji istinito i fer prikazuju financijski položaj Društva na 31. prosinca 2019. i njegovu financijsku uspješnost za tada završenu godinu u skladu sa Zakonom o računovodstvu i Hrvatskim standardima financijskog izvještavanja (HSFI-ima).
 
 Osnova za mišljenje
 
-Obavili smo našu reviziju u skladu sa Zakonom o računovodstvu, Zakonom o reviziji i
-Međunarodnim revizijskim standardima (MRevS-ima). Naše odgovornosti prema tim
-standardima su podrobnije opisane u našem izvješću neovisnog revizora u odjeljku o
-revizorovim odgovornostima za reviziju godišnjih financijskih izvještaja. Neovisni smo
-od Društva u skladu s Kodeksom etike za profesionalne računovođe (IESBA Kodeks) i
-ispunili smo naše ostale etičke odgovornosti u skladu s IESBA Kodeksom. Vjerujemo da su
-revizijski dokazi koje smo dobili dostatni i primjereni da osiguraju osnovu za naše mišljenje.
+Obavili smo našu reviziju u skladu sa Zakonom o računovodstvu, Zakonom o reviziji i Međunarodnim revizijskim standardima (MRevS-ima). Naše odgovornosti prema tim standardima su podrobnije opisane u našem izvješću neovisnog revizora u odjeljku o revizorovim odgovornostima za reviziju godišnjih financijskih izvještaja. Neovisni smo od Društva u skladu s Kodeksom etike za profesionalne računovođe (IESBA Kodeks) i ispunili smo naše ostale etičke odgovornosti u skladu s IESBA Kodeksom. Vjerujemo da su revizijski dokazi koje smo dobili dostatni i primjereni da osiguraju osnovu za naše mišljenje.
 
 Isticanje pitanja
 
-Bez utjecaja na naše mišljenje skrećemo pozornost na bilješku br. 13 u kojoj se govori o
-utjecaju pandemije virusa C OVID-19 na poslovanje Društva.
+Bez utjecaja na naše mišljenje skrećemo pozornost na bilješku br. 13 u kojoj se govori o utjecaju pandemije virusa COVID-19 na poslovanje Društva.
 
-Odgovornosti uprave i onih koji su zaduženi za upravljanje za godišnje
-financijske izvještaje
+Odgovornosti uprave i onih koji su zaduženi za upravljanje za godišnje financijske izvještaje
 
-Uprava je odgovorna za sastavljanje godišnjih financijskih izvještaja koji daju istinit i
+Uprava je odgovorna za sastavljanje godišnjih financijskih izvještaja koji daju istinit i fer prikaz u skladu s HSFI-ima, i za one interne kontrole za koje uprava odredi da su potrebne za omogućavanje sastavljanja godišnjih financijskih izvještaja koji su bez značajnog pogrešnog prikaza uslijed prijevare ili pogreške.
 
-fer_ prikaz u skladu s HSFI-ima, i za one interne kontrole za koje uprava odredi da su
-potrebne za omogućavanje sastavljanja godišnjih financijskih izvještaja koji su bez
-značajnog pogrešnog prikaza uslijed prijevare ili pogreške.
-
-Utemeljeno 1992. godin: 2 « OIB 18830752067
-2 po Ni s 752
-Werkmann d.0.0, društvo za poslovne usluge * Gundulićeva 28, 11600 Osijek K MBS 030044142 * (€ 883075200
-žrvovačun: 2402006-1 100524387, Krste € Steiermiirkische Banh
-
-j ] 1 stan Tr, ško đa u Osijeku s remelinint h
-Hrištva je upisano u Registar Trgovačkog suc sije 4 9000 ku
-šik o) fax: 031.205.266 * 031.400.249 + wtwwaeerkmann.hr < ured ičiverkmann.hr
-
-apitalam ad 20.000 kuna + 1 prava: Eduard Werkmann
+Utemeljeno 1992. godine
+Werkmann d.o.o. društvo za poslovne usluge • Gundulićeva 28, 31000 Osijek • MBS 030044142 • OIB 18830752007
+žiroračun: 2402006-1100424387, Erste & Steiermärkische Bank
+Društvo je upisano u Registar Trgovačkog suda u Osijeku s temeljnim kapitalom od 20.000 kuna • Uprava: Eduard Werkmann
+Tel./fax: 031.205.266 • 031.400.249 • www.werkmann.hr • ured@werkmann.hr
 
 --- pág. 6 ---
 
@@ -305,330 +280,207 @@ Ostale kratkoročne obveze 4.335.384 2.146.382
 
 --- pág. 9 ---
 
-NK Osijek Osijek BILANCA
+NK Osijek Osijek                BILANCA
 
-Kratkoročna rezerviranja
-Ukupno - Kratkoročne obveze 8 166.751.550
-Dugoročne obveze
+| | Bilješka | 2019. | 2018. |
+|---|---|---|---|
+| Kratkoročna rezerviranja | | | |
+| **Ukupno - Kratkoročne obveze** | 8 | 166.751.550 | 109.092.772 |
+| **Dugoročne obveze** | | | |
+| Bankovni i drugi zajmovi | | | |
+| Obveze iz transfera igrača | | | |
+| Obveze prema subjektima grupe i drugim povezanim stranama | | 400.088 | 1.772.105 |
+| Obveze prema zaposlenicima | | | |
+| Obveze prema državi (porezi i doprinosi) | | | |
+| Obračunati troškovi i odgođeni prihodi | | | |
+| Ostale obveze za poreze | | | |
+| Dugoročna rezerviranja | | | |
+| Ostale dugoročne obveze | | 4.282.028 | 6.423.278 |
+| **Ukupno - Dugoročne obveze** | 7 | 4.682.116 | 8.195.383 |
+| **Ukupne obveze** | | 171.433.666 | 117.288.155 |
+| **Neto imovina/(obveze)** | | 31.007.130 | 28.705.047 |
+| **Kapital i rezerve** | | | |
+| Dionički/temeljni kapital | | 17.945.990 | 17.945.990 |
+| Zadržana dobit / (gubitak) | | 10.759.192 | -7.948.609 |
+| Ostale rezerve | | 897.300 | |
+| Dobit/gubitak tekućeg razdoblja | | 1.404.648 | 18.707.666 |
+| **Ukupno kapital i rezerve** | 6 | 31.007.130 | 28.705.047 |
+| **UKUPNO KAPITAL I OBVEZE** | | 202.440.796 | 145.993.202 |
 
-Bankovni i drugi zajmovi
-
-Obveze iz transfera igrača
-
-Obveze prema subjektima grupe i 400.088 1.772.105
-
-drugim povezanim stranama
-
-Obveze prema zaposlenicima
-
-Obveze prema državi (porezi i
-
-doprinosi)
-
-Obračunati troškovi i odgođeni
-
-prihodi
-
-Ostale obveze za poreze
-
-Dugoročna rezerviranja
-
-Ostale dugoročne obveze 4.282.028 6.423.278
-Ukupno - Dugoročne obveze 4.682.116 8.195.383
-Ukupne obveze 171.433.666 117.288.155
-Neto imovina/(obveze) 31.007.130 28.705.047
-Kapital i rezerve
-
-Dionički/temeljni kapital 17.945.990 17.945.990
-
-Zadržana dobit / (gubitak) 10.759.192 -7.948.609
-
-Ostale rezerve 897.300
-
-Dobit/gubitak tekućeg razdoblja 1.404.648 18.707.666
-
-Ukupno kapital i rezerve 31.007.130 28.705.047
-
-UKUPNO KAPITAL I OBVEZE 202.440.796 145.993.202
-
-Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana
-17.04.2020.
-
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana 17.04.2020.
 Financijske izvještaje u ime uprave potpisuje
 Igor Galić
 
-Potpisi pečat:
-(ao LA Osijek,17.04.2020.
+Potpis i pečat: [potpis i pečat]
 
+Osijek, 17.04.2020.
 
 --- pág. 10 ---
 
-NK OSIJEK Osijek RAČUN DOBITI I GUBITKA
-
+NK OSIJEK Osijek  
 RAČUN DOBITI I GUBITKA
 
+RAČUN DOBITI I GUBITKA  
 za godinu koja završava na dan 31.prosinca 2019. godine
 
-POZICIJE 2019. 2018.
-Bilješka kuna kuna
-br.
-PRIHODI
-Prihodi od ulaznica - Nacionalna natjecanja 1.577.088 533.152
-Prihodi od ulaznica - UEFA klupska natjecanja 685.310
-Prihodi od ulaznica - godišnje ulaznice 956.820 870.184
-Prihodi od ulaznica - Članarine 159.520 201.760
-Ostali nerazvrstani prihodi od ulaznica
-Prihodi od ulaznica - ukupno 1 2.293.428 2.290.406
-Prihod od sponzorstva i oglašavanja - Proizvođač
-opreme
-Prihod od sponzorstva i oglašavanja - Glavni sponzor 26.417.913 43.912.664
-Prihod od sponzorstva i oglašavanja - Sponzor za
-stadion
-Prihod od sponzorstva i oglašavanja - Reklamni panoi 39.259.066 3.936.629
-
-oko terena za igru
-Ostali nerazvrstani prihodi od sponzorstva i oglašavanja
-
-Prihod od sponzorstva i oglašavanja - Ukupno 1 65.676.979 47.849.293
-Prava emitiranja - Nacionalna natjecanja 2.134.563 1.293.993
-Ostali nerazvrstani prihodi od emitiranja
-
-Prihodi od prava emitiranja - Ukupno 1 2.134.563 1.293.993
-
-Komercijalni prihodi - Nacionalna natjecanja
-Komercijalni prihodi - Prodaja proizvoda 217.984 213.928
-
-Komercijalni prihodi - Korištenje objekata za vrijeme
-neodrigravanja utakmica
-
-Ostali nerazvrstani komercijalni prihodi
-
-Komercijalni prihodi - Ukupno | 217.984 213.928
-
-Uefina klupska natjecanja - prava emitiranja,
-komercijalni prihodi, nagrade
-
-Uefina klupska natjecanja - solidarne uplate 2.183.360 4.086.946
-
-Uefine nagrade i solidarne uplate - nerazvrstano
-
-gi za 1 2.183.360 4.086.946
-Donacije i dotacije ili drugi iznosi od nacionalnih 462.082 505.739
-nogometnih tijela
-Donacije i dotacije ili drugi iznosi od države i lokalne 766.902 900.000
-samouprave
-
-Donacije nepovezanih strana
-Donacije i doprinosi povezanih strana
-Prihodi od nenogometnih djelatnosti
-Izvanredni prihodi
-
+| POZICIJE | Bilješka br. | 2019. kuna | 2018. kuna |
+| :--- | :---: | :---: | :---: |
+| **PRIHODI** | | | |
+| Prihodi od ulaznica - Nacionalna natjecanja | | 1.577.088 | 533.152 |
+| Prihodi od ulaznica - UEFA klupska natjecanja | | | 685.310 |
+| Prihodi od ulaznica - godišnje ulaznice | | 556.820 | 870.184 |
+| Prihodi od ulaznica - Članarine | | 159.520 | 201.760 |
+| Ostali nerazvrstani prihodi od ulaznica | | | |
+| **Prihodi od ulaznica - ukupno** | 1 | **2.293.428** | **2.290.406** |
+| | | | |
+| Prihod od sponzorstva i oglašavanja - Proizvođač opreme | | | |
+| Prihod od sponzorstva i oglašavanja - Glavni sponzor | | 26.417.913 | 43.912.664 |
+| Prihod od sponzorstva i oglašavanja - Sponzor za stadion | | | |
+| Prihod od sponzorstva i oglašavanja - Reklamni panoi oko terena za igru | | 39.259.066 | 3.936.629 |
+| Ostali nerazvrstani prihodi od sponzorstva i oglašavanja | | | |
+| **Prihod od sponzorstva i oglašavanja - Ukupno** | 1 | **65.676.979** | **47.849.293** |
+| | | | |
+| Prava emitiranja - Nacionalna natjecanja | | 2.134.563 | 1.293.993 |
+| Ostali nerazvrstani prihodi od emitiranja | | | |
+| **Prihodi od prava emitiranja - Ukupno** | 1 | **2.134.563** | **1.293.993** |
+| | | | |
+| Komercijalni prihodi - Nacionalna natjecanja | | | |
+| Komercijalni prihodi - Prodaja proizvoda | | 217.984 | 213.928 |
+| Komercijalni prihodi - Korištenje objekata za vrijeme neodrigravanja utakmica | | | |
+| Ostali nerazvrstani komercijalni prihodi | | | |
+| **Komercijalni prihodi - Ukupno** | | **217.984** | **213.928** |
+| | | | |
+| Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade | | | |
+| Uefina klupska natjecanja - solidarne uplate | | 2.183.360 | 4.086.946 |
+| Uefine nagrade i solidarne uplate - nerazvrstano | | | |
+| **Uefine nagrade i solidarne uplate - Ukupno** | 1 | **2.183.360** | **4.086.946** |
+| | | | |
+| Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela | | 462.082 | 505.739 |
+| Donacije i dotacije ili drugi iznosi od države i lokalne samouprave | | 766.902 | 900.000 |
+| Donacije nepovezanih strana | | | |
+| Donacije i doprinosi povezanih strana | | | |
+| Prihodi od nenogometnih djelatnosti | | | |
+| Izvanredni prihodi | | | |
 
 --- pág. 11 ---
 
-NK OSIJEK Osijek
+NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA
 
-RAČUN DOBITI I GUBITKA
-Ostali nerazvrstani poslovni prihodi 2.540.688 1.225.840
-Ostali poslovni prihodi - Ukupno 3.769.672 2.631.579
-76.275.986 58.366.145
-RASHODI
-=. prodaje/materijala - SRERRIZALI - 231.504
-Plaće igrača - 33.652.227 - 26.723.408
-Porezi i doprinosi - igrači
-Ostali nerazvrstani troškovi primanja igrača -4.516.468 -3.797.860
-Troškovi primanja igrača - ukupno - 38.168.695 - 30.521.268
-Plaće ostalih zaposlenika 11.302.021 -10.415.481
-Porezi i doprinosi - ostali zaposlenici - 6.829.855 - 7.142.890
-Ostali nerazvrstani troškovi za primanja ostalih - 967.570 - 599.585
-zaposlenike
-Trošak primanja ostalih zaposlenika - Ukupno - 19.099.446 - 18.157.956
-- 57.268.141 - 48.679.223
-Umanjenje vrijednosti dugotrajne materijalne imovine - 763.312 - 564.416
-Amortizacija ostale nematerijalne imovine (bez - 1.573.950 - 1.573.950
-registracija igrača)
-ez + 2.337.262 - 2.138.366
-4 “i LERU z s = a i
-Pod e j češće nane
-Troškovi održavanja utakmica - 10.088.674 - 9.417.261
-Troškovi sponzorstva i oglašavanja - 3.733.059 - 2.122.730
-Troškovi komercijalnih aktivnosti - 737.625 - akv
-Troškovi posrednika - 184.770 1.377.76
-Troškovi imovine i objekata
-Troškovi za nenogometne djelatnosti - 11.447.983 - 11.156.121
-Izvanredni troškovi -71.914
-Ostali nerazvrstani poslovni rashodi
-- 11.553.538 - 10.054.408
-a PI mre - 37.745.649 - 34.244.700
-- 97.351.052 - 85.293.793
-Poslovni rezultat (bez registracije igrača) -21.075.066 -26.927.648
-
-Neto rezultat od raspolaganja registracijama igrača
-- po metodi kapitalizacije & amortizacije
-
+| | Bilješka br. | 2019. | 2018. |
+|---|---|---|---|
+| Ostali nerazvrstani poslovni prihodi | | 2.540.688 | 1.225.840 |
+| **Ostali poslovni prihodi - Ukupno** | 1 | 3.769.672 | 2.631.579 |
+| **Ukupno - Prihodi** | | 76.275.986 | 58.366.145 |
+| **RASHODI** | | | |
+| **Troškovi prodaje/materijala - Ukupno** | | | - 231.504 |
+| Plaće igrača | | - 33.652.227 | - 26.723.408 |
+| Porezi i doprinosi - igrači | | | |
+| Ostali nerazvrstani troškovi primanja igrača | | -4.516.468 | -3.797.860 |
+| **Troškovi primanja igrača - ukupno** | 2 | - 38.168.695 | - 30.521.268 |
+| Plaće ostalih zaposlenika | | -11.302.021 | -10.415.481 |
+| Porezi i doprinosi - ostali zaposlenici | | - 6.829.855 | - 7.142.890 |
+| Ostali nerazvrstani troškovi za primanja ostalih zaposlenike | | - 967.570 | - 599.585 |
+| **Trošak primanja ostalih zaposlenika - Ukupno** | 2 | - 19.099.446 | - 18.157.956 |
+| **Ukupni troškovi primanja zaposlenika** | | - 57.268.141 | - 48.679.223 |
+| Umanjenje vrijednosti dugotrajne materijalne imovine | | - 763.312 | - 564.416 |
+| Amortizacija ostale nematerijalne imovine (bez registracija igrača) | | - 1.573.950 | - 1.573.950 |
+| **Smanjenje vrijednosti i amortizacija - Ukupno (bez registracija igrača)** | 2 | - 2.337.262 | - 2.138.366 |
+| Troškovi održavanja utakmica | | - 10.088.674 | - 9.417.261 |
+| Troškovi sponzorstva i oglašavanja | | - 3.733.059 | - 2.122.730 |
+| Troškovi komercijalnih aktivnosti | | - 737.625 | - 84.504 |
+| Troškovi posrednika | | - 184.770 | - 1.377.762 |
+| Troškovi imovine i objekata | | | |
+| Troškovi za nenogometne djelatnosti | | - 11.447.983 | - 11.156.121 |
+| Izvanredni troškovi | | | -71.914 |
+| Ostali nerazvrstani poslovni rashodi | | - 11.553.538 | - 10.054.408 |
+| **Ostali poslovni rashodi - Ukupno** | 2 | - 37.745.649 | - 34.244.700 |
+| **Ukupno - poslovni rashodi (bez registracija igrača)** | 2 | - 97.351.052 | - 85.293.793 |
+| **Poslovni rezultat (bez registracije igrača)** | | -21.075.066 | -26.927.648 |
+| **Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije & amortizacije** | | - | - |
 
 --- pág. 12 ---
 
-NK OSIJEK Osijek
+NK OSIJEK Osijek  
+RAČUN DOBITI I GUBITKA
 
-Troškovi za stjecanje registracija igrača
-Prihodi od raspolaganja registracijama igrača
+| POZICIJE | Bilješka br. | 2019. kuna | 2018. kuna |
+| :--- | :---: | :---: | :---: |
+| *Ispunjava samo izvještajni subjekt koji za registracije igrača primjenjuje metodu prihoda i rashoda* | | | |
+| Troškovi za stjecanje registracija igrača | | - 13.918.244 | - 4.471.211 |
+| Prihodi od raspolaganja registracijama igrača | | 37.452.392 | 49.487.232 |
+| **Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i rashoda** | | **23.534.148** | **45.016.021** |
+| | | | |
+| Dobit/ (gubitak) od raspolaganja dugotrajnom materijalnom imovinom | | | |
+| Dobit/ (gubitak) od raspolaganja ostalom dugotrajnom nematerijalnom imovinom | | | |
+| **Ukupna dobit /(gubitak) od raspolaganja dugotrajnom imovinom** | | | |
+| | | | |
+| Financijski prihodi | | 592.055 | 2.655.533 |
+| Financijski rashodi | | - 1.646.489 | - 2.001.523 |
+| **Ukupni neto prihod/rashod od financiranja** | | **- 1.054.434** | **654.010** |
+| | | | |
+| Ostali prihodi | | | |
+| Ostali rashodi | | | |
+| **Ukupni neposlovni prihodi/rashodi** | | | |
+| | | | |
+| **Porezni prihod/rashod** | | | **- 34.717** |
+| | | | |
+| **Dobit/(gubitak) poslije oporezivanja** | 3 | **1.404.648** | **18.707.666** |
 
-RAČUN DOBITI 1 GUBITKA
-
--13.918.244
-37.452.392
-
--4.471.211
-49.487.232
-
-Neto rezultat od raspolaganja registracijama igrača
-- po metodi prihoda i rashoda
-
-23.534.148
-
-45.016.021
-
-Dobit (gubitak) od raspolaganja dugotrajnom
-materijalnom imovinom
-
-Dobit/ (gubitak) od raspolaganja ostalom dugotrajnom
-nematerijalnom imovinom
-
-Ukupna dobit (gubitak) od raspolaganja
-dugotrajnom imovinom
-
-Financijski prihodi
-Financijski rashodi
-
-592.055
--1.646.489
-
-2.655.533
--2.001.523
-
-Ukupni neto prihod/rashod od financiranja
-
--1.054.434
-
-654.010
-
-Ostali prihodi
-Ostali rashodi
-
-Ukupni neposlovni prihodi/rashodi
-
-Porezni prihod/rashod
-
--34.717
-
-Dobit/(gubitak) poslije oporezivanja
-
-1.404.648
-
-18.707.666
-
-Financijske izvještaje odobrila je Uprava i dopustila
-objaYljivanje dana 17.04.2020. Financijske izvještaje u
-ime uprave potpisuje:
-
-Datum:
-
-17.04.2020.
-
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana 17.04.2020. Financijske izvještaje u ime uprave potpisuje:  
+Igor Galić  
+[potpis i pečat: NOGOMETNI KLUB OSIJEK s.d.d.]  
+Datum: 17.04.2020.
 
 --- pág. 13 ---
 
-NK Osijek Osijek
-
-Izvještaj o novčanom toku
-za godinu koja završava na dan 31. prosinca 2019.
-
+NK Osijek Osijek  
 IZVJEŠTAJ O NOVČANOM TOKU
 
-Gotovinski izdaci za stjecanje dugotrajne materijalne imovine
-Ostali gotovinski primici'izdaci od'za ulaganja
+Izvještaj o novčanom toku  
+za godinu koja završava na dan 31. prosinca 2019.
 
-Nerazvrstani gotovinski primici/izdaci od/za ulaganja
-Gotovinski priljev/odljev od ulaganja
+| Novčani tokovi | Bilješka br. | 2019. kuna | 2018. kuna |
+| :--- | :---: | :---: | :---: |
+| **Novčani tokovi od poslovnih aktivnosti (od redovnog poslovanja)** | | | |
+| Gotovinski primici od prihoda od ulaznica | | 2.174.308 | 2.625.242 |
+| Gotovinski primici od sponzorstava i oglašavanja | | 54.508.538 | 43.912.664 |
+| Gotovinski primici od prava emitiranja | | 1.338.583 | 939.787 |
+| Gotovinski primici od komercijalnih aktivnosti | | 311.625 | 116.137 |
+| Gotovinski primici od ostalih poslovnih aktivnosti | | 13.264.527 | 8.571.428 |
+| Gotovinski izdaci dobavljačima za proizvode i usluge | | - 39.229.817 | - 20.415.782 |
+| Gotovinski izdaci zaposlenicima i u ime zaposlenika | | - 52.577.821 | - 52.275.952 |
+| Gotovinski izdaci prema posrednicima | | - 185 | - 459.931 |
+| Gotovinski izdaci u vezi s ostalim poslovnim aktivnostima | | - 10.923.283 | - 9.027.178 |
+| **Gotovinski priljev/odljev od poslovnih aktivnosti (redovnog poslovanja)** | 10 | **- 31.133.525** | **- 26.013.585** |
+| | | | |
+| **Novčani tokovi od ulaganja** | | | |
+| Gotovinski primici od prodaje registracija igrača | | 42.374.074 | 36.426.098 |
+| Gotovinski izdaci za stjecanje registracija igrača | | - 12.245.981 | - 8.022.098 |
+| Gotovinski primici od prodaje dugotrajne materijalne imovine | | 3.750 | |
+| Gotovinski izdaci za stjecanje dugotrajne materijalne imovine | | - 52.066.182 | - 49.140.052 |
+| Ostali gotovinski primici/izdaci od/za ulaganja | | | |
+| Nerazvrstani gotovinski primici/izdaci od/za ulaganja | | | |
+| **Gotovinski priljev/odljev od ulaganja** | 10 | **- 21.934.339** | **- 20.736.052** |
+| | | | |
+| **Novčani tokovi od financiranja** | | | |
+| Gotovinski primici od pozajmica - dioničari i povezane strane | | | 15.947.422 |
+| Gotovinski izdaci za pozajmice - dioničari i povezane strane | | - 1.372.017 | - 1.372.017 |
+| Gotovinski primici od pozajmica - financijske institucije | | 22.177.091 | 28.895.392 |
+| Gotovinski izdaci za pozajmice - financijske institucije | | - 14.652.833 | - 12.504.733 |
+| Gotovinski primici od povećanja kapitala | | | 12.000.000 |
+| Gotovinski izdaci za dividende isplaćene vlasnicima/dioničarima | | | |
+| Ostali priljevi/odljevi od/za financiranja | | - 16.780.364 | |
+| Nerazvrstani gotovinski priljevi/odljevi od/za financiranja | | 48.738.286 | 32.786.563 |
+| **Gotovinski priljev/odljev od/za financiranja** | 10 | **38.110.163** | **75.752.627** |
+| Ostali gotovinski priljevi/odljevi | | | |
+| **Neto povećanje/smanjenje gotovog novca u izvještajnom razdoblju** | | **- 14.957.701** | **29.002.990** |
 
-Novčani tokovi od financiranja
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana 17.04.2020. Financijske izvještaje u ime uprave potpisuje:
 
-Gotovinski primici od pozajmica - dioničari i povezane strane
-Gotovinski izdaci za pozajmice - dioničari i povezane strane
-Gotovinski primici od pozajmica - financijske institucije
-Gotovinski izdaci za pozajmice - financijske institucije
-Gotovinski primici od povećanja kapitala
-
-Gotovinski izdaci ža dividende isplaćene vlasnicima dioničarima
-Ostali priljevi odljevi od/za financiranja
-
-Nerazvrstani gotovinski priljevi/odljevi od'za financiranja
-
-Gotovinski priljev/odljev od/za financiranja
-Ostali gotovinski priljevi/odljevi
-
-BJagradi
-
-Financijske izvještaje odobrila je Uprava i dopustila objavljivanj
-
-izvještaje u ime uprave potpisuje:
-
-Direktor
-
+Direktor  
+Igor Galić  
+[potpis i pečat: NOGOMETNI KLUB OSIJEK s.d.d.]  
 Datum: 17.04.2020.
-
-“e
-
-IT
-
-iFrad
-
-EIN
-
-Pazu
-
-10
-
--52.066.182
-
-Bilješka 2019. 2018.
-si kuna kuna
-
-Novčani tokovi od poslovnih aktivnosti (od redovnog poslovanja)
-Gotovinski primici od prihoda od ulaznica 2.174.308 2.625.242
-Gotovinski primici od sponzorstava i oglašavanja 54.508.538 43.912.664
-Gotovinski primici od prava emitiranja 1.338.583 939.787
-Gotovinski primici od komercijalnih aktivnosti 311.625 116.137
-Gotovinski primici od ostalih poslovnih aktivnosti 13.264.527 8.571.428
-Gotovinski izdaci dobavljačima za proizvode i usluge -39,229.817 -20.415.782
-Gotovinski izdaci zaposlenicima i u ime zaposlenika -52.577.821 -52.275.952
-Gotovinski izdaci prema posrednicima -185 -459.931
-Gotovinski izdaci u vezi s ostalim poslovnim aktivnostima -10.923.283 -9,027.178
-Gotovinski priljev/odljev od poslovnih aktivnosti (redovnog poslovanja) 10 -31.133.525 -26.013.585
-Novčani tokovi od ulaganja
-Gotovinski primici od prodaje registracija igrača 42.374.074 36.426.098
-Gotovinski izdaci za stjecanje registracija igrača -12.245.981 -8.022.098
-Gotovinski primici od prodaje dugotrajne materijalne imovine 3.750
-
--49. 140.052
-
--21.934.339 -20.736.052
-15.947.422
--1.372.017 -1.372.017
-
-22.177.091
-
-28.895.392
-
--14.652.833 -12.504.733
-12.000.000
--16.780.364
-48.738.286 32.786.563
-10 38.110.163 75.752.627
--14.957.701 29.002.990
-e dana 17.04.2020. Financijske
-
 
 --- pág. 14 ---
 
@@ -827,71 +679,88 @@ Uefine nagrade i solidarne uplate - Ukupno 2.183.360 4.086.946 53
 
 --- pág. 18 ---
 
-Ostali prihodi i sponzorstva
+#### Ostali prihodi i sponzorstva
 
-Pozicija 2019. godina 2018. godina Ix
-Donacije i dotacije ili drugi iznosi od nacionalnih
-nogometnih tijela 462.082 505.739 91
-Donacije i dotacije ili drugi iznosi od države i lokalne
-samouprave 766.902 900.000 85
-Donacije nepovezanih strana
-Donacije i doprinosi povezanih strana
-Prihodi od nenogometnih djelatnosti
-Izvanredni prihodi
-Ostali nerazvrstani poslovni prihodi 2.540.688 1.225.840 207
-Ostali poslovni prihodi - Ukupno 3.769.672 2.631.579 143
-Bilješka br. 2
-Rashodi
-Rashodi za plaće igrača
-Pozicija 2019. godina 2018. godina Ix
-Plaće igrača 33.652.227 26.723.408 126
-Porezi i doprinosi - igrači
-Ostali nerazvrstani troškovi primanja igrača 4.516.468 3.197.860 119
-Troškovi primanja igrača - ukupno 38.168.695 30.521.268 125
-Rashodi za plaće ostalih zaposlenika
-Pozicija 2019. godina 2018. godina ix
-Plaće ostalih zaposlenika 11.302.021 10.415.481 109
-Porezi i doprinosi - ostali zaposlenici 6.829.855 7.142.890 96
-Ostali nerazvrstani troškovi za primanja ostalih zaposlenike 967.570 599.585 161
-Trošak primanja ostalih zaposlenika - Ukupno 19.099.446 18.157.956 105
-Rashodi amortizacije
-Pozicija 2019. godina 2018. godina Ix
-Umanjenje vrijednosti dugotrajne materijalne imovine 763.312 564.416 133
-Amortizacija ostale nematerijalne imovine (bez registracija
-igrača) 1.573.950 1.573.950
-Smanjenje vrijednosti i amortizacija - Ukupno (bez
-registracija igrača) 2.331.262 2.138.366 109
+| Pozicija | 2019. godina | 2018. godina | Ix |
+| :--- | :---: | :---: | :---: |
+| Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela | 462.082 | 505.739 | 91 |
+| Donacije i dotacije ili drugi iznosi od države i lokalne samouprave | 766.902 | 900.000 | 85 |
+| Donacije nepovezanih strana | | | |
+| Donacije i doprinosi povezanih strana | | | |
+| Prihodi od nenogometnih djelatnosti | | | |
+| Izvanredni prihodi | | | |
+| Ostali nerazvrstani poslovni prihodi | 2.540.688 | 1.225.840 | 207 |
+| **Ostali poslovni prihodi - Ukupno** | **3.769.672** | **2.631.579** | **143** |
 
+*Bilješka br. 2*
+
+### Rashodi
+
+#### Rashodi za plaće igrača
+
+| Pozicija | 2019. godina | 2018. godina | Ix |
+| :--- | :---: | :---: | :---: |
+| Plaće igrača | 33.652.227 | 26.723.408 | 126 |
+| Porezi i doprinosi - igrači | | | |
+| Ostali nerazvrstani troškovi primanja igrača | 4.516.468 | 3.797.860 | 119 |
+| **Troškovi primanja igrača - ukupno** | **38.168.695** | **30.521.268** | **125** |
+
+#### Rashodi za plaće ostalih zaposlenika
+
+| Pozicija | 2019. godina | 2018. godina | Ix |
+| :--- | :---: | :---: | :---: |
+| Plaće ostalih zaposlenika | 11.302.021 | 10.415.481 | 109 |
+| Porezi i doprinosi - ostali zaposlenici | 6.829.855 | 7.142.890 | 96 |
+| Ostali nerazvrstani troškovi za primanja ostalih zaposlenike | 967.570 | 599.585 | 161 |
+| **Trošak primanja ostalih zaposlenika - Ukupno** | **19.099.446** | **18.157.956** | **105** |
+
+#### Rashodi amortizacije
+
+| Pozicija | 2019. godina | 2018. godina | Ix |
+| :--- | :---: | :---: | :---: |
+| Umanjenje vrijednosti dugotrajne materijalne imovine | 763.312 | 564.416 | 135 |
+| Amortizacija ostale nematerijalne imovine (bez registracija igrača) | 1.573.950 | 1.573.950 | |
+| **Smanjenje vrijednosti i amortizacija - Ukupno (bez registracija igrača)** | **2.337.262** | **2.138.366** | **109** |
+
+5.
 
 --- pág. 19 ---
 
-Ostali poslovni rashodi
+#### Ostali poslovni rashodi
 
-Pozicija 2019. godina 2018. godina Ix
-Troškovi održavanja utakmica 10.088.674 9.417.261 107
-Troškovi sponzorstva i oglašavanja 3.733.059 2.122.730 176
-Troškovi komercijalnih aktivnosti 737.625 84.504
-Troškovi posrednika 184.770 1.377.762
-Troškovi imovine i objekata
-Troškovi za nenogometne djelatnosti 11.447.983 11.156.121 103
-Izvanredni troškovi 71.914
-Ostali_nerazvrstani poslovni rashodi 11.553.538 10.054.408 115
-Ostali poslovni rashodi - Ukupno 37.745.649 34.284.700 110
-Rezultat raspolaganja igrača ( metoda prihoda i rashoda)
-Pozicija 2019. godina 2018. godina Ix
-Troškovi za stjecanje registracija igrača -13.918.244 -4.471.211 311
-Prihodi od raspolaganja registracijama igrača 31.452.392 49.487.232 76
-Neto rezultat od raspolaganja registracijama igrača - po
-metodi prihoda i rashoda 23.534.148 45.016.021 52
-Bilješka br. 3
-Poslovni rezultat nakon oporezivanja
-R. br. Opis Iznos
-1 Dobit prije oporezivanja (AOP 149) 1.404.648
-2 Gubitak prije oporezivanja (AOP 150)
-3 Porez na dobit (AOP 151)
-4 Dobit razdoblja nakon oporezivanja (AOP 153) 1.404.648
-5 Gubitak razdoblja nakon oporezivanja (AOP 154)
+| Pozicija | 2019. godina | 2018. godina | Ix |
+| :--- | :---: | :---: | :---: |
+| Troškovi održavanja utakmica | 10.088.674 | 9.417.261 | 107 |
+| Troškovi sponzorstva i oglašavanja | 3.733.059 | 2.122.730 | 176 |
+| Troškovi komercijalnih aktivnosti | 737.625 | 84.504 | |
+| Troškovi posrednika | 184.770 | 1.377.762 | |
+| Troškovi imovine i objekata | | | |
+| Troškovi za nenogometne djelatnosti | 11.447.983 | 11.156.121 | 103 |
+| Izvanredni troškovi | | 71.914 | |
+| Ostali nerazvrstani poslovni rashodi | 11.553.538 | 10.054.408 | 115 |
+| **Ostali poslovni rashodi - Ukupno** | **37.745.649** | **34.284.700** | **110** |
 
+#### Rezultat raspolaganja igrača ( metoda prihoda i rashoda)
+
+| Pozicija | 2019. godina | 2018. godina | Ix |
+| :--- | :---: | :---: | :---: |
+| Troškovi za stjecanje registracija igrača | -13.918.244 | -4.471.211 | 311 |
+| Prihodi od raspolaganja registracijama igrača | 37.452.392 | 49.487.232 | 76 |
+| **Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i rashoda** | **23.534.148** | **45.016.021** | **52** |
+
+*Bilješka br. 3*
+
+#### Poslovni rezultat nakon oporezivanja
+
+| R. br. | Opis | Iznos |
+| :---: | :--- | :---: |
+| 1 | Dobit prije oporezivanja (AOP 149) | 1.404.648 |
+| 2 | Gubitak prije oporezivanja (AOP 150) | |
+| 3 | Porez na dobit (AOP 151) | |
+| 4 | Dobit razdoblja nakon oporezivanja (AOP 153) | 1.404.648 |
+| 5 | Gubitak razdoblja nakon oporezivanja (AOP 154) | |
+
+6.
 
 --- pág. 20 ---
 

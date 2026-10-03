@@ -2,16 +2,17 @@
 --- pág. 1 ---
 
 SILKEBORG IF A/S
+
 ANSVEJ 104, 8600 SILKEBORG
 
 ÅRSRAPPORT
 
 1. JANUAR - 31. DECEMBER 2019
 
-Årsrapporten er fremlagt og godkendt på
-selskabets ordinære generalforsamling,
-den 22.0!1. 20,
+Årsrapporten er fremlagt og godkendt på selskabets ordinære generalforsamling,
+den 22.04.2020 [håndskrevet]
 
+[underskrift]
 dirigent
 
 CVR-NR. 26 39 77 31
@@ -228,81 +229,42 @@ MNE-nr. mne32122 MNE-nr. mne16549
 
 --- pág. 7 ---
 
+7
+
 HOVED- OG NØGLETAL
 
-2019 2018 2017 2016
-tkr. tkr. tkr. tkr.
-
-Resultatopgørelse
-Nettoomsætning 1... cccssssrrrrsesrrrnnnner 67.700 74.990 48.118 30.459
-Bruttoresultat……..........sssssssssrrsrrrer vsere 45.149 51.671 25.991 15.829
-Driftsresultat ……..........ssssssrrsrrsrrrserrerrerener 5.809 8.121 -8.951 -10.401
-Finansielle poster, Netto... -975 -1.085 -1.388 "477
-Årets resultat før Skat... 4.834 7.036 -10.339 -10.878
-Årets resultat ….........ssscrrreerrerssrrsrrrrrenee 4.834 7.036 -10.339 -10.878
-Balance
-BalancesUuM  222suecerrsrrrrssrsernenns kernen 109.567 100.057 99.388 77.271
-Egenkapital …......usssseseesersesrrrrrerrnensenneee 50.772 35.938 18.902 9.242
-Pengestrømme
-Pengestrømme fra driftsaktivitet..[.[.[..[.1… -26.153 -23.960 -1.921 -19.522
-Pengestrømme fra investeringsaktivitet…. 21.199 19.694 -25.338 "44.811
-Pengestrømme fra finansieringsaktivitet. 5.625 5.720 26.218 64.622
-Pengestrømme i alt…..........sssccccserereeee 671 1.454 -1.041 289
-Investeringer i materielle anlægsaktiver. -2.129 -3.355 -44.754 -48.019
-Nøgletal
-Bruttomargin 22 irersesrerrrrrnner 66,7 68,9 54,0 52,0
-Overskudsgrad 1cusssesersrsssrrseresssnrree 8,6 10,8 -18,6 -34,1
-Soliditetsgrad. serene 46,3 35,9 19,0 12,0
-Egenkapitalforrentning sner: 11,1 25,7 -0,2 -246,0
+| | 2019 tkr. | 2018 tkr. | 2017 tkr. | 2016 tkr. | 2015 tkr. |
+|---|---|---|---|---|---|
+| **Resultatopgørelse** | | | | | |
+| Nettoomsætning | 67.700 | 74.990 | 48.118 | 30.459 | 29.870 |
+| Bruttoresultat | 45.149 | 51.671 | 25.991 | 15.829 | 16.859 |
+| Driftsresultat | 5.809 | 8.121 | -8.951 | -10.401 | -12.648 |
+| Finansielle poster, netto | -975 | -1.085 | -1.388 | -477 | -451 |
+| Årets resultat før skat | 4.834 | 7.036 | -10.339 | -10.878 | -13.099 |
+| Årets resultat | 4.834 | 7.036 | -10.339 | -10.878 | -13.254 |
+| **Balance** | | | | | |
+| Balancesum | 109.567 | 100.057 | 99.388 | 77.277 | 28.489 |
+| Egenkapital | 50.772 | 35.938 | 18.902 | 9.242 | -398 |
+| **Pengestrømme** | | | | | |
+| Pengestrømme fra driftsaktivitet | -26.153 | -23.960 | -1.921 | -19.522 | -8.615 |
+| Pengestrømme fra investeringsaktivitet | 21.199 | 19.694 | -25.338 | -44.811 | 1.664 |
+| Pengestrømme fra finansieringsaktivitet | 5.625 | 5.720 | 26.218 | 64.622 | 6.995 |
+| Pengestrømme i alt | 671 | 1.454 | -1.041 | 289 | 44 |
+| Investeringer i materielle anlægsaktiver | -2.129 | -3.355 | -44.754 | -48.019 | 1.122 |
+| **Nøgletal** | | | | | |
+| Bruttomargin | 66,7 | 68,9 | 54,0 | 52,0 | 56,4 |
+| Overskudsgrad | 8,6 | 10,8 | -18,6 | -34,1 | -42,3 |
+| Soliditetsgrad | 46,3 | 35,9 | 19,0 | 12,0 | -1,4 |
+| Egenkapitalforrentning | 11,1 | 25,7 | -0,2 | -246,0 | -695,4 |
 
 De i hoved- og nøgletalsoversigten anførte nøgletal er beregnet således:
 
-Bruttoresultat x 100
+- Bruttomargin: Bruttoresultat x 100 / Nettoomsætning
+- Overskudsgrad: Driftsresultat x 100 / Nettoomsætning
+- Soliditetsgrad: Egenkapital ekskl. minoriteter x 100 / Passiver i alt, ultimo
+- Egenkapitalforrentning: Resultat efter skat x 100 / Gennemsnitlig egenkapital
 
-Bruttomargin:
-
-2015
-tkr.
-
-29.870
-16.859
--12.648
--451
--13.099
--13.254
-
-28.489
--398
-
-8,615
-1.664
-6.995
-
-44
-1.122
-
-56,4
--42,3
--1,4
--695,4
-
-Nettoomsætning
-
-É Driftsresultat x 100
-
-Overskudsgrad: Nettoomsætning
-Soliditetsgrad: Egenkapital ekskl. minoriteter x 100
-
-Passiver i alt, ultimo
-
-Resultat efter skat x 100
-Gennemsnitlig egenkapital
-
-Egenkapitalforrentning:
-
-Hoved- og nøgletal er defineret og beregnet i overensstemmelse med Finansforeningens gældende
-
-version af "Anbefalinger og nøgletal.
+Hoved- og nøgletal er defineret og beregnet i overensstemmelse med Finansforeningens gældende version af "Anbefalinger og nøgletal.
 
 --- pág. 8 ---
 

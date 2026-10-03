@@ -11,194 +11,106 @@ YJYy TIVaSSNI ASH
 --- pág. 2 ---
 
 JAHRESABSCHLUSS
+2
 
-BILANZ ZUM 30. JUNI 2022
+# BILANZ ZUM 30. JUNI 2022
 
-AKTIVA 30.06.2022 30.06.2021
-
-EUR EUR
-A. Anlagevermögen
-I. Immaterielle Vermögensgegenstände
-1. Spielernutzungsrechte 5.111.278,25 6.083.388,65
-2. Markenwerte 41.221.628,66 41.221.628,66
-3. Entgeltlich erworbene Software 11.640,36 29.320,10
-" natarelle VormogensSegenstände 2.869.986, 75 0,00
-49.214.534,02 47.334.337,41
-Il. Sachanlagen
-1. Grundstücke, grundstücksgleiche Rechte und Bauten
-einschließlich der Bauten auf fremden Grundstücken 36.865.438,08 39.083.870,08
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung 3.446.956,56 4.103.886,37
-3. Geleistete Anzahlungen und Anlagen im Bau 2.034.589,05 209.021,60
-
-42.346.983,69 43.396.778,05
-Ill. Finanzanlagen
-
-Beteiligungen 292.645,66 291.395,66
-292.645,66 291.395,66
-91.854.163,37 91.022.511,12
-
-B. Umlaufvermögen
-
-I. Vorräte
-
-Waren 988.353,12 1.338.422,65
-
-Il. Forderungen und sonstige Vermögensgegenstände
-1. Forderungen aus Lieferungen und Leistungen 5.264.639,73 4.779.081,41
-2. Forderungen aus Transfer 4.886.769,04 258.840,28
-3. Forderungen gegen verbundene Unternehmen 48.305,06 70.153,53
-4. Sonstige Vermögensgegenstände 2.001.296,60 25.163.866,46
-12.201.010,43 30.271.941,68
-Ill. Kassenbestand, Guthaben bei Kreditinstituten 9.795.652,12 2.299.173,89
-22.985.015,67 33.909.538,22
-C. Rechnungsabgrenzungsposten 935.317,07 888.625,73
-
-SUMME AKTIVA 115.774.496,11 125.820.675,07
-
-®
+| AKTIVA | 30.06.2022 EUR | 30.06.2021 EUR |
+|---|---:|---:|
+| **A. Anlagevermögen** | | |
+| **I. Immaterielle Vermögensgegenstände** | | |
+| 1. Spielernutzungsrechte | 5.111.278,25 | 6.083.388,65 |
+| 2. Markenwerte | 41.221.628,66 | 41.221.628,66 |
+| 3. Entgeltlich erworbene Software | 11.640,36 | 29.320,10 |
+| 4. Geleistete Anzahlungen auf immaterielle Vermögensgegenstände | 2.869.986,75 | 0,00 |
+| | **49.214.534,02** | **47.334.337,41** |
+| **II. Sachanlagen** | | |
+| 1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken | 36.865.438,08 | 39.083.870,08 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 3.446.956,56 | 4.103.886,37 |
+| 3. Geleistete Anzahlungen und Anlagen im Bau | 2.034.589,05 | 209.021,60 |
+| | **42.346.983,69** | **43.396.778,05** |
+| **III. Finanzanlagen** | | |
+| Beteiligungen | 292.645,66 | 291.395,66 |
+| | **292.645,66** | **291.395,66** |
+| | **91.854.163,37** | **91.022.511,12** |
+| **B. Umlaufvermögen** | | |
+| **I. Vorräte** | | |
+| Waren | **988.353,12** | **1.338.422,65** |
+| **II. Forderungen und sonstige Vermögensgegenstände** | | |
+| 1. Forderungen aus Lieferungen und Leistungen | 5.264.639,73 | 4.779.081,41 |
+| 2. Forderungen aus Transfer | 4.886.769,04 | 258.840,28 |
+| 3. Forderungen gegen verbundene Unternehmen | 48.305,06 | 70.153,53 |
+| 4. Sonstige Vermögensgegenstände | 2.001.296,60 | 25.163.866,46 |
+| | **12.201.010,43** | **30.271.941,68** |
+| **III. Kassenbestand, Guthaben bei Kreditinstituten** | **9.795.652,12** | **2.299.173,89** |
+| | **22.985.015,67** | **33.909.538,22** |
+| **C. Rechnungsabgrenzungsposten** | **935.317,07** | **888.625,73** |
+| **SUMME AKTIVA** | **115.774.496,11** | **125.820.675,07** |
 
 --- pág. 3 ---
 
 JAHRESABSCHLUSS
+3
 
-BILANZ ZUM 30. JUNI 2022
+# BILANZ ZUM 30. JUNI 2022
 
-EUR EUR
-A. Eigenkapital
-I. Gezeichnetes Kapital 4.660.452,00 4.625.384,00
-Il. Kapitalrücklage 93.213.868,00 91.004.584,00
-Ill. Gewinnrücklagen
-1. Gesetzliche Rücklage 6.710,94 6.710,94
-2. Andere Gewinnrücklagen 8.307,62 8.307,62
-15.018,56 15.018,56
-IV. Verlustvortrag -63.888.034,31 -59.198.831,54
-V. Jahresüberschuss/Jahresfehlbetrag (-) 1.046.185,77 -4.689.202,77
-35.047.490,02 31.756.952,25
-B. Rückstellungen
-1. Steuerrückstellungen 143.147,85 143.147,85
-2. Sonstige Rückstellungen 4.987.049,73 5.439.504,83
-5.130.197,58 5.582.652,68
-C. Verbindlichkeiten
-1. Anleihen 16.243.994,16 19.381.342,09
-2. Verbindlichkeiten gegenüber Kreditinstituten 300.000,00 300.000,00
-3. Verbindlichkeiten aus Lieferungen und Leistungen 3.547.773,24 4.086.919,24
-4. Verbindlichkeiten aus Transfer 3.042.844,23 2.110.946,58
-5. Verbindlichkeiten gegenüber verbundenen Unternehmen 0,00 0,00
-6. Sonstige Verbindlichkeiten 30.975.435,98 43.516.182,91
-- davon aus Steuern EUR 7.068.790,70
-(iVj. EUR 2.235.006,95) -
-- davon im Rahmen der sozialen Sicherheit EUR 15.945,60
-(iVj. EUR 3.130,19) -
-54.110.047,61 69.395.390,82
-D. Rechnungsabgrenzungsposten 21.486.760,90 19.085.679,32
-
-®
+| PASSIVA | 30.06.2022 EUR | 30.06.2021 EUR |
+|---|---:|---:|
+| **A. Eigenkapital** | | |
+| **I. Gezeichnetes Kapital** | **4.660.452,00** | **4.625.384,00** |
+| **II. Kapitalrücklage** | **93.213.868,00** | **91.004.584,00** |
+| **III. Gewinnrücklagen** | | |
+| 1. Gesetzliche Rücklage | 6.710,94 | 6.710,94 |
+| 2. Andere Gewinnrücklagen | 8.307,62 | 8.307,62 |
+| | **15.018,56** | **15.018,56** |
+| **IV. Verlustvortrag** | **-63.888.034,31** | **-59.198.831,54** |
+| **V. Jahresüberschuss/Jahresfehlbetrag (-)** | **1.046.185,77** | **-4.689.202,77** |
+| | **35.047.490,02** | **31.756.952,25** |
+| **B. Rückstellungen** | | |
+| 1. Steuerrückstellungen | 143.147,85 | 143.147,85 |
+| 2. Sonstige Rückstellungen | 4.987.049,73 | 5.439.504,83 |
+| | **5.130.197,58** | **5.582.652,68** |
+| **C. Verbindlichkeiten** | | |
+| 1. Anleihen | 16.243.994,16 | 19.381.342,09 |
+| 2. Verbindlichkeiten gegenüber Kreditinstituten | 300.000,00 | 300.000,00 |
+| 3. Verbindlichkeiten aus Lieferungen und Leistungen | 3.547.773,24 | 4.086.919,24 |
+| 4. Verbindlichkeiten aus Transfer | 3.042.844,23 | 2.110.946,58 |
+| 5. Verbindlichkeiten gegenüber verbundenen Unternehmen | 0,00 | 0,00 |
+| 6. Sonstige Verbindlichkeiten | 30.975.435,98 | 43.516.182,91 |
+| – davon aus Steuern EUR 7.068.790,70 (i.Vj. EUR 2.235.006,95) – | | |
+| – davon im Rahmen der sozialen Sicherheit EUR 15.945,60 (i.Vj. EUR 3.130,19) – | | |
+| | **54.110.047,61** | **69.395.390,82** |
+| **D. Rechnungsabgrenzungsposten** | **21.486.760,90** | **19.085.679,32** |
+| **SUMME PASSIVA** | **115.774.496,11** | **125.820.675,07** |
 
 --- pág. 4 ---
 
 JAHRESABSCHLUSS
+4
 
-GEWINN- UND VERLUSTRECHNUNG
+# GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022
 
-FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022
-
-01.07.2021-
-30.06.2022
-
-1. Umsatzerlöse
-
-2. Sonstige betriebliche Erträge .
-
-3. Materalaufwndd 0°
-Aufwendungen für bezogene Waren
-
-4. Personalaufwndd .
-a) Löhne und Gehälter
-
-b) Soziale Abgaben und Aufwendungen für
-Altersversorgung und für Unterstützung
-
-- davon für Altersversorgung
-EUR 52.769,68 (i. Vj. EUR 53.746,06) -
-
-Sonstige Zinsen und ähnliche Erträge
-
-eo»
-
-‚9. Zinsen und ähnliche Aufwendungen
-10. Steuern vom Einkommen und vom Ertrag.
-
-M. Ergebnis nach Steem—7376
-
-12. Sonstige Steuern
-3. Jahresüberschuss/-fehlbetrag
-
-15. Bilanzverlust
-
-Abschreibungen auf Finanzanlagen [EEE .
-2.607.819,87°
-
-EUR
-
-88.986.958,62
-
-62T
-
-35.000.031,81
-
-4.226.481,08
-
-nn mn I OT ae
-5. Abschreibungen auf immaterielle Vermögensgegenstände
-
-des Anlagevermögens und Sachanlageen 2...
-Sonstige betriebliche Aufwendungen
-
-0,00
-
-0,00
-
-209. 083, 15
-
-_ 1.046.185,77 °
-
-14. Verlustvortrag aus dem Vorjaht”_—0565663.888.03431
-
--62.841. 848, 54
-
-8.568.552,35
-39.641.78286
-
-1.255.268,92
-
-01.07.2020 -
-
-30.06.2021
-EUR
-
-55.791.032,97
-29. 386. 621 ‚39
-
-36.149.578,60
-
-3.852.090,70
-
-„40.001.669,30
-
-28.270. 165 150
-
-1.576. 628, .08
-
-2.958.494,64
-
--214. 863, 53
-
--4.567.238,1
-
-121. 964, 66
-
-74689.202,77
--63.888.034,31
+| | 01.07.2021–30.06.2022 EUR | 01.07.2020–30.06.2021 EUR |
+|---|---:|---:|
+| 1. Umsatzerlöse | 88.986.958,62 | 55.791.032,97 |
+| 2. Sonstige betriebliche Erträge | 6.412.197,14 | 29.386.621,39 |
+| 3. Materialaufwand | | |
+| Aufwendungen für bezogene Waren | 4.102.254,60 | 4.404.287,61 |
+| 4. Personalaufwand | | |
+| a) Löhne und Gehälter | 35.000.031,81 | 36.149.578,60 |
+| b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung – davon für Altersversorgung EUR 52.769,68 (i. Vj. EUR 53.746,06) – | 4.226.481,08 | 3.852.090,70 |
+| | 39.226.512,89 | 40.001.669,30 |
+| 5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen | 8.568.552,35 | 12.751.114,62 |
+| 6. Sonstige betriebliche Aufwendungen | 39.641.782,86 | 28.270.765,15 |
+| 7. Sonstige Zinsen und ähnliche Erträge | 3.035,73 | 3.203,40 |
+| 8. Abschreibungen auf Finanzanlagen | 0,00 | 1.576.628,08 |
+| 9. Zinsen und ähnliche Aufwendungen | 2.607.819,87 | 2.958.494,64 |
+| 10. Steuern vom Einkommen und vom Ertrag | 0,00 | -214.863,53 |
+| **11. Ergebnis nach Steuern** | **1.255.268,92** | **-4.567.238,11** |
+| 12. Sonstige Steuern | 209.083,15 | 121.964,66 |
+| **13. Jahresüberschuss/-fehlbetrag** | **1.046.185,77** | **-4.689.202,77** |
+| 14. Verlustvortrag aus dem Vorjahr | -63.888.034,31 | -59.198.831,54 |
+| **15. Bilanzverlust** | **-62.841.848,54** | **-63.888.034,31** |
 
 --- pág. 5 ---
 
@@ -296,83 +208,33 @@ Z
 --- pág. 6 ---
 
 JAHRESABSCHLUSS
+6
 
-Forderungen und sonstige Vermögensgegenstände
-werden zu Nennwerten abzüglich der Wertabschläge
-für erkennbare Einzelrisiken und für das allgemeine Kre-
-ditrisiko bilanziell berücksichtigt.
+Forderungen und sonstige Vermögensgegenstände werden zu Nennwerten abzüglich der Wertabschläge für erkennbare Einzelrisiken und für das allgemeine Kreditrisiko bilanziell berücksichtigt.
 
-Forderungen gegen und Verbindlichkeiten gegenüber
-demselben verbundenen Unternehmen werden gemäß
-dem Bilanzierungswahlrecht saldiert ausgewiesen.
+Forderungen gegen und Verbindlichkeiten gegenüber demselben verbundenen Unternehmen werden gemäß dem Bilanzierungswahlrecht saldiert ausgewiesen.
 
 Die liquiden Mittel werden zum Nennwert ausgewiesen.
 
-Insbesondere aus den in den Vorjahren aufgedeckten
-stillen Reserven in den Markenrechten und dem Sta-
-dionwert resultieren aufgrund des unterschiedlichen
-Ansatzes zwischen Handels- und Steuerrecht passive
-latente Steuern. Aktive latente Steuern ergeben sich
-insbesondere aufgrund steuerlicher Verlustvorträge.
-Die Bewertung der latenten Steuern erfolgt mit einem
-durchschnittlichen Steuersatz von 32,3% (i. Vj. 32,3%).
-Nach Saldierung der latenten Steuern ergibt sich ein ak-
-tiver latenter Steuerüberhang. Die Gesellschaft übt das
-gemäß $ 274 Abs. 1 Satz 2 HGB gewährte Aktivierungs-
-wahlrecht analog zum Vorjahr nicht aus und verzichtet
-auf den Ausweis von aktiven latenten Steuern.
+Insbesondere aus den in den Vorjahren aufgedeckten stillen Reserven in den Markenrechten und dem Stadionwert resultieren aufgrund des unterschiedlichen Ansatzes zwischen Handels- und Steuerrecht passive latente Steuern. Aktive latente Steuern ergeben sich insbesondere aufgrund steuerlicher Verlustvorträge. Die Bewertung der latenten Steuern erfolgt mit einem durchschnittlichen Steuersatz von 32,3% (i. Vj. 32,3%). Nach Saldierung der latenten Steuern ergibt sich ein aktiver latenter Steuerüberhang. Die Gesellschaft übt das gemäß § 274 Abs. 1 Satz 2 HGB gewährte Aktivierungswahlrecht analog zum Vorjahr nicht aus und verzichtet auf den Ausweis von aktiven latenten Steuern.
 
-Das Grundkapital ist zum Nennbetrag angesetzt und be-
-inhaltet 4.660.432 (i. Vj. 4.625.384) Nennbetragsaktien
-mit einem Nennbetrag von je EUR 1,00.
+Das Grundkapital ist zum Nennbetrag angesetzt und beinhaltet 4.660.452 (i. Vj. 4.625.384) Nennbetragsaktien mit einem Nennbetrag von je EUR 1,00.
 
-Die sonstigen Rückstellungen berücksichtigen alle un-
-gewissen Verbindlichkeiten und drohenden Verluste aus
-schwebenden Geschäften. Sie werden nach vernünftiger
-und kaufmännischer Beurteilung in Höhe des notwendi-
-gen Erfüllungsbetrags passiviert. Zukünftige Preis- und
-Kostensteigerungen werden, soweit erforderlich, bei
-der Ermittlung des Erfüllungsbetrags in Höhe der all-
-gemeinen Inflationsrate berücksichtigt. Rückstellungen
-mit einer Restlaufzeit von mehr als einem Jahr werden
-nach $ 253 Abs. 2 HGB auf den Abschlussstichtag ab-
-gezinst. Die Erfolgswirkung aus der Änderung des Ab-
-zinsungssatzes wird im Finanzergebnis ausgewiesen.
+Die sonstigen Rückstellungen berücksichtigen alle ungewissen Verbindlichkeiten und drohenden Verluste aus schwebenden Geschäften. Sie werden nach vernünftiger und kaufmännischer Beurteilung in Höhe des notwendigen Erfüllungsbetrags passiviert. Zukünftige Preis- und Kostensteigerungen werden, soweit erforderlich, bei der Ermittlung des Erfüllungsbetrags in Höhe der allgemeinen Inflationsrate berücksichtigt. Rückstellungen mit einer Restlaufzeit von mehr als einem Jahr werden nach § 253 Abs. 2 HGB auf den Abschlussstichtag abgezinst. Die Erfolgswirkung aus der Änderung des Abzinsungssatzes wird im Finanzergebnis ausgewiesen.
 
-Die Bewertung der Verbindlichkeiten erfolgt zum
-Erfüllungsbetrag.
+Die Bewertung der Verbindlichkeiten erfolgt zum Erfüllungsbetrag.
 
-II. ERLÄUTERUNGEN ZUR BILANZ
-Anlagevermögen
+III. ERLÄUTERUNGEN ZUR BILANZ
 
-Die Entwicklung der einzelnen Posten des Anlagever-
-mögens ist, unter Angabe der Abschreibungen bis zum
-30. Juni 2022, in dem Anhang als Anlage beigefügten
-Anlagenspiegel dargestellt.
+## Anlagevermögen
 
-Die Abschreibungen auf Spielernutzungsrechte beinhal-
-ten außerplanmäßige Abschreibungen in Höhe von TEUR
-978 (i. Vj. TEUR 814).
+Die Entwicklung der einzelnen Posten des Anlagevermögens ist, unter Angabe der Abschreibungen bis zum 30. Juni 2022, in dem Anhang als Anlage beigefügten Anlagenspiegel dargestellt.
 
-Die Gesellschaft ist mit TEUR 19 (74,9%) am Stammkapi-
-tal in Höhe von TEUR 25 der HSV-Campus gemeinnützi-
-ge GmbH (Beteiligung im Sinne von $ 271 Abs. 1HGB) mit
-Sitz in Hamburg (HRB 135632) beteiligt. Der vorläufige
-Jahresabschluss zum 30. Juni 2022 der HSV-Campus
-gemeinnützige GmbH weist einen Jahresfehlbetrag in
-Höhe von TEUR 126 sowie ein Eigenkapital in Höhe von
-TEUR 484 aus.
+Die Abschreibungen auf Spielernutzungsrechte beinhalten außerplanmäßige Abschreibungen in Höhe von TEUR 978 (i. Vj. TEUR 814).
 
-Darüber hinaus ist die Gesellschaft mit TEUR 251 (25,1%)
-am Stammkapital in Höhe von TEUR 1.000 der Athle-
-ticum am Volkspark GmbH (Beteiligung im Sinne von
-S 271 Abs. 1 HGB) mit Sitz in Hamburg (HRB 150686)
-beteiligt. Der letzte vorliegende Jahresabschluss zum
-31. Dezember 2020 der Athleticum am Volkspark GmbH
-wies einen Jahresfehlbetrag in Höhe von TEUR 63 sowie
-ein Eigenkapital in Höhe von TEUR 203 aus.
+Die Gesellschaft ist mit TEUR 19 (74,9%) am Stammkapital in Höhe von TEUR 25 der HSV-Campus gemeinnützige GmbH (Beteiligung im Sinne von § 271 Abs. 1 HGB) mit Sitz in Hamburg (HRB 135632) beteiligt. Der vorläufige Jahresabschluss zum 30. Juni 2022 der HSV-Campus gemeinnützige GmbH weist einen Jahresfehlbetrag in Höhe von TEUR 126 sowie ein Eigenkapital in Höhe von TEUR 484 aus.
 
-°
+Darüber hinaus ist die Gesellschaft mit TEUR 251 (25,1 %) am Stammkapital in Höhe von TEUR 1.000 der Athleticum am Volkspark GmbH (Beteiligung im Sinne von § 271 Abs. 1 HGB) mit Sitz in Hamburg (HRB 150686) beteiligt. Der letzte vorliegende Jahresabschluss zum 31. Dezember 2020 der Athleticum am Volkspark GmbH wies einen Jahresfehlbetrag in Höhe von TEUR 63 sowie ein Eigenkapital in Höhe von TEUR 203 aus.
 
 --- pág. 7 ---
 
@@ -466,106 +328,69 @@ sowie Rückstellungen für Zinsen aus Betriebsprüfungen
 --- pág. 8 ---
 
 JAHRESABSCHLUSS
-Verbindlichkeiten
-[4
-Gesamt- mehr als besicherte
-betrag 5 Jahre Beträge
-TEUR TEUR TEUR
+8
 
-Anleihen 16.244 2.095 14.149 (6) (6)
-(i. Vj.) (19.381) (3.578) (15.803) (0) (0)
-Verbindlichkeiten gegenüber
-Kreditinstituten 300 0 300 0 0
-(i. Vj.) (300) (0) (300) (0) (0)
-Verbindlichkeiten aus Lieferungen
-und Leistungen 3.548 3.548 (6) (6) (0)
-(i. Vj.) (4.087) (4.042) (45) (0) (0)
-Verbindlichkeiten aus Transfer 3.043 2.162 881 0 0
-(i. Vj.) (2.111) (1.749) (362) (0) (0)
-sonstige Verbindlichkeiten 30.975 13.975 17.000 (6) 20.792
-(i. Vj.) (43.516) (19.741) (23.775) (4.000) (24.950)
-Summe 54.110 21.780 32.330 [0] 20.792
-(i. Vj.) (69.395) (29.110) (40.285) (4.000) (24.950)
+## Verbindlichkeiten
 
-Die Anleihen beziehen sich auf die Emission von Inhaberschuldverschreibungen in einem Volumen von TEUR 17.458
-im März 2019.
+| | Gesamtbetrag TEUR | RLZ bis 1 Jahr TEUR | RLZ über 1 Jahr TEUR | RLZ mehr als 5 Jahre TEUR | besicherte Beträge TEUR |
+|---|---:|---:|---:|---:|---:|
+| Anleihen | 16.244 | 2.095 | 14.149 | 0 | 0 |
+| (i. Vj.) | (19.381) | (3.578) | (15.803) | (0) | (0) |
+| Verbindlichkeiten gegenüber Kreditinstituten | 300 | 0 | 300 | 0 | 0 |
+| (i. Vj.) | (300) | (0) | (300) | (0) | (0) |
+| Verbindlichkeiten aus Lieferungen und Leistungen | 3.548 | 3.548 | 0 | 0 | 0 |
+| (i. Vj.) | (4.087) | (4.042) | (45) | (0) | (0) |
+| Verbindlichkeiten aus Transfer | 3.043 | 2.162 | 881 | 0 | 0 |
+| (i. Vj.) | (2.111) | (1.749) | (362) | (0) | (0) |
+| sonstige Verbindlichkeiten | 30.975 | 13.975 | 17.000 | 0 | 20.792 |
+| (i. Vj.) | (43.516) | (19.741) | (23.775) | (4.000) | (24.950) |
+| **Summe** | **54.110** | **21.780** | **32.330** | **0** | **20.792** |
+| **(i. Vj.)** | **(69.395)** | **(29.110)** | **(40.285)** | **(4.000)** | **(24.950)** |
 
-Die sonstigen Verbindlichkeiten enthalten Verbindlich- grenzten Zinsaufwendungen in Höhe von TEUR 20.792.
-keiten für ein Schuldscheindarlehen nebst hierfür abge- Dieser Betrag ist grundpfandrechtlich besichert.
+Die Anleihen beziehen sich auf die Emission von Inhaberschuldverschreibungen in einem Volumen von TEUR 17.458 im März 2019.
+
+Die sonstigen Verbindlichkeiten enthalten Verbindlichkeiten für ein Schuldscheindarlehen nebst hierfür abgegrenzten Zinsaufwendungen in Höhe von TEUR 20.792. Dieser Betrag ist grundpfandrechtlich besichert.
 
 --- pág. 9 ---
 
 JAHRESABSCHLUSS
+9
 
 IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG
 
-Umsatzerlöse
+## Umsatzerlöse
 
-Die Umsatzerlöse in Höhe von TEUR 88.987 wurden im Geschäftsjahr 2021/22 im Wesentlichen im Inland erzielt
+Die Umsatzerlöse in Höhe von TEUR 88.987 wurden im Geschäftsjahr 2021/22 im Wesentlichen im Inland erzielt und gliedern sich in die folgenden Bereiche:
 
-und gliedern sich in die folgenden Bereiche:
+| Umsatzerlöse | 2021/22 TEUR | 2021/22 % | 2020/21 TEUR | 2020/21 % |
+|---|---:|---:|---:|---:|
+| Spielbetrieb | 22.598 | 25,4 | 567 | 1,0 |
+| Werbung | 12.663 | 14,2 | 10.659 | 19,1 |
+| Mediale Verwertungsrechte | 22.837 | 25,7 | 23.560 | 42,2 |
+| Transferentschädigungen | 9.673 | 10,9 | 4.796 | 8,6 |
+| Merchandising & Catering | 10.693 | 12,0 | 9.157 | 16,4 |
+| Sonstige Erlöse | 10.523 | 11,8 | 7.052 | 12,7 |
+| **Summe** | **88.987** | **100,0** | **55.791** | **100,0** |
 
-TEUR % TEUR %
-Spielbetrieb 22.598 25,4 567 1,0
-Werbung a PeizE en oa a
-Mediale Verwertungsrechte nn 57 nn Pe a
-Transferentschädigungen EEE 03 EEE 36 a
-erchandising & Catering a 20 EEE 6a a
-SonstigeElöse 1053 18 102.37
-Summe 88.987 100,0 55.791 100,0
+Die sonstigen Erlöse beinhalten periodenfremde Erträge in Höhe von TEUR 260. Diese entfallen insbesondere auf mediale Verwertungsrechte, Verbandserlöse sowie Entschädigungen aus einer Spielausfallversicherung und Werbung für vorangegangene Spielzeiten.
 
-Die sonstigen Erlöse beinhalten periodenfremde Erträ-
-ge in Höhe von TEUR 260. Diese entfallen insbesondere
-auf mediale Verwertungsrechte, Verbandserlöse sowie
-Entschädigungen aus einer Spielausfallversicherung
-und Werbung für vorangegangene Spielzeiten.
+## Sonstige betriebliche Erträge und Aufwendungen
 
-Sonstige betriebliche Erträge und
-Aufwendungen
+In den sonstigen betrieblichen Erträgen in Höhe von TEUR 6.412 (i. Vj. TEUR 29.387) sind verschiedene Corona-Finanzhilfen in Höhe von TEUR 3.567 (i.Vj. TEUR 10.984) enthalten. Weiterhin sind in den sonstigen betrieblichen Erträgen periodenfremde Erträge aus der Auflösung von sonstigen Rückstellungen in Höhe von TEUR 709 (i. Vj. TEUR 577), periodenfremde Erträge aus der Auflösung von Verbindlichkeiten in Höhe von TEUR 1.420 (i. Vj. TEUR 13), aus Erstattungsansprüchen von Provisionen für Kompensationsverpflichtungen in Höhe von TEUR 0 (i. Vj. TEUR 60) sowie Versicherungsentschädigungen in Höhe von TEUR 51 (i. Vj. TEUR 120) enthalten.
 
-In den sonstigen betrieblichen Erträgen in Höhe von
-TEUR 6.422 (i. Vj. TEUR 29.387) sind verschiedene Co-
-rona-Finanzhilfen in Höhe von TEUR 3.567 (i.Vj. TEUR
-10.984) enthalten. Weiterhin sind in den sonstigen be-
-trieblichen Erträgen periodenfremde Erträge aus der
-Auflösung von sonstigen Rückstellungen in Höhe von
-TEUR 709 (i. Vj. TEUR 577), periodenfremde Erträge
-aus der Auflösung von Verbindlichkeiten in Höhe von
-TEUR 1.420 (i. Vj. TEUR 13), aus Erstattungsansprüchen
-von Provisionen für Kompensationsverpflichtungen in
-Höhe von TEUR O (i. Vj. TEUR 60) sowie Versicherungs-
-entschädigungen in Höhe von TEUR 31 (i. Vj. TEUR 120)
-enthalten.
+Die sonstigen betrieblichen Aufwendungen in Höhe von TEUR 39.642 (i. Vj. TEUR 28.271) beinhalten periodenfremde Aufwendungen in Höhe von TEUR 411 (i. Vj. TEUR 887). Die periodenfremden Aufwendungen entfallen im Wesentlichen auf Kompensationsverpflichtungen im Rahmen des durch die COVID-19-Pandemie eingeschränkten Spielbetriebs, Versicherungsnachzahlungen, Lizenz- und Verbandsabgaben sowie Vermarktungsprovisionen für vorangegangene Spielzeiten.
 
-Die sonstigen betrieblichen Aufwendungen in Höhe
-von TEUR 39.642 (i. Vj. TEUR 28.271) beinhalten pe-
-riodenfremde Aufwendungen in Höhe von TEUR 411
+## Zinsen und ähnliche Aufwendungen
 
-(i. Vj. TEUR 887). Die periodenfremden Aufwendungen
-entfallen im Wesentlichen auf Kompensationsverpflich-
-tungen im Rahmen des durch die COVID-19-Pandemie
-eingeschränkten Spielbetriebs, Versicherungsnachzah-
-lungen, Lizenz- und Verbandsabgaben sowie Vermark-
-tungsprovisionen für vorangegangene Spielzeiten.
+In den Zinsen und ähnlichen Aufwendungen sind Zinsaufwendungen aus der Aufzinsung von langfristigen Rückstellungen in Höhe von EUR 257 (i. Vj. EUR 185) enthalten.
 
-Zinsen und ähnliche Aufwendungen
+## Steuern vom Einkommen und vom Ertrag
 
-In den Zinsen und ähnlichen Aufwendungen sind Zins-
-aufwendungen aus der Aufzinsung von langfristigen
-Rückstellungen in Höhe von EUR 257 (i. Vj. EUR 185)
-enthalten.
+In den Steuern vom Einkommen und vom Ertrag sind periodenfremde Erträge in Höhe von TEUR 0 (i. Vj. TEUR 215).
 
-Steuern vom Einkommen und vom Ertrag
-In den Steuern vom Einkommen und vom Ertrag sind
-periodenfremde Erträge in Höhe von TEUR O (ii. Vi.
-TEUR 215).
+## Sonstige Steuern
 
-Sonstige Steuern
-
-Die sonstigen Steuern enthalten periodenfremde Erträ-
-ge in Höhe von TEUR O (i. Vj. TEUR 89).
-
->
+Die sonstigen Steuern enthalten periodenfremde Erträge in Höhe von TEUR 0 (i. Vj. TEUR 89).
 
 --- pág. 10 ---
 
@@ -797,88 +622,59 @@ stichtag sind dem Lagebericht zu entnehmen.
 --- pág. 13 ---
 
 JAHRESABSCHLUSS
+13
 
-ENTWICKLUNG DES ANLAGEVERMÖGENS
-VOM 1. JULI 2021 BIS 30. JUNI 2022
+# ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022
 
-Anschaffungs- und Herstellungskosten
+**Anschaffungs- und Herstellungskosten**
 
-01.07.2021 Zugänge Umbuchungen Abgänge 30.06.2022
-EUR EUR EUR EUR EUR
-I. Immaterielle Vermögensgegenstände
-1. Spielernutzungsrechte 21.357.584,32 4.519.864,19 0,00 10.156.485,19 15.720.963,32
-2. Markenwerte 41.221.628,66 0,00 0,00 0,00 41.221.628,66
-3. Entgeltlich erworbene Software 1.332.514,94 0,00 0,00 0,00 1.332.514,94
-4. Geleistete Anzahlungen auf immate-
-rielle Vermögensgegenstände 0,00 2.869.986,75 0,00 0,00 2.869.986,75
-63.911.727,92 7.389.850,94 0,00 10.156.485,19 61.145.093,67
-Il. Sachanlagen
-1. Grundstücke, grundstücksgleiche
-Rechte und Bauten einschließlich der
-un. bauten auf fremden Grundstücken  135.274.94367 000... 000... Q,.00.. 135.274.943,67
-2. Andere Anlagen, Betriebs- und
-„Geschäftsausstattung 661 27975004 1333377 650760 _17.202.736,32
-3. Geleistete Anzahlungen und Anlagen
-im Bau 209.021,60 1.838.901,22 -13.333,77 0,00 2.034.589,05
-152.400.125,38 2.118.651,26 0,00 6.507,60 154.512.269,04
-Ill. Finanzanlagen
-1. Anteile an verbundenen Unternehmen 0,00 0,00 0,00 0,00 0,00
-2. Ausleihungen an verbundene
-nn INCSTTIHHTIEN en OD On 0 en OD nn On Dan
-3. Beteiligungen 291.395,66 1.250,00 0,00 0,00 292.645,66
-1.868.023,74 1.250,00 0,00 0,00 1.869.273,74
-
-218.179.877,04
-
-9.509.752,20
-
-10.162.992,79
-
-217.526.636,45
+| | 01.07.2021 EUR | Zugänge EUR | Umbuchungen EUR | Abgänge EUR | 30.06.2022 EUR |
+|---|---:|---:|---:|---:|---:|
+| **I. Immaterielle Vermögensgegenstände** | | | | | |
+| 1. Spielernutzungsrechte | 21.357.584,32 | 4.519.864,19 | 0,00 | 10.156.485,19 | 15.720.963,32 |
+| 2. Markenwerte | 41.221.628,66 | 0,00 | 0,00 | 0,00 | 41.221.628,66 |
+| 3. Entgeltlich erworbene Software | 1.332.514,94 | 0,00 | 0,00 | 0,00 | 1.332.514,94 |
+| 4. Geleistete Anzahlungen auf immaterielle Vermögensgegenstände | 0,00 | 2.869.986,75 | 0,00 | 0,00 | 2.869.986,75 |
+| | **63.911.727,92** | **7.389.850,94** | **0,00** | **10.156.485,19** | **61.145.093,67** |
+| **II. Sachanlagen** | | | | | |
+| 1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken | 135.274.943,67 | 0,00 | 0,00 | 0,00 | 135.274.943,67 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 16.916.160,11 | 279.750,04 | 13.333,77 | 6.507,60 | 17.202.736,32 |
+| 3. Geleistete Anzahlungen und Anlagen im Bau | 209.021,60 | 1.838.901,22 | -13.333,77 | 0,00 | 2.034.589,05 |
+| | **152.400.125,38** | **2.118.651,26** | **0,00** | **6.507,60** | **154.512.269,04** |
+| **III. Finanzanlagen** | | | | | |
+| 1. Anteile an verbundenen Unternehmen | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| 2. Ausleihungen an verbundene Unternehmen | 1.576.628,08 | 0,00 | 0,00 | 0,00 | 1.576.628,08 |
+| 3. Beteiligungen | 291.395,66 | 1.250,00 | 0,00 | 0,00 | 292.645,66 |
+| | **1.868.023,74** | **1.250,00** | **0,00** | **0,00** | **1.869.273,74** |
+| | **218.179.877,04** | **9.509.752,20** | **0,00** | **10.162.992,79** | **217.526.636,45** |
 
 --- pág. 14 ---
 
 JAHRESABSCHLUSS
+14
 
-127.157.365,92
-
-8.568.552,35
-
-10.053.445,19
-
-125.672.473,08
-
-91.854.163,37
-
-Kumulierte Abschreibungen Buchwerte
-01.07.2021 Zugänge Abgänge 30.06.2022 30.06.2022 30.06.2021
-EUR EUR EUR EUR EUR EUR
-
-15.274.195,67 5.387.674,59 10.052.185,19 10.609.685,07 5.111.278,25 6.083.388,65
-0,00 0,00 0,00 0,00 41.221.628,66 41.221.628,66
-1.303.194,84 17.679,74 0,00 1.320.874,58 11.640,36 29.320,10
-0,00 0,00 0,00 0,00 2.869.986,75 0,00
-16.577.390,51 5.405.354,33 10.052.185,19 11.930.559,65 49.214.534,02 47.334.337,41
-...56191.073,59 221843200 000. 98.409.505,59 36.865.438,08 ____39.083.870,08.
-0,00 0,00 0,00 0,00 2.034.589,05 209.021,60
-109.003.347,33 3.163.198,02 1.260,00 112.165.285,35 42.346.983,69 43.396.778,05
-0,00 0,00 0,00 0,00 0,00 0,00
-17662808 000 ...........000.......1976.62808 000 000.
-0,00 0,00 0,00 0,00 292.645,66 291.395,66
-1.576.628,08 0,00 0,00 1.576.628,08 292.645,66 291.395,66
-
-91.022.511,12
-
+| | Kumulierte Abschreibungen 01.07.2021 EUR | Zugänge EUR | Abgänge EUR | 30.06.2022 EUR | Buchwerte 30.06.2022 EUR | Buchwerte 30.06.2021 EUR |
+|---|---:|---:|---:|---:|---:|---:|
+| Spielernutzungsrechte | 15.274.195,67 | 5.387.674,59 | 10.052.185,19 | 10.609.685,07 | 5.111.278,25 | 6.083.388,65 |
+| Markenwerte | 0,00 | 0,00 | 0,00 | 0,00 | 41.221.628,66 | 41.221.628,66 |
+| Entgeltlich erworbene Software | 1.303.194,84 | 17.679,74 | 0,00 | 1.320.874,58 | 11.640,36 | 29.320,10 |
+| Geleistete Anzahlungen auf immaterielle Vermögensgegenstände | 0,00 | 0,00 | 0,00 | 0,00 | 2.869.986,75 | 0,00 |
+| **Summe I.** | **16.577.390,51** | **5.405.354,33** | **10.052.185,19** | **11.930.559,65** | **49.214.534,02** | **47.334.337,41** |
+| Grundstücke, grundstücksgleiche Rechte und Bauten | 96.191.073,59 | 2.218.432,00 | 0,00 | 98.409.505,59 | 36.865.438,08 | 39.083.870,08 |
+| Andere Anlagen, Betriebs- und Geschäftsausstattung | 12.812.273,74 | 944.766,02 | 1.260,00 | 13.755.779,76 | 3.446.956,56 | 4.103.886,37 |
+| Geleistete Anzahlungen und Anlagen im Bau | 0,00 | 0,00 | 0,00 | 0,00 | 2.034.589,05 | 209.021,60 |
+| **Summe II.** | **109.003.347,33** | **3.163.198,02** | **1.260,00** | **112.165.285,35** | **42.346.983,69** | **43.396.778,05** |
+| Anteile an verbundenen Unternehmen | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Ausleihungen an verbundene Unternehmen | 1.576.628,08 | 0,00 | 0,00 | 1.576.628,08 | 0,00 | 0,00 |
+| Beteiligungen | 0,00 | 0,00 | 0,00 | 0,00 | 292.645,66 | 291.395,66 |
+| **Summe III.** | **1.576.628,08** | **0,00** | **0,00** | **1.576.628,08** | **292.645,66** | **291.395,66** |
+| **Gesamtsumme** | **127.157.365,92** | **8.568.552,35** | **10.053.445,19** | **125.672.473,08** | **91.854.163,37** | **91.022.511,12** |
 
 --- pág. 15 ---
 
 HSV FUSSBALL AG
 
-Ds EEE 0 2172
-
-LAGEBERICHT FÜR DAS
-GESCHÄFTSJAHR 2021/22
-
+# LAGEBERICHT FÜR DAS GESCHÄFTSJAHR 2021/22
 
 --- pág. 16 ---
 
@@ -1076,96 +872,27 @@ mehr als 2,9 Millionen User.
 --- pág. 18 ---
 
 LAGEBERICHT
+4
 
-Darüber hinaus ist sich der HSV seiner gesellschaftli-
-chen Verantwortung bewusst und engagiert sich mit
-seiner Stiftung „Der Hamburger Weg“ unter anderem
-im Bereich der Förderung der Erziehung, der Bildung,
-des Sports, der Jugendhilfe, der Hilfe für Behinderte,
-des öffentlichen Gesundheitswesens und des bürger-
-schaftlichen Engagements zugunsten gemeinnütziger
-und mildtätiger Zwecke.
+Darüber hinaus ist sich der HSV seiner gesellschaftlichen Verantwortung bewusst und engagiert sich mit seiner Stiftung „Der Hamburger Weg" unter anderem im Bereich der Förderung der Erziehung, der Bildung, des Sports, der Jugendhilfe, der Hilfe für Behinderte, des öffentlichen Gesundheitswesens und des bürgerschaftlichen Engagements zugunsten gemeinnütziger und mildtätiger Zwecke.
 
 II. WIRTSCHAFTSBERICHT
 
-a) Gesamtwirtschaftliche und branchen-
-bezogene Rahmenbedingungen
+## a) Gesamtwirtschaftliche und branchenbezogene Rahmenbedingungen
 
-Die deutsche Wirtschaft hat sich im Jahr 2021 nach der
-Rezession im Jahr zuvor etwas erholt. Nach Angaben
-des Statistischen Bundesamts ist das Bruttoinlands-
-produkt im Jahr 2021 um 2,6% zum Vorjahr gestiegen
-(i. Vj. Minderung um 4,6%). Auch im ersten Quartal 2022
-konnte ein Anstieg des Bruttoinlandsprodukts um 0,8%
-zum Vorquartal verzeichnet werden. Im zweiten Quar-
-tal 2022 betrug die Steigerung lediglich noch 0,1% zum
-vorangegangenen Quartal. Für das Jahr 2022 prognosti-
-ziert die Bundesregierung für das Bruttoinlandsprodukt
-eine Steigerung in Höhe von 2,2% gegenüber dem Vor-
-jahr. Die Jahre 2020 und 2021 waren noch sehr geprägt
-von der COVID-19-Pandemie. Der weitere Ausblick für
-den Rest des Jahres 2022 und den Start in das Jahr
-2023 lässt jedoch aufgrund enorm gestiegener Ener-
-giepreise erhebliche Zweifel an einer Steigerung des
-Bruttoinlandsprodukts aufkommen.
+Die deutsche Wirtschaft hat sich im Jahr 2021 nach der Rezession im Jahr zuvor etwas erholt. Nach Angaben des Statistischen Bundesamts ist das Bruttoinlandsprodukt im Jahr 2021 um 2,6% zum Vorjahr gestiegen (i. Vj. Minderung um 4,6%). Auch im ersten Quartal 2022 konnte ein Anstieg des Bruttoinlandsprodukts um 0,8% zum Vorquartal verzeichnet werden. Im zweiten Quartal 2022 betrug die Steigerung lediglich noch 0,1% zum vorangegangenen Quartal. Für das Jahr 2022 prognostiziert die Bundesregierung für das Bruttoinlandsprodukt eine Steigerung in Höhe von 2,2% gegenüber dem Vorjahr. Die Jahre 2020 und 2021 waren noch sehr geprägt von der COVID-19-Pandemie. Der weitere Ausblick für den Rest des Jahres 2022 und den Start in das Jahr 2023 lässt jedoch aufgrund enorm gestiegener Energiepreise erhebliche Zweifel an einer Steigerung des Bruttoinlandsprodukts aufkommen.
 
-Im Wirtschaftsreport 2022 der DFL wurde die wirt-
-schaftliche Entwicklung durch die DFL ausgewertet. Die
-Spielzeit 2020/21 war weiterhin von der COVID-19-Pan-
-demie geprägt und die Begegnungen mussten gemäß
-den Vorgaben der Politik größtenteils ohne Fans in den
-Stadien stattfinden.
+Im Wirtschaftsreport 2022 der DFL wurde die wirtschaftliche Entwicklung durch die DFL ausgewertet. Die Spielzeit 2020/21 war weiterhin von der COVID-19-Pandemie geprägt und die Begegnungen mussten gemäß den Vorgaben der Politik größtenteils ohne Fans in den Stadien stattfinden.
 
-Die Umsatzerlöse beider Lizenzligen sind von EUR 4.528
-Mio. auf EUR 4.049 Mio. das zweite Jahr in Folge gesun-
-ken. Die Umsatzerlöse teilen sich mit EUR 3.473 Mio. auf
-die Bundesliga und EUR 576 Mio. auf die 2. Bundesliga
-auf.
+Die Umsatzerlöse beider Lizenzligen sind von EUR 4.528 Mio. auf EUR 4.049 Mio. das zweite Jahr in Folge gesunken. Die Umsatzerlöse teilen sich mit EUR 3.473 Mio. auf die Bundesliga und EUR 576 Mio. auf die 2. Bundesliga auf.
 
-Die Erlöse der Bundesliga setzen sich dabei wie
-folgt zusammen: Die Medienerlöse beliefen sich
-auf 47,7% (EUR 1.659 Mio.), die Werbeerlöse auf
-24,1% (EUR 836 Mio.), die Erlöse aus Spielbetrieb
-auf 0,6% (EUR 22 Mio.), die Merchandisingerlöse auf
-5,2% (EUR 182 Mio.), die Transfererlöse auf 13,5%
-(EUR 469 Mio.) sowie die sonstigen Erlöse auf 8,8%
-(EUR 305 Mio.). Die Erlöse der 2. Bundesliga sind folgen-
-dermaßen verteilt: Die Medienerlöse betrugen 49,8%
-(EUR 287 Mio.), die Werbeerlöse 18,7% (EUR 108 Mio.),
-die Erlöse aus Spielbetrieb 2,3% (EUR 13 Mio.), die Mer-
-chandisingerlöse 5,3% (EUR 30 Mio.), die Transfererlöse
-6,2% (EUR 36 Mio.) sowie die sonstigen Erlöse 17,7%
-(EUR 102 Mio.).
+Die Erlöse der Bundesliga setzen sich dabei wie folgt zusammen: Die Medienerlöse beliefen sich auf 47,7% (EUR 1.659 Mio.), die Werbeerlöse auf 24,1% (EUR 836 Mio.), die Erlöse aus Spielbetrieb auf 0,6% (EUR 22 Mio.), die Merchandisingerlöse auf 5,2% (EUR 182 Mio.), die Transfererlöse auf 13,5% (EUR 469 Mio.) sowie die sonstigen Erlöse auf 8,8% (EUR 305 Mio.). Die Erlöse der 2. Bundesliga sind folgendermaßen verteilt: Die Medienerlöse betrugen 49,8% (EUR 287 Mio.), die Werbeerlöse 18,7% (EUR 108 Mio.), die Erlöse aus Spielbetrieb 2,3% (EUR 13 Mio.), die Merchandisingerlöse 5,3% (EUR 30 Mio.), die Transfererlöse 6,2% (EUR 36 Mio.) sowie die sonstigen Erlöse 17,7% (EUR 102 Mio.).
 
-In der Spielzeit 2020/21 haben die Clubs beider Lizenz-
-ligen Steuern und Abgaben an das Finanzamt sowie
-an die Sozial- und Unfallversicherungen in Höhe von
-EUR 1.325 Mio. abgeführt. Insgesamt waren in der Spiel-
-zeit nur noch 26.183 Personen während der Saison
-2020/21 direkt oder indirekt im deutschen Lizenzfuß-
-ball beschäftigt. In der Spielzeit zuvor waren es noch
-52.786 Personen. Der starke Rückgang ist insbesondere
-bei den indirekt während der Spieltage beschäftigten
-Personen zu verzeichnen und war durch die leeren Sta-
-dien verursacht.
+In der Spielzeit 2020/21 haben die Clubs beider Lizenzligen Steuern und Abgaben an das Finanzamt sowie an die Sozial- und Unfallversicherungen in Höhe von EUR 1.325 Mio. abgeführt. Insgesamt waren in der Spielzeit nur noch 26.183 Personen während der Saison 2020/21 direkt oder indirekt im deutschen Lizenzfußball beschäftigt. In der Spielzeit zuvor waren es noch 52.786 Personen. Der starke Rückgang ist insbesondere bei den indirekt während der Spieltage beschäftigten Personen zu verzeichnen und war durch die leeren Stadien verursacht.
 
-Die pandemische Lage verhinderte auch in der dem
-Wirtschaftsreport zugrundeliegenden Spielzeit 2020/21
-einen dauerhaften Spielbetrieb unter der Zulassung von
-Zuschauern. Lediglich wenige Spiele der Lizenzligen
-konnten mit einer geringen Zulassung von Zuschauern
-durchgeführt werden.
+Die pandemische Lage verhinderte auch in der dem Wirtschaftsreport zugrundeliegenden Spielzeit 2020/21 einen dauerhaften Spielbetrieb unter der Zulassung von Zuschauern. Lediglich wenige Spiele der Lizenzligen konnten mit einer geringen Zulassung von Zuschauern durchgeführt werden.
 
-Infolge der beschriebenen Einschränkungen durch die
-andauernde COVID-19-Pandemie sank das Eigenkapital
-der beiden Lizenzligen im Geschäftsjahr 2020/21 erneut.
-Die Eigenkapitalquote der Clubs der Bundesliga betrug
-im Geschäftsjahr 2020/2140,7% (i. Vj. 43,7%). Die rück-
-läufige Entwicklung der Eigenkapitalquote der Clubs der
-2. Bundesliga geht mit 21,7% im Geschäftsjahr 2020/21
-(i. Vj. 23,3%) einher mit den Clubs der Bundesliga.
-
-n
+Infolge der beschriebenen Einschränkungen durch die andauernde COVID-19-Pandemie sank das Eigenkapital der beiden Lizenzligen im Geschäftsjahr 2020/21 erneut. Die Eigenkapitalquote der Clubs der Bundesliga betrug im Geschäftsjahr 2020/21 40,7% (i. Vj. 43,7%). Die rückläufige Entwicklung der Eigenkapitalquote der Clubs der 2. Bundesliga geht mit 21,7% im Geschäftsjahr 2020/21 (i. Vj. 23,3%) einher mit den Clubs der Bundesliga.
 
 --- pág. 19 ---
 
@@ -1528,69 +1255,31 @@ Zuschauern, ansteigend.
 --- pág. 23 ---
 
 LAGEBERICHT
+9
 
-Erstmals wieder durchgeführte Drittveranstaltungen,
-insbesondere Konzerte, zum Ende der Saison 2021/22
-trugen ebenfalls zu einer Erlössteigerung bei.
+Erstmals wieder durchgeführte Drittveranstaltungen, insbesondere Konzerte, zum Ende der Saison 2021/22 trugen ebenfalls zu einer Erlössteigerung bei.
 
-Die sonstigen betrieblichen Erträge belaufen sich im Ge-
-schäftsjahr 2021/22 auf TEUR 6.412 (i. Vj. TEUR 29.387).
-Die deutliche Minderung gegenüber dem Vorjahr resul-
-tiert im Wesentlichen aus Sondereffekten im Zusam-
-menhang mit verschiedenen Corona-Finanzhilfen sowie
-der Veräußerung des mit dem Volksparkstadion bebau-
-ten Grundstücks an die Freie und Hansestadt Hamburg.
-Ausgebuchte Verbindlichkeiten sowie aufgelöste Rück-
-stellungen haben sich gegenläufig ausgewirkt.
+Die sonstigen betrieblichen Erträge belaufen sich im Geschäftsjahr 2021/22 auf TEUR 6.412 (i. Vj. TEUR 29.387). Die deutliche Minderung gegenüber dem Vorjahr resultiert im Wesentlichen aus Sondereffekten im Zusammenhang mit verschiedenen Corona-Finanzhilfen sowie der Veräußerung des mit dem Volksparkstadion bebauten Grundstücks an die Freie und Hansestadt Hamburg. Ausgebuchte Verbindlichkeiten sowie aufgelöste Rückstellungen haben sich gegenläufig ausgewirkt.
 
-Der Materialaufwand beläuft sich auf TEUR 4.102 (i. Vj.
-TEUR 4.404) und beinhaltet ausschließlich Aufwendun-
-gen für bezogene Waren aus dem Bereich Merchandising.
+Der Materialaufwand beläuft sich auf TEUR 4.102 (i. Vj. TEUR 4.404) und beinhaltet ausschließlich Aufwendungen für bezogene Waren aus dem Bereich Merchandising.
 
-Im Berichtszeitraum war ein Personalaufwand in Höhe
-von TEUR 39.226 (i. Vj. TEUR 40.002) zu verzeichnen,
-der zu einem Großteil den Aufwendungen für den Spie-
-lerkader und den Trainerstab der Lizenzmannschaft zu-
-zurechnen ist. Die Entwicklung im Vergleich zum Vorjahr
-resultiert im Wesentlichen aus den aufgrund des um-
-strukturierten Kaders reduzierten Personalaufwendun-
-gen der Lizenzmannschaft.
+Im Berichtszeitraum war ein Personalaufwand in Höhe von TEUR 39.226 (i. Vj. TEUR 40.002) zu verzeichnen, der zu einem Großteil den Aufwendungen für den Spielerkader und den Trainerstab der Lizenzmannschaft zuzurechnen ist. Die Entwicklung im Vergleich zum Vorjahr resultiert im Wesentlichen aus den aufgrund des umstrukturierten Kaders reduzierten Personalaufwendungen der Lizenzmannschaft.
 
-Die sonstigen betrieblichen Aufwendungen in Höhe von
-TEUR 39.642 (i. Vj. TEUR 28.271) enthalten im Wesent-
-lichen Aufwendungen aus dem Spielbetrieb in Höhe von
-TEUR 17.279 (i. Vj. TEUR 9.921), Vermarktungsprovisio-
-nen in Höhe von TEUR 4.588 (i. Vj. TEUR 2.470), Ver-
-waltungsaufwendungen in Höhe von TEUR 4.701 (i. Vj.
-TEUR 4.004) sowie Transferaufwendungen in Höhe von
-TEUR 3.942 (i. Vj. TEUR 3.009).
+Die sonstigen betrieblichen Aufwendungen in Höhe von TEUR 39.642 (i. Vj. TEUR 28.271) enthalten im Wesentlichen Aufwendungen aus dem Spielbetrieb in Höhe von TEUR 17.279 (i. Vj. TEUR 9.921), Vermarktungsprovisionen in Höhe von TEUR 4.588 (i. Vj. TEUR 2.470), Verwaltungsaufwendungen in Höhe von TEUR 4.701 (i. Vj. TEUR 4.004) sowie Transferaufwendungen in Höhe von TEUR 3.942 (i. Vj. TEUR 3.009).
 
-Der Anstieg in Höhe von TEUR 11.371 (i. Vj. TEUR -8.876)
-resultiert aus erhöhten Aufwendungen im Zuge von Auf-
-lockerungen beziehungsweise des Wegfalls behördli-
-cher Beschränkungen infolge der COVID-19-Pandemie,
-die sich im Vorjahr merklich auf den Spielbetrieb, die
-Vermarktungsprovisionen als auch auf die Drittveran-
-staltungen ausgewirkt haben.
+Der Anstieg in Höhe von TEUR 11.371 (i. Vj. TEUR -8.876) resultiert aus erhöhten Aufwendungen im Zuge von Auflockerungen beziehungsweise des Wegfalls behördlicher Beschränkungen infolge der COVID-19-Pandemie, die sich im Vorjahr merklich auf den Spielbetrieb, die Vermarktungsprovisionen als auch auf die Drittveranstaltungen ausgewirkt haben.
 
-Das EBITDA als wesentliche Steuerungsgröße beträgt
-im Geschäftsjahr 2021/22 TEUR 12.429 (i. Vj. TEUR
-12.501) und hat sich somit geringfügig vermindert. Die-
-se Entwicklung resultiert im Wesentlichen aus einer im
-Vergleich zum Vorjahr gesteigerten Gesamtleistung,
-die zugleich auch zu Mehraufwendungen geführt hat.
-Gleichzeitig haben sich die Material- und Personalauf-
-wendungen kaum verändert.
+Das EBITDA als wesentliche Steuerungsgröße beträgt im Geschäftsjahr 2021/22 TEUR 12.429 (i. Vj. TEUR 12.501) und hat sich somit geringfügig vermindert. Diese Entwicklung resultiert im Wesentlichen aus einer im Vergleich zum Vorjahr gesteigerten Gesamtleistung, die zugleich auch zu Mehraufwendungen geführt hat. Gleichzeitig haben sich die Material- und Personalaufwendungen kaum verändert.
 
 Im Vorjahresvergleich entwickelte sich das EBITDA wie folgt:
 
-in TEUR 2021/22 2020/21
-
-Jahresüberschuss/-fehlbetrag +1.046 -4.689
-nn
-Enanzergebnis. en
-Abschreibungen  +8.569 +12.751
-EBITDA +12.429 +12.501
+| in TEUR | 2021/22 | 2020/21 |
+|---|---:|---:|
+| Jahresüberschuss/-fehlbetrag | +1.046 | -4.689 |
+| Steuern | +209 | -93 |
+| Finanzergebnis | +2.605 | +4.532 |
+| Abschreibungen | +8.569 | +12.751 |
+| **EBITDA** | **+12.429** | **+12.501** |
 
 --- pág. 24 ---
 

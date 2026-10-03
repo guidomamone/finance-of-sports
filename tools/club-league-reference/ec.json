@@ -1,0 +1,50 @@
+{
+  "leagues": {
+    "ec-serieb": {
+      "2022": {
+        "wikipediaPage": "2022 Ecuadorian Serie B",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-09-30T15:51:27.173Z",
+        "clubs": [
+          "América de Quito",
+          "Atlético Santo Domingo",
+          "Búhos ULVR",
+          "Chacaritas",
+          "El Nacional",
+          "Imbabura",
+          "Independiente Juniors",
+          "Libertad",
+          "Manta",
+          "Olmedo"
+        ]
+      }
+    },
+    "ec-seriea": {
+      "2022": {
+        "wikipediaPage": "2022 LigaPro Serie A",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-09-30T17:02:39.323Z",
+        "clubs": [
+          "9 de Octubre",
+          "Aucas",
+          "Barcelona",
+          "Cumbayá",
+          "Delfín",
+          "Deportivo Cuenca",
+          "Emelec",
+          "Gualaceo",
+          "Guayaquil City",
+          "Independiente del Valle",
+          "LDU Quito",
+          "Macará",
+          "Mushuc Runa",
+          "Orense",
+          "Técnico Universitario",
+          "Universidad Católica"
+        ]
+      }
+    }
+  }
+}

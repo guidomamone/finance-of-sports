@@ -12,44 +12,39 @@ NN Y)
 
 --- pág. 2 ---
 
-PRESUPUESTO ECONOMICO y FINANCIERO CORRESPONDIENTE AL
-PERIODO 01/09/2015 AL 31/08/2016
-PREMISAS MACRO
+# PRESUPUESTO ECONOMICO Y FINANCIERO CORRESPONDIENTE AL PERIODO 01/09/2015 AL 31/08/2016
 
-e Tipo de Cambio u$d: Estimamos Una evolución del TC de $ 10,10
-por u$d 1.- para el 31/12/15, y de $ 13,5 por Uu$a 1.- para el
-semestre 01/03/16 al 31/08/16.
+## PREMISAS MACRO
 
-* Tipo de Cambio EUR: Estimamos una evolución del TC de $ 10,15
-por Eur 1.- para el 31/12/15, y de $ 14 por Eur ].- para el semestre
-01/02/16 al 31/08/16
+- **Tipo de Cambio u$d:** Estimamos una evolución del TC de $ 10,10 por u$d 1.- para el 31/12/15, y de $ 13,5 por u$d 1.- para el semestre 01/03/16 al 31/08/16.
+- **Tipo de Cambio EUR:** Estimamos una evolución del TC de $ 10,15 por Eur 1.- para el 31/12/15, y de $ 14 por Eur 1.- para el semestre 01/02/16 al 31/08/16
+- **Inflación:** Estimamos un IPC (Índice de Precios al Consumidor) publicado por el INDEC (Instituto Nacional de Estadísticas y Censos) en torno al 20%, vs. Información publicada por el Congreso de la Nación, del orden del 30%.
+- **Incrementos Salariales de Convenio:** Estimamos un alza comprendido entre el 25 y el 30%, respecto al periodo base.
 
-e Inflación: Estimamos un IPC (Índice de Precios al Consumidor)
-publicado por el INDEC (Instituto Nacional de Estadísticas y
-Censos) en torno al 20%, vs. Información publicada por el
-Congreso de la Nación, del orden del 30%.
+## NOTAS ACLARATORIAS
 
-e Incrementos Salariales de Convenio: Estimamos un alza
-comprendido entre el 25 y el 30%, respecto al periodo base.
-NOTAS ACLARATORIAS
-=xMuA9 ACLARATORIAS
-SALDO “CAJA Y BANCOS”
-Se incluyen en el mismo, las disponibilidades en Efectivo, Saldos en
-Bancos, y Cheques de terceros en Cartera, de primera línea y alta
-liquidez por descuento, así como imposiciones a Plazo Fijo.
-INGRESOS ORDINARIOS
-Ingresos provenientes del Fútbol
-Campeonatos Oficiales AFA / Competencias Internacionales / Otras
-Competencias y Partidos Amistosos
-Cuantifica las estimaciones en concepto de recaudación por partidos
-tanto sea en calidad de local, como en calidad de visitante,
-considerando el desarrollo de campañas en los Torneos.
-Se presupuesta la participación en Torneos y Partidos Amistosos de
-Verano 2015, Copa Argentina, opa, Libertadores de A Ñénica
-Ediciones 2015 / 2014. ' //
-Secretario dh Hacionta [Secreto (gue Devia
-ac Secretario G
-RACINA: CLUB Albociac ción E Ning Club Asnoiacie
+### SALDO "CAJA Y BANCOS"
+Se incluyen en el mismo, las disponibilidades en Efectivo, Saldos en Bancos, y Cheques de terceros en Cartera, de primera línea y alta liquidez por descuento, así como imposiciones a Plazo Fijo.
+
+### INGRESOS ORDINARIOS
+
+#### Ingresos provenientes del Fútbol
+
+<u>Campeonatos Oficiales AFA / Competencias Internacionales / Otras Competencias y Partidos Amistosos</u>
+
+Cuantifica las estimaciones en concepto de recaudación por partidos tanto sea en calidad de local, como en calidad de visitante, considerando el desarrollo de campañas en los Torneos.
+
+Se presupuesta la participación en Torneos y Partidos Amistosos de Verano 2015, Copa Argentina, y Copa Libertadores de América Ediciones 2015 / 2016.
+
+[Firma]  
+Dr. PABLO JORGE MENA  
+Secretario de Hacienda  
+RACING CLUB Asociación Civil  
+
+[Firma]  
+Dr. Christian Enrique Devia  
+Secretario General  
+Racing Club Asociación Civil  
 
 --- pág. 3 ---
 
@@ -128,37 +123,45 @@ Racing Club Asociación Civil
 
 --- pág. 5 ---
 
-Ingresos por Merchandising
-Este ingreso corresponde a los ingresos de los locales Locademia sitos de
-la Sede Social, Anexo Villa del Parque, y Lavalle 1650 de la Ciudad de
-Autónoma de Buenos Aires, principalmente.
-EGRESOS ORDINARIOS
-Egresos generados por Fútbol
-Gastos de explotación del Estadio
-Estima el gasto emergente del mantenimiento del Estadio, Servicios
-Públicos, y mantenimiento de Canchas, entre otros.
-Participación en campeonatos oficiales AFA
-Estima los gastos asociados a los partidos disputados en los respectivos
-torneos, así como los vinculados a la emisión de tickets y sistema
-operativo.
-Remuneraciones plantel deportivo
+<u>Ingresos por Merchandising</u>
+
+Este ingreso corresponde a los ingresos de los locales Locademia sitos de la Sede Social, Anexo Villa del Parque, y Lavalle 1650 de la Ciudad de Autónoma de Buenos Aires, principalmente.
+
+### EGRESOS ORDINARIOS
+
+#### Egresos generados por Fútbol
+
+<u>Gastos de explotación del Estadio</u>
+
+Estima el gasto emergente del mantenimiento del Estadio, Servicios Públicos, y mantenimiento de Canchas, entre otros.
+
+<u>Participación en campeonatos oficiales AFA</u>
+
+Estima los gastos asociados a los partidos disputados en los respectivos torneos, así como los vinculados a la emisión de tickets y sistema operativo.
+
+<u>Remuneraciones plantel deportivo</u>
+
 Presupuesta las remuneraciones del plantel profesional de Fútbol.
-Primas plantel
-Por contrato se establece el pago de primas anuales, y primas
-adicionales por fichaje de contratos individuales.
-Premios plantel
-Se estiman los mismos tanto para el Plantel Profesional, como Cuerpo
-Técnico, y Auxiliares del Fútbol Profesional, en base a los acuerdos por
-campañas.
-Asimismo, se incluyen premios por cumplimiento de objeAfwys
-relacionados a contratos individuales A.)
-IMUGAa
-| 1171)
-A 1103
-) NA
-or. RABLAÍORGE MENA 4 LL '
-Secretario de |Haciendá > 5 y sei besa A
-RACING CLUB Í po Ge] Racing Club Asociación Civil
+
+<u>Primas plantel</u>
+
+Por contrato se establece el pago de primas anuales, y primas adicionales por fichaje de contratos individuales.
+
+<u>Premios plantel</u>
+
+Se estiman los mismos tanto para el Plantel Profesional, como Cuerpo Técnico, y Auxiliares del Fútbol Profesional, en base a los acuerdos por campañas.
+
+Asimismo, se incluyen premios por cumplimiento de objetivos relacionados a contratos individuales.
+
+[Firma]  
+Dr. PABLO JORGE MENA  
+Secretario de Hacienda  
+RACING CLUB Asociación Civil  
+
+[Firma]  
+Dr. Christian Enrique Devia  
+Secretario General  
+Racing Club Asociación Civil  
 
 --- pág. 6 ---
 
@@ -250,79 +253,49 @@ RACINA CLUB Asociación Chui
 
 --- pág. 9 ---
 
-: TE PG a] > PIN F[> 7|e
-5 E lo ln |-ln falo [> |» 3 jols ia ole *|3lo la eje [olols |=s fe lo [e [a lol 5 ¿13
-5 nlols ls 2 lslsls|g lolo slo |S|Slolo|» 515
-Ela leer aa tsl.] a [clisisl*s alas olslalelsloolslalz| [E E
-dolia gnRls Spsr is] esicaaicelsitaies Es llal [El
-IS lallrlélelslsla|g] e |slel AAA d9 9004041810 E A
-da liel8l (Slólrlelá] = [8 2131$| 5l3lRlals[slol=l>(8[»[8|2|5|< ¿lo
-z 91.18 Sinl=la] 3 ÉS Q jalo lso (eS [3(9121315/5]8 =
-A E E E EE 31518] EBl8lmioia (E "(512 [2/2 |3 El
-Stata [elos ls] S ES a AE gn] [* á E
-al2i2 1815 E pa 3| |5 y 5
-2
-e A E
-ELLE ABE [El EJE sisisiál [8 8
-¿l8lolol8lo sis¡SMA Ss MS | 8 [S| | [S[8¡S/8/S|o18 5
-ps JP e [ujlulZ m juin y
-E ES a E Es elelslelol [e E
-SAA AAA Pess El EIA Sao: E
-9] ” |e8lolelSjelslo Hg S [SISISHA s MAS S || | SisisisiSU|S| MEA
-Ella ! Moo ll feresiól | del PUES
-s| 5 || 888 El BE si8818| | la B
-¿8/83/8/3 si8¡599 S MWs| S 8/8/88] lel8
-” Sn u e] hdd E .
-ss | 8118 553 ES ME sisiss| | 8 E
-89 lelioialBlulalo BW $ [S|s¡s MN S E sS/S88| [el8
-um m 1 nm
-BS la | lol A e E lalete E
-lis E s [s¡s:¡s M8 E 3 [8 s|8|8 E
-8 lesloleisio| [MM S [sis'sW s Mos ls | uisisis
-pe MS | a“ [un pe vw PS wi lefaj ful sw
-E Ella A E ARE A
-ds (51611 sis Ms ¿ss | ssiss| Ss E
-8|* lolBlejelBlujeje s¡s ¡SM S Ms S |S| | [SiSISS- 83
-Belli duda letal [alo
-MESES IES E E 28/8/8| [88
-BS olle Ha ES olzlal [alo
-se| [5 |Í JE E 3 sisi8| [88
-8| * lulsiololSielolo MN S lslsis MW s Mos 88/8|</8/8
-ta co > mu ) re fr [hs E
-dels] BE E 8 sl8ls|¡8| [8/8 E
-8 lelluolelSlulelo BW S [Sis is MN s Mos 8/8/8/S|oJ8l8 »
-Ello aaa Pa pa ololElalujele ñ
->, 0 mu sd mis [ral un fs le
-ss] 8 [5 asa ME s/S/S/S/8/8/8 5
-8 leBleolsialele MS [e sis MN s Mos 3/8/8/8/8/818
-¿e S Injale w min
-5 sllellle E [Es y l ejelelo E
-ss | 81 || EE JE 881 || 881818 5
-8 * o8lelolslolele A S |s[SISMN s M-| 8 ls| | [el8lslsisls
-mm ww mm un
-Q sello RES E ARAS E
-SET BEE E Ss ISSISM S MS 3 [Ss || sis8l8| |S 5
-ab 8" lulgueisiclole a $ [SisisW s MS Ss] | |elsisisisiuols
-2 - Cl 3
-3 > mue wm EY «nn gÉ
-"== let asu Me sl | locas cg
-? tu ua ju QA o ja
-; ó ss| Él ss s Mess 5 | [SsSSasS dl
-8lel2|3 S/[S/¡S 9 S MWS| S |S| | [S¡S¡SISIS[SIS
-EH =
-y A 7 2 2 ele yÉ
-Sl lle BA Mos El lel<l8[51 (Els 57
-s | S (Els E MS e ls| | lease is Ez
-N EJES 3 (s[3 9 S Ms S (3| | ([ElBlSloisisl£ E
-2 8la SISie ES 818 |3 > EEES
-We 38 8 6 E JE see 8618
-LESS
-SSA o O
-> 3 ES r y
-¿ES )
-$33 A
-o 2
-1
+Club: Racing Club Asociación Civil
+Presupuesto Financiero de Recursos y Gastos - Ejercicio 2015 - 2016
+
+(Página impresa girada 90°.)
+
+| Ingresos | sep-15 | oct-15 | nov-15 | dic-15 | ene-16 | feb-16 | mar-16 | abr-16 | may-16 | jun-16 | jul-16 | ago-16 | Total del Período 2015 - 2016 | Total Real Período 2014 - 2015 | Diferencia | Variación |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Saldo inicial de Caja y Bancos (I) (*)** | $ 8.244.838 | 14.814.838 | 8.694.838 | 5.389.838 | 1.633.838 | 9.633.838 | 26.833.838 | 23.433.838 | 16.083.838 | 16.753.838 | 10.373.838 | 2.143.838 | | | | |
+| **Ingresos Ordinarios** | | | | | | | | | | | | | | | | |
+| **A. Ingresos Provenientes de Fútbol** | | | | | | | | | | | | | | | | |
+| **1. Cobranzas de Ingresos Deportivos** | | | | | | | | | | | | | | | | |
+| a. Campeonatos Oficiales AFA | $ 800.000 | $ 1.100.000 | $ 1.145.000 | $ 1.000.000 | $ 0 | $ 4.000.000 | $ 3.000.000 | $ 3.000.000 | $ 3.000.000 | $ 3.000.000 | $ 0 | $ 3.000.000 | $ 23.045.000 | 20.958.346,01 | $ 2.086.654 | 10% |
+| b. Comp. Oficiales Internacionales | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 5.000.000 | $ 5.000.000 | $ 5.000.000 | $ 17.000.000 | $ 8.300.000 | $ 0 | $ 0 | $ 40.300.000 | 34.316.667,66 | $ 5.983.332 | 17% |
+| c. Otras Comp. y Partidos Amistosos | $ 955.000 | $ 1.200.000 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 500.000 | $ 750.000 | $ 1.000.000 | $ 4.405.000 | 3.934.039,60 | $ 470.960 | 12% |
+| d. Derechos de Televisación | $ 4.100.000 | $ 4.100.000 | $ 4.100.000 | $ 4.100.000 | $ 4.100.000 | $ 5.500.000 | $ 5.500.000 | $ 5.500.000 | $ 5.500.000 | $ 5.500.000 | $ 5.500.000 | $ 5.500.000 | $ 59.000.000 | 56.648.719,74 | $ 2.351.280 | 4% |
+| e. Pub. y Esponsorización Futbol | $ 2.000.000 | $ 2.000.000 | $ 2.000.000 | $ 6.000.000 | $ 4.200.000 | $ 4.200.000 | $ 4.200.000 | $ 4.200.000 | $ 4.200.000 | $ 4.200.000 | $ 4.200.000 | $ 4.200.000 | $ 45.600.000 | 35.225.380,45 | $ 10.374.620 | 29% |
+| f. Otros Ingresos por alquiler de cancha | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 2.400.000 | 1.457.229,80 | $ 942.770 | 65% |
+| g. Otros Ingresos Dep. Futbol Prof. | $ 0 | $ 180.000 | $ 500.000 | $ 50.000 | $ 0 | $ 1.500.000 | $ 0 | $ 0 | $ 100.000 | $ 150.000 | $ 0 | $ 0 | $ 2.480.000 | 2.600.912,78 | -$ 120.913 | -5% |
+| **2. Cobranzas de Subvenciones a la Explotación** | | | | | | | | | | | | | | | | |
+| **3. Cobro de Otros Ingresos de Gestión** | | | | | | | | | | | | | | | | |
+| a. Cesión de Jugadores (Transf. / Prést.) | $ 4.275.000 | $ 0 | $ 0 | $ 0 | $ 11.550.000 | $ 15.000.000 | $ 0 | $ 0 | $ 0 | $ 0 | $ 14.000.000 | $ 15.000.000 | $ 59.825.000 | 84.551.177,17 | -$ 24.726.177 | -29% |
+| b. Ingresos por Prop. Industrial / Intelectual cedía en Explotación | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 750.000 | $ 9.000.000 | 7.739.208,00 | $ 1.260.792 | 16% |
+| c. Otros Ingresos de Gestión por Fútbol | $ 3.150.000 | $ 3.150.000 | $ 3.150.000 | $ 0 | $ 0 | $ 3.150.000 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 800.000 | $ 13.400.000 | 1.077.199,00 | $ 12.322.801 | 1144% |
+| **B. Ingresos de Otras Secciones Deportivas** | | | | | | | | | | | | | | | | |
+| a. Cobranza de Ingresos de Otras Secciones Deportivas | $ 200.000 | $ 200.000 | $ 200.000 | $ 500.000 | $ 500.000 | $ 500.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 200.000 | $ 600.000 | $ 3.700.000 | 3.640.889,56 | $ 59.110 | 2% |
+| **C. Otros Ingresos** | | | | | | | | | | | | | | | | |
+| a. Ingresos por Socios | $ 11.000.000 | $ 11.000.000 | $ 11.000.000 | $ 11.000.000 | $ 15.500.000 | $ 15.500.000 | $ 15.500.000 | $ 13.000.000 | $ 13.000.000 | $ 13.000.000 | $ 13.000.000 | $ 13.000.000 | $ 155.500.000 | 112.846.098,54 | $ 42.653.901 | 38% |
+| b. Ingresos Varios Sede | $ 1.000.000 | $ 1.000.000 | $ 1.000.000 | $ 1.000.000 | $ 200.000 | $ 200.000 | $ 1.000.000 | $ 1.000.000 | $ 1.000.000 | $ 1.000.000 | $ 1.000.000 | $ 1.000.000 | $ 10.400.000 | 12.449.619,42 | -$ 2.049.619 | -16% |
+| c. Ingresos por Merchandising | $ 1.100.000 | $ 1.100.000 | $ 2.500.000 | $ 6.000.000 | $ 1.100.000 | $ 1.500.000 | $ 3.000.000 | $ 2.000.000 | $ 2.000.000 | $ 2.000.000 | $ 2.000.000 | $ 2.000.000 | $ 26.300.000 | 32.732.970,25 | -$ 6.432.970 | -20% |
+| **Subtotal Ingresos Ordinarios (II)** | $ 29.530.000 | $ 25.980.000 | $ 26.545.000 | $ 30.600.000 | $ 38.100.000 | $ 57.000.000 | $ 38.350.000 | $ 34.850.000 | $ 46.950.000 | $ 38.800.000 | $ 41.600.000 | $ 47.050.000 | $ 455.355.000 | $ 410.177.858 | $ 45.177.142 | 11% |
+| **Ingresos Extraordinarios** | | | | | | | | | | | | | | | | |
+| a. Ingresos por Ventas de Bs de Uso | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | | | |
+| b. Ingresos por Venta de Act. Intangibles | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | | | |
+| c. Cobro de Aporte de Scio al Fdo Social | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | | | |
+| d. Cobro de Subv., Donaciones y Legados | $ 680.000 | $ 680.000 | $ 680.000 | $ 680.000 | $ 680.000 | $ 680.000 | $ 680.000 | $ 680.000 | $ 800.000 | $ 800.000 | $ 800.000 | $ 800.000 | $ 8.640.000 | 6.461.675,43 | $ 2.178.325 | 34% |
+| e. Préstamos Recibidos | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | | | |
+| f. Cobro por venta de Inversiones Fras. | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | | | |
+| g. Cobro por Ing. Fras. - Plazo Fijo | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 100.000 | $ 1.200.000 | 7.900.976,63 | -$ 6.700.977 | -85% |
+| h. Otros cobros de Ing. Extraordinarios | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | $ 0 | | | |
+| **Subtotal Ingresos Extraordinarios (III)** | $ 780.000 | $ 780.000 | $ 780.000 | $ 780.000 | $ 780.000 | $ 780.000 | $ 780.000 | $ 780.000 | $ 900.000 | $ 900.000 | $ 900.000 | $ 900.000 | $ 9.840.000 | $ 14.362.652 | -$ 4.522.652 | -31% |
+| **Total de Ingresos de Fdos (I)+(II)+(III)** | $ 30.310.000 | $ 26.760.000 | $ 27.325.000 | $ 31.380.000 | $ 38.880.000 | $ 57.780.000 | $ 39.130.000 | $ 35.630.000 | $ 47.850.000 | $ 39.700.000 | $ 42.500.000 | $ 47.950.000 | $ 465.195.000 | $ 424.540.510 | $ 40.654.490 | 10% |
+
+[Firmas: Dr. PABLO JORGE MENA, Secretario de Hacienda, RACING CLUB Asociación Civil / Dr. Christian Enrique Devia, Secretario General, Racing Club Asociación Civil]
 
 --- pág. 10 ---
 
@@ -414,44 +387,23 @@ Fa] 17
 
 --- pág. 11 ---
 
-3 813] |sjelojo]=]s [2 E
-31 [12/£] lololálololo[2 dE
-31 [5/8] E 686 o] [ale
-2 |s[(2] isjelsiala 3
-AER NE
-(5 |3|(ójecióisia S
-3 3 5 AANHBEE E als
-BIE | al :
-é als 15] ls
-3181 | a
-El g
-z sis] l8l8
-ellglez
-O A a E
-2 1131811818 (88
-h sie lala
-si8l (8/8
-il !
-E[|! 8l8l l8l8
-23) fl) Le.
-15] 88 jelsis
-8l8| l88|8
-: !
-8l8| l8l8|s
-FB
-B 318 ll lls
-i al
-sl8| l8ls
-Ñ
-¿[214 | 6 Es
-18 | El lsls
-aldB a
-E ¿131 Es ble
-A E
-SR y pE El
-pes sl8| [888 dE
-RS s/8l [8l8l8
-A y Slow co 85
-oli = ha a
-STR pi
-ES IASS
+Club: Racing Club Asociación Civil
+Presupuesto Financiero de Recursos y Gastos - Ejercicio 2015 - 2016
+
+(Página impresa girada 90°.)
+
+| Egresos Extraordinarios | sep-15 | oct-15 | nov-15 | dic-15 | ene-16 | feb-16 | mar-16 | abr-16 | may-16 | jun-16 | jul-16 | ago-16 | Total del Período 2015 - 2016 | Total Real Período 2014 - 2015 | Diferencia | Variación |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **1. Aumento de Activos Fijos** | | | | | | | | | | | | | | | | |
+| a. Pagos por compra de Bienes de Uso | | | | | | $ 200.000 | $ 200.000 | | | | | | $ 400.000 | 108.235,00 | $ 291.765 | 270% |
+| b. Pagos por compra de Inv. Estadio y Bs Uso | $ 400.000 | $ 400.000 | $ 600.000 | $ 600.000 | $ 600.000 | $ 1.800.000 | $ 1.600.000 | $ 600.000 | $ 600.000 | $ 600.000 | $ 1.600.000 | $ 600.000 | $ 10.000.000 | 2.724.536,00 | $ 7.275.464 | 267% |
+| c. Pagos por Obligaciones Fras. | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 700.000 | $ 8.400.000 | 8.783.101,00 | -$ 383.101 | -4% |
+| **2. Disminución de Pasivos** | | | | | | | | | | | | | | | | |
+| a. Cancelación Efectiva de Pasivos | $ 160.000 | $ 150.000 | $ 500.000 | $ 256.000 | $ 300.000 | $ 400.000 | $ 300.000 | $ 400.000 | $ 250.000 | $ 1.800.000 | $ 1.500.000 | $ 2.000.000 | $ 8.016.000 | 9.011.243,00 | -$ 995.243 | -11% |
+| b. Cancelación Efva por Cpra de Jug. | $ 0 | $ 500.000 | $ 500.000 | $ 6.500.000 | $ 5.000.000 | $ 5.000.000 | $ 5.000.000 | $ 5.000.000 | $ 5.000.000 | $ 5.000.000 | $ 10.000.000 | $ 5.000.000 | $ 52.500.000 | 49.682.021,00 | $ 2.817.979 | 6% |
+| **Subtotal Egresos Extraordinarios (V)** | $ 1.260.000 | $ 1.750.000 | $ 2.300.000 | $ 8.056.000 | $ 6.600.000 | $ 8.100.000 | $ 7.800.000 | $ 6.700.000 | $ 6.550.000 | $ 8.100.000 | $ 13.800.000 | $ 8.300.000 | $ 79.316.000 | $ 70.309.136 | $ 9.006.864 | 13% |
+| **Total de Egresos de Fdos (IV)+(V)** | $ 23.740.000 | $ 32.880.000 | $ 30.630.000 | $ 35.136.000 | $ 30.980.000 | $ 40.580.000 | $ 42.530.000 | $ 42.980.000 | $ 47.080.000 | $ 46.080.000 | $ 50.730.000 | $ 48.880.000 | $ 472.226.000 | $ 370.582.828 | $ 101.643.172 | 27% |
+| **Saldo Fondo Financiero** | $ 14.814.838 | $ 8.694.838 | $ 5.389.838 | $ 1.633.838 | $ 9.633.838 | $ 26.833.838 | $ 23.433.838 | $ 16.083.838 | $ 16.753.838 | $ 10.373.838 | $ 2.143.838 | $ 1.213.838 | | | | |
+
+[Firmas: Dr. PABLO JORGE MENA, Secretario de Hacienda, RACING CLUB Asociación Civil / Dr. Christian Enrique Devia, Secretario General, Racing Club Asociación Civil]
+

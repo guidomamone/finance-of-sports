@@ -698,49 +698,35 @@ Page 12 of 60
 
 --- pág. 13 ---
 
-N°
+N° 0845049251 | VOL-kap 6.3.1
 
-0845049251 VOL-kap 6.3.1 |
+# STAAT VAN DE MATERIËLE VASTE ACTIVA
 
-STAAT VAN DE MATERIËLE VASTE ACTIVA
-
-Codes Boekjaar Vorig boekjaar |
-
-TERREINEN EN GEBOUWEN
-Aanschaffingswaarde per einde van het boekjaar 8191P XXXXKKKKKK 1.944.345 |
-Mutaties tijdens het boekjaar
-
-Aanschaffingen, met inbegrip van de geproduceerde vaste activa 8161 377.664
-
-Overdrachten en buitengebruikstellingen 8171
-
-Overboekingen van een post naar een andere @I) | 8181
-Aanschaffingswaarde per einde van het boekjaar 8191 2.322.009
-Meerwaarden per einde van het boekjaar 8251P XXXXXKXKKK 0
-Mutaties tijdens het boekjaar
-
-Geboekt 8211
-
-Verworven van derden 8221
-
-Afgeboekt 8231
-
-Overgeboekt van een post naar een andere GI) | 8241
-Meerwaarden per einde van het boekjaar 8251 0
-Afschrijvingen en waardeverminderingen per einde van het boekjaar 8321P KXXKKKKKKK 1.636.428
-Mutaties tijdens het boekjaar
-
-Geboekt 8271 114.674
-
-Teruggenomen 8281
-
-Verworven van derden 8291
-
-Afgeboekt na overdrachten en buitengebruikstellingen 8301
-
-Overgeboekt van een post naar een andere @I) | 8311
-Afschrijvingen en waardeverminderingen per einde van het boekjaar 8321 1.751.102
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (22) 270.907
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **TERREINEN EN GEBOUWEN** | | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8191P | XXXXXXXXXX | 1.944.345 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Aanschaffingen, met inbegrip van de geproduceerde vaste activa | 8161 | 377.664 | |
+| Overdrachten en buitengebruikstellingen | 8171 | | |
+| Overboekingen van een post naar een andere (+)/(-) | 8181 | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8191 | **2.322.009** | |
+| **Meerwaarden per einde van het boekjaar** | 8251P | XXXXXXXXXX | 0 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8211 | | |
+| Verworven van derden | 8221 | | |
+| Afgeboekt | 8231 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8241 | | |
+| **Meerwaarden per einde van het boekjaar** | 8251 | **0** | |
+| **Afschrijvingen en waardeverminderingen per einde van het boekjaar** | 8321P | XXXXXXXXXX | 1.636.428 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8271 | 114.674 | |
+| Teruggenomen | 8281 | | |
+| Verworven van derden | 8291 | | |
+| Afgeboekt na overdrachten en buitengebruikstellingen | 8301 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8311 | | |
+| **Afschrijvingen en waardeverminderingen per einde van het boekjaar** | 8321 | **1.751.102** | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | (22) | **570.907** | |
 
 Page 13 of 60
 
@@ -806,121 +792,49 @@ Page 15 of 60
 
 --- pág. 16 ---
 
-N
+N° 0845049251 | VOL-kap 6.4.1
 
-0845049251
+# STAAT VAN DE FINANCIËLE VASTE ACTIVA
 
-VOL-kap 6.4.1 |
-
-STAAT VAN DE FINANCIËLE VASTE ACTIVA
-
-VERBONDEN ONDERNEMINGEN - DEELNEMINGEN EN AANDELEN
-Aanschaffingswaarde per einde van het boekjaar
-
-Mutaties tijdens het boekjaar
-
-Aanschaffingswaarde per einde van het boekjaar
-Meerwaarden per einde van het boekjaar
-
-Mutaties tijdens het boekjaar
-
-Meerwaarden per einde van het boekjaar
-Waardeverminderingen per einde van het boekjaar
-
-Mutaties tijdens het boekjaar
-
-Waardeverminderingen per einde van het boekjaar
-Niet-opgevraagde bedragen per einde van het boekjaar
-Mutaties tijdens het boekjaar
-
-Niet-opgevraagde bedragen per einde van het boekjaar
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
-VERBONDEN ONDERNEMINGEN - VORDERINGEN
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
-
-Mutaties tijdens het boekjaar
-
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
-GECUMULEERDE WAARDEVERMINDERINGEN OP VORDERINGEN PER
-
-Aanschaffingen
-
-Overdrachten en buitengebruikstellingen
-
-Overboekingen van een post naar een andere
-
-Geboekt
-
-Verworven van derden
-
-Afgeboekt
-
-Overgeboekt van een post naar een andere
-
-Geboekt
-
-Teruggenomen
-
-Verworven van derden
-Afgeboekt na overdrachten en buitengebruikstellingen
-Overgeboekt van een post naar een andere
-
-Toevoegingen
-Terugbetalingen
-
-Geboekte waardeverminderingen
-Teruggenomen waardeverminderingen
-
-Wisselkoersverschillen
-
-Overige mutaties
-
-EINDE BOEKJAAR
-
-@/G)
-
-@/G)
-
-@/G)
-
-@/G)
-
-@/G)
-@/G)
-
-Codes Boekjaar Vorig boekjaar |
-8391P pe, 0,004 0 |
-8361
-8371
-8381
-8391 (0)
-8451P pe, 0,004 0
-8411
-8421
-8431
-8441
-8451 0
-8521P pe, 0,004 0
-8471
-8481
-8491
-8501
-8511
-8521 0
-8551P pe, 0,004 0
-8541
-8551 0
-(280)
-281P XXXXKKKKKK
-8581
-8591
-8601
-8611
-8621
-8631
-(281)
-
-8651 [e)
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **VERBONDEN ONDERNEMINGEN - DEELNEMINGEN EN AANDELEN** | | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8391P | XXXXXXXXXX | 0 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Aanschaffingen | 8361 | | |
+| Overdrachten en buitengebruikstellingen | 8371 | | |
+| Overboekingen van een post naar een andere (+)/(-) | 8381 | | |
+| **Aanschaffingswaarde per einde van het boekjaar** | 8391 | **0** | |
+| **Meerwaarden per einde van het boekjaar** | 8451P | XXXXXXXXXX | 0 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8411 | | |
+| Verworven van derden | 8421 | | |
+| Afgeboekt | 8431 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8441 | | |
+| **Meerwaarden per einde van het boekjaar** | 8451 | **0** | |
+| **Waardeverminderingen per einde van het boekjaar** | 8521P | XXXXXXXXXX | 0 |
+| **Mutaties tijdens het boekjaar** | | | |
+| Geboekt | 8471 | | |
+| Teruggenomen | 8481 | | |
+| Verworven van derden | 8491 | | |
+| Afgeboekt na overdrachten en buitengebruikstellingen | 8501 | | |
+| Overgeboekt van een post naar een andere (+)/(-) | 8511 | | |
+| **Waardeverminderingen per einde van het boekjaar** | 8521 | **0** | |
+| **Niet-opgevraagde bedragen per einde van het boekjaar** | 8551P | XXXXXXXXXX | 0 |
+| **Mutaties tijdens het boekjaar** (+)/(-) | 8541 | | |
+| **Niet-opgevraagde bedragen per einde van het boekjaar** | 8551 | **0** | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | (280) | | |
+| **VERBONDEN ONDERNEMINGEN - VORDERINGEN** | | | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | 281P | XXXXXXXXXX | |
+| **Mutaties tijdens het boekjaar** | | | |
+| Toevoegingen | 8581 | | |
+| Terugbetalingen | 8591 | | |
+| Geboekte waardeverminderingen | 8601 | | |
+| Teruggenomen waardeverminderingen | 8611 | | |
+| Wisselkoersverschillen (+)/(-) | 8621 | | |
+| Overige mutaties (+)/(-) | 8631 | | |
+| **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR** | (281) | | |
+| **GECUMULEERDE WAARDEVERMINDERINGEN OP VORDERINGEN PER EINDE BOEKJAAR** | 8651 | **0** | |
 
 Page 16 of 60
 
@@ -1289,55 +1203,62 @@ Page 19 of 60
 
 --- pág. 20 ---
 
-N°
+N° 0845049251 | VOL-kap 6.7.1
 
-0845049251 VOL-kap 6.7.1 |
+# STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR
 
-STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **STAAT VAN HET KAPITAAL** | | | |
+| **Kapitaal** | | | |
+| Geplaatst kapitaal per einde van het boekjaar | 100P | XXXXXXXXXX | 8.500.000 |
+| Geplaatst kapitaal per einde van het boekjaar | (100) | 8.500.000 | |
 
-Codes Boekjaar Vorig boekjaar
-STAAT VAN HET KAPITAAL
-Kapitaal
-Geplaatst kapitaal per einde van het boekjaar 100P pe 000 0004 8.500.000 |
-Geplaatst kapitaal per einde van het boekjaar (100) 8.500.000
-Codes Bedragen Aantal aandelen
-Wijzigingen tijdens het boekjaar
-Samenstelling van het kapitaal
-Soorten aandelen
-Gewone kapitaalsaandelen 8.500.000 7.273.504
-Aandelen op naam 8702 DO 0 00 7.273.504
-Gedematerialiseerde aandelen 8703 XXNKKKKKKK 0
-Codes Niet-opgevraagd bedrag Opgevraagd, niet-gestort bedrag
-Niet-gestort kapitaal
-Niet-opgevraagd kapitaal (101) pe 0000000
-Opgevraagd, niet-gestort kapitaal 8712 pe 000 0004
-Aandeelhouders die nog moeten volstorten
-Codes Boekjaar
-Eigen aandelen
-Gehouden door de vennootschap zelf
-Kapitaalbedrag 8721
-Aantal aandelen 8722
-Gehouden door haar dochters
-Kapitaalbedrag 8731
-Aantal aandelen 8732
-Verplichtingen tot uitgifte van aandelen
-Als gevolg van de uitoefening van conversierechten
-Bedrag van de lopende converteerbare leningen 8740
-Bedrag van het te plaatsen kapitaal 8741
-Maximum aantal uit te geven aandelen 8742
-Als gevolg van de uitoefening van inschrijvingsrechten
-Aantal inschrijvingsrechten in omloop 8745
-Bedrag van het te plaatsen kapitaal 8746
-Maximum aantal uit te geven aandelen 8747
-Toegestaan, niet-geplaatst kapitaal 8751
-Codes Boekjaar
-Aandelen buiten kapitaal
-Verdeling
-Aantal aandelen 8761
-Daaraan verbonden stemrecht 8762
-Uitsplitsing volgens de aandeelhouders
-Aantal aandelen gehouden door de vennootschap zelf 8771
-Aantal aandelen gehouden door haar dochters 8781
+| | Codes | Bedragen | Aantal aandelen |
+|---|---|---|---|
+| Wijzigingen tijdens het boekjaar | | | |
+| Samenstelling van het kapitaal | | | |
+| Soorten aandelen | | | |
+| Gewone kapitaalsaandelen | | 8.500.000 | 7.273.504 |
+| Aandelen op naam | 8702 | XXXXXXXXXX | 7.273.504 |
+| Gedematerialiseerde aandelen | 8703 | XXXXXXXXXX | 0 |
+
+| | Codes | Niet-opgevraagd bedrag | Opgevraagd, niet-gestort bedrag |
+|---|---|---|---|
+| **Niet-gestort kapitaal** | | | |
+| Niet-opgevraagd kapitaal | (101) | | XXXXXXXXXX |
+| Opgevraagd, niet-gestort kapitaal | 8712 | XXXXXXXXXX | |
+| Aandeelhouders die nog moeten volstorten | | | |
+
+| | Codes | Boekjaar |
+|---|---|---|
+| **Eigen aandelen** | | |
+| Gehouden door de vennootschap zelf | | |
+| Kapitaalbedrag | 8721 | |
+| Aantal aandelen | 8722 | |
+| Gehouden door haar dochters | | |
+| Kapitaalbedrag | 8731 | |
+| Aantal aandelen | 8732 | |
+| **Verplichtingen tot uitgifte van aandelen** | | |
+| Als gevolg van de uitoefening van conversierechten | | |
+| Bedrag van de lopende converteerbare leningen | 8740 | |
+| Bedrag van het te plaatsen kapitaal | 8741 | |
+| Maximum aantal uit te geven aandelen | 8742 | |
+| Als gevolg van de uitoefening van inschrijvingsrechten | | |
+| Aantal inschrijvingsrechten in omloop | 8745 | |
+| Bedrag van het te plaatsen kapitaal | 8746 | |
+| Maximum aantal uit te geven aandelen | 8747 | |
+| **Toegestaan, niet-geplaatst kapitaal** | 8751 | |
+
+| | Codes | Boekjaar |
+|---|---|---|
+| **Aandelen buiten kapitaal** | | |
+| Verdeling | | |
+| Aantal aandelen | 8761 | |
+| Daaraan verbonden stemrecht | 8762 | |
+| Uitsplitsing volgens de aandeelhouders | | |
+| Aantal aandelen gehouden door de vennootschap zelf | 8771 | |
+| Aantal aandelen gehouden door haar dochters | 8781 | |
 
 Page 20 of 60
 
@@ -2045,86 +1966,39 @@ Page 34 of 60
 
 --- pág. 35 ---
 
-[N° 0845049251
+N° 0845049251 | VOL-kap 6.15
 
-VOL-kap 6.15
+# BETREKKINGEN MET VERBONDEN ONDERNEMINGEN, GEASSOCIEERDE ONDERNEMINGEN EN DE ANDERE ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING BESTAAT
 
-BETREKKINGEN MET VERBONDEN ONDERNEMINGEN, GEASSOCIEERDE ONDERNEMINGEN EN DE ANDERE
-
-ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING BESTAAT
-
-VERBONDEN ONDERNEMINGEN
-
-Financiële vaste activa
-Deelnemingen
-Achtergestelde vorderingen
-Andere vorderingen
-
-Vorderingen
-Op meer dan één jaar
-Op hoogstens één jaar
-Geldbeleggingen
-Aandelen
-Vorderingen
-
-Schulden
-
-Op meer dan één jaar
-
-Op hoogstens één jaar
-Persoonlijke en zakelijke zekerheden
-
-Door de vennootschap gesteld of onherroepelijk beloofd als waarborg voor schulden
-of verplichtingen van verbonden ondernemingen
-
-Door verbonden ondernemingen gesteld of onherroepelijk beloofd als waarborg
-voor schulden of verplichtingen van de vennootschap
-
-Andere betekenisvolle financiële verplichtingen
-
-Financiële resultaten
-Opbrengsten uit financiële vaste activa
-Opbrengsten uit vlottende activa
-Andere financiële opbrengsten
-Kosten van schulden
-Andere financiële kosten
-
-Realisatie van vaste activa
-Verwezenlijkte meerwaarden
-
-Verwezenlijkte minderwaarden
-
-Codes Boekjaar Vorig boekjaar
-(280/1)
-(280)
-9271
-9281
-9201 2.058.118 0
-9301
-9311 2.058.118
-9321
-9331
-9341
-9351 6.567.912 0
-9361 6.361.285
-9371 206.627
-
-9381
-
-9391
-
-9401
-
-9421
-9431
-9441
-9461
-
-9471
-
-9481
-
-9491
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **VERBONDEN ONDERNEMINGEN** | | | |
+| **Financiële vaste activa** | (280/1) | | |
+| Deelnemingen | (280) | | |
+| Achtergestelde vorderingen | 9271 | | |
+| Andere vorderingen | 9281 | | |
+| **Vorderingen** | 9291 | **2.058.118** | **0** |
+| Op meer dan één jaar | 9301 | | |
+| Op hoogstens één jaar | 9311 | 2.058.118 | |
+| **Geldbeleggingen** | 9321 | | |
+| Aandelen | 9331 | | |
+| Vorderingen | 9341 | | |
+| **Schulden** | 9351 | **6.567.912** | **0** |
+| Op meer dan één jaar | 9361 | 6.361.285 | |
+| Op hoogstens één jaar | 9371 | 206.627 | |
+| **Persoonlijke en zakelijke zekerheden** | | | |
+| Door de vennootschap gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van verbonden ondernemingen | 9381 | | |
+| Door verbonden ondernemingen gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van de vennootschap | 9391 | | |
+| **Andere betekenisvolle financiële verplichtingen** | 9401 | | |
+| **Financiële resultaten** | | | |
+| Opbrengsten uit financiële vaste activa | 9421 | | |
+| Opbrengsten uit vlottende activa | 9431 | | |
+| Andere financiële opbrengsten | 9441 | | |
+| Kosten van schulden | 9461 | | |
+| Andere financiële kosten | 9471 | | |
+| **Realisatie van vaste activa** | | | |
+| Verwezenlijkte meerwaarden | 9481 | | |
+| Verwezenlijkte minderwaarden | 9491 | | |
 
 Page 35 of 60
 
@@ -2283,27 +2157,22 @@ Page 37 of 60
 
 --- pág. 38 ---
 
-N°
+N° 0845049251 | VOL-kap 6.18.1
 
-0845049251 VOL-kap 6.181
+# VERKLARING BETREFFENDE DE GECONSOLIDEERDE JAARREKENING
 
-VERKLARING BETREFFENDE DE GECONSOLIDEERDE JAARREKENING
+**INLICHTINGEN TE VERSTREKKEN DOOR ELKE VENNOOTSCHAP DIE ONDERWORPEN IS AAN DE BEPALINGEN VAN HET WETBOEK VAN VENNOOTSCHAPPEN EN VERENIGINGEN INZAKE DE GECONSOLIDEERDE JAARREKENING**
 
-INLICHTINGEN TE VERSTREKKEN DOOR ELKE VENNOOTSCHAP DIE ONDERWORPEN IS AAN DE BEPALINGEN VAN HET WETBOEK VAN
-VENNOOTSCHAPPEN EN VERENIGINGEN INZAKE DE GECONSOLIDEERDE JAARREKENING
+**INLICHTINGEN DIE MOETEN WORDEN VERSTREKT DOOR DE VENNOOTSCHAP INDIEN ZIJ DOCHTERVENNOOTSCHAP OF GEMEENSCHAPPELIJKE DOCHTERVENNOOTSCHAP IS**
 
-INLICHTINGEN DIE MOETEN WORDEN VERSTREKT DOOR DE VENNOOTSCHAP INDIEN ZIJ DOCHTERVENNOOTSCHAP OF
-GEMEENSCHAPPELIJKE DOCHTERVENNOOTSCHAP IS
-
-Naam, volledig adres van de zetel en, zo het een onderneming naar Belgisch recht betreft, het ondernemingsnummer van de
-moederonderneming(en) en de aanduiding of deze moederonderneming(en) een geconsolideerde jaarrekening, waarin haar jaarrekening door
-consolidatie opgenomen is, opstelt (opstellen) en openbaar maakt (maken)”:
+Naam, volledig adres van de zetel en, zo het een onderneming naar Belgisch recht betreft, het ondernemingsnummer van de moederonderneming(en) en de aanduiding of deze moederonderneming(en) een geconsolideerde jaarrekening, waarin haar jaarrekening door consolidatie opgenomen is, opstelt (opstellen) en openbaar maakt (maken)*:
 
 DG Holdings Co. Ltd.
 Roppongi Minato-Ku 3-2-1
 1066224 Tokyo
-
 JAPAN
+
+______________________________
 
 Page 38 of 60
 
@@ -2532,344 +2401,137 @@ Page 42 of 60
 6. Vooruitbetalingen
 B. Bestellingen in uitvoering
 
-VII Vorderingen op ten hoogste één jaar
+| | 30/06/2024 | 30/06/2023 |
+| :--- | :--- | :--- |
+| **VII. Vorderingen op ten hoogste één jaar** | **12.736.335,45** | **8.876.525,42** |
+| A. Handelsvorderingen | 11.961.629,64 | 8.688.731,37 |
+| B. Overige vorderingen | 774.705,81 | 187.794,05 |
+| **VIII. Geldbeleggingen** | | |
+| A. Eigen aandelen | | |
+| B. Overige beleggingen | | |
+| **IX. Liquide middelen** | **3.813797,38** | **2.688.946,64** |
+| **X. Overlopende rekeningen** | **290.500,49** | **604.479,81** |
+| **TOTAAL DER ACTIVA** | **23.364.790,35** | **17.029.007,10** |
 
-A. Handelsvorderingen
-B. Overige vorderingen
+### PASSIVA
 
-VIII. Geldbeleggingen
-
-A. Eigen aandelen
-B. Overige beleggingen
-
-IX. Liquide middelen
-
-X. Overlopende rekeningen
-
-TOTAAL DER ACTIVA
-
-PASSIVA
-
-Eigen vermogen
-
-|. Kapitaal
-
-A. Geplaatst kapitaal
-B. Niet-opgevraagd kapitaal
-
-Il. Uitgiftepremies
-Ill, Herwaarderingsmeerwaarden
-
-IV. Reserves
-
-A. Wettelijke reserve
-
-B. Onbeschikbare reserves
-C. Belastingvrije reserve
-D. Beschikbare reserves
-
-V. Overgedragen winst / Overgedragen verlies
-
-VI. Kapitaalsubsidies
-
-Voorzieningen en uitgestelde belastingen
-VII. A. Voorzieningen voor risico's en kosten
-
-|. Pensioenen en soortgelijke verplichtingen
-2. Belastingen
-
-3. Grote herstellings - en onderhoudswerken
-4. Overige risico's en kosten
-
-B. Uitgestelde belastingen
-
-Schulden
-VliL. Schulden op meer dan één jaar
-
-A. Financiële schulden
-
-B. Handelsschulden
-
-C. Ontvangen vooruitbetalingen op bestellingen
-D. Overige schulden
-
-12.736.335,45
-
-11.961.629,64
-774.705,81
-
-3.613797,38
-
-290.500,49
-
-23.364.790,35
-
-30/06/2024
-
--1.849.728,11
-
-8.500.000,00
-8.500.000,00
-
--10.349.728,11
-
-25.214.518,46
-10.430.755,44
-8.209.756,33
-1.059.715,31
-
-1.161.284,80
-
-8.876.525,42
-
-8.688.731,37
-187.794,05
-
-2.688.946,64
-
-604.479,81
-
-17.029.007,10
-
-30/06/2023
-
--6.026.617,54
-
-8.500.000,00
-8.500.000,00
-
--14.526.617,54
-
-23.055.624,64
-11.018.098,08
-9.527.670,41
-329.142,87
-
-1.161.284,80
+| | 30/06/2024 | 30/06/2023 |
+| :--- | :--- | :--- |
+| **Eigen vermogen** | **-1.849.728,11** | **-6.026.617,54** |
+| **I. Kapitaal** | **8.500.000,00** | **8.500.000,00** |
+| A. Geplaatst kapitaal | 8.500.000,00 | 8.500.000,00 |
+| B. Niet-opgevraagd kapitaal | | |
+| **II. Uitgiftepremies** | | |
+| **III. Herwaarderingsmeerwaarden** | | |
+| **IV. Reserves** | | |
+| A. Wettelijke reserve | | |
+| B. Onbeschikbare reserves | | |
+| C. Belastingvrije reserve | | |
+| D. Beschikbare reserves | | |
+| **V. Overgedragen winst / Overgedragen verlies** | **-10.349.728,11** | **-14.526.617,54** |
+| **VI. Kapitaalsubsidies** | | |
+| **Voorzieningen en uitgestelde belastingen** | | |
+| **VII. A. Voorzieningen voor risico's en kosten** | | |
+| 1. Pensioenen en soortgelijke verplichtingen | | |
+| 2. Belastingen | | |
+| 3. Grote herstellings - en onderhoudswerken | | |
+| 4. Overige risico's en kosten | | |
+| **B. Uitgestelde belastingen** | | |
+| **Schulden** | **25.214.518,46** | **23.055.624,64** |
+| **VIII. Schulden op meer dan één jaar** | **10.430.755,44** | **11.018.098,08** |
+| A. Financiële schulden | 8.209.756,33 | 9.527.670,41 |
+| B. Handelsschulden | 1.059.715,31 | 329.142,87 |
+| C. Ontvangen vooruitbetalingen op bestellingen | | |
+| D. Overige schulden | 1.161.284,80 | 1.161.284,80 |
 
 Page 43 of 60
 
 --- pág. 44 ---
 
-IX. Schulden op ten hoogste één jaar
+| | | |
+|---|---|---|
+| **IX. Schulden op ten hoogste één jaar** | **9.357.921,62** | **6.234.330,51** |
+| A. Schulden op meer dan één jaar die binnen het jaar vervallen | 1.311.817,45 | |
+| B. Financiële schulden | | |
+| C. Handelsschulden | 5.767.873,09 | 4.926.237,85 |
+| D. Ontvangen vooruitbetalingen | | |
+| E. Schulden met betrek. tot belast., bezold. en sociale last. | 2.259.397,75 | 1.294.842,66 |
+| F. Overige schulden | 18.833,33 | 13.250,00 |
+| **X. Overlopende rekeningen** | **5.425.841,40** | **5.803.196,05** |
+| **TOTAAL DER PASSIVA** | **23.364.790,35** | **17.029.007,10** |
 
-A. Schulden op meer dan één jaar die binnen het jaar
-vervallen
+# RESULTATENREKENING
 
-B. Financiële schulden
-
-C. Handelsschulden
-
-D. Ontvangen vooruitbetalingen
-
-E. Schulden met betrek. tot belast, bezold. en sociale
-last.
-
-F. Overige schulden
-
-X. Overlopende rekeningen
-
-TOTAAL DER PASSIVA
-
-RESULTATENREKENING
-
-Bedrijfsopbrengsten
-
-- Omzet
-
-- Wijziging in de voorraad (goed. in bewerk. en gereed
-prod en in de bestel.
-
-- Geproduceerde vaste activa
-
-- Andere bedrijfsopbrengsten
-
-- Niet recurente bedrijfsopbrengsten
-
-Bedrijfskosten
-
-- Handelsgoederen, grond- en hulpstoffen
-
-- Diensten en diverse goederen
-
-- Bezoldigingen, sociale lasten en pensioenen
-- Afschrijvingen en waardeverminderingen op vaste
-activa
-
-- Waardeverminderingen op vlottende activa
-- Voorzieningen voor risico's en kosten
-
-- Afschrijvingen op consolidatieverschillen
-
-- Anderen bedrijfskosten
-
-- Als herstructureringskosten geactiveerde
-bedrijfskosten
-
-- Niet recurente bedrijfskosten
-
-Bedrijfsresultaat
-- Financiële opbrengsten
-- Financiële kosten
-
-Resultaat uit de gewone
-bedrijfsuitoefening voor belastingen
-- Uitzonderlijke opbrengsten
-
-- Uitzonderlijke kosten
-
-Resultaat van het boekjaar
-- Onttrekking aan/naar uitgestelde belastingen
-- Belastingen op het resultaat
-
-Resultaat van het boekjaar
-- Onttrekking / Overboeking naar de belastingvrije
-reserves
-
-Te bestemmen resultaat van het boekjaar
-
-9.357.921,62
-1.311.817,45
-
-5.767.873,09
-2259.397,75
-
-18.833,33
-5.425.841,40
-
-23.364.790,35
-
-30/06/2024
-
-27.835.529,94
-23.327.108,52
-
-4.488.434,52
-19.986,90
-
-20.999.901,70
-384.732,34
-7.261.045,24
-11.703.890.70
-1.207.678,65
-
-147.344,85
-
-295.209,92
-
-6.835.628,24
-177.882,53
-739.499, 24
-
-6.274.011,53
-
-811.885,17
-5.462.126,36
-
-1.285.236,93
-4.176.899,43
-
-4.176.889,43
-
-6.234.330,51
-
-4.926.237 85
-1.294 842,66
-
-13.250,00
-5.803.196,05
-
-17.029.007,10
-
-30/06/2023
-
-25.918.380,20
-19.508.507,11
-
-6.409 873,09
-
-25.194.304,97
-275.344,19
-9.758.353,23
-13.104.788,08
-1.519.803,44
-
-425.000,00
-
-111.016,03
-
-724.075,23
-19.182,07
-557.731,73
-
-185.525,57
-
-2.309.631,46
-160.665,19
-
-2.334.491,84
-
-575.615,36
-1.758.876,48
-
-1.758.876,48
+| | 30/06/2024 | 30/06/2023 |
+|---|---|---|
+| **Bedrijfsopbrengsten** | **27.835.529,94** | **25.918.380,20** |
+| - Omzet | 23.327.108,52 | 19.508.507,11 |
+| - Wijziging in de voorraad (goed. in bewerk. en gereed prod en in de bestel. | | |
+| - Geproduceerde vaste activa | | |
+| - Andere bedrijfsopbrengsten | 4.488.434,52 | 6.409.873,09 |
+| - Niet recurente bedrijfsopbrengsten | 19.986,90 | |
+| **Bedrijfskosten** | **20.999.901,70** | **25.194.304,97** |
+| - Handelsgoederen, grond- en hulpstoffen | 384.732,34 | 275.344,19 |
+| - Diensten en diverse goederen | 7.261.045,24 | 9.758.353,23 |
+| - Bezoldigingen, sociale lasten en pensioenen | 11.703.890,70 | 13.104.788,08 |
+| - Afschrijvingen en waardeverminderingen op vaste activa | 1.207.678,65 | 1.519.803,44 |
+| - Waardeverminderingen op vlottende activa | | 425.000,00 |
+| - Voorzieningen voor risico's en kosten | | |
+| - Afschrijvingen op consolidatieverschillen | | |
+| - Anderen bedrijfskosten | 147.344,85 | 111.016,03 |
+| - Als herstructureringskosten geactiveerde bedrijfskosten | | |
+| - Niet recurente bedrijfskosten | 295.209,92 | |
+| **Bedrijfsresultaat** | **6.835.628,24** | **724.075,23** |
+| - Financiële opbrengsten | 177.882,53 | 19.182,07 |
+| - Financiële kosten | 739.499,24 | 557.731,73 |
+| **Resultaat uit de gewone bedrijfsuitoefening voor belastingen** | **6.274.011,53** | **185.525,57** |
+| - Uitzonderlijke opbrengsten | | 2.309.631,46 |
+| - Uitzonderlijke kosten | 811.885,17 | 160.665,19 |
+| **Resultaat van het boekjaar** | **5.462.126,36** | **2.334.491,84** |
+| - Onttrekking aan/naar uitgestelde belastingen | | |
+| - Belastingen op het resultaat | 1.285.236,93 | 575.615,36 |
+| **Resultaat van het boekjaar** | **4.176.899,43** | **1.758.876,48** |
+| - Onttrekking / Overboeking naar de belastingvrije reserves | | |
+| **Te bestemmen resultaat van het boekjaar** | **4.176.889,43** | **1.758.876,48** |
 
 Page 44 of 60
 
 --- pág. 45 ---
 
-RESULTAATVERWERKING
-30/06/2024 30/06/2023
+### RESULTAATVERWERKING
 
-A. Te bestemmen resultaat
-1. Te bestemmen winst van het jaar / Te verwerken 4.176.889,43 1.758.876,48
-verlies van het jaar
+| | 30/06/2024 | 30/06/2023 |
+| :--- | :--- | :--- |
+| **A. Te bestemmen resultaat** | | |
+| 1. Te bestemmen winst van het jaar / Te verwerken verlies van het jaar | 4.176.889,43 | 1.758.876,48 |
+| 2. Overgedragen winst van het vorige boekjaar Overgedragen verlies van het vorige boekjaar | -14.526.617,54 | -16.285.494,02 |
+| **B. Onttrekking aan het eigen vermogen** | | |
+| 1. Aan het kapitaal en aan de uitgiftepremies | | |
+| 2. Aan de reserves | | |
+| **C. Toevoeging aan het eigen vermogen** | | |
+| 1. Aan het kapitaal en aan de uitgiftepremies | | |
+| 2. Aan de wettelijke reserve | | |
+| 3. Aan de overige reserves | | |
+| **D. Over te dragen resultaat** | | |
+| 1. Over te dragen winst | | |
+| 2. Over te dragen verlies | -10.349.728,11 | 14.526.617,54 |
+| **E. Tussenkomst van de vennoten in het verlies** | | |
+| **F. Uit te keren winst** | | |
+| 1. Vergoeding van het kapitaal | | |
+| 2. Bestuurders of zaakvoerders | | |
+| 3. Andere rechthebbenden | | |
 
-2. Overgedragen winst van het vorige boekjaar
-Overgedragen verlies van het vorige boekjaar -14 526.617,54 -16.285 494,02
+#### Voornaamste risico's en onzekerheden
+Wij dienen u te wijzen op de voornaamste risico's en onzekerheden, zijnde de hoge eisen welke aan de vennootschap gesteld worden inzake vigerende wetgeving. Door de directie wordt hieraan absolute prioriteit gegeven.
 
-B. Onttrekking aan het eigen vermogen
-1. Aan het kapitaal en aan de uitgiftepremies
-2. Aan de reserves
-
-C. Toevoeging aan het eigen vermogen
-1. Aan het kapitaal en aan de uitgiftepremies
-
-2. Aan de wettelijke reserve
-
-3. Aan de overige reserves
-
-D. Over te dragen resultaat
-t. Over te dragen winst
-
-2. Over te dragen verlies -10.349.728,11 14.526.617,54
-
-E. Tussenkomst van de vennoten in het
-verlies
-
-F. Uit te keren winst
-1. Vergoeding van het kapitaal
-2. Bestuurders of zaakvoerders
-3. Andere rechthebbenden
-
-Voornaamste risico’s en onzekerheden
-
-Wij dienen u te wijzen op de voornaamste risico’s en onzekerheden, zijnde de hoge eisen welke
-aan de vennootschap gesteld worden inzake vigerende wetgeving. Door de directie wordt hieraan
-absolute prioriteit gegeven.
-
-Belangrijke gebeurtenissen na balansdatum
+#### Belangrijke gebeurtenissen na balansdatum
 Er geen vermeldenswaardige gebeurtenissen na balansdatum.
 
-Kapitaalmutaties
-In het afgelopen boekjaar werd door het bestuursorgaan niet besloten tot een kapitaaisverhoging
-binnen het toegelaten kapitaal of een uitgifte van converteerbare obligaties of obligaties met
-inschrijvingsrecht.
+#### Kapitaalmutaties
+In het afgelopen boekjaar werd door het bestuursorgaan niet besloten tot een kapitaalsverhoging binnen het toegelaten kapitaal of een uitgifte van converteerbare obligaties of obligaties met inschrijvingsrecht.
 
-Resultaatsverwerking
-Uit de balans en de resultatenrekening per 30 juni 2024 blijkt een winst over het boekjaar van
-4.176.889,43 Euro.
-
+#### Resultaatsverwerking
+Uit de balans en de resultatenrekening per 30 juni 2024 blijkt een winst over het boekjaar van 4.176.889,43 Euro.
 Er zal worden voorgesteld dit resultaat te compenseren met de voorheen overgedragen verliezen.
 
 Page 45 of 60
@@ -3436,53 +3098,43 @@ Page 57 of 60
 
 --- pág. 58 ---
 
-STVV NV
-
+**STVV NV**
 Naamloze vennootschap
 Tiensesteenweg 168
-
 3800 SINT-TRUIDEN
-
-BTW BE-0845.049,251
-
+BTW BE-0845.049.251
 RPR Antwerpen, afdeling Hasselt
 
-Notulen van de raad van bestuur van 9 oktober 2024, gehouden op
-de zetel van de vennootschap
+# Notulen van de raad van bestuur van 9 oktober 2024, gehouden op de zetel van de vennootschap
 
-Samenstelling van de vergadering
+## Samenstelling van de vergadering
 
 Zijn aanwezig:
+
 - De heer Yusuke Muranaka (op afstand)
 - De heer Yu Ogata (op afstand)
--__De heer Takayuki Tateishi
+- De heer Takayuki Tateishi
 - Mevrouw Akiko Kadoya
-- ___Rasar BV, vertegenwoordigd door haar vaste vertegenwoordiger, de heer Robrecht Asnong
+- Rasar BV, vertegenwoordigd door haar vaste vertegenwoordiger, de heer Robrecht Asnong
+- DM Management BV, vertegenwoordigd door haar vaste vertegenwoordiger, de heer David Meekers
 
-- DM Management BV, vertegenwoordigd door haar vaste vertegenwoordiger, de heer David
-Meekers
-
-Aangezien alle leden van de raad van bestuur aanwezig of rechtsgeldig vertegenwoordigd zijn, is de
-vergadering rechtsgeldig samengesteld en kan zij geldig beraadslagen en besluiten over haar agenda.
+Aangezien alle leden van de raad van bestuur aanwezig of rechtsgeldig vertegenwoordigd zijn, is de vergadering rechtsgeldig samengesteld en kan zij geldig beraadslagen en besluiten over haar agenda.
 
 De heer David Meekers zit de vergadering voor.
 
 De heer Robrecht Asnong wordt tot secretaris van de vergadering aangewezen.
 
-Agenda
+## Agenda
 
 De voorzitter zet uiteen dat de huidige vergadering bijeenkomt met de volgende agenda:
+
 - Jaarrekening 2023-2024
-
 - Opmaak jaarverslag 2023-2024
-
 - Voorbereiding jaarlijkse algemene vergadering
-
 - Goedkeuring budget 2024-2025
-
 - Rondvraag
 
-NOTULEN RAAD VAN BESTUUR STVV
+NOTULEN RAAD VAN BESTUUR — STVV
 
 Page 58 of 60
 

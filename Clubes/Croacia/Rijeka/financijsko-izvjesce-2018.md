@@ -440,85 +440,38 @@ Bilješke čine sastavni dio ovih financijskih izvještaja.
 
 --- pág. 11 ---
 
-HNK Rijeka s.d.d.
+***HNK Rijeka s.d.d.***
 
-Bilanca (nastavak)
-na dan 31. prosinca 2018. godine
+**Bilanca (nastavak)**
+*na dan 31. prosinca 2018. godine*
 
-KAPITAL 1 OBVEZE
-
-Kapital i rezerve
-
-Temeljni kapital
-
-Revalorizacijske rezerve
-Preneseni gubitak
-(Gubitak)/dobit poslovne godine
-
-Ukupno kapital i rezerve
-
-Dugoročne obveze
-Rezerviranja
-Odgođena porezna obveza
-
-Ukupno dugoročne obveze
-
-Kratkoročne obveze
-
-Obveze prema bankama i drugim financijskim institucijama
-Obveze za zajmove, depozite i slično
-
-Obveze prema dobavljačima
-
-Obveze prema zaposlenicima
-
-Obveze za poreze, doprinose i slična davanja
-
-Ostale kratkoročne obveze
-
-Ukupno kratkoročne obveze
-Odgođeno plaćanje troškova i prihod budućeg razdoblja
-
-Ukupno kapital i obveze
-
-Bilješka
-
-Ila
-lIb
-
-12
-
-13
-
-14
-15
-15
-15
-
-16
-
-31. prosinca 31. prosinca
-2018. 2017.
-000'kn 000'kn
-82.871 82.871
-304 382
-(49.080) (51.015)
-(2.981) 1.839
-31.114 34.077
-18 238
-67 š4
-85 322
-25312 -
-- 16.455
-17.497 49,561
-137 261
-345 509
-77 38
-43.368 66.824
-2.363 3.831
-76.930 105.054
+| | Bilješka | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|---|
+| **KAPITAL I OBVEZE** | | | |
+| **Kapital i rezerve** | | | |
+| Temeljni kapital | 11a | 82.871 | 82.871 |
+| Revalorizacijske rezerve | 11b | 304 | 382 |
+| Preneseni gubitak | | (49.080) | (51.015) |
+| (Gubitak)/dobit poslovne godine | | (2.981) | 1.839 |
+| **Ukupno kapital i rezerve** | | **31.114** | 34.077 |
+| **Dugoročne obveze** | | | |
+| Rezerviranja | 12 | 18 | 238 |
+| Odgođena porezna obveza | | 67 | 84 |
+| **Ukupno dugoročne obveze** | | **85** | 322 |
+| **Kratkoročne obveze** | | | |
+| Obveze prema bankama i drugim financijskim institucijama | 13 | 25.312 | - |
+| Obveze za zajmove, depozite i slično | | - | 16.455 |
+| Obveze prema dobavljačima | 14 | 17.497 | 49.561 |
+| Obveze prema zaposlenicima | 15 | 137 | 261 |
+| Obveze za poreze, doprinose i slična davanja | 15 | 345 | 509 |
+| Ostale kratkoročne obveze | 15 | 77 | 38 |
+| **Ukupno kratkoročne obveze** | | **43.368** | 66.824 |
+| Odgođeno plaćanje troškova i prihod budućeg razdoblja | 16 | 2.363 | 3.831 |
+| **Ukupno kapital i obveze** | | **76.930** | 105.054 |
 
 Bilješke čine sastavni dio ovih financijskih izvještaja.
+
+9
 
 --- pág. 12 ---
 
@@ -602,226 +555,72 @@ Bilješke čine sastavni dio ovih financijskih izvještaja.
 
 --- pág. 13 ---
 
-HNK Rijeka s.d.d.
+***HNK Rijeka s.d.d.***
 
-Izvještaj o novčanom toku
+**Izvještaj o novčanom toku**
+*za godinu koja je završila 31. prosinca 2018.*
 
-za godinu koja je završila 31. prosinca 2018.
-Bilješka
-
-Novčani tok iz poslovnih aktivnosti
-
-(Gubitak)/dobit prije oporezivanja
-
-Usklađivanja za:
-
-Amortizacija
-
-Dobit od prodaje nematerijalne imovine i postrojenja i opreme
-Prihodi od kamata
-
-Rashodi od kamata
-
-Rezerviranja
-
-Nerealizirane tečajne razlike
-
-Promjene u:
-
-Obvezama prema dobavljačima i ostalih obveza
-Potraživanjima od kupaca i ostalih potraživanja
-Zaliharma
-
-Ostala povećanja ili smanjenja radnog kapitala
-
-Novac od poslovnih aktivnosti
-Piaćene kamate
-Plaćeni porezna dobit
-
-Neto novac od poslovnih aktivnosti
-
-Novčani tok od investicijskih aktivnosti
-
-Novčani primici od prodaje nematerijalne imovine te
-postrojenja i opreme
-
-Izdaci za dane zajmove
-
-Novčani izdaci za kupnju nematerijalne imovine te postrojenja i
-opreme
-
-Primici od kamata
-
-Neto novac od investicijskih aktivnosti
-Novčani tok od financijskih aktivnosti
-Novčani primici/izdaci od posudbi
-Otplata kredita i financijskog najma
-
-Neto novac od financijskih aktivnosti
-
-Neto smanjenje u novcu i novčanim ekvivalentima
-Novac inovčani ekvivalenti na početku godine
-
-Novac i novčani ekvivalenti na kraju godine 10
-
-2018.
-000'kn
-
-(2.981)
-
-7.805
-(72.182)
-(861)
-244
-(220)
-77
-
-(33.583)
-11.139
-(467)
-(761)
-
-(91.790)
-
-(1.089)
-
-(92.879)
-
-75.541
-
-(6.803)
-
-(14.602)
-861
-
-54.997
-
-8.536
-
-8.536
-
-(29.346)
-40.718
-
-11372
+| | Bilješka | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|---|
+| **Novčani tok iz poslovnih aktivnosti** | | | |
+| (Gubitak)/dobit prije oporezivanja | | (2.981) | 2.731 |
+| *Usklađivanja za:* | | | |
+| Amortizacija | | 7.805 | 6.393 |
+| Dobit od prodaje nematerijalne imovine i postrojenja i opreme | | (72.182) | (58.254) |
+| Prihodi od kamata | | (861) | (2.246) |
+| Rashodi od kamata | | 244 | 13 |
+| Rezerviranja | | (220) | (943) |
+| Nerealizirane tečajne razlike | | 77 | (341) |
+| *Promjene u:* | | | |
+| Obvezama prema dobavljačima i ostalih obveza | | (33.583) | 34.894 |
+| Potraživanjima od kupaca i ostalih potraživanja | | 11.139 | 2.553 |
+| Zalihama | | (467) | 120 |
+| Ostala povećanja ili smanjenja radnog kapitala | | (761) | 428 |
+| *Novac od poslovnih aktivnosti* | | (91.790) | (14.652) |
+| Plaćene kamate | | - | (13) |
+| Plaćeni porez na dobit | | (1.089) | (2.018) |
+| *Neto novac od poslovnih aktivnosti* | | (92.879) | (16.683) |
+| **Novčani tok od investicijskih aktivnosti** | | | |
+| Novčani primici od prodaje nematerijalne imovine te postrojenja i opreme | | 75.541 | 60.732 |
+| Izdaci za dane zajmove | | (6.803) | - |
+| Novčani izdaci za kupnju nematerijalne imovine te postrojenja i opreme | | (14.602) | (8.624) |
+| Primici od kamata | | 861 | - |
+| *Neto novac od investicijskih aktivnosti* | | 54.997 | 52.108 |
+| **Novčani tok od financijskih aktivnosti** | | | |
+| Novčani primici/izdaci od posudbi | | 8.536 | (18.650) |
+| Otplata kredita i financijskog najma | | - | (21) |
+| *Neto novac od financijskih aktivnosti* | | 8.536 | (18.671) |
+| Neto smanjenje u novcu i novčanim ekvivalentima | | (29.346) | 16.754 |
+| Novac i novčani ekvivalenti na početku godine | | 40.718 | 23.964 |
+| **Novac i novčani ekvivalenti na kraju godine** | 10 | **11.372** | 40.718 |
 
 Bilješke čine sastavni dio ovih financijskih izvještaja.
 
-2017.
-000'kn
-
-2.131
-
-6.393
-(58.254)
-(2.246)
-13
-(943)
-(341)
-
-34.894
-2.553
-120
-428
-
-(14.652)
-
-(13)
-(2.018)
-
-(16.683)
-
-60.732
-
-(8.624)
-
-52.108
-
-(18.650)
-(21)
-
-(18.671)
-16.754
-23.964
-
-40.718
+11
 
 --- pág. 14 ---
 
-HNleka s.d.d.
+***HNleka s.d.d.***
 
-Izvjijj o promjenama glavnice
+**Izvjj o promjenama glavnice**
+*za gooja je završila 31. prosinca 2018.*
 
-za gooja je završila 31. prosinca 2018.
-
-Na daječnja 2017.
-Transortizacije - bruto
-Transortizacije - porez
-
-Dobitlinu
-
-Na dewrosinca 2017.
-
-Stanjječnja 2018. godine
-Transortizacije - bruto
-Transortizacije - porez
-
-Gubitiodinu
-
-Na dawosinca 2018.
-
-Upisani kapital
-000'kn
-
-82.871
-
-re -]
-i
-(=)
-3
-= 1 ' 0
-
-82.871
-
-82.871
+| | Upisani kapital 000'kn | Revalorizacijska rezerva 000'kn | Preneseni gubitak 000'kn | Ukupno 000'kn |
+|---|---|---|---|---|
+| **Na daječnja 2017.** | 82.871 | 460 | (51.111) | 32.220 |
+| Transortizacije - bruto | - | (96) | 96 | - |
+| Transortizacije - porez | - | 18 | - | 18 |
+| Dobitlinu | - | - | 1.839 | 1.839 |
+| **Na darosinca 2017.** | 82.871 | 382 | (49.176) | 34.077 |
+| **Stanjječnja 2018. godine** | 82.871 | 382 | (49.176) | 34.077 |
+| Transortizacije - bruto | - | (96) | 96 | - |
+| Transortizacije - porez | - | 18 | - | 18 |
+| Gubitodinu | - | - | (2.981) | (2.981) |
+| **Na darosinca 2018.** | 82.871 | 304 | (52.061) | 31.114 |
 
 Bilješke čine sastavni dio ovih financijskih izvještaja.
 
-Revalorizacijska
-rezerva
-000'kn
-
-460
-
-(96)
-18
-
-382
-
-382
-(96)
-18
-
-304
-
-Preneseni
-gubitak
-000'kn
-
-(51.111)
-
-96
-
-1.839
-
-(49.176)
-
-(49.176)
-
-Ukupno
-000'kn
-
-32.220
+12
 
 --- pág. 15 ---
 
@@ -1286,254 +1085,153 @@ Na dan 31. prosinca 2018. 14.829 14.829
 
 --- pág. 24 ---
 
-HNK Rijeka s.d.d.
+***HNK Rijeka s.d.d.***
 
-Bilješke uz financijske izvještaje (nastavak)
+**Bilješke uz financijske izvještaje *(nastavak)***
 
-6 Materijalna imovina
-Građevinski
+**6 Materijalna imovina**
 
-Stanovi objekti Oprema Vozila Ukupno
+| | Stanovi '000 kn | Građevinski objekti '000 kn | Oprema '000 kn | Vozila '000 kn | Ukupno '000 kn |
+|---|---|---|---|---|---|
+| ***Nabavna vrijednost ili procjena vrijednosti*** | | | | | |
+| **Na dan 1. siječnja 2017.** | 1.309 | 421 | 16.067 | 438 | 18.235 |
+| Povećanja i otpisi | - | 15 | 32 | (53) | (6) |
+| **Na dan 31. prosinca 2017.** | 1.309 | 436 | 16.099 | 385 | 18.229 |
+| **Na dan 1. siječnja 2018.** | 1.309 | 436 | 16.099 | 385 | 18.229 |
+| Povećanja i otpisi | - | - | 716 | - | 716 |
+| **Na dan 31. prosinca 2018.** | 1.309 | 436 | 16.815 | 385 | 18.945 |
+| ***Akumulirana amortizacija*** | | | | | |
+| **Na dan 1. siječnja 2017.** | 664 | 404 | 14.398 | 436 | 15.902 |
+| Amortizacija tijekom razdoblja | 131 | 13 | 1.189 | 2 | 1.335 |
+| Prodaja | - | - | - | (53) | (53) |
+| **Na dan 31. prosinca 2017.** | 795 | 417 | 15.587 | 385 | 17.184 |
+| **Na dan 1. siječnja 2018.** | 795 | 417 | 15.587 | 385 | 17.184 |
+| Amortizacija tijekom razdoblja | 131 | 19 | 686 | - | 836 |
+| **Na dan 31. prosinca 2018.** | 926 | 436 | 16.273 | 385 | 18.020 |
+| ***Neto knjigovodstvena vrijednost*** | | | | | |
+| Na dan 1. siječnja 2017. | 645 | 17 | 1.669 | 2 | 2.333 |
+| Na dan 31. prosinca 2017. | 514 | 19 | 512 | - | 1.045 |
+| **Na dan 1. siječnja 2018.** | **514** | **19** | **512** | - | **1.045** |
+| **Na dan 31. prosinca 2018.** | **383** | - | **542** | - | **925** |
 
-*000 kn *000 kn *000 kn *000 kn *000 kn
-Nab i ili proc so
-Na dan 1. siječnja 2017. 1309 421 16.067 438 18.235
-Povećanja i otpisi - 15 32 (53) (6
-Na dan 3i. prosinca 2017. 1.309 436 16.099 385 18.229
-Na dan 1. siječnja 2018. 1309 436 16.099 385 18.229
-Povećanja iotpisi - - 716 . 716
-Na dan 31. prosinca 2018. 1.309 436 16.815 385 18.945
-Akumulirana amortizacija
-Na dan 1. siječnja 2017. 664 404 14398 436 15.902
-Amortizacija tijekom razdoblja 131 13 1.189 2 1.335
-Prodaja - - - (53) (53)
-Na dan 31. prosinca 2017. 795 417 15.587 385 17.184
-Na dan 1. siječnja 2018. 795 417 15.587 385 17.184
-Amortizacija tijekom razdoblja 131 19 686 - 836
-Na dan 31. prosinca 2018. 926 436 16.273 385 18.020
-Neto knjigovođstvena vrijednost
-Na dan 1. siječnja 2017. 645 17 1.669 2 2.333
-Na dan 31. prosinca 2017. 514 19 512 - 1.045
-Na dan 1. siječnja 2018. 514 19 512 - 1.045
-Na dan 31. prosinca 2018. 383 - 542 = 925
-
-U prethodnim godinama izvršena je procjena fer vrijednosti stanova. Procjena je izvršena od strane
-nezavisnog procjenitelja uz primjenu metode usporedivih tržišnih cijena. Stanovi koje drži Društvo
-nisu u cijelosti usuglašeni s vlasničkim listovima. Međutim, Uprava smatra da će to biti riješeno u
-narednim razdobljima.
-
-Knjigovodstvena vrijednost stanova na dan 31. prosinca 2018. godine da nije izvršena
-revalorizacija bi iznosila nula kuna. (2017: 20 tisuća kuna).
+U prethodnim godinama izvršena je procjena fer vrijednosti stanova. Procjena je izvršena od strane nezavisnog procjenitelja uz primjenu metode usporedivih tržišnih cijena. Stanovi koje drži Društvo nisu u cijelosti usuglašeni s vlasničkim listovima. Međutim, Uprava smatra da će to biti riješeno u narednim razdobljima.
+Knjigovodstvena vrijednost stanova na dan 31. prosinca 2018. godine da nije izvršena revalorizacija bi iznosila nula kuna. (*2017: 20 tisuća kuna*).
 
 22
 
 --- pág. 25 ---
 
-HNK Rijeka s.d.d.
+***HNK Rijeka s.d.d.***
 
-Bilješke uz financijske izvještaje (nastavak)
+**Bilješke uz financijske izvještaje *(nastavak)***
 
-7 Dugotrajna financijska imovina
-31. prosinca
-2018.
-000'kn
-Dani zajmovi povezanim društvima 25.687
-25.687
+**7 Dugotrajna financijska imovina**
 
-31. prosinca
-2017.
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Dani zajmovi povezanim društvima | 25.687 | 18.884 |
+| | **25.687** | 18.884 |
 
-000'kn
+Društvo je dalo zajmove društvu Stadion Kantrida d.o.o. Zajmovi imaju dospijeće 31. prosinca 2022. godine i nose godišnju varijabilnu kamatnu stopu od 4,55%.
 
-18.884
+**8 Potraživanja**
 
-18.884
+**a) Dugotrajna potraživanja**
 
-Društvo je dalo zajmove društvu Stadion Kantrida d.o.o. Zajmovi imaju dospijeće 31. prosinca
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Potraživanja za stanove | 28 | 35 |
+| | **28** | 35 |
 
-2022. godine i nose godišnju varijabilnu kamatnu stopu od 4,55%.
+**b) Kratkotrajna potraživanja**
 
-8 Potraživanja
-a) Dugotrajna potraživanja
-31. prosinca
-2018.
-000'kn
-Potraživanja za stanove 28
-28
-31. prosinca
-b) Kratkotrajna potraživanja 2018.
-000'kn
-Potraživanja od društava povezanih sudjelujućim interesom,
-grad Rijeka -
-Potraživanja od domaćih kupaca 10.603
-Potraživanja od inozemnih kupaca 14.657
-Ispravak vrijednosti potraživanja (6.265)
-Ukupno potraživanja od kupaca 18.995
-Potraživanja od države i drugih institucija 2.644
-Ostala potraživanja 170
-21.809
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Potraživanja od društava povezanih sudjelujućim interesom; grad Rijeka | - | 3.667 |
+| Potraživanja od domaćih kupaca | 10.603 | 16.096 |
+| Potraživanja od inozemnih kupaca | 14.657 | 10.250 |
+| Ispravak vrijednosti potraživanja | (6.265) | (3.242) |
+| Ukupno potraživanja od kupaca | 18.995 | 23.104 |
+| Potraživanja od države i drugih institucija | 2.644 | 4.934 |
+| Ostala potraživanja | 170 | 351 |
+| | **21.809** | 32.056 |
 
-31. prosinca
-2017.
-
-000'kn
-
-35
-
-35
-
-31. prosinca
-2017.
-
-000'kn
-
-3.667
-
-16.096
-10.250
-(3.242)
-
-23.104
-
-4.934
+23
 
 --- pág. 26 ---
 
-HNK Rijeka s.d.d.
+**HNK Rijeka s.d.d.**
 
-Bilješke uz financijske izvještaje (nastavak)
+## Bilješke uz financijske izvještaje *(nastavak)*
 
-9 Zalihe
+### 9 Zalihe
 
-Trgovačka roba
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Trgovačka roba | 1.512 | 1.045 |
+| | **1.512** | **1.045** |
 
-10 Novac u banci i blagajni
+### 10 Novac u banci i blagajni
 
-Devizni račun
-Žiro račun
-Gotovina u blagajni
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Devizni račun | 9.461 | 17.428 |
+| Žiro račun | 1.900 | 23.275 |
+| Gotovina u blagajni | 11 | 15 |
+| | **11.372** | **40.718** |
 
-11 Kapital i rezerve
+### 11 Kapital i rezerve
 
-a) Temeljni (upisani) kapital
+**a) Temeljni (upisani) kapital**
 
-Stanje na dan 31. prosinca
-
-31. prosinca
-2018.
-
-000'kn
-
-1.512
-
-1.512
-
-31. prosinca
-2018.
-
-000'kn
-
-9.461
-1.900
-
-31. prosinca
-2018.
-
-000'kn
-
-82.871
-
-82.871
-
-31. prosinca
-2017.
-
-000'kn
-1.045
-
-1.045
-
-31. prosinca
-2017.
-
-31. prosinca
-2017.
-
-000'kn
-
-82.871
-
-82.871
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Stanje na dan 31. prosinca | 82.871 | 82.871 |
+| | **82.871** | **82.871** |
 
 Temelji kapital se sastoji od 828.706 redovnih dionica s nominalnom vrijednosti od 100 kuna.
 
-b) Revalorizacijske rezerve
+**b) Revalorizacijske rezerve**
 
-Revalorizacijske rezerve
-
-31. prosinca
-2018.
-
-000'kn
-
-304
-
-304
-
-31. prosinca
-2017.
-
-000'kn
-
-382
-
-382
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Revalorizacijske rezerve | 304 | 382 |
+| | **304** | **382** |
 
 24
 
 --- pág. 27 ---
 
-HNK Rijeka s.d.d.
-Bilješke uz financijske izvještaje (nastavak)
-12 Rezerviranja
+**HNK Rijeka s.d.d.**
 
-31. prosinca 31. prosinca
+## Bilješke uz financijske izvještaje *(nastavak)*
 
-2018. 2017.
+### 12 Rezerviranja
 
-000'kn 000'kn
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Ostala rezerviranja - Rezerviranja za sudske sporove | 18 | 238 |
+| | **18** | **238** |
 
-Ostala rezerviranja - Rezerviranja za sudske sporove 18 238
-18 238
+Uprava procjenjuje da iznos priznatih rezervacija predstavlja najbolju procjenu raspoloživu na datum bilance. Rezerviranja za sudske sporove procjenjuju se na svaki datum izvještavanja uzimajući u obzir vjerojatnost budućeg odljeva ekonomskih koristi te rizik i neizvjesnost koji su vezani uz obvezu. Društvo se savjetuje s pravnim savjetnicima u vezi vjerojatnosti novčanih odljeva vezanih uz ispunjenje obveza.
 
-Uprava procjenjuje da iznos priznatih rezervacija predstavlja najbolju procjenu raspoloživu na
-datum bilance. Rezerviranja za sudske sporove procjenjuju se na svaki datum izvještavanja
-uzimajući u obzir vjerojatnost budućeg odljeva ekonomskih koristi te rizik i neizvjesnost koji su
-vezani uz obvezu. Društvo se savjetuje s pravnim savjetnicima u vezi vjerojatnosti novčanih odljeva
-vezanih uz ispunjenje obveza.
+### 13 Obveze prema bankama i drugim financijskim institucijama
 
-13 Obveze prema bankama i drugim financijskim institucijama
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| **Kratkoročno dospijeće** | | |
+| Kratkoročni krediti | 25.312 | - |
+| | **25.312** | **-** |
 
-31. prosinca 31. prosinca
-2018. 2017.
-000'kn 000kn
-Kratkoročno dospijeće
-Kratkoročni krediti 25.312 -
-25312 -
+Na kredit od banke denominiranog u eurima se obračunava kamata od 4% te dospijeva najkasnije do 30. rujna 2019.
 
-Na kredit od banke denominiranog u eurima se obračunava kamata od 4% te dospijeva najkasnije
-do 30. rujna 2019.
+### 14 Obveze prema dobavljačima
 
-14 Obveze prema dobavljačima
-
-31. prosinca 31. prosinca
-
-2018. 2017.
-
-000'kn 000'kn
-Obveze prema dobavljačima 17.491 49.529
-Nefakturirane obveze 6 32
-17.497 49.561
+| | 31. prosinca 2018. 000'kn | 31. prosinca 2017. 000'kn |
+|---|---|---|
+| Obveze prema dobavljačima | 17.491 | 49.529 |
+| Nefakturirane obveze | 6 | 32 |
+| | **17.497** | **49.561** |
 
 25
 
@@ -1611,311 +1309,152 @@ Ostali prihodi od prodaje 1.240
 
 --- pág. 29 ---
 
-HNK Rijeka s.d.d.
-Bilješke uz financijske izvještaje (nastavak)
+**HNK Rijeka s.d.d.**
 
-18 Ostali poslovni prihodi
+## Bilješke uz financijske izvještaje *(nastavak)*
 
-UEFA nagrade i solidarne uplate
-Inozenme donacije
+### 18 Ostali poslovni prihodi
 
-Donacije u zemlji
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| UEFA nagrade i solidarne uplate | 9.362 | 57.727 |
+| Inozemne donacije | 988 | 486 |
+| Donacije u zemlji | 4.458 | 785 |
+| Prihodi od članarina | 660 | 679 |
+| Ostali nespomenuti prihodi | 812 | 264 |
+| | **16.280** | **59.941** |
 
-Prihodi od članarina
+### 19 Materijalni troškovi
 
-Ostali nespomenuti prihodi
-
-19 Materijalni troškovi
-
-Sportska oprema
-
-Roba za ambulantu
-Utrošene sirovine i materijal
-Ostalo
-
-Troškovi materijala
-
-Troškovi prodane robe
-
-Naknade igračima i trenerima
-Trošak održavanja utakmica
-Pripreme igrača
-Intelektualne usluge
-Vanjske usluge
-
-Marketinški troškovi
-Prijevozne usluge
-
-Najam
-
-Ostale usluge
-
-Ostali vanjski troškovi
-
-2018.
-000'kn
-
-9.362
-988
-4.458
-660
-812
-
-16.280
-
-2018.
-000'kn
-
-1.097
-551
-85
-1.425
-
-3.158
-
-355
-
-47.778
-2.398
-3.040
-5.907
-2.812
-1.533
-
-992
-9.260
-2771
-
-76.491
-
-80.004
-
-2017.
-000'kn
-
-1.542
-424
-132
-
-1.282
-
-3.380
-
-263
-
-65.373
-3.947
-4.132
-4.424
-2.670
-1.356
-4,359
-9.074
-2.497
-
-97.832
-
-101.475
+| | | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|---|
+| | Sportska oprema | 1.097 | 1.542 |
+| | Roba za ambulantu | 551 | 424 |
+| | Utrošene sirovine i materijal | 85 | 132 |
+| | Ostalo | 1.425 | 1.282 |
+| Troškovi materijala | | 3.158 | 3.380 |
+| Troškovi prodane robe | | 355 | 263 |
+| | Naknade igračima i trenerima | 47.778 | 65.373 |
+| | Trošak održavanja utakmica | 2.398 | 3.947 |
+| | Pripreme igrača | 3.040 | 4.132 |
+| | Intelektualne usluge | 5.907 | 4.424 |
+| | Vanjske usluge | 2.812 | 2.670 |
+| | Marketinški troškovi | 1.533 | 1.356 |
+| | Prijevozne usluge | 992 | 4.359 |
+| | Najam | 9.260 | 9.074 |
+| | Ostale usluge | 2.771 | 2.497 |
+| Ostali vanjski troškovi | | 76.491 | 97.832 |
+| | | **80.004** | **101.475** |
 
 27
 
 --- pág. 30 ---
 
-HNK Rijeka s.d.d.
+**HNK Rijeka s.d.d.**
 
-Bilješke uz financijske izvještaje (nastavak)
+## Bilješke uz financijske izvještaje *(nastavak)*
 
-20 Troškovi osoblja
+### 20 Troškovi osoblja
 
-Neto plaće i nadnice
-Troškovi poreza i doprinosa iz plaća
-Doprinosina plaće
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Neto plaće i nadnice | 1.604 | 1.722 |
+| Troškovi poreza i doprinosa iz plaća | 736 | 746 |
+| Doprinosi na plaće | 399 | 386 |
+| | **2.739** | **2.854** |
 
-Prosječan broj djelatnika u 2018. godine iznosio je 18 (2017.:
+Prosječan broj djelatnika u 2018. godine iznosio je 18 (*2017.: 17 zaposlenika).*
 
-21 Amortizacija
+### 21 Amortizacija
 
-Nematerijalne imovine
-Materijalne imovine
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Nematerijalne imovine | 6.969 | 5.058 |
+| Materijalne imovine | 836 | 1.335 |
+| | **7.805** | **6.393** |
 
-22 Ostali troškovi
+### 22 Ostali troškovi
 
-Naknade i kazne savezima
-
-Dnevnice i putni troškovi
-
-Porezi i doprinosi koji ne ovise o rezultatu
-Reprezentacija
-
-Naknade za transfere igrača
-
-Besplatne ulaznice
-
-Ostalo
-
-2018.
-000'kn
-
-1.604
-736
-399
-
-2.739
-
-17 zaposlenika).
-
-2018.
-000'kn
-
-6.969
-836
-
-7.805
-
-2018.
-000'kn
-
-635
-
-28
-209
-1.840
-12.780
-41
-270
-
-15.803
-
-2017.
-
-1.722
-746
-386
-
-2,854
-
-2017.
-
-5.056
-1.335
-
-6.393
-
-2017.
-000'kn
-
-1.808
-71
-273
-2.102
-19.426
-1.163
-162
-
-25.005
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Naknade i kazne savezima | 635 | 1.808 |
+| Dnevnice i putni troškovi | 28 | 71 |
+| Porezi i doprinosi koji ne ovise o rezultatu | 209 | 273 |
+| Reprezentacija | 1.840 | 2.102 |
+| Naknade za transfere igrača | 12.780 | 19.426 |
+| Besplatne ulaznice | 41 | 1.163 |
+| Ostalo | 270 | 162 |
+| | **15.803** | **25.005** |
 
 28
 
 --- pág. 31 ---
 
-HNK Rijeka s.d.d.
-Bilješke uz financijske izvještaje (nastavak)
+**HNK Rijeka s.d.d.**
 
-23 Vrijednosno usklađenje
+## Bilješke uz financijske izvještaje *(nastavak)*
 
-Vrijednosno usklađenje potraživanja
+### 23 Vrijednosno usklađenje
 
-24 Financijski prihodi
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Vrijednosno usklađenje potraživanja | 3.348 | 2.671 |
+| | **3.348** | **2.671** |
 
-Prihodi s osnove kamata izodnosa s poduzetnicima unutar grupe
-Tečajne razlike i ostali financijski prihodi iz odnosa s
-poduzetnicima unutar grupe
+### 24 Financijski prihodi
 
-Ostali prihodi s osnove kamata
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Prihodi s osnove kamata iz odnosa s poduzetnicima unutar grupe | 859 | 938 |
+| Tečajne razlike i ostali financijski prihodi iz odnosa s poduzetnicima unutar grupe | 576 | 845 |
+| Ostali prihodi s osnove kamata | 2 | 1.307 |
+| Ostali financijski prihodi | 2 | 80 |
+| | **1.439** | **3.170** |
 
-Ostali financijski prihodi
+### 25 Financijski rashodi
 
-25 Financijski rashodi
-
-Rashodi s osnove kamata i slični rashodi
-Tečajne razlike i drugi rashodi
-
-2018.
-000'kn
-
-3348
-
-3.348
-
-2018.
-000'kn
-
-859
-
-576
-
-2018.
-000'kn
-
-244
-400
-
-644
-
-2017.
-
-2.671
-
-2.671
-
-2017.
-
-13
-
-1.444
-
-1.457
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Rashodi s osnove kamata i slični rashodi | 244 | 13 |
+| Tečajne razlike i drugi rashodi | 400 | 1.444 |
+| | **644** | **1.457** |
 
 29
 
 --- pág. 32 ---
 
-HNK Rijeka s.d.d.
-Bilješke uz financijske izvještaje (nastavak)
+**HNK Rijeka s.d.d.**
 
-26 Porez na dobit
+## Bilješke uz financijske izvještaje *(nastavak)*
 
-Porez na dobit obračunava se po stopi od 18% sukladno zakonskim propisima na osnovicu koju
-čini razlika ostvarenih prihoda nad rashodima, a uvećava se za porezno nepriznate troškove.
+### 26 Porez na dobit
 
-2018. 2017.
+Porez na dobit obračunava se po stopi od 18% sukladno zakonskim propisima na osnovicu koju čini razlika ostvarenih prihoda nad rashodima, a uvećava se za porezno nepriznate troškove.
 
-000'kn 000'kn
-Dobit/ (gubitak) prije oporezivanja (2.981) 2.131
-Porez po hrvatskoj propisanoj poreznoj stopi od 18% (537) 492
-Porezno nepriznati troškovi 264 400
-Porezni gubici za koje nije priznata odgođena porezna imovina 273 -
-Porez za godinu - 892
+| | 2018. 000'kn | 2017. 000'kn |
+|---|---|---|
+| Dobit/ (gubitak) prije oporezivanja | (2.981) | 2.731 |
+| Porez po hrvatskoj propisanoj poreznoj stopi od 18% | (537) | 492 |
+| Porezno nepriznati troškovi | 264 | 400 |
+| Porezni gubici za koje nije priznata odgođena porezna imovina | 273 | - |
+| Porez za godinu | - | 892 |
+| **Efektivna porezna stopa** | **0,0%** | **32,7%** |
 
-Hektivna porezna stopa 0,0% 32,1%0
+Na dan 31. prosinca 2018. Društvo ima neiskorištene porezne gubitke u neto iznosu od 273 tisuće kuna koji se mogu koristiti do 2023. godine.
 
-Na dan 31. prosinca 2018. Društvo ima neiskorištene porezne gubitke u neto iznosu od 273 tisuće
-kuna koji se mogu koristiti do 2023. godine.
+### 27 Potencijalna imovina i obveze
 
-27 Potencijalna imovina i obveze
-
-(a) izvanbilančna evidencija
+**(a) Izvanbilančna evidencija**
 
 Društvo nije imalo potencijalnih izvanbilančnih obveza na dan 31. prosinca 2018.
-(b) Ugovorne obveze
+
+**(b) Ugovorne obveze**
 
 Društvo nije imalo ugovornih obveza na dan 31. prosinca 2018.
 
-(c) Sudski sporovi
-Društvo je u sklopu svog redovnog poslovanja branjenik u određenom broju sudskih sporova.
+**(c) Sudski sporovi**
 
-Društvo je priznalo rezerviranja kao rezultat sporova pokrenutih protiv Društva za koje je izvjesno
-da će dovesti do odljeva sredstava.
+Društvo je u sklopu svog redovnog poslovanja branjenik u određenom broju sudskih sporova. Društvo je priznalo rezerviranja kao rezultat sporova pokrenutih protiv Društva za koje je izvjesno da će dovesti do odljeva sredstava.
 
 30
 

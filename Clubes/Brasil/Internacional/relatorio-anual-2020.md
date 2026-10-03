@@ -36,8 +36,11 @@ M
 
 --- pág. 3 ---
 
-RELATÓRIO DA
+[Logotipo S.C. Internacional 1909]
 
+RELATÓRIO DA ADMINISTRAÇÃO 2020
+
+O CLUBE DO POVO
 
 --- pág. 4 ---
 
@@ -114,720 +117,251 @@ competições que participa.
 
 --- pág. 6 ---
 
-DESEMPENHO DAS RECEITAS
+**DESEMPENHO DAS RECEITAS**
 
-Com um cenário de pandemia pela COVID-19
-houve um impacto muito forte nas receitas do Clube,
-apresentando uma retração de 36,3% em
-comparação ao ano de 2019 e 4,1% em relação a
-2018. Apesar deste cenário, em relação ao ano de
-2017 houve uma evolução de 14,3%. Abaixo
-detalhamos um pouco mais as principais receitas.
+Com um cenário de pandemia pela COVID-19 houve um impacto muito forte nas receitas do Clube, apresentando uma retração de 36,3% em comparação ao ano de 2019 e 4,1% em relação a 2018. Apesar deste cenário, em relação ao ano de 2017 houve uma evolução de 14,3%. Abaixo detalhamos um pouco mais as principais receitas.
 
-Um dos principais impactos ocorreu na
-receita com arrecadação de jogos, devido à ausência
-de público. Durante o ano de 2020, houve 28 jogos
-com mando de campo do Clube, porém apenas 7
-jogos com a participação do torcedor. Também
-aconteceu o deslocamento de 7 jogos com mando de
-campo da temporada 2020 para 2021, ou seja, em
-condições normais, 35 jogos seriam realizados no
-Estádio Beira-Rio com a participação do nosso
-torcedor. A redução significativa desta receita foi de
-81,7% para o ano anterior, 73,6% para 2018 e 71,2%
-para 2017.
+Um dos principais impactos ocorreu na receita com arrecadação de jogos, devido à ausência de público. Durante o ano de 2020, houve 28 jogos com mando de campo do Clube, porém apenas 7 jogos com a participação do torcedor. Também aconteceu o deslocamento de 7 jogos com mando de campo da temporada 2020 para 2021, ou seja, em condições normais, 35 jogos seriam realizados no Estádio Beira-Rio com a participação do nosso torcedor. A redução significativa desta receita foi de 81,7% para o ano anterior, 73,6% para 2018 e 71,2% para 2017.
 
-As cotas pelo direito de transmissão e
-premiações, apresentaram uma redução de 35,2%
-para 2019, 14,3% para 2018 e 6,5% para 2017. A
-reprogramação das tabelas dos campeonatos alterou
-a condição de contabilização desta receita.
-Inicialmente, seriam consideradas na sua totalidade
-durante o ano de 2020. Entretanto, em observância
-ao CPC 47, foi apropriado o reconhecimento parcial
-das receitas de cotas pelo direito de transmissão e
-premiações no exercício seguinte, a findar em
-31/12/2021. Neste caso, como o fato gerador é a
-realização da partida, as receitas relacionadas aos
-jogos realizados em 2020 foram consideradas
-naquele ano e as receitas com jogos ocorridos em
-2021 deverão ser lançadas no exercício deste ano.
-Com isto, aproximadamente RS 26 milhões
-referentes à transmissão de jogos e premiação do
-Campeonato Brasileiro, originalmente previstos para
-2020, deverão ser lançados no exercício seguinte.
+As cotas pelo direito de transmissão e premiações, apresentaram uma redução de 35,2% para 2019, 14,3% para 2018 e 6,5% para 2017. A reprogramação das tabelas dos campeonatos alterou a condição de contabilização desta receita. Inicialmente, seriam consideradas na sua totalidade durante o ano de 2020. Entretanto, em observância ao CPC 47, foi apropriado o reconhecimento parcial das receitas de cotas pelo direito de transmissão e premiações no exercício seguinte, a findar em 31/12/2021. Neste caso, como o fato gerador é a realização da partida, as receitas relacionadas aos jogos realizados em 2020 foram consideradas naquele ano e as receitas com jogos ocorridos em 2021 deverão ser lançadas no exercício deste ano. Com isto, aproximadamente R$ 26 milhões referentes à transmissão de jogos e premiação do Campeonato Brasileiro, originalmente previstos para 2020, deverão ser lançados no exercício seguinte.
 
-A receita com a negociação dos direitos
-econômicos de atletas, com um cenário mundial
-retraído, também foi influenciada pela pandemia da
-COVID-19. Porém, apesar de uma redução pela
+A receita com a negociação dos direitos econômicos de atletas, com um cenário mundial retraído, também foi influenciada pela pandemia da COVID-19. Porém, apesar de uma redução pela metade, em comparação a 2019, quando ocorreu o maior valor de negociações da história do Clube, esta receita apresentou uma performance de 33,6% acima de 2018 e 161,6% melhor que 2017.
 
-metade, em comparação a 2019, quando ocorreu o maior valor de negociações da história “SA Dee
+**RECEITA BRUTA DAS ATIVIDADES** (eixo: Milhares)
 
-R$ 150.000
-R$ 100.000
-RS 50.000
-RsO
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 245.915 | R$ 293.266 | R$ 441.343 | R$ 281.248 |
 
-RECEITA BRUTA DAS ATIVIDADES
-R$ 441.343
-RS 245.915
+**ARRECADAÇÃO DE JOGOS** (eixo: Milhares)
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 12.451 | R$ 13.573 | R$ 19.634 | R$ 3.587 |
 
-R$ 281.248
+**COTAS DE TELEVISIONAMENTO E PREMIAÇÕES** (eixo: Milhares)
 
-. R$20.000
-Ê R$ 18.000
-É R$ 15000
-R$ 14.000
-R$ 42,000
-R$ 10.000
-R$ 8.000
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 107.839 | R$ 117.644 | R$ 155.417 | R$ 100.783 |
 
-R$ 6.000
-R$4.000
-R$2.000
-R$0
+**NEGOCIAÇÕES DE ATLETAS** (eixo: Milhares)
 
-ARRECADACÃO DE JOGOS
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 25.878 | R$ 50.676 | R$ 135.655 | R$ 67.709 |
 
-R$ 19.634
-
-af. R$ 3.587
-[a
-
-Et = e 3
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-COTAS DE TELEVISIONAMENTO E PREMIAÇÕES
-
-R$ 155.417
-N
-R$ 117.644
-
-|
-R$ 107.839 11
-E
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-R$ 100.783
-
-e ni
-
-e R$ 140.000
-H
-= R$ 120.000
-
-R$ 100.000
-
-NEGOCIAÇÕES DE ATLETAS
-
-R$ 135.655
-
-R$ 67.709
-|
-
-R$ 25.878
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-lube, esta receita
-
-apresentou uma performance de 33,6% acima de 2018 e 161,6% melhor que 2017.
-
-1.
+[rubricas]
+6
 
 --- pág. 7 ---
 
-Com a retração econômica e o resultado do PIB
-brasileiro acumulado nos últimos 12 meses em -4,1% !,
-somados ao nível de desemprego até o 3º trimestre de
-2020 no patamar de 14,6%, as receitas sociais do Clube
-poderiam apresentar-se em pior situação. Porém, os
-sócios e sócias deram uma importante demonstração de
-paixão pelo Clube e ajudaram no enfrentamento desta
-crise. O quadro de associados encerra o ano com
-107.197? sócios ativos.
+Com a retração econômica e o resultado do PIB brasileiro acumulado nos últimos 12 meses em -4,1% ¹, somados ao nível de desemprego até o 3º trimestre de 2020 no patamar de 14,6%¹, as receitas sociais do Clube poderiam apresentar-se em pior situação. Porém, os sócios e sócias deram uma importante demonstração de paixão pelo Clube e ajudaram no enfrentamento desta crise. O quadro de associados encerra o ano com 107.197² sócios ativos.
 
-A receita com contratos de patrocínio foi
-influenciada por dois pontos principais: (i) as
-negociações prejudicadas com a paralização de jogos
-durante boa parte do ano devido à pouca exposição de
-marca e (ii) o formato do contrato com a Adidas,
-fornecedora de material esportivo, contabilizada em
-2020 na rubrica de Licença da Marca, diferentemente da
-fornecedora anterior considerada como patrocínio pela
-característica contratual. Assim, esta receita apresentou
-uma redução de 27,3% em comparação ao ano de 2019,
-16% para 2018 e próximo ao patamar de 2017.
+A receita com contratos de patrocínio foi influenciada por dois pontos principais: (i) as negociações prejudicadas com a paralização de jogos durante boa parte do ano devido à pouca exposição de marca e (ii) o formato do contrato com a Adidas, fornecedora de material esportivo, contabilizada em 2020 na rubrica de Licença da Marca, diferentemente da fornecedora anterior considerada como patrocínio pela característica contratual. Assim, esta receita apresentou uma redução de 27,3% em comparação ao ano de 2019, 16% para 2018 e próximo ao patamar de 2017.
 
-A receita com licenciamento da marca,
-conforme mencionado anteriormente, apresentou
-melhor resultado devido ao formato do contrato com a
-fornecedora de material esportivo, tendo sua
-contabilização nesta rubrica pela característica do
-negócio. Sem os efeitos da Pandemia e com o cenário
-econômico dentro da normalidade, ressalta-se que o
-desempenho teria sido superior, considerando a
-evolução dos números nos anos anteriores.
+A receita com licenciamento da marca, conforme mencionado anteriormente, apresentou melhor resultado devido ao formato do contrato com a fornecedora de material esportivo, tendo sua contabilização nesta rubrica pela característica do negócio. Sem os efeitos da Pandemia e com o cenário econômico dentro da normalidade, ressalta-se que o desempenho teria sido superior, considerando a evolução dos números nos anos anteriores.
 
-Fonte: * Banco Central do Brasil e IBGE e? CAS
+**SOCIAIS** (eixo: Milhares)
 
-RS 80.000
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 55.783 | R$ 63.811 | R$ 74.177 | R$ 66.431 |
 
-tilhares
+**QUADRO SOCIAL (Qtde/Mil) x INADIMPLÊNCIA (%)**
 
-R$ 70.000
+Gráfico de colunas (Total de Sócios, eixo esquerdo em Milhares, escala 0 a 140) e linha (Inadimplência, eixo direito, escala 0% a 30%), sem rótulos de valores. Eixo horizontal: dez/17, mar/18, jun/18, set/18, dez/18, mar/19, jun/19, set/19, dez/19, mar/20, jun/20, set/20, dez/20. Legenda: Total de Sócios; Inadimplência.
 
-R$ 50.000
-R$ 40.000
-R$ 30.000
-R$ 20.000
-R$ 10.000
+**PATROCÍNIOS** (eixo: Milhares)
 
-SOCIAIS
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 31.305 | R$ 35.234 | R$ 40.730 | R$ 29.602 |
 
-RS 74.177 RS 66.431
+**LICENÇA DA MARCA** (eixo: Milhares)
 
-R$ 63.811
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| R$ 2.834 | R$ 2.801 | R$ 3.127 | R$ 7.053 |
 
-JB
+Fonte: ¹ Banco Central do Brasil e IBGE e ² CAS
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-QUADRO SOCIAL (Qtde/Mil) x INANDIMPLÊNCIA (%)
-
-Milhares
-m
-8
-
-4] Ro) %
-
-e
-
-PEOPLE DP
-PESE E & SS &
-
-ME Total de Sócios  — inadimplência
-
-R$ 45.000
-R$ 40.000
-R$ 35.000
-R$ 30.000
-R$ 25.000
-R$ 20.000
-R$ 15.000
-R$ 10.000
-
-R$ 5.000
-
-E:
-z
-
-PATROCÍNIOS
-
-R$ 40.730
-
-234
-o |) |! í
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-« R$ 8.000
-
-E
-
-É R$7.000
-R$ 6.000
-R$ 5.000
-RS 4.000
-
-LICENÇA DA MARCA
-
-R$ 7.053
-A
-
-R$ 3.127
-R$ 2.834 R$ 2.801 é
-
-! me] |
-| ] dd ca 7)
-a loss
-
-RS 3.000
-R$ 2.000
-RS 1.000
-
-Rso
-
-REALIZADO 2017 REALIZADO 2048) REALIZADO 2019 REALIZADO 2020
-
-AS
-
+[rubricas]
+7
 
 --- pág. 8 ---
 
-custTOS
+**CUSTOS**
 
-Os custos operacionais das atividades são
-custos diretamente ligados ao futebol e, em 2020,
-apresentaram uma economia de 5,5% em relação a
-2019. Essa redução é um reflexo do trabalho
-desenvolvido para o enfrentamento do crítico cenário
-de pandemia, sem perder a competitividade, sendo
-adotadas ações que serão descritas a seguir.
+Os custos operacionais das atividades são custos diretamente ligados ao futebol e, em 2020, apresentaram uma economia de 5,5% em relação a 2019. Essa redução é um reflexo do trabalho desenvolvido para o enfrentamento do crítico cenário de pandemia, sem perder a competitividade, sendo adotadas ações que serão descritas a seguir.
 
-Além das dificuldades apresentadas durante a
-temporada em virtude da pandemia pela COVID-19, a
-ocorrência de lesões de atletas ampliou ainda mais os
-desafios da equipe profissional em 2020. Atletas
-importantes sofreram lesões graves que levaram ao
-afastamento na temporada. Logo, houve a necessidade
-de uma busca por reposições que garantissem o nível de
-competitividade do grupo. Apesar desta necessidade de
-reposição, iniciativas como a redução salarial negociada
-com os atletas durante determinado período permitiu a
-manutenção dos custos com pessoal e benefícios nos
-mesmos patamares do ano anterior. Nos custos com
-direito de imagem foi possível uma redução de
-aproximadamente 17% em comparação a 2019.
+Além das dificuldades apresentadas durante a temporada em virtude da pandemia pela COVID-19, a ocorrência de lesões de atletas ampliou ainda mais os desafios da equipe profissional em 2020. Atletas importantes sofreram lesões graves que levaram ao afastamento na temporada. Logo, houve a necessidade de uma busca por reposições que garantissem o nível de competitividade do grupo. Apesar desta necessidade de reposição, iniciativas como a redução salarial negociada com os atletas durante determinado período permitiu a manutenção dos custos com pessoal e benefícios nos mesmos patamares do ano anterior. Nos custos com direito de imagem foi possível uma redução de aproximadamente 17% em comparação a 2019.
 
-Além dos custos ligados diretamente ao grupo
-de atletas e funcionários, os demais custos com suporte
-a esta equipe também foram revistos. Com a forte
-necessidade de redução desses valores, muitos
-contratos foram renegociados e propiciaram economias
-significativas.
+Além dos custos ligados diretamente ao grupo de atletas e funcionários, os demais custos com suporte a esta equipe também foram revistos. Com a forte necessidade de redução desses valores, muitos contratos foram renegociados e propiciaram economias significativas.
 
-Os custos com logística apresentaram uma
-redução de 34% em comparação ao exercício anterior,
-destacando as despesas com hospedagem e transporte,
-dentre outras contas. Adicionalmente, a diminuição no
-número de jogos durante o ano, em função do
-calendário paralisado e estendido para 2021, também
-impactou essa rubrica.
+Os custos com logística apresentaram uma redução de 34% em comparação ao exercício anterior, destacando as despesas com hospedagem e transporte, dentre outras contas. Adicionalmente, a diminuição no número de jogos durante o ano, em função do calendário paralisado e estendido para 2021, também impactou essa rubrica.
 
-Milharas
+**CUSTOS OPERACIONAIS DAS ATIVIDADES** (eixo: Milhares)
 
--R$ 50.000
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 206.911 | -R$ 206.159 | -R$ 278.950 | -R$ 263.512 |
 
--R$ 100.000
+**PESSOAL E BENEFÍCIOS** (eixo: Milhares)
 
--R$ 150.000
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 108.443 | -R$ 118.086 | -R$ 144.070 | -R$ 143.917 |
 
--R$ 200.000
+**DIREITO DE IMAGEM** (eixo: Milhares)
 
--R$ 250.000
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 30.572 | -R$ 35.323 | -R$ 48.085 | -R$ 39.938 |
 
-R$ 300.000
+**LOGÍSTICA** (eixo: Milhares)
 
-CUSTOS OPERACIONAIS DAS ATIVIDADES
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 4.707 | -R$ 5.301 | -R$ 9.685 | -R$ 6.389 |
 
-N
--R$ 206.911
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-Milhares
-
--R$ 20.000
-
--R$ 40.000
-
--RS 80.000
-
--R$ 100.000
-
--R$ 120.000
-
-“RS 140.000
-
-“R$ 160.000
-
-PESSOAL E BENEFÍCIOS
-
-Y
--R$ 108.443 |
-
--R$ 118.086
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-Milhares
-
--R$ 5.000
-“R$ 10.000
-“RS 15.000
--R$ 20.000
--RS 25.000
--R$ 30.000
--R$ 35.000
--R$ 40.000
--R$ 45.000
--R$ 50.000
-
-DIREITO DE IMAGEM
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-Milhares
-
-LOGÍSTICA
-
-E
-
-«R$ 4.707
-
--R$ 5.301
-
-2019 REALIZADO 2020
-
-REALIZADO 2017 REALIZADO 2018
-
+[rubricas]
+8
 
 --- pág. 9 ---
 
-Com a preocupação com a saúde, tanto de atletas e
-colaboradores, como dos envolvidos nos jogos e
-atividades no CT Parque Gigante, testes para detectar
-contágios pela COVID-19 foram realizados durante toda a
-temporada. Desta forma, os custos com serviços
-laboratoriais apresentaram um aumento relevante.
-Apesar deste incremento, a conta com serviços de
-terceiros teve uma economia de 44,4%, uma vez que
-houve uma preocupação com a renegociação de contratos
-desses serviços, sem a perda da qualidade.
+Com a preocupação com a saúde, tanto de atletas e colaboradores, como dos envolvidos nos jogos e atividades no CT Parque Gigante, testes para detectar contágios pela COVID-19 foram realizados durante toda a temporada. Desta forma, os custos com serviços laboratoriais apresentaram um aumento relevante. Apesar deste incremento, a conta com servi��os de terceiros teve uma economia de 44,4%, uma vez que houve uma preocupação com a renegociação de contratos desses serviços, sem a perda da qualidade.
 
-Na mesma direção, os custos com serviços de
-apoio foram reduzidos, apresentando uma economia de
-aproximadamente 40% em comparação a 2019 e uma
-redução significativa em relação aos anos anteriores.
+Na mesma direção, os custos com serviços de apoio foram reduzidos, apresentando uma economia de aproximadamente 40% em comparação a 2019 e uma redução significativa em relação aos anos anteriores.
 
-Ainda, a rubrica com material de consumo
-apresentou uma redução de 42,8% referente ao ano de
-2019 e uma redução importante em comparação aos anos
-anteriores.
+Ainda, a rubrica com material de consumo apresentou uma redução de 42,8% referente ao ano de 2019 e uma redução importante em comparação aos anos anteriores.
 
-A conta com aluguéis foi impactada pela
-necessidade de fretamento aéreo, em consequência das
-restrições sanitárias definidas pelos órgãos
-governamentais, com o objetivo de minimizar os efeitos da
-pandemia e os riscos de contágio. Este cenário não foi
-apenas no Brasil, mas na América do Sul, o que provocou
-maior custo nos jogos pela Copa Libertadores da América.
-Apesar deste cenário, foi possível manter este custo muito
-próximo do ano anterior, tendo uma redução de 11,3%.
+A conta com aluguéis foi impactada pela necessidade de fretamento aéreo, em consequência das restrições sanitárias definidas pelos órgãos governamentais, com o objetivo de minimizar os efeitos da pandemia e os riscos de contágio. Este cenário não foi apenas no Brasil, mas na América do Sul, o que provocou maior custo nos jogos pela Copa Libertadores da América. Apesar deste cenário, foi possível manter este custo muito próximo do ano anterior, tendo uma redução de 11,3%.
 
-SERVIÇOS DE TERCEIROS
+**SERVIÇOS DE TERCEIROS** (eixo: Milhares)
 
-)
--R$ 4.637
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 4.637 | -R$ 4.681 | -R$ 7.920 | -R$ 4.404 |
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
+**SERVIÇOS DE APOIO** (eixo: Milhares)
 
-Milhares
-ê
-ê
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 3.319 | -R$ 4.698 | -R$ 3.081 | -R$ 1.855 |
 
-SERVIÇOS DE APOIO
+**MATERIAL DE CONSUMO** (eixo: Milhares)
 
-A
--R$ 3.319
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 3.659 | -R$ 5.082 | -R$ 4.506 | -R$ 2.577 |
 
-mes]
+**ALUGUÉIS** (eixo: Milhares)
 
--R$4.658
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 4.616 | -R$ 3.826 | -R$ 6.779 | -R$ 6.012 |
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-. R$0
-Ê
-
-2
-E -R$ 1.000
--R$ 2.000
-“R$ 3.000
--R$ 4.000
-
--R$ 5.000
-
--R$ 6.000
-
-MATERIAL DE CONSUMO
-
-| a
-R$2.577
-!
--R$ 3.659
--R$ 4.506
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-à
-52
-
-Milhares
-
--RS$ 2.000
-
--R$ 3.000
-
--R$ 5.000
-
--R$ 6.000
-
-«R$ 7.000
-
-ALUGUÉIS
-
-REALIZADO 2017 REALIZADO 2048) REALIZADO 2019 REALIZADO 2020
-
+[rubricas]
+9
 
 --- pág. 10 ---
 
-DESPESAS OPERACIONAIS
+**DESPESAS OPERACIONAIS**
 
-Adicionalmente à redução de custos da atividade
-principal, as despesas operacionais, formadas pelas
-despesas comerciais e administrativas, apresentaram
-importantes reduções motivadas, principalmente, pelas
-renegociações de contratos e revisões de processos. A
-economia total foi de 11% em relação ao exercício de 2019
-e se manteve coerente com a média destas despesas em
-anos anteriores. As principais contas impactadas por estas
-ações são detalhadas a seguir.
+Adicionalmente à redução de custos da atividade principal, as despesas operacionais, formadas pelas despesas comerciais e administrativas, apresentaram importantes reduções motivadas, principalmente, pelas renegociações de contratos e revisões de processos. A economia total foi de 11% em relação ao exercício de 2019 e se manteve coerente com a média destas despesas em anos anteriores. As principais contas impactadas por estas ações são detalhadas a seguir.
 
-A despesa com pessoal e benefícios, pela sua
-representatividade dentro das despesas operacionais
-(33%), mereceu uma atenção especial, principalmente por
-envolver os colaboradores. Com a suspensão dos
-campeonatos e necessidade de um isolamento social para
-minimizar os efeitos da pandemia, o Clube percebeu a
-necessidade de estabelecer um acordo, inicialmente, com
-a sugestão de férias coletivas e, na sequência, com uma
-redução na jornada de trabalho por um período
-determinado. Importante ressaltar que todo o processo foi
-conduzido dentro das normas trabalhistas vigentes e
-prontamente compreendido pelas equipes. Esta ação
-representou uma economia de 25,6%, sobre o apresentado
-no exercício de 2019 e mais próximo dos anos anteriores.
+A despesa com pessoal e benefícios, pela sua representatividade dentro das despesas operacionais (33%), mereceu uma atenção especial, principalmente por envolver os colaboradores. Com a suspensão dos campeonatos e necessidade de um isolamento social para minimizar os efeitos da pandemia, o Clube percebeu a necessidade de estabelecer um acordo, inicialmente, com a sugestão de férias coletivas e, na sequência, com uma redução na jornada de trabalho por um período determinado. Importante ressaltar que todo o processo foi conduzido dentro das normas trabalhistas vigentes e prontamente compreendido pelas equipes. Esta ação representou uma economia de 25,6%, sobre o apresentado no exercício de 2019 e mais próximo dos anos anteriores.
 
-Com a revisão de contratos e processos, foi
-possível minimizar a utilização de alguns materiais,
-propiciando a redução de 56,2% na rubrica de material de
-consumo em comparação a 2019 e abaixo de 2018 e 2017,
-com uma economia média aproximada de 41%.
+Com a revisão de contratos e processos, foi possível minimizar a utilização de alguns materiais, propiciando a redução de 56,2% na rubrica de material de consumo em comparação a 2019 e abaixo de 2018 e 2017, com uma economia média aproximada de 41%.
 
-Durante este período de pandemia, foi revisitado o
-plano de manutenção programado para as áreas
-patrimoniais do Clube e mantidas apenas as manutenções
-vitais e necessárias para a realização dos jogos com a
-posterior retomada das competições.
+Durante este período de pandemia, foi revisitado o plano de manutenção programado para as áreas patrimoniais do Clube e mantidas apenas as manutenções vitais e necessárias para a realização dos jogos com a posterior retomada das competições.
 
-Milhares
-á
-=
-E
-8
+**DESPESAS OPERACIONAIS** (eixo: Milhares)
 
-DESPESAS OPERACIONAIS
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 78.253 | -R$ 73.694 | -R$ 89.522 | -R$ 79.510 |
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
+**DESPESA COM PESSOAL E BENEFÍCIOS** (eixo: Milhares)
 
-Milhares
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 26.929 | -R$ 29.428 | -R$ 35.161 | -R$ 26.139 |
 
--R$ 5.000
-“R$ 10.000
--R$ 15.000
--R$ 20.000
--R$ 25.000
--R$ 30.000
--R$ 35.000
--R$ 40.000
+**MATERIAL DE CONSUMO** (eixo: Milhares)
 
-DESPESA COM PESSOAL E BENEFÍCIOS
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 1.423 | -R$ 1.665 | -R$ 2.089 | -R$ 914 |
 
-b
--R$ 26.929 R$ 29.428
+**MANUTENÇÃO** (eixo: Milhares)
 
--R$ 35.161
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 2.519 | -R$ 3.763 | -R$ 4.896 | -R$ 2.640 |
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-Milhares
-
--R$ 500
-
--R$ 1,000
-
--R$ 1.500
-
-MATERIAL DE CONSUMO
-
-I
-| -R$914
-N
--R$1.423
--R$ 1.665
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-MANUTENÇÃO
-
-A
--R$ 2.519
-
-a -R$4.896
-
-REALIZADO 2017 REALIZADO 2018 / REALIZADO 2019 REALIZADO 2020
-
-DRA
-
+[rubricas]
+10
 
 --- pág. 11 ---
 
-Os serviços de apoio, que compreendem
-principalmente serviços ligados à limpeza e
-comunicação, bem como fretes e transportes, também
-foram revisados e renegociados, resultando em
-economia em torno de 35,1% comparativamente ao ano
-de 2019, 23% em relação a 2018 e 12,3% a 2017.
+Os serviços de apoio, que compreendem principalmente serviços ligados à limpeza e comunicação, bem como fretes e transportes, também foram revisados e renegociados, resultando em economia em torno de 35,1% comparativamente ao ano de 2019, 23% em relação a 2018 e 12,3% a 2017.
 
-A revisão na utilização de equipamentos
-alugados, mantendo somente o recurso necessário para
-operação do dia a dia e de jogos, foi um dos fatores que
-propiciou uma importante economia na conta de
-aluguéis, mesmo com a retomada dos jogos em um
-intervalo menor do que o programado. A redução
-representou um percentual de significativos 71% em
-comparação a 2019, 58,6% relativo a 2018 e em linha
-com o realizado no ano de 2017.
+A revisão na utilização de equipamentos alugados, mantendo somente o recurso necessário para operação do dia a dia e de jogos, foi um dos fatores que propiciou uma importante economia na conta de aluguéis, mesmo com a retomada dos jogos em um intervalo menor do que o programado. A redução representou um percentual de significativos 71% em comparação a 2019, 58,6% relativo a 2018 e em linha com o realizado no ano de 2017.
 
-Milhares
+**SERVIÇO DE APOIO** (eixo: Milhares)
 
--R$ 500
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 2.175 | -R$ 2.477 | -R$ 2.940 | -R$ 1.908 |
 
--R$ 1.000
+**ALUGUÉIS** (eixo: Milhares)
 
--R$ 1.500
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 582 | -R$ 1.313 | -R$ 1.879 | -R$ 543 |
 
--R$ 2.000
-
-SERVIÇO DE APOIO
-
-| -R$ 1.908
-'
--R$2175
--R$2477
--R$2940
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
-Milhares
-
-ALUGUÉIS
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
+[rubricas]
 11
 
 --- pág. 12 ---
 
-RESULTADO FINANCEIRO
+**RESULTADO FINANCEIRO**
 
-Com a drástica redução das receitas em 2020 e
-apesar das ações que propiciaram reduções de custos e
-despesas, houve a necessidade de buscar recursos por
-meio da captação de operações financeiras e
-consequente aumento de nosso endividamento
-bancário em 53,4%, gerando um incremento na despesa
-com juros.
+Com a drástica redução das receitas em 2020 e apesar das ações que propiciaram reduções de custos e despesas, houve a necessidade de buscar recursos por meio da captação de operações financeiras e consequente aumento de nosso endividamento bancário em 53,4%, gerando um incremento na despesa com juros.
 
-A variação cambial foi um dos agentes que
-influenciou no aumento das despesas financeiras. O
-Dólar Norte-Americano e o Euro estavam cotados, no
-início de 2020 em R$ 4,0307 e R$ 4,5305
+A variação cambial foi um dos agentes que influenciou no aumento das despesas financeiras. O Dólar Norte-Americano e o Euro estavam cotados, no início de 2020 em R$ 4,0307 e R$ 4,5305 respectivamente. Durante o ano o Dólar apresentou uma apreciação perante o Real de 28,9% e o Euro de 40,8%, encerrando 2020 com a cotação de R$ 5,1967 (Dólar) e 6,3779 (Euro).
 
-É
-E
+Em contrapartida, houve uma importante renegociação envolvendo o passivo fiscal do Clube, representando uma economia de aproximadamente R$ 22 milhões, que propiciou um resultado financeiro em 2020 34,1% abaixo do exercício de 2019 e nos mesmos patamares de 2018.
 
-RESULTADO FINANCEIRO
+**RESULTADO FINANCEIRO** (eixo: Milhares)
 
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 18.440 | -R$ 29.482 | -R$ 43.490 | -R$ 28.648 |
 
-respectivamente. Durante o ano o Dólar apresentou uma apreciação perante o Real de 28,9% e o Euro de 40,8%,
-encerrando 2020 com a cotação de R$ 5,1967 (Dólar) e 6,3779 (Euro).
+**EBITDA**
 
-Em contrapartida, houve uma importante renegociação envolvendo o passivo fiscal do Clube, representando
-uma economia de aproximadamente R$ 22 milhões, que propiciou um resultado financeiro em 2020 34,1% abaixo do
+A geração de caixa (EBITDA) considerando todo cenário existente, embora muito abaixo dos anos anteriores (2019 – 97,6% e 2018 – 96,5%) se manteve positiva, diferente de 2017.
 
-exercício de 2019 e nos mesmos patamares de 2018.
+**EBITDA** (eixo: Milhares)
 
-EBITDA
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 4.999 | R$ 60.469 | R$ 89.423 | R$ 2.122 |
 
-A geração de caixa (EBITDA) considerando todo
-cenário existente, embora muito abaixo dos anos
-anteriores (2019 — 97,6% e 2018 — 96,5%) se manteve
-positiva, diferente de 2017.
+**RESULTADO DO EXERCÍCIO**
 
-RESULTADO DO EXERCÍCIO
+O ano de 2020 mostrou-se totalmente adverso e extraordinariamente imprevisível para o mundo. O cenário de pandemia pela COVID-19, gerando consequências no país e no mundo, foi o principal fator para uma forte redução na geração de receitas. Vale ressaltar que as ações e estratégias aqui apresentadas minimizaram as perdas inerentes a esse período adverso, mas não foram suficientes para impedir o déficit do exercício, que resultou em um montante de R$ 91,9 milhões.
 
-O ano de 2020 mostrou-se totalmente adverso
-e extraordinariamente imprevisível para o mundo. O
-cenário de pandemia pela COVID-19, gerando
-consequências no país e no mundo, foi o principal fator
-para uma forte redução na geração de receitas. Vale
-ressaltar que as ações e estratégias aqui apresentadas
-minimizaram as perdas inerentes a esse período
-adverso, mas não foram suficientes para impedir o
-déficit do exercício, que resultou em um montante de
-R$ 91,9 milhões.
+**RESULTADO DO EXERCÍCIO** (eixo: Milhares)
 
-RS 80.000
-RS 80.000
-RS 70.000
-RS 60.000
-R$ 50.000
-RS 40.000
-R$ 30.000
+| REALIZADO 2017 | REALIZADO 2018 | REALIZADO 2019 | REALIZADO 2020 |
+|---|---|---|---|
+| -R$ 56.105 | -R$ 383 | -R$ 3.019 | -R$ 91.888 |
 
-EBITDA
-
-RS 60.469
-|
-
-REALIZADO 2017 REALIZADO 2018 REALIZADO 2019 REALIZADO 2020
-
--RS 10.000
-“R$ 20.000
-“RS 30.000
-«R$ 40.000
--RS 50.000
-«R$ 60.000
--RS 70.000
--R$ 80.000
--RS 90.000
--R$ 100.000
-
-Milhares
-
-RESULTADO DO EXERCÍCIO
-
--R$ 56.105
-
-a
-
-REALIZADO 2017 REALIZADO 2018 R O 2019 REALIZADO 2020
-
-TE
-
-À
-
-y '
-
+[rubricas]
 12
 
 --- pág. 13 ---
@@ -1014,50 +548,73 @@ ntador CRC 1 RS 066028/0-0
 
 --- pág. 16 ---
 
-(eb)
+[Logotipo]
+**Sport Club Internacional**
+**Balanços Patrimoniais**
+**Em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em Reais – R$)**
 
-Sport Club Internacional
-Balanços Patrimoniais
-Em 31 de dezembro de 2020 e 2019
-(Valores expressos em Reais — R$)
+| Ativo | Nota | 31/12/2020 | 31/12/2019 |
+|---|---|---|---|
+| **Circulante** | | | |
+| Caixa e equivalentes de caixa | 4 | 1.690.128 | 2.589.570 |
+| Devedores por cessão de direitos econômicos | 5 | 39.340.722 | 61.308.098 |
+| Contas a receber | 6 | 54.955.411 | 72.195.782 |
+| Estoques | | 3.391.188 | 4.056.587 |
+| Adiantamentos | 7 | 2.820.817 | 2.554.145 |
+| Devedores diversos | 8 | 3.608.914 | 1.028.915 |
+| Outros créditos | 9 | 5.228.615 | 8.513.472 |
+| | | 111.035.795 | 152.246.569 |
+| **Não circulante** | | | |
+| Realizável a longo prazo | | | |
+| Títulos de capitalização | | 260.000 | 2.434.830 |
+| Devedores por cessão de direitos econômicos | 5 | 4.928.840 | 9.195.800 |
+| Contas a receber | 6 | 48.000 | 30.907.844 |
+| Depósitos judiciais | 21 | 14.252.386 | 11.335.051 |
+| | | 19.489.226 | 53.873.525 |
+| Investimentos | 10 | 232.457 | 218.291 |
+| Imobilizado | 11 | 973.774.088 | 990.495.795 |
+| Intangível | 12 | 109.525.411 | 96.211.306 |
+| | | 1.083.531.956 | 1.086.925.392 |
+| **Total do Ativo** | | **1.214.056.977** | **1.293.045.486** |
 
-Ativo Nata 31/12/2020 31/12/2019 Passivo e Patrimônio líquido Nota 31/12/2020 31/12/2019
-Circulante Circulante
-Caixa e equivalentes de caixa 4 1.690.128 2.589.570 Fornecedores 28.458.409 5.466.379
-Devedores por cessão de direitos econômicos 5 39,340.722 61.308.098 Empréstimos e financiamentos 13 61.123.778 67.818.118
-Contas a receber 6 54.955.411 72.195.782 Direito de imagem a pagar 37.396.470 40.266.893
-Estoques 3.391.188 4.056.587 Obrigações com atletas e clubes 25.080,068 48.632.776
-Adiantamentos 7 2.820.817 2.554.145 Credores participação negociação de atletas 14 25.685.985 36.346.563
-Devedores diversos 8 3.608.914 1.028.915 Obrigações trabalhistas 15 31.949.394 34.937.774
-Outros créditos 9 5.228.615 8.513.472 Obrigações fiscais e sociais L6 13.087.984 40,445.664
-111.035.795 152.246.569 Parcelamentos tributários 17 19.156.814 2.743.470
-Contas a pagar IB 44,132.478 43.522.230
-Receitas diferidas 19 33.572.608 63.750.988
-Passivo de arrendamento - Cessão por direito de exploração 20 19,538.629 19.538.629
-Outras obrigações 133.157 175.990
-339,315.774 403.645,474
-Não circulante
-Realizável a longo prazo Não circulante :
-Titulos de capitalização 260.000 2.434.830 Empréstimos e financiamentos 13 77.621.041 24.500.000
-Devedores por cessão de direitos econômicos 5 4.928.840 9.195.800 Credores participação negociação de atletas 14 134.207 134.206
-Contas a receber 6 48.000 30.907.844 Obrigações fiscais e sociais 16 220.057 59.356.601
-Depósitos judiciais 21 14.252.386 11.335.051 Parcelamento tributários 17 186.963.296 82.019.892
-19,489.226 53,873.525 Receitas diferidas 19 108.991.388 131.934.371
-Passivo de arrendamento - Cessão por direito de exploração 20 252.075,082 271.613,71]
-Provisões para contingências 21 48.047.823 27.264.718
-Investimentos 10 232.457 218.291 674.052,894 596.823.499
-Imobilizado q 973.774.088 990.495.795
-Intangível 12 109,525.41] 96.211.306 Patrimônio líquido
-1.083.531.956 1.086,925,392 Patrimônio social 2.600.000 2.600.000
-Ajuste de avaliação patrimonial 431.946,876 432.343.752
-Déficit acumulado (233.858.567) (142.367.239)
-200.688.309 292.576.513
-Total do Ativo 1,214.056,977 1.293,045.486 Patrimônio líquido 1,214.056,977 1.293.045.486
-
-CRÊRS 082635/0-6
+| Passivo e Patrimônio líquido | Nota | 31/12/2020 | 31/12/2019 |
+|---|---|---|---|
+| **Circulante** | | | |
+| Fornecedores | | 28.458.409 | 5.466.379 |
+| Empréstimos e financiamentos | 13 | 61.123.778 | 67.818.118 |
+| Direito de imagem a pagar | | 37.396.470 | 40.266.893 |
+| Obrigações com atletas e clubes | | 25.080.068 | 48.632.776 |
+| Credores participação negociação de atletas | 14 | 25.685.985 | 36.346.563 |
+| Obrigações trabalhistas | 15 | 31.949.394 | 34.937.774 |
+| Obrigações fiscais e sociais | 16 | 13.087.984 | 40.445.664 |
+| Parcelamentos tributários | 17 | 19.156.814 | 2.743.470 |
+| Contas a pagar | 18 | 44.132.478 | 43.522.230 |
+| Receitas diferidas | 19 | 33.572.608 | 63.750.988 |
+| Passivo de arrendamento - Cessão por direito de exploração | 20 | 19.538.629 | 19.538.629 |
+| Outras obrigações | | 133.157 | 175.990 |
+| | | 339.315.774 | 403.645.474 |
+| **Não circulante** | | | |
+| Empréstimos e financiamentos | 13 | 77.621.041 | 24.500.000 |
+| Credores participação negociação de atletas | 14 | 134.207 | 134.206 |
+| Obrigações fiscais e sociais | 16 | 220.057 | 59.356.601 |
+| Parcelamentos tributários | 17 | 186.963.296 | 82.019.892 |
+| Receitas diferidas | 19 | 108.991.388 | 131.934.371 |
+| Passivo de arrendamento - Cessão por direito de exploração | 20 | 252.075.082 | 271.613.711 |
+| Provisões para contingências | 21 | 48.047.823 | 27.264.718 |
+| | | 674.052.894 | 596.823.499 |
+| **Patrimônio líquido** | | | |
+| Patrimônio social | | 2.600.000 | 2.600.000 |
+| Ajuste de avaliação patrimonial | | 431.946.876 | 432.343.752 |
+| Déficit acumulado | | (233.858.567) | (142.367.239) |
+| | | 200.688.309 | 292.576.513 |
+| **Total do Passivo e Patrimônio líquido** | | **1.214.056.977** | **1.293.045.486** |
 
 As notas explicativas da Administração são parte integrante das demonstrações contábeis.
 
+[assinaturas: Contador – CRC/RS 082635/O-6 (nome ilegível); SPORT CLUB INTERNACIONAL – Giovane [ilegível] dos Santos; Marcelo [ilegível] – Presidente]
+
+16
 
 --- pág. 17 ---
 
@@ -1177,65 +734,48 @@ Ph 4
 
 --- pág. 20 ---
 
-[S)
+[Logotipo]
+**Sport Club Internacional**
 
-Sport Club Internacional
+**Demonstrações dos fluxos de caixa – Método Indireto**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em Reais – R$)**
 
-Demonstrações dos fluxos de caixa — Método Indireto
-
-Exercícios findos em 31 de dezembro de 2020 e 2019
-(Valores expressos em Reais — R$)
-
-31/12/2020 31/12/2019
-
-Fluxo de caixa das atividades operacionais
-
-Déficit do exercício
-
-Ajustado por itens que não afetam caixa e equivalentes de caixa:
-conciliação do déficit do exercício:
-
-(91.888.204) (3.019.465)
-
-Receita diferida
-
-(53.121.363)
-
-(129.385.754)
-
-Depreciação e amortização 65.271.615 50.640.558
-Perdas estimadas com créditos de liquidação duvidosa (4.174.600) (9.956.026)
-Provisões para contingências 20.783.106 (7.477.734)
-Passivo de arrendamento - Cessão por direito de exploração (19.538.629)  (19.538.629)
-"Impairment" de atletas - (2.000.000)
-Provisão de juros 3.341.520 1.772.009
-Custo do ativo imobilizado e intangível baixado, líquido 13.924.875 22.726.905
-
-Variação nos ativos e passivos:
-
-(65.401.680)
-
-(96.238.136)
-
-Contas a receber 52.274.816 108.238.162
-Estoques 665.399 (323.050)
-Adiantamentos e devedores diversos (2.846.671) 2.957.014
-Devedores por cessão de direitos econômicos 26.234.336 (49.820.978)
-Outros créditos 2.542.352 (3.932.591)
-Fornecedores 22.992.030 3.539.302
-Direitos de imagem contratados a pagar (2.870.422) 10.852.052
-Obrigações com clubes (23.552.708) 17.513.140
-Credores por participação e negociação de atletas (10.660.578) 1.044.536
-Obrigações trabalhistas e sociais (2.988.380) 12.505.054
-Obrigações fiscais e sociais PROFUT 35.781.423 42.747.291]
-Adiantamento de terceiros (308.651) 20.518.323
-Outras obrigações (42.833) (546.703)
-97.220.113  165.291.55h
-
-Caixa líquido gerado pelas atividades operacionais 31.818.433 Ei
+| | 31/12/2020 | 31/12/2019 |
+|---|---|---|
+| **Fluxo de caixa das atividades operacionais** | | |
+| Déficit do exercício | (91.888.204) | (3.019.465) |
+| **Ajustado por itens que não afetam caixa e equivalentes de caixa:** | | |
+| **conciliação do déficit do exercício:** | | |
+| Receita diferida | (53.121.363) | (129.385.754) |
+| Depreciação e amortização | 65.271.615 | 50.640.558 |
+| Perdas estimadas com créditos de liquidação duvidosa | (4.174.600) | (9.956.026) |
+| Provisões para contingências | 20.783.106 | (7.477.734) |
+| Passivo de arrendamento - Cessão por direito de exploração | (19.538.629) | (19.538.629) |
+| "*Impairment*" de atletas | - | (2.000.000) |
+| Provisão de juros | 3.341.520 | 1.772.009 |
+| Custo do ativo imobilizado e intangível baixado, líquido | 13.924.875 | 22.726.905 |
+| | (65.401.680) | (96.238.136) |
+| **Variação nos ativos e passivos:** | | |
+| Contas a receber | 52.274.816 | 108.238.162 |
+| Estoques | 665.399 | (323.050) |
+| Adiantamentos e devedores diversos | (2.846.671) | 2.957.014 |
+| Devedores por cessão de direitos econômicos | 26.234.336 | (49.820.978) |
+| Outros créditos | 2.542.352 | (3.932.591) |
+| Fornecedores | 22.992.030 | 3.539.302 |
+| Direitos de imagem contratados a pagar | (2.870.422) | 10.852.052 |
+| Obrigações com clubes | (23.552.708) | 17.513.140 |
+| Credores por participação e negociação de atletas | (10.660.578) | 1.044.536 |
+| Obrigações trabalhistas e sociais | (2.988.380) | 12.505.054 |
+| Obrigações fiscais e sociais PROFUT | 35.781.423 | 42.747.291 |
+| Adiantamento de terceiros | (308.651) | 20.518.323 |
+| Outras obrigações | (42.833) | (546.703) |
+| | 97.220.113 | 165.291.552 |
+| **Caixa líquido gerado pelas atividades operacionais** | **31.818.433** | **69.053.416** |
 
 As notas explicativas da Administração são parte integrante das demonstrações contábeis.
 
+[rubricas]
 20
 
 --- pág. 21 ---
@@ -2012,202 +1552,151 @@ de Referência", e descontinuidade do uso da LIBOR como taxa de referência apó
 
 --- pág. 34 ---
 
-[S)
-
-Notas explicativas da Administração às demonstrações contábeis
-
-Exercícios findos em 31 de dezembro de 2020 e 2019
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
 Sport Club Internacional
 
-ec) CPC 06 (R2) Arrendamentos:
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
-Concede benefícios em contratos de arrendamento relacionado a COVID-19 para
-arrendatários.
+**c)** CPC 06 (R2) Arrendamentos:
 
-As alterações foram avaliadas pela Administração do Clube, e não foram identificados impactos
-significativos nas demonstrações contábeis.
+Concede benefícios em contratos de arrendamento relacionado a COVID-19 para arrendatários.
 
-Caixa e equivalentes de caixa
+As alterações foram avaliadas pela Administração do Clube, e não foram identificados impactos significativos nas demonstrações contábeis.
 
-31/12/2020 31/12/2019
-Caixa 91.253 66.570
-Bancos - conta movimento 1.597.320 1.431.902
-Aplicações financeiras 1.555 1.091.098
-Caixa e equivalentes de caixa 1.690.128 2.589.570
+**4 Caixa e equivalentes de caixa**
 
-As aplicações financeiras referem-se a CDB DI, contratada com instituições financeiras de
-primeira linha, as quais são remuneradas a 100% da variação do CDI. Os saldos podem ser
-resgatados a qualquer tempo. sem prejuízo da remuneração já apropriada e risco insignificante de
-mudança de valor.
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Caixa | 91.253 | 66.570 |
+| Bancos - conta movimento | 1.597.320 | 1.431.902 |
+| Aplicações financeiras | 1.555 | 1.091.098 |
+| **Caixa e equivalentes de caixa** | **1.690.128** | **2.589.570** |
 
-Devedores por cessão de direitos econômicos
+As aplicações financeiras referem-se a CDB DI, contratada com instituições financeiras de primeira linha, as quais são remuneradas a 100% da variação do CDI. Os saldos podem ser resgatados a qualquer tempo, sem prejuízo da remuneração já apropriada e risco insignificante de mudança de valor.
 
-31/12/2020 31/12/2019
-Clubes de futebol 38.727.101 57.904.968
-Empresas e empresários 1.113.621 3.403.130
-Circulante 39.340.722 61.308.098
-Clubes de futebol 4.928.840 9.195.800
-Não circulante 4.928.840 9.195.800
-Contas a receber
+**5 Devedores por cessão de direitos econômicos**
 
-31/12/2020 31/12/2019
-Devedores por aluguéis e concessões 890.508 577.038
-Devedores por royalties 3.962.636 2.873.515
-Devedores por televisionamento 32.845.861 45.705.150
-Outros valores a receber 170.002 194.730
-Devedores por concessão de logomarca 24.608.654 27.613.611
-(=) Perda estimada com crédito de liquidação duvidosa (7.520.250) (4.768.262)
-Circulante 54.955.411 72.195.782
-Devedores por aluguéis e concessões 48.000
-Devedores por televisionamento - 11.005.31
-Devedores por concessão de logomarca - 19.759.06
-Devedores por royalties - 143.459
-Não circulante 48.000 30.907.844
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Clubes de futebol | 38.727.101 | 57.904.968 |
+| Empresas e empresários | 1.113.621 | 3.403.130 |
+| **Circulante** | **39.340.722** | **61.308.098** |
+| Clubes de futebol | 4.928.840 | 9.195.800 |
+| **Não circulante** | **4.928.840** | **9.195.800** |
 
+**6 Contas a receber**
+
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Devedores por aluguéis e concessões | 890.508 | 577.038 |
+| Devedores por royalties | 3.962.636 | 2.873.515 |
+| Devedores por televisionamento | 32.843.861 | 45.705.150 |
+| Outros valores a receber | 170.002 | 194.730 |
+| Devedores por concessão de logomarca | 24.608.654 | 27.613.611 |
+| (-) Perda estimada com crédito de liquidação duvidosa | (7.520.250) | (4.768.262) |
+| **Circulante** | **54.955.411** | **72.195.782** |
+| Devedores por aluguéis e concessões | 48.000 | - |
+| Devedores por televisionamento | - | 11.005.316 |
+| Devedores por concessão de logomarca | - | 19.759.069 |
+| Devedores por royalties | - | 143.459 |
+| **Não circulante** | **48.000** | **30.907.844** |
+
+34
 
 --- pág. 35 ---
 
 Sport Club Internacional
 
-Notas explicativas da Administração às demonstrações contábeis
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
-Exercícios findos em 31 de dezembro de 2020 e 2019
+O "*Aging list*" do contas a receber é como segue:
 
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
-O “Aging list” do contas a receber é como segue:
-
-A Vencer
-
-Vencidos de 1 a 30 dias
-Vencidos de 31 a 60 dias
-Vencidos de 61 a 90 dias
-Vencidos de 91 a 180 dias
-Vencidos de 181 a 364 dias
-Vencidos a mais de 365 dias
-Total dos vencidos
-
-(-) Perda estimadas com créditos de liquidação duvidosa
-
-Total
-
-31/12/2020 31/12/2019
-50.372.583 93.657.139
-2.261.418 4.141.939
-316.644 1.732.454
-269.950 400.564
-832.167 1.266.157
-2.273.154 1.652.317
-6.197.745 5.021.318
-12.151.078 14.214.749
-(7.520.250) (4.768.262)
-55.003.411 103.103.626
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| **A Vencer** | **50.372.583** | **93.657.139** |
+| Vencidos de 1 a 30 dias | 2.261.418 | 4.141.939 |
+| Vencidos de 31 a 60 dias | 316.644 | 1.732.454 |
+| Vencidos de 61 a 90 dias | 269.950 | 400.564 |
+| Vencidos de 91 a 180 dias | 832.167 | 1.266.157 |
+| Vencidos de 181 a 364 dias | 2.273.154 | 1.652.317 |
+| Vencidos a mais de 365 dias | 6.197.745 | 5.021.318 |
+| **Total dos vencidos** | **12.151.078** | **14.214.749** |
+| (-) Perda estimadas com créditos de liquidação duvidosa | (7.520.250) | (4.768.262) |
+| **Total** | **55.003.411** | **103.103.626** |
 
 A movimentação de PECLD - Perda estimadas com créditos de liquidação duvidosa é como segue:
 
-Saldo PECLD 31/12/2018
-(+) Adições
+| | PECLD |
+|---|---:|
+| **Saldo PECLD 31/12/2018** | **(14.724.288)** |
+| (+) Adições | (5.191.060) |
+| (-) Baixas | 13.694.599 |
+| (-) Reversões | 1.452.487 |
+| **Saldo PECLD 31/12/2019** | **(4.768.262)** |
+| (+) Adições | (4.082.153) |
+| (-) Baixas | 1.273.601 |
+| (-) Reversões | 56.564 |
+| **Saldo PECLD 31/12/2020** | **(7.520.250)** |
 
-(-) Baixas
+**7 Adiantamentos**
 
-(-) Reversões
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Adiantamento de salários | 39.385 | 72.266 |
+| Adiantamentos a fornecedores | - | 22.242 |
+| Adiantamentos de viagens | 50.162 | 243.391 |
+| Adiantamentos a prestadores de serviços | 166.439 | 2.030.146 |
+| Outros adiantamentos | 2.564.831 | 186.100 |
+| **Adiantamentos** | **2.820.817** | **2.554.145** |
 
-Saldo PECLD 31/12/2019
-(+) Adições
-
-(-) Baixas
-
-(-) Reversões
-
-Saldo PECLD 31/12/2020
-
-Adiantamentos
-
-Adiantamento de salários
-Adiantamentos a fornecedores
-Adiantamentos de viagens
-Adiantamentos a prestadores de serviços
-Outros adiantamentos
-
-Adiantamentos
-
-31/12/2020
-
-PECLD
-
-(14.724.288)
-
-(5.191.060)
-13.694.599
-1.452.487
-
-(4.768.262)
-
-(4.082.153)
-1.273.601
-56.564
-
-(7.520.250)
-
-31/12/2019
-
-39.385
-
-50.162
-166.439
-2.564.831
-
-72.266
-22.242
-243.591
-2.030.146
-186.100
-
-2.820.817
-
-EAN
+35
 
 --- pág. 36 ---
 
-S)
-
-Notas explicativas da Administração às demonstrações contábeis
-
-Exercícios findos em 31 de dezembro de 2020 e 2019
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
 Sport Club Internacional
 
-8 Devedores diversos
-31/12/2020 31/12/2019
-Aluguel de direitos federativos 1.983.060 -
-Devedores — mensalidades sociais 536.158 128.057
-Devedores por parceria 192.500 -
-Devedores - premiações = E
-Devedores - ingressos 429.236 694.060
-Outros créditos = e
-Devedores renda de jogos 13.450 13.450
-Devedores por convênio e loteria esportiva - “
-Seguro garantia 175.474 183.412
-Demais valores a receber 279.036 9.936
-Devedores diversos 3.608.914 1.028.915
-9 Outros créditos
-31/12/2020 31/12/2019
-Impostos a recuperar - 189.142
-PAT- Programa de Alimentação do Trabalhador 404.075 136.710
-Vale transporte a realizar 7.013 50.132
-Prestadores de serviço a realizar 4.057.578 7.299.100
-Despesas de seguros a realizar 34.952 28.179
-Vale refeição a realizar 724.997 810.209
-Outros créditos 5.228.615 8.513.472
-10 Investimentos
-31/12/2020 31/12/2019
-Consórcios 112.789 98.624
-Obras de arte 119.667 119.667
-Investimentos 232.456 218.29 IA.
-=
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
+
+**8 Devedores diversos**
+
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Aluguel de direitos federativos | 1.983.060 | - |
+| Devedores – mensalidades sociais | 536.158 | 128.057 |
+| Devedores por parceria | 192.500 | - |
+| Devedores - premiações | - | - |
+| Devedores - ingressos | 429.236 | 694.060 |
+| Outros créditos | - | - |
+| Devedores renda de jogos | 13.450 | 13.450 |
+| Devedores por convênio e loteria esportiva | - | - |
+| Seguro garantia | 175.474 | 183.412 |
+| Demais valores a receber | 279.036 | 9.936 |
+| **Devedores diversos** | **3.608.914** | **1.028.915** |
+
+**9 Outros créditos**
+
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Impostos a recuperar | - | 189.142 |
+| PAT- Programa de Alimentação do Trabalhador | 404.075 | 136.710 |
+| Vale transporte a realizar | 7.013 | 50.132 |
+| Prestadores de serviço a realizar | 4.057.578 | 7.299.100 |
+| Despesas de seguros a realizar | 34.952 | 28.179 |
+| Vale refeição a realizar | 724.997 | 810.209 |
+| **Outros créditos** | **5.228.615** | **8.513.472** |
+
+**10 Investimentos**
+
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Consórcios | 112.789 | 98.624 |
+| Obras de arte | 119.667 | 119.667 |
+| **Investimentos** | **232.456** | **218.291** |
 
 36
 
@@ -2332,121 +1821,93 @@ responsabilidade e às expensas do donatário.
 
 --- pág. 39 ---
 
-(e)
-
-12
-
-16)
-
-Notas explicativas da Administração às demonstrações contábeis
-Exercícios findos em 31 de dezembro de 2020 e 2019
-
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
 Sport Club Internacional
 
-As referidas áreas recebidas pelo Clube como doação da Prefeitura Municipal de Guaíba e Estado
-do Rio Grande do Sul, foram registrados pelo seu valor justo no tal de R$ 56.933.737, avaliado
-pela Mynarski Associados Ltda., empresa especializada contratada para tal finalidade, cuja
-metodologia de avaliação atende aos requisitos das práticas contábeis adotadas no Brasil
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
-O valor justo no total de R$ 56.933.737, pelo qual as áreas foram registradas no ativo imobilizado,
-teve como contrapartida o registro em conta de receita diferida, liquida do montante estimado para
-as contrapartidas exigidas pelo Governo do Estado do Rio Grande do Sul e Prefeitura Municipal
-de Guaíba. As contrapartidas em questão constituem uma obrigação do Clube, sendo uma parcela
-com o Governo do Estado do Rio Grande do Sul e outra com a Prefeitura Municipal de Guaíba,
-até que as mesmas sejam devidamente cumpridas e entregues.
+As referidas áreas recebidas pelo Clube como doação da Prefeitura Municipal de Guaíba e Estado do Rio Grande do Sul, foram registrados pelo seu valor justo no tal de R$ 56.933.737, avaliado pela Mynarski Associados Ltda., empresa especializada contratada para tal finalidade, cuja metodologia de avaliação atende aos requisitos das práticas contábeis adotadas no Brasil
 
-Após o cumprimento das contrapartidas a receita diferida em questão poderá ser realizada e levada
-a resultado do Clube. No exercício em que a receita diferida da subvenção governamental for
-realizada, será constituída uma reserva de subvenção governamental no patrimônio líquido do
-Clube, por se tratar de um ganho que não poderá ser revertido em caixa, seja por venda ou por
-qualquer outra forma, que não seja a construção do Centro de Treinamento do Clube.
+O valor justo no total de R$ 56.933.737, pelo qual as áreas foram registradas no ativo imobilizado, teve como contrapartida o registro em conta de receita diferida, líquida do montante estimado para as contrapartidas exigidas pelo Governo do Estado do Rio Grande do Sul e Prefeitura Municipal de Guaíba. As contrapartidas em questão constituem uma obrigação do Clube, sendo uma parcela com o Governo do Estado do Rio Grande do Sul e outra com a Prefeitura Municipal de Guaíba, até que as mesmas sejam devidamente cumpridas e entregues.
 
-Bens em garantia
+Após o cumprimento das contrapartidas a receita diferida em questão poderá ser realizada e levada a resultado do Clube. No exercício em que a receita diferida da subvenção governamental for realizada, será constituída uma reserva de subvenção governamental no patrimônio líquido do Clube, por se tratar de um ganho que não poderá ser revertido em caixa, seja por venda ou por qualquer outra forma, que não seja a construção do Centro de Treinamento do Clube.
 
-Em 31 de dezembro de 2020, o Clube mantinha bens indicados como garantia em processos
-Judiciais. Os bens dados em garantia são como segue:
+**(c) Bens em garantia**
 
-Depreciação
-Classificação Custo acumulada Valor residual
-Terreno 44.760.969 - 44.760.969
-Máquinas e motores 524.241 128.959 395.282
-Equipamentos — Beira Rio 415.987 293.656 122.331
-Veículos 68.000 68.000 -
-Equipamentos — Parque Gigante 40.967 30.810 10.157
-Total dos bens em garantia 45.810.164 521.425 45.288.739
-Intangível
-Direito de uso
-Direito econômico atletas de software e “Impairment”
-em formação formados contratados espaço clube de atletas Total
-Custo
-31 de dezembro de 2018 20.216.590 7.585.098 107.746.720 2.842.906 (2.000.000) 136.391.314
-Adições 21.613.513 - 51.633.554 216.665 - 73.463.732
-Baixa (9.586.411) (1.587.113)  (44.052.303) - 2.000.000 (53.225.827)
-Transferências 5.613.871 3.424.095 (9.037.966) 1.141.547 - 1.141.547
-31 de dezembro de 2019 37.857.563 9.422.080 106.290.005 4.201.118 -— 157.770.766
-Adtigtses 15.258.301 3.728.455  55.698.265 39.100 - 74.724.121
-Baixa (10.217.239) (2274966) (14.472.797) - - (26.965.
-Transferências (6.917.444) 7.167.444 (250.000) - - 4:
-31 de dezembro de 2020 35.981.181 18.043.013  147.265.473 4.240.218 - esmas
+Em 31 de dezembro de 2020, o Clube mantinha bens indicados como garantia em processos judiciais. Os bens dados em garantia são como segue:
 
-t
+| Classificação | Custo | Depreciação acumulada | Valor residual |
+|---|---:|---:|---:|
+| Terreno | 44.760.969 | - | 44.760.969 |
+| Máquinas e motores | 524.241 | 128.959 | 395.282 |
+| Equipamentos – Beira Rio | 415.987 | 293.656 | 122.331 |
+| Veículos | 68.000 | 68.000 | - |
+| Equipamentos – Parque Gigante | 40.967 | 30.810 | 10.157 |
+| **Total dos bens em garantia** | **45.810.164** | **521.425** | **45.288.739** |
 
-x 39
+**12 Intangível**
+
+| | Direito econômico atletas: em formação | Direito econômico atletas: formados | Direito econômico atletas: contratados | Direito de uso de software e espaço clube | "Impairment" de atletas | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| **Custo** | | | | | | |
+| **31 de dezembro de 2018** | 20.216.590 | 7.585.098 | 107.746.720 | 2.842.906 | (2.000.000) | 136.391.314 |
+| Adições | 21.613.513 | - | 51.633.554 | 216.665 | - | 73.463.732 |
+| Baixa | (9.586.411) | (1.587.113) | (44.052.303) | - | 2.000.000 | (53.225.827) |
+| Transferências | 5.613.871 | 3.424.095 | (9.037.966) | 1.141.547 | - | 1.141.547 |
+| **31 de dezembro de 2019** | 37.857.563 | 9.422.080 | 106.290.005 | 4.201.118 | - | 157.770.766 |
+| Adições | 15.258.301 | 3.728.455 | 55.698.265 | 39.100 | - | 74.724.121 |
+| Baixa | (10.217.239) | (2.274.966) | (14.472.797) | - | - | (26.965.002) |
+| Transferências | (6.917.444) | 7.167.444 | (250.000) | - | - | - |
+| **31 de dezembro de 2020** | 35.981.181 | 18.043.013 | 147.265.473 | 4.240.218 | - | 205.529.885 |
+
+39
 
 --- pág. 40 ---
 
-1)
-
-Notas explicativas da Administração às demonstrações contábeis
-Exercícios findos em 31 de dezembro de 2020 e 2019
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
 Sport Club Internacional
 
-Amortização
-31 de dezembro de 2018 - (1.126.928) (59.5535.159) (1.009.041) - (61.691.128)
-Adições - (629.210) (31.200.668) (250.232) - (32.080.110)
-Baixas - 5.088.549 27.468.108 - - 32.556.657
-Transferência - - - (344.879) - (344.879)
-31 de dezembro de 2019 - 3.332.411 (63.287.719) (1.604.152) - (61.559.460)
-Adições - (5.724.228) (41.576.325) (320.685) - (47.621.238)
-Baixas - 1.332.826 11.843.398 - - 13.176.224
-Transferência - - - “ a Es
-31 de dezembro de 2020 - (1.058.991) (93.020.646) (1.924.837) - (96.004.474)
-31 de dezembro de 2018 20.216.590 6.458.170 48.191.561 1.833.865 (2.000.000) 74.700.186
-31 de dezembro de 2019 37.857.563 12.754.491] 43.002.286 2.596.966 - 96.211.306
-31 de dezembro de 2020 35.981.181 16.984.022 54.244.827 2.315.381 - 109.525.411
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
+
+| | Em formação | Formados | Contratados | Direito de uso de software e espaço clube | "Impairment" de atletas | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| **Amortização** | | | | | | |
+| **31 de dezembro de 2018** | - | (1.126.928) | (59.555.159) | (1.009.041) | - | (61.691.128) |
+| Adições | - | (629.210) | (31.200.668) | (250.232) | - | (32.080.110) |
+| Baixas | - | 5.088.549 | 27.468.108 | - | - | 32.556.657 |
+| Transferência | - | - | - | (344.879) | - | (344.879) |
+| **31 de dezembro de 2019** | - | 3.332.411 | (63.287.719) | (1.604.152) | - | (61.559.460) |
+| Adições | - | (5.724.228) | (41.576.325) | (320.685) | - | (47.621.238) |
+| Baixas | - | 1.332.826 | 11.843.398 | - | - | 13.176.224 |
+| Transferência | - | - | - | - | - | - |
+| **31 de dezembro de 2020** | - | (1.058.991) | (93.020.646) | (1.924.837) | - | (96.004.474) |
+| **31 de dezembro de 2018** | 20.216.590 | 6.458.170 | 48.191.561 | 1.833.865 | (2.000.000) | 74.700.186 |
+| **31 de dezembro de 2019** | 37.857.563 | 12.754.491 | 43.002.286 | 2.596.966 | - | 96.211.306 |
+| **31 de dezembro de 2020** | 35.981.181 | 16.984.022 | 54.244.827 | 2.315.381 | - | 109.525.411 |
+
 Em 31/12/2019:
 
-Quantidade de atletas 140 20 31 191
+| | Em formação | Formados | Contratados | Total |
+|---|---:|---:|---:|---:|
+| Quantidade de atletas | 140 | 20 | 31 | 191 |
+| % de participação | 73,30% | 10,47% | 16,23% | 100,00% |
 
-% de participação 73,30% 10,47% 16,23% 100,00%
 Em 31/12/2020:
 
-Quantidade de atletas 156 26 28 210
+| | Em formação | Formados | Contratados | Total |
+|---|---:|---:|---:|---:|
+| Quantidade de atletas | 156 | 26 | 28 | 210 |
+| % de participação | 74,29% | 12,38% | 13,33% | 100,00% |
 
-% de participação 74,29% 12,38% 13,33% 100,00%
+De acordo com as orientações contidas na OTG 2003 de 5 de dezembro de 2019, atletas em formação que apresentaram viabilidade técnica e se tornaram atletas profissionais foram transferidos para atletas formados, assim como, aqueles atletas em formação, que possuíam contrato, mas não compunham o elenco de atletas profissionais, não mais figuram no grupo de atletas formados, tendo estes sido reclassificados para atletas em formação. Um atleta é considerado formado a partir do momento em que o atleta apresentar viabilidade técnica e se tornar parte do elenco de atletas profissionais.
 
-De acordo com as orientações contidas na OTG 2003 de 5 de dezembro de 2019, atletas em
-formação que apresentaram viabilidade técnica e se tomaram atletas profissionais foram
-transferidos para atletas formados, assim como, aqueles atletas em formação, que possuíam
-contrato, mas não compunham o elenco de atletas profissionais, não mais figuram no grupo de
-atletas formados, tendo estes sido reclassificados para atletas em formação. Um atleta é
-considerado formado a partir do momento em que o atleta apresentar viabilidade técnica e se tornar
-parte do elenco de atletas profissionais.
+Sendo assim, a partir do momento em que o atleta formado passa a compor o elenco de atletas profissionais do Clube, o mesmo deixa de agregar custos ao seu valor no intangível. Todo o custo agregado até o momento de sua formação, é transferido para atletas formados, e sua amortização é iniciada, conforme prazo de contrato firmado entre o jogador e o Clube.
 
-Sendo assim, a partir do momento em que o atleta formado passa a compor o elenco de atletas
-profissionais do Clube, o mesmo deixa de agregar custos ao seu valor no intangível. Todo o custo
-agregado até o momento de sua formação, é transferido para atletas formados, e sua amortização
-é iniciada, conforme prazo de contrato firmado entre o jogador e o Clube.
+**Atletas em formação:**
 
-Atletas em formação:
-
-São todos os atletas integrantes das categorias de base do Clube, e seu custo é calculado de acord
-com os gastos diretamente relacionados com a formação dos atletas conforme ITG 2003 (R1)
-OTG 2003.
+São todos os atletas integrantes das categorias de base do Clube, e seu custo é calculado de acordo com os gastos diretamente relacionados com a formação dos atletas conforme ITG 2003 (R1) e OTG 2003.
 
 40
 
@@ -2690,67 +2151,43 @@ foram reduzidos conforme Art. 7º da Lei nº 3.155 de 04 de agosto de 2015, send
 
 --- pág. 45 ---
 
-[S)
-
-Notas explicativas da Administração às demonstrações contábeis
-
-Exercícios findos em 31 de dezembro de 2020 e 2019
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
 Sport Club Internacional
+
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
 Os valores que compõem o parcelamento estão demonstrados abaixo:
 
-Circulante Não circulante
+| | Circulante 31/12/2020 | Circulante 31/12/20192019 | Não circulante 31/12/2020 | Não circulante 31/12/20192019 |
+|---|---:|---:|---:|---:|
+| PROFUT FGTS | 278.001 | 19.854 | 2.550.067 | 2.996.839 |
+| PROFUT PGFN | 4.422.036 | 1.028.728 | 64.119.521 | 63.660.318 |
+| BACEN | 481.935 | - | 7.028.217 | - |
+| **Total** | **5.181.972** | **1.048.582** | **73.697.805** | **66.657.157** |
 
-31/12/2020  31/12/20192019 31/12/2020  31/12/20192019
+**PERT**
 
-PROFUT FGTS 278.001 19.854 2.550.067 2.996.839
-PROFUT PGEN 4.422.036 1.028.728 64.119.521 63.660.318
-BACEN 481.935 - 7.028.217 -
-Total 5.181.972 1.048.582 73.697.805 66.657.157
+O Clube optou pelo parcelamento das dívidas com Secretaria da Receita Federal - SRF, Procuradoria-Geral da Fazenda Nacional - PGFN e Instituto Nacional da Seguridade Social - INSS em 240 parcelas conforme previsto no Art. 7º da Lei nº 13.155 de 4 de agosto de 2015.
 
-PERT
+Pagamentos com as reduções nas parcelas conforme Art. 7º, §6º da mesma lei: em 50% (cinquenta por cento), o valor da 1ª (primeira) a 24ª (vigésima quarta) prestações mensais, em 25% (vinte e cinco por cento), o valor da 25ª (vigésima quinta) a 48ª (quadragésima oitava) prestações mensais e em 10% (dez por cento), o valor da 49ª (quadragésima nona) a 60ª (sexagésima) prestações mensais. Tendo como primeira competência paga novembro de 2015.
 
-O Clube optou pelo parcelamento das dívidas com Secretaria da Receita Federal - SRF,
-Procuradoria-Geral da Fazenda Nacional - PGFN e Instituto Nacional da Seguridade Social - INSS
-em 240 parcelas conforme previsto no Art. 7º da Lei nº 13.155 de 4 de agosto de 2015.
+Já o parcelamento do Fundo de Garantia por Tempo de Serviço - FGTS, foi constituído em 180 vezes conforme Art. 12 da Lei 13.155. A primeira parcela foi paga no mês de janeiro de 2016.
 
-Pagamentos com as reduções nas parcelas conforme Art. 7º, $6º da mesma lei: em 50% (cinquenta
-por cento), o valor da 1º (primeira) a 24º (vigésima quarta) prestações mensais, em 25% (vinte e
-cinco por cento), o valor da 25º (vigésima quinta) a 48º (quadragésima oitava) prestações mensais
-eem 10% (dez por cento), o valor da 49º (quadragésima nona) a 60º (sexagésima) prestações
-mensais. Tendo como primeira competência paga novembro de 2015.
+Conforme Art. 7º, § 5º da Lei 13.155, ao valor de cada uma das parcelas, será acrescido juros obtidos pela aplicação da taxa referencial do Sistema Especial de Liquidação e de Custódia - SELIC para títulos federais, acumulada mensalmente, calculados a partir do mês subsequente ao da consolidação até o mês anterior ao do pagamento, e de 1% (um por cento) relativamente ao mês em que o pagamento estiver sendo efetuado.
 
-Já o parcelamento do Fundo de Garantia por Tempo de Serviço - FGTS, foi constituído em 180
-vezes conforme Art. 12 da Lei 13.155. A primeira parcela foi paga no mês de janeiro de 2016.
-
-Conforme Art. 7º, 8 5º da Lei 13.155, ao valor de cada uma das parcelas, será acrescido juros
-obtidos pela aplicação da taxa referencial do Sistema Especial de Liquidação e de Custódia -
-SELIC para títulos federais, acumulada mensalmente, calculados a partir do mês subsequente ao
-da consolidação até o mês anterior ao do pagamento, e de 1% (um por cento) relativamente ao mês
-em que o pagamento estiver sendo efetuado.
-
-Em dezembro de 2017 o Clube optou por migrar do PROFUT para o PERT nas modalidades da
-Receita Federal, Previdência Social e PGFN da Previdência Social para aproveitar o benefício
-econômico-financeiro.
+Em dezembro de 2017 o Clube optou por migrar do PROFUT para o PERT nas modalidades da Receita Federal, Previdência Social e PGFN da Previdência Social para aproveitar o benefício econômico-financeiro.
 
 Resumo dos valores incluídos no PERT:
 
-Circulante Não circulante
+| | Circulante 31/12/2020 | Circulante 31/12/2019 | Não circulante 31/12/2020 | Não circulante 31/12/2019 |
+|---|---:|---:|---:|---:|
+| PERT - Fazendário | 915.781 | 924.518 | 7.627.294 | 8.319.326 |
+| PERT - Previdenciário | 728.644 | 695.686 | 5.889.874 | 6.355.319 |
+| PERT – Previdenciário PGFN | 78.224 | 74.684 | 638.824 | 688.090 |
+| **Total PERT** | **1.722.649** | **1.694.888** | **14.155.992** | **15.362.735** |
 
-31/12/2020 31/12/2019 31/12/2020 31/12/2019
-
-PERT - Fazendário 915.781 924.518 7.627.294 8.319.326
-
-PERT - Previdenciário 728.644 695.686 5.889.874 6.355.319
-
-PERT — Previdenciário PGFN 78.224 74.684 638.824 688.0
-Total PERT 1.722.649 1.694.888 14.155.992 15.362.73
-v
-“245
-
-4
+45
 
 --- pág. 46 ---
 
@@ -2936,54 +2373,37 @@ prestações solicitadas;
 
 --- pág. 49 ---
 
-|$)
-
-Notas explicativas da Administração às demonstrações contábeis
-Exercícios findos em 31 de dezembro de 2020 e 2019
-
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
 Sport Club Internacional
 
-V- para as demais pessoas jurídicas em processo de recuperação judicial, liquidação judicial,
-liquidação extrajudicial ou falência, pagamento, a título de entrada, de valor mensal
-equivalente a 0,334% (trezentos e trinta e quatro centésimos por cento) do valor consolidado
-dos créditos transacionados, durante 12 (doze) meses, e o restante pago com redução de até
-100% (cem por cento) do valor dos juros, das multas e dos encargos-legais, observado o
-limite de até 50% (cinquenta por cento sobre o valor total de cada crédito objeto da
-negociação, em até 72 (setenta e duas) parcelas mensais e sucessivas, sendo cada parcela
-determinada pelo maior valor entre 1% (um por cento) da receita bruta do mês imediatamente
-anterior, apurada na forma do art. 12 do Decreto-Lei n. 1.598/77, e o valor correspondente à
-divisão do valor consolidado pela quantidade de prestações solicitadas;
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
-VI- para os devedores com personalidade jurídica de direito público, pagamento, a título de
-entrada, de valor mensal equivalente a 0,334% (trezentos e trinta e quatro centésimos por
-cento) do valor consolidado dos créditos transacionados, durante 12 (doze) meses, e o
-restante pago com redução de até 100% (cem por cento) do valor dos juros, das multas e dos
-encargos-legais, observado o limite de até 50% (cinquenta por cento) sobre o valor total de
-cada crédito objeto da negociação, em até 72 (setenta e duas) parcelas mensais e sucessivas.
+V - para as demais pessoas jurídicas em processo de recuperação judicial, liquidação judicial, liquidação extrajudicial ou falência, pagamento, a título de entrada, de valor mensal equivalente a 0,334% (trezentos e trinta e quatro centésimos por cento) do valor consolidado dos créditos transacionados, durante 12 (doze) meses, e o restante pago com redução de até 100% (cem por cento) do valor dos juros, das multas e dos encargos-legais, observado o limite de até 50% (cinquenta por cento sobre o valor total de cada crédito objeto da negociação, em até 72 (setenta e duas) parcelas mensais e sucessivas, sendo cada parcela determinada pelo maior valor entre 1% (um por cento) da receita bruta do mês imediatamente anterior, apurada na forma do art. 12 do Decreto-Lei n. 1.598/77, e o valor correspondente à divisão do valor consolidado pela quantidade de prestações solicitadas;
+
+VI - para os devedores com personalidade jurídica de direito público, pagamento, a título de entrada, de valor mensal equivalente a 0,334% (trezentos e trinta e quatro centésimos por cento) do valor consolidado dos créditos transacionados, durante 12 (doze) meses, e o restante pago com redução de até 100% (cem por cento) do valor dos juros, das multas e dos encargos-legais, observado o limite de até 50% (cinquenta por cento) sobre o valor total de cada crédito objeto da negociação, em até 72 (setenta e duas) parcelas mensais e sucessivas.
 
 Resumo dos valores incluídos no parcelamento excepcional da PGFN:
 
-Circulante Não circulante
+| | Circulante 31/12/2020 | Circulante 31/12/2019 | Não circulante 31/12/2020 | Não circulante 31/12/2019 |
+|---|---:|---:|---:|---:|
+| EXCEPCIONAL – Demais Débitos | 6.967.311 | - | 77.338.108 | - |
+| EXCEPCIONAL - Previdenciário | 5.284.882 | - | 21.771.391 | - |
+| **Total EXCEPCIONAL** | **12.252.193** | **-** | **99.109.499** | **-** |
 
-31/12/2020 31/12/2019 31/12/2020 31/12/2019
+**18 Contas a pagar**
 
-EXCEPCIONAL — Demais Débitos 6.967.311 - 77.338.108 -
-EXCEPCIONAL - Previdenciário 5.284.882 - 21.771.391 ”
-Total EXCEPCIONAL 12.252.193 - 99.109.499 =
+| | 31/12/2020 | 31/12/2019 |
+|---|---:|---:|
+| Aluguéis a pagar | 564.466 | 844.466 |
+| Prestadores de serviços | 40.787.870 | 40.304.703 |
+| Títulos adiantamento | 430.785 | 430.785 |
+| Adiantamento de devedores | 816.559 | 1.278.407 |
+| Outras contas a pagar | 613.899 | 663.869 |
+| T.I.A. – Tarefa Imagem e Arena | 918.899 | - |
+| **Contas a pagar** | **44.132.478** | **43.522.230** |
 
-18 Contas a pagar
-
-31/12/2020 31/12/2019
-Aluguéis a pagar 564.466 844.466
-Prestadores de serviços 40.787.870 40.304.703
-Títulos adiantamento 430.785 430.785
-Adiantamento de devedores 816.559 1.278.407
-Outras contas a pagar 613.899 663.869
-T.I.A. — Tarefa Imagem e Arena 918.899 +
-Contas a pagar 44.132.478 43.522
-
+49
 
 --- pág. 50 ---
 
@@ -3094,225 +2514,117 @@ no momento em que houver sentença favorável transitada em julgado.
 
 --- pág. 52 ---
 
-22
+**Sport Club Internacional**
 
-23
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
-Sport Club Internacional
+**22 Receita líquida das atividades**
 
-Notas explicativas da Administração às demonstrações contábeis
+| | 31/12/2020 | 31/12/2019 |
+|---|---|---|
+| Arrecadação jogos | 3.587.427 | 19.634.451 |
+| Cotas de TV | 67.830.053 | 83.963.164 |
+| Negociações de atletas | 67.708.606 | 135.654.607 |
+| Patrocínios | 29.601.763 | 40.730.431 |
+| Sociais | 66.431.240 | 74.177.035 |
+| Estacionamento | 956.487 | 914.649 |
+| Locações | 443.861 | 1.089.011 |
+| Publicidade | 2.331.304 | 7.406.123 |
+| Licença de logomarca | 7.052.714 | 3.126.797 |
+| Premiações | 32.952.898 | 71.453.568 |
+| Promoções/Eventos | 257.417 | 1.106.750 |
+| Loteria Esportiva | 1.866.772 | 1.858.607 |
+| Indenizações | 227.612 | 228.133 |
+| Receita Bruta das atividades | 281.248.154 | 441.343.326 |
+| Deduções Arrecadação Jogos | (3.145.691) | (11.293.288) |
+| Dedução de direitos de televisionamento/marketing | (8.068.836) | (9.096.125) |
+| Dedução de receita social | (84.612) | (28.504) |
+| Dedução de premiação | (3.268.540) | (6.775.084) |
+| Deduções direitos econômicos | (7.023.985) | (24.687.880) |
+| Deduções | (21.591.664) | (51.880.881) |
+| **Receita líquida das atividades** | **259.656.490** | **389.462.445** |
 
-Exercícios findos em 31 de dezembro de 2020 e 2019
+**23 Custos operacionais das atividades**
 
-(Valores expressos em reais, exceto quando indicado de outra forma)
+| | 31/12/2020 | 31/12/2019 |
+|---|---|---|
+| **Futebol** | | |
+| Pessoal e benefícios | (143.799.625) | (142.506.236) |
+| Direito de imagens | (39.938.453) | (48.085.304) |
+| Empréstimos de atletas | (1.168.020) | (3.075.606) |
+| Baixa de direitos federativos de atletas | (11.744.797) | (13.719.078) |
+| Amortização de atletas | (47.467.079) | (31.508.438) |
+| Comissões sobre transações de atletas | - | (2.240.091) |
+| Logística | (6.388.555) | (9.684.946) |
+| Serviços de terceiros | (4.404.410) | (7.919.966) |
+| Serviços de apoio | (1.855.179) | (3.080.526) |
+| Material de consumo | (2.576.736) | (4.505.717) |
+| Gratificações de atletas | (2.000.732) | (10.997.470) |
+| Obrigações Legais | (19.341.617) | (23.387.230) |
+| Aluguéis | (6.012.172) | (6.779.216) |
+| Recuperação de custos e formação de atletas | 24.655.841 | 31.432.161 |
+| Comunicação | (67.471) | (55.454) |
+| Energia e Utilidades | (189.425) | (371.867) |
+| Tarefas | (116.903) | (1.564.258) |
+| Depreciação | (480.325) | (510.154) |
+| Mecanismo de Solidariedade | - | (185.709) |
+| Intermediação | (566.197) | - |
+| Manutenção | (107) | (388) |
+| Promoção Comercial | (49.852) | (204.864) |
+| **Custos operacionais das atividades** | **(263.511.814)** | **(278.950.357)** |
 
-Receita líquida das atividades
-
-Arrecadação jogos
-Cotas de TV
-Negociações de atletas
-Patrocínios
-
-Sociais
-Estacionamento
-Locações
-
-Publicidade
-
-Licença de logomarca
-Premiações
-Promoções/Eventos
-Loteria Esportiva
-Indenizações
-
-Receita Bruta das atividades
-
-Deduções Arrecadação Jogos
-
-Dedução de direitos de televisionamento/marketing
-Dedução de receita social
-
-Dedução de premiação
-
-Deduções direitos econômicos
-
-Deduções
-
-Receita líquida das atividades
-
-Custos operacionais das atividades
-
-Futebol
-Pessoal e beneficios
-Direito de imagens
-Empréstimos de atletas
-Baixa de direitos federativos de atletas
-Amortização de atletas
-Comissões sobre transações de atletas
-Logistica
-Serviços de terceiros
-Serviços de apoio
-Material de consumo
-Gratificações de atletas
-Obrigações Legais
-Aluguêis
-Recuperação de custos & formação de atletas
-Comunicação
-Energia e Utilidades
-Tarefas
-Depreciação
-Mecanismo de Solidariedade
-Intermediação
-Manutenção
-Promoção Comercial
-
-Custos operacionais das atividades
-
-31/12/2020 31/12/2019
-3.587.427 19.634.451
-67830053 83.963.164
-67.708.606 135.654.607
-29.601.763 40.730 431
-66.431.240 74.177.035
-956.487 914.649
-443.861 1.089.011
-2.331.304 7.406.123
-7052714 3.126.797
-32.952 898 71.453.568
-257417 1.106.750
-1.866.772 1.858.607
-227612 228.133
-281.248.154 441.343.326
-(3.145.691) (11.293,288)
-(8.068 836) (9.096.125)
-(84.612) (28.504)
-(3.268.540) (6.775.084)
-(7.023.985) (24.687 880)
-(21.591.664) (51.880.881)
-259.656.490 389.462.445
-31/12/2020 31/12/2019
-(143.799.625) (142.506.236)
-(39.938 453) (48.085 304)
-(1.168.020) (3.075.606)
-(1.744.797) (13.719.078)
-(47.467.079) (31.508.438)
-s (2.240.091)
-(6.388.555) (9.684.946)
-(4.404.410) (7.919.966)
-(1.855.179) (3.080.526)
-(2.576.736) (4.505.717)
-(2.000.732) (10.997.470)
-(19341617) (23.387230)
-(6012172) (6779216)
-24.655.841 31,432.161
-(57.471) (55,454)
-(189.425) (371.867)
-(116.903) (1.564.258)
-(480.325) (510.154)
-ê (185.709)
-(566.197) É
-(107) (388)
-(49.852) RA
-(263.5IL814) (278.950.38%)
-
+52
 
 --- pág. 53 ---
 
-24
+**Sport Club Internacional**
 
-25
+**Notas explicativas da Administração às demonstrações contábeis**
+**Exercícios findos em 31 de dezembro de 2020 e 2019**
+**(Valores expressos em reais, exceto quando indicado de outra forma)**
 
-26
+**24 Despesas comerciais**
 
-Õ
+| | 31/12/2020 | 31/12/2019 |
+|---|---|---|
+| Marketing | (8.255.616) | (7.398.785) |
+| Mídia | (2.142.361) | (2.245.074) |
+| **Despesas comerciais** | **(10.397.977)** | **(9.643.859)** |
 
-Sport Club Internacional
+**25 Despesas gerais e administrativas**
 
-Notas explicativas da Administração às demonstrações contábeis
+| | 31/12/2020 | 31/12/2019 |
+|---|---|---|
+| Conselhos | (367.346) | (483.450) |
+| Assessoria Jurídica | (3.426.118) | (3.635.099) |
+| Gabinete Presidência | (1.305.688) | (1.430.164) |
+| Assessoria Qualidade | (365.031) | (512.405) |
+| Ouvidoria | (292.635) | (332.853) |
+| Negócios Estratégicos | (3.181) | (273) |
+| Administração | (18.700.738) | (20.928.913) |
+| Patrimônio | (24.782.535) | (27.213.418) |
+| Finanças | (2.370.681) | (2.911.317) |
+| Central Atendimento Sócios | (1.481.242) | (2.787.324) |
+| Museu | (639.886) | (1.041.981) |
+| Tecnologia da Informação | (4.080.218) | (4.624.930) |
+| Recursos Humanos | (1.286.153) | (1.807.700) |
+| Parque Gigante | (2.746.732) | (3.320.101) |
+| Relações Sociais | (2.167.787) | (4.096.742) |
+| Genoma Colorado | (138.973) | (181.451) |
+| FECI e Esportes Amadores | (945.438) | (1.243.287) |
+| Futebol Feminino | (4.011.324) | (3.326.931) |
+| **Despesas gerais e administrativas** | **(69.111.706)** | **(79.878.339)** |
 
-Exercícios findos em 31 de dezembro de 2020 e 2019
+**26 Outras Receitas (Despesas) operacionais**
 
-(Valores expressos em reais, exceto quando indicado de outra forma)
-
-Despesas comerciais
-
-Marketing
-Mídia
-
-Despesas comerciais
-
-Despesas gerais e administrativas
-
-Conselhos
-
-Assessoria Jurídica
-Gabinete Presidência
-Assessoria Qualidade
-Ouvidoria
-
-Negócios Estratégicos
-Administração
-
-Patrimônio
-
-Finanças
-
-Central Atendimento Sócios
-Museu
-
-Tecnologia da Informação
-Recursos Humanos
-
-Parque Gigante
-
-Relações Sociais
-
-Genoma Colorado
-
-FECI e Esportes Amadores
-Futebol Feminino
-
-Despesas gerais e administrativas
-
-Outras Receitas (Despesas) operacionais
-
-Perdas na alienação de bens
-Realização da Cessão por direito de exploração / arrendamento (nota 20)
-Receita com doações (a)
-
-Outras receitas (despesas) operacionais
-
-31/12/2020 31/12/2019
-(8.255.616) (7.398.785)
-(2.142.361) (2.245.074)
-(10.397.977) (9.643.859)
-31/12/2020 31/12/2019
-(367.346) (483.450)
-(3.426.118) (3.635.099)
-(1.305.688) (1.430.164)
-(365.031) (512.405)
-(292.635) (332.853)
-(3.181) (273)
-(18.700.738) (20.928.913)
-(24.782.535) (27.213.418)
-(2.370.681) (2.911.317)
-(1.481.242) (2.787.324)
-(639.886) (1.041.981)
-(4.080.218) (4.624.930)
-(1.286.153) (1.807.700)
-(2.746.732) (3.320.101)
-(2.167.787) (4.096.742)
-(138.973) (181.451)
-(945.438) (1.243.287)
-(4.011.324) (3.326.931)
-(69.111.706) (79.878.339)
-31/12/2020 31/12/2019
-(124.519) (57.736)
-19.538.629 19.538.629
-710.215 .
-
-20.124.325 EN
-A v
+| | 31/12/2020 | 31/12/2019 |
+|---|---|---|
+| Perdas na alienação de bens | (124.519) | (57.736) |
+| Realização da Cessão por direito de exploração / arrendamento (nota 20) | 19.538.629 | 19.538.629 |
+| Receita com doações (a) | 710.215 | - |
+| **Outras receitas (despesas) operacionais** | **20.124.325** | **19.480.893** |
 
 53
 

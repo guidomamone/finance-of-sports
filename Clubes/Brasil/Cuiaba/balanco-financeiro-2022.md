@@ -1,13 +1,13 @@
 --- pág. 1 ---
 
-CUIABA ESPORTE CLUBE - SOCIEDADE ANONIMA DE FUTEBOL  
+CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL  
 CNPJ: 04.847.144/0001-39  
 CUIABA – MATO GROSSO  
 BALANÇO PATRIMONIAL 31 DE DEZEMBRO DE 2022  
-Valores Expressos em Reais (R$)  
+Valores Expressos em Reais (R$)
 
 | ATIVO | Saldo em 31/12/2022 | Saldo em 31/12/2021 |
-| :--- | :--- | :--- |
+| :--- | :---: | :---: |
 | **CIRCULANTE** | **5.546.599** | **658.627** |
 | Disponibilidades | 3.429.558 | 635.007 |
 | Clientes | 403.812 | 0,00 |
@@ -19,7 +19,7 @@ Valores Expressos em Reais (R$)
 | **TOTAL DO ATIVO** | **30.292.342** | **12.324.454** |
 
 | PASSIVO | Saldo em 31/12/2022 | Saldo em 31/12/2021 |
-| :--- | :--- | :--- |
+| :--- | :---: | :---: |
 | **CIRCULANTE** | **5.521.763** | **13.132.316** |
 | Fornecedores | 2.870.999 | 660.915 |
 | Empréstimos e Financiamentos | 339.993 | 8.389.024 |
@@ -35,7 +35,7 @@ Valores Expressos em Reais (R$)
 | Lucro/(Prejuízo) Acumulados | 22.703.939 | (3.086.538) |
 | **TOTAL DO PASSIVO** | **30.292.342** | **12.324.454** |
 
-JONES BAMBINETTI:0291786987  
+JONES BAMBINETTI:90291786987  
 Assinado de forma digital por JONES BAMBINETTI:90291786987  
 Dados: 2023.03.16 16:45:31 -03'00'  
 JONES BAMBINETTI  
@@ -49,7 +49,7 @@ ALESSANDRO DRESCH
 Socio - Administrador  
 CPF: 955.344.821-68  
 
-### PARECER DO CONSELHO FISCAL
+**PARECER DO CONSELHO FISCAL**
 
 Os membros do Conselho Fiscal do CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL, no exercício de suas funções legais e estatutárias, examinaram o Balanço Patrimonial, Demonstração do Resultado do Exercício e respectivas Notas Explicativas, levantados em 31 de dezembro de 2022, correspondentes ao exercício findo naquela data, elaboradas sob a responsabilidade de sua administração. Compete ao Conselho Fiscal opinar sobre essas Demonstrações Contábeis. Com base nos exames efetuados, o Conselho Fiscal opina favoravelmente e APROVA sem ressalvas as demonstrações contábeis do referido período.
 
@@ -76,13 +76,13 @@ CPF: 603.997.910-00
 
 --- pág. 2 ---
 
-CUIABA ESPORTE CLUBE - SOCIEDADE ANONIMA DE FUTEBOL  
+CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL  
 CNPJ: 04.847.144/0001-39  
 DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2022  
-Valores Expressos em Reais (R$)  
+Valores Expressos em Reais (R$)
 
 | DEMONSTRAÇÃO DO RESULTADO | Saldo em 31/12/2022 | Saldo em 31/12/2021 |
-| :--- | :--- | :--- |
+| :--- | :---: | :---: |
 | **RECEITA OPERACIONAL BRUTA** | **133.342.794** | **70.187.121** |
 | **RECEITA FUTEBOL PROFISSIONAL** | **130.653.048** | **68.955.902** |
 | PATROCÍNIOS | 17.147.045 | 18.833.990 |
@@ -120,7 +120,7 @@ Valores Expressos em Reais (R$)
 | (-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL | - | - |
 | **LUCRO/(PREJUÍZO) LÍQUIDO DO EXERCÍCIO** | **25.790.477** | **(4.984.932)** |
 
-JONES BAMBINETTI:0291786987  
+JONES BAMBINETTI:90291786987  
 Assinado de forma digital por JONES BAMBINETTI:90291786987  
 Dados: 2023.03.16 16:45:51 -03'00'  
 JONES BAMBINETTI  

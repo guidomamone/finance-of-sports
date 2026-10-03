@@ -1682,43 +1682,43 @@ Generato automaticamente - Conforme alla tassonomia itcc-ci-2017-07-06
 
 --- pág. 42 ---
 
-# **Allegato "A" - TABELLA DELLE MOVIMENTAZIONI DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI AL 30 GIUGNO 2018**
+Allegato "A" - TABELLA DELLE MOVIMENTAZIONI DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI AL 30 GIUGNO 2018
 
-|  calciatori | Aggiornamento alla data del Data nascita | 30/06/2018 Età | Data ultimo contratto | provenienza |   | destinazione |   | valori inizio periodo 01/07/2017 |   |   | variazione valori di periodo |   | effetti economici di periodo |   |   |   |   |   | valori di fine periodo 30/06/2018  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |   |   |  data | società | data | società | lordo | f.do ammort. | netto | acquisiti | cessioni | ammortamenti | rilascio f.so | svakutazioni | minuvalenze | plusvalenze | lordo | f.do amm. | netto |   |
-|   |   |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | aumenti | diminuzioni | 11 | 12 | 13 | 14 (5+8) | 15 (6+10) | 16 (14-15-11)  |
-|  Baraye Yves Bertand | 22/06/92 | 26 | 30 giugno 2020 |  | Svinciolato |  |  | 95.000 | 23.750 | 71.250 | 30.000 | 0 | 33.750 | 0 | 0 |  |  | 125.000 | 57.500 | 67.500 |   |
-|  Barilla Antonino | 01/04/88 | 30 | 30 giugno 2020 |  | Svinciolato |  |  | 40.000 | 0 | 40.000 | 30.000 | 0 | 23.333 | 0 | 0 |  |  | 70.000 | 23.333 | 46.667 |   |
-|  Calaio Emanuele | 08/01/82 | 36 | 30 giugno 2019 | 05/08/16 | Spazia |  |  | 210.000 | 45.257 | 164.743 | 0 | 0 | 82.371 | 0 | 0 |  |  | 210.000 | 127.629 | 82.371 |   |
-|  Carriero Giuseppe | 04/09/97 | 21 | 30 giugno 2021 | 31/01/18 | Casertana |  |  | 0 | 0 | 0 | 195.000 | 0 | 23.780 | 0 | 0 |  |  | 195.000 | 23.780 | 171.220 |   |
-|  Caravolo Fabio | 05/03/87 | 31 | 30 giugno 2021 | 08/06/18 | Benevento |  |  | 0 | 0 | 0 | 1.900.000 | 0 | 0 | 0 | 0 |  |  | 1.900.000 | 0 | 1.900.000 |   |
-|  Deci Jacopo | 10/01/92 | 26 | 30 giugno 2021 | 08/06/18 | Napoli |  |  | 0 | 0 | 0 | 1.300.000 | 0 | 0 | 0 | 0 |  |  | 1.300.000 | 0 | 1.300.000 |   |
-|  Di Gaudio Antonio | 16/08/89 | 29 | 30 giugno 2020 | 26/07/17 | Carpi |  |  | 0 | 0 | 0 | 965.000 | 0 | 303.286 | 0 | 0 |  |  | 965.000 | 303.286 | 661.714 |   |
-|  Evacuo Felice | 23/08/82 | 36 | 30 giugno 2019 |  |  | 31/08/17 | Trapani | 130.000 | 65.000 | 65.000 | 0 | 130.000 | 0 | 10.833 | 75.833 |  |  | 0 | 0 | 0 |   |
-|  Frediani Marco | 13/03/94 | 24 | 30 giugno 2021 | 16/06/17 | Roma |  |  | 8.000 | 0 | 8.000 | 0 | 0 | 2.667 | 0 | 0 |  |  | 8.000 | 2.667 | 5.333 |   |
-|  Gagliolo Riccardo | 28/04/90 | 28 | 30 giugno 2020 | 08/06/18 | Carpi |  |  | 0 | 0 | 0 | 1.150.000 | 0 | 0 | 0 | 0 |  |  | 1.150.000 | 0 | 1.150.000 |   |
-|  Galupini Francesco | 17/10/93 | 25 | 30 giugno 2020 |  | Svinciolato |  |  | 0 | 0 | 0 | 37.000 | 0 | 12.333 | 0 | 0 |  |  | 37.000 | 12.333 | 24.667 |   |
-|  Gazola Marcello | 03/04/85 | 33 | 30 giugno 2020 | 17/01/18 | Sassuolo |  |  | 0 | 0 | 0 | 20.000 | 0 | 3.226 | 0 | 0 |  |  | 20.000 | 3.226 | 16.774 |   |
-|  Iacoponi Simone | 30/04/87 | 31 | 30 giugno 2022 | 31/01/17 | Virtus Ertella |  |  | 70.000 | 10.880 | 59.120 | 0 | 0 | 29.560 | 0 | 0 |  |  | 70.000 | 40.440 | 29.560 |   |
-|  Lescano Facundo | 18/08/90 | 22 | 30 giugno 2020 |  | Svinciolato |  |  | 0 | 0 | 0 | 24.000 | 0 | 8.000 | 0 | 0 |  |  | 24.000 | 8.000 | 16.000 |   |
-|  Longo Sebastiano | 05/01/98 | 20 | 30 giugno 2021 |  | Svinciolato |  |  | 0 | 0 | 0 | 20.000 | 0 | 4.681 | 0 | 0 |  |  | 20.000 | 4.681 | 15.319 |   |
-|  Mastaj Davide | 30/04/98 | 20 | 30 giugno 2020 | 29/08/17 | Colomo |  |  | 0 | 0 | 0 | 40.000 | 0 | 11.765 | 0 | 0 |  |  | 40.000 | 11.765 | 28.235 |   |
-|  Mazzocchi Pasquale | 27/07/95 | 23 | 30 giugno 2019 |  | Svinciolato |  |  | 0 | 0 | 0 | 32.000 | 0 | 8.000 | 0 | 0 |  |  | 32.000 | 8.000 | 24.000 |   |
-|  Nocciolini Manuel | 18/05/89 | 29 | 30 giugno 2021 |  | Svinciolato |  |  | 7.000 | 7.000 | 0 | 60.000 | 0 | 20.000 | 0 | 0 |  |  | 67.000 | 27.000 | 40.000 |   |
-|  Pinto Giovanni | 19/09/91 | 27 | 30 giugno 2020 |  | Svinciolato |  |  | 10.000 | 0 | 10.000 | 10.000 | 0 | 6.286 | 0 | 0 |  |  | 20.000 | 6.286 | 13.714 |   |
-|  Ramos Juan Manuel | 01/09/96 | 22 | 30 giugno 2020 |  | Svinciolato |  |  | 0 | 0 | 0 | 45.000 | 0 | 15.000 | 0 | 0 |  |  | 45.000 | 15.000 | 30.000 |   |
-|  Ricci Giacomo | 02/09/96 | 22 | 30 giugno 2022 |  | Svinciolato |  |  | 0 | 0 | 0 | 23.000 | 0 | 11.500 | 0 | 0 |  |  | 23.000 | 11.500 | 11.500 |   |
-|  Saporetti Lorenzo | 19/03/96 | 22 | 30 giugno 2020 |  | Svinciolato |  |  | 0 | 0 | 0 | 13.300 | 0 | 4.433 | 0 | 0 |  |  | 13.300 | 4.433 | 8.867 |   |
-|  Scaglia Luigi Alberto | 23/11/86 | 32 | 30 giugno 2020 | 31/01/17 | Latina |  |  | 400.000 | 42.832 | 357.168 | 0 | 0 | 119.056 | 0 | 0 |  |  | 400.000 | 161.888 | 238.112 |   |
-|  Scavone Manuel | 03/09/87 | 31 | 30 giugno 2020 | 11/07/16 | Pro Vercelli |  |  | 150.000 | 42.222 | 107.776 | 0 | 0 | 53.889 | 0 | 0 |  |  | 150.000 | 96.111 | 53.889 |   |
-|  Scozzarella Matteo | 05/06/88 | 30 | 30 giugno 2020 | 10/01/17 | Trapani |  |  | 280.000 | 34.286 | 245.714 | 0 | 0 | 81.805 | 0 | 0 |  |  | 280.000 | 116.190 | 163.810 |   |
-|  Silingardi Luca | 26/01/88 | 30 | 30 giugno 2022 | 17/07/17 | Hellas Verona |  |  | 0 | 0 | 0 | 551.000 | 0 | 128.957 | 0 | 0 |  |  | 551.000 | 128.957 | 422.043 |   |
-|  Simonetti Lorenzo | 28/08/96 | 22 | 30 giugno 2022 |  | Svinciolato |  |  | 0 | 0 | 0 | 19.825 | 0 | 9.913 | 0 | 0 |  |  | 19.825 | 9.913 | 9.913 |   |
-|  Vacca Antonio Junior | 13/05/90 | 28 | 30 giugno 2020 | 11/01/18 | Foggia |  |  | 0 | 0 | 0 | 112.000 | 0 | 18.667 | 0 | 0 |  |  | 112.000 | 18.667 | 93.333 |   |
-|  Da Cruz Alessio | 18/01/97 | 21 | 30 giugno 2022 | 09/01/18 | Novara |  |  | 0 | 0 | 0 | 3.480.000 | 5.000 | 386.111 | 0 | 0 |  |  | 3.475.000 | 386.111 | 3.088.889 |   |
-|  Glocatori settore Giovanile |  |  |  |  |  |  |  | 9.000 | 1.800 | 7.200 | 159.000 | 0 | 33.600 | 0 | 0 |  |  | 168.000 | 35.400 | 132.600 |   |
-|  **TOTALI** |   |   |   |   |   |   |   |   | **1.489.000** | **273.027** | **1.135.973** | **10.218.125** | **135.000** | **1.436.069** | **10.833** | **75.833** |  | **11.498.125** | **1.644.096** | **9.846.029** |   |
+Nota: las columnas están numeradas en el original: 1 y 2 (provenienza), 3 y 4 (destinazione), 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (5+8), 15 (6+10), 16 (14-15-11). "aumenti" y "diminuzioni" son subcolumnas de "rilascio f.so" y no tienen número propio.
+
+| calciatori | Aggiornamento alla data del: Data nascita | 30/06/2018 Età | Data ultimo contratto | Provenienza data (1) | Provenienza società (2) | Destinazione data (3) | Destinazione società (4) | Valori inizio periodo 01/07/2017 lordo (5) | f.do ammort. (6) | netto (7) | Variazione valori di periodo acquisti (8) | cessioni (9) | Effetti economici di periodo ammortamenti (10) | rilascio f.so aumenti | rilascio f.so diminuzioni | svalutazioni (11) | minusvalenze (12) | plusvalenze (13) | Valori di fine periodo 30/06/2018 lordo 14 (5+8) | f.do amm. 15 (6+10) | netto 16 (14-15-11) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Baraye Yves Bertand | 22/06/92 | 26 | 30 giugno 2020 | | Svincolato | | | 95.000 | 23.750 | 71.250 | 30.000 | 0 | 33.750 | 0 | 0 | | | | 125.000 | 57.500 | 67.500 |
+| Barillà Antonino | 01/04/88 | 30 | 30 giugno 2020 | | Svincolato | | | 40.000 | 0 | 40.000 | 30.000 | 0 | 23.333 | 0 | 0 | | | | 70.000 | 23.333 | 46.667 |
+| Calaio' Emanuele | 08/01/82 | 36 | 30 giugno 2019 | 05/08/16 | Spezia | | | 210.000 | 45.257 | 164.743 | 0 | 0 | 82.371 | 0 | 0 | | | | 210.000 | 127.629 | 82.371 |
+| Carriero Giuseppe | 04/09/97 | 21 | 30 giugno 2021 | 31/01/18 | Casertana | | | 0 | 0 | 0 | 195.000 | 0 | 23.780 | 0 | 0 | | | | 195.000 | 23.780 | 171.220 |
+| Ceravolo Fabio | 05/03/87 | 31 | 30 giugno 2021 | 08/06/18 | Benevento | | | 0 | 0 | 0 | 1.900.000 | 0 | 0 | 0 | 0 | | | | 1.900.000 | 0 | 1.900.000 |
+| Dezi Jacopo | 10/01/92 | 26 | 30 giugno 2021 | 08/06/18 | Napoli | | | 0 | 0 | 0 | 1.300.000 | 0 | 0 | 0 | 0 | | | | 1.300.000 | 0 | 1.300.000 |
+| Di Gaudio Antonio | 16/08/89 | 29 | 30 giugno 2020 | 26/07/17 | Carpi | | | 0 | 0 | 0 | 965.000 | 0 | 303.286 | 0 | 0 | | | | 965.000 | 303.286 | 661.714 |
+| Evacuo Felice | 23/08/82 | 36 | 30 giugno 2019 | | | 31/08/17 | Trapani | 130.000 | 65.000 | 65.000 | 0 | 130.000 | 0 | 10.833 | 75.833 | | | | 0 | 0 | 0 |
+| Frediani Marco | 13/03/94 | 24 | 30 giugno 2021 | 16/06/17 | Roma | | | 8.000 | 0 | 8.000 | 0 | 0 | 2.667 | 0 | 0 | | | | 8.000 | 2.667 | 5.333 |
+| Gagliolo Riccardo | 28/04/90 | 28 | 30 giugno 2020 | 08/06/18 | Carpi | | | 0 | 0 | 0 | 1.150.000 | 0 | 0 | 0 | 0 | | | | 1.150.000 | 0 | 1.150.000 |
+| Galuppini Francesco | 17/10/93 | 25 | 30 giugno 2020 | | Svincolato | | | 0 | 0 | 0 | 37.000 | 0 | 12.333 | 0 | 0 | | | | 37.000 | 12.333 | 24.667 |
+| Gazzola Marcello | 03/04/85 | 33 | 30 giugno 2020 | 17/01/18 | Sassuolo | | | 0 | 0 | 0 | 20.000 | 0 | 3.226 | 0 | 0 | | | | 20.000 | 3.226 | 16.774 |
+| Iacoponi Simone | 30/04/87 | 31 | 30 giugno 2022 | 31/01/17 | Virtus Entella | | | 70.000 | 10.880 | 59.120 | 0 | 0 | 29.560 | 0 | 0 | | | | 70.000 | 40.440 | 29.560 |
+| Lescano Facundo | 18/08/96 | 22 | 30 giugno 2020 | | Svincolato | | | 0 | 0 | 0 | 24.000 | 0 | 8.000 | 0 | 0 | | | | 24.000 | 8.000 | 16.000 |
+| Longo Sebastiano | 05/01/98 | 20 | 30 giugno 2021 | | Svincolato | | | 0 | 0 | 0 | 20.000 | 0 | 4.681 | 0 | 0 | | | | 20.000 | 4.681 | 15.319 |
+| Mastaj Davide | 30/04/98 | 20 | 30 giugno 2020 | 29/08/17 | Colorno | | | 0 | 0 | 0 | 40.000 | 0 | 11.765 | 0 | 0 | | | | 40.000 | 11.765 | 28.235 |
+| Mazzocchi Pasquale | 27/07/95 | 23 | 30 giugno 2019 | | Svincolato | | | 0 | 0 | 0 | 32.000 | 0 | 8.000 | 0 | 0 | | | | 32.000 | 8.000 | 24.000 |
+| Nocciolini Manuel | 18/05/89 | 29 | 30 giugno 2021 | | Svincolato | | | 7.000 | 7.000 | 0 | 60.000 | 0 | 20.000 | 0 | 0 | | | | 67.000 | 27.000 | 40.000 |
+| Pinto Giovanni | 19/09/91 | 27 | 30 giugno 2020 | | Svincolato | | | 10.000 | 0 | 10.000 | 10.000 | 0 | 6.286 | 0 | 0 | | | | 20.000 | 6.286 | 13.714 |
+| Ramos Juan Manuel | 01/09/96 | 22 | 30 giugno 2020 | | Svincolato | | | 0 | 0 | 0 | 45.000 | 0 | 15.000 | 0 | 0 | | | | 45.000 | 15.000 | 30.000 |
+| Ricci Giacomo | 02/09/96 | 22 | 30 giugno 2022 | | Svincolato | | | 0 | 0 | 0 | 23.000 | 0 | 11.500 | 0 | 0 | | | | 23.000 | 11.500 | 11.500 |
+| Saporetti Lorenzo | 19/03/96 | 22 | 30 giugno 2020 | | Svincolato | | | 0 | 0 | 0 | 13.300 | 0 | 4.433 | 0 | 0 | | | | 13.300 | 4.433 | 8.867 |
+| Scaglia Luigi Alberto | 23/11/86 | 32 | 30 giugno 2020 | 31/01/17 | Latina | | | 400.000 | 42.832 | 357.168 | 0 | 0 | 119.056 | 0 | 0 | | | | 400.000 | 161.888 | 238.112 |
+| Scavone Manuel | 03/09/87 | 31 | 30 giugno 2020 | 11/07/16 | Pro Vercelli | | | 150.000 | 42.222 | 107.778 | 0 | 0 | 53.889 | 0 | 0 | | | | 150.000 | 96.111 | 53.889 |
+| Scozzarella Matteo | 05/06/88 | 30 | 30 giugno 2020 | 10/01/17 | Trapani | | | 280.000 | 34.286 | 245.714 | 0 | 0 | 81.905 | 0 | 0 | | | | 280.000 | 116.190 | 163.810 |
+| Silingardi Luca | 26/01/88 | 30 | 30 giugno 2022 | 17/07/17 | Hellas Verona | | | 0 | 0 | 0 | 551.000 | 0 | 128.957 | 0 | 0 | | | | 551.000 | 128.957 | 422.043 |
+| Simonetti Lorenzo | 28/08/96 | 22 | 30 giugno 2022 | | Svincolato | | | 0 | 0 | 0 | 19.825 | 0 | 9.913 | 0 | 0 | | | | 19.825 | 9.913 | 9.913 |
+| Vacca Antonio Junior | 13/05/90 | 28 | 30 giugno 2020 | 11/01/18 | Foggia | | | 0 | 0 | 0 | 112.000 | 0 | 18.667 | 0 | 0 | | | | 112.000 | 18.667 | 93.333 |
+| Da Cruz Alessio | 18/01/97 | 21 | 30 giugno 2022 | 09/01/18 | Novara | | | 0 | 0 | 0 | 3.480.000 | 5.000 | 386.111 | 0 | 0 | | | | 3.475.000 | 386.111 | 3.088.889 |
+| Giocatori settore Giovanile | | | | | | | | 9.000 | 1.800 | 7.200 | 159.000 | 0 | 33.600 | 0 | 0 | | | | 168.000 | 35.400 | 132.600 |
+| **TOTALI** | | | | | | | | 1.409.000 | 273.027 | 1.135.973 | 10.216.125 | 135.000 | 1.436.069 | 10.833 | 75.833 | | | | 11.490.125 | 1.644.096 | 9.846.029 |
 
 --- pág. 43 ---
 
@@ -1977,51 +1977,50 @@ Socio
 
 APPENDICE PER MANUALE LICENZA UEFA (*)
 
-# Appendice VII - Tabella di movimentazione dei 00/00 pluriennali alle prestazioni dei giocatori
+Appendice VII - Tabella di movimentazione dei diritti pluriennali alle prestazioni dei giocatori
 
-|  Ciclosione | Aggiornamento alla data del Data resecto | 15/03/2010 Età | Contratto |   | Provenienza |   | Destinazione |   | Vatore inizio periodo: 01/07/2018 |   |   | Variazioni valori di periodo |   | Effetti economici dal periodo |   |   |   |   | Vatore di fine periodo |   |   | Varie  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |   |  Data Acquirir | Data Fine | Data Acquirir | Società | Delle Censione | Società | Costo storico | Fondo anniversario | Netto | Acquisti | Cessioni | F.do anniversario utilizzo | Anmont.it | Svalubzi | Minus | Plus | Costo storico (1+4) | F.do annv.to (2+6) | Netto (10-11-7) | Compenso Agenti | Altri costi acquisizione | Vatore sell on line  |
-|   |   |   |   |   |   |   |   |   |  1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |  |  |  |   |
-|  Bantye Viani Bertanti | 2206002 | 27 | 10/08/16 | 30/09/21 | 03/01/00 | Svincolato |  |  | 95.000 | 23.750 | 71.200 | 30.000 | 0 | 0 | 33.750 | 0 | 0 | 120.000 | 57.500 | 87.500 | 120.000 | 0 | 0  |   |
-|  Barilla Antonino | 0104000 | 31 | 10/07/17 | 30/09/20 | 03/01/00 | Svincolato |  |  | 40.000 | 0 | 40.000 | 30.000 | 0 | 0 | 23.333 | 0 | 0 | 70.000 | 23.333 | 46.667 | 70.000 | 0 | 0  |   |
-|  Catalini Emanuele | 0601002 | 37 | 08/08/16 | 30/09/19 | 09/08/16 | Recole |  |  | 210.000 | 49.257 | 184.743 | 0 | 0 | 0 | 82.371 | 0 | 0 | 210.000 | 127.629 | 82.371 | 0 | 0 | 0  |   |
-|  Carriano Giuseppe Maglio | 0405007 | 22 | 20/01/18 | 30/09/21 | 31/01/18 | Castellana |  |  | 0 | 0 | 0 | 180.000 | 0 | 0 | 23.780 | 0 | 0 | 180.000 | 23.780 | 177.222 | 0 | 180.000 | 0  |   |
-|  Comerzo Giovanni Pietro | 0503007 | 32 | 31/09/17 | 30/09/21 | 08/09/16 | Benevento |  |  | 0 | 0 | 0 | 1.560.000 | 0 | 0 | 0 | 0 | 0 | 1.560.000 | 0 | 1.560.000 | 0 | 300.000 | 0  |   |
-|  Deci Jacopo | 1001002 | 27 | 25/07/17 | 30/09/21 | 08/09/16 | Napoli |  |  | 0 | 0 | 0 | 1.300.000 | 0 | 0 | 0 | 0 | 0 | 1.300.000 | 0 | 1.300.000 | 0 | 0 | 0  |   |
-|  Di Claudio Antonio | 1600000 | 30 | 27/07/17 | 30/09/20 | 28/07/17 | Carpi |  |  | 0 | 0 | 0 | 960.000 | 0 | 0 | 303.286 | 0 | 0 | 960.000 | 303.286 | 661.714 | 10.000 | 300.000 | 0  |   |
-|  Franco Pietro | 2300002 | 27 | 11/07/18 | 30/09/19 | 10/07/18 | Novara | 31/09/17 | Trapani | 130.000 | 65.000 | 65.000 | 0 | 130.000 | 75.833 | 10.833 | 0 | 54.167 | 0 | 0 | 0 | 0 | 130.000 | 0  |   |
-|  Pradiani Marco | 1302004 | 25 | 01/07/17 | 30/09/21 | 18/09/17 | Roma |  |  | 8.000 | 0 | 8.000 | 0 | 0 | 0 | 2.667 | 0 | 0 | 8.000 | 2.667 | 5.333 | 8.000 | 0 | 0  |   |
-|  Gagliolo Riccardo | 2004000 | 28 | 31/07/17 | 30/09/20 | 08/09/16 | Carpi |  |  | 0 | 0 | 0 | 1.150.000 | 0 | 0 | 0 | 0 | 0 | 1.150.000 | 0 | 1.150.000 | 0 | 450.000 | 0  |   |
-|  Gelappini Francesco | 1512003 | 26 | 01/07/17 | 30/09/20 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 37.000 | 0 | 0 | 12.333 | 0 | 0 | 37.000 | 12.333 | 24.667 | 35.000 | 2.000 | 0  |   |
-|  Capozzi Marcello | 0300000 | 34 | 18/01/18 | 30/09/20 | 17/01/18 | Genesio |  |  | 0 | 0 | 0 | 20.000 | 0 | 0 | 3.226 | 0 | 0 | 20.000 | 3.226 | 16.774 | 20.000 | 0 | 0  |   |
-|  Iacquini Simone | 3004007 | 32 | 01/02/17 | 30/09/22 | 31/01/17 | Virtus Entella |  |  | 70.000 | 10.000 | 68.125 | 0 | 0 | 0 | 26.565 | 0 | 0 | 70.000 | 43.445 | 28.565 | 0 | 30.000 | 0  |   |
-|  Lezzano Facundo | 1600000 | 23 | 01/07/17 | 30/09/20 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 24.000 | 0 | 0 | 8.000 | 0 | 0 | 24.000 | 8.000 | 16.000 | 0 | 24.000 | 0  |   |
-|  Largo Sebastiano | 0301000 | 31 | 31/07/18 | 30/09/21 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 20.000 | 0 | 0 | 4.681 | 0 | 0 | 20.000 | 4.681 | 10.219 | 20.000 | 0 | 0  |   |
-|  Modale Davide | 3004000 | 31 | 31/07/17 | 30/09/20 | 29/09/17 | Cobono |  |  | 0 | 0 | 0 | 40.000 | 0 | 0 | 11.766 | 0 | 0 | 40.000 | 11.766 | 28.216 | 0 | 10.000 | 0  |   |
-|  Mazzocchi Pasquale | 2707000 | 24 | 08/07/16 | 30/09/21 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 32.000 | 0 | 0 | 8.000 | 0 | 0 | 32.000 | 8.000 | 24.000 | 32.000 | 0 | 0  |   |
-|  Renzolini Manuel | 1600000 | 30 | 11/07/16 | 30/09/21 | 09/01/00 | Svincolato |  |  | 7.000 | 7.000 | 0 | 60.000 | 0 | 0 | 20.000 | 0 | 0 | 67.000 | 27.000 | 40.000 | 67.000 | 0 | 0  |   |
-|  Rinto Giovanni | 1600001 | 28 | 28/07/17 | 30/09/20 | 09/01/00 | Svincolato |  |  | 10.000 | 0 | 10.000 | 10.000 | 0 | 0 | 6.266 | 0 | 0 | 20.000 | 6.266 | 13.714 | 20.000 | 0 | 0  |   |
-|  Ranieri Juan Manuel | 0105000 | 23 | 12/07/17 | 30/09/20 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 45.000 | 0 | 0 | 15.000 | 0 | 0 | 45.000 | 15.000 | 30.000 | 45.000 | 0 | 0  |   |
-|  Rico Giacomo | 0205000 | 23 | 08/07/16 | 30/09/22 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 23.000 | 0 | 0 | 11.000 | 0 | 0 | 23.000 | 11.000 | 11.000 | 0 | 23.000 | 0  |   |
-|  Stagnoli Lorenzo | 1600000 | 23 | 08/07/16 | 30/09/20 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 13.000 | 0 | 0 | 4.433 | 0 | 0 | 13.000 | 4.433 | 8.667 | 0 | 13.000 | 0  |   |
-|  Sciaglia Luigi Albero | 2311000 | 33 | 01/02/17 | 30/09/20 | 31/01/17 | Lebra |  |  | 400.000 | 42.833 | 357.166 | 0 | 0 | 0 | 119.556 | 0 | 0 | 400.000 | 181.666 | 259.112 | 0 | 0 | 0  |   |
-|  Scarolei Manuel | 0300007 | 32 | 11/07/16 | 30/09/20 | 11/07/16 | Pro Viarelli |  |  | 150.000 | 42.333 | 107.778 | 0 | 0 | 0 | 33.988 | 0 | 0 | 150.000 | 66.111 | 53.888 | 0 | 80.000 | 0  |   |
-|  Scomarello Matteo | 0500000 | 31 | 10/01/17 | 30/09/22 | 10/01/17 | Trapani |  |  | 280.000 | 54.266 | 246.714 | 0 | 0 | 0 | 81.565 | 0 | 0 | 280.000 | 118.156 | 163.810 | 0 | 0 | 0  |   |
-|  Stregioni Luca | 2601000 | 31 | 18/07/17 | 30/09/22 | 17/07/17 | Melba Verona |  |  | 0 | 0 | 0 | 561.000 | 0 | 0 | 126.997 | 0 | 0 | 561.000 | 126.997 | 422.043 | 0 | 100.000 | 0  |   |
-|  Simoneli Lorenzo | 2600000 | 23 | 08/07/16 | 30/09/22 | 09/01/00 | Svincolato |  |  | 0 | 0 | 0 | 19.625 | 0 | 0 | 9.912 | 0 | 0 | 19.625 | 9.912 | 9.912 | 0 | 19.625 | 0  |   |
-|  Volcari Antonio Junior | 1300000 | 28 | 12/01/18 | 30/09/20 | 11/01/18 | Foggia |  |  | 0 | 0 | 0 | 112.000 | 0 | 0 | 16.667 | 0 | 0 | 112.000 | 16.667 | 92.333 | 0 | 112.000 | 0  |   |
-|  Da Cruz Alessio | 1601007 | 22 | 10/01/18 | 30/09/22 | 09/01/18 | Novara |  |  | 0 | 0 | 0 | 3.480.000 | 5.000 | 0 | 366.111 | 0 | 0 | 3.479.000 | 366.111 | 3.088.688 | 179.000 | 500.000 | 0  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Occasori settore Giovanile |  |  |  |  |  |  |  |  | 9.000 | 1.800 | 7.200 | 109.000 | 0 | 0 | 33.600 | 0 | 0 | 169.000 | 35.400 | 132.600 | 0 | 0 | 0  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  **TOTALE** |  |  |  |  |  |  |  |  | **1.409.000** | **273.027** | **1.135.973** | **10.216.125** | **139.000** | **75.833** | **1.446.562** | **0** | **54.167** | **11.495.125** | **1.644.896** | **9.646.629** | **627.000** | **2.495.125** | **0**  |   |
+Nota: las columnas están numeradas en el original: 1, 2, 3 (valore inizio periodo), 4, 5 (variazioni), 6 (F.do ammortamento utilizzo), 7, 8, 9 (effetti economici), 10 (Costo storico 1+4), 11 (F.do amm.to 2+6), 12 (Netto 10-11-7). Las columnas "Compenso Agenti", "Altri costi acquisizione" y "Valore sell on fee" (Varie) no llevan número.
 
-Compenso Agenti/Homestieri
+Aggiornamento alla data del: 15/03/2019
 
-I costi sostenuti per gli agenti netta s.c. 2017/18 sono stati pari a Euro 1,1 milioni. Inoltre si è proceduto alla capitalizzazione di Euro 500 mila
+| Calciatore | Data nascita | Età | Contratto Data Inizio | Contratto Data Fine | Provenienza Data Acquisto | Provenienza Società | Destinazione Data Cessione | Destinazione Società | Valore inizio periodo 01/07/2018: Costo storico (1) | Fondo ammortamento (2) | Netto (3) | Variazioni valori di periodo: Acquisti (4) | Cessioni (5) | F.do ammortamento utilizzo | Effetti economici: Ammort.ti (6) | Svalutaz. (7) | Minus. (8) | Plus. (9) | Valore di fine periodo: Costo storico (1+4) (10) | F.do amm.to (2+6) (11) | Netto (10-11-7) (12) | Varie: Compenso Agenti | Altri costi acquisizione | Valore sell on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Baraye Yves Bertand | 22/06/92 | 27 | 10/08/16 | 30/06/21 | 00/01/00 | Svincolato | | | 95.000 | 23.750 | 71.250 | 30.000 | 0 | 0 | 33.750 | 0 | 0 | 0 | 125.000 | 57.500 | 67.500 | 125.000 | 0 | 0 |
+| Barillà Antonino | 01/04/88 | 31 | 10/07/17 | 30/06/20 | 00/01/00 | Svincolato | | | 40.000 | 0 | 40.000 | 30.000 | 0 | 0 | 23.333 | 0 | 0 | 0 | 70.000 | 23.333 | 46.667 | 70.000 | 0 | 0 |
+| Calaio' Emanuele | 08/01/82 | 37 | 08/08/16 | 30/06/19 | 05/08/16 | Spezia | | | 210.000 | 45.257 | 164.743 | 0 | 0 | 0 | 82.371 | 0 | 0 | 0 | 210.000 | 127.629 | 82.371 | 0 | 0 | 0 |
+| Carriero Giuseppe Mattia | 04/09/97 | 22 | 30/01/18 | 30/06/21 | 31/01/18 | Casertana | | | 0 | 0 | 0 | 195.000 | 0 | 0 | 23.780 | 0 | 0 | 0 | 195.000 | 23.780 | 171.220 | 0 | 165.000 | 0 |
+| Ceravolo Giovanni Fabio | 05/03/87 | 32 | 31/08/17 | 30/06/21 | 08/06/18 | Benevento | | | 0 | 0 | 0 | 1.900.000 | 0 | 0 | 0 | 0 | 0 | 0 | 1.900.000 | 0 | 1.900.000 | 0 | 300.000 | 0 |
+| Dezi Jacopo | 10/01/92 | 27 | 25/07/17 | 30/06/21 | 08/06/18 | Napoli | | | 0 | 0 | 0 | 1.300.000 | 0 | 0 | 0 | 0 | 0 | 0 | 1.300.000 | 0 | 1.300.000 | 0 | 0 | 0 |
+| Di Gaudio Antonio | 16/08/89 | 30 | 27/07/17 | 30/06/20 | 26/07/17 | Carpi | | | 0 | 0 | 0 | 965.000 | 0 | 0 | 303.286 | 0 | 0 | 0 | 965.000 | 303.286 | 661.714 | 10.000 | 500.000 | 0 |
+| Evacuo Felice | 23/08/82 | 37 | 11/07/16 | 30/06/18 | 10/07/16 | Novara | 31/08/17 | Trapani | 130.000 | 65.000 | 65.000 | 0 | 130.000 | 75.833 | 10.833 | 0 | 54.167 | 0 | 0 | 0 | 0 | 0 | 130.000 | 0 |
+| Frediani Marco | 13/03/94 | 25 | 01/07/17 | 30/06/21 | 16/06/17 | Roma | | | 8.000 | 0 | 8.000 | 0 | 0 | 0 | 2.667 | 0 | 0 | 0 | 8.000 | 2.667 | 5.333 | 8.000 | 0 | 0 |
+| Gagliolo Riccardo | 28/04/90 | 29 | 31/07/17 | 30/06/20 | 08/06/18 | Carpi | | | 0 | 0 | 0 | 1.150.000 | 0 | 0 | 0 | 0 | 0 | 0 | 1.150.000 | 0 | 1.150.000 | 0 | 450.000 | 0 |
+| Galuppini Francesco | 17/10/93 | 26 | 01/07/17 | 30/06/20 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 37.000 | 0 | 0 | 12.333 | 0 | 0 | 0 | 37.000 | 12.333 | 24.667 | 35.000 | 2.000 | 0 |
+| Gazzola Marcello | 03/04/85 | 34 | 18/01/18 | 30/06/20 | 17/01/18 | Sassuolo | | | 0 | 0 | 0 | 20.000 | 0 | 0 | 3.226 | 0 | 0 | 0 | 20.000 | 3.226 | 16.774 | 20.000 | 0 | 0 |
+| Iacoponi Simone | 30/04/87 | 32 | 01/02/17 | 30/06/22 | 31/01/17 | Virtus Entella | | | 70.000 | 10.880 | 59.120 | 0 | 0 | 0 | 29.560 | 0 | 0 | 0 | 70.000 | 40.440 | 29.560 | 0 | 30.000 | 0 |
+| Lescano Facundo | 18/08/96 | 23 | 01/07/17 | 30/06/20 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 24.000 | 0 | 0 | 8.000 | 0 | 0 | 0 | 24.000 | 8.000 | 16.000 | 0 | 24.000 | 0 |
+| Longo Sebastiano | 05/01/98 | 21 | 31/07/18 | 30/06/21 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 20.000 | 0 | 0 | 4.681 | 0 | 0 | 0 | 20.000 | 4.681 | 15.319 | 20.000 | 0 | 0 |
+| Mastaj Davide | 30/04/98 | 21 | 31/07/17 | 30/06/20 | 29/08/17 | Colorno | | | 0 | 0 | 0 | 40.000 | 0 | 0 | 11.765 | 0 | 0 | 0 | 40.000 | 11.765 | 28.235 | 0 | 10.000 | 0 |
+| Mazzocchi Pasquale | 27/07/95 | 24 | 06/07/16 | 30/06/21 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 32.000 | 0 | 0 | 8.000 | 0 | 0 | 0 | 32.000 | 8.000 | 24.000 | 32.000 | 0 | 0 |
+| Nocciolini Manuel | 18/05/89 | 30 | 11/07/16 | 30/06/21 | 00/01/00 | Svincolato | | | 7.000 | 7.000 | 0 | 60.000 | 0 | 0 | 20.000 | 0 | 0 | 0 | 67.000 | 27.000 | 40.000 | 67.000 | 0 | 0 |
+| Pinto Giovanni | 19/09/91 | 28 | 26/07/17 | 30/06/20 | 00/01/00 | Svincolato | | | 10.000 | 0 | 10.000 | 10.000 | 0 | 0 | 6.286 | 0 | 0 | 0 | 20.000 | 6.286 | 13.714 | 20.000 | 0 | 0 |
+| Ramos Juan Manuel | 01/09/96 | 23 | 12/07/17 | 30/06/20 | 00/01/00 | Svuincolato | | | 0 | 0 | 0 | 45.000 | 0 | 0 | 15.000 | 0 | 0 | 0 | 45.000 | 15.000 | 30.000 | 45.000 | 0 | 0 |
+| Ricci Giacomo | 02/09/96 | 23 | 06/07/16 | 30/06/22 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 23.000 | 0 | 0 | 11.500 | 0 | 0 | 0 | 23.000 | 11.500 | 11.500 | 0 | 23.000 | 0 |
+| Saporetti Lorenzo | 19/03/96 | 23 | 06/07/16 | 30/06/20 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 13.300 | 0 | 0 | 4.433 | 0 | 0 | 0 | 13.300 | 4.433 | 8.867 | 0 | 13.300 | 0 |
+| Scaglia Luigi Albero | 23/11/86 | 33 | 01/02/17 | 30/06/20 | 31/01/17 | Latina | | | 400.000 | 42.832 | 357.168 | 0 | 0 | 0 | 119.056 | 0 | 0 | 0 | 400.000 | 161.888 | 238.112 | 0 | 0 | 0 |
+| Scavone Manuel | 03/09/87 | 32 | 11/07/16 | 30/06/20 | 11/07/16 | Pro Vercelli | | | 150.000 | 42.222 | 107.778 | 0 | 0 | 0 | 53.889 | 0 | 0 | 0 | 150.000 | 96.111 | 53.889 | 0 | 80.000 | 0 |
+| Scozzarella Matteo | 05/06/88 | 31 | 10/01/17 | 30/06/20 | 10/01/17 | Trapani | | | 280.000 | 34.286 | 245.714 | 0 | 0 | 0 | 81.905 | 0 | 0 | 0 | 280.000 | 116.190 | 163.810 | 0 | 0 | 0 |
+| Silingardi Luca | 26/01/88 | 31 | 18/07/17 | 30/06/22 | 17/07/17 | Hellas Verona | | | 0 | 0 | 0 | 551.000 | 0 | 0 | 128.957 | 0 | 0 | 0 | 551.000 | 128.957 | 422.043 | 0 | 100.000 | 0 |
+| Simonetti Lorenzo | 28/08/96 | 23 | 06/07/16 | 30/06/22 | 00/01/00 | Svincolato | | | 0 | 0 | 0 | 19.825 | 0 | 0 | 9.913 | 0 | 0 | 0 | 19.825 | 9.913 | 9.913 | 0 | 19.825 | 0 |
+| Vacca Antonio Junior | 13/05/90 | 29 | 12/01/18 | 30/06/20 | 11/01/18 | Foggia | | | 0 | 0 | 0 | 112.000 | 0 | 0 | 18.667 | 0 | 0 | 0 | 112.000 | 18.667 | 93.333 | 0 | 112.000 | 0 |
+| Da Cruz Alessio | 18/01/97 | 22 | 10/01/18 | 30/06/22 | 09/01/18 | Novara | | | 0 | 0 | 0 | 3.480.000 | 5.000 | 0 | 386.111 | 0 | 0 | 0 | 3.475.000 | 386.111 | 3.088.889 | 175.000 | 500.000 | 0 |
+| Giocatori settore Giovanile | | | | | | | | | 9.000 | 1.800 | 7.200 | 159.000 | 0 | | 33.600 | 0 | 0 | | 168.000 | 35.400 | 132.600 | | | |
+| TOTALE | | | | | | | | | 1.409.000 | 273.027 | 1.135.973 | 10.216.125 | 135.000 | 75.833 | 1.446.902 | 0 | 54.167 | 0 | 11.490.125 | 1.644.096 | 9.846.029 | 627.000 | 2.459.125 | 0 |
 
-(*) La informazioni contenute nella colonna "Contratto" o "Varie" e il paragrafo "Compenso Agenti/Homestieri" integrano, si sono delle disposizioni del Manuale Licenza UEFA Edizione 2018, le informazioni incluse nel bilancio disservizio.
+Compensi Agenti/Intermediari
+I costi sostenuti per gli agenti nella s.s. 2017/18 sono stati pari a Euro 1,1 milioni. Inoltre si è proceduto alla capitalizzazione di Euro 589 mila.
+
+(*) Le informazioni contenute nelle colonne "Contratto" e "Varie" e il paragrafo "Compensi Agenti/Intermediari" integrano, ai sensi delle disposizioni del Manuale Licenze UEFA Edizione 2018, le informazioni incluse nel bilancio d'esercizio.
 
 --- pág. 51 ---
 

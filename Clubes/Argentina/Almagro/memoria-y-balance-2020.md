@@ -742,52 +742,51 @@ NOTAS A LOS ESTADOS CONTABLES AL 31/10/2020
 inventario 2020
 
 CLUB ALMAGRO ASOCIACIÓN CIVIL
-CUIT: 33-53158200-9
-Domicilio Legal: Medrano 522 - CABA
+CUIT: 33-53156200-9
+Domicilio Legal: Medrano 522- CABA
 Fecha de autorización acordado por el Poder Ejecutivo: 6 de Enero de 1911
 BALANCE GENERAL al 31 de Octubre 2020
 
 Comparativo con el ejercicio anterior
-(Cifras en pesos expresados en moneda homogénea)
+(Cifras en pesos expresados en moneda Homogénea)
 
 INVENTARIO GENERAL (en pesos constantes de fecha de cierre)
 
-ACTIVO
-
-año 2020
+ACTIVO | año 2020
 
 Activo Corriente
 
 Disponibilidades
 
-|  Caja | 157385.00  |
-| --- | --- |
-|  Banco Provincia Cta Cte S - CUIT 33-999242210-9 | 0.00  |
-|  Banco Provincia C.A US$ - CUIT: 33-999242210-9 | 0.00  |
-|  Banco BBVA Cta Cte S - CUIT: 30-50000319-3 | 2274051.63  |
-|  Banco Credicoop Cta Ltda - CUIT: 30-57142135-2 | 13701.15 2445137.78  |
+| Concepto | Importe | Subtotal |
+|---|---|---|
+| Caja | 157385.00 | |
+| Banco Provincia Cta Cte $ - CUIT 33-999242210-9 | 0.00 | |
+| Banco Provincia C.A U$$- CUIT: 33-999242210-9 | 0.00 | |
+| Banco BBVVA Cta Cte $ CUIT; 30-50000319-3 | 2274051.63 | |
+| Banco Credicoop Cia. Ltda – CUIT :30-57142135-2 | 13701.15 | 2445137.78 |
 
 Créditos
 
-Daudores Varios
+Deudores Varios
 
-|  Asociación Fútbol Argentino CUIT 30-52745070-1 | 1950988.32  |
-| --- | --- |
-|  Banco de la Provincia de Buenos Aires CUIT: 33-99924210-9 | 146045.00 2097033.32  |
+| Concepto | Importe | Subtotal |
+|---|---|---|
+| Asociación Fútbol Argentino CUIT 30-52745070-1- | 1950988.32 | |
+| Banco de la Provincia de Buenos Aires CUIT:33-99924210-9 | 146045.00 | 2097033.32 |
 
 Créditos Fiscales
 
-|  Iva Saldo a Favor | 3464124.62  |
-| --- | --- |
-|  IBB Saldo a Favor CF | 132970.56  |
-|  IBB Saldo a Favor BS AS | 279959.28  |
-|  Retenciones de Ganancias- | 1328531.55  |
-|  Saldo a Favor Ganancias | 865199.94  |
-|  Imp. Ley 25413 s/ credito | 437021.27 6507807.22  |
+| Concepto | Importe | Subtotal |
+|---|---|---|
+| Iva Saldo a Favor | 3464124.62 | |
+| IIBB Saldo a Favor CF | 132970.56 | |
+| IIBB Saldo a Favor BS AS | 279959.28 | |
+| Retenciones de Ganancias- | 1328531.55 | |
+| Saldo a Favor Ganancias | 865199.94 | |
+| Imp. Ley 25413 s/ credito | 437021.27 | 6507807.22 |
 
-Total del Activo corriente
-
-11049978.32
+Total del Activo corriente | 11049978.32
 
 Activo no corriente
 
@@ -795,65 +794,64 @@ Bienes de uso
 
 Inmueble
 
-|  Terreno : Calle Marcelo 7 Alvear 2223 Jose Ingenieros CP 1702 Pcia Buenos Aires |   |
-| --- | --- |
-|  Nomenclatura Catastral/Circ:4, Secc y Mza 0, Fracc 23, Parcela:4A | 4663312.00  |
-|  Inmueble Calle Marcelo 7 Alvear 2223 Jose Ingenieros CP 1702 Pcia Buenos Aires |   |
-|  Nomenclatura Catastral/Circ:4, Secc y Mza 0, Fracc 23, Parcela:4A | 1451083.55  |
-|  Terreno : Calle Medrano 522 CABA CP 1179 |   |
-|  Nomenclatura Catastral/Circ:7, Secc 17, Mza 8, Parcela: 11 | 1223709.00  |
-|  Inmueble Calle Medrano 522 CABA CP 1179 |   |
-|  Nomenclatura Catastral/Circ:7, Secc 17, Mza 8, Parcela: 11 | 1965754.48  |
-|   | 9303859.03  |
-|  Amort.Acum Inmueble | -1149952.07  |
-|   | 8153906.96  |
+| Concepto | Importe |
+|---|---|
+| Terreno : Calle Marcelo T Alvear 2223 Jose Ingenieros CP 1702 Pcia Buenos Aires — Nomenclatura CastastralCirc:4, Secc y Mza 0, Fracc 23, Parcela:4A | 4663312.00 |
+| Inmueble Calle Marcelo T Alvear 2223 Jose Ingenieros CP 1702 Pcia Buenos Aires — Nomenclatura Catastral:Circ:4, Secc y Mza 0, Fracc 23, Parcela:4A | 1451083.55 |
+| Terreno : Calle Medrano 522 CABA CP 1179 — Nomenclatura Catastral:Circ:7, Secc 17, Mza 8, Parcela: 11 | 1223709.00 |
+| Inmueble Calle Medrano 522 CABA CP 1179 — Nomenclatura Catastral:Circ:7, Secc 17, Mza 8, Parcela: 11 | 1965754.48 |
+| | 9303859.03 |
+| Amort.Acum Inmueble | -1149952.07 |
+| | 8153906.96 |
 
 M y Utiles
 
-|  Sembradoras Esparcidor De Semillas Y Fertilizantes | 21540.00  |
-| --- | --- |
-|  Arenadora | 12290.00  |
-|  Herramientas varias | 13710.72  |
-|  LED TV 43 LG LH 5700 | 11282.03  |
-|   | 58822.75  |
-
-Amort.Acum.M y Utiles
-
--52053.52
-6769.23
+| Concepto | Importe |
+|---|---|
+| Sembradoras Esparcidor De Semillas Y Fertilizantes | 21540.00 |
+| Arenadora | 12290.00 |
+| Heramientas varias | 13710.72 |
+| LED TV 43¨ LG LH 5700 | 11282.03 |
+| | 58822.75 |
+| Amort.Acum.M y Utiles | -52053.52 |
+| | 6769.23 |
 
 Rodados
 
-|  Minitractor Pasto Husqvarna Lt1107 15 Hp | 8223.62  |
-| --- | --- |
-|  Minitractor Husqvarna LT1597 | 80090.50  |
-|  Tractor | 281162.27  |
-|   | 369476.39  |
-|  Amor.Acum Rodados | -144636.57  |
-|   | 224839.82  |
+| Concepto | Importe |
+|---|---|
+| Minitractor Pasto Husqvarna Lt1107 15 Hp | 8223.62 |
+| Minitractor Husqvarna LT1597 | 80090.50 |
+| Tractor | 281162.27 |
+| | 369476.39 |
+| Amor.Acum Rodados | -144636.57 |
+| | 224839.82 |
 
 Maquinarias
 
-|  Barredora 42' de corte | 14876.03  |
-| --- | --- |
-|  Desmalezadora 52 cc Shikawa | 3528.51  |
-|   | 18404.54  |
-|  Amor.Acum Instalaciones | -17228.38  |
-|   | 1176.16  |
+| Concepto | Importe |
+|---|---|
+| Barredora 42¨ de corte | 14876.03 |
+| Desmalezadora 52 cc Shikawa | 3528.51 |
+| | 18404.54 |
+| Amor.Acum Instalaciones | -17228.38 |
+| | 1176.16 |
 
 Instalaciones
 
-|  Sistema de riego emergente - Rain- Bird | 180000.00  |
-| --- | --- |
-|  Amor.Acum Instalaciones | 180000.00  |
-|   | 0.00  |
+| Concepto | Importe |
+|---|---|
+| Sistema de riego emergente -Rain- Bird | 180000.00 |
+| Amor.Acum Instalaciones | -180000.00 |
+| | 0.00 |
 
 Balones
 
-|  Balones Adidas profesional | 24966.25  |
-| --- | --- |
-|  Amor.Acum Balones | -24966.25  |
-|   | 0.00  |
+| Concepto | Importe |
+|---|---|
+| Balones Adidas profesional | 24966.25 |
+| Amor.Acum Balones | -24966.25 |
+| | 0.00 |
 
 Página 1
 
@@ -863,37 +861,35 @@ inventario 2020
 
 Elemento de Entrenamiento
 
-|  Tirand 1,20 mts Banda Latex Plana Live UP -Media | 525.00  |
-| --- | --- |
-|  Tirand 1,20 mts banda Latex Plana Live UP- Fuerte | 410.00  |
-|  Tensor de sobre esfuerzo Python Striker- Live Up | 2784.01  |
-|  Conos Torugas x20 | 293.39  |
-|  Conos Tortugas x21 | 880.17  |
-|   | 4892.58  |
-|  Amor.Acum Indumentaria | 3261.72  |
-|   | 1630.86  |
+| Concepto | Importe |
+|---|---|
+| Tirand 1,20 mts Banda Latex Plana Live UP -Media | 525.00 |
+| Tirand 1,20 mts banda Latex Plana Live UP- Fuerte | 410.00 |
+| Tensor de sobre esfuerzo Python Striker- Live Up | 2784.01 |
+| Conos Torugas x20 | 293.39 |
+| Conos Tortugas x21 | 880.17 |
+| | 4892.58 |
+| Amor.Acum Indumentaria | -3261.72 |
+| | 1630.86 |
 
 Indumentaria
 
-|  Camisetas y Short titulares | 251851.60  |
-| --- | --- |
-|  Camisetas y Short alternativos | 145506.29  |
-|  Equipos de entrenamientos | 112924.00  |
-|  Camperas de lluvia | 57800.00  |
-|  Camperones | 98800.78  |
-|  Equipos de salir | 95412.00  |
-|  Indumentarias Varias | 1147245.00  |
-|   | 1909539.67  |
-|  Amor.Acum Indumentaria | 1198797.34  |
-|   | 712742.33  |
+| Concepto | Importe |
+|---|---|
+| Camisetas y Short titulares | 251851.60 |
+| Camisetas y Short alternativos | 145506.29 |
+| Equipos de entrenamientos | 112924.00 |
+| Camperas de lluvia | 57800.00 |
+| Camperones | 98800.78 |
+| Equipos de salir | 95412.00 |
+| Indumentarias Varias | 1147245.00 |
+| | 1909539.67 |
+| Amor.Acum Indumentaria | -1196797.34 |
+| | 712742.33 |
 
-Total del Activo no corriente
+Total del Activo no corriente | 9101065.36
 
-9101065.36
-
-Total del Activo
-
-20151043.68
+Total del Activo | 20151043.68
 
 PASIVO
 
@@ -903,63 +899,53 @@ Deudas
 
 Deudas Fiscales
 
-|  Plan mis facilidades Nro G653113 AFIP a pagar | 604645.04  |
-| --- | --- |
-|  Plan mis facilidades Nro J393392 AFIP a pagar | 429100.10  |
-|   | 1033745.14  |
+| Concepto | Importe |
+|---|---|
+| Plan mis facilidades Nro G653113 AFIP a pagar | 604645.04 |
+| Plan mis facilidades Nro J393392 AFIP a pagar | 429100.10 |
+| | 1033745.14 |
 
-Total de deudas Fiscales
-
-1033745.14
+Total de deudas Fiscales | 1033745.14
 
 Deudas sociales
 
-|  Sueldos Pagar 10/2020 | 1,158,583.61  |
-| --- | --- |
-|  Obra Social A Pagar 09, 10/2020 | 35,197.22  |
-|  ART a Pagar 09 a 10/2020 | 9,596.76  |
-|  Sindicato Cuerpo a Pagar 10/2015 | 3,906.17  |
-|  Seg de Vida empleados a Pagar mes año 2018-2019-2020 | 16,386.12  |
+| Concepto | Importe |
+|---|---|
+| Sueldos Pagar 10/2020 | 1,158,583.61 |
+| Obra Social A Pagar 09, 10/2020 | 35,197.22 |
+| ART a Pagar 09 a 10/2020 | 9,596.76 |
+| Sindicato Cuerpo a Pagar 10/2015 | 3,906.17 |
+| Seg de Vida empleados a Pagar mes año 2018-2019-2020 | 16,386.12 |
+| | 1,223,669.88 |
 
-Total de deudas Sociales
+Total de deudas Sociales | 1223669.88
 
-1223669.88
-
-Total del Pasivo corriente
-
-2257415.02
+Total del Pasivo corriente | 2257415.02
 
 Pasivo no corriente
 
 Deudas Comerciales
 
-AFA a Pagar
+| Concepto | Importe |
+|---|---|
+| AFA a Pagar | 42687.87 |
 
-42687.87
+Total del Pasivo no corriente | 42687.87
 
-Total del Pasivo no corriente
-
-42687.87
-
-Total del Pasivo
-
-2300102.89
+Total del Pasivo | 2300102.89
 
 PATRIMONIO NETO
 
-|  Capital social | 6560631.01  |
-| --- | --- |
-|  Rlado No Asignado | 6827281.00  |
-|  Rlado. Del ejercicio | 4463028.78  |
-|   | 17850940.79  |
+| Concepto | Importe |
+|---|---|
+| Capital social | 6560631.01 |
+| Rtado No Asignado | 6827281.00 |
+| Rtado. Del ejercicio | 4463028.78 |
+| | 17850940.79 |
 
-Total del Patrimonio Neto
+Total del Patrimonio Neto | 17850940.79
 
-17850940.79
-
-Total del Pasivo más Patrimonio Neto
-
-20151043.68
+Total del Pasivo más Patrimonio Neto | 20151043.68
 
 Página 2
 

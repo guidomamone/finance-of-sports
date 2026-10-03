@@ -8,9 +8,9 @@
 
 --- pág. 1 ---
 
-![img-0.jpeg](img-0.jpeg)
+[Logo: ATALANTA 1907]
 
-## **BILANCIO CONSOLIDATO 2020**
+# BILANCIO CONSOLIDATO 2020
 
 Relazione degli Amministratori
 
@@ -378,66 +378,66 @@ Relazione della Società di Revisione pag. 67
 
 --- pág. 10 ---
 
-|  RENDICONTO FINANZIARIO - GRUPPO ATALANTA |   | 31.12.2020 | 31.12.2019  |
-| --- | --- | --- | --- |
-|  A. | Flussi finanziari derivanti dall'attività operativa (metodo indiretto) |  |   |
-|   | Utile (perdita) dell'esercizio | 51.738.249 | 26.497.451  |
-|   | Imposte sul reddito | 22.648.727 | 13.590.922  |
-|   | Interessi passivi/(interessi attivi) | 1.146.086 | 838.256  |
-|   | (Plusvalenze)/minusvalenze derivanti dalla cessione di attività (escluse quelle derivanti dai DPC) | (70) | (40)  |
-|  1. | Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione | 75.532.992 | 40.926.589  |
-|   | Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto |  |   |
-|   | Accantonamenti ai fondi | 64.036 | 51.620  |
-|   | Ammortamenti delle immobilizzazioni | 44.838.785 | 35.982.667  |
-|   | Svalutazioni per perdite durevoli di valore | 625.211 | 467.995  |
-|   | Altre rettifiche per elementi non monetari | 77.331 | 29.342  |
-|  2. | Flusso finanziario prima delle variazioni del CCN | 45.605.363 | 36.531.624  |
-|   | Variazioni del capitale circolante netto |  |   |
-|   | Decremento/(incremento) delle rimanenze | 93.168 | (207.540)  |
-|   | Decremento/(incremento) dei crediti vs clienti | (413.938) | (3.347.910)  |
-|   | Incremento/(decremento) dei debiti verso fornitori | (8.707.059) | (3.895.453)  |
-|   | Decremento/(incremento) ratei e risconti attivi | (1.117.450) | 9.779.012  |
-|   | Incremento/(decremento) ratei e risconti passivi | 5.517.693 | 336.580  |
-|   | Altre variazioni del capitale circolante netto | 662.525 | 5.958.456  |
-|  3. | Flusso finanziario dopo le variazioni del CCN | (3.965.061) | 8.623.145  |
-|   | Altre rettifiche |  |   |
-|   | Interessi incassati/(pagati) | (1.146.086) | (838.256)  |
-|   | (Imposte sul reddito pagate) | (8.901.100) | (11.127.173)  |
-|   | Dividendi incassati | 0 | 0  |
-|   | (Utilizzo dei fondi) | (112.570) | 93.632  |
-|   | Totale Altre rettifiche | (10.199.756) | (11.871.797)  |
-|   | Flusso finanziario dell'attività operativa (A) | 107.013.538 | 74.209.561  |
-|  B. | Flussi finanziari derivanti dall'attività di investimento |  |   |
-|   | Immobilizzazioni materiali | (10.199.246) | (19.110.849)  |
-|   | (Investimenti) | (10.199.246) | (19.110.849)  |
-|   | Disinvestimenti | 0 | 0  |
-|   | Diritti pluriennali alle prestazioni dei calciatori | (56.486.234) | (55.084.756)  |
-|   | (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (78.880.024) | (49.643.714)  |
-|   | Cessione diritti pluriennali alle prestazioni dei calciatori | 6.367.114 | 6.765.707  |
-|   | Decremento/(incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (36.248.238) | (22.847.360)  |
-|   | Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 52.274.914 | 10.640.611  |
-|   | Altre immobilizzazioni immateriali | (2.156.471) | (2.602.322)  |
-|   | (Investimenti) | (2.156.471) | (2.602.322)  |
-|   | Disinvestimenti | 0 | 0  |
-|   | Immobilizzazioni finanziarie | (178) | (18)  |
-|   | (Investimenti) | (178) | (18)  |
-|   | Disinvestimenti | 0 | 0  |
-|   | Attività finanziarie non immobilizzate | 0 | 0  |
-|   | Totale Altre attività di investimento | (2.156.649) | (2.602.340)  |
-|   | Flusso finanziario dell'attività di investimento (B) | (68.842.129) | (76.797.945)  |
-|  C. | Flussi finanziari derivanti dall'attività di finanziamento |  |   |
-|   | Mezzi di terzi | 2.595.132 | 4.509.674  |
-|   | Incremento (decremento) debiti a breve verso banche | (119.879) | 382  |
-|   | Accensione finanziamenti | 2.715.011 | 4.509.292  |
-|   | (Rimborso finanziamenti) | 0 | 0  |
-|   | Finanziamenti soci | 0 | 0  |
-|   | Mezzi propri | 0 | 0  |
-|   | Altre entrate (uscite) da attività di finanziamento | 0 | 0  |
-|   | Flusso finanziario dell'attività di finanziamento (C) | 2.595.132 | 4.509.674  |
-|   | Incremento (decremento) delle disponibilità liquide (A ± B ± C) | 40.766.541 | 1.921.290  |
-|   | Disponibilità liquide all'inizio dell'esercizio | 11.178.796 | 9.257.506  |
-|   | Disponibilità liquide alla fine dell'esercizio | 51.945.337 | 11.178.796  |
-|   | Saldo a gareggio | 40.766.541 | 1.921.290  |
+| RENDICONTO FINANZIARIO - GRUPPO ATALANTA | 31.12.2020 | 31.12.2019 |
+|---|---|---|
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| Utile (perdita) dell'esercizio | 51.738.249 | 26.497.451 |
+| Imposte sul reddito | 22.648.727 | 13.590.922 |
+| Interessi passivi/(interessi attivi) | 1.146.086 | 838.256 |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di attività (escluse quelle derivanti dai DPC) | (70) | (40) |
+| **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **75.532.992** | **40.926.589** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 64.036 | 51.620 |
+| Ammortamento delle immobilizzazioni | 44.838.785 | 35.982.667 |
+| Svalutazioni per perdite durevoli di valore | 625.211 | 467.995 |
+| Altre rettifiche per elementi non monetari | 77.331 | 29.342 |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **45.605.363** | **36.531.624** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | 93.168 | (207.540) |
+| Decremento/(incremento) dei crediti vs clienti | (413.938) | (3.347.910) |
+| Incremento/(decremento) dei debiti verso fornitori | (8.707.059) | (3.895.453) |
+| Decremento/(incremento) ratei e risconti attivi | (1.117.450) | 9.779.012 |
+| Incremento/(decremento) ratei e risconti passivi | 5.517.693 | 336.580 |
+| Altre variazioni del capitale circolante netto | 662.525 | 5.958.456 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **(3.965.061)** | **8.623.145** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | (1.146.086) | (838.256) |
+| (Imposte sul reddito pagate) | (8.901.100) | (11.127.173) |
+| Dividendi incassati | 0 | 0 |
+| (Utilizzo dei fondi) | (112.570) | 93.632 |
+| **Totale Altre rettifiche** | **(10.159.756)** | **(11.871.797)** |
+| **Flusso finanziario dell'attività operativa (A)** | **107.013.538** | **74.209.561** |
+| **B. Flussi finanziari derivanti dall'attività di investimento** | | |
+| *Immobilizzazioni materiali* | *(10.199.246)* | *(19.110.849)* |
+| (Investimenti) | (10.199.246) | (19.110.849) |
+| Disinvestimenti | 0 | 0 |
+| *Diritti pluriennali alle prestazioni dei calciatori* | *(56.486.234)* | *(55.084.756)* |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (78.880.024) | (49.643.714) |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | 6.367.114 | 6.765.707 |
+| Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (36.248.238) | (22.847.360) |
+| Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 52.274.914 | 10.640.611 |
+| *Altre immobilizzazioni immateriali* | *(2.156.471)* | *(2.602.322)* |
+| (Investimenti) | (2.156.471) | (2.602.322) |
+| Disinvestimenti | 0 | 0 |
+| *Immobilizzazioni finanziarie* | *(178)* | *(18)* |
+| (Investimenti) | (178) | (18) |
+| Disinvestimenti | 0 | 0 |
+| *Attività Finanziarie non immobilizzate* | *0* | *0* |
+| *Totale Altre attività di investimento* | *(2.156.649)* | *(2.602.340)* |
+| **Flusso finanziario dell'attività di investimento (B)** | **(68.842.129)** | **(76.797.945)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| *Mezzi di terzi* | *2.595.132* | *4.509.674* |
+| Incremento (decremento) debiti a breve verso banche | (119.879) | 382 |
+| Accensione finanziamenti | 2.715.011 | 4.509.292 |
+| (Rimborso finanziamenti) | 0 | 0 |
+| *Finanziamenti soci* | *0* | *0* |
+| *Mezzi propri* | *0* | *0* |
+| *Altre entrate (uscite) da attività di finanziamento* | *0* | *0* |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **2.595.132** | **4.509.674** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **40.766.541** | **1.921.290** |
+| **Disponibilità liquide all'inizio dell'esercizio** | **11.178.796** | **9.257.506** |
+| **Disponibilità liquide alla fine dell'esercizio** | **51.945.337** | **11.178.796** |
+| **Saldo a pareggio** | **40.766.541** | **1.921.290** |
 
 8
 
@@ -969,36 +969,38 @@ Al 31 dicembre 2020 risultano pari a € 607.193 ed hanno registrato la seguente
 
 --- pág. 27 ---
 
-|   | Saldo al 31.12.2020 | Saldo al 31.12.2019  |
-| --- | --- | --- |
-|  Fondo rischi ed oneri inizio esercizio | 719.763 | 626.131  |
-|  Utilizzi dell'esercizio | (169.875) | 0  |
-|  Accantonamenti dell'esercizio | 57.305 | 93.632  |
-|  Saldo al 31.12 | 607.193 | 719.763  |
+| | Saldo al 31.12.2020 | Saldo al 31.12.2019 |
+|---|---|---|
+| Fondo rischi ed oneri inzio esercizio | 719.763 | 626.131 |
+| Utilizzi dell'esercizio | (169.875) | 0 |
+| Accantonamenti dell'esercizio | 57.305 | 93.632 |
+| **Saldo al 31.12** | **607.193** | **719.763** |
 
 La voce si riferisce ai rischi di esborso finanziario relativamente a contenziosi fiscali potenziali valutati dagli amministratori come probabili; il saldo è costituito esclusivamente da accantonamenti per rischi specifici legati alla normativa del settore calcio che non trovano chiara e univoca interpretazione. Nel corso dell'esercizio 2020 i fondi per rischi e oneri hanno subito un incremento di € 57.305 per l'adeguamento di rischi già in essere al 31 dicembre 2019 e un rilascio di € 169.875 per rischi venuti meno nel corso dell'esercizio.
 
-A titolo di informativa si segnala inoltre che la società, fino al 31 dicembre 2020, ha ricevuto alcuni avvisi di accertamento dall'Agenzia delle Entrate relativamente ad alcune transazioni con procuratori sportivi riferiti agli anni fiscali 2012, 2013, 2014 e 2015 (per quest'ultimo anno l'avviso di accertamento è arrivato alla fine dell'anno fiscale 2020). Con detti avvisi di accertamento l'Amministrazione Finanziaria ha contestato violazioni in materia di riscossione attinenti a un ipotizzato maggior reddito da lavoro dipendente di tre ex calciatori della società. In particolare, la violazione è correlata alla riqualificazione delle prestazioni di consulenza fornite alla società da due suoi procuratori in occasione dei trasferimenti di tali diritti pluriennali alle prestazioni di calciatori: secondo la tesi dell'Amministrazione Finanziaria, i compensi corrisposti dalla società ai propri agenti sono da qualificare quali fringe benefit riconosciuti ai due calciatori, essendo questi ultimi i reali beneficiari della predetta attività di consulenza.
+A titolo di informativa si segnala inoltre che la società, fino al 31 dicembre 2020, ha ricevuto alcuni avvisi di accertamento dall'Agenzia delle Entrate relativamente ad alcune transazioni con procuratori sportivi riferiti agli anni fiscali 2012, 2013, 2014 e 2015 (per quest'ultimo anno l'avviso di accertamento è arrivato alla fine dell'anno fiscale 2020). Con detti avvisi di accertamento l'Amministrazione Finanziaria ha contestato violazioni in materia di riscossione attinenti a un ipotizzato maggior reddito da lavoro dipendente di tre ex calciatori della società. In particolare, la violazione è correlata alla riqualificazione delle prestazioni di consulenza fornite alla società da due suoi procuratori in occasione dei trasferimenti di tali diritti pluriennali alle prestazioni di calciatori: secondo la tesi dell'Amministrazione Finanziaria, i compensi corrisposti dalla società ai propri agenti sono da qualificare quali *fringe benefit* riconosciuti ai due calciatori, essendo questi ultimi i reali beneficiari della predetta attività di consulenza.
 
 La società, ritenendo totalmente infondate le pretese dell'Amministrazione Finanziaria ha presentato ricorsi avverso i predetti avvisi di accertamento.
 
 L'Agenzia delle Entrate sostiene che le transazioni siano avvenute nell'interesse del calciatore e quindi assoggettate a contribuzione. In particolare alla società è stato contestato quanto riportato nella seguente tabella (in cui si riporta anche lo status del contenzioso):
 
-|   | 2012 | 2013 | 2014 | 2015  |
-| --- | --- | --- | --- | --- |
-|  Contestazioni |  |  |  |   |
-|  Impropria detrazione IVA | 5.250 | 0 | 10.500 | 6.600  |
-|  Impropria deduzione costi ai Fini IRAP | 20.475 | 0 | 9.360 | 1.170  |
-|  Mancato versamento ritenute | 348.985 | 311.537 | 0 | 27.636  |
-|  Totale | 374.710 | 311.537 | 19.860 | 35.406  |
-|   | 2012 | 2013 | 2014 | 2015  |
-|  Status Contenzioso |  |  |  |   |
-|  Ricorso Presentato | Si | Si | Si | Si  |
-|  Commissione Tributaria | Annulamento integrale | Annulamento parziale | Annulamento integrale | Annulamento integrale  |
-|  Presentazione Appello da parte dell'Ufficio | Si | Si | Si | Si  |
-|  Costituzione in giudizio Società | Si | Si | Si | Si  |
-|  Processo | In pendenza | In pendenza | In pendenza | In pendenza  |
-|  Rischio | Possibile | Possibile | Possibile | Possibile  |
+| | 2012 | 2013 | 2013 | 2014 | 2015 |
+|---|---|---|---|---|---|
+| **Contestazioni** | | | | | |
+| Impropria detrazione IVA | 5.250 | 0 | 10.500 | 6.600 | 4.400 |
+| Impropria deduzione costi ai Fini IRAP | 20.475 | 0 | 9.360 | 1.170 | 780 |
+| Mancato versamento ritenute | 348.985 | 311.537 | 0 | 27.636 | 18.424 |
+| **Totale** | **374.710** | **311.537** | **19.860** | **35.406** | **23.604** |
+
+| | 2012 | 2013 | 2013 | 2014 | 2015 |
+|---|---|---|---|---|---|
+| **Status Contenzioso** | | | | | |
+| Ricorso Presentato | Si | Si | Si | Si | Si |
+| Commissione Tributaria | Annullamento integrale | Annullamento parziale | Annullamento integrale | Annullamento integrale | - |
+| Presentazione Appello da parte dell'Ufficio | Si | Si | Si | Si | - |
+| Costituzione in giudizio Società | Si | Si | Si | Si | - |
+| Processo | In pendenza | In pendenza | In pendenza | In pendenza | - |
+| Rischio | Possibile | Possibile | Possibile | Possibile | Possibile |
 
 In ossequio alle disposizioni civilistiche contenute nell'art. 2424-bis, terzo comma, del Codice Civile e al contenuto dell'O.I.C. n. 31, nel presente bilancio non si è provveduto ad accantonare alcun fondo rischi in quanto, anche a parere dei legali che assistono la società in tale contenzioso, è ragionevole ritenere che la società possa risultare vittoriosa in sede contenziosa (come già avvenuto, peraltro, in Commissione Tributaria Provinciale): le passività fiscali
 
@@ -1669,13 +1671,26 @@ Ing. Antonio Percassi
 
 --- pág. 47 ---
 
-Allegato 1 - Diritti Pluriennali alle prestazioni dei calciatori
+Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
 
-| Catallobre, CODERRE A RENE | Data di vendita | Data limite prima azzerata | Data finalizza prima azzerata | Data finalizza prima azzerata | Data il contatto | Bordati | Data tastriere | Bordati | Costo Bloche | Fale antemi, | Metto | Scadati / Sequestri | Metto Codicello Statale | Protesi Statale / Sequestri | Areeclazioni di all'Area | Protestanti di Resecutione da all'Area | Venezione in | Risparizione | Costo Bloche | Fale aree | Metto | Areeclato | Venezione in Areecl | Areeclato di accretione | Venezione in Areecl | Valori nell'oz. fine |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |
-| Prima casetta |  |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 (15-8-9) | 17 (16-11-14) | 18 (18-17) |  |  |  |
-| MAYOR PASA | 24/12/1998 | 01/01/2000 | 02/01/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2001 | 01/02/2 |
+Struttura della tabella (intestazioni di colonna):
+
+- Dati diritti pluriennali alle prestazioni dei calciatori: Calciatore COGNOME e NOME; Data di nascita
+- Contratto: Data inizio primo contratto; Data Scadenza ultimo contratto; Data Acquisto
+- Provenienza: Società
+- Destinazione: Data Cessione; Società
+- Valori al 01.01.2020: Costo Storico; F.do ammort.; Netto
+- Variazione valori di periodo: Acquisti / Incrementi; Netto Contabile Ceduto; Prezzo Cessione / Decrementi; Ammortamenti
+- Effetti economici di periodo: Sopravv. Passive; Svalutazioni / Incrementi ...; Minusvalenza; Plusvalenza
+- Valori al 31.12.2020: Costo Storico; F.do amm.; Netto; Anni Vita Residua
+- Compensi Agenti; Altri costi di acquisizione
+- Varie: Compensi agenti liquidato nell'esercizio; Valori sell-on fee
+
+Sezione: Prima squadra
+
+[ilegible — le righe con nomi dei calciatori, date, società di provenienza/destinazione e tutti i valori numerici non sono leggibili con affidabilità nella scansione]
+
+Riga di totale: TOTALE PRIMA SQUADRA — [ilegible]
 
 --- pág. 48 ---
 
@@ -2371,7 +2386,7 @@ BDO
 
 --- pág. 71 ---
 
-![img-1.jpeg](img-1.jpeg)
+BDO
 
 Tel: +39 02 58.20.10
 www.bdo.it
@@ -2379,29 +2394,27 @@ www.bdo.it
 Viale Abruzzi, 94
 20131 Milano
 
-Relazione della società di revisione indipendente
-ai sensi dell'art. 14 del D.Lgs. 27 gennaio 2010, n. 39
+**Relazione della società di revisione indipendente ai sensi dell'art. 14 del D.Lgs. 27 gennaio 2010, n. 39**
 
-Agli Azionisti di
-Atalanta Bergamasca Calcio S.p.A.
+Agli Azionisti di Atalanta Bergamasca Calcio S.p.A.
 
-Relazione sulla revisione contabile del bilancio consolidato
+**Relazione sulla revisione contabile del bilancio consolidato**
 
-# Giudizio
+**Giudizio**
 
 Abbiamo svolto la revisione contabile del bilancio consolidato del Gruppo Atalanta Bergamasca Calcio (il Gruppo), costituito dallo stato patrimoniale consolidato al 31 dicembre 2020, dal conto economico consolidato, dal rendiconto finanziario consolidato per l'esercizio chiuso a tale data e dalla nota integrativa.
 
 A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria del Gruppo al 31 dicembre 2020, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-# Elementi alla base del giudizio
+**Elementi alla base del giudizio**
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione Responsabilità della società di revisione per la revisione contabile del bilancio consolidato della presente relazione. Siamo indipendenti rispetto al Gruppo in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio consolidato* della presente relazione. Siamo indipendenti rispetto al Gruppo in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
 
-# Altri aspetti
+**Altri aspetti**
 
 Il bilancio consolidato per l'esercizio chiuso al 31 dicembre 2019, è stato sottoposto a revisione contabile da parte di un altro revisore che, il 21 maggio 2020, ha espresso un giudizio senza modifica su tale bilancio.
 
-# Responsabilità degli Amministratori e del Collegio Sindacale per il bilancio consolidato
+**Responsabilità degli Amministratori e del Collegio Sindacale per il bilancio consolidato**
 
 Gli Amministratori sono responsabili per la redazione del bilancio consolidato che fornisca una rappresentazione veritiera e corretta in conformità alle norme italiane che ne disciplinano i criteri di redazione e, nei termini previsti dalla legge, per quella parte del controllo interno dagli stessi ritenuta necessaria per consentire la redazione di un bilancio che non contenga errori significativi dovuti a frodi o a comportamenti o eventi non intenzionali.
 
@@ -2409,14 +2422,12 @@ Gli Amministratori sono responsabili per la valutazione della capacità del Grup
 
 Il Collegio Sindacale ha la responsabilità della vigilanza, nei termini previsti dalla legge, sul processo di predisposizione dell'informativa finanziaria del Gruppo.
 
-Bari, Bologna, Brescia, Cagliari, Firenze, Genova, Milano, Napoli, Padova, Palermo, Roma, Torino, Verona.
+Bari, Bologna, Brescia, Cagliari, Firenze, Genova, Milano, Napoli, Padova, Palermo, Roma, Torino, Verona,
 
 BDO Italia S.p.A. - Sede Legale: Viale Abruzzi, 94 - 20131 Milano - Capitale Sociale Euro 1.000.000 i.v.
-Codice Fiscale, Partita IVA e Registro Imprese di Milano n. 07722780967 - R.E.A. Milano 197784)
-
+Codice Fiscale, Partita IVA e Registro Imprese di Milano n. 07722780967 - R.E.A. Milano 1977842
 Iscritta al Registro dei Revisori Legali al n. 167911 con D.M. del 15/03/2013 G.U. n. 26 del 02/04/2013
-
-BDO Italia S.p.A., società per azioni italiane, è membro di BDO International Limited, società di diritto inglese (company limited by guarantee), e fa parte della rete internazionale BDO, network di società indipendenti.
+BDO Italia S.p.A., società per azioni italiana, è membro di BDO International Limited, società di diritto inglese (company limited by guarantee), e fa parte della rete internazionale BDO, network di società indipendenti.
 
 Pag. 1 di 3
 

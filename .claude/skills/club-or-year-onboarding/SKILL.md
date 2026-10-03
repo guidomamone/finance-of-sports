@@ -66,6 +66,22 @@ confirmación. Esto es distinto de la sección 11 de `club-data-mapping/SKILL.md
 número puntual es genuinamente ilegible): esa sí amerita frenar y preguntar, porque ahí la duda es
 sobre EL DATO, no sobre si seguir trabajando.
 
+**Agrupar, no repartir en sesiones sueltas (to-do 105, pedido de Guido 2026-09-28: subir el ritmo de
+onboarding rumbo a 2000 PDFs).** Dos ejes distintos, los dos ya probados:
+
+- **Varios ejercicios del MISMO club, en la MISMA sesión, en vez de uno por sesión.** El precedente de
+  `tools/suggest-category-precedent.mjs` (`club-data-mapping` sección 1) mejora con cada año que se
+  suma de ese club — Once Caldas pasó de 10/11 rubros EXACTO en su 2do ejercicio cargado a 11/11 en
+  el 4to — y además se evita pagar de nuevo el arranque en frío de releer los skills y entender la
+  estructura del club. Si Guido pide onboardear un club que tiene más de un ejercicio pendiente,
+  proponer agruparlos en la misma sesión en vez de ir uno por vez.
+- **Clubes DISTINTOS entre sí, en paralelo, con el Agent tool.** No baja tokens totales (cada club
+  sigue costando lo mismo), pero sí baja tiempo de reloj, que es la métrica que importa para una
+  fecha límite. Si se lanzan varios agentes de onboarding en simultáneo y alguno usa el Browser pane
+  (para sourcing de liga/roster, brandColor, etc.), decirle a cada uno que abra su propia pestaña con
+  `tabs_create` y fije ese `tabId` en cada llamada — CLAUDE.md ya documenta que varios agentes
+  paralelos pueden pisarse la pestaña activa si no lo hacen.
+
 ## 2. Arquitectura ya generalizada, no reinventar por club
 
 **"Ya generalizado" no siempre significó "genérico para cualquier `clubId`"**: hasta que se
@@ -792,7 +808,21 @@ como **P1** (`checkGenerados()`): no se puede pushear con uno desfasado.
 
 **Y acordate de la fila de `data/club-leagues/<iso2>.js`**: sin ella el club no integra ninguna
 liga, así que no aparece en ningún ranking aunque el generador haya corrido. La auditoría también
-la cuenta (`liga-sin-verificar`, P3).
+la cuenta (`liga-sin-verificar`, P3). Sigue siendo a mano y verificado, pero antes de salir a buscar
+en qué liga jugó un club-año, probar el pipeline del to-do 95 (evaluado 2026-09-28: un scraper masivo
+tipo "precargar toda la liga" no rinde con las fuentes disponibles — Wikipedia/TheSportsDB/RSSSF —,
+así que esto es una caché de lo ya buscado, no un reemplazo de la verificación):
+
+1. `node tools/lookup-club-league.js "<club>" --pais <iso2>` — si esa liga-temporada ya está
+   cacheada, ahí está la respuesta.
+2. Si no, `node tools/resolve-wikipedia-season-page.mjs "<liga>" <año>` — encuentra el título EXACTO
+   de la página de esa temporada en Wikipedia (la convención de título varía por liga, sin fórmula
+   fija). No elegir el resultado #1 a ciegas: un nombre ambiguo trae también otros torneos.
+3. `node tools/fetch-club-league-reference.mjs "<título>" <leagueId> <año> --pais <iso2>` — baja el
+   roster completo de esa temporada (wikitext crudo, no HTML renderizado ni un resumen de modelo) y
+   lo cachea en `tools/club-league-reference/<iso2>.json`.
+4. Confirmar el club puntual contra ese roster y recién ahí escribir la fila en
+   `data/club-leagues/<iso2>.js`, con su nota de verificación de siempre.
 
 **Y si el club es NUEVO (no un ejercicio nuevo de uno ya cargado): chequeá el `brandColor` elegido
 contra el escudo real, antes de cerrar la sesión.** El proceso de la sección 3 (punto 1b) resuelve el

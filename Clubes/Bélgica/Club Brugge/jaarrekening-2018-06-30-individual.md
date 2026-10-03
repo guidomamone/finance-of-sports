@@ -230,141 +230,59 @@ van zijn opdracht.
 
 --- pág. 5 ---
 
-Nr. BE 0460.444.251
+Nr. BE 0460.444.251 | VOL 3.1
 
-VOL 3.1
+# JAARREKENING
 
-JAARREKENING
+## BALANS NA WINSTVERDELING
 
-BALANS NA WINSTVERDELING
-
-Toel.
-
-ACTIVA
-
-OPRICHTINGSKOSTEN 6.1
-VASTE ACTIVA
-
-Immateriële vaste activa 6.2
-
-Materiële vaste activa 6.3
-Terreinen en gebouwen
-Installaties, machines en uitrusting
-Meubilair en rollend materieel
-Leasing en soortgelijke rechten
-Overige materiële vaste activa
-Activa in aanbouw en vooruitbetalingen
-
-Financiële vaste activa 6.4/6.5.1
-
-Verbonden ondernemingen 6.15
-Deelnemingen
-Vorderingen
-
-Ondernemingen waarmee een
-
-deelnemingsverhouding bestaat 6.15
-Deelnemingen
-Vorderingen
-
-Andere financiële vaste activa
-Aandelen
-Vorderingen en borgtochten in contanten
-
-VLOTTENDE ACTIVA
-
-Vorderingen op meer dan één jaar
-Handelsvorderingen
-Overige vorderingen
-
-Voorraden en bestellingen in uitvoering
-Voorraden
-Grond- en hulpstoffen
-Goederen in bewerking
-Gereed product
-Handelsgoederen
-Onroerende goederen bestemd voor verkoop
-Vooruitbetalingen
-Bestellingen in uitvoering
-
-Vorderingen op ten hoogste één jaar
-Handelsvorderingen
-Overige vorderingen
-
-Geldbeleggingen 6.5.1/6.6
-Eigen aandelen
-Overige beleggingen
-
-Liquide middelen
-
-Overlopende rekeningen 6.6
-
-TOTAAL VAN DE ACTIVA
-
-Codes Boekjaar Vorig boekjaar
-
-20
-
-21/28 31.453.869 28.044.313
-21 25.687.474 21.940.405
-22/27 5.576.176 5.914.411
-22 339.988 312.131
-23 3.459.467 3.718.226
-24 630.548 697.299
-25
-
-26 1.146.173 1.186.754
-27
-
-28 190.218 189.498
-280/1 187.498 187.498
-280 187.498 187.498
-281
-
-282/3
-
-282
-
-283
-
-284/8 2.720 2.000
-284
-
-285/8 2.720 2.000
-29/58 18.714.471 16.851.522
-29 4.405.000 285.000
-290 4.405.000 285.000
-291
-
-3 211.564 160.765
-30/36 211.564 160.765
-30/31
-
-32
-
-33
-
-34 211.564 160.765
-
-35
-
-36
-
-37
-
-40/41 12.215.409 2.763.453
-40 12.193.093 2.702.832
-41 22.316 60.622
-50/53 762 11.473.623
-50
-
-51/53 762 11.473.623
-54/58 48.352 930.669
-490/1 1.833.385 1.238.012
-20/58 50.168.340 44.895.835
+| | Toel. | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|---|
+| **ACTIVA** | | | | |
+| **OPRICHTINGSKOSTEN** | 6.1 | 20 | | |
+| **VASTE ACTIVA** | | 21/28 | 31.453.869 | 28.044.313 |
+| **Immateriële vaste activa** | 6.2 | 21 | 25.687.474 | 21.940.405 |
+| **Materiële vaste activa** | 6.3 | 22/27 | 5.576.176 | 5.914.411 |
+| Terreinen en gebouwen | | 22 | 339.988 | 312.131 |
+| Installaties, machines en uitrusting | | 23 | 3.459.467 | 3.718.226 |
+| Meubilair en rollend materieel | | 24 | 630.548 | 697.299 |
+| Leasing en soortgelijke rechten | | 25 | | |
+| Overige materiële vaste activa | | 26 | 1.146.173 | 1.186.754 |
+| Activa in aanbouw en vooruitbetalingen | | 27 | | |
+| **Financiële vaste activa** | 6.4/6.5.1 | 28 | 190.218 | 189.498 |
+| Verbonden ondernemingen | 6.15 | 280/1 | 187.498 | 187.498 |
+| Deelnemingen | | 280 | 187.498 | 187.498 |
+| Vorderingen | | 281 | | |
+| Ondernemingen waarmee een deelnemingsverhouding bestaat | 6.15 | 282/3 | | |
+| Deelnemingen | | 282 | | |
+| Vorderingen | | 283 | | |
+| Andere financiële vaste activa | | 284/8 | 2.720 | 2.000 |
+| Aandelen | | 284 | | |
+| Vorderingen en borgtochten in contanten | | 285/8 | 2.720 | 2.000 |
+| **VLOTTENDE ACTIVA** | | 29/58 | 18.714.471 | 16.851.522 |
+| **Vorderingen op meer dan één jaar** | | 29 | 4.405.000 | 285.000 |
+| Handelsvorderingen | | 290 | 4.405.000 | 285.000 |
+| Overige vorderingen | | 291 | | |
+| **Voorraden en bestellingen in uitvoering** | | 3 | 211.564 | 160.765 |
+| Voorraden | | 30/36 | 211.564 | 160.765 |
+| Grond- en hulpstoffen | | 30/31 | | |
+| Goederen in bewerking | | 32 | | |
+| Gereed product | | 33 | | |
+| Handelsgoederen | | 34 | 211.564 | 160.765 |
+| Onroerende goederen bestemd voor verkoop | | 35 | | |
+| Vooruitbetalingen | | 36 | | |
+| Bestellingen in uitvoering | | 37 | | |
+| **Vorderingen op ten hoogste één jaar** | | 40/41 | 12.215.409 | 2.763.453 |
+| Handelsvorderingen | | 40 | 12.193.093 | 2.702.832 |
+| Overige vorderingen | | 41 | 22.316 | 60.622 |
+| **Geldbeleggingen** | 6.5.1/6.6 | 50/53 | 762 | 11.473.623 |
+| Eigen aandelen | | 50 | | |
+| Overige beleggingen | | 51/53 | 762 | 11.473.623 |
+| **Liquide middelen** | | 54/58 | 48.352 | 930.669 |
+| **Overlopende rekeningen** | 6.6 | 490/1 | 1.833.385 | 1.238.012 |
+| **TOTAAL VAN DE ACTIVA** | | 20/58 | 50.168.340 | 44.895.835 |
 
 5/45
-
 
 --- pág. 6 ---
 
@@ -432,170 +350,55 @@ TOTAAL VAN DE PASSIVA 10/49 50.168.340 44.895.835
 
 --- pág. 7 ---
 
-Nr. BE 0460.444.251
+Nr. BE 0460.444.251 | VOL 4
 
-VOL 4
+## RESULTATENREKENING
 
-RESULTATENREKENING
+| | Toel. | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|---|
+| **Bedrijfsopbrengsten** | | 70/76A | 67.860.803 | 61.255.387 |
+| Omzet | 6.10 | 70 | 36.947.172 | 51.332.333 |
+| Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-) | | 71 | | |
+| Geproduceerde vaste activa | | 72 | | |
+| Andere bedrijfsopbrengsten | 6.10 | 74 | 30.913.217 | 9.923.053 |
+| Niet-recurrente bedrijfsopbrengsten | 6.12 | 76A | 413 | |
+| **Bedrijfskosten** | | 60/66A | 67.376.909 | 61.144.926 |
+| Handelsgoederen, grond- en hulpstoffen | | 60 | 1.330.679 | 1.154.750 |
+| Aankopen | | 600/8 | 1.458.544 | 1.188.698 |
+| Voorraad: afname (toename) (+)/(-) | | 609 | -127.864 | -33.948 |
+| Diensten en diverse goederen | | 61 | 17.460.326 | 16.485.994 |
+| Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 6.10 | 62 | 33.202.865 | 30.294.839 |
+| Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | | 630 | 11.912.243 | 11.332.519 |
+| Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | 6.10 | 631/4 | 62.881 | 99.186 |
+| Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | 6.10 | 635/8 | | |
+| Andere bedrijfskosten | 6.10 | 640/8 | 3.407.914 | 1.777.637 |
+| Als herstructureringskosten geactiveerde bedrijfskosten (-) | | 649 | | |
+| Niet-recurrente bedrijfskosten | 6.12 | 66A | | |
+| **Bedrijfswinst (Bedrijfsverlies) (+)/(-)** | | 9901 | 483.894 | 110.461 |
+| **Financiële opbrengsten** | | 75/76B | 268.874 | 232.240 |
+| Recurrente financiële opbrengsten | | 75 | 268.874 | 232.240 |
+| Opbrengsten uit financiële vaste activa | | 750 | | |
+| Opbrengsten uit vlottende activa | | 751 | 5.335 | 23.498 |
+| Andere financiële opbrengsten | 6.11 | 752/9 | 263.539 | 208.742 |
+| Niet-recurrente financiële opbrengsten | 6.12 | 76B | | |
+| **Financiële kosten** | | 65/66B | 166.908 | 162.053 |
+| Recurrente financiële kosten | 6.11 | 65 | 166.908 | 162.053 |
+| Kosten van schulden | | 650 | 157.332 | 153.188 |
+| Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | | 651 | | |
+| Andere financiële kosten | | 652/9 | 9.576 | 8.865 |
+| Niet-recurrente financiële kosten | 6.12 | 66B | | |
+| **Winst (Verlies) van het boekjaar vóór belasting (+)/(-)** | | 9903 | 585.860 | 180.649 |
+| **Onttrekking aan de uitgestelde belastingen** | | 780 | | |
+| **Overboeking naar de uitgestelde belastingen** | | 680 | | |
+| **Belastingen op het resultaat (+)/(-)** | 6.13 | 67/77 | 516.963 | 2.132 |
+| Belastingen | | 670/3 | 516.963 | 2.132 |
+| Regularisering van belastingen en terugneming van voorzieningen voor belastingen | | 77 | | |
+| **Winst (Verlies) van het boekjaar (+)/(-)** | | 9904 | 68.896 | 178.516 |
+| **Onttrekking aan de belastingvrije reserves** | | 789 | | |
+| **Overboeking naar de belastingvrije reserves** | | 689 | | |
+| **Te bestemmen winst (verlies) van het boekjaar (+)/(-)** | | 9905 | 68.896 | 178.516 |
 
-Bedrijfsopbrengsten
-Omzet
-Voorraad goederen in bewerking en gereed product en
-bestellingen in uitvoering: toename (afname) (+)/(-)
-Geproduceerde vaste activa
-Andere bedrijfsopbrengsten
-Niet-recurrente bedrijfsopbrengsten
-
-Bedrijfskosten
-
-Handelsgoederen, grond- en hulpstoffen
-
-Aankopen
-
-Voorraad: afname (toename) (+/(-)
-Diensten en diverse goederen
-Bezoldigingen, sociale lasten en pensioenen (+)/(-)
-Afschrijvingen en waardeverminderingen op
-oprichtingskosten, op immateriële en materiële vaste
-activa
-Waardeverminderingen op voorraden, op bestellingen
-in uitvoering en op handelsvorderingen: toevoegingen
-
-(terugnemingen) (+/(-)
-Voorzieningen voor risico's en kosten: toevoegingen
-(bestedingen en terugnemingen) (+/(-)
-
-Andere bedrijfskosten
-
-Als herstructureringskosten geactiveerde
-bedrijfskosten (-)
-Niet-recurrente bedrijfskosten
-
-Bedrijfswinst (Bedrijfsverlies) (+/(-)
-
-Financiële opbrengsten
-Recurrente financiële opbrengsten
-Opbrengsten uit financiële vaste activa
-Opbrengsten uit vlottende activa
-Andere financiële opbrengsten
-Niet-recurrente financiële opbrengsten
-
-Financiële kosten
-
-Recurrente financiële kosten
-Kosten van schulden
-Waardeverminderingen op vlottende activa andere
-dan voorraden, bestellingen in uitvoering en
-handelsvorderingen: toevoegingen
-(terugnemingen) (+/(-)
-Andere financiële kosten
-
-Niet-recurrente financiële kosten
-
-Winst (Verlies) van het boekjaar vóór belasting
-IE)
-
-Onttrekking aan de uitgestelde belastingen
-Overboeking naar de uitgestelde belastingen
-
-Belastingen op het resultaat (#)/-)
-Belastingen
-Regularisering van belastingen en terugneming van
-voorzieningen voor belastingen
-
-Winst (Verlies) van het boekjaar (+/(-)
-Onttrekking aan de belastingvrije reserves
-Overboeking naar de belastingvrije reserves
-
-Te bestemmen winst (verlies) van het boekjaar
-
-@/E)
-
-Toel.
-
-6.10
-
-6.10
-6.12
-
-6.10
-
-6.10
-6.10
-6.10
-
-6.12
-
-6.11
-6.12
-
-6.11
-
-6.12
-
-6.13
-
-Codes Boekjaar Vorig boekjaar
-70/76A 67.860.803 61.255.387
-70 36.947.172 51.332.333
-71
-
-72
-
-74 30.913.217 9.923.053
-76A 413
-
-60/66A 67.376.909 61.144.926
-60 1.330.679 1.154.750
-600/8 1.458.544 1.188.698
-609 -127.864 -33.948
-
-61 17.460.326 16.485.994
-62 33.202.865 30.294.839
-630 11.912.243 11.332.519
-631/4 62.881 99.186
-635/8
-
-640/8 3.407.914 1.777.637
-649
-
-66A
-
-9901 483.894 110.461
-75/76B 268.874 232.240
-75 268.874 232.240
-750
-
-751 5.335 23.498
-752/9 263.539 208.742
-76B
-
-65/66B 166.908 162.053
-65 166.908 162.053
-650 157.332 153.188
-651
-
-652/9 9.576 8.865
-66B
-
-9903 585.860 180.649
-780
-
-680
-
-67/77 516.963 2.132
-670/3 516.963 2.132
-77
-
-9904 68.896 178.516
-789
-
-689
-
-9905 68.896 178.516
-
-7145
-
+7/45
 
 --- pág. 8 ---
 
@@ -1713,53 +1516,51 @@ Over te dragen opbrengsten 7.320.400
 
 --- pág. 22 ---
 
-Nr. BE 0460.444.251 VOL 6.10
-BEDRIJFSRESULTATEN
-Codes Boekjaar Vorig boekjaar
-BEDRIJFSOPBRENGSTEN
-Netto-omzet
-Uitsplitsing per bedrijfscategorie
-Uitsplitsing per geografische markt
-Andere bedrijfsopbrengsten
-Exploitatiesubsidies en vanwege de overheid ontvangen
-compenserende bedragen 740
-BEDRIJFSKOSTEN
-Werknemers waarvoor de onderneming een DIMONA-verklaring
-heeft ingediend of die zijn ingeschreven in het algemeen
-personeelsregister
-Totaal aantal op de afsluitingsdatum 9086 130 130
-Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087 122,2 112,6
-Aantal daadwerkelijk gepresteerde uren 9088 199.980 187.810
-Personeelskosten
-Bezoldigingen en rechtstreekse sociale voordelen 620 26.988.496 24.668.106
-Werkgeversbijdragen voor sociale verzekeringen 621 5.796.177 4.902.796
-Werkgeverspremies voor bovenwettelijke verzekeringen 622 418.193 723.937
-Andere personeelskosten 623
-Ouderdoms- en overlevingspensioenen 624
-Voorzieningen voor pensioenen en soortgelijke verplichtingen
-Toevoegingen (bestedingen en terugnemingen) (+)/(-) | 635
-Waardeverminderingen
-Op voorraden en bestellingen in uitvoering
-Geboekt 9110 77.066 99.967
-Teruggenomen 9111
-Op handelsvorderingen
-Geboekt 0112
-Teruggenomen 9113 14.185 781
-Voorzieningen voor risico's en kosten
-Toevoegingen 9115
-Bestedingen en terugnemingen 9116
-Andere bedrijfskosten
-Bedrijfsbelastingen en -taksen 640 587.175 362.813
-Andere 641/8 2.820.740 1.414.824
-Uitzendkrachten en ter beschikking van de onderneming gestelde
-personen
-Totaal aantal op de afsluitingsdatum 9096
-Gemiddeld aantal berekend in voltijdse equivalenten 9097 1,2 2,5
-Aantal daadwerkelijk gepresteerde uren 9098 2.442 4.885
-Kosten voor de onderneming 617 41.618 90.601
+Nr. BE 0460.444.251 | VOL 6.10
+
+**BEDRIJFSRESULTATEN**
+
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **BEDRIJFSOPBRENGSTEN** | | | |
+| **Netto-omzet** | | | |
+| Uitsplitsing per bedrijfscategorie | | | |
+| Uitsplitsing per geografische markt | | | |
+| **Andere bedrijfsopbrengsten** | | | |
+| Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen | 740 | | |
+| **BEDRIJFSKOSTEN** | | | |
+| **Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister** | | | |
+| Totaal aantal op de afsluitingsdatum | 9086 | 130 | 130 |
+| Gemiddeld personeelsbestand berekend in voltijdse equivalenten | 9087 | 122,2 | 112,6 |
+| Aantal daadwerkelijk gepresteerde uren | 9088 | 199.980 | 187.810 |
+| **Personeelskosten** | | | |
+| Bezoldigingen en rechtstreekse sociale voordelen | 620 | 26.988.496 | 24.668.106 |
+| Werkgeversbijdragen voor sociale verzekeringen | 621 | 5.796.177 | 4.902.796 |
+| Werkgeverspremies voor bovenwettelijke verzekeringen | 622 | 418.193 | 723.937 |
+| Andere personeelskosten | 623 | | |
+| Ouderdoms- en overlevingspensioenen | 624 | | |
+| **Voorzieningen voor pensioenen en soortgelijke verplichtingen** | | | |
+| Toevoegingen (bestedingen en terugnemingen) (+)/(-) | 635 | | |
+| **Waardeverminderingen** | | | |
+| Op voorraden en bestellingen in uitvoering | | | |
+| Geboekt | 9110 | 77.066 | 99.967 |
+| Teruggenomen | 9111 | | |
+| Op handelsvorderingen | | | |
+| Geboekt | 9112 | | |
+| Teruggenomen | 9113 | 14.185 | 781 |
+| **Voorzieningen voor risico's en kosten** | | | |
+| Toevoegingen | 9115 | | |
+| Bestedingen en terugnemingen | 9116 | | |
+| **Andere bedrijfskosten** | | | |
+| Bedrijfsbelastingen en -taksen | 640 | 587.175 | 362.813 |
+| Andere | 641/8 | 2.820.740 | 1.414.824 |
+| **Uitzendkrachten en ter beschikking van de onderneming gestelde personen** | | | |
+| Totaal aantal op de afsluitingsdatum | 9096 | | |
+| Gemiddeld aantal berekend in voltijdse equivalenten | 9097 | 1,2 | 2,5 |
+| Aantal daadwerkelijk gepresteerde uren | 9098 | 2.442 | 4.885 |
+| Kosten voor de onderneming | 617 | 41.618 | 90.601 |
 
 22/45
-
 
 --- pág. 23 ---
 
@@ -1826,45 +1627,36 @@ Codes Boekjaar Vorig boekjaar
 
 --- pág. 24 ---
 
-Nr. BE 0460.444.251 VOL 6.12
+Nr. BE 0460.444.251 | VOL 6.12
 
-OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN
+**OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN**
 
-Codes Boekjaar Vorig boekjaar
-NIET-RECURRENTE OPBRENGSTEN 76 413
-Niet-recurrente bedrijfsopbrengsten 76A 413
-Terugneming van afschrijvingen en van waardeverminderingen op
-immateriële en materiële vaste activa 760
-Terugneming van voorzieningen voor uitzonderlijke bedrijfsrisico's en
--kosten 7620
-Meerwaarden bij de realisatie van immateriële en materiële vaste
-activa 7630 413
-Andere niet-recurrente bedrijfsopbrengsten 764/8
-Niet-recurrente financiële opbrengsten 76B
-Terugneming van waardeverminderingen op financiële vaste activa 761
-Terugneming van voorzieningen voor uitzonderlijke financiële risico's
-en kosten 7621
-Meerwaarden bij de realisatie van financiële vaste activa 7631
-Andere niet-recurrente financiële opbrengsten 769
-NIET-RECURRENTE KOSTEN 66
-Niet-recurrente bedrijfskosten 66A
-Niet-recurrente afschrijvingen en waardeverminderingen op
-oprichtingskosten, op immateriële en materiële vaste activa 660
-Voorzieningen voor uitzonderlijke bedrijfsrisico's en -kosten:
-toevoegingen (bestedingen) (+)/(-) | 6620
-Minderwaarden bij de realisatie van immateriële en materiële vaste
-activa 6630
-Andere niet-recurrente bedrijfskosten 664/7
-Als herstructureringskosten geactiveerde niet-recurrente
-bedrijfskosten (-) | 6690
-Niet-recurrente financiële kosten 66B
-Waardeverminderingen op financiële vaste activa 661
-Voorzieningen voor uitzonderlijke financiële risico's en kosten:
-toevoegingen (bestedingen) (+)/(-) | 6621
-Minderwaarden bij de realisatie van financiële vaste activa 6631
-Andere niet-recurrente financiële kosten 668
-Als herstructureringskosten geactiveerde niet-recurrente financiële
-kosten (-) | 6691
+| | Codes | Boekjaar | Vorig boekjaar |
+|---|---|---|---|
+| **NIET-RECURRENTE OPBRENGSTEN** | 76 | 413 | |
+| **Niet-recurrente bedrijfsopbrengsten** | 76A | 413 | |
+| Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa | 760 | | |
+| Terugneming van voorzieningen voor uitzonderlijke bedrijfsrisico's en -kosten | 7620 | | |
+| Meerwaarden bij de realisatie van immateriële en materiële vaste activa | 7630 | 413 | |
+| Andere niet-recurrente bedrijfsopbrengsten | 764/8 | | |
+| **Niet-recurrente financiële opbrengsten** | 76B | | |
+| Terugneming van waardeverminderingen op financiële vaste activa | 761 | | |
+| Terugneming van voorzieningen voor uitzonderlijke financiële risico's en kosten | 7621 | | |
+| Meerwaarden bij de realisatie van financiële vaste activa | 7631 | | |
+| Andere niet-recurrente financiële opbrengsten | 769 | | |
+| **NIET-RECURRENTE KOSTEN** | 66 | | |
+| **Niet-recurrente bedrijfskosten** | 66A | | |
+| Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | 660 | | |
+| Voorzieningen voor uitzonderlijke bedrijfsrisico's en -kosten: toevoegingen (bestedingen) (+)/(-) | 6620 | | |
+| Minderwaarden bij de realisatie van immateriële en materiële vaste activa | 6630 | | |
+| Andere niet-recurrente bedrijfskosten | 664/7 | | |
+| Als herstructureringskosten geactiveerde niet-recurrente bedrijfskosten (-) | 6690 | | |
+| **Niet-recurrente financiële kosten** | 66B | | |
+| Waardeverminderingen op financiële vaste activa | 661 | | |
+| Voorzieningen voor uitzonderlijke financiële risico's en kosten: toevoegingen (bestedingen) (+)/(-) | 6621 | | |
+| Minderwaarden bij de realisatie van financiële vaste activa | 6631 | | |
+| Andere niet-recurrente financiële kosten | 668 | | |
+| Als herstructureringskosten geactiveerde niet-recurrente financiële kosten (-) | 6691 | | |
 
 24/45
 
@@ -2812,177 +2604,81 @@ inzake de jaarrekening over het boekjaar afgesloten op 30 juni 2018 4.
 
 --- pág. 42 ---
 
-Nr. BE 0460.444.251 VOL 10
-SOCIALE BALANS
+Nr. BE 0460.444.251 | VOL 10
+
+## SOCIALE BALANS
+
 Nummers van de paritaire comités die voor de onderneming bevoegd zijn: 100 201 218 223
 
-Staat van de tewerkgestelde personen
+**Staat van de tewerkgestelde personen**
 
-Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het
+**Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister**
 
-algemeen personeelsregister
+| Tijdens het boekjaar | Codes | Totaal | 1. Mannen | 2. Vrouwen |
+|---|---|---|---|---|
+| **Gemiddeld aantal werknemers** | | | | |
+| Voltijds | 1001 | 101,8 | 86,7 | 15,1 |
+| Deeltijds | 1002 | 52,2 | 48,2 | 4 |
+| Totaal in voltijdse equivalenten (VTE) | 1003 | 122,2 | 105,9 | 16,3 |
+| **Aantal daadwerkelijk gepresteerde uren** | | | | |
+| Voltijds | 1011 | 165.727 | 142.131 | 23.596 |
+| Deeltijds | 1012 | 34.253 | 32.170 | 2.083 |
+| Totaal | 1013 | 199.980 | 174.301 | 25.679 |
+| **Personeelskosten** | | | | |
+| Voltijds | 1021 | 27.515.808 | 23.598.142 | 3.917.666 |
+| Deeltijds | 1022 | 5.687.057 | 5.341.215 | 345.842 |
+| Totaal | 1023 | 33.202.865 | 28.939.357 | 4.263.508 |
+| **Bedrag van de voordelen bovenop het loon** | 1033 | | | |
 
-Tijdens het boekjaar
-Gemiddeld aantal werknemers
-Voltijds
-Deeltijds
-
-Totaal in voltijdse equivalenten (VTE)
-
-Aantal daadwerkelijk gepresteerde uren
-Voltijds
-Deeltijds
-
-Totaal
-
-Personeelskosten
-Voltijds
-Deeltijds
-
-Totaal
-
-Bedrag van de voordelen bovenop het loon
-
-Tijdens het vorige boekjaar
-
-Gemiddeld aantal werknemers in VTE
-Aantal daadwerkelijk gepresteerde uren
-Personeelskosten
-
-Bedrag van de voordelen bovenop het loon
-
-Codes Totaal 1. Mannen 2. Vrouwen
-
-1001 101,8 86,7 15,1
-1002 52,2 48,2 4
-1003 122,2 105,9 16,3
-1011 165.727 142.131 23.596
-1012 34.253 32.170 2.083
-1013 199.980 174.301 25.679
-1021 27.515.808 23.598.142 3.917.666
-1022 5.687.057 5.341.215 345.842
-1023 33.202.865 28.939.357 4.263.508
-1033
-
-Codes P. Totaal 1P. Mannen 2P. Vrouwen
-
-1003 112,6 96 16,6
-1013 187.810 160.264 27.546
-1023 30.294.839 25.851.510 4.443.329
-1033
+| Tijdens het vorige boekjaar | Codes | P. Totaal | 1P. Mannen | 2P. Vrouwen |
+|---|---|---|---|---|
+| Gemiddeld aantal werknemers in VTE | 1003 | 112,6 | 96 | 16,6 |
+| Aantal daadwerkelijk gepresteerde uren | 1013 | 187.810 | 160.264 | 27.546 |
+| Personeelskosten | 1023 | 30.294.839 | 25.851.510 | 4.443.329 |
+| Bedrag van de voordelen bovenop het loon | 1033 | | | |
 
 42/45
 
-
 --- pág. 43 ---
 
-Nr. BE 0460.444.251
+Nr. BE 0460.444.251 | VOL 10
 
-VOL 10
+**Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister (vervolg)**
 
-Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het
+| Op de afsluitingsdatum van het boekjaar | Codes | 1. Voltijds | 2. Deeltijds | 3. Totaal in voltijdse equivalenten |
+|---|---|---|---|---|
+| **Aantal werknemers** | 105 | 104 | 26 | 116,1 |
+| **Volgens de aard van de arbeidsovereenkomst** | | | | |
+| Overeenkomst voor een onbepaalde tijd | 110 | 53 | 7 | 55,9 |
+| Overeenkomst voor een bepaalde tijd | 111 | 51 | 19 | 60,2 |
+| Overeenkomst voor een duidelijk omschreven werk | 112 | | | |
+| Vervangingsovereenkomst | 113 | | | |
+| **Volgens het geslacht en het studieniveau** | | | | |
+| Mannen | 120 | 86 | 24 | 97,5 |
+| lager onderwijs | 1200 | 81 | 24 | 92,5 |
+| secundair onderwijs | 1201 | 2 | | 2 |
+| hoger niet-universitair onderwijs | 1202 | 2 | | 2 |
+| universitair onderwijs | 1203 | 1 | | 1 |
+| Vrouwen | 121 | 18 | 2 | 18,6 |
+| lager onderwijs | 1210 | 17 | 2 | 17,6 |
+| secundair onderwijs | 1211 | | | |
+| hoger niet-universitair onderwijs | 1212 | 1 | | 1 |
+| universitair onderwijs | 1213 | | | |
+| **Volgens de beroepscategorie** | | | | |
+| Directiepersoneel | 130 | | | |
+| Bedienden | 134 | 94 | 26 | 106,1 |
+| Arbeiders | 132 | 10 | | 10 |
+| Andere | 133 | | | |
 
-algemeen personeelsregister (vervolg)
+**Uitzendkrachten en ter beschikking van de onderneming gestelde personen**
 
-Op de afsluitingsdatum van het boekjaar
-
-Aantal werknemers
-
-Volgens de aard van de arbeidsovereenkomst
-Overeenkomst voor een onbepaalde tijd
-Overeenkomst voor een bepaalde tijd
-Overeenkomst voor een duidelijk omschreven werk
-
-Vervangingsovereenkomst
-
-Volgens het geslacht en het studieniveau
-Mannen
-lager onderwijs
-secundair onderwijs
-hoger niet-universitair onderwijs
-universitair onderwijs
-Vrouwen
-lager onderwijs
-secundair onderwijs
-hoger niet-universitair onderwijs
-
-universitair onderwijs
-
-Volgens de beroepscategorie
-Directiepersoneel
-Bedienden
-Arbeiders
-
-Andere
-
-Uitzendkrachten en ter beschikking van de onderneming gestelde personen
-
-Tijdens het boekjaar
-
-Gemiddeld aantal tewerkgestelde personen
-Aantal daadwerkelijk gepresteerde uren
-
-Kosten voor de onderneming
-
-Codes | 1. Voltijds 2. Deeltijds 3. Totaal in
-voltijdse
-equivalenten
-
-105 104 26 116,1
-
-110 53 7 55,9
-
-111 51 19 60,2
-
-112
-
-113
-
-120 86 24 97,5
-
-1200 81 24 92,5
-
-1201 2 2
-
-1202 2 2
-
-1203 1 1
-
-121 18 2 18,6
-
-1210 17 2 17,6
-
-1211
-
-1212 1 í
-
-1213
-
-130
-
-134 94 26 106,1
-
-132 10 10
-
-133
-
-Codes | 1. Uitzendkrachten | 2. Ter
-beschikking
-van de
-onderneming
-gestelde
-personen
-
-150
-151
-152
-
-1,2
-2.442
-41.618
+| Tijdens het boekjaar | Codes | 1. Uitzendkrachten | 2. Ter beschikking van de onderneming gestelde personen |
+|---|---|---|---|
+| Gemiddeld aantal tewerkgestelde personen | 150 | 1,2 | |
+| Aantal daadwerkelijk gepresteerde uren | 151 | 2.442 | |
+| Kosten voor de onderneming | 152 | 41.618 | |
 
 43/45
-
 
 --- pág. 44 ---
 

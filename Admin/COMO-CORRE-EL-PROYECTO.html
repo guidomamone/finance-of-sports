@@ -167,10 +167,10 @@
 
 <dl class="state">
   <!-- STATS:AUTO -->
-  <div><dt>Clubes cargados</dt><dd>161</dd></div>
-  <div><dt>Países</dt><dd>14</dd></div>
-  <div><dt>Ligas en el catálogo</dt><dd>22</dd></div>
-  <div><dt>Documentos fuente</dt><dd>297</dd></div>
+  <div><dt>Clubes cargados</dt><dd>169</dd></div>
+  <div><dt>Países</dt><dd>16</dd></div>
+  <div><dt>Ligas en el catálogo</dt><dd>51</dd></div>
+  <div><dt>Documentos fuente</dt><dd>373</dd></div>
   <!-- /STATS:AUTO -->
   <div><dt>Checks de datos</dt><dd>842</dd></div>
   <div><dt>Archivos por club</dt><dd>7 <small>a mano</small></dd></div>
@@ -500,41 +500,86 @@
   </figure>
 
   <div class="col">
-    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 2, en detalle: quién transcribe, y por qué tres IAs distintas</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">El default para transcribir en volumen es correr dos APIs baratas desde tu propia terminal — <strong>0 tokens de Claude</strong>, sea 1 PDF o sean 2000 — con un subagente de Claude como red de contención, no como primera opción. La alternativa (que una sesión de Claude lea el PDF, con Tesseract si es un escaneo) funciona, pero son 70.000 a 290.000 tokens de Claude por documento, medido en <code>Admin/test-costo-transcripcion.md</code> — con ~2000 PDFs pendientes en el inventario, esa diferencia importa multiplicada.</p>
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 2, en detalle: quién transcribe, y por qué (hasta) 4 motores distintos</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Desde la Versión 302, Mistral y Gemini transcriben CADA documento EN PARALELO (no solo los escaneos) — <strong>0 tokens de Claude</strong>, sea 1 PDF o sean miles — y <code>tools/compare-transcripts.mjs</code> los compara por rubro: si coinciden, se sigue solo; si no, hace falta revisión. Por qué: un test amplio (8 documentos, ~1.660 celdas verificadas a mano, <code>Admin/test-mistral-gemini-escaneos.md</code>) confirmó que NINGUNO de los dos motores es sistemáticamente mejor — cada uno se equivoca en celdas distintas — así que la señal útil no es "elegir un default", es el desacuerdo entre los dos. Gemini además rechaza ~1 de cada 4 documentos con <code>RECITATION</code> (falso positivo de copyright de Google): ahí entra una 3ra API (Claude, por API directa) como reemplazo puntual, y un subagente de Claude completo queda como última red, para lo que ninguna API resuelve sola.</p>
   </div>
 
   <div class="tbl-wrap"><table class="ledger">
     <thead><tr><th>Quién</th><th>Cuándo</th><th>Costo/doc</th><th>El límite conocido</th></tr></thead>
     <tbody>
-      <tr><td class="mono">Mistral OCR<br><code>tools/mistral-ocr-transcribe.mjs --all</code><br><code>[--limit 150]</code></td><td><strong>Default.</strong> La mayoría de los documentos, tengan o no capa de texto. <code>--limit</code> corta la corrida a N PDFs (útil para no lanzar los ~2000 pendientes de una).</td><td class="num">~$0,01–$0,25<br>(por página)</td><td>En un escaneo dañado o rotado puede inventar un número con la misma confianza que uno bien leído, sin avisar. El <code>.md</code> sale con una advertencia bien visible cuando el PDF es un escaneo — no cargar esos datos sin verificar a mano contra el PDF (<code>club-data-mapping</code> sección 6).</td></tr>
-      <tr><td class="mono">Gemini 3.8 Flash<br><code>tools/gemini-transcribe.mjs<br>--redo-mistral-scanned</code></td><td>Los documentos que Mistral marcó como escaneo, cualesquiera hayan sido — en el test manejó escaneos rotados/dañados sin errores. <strong>OJO con el flag</strong>: <code>--all</code> NO sirve acá, busca PDFs sin ningún <code>.md</code> y se saltea justo los que Mistral ya tocó; <code>--redo-mistral-scanned</code> es el que lee la marca que dejó Mistral y pisa esa transcripción.</td><td class="num">~$0,03–$0,17</td><td>Rechaza ~1 de cada 4 documentos con <code>finishReason: RECITATION</code> — un falso positivo de copyright de Google, más común en "memorias" narrativas con lenguaje repetitivo. No es un problema del documento.</td></tr>
-      <tr><td class="mono">Un subagente de Claude</td><td>Lo que Gemini rechaza por RECITATION, o cualquier caso donde ninguna API alcance.</td><td class="num">70k–290k<br>tokens de Claude</td><td>Ninguno encontrado — el más caro, pero también el más minucioso: cruza sumas entre notas, marca <code>[ilegible]</code> en vez de inventar, y resuelve ambigüedades de OCR contra el resto del documento.</td></tr>
+      <tr><td class="mono">Mistral OCR</td><td><strong>Siempre</strong>, la transcripción canónica del club. <code>node tools/onboard.mjs "&lt;pdf&gt;"</code> (o <code>--all --limit 50</code>) la dispara sola.</td><td class="num">~$0,01–$0,25<br>(por página)</td><td>En un escaneo dañado o rotado puede inventar un número con la misma confianza que uno bien leído, sin avisar — o saltearse contenido entero (una columna de ratios, visto en el test de 8 escaneos) sin ninguna advertencia.</td></tr>
+      <tr><td class="mono">Gemini 3.8 Flash</td><td><strong>Siempre, EN PARALELO</strong> a Mistral (<code>--out-suffix .gemini-check</code>), no solo para escaneos — es el 2do chequeo que dispara la comparación.</td><td class="num">~$0,03–$0,17</td><td>Puede fabricar un valor en una celda vacía, o "corregir" en silencio un dígito hacia lo que le parece más consistente (mismo test de 8 escaneos) — y rechaza ~1 de cada 4 documentos con <code>finishReason: RECITATION</code>, un falso positivo de copyright, no un problema del documento.</td></tr>
+      <tr><td class="mono">Claude (API directa)<br><code>tools/claude-api-transcribe.mjs</code></td><td>SOLO cuando Gemini rechaza por RECITATION — <code>tools/onboard.mjs</code> lo llama solo, escribiendo al mismo <code>.gemini-check.md</code> (compare-transcripts.mjs no distingue cuál de los 2 lo generó).</td><td class="num">Sonnet 5.5,<br>$2/$10 por MTok</td><td>Recién conectado (2026-09-29) — todavía sin un test de calidad propio, a diferencia de Mistral/Gemini.</td></tr>
+      <tr><td class="mono">Un subagente de Claude</td><td>Lo que ninguna API resuelve sola (Gemini Y Claude API fallan, o una discrepancia Mistral/Gemini que hay que resolver contra el PDF a mano).</td><td class="num">70k–290k<br>tokens de Claude</td><td>El más caro, pero también el más minucioso: cruza sumas entre notas, marca <code>[ilegible]</code> en vez de inventar, y resuelve ambigüedades de OCR contra el resto del documento.</td></tr>
     </tbody>
   </table></div>
 
   <div class="col">
-    <p style="color:var(--ink-soft);margin:12px 0 0;">El orden no es arbitrario: Mistral es el más barato y no tiene el filtro de copyright de Gemini, así que absorbe casi todo — hasta lo que Gemini rechazaría. Gemini entra específicamente donde Mistral es más débil (escaneos dañados). Claude es la última red, para lo que ninguna API resuelve sola. El test que llevó a este orden — 30 documentos, comparados cifra por cifra contra una transcripción ya verificada — está completo en <code>Admin/test-costo-transcripcion.md</code>, junto con los 3 bugs reales que salieron en el camino (tablas que Mistral devuelve como link roto en vez de contenido, un timeout que no cortaba, y un rate-limit que reintentaba demasiado rápido).</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;">El test original (30 documentos, comparados cifra por cifra contra una transcripción ya verificada, <code>Admin/test-costo-transcripcion.md</code>) fue el que estableció que Mistral+Gemini salen mucho más barato que un subagente de Claude. El test más nuevo (8 escaneos, <code>Admin/test-mistral-gemini-escaneos.md</code>) cambió el criterio de EN QUÉ ORDEN usar Mistral/Gemini (ya no hay un "mejor" fijo) por EJECUTAR LOS DOS Y COMPARAR — Claude (API directa primero, subagente completo después) queda como las 2 últimas redes, para lo que la comparación automática no puede resolver sola.</p>
   </div>
 
   <div class="col">
     <h3 style="font-size:18px;margin:26px 0 6px;font-weight:600;">De punta a punta, en una terminal nueva</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Lo que hay que tipear, en orden, arrancando de cero (sin ninguna sesión de Claude Code de por medio).</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Lo que hay que tipear, arrancando de cero (sin ninguna sesión de Claude Code de por medio). Separado en bloques independientes — para probar algo puntual no hace falta correr todo de punta a punta, cada bloque de abajo se puede tipear solo.</p>
   </div>
   <pre class="term"><code><span class="rem"># 1. pararse en la carpeta del proyecto</span>
-cd /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports
+cd /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports</code></pre>
 
-<span class="rem"># 2. confirmar que las API keys están (si falta alguna, pedírsela a Guido)</span>
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Proceso completo, de punta a punta</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Mistral → Gemini en paralelo → comparar → onboardear lo que coincida (nativo o ya resuelto a mano). Club y año se adivinan solos por la carpeta/nombre del archivo — si hay ambigüedad, el comando lo dice y pide <code>--club</code>/<code>--year</code> explícito en vez de arriesgar.</p>
+  </div>
+  <pre class="term"><code><span class="rem"># confirmar que las API keys están (si falta alguna, pedírsela a Guido)</span>
 ls Admin/mistral/.env Admin/gemini/.env
 
-<span class="rem"># 3. Mistral OCR, el default — esta corrida hace hasta 150 documentos</span>
-node tools/mistral-ocr-transcribe.mjs --all --limit 150
+<span class="rem"># un documento nuevo</span>
+node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
 
-<span class="rem"># 4. Gemini re-hace SOLO lo que Mistral marcó como escaneo</span>
-node tools/gemini-transcribe.mjs --redo-mistral-scanned
+<span class="rem"># o un lote de N (mismo --limit que ya usabas con Mistral; más de 50 sin</span>
+<span class="rem"># --limit pide --confirm, es plata real — ver el aviso del propio comando)</span>
+node tools/onboard.mjs --all --limit 50</code></pre>
 
-<span class="rem"># 5. lo que ni Mistral ni Gemini pudieron: queda para un subagente de Claude</span>
-node tools/gemini-transcribe.mjs --pendientes-claude</code></pre>
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Solo Mistral</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">El default, el más barato, sin el filtro de copyright de Gemini.</p>
+  </div>
+  <pre class="term"><code>node tools/mistral-ocr-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
+
+<span class="rem"># o en lote</span>
+node tools/mistral-ocr-transcribe.mjs --all --limit 150</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Solo Gemini</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;"><code>--out-suffix</code> transcribe a un archivo APARTE (<code>.gemini-check.md</code>), sin pisar el de Mistral — es la transcripción EN PARALELO para comparar, no un reemplazo.</p>
+  </div>
+  <pre class="term"><code>node tools/gemini-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --out-suffix .gemini-check</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Mistral y Gemini en el mismo script</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Las 2 transcripciones en paralelo, sin comparar ni onboardear todavía.</p>
+  </div>
+  <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --transcribe-only
+
+<span class="rem"># o en lote</span>
+node tools/onboard.mjs --all --limit 50 --transcribe-only</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Chequear que Mistral y Gemini coincidan</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Compara por RUBRO, no diff de texto (dos transcripciones fieles pueden diferir en formato sin que importe). No onboardea aunque dé match — solo dice sí/no y, si no, en qué rubros puntuales.</p>
+  </div>
+  <pre class="term"><code>node tools/compare-transcripts.mjs "archivo.md" "archivo.gemini-check.md"
+
+<span class="rem"># o con la misma sintaxis que el resto (adivina club/año, sirve en lote)</span>
+node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --check-only</code></pre>
+
+  <div class="col">
+    <p style="margin:18px 0 2px;font-weight:600;">Onboardear lo que ya coincide</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Sea porque Mistral y Gemini coincidieron solos, o porque Claude corrigió el <code>.md</code> canónico contra el PDF para resolver una discrepancia. Vuelve a comparar EN EL MOMENTO antes de onboardear — nunca confía en un resultado guardado de una corrida anterior, así que si Claude ya arregló el archivo, esto lo detecta solo, sin que nadie le avise nada.</p>
+  </div>
+  <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --onboard-only
+
+<span class="rem"># o en lote</span>
+node tools/onboard.mjs --all --limit 50 --onboard-only</code></pre>
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>

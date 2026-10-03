@@ -260,6 +260,9 @@ const FX_CLOSE = {
   'BRL@2024-12-31': { fx: 6.1923,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2024' },
   'BRL@2025-12-31': { fx: 5.5024,  source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025' },
   'COP@2018-12-31': { fx: 3249.75, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia / Banco de la República) al 31/12/2018' },
+  'COP@2022-12-31': { fx: 4810.2, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 31/12/2022' },
+  'COP@2023-12-31': { fx: 3822.05, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 31/12/2023' },
+  'COP@2024-12-31': { fx: 4409.15, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 31/12/2024' },
   'COP@2025-12-31': { fx: 3757.08, source: 'market_close', label: 'TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025' },
   // Sesión 2026-09-25 (onboarding de Bayern Munich 2020/21, tanda de 20 transcripts al azar).
   'EUR@2021-06-30': { fx: 0.8415,  source: 'market_close', label: 'Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD)' },
@@ -316,6 +319,30 @@ const FX_CLOSE = {
   'DKK@2023-06-30': { fx: 6.8089, source: 'market_close', label: 'Cierre Danmarks Nationalbank al 30/6/2023, cotización directa DKK/USD (1 DKK ≈ 0,1469 USD)' },
   'DKK@2024-06-30': { fx: 6.9664, source: 'market_close', label: 'Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando DKK/EUR (7,4575) × EUR/USD (1,0705) (1 DKK ≈ 0,1435 USD)' },
   'DKK@2024-12-31': { fx: 7.1786, source: 'market_close', label: 'Cierre BCE al 31/12/2024, cruzando DKK/EUR (7,4578) × EUR/USD (1,0389) (1 DKK ≈ 0,1393 USD)' },
+  'CLP@2010-12-31': { fx: 468.01, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2011-01-03, 2010-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'CLP@2011-12-31': { fx: 519.2, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2012-01-02, 2011-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'CLP@2012-12-31': { fx: 479.96, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2013-01-02, 2012-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'CLP@2013-12-31': { fx: 524.61, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2014-01-02, 2013-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'CLP@2014-12-31': { fx: 606.75, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2015-01-02, 2014-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'COP@2017-12-31': { fx: 2984, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2017-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'COP@2019-12-31': { fx: 3277.14, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2019-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'COP@2020-12-31': { fx: 3432.5, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2020-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'COP@2021-12-31': { fx: 3981.16, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2021-12-31' }, // tools/cargar.mjs 2026-10-02 (tools/fx-reference/)
+  'BRL@2008-12-31': { fx: 2.337, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2008-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2009-12-31': { fx: 1.7412, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2009-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2010-12-31': { fx: 1.6662, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2010-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2011-12-31': { fx: 1.8758, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, última rueda hábil antes del cierre (2011-12-30, 2011-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2012-12-31': { fx: 2.0435, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2012-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2013-12-31': { fx: 2.3426, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2013-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2015-12-31': { fx: 3.9048, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2015-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2014-12-31': { fx: 2.6562, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2014-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2016-12-31': { fx: 3.2591, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, última rueda hábil antes del cierre (2016-12-30, 2016-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2018-12-31': { fx: 3.8748, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2018-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2018-06-30': { fx: 0.85778, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2017-06-30': { fx: 0.876271, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2017-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2016-06-30': { fx: 0.900739, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2016-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2019-06-30': { fx: 0.878735, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2012-06-30': { fx: 0.794281, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2012-06-29, 2012-06-30 no es día hábil)' }, // alta-club.mjs 2026-10-03 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay

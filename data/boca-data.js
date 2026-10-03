@@ -50,6 +50,71 @@
 // leyenda "no reportado por el club", y una opción "(Placeholder)" en el selector de Año.
 // Quedan los 2 ejercicios con documento: el balance 2024/25 y el presupuesto 2026/27.
 const bocaRevenueLinesByYear = {
+  // Ejercicio 2022 = Estados Contables auditados, Ejercicio Económico N°118 (1/7/2021 al 30/6/2022,
+  // sources['boca-balance-2021-22']). Encontrado vía Wayback CDX de dominio completo (to-do 73,
+  // Versión 247), transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md).
+  // Las 12 categorías tal cual el Estado de Recursos y Gastos (pág. 32): la suma da EXACTO el Total
+  // de Recursos ($14.279.912.579) impreso ahí. Guardado en ARS MILLONES (el documento imprime pesos
+  // completos en moneda homogénea, Nota 2.2, reexpresada a poder adquisitivo del 30/06/2022; cada
+  // cifra se divide por 1.000.000 al cargar, mismo criterio de unidad que 2025/2027).
+  // OJO: la columna "30/06/2022" que aparece como COMPARATIVA dentro del balance de 2023 (año
+  // siguiente) reexpresa estas mismas cifras a OTRA fecha de cierre y NO coincide con estos
+  // números — se usó siempre la columna "año corriente" del balance cuyo ejercicio es el que se
+  // carga, nunca la comparativa de un balance posterior (club-data-mapping sección 6, regla 5).
+  2022: [
+    { rawLabel:'Ingresos por transferencias de jugadores', normalizedCategory:'player_sales', amountNative:3066.44042, disclosureLevel:'detailed' },
+    { rawLabel:'Exhibiciones y espectáculos de fútbol', normalizedCategory:'matchday_competition', amountNative:2697.553971, disclosureLevel:'detailed', items:[
+      ['Abonos a palcos, plateas y cocheras', 694.64454], ['Televisación de partidos', 803.340232], ['Copa Libertadores', 632.141281],
+      ['Giras y amistosos', 229.146892], ['Copa Argentina', 122.973569], ['Campeonato Superliga', 116.387604], ['Entradas generales Campeonato Superliga', 98.919853],
+    ]},
+    { rawLabel:'Publicidad y concesiones', normalizedCategory:'sponsorship_commercial', amountNative:3542.07965, disclosureLevel:'detailed', items:[
+      ['Adidas', 1891.794973], ['Qatar Airways', 877.417554], ['Publicidad Estática', 302.414564], ['Garbarino', 74.561707], ['Regalías Productos Boca', 64.92519],
+      ['Banco Francés', 46.271613], ['Sponsors Campeonato', 33.00668], ['Cabify', 21.244529], ['Tarjeta Xeneize', 22.362489], ['Huawei', 18.593992],
+      ['Boca Shop', 18.138673], ['Electronics Arts Inc.', 16.047871], ['Pepsico de Argentina - Pepsi', 16.292872], ['Unilever', 15.97266],
+      ['Programa Goles Xeneize', 15.384893], ['Avvaro Consulting Ltd.', 13.260926], ['Quilmes', 32.522257], ['Avalian Cobertura Médica', 33.662649],
+      ['Museo Boca', 3.608295], ['Varios', 24.595263],
+    ]},
+    { rawLabel:'Cuotas sociales', normalizedCategory:'member_dues', amountNative:3768.632502, disclosureLevel:'detailed', items:[
+      ['Socios Activos', 1845.254379], ['Socios Adherentes', 853.206022], ['Socios Adherentes Interior', 362.03635],
+      ['Socios Interior/Exterior', 417.797996], ['Socios Menores', 212.523024], ['Socios Cadetes', 77.814731],
+    ]},
+    { rawLabel:'Departamento de fútbol juvenil', normalizedCategory:'youth_football', amountNative:545.971523, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos varios', normalizedCategory:'other_income', amountNative:356.380659, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:91.590314, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de educación física', normalizedCategory:'other_sports', amountNative:53.951045, disclosureLevel:'detailed' },
+    { rawLabel:'Otras contribuciones de asociados', normalizedCategory:'other_income', amountNative:52.380243, disclosureLevel:'detailed' },
+    { rawLabel:'Cesión de jugadores a préstamo', normalizedCategory:'player_sales', amountNative:89.065287, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet', normalizedCategory:'other_sports', amountNative:15.866965, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio 2023 = Estados Contables auditados, Ejercicio Económico N°119 (1/7/2022 al 30/6/2023,
+  // sources['boca-balance-2022-23']). Mismo hallazgo/transcripción que 2022 (to-do 73). Las 11
+  // categorías tal cual el Estado de Recursos y Gastos (pág. 61): suma EXACTA al Total de Recursos
+  // ($26.178.273.845). "Departamento de fútbol juvenil" no tiene ingreso propio este ejercicio (el
+  // documento lo imprime en $0 para 30/06/2023) y se omite, igual que "Derechos de tanteo" (revenue),
+  // que no aparece en absoluto en esta columna.
+  2023: [
+    { rawLabel:'Exhibiciones y espectáculos de fútbol', normalizedCategory:'matchday_competition', amountNative:7608.836867, disclosureLevel:'detailed', items:[
+      ['Abonos a palcos, plateas y cocheras', 3647.604427], ['Copa Libertadores', 1429.037411], ['Televisación de partidos', 1466.532553],
+      ['Campeonato Liga Profesional de Fútbol', 779.151204], ['Supercopa Argentina', 75.490066], ['Copa Argentina', 65.990746], ['Giras y amistosos', 145.03046],
+    ]},
+    { rawLabel:'Cuotas sociales', normalizedCategory:'member_dues', amountNative:10384.407962, disclosureLevel:'detailed', items:[
+      ['Socios Activos', 4468.599555], ['Socios Adherentes', 2797.228137], ['Socios Adherentes Interior', 1279.449509],
+      ['Socios Interior/Exterior', 1092.548488], ['Socios Menores', 558.342775], ['Socios Cadetes', 188.239498],
+    ]},
+    { rawLabel:'Publicidad, concesiones y licencias', normalizedCategory:'sponsorship_commercial', amountNative:4610.535735, disclosureLevel:'detailed', items:[
+      ['Adidas', 2755.24517], ['Publicidad Estática', 922.186351], ['DIRECTV Argentina S.A.', 201.231853], ['Regalías Productos Boca', 209.538175],
+      ['Avalian Cobertura Médica', 163.929328], ['Banco Francés', 107.710186], ['Cabify', 64.829419], ['Quilmes', 51.45724], ['Pepsico de Argentina - Pepsi', 37.490093],
+      ['Electronics Arts Inc.', 35.138939], ['Varios', 26.509117], ['Tarjeta Xeneize', 19.078573], ['Programa Goles Xeneize', 9.18678],
+      ['Museo Boca', 3.665998], ['Boca Shop', 3.338513],
+    ]},
+    { rawLabel:'Ingresos por transferencias de jugadores', normalizedCategory:'player_sales', amountNative:1705.786382, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos varios', normalizedCategory:'other_income', amountNative:1199.201315, disclosureLevel:'detailed' },
+    { rawLabel:'Cesión de jugadores a préstamo', normalizedCategory:'player_sales', amountNative:202.041217, disclosureLevel:'detailed' },
+    { rawLabel:'Mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:156.552642, disclosureLevel:'detailed' },
+    { rawLabel:'Otras contribuciones de asociados', normalizedCategory:'other_income', amountNative:144.827392, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de educación física', normalizedCategory:'other_sports', amountNative:111.347243, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet', normalizedCategory:'other_sports', amountNative:54.73709, disclosureLevel:'detailed' },
+  ],
   // Ejercicio 2025 = Memoria y Balance oficial auditado al 30/06/2025 (sources['boca-balance-2024-25']
   // en data/clubs.js). Las 11 categorías tal cual la pág. 76 del balance (mismo orden y mismos montos
   // que antes vivían en nativeFinancialsBoca[2025].ingresos): la suma da EXACTO el Total de Recursos
@@ -141,6 +206,172 @@ const bocaRevenueLinesByYear = {
 
 // ---------- GASTOS ----------
 const bocaExpenseLinesByYear = {
+  // Ejercicio 2022: mismo criterio de separación wages_squad/player_amortisation/other_expenses por
+  // departamento que ya usa 2025 (ver comentario de cabecera del archivo) — acá cada departamento SÍ
+  // desglosa su propia línea "Remuneraciones y cargas sociales" (o "Remuneraciones personal
+  // administrativo"/"Remuneraciones plantel profesional, primas" en Fútbol profesional), así que se
+  // separa igual. La suma total (con las 4 líneas de transferencias de pases de arriba) da EXACTO
+  // $(13.669.793.975), el Total de Gastos impreso pág. 32.
+  2022: [
+    { rawLabel:'Fútbol profesional — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-2476.698555, disclosureLevel:'detailed', items:[
+      ['Remuneraciones plantel profesional, primas', -2410.789835], ['Remuneraciones personal administrativo', -65.90872],
+    ]},
+    { rawLabel:'Fútbol profesional — Amortización de jugadores profesionales', normalizedCategory:'player_amortisation', amountNative:-2835.395886, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional — Otros gastos operativos', normalizedCategory:'other_expenses', amountNative:-554.791106, disclosureLevel:'detailed', items:[
+      ['Comisiones', -111.740743], ['Artículos de deporte e indumentaria', -121.995986], ['Gastos pretemporada', -72.131321], ['Farmacia y asistencia médica', -66.211338],
+      ['Gastos Secretaría técnica', -109.25375], ['Gastos Área internacional', -21.124572], ['Gastos diversos', -27.67192], ['Viajes', -18.98083], ['Vigilancia', -1.695769],
+      ['Agasajos y comidas', -3.984877],
+    ]},
+    { rawLabel:'Gastos por transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-878.931486, disclosureLevel:'detailed' },
+    { rawLabel:'Participación de terceros en venta de jugadores', normalizedCategory:'other_expenses', amountNative:-181.324651, disclosureLevel:'detailed' },
+    { rawLabel:'Organización de espectáculos', normalizedCategory:'match_organisation_expense', amountNative:-1256.358938, disclosureLevel:'detailed', items:[
+      ['Campeonato Oficial', -875.564453], ['Copa Libertadores', -323.036989], ['Copa Argentina', -33.567552], ['Partidos amistosos', -24.189944],
+    ]},
+    { rawLabel:'Incorporación de jugadores a préstamo', normalizedCategory:'other_expenses', amountNative:-43.440853, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de tanteo', normalizedCategory:'other_expenses', amountNative:-70.468931, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-374.373211, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-152.826052, disclosureLevel:'detailed', items:[
+      ['Materiales y elementos de limpieza', -40.638041], ['Conservación de muebles e inmuebles', -39.194871], ['Servicios públicos', -22.441432],
+      ['Gastos diversos', -22.47758], ['A.B.L. e impuestos municipales', -16.342345], ['Honorarios', -6.998786], ['Agasajos, buffet y refrigerios', -4.732997],
+    ]},
+    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-145.1943, disclosureLevel:'detailed', items:[
+      ['Deportes varios: Remuneraciones y cargas sociales', -39.596435], ['Vóley: Remuneraciones y cargas sociales', -36.779939],
+      ['Básquet amateur: Remuneraciones y cargas sociales', -30.859027], ['Fútbol 0.000005: Remuneraciones y cargas sociales', -27.051865],
+      ['Gastos administrativos: Remuneraciones y cargas sociales', -10.907034],
+    ]},
+    { rawLabel:'Departamento de educación física — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-127.790347, disclosureLevel:'detailed', items:[
+      ['Deportes varios: otros gastos', -70.010527, [['Gastos temporada pileta', -35.163544], ['Gastos colonia', -21.398023], ['Gastos diversos', -4.532956], ['Viajes', -6.213688], ['Indumentaria deportiva', -1.930789], ['Afiliación e inscripciones', -0.771527]]],
+      ['Fútbol 0.000005: otros gastos', -29.5958, [['Artículos de deporte', -5.474541], ['Viajes', -2.529518], ['Gastos diversos', -21.591741]]],
+      ['Básquet amateur: otros gastos', -18.125307, [['Viáticos jugadores', -2.388663], ['Indumentaria deportiva', -13.672242], ['Gastos concentración y viajes', -0.085598], ['Organización de eventos y espectáculos', -1.084656], ['Gastos diversos', -0.894148]]],
+      ['Vóley: otros gastos', -9.611653, [['Afiliación e inscripciones', -1.716041], ['Gastos de concentración y viajes', -1.33128], ['Gastos diversos', -6.564332]]],
+      ['Gastos administrativos: otros', -0.44706, [['Gastos diversos', -0.44706]]],
+    ]},
+    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-179.1326, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol juvenil — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-122.167141, disclosureLevel:'detailed', items:[
+      ['Gastos diversos', -37.961241], ['Agasajos, buffet y refrigerios', -53.851594], ['Vigilancia', -18.9224], ['Mantenimiento de campo de juego', -11.431906],
+    ]},
+    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-42.151924, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-193.017539, disclosureLevel:'detailed', items:[
+      ['Locación de servicios plantel', -118.103658], ['Gastos de concentración y viajes', -33.726403], ['Gastos de vivienda', -13.229105], ['Gastos diversos', -14.251747],
+      ['Gastos de organización de espectáculos', -9.837104], ['Artículos de deporte', -2.977843], ['Afiliación e inscripciones', -0.891679],
+    ]},
+    { rawLabel:'Departamento de Vóley Liga Nacional', normalizedCategory:'youth_other_sports_expense', amountNative:-49.836854, disclosureLevel:'detailed', items:[['Vóley femenino', -49.836854]] },
+    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-94.1488, disclosureLevel:'detailed' },
+    { rawLabel:'Casa Amarilla — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-65.275649, disclosureLevel:'detailed', items:[
+      ['Servicios de vigilancia y limpieza', -29.918098], ['Servicios públicos', -17.208991], ['Conservación muebles e inmuebles', -5.831272],
+      ['A.B.L. e impuestos municipales', -3.050802], ['Gastos diversos', -4.85003], ['Parque Social y Deportivo Casa Amarilla', -2.886631], ['Agasajos, buffet y refrigerios', -1.397432], ['Honorarios', -0.132393],
+    ]},
+    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-103.673862, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento médico — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-24.632169, disclosureLevel:'detailed', items:[
+      ['Honorarios', -17.372384], ['Gastos diversos', -7.259785],
+    ]},
+    { rawLabel:'Departamento de cultura', normalizedCategory:'admin_general_expense', amountNative:-34.297136, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol femenino', normalizedCategory:'youth_other_sports_expense', amountNative:-74.35979, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-387.601593, disclosureLevel:'detailed', items:[
+      ['Gastos Gerencia de Administración y Finanzas', -97.323505], ['Gastos Gerencia de Sistemas', -51.896167], ['Gastos Gerencia de Recursos Humanos', -46.705775],
+      ['Gastos Comisión Directiva', -29.649505], ['Gastos Gerencia de Legales', -28.242953], ['Gastos Gerencia General', -23.657564], ['Gastos Gerencia de Seguridad', -38.654409],
+      ['Gastos Registro Abonos y Cobranzas', -40.302334], ['Gastos Gerencia de Abastecimiento', -19.625331], ['Gastos Gerencia de Marketing', -11.54405],
+    ]},
+    { rawLabel:'Gastos de estructura operativa — Otros gastos', normalizedCategory:'admin_general_expense', amountNative:-637.239659, disclosureLevel:'detailed', items:[
+      ['Gastos Registro Abonos y Cobranzas', -184.57116, [['Comisión por cobranzas', -102.000989], ['Gastos oficina interior/exterior', -16.497791], ['Gastos diversos', -63.551708], ['Impresos, papelería y útiles de escritorio', -2.512133], ['Franqueos y mensajería', -0.008539]]],
+      ['Gastos Gerencia de Sistemas', -80.592684, [['Mantenimiento y soporte', -34.942674], ['Gastos diversos', -45.65001]]],
+      ['Gastos Gerencia General', -49.457827, [['Gastos departamento de prensa', -48.586905], ['Viajes, movilidad y viáticos', -0.844872], ['Gastos diversos', -0.021302], ['Impresos, papelería y útiles de escritorio', -0.004748]]],
+      ['Gastos Gerencia de Marketing', -31.636453, [['Honorarios', -26.489698], ['Gastos diversos', -5.146755]]],
+      ['Gastos Comisión Directiva', -41.847564, [['Honorarios', -9.745536], ['Departamento de relaciones públicas', -10.026476], ['Movilidad y viáticos', -5.220696], ['Obsequios', -4.269574], ['Gastos diversos', -10.678458], ['Agasajos, buffet y refrigerios', -1.590058], ['Publicidad', -0.206097], ['Servicios', -0.110669]]],
+      ['Gastos Gerencia de Administración y Finanzas', -35.887378, [['Honorarios', -19.879818], ['Auditoría interna', -13.065567], ['Gastos diversos', -2.538235], ['Impresos, papelería y útiles de escritorio', -0.375642], ['Movilidad y viáticos', -0.028116]]],
+      ['Gastos Gerencia de Seguridad', -148.181784, [['Servicios de vigilancia', -138.322406], ['Gastos diversos', -9.859378]]],
+      ['Gastos Gerencia de Legales', -12.573843, [['Honorarios', -11.89642], ['Franqueos y telegramas', -0.327972], ['Gastos diversos', -0.211696], ['Impresos, papelería y útiles de escritorio', -0.137755]]],
+      ['Gastos Gerencia de Recursos Humanos', -22.025716, [['Beneficios al personal', -16.547146], ['Honorarios', -1.914865], ['Gastos diversos', -3.372238], ['Movilidad y viáticos', -0.191467]]],
+      ['Gastos Gerencia de Abastecimiento', -30.46525, [['Gastos departamento de indumentaria', -27.732442], ['Gastos diversos', -2.701881], ['Movilidad y viáticos', -0.027248], ['Impresos, papelería y útiles de escritorio', -0.003679]]],
+    ]},
+    { rawLabel:'Gastos generales', normalizedCategory:'admin_general_expense', amountNative:-2070.70025, disclosureLevel:'detailed', items:[
+      ['Indemnizaciones y resarcimientos', -1003.015608], ['Impuestos y tasas', -449.446935], ['Cargo por créditos irrecuperables', -256.455796],
+      ['Impuesto sobre los débitos y créditos bancarios', -142.334264], ['Gastos diversos', -126.501857], ['Gratificaciones', -42.825105], ['Seguros', -22.381527],
+      ['Cargo por contingencias y juicios', -16.684876], ['Gastos eventuales', -7.342844], ['Donaciones', -3.711438],
+    ]},
+    { rawLabel:'Depreciaciones y amortizaciones', normalizedCategory:'depreciation', amountNative:-493.964693, disclosureLevel:'detailed' },
+  ],
+  // Ejercicio 2023: mismo criterio que 2022. La suma total (con las 4 líneas de transferencias de
+  // pases) da EXACTO $(27.795.138.995), el Total de Gastos impreso pág. 60. "Participación de
+  // terceros en venta de jugadores" no tiene gasto propio este ejercicio (el documento lo imprime en
+  // $0 para 30/06/2023) y se omite.
+  2023: [
+    { rawLabel:'Fútbol profesional — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-5729.020205, disclosureLevel:'detailed', items:[
+      ['Remuneraciones plantel profesional, primas', -5415.580061], ['Remuneraciones personal administrativo', -313.440144],
+    ]},
+    { rawLabel:'Fútbol profesional — Amortización de jugadores profesionales', normalizedCategory:'player_amortisation', amountNative:-4750.850236, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol profesional — Otros gastos operativos', normalizedCategory:'other_expenses', amountNative:-857.598744, disclosureLevel:'detailed', items:[
+      ['Comisiones', -446.80689], ['Artículos de deporte e indumentaria', -106.401665], ['Farmacia y asistencia médica', -98.770404], ['Gastos pretemporada', -129.755239],
+      ['Gastos Área internacional', -33.155633], ['Gastos diversos', -29.24211], ['Agasajos y comidas', -13.466803],
+    ]},
+    { rawLabel:'Organización de espectáculos', normalizedCategory:'match_organisation_expense', amountNative:-3293.988728, disclosureLevel:'detailed', items:[
+      ['Campeonato Oficial', -2335.368448], ['Copa Libertadores', -752.587093], ['Supercopa Argentina', -148.216608], ['Copa Argentina', -17.814189],
+      ['Festejo día del hincha', -36.035624], ['Partidos amistosos', -3.966766],
+    ]},
+    { rawLabel:'Gastos por transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-816.267487, disclosureLevel:'detailed' },
+    { rawLabel:'Derechos de tanteo', normalizedCategory:'other_expenses', amountNative:-103.643683, disclosureLevel:'detailed' },
+    { rawLabel:'Incorporación de jugadores a préstamo', normalizedCategory:'other_expenses', amountNative:-79.201253, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-804.694703, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-406.293261, disclosureLevel:'detailed', items:[
+      ['Materiales y elementos de limpieza', -101.0728], ['Conservación de muebles e inmuebles', -85.900449], ['Gastos diversos', -82.537904],
+      ['Servicios públicos', -60.243276], ['Alquileres, A.B.L. e impuestos municipales', -50.552867], ['Honorarios', -13.804354], ['Agasajos, buffet y refrigerios', -12.181611],
+    ]},
+    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-388.50668, disclosureLevel:'detailed', items:[
+      ['Vóley femenino y masculino: Remuneraciones y cargas sociales', -148.890355], ['Deportes varios: Remuneraciones y cargas sociales', -86.379641],
+      ['Básquet amateur: Remuneraciones y cargas sociales', -64.65026], ['Fútbol 0.000005: Remuneraciones y cargas sociales', -52.473905],
+      ['Gastos administrativos: Remuneraciones y cargas sociales', -36.112519],
+    ]},
+    { rawLabel:'Departamento de educación física — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-292.889098, disclosureLevel:'detailed', items:[
+      ['Deportes varios: otros gastos', -143.782788, [['Gastos temporada pileta', -85.841456], ['Gastos colonia', -15.160946], ['Gastos diversos', -21.72139], ['Indumentaria deportiva', -8.324923], ['Viajes', -6.722419], ['Afiliación e inscripciones', -6.011654]]],
+      ['Vóley femenino y masculino: otros gastos', -58.97241, [['Gastos diversos', -35.428029], ['Gastos de concentración y viajes', -11.396233], ['Indumentaria deportiva', -7.661776], ['Afiliación e inscripciones', -4.486372]]],
+      ['Fútbol 0.000005: otros gastos', -53.730266, [['Gastos diversos', -40.646264], ['Artículos de deporte', -10.590854], ['Viajes', -2.493148]]],
+      ['Básquet amateur: otros gastos', -24.801942, [['Indumentaria deportiva', -16.16631], ['Viáticos jugadores', -5.588733], ['Organización de eventos y espectáculos', -1.417219], ['Gastos diversos', -1.609373], ['Gastos concentración y viajes', -0.020307]]],
+      ['Gastos administrativos: otros', -11.601692, [['Gastos diversos', -11.601692]]],
+    ]},
+    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-547.636258, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol juvenil — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-357.245434, disclosureLevel:'detailed', items:[
+      ['Agasajos, buffet y refrigerios', -183.32349], ['Gastos diversos', -93.663355], ['Vigilancia', -59.107369], ['Mantenimiento de campo de juego', -21.15122],
+    ]},
+    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-86.056673, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-354.094626, disclosureLevel:'detailed', items:[
+      ['Locación de servicios plantel', -191.671505], ['Gastos de concentración y viajes', -58.820447], ['Gastos diversos', -46.547345], ['Gastos de vivienda', -24.378913],
+      ['Gastos de organización de espectáculos', -20.856653], ['Artículos de deporte', -9.312018], ['Afiliación e inscripciones', -2.507745],
+    ]},
+    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-205.986471, disclosureLevel:'detailed' },
+    { rawLabel:'Casa Amarilla — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-106.867088, disclosureLevel:'detailed', items:[
+      ['Servicios públicos', -44.989823], ['Servicios de vigilancia y limpieza', -30.752488], ['Conservación muebles e inmuebles', -15.659543],
+      ['Gastos diversos', -9.253292], ['Parque Social y Deportivo Casa Amarilla', -2.926487], ['Agasajos, buffet y refrigerios', -2.899728], ['Honorarios', -0.385727],
+    ]},
+    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-210.037341, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento médico — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-72.898353, disclosureLevel:'detailed', items:[
+      ['Honorarios', -64.706351], ['Gastos diversos', -8.192002],
+    ]},
+    { rawLabel:'Departamento de cultura', normalizedCategory:'admin_general_expense', amountNative:-84.971758, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol femenino', normalizedCategory:'youth_other_sports_expense', amountNative:-340.901098, disclosureLevel:'detailed' },
+    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-843.055427, disclosureLevel:'detailed', items:[
+      ['Gastos Gerencia de Administración y Finanzas', -219.536395], ['Gastos Gerencia de Sistemas', -116.861628], ['Gastos Gerencia de Recursos Humanos', -92.373845],
+      ['Gastos Centro de Atención al Socio', -82.409189], ['Gastos Gerencia de Seguridad', -70.722233], ['Gastos Comisión Directiva', -67.547078],
+      ['Gastos Gerencia de Legales', -60.297003], ['Gastos Gerencia General', -56.771693], ['Gastos Gerencia de Marketing', -33.787921], ['Gastos Gerencia de Abastecimiento', -42.748442],
+    ]},
+    { rawLabel:'Gastos de estructura operativa — Otros gastos', normalizedCategory:'admin_general_expense', amountNative:-1576.143212, disclosureLevel:'detailed', items:[
+      ['Gastos Centro de Atención al Socio', -622.832155, [['Comisión por cobranzas', -411.237521], ['Gastos diversos', -158.972842], ['Gastos oficina interior/exterior', -49.896935], ['Impresos, papelería y útiles de escritorio', -2.724857]]],
+      ['Gastos Gerencia de Sistemas', -123.929794, [['Mantenimiento y soporte', -73.013856], ['Gastos diversos', -50.915938]]],
+      ['Gastos Gerencia General', -135.159969, [['Gastos departamento de prensa', -134.422869], ['Viajes, movilidad y viáticos', -0.734606], ['Gastos diversos', -0.002494]]],
+      ['Gastos Gerencia de Marketing', -48.24672, [['Honorarios', -45.781095], ['Gastos diversos', -2.465625]]],
+      ['Gastos Comisión Directiva', -76.776159, [['Gastos diversos', -24.065538], ['Departamento de relaciones públicas', -19.547902], ['Honorarios', -15.50444], ['Obsequios', -10.696781], ['Agasajos, buffet y refrigerios', -4.05141], ['Movilidad y viáticos', -2.633471], ['Publicidad', -0.145987], ['Servicios', -0.13063]]],
+      ['Gastos Gerencia de Administración y Finanzas', -56.774065, [['Honorarios', -25.357701], ['Auditoría interna', -14.995335], ['Gastos diversos', -15.585176], ['Impresos, papelería y útiles de escritorio', -0.823525], ['Movilidad y viáticos', -0.012328]]],
+      ['Gastos Gerencia de Seguridad', -372.455961, [['Servicios de vigilancia', -354.956516], ['Gastos diversos', -17.499445]]],
+      ['Gastos Gerencia de Legales', -15.13375, [['Honorarios', -14.170574], ['Franqueos y telegramas', -0.353334], ['Gastos diversos', -0.540713], ['Impresos, papelería y útiles de escritorio', -0.069129]]],
+      ['Gastos Gerencia de Abastecimiento', -66.392753, [['Gastos departamento de indumentaria', -63.36471], ['Gastos diversos', -2.84335], ['Impresos, papelería y útiles de escritorio', -0.184693]]],
+      ['Gastos Gerencia de Recursos Humanos', -58.441886, [['Beneficios al personal', -46.62529], ['Gastos diversos', -7.290267], ['Honorarios', -3.817398], ['Movilidad y viáticos', -0.708931]]],
+    ]},
+    { rawLabel:'Gastos generales', normalizedCategory:'admin_general_expense', amountNative:-4316.155097, disclosureLevel:'detailed', items:[
+      ['Indemnizaciones y resarcimientos', -1784.496671], ['Impuestos y tasas', -895.817884], ['Cargo por créditos irrecuperables', -735.001006],
+      ['Cargo por contingencias y juicios', -250.636103], ['Gastos diversos', -282.202733], ['Impuesto sobre los débitos y créditos bancarios', -305.030759],
+      ['Seguros', -49.842649], ['Gratificaciones', -5.696066], ['Gastos eventuales', -4.028016], ['Donaciones', -3.40321],
+    ]},
+    { rawLabel:'Depreciaciones y amortizaciones', normalizedCategory:'depreciation', amountNative:-1170.136081, disclosureLevel:'detailed' },
+  ],
   // Ejercicio 2025: reconstruido departamento por departamento a partir de Clubes/Argentina/Boca/
   // memoria-y-balance-2024-25.md (Anexos IX, X, XI-XVIII), separando en cada departamento su propia
   // línea "Remuneraciones y cargas sociales" (wages_squad) del resto de sus gastos operativos —
@@ -421,6 +652,29 @@ const bocaExpenseLinesByYear = {
 
 // ---------- METADATOS POR EJERCICIO ----------
 const bocaFiscalYearMeta = {
+  // Ejercicio 2022 = Estados Contables auditados, Ejercicio N°118 (sources['boca-balance-2021-22']).
+  // fx = USD activo al 30/06/2022 ($125,03), declarado por el propio balance en su Anexo III
+  // (Activos y Pasivos en Moneda Extranjera) — regla 0 de club-data-mapping sección 5, se prefiere
+  // siempre al de mercado. grossDebt = "Deudas" corriente + no corriente (nota 6.1, $2.413.758.080 +
+  // $449.885.280), EXCLUYE Obligaciones de hacer y Previsiones, mismo criterio que Boca 2025.
+  // officialTotalRevenue/officialTotalExpenses/officialPAT = Total de Recursos/Total de
+  // Gastos/Superávit del ejercicio impresos pág. 32. gestionId 'ameal': Jorge Amor Ameal firma como
+  // Presidente en todo el documento (fecha de informe 15/09/2022).
+  2022: { currency:'ARS', fx:125.03, fxSource:'document_close', sourceId:'boca-balance-2021-22', reportType:'official_balance_sheet', gestionId:'ameal',
+    grossDebt:2863.64336, cash:311.870166, profitOnPlayerSales:0, assetSales:0, netInterest:-148.280849, tax:0,
+    extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:-148.280849}],
+    officialTotalRevenue:14279.912579, officialTotalExpenses:13669.793975, officialPAT:461.837755 },
+  // Ejercicio 2023 = Estados Contables auditados, Ejercicio N°119 (sources['boca-balance-2022-23']).
+  // fx = USD activo al 30/06/2023 ($256,30), declarado en el mismo Anexo III. grossDebt = "Deudas"
+  // corriente + no corriente ($2.155.761.442 + $1.192.317.317). netInterest da POSITIVO este
+  // ejercicio ($2.639.247.885, RECPAM incluido) — el "Resultado antes del efecto financiero" fue
+  // deficitario (-$1.616.865.150) y el resultado financiero lo revirtió a superávit, verificado
+  // exacto contra el Superávit del ejercicio impreso ($1.022.382.735, pág. 60). gestionId 'ameal':
+  // mismas firmas que 2022 (informe fechado 08/09/2023, la gestión de Ameal termina en 2023).
+  2023: { currency:'ARS', fx:256.30, fxSource:'document_close', sourceId:'boca-balance-2022-23', reportType:'official_balance_sheet', gestionId:'ameal',
+    grossDebt:3348.078759, cash:568.183797, profitOnPlayerSales:0, assetSales:0, netInterest:2639.247885, tax:0,
+    extraRows:[{label:'Resultados financieros y por tenencia (incluye RECPAM)', value:2639.247885}],
+    officialTotalRevenue:26178.273845, officialTotalExpenses:27795.138995, officialPAT:1022.382735 },
   // Ejercicio 2025 = Memoria y Balance auditado al 30/06/2025 (sources['boca-balance-2024-25']). fx =
   // dólar mayorista BCRA al 30/06/2025 ($1.203), fecha de cierre puntual (el balance ya está en
   // "moneda homogénea" al 30/06/2025, Nota 2.2, así que corresponde el tipo de cambio de ESE día, no
@@ -682,7 +936,7 @@ window.CLUB_GENERIC_DATA.boca = {
   revenueLinesByYear: bocaRevenueLinesByYear, expenseLinesByYear: bocaExpenseLinesByYear,
   fiscalYearMeta: bocaFiscalYearMeta, pasesData: bocaPasesData,
   resultadosData: bocaResultadosData, titulosData: bocaTitulosData,
-  finanzasYears: [2027, 2025], finanzasGestiones: ['riquelme'],
+  finanzasYears: [2027, 2025, 2023, 2022], finanzasGestiones: ['riquelme', 'ameal'],
   presupuestoSupuestosByYear: bocaPresupuestoSupuestosByYear,
   presupuestoFinancieroByYear: bocaPresupuestoFinancieroByYear,
   presupuestoInversionesByYear: bocaPresupuestoInversionesByYear,

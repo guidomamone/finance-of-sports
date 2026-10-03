@@ -20,7 +20,13 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Verificado el 13/9/2026 contra "2025 Categoría Primera A season" (Wikipedia).
   envigado: { 2025: 'co-primeraA' },           // descendió al terminar 2025
-  oncecaldas: { 2025: 'co-primeraA' },
+  // 2024 verificado el 2026-09-28 (to-do 95, pipeline nuevo de Wikipedia: tools/resolve-wikipedia-
+  // season-page.mjs + tools/fetch-club-league-reference.mjs) contra "2024 Liga DIMAYOR" (título
+  // vigente de la temporada 2024 en Wikipedia, cambió de sponsor respecto de años anteriores):
+  // roster de 21 equipos de Primera A 2024, Once Caldas incluido. 2022 verificado el mismo día,
+  // mismo pipeline, contra "2022 Liga DIMAYOR": roster de 20 equipos, Once Caldas incluido. 2023
+  // verificado el mismo día contra "2023 Liga DIMAYOR": roster de 20 equipos, Once Caldas incluido.
+  oncecaldas: { 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
   // Verificado el 22/9/2026 contra "2025 Categoría Primera A season" (Wikipedia): los 5 jugaron
   // la temporada 2025 completa en Primera A (20 equipos participantes ese año).
   'americadecali-co': { 2025: 'co-primeraA' },
@@ -35,4 +41,9 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // 2025 (Apertura y Clausura), confirma que los 2 jugaron esa categoría ese año.
   'millonarios-co': { 2025: 'co-primeraA' },
   'deportivopereira-co': { 2025: 'co-primeraA' },
+  // Verificado el 2026-09-28 contra el roster ya cacheado de "2024 Liga DIMAYOR" (bajado durante
+  // el onboarding de Once Caldas, mismo día) -- Boyacá Chicó apareció ahí mismo, sin fetch nuevo.
+  'boyacachico-co': { 2024: 'co-primeraA' },
+  // Fortaleza CEIF (alta-club.mjs, 2026-10-02): verificado contra roster cacheado de "2025 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Fortaleza" = "Fortaleza CEIF".
+  'fortalezaceif-co': { 2025: 'co-primeraA', 2017: 'co-primeraB', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraA', 2021: 'co-primeraB', 2022: 'co-primeraB' }, // 2017: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2017 Categoría Primera B season" (tools/club-league-reference/co.json) // 2018: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2018 Categoría Primera B season" (tools/club-league-reference/co.json) // 2019: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2019 Categoría Primera B season" (tools/club-league-reference/co.json) // 2020: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2020 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc // 2023: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2023 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc // 2024: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2024 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia // 2021: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2021 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc // 2022: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2022 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidenc
 });

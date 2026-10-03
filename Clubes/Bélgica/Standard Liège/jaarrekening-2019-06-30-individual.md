@@ -46,69 +46,52 @@ C 6.1,C 6.2.1, C 6.2.2, C 6.2.4, C 6.2.5, C 6.3.5, C 6.4.1, C 6.42, C 6.5.1, C 6
 
 N° BE 0433.255.448 C 2.1
 
-LISTE DES ADMINISTRATEURS, GÉRANTS
-ET COMMISSAIRES ET DÉCLARATION
-CONCERNANT UNE MISSION DE VÉRIFICATION
-OÙ DE REDRESSEMENT COMPLÉMENTAIRE
+# LISTE DES ADMINISTRATEURS, GÉRANTS ET COMMISSAIRES ET DÉCLARATION CONCERNANT UNE MISSION DE VÉRIFICATION OU DE REDRESSEMENT COMPLÉMENTAIRE
 
-LISTE DES ADMINISTRATEURS, GÉRANTS ET COMMISSAIRES
+## LISTE DES ADMINISTRATEURS, GÉRANTS ET COMMISSAIRES
 
-LISTE COMPLÈTE des nom, prénoms, profession, domicile (adresse, numéro, code postal et commune) et fonction au
-sein de l'entreprise
+LISTE COMPLÈTE des nom, prénoms, profession, domicile (adresse, numéro, code postal et commune) et fonction au sein de l'entreprise
 
-REGINSTER JEAN-YVES
-
+**REGINSTER** JEAN-YVES
 CLOS DU CHATAIGNIER - ROUTE DE CHAILLY 3
 1815 Clarens
 SUISSE
+Début de mandat: 30-10-2017 | Fin de mandat: 30-10-2023 | Administrateur
 
-Début de mandat: 30-10-2017 Fin de mandat: 30-10-2023 Administrateur
-
-PIGNOLET MAGALI
-
+**PIGNOLET** MAGALI
 Impasse du Bois 2
 5340 Gesves
 BELGIQUE
+Début de mandat: 20-05-2014 | Fin de mandat: 24-02-2019 | Administrateur
 
-Début de mandat: 20-05-2014 Fin de mandat: 24-02-2019 Administrateur
-
-VENANZI BRUNO
-
+**VENANZI** BRUNO
 Avenue de la Laiterie 58
 4000 Liège
 BELGIQUE
+Début de mandat: 23-06-2015 | Fin de mandat: 23-06-2021 | Président du Conseil d'Administration
 
-Début de mandat: 23-06-2015 Fin de mandat: 23-06-2021 Président du Conseil d'Administration
-
-RENARD OLIVIER
-
+**RENARD** OLIVIER
 Eickhof 36
-8550 Heusden Zolder
+3550 Heusden Zolder
 BELGIQUE
+Début de mandat: 18-09-2018 | Fin de mandat: 20-05-2019 | Administrateur
 
-Début de mandat: 18-09-2018 Fin de mandat: 20-05-2019 Administrateur
-
-BRONCKAERTS MARIO
-
+**BRONCKAERTS** MARIO
 Eikenberglaan 1A
 3020 Herent
 BELGIQUE
+Début de mandat: 24-02-2019 | Fin de mandat: 20-05-2020 | Administrateur
 
-Début de mandat: 24-02-2019 Fin de mandat: 20-05-2020 Administrateur
-
-SPRL B2CONSULT
-
+**SPRL B2CONSULT**
 BE 0478.467.247
 Rue de Genleau 51
 1380 Lasne
 BELGIQUE
-
-Début de mandat: 30-10-2017 Fin de mandat: 30-10-2023 Administrateur
+Début de mandat: 30-10-2017 | Fin de mandat: 30-10-2023 | Administrateur
 
 Représenté directement ou indirectement par:
 
 2/43
-
 
 --- pág. 3 ---
 
@@ -256,264 +239,172 @@ mission.
 --- pág. 6 ---
 
 N° BE 0433.255.448 C 3.1
-COMPTES ANNUELS
-BILAN APRES RÉPARTITION
-Ann. Codes Exercice Exercice précédent
-ACTIF
-FRAIS D'ÉTABLISSEMENT 6.1 | 20
-ACTIFS IMMOBILISÉS 21/28 33.695.748 36.396.697
-Immobilisations incorporelles 6.2 | 21 16.183.318 17.748.540
-Immobilisations corporelles 6.3 | 22/27 17.193.004 18.255.104
-Terrains et constructions 22 7.742.502 5.619.399
-Installations, machines et outillage 23 2.487.529 2.337.383
-Mobilier et matériel roulant 24 553.534 663.874
-Location-financement et droits similaires 25 6.255.840 8.458.479
-Autres immobilisations corporelles 26
-Immobilisations en cours et acomptes versés 27 153.599 1.175.969
-Immobilisations financières 6.4/6.5.1 | 28 319.426 393.053
-Entreprises liées 6.15 | 280/1
-Participations 280
-Créances 281
-Entreprises avec lesquelles il existe un lien de
-participation 6.15 | 282/3
-Participations 282
-Créances 283
-Autres immobilisations financières 284/8 319.426 393.053
-Actions et parts 284
-Créances et cautionnements en numéraire 285/8 319.426 393.053
-ACTIFS CIRCULANTS 29/58 15.898.522 28.367.198
-Créances à plus d'un an 29 1.325.000
-Créances commerciales 290 1.325.000
-Autres créances 291
-Stocks et commandes en cours d'exécution 3 856.271 495.440
-Stocks 30/36 856.271 495.440
-Approvisionnements 30/31
-En-cours de fabrication 32
-Produits finis 33
-Marchandises 34 659.908 416.895
-Immeubles destinés à la vente 35
-Acomptes versés 36 196.362 78.545
-Commandes en cours d'exécution 37
-Créances à un an au plus 40/41 11.153.920 20.226.679
-Créances commerciales 40 8.874.692 18.768.922
-Autres créances 41 2.279.228 1.457.756
-Placements de trésorerie 6.5.1/6.6 | 50/53 695
-Actions propres 50
-Autres placements 51/53 695
-Valeurs disponibles 54/58 2.203.151 4.271.798
-Comptes de régularisation 6.6 | 490/1 1.685.180 2.047.587
-TOTAL DE L'ACTIF 20/58 49.594.270 64.763.896
+
+# COMPTES ANNUELS
+
+## BILAN APRÈS RÉPARTITION
+
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **ACTIF** | | | | |
+| **FRAIS D'ÉTABLISSEMENT** | 6.1 | 20 | | |
+| **ACTIFS IMMOBILISÉS** | | 21/28 | 33.695.748 | 36.396.697 |
+| **Immobilisations incorporelles** | 6.2 | 21 | 16.183.318 | 17.748.540 |
+| **Immobilisations corporelles** | 6.3 | 22/27 | 17.193.004 | 18.255.104 |
+| Terrains et constructions | | 22 | 7.742.502 | 5.619.399 |
+| Installations, machines et outillage | | 23 | 2.487.529 | 2.337.383 |
+| Mobilier et matériel roulant | | 24 | 553.534 | 663.874 |
+| Location-financement et droits similaires | | 25 | 6.255.840 | 8.458.479 |
+| Autres immobilisations corporelles | | 26 | | |
+| Immobilisations en cours et acomptes versés | | 27 | 153.599 | 1.175.969 |
+| **Immobilisations financières** | 6.4/6.5.1 | 28 | 319.426 | 393.053 |
+| Entreprises liées | 6.15 | 280/1 | | |
+| Participations | | 280 | | |
+| Créances | | 281 | | |
+| Entreprises avec lesquelles il existe un lien de participation | 6.15 | 282/3 | | |
+| Participations | | 282 | | |
+| Créances | | 283 | | |
+| Autres immobilisations financières | | 284/8 | 319.426 | 393.053 |
+| Actions et parts | | 284 | | |
+| Créances et cautionnements en numéraire | | 285/8 | 319.426 | 393.053 |
+| **ACTIFS CIRCULANTS** | | 29/58 | 15.898.522 | 28.367.198 |
+| **Créances à plus d'un an** | | 29 | | 1.325.000 |
+| Créances commerciales | | 290 | | 1.325.000 |
+| Autres créances | | 291 | | |
+| **Stocks et commandes en cours d'exécution** | | 3 | 856.271 | 495.440 |
+| Stocks | | 30/36 | 856.271 | 495.440 |
+| Approvisionnements | | 30/31 | | |
+| En-cours de fabrication | | 32 | | |
+| Produits finis | | 33 | | |
+| Marchandises | | 34 | 659.908 | 416.895 |
+| Immeubles destinés à la vente | | 35 | | |
+| Acomptes versés | | 36 | 196.362 | 78.545 |
+| Commandes en cours d'exécution | | 37 | | |
+| **Créances à un an au plus** | | 40/41 | 11.153.920 | 20.226.679 |
+| Créances commerciales | | 40 | 8.874.692 | 18.768.922 |
+| Autres créances | | 41 | 2.279.228 | 1.457.756 |
+| **Placements de trésorerie** | 6.5.1/6.6 | 50/53 | | 695 |
+| Actions propres | | 50 | | |
+| Autres placements | | 51/53 | | 695 |
+| **Valeurs disponibles** | | 54/58 | 2.203.151 | 4.271.798 |
+| **Comptes de régularisation** | 6.6 | 490/1 | 1.685.180 | 2.047.587 |
+| **TOTAL DE L'ACTIF** | | 20/58 | 49.594.270 | 64.763.896 |
 
 6/43
-
 
 --- pág. 7 ---
 
 N° BE 0433.255.448 C 3.2
-Ann. Codes Exercice Exercice précédent
-PASSIF
-CAPITAUX PROPRES 10/15 8.452.636 16.956.973
-Capital 6.7.1 | 10 11.989.672 11.989.672
-Capital souscrit 100 11.989.672 11.989.672
-Capital non appelé 101
-Primes d'émission 11 32.334 32.334
-Plus-values de réévaluation 12
-Réserves 13 1.200.000 4.683.056
-Réserve légale 130 1.200.000 1.200.000
-Réserves indisponibles 131
-Pour actions propres 1310
-Autres 1311
-Réserves immunisées 132 3.483.056
-Réserves disponibles 133
-Bénéfice (Perte) reporté(e) (+)/() 14 -5.120.535 -173.622
-Subsides en capital 15 351.166 425.534
-Avance aux associés sur répartition de l'actif net 19
-PROVISIONS ET IMPÔTS DIFFÉRÉS 16 445.621 1.935.854
-Provisions pour risques et charges 160/5 445.621 472.793
-Pensions et obligations similaires 160
-Charges fiscales 161
-Grosses réparations et gros entretien 162
-Obligations environnementales 163
-Autres risques et charges 6.8 | 164/5 445.621 472.793
-Impôts différés 168 1.463.061
-DETTES 17/49 40.696.013 45.871.068
-Dettes à plus d'un an 6.9 | 17 16.813.080 19.524.619
-Dettes financières 170/4 10.834.583 11.912.304
-Emprunts subordonnés 170
-Emprunts obligataires non subordonnés 171
-Dettes de location-financement et dettes assimilées 172 7.774.551 8.842.272
-Etablissements de crédit 173 3.060.033 8.070.032
-Autres emprunts 174
-Dettes commerciales 175 100.000 1.382.750
-Fournisseurs 1750 100.000 1.382.750
-Effets à payer 1751
-Acomptes reçus sur commandes 176
-Autres dettes 178/9 5.878.497 6.229.565
-Dettes à un an au plus 6.9 | 42/48 20.726.397 23.877.722
-Dettes à plus d'un an échéant dans l'année 42 2.953.397 3.914.294
-Dettes financières 43 2.011.944 3.900.000
-Etablissements de crédit 430/8 2.011.944 8.900.000
-Autres emprunts 439
-Dettes commerciales 44 10.742.641 11.131.598
-Fournisseurs 440/4 10.742.641 11.131.598
-Effets à payer 441
-Acomptes reçus sur commandes 46 2.098.646 1.618.305
-Dettes fiscales, salariales et sociales 6.9 | 45 2.918.612 3.283.448
-Impôts 450/3 623.525 606.014
-Rémunérations et charges sociales 454/9 2.295.087 2.677.434
-Autres dettes 47/48 1.157 30.077
-Comptes de régularisation 6.9 | 492/3 3.156.535 2.468.727
-TOTAL DU PASSIF 10/49 49.594.270 64.763.896
 
-7143
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **PASSIF** | | | | |
+| **CAPITAUX PROPRES** | | 10/15 | 8.452.636 | 16.956.973 |
+| **Capital** | 6.7.1 | 10 | 11.989.672 | 11.989.672 |
+| Capital souscrit | | 100 | 11.989.672 | 11.989.672 |
+| Capital non appelé | | 101 | | |
+| **Primes d'émission** | | 11 | 32.334 | 32.334 |
+| **Plus-values de réévaluation** | | 12 | | |
+| **Réserves** | | 13 | 1.200.000 | 4.683.056 |
+| Réserve légale | | 130 | 1.200.000 | 1.200.000 |
+| Réserves indisponibles | | 131 | | |
+| Pour actions propres | | 1310 | | |
+| Autres | | 1311 | | |
+| Réserves immunisées | | 132 | | 3.483.056 |
+| Réserves disponibles | | 133 | | |
+| **Bénéfice (Perte) reporté(e) (+)/(-)** | | 14 | -5.120.535 | -173.622 |
+| **Subsides en capital** | | 15 | 351.166 | 425.534 |
+| **Avance aux associés sur répartition de l'actif net** | | 19 | | |
+| **PROVISIONS ET IMPÔTS DIFFÉRÉS** | | 16 | 445.621 | 1.935.854 |
+| **Provisions pour risques et charges** | | 160/5 | 445.621 | 472.793 |
+| Pensions et obligations similaires | | 160 | | |
+| Charges fiscales | | 161 | | |
+| Grosses réparations et gros entretien | | 162 | | |
+| Obligations environnementales | | 163 | | |
+| Autres risques et charges | 6.8 | 164/5 | 445.621 | 472.793 |
+| **Impôts différés** | | 168 | | 1.463.061 |
+| **DETTES** | | 17/49 | 40.696.013 | 45.871.068 |
+| **Dettes à plus d'un an** | 6.9 | 17 | 16.813.080 | 19.524.619 |
+| Dettes financières | | 170/4 | 10.834.583 | 11.912.304 |
+| Emprunts subordonnés | | 170 | | |
+| Emprunts obligataires non subordonnés | | 171 | | |
+| Dettes de location-financement et dettes assimilées | | 172 | 7.774.551 | 8.842.272 |
+| Etablissements de crédit | | 173 | 3.060.033 | 3.070.032 |
+| Autres emprunts | | 174 | | |
+| Dettes commerciales | | 175 | 100.000 | 1.382.750 |
+| Fournisseurs | | 1750 | 100.000 | 1.382.750 |
+| Effets à payer | | 1751 | | |
+| Acomptes reçus sur commandes | | 176 | | |
+| Autres dettes | | 178/9 | 5.878.497 | 6.229.565 |
+| **Dettes à un an au plus** | 6.9 | 42/48 | 20.726.397 | 23.877.722 |
+| Dettes à plus d'un an échéant dans l'année | | 42 | 2.953.397 | 3.914.294 |
+| Dettes financières | | 43 | 2.011.944 | 3.900.000 |
+| Etablissements de crédit | | 430/8 | 2.011.944 | 3.900.000 |
+| Autres emprunts | | 439 | | |
+| Dettes commerciales | | 44 | 10.742.641 | 11.131.598 |
+| Fournisseurs | | 440/4 | 10.742.641 | 11.131.598 |
+| Effets à payer | | 441 | | |
+| Acomptes reçus sur commandes | | 46 | 2.098.646 | 1.618.305 |
+| Dettes fiscales, salariales et sociales | 6.9 | 45 | 2.918.612 | 3.283.448 |
+| Impôts | | 450/3 | 623.525 | 606.014 |
+| Rémunérations et charges sociales | | 454/9 | 2.295.087 | 2.677.434 |
+| Autres dettes | | 47/48 | 1.157 | 30.077 |
+| **Comptes de régularisation** | 6.9 | 492/3 | 3.156.535 | 2.468.727 |
+| **TOTAL DU PASSIF** | | 10/49 | 49.594.270 | 64.763.896 |
 
+7/43
 
 --- pág. 8 ---
 
-N° BE 0433.255.448
+N° BE 0433.255.448 C 4
 
-C4
+## COMPTE DE RÉSULTATS
 
-COMPTE DE RÉSULTATS
-
-Ventes et prestations
-Chiffre d'affaires
-En-cours de fabrication, produits finis et commandes
-en cours d'exécution: augmentation (réduction) (+)/(-)
-Production immobilisée
-Autres produits d'exploitation
-Produits d'exploitation non récurrents
-Coût des ventes et des prestations
-Approvisionnements et marchandises
-Achats
-Stocks: réduction (augmentation) (+)/()
-Services et biens divers
-Rémunérations, charges sociales et pensions  (+)/(-)
-Amortissements et réductions de valeur sur frais
-d'établissement, sur immobilisations incorporelles et
-corporelles
-Réductions de valeur sur stocks, sur commandes
-en cours d'exécution et sur créances commerciales:
-
-dotations (reprises) ()/0)
-Provisions pour risques et charges: dotations
-(utilisations et reprises) (+}/()
-
-Autres charges d'exploitation
-Charges d'exploitation portées à l'actif au titre de frais
-
-de restructuration (-)
-Charges d'exploitation non récurrentes
-Bénéfice (Perte) d'exploitation (+)/()
-
-Produits financiers
-Produits financiers récurrents
-Produits des immobilisations financières
-Produits des actifs circulants
-Autres produits financiers
-Produits financiers non récurrents
-Charges financières
-Charges financières récurrentes
-Charges des dettes
-Réductions de valeur sur actifs circulants autres
-que stocks, commandes en cours et créances
-commerciales: dotations (reprises) (+)/0)
-Autres charges financières
-Charges financières non récurrentes
-Bénéfice (Perte) de l'exercice avant impôts (+)/()
-Prélèvements sur les impôts différés
-Transfert aux impôts différés
-
-Impôts sur le résultat (+)/()
-Impôts
-Régularisations d'impôts et reprises de provisions
-fiscales
-
-Bénéfice (Perte) de l'exercice (+)/()
-
-Prélèvements sur les réserves immunisées
-Transfert aux réserves immunisées
-Bénéfice (Perte) de l'exercice à affecter (+)/()
-
-Ann.
-
-6.10
-
-6.10
-6.12
-
-6.10
-
-6.10
-6.10
-
-6.10
-
-6.12
-
-6.11
-6.12
-
-6.11
-
-6.12
-
-6.13
-
-Codes Exercice Exercice précédent
-70/76A 60.599.126 56.693.218
-70 31.583.416 27.347.758
-71 0
-72 305.711 133.079
-74 18.126.397 10.568.571
-76A 10.583.602 18.643.810
-60/66A 69.169.430 59.084.366
-60 1.165.199 1.013.342
-600/8 1.567.276 1.092.471
-609 -402.076 -79.129
-
-61 19.434.790 14.748.434
-62 34.551.106 29.762.577
-630 10.261.024 8.113.576
-631/4 -46.455 7.767
-635/8 140.899
-
-640/8 1.265.464 1.512.281
-649
-
-66A 2.397.403 3.926.388
-9901 -8.570.304 -2.391.148
-75/76B 92.059 186.546
-75 92.059 186.546
-750 13.833 2.409
-751
-
-75219 78.226 184.137
-76B
-
-65/66B 1.392.728 1.376.873
-65 1.392.728 1.376.873
-650 1.334.543 949.858
-651
-
-652/9 58.185 427.015
-66B
-
-9903 -9.870.973 -3.581.475
-780 1.463.061 957.149
-680
-
-67/77 22.057 2
-670/3 22.057 230
-77 227
-9904 -8.429.969 -2.624.328
-789 8.483.056 1.215.001
-689
-
-9905 -4.946.913 -1.409.327
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **Ventes et prestations** | | 70/76A | 60.599.126 | 56.693.218 |
+| Chiffre d'affaires | 6.10 | 70 | 31.583.416 | 27.347.758 |
+| En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-) | | 71 | | 0 |
+| Production immobilisée | | 72 | 305.711 | 133.079 |
+| Autres produits d'exploitation | 6.10 | 74 | 18.126.397 | 10.568.571 |
+| Produits d'exploitation non récurrents | 6.12 | 76A | 10.583.602 | 18.643.810 |
+| **Coût des ventes et des prestations** | | 60/66A | 69.169.430 | 59.084.366 |
+| Approvisionnements et marchandises | | 60 | 1.165.199 | 1.013.342 |
+| Achats | | 600/8 | 1.567.276 | 1.092.471 |
+| Stocks: réduction (augmentation) (+)/(-) | | 609 | -402.076 | -79.129 |
+| Services et biens divers | | 61 | 19.434.790 | 14.748.434 |
+| Rémunérations, charges sociales et pensions (+)/(-) | 6.10 | 62 | 34.551.106 | 29.762.577 |
+| Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | | 630 | 10.261.024 | 8.113.576 |
+| Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-) | 6.10 | 631/4 | -46.455 | 7.767 |
+| Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-) | 6.10 | 635/8 | 140.899 | |
+| Autres charges d'exploitation | 6.10 | 640/8 | 1.265.464 | 1.512.281 |
+| Charges d'exploitation portées à l'actif au titre de frais de restructuration (-) | | 649 | | |
+| Charges d'exploitation non récurrentes | 6.12 | 66A | 2.397.403 | 3.926.388 |
+| **Bénéfice (Perte) d'exploitation (+)/(-)** | | 9901 | -8.570.304 | -2.391.148 |
+| **Produits financiers** | | 75/76B | 92.059 | 186.546 |
+| Produits financiers récurrents | | 75 | 92.059 | 186.546 |
+| Produits des immobilisations financières | | 750 | 13.833 | 2.409 |
+| Produits des actifs circulants | | 751 | | |
+| Autres produits financiers | 6.11 | 752/9 | 78.226 | 184.137 |
+| Produits financiers non récurrents | 6.12 | 76B | | |
+| **Charges financières** | | 65/66B | 1.392.728 | 1.376.873 |
+| Charges financières récurrentes | 6.11 | 65 | 1.392.728 | 1.376.873 |
+| Charges des dettes | | 650 | 1.334.543 | 949.858 |
+| Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-) | | 651 | | |
+| Autres charges financières | | 652/9 | 58.185 | 427.015 |
+| Charges financières non récurrentes | 6.12 | 66B | | |
+| **Bénéfice (Perte) de l'exercice avant impôts (+)/(-)** | | 9903 | -9.870.973 | -3.581.475 |
+| **Prélèvements sur les impôts différés** | | 780 | 1.463.061 | 957.149 |
+| **Transfert aux impôts différés** | | 680 | | |
+| **Impôts sur le résultat (+)/(-)** | 6.13 | 67/77 | 22.057 | 2 |
+| Impôts | | 670/3 | 22.057 | 230 |
+| Régularisations d'impôts et reprises de provisions fiscales | | 77 | | 227 |
+| **Bénéfice (Perte) de l'exercice (+)/(-)** | | 9904 | -8.429.969 | -2.624.328 |
+| **Prélèvements sur les réserves immunisées** | | 789 | 3.483.056 | 1.215.001 |
+| **Transfert aux réserves immunisées** | | 689 | | |
+| **Bénéfice (Perte) de l'exercice à affecter (+)/(-)** | | 9905 | -4.946.913 | -1.409.327 |
 
 8/43
-
 
 --- pág. 9 ---
 
@@ -705,169 +596,67 @@ Codes Exercice Exercice précédent |
 
 --- pág. 12 ---
 
-N° BE 0433.255.448
+N° BE 0433.255.448 C 6.3.2
 
-C 6.3.2
-
-INSTALLATIONS, MACHINES ET OUTILLAGE
-
-Valeur d'acquisition au terme de l'exercice
-Mutations de l'exercice
-
-Acquisitions, y compris la production immobilisée
-
-Cessions et désaffectations
-
-Transferts d'une rubrique à une autre (+)/()
-Valeur d'acquisition au terme de l'exercice
-Plus-values au terme de l'exercice
-Mutations de l'exercice
-
-Actées
-
-Acquises de tiers
-
-Annulées
-
-Transférées d'une rubrique à une autre (+)/()
-Plus-values au terme de l'exercice
-Amortissements et réductions de valeur au terme de l'exercice
-Mutations de l'exercice
-
-Actés
-
-Repris
-
-Acquis de tiers
-
-Annulés à la suite de cessions et désaffectations
-
-Transférés d'une rubrique à une autre (+)/()
-Amortissements et réductions de valeur au terme de l'exercice
-VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE
-
-Codes Exercice Exercice précédent |
-8192P XXOOOOOXXX 5.854.050 |
-8162 71.891
-
-8172 Î
-
-8182 575.184
-
-8192 6.501.124
-
-8252P XXOOOOOXXX
-
-8212
-
-8222
-
-8232
-
-8242
-
-8252
-
-8322P XXOOOOOXXX 8.516.667
-8272 496.928
-
-8282
-
-8292
-
-8302
-
-8312
-
-8322 4.013.595
-
-23 2.487.529
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **INSTALLATIONS, MACHINES ET OUTILLAGE** | | | |
+| **Valeur d'acquisition au terme de l'exercice** | 8192P | XXXXXXXXXX | 5.854.050 |
+| **Mutations de l'exercice** | | | |
+| Acquisitions, y compris la production immobilisée | 8162 | 71.891 | |
+| Cessions et désaffectations | 8172 | 1 | |
+| Transferts d'une rubrique à une autre (+)/(-) | 8182 | 575.184 | |
+| **Valeur d'acquisition au terme de l'exercice** | 8192 | 6.501.124 | |
+| **Plus-values au terme de l'exercice** | 8252P | XXXXXXXXXX | |
+| **Mutations de l'exercice** | | | |
+| Actées | 8212 | | |
+| Acquises de tiers | 8222 | | |
+| Annulées | 8232 | | |
+| Transférées d'une rubrique à une autre (+)/(-) | 8242 | | |
+| **Plus-values au terme de l'exercice** | 8252 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8322P | XXXXXXXXXX | 3.516.667 |
+| **Mutations de l'exercice** | | | |
+| Actés | 8272 | 496.928 | |
+| Repris | 8282 | | |
+| Acquis de tiers | 8292 | | |
+| Annulés à la suite de cessions et désaffectations | 8302 | | |
+| Transférés d'une rubrique à une autre (+)/(-) | 8312 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8322 | 4.013.595 | |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE** | 23 | 2.487.529 | |
 
 12/43
 
-
 --- pág. 13 ---
 
-N° BE 0433.255.448
+N° BE 0433.255.448 C 6.3.3
 
-C 6.3.3
-
-MOBILIER ET MATÉRIEL ROULANT
-
-Valeur d'acquisition au terme de l'exercice
-Mutations de l'exercice
-
-Acquisitions, y compris la production immobilisée
-
-Cessions et désaffectations
-
-Transferts d'une rubrique à une autre (+)/()
-Valeur d'acquisition au terme de l'exercice
-Plus-values au terme de l'exercice
-Mutations de l'exercice
-
-Actées
-
-Acquises de tiers
-
-Annulées
-
-Transférées d'une rubrique à une autre (+)/()
-Plus-values au terme de l'exercice
-Amortissements et réductions de valeur au terme de l'exercice
-Mutations de l'exercice
-
-Actés
-
-Repris
-
-Acquis de tiers
-
-Annulés à la suite de cessions et désaffectations
-
-Transférés d'une rubrique à une autre (+)/()
-Amortissements et réductions de valeur au terme de l'exercice
-VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE
-
-Codes Exercice Exercice précédent |
-8193P XXOOOOOXXX 8.033.861 |
-8163 42.662
-
-8173 12.746
-
-8183 6.273
-
-8193 8.070.050
-
-8253P XXOOOOOXXX
-
-8213
-
-8223
-
-8233
-
-8243
-
-8253
-
-8323P XXOOOOOXXX 2.369.987
-8273 154.594
-
-8283
-
-8293
-
-8303 8.065
-
-8313
-
-8323 2.516.516
-
-24 553.534
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **MOBILIER ET MATÉRIEL ROULANT** | | | |
+| **Valeur d'acquisition au terme de l'exercice** | 8193P | XXXXXXXXXX | 3.033.861 |
+| **Mutations de l'exercice** | | | |
+| Acquisitions, y compris la production immobilisée | 8163 | 42.662 | |
+| Cessions et désaffectations | 8173 | 12.746 | |
+| Transferts d'une rubrique à une autre (+)/(-) | 8183 | 6.273 | |
+| **Valeur d'acquisition au terme de l'exercice** | 8193 | 3.070.050 | |
+| **Plus-values au terme de l'exercice** | 8253P | XXXXXXXXXX | |
+| **Mutations de l'exercice** | | | |
+| Actées | 8213 | | |
+| Acquises de tiers | 8223 | | |
+| Annulées | 8233 | | |
+| Transférées d'une rubrique à une autre (+)/(-) | 8243 | | |
+| **Plus-values au terme de l'exercice** | 8253 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8323P | XXXXXXXXXX | 2.369.987 |
+| **Mutations de l'exercice** | | | |
+| Actés | 8273 | 154.594 | |
+| Repris | 8283 | | |
+| Acquis de tiers | 8293 | | |
+| Annulés à la suite de cessions et désaffectations | 8303 | 8.065 | |
+| Transférés d'une rubrique à une autre (+)/(-) | 8313 | | |
+| **Amortissements et réductions de valeur au terme de l'exercice** | 8323 | 2.516.516 | |
+| **VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE** | 24 | 553.534 | |
 
 13/43
-
 
 --- pág. 14 ---
 
@@ -1178,39 +967,37 @@ XXXXXXXXXX
 
 --- pág. 17 ---
 
-N° BE 0433.255.448
+N° BE 0433.255.448 C 6.6
 
-C 6.6
+## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF
 
-PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **PLACEMENTS DE TRÉSORERIE - AUTRES PLACEMENTS** | | | |
+| **Actions, parts et placements autres que placements à revenu fixe** | 51 | | |
+| Actions et parts - Valeur comptable augmentée du montant non appelé | 8681 | | |
+| Actions et parts - Montant non appelé | 8682 | | |
+| Métaux précieux et œuvres d'art | 8683 | | |
+| **Titres à revenu fixe** | 52 | | |
+| Titres à revenu fixe émis par des établissements de crédit | 8684 | | |
+| **Comptes à terme détenus auprès des établissements de crédit** | 53 | | 695 |
+| Avec une durée résiduelle ou de préavis | | | |
+| d'un mois au plus | 8686 | | |
+| de plus d'un mois à un an au plus | 8687 | | 695 |
+| de plus d'un an | 8688 | | |
+| **Autres placements de trésorerie non repris ci-avant** | 8689 | | |
 
-Codes Exercice Exercice précédent
-PLACEMENTS DE TRÉSORERIE - AUTRES PLACEMENTS
-Actions, parts et placements autres que placements à revenu fixe 51
-Actions et parts - Valeur comptable augmentée du montant non
-appelé 8681
-Actions et parts - Montant non appelé 8682
-Métaux précieux et œuvres d'art 8683
-Titres à revenu fixe 52
-Titres à revenu fixe émis par des établissements de crédit 8684
-Comptes à terme détenus auprès des établissements de crédit 53 695
-Avec une durée résiduelle ou de préavis
-d'un mois au plus 8686
-de plus d'un mois à un an au plus 8687 695
-de plus d'un an 8688
-Autres placements de trésorerie non repris ci-avant 8689
-Exercice
-COMPTES DE RÉGULARISATION
-Ventilation de la rubrique 490/1 de l'actif si celle-ci représente un montant important
-Equipementier à reporter 5.913
--Value s/ tribunes à reporter 257.829
-Chauffage terrain à reporter 138.179
-Assurances à reporter 74.468
-Produits acquis assur groupe 192.113
-Divers à reporter 1.016.679
+| **COMPTES DE RÉGULARISATION** | Exercice |
+|---|---|
+| **Ventilation de la rubrique 490/1 de l'actif si celle-ci représente un montant important** | |
+| Equipementier à reporter | 5.913 |
+| -Value s/ tribunes à reporter | 257.829 |
+| Chauffage terrain à reporter | 138.179 |
+| Assurances à reporter | 74.468 |
+| Produits acquis assur groupe | 192.113 |
+| Divers à reporter | 1.016.679 |
 
 17/43
-
 
 --- pág. 18 ---
 
@@ -1367,68 +1154,71 @@ Exercice
 --- pág. 20 ---
 
 N° BE 0433.255.448 C 6.9
-ETAT DES DETTES ET COMPTES DE RÉGULARISATION DU PASSIF
-Codes Exercice
-VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE
-LEUR DURÉE RÉSIDUELLE
-Dettes à plus d'un an échéant dans l'année
-Dettes financières 8801 484.647
-Emprunts subordonnés 8811
-Emprunts obligataires non subordonnés 8821
-Dettes de location-financement et dettes assimilées 8831 484.647
-Etablissements de crédit 8841
-Autres emprunts 8851
-Dettes commerciales 8861 468.750
-Fournisseurs 8871 468.750
-Effets à payer 8881
-Acomptes reçus sur commandes 8891
-Autres dettes 8901 2.000.000
-Total des dettes à plus d'un an échéant dans l'année 42 2.953.397
-Dettes ayant plus d'un an mais 5 ans au plus à courir
-Dettes financières 8802 5.119.610
-Emprunts subordonnés 8812
-Emprunts obligataires non subordonnés 8822
-Dettes de location-financement et dettes assimilées 8832 2.059.577
-Etablissements de crédit 8842 8.060.033
-Autres emprunts 8852
-Dettes commerciales 8862 100.000
-Fournisseurs 8872 100.000
-Effets à payer 8882
-Acomptes reçus sur commandes 8892
-Autres dettes 8902 5.878.497
-Total des dettes ayant plus d'un an mais 5 ans au plus à courir 8912 11.098.107
-Dettes ayant plus de 5 ans à courir
-Dettes financières 8803 5.714.973
-Emprunts subordonnés 8813
-Emprunts obligataires non subordonnés 8823
-Dettes de location-financement et dettes assimilées 8833 5.714.973
-Etablissements de crédit 8843
-Autres emprunts 8853
-Dettes commerciales 8863
-Fournisseurs 8873
-Effets à payer 8883
-Acomptes reçus sur commandes 8893
-Autres dettes 8903
-Total des dettes ayant plus de 5 ans à courir 8913 5.714.973
-Codes Exercice
-DETTES GARANTIES
-Dettes garanties par les pouvoirs publics belges
-Dettes financières 8921
-Emprunts subordonnés 8931
-Emprunts obligataires non subordonnés 8941
-Dettes de location-financement et dettes assimilées 8951
-Etablissements de crédit 8961
-Autres emprunts 8971
-Dettes commerciales 8981
-Fournisseurs 8991
-Effets à payer 9001
-Acomptes reçus sur commandes 9011
-Dettes salariales et sociales 9021
-Autres dettes 9051
-Total des dettes garanties par les pouvoirs publics belges 9061
+
+## ETAT DES DETTES ET COMPTES DE RÉGULARISATION DU PASSIF
+
+| | Codes | Exercice |
+|---|---|---|
+| **VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE LEUR DURÉE RÉSIDUELLE** | | |
+| **Dettes à plus d'un an échéant dans l'année** | | |
+| Dettes financières | 8801 | 484.647 |
+| Emprunts subordonnés | 8811 | |
+| Emprunts obligataires non subordonnés | 8821 | |
+| Dettes de location-financement et dettes assimilées | 8831 | 484.647 |
+| Etablissements de crédit | 8841 | |
+| Autres emprunts | 8851 | |
+| Dettes commerciales | 8861 | 468.750 |
+| Fournisseurs | 8871 | 468.750 |
+| Effets à payer | 8881 | |
+| Acomptes reçus sur commandes | 8891 | |
+| Autres dettes | 8901 | 2.000.000 |
+| **Total des dettes à plus d'un an échéant dans l'année** | 42 | 2.953.397 |
+| **Dettes ayant plus d'un an mais 5 ans au plus à courir** | | |
+| Dettes financières | 8802 | 5.119.610 |
+| Emprunts subordonnés | 8812 | |
+| Emprunts obligataires non subordonnés | 8822 | |
+| Dettes de location-financement et dettes assimilées | 8832 | 2.059.577 |
+| Etablissements de crédit | 8842 | 3.060.033 |
+| Autres emprunts | 8852 | |
+| Dettes commerciales | 8862 | 100.000 |
+| Fournisseurs | 8872 | 100.000 |
+| Effets à payer | 8882 | |
+| Acomptes reçus sur commandes | 8892 | |
+| Autres dettes | 8902 | 5.878.497 |
+| **Total des dettes ayant plus d'un an mais 5 ans au plus à courir** | 8912 | 11.098.107 |
+| **Dettes ayant plus de 5 ans à courir** | | |
+| Dettes financières | 8803 | 5.714.973 |
+| Emprunts subordonnés | 8813 | |
+| Emprunts obligataires non subordonnés | 8823 | |
+| Dettes de location-financement et dettes assimilées | 8833 | 5.714.973 |
+| Etablissements de crédit | 8843 | |
+| Autres emprunts | 8853 | |
+| Dettes commerciales | 8863 | |
+| Fournisseurs | 8873 | |
+| Effets à payer | 8883 | |
+| Acomptes reçus sur commandes | 8893 | |
+| Autres dettes | 8903 | |
+| **Total des dettes ayant plus de 5 ans à courir** | 8913 | 5.714.973 |
+
+| | Codes | Exercice |
+|---|---|---|
+| **DETTES GARANTIES** | | |
+| **Dettes garanties par les pouvoirs publics belges** | | |
+| Dettes financières | 8921 | |
+| Emprunts subordonnés | 8931 | |
+| Emprunts obligataires non subordonnés | 8941 | |
+| Dettes de location-financement et dettes assimilées | 8951 | |
+| Etablissements de crédit | 8961 | |
+| Autres emprunts | 8971 | |
+| Dettes commerciales | 8981 | |
+| Fournisseurs | 8991 | |
+| Effets à payer | 9001 | |
+| Acomptes reçus sur commandes | 9011 | |
+| Dettes salariales et sociales | 9021 | |
+| Autres dettes | 9051 | |
+| **Total des dettes garanties par les pouvoirs publics belges** | 9061 | |
 
 20/43
-
 
 --- pág. 21 ---
 
@@ -1518,88 +1308,51 @@ Exercice
 
 --- pág. 22 ---
 
-N° BE 0433.255.448
+N° BE 0433.255.448 C 6.10
 
-C 6.10
+## RÉSULTATS D'EXPLOITATION
 
-RÉSULTATS D'EXPLOITATION
-
-PRODUITS D'EXPLOITATION
-Chiffre d'affaires net
-Ventilation par catégorie d'activité
-
-Ventilation par marché géographique
-
-Autres produits d'exploitation
-Subsides d'exploitation et montants compensatoires obtenus des
-pouvoirs publics
-CHARGES D'EXPLOITATION
-Travailleurs pour lesquels l'entreprise a introduit une déclaration
-DIMONA ou qui sont inscrits au registre général du personnel
-Nombre total à la date de clôture
-Effectif moyen du personnel calculé en équivalents temps plein
-Nombre d'heures effectivement prestées
-Frais de personnel
-Rémunérations et avantages sociaux directs
-Cotisations patronales d'assurances sociales
-Primes patronales pour assurances extralégales
-Autres frais de personnel
-Pensions de retraite et de survie
-Provisions pour pensions et obligations similaires
-Dotations (utilisations et reprises) (+)/()
-Réductions de valeur
-Sur stocks et commandes en cours
-Actées
-Reprises
-Sur créances commerciales
-Actées
-Reprises
-Provisions pour risques et charges
-Constitutions
-Utilisations et reprises
-Autres charges d'exploitation
-Impôts et taxes relatifs à l'exploitation
-Autres
-Personnel intérimaire et personnes mises à la disposition de
-l'entreprise
-Nombre total à la date de clôture
-Nombre moyen calculé en équivalents temps plein
-Nombre d'heures effectivement prestées
-Frais pour l'entreprise
-
-Codes Exercice Exercice précédent
-740 68.650 65.885
-9086 135 139
-9087 110,6 114,7
-9088 196.737 205.011
-620 28.130.343 24.506.795
-621 1.948.675 1.565.304
-622 3.612.337 2.140.298
-623 859.751 1.550.179
-624
-
-635
-
-9110 195.517 52.911
-9111 154.272 45.144
-9112 21.000
-
-9113 108.701
-
-9115 140.899
-
-9116
-
-640 573.533 485.162
-641/8 691.931 1.027.119
-9096
-
-9097 10,6 10
-9098 21.009 20.648
-617 450.526 371.531
+| | Codes | Exercice | Exercice précédent |
+|---|---|---|---|
+| **PRODUITS D'EXPLOITATION** | | | |
+| **Chiffre d'affaires net** | | | |
+| Ventilation par catégorie d'activité | | | |
+| Ventilation par marché géographique | | | |
+| **Autres produits d'exploitation** | | | |
+| Subsides d'exploitation et montants compensatoires obtenus des pouvoirs publics | 740 | 68.650 | 65.885 |
+| **CHARGES D'EXPLOITATION** | | | |
+| **Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre général du personnel** | | | |
+| Nombre total à la date de clôture | 9086 | 135 | 139 |
+| Effectif moyen du personnel calculé en équivalents temps plein | 9087 | 110,6 | 114,7 |
+| Nombre d'heures effectivement prestées | 9088 | 196.737 | 205.011 |
+| **Frais de personnel** | | | |
+| Rémunérations et avantages sociaux directs | 620 | 28.130.343 | 24.506.795 |
+| Cotisations patronales d'assurances sociales | 621 | 1.948.675 | 1.565.304 |
+| Primes patronales pour assurances extralégales | 622 | 3.612.337 | 2.140.298 |
+| Autres frais de personnel | 623 | 859.751 | 1.550.179 |
+| Pensions de retraite et de survie | 624 | | |
+| **Provisions pour pensions et obligations similaires** | | | |
+| Dotations (utilisations et reprises) (+)/(-) | 635 | | |
+| **Réductions de valeur** | | | |
+| **Sur stocks et commandes en cours** | | | |
+| Actées | 9110 | 195.517 | 52.911 |
+| Reprises | 9111 | 154.272 | 45.144 |
+| **Sur créances commerciales** | | | |
+| Actées | 9112 | 21.000 | |
+| Reprises | 9113 | 108.701 | |
+| **Provisions pour risques et charges** | | | |
+| Constitutions | 9115 | 140.899 | |
+| Utilisations et reprises | 9116 | | |
+| **Autres charges d'exploitation** | | | |
+| Impôts et taxes relatifs à l'exploitation | 640 | 573.533 | 485.162 |
+| Autres | 641/8 | 691.931 | 1.027.119 |
+| **Personnel intérimaire et personnes mises à la disposition de l'entreprise** | | | |
+| Nombre total à la date de clôture | 9096 | | |
+| Nombre moyen calculé en équivalents temps plein | 9097 | 10,6 | 10 |
+| Nombre d'heures effectivement prestées | 9098 | 21.009 | 20.648 |
+| Frais pour l'entreprise | 617 | 450.526 | 371.531 |
 
 22/43
-
 
 --- pág. 23 ---
 
@@ -2453,162 +2206,81 @@ concernant les comptes annuels pour l'exercice clos ie 30 juin 2019 4
 
 --- pág. 39 ---
 
-N° BE 0433.255.448
+N° BE 0433.255.448 C 10
 
-C 10
+## BILAN SOCIAL
 
-BILAN SOCIAL
+Numéros des commissions paritaires dont dépend l'entreprise: 223 | 218 | 100
 
-Numéros des commissions paritaires dont dépend l'entreprise:
+**Etat des personnes occupées**
 
-223
+**Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre général du personnel**
 
-218 100
+| **Au cours de l'exercice** | Codes | Total | 1. Hommes | 2. Femmes |
+|---|---|---|---|---|
+| **Nombre moyen de travailleurs** | | | | |
+| Temps plein | 1001 | 85,6 | 72 | 13,6 |
+| Temps partiel | 1002 | 50,5 | 43,3 | 7,2 |
+| Total en équivalents temps plein (ETP) | 1003 | 110,6 | 91,6 | 19 |
+| **Nombre d'heures effectivement prestées** | | | | |
+| Temps plein | 1011 | 151.367 | 130.258 | 21.109 |
+| Temps partiel | 1012 | 45.370 | 36.184 | 9.186 |
+| Total | 1013 | 196.737 | 166.442 | 30.295 |
+| **Frais de personnel** | | | | |
+| Temps plein | 1021 | 31.586.285 | 30.554.288 | 1.031.997 |
+| Temps partiel | 1022 | 2.964.821 | 2.556.293 | 408.528 |
+| Total | 1023 | 34.551.106 | 33.110.581 | 1.440.525 |
+| **Montant des avantages accordés en sus du salaire** | 1033 | | | |
 
-Etat des personnes occupées
-
-Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre
-
-général du personnel
-
-Au cours de l'exercice
-Nombre moyen de travailleurs
-Temps plein
-Temps partiel
-Total en équivalents temps plein (ETP)
-
-Nombre d'heures effectivement prestées
-Temps plein
-Temps partiel
-Total
-
-Frais de personnel
-Temps plein
-Temps partiel
-Total
-
-Montant des avantages accordés en sus du
-salaire
-
-Au cours de l'exercice précédent
-
-Nombre moyen de travailleurs en ETP
-Nombre d'heures effectivement prestées
-Frais de personnel
-
-Montant des avantages accordés en sus du
-salaire
-
-Codes Total 1. Hommes 2. Femmes
-
-1001 85,6 72 13,6
-1002 50,5 43,3 7,2
-1003 110,6 91,6 19
-1011 151.367 130.258 21.109
-1012 45.370 36.184 9.186
-1013 196.737 166.442 30.295
-1021 31.586.285 30.554.288 1.031.997
-1022 2.964.821 2.556.293 408.528
-1023 34.551.106 33.110.581 1.440.525
-1033
-
-Codes P. Total 1P. Hommes 2P. Femmes
-
-1003 114,7 95,8 18,9
-1013 205.011 174.765 30.246
-1023 29.762.577 28.250.878 1.511.699
-1033
+| **Au cours de l'exercice précédent** | Codes | P. Total | 1P. Hommes | 2P. Femmes |
+|---|---|---|---|---|
+| Nombre moyen de travailleurs en ETP | 1003 | 114,7 | 95,8 | 18,9 |
+| Nombre d'heures effectivement prestées | 1013 | 205.011 | 174.765 | 30.246 |
+| Frais de personnel | 1023 | 29.762.577 | 28.250.878 | 1.511.699 |
+| Montant des avantages accordés en sus du salaire | 1033 | | | |
 
 39/43
 
-
 --- pág. 40 ---
 
-N°
+N° BE 0433.255.448 C 10
 
-BE 0433.255.448
+**Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre général du personnel (suite)**
 
-C 10
+| **A la date de clôture de l'exercice** | Codes | 1. Temps plein | 2. Temps partiel | 3. Total en équivalents temps plein |
+|---|---|---|---|---|
+| **Nombre de travailleurs** | 105 | 84 | 51 | 109 |
+| **Par type de contrat de travail** | | | | |
+| Contrat à durée indéterminée | 110 | 46 | 29 | 61,8 |
+| Contrat à durée déterminée | 111 | 37 | 22 | 46,2 |
+| Contrat pour l'exécution d'un travail nettement défini | 112 | | | |
+| Contrat de remplacement | 113 | 1 | | 1 |
+| **Par sexe et niveau d'études** | | | | |
+| Hommes | 120 | 70 | 43 | 89 |
+| de niveau primaire | 1200 | 5 | 14 | 10,6 |
+| de niveau secondaire | 1201 | 49 | 18 | 57,6 |
+| de niveau supérieur non universitaire | 1202 | 13 | 9 | 16,7 |
+| de niveau universitaire | 1203 | 3 | 2 | 4,1 |
+| Femmes | 121 | 14 | 8 | 20 |
+| de niveau primaire | 1210 | | | |
+| de niveau secondaire | 1211 | 7 | 5 | 10,8 |
+| de niveau supérieur non universitaire | 1212 | 6 | 1 | 6,8 |
+| de niveau universitaire | 1213 | 1 | 2 | 2,4 |
+| **Par catégorie professionnelle** | | | | |
+| Personnel de direction | 130 | | | |
+| Employés | 134 | 70 | 48 | 92,8 |
+| Ouvriers | 132 | 12 | 3 | 14,2 |
+| Autres | 133 | 2 | | 2 |
 
-Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre
-général du personnel (suite)
+**Personnel intérimaire et personnes mises à la disposition de l'entreprise**
 
-A la date de clôture de l'exercice
-
-Nombre de travailleurs
-
-Par type de contrat de travail
-
-Contrat à durée indéterminée
-
-Contrat à durée déterminée
-
-Contrat pour l'exécution d'un travail nettement défini
-Contrat de remplacement
-
-Par sexe et niveau d'études
-
-Hommes
-de niveau primaire
-de niveau secondaire
-de niveau supérieur non universitaire
-de niveau universitaire
-Femmes
-de niveau primaire
-de niveau secondaire
-de niveau supérieur non universitaire
-de niveau universitaire
-
-Par catégorie professionnelle
-
-Personnel de direction
-Employés
-
-Ouvriers
-
-Autres
-
-Personnel intérimaire et personnes mises à la disposition de l'entreprise
-
-Au cours de l'exercice
-
-Nombre moyen de personnes occupées
-Nombre d'heures effectivement prestées
-Frais pour l'entreprise
-
-Codes Temps plein 2. Temps partiel 8. Totalen
-équivalents
-temps plein
-
-105 84 51 109
-110 46 29 61,8
-111 37 22 46,2
-112
-113 1 1
-120 70 43 89
-1200 5 14 10,6
-1201 49 18 57,6
-1202 13 9 16,7
-1203 3 2 4,1
-121 14 8 20
-1210
-1211 5 10,8
-1212 1 6,8
-1213 1 2 2,4
-130
-134 70 48 92,8
-132 12 3 14,2
-133 2 2
-Codes 1. Personnel 2. Personnes
-intérimaire mises à la
-disposition de
-l'entreprise
-150 10,6
-151 21.009
-152 450.526
+| **Au cours de l'exercice** | Codes | 1. Personnel intérimaire | 2. Personnes mises à la disposition de l'entreprise |
+|---|---|---|---|
+| Nombre moyen de personnes occupées | 150 | 10,6 | |
+| Nombre d'heures effectivement prestées | 151 | 21.009 | |
+| Frais pour l'entreprise | 152 | 450.526 | |
 
 40/43
-
 
 --- pág. 41 ---
 
@@ -2685,29 +2357,28 @@ temps plein
 --- pág. 42 ---
 
 N° BE 0433.255.448 C 10
-Renseignements sur les formations pour les travailleurs au cours de l'exercice
-Codes Hommes Codes Femmes
-Initiatives en matière de formation professionnelle continue à caractère
-formel à charge de l'employeur
-Nombre de travailleurs concernés 5801 715811 1
-Nombre d'heures de formation suivies 5802 88 |5812 7
-Coût net pour l'entreprise 5803 14.253 |5813 421
-dont coût brut directement lié aux formations 58031 5.964158131 132
-dont cotisations payées et versements à des fonds collectifs 58032 8.289 58132 289
-dont subventions et autres avantages financiers reçus (à déduire) 58033 58133
-Initiatives en matière de formation professionnelle continue à caractère
-moins formel ou informel à charge de l'employeur
-Nombre de travailleurs concernés 5821 5831
-Nombre d'heures de formation suivies 5822 5832
-Coût net pour l'entreprise 5823 5833
-Initiatives en matière de formation professionnelle initiale à charge de
-l'employeur
-Nombre de travailleurs concernés 5841 20 5851 8
-Nombre d'heures de formation suivies 5842 9.678 | 5852 16
-Coût net pour l'entreprise 5843 329.151 5853 743
+
+**Renseignements sur les formations pour les travailleurs au cours de l'exercice**
+
+| | Codes | Hommes | Codes | Femmes |
+|---|---|---|---|---|
+| **Initiatives en matière de formation professionnelle continue à caractère formel à charge de l'employeur** | | | | |
+| Nombre de travailleurs concernés | 5801 | 7 | 5811 | 1 |
+| Nombre d'heures de formation suivies | 5802 | 88 | 5812 | 7 |
+| Coût net pour l'entreprise | 5803 | 14.253 | 5813 | 421 |
+| dont coût brut directement lié aux formations | 58031 | 5.964 | 58131 | 132 |
+| dont cotisations payées et versements à des fonds collectifs | 58032 | 8.289 | 58132 | 289 |
+| dont subventions et autres avantages financiers reçus (à déduire) | 58033 | | 58133 | |
+| **Initiatives en matière de formation professionnelle continue à caractère moins formel ou informel à charge de l'employeur** | | | | |
+| Nombre de travailleurs concernés | 5821 | | 5831 | |
+| Nombre d'heures de formation suivies | 5822 | | 5832 | |
+| Coût net pour l'entreprise | 5823 | | 5833 | |
+| **Initiatives en matière de formation professionnelle initiale à charge de l'employeur** | | | | |
+| Nombre de travailleurs concernés | 5841 | 20 | 5851 | 8 |
+| Nombre d'heures de formation suivies | 5842 | 9.678 | 5852 | 16 |
+| Coût net pour l'entreprise | 5843 | 329.151 | 5853 | 743 |
 
 42/43
-
 
 --- pág. 43 ---
 

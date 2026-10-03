@@ -59,7 +59,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Quilmes Atlético Club](../Argentina/Quilmes Atlético Club.md) — sin PDFs, dead-end real (sin señal de prensa ni de asamblea) — Último chequeo: 2026-09-26
 - [Racing Club](../Argentina/Racing.md) — cargado, 14 balances + 7 presupuestos completos
 - [Racing Club (Córdoba, Nueva Italia)](<../Argentina/Racing Club (Córdoba, Nueva Italia).md>) — sin PDFs, pendiente todo — Último chequeo: 2026-09-22
-- [River Plate](../Argentina/River.md) — cargado, Ejercicio 2024 real (fuente no-primaria); canal oficial IGJ identificado pero requiere trámite pago de Guido — Último chequeo: 2026-09-23
+- [River Plate](../Argentina/River.md) — cargado, Ejercicio 2024 real; 4 ejercicios más (2020-21 a 2022-23) y 1 con pregunta abierta de período (cierre 2025-12-31) encontrados vía CNV, pendientes de transcribir/onboardear; 2018-19 y 2019-20 siguen sin documento, requieren trámite IGJ pago de Guido — Último chequeo: 2026-09-28
 - [Rosario Central](../Argentina/Rosario Central.md) — cargado, Ejercicios 2022-23 y 2024-25 reales; 2023-24 confirmado aprobado (reducción de USD 4M en pasivos) pero no publicado — candidato a mail; 2025-26 todavía no tiene balance (recién cerró) — Último chequeo: 2026-09-26
 - [San Lorenzo de Almagro](../Argentina/San Lorenzo.md) — cargado, 7 ejercicios reales (2011-2017) + presupuesto; 4 ejercicios más (2018-19, 2021-22, 2022-23, 2023-24) CONFIRMADOS por prensa/asamblea pero no publicados — candidato a mail fuerte — Último chequeo: 2026-09-26
 - [San Martín (San Juan)](<../Argentina/San Martín (San Juan).md>) — sin PDF, dead-end real (0 señal; cuidado con el homónimo San Martín de Tucumán al buscar) — Último chequeo: 2026-09-26

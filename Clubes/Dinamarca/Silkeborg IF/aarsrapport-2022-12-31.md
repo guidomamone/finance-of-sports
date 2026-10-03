@@ -254,49 +254,42 @@ MNE-nr. mne34119 MNE-nr. mne27705
 
 --- pág. 8 ---
 
-Silkeborg IF A/S | Ledelsesberetning
+Silkeborg IF A/S | Ledelsesberetning 7
 
-Ledelsesberetning
+# Ledelsesberetning
 
-Hoved- og nøgletal
+**Hoved- og nøgletal**
 
-2022 2021 2020 2019 2018
-t.kr. t.kr. t.kr. t.kr. t.kr.
-Hovedtal
-Nettoomsætning 113.147 47.124 44.276 43.235 50.494
-Andre driftsindtægter 46.730 13.304 30.699 24.465 24.496
-Bruttoresultat 127.179 40.938 57.231 45.149 51.670
-Driftsresultat 70.385 (3.309) 17.404 5.809 8.121
-Resultat af finansielle poster 337 (71) (284) (564) (596)
-Årets resultat 55.159 (2.722) 14.596 5.154 7.417
-Balancesum 174.175 109.131 125.261 109.567 100.057
-Investeringer i materielle 7.858 865 718 2.129 3.355
-aktiver
-Egenkapital 118.948 63.789 66.511 51.916 36.761
-Pengestrømme fra 9.727 (2.692) (3.243) (26.153) (23.960)
-driftsaktivitet
-Pengestrømme fra 31.743 5.045 24.020 21.199 19.694
-investeringsaktivitet
-Pengestrømme fra (6.355) (2.236) (20.581) 5.625 5.720
-finansieringsaktivitet
-Nøgletal
-Bruttoavance (%) 112,40 86,87 129,26 104,43 102,33
-EBIT-margin (%) 62,21 (7,02) 39,31 13,44 16,08
-Egenkapitalforrentning (%) 60,37 (4,18) 24,65 11,62 26,44
-Soliditetsgrad (%) 68,29 58,45 53,10 47,38 36,74
+| | 2022 t.kr. | 2021 t.kr. | 2020 t.kr. | 2019 t.kr. | 2018 t.kr. |
+|---|---|---|---|---|---|
+| **Hovedtal** | | | | | |
+| Nettoomsætning | 113.147 | 47.124 | 44.276 | 43.235 | 50.494 |
+| Andre driftsindtægter | 46.730 | 13.304 | 30.699 | 24.465 | 24.496 |
+| Bruttoresultat | 127.179 | 40.938 | 57.231 | 45.149 | 51.670 |
+| Driftsresultat | 70.385 | (3.309) | 17.404 | 5.809 | 8.121 |
+| Resultat af finansielle poster | 337 | (71) | (284) | (564) | (596) |
+| Årets resultat | 55.159 | (2.722) | 14.596 | 5.154 | 7.417 |
+| Balancesum | 174.175 | 109.131 | 125.261 | 109.567 | 100.057 |
+| Investeringer i materielle aktiver | 7.858 | 865 | 718 | 2.129 | 3.355 |
+| Egenkapital | 118.948 | 63.789 | 66.511 | 51.916 | 36.761 |
+| Pengestrømme fra driftsaktivitet | 9.727 | (2.692) | (3.243) | (26.153) | (23.960) |
+| Pengestrømme fra investeringsaktivitet | 31.743 | 5.045 | 24.020 | 21.199 | 19.694 |
+| Pengestrømme fra finansieringsaktivitet | (6.355) | (2.236) | (20.581) | 5.625 | 5.720 |
+| **Nøgletal** | | | | | |
+| Bruttoavance (%) | 112,40 | 86,87 | 129,26 | 104,43 | 102,33 |
+| EBIT-margin (%) | 62,21 | (7,02) | 39,31 | 13,44 | 16,08 |
+| Egenkapitalforrentning (%) | 60,37 | (4,18) | 24,65 | 11,62 | 26,44 |
+| Soliditetsgrad (%) | 68,29 | 58,45 | 53,10 | 47,38 | 36,74 |
 
-Hoved- og nøgletal er defineret og beregnet i overensstemmelse med Finansforeningens gældende version af
+Hoved- og nøgletal er defineret og beregnet i overensstemmelse med Finansforeningens gældende version af "Anbefalinger & Nøgletal".
 
-"Anbefalinger & Nøgletal".
-
-Bruttoavance (%):
-Bruttoresultat = 100
+**Bruttoavance (%):**
+Bruttoresultat * 100
 Nettoomsætning
 
-EBIT-margin (%):
-Driftsresultat £ 100
+**EBIT-margin (%):**
+Driftsresultat * 100
 Nettoomsætning
-
 
 --- pág. 9 ---
 
@@ -462,90 +455,93 @@ Der er fra balancedagen og frem til i dag ikke indtrådt forhold, som forrykker 
 --- pág. 13 ---
 
 Silkeborg IF A/S | Resultatopgørelse for 2022 12
-2022 2021
 
-Note t.kr. t.kr.
+# Resultatopgørelse for 2022
 
-Nettoomsætning 2 113.147 47.124
-Andre driftsindtægter 3 46.730 13.304
-Andre eksterne omkostninger 4 (32.698) (19.490)
-Bruttoresultat 127.179 40.938
-Personaleomkostninger 5 (46.510) (35.307)
-Af- og nedskrivninger (9.104) (8.940)
-Andre driftsomkostninger (1.180) 0
-Driftsresultat 70.385 (3.309)
-Andre finansielle indtægter 6 558 344
-Andre finansielle omkostninger 7 (221) (415)
-Resultat før skat 70.722 (3.380)
-Skat af årets resultat (15.563) 658
-Årets resultat 8 55.159 (2.722)
-
+| | Note | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|---|
+| Nettoomsætning | 2 | 113.147 | 47.124 |
+| Andre driftsindtægter | 3 | 46.730 | 13.304 |
+| Andre eksterne omkostninger | 4 | (32.698) | (19.490) |
+| **Bruttoresultat** | | **127.179** | **40.938** |
+| Personaleomkostninger | 5 | (46.510) | (35.307) |
+| Af- og nedskrivninger | | (9.104) | (8.940) |
+| Andre driftsomkostninger | | (1.180) | 0 |
+| **Driftsresultat** | | **70.385** | **(3.309)** |
+| Andre finansielle indtægter | 6 | 558 | 344 |
+| Andre finansielle omkostninger | 7 | (221) | (415) |
+| **Resultat før skat** | | **70.722** | **(3.380)** |
+| Skat af årets resultat | | (15.563) | 658 |
+| **Årets resultat** | 8 | **55.159** | **(2.722)** |
 
 --- pág. 14 ---
 
-Silkeborg IF A/S | Balance pr. 31.12.2022
+Silkeborg IF A/S | Balance pr. 31.12.2022 13
 
-Balance pr. 31.12.2022
+# Balance pr. 31.12.2022
 
-13
+**Aktiver**
 
-Aktiver
-2022 2021
-Note t.kr. t.kr.
-Erhvervede immaterielle aktiver 7.990 3.743
-Erhvervede licenser 0 117
-Immaterielle aktiver 9 7.990 3.860
-Andre anlæg, driftsmateriel og inventar 9.896 10.237
-Indretning af lejede lokaler 66.759 66.727
-Materielle aktiver 10 76.655 76.964
-Andre værdipapirer og kapitalandele 42 42
-Deposita 8 44
-Finansielle aktiver 11 50 86
-Anlægsaktiver 84.695 80.910
-Råvarer og hjælpematerialer 38 62
-Varebeholdninger 38 62
-Tilgodehavender fra salg og tjenesteydelser 12 31.694 6.399
-Tilgodehavender hos tilknyttede virksomheder 20.000 15.000
-Andre tilgodehavender 243 4.078
-Periodeafgrænsningsposter 13 661 953
-Tilgodehavender 52.598 26.430
-Likvide beholdninger 14 36.844 1.729
-Omsætningsaktiver 89.480 28.221
-Aktiver 174.175 109.131
-
+| | Note | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|---|
+| Erhvervede immaterielle aktiver | | 7.990 | 3.743 |
+| Erhvervede licenser | | 0 | 117 |
+| **Immaterielle aktiver** | 9 | **7.990** | **3.860** |
+| Andre anlæg, driftsmateriel og inventar | | 9.896 | 10.237 |
+| Indretning af lejede lokaler | | 66.759 | 66.727 |
+| **Materielle aktiver** | 10 | **76.655** | **76.964** |
+| Andre værdipapirer og kapitalandele | | 42 | 42 |
+| Deposita | | 8 | 44 |
+| **Finansielle aktiver** | 11 | **50** | **86** |
+| **Anlægsaktiver** | | **84.695** | **80.910** |
+| Råvarer og hjælpematerialer | | 38 | 62 |
+| **Varebeholdninger** | | **38** | **62** |
+| Tilgodehavender fra salg og tjenesteydelser | 12 | 31.694 | 6.399 |
+| Tilgodehavender hos tilknyttede virksomheder | | 20.000 | 15.000 |
+| Andre tilgodehavender | | 243 | 4.078 |
+| Periodeafgrænsningsposter | 13 | 661 | 953 |
+| **Tilgodehavender** | | **52.598** | **26.430** |
+| **Likvide beholdninger** | 14 | **36.844** | **1.729** |
+| **Omsætningsaktiver** | | **89.480** | **28.221** |
+| **Aktiver** | | **174.175** | **109.131** |
 
 --- pág. 15 ---
 
 Silkeborg IF A/S | Balance pr. 31.12.2022 14
-Passiver
-2022 2021
-Note t.kr. t.kr.
-Virksomhedskapital 5.000 5.000
-Overført overskud eller underskud 113.948 58.789
-Egenkapital 118.948 63.789
-Udskudt skat 15 609 57
-Hensatte forpligtelser 609 57
-Bankgæld 0 154
-Leasingforpligtelser 0 411
-Modtagne forudbetalinger fra kunder 27.067 30.534
-Anden gæld 0 1.998
-Langfristede gældsforpligtelser 16 27.067 33.097
-Kortfristet del af langfristede forpligtelser 16 3.266 3.856
-Modtagne forudbetalinger fra kunder 2.670 2.628
-Leverandører af varer og tjenesteydelser 1.783 756
-Gæld til tilknyttede virksomheder 100 100
-Skyldige sambeskatningsbidrag 15.010 0
-Anden gæld 17 4.722 4.848
-Kortfristede gældsforpligtelser 27.551 12.188
-Gældsforpligtelser 54.618 45.285
-Passiver 174.175 109.131
-Begivenheder efter balancedagen 1
-Ikke-indregnede leje- og leasingforpligtelser 18
-Eventualaktiver 19
-Eventualforpligtelser 20
-Pantsætninger og sikkerhedsstillelser 21
-Nærtstående parter med bestemmende indflydelse 22
-Koncernforhold 23
+
+**Passiver**
+
+| | Note | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|---|
+| Virksomhedskapital | | 5.000 | 5.000 |
+| Overført overskud eller underskud | | 113.948 | 58.789 |
+| **Egenkapital** | | **118.948** | **63.789** |
+| Udskudt skat | 15 | 609 | 57 |
+| **Hensatte forpligtelser** | | **609** | **57** |
+| Bankgæld | | 0 | 154 |
+| Leasingforpligtelser | | 0 | 411 |
+| Modtagne forudbetalinger fra kunder | | 27.067 | 30.534 |
+| Anden gæld | | 0 | 1.998 |
+| **Langfristede gældsforpligtelser** | 16 | **27.067** | **33.097** |
+| Kortfristet del af langfristede forpligtelser | 16 | 3.266 | 3.856 |
+| Modtagne forudbetalinger fra kunder | | 2.670 | 2.628 |
+| Leverandører af varer og tjenesteydelser | | 1.783 | 756 |
+| Gæld til tilknyttede virksomheder | | 100 | 100 |
+| Skyldige sambeskatningsbidrag | | 15.010 | 0 |
+| Anden gæld | 17 | 4.722 | 4.848 |
+| **Kortfristede gældsforpligtelser** | | **27.551** | **12.188** |
+| **Gældsforpligtelser** | | **54.618** | **45.285** |
+| **Passiver** | | **174.175** | **109.131** |
+
+| | Note |
+|---|---|
+| Begivenheder efter balancedagen | 1 |
+| Ikke-indregnede leje- og leasingforpligtelser | 18 |
+| Eventualaktiver | 19 |
+| Eventualforpligtelser | 20 |
+| Pantsætninger og sikkerhedsstillelser | 21 |
+| Nærtstående parter med bestemmende indflydelse | 22 |
+| Koncernforhold | 23 |
 
 --- pág. 16 ---
 
@@ -572,301 +568,244 @@ A-aktier, 50.000 aktier å nom. 100 kr.
 --- pág. 17 ---
 
 Silkeborg IF A/S | Pengestrømsopgørelse for 2022 16
-Pengestrømsopgørelse for 2022
-2022 2021
 
-Note t.kr. t.kr.
-Driftsresultat 70.385 (3.309)
-Af- og nedskrivninger 9.104 8.940
-Gevinst ved salg af materielle og immaterielle anlægsaktiver (44.632) (8.548)
-Ændring i varebeholdning 25 170
-Ændring i tilgodehavender (20.932) 9.862
-Ændringer i kortfristet gæld (ekskl. bank og skat) (4.560) (7.603)
-Pengestrømme vedrørende primær drift 9.390 (488)
-Modtagne finansielle indtægter 558 344
-Betalte finansielle omkostninger (221) (415)
-Refunderet/(betalt) skat 0 (2.133)
-Pengestrømme vedrørende drift 9.727 (2.692)
-Køb mv. af immaterielle aktiver (6.375) (2.652)
-Salg af immaterielle aktiver 45.940 8.418
-Køb mv. af materielle aktiver (7.858) (864)
-Salg af materielle aktiver 0 185
-Køb af finansielle aktiver 0 (42)
-Salg af finansielle aktiver 36 0
-Pengestrømme vedrørende investeringer 31.743 5.045
-Frie pengestrømme frembragt fra drift og investering før 41.470 2.353
-finansiering
-Afdrag på lån mv. (1.355) (3.015)
-Bevægelser på udlån til tilknyttet virksomhed (5.000) 779
-Pengestrømme vedrørende finansiering (6.355) (2.236)
-Ændring i likvider 35.115 117
-Likvider primo 1.729 1,612
-Likvider ultimo 36.844 1.729
+# Pengestrømsopgørelse for 2022
+
+| | Note | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|---|
+| Driftsresultat | | 70.385 | (3.309) |
+| Af- og nedskrivninger | | 9.104 | 8.940 |
+| Gevinst ved salg af materielle og immaterielle anlægsaktiver | | (44.632) | (8.548) |
+| Ændring i varebeholdning | | 25 | 170 |
+| Ændring i tilgodehavender | | (20.932) | 9.862 |
+| Ændringer i kortfristet gæld (ekskl. bank og skat) | | (4.560) | (7.603) |
+| **Pengestrømme vedrørende primær drift** | | **9.390** | **(488)** |
+| Modtagne finansielle indtægter | | 558 | 344 |
+| Betalte finansielle omkostninger | | (221) | (415) |
+| Refunderet/(betalt) skat | | 0 | (2.133) |
+| **Pengestrømme vedrørende drift** | | **9.727** | **(2.692)** |
+| Køb mv. af immaterielle aktiver | | (6.375) | (2.652) |
+| Salg af immaterielle aktiver | | 45.940 | 8.418 |
+| Køb mv. af materielle aktiver | | (7.858) | (864) |
+| Salg af materielle aktiver | | 0 | 185 |
+| Køb af finansielle aktiver | | 0 | (42) |
+| Salg af finansielle aktiver | | 36 | 0 |
+| **Pengestrømme vedrørende investeringer** | | **31.743** | **5.045** |
+| **Frie pengestrømme frembragt fra drift og investering før finansiering** | | **41.470** | **2.353** |
+| Afdrag på lån mv. | | (1.355) | (3.015) |
+| Bevægelser på udlån til tilknyttet virksomhed | | (5.000) | 779 |
+| **Pengestrømme vedrørende finansiering** | | **(6.355)** | **(2.236)** |
+| **Ændring i likvider** | | **35.115** | **117** |
+| Likvider primo | | 1.729 | 1.612 |
+| **Likvider ultimo** | | **36.844** | **1.729** |
+
 Likvider ultimo sammensætter sig af:
-Likvide beholdninger 36.844 1.729
-Likvider ultimo 36.844 1.729
 
+| | | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|---|
+| Likvide beholdninger | | 36.844 | 1.729 |
+| **Likvider ultimo** | | **36.844** | **1.729** |
 
 --- pág. 18 ---
 
 Silkeborg IF A/S | Noter 17
-Noter
-1 Begivenheder efter balancedagen
+
+# Noter
+
+**1 Begivenheder efter balancedagen**
 Der er fra balancedagen og frem til i dag ikke indtrådt forhold, som forrykker vurderingen af årsrapporten.
-2 Nettoomsætning
-2022 2021
-t.kr. t.kr.
-Entréindtægter 6.982 1,839
-TV- Indtægter 25.215 13.117
-Sponsor- og samarbejdsaftaler 27.062 19.742
-Salg af merchandise 316 745
-Kompensation (FIFA/UEFA/DBU) 3.227 2.647
-Food & beverage JYSK PARK 6.608 2.131
-Præmieindtægter 34.705 0
-Øvrige driftsindtægter 9.032 6.903
-Aktiviteter i alt 113.147 47.124
-3 Andre driftsindtægter
-2022 2021
-t.kr. t.kr.
-Transferindtægter 45.265 8.418
-Offentlige tilskud 1,465 4.754
-Salg af materielle anlægsaktiver 0 132
-46.730 13.304
 
-Selskabet har, med baggrund i ændrede lovgivningsmæssige forudsætninger, søgt og modtaget yderligere
+**2 Nettoomsætning**
 
-kompensation i form af statens hjælpepakker. Der er indregnet kompensation for tidligere aflysning af større
-arrangementer på i alt 1.465 t.kr. (4.754 t.kr. i 2021). Beløbet er slutafregnet.
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Entréindtægter | 6.982 | 1.839 |
+| TV- Indtægter | 25.215 | 13.117 |
+| Sponsor- og samarbejdsaftaler | 27.062 | 19.742 |
+| Salg af merchandise | 316 | 745 |
+| Kompensation (FIFA/UEFA/DBU) | 3.227 | 2.647 |
+| Food & beverage JYSK PARK | 6.608 | 2.131 |
+| Præmieindtægter | 34.705 | 0 |
+| Øvrige driftsindtægter | 9.032 | 6.903 |
+| **Aktiviteter i alt** | **113.147** | **47.124** |
 
-4 Andre eksterne omkostninger
+**3 Andre driftsindtægter**
 
-Eksterne omkostninger omfatter kamp og spilleromkostninger for 18.144 tkr. (10.141 t.kr. i 2021)
-samt salgs- og administrationsomkostninger for 14.554 tkr. (9.349 t.kr. i 2021).
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Transferindtægter | 45.265 | 8.418 |
+| Offentlige tilskud | 1.465 | 4.754 |
+| Salg af materielle anlægsaktiver | 0 | 132 |
+| | **46.730** | **13.304** |
 
-I salgs- og administrationsomkostninger indgår forbrug af råvarer med 3.617 t.kr. (1.243 t.kr. i 2021) og
-omkostninger vedr. sponsorindtægter med 4.575 t.kr. (1.957 t.kr. i 2021). 12021 indgik ligeledes forbrug af
+Selskabet har, med baggrund i ændrede lovgivningsmæssige forudsætninger, søgt og modtaget yderligere kompensation i form af statens hjælpepakker. Der er indregnet kompensation for tidligere aflysning af større arrangementer på i alt 1.465 t.kr. (4.754 t.kr. i 2021). Beløbet er slutafregnet.
 
-merchandise med 504 t.kr. Området er i 2022 outsourcet hvorfor der ikke længere er omkostninger knyttet
+**4 Andre eksterne omkostninger**
+Eksterne omkostninger omfatter kamp og spilleromkostninger for 18.144 tkr. (10.141 t.kr. i 2021) samt salgs- og administrationsomkostninger for 14.554 tkr. (9.349 t.kr. i 2021).
 
-hertil.
+I salgs- og administrationsomkostninger indgår forbrug af råvarer med 3.617 t.kr. (1.243 t.kr. i 2021) og omkostninger vedr. sponsorindtægter med 4.575 t.kr. (1.957 t.kr. i 2021). I 2021 indgik ligeledes forbrug af merchandise med 504 t.kr. Området er i 2022 outsourcet hvorfor der ikke længere er omkostninger knyttet hertil.
 
 --- pág. 19 ---
 
 Silkeborg IF A/S | Noter 18
-5 Personaleomkostninger
-2022 2021
-t.kr. t.kr.
-Gager og lønninger 42.643 32.154
-Pensioner 1.783 1.453
-Andre omkostninger til social sikring 568 484
-Andre personaleomkostninger 1,516 1.216
-46.510 35.307
-Gennemsnitligt antal fuldtidsansatte medarbejdere 62 56
-Ledelses- Ledelses-
-vederlag vederlag
-2022 2021
-t.kr. t.kr.
-Direktion 2.000 1,992
-2.000 1.992
-I antal personer beskæftiget i gennemsnit indgår 31 kontraktspillere (2021” 27 kontraktspillere).
-I løn og gager er modregnet modtagne offentlige tilskud og refusioner med 425 t.kr. (2021” 184 t.kr.).
-6 Andre finansielle indtægter
-2022 2021
-t.kr. t.kr.
-Finansielle indtægter fra tilknyttede virksomheder 505 344
-Renteindtægter i øvrigt 53 0
-558 344
-7 Andre finansielle omkostninger
-2022 2021
-t.kr. t.kr.
-Renteomkostninger i øvrigt 221 415
-221 415
-8 Forslag til resultatdisponering
-2022 2021
-t.kr. t.kr.
-Overført resultat 55.159 (2.722)
-55.159 (2.722)
 
+**5 Personaleomkostninger**
+
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Gager og lønninger | 42.643 | 32.154 |
+| Pensioner | 1.783 | 1.453 |
+| Andre omkostninger til social sikring | 568 | 484 |
+| Andre personaleomkostninger | 1.516 | 1.216 |
+| | **46.510** | **35.307** |
+| Gennemsnitligt antal fuldtidsansatte medarbejdere | **62** | **56** |
+
+| | Ledelsesvederlag 2022 t.kr. | Ledelsesvederlag 2021 t.kr. |
+|---|---|---|
+| Direktion | 2.000 | 1.992 |
+| | **2.000** | **1.992** |
+
+I antal personer beskæftiget i gennemsnit indgår 31 kontraktspillere (2021¨ 27 kontraktspillere).
+
+I løn og gager er modregnet modtagne offentlige tilskud og refusioner med 425 t.kr. (2021¨ 184 t.kr.).
+
+**6 Andre finansielle indtægter**
+
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Finansielle indtægter fra tilknyttede virksomheder | 505 | 344 |
+| Renteindtægter i øvrigt | 53 | 0 |
+| | **558** | **344** |
+
+**7 Andre finansielle omkostninger**
+
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Renteomkostninger i øvrigt | 221 | 415 |
+| | **221** | **415** |
+
+**8 Forslag til resultatdisponering**
+
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Overført resultat | 55.159 | (2.722) |
+| | **55.159** | **(2.722)** |
 
 --- pág. 20 ---
 
 Silkeborg IF A/S | Noter 19
 
-9 Immaterielle aktiver
-Erhvervede
+**9 Immaterielle aktiver**
 
-immaterielle Erhvervede
+| | Erhvervede immaterielle aktiver t.kr. | Erhvervede licenser t.kr. |
+|---|---|---|
+| Kostpris primo | 5.462 | 1.116 |
+| Tilgange | 6.375 | 0 |
+| Afgange | (787) | (501) |
+| **Kostpris ultimo** | **11.050** | **615** |
+| Af- og nedskrivninger primo | (1.719) | (999) |
+| Årets afskrivninger | (2.001) | (117) |
+| Tilbageførsel ved afgange | 660 | 501 |
+| **Af- og nedskrivninger ultimo** | **(3.060)** | **(615)** |
+| **Regnskabsmæssig værdi ultimo** | **7.990** | **0** |
 
-aktiver licenser
+**10 Materielle aktiver**
 
-t.kr. t.kr.
+| | Andre anlæg, driftsmateriel og inventar t.kr. | Indretning af lejede lokaler t.kr. |
+|---|---|---|
+| Kostpris primo | 23.338 | 80.293 |
+| Tilgange | 2.961 | 4.897 |
+| Afgange | 0 | (2.361) |
+| **Kostpris ultimo** | **26.299** | **82.829** |
+| Af- og nedskrivninger primo | (13.101) | (13.566) |
+| Årets afskrivninger | (3.302) | (3.684) |
+| Tilbageførsel ved afgange | 0 | 1.180 |
+| **Af- og nedskrivninger ultimo** | **(16.403)** | **(16.070)** |
+| **Regnskabsmæssig værdi ultimo** | **9.896** | **66.759** |
 
-Kostpris primo 5.462 1.116
+**11 Finansielle aktiver**
 
-Tilgange 6.375 0
-
-Afgange (787) (501)
-
-Kostpris ultimo 11.050 615
-
-Af- og nedskrivninger primo (1.719) (999)
-
-Årets afskrivninger (2.001) (117)
-
-Tilbageførsel ved afgange 660 501
-
-Af- og nedskrivninger ultimo (3.060) (615)
-
-Regnskabsmæssig værdi ultimo 7.990 (4
-
-10 Materielle aktiver
-
-Andre anlæg,
-driftsmateriel
-
-Indretning af
-
-og inventar lejede lokaler
-t.kr. t.kr.
-Kostpris primo 23.338 80.293
-Tilgange 2.961 4.897
-Afgange 0 (2.361)
-Kostpris ultimo 26.299 82.829
-Af- og nedskrivninger primo (13.101) (13.566)
-Årets afskrivninger (3.302) (3.684)
-Tilbageførsel ved afgange 0 1.180
-Af- og nedskrivninger ultimo (16.403) (16.070)
-Regnskabsmæssig værdi ultimo 9.896 66.759
-11 Finansielle aktiver
-
-Andre
-
-værdipapirer
-
-og kapital-
-andele Deposita
-t.kr. t.kr.
-Kostpris primo 42 44
-Afgange 0 (36)
-Kostpris ultimo 42 8
-Regnskabsmæssig værdi ultimo 42 8
-
+| | Andre værdipapirer og kapitalandele t.kr. | Deposita t.kr. |
+|---|---|---|
+| Kostpris primo | 42 | 44 |
+| Afgange | 0 | (36) |
+| **Kostpris ultimo** | **42** | **8** |
+| **Regnskabsmæssig værdi ultimo** | **42** | **8** |
 
 --- pág. 21 ---
 
-Silkeborg IF A/S | Noter
+Silkeborg IF A/S | Noter 20
 
-12 Tilgodehavender fra salg og tjenesteydelser
-I tilgodehavender fra salg og tjenesteydelser indgår tilgodehavender på 7.500 t.kr., der forfalder til betaling mere
+**12 Tilgodehavender fra salg og tjenesteydelser**
+I tilgodehavender fra salg og tjenesteydelser indgår tilgodehavender på 7.500 t.kr., der forfalder til betaling mere end 12 måneder fra balancedagen.
 
-end 12 måneder fra balancedagen.
-
-13 Periodeafgrænsningsposter
-
+**13 Periodeafgrænsningsposter**
 Periodeafgrænsningsposter indeholder forudbetalte omkostninger for 661 t.kr. (953 t.kr. i 2021).
 
-14 Likvide beholdninger
-
+**14 Likvide beholdninger**
 Pr. balancedagen indestår 675 t.dk på deponeringskonto.
 
-15 Udskudt skat
+**15 Udskudt skat**
 
-20
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Immaterielle aktiver | 230 | 158 |
+| Materielle aktiver | 379 | 772 |
+| Forpligtelser | 0 | (227) |
+| Fremførbare skattemæssige underskud | 0 | (646) |
+| **Udskudt skat i alt** | **609** | **57** |
 
-2022 2021
+| Bevægelser i året | 2022 t.kr. |
+|---|---|
+| Primo | 56 |
+| Indregnet i resultatopgørelsen | 553 |
+| **Ultimo** | **609** |
 
-t.kr. t.kr.
+**16 Langfristede forpligtelser**
 
-Immaterielle aktiver 230 158
-
-Materielle aktiver 379 772
-
-Forpligtelser 0 (227)
-
-Fremførbare skattemæssige underskud 0 (646)
-
-Udskudt skat i alt 609 57
-
-2022
-
-Bevægelser i året t.kr.
-
-Primo 56
-
-Indregnet i resultatopgørelsen 553
-
-Ultimo 609
-16 Langfristede forpligtelser
-
-Forfald inden Forfald inden Forfald
-
-for 12 for 12 efter 12 Restgæld
-
-måneder måneder måneder efter 5 år
-
-2022 2021 2022 2022
-
-t.kr. t.kr. t.kr. t.kr.
-
-Bankgæld 0 141 0 0
-
-Leasingforpligtelser 0 620 0 0
-
-Modtagne forudbetalinger fra kunder 3.266 3.095 27.067 15.059
-
-3.266 3.856 27.067 15.059
-
+| | Forfald inden for 12 måneder 2022 t.kr. | Forfald inden for 12 måneder 2021 t.kr. | Forfald efter 12 måneder 2022 t.kr. | Restgæld efter 5 år 2022 t.kr. |
+|---|---|---|---|---|
+| Bankgæld | 0 | 141 | 0 | 0 |
+| Leasingforpligtelser | 0 | 620 | 0 | 0 |
+| Modtagne forudbetalinger fra kunder | 3.266 | 3.095 | 27.067 | 15.059 |
+| | **3.266** | **3.856** | **27.067** | **15.059** |
 
 --- pág. 22 ---
 
 Silkeborg IF A/S | Noter 21
 
-17 Anden gæld
+**17 Anden gæld**
 
-2022 2021
-t.kr. t.kr.
-Moms og afgifter 3.019 1,679
-Skyldig løn, A-skat, sociale bidrag m.m. 222 1.248
-Feriepengeforpligtelser 480 328
-Anden gæld i øvrigt 1.001 1,593
-4.722 4.848
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Moms og afgifter | 3.019 | 1.679 |
+| Skyldig løn, A-skat, sociale bidrag m.m. | 222 | 1.248 |
+| Feriepengeforpligtelser | 480 | 328 |
+| Anden gæld i øvrigt | 1.001 | 1.593 |
+| | **4.722** | **4.848** |
 
-18 Ikke-indregnede leje- og leasingforpligtelser
-2022 2021
-t.kr. t.kr.
-Forpligtelser i henhold til leje- eller leasingkontrakter frem til udløb i alt 7.469 7.727
+**18 Ikke-indregnede leje- og leasingforpligtelser**
 
-Silkeborg IF A/S har indgået en tidsbegrænset lejeaftale med Silkeborg Kommune om benyttelsen af JYSK Park.
-Lejeaftalen løber indtil den 30. juni 2047.
+| | 2022 t.kr. | 2021 t.kr. |
+|---|---|---|
+| Forpligtelser i henhold til leje- eller leasingkontrakter frem til udløb i alt | 7.469 | 7.727 |
 
-19 Eventualaktiver
-Til enkelte salg af kontraktrettigheder knytter sig betalinger, der først effektueres, når en række betingelser er
-opfyldt. Indtægter indregnes, når betingelserne er opfyldt
+Silkeborg IF A/S har indgået en tidsbegrænset lejeaftale med Silkeborg Kommune om benyttelsen af JYSK Park. Lejeaftalen løber indtil den 30. juni 2047.
 
-20 Eventualforpligtelser
+**19 Eventualaktiver**
+Til enkelte salg af kontraktrettigheder knytter sig betalinger, der først effektueres, når en række betingelser er opfyldt. Indtægter indregnes, når betingelserne er opfyldt
 
-I forbinelse med køb af kontraktrettigheder knytter der sig i enkelte tilfælde betalinger, der først effektueres, når
-en række betingelser er opfyldt. Omkostninger herfra indregnes i takt med, sandsynligheden for betingelserne
-indtræder.
+**20 Eventualforpligtelser**
+I forbinelse med køb af kontraktrettigheder knytter der sig i enkelte tilfælde betalinger, der først effektueres, når en række betingelser er opfyldt. Omkostninger herfra indregnes i takt med, sandsynligheden for betingelserne indtræder.
 
-Med selskabets spillere er indgået ansættelsesaftaler, der medfører betaling af løn eller kompensation i en
-længerevarende kontraktperiode. Den gennemsnitlige kontraktperiode pr. 31. december 2022 kan opgøres til ca.
-2,22 år (31. december 2021: 2,25 år).
+Med selskabets spillere er indgået ansættelsesaftaler, der medfører betaling af løn eller kompensation i en længerevarende kontraktperiode. Den gennemsnitlige kontraktperiode pr. 31. december 2022 kan opgøres til ca. 2,22 år (31. december 2021: 2,25 år).
 
-Selskabet har indgået en drift-og vedligeholdelsesaftale vedr. JYSK Park. Aftalen er fra selskabes side uopsigelig
-frem til den 1. januar 2029. Selskabet har i den forbindelse en forpligtelse til at vedligeholde kunstgræstæppe på
-JYSK park i perioden.
+Selskabet har indgået en drift-og vedligeholdelsesaftale vedr. JYSK Park. Aftalen er fra selskabes side uopsigelig frem til den 1. januar 2029. Selskabet har i den forbindelse en forpligtelse til at vedligeholde kunstgræstæppe på JYSK park i perioden.
 
-Selskabet indgår i en dansk sambeskatning med Silkeborg IF Invest A/S som administrationsselskab. Selskabet
-hæfter derfor i henhold til selskabsskattelovens regler herom for indkomstskatter mv. for de sambeskattede
-selskaber og ligeledes for eventuelle forpligtelser til at indeholde kildeskat på renter, royalties og udbytter for de
-sambeskattede selskaber. De sambeskattede selskabers samlede kendte nettoforpligtelse i sambeskatningen
-fremgår af administrationsselskabets årsregnskab.
+Selskabet indgår i en dansk sambeskatning med Silkeborg IF Invest A/S som administrationsselskab. Selskabet hæfter derfor i henhold til selskabsskattelovens regler herom for indkomstskatter mv. for de sambeskattede selskaber og ligeledes for eventuelle forpligtelser til at indeholde kildeskat på renter, royalties og udbytter for de sambeskattede selskaber. De sambeskattede selskabers samlede kendte nettoforpligtelse i sambeskatningen fremgår af administrationsselskabets årsregnskab.
 
-21 Pantsætninger og sikkerhedsstillelser
-Der er tinglyst løsørepantebrev på 5.000 t.kr. med sikkerbed i driftsinventar og materiel, der pr. 31. december
-2021 har en regnskabsmæssig værdi på 9.896 t.kr. (31. december 2021: 9.632 t.kr.). Løsørepantebrevet ligger
-hos koncemen og er ikke stillet til sikkerhed.
+**21 Pantsætninger og sikkerhedsstillelser**
+Der er tinglyst løsørepantebrev på 5.000 t.kr. med sikkerbed i driftsinventar og materiel, der pr. 31. december 2021 har en regnskabsmæssig værdi på 9.896 t.kr. (31. december 2021: 9.632 t.kr.). Løsørepantebrevet ligger hos koncemen og er ikke stillet til sikkerhed.
 
 --- pág. 23 ---
 
