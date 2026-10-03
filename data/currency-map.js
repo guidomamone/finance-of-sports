@@ -346,6 +346,7 @@ const FX_CLOSE = {
   'EUR@2013-06-30': { fx: 0.764526, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2013-06-28, 2013-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2014-06-30': { fx: 0.732172, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2014-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2015-06-30': { fx: 0.893735, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2015-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2007-06-30': { fx: 0.740466, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2007-06-29, 2007-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
