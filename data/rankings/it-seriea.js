@@ -33,9 +33,9 @@ window.RANKINGS["it-seriea"] = {
   2025: {
     leagueSize: null,
     clubs: [
-      { id:"juventus-it", revenue:621.227, reportType:"official_balance_sheet",
+      { id:"juventus-it", revenue:617.1, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
-        mix:[["Comercial / Sponsors",135.879],["Estadio",76.665],["Televisión",207.91],["Venta de Jugadores",128.604],["Otros ingresos",72.168]] },
+        mix:[["Comercial / Sponsors",135.88],["Estadio",76.665],["Televisión",207.91],["Venta de Jugadores",128.604],["Otros ingresos",68.042]] },
     ],
   },
   2021: {

@@ -83,3 +83,5 @@ de bilancio en sí, no la documentación de auditoría suelta.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2008 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf` (sourceId `juventus-it-annual-financial-report-2007-08`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2011 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.pdf` (sourceId `juventus-it-annual-financial-report-2010-11`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.pdf` (sourceId `juventus-it-annual-financial-report-2024-25`).
