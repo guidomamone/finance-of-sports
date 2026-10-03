@@ -1,5 +1,7 @@
 # Real Oviedo, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 65 PDFs) · Wayback CDX: agotado (prefijo del CMS) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 1 ejercicio real descargado a `Clubes/España/Real Oviedo/`, encontrado
   navegando `realoviedo.es/ley-de-transparencia` con el browser (carga con contenido real):
   - `cuentas-anuales-2024-2025.pdf` (65 págs.) — link "cuentas anuales del club" en la propia página,
@@ -30,3 +32,9 @@
   PANTONE 286C, hex convertido de ese Pantone (crispedge.com, icolorpalette.com), verificado
   2026-09-25.
 - Pendiente sigue igual: ejercicios 2021-22 a 2023-24, y reintentar 2020-21.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del CMS (`statics-maker.llt-services.com/ovi/documents/`) se bajaron las cuentas de **2020-21** (62 págs., escaneo, 2022/12/13) y **2022-23** (71 págs., texto, 2023/11/02). Con 2024-25 → **3 ejercicios**. Faltan 2021-22 y 2023-24 (el club jugó en Segunda División; no aparecen en el CMS). `2022/12/13/...` también tiene documentos LaLiga de endeudamiento al 30/6/21 (no son cuentas). Hay un informe semestral intermedio al 31/12/2018 (30 págs.) sin bajar: no es un ejercicio completo.
+
+PDFs guardados en `Clubes/España/Real Oviedo/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

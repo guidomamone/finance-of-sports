@@ -1,5 +1,7 @@
 # Real Club Deportivo Mallorca, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 34 PDFs) · Wayback CDX: parcial — el barrido del dominio viejo rcdmallorca.es dio 0 resultados el 2026-10-03 PERO archive.org estaba "Temporarily Offline", no es evidencia · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 1 ejercicio real descargado a `Clubes/España/RCD Mallorca/`, encontrado
   navegando `rcdmallorca.es/en/ley-de-transparencia` con el browser (la página SÍ carga con contenido
   en el HTML, no es de las bloqueadas):
@@ -34,3 +36,9 @@
   la camiseta (negro es secundario, en pantalón/medias desde 1933), hex verificado en
   teamcolorcodes.com/rcd-mallorca-colors/ (PANTONE 2035 C), verificado 2026-09-25.
 - Pendiente sigue igual: ejercicios 2019-20 a 2023-24.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del CMS (`statics-maker.llt-services.com/mll/documents/`) se bajaron los informes de auditoría (José Fco. Balle Cerdá) + cuentas de **2021-22** (63 págs., 2023/04/21), **2022-23** (70 págs., 2024/04/29) y **2023-24** (70 págs., 2025/04/08); el 2024-25 (75 págs., 2026/04/10) ya estaba. → **4 ejercicios**. Falta uno: 2020-21 o anterior. Pista: el dominio viejo `rcdmallorca.es` tuvo `informe_auditoria_cuentas_anuales_13-14.pdf` y `/rcdmallorca/wp-content/uploads/2015/07/informe-auditoria-cuentas-anuales-13-14.pdf` (ejercicio 2013-14, listado por Wayback) — reintentar el barrido cuando archive.org vuelva.
+
+PDFs guardados en `Clubes/España/RCD Mallorca/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

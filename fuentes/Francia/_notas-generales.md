@@ -169,3 +169,20 @@ completa el histórico de Eagle Football Group/OL Groupe (2008/09-2016/17 y 2019
 relación entre "AS Monaco Football Club SA" (SIREN francés) y la entidad monegasca real, o si algún
 club privado de Ligue 1 empieza a publicar voluntariamente (poco probable, pero revisar si cambia de
 dueño a un fondo con obligaciones de reporting, como pasó con RC Strasbourg/BlueCo).
+
+## Sesión 2026-10-03 (chequeo del canal DNCG)
+
+- **El host cambió: `sta.lfp.fr` ya no resuelve (ENOTFOUND); el portal vive en `https://www.sta.lfp.fr/reports-dncg`**
+  (200, HTML Next.js con los links a `https://www.sta.lfp.fr/assets/<nombre>_<hash>.pdf` embebidos).
+  `www.lfp.fr/reports-dncg` da 404.
+- **Estado de la página hoy**: la última temporada publicada sigue siendo 2022/23
+  (`2223_DNCG_comptes_clubs_a31e0126d8.pdf`, `2223_DNCG_situation_football_0213297b30.pdf` y versiones
+  EN). NO están 2023/24 ni 2024/25 en el dominio oficial, y 2015/16 solo tiene el rapport
+  (`1516_rapport_dncg_all_fr_...`), sin comptes individuels — consistente con lo ya documentado.
+- **Prensa**: Lensois.com (rapport 2023-24 en cifras) enlaza a `lfp.fr/reports-dncg` pero no al PDF;
+  Patrick Bayeux publicó los PDF 2022/23 y 2024/25 pero no se encontró el de 2023/24 con link directo.
+  El hueco 2023/24 sigue abierto.
+- **Cobertura por club (objetivo "5 ejercicios")**: los 18 clubes de Ligue 1 2025/26 ya superan 5
+  ejercicios porque el agregado trae 20+ temporadas (2002/03-2022/23 sin 2015/16, + 2024/25) con el
+  bilan y la cuenta de resultados de cada club de L1 y L2. No hay carpeta por club en `Clubes/Francia/`
+  (solo Olympique Lyonnais y el agregado): la cobertura es vía `Clubes/Francia/_DNCG-Agregado-Liga/`.

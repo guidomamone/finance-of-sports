@@ -1,5 +1,7 @@
 # Club Atlético Osasuna
 
+**Ángulos**: sitio oficial: parcial — 2022-23 solo como memoria no financiera · Wayback CDX: agotado (osasuna.es/public/Attachment 136 PDFs) · búsqueda web: no intentado · regulador/país: no aplica (club de socios, sección Transparencia) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Forma jurídica distinta a la mayoría de esta lista**: Osasuna NO es S.A.D., es un club tradicional
   de socios (inscrito en el Registro de Asociaciones Deportivas del Instituto Navarro de Deporte y
   Juventud del Gobierno de Navarra, nº 492) — mismo patrón que Athletic Club y Real Sociedad. A
@@ -46,3 +48,9 @@
   cierra exacto (2023/24) y con ruido de redondeo de 1-2 EUR sobre decenas de millones (2021/22).
   Color de marca: `#D91A21` (rojo, "Los Rojillos") — teamcolorcodes.com, verificado 2026-09-22.
 - Último chequeo: 2026-09-22.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del CDN `osasuna.es/public/Attachment/` se bajaron: `cuentas2022.pdf` (= **Informe económico 2021-22**, 31 págs.), `cuentas2024.pdf` (**Informe económico 2023-24 + presupuesto 24-25**, 26 págs.), `auditoria-2024-2025.pdf` (informe de auditoría al 30-6-25, 101 págs.), `informe-economico-2024-2025-presupuesto-2025-26.pdf` (30 págs.) y las memorias oficiales `memoria2022.pdf` (2021-22), `memoria2023.pdf` (resultó ser el informe NO financiero 2022-23) y `memoria2024.pdf`. Ejercicios con material financiero: 2021-22, 2023-24, 2024-25 (+ 2022-23 solo no financiero) → **3 financieros, 4 con la memoria**. Falta el informe económico/auditoría de 2022-23.
+
+PDFs guardados en `Clubes/España/CA Osasuna/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

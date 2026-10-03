@@ -1,5 +1,7 @@
 # Girona Futbol Club, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 126 PDFs listados y clasificados) · Wayback CDX: agotado (prefijo del CMS; dominio gironafc.cat no barrido) · búsqueda web: no intentado · regulador/país: no aplica (sin registro abierto; Registro Mercantil de pago) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 2 ejercicios reales descargados a `Clubes/España/Girona FC/`, ambos vía
   el mismo host de documentos `statics-maker.llt-services.com/gir/` (backend de CMS de transparencia
   compartido por varios clubes de LaLiga — ver `_notas-generales.md`), sin necesitar navegar la página
@@ -38,3 +40,9 @@
   verticales, "Blanc-i-Vermells"; con el otro color blanco, gana el rojo por el criterio de
   desempate de `club-or-year-onboarding/SKILL.md` §3) + footylogos.com, verificado 2026-09-22.
 - Último chequeo: 2026-09-22.
+
+## Sourcing España/Francia (2026-10-03)
+
+Se bajaron 5 ejercicios nuevos del CMS de transparencia (`statics-maker.llt-services.com/gir/documents/...`, vía el listado de Wayback del prefijo — los PDFs siguen vivos): 2018-19, 2020-21, 2021-22, 2022-23 y 2023-24 (informe de auditoría + cuentas anuales, 150-163 págs. cada uno, escaneos/firmados con Signaturit). Con los 2 que ya había (2019-20, 2024-25) quedan **7 ejercicios consecutivos 2018-2025**. También hay en el CMS 2 versiones del 2024-25 (172 y 177 págs., 2026-02/03: individual y probablemente consolidado) sin bajar todavía — ver pendiente. Cada carátula se leyó por OCR para confirmar el ejercicio (la fecha en la URL es de subida, no del ejercicio).
+
+PDFs guardados en `Clubes/España/Girona FC/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

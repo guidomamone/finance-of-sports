@@ -82,3 +82,27 @@ forma voluntaria/parcial aunque no reciban subvención pública que los obligue.
 Actualizar cuando un ángulo nuevo de nivel-país se confirme (un CMS compartido nuevo, un patrón de
 bloqueo nuevo con su solución) — no hace falta una entrada por cada club individual, eso vive en
 `fuentes/España/<Club>.md`.
+
+## Sesión 2026-10-03 (sourcing España, objetivo "5 ejercicios por club")
+
+- **Técnica que rindió 40+ ejercicios en una tarde: listar el PREFIJO del CMS de LaLiga en Wayback y
+  clasificar cada PDF por OCR/texto de la carátula.** `https://web.archive.org/cdx/search/cdx?url=
+  statics-maker.llt-services.com/<código>/*&collapse=urlkey&fl=original,mimetype,timestamp` (sin
+  `filter=mimetype:...`, que con el `:` sin codificar devuelve vacío) lista TODO lo que el club subió
+  al CMS, incluidos los ejercicios viejos que la página de transparencia ya no linkea (Girona 126
+  PDFs, Getafe 101, Levante 81, Oviedo 65, Mallorca 34, Rayo 20, Elche 11). Los PDFs siguen vivos en
+  el host (curl directo, 200); Wayback solo sirve de índice. La fecha de la URL es la de subida, no
+  la del ejercicio: leer la carátula (muchos son escaneos → `pdftoppm`+`tesseract -l spa`).
+  Códigos confirmados: `gir`, `mll`, `ray`, `get`, `elc`, `lev`, `ovi`. Espanyol y Sevilla NO usan
+  este CMS (Espanyol: `rcdespanyol.com/assets/docs/transparencia/`; Sevilla: `mediaverse.sevillafc.hiway.media`).
+- **Mismo patrón en CDNs propios**: listar `<host>/public/Attachment/*` (Valencia, Osasuna),
+  `rccelta.es/app/uploads/*` (Celta), `cdn.athletic-club.eus/*` (Athletic) o los subdominios legados
+  (`seguro.valenciacf.com/bd/archivos/` — resolvió el pendiente de Valencia: 2018-19, 2019-20, 2021-22).
+- **Cuidado con falsos "0 resultados": el 2026-10-03 archive.org estuvo "Temporarily Offline"
+  (devuelve un HTML con status 200)** y los listados de ese momento (`sevillafc.es` dominio completo,
+  `rcdmallorca.es` dominio completo) dieron 0 sin ser evidencia de nada — Sevilla y el dominio viejo
+  de Mallorca quedan SIN barrer a fondo. Validar siempre que la respuesta del CDX no empiece con
+  `<html`.
+- **Pendiente de esta sesión por club** (para llegar a 5 ejercicios): Elche, Rayo, Mallorca,
+  Villarreal (4 c/u); Oviedo, Espanyol (3); Levante (3 + memoria); Osasuna (3 financieros); Sevilla
+  (4 + borrador rechazado, sin barrer); Real Sociedad (0, gateado a accionistas).

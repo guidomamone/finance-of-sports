@@ -360,3 +360,17 @@ perdieron sino que se descartaron:
     recomendación es un PILOTO ACOTADO sobre esos ~27 clubes de los clusters de color repetido
     (no barrer los 41 de una), para probar legibilidad real a 24px antes de comprometerse.
     EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
+
+95. SOURCING ESPAÑA/FRANCIA — LO QUE QUEDÓ ABIERTO (sesión 2026-10-03, worktree
+    `sourcing-espana-francia`; detalle por club en `fuentes/España/<Club>.md`). (a) Llegar a 5
+    ejercicios: faltan 1 en Elche, Rayo, Mallorca, Villarreal; 2 en Oviedo y Espanyol; Levante y
+    Osasuna tienen 3 con cuentas; Sevilla tiene 4. Wayback (archive.org) estuvo "Temporarily Offline"
+    el 2026-10-03, así que el dominio viejo de Mallorca y Sevilla quedaron sin barrer: reintentar
+    cuando vuelva (los 0 de ese día no son evidencia). (b) Francia: el agregado DNCG ya da 20+
+    temporadas para los 18 clubes de L1/L2, pero falta 2023/24 (no está en
+    `www.sta.lfp.fr/reports-dncg`, que ahora tiene `www.` — el host sin `www` ya no resuelve) y
+    2015/16 (solo rapport). (c) Clubes nuevos (resto de LaLiga/LaLiga 2/RFEF y de Ligue 1/Ligue 2) no
+    arrancados. (d) Real Sociedad sigue en 0 (cuentas gateadas a accionistas / Registro Mercantil
+    de pago): gestión de Guido. (e) Proponer, con texto exacto y OK de Guido antes de tocar ningún
+    skill, un `paises/España.md` con la técnica del prefijo del CMS de LaLiga en Wayback
+    (ver `fuentes/España/_notas-generales.md`, sesión 2026-10-03).

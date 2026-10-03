@@ -1,5 +1,7 @@
 # Getafe Club de Fútbol, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 101 PDFs) · Wayback CDX: agotado (dominio getafecf.com: 0 PDFs financieros; prefijo del CMS: 101) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 2 ejercicios descargados a `Clubes/España/Getafe CF/`, encontrados
   navegando `getafecf.com/ley-de-transparencia-sad` con el browser — la página carga con contenido
   real, sección "5. Cuentas anuales e informe de auditoría" con una lista larga de links "Ver Pdf" sin
@@ -32,3 +34,9 @@
   Color de marca: `#005999` — Wikipedia en español (azul, "los Azulones") + teamcolorcodes.com,
   verificado 2026-09-22.
 - Último chequeo: 2026-09-22.
+
+## Sourcing España/Francia (2026-10-03)
+
+Se bajaron 5 ejercicios nuevos del CMS (`statics-maker.llt-services.com/get/documents/2023/04/20/...` y `2023/12/01`): informes de auditoría + cuentas anuales de 2018-19, 2019-20, 2020-21, 2021-22 y 2022-23 (todos escaneos, 54-61 págs.; carátula leída por OCR). Con 2023-24 y 2024-25 que ya había → **7 ejercicios 2018-2025**. Además el CMS tiene 6 hojas "TRANSPARENCIA ECONÓMICO-FINANCIERA GCF SAD" (2018-19 a 2022-23, resúmenes de 6-12 págs.) y presupuestos 2019/20-2024/25; no se bajaron (no son cuentas) — son un respaldo si hiciera falta un total.
+
+PDFs guardados en `Clubes/España/Getafe CF/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
