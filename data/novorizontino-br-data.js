@@ -53,6 +53,17 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.095, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
     { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.002, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2021: [
+    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:7.614, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Negociação e empréstimo de atletas (nota nº6)', normalizedCategory:'player_sales', amountNative:0.645, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.29, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:0.033, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
+    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.432, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.92
+    { rawLabel:'Receita do bar', normalizedCategory:'matchday_competition', amountNative:0.006, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.035, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
   2019: [ // tools/cargar.mjs (2026-10-03)
@@ -84,6 +95,21 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Depreciação / Amortização', normalizedCategory:'depreciation', amountNative:-0.096, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.3, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
   ],
+  2021: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-14.546, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
+    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.188, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.594, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.245, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.98
+    { rawLabel:'Serviços prestados (i)', normalizedCategory:'admin_general_expense', amountNative:-2.242, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+    { rawLabel:'Despesas administrativas (ii)', normalizedCategory:'admin_general_expense', amountNative:-1.122, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
+    { rawLabel:'Manutenções (ii)', normalizedCategory:'admin_general_expense', amountNative:-1.015, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.8
+    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.574, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+    { rawLabel:'Salários, ordenados e outros custos - Projeto Sub 15 e 17', normalizedCategory:'youth_other_sports_expense', amountNative:-0.432, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.85
+    { rawLabel:'Ganhos/perdas com atletas', normalizedCategory:'player_impairment', amountNative:-0.409, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.134, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.94
+    { rawLabel:'Depreciação / Amortização', normalizedCategory:'depreciation', amountNative:-0.16, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.205, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
   2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -114,6 +140,20 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
   },
+  2021: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2021-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2021',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.888, tax:0,
+    extraRows: [
+      {label:'Despesas financeiras', value:-0.888},
+      {label:'Receitas financeiras', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:9.055, officialTotalExpenses:22.866, officialPAT:-14.699,
+  },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
 
@@ -143,6 +183,12 @@ Object.assign(sources, {
     title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'novorizontino-br-demonstracoes-financeiras-2021': {
+    id:'novorizontino-br-demonstracoes-financeiras-2021', clubId:'novorizontino-br',
+    title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
