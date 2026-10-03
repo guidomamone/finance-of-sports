@@ -31,7 +31,8 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
    los viejos 2013-2017 (2017 suma 3 veces cada grupo de un solo renglón y un subtotal mezcla lados: diseñar UN escalón para la
    familia y medirlo en los 5) (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala); 2010 (solo "primer año"); 2022 sin .md (re-transcribir, US$ 0,13).
-   Falsos positivos vistos, sin arreglar: "Consolidado" en el membrete del auditor (alta-club y perímetro de cargar; 2018-2020) y el
+   Falsos positivos vistos: "Consolidado" en el membrete del auditor (resuelto con el ajuste `perimetro` del club, Versión 412; alta-club
+   todavía pregunta en un club nuevo) y el
    inventario marcando un número de firma digital como cifra (2023).
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
@@ -392,7 +393,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Ajustes manuales (Versión 366)
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
-  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana
