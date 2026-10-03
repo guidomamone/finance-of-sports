@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 407 — Lote: un .md registrado pero ausente en disco ya no tira abajo el lote (2026-10-02)
+
+- `lote.mjs`: si el registro tiene la ruta del `.md` pero el archivo no está (`tieneMd: false`), el documento queda "sin transcripción (etapa 2)" y el lote sigue. Antes pasaba a `localizar.mjs` y se caía con ENOENT.
+- Caso: Novorizontino 2022 ("PAGADO SIN .md"). Medido en ensayo con 2022 + 2010: 2022 "sin .md", 2010 sigue normal.
+
 ## Versión 406 — Lote: con --reintentar, un año ya cargado no se reprocesa por desgloses (2026-10-03)
 
 - `lote.mjs`: un documento cuyo año ya está en el sitio solo se reintenta por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual. Por "desglose que no suma" no (se cargó con el renglón sin abrir, a propósito).
