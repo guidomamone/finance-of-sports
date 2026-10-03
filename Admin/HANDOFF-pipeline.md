@@ -35,8 +35,7 @@ de la nota de efectivo y deuda como total de la nota de deuda.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
 
 1. **Goiás** (`goias-br`, Brasil) **entero en el sitio local: 2008-2017 y 2021-2025 (15 años)**, `Admin/lote-09.txt` y `lote-09b.txt`.
-   Falta solo la liga de 2009, 2010 y 2011 (Wikipedia limitó los pedidos; reintentar `fetch-club-league-reference.mjs` y recargar con
-   `--reemplazar`) y la de 2013 (ya está en la caché: recargar 2013).
+   Con liga en las 15 temporadas (Versiones 401-402).
 2. **Próximo: auditoría de TODO el proceso** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
    UC, Fortaleza y Goiás: qué escaleras y escalones existen y cuáles se usaron de verdad; reglas que se agregaron por un solo caso y conviene
    revisar; casos que se resolvieron a mano o con ajustes y deberían tener escalón; gastos innecesarios (p. ej. el lote que volvió a

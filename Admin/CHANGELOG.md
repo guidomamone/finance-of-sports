@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 402 — Carga: una liga en null se reemplaza por una verificada (2026-10-02)
+
+- `cargar.mjs`: una fila de liga existente en `null` ("nadie lo verificó") ya no frena una liga verificada nueva, y al escribir se reemplaza ese año en vez de agregarlo repetido.
+- Goiás: 2009-2011, 2013, 2014 y 2016 recargados con `--reemplazar`; las 15 temporadas tienen liga (2008-2010, 2013-2015, 2022-2023 Série A; el resto Série B). Rosters de 2014 (plantilla sports table) y 2016 a la caché. Medido: rubros, importes y meta de los 15 años idénticos antes y después.
+
 ## Versión 401 — Ligas: escalón por la plantilla "sports table" de Wikipedia (2026-10-02)
 
 - `fetch-club-league-reference.mjs`: escalón 0, una tabla común en la sección de equipos (lo de siempre); escalón 1, si no hay, la tabla de posiciones hecha con la plantilla `{{#invoke:sports table}}` en cualquier parte de la página (sus `name_XXX`). Compuerta: al menos 4 equipos.

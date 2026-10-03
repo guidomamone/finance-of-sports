@@ -660,7 +660,10 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   if (!sourceId) frena('fuente', 'sin sourceId');
   else if (sitio.sources[sourceId]) { if (P.reemplaza) P.avisos.push(`sources['${sourceId}'] ya existe: se conserva`); else frena('fuente', `sources['${sourceId}'] ya existe`); }
   const ligaC = campo('liga');
-  const ligaExistente = ((sitio.CLUB_LEAGUE_BY_YEAR || {})[clubId] || {})[year];
+  let ligaExistente = ((sitio.CLUB_LEAGUE_BY_YEAR || {})[clubId] || {})[year];
+  // (Versión 402) una fila existente en null ("nadie lo verificó") no frena una liga verificada nueva: se reemplaza. Caso: Goiás 2009-2011
+  // y 2013, cargados con liga null antes de que el roster estuviera en la caché.
+  if (ligaExistente === null && ligaC.valor) ligaExistente = undefined;
   P.liga = { valor: ligaExistente !== undefined ? ligaExistente : (ligaC.valor ?? null), fuente: ligaExistente !== undefined ? 'la fila ya existe en data/club-leagues' : ligaC.fuente, estado: ligaExistente !== undefined ? 'existe' : ligaC.estado, nota: ligaC.nota };
 
   // ---- 8. fiscalYearMeta
@@ -825,7 +828,8 @@ export function escribir(P) {
       if (mm) {
         const abre = lt.indexOf('{', mm.index + mm[0].length - 1); const cierra = cierreDe(lt, abre);
         const dentro = lt.slice(abre + 1, cierra).replace(/\s+$/, '');
-        lt = lt.slice(0, abre + 1) + dentro + `${dentro.trim() && !dentro.trim().endsWith(',') ? ',' : ''} ${y}: ${val} ` + lt.slice(cierra);
+        const yaEsta = new RegExp(`(^|[,{\\s])${y}\\s*:\\s*null`);
+        lt = yaEsta.test(dentro) ? lt.slice(0, abre + 1) + dentro.replace(yaEsta, `$1${y}: ${val}`) + ' ' + lt.slice(cierra) : lt.slice(0, abre + 1) + dentro + `${dentro.trim() && !dentro.trim().endsWith(',') ? ',' : ''} ${y}: ${val} ` + lt.slice(cierra);
         lt = lt.replace(new RegExp(`(\\n[^\\n]*${id.replace(/[-]/g, '\\-')}[^\\n]*)`), `$1 // ${y}: tools/cargar.mjs ${HOY}, ${P.liga.valor ? `verificado contra ${String(P.liga.fuente).slice(0, 90)}` : 'SIN VERIFICAR'}`);
       } else {
         lt = insertarEnObjeto(lt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', `  // ${id} ${y} (tools/cargar.mjs, ${HOY}): ${P.liga.valor ? `verificado contra ${P.liga.fuente}` : `SIN VERIFICAR (${P.liga.fuente})`}.\n  ${js(id)}: { ${y}: ${val} },\n`, `data/club-leagues/${iso}.js`);
