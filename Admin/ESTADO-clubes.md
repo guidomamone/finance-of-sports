@@ -190,7 +190,7 @@ INGLATERRA (19)
   Wolverhampton Wanderers  2 ejercicios (2023/2024 a 2024/2025), balance, GBP
 
 GR (2)
-  AEL Larissa    8 ejercicios (2015/2016, 2016/2017, 2017/2018, 2019/2020, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  AEL Larissa    8 ejercicios (2015/2016, 2016/2017, 2017/2018, 2019/2020, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR
   Panathinaikos  1 ejercicio (2024/2025), balance, EUR
 
 HR (8)
