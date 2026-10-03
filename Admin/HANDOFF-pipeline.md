@@ -34,18 +34,19 @@ de la nota de efectivo y deuda como total de la nota de deuda.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en UC lote 07 + el club en curso):
 
-1. **En curso: Goiás** (`goias-br`, Brasil), `Admin/lote-09.txt` (+ `lote-09b.txt`, solo 2016). **Cargados en el sitio local: 2008-2013,
-   2015, 2017, 2021-2025** (2023: la venta a la Liga Forte União como `exceptional_items`, ajuste `categoria`). Falta:
-   - 2014: "Otras secciones deportivas" en 0 (el documento no tiene otros deportes): ajuste `cero-real`, pendiente del ok de Guido.
-   - 2016: rearmado con las etiquetas completas (Versión 400); Guido corre `lote.mjs --lista Admin/lote-09b.txt --ejecutar --rehacer`
-     (~US$ 0,15) y después categorías en bloque.
-   - Liga 2009, 2010, 2011 en null (Wikipedia limitó los pedidos); 2013 ya está en la caché: recargar 2013 con `--reemplazar`.
-2. **Cuando Goiás esté entero: auditoría de TODO el proceso** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
+1. **Goiás** (`goias-br`, Brasil) **entero en el sitio local: 2008-2017 y 2021-2025 (15 años)**, `Admin/lote-09.txt` y `lote-09b.txt`.
+   Falta solo la liga de 2009, 2010 y 2011 (Wikipedia limitó los pedidos; reintentar `fetch-club-league-reference.mjs` y recargar con
+   `--reemplazar`) y la de 2013 (ya está en la caché: recargar 2013).
+2. **Próximo: auditoría de TODO el proceso** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
    UC, Fortaleza y Goiás: qué escaleras y escalones existen y cuáles se usaron de verdad; reglas que se agregaron por un solo caso y conviene
    revisar; casos que se resolvieron a mano o con ajustes y deberían tener escalón; gastos innecesarios (p. ej. el lote que volvió a
    localizar 2025 y 2017 ya cargados porque su .carga.json viejo pedía reintentar); trampas que el HANDOFF todavía no cuenta. Anotado para esa auditoría: el precedente exacto SIN contexto categorizó "Despesa com pessoal"
    de la nota de fútbol (Goiás 2014-2015) como gastos generales porque en 2023-2024 la misma etiqueta está en la nota administrativa
-   (se forzó con ajustes `categoria`); `cola.mjs --corregir-categoria` se descarta en silencio si la categoría es del otro lado.
+   (se forzó con ajustes `categoria`); `cola.mjs --corregir-categoria` se descarta en silencio si la categoría es del otro lado. Lo mismo con una RESPUESTA de la cola: "Serviços de terceiros" contestado
+   para la fila dentro de "Custo com futebol" (2024-2025) se aplicó por etiqueta a 2008-2012, 2015 y 2016, donde está en el bloque
+   administrativo (corregido con ajustes `categoria`). Y `cero-real` se usó para un 0 que en realidad es "no desglosado por la fuente"
+   (otras secciones deportivas de Goiás 2014, 2015 y 2017: hay esportes olímpicos en las cuentas a cobrar, pero el estado no los separa):
+   falta un ajuste/campo para "no desglosado" y que la página lo muestre (`fiscalYearMeta.sinDesglose`).
 3. Candidatos para después (clubes que no están en el sitio, con 5 años o más; contados del registro el 2026-10-02, así no hay que volver a
    buscar): Novorizontino (Brasil, 12 años, digital); AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos);
    Juventus (Italia, 22 años, informes consolidados del grupo, largos: más caro y con la duda del perímetro). Los noruegos (Molde 18,
