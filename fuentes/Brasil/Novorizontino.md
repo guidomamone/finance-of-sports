@@ -51,3 +51,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2021 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2021 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2024 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2024`).

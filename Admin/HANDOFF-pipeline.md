@@ -27,8 +27,9 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2019, 2020, 2021.** Falta, en orden:
-   2024 (las filas de ingresos suman 81,6 M y el total impreso dice 40,2: parece doble conteo nota + estado); 2025 y 2023 con
+1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2019, 2020, 2021, 2024.** Falta, en orden:
+   ligas 2019-2020 (Série D: `br-serieD` agregada al catálogo; arreglar `fetch-club-league-reference.mjs`, que con `rowspan` de
+   estado guarda el estado en vez del primer club — aprobado por Guido); 2025 y 2023 con
    `--ejecutar --reintentar` (~US$ 0,24; rearmado con el texto propio); 2018 y los viejos 2013-2017 (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala); 2010 (solo "primer año"); 2022 sin .md (re-transcribir, US$ 0,13).
    Falsos positivos vistos, sin arreglar: "Consolidado" en el membrete del auditor (alta-club y perímetro de cargar; 2018-2020) y el
@@ -93,6 +94,8 @@ Pendientes:
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
 - **Cola humana:** preguntas concretas de sí o no, nunca exploratorias. Decirle exactamente qué abrir: "abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si...".
 - **Arreglar en los scripts, nunca a mano.**
+- Ajuste `categoria` = MUDAR una fila de lado (salta la compuerta del lado). Para aceptar/corregir dentro del mismo lado: la cola
+  (`cola.mjs --corregir-categoria`), que respeta la compuerta. Caso: Novorizontino 2024, "Premiações" es ingreso y gasto.
 - **Git:** desde el 2026-10-02 se trabaja directo en `main` (la rama `inventario-transcripciones` quedó mergeada y no se usa más). No hacer
   push: cada push a `main` es un deploy y lo hace Guido. Commitear el código separado de los logs de los lotes. Una entrada en el CHANGELOG
   por cada cambio real.

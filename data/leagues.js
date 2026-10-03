@@ -163,6 +163,8 @@ const LEAGUES = {
   // 3ª división (Versión 217, onboarding de Volta Redonda 2024, campeón de esa edición): mismo
   // criterio que br-serieB, el id nombra el escalón.
   'br-serieC':         { name:'Brasileirão Série C',   full:'Campeonato Brasileiro Série C',       country:'BR', sport:'futbol', tier:3 },
+  // 4ª división (Versión 410, decisión de Guido 2026-10-02, onboarding de Novorizontino 2019-2020): mismo criterio, el id nombra el escalón.
+  'br-serieD':         { name:'Brasileirão Série D',   full:'Campeonato Brasileiro Série D',       country:'BR', sport:'futbol', tier:4 },
   // Chile (onboarding Colo-Colo/U. de Chile/U. Católica, 2026-09-25): temporada calendario (cierra
   // 31/12), sin la ambigüedad de un ejercicio partido en 2 torneos, mismo criterio que Brasil/Japón.
   'cl-primera':        { name:'Primera División',      full:'Primera División de Chile',           country:'CL', sport:'futbol', tier:1 },

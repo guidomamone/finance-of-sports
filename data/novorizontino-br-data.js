@@ -66,6 +66,20 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Receita do bar', normalizedCategory:'matchday_competition', amountNative:0.006, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.035, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:9.921046, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Negociação de atletas', normalizedCategory:'player_sales', amountNative:14.242707, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:6.240284, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:3.619248, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Arrecadação de jogos', normalizedCategory:'matchday_competition', amountNative:3.550867, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Fomento do futebol', normalizedCategory:'other_income', amountNative:1.671711, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Premiações', normalizedCategory:'competition_bonus', amountNative:0.85, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.85
+    { rawLabel:'Convênios', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.06192, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
+    { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-1.303783, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.98
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
   2019: [ // tools/cargar.mjs (2026-10-03)
@@ -111,6 +125,24 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.134, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.94
     { rawLabel:'Depreciação / Amortização', normalizedCategory:'depreciation', amountNative:-0.16, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.205, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+  ],
+  2024: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Com pessoal', normalizedCategory:'wages_squad', amountNative:-12.632351, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Gastos com atletas e comissão técnica', normalizedCategory:'wages_squad', amountNative:-19.919406, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-6.44255, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.95
+    { rawLabel:'Com jogos', normalizedCategory:'match_organisation_expense', amountNative:-4.376999, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Manutenção e conservação', normalizedCategory:'admin_general_expense', amountNative:-0.636562, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.97
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-2.428272, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Material esportivo', normalizedCategory:'other_expenses', amountNative:-0.347567, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Premiações', normalizedCategory:'other_expenses', amountNative:-0.063553, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Acordos trabalhistas e cíveis', normalizedCategory:'admin_general_expense', amountNative:-0.91925, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Outras', normalizedCategory:'other_expenses', amountNative:-0.407531, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.95
+    { rawLabel:'Com pessoal', normalizedCategory:'wages_squad', amountNative:-3.834306, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Com jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.825896, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+    { rawLabel:'Administrativas e gerais', normalizedCategory:'admin_general_expense', amountNative:-3.625275, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-2.725749, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.95
+    { rawLabel:'Gastos com atletas não profissionais', normalizedCategory:'youth_other_sports_expense', amountNative:-1.061937, disclosureLevel:'aggregated' }, // pág. 8, Claude 0.85
+    { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.069131, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.91
   ],
 };
 const novorizontinobrFiscalYearMeta = {
@@ -158,6 +190,20 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:9.055, officialTotalExpenses:22.866, officialPAT:-14.699,
   },
+  2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2024-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.229677, tax:0,
+    extraRows: [
+      {label:'Receita financeira', value:0.271777},
+      {label:'Despesas financeiras', value:-1.501454},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:38.854, officialTotalExpenses:60.316335, officialPAT:-22.692012,
+  },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
 
@@ -193,6 +239,12 @@ Object.assign(sources, {
     title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'novorizontino-br-demonstracoes-financeiras-2024': {
+    id:'novorizontino-br-demonstracoes-financeiras-2024', clubId:'novorizontino-br',
+    title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
