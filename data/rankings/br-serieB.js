@@ -6,7 +6,7 @@
 // Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
 //   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -95,6 +95,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"pontepreta-br", revenue:6.687, reportType:"official_balance_sheet",
         sourceId:"pontepreta-br-balanco-2022-2023",
         mix:[["Comercial / Sponsors",0.805],["Estadio",0.205],["Televisión",3.312],["Premios por competencias",0.089],["Venta de Jugadores",0.511],["Otras secciones deportivas",0.165],["Otros ingresos",1.6]] },
+      { id:"novorizontino-br", revenue:4.559, reportType:"official_balance_sheet",
+        sourceId:"novorizontino-br-demonstracoes-financeiras-2023",
+        mix:[["Comercial / Sponsors",0.554],["Estadio",0.074],["Televisión",2.438],["Premios por competencias",0.039],["Venta de Jugadores",1.351],["Otros ingresos",0.103]] },
     ],
   },
   2022: {
