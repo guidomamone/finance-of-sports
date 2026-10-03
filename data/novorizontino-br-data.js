@@ -141,6 +141,16 @@ const novorizontinobrRevenueLinesByYear = {
   ],
   // 2017: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2016: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2016.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2014: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2014-b.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2014-b.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2013: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2013.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2013.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2015: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2015.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2017: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2017: [
     { rawLabel:'RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS', normalizedCategory:'lump_football_operations', amountNative:8.019563, disclosureLevel:'aggregated' }, // pág. 5, precedente
     { rawLabel:'Recuperação de Despesas', normalizedCategory:'other_income', amountNative:0.05615, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
@@ -157,6 +167,19 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'RECEITA C/ NEGOCIAÇÃO DE ATLETA', normalizedCategory:'player_sales', amountNative:0.207, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
     { rawLabel:'REPASSE DA FEDERAÇÃO', normalizedCategory:'broadcasting', amountNative:2.204, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Recuperação de Despesas', normalizedCategory:'other_income', amountNative:0.002, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+  ],
+  // 2015: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2015.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2015: [
+    { rawLabel:'117 3.1.01.01.0009 - DOAÇOES RECEBIDAS', normalizedCategory:'other_income', amountNative:0.003576, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS', normalizedCategory:'season_tickets', amountNative:0.006076, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'33 3.1.01.01.0002 - PATROCINIO EM PLACAS', normalizedCategory:'sponsorship_commercial', amountNative:0.004, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'34 3.1.01.01.0003 - PATROCINIO NO ESTÁDIO', normalizedCategory:'sponsorship_commercial', amountNative:0.004385, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+    { rawLabel:'32 3.1.01.01.0001 - PATROCINIO NO UNIFORME', normalizedCategory:'sponsorship_commercial', amountNative:0.0475, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'37 3.1.01.01.0006 - RECEITAS DO BAR', normalizedCategory:'matchday_competition', amountNative:0.002766, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.9
+    { rawLabel:'39 3.1.01.01.0008 - REPASSE DA FEDERAÇÃO', normalizedCategory:'broadcasting', amountNative:0.3002, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.9
+    { rawLabel:'36 3.1.01.01.0005 - VENDAS DE INGRESSOS', normalizedCategory:'matchday_competition', amountNative:0.377871, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'225 3.1.04.01.0001 - RECUPERACAO DE DESPESA', normalizedCategory:'other_income', amountNative:0.0002, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
   // 2014: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2014-b.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/balanco-2014-b.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
@@ -187,19 +210,6 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'117 3.1.01.01.0009 - DOAÇOES RECEBIDAS', normalizedCategory:'other_income', amountNative:0.004419, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
     { rawLabel:'119 3.1.01.02.0002 - CONV.PROJETO NOVOS HORIZONTES', normalizedCategory:'other_income', amountNative:0.166, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.85
     { rawLabel:'179 3.1.01.02.0003 - DEV. DE CONVÊNIO NÃO UTILIZAD', normalizedCategory:'other_income', amountNative:-0.014755, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.97
-  ],
-  // 2015: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Brasil/Novorizontino/balanco-2015.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  2015: [
-    { rawLabel:'117 3.1.01.01.0009 - DOAÇOES RECEBIDAS', normalizedCategory:'other_income', amountNative:0.003576, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS', normalizedCategory:'season_tickets', amountNative:0.006076, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'33 3.1.01.01.0002 - PATROCINIO EM PLACAS', normalizedCategory:'sponsorship_commercial', amountNative:0.004, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'34 3.1.01.01.0003 - PATROCINIO NO ESTÁDIO', normalizedCategory:'sponsorship_commercial', amountNative:0.004385, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
-    { rawLabel:'32 3.1.01.01.0001 - PATROCINIO NO UNIFORME', normalizedCategory:'sponsorship_commercial', amountNative:0.0475, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'37 3.1.01.01.0006 - RECEITAS DO BAR', normalizedCategory:'matchday_competition', amountNative:0.002766, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.9
-    { rawLabel:'39 3.1.01.01.0008 - REPASSE DA FEDERAÇÃO', normalizedCategory:'broadcasting', amountNative:0.3002, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.9
-    { rawLabel:'36 3.1.01.01.0005 - VENDAS DE INGRESSOS', normalizedCategory:'matchday_competition', amountNative:0.377871, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'225 3.1.04.01.0001 - RECUPERACAO DE DESPESA', normalizedCategory:'other_income', amountNative:0.0002, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
 };
 const novorizontinobrExpenseLinesByYear = {
@@ -393,6 +403,80 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Despesas Administrativas', normalizedCategory:'admin_general_expense', amountNative:-1.794, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
     { rawLabel:'Despesas e Manutenção', normalizedCategory:'admin_general_expense', amountNative:-1.945, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
   ],
+  2015: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'41 4.1.01.01.0002 - AJUDA DE CUSTO', normalizedCategory:'wages_squad', amountNative:-0.03938, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'55 4.1.01.01.0016 - ALUGUEL MORADIA COM TECNICA', normalizedCategory:'wages_squad', amountNative:-0.134271, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'184 4.1.01.01.0031 - ANUIDADE CBF E FEDER.PAULISTA', normalizedCategory:'match_organisation_expense', amountNative:-0.0242, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.95
+    { rawLabel:'207 4.1.01.01.0038 - AUXILIO EDUCACIONAL', normalizedCategory:'education_expense', amountNative:-0.00135, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
+    { rawLabel:'205 4.1.01.01.0036 - BONIFICACAO/GRATIFICACAO', normalizedCategory:'wages_squad', amountNative:-0.007214, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
+    { rawLabel:'58 4.1.01.01.0019 - CAFE DA MANHA', normalizedCategory:'admin_general_expense', amountNative:-0.060356, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
+    { rawLabel:'214 4.1.01.01.0039 - CONTRIBUICAO CONFEDERATIVA', normalizedCategory:'wages_squad', amountNative:-0.000815, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'51 4.1.01.01.0012 - CURSOS E TREINAMENTOS', normalizedCategory:'wages_squad', amountNative:-0.003241, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'44 4.1.01.01.0005 - DIREITOS DE IMAGEM', normalizedCategory:'wages_squad', amountNative:-0.940674, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
+    { rawLabel:'206 4.1.01.01.0037 - DSR VARIAVEL', normalizedCategory:'wages_squad', amountNative:-0.002243, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
+    { rawLabel:'47 4.1.01.01.0008 - FERIAS E 13° SALARIO', normalizedCategory:'wages_squad', amountNative:-0.097798, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'46 4.1.01.01.0007 - FGTS', normalizedCategory:'wages_squad', amountNative:-0.074062, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
+    { rawLabel:'204 4.1.01.01.0035 - HORAS EXTRAS', normalizedCategory:'wages_squad', amountNative:-0.010893, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'87 4.1.01.01.0030 - I.R.R.FONTE S/ FOLHA', normalizedCategory:'wages_squad', amountNative:-0.000338, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'45 4.1.01.01.0006 - INSS', normalizedCategory:'wages_squad', amountNative:-0.039575, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
+    { rawLabel:'57 4.1.01.01.0018 - LANCHES', normalizedCategory:'wages_squad', amountNative:-0.040058, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'62 4.1.01.01.0023 - MATERIAIS ESPORTIVOS', normalizedCategory:'other_expenses', amountNative:-0.080253, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.85
+    { rawLabel:'60 4.1.01.01.0021 - MEDICAMENTOS', normalizedCategory:'admin_general_expense', amountNative:-0.028134, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
+    { rawLabel:'195 4.1.01.01.0034 - PENSAO ALIMENTICIA', normalizedCategory:'wages_squad', amountNative:-0.00057, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'186 4.1.01.01.0032 - PIS FOLHA PAGAMENTO', normalizedCategory:'admin_general_expense', amountNative:-0.013363, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.94
+    { rawLabel:'42 4.1.01.01.0003 - PREMIAÇOES', normalizedCategory:'wages_squad', amountNative:-0.11234, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'56 4.1.01.01.0017 - REFEIÇÕES', normalizedCategory:'wages_squad', amountNative:-0.45301, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'48 4.1.01.01.0009 - RESCISOES E HOMOLOGAÇOES', normalizedCategory:'wages_squad', amountNative:-0.07267, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'40 4.1.01.01.0001 - SALARIOS', normalizedCategory:'wages_squad', amountNative:-0.945142, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
+    { rawLabel:'52 4.1.01.01.0013 - SEGURO PESSOAL', normalizedCategory:'wages_squad', amountNative:-0.004458, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'71 4.1.01.01.0025 - SERVIÇOS DE FISIOTERAPIA', normalizedCategory:'wages_squad', amountNative:-0.06315, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'70 4.1.01.01.0024 - SERVIÇOS E EXAMES MÉDICOS', normalizedCategory:'admin_general_expense', amountNative:-0.09552, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.97
+    { rawLabel:'61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTARES', normalizedCategory:'wages_squad', amountNative:-0.007747, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'89 4.1.01.01.0028 - TAXA DE LIBERAÇÃO DE ATLETAS', normalizedCategory:'other_expenses', amountNative:-0.00785, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'88 4.1.01.01.0027 - TAXA FED PAULISTA,FAAP,CBF/INS', normalizedCategory:'match_organisation_expense', amountNative:-0.114554, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.85
+    { rawLabel:'73 5.1.01.01.0008 - ASSESSORIA DE MARKETING', normalizedCategory:'admin_general_expense', amountNative:-0.010326, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'76 5.1.01.01.0011 - ASSESSORIA ESPORTIVA', normalizedCategory:'admin_general_expense', amountNative:-0.898135, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
+    { rawLabel:'75 5.1.01.01.0010 - ASSESSORIA JURÍDICA', normalizedCategory:'admin_general_expense', amountNative:-0.064113, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'97 5.1.01.01.0020 - ASSINATURAS E ANUIDADES', normalizedCategory:'admin_general_expense', amountNative:-0.000602, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.97
+    { rawLabel:'123 5.1.01.01.0026 - COMBUSTIVEIS E LUBRIFICANTES', normalizedCategory:'admin_general_expense', amountNative:-0.068688, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'95 5.1.01.01.0018 - CORREIOS', normalizedCategory:'admin_general_expense', amountNative:-0.001716, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
+    { rawLabel:'93 5.1.01.01.0017 - DESPESAS CARTORARIAS', normalizedCategory:'admin_general_expense', amountNative:-0.000367, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'181 5.1.01.01.0027 - ESTADIAS', normalizedCategory:'match_organisation_expense', amountNative:-0.019286, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'109 5.1.01.01.0025 - FRETES, CARRETOS E TRANSPORTES', normalizedCategory:'admin_general_expense', amountNative:-0.000249, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.94
+    { rawLabel:'72 5.1.01.01.0007 - HONORARIOS CONTABILIDADE', normalizedCategory:'admin_general_expense', amountNative:-0.017372, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'192 5.1.01.01.0029 - IMPOSTOS E TAXAS', normalizedCategory:'admin_general_expense', amountNative:-0.000705, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'198 5.1.01.01.0032 - IR RETIDO NA FONTE', normalizedCategory:'admin_general_expense', amountNative:-0.00591, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.93
+    { rawLabel:'77 5.1.01.01.0012 - MANUTENÇÃO E HOSPEDAGEM SITE', normalizedCategory:'admin_general_expense', amountNative:-0.00248, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'65 5.1.01.01.0003 - MATERIAIS DE ESCRITORIO', normalizedCategory:'admin_general_expense', amountNative:-0.007049, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'64 5.1.01.01.0002 - MATERIAIS DE HIGIENE E LIMPEZA', normalizedCategory:'admin_general_expense', amountNative:-0.015808, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'68 5.1.01.01.0004 - MATERIAIS DIVERSOS', normalizedCategory:'admin_general_expense', amountNative:-0.074445, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'63 5.1.01.01.0001 - MATERIAS DE MANUTENÇÃO GERAL', normalizedCategory:'admin_general_expense', amountNative:-0.113613, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
+    { rawLabel:'69 5.1.01.01.0006 - MOVEIS E UTENS. PEQ VALOR', normalizedCategory:'admin_general_expense', amountNative:-0.015545, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'94 5.1.01.01.0016 - MULTAS', normalizedCategory:'other_expenses', amountNative:-0.006681, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'194 5.1.01.01.0030 - PIS/COFINS/CSLL RETIDO', normalizedCategory:'admin_general_expense', amountNative:-0.010774, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'191 5.1.01.01.0028 - PRODUTOS FARMACEUTICOS', normalizedCategory:'admin_general_expense', amountNative:-0.003807, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'80 5.1.01.01.0013 - SEGURANÇA PATRIMONIAL', normalizedCategory:'admin_general_expense', amountNative:-0.034582, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.97
+    { rawLabel:'96 5.1.01.01.0019 - TELEFONE', normalizedCategory:'admin_general_expense', amountNative:-0.03776, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'196 5.1.01.01.0031 - VIDEO OBSERVER', normalizedCategory:'admin_general_expense', amountNative:-0.008224, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'101 5.1.02.02.0013 - ALUGUEL DE ACADEMIA', normalizedCategory:'admin_general_expense', amountNative:-0.0005, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'102 5.1.02.02.0014 - DESPESAS COM JOGOS', normalizedCategory:'match_organisation_expense', amountNative:-0.068116, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'103 5.1.02.02.0015 - DESPESAS DIVERSAS', normalizedCategory:'other_expenses', amountNative:-0.011761, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'98 5.1.02.02.0010 - ENERGIA ELETRICA', normalizedCategory:'admin_general_expense', amountNative:-0.111284, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.94
+    { rawLabel:'190 5.1.02.02.0021 - INTERNET / TV A CABO', normalizedCategory:'admin_general_expense', amountNative:-0.021866, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'83 5.1.02.02.0004 - LAVANDERIA', normalizedCategory:'admin_general_expense', amountNative:-0.0984, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'187 5.1.02.02.0018 - MANUTENCAO DE VEICULOS', normalizedCategory:'admin_general_expense', amountNative:-0.007875, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
+    { rawLabel:'188 5.1.02.02.0019 - MANUTENCAO DO GRAMADO', normalizedCategory:'admin_general_expense', amountNative:-0.561236, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'78 5.1.02.02.0002 - MANUTENÇAO GERAL', normalizedCategory:'admin_general_expense', amountNative:-0.168941, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'84 5.1.02.02.0005 - PINTURA DE PLACAS', normalizedCategory:'admin_general_expense', amountNative:-0.028167, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'79 5.1.02.02.0003 - SEGURANÇA E POLICIAMENTO JOGOS', normalizedCategory:'match_organisation_expense', amountNative:-0.069379, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'197 5.1.02.02.0022 - SERV.ALMOXARIFADO E ROUPARIA', normalizedCategory:'admin_general_expense', amountNative:-0.0061, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.94
+    { rawLabel:'189 5.1.02.02.0020 - SERVICO DE DEDETIZACAO', normalizedCategory:'admin_general_expense', amountNative:-0.00336, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'90 5.1.02.02.0007 - TAXA DE ARBITRAGEM', normalizedCategory:'match_organisation_expense', amountNative:-0.029848, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'91 5.1.02.02.0008 - TAXA DE VISTORIA DO ESTADIO', normalizedCategory:'match_organisation_expense', amountNative:-0.008943, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'85 5.1.02.02.0006 - TRANSPORTE DE JOGADORES', normalizedCategory:'match_organisation_expense', amountNative:-0.04195, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.97
+    { rawLabel:'92 5.1.02.02.0009 - VIAGENS E ESTADIAS', normalizedCategory:'match_organisation_expense', amountNative:-0.162244, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'99 5.1.02.02.0011 - ÁGUA E ESGOTO', normalizedCategory:'admin_general_expense', amountNative:-0.022285, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+  ],
   2014: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'49 4.1.01.01.0010 - ACORDOS TRABALHISTAS', normalizedCategory:'admin_general_expense', amountNative:-0.002619, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
     { rawLabel:'41 4.1.01.01.0002 - AJUDA DE CUSTO', normalizedCategory:'wages_squad', amountNative:-0.080721, disclosureLevel:'aggregated' }, // pág. 1, precedente
@@ -520,80 +604,6 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'176 5.2.03.01.0008 - VIAGENS E ESTADIAS-ADMINISTRAT', normalizedCategory:'admin_general_expense', amountNative:-0.001895, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
     { rawLabel:'177 5.2.03.01.0009 - REFEIÇÕES', normalizedCategory:'youth_other_sports_expense', amountNative:-0.022593, disclosureLevel:'aggregated' }, // pág. 4, precedente
     { rawLabel:'178 5.2.03.01.0010 - LANCHES', normalizedCategory:'youth_other_sports_expense', amountNative:-0.022016, disclosureLevel:'aggregated' }, // pág. 4, precedente
-  ],
-  2015: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'41 4.1.01.01.0002 - AJUDA DE CUSTO', normalizedCategory:'wages_squad', amountNative:-0.03938, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'55 4.1.01.01.0016 - ALUGUEL MORADIA COM TECNICA', normalizedCategory:'wages_squad', amountNative:-0.134271, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'184 4.1.01.01.0031 - ANUIDADE CBF E FEDER.PAULISTA', normalizedCategory:'match_organisation_expense', amountNative:-0.0242, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.95
-    { rawLabel:'207 4.1.01.01.0038 - AUXILIO EDUCACIONAL', normalizedCategory:'education_expense', amountNative:-0.00135, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
-    { rawLabel:'205 4.1.01.01.0036 - BONIFICACAO/GRATIFICACAO', normalizedCategory:'wages_squad', amountNative:-0.007214, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
-    { rawLabel:'58 4.1.01.01.0019 - CAFE DA MANHA', normalizedCategory:'admin_general_expense', amountNative:-0.060356, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
-    { rawLabel:'214 4.1.01.01.0039 - CONTRIBUICAO CONFEDERATIVA', normalizedCategory:'wages_squad', amountNative:-0.000815, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'51 4.1.01.01.0012 - CURSOS E TREINAMENTOS', normalizedCategory:'wages_squad', amountNative:-0.003241, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'44 4.1.01.01.0005 - DIREITOS DE IMAGEM', normalizedCategory:'wages_squad', amountNative:-0.940674, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
-    { rawLabel:'206 4.1.01.01.0037 - DSR VARIAVEL', normalizedCategory:'wages_squad', amountNative:-0.002243, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
-    { rawLabel:'47 4.1.01.01.0008 - FERIAS E 13° SALARIO', normalizedCategory:'wages_squad', amountNative:-0.097798, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
-    { rawLabel:'46 4.1.01.01.0007 - FGTS', normalizedCategory:'wages_squad', amountNative:-0.074062, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
-    { rawLabel:'204 4.1.01.01.0035 - HORAS EXTRAS', normalizedCategory:'wages_squad', amountNative:-0.010893, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'87 4.1.01.01.0030 - I.R.R.FONTE S/ FOLHA', normalizedCategory:'wages_squad', amountNative:-0.000338, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'45 4.1.01.01.0006 - INSS', normalizedCategory:'wages_squad', amountNative:-0.039575, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
-    { rawLabel:'57 4.1.01.01.0018 - LANCHES', normalizedCategory:'wages_squad', amountNative:-0.040058, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'62 4.1.01.01.0023 - MATERIAIS ESPORTIVOS', normalizedCategory:'other_expenses', amountNative:-0.080253, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.85
-    { rawLabel:'60 4.1.01.01.0021 - MEDICAMENTOS', normalizedCategory:'admin_general_expense', amountNative:-0.028134, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
-    { rawLabel:'195 4.1.01.01.0034 - PENSAO ALIMENTICIA', normalizedCategory:'wages_squad', amountNative:-0.00057, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'186 4.1.01.01.0032 - PIS FOLHA PAGAMENTO', normalizedCategory:'admin_general_expense', amountNative:-0.013363, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.94
-    { rawLabel:'42 4.1.01.01.0003 - PREMIAÇOES', normalizedCategory:'wages_squad', amountNative:-0.11234, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'56 4.1.01.01.0017 - REFEIÇÕES', normalizedCategory:'wages_squad', amountNative:-0.45301, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'48 4.1.01.01.0009 - RESCISOES E HOMOLOGAÇOES', normalizedCategory:'wages_squad', amountNative:-0.07267, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'40 4.1.01.01.0001 - SALARIOS', normalizedCategory:'wages_squad', amountNative:-0.945142, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.91
-    { rawLabel:'52 4.1.01.01.0013 - SEGURO PESSOAL', normalizedCategory:'wages_squad', amountNative:-0.004458, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'71 4.1.01.01.0025 - SERVIÇOS DE FISIOTERAPIA', normalizedCategory:'wages_squad', amountNative:-0.06315, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'70 4.1.01.01.0024 - SERVIÇOS E EXAMES MÉDICOS', normalizedCategory:'admin_general_expense', amountNative:-0.09552, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.97
-    { rawLabel:'61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTARES', normalizedCategory:'wages_squad', amountNative:-0.007747, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'89 4.1.01.01.0028 - TAXA DE LIBERAÇÃO DE ATLETAS', normalizedCategory:'other_expenses', amountNative:-0.00785, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'88 4.1.01.01.0027 - TAXA FED PAULISTA,FAAP,CBF/INS', normalizedCategory:'match_organisation_expense', amountNative:-0.114554, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.85
-    { rawLabel:'73 5.1.01.01.0008 - ASSESSORIA DE MARKETING', normalizedCategory:'admin_general_expense', amountNative:-0.010326, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
-    { rawLabel:'76 5.1.01.01.0011 - ASSESSORIA ESPORTIVA', normalizedCategory:'admin_general_expense', amountNative:-0.898135, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
-    { rawLabel:'75 5.1.01.01.0010 - ASSESSORIA JURÍDICA', normalizedCategory:'admin_general_expense', amountNative:-0.064113, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'97 5.1.01.01.0020 - ASSINATURAS E ANUIDADES', normalizedCategory:'admin_general_expense', amountNative:-0.000602, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.97
-    { rawLabel:'123 5.1.01.01.0026 - COMBUSTIVEIS E LUBRIFICANTES', normalizedCategory:'admin_general_expense', amountNative:-0.068688, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'95 5.1.01.01.0018 - CORREIOS', normalizedCategory:'admin_general_expense', amountNative:-0.001716, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
-    { rawLabel:'93 5.1.01.01.0017 - DESPESAS CARTORARIAS', normalizedCategory:'admin_general_expense', amountNative:-0.000367, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'181 5.1.01.01.0027 - ESTADIAS', normalizedCategory:'match_organisation_expense', amountNative:-0.019286, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
-    { rawLabel:'109 5.1.01.01.0025 - FRETES, CARRETOS E TRANSPORTES', normalizedCategory:'admin_general_expense', amountNative:-0.000249, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.94
-    { rawLabel:'72 5.1.01.01.0007 - HONORARIOS CONTABILIDADE', normalizedCategory:'admin_general_expense', amountNative:-0.017372, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'192 5.1.01.01.0029 - IMPOSTOS E TAXAS', normalizedCategory:'admin_general_expense', amountNative:-0.000705, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'198 5.1.01.01.0032 - IR RETIDO NA FONTE', normalizedCategory:'admin_general_expense', amountNative:-0.00591, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.93
-    { rawLabel:'77 5.1.01.01.0012 - MANUTENÇÃO E HOSPEDAGEM SITE', normalizedCategory:'admin_general_expense', amountNative:-0.00248, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
-    { rawLabel:'65 5.1.01.01.0003 - MATERIAIS DE ESCRITORIO', normalizedCategory:'admin_general_expense', amountNative:-0.007049, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'64 5.1.01.01.0002 - MATERIAIS DE HIGIENE E LIMPEZA', normalizedCategory:'admin_general_expense', amountNative:-0.015808, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'68 5.1.01.01.0004 - MATERIAIS DIVERSOS', normalizedCategory:'admin_general_expense', amountNative:-0.074445, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'63 5.1.01.01.0001 - MATERIAS DE MANUTENÇÃO GERAL', normalizedCategory:'admin_general_expense', amountNative:-0.113613, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
-    { rawLabel:'69 5.1.01.01.0006 - MOVEIS E UTENS. PEQ VALOR', normalizedCategory:'admin_general_expense', amountNative:-0.015545, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
-    { rawLabel:'94 5.1.01.01.0016 - MULTAS', normalizedCategory:'other_expenses', amountNative:-0.006681, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'194 5.1.01.01.0030 - PIS/COFINS/CSLL RETIDO', normalizedCategory:'admin_general_expense', amountNative:-0.010774, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
-    { rawLabel:'191 5.1.01.01.0028 - PRODUTOS FARMACEUTICOS', normalizedCategory:'admin_general_expense', amountNative:-0.003807, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
-    { rawLabel:'80 5.1.01.01.0013 - SEGURANÇA PATRIMONIAL', normalizedCategory:'admin_general_expense', amountNative:-0.034582, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.97
-    { rawLabel:'96 5.1.01.01.0019 - TELEFONE', normalizedCategory:'admin_general_expense', amountNative:-0.03776, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'196 5.1.01.01.0031 - VIDEO OBSERVER', normalizedCategory:'admin_general_expense', amountNative:-0.008224, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'101 5.1.02.02.0013 - ALUGUEL DE ACADEMIA', normalizedCategory:'admin_general_expense', amountNative:-0.0005, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'102 5.1.02.02.0014 - DESPESAS COM JOGOS', normalizedCategory:'match_organisation_expense', amountNative:-0.068116, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'103 5.1.02.02.0015 - DESPESAS DIVERSAS', normalizedCategory:'other_expenses', amountNative:-0.011761, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'98 5.1.02.02.0010 - ENERGIA ELETRICA', normalizedCategory:'admin_general_expense', amountNative:-0.111284, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.94
-    { rawLabel:'190 5.1.02.02.0021 - INTERNET / TV A CABO', normalizedCategory:'admin_general_expense', amountNative:-0.021866, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'83 5.1.02.02.0004 - LAVANDERIA', normalizedCategory:'admin_general_expense', amountNative:-0.0984, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
-    { rawLabel:'187 5.1.02.02.0018 - MANUTENCAO DE VEICULOS', normalizedCategory:'admin_general_expense', amountNative:-0.007875, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.98
-    { rawLabel:'188 5.1.02.02.0019 - MANUTENCAO DO GRAMADO', normalizedCategory:'admin_general_expense', amountNative:-0.561236, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
-    { rawLabel:'78 5.1.02.02.0002 - MANUTENÇAO GERAL', normalizedCategory:'admin_general_expense', amountNative:-0.168941, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
-    { rawLabel:'84 5.1.02.02.0005 - PINTURA DE PLACAS', normalizedCategory:'admin_general_expense', amountNative:-0.028167, disclosureLevel:'aggregated' }, // pág. 2, precedente
-    { rawLabel:'79 5.1.02.02.0003 - SEGURANÇA E POLICIAMENTO JOGOS', normalizedCategory:'match_organisation_expense', amountNative:-0.069379, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
-    { rawLabel:'197 5.1.02.02.0022 - SERV.ALMOXARIFADO E ROUPARIA', normalizedCategory:'admin_general_expense', amountNative:-0.0061, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.94
-    { rawLabel:'189 5.1.02.02.0020 - SERVICO DE DEDETIZACAO', normalizedCategory:'admin_general_expense', amountNative:-0.00336, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
-    { rawLabel:'90 5.1.02.02.0007 - TAXA DE ARBITRAGEM', normalizedCategory:'match_organisation_expense', amountNative:-0.029848, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
-    { rawLabel:'91 5.1.02.02.0008 - TAXA DE VISTORIA DO ESTADIO', normalizedCategory:'match_organisation_expense', amountNative:-0.008943, disclosureLevel:'aggregated' }, // pág. 3, precedente
-    { rawLabel:'85 5.1.02.02.0006 - TRANSPORTE DE JOGADORES', normalizedCategory:'match_organisation_expense', amountNative:-0.04195, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.97
-    { rawLabel:'92 5.1.02.02.0009 - VIAGENS E ESTADIAS', normalizedCategory:'match_organisation_expense', amountNative:-0.162244, disclosureLevel:'aggregated' }, // pág. 3, precedente
-    { rawLabel:'99 5.1.02.02.0011 - ÁGUA E ESGOTO', normalizedCategory:'admin_general_expense', amountNative:-0.022285, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
   ],
 };
 const novorizontinobrFiscalYearMeta = {
@@ -735,6 +745,17 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:0.146924,
     officialTotalRevenue:30.003234, officialTotalExpenses:41.218659, officialPAT:-13.649368,
   },
+  // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 2.204. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+  // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.794. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+  // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.945. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+  // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.422. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 21,76. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 34,40. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 857,96. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): reportType = official_balance_sheet. Guido 2026-10-02: balancete con la Demonstração do Resultado completa; la lectura 5 cierra exacto con el PREJUÍZO impreso
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): resultado-final = -3.108.722,71. Guido 2026-10-02: el PREJUIZO viene impreso sin signo; es pérdida
   2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2017-12-31',
     sourceId:'novorizontino-br-dre-e-fluxo-de-caixa-2017',
@@ -746,7 +767,6 @@ const novorizontinobrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS', lado:'revenue', importe:8.019563, motivo:'el documento no desglosa este renglón'},
     ],
-    // tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: año anterior): "DISPONIBILIDADES" pág. 1
     grossDebt:null, cash:0.115299,
     officialTotalRevenue:8.146239, officialTotalExpenses:12.780546, officialPAT:-4.774509,
   },
@@ -761,9 +781,27 @@ const novorizontinobrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.075, tax:0,
-    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "1.1.01 DISPONIBILIDADES" pág. 5
     grossDebt:null, cash:0.007261,
     officialTotalRevenue:3.242, officialTotalExpenses:9.945, officialPAT:-6.779,
+  },
+  2015: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2015-12-31',
+    sourceId:'novorizontino-br-balanco-2015',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.028996, tax:0,
+    extraRows: [
+      {label:'116 3.1.03.01.0002 - DESCONTOS FINANCEIROS', value:0.002244},
+      {label:'115 3.1.03.01.0001 - RENDAS DE APLIC FINANCEIRAS', value:0.00001},
+      {label:'114 5.1.04.01.0005 - DESCONTOS CONCEDIDOS', value:-0.000469},
+      {label:'110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS', value:-0.013029},
+      {label:'112 5.1.04.01.0003 - IOF', value:-0.003651},
+      {label:'113 5.1.04.01.0004 - IRRF S/ RENDAS DE APLIC FINANC', value:-0.000002},
+      {label:'111 5.1.04.01.0002 - JUROS E MULTAS', value:-0.014099},
+    ],
+    grossDebt:10.240466, cash:0.068932,
+    officialTotalRevenue:0.746574, officialTotalExpenses:6.315721, officialPAT:-5.598142,
   },
   // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
   // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 56,16. Guido 2026-10-02: Gemini no los leyó; la lectura 5 cierra al centavo con el PREJUIZO impreso (L145: 3.108.722,71)
@@ -802,26 +840,6 @@ const novorizontinobrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:1.712617, officialTotalExpenses:2.419205, officialPAT:-0.728231,
-  },
-  2015: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'BRL', fxRef:'BRL@2015-12-31',
-    sourceId:'novorizontino-br-balanco-2015',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-0.028996, tax:0,
-    extraRows: [
-      {label:'116 3.1.03.01.0002 - DESCONTOS FINANCEIROS', value:0.002244},
-      {label:'115 3.1.03.01.0001 - RENDAS DE APLIC FINANCEIRAS', value:0.00001},
-      {label:'114 5.1.04.01.0005 - DESCONTOS CONCEDIDOS', value:-0.000469},
-      {label:'110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS', value:-0.013029},
-      {label:'112 5.1.04.01.0003 - IOF', value:-0.003651},
-      {label:'113 5.1.04.01.0004 - IRRF S/ RENDAS DE APLIC FINANC', value:-0.000002},
-      {label:'111 5.1.04.01.0002 - JUROS E MULTAS', value:-0.014099},
-    ],
-    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 2 (compuerta: documento siguiente): "2.1.03 INSTITUIÇÕES FINANCEIRAS" pág. 5 + "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" pág. 5; cash escalón 2 (compuerta: documento siguiente): "1.1.01 DISPONIBILIDADES" pág. 4
-    grossDebt:10.240466, cash:0.068932,
-    officialTotalRevenue:0.746574, officialTotalExpenses:6.315721, officialPAT:-5.598142,
   },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};

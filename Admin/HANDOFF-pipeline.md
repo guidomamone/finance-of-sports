@@ -27,12 +27,9 @@ y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin document
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **Cerrar Novorizontino (opcional):**
-   - Deuda: cargada solo 2015 (préstamo de I-9 Sports, 10,24 M). 2013-2017: el escalón 1 suma el préstamo en los 3 niveles del balancete
-     (2.2.01 → 2.2.01.01 → cuenta) y la compuerta lo frena: falta "solo la hoja" en caja-deuda, como la lectura 5 de verificar.
-     2018-2025: la IA proponía la caja como deuda (frenado por la Versión 420); revisar el prompt o el escalón 1 con "Empréstimos".
-   - Caja: cargada 2015-2025 (2022 por ajuste `caja`). 2010, 2013, 2014 sin vecino para comparar.
-   - Ligas 2013-2017 en null (solo el Paulista): decidir si van como `liga-no-catalogada`.
+1. **Novorizontino, pendientes chicos (opcionales):** deuda cargada 2015, 2019, 2023-2025 (préstamo de I-9 Sports, ajuste del club
+   `deuda-incluye`); sin dato 2010, 2013-2014, 2016-2018, 2020-2022 (sin vecino que confirme o columnas que no coinciden). Caja cargada
+   2015-2025. Ligas completas (estaduales del Paulista 2013-2017, Versión 426).
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs

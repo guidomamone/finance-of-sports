@@ -77,3 +77,13 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2013 desde `Clubes/Brasil/Novorizontino/balanco-2013.pdf` (sourceId `novorizontino-br-balanco-2013`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2015 desde `Clubes/Brasil/Novorizontino/balanco-2015.pdf` (sourceId `novorizontino-br-balanco-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2017 desde `Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.pdf` (sourceId `novorizontino-br-dre-e-fluxo-de-caixa-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2016 desde `Clubes/Brasil/Novorizontino/balanco-2016.pdf` (sourceId `novorizontino-br-balanco-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2015 desde `Clubes/Brasil/Novorizontino/balanco-2015.pdf` (sourceId `novorizontino-br-balanco-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2014 desde `Clubes/Brasil/Novorizontino/balanco-2014-b.pdf` (sourceId `novorizontino-br-balanco-2014-b`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2013 desde `Clubes/Brasil/Novorizontino/balanco-2013.pdf` (sourceId `novorizontino-br-balanco-2013`).
