@@ -4226,122 +4226,121 @@ ANNUAL FINANCIAL REPORT AT 30 06 17 - Financial statements
 
 --- pág. 121 ---
 
-# APPENDIX - TABLE OF CHANGES IN PLAYERS' REGISTRATION RIGHTS IN THE 2016/2017 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS
+APPENDIX – TABLE OF CHANGES IN PLAYERS' REGISTRATION RIGHTS IN THE 2016/2017 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS
 
-|  Amounts in thousands of euros |   | Contracts |   | From |   | To |   | Values at beginning of the period 01/07/2016  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | Company | Disposal date | Company | Historical cost 1 | Accum. amortization 2 | Net 3  |
-|  First Team |  |  |  |  |  |  |  | 293,839 | 154,435 | 139,404  |
-|  Alves da Silva Daniel | 06/05/83 | 01/07/16 | 30/06/18 | 01/07/16 | Tessecamento Barcelona FC | 27/06/17 | Contract termination |  |  |   |
-|  Aramcoah Kwadeo | 09/12/88 | 02/07/12 | 30/06/18 | 02/07/12 | Udinese Calcio Spa |  |  | 17,136 | 10,967 | 6,169  |
-|  Audero Mulyadi | 18/01/97 | 08/03/13 | 30/06/21 |  | FROM YOUTH SECTOR |  |  | 10 | 9 | 1  |
-|  Barzagli Andrea | 08/05/81 | 06/01/11 | 30/06/18 | 26/01/11 | VFL Wolfsburg |  |  | 711 | 711 |   |
-|  Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/21 | 01/07/10 | ALS Bas Spa |  |  | 15,233 | 12,113 | 3,120  |
-|  Buffon Garingi | 28/01/78 | 12/07/01 | 30/06/18 | 12/07/01 | Parma FC |  |  | 52,884 | 52,884 | -  |
-|  Cabrieta Silva Jose Martin | 07/04/87 | 27/01/12 | 30/06/16 | 01/07/12 | DAVAB Tofida Club Sad | 01/07/16 | END OF CONTRACT | 8,000 | 8,000 | -  |
-|  Chiellini Giorgio | 14/08/84 | 06/07/04 | 30/06/18 | 01/07/05 | ACF Fiorentina |  |  | 7,730 | 7,380 | 350  |
-|  Cuadrado Bello Jan Guillermo | 26/05/88 | 31/08/15 | 30/06/20 | 21/05/17 | Chelsea FC Ltd |  |  |  |  |   |
-|  De Carvalho Hernanes | 29/05/85 | 31/08/15 | 30/06/18 | 31/08/15 | FC Internaquionale Spa | 06/02/17 | Hebei China Fortune FC Ltd | 11,648 | 3,883 | 7,765  |
-|  De Ceglie Paulo | 17/09/86 | 20/09/04 | 30/06/17 | 01/07/08 | AC Siena Spa |  |  | 3,500 | 3,260 | 140  |
-|  Dybala Paulo Ezequiel | 15/11/93 | 01/07/15 | 30/06/21 | 01/07/15 | US Città di Palermo |  |  | 33,702 | 6,740 | 26,962  |
-|  El Mautla al Benalla Medhi | 17/04/87 | 15/07/16 | 30/06/20 | 12/05/17 | FC Bayern Munchen AG |  |  |  |  |   |
-|  Eva Patrice Lstyr | 15/05/81 | 12/07/14 | 30/06/17 | 12/07/14 | Manchester United FC Ltd | 25/01/17 | Dympique de Marseille | 2,701 | 2,451 | 250  |
-|  Higuain Gonzalo Gerardo | 10/12/87 | 06/07/16 | 30/06/21 | 26/07/16 | SSC Napoli Spa |  |  |  |  |   |
-|  Khedira Sami | 04/04/87 | 21/07/15 | 30/06/19 | 01/07/15 | Federazione estera |  |  | 1,300 | 325 | 975  |
-|  Lemina Mario | 01/09/93 | 31/08/15 | 30/06/21 | 29/04/16 | Olympique de Marseille Gasp |  |  | 9,891 | 595 | 9,496  |
-|  Lichtsteiner Stephan | 16/01/84 | 01/07/11 | 30/06/18 | 01/07/11 | SEI Lazio Spa |  |  | 9,932 | 9,105 | 827  |
-|  Lobo Silva Alva Sandro | 26/01/91 | 20/08/15 | 30/06/20 | 19/08/15 | Fuebici Calcio di Porto Sad |  |  | 26,275 | 5,255 | 21,020  |
-|  Martinska Bartolando | 29/06/97 | 19/01/16 | 30/06/21 | 19/01/16 | Comun Fidele |  |  | 6,470 | 719 | 5,251  |
-|  Mansdubac Mario | 21/05/86 | 01/07/15 | 30/06/19 | 01/07/15 | Club Atlético de Madrid Sad |  |  | 21,859 | 5,465 | 16,394  |
-|  Marchiou Claudio | 19/01/86 | 16/07/04 | 30/06/20 |  | FROM YOUTH SECTOR |  |  | 175 | 164 | 11  |
-|  Metfiello Federico | 14/07/95 | 11/06/09 | 30/06/19 |  | FROM YOUTH SECTOR |  |  | 10 | 9 | 1  |
-|  Murata Martin Alvaro Borja | 23/10/92 | 19/07/14 | 30/06/20 | 18/07/14 | Real Madrid Club de Futbol | 01/07/16 | Real Madrid Club de Futbol | 20,734 | 7,464 | 13,270  |
-|  Murara Neto Norberto | 19/07/89 | 01/07/15 | 30/06/19 | 01/07/15 | ACF Fiorentina Sad |  |  | 1,940 | 485 | 1,455  |
-|  Padion Simone | 18/03/84 | 31/01/12 | 30/06/17 | 31/01/12 | Atalanta B.C. Spa | 01/07/16 | Cagliari Calcio Spa | 5,085 | 4,536 | 549  |
-|  Peneyra Roberto Maximiliano | 07/01/91 | 23/07/14 | 30/06/20 | 01/07/15 | Udinese Calcio Spa | 19/08/16 | Watford FC | 15,241 | 3,594 | 11,647  |
-|  Pjaca Marco | 06/05/95 | 21/07/16 | 30/06/21 | 21/07/16 | DIK Dinamo |  |  |  |  |   |
-|  Pjanic Miralem | 02/04/80 | 01/07/16 | 30/06/21 | 01/07/16 | AS Roma Spa |  |  |  |  |   |
-|  Plegha Paul | 15/03/93 | 04/08/12 | 30/06/19 | 04/08/12 | Manchester United | 08/08/16 | Manchester United FC Ltd | 8,165 | 3,456 | 4,709  |
-|  Rincon Fernandes Tomas | 13/01/88 | 03/01/17 | 30/06/20 | 03/01/17 | Genoa Cricket and FC Spa |  |  |  |  |   |
-|  Rupani Davide | 29/07/94 | 04/08/12 | 30/06/21 | 31/07/13 | Empoli FC Spa |  |  | 3,905 | 1,499 | 2,406  |
-|  Stularo Stefano | 09/03/93 | 01/07/14 | 30/06/21 | 01/07/14 | Genoa Cricket and FC Spa |  |  | 9,602 | 3,466 | 6,136  |
-|  Temporarily transferred players |  |  |  |  |  |  |  | 102,383 | 58,435 | 44,948  |
-|  Anacoura Joyce Francesco | 01/08/94 | 17/08/12 | 30/06/17 | 17/08/12 | Parma FC Spa |  |  | 801 | 625 | 176  |
-|  Barlocco Lucio | 20/02/95 | 02/09/13 | 30/06/19 | 02/09/13 | Atalanta BC Spa |  |  | 2,214 | 1,072 | 1,142  |
-|  Belfaeti Nazzareno | 15/07/93 | 12/08/10 | 30/06/18 | 01/07/13 | Modena FC Spa |  |  | 703 | 352 | 351  |
-|  Beltrame Stefano | 08/02/93 | 04/08/11 | 30/06/20 | 02/02/15 | SC Sampdoria Spa |  |  | 1,448 | 483 | 965  |
-|  Bernarde Sasiava Filipe Alberto | 13/01/97 | 02/02/15 | 30/06/17 | 02/02/15 | Gremio Osasco Audax Esporte C. |  |  | 54 | 31 | 23  |
-|  Blanco Moreno Carlos | 06/01/96 | 01/04/14 | 30/06/17 | 01/08/14 | Tessecamento Barcelona FC |  |  | 20 | 13 | 7  |
-|  Broju Marzouk Younes | 02/03/96 | 29/07/13 | 30/06/19 | 29/07/13 | The Gasp FC Metz |  |  | 590 | 492 | 98  |
-|  Broju Quasim | 11/06/93 | 31/01/12 | 30/06/18 | 31/01/12 | AFC Ajax |  |  | 450 | 422 | 28  |
-|  Bramecu Constantin Laurentiu | 30/03/94 | 18/01/11 | 30/06/20 | 20/01/15 | Virtus Lanciano 1924 Srl |  |  | 1,200 | 400 | 800  |
-|  Brignoli Alberto | 19/08/91 | 02/02/15 | 30/06/19 | 02/02/15 | Terrasse Calcio Spa |  |  | 2,363 | 764 | 1,599  |
-|  Burton Christian | 27/08/96 | 02/02/15 | 30/06/19 | 02/02/15 | Partido Vessels 1892 Srl |  |  | 1,801 | 1,399 | 1,202  |
-|  Cais Davide | 01/02/94 | 30/01/14 | 30/06/19 | 30/01/14 | Atalanta BC Spa |  |  | 2,387 | 1,144 | 1,243  |
-|  Caldara Mattia | 05/05/94 | 12/01/17 | 30/06/21 | 19/03/17 | Atalanta BC Spa |  |  |  |  |   |
-|  Cassata Francesco D'Assisi | 16/07/97 | 02/02/15 | 30/06/19 | 02/02/15 | Empoli FC Spa |  |  | 1,500 | 900 | 600  |
-|  Cavion Michele | 08/12/94 | 31/01/13 | 30/06/17 | 31/01/13 | Vicenza Calcio Spa |  |  | 1,162 | 509 | 253  |
-|  Cern Alberto | 16/04/96 | 14/07/15 | 30/06/20 | 14/07/15 | Parma FC Spa |  |  | 2,144 | 429 | 1,715  |
-|  Coman Kingsley Junior | 13/06/96 | 30/06/14 | 30/06/19 | 01/07/14 | Fed estera (Paris Saint-Germain F) | 27/04/17 | FC Bayern Munchen AG | 1,909 | 764 | 1,145  |
-|  Curtì Nicolò | 26/03/95 | 13/01/12 | 30/06/17 | 13/01/12 | AC Perugia Calcio Srl | 21/07/16 | US Città di Pontedera Srl | 687 | 649 | 38  |
-|  Dado Tantiolay | 08/10/93 | 14/08/14 | 30/06/17 | 14/08/14 | Granada Club de Futbol Sad |  |  | 1,007 | 671 | 336  |
-|  Donis Anastassios | 29/08/96 | 18/01/13 | 30/06/18 | 03/01/13 | Paradrenalino FC |  |  | 427 | 312 | 115  |
-|  Gallinetta Alberto | 16/04/92 | 30/01/13 | 30/06/18 | 30/01/13 | Parma FC Spa |  |  | 1,743 | 1,293 | 450  |
-|  Ganz Simone Andrea | 21/09/93 | 01/07/16 | 30/06/20 | 01/07/16 | Como Calcio Srl |  |  |  |  |   |
-|  Garcia Tena Frii | 18/02/95 | 24/08/11 | 30/06/18 | 24/08/11 | FC Barcelona |  |  | 575 | 518 | 57  |
-|  Gettaude Malleio | 10/05/95 | 19/11/13 | 30/06/17 |  | FROM YOUTH SECTOR | 15/07/16 | Pordenone Calcio Srl | 94 | 94 | -  |
-|  Gorriese Oliveira de Almeida | 08/01/98 | 17/08/16 | 30/06/19 | 17/08/16 | SC Espinho |  |  |  |  |   |
-|  Helmich Sari de Nicolas | 30/04/92 | 14/08/14 | 30/06/17 | 14/08/14 | Granada Club de Futbol Sad |  |  | 1,945 | 1,296 | 649  |
-|  Isla Isla Mauricio Anibal | 12/06/88 | 02/07/12 | 30/06/17 | 02/07/12 | Udinese Calcio Spa | 10/08/16 | Cagliari Calcio Spa | 13,724 | 10,412 | 3,312  |
-|  Josipovic Zoran | 25/08/95 | 29/08/11 | 30/06/17 | 29/08/11 | FC Chasso 2005 SA | 05/07/16 | FC Aarau AG | 523 | 523 | -  |
-|  Kabashi Elvis | 20/02/94 | 23/08/12 | 30/06/17 | 31/07/13 | Empoli FC Spa |  |  | 741 | 547 | 194  |
-|  Kadzewa Grigoris | 30/01/98 | 31/01/14 | 30/06/19 | 31/01/14 | Athletic Union of Paralimni |  |  | 120 | 84 | 36  |
-|  Lanini Erik | 25/02/94 | 30/01/14 | 30/06/18 | 25/06/15 | US Città di Palermo Spa |  |  | 1,552 | 523 | 1,029  |
-|  Leali Nicolis | 17/02/93 | 02/07/12 | 30/06/19 | 02/07/12 | Benezia Calcio Spa |  |  | 4,798 | 2,795 | 2,003  |
-|  Linda Kosoc Pol Mikel | 13/08/97 | 01/07/15 | 30/06/21 | 01/07/15 | BCD Espanol de Barcelona Sad |  |  | 573 | 286 | 287  |
-|  Liviero Matteo | 13/04/93 | 16/01/12 | 30/06/16 | 06/08/07 | Calcio Montebelluna Srl | 01/07/16 | END OF CONTRACT | 183 | 183 | -  |
-|  Luperini Gregorio | 10/02/94 | 13/07/15 | 30/06/18 | 13/07/15 | US Città di Pontedera Srl | 18/07/16 | US Cremonese Spa | 99 | 49 | 50  |
-|  Marjan Roman | 18/04/97 | 05/08/13 | 30/06/19 | 01/07/14 | FC Pantax 20's |  |  | 251 | 251 | -  |
-|  Maghusson Hordur Bjorgvin | 11/02/93 | 11/01/11 | 30/06/18 | 03/01/12 | Fuen FC | 11/07/16 | Bristol City FC Ltd | 990 | 495 | 495  |
-|  Marguilla Francesco | 15/07/93 | 05/12/11 | 30/06/18 |  | FROM YOUTH SECTOR |  |  | 124 | 95 | 29  |
-|  Martignola Francesco | 15/05/95 | 22/09/13 | 30/06/18 | 02/09/13 | Manchester Spa FC |  |  | 330 | 190 | 140  |
-|  Marrone Lucia | 28/03/90 | 31/10/07 | 30/06/19 |  | FROM YOUTH SECTOR |  |  | 4,770 | 1,908 | 2,862  |
-|  Martinez Jorge Andres | 05/04/85 | 01/07/10 | 30/06/16 | 01/07/10 | Calcio Cesena Spa | 01/07/16 | END OF CONTRACT | 11,792 | 11,792 | -  |
-|  Massaro Davide | 10/02/98 | 30/01/15 | 30/06/17 | 30/01/15 | Vicenza Calcio Spa |  |  | 650 | 388 | 262  |
-|  Nicolis Timothy | 07/07/90 | 01/07/10 | 30/06/18 |  | FROM YOUTH SECTOR |  |  | 77 | 72 | 5  |
-|  Orsolini Riccardo | 24/01/97 | 30/01/17 | 30/06/21 | 30/01/17 | Ascoli Picchio FC Spa |  |  |  |  |   |
-|  Padovan Stefano | 16/04/94 | 12/09/12 | 30/06/19 |  | FROM YOUTH SECTOR |  |  | 183 | 103 | 80  |
-|  Pantoli Giulio | 30/09/97 | 05/08/14 | 30/06/18 | 05/08/14 | FC Bari 1908 Srl |  |  | 146 | 68 | 78  |
-|  Pianquato Cristian | 20/07/89 | 09/01/06 | 30/06/18 | 27/08/03 | Montebelluna Calcio Srl |  |  | 2,265 | 1,510 | 755  |
-|  Pellini Stefano | 05/08/97 | 30/01/15 | 30/06/17 | 09/02/12 | FROM YOUTH SECTOR |  |  | 0 | - | 0  |
-|  Pellizzari Stefano | 03/01/97 | 29/01/14 | 30/06/18 | 18/06/14 | AC Cesena Spa |  |  | 1,738 | 1,224 | 514  |
-|  Piresiglio Carlo | 16/03/90 | 18/03/09 | 30/06/17 |  | FROM YOUTH SECTOR |  |  | 806 | 529 | 277  |
-|  Pizzelloni Nicolò | 03/05/97 | 02/01/16 | 30/06/18 | 15/07/11 | FROM YOUTH SECTOR |  |  | 75 | 61 | 14  |
-|  Romagna Filippo | 26/05/97 | 01/06/13 | 30/06/19 | 19/08/11 | FROM YOUTH SECTOR |  |  | 40 | 36 | 4  |
-|  Rosseti Valerio Lorenzo | 05/06/94 | 29/07/14 | 30/06/19 | 29/07/14 | Agg posstone AC Siena |  |  | 350 | 140 | 210  |
-|  Rossi Fausto | 03/12/90 | 31/10/07 | 30/06/16 |  | FROM YOUTH SECTOR | 01/07/16 | END OF CONTRACT | 1,677 | 1,677 | -  |
-|  Roussev Almpertos | 22/02/96 | 30/08/12 | 30/06/16 | 30/08/12 | FNE Pax Komthos FC | 01/07/16 | END OF CONTRACT | 60 | 60 | -  |
-|  Salvi Vapibah | 14/04/96 | 28/01/13 | 30/06/18 | 30/01/13 | Adder FH |  |  | 155 | 109 | 46  |
-|  Schiauvine Andrea | 23/02/93 | 16/01/12 | 30/06/17 |  | FROM YOUTH SECTOR | 30/06/16 | AC Cesena Spa | 0 | - | 0  |
-|  Siani Giorgio | 09/01/97 | 29/06/16 | 30/06/19 | 30/08/15 | Atalanta BC Spa |  |  | 1,574 | 315 | 1,259  |
-|  Slinka Vykintas | 29/04/95 | 19/07/12 | 30/06/18 | 01/07/13 | Futbolic Klubax Ekranae |  |  | 400 | 276 | 124  |
-|  Sourmah Alhassane | 02/03/96 | 17/12/14 | 30/06/19 | 01/07/14 | Santarcangelo Calcio Srl |  |  | 165 | 110 | 55  |
-|  Spirazzola Leonardo | 25/03/93 | 06/07/10 | 30/06/20 | 01/07/12 | AC Siena Spa |  |  | 516 | 345 | 171  |
-|  Tavashi Christian | 19/05/95 | 08/04/14 | 30/06/16 | 21/07/11 | FC Espana Vianeggio | 01/07/16 | END OF CONTRACT | 113 | 113 | -  |
-|  Tafiti Munoz Andres Felipe | 06/09/93 | 30/01/15 | 30/06/19 | 01/07/15 | Enceguto FC |  |  | 1,585 | 786 | 1,189  |
-|  Thiam Marna Baba | 09/10/92 | 31/01/14 | 30/06/18 | 31/01/14 | Virtus Lanciano 1924 Srl |  |  | 2,245 | 1,054 | 1,191  |
-|  Utholi Jarmila | 03/07/88 | 22/08/12 | 30/06/16 | 23/08/12 | Kayentupa Kulubo | 01/07/16 | END OF CONTRACT | 1,244 | 1,244 | -  |
-|  Uthili King Paul Akpan | 05/09/97 | 11/12/15 | 30/06/19 | 14/09/11 | FROM YOUTH SECTOR |  |  | 0 | - | 0  |
-|  Usterone José | 11/02/94 | 31/08/10 | 30/06/19 | 31/08/10 | FC Zuric SA |  |  | 463 | 422 | 41  |
-|  Vitala Mattia | 01/10/97 | 19/11/13 | 30/06/19 | 07/10/11 | FROM YOUTH SECTOR |  |  | 8 | 7 | 1  |
-|  Zappa Claudio | 30/03/97 | 22/07/15 | 30/06/20 | 22/07/15 | US Sassuolo Calcio Srl |  |  | 1,500 | 1,000 | 1,200  |
-|  Zaza Simone | 25/06/91 | 09/07/13 | 30/06/20 | 07/07/15 | US Sassuolo Spa | 19/03/17 | Valencia Club de Futbol Sad | 17,554 | 3,511 | 14,043  |
-|  Other changes |  |  |  |  |  |  |  | 3,439 | 1,622 | 1,817  |
-|  Total |  |  |  |  |  |  |  | 400,661 | 214,492 | 186,169  |
+Amounts in thousands of euros | Contracts | From | To | Values at beginning of the period 01/07/2016
 
-120
+| Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | From: Company | Disposal date | To: Company | Historical cost (1) | Accum. amortisation (2) | Net (3) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **First Team** | | | | | | | | 293,839 | 154,435 | 139,404 |
+| Alves da Silva Daniel | 06/05/83 | 01/07/16 | 30/06/18 | 01/07/16 | Tesseramento Barcelona FC | 27/06/17 | Contract termination | - | - | - |
+| Asamoah Kwadwo | 09/12/88 | 02/07/12 | 30/06/18 | 02/07/12 | Udinese Calcio Spa | | | 17,136 | 10,967 | 6,169 |
+| Audero Mulyadi | 18/01/97 | 08/03/13 | 30/06/21 | | FROM YOUTH SECTOR | | | 10 | 9 | 1 |
+| Barzagli Andrea | 08/05/81 | 26/01/11 | 30/06/18 | 26/01/11 | VFL Wolfsburg | | | 711 | 711 | - |
+| Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/21 | 01/07/10 | A.S. Bari Spa | | | 15,233 | 12,113 | 3,120 |
+| Buffon Gianluigi | 28/01/78 | 12/07/01 | 30/06/18 | 12/07/01 | Parma F.C. | | | 52,884 | 52,884 | - |
+| Caceres Silva Jose Martin | 07/04/87 | 27/01/12 | 30/06/16 | 01/07/12 | Sevilla Futbol Club Sad | 01/07/16 | END OF CONTRACT | 8,000 | 8,000 | - |
+| Chiellini Giorgio | 14/08/84 | 06/07/04 | 30/06/18 | 01/07/05 | ACF Fiorentina | | | 7,730 | 7,380 | 350 |
+| Cuadrado Bello Jan Guillermo | 26/05/88 | 31/08/16 | 30/06/20 | 21/05/17 | Chelsea FC Ltd | | | - | - | - |
+| De Carvalho Hernanes | 29/05/85 | 31/08/15 | 30/06/18 | 31/08/15 | FC Internazionale Spa | 06/02/17 | Hebei China Fortune FC Ltd | 11,648 | 3,883 | 7,765 |
+| De Ceglie Paolo | 17/09/86 | 20/09/04 | 30/06/17 | 01/07/08 | AC Siena Spa | | | 3,500 | 3,360 | 140 |
+| Dybala Paulo Exequiel | 15/11/93 | 01/07/15 | 30/06/21 | 01/07/15 | US Città di Palermo | | | 33,702 | 6,740 | 26,962 |
+| El Mouttaui-Benatia Medhi | 17/04/87 | 15/07/16 | 30/06/20 | 12/05/17 | FC Bayern Munchen AG | 25/01/17 | Olympique de Marseille | - | - | - |
+| Evra Patrice Latyr | 15/05/81 | 12/07/14 | 30/06/17 | 12/07/14 | Manchester United FC Ltd | | | 2,701 | 2,451 | 250 |
+| Higuain Gonzalo Gerardo | 10/12/87 | 26/07/16 | 30/06/21 | 26/07/16 | SSC Napoli Spa | | | - | - | - |
+| Khedira Sami | 04/04/87 | 01/07/15 | 30/06/19 | 01/07/15 | Federazione estera | | | 1,300 | 325 | 975 |
+| Lemina Mario | 01/09/93 | 31/08/15 | 30/06/21 | 29/04/16 | Olympique de Marseille Sasp | | | 9,891 | 395 | 9,496 |
+| Lichsteiner Stephan | 16/01/84 | 01/07/11 | 30/06/18 | 01/07/11 | SS Lazio Spa | | | 9,932 | 9,105 | 827 |
+| Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/20 | 19/08/15 | Futebol Clube do Porto Sad | | | 26,275 | 5,255 | 21,020 |
+| Mandragora Rolando | 29/06/97 | 19/01/16 | 30/06/21 | 19/01/16 | Genoa CFC Spa | | | 6,470 | 719 | 5,751 |
+| Mandzukic Mario | 21/05/86 | 01/07/15 | 30/06/19 | 01/07/15 | Club Atletico de Madrid Sad | | | 21,859 | 5,465 | 16,394 |
+| Marchisio Claudio | 19/01/86 | 16/07/04 | 30/06/20 | | FROM YOUTH SECTOR | | | 175 | 164 | 11 |
+| Mattiello Federico | 14/07/95 | 11/09/09 | 30/06/19 | | FROM YOUTH SECTOR | | | 10 | 9 | 1 |
+| Morata Martin Alvaro Borja | 23/10/92 | 19/07/14 | 30/06/20 | 18/07/14 | Real Madrid Club de Futbol | 01/07/16 | Real Madrid Club de Futbol | 20,734 | 7,464 | 13,270 |
+| Murara Neto Norberto | 19/07/89 | 01/07/15 | 30/06/19 | 01/07/15 | ACF Fiorentina Sad | | | 1,940 | 485 | 1,455 |
+| Padoin Simone | 18/03/84 | 31/01/12 | 30/06/17 | 31/01/12 | Atalanta B.C. Spa | 01/07/16 | Cagliari Calcio Spa | 5,085 | 4,536 | 549 |
+| Pereyra Roberto Maximiliano | 07/01/91 | 23/07/14 | 30/06/20 | 01/07/15 | Udinese Calcio Spa | 19/08/16 | Watford FC | 15,241 | 3,594 | 11,647 |
+| Pjaca Marco | 06/05/95 | 21/07/16 | 30/06/21 | 21/07/16 | GNK Dinamo | | | - | - | - |
+| Pjanic Miralem | 02/04/80 | 01/07/16 | 30/06/21 | 01/07/16 | AS Roma Spa | | | - | - | - |
+| Pogba Paul | 15/03/93 | 04/08/12 | 30/06/19 | 04/08/12 | Manchester United | 08/08/16 | Manchester United FC Ltd | 8,165 | 3,456 | 4,709 |
+| Rincon Hernandes Tomas | 13/01/88 | 03/01/17 | 30/06/20 | 03/01/17 | Genoa Cricket and FC Spa | | | - | - | - |
+| Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/21 | 31/07/13 | Empoli FC Spa | | | 3,905 | 1,499 | 2,406 |
+| Sturaro Stefano | 09/03/93 | 01/07/14 | 30/06/21 | 01/07/14 | Genoa Cricket and FC Spa | | | 9,602 | 3,466 | 6,136 |
+| **Temporarily transferred players** | | | | | | | | 103,383 | 58,435 | 44,948 |
+| Anacoura Joyce Francesco | 01/08/94 | 17/08/12 | 30/06/17 | 17/08/12 | Parma FC Spa | | | 801 | 625 | 176 |
+| Barlocco Luca | 20/02/95 | 02/09/13 | 30/06/19 | 02/09/13 | Atalanta BC Spa | | | 2,214 | 1,072 | 1,142 |
+| Belfasti Nazzareno | 15/07/93 | 12/08/10 | 30/06/18 | 01/07/13 | Modena FC Spa | | | 703 | 352 | 351 |
+| Beltrame Stefano | 08/02/93 | 04/08/11 | 30/06/20 | 02/02/15 | UC Sampdoria Spa | | | 1,448 | 483 | 965 |
+| Bernardes Saraiva Filipe Alberto | 13/01/97 | 02/02/15 | 30/06/17 | 02/02/15 | Gremio Osasco Audax Esporte C. | | | 54 | 31 | 23 |
+| Blanco Moreno Carlos | 06/01/96 | 01/04/14 | 30/06/17 | 01/08/14 | Tesseramento Barcelona FC | | | 20 | 13 | 7 |
+| Bnou Marzouk Younes | 02/03/96 | 29/07/13 | 30/06/19 | 29/07/13 | The Sasp FC Metz | | | 590 | 492 | 98 |
+| Bouy Ouasim | 11/06/93 | 31/01/12 | 30/06/18 | 31/01/12 | AFC Ajax | | | 450 | 422 | 28 |
+| Branescu Constantin Laurentiu | 30/03/94 | 18/01/11 | 30/06/20 | 20/01/15 | Virtus Lanciano 1924 Srl | | | 1,200 | 400 | 800 |
+| Brignoli Alberto | 19/08/91 | 02/02/15 | 30/06/19 | 02/02/15 | Ternana Calcio Spa | | | 2,363 | 764 | 1,599 |
+| Bunino Cristian | 27/08/96 | 02/02/15 | 30/06/19 | 02/02/15 | FC Pro Vercelli 1892 Srl | | | 1,801 | 599 | 1,202 |
+| Cais Davide | 01/02/94 | 30/01/14 | 30/06/19 | 30/01/14 | Atalanta BC Spa | | | 2,387 | 1,144 | 1,243 |
+| Caldara Mattia | 05/05/94 | 12/01/17 | 30/06/21 | 19/03/17 | Atalanta BC Spa | | | - | - | - |
+| Cassata Francesco D'Assisi | 16/07/97 | 02/02/15 | 30/06/19 | 02/02/15 | Empoli FC Spa | | | 1,500 | 900 | 600 |
+| Cavion Michele | 08/12/94 | 31/01/13 | 30/06/17 | 31/01/13 | Vicenza Calcio Spa | | | 1,162 | 909 | 253 |
+| Cerri Alberto | 16/04/96 | 14/07/15 | 30/06/20 | 14/07/15 | Parma FC Spa | | | 2,144 | 429 | 1,715 |
+| Coman Kingsley Junior | 13/06/96 | 30/06/14 | 30/06/19 | 01/07/14 | Fed.estera (Paris Saint-Germain F.) | 27/04/17 | FC Bayern Munchen AG | 1,909 | 764 | 1,145 |
+| Curti Nicolò | 26/03/95 | 13/01/12 | 30/06/17 | 13/01/12 | AC Perugia Calcio Srl | 21/07/16 | US Città di Pontedera Srl | 687 | 649 | 38 |
+| Djalo Taritolay | 08/10/93 | 14/08/14 | 30/06/17 | 14/08/14 | Granada Club de Futbol Sad | | | 1,007 | 671 | 336 |
+| Donis Anastasios | 29/08/96 | 18/01/13 | 30/06/18 | 03/01/13 | Panathinaikos FC | | | 427 | 312 | 115 |
+| Gallinetta Alberto | 16/04/92 | 30/01/13 | 30/06/18 | 30/01/13 | Parma FC Spa | | | 1,743 | 1,293 | 450 |
+| Ganz Simone Andrea | 21/09/93 | 01/07/16 | 30/06/20 | 01/07/16 | Como Calcio Srl | | | - | - | - |
+| Garcia Tena Pol | 18/02/95 | 24/08/11 | 30/06/18 | 24/08/11 | FC Barcelona | | | 575 | 518 | 57 |
+| Gerbaudo Matteo | 10/05/95 | 19/11/13 | 30/06/17 | | FROM YOUTH SECTOR | 15/07/16 | Pordenone Calcio Srl | 94 | 94 | - |
+| Gomes Oliveira de Almeida | 08/01/98 | 17/08/16 | 30/06/19 | 17/08/16 | SC Espinho | | | - | - | - |
+| Hidalgo Garcia Nicolas | 30/04/92 | 14/08/14 | 30/06/17 | 14/08/14 | Granada Club de Futbol Sad | | | 1,945 | 1,296 | 649 |
+| Isla Isla Mauricio Anibal | 12/06/88 | 02/07/12 | 30/06/17 | 02/07/12 | Udinese Calcio Spa | 10/08/16 | Cagliari Calcio Spa | 13,724 | 10,412 | 3,312 |
+| Josipovic Zoran | 25/08/95 | 29/08/11 | 30/06/17 | 29/08/11 | FC Chiasso 2005 SA | 05/07/16 | FC Aarau AG | 523 | 523 | - |
+| Kabashi Elvis | 20/02/94 | 23/08/12 | 30/06/17 | 31/07/13 | Empoli FC Spa | | | 741 | 547 | 194 |
+| Kastanos Grigoris | 30/01/98 | 31/01/14 | 30/06/19 | 31/01/14 | Athletic Union of Paralimni | | | 120 | 84 | 36 |
+| Lanini Erik | 25/02/94 | 30/01/14 | 30/06/18 | 25/06/15 | US Città di Palermo Spa | | | 1,552 | 523 | 1,029 |
+| Leali Nicola | 17/02/93 | 02/07/12 | 30/06/19 | 02/07/12 | Brescia Calcio Spa | | | 4,798 | 2,795 | 2,003 |
+| Lirola Kosoc Pol Mikel | 13/08/97 | 01/07/15 | 30/06/21 | 01/07/15 | RCD Espaniol de Barcelona Sad | | | 573 | 286 | 287 |
+| Liviero Matteo | 13/04/93 | 16/01/12 | 30/06/16 | 06/08/07 | Calcio Montebelluna Srl | 01/07/16 | END OF CONTRACT | 183 | 183 | - |
+| Luperini Gregorio | 10/02/94 | 13/07/15 | 30/06/18 | 13/07/15 | US Città di Pontedera Srl | 18/07/16 | US Cremonese Spa | 99 | 49 | 50 |
+| Macek Roman | 18/04/97 | 05/08/13 | 30/06/19 | 01/07/14 | FC Fastav Zlin | | | 251 | 251 | - |
+| Magnusson Hordur Bjorgvin | 11/02/93 | 11/01/11 | 30/06/18 | 03/01/12 | Fram FC | 11/07/16 | Bristol City FC Ltd | 990 | 495 | 495 |
+| Margiotta Francesco | 15/07/93 | 05/12/11 | 30/06/18 | | FROM YOUTH SECTOR | | | 124 | 95 | 29 |
+| Marin Vladut Nicolae | 15/05/95 | 02/09/13 | 30/06/18 | 02/09/13 | Manchester City FC | | | 330 | 190 | 140 |
+| Marrone Luca | 28/03/90 | 31/10/07 | 30/06/19 | | FROM YOUTH SECTOR | | | 4,770 | 1,908 | 2,862 |
+| Martinez Jorge Andres | 05/04/83 | 01/07/10 | 30/06/16 | 01/07/10 | Calcio Catania Spa | 01/07/16 | END OF CONTRACT | 11,792 | 11,792 | - |
+| Massaro Davide | 10/02/98 | 30/01/15 | 30/06/17 | 30/01/15 | Vicenza Calcio Spa | | | 650 | 388 | 262 |
+| Nocchi Timothy | 07/07/90 | 01/07/10 | 30/06/18 | | FROM YOUTH SECTOR | | | 77 | 72 | 5 |
+| Orsolini Riccardo | 24/01/97 | 30/01/17 | 30/06/21 | 30/01/17 | Ascoli Picchio FC Spa | | | - | - | - |
+| Padovan Stefano | 16/04/94 | 12/09/12 | 30/06/19 | | FROM YOUTH SECTOR | | | 183 | 103 | 80 |
+| Parodi Giulio | 30/09/97 | 05/08/14 | 30/06/18 | 05/08/14 | FC Bari 1908 Srl | | | 146 | 68 | 78 |
+| Pasquato Cristian | 20/07/89 | 09/01/06 | 30/06/18 | 27/08/03 | Montebelluna Calcio Srl | | | 2,265 | 1,510 | 755 |
+| Pellini Stefano | 05/08/97 | 30/01/15 | 30/06/17 | | FROM YOUTH SECTOR | | | 0 | - | 0 |
+| Pellizzari Stefano | 03/01/97 | 29/01/14 | 30/06/18 | 09/02/12 | AC Cesena Spa | | | 1,738 | 1,224 | 514 |
+| Pinsoglio Carlo | 16/03/90 | 18/03/09 | 30/06/17 | 18/06/14 | FROM YOUTH SECTOR | | | 806 | 529 | 277 |
+| Pozzebon Nicolò | 03/05/97 | 02/01/16 | 30/06/18 | 15/07/11 | FROM YOUTH SECTOR | | | 75 | 61 | 14 |
+| Romagna Filippo | 26/05/97 | 01/06/13 | 30/06/19 | 19/08/11 | FROM YOUTH SECTOR | | | 40 | 36 | 4 |
+| Rosseti Valerio Lorenzo | 05/06/94 | 29/07/14 | 30/06/19 | 29/07/14 | Agg.posizione AC Siena | | | 350 | 140 | 210 |
+| Rossi Fausto | 03/12/90 | 31/10/07 | 30/06/16 | | FROM YOUTH SECTOR | 01/07/16 | END OF CONTRACT | 1,677 | 1,677 | - |
+| Roussos Almpertos | 22/02/96 | 30/08/12 | 30/06/16 | 30/08/12 | PAE Pas Korinthos FC | 01/07/16 | END OF CONTRACT | 60 | 60 | - |
+| Sakor Vajebah | 14/04/96 | 30/01/13 | 30/06/18 | 30/01/13 | Asker F.H. | | | 155 | 109 | 46 |
+| Schiavone Andrea | 23/02/93 | 16/01/12 | 30/06/17 | | FROM YOUTH SECTOR | 30/06/16 | AC Cesena Spa | 0 | - | 0 |
+| Siani Giorgio | 09/01/97 | 29/06/16 | 30/06/19 | 30/08/15 | Atalanta BC Spa | | | 1,574 | 315 | 1,259 |
+| Slivka Vykintas | 29/04/95 | 19/07/12 | 30/06/18 | 01/07/13 | Futbolo Klubas Ekranas | | | 400 | 276 | 124 |
+| Soumah Alhassane | 02/03/96 | 17/12/14 | 30/06/19 | 01/07/14 | Santarcangelo Calcio Srl | | | 165 | 110 | 55 |
+| Spinazzola Leonardo | 25/03/93 | 06/07/10 | 30/06/20 | 01/07/12 | AC Siena Spa | | | 516 | 345 | 171 |
+| Tavanti Christian | 19/05/95 | 08/04/14 | 30/06/16 | 21/07/11 | FC Esperia Viareggio | 01/07/16 | END OF CONTRACT | 113 | 113 | - |
+| Tello Munoz Andres Felipe | 06/09/96 | 30/01/15 | 30/06/19 | 01/07/15 | Envigado FC | | | 1,585 | 396 | 1,189 |
+| Thiam Mame Baba | 09/10/92 | 31/01/14 | 30/06/18 | 31/01/14 | Virtus Lanciano 1924 Srl | | | 2,245 | 1,054 | 1,191 |
+| Troisi James | 03/07/88 | 23/08/12 | 30/06/16 | 23/08/12 | Kayserispor Kulubu | 01/07/16 | END OF CONTRACT | 1,244 | 1,244 | - |
+| Udoh King Paul Akpan | 05/09/97 | 01/12/15 | 30/06/19 | 14/09/11 | FROM YOUTH SECTOR | | | 0 | - | 0 |
+| Untersee Joel | 11/02/94 | 31/08/10 | 30/06/19 | 31/08/10 | FC Zuric SA | | | 463 | 422 | 41 |
+| Vitale Mattia | 01/10/97 | 19/11/13 | 30/06/19 | 07/10/11 | FROM YOUTH SECTOR | | | 8 | 7 | 1 |
+| Zappa Claudio | 30/03/97 | 22/07/15 | 30/06/20 | 22/07/15 | US Sassuolo Calcio Srl | | | 1,500 | 300 | 1,200 |
+| Zaza Simone | 25/06/91 | 09/07/13 | 30/06/20 | 07/07/15 | US Sassuolo Spa | 19/03/17 | Valencia Club de Futbol Sad | 17,554 | 3,511 | 14,043 |
+| **Other changes** | | | | | | | | 3,439 | 1,622 | 1,817 |
+| **Total** | | | | | | | | 400,661 | 214,492 | 186,169 |
 
-JUVENTUS FOOTBALL CLUB S.P.A.
+120 JUVENTUS FOOTBALL CLUB S.P.A.
 
 --- pág. 122 ---
 

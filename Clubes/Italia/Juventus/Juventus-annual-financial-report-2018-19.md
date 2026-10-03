@@ -3608,203 +3608,206 @@ ANNUAL FINANCIAL REPORT AT 30 06 19 - Notes to the financial statements
 
 --- pág. 100 ---
 
-## APPENDIX – TABLE OF CHANGES IN PLAYERS’ REGISTRATION RIGHTS IN THE 2018/2019 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS
+100 JUVENTUS FOOTBALL CLUB S.P.A.
 
-|  Amounts in thousands of euros |   | Contracts |   | From |   | To |   | Values at beginning of the period 01/07/2018  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | Company | Date of disposal | Company | Historical cost 1 | Accum. amortization 2 | Net 3  |
-|  **First Team** |   |   |   |   |   |   |   | **419,035** | **199,684** | **219,351**  |
-|  Asamosh Kesadwo | 09/12/88 | 02/07/12 | 30/06/18 | 02/07/12 | Udinese Calcio | 01/07/18 | End of contract | 17,136 | 17,136 | -  |
-|  Bastagli Andrea | 08/05/81 | 26/01/11 | 30/06/19 | 26/01/11 | JFL Wolfsburg |  |  | 711 | 711 | -  |
-|  Bentancur Colman Rodrigo | 25/06/97 | 26/06/17 | 30/06/22 | 20/04/17 | CA Boca Juniors |  |  | 12,012 | 2,402 | 9,610  |
-|  Bernardeschi Federico | 16/02/94 | 24/07/17 | 30/06/22 | 24/07/17 | ACP Fiorentina |  |  | 39,411 | 7,882 | 31,529  |
-|  Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/23 | 02/08/18 | AC Milan |  |  | - | - | -  |
-|  Buffon Gianluigi | 28/01/78 | 12/07/01 | 30/06/18 | 12/07/01 | Parma FC | 01/07/18 | End of contract | 52,884 | 52,884 | -  |
-|  Caldara Mattia | 05/05/94 | 12/01/17 | 30/06/22 | 19/03/17 | Atalanta BC | 02/08/18 | AC Milan | 18,230 | 5,266 | 12,964  |
-|  Can Eme | 12/01/94 | 21/06/18 | 30/06/22 | 01/07/18 | Foreign Federation |  |  | - | - | -  |
-|  Cavaco Cancelo | 27/05/94 | 27/06/18 | 30/06/23 | 01/07/18 | Valencia Club de Futebol |  |  | - | - | -  |
-|  Chellini Giorgio | 14/08/84 | 06/07/04 | 30/06/20 | 01/07/05 | ACF Fiorentina |  |  | 7,730 | 7,730 | -  |
-|  Costa de Souza Douglas | 14/09/90 | 07/06/18 | 30/06/22 | 07/06/18 | FC Bayern München |  |  | 44,616 | 731 | 43,885  |
-|  Cuadrado Bello Juan Guillermo | 26/05/88 | 31/08/16 | 30/06/20 | 21/05/17 | Chelsea FC |  |  | 19,940 | 7,121 | 12,819  |
-|  De Sciglio Mattia | 20/10/92 | 20/07/17 | 30/06/22 | 20/07/17 | AC Milan |  |  | 12,141 | 2,428 | 9,713  |
-|  Dos Santos A. Cristiano Ronaldo | 05/02/85 | 10/07/18 | 30/06/22 | 10/07/18 | Real Madrid Club de Futbol |  |  | - | - | -  |
-|  Dybala Paulo Ezequiel | 15/11/93 | 01/07/15 | 30/06/22 | 01/07/15 | US Città di Palermo |  |  | 41,439 | 19,232 | 22,207  |
-|  El Mountaqui Benata Medhi Amine | 17/04/87 | 15/07/16 | 30/06/20 | 12/05/17 | FC Bayern München | 28/01/19 | AL Duhail SC | 16,720 | 6,058 | 10,662  |
-|  Kean Body Moisse | 28/02/00 | 21/07/17 | 30/06/20 | 05/03/14 | From Youth Sector |  |  | - | - | -  |
-|  Khedira Sami | 04/04/87 | 01/07/15 | 30/06/21 | 01/07/15 | Foreign Federation |  |  | 1,300 | 975 | 325  |
-|  Lichtelener Stephan | 16/01/84 | 01/07/11 | 30/06/18 | 01/07/11 | SSI Lazio | 01/07/18 | End of contract | 9,932 | 9,932 | -  |
-|  Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/20 | 19/08/15 | Futebol Clube do Porto |  |  | 26,275 | 15,765 | 10,510  |
-|  Magnani Giangiacomo | 04/10/95 | 01/07/18 | 30/06/23 | 01/07/18 | AC Perugia Calcio | 27/07/18 | US Sassuolo Calcio | - | - | -  |
-|  Mandzukio Mario | 21/05/86 | 01/07/15 | 30/06/20 | 01/07/15 | Club Atletico de Madrid |  |  | 23,396 | 15,313 | 8,083  |
-|  Marchiolo Claudio | 19/01/86 | 16/07/04 | 30/06/20 |  | From Youth Sector | 16/08/18 | Mutually agreement end of contract | 175 | 170 | 5  |
-|  Matuidi Blaise | 09/04/87 | 18/08/17 | 30/06/20 | 18/08/17 | Paris Saint-Germain |  |  | 22,926 | 7,642 | 15,284  |
-|  Pellegrini Luca | 07/03/99 | 01/07/19 | 30/06/23 | 30/06/19 | AS Roma |  |  | - | - | -  |
-|  Perin Mattia | 10/11/92 | 08/06/18 | 30/06/22 | 01/07/18 | Genoa Cricket and FC |  |  | - | - | -  |
-|  Pinaoglio Carlo | 16/03/90 | 18/03/09 | 30/06/19 |  | From Youth Sector |  |  | 806 | 806 | -  |
-|  Pjanic Mrolem | 02/04/90 | 01/07/16 | 30/06/23 | 01/07/16 | AS Roma |  |  | 32,778 | 13,112 | 19,666  |
-|  Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/21 | 31/07/13 | Brispoli FC |  |  | 3,905 | 2,461 | 1,444  |
-|  Spirazzola Leonardo | 25/03/93 | 06/07/10 | 30/06/22 | 01/07/12 | AC Siena | 30/06/19 | AS Roma | 516 | 413 | 103  |
-|  Szczesny Wojciech | 18/04/90 | 01/07/14 | 30/06/21 | 19/07/17 | Arsenal FC |  |  | 14,056 | 3,514 | 10,542  |
-|  **Temporarily transferred players** |   |   |   |   |   |   |   | **192,378** | **88,193** | **104,185**  |
-|  Abreu de Freitas Afonso | 07/04/00 | 08/08/16 | 30/06/19 | 08/08/16 | Foreign Federation |  |  | 125 | 83 | 42  |
-|  Audero Muljudi Emil | 18/01/97 | 08/03/13 | 30/06/21 | 30/05/11 | From Youth Sector | 29/01/19 | UC Sampdoria | 180 | 52 | 128  |
-|  Barlocco Luca | 20/02/95 | 02/09/13 | 30/06/19 | 02/09/13 | Atalanta BC |  |  | 2,325 | 1,907 | 418  |
-|  Belfasti Nazareno | 15/07/93 | 12/08/10 | 30/06/18 | 01/07/13 | Modena F.C. | 01/07/18 | End of contract | 759 | 759 | -  |
-|  Bellrome Stefano | 08/02/93 | 04/08/11 | 30/06/20 | 02/02/15 | UC Sampdoria |  |  | 1,767 | 1,105 | 662  |
-|  Bonreccio Constantin Laurentiu | 30/03/94 | 18/01/11 | 30/06/20 | 20/01/15 | Virtua Lanciano 1924 |  |  | 1,225 | 810 | 415  |
-|  Brignoli Alberto | 19/08/91 | 02/02/15 | 30/06/19 | 02/02/15 | Termana Calcio | 25/07/18 | US Città di Palermo | 2,363 | 1,830 | 533  |
-|  Cais Davide | 01/02/94 | 30/01/14 | 30/06/19 | 30/01/14 | Atalanta BC |  |  | 2,432 | 2,016 | 436  |
-|  Cern Alberto | 16/04/96 | 14/07/15 | 30/06/20 | 14/07/15 | Parma FC | 31/12/18 | Cagliari Calcio | 2,144 | 1,287 | 857  |
-|  Clemenza Luca | 09/07/97 | 22/09/14 | 30/06/21 | 19/08/01 | Vicenza Calcio |  |  | 575 | 320 | 255  |
-|  Del Fabro Dario | 24/03/95 | 28/07/17 | 30/06/22 | 28/07/17 | Cagliari Calcio |  |  | 4,402 | 880 | 3,522  |
-|  Del Sole Ferdinando | 17/01/98 | 31/08/17 | 30/06/22 | 31/08/17 | Delfino Pescara 1936 |  |  | 3,551 | 710 | 2,841  |
-|  Delli Cam Filippo | 03/05/99 | 31/08/17 | 30/06/22 | 31/08/17 | Delfino Pescara 1936 |  |  | 1,083 | 217 | 866  |
-|  Favilli Andrea | 17/05/97 | 01/07/18 | 30/06/23 | 01/07/15 | Ascoli Picchio FC 1898 | 24/01/19 | Genoa Cricket and FC | - | - | -  |
-|  Gallinetta Alberto | 16/04/92 | 30/01/13 | 30/06/18 | 30/01/13 | Parma FC | 01/07/18 | End of contract | 1,811 | 1,811 | -  |
-|  García Tena Pol | 18/02/95 | 24/08/11 | 30/06/19 | 24/08/11 | F.C. Barcelona | 10/07/18 | Koninklijke St-Truidense | 595 | 576 | 19  |
-|  Gedo Erik | 11/06/00 | 31/01/19 | 30/06/23 | 31/01/19 | FC Pro Vercelli 1892 |  |  | - | - | -  |
-|  Goh N'Code Massimo Virou | 01/02/99 | 22/08/18 | 30/06/19 | 24/05/13 | From Youth Sector | 03/01/19 | Mutually agreement end of contract | 3 | 1 | 2  |
-|  Gomes Oliveira de A. Pedro Manuel | 08/01/98 | 17/08/16 | 30/06/19 | 17/08/16 | S.C. Espinho |  |  | 270 | 177 | 93  |
-|  Higuain Gonzalo Gerardo | 10/12/87 | 26/07/16 | 30/06/21 | 26/07/16 | S.S.C. Napoli |  |  | 91,296 | 36,518 | 54,778  |
-|  Lainii Eric | 25/02/94 | 30/01/14 | 30/06/19 | 25/06/15 | U.S. Città di Palermo |  |  | 1,587 | 1,321 | 266  |
-|  Macek Roman | 18/04/97 | 05/08/13 | 30/06/21 | 01/07/14 | F.C. Faskar Zin | 26/01/19 | Lugano FC | 326 | 295 | 31  |
-|  Mannuso Leonardo | 26/05/92 | 31/01/18 | 30/06/21 | 31/01/18 | Delfino Pescara 1936 |  |  | 1,957 | 780 | 1,677  |
-|  Mandragora Rolando | 29/06/97 | 19/01/16 | 30/06/21 | 19/01/16 | Genoa Cricket and FC | 26/07/18 | Udinese Calcio | 8,970 | 3,644 | 5,326  |
-|  Marin Vladut Nicolae | 15/05/95 | 02/09/13 | 30/06/18 | 02/09/13 | Manchester City FC | 01/07/18 | End of contract | 360 | 360 | -  |
-|  Marricchi Filippo | 04/02/99 | 24/08/18 | 30/06/21 | 09/07/15 | Termana Calcio |  |  | 465 | 273 | 192  |
-|  Marrone Luca | 28/03/90 | 31/10/07 | 30/06/20 | 02/04/04 | From Youth Sector | 03/06/19 | Hellas Verona | 5,423 | 4,252 | 1,171  |
-|  Meneghini Riccardo | 19/04/00 | 01/01/19 | 30/06/19 | 23/07/14 | Vicenza Calcio |  |  | 150 | 120 | 30  |
-|  Monti Nicola | 07/02/98 | 29/08/16 | 30/06/20 | 29/08/16 | Brispoli F.C. |  |  | 1,095 | 543 | 552  |
-|  Narciso da Costa C. Ricardo Manuel | 24/03/00 | 08/08/16 | 30/06/19 | 08/08/16 | Foreign Federation |  |  | 115 | 77 | 38  |
-|  Nucchi Timothy | 01/07/90 | 01/07/10 | 30/06/18 |  | From Youth Sector | 01/07/18 | End of contract | 82 | 82 | -  |
-|  Oliveira da Silva Rogério | 13/01/98 | 31/08/16 | 30/06/23 | 31/08/16 | U.S. Sassuolo Calcio | 29/06/19 | US Sassuolo Calcio | 2,000 | 1,000 | 1,000  |
-|  Ongilio Riccardo | 24/01/97 | 30/01/17 | 30/06/22 | 30/01/17 | Ascoli Picchio F.C. 1898 | 18/06/19 | Bologna FC 1909 | 6,363 | 1,833 | 4,530  |
-|  Padovan Stefano | 16/04/94 | 12/09/12 | 30/06/19 | 07/05/08 | From Youth Sector |  |  | 238 | 184 | 54  |
-|  Peeters Daouda | 28/01/99 | 29/01/19 | 30/06/22 | 29/01/19 | UC Sampdoria |  |  | - | - | -  |
-|  Pellizzari Stefano | 03/01/97 | 29/01/14 | 30/06/19 | 18/06/14 | A.C. Cesena |  |  | 1,773 | 1,633 | 140  |
-|  Pjoca Marko | 06/05/95 | 21/07/16 | 30/06/21 | 21/07/16 | QNK Dinamo |  |  | 28,591 | 11,436 | 17,155  |
-|  Ranocchia Filippo | 14/05/01 | 31/01/19 | 30/06/21 | 31/01/19 | AC Perugia |  |  | - | - | -  |
-|  Saro Gianluca | 25/06/00 | 14/08/18 | 30/06/19 | 31/08/17 | FC Pro Vercelli 1892 |  |  | 20 | 4 | 16  |
-|  Stari Giorgio | 09/01/97 | 29/06/16 | 30/06/19 | 30/08/15 | Atalanta B.C. |  |  | 1,619 | 1,181 | 438  |
-|  Sturaro Stefano | 09/03/93 | 01/07/14 | 30/06/21 | 01/07/14 | Genoa Cricket and F.C. | 24/01/19 | Genoa Cricket and FC | 10,602 | 6,320 | 4,282  |
-|  Tamba M'Pinda Roger | 13/08/98 | 02/08/18 | 30/06/21 | 02/08/18 | Foreign Federation |  |  | - | - | -  |
-|  Tello Munoz Andrea Felipe | 06/09/96 | 01/07/15 | 30/06/20 | 01/07/15 | Envigado FC | 12/07/18 | Benevento Calcio | 1,610 | 1,065 | 545  |
-|  Toure Oumar | 18/09/98 | 01/03/17 | 30/06/19 | 22/06/16 | Santarcangelo Calcio |  |  | 145 | 92 | 53  |
-|  Udoh King Paul Akpan | 05/09/97 | 01/12/15 | 30/06/19 | 14/09/11 | From Youth Sector | 13/09/18 | Mutually agreement end of contract | 74 | 45 | 29  |
-|  Vogliacco Alessandro | 13/08/98 | 05/08/14 | 30/06/21 | 05/08/14 | AS Bari |  |  | 292 | 234 | 58  |
-|  Zappa Claudio | 30/03/97 | 21/07/17 | 30/06/21 | 22/07/18 | US Sassuolo Calcio |  |  | 1,595 | 860 | 735  |
-|  **Other changes** |   |   |   |   |   |   |   | **11,198** | **3,906** | **7,292**  |
-|  **Total** |   |   |   |   |   |   |   | **622,611** | **291,783** | **330,828**  |
+APPENDIX – TABLE OF CHANGES IN PLAYERS’ REGISTRATION RIGHTS IN THE 2018/2019 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS
 
-- (a) 50% of the consideration for temporary and/or definitive transfer, including any bonuses;
-- (b) 10% of the consideration for temporary and/or definitive transfer to a third-party company for up to € 5,000 thousand;
-- (c) 10% or 20% of the consideration for definitive transfer with a minimum of 30 or 40 match appearances to pay to S.C. DINAMO 1948 S.A.;
-- (d) 50% of the difference between the consideration for definitive transfer including any bonuses and the acquisition price;
-- (e) 15% the difference between the disposal price and € 1 million;
-- (f) 50% of the difference between the consideration for definitive transfer including any bonuses and the acquisition price;
-- (g) 20% of the fixed consideration received following definitive disposal to third-party companies excluding bonuses and performance bonuses;
-- (h) 10% of the difference between the consideration for definitive transfer including any bonuses and the acquisition price;
-- (i) 50% of the difference between the amount of € 2 million and the sum collected;
-- (j) 50% of the difference between the disposal price and € 0.5 million plus any bonuses that have already accrued;
-- (k) 20% of the consideration for definitive transfer;
-- (l) 10% on the capital gain following final sale to a third-party company.
+Amounts in thousands of euros
 
-100
+| Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | From: Company | Date of disposal | To: Company | Historical cost (1) | Accum. amortisation (2) | Net (3) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **First Team** | | | | | | | | **419,035** | **199,684** | **219,351** |
+| Asamoah Kwadwo | 09/12/88 | 02/07/12 | 30/06/18 | 02/07/12 | Udinese Calcio | 01/07/18 | End of contract | 17,136 | 17,136 | - |
+| Barzagli Andrea | 08/05/81 | 26/01/11 | 30/06/19 | 26/01/11 | VFL Wolfsburg | | | 711 | 711 | - |
+| Bentancur Colman Rodrigo | 25/06/97 | 26/06/17 | 30/06/22 | 20/04/17 | CA Boca Juniors | | | 12,012 | 2,402 | 9,610 |
+| Bernardeschi Federico | 16/02/94 | 24/07/17 | 30/06/22 | 24/07/17 | ACF Fiorentina | | | 39,411 | 7,882 | 31,529 |
+| Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/23 | 02/08/18 | AC Milan | | | - | - | - |
+| Buffon Gianluigi | 28/01/78 | 12/07/01 | 30/06/18 | 12/07/01 | Parma FC | 01/07/18 | End of contract | 52,884 | 52,884 | - |
+| Caldara Mattia | 05/05/94 | 12/01/17 | 30/06/22 | 19/03/17 | Atalanta BC | 02/08/18 | AC Milan | 18,230 | 5,266 | 12,964 |
+| Can Emre | 12/01/94 | 21/06/18 | 30/06/22 | 01/07/18 | Foreign Federation | | | - | - | - |
+| Cavaco Cancelo | 27/05/94 | 27/06/18 | 30/06/23 | 01/07/18 | Valencia Club de Futebol | | | - | - | - |
+| Chiellini Giorgio | 14/08/84 | 06/07/04 | 30/06/20 | 01/07/05 | ACF Fiorentina | | | 7,730 | 7,730 | - |
+| Costa de Souza Douglas | 14/09/90 | 07/06/18 | 30/06/22 | 07/06/18 | FC Bayern Munchen | | | 44,616 | 731 | 43,885 |
+| Cuadrado Bello Juan Guillermo | 26/05/88 | 31/08/16 | 30/06/20 | 21/05/17 | Chelsea FC | | | 19,940 | 7,121 | 12,819 |
+| De Sciglio Mattia | 20/10/92 | 20/07/17 | 30/06/22 | 20/07/17 | AC Milan | | | 12,141 | 2,428 | 9,713 |
+| Dos Santos A. Cristiano Ronaldo | 05/02/85 | 10/07/18 | 30/06/22 | 10/07/18 | Real Madrid Club de Futbol | | | - | - | - |
+| Dybala Paulo Exequiel | 15/11/93 | 01/07/15 | 30/06/22 | 01/07/15 | US Città di Palermo | | | 41,439 | 19,232 | 22,207 |
+| El Mouttaqui Benatia Medhi Amine | 17/04/87 | 15/07/16 | 30/06/20 | 12/05/17 | FC Bayern Munchen | 28/01/19 | AL Duhail SC | 16,720 | 6,058 | 10,662 |
+| Kean Bioty Moise | 28/02/00 | 21/07/17 | 30/06/20 | 05/03/14 | From Youth Sector | | | - | - | - |
+| Khedira Sami | 04/04/87 | 01/07/15 | 30/06/21 | 01/07/15 | Foreign Federation | | | 1,300 | 975 | 325 |
+| Lichsteiner Stephan | 16/01/84 | 01/07/11 | 30/06/18 | 01/07/11 | SS Lazio | 01/07/18 | End of contract | 9,932 | 9,932 | - |
+| Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/20 | 19/08/15 | Futebol Clube do Porto | | | 26,275 | 15,765 | 10,510 |
+| Magnani Giangiacomo | 04/10/95 | 01/07/18 | 30/06/23 | 01/07/18 | AC Perugia Calcio | 27/07/18 | US Sassuolo Calcio | - | - | - |
+| Mandzukic Mario | 21/05/86 | 01/07/15 | 30/06/20 | 01/07/15 | Club Atletico de Madrid | | | 23,396 | 15,313 | 8,083 |
+| Marchisio Claudio | 19/01/86 | 16/07/04 | 30/06/20 | | From Youth Sector | 16/08/18 | Mutually agreed term. end of contract | 175 | 170 | 5 |
+| Matuidi Blaise | 09/04/87 | 18/08/17 | 30/06/20 | 18/08/17 | Paris Saint-Germain | | | 22,926 | 7,642 | 15,284 |
+| Pellegrini Luca | 07/03/99 | 01/07/19 | 30/06/23 | 30/06/19 | AS Roma | | | - | - | - |
+| Perin Mattia | 10/11/92 | 08/06/18 | 30/06/22 | 01/07/18 | Genoa Cricket and FC | | | - | - | - |
+| Pinsoglio Carlo | 16/03/90 | 18/03/09 | 30/06/19 | | From Youth Sector | | | 806 | 806 | - |
+| Pjanic Miralem | 02/04/90 | 01/07/16 | 30/06/23 | 01/07/16 | AS Roma | | | 32,778 | 13,112 | 19,666 |
+| Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/21 | 31/07/13 | Empoli FC | | | 3,905 | 2,461 | 1,444 |
+| Spinazzola Leonardo | 25/03/93 | 06/07/10 | 30/06/22 | 01/07/12 | AC Siena | 30/06/19 | AS Roma | 516 | 413 | 103 |
+| Szczesny Wojciech | 18/04/90 | 01/07/17 | 30/06/21 | 19/07/17 | Arsenal FC | | | 14,056 | 3,514 | 10,542 |
+| **Temporarily transferred players** | | | | | | | | **192,378** | **88,193** | **104,185** |
+| Abreu de Freitas Afonso | 07/04/00 | 08/08/16 | 30/06/19 | 08/08/16 | Foreign Federation | | | 125 | 83 | 42 |
+| Audero Mulyadi Emil | 18/01/97 | 08/03/13 | 30/06/21 | 30/05/11 | From Youth Sector | 29/01/19 | UC Sampdoria | 180 | 52 | 128 |
+| Barlocco Luca | 20/02/95 | 02/09/13 | 30/06/19 | 02/09/13 | Atalanta BC | | | 2,325 | 1,907 | 418 |
+| Belfasti Nazzareno | 15/07/93 | 12/08/10 | 30/06/18 | 01/07/13 | Modena F.C. | 01/07/18 | End of contract | 759 | 759 | - |
+| Beltrame Stefano | 08/02/93 | 04/08/11 | 30/06/20 | 02/02/15 | UC Sampdoria | | | 1,767 | 1,105 | 662 |
+| Branescu Constantin Laurentiu | 30/03/94 | 18/11/11 | 30/06/20 | 20/01/15 | Virtus Lanciano 1924 | | | 1,225 | 810 | 415 |
+| Brignoli Alberto | 19/08/91 | 02/02/15 | 30/06/19 | 02/02/15 | Ternana Calcio | 25/07/18 | US Città di Palermo | 2,363 | 1,830 | 533 |
+| Cais Davide | 01/02/94 | 30/01/14 | 30/06/20 | 30/01/14 | Atalanta BC | | | 2,452 | 2,016 | 436 |
+| Cerri Alberto | 16/04/96 | 14/07/15 | 30/06/20 | 14/07/15 | Parma FC | 31/12/18 | Cagliari Calcio | 2,144 | 1,287 | 857 |
+| Clemenza Luca | 09/07/97 | 22/09/14 | 30/06/21 | 19/08/01 | Vicenza Calcio | | | 575 | 320 | 255 |
+| Del Fabro Dario | 24/03/95 | 28/07/17 | 30/06/22 | 28/07/17 | Cagliari Calcio | | | 4,402 | 880 | 3,522 |
+| Del Sole Ferdinando | 17/01/98 | 31/08/17 | 30/06/22 | 31/08/17 | Delfino Pescara 1936 | | | 3,551 | 710 | 2,841 |
+| Delli Carri Filippo | 03/05/99 | 31/08/17 | 30/06/22 | 31/08/17 | Delfino Pescara 1936 | | | 1,083 | 217 | 866 |
+| Favilli Andrea | 17/05/97 | 01/07/18 | 30/06/23 | 01/07/15 | Ascoli Picchio FC 1898 | 24/01/19 | Genoa Cricket and FC | - | - | - |
+| Gallinetta Alberto | 16/04/92 | 30/01/13 | 30/06/18 | 30/01/13 | Parma FC | 01/07/18 | End of contract | 1,811 | 1,811 | - |
+| Garcia Tena Pol | 18/02/95 | 24/08/11 | 30/06/19 | 24/08/11 | F.C. Barcelona | 10/07/18 | Koninklijke St-Truldense | 595 | 576 | 19 |
+| Gerbi Erik | 11/06/00 | 31/01/19 | 30/06/23 | 31/01/19 | FC Pro Vercelli 1892 | | | - | - | - |
+| Goh N’Cede Massimo Virou | 01/02/99 | 22/08/18 | 30/06/19 | 24/05/13 | From Youth Sector | 03/01/19 | Mutually agreed term. end of contract | 3 | 1 | 2 |
+| Gomes Oliveira de A. Pedro Manuel | 08/01/98 | 17/08/16 | 30/06/19 | 17/08/16 | S.C. Espinho | | | 270 | 177 | 93 |
+| Higuain Gonzalo Gerardo | 10/12/87 | 26/07/16 | 30/06/21 | 26/07/16 | S.S.C. Napoli | | | 91,296 | 36,518 | 54,778 |
+| Lanini Eric | 25/02/94 | 30/01/14 | 30/06/19 | 25/06/15 | U.S. Città di Palermo | 26/01/19 | Lugano FC | 1,587 | 1,321 | 266 |
+| Macek Roman | 18/04/97 | 05/08/13 | 30/06/21 | 01/07/14 | F.C. Fastav Zlin | | | 326 | 295 | 31 |
+| Mancuso Leonardo | 26/05/92 | 31/01/18 | 30/06/21 | 31/01/18 | Delfino Pescara 1936 | | | 1,957 | 280 | 1,677 |
+| Mandragora Rolando | 29/06/97 | 19/01/16 | 30/06/21 | 19/01/16 | Genoa Cricket and Fc | 26/07/18 | Udinese Calcio | 8,970 | 3,644 | 5,326 |
+| Marin Vladut Nicolae | 15/05/95 | 02/09/13 | 30/06/18 | 02/09/13 | Manchester City FC | 01/07/18 | End of contract | 360 | 360 | - |
+| Marricchi Filippo | 04/02/99 | 24/08/18 | 30/06/21 | 09/07/15 | Ternana Calcio | | | 465 | 273 | 192 |
+| Marrone Luca | 28/03/90 | 31/10/07 | 30/06/20 | 02/04/04 | From Youth Sector | 03/06/19 | Hellas Verona | 5,423 | 4,252 | 1,171 |
+| Meneghini Riccardo | 19/04/00 | 01/01/19 | 30/06/19 | 23/07/14 | Vicenza Calcio | | | 150 | 120 | 30 |
+| Mosti Nicola | 07/02/98 | 29/08/16 | 30/06/20 | 29/08/16 | Empoli F.C. | | | 1,095 | 543 | 552 |
+| Narciso da Costa C. Ricardo Manuel | 24/03/00 | 08/08/16 | 30/06/19 | 08/08/16 | Foreign Federation | | | 115 | 77 | 38 |
+| Nocchi Timothy | 07/07/90 | 01/07/10 | 30/06/18 | | From Youth Sector | 01/07/18 | End of contract | 82 | 82 | - |
+| Oliveira da Silva Rogerio | 13/01/98 | 31/08/16 | 30/06/23 | 31/08/16 | U.S. Sassuolo Calcio | 29/06/19 | US Sassuolo Calcio | 2,000 | 1,000 | 1,000 |
+| Orsolini Riccardo | 24/01/97 | 30/01/17 | 30/06/22 | 30/01/17 | Ascoli Picchio F.C. 1898 | 18/06/19 | Bologna FC 1909 | 6,363 | 1,833 | 4,530 |
+| Padovan Stefano | 16/04/94 | 12/09/12 | 30/06/19 | 07/05/08 | From Youth Sector | | | 238 | 184 | 54 |
+| Peeters Daouda | 28/01/99 | 29/01/19 | 30/06/22 | 29/01/19 | UC Sampdoria | | | - | - | - |
+| Pellizzari Stefano | 03/01/97 | 29/01/14 | 30/06/19 | 18/06/14 | A.C. Cesena | | | 1,773 | 1,633 | 140 |
+| Pjaca Marko | 06/05/95 | 21/07/16 | 30/06/21 | 21/07/16 | GNK Dinamo | | | 28,591 | 11,436 | 17,155 |
+| Ranocchia Filippo | 14/05/01 | 31/01/19 | 30/06/21 | 31/01/19 | AC Perugia | | | - | - | - |
+| Saro Gianluca | 25/06/00 | 14/08/18 | 30/06/19 | 31/08/17 | FC Pro Vercelli 1892 | | | 20 | 4 | 16 |
+| Siani Giorgio | 09/01/97 | 29/06/16 | 30/06/19 | 30/08/15 | Atalanta B.C. | | | 1,619 | 1,181 | 438 |
+| Sturaro Stefano | 09/03/93 | 01/07/14 | 30/06/21 | 01/07/14 | Genoa Cricket and F.C. | 24/01/19 | Genoa Cricket and FC | 10,602 | 6,320 | 4,282 |
+| Tamba M’Pinda Roger | 13/08/98 | 02/08/18 | 30/06/21 | 02/08/18 | Foreign Federation | | | - | - | - |
+| Tello Munoz Andres Felipe | 06/09/96 | 01/07/15 | 30/06/20 | 01/07/15 | Envigado FC | 12/07/18 | Benevento Calcio | 1,610 | 1,065 | 545 |
+| Toure Oumar | 18/09/98 | 01/03/17 | 30/06/19 | 22/06/16 | Santarcangelo Calcio | | | 145 | 92 | 53 |
+| Udoh King Paul Akpan | 05/09/97 | 01/12/15 | 30/06/19 | 14/09/11 | From Youth Sector | 13/09/18 | Mutually agreed term. end of contract | 74 | 45 | 29 |
+| Vogliacco Alessandro | 13/08/98 | 05/08/14 | 30/06/21 | 05/08/14 | AS Bari | | | 292 | 234 | 58 |
+| Zappa Claudio | 30/03/97 | 21/07/17 | 30/06/21 | 22/07/18 | US Sassuolo Calcio | | | 1,595 | 860 | 735 |
+| **Other changes** | | | | | | | | **11,198** | **3,906** | **7,292** |
+| **Total** | | | | | | | | **622,611** | **291,783** | **330,828** |
 
-JUVENTUS FOOTBALL CLUB S.P.A.
+Columns 1, 2, 3 = "Values at beginning of the period 01/07/2018": Historical cost (1), Accum. amortisation (2), Net (3).
+
+(a) 50% of the consideration for temporary and/or definitive transfer, including any bonuses;
+(b) 10% of the consideration for temporary and/or definitive transfer to a third-party company for up to € 5,000 thousand;
+(c) 10% or 20% of the consideration for definitive transfer with a minimum of 30 or 40 match appearances to pay to S.C. DINAMO 1948 S.A.;
+(d) 50% of the difference between the consideration for definitive transfer including any bonuses and the acquisition price;
+(e) 15% the difference between the disposal price and € 1 million;
+(f) 50% of the difference between the consideration for definitive transfer including any bonuses and the acquisition price;
+(g) 20% of the fixed consideration received following definitive disposal to third-party companies excluding bonuses and performance bonuses;
+(h) 10% of the difference between the consideration for definitive transfer including any bonuses and the acquisition price;
+(i) 50% of the difference between the amount of € 2 million and the sum collected;
+(j) 50% of the difference between the disposal price and € 0.5 million plus any bonuses that have already accrued;
+(k) 20% of the consideration for definitive transfer;
+(l) 10% on the capital gain following final sale to a third-party company.
 
 --- pág. 101 ---
 
-|  Change in values for the period |   | Economic effects for the period |   |   |   | Values at the end of the period 30/06/2019 |   |   | Miscellaneous  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Acquisitions | Disposal | Ammort.* | Write-downs* | Capital losses* | Capital gains* | Historical cost | Accumulated amort. | Net* | Agents' fees | Other acquisit. costs | Value of the sell-on fee  |
-|  4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |  |  |   |
-|  254,311 | 75,977 | 111,203 | 197 | 5 | 47,480 | 549,464 | 215,704 | 333,760 | 55,114 | 1,959 |   |
-|  - | - | - | - | - | - | - | - | - | - | - |   |
-|  - | - | - | - | - | - | 711 | 711 | - | 80 | - |   |
-|  502 | - | 2,023 | - | - | - | 12,514 | 4,425 | 8,089 | 1,083 | 1,959 | (a)  |
-|  - | - | 7,882 | - | - | - | 39,411 | 15,764 | 23,647 | 600 | - | (b)  |
-|  34,946 | - | 6,989 | - | - | - | 34,946 | 6,989 | 27,957 | 400 | - |   |
-|  - | - | - | - | - | - | - | - | - | 2,650 | - |   |
-|  - | 34,546 | - | - | - | 21,582 | - | - | - | - | - |   |
-|  15,861 | - | 3,965 | - | - | - | 15,861 | 3,965 | 11,896 | 15,861 | - |   |
-|  39,694 | - | 7,939 | - | - | - | 39,694 | 7,939 | 31,755 | - | - |   |
-|  254 | - | 127 | - | - | - | 7,984 | 7,857 | 127 | 554 | - |   |
-|  - | - | 10,972 | - | - | - | 44,616 | 11,703 | 32,913 | 5,297 | - |   |
-|  - | - | 6,410 | - | - | - | 19,940 | 13,531 | 6,409 | - | - |   |
-|  - | - | 2,428 | - | - | - | 12,141 | 4,856 | 7,285 | 500 | - |   |
-|  115,822 | - | 28,956 | - | - | - | 115,822 | 28,956 | 86,866 | 11,876 | - |   |
-|  - | - | 5,552 | - | - | - | 41,439 | 24,784 | 16,655 | 3,699 | - |   |
-|  - | 7,800 | 2,665 | 197 | - | - | - | - | - | - | - |   |
-|  - | - | - | - | - | - | - | - | - | - | - |   |
-|  - | - | 108 | - | - | - | 1,300 | 1,083 | 217 | 1,300 | - |   |
-|  - | - | - | - | - | - | - | - | - | 200 | - |   |
-|  - | - | 2,102 | - | - | - | 26,275 | 17,867 | 8,408 | 1,000 | - |   |
-|  4,876 | 4,876 | - | - | - | - | - | - | - | - | - |   |
-|  - | - | 2,694 | - | - | - | 23,396 | 18,007 | 5,389 | 2,442 | - |   |
-|  - | - | - | - | 5 | - | - | - | - | - | - |   |
-|  - | - | 7,642 | - | - | - | 22,926 | 15,284 | 7,642 | 800 | - |   |
-|  21,478 | - | 15 | - | - | - | 21,478 | 15 | 21,463 | - | - |   |
-|  14,224 | - | 3,556 | - | - | - | 14,224 | 3,556 | 10,668 | 600 | - |   |
-|  - | - | - | - | - | - | 806 | 806 | - | - | - |   |
-|  2,223 | - | 4,377 | - | - | - | 35,001 | 17,489 | 17,512 | 4,172 | - |   |
-|  - | - | 289 | - | - | - | 3,905 | 2,750 | 1,155 | - | - |   |
-|  3,413 | 28,755 | 659 | - | - | 25,898 | - | - | - | - | - |   |
-|  1,018 | - | 3,853 | - | - | - | 15,074 | 7,367 | 7,707 | 2,000 | - |   |
-|  16,852 | 96,647 | 32,038 | 325 | 318 | 72,870 | 156,014 | 91,435 | 64,579 | 12,236 | - |   |
-|  - | - | 42 | - | - | - | 125 | 125 | - | - | - |   |
-|  - | 19,100 | 21 | - | - | 18,993 | - | - | - | 10 | - |   |
-|  - | - | 418 | - | - | - | 2,325 | 2,325 | - | - | - |   |
-|  - | - | - | - | - | - | - | - | - | - | - |   |
-|  80 | - | 371 | - | - | - | 1,847 | 1,476 | 371 | - | - |   |
-|  - | - | 208 | - | - | - | 1,225 | 1,018 | 207 | - | - |   |
-|  - | 732 | - | - | - | 199 | - | - | - | - | - | (c)  |
-|  - | - | 436 | - | - | - | 2,452 | 2,452 | - | - | - |   |
-|  - | 8,720 | 214 | - | - | 8,077 | - | - | - | 1,894 | - |   |
-|  800 | - | 352 | - | - | - | 1,375 | 672 | 703 | 50 | - |   |
-|  - | - | 881 | - | - | - | 4,402 | 1,761 | 2,641 | - | - |   |
-|  - | - | 710 | - | - | - | 3,551 | 1,420 | 2,131 | 104 | - |   |
-|  30 | - | 224 | - | - | - | 1,113 | 441 | 672 | - | - | (d)  |
-|  7,653 | 6,617 | 765 | 271 | - | - | - | - | - | - | - |   |
-|  - | - | - | - | - | - | - | - | - | - | - |   |
-|  - | 271 | - | - | - | 252 | - | - | - | 70 | - |   |
-|  1,552 | - | 147 | - | - | - | 1,552 | 147 | 1,405 | - | - |   |
-|  - | - | 1 | 1 | - | - | - | - | - | - | - | (e)  |
-|  40 | - | 133 | - | - | - | 310 | 310 | - | - | - |   |
-|  - | - | 18,259 | - | - | - | 91,296 | 54,777 | 36,519 | 3,050 | - |   |
-|  7 | - | 91 | - | - | - | 1,594 | 1,412 | 182 | - | - |   |
-|  100 | 1,743 | 22 | - | - | 1,634 | - | - | - | 96 | - |   |
-|  - | - | 559 | - | - | - | 1,957 | 839 | 1,118 | - | - |   |
-|  - | 18,988 | - | - | - | 13,662 | - | - | - | 587 | - | (f)  |
-|  - | - | - | - | - | - | - | - | - | 75 | - |   |
-|  - | - | 64 | - | - | - | 465 | 337 | 128 | - | - |   |
-|  - | 443 | 439 | - | 289 | - | - | - | - | 50 | - |   |
-|  5 | - | 35 | - | - | - | 155 | 155 | - | - | - |   |
-|  32 | - | 292 | - | - | - | 1,127 | 835 | 292 | - | - |   |
-|  - | - | 38 | - | - | - | 115 | 115 | - | - | - |   |
-|  - | - | - | - | - | - | 82 | 82 | - | - | - |   |
-|  1,700 | 5,790 | 405 | - | - | 3,495 | - | - | - | 200 | - |   |
-|  180 | 14,621 | 1,138 | - | - | 11,049 | - | - | - | 400 | - | (g)  |
-|  - | - | 54 | - | - | - | 238 | 238 | - | - | - | (h)  |
-|  3,955 | - | 488 | - | - | - | 3,955 | 488 | 3,467 | 25 | - |   |
-|  31 | - | 171 | - | - | - | 1,804 | 1,804 | - | - | - | (i)  |
-|  - | - | 3,431 | - | - | - | 28,591 | 14,867 | 13,724 | 5,400 | - |   |
-|  640 | - | 111 | - | - | - | 640 | 111 | 529 | - | - |   |
-|  - | - | 16 | - | - | - | 20 | 20 | - | - | - | (j)  |
-|  26 | - | 464 | - | - | - | 1,645 | 1,645 | - | - | - | (k)  |
-|  - | 17,183 | 714 | - | - | 13,615 | - | - | - | - | - | (l)  |
-|  - | - | - | - | - | - | - | - | - | - | - |   |
-|  - | 2,439 | - | - | - | 1,894 | - | - | - | 225 | - |   |
-|  - | - | 53 | - | - | - | 145 | 145 | - | - | - |   |
-|  - | - | - | - | 29 | - | - | - | - | - | - |   |
-|  21 | - | 26 | 53 | - | - | 313 | 313 | - | - | - |   |
-|  - | - | 245 | - | - | - | 1,595 | 1,105 | 490 | - | - |   |
-|  22,245 | 6,962 | 5,521 | 147 | 40 | 6,703 | 30,955 | 8,251 | 22,704 | 2,146 | - |   |
-|  293,408 | 179,586 | 148,772 | 669 | 363 | 127,053 | 736,433 | 315,390 | 421,043 | 69,496 | 1,959 |   |
+ANNUAL FINANCIAL REPORT AT 30 06 19 - Notes to the financial statements 101
 
-ANNUAL FINANCIAL REPORT AT 30 06 19 - Notes to the financial statements
+| Change in values for the period | | Economic effects for the period | | | | Values at the end of the period 30/06/2019 | | | Miscellaneous | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Acquisitions | Disposal | Ammort.* | Write-downs* | Capital losses* | Capital gains* | Historical cost | Accumulated amort. | Net* | Agents' fees | Other acquisit. costs | Value of the sell-on fee |
+| 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | | | |
 
-101
+| Acquisitions | Disposal | Ammort.* | Write-downs* | Capital losses* | Capital gains* | Historical cost | Accumulated amort. | Net* | Agents' fees | Other acquisit. costs | Value of the sell-on fee | Ref. |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 254,311 | 75,977 | 111,203 | 197 | 5 | 47,480 | 549,464 | 215,704 | 333,760 | 55,114 | 1,959 | | |
+| - | - | - | - | - | - | - | - | - | - | | | |
+| - | - | - | - | - | - | 711 | 711 | - | 80 | | | |
+| 502 | - | 2,023 | - | - | - | 12,514 | 4,425 | 8,089 | 1,083 | 1,959 | | (a) |
+| - | - | 7,882 | - | - | - | 39,411 | 15,764 | 23,647 | 600 | | | (b) |
+| 34,946 | - | 6,989 | - | - | - | 34,946 | 6,989 | 27,957 | 400 | | | |
+| - | 34,546 | - | - | - | 21,582 | - | - | - | 2,650 | | | |
+| - | - | - | - | - | - | - | - | - | - | | | |
+| 15,861 | - | 3,965 | - | - | - | 15,861 | 3,965 | 11,896 | 15,861 | | | |
+| 39,694 | - | 7,939 | - | - | - | 39,694 | 7,939 | 31,755 | - | | | |
+| 254 | - | 127 | - | - | - | 7,984 | 7,857 | 127 | 554 | | | |
+| - | - | 10,972 | - | - | - | 44,616 | 11,703 | 32,913 | 5,297 | | | |
+| - | - | 6,410 | - | - | - | 19,940 | 13,531 | 6,409 | - | | | |
+| - | - | 2,428 | - | - | - | 12,141 | 4,856 | 7,285 | 500 | | | |
+| 115,822 | - | 28,956 | - | - | - | 115,822 | 28,956 | 86,866 | 11,876 | | | |
+| - | - | 5,552 | - | - | - | 41,439 | 24,784 | 16,655 | 3,699 | | | |
+| - | 7,800 | 2,665 | 197 | - | - | - | - | - | - | | | |
+| - | - | - | - | - | - | - | - | - | - | | | |
+| - | - | 108 | - | - | - | 1,300 | 1,083 | 217 | 1,300 | | | |
+| - | - | - | - | - | - | - | - | - | 200 | | | |
+| - | - | 2,102 | - | - | - | 26,275 | 17,867 | 8,408 | 1,000 | | | |
+| 4,876 | 4,876 | - | - | - | - | - | - | - | - | | | |
+| - | - | 2,694 | - | - | - | 23,396 | 18,007 | 5,389 | 2,442 | | | |
+| - | - | - | - | 5 | - | - | - | - | - | | | |
+| - | - | 7,642 | - | - | - | 22,926 | 15,284 | 7,642 | 800 | | | |
+| 21,478 | - | 15 | - | - | - | 21,478 | 15 | 21,463 | - | | | |
+| 14,224 | - | 3,556 | - | - | - | 14,224 | 3,556 | 10,668 | 600 | | | |
+| - | - | - | - | - | - | 806 | 806 | - | - | | | |
+| 2,223 | - | 4,377 | - | - | - | 35,001 | 17,489 | 17,512 | 4,172 | | | |
+| - | - | 289 | - | - | - | 3,905 | 2,750 | 1,155 | - | | | |
+| 3,413 | 28,755 | 659 | - | - | 25,898 | - | - | - | - | | | |
+| 1,018 | - | 3,853 | - | - | - | 15,074 | 7,367 | 7,707 | 2,000 | | | |
+| 16,852 | 96,647 | 32,038 | 325 | 318 | 72,870 | 156,014 | 91,435 | 64,579 | 12,236 | | - | |
+| - | - | 42 | - | - | - | 125 | 125 | - | - | | | |
+| - | 19,100 | 21 | - | - | 18,993 | - | - | - | 10 | | | |
+| - | - | 418 | - | - | - | 2,325 | 2,325 | - | - | | | |
+| - | - | - | - | - | - | - | - | - | - | | | |
+| 80 | - | 371 | - | - | - | 1,847 | 1,476 | 371 | - | | | |
+| - | - | 208 | - | - | - | 1,225 | 1,018 | 207 | - | | | |
+| - | 732 | - | - | - | 199 | - | - | - | - | | | (c) |
+| - | - | 436 | - | - | - | 2,452 | 2,452 | - | - | | | |
+| - | 8,720 | 214 | - | - | 8,077 | - | - | - | 1,894 | | | |
+| 800 | - | 352 | - | - | - | 1,375 | 672 | 703 | 50 | | | |
+| - | - | 881 | - | - | - | 4,402 | 1,761 | 2,641 | - | | | |
+| - | - | 710 | - | - | - | 3,551 | 1,420 | 2,131 | 104 | | | |
+| 30 | 6,617 | 224 | - | - | - | 1,113 | 441 | 672 | - | | | (d) |
+| 7,653 | - | 765 | 271 | - | - | - | - | - | - | | | |
+| - | 271 | - | - | - | 252 | - | - | - | 70 | | | |
+| - | - | - | - | - | - | - | - | - | - | | | |
+| 1,552 | - | 147 | - | - | - | 1,552 | 147 | 1,405 | - | | | |
+| - | - | 1 | 1 | - | - | - | - | - | - | | | (e) |
+| 40 | - | 133 | - | - | - | 310 | 310 | - | - | | | |
+| - | - | 18,259 | - | - | - | 91,296 | 54,777 | 36,519 | 3,050 | | | |
+| 7 | - | 91 | - | - | - | 1,594 | 1,412 | 182 | - | | | |
+| 100 | 1,743 | 22 | - | - | 1,634 | - | - | - | 96 | | | |
+| - | - | 559 | - | - | - | 1,957 | 839 | 1,118 | - | | | |
+| - | 18,988 | - | - | - | 13,662 | - | - | - | 587 | | | (f) |
+| - | - | - | - | - | - | - | - | - | 75 | | | |
+| - | - | 64 | - | - | - | 465 | 337 | 128 | - | | | |
+| - | 443 | 439 | - | 289 | - | - | - | - | 50 | | | |
+| 5 | - | 35 | - | - | - | 155 | 155 | - | - | | | |
+| 32 | - | 292 | - | - | - | 1,127 | 835 | 292 | - | | | |
+| - | - | 38 | - | - | - | 115 | 115 | - | - | | | |
+| - | - | - | - | - | - | 82 | 82 | - | - | | | |
+| 1,700 | 5,790 | 405 | - | - | 3,495 | - | - | - | 200 | | | (g) |
+| 180 | 14,621 | 1,138 | - | - | 11,049 | - | - | - | 400 | | | (h) |
+| - | - | 54 | - | - | - | 238 | 238 | - | - | | | |
+| 3,955 | - | 488 | - | - | - | 3,955 | 488 | 3,467 | 25 | | | |
+| 31 | - | 171 | - | - | - | 1,804 | 1,804 | - | - | | | (i) |
+| - | - | 3,431 | - | - | - | 28,591 | 14,867 | 13,724 | 5,400 | | | |
+| 640 | - | 111 | - | - | - | 640 | 111 | 529 | - | | | |
+| - | - | 16 | - | - | - | 20 | 20 | - | - | | | (j) |
+| 26 | - | 464 | - | - | - | 1,645 | 1,645 | - | - | | | (k) |
+| - | 17,183 | 714 | - | - | 13,615 | - | - | - | - | | | (l) |
+| - | 2,439 | - | - | - | 1,894 | - | - | - | - | | | |
+| - | - | 53 | - | - | - | 145 | 145 | - | 225 | | | |
+| - | - | 26 | - | 29 | - | - | - | - | - | | | |
+| 21 | - | - | 53 | - | - | 313 | 313 | - | - | | | |
+| - | - | 245 | - | - | - | 1,595 | 1,105 | 490 | - | | | |
+| 22,245 | 6,962 | 5,531 | 147 | 40 | 6,703 | 30,955 | 8,251 | 22,704 | 2,146 | | - | |
+| 293,408 | 179,586 | 148,772 | 669 | 363 | 127,053 | 736,433 | 315,390 | 421,043 | 69,496 | 1,959 | | |
+
+ANNUAL FINANCIAL REPORT AT 30 06 19 - Notes to the financial statements 101
 
 --- pág. 102 ---
 
