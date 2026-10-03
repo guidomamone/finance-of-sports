@@ -52,6 +52,7 @@ import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { readdirSync } from 'node:fs';
 import { derivado } from './rutas.mjs';
+import { ajusteDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -401,7 +402,15 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
     const faltan = ['grossDebt', 'cash'].filter((k) => a.m[k] == null); if (!faltan.length) continue;
     if (!a.md) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, valor: null, como: 'la fuente no nombra la transcripción' }); continue; }
     const res = {};
-    for (const k of faltan) { const ctx = contexto({ d, anios, a, cual: k, filasDe, conocidos }); res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) }; }
+    for (const k of faltan) {
+      const ctx = contexto({ d, anios, a, cual: k, filasDe, conocidos });
+      // ESCALÓN 0 DE TODO (Versión 419): ajuste manual `caja` (tools/ajustes.mjs), el número TAL CUAL impreso en el documento del año; se pasa
+      // a millones con la escala del documento. Gana sobre la escalera y no pasa por la compuerta (es una decisión de Guido). Caso:
+      // Novorizontino 2022, el documento dice 721.730 (con aplicaciones de proyectos incentivados) y el 2023 lo reclasificó a 146.924.
+      const aj = k === 'cash' ? ajusteDe(a.md.replace(/\.md$/i, '.pdf'), 'caja') : null;
+      if (aj && ctx.factor) { res[k] = { ctx, valor: r6(Math.abs(parseNumber(aj.valor)) * ctx.factor), escalon: 0, validacion: 'ajuste manual', como: `ajuste manual (${aj.fecha}): ${aj.motivo}`, filas: [] }; continue; }
+      res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) };
+    }
     const sinDato = faltan.filter((k) => res[k].valor == null);
     if (sinDato.length) {
       const r = await iaDe(a.md, filasDe(a.md), res.grossDebt?.club);

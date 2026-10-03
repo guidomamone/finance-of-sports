@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 419 — Ajuste manual `caja` (2026-10-02)
+
+- `ajustes.mjs`: `caja` (--valor tal cual impreso en el documento del año). `caja-deuda.mjs` lo toma como escalón 0 (gana sobre la escalera, sin compuerta) y lo pasa a millones con la escala del documento.
+- Caso: Novorizontino 2022: el documento imprime 721.730 (con aplicaciones de proyectos incentivados); el 2023 lo reclasificó a 146.924, coherente con 2023-2025.
+- Medido: ningún otro documento tiene este ajuste.
+
 ## Versión 418 — Caja y deuda: la compuerta pasa el documento siguiente a su propia escala (2026-10-02)
 
 - `caja-deuda.mjs` (`compuerta`): las cifras del documento siguiente se multiplican por la escala de ESE documento (`factorSiguiente`, de sus ingresos cargados), no por la de este; si no se conoce, la de este, como antes.
