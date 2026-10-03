@@ -472,6 +472,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const sale = (f) => String(f.etiqueta).trim() === a.reemplaza.trim() || String(f.origen || '').includes(`desglosa "${a.reemplaza.trim()}"`);
     if (a.reemplaza) for (const arr of [ingB, gasB, fin, imp]) for (let i = arr.length - 1; i >= 0; i--) if (sale(arr[i])) arr.splice(i, 1);
     const m = mult(estado[0]?.bloque); const v = parseNumber(a.valor) * m;
+    // (Versión 435, cambio G) con valor 0 y `reemplaza`, el ajuste SOLO saca la fila: no agrega una línea en cero (Juventus 2018-19, la fila
+    // de la ganancia por acción "(0,040)", .md L1160, no es un importe del estado)
+    if (v === 0 && a.reemplaza) { if (primera) notas.push(`ajuste manual: sale la fila "${a.reemplaza}" (${a.fecha}, ${a.motivo})`); continue; }
     destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? Math.abs(v) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
     if (primera) notas.push(`ajuste manual: fila "${a.etiqueta}" (${a.lado}) ${a.valor}${a.reemplaza ? `, en lugar de "${a.reemplaza}"` : ''} (${a.fecha}, ${a.motivo})`);
   } };
@@ -491,10 +494,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // que mezclan lados (2017: "(-) DESPESAS OPERACIONAIS" incluye el financiero y la recuperação), marcas C/D descartadas (2014: "DEV. DE
   // CONVÊNIO" 14.754,86 D sumaba dentro de ingresos).
   const cdDe = (f) => { const m = String(f.actual ?? '').trim().match(/\s([CD])$/i); return m ? m[1].toUpperCase() : null; };
-  const hojas5 = (lado) => estado.filter((f) => f.lado === lado && f.tipo === 'renglon' && isFinite(f.M) && f.M);
+  // (Versión 435, cambio G, aprobado por Guido el 2026-10-03) el ajuste manual `fila` (escalón 0) actúa también en las lecturas 5 y 6: la
+  // fila que nombra `reemplaza` sale de las hojas (y de los renglones sin lado de la 6) y, si el ajuste trae un valor, entra la suya.
+  const reemplazadas = new Set(ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.reemplaza).map((x) => String(x.reemplaza).trim()));
+  const hojas5 = (lado) => estado.filter((f) => f.lado === lado && f.tipo === 'renglon' && isFinite(f.M) && f.M && !reemplazadas.has(String(f.etiqueta).trim()));
   const conSigno5 = (lado, cdResta) => { const r = hojas5(lado); const normal = r.filter((f) => f.M < 0).length > r.length / 2 ? -1 : 1;
     return r.map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === cdResta ? -Math.abs(f.M) : Math.abs(f.M)) : f.M * normal, origen: `estado (lectura 5: hoja${cd ? ` con ${cd}` : ''})` }; }); };
   const ing5 = conSigno5('ingreso', 'D'); const gas5 = conSigno5('gasto', 'C');
+  if (reemplazadas.size) aplicarAjustesFila(ing5, gas5, false);
   const fin5 = hojas5('financiero').map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === 'D' ? -Math.abs(f.M) : Math.abs(f.M)) : f.M }; });
   const evaluar = (nivel) => {
     const ch = []; let ing = [...(nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
@@ -503,7 +510,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
     // suman pero fallan por el total impreso de ingresos, y la 5 no los suma. Solo se llega acá si fallaron la 0 a la 5.
-    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
+    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (nivel >= 6 && reemplazadas.has(String(f.etiqueta).trim())) continue; const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
       const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));

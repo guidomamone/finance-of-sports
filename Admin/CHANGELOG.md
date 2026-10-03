@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 435 — Cambio G: el ajuste manual `fila` actúa en las lecturas 5 y 6, y con valor 0 solo saca la fila (2026-10-03)
+
+- `tools/verificar.mjs`: la fila que nombra `reemplaza` sale también de las hojas de la lectura 5 y de los renglones sin lado de la 6; con `--valor 0` el ajuste solo la saca (no agrega una línea en cero). Diseño aprobado por Guido.
+- Caso: Juventus 2018-19, "Basic and diluted earning/(loss) per share (0,040)" (.md L1160) se leía como 40 € y la lectura 6 no cerraba; con el ajuste cierra exacto contra −39.895.794.
+- Medido con `verificar.mjs` sobre los lotes 07-13: sin el ajuste, todo idéntico; con el ajuste, solo cambia Juventus 2018-19.
+- Lote 13 (Juventus, 17 años): listos para cargar 2013, 2014, 2015 y 2025.
+
 ## Versión 434 — Cambio F: lectura 6 de la etapa 6 (la 5 + los renglones sin lado según su signo) (2026-10-03)
 
 - `tools/verificar.mjs`: lectura 6 al final de la escalera de lecturas = la 5 (solo hojas, sin totales, resultado impreso exacto) más los renglones sin lado por su signo, como la 3. También en el chequeo de año vecino (`ingresosConLectura`). Diseño aprobado por Guido.
