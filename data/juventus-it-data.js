@@ -50,6 +50,15 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:11.397065, disclosureLevel:'aggregated' }, // pág. 79, precedente
     { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:18.276776, disclosureLevel:'aggregated' }, // pág. 79, precedente
   ],
+  // 2014: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Juventus/Juventus-annual-financial-report-2013-14.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2014: [
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:40.996209, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:150.965077, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:60.29976, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:36.431526, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:27.090529, disclosureLevel:'aggregated' }, // pág. 77, precedente
+  ],
 };
 const juventusitExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-03)
@@ -73,6 +82,17 @@ const juventusitExpenseLinesByYear = {
     { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-51.414589, disclosureLevel:'aggregated' }, // pág. 79, precedente
     { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.291739, disclosureLevel:'aggregated' }, // pág. 79, Jev 0.99
     { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-0.810874, disclosureLevel:'aggregated' }, // pág. 79, precedente
+  ],
+  2014: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.471449, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-47.960673, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-167.886939, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-16.203836, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-3.83044, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-7.259174, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-50.845719, disclosureLevel:'aggregated' }, // pág. 77, precedente
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.216286, disclosureLevel:'aggregated' }, // pág. 77, Jev 0.99
+    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-1.262567, disclosureLevel:'aggregated' }, // pág. 77, precedente
   ],
 };
 const juventusitFiscalYearMeta = {
@@ -108,6 +128,22 @@ const juventusitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:283.801473, officialTotalExpenses:287.607479, officialPAT:-15.910649,
   },
+  2014: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2014-06-30',
+    sourceId:'juventus-it-annual-financial-report-2013-14',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-8.699553, tax:-6.820895,
+    extraRows: [
+      {label:'Financial income', value:3.131807},
+      {label:'Financial expenses', value:-11.83136},
+      {label:'Current taxes', value:-7.20472},
+      {label:'Deferred taxes', value:0.383825},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:315.783101, officialTotalExpenses:306.937083, officialPAT:-6.67443,
+  },
 };
 const juventusitPresupuestoOverlayByYear = {};
 
@@ -137,6 +173,12 @@ Object.assign(sources, {
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2012-13 (ejercicio 2013)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'juventus-it-annual-financial-report-2013-14': {
+    id:'juventus-it-annual-financial-report-2013-14', clubId:'juventus-it',
+    title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2013-14 (ejercicio 2014)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
