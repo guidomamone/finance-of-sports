@@ -214,10 +214,21 @@ function reemplazarPaginas(md, nuevas) {
 //   ESCALÓN 1  método "regiones" (cortes alternados) — el .md ya se rearmó con "columnas" y la etapa 6 SIGUE sin cerrar el resultado
 //              impreso (Goiás 2010: el balance de arriba y el estado de abajo tienen columnas en lugares distintos)
 //   COMPUERTA  la misma de siempre: etapa 4 y etapa 6 sobre el .md nuevo. Cada escalón, una vez por documento (la marca del .md lo dice).
-export function paginasARearmar(pdfRel, mdRel) {
+//   ESCALÓN 1c (Versión 399) el REGISTRO de transcripciones (tools/inventario-transcripciones.mjs, que compara el .md entero con el texto
+//              propio) dice "revisar" por cifras con un dígito distinto: eso frena la carga aunque la etapa 6 cierre. Se rearman las páginas
+//              con texto propio que todavía no se rearmaron (método "columnas"). Casos: Goiás 2016 (la pág. 2, nota 17 de ingresos, seguía
+//              con la lectura de Mistral: 94 cifras distintas) y 2014 (cierra, pero 10 cifras mal leídas en otras páginas).
+export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
   const mdAbs = resolve(ROOT, mdRel);
   if (!existsSync(mdAbs)) return null;
   const md = readFileSync(mdAbs, 'utf8');
+  if (registroDoc?.estado === 'revisar' && /dígito distinto/.test(String(registroDoc.detalle || ''))) {
+    const hechas = new Set(); let pg = null;
+    for (const l of md.split('\n')) { const m = l.match(/^---\s*pág\.\s*(\d+)\s*---/i); if (m) pg = Number(m[1]); else if (pg && l.includes('TEXTO PROPIO del PDF')) hechas.add(pg); }
+    const n = Number((execFileSync('pdfinfo', [resolve(ROOT, pdfRel)], { encoding: 'utf8' }).match(/Pages:\s+(\d+)/) || [])[1] || 0);
+    const pags = Array.from({ length: n }, (_, i) => i + 1).filter((p) => !hechas.has(p) && palabras(resolve(ROOT, pdfRel), p).out.length >= 50);
+    if (pags.length) return { paginas: pags, metodo: 'columnas' };
+  }
   if (md.includes('TEXTO PROPIO del PDF')) {
     if (md.includes('método regiones')) return null; // los dos escalones ya se usaron
     const vf = resolve(ROOT, derivado(mdRel, '.verificacion.json', { crear: false }));

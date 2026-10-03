@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 399 — Rearmado con el texto propio: escalón por el registro de transcripciones (2026-10-02)
+
+- `texto-propio-a-md.mjs` / `lote.mjs`: si el registro de transcripciones (que compara el .md ENTERO con el texto propio) dice "revisar" por cifras con un dígito distinto, se rearman las páginas con texto propio que todavía no se rearmaron (método columnas), aunque la etapa 6 cierre: ese estado frena la carga igual.
+- Casos: Goiás 2016 (la pág. 2, nota 17 de ingresos, seguía con la lectura de Mistral: 94 cifras distintas) y 2014 (cierra, pero 10 cifras mal leídas en otras páginas).
+- Cola: dudas de 2008-2013 contestadas en bloque (escala en reales; ejercicio 2011; 2012 ingresos con la columna TOTAL de la nota 19; gastos de 2012 y 2013 con las filas del estado). 2008-2015 quedan ok sin casos.
+- Medido (ensayo): UC (lote 07) y Fortaleza (lote 08) no lo activan; en Goiás solo 2016 (pág. 2) y 2014.
+
 ## Versión 398 — Etapa 6: el chequeo del año vecino lee cada documento con la lectura con la que cerró (2026-10-02)
 
 - `verificar.mjs`: el chequeo 4b (año vecino) suma los ingresos de este documento con la lectura con la que cerró y los del vecino con la suya (la que dejó escrita en su `.verificacion.json`). Hasta la 397 los dos se leían con la lectura 0.
