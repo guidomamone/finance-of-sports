@@ -1,5 +1,7 @@
 # Hellas Verona (Hellas Verona FC)
 
+**Ángulos**: sitio oficial: agotado para lo que Wayback conserva · Wayback CDX: agotado (2 CDN: `media.hellas-production.aks.mwd.cloud` y `hellas.hqcdn.it`) · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Hellas Verona Football Club S.p.A., propiedad de Maurizio Setti. No cotiza.
@@ -32,3 +34,19 @@ o directamente reportarle al club que el link de "Relazione e bilanci" de su pro
 está roto (bucle a sí mismo) — candidato de `dudas-por-club.md`.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): +4 ejercicios (2020, 2021, 2022, 2025), total 5 años
+
+El sitio nuevo solo expone el último ejercicio, pero Wayback conservó los dos CDN anteriores. Se
+listó el prefijo de ambos (`media?f=2021/03/`, `2022/03/`, `2023/04/`, `2026/03/`) y se bajaron,
+con carátula confirmada (Hellas Verona Football Club S.p.A.): bilancio individual al 30/06/2020,
+30/06/2021, 30/06/2022 y **30/06/2025** (este último en `hellas.hqcdn.it/media?f=2026/03/`, con
+sobre Docusign) + la "Situazione consolidata al 30 giugno 2021" (FIGC/Co.Vi.So.C., art. 85 NOIF, NO
+es un consolidado auditado completo). En `Clubes/Italia/Hellas Verona/`.
+
+- Ya estaba 2023 (individual + consolidado); con esto la serie es 2020, 2021, 2022, 2023, 2025. **Falta
+  2024** (prensa lo confirma).
+- El consolidado al 30/06/2020 vino TRUNCADO a 1 MiB en la captura grande; la otra captura
+  (`bt-hellas-verona-consolidato-30-06-2020_compressed.pdf`) es un escaneo de 3 páginas. No se guardó.
+- Hay más piezas en el mismo CDN (relazione sulla gestione, relazione di revisione, collegio sindacale,
+  verbale) por año; no se bajaron porque no son el bilancio.

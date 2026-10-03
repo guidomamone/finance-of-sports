@@ -1,5 +1,7 @@
 # Lazio (S.S. Lazio)
 
+**Ángulos**: sitio oficial: agotado (el listado actual está capado a ~30 docs; el histórico vive en el CMS viejo) · Wayback CDX: agotado para 2006/07-2013/14, 2014/15 y 2015-2024 sin intentar a fondo · búsqueda web: no intentada · regulador/país: no aplica (Borsa Italiana sin explotar) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: S.S. Lazio S.p.A., propiedad de Claudio Lotito. **Cotiza en Borsa Italiana /
@@ -42,3 +44,19 @@ para su archivo `investor-relations`) pero no se consiguió navegarlo a fondo en
 tiempo. Es la mejor pista individual pendiente para una sesión de profundización de Italia.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): +8 ejercicios (2006/07 a 2013/14), total 9 en disco
+
+Wayback CDX sobre `sslazio.it` (dominio completo) mostró que el CMS viejo (Joomla, hasta ~2015)
+servía los bilanci en `sslazio.it/images/stories/documenti/pdf/investor_relator/`. Las capturas del
+2015-09-24 (HTTP 200, `application/pdf`) bajaron completas (todas con `%%EOF` y `pdfinfo` OK), 8
+archivos: **bilancio S.S. Lazio S.p.A. separado + consolidado al 30 de junio de 2007, 2008, 2009,
+2010, 2011, 2012, 2013 y 2014**. Entidad confirmada leyendo la carátula (S.S. Lazio S.p.A., Registro
+Imprese 80109710584), no la URL: dos de ellos tenían nombres genéricos (`Bilancio separato e
+consolidato S.S. Lazio S.p.A.pdf`) y eran 2009 y 2008. En `Clubes/Italia/Lazio/`:
+`Lazio-bilancio-separato-consolidato-2006-07.pdf` … `2013-14.pdf`. 100% con capa de texto.
+
+**Falta**: 2014/15 (la URL `...al 30-06-2015 - app.7-10-15.pdf` solo tiene capturas 303) y 2015/16 a
+2023/24. La web nueva (`/it/images/stories/...`, luego `/ima-ges/documents/investors/`) redirige y
+no se exploró a fondo. Las páginas viejas `investor_relator/comunicati/...` (2006-2009) están en
+Wayback pero sus adjuntos (`cms/view/sNNN/cNNN?download=true`) no se probaron.

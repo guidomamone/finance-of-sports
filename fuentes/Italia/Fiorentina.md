@@ -1,5 +1,7 @@
 # Fiorentina (ACF Fiorentina)
 
+**Ángulos**: sitio oficial: agotado (solo expone los 2 últimos y el resto va por Issuu, que no permite descargar sin cuenta) · Wayback CDX: agotado · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: ACF Fiorentina S.r.l. (hasta hace pocos años, S.p.A.), propiedad de Rocco
@@ -28,3 +30,14 @@ Si vale la pena bajar 2020/21 y 2021/22 desde Issuu (requiere lidiar con el viso
 a PDF) — candidato menor, no crítico dado que ya hay 2 ejercicios recientes cargables.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): sin ejercicios nuevos, total 2 — hay 5 más pero solo como visor Issuu
+
+El snapshot del 2020-10-20 de `acffiorentina.com/it/club/documenti-societari/bilanci-e-relazioni`
+trae un JSON con los iframes de Issuu de la cuenta oficial `issuu.com/acffiorentina`: "Bilancio e
+Consolidato 2018" (`e.issuu.com/embed.html#37847377/69232617`) y "Bilancio e Consolidato 2019"
+(`acf_-_bilancio_consolidato_31.12.2019__ita_`); y el de 2024-11 el 30/06/2024
+(`acf_fascicolo_bilancio_30.06.24_definitivo_-_co`). La nota previa suma 2020/21 y 2021/22.
+Issuu no ofrece descarga sin cuenta (la página de lectura no expone ningún link; solo
+`publicationId`). **No se tocó**: reconstruir el PDF a partir de las imágenes del visor excede el
+alcance de este sourcing y se deja como decisión de Guido (o mail al club, que tiene los fascicoli).
