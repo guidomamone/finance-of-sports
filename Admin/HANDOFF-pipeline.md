@@ -28,8 +28,7 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
 1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2019, 2020, 2021, 2024.** Falta, en orden:
-   ligas 2019-2020 (Série D: `br-serieD` agregada al catálogo; arreglar `fetch-club-league-reference.mjs`, que con `rowspan` de
-   estado guarda el estado en vez del primer club — aprobado por Guido); 2025 y 2023 con
+   2025 y 2023 con
    `--ejecutar --reintentar` (~US$ 0,24; rearmado con el texto propio); 2018 y los viejos 2013-2017 (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala); 2010 (solo "primer año"); 2022 sin .md (re-transcribir, US$ 0,13).
    Falsos positivos vistos, sin arreglar: "Consolidado" en el membrete del auditor (alta-club y perímetro de cargar; 2018-2020) y el

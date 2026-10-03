@@ -34,25 +34,8 @@
 const novorizontinobrRevenueLinesByYear = {
   // 2019: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2019.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  2019: [
-    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:4.918, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Negociação e empréstimo de atletas', normalizedCategory:'player_sales', amountNative:3.392, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
-    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.728, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
-    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:0.899, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.8
-    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.639, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.92
-    { rawLabel:'Recuperação de despesas', normalizedCategory:'other_income', amountNative:0.077, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Reversão de provisão de contingências', normalizedCategory:'other_income', amountNative:1.577, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-  ],
   // 2020: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  2020: [
-    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:6.374, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Negociação e empréstimo de atletas (nota nº6)', normalizedCategory:'player_sales', amountNative:3.128, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
-    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.314, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
-    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:0.349, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
-    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.095, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
-    { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.002, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
-  ],
   // 2021: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
   // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2021: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
@@ -80,37 +63,29 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.06192, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
     { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-1.303783, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.98
   ],
+  // 2019: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2019.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2019: [
+    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:4.918, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'Negociação e empréstimo de atletas', normalizedCategory:'player_sales', amountNative:3.392, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.728, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
+    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:0.899, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.8
+    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.639, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.92
+    { rawLabel:'Recuperação de despesas', normalizedCategory:'other_income', amountNative:0.077, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+    { rawLabel:'Reversão de provisão de contingências', normalizedCategory:'other_income', amountNative:1.577, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+  ],
+  // 2020: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2020: [
+    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:6.374, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Negociação e empréstimo de atletas (nota nº6)', normalizedCategory:'player_sales', amountNative:3.128, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.314, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:0.349, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
+    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.095, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
+    { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.002, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
-  2019: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-9.387, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
-    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.325, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
-    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.545, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
-    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.257, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.98
-    { rawLabel:'Serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-1.419, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
-    { rawLabel:'Provisão para contingências', normalizedCategory:'admin_general_expense', amountNative:-0.023, disclosureLevel:'aggregated' }, // pág. 29, ? 0.6
-    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.867, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Manutenções', normalizedCategory:'admin_general_expense', amountNative:-0.776, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.95
-    { rawLabel:'Salários, ordenados e outras despesas com pessoal', normalizedCategory:'admin_general_expense', amountNative:-0.591, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.85
-    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.075, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
-    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.099, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.94
-    { rawLabel:'Depreciação', normalizedCategory:'depreciation', amountNative:-0.074, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
-    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.349, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
-  ],
-  2020: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-11.607, disclosureLevel:'aggregated' }, // pág. 26, Claude 0.8
-    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.256, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.568, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.261, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-    { rawLabel:'Serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-1.536, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'Provisão para Perdas (nota nº5)', normalizedCategory:'exceptional_items', amountNative:-1.5, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.901, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
-    { rawLabel:'Manutenções', normalizedCategory:'admin_general_expense', amountNative:-0.607, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
-    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.17, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.1, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.94
-    { rawLabel:'Depreciação / Amortização', normalizedCategory:'depreciation', amountNative:-0.096, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.3, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-  ],
   2021: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-14.546, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
     { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.188, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
@@ -144,36 +119,37 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Gastos com atletas não profissionais', normalizedCategory:'youth_other_sports_expense', amountNative:-1.061937, disclosureLevel:'aggregated' }, // pág. 8, Claude 0.85
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.069131, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.91
   ],
+  2019: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-9.387, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
+    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.325, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.545, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.257, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.98
+    { rawLabel:'Serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-1.419, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
+    { rawLabel:'Provisão para contingências', normalizedCategory:'admin_general_expense', amountNative:-0.023, disclosureLevel:'aggregated' }, // pág. 29, ? 0.6
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.867, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+    { rawLabel:'Manutenções', normalizedCategory:'admin_general_expense', amountNative:-0.776, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.95
+    { rawLabel:'Salários, ordenados e outras despesas com pessoal', normalizedCategory:'admin_general_expense', amountNative:-0.591, disclosureLevel:'aggregated' }, // pág. 29, Claude 0.85
+    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.075, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.099, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.94
+    { rawLabel:'Depreciação', normalizedCategory:'depreciation', amountNative:-0.074, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.349, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
+  ],
+  2020: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-11.607, disclosureLevel:'aggregated' }, // pág. 26, Claude 0.8
+    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.256, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.568, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.261, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-1.536, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'Provisão para Perdas (nota nº5)', normalizedCategory:'exceptional_items', amountNative:-1.5, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.901, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Manutenções', normalizedCategory:'admin_general_expense', amountNative:-0.607, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
+    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.17, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.1, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.94
+    { rawLabel:'Depreciação / Amortização', normalizedCategory:'depreciation', amountNative:-0.096, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.3, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
-  2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'BRL', fxRef:'BRL@2019-12-31',
-    sourceId:'novorizontino-br-demonstracoes-financeiras-2019',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-0.226, tax:0,
-    extraRows: [
-      {label:'Despesas financeiras', value:-0.294},
-      {label:'Receitas financeiras', value:0.068},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:12.23, officialTotalExpenses:15.787, officialPAT:-3.783,
-  },
-  2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'BRL', fxRef:'BRL@2020-12-31',
-    sourceId:'novorizontino-br-demonstracoes-financeiras-2020',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-0.484, tax:0,
-    extraRows: [
-      {label:'Despesas financeiras', value:-0.484},
-      {label:'Receitas financeiras', value:null},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
-  },
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = player_impairment. Guido 2026-10-02: pérdida con atletas dentro de despesas gerais = baja de pases, no amortización del año
   2021: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -203,6 +179,35 @@ const novorizontinobrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:38.854, officialTotalExpenses:60.316335, officialPAT:-22.692012,
+  },
+  2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2019-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2019',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.226, tax:0,
+    extraRows: [
+      {label:'Despesas financeiras', value:-0.294},
+      {label:'Receitas financeiras', value:0.068},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:12.23, officialTotalExpenses:15.787, officialPAT:-3.783,
+  },
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = exceptional_items. Guido 2026-10-02: provisión única por una cobranza a Corinthians por venta de un atleta, en discusión judicial; no recurrente
+  2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2020-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.484, tax:0,
+    extraRows: [
+      {label:'Despesas financeiras', value:-0.484},
+      {label:'Receitas financeiras', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
   },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
