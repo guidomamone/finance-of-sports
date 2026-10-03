@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie A (IT) — 7 ejercicio(s) con ranking:
+// Serie A (IT) — 8 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -24,6 +25,14 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:621.227, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
         mix:[["Comercial / Sponsors",135.879],["Estadio",76.665],["Televisión",207.91],["Venta de Jugadores",128.604],["Otros ingresos",72.168]] },
+    ],
+  },
+  2018: {
+    leagueSize: null,
+    clubs: [
+      { id:"juventus-it", revenue:588.344, reportType:"official_balance_sheet",
+        sourceId:"juventus-it-annual-financial-report-2017-18",
+        mix:[["Comercial / Sponsors",133.71],["Estadio",65.763],["Televisión",233.357],["Venta de Jugadores",119.38],["Otros ingresos",36.134]] },
     ],
   },
   2017: {
