@@ -90,7 +90,7 @@ window.CLUB_INDEX = {
   "gimnasiaesgrima-ar": {"n":"Gimnasia y Esgrima (La Plata)","c":"AR","q":"full","y":4,"last":2026,"yrs":[[2026,"official_budget"],[2025,"official_budget_and_balance"],[2024,"official_budget_and_balance"],[2023,"official_balance_sheet"]]},
   "girona-es": {"n":"Girona FC","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "godoycruz-ar": {"n":"Godoy Cruz","c":"AR","q":"full","y":1,"last":2020,"yrs":[[2020,"official_balance_sheet"]]},
-  "goias-br": {"n":"Goiás","c":"BR","q":"full","y":10,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2017,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"]]},
+  "goias-br": {"n":"Goiás","c":"BR","q":"full","y":11,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2017,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"]]},
   "gorica-hr": {"n":"Gorica","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "gremio": {"n":"Grêmio","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "guarani-br": {"n":"Guarani","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
