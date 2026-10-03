@@ -27,9 +27,9 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2019, 2020, 2021, 2023, 2024.** Falta, en orden:
-   2025 (`lote-10c --ejecutar --rehacer`, ~US$ 0,11, después de la compuerta del
-   rearmado); 2018 y los viejos 2013-2017 (balancetes por cuenta y DRE resumida +
+1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2018-2021 y 2023-2025.** Falta, en orden:
+   los viejos 2013-2017 (2017 suma 3 veces cada grupo de un solo renglón y un subtotal mezcla lados: diseñar UN escalón para la
+   familia y medirlo en los 5) (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala); 2010 (solo "primer año"); 2022 sin .md (re-transcribir, US$ 0,13).
    Falsos positivos vistos, sin arreglar: "Consolidado" en el membrete del auditor (alta-club y perímetro de cargar; 2018-2020) y el
    inventario marcando un número de firma digital como cifra (2023).
