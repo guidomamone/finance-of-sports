@@ -27,13 +27,10 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2010 y 2018-2025.** Falta, en orden:
-   los viejos 2013-2017: lectura 5 hecha (2016-2017 verifican OK); resultado fuera del bloque (Versión 415) y columna del año en común (Versión 416) hechos: los 5 verifican OK y están "listos";
-   falta categorizarlos (`lote-10e --ejecutar`, ~US$ 0,15) y cargarlos (balancetes por cuenta y DRE resumida +
-   detallada: años vecinos que no coinciden, escala). 2011-2012 sin documento.
-   Falsos positivos vistos: "Consolidado" en el membrete del auditor (resuelto con el ajuste `perimetro` del club, Versión 412; alta-club
-   todavía pregunta en un club nuevo) y el
-   inventario marcando un número de firma digital como cifra (2023).
+1. **Novorizontino** (Brasil, `novorizontino-br`): **cargados 2010 y 2013-2025** (2011-2012 sin documento). Pendiente: caja y deuda
+   (`caja-deuda.mjs`: la compuerta compara el vecino sin pasarlo a su escala, ej. 2021 caja 0,952 M contra 951.927; arreglo aprobado);
+   ligas 2013-2017 en null (sin liga nacional, solo el Paulista: decidir si `liga-no-catalogada`). Falsos positivos vistos: el
+   inventario marca un número de firma digital como cifra (2023); alta-club pregunta perímetro en un club nuevo por el membrete del auditor.
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs

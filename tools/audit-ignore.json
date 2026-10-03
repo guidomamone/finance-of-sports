@@ -549,5 +549,10 @@
     "code": "escala-implausible",
     "match": "novorizontino-br 2010: revenue",
     "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): año de fundación del club. balanco-2010.md L3 dice '(em reais)' y L10 'Receita Líquida Operacional' 130.350,36: unos US$ 78 mil reales, no un error de escala."
+  },
+  {
+    "code": "escala-implausible",
+    "match": "novorizontino-br 2015: revenue",
+    "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): balancete en reais con centavos (balanco-2015.md); receitas 746.574,12, confirmado por el documento 2016, que en miles da 747 para 2015 (balanco-2016.md L6, L32-60). Club en el Paulista de divisiones de acceso."
   }
 ]
