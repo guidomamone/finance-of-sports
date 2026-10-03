@@ -112,7 +112,11 @@ function parseWikitableTeams(tableWikitext) {
   }
   for (const row of rows) {
     const lines = row.split('\n').map((l) => l.trim()).filter(Boolean);
-    const firstCellLine = lines.find((l) => l.startsWith('|') && !l.startsWith('|}'));
+    // (Versión 410) una celda de ESTADO con rowspan (`|rowspan=4 |{{flagicon|São Paulo}} [[Federação Paulista...|São Paulo]]`) abre un
+    // grupo de clubes: en esa fila el club es la celda siguiente. Antes se guardaba el estado y se perdía el primer club del grupo. Caso:
+    // "2020 Campeonato Brasileiro Série D", fila São Paulo | Novorizontino | Novo Horizonte.
+    const esEstado = (l) => /^\|\s*rowspan\s*=\s*"?\d+"?[^|]*\|.*\{\{\s*flag(icon)?\s*\|/i.test(l); // también {{nowrap|{{flagicon|...}}}}
+    const firstCellLine = lines.find((l) => l.startsWith('|') && !l.startsWith('|}') && !esEstado(l));
     if (!firstCellLine) continue;
     const cell = firstCellLine.replace(/^\|\s*/, '');
     const name = cleanWikilinkCell(cell);

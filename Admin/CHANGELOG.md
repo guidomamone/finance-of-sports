@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 410 — Ligas: celdas de estado con rowspan en las tablas de Wikipedia; Série D en el catálogo (2026-10-02)
+
+- `fetch-club-league-reference.mjs`: una fila que abre un grupo de estado (`|rowspan=N |{{flagicon|...}}`, también dentro de `{{nowrap|...}}`) toma como club la celda siguiente. Antes guardaba el estado y perdía el primer club del grupo.
+- `data/leagues.js`: `br-serieD` (decisión de Guido).
+- Caso: Série D 2020, fila "São Paulo | Novorizontino". Medido: 7 planteles ya cacheados (B 2017, 2022-2024; C 2021, 2025; A 2024) dan el mismo conjunto de clubes; Série D 2019 y 2020 con Novorizontino y sin estados.
+- Novorizontino 2019 y 2020 recargados con `--reemplazar`: liga `br-serieD`, mismos rubros.
+
 ## Versión 409 — Etapa 6, lectura 4: deducciones de la receita bruta (2026-10-02)
 
 - `verificar.mjs`, solo en la lectura 4 (signos impresos): (1) un subtotal igual al único renglón que tiene arriba es ese renglón repetido, no una fila más; (2) el total impreso puede ser el bruto: si los renglones de signo normal lo suman, cierra, y las deducciones restan aparte. La compuerta sigue siendo el resultado impreso.
