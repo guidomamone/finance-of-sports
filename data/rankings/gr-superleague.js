@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Super League (GR) — 4 ejercicio(s) con ranking:
+// Super League (GR) — 5 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -21,6 +22,14 @@ window.RANKINGS["gr-superleague"] = {
       { id:"panathinaikos-gr", revenue:67.512, reportType:"official_balance_sheet",
         sourceId:"panathinaikos-gr-annual-fr-2025",
         mix:[["Comercial / Sponsors",23.125],["Estadio",22.65],["Televisión",6.322],["Premios por competencias",14.774],["Otros ingresos",0.64]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"aellarissa-gr", revenue:5.132, reportType:"official_balance_sheet",
+        sourceId:"aellarissa-gr-ael-notes-elp-2021-06-30",
+        mix:[["Comercial / Sponsors",0.048],["Fútbol profesional (sin desglosar por la fuente)",2.457],["Otros ingresos",2.627]] },
     ],
   },
   2020: {
