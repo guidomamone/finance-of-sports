@@ -58,7 +58,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -69,7 +69,7 @@ function leer() {
 // Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
 export function ajustesDe(pdf) {
   const m = new Map();
-  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo, a);
+  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
   return [...m.values()];
 }
 export function ajusteDe(pdf, campo) {
@@ -95,6 +95,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // (Versión 413) cierre = AAAA-MM-DD del ejercicio (escalón 0 de la fecha de cierre en alta-club.mjs y localizar.mjs); reportType =
     // official_balance_sheet | official_budget (escalón 0 del tipo de documento en alta-club.mjs). Casos: Novorizontino 2022 (el detector de
     // período tomó la fecha de la firma, 28/04/2023) y 2010 (estado de resultados en una tabla con pocas filas numéricas).
+    // (Versión 417) confirmado = un número de la transcripción que la segunda lectura (Gemini) no confirmó, confirmado a mano contra el PDF:
+    // --linea N --valor "tal cual en el .md". Lo toma la compuerta del registro (verificar.mjs, avisarRegistro). Varios por documento.
+    // Casos: Novorizontino 2014 (Gemini no leyó 5 números chicos; la lectura 5 cierra al centavo) y 2016 (Gemini leyó otro dígito; la
+    // versión detallada en reales del mismo PDF confirma el .md).
+    if (campo === 'confirmado' && (!flag('--linea') || !flag('--valor'))) { console.error('confirmado necesita --linea N y --valor "el número tal cual en el .md"'); process.exit(1); }
     if (campo === 'cierre' && !/^\d{4}-\d{2}-\d{2}$/.test(flag('--valor') || '')) { console.error('cierre necesita --valor AAAA-MM-DD'); process.exit(1); }
     if (campo === 'reportType' && !['official_balance_sheet', 'official_budget'].includes(flag('--valor'))) { console.error('reportType necesita --valor official_balance_sheet|official_budget'); process.exit(1); }
     if (campo === 'perimetro' && !['individual', 'consolidado'].includes(flag('--valor'))) { console.error('perimetro necesita --valor individual|consolidado (pdf = un documento, o la carpeta del club terminada en "/")'); process.exit(1); }

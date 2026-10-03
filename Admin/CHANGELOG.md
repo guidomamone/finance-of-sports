@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 417 — Ajuste manual `confirmado`: un número confirmado a mano contra el PDF (2026-10-02)
+
+- `ajustes.mjs`: `confirmado` (--linea N --valor "tal cual en el .md"), varios por documento. `verificar.mjs` (compuerta del registro): un número sin confirmar por la segunda lectura que tiene su ajuste no frena el paso a "listo".
+- Casos: Novorizontino 2016 (Gemini leyó otro dígito en 2.204, 1.794, 1.945, 1.422; la versión detallada en reais del mismo PDF confirma el .md, L157, L216, L247) y 2014 (Gemini no leyó 5 números chicos; la lectura 5 cierra al centavo).
+- Medido: ningún otro documento tiene este ajuste (sin cambios fuera de esos dos).
+
 ## Versión 416 — Etapa 6, chequeos cruzados: la columna del año en común tiene que existir (2026-10-02)
 
 - `verificar.mjs`: compuerta del escalón 0 de los dos chequeos cruzados (año vecino y año anterior cargado): si ninguna fila del estado trae la columna del año anterior, "no se puede comparar" (sin caso en la cola), en vez de comparar 0. El año anterior cargado también usa la lectura 5 cuando esa fue la que cerró.

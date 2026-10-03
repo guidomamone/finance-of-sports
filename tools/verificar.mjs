@@ -718,7 +718,9 @@ function avisarRegistro(md, nRubros, registro) {
   const vPath = resolve(ROOT, derivado(md, '.validacion.json'));
   if (!existsSync(vPath)) return false;
   let v; try { v = JSON.parse(readFileSync(vPath, 'utf8')); } catch { return false; }
-  if ((v.noConfirmados || []).length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
+  const confirmadosAMano = ajustesDe(md.replace(/\.md$/i, '.pdf')).filter((a) => a.campo === 'confirmado'); // (Versión 417) ajuste manual
+  const sinConfirmar = (v.noConfirmados || []).filter((n) => !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
+  if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
   const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
   appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',
     detail: `validar-bloques: solo los bloques que se cargan (${v.confirmados ?? '?'} números confirmados, modo ${v.modo || '?'}); el resto del .md no se validó`, jev, rubros: nRubros }) + '\n');
