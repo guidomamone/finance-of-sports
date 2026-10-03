@@ -102,4 +102,19 @@ Ni Wydad SAS ni Raja S.A. cotizan en la Bolsa de Casablanca — son sociedades d
 (el 40%/participación de las asociaciones no es de oferta pública). No hay ficha de emisor en la
 AMMC para ninguno de los 2 clubes.
 
-- Último chequeo: 2026-09-13.
+## Barrido 2026-10-03: la búsqueda gratuita de directinfo.ma SÍ funciona, y separa los dos clubes
+
+El paso que la sesión de 2026-09-13 no pudo hacer (el browser estaba compartido) se completó en una pestaña propia:
+`directinfo.ma` → búsqueda por nombre (caja "Rechercher par mot clé", sin login) → clic en el resultado abre
+la **ficha pública con la lista de documentos disponibles y su precio**, antes de pagar nada.
+
+- **Raja S.A. (RC 467977)**: tiene "Etats de synthèse 2025" depositados, 75 MAD. Candidato a gestión de Guido.
+- **Wydad (RC 398831, S.A. capital 10 MDH)**: sin ningún bilan depositado. Dead-end por este canal.
+- La búsqueda es por razón social EXACTA (por palabras sueltas como "SOCIETE ANONYME SPORTIVE" devuelve 0). El
+  endpoint interno (`/directinfo-backend/api/queryDsl/search/<nombre>`) devuelve 403 a `curl` y a `fetch()` desde la
+  consola: hay que usar la interfaz.
+- Cuando OMPIC publica los bilans de un año nuevo (el 2025 salió el 28/09/2026), cada ficha gana una línea
+  "Etats de synthèse <año>". Es el canal para cualquier otro club marroquí que se haga S.A.: buscar su razón social
+  y mirar si la ficha tiene esa sección. No se buscaron los otros clubes de la Botola (FAR, RS Berkane, FUS, MAS, etc.):
+  probablemente siguen como asociación (sin registro mercantil).
+- Último chequeo: 2026-10-03.

@@ -27,3 +27,9 @@ pedido del proyecto de "no asumir opacidad sin chequear":
   pedido directo a la oficina de prensa del club, o revisar actas de asamblea de socios (si existen
   y son accesibles a no-socios, no verificado).
 - Último chequeo: 2026-09-13.
+
+## Revisión 2026-10-03: dos intentos de cotizar en la EGX, ninguno con documentos
+
+- **Ghazl El-Mahalla FC**: intentó el primer IPO de un club de fútbol del mundo árabe en la EGX (US$ 8,6 M, 2022) y se abortó en agosto de 2022 por falta de demanda (órdenes por el 18% de las acciones). Según el análisis de POMEPS, la sociedad recién creada no tenía estados financieros previos al año del IPO, y no se encontró prospecto público. Dead-end por ese lado.
+- **Al Ahly**: se anunció en 2021 que listaría el 49% de una sociedad en la EGX; sin evidencia de que se haya concretado. Sigue sin cotizar.
+- Ningún cambio respecto de la conclusión de 2026-09-13 (asociaciones sin obligación de publicar). Último chequeo: 2026-10-03.

@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing África, 2026-10-03
+
+- Costa de Marfil (país nuevo): ASEC Mimosas, 15 ejercicios (2009, 2010, 2012-2024) en `Clubes/Costa de Marfil/ASEC Mimosas/`, de la propia `asec.ci` vía Wayback CDX de dominio completo. Primer club africano con documentos. Sin transcribir ni cargar (to-do 95).
+- Marruecos: búsqueda gratuita de directinfo.ma hecha. Raja S.A. tiene Etats de synthèse 2025 depositados (75 MAD, gestión de Guido, to-do 96); Wydad S.A. no tiene ningún bilan. Se corrige la nota de 2026-09-13 (la S.A. de Raja es de 2020, no de 2025).
+- Túnez (país nuevo): Espérance/Taraji Holding en trámite de cotizar, sin visa CMF (to-do 97). Argelia (país nuevo): solo notas de canal.
+- Sudáfrica: manual PAIA de Orlando Pirates leído (to-do 98). Egipto: notas de los IPO fallidos de Ghazl El-Mahalla y Al Ahly.
+- `tools/generate-fuentes-index.js`: 3 overrides nuevos (Wydad, Raja, Espérance).
+
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 
 - Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector

@@ -1,5 +1,11 @@
 # Wydad AC (Wydad Athletic Club)
 
+**Ángulos**: sitio oficial: no intentado a fondo · Wayback CDX: no intentado · búsqueda web: agotado (prensa, Scribd "Rapport financier WAC 2021-2022" sin verificar) · regulador/país: **agotado — OMPIC/directinfo.ma: la ficha de la S.A. NO tiene ningún bilan depositado** · barrido: 2 (Sonnet) — 2026-10-03
+
+- **VERIFICADO 2026-10-03 (búsqueda gratuita en directinfo.ma)**: la única entidad "WYDAD ATHLETIC CLUB" es RC 398831 (Casablanca), forma SOCIETE ANONYME, capital 10.000.000 MAD, inmatriculada 20/03/2018, actividad "SPORTIVE". Su ficha lista solo Statuts (1), PV (2: 2018 y 16/12/2025) y fichas legales: **NO hay sección "Etats de synthèse"**, mientras que la de Raja S.A. sí la tiene. O sea que pagar en OMPIC por el Wydad no rinde nada: la S.A. del Wydad no depositó ningún bilan (consistente con que el reporte financiero circula solo en la AG). La nota de 2026-09-13 sugería priorizar Wydad sobre Raja si se pagaba un solo documento: **queda invertida, priorizar Raja**.
+- Duda abierta (no resuelta): el capital de 10 MDH y la fecha 2018 parecen ser la S.A. original; la prensa habla de una SAS más grande. Si el Wydad tiene otra razón social, no figura por búsqueda de nombre.
+- Nota: el Scribd "RAPPORT FINANCIER WAC SAISON 2021-2022" es una réplica no oficial: lead sin verificar, no se bajó.
+
 - **Sin PDF, pero con una pista concreta sin cerrar (2026-09-13, ver `fuentes/Marruecos/
   _notas-generales.md` para el detalle completo).** El Wydad tiene su propia SAS (Société Anonyme
   Sportive) separada de la Asociación, y produce un "rapport financier" real y detallado cada

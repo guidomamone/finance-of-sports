@@ -1,5 +1,10 @@
 # Raja Casablanca (Raja Club Athletic)
 
+**Ángulos**: sitio oficial: parcial — no se encontró el PDF en el sitio del club (el reporte va a la AG) · Wayback CDX: no intentado · búsqueda web: agotado (prensa cita cifras, ningún PDF; solo un Scribd sin verificar) · regulador/país: **parcial — OMPIC/directinfo.ma CONFIRMADO: Etats de synthèse 2025 depositados, 75 MAD, requiere cuenta+pago (gestión de Guido)** · barrido: 2 (Sonnet) — 2026-10-03
+
+- **CONFIRMADO 2026-10-03 (búsqueda gratuita en directinfo.ma, hecha en el browser)**: "RAJA CLUB ATHLETIC SOCIETE ANONYME RAJA SA", RC 467977 (Casablanca), ICE 002565565000064, forma SOCIETE ANONYME, capital 250.000.000 MAD, **inmatriculada el 04/08/2020** (la nota de 2026-09-13 decía que la SAS se había constituido en agosto de 2025: eso fue la entrada de Ports4Impact al 60%, no la constitución; la sociedad existe desde 2020). La ficha pública lista **"Etats de synthèse (1): Etats de synthèse 2025 — 75 MAD"**, además de 7 estatutos y 11 PV. O sea: el ejercicio 2025 SÍ está depositado en el registro central (OMPIC publicó "Bilans 2025 disponibles" el 28/09/2026). **Gestión de Guido**: cuenta OMPIC + pago de 75 MAD (unos 8 USD) por el documento; un agente no puede crear la cuenta ni pagar (0.3). Solo hay 1 ejercicio depositado, así que no alcanza solo para 5 ejercicios; los años anteriores de Raja no figuran como "Etats de synthèse".
+- Nota: el PDF Scribd "RAPPORT FINANCIER Raja" (`scribd.com/document/766297934`) es una réplica no oficial: lead sin verificar, no se bajó ni se trackea.
+
 - **Sin PDF, pero con la pista más concreta de todo este barrido africano (2026-09-13, ver
   `fuentes/Marruecos/_notas-generales.md` para el detalle completo).** Raja Club Athletic S.A.
   (capital 250 MDH) es la SAS más nueva y mejor documentada: en agosto de 2025, Ports4Impact (brazo
