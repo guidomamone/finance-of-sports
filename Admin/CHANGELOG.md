@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 405 — Carga: una fila sin desglosar apaga solo los avisos de "categorías en 0" de su lado (2026-10-03)
+
+- `cargar.mjs`: ingresos sin desglosar → no se revisan televisión, estadio, cuotas sociales ni otros deportes; gastos sin desglosar → no se revisa sueldos del plantel. Hasta la 404 cualquier fila `lump_` apagaba todos los avisos del año.
+- Caso: Fortaleza 2017, "Actividades Deportivas" (ingresos, sin desglosar) apagaba el aviso de sueldos en 0; los sueldos (nota 21, "Sueldos 705.432") quedaron dentro de "Total Gastos de Administración" porque la duda de extraer que proponía cargar el detalle la silenció `sin-dudas`. Ahora pide el reintento.
+- Medido (propuesta de carga de los 40 años cargados): UC sin cambios; Fortaleza solo 2017 (reintento por sueldos); Goiás 2025 muestra sus ajustes cero-real; Goiás 2012, 2013 y 2023 avisan "otras secciones deportivas en 0" (esportes olímpicos no desglosados en el estado: ajustes cero-real con ese motivo, como 2014, 2015 y 2017).
+
 ## Versión 404 — Etapa 7: la caché de Claude es un escalón con la nota en la clave (2026-10-03)
 
 - `respuestas-cache.mjs` / `categorizar-claude.mjs`: escalón 5a "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + nota (antes: id del club + lado + etiqueta). Si no está, escalón 5b, preguntar por API. `--sembrar` rearma la caché de Claude con la clave nueva desde los `.categorias.json` (solo las respuestas pagadas, no las que salieron de la caché vieja). Jev sigue igual (no ve la nota).
