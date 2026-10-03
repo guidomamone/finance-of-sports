@@ -28,8 +28,8 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
 1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2019, 2020, 2021, 2024.** Falta, en orden:
-   2025 y 2023 con
-   `--ejecutar --reintentar` (~US$ 0,24; rearmado con el texto propio); 2018 y los viejos 2013-2017 (balancetes por cuenta y DRE resumida +
+   2023 (categorizar: `lote-10b`, ~US$ 0,03, y cargar); 2025 (`lote-10c --ejecutar --rehacer`, ~US$ 0,11, después de la compuerta del
+   rearmado); 2018 y los viejos 2013-2017 (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala); 2010 (solo "primer año"); 2022 sin .md (re-transcribir, US$ 0,13).
    Falsos positivos vistos, sin arreglar: "Consolidado" en el membrete del auditor (alta-club y perímetro de cargar; 2018-2020) y el
    inventario marcando un número de firma digital como cifra (2023).
@@ -37,7 +37,9 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
    --lista Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
-4. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
+4. Defectos vistos con Novorizontino, sin arreglar: el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no
+   existe" en años ya cargados); el caché de localizar/extraer no se invalida si el .md cambió (hace falta `--rehacer`).
+5. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
    que repite el documento siguiente; costos financieros mal rotulados); marcar "no desglosado" distinto de `cero-real` y que la página lo
    muestre (`fiscalYearMeta.sinDesglose`); cerrar casos obsoletos de la cola automáticamente; falso positivo del inventario con números que
    no son cifras contables (firmas digitales); chequeo de coherencia entre años (prototipado, no construido).
