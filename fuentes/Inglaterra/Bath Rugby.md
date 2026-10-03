@@ -1,5 +1,7 @@
 # Bath Rugby
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Rugby union
 - **Liga / competencia**: Premiership Rugby (Inglaterra, 1ª división)
 - **Entidad legal**: Bath Rugby Limited — Companies House n° **03170814**
@@ -35,3 +37,15 @@ OCR de la página 2: `Bath Rugby Limited (Registered number: 03170814) / Content
 Statements / for the Year ended 30 June 2025`. Cifra de turnover leída directo del estado, no de prensa.
 
 - Último chequeo: 2026-09-13.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Bath Rugby/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `bath-rugby-medium-company-accounts-2024-25.pdf`
+- `bath-rugby-full-accounts-2023-24.pdf`
+- `bath-rugby-full-accounts-2022-23.pdf`
+- `bath-rugby-full-accounts-2021-22.pdf`
+- `bath-rugby-full-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

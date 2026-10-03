@@ -1,5 +1,7 @@
 # Leeds United
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división) — ascendido 2024/25
 - **Entidad legal**: Leeds United Football Club Limited — Companies House n° **06233875**. Ojo: NO es
@@ -32,3 +34,15 @@ Statements / Year ended 30 June 2025`. Entidad y período confirmados, no asumid
   (clubId `leeds-gb`). Tie-out exacto. Championship los 2 ejercicios (verificado con WebSearch y
   contra el propio documento) — el ascenso a Premier League es resultado del ejercicio 2025, para
   la temporada 2025-26, no cargada.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Leeds United/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `leeds-group-accounts-2024-25.pdf`
+- `leeds-group-accounts-2023-24.pdf`
+- `leeds-group-accounts-2022-23.pdf`
+- `leeds-group-accounts-2021-22.pdf`
+- `leeds-group-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

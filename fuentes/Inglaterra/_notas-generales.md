@@ -124,3 +124,35 @@ formulario.
   antes de darlo por dead-end.
 - **Rugby league (Super League)** y **netball/hockey**: mismo canal, sin chequear todavía.
 - **Escocia**: es el mismo Companies House con números `SC` (ver `fuentes/Escocia/`).
+
+## 6. Barrido de profundidad y EFL (sesión 2026-10-03)
+
+**Objetivo de la sesión**: que cada club tenga al menos 5 ejercicios en disco, y sumar clubes de la EFL.
+Herramientas nuevas, reusables: `node tools/companies-house-fetch.mjs <número|nombre> --list` (lista
+ejercicios; con un nombre en vez de número busca la sociedad) y `--club "<Carpeta>" --slug <x> --want 5`
+(baja los que falten); `node tools/fca-mutuals-fetch.mjs <societyId> ...` para los condados de cricket.
+Para fútbol, rugby y F1 sale la serie completa en 1-2 minutos por club.
+
+**Resultado**: los 33 clubes que ya existían llegaron a 5+ ejercicios; Manchester United quedó con 6
+20-F de la SEC (2020/21 a 2025/26, incluido el presentado el 24/9/2026); se agregaron 43 clubes de
+Championship, League One y League Two con 5 ejercicios cada uno.
+
+**Reglas que salieron (para el próximo barrido):**
+
+- **Cuentas "Total exemption full accounts" / "small" / "micro" = régimen de sociedad chica, sin
+  cuenta de resultados.** El script las saltea salvo `--include-small`. Oxford United 2021/22-2022/23
+  están así (hueco en la serie). No contar como ejercicio útil sin abrirlo y ver si trae TURNOVER.
+- **Hay sociedades con el nombre del club que son cascarones.** Doncaster Rovers FC Ltd (00170192): el
+  balance 2025/26 muestra solo pasivos (£264 K), sin actividad; Bolton Wanderers Football Club
+  Limited (12184224) y Portsmouth Football Club Limited (11538360) presentan "dormant". La operativa
+  está en otra sociedad (holding de los dueños): hay que encontrarla por directores/PSC, no por nombre.
+- **Elegir holding vs. operativa**: si la holding presenta `Group of companies' accounts` se baja esa
+  (Cardiff 04044254, Blackpool 12022161); si no, la operativa. El script ya prioriza group > full.
+- **Fechas absurdas** (1974 -> "2074"): Companies House parsea mal años de 2 dígitos de presentaciones
+  de los 70. El script descarta fechas futuras.
+- **Pendientes con paso concreto**: Bolton, Doncaster, Portsmouth, Port Vale (08876768 presenta Total
+  exemption; su holding 11954695 no tiene filings) — buscar la sociedad operativa/holding;
+  Derby County (la entidad vieja `DC Realisations 1`, 00049139, está en administración; la nueva no
+  apareció por búsqueda de nombre); Stockport County (no apareció la sociedad por nombre).
+- **Falta aún**: League Two completa, Sheffield Wednesday plc (00062478), 9 condados de cricket
+  (ver sección 5), el resto de Premiership Rugby y Super League.

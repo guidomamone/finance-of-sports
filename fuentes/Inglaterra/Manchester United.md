@@ -1,5 +1,7 @@
 # Manchester United
 
+**Ángulos**: regulador/país (SEC EDGAR 20-F): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: **Manchester United plc** (constituida en las Islas Caimán, cotiza en la Bolsa
@@ -58,3 +60,18 @@ la salida a bolsa de 2012. Más los 14 ejercicios de la sociedad inglesa en Comp
 con el formato `Nombre contacto@dominio` — con un User-Agent de navegador común no alcanza.
 
 - Último chequeo: 2026-09-13.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Manchester United/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `manchester-united-plc-20f-2025-26.htm`
+- `manchester-united-plc-20f-2024-25.htm`
+- `manchester-united-plc-20f-2023-24.htm`
+- `manchester-united-plc-20f-2022-23.htm`
+- `manchester-united-plc-20f-2021-22.htm`
+- `manchester-united-plc-20f-2020-21.htm`
+
+El canal es el 20-F de la SEC (grupo consolidado, plc). La sociedad operativa `Manchester United Football Club Limited` (00095489) presenta aparte en Companies House: NO se bajó, es subsidiaria.
+<!-- /ing-sourcing -->

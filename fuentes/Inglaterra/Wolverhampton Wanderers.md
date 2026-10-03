@@ -1,5 +1,7 @@
 # Wolverhampton Wanderers
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: Wolverhampton Wanderers Football Club (1986) Limited — Companies House n° **01989823**
@@ -34,3 +36,15 @@ Company number 01989823 confirmado en la misma página.
   DE 13 MESES, 1/6/2024-30/6/2025 — la compañía cambió su fecha de cierre de 31/5 a 30/6, ver
   comentario de cabecera de `data/wolves-gb-data.js` y duda anotada en `Admin/dudas-por-club.md`),
   ambos con tie-out exacto. Premier League los 2 ejercicios.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Wolverhampton Wanderers/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `wolves-full-accounts-2024-25.pdf`
+- `wolves-full-accounts-2023-24.pdf`
+- `wolves-full-accounts-2022-23.pdf`
+- `wolves-full-accounts-2021-22.pdf`
+- `wolves-full-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

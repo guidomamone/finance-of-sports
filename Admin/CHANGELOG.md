@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Inglaterra, 2026-10-03 (sin número de versión: asignarlo al mergear a main)
+
+- Todos los clubes ingleses con carpeta tienen ≥5 ejercicios en disco (PDF/HTM en `Clubes/Inglaterra/`, sin
+  trackear): 19 de Premier, rugby, F1 y cricket que ya existían, + Manchester United con 6 20-F de la SEC
+  (2020/21-2025/26) + ~57 clubes nuevos (Championship, League One/Two, 11 condados de cricket, Saracens).
+  Sin cargar al sitio: falta transcribir (OCR) y el pipeline de carga.
+- Tools nuevas: `tools/companies-house-fetch.mjs` (lista/busca/baja, `--include-small`) y
+  `tools/fca-mutuals-fetch.mjs`. Aprendizajes en `fuentes/Inglaterra/_notas-generales.md` sección 6.
+- Una nota `fuentes/Inglaterra/<Club>.md` por club con bloque `ing-sourcing` y línea `**Ángulos**`.
+
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 
 - Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector
