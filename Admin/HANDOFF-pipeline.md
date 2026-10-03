@@ -28,8 +28,7 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
 1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2010 y 2018-2025.** Falta, en orden:
-   los viejos 2013-2017: lectura 5 hecha (2016-2017 verifican OK); faltan ④ escalón 2 (resultado impreso pegado al último bloque:
-   2013, 2015) y ⑤ (falso rojo de año vecino sin columna anterior: 2014, 2015) (balancetes por cuenta y DRE resumida +
+   los viejos 2013-2017: lectura 5 hecha (2016-2017 verifican OK); resultado fuera del bloque hecho (Versión 415: 2013, 2015 cierran); falta ⑤ (falso rojo de año vecino sin columna anterior: 2014, 2015) (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala). 2011-2012 sin documento.
    Falsos positivos vistos: "Consolidado" en el membrete del auditor (resuelto con el ajuste `perimetro` del club, Versión 412; alta-club
    todavía pregunta en un club nuevo) y el

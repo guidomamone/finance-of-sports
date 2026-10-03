@@ -364,7 +364,25 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // F.resultado apuntaba a L719 "Utilidad contable antes de impuesto" 1.609.817 y se le restaba el impuesto; sin restarlo cierra exacto.
   const filaDeRes = F.resultado ? estado.find((f) => f.linea === F.resultado.linea && f.tipo === 'resultado') : null;
   const resEsAntes = !!(filaDeRes && ANTES_RE.test(filaDeRes.etiqueta));
-  const resFinal = F.resultado && !resEsAntes ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
+  // RESULTADO IMPRESO, ESCALÓN 2 (Versión 415, aprobado por Guido el 2026-10-02): si extraer no encontró el resultado en los bloques (ni el
+  // de antes de impuestos), una línea PREJUÍZO / SUPERÁVIT / DÉFICIT / LUCRO con un número, pegada al último bloque del estado (hasta 4
+  // líneas después), PROPONE el resultado. COMPUERTA: alguna lectura tiene que cerrar con él EXACTO (a media unidad por fila, como la
+  // lectura 5), no con la tolerancia de siempre. Casos: Novorizontino 2015 ("PREJUIZO: 5.598.142,50", L158; el bloque termina en L156) y
+  // 2013 ("PREJUÍZO 728.230,75", L225; el bloque termina en L223).
+  let resCerca = null;
+  if (!F.resultado && !estado.some((f) => f.tipo === 'resultado' && ANTES_RE.test(f.etiqueta) && isFinite(f.M))) { // (sin resultado antes de impuestos, como filaAntes más abajo)
+    const finEstado = Math.max(...(F.ubicacion?.estado || []).map((b) => U.bloques?.[b]?.lineas?.[1] ?? -1), -1);
+    if (finEstado > 0) {
+      const L = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
+      for (let i = finEstado; i < Math.min(finEstado + 4, L.length); i++) { // L[i] es la línea i+1 del .md
+        const m = L[i].match(/(PREJU[IÍ]ZO|D[EÉ]FICIT|SUPER[AÁ]VIT|LUCRO)[^0-9(]{0,40}(\(?-?\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?\)?)/i);
+        if (!m) continue;
+        const v = Math.abs(parseNumber(m[2]) ?? NaN) * mult((F.ubicacion?.estado || []).slice(-1)[0]);
+        if (isFinite(v) && v) { resCerca = { M: /PREJU|D[EÉ]FICIT/i.test(m[1]) ? -v : v, linea: i + 1, texto: L[i].trim().slice(0, 80) }; break; }
+      }
+    }
+  }
+  const resFinal = F.resultado && !resEsAntes ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : resCerca ? resCerca.M : null;
   const filaAntes = estado.find((f) => f.tipo === 'resultado' && ANTES_RE.test(f.etiqueta) && isFinite(f.M));
   const gastosNeg = (() => { const g = estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true; })();
   const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M);
@@ -442,7 +460,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         if (!conImp && si === -1) continue;
         const pat = suma(ing) - suma(gas) + sf * conSigno(finL) + (conImp ? si * conSigno(imp) : 0);
         const tol5 = Math.max(1e-6, 0.5 * [...ing, ...gas, ...finL].reduce((a, f) => a + (f.u || 0), 0)); // lectura 5: exacto, a media unidad por fila
-        if (nivel >= 5 ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; break; }
+        if (nivel >= 5 || resCerca ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; break; }
       }
       if (!okRes) okRes = false;
       ch.push({ nombre: nombreRes, ok: okRes, detalle: okRes ? `cierra (${lect})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))}${conImp ? ` ± impuesto ${r6(conSigno(imp))}` : ''} no da el impreso ${r6(objetivo)}` });
@@ -456,6 +474,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
+  if (resCerca) notas.push(`resultado impreso fuera de los bloques (escalón 2): "${resCerca.texto}" (L${resCerca.linea}); ${E.okRes ? 'cierra exacto' : 'no cierra exacto: no se usa para confirmar'}`);
   if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...fin5); // lectura 5: el financiero también con el signo C/D
   let okRes = E.okRes; let lectura = E.lect; const res = E.objetivo ?? resFinal;
   if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }

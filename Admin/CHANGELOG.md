@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 415 — Etapa 6, resultado impreso, escalón 2: la línea pegada al último bloque (2026-10-02)
+
+- `verificar.mjs`: si extraer no encontró el resultado en los bloques (ni el de antes de impuestos), una línea PREJUÍZO / DÉFICIT / SUPERÁVIT / LUCRO con un número, hasta 4 líneas después del último bloque del estado, propone el resultado. Compuerta: alguna lectura cierra con él exacto (a media unidad por fila).
+- Casos: Novorizontino 2015 ("PREJUIZO: 5.598.142,50", L158) y 2013 ("PREJUÍZO 728.230,75", L225): los dos cierran exacto con la lectura 5.
+- Medido: lotes 07, 08 y 09 idénticos.
+
 ## Versión 414 — Etapa 6, lectura 5: solo las hojas con su signo (C/D de los balancetes) (2026-10-02)
 
 - `verificar.mjs`: lectura 5, después de la 4. Usa solo los renglones del estado (ningún subtotal ni total), con su signo: la marca C/D de un balancete si la trae (D en ingresos resta, C en gastos resta, financiero C − D) y si no, el impreso. No usa los totales como chequeo; la única compuerta es el resultado impreso, exacto a media unidad por fila. El chequeo de año vecino usa la misma lectura.
