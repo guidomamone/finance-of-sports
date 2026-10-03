@@ -90,7 +90,12 @@ export function filasDelMd(md) {
       // (Versión 424) BALANCE DE DOS LADOS EN UNA FILA: "| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |". Cada etiqueta
       // con sus cifras es una fila (antes las del pasivo quedaban pegadas a la caja y la deuda no existía como fila). Caso: Novorizontino
       // 2018-2025 (la IA terminaba eligiendo la fila de "Caixa" como deuda porque esa línea dice "Empréstimos").
-      const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c);
+      // (Versión 430, B2, aprobado por Guido el 2026-10-03) una celda con 1-2 letras y un número ("Γ.9", "C.7", "N4") es una REFERENCIA A
+      // NOTA, nunca un importe: se descarta antes de tomar las cifras. Caso: AEL Larissa 2025 "| Δάνεια | Γ.9 | 7.031,22 | 7.500,00 |"
+      // (.md L217) se leía como deuda 0,9 y corría la columna del año anterior un lugar (caja 2024 rechazada). La marca C/D de un balancete
+      // va DESPUÉS del importe ("1.234 D"), así que no entra acá.
+      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c);
+      const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c) && !esRefNota(c);
       for (let j = iEt; j < celdas.length; j++) { if (!esTexto(celdas[j])) continue; let k = j + 1; const cs = []; while (k < celdas.length && !esTexto(celdas[k])) { if (esCifra(celdas[k])) cs.push(celdas[k]); k++; } segmentos.push([celdas[j], cs]); j = k - 1; }
       [etiqueta, crudos] = segmentos.shift();
     } else {

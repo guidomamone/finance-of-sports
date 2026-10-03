@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 430 — B2, lectura de filas de caja y deuda: una celda "Γ.9" es referencia a nota, no importe (2026-10-03)
+
+- `tools/caja-deuda.mjs` (`esRefNota`): una celda con 1-2 letras y un número ("Γ.9", "C.7") se descarta antes de tomar las cifras. Diseño aprobado por Guido.
+- Caso: AEL Larissa 2025 "| Δάνεια | Γ.9 | 7.031,22 | 7.500,00 |" se leía como deuda 0,9 y pasaba la compuerta; además corría la columna del año anterior y rechazaba la caja 2024. Ahora: deuda 2025 7.031,22, caja 2025 252.355,66, caja 2024 212.242,36.
+- Medido (`--medir --club`): UC, Fortaleza y Novorizontino idénticos (Goiás no tiene caja ni deuda cargadas).
+
 ## Versión 429 — AEL Larissa: alta del club y ejercicios 2016-2018, 2020, 2022, 2024 y 2025 (2026-10-03)
 
 - Alta `aellarissa-gr` (Grecia, EUR, ejercicio desde el 07-01; nombre legal `Athlitiki Enosi Larissas AEL P.A.E.`, transliterado como Panathinaikos). Primer club de la Super League 2 (`data/rankings/gr-superleague2.js`).
