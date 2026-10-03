@@ -253,6 +253,15 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:17.129728, disclosureLevel:'aggregated' }, // pág. 47, precedente
     { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:7.200056, disclosureLevel:'aggregated' }, // pág. 47, precedente
   ],
+  // 2011: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Juventus/Juventus-annual-financial-report-2010-11.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2011: [
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:11.552155, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:88.711288, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:43.270459, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:18.239442, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:10.293106, disclosureLevel:'aggregated' }, // pág. 70, precedente
+  ],
 };
 const juventusitExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-03)
@@ -507,6 +516,17 @@ const juventusitExpenseLinesByYear = {
     { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-32.258847, disclosureLevel:'aggregated' }, // pág. 47, precedente
     { rawLabel:'Other amortisation, write-downs and provisions', normalizedCategory:'other_amortisation', amountNative:-5.986141, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
     { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_expenses', amountNative:-1.291444, disclosureLevel:'aggregated' }, // pág. 47, precedente
+  ],
+  2011: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.398277, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-33.569182, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-126.920625, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-12.733196, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-16.171234, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Other costs', normalizedCategory:'other_expenses', amountNative:-4.50583, disclosureLevel:'aggregated' }, // pág. 70, Jev 0.99
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-46.744888, disclosureLevel:'aggregated' }, // pág. 70, precedente
+    { rawLabel:'Other amortisation, provisions and release of provisions', normalizedCategory:'other_amortisation', amountNative:-13.813322, disclosureLevel:'aggregated' }, // pág. 70, Jev 0.99
+    { rawLabel:'Other non recurring revenues and costs', normalizedCategory:'other_expenses', amountNative:-7.364688, disclosureLevel:'aggregated' }, // pág. 70, precedente
   ],
 };
 const juventusitFiscalYearMeta = {
@@ -888,6 +908,22 @@ const juventusitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:203.731662, officialTotalExpenses:214.019768, officialPAT:-20.787469,
   },
+  2011: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2011-06-30',
+    sourceId:'juventus-it-annual-financial-report-2010-11',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.611786, tax:-1.647441,
+    extraRows: [
+      {label:'Financial income', value:1.266667},
+      {label:'Financial expenses', value:-2.878453},
+      {label:'Current taxes', value:-2.766491},
+      {label:'Deferred taxes', value:1.11905},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:172.06645, officialTotalExpenses:264.221242, officialPAT:-95.414019,
+  },
 };
 const juventusitPresupuestoOverlayByYear = {};
 
@@ -1019,6 +1055,12 @@ Object.assign(sources, {
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2007-08 (ejercicio 2008)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'juventus-it-annual-financial-report-2010-11': {
+    id:'juventus-it-annual-financial-report-2010-11', clubId:'juventus-it',
+    title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2010-11 (ejercicio 2011)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
