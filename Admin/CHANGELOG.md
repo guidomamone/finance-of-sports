@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 425 — Ajuste manual `deuda-incluye`, por club: términos de deuda propios del club para el diccionario (2026-10-02)
+
+- `ajustes.mjs`: `deuda-incluye` (términos separados por ';'), para un documento o todo el club (`ajusteClubODoc`, mismo mecanismo que `perimetro`). `caja-deuda.mjs`: el escalón 1 (diccionario) suma esos términos para ese club; la compuerta sigue decidiendo.
+- Caso: Novorizontino, la deuda es el mútuo de su controlante I-9 Sports ("Débitos com partes relacionadas" / "Partes relacionadas"; 2015 ya cargado así como "Empréstimos e mútuos"). Pasan la compuerta 2019 (32,3 M), 2023 (94,0 M), 2024 (111,8 M), 2025 (145,2 M).
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
 ## Versión 424 — Caja y deuda: balance de dos lados en una fila (2026-10-02)
 
 - `caja-deuda.mjs` (`filasDelMd`): en una fila de tabla con dos etiquetas ("| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |"), cada etiqueta con sus cifras es una fila. Antes las cifras del pasivo quedaban pegadas a la caja y la deuda no existía como fila.

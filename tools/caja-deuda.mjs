@@ -52,7 +52,7 @@ import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { readdirSync } from 'node:fs';
 import { derivado } from './rutas.mjs';
-import { ajusteDe } from './ajustes.mjs';
+import { ajusteDe, ajusteClubODoc } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -198,8 +198,10 @@ function totalDeNotaDeCaja(filas) {
   return null;
 }
 // ESCALÓN 1: las filas del balance con nombre de caja / deuda financiera (una por familia), o "ninguna fila" de deuda (= 0).
-function propuestaVocabulario(filas, cual, club) {
-  const re = cual === 'cash' ? CAJA_RE : DEUDA_FINANCIERA_RE;
+function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
+  // (Versión 425) ESCALÓN 0 del diccionario: términos de deuda propios del club (ajuste manual `deuda-incluye`), al principio de la etiqueta.
+  const extra = cual === 'deuda' ? extraDeuda.map((t) => normalizar(t)).filter(Boolean) : [];
+  const re = { test: (n) => (cual === 'cash' ? CAJA_RE : DEUDA_FINANCIERA_RE).test(n) || extra.some((t) => n.startsWith(t)) };
   // (Versión 423) JERARQUÍA Y LADO, para un balancete por cuenta: (a) una fila hija de otra que también coincide sale (la de arriba ya la
   // suma): hija = su código de cuenta empieza con el de la otra, o, sin códigos, viene pegada abajo (hasta 2 líneas) con el mismo importe;
   // (b) en deuda, una fila con marca D (deudora: activo) no es deuda. Caso: Novorizontino 2016, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" y
@@ -275,9 +277,9 @@ export function compuerta(prop, { factor, anterior = null, siguiente = null, fac
 }
 
 // La escalera para un dato: cada escalón propone, la compuerta decide, y si no pasa se baja. `ia`: la respuesta de la IA (o null).
-export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null } = {}) {
+export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, extraDeuda = [] } = {}) {
   const club = familiasDelClub(precedentes, cual);
-  const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club), ia ? propuestaIA(filas, ia, cual) : null];
+  const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club, extraDeuda), ia ? propuestaIA(filas, ia, cual) : null];
   const intentos = [];
   for (let e = 0; e < propuestas.length; e++) {
     const p = propuestas[e];
@@ -363,7 +365,8 @@ function contexto({ d, anios, a, cual, filasDe, conocidos }) {
     .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y]) } : null; }).filter(Boolean);
   const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
   return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
-    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio]) : null };
+    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio]) : null,
+    extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean) };
 }
 const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
 const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md)) c.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return c.get(md); }; };
