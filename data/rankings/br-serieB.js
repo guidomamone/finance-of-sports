@@ -47,6 +47,7 @@ window.RANKINGS["br-serieB"] = {
   },
   2024: {
     leagueSize: null,
+    sinDato: ["novorizontino-br"],
     clubs: [
       { id:"santos-br", revenue:61.216, reportType:"official_balance_sheet",
         sourceId:"santos-br-demonstracoes-2024",

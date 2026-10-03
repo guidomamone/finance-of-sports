@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 166 clubes, 342 ejercicios, 15 países.
+TOTAL: 167 clubes, 343 ejercicios, 15 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -66,7 +66,7 @@ BE (14)
   Westerlo              1 ejercicio (2024/2025), balance, EUR
   Zulte Waregem         1 ejercicio (2024/2025), balance, EUR
 
-BRASIL (33)
+BRASIL (34)
   Amazonas              1 ejercicio (2024), balance, BRL
   América Mineiro       3 ejercicios (2023 a 2025), balance, BRL
   Athletico Paranaense  2 ejercicios (2024 a 2025), balance, BRL
@@ -90,6 +90,7 @@ BRASIL (33)
   Ituano                1 ejercicio (2024), balance, BRL
   Juventude             1 ejercicio (2020), balance, BRL
   Mirassol              1 ejercicio (2024), balance, BRL, sin deuda/caja
+  Novorizontino         1 ejercicio (2019), balance, BRL, sin deuda/caja
   Operário Ferroviário  2 ejercicios (2024 a 2025), balance, BRL
   Palmeiras             2 ejercicios (2024 a 2025), balance, BRL
   Ponte Preta           3 ejercicios (2022 a 2024), balance, BRL

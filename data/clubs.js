@@ -390,6 +390,9 @@ const clubs = {
   // Goias: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf. brandColor de Guido
   // (2026-10-02: verde #006633; footylogos no tiene a Goiás).
   'goias-br': { id:'goias-br', name:'Goiás Esporte Clube', displayName:'Goiás', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006633' },
+  // Novorizontino: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+  'novorizontino-br': { id:'novorizontino-br', name:'Grêmio Novorizontino Sociedade Anônima do Futebol', displayName:'Novorizontino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' }, // name: demonstracoes-financeiras-2023.md L70 (SAF desde 06/12/2023; antes associação 'Grêmio Novorizontino'). Color: aurinegro, amarillo primero (pt.wikipedia, himno 'Amarelo e negro'); hex como Amazonas,
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

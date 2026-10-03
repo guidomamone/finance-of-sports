@@ -43,3 +43,5 @@
   https://futebolpaulista.com.br/Repositorio/Institucional/<año>/<archivo>.pdf;
   https://www.gremionovorizontino.com.br/ (sin sección financiera).
 - Último chequeo: 2026-09-22.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2019 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2019`).
