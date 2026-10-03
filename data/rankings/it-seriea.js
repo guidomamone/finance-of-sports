@@ -3,7 +3,7 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie A (IT) — 10 ejercicio(s) con ranking:
+// Serie A (IT) — 11 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -14,6 +14,7 @@
 //   2014: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2013: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2009: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -99,6 +100,14 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:269.157, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2011-12",
         mix:[["Comercial / Sponsors",67.297],["Estadio",40.067],["Televisión",114.043],["Venta de Jugadores",23.208],["Otros ingresos",24.543]] },
+    ],
+  },
+  2009: {
+    leagueSize: null,
+    clubs: [
+      { id:"juventus-it", revenue:339.83, reportType:"official_balance_sheet",
+        sourceId:"juventus-it-annual-financial-report-2008-09",
+        mix:[["Comercial / Sponsors",65.205],["Estadio",26.057],["Televisión",212.505],["Venta de Jugadores",24.411],["Otros ingresos",11.651]] },
     ],
   },
 };
