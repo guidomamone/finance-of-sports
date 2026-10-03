@@ -43,6 +43,16 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Recuperação de despesas', normalizedCategory:'other_income', amountNative:0.077, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
     { rawLabel:'Reversão de provisão de contingências', normalizedCategory:'other_income', amountNative:1.577, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
   ],
+  // 2020: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2020: [
+    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:6.374, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Negociação e empréstimo de atletas (nota nº6)', normalizedCategory:'player_sales', amountNative:3.128, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.314, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:0.349, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
+    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.095, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.92
+    { rawLabel:'Outras receitas operacionais', normalizedCategory:'other_income', amountNative:0.002, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
   2019: [ // tools/cargar.mjs (2026-10-03)
@@ -60,6 +70,20 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Depreciação', normalizedCategory:'depreciation', amountNative:-0.074, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.349, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.98
   ],
+  2020: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-11.607, disclosureLevel:'aggregated' }, // pág. 26, Claude 0.8
+    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.256, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.568, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.261, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-1.536, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
+    { rawLabel:'Provisão para Perdas (nota nº5)', normalizedCategory:'exceptional_items', amountNative:-1.5, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.901, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Manutenções', normalizedCategory:'admin_general_expense', amountNative:-0.607, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.95
+    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.17, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.1, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.94
+    { rawLabel:'Depreciação / Amortização', normalizedCategory:'depreciation', amountNative:-0.096, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.3, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
   2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -75,6 +99,20 @@ const novorizontinobrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:12.23, officialTotalExpenses:15.787, officialPAT:-3.783,
+  },
+  2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2020-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.484, tax:0,
+    extraRows: [
+      {label:'Despesas financeiras', value:-0.484},
+      {label:'Receitas financeiras', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
   },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
@@ -99,6 +137,12 @@ Object.assign(sources, {
     title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'novorizontino-br-demonstracoes-financeiras-2020': {
+    id:'novorizontino-br-demonstracoes-financeiras-2020', clubId:'novorizontino-br',
+    title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2020 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
