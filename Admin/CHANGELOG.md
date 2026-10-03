@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 408 — Cola: --corregir-categoria graba la corrección aunque la fila ya tenga un caso abierto (2026-10-02)
+
+- `cola.mjs --corregir-categoria`: la respuesta es `corregir` con la categoría, no `aceptar`. Si la fila ya tenía un caso abierto, `aceptar` aceptaba la propuesta vieja de ese caso.
+- Caso: Novorizontino 2021, "Repasse da federação" seguía como competition_bonus después de fijarlo como broadcasting. Medido sobre ese caso: queda broadcasting.
+
 ## Versión 407 — Lote: un .md registrado pero ausente en disco ya no tira abajo el lote (2026-10-02)
 
 - `lote.mjs`: si el registro tiene la ruta del `.md` pero el archivo no está (`tieneMd: false`), el documento queda "sin transcripción (etapa 2)" y el lote sigue. Antes pasaba a `localizar.mjs` y se caía con ENOENT.
