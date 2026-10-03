@@ -28,8 +28,8 @@ y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
 1. **En curso: Novorizontino** (Brasil, `novorizontino-br`, alta hecha), `Admin/lote-10.txt`. **Cargados: 2010 y 2018-2025.** Falta, en orden:
-   los viejos 2013-2017: lectura 5 hecha (2016-2017 verifican OK); resultado fuera del bloque (Versión 415) y columna del año en común (Versión 416) hechos: los 5 verifican OK;
-   falta categorizarlos y cargarlos (`lote-10e`) (balancetes por cuenta y DRE resumida +
+   los viejos 2013-2017: lectura 5 hecha (2016-2017 verifican OK); resultado fuera del bloque (Versión 415) y columna del año en común (Versión 416) hechos: los 5 verifican OK y están "listos";
+   falta categorizarlos (`lote-10e --ejecutar`, ~US$ 0,15) y cargarlos (balancetes por cuenta y DRE resumida +
    detallada: años vecinos que no coinciden, escala). 2011-2012 sin documento.
    Falsos positivos vistos: "Consolidado" en el membrete del auditor (resuelto con el ajuste `perimetro` del club, Versión 412; alta-club
    todavía pregunta en un club nuevo) y el
@@ -395,7 +395,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Ajustes manuales (Versión 366)
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
-  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana
