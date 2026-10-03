@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 432 — Juventus: alta del club y ejercicio 2012 (2026-10-03)
+
+- Alta `juventus-it` (Italia, EUR, ejercicio desde el 07-01, "Juventus Football Club S.p.A."). Perfil (sin socios ni otros deportes) y ligas 2003-2025 en la caché (Serie B en 2007).
+- Ejercicio 2011-12 por el proceso nuevo (`lote-12a.txt`, el único año en "listo" en el inventario): cierra con la lectura 5 contra la pérdida impresa (−48.654.550). Categorías: "Other personnel" y compras a administración; provisiones/reversiones a otras amortizaciones; "Expenses from players' registration rights" a otros gastos (decisiones de Guido).
+- Sin abrir: las notas de "Other revenues" y "Other expenses" no suman su renglón (no se reintentó).
+
 ## Versión 431 — Cambio C: en la lectura 2, el total impreso puede ser el total de una nota abierta por el escalón 1 (2026-10-03)
 
 - `tools/verificar.mjs` (`ajuste` de totales, desde la lectura 2): si el total impreso de un lado es el de una nota que abrió el escalón 1 de las notas (grupo de renglones), sus filas lo cierran y el resto del lado queda afuera, como ya pasaba con un renglón (Forest). La compuerta sigue siendo el resultado impreso. Diseño aprobado por Guido.
