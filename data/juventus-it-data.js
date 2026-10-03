@@ -112,6 +112,16 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:102.401466, disclosureLevel:'aggregated' }, // pág. 45, precedente
     { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:30.995269, disclosureLevel:'aggregated' }, // pág. 45, precedente
   ],
+  // 2020: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Juventus/Juventus-annual-financial-report-2019-20.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2020: [
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:49.200379, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:166.378556, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:129.560768, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:31.725193, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:172.020621, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:24.538574, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
+  ],
 };
 const juventusitExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-03)
@@ -208,6 +218,19 @@ const juventusitExpenseLinesByYear = {
     { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-12.525527, disclosureLevel:'aggregated' }, // pág. 45, precedente
     { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-2.363811, disclosureLevel:'aggregated' }, // pág. 45, Claude 0.93
     { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-0.886073, disclosureLevel:'aggregated' }, // pág. 45, Jev 0.99
+  ],
+  2020: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-3.20779, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-12.142221, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-71.126279, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-259.273661, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-25.065396, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-31.123416, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-12.184348, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-193.47591, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-17.417474, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-15.468313, disclosureLevel:'aggregated' }, // pág. 49, Claude 0.93
+    { rawLabel:'Group\'s share of results of associates and joint ventures', normalizedCategory:'other_expenses', amountNative:-1.107177, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
   ],
 };
 const juventusitFiscalYearMeta = {
@@ -339,6 +362,22 @@ const juventusitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:504.66989, officialTotalExpenses:506.990021, officialPAT:-19.228819,
   },
+  2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'juventus-it-annual-financial-report-2019-20',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-13.489202, tax:-8.025012,
+    extraRows: [
+      {label:'Financial income', value:4.217342},
+      {label:'Financial expenses', value:-17.706544},
+      {label:'Current taxes', value:-7.971802},
+      {label:'Deferred and prepaid taxes', value:-0.05321},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:573.424091, officialTotalExpenses:641.591985, officialPAT:-89.682106,
+  },
 };
 const juventusitPresupuestoOverlayByYear = {};
 
@@ -404,6 +443,12 @@ Object.assign(sources, {
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2017-18 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'juventus-it-annual-financial-report-2019-20': {
+    id:'juventus-it-annual-financial-report-2019-20', clubId:'juventus-it',
+    title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2019-20 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
