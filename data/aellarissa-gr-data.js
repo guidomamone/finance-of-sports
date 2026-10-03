@@ -342,7 +342,8 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Πωλήσεις υπηρεσιών', lado:'revenue', importe:2.319316, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+    grossDebt:null, cash:0.307579,
     officialTotalRevenue:3.086962, officialTotalExpenses:3.556419, officialPAT:-0.483748,
   },
 };
