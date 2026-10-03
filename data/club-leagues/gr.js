@@ -26,5 +26,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // automático. Mismo tipo de limitación que ya quedó anotada para Argentina (to-do 98/95).
   'panathinaikos-gr': { 2025: 'gr-superleague' },
   // AEL Larissa (alta-club.mjs, 2026-10-03): verificado contra roster cacheado de "2024–25 Super League Greece 2" (tools/club-league-reference/gr.json), coincidencia única por palabras "AEL" = "AEL Larissa".
-  'aellarissa-gr': { 2025: 'gr-superleague2', 2024: 'gr-superleague2' }, // 2024: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2023–24 Super League Greece 2" (tools/club-league-reference/gr.json), 
+  'aellarissa-gr': { 2025: 'gr-superleague2', 2024: 'gr-superleague2', 2022: 'gr-superleague2' }, // 2024: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2023–24 Super League Greece 2" (tools/club-league-reference/gr.json),  // 2022: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2021–22 Super League Greece 2" (tools/club-league-reference/gr.json), 
 });
