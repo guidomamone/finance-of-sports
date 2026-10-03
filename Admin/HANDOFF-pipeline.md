@@ -23,11 +23,11 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 ## Dónde estamos
 
 **Cuatro clubes enteros en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
-y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin documento). Versiones de esta tanda: 407-422.
+y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin documento). Versiones de esta tanda: 407-426.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **Novorizontino, pendientes chicos (opcionales):** deuda cargada 2015, 2019, 2023-2025 (préstamo de I-9 Sports, ajuste del club
+1. **Próximo: elegir el club siguiente** (punto 2) y empezar por el ensayo del lote. Novorizontino, pendientes chicos (opcionales): deuda cargada 2015, 2019, 2023-2025 (préstamo de I-9 Sports, ajuste del club
    `deuda-incluye`); sin dato 2010, 2013-2014, 2016-2018, 2020-2022 (sin vecino que confirme o columnas que no coinciden). Caja cargada
    2015-2025. Ligas completas (estaduales del Paulista 2013-2017, Versión 426).
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
@@ -43,13 +43,17 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
 
 Publicación: `inventario-transcripciones` está mergeada entera en `main` (2026-10-02); falta el push, que lo hace Guido (`git push origin main`).
 
-Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena):
+Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena; `--medir --club <id>` para medir):
 
 ```
- ESCALA: una por documento (la del estado de resultados contra lo cargado)
- ESCALÓN 0 precedente del club ─┐
- ESCALÓN 1 vocabulario ─────────┤─► COMPUERTA (la misma): año anterior cargado o documento siguiente, mismas filas, columna del año anterior
- ESCALÓN 2 IA (solo líneas) ────┘    pasa → dato · no pasa → siguiente escalón · nada → null
+ LECTURA DE FILAS  una sola referencia a nota (V421); activo y pasivo en la misma fila = dos filas (V424)
+ ESCALA: una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala (V418)
+ ESCALÓN 0 ajuste manual `caja` del año (V419) · precedente del club
+ ESCALÓN 1 diccionario (vocabulario.mjs, sin el código de cuenta, V422) + términos del club (ajuste `deuda-incluye`, V425);
+           jerarquía de balancete: padre e hija no se suman; cuenta D no es deuda (V423)
+ ESCALÓN 2 IA (solo líneas)
+ COMPUERTA (la misma para todos): la familia de la fila es la del dato (V420) y el año anterior cargado o el documento siguiente
+           dicen lo mismo ── pasa → dato · no pasa → siguiente escalón · nada → null
 ```
 
 El escalón 1 propone, además (Versiones 383 y 385): las filas de la nota de efectivo si la caja es una parte de ella (la compuerta compara el
@@ -144,6 +148,8 @@ Mitigaciones:
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
             quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
             rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)
+            COMPUERTA por página (Versión 411): la rearmada tiene que conservar al menos la mitad de las filas de tabla; si no, queda
+            la anterior (Novorizontino 2025: estado de resultados girado 90°)
  ESCALÓN 2  (falta) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```
@@ -254,6 +260,9 @@ Mitigaciones:
 ```
 
   La cadena depende del orden (Fortaleza: 2025 declara → 2024 → 2023): `verificarLista()` repite la pasada si alguno se resolvió así.
+- **Resultado impreso, escalón 2** (Versión 415): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT pegada al último
+  bloque (hasta 4 líneas); compuerta: alguna lectura cierra con él exacto.
+- **Chequeos cruzados** (año vecino, año anterior cargado; Versión 416): si ninguna fila trae la columna del año anterior, "no se puede".
 - **Resultado final** (Versión 364), si cerró contra "antes de impuestos": candidatos antes ± impuesto → escalón 0, impreso en el .md del
   documento; escalón 1, impreso en el documento siguiente (columna del año anterior) → compuerta: uno solo coincide; si no, cola.
 - **Dudas de la IA, escalera** (antes de llegar a la cola):
@@ -391,7 +400,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Ajustes manuales (Versión 366)
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
-  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+  (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`, `deuda-incluye` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana
