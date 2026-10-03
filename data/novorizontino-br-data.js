@@ -740,7 +740,8 @@ const novorizontinobrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS', lado:'revenue', importe:8.019563, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: año anterior): "DISPONIBILIDADES" pág. 1
+    grossDebt:null, cash:0.115299,
     officialTotalRevenue:8.146239, officialTotalExpenses:12.780546, officialPAT:-4.774509,
   },
   // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 2.204. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
