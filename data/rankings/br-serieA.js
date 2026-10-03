@@ -3,7 +3,7 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série A (BR) — 8 ejercicio(s) con ranking:
+// Brasileirão Série A (BR) — 12 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -11,6 +11,10 @@
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2014: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2013: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2010: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2009: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2008: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -169,6 +173,38 @@ window.RANKINGS["br-serieA"] = {
       { id:"goias-br", revenue:18.012, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2015-2014",
         mix:[["Cuotas Sociales",1.06],["Comercial / Sponsors",0.664],["Estadio",0.9],["Televisión",8.989],["Premios por competencias",0.587],["Venta de Jugadores",4.683],["Otros ingresos",1.13]] },
+    ],
+  },
+  2014: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:23.569, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2014-2013",
+        mix:[["Cuotas Sociales",1.315],["Comercial / Sponsors",1.093],["Estadio",2.319],["Televisión",12.483],["Premios por competencias",0.384],["Venta de Jugadores",2.523],["Otros ingresos",3.451]] },
+    ],
+  },
+  2013: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:21.803, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2013-2012",
+        mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.785],["Estadio",3.593],["Televisión",13.083],["Premios por competencias",1.836],["Venta de Jugadores",0.108],["Otros ingresos",0.888]] },
+    ],
+  },
+  2010: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:18.223, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2010-2009",
+        mix:[["Cuotas Sociales",0.334],["Comercial / Sponsors",2.8],["Estadio",3.143],["Televisión",7.829],["Premios por competencias",1.749],["Venta de Jugadores",1.687],["Otras secciones deportivas",1.411],["Otros ingresos",-0.728]] },
+    ],
+  },
+  2009: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:17.18, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2009-2008",
+        mix:[["Cuotas Sociales",0.024],["Comercial / Sponsors",2.91],["Estadio",3.341],["Televisión",7.265],["Premios por competencias",0.904],["Venta de Jugadores",2.114],["Otras secciones deportivas",1.097],["Otros ingresos",-0.476]] },
     ],
   },
   2008: {

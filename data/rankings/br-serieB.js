@@ -3,7 +3,7 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série B (BR) — 9 ejercicio(s) con ranking:
+// Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
 //   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -12,7 +12,9 @@
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -135,12 +137,28 @@ window.RANKINGS["br-serieB"] = {
         mix:[["Cuotas Sociales",1.262],["Comercial / Sponsors",1.403],["Estadio",0.588],["Televisión",13.918],["Premios por competencias",0.742],["Venta de Jugadores",0.35],["Otros ingresos",-0.534]] },
     ],
   },
+  2016: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:25.474, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2016-2015",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",25.469],["Otros ingresos",0.006]] },
+    ],
+  },
   2012: {
     leagueSize: null,
     clubs: [
       { id:"goias-br", revenue:23.851, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2012-2011",
         mix:[["Cuotas Sociales",1.627],["Comercial / Sponsors",0.464],["Estadio",1.83],["Televisión",17.969],["Premios por competencias",0.46],["Venta de Jugadores",2.311],["Otros ingresos",-0.81]] },
+    ],
+  },
+  2011: {
+    leagueSize: null,
+    clubs: [
+      { id:"goias-br", revenue:9.114, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2011-2010",
+        mix:[["Cuotas Sociales",0.3],["Comercial / Sponsors",1.051],["Estadio",1.368],["Televisión",4.456],["Premios por competencias",0.24],["Venta de Jugadores",0.055],["Otras secciones deportivas",1.052],["Otros ingresos",0.593]] },
     ],
   },
 };
