@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
-//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -34,6 +34,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"americamineiro-br", revenue:13.051, reportType:"official_balance_sheet",
         sourceId:"americamineiro-br-demonstracoes-2025",
         mix:[["Comercial / Sponsors",2.703],["Estadio",0.886],["Televisión",2.343],["Venta de Jugadores",0.454],["Otros ingresos",6.664]] },
+      { id:"novorizontino-br", revenue:12.279, reportType:"official_balance_sheet",
+        sourceId:"novorizontino-br-demonstracoes-financeiras-2025",
+        mix:[["Comercial / Sponsors",1.276],["Estadio",0.622],["Televisión",6.722],["Premios por competencias",0.184],["Venta de Jugadores",3.171],["Otros ingresos",0.305]] },
       { id:"goias-br", revenue:8.508, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2025",
         mix:[["Comercial / Sponsors",3.622],["Televisión",3.069],["Venta de Jugadores",0.197],["Otros ingresos",1.62]] },

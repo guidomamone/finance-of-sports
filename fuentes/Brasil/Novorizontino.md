@@ -61,3 +61,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2023 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2023.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2018 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2025`).
